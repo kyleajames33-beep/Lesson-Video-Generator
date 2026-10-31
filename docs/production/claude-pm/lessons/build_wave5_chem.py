@@ -20283,6 +20283,1081 @@ M8C02_ROWS = {
     ]
 }
 # END generated rows: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
+# BEGIN generated rows: m8p02, m8g01, m8c03a, m8c03b
+M8P02_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Gravimetric practical: does the method get it all?\".",
+        "Hook (a sample whose answer you know): Here's a strange first step for an analysis.",
+        "method / loses",
+        "On the spoken cues: `m6-analytical-balance-v1.png` medium at the centre; a coded readout over the display \"0.500 g\" and a navy tag on the small beaker \"K₂SO₄, dried\" (grey chip \"known formula: known sulfate\"). On \"method\" c02's method strip writes small and dim along the bottom (nine labels; grey chip \"c02: the method\"), and an arrow runs from the balance to the end of the strip. On \"loses\" the recovery gauge draws at the right with",
+        "explain",
+        "heading writes on: \"Gravimetric practical: does the method get it all?\". `m6-analytical-balance-v1.png` medium at the centre; a coded readout over the display \"0.500 g\" and a navy tag on the small beaker \"K₂SO₄, dried\" (grey chip \"known formula: known sulfate\"). On \"method\" c02's method strip writes small and dim along the bottom (nine labels; grey chip \"c02: the method\"), and an arrow runs from the balance to the end of the strip. On \"loses\" the recovery gauge draws at the right with its 100% line (\"all the sulfate you put in\") and a \"?\" fill. After \"loses\" a small grey handwritten line writes under the gauge: \"known in → known out?\" Bright at the end: the heading, the balance, the gauge. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-variables": [
+        "new",
+        "task line \"Aim: does digestion improve recovery?\".",
+        "The aim and the variables: The question: does digesting the precipitate improve the recovery of sulfate?",
+        "digestion / recovery / same",
+        "On the spoken cues: Under the gauge a grey formula chip writes: \"% recovery = mass collected ÷ expected mass × 100\". The variables card writes in the right zone: on \"digestion\" \"Independent: digestion (set A: none; set B: about 30 min warm)\" with the two set colour chips (grey chip \"c02: digestion grows bigger crystals\"); on \"recovery\" \"Dependent: % recovery of BaSO₄\"; on \"same\" \"Controlled:\" with its list writing one item at a time",
+        "explain",
+        "task line \"Aim: does digestion improve recovery?\". Under the gauge a grey formula chip writes: \"% recovery = mass collected ÷ expected mass × 100\". The variables card writes in the right zone: on \"digestion\" \"Independent: digestion (set A: none; set B: about 30 min warm)\" with the two set colour chips (grey chip \"c02: digestion grows bigger crystals\"); on \"recovery\" \"Dependent: % recovery of BaSO₄\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds (the list carries what the cut clause said): \"0.500 g K₂SO₄\", \"1 mL of 2 mol/L HCl\", \"20 mL of 0.20 mol/L BaCl₂\", \"same fine filter paper\", \"same filtration temperature (room temperature)\", \"same washing\", \"same drying, to constant mass\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "expected-mass": [
+        "new",
+        "the board clears to c02's calculation board.",
+        "The expected mass: First, the mass you should get.",
+        "moles / target",
+        "On the spoken cues: Task strip: \"Expected mass of BaSO₄ from the known sample\". Equation strip: \"K₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2KCl(aq)\". Givens group (navy): \"K₂SO₄: 0.500 g (dried)\"; molar masses as a second small block: \"M(K₂SO₄) = 174.26, M(BaSO₄) = 233.39 g/mol\". Stage line 1: \"n(K₂SO₄) = 0.500 ÷ 174.26\"; on \"moles\" \"= 2.87 × 10⁻³ mol\" (bright). Line 1 dims. On \"one sulfate\" line 2: \"1 : 1, so n(BaSO₄) = 2.87 × 10⁻³ mol\" with",
+        "explain",
+        "the board clears to c02's calculation board. Task strip: \"Expected mass of BaSO₄ from the known sample\". Equation strip: \"K₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2KCl(aq)\". Givens group (navy): \"K₂SO₄: 0.500 g (dried)\"; molar masses as a second small block: \"M(K₂SO₄) = 174.26, M(BaSO₄) = 233.39 g/mol\". Stage line 1: \"n(K₂SO₄) = 0.500 ÷ 174.26\"; on \"moles\" \"= 2.87 × 10⁻³ mol\" (bright). Line 1 dims. On \"one sulfate\" line 2: \"1 : 1, so n(BaSO₄) = 2.87 × 10⁻³ mol\" with \"1 : 1\" glowing on the equation strip. Line 3: \"m(BaSO₄) = 2.87 × 10⁻³ × 233.39\"; on \"target\" \"= 0.670 g\" (bright), and the gauge's 100% line relabels \"expected 0.670 g\". A grey chip \"c02: mass → moles → ratio → target\" sits beside the lines. Bright at the end: 0.670 g and the gauge label. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "prepare-precipitate": [
+        "adjust",
+        "the board clears.",
+        "Prepare and precipitate: Dissolve the potassium sulfate in about a hundred and fifty millilitres of distilled water, add a little dilute hydrochloric acid, as you would for a real sample, and heat it until it's nearly boiling.",
+        "boiling / excess / complete",
+        "On the spoken cues: Task line \"Prepare and precipitate\". The method strip lights \"dissolve\" and \"acidify\". `m6-beaker-v1.png` at the centre with a coded clear fill (tag \"about 150 mL distilled water + 0.500 g K₂SO₄\"); coded drops of dilute HCl fall (grey chip \"c02: acid stops BaCO₃ forming\"). On \"boiling\" the beaker cross-fades to the new `m8-beaker-hotplate-clear-v1.png` (aligned to the settled pair below; tag \"hotplate: just below",
+        "explain",
+        "the board clears. Task line \"Prepare and precipitate\". The method strip lights \"dissolve\" and \"acidify\". `m6-beaker-v1.png` at the centre with a coded clear fill (tag \"about 150 mL distilled water + 0.500 g K₂SO₄\"); coded drops of dilute HCl fall (grey chip \"c02: acid stops BaCO₃ forming\"). On \"boiling\" the beaker cross-fades to the new `m8-beaker-hotplate-clear-v1.png` (aligned to the settled pair below; tag \"hotplate: just below boiling\"). On \"slowly\" \"precipitate\" lights; a coded pour from a `m6-measuring-cylinder-v1.png` thumbnail (tag \"20 mL of 0.20 mol/L BaCl₂\") runs in short pulses while a coded glass rod circles (no hands). On \"excess\" a small navy chip writes: \"Ba²⁺ 4.0 × 10⁻³ mol > SO₄²⁻ 2.87 × 10⁻³ mol\". The beaker cross-fades to `m8-baso4-beaker-hotplate-v1.png` (new; white precipitate settled). On \"complete\" one coded test drop falls into the clear upper layer and a chip writes \"no new cloudiness: complete\" (green tick). Bright at the end: the plate, the excess chip, the tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "digest-split": [
+        "adjust",
+        "the set split draws: the method strip forks after \"precipitate\".",
+        "Digest, or not: Now the sets split.",
+        "minutes / temperature / crystals / filter paper",
+        "On the spoken cues: Upper lane (grey-blue) \"set A: not digested\"; lower lane (teal) \"set B: digest about 30 min, watch glass on\", each with a small thumbnail of `m8-baso4-beaker-hotplate-v1.png`. On \"minutes\" set B's thumbnail gains a coded clock arc \"30 min\" and a soft warm glow. On \"temperature\" both lanes run into one shared chip, \"both: cool to room temperature, then filter\" (the controlled filtration temperature), and the warm",
+        "explain",
+        "the set split draws: the method strip forks after \"precipitate\". Upper lane (grey-blue) \"set A: not digested\"; lower lane (teal) \"set B: digest about 30 min, watch glass on\", each with a small thumbnail of `m8-baso4-beaker-hotplate-v1.png`. On \"minutes\" set B's thumbnail gains a coded clock arc \"30 min\" and a soft warm glow. On \"temperature\" both lanes run into one shared chip, \"both: cool to room temperature, then filter\" (the controlled filtration temperature), and the warm glow fades. On \"crystals\" c02's crystal growth zoom opens small beside each lane: set A many fine crystals, set B fewer, larger ones (grey chip \"c02: small crystals dissolve, bigger ones grow\"). On \"filter paper\" a dotted mesh line slides under both zooms; small crystals in lane A slip through it, lane B's sit on it; a grey tag \"prediction: B recovers more\". Bright at the end: the two lanes and the mesh. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "filter-wash-check": [
+        "adjust",
+        "the board clears.",
+        "Filter, wash and check: Both sets filter through a fine paper that's already been dried and weighed.",
+        "through / clear / cloudy",
+        "On the spoken cues: Task line \"Filter, wash, check\". The method strip lights \"filter\" and \"wash\". `m8-filter-funnel-white-ppt-v1.png` at the centre-left (tag \"fine filter paper: dried and weighed first, on the tared watch glass\"; grey chip \"c02: tare\"). `m6-wash-bottle-v1.png` small beside it; a coded jet arc rinses the beaker thumbnail, then washes the solid on the paper (tag \"warm distilled water, small portions\"). On \"silver",
+        "explain",
+        "the board clears. Task line \"Filter, wash, check\". The method strip lights \"filter\" and \"wash\". `m8-filter-funnel-white-ppt-v1.png` at the centre-left (tag \"fine filter paper: dried and weighed first, on the tared watch glass\"; grey chip \"c02: tare\"). `m6-wash-bottle-v1.png` small beside it; a coded jet arc rinses the beaker thumbnail, then washes the solid on the paper (tag \"warm distilled water, small portions\"). On \"silver nitrate\" `p03-dropper-bottle-v1.png` appears small at the right with a coded tag \"AgNO₃(aq), 0.1 mol/L\"; a coded drop falls into `m5x-ppt-agcl-white-v1.png` (tag \"early washings: white AgCl, chloride still there\"; grey chip \"c01: Ag⁺ + Cl⁻ → AgCl\"). On \"clear\" the tube cross-fades to `m5x-no-ppt-clear-v1.png` (aligned pair; tag \"later washings: clear, washed enough\"). On \"filtrate\" a gloss tag writes at the flask: \"filtrate: the liquid that ran through\". On \"cloudy\" the funnel plate splits into two thumbnails: set A `m8-filter-funnel-cloudy-filtrate-v1.png` (new; tag \"set A: faintly cloudy\") and set B `m8-filter-funnel-white-ppt-v1.png` (tag \"set B: clear\"). Bright at the end: the clear test tube and the two filtrates. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "constant-mass": [
+        "adjust",
+        "the method strip lights \"dry\", \"cool\", \"weigh\". c02's weighing loop draws small: `m8-drying-oven-v1.png` (tag \"about 110 °C\"), `m8-desiccator-v1.png`, `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height; the tare readout \"0.000 g\" shows first with its tag \"watch glass tared\" (c02).",
+        "Dry to constant mass: Dry each paper at about a hundred and ten degrees, cool it in a desiccator, and weigh it on the tared watch glass until two weighings in a row agree.",
+        "agree",
+        "On the spoken cues: On \"agree\" two readings bracket under the balance (example: \"1.574 g\", \"1.574 g\"; tag \"constant mass\"). Straight after \"agree\" (no spoken cue) a navy line writes: \"1.574 − 0.910 (paper) = 0.664 g BaSO₄\" (grey tag \"set B, trial 1\"). Bright at the end: the loop and the subtraction line.",
+        "explain",
+        "the method strip lights \"dry\", \"cool\", \"weigh\". c02's weighing loop draws small: `m8-drying-oven-v1.png` (tag \"about 110 °C\"), `m8-desiccator-v1.png`, `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height; the tare readout \"0.000 g\" shows first with its tag \"watch glass tared\" (c02). On \"agree\" two readings bracket under the balance (example: \"1.574 g\", \"1.574 g\"; tag \"constant mass\"). Straight after \"agree\" (no spoken cue) a navy line writes: \"1.574 − 0.910 (paper) = 0.664 g BaSO₄\" (grey tag \"set B, trial 1\"). Bright at the end: the loop and the subtraction line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "results-recovery": [
+        "new",
+        "the board clears.",
+        "The results and the recovery: Three trials in each set.",
+        "percent",
+        "On the spoken cues: Task line \"Results\". A results table writes in the right zone (grey tag \"example data\"): rows \"set A (no digestion)\" and \"set B (digested)\"; columns \"trial 1, 2, 3, mean (g BaSO₄)\"; values 0.630, 0.638, 0.627, mean 0.632; 0.664, 0.661, 0.666, mean 0.664. A small grey row: \"filtrate: A faintly cloudy; B clear\". On \"Divide\" a calculation line writes: \"set B: 0.664 ÷ 0.670 × 100\"; on \"percent\" \"= 99.1%\" (bright) and",
+        "explain",
+        "the board clears. Task line \"Results\". A results table writes in the right zone (grey tag \"example data\"): rows \"set A (no digestion)\" and \"set B (digested)\"; columns \"trial 1, 2, 3, mean (g BaSO₄)\"; values 0.630, 0.638, 0.627, mean 0.632; 0.664, 0.661, 0.666, mean 0.664. A small grey row: \"filtrate: A faintly cloudy; B clear\". On \"Divide\" a calculation line writes: \"set B: 0.664 ÷ 0.670 × 100\"; on \"percent\" \"= 99.1%\" (bright) and the gauge fills teal to 99.1%. On the second \"percent\" \"set A: 0.632 ÷ 0.670 × 100 = 94.3%\" writes and a grey-blue fill draws under the teal one at 94.3%. Bright at the end: the two gauge fills and 99.1%. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "reliable-accurate": [
+        "new",
+        "task line \"Reliable?",
+        "Reliable, and accurate?: Reliable?",
+        "spread / paper / back",
+        "On the spoken cues: Accurate?\". The trial dot strip draws at the centre: a 0.620 to 0.675 g scale, three grey-blue dots near 0.632 and three teal dots near 0.664, each mean a short bar, and a dashed navy line at 0.670 g \"expected\". Reliability card header writes: \"Reliability: repeats agree?\"; brackets span each cluster (\"A: spread 0.011 g\", \"B: spread 0.005 g\") with a tick. On \"spread\" a larger bracket spans the two means (\"gap 0.032",
+        "explain",
+        "task line \"Reliable? Accurate?\". The trial dot strip draws at the centre: a 0.620 to 0.675 g scale, three grey-blue dots near 0.632 and three teal dots near 0.664, each mean a short bar, and a dashed navy line at 0.670 g \"expected\". Reliability card header writes: \"Reliability: repeats agree?\"; brackets span each cluster (\"A: spread 0.011 g\", \"B: spread 0.005 g\") with a tick. On \"spread\" a larger bracket spans the two means (\"gap 0.032 g: bigger than either spread\"). The reliability card dims. On \"accurate\" the accuracy card header writes: \"Accuracy: how close to the true value?\"; the teal cluster's bar pulses beside the dashed line (tag \"B: 99.1%, close\"); the grey-blue cluster gets a downward bracket to the line (tag \"A: about 6% low, every trial\"). On \"paper\" the set A filtrate thumbnail returns small beside its cluster with an arrow: \"fine crystals lost → mass ↓ → recovery ↓\" (grey chip \"c02: lost reads low\"). On \"back\" a chip writes: \"repeats can't recover lost crystals\" (grey chip \"s07: repeats help reliability, not a systematic error\"). Bright at the end: the A bracket, the filtrate evidence arrow and the repeats chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "valid": [
+        "adjust",
+        "the board clears.",
+        "Is it valid?: Is the comparison valid?",
+        "value / conditions",
+        "On the spoken cues: Task line \"Valid?\". The validity card header writes: \"Validity: does it test what it was meant to?\". Row 1 on \"Only digestion changed\": \"one variable changed: digestion\" (green; the variables card thumbnail returns small with its controlled list ticked). Row 2 on \"only sulfate\": three small green chips write one per phrase, each with a thumbnail: \"acidified: no BaCO₃\" (the HCl drops), \"washings clear: no BaCl₂",
+        "explain",
+        "the board clears. Task line \"Valid?\". The validity card header writes: \"Validity: does it test what it was meant to?\". Row 1 on \"Only digestion changed\": \"one variable changed: digestion\" (green; the variables card thumbnail returns small with its controlled list ticked). Row 2 on \"only sulfate\": three small green chips write one per phrase, each with a thumbnail: \"acidified: no BaCO₃\" (the HCl drops), \"washings clear: no BaCl₂ solution left\" (`m5x-no-ppt-clear-v1.png`), \"constant mass: no water\" (the balance thumbnail). On \"pure and dry\" a navy chip: \"known value holds only if the standard is pure and dry\" (tag \"a necessary condition\"). On \"conditions\" the aim line returns at the top with a green tick, narrowed: \"digestion → higher recovery (99.1% against 94.3%), under these conditions\". Footer, small grey: \"Validity: fair test. Reliability: repeats agree. Accuracy: close to the true value.\" Bright at the end: the narrowed aim line and the necessary-condition chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk": [
+        "adjust",
+        "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"X-ray scans\" a grey contrast chip \"BaSO₄(s): barely dissolves | BaCl₂(aq): dissolved barium, toxic\" (tag \"c02: barely dissolves\"); on \"toxic if swallowed\" the barium chloride row (control \"teacher prepares and dispenses; gloves, glasses; wash hands\"); on \"dilute acid\" the HCl row; on \"Silver nitrate\" its row; on \"tongs\" the hot apparatus row (a coded tongs outline beside `m8-drying-oven-v1.png`, small; no hands); on \"sink\" the waste row with `m5x-waste-bottle-v1.png` small and a coded label \"Heavy-metal waste: barium\".",
+        "The risk assessment: Now the risks.",
+        "afterwards / tongs / sink",
+        "On the spoken cues: Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's",
+        "explain",
+        "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"X-ray scans\" a grey contrast chip \"BaSO₄(s): barely dissolves | BaCl₂(aq): dissolved barium, toxic\" (tag \"c02: barely dissolves\"); on \"toxic if swallowed\" the barium chloride row (control \"teacher prepares and dispenses; gloves, glasses; wash hands\"); on \"dilute acid\" the HCl row; on \"Silver nitrate\" its row; on \"tongs\" the hot apparatus row (a coded tongs outline beside `m8-drying-oven-v1.png`, small; no hands); on \"sink\" the waste row with `m5x-waste-bottle-v1.png` small and a coded label \"Heavy-metal waste: barium\". Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table). Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table).",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table)"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: One line to keep.",
+        "lost",
+        "On the spoken cues: Handwritten line: \"Recovery = found ÷ expected × 100.\" Under it the recovery gauge returns: on \"lost\" the region below the 100% line pulses grey-blue (\"lost: through the paper, left behind, not precipitated\"); then the hatched region above 100% pulses (\"extra: water, unwashed impurities\"). A small grey second line: \"Too wet reads high; lost reads low. (c02)\".",
+        "explain",
+        "the board clears. Handwritten line: \"Recovery = found ÷ expected × 100.\" Under it the recovery gauge returns: on \"lost\" the region below the 100% line pulses grey-blue (\"lost: through the paper, left behind, not precipitated\"); then the hatched region above 100% pulses (\"extra: water, unwashed impurities\"). A small grey second line: \"Too wet reads high; lost reads low. (c02)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. To check a method, a student",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed (A1 under Decisions), with both molar masses on the card and the tag \"HSC-style question, written for HSCScience\". `m8-balance-watch-glass-v1.png` small at the right (no readout, no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "grams / percent / directly",
+        "On the spoken cues: On \"gives the moles\" \"0.350 g\" and \"M(Na₂SO₄) = 142.04\" are underlined; line \"n = 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol\" writes; \"1 : 1 → n(BaSO₄) = 2.46 × 10⁻³ mol\". On \"grams\" \"M(BaSO₄) = 233.39\" is underlined and \"expected = 2.464 × 10⁻³ × 233.39 = 0.5751 g\" writes (grey tag \"keep a guard digit\"). On \"percent\" \"0.561 g\" is underlined; \"% recovery = 0.561 ÷ 0.5751 × 100 = 97.5%\" writes bright, and a small recovery",
+        "explain",
+        "the card stays, shrunk to the top. On \"gives the moles\" \"0.350 g\" and \"M(Na₂SO₄) = 142.04\" are underlined; line \"n = 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol\" writes; \"1 : 1 → n(BaSO₄) = 2.46 × 10⁻³ mol\". On \"grams\" \"M(BaSO₄) = 233.39\" is underlined and \"expected = 2.464 × 10⁻³ × 233.39 = 0.5751 g\" writes (grey tag \"keep a guard digit\"). On \"percent\" \"0.561 g\" is underlined; \"% recovery = 0.561 ÷ 0.5751 × 100 = 97.5%\" writes bright, and a small recovery gauge fills to 97.5% just under its 100% line. On \"slightly low\" \"state what this result suggests about the accuracy\" is underlined and a short answer line writes: \"close to 100%, slightly low: small loss of sulfate\". On \"directly\" a chip \"0.561 ÷ 0.350 × 100 = 160%\" fades in and is crossed (caption \"different substances: go through moles\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed (A2 under Decisions).",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. To test digestion, set C digests",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed (A2 under Decisions). `m8-filter-funnel-white-ppt-v1.png` small at the right (no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "washing / nitrate / unequal",
+        "On the spoken cues: On \"washing\" \"digested ... for 30 minutes\" and \"three portions\" against \"one portion\" are underlined; FixRail small: \"Word: validity\"; \"Feature: digestion and washing both changed\" (a variables strip writes \"independent: digestion | washing: not controlled\", with \"washing\" terracotta). On \"add mass\" a small chip \"less washing → impurities dried on → mass ↑ → D's recovery ↑\" (grey chip \"c02: extra mass reads high\").",
+        "explain",
+        "the card stays, shrunk to the top. On \"washing\" \"digested ... for 30 minutes\" and \"three portions\" against \"one portion\" are underlined; FixRail small: \"Word: validity\"; \"Feature: digestion and washing both changed\" (a variables strip writes \"independent: digestion | washing: not controlled\", with \"washing\" terracotta). On \"add mass\" a small chip \"less washing → impurities dried on → mass ↑ → D's recovery ↑\" (grey chip \"c02: extra mass reads high\"). On \"nitrate\" \"propose a change\" is underlined, the FixRail's \"Fix\" lights: \"wash both sets the same way, until the washings stay clear with AgNO₃\", with the clear test tube thumbnail, and \"washing\" turns green. On \"unequal\" a chip \"repeat each set more times\" fades in and is crossed (caption \"repeats: reliability; the washing is still unequal\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-handoff": [
+        "new",
+        "the board clears.",
+        "Decision rule and handoff: So, to trust a gravimetric analysis, test it first on a sample whose answer you know.",
+        "recovery / Next",
+        "On the spoken cues: A four-row decision card lights on cue: \"Test the method on a known sample (pure, dry)\"; \"Acidify → hot, excess Ba²⁺ → digest → wash until AgNO₃ test clear → constant mass\"; on \"recovery\" \"Recovery = found ÷ expected × 100\"; \"Cloudy filtrate: lost (low). Wet or unwashed: extra (high).\" On \"Next\" a chip \"Next: precipitation titration and gravimetry practice\" slides in at the lower right.",
+        "explain",
+        "the board clears. A four-row decision card lights on cue: \"Test the method on a known sample (pure, dry)\"; \"Acidify → hot, excess Ba²⁺ → digest → wash until AgNO₃ test clear → constant mass\"; on \"recovery\" \"Recovery = found ÷ expected × 100\"; \"Cloudy filtrate: lost (low). Wet or unwashed: extra (high).\" On \"Next\" a chip \"Next: precipitation titration and gravimetry practice\" slides in at the lower right. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8G01_ROWS = {
+    "hook": [
+        "adjust",
+        "heading \"Titration and gravimetry practice: right data, right ratio, right direction\" writes on.",
+        "Hook: Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh.",
+        "ratio / dilution / answer",
+        "On the spoken cues: Two small plates write side by side at the right, the same height: `m8-mohr-flask-endpoint-v1.png` (grey tag \"c01: titration\") and `m8-balance-watch-glass-v1.png` (grey tag \"c02: weighing\"). On \"ratio\" a grey chip \"1 : 1? 1 : 3?\" writes between them (no numbers, nothing answer-bearing). On",
+        "explain",
+        "heading \"Titration and gravimetry practice: right data, right ratio, right direction\" writes on. Two small plates write side by side at the right, the same height: `m8-mohr-flask-endpoint-v1.png` (grey tag \"c01: titration\") and `m8-balance-watch-glass-v1.png` (grey tag \"c02: weighing\"). On \"ratio\" a grey chip \"1 : 1? 1 : 3?\" writes between them (no numbers, nothing answer-bearing). On \"dilution\" a small coded flask-to-aliquot arrow writes under the titration plate. On \"answer\" an up and a down arrow write under the balance plate. The check strip builds on the left: \"which results to use?\", \"ratio from the precipitate?\", \"every dilution tracked?\", \"error: extra or lost, which way?\". The plates become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: titration with a dilution) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A ten millilitre sample of seawater",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: titration with a dilution)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A 10.00 mL sample of seawater was diluted to 250.0 mL in a volumetric flask. 25.00 mL aliquots of the diluted solution were titrated with 0.0500 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator.\" A titre table: \"Titre (mL): 11.20 (rough), 10.85, 10.95, 10.90\". Demand: \"Calculate the concentration of chloride ions in the seawater, in g L⁻¹. M(Cl) = 35.45 g mol⁻¹\". One answer box. `m8-mohr-flask-endpoint-v1.png` small at the card's right (no tags). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-data-ratio": [
+        "new",
+        "the card shrinks to a strip.",
+        "Which titres, which ratio: Start with the data.",
+        "out / millilitres / want",
+        "On the spoken cues: Type badge \"Titration with a dilution\". On \"out\" \"11.20 (rough)\" underlines and greys with a strike (grey chip \"c01: the rough titre is a guide\"). The three titres underline; a bracket spans them, \"within 0.10 mL: concordant\" (grey chip \"c12\"). On \"millilitres\" a line writes: \"mean = (10.85 + 10.95",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Titration with a dilution\". On \"out\" \"11.20 (rough)\" underlines and greys with a strike (grey chip \"c01: the rough titre is a guide\"). The three titres underline; a bracket spans them, \"within 0.10 mL: concordant\" (grey chip \"c12\"). On \"millilitres\" a line writes: \"mean = (10.85 + 10.95 + 10.90) ÷ 3 = 10.90 mL\" (bright). Strip: \"which results to use?\" ticks. On \"one to one\" the equation strip writes \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"1 : 1\" glowing. On \"want\" a small grey second equation \"2Ag⁺ + CrO₄²⁻ → Ag₂CrO₄ (indicator)\" writes beneath, its \"2 : 1\" tagged \"the indicator's, not the analyte's\" (grey chip \"c01\"). Strip: \"ratio from the precipitate?\" ticks. Bright at the end: the mean and the 1 : 1 equation.",
+        [
+            "Mark underline",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-calc": [
+        "new",
+        "the data lines dim; the mean and the equation stay.",
+        "Moles, then back through the dilution: Moles of silver: point zero five zero zero times point zero one zero nine zero litres, five point four five times ten to the minus four moles.",
+        "moles / seawater / litre",
+        "On the spoken cues: The dilution ladder draws at the right: three coded vessel outlines stacked, \"aliquot 25.00 mL\" at the bottom, \"flask 250.0 mL\" in the middle, \"seawater 10.00 mL\" at the top. Line 1: \"n(Ag⁺) = 0.0500 × 0.01090\"; on \"moles\" \"= 5.45 × 10⁻⁴ mol\" (bright; \"0.0500 mol L⁻¹\" underlines), and \"= n(Cl⁻) in",
+        "explain",
+        "the data lines dim; the mean and the equation stay. The dilution ladder draws at the right: three coded vessel outlines stacked, \"aliquot 25.00 mL\" at the bottom, \"flask 250.0 mL\" in the middle, \"seawater 10.00 mL\" at the top. Line 1: \"n(Ag⁺) = 0.0500 × 0.01090\"; on \"moles\" \"= 5.45 × 10⁻⁴ mol\" (bright; \"0.0500 mol L⁻¹\" underlines), and \"= n(Cl⁻) in 25.00 mL\" writes beside the aliquot rung. On \"ten times as much\" \"25.00 mL aliquots\" and \"250.0 mL\" underline; an arrow climbs to the flask rung \"×10 (250.0 ÷ 25.00)\" and writes \"5.45 × 10⁻³ mol\". On \"seawater\" \"10.00 mL sample of seawater\" underlines and an arrow climbs to the top rung (tag \"same moles: all of it came from here\"). Line 2: \"c(Cl⁻) = 5.45 × 10⁻³ ÷ 0.01000 = 0.545 mol/L\". On \"litre\" line 3: \"× 35.45 = 19.3 g/L\" (bright; \"M(Cl) = 35.45\" underlines). A grey chip \"c01: seawater roughly 19 g/L\" writes beside it. Strip: \"every dilution tracked?\" ticks. Bright at the end: the ladder and 19.3 g/L.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+        "The classic mistake: The classic slip is stopping at the aliquot.",
+        "dilution",
+        "On the spoken cues: a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+        "explain",
+        "a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "q2-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 2: a gravimetric ratio) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. Water treatment plants use aluminium sulfate.",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a gravimetric ratio)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"Aluminium sulfate, Al₂(SO₄)₃, is used in water treatment. To check the purity of a sample, three 0.400 g portions were each dissolved, acidified and treated with excess barium chloride solution. The barium sulfate was filtered, washed, dried and weighed.\" A results table: \"Trial 1: 0.781 g, dried to constant mass\"; \"Trial 2: 0.785 g, dried to constant mass\"; \"Trial 3: 0.842 g, weighed after one drying only\". Demands: \"(a) Justify which result should be excluded.\" \"(b) Calculate the percentage by mass of Al₂(SO₄)₃ in the sample. M(BaSO₄) = 233.39 g mol⁻¹; M(Al₂(SO₄)₃) = 342.14 g mol⁻¹\". Two answer boxes. `m8-balance-watch-glass-v1.png` small at the card's right (no readout). Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-outlier": [
+        "new",
+        "the card shrinks to a strip.",
+        "Exclude it for a reason: Part a.",
+        "water / high / use",
+        "On the spoken cues: Type badge \"Gravimetric ratio\". \"0.842 g\" underlines; a grey chip \"different ≠ a reason\" writes and dims. On \"water\" \"weighed after one drying only\" underlines amber and a small chip writes \"not at constant mass: water still there\" (grey chip \"c02: constant mass\"). On \"high\" a chip \"extra mass →",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Gravimetric ratio\". \"0.842 g\" underlines; a grey chip \"different ≠ a reason\" writes and dims. On \"water\" \"weighed after one drying only\" underlines amber and a small chip writes \"not at constant mass: water still there\" (grey chip \"c02: constant mass\"). On \"high\" a chip \"extra mass → reads high\" (grey chip \"c02: too wet reads high\") and trial 3's row greys with a strike. On \"use\" \"dried to constant mass\" underlines twice; line \"mean = (0.781 + 0.785) ÷ 2 = 0.783 g\" (bright). Answer box (a) writes: \"Exclude trial 3: it was not dried to constant mass, so retained water made its mass too high. Trials 1 and 2 were at constant mass and agree.\" Strip: \"which results to use?\" ticks. Bright at the end: answer (a) and 0.783 g.",
+        [
+            "Mark underline",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q2-ratio-calc": [
+        "new",
+        "answer (a) dims.",
+        "Three sulfates per formula unit: Part b.",
+        "moles / three / percent",
+        "On the spoken cues: Line 1: \"n(BaSO₄) = 0.783 ÷ 233.39\"; on \"moles\" \"= 3.355 × 10⁻³ mol\" (bright; \"M(BaSO₄)\" underlines). On \"three\" the formula unit counter draws: one coded Al₂(SO₄)₃ unit, its three SO₄ groups lighting one at a time, each pairing with a pale violet Ba²⁺ dot and dropping as a white tile; tag \"1",
+        "explain",
+        "answer (a) dims. Line 1: \"n(BaSO₄) = 0.783 ÷ 233.39\"; on \"moles\" \"= 3.355 × 10⁻³ mol\" (bright; \"M(BaSO₄)\" underlines). On \"three\" the formula unit counter draws: one coded Al₂(SO₄)₃ unit, its three SO₄ groups lighting one at a time, each pairing with a pale violet Ba²⁺ dot and dropping as a white tile; tag \"1 Al₂(SO₄)₃ → 3 BaSO₄\". Line 2: \"n(Al₂(SO₄)₃) = 3.355 × 10⁻³ ÷ 3 = 1.118 × 10⁻³ mol\". Line 3: \"m = 1.118 × 10⁻³ × 342.14 = 0.3826 g\" (grey tag \"guard digit kept\") (\"M(Al₂(SO₄)₃)\" underlines). On \"percent\" line 4: \"% = 0.3826 ÷ 0.400 × 100 = 95.7%\" (bright; \"0.400 g\" underlines), with a grey tag \"about 96%: under 100%, as a purity should be\". A grey chip \"c02: mass → moles → ratio → target\" sits beside the lines. Strip: \"ratio from the precipitate?\" ticks. Bright at the end: the counter tag and 95.7%.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"3.355 × 10⁻³ × 342.14 ÷ 0.400 × 100 = 287%\" fades in; on \"ratio\" it takes a red scribble cross (caption \"three sulfates per formula unit: divide by 3\").",
+        "The classic mistake: The classic slip is using one to one.",
+        "ratio",
+        "On the spoken cues: A handwritten line writes under the board: \"Over 100%? Check the ratio first.\"",
+        "explain",
+        "a chip \"3.355 × 10⁻³ × 342.14 ÷ 0.400 × 100 = 287%\" fades in; on \"ratio\" it takes a red scribble cross (caption \"three sulfates per formula unit: divide by 3\"). A handwritten line writes under the board: \"Over 100%? Check the ratio first.\"",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "lineage split"
+        ],
+        "Hold one second"
+    ],
+    "q3-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 3: evaluate the errors) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. A teacher makes up a sodium",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: evaluate the errors)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A teacher prepared a sodium chloride solution with a chloride concentration of 0.0620 mol L⁻¹. A student analysed it by two methods. Method 1, Mohr titration: the burette was rinsed with distilled water, but not with the silver nitrate solution, before it was filled. Result: 0.0635 mol L⁻¹. Method 2, gravimetric analysis as AgCl: some precipitate passed through a small tear in the filter paper. Result: 0.0607 mol L⁻¹.\" Demands: \"(a) Explain why each result differs from the known value.\" \"(b) The student claims that the mean of the two results, 0.0621 mol L⁻¹, shows that the analysis was accurate. Evaluate this claim.\" Two answer boxes. `m6-burette-clamp-stand-v1.png` and `m8-filter-funnel-white-ppt-v1.png` small at the card's right, the same height (no tags). Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card and plates stay on screen.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-titration": [
+        "new",
+        "the card shrinks to a strip.",
+        "A diluted titrant reads high: Method one.",
+        "titre / high",
+        "On the spoken cues: Type badge \"Evaluate the errors\". The two-arrow error board draws with a dashed navy line \"known 0.0620\". \"rinsed with distilled water, but not with the silver nitrate solution\" underlines; the burette thumbnail shows a coded film of water at its tip mixing into the silver nitrate (grey chip \"c12:",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Evaluate the errors\". The two-arrow error board draws with a dashed navy line \"known 0.0620\". \"rinsed with distilled water, but not with the silver nitrate solution\" underlines; the burette thumbnail shows a coded film of water at its tip mixing into the silver nitrate (grey chip \"c12: rinse with the solution it will hold\"). On \"titre\" Method 1's cause chain writes one link at a time: \"titrant diluted → titre ↑\". Then \"calculation uses the label's c → n(Ag⁺) ↑ → n(Cl⁻) ↑\". On \"high\" Method 1's arrow rises above the dashed line to \"0.0635\" (\"0.0635\" underlines). Answer box (a) line 1: \"Method 1: water dilutes the AgNO₃, so a larger titre is needed; using the labelled concentration overstates the moles of Ag⁺ and Cl⁻, so the result is too high.\" On \"Rinsing with the silver nitrate\" a small green fix chip writes under Method 1's arrow: \"fix: rinse with the AgNO₃ solution\". Strip: \"error: extra or lost, which way?\" ticks. Bright at the end: Method 1's arrow and answer line 1.",
+        [
+            "HandText write-on",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-gravimetric": [
+        "adjust",
+        "Method 1's chain dims; its arrow stays.",
+        "Lost precipitate reads low: Method two.",
+        "low / systematic",
+        "On the spoken cues: \"some precipitate passed through a small tear\" underlines; the funnel thumbnail cross-fades to `m8-filter-funnel-cloudy-filtrate-v1.png` with a coded tear mark on the paper (tag \"AgCl lost in the filtrate\"; grey chip \"p02: look at the filtrate\"). Method 2's chain writes: \"AgCl lost → mass ↓ →",
+        "explain",
+        "Method 1's chain dims; its arrow stays. \"some precipitate passed through a small tear\" underlines; the funnel thumbnail cross-fades to `m8-filter-funnel-cloudy-filtrate-v1.png` with a coded tear mark on the paper (tag \"AgCl lost in the filtrate\"; grey chip \"p02: look at the filtrate\"). Method 2's chain writes: \"AgCl lost → mass ↓ → n(Cl⁻) ↓\" (grey chip \"c02: lost reads low\"). On \"low\" Method 2's arrow drops below the dashed line to \"0.0607\". Answer box (a) line 2: \"Method 2: AgCl passed through the tear, so the mass was too low, and the chloride too low.\" On \"systematic\" a small chip under both arrows: \"same direction every repeat: systematic\" (grey chip \"s07\"). Bright at the end: the two arrows either side of the dashed line and answer line 2.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "q3-claim": [
+        "new",
+        "answer (a) dims.",
+        "The mean is luck, not accuracy: Part b.",
+        "miss / average",
+        "On the spoken cues: \"the mean of the two results, 0.0621\" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag \"up 0.0015, down 0.0013\"). On \"miss\" Method 2's arrow lengthens downwards by a coded nudge (\"bigger tear\") and the mean marker slides",
+        "explain",
+        "answer (a) dims. \"the mean of the two results, 0.0621\" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag \"up 0.0015, down 0.0013\"). On \"miss\" Method 2's arrow lengthens downwards by a coded nudge (\"bigger tear\") and the mean marker slides below the line (tag \"the mean moves with the errors\"). Answer box (b) writes in three short lines: \"The mean's agreement is a coincidence: the errors are in opposite directions and similar in size.\" / \"Neither result is accurate; each method has a systematic error.\" / \"Not supported: fix each cause (rinse the burette with AgNO₃; use an undamaged filter paper), then check each method on a known solution.\" On \"known solution\" p02's recovery gauge appears small beside the dashed line (grey chip \"p02: test the method on a known sample\"). On \"average\" a chip \"mean ≈ 0.0620, so the analysis was accurate\" fades in and takes a red scribble cross (caption \"a close mean doesn't validate either method\"). Bright at the end: answer (b) and the cross.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "decision-board": [
+        "new",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"results\" \"Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)\"; \"Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)\"; on \"dilution\" \"Every dilution tracked → aliquot → flask → original sample (Q1)\"; on \"moves\" \"Extra or lost, which way → diluted titrant: high; lost solid: low; a close mean doesn't validate either method (Q3)\".",
+        "Decision board: So for any precipitation titration or gravimetric question.",
+        "results / dilution / moves",
+        "On the spoken cues: Under the board, small, the c02 line: \"mass → moles → ratio → target.\" On \"Next\" a chip \"Next: how do flame, precipitate and complex tests identify a cation?\" slides in at the lower right. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"results\" \"Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)\"; \"Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)\"; on \"dilution\" \"Every dilution tracked → aliquot → flask → original sample (Q1)\"; on \"moves\" \"Extra or lost, which way → diluted titrant: high; lost solid: low; a close mean doesn't validate either method (Q3)\". Under the board, small, the c02 line: \"mass → moles → ratio → target.\" On \"Next\" a chip \"Next: how do flame, precipitate and complex tests identify a cation?\" slides in at the lower right. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8C03A_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Which metal ion is in this sample?\".",
+        "Hook (eight bottles, no labels): A prep room shelf holds eight bottles of solutions, and the labels have washed off.",
+        "out",
+        "On the spoken cues: Eight copies of `m5x-bottle-scn-v1.png` (blank cream labels; same plate, uniform scale) stand in a row at centre. As each ion is named its symbol writes on the suspect strip above its bottle: \"Ba²⁺ Ca²⁺ Mg²⁺ Pb²⁺ Ag⁺ Cu²⁺ Fe²⁺ Fe³⁺\". A coded arrow pulls a sample from the sixth bottle into `m5x-no-ppt-clear-v1.png` at the left; a faint coded blue tint overlays the liquid, and a small chip \"a hint, not proof\" writes.",
+        "explain",
+        "heading writes on: \"Which metal ion is in this sample?\". Eight copies of `m5x-bottle-scn-v1.png` (blank cream labels; same plate, uniform scale) stand in a row at centre. As each ion is named its symbol writes on the suspect strip above its bottle: \"Ba²⁺ Ca²⁺ Mg²⁺ Pb²⁺ Ag⁺ Cu²⁺ Fe²⁺ Fe³⁺\". A coded arrow pulls a sample from the sixth bottle into `m5x-no-ppt-clear-v1.png` at the left; a faint coded blue tint overlays the liquid, and a small chip \"a hint, not proof\" writes. On \"out\" the bottles slide away; the suspect strip stays at the top; a grey chip \"qualitative analysis: which ions, not how much\" writes under the heading.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "three-kinds-of-evidence": [
+        "adjust",
+        "three small panels write left to right, one per sentence: \"precipitate\" (`m5x-ppt-agcl-white-v1.png`, small) with a grey chip \"c13: NAGSAG\"; \"flame\" (`m5x-bunsen-burner-v1.png`, small); \"complex\" (the complex wrap inset: NH₃ tokens cluster around a grey cation dot).",
+        "Three kinds of evidence: We've got three kinds of evidence.",
+        "complex ion / confirm",
+        "On the spoken cues: On \"complex ion\" a tag writes under the third panel: \"complex ion: a metal ion with molecules or ions bonded around it\" (bright). On \"confirm\" the first panel gets a chip \"sort\" and the other two a shared chip \"confirm\"; the panels shrink to small icons at the right edge (they return as step colours). Earlier text dims; at most three bright items.",
+        "explain",
+        "three small panels write left to right, one per sentence: \"precipitate\" (`m5x-ppt-agcl-white-v1.png`, small) with a grey chip \"c13: NAGSAG\"; \"flame\" (`m5x-bunsen-burner-v1.png`, small); \"complex\" (the complex wrap inset: NH₃ tokens cluster around a grey cation dot). On \"complex ion\" a tag writes under the third panel: \"complex ion: a metal ion with molecules or ions bonded around it\" (bright). On \"confirm\" the first panel gets a chip \"sort\" and the other two a shared chip \"confirm\"; the panels shrink to small icons at the right edge (they return as step colours). Earlier text dims; at most three bright items.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "token flight",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-1-chloride": [
+        "adjust",
+        "the board clears to the flowchart area.",
+        "Step 1: chloride: Start with a fresh portion of the sample, and add dilute hydrochloric acid.",
+        "out / step",
+        "On the spoken cues: A sample box writes at the top of the flowchart: \"unknown cation (fresh portion each test)\". A green arrow writes down from it, labelled \"dilute HCl (Cl⁻)\". `m5x-no-ppt-clear-v1.png` sits at the left; a reagent drop falls; the tube cross-fades to `m5x-ppt-agcl-white-v1.png`; the ion lock inset shows grey Ag⁺ and green Cl⁻ locking as white tiles. A green branch box writes: \"white ppt: Ag⁺ or Pb²⁺\". On \"out\" a second",
+        "explain",
+        "the board clears to the flowchart area. A sample box writes at the top of the flowchart: \"unknown cation (fresh portion each test)\". A green arrow writes down from it, labelled \"dilute HCl (Cl⁻)\". `m5x-no-ppt-clear-v1.png` sits at the left; a reagent drop falls; the tube cross-fades to `m5x-ppt-agcl-white-v1.png`; the ion lock inset shows grey Ag⁺ and green Cl⁻ locking as white tiles. A green branch box writes: \"white ppt: Ag⁺ or Pb²⁺\". On \"out\" a second branch writes \"no ppt\" and, on the suspect strip, Ag⁺ and Pb²⁺ glow (for the white branch) then a coded toggle shows the \"no ppt\" case greying them. On \"step\" a small grey tag hangs from the \"no ppt\" branch: \"Pb²⁺ may slip through if dilute (PbCl₂ slightly soluble)\". At most three bright items: the arrow label, the current branch, the tube.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "silver-or-lead": [
+        "adjust",
+        "the white branch box glows; two small boxes write under it.",
+        "Splitting silver from lead: Both solids are white, so how do you tell them apart?",
+        "dissolves / iodide",
+        "On the spoken cues: Left tube `m5x-ppt-agcl-white-v1.png`; on \"dissolves\" a violet arrow \"dilute NH₃\" and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; the complex wrap inset shows NH₃ tokens around Ag⁺, the white tile breaking up; box \"dissolves: Ag⁺\" with \"[Ag(NH₃)₂]⁺\" small under it. A second, white tube (`m5x-ppt-agcl-white-v1.png` reused as white PbCl₂, coded tag \"PbCl₂\") stays white: box \"stays: Pb²⁺\". On \"iodide\"",
+        "explain",
+        "the white branch box glows; two small boxes write under it. Left tube `m5x-ppt-agcl-white-v1.png`; on \"dissolves\" a violet arrow \"dilute NH₃\" and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; the complex wrap inset shows NH₃ tokens around Ag⁺, the white tile breaking up; box \"dissolves: Ag⁺\" with \"[Ag(NH₃)₂]⁺\" small under it. A second, white tube (`m5x-ppt-agcl-white-v1.png` reused as white PbCl₂, coded tag \"PbCl₂\") stays white: box \"stays: Pb²⁺\". On \"iodide\" `m5x-ppt-pbi2-yellow-v1.png` appears beside it with \"Pb²⁺ + 2I⁻ → PbI₂(s), bright yellow\". Then the chloride family dims to grey; the boxes stay.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "token flight",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-2-sulfate": [
+        "adjust",
+        "an amber arrow writes down from the \"no ppt\" box: \"dilute H₂SO₄ (SO₄²⁻)\".",
+        "Step 2: sulfate: If step one gave nothing, take another fresh portion and add dilute sulfuric acid.",
+        "precipitate / here / metal",
+        "On the spoken cues: The tube resets to `m5x-no-ppt-clear-v1.png`; a drop falls; on \"precipitate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" writes beside it (bright). Amber box \"white ppt: Ba²⁺, or Ca²⁺ (if concentrated), or Pb²⁺\". Grey tag \"CaSO₄ slightly soluble\". On \"here\" the grey Pb²⁺ tag from scene 3 draws a dotted line into this box. On \"metal\" a \"?\" chip hangs under the box, and Ba²⁺ and",
+        "explain",
+        "an amber arrow writes down from the \"no ppt\" box: \"dilute H₂SO₄ (SO₄²⁻)\". The tube resets to `m5x-no-ppt-clear-v1.png`; a drop falls; on \"precipitate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" writes beside it (bright). Amber box \"white ppt: Ba²⁺, or Ca²⁺ (if concentrated), or Pb²⁺\". Grey tag \"CaSO₄ slightly soluble\". On \"here\" the grey Pb²⁺ tag from scene 3 draws a dotted line into this box. On \"metal\" a \"?\" chip hangs under the box, and Ba²⁺ and Ca²⁺ glow on the suspect strip. The equation dims.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "flame-tests": [
+        "adjust",
+        "an orange arrow \"flame test\" writes from the \"?\" chip.",
+        "Flame tests: That's where the flame test earns its place.",
+        "green / red / blue-green / test",
+        "On the spoken cues: The tube shrinks; `m8-flame-test-off-v2.png` (the unlit burner) appears at the left. `m5x-bunsen-burner-v1.png` is a different burner, so it never cross-fades with the flame set: on \"blue Bunsen flame\" it appears only as a small inset beside the burner, tagged \"blue flame first\". A coded wire loop dips into the small tube and moves to the burner; the coloured plates below cross-fade on the shared burner position of",
+        "explain",
+        "an orange arrow \"flame test\" writes from the \"?\" chip. The tube shrinks; `m8-flame-test-off-v2.png` (the unlit burner) appears at the left. `m5x-bunsen-burner-v1.png` is a different burner, so it never cross-fades with the flame set: on \"blue Bunsen flame\" it appears only as a small inset beside the burner, tagged \"blue flame first\". A coded wire loop dips into the small tube and moves to the burner; the coloured plates below cross-fade on the shared burner position of the v2 set. A small inset: an electron dot jumps up an energy ladder and drops, emitting a coloured wave; grey chip \"Year 11: excited electrons emit light\". On \"green\" the flame cross-fades to `m8-flame-ba-pale-green-v2.png`, box \"pale green: Ba²⁺\" (bright). On \"red\" to `m8-flame-ca-brick-red-v2.png`, box \"brick red: Ca²⁺\"; the Ba box dims. On \"blue-green\" `m8-flame-cu-blue-green-v2.png` appears small to the side with tag \"Cu²⁺ (useful later)\". On \"test\" a dotted arrow loops from the flame step back to the PbI₂ box: \"no colour + white sulfate: try KI for Pb²⁺\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "flame-limits": [
+        "adjust",
+        "`m8-flame-na-yellow-v2.png` appears beside the barium flame plate; a coded yellow glow spreads over the green; chip \"Na⁺ yellow masks other colours\".",
+        "What a flame can't do: Treat a flame colour as supporting evidence, though, not proof.",
+        "result",
+        "On the spoken cues: A chip \"dirty loop: colour carried over\" writes; then \"clean loop in HCl until the flame shows no colour\" (grey). On \"result\" a chip \"flame = supporting evidence; precipitate or complex = confirm\" writes (bright) and the other two dim. The sulfate and flame families dim on the flowchart.",
+        "explain",
+        "`m8-flame-na-yellow-v2.png` appears beside the barium flame plate; a coded yellow glow spreads over the green; chip \"Na⁺ yellow masks other colours\". A chip \"dirty loop: colour carried over\" writes; then \"clean loop in HCl until the flame shows no colour\" (grey). On \"result\" a chip \"flame = supporting evidence; precipitate or complex = confirm\" writes (bright) and the other two dim. The sulfate and flame families dim on the flowchart.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-3-hydroxide": [
+        "adjust",
+        "a blue arrow writes down from the \"no ppt\" side of the sulfate step: \"NaOH (OH⁻)\".",
+        "Step 3: hydroxide: Now the third reagent, sodium hydroxide, in a fresh portion.",
+        "blue / rust / green / white / magnesium",
+        "On the spoken cues: Four tube plates write in a row at the left in the aligned m5x rack, each on its cue: `m5x-ppt-cuoh2-blue-v1.png` (\"blue\"), `m5x-ppt-feoh3-brown-v1.png` (\"rust\"), `m8-ppt-feoh2-green-v2.png` (\"green\"), `m8-ppt-mgoh2-white-v1.png` (\"white\"). Each gets its flowchart box: \"pale blue: Cu²⁺\", \"red-brown: Fe³⁺\", \"green: Fe²⁺\", \"white, stays in excess: Mg²⁺\". Only the newest box is bright; earlier boxes dim. On \"white\" a",
+        "explain",
+        "a blue arrow writes down from the \"no ppt\" side of the sulfate step: \"NaOH (OH⁻)\". Four tube plates write in a row at the left in the aligned m5x rack, each on its cue: `m5x-ppt-cuoh2-blue-v1.png` (\"blue\"), `m5x-ppt-feoh3-brown-v1.png` (\"rust\"), `m8-ppt-feoh2-green-v2.png` (\"green\"), `m8-ppt-mgoh2-white-v1.png` (\"white\"). Each gets its flowchart box: \"pale blue: Cu²⁺\", \"red-brown: Fe³⁺\", \"green: Fe²⁺\", \"white, stays in excess: Mg²⁺\". Only the newest box is bright; earlier boxes dim. On \"white\" a second drop falls into the Mg tube, which stays white; tag \"excess NaOH: stays\". On \"magnesium\" a small grey tag hangs from the white box: \"or Ca²⁺ if concentrated: flame decides (Mg²⁺ none, Ca²⁺ brick red)\".",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "why-this-order": [
+        "new",
+        "on the suspect strip, Ag⁺ and Pb²⁺ flash, and small brown (Ag₂O) and white (Pb(OH)₂) tiles drop into a faint ghost row under the hydroxide step, then strike out.",
+        "Why this order: That's also why the chloride and sulfate steps come first.",
+        "left",
+        "On the spoken cues: On \"left\" the suspect strip shows only Mg²⁺, Cu²⁺, Fe²⁺, Fe³⁺ (and Ca²⁺ faint) lit beside the hydroxide step. Chip \"each 'no' rules ions out\" (bright).",
+        "explain",
+        "on the suspect strip, Ag⁺ and Pb²⁺ flash, and small brown (Ag₂O) and white (Pb(OH)₂) tiles drop into a faint ghost row under the hydroxide step, then strike out. On \"left\" the suspect strip shows only Mg²⁺, Cu²⁺, Fe²⁺, Fe³⁺ (and Ca²⁺ faint) lit beside the hydroxide step. Chip \"each 'no' rules ions out\" (bright).",
+        [
+            "chip pop"
+        ],
+        "Settle about 1 second"
+    ],
+    "iron-two-trap": [
+        "adjust",
+        "the green tube `m8-ppt-feoh2-green-v2.png` moves to centre, enlarged; a coded clock arc sweeps; on \"brown\" it cross-fades to `m8-ppt-feoh2-browning-v1.png` (aligned).",
+        "The iron two trap: Watch the iron two result closely.",
+        "brown / away",
+        "On the spoken cues: Small O₂ dots drift onto the solid in the inset; tag \"Fe²⁺ → Fe³⁺ (oxidised by air)\". On \"away\" chip \"read it at once\" (bright).",
+        "explain",
+        "the green tube `m8-ppt-feoh2-green-v2.png` moves to centre, enlarged; a coded clock arc sweeps; on \"brown\" it cross-fades to `m8-ppt-feoh2-browning-v1.png` (aligned). Small O₂ dots drift onto the solid in the inset; tag \"Fe²⁺ → Fe³⁺ (oxidised by air)\". On \"away\" chip \"read it at once\" (bright).",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "complexes-confirm": [
+        "adjust",
+        "violet arrows write under the Cu²⁺ and Fe³⁺ boxes.",
+        "Complexes confirm: Then confirm with a complex.",
+        "complex / red / alone",
+        "On the spoken cues: Left: `m5x-ppt-cuoh2-blue-v1.png`, a violet arrow \"excess NH₃\", then `c5-copper-tube-deep-v1.png` beside it (separate plate, not a cross-fade); on \"complex\" box \"deep blue [Cu(NH₃)₄]²⁺\" (bright), complex wrap inset with four NH₃ tokens. Then `m5x-bottle-scn-v1.png` small with coded label \"KSCN\" and `c3-iron-tube-deep-v1.png`; on \"red\" box \"blood red FeSCN²⁺\"; grey chip \"Module 5: Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺\". On \"alone\" a",
+        "explain",
+        "violet arrows write under the Cu²⁺ and Fe³⁺ boxes. Left: `m5x-ppt-cuoh2-blue-v1.png`, a violet arrow \"excess NH₃\", then `c5-copper-tube-deep-v1.png` beside it (separate plate, not a cross-fade); on \"complex\" box \"deep blue [Cu(NH₃)₄]²⁺\" (bright), complex wrap inset with four NH₃ tokens. Then `m5x-bottle-scn-v1.png` small with coded label \"KSCN\" and `c3-iron-tube-deep-v1.png`; on \"red\" box \"blood red FeSCN²⁺\"; grey chip \"Module 5: Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺\". On \"alone\" a chip \"two kinds of chemistry agree\" writes; earlier boxes dim.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "token flight",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "flowchart": [
+        "new",
+        "the full flowchart lights family by family (green, amber, blue, with orange and violet confirmation arrows), scaled to fit the right two thirds; text stays at reading size.",
+        "The flowchart, and our sample: Put it together and you get a flowchart.",
+        "copper / cation",
+        "On the spoken cues: The two branch conditions stay on the chart, legible at reading size, because a student using the chart later needs them: \"dilute Pb²⁺ may pass\" on the chloride \"no ppt\" branch and \"Ca²⁺ depends on concentration\" on the sulfate box. The mixture chip is dropped to make room; the chart itself is not shrunk. A coded token \"our sample\" travels down: \"no ppt\" (green), \"no ppt\" (amber), \"pale blue\" (blue), \"deep blue with",
+        "explain",
+        "the full flowchart lights family by family (green, amber, blue, with orange and violet confirmation arrows), scaled to fit the right two thirds; text stays at reading size. The two branch conditions stay on the chart, legible at reading size, because a student using the chart later needs them: \"dilute Pb²⁺ may pass\" on the chloride \"no ppt\" branch and \"Ca²⁺ depends on concentration\" on the sulfate box. The mixture chip is dropped to make room; the chart itself is not shrunk. A coded token \"our sample\" travels down: \"no ppt\" (green), \"no ppt\" (amber), \"pale blue\" (blue), \"deep blue with NH₃\" (violet), and the blue-green flame plate flashes small. On \"copper\" the Cu²⁺ box glows and the hook tube returns small with tag \"Cu²⁺\". On \"cation\" the sample box at the top of the chart (\"unknown cation (fresh portion each test)\") glows once. Hold about 3 seconds (reading hold). Hold about 3 seconds (reading hold).",
+        [
+            "chip pop",
+            "token flight",
+            "DrawPath"
+        ],
+        "Hold about 3 seconds (reading hold)"
+    ],
+    "memory-aid": [
+        "new",
+        "board clears.",
+        "Memory aid: Here's a way to hold the order.",
+        "late",
+        "On the spoken cues: Handwritten line 1: \"Cl⁻ → SO₄²⁻ → OH⁻ → flame\". Under each step its ions write as the voice names them, with colour swatches for the hydroxide row (pale blue, red-brown, green, white). On \"late\" a small card: \"green → brown = Fe²⁺ read late\".",
+        "explain",
+        "board clears. Handwritten line 1: \"Cl⁻ → SO₄²⁻ → OH⁻ → flame\". Under each step its ions write as the voice names them, with colour swatches for the hydroxide row (pale blue, red-brown, green, white). On \"late\" a small card: \"green → brown = Fe²⁺ read late\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown cation were tested.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Separate portions of an unknown solution",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown cation were tested. Dilute hydrochloric acid: no visible change. Dilute sulfuric acid: white precipitate. Flame test: pale green flame. Identify the cation present, and write a net ionic equation for the formation of the precipitate.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (the flowchart is hidden).",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "barium / sulfate / slip",
+        "On the spoken cues: On \"silver\" \"Dilute hydrochloric acid: no visible change\" is underlined, with a grey tag \"rules out Ag⁺; dilute Pb²⁺ may pass\"; on \"barium\" \"white precipitate\", then \"pale green flame\" are underlined (grey tag \"Pb²⁺: no useful flame colour\"); the mini flowchart path lights green \"no\", amber \"white\", orange \"pale green\". On \"sulfate\" the line \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\" writes (bright). On \"slip\" a chip \"Ca²⁺:",
+        "explain",
+        "card shrinks to the top. On \"silver\" \"Dilute hydrochloric acid: no visible change\" is underlined, with a grey tag \"rules out Ag⁺; dilute Pb²⁺ may pass\"; on \"barium\" \"white precipitate\", then \"pale green flame\" are underlined (grey tag \"Pb²⁺: no useful flame colour\"); the mini flowchart path lights green \"no\", amber \"white\", orange \"pale green\". On \"sulfate\" the line \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\" writes (bright). On \"slip\" a chip \"Ca²⁺: white sulfate\" fades in and is crossed (caption \"the flame decides: Ca²⁺ is brick red\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student adds sodium hydroxide solution to a pale green solution containing one unknown cation.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student adds sodium hydroxide to",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student adds sodium hydroxide solution to a pale green solution containing one unknown cation. A green precipitate forms. Ten minutes later, the student records a red-brown precipitate and concludes that the solution contains iron(III) ions. Evaluate the student's conclusion, and suggest one test that would confirm the identity of the cation.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "wrong / trap",
+        "On the spoken cues: \"A green precipitate forms\" is underlined; the green tube appears small; on \"wrong\" \"Ten minutes later\" and \"red-brown\" are underlined and the tube cross-fades to the browning plate with tag \"air oxidises Fe²⁺\"; line \"cation: Fe²⁺\" (bright). Line \"fresh portion + KSCN: no blood red → not Fe³⁺\"; \"concludes that the solution contains iron(III) ions\" underlined. On \"trap\" a chip \"Fe³⁺: it ended red-brown\" fades in and",
+        "explain",
+        "card shrinks to the top. \"A green precipitate forms\" is underlined; the green tube appears small; on \"wrong\" \"Ten minutes later\" and \"red-brown\" are underlined and the tube cross-fades to the browning plate with tag \"air oxidises Fe²⁺\"; line \"cation: Fe²⁺\" (bright). Line \"fresh portion + KSCN: no blood red → not Fe³⁺\"; \"concludes that the solution contains iron(III) ions\" underlined. On \"trap\" a chip \"Fe³⁺: it ended red-brown\" fades in and is crossed (caption \"read the colour at once\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "new",
+        "board clears.",
+        "Handoff: So the cation comes from a short sequence: precipitates to sort, then a flame or a complex to confirm.",
+        "Next",
+        "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" the hook bottle returns at centre with tag \"Cu²⁺ ... and?\" and a chip \"Next: identifying the anion\".",
+        "explain",
+        "board clears. Memory line 1 returns small at the top. On \"Next\" the hook bottle returns at centre with tag \"Cu²⁺ ... and?\" and a chip \"Next: identifying the anion\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8C03B_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Which anion is in this sample?\".",
+        "Hook (copper what?): Back to the prep room.",
+        "phosphate",
+        "On the spoken cues: The hook bottle from c03a (`m5x-bottle-scn-v1.png`) returns at centre with a coded tag \"Cu²⁺\". Three small chips write beside it: \"CuCl₂?\", \"CuSO₄?\", \"Cu(CH₃COO)₂?\". On \"half\" the tag widens: \"Cu²⁺ + ?\". As each anion is named its symbol writes on the suspect strip: \"Cl⁻ Br⁻ I⁻ OH⁻ CH₃COO⁻ CO₃²⁻ SO₄²⁻ PO₄³⁻\". On \"phosphate\" the bottle shrinks to the top-left corner; the flowchart's sample box writes: \"unknown anion",
+        "explain",
+        "heading writes on: \"Which anion is in this sample?\". The hook bottle from c03a (`m5x-bottle-scn-v1.png`) returns at centre with a coded tag \"Cu²⁺\". Three small chips write beside it: \"CuCl₂?\", \"CuSO₄?\", \"Cu(CH₃COO)₂?\". On \"half\" the tag widens: \"Cu²⁺ + ?\". As each anion is named its symbol writes on the suspect strip: \"Cl⁻ Br⁻ I⁻ OH⁻ CH₃COO⁻ CO₃²⁻ SO₄²⁻ PO₄³⁻\". On \"phosphate\" the bottle shrinks to the top-left corner; the flowchart's sample box writes: \"unknown anion (fresh portion each test)\".",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-1-acid": [
+        "adjust",
+        "an orange arrow writes from the sample box: \"dilute acid (H⁺)\".",
+        "Step 1: dilute acid, and the fizz: The plan's the same as for cations: fresh portions, and reagents that react with only a few ions.",
+        "fizzes / forms",
+        "On the spoken cues: `m5x-no-ppt-clear-v1.png` sits at the left; a drop falls; on \"fizzes\" coded bubbles rise (fizz); equation \"CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O(l)\" writes (bright). A coded delivery line leads to `m6-limewater-clear-v1.png`; on \"forms\" it cross-fades to `m6-limewater-milky-v1.png` and \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" writes small; the first equation dims. Orange box: \"fizz, limewater milky: CO₃²⁻\" (bright). Chip \"c13 / Module",
+        "explain",
+        "an orange arrow writes from the sample box: \"dilute acid (H⁺)\". `m5x-no-ppt-clear-v1.png` sits at the left; a drop falls; on \"fizzes\" coded bubbles rise (fizz); equation \"CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O(l)\" writes (bright). A coded delivery line leads to `m6-limewater-clear-v1.png`; on \"forms\" it cross-fades to `m6-limewater-milky-v1.png` and \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" writes small; the first equation dims. Orange box: \"fizz, limewater milky: CO₃²⁻\" (bright). Chip \"c13 / Module 6: acid + carbonate → CO₂\" (grey).",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "acetate": [
+        "adjust",
+        "a second branch writes from the acid arrow: \"no fizz; warm\".",
+        "Acetate: no fizz, a smell: Acetate takes hydrogen ions too, but it doesn't make a gas.",
+        "smell / colour",
+        "On the spoken cues: The tube clears of bubbles; coded heat shimmer under it; on \"smell\" three wisps rise and the waft arc (a curved arrow, no hand) sweeps them; `m6-vinegar-bottle-v1.png` appears small with tag \"ethanoic acid: vinegar\". Equation \"CH₃COO⁻ + H⁺ → CH₃COOH\" (bright). Chip \"waft, don't sniff\" (grey). A violet arrow \"neutral FeCl₃\" writes; `m5x-bottle-fe-v1.png` small with a coded label \"FeCl₃\"; on \"colour\" a fresh tube",
+        "explain",
+        "a second branch writes from the acid arrow: \"no fizz; warm\". The tube clears of bubbles; coded heat shimmer under it; on \"smell\" three wisps rise and the waft arc (a curved arrow, no hand) sweeps them; `m6-vinegar-bottle-v1.png` appears small with tag \"ethanoic acid: vinegar\". Equation \"CH₃COO⁻ + H⁺ → CH₃COOH\" (bright). Chip \"waft, don't sniff\" (grey). A violet arrow \"neutral FeCl₃\" writes; `m5x-bottle-fe-v1.png` small with a coded label \"FeCl₃\"; on \"colour\" a fresh tube cross-fades to `m8-acetate-fecl3-red-brown-v1.png`; box \"vinegar smell; red-brown with FeCl₃: CH₃COO⁻\". The acid family then dims.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "why-acidify": [
+        "new",
+        "a mini inset: CO₃²⁻ dots meet Ba²⁺ and lock as white tiles; tag \"BaCO₃: white\" and a red \"false positive?\" chip; then Ag⁺ with CO₃²⁻ as pale yellow tiles, \"Ag₂CO₃\".",
+        "Why acidify first, and with which acid: The next tests use barium ions and silver ions.",
+        "precipitate / nitric",
+        "On the spoken cues: On \"precipitate\" orange H⁺ dots turn the CO₃²⁻ dots into rising CO₂ bubbles; the tiles never form; chip \"acidify first: carbonate leaves as CO₂\" (bright). Two acid bottles as coded chips: \"dilute HCl\" and \"dilute HNO₃\". On \"halide\" the HCl chip draws a green Cl⁻ dot into the silver inset, a white AgCl tile forms on its own, and the chip is crossed (caption \"adds Cl⁻: false positive\"). On \"nitric\" the HNO₃ chip",
+        "explain",
+        "a mini inset: CO₃²⁻ dots meet Ba²⁺ and lock as white tiles; tag \"BaCO₃: white\" and a red \"false positive?\" chip; then Ag⁺ with CO₃²⁻ as pale yellow tiles, \"Ag₂CO₃\". On \"precipitate\" orange H⁺ dots turn the CO₃²⁻ dots into rising CO₂ bubbles; the tiles never form; chip \"acidify first: carbonate leaves as CO₂\" (bright). Two acid bottles as coded chips: \"dilute HCl\" and \"dilute HNO₃\". On \"halide\" the HCl chip draws a green Cl⁻ dot into the silver inset, a white AgCl tile forms on its own, and the chip is crossed (caption \"adds Cl⁻: false positive\"). On \"nitric\" the HNO₃ chip glows; tag \"nitrates all soluble (NAGSAG)\". The other chips dim.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-2-sulfate": [
+        "adjust",
+        "an amber arrow writes: \"dilute HNO₃ (or HCl), then Ba²⁺\".",
+        "Step 2: sulfate with barium: Now sulfate.",
+        "sulfate",
+        "On the spoken cues: The tube resets; a drop falls; on \"sulfate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; the ion lock inset locks Ba²⁺ with SO₄²⁻; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" (bright). Amber box: \"white, stays in acid: SO₄²⁻\". A small grey tag: \"BaCO₃ would dissolve in acid\". On \"gravimetric\" a grey chip \"c02: BaSO₄ weighed\" writes with `m8-filter-funnel-white-ppt-v1.png` small beside it (inspect before use).",
+        "explain",
+        "an amber arrow writes: \"dilute HNO₃ (or HCl), then Ba²⁺\". The tube resets; a drop falls; on \"sulfate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; the ion lock inset locks Ba²⁺ with SO₄²⁻; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" (bright). Amber box: \"white, stays in acid: SO₄²⁻\". A small grey tag: \"BaCO₃ would dissolve in acid\". On \"gravimetric\" a grey chip \"c02: BaSO₄ weighed\" writes with `m8-filter-funnel-white-ppt-v1.png` small beside it (inspect before use).",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-3-halides": [
+        "adjust",
+        "a grey-silver arrow writes: \"dilute HNO₃, then AgNO₃ (Ag⁺)\".",
+        "Step 3: the halides with silver: For the halides, acidify a fresh portion with nitric acid, then add silver nitrate.",
+        "white / cream / yellow",
+        "On the spoken cues: A grey chip \"c13: halides insoluble with Ag⁺\" writes on \"exception\". Three tubes in a row at the left, each writing on its cue: `m5x-ppt-agcl-white-v1.png` (\"white\"), `m8-ppt-agbr-cream-v2.png` (\"cream\"), `m8-ppt-agi-pale-yellow-v2.png` (\"yellow\"). Three boxes write under the arrow: \"white: Cl⁻\", \"cream: Br⁻\", \"pale yellow: I⁻\"; only the newest is bright. Equation pattern \"Ag⁺ + X⁻ → AgX(s)\" writes small (grey). A",
+        "explain",
+        "a grey-silver arrow writes: \"dilute HNO₃, then AgNO₃ (Ag⁺)\". A grey chip \"c13: halides insoluble with Ag⁺\" writes on \"exception\". Three tubes in a row at the left, each writing on its cue: `m5x-ppt-agcl-white-v1.png` (\"white\"), `m8-ppt-agbr-cream-v2.png` (\"cream\"), `m8-ppt-agi-pale-yellow-v2.png` (\"yellow\"). Three boxes write under the arrow: \"white: Cl⁻\", \"cream: Br⁻\", \"pale yellow: I⁻\"; only the newest is bright. Equation pattern \"Ag⁺ + X⁻ → AgX(s)\" writes small (grey). A tiny group 17 column (Cl, Br, I) beside the tubes shades lighter to darker.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "ammonia-confirms": [
+        "adjust",
+        "the ammonia ladder: the three tubes stay; a violet arrow \"dilute NH₃\" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a).",
+        "Ammonia confirms: Cream and pale yellow can look alike in a test tube, so confirm with ammonia.",
+        "concentrated / ammonia",
+        "On the spoken cues: On \"concentrated\" a violet arrow \"conc. NH₃\"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`, with a small grey tag \"with enough excess\". On \"ammonia\" the AgI tube stays; tag \"AgI: doesn't dissolve\". The ladder labels write beside the tubes: \"dilute: Cl⁻\", \"concentrated: Br⁻\", \"neither: I⁻\" (the current one bright). Chip \"less soluble → harder to dissolve\" (grey). The silver family then dims.",
+        "explain",
+        "the ammonia ladder: the three tubes stay; a violet arrow \"dilute NH₃\" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a). On \"concentrated\" a violet arrow \"conc. NH₃\"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`, with a small grey tag \"with enough excess\". On \"ammonia\" the AgI tube stays; tag \"AgI: doesn't dissolve\". The ladder labels write beside the tubes: \"dilute: Cl⁻\", \"concentrated: Br⁻\", \"neither: I⁻\" (the current one bright). Chip \"less soluble → harder to dissolve\" (grey). The silver family then dims.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "phosphate": [
+        "adjust",
+        "a yellow arrow writes from the sample box (separate branch): \"neutral portion, then AgNO₃\".",
+        "Phosphate: a yellow that isn't iodide: Phosphate gives a yellow silver solid too, silver phosphate.",
+        "phosphate / dissolves",
+        "On the spoken cues: Inset: orange H⁺ dots attach to PO₄³⁻ dots, which become \"HPO₄²⁻\" and drift past the Ag⁺ dots without locking; tag \"in acid: no Ag₃PO₄\". On \"phosphate\" the tube cross-fades to `m8-ppt-ag3po4-yellow-v1.png`; equation \"3Ag⁺ + PO₄³⁻ → Ag₃PO₄(s)\" (bright). On \"dissolves\" a drop \"dilute HNO₃\" falls and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; beside it, the AgI tube (small) gets the same drop and stays yellow.",
+        "explain",
+        "a yellow arrow writes from the sample box (separate branch): \"neutral portion, then AgNO₃\". Inset: orange H⁺ dots attach to PO₄³⁻ dots, which become \"HPO₄²⁻\" and drift past the Ag⁺ dots without locking; tag \"in acid: no Ag₃PO₄\". On \"phosphate\" the tube cross-fades to `m8-ppt-ag3po4-yellow-v1.png`; equation \"3Ag⁺ + PO₄³⁻ → Ag₃PO₄(s)\" (bright). On \"dissolves\" a drop \"dilute HNO₃\" falls and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; beside it, the AgI tube (small) gets the same drop and stays yellow. Box: \"yellow, dissolves in HNO₃: PO₄³⁻\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "hydroxide": [
+        "adjust",
+        "a blue arrow writes: \"warm with NH₄⁺ salt\".",
+        "Hydroxide: last, and why: Last, hydroxide.",
+        "blue",
+        "On the spoken cues: `m6-litmus-red-v1.png` small first, with a chip \"basic: CO₃²⁻, PO₄³⁻ too\" (grey) and dotted lines to the carbonate and phosphate boxes, which glow faintly (\"ruled out first\"). Tube with coded heat shimmer; inset: OH⁻ takes H⁺ from NH₄⁺, NH₃ rises. Equation \"NH₄⁺ + OH⁻ → NH₃(g) + H₂O(l)\" (bright). On \"blue\" the litmus plate at the tube mouth cross-fades to `m6-litmus-blue-v1.png`. Box: \"NH₃ turns damp red litmus",
+        "explain",
+        "a blue arrow writes: \"warm with NH₄⁺ salt\". `m6-litmus-red-v1.png` small first, with a chip \"basic: CO₃²⁻, PO₄³⁻ too\" (grey) and dotted lines to the carbonate and phosphate boxes, which glow faintly (\"ruled out first\"). Tube with coded heat shimmer; inset: OH⁻ takes H⁺ from NH₄⁺, NH₃ rises. Equation \"NH₄⁺ + OH⁻ → NH₃(g) + H₂O(l)\" (bright). On \"blue\" the litmus plate at the tube mouth cross-fades to `m6-litmus-blue-v1.png`. Box: \"NH₃ turns damp red litmus blue: OH⁻\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "flowchart": [
+        "new",
+        "the full flowchart lights family by family (orange, amber, grey-silver, yellow, blue, with violet confirmation arrows), scaled to the right two thirds at reading size; caveat tags hidden.",
+        "The anion flowchart: Here's the full anion flowchart.",
+        "next",
+        "On the spoken cues: A coded highlight runs down each branch as it is named. On \"next\" chip \"fresh portion each test\" (bright).",
+        "explain",
+        "the full flowchart lights family by family (orange, amber, grey-silver, yellow, blue, with violet confirmation arrows), scaled to the right two thirds at reading size; caveat tags hidden. A coded highlight runs down each branch as it is named. On \"next\" chip \"fresh portion each test\" (bright). Hold about 3 seconds (reading hold). Hold about 3 seconds (reading hold).",
+        [
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 3 seconds (reading hold)"
+    ],
+    "memory-aid": [
+        "new",
+        "board clears.",
+        "Memory aid: To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for.",
+        "neither",
+        "On the spoken cues: Handwritten line 1: \"Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver).\" On \"neutral portion\" a smaller line writes under it: \"Phosphate: a separate neutral portion.\" Handwritten line 2: \"AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither.\"",
+        "explain",
+        "board clears. Handwritten line 1: \"Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver).\" On \"neutral portion\" a smaller line writes under it: \"Phosphate: a separate neutral portion.\" Handwritten line 2: \"AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "question card, worded as printed: \"To test an unknown solution for chloride ions, a student acidifies a portion with dilute hydrochloric acid and then adds silver nitrate solution.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student tests for chloride by",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"To test an unknown solution for chloride ions, a student acidifies a portion with dilute hydrochloric acid and then adds silver nitrate solution. A white precipitate forms, and the student concludes that the solution contains chloride ions. Explain why this conclusion is not valid, and describe how the test should be carried out.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (the flowchart is hidden).",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "not / nitric / chloride / slip",
+        "On the spoken cues: On \"not\" \"dilute hydrochloric acid\" is underlined and a green Cl⁻ dot drops from it into a mini silver inset, forming a white tile; tag \"HCl adds Cl⁻\". On \"nitric\" line \"fresh portion + dilute HNO₃, then AgNO₃\" (bright); \"silver nitrate solution\" underlined. On \"chloride\" line \"white ppt, dissolves in dilute NH₃ → Cl⁻\"; \"concludes that the solution contains chloride ions\" underlined. On \"slip\" a chip \"any acid",
+        "explain",
+        "card shrinks to the top. On \"not\" \"dilute hydrochloric acid\" is underlined and a green Cl⁻ dot drops from it into a mini silver inset, forming a white tile; tag \"HCl adds Cl⁻\". On \"nitric\" line \"fresh portion + dilute HNO₃, then AgNO₃\" (bright); \"silver nitrate solution\" underlined. On \"chloride\" line \"white ppt, dissolves in dilute NH₃ → Cl⁻\"; \"concludes that the solution contains chloride ions\" underlined. On \"slip\" a chip \"any acid works: it only removes CO₃²⁻\" fades in and is crossed (caption \"the acid must add nothing you're testing for\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown anion were tested.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Separate portions of another unknown give",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown anion were tested. Dilute nitric acid: no effervescence. Dilute nitric acid, then barium nitrate solution: no visible change. Dilute nitric acid, then silver nitrate solution: cream precipitate. The precipitate dissolved in concentrated ammonia solution but not in dilute ammonia solution. Identify the anion, and write a net ionic equation for the formation of the precipitate.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "bromide / trap",
+        "On the spoken cues: \"no effervescence\" and \"no visible change\" are underlined; the suspect strip greys CO₃²⁻ and SO₄²⁻. On the first \"bromide\" \"cream precipitate\" and \"dissolved in concentrated ammonia solution but not in dilute ammonia solution\" are underlined; the ammonia ladder appears small with \"concentrated: Br⁻\" lit. On the second \"bromide\" the line \"Ag⁺(aq) + Br⁻(aq) → AgBr(s)\" writes (bright). On \"trap\" a chip \"I⁻: it looked",
+        "explain",
+        "card shrinks to the top. \"no effervescence\" and \"no visible change\" are underlined; the suspect strip greys CO₃²⁻ and SO₄²⁻. On the first \"bromide\" \"cream precipitate\" and \"dissolved in concentrated ammonia solution but not in dilute ammonia solution\" are underlined; the ammonia ladder appears small with \"concentrated: Br⁻\" lit. On the second \"bromide\" the line \"Ag⁺(aq) + Br⁻(aq) → AgBr(s)\" writes (bright). On \"trap\" a chip \"I⁻: it looked yellowish\" fades in and is crossed (caption \"AgI doesn't dissolve, even in concentrated NH₃\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "board clears.",
+        "Handoff: And our prep room bottle?",
+        "sulfate / Next",
+        "On the spoken cues: The hook bottle returns at centre with tag \"Cu²⁺ + ?\"; on \"sulfate\" a small `m5x-ppt-baso4-white-v1.png` appears beside it and the tag completes \"CuSO₄\" (bright). Memory line 1 returns small at the top. On \"Next\" a chip \"Next: identifying unknown ions (practical)\" writes.",
+        "explain",
+        "board clears. The hook bottle returns at centre with tag \"Cu²⁺ + ?\"; on \"sulfate\" a small `m5x-ppt-baso4-white-v1.png` appears beside it and the tag completes \"CuSO₄\" (bright). Memory line 1 returns small at the top. On \"Next\" a chip \"Next: identifying unknown ions (practical)\" writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m8p02, m8g01, m8c03a, m8c03b
 
 
 LESSONS = {
@@ -21581,6 +22656,60 @@ LESSONS = {
         'rows': M8C02_ROWS,
     },
     # END generated entries: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
+    # BEGIN generated entries: m8p02, m8g01, m8c03a, m8c03b
+    'm8p02': {
+        'design': D + 'lessons/chem-m8-p02.md',
+        'learning_review': D + 'checks/m8p02-learning-review.md',
+        'science_check': D + 'checks/m8p02-claude-science-check.md',
+        'meta': {"title": "Carrying out a gravimetric analysis: test the method on a sample whose answer you know", "subtitle": "Why would a chemist weigh out a sample whose sulfate content is already known, and analyse it anyway? How do you carry out a gravimetric sulfate analysis safely, and use recovery to judge whether the method can be trusted?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 4, "lessonIntent": "stating the aim and variables of a recovery investigation; calculating the expected precipitate mass from a known sample; carrying out the method in order with quantities (acidify, hot, excess barium, completeness check, digest, pre-weighed paper, rinse, wash until the washings test clear, look at the filtrate, oven, desiccator, constant mass); calculating percentage recovery; judging reliability, accuracy and validity with evidence; writing the risk rows for barium chloride, dilute hydrochloric acid, silver nitrate, hot apparatus and heavy-metal waste."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "aim-variables", "expected-mass", "prepare-precipitate", "digest-split", "filter-wash-check", "constant-mass", "results-recovery", "reliable-accurate", "valid", "risk", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m8-c02 (see Scope); chem-m8-c01 (Ag⁺ + Cl⁻ → AgCl, white); skills-s07 (validity, reliability, accuracy; word, feature, fix); chem-m7-p05 (spread against gap; a dry, pure product weighed correctly gives a correct result; over 100% means extra mass); Year 11 (moles, molar mass, percentage).", "startsWith": "Prepare and precipitate an ion sample. The video opens: Here's a strange first step for an analysis. Weigh out half a gram of dried potassium sulfate. You already know how much sulfate is in it, because you know its formula.", "stopsAfter": "stating the aim and variables of a recovery investigation; calculating the expected precipitate mass from a known sample; carrying out the method in order with quantities (acidify, hot, excess barium, completeness check, digest, pre-weighed paper, rinse, wash until the washings test clear, look at the filtrate, oven, desiccator, constant mass); calculating percentage recovery; judging reliability, accuracy and validity with evidence; writing the risk rows for barium chloride, dilute hydrochloric acid, silver nitrate, hot apparatus and heavy-metal waste.", "nextLesson": "practice questions on precipitation titrations and gravimetric analysis (route chem-m8-g01)."},
+        'teaching': {"task": "Why would a chemist weigh out a sample whose sulfate content is already known, and analyse it anyway? How do you carry out a gravimetric sulfate analysis safely, and use recovery to judge whether the method can be trusted?", "causalExplanation": "(1) a known sample tests the method (1); (2) recovery, the aim and the variables (2); (3) the expected mass from the formula (3); (4) prepare, acidify, heat, add excess Ba²⁺ slowly, check completeness (4); (5) digest or not, the prediction (5); (6) filter, rinse, wash, test the washings, look at the filtrate (6); (7) dry to constant mass and weigh (7); (8) recovery from the means (8); (9) reliable within each set, the gap bigger than the spread; accuracy against the known value; the cloudy filtrate shows the loss; repeats can't recover lost crystals (9); (10) the comparison is valid because only digestion changed, and the method measures only sulfate; the standard must be pure and dry (10); (11) hazards and controls, waste (11); memory aid (12); attempts (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "the strange first step is weighing out half a gram of dried potassium sulfate whose sulfate content you already know from its formula, so the practical asks why analyse it anyway, how to carry out a gravimetric sulfate analysis safely, and how recovery shows whether the method can be trusted. The aim asks whether digesting the precipitate improves the recovery, the mass of barium sulfate collected as a percentage of the mass you should get, with digestion as the independent variable and recovery as the dependent. The expected mass comes first: moles of potassium sulfate, one sulfate per formula unit and one barium sulfate per sulfate, a target of 0.670 g. The method runs in order with quantities: dissolve, acidify, heat nearly to boiling, add excess barium chloride slowly and check that a drop more gives no new cloudiness. Set A is not digested and set B digests for about thirty minutes, both cool before filtering through a pre-weighed fine paper, and the washings are tested with silver nitrate until they stay clear; set A's filtrate is faintly cloudy and set B's is clear. Each paper dries to constant mass. Set B recovers about 99% and set A about 94%; the trials agree within each set, so the gap is real, and the cloudy filtrate shows set A's systematic loss, which repeats cannot fix. Validity rests on one changed variable, a method that weighs only sulfate and a pure, dry known sample. The risk table contrasts barely soluble barium sulfate with toxic dissolved barium chloride, which the teacher prepares and dispenses, and sends filtrate and washings to heavy-metal waste. The memory aid is recovery equals found over expected times a hundred: under a hundred means something was lost, over means something extra was weighed. Two exam questions follow with brief feedback.", "openingDecision": "Here's a strange first step for an analysis. Weigh out half a gram of dried potassium sulfate. You already know how much sulfate is in it, because you know its formula. So why analyse it? To test your method. If it recovers all the sulfate you put in, you can trust it on a real sample. If not, you'll see how much it loses.", "understandingCheck": "(A1) \"To check a gravimetric method for sulfate, a student dissolved 0.350 g of pure, dry anhydrous sodium sulfate, Na₂SO₄, in water, acidified the solution and added excess barium chloride solution. The barium sulfate precipitate was filtered, washed and dried to constant mass. Its mass was 0.561 g. (a) Calculate the percentage recovery of sulfate. (b) State what this result suggests about the accuracy of the method. M(Na₂SO₄) = 142.04 g mol⁻¹; M(BaSO₄) = 233.39 g mol⁻¹.\" Answer: 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol; 1 : 1, so expected BaSO₄ = 2.464 × 10⁻³ × 233.39 = 0.5751 g; recovery = 0.561 ÷ 0.5751 × 100 = 97.5% (a guard digit kept; 0.561 ÷ 0.575 would give 97.6%); close to 100% but a little low, so the method loses a small amount of sulfate (slightly low, not exact). Crossed mistake: \"0.561 ÷ 0.350 × 100 = 160%\" (masses of different substances divided directly). (A2) \"Two sets of students tested whether digestion improves the recovery of barium sulfate. Set C digested the precipitate for 30 minutes and washed it with three portions of warm distilled water. Set D did not digest the precipitate and washed it with one portion. Both sets were filtered at room temperature. Set C's mean recovery was higher than Set D's. Explain why this comparison is not valid, and propose a change that fixes the problem.\" Answer: two variables changed (digestion and washing); less washing can leave dried-on impurities that add mass (raising D's recovery), so the difference can't be put down to digestion alone; fix: wash both sets the same way, until a few drops of the washings stay clear with silver nitrate. Crossed mistake: \"repeat each set more times\" (reliability, not validity; every repeat still has unequal washing; s07's crossed habit).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video is the investigation for gravimetric analysis. The method's reasons and the calculation were chem-m8-c02; precipitation titrations were chem-m8-c01 (processed as data; p01 is cut); practice with both is chem-m8-g01. this video prepares students to carry out and evaluate the investigation; it does not claim that watching it is conducting it. It starts by preparing and precipitating a sulfate sample, and stops at filtering, drying, weighing and evaluating recovery. It teaches: why an analyst runs the method on a sample of known composition first (a check standard, pure dried potassium sulfate); percentage recovery (mass collected as a percentage of the mass expected); the aim (does digesting the precipitate improve recovery?) with independent, dependent and controlled variables; the expected mass from the formula; the hands-on quantities and order (dissolve, acidify, heat, add excess barium chloride slowly with stirring, the completeness drop, digest or not, filter through pre-weighed fine paper, rinse, wash with warm water, test the washings with silver nitrate until they stay clear, look at the filtrate, dry, desiccator, weigh to constant mass); reading three trials per set for reliability (spread against gap); judging accuracy against the known value, with the cloudy filtrate as evidence of the cause; validity of the comparison and of the method; the risk table and disposal. Recalled, not re-taught: each method step's reason and the calculation chain (c02), AgCl as a white precipitate (c01, c03b later), validity, reliability, accuracy and word, feature, fix (s07). Not here: ignition in a crucible, co-precipitation mechanisms, the chloride version (g01 practises AgCl data), titration (c01), blank corrections."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m8-c02: sulfate yellow-green; barium pale violet; chloride green; silver pale grey; precipitate white; givens and units navy; the current answer bright; earlier lines dim. The two sets keep fixed colours across chips, lanes, dots and gauges (set A grey-blue, set B teal). Hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p05): top-left the short task line; the centre holds the apparatus plate; the right third holds the current card (method step, variables, calculation board, results, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (weighing, pouring, stirring, rinsing and moving the watch glass are coded motion; the tongs are a coded outline); apparatus as painted plates listed by filename, never stretched; at most about three bright text items, earlier lines dim; the calculation as a separate task, equation and grouped givens, one stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card in the attempts, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications, school rules to be checked against NSW Chemical Safety in Schools; Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.", "transitionPlan": "The heading writes on over the analytical balance with a 0.500 g readout and a known formula chip, and c02's method strip writes small along the bottom; the aim line and recovery formula write under the recovery gauge as the variables card fills one row per cue; the board clears to c02's calculation board, which sets up its task strip, equation strip and grouped givens, then writes one stage line per cue to the 0.670 g target; the method strip lights each step as the beaker plate cross-fades to the hotplate plate and coded barium drops fall; the method strip forks into set A and set B lanes, set B gaining a thirty minute clock arc before both lanes join at cooling; the filter funnel and wash bottle plates run the rinse and washings test, then the filtrate pair shows cloudy against clear; the drying oven, desiccator and balance draw as a small weighing loop with two agreeing readings; the results table writes row by row and the gauge fills to each set's recovery; the trial dot strip brackets each set's spread and the gap between the means; the validity card writes one row per cue with small thumbnails; the risk table shows one spoken row at a time; the memory line writes over the gauge as its lost and extra regions pulse; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines write and a crossed trap chip lands; the four-row decision card lights on cue and a next chip slides in; scene crossfade with settle."},
+        'rows': M8P02_ROWS,
+    },
+    'm8g01': {
+        'design': D + 'lessons/chem-m8-g01.md',
+        'learning_review': D + 'checks/m8g01-learning-review.md',
+        'science_check': D + 'checks/m8g01-claude-science-check.md',
+        'meta': {"title": "Precipitation Titration and Gravimetric Analysis: HSC-Style Practice", "subtitle": "An exam gives you titres or precipitate masses, a method with something wrong in it, and a mole ratio waiting to trip you up. How do you decide which results to use, which ratio applies, how far to scale back, and which way an error pushes the answer?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 5, "lessonIntent": "choosing concordant titres and the 1 : 1 Ag⁺ : Cl⁻ ratio; scaling an aliquot back through a dilution to the original sample in mol/L and g/L; excluding a gravimetric result for its stated cause; using a 1 : 3 formula ratio to find a percentage purity; explaining the direction of a titrant-dilution error and a lost-precipitate error; evaluating a claim built on the mean of two biased results."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-data-ratio", "q1-calc", "q1-mistake", "q2-question", "q2-outlier", "q2-ratio-calc", "q2-mistake", "q3-question", "q3-titration", "q3-gravimetric", "q3-claim", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From c01: Ag⁺ + Cl⁻ → AgCl, 1 : 1; the chromate's 2 : 1 is the indicator's reaction; drop the rough titre; concordant titres within 0.10 mL; n = cV; divide by the aliquot; × 35.45 for g/L; seawater roughly 19 g/L chloride. From chem-m6-c12: rinse the burette with the solution it will hold; a volumetric flask makes a known dilution. From c02: mass → moles → ratio → target; extra mass reads high, lost solid reads low; constant mass; repeats keep a bias. From p02: a known value lets you judge accuracy; recovery. From skills-s07: accuracy is closeness to the true value; a systematic error pushes every trial the same way.", "startsWith": "An unseen titration data set with a dilution. The video opens: Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh.", "stopsAfter": "choosing concordant titres and the 1 : 1 Ag⁺ : Cl⁻ ratio; scaling an aliquot back through a dilution to the original sample in mol/L and g/L; excluding a gravimetric result for its stated cause; using a 1 : 3 formula ratio to find a percentage purity; explaining the direction of a titrant-dilution error and a lost-precipitate error; evaluating a claim built on the mean of two biased results.", "nextLesson": "identifying cations (route chem-m8-c03a, \"How do flame, precipitate and complex tests identify a cation?\")."},
+        'teaching': {"task": "An exam gives you titres or precipitate masses, a method with something wrong in it, and a mole ratio waiting to trip you up. How do you decide which results to use, which ratio applies, how far to scale back, and which way an error pushes the answer?", "causalExplanation": "Why drop the rough titre: it is a guide, not a measurement (2b). Why 1 : 1: silver chloride's equation, not the indicator's (2b). Why ×10: the flask held ten aliquots (2c). Why divide by 10.00 mL: all those moles came from the original seawater (2c). Why exclude trial 3: its stated cause (not at constant mass) adds water and mass (3b). Why ÷ 3: each formula unit holds three sulfates (3c). Why 287% is wrong: a purity can't exceed 100% (3d). Why method 1 reads high: diluted titrant needs more volume, but the calculation uses the labelled concentration (4b). Why method 2 reads low: lost solid never reaches the balance (4c). Why the mean is not evidence: the errors are in opposite directions and only happen to cancel (4d).", "conversationalApproach": "A titration counts the silver it takes and a precipitate can be weighed, and exam questions on both test the same few moves: use the right data, choose the right mole ratio, keep track of any dilution and say which way an error pushes the answer. Q1 (seawater diluted ten to two hundred and fifty millilitres, aliquots titrated with silver nitrate) drops the rough titre, averages the three concordant titres to 10.90 mL, takes the one to one silver chloride ratio rather than the chromate's two to one, then works moles of silver, the flask and the original ten millilitres to about 19.3 g/L, close to typical seawater; the classic slip stops at the aliquot. Q2 (aluminium sulfate purity by barium sulfate) excludes trial three because it was weighed after only one drying, not because it is different, uses the mean of the two constant-mass trials, and divides by three because each formula unit holds three sulfates, giving about 96%; the slip uses one to one and gets an impossible 287%. Q3 (a known chloride solution analysed by two faulty methods) explains why a water-rinsed burette dilutes the titrant and reads high and why precipitate lost through a torn paper reads low, calls both systematic, and shows that a mean near the known value is luck, not accuracy; the trap is trusting the average. A decision board closes: drop rough and faulty results with a reason, take the ratio from the precipitate, track every dilution and give each error's direction.", "openingDecision": "Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh. Exam questions on both test the same few moves. Use the right data, choose the right mole ratio, keep track of any dilution, and say which way an error pushes the answer. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): Q1's dilution volumes, the titrant concentration, all four titres and M(Cl); Q2's three masses with their drying notes and both molar masses; Q3's known value, both faults and both results, and the mean. Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p58), as printed: \"conduct investigations and/or process data involving: - gravimetric analysis - precipitation titrations\" Practice and transfer only: first coverage stays with chem-m8-c01 (precipitation titrations), chem-m8-c02 and chem-m8-p02 (gravimetric analysis); G01 adds practice rows for processing data. starts at the route's \"Interpret method and data for each quantitative analysis\" and stops at its \"Choose correct mole ratios and evaluate an error\". Three questions, each with one trap: (1) a Mohr titration of diluted seawater: drop the rough titre, take the 1 : 1 ratio from the precipitate's equation, then scale back through the dilution to the original sample (trap: reporting the diluted solution's concentration); (2) a gravimetric purity check of aluminium sulfate: exclude a result for its stated cause, not its size, then use a 1 : 3 formula ratio (trap: using 1 : 1, which gives an impossible 287%); (3) the same known chloride solution measured by both methods, each with a stated fault: explain the direction of each error, then evaluate a claim that the mean of the two results shows accuracy (trap: trusting an average of two biased results). Not here: Mohr's indicator chemistry, the pH window and the blank (c01, recalled only where needed); the method steps and their reasons (c02, p02); acid-base titration (Module 6); back titration; ignition in a crucible."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G03 layout: top-left the question card (stem, data and demands as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Titration with a dilution\", \"Gravimetric ratio\", \"Evaluate the errors\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"which results to use?\", \"ratio from the precipitate?\", \"every dilution tracked?\", \"error: extra or lost, which way?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from c01 and c02: silver pale grey, chloride green, sulfate yellow-green, precipitate white; givens and units navy; the current answer bright; earlier lines dim; amber only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; completed lines dim while the current line writes.", "transitionPlan": "The heading writes on as the Mohr flask and balance plates write side by side with a ratio chip between them; each question opens on a fresh board with the type badge hidden while the worded card writes with its data table and demands; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the rough titre strikes out and a concordance bracket spans the three titres; the dilution ladder draws three stacked vessels and each stage line writes beside its rung, earlier lines dimming with their results kept; the outlier chip and constant mass chip write before the formula unit counter drops three barium sulfate tiles from one aluminium sulfate; the two-arrow error board draws with a dashed known line, the burette and torn filter thumbnails run their faults and each arrow points up or down; the mean marker writes near the line and slides below it when the tear grows; each question ends with its classic slip chip taking a red scribble cross; the check strip returns full size as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."},
+        'rows': M8G01_ROWS,
+    },
+    'm8c03a': {
+        'design': D + 'lessons/chem-m8-c03a.md',
+        'learning_review': D + 'checks/m8c03a-learning-review.md',
+        'science_check': D + 'checks/m8c03a-claude-science-check.md',
+        'meta': {"title": "How do flame, precipitate and complex tests identify a cation? Chloride, sulfate and hydroxide in order, then a flame or a complex to confirm", "subtitle": "Eight bottles on a prep room shelf have lost their labels. Each holds a different metal ion. How can a short sequence of tests, each ruling ions out, tell you which metal ion is in a sample, and how do you confirm it?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 6, "lessonIntent": "naming the three kinds of evidence; running the chloride, sulfate and hydroxide steps in order with the reason for the order; splitting Ag⁺ from Pb²⁺, Ba²⁺ from Ca²⁺ and Mg²⁺ from Ca²⁺; reading the four hydroxide colours and the Fe²⁺ trap; confirming with complexes; drawing the cation flowchart; writing the net ionic equation for the deciding precipitate. No anions, no procedure or risk table."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "three-kinds-of-evidence", "step-1-chloride", "silver-or-lead", "step-2-sulfate", "flame-tests", "flame-limits", "step-3-hydroxide", "why-this-order", "iron-two-trap", "complexes-confirm", "flowchart", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m5-c13 (NAGSAG, net ionic equations, spectators; AgCl white, PbI₂ bright yellow, BaSO₄ white, Cu(OH)₂ pale blue); chem-m5-c14 and chem-m5-c15 (a solid forms once the ion product passes Ksp; \"slightly soluble\" is a recall word only); Module 5 equilibrium (FeSCN²⁺ blood red); Year 11 Module 1 (flame tests, emission). Oxidation of Fe²⁺ to Fe³⁺ is named in plain words (loses an electron to oxygen), not taught.", "startsWith": "Use flame colour and precipitate evidence. The video opens: A prep room shelf holds eight bottles of solutions, and the labels have washed off. Each one holds a different metal ion: barium, calcium, magnesium, lead, silver, copper, and iron in two forms, iron two and iron three. A sample from one bottle is in this tube.", "stopsAfter": "naming the three kinds of evidence; running the chloride, sulfate and hydroxide steps in order with the reason for the order; splitting Ag⁺ from Pb²⁺, Ba²⁺ from Ca²⁺ and Mg²⁺ from Ca²⁺; reading the four hydroxide colours and the Fe²⁺ trap; confirming with complexes; drawing the cation flowchart; writing the net ionic equation for the deciding precipitate. No anions, no procedure or risk table.", "nextLesson": "identifying the anion (route chem-m8-c03b), then the practical with unknowns (chem-m8-p03)."},
+        'teaching': {"task": "Eight bottles on a prep room shelf have lost their labels. Each holds a different metal ion. How can a short sequence of tests, each ruling ions out, tell you which metal ion is in a sample, and how do you confirm it?", "causalExplanation": "(1) one test won't settle eight suspects; a sequence of tests rules ions out; (2) a precipitate test adds an anion that makes an insoluble solid with only some cations (solubility rules recall); a flame test reads the light given out by the heated sample's atoms; a complex ion is a metal ion with molecules or ions bonded around it, often coloured or able to pull a solid back into solution; (3) chloride: only silver and lead chlorides are insoluble, so white means Ag⁺ or Pb²⁺, and no solid rules both out (but dilute lead may slip through); (4) ammonia bonds to silver ions, so AgCl dissolves and PbCl₂ doesn't; KI gives bright yellow PbI₂; (5) sulfate: BaSO₄ insoluble; CaSO₄ slightly soluble, so only concentrated calcium shows; PbSO₄ catches dilute lead; a white solid here needs one more test; (6) flame colour: heat excites electrons in the sample's atoms, they fall back and emit light characteristic of the element; Ba²⁺ pale green, Ca²⁺ brick red, Cu²⁺ blue-green, Mg²⁺ and Pb²⁺ no useful colour; (7) flame limits: sodium masks, dirty loop carries over, so clean it and back each flame with a precipitate; (8) hydroxide: four coloured solids; Mg(OH)₂ white and stays in excess; a white solid could be concentrated Ca²⁺, so a colourless flame points to Mg²⁺; (9) why chloride and sulfate come first: Ag⁺ and Pb²⁺ would also give hydroxide solids; (10) Fe(OH)₂ browns in air as Fe²⁺ is oxidised to Fe³⁺, so read it at once; (11) complexes confirm: Cu²⁺ with excess ammonia, deep blue; Fe³⁺ with thiocyanate, blood red; two kinds of chemistry agreeing is stronger evidence; (12) the flowchart and the hook sample traced; the chart is for one unknown cation, and mixtures need a separation plan.", "conversationalApproach": "eight bottles on a prep room shelf have lost their labels, each holding a different metal ion, and a blue tint only hints at copper, so the video asks how a short sequence of tests can rule ions out until one is left and then confirm it. Three kinds of evidence are introduced: a precipitate test adds an anion that makes an insoluble solid with only some cations, a flame test reads the colour of the heated sample, and a complexation test bonds molecules or ions around the metal ion. The plan is to sort with precipitates, each in a fresh portion: dilute hydrochloric acid first, where a white solid means silver or lead, split by dilute ammonia dissolving silver chloride and by potassium iodide giving yellow lead iodide, with dilute lead able to slip through; then dilute sulfuric acid, where barium and concentrated calcium give white sulfates; then the flame test as supporting evidence (pale green barium, brick red calcium, blue-green copper), with its limits from sodium and a dirty loop. Sodium hydroxide comes third, giving pale blue copper, red-brown iron(III), green iron(II) and white magnesium hydroxides, and the order matters because silver and lead would muddy those colours. The iron(II) trap is that air oxidises the green solid to brown, so read it at once. Complexes confirm: excess ammonia gives deep blue with copper and thiocyanate gives blood red with iron(III). The flowchart traces the hook sample to copper. The memory aid is chloride, sulfate, hydroxide, then flame, with the ions each step catches. Two exam questions follow with brief feedback.", "openingDecision": "A prep room shelf holds eight bottles of solutions, and the labels have washed off. Each one holds a different metal ion: barium, calcium, magnesium, lead, silver, copper, and iron in two forms, iron two and iron three. A sample from one bottle is in this tube. A blue tint might hint at copper, but a hint isn't proof. One test won't settle eight suspects. We need a sequence of tests, where each result rules some ions out.", "understandingCheck": "(A1) Separate portions: dilute HCl no change; dilute H₂SO₄ white precipitate; pale green flame. Identify the cation and write the net ionic equation. Tests the sequence logic and the flame as decider. Crossed mistake: \"Ca²⁺: it gave a white sulfate\" (pack trap: \"flame colour treated as unique proof\" turned round; site MC idea, original wording). (A2) Green NaOH precipitate turns red-brown after ten minutes; student concludes Fe³⁺. Evaluate and suggest a confirming test. Tests scene 10's cause. Crossed mistake: \"Fe³⁺: the final colour is red-brown\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:; cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+); anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)\" (The two dashes in the first line are en dashes as printed, not em dashes.) This video covers the eight cations. The anions are chem-m8-c03b; the hands-on investigation with unknowns is chem-m8-p03. starts from a sample holding one unknown metal ion from the syllabus list, and stops when the student can sort and confirm it with a test sequence and write the net ionic equation for the deciding precipitate. It teaches: three kinds of evidence (precipitate, flame, complex) with a plain meaning each; a fresh portion for each test; step 1, dilute HCl: white AgCl or PbCl₂ (Ag⁺, Pb²⁺); the split by dilute ammonia (AgCl dissolves as [Ag(NH₃)₂]⁺) and by KI (bright yellow PbI₂); step 2, dilute H₂SO₄: white BaSO₄ (Ba²⁺), CaSO₄ only from fairly concentrated samples, PbSO₄ for lead that slipped through; flame tests (Ba²⁺ pale green, Ca²⁺ brick red, Cu²⁺ blue-green; Mg²⁺ and Pb²⁺ no useful colour), with the cause in one recall sentence and the sodium and dirty-loop limits; step 3, NaOH: Cu(OH)₂ pale blue, Fe(OH)₂ green, Fe(OH)₃ red-brown, Mg(OH)₂ white (stays in excess); why the chloride and sulfate steps come first; Fe(OH)₂ browning in air; complex confirmations (Cu²⁺ with excess NH₃ deep blue; Fe³⁺ with SCN⁻ blood red); the full flowchart, with its two branch conditions kept; one sentence that mixtures need a separation plan (not taught here). Not taught: anions (c03b); Al³⁺, NH₄⁺, Na⁺, K⁺, Li⁺, Sr²⁺ (site extension, not syllabus); amphoteric Pb(OH)₂ and Ag₂O with hydroxide beyond one clause; hexacyanoferrate tests for iron; AAS (c04); the procedure and risk table (p03)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: chloride step green; sulfate step amber; hydroxide step blue; flame step orange; complex step violet; precipitates in their real colours; the current box bright; completed families dim grey. Board layout (constant): suspect strip along the top; heading below it top-left; tube or flame plates left third; flowchart right two thirds, growing downward. Reuse: painted plates inspected 30 Oct by contact sheet (Assets). The m5x rack set and the m8 rack plates are different racks, so only m5x-rack tubes appear side by side; the brief 60 `m8-ppt-feoh2-green-v1.png` (m8 rack) is not used, and a matching m5x-rack retake is requested. No human figures.", "transitionPlan": "The heading writes on over eight blank-label bottles as the suspect strip writes one symbol per ion; three small evidence panels write left to right, the complex wrap inset clustering ammonia around a cation; the board clears to the flowchart area, where each reagent arrow writes down from the sample box, a reagent drop falls into the rack tube and the tube cross-fades to its precipitate state with the net ionic equation beside it; the ammonia split runs in the complex wrap inset as the silver chloride tile breaks up; the unlit burner plate gives way to each flame plate on its cue, then the sodium glow spreads over the green; the four hydroxide tubes write in a row in the aligned rack; ghost tiles for silver and lead drop and strike out as the suspect strip narrows; the green iron(II) tube enlarges and cross-fades to its browning plate under a clock arc; violet confirmation arrows write under the copper and iron(III) boxes with the deep blue and blood red tubes; the full flowchart lights family by family and a highlight traces the hook sample to copper; the memory lines write with colour swatches; each attempt clears the board with its question card, and its feedback underlines the card as the mini flowchart path lights and a crossed trap chip lands; the hook bottle returns with a next chip; scene crossfade with settle."},
+        'rows': M8C03A_ROWS,
+    },
+    'm8c03b': {
+        'design': D + 'lessons/chem-m8-c03b.md',
+        'learning_review': D + 'checks/m8c03b-learning-review.md',
+        'science_check': D + 'checks/m8c03b-claude-science-check.md',
+        'meta': {"title": "How do we identify the anion? Acid first, then barium and silver, with confirming tests for all eight anions", "subtitle": "The cation's known: copper. But copper what? How do you find the anion in a sample, choosing tests that can't fool you, and confirm it?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 6.5, "lessonIntent": "choosing and ordering the eight anion tests with the reason for each reagent and condition; identifying one unknown anion from observations with a net ionic equation; explaining why the wrong acid gives a false positive. No cations, no procedure or risk table."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "step-1-acid", "acetate", "why-acidify", "step-2-sulfate", "step-3-halides", "ammonia-confirms", "phosphate", "hydroxide", "flowchart", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m8-c03a (fresh portions; sort then confirm; complex ion; AgCl dissolves in dilute ammonia); chem-m5-c13 (solubility rules; net ionic equations); Module 6 (acids donate hydrogen ions; acid plus carbonate gives CO₂; limewater; litmus); Module 7 (ethanoic acid). Hydrogen phosphate ions are named, not taught.", "startsWith": "The cation is known; find the anion. The video opens: Back to the prep room. A pale blue precipitate, a deep blue complex and a blue-green flame told us one bottle holds copper ions. But copper what?", "stopsAfter": "choosing and ordering the eight anion tests with the reason for each reagent and condition; identifying one unknown anion from observations with a net ionic equation; explaining why the wrong acid gives a false positive. No cations, no procedure or risk table.", "nextLesson": "the practical with unknown solutions (route chem-m8-p03)."},
+        'teaching': {"task": "The cation's known: copper. But copper what? How do you find the anion in a sample, choosing tests that can't fool you, and confirm it?", "causalExplanation": "(1) the cation is only half the salt; eight anion suspects; (2) dilute acid: carbonate takes hydrogen ions and breaks down to CO₂ and water, so it fizzes; CO₂ turns limewater milky as calcium carbonate forms; (3) acetate takes hydrogen ions too, but makes ethanoic acid, not a gas: no fizz, a vinegar smell on warming; neutral FeCl₃ forms a red-brown complex; (4) carbonate also precipitates with barium and silver, so acidify first; HCl would add chloride and H₂SO₄ sulfate; nitric acid is safe because nitrates are all soluble; (5) sulfate: acidified barium, white BaSO₄ that stays in acid (BaCO₃ would dissolve); (6) halides: acidified silver nitrate, white, cream, pale yellow; (7) the colours are close, so ammonia confirms: the less soluble the silver halide, the more ammonia needed to pull silver into a complex: dilute, concentrated, neither; (8) phosphate: yellow Ag₃PO₄, only in neutral solution, because in acid phosphate takes hydrogen ions and stops precipitating; it dissolves in dilute nitric acid, which separates it from AgI; (9) hydroxide: basic to litmus, but carbonate and phosphate are basic too, so test last; hydroxide takes a hydrogen ion from ammonium and releases ammonia, which turns damp red litmus blue; (10) the flowchart; (11) the salt named.", "conversationalApproach": "the last video found copper in the prep room bottle, but copper chloride, sulfate and acetate all give the same copper results, so the video asks how to find the anion, choosing tests that cannot fool you, and confirm it. The plan is the same: fresh portions and reagents that react with only a few ions. Dilute acid comes first: carbonate takes hydrogen ions and fizzes carbon dioxide that turns limewater milky, while acetate gives no fizz but a vinegar smell on gentle warming, confirmed by a deep red-brown complex with neutral iron(III) chloride. The surprise is that the acid can create the result: carbonate would fake a positive with barium and silver, so acidify first, but hydrochloric acid would add chloride to the halide test, so use dilute nitric acid there. Acidified barium gives white barium sulfate that stays in acid; acidified silver nitrate gives white, cream and pale yellow silver halides, and ammonia confirms them, since silver chloride dissolves in dilute ammonia, silver bromide needs concentrated and silver iodide dissolves in neither. Phosphate is tested in a separate neutral portion, because in acid it picks up hydrogen ions and stops precipitating, and its yellow silver phosphate dissolves in dilute nitric acid where silver iodide does not. Hydroxide comes last, because carbonate and phosphate solutions are basic too, and warming with an ammonium salt releases ammonia that turns damp red litmus blue. The full flowchart closes the tests. The memory aid is acid first with an acid that adds none of the ions you are testing for, phosphate in a neutral portion, then white, cream, pale yellow and dilute, concentrated, neither. Two exam questions follow with brief feedback, and the hook bottle is named copper sulfate.", "openingDecision": "Back to the prep room. A pale blue precipitate, a deep blue complex and a blue-green flame told us one bottle holds copper ions. But copper what? Copper chloride, copper sulfate and copper acetate all dissolve, and all give the same copper results. The cation's only half the answer. Now we need the anion, and the list has eight: chloride, bromide, iodide, hydroxide, acetate, carbonate, sulfate and phosphate.", "understandingCheck": "(A1) A student acidifies with dilute HCl, then adds AgNO₃, sees a white precipitate and concludes chloride. Explain why invalid, describe the correct test. Tests scene 4's cause. Crossed mistake: \"Any acid works: it only removes carbonate.\" (A2) Separate portions: HNO₃ no effervescence; HNO₃ then Ba(NO₃)₂ no change; HNO₃ then AgNO₃ cream precipitate, dissolves in concentrated but not dilute ammonia. Identify the anion, write the net ionic equation. Tests scenes 2, 5, 6, 7. Crossed mistake: \"I⁻: it looked yellowish.\"", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:; cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+); anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)\" (The two dashes in the first line are en dashes as printed, not em dashes.) This video covers the eight anions. The cations are chem-m8-c03a; the investigation with unknowns is chem-m8-p03. starts with a sample whose cation is known (copper, from c03a) and stops when the student can choose and order anion tests, explain each reagent choice and interference, identify one unknown anion from observations and write the net ionic equation. It teaches: fresh portions (recall); dilute acid: carbonate fizzes, CO₂ turns limewater milky; acetate gives no fizz but a vinegar smell on warming (ethanoic acid), confirmed by neutral FeCl₃ (red-brown complex); why acidify before barium and silver (carbonate gives white BaCO₃ and pale yellow Ag₂CO₃; acid removes it as CO₂); which acid (HNO₃ for the halide test, because HCl adds chloride; HCl or HNO₃ for sulfate); sulfate: acidified Ba²⁺, white BaSO₄ that stays in acid; halides: acidified AgNO₃, AgCl white, AgBr cream, AgI pale yellow; ammonia confirms (AgCl dissolves in dilute, AgBr in concentrated, AgI in neither); phosphate: AgNO₃ in neutral solution, yellow Ag₃PO₄ that dissolves in dilute HNO₃; why neutral (acid converts phosphate to hydrogen phosphate ions); hydroxide: basic to litmus, but rule out carbonate and phosphate first, then warm with an ammonium salt for NH₃ that turns damp red litmus blue; the full anion flowchart; naming the salt. Not taught: cations (c03a); sulfite, nitrate and other anions; ammonium molybdate for phosphate (author note); the esterification acetate test (site's alternative; author note); procedure and risk table (p03)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key (c03a's, extended): acid step orange; barium step amber; silver step grey-silver; phosphate step yellow; hydroxide step blue; complex step violet; precipitates in their real colours; current box bright; completed families dim grey. Board layout (constant, as c03a): suspect strip along the top; heading top-left; tube plates left third; flowchart right two thirds. Reuse: painted plates inspected 30 Oct by contact sheet (Assets). As in c03a, only m5x-rack tubes appear side by side. No human figures.", "transitionPlan": "The heading writes on as c03a's hook bottle returns with a copper tag and three salt chips, and the anion suspect strip writes one symbol per ion; an orange acid arrow writes from the sample box, coded bubbles rise in the tube plate and a delivery line leads to the limewater plate as it cross-fades to milky; a second branch shows heat shimmer, vapour wisps and the waft arc beside the vinegar bottle, then the iron(III) chloride tube cross-fades to red-brown; a mini inset shows carbonate locking with barium and silver as false positive tiles, then acid turning it into rising bubbles, and an acid choice chip crosses hydrochloric acid for the halide test; each test arrow writes down the flowchart as a reagent drop falls and the tube cross-fades to its precipitate with the ion lock inset and the net ionic equation; the three halide tubes write in a row and the ammonia ladder dissolves them in turn; a phosphate inset shows hydrogen ions turning phosphate aside before the neutral portion cross-fades to yellow and then clears in nitric acid; the litmus plate and ammonium inset run the hydroxide test; the full flowchart lights family by family with a highlight down each branch; the memory lines write by hand; each attempt clears the board with its question card, and its feedback underlines the card as the suspect strip greys ions and a crossed trap chip lands; the hook bottle returns with a barium sulfate tube and its tag completes to copper sulfate as a next chip writes; scene crossfade with settle."},
+        'rows': M8C03B_ROWS,
+    },
+    # END generated entries: m8p02, m8g01, m8c03a, m8c03b
 }
 
 

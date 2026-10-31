@@ -1,0 +1,148 @@
+{
+  "title": "Precipitation Titration and Gravimetric Analysis: HSC-Style Practice",
+  "subtitle": "An exam gives you titres or precipitate masses, a method with something wrong in it, and a mole ratio waiting to trip you up. How do you decide which results to use, which ratio applies, how far to scale back, and which way an error pushes the answer?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 5,
+  "lessonIntent": "choosing concordant titres and the 1 : 1 Ag⁺ : Cl⁻ ratio; scaling an aliquot back through a dilution to the original sample in mol/L and g/L; excluding a gravimetric result for its stated cause; using a 1 : 3 formula ratio to find a percentage purity; explaining the direction of a titrant-dilution error and a lost-precipitate error; evaluating a claim built on the mean of two biased results.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh. Exam questions on both test the same few moves. Use the right data, choose the right mole ratio, keep track of any dilution, and say which way an error pushes the answer. Here are three HSC-style questions. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A ten millilitre sample of seawater is diluted to two hundred and fifty millilitres. Twenty five millilitre aliquots are titrated with silver nitrate, using chromate indicator. The titres are on screen. Calculate the chloride concentration in the seawater, in grams per litre. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-data-ratio",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the data. The rough titre is only a guide, so leave it out. The other three agree within a tenth of a millilitre, so they're concordant, and their mean is ten point nine zero millilitres. Now the ratio. Silver and chloride form silver chloride, one to one. The chromate only signals the end, so its two to one ratio isn't the one you want."
+      }
+    },
+    {
+      "id": "q1-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Moles of silver: point zero five zero zero times point zero one zero nine zero litres, five point four five times ten to the minus four moles. That's the chloride in one twenty five millilitre aliquot. The flask held two hundred and fifty millilitres, ten times as much, so it held five point four five times ten to the minus three moles. All of that came from the ten millilitres of seawater. Divide by point zero one zero zero litres: point five four five moles per litre. Times thirty five point four five, about nineteen point three grams per litre. That's close to typical seawater, a good sense check."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is stopping at the aliquot. Divide the moles by twenty five millilitres, and you get point zero two one eight moles per litre. That's the diluted solution, not the seawater. Ask which liquid the question is about, then scale back up through the dilution."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Water treatment plants use aluminium sulfate. To check a sample's purity, three portions, each point four zero zero grams, are analysed by precipitating barium sulfate. The masses are on screen, and the third was weighed after only one drying. Justify which result to exclude, then calculate the percentage of aluminium sulfate in the sample. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-outlier",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part a. Trial three is the highest, but being different isn't a reason on its own. The reason is in the method: it was weighed after only one drying, so it probably still held water. Extra water means extra mass, so it reads too high. Trials one and two were dried to constant mass, and they agree, so their mean, point seven eight three grams, is the value to use."
+      }
+    },
+    {
+      "id": "q2-ratio-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. Moles of barium sulfate: point seven eight three over two hundred and thirty three point three nine, three point three five times ten to the minus three moles. Now the ratio. Each aluminium sulfate holds three sulfate ions, so it makes three barium sulfates. Divide by three: one point one two times ten to the minus three moles of aluminium sulfate. Times three hundred and forty two point one four, that's point three eight three grams. Out of point four zero zero grams, about ninety six percent. That's under a hundred, which makes sense for a purity."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is using one to one. That gives about two hundred and eighty seven percent, which is impossible for a purity. When a percentage comes out over a hundred, check your ratio first."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A teacher makes up a sodium chloride solution of known concentration, point zero six two zero moles per litre. A student measures it twice. A Mohr titration, with the burette rinsed only with distilled water, gives point zero six three five. A gravimetric analysis, where some silver chloride went through a small tear in the filter paper, gives point zero six zero seven. Explain why each result differs from the known value. Then evaluate the claim that their mean shows the analysis was accurate. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-titration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Method one. Water left in the burette dilutes the silver nitrate, so each millilitre carries less silver than the label says. You need a bigger titre to reach the endpoint. But the calculation still uses the label's concentration, so it counts more silver, and more chloride, than was really there. That's why the result is too high. Rinsing with the silver nitrate itself fixes it, because any liquid left behind is then the same solution."
+      }
+    },
+    {
+      "id": "q3-gravimetric",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Method two. Silver chloride that slips through the tear never reaches the balance. Less mass means fewer moles of silver chloride, so less chloride. That result is too low. Each fault would push the result the same way every time you repeated it, so both are systematic."
+      }
+    },
+    {
+      "id": "q3-claim",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. The mean lands near the known value only because one error pushed up and the other pushed down by a similar amount. That's luck, not accuracy. Neither method was accurate, and with a slightly bigger tear, the mean would miss. The fixes remove each cause: rinse the burette with the silver nitrate solution, and filter through an undamaged paper. So the claim isn't supported. To check accuracy properly, run each fixed method on a known solution like this one. The trap is trusting the average. A close average doesn't show that either method was accurate."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any precipitation titration or gravimetric question. Leave out rough and faulty results, and say why. Take the ratio from the precipitate's equation or formula, not from the indicator. Track every dilution back to the original sample. And for each error, ask whether it adds or loses volume or mass, then say which way the answer moves. Next, identifying ions: which tests tell you which cation is there?"
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

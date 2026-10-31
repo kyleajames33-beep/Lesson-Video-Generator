@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8g03/lesson.json",
+    "lessonSha256": "20cde7cd154bcb0f7f1e0e2fd285fbc8e1d80535a382691d78802bd98fce5ece"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: the five parts in order (\"Some Really Cool Elephants Run\"); negative feedback opposes a change; positive feedback strengthens a change until an end point (blood clotting); the regulated variable is inside the body. From b02: nerve impulses are the fast neural pathway; hormones travel in the blood. From b03 (route level only: \"Trace the response to rising glucose\" and \"Explain the reciprocal response to falling glucose\"): beta cells release insulin when glucose rises; liver, muscle and fat cells take up glucose and the liver stores glycogen; alpha cells release glucagon when glucose falls, and the liver breaks glycogen down to release glucose. From b04 (route level only): not used. From b05: ABA closes stomata under water stress. Not assumed: baroreceptor (the card supplies its meaning: \"stretch receptors\"), cardiovascular centre (supplied), ethylene (supplied: \"a gas\").",
+    "startsWith": "An unfamiliar system described in words. The video opens: Feedback loop questions turn up in HSC Biology again and again, in different disguises.",
+    "stopsAfter": "constructing the blood pressure loop from a description (stimulus: blood pressure falls; receptors: baroreceptors in the aorta and carotid arteries; control centre: cardiovascular centre in the medulla oblongata; effectors: heart and arterioles; response: a faster, stronger heartbeat and narrower arterioles raise blood pressure back towards normal; a minus on the return arrow) and predicting that damaged baroreceptor nerves leave pressure low after standing; reading a glucose and insulin graph after a meal (glucose peaks first at 30 minutes, insulin at 45 minutes because the rise in glucose is the stimulus for insulin release; from 45 to 120 minutes insulin makes liver, muscle and fat cells take up glucose and store glycogen, glucose falls to about its fasting value and insulin falls with it; after the dip below fasting at 150 minutes, alpha cells release glucagon and the liver releases glucose from glycogen); identifying ethylene ripening as positive feedback and explaining that glucagon raising a fallen glucose level is negative feedback because the response opposes the change.",
+    "nextLesson": "investigate plant water loss in a practical (route entry bio-m8-p02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-g03.md"
+  ],
+  "teaching": {
+    "task": "When an exam gives you an unfamiliar system, a glucose graph or a list of processes, how do you build the loop, read it off the data, and tell negative feedback from positive?",
+    "causalExplanation": "Why the response must name the variable (it is what the loop regulates; 2b, 2d); how the effectors raise pressure (more blood pumped each minute, narrower arterioles; 2b, the 2021 and 2025 marker comments on causal paths); why a cut link leaves pressure low (no signal reaches the control centre; 2c); why insulin peaks after glucose (glucose is its stimulus; 3b); why glucose falls and insulin falls with it (target cells take up glucose, and the falling stimulus lowers secretion; 3c); why glucose rises after the dip (glucagon, liver glycogen; 3c); why R is positive (each round adds more ethylene; 4b); why Q is negative despite the rise (the response opposes the fall; 4c).",
+    "conversationalApproach": "Feedback loop questions turn up in HSC Biology in different disguises, and most come down to three moves: build the loop in order, read it off a graph, and tell negative feedback from positive. Q1 (blood pressure falling on standing up quickly) takes each part from the stem: the fall in pressure as stimulus, the baroreceptors, the cardiovascular centre in the medulla, the heart and arterioles as effectors, and a response written as the change in the variable, pressure rising back, with a minus on the return arrow; damaged baroreceptor nerves cut the loop, so pressure stays low and the person may faint; the classic slip ends at the effector with the heart beats faster. Q2 (blood glucose and insulin after a meal) reads the peaks off the axes, glucose at thirty minutes and insulin at forty-five, as the stimulus and the response that follows it, explains the fall from forty-five to one hundred and twenty minutes as insulin making liver, muscle and fat cells take up and store glucose with insulin easing as glucose falls, and explains the late rise from glucagon and the liver, which the graph does not show; the slip says insulin breaks down glucose. Q3 (ABA closing stomata, glucagon in a long run, ethylene ripening bananas) tests each process by whether the response opposes or strengthens the change, picks ethylene ripening as positive feedback, and corrects a student who calls the glucagon loop positive because glucose goes up; the slip reads positive as goes up. A decision board closes: five parts in order with the response as a change in the variable, find the stimulus first on a graph, and compare the response with the original change.",
+    "openingDecision": "Feedback loop questions turn up in HSC Biology again and again, in different disguises. Most of them come down to three moves. Build the loop in order, read it off a graph, and tell negative feedback from positive. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`, p 56; practice and transfer only, first coverage stays with b01 to b05): B8-IQ1-01: \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed examples \"temperature (ACSBL098)\" and \"glucose\". Q1 is construct (a written description of an unseen system); Q2 is interpret (a glucose and insulin graph, the listed \"glucose\" example); Q3 is interpret by classifying (negative against positive, across a plant, a glucose and a fruit process). \"Range of sources\": a written description (Q1), a two-line graph (Q2), three short process descriptions (Q3). B8-IQ1-02 (recalled, not taught): \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways\" (Q1's nerve impulses, Q2's hormones) and \"mechanisms in plants that allow water balance to be maintained\" (Q3's process P)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in g01's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Build a loop\", \"Read a glucose graph\", \"Negative or positive?\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is b01's `LoopRing`, filling slot by slot with small plates (`m8-heart-v1.png`, `b3a2-brain-v1.png`) and short labels, then one link cut for the prediction. Q2's working is the coded `lineGraph` with two y axes (glucose and insulin), peak markers and reading guides, with `m8-pancreas-v1.png` and `m8-skeletal-muscle-v1.png` small beside it. Q3's working is three process strips (P, Q, R), each a mini two-slot loop (change → response) with its return arrow taking a minus or a plus, beside its plate (`b2b-prop-new-plant-v1.png`, `m8-pancreas-v1.png`, the new banana pair). No people, hands or faces: the person in Q1 and the adult in Q2 are words only; the body is never outlined. Coded elements are limited to loops, graphs, arrows, chips, tags, answer boxes and the decision board. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The heading writes on as an empty five-slot loop ring, a blank two-line graph and two return arrows marked minus and plus draw in the working area; each question opens on a fresh board with the type badge hidden while the worded card writes beside its small plates; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the loop ring draws large and fills one slot per cue as signal pulses travel round, then a link cut mark stops the pulse and the downstream slots grey; the effector chip slides into its slot to show where it belongs; the graph enlarges, peak markers drop to the axes and the line segments brighten on their cues beside the pancreas, liver and muscle plates; three process strips draw with their plates, each gaining a minus or plus on its cue, and the student's up arrow is set against the stimulus arrow; each question ends with its classic slip chip taking a scribble cross; the decision board becomes two columns, each row lighting on its cue with its question badge; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Build it, read it, classify it\" writes on.",
+      "teachingReason": "Hook: Feedback loop questions turn up in HSC Biology again and again, in different disguises.",
+      "narrationCue": "Build / read / positive",
+      "motionPurpose": "On the spoken cues: On \"Build\" an empty five-slot `LoopRing` outline draws in the working area; on \"read\" a small blank two-line graph outline draws beside it; on \"positive\" two small return arrows write under them, one marked minus and one plus, with a \"?\" between. On \"three HSC-style questions\" three small numbered",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Build it, read it, classify it\" writes on. On \"Build\" an empty five-slot `LoopRing` outline draws in the working area; on \"read\" a small blank two-line graph outline draws beside it; on \"positive\" two small return arrows write under them, one marked minus and one plus, with a \"?\" between. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a ring, a graph, three short strips, all without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: standing up quickly) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. When a person stands up quickly,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: standing up quickly)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. `m8-heart-v1.png` and `b3a2-brain-v1.png` sit small at the card's upper left, above the card text. The card writes on: \"When a person stands up quickly, blood pools in the veins of the legs and blood pressure in the upper body falls. Baroreceptors (stretch receptors in the walls of the aorta and the carotid arteries) detect the fall in blood pressure. The cardiovascular centre in the medulla oblongata sends nerve impulses to the heart, which beats faster and more strongly, and to arterioles, which narrow. Within seconds, blood pressure returns towards its usual level.\" Demands: \"(a) Construct a negative feedback loop for this response, naming each of the five components. (3 marks)\" \"(b) Predict what would happen to blood pressure on standing if the nerves from the baroreceptors were damaged. Justify your prediction. (2 marks)\". An empty answer area with a faint five-slot ring outline (no labels). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-build",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip; type badge \"Build a loop\".",
+      "teachingReason": "Five parts, in order: Build it in order, and take each part from the stem.",
+      "narrationCue": "stimulus / receptors / control centre / effectors / response / rises back / minus",
+      "motionPurpose": "On the spoken cues: b01's `LoopRing` draws large in the working area (grey tag \"b01: Some Really Cool Elephants Run\"). On \"stimulus\" \"blood pressure in the upper body falls\" underlines amber in the strip and the top slot writes \"stimulus: blood pressure falls\"; on \"receptors\" \"Baroreceptors\" underlines and the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Build a loop\". b01's `LoopRing` draws large in the working area (grey tag \"b01: Some Really Cool Elephants Run\"). On \"stimulus\" \"blood pressure in the upper body falls\" underlines amber in the strip and the top slot writes \"stimulus: blood pressure falls\"; on \"receptors\" \"Baroreceptors\" underlines and the receptor slot writes \"receptors: baroreceptors (aorta, carotid arteries)\"; on \"control centre\" \"cardiovascular centre in the medulla oblongata\" underlines, `b3a2-brain-v1.png` drops small into the slot with a `scribbleEllipse` round the brainstem, label \"control centre: cardiovascular centre, medulla\"; a `SignalPulse` runs from receptor to control centre. On \"effectors\" \"heart\" and \"arterioles, which narrow\" underline; `m8-heart-v1.png` drops small into the effector slot, label \"effectors: heart, arterioles\"; a pulse runs from control centre to effector (grey tag \"nerve impulses: fast\"). On \"response\" the response slot stays empty for a beat with an amber \"?\"; on \"rises back\" it writes \"response: blood pressure rises back towards normal\" (teal). On \"minus\" the return arrow from response to stimulus draws with a large minus sign. Answer box (a) builds line by line on the same cues (one line per component, then \"− : the response opposes the fall\"); each slot label dims to grey as the next writes, so at most three are bright. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-predict",
+      "visualDecision": "new",
+      "visualReference": "the ring stays.",
+      "teachingReason": "Cut one link: Now the prediction.",
+      "narrationCue": "low",
+      "motionPurpose": "On the spoken cues: On \"baroreceptor nerves are damaged\" \"nerves from the baroreceptors were damaged\" underlines amber in the strip and a `LinkCut` mark crosses the arrow from receptor to control centre (the pulse stops at the cut). On \"no signal\" the control centre and effector slots dim to grey. On \"stays low\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the ring stays. On \"baroreceptor nerves are damaged\" \"nerves from the baroreceptors were damaged\" underlines amber in the strip and a `LinkCut` mark crosses the arrow from receptor to control centre (the pulse stops at the cut). On \"no signal\" the control centre and effector slots dim to grey. On \"stays low\" a tiny coded trace beside the ring shows blood pressure dropping and staying down, with a grey dashed line where it would have recovered (tag \"no correction\"). On \"dizzy or faint\" a grey tag \"less blood to the brain\". Answer box (b) writes in two lines: \"Blood pressure would stay low after standing.\" on \"low\"; \"The medulla would receive no signal of the fall, so the heart and arterioles would not respond.\" on \"loop can't correct\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"response: the heart beats faster\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is ending at the effector, with \"response: the heart beats faster\".",
+      "narrationCue": "the classic mistake / That's what the effector does / the change in the regulated variable",
+      "motionPurpose": "On the spoken cues: On \"That's what the effector does\" the chip slides into the effector slot's position and fits there (grey tag \"effector action\"); on \"the change in the regulated variable\" the teal response label pulses. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"response: the heart beats faster\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"That's what the effector does\" the chip slides into the effector slot's position and fits there (grey tag \"effector action\"); on \"the change in the regulated variable\" the teal response label pulses. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: glucose after a meal) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A healthy adult ate a meal",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: glucose after a meal)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m8-pancreas-v1.png` sits small at the card's upper left. The card writes on: \"A healthy adult fasted overnight, then ate a meal containing carbohydrate at time 0. Blood samples were taken for 3 hours to measure blood glucose and blood insulin concentrations.\" Coded `lineGraph` with two y axes: left \"blood glucose (mmol/L)\" 4.0 to 8.0, right \"blood insulin (mU/L)\" 0 to 70; x axis \"time after meal (min)\" 0 to 180. Teal glucose line through: 0 min 5.0, 15 min 6.4, 30 min 7.6, 45 min 7.2, 60 min 6.6, 90 min 5.6, 120 min 5.0, 150 min 4.6, 180 min 4.9. Amber insulin line through: 0 min 6, 15 min 28, 30 min 50, 45 min 62, 60 min 52, 90 min 30, 120 min 14, 150 min 7, 180 min 6. Key: \"glucose\", \"insulin\". Grey chip: \"teaching data\". Demands: \"(a) Identify the time at which blood glucose and blood insulin each peaked, and account for the difference. (2 marks)\" \"(b) Explain the change in blood glucose between 45 and 120 minutes, with reference to negative feedback. (3 marks)\" \"(c) Using the graph and your knowledge, explain the change in blood glucose between 150 and 180 minutes. (2 marks)\". Three answer boxes. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-peaks",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Read a glucose graph\".",
+      "teachingReason": "Read the axes first: Start with the peaks, and read them off the axes.",
+      "narrationCue": "thirty minutes / forty-five minutes / after",
+      "motionPurpose": "On the spoken cues: The graph enlarges. On \"thirty minutes\" a `PeakMarker` drops from the glucose peak to the x axis (label \"30 min, 7.6 mmol/L\"); \"blood glucose\" in the key and axis underline amber. On \"forty-five minutes\" a second `PeakMarker` drops from the insulin peak (label \"45 min, 62 mU/L\"); \"blood insulin\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Read a glucose graph\". The graph enlarges. On \"thirty minutes\" a `PeakMarker` drops from the glucose peak to the x axis (label \"30 min, 7.6 mmol/L\"); \"blood glucose\" in the key and axis underline amber. On \"forty-five minutes\" a second `PeakMarker` drops from the insulin peak (label \"45 min, 62 mU/L\"); \"blood insulin\" underlines. On \"The rise in glucose is the stimulus\" the rising part of the glucose line (0 to 30) brightens and a grey tag writes \"stimulus: glucose rises\". On \"Beta cells\" the pancreas plate moves beside the graph with a callout \"beta cells: detect, release insulin\". On \"after\" a short bracket joins the two peak markers (label \"insulin follows glucose\"). Answer box (a) builds line by line: \"Glucose peaked at 30 min (7.6 mmol/L); insulin at 45 min (62 mU/L).\" on \"forty-five minutes\"; \"Insulin is released in response to the rise in glucose, so it peaks after glucose.\" on \"after\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-explain",
+      "visualDecision": "adjust",
+      "visualReference": "the peak markers dim.",
+      "teachingReason": "The fall, then the dip: Now forty-five to one hundred and twenty minutes.",
+      "narrationCue": "glycogen / five / negative feedback / Alpha cells / rises back",
+      "motionPurpose": "On the spoken cues: On \"Insulin is high\" the insulin line from 45 to 90 brightens; `m8-liver-v1.png` and `m8-skeletal-muscle-v1.png` sit small beside the pancreas with a grey label \"liver, muscle and fat cells take up glucose\" (Revision 2: the liver plate is delivered; no membrane or transporter inset, so b03's",
+      "motionRole": "explain",
+      "onScreenChange": "the peak markers dim. On \"Insulin is high\" the insulin line from 45 to 90 brightens; `m8-liver-v1.png` and `m8-skeletal-muscle-v1.png` sit small beside the pancreas with a grey label \"liver, muscle and fat cells take up glucose\" (Revision 2: the liver plate is delivered; no membrane or transporter inset, so b03's teaching stays recall). On \"glycogen\" a grey tag \"stored as glycogen (liver, muscle)\". On \"five\" the glucose line from 45 to 120 brightens teal with reading guides at 7.2 and 5.0; \"between 45 and 120 minutes\" underlines amber in the strip. On \"insulin falls too\" the insulin line from 60 to 120 brightens. On \"negative feedback\" a mini loop ring thumbnail writes beside the graph with its minus arrow (grey tag \"b01\"). Answer box (b) builds line by line: \"Insulin (high) causes liver, muscle and fat cells to take up glucose; liver and muscle store it as glycogen.\" on \"glycogen\"; \"Blood glucose falls from 7.2 to 5.0 mmol/L.\" on \"five\"; \"As glucose falls, beta cells release less insulin; the response opposed the rise (negative feedback).\" on \"negative feedback\". The (b) working tags dim. On \"dipped just below\" a reading guide at 150 min, 4.6 and \"between 150 and 180 minutes\" underlines; on \"doesn't show glucagon\" \"Using the graph and your knowledge\" underlines amber. On \"Alpha cells\" the pancreas callout changes to \"alpha cells: detect the fall, release glucagon\"; on \"rises back\" the glucose line from 150 to 180 brightens. Answer box (c): \"Glucose fell slightly below fasting (4.6 mmol/L at 150 min).\" on \"dipped just below\"; \"Alpha cells released glucagon; the liver broke down glycogen and released glucose, so glucose rose (4.9 mmol/L at 180 min).\" on \"rises back\". A grey tag writes small last: \"Insulin lets glucose in. Glucagon acts when glucose has gone.\" At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"insulin breaks down glucose\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is writing that insulin breaks down glucose.",
+      "narrationCue": "the classic mistake / Insulin is the signal / the effectors that take glucose in",
+      "motionPurpose": "On the spoken cues: On \"Insulin is the signal\" a small arrow draws from the pancreas plate to the liver and muscle plates, labelled \"insulin (signal)\"; on \"the effectors that take glucose in\" small coded dots move from a short vessel line into both plates (label \"cells take up glucose\"). Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"insulin breaks down glucose\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Insulin is the signal\" a small arrow draws from the pancreas plate to the liver and muscle plates, labelled \"insulin (signal)\"; on \"the effectors that take glucose in\" small coded dots move from a short vessel line into both plates (label \"cells take up glucose\"). Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: negative or positive?) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. Three processes are described. In P,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: negative or positive?)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. Three small plates sit at the card's left margin, one beside each process: `b2b-prop-new-plant-v1.png` (P), `m8-pancreas-v1.png` (Q) and new `m8-bananas-unripe-v1.png` (R). The card writes on: \"Process P: As soil dries, root and leaf cells produce more abscisic acid (ABA). ABA causes the stomata to close, and the rate of water loss from the leaves falls.\" \"Process Q: During a long run, blood glucose concentration falls. The pancreas releases glucagon. Liver cells break down glycogen and release glucose, and blood glucose concentration rises back towards its usual level.\" \"Process R: A ripening banana releases ethylene, a gas. Ethylene causes the banana and nearby bananas to ripen faster, and ripening bananas release more ethylene.\" Demands: \"(a) Identify which process is an example of positive feedback. (1 mark)\" \"(b) A student states that process Q is an example of positive feedback because blood glucose concentration increases. Explain why the student is incorrect. (3 marks)\". Two answer boxes. **Countdown 10 seconds**; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-identify",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip; type badge \"Negative or positive?\".",
+      "teachingReason": "One test for every process: Test each process with one question: does the response oppose the change, or strengthen it?",
+      "narrationCue": "oppose / strengthen / positive feedback",
+      "motionPurpose": "On the spoken cues: A test chip writes at the top of the working area: \"Does the response oppose the change, or strengthen it?\" (\"oppose\" and \"strengthen\" light on their cues). Three `ProcessStrip`s draw, P, Q and R, each with its plate, Q greyed for now (grey tag \"next scene\"). On \"In P\" \"rate of water loss from the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Negative or positive?\". A test chip writes at the top of the working area: \"Does the response oppose the change, or strengthen it?\" (\"oppose\" and \"strengthen\" light on their cues). Three `ProcessStrip`s draw, P, Q and R, each with its plate, Q greyed for now (grey tag \"next scene\"). On \"In P\" \"rate of water loss from the leaves falls\" underlines; strip P writes \"change: water content falls → response: stomata close, less loss\"; its return arrow takes a minus (teal). On \"In R\" \"ripen faster\" and \"release more ethylene\" underline; strip R writes \"change: ripening, ethylene → response: more ripening, more ethylene\" and its arrow cycles twice, then takes a plus (amber); the banana plate cross-fades to its matched state `m8-bananas-ripe-v1.png` on \"until the fruit is ripe\" (label \"end point: ripe\"). Answer box (a) writes \"R (ethylene and ripening)\" on \"positive feedback\". Hold 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-explain",
+      "visualDecision": "new",
+      "visualReference": "strip Q brightens.",
+      "teachingReason": "Correct the student: Now Q.",
+      "narrationCue": "up / fall / negative feedback",
+      "motionPurpose": "On the spoken cues: On \"up\" \"because blood glucose concentration increases\" underlines amber in the strip and a grey up arrow pulses beside Q (tag \"the student's reason: up\"). On \"fall\" \"blood glucose concentration falls\" underlines amber and a down arrow writes at the start of strip Q (label \"stimulus: glucose",
+      "motionRole": "explain",
+      "onScreenChange": "strip Q brightens. On \"up\" \"because blood glucose concentration increases\" underlines amber in the strip and a grey up arrow pulses beside Q (tag \"the student's reason: up\"). On \"fall\" \"blood glucose concentration falls\" underlines amber and a down arrow writes at the start of strip Q (label \"stimulus: glucose falls\"); on \"raises it back\" \"rises back towards its usual level\" underlines and an up arrow writes at the end (label \"response: glucose rises back\"). On \"negative feedback\" strip Q's return arrow takes a minus (teal), and the down and up arrows join in a small opposing pair (tag \"opposes the fall\"). Answer box (b) builds line by line: \"The stimulus in Q is a fall in blood glucose.\" on \"fall\"; \"The response (glucagon, liver releases glucose) raises glucose back towards its usual level, opposing the fall.\" on \"raises it back\"; \"So Q is negative feedback; the direction the variable moves does not decide the type.\" on \"whichever direction\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"positive = goes up, negative = goes down\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: So the classic mistake is reading positive as \"goes up\" and negative as \"goes down\".",
+      "narrationCue": "the classic mistake / opposes the change / adds to it",
+      "motionPurpose": "On the spoken cues: On \"opposes the change\" strip Q's minus pulses; on \"adds to it\" strip R's plus pulses. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"positive = goes up, negative = goes down\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"opposes the change\" strip Q's minus pulses; on \"adds to it\" strip R's plus pulses. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a system described in words → five parts in order; response = change in the variable (Q1)\" with the ring thumbnail; \"a hormone graph → find the stimulus, then the response that follows (Q2)\" with the graph thumbnail; \"negative or positive? → compare the response with the change (Q3)\" with the three strips thumbnail.",
+      "teachingReason": "Decision board: So here's how to start each type.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory line \"Opposes the change: negative. Adds to it: positive.\" writes small under the board. On \"Next\" a chip \"Next: Investigating plant water loss\" slides in at the lower right with a small `m8-stoma-open-v1.png` (new in b05). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a system described in words → five parts in order; response = change in the variable (Q1)\" with the ring thumbnail; \"a hormone graph → find the stimulus, then the response that follows (Q2)\" with the graph thumbnail; \"negative or positive? → compare the response with the change (Q3)\" with the three strips thumbnail. The memory line \"Opposes the change: negative. Adds to it: positive.\" writes small under the board. On \"Next\" a chip \"Next: Investigating plant water loss\" slides in at the lower right with a small `m8-stoma-open-v1.png` (new in b05). Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g03-learning-review.md",
+      "sha256": "bbae16ea708bbd8c9b7be60c99ba69871492f5ef53a30edf58dbbaf32e085461"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g03-claude-science-check.md",
+      "sha256": "eb0d72e8939cc7817897a60c500387ee64b52724c08c520fc79596df2fc48db6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

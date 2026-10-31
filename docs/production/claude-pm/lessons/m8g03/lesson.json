@@ -1,0 +1,148 @@
+{
+  "title": "Feedback Loop Practice: Loops, Glucose Graphs, Positive Feedback",
+  "subtitle": "When an exam gives you an unfamiliar system, a glucose graph or a list of processes, how do you build the loop, read it off the data, and tell negative feedback from positive?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 6.5,
+  "lessonIntent": "constructing the blood pressure loop from a description (stimulus: blood pressure falls; receptors: baroreceptors in the aorta and carotid arteries; control centre: cardiovascular centre in the medulla oblongata; effectors: heart and arterioles; response: a faster, stronger heartbeat and narrower arterioles raise blood pressure back towards normal; a minus on the return arrow) and predicting that damaged baroreceptor nerves leave pressure low after standing; reading a glucose and insulin graph after a meal (glucose peaks first at 30 minutes, insulin at 45 minutes because the rise in glucose is the stimulus for insulin release; from 45 to 120 minutes insulin makes liver, muscle and fat cells take up glucose and store glycogen, glucose falls to about its fasting value and insulin falls with it; after the dip below fasting at 150 minutes, alpha cells release glucagon and the liver releases glucose from glycogen); identifying ethylene ripening as positive feedback and explaining that glucagon raising a fallen glucose level is negative feedback because the response opposes the change.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Feedback loop questions turn up in HSC Biology again and again, in different disguises. Most of them come down to three moves. Build the loop in order, read it off a graph, and tell negative feedback from positive. Here are three HSC-style questions. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. When a person stands up quickly, blood pools in the legs, and blood pressure in the upper body falls. Baroreceptors, stretch receptors in the walls of the aorta and carotid arteries, detect the fall. The cardiovascular centre in the medulla oblongata sends nerve impulses to the heart, which beats faster and more strongly, and to arterioles, which narrow. Construct a negative feedback loop for this response. Then predict what would happen on standing if the nerves from the baroreceptors were damaged. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-build",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Build it in order, and take each part from the stem. The stimulus is the change in the variable: blood pressure falls. The receptors are the baroreceptors. The control centre is the cardiovascular centre in the medulla. The effectors are the heart and the arterioles. Now the response, which is where answers often fall short. A faster, stronger heartbeat pumps more blood each minute, and narrower arterioles hold the pressure up, so blood pressure rises back towards normal. Then close the loop with an arrow back to the stimulus, marked minus, because the response opposes the fall."
+      }
+    },
+    {
+      "id": "q1-predict",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the prediction. If the baroreceptor nerves are damaged, the medulla gets no signal that pressure has fallen. So the heart and arterioles don't respond, and blood pressure stays low after standing. Less blood reaches the brain, so the person may feel dizzy or faint. Break any link, and the loop can't correct."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is ending at the effector, with \"response: the heart beats faster\". That's what the effector does. The response is the change in the regulated variable: blood pressure rising back."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A healthy adult ate a meal at time zero, after an overnight fast. The graph shows their blood glucose and blood insulin over the next three hours. Identify when each one peaked, and account for the difference. Explain the change in blood glucose from forty-five to one hundred and twenty minutes, with reference to negative feedback. Then explain the rise in glucose after one hundred and fifty minutes. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-peaks",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the peaks, and read them off the axes. Glucose peaks at thirty minutes, at seven point six millimoles per litre. Insulin peaks later, at forty-five minutes. That order is the loop at work. The rise in glucose is the stimulus. Beta cells in the pancreas detect it and release insulin, so insulin climbs after glucose does."
+      }
+    },
+    {
+      "id": "q2-explain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now forty-five to one hundred and twenty minutes. Insulin is high, so liver, muscle and fat cells take up more glucose from the blood, and the liver and muscles store it as glycogen. Blood glucose falls back to about five. As it falls, the beta cells detect less of a rise and release less insulin, so insulin falls too. The response opposed the rise: negative feedback. After one hundred and fifty minutes, glucose has dipped just below its starting value. The graph doesn't show glucagon, so this part comes from what you know. Alpha cells detect the fall and release glucagon, and the liver breaks down glycogen and releases glucose, so blood glucose rises back."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is writing that insulin breaks down glucose. Insulin is the signal. The liver, muscle and fat cells are the effectors that take glucose in. Link each hormone to the cells it acts on."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. Three processes are described. In P, soil dries, root and leaf cells make more ABA, the stomata close, and water loss falls. In Q, during a long run, blood glucose falls, the pancreas releases glucagon, the liver releases glucose, and blood glucose rises back. In R, a ripening banana gives off a gas called ethylene, which makes it and nearby bananas ripen faster and give off more ethylene. Identify the process that shows positive feedback. Then explain why a student who calls Q positive feedback, because glucose increases, is wrong. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-identify",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Test each process with one question: does the response oppose the change, or strengthen it? In P, water content was falling, and closing the stomata slows the loss. That opposes the change. In R, ethylene speeds ripening, ripening releases more ethylene, and that speeds ripening further. The response strengthens the change, so R is positive feedback. It keeps building until the fruit is ripe."
+      }
+    },
+    {
+      "id": "q3-explain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now Q. The student has looked only at which way the variable moved, up, instead of comparing the response with the stimulus. The stimulus was a fall in blood glucose. The response, glucagon making the liver release glucose, raises it back. A response that undoes the change is negative feedback, whichever direction the variable moves."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So the classic mistake is reading positive as \"goes up\" and negative as \"goes down\". Negative means the response opposes the change. Positive means it adds to it."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start each type. To build a loop, take the five parts in order from the stem, and make the response a change in the variable. To read a graph, find the stimulus first, then the response that follows it. To spot positive feedback, compare the response with the original change. Opposes is negative, adds to it is positive. Next, you'll investigate how plants lose water, in a practical."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

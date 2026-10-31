@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8g01/lesson.json",
+    "lessonSha256": "2cb3985e4769471230e3f6862412d4439c4b22b3bc9e607894a60a7c48acfb00"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From c01: Ag⁺ + Cl⁻ → AgCl, 1 : 1; the chromate's 2 : 1 is the indicator's reaction; drop the rough titre; concordant titres within 0.10 mL; n = cV; divide by the aliquot; × 35.45 for g/L; seawater roughly 19 g/L chloride. From chem-m6-c12: rinse the burette with the solution it will hold; a volumetric flask makes a known dilution. From c02: mass → moles → ratio → target; extra mass reads high, lost solid reads low; constant mass; repeats keep a bias. From p02: a known value lets you judge accuracy; recovery. From skills-s07: accuracy is closeness to the true value; a systematic error pushes every trial the same way.",
+    "startsWith": "An unseen titration data set with a dilution. The video opens: Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh.",
+    "stopsAfter": "choosing concordant titres and the 1 : 1 Ag⁺ : Cl⁻ ratio; scaling an aliquot back through a dilution to the original sample in mol/L and g/L; excluding a gravimetric result for its stated cause; using a 1 : 3 formula ratio to find a percentage purity; explaining the direction of a titrant-dilution error and a lost-precipitate error; evaluating a claim built on the mean of two biased results.",
+    "nextLesson": "identifying cations (route chem-m8-c03a, \"How do flame, precipitate and complex tests identify a cation?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-g01.md"
+  ],
+  "teaching": {
+    "task": "An exam gives you titres or precipitate masses, a method with something wrong in it, and a mole ratio waiting to trip you up. How do you decide which results to use, which ratio applies, how far to scale back, and which way an error pushes the answer?",
+    "causalExplanation": "Why drop the rough titre: it is a guide, not a measurement (2b). Why 1 : 1: silver chloride's equation, not the indicator's (2b). Why ×10: the flask held ten aliquots (2c). Why divide by 10.00 mL: all those moles came from the original seawater (2c). Why exclude trial 3: its stated cause (not at constant mass) adds water and mass (3b). Why ÷ 3: each formula unit holds three sulfates (3c). Why 287% is wrong: a purity can't exceed 100% (3d). Why method 1 reads high: diluted titrant needs more volume, but the calculation uses the labelled concentration (4b). Why method 2 reads low: lost solid never reaches the balance (4c). Why the mean is not evidence: the errors are in opposite directions and only happen to cancel (4d).",
+    "conversationalApproach": "A titration counts the silver it takes and a precipitate can be weighed, and exam questions on both test the same few moves: use the right data, choose the right mole ratio, keep track of any dilution and say which way an error pushes the answer. Q1 (seawater diluted ten to two hundred and fifty millilitres, aliquots titrated with silver nitrate) drops the rough titre, averages the three concordant titres to 10.90 mL, takes the one to one silver chloride ratio rather than the chromate's two to one, then works moles of silver, the flask and the original ten millilitres to about 19.3 g/L, close to typical seawater; the classic slip stops at the aliquot. Q2 (aluminium sulfate purity by barium sulfate) excludes trial three because it was weighed after only one drying, not because it is different, uses the mean of the two constant-mass trials, and divides by three because each formula unit holds three sulfates, giving about 96%; the slip uses one to one and gets an impossible 287%. Q3 (a known chloride solution analysed by two faulty methods) explains why a water-rinsed burette dilutes the titrant and reads high and why precipitate lost through a torn paper reads low, calls both systematic, and shows that a mean near the known value is luck, not accuracy; the trap is trusting the average. A decision board closes: drop rough and faulty results with a reason, take the ratio from the precipitate, track every dilution and give each error's direction.",
+    "openingDecision": "Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh. Exam questions on both test the same few moves. Use the right data, choose the right mole ratio, keep track of any dilution, and say which way an error pushes the answer. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): Q1's dilution volumes, the titrant concentration, all four titres and M(Cl); Q2's three masses with their drying notes and both molar masses; Q3's known value, both faults and both results, and the mean. Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p58), as printed: \"conduct investigations and/or process data involving: - gravimetric analysis - precipitation titrations\" Practice and transfer only: first coverage stays with chem-m8-c01 (precipitation titrations), chem-m8-c02 and chem-m8-p02 (gravimetric analysis); G01 adds practice rows for processing data. starts at the route's \"Interpret method and data for each quantitative analysis\" and stops at its \"Choose correct mole ratios and evaluate an error\". Three questions, each with one trap: (1) a Mohr titration of diluted seawater: drop the rough titre, take the 1 : 1 ratio from the precipitate's equation, then scale back through the dilution to the original sample (trap: reporting the diluted solution's concentration); (2) a gravimetric purity check of aluminium sulfate: exclude a result for its stated cause, not its size, then use a 1 : 3 formula ratio (trap: using 1 : 1, which gives an impossible 287%); (3) the same known chloride solution measured by both methods, each with a stated fault: explain the direction of each error, then evaluate a claim that the mean of the two results shows accuracy (trap: trusting an average of two biased results). Not here: Mohr's indicator chemistry, the pH window and the blank (c01, recalled only where needed); the method steps and their reasons (c02, p02); acid-base titration (Module 6); back titration; ignition in a crucible."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G03 layout: top-left the question card (stem, data and demands as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Titration with a dilution\", \"Gravimetric ratio\", \"Evaluate the errors\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"which results to use?\", \"ratio from the precipitate?\", \"every dilution tracked?\", \"error: extra or lost, which way?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from c01 and c02: silver pale grey, chloride green, sulfate yellow-green, precipitate white; givens and units navy; the current answer bright; earlier lines dim; amber only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; completed lines dim while the current line writes.",
+    "transitionPlan": "The heading writes on as the Mohr flask and balance plates write side by side with a ratio chip between them; each question opens on a fresh board with the type badge hidden while the worded card writes with its data table and demands; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the rough titre strikes out and a concordance bracket spans the three titres; the dilution ladder draws three stacked vessels and each stage line writes beside its rung, earlier lines dimming with their results kept; the outlier chip and constant mass chip write before the formula unit counter drops three barium sulfate tiles from one aluminium sulfate; the two-arrow error board draws with a dashed known line, the burette and torn filter thumbnails run their faults and each arrow points up or down; the mean marker writes near the line and slides below it when the tear grows; each question ends with its classic slip chip taking a red scribble cross; the check strip returns full size as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading \"Titration and gravimetry practice: right data, right ratio, right direction\" writes on.",
+      "teachingReason": "Hook: Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh.",
+      "narrationCue": "ratio / dilution / answer",
+      "motionPurpose": "On the spoken cues: Two small plates write side by side at the right, the same height: `m8-mohr-flask-endpoint-v1.png` (grey tag \"c01: titration\") and `m8-balance-watch-glass-v1.png` (grey tag \"c02: weighing\"). On \"ratio\" a grey chip \"1 : 1? 1 : 3?\" writes between them (no numbers, nothing answer-bearing). On",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Titration and gravimetry practice: right data, right ratio, right direction\" writes on. Two small plates write side by side at the right, the same height: `m8-mohr-flask-endpoint-v1.png` (grey tag \"c01: titration\") and `m8-balance-watch-glass-v1.png` (grey tag \"c02: weighing\"). On \"ratio\" a grey chip \"1 : 1? 1 : 3?\" writes between them (no numbers, nothing answer-bearing). On \"dilution\" a small coded flask-to-aliquot arrow writes under the titration plate. On \"answer\" an up and a down arrow write under the balance plate. The check strip builds on the left: \"which results to use?\", \"ratio from the precipitate?\", \"every dilution tracked?\", \"error: extra or lost, which way?\". The plates become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: titration with a dilution) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. A ten millilitre sample of seawater",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: titration with a dilution)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A 10.00 mL sample of seawater was diluted to 250.0 mL in a volumetric flask. 25.00 mL aliquots of the diluted solution were titrated with 0.0500 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator.\" A titre table: \"Titre (mL): 11.20 (rough), 10.85, 10.95, 10.90\". Demand: \"Calculate the concentration of chloride ions in the seawater, in g L⁻¹. M(Cl) = 35.45 g mol⁻¹\". One answer box. `m8-mohr-flask-endpoint-v1.png` small at the card's right (no tags). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-data-ratio",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Which titres, which ratio: Start with the data.",
+      "narrationCue": "out / millilitres / want",
+      "motionPurpose": "On the spoken cues: Type badge \"Titration with a dilution\". On \"out\" \"11.20 (rough)\" underlines and greys with a strike (grey chip \"c01: the rough titre is a guide\"). The three titres underline; a bracket spans them, \"within 0.10 mL: concordant\" (grey chip \"c12\"). On \"millilitres\" a line writes: \"mean = (10.85 + 10.95",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Titration with a dilution\". On \"out\" \"11.20 (rough)\" underlines and greys with a strike (grey chip \"c01: the rough titre is a guide\"). The three titres underline; a bracket spans them, \"within 0.10 mL: concordant\" (grey chip \"c12\"). On \"millilitres\" a line writes: \"mean = (10.85 + 10.95 + 10.90) ÷ 3 = 10.90 mL\" (bright). Strip: \"which results to use?\" ticks. On \"one to one\" the equation strip writes \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"1 : 1\" glowing. On \"want\" a small grey second equation \"2Ag⁺ + CrO₄²⁻ → Ag₂CrO₄ (indicator)\" writes beneath, its \"2 : 1\" tagged \"the indicator's, not the analyte's\" (grey chip \"c01\"). Strip: \"ratio from the precipitate?\" ticks. Bright at the end: the mean and the 1 : 1 equation.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-calc",
+      "visualDecision": "new",
+      "visualReference": "the data lines dim; the mean and the equation stay.",
+      "teachingReason": "Moles, then back through the dilution: Moles of silver: point zero five zero zero times point zero one zero nine zero litres, five point four five times ten to the minus four moles.",
+      "narrationCue": "moles / seawater / litre",
+      "motionPurpose": "On the spoken cues: The dilution ladder draws at the right: three coded vessel outlines stacked, \"aliquot 25.00 mL\" at the bottom, \"flask 250.0 mL\" in the middle, \"seawater 10.00 mL\" at the top. Line 1: \"n(Ag⁺) = 0.0500 × 0.01090\"; on \"moles\" \"= 5.45 × 10⁻⁴ mol\" (bright; \"0.0500 mol L⁻¹\" underlines), and \"= n(Cl⁻) in",
+      "motionRole": "explain",
+      "onScreenChange": "the data lines dim; the mean and the equation stay. The dilution ladder draws at the right: three coded vessel outlines stacked, \"aliquot 25.00 mL\" at the bottom, \"flask 250.0 mL\" in the middle, \"seawater 10.00 mL\" at the top. Line 1: \"n(Ag⁺) = 0.0500 × 0.01090\"; on \"moles\" \"= 5.45 × 10⁻⁴ mol\" (bright; \"0.0500 mol L⁻¹\" underlines), and \"= n(Cl⁻) in 25.00 mL\" writes beside the aliquot rung. On \"ten times as much\" \"25.00 mL aliquots\" and \"250.0 mL\" underline; an arrow climbs to the flask rung \"×10 (250.0 ÷ 25.00)\" and writes \"5.45 × 10⁻³ mol\". On \"seawater\" \"10.00 mL sample of seawater\" underlines and an arrow climbs to the top rung (tag \"same moles: all of it came from here\"). Line 2: \"c(Cl⁻) = 5.45 × 10⁻³ ÷ 0.01000 = 0.545 mol/L\". On \"litre\" line 3: \"× 35.45 = 19.3 g/L\" (bright; \"M(Cl) = 35.45\" underlines). A grey chip \"c01: seawater roughly 19 g/L\" writes beside it. Strip: \"every dilution tracked?\" ticks. Bright at the end: the ladder and 19.3 g/L.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+      "teachingReason": "The classic mistake: The classic slip is stopping at the aliquot.",
+      "narrationCue": "dilution",
+      "motionPurpose": "On the spoken cues: a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"5.45 × 10⁻⁴ ÷ 0.02500 = 0.0218 mol/L\" fades in beside the aliquot rung; on \"dilution\" it takes a red scribble cross (caption \"that's the flask's solution: ×25 back to the seawater\"), and the ladder's arrows pulse once from bottom to top.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 2: a gravimetric ratio) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. Water treatment plants use aluminium sulfate.",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a gravimetric ratio)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"Aluminium sulfate, Al₂(SO₄)₃, is used in water treatment. To check the purity of a sample, three 0.400 g portions were each dissolved, acidified and treated with excess barium chloride solution. The barium sulfate was filtered, washed, dried and weighed.\" A results table: \"Trial 1: 0.781 g, dried to constant mass\"; \"Trial 2: 0.785 g, dried to constant mass\"; \"Trial 3: 0.842 g, weighed after one drying only\". Demands: \"(a) Justify which result should be excluded.\" \"(b) Calculate the percentage by mass of Al₂(SO₄)₃ in the sample. M(BaSO₄) = 233.39 g mol⁻¹; M(Al₂(SO₄)₃) = 342.14 g mol⁻¹\". Two answer boxes. `m8-balance-watch-glass-v1.png` small at the card's right (no readout). Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-outlier",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Exclude it for a reason: Part a.",
+      "narrationCue": "water / high / use",
+      "motionPurpose": "On the spoken cues: Type badge \"Gravimetric ratio\". \"0.842 g\" underlines; a grey chip \"different ≠ a reason\" writes and dims. On \"water\" \"weighed after one drying only\" underlines amber and a small chip writes \"not at constant mass: water still there\" (grey chip \"c02: constant mass\"). On \"high\" a chip \"extra mass →",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Gravimetric ratio\". \"0.842 g\" underlines; a grey chip \"different ≠ a reason\" writes and dims. On \"water\" \"weighed after one drying only\" underlines amber and a small chip writes \"not at constant mass: water still there\" (grey chip \"c02: constant mass\"). On \"high\" a chip \"extra mass → reads high\" (grey chip \"c02: too wet reads high\") and trial 3's row greys with a strike. On \"use\" \"dried to constant mass\" underlines twice; line \"mean = (0.781 + 0.785) ÷ 2 = 0.783 g\" (bright). Answer box (a) writes: \"Exclude trial 3: it was not dried to constant mass, so retained water made its mass too high. Trials 1 and 2 were at constant mass and agree.\" Strip: \"which results to use?\" ticks. Bright at the end: answer (a) and 0.783 g.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-ratio-calc",
+      "visualDecision": "new",
+      "visualReference": "answer (a) dims.",
+      "teachingReason": "Three sulfates per formula unit: Part b.",
+      "narrationCue": "moles / three / percent",
+      "motionPurpose": "On the spoken cues: Line 1: \"n(BaSO₄) = 0.783 ÷ 233.39\"; on \"moles\" \"= 3.355 × 10⁻³ mol\" (bright; \"M(BaSO₄)\" underlines). On \"three\" the formula unit counter draws: one coded Al₂(SO₄)₃ unit, its three SO₄ groups lighting one at a time, each pairing with a pale violet Ba²⁺ dot and dropping as a white tile; tag \"1",
+      "motionRole": "explain",
+      "onScreenChange": "answer (a) dims. Line 1: \"n(BaSO₄) = 0.783 ÷ 233.39\"; on \"moles\" \"= 3.355 × 10⁻³ mol\" (bright; \"M(BaSO₄)\" underlines). On \"three\" the formula unit counter draws: one coded Al₂(SO₄)₃ unit, its three SO₄ groups lighting one at a time, each pairing with a pale violet Ba²⁺ dot and dropping as a white tile; tag \"1 Al₂(SO₄)₃ → 3 BaSO₄\". Line 2: \"n(Al₂(SO₄)₃) = 3.355 × 10⁻³ ÷ 3 = 1.118 × 10⁻³ mol\". Line 3: \"m = 1.118 × 10⁻³ × 342.14 = 0.3826 g\" (grey tag \"guard digit kept\") (\"M(Al₂(SO₄)₃)\" underlines). On \"percent\" line 4: \"% = 0.3826 ÷ 0.400 × 100 = 95.7%\" (bright; \"0.400 g\" underlines), with a grey tag \"about 96%: under 100%, as a purity should be\". A grey chip \"c02: mass → moles → ratio → target\" sits beside the lines. Strip: \"ratio from the precipitate?\" ticks. Bright at the end: the counter tag and 95.7%.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"3.355 × 10⁻³ × 342.14 ÷ 0.400 × 100 = 287%\" fades in; on \"ratio\" it takes a red scribble cross (caption \"three sulfates per formula unit: divide by 3\").",
+      "teachingReason": "The classic mistake: The classic slip is using one to one.",
+      "narrationCue": "ratio",
+      "motionPurpose": "On the spoken cues: A handwritten line writes under the board: \"Over 100%? Check the ratio first.\"",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"3.355 × 10⁻³ × 342.14 ÷ 0.400 × 100 = 287%\" fades in; on \"ratio\" it takes a red scribble cross (caption \"three sulfates per formula unit: divide by 3\"). A handwritten line writes under the board: \"Over 100%? Check the ratio first.\"",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 3: evaluate the errors) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. A teacher makes up a sodium",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: evaluate the errors)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A teacher prepared a sodium chloride solution with a chloride concentration of 0.0620 mol L⁻¹. A student analysed it by two methods. Method 1, Mohr titration: the burette was rinsed with distilled water, but not with the silver nitrate solution, before it was filled. Result: 0.0635 mol L⁻¹. Method 2, gravimetric analysis as AgCl: some precipitate passed through a small tear in the filter paper. Result: 0.0607 mol L⁻¹.\" Demands: \"(a) Explain why each result differs from the known value.\" \"(b) The student claims that the mean of the two results, 0.0621 mol L⁻¹, shows that the analysis was accurate. Evaluate this claim.\" Two answer boxes. `m6-burette-clamp-stand-v1.png` and `m8-filter-funnel-white-ppt-v1.png` small at the card's right, the same height (no tags). Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card and plates stay on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-titration",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "A diluted titrant reads high: Method one.",
+      "narrationCue": "titre / high",
+      "motionPurpose": "On the spoken cues: Type badge \"Evaluate the errors\". The two-arrow error board draws with a dashed navy line \"known 0.0620\". \"rinsed with distilled water, but not with the silver nitrate solution\" underlines; the burette thumbnail shows a coded film of water at its tip mixing into the silver nitrate (grey chip \"c12:",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Evaluate the errors\". The two-arrow error board draws with a dashed navy line \"known 0.0620\". \"rinsed with distilled water, but not with the silver nitrate solution\" underlines; the burette thumbnail shows a coded film of water at its tip mixing into the silver nitrate (grey chip \"c12: rinse with the solution it will hold\"). On \"titre\" Method 1's cause chain writes one link at a time: \"titrant diluted → titre ↑\". Then \"calculation uses the label's c → n(Ag⁺) ↑ → n(Cl⁻) ↑\". On \"high\" Method 1's arrow rises above the dashed line to \"0.0635\" (\"0.0635\" underlines). Answer box (a) line 1: \"Method 1: water dilutes the AgNO₃, so a larger titre is needed; using the labelled concentration overstates the moles of Ag⁺ and Cl⁻, so the result is too high.\" On \"Rinsing with the silver nitrate\" a small green fix chip writes under Method 1's arrow: \"fix: rinse with the AgNO₃ solution\". Strip: \"error: extra or lost, which way?\" ticks. Bright at the end: Method 1's arrow and answer line 1.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-gravimetric",
+      "visualDecision": "adjust",
+      "visualReference": "Method 1's chain dims; its arrow stays.",
+      "teachingReason": "Lost precipitate reads low: Method two.",
+      "narrationCue": "low / systematic",
+      "motionPurpose": "On the spoken cues: \"some precipitate passed through a small tear\" underlines; the funnel thumbnail cross-fades to `m8-filter-funnel-cloudy-filtrate-v1.png` with a coded tear mark on the paper (tag \"AgCl lost in the filtrate\"; grey chip \"p02: look at the filtrate\"). Method 2's chain writes: \"AgCl lost → mass ↓ →",
+      "motionRole": "explain",
+      "onScreenChange": "Method 1's chain dims; its arrow stays. \"some precipitate passed through a small tear\" underlines; the funnel thumbnail cross-fades to `m8-filter-funnel-cloudy-filtrate-v1.png` with a coded tear mark on the paper (tag \"AgCl lost in the filtrate\"; grey chip \"p02: look at the filtrate\"). Method 2's chain writes: \"AgCl lost → mass ↓ → n(Cl⁻) ↓\" (grey chip \"c02: lost reads low\"). On \"low\" Method 2's arrow drops below the dashed line to \"0.0607\". Answer box (a) line 2: \"Method 2: AgCl passed through the tear, so the mass was too low, and the chloride too low.\" On \"systematic\" a small chip under both arrows: \"same direction every repeat: systematic\" (grey chip \"s07\"). Bright at the end: the two arrows either side of the dashed line and answer line 2.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-claim",
+      "visualDecision": "new",
+      "visualReference": "answer (a) dims.",
+      "teachingReason": "The mean is luck, not accuracy: Part b.",
+      "narrationCue": "miss / average",
+      "motionPurpose": "On the spoken cues: \"the mean of the two results, 0.0621\" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag \"up 0.0015, down 0.0013\"). On \"miss\" Method 2's arrow lengthens downwards by a coded nudge (\"bigger tear\") and the mean marker slides",
+      "motionRole": "explain",
+      "onScreenChange": "answer (a) dims. \"the mean of the two results, 0.0621\" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag \"up 0.0015, down 0.0013\"). On \"miss\" Method 2's arrow lengthens downwards by a coded nudge (\"bigger tear\") and the mean marker slides below the line (tag \"the mean moves with the errors\"). Answer box (b) writes in three short lines: \"The mean's agreement is a coincidence: the errors are in opposite directions and similar in size.\" / \"Neither result is accurate; each method has a systematic error.\" / \"Not supported: fix each cause (rinse the burette with AgNO₃; use an undamaged filter paper), then check each method on a known solution.\" On \"known solution\" p02's recovery gauge appears small beside the dashed line (grey chip \"p02: test the method on a known sample\"). On \"average\" a chip \"mean ≈ 0.0620, so the analysis was accurate\" fades in and takes a red scribble cross (caption \"a close mean doesn't validate either method\"). Bright at the end: answer (b) and the cross.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"results\" \"Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)\"; \"Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)\"; on \"dilution\" \"Every dilution tracked → aliquot → flask → original sample (Q1)\"; on \"moves\" \"Extra or lost, which way → diluted titrant: high; lost solid: low; a close mean doesn't validate either method (Q3)\".",
+      "teachingReason": "Decision board: So for any precipitation titration or gravimetric question.",
+      "narrationCue": "results / dilution / moves",
+      "motionPurpose": "On the spoken cues: Under the board, small, the c02 line: \"mass → moles → ratio → target.\" On \"Next\" a chip \"Next: how do flame, precipitate and complex tests identify a cation?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"results\" \"Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)\"; \"Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)\"; on \"dilution\" \"Every dilution tracked → aliquot → flask → original sample (Q1)\"; on \"moves\" \"Extra or lost, which way → diluted titrant: high; lost solid: low; a close mean doesn't validate either method (Q3)\". Under the board, small, the c02 line: \"mass → moles → ratio → target.\" On \"Next\" a chip \"Next: how do flame, precipitate and complex tests identify a cation?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g01-learning-review.md",
+      "sha256": "c7e1503412e192c108c76e74aa90eac67665a91d752f19f38405aba944c162e7"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g01-claude-science-check.md",
+      "sha256": "eee3bbdabdec96d00865e9363bd5fca0ac7e5a39dcc00646bbfdf996794709ed"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

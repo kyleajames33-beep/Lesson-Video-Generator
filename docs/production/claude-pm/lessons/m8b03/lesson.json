@@ -1,0 +1,144 @@
+{
+  "title": "How Do Insulin and Glucagon Regulate Blood Glucose? Two Feedback Loops",
+  "subtitle": "After a big pasta meal, glucose pours into your blood. Overnight you eat nothing for eight hours or more, yet your brain keeps using glucose. What brings blood glucose down after the meal, and what pushes it back up while you sleep?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 4,
+  "lessonIntent": "separating glucose (blood sugar, fuel), glycogen (stored glucose in liver and muscle) and glucagon (a hormone); stating the usual fasting range (about 4 to 6 mmol/L) and the temporary rise after a meal; naming the islets' beta cells (detect a rise, release insulin) and alpha cells (detect a fall, release glucagon) as receptor and control centre; explaining insulin's effects (muscle and fat cells take up more glucose as transporters move into the membrane; liver and muscle build glycogen, glycogenesis) and the fall in insulin as glucose returns (to a low background level); explaining glucagon's effect (the liver splits glycogen and releases glucose, glycogenolysis) when glucose falls; explaining why two opposing hormones give control in both directions; identifying the effectors (liver, muscle and fat cells, not the pancreas) and reading a graph in which insulin rises after glucose.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Picture a big bowl of pasta. Within an hour, glucose from that meal is pouring into your blood. Then you sleep for eight hours or more without eating, and your brain keeps using glucose all night. Yet a blood test at breakfast would usually show glucose back in its normal range. So what pulls glucose down after the meal, and what pushes it back up while you sleep?"
+      }
+    },
+    {
+      "id": "three-words",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, three words that sound alike. Glucose is the sugar dissolved in your blood, the fuel your cells use in respiration. Glycogen is a store of glucose: long, branched chains of it packed inside liver and muscle cells. Glucagon is a hormone. So glycogen is the store, and glucagon is the messenger. Blood glucose is measured in millimoles per litre. When you haven't eaten for a while, it usually sits around four to six. After a meal it rises for a while, often to about seven or eight in a healthy person, then comes back down."
+      }
+    },
+    {
+      "id": "islets",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Earlier in this module, you saw that the pancreas is both the receptor and the control centre for glucose. Here's how. Most of the pancreas makes digestive enzymes. But scattered through it are tiny clusters of hormone-making cells, called islets. Each islet holds two cell types that matter here. Beta cells detect a rise in blood glucose and release insulin straight into the blood. Alpha cells detect a fall and release glucagon. So the same small cluster senses the change and sends the signal."
+      }
+    },
+    {
+      "id": "insulin",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Back to the pasta. As glucose rises, beta cells release more insulin, and it travels in the blood to cells all over the body. In muscle and fat cells, insulin binds to receptors on the cell surface. That signal moves extra glucose transporters, proteins that let glucose through, from inside the cell into its membrane. More doors open, so glucose moves in faster. In the liver, insulin switches on glycogenesis, which means building glycogen: glucose is joined into chains and stored."
+      }
+    },
+    {
+      "id": "insulin-eases",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Glucose leaves the blood, so blood glucose falls back towards its normal range. That's negative feedback: a rise led to a response that lowers it. And as glucose falls, the beta cells detect less of a rise, so they release less insulin. Insulin drops back to a low background level, not to zero. Notice that insulin doesn't destroy glucose. The glucose is used in respiration or stored."
+      }
+    },
+    {
+      "id": "glucagon",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the night. Hours after your last meal, cells keep using glucose, and blood glucose starts to drift down. Alpha cells detect the fall and release more glucagon. Glucagon travels mainly to the liver. There it switches on glycogenolysis, which means splitting glycogen: the stored chains are broken back into glucose, and liver cells release it into the blood. Blood glucose rises back into range. Muscle stores glycogen too, but muscle keeps its glucose for itself, so on this side the liver does the main work."
+      }
+    },
+    {
+      "id": "two-hormones",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why two hormones? Think of driving at a steady speed over hills. Going downhill you speed up, so you press the brake. Going uphill you slow down, so you press the accelerator. Insulin works like the brake on rising glucose, and glucagon like the accelerator when it falls. With only one pedal, you could ease off it, but you couldn't actively push the other way. Where the analogy breaks: both hormones are released at some level all the time, and it's the balance between them that shifts."
+      }
+    },
+    {
+      "id": "exam-checks",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two things examiners look for. First, the pancreas detects and signals, but it doesn't change blood glucose itself. The effectors are the cells that move glucose: liver, muscle and fat cells, with the liver doing most of the work when glucose falls. Second, on a graph, the hormone follows the glucose. Glucose rises first, and insulin rises in response. If you write that insulin made glucose rise, you've swapped cause and response."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To keep the pair straight: insulin lets glucose in. Glucagon acts when glucose has gone. And B for beta cells, which bring blood glucose down."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two exam questions. First. A student eats breakfast at seven, skips lunch, and runs a cross-country race at two in the afternoon. Their blood glucose begins to fall. Construct a negative feedback loop that returns blood glucose to normal, and explain the role of the liver. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Stimulus: blood glucose falls. Receptor and control centre: alpha cells in the pancreas, which release glucagon. Effector: the liver, which breaks glycogen down to glucose and releases it into the blood. Response: blood glucose rises back towards normal, opposing the fall. Writing that glucagon breaks down glucose is the classic mistake. The liver breaks down glycogen and releases glucose."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. After an overnight fast, a healthy adult drank a glucose solution. The graph shows their blood glucose and blood insulin over three hours. Explain the change in insulin over the first hour, and explain why blood glucose returned to about its starting level, with reference to negative feedback. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Glucose rose as the drink was absorbed. Beta cells detected the rise, so insulin rose within thirty minutes. Insulin made muscle and fat cells take up glucose and the liver store it as glycogen, so glucose fell. As it fell, beta cells released less insulin, so both lines settled. Saying the pancreas took up the glucose is the classic mistake: the pancreas only sends the signal."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any glucose question, ask which way glucose moved, which cells detected it, which hormone they released, and what the liver or other cells then did. Next, the same kind of loop with a different variable: how your kidneys control the water in your blood."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

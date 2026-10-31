@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B05-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b05/lesson.json",
+  "lessonSha256": "232c4a8033bff857552d5df300649e6d3bb20a1566418d8afb507030ccb4c80a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b05/lesson.production-brief.json",
+    "sha256": "5b98ceb46848c1ee9c4314e4c6f3e539e72d2c61156308951a5c15a0d7e58476"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up. It has no brain, no nerves and no blood. Yet within minutes, its leaves can cut that loss. So how does a plant keep enough water?",
+      "hash": "203fc7c63e8e",
+      "textSha256": "203fc7c63e8e5e9bd1e1e9e31b129606379ebcb88aa0b69484b66dfdb3e573b9",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/hook.203fc7c63e8e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/hook.203fc7c63e8e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/hook.203fc7c63e8e.generation.json",
+      "plannedRequestSha256": "7391465ab552bbb5251f098950c8866d85679986216b57f9b79b23336b1f32da"
+    },
+    {
+      "id": "where-water-goes",
+      "parentSceneId": "where-water-goes",
+      "text": "Start with where the water goes. Water travels up from the roots in xylem, the plant's water-carrying tubes. Inside a leaf, water evaporates from the wet walls of the cells into air spaces, so the air in there is very moist. That vapour diffuses out through tiny pores called stomata, mostly on the underside of the leaf. This loss of water vapour is transpiration. On a hot, dry, windy day the outside air is drier, and wind sweeps away the moist air at the leaf surface, so water vapour leaves faster.",
+      "hash": "a4f08ccbb87e",
+      "textSha256": "a4f08ccbb87e1f8478c22ca509353dc2d1de65b652c0253f8e4760b524cdab1d",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/where-water-goes.a4f08ccbb87e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/where-water-goes.a4f08ccbb87e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/where-water-goes.a4f08ccbb87e.generation.json",
+      "plannedRequestSha256": "56af55aa333f230b2c1f2765ae4d40711e3e401a9ce9f9b23cd5842dc28bc578"
+    },
+    {
+      "id": "trade-off",
+      "parentSceneId": "trade-off",
+      "text": "So why not just keep the pores shut? Because the same stomata let carbon dioxide in, and the leaf needs it for photosynthesis. Every open stoma is a deal: carbon dioxide in, water vapour out. A plant that never closed them could dry out on a hot day. One that never opened them would save water but couldn't make the sugar it needs to grow.",
+      "hash": "a9eb8163e89d",
+      "textSha256": "a9eb8163e89dca18ae6664fbfe654d44f5794c0524f61535614a9f627a73a69b",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/trade-off.a9eb8163e89d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/trade-off.a9eb8163e89d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/trade-off.a9eb8163e89d.generation.json",
+      "plannedRequestSha256": "da6b049205d972a82e4911c301167eff03a8f3a3ee62a74fa7f58f2e6bc8772e"
+    },
+    {
+      "id": "guard-cells",
+      "parentSceneId": "guard-cells",
+      "text": "Each stoma sits between two guard cells. Their walls are thicker on the side facing the pore. To open it, guard cells take in potassium ions, so the solution inside them gets more concentrated, and water follows by osmosis. The cells swell and become turgid, firm with water. Because the thick inner walls stretch less, the swollen cells bow apart, like two long balloons with tape along their inner edges, and the pore opens.",
+      "hash": "8747080965ac",
+      "textSha256": "8747080965ac2997eb57460be209c9097ade25facb8bcb0c5796b9b9619bd593",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/guard-cells.8747080965ac.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/guard-cells.8747080965ac.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/guard-cells.8747080965ac.generation.json",
+      "plannedRequestSha256": "917444c9c0d142bf6583d53b218c5c0e1cb6b9fbbd4568cd0282c43a31217b29"
+    },
+    {
+      "id": "aba-closes",
+      "parentSceneId": "aba-closes",
+      "text": "Now the stress response. When the soil dries and the plant loses water faster than it takes it up, cells in the roots and leaves make more of a hormone called abscisic acid, or ABA. ABA reaches the guard cells and makes potassium ions leave them. Water follows the ions out by osmosis, the guard cells go limp and straighten, and the pore closes, often within minutes. So guard cells don't pump water. They move ions, and water follows.",
+      "hash": "8ca481e2b042",
+      "textSha256": "8ca481e2b042dcf8aee1b3548ff9b249e22174b03ee1fcaf086c995adb73946c",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/aba-closes.8ca481e2b042.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/aba-closes.8ca481e2b042.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/aba-closes.8ca481e2b042.generation.json",
+      "plannedRequestSha256": "4b71156e01dd131156db7fe4c53525986e138aecbb3444a977174a2e8999e9a7"
+    },
+    {
+      "id": "plant-loop",
+      "parentSceneId": "plant-loop",
+      "text": "That's negative feedback, with the five parts you know. The stimulus is the leaf's water content falling. The receptors are cells in the roots and leaves that detect the shortage. There's no brain, so those same cells act as the control, releasing ABA as the signal. The effectors are the guard cells. The response: stomata close, water loss falls, and the water content recovers. The response opposes the fall. And when water is plentiful again, ABA levels drop and the stomata can reopen.",
+      "hash": "3ee6a3612ad9",
+      "textSha256": "3ee6a3612ad90bbe19a982b2738e96dea8f966a81398d3e7da040511720fa42b",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/plant-loop.3ee6a3612ad9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/plant-loop.3ee6a3612ad9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/plant-loop.3ee6a3612ad9.generation.json",
+      "plannedRequestSha256": "94b85c3c183bc4cdbcf64aa914fa0cf81c4ccfb1a6ed2d6ec7646b0caef28c02"
+    },
+    {
+      "id": "cost-of-closing",
+      "parentSceneId": "cost-of-closing",
+      "text": "But closing has a cost. With the stomata shut, much less carbon dioxide gets in, so photosynthesis slows and the plant grows less. In a dry spell, it puts survival ahead of growth. And if the soil stays dry, closing may not be enough. Water still escapes slowly, uptake keeps falling, the cells lose their firmness, and the leaves droop. That's wilting.",
+      "hash": "c3706215ef78",
+      "textSha256": "c3706215ef78380c495cc98741ad25d49446c4bb192cbab0eee6670c27bede11",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/cost-of-closing.c3706215ef78.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/cost-of-closing.c3706215ef78.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/cost-of-closing.c3706215ef78.generation.json",
+      "plannedRequestSha256": "27e3acfc70afb07c8734c3687ee3c9070d1045b6b54a3dc8e6ddb5fe0d06cc92"
+    },
+    {
+      "id": "xerophytes",
+      "parentSceneId": "xerophytes",
+      "text": "Some plants live where dry is normal. Xerophytes, plants adapted to dry habitats, have savings built into their leaves. A thick, waxy cuticle is a waterproof coat, so less water evaporates straight through the leaf surface. Their stomata often sit sunken in pits, lined with hairs. The pit holds a pocket of still, humid air outside the pore. With moist air on both sides, the difference in water vapour is smaller, so diffusion slows, even while the pore is open.",
+      "hash": "2e008d348531",
+      "textSha256": "2e008d34853185f7f6c7b5cafbcd7cb1e779fed0b2b1e3867b996853672430c4",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/xerophytes.2e008d348531.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/xerophytes.2e008d348531.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/xerophytes.2e008d348531.generation.json",
+      "plannedRequestSha256": "3fd93cfef012e49d601386ed243fcdde6a5012ecbe20632634e92b8965e95916"
+    },
+    {
+      "id": "australian-examples",
+      "parentSceneId": "australian-examples",
+      "text": "Australian plants show more of these. Spinifex has narrow, rolled leaves with stomata sheltered in grooves, trapping humid air around them. Small or needle-like leaves have less surface to lose water from. And many eucalypts hang their leaves vertically, so the midday sun strikes them edge-on. The leaf stays cooler, so less water evaporates. To sort any feature, ask: does it waterproof the surface, shrink it, keep it cool, or trap humid air?",
+      "hash": "d972ea1a0c39",
+      "textSha256": "d972ea1a0c3950ffde801236a848d3d74f4b5484f93d98d11b7c472ed94f17a0",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/australian-examples.d972ea1a0c39.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/australian-examples.d972ea1a0c39.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/australian-examples.d972ea1a0c39.generation.json",
+      "plannedRequestSha256": "2d35091fbc8dcd74f06d6ffd53fdfd960877968d5af70431f96aa8eae44dba24"
+    },
+    {
+      "id": "response-or-built-in",
+      "parentSceneId": "response-or-built-in",
+      "text": "So how do these compare with ABA? ABA closing the stomata is a response. It switches on when water runs short, works within minutes and can reverse, but while the stomata are shut, much less carbon dioxide gets in. Xerophyte features are structural. They're always there and need no signal, so they save water all day. But they can't be switched off when water is plentiful, which is one reason many of these plants grow slowly. Both keep the plant's water content within tolerance limits.",
+      "hash": "1feede30cd74",
+      "textSha256": "1feede30cd74776a8d5e78121b905b5d771e656183b69db7c6dd6b2a6eb43c3d",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/response-or-built-in.1feede30cd74.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/response-or-built-in.1feede30cd74.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/response-or-built-in.1feede30cd74.generation.json",
+      "plannedRequestSha256": "bed821a47afa7acd2a7b419fb52f9c8b86c405eb2b462274f5e22ffd53309a67"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A potted wheat plant was not watered for six days. The graph shows the ABA concentration in its leaves and its transpiration rate. Describe the relationship between the two, and explain how ABA caused the change in transpiration rate. Pause here to answer.",
+      "hash": "a1c6de5c66c7",
+      "textSha256": "a1c6de5c66c703d98813652d3a9db50a15ad49032eba5bca84866cc07bec0598",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt.a1c6de5c66c7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt.a1c6de5c66c7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt.a1c6de5c66c7.generation.json",
+      "plannedRequestSha256": "201f67e4f3b01c67ac5b9e4924855b50feb711b8234a48db5459def265556a16"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "As ABA rose from day two, transpiration fell. ABA made potassium ions leave the guard cells, water followed by osmosis, the guard cells lost turgor, and the stomata closed. With the pores closed, less water vapour diffused out. The classic mistake is saying transpiration fell just because the soil was dry. It fell because the plant closed its stomata.",
+      "hash": "8411793d80f7",
+      "textSha256": "8411793d80f7347ebe05b594bd8beea50578521706a419fad503cd82995d5c94",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-one.8411793d80f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-one.8411793d80f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-one.8411793d80f7.generation.json",
+      "plannedRequestSha256": "a18733c7953d61280dfa760441a2137ace9e93fe3df8a24e1683d53b3519183a"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Plant X grows in inland Australia. Its leaves have a thick waxy cuticle, and stomata sunken in pits lined with hairs. Explain how each feature reduces water loss. Then compare these features with ABA-triggered stomatal closure as ways of keeping water balance. Pause here to answer.",
+      "hash": "d6f51e0bdb7f",
+      "textSha256": "d6f51e0bdb7fb0decb683657872862ea0ef63a3b8e44ed2e7eb300922567de3d",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt-two.d6f51e0bdb7f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt-two.d6f51e0bdb7f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/attempt-two.d6f51e0bdb7f.generation.json",
+      "plannedRequestSha256": "6b5d2a4c329409ad796f0c46893f264d3842b8acfb77fba7346283bda739d400"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The cuticle is waterproof, so less water evaporates through the surface. The hairy pits trap humid air, so the vapour difference across each pore is smaller and diffusion slows. Both features work all the time, with no signal. Closure switches on under stress and can reverse, but it also cuts carbon dioxide intake. The classic mistake is naming a feature without its mechanism.",
+      "hash": "87ba41b469ee",
+      "textSha256": "87ba41b469eed85ffbc6f8155125c5efb276bcb702ab7b6fdca0a7a8cb83e164",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-two.87ba41b469ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-two.87ba41b469ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/feedback-two.87ba41b469ee.generation.json",
+      "plannedRequestSha256": "ee3bf1de8aa7ba0f2ec48c8aa0b59a966a8c3acf2392a8ad02609c13177f2df6"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any plant water question, first ask: is this a response, or a built-in feature? Then name the mechanism, either ions and osmosis in the guard cells, or a feature that waterproofs, shrinks, cools or traps humid air. Next, you'll practise feedback loop questions from across this topic.",
+      "hash": "f1467b4e03b4",
+      "textSha256": "f1467b4e03b4b04bddc6d2b839fb27414494a0e3fca398bf4ed986e9cb409e1d",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/decision-rule.f1467b4e03b4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/decision-rule.f1467b4e03b4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/decision-rule.f1467b4e03b4.generation.json",
+      "plannedRequestSha256": "9d9af0e086242f590a985d0e1243c50d8dc32237695d727583fd647221b94423"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B05-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

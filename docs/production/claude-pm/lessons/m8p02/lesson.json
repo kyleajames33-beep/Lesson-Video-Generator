@@ -1,0 +1,168 @@
+{
+  "title": "Carrying out a gravimetric analysis: test the method on a sample whose answer you know",
+  "subtitle": "Why would a chemist weigh out a sample whose sulfate content is already known, and analyse it anyway? How do you carry out a gravimetric sulfate analysis safely, and use recovery to judge whether the method can be trusted?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 4,
+  "lessonIntent": "stating the aim and variables of a recovery investigation; calculating the expected precipitate mass from a known sample; carrying out the method in order with quantities (acidify, hot, excess barium, completeness check, digest, pre-weighed paper, rinse, wash until the washings test clear, look at the filtrate, oven, desiccator, constant mass); calculating percentage recovery; judging reliability, accuracy and validity with evidence; writing the risk rows for barium chloride, dilute hydrochloric acid, silver nitrate, hot apparatus and heavy-metal waste.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a strange first step for an analysis. Weigh out half a gram of dried potassium sulfate. You already know how much sulfate is in it, because you know its formula. So why analyse it? To test your method. If it recovers all the sulfate you put in, you can trust it on a real sample. If not, you'll see how much it loses."
+      }
+    },
+    {
+      "id": "aim-variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The question: does digesting the precipitate improve the recovery of sulfate? Recovery is the mass of barium sulfate you collect, as a percentage of the mass you should get. The independent variable is digestion: one set keeps the precipitate warm for thirty minutes, the other doesn't. The dependent variable is the recovery. Everything else stays the same."
+      }
+    },
+    {
+      "id": "expected-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, the mass you should get. Point five zero zero grams of potassium sulfate, over its molar mass, is two point eight seven times ten to the minus three moles. There's one sulfate per formula unit, and one barium sulfate per sulfate, so multiply by barium sulfate's molar mass. That's the target: point six seven zero grams."
+      }
+    },
+    {
+      "id": "prepare-precipitate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Dissolve the potassium sulfate in about a hundred and fifty millilitres of distilled water, add a little dilute hydrochloric acid, as you would for a real sample, and heat it until it's nearly boiling. Slowly add twenty millilitres of barium chloride solution, stirring. That's more barium than the sulfate needs, so it's in excess. Once the solid settles, a drop more into the clear liquid on top should give no new cloudiness. Then the precipitation is complete."
+      }
+    },
+    {
+      "id": "digest-split",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the sets split. Set A isn't digested. Set B digests first, just below boiling under a watch glass, for about thirty minutes. Then both cool to room temperature before filtering. You'd predict bigger crystals in set B, and bigger crystals are less likely to slip through the filter paper."
+      }
+    },
+    {
+      "id": "filter-wash-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Both sets filter through a fine paper that's already been dried and weighed. Rinse all the solid out of the beaker, and wash it with warm distilled water. How do you know it's washed enough? Add silver nitrate to a few drops of the washings. White cloudiness means chloride is still coming through, so keep washing until the test stays clear. Then look at the liquid that ran through. Set A's filtrate is faintly cloudy. Set B's is clear."
+      }
+    },
+    {
+      "id": "constant-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Dry each paper at about a hundred and ten degrees, cool it in a desiccator, and weigh it on the tared watch glass until two weighings in a row agree."
+      }
+    },
+    {
+      "id": "results-recovery",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Three trials in each set. Set A's mean is point six three two grams, and set B's is point six six four. Divide set B's mean by the target, point six seven zero, and times by a hundred: about ninety nine percent. Set A recovered only about ninety four percent."
+      }
+    },
+    {
+      "id": "reliable-accurate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Reliable? Within each set, the trials agree within about a hundredth of a gram, and the gap between the sets is about three times that spread. Accurate? You know the true value, so recovery tells you directly. Set B is close. Set A is about six percent low in every trial, and its cloudy filtrate shows why: fine crystals went through the paper. Repeats won't bring those crystals back."
+      }
+    },
+    {
+      "id": "valid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Is the comparison valid? Only digestion changed, so the difference can be put down to digestion. And the method measures only sulfate: the acid stops barium carbonate forming, clear washings show the barium chloride solution has gone, and constant mass shows the water has gone. One more condition: the potassium sulfate must be pure and dry, or point six seven zero grams isn't the true value. So here, digestion improved recovery, under these conditions."
+      }
+    },
+    {
+      "id": "risk",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the risks. Barium sulfate barely dissolves, which is why it's swallowed for some X-ray scans. Dissolved barium chloride is different: it's toxic if swallowed, so your teacher prepares and dispenses it. Wear gloves and glasses, and wash your hands afterwards. The dilute acid irritates eyes and skin, and silver nitrate stains skin and harms waterways. Use tongs for the hot beaker and the oven. The filtrate and washings still hold dissolved barium, so they go into heavy-metal waste, never the sink."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One line to keep. Recovery is found over expected, times a hundred. Under a hundred, something was lost. Over a hundred, something extra was weighed."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. To check a method, a student dissolves point three five zero grams of dry sodium sulfate, and collects point five six one grams of barium sulfate. Calculate the percentage recovery, and state what it suggests about the method. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Point three five zero over one hundred and forty two point zero four gives the moles, and one to one, the same moles of barium sulfate. So you should get point five seven five grams. Point five six one over that is about ninety seven and a half percent: close, but slightly low, so a little sulfate is lost. The trap is dividing the two masses directly."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. To test digestion, set C digests its precipitate and washes it with three portions of warm water. Set D doesn't digest, and washes it with one portion. Set C's recovery is higher. Explain why this comparison isn't valid, and propose a change that fixes it. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two things changed: digestion and washing. Less washing can leave dried-on impurities that add mass, so the difference can't be put down to digestion alone. Fix it by washing both sets the same way, until the washings stay clear with silver nitrate. The trap is just repeating each set. That helps reliability, but the washing would still be unequal."
+      }
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to trust a gravimetric analysis, test it first on a sample whose answer you know. Acidify, precipitate hot with excess barium, digest, wash until the washings test clear, and dry to constant mass. Then judge the recovery: close to a hundred means accurate, and a cloudy filtrate or a wet solid shows which way it's wrong. Next: precipitation titration and gravimetry practice."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

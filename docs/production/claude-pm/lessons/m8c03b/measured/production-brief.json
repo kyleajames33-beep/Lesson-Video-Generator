@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c03b/measured/lesson.json",
+    "lessonSha256": "b565ce9be2db9fd3087929c872f2088bf2ca2f0b0c83d2d72de9498c72d221ea"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m8-c03a (fresh portions; sort then confirm; complex ion; AgCl dissolves in dilute ammonia); chem-m5-c13 (solubility rules; net ionic equations); Module 6 (acids donate hydrogen ions; acid plus carbonate gives CO₂; limewater; litmus); Module 7 (ethanoic acid). Hydrogen phosphate ions are named, not taught.",
+    "startsWith": "The cation is known; find the anion. The video opens: Back to the prep room. A pale blue precipitate, a deep blue complex and a blue-green flame told us one bottle holds copper ions. But copper what?",
+    "stopsAfter": "choosing and ordering the eight anion tests with the reason for each reagent and condition; identifying one unknown anion from observations with a net ionic equation; explaining why the wrong acid gives a false positive. No cations, no procedure or risk table.",
+    "nextLesson": "the practical with unknown solutions (route chem-m8-p03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c03b.md"
+  ],
+  "teaching": {
+    "task": "The cation's known: copper. But copper what? How do you find the anion in a sample, choosing tests that can't fool you, and confirm it?",
+    "causalExplanation": "(1) the cation is only half the salt; eight anion suspects; (2) dilute acid: carbonate takes hydrogen ions and breaks down to CO₂ and water, so it fizzes; CO₂ turns limewater milky as calcium carbonate forms; (3) acetate takes hydrogen ions too, but makes ethanoic acid, not a gas: no fizz, a vinegar smell on warming; neutral FeCl₃ forms a red-brown complex; (4) carbonate also precipitates with barium and silver, so acidify first; HCl would add chloride and H₂SO₄ sulfate; nitric acid is safe because nitrates are all soluble; (5) sulfate: acidified barium, white BaSO₄ that stays in acid (BaCO₃ would dissolve); (6) halides: acidified silver nitrate, white, cream, pale yellow; (7) the colours are close, so ammonia confirms: the less soluble the silver halide, the more ammonia needed to pull silver into a complex: dilute, concentrated, neither; (8) phosphate: yellow Ag₃PO₄, only in neutral solution, because in acid phosphate takes hydrogen ions and stops precipitating; it dissolves in dilute nitric acid, which separates it from AgI; (9) hydroxide: basic to litmus, but carbonate and phosphate are basic too, so test last; hydroxide takes a hydrogen ion from ammonium and releases ammonia, which turns damp red litmus blue; (10) the flowchart; (11) the salt named.",
+    "conversationalApproach": "the last video found copper in the prep room bottle, but copper chloride, sulfate and acetate all give the same copper results, so the video asks how to find the anion, choosing tests that cannot fool you, and confirm it. The plan is the same: fresh portions and reagents that react with only a few ions. Dilute acid comes first: carbonate takes hydrogen ions and fizzes carbon dioxide that turns limewater milky, while acetate gives no fizz but a vinegar smell on gentle warming, confirmed by a deep red-brown complex with neutral iron(III) chloride. The surprise is that the acid can create the result: carbonate would fake a positive with barium and silver, so acidify first, but hydrochloric acid would add chloride to the halide test, so use dilute nitric acid there. Acidified barium gives white barium sulfate that stays in acid; acidified silver nitrate gives white, cream and pale yellow silver halides, and ammonia confirms them, since silver chloride dissolves in dilute ammonia, silver bromide needs concentrated and silver iodide dissolves in neither. Phosphate is tested in a separate neutral portion, because in acid it picks up hydrogen ions and stops precipitating, and its yellow silver phosphate dissolves in dilute nitric acid where silver iodide does not. Hydroxide comes last, because carbonate and phosphate solutions are basic too, and warming with an ammonium salt releases ammonia that turns damp red litmus blue. The full flowchart closes the tests. The memory aid is acid first with an acid that adds none of the ions you are testing for, phosphate in a neutral portion, then white, cream, pale yellow and dilute, concentrated, neither. Two exam questions follow with brief feedback, and the hook bottle is named copper sulfate.",
+    "openingDecision": "Back to the prep room. A pale blue precipitate, a deep blue complex and a blue-green flame told us one bottle holds copper ions. But copper what? Copper chloride, copper sulfate and copper acetate all dissolve, and all give the same copper results. The cation's only half the answer. Now we need the anion, and the list has eight: chloride, bromide, iodide, hydroxide, acetate, carbonate, sulfate and phosphate.",
+    "understandingCheck": "(A1) A student acidifies with dilute HCl, then adds AgNO₃, sees a white precipitate and concludes chloride. Explain why invalid, describe the correct test. Tests scene 4's cause. Crossed mistake: \"Any acid works: it only removes carbonate.\" (A2) Separate portions: HNO₃ no effervescence; HNO₃ then Ba(NO₃)₂ no change; HNO₃ then AgNO₃ cream precipitate, dissolves in concentrated but not dilute ammonia. Identify the anion, write the net ionic equation. Tests scenes 2, 5, 6, 7. Crossed mistake: \"I⁻: it looked yellowish.\"",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:; cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+); anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)\" (The two dashes in the first line are en dashes as printed, not em dashes.) This video covers the eight anions. The cations are chem-m8-c03a; the investigation with unknowns is chem-m8-p03. starts with a sample whose cation is known (copper, from c03a) and stops when the student can choose and order anion tests, explain each reagent choice and interference, identify one unknown anion from observations and write the net ionic equation. It teaches: fresh portions (recall); dilute acid: carbonate fizzes, CO₂ turns limewater milky; acetate gives no fizz but a vinegar smell on warming (ethanoic acid), confirmed by neutral FeCl₃ (red-brown complex); why acidify before barium and silver (carbonate gives white BaCO₃ and pale yellow Ag₂CO₃; acid removes it as CO₂); which acid (HNO₃ for the halide test, because HCl adds chloride; HCl or HNO₃ for sulfate); sulfate: acidified Ba²⁺, white BaSO₄ that stays in acid; halides: acidified AgNO₃, AgCl white, AgBr cream, AgI pale yellow; ammonia confirms (AgCl dissolves in dilute, AgBr in concentrated, AgI in neither); phosphate: AgNO₃ in neutral solution, yellow Ag₃PO₄ that dissolves in dilute HNO₃; why neutral (acid converts phosphate to hydrogen phosphate ions); hydroxide: basic to litmus, but rule out carbonate and phosphate first, then warm with an ammonium salt for NH₃ that turns damp red litmus blue; the full anion flowchart; naming the salt. Not taught: cations (c03a); sulfite, nitrate and other anions; ammonium molybdate for phosphate (author note); the esterification acetate test (site's alternative; author note); procedure and risk table (p03)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key (c03a's, extended): acid step orange; barium step amber; silver step grey-silver; phosphate step yellow; hydroxide step blue; complex step violet; precipitates in their real colours; current box bright; completed families dim grey. Board layout (constant, as c03a): suspect strip along the top; heading top-left; tube plates left third; flowchart right two thirds. Reuse: painted plates inspected 30 Oct by contact sheet (Assets). As in c03a, only m5x-rack tubes appear side by side. No human figures.",
+    "transitionPlan": "The heading writes on as c03a's hook bottle returns with a copper tag and three salt chips, and the anion suspect strip writes one symbol per ion; an orange acid arrow writes from the sample box, coded bubbles rise in the tube plate and a delivery line leads to the limewater plate as it cross-fades to milky; a second branch shows heat shimmer, vapour wisps and the waft arc beside the vinegar bottle, then the iron(III) chloride tube cross-fades to red-brown; a mini inset shows carbonate locking with barium and silver as false positive tiles, then acid turning it into rising bubbles, and an acid choice chip crosses hydrochloric acid for the halide test; each test arrow writes down the flowchart as a reagent drop falls and the tube cross-fades to its precipitate with the ion lock inset and the net ionic equation; the three halide tubes write in a row and the ammonia ladder dissolves them in turn; a phosphate inset shows hydrogen ions turning phosphate aside before the neutral portion cross-fades to yellow and then clears in nitric acid; the litmus plate and ammonium inset run the hydroxide test; the full flowchart lights family by family with a highlight down each branch; the memory lines write by hand; each attempt clears the board with its question card, and its feedback underlines the card as the suspect strip greys ions and a crossed trap chip lands; the hook bottle returns with a barium sulfate tube and its tag completes to copper sulfate as a next chip writes; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Which anion is in this sample?\".",
+      "teachingReason": "Hook (copper what?): Back to the prep room.",
+      "narrationCue": "phosphate",
+      "motionPurpose": "On the spoken cues: The hook bottle from c03a (`m5x-bottle-scn-v1.png`) returns at centre with a coded tag \"Cu²⁺\". Three small chips write beside it: \"CuCl₂?\", \"CuSO₄?\", \"Cu(CH₃COO)₂?\". On \"half\" the tag widens: \"Cu²⁺ + ?\". As each anion is named its symbol writes on the suspect strip: \"Cl⁻ Br⁻ I⁻ OH⁻ CH₃COO⁻ CO₃²⁻ SO₄²⁻ PO₄³⁻\". On \"phosphate\" the bottle shrinks to the top-left corner; the flowchart's sample box writes: \"unknown anion",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Which anion is in this sample?\". The hook bottle from c03a (`m5x-bottle-scn-v1.png`) returns at centre with a coded tag \"Cu²⁺\". Three small chips write beside it: \"CuCl₂?\", \"CuSO₄?\", \"Cu(CH₃COO)₂?\". On \"half\" the tag widens: \"Cu²⁺ + ?\". As each anion is named its symbol writes on the suspect strip: \"Cl⁻ Br⁻ I⁻ OH⁻ CH₃COO⁻ CO₃²⁻ SO₄²⁻ PO₄³⁻\". On \"phosphate\" the bottle shrinks to the top-left corner; the flowchart's sample box writes: \"unknown anion (fresh portion each test)\".",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-1-acid",
+      "visualDecision": "adjust",
+      "visualReference": "an orange arrow writes from the sample box: \"dilute acid (H⁺)\".",
+      "teachingReason": "Step 1: dilute acid, and the fizz: The plan's the same as for cations: fresh portions, and reagents that react with only a few ions.",
+      "narrationCue": "fizzes / forms",
+      "motionPurpose": "On the spoken cues: `m5x-no-ppt-clear-v1.png` sits at the left; a drop falls; on \"fizzes\" coded bubbles rise (fizz); equation \"CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O(l)\" writes (bright). A coded delivery line leads to `m6-limewater-clear-v1.png`; on \"forms\" it cross-fades to `m6-limewater-milky-v1.png` and \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" writes small; the first equation dims. Orange box: \"fizz, limewater milky: CO₃²⁻\" (bright). Chip \"c13 / Module",
+      "motionRole": "explain",
+      "onScreenChange": "an orange arrow writes from the sample box: \"dilute acid (H⁺)\". `m5x-no-ppt-clear-v1.png` sits at the left; a drop falls; on \"fizzes\" coded bubbles rise (fizz); equation \"CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O(l)\" writes (bright). A coded delivery line leads to `m6-limewater-clear-v1.png`; on \"forms\" it cross-fades to `m6-limewater-milky-v1.png` and \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" writes small; the first equation dims. Orange box: \"fizz, limewater milky: CO₃²⁻\" (bright). Chip \"c13 / Module 6: acid + carbonate → CO₂\" (grey).",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "acetate",
+      "visualDecision": "adjust",
+      "visualReference": "a second branch writes from the acid arrow: \"no fizz; warm\".",
+      "teachingReason": "Acetate: no fizz, a smell: Acetate takes hydrogen ions too, but it doesn't make a gas.",
+      "narrationCue": "smell / colour",
+      "motionPurpose": "On the spoken cues: The tube clears of bubbles; coded heat shimmer under it; on \"smell\" three wisps rise and the waft arc (a curved arrow, no hand) sweeps them; `m6-vinegar-bottle-v1.png` appears small with tag \"ethanoic acid: vinegar\". Equation \"CH₃COO⁻ + H⁺ → CH₃COOH\" (bright). Chip \"waft, don't sniff\" (grey). A violet arrow \"neutral FeCl₃\" writes; `m5x-bottle-fe-v1.png` small with a coded label \"FeCl₃\"; on \"colour\" a fresh tube",
+      "motionRole": "explain",
+      "onScreenChange": "a second branch writes from the acid arrow: \"no fizz; warm\". The tube clears of bubbles; coded heat shimmer under it; on \"smell\" three wisps rise and the waft arc (a curved arrow, no hand) sweeps them; `m6-vinegar-bottle-v1.png` appears small with tag \"ethanoic acid: vinegar\". Equation \"CH₃COO⁻ + H⁺ → CH₃COOH\" (bright). Chip \"waft, don't sniff\" (grey). A violet arrow \"neutral FeCl₃\" writes; `m5x-bottle-fe-v1.png` small with a coded label \"FeCl₃\"; on \"colour\" a fresh tube cross-fades to `m8-acetate-fecl3-red-brown-v1.png`; box \"vinegar smell; red-brown with FeCl₃: CH₃COO⁻\". The acid family then dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "why-acidify",
+      "visualDecision": "new",
+      "visualReference": "a mini inset: CO₃²⁻ dots meet Ba²⁺ and lock as white tiles; tag \"BaCO₃: white\" and a red \"false positive?\" chip; then Ag⁺ with CO₃²⁻ as pale yellow tiles, \"Ag₂CO₃\".",
+      "teachingReason": "Why acidify first, and with which acid: The next tests use barium ions and silver ions.",
+      "narrationCue": "precipitate / nitric",
+      "motionPurpose": "On the spoken cues: On \"precipitate\" orange H⁺ dots turn the CO₃²⁻ dots into rising CO₂ bubbles; the tiles never form; chip \"acidify first: carbonate leaves as CO₂\" (bright). Two acid bottles as coded chips: \"dilute HCl\" and \"dilute HNO₃\". On \"halide\" the HCl chip draws a green Cl⁻ dot into the silver inset, a white AgCl tile forms on its own, and the chip is crossed (caption \"adds Cl⁻: false positive\"). On \"nitric\" the HNO₃ chip",
+      "motionRole": "explain",
+      "onScreenChange": "a mini inset: CO₃²⁻ dots meet Ba²⁺ and lock as white tiles; tag \"BaCO₃: white\" and a red \"false positive?\" chip; then Ag⁺ with CO₃²⁻ as pale yellow tiles, \"Ag₂CO₃\". On \"precipitate\" orange H⁺ dots turn the CO₃²⁻ dots into rising CO₂ bubbles; the tiles never form; chip \"acidify first: carbonate leaves as CO₂\" (bright). Two acid bottles as coded chips: \"dilute HCl\" and \"dilute HNO₃\". On \"halide\" the HCl chip draws a green Cl⁻ dot into the silver inset, a white AgCl tile forms on its own, and the chip is crossed (caption \"adds Cl⁻: false positive\"). On \"nitric\" the HNO₃ chip glows; tag \"nitrates all soluble (NAGSAG)\". The other chips dim.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-2-sulfate",
+      "visualDecision": "adjust",
+      "visualReference": "an amber arrow writes: \"dilute HNO₃ (or HCl), then Ba²⁺\".",
+      "teachingReason": "Step 2: sulfate with barium: Now sulfate.",
+      "narrationCue": "sulfate",
+      "motionPurpose": "On the spoken cues: The tube resets; a drop falls; on \"sulfate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; the ion lock inset locks Ba²⁺ with SO₄²⁻; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" (bright). Amber box: \"white, stays in acid: SO₄²⁻\". A small grey tag: \"BaCO₃ would dissolve in acid\". On \"gravimetric\" a grey chip \"c02: BaSO₄ weighed\" writes with `m8-filter-funnel-white-ppt-v1.png` small beside it (inspect before use).",
+      "motionRole": "explain",
+      "onScreenChange": "an amber arrow writes: \"dilute HNO₃ (or HCl), then Ba²⁺\". The tube resets; a drop falls; on \"sulfate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; the ion lock inset locks Ba²⁺ with SO₄²⁻; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" (bright). Amber box: \"white, stays in acid: SO₄²⁻\". A small grey tag: \"BaCO₃ would dissolve in acid\". On \"gravimetric\" a grey chip \"c02: BaSO₄ weighed\" writes with `m8-filter-funnel-white-ppt-v1.png` small beside it (inspect before use).",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-3-halides",
+      "visualDecision": "adjust",
+      "visualReference": "a grey-silver arrow writes: \"dilute HNO₃, then AgNO₃ (Ag⁺)\".",
+      "teachingReason": "Step 3: the halides with silver: For the halides, acidify a fresh portion with nitric acid, then add silver nitrate.",
+      "narrationCue": "white / cream / yellow",
+      "motionPurpose": "On the spoken cues: A grey chip \"c13: halides insoluble with Ag⁺\" writes on \"exception\". Three tubes in a row at the left, each writing on its cue: `m5x-ppt-agcl-white-v1.png` (\"white\"), `m8-ppt-agbr-cream-v2.png` (\"cream\"), `m8-ppt-agi-pale-yellow-v2.png` (\"yellow\"). Three boxes write under the arrow: \"white: Cl⁻\", \"cream: Br⁻\", \"pale yellow: I⁻\"; only the newest is bright. Equation pattern \"Ag⁺ + X⁻ → AgX(s)\" writes small (grey). A",
+      "motionRole": "explain",
+      "onScreenChange": "a grey-silver arrow writes: \"dilute HNO₃, then AgNO₃ (Ag⁺)\". A grey chip \"c13: halides insoluble with Ag⁺\" writes on \"exception\". Three tubes in a row at the left, each writing on its cue: `m5x-ppt-agcl-white-v1.png` (\"white\"), `m8-ppt-agbr-cream-v2.png` (\"cream\"), `m8-ppt-agi-pale-yellow-v2.png` (\"yellow\"). Three boxes write under the arrow: \"white: Cl⁻\", \"cream: Br⁻\", \"pale yellow: I⁻\"; only the newest is bright. Equation pattern \"Ag⁺ + X⁻ → AgX(s)\" writes small (grey). A tiny group 17 column (Cl, Br, I) beside the tubes shades lighter to darker.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "ammonia-confirms",
+      "visualDecision": "adjust",
+      "visualReference": "the ammonia ladder: the three tubes stay; a violet arrow \"dilute NH₃\" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a).",
+      "teachingReason": "Ammonia confirms: Cream and pale yellow can look alike in a test tube, so confirm with ammonia.",
+      "narrationCue": "concentrated / ammonia",
+      "motionPurpose": "On the spoken cues: On \"concentrated\" a violet arrow \"conc. NH₃\"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`, with a small grey tag \"with enough excess\". On \"ammonia\" the AgI tube stays; tag \"AgI: doesn't dissolve\". The ladder labels write beside the tubes: \"dilute: Cl⁻\", \"concentrated: Br⁻\", \"neither: I⁻\" (the current one bright). Chip \"less soluble → harder to dissolve\" (grey). The silver family then dims.",
+      "motionRole": "explain",
+      "onScreenChange": "the ammonia ladder: the three tubes stay; a violet arrow \"dilute NH₃\" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a). On \"concentrated\" a violet arrow \"conc. NH₃\"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`, with a small grey tag \"with enough excess\". On \"ammonia\" the AgI tube stays; tag \"AgI: doesn't dissolve\". The ladder labels write beside the tubes: \"dilute: Cl⁻\", \"concentrated: Br⁻\", \"neither: I⁻\" (the current one bright). Chip \"less soluble → harder to dissolve\" (grey). The silver family then dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "phosphate",
+      "visualDecision": "adjust",
+      "visualReference": "a yellow arrow writes from the sample box (separate branch): \"neutral portion, then AgNO₃\".",
+      "teachingReason": "Phosphate: a yellow that isn't iodide: Phosphate gives a yellow silver solid too, silver phosphate.",
+      "narrationCue": "phosphate / dissolves",
+      "motionPurpose": "On the spoken cues: Inset: orange H⁺ dots attach to PO₄³⁻ dots, which become \"HPO₄²⁻\" and drift past the Ag⁺ dots without locking; tag \"in acid: no Ag₃PO₄\". On \"phosphate\" the tube cross-fades to `m8-ppt-ag3po4-yellow-v1.png`; equation \"3Ag⁺ + PO₄³⁻ → Ag₃PO₄(s)\" (bright). On \"dissolves\" a drop \"dilute HNO₃\" falls and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; beside it, the AgI tube (small) gets the same drop and stays yellow.",
+      "motionRole": "explain",
+      "onScreenChange": "a yellow arrow writes from the sample box (separate branch): \"neutral portion, then AgNO₃\". Inset: orange H⁺ dots attach to PO₄³⁻ dots, which become \"HPO₄²⁻\" and drift past the Ag⁺ dots without locking; tag \"in acid: no Ag₃PO₄\". On \"phosphate\" the tube cross-fades to `m8-ppt-ag3po4-yellow-v1.png`; equation \"3Ag⁺ + PO₄³⁻ → Ag₃PO₄(s)\" (bright). On \"dissolves\" a drop \"dilute HNO₃\" falls and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; beside it, the AgI tube (small) gets the same drop and stays yellow. Box: \"yellow, dissolves in HNO₃: PO₄³⁻\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "hydroxide",
+      "visualDecision": "adjust",
+      "visualReference": "a blue arrow writes: \"warm with NH₄⁺ salt\".",
+      "teachingReason": "Hydroxide: last, and why: Last, hydroxide.",
+      "narrationCue": "blue",
+      "motionPurpose": "On the spoken cues: `m6-litmus-red-v1.png` small first, with a chip \"basic: CO₃²⁻, PO₄³⁻ too\" (grey) and dotted lines to the carbonate and phosphate boxes, which glow faintly (\"ruled out first\"). Tube with coded heat shimmer; inset: OH⁻ takes H⁺ from NH₄⁺, NH₃ rises. Equation \"NH₄⁺ + OH⁻ → NH₃(g) + H₂O(l)\" (bright). On \"blue\" the litmus plate at the tube mouth cross-fades to `m6-litmus-blue-v1.png`. Box: \"NH₃ turns damp red litmus",
+      "motionRole": "explain",
+      "onScreenChange": "a blue arrow writes: \"warm with NH₄⁺ salt\". `m6-litmus-red-v1.png` small first, with a chip \"basic: CO₃²⁻, PO₄³⁻ too\" (grey) and dotted lines to the carbonate and phosphate boxes, which glow faintly (\"ruled out first\"). Tube with coded heat shimmer; inset: OH⁻ takes H⁺ from NH₄⁺, NH₃ rises. Equation \"NH₄⁺ + OH⁻ → NH₃(g) + H₂O(l)\" (bright). On \"blue\" the litmus plate at the tube mouth cross-fades to `m6-litmus-blue-v1.png`. Box: \"NH₃ turns damp red litmus blue: OH⁻\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "flowchart",
+      "visualDecision": "new",
+      "visualReference": "the full flowchart lights family by family (orange, amber, grey-silver, yellow, blue, with violet confirmation arrows), scaled to the right two thirds at reading size; caveat tags hidden.",
+      "teachingReason": "The anion flowchart: Here's the full anion flowchart.",
+      "narrationCue": "next",
+      "motionPurpose": "On the spoken cues: A coded highlight runs down each branch as it is named. On \"next\" chip \"fresh portion each test\" (bright).",
+      "motionRole": "explain",
+      "onScreenChange": "the full flowchart lights family by family (orange, amber, grey-silver, yellow, blue, with violet confirmation arrows), scaled to the right two thirds at reading size; caveat tags hidden. A coded highlight runs down each branch as it is named. On \"next\" chip \"fresh portion each test\" (bright). Hold about 3 seconds (reading hold). Hold about 3 seconds (reading hold).",
+      "motionTools": [
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Memory aid: To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for.",
+      "narrationCue": "neither",
+      "motionPurpose": "On the spoken cues: Handwritten line 1: \"Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver).\" On \"neutral portion\" a smaller line writes under it: \"Phosphate: a separate neutral portion.\" Handwritten line 2: \"AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither.\"",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Handwritten line 1: \"Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver).\" On \"neutral portion\" a smaller line writes under it: \"Phosphate: a separate neutral portion.\" Handwritten line 2: \"AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"To test an unknown solution for chloride ions, a student acidifies a portion with dilute hydrochloric acid and then adds silver nitrate solution.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student tests for chloride by",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"To test an unknown solution for chloride ions, a student acidifies a portion with dilute hydrochloric acid and then adds silver nitrate solution. A white precipitate forms, and the student concludes that the solution contains chloride ions. Explain why this conclusion is not valid, and describe how the test should be carried out.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (the flowchart is hidden).",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "not / nitric / chloride / slip",
+      "motionPurpose": "On the spoken cues: On \"not\" \"dilute hydrochloric acid\" is underlined and a green Cl⁻ dot drops from it into a mini silver inset, forming a white tile; tag \"HCl adds Cl⁻\". On \"nitric\" line \"fresh portion + dilute HNO₃, then AgNO₃\" (bright); \"silver nitrate solution\" underlined. On \"chloride\" line \"white ppt, dissolves in dilute NH₃ → Cl⁻\"; \"concludes that the solution contains chloride ions\" underlined. On \"slip\" a chip \"any acid",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"not\" \"dilute hydrochloric acid\" is underlined and a green Cl⁻ dot drops from it into a mini silver inset, forming a white tile; tag \"HCl adds Cl⁻\". On \"nitric\" line \"fresh portion + dilute HNO₃, then AgNO₃\" (bright); \"silver nitrate solution\" underlined. On \"chloride\" line \"white ppt, dissolves in dilute NH₃ → Cl⁻\"; \"concludes that the solution contains chloride ions\" underlined. On \"slip\" a chip \"any acid works: it only removes CO₃²⁻\" fades in and is crossed (caption \"the acid must add nothing you're testing for\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown anion were tested.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Separate portions of another unknown give",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown anion were tested. Dilute nitric acid: no effervescence. Dilute nitric acid, then barium nitrate solution: no visible change. Dilute nitric acid, then silver nitrate solution: cream precipitate. The precipitate dissolved in concentrated ammonia solution but not in dilute ammonia solution. Identify the anion, and write a net ionic equation for the formation of the precipitate.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "bromide / trap",
+      "motionPurpose": "On the spoken cues: \"no effervescence\" and \"no visible change\" are underlined; the suspect strip greys CO₃²⁻ and SO₄²⁻. On the first \"bromide\" \"cream precipitate\" and \"dissolved in concentrated ammonia solution but not in dilute ammonia solution\" are underlined; the ammonia ladder appears small with \"concentrated: Br⁻\" lit. On the second \"bromide\" the line \"Ag⁺(aq) + Br⁻(aq) → AgBr(s)\" writes (bright). On \"trap\" a chip \"I⁻: it looked",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. \"no effervescence\" and \"no visible change\" are underlined; the suspect strip greys CO₃²⁻ and SO₄²⁻. On the first \"bromide\" \"cream precipitate\" and \"dissolved in concentrated ammonia solution but not in dilute ammonia solution\" are underlined; the ammonia ladder appears small with \"concentrated: Br⁻\" lit. On the second \"bromide\" the line \"Ag⁺(aq) + Br⁻(aq) → AgBr(s)\" writes (bright). On \"trap\" a chip \"I⁻: it looked yellowish\" fades in and is crossed (caption \"AgI doesn't dissolve, even in concentrated NH₃\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "Handoff: And our prep room bottle?",
+      "narrationCue": "sulfate / Next",
+      "motionPurpose": "On the spoken cues: The hook bottle returns at centre with tag \"Cu²⁺ + ?\"; on \"sulfate\" a small `m5x-ppt-baso4-white-v1.png` appears beside it and the tag completes \"CuSO₄\" (bright). Memory line 1 returns small at the top. On \"Next\" a chip \"Next: identifying unknown ions (practical)\" writes.",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. The hook bottle returns at centre with tag \"Cu²⁺ + ?\"; on \"sulfate\" a small `m5x-ppt-baso4-white-v1.png` appears beside it and the tag completes \"CuSO₄\" (bright). Memory line 1 returns small at the top. On \"Next\" a chip \"Next: identifying unknown ions (practical)\" writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c03b-learning-review.md",
+      "sha256": "bcc50a96beb90621aa73513260ecb73a359216949fbad3f585af42226c2be600"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c03b-claude-science-check.md",
+      "sha256": "a67757e2433db3eaa766226db39f6013de00213ee6c8f5ea3cdf9c3d8b1c905e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

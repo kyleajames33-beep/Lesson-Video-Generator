@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c03a/measured/lesson.json",
+    "lessonSha256": "efd3b91eedf7909f23de0b99a27622ebcba96459b64382ed15a943ef9c15a5af"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m5-c13 (NAGSAG, net ionic equations, spectators; AgCl white, PbI₂ bright yellow, BaSO₄ white, Cu(OH)₂ pale blue); chem-m5-c14 and chem-m5-c15 (a solid forms once the ion product passes Ksp; \"slightly soluble\" is a recall word only); Module 5 equilibrium (FeSCN²⁺ blood red); Year 11 Module 1 (flame tests, emission). Oxidation of Fe²⁺ to Fe³⁺ is named in plain words (loses an electron to oxygen), not taught.",
+    "startsWith": "Use flame colour and precipitate evidence. The video opens: A prep room shelf holds eight bottles of solutions, and the labels have washed off. Each one holds a different metal ion: barium, calcium, magnesium, lead, silver, copper, and iron in two forms, iron two and iron three. A sample from one bottle is in this tube.",
+    "stopsAfter": "naming the three kinds of evidence; running the chloride, sulfate and hydroxide steps in order with the reason for the order; splitting Ag⁺ from Pb²⁺, Ba²⁺ from Ca²⁺ and Mg²⁺ from Ca²⁺; reading the four hydroxide colours and the Fe²⁺ trap; confirming with complexes; drawing the cation flowchart; writing the net ionic equation for the deciding precipitate. No anions, no procedure or risk table.",
+    "nextLesson": "identifying the anion (route chem-m8-c03b), then the practical with unknowns (chem-m8-p03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c03a.md"
+  ],
+  "teaching": {
+    "task": "Eight bottles on a prep room shelf have lost their labels. Each holds a different metal ion. How can a short sequence of tests, each ruling ions out, tell you which metal ion is in a sample, and how do you confirm it?",
+    "causalExplanation": "(1) one test won't settle eight suspects; a sequence of tests rules ions out; (2) a precipitate test adds an anion that makes an insoluble solid with only some cations (solubility rules recall); a flame test reads the light given out by the heated sample's atoms; a complex ion is a metal ion with molecules or ions bonded around it, often coloured or able to pull a solid back into solution; (3) chloride: only silver and lead chlorides are insoluble, so white means Ag⁺ or Pb²⁺, and no solid rules both out (but dilute lead may slip through); (4) ammonia bonds to silver ions, so AgCl dissolves and PbCl₂ doesn't; KI gives bright yellow PbI₂; (5) sulfate: BaSO₄ insoluble; CaSO₄ slightly soluble, so only concentrated calcium shows; PbSO₄ catches dilute lead; a white solid here needs one more test; (6) flame colour: heat excites electrons in the sample's atoms, they fall back and emit light characteristic of the element; Ba²⁺ pale green, Ca²⁺ brick red, Cu²⁺ blue-green, Mg²⁺ and Pb²⁺ no useful colour; (7) flame limits: sodium masks, dirty loop carries over, so clean it and back each flame with a precipitate; (8) hydroxide: four coloured solids; Mg(OH)₂ white and stays in excess; a white solid could be concentrated Ca²⁺, so a colourless flame points to Mg²⁺; (9) why chloride and sulfate come first: Ag⁺ and Pb²⁺ would also give hydroxide solids; (10) Fe(OH)₂ browns in air as Fe²⁺ is oxidised to Fe³⁺, so read it at once; (11) complexes confirm: Cu²⁺ with excess ammonia, deep blue; Fe³⁺ with thiocyanate, blood red; two kinds of chemistry agreeing is stronger evidence; (12) the flowchart and the hook sample traced; the chart is for one unknown cation, and mixtures need a separation plan.",
+    "conversationalApproach": "eight bottles on a prep room shelf have lost their labels, each holding a different metal ion, and a blue tint only hints at copper, so the video asks how a short sequence of tests can rule ions out until one is left and then confirm it. Three kinds of evidence are introduced: a precipitate test adds an anion that makes an insoluble solid with only some cations, a flame test reads the colour of the heated sample, and a complexation test bonds molecules or ions around the metal ion. The plan is to sort with precipitates, each in a fresh portion: dilute hydrochloric acid first, where a white solid means silver or lead, split by dilute ammonia dissolving silver chloride and by potassium iodide giving yellow lead iodide, with dilute lead able to slip through; then dilute sulfuric acid, where barium and concentrated calcium give white sulfates; then the flame test as supporting evidence (pale green barium, brick red calcium, blue-green copper), with its limits from sodium and a dirty loop. Sodium hydroxide comes third, giving pale blue copper, red-brown iron(III), green iron(II) and white magnesium hydroxides, and the order matters because silver and lead would muddy those colours. The iron(II) trap is that air oxidises the green solid to brown, so read it at once. Complexes confirm: excess ammonia gives deep blue with copper and thiocyanate gives blood red with iron(III). The flowchart traces the hook sample to copper. The memory aid is chloride, sulfate, hydroxide, then flame, with the ions each step catches. Two exam questions follow with brief feedback.",
+    "openingDecision": "A prep room shelf holds eight bottles of solutions, and the labels have washed off. Each one holds a different metal ion: barium, calcium, magnesium, lead, silver, copper, and iron in two forms, iron two and iron three. A sample from one bottle is in this tube. A blue tint might hint at copper, but a hint isn't proof. One test won't settle eight suspects. We need a sequence of tests, where each result rules some ions out.",
+    "understandingCheck": "(A1) Separate portions: dilute HCl no change; dilute H₂SO₄ white precipitate; pale green flame. Identify the cation and write the net ionic equation. Tests the sequence logic and the flame as decider. Crossed mistake: \"Ca²⁺: it gave a white sulfate\" (pack trap: \"flame colour treated as unique proof\" turned round; site MC idea, original wording). (A2) Green NaOH precipitate turns red-brown after ten minutes; student concludes Fe³⁺. Evaluate and suggest a confirming test. Tests scene 10's cause. Crossed mistake: \"Fe³⁺: the final colour is red-brown\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:; cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+); anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)\" (The two dashes in the first line are en dashes as printed, not em dashes.) This video covers the eight cations. The anions are chem-m8-c03b; the hands-on investigation with unknowns is chem-m8-p03. starts from a sample holding one unknown metal ion from the syllabus list, and stops when the student can sort and confirm it with a test sequence and write the net ionic equation for the deciding precipitate. It teaches: three kinds of evidence (precipitate, flame, complex) with a plain meaning each; a fresh portion for each test; step 1, dilute HCl: white AgCl or PbCl₂ (Ag⁺, Pb²⁺); the split by dilute ammonia (AgCl dissolves as [Ag(NH₃)₂]⁺) and by KI (bright yellow PbI₂); step 2, dilute H₂SO₄: white BaSO₄ (Ba²⁺), CaSO₄ only from fairly concentrated samples, PbSO₄ for lead that slipped through; flame tests (Ba²⁺ pale green, Ca²⁺ brick red, Cu²⁺ blue-green; Mg²⁺ and Pb²⁺ no useful colour), with the cause in one recall sentence and the sodium and dirty-loop limits; step 3, NaOH: Cu(OH)₂ pale blue, Fe(OH)₂ green, Fe(OH)₃ red-brown, Mg(OH)₂ white (stays in excess); why the chloride and sulfate steps come first; Fe(OH)₂ browning in air; complex confirmations (Cu²⁺ with excess NH₃ deep blue; Fe³⁺ with SCN⁻ blood red); the full flowchart, with its two branch conditions kept; one sentence that mixtures need a separation plan (not taught here). Not taught: anions (c03b); Al³⁺, NH₄⁺, Na⁺, K⁺, Li⁺, Sr²⁺ (site extension, not syllabus); amphoteric Pb(OH)₂ and Ag₂O with hydroxide beyond one clause; hexacyanoferrate tests for iron; AAS (c04); the procedure and risk table (p03)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: chloride step green; sulfate step amber; hydroxide step blue; flame step orange; complex step violet; precipitates in their real colours; the current box bright; completed families dim grey. Board layout (constant): suspect strip along the top; heading below it top-left; tube or flame plates left third; flowchart right two thirds, growing downward. Reuse: painted plates inspected 30 Oct by contact sheet (Assets). The m5x rack set and the m8 rack plates are different racks, so only m5x-rack tubes appear side by side; the brief 60 `m8-ppt-feoh2-green-v1.png` (m8 rack) is not used, and a matching m5x-rack retake is requested. No human figures.",
+    "transitionPlan": "The heading writes on over eight blank-label bottles as the suspect strip writes one symbol per ion; three small evidence panels write left to right, the complex wrap inset clustering ammonia around a cation; the board clears to the flowchart area, where each reagent arrow writes down from the sample box, a reagent drop falls into the rack tube and the tube cross-fades to its precipitate state with the net ionic equation beside it; the ammonia split runs in the complex wrap inset as the silver chloride tile breaks up; the unlit burner plate gives way to each flame plate on its cue, then the sodium glow spreads over the green; the four hydroxide tubes write in a row in the aligned rack; ghost tiles for silver and lead drop and strike out as the suspect strip narrows; the green iron(II) tube enlarges and cross-fades to its browning plate under a clock arc; violet confirmation arrows write under the copper and iron(III) boxes with the deep blue and blood red tubes; the full flowchart lights family by family and a highlight traces the hook sample to copper; the memory lines write with colour swatches; each attempt clears the board with its question card, and its feedback underlines the card as the mini flowchart path lights and a crossed trap chip lands; the hook bottle returns with a next chip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Which metal ion is in this sample?\".",
+      "teachingReason": "Hook (eight bottles, no labels): A prep room shelf holds eight bottles of solutions, and the labels have washed off.",
+      "narrationCue": "out",
+      "motionPurpose": "On the spoken cues: Eight copies of `m5x-bottle-scn-v1.png` (blank cream labels; same plate, uniform scale) stand in a row at centre. As each ion is named its symbol writes on the suspect strip above its bottle: \"Ba²⁺ Ca²⁺ Mg²⁺ Pb²⁺ Ag⁺ Cu²⁺ Fe²⁺ Fe³⁺\". A coded arrow pulls a sample from the sixth bottle into `m5x-no-ppt-clear-v1.png` at the left; a faint coded blue tint overlays the liquid, and a small chip \"a hint, not proof\" writes.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Which metal ion is in this sample?\". Eight copies of `m5x-bottle-scn-v1.png` (blank cream labels; same plate, uniform scale) stand in a row at centre. As each ion is named its symbol writes on the suspect strip above its bottle: \"Ba²⁺ Ca²⁺ Mg²⁺ Pb²⁺ Ag⁺ Cu²⁺ Fe²⁺ Fe³⁺\". A coded arrow pulls a sample from the sixth bottle into `m5x-no-ppt-clear-v1.png` at the left; a faint coded blue tint overlays the liquid, and a small chip \"a hint, not proof\" writes. On \"out\" the bottles slide away; the suspect strip stays at the top; a grey chip \"qualitative analysis: which ions, not how much\" writes under the heading.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "three-kinds-of-evidence",
+      "visualDecision": "adjust",
+      "visualReference": "three small panels write left to right, one per sentence: \"precipitate\" (`m5x-ppt-agcl-white-v1.png`, small) with a grey chip \"c13: NAGSAG\"; \"flame\" (`m5x-bunsen-burner-v1.png`, small); \"complex\" (the complex wrap inset: NH₃ tokens cluster around a grey cation dot).",
+      "teachingReason": "Three kinds of evidence: We've got three kinds of evidence.",
+      "narrationCue": "complex ion / confirm",
+      "motionPurpose": "On the spoken cues: On \"complex ion\" a tag writes under the third panel: \"complex ion: a metal ion with molecules or ions bonded around it\" (bright). On \"confirm\" the first panel gets a chip \"sort\" and the other two a shared chip \"confirm\"; the panels shrink to small icons at the right edge (they return as step colours). Earlier text dims; at most three bright items.",
+      "motionRole": "explain",
+      "onScreenChange": "three small panels write left to right, one per sentence: \"precipitate\" (`m5x-ppt-agcl-white-v1.png`, small) with a grey chip \"c13: NAGSAG\"; \"flame\" (`m5x-bunsen-burner-v1.png`, small); \"complex\" (the complex wrap inset: NH₃ tokens cluster around a grey cation dot). On \"complex ion\" a tag writes under the third panel: \"complex ion: a metal ion with molecules or ions bonded around it\" (bright). On \"confirm\" the first panel gets a chip \"sort\" and the other two a shared chip \"confirm\"; the panels shrink to small icons at the right edge (they return as step colours). Earlier text dims; at most three bright items.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "token flight",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-1-chloride",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the flowchart area.",
+      "teachingReason": "Step 1: chloride: Start with a fresh portion of the sample, and add dilute hydrochloric acid.",
+      "narrationCue": "out / step",
+      "motionPurpose": "On the spoken cues: A sample box writes at the top of the flowchart: \"unknown cation (fresh portion each test)\". A green arrow writes down from it, labelled \"dilute HCl (Cl⁻)\". `m5x-no-ppt-clear-v1.png` sits at the left; a reagent drop falls; the tube cross-fades to `m5x-ppt-agcl-white-v1.png`; the ion lock inset shows grey Ag⁺ and green Cl⁻ locking as white tiles. A green branch box writes: \"white ppt: Ag⁺ or Pb²⁺\". On \"out\" a second",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the flowchart area. A sample box writes at the top of the flowchart: \"unknown cation (fresh portion each test)\". A green arrow writes down from it, labelled \"dilute HCl (Cl⁻)\". `m5x-no-ppt-clear-v1.png` sits at the left; a reagent drop falls; the tube cross-fades to `m5x-ppt-agcl-white-v1.png`; the ion lock inset shows grey Ag⁺ and green Cl⁻ locking as white tiles. A green branch box writes: \"white ppt: Ag⁺ or Pb²⁺\". On \"out\" a second branch writes \"no ppt\" and, on the suspect strip, Ag⁺ and Pb²⁺ glow (for the white branch) then a coded toggle shows the \"no ppt\" case greying them. On \"step\" a small grey tag hangs from the \"no ppt\" branch: \"Pb²⁺ may slip through if dilute (PbCl₂ slightly soluble)\". At most three bright items: the arrow label, the current branch, the tube.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "silver-or-lead",
+      "visualDecision": "adjust",
+      "visualReference": "the white branch box glows; two small boxes write under it.",
+      "teachingReason": "Splitting silver from lead: Both solids are white, so how do you tell them apart?",
+      "narrationCue": "dissolves / iodide",
+      "motionPurpose": "On the spoken cues: Left tube `m5x-ppt-agcl-white-v1.png`; on \"dissolves\" a violet arrow \"dilute NH₃\" and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; the complex wrap inset shows NH₃ tokens around Ag⁺, the white tile breaking up; box \"dissolves: Ag⁺\" with \"[Ag(NH₃)₂]⁺\" small under it. A second, white tube (`m5x-ppt-agcl-white-v1.png` reused as white PbCl₂, coded tag \"PbCl₂\") stays white: box \"stays: Pb²⁺\". On \"iodide\"",
+      "motionRole": "explain",
+      "onScreenChange": "the white branch box glows; two small boxes write under it. Left tube `m5x-ppt-agcl-white-v1.png`; on \"dissolves\" a violet arrow \"dilute NH₃\" and the tube cross-fades to `m5x-no-ppt-clear-v1.png`; the complex wrap inset shows NH₃ tokens around Ag⁺, the white tile breaking up; box \"dissolves: Ag⁺\" with \"[Ag(NH₃)₂]⁺\" small under it. A second, white tube (`m5x-ppt-agcl-white-v1.png` reused as white PbCl₂, coded tag \"PbCl₂\") stays white: box \"stays: Pb²⁺\". On \"iodide\" `m5x-ppt-pbi2-yellow-v1.png` appears beside it with \"Pb²⁺ + 2I⁻ → PbI₂(s), bright yellow\". Then the chloride family dims to grey; the boxes stay.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "token flight",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-2-sulfate",
+      "visualDecision": "adjust",
+      "visualReference": "an amber arrow writes down from the \"no ppt\" box: \"dilute H₂SO₄ (SO₄²⁻)\".",
+      "teachingReason": "Step 2: sulfate: If step one gave nothing, take another fresh portion and add dilute sulfuric acid.",
+      "narrationCue": "precipitate / here / metal",
+      "motionPurpose": "On the spoken cues: The tube resets to `m5x-no-ppt-clear-v1.png`; a drop falls; on \"precipitate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" writes beside it (bright). Amber box \"white ppt: Ba²⁺, or Ca²⁺ (if concentrated), or Pb²⁺\". Grey tag \"CaSO₄ slightly soluble\". On \"here\" the grey Pb²⁺ tag from scene 3 draws a dotted line into this box. On \"metal\" a \"?\" chip hangs under the box, and Ba²⁺ and",
+      "motionRole": "explain",
+      "onScreenChange": "an amber arrow writes down from the \"no ppt\" box: \"dilute H₂SO₄ (SO₄²⁻)\". The tube resets to `m5x-no-ppt-clear-v1.png`; a drop falls; on \"precipitate\" it cross-fades to `m5x-ppt-baso4-white-v1.png`; equation \"Ba²⁺ + SO₄²⁻ → BaSO₄(s)\" writes beside it (bright). Amber box \"white ppt: Ba²⁺, or Ca²⁺ (if concentrated), or Pb²⁺\". Grey tag \"CaSO₄ slightly soluble\". On \"here\" the grey Pb²⁺ tag from scene 3 draws a dotted line into this box. On \"metal\" a \"?\" chip hangs under the box, and Ba²⁺ and Ca²⁺ glow on the suspect strip. The equation dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "flame-tests",
+      "visualDecision": "adjust",
+      "visualReference": "an orange arrow \"flame test\" writes from the \"?\" chip.",
+      "teachingReason": "Flame tests: That's where the flame test earns its place.",
+      "narrationCue": "green / red / blue-green / test",
+      "motionPurpose": "On the spoken cues: The tube shrinks; `m8-flame-test-off-v2.png` (the unlit burner) appears at the left. `m5x-bunsen-burner-v1.png` is a different burner, so it never cross-fades with the flame set: on \"blue Bunsen flame\" it appears only as a small inset beside the burner, tagged \"blue flame first\". A coded wire loop dips into the small tube and moves to the burner; the coloured plates below cross-fade on the shared burner position of",
+      "motionRole": "explain",
+      "onScreenChange": "an orange arrow \"flame test\" writes from the \"?\" chip. The tube shrinks; `m8-flame-test-off-v2.png` (the unlit burner) appears at the left. `m5x-bunsen-burner-v1.png` is a different burner, so it never cross-fades with the flame set: on \"blue Bunsen flame\" it appears only as a small inset beside the burner, tagged \"blue flame first\". A coded wire loop dips into the small tube and moves to the burner; the coloured plates below cross-fade on the shared burner position of the v2 set. A small inset: an electron dot jumps up an energy ladder and drops, emitting a coloured wave; grey chip \"Year 11: excited electrons emit light\". On \"green\" the flame cross-fades to `m8-flame-ba-pale-green-v2.png`, box \"pale green: Ba²⁺\" (bright). On \"red\" to `m8-flame-ca-brick-red-v2.png`, box \"brick red: Ca²⁺\"; the Ba box dims. On \"blue-green\" `m8-flame-cu-blue-green-v2.png` appears small to the side with tag \"Cu²⁺ (useful later)\". On \"test\" a dotted arrow loops from the flame step back to the PbI₂ box: \"no colour + white sulfate: try KI for Pb²⁺\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "flame-limits",
+      "visualDecision": "adjust",
+      "visualReference": "`m8-flame-na-yellow-v2.png` appears beside the barium flame plate; a coded yellow glow spreads over the green; chip \"Na⁺ yellow masks other colours\".",
+      "teachingReason": "What a flame can't do: Treat a flame colour as supporting evidence, though, not proof.",
+      "narrationCue": "result",
+      "motionPurpose": "On the spoken cues: A chip \"dirty loop: colour carried over\" writes; then \"clean loop in HCl until the flame shows no colour\" (grey). On \"result\" a chip \"flame = supporting evidence; precipitate or complex = confirm\" writes (bright) and the other two dim. The sulfate and flame families dim on the flowchart.",
+      "motionRole": "explain",
+      "onScreenChange": "`m8-flame-na-yellow-v2.png` appears beside the barium flame plate; a coded yellow glow spreads over the green; chip \"Na⁺ yellow masks other colours\". A chip \"dirty loop: colour carried over\" writes; then \"clean loop in HCl until the flame shows no colour\" (grey). On \"result\" a chip \"flame = supporting evidence; precipitate or complex = confirm\" writes (bright) and the other two dim. The sulfate and flame families dim on the flowchart.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-3-hydroxide",
+      "visualDecision": "adjust",
+      "visualReference": "a blue arrow writes down from the \"no ppt\" side of the sulfate step: \"NaOH (OH⁻)\".",
+      "teachingReason": "Step 3: hydroxide: Now the third reagent, sodium hydroxide, in a fresh portion.",
+      "narrationCue": "blue / rust / green / white / magnesium",
+      "motionPurpose": "On the spoken cues: Four tube plates write in a row at the left in the aligned m5x rack, each on its cue: `m5x-ppt-cuoh2-blue-v1.png` (\"blue\"), `m5x-ppt-feoh3-brown-v1.png` (\"rust\"), `m8-ppt-feoh2-green-v2.png` (\"green\"), `m8-ppt-mgoh2-white-v1.png` (\"white\"). Each gets its flowchart box: \"pale blue: Cu²⁺\", \"red-brown: Fe³⁺\", \"green: Fe²⁺\", \"white, stays in excess: Mg²⁺\". Only the newest box is bright; earlier boxes dim. On \"white\" a",
+      "motionRole": "explain",
+      "onScreenChange": "a blue arrow writes down from the \"no ppt\" side of the sulfate step: \"NaOH (OH⁻)\". Four tube plates write in a row at the left in the aligned m5x rack, each on its cue: `m5x-ppt-cuoh2-blue-v1.png` (\"blue\"), `m5x-ppt-feoh3-brown-v1.png` (\"rust\"), `m8-ppt-feoh2-green-v2.png` (\"green\"), `m8-ppt-mgoh2-white-v1.png` (\"white\"). Each gets its flowchart box: \"pale blue: Cu²⁺\", \"red-brown: Fe³⁺\", \"green: Fe²⁺\", \"white, stays in excess: Mg²⁺\". Only the newest box is bright; earlier boxes dim. On \"white\" a second drop falls into the Mg tube, which stays white; tag \"excess NaOH: stays\". On \"magnesium\" a small grey tag hangs from the white box: \"or Ca²⁺ if concentrated: flame decides (Mg²⁺ none, Ca²⁺ brick red)\".",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "why-this-order",
+      "visualDecision": "new",
+      "visualReference": "on the suspect strip, Ag⁺ and Pb²⁺ flash, and small brown (Ag₂O) and white (Pb(OH)₂) tiles drop into a faint ghost row under the hydroxide step, then strike out.",
+      "teachingReason": "Why this order: That's also why the chloride and sulfate steps come first.",
+      "narrationCue": "left",
+      "motionPurpose": "On the spoken cues: On \"left\" the suspect strip shows only Mg²⁺, Cu²⁺, Fe²⁺, Fe³⁺ (and Ca²⁺ faint) lit beside the hydroxide step. Chip \"each 'no' rules ions out\" (bright).",
+      "motionRole": "explain",
+      "onScreenChange": "on the suspect strip, Ag⁺ and Pb²⁺ flash, and small brown (Ag₂O) and white (Pb(OH)₂) tiles drop into a faint ghost row under the hydroxide step, then strike out. On \"left\" the suspect strip shows only Mg²⁺, Cu²⁺, Fe²⁺, Fe³⁺ (and Ca²⁺ faint) lit beside the hydroxide step. Chip \"each 'no' rules ions out\" (bright).",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "iron-two-trap",
+      "visualDecision": "adjust",
+      "visualReference": "the green tube `m8-ppt-feoh2-green-v2.png` moves to centre, enlarged; a coded clock arc sweeps; on \"brown\" it cross-fades to `m8-ppt-feoh2-browning-v1.png` (aligned).",
+      "teachingReason": "The iron two trap: Watch the iron two result closely.",
+      "narrationCue": "brown / away",
+      "motionPurpose": "On the spoken cues: Small O₂ dots drift onto the solid in the inset; tag \"Fe²⁺ → Fe³⁺ (oxidised by air)\". On \"away\" chip \"read it at once\" (bright).",
+      "motionRole": "explain",
+      "onScreenChange": "the green tube `m8-ppt-feoh2-green-v2.png` moves to centre, enlarged; a coded clock arc sweeps; on \"brown\" it cross-fades to `m8-ppt-feoh2-browning-v1.png` (aligned). Small O₂ dots drift onto the solid in the inset; tag \"Fe²⁺ → Fe³⁺ (oxidised by air)\". On \"away\" chip \"read it at once\" (bright).",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "complexes-confirm",
+      "visualDecision": "adjust",
+      "visualReference": "violet arrows write under the Cu²⁺ and Fe³⁺ boxes.",
+      "teachingReason": "Complexes confirm: Then confirm with a complex.",
+      "narrationCue": "complex / red / alone",
+      "motionPurpose": "On the spoken cues: Left: `m5x-ppt-cuoh2-blue-v1.png`, a violet arrow \"excess NH₃\", then `c5-copper-tube-deep-v1.png` beside it (separate plate, not a cross-fade); on \"complex\" box \"deep blue [Cu(NH₃)₄]²⁺\" (bright), complex wrap inset with four NH₃ tokens. Then `m5x-bottle-scn-v1.png` small with coded label \"KSCN\" and `c3-iron-tube-deep-v1.png`; on \"red\" box \"blood red FeSCN²⁺\"; grey chip \"Module 5: Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺\". On \"alone\" a",
+      "motionRole": "explain",
+      "onScreenChange": "violet arrows write under the Cu²⁺ and Fe³⁺ boxes. Left: `m5x-ppt-cuoh2-blue-v1.png`, a violet arrow \"excess NH₃\", then `c5-copper-tube-deep-v1.png` beside it (separate plate, not a cross-fade); on \"complex\" box \"deep blue [Cu(NH₃)₄]²⁺\" (bright), complex wrap inset with four NH₃ tokens. Then `m5x-bottle-scn-v1.png` small with coded label \"KSCN\" and `c3-iron-tube-deep-v1.png`; on \"red\" box \"blood red FeSCN²⁺\"; grey chip \"Module 5: Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺\". On \"alone\" a chip \"two kinds of chemistry agree\" writes; earlier boxes dim.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "token flight",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "flowchart",
+      "visualDecision": "new",
+      "visualReference": "the full flowchart lights family by family (green, amber, blue, with orange and violet confirmation arrows), scaled to fit the right two thirds; text stays at reading size.",
+      "teachingReason": "The flowchart, and our sample: Put it together and you get a flowchart.",
+      "narrationCue": "copper / cation",
+      "motionPurpose": "On the spoken cues: The two branch conditions stay on the chart, legible at reading size, because a student using the chart later needs them: \"dilute Pb²⁺ may pass\" on the chloride \"no ppt\" branch and \"Ca²⁺ depends on concentration\" on the sulfate box. The mixture chip is dropped to make room; the chart itself is not shrunk. A coded token \"our sample\" travels down: \"no ppt\" (green), \"no ppt\" (amber), \"pale blue\" (blue), \"deep blue with",
+      "motionRole": "explain",
+      "onScreenChange": "the full flowchart lights family by family (green, amber, blue, with orange and violet confirmation arrows), scaled to fit the right two thirds; text stays at reading size. The two branch conditions stay on the chart, legible at reading size, because a student using the chart later needs them: \"dilute Pb²⁺ may pass\" on the chloride \"no ppt\" branch and \"Ca²⁺ depends on concentration\" on the sulfate box. The mixture chip is dropped to make room; the chart itself is not shrunk. A coded token \"our sample\" travels down: \"no ppt\" (green), \"no ppt\" (amber), \"pale blue\" (blue), \"deep blue with NH₃\" (violet), and the blue-green flame plate flashes small. On \"copper\" the Cu²⁺ box glows and the hook tube returns small with tag \"Cu²⁺\". On \"cation\" the sample box at the top of the chart (\"unknown cation (fresh portion each test)\") glows once. Hold about 3 seconds (reading hold). Hold about 3 seconds (reading hold).",
+      "motionTools": [
+        "chip pop",
+        "token flight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Memory aid: Here's a way to hold the order.",
+      "narrationCue": "late",
+      "motionPurpose": "On the spoken cues: Handwritten line 1: \"Cl⁻ → SO₄²⁻ → OH⁻ → flame\". Under each step its ions write as the voice names them, with colour swatches for the hydroxide row (pale blue, red-brown, green, white). On \"late\" a small card: \"green → brown = Fe²⁺ read late\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Handwritten line 1: \"Cl⁻ → SO₄²⁻ → OH⁻ → flame\". Under each step its ions write as the voice names them, with colour swatches for the hydroxide row (pale blue, red-brown, green, white). On \"late\" a small card: \"green → brown = Fe²⁺ read late\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown cation were tested.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Separate portions of an unknown solution",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Separate portions of a colourless solution containing one unknown cation were tested. Dilute hydrochloric acid: no visible change. Dilute sulfuric acid: white precipitate. Flame test: pale green flame. Identify the cation present, and write a net ionic equation for the formation of the precipitate.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (the flowchart is hidden).",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "barium / sulfate / slip",
+      "motionPurpose": "On the spoken cues: On \"silver\" \"Dilute hydrochloric acid: no visible change\" is underlined, with a grey tag \"rules out Ag⁺; dilute Pb²⁺ may pass\"; on \"barium\" \"white precipitate\", then \"pale green flame\" are underlined (grey tag \"Pb²⁺: no useful flame colour\"); the mini flowchart path lights green \"no\", amber \"white\", orange \"pale green\". On \"sulfate\" the line \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\" writes (bright). On \"slip\" a chip \"Ca²⁺:",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"silver\" \"Dilute hydrochloric acid: no visible change\" is underlined, with a grey tag \"rules out Ag⁺; dilute Pb²⁺ may pass\"; on \"barium\" \"white precipitate\", then \"pale green flame\" are underlined (grey tag \"Pb²⁺: no useful flame colour\"); the mini flowchart path lights green \"no\", amber \"white\", orange \"pale green\". On \"sulfate\" the line \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\" writes (bright). On \"slip\" a chip \"Ca²⁺: white sulfate\" fades in and is crossed (caption \"the flame decides: Ca²⁺ is brick red\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student adds sodium hydroxide solution to a pale green solution containing one unknown cation.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student adds sodium hydroxide to",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student adds sodium hydroxide solution to a pale green solution containing one unknown cation. A green precipitate forms. Ten minutes later, the student records a red-brown precipitate and concludes that the solution contains iron(III) ions. Evaluate the student's conclusion, and suggest one test that would confirm the identity of the cation.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "wrong / trap",
+      "motionPurpose": "On the spoken cues: \"A green precipitate forms\" is underlined; the green tube appears small; on \"wrong\" \"Ten minutes later\" and \"red-brown\" are underlined and the tube cross-fades to the browning plate with tag \"air oxidises Fe²⁺\"; line \"cation: Fe²⁺\" (bright). Line \"fresh portion + KSCN: no blood red → not Fe³⁺\"; \"concludes that the solution contains iron(III) ions\" underlined. On \"trap\" a chip \"Fe³⁺: it ended red-brown\" fades in and",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. \"A green precipitate forms\" is underlined; the green tube appears small; on \"wrong\" \"Ten minutes later\" and \"red-brown\" are underlined and the tube cross-fades to the browning plate with tag \"air oxidises Fe²⁺\"; line \"cation: Fe²⁺\" (bright). Line \"fresh portion + KSCN: no blood red → not Fe³⁺\"; \"concludes that the solution contains iron(III) ions\" underlined. On \"trap\" a chip \"Fe³⁺: it ended red-brown\" fades in and is crossed (caption \"read the colour at once\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Handoff: So the cation comes from a short sequence: precipitates to sort, then a flame or a complex to confirm.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" the hook bottle returns at centre with tag \"Cu²⁺ ... and?\" and a chip \"Next: identifying the anion\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Memory line 1 returns small at the top. On \"Next\" the hook bottle returns at centre with tag \"Cu²⁺ ... and?\" and a chip \"Next: identifying the anion\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c03a-learning-review.md",
+      "sha256": "36e853ffd8d60cd91ff8e4a2eb34f61e226ff837d7f5e4299b2d03254a71555c"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c03a-claude-science-check.md",
+      "sha256": "35f1c68c9a57dbd1f1c69d6fcf57a9f874077ba3f88b5e8830909c3664d86b85"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

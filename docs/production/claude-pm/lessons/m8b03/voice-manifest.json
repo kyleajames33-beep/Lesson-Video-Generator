@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B03-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b03/lesson.json",
+  "lessonSha256": "53267e1a85f111c9bea98c41af1f1b354840f0ccea17eabd1cef8e8bc5271b91",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b03/lesson.production-brief.json",
+    "sha256": "5e4031cd9af6d8f1ef47fccc7829e449071a5d8ea59c11ae0b2b1ec2ebe2a5e2"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Picture a big bowl of pasta. Within an hour, glucose from that meal is pouring into your blood. Then you sleep for eight hours or more without eating, and your brain keeps using glucose all night. Yet a blood test at breakfast would usually show glucose back in its normal range. So what pulls glucose down after the meal, and what pushes it back up while you sleep?",
+      "hash": "3be4eb167b09",
+      "textSha256": "3be4eb167b09977dd15764a0b630a5df42ac6bbbf4cf825a12775a59e95e3e17",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/hook.3be4eb167b09.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/hook.3be4eb167b09.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/hook.3be4eb167b09.generation.json",
+      "plannedRequestSha256": "7e3ce7474f0a7b112d833cf7ec4a41fdbb3a89e97a228c2fc5ce57c943e0b743"
+    },
+    {
+      "id": "three-words",
+      "parentSceneId": "three-words",
+      "text": "First, three words that sound alike. Glucose is the sugar dissolved in your blood, the fuel your cells use in respiration. Glycogen is a store of glucose: long, branched chains of it packed inside liver and muscle cells. Glucagon is a hormone. So glycogen is the store, and glucagon is the messenger. Blood glucose is measured in millimoles per litre. When you haven't eaten for a while, it usually sits around four to six. After a meal it rises for a while, often to about seven or eight in a healthy person, then comes back down.",
+      "hash": "cdb5a89dcfaf",
+      "textSha256": "cdb5a89dcfafbde6890f5afd84ce37ed3afe70b768dab8b393394f89352f8dcf",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/three-words.cdb5a89dcfaf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/three-words.cdb5a89dcfaf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/three-words.cdb5a89dcfaf.generation.json",
+      "plannedRequestSha256": "e9d02a60ff22dd8ab9a12b6850a4fc03808cbe5489d6ccf1078caf36a6672027"
+    },
+    {
+      "id": "islets",
+      "parentSceneId": "islets",
+      "text": "Earlier in this module, you saw that the pancreas is both the receptor and the control centre for glucose. Here's how. Most of the pancreas makes digestive enzymes. But scattered through it are tiny clusters of hormone-making cells, called islets. Each islet holds two cell types that matter here. Beta cells detect a rise in blood glucose and release insulin straight into the blood. Alpha cells detect a fall and release glucagon. So the same small cluster senses the change and sends the signal.",
+      "hash": "1d73d0a97cbd",
+      "textSha256": "1d73d0a97cbde6573319ba5158f3e4d1e522f9212dddef32740e095d03cc92e0",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/islets.1d73d0a97cbd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/islets.1d73d0a97cbd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/islets.1d73d0a97cbd.generation.json",
+      "plannedRequestSha256": "0e5526c4f5dbc0648580ca30df725b612cc23676d1545a4024afc029c702fb2a"
+    },
+    {
+      "id": "insulin",
+      "parentSceneId": "insulin",
+      "text": "Back to the pasta. As glucose rises, beta cells release more insulin, and it travels in the blood to cells all over the body. In muscle and fat cells, insulin binds to receptors on the cell surface. That signal moves extra glucose transporters, proteins that let glucose through, from inside the cell into its membrane. More doors open, so glucose moves in faster. In the liver, insulin switches on glycogenesis, which means building glycogen: glucose is joined into chains and stored.",
+      "hash": "fe44ecb0e050",
+      "textSha256": "fe44ecb0e0507d842c928b40fde6c4619ba327babe64b60843d637d300dbbc5a",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin.fe44ecb0e050.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin.fe44ecb0e050.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin.fe44ecb0e050.generation.json",
+      "plannedRequestSha256": "ba4d1502605da411fdd2253e2bf9d3ad7df24c15fcb485c0d14198415fdf8a06"
+    },
+    {
+      "id": "insulin-eases",
+      "parentSceneId": "insulin-eases",
+      "text": "Glucose leaves the blood, so blood glucose falls back towards its normal range. That's negative feedback: a rise led to a response that lowers it. And as glucose falls, the beta cells detect less of a rise, so they release less insulin. Insulin drops back to a low background level, not to zero. Notice that insulin doesn't destroy glucose. The glucose is used in respiration or stored.",
+      "hash": "5c9912903883",
+      "textSha256": "5c99129038830a3d38a0967ab57e8f2b65c545aeb68f7bc4f5a56bae5f5be2f1",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin-eases.5c9912903883.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin-eases.5c9912903883.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/insulin-eases.5c9912903883.generation.json",
+      "plannedRequestSha256": "db5dbaf7f24ca2a7213802af356ad55e87ba875a751cd79b74665c289ec19a66"
+    },
+    {
+      "id": "glucagon",
+      "parentSceneId": "glucagon",
+      "text": "Now the night. Hours after your last meal, cells keep using glucose, and blood glucose starts to drift down. Alpha cells detect the fall and release more glucagon. Glucagon travels mainly to the liver. There it switches on glycogenolysis, which means splitting glycogen: the stored chains are broken back into glucose, and liver cells release it into the blood. Blood glucose rises back into range. Muscle stores glycogen too, but muscle keeps its glucose for itself, so on this side the liver does the main work.",
+      "hash": "e2e70f880f35",
+      "textSha256": "e2e70f880f35aeb31a71cd84f72e05bda1f8931b9ea668fd2b57b260cc2469c1",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/glucagon.e2e70f880f35.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/glucagon.e2e70f880f35.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/glucagon.e2e70f880f35.generation.json",
+      "plannedRequestSha256": "d4afde111dc8feb87a73d0a698ca3ae73262653d6036aa9375ce45e6e0c84746"
+    },
+    {
+      "id": "two-hormones",
+      "parentSceneId": "two-hormones",
+      "text": "Why two hormones? Think of driving at a steady speed over hills. Going downhill you speed up, so you press the brake. Going uphill you slow down, so you press the accelerator. Insulin works like the brake on rising glucose, and glucagon like the accelerator when it falls. With only one pedal, you could ease off it, but you couldn't actively push the other way. Where the analogy breaks: both hormones are released at some level all the time, and it's the balance between them that shifts.",
+      "hash": "bceacbdc0340",
+      "textSha256": "bceacbdc03401be0c66c89d9617951e72f7571c11ab4743d8a1bfeee9d784de7",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/two-hormones.bceacbdc0340.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/two-hormones.bceacbdc0340.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/two-hormones.bceacbdc0340.generation.json",
+      "plannedRequestSha256": "76f9ac249dabb53a6452077425492bae989adebc5c9a79c9ff63ae020de69ee3"
+    },
+    {
+      "id": "exam-checks",
+      "parentSceneId": "exam-checks",
+      "text": "Two things examiners look for. First, the pancreas detects and signals, but it doesn't change blood glucose itself. The effectors are the cells that move glucose: liver, muscle and fat cells, with the liver doing most of the work when glucose falls. Second, on a graph, the hormone follows the glucose. Glucose rises first, and insulin rises in response. If you write that insulin made glucose rise, you've swapped cause and response.",
+      "hash": "089c938f2732",
+      "textSha256": "089c938f2732f48e0a64940d34f13c3c973b4862de22888147da7fa9f8a26e15",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/exam-checks.089c938f2732.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/exam-checks.089c938f2732.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/exam-checks.089c938f2732.generation.json",
+      "plannedRequestSha256": "cd3d324728940d296c6c9a5b681c2d6f832bfe31c768ab424aca3c98cfc2ee19"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To keep the pair straight: insulin lets glucose in. Glucagon acts when glucose has gone. And B for beta cells, which bring blood glucose down.",
+      "hash": "b95fbddfc82c",
+      "textSha256": "b95fbddfc82c25d06d8f71388b11455c7cb738afab9b52d8f39d4e1170604cda",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/memory.b95fbddfc82c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/memory.b95fbddfc82c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/memory.b95fbddfc82c.generation.json",
+      "plannedRequestSha256": "806131c5aa920906c47fa74febe68d310c59b5497e706ef817d4f8eb98bb1b87"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A student eats breakfast at seven, skips lunch, and runs a cross-country race at two in the afternoon. Their blood glucose begins to fall. Construct a negative feedback loop that returns blood glucose to normal, and explain the role of the liver. Pause here to answer.",
+      "hash": "eeaad81d1717",
+      "textSha256": "eeaad81d17178432c48a267533771ebfab31ac60c3b7ac619f60d2b6d718677c",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt.eeaad81d1717.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt.eeaad81d1717.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt.eeaad81d1717.generation.json",
+      "plannedRequestSha256": "08dc439ed347c7a5734c4e2991e53ade3e18aa3185790db763a4395ba9a3e273"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Stimulus: blood glucose falls. Receptor and control centre: alpha cells in the pancreas, which release glucagon. Effector: the liver, which breaks glycogen down to glucose and releases it into the blood. Response: blood glucose rises back towards normal, opposing the fall. Writing that glucagon breaks down glucose is the classic mistake. The liver breaks down glycogen and releases glucose.",
+      "hash": "3162dd2b69e3",
+      "textSha256": "3162dd2b69e34879028ff71fb7010cf59de5d87d0c4c13cb99e041d2dadce81d",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-one.3162dd2b69e3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-one.3162dd2b69e3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-one.3162dd2b69e3.generation.json",
+      "plannedRequestSha256": "a6be0258c10772153037dac285df903658f9a90a8d4924a69add3fd3ad8305fa"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. After an overnight fast, a healthy adult drank a glucose solution. The graph shows their blood glucose and blood insulin over three hours. Explain the change in insulin over the first hour, and explain why blood glucose returned to about its starting level, with reference to negative feedback. Pause here to answer.",
+      "hash": "d127c2804007",
+      "textSha256": "d127c280400704563569e2a1964e42f643eafd8a499975226b615db2da728281",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt-two.d127c2804007.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt-two.d127c2804007.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/attempt-two.d127c2804007.generation.json",
+      "plannedRequestSha256": "ea42c2d34f2367de5d52abbb60d81a91ddf89d0769b64ae3a04d8ba470a37226"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Glucose rose as the drink was absorbed. Beta cells detected the rise, so insulin rose within thirty minutes. Insulin made muscle and fat cells take up glucose and the liver store it as glycogen, so glucose fell. As it fell, beta cells released less insulin, so both lines settled. Saying the pancreas took up the glucose is the classic mistake: the pancreas only sends the signal.",
+      "hash": "191e5708fb01",
+      "textSha256": "191e5708fb01983d4ee8ae9f3e05a8315d81f51ad4eb3f270cd4fa70dde39f4c",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-two.191e5708fb01.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-two.191e5708fb01.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/feedback-two.191e5708fb01.generation.json",
+      "plannedRequestSha256": "e9473c6fd14584b225efeb94da9b7efa9bdad276eacdd8a50ee830feae7752a1"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any glucose question, ask which way glucose moved, which cells detected it, which hormone they released, and what the liver or other cells then did. Next, the same kind of loop with a different variable: how your kidneys control the water in your blood.",
+      "hash": "d3fc198818da",
+      "textSha256": "d3fc198818daef78d55978fc9325e2f4dc859eaafb4b3807cb7b0aca929eb4e2",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/decision-rule.d3fc198818da.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/decision-rule.d3fc198818da.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/decision-rule.d3fc198818da.generation.json",
+      "plannedRequestSha256": "c21be15588086466d7da152368efab12450cd16c065ad6befe4e9aed38ebd199"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B03-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

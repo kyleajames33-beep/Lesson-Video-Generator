@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C03a-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c03a/lesson.json",
+  "lessonSha256": "2baf3ec267591b8bd2db7c773b9ce19670fe20584057e9ce56ad9e3b5c87eec4",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c03a/lesson.production-brief.json",
+    "sha256": "c9ef8b351cb015c00ee681002fd1fcff54baffa16d05d3e6ac8d6486fd604d43"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A prep room shelf holds eight bottles of solutions, and the labels have washed off. Each one holds a different metal ion: barium, calcium, magnesium, lead, silver, copper, and iron in two forms, iron two and iron three. A sample from one bottle is in this tube. A blue tint might hint at copper, but a hint isn't proof. One test won't settle eight suspects. We need a sequence of tests, where each result rules some ions out.",
+      "hash": "1fdcb41e6c73",
+      "textSha256": "1fdcb41e6c7382812818dd6f283156d5973e0af9eab0a70edc9f9047c1a13e81",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/hook.1fdcb41e6c73.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/hook.1fdcb41e6c73.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/hook.1fdcb41e6c73.generation.json",
+      "plannedRequestSha256": "287f4454fd9d987d5de453338243106c33a64dffa7c76c0ce99477ca1359a67f"
+    },
+    {
+      "id": "three-kinds-of-evidence",
+      "parentSceneId": "three-kinds-of-evidence",
+      "text": "We've got three kinds of evidence. A precipitate test adds an anion that makes an insoluble solid with only some cations, using the solubility rules from Module 5. A flame test heats the sample and reads the colour of the flame. And a complexation test adds molecules or ions that bond around the metal ion. That makes a complex ion, which often has a striking colour, or can pull a solid back into solution. The plan: use precipitates to sort, then flames and complexes to confirm.",
+      "hash": "7b33cba75086",
+      "textSha256": "7b33cba750868edc477da9c45d9a66ba97dd68dc29b0309794889e10c62a6088",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/three-kinds-of-evidence.7b33cba75086.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/three-kinds-of-evidence.7b33cba75086.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/three-kinds-of-evidence.7b33cba75086.generation.json",
+      "plannedRequestSha256": "14c95f07cc23c10d334cc2689ae79b6b622cd5d6620e794ca18c970fc2482dc7"
+    },
+    {
+      "id": "step-1-chloride",
+      "parentSceneId": "step-1-chloride",
+      "text": "Start with a fresh portion of the sample, and add dilute hydrochloric acid. That brings in chloride ions. Chlorides dissolve, except with silver and lead, so a white precipitate here means silver or lead, and nothing else on our list. No precipitate usually rules both of them out. One catch: lead chloride is only slightly soluble, so a dilute lead sample can slip through to the next step.",
+      "hash": "5aa4384f98ea",
+      "textSha256": "5aa4384f98ea7d72d812531b0082ec272069a9a33c0506659a0ed7470f0f8d57",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-1-chloride.5aa4384f98ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-1-chloride.5aa4384f98ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-1-chloride.5aa4384f98ea.generation.json",
+      "plannedRequestSha256": "6faf4ec252c370d78f0869af860d0ef65957a5e0774b284279cdf378530ff390"
+    },
+    {
+      "id": "silver-or-lead",
+      "parentSceneId": "silver-or-lead",
+      "text": "Both solids are white, so how do you tell them apart? Add dilute ammonia to the solid. Ammonia molecules bond to silver ions and form a complex, so silver chloride dissolves. Lead chloride stays put. For a second check on lead, add potassium iodide to a fresh portion. Lead gives a bright yellow precipitate, lead iodide.",
+      "hash": "b0b92d2b4bd1",
+      "textSha256": "b0b92d2b4bd15340d3c75910f3987a787689ce13c119799817e4cb8bc7236acb",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/silver-or-lead.b0b92d2b4bd1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/silver-or-lead.b0b92d2b4bd1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/silver-or-lead.b0b92d2b4bd1.generation.json",
+      "plannedRequestSha256": "3862a17f1a9214cff609325e005873937f0e029eee24c2eeecb13ef92414a3b4"
+    },
+    {
+      "id": "step-2-sulfate",
+      "parentSceneId": "step-2-sulfate",
+      "text": "If step one gave nothing, take another fresh portion and add dilute sulfuric acid. Barium sulfate is insoluble, so barium gives a white precipitate. Calcium sulfate is only slightly soluble, so calcium shows up here mainly when the sample's fairly concentrated. And lead sulfate is white too, so any lead that slipped past step one gets caught here. A white solid in this step still needs one more test to say which metal.",
+      "hash": "664f06e6d775",
+      "textSha256": "664f06e6d7753eb5a4ce2dd4a5224b378d1adcb52e3e58fab2ded085eed07f08",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-2-sulfate.664f06e6d775.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-2-sulfate.664f06e6d775.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-2-sulfate.664f06e6d775.generation.json",
+      "plannedRequestSha256": "88652b3b6b1415bd04340455b9f8311c52a4b5862153e2aad54fb15e9ee57b20"
+    },
+    {
+      "id": "flame-tests",
+      "parentSceneId": "flame-tests",
+      "text": "That's where the flame test earns its place. Dip a clean wire loop in the sample, and hold it in a blue Bunsen flame. Heat excites electrons in the sample's atoms, and as they fall back, they give out light characteristic of the element. You met this in Year 11. Barium gives a pale green flame. Calcium gives brick red, an orange-red. Copper gives blue-green. Magnesium and lead give no useful colour, so for lead, go back to the iodide test.",
+      "hash": "f909e9f7d9e2",
+      "textSha256": "f909e9f7d9e2d17adc6a1acf93003b5a8110fb8c7f21670f8e8308de9c53b9e7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-tests.f909e9f7d9e2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-tests.f909e9f7d9e2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-tests.f909e9f7d9e2.generation.json",
+      "plannedRequestSha256": "b42feb254f8374df4dd304692467ed9af0995005091e9d2b5f1426618b3108e5"
+    },
+    {
+      "id": "flame-limits",
+      "parentSceneId": "flame-limits",
+      "text": "Treat a flame colour as supporting evidence, though, not proof. Traces of sodium are very common, and sodium's bright yellow can swamp a weaker colour. A dirty loop carries colour over from the last sample. So clean the loop in acid until the flame shows no colour, and back up each flame with a precipitate result.",
+      "hash": "f7bb189c7287",
+      "textSha256": "f7bb189c7287e53585de89f5cb6f9991d9f3214d4459420c89b89ddb249d818e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-limits.f7bb189c7287.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-limits.f7bb189c7287.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flame-limits.f7bb189c7287.generation.json",
+      "plannedRequestSha256": "5a0f6ab2de4922156538c7c5bfc39cdeb56b15679b8ceb153a75e0f07b1781b3"
+    },
+    {
+      "id": "step-3-hydroxide",
+      "parentSceneId": "step-3-hydroxide",
+      "text": "Now the third reagent, sodium hydroxide, in a fresh portion. Most metal hydroxides are insoluble, and four of our ions give solids you can tell apart by colour. Copper gives pale blue copper hydroxide. Iron three gives red-brown iron three hydroxide, the colour of rust. Iron two gives a green solid. And magnesium gives a white one, which doesn't dissolve when you add more sodium hydroxide. A faint white solid could also be calcium from a concentrated sample, so check the flame: no colour points to magnesium.",
+      "hash": "fe3a443aee8b",
+      "textSha256": "fe3a443aee8bcd784c3a7975fedf010daa93ee6f84e145cbc4d34761b688de66",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-3-hydroxide.fe3a443aee8b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-3-hydroxide.fe3a443aee8b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/step-3-hydroxide.fe3a443aee8b.generation.json",
+      "plannedRequestSha256": "39faa4daf3efb54b54f671af7dc0fe6e63a875fde5583417fb33cc196b9a2254"
+    },
+    {
+      "id": "why-this-order",
+      "parentSceneId": "why-this-order",
+      "text": "That's also why the chloride and sulfate steps come first. Silver and lead would form solids with hydroxide too, and muddy the colours. Catching them early means a colour in this step can only come from the ions still left.",
+      "hash": "3cf7e004162c",
+      "textSha256": "3cf7e004162cf4ba98148378732f8f3a5e8d793da2a6a8020beae31d54c55304",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/why-this-order.3cf7e004162c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/why-this-order.3cf7e004162c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/why-this-order.3cf7e004162c.generation.json",
+      "plannedRequestSha256": "da694a32e052daf5125bf3368abb71fbc3d57071e9b350ac7d45d1888b440f5b"
+    },
+    {
+      "id": "iron-two-trap",
+      "parentSceneId": "iron-two-trap",
+      "text": "Watch the iron two result closely. The green solid sits in air, and oxygen slowly takes electrons from iron two, turning it into iron three. So over a few minutes, the green darkens to brown. If you read it late, iron two looks like iron three. Read the colour straight away.",
+      "hash": "cba8b80eab5d",
+      "textSha256": "cba8b80eab5def72d114f1bd310243adb6bbeeace0d707a4b9924884a36f5135",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/iron-two-trap.cba8b80eab5d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/iron-two-trap.cba8b80eab5d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/iron-two-trap.cba8b80eab5d.generation.json",
+      "plannedRequestSha256": "c25cdd2e61785a7873804b0a4104bc623cda6d8c7392283bf3adcc2aa36ccfc4"
+    },
+    {
+      "id": "complexes-confirm",
+      "parentSceneId": "complexes-confirm",
+      "text": "Then confirm with a complex. Add excess ammonia to the copper result, and the pale blue solid dissolves into a deep blue solution, the copper ammonia complex. Add thiocyanate ions to a fresh portion of iron three, and the solution turns blood red, the iron thiocyanate complex from Module 5. When two different kinds of chemistry agree, the identification is much stronger than one colour alone.",
+      "hash": "f977049547a9",
+      "textSha256": "f977049547a9690ea8f156731278bc8870344d0e5e906e3bf0a9f9b27bb345c5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/complexes-confirm.f977049547a9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/complexes-confirm.f977049547a9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/complexes-confirm.f977049547a9.generation.json",
+      "plannedRequestSha256": "2393f7f9af5677f4fc08d4430511d9b734b98f002b2803e849bc86fe9a186b54"
+    },
+    {
+      "id": "flowchart",
+      "parentSceneId": "flowchart",
+      "text": "Put it together and you get a flowchart. Chloride, then sulfate, then hydroxide, each in a fresh portion. Each no rules ions out, so each yes points to fewer ions. Our prep room sample gave nothing with chloride or sulfate, a pale blue solid with hydroxide, a deep blue complex with ammonia, and a blue-green flame. That's copper. Mixtures need a separation plan, and tests on each separated part. This chart identifies one unknown cation.",
+      "hash": "aeb166cad219",
+      "textSha256": "aeb166cad21916f3c1ff10865448f0b9123d0a1baab140f5682eda64acc8bd21",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flowchart.aeb166cad219.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flowchart.aeb166cad219.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/flowchart.aeb166cad219.generation.json",
+      "plannedRequestSha256": "a95ed961282f2b528089b1f44b2c2868a3527ccd2aec56125235a282713348aa"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here's a way to hold the order. Chloride, sulfate, hydroxide, then flame. Two whites with chloride: silver and lead. Barium and calcium with sulfate, and the flame splits them. Then blue, brown, green, white with hydroxide: copper, iron three, iron two, magnesium. And a green that turns brown is iron two, read late.",
+      "hash": "bdf7bd2d018c",
+      "textSha256": "bdf7bd2d018c1ac685de8e9474b98a1532aafb1378a6278bdad7c6895348f527",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/memory-aid.bdf7bd2d018c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/memory-aid.bdf7bd2d018c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/memory-aid.bdf7bd2d018c.generation.json",
+      "plannedRequestSha256": "00635cee4a7091cecfecd97756bf987c6ef6ea483f2db5f36c448b3e3236cd8d"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Separate portions of an unknown solution give these results. Identify the cation, and write the net ionic equation for the precipitate. Pause here to answer.",
+      "hash": "f2318bb6c0ad",
+      "textSha256": "f2318bb6c0adf1d2b59a8a08f4b299cec3bd33929d4345e51bfd65bd258aba75",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-1.f2318bb6c0ad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-1.f2318bb6c0ad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-1.f2318bb6c0ad.generation.json",
+      "plannedRequestSha256": "ba0b728ca3f95718933d62424b7da9004c4f63af52080000b706c626fea332bf"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "No chloride precipitate rules out silver, but dilute lead can slip through. The white sulfate and pale green flame identify barium. So barium plus sulfate gives solid barium sulfate. Calling it calcium just because it's a white sulfate is the classic slip.",
+      "hash": "41a479e44e18",
+      "textSha256": "41a479e44e18bd0da70d30263156c303533fe245eb3fe987f463c34cdaf773a8",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-1.41a479e44e18.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-1.41a479e44e18.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-1.41a479e44e18.generation.json",
+      "plannedRequestSha256": "602640ffdbcf52a912b79f31b7c75eaffb5db2a95b33811ed2f629f1e6099133"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student adds sodium hydroxide to a pale green solution. A green precipitate forms, but ten minutes later it's red-brown, and the student concludes iron three. Evaluate this conclusion, and suggest a confirming test. Pause here to answer.",
+      "hash": "754a9c74513b",
+      "textSha256": "754a9c74513b3d5a0e6a407f92857b9f7997c6cfd11660e730ef54a3974714d1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-2.754a9c74513b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-2.754a9c74513b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/attempt-2.754a9c74513b.generation.json",
+      "plannedRequestSha256": "b2d106948ef9549995ff7b5e4883d9c58452fe0734aeb13eca49bd342e34f4b9"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The first colour counts. A green precipitate is iron two hydroxide, and it turned brown because oxygen in the air oxidised it to iron three. So the cation is iron two, and the conclusion's wrong. To confirm, add thiocyanate to a fresh portion: no blood red rules out iron three. Trusting the final colour is the trap.",
+      "hash": "22a25d67a1ac",
+      "textSha256": "22a25d67a1acd0ab20bbfe657c0c2d61b7bee86031c2f4952b21119573cbade0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-2.22a25d67a1ac.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-2.22a25d67a1ac.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/feedback-2.22a25d67a1ac.generation.json",
+      "plannedRequestSha256": "ac9671e964ff4d38389e8df59934bfaf6aaf54bb0f4361817d54b8b1a6b61e29"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the cation comes from a short sequence: precipitates to sort, then a flame or a complex to confirm. Next, the other half of the salt: how do we identify the anion?",
+      "hash": "7eebfc1d1dc3",
+      "textSha256": "7eebfc1d1dc3d580602fdeb22726752d31223ed97d3ca3bdabc00dc5b008179f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/handoff.7eebfc1d1dc3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/handoff.7eebfc1d1dc3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/handoff.7eebfc1d1dc3.generation.json",
+      "plannedRequestSha256": "4126a499e10ebbc7681760f363e6a028e951e308e1e83ce01a26c8310e1cb7ae"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03a-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

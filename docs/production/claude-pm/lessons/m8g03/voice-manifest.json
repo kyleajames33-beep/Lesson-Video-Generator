@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-G03-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8g03/lesson.json",
+  "lessonSha256": "20cde7cd154bcb0f7f1e0e2fd285fbc8e1d80535a382691d78802bd98fce5ece",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8g03/lesson.production-brief.json",
+    "sha256": "f1ee837df6b85e55c0daa7be066b1fbbf6d345771a978266ae772ba2470730a9"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Feedback loop questions turn up in HSC Biology again and again, in different disguises. Most of them come down to three moves. Build the loop in order, read it off a graph, and tell negative feedback from positive. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+      "hash": "10fa69abc413",
+      "textSha256": "10fa69abc413db5f508c401c0af8d2efe42e0bc43aac8faadf2b241a0bc5aa43",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/hook.10fa69abc413.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/hook.10fa69abc413.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/hook.10fa69abc413.generation.json",
+      "plannedRequestSha256": "76916972d12f2d5b65a3960c394b0d69dcd50135b980d1871992ca7859d1914e"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. When a person stands up quickly, blood pools in the legs, and blood pressure in the upper body falls. Baroreceptors, stretch receptors in the walls of the aorta and carotid arteries, detect the fall. The cardiovascular centre in the medulla oblongata sends nerve impulses to the heart, which beats faster and more strongly, and to arterioles, which narrow. Construct a negative feedback loop for this response. Then predict what would happen on standing if the nerves from the baroreceptors were damaged. Pause here to answer.",
+      "hash": "ad0aa1132033",
+      "textSha256": "ad0aa11320332763e79615037aedf40a2da7ef654b47487a61e5c44652197714",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-question.ad0aa1132033.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-question.ad0aa1132033.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-question.ad0aa1132033.generation.json",
+      "plannedRequestSha256": "b5b8b83b56c2bb28b55f951dc2207d668c6808acbc4df7c59bdc7824c72ac670"
+    },
+    {
+      "id": "q1-build",
+      "parentSceneId": "q1-build",
+      "text": "Build it in order, and take each part from the stem. The stimulus is the change in the variable: blood pressure falls. The receptors are the baroreceptors. The control centre is the cardiovascular centre in the medulla. The effectors are the heart and the arterioles. Now the response, which is where answers often fall short. A faster, stronger heartbeat pumps more blood each minute, and narrower arterioles hold the pressure up, so blood pressure rises back towards normal. Then close the loop with an arrow back to the stimulus, marked minus, because the response opposes the fall.",
+      "hash": "6c975ea79ca4",
+      "textSha256": "6c975ea79ca4f3332eb93dc8dbf2518ecf1da24118802120ef1be3b8b9548a79",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-build.6c975ea79ca4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-build.6c975ea79ca4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-build.6c975ea79ca4.generation.json",
+      "plannedRequestSha256": "bab62b271fdc593a2dcce7ada63ed9e65154440905676b068377f9423807fcb4"
+    },
+    {
+      "id": "q1-predict",
+      "parentSceneId": "q1-predict",
+      "text": "Now the prediction. If the baroreceptor nerves are damaged, the medulla gets no signal that pressure has fallen. So the heart and arterioles don't respond, and blood pressure stays low after standing. Less blood reaches the brain, so the person may feel dizzy or faint. Break any link, and the loop can't correct.",
+      "hash": "a2b8f3321f2d",
+      "textSha256": "a2b8f3321f2d775901b94d1c0521e7cef35f86baaa0f659846788541a9a524a6",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-predict.a2b8f3321f2d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-predict.a2b8f3321f2d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-predict.a2b8f3321f2d.generation.json",
+      "plannedRequestSha256": "862bbc009728e6b9c8ce3ea3b1c4f573e531a1b410dab95cdd2fcc04e6c0667f"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is ending at the effector, with \"response: the heart beats faster\". That's what the effector does. The response is the change in the regulated variable: blood pressure rising back.",
+      "hash": "2e89868331c8",
+      "textSha256": "2e89868331c8483273e0cb5d4fc8d70b8fce9ddfff5bedb75f9baf943f64f8c4",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-mistake.2e89868331c8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-mistake.2e89868331c8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-mistake.2e89868331c8.generation.json",
+      "plannedRequestSha256": "fb33848b43130662148e87ebd3d26e7c52de3ec7355952e9e41f3e0af3dab6b5"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A healthy adult ate a meal at time zero, after an overnight fast. The graph shows their blood glucose and blood insulin over the next three hours. Identify when each one peaked, and account for the difference. Explain the change in blood glucose from forty-five to one hundred and twenty minutes, with reference to negative feedback. Then explain the rise in glucose after one hundred and fifty minutes. Pause here to answer.",
+      "hash": "5e680a2e2994",
+      "textSha256": "5e680a2e299458313ea0d1aab3270bf8ae36d67c5c90c4e99744c34aa6bd089c",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-question.5e680a2e2994.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-question.5e680a2e2994.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-question.5e680a2e2994.generation.json",
+      "plannedRequestSha256": "496e963d408edf20afd84ce74b3c131c42c8093b02a44b0d404e7fbd1a410cf8"
+    },
+    {
+      "id": "q2-peaks",
+      "parentSceneId": "q2-peaks",
+      "text": "Start with the peaks, and read them off the axes. Glucose peaks at thirty minutes, at seven point six millimoles per litre. Insulin peaks later, at forty-five minutes. That order is the loop at work. The rise in glucose is the stimulus. Beta cells in the pancreas detect it and release insulin, so insulin climbs after glucose does.",
+      "hash": "3421baea93aa",
+      "textSha256": "3421baea93aa9ca793c4c3028d2150574c9cae2c8b9b1349f245a7a23cf2e299",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-peaks.3421baea93aa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-peaks.3421baea93aa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-peaks.3421baea93aa.generation.json",
+      "plannedRequestSha256": "ef842d5e18de3c57eaafbbceda386704f5e427f9fa6228b868b91711518e2821"
+    },
+    {
+      "id": "q2-explain",
+      "parentSceneId": "q2-explain",
+      "text": "Now forty-five to one hundred and twenty minutes. Insulin is high, so liver, muscle and fat cells take up more glucose from the blood, and the liver and muscles store it as glycogen. Blood glucose falls back to about five. As it falls, the beta cells detect less of a rise and release less insulin, so insulin falls too. The response opposed the rise: negative feedback. After one hundred and fifty minutes, glucose has dipped just below its starting value. The graph doesn't show glucagon, so this part comes from what you know. Alpha cells detect the fall and release glucagon, and the liver breaks down glycogen and releases glucose, so blood glucose rises back.",
+      "hash": "e3b92ff826c5",
+      "textSha256": "e3b92ff826c5f16e65e6d651721e48c87497f42f06d48f22dbf01a661a70101b",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-explain.e3b92ff826c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-explain.e3b92ff826c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-explain.e3b92ff826c5.generation.json",
+      "plannedRequestSha256": "b9dd2edcee7fb6d944351b62805afa0e0c6c924cc09e558e3c24c4330f242c16"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is writing that insulin breaks down glucose. Insulin is the signal. The liver, muscle and fat cells are the effectors that take glucose in. Link each hormone to the cells it acts on.",
+      "hash": "91ef19378aec",
+      "textSha256": "91ef19378aec279aa47fb2a6e449f4ffac5d0df59ee1f2733891b18e45c09bc7",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-mistake.91ef19378aec.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-mistake.91ef19378aec.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-mistake.91ef19378aec.generation.json",
+      "plannedRequestSha256": "16fddacf4cd0717f27b5e4125a915d3e67991e14b4dab303d08e730b900fe02c"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Three processes are described. In P, soil dries, root and leaf cells make more ABA, the stomata close, and water loss falls. In Q, during a long run, blood glucose falls, the pancreas releases glucagon, the liver releases glucose, and blood glucose rises back. In R, a ripening banana gives off a gas called ethylene, which makes it and nearby bananas ripen faster and give off more ethylene. Identify the process that shows positive feedback. Then explain why a student who calls Q positive feedback, because glucose increases, is wrong. Pause here to answer.",
+      "hash": "587f2c9c3d9b",
+      "textSha256": "587f2c9c3d9b3160d1f2b095385999325b9100ee0fb7dfcc58ca56ee520df879",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-question.587f2c9c3d9b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-question.587f2c9c3d9b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-question.587f2c9c3d9b.generation.json",
+      "plannedRequestSha256": "43fdd6ca6c2e02333cfc0d8dca6779673caa468c711029e078bdc8d27700f416"
+    },
+    {
+      "id": "q3-identify",
+      "parentSceneId": "q3-identify",
+      "text": "Test each process with one question: does the response oppose the change, or strengthen it? In P, water content was falling, and closing the stomata slows the loss. That opposes the change. In R, ethylene speeds ripening, ripening releases more ethylene, and that speeds ripening further. The response strengthens the change, so R is positive feedback. It keeps building until the fruit is ripe.",
+      "hash": "dd9c133340cc",
+      "textSha256": "dd9c133340ccab0ef9025f03fb9d0e9da1773af77e3028001ff55c69ff295e4e",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-identify.dd9c133340cc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-identify.dd9c133340cc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-identify.dd9c133340cc.generation.json",
+      "plannedRequestSha256": "a8bd01abba8e0d1a733e03bb2a9e8b5aeedb02bcda5e7a20b89b32475f3fe172"
+    },
+    {
+      "id": "q3-explain",
+      "parentSceneId": "q3-explain",
+      "text": "Now Q. The student has looked only at which way the variable moved, up, instead of comparing the response with the stimulus. The stimulus was a fall in blood glucose. The response, glucagon making the liver release glucose, raises it back. A response that undoes the change is negative feedback, whichever direction the variable moves.",
+      "hash": "d91e463f025f",
+      "textSha256": "d91e463f025f3d7cf9439786fd9da0bfdeef5b2db30fc31383faea8d87491719",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-explain.d91e463f025f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-explain.d91e463f025f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-explain.d91e463f025f.generation.json",
+      "plannedRequestSha256": "d80eb8b98158bdc697529b3c6f52e42ffee7b65f7724269a6fca67dd6b550c38"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "So the classic mistake is reading positive as \"goes up\" and negative as \"goes down\". Negative means the response opposes the change. Positive means it adds to it.",
+      "hash": "0312f7d3d20e",
+      "textSha256": "0312f7d3d20ed81ffeed87db98c6504de9b13432787fd1a7032db959b2f20977",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-mistake.0312f7d3d20e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-mistake.0312f7d3d20e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-mistake.0312f7d3d20e.generation.json",
+      "plannedRequestSha256": "479a225b23973c6d399a53c4792936441a096ca9f7f77698416a18cad682625a"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start each type. To build a loop, take the five parts in order from the stem, and make the response a change in the variable. To read a graph, find the stimulus first, then the response that follows it. To spot positive feedback, compare the response with the original change. Opposes is negative, adds to it is positive. Next, you'll investigate how plants lose water, in a practical.",
+      "hash": "8fba7c7134d0",
+      "textSha256": "8fba7c7134d002a7a68a495f7b3bae1dbe80f844a33f3771fe736b8b7ca7ae20",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/decision-board.8fba7c7134d0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/decision-board.8fba7c7134d0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/decision-board.8fba7c7134d0.generation.json",
+      "plannedRequestSha256": "e2504428628ad7845cb90fc3bb960bf4288cad87d764dcd0d6b513bc4423bd8b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

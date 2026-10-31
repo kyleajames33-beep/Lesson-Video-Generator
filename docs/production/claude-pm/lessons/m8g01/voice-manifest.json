@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-G01-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8g01/lesson.json",
+  "lessonSha256": "2cb3985e4769471230e3f6862412d4439c4b22b3bc9e607894a60a7c48acfb00",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8g01/lesson.production-brief.json",
+    "sha256": "6d5f0419cf57cde706afc1ef68253b7111829d1cda25a6bb6fc43ef3d32e30ca"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two ways to count ions you can't see: a titration that counts the silver it takes, and a precipitate you can weigh. Exam questions on both test the same few moves. Use the right data, choose the right mole ratio, keep track of any dilution, and say which way an error pushes the answer. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+      "hash": "862d8543d03b",
+      "textSha256": "862d8543d03bb2aaf87e142b7bf7d84aa41ff32f903f41fca98293996be239dd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/hook.862d8543d03b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/hook.862d8543d03b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/hook.862d8543d03b.generation.json",
+      "plannedRequestSha256": "f7b321efb5c8512b4c2c4dfcdcff62f0936ab6d428e0e2b90670544d33d462d3"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A ten millilitre sample of seawater is diluted to two hundred and fifty millilitres. Twenty five millilitre aliquots are titrated with silver nitrate, using chromate indicator. The titres are on screen. Calculate the chloride concentration in the seawater, in grams per litre. Pause here to answer.",
+      "hash": "4af5f711c52d",
+      "textSha256": "4af5f711c52d9381608f3b6ef3e83f45711437deefb4ae4b91b21e7e002eaa12",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-question.4af5f711c52d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-question.4af5f711c52d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-question.4af5f711c52d.generation.json",
+      "plannedRequestSha256": "13407e8e47182acc212528e29198f2bd4dee9c8fbcad3fe77ecc7bd4dba78ef2"
+    },
+    {
+      "id": "q1-data-ratio",
+      "parentSceneId": "q1-data-ratio",
+      "text": "Start with the data. The rough titre is only a guide, so leave it out. The other three agree within a tenth of a millilitre, so they're concordant, and their mean is ten point nine zero millilitres. Now the ratio. Silver and chloride form silver chloride, one to one. The chromate only signals the end, so its two to one ratio isn't the one you want.",
+      "hash": "3e59a9861081",
+      "textSha256": "3e59a98610815487e5067304b3571c93e9ed2c90c56073b457bb9bcde2d6330b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-data-ratio.3e59a9861081.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-data-ratio.3e59a9861081.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-data-ratio.3e59a9861081.generation.json",
+      "plannedRequestSha256": "768362bab7a46b1b6fcd05633bfd15724b09f1aff43d913b2f5c966e16a5a675"
+    },
+    {
+      "id": "q1-calc",
+      "parentSceneId": "q1-calc",
+      "text": "Moles of silver: point zero five zero zero times point zero one zero nine zero litres, five point four five times ten to the minus four moles. That's the chloride in one twenty five millilitre aliquot. The flask held two hundred and fifty millilitres, ten times as much, so it held five point four five times ten to the minus three moles. All of that came from the ten millilitres of seawater. Divide by point zero one zero zero litres: point five four five moles per litre. Times thirty five point four five, about nineteen point three grams per litre. That's close to typical seawater, a good sense check.",
+      "hash": "4471211c3bed",
+      "textSha256": "4471211c3bed2fc35e8a80b67dafc72ad1816815f2d04703378004248199c990",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-calc.4471211c3bed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-calc.4471211c3bed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-calc.4471211c3bed.generation.json",
+      "plannedRequestSha256": "32ffb3b8f916a07fcc291b2224537aeb44aa83b59b7747a7b53c299cae1f052a"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic slip is stopping at the aliquot. Divide the moles by twenty five millilitres, and you get point zero two one eight moles per litre. That's the diluted solution, not the seawater. Ask which liquid the question is about, then scale back up through the dilution.",
+      "hash": "fceec6b9e54d",
+      "textSha256": "fceec6b9e54d5506845c2e9426db2674db297ca3d5ac0d898e25ac076865dbc3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-mistake.fceec6b9e54d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-mistake.fceec6b9e54d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q1-mistake.fceec6b9e54d.generation.json",
+      "plannedRequestSha256": "7a68213b3002098ecd3bc79ef1611d726001427abeb40bfebb6625252ee6930c"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Water treatment plants use aluminium sulfate. To check a sample's purity, three portions, each point four zero zero grams, are analysed by precipitating barium sulfate. The masses are on screen, and the third was weighed after only one drying. Justify which result to exclude, then calculate the percentage of aluminium sulfate in the sample. Pause here to answer.",
+      "hash": "1169796eaffb",
+      "textSha256": "1169796eaffb6304a4150bd4f85f428ae1f636c9f2a1d8687d885a9f42504f49",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-question.1169796eaffb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-question.1169796eaffb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-question.1169796eaffb.generation.json",
+      "plannedRequestSha256": "3250e95aed5b338e55a50c0858b324d5eba01f53b1d968f5ab761f27279e22cc"
+    },
+    {
+      "id": "q2-outlier",
+      "parentSceneId": "q2-outlier",
+      "text": "Part a. Trial three is the highest, but being different isn't a reason on its own. The reason is in the method: it was weighed after only one drying, so it probably still held water. Extra water means extra mass, so it reads too high. Trials one and two were dried to constant mass, and they agree, so their mean, point seven eight three grams, is the value to use.",
+      "hash": "db6001800a24",
+      "textSha256": "db6001800a24494bbdc6915b2de62af313113bcfa6fbfc01d482092547536051",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-outlier.db6001800a24.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-outlier.db6001800a24.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-outlier.db6001800a24.generation.json",
+      "plannedRequestSha256": "b5b40739a0945485df54fffa64f48aeabb4f43d91abb66a204c3f4269bb576f6"
+    },
+    {
+      "id": "q2-ratio-calc",
+      "parentSceneId": "q2-ratio-calc",
+      "text": "Part b. Moles of barium sulfate: point seven eight three over two hundred and thirty three point three nine, three point three five times ten to the minus three moles. Now the ratio. Each aluminium sulfate holds three sulfate ions, so it makes three barium sulfates. Divide by three: one point one two times ten to the minus three moles of aluminium sulfate. Times three hundred and forty two point one four, that's point three eight three grams. Out of point four zero zero grams, about ninety six percent. That's under a hundred, which makes sense for a purity.",
+      "hash": "1b9af3eee645",
+      "textSha256": "1b9af3eee6452043abd052139a4d78f8f60cfdd89fbba359b36e19d70d150f9c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-ratio-calc.1b9af3eee645.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-ratio-calc.1b9af3eee645.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-ratio-calc.1b9af3eee645.generation.json",
+      "plannedRequestSha256": "19333f6cd6a5c5a13ab723fd60b2a84f607abaa5bc7e5490c232113fc5f4a25f"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic slip is using one to one. That gives about two hundred and eighty seven percent, which is impossible for a purity. When a percentage comes out over a hundred, check your ratio first.",
+      "hash": "bcf9fd3729c1",
+      "textSha256": "bcf9fd3729c1239eb9f7104dc465fa773e13ff79a2b801fde38a50ff69f9ed3f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-mistake.bcf9fd3729c1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-mistake.bcf9fd3729c1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q2-mistake.bcf9fd3729c1.generation.json",
+      "plannedRequestSha256": "614fffd9db1814261ff4eec7107d61b6bbd06425494e4d10c14e0a8beb81c332"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A teacher makes up a sodium chloride solution of known concentration, point zero six two zero moles per litre. A student measures it twice. A Mohr titration, with the burette rinsed only with distilled water, gives point zero six three five. A gravimetric analysis, where some silver chloride went through a small tear in the filter paper, gives point zero six zero seven. Explain why each result differs from the known value. Then evaluate the claim that their mean shows the analysis was accurate. Pause here to answer.",
+      "hash": "cd4397256264",
+      "textSha256": "cd4397256264b2f090af2d82c585da094dca6950c56c078470d33c5803e7588f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-question.cd4397256264.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-question.cd4397256264.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-question.cd4397256264.generation.json",
+      "plannedRequestSha256": "670d0710d4f43494abb83ff79ec1df4b74b3a3d53afe2cd71f22b05d718d7923"
+    },
+    {
+      "id": "q3-titration",
+      "parentSceneId": "q3-titration",
+      "text": "Method one. Water left in the burette dilutes the silver nitrate, so each millilitre carries less silver than the label says. You need a bigger titre to reach the endpoint. But the calculation still uses the label's concentration, so it counts more silver, and more chloride, than was really there. That's why the result is too high. Rinsing with the silver nitrate itself fixes it, because any liquid left behind is then the same solution.",
+      "hash": "f5f052b0381d",
+      "textSha256": "f5f052b0381dfff270d865a362de397159cb4511d7c1c6e887e64c1e574ffd18",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-titration.f5f052b0381d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-titration.f5f052b0381d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-titration.f5f052b0381d.generation.json",
+      "plannedRequestSha256": "13a5f5b00ca4369e63ab3222611899e2aa0d25744085d0bd8fe8704c48998c19"
+    },
+    {
+      "id": "q3-gravimetric",
+      "parentSceneId": "q3-gravimetric",
+      "text": "Method two. Silver chloride that slips through the tear never reaches the balance. Less mass means fewer moles of silver chloride, so less chloride. That result is too low. Each fault would push the result the same way every time you repeated it, so both are systematic.",
+      "hash": "24b384cf8cad",
+      "textSha256": "24b384cf8cadf6e427810c259d2c7b42e843f3b402316e6ab27dcb6b33bcf4a0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-gravimetric.24b384cf8cad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-gravimetric.24b384cf8cad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-gravimetric.24b384cf8cad.generation.json",
+      "plannedRequestSha256": "555ebede45974c028b46e5716930c54967e1146349468d4f481856672e31554e"
+    },
+    {
+      "id": "q3-claim",
+      "parentSceneId": "q3-claim",
+      "text": "Part b. The mean lands near the known value only because one error pushed up and the other pushed down by a similar amount. That's luck, not accuracy. Neither method was accurate, and with a slightly bigger tear, the mean would miss. The fixes remove each cause: rinse the burette with the silver nitrate solution, and filter through an undamaged paper. So the claim isn't supported. To check accuracy properly, run each fixed method on a known solution like this one. The trap is trusting the average. A close average doesn't show that either method was accurate.",
+      "hash": "7e7b27b286ee",
+      "textSha256": "7e7b27b286ee2ea5359ed0715f74cb1c782df9b5ea99d005ed6a25dea3a064b2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-claim.7e7b27b286ee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-claim.7e7b27b286ee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/q3-claim.7e7b27b286ee.generation.json",
+      "plannedRequestSha256": "5fb3a03473f3b7b8dfe15af18b544c6a15f012d9b9218fcb992f7ca89d286e7c"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So for any precipitation titration or gravimetric question. Leave out rough and faulty results, and say why. Take the ratio from the precipitate's equation or formula, not from the indicator. Track every dilution back to the original sample. And for each error, ask whether it adds or loses volume or mass, then say which way the answer moves. Next, identifying ions: which tests tell you which cation is there?",
+      "hash": "9cf3de168d26",
+      "textSha256": "9cf3de168d26951b792612547075e574e9c012ba36c482d856cdb63591c4b158",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/decision-board.9cf3de168d26.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/decision-board.9cf3de168d26.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/decision-board.9cf3de168d26.generation.json",
+      "plannedRequestSha256": "ad3f3db102485c9e44a66b0916974905f6b2974cee53d5ed3f61bf1af87609b1"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G01-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

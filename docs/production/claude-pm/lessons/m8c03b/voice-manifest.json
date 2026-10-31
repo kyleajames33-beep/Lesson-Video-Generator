@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C03b-claude-2026-10-31-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c03b/lesson.json",
+  "lessonSha256": "bd5dce2080880be0af0b2ad3ec80be2ee5e22f58b35ce207e415aa8cfb744883",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c03b/lesson.production-brief.json",
+    "sha256": "85bbee6beea540f49ca59d7a339e68f4f14d10ae041213cd140dc3442d97f83f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Back to the prep room. A pale blue precipitate, a deep blue complex and a blue-green flame told us one bottle holds copper ions. But copper what? Copper chloride, copper sulfate and copper acetate all dissolve, and all give the same copper results. The cation's only half the answer. Now we need the anion, and the list has eight: chloride, bromide, iodide, hydroxide, acetate, carbonate, sulfate and phosphate.",
+      "hash": "a03cd408f41f",
+      "textSha256": "a03cd408f41f95d30090826d0c4f52291e0379b3f73d45740396a723e8f201e0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hook.a03cd408f41f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hook.a03cd408f41f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hook.a03cd408f41f.generation.json",
+      "plannedRequestSha256": "e42c4695da9c517778e0b56347488c70c8795b6f0f30b0d429c873f6b52cddce"
+    },
+    {
+      "id": "step-1-acid",
+      "parentSceneId": "step-1-acid",
+      "text": "The plan's the same as for cations: fresh portions, and reagents that react with only a few ions. Start with dilute acid. Carbonate ions take hydrogen ions and break down into carbon dioxide and water, so the tube fizzes. Bubble the gas through limewater, and it turns milky as calcium carbonate forms. Fizzing that turns limewater milky points to carbonate. Not every anion test makes a precipitate.",
+      "hash": "7537b942cf5d",
+      "textSha256": "7537b942cf5d252491fbaa140eb0c0e4c3f4e8ff57549eb83fabf979bb1990d3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-1-acid.7537b942cf5d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-1-acid.7537b942cf5d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-1-acid.7537b942cf5d.generation.json",
+      "plannedRequestSha256": "8ef24e0528f3b30b168c9c9e42b7b0bbbf69c8d7314cc7690bb475ce085cbc0f"
+    },
+    {
+      "id": "acetate",
+      "parentSceneId": "acetate",
+      "text": "Acetate takes hydrogen ions too, but it doesn't make a gas. It becomes ethanoic acid, the acid in vinegar. So there's no fizz, but if you warm the tube gently, you'll notice a vinegar smell. Waft it towards you, don't sniff straight from the tube. To confirm, add neutral iron three chloride to a fresh portion. Acetate ions bond around the iron ions and form a complex with a deep red-brown colour.",
+      "hash": "2cdbe9ac93ca",
+      "textSha256": "2cdbe9ac93caac6bdb722b34c2480fcf20e733013b7b90762364e96f840bf987",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/acetate.2cdbe9ac93ca.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/acetate.2cdbe9ac93ca.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/acetate.2cdbe9ac93ca.generation.json",
+      "plannedRequestSha256": "0de72c0066a42bc8914cbbfd22d83e23ed146a4fc310f66b006f678d91ba2b90"
+    },
+    {
+      "id": "why-acidify",
+      "parentSceneId": "why-acidify",
+      "text": "The next tests use barium ions and silver ions. But carbonate forms solids with both, so it could fake a positive result. The fix is to acidify first. The acid turns any carbonate into carbon dioxide, so it can't precipitate. Here's the catch: which acid? For the sulfate test, hydrochloric acid is fine, since chloride doesn't precipitate with barium. But in the halide test, it would add chloride, the very ion you're testing for. So use dilute nitric acid. Nitrates are all soluble, so nitrate can't fake a result.",
+      "hash": "f69ac271901c",
+      "textSha256": "f69ac271901cde327b860f238e3004e0ba3ef4db00f9463f4688837c6dfe66a2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/why-acidify.f69ac271901c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/why-acidify.f69ac271901c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/why-acidify.f69ac271901c.generation.json",
+      "plannedRequestSha256": "4aa5e92456331ff5edd57fc72262f733958f413513339e405417243c03ab77cb"
+    },
+    {
+      "id": "step-2-sulfate",
+      "parentSceneId": "step-2-sulfate",
+      "text": "Now sulfate. Acidify a fresh portion, then add barium chloride or barium nitrate solution. A white precipitate of barium sulfate means sulfate. It stays put in the acid, where barium carbonate would have dissolved. It's the same white solid you weighed in gravimetric analysis, so this reaction both detects sulfate and measures it.",
+      "hash": "384e756efaf1",
+      "textSha256": "384e756efaf1bc288ba1f146bc410095041654b6f67bed0e8dc4110203ca7a98",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-2-sulfate.384e756efaf1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-2-sulfate.384e756efaf1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-2-sulfate.384e756efaf1.generation.json",
+      "plannedRequestSha256": "21cb0d66c865d43bfea82c172f3334612a24bb58d6a262575917c3517834d4b0"
+    },
+    {
+      "id": "step-3-halides",
+      "parentSceneId": "step-3-halides",
+      "text": "For the halides, acidify a fresh portion with nitric acid, then add silver nitrate. The halides are the exception in the solubility rules when they meet silver, so silver locks onto any halide present. Each halide gives a silver solid, and the colour deepens as you go down the group. Silver chloride is white. Silver bromide is cream. Silver iodide is pale yellow.",
+      "hash": "244522a72e3e",
+      "textSha256": "244522a72e3e8238212763dbc29846663a870777ddbbbd326ab34a4a40766b01",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-3-halides.244522a72e3e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-3-halides.244522a72e3e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/step-3-halides.244522a72e3e.generation.json",
+      "plannedRequestSha256": "3dca27501df9b4e1000b45ab449280892d3ab585cb4684c3244a5d99f17f10df"
+    },
+    {
+      "id": "ammonia-confirms",
+      "parentSceneId": "ammonia-confirms",
+      "text": "Cream and pale yellow can look alike in a test tube, so confirm with ammonia. Ammonia molecules bond to silver ions and form a complex, which pulls the solid back into solution. The less soluble the silver halide, the harder that is. Silver chloride dissolves in dilute ammonia. Silver bromide needs concentrated ammonia. And silver iodide stays put, even in concentrated ammonia.",
+      "hash": "3c5a4f1e7535",
+      "textSha256": "3c5a4f1e75357e7db321f3e8f2f9da32a7bdd62e30d57946bd5e70cbc1068f4f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/ammonia-confirms.3c5a4f1e7535.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/ammonia-confirms.3c5a4f1e7535.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/ammonia-confirms.3c5a4f1e7535.generation.json",
+      "plannedRequestSha256": "6339df43119ad9936e5808480972726be3bcf48a02415b7b38878018efd7edcf"
+    },
+    {
+      "id": "phosphate",
+      "parentSceneId": "phosphate",
+      "text": "Phosphate gives a yellow silver solid too, silver phosphate. So how do you keep it apart from iodide? Test phosphate in a neutral solution, not an acidified one. In acid, phosphate ions pick up hydrogen ions and stop precipitating with silver, which is also why acidifying keeps phosphate out of the halide test. So add silver nitrate to a neutral portion, and a yellow precipitate suggests phosphate. Then add dilute nitric acid. Silver phosphate dissolves, but silver iodide doesn't.",
+      "hash": "62f414812b02",
+      "textSha256": "62f414812b027c58298b5bfd5d233ada98f947075734883d3646b795a9ba783c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/phosphate.62f414812b02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/phosphate.62f414812b02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/phosphate.62f414812b02.generation.json",
+      "plannedRequestSha256": "8a1821cd279bfd3584562b28618e4038a79478120e4074fd58331f1abda49443"
+    },
+    {
+      "id": "hydroxide",
+      "parentSceneId": "hydroxide",
+      "text": "Last, hydroxide. A hydroxide solution is basic, so it turns red litmus blue. But carbonate and phosphate solutions are basic too, so rule those out first. Then warm a portion with an ammonium salt, like ammonium chloride. Hydroxide ions take a hydrogen ion from each ammonium ion and release ammonia gas. Hold damp red litmus paper at the mouth of the tube, and it turns blue.",
+      "hash": "13b8c393b34a",
+      "textSha256": "13b8c393b34a3c333b67098ccbe9401cae194cd7c5931f90053caff433ad7de0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hydroxide.13b8c393b34a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hydroxide.13b8c393b34a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/hydroxide.13b8c393b34a.generation.json",
+      "plannedRequestSha256": "71ac8ff8d57d659b0398ebae7673ac5a460d7178a5d3242b354e533b1ec939ef"
+    },
+    {
+      "id": "flowchart",
+      "parentSceneId": "flowchart",
+      "text": "Here's the full anion flowchart. Dilute acid first: a fizz for carbonate, a vinegar smell on warming for acetate. Then acidified barium for sulfate, and acidified silver for the halides, with ammonia to split them. Then neutral silver for phosphate, and the ammonium test for hydroxide, last. Each test uses a fresh portion, so one reagent can't spoil the next.",
+      "hash": "d058acf82023",
+      "textSha256": "d058acf820233086384a733f4a7c1e4c939d3578e50731a782eda26cc2efb3ce",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/flowchart.d058acf82023.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/flowchart.d058acf82023.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/flowchart.d058acf82023.generation.json",
+      "plannedRequestSha256": "75157fac0471df4d4eef759d1e8a71982d390654616518fe1412e69093ddf487"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for. Phosphate needs a separate neutral portion. Then the silver halides go white, cream, pale yellow, and ammonia dissolves them in dilute, then concentrated, then neither.",
+      "hash": "2fec82f9d2f8",
+      "textSha256": "2fec82f9d2f869228a71dbcf7136ba8a245d4c6a09149d66b7dade8e79b7de4b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/memory-aid.2fec82f9d2f8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/memory-aid.2fec82f9d2f8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/memory-aid.2fec82f9d2f8.generation.json",
+      "plannedRequestSha256": "59925631a3baa34b8ab1e5db9b1079ea3df5d6d2d306d01949c26032f99e7ded"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student tests for chloride by acidifying with hydrochloric acid, then adding silver nitrate. Explain why the conclusion isn't valid, and describe a better test. Pause here to answer.",
+      "hash": "969f0fd08f03",
+      "textSha256": "969f0fd08f0342e097ee7f8f45e88a5acbe42daad44308461657f4541c9885e3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-1.969f0fd08f03.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-1.969f0fd08f03.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-1.969f0fd08f03.generation.json",
+      "plannedRequestSha256": "7bc12e331f505a5737d159c6ee4b29aeb44ed8203b410ceaa2d18abb133e39fd"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The hydrochloric acid brought its own chloride, so white silver chloride would form whether the sample had chloride or not. Acidify a fresh portion with dilute nitric acid instead, then add silver nitrate. A white precipitate that dissolves in dilute ammonia supports chloride. Thinking any acid will do, because it only removes carbonate, is the classic slip.",
+      "hash": "bdf5bec996dc",
+      "textSha256": "bdf5bec996dc77ceb7d910ab4c4af318e67284951a370adb4e67e10abf0ecbb5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-1.bdf5bec996dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-1.bdf5bec996dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-1.bdf5bec996dc.generation.json",
+      "plannedRequestSha256": "e34c3bc847035be81f50ea4e6a703424ce14c071400010aa4310f843b39f1a11"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Separate portions of another unknown give these results. Identify the anion, and write a net ionic equation for the precipitate. Pause here to answer.",
+      "hash": "7d92883ddd1a",
+      "textSha256": "7d92883ddd1af3eec314a5a77783b44e912f864f9e9c4b5745491af01847e22b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-2.7d92883ddd1a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-2.7d92883ddd1a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/attempt-2.7d92883ddd1a.generation.json",
+      "plannedRequestSha256": "c5618afea8bdf5b564d2ad7b8c08211d70618b3bbed6bb21736a0de5bdf557cd"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "No fizz rules out carbonate, and no barium solid rules out sulfate. A cream silver solid that dissolves only in concentrated ammonia is silver bromide. So silver plus bromide gives solid silver bromide. Calling it iodide because it looked yellowish is the trap: silver iodide wouldn't dissolve, even in concentrated ammonia.",
+      "hash": "0853daccf5a4",
+      "textSha256": "0853daccf5a4cd34b258dcc82d5c359d3e1f4893778511ff176502af394e4d7e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-2.0853daccf5a4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-2.0853daccf5a4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/feedback-2.0853daccf5a4.generation.json",
+      "plannedRequestSha256": "b48e9ce11d6608ad3823c512f4f904dbdefac041daeafa17aa30c793f65c0e37"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "And our prep room bottle? With acidified barium, it gave a white precipitate, so it's copper sulfate. Cation, then anion, and you've named the salt. Next, you'll do it for real: unknown solutions, controls and safe small-scale tests.",
+      "hash": "fe63ae45a5b2",
+      "textSha256": "fe63ae45a5b2513f26e69f25a19e6ff6c0a6eb8f97b728448aa12c02e727e6e0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/handoff.fe63ae45a5b2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/handoff.fe63ae45a5b2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/handoff.fe63ae45a5b2.generation.json",
+      "plannedRequestSha256": "ef6ff830ae0e411a7bcd548435e106259039c30b13db44aeeb6ab35a81767a73"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C03b-claude-2026-10-31-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

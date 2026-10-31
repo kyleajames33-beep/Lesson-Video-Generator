@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b03/lesson.json",
+    "lessonSha256": "53267e1a85f111c9bea98c41af1f1b354840f0ccea17eabd1cef8e8bc5271b91"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; negative feedback opposes a change and eases as the variable returns; the pancreas as both receptor and control centre for glucose, insulin as a hormone, liver and muscle cells as effectors (b01 scene 7 outline). From Year 11: cellular respiration uses glucose; hormones are chemical messengers carried in the blood to target cells with receptors; proteins in membranes carry substances across. Not assumed: glycogen, glucagon, islets, beta and alpha cells, glycogenesis, glycogenolysis, glucose transporters, mmol/L.",
+    "startsWith": "Trace the response to rising glucose. The video opens: Picture a big bowl of pasta.",
+    "stopsAfter": "separating glucose (blood sugar, fuel), glycogen (stored glucose in liver and muscle) and glucagon (a hormone); stating the usual fasting range (about 4 to 6 mmol/L) and the temporary rise after a meal; naming the islets' beta cells (detect a rise, release insulin) and alpha cells (detect a fall, release glucagon) as receptor and control centre; explaining insulin's effects (muscle and fat cells take up more glucose as transporters move into the membrane; liver and muscle build glycogen, glycogenesis) and the fall in insulin as glucose returns (to a low background level); explaining glucagon's effect (the liver splits glycogen and releases glucose, glycogenolysis) when glucose falls; explaining why two opposing hormones give control in both directions; identifying the effectors (liver, muscle and fat cells, not the pancreas) and reading a graph in which insulin rises after glucose.",
+    "nextLesson": "the same kind of loop for water: how the kidneys control the water in blood (route entry bio-m8-b04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b03.md"
+  ],
+  "teaching": {
+    "task": "After a big pasta meal, glucose pours into your blood. Overnight you eat nothing for eight hours or more, yet your brain keeps using glucose. What brings blood glucose down after the meal, and what pushes it back up while you sleep?",
+    "causalExplanation": "Causes: why glucose enters cells faster (more transporters in the membrane; 4); why glucose falls and why insulin then falls (5); where overnight glucose comes from (liver glycogen split and released; 6) and why the liver, not muscle, does that (6); why two hormones beat one (7). Attention: a meal and a night's sleep the learner has lived (1), a three-word trap (2), the car analogy (7). Visual medium: one glucose strip with a moving marker across a day, two coloured loop rings, and matched cell pairs that show the store filling and emptying. Apply: construct the falling loop (10a), interpret a two-line graph (10c). Remember: \"in\" and \"gone\", and the B for beta line.",
+    "conversationalApproach": "After a big pasta meal glucose pours into your blood, then you sleep eight hours or more without eating while your brain keeps using glucose, yet a breakfast blood test is back in range, so the question is what pulls glucose down after the meal and what pushes it back up overnight. Three similar words get plain meanings first (glucose the blood sugar, glycogen the store, glucagon the hormone), with the fasting range of about four to six millimoles per litre. The pancreas is both receptor and control centre because its islets hold beta cells that detect a rise and release insulin and alpha cells that detect a fall and release glucagon. Insulin makes muscle and fat cells move extra glucose transporters into their membranes and switches on glycogenesis in the liver, so glucose leaves the blood; as glucose falls the beta cells release less insulin, which is negative feedback. Overnight, glucagon acts mainly on the liver, switching on glycogenolysis so the liver releases glucose. Driving over hills shows why two hormones are needed, insulin as the brake and glucagon as the accelerator, with the limit that both are released at some level all the time. Two exam checks follow (the pancreas signals but the liver, muscle and fat cells act; on a graph the hormone follows the glucose), then the memory aid insulin lets glucose in, glucagon acts when glucose has gone, and beta cells bring it down, and two exam questions with brief feedback.",
+    "openingDecision": "Picture a big bowl of pasta. Within an hour, glucose from that meal is pouring into your blood. Then you sleep for eight hours or more without eating, and your brain keeps using glucose all night. Yet a blood test at breakfast would usually show glucose back in its normal range. So what pulls glucose down after the meal, and what pushes it back up while you sleep?",
+    "understandingCheck": "10a is a construct item on the falling side (the route's stop and the dotpoint's first verb). 10c is an interpret item from a two-line graph (the second verb, and the 2020 Q31 trap). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B8-IQ1-01 (p 56): \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed example \"glucose\" (\"construct\" is attempt 1, \"interpret\" is attempt 2; sources: a loop diagram, a trace graph, a written description, painted tissue). B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\" (insulin and glucagon as hormonal coordination; scenes 3 to 7)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "A glucose strip owns the top of the frame from scene 2: the coded `lineGraph` drawn wide and short, y axis \"blood glucose (mmol/L)\" 3 to 9, x axis a 24-hour clock from noon to noon, a pale band from 4 to 6 marked \"usual fasting range\", and a bright marker dot that moves along the trace to show where the story is (after the meal, overnight, breakfast). Below it, the working area holds one painted plate or one pair at a time with callouts. b01's loop ring returns in two colours: a teal ring for the rising side (built in scenes 4 and 5) and an amber ring for the falling side (scene 6), shown side by side in scenes 7 and 8. Abstract glucose molecules are small coded hexagons (abstract, not plates). People are never drawn: no body outline; the brain plate stands for \"your brain\"; the meal is a tray of pasta. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "The pasta tray plate appears as a coded vessel line draws and glucose dots stream along it, then the tray dims under a moon outline as a trickle of glucose dots leaves into the brain plate and a glucose reader slides in reading back in range; the board clears to three word cards writing one per cue with their shared letters grey and endings bright, and the glucose strip draws across the top with its shaded range band; b01's loop ring thumbnail appears as the pancreas plate enters, a zoom picks out an islet and the beta and alpha cells light on their cues; a teal loop ring fills slot by slot as signal pulses travel from the pancreas to muscle, fat and liver cells and an inset moves transporters into the membrane; the strip's marker runs back into the band, the ring closes with a minus arrow and the pulses thin; the teal ring slides aside and an amber ring fills for the overnight fall as glycogen chains break back into glucose in the liver; the two rings sit side by side under a coded road line whose dot rides the hills as the brake and accelerator chips light; two numbered check chips write, the crossed pancreas effector chip lands and a mini graph shows the hormone following the glucose; the two memory lines write by hand; each attempt clears the board with its question card or graph, and its feedback underlines each given as the ring slots or graph lines light and a crossed answer chip lands; four step chips write on and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Left: `m7-chicken-pasta-tray-v1.png` at medium size (grey tag \"a pasta meal\").",
+      "teachingReason": "Hook (a pasta meal, then a night without food): Picture a big bowl of pasta.",
+      "narrationCue": "pouring into your blood / sleep for eight hours / your brain keeps using glucose / a blood test at breakfast",
+      "motionPurpose": "On the spoken cues: On \"pouring into your blood\" a short coded vessel line draws from the tray to the right and coded `GlucoseDots` stream along it, thickening. On \"sleep for eight hours\" the tray dims and slides out; a small coded moon outline and a grey clock chip \"10 pm to 7 am\" write at the upper right. On \"your",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Left: `m7-chicken-pasta-tray-v1.png` at medium size (grey tag \"a pasta meal\"). On \"pouring into your blood\" a short coded vessel line draws from the tray to the right and coded `GlucoseDots` stream along it, thickening. On \"sleep for eight hours\" the tray dims and slides out; a small coded moon outline and a grey clock chip \"10 pm to 7 am\" write at the upper right. On \"your brain keeps using glucose\" `b3a2-brain-v1.png` enters small at the centre and a slow trickle of `GlucoseDots` leaves the vessel line into it. On \"a blood test at breakfast\" `m8-cgm-reader-blank-v1.png` slides in at the right with a coded reading on its screen, \"5.1 mmol/L\", and a bright chip \"back in range\". On the question the heading writes: \"How do insulin and glucagon regulate glucose?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-words",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Three words, and a range: First, three words that sound alike.",
+      "narrationCue": "Glucose / Glycogen / Glucagon",
+      "motionPurpose": "On the spoken cues: Three cards write on one per cue, the shared letters \"GLUC\" and \"GLYC\" drawn in the same grey and the endings bright: \"glucose: sugar in the blood, fuel\" with a single coded hexagon; \"glycogen: stored chains of glucose (liver, muscle)\" with a short branched chain of hexagons; \"glucagon: a hormone\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Three cards write on one per cue, the shared letters \"GLUC\" and \"GLYC\" drawn in the same grey and the endings bright: \"glucose: sugar in the blood, fuel\" with a single coded hexagon; \"glycogen: stored chains of glucose (liver, muscle)\" with a short branched chain of hexagons; \"glucagon: a hormone\" with a small coded `SignalPulse` dot. On \"glycogen is the store, and glucagon is the messenger\" the two words pulse together and a grey tag writes \"store ≠ messenger\"; the three cards then shrink to a row at the lower left and dim. On \"millimoles per litre\" the **glucose strip** draws across the top: y axis \"blood glucose (mmol/L)\" 3 to 9, x axis \"time\" from \"noon\" to \"noon next day\", with a grey gloss \"how much glucose is dissolved in each litre of blood\". On \"four to six\" a pale teal band fills from 4 to 6, label \"usual fasting range\". On \"rises for a while\" the trace draws a peak to about 7.5 an hour after a marker \"pasta (1 pm)\", then falls back into the band; a grey tag \"after a meal: often about 7 to 8, then back\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "islets",
+      "visualDecision": "adjust",
+      "visualReference": "the strip stays at the top, dimmed.",
+      "teachingReason": "The pancreas, sensor and switch: Earlier in this module, you saw that the pancreas is both the receptor and the control centre for glucose.",
+      "narrationCue": "islets / Beta cells / insulin / Alpha cells",
+      "motionPurpose": "On the spoken cues: b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On \"Most of the pancreas makes digestive enzymes\" a grey tag \"most tissue: digestive enzymes into the gut\". On \"tiny",
+      "motionRole": "explain",
+      "onScreenChange": "the strip stays at the top, dimmed. b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On \"Most of the pancreas makes digestive enzymes\" a grey tag \"most tissue: digestive enzymes into the gut\". On \"tiny clusters\" a `scribbleEllipse` circles a small patch of the plate and a `Cam` zoom carries the view into new `m8-pancreatic-islet-v1.png` (an islet in surrounding tissue, with a capillary); grey tag \"islet of Langerhans, drawn far larger than real\"; label \"islet: hormone-making cells\". On \"Beta cells\" a callout to two or three of the teal cells (beta cells are scattered through the human islet, so the callout picks cells, not a region; Revision 2), label \"beta cells: detect a rise → insulin\"; coded teal `SignalPulse` dots leave them into the capillary on \"straight into the blood\". On \"Alpha cells\" a callout to two or three of the amber cells, mixed among the teal ones, label \"alpha cells: detect a fall → glucagon\"; amber dots leave into the capillary. On \"senses the change and sends the signal\" the loop ring thumbnail's bracketed slots pulse. At most three bright items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "insulin",
+      "visualDecision": "adjust",
+      "visualReference": "the strip's marker dot sits on the rising part after \"pasta (1 pm)\".",
+      "teachingReason": "Insulin: let glucose in, and store it: Back to the pasta.",
+      "narrationCue": "glycogenesis",
+      "motionPurpose": "On the spoken cues: A teal `LoopRing` starts drawing small at the right: stimulus slot \"blood glucose rises\", receptor and control centre slot \"beta cells (pancreas)\" lit. Working area: on \"cells all over the body\" a teal `SignalPulse` runs along a coded vessel line. On \"muscle and fat cells\" new matched plate",
+      "motionRole": "explain",
+      "onScreenChange": "the strip's marker dot sits on the rising part after \"pasta (1 pm)\". A teal `LoopRing` starts drawing small at the right: stimulus slot \"blood glucose rises\", receptor and control centre slot \"beta cells (pancreas)\" lit. Working area: on \"cells all over the body\" a teal `SignalPulse` runs along a coded vessel line. On \"muscle and fat cells\" new matched plate `m8-muscle-cell-transporters-inside-v1.png` appears (a muscle fibre section with transporter proteins held in small vesicles inside); grey tag \"fat cells respond the same way\". On \"binds to receptors\" a callout to the receptor on the surface, label \"insulin receptor\". On \"moves extra glucose transporters ... into its membrane\" the plate cross-fades to `m8-muscle-cell-transporters-membrane-v1.png` (vesicles fused, transporters in the membrane), label \"glucose transporters in the membrane\" (grey tag \"GLUT4\"). On \"glucose moves in faster\" `GlucoseDots` from the vessel line pass through the transporters into the cell. On \"In the liver\" new `m8-liver-v1.png` enters small at the left with a callout into new `m8-liver-cell-glycogen-low-v1.png`, which cross-fades on \"joined into chains and stored\" to `m8-liver-cell-glycogen-full-v1.png` (many glycogen granules), while coded hexagons link into a short chain beside it; gloss \"glycogenesis: building glycogen\". The teal ring's effector slot fills: \"muscle, fat and liver cells\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "insulin-eases",
+      "visualDecision": "new",
+      "visualReference": "the strip's marker dot runs down the falling side of the peak into the band.",
+      "teachingReason": "Negative feedback, and insulin eases: Glucose leaves the blood, so blood glucose falls back towards its normal range.",
+      "narrationCue": "negative feedback / release less insulin / doesn't destroy glucose",
+      "motionPurpose": "On the spoken cues: The teal ring completes: response slot \"glucose taken up and stored, level falls\", return arrow with a minus sign on \"negative feedback\". On \"release less insulin\" the teal `SignalPulse` dots on the vessel line thin out; a small coded \"insulin\" bar beside the receptor slot falls from tall to a low",
+      "motionRole": "explain",
+      "onScreenChange": "the strip's marker dot runs down the falling side of the peak into the band. The teal ring completes: response slot \"glucose taken up and stored, level falls\", return arrow with a minus sign on \"negative feedback\". On \"release less insulin\" the teal `SignalPulse` dots on the vessel line thin out; a small coded \"insulin\" bar beside the receptor slot falls from tall to a low bar that stays above zero, tag \"low background level\". On \"doesn't destroy glucose\" a grey chip \"insulin destroys glucose\" takes a scribble cross, and two small grey arrows split from a hexagon: \"used in respiration\" and \"stored as glycogen\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "glucagon",
+      "visualDecision": "adjust",
+      "visualReference": "the teal ring slides to the left and dims.",
+      "teachingReason": "Glucagon: when glucose has gone: Now the night.",
+      "narrationCue": "glycogenolysis",
+      "motionPurpose": "On the spoken cues: The strip's marker dot moves past the moon outline at \"10 pm\"; the trace drifts down towards the lower edge of the band. An amber `LoopRing` draws at the right: stimulus \"blood glucose falls\", receptor and control centre \"alpha cells (pancreas)\" with the islet plate thumbnail. On \"release more",
+      "motionRole": "explain",
+      "onScreenChange": "the teal ring slides to the left and dims. The strip's marker dot moves past the moon outline at \"10 pm\"; the trace drifts down towards the lower edge of the band. An amber `LoopRing` draws at the right: stimulus \"blood glucose falls\", receptor and control centre \"alpha cells (pancreas)\" with the islet plate thumbnail. On \"release more glucagon\" amber `SignalPulse` dots run along a vessel line to `m8-liver-v1.png`, now at the centre. On \"glycogenolysis\" the callout into the liver cell shows `m8-liver-cell-glycogen-full-v1.png`, which cross-fades to `m8-liver-cell-glycogen-low-v1.png` as coded hexagons break off a chain and leave the cell into the vessel; gloss \"glycogenolysis: splitting glycogen\". A small grey tag beside the liver: \"longer fasts: the liver also makes new glucose (gluconeogenesis)\". On \"rises back into range\" the trace levels inside the band and the amber ring completes with its minus arrow. On \"muscle keeps its glucose for itself\" `m8-skeletal-muscle-v1.png` appears small and grey with a closed coded arrow loop \"glycogen → glucose → used here\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "two-hormones",
+      "visualDecision": "new",
+      "visualReference": "the two rings sit side by side, teal at the left and amber at the right, sharing the pancreas thumbnail between them.",
+      "teachingReason": "Two hormones, one balance: Why two hormones?",
+      "narrationCue": "downhill ... brake / brake / uphill ... accelerator / Insulin works like the brake / glucagon like the accelerator / only one pedal",
+      "motionPurpose": "On the spoken cues: Above them a coded road outline (a simple wavy line, abstract, no car body or driver: a small coded dot rides it) draws, with a grey \"speed\" readout. On \"downhill ... brake\" the dot speeds and a coded pedal icon \"brake\" lights teal; on \"uphill ... accelerator\" the dot slows and a pedal",
+      "motionRole": "explain",
+      "onScreenChange": "the two rings sit side by side, teal at the left and amber at the right, sharing the pancreas thumbnail between them. Above them a coded road outline (a simple wavy line, abstract, no car body or driver: a small coded dot rides it) draws, with a grey \"speed\" readout. On \"downhill ... brake\" the dot speeds and a coded pedal icon \"brake\" lights teal; on \"uphill ... accelerator\" the dot slows and a pedal \"accelerator\" lights amber. On \"Insulin works like the brake\" the teal ring pulses with a label \"insulin: brake on rising glucose\"; on \"glucagon like the accelerator\" the amber ring pulses, \"glucagon: accelerator when glucose falls\". On \"only one pedal\" the amber pedal greys out and the dot sags on the next uphill. On \"both hormones are released at some level all the time\" the road fades and two coded level bars, \"insulin\" and \"glucagon\", stand side by side, both above zero, then tilt against each other like a balance; grey tag \"the ratio shifts\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "exam-checks",
+      "visualDecision": "new",
+      "visualReference": "the two rings stay small.",
+      "teachingReason": "Two exam checks: Two things examiners look for.",
+      "narrationCue": "doesn't change blood glucose itself / on a graph / insulin made glucose rise",
+      "motionPurpose": "On the spoken cues: Two numbered chips write at the right: \"1. Pancreas signals; liver, muscle, fat cells act.\" and \"2. Hormone follows glucose.\" On \"doesn't change blood glucose itself\" a grey chip \"effector: pancreas\" takes a scribble cross and both rings' effector slots pulse. On \"on a graph\" the strip at the top",
+      "motionRole": "explain",
+      "onScreenChange": "the two rings stay small. Two numbered chips write at the right: \"1. Pancreas signals; liver, muscle, fat cells act.\" and \"2. Hormone follows glucose.\" On \"doesn't change blood glucose itself\" a grey chip \"effector: pancreas\" takes a scribble cross and both rings' effector slots pulse. On \"on a graph\" the strip at the top gains a second, thin teal line labelled \"insulin\" (teaching curve) that rises about 15 minutes after the glucose line and peaks just after it; a small coded bracket marks the lag \"glucose first, insulin after\". On \"insulin made glucose rise\" a grey chip \"insulin made glucose rise\" takes a scribble cross. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears to two handwritten lines, large: \"Insulin lets glucose **in**.\" beside the teal ring thumbnail and \"Glucagon: glucose has **gone**.\" beside the amber ring thumbnail, the bold letters bright.",
+      "teachingReason": "Memory: To keep the pair straight: insulin lets glucose in.",
+      "narrationCue": "B for beta",
+      "motionPurpose": "On the spoken cues: On \"B for beta\" a third smaller line writes \"Beta cells bring it down\", the three B's underlined in teal. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to two handwritten lines, large: \"Insulin lets glucose **in**.\" beside the teal ring thumbnail and \"Glucagon: glucose has **gone**.\" beside the amber ring thumbnail, the bold letters bright. On \"B for beta\" a third smaller line writes \"Beta cells bring it down\", the three B's underlined in teal. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a missed lunch and a race)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A student eats breakfast",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a missed lunch and a race))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student eats breakfast at 7 am, skips lunch and runs a 3 km cross-country race at 2 pm. During the race, the student's blood glucose concentration begins to fall below its usual range.\" Demand: \"(a) Construct a negative feedback loop for the response that returns blood glucose to its usual range. Name the hormone involved. (3 marks) (b) Explain the role of the liver in this response. (2 marks)\". An empty five-slot ring outline sits beside the answer lines as a drawing space (no labels). No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "opposing the fall / classic mistake",
+      "motionPurpose": "On the spoken cues: As each component is spoken, its given phrase takes an amber underline (\"blood glucose concentration begins to fall\", \"skips lunch\", \"runs\") and the matching slot of the drawn ring fills with a short label: \"blood glucose falls\", \"alpha cells (pancreas) → glucagon\", \"liver: glycogen → glucose,",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. As each component is spoken, its given phrase takes an amber underline (\"blood glucose concentration begins to fall\", \"skips lunch\", \"runs\") and the matching slot of the drawn ring fills with a short label: \"blood glucose falls\", \"alpha cells (pancreas) → glucagon\", \"liver: glycogen → glucose, released\", \"blood glucose rises back\". On \"opposing the fall\" the return arrow draws with a minus sign. For (b) one answer line writes: \"liver: glycogenolysis, glucose released into blood\". On \"classic mistake\" a chip \"glucagon breaks down glucose\" writes and takes a scribble cross, with small text \"glucagon signals; liver cells break down glycogen\" (Revision 2). Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (glucose and insulin after a drink)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. After an overnight fast, a healthy adult",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (glucose and insulin after a drink))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"After an overnight fast, a healthy adult drank a solution containing 75 g of glucose at time 0. Blood glucose and blood insulin were measured for 180 minutes.\" The coded `lineGraph` with two y axes: left \"blood glucose (mmol/L)\" 0 to 10, right \"blood insulin (mU/L)\" 0 to 70; x axis \"time (min)\" 0 to 180. Teal glucose line: 5.0 (0), 7.8 (30), 7.0 (60), 6.0 (90), 5.2 (120), 4.8 (150), 4.9 (180). Amber insulin line: 8 (0), 55 (30), 50 (60), 35 (90), 20 (120), 10 (150), 9 (180). A small grey tag \"teaching data\". Demand: \"(a) Explain the change in blood insulin between 0 and 60 minutes. (2 marks) (b) Explain why blood glucose returned to about its starting level by 120 minutes, with reference to negative feedback. (3 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Glucose rose / insulin rose within thirty minutes / glucose fell / released less insulin / both lines settled / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"Glucose rose\" the given \"drank a solution containing 75 g of glucose\" takes an amber underline and the teal line's rise brightens. On \"insulin rose within thirty minutes\" the amber line's rise to 55 brightens and a marker writes \"insulin follows glucose\". On \"glucose fell\" the falling part of",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Glucose rose\" the given \"drank a solution containing 75 g of glucose\" takes an amber underline and the teal line's rise brightens. On \"insulin rose within thirty minutes\" the amber line's rise to 55 brightens and a marker writes \"insulin follows glucose\". On \"glucose fell\" the falling part of the teal line brightens. On \"released less insulin\" the falling part of the amber line brightens; on \"both lines settled\" both lines from 120 to 180 brighten, and the given \"healthy adult\" takes a thin grey underline. A mini teal loop ring thumbnail lights slot by slot beside the graph. On \"classic mistake\" a chip \"the pancreas took up the glucose\" writes and takes a scribble cross, with small text \"pancreas signals; liver, muscle and fat cells take it up\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "four step chips write on, one per cue: \"which way did glucose move?\", \"which cells detected it?\", \"which hormone?\", \"what did the effectors do?\".",
+      "teachingReason": "Decision rule and handoff: So for any glucose question, ask which way glucose moved, which cells detected it, which hormone they released, and what the liver or other cells then did.",
+      "narrationCue": "So for any glucose question, ask which way",
+      "motionPurpose": "On the spoken cues: The two rings return small above them. A grey chip at the lower left: \"Later: when the loop fails (diabetes)\". A \"Next\" chip slides in at the lower right: \"Next: How does the kidney regulate water balance?\" with a small `m8-kidney-nephron-v1.png` thumbnail. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on, one per cue: \"which way did glucose move?\", \"which cells detected it?\", \"which hormone?\", \"what did the effectors do?\". The two rings return small above them. A grey chip at the lower left: \"Later: when the loop fails (diabetes)\". A \"Next\" chip slides in at the lower right: \"Next: How does the kidney regulate water balance?\" with a small `m8-kidney-nephron-v1.png` thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b03-learning-review.md",
+      "sha256": "3d260282845358256f73bb3c1251d63301323caaff68b53d4d84b7a75e4dc7fa"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b03-claude-science-check.md",
+      "sha256": "7ca98ae83e89a367cdf4445852b7928e9bf00dd7d6e497d50da1682ca0fdb933"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8p02/measured/lesson.json",
+    "lessonSha256": "6780ed1b7f19bd101810cdd4f032b06cf33dc45255ceafb6fbc60913ee78054d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m8-c02 (see Scope); chem-m8-c01 (Ag⁺ + Cl⁻ → AgCl, white); skills-s07 (validity, reliability, accuracy; word, feature, fix); chem-m7-p05 (spread against gap; a dry, pure product weighed correctly gives a correct result; over 100% means extra mass); Year 11 (moles, molar mass, percentage).",
+    "startsWith": "Prepare and precipitate an ion sample. The video opens: Here's a strange first step for an analysis. Weigh out half a gram of dried potassium sulfate. You already know how much sulfate is in it, because you know its formula.",
+    "stopsAfter": "stating the aim and variables of a recovery investigation; calculating the expected precipitate mass from a known sample; carrying out the method in order with quantities (acidify, hot, excess barium, completeness check, digest, pre-weighed paper, rinse, wash until the washings test clear, look at the filtrate, oven, desiccator, constant mass); calculating percentage recovery; judging reliability, accuracy and validity with evidence; writing the risk rows for barium chloride, dilute hydrochloric acid, silver nitrate, hot apparatus and heavy-metal waste.",
+    "nextLesson": "practice questions on precipitation titrations and gravimetric analysis (route chem-m8-g01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-p02.md"
+  ],
+  "teaching": {
+    "task": "Why would a chemist weigh out a sample whose sulfate content is already known, and analyse it anyway? How do you carry out a gravimetric sulfate analysis safely, and use recovery to judge whether the method can be trusted?",
+    "causalExplanation": "(1) a known sample tests the method (1); (2) recovery, the aim and the variables (2); (3) the expected mass from the formula (3); (4) prepare, acidify, heat, add excess Ba²⁺ slowly, check completeness (4); (5) digest or not, the prediction (5); (6) filter, rinse, wash, test the washings, look at the filtrate (6); (7) dry to constant mass and weigh (7); (8) recovery from the means (8); (9) reliable within each set, the gap bigger than the spread; accuracy against the known value; the cloudy filtrate shows the loss; repeats can't recover lost crystals (9); (10) the comparison is valid because only digestion changed, and the method measures only sulfate; the standard must be pure and dry (10); (11) hazards and controls, waste (11); memory aid (12); attempts (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "the strange first step is weighing out half a gram of dried potassium sulfate whose sulfate content you already know from its formula, so the practical asks why analyse it anyway, how to carry out a gravimetric sulfate analysis safely, and how recovery shows whether the method can be trusted. The aim asks whether digesting the precipitate improves the recovery, the mass of barium sulfate collected as a percentage of the mass you should get, with digestion as the independent variable and recovery as the dependent. The expected mass comes first: moles of potassium sulfate, one sulfate per formula unit and one barium sulfate per sulfate, a target of 0.670 g. The method runs in order with quantities: dissolve, acidify, heat nearly to boiling, add excess barium chloride slowly and check that a drop more gives no new cloudiness. Set A is not digested and set B digests for about thirty minutes, both cool before filtering through a pre-weighed fine paper, and the washings are tested with silver nitrate until they stay clear; set A's filtrate is faintly cloudy and set B's is clear. Each paper dries to constant mass. Set B recovers about 99% and set A about 94%; the trials agree within each set, so the gap is real, and the cloudy filtrate shows set A's systematic loss, which repeats cannot fix. Validity rests on one changed variable, a method that weighs only sulfate and a pure, dry known sample. The risk table contrasts barely soluble barium sulfate with toxic dissolved barium chloride, which the teacher prepares and dispenses, and sends filtrate and washings to heavy-metal waste. The memory aid is recovery equals found over expected times a hundred: under a hundred means something was lost, over means something extra was weighed. Two exam questions follow with brief feedback.",
+    "openingDecision": "Here's a strange first step for an analysis. Weigh out half a gram of dried potassium sulfate. You already know how much sulfate is in it, because you know its formula. So why analyse it? To test your method. If it recovers all the sulfate you put in, you can trust it on a real sample. If not, you'll see how much it loses.",
+    "understandingCheck": "(A1) \"To check a gravimetric method for sulfate, a student dissolved 0.350 g of pure, dry anhydrous sodium sulfate, Na₂SO₄, in water, acidified the solution and added excess barium chloride solution. The barium sulfate precipitate was filtered, washed and dried to constant mass. Its mass was 0.561 g. (a) Calculate the percentage recovery of sulfate. (b) State what this result suggests about the accuracy of the method. M(Na₂SO₄) = 142.04 g mol⁻¹; M(BaSO₄) = 233.39 g mol⁻¹.\" Answer: 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol; 1 : 1, so expected BaSO₄ = 2.464 × 10⁻³ × 233.39 = 0.5751 g; recovery = 0.561 ÷ 0.5751 × 100 = 97.5% (a guard digit kept; 0.561 ÷ 0.575 would give 97.6%); close to 100% but a little low, so the method loses a small amount of sulfate (slightly low, not exact). Crossed mistake: \"0.561 ÷ 0.350 × 100 = 160%\" (masses of different substances divided directly). (A2) \"Two sets of students tested whether digestion improves the recovery of barium sulfate. Set C digested the precipitate for 30 minutes and washed it with three portions of warm distilled water. Set D did not digest the precipitate and washed it with one portion. Both sets were filtered at room temperature. Set C's mean recovery was higher than Set D's. Explain why this comparison is not valid, and propose a change that fixes the problem.\" Answer: two variables changed (digestion and washing); less washing can leave dried-on impurities that add mass (raising D's recovery), so the difference can't be put down to digestion alone; fix: wash both sets the same way, until a few drops of the washings stay clear with silver nitrate. Crossed mistake: \"repeat each set more times\" (reliability, not validity; every repeat still has unequal washing; s07's crossed habit).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video is the investigation for gravimetric analysis. The method's reasons and the calculation were chem-m8-c02; precipitation titrations were chem-m8-c01 (processed as data; p01 is cut); practice with both is chem-m8-g01. this video prepares students to carry out and evaluate the investigation; it does not claim that watching it is conducting it. It starts by preparing and precipitating a sulfate sample, and stops at filtering, drying, weighing and evaluating recovery. It teaches: why an analyst runs the method on a sample of known composition first (a check standard, pure dried potassium sulfate); percentage recovery (mass collected as a percentage of the mass expected); the aim (does digesting the precipitate improve recovery?) with independent, dependent and controlled variables; the expected mass from the formula; the hands-on quantities and order (dissolve, acidify, heat, add excess barium chloride slowly with stirring, the completeness drop, digest or not, filter through pre-weighed fine paper, rinse, wash with warm water, test the washings with silver nitrate until they stay clear, look at the filtrate, dry, desiccator, weigh to constant mass); reading three trials per set for reliability (spread against gap); judging accuracy against the known value, with the cloudy filtrate as evidence of the cause; validity of the comparison and of the method; the risk table and disposal. Recalled, not re-taught: each method step's reason and the calculation chain (c02), AgCl as a white precipitate (c01, c03b later), validity, reliability, accuracy and word, feature, fix (s07). Not here: ignition in a crucible, co-precipitation mechanisms, the chloride version (g01 practises AgCl data), titration (c01), blank corrections."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m8-c02: sulfate yellow-green; barium pale violet; chloride green; silver pale grey; precipitate white; givens and units navy; the current answer bright; earlier lines dim. The two sets keep fixed colours across chips, lanes, dots and gauges (set A grey-blue, set B teal). Hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p05): top-left the short task line; the centre holds the apparatus plate; the right third holds the current card (method step, variables, calculation board, results, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (weighing, pouring, stirring, rinsing and moving the watch glass are coded motion; the tongs are a coded outline); apparatus as painted plates listed by filename, never stretched; at most about three bright text items, earlier lines dim; the calculation as a separate task, equation and grouped givens, one stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card in the attempts, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications, school rules to be checked against NSW Chemical Safety in Schools; Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.",
+    "transitionPlan": "The heading writes on over the analytical balance with a 0.500 g readout and a known formula chip, and c02's method strip writes small along the bottom; the aim line and recovery formula write under the recovery gauge as the variables card fills one row per cue; the board clears to c02's calculation board, which sets up its task strip, equation strip and grouped givens, then writes one stage line per cue to the 0.670 g target; the method strip lights each step as the beaker plate cross-fades to the hotplate plate and coded barium drops fall; the method strip forks into set A and set B lanes, set B gaining a thirty minute clock arc before both lanes join at cooling; the filter funnel and wash bottle plates run the rinse and washings test, then the filtrate pair shows cloudy against clear; the drying oven, desiccator and balance draw as a small weighing loop with two agreeing readings; the results table writes row by row and the gauge fills to each set's recovery; the trial dot strip brackets each set's spread and the gap between the means; the validity card writes one row per cue with small thumbnails; the risk table shows one spoken row at a time; the memory line writes over the gauge as its lost and extra regions pulse; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines write and a crossed trap chip lands; the four-row decision card lights on cue and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Gravimetric practical: does the method get it all?\".",
+      "teachingReason": "Hook (a sample whose answer you know): Here's a strange first step for an analysis.",
+      "narrationCue": "method / loses",
+      "motionPurpose": "On the spoken cues: `m6-analytical-balance-v1.png` medium at the centre; a coded readout over the display \"0.500 g\" and a navy tag on the small beaker \"K₂SO₄, dried\" (grey chip \"known formula: known sulfate\"). On \"method\" c02's method strip writes small and dim along the bottom (nine labels; grey chip \"c02: the method\"), and an arrow runs from the balance to the end of the strip. On \"loses\" the recovery gauge draws at the right with",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Gravimetric practical: does the method get it all?\". `m6-analytical-balance-v1.png` medium at the centre; a coded readout over the display \"0.500 g\" and a navy tag on the small beaker \"K₂SO₄, dried\" (grey chip \"known formula: known sulfate\"). On \"method\" c02's method strip writes small and dim along the bottom (nine labels; grey chip \"c02: the method\"), and an arrow runs from the balance to the end of the strip. On \"loses\" the recovery gauge draws at the right with its 100% line (\"all the sulfate you put in\") and a \"?\" fill. After \"loses\" a small grey handwritten line writes under the gauge: \"known in → known out?\" Bright at the end: the heading, the balance, the gauge. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aim-variables",
+      "visualDecision": "new",
+      "visualReference": "task line \"Aim: does digestion improve recovery?\".",
+      "teachingReason": "The aim and the variables: The question: does digesting the precipitate improve the recovery of sulfate?",
+      "narrationCue": "digestion / recovery / same",
+      "motionPurpose": "On the spoken cues: Under the gauge a grey formula chip writes: \"% recovery = mass collected ÷ expected mass × 100\". The variables card writes in the right zone: on \"digestion\" \"Independent: digestion (set A: none; set B: about 30 min warm)\" with the two set colour chips (grey chip \"c02: digestion grows bigger crystals\"); on \"recovery\" \"Dependent: % recovery of BaSO₄\"; on \"same\" \"Controlled:\" with its list writing one item at a time",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Aim: does digestion improve recovery?\". Under the gauge a grey formula chip writes: \"% recovery = mass collected ÷ expected mass × 100\". The variables card writes in the right zone: on \"digestion\" \"Independent: digestion (set A: none; set B: about 30 min warm)\" with the two set colour chips (grey chip \"c02: digestion grows bigger crystals\"); on \"recovery\" \"Dependent: % recovery of BaSO₄\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds (the list carries what the cut clause said): \"0.500 g K₂SO₄\", \"1 mL of 2 mol/L HCl\", \"20 mL of 0.20 mol/L BaCl₂\", \"same fine filter paper\", \"same filtration temperature (room temperature)\", \"same washing\", \"same drying, to constant mass\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "expected-mass",
+      "visualDecision": "new",
+      "visualReference": "the board clears to c02's calculation board.",
+      "teachingReason": "The expected mass: First, the mass you should get.",
+      "narrationCue": "moles / target",
+      "motionPurpose": "On the spoken cues: Task strip: \"Expected mass of BaSO₄ from the known sample\". Equation strip: \"K₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2KCl(aq)\". Givens group (navy): \"K₂SO₄: 0.500 g (dried)\"; molar masses as a second small block: \"M(K₂SO₄) = 174.26, M(BaSO₄) = 233.39 g/mol\". Stage line 1: \"n(K₂SO₄) = 0.500 ÷ 174.26\"; on \"moles\" \"= 2.87 × 10⁻³ mol\" (bright). Line 1 dims. On \"one sulfate\" line 2: \"1 : 1, so n(BaSO₄) = 2.87 × 10⁻³ mol\" with",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to c02's calculation board. Task strip: \"Expected mass of BaSO₄ from the known sample\". Equation strip: \"K₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2KCl(aq)\". Givens group (navy): \"K₂SO₄: 0.500 g (dried)\"; molar masses as a second small block: \"M(K₂SO₄) = 174.26, M(BaSO₄) = 233.39 g/mol\". Stage line 1: \"n(K₂SO₄) = 0.500 ÷ 174.26\"; on \"moles\" \"= 2.87 × 10⁻³ mol\" (bright). Line 1 dims. On \"one sulfate\" line 2: \"1 : 1, so n(BaSO₄) = 2.87 × 10⁻³ mol\" with \"1 : 1\" glowing on the equation strip. Line 3: \"m(BaSO₄) = 2.87 × 10⁻³ × 233.39\"; on \"target\" \"= 0.670 g\" (bright), and the gauge's 100% line relabels \"expected 0.670 g\". A grey chip \"c02: mass → moles → ratio → target\" sits beside the lines. Bright at the end: 0.670 g and the gauge label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "prepare-precipitate",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Prepare and precipitate: Dissolve the potassium sulfate in about a hundred and fifty millilitres of distilled water, add a little dilute hydrochloric acid, as you would for a real sample, and heat it until it's nearly boiling.",
+      "narrationCue": "boiling / excess / complete",
+      "motionPurpose": "On the spoken cues: Task line \"Prepare and precipitate\". The method strip lights \"dissolve\" and \"acidify\". `m6-beaker-v1.png` at the centre with a coded clear fill (tag \"about 150 mL distilled water + 0.500 g K₂SO₄\"); coded drops of dilute HCl fall (grey chip \"c02: acid stops BaCO₃ forming\"). On \"boiling\" the beaker cross-fades to the new `m8-beaker-hotplate-clear-v1.png` (aligned to the settled pair below; tag \"hotplate: just below",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Prepare and precipitate\". The method strip lights \"dissolve\" and \"acidify\". `m6-beaker-v1.png` at the centre with a coded clear fill (tag \"about 150 mL distilled water + 0.500 g K₂SO₄\"); coded drops of dilute HCl fall (grey chip \"c02: acid stops BaCO₃ forming\"). On \"boiling\" the beaker cross-fades to the new `m8-beaker-hotplate-clear-v1.png` (aligned to the settled pair below; tag \"hotplate: just below boiling\"). On \"slowly\" \"precipitate\" lights; a coded pour from a `m6-measuring-cylinder-v1.png` thumbnail (tag \"20 mL of 0.20 mol/L BaCl₂\") runs in short pulses while a coded glass rod circles (no hands). On \"excess\" a small navy chip writes: \"Ba²⁺ 4.0 × 10⁻³ mol > SO₄²⁻ 2.87 × 10⁻³ mol\". The beaker cross-fades to `m8-baso4-beaker-hotplate-v1.png` (new; white precipitate settled). On \"complete\" one coded test drop falls into the clear upper layer and a chip writes \"no new cloudiness: complete\" (green tick). Bright at the end: the plate, the excess chip, the tick. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "digest-split",
+      "visualDecision": "adjust",
+      "visualReference": "the set split draws: the method strip forks after \"precipitate\".",
+      "teachingReason": "Digest, or not: Now the sets split.",
+      "narrationCue": "minutes / temperature / crystals / filter paper",
+      "motionPurpose": "On the spoken cues: Upper lane (grey-blue) \"set A: not digested\"; lower lane (teal) \"set B: digest about 30 min, watch glass on\", each with a small thumbnail of `m8-baso4-beaker-hotplate-v1.png`. On \"minutes\" set B's thumbnail gains a coded clock arc \"30 min\" and a soft warm glow. On \"temperature\" both lanes run into one shared chip, \"both: cool to room temperature, then filter\" (the controlled filtration temperature), and the warm",
+      "motionRole": "explain",
+      "onScreenChange": "the set split draws: the method strip forks after \"precipitate\". Upper lane (grey-blue) \"set A: not digested\"; lower lane (teal) \"set B: digest about 30 min, watch glass on\", each with a small thumbnail of `m8-baso4-beaker-hotplate-v1.png`. On \"minutes\" set B's thumbnail gains a coded clock arc \"30 min\" and a soft warm glow. On \"temperature\" both lanes run into one shared chip, \"both: cool to room temperature, then filter\" (the controlled filtration temperature), and the warm glow fades. On \"crystals\" c02's crystal growth zoom opens small beside each lane: set A many fine crystals, set B fewer, larger ones (grey chip \"c02: small crystals dissolve, bigger ones grow\"). On \"filter paper\" a dotted mesh line slides under both zooms; small crystals in lane A slip through it, lane B's sit on it; a grey tag \"prediction: B recovers more\". Bright at the end: the two lanes and the mesh. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "filter-wash-check",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Filter, wash and check: Both sets filter through a fine paper that's already been dried and weighed.",
+      "narrationCue": "through / clear / cloudy",
+      "motionPurpose": "On the spoken cues: Task line \"Filter, wash, check\". The method strip lights \"filter\" and \"wash\". `m8-filter-funnel-white-ppt-v1.png` at the centre-left (tag \"fine filter paper: dried and weighed first, on the tared watch glass\"; grey chip \"c02: tare\"). `m6-wash-bottle-v1.png` small beside it; a coded jet arc rinses the beaker thumbnail, then washes the solid on the paper (tag \"warm distilled water, small portions\"). On \"silver",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Filter, wash, check\". The method strip lights \"filter\" and \"wash\". `m8-filter-funnel-white-ppt-v1.png` at the centre-left (tag \"fine filter paper: dried and weighed first, on the tared watch glass\"; grey chip \"c02: tare\"). `m6-wash-bottle-v1.png` small beside it; a coded jet arc rinses the beaker thumbnail, then washes the solid on the paper (tag \"warm distilled water, small portions\"). On \"silver nitrate\" `p03-dropper-bottle-v1.png` appears small at the right with a coded tag \"AgNO₃(aq), 0.1 mol/L\"; a coded drop falls into `m5x-ppt-agcl-white-v1.png` (tag \"early washings: white AgCl, chloride still there\"; grey chip \"c01: Ag⁺ + Cl⁻ → AgCl\"). On \"clear\" the tube cross-fades to `m5x-no-ppt-clear-v1.png` (aligned pair; tag \"later washings: clear, washed enough\"). On \"filtrate\" a gloss tag writes at the flask: \"filtrate: the liquid that ran through\". On \"cloudy\" the funnel plate splits into two thumbnails: set A `m8-filter-funnel-cloudy-filtrate-v1.png` (new; tag \"set A: faintly cloudy\") and set B `m8-filter-funnel-white-ppt-v1.png` (tag \"set B: clear\"). Bright at the end: the clear test tube and the two filtrates. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "constant-mass",
+      "visualDecision": "adjust",
+      "visualReference": "the method strip lights \"dry\", \"cool\", \"weigh\". c02's weighing loop draws small: `m8-drying-oven-v1.png` (tag \"about 110 °C\"), `m8-desiccator-v1.png`, `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height; the tare readout \"0.000 g\" shows first with its tag \"watch glass tared\" (c02).",
+      "teachingReason": "Dry to constant mass: Dry each paper at about a hundred and ten degrees, cool it in a desiccator, and weigh it on the tared watch glass until two weighings in a row agree.",
+      "narrationCue": "agree",
+      "motionPurpose": "On the spoken cues: On \"agree\" two readings bracket under the balance (example: \"1.574 g\", \"1.574 g\"; tag \"constant mass\"). Straight after \"agree\" (no spoken cue) a navy line writes: \"1.574 − 0.910 (paper) = 0.664 g BaSO₄\" (grey tag \"set B, trial 1\"). Bright at the end: the loop and the subtraction line.",
+      "motionRole": "explain",
+      "onScreenChange": "the method strip lights \"dry\", \"cool\", \"weigh\". c02's weighing loop draws small: `m8-drying-oven-v1.png` (tag \"about 110 °C\"), `m8-desiccator-v1.png`, `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height; the tare readout \"0.000 g\" shows first with its tag \"watch glass tared\" (c02). On \"agree\" two readings bracket under the balance (example: \"1.574 g\", \"1.574 g\"; tag \"constant mass\"). Straight after \"agree\" (no spoken cue) a navy line writes: \"1.574 − 0.910 (paper) = 0.664 g BaSO₄\" (grey tag \"set B, trial 1\"). Bright at the end: the loop and the subtraction line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results-recovery",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The results and the recovery: Three trials in each set.",
+      "narrationCue": "percent",
+      "motionPurpose": "On the spoken cues: Task line \"Results\". A results table writes in the right zone (grey tag \"example data\"): rows \"set A (no digestion)\" and \"set B (digested)\"; columns \"trial 1, 2, 3, mean (g BaSO₄)\"; values 0.630, 0.638, 0.627, mean 0.632; 0.664, 0.661, 0.666, mean 0.664. A small grey row: \"filtrate: A faintly cloudy; B clear\". On \"Divide\" a calculation line writes: \"set B: 0.664 ÷ 0.670 × 100\"; on \"percent\" \"= 99.1%\" (bright) and",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Results\". A results table writes in the right zone (grey tag \"example data\"): rows \"set A (no digestion)\" and \"set B (digested)\"; columns \"trial 1, 2, 3, mean (g BaSO₄)\"; values 0.630, 0.638, 0.627, mean 0.632; 0.664, 0.661, 0.666, mean 0.664. A small grey row: \"filtrate: A faintly cloudy; B clear\". On \"Divide\" a calculation line writes: \"set B: 0.664 ÷ 0.670 × 100\"; on \"percent\" \"= 99.1%\" (bright) and the gauge fills teal to 99.1%. On the second \"percent\" \"set A: 0.632 ÷ 0.670 × 100 = 94.3%\" writes and a grey-blue fill draws under the teal one at 94.3%. Bright at the end: the two gauge fills and 99.1%. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reliable-accurate",
+      "visualDecision": "new",
+      "visualReference": "task line \"Reliable?",
+      "teachingReason": "Reliable, and accurate?: Reliable?",
+      "narrationCue": "spread / paper / back",
+      "motionPurpose": "On the spoken cues: Accurate?\". The trial dot strip draws at the centre: a 0.620 to 0.675 g scale, three grey-blue dots near 0.632 and three teal dots near 0.664, each mean a short bar, and a dashed navy line at 0.670 g \"expected\". Reliability card header writes: \"Reliability: repeats agree?\"; brackets span each cluster (\"A: spread 0.011 g\", \"B: spread 0.005 g\") with a tick. On \"spread\" a larger bracket spans the two means (\"gap 0.032",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Reliable? Accurate?\". The trial dot strip draws at the centre: a 0.620 to 0.675 g scale, three grey-blue dots near 0.632 and three teal dots near 0.664, each mean a short bar, and a dashed navy line at 0.670 g \"expected\". Reliability card header writes: \"Reliability: repeats agree?\"; brackets span each cluster (\"A: spread 0.011 g\", \"B: spread 0.005 g\") with a tick. On \"spread\" a larger bracket spans the two means (\"gap 0.032 g: bigger than either spread\"). The reliability card dims. On \"accurate\" the accuracy card header writes: \"Accuracy: how close to the true value?\"; the teal cluster's bar pulses beside the dashed line (tag \"B: 99.1%, close\"); the grey-blue cluster gets a downward bracket to the line (tag \"A: about 6% low, every trial\"). On \"paper\" the set A filtrate thumbnail returns small beside its cluster with an arrow: \"fine crystals lost → mass ↓ → recovery ↓\" (grey chip \"c02: lost reads low\"). On \"back\" a chip writes: \"repeats can't recover lost crystals\" (grey chip \"s07: repeats help reliability, not a systematic error\"). Bright at the end: the A bracket, the filtrate evidence arrow and the repeats chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "valid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Is it valid?: Is the comparison valid?",
+      "narrationCue": "value / conditions",
+      "motionPurpose": "On the spoken cues: Task line \"Valid?\". The validity card header writes: \"Validity: does it test what it was meant to?\". Row 1 on \"Only digestion changed\": \"one variable changed: digestion\" (green; the variables card thumbnail returns small with its controlled list ticked). Row 2 on \"only sulfate\": three small green chips write one per phrase, each with a thumbnail: \"acidified: no BaCO₃\" (the HCl drops), \"washings clear: no BaCl₂",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Valid?\". The validity card header writes: \"Validity: does it test what it was meant to?\". Row 1 on \"Only digestion changed\": \"one variable changed: digestion\" (green; the variables card thumbnail returns small with its controlled list ticked). Row 2 on \"only sulfate\": three small green chips write one per phrase, each with a thumbnail: \"acidified: no BaCO₃\" (the HCl drops), \"washings clear: no BaCl₂ solution left\" (`m5x-no-ppt-clear-v1.png`), \"constant mass: no water\" (the balance thumbnail). On \"pure and dry\" a navy chip: \"known value holds only if the standard is pure and dry\" (tag \"a necessary condition\"). On \"conditions\" the aim line returns at the top with a green tick, narrowed: \"digestion → higher recovery (99.1% against 94.3%), under these conditions\". Footer, small grey: \"Validity: fair test. Reliability: repeats agree. Accuracy: close to the true value.\" Bright at the end: the narrowed aim line and the necessary-condition chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "adjust",
+      "visualReference": "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"X-ray scans\" a grey contrast chip \"BaSO₄(s): barely dissolves | BaCl₂(aq): dissolved barium, toxic\" (tag \"c02: barely dissolves\"); on \"toxic if swallowed\" the barium chloride row (control \"teacher prepares and dispenses; gloves, glasses; wash hands\"); on \"dilute acid\" the HCl row; on \"Silver nitrate\" its row; on \"tongs\" the hot apparatus row (a coded tongs outline beside `m8-drying-oven-v1.png`, small; no hands); on \"sink\" the waste row with `m5x-waste-bottle-v1.png` small and a coded label \"Heavy-metal waste: barium\".",
+      "teachingReason": "The risk assessment: Now the risks.",
+      "narrationCue": "afterwards / tongs / sink",
+      "motionPurpose": "On the spoken cues: Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's",
+      "motionRole": "explain",
+      "onScreenChange": "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"X-ray scans\" a grey contrast chip \"BaSO₄(s): barely dissolves | BaCl₂(aq): dissolved barium, toxic\" (tag \"c02: barely dissolves\"); on \"toxic if swallowed\" the barium chloride row (control \"teacher prepares and dispenses; gloves, glasses; wash hands\"); on \"dilute acid\" the HCl row; on \"Silver nitrate\" its row; on \"tongs\" the hot apparatus row (a coded tongs outline beside `m8-drying-oven-v1.png`, small; no hands); on \"sink\" the waste row with `m5x-waste-bottle-v1.png` small and a coded label \"Heavy-metal waste: barium\". Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table). Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table).",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: One line to keep.",
+      "narrationCue": "lost",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Recovery = found ÷ expected × 100.\" Under it the recovery gauge returns: on \"lost\" the region below the 100% line pulses grey-blue (\"lost: through the paper, left behind, not precipitated\"); then the hatched region above 100% pulses (\"extra: water, unwashed impurities\"). A small grey second line: \"Too wet reads high; lost reads low. (c02)\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Recovery = found ÷ expected × 100.\" Under it the recovery gauge returns: on \"lost\" the region below the 100% line pulses grey-blue (\"lost: through the paper, left behind, not precipitated\"); then the hatched region above 100% pulses (\"extra: water, unwashed impurities\"). A small grey second line: \"Too wet reads high; lost reads low. (c02)\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. To check a method, a student",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with both molar masses on the card and the tag \"HSC-style question, written for HSCScience\". `m8-balance-watch-glass-v1.png` small at the right (no readout, no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "grams / percent / directly",
+      "motionPurpose": "On the spoken cues: On \"gives the moles\" \"0.350 g\" and \"M(Na₂SO₄) = 142.04\" are underlined; line \"n = 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol\" writes; \"1 : 1 → n(BaSO₄) = 2.46 × 10⁻³ mol\". On \"grams\" \"M(BaSO₄) = 233.39\" is underlined and \"expected = 2.464 × 10⁻³ × 233.39 = 0.5751 g\" writes (grey tag \"keep a guard digit\"). On \"percent\" \"0.561 g\" is underlined; \"% recovery = 0.561 ÷ 0.5751 × 100 = 97.5%\" writes bright, and a small recovery",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"gives the moles\" \"0.350 g\" and \"M(Na₂SO₄) = 142.04\" are underlined; line \"n = 0.350 ÷ 142.04 = 2.46 × 10⁻³ mol\" writes; \"1 : 1 → n(BaSO₄) = 2.46 × 10⁻³ mol\". On \"grams\" \"M(BaSO₄) = 233.39\" is underlined and \"expected = 2.464 × 10⁻³ × 233.39 = 0.5751 g\" writes (grey tag \"keep a guard digit\"). On \"percent\" \"0.561 g\" is underlined; \"% recovery = 0.561 ÷ 0.5751 × 100 = 97.5%\" writes bright, and a small recovery gauge fills to 97.5% just under its 100% line. On \"slightly low\" \"state what this result suggests about the accuracy\" is underlined and a short answer line writes: \"close to 100%, slightly low: small loss of sulfate\". On \"directly\" a chip \"0.561 ÷ 0.350 × 100 = 160%\" fades in and is crossed (caption \"different substances: go through moles\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card, worded as printed (A2 under Decisions).",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. To test digestion, set C digests",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions). `m8-filter-funnel-white-ppt-v1.png` small at the right (no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "washing / nitrate / unequal",
+      "motionPurpose": "On the spoken cues: On \"washing\" \"digested ... for 30 minutes\" and \"three portions\" against \"one portion\" are underlined; FixRail small: \"Word: validity\"; \"Feature: digestion and washing both changed\" (a variables strip writes \"independent: digestion | washing: not controlled\", with \"washing\" terracotta). On \"add mass\" a small chip \"less washing → impurities dried on → mass ↑ → D's recovery ↑\" (grey chip \"c02: extra mass reads high\").",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"washing\" \"digested ... for 30 minutes\" and \"three portions\" against \"one portion\" are underlined; FixRail small: \"Word: validity\"; \"Feature: digestion and washing both changed\" (a variables strip writes \"independent: digestion | washing: not controlled\", with \"washing\" terracotta). On \"add mass\" a small chip \"less washing → impurities dried on → mass ↑ → D's recovery ↑\" (grey chip \"c02: extra mass reads high\"). On \"nitrate\" \"propose a change\" is underlined, the FixRail's \"Fix\" lights: \"wash both sets the same way, until the washings stay clear with AgNO₃\", with the clear test tube thumbnail, and \"washing\" turns green. On \"unequal\" a chip \"repeat each set more times\" fades in and is crossed (caption \"repeats: reliability; the washing is still unequal\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Decision rule and handoff: So, to trust a gravimetric analysis, test it first on a sample whose answer you know.",
+      "narrationCue": "recovery / Next",
+      "motionPurpose": "On the spoken cues: A four-row decision card lights on cue: \"Test the method on a known sample (pure, dry)\"; \"Acidify → hot, excess Ba²⁺ → digest → wash until AgNO₃ test clear → constant mass\"; on \"recovery\" \"Recovery = found ÷ expected × 100\"; \"Cloudy filtrate: lost (low). Wet or unwashed: extra (high).\" On \"Next\" a chip \"Next: precipitation titration and gravimetry practice\" slides in at the lower right.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-row decision card lights on cue: \"Test the method on a known sample (pure, dry)\"; \"Acidify → hot, excess Ba²⁺ → digest → wash until AgNO₃ test clear → constant mass\"; on \"recovery\" \"Recovery = found ÷ expected × 100\"; \"Cloudy filtrate: lost (low). Wet or unwashed: extra (high).\" On \"Next\" a chip \"Next: precipitation titration and gravimetry practice\" slides in at the lower right. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p02-learning-review.md",
+      "sha256": "6e2500991a030f8b29c847d839bcecebb9b7f8407c10d5ad3934b75f0336259f"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p02-claude-science-check.md",
+      "sha256": "ed06884f106b61e5b75110be6158ed5531e2ae4a1d4fe52f67c7c3c82bfb39d0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

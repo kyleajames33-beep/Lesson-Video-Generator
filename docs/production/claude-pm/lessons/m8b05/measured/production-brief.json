@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b05/measured/lesson.json",
+    "lessonSha256": "4e6079b9170106ebceb5e9d8bc4d9d8f13934fc3cc131dbd1e4a2d95fa7771bb"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From Year 11: xylem carries water up from the roots; leaves exchange gases; diffusion (particles spread from higher to lower concentration) and osmosis (water moves across a membrane towards the more concentrated solution); photosynthesis needs carbon dioxide. From b01: the five-part loop, negative feedback opposes a change, and a single organ can be both receptor and control centre (the pancreas). Not assumed: stoma, transpiration, guard cell, turgid, flaccid, ABA, wilting, xerophyte, cuticle, sunken stomata.",
+    "startsWith": "Follow water loss through stomata. The video opens: On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up.",
+    "stopsAfter": "tracing water from the roots through xylem to the leaf, where it evaporates from cell walls into air spaces and diffuses as vapour out through stomata (transpiration), faster in hot, dry, windy air because the outside air is drier and wind removes the humid layer at the leaf surface; explaining why stomata cannot simply stay shut (the same pores let in carbon dioxide for photosynthesis); explaining how guard cells open a stoma (they take in potassium ions, water follows by osmosis, the cells swell, and the thicker inner walls make them bow apart) and how ABA closes it under water stress (potassium ions leave, water follows by osmosis, the guard cells go limp and straighten); building the plant's negative feedback loop (falling water content, root and leaf cells, ABA, guard cells, less water loss); explaining the cost of closing (less carbon dioxide, slower photosynthesis and growth) and wilting when loss still outruns uptake; explaining how xerophyte features save water (waxy cuticle as a barrier; sunken, hairy stomata trap humid air so diffusion slows; rolled spinifex leaves; small leaves; hanging eucalypt leaves stay cooler); comparing a response that switches on and off with built-in features that work all the time.",
+    "nextLesson": "practise feedback loop questions across the homeostasis topic (bio-m8-g03, route review change 7), then investigate plant water loss (bio-m8-p02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b05.md"
+  ],
+  "teaching": {
+    "task": "A plant on a hot, dry, windy afternoon can lose water faster than its roots take it up, and it has no brain, nerves or blood. How does it keep enough water?",
+    "causalExplanation": "Causes: why water leaves a leaf (evaporation inside, diffusion out down a concentration difference; 2); why hot, dry, windy air speeds it (drier air, humid layer removed; 2); why stomata cannot simply stay shut (shared pore; 3); why guard cells open (ions in, water follows, thick inner walls make them bow; 4); why ABA closes them (ions out, water follows; 5); why the response is negative feedback (it opposes the fall; 6); why closing costs growth (less CO₂; 7); why each xerophyte feature saves water (barrier, smaller vapour difference, less surface, cooler leaf; 8, 9). Attention: a plant with no brain still responds within minutes (1); a deal with a price (3). Visual medium: one leaf window that the camera moves through, a matched stoma pair that opens and closes on the spoken cause, a leaf that turns into a xerophyte leaf, and a plant that wilts. Apply: interpret data (11a), explain and compare an unseen plant (11c). Remember: \"ions move, water follows\" and \"waterproof, shrink, keep cool, trap humid air\".",
+    "conversationalApproach": "On a hot, dry, windy afternoon a potted plant can lose water faster than its roots take it up, and it has no brain, nerves or blood, yet within minutes its leaves can cut the loss, so the question is how a plant keeps enough water. Water rises in the xylem, evaporates inside the leaf and diffuses out through the stomata as transpiration, faster in hot, dry, windy air. The trade-off is that the same pores let carbon dioxide in for photosynthesis. Guard cells open the pore by taking in potassium ions so water follows by osmosis and the turgid cells bow apart, like two long balloons taped along their inner edges. Under water stress, root and leaf cells make more ABA, which makes potassium ions leave the guard cells, water follows them out and the pore closes, so guard cells move ions, not water. The same five-part negative feedback loop fits, with no brain: the same cells detect and signal, the guard cells are the effectors and the response opposes the fall. Closing has a cost, less carbon dioxide and slower growth, and wilting follows if the soil stays dry. Xerophytes have built-in savings: a thick waxy cuticle and sunken, hairy stomata that trap humid air, and Australian examples (spinifex rolled leaves, small leaves, vertical eucalypt leaves) are sorted by whether a feature waterproofs, shrinks, cools or traps humid air. ABA closure is a reversible response and xerophyte features are always there, then two exam questions follow with brief feedback.",
+    "openingDecision": "On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up. It has no brain, no nerves and no blood. Yet within minutes, its leaves can cut that loss. So how does a plant keep enough water?",
+    "understandingCheck": "11a is an interpret and explain item on a graph (leaf ABA and transpiration while a pot dries), so the stimulus, signal and response are read from data. 11c is an explain and compare item on an unseen xerophyte (the stop: compare ABA action and xerophyte adaptations). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s each): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"mechanisms in plants that allow water balance to be maintained (ACSBL115)\". Physiological mechanism (scenes 4 to 7), structural mechanisms (8, 9) and the comparison (10, attempt 2). \"Within tolerance limits\" is carried by scenes 6, 7 and 10. B8-IQ1-01 (construct and interpret negative feedback loops) is practised once in scene 6, as a transfer of b01's template to a plant, and drilled in g03."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One leaf window owns the frame from scene 2: the new leaf cross-section plate, large, with the camera (`Cam`) moving between the mesophyll air space and the stoma, never stretched. The new matched stoma pair (surface view, open and closed) carries scenes 4 and 5. A small coded water budget bar graph sits at the upper right from the hook (\"water in: roots\" against \"water out: leaves\", two bars that change height with the narration), so the balance being maintained is always visible. b01's loop ring takes the frame in scene 6. The matched potted plant pair (existing turgid plate, new wilted plate) opens and closes the story (1, 5, 7). No people, hands or faces. Coded elements are limited to the loop ring, the bar graph, the attempt graph, signal pulses, vapour wisps (b02's `EvapDots`), arrows, chips and tags. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "The potted plant plate appears with its root cut-away as coded wind lines stream past and water budget bars compare in and out; the plant slides aside and the leaf cross-section plate fills the centre as water vapour dots evaporate into the air spaces and diffuse out of a stoma, faster on the windy cue; teal carbon dioxide dots drift in through the same pore against the leaving vapour; the stoma pair enters large and cross-fades from closed to open as potassium dots enter the guard cells and water dots follow; the plant returns with a dry soil tint, ABA glows pulse in its roots and leaves, and the stoma pair cross-fades back to closed as potassium and water dots leave; b01's loop ring fills slot by slot with plant crops and closes with a minus arrow; the closed stoma returns as carbon dioxide dots bunch outside it, a photosynthesis bar shrinks and the plant cross-fades to wilted; the ordinary leaf section cross-fades to its matched xerophyte section as the cuticle and hairy pit light; the spinifex, small-leaf and eucalypt plates enter with callouts and four sorting chips; a two-column board compares the ABA response with the built-in features row by row; each attempt clears the board with its question card or graph, and its feedback underlines each given as answer lines write and a crossed answer chip lands; two step chips write on and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Centre left: `b2b-prop-new-plant-v1.png` (young plant in a terracotta pot, roots visible in a cut-away of the soil) at medium size.",
+      "teachingReason": "Hook (a plant on a hot, windy afternoon): On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up.",
+      "narrationCue": "hot, dry, windy / lose water from its leaves / faster than its roots can take it up / no brain, no nerves and no blood / within minutes",
+      "motionPurpose": "On the spoken cues: On \"hot, dry, windy\" three faint coded wind lines stream across behind the plant from the left, and a grey chip writes \"hot, dry, windy\". On \"lose water from its leaves\" b02's `EvapDots` lift as small vapour wisps from the leaves, drifting off with the wind. At the upper right the `WaterBudget`",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Centre left: `b2b-prop-new-plant-v1.png` (young plant in a terracotta pot, roots visible in a cut-away of the soil) at medium size. On \"hot, dry, windy\" three faint coded wind lines stream across behind the plant from the left, and a grey chip writes \"hot, dry, windy\". On \"lose water from its leaves\" b02's `EvapDots` lift as small vapour wisps from the leaves, drifting off with the wind. At the upper right the `WaterBudget` bars draw: \"water in: roots\" (blue, medium) and \"water out: leaves\" (grey, rising taller than the blue bar on \"faster than its roots can take it up\"). On \"no brain, no nerves and no blood\" three small grey words write under the plant and each takes a light strike: \"brain\", \"nerves\", \"blood\". On \"within minutes\" the \"water out\" bar drops back to about the height of \"water in\" (a preview of the answer, no mechanism yet). On the question the heading writes: \"How do plants keep enough water?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "where-water-goes",
+      "visualDecision": "adjust",
+      "visualReference": "the potted plant slides to the far left and shrinks; a thin coded line rises from its roots up its stem (grey tag \"Year 11: xylem carries water up\").",
+      "teachingReason": "Where the water goes: Start with where the water goes.",
+      "narrationCue": "xylem / stomata / transpiration",
+      "motionPurpose": "On the spoken cues: On \"Inside a leaf\" new `m8-leaf-cross-section-v1.png` fills the centre (the leaf window): cuticle, upper epidermis, palisade, spongy mesophyll with air spaces, a vein, and an open stoma in the lower epidermis. On \"xylem\" a callout to the vein's xylem, label \"xylem\". On \"evaporates from the wet",
+      "motionRole": "explain",
+      "onScreenChange": "the potted plant slides to the far left and shrinks; a thin coded line rises from its roots up its stem (grey tag \"Year 11: xylem carries water up\"). On \"Inside a leaf\" new `m8-leaf-cross-section-v1.png` fills the centre (the leaf window): cuticle, upper epidermis, palisade, spongy mesophyll with air spaces, a vein, and an open stoma in the lower epidermis. On \"xylem\" a callout to the vein's xylem, label \"xylem\". On \"evaporates from the wet walls\" `Cam` moves into the spongy mesophyll; small coded wisps lift from the cell walls into an air space (label \"water evaporates from cell walls\"). On \"very moist\" the coded `VapourGradient` draws: dense dots in the air space. On \"tiny pores called stomata\" `Cam` follows to the stoma; a callout \"stoma (plural stomata): a tiny pore\". On \"diffuses out\" the dots thin out through the pore into the air outside (grey tag \"Year 11: diffusion, from more to less concentrated\"). On \"transpiration\" a gloss writes: \"transpiration: loss of water vapour, mostly through stomata\". On \"drier\" the outside dots thin further; on \"wind sweeps away the moist air\" coded wind lines pass under the leaf and carry the few outside dots away (grey tag \"steeper difference\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "trade-off",
+      "visualDecision": "new",
+      "visualReference": "the leaf window stays, zoomed on the stoma.",
+      "teachingReason": "The trade-off: So why not just keep the pores shut?",
+      "narrationCue": "carbon dioxide",
+      "motionPurpose": "On the spoken cues: On \"carbon dioxide\" a second, differently coloured row of small dots (teal) drifts in through the same pore (label \"CO₂ in\"); the water vapour dots keep leaving (label \"water vapour out\"). On \"Every open stoma is a deal\" a two-way chip writes at the right: \"CO₂ in ⇄ water out (same pore)\". On",
+      "motionRole": "explain",
+      "onScreenChange": "the leaf window stays, zoomed on the stoma. On \"carbon dioxide\" a second, differently coloured row of small dots (teal) drifts in through the same pore (label \"CO₂ in\"); the water vapour dots keep leaving (label \"water vapour out\"). On \"Every open stoma is a deal\" a two-way chip writes at the right: \"CO₂ in ⇄ water out (same pore)\". On \"never closed them\" the \"water out\" budget bar at the upper right rises past \"water in\" (grey tag \"dries out\"). On \"never opened them\" the bar falls back and a small grey tag \"no CO₂, no sugar, no growth\" writes. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "guard-cells",
+      "visualDecision": "adjust",
+      "visualReference": "the leaf window dims to the left; new `m8-stoma-closed-v1.png` (surface view: two guard cells, closed slit, neighbouring epidermal cells) enters large at the centre right.",
+      "teachingReason": "Guard cells open the pore: Each stoma sits between two guard cells.",
+      "narrationCue": "guard cells / turgid",
+      "motionPurpose": "On the spoken cues: On \"guard cells\" a callout to one guard cell, label \"guard cell\". On \"thicker on the side facing the pore\" a `scribbleEllipse` traces the thick inner wall on both cells (label \"thick inner wall\"). On \"potassium ions\" small coded dots marked \"K⁺\" stream into both guard cells from the neighbouring",
+      "motionRole": "explain",
+      "onScreenChange": "the leaf window dims to the left; new `m8-stoma-closed-v1.png` (surface view: two guard cells, closed slit, neighbouring epidermal cells) enters large at the centre right. On \"guard cells\" a callout to one guard cell, label \"guard cell\". On \"thicker on the side facing the pore\" a `scribbleEllipse` traces the thick inner wall on both cells (label \"thick inner wall\"). On \"potassium ions\" small coded dots marked \"K⁺\" stream into both guard cells from the neighbouring cells (grey tag \"ions moved in, using energy\"). On \"water follows by osmosis\" small blue arrows follow the K⁺ in (grey tag \"Year 11: osmosis\"). On \"turgid\" the plate cross-fades to its matched state `m8-stoma-open-v1.png`: the guard cells swollen and bowed, the pore open; a gloss \"turgid: firm with water\". On \"like two long balloons\" a small coded side panel draws two plain capsule outlines with a dark strip along each inner edge; they inflate and curve apart (abstract outline only, grey tag \"model\"). On \"the pore opens\" the panel fades and the open pore pulses once. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "aba-closes",
+      "visualDecision": "adjust",
+      "visualReference": "the potted plant returns small at the left with its root cut-away.",
+      "teachingReason": "ABA closes it under stress: Now the stress response.",
+      "narrationCue": "ABA",
+      "motionPurpose": "On the spoken cues: On \"the soil dries\" the soil in the cut-away is overlaid with a pale, dry coded tint (low opacity) and the \"water in\" budget bar shrinks. On \"cells in the roots and leaves\" two small glows pulse, one at the roots and one in a leaf. On \"ABA\" a `SignalPulse` in amber travels from the roots up the",
+      "motionRole": "explain",
+      "onScreenChange": "the potted plant returns small at the left with its root cut-away. On \"the soil dries\" the soil in the cut-away is overlaid with a pale, dry coded tint (low opacity) and the \"water in\" budget bar shrinks. On \"cells in the roots and leaves\" two small glows pulse, one at the roots and one in a leaf. On \"ABA\" a `SignalPulse` in amber travels from the roots up the stem to a leaf, and a second starts in the leaf (label \"ABA: a plant hormone\"). The stoma plate (open) takes the centre. On \"potassium ions leave\" the K⁺ dots stream out of both guard cells; on \"Water follows the ions out\" blue arrows follow outwards. On \"go limp and straighten\" the plate cross-fades back to `m8-stoma-closed-v1.png`; a grey gloss \"flaccid: limp, low in water\". On \"often within minutes\" the \"water out\" bar drops to match \"water in\". On \"don't pump water\" a grey chip \"guard cells pump water\" writes and takes a scribble cross; on \"They move ions, and water follows\" a bright line writes under the plate: \"ions move, water follows (osmosis)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "plant-loop",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to b01's `LoopRing` (five slots).",
+      "teachingReason": "The same loop, in a plant: That's negative feedback, with the five parts you know.",
+      "narrationCue": "stimulus / receptors / no brain / guard cells / stomata close / water loss falls",
+      "motionPurpose": "On the spoken cues: On \"stimulus\" the top slot lights: a small crop of the potted plant (`Cam`), label \"stimulus: leaf water content falls\". On \"receptors\" the receptor slot: two small glows on the plant crop (roots, leaf), label \"receptors: root and leaf cells\". On \"no brain\" a grey chip \"no brain or nerves\" sits",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to b01's `LoopRing` (five slots). On \"stimulus\" the top slot lights: a small crop of the potted plant (`Cam`), label \"stimulus: leaf water content falls\". On \"receptors\" the receptor slot: two small glows on the plant crop (roots, leaf), label \"receptors: root and leaf cells\". On \"no brain\" a grey chip \"no brain or nerves\" sits beside the control slot, and the receptor slot's crop slides across into the control slot as well, the two slots joined by a bracket, label \"control: the same cells release ABA\" (grey tag \"like the pancreas in b01: detects and releases\"). An amber `SignalPulse` runs to the effector slot, label \"signal: ABA (hormone)\". On \"guard cells\" the effector slot fills with a small `m8-stoma-open-v1.png`, which cross-fades to closed on \"stomata close\"; label \"effectors: guard cells\". On \"water loss falls\" the response slot writes \"response: less water lost, water content recovers\". On \"opposes the fall\" the return arrow draws with a minus sign. On \"ABA levels drop\" the pulse fades and the effector plate cross-fades back to open. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cost-of-closing",
+      "visualDecision": "adjust",
+      "visualReference": "the ring shrinks to the upper left.",
+      "teachingReason": "The cost of closing: But closing has a cost.",
+      "narrationCue": "wilting",
+      "motionPurpose": "On the spoken cues: The stoma plate (closed) returns at the centre; on \"much less carbon dioxide\" the teal CO₂ dots bunch up outside the closed pore, only one or two crossing (grey tag \"less CO₂ in\"). On \"photosynthesis slows\" a small coded bar \"photosynthesis\" shrinks beside the plate. On \"survival ahead of growth\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the ring shrinks to the upper left. The stoma plate (closed) returns at the centre; on \"much less carbon dioxide\" the teal CO₂ dots bunch up outside the closed pore, only one or two crossing (grey tag \"less CO₂ in\"). On \"photosynthesis slows\" a small coded bar \"photosynthesis\" shrinks beside the plate. On \"survival ahead of growth\" a chip writes \"survival first, growth later\". On \"if the soil stays dry\" the potted plant returns at the centre left; the budget bars at the upper right show \"water out\" slightly above a falling \"water in\". On \"the leaves droop\" the plant cross-fades to its matched wilted state `m8-potted-plant-wilted-v1.png` (same pot and stem base, leaves hanging, soil paler); label \"wilting: cells lose turgor\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "xerophytes",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the leaf window returns with `m8-leaf-cross-section-v1.png` at the centre (grey tag \"ordinary leaf\").",
+      "teachingReason": "Xerophytes: built-in savings: Some plants live where dry is normal.",
+      "narrationCue": "Xerophytes / cuticle",
+      "motionPurpose": "On the spoken cues: On \"Xerophytes\" it cross-fades to its matched plate `m8-xerophyte-leaf-section-v1.png` (same framing and scale; grey tag \"xerophyte leaf\"), and a gloss writes \"xerophyte: a plant adapted to dry habitats\". On \"waxy cuticle\" a callout to the thick upper cuticle, label \"thick waxy cuticle\"; a few",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the leaf window returns with `m8-leaf-cross-section-v1.png` at the centre (grey tag \"ordinary leaf\"). On \"Xerophytes\" it cross-fades to its matched plate `m8-xerophyte-leaf-section-v1.png` (same framing and scale; grey tag \"xerophyte leaf\"), and a gloss writes \"xerophyte: a plant adapted to dry habitats\". On \"waxy cuticle\" a callout to the thick upper cuticle, label \"thick waxy cuticle\"; a few coded wisps that leave the ordinary leaf's surface in a quick replay stop at the thick cuticle (label \"waterproof barrier\"). On \"sunken in pits, lined with hairs\" `Cam` moves to the lower surface; a `scribbleEllipse` round the pit and its hairs (label \"sunken stoma, hairs\"). On \"pocket of still, humid air\" b02's `EvapDots` switch to their humid mode inside the pit (dots stay and pool); the `VapourGradient` shows dense dots inside the leaf and inside the pit, with only a short sparse row beyond (label \"humid pocket: smaller difference\"). On \"diffusion slows\" the outward dots move more slowly. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "australian-examples",
+      "visualDecision": "adjust",
+      "visualReference": "the leaf window slides away.",
+      "teachingReason": "Australian examples, and a way to sort them: Australian plants show more of these.",
+      "narrationCue": "narrow, rolled leaves / sheltered in grooves / Small or needle-like leaves / eucalypts / edge-on / To sort any feature",
+      "motionPurpose": "On the spoken cues: `m7-spinifex-hummock-v1.png` enters at the left; on \"narrow, rolled leaves\" a callout to a leaf blade, label \"rolled leaf, stomata in grooves\" (grey tag \"spinifex, inland Australia\"); on \"sheltered in grooves\" a small coded cross-section inset beside the callout shows a narrow leaf with shallow",
+      "motionRole": "explain",
+      "onScreenChange": "the leaf window slides away. `m7-spinifex-hummock-v1.png` enters at the left; on \"narrow, rolled leaves\" a callout to a leaf blade, label \"rolled leaf, stomata in grooves\" (grey tag \"spinifex, inland Australia\"); on \"sheltered in grooves\" a small coded cross-section inset beside the callout shows a narrow leaf with shallow grooves along both surfaces and a few stomata dots in the grooves, with faint humid-air shading held in each groove (abstract; not an all-inside tube; Revision 2). On \"Small or needle-like leaves\" a grey tag \"less surface area\" sits under the spinifex's fine leaves. On \"eucalypts\" new `m8-eucalypt-hanging-leaves-v1.png` enters at the right; on \"edge-on\" a coded sun arrow from straight above meets a leaf edge-on (thin arrow, short label \"midday sun\"), with a second ghost leaf held flat beside it catching the full arrow (grey, then fades); label \"hanging leaves stay cooler\". On \"To sort any feature\" four step chips write under the two plates, one per cue: \"waterproof\", \"shrink\", \"keep cool\", \"trap humid air\". The cuticle (scene 8) thumbnail drops under \"waterproof\", the spinifex under \"trap humid air\", the eucalypt under \"keep cool\". Hold half a second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "response-or-built-in",
+      "visualDecision": "new",
+      "visualReference": "a two-column board: left \"ABA response to water stress\" (Revision 2) with the small stoma pair (open cross-fading to closed on \"switches on\", back to open on \"can reverse\"); right \"built in: xerophyte features\" with a small xerophyte section thumbnail.",
+      "teachingReason": "A response, or a built-in feature?: So how do these compare with ABA?",
+      "narrationCue": "switches on / can reverse / within tolerance limits",
+      "motionPurpose": "On the spoken cues: Rows light on their cues: \"when? this response: water stress\" against \"when? all the time\" (Revision 2; stomata also close in darkness and to other signals, so the row names this response, not all closure); \"how fast? minutes\" against \"how fast? already there\"; \"cost? much less CO₂ while shut\"",
+      "motionRole": "explain",
+      "onScreenChange": "a two-column board: left \"ABA response to water stress\" (Revision 2) with the small stoma pair (open cross-fading to closed on \"switches on\", back to open on \"can reverse\"); right \"built in: xerophyte features\" with a small xerophyte section thumbnail. Rows light on their cues: \"when? this response: water stress\" against \"when? all the time\" (Revision 2; stomata also close in darkness and to other signals, so the row names this response, not all closure); \"how fast? minutes\" against \"how fast? already there\"; \"cost? much less CO₂ while shut\" against \"cost? can't be switched off\". On \"within tolerance limits\" a bracket joins both columns, label \"both: water content held in range\". At most three bright items in the rows at once (the earlier row dims). Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (read the graph)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A potted wheat plant",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (read the graph))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A potted wheat plant was watered normally, then not watered from day 0 to day 6. Each day, the concentration of abscisic acid (ABA) in its leaves and its transpiration rate were measured.\" The coded `lineGraph` with two y axes: left \"leaf ABA concentration (relative to day 0)\" 0 to 15, right \"transpiration rate (g of water per hour)\" 0 to 14; x axis \"time without water (days)\" 0 to 6. Amber ABA line: 1.0, 1.2, 3.0, 7.0, 11.0, 13.0, 14.0. Blue transpiration line: 12, 12, 10, 6, 3, 2, 2. A small grey tag \"teaching data\". Demand: \"(a) Describe the relationship between leaf ABA concentration and transpiration rate. (1 mark) (b) Explain how ABA caused the change in transpiration rate. (3 marks)\". No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "As ABA rose / transpiration fell / potassium ions leave / the stomata closed / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"As ABA rose\" the amber line from day 2 brightens and the stem phrase \"concentration of abscisic acid (ABA) in its leaves\" takes an amber underline; on \"transpiration fell\" the blue line from day 2 brightens and \"transpiration rate\" underlines. Answer (a) writes: \"As ABA rose (from day 2),",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"As ABA rose\" the amber line from day 2 brightens and the stem phrase \"concentration of abscisic acid (ABA) in its leaves\" takes an amber underline; on \"transpiration fell\" the blue line from day 2 brightens and \"transpiration rate\" underlines. Answer (a) writes: \"As ABA rose (from day 2), transpiration rate fell.\" On \"potassium ions leave\" a small `m8-stoma-open-v1.png` appears beside the graph with K⁺ dots leaving; on \"the stomata closed\" it cross-fades to `m8-stoma-closed-v1.png`. Answer (b) builds line by line on the cues: \"ABA → K⁺ leaves guard cells\", \"water follows by osmosis, turgor falls\", \"stomata close, less water vapour diffuses out\". On \"classic mistake\" a chip \"transpiration fell because the soil was dry\" writes and takes a scribble cross, small text \"the plant's response closed the stomata\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (an unseen xerophyte)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Plant X grows in inland Australia. Its",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (an unseen xerophyte))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Plant X grows in arid inland Australia. Its leaves have a thick waxy cuticle. Its stomata are sunken in pits in the lower surface, and the pits are lined with hairs.\" Demand: \"(a) Explain how each of these two features reduces water loss. (2 marks) (b) Compare these features with stomatal closure triggered by abscisic acid (ABA) as ways of maintaining water balance. (2 marks)\". No plate on the card (the features are given in words, so the student draws on the mechanisms, not a picture). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "cuticle is waterproof / hairy pits trap humid air / work all the time / switches on under stress / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"cuticle is waterproof\" \"thick waxy cuticle\" underlines amber and a small `m8-xerophyte-leaf-section-v1.png` appears beside the card with a callout to the cuticle; answer (a) line 1 writes \"cuticle: waterproof barrier, less evaporation through the surface\". On \"hairy pits trap humid air\" \"sunken",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"cuticle is waterproof\" \"thick waxy cuticle\" underlines amber and a small `m8-xerophyte-leaf-section-v1.png` appears beside the card with a callout to the cuticle; answer (a) line 1 writes \"cuticle: waterproof barrier, less evaporation through the surface\". On \"hairy pits trap humid air\" \"sunken in pits ... lined with hairs\" underlines; the callout moves to the pit; line 2 writes \"hairy pits: trap humid air, smaller vapour difference, slower diffusion\". On \"work all the time\" answer (b) writes \"features: always present, no signal needed\"; on \"switches on under stress\" \"closure: switches on under water stress, reversible, but much less CO₂ enters\". On \"classic mistake\" a chip \"sunken stomata help it survive dry conditions\" writes and takes a scribble cross, small text \"name the mechanism\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "two step chips write on, one per cue: \"response or built in?\" and \"name the mechanism\".",
+      "teachingReason": "Decision rule and handoff: So for any plant water question, first ask: is this a response, or a built-in feature?",
+      "narrationCue": "So for any plant water question, first ask:",
+      "motionPurpose": "On the spoken cues: Under the second, two small branches: \"guard cells: ions → osmosis → turgor\" and \"feature: waterproof, shrink, cool, trap humid air\". The small stoma pair and xerophyte thumbnail sit beside them. A \"Next\" chip slides in at the lower right: \"Next: Feedback loop practice\" with b01's loop ring",
+      "motionRole": "explain",
+      "onScreenChange": "two step chips write on, one per cue: \"response or built in?\" and \"name the mechanism\". Under the second, two small branches: \"guard cells: ions → osmosis → turgor\" and \"feature: waterproof, shrink, cool, trap humid air\". The small stoma pair and xerophyte thumbnail sit beside them. A \"Next\" chip slides in at the lower right: \"Next: Feedback loop practice\" with b01's loop ring thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b05-learning-review.md",
+      "sha256": "942677d7fefcf2bbca25368e021813835c6ef0b9bdee9a3a675c3a0b29f25f09"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b05-claude-science-check.md",
+      "sha256": "680a8bd7ed0b02cf35406e692f381546c943fd2aa58dabdda8d5b626731b18bd"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

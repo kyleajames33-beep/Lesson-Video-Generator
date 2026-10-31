@@ -11046,6 +11046,944 @@ M8B02_ROWS = {
     ]
 }
 # --- M7 p05 and M8 b01, b02 rows (end) ---
+# --- M8 b03, b04, b05 and g03 rows (start) ---
+M8B03_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Left: `m7-chicken-pasta-tray-v1.png` at medium size (grey tag \"a pasta meal\").",
+        "Hook (a pasta meal, then a night without food): Picture a big bowl of pasta.",
+        "pouring into your blood / sleep for eight hours / your brain keeps using glucose / a blood test at breakfast",
+        "On the spoken cues: On \"pouring into your blood\" a short coded vessel line draws from the tray to the right and coded `GlucoseDots` stream along it, thickening. On \"sleep for eight hours\" the tray dims and slides out; a small coded moon outline and a grey clock chip \"10 pm to 7 am\" write at the upper right. On \"your",
+        "explain",
+        "no people. Left: `m7-chicken-pasta-tray-v1.png` at medium size (grey tag \"a pasta meal\"). On \"pouring into your blood\" a short coded vessel line draws from the tray to the right and coded `GlucoseDots` stream along it, thickening. On \"sleep for eight hours\" the tray dims and slides out; a small coded moon outline and a grey clock chip \"10 pm to 7 am\" write at the upper right. On \"your brain keeps using glucose\" `b3a2-brain-v1.png` enters small at the centre and a slow trickle of `GlucoseDots` leaves the vessel line into it. On \"a blood test at breakfast\" `m8-cgm-reader-blank-v1.png` slides in at the right with a coded reading on its screen, \"5.1 mmol/L\", and a bright chip \"back in range\". On the question the heading writes: \"How do insulin and glucagon regulate glucose?\" At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "three-words": [
+        "new",
+        "the board clears.",
+        "Three words, and a range: First, three words that sound alike.",
+        "Glucose / Glycogen / Glucagon",
+        "On the spoken cues: Three cards write on one per cue, the shared letters \"GLUC\" and \"GLYC\" drawn in the same grey and the endings bright: \"glucose: sugar in the blood, fuel\" with a single coded hexagon; \"glycogen: stored chains of glucose (liver, muscle)\" with a short branched chain of hexagons; \"glucagon: a hormone\"",
+        "explain",
+        "the board clears. Three cards write on one per cue, the shared letters \"GLUC\" and \"GLYC\" drawn in the same grey and the endings bright: \"glucose: sugar in the blood, fuel\" with a single coded hexagon; \"glycogen: stored chains of glucose (liver, muscle)\" with a short branched chain of hexagons; \"glucagon: a hormone\" with a small coded `SignalPulse` dot. On \"glycogen is the store, and glucagon is the messenger\" the two words pulse together and a grey tag writes \"store ≠ messenger\"; the three cards then shrink to a row at the lower left and dim. On \"millimoles per litre\" the **glucose strip** draws across the top: y axis \"blood glucose (mmol/L)\" 3 to 9, x axis \"time\" from \"noon\" to \"noon next day\", with a grey gloss \"how much glucose is dissolved in each litre of blood\". On \"four to six\" a pale teal band fills from 4 to 6, label \"usual fasting range\". On \"rises for a while\" the trace draws a peak to about 7.5 an hour after a marker \"pasta (1 pm)\", then falls back into the band; a grey tag \"after a meal: often about 7 to 8, then back\". At most three bright items. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "islets": [
+        "adjust",
+        "the strip stays at the top, dimmed.",
+        "The pancreas, sensor and switch: Earlier in this module, you saw that the pancreas is both the receptor and the control centre for glucose.",
+        "islets / Beta cells / insulin / Alpha cells",
+        "On the spoken cues: b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On \"Most of the pancreas makes digestive enzymes\" a grey tag \"most tissue: digestive enzymes into the gut\". On \"tiny",
+        "explain",
+        "the strip stays at the top, dimmed. b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On \"Most of the pancreas makes digestive enzymes\" a grey tag \"most tissue: digestive enzymes into the gut\". On \"tiny clusters\" a `scribbleEllipse` circles a small patch of the plate and a `Cam` zoom carries the view into new `m8-pancreatic-islet-v1.png` (an islet in surrounding tissue, with a capillary); grey tag \"islet of Langerhans, drawn far larger than real\"; label \"islet: hormone-making cells\". On \"Beta cells\" a callout to two or three of the teal cells (beta cells are scattered through the human islet, so the callout picks cells, not a region; Revision 2), label \"beta cells: detect a rise → insulin\"; coded teal `SignalPulse` dots leave them into the capillary on \"straight into the blood\". On \"Alpha cells\" a callout to two or three of the amber cells, mixed among the teal ones, label \"alpha cells: detect a fall → glucagon\"; amber dots leave into the capillary. On \"senses the change and sends the signal\" the loop ring thumbnail's bracketed slots pulse. At most three bright items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "insulin": [
+        "adjust",
+        "the strip's marker dot sits on the rising part after \"pasta (1 pm)\".",
+        "Insulin: let glucose in, and store it: Back to the pasta.",
+        "glycogenesis",
+        "On the spoken cues: A teal `LoopRing` starts drawing small at the right: stimulus slot \"blood glucose rises\", receptor and control centre slot \"beta cells (pancreas)\" lit. Working area: on \"cells all over the body\" a teal `SignalPulse` runs along a coded vessel line. On \"muscle and fat cells\" new matched plate",
+        "explain",
+        "the strip's marker dot sits on the rising part after \"pasta (1 pm)\". A teal `LoopRing` starts drawing small at the right: stimulus slot \"blood glucose rises\", receptor and control centre slot \"beta cells (pancreas)\" lit. Working area: on \"cells all over the body\" a teal `SignalPulse` runs along a coded vessel line. On \"muscle and fat cells\" new matched plate `m8-muscle-cell-transporters-inside-v1.png` appears (a muscle fibre section with transporter proteins held in small vesicles inside); grey tag \"fat cells respond the same way\". On \"binds to receptors\" a callout to the receptor on the surface, label \"insulin receptor\". On \"moves extra glucose transporters ... into its membrane\" the plate cross-fades to `m8-muscle-cell-transporters-membrane-v1.png` (vesicles fused, transporters in the membrane), label \"glucose transporters in the membrane\" (grey tag \"GLUT4\"). On \"glucose moves in faster\" `GlucoseDots` from the vessel line pass through the transporters into the cell. On \"In the liver\" new `m8-liver-v1.png` enters small at the left with a callout into new `m8-liver-cell-glycogen-low-v1.png`, which cross-fades on \"joined into chains and stored\" to `m8-liver-cell-glycogen-full-v1.png` (many glycogen granules), while coded hexagons link into a short chain beside it; gloss \"glycogenesis: building glycogen\". The teal ring's effector slot fills: \"muscle, fat and liver cells\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "insulin-eases": [
+        "new",
+        "the strip's marker dot runs down the falling side of the peak into the band.",
+        "Negative feedback, and insulin eases: Glucose leaves the blood, so blood glucose falls back towards its normal range.",
+        "negative feedback / release less insulin / doesn't destroy glucose",
+        "On the spoken cues: The teal ring completes: response slot \"glucose taken up and stored, level falls\", return arrow with a minus sign on \"negative feedback\". On \"release less insulin\" the teal `SignalPulse` dots on the vessel line thin out; a small coded \"insulin\" bar beside the receptor slot falls from tall to a low",
+        "explain",
+        "the strip's marker dot runs down the falling side of the peak into the band. The teal ring completes: response slot \"glucose taken up and stored, level falls\", return arrow with a minus sign on \"negative feedback\". On \"release less insulin\" the teal `SignalPulse` dots on the vessel line thin out; a small coded \"insulin\" bar beside the receptor slot falls from tall to a low bar that stays above zero, tag \"low background level\". On \"doesn't destroy glucose\" a grey chip \"insulin destroys glucose\" takes a scribble cross, and two small grey arrows split from a hexagon: \"used in respiration\" and \"stored as glycogen\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "glucagon": [
+        "adjust",
+        "the teal ring slides to the left and dims.",
+        "Glucagon: when glucose has gone: Now the night.",
+        "glycogenolysis",
+        "On the spoken cues: The strip's marker dot moves past the moon outline at \"10 pm\"; the trace drifts down towards the lower edge of the band. An amber `LoopRing` draws at the right: stimulus \"blood glucose falls\", receptor and control centre \"alpha cells (pancreas)\" with the islet plate thumbnail. On \"release more",
+        "explain",
+        "the teal ring slides to the left and dims. The strip's marker dot moves past the moon outline at \"10 pm\"; the trace drifts down towards the lower edge of the band. An amber `LoopRing` draws at the right: stimulus \"blood glucose falls\", receptor and control centre \"alpha cells (pancreas)\" with the islet plate thumbnail. On \"release more glucagon\" amber `SignalPulse` dots run along a vessel line to `m8-liver-v1.png`, now at the centre. On \"glycogenolysis\" the callout into the liver cell shows `m8-liver-cell-glycogen-full-v1.png`, which cross-fades to `m8-liver-cell-glycogen-low-v1.png` as coded hexagons break off a chain and leave the cell into the vessel; gloss \"glycogenolysis: splitting glycogen\". A small grey tag beside the liver: \"longer fasts: the liver also makes new glucose (gluconeogenesis)\". On \"rises back into range\" the trace levels inside the band and the amber ring completes with its minus arrow. On \"muscle keeps its glucose for itself\" `m8-skeletal-muscle-v1.png` appears small and grey with a closed coded arrow loop \"glycogen → glucose → used here\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "two-hormones": [
+        "new",
+        "the two rings sit side by side, teal at the left and amber at the right, sharing the pancreas thumbnail between them.",
+        "Two hormones, one balance: Why two hormones?",
+        "downhill ... brake / brake / uphill ... accelerator / Insulin works like the brake / glucagon like the accelerator / only one pedal",
+        "On the spoken cues: Above them a coded road outline (a simple wavy line, abstract, no car body or driver: a small coded dot rides it) draws, with a grey \"speed\" readout. On \"downhill ... brake\" the dot speeds and a coded pedal icon \"brake\" lights teal; on \"uphill ... accelerator\" the dot slows and a pedal",
+        "explain",
+        "the two rings sit side by side, teal at the left and amber at the right, sharing the pancreas thumbnail between them. Above them a coded road outline (a simple wavy line, abstract, no car body or driver: a small coded dot rides it) draws, with a grey \"speed\" readout. On \"downhill ... brake\" the dot speeds and a coded pedal icon \"brake\" lights teal; on \"uphill ... accelerator\" the dot slows and a pedal \"accelerator\" lights amber. On \"Insulin works like the brake\" the teal ring pulses with a label \"insulin: brake on rising glucose\"; on \"glucagon like the accelerator\" the amber ring pulses, \"glucagon: accelerator when glucose falls\". On \"only one pedal\" the amber pedal greys out and the dot sags on the next uphill. On \"both hormones are released at some level all the time\" the road fades and two coded level bars, \"insulin\" and \"glucagon\", stand side by side, both above zero, then tilt against each other like a balance; grey tag \"the ratio shifts\". At most three bright items. Hold one second.",
+        [
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "exam-checks": [
+        "new",
+        "the two rings stay small.",
+        "Two exam checks: Two things examiners look for.",
+        "doesn't change blood glucose itself / on a graph / insulin made glucose rise",
+        "On the spoken cues: Two numbered chips write at the right: \"1. Pancreas signals; liver, muscle, fat cells act.\" and \"2. Hormone follows glucose.\" On \"doesn't change blood glucose itself\" a grey chip \"effector: pancreas\" takes a scribble cross and both rings' effector slots pulse. On \"on a graph\" the strip at the top",
+        "explain",
+        "the two rings stay small. Two numbered chips write at the right: \"1. Pancreas signals; liver, muscle, fat cells act.\" and \"2. Hormone follows glucose.\" On \"doesn't change blood glucose itself\" a grey chip \"effector: pancreas\" takes a scribble cross and both rings' effector slots pulse. On \"on a graph\" the strip at the top gains a second, thin teal line labelled \"insulin\" (teaching curve) that rises about 15 minutes after the glucose line and peaks just after it; a small coded bracket marks the lag \"glucose first, insulin after\". On \"insulin made glucose rise\" a grey chip \"insulin made glucose rise\" takes a scribble cross. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears to two handwritten lines, large: \"Insulin lets glucose **in**.\" beside the teal ring thumbnail and \"Glucagon: glucose has **gone**.\" beside the amber ring thumbnail, the bold letters bright.",
+        "Memory: To keep the pair straight: insulin lets glucose in.",
+        "B for beta",
+        "On the spoken cues: On \"B for beta\" a third smaller line writes \"Beta cells bring it down\", the three B's underlined in teal. Hold half a second.",
+        "explain",
+        "the board clears to two handwritten lines, large: \"Insulin lets glucose **in**.\" beside the teal ring thumbnail and \"Glucagon: glucose has **gone**.\" beside the amber ring thumbnail, the bold letters bright. On \"B for beta\" a third smaller line writes \"Beta cells bring it down\", the three B's underlined in teal. Hold half a second.",
+        [
+            "HandText write-on",
+            "Mark underline"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a missed lunch and a race)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A student eats breakfast",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a missed lunch and a race))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student eats breakfast at 7 am, skips lunch and runs a 3 km cross-country race at 2 pm. During the race, the student's blood glucose concentration begins to fall below its usual range.\" Demand: \"(a) Construct a negative feedback loop for the response that returns blood glucose to its usual range. Name the hormone involved. (3 marks) (b) Explain the role of the liver in this response. (2 marks)\". An empty five-slot ring outline sits beside the answer lines as a drawing space (no labels). No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "opposing the fall / classic mistake",
+        "On the spoken cues: As each component is spoken, its given phrase takes an amber underline (\"blood glucose concentration begins to fall\", \"skips lunch\", \"runs\") and the matching slot of the drawn ring fills with a short label: \"blood glucose falls\", \"alpha cells (pancreas) → glucagon\", \"liver: glycogen → glucose,",
+        "explain",
+        "the card stays. As each component is spoken, its given phrase takes an amber underline (\"blood glucose concentration begins to fall\", \"skips lunch\", \"runs\") and the matching slot of the drawn ring fills with a short label: \"blood glucose falls\", \"alpha cells (pancreas) → glucagon\", \"liver: glycogen → glucose, released\", \"blood glucose rises back\". On \"opposing the fall\" the return arrow draws with a minus sign. For (b) one answer line writes: \"liver: glycogenolysis, glucose released into blood\". On \"classic mistake\" a chip \"glucagon breaks down glucose\" writes and takes a scribble cross, with small text \"glucagon signals; liver cells break down glycogen\" (Revision 2). Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt two (glucose and insulin after a drink)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. After an overnight fast, a healthy adult",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (glucose and insulin after a drink))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"After an overnight fast, a healthy adult drank a solution containing 75 g of glucose at time 0. Blood glucose and blood insulin were measured for 180 minutes.\" The coded `lineGraph` with two y axes: left \"blood glucose (mmol/L)\" 0 to 10, right \"blood insulin (mU/L)\" 0 to 70; x axis \"time (min)\" 0 to 180. Teal glucose line: 5.0 (0), 7.8 (30), 7.0 (60), 6.0 (90), 5.2 (120), 4.8 (150), 4.9 (180). Amber insulin line: 8 (0), 55 (30), 50 (60), 35 (90), 20 (120), 10 (150), 9 (180). A small grey tag \"teaching data\". Demand: \"(a) Explain the change in blood insulin between 0 and 60 minutes. (2 marks) (b) Explain why blood glucose returned to about its starting level by 120 minutes, with reference to negative feedback. (3 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Glucose rose / insulin rose within thirty minutes / glucose fell / released less insulin / both lines settled / classic mistake",
+        "On the spoken cues: On \"Glucose rose\" the given \"drank a solution containing 75 g of glucose\" takes an amber underline and the teal line's rise brightens. On \"insulin rose within thirty minutes\" the amber line's rise to 55 brightens and a marker writes \"insulin follows glucose\". On \"glucose fell\" the falling part of",
+        "explain",
+        "the card stays. On \"Glucose rose\" the given \"drank a solution containing 75 g of glucose\" takes an amber underline and the teal line's rise brightens. On \"insulin rose within thirty minutes\" the amber line's rise to 55 brightens and a marker writes \"insulin follows glucose\". On \"glucose fell\" the falling part of the teal line brightens. On \"released less insulin\" the falling part of the amber line brightens; on \"both lines settled\" both lines from 120 to 180 brighten, and the given \"healthy adult\" takes a thin grey underline. A mini teal loop ring thumbnail lights slot by slot beside the graph. On \"classic mistake\" a chip \"the pancreas took up the glucose\" writes and takes a scribble cross, with small text \"pancreas signals; liver, muscle and fat cells take it up\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "four step chips write on, one per cue: \"which way did glucose move?\", \"which cells detected it?\", \"which hormone?\", \"what did the effectors do?\".",
+        "Decision rule and handoff: So for any glucose question, ask which way glucose moved, which cells detected it, which hormone they released, and what the liver or other cells then did.",
+        "So for any glucose question, ask which way",
+        "On the spoken cues: The two rings return small above them. A grey chip at the lower left: \"Later: when the loop fails (diabetes)\". A \"Next\" chip slides in at the lower right: \"Next: How does the kidney regulate water balance?\" with a small `m8-kidney-nephron-v1.png` thumbnail. Hold half a second before the notes.",
+        "explain",
+        "four step chips write on, one per cue: \"which way did glucose move?\", \"which cells detected it?\", \"which hormone?\", \"what did the effectors do?\". The two rings return small above them. A grey chip at the lower left: \"Later: when the loop fails (diabetes)\". A \"Next\" chip slides in at the lower right: \"Next: How does the kidney regulate water balance?\" with a small `m8-kidney-nephron-v1.png` thumbnail. Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8B04_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. New matched pair, side by side at the centre: `m8-urine-sample-dark-v1.png` at the left (a small volume of dark amber urine in a clear sample cup) with a grey tag \"hot day, little to drink\", and on \"Drink a litre of water quickly\" new `m8-water-glass-v1.png` enters small between them and slides out, then `m8-urine-sample-pale-v1.png` fills in at the right (a large volume of pale straw urine, same cup) with a grey tag \"an hour after a litre of water\".",
+        "Hook (dark urine, pale urine): On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine.",
+        "Drink a litre of water quickly / The colour is a clue / Same kidneys",
+        "On the spoken cues: On \"The colour is a clue\" a few grey waste dots sit crowded in the dark cup and spread out in the pale cup (coded overlay, low opacity). On \"Same kidneys\" a small `m8-kidney-nephron-v1.png` thumbnail (cropped by `Cam` to the kidney half) sits between the cups with two curved arrows, one to each. On",
+        "explain",
+        "no people. New matched pair, side by side at the centre: `m8-urine-sample-dark-v1.png` at the left (a small volume of dark amber urine in a clear sample cup) with a grey tag \"hot day, little to drink\", and on \"Drink a litre of water quickly\" new `m8-water-glass-v1.png` enters small between them and slides out, then `m8-urine-sample-pale-v1.png` fills in at the right (a large volume of pale straw urine, same cup) with a grey tag \"an hour after a litre of water\". On \"The colour is a clue\" a few grey waste dots sit crowded in the dark cup and spread out in the pale cup (coded overlay, low opacity). On \"Same kidneys\" a small `m8-kidney-nephron-v1.png` thumbnail (cropped by `Cam` to the kidney half) sits between the cups with two curved arrows, one to each. On the question the heading writes: \"How does the kidney regulate water balance?\" At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "concentration": [
+        "new",
+        "the cups shrink to the lower right.",
+        "The variable is concentration: The variable here isn't how much you drink.",
+        "osmolarity",
+        "On the spoken cues: On \"isn't how much you drink\" a grey chip \"regulated: amount drunk\" takes a scribble cross. On \"how concentrated your blood is\" a coded box of blood plasma (a rounded rectangle, abstract) draws at the centre with blue `WaterDots` and grey salt dots; gloss \"osmolarity: concentration of dissolved",
+        "explain",
+        "the cups shrink to the lower right. On \"isn't how much you drink\" a grey chip \"regulated: amount drunk\" takes a scribble cross. On \"how concentrated your blood is\" a coded box of blood plasma (a rounded rectangle, abstract) draws at the centre with blue `WaterDots` and grey salt dots; gloss \"osmolarity: concentration of dissolved particles in blood\". The coded `ConcGauge` draws at the upper right, marker in the \"normal range\" band. On \"Lose water\" some blue dots leave the box upward (grey tag \"sweat, breath\"), the grey dots crowd together, and the gauge marker slides right to \"more concentrated\". On \"Drink lots of water\" blue dots pour in, the grey dots spread out, and the marker slides left past the band to \"more dilute\", then returns to the band. On \"osmosis\" a membrane line draws across a second small box with few grey dots on the left and many on the right; blue dots drift across to the right; grey tag \"Year 11: osmosis\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "nephron": [
+        "adjust",
+        "the plasma box leaves; the gauge stays.",
+        "A hundred and eighty litres: Your kidneys control how much water leaves.",
+        "nephrons / reabsorption / collecting duct",
+        "On the spoken cues: `m8-kidney-nephron-v1.png` enters at the centre left at full size. On \"about a million tiny tubes\" a `scribbleEllipse` circles the nephron drawing at the right of the plate, label \"nephron (one of about a million per kidney)\", and the `Cam` moves to the nephron. On \"blood is filtered\" a callout",
+        "explain",
+        "the plasma box leaves; the gauge stays. `m8-kidney-nephron-v1.png` enters at the centre left at full size. On \"about a million tiny tubes\" a `scribbleEllipse` circles the nephron drawing at the right of the plate, label \"nephron (one of about a million per kidney)\", and the `Cam` moves to the nephron. On \"blood is filtered\" a callout points to the glomerulus and its cup, label \"filtered here\"; `WaterDots` and small grey dots move into the tube. On \"flows along the tubule\" a coded flow line traces along the coiled tubule; on \"taken back into the blood\" short arrows leave the tubule into the surrounding vessels, label \"reabsorption: back into the blood\". On \"control comes from what's taken back\" the reabsorption arrows pulse. On \"a hundred and eighty litres\" two coded columns write at the right, a tall one \"filtered: about 180 L a day\" and a tiny one \"passed as urine: about 1.5 L\"; on \"one and a half\" the tiny column takes a bright outline. On \"collecting duct\" a callout to the straight branching tube at the far right of the plate, label \"collecting duct: sets the final water kept\". At most three bright items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "adh-release": [
+        "adjust",
+        "the kidney plate dims and moves to the lower left.",
+        "Who's measuring: hypothalamus, pituitary, ADH: So who's measuring?",
+        "osmoreceptors / ADH",
+        "On the spoken cues: The gauge marker sits right of the band (\"more concentrated\"). `b3a2-brain-v1.png` enters at the centre with `b3a2-pituitary-part-v1.png` aligned in place below the hypothalamus. On \"osmoreceptors\" a `scribbleEllipse` circles the hypothalamus and a callout zooms into new",
+        "explain",
+        "the kidney plate dims and moves to the lower left. The gauge marker sits right of the band (\"more concentrated\"). `b3a2-brain-v1.png` enters at the centre with `b3a2-pituitary-part-v1.png` aligned in place below the hypothalamus. On \"osmoreceptors\" a `scribbleEllipse` circles the hypothalamus and a callout zooms into new `m8-osmoreceptor-normal-v1.png` (grey tag \"osmoreceptor cell, drawn far larger than real\"); on \"they shrink slightly\" it cross-fades to `m8-osmoreceptor-shrunk-v1.png` while blue `WaterDots` leave it; label \"osmoreceptor: shrinks as water leaves\". On \"nerve impulses down to the posterior pituitary\" a bright `DrawPath` nerve line draws down the stalk and a fast `SignalPulse` runs along it; label \"neural: nerve impulses\". On \"releases ADH\" slow `SignalPulse` dots in a second colour leave the pituitary into a coded vessel line; label \"hormonal: ADH in the blood\". On \"made in the hypothalamus\" a grey tag \"made in hypothalamus, released from posterior pituitary\" and a grey chip \"ADH released from the hypothalamus\" takes a small scribble cross. On \"makes you thirsty\" `m8-water-glass-v1.png` appears small at the right with a grey tag \"thirst: drinking replaces water\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "aquaporins": [
+        "adjust",
+        "the brain plate leaves; the ADH `SignalPulse` dots carry on along the vessel line to the right.",
+        "ADH opens water channels: ADH travels in the blood to the collecting ducts.",
+        "aquaporins",
+        "On the spoken cues: New matched pair at the centre: `m8-collecting-duct-closed-v1.png` (a cut-away of a collecting duct wall, filtrate inside at the left, surrounding tissue and a capillary at the right, aquaporins held in vesicles inside the cells). On \"binds to the duct cells\" a callout to a receptor on the blood",
+        "explain",
+        "the brain plate leaves; the ADH `SignalPulse` dots carry on along the vessel line to the right. New matched pair at the centre: `m8-collecting-duct-closed-v1.png` (a cut-away of a collecting duct wall, filtrate inside at the left, surrounding tissue and a capillary at the right, aquaporins held in vesicles inside the cells). On \"binds to the duct cells\" a callout to a receptor on the blood side, label \"ADH binds here\". On \"moves water channels ... into the membrane\" the plate cross-fades to `m8-collecting-duct-open-v1.png` (vesicles fused, aquaporins in the membrane facing the filtrate); gloss \"aquaporins: water channels\". On \"very concentrated\" the surrounding tissue takes a coded dense scatter of grey dots and a grey tag \"surrounding tissue: very concentrated (medulla)\". On \"water moves out of the duct by osmosis\" blue `WaterDots` stream through the aquaporins and on into the capillary. On \"smaller volume of more concentrated urine\" the dark sample cup from the hook reappears small below the gauge, and the gauge marker slides back towards the band. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "loop-closes": [
+        "adjust",
+        "the board clears to b01's `LoopRing`, filling slot by slot on cue: stimulus \"blood osmolarity rises\" (gauge thumbnail, marker right), receptor \"osmoreceptors (hypothalamus)\" (`m8-osmoreceptor-shrunk-v1.png` small), control centre \"hypothalamus → posterior pituitary releases ADH\", effector \"collecting ducts: aquaporins in, more water reabsorbed\" (`m8-collecting-duct-open-v1.png` small), response \"osmolarity falls back\".",
+        "The loop closes: As water returns to the blood, osmolarity falls back towards normal.",
+        "swell back / negative feedback / varies with concentration / extremely low",
+        "On the spoken cues: On \"swell back\" the osmoreceptor thumbnail cross-fades to its normal state; the `SignalPulse` dots thin. On \"negative feedback\" the return arrow draws with a minus sign. On \"varies with concentration\" a small coded \"ADH\" bar beside the control centre slot rises and falls with the gauge marker; on",
+        "explain",
+        "the board clears to b01's `LoopRing`, filling slot by slot on cue: stimulus \"blood osmolarity rises\" (gauge thumbnail, marker right), receptor \"osmoreceptors (hypothalamus)\" (`m8-osmoreceptor-shrunk-v1.png` small), control centre \"hypothalamus → posterior pituitary releases ADH\", effector \"collecting ducts: aquaporins in, more water reabsorbed\" (`m8-collecting-duct-open-v1.png` small), response \"osmolarity falls back\". On \"swell back\" the osmoreceptor thumbnail cross-fades to its normal state; the `SignalPulse` dots thin. On \"negative feedback\" the return arrow draws with a minus sign. On \"varies with concentration\" a small coded \"ADH\" bar beside the control centre slot rises and falls with the gauge marker; on \"extremely low\" it drops to a thin sliver, tag \"very low after a big drink\" (Revision 2), which sets up scene 7. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "reverse": [
+        "adjust",
+        "the ring shrinks to the upper left as a thumbnail.",
+        "The reverse: a litre of water: Now the litre of water.",
+        "ADH release drops / taken back out / less water can leave / large volume of pale, dilute urine / back in range / opposite direction",
+        "On the spoken cues: `m8-water-glass-v1.png` enters at the left and blue `WaterDots` flow from it into a vessel line; the gauge marker slides left to \"more dilute\". On \"ADH release drops\" the ADH bar on the ring thumbnail falls lower. The collecting duct pair returns at the centre in its open state and, on \"taken back",
+        "explain",
+        "the ring shrinks to the upper left as a thumbnail. `m8-water-glass-v1.png` enters at the left and blue `WaterDots` flow from it into a vessel line; the gauge marker slides left to \"more dilute\". On \"ADH release drops\" the ADH bar on the ring thumbnail falls lower. The collecting duct pair returns at the centre in its open state and, on \"taken back out\", cross-fades to `m8-collecting-duct-closed-v1.png`; on \"less water can leave\" only a few blue dots cross the wall and most stream on down the duct. On \"large volume of pale, dilute urine\" the pale sample cup from the hook fills in below the gauge; on \"back in range\" the gauge marker returns to the band. On \"opposite direction\" the two cups pulse, dark at the left, pale at the right. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "aldosterone": [
+        "adjust",
+        "the duct pair dims.",
+        "Aldosterone: water follows salt: One more hormone often turns up beside ADH.",
+        "Aldosterone",
+        "On the spoken cues: New `m8-kidney-adrenal-v1.png` enters at the left (a kidney with its adrenal gland capping the top); on \"adrenal glands\" a callout to the adrenal, label \"adrenal gland: aldosterone\". On \"low blood volume or pressure\" a grey tag \"detected in the kidney; via renin and angiotensin (extension)\". On",
+        "explain",
+        "the duct pair dims. New `m8-kidney-adrenal-v1.png` enters at the left (a kidney with its adrenal gland capping the top); on \"adrenal glands\" a callout to the adrenal, label \"adrenal gland: aldosterone\". On \"low blood volume or pressure\" a grey tag \"detected in the kidney; via renin and angiotensin (extension)\". On \"reabsorb more sodium\" the nephron plate returns small with a callout to the later tubule and duct (grey tag \"late distal tubule and collecting duct\"); grey salt dots (labelled \"Na⁺\") move from the tubule into the blood first, and on \"water follows the sodium\" blue dots follow them a beat later through the open aquaporins of a small `m8-collecting-duct-open-v1.png` thumbnail (grey tag \"needs water channels\"; Revision 2). On \"doesn't move water directly\" a grey chip \"aldosterone reabsorbs water\" takes a scribble cross. On the last sentence a two-column chip writes: \"ADH: osmolarity → water channels (duct)\" and \"aldosterone: volume, pressure → sodium; water follows (through channels)\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears to two handwritten lines, large: \"ADH: the anti-wee hormone\" beside the small dark sample cup, with a small grey gloss \"diuresis = making urine\"; and \"Aldosterone: water follows salt\" with grey dots and blue dots drawn following them.",
+        "Memory: To keep them apart: ADH is the anti-wee hormone.",
+        "To keep them apart: ADH is the anti-wee",
+        "On the spoken cues: Hold half a second.",
+        "explain",
+        "the board clears to two handwritten lines, large: \"ADH: the anti-wee hormone\" beside the small dark sample cup, with a small grey gloss \"diuresis = making urine\"; and \"Aldosterone: water follows salt\" with grey dots and blue dots drawn following them. Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a salty snack)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A student eats a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a salty snack))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student eats a large packet of salted potato chips and drinks nothing for the next two hours. Sodium chloride from the chips is absorbed into the blood. The student has not been sweating.\" Demand: \"(a) Predict the change in ADH release, and in the volume and concentration of the student's urine. (2 marks) (b) Explain how this response limits further water loss, and why drinking water would help restore blood osmolarity. (3 marks)\" (Revision 2). Lined answer space and a blank five-slot ring outline as a drawing space (no labels). No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card stays.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "raises blood osmolarity / even without sweating / Drinking supplies / classic mistake",
+        "On the spoken cues: On \"raises blood osmolarity\" the given \"Sodium chloride ... absorbed into the blood\" takes an amber underline; on \"even without sweating\" the given \"has not been sweating\" takes an underline (Revision 3). Answer lines write, one per cue, earlier lines dimming: \"(a) ADH increases; urine: small",
+        "explain",
+        "the card stays. On \"raises blood osmolarity\" the given \"Sodium chloride ... absorbed into the blood\" takes an amber underline; on \"even without sweating\" the given \"has not been sweating\" takes an underline (Revision 3). Answer lines write, one per cue, earlier lines dimming: \"(a) ADH increases; urine: small volume, concentrated\", \"osmoreceptors detect rise → posterior pituitary releases ADH\", \"aquaporins in collecting ducts → more water reabsorbed → limits further water loss\", \"(b) drinking supplies new water → dilutes the salt\". The drawn ring fills its slots in short labels; its response slot reads \"limits further water loss\" (not a full recovery while drinks are withheld; Revision 2). On \"Drinking supplies\" the given \"drinks nothing for the next two hours\" takes an amber underline and `m8-water-glass-v1.png` appears small beside the card. On \"classic mistake\" a chip \"ADH makes new water\" writes and takes a scribble cross, with small text \"it only keeps water already filtered\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt two (water against a salt solution)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. On separate days, a healthy adult drank",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (water against a salt solution))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"On two separate days, a healthy adult drank 1 L of liquid over 5 minutes at time 0: on day 1, pure water; on day 2, a salt solution with the same osmolarity as blood plasma. Urine output was measured every 30 minutes for 180 minutes.\" The coded `lineGraph`: y axis \"urine output (mL per minute)\" 0 to 12; x axis \"time after drinking (min)\" 0 to 180. Blue line \"pure water\": 1.0 (0), 3.0 (30), 9.0 (60), 8.0 (90), 4.0 (120), 1.5 (150), 1.0 (180). Grey line \"salt solution\": 1.0, 1.2, 1.5, 1.5, 1.5, 1.3, 1.2. A small grey tag \"teaching data\". Demand: \"(a) Explain the change in urine output after drinking pure water, with reference to ADH. (3 marks) (b) Explain why drinking the salt solution caused little change in urine output. (2 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Pure water diluted the blood / urine output peaked at about an hour / fell as concentration recovered / matched blood concentration / classic mistake",
+        "On the spoken cues: On \"Pure water diluted the blood\" the given \"pure water\" takes an amber underline and an answer line writes \"blood diluted → osmoreceptors → less ADH → fewer aquaporins\"; on \"urine output peaked at about an hour\" the blue line's peak brightens with a marker \"about 9 mL/min at 60 min\"; on \"fell as",
+        "explain",
+        "the card stays. On \"Pure water diluted the blood\" the given \"pure water\" takes an amber underline and an answer line writes \"blood diluted → osmoreceptors → less ADH → fewer aquaporins\"; on \"urine output peaked at about an hour\" the blue line's peak brightens with a marker \"about 9 mL/min at 60 min\"; on \"fell as concentration recovered\" the blue line's fall brightens. On \"matched blood concentration\" the given \"same osmolarity as blood plasma\" takes an amber underline and the grey line brightens along its length. A mini `ConcGauge` beside the graph shows the marker sliding left then back for water, and staying in the band for the salt solution. On \"classic mistake\" the given \"1 L\" takes a thin grey underline, and a chip \"the kidneys respond to the volume drunk\" writes and takes a scribble cross. Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "three step chips write on, one per cue: \"blood concentration up or down?\", \"ADH up or down?\", \"ducts and urine?\".",
+        "Decision rule and handoff: So for any water balance question, ask what happened to blood concentration, which way ADH moved, and what that did to the collecting ducts and the urine.",
+        "So for any water balance question, ask what",
+        "On the spoken cues: The loop ring returns small above them with the two sample cups. A \"Next\" chip slides in at the lower right: \"Next: How do plants keep enough water?\" (small grey tag; a small coded leaf outline beside it). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on, one per cue: \"blood concentration up or down?\", \"ADH up or down?\", \"ducts and urine?\". The loop ring returns small above them with the two sample cups. A \"Next\" chip slides in at the lower right: \"Next: How do plants keep enough water?\" (small grey tag; a small coded leaf outline beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8B05_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Centre left: `b2b-prop-new-plant-v1.png` (young plant in a terracotta pot, roots visible in a cut-away of the soil) at medium size.",
+        "Hook (a plant on a hot, windy afternoon): On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up.",
+        "hot, dry, windy / lose water from its leaves / faster than its roots can take it up / no brain, no nerves and no blood / within minutes",
+        "On the spoken cues: On \"hot, dry, windy\" three faint coded wind lines stream across behind the plant from the left, and a grey chip writes \"hot, dry, windy\". On \"lose water from its leaves\" b02's `EvapDots` lift as small vapour wisps from the leaves, drifting off with the wind. At the upper right the `WaterBudget`",
+        "explain",
+        "no people. Centre left: `b2b-prop-new-plant-v1.png` (young plant in a terracotta pot, roots visible in a cut-away of the soil) at medium size. On \"hot, dry, windy\" three faint coded wind lines stream across behind the plant from the left, and a grey chip writes \"hot, dry, windy\". On \"lose water from its leaves\" b02's `EvapDots` lift as small vapour wisps from the leaves, drifting off with the wind. At the upper right the `WaterBudget` bars draw: \"water in: roots\" (blue, medium) and \"water out: leaves\" (grey, rising taller than the blue bar on \"faster than its roots can take it up\"). On \"no brain, no nerves and no blood\" three small grey words write under the plant and each takes a light strike: \"brain\", \"nerves\", \"blood\". On \"within minutes\" the \"water out\" bar drops back to about the height of \"water in\" (a preview of the answer, no mechanism yet). On the question the heading writes: \"How do plants keep enough water?\" At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "where-water-goes": [
+        "adjust",
+        "the potted plant slides to the far left and shrinks; a thin coded line rises from its roots up its stem (grey tag \"Year 11: xylem carries water up\").",
+        "Where the water goes: Start with where the water goes.",
+        "xylem / stomata / transpiration",
+        "On the spoken cues: On \"Inside a leaf\" new `m8-leaf-cross-section-v1.png` fills the centre (the leaf window): cuticle, upper epidermis, palisade, spongy mesophyll with air spaces, a vein, and an open stoma in the lower epidermis. On \"xylem\" a callout to the vein's xylem, label \"xylem\". On \"evaporates from the wet",
+        "explain",
+        "the potted plant slides to the far left and shrinks; a thin coded line rises from its roots up its stem (grey tag \"Year 11: xylem carries water up\"). On \"Inside a leaf\" new `m8-leaf-cross-section-v1.png` fills the centre (the leaf window): cuticle, upper epidermis, palisade, spongy mesophyll with air spaces, a vein, and an open stoma in the lower epidermis. On \"xylem\" a callout to the vein's xylem, label \"xylem\". On \"evaporates from the wet walls\" `Cam` moves into the spongy mesophyll; small coded wisps lift from the cell walls into an air space (label \"water evaporates from cell walls\"). On \"very moist\" the coded `VapourGradient` draws: dense dots in the air space. On \"tiny pores called stomata\" `Cam` follows to the stoma; a callout \"stoma (plural stomata): a tiny pore\". On \"diffuses out\" the dots thin out through the pore into the air outside (grey tag \"Year 11: diffusion, from more to less concentrated\"). On \"transpiration\" a gloss writes: \"transpiration: loss of water vapour, mostly through stomata\". On \"drier\" the outside dots thin further; on \"wind sweeps away the moist air\" coded wind lines pass under the leaf and carry the few outside dots away (grey tag \"steeper difference\"). At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "trade-off": [
+        "new",
+        "the leaf window stays, zoomed on the stoma.",
+        "The trade-off: So why not just keep the pores shut?",
+        "carbon dioxide",
+        "On the spoken cues: On \"carbon dioxide\" a second, differently coloured row of small dots (teal) drifts in through the same pore (label \"CO₂ in\"); the water vapour dots keep leaving (label \"water vapour out\"). On \"Every open stoma is a deal\" a two-way chip writes at the right: \"CO₂ in ⇄ water out (same pore)\". On",
+        "explain",
+        "the leaf window stays, zoomed on the stoma. On \"carbon dioxide\" a second, differently coloured row of small dots (teal) drifts in through the same pore (label \"CO₂ in\"); the water vapour dots keep leaving (label \"water vapour out\"). On \"Every open stoma is a deal\" a two-way chip writes at the right: \"CO₂ in ⇄ water out (same pore)\". On \"never closed them\" the \"water out\" budget bar at the upper right rises past \"water in\" (grey tag \"dries out\"). On \"never opened them\" the bar falls back and a small grey tag \"no CO₂, no sugar, no growth\" writes. At most three bright items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "guard-cells": [
+        "adjust",
+        "the leaf window dims to the left; new `m8-stoma-closed-v1.png` (surface view: two guard cells, closed slit, neighbouring epidermal cells) enters large at the centre right.",
+        "Guard cells open the pore: Each stoma sits between two guard cells.",
+        "guard cells / turgid",
+        "On the spoken cues: On \"guard cells\" a callout to one guard cell, label \"guard cell\". On \"thicker on the side facing the pore\" a `scribbleEllipse` traces the thick inner wall on both cells (label \"thick inner wall\"). On \"potassium ions\" small coded dots marked \"K⁺\" stream into both guard cells from the neighbouring",
+        "explain",
+        "the leaf window dims to the left; new `m8-stoma-closed-v1.png` (surface view: two guard cells, closed slit, neighbouring epidermal cells) enters large at the centre right. On \"guard cells\" a callout to one guard cell, label \"guard cell\". On \"thicker on the side facing the pore\" a `scribbleEllipse` traces the thick inner wall on both cells (label \"thick inner wall\"). On \"potassium ions\" small coded dots marked \"K⁺\" stream into both guard cells from the neighbouring cells (grey tag \"ions moved in, using energy\"). On \"water follows by osmosis\" small blue arrows follow the K⁺ in (grey tag \"Year 11: osmosis\"). On \"turgid\" the plate cross-fades to its matched state `m8-stoma-open-v1.png`: the guard cells swollen and bowed, the pore open; a gloss \"turgid: firm with water\". On \"like two long balloons\" a small coded side panel draws two plain capsule outlines with a dark strip along each inner edge; they inflate and curve apart (abstract outline only, grey tag \"model\"). On \"the pore opens\" the panel fades and the open pore pulses once. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "aba-closes": [
+        "adjust",
+        "the potted plant returns small at the left with its root cut-away.",
+        "ABA closes it under stress: Now the stress response.",
+        "ABA",
+        "On the spoken cues: On \"the soil dries\" the soil in the cut-away is overlaid with a pale, dry coded tint (low opacity) and the \"water in\" budget bar shrinks. On \"cells in the roots and leaves\" two small glows pulse, one at the roots and one in a leaf. On \"ABA\" a `SignalPulse` in amber travels from the roots up the",
+        "explain",
+        "the potted plant returns small at the left with its root cut-away. On \"the soil dries\" the soil in the cut-away is overlaid with a pale, dry coded tint (low opacity) and the \"water in\" budget bar shrinks. On \"cells in the roots and leaves\" two small glows pulse, one at the roots and one in a leaf. On \"ABA\" a `SignalPulse` in amber travels from the roots up the stem to a leaf, and a second starts in the leaf (label \"ABA: a plant hormone\"). The stoma plate (open) takes the centre. On \"potassium ions leave\" the K⁺ dots stream out of both guard cells; on \"Water follows the ions out\" blue arrows follow outwards. On \"go limp and straighten\" the plate cross-fades back to `m8-stoma-closed-v1.png`; a grey gloss \"flaccid: limp, low in water\". On \"often within minutes\" the \"water out\" bar drops to match \"water in\". On \"don't pump water\" a grey chip \"guard cells pump water\" writes and takes a scribble cross; on \"They move ions, and water follows\" a bright line writes under the plate: \"ions move, water follows (osmosis)\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "plant-loop": [
+        "adjust",
+        "the board clears to b01's `LoopRing` (five slots).",
+        "The same loop, in a plant: That's negative feedback, with the five parts you know.",
+        "stimulus / receptors / no brain / guard cells / stomata close / water loss falls",
+        "On the spoken cues: On \"stimulus\" the top slot lights: a small crop of the potted plant (`Cam`), label \"stimulus: leaf water content falls\". On \"receptors\" the receptor slot: two small glows on the plant crop (roots, leaf), label \"receptors: root and leaf cells\". On \"no brain\" a grey chip \"no brain or nerves\" sits",
+        "explain",
+        "the board clears to b01's `LoopRing` (five slots). On \"stimulus\" the top slot lights: a small crop of the potted plant (`Cam`), label \"stimulus: leaf water content falls\". On \"receptors\" the receptor slot: two small glows on the plant crop (roots, leaf), label \"receptors: root and leaf cells\". On \"no brain\" a grey chip \"no brain or nerves\" sits beside the control slot, and the receptor slot's crop slides across into the control slot as well, the two slots joined by a bracket, label \"control: the same cells release ABA\" (grey tag \"like the pancreas in b01: detects and releases\"). An amber `SignalPulse` runs to the effector slot, label \"signal: ABA (hormone)\". On \"guard cells\" the effector slot fills with a small `m8-stoma-open-v1.png`, which cross-fades to closed on \"stomata close\"; label \"effectors: guard cells\". On \"water loss falls\" the response slot writes \"response: less water lost, water content recovers\". On \"opposes the fall\" the return arrow draws with a minus sign. On \"ABA levels drop\" the pulse fades and the effector plate cross-fades back to open. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "cost-of-closing": [
+        "adjust",
+        "the ring shrinks to the upper left.",
+        "The cost of closing: But closing has a cost.",
+        "wilting",
+        "On the spoken cues: The stoma plate (closed) returns at the centre; on \"much less carbon dioxide\" the teal CO₂ dots bunch up outside the closed pore, only one or two crossing (grey tag \"less CO₂ in\"). On \"photosynthesis slows\" a small coded bar \"photosynthesis\" shrinks beside the plate. On \"survival ahead of growth\" a",
+        "explain",
+        "the ring shrinks to the upper left. The stoma plate (closed) returns at the centre; on \"much less carbon dioxide\" the teal CO₂ dots bunch up outside the closed pore, only one or two crossing (grey tag \"less CO₂ in\"). On \"photosynthesis slows\" a small coded bar \"photosynthesis\" shrinks beside the plate. On \"survival ahead of growth\" a chip writes \"survival first, growth later\". On \"if the soil stays dry\" the potted plant returns at the centre left; the budget bars at the upper right show \"water out\" slightly above a falling \"water in\". On \"the leaves droop\" the plant cross-fades to its matched wilted state `m8-potted-plant-wilted-v1.png` (same pot and stem base, leaves hanging, soil paler); label \"wilting: cells lose turgor\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "xerophytes": [
+        "adjust",
+        "the board clears; the leaf window returns with `m8-leaf-cross-section-v1.png` at the centre (grey tag \"ordinary leaf\").",
+        "Xerophytes: built-in savings: Some plants live where dry is normal.",
+        "Xerophytes / cuticle",
+        "On the spoken cues: On \"Xerophytes\" it cross-fades to its matched plate `m8-xerophyte-leaf-section-v1.png` (same framing and scale; grey tag \"xerophyte leaf\"), and a gloss writes \"xerophyte: a plant adapted to dry habitats\". On \"waxy cuticle\" a callout to the thick upper cuticle, label \"thick waxy cuticle\"; a few",
+        "explain",
+        "the board clears; the leaf window returns with `m8-leaf-cross-section-v1.png` at the centre (grey tag \"ordinary leaf\"). On \"Xerophytes\" it cross-fades to its matched plate `m8-xerophyte-leaf-section-v1.png` (same framing and scale; grey tag \"xerophyte leaf\"), and a gloss writes \"xerophyte: a plant adapted to dry habitats\". On \"waxy cuticle\" a callout to the thick upper cuticle, label \"thick waxy cuticle\"; a few coded wisps that leave the ordinary leaf's surface in a quick replay stop at the thick cuticle (label \"waterproof barrier\"). On \"sunken in pits, lined with hairs\" `Cam` moves to the lower surface; a `scribbleEllipse` round the pit and its hairs (label \"sunken stoma, hairs\"). On \"pocket of still, humid air\" b02's `EvapDots` switch to their humid mode inside the pit (dots stay and pool); the `VapourGradient` shows dense dots inside the leaf and inside the pit, with only a short sparse row beyond (label \"humid pocket: smaller difference\"). On \"diffusion slows\" the outward dots move more slowly. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "australian-examples": [
+        "adjust",
+        "the leaf window slides away.",
+        "Australian examples, and a way to sort them: Australian plants show more of these.",
+        "narrow, rolled leaves / sheltered in grooves / Small or needle-like leaves / eucalypts / edge-on / To sort any feature",
+        "On the spoken cues: `m7-spinifex-hummock-v1.png` enters at the left; on \"narrow, rolled leaves\" a callout to a leaf blade, label \"rolled leaf, stomata in grooves\" (grey tag \"spinifex, inland Australia\"); on \"sheltered in grooves\" a small coded cross-section inset beside the callout shows a narrow leaf with shallow",
+        "explain",
+        "the leaf window slides away. `m7-spinifex-hummock-v1.png` enters at the left; on \"narrow, rolled leaves\" a callout to a leaf blade, label \"rolled leaf, stomata in grooves\" (grey tag \"spinifex, inland Australia\"); on \"sheltered in grooves\" a small coded cross-section inset beside the callout shows a narrow leaf with shallow grooves along both surfaces and a few stomata dots in the grooves, with faint humid-air shading held in each groove (abstract; not an all-inside tube; Revision 2). On \"Small or needle-like leaves\" a grey tag \"less surface area\" sits under the spinifex's fine leaves. On \"eucalypts\" new `m8-eucalypt-hanging-leaves-v1.png` enters at the right; on \"edge-on\" a coded sun arrow from straight above meets a leaf edge-on (thin arrow, short label \"midday sun\"), with a second ghost leaf held flat beside it catching the full arrow (grey, then fades); label \"hanging leaves stay cooler\". On \"To sort any feature\" four step chips write under the two plates, one per cue: \"waterproof\", \"shrink\", \"keep cool\", \"trap humid air\". The cuticle (scene 8) thumbnail drops under \"waterproof\", the spinifex under \"trap humid air\", the eucalypt under \"keep cool\". Hold half a second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second"
+    ],
+    "response-or-built-in": [
+        "new",
+        "a two-column board: left \"ABA response to water stress\" (Revision 2) with the small stoma pair (open cross-fading to closed on \"switches on\", back to open on \"can reverse\"); right \"built in: xerophyte features\" with a small xerophyte section thumbnail.",
+        "A response, or a built-in feature?: So how do these compare with ABA?",
+        "switches on / can reverse / within tolerance limits",
+        "On the spoken cues: Rows light on their cues: \"when? this response: water stress\" against \"when? all the time\" (Revision 2; stomata also close in darkness and to other signals, so the row names this response, not all closure); \"how fast? minutes\" against \"how fast? already there\"; \"cost? much less CO₂ while shut\"",
+        "explain",
+        "a two-column board: left \"ABA response to water stress\" (Revision 2) with the small stoma pair (open cross-fading to closed on \"switches on\", back to open on \"can reverse\"); right \"built in: xerophyte features\" with a small xerophyte section thumbnail. Rows light on their cues: \"when? this response: water stress\" against \"when? all the time\" (Revision 2; stomata also close in darkness and to other signals, so the row names this response, not all closure); \"how fast? minutes\" against \"how fast? already there\"; \"cost? much less CO₂ while shut\" against \"cost? can't be switched off\". On \"within tolerance limits\" a bracket joins both columns, label \"both: water content held in range\". At most three bright items in the rows at once (the earlier row dims). Hold one second.",
+        [
+            "Mark cross",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (read the graph)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A potted wheat plant",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (read the graph))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A potted wheat plant was watered normally, then not watered from day 0 to day 6. Each day, the concentration of abscisic acid (ABA) in its leaves and its transpiration rate were measured.\" The coded `lineGraph` with two y axes: left \"leaf ABA concentration (relative to day 0)\" 0 to 15, right \"transpiration rate (g of water per hour)\" 0 to 14; x axis \"time without water (days)\" 0 to 6. Amber ABA line: 1.0, 1.2, 3.0, 7.0, 11.0, 13.0, 14.0. Blue transpiration line: 12, 12, 10, 6, 3, 2, 2. A small grey tag \"teaching data\". Demand: \"(a) Describe the relationship between leaf ABA concentration and transpiration rate. (1 mark) (b) Explain how ABA caused the change in transpiration rate. (3 marks)\". No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card stays.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "As ABA rose / transpiration fell / potassium ions leave / the stomata closed / classic mistake",
+        "On the spoken cues: On \"As ABA rose\" the amber line from day 2 brightens and the stem phrase \"concentration of abscisic acid (ABA) in its leaves\" takes an amber underline; on \"transpiration fell\" the blue line from day 2 brightens and \"transpiration rate\" underlines. Answer (a) writes: \"As ABA rose (from day 2),",
+        "explain",
+        "the card stays. On \"As ABA rose\" the amber line from day 2 brightens and the stem phrase \"concentration of abscisic acid (ABA) in its leaves\" takes an amber underline; on \"transpiration fell\" the blue line from day 2 brightens and \"transpiration rate\" underlines. Answer (a) writes: \"As ABA rose (from day 2), transpiration rate fell.\" On \"potassium ions leave\" a small `m8-stoma-open-v1.png` appears beside the graph with K⁺ dots leaving; on \"the stomata closed\" it cross-fades to `m8-stoma-closed-v1.png`. Answer (b) builds line by line on the cues: \"ABA → K⁺ leaves guard cells\", \"water follows by osmosis, turgor falls\", \"stomata close, less water vapour diffuses out\". On \"classic mistake\" a chip \"transpiration fell because the soil was dry\" writes and takes a scribble cross, small text \"the plant's response closed the stomata\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt two (an unseen xerophyte)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Plant X grows in inland Australia. Its",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (an unseen xerophyte))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Plant X grows in arid inland Australia. Its leaves have a thick waxy cuticle. Its stomata are sunken in pits in the lower surface, and the pits are lined with hairs.\" Demand: \"(a) Explain how each of these two features reduces water loss. (2 marks) (b) Compare these features with stomatal closure triggered by abscisic acid (ABA) as ways of maintaining water balance. (2 marks)\". No plate on the card (the features are given in words, so the student draws on the mechanisms, not a picture). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "adjust",
+        "the card stays.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "cuticle is waterproof / hairy pits trap humid air / work all the time / switches on under stress / classic mistake",
+        "On the spoken cues: On \"cuticle is waterproof\" \"thick waxy cuticle\" underlines amber and a small `m8-xerophyte-leaf-section-v1.png` appears beside the card with a callout to the cuticle; answer (a) line 1 writes \"cuticle: waterproof barrier, less evaporation through the surface\". On \"hairy pits trap humid air\" \"sunken",
+        "explain",
+        "the card stays. On \"cuticle is waterproof\" \"thick waxy cuticle\" underlines amber and a small `m8-xerophyte-leaf-section-v1.png` appears beside the card with a callout to the cuticle; answer (a) line 1 writes \"cuticle: waterproof barrier, less evaporation through the surface\". On \"hairy pits trap humid air\" \"sunken in pits ... lined with hairs\" underlines; the callout moves to the pit; line 2 writes \"hairy pits: trap humid air, smaller vapour difference, slower diffusion\". On \"work all the time\" answer (b) writes \"features: always present, no signal needed\"; on \"switches on under stress\" \"closure: switches on under water stress, reversible, but much less CO₂ enters\". On \"classic mistake\" a chip \"sunken stomata help it survive dry conditions\" writes and takes a scribble cross, small text \"name the mechanism\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "two step chips write on, one per cue: \"response or built in?\" and \"name the mechanism\".",
+        "Decision rule and handoff: So for any plant water question, first ask: is this a response, or a built-in feature?",
+        "So for any plant water question, first ask:",
+        "On the spoken cues: Under the second, two small branches: \"guard cells: ions → osmosis → turgor\" and \"feature: waterproof, shrink, cool, trap humid air\". The small stoma pair and xerophyte thumbnail sit beside them. A \"Next\" chip slides in at the lower right: \"Next: Feedback loop practice\" with b01's loop ring",
+        "explain",
+        "two step chips write on, one per cue: \"response or built in?\" and \"name the mechanism\". Under the second, two small branches: \"guard cells: ions → osmosis → turgor\" and \"feature: waterproof, shrink, cool, trap humid air\". The small stoma pair and xerophyte thumbnail sit beside them. A \"Next\" chip slides in at the lower right: \"Next: Feedback loop practice\" with b01's loop ring thumbnail. Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8G03_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Build it, read it, classify it\" writes on.",
+        "Hook: Feedback loop questions turn up in HSC Biology again and again, in different disguises.",
+        "Build / read / positive",
+        "On the spoken cues: On \"Build\" an empty five-slot `LoopRing` outline draws in the working area; on \"read\" a small blank two-line graph outline draws beside it; on \"positive\" two small return arrows write under them, one marked minus and one plus, with a \"?\" between. On \"three HSC-style questions\" three small numbered",
+        "explain",
+        "heading \"Build it, read it, classify it\" writes on. On \"Build\" an empty five-slot `LoopRing` outline draws in the working area; on \"read\" a small blank two-line graph outline draws beside it; on \"positive\" two small return arrows write under them, one marked minus and one plus, with a \"?\" between. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a ring, a graph, three short strips, all without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: standing up quickly) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. When a person stands up quickly,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: standing up quickly)",
+        "explain",
+        "fresh board. Type badge hidden. `m8-heart-v1.png` and `b3a2-brain-v1.png` sit small at the card's upper left, above the card text. The card writes on: \"When a person stands up quickly, blood pools in the veins of the legs and blood pressure in the upper body falls. Baroreceptors (stretch receptors in the walls of the aorta and the carotid arteries) detect the fall in blood pressure. The cardiovascular centre in the medulla oblongata sends nerve impulses to the heart, which beats faster and more strongly, and to arterioles, which narrow. Within seconds, blood pressure returns towards its usual level.\" Demands: \"(a) Construct a negative feedback loop for this response, naming each of the five components. (3 marks)\" \"(b) Predict what would happen to blood pressure on standing if the nerves from the baroreceptors were damaged. Justify your prediction. (2 marks)\". An empty answer area with a faint five-slot ring outline (no labels). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-build": [
+        "adjust",
+        "the card shrinks to a strip; type badge \"Build a loop\".",
+        "Five parts, in order: Build it in order, and take each part from the stem.",
+        "stimulus / receptors / control centre / effectors / response / rises back / minus",
+        "On the spoken cues: b01's `LoopRing` draws large in the working area (grey tag \"b01: Some Really Cool Elephants Run\"). On \"stimulus\" \"blood pressure in the upper body falls\" underlines amber in the strip and the top slot writes \"stimulus: blood pressure falls\"; on \"receptors\" \"Baroreceptors\" underlines and the",
+        "explain",
+        "the card shrinks to a strip; type badge \"Build a loop\". b01's `LoopRing` draws large in the working area (grey tag \"b01: Some Really Cool Elephants Run\"). On \"stimulus\" \"blood pressure in the upper body falls\" underlines amber in the strip and the top slot writes \"stimulus: blood pressure falls\"; on \"receptors\" \"Baroreceptors\" underlines and the receptor slot writes \"receptors: baroreceptors (aorta, carotid arteries)\"; on \"control centre\" \"cardiovascular centre in the medulla oblongata\" underlines, `b3a2-brain-v1.png` drops small into the slot with a `scribbleEllipse` round the brainstem, label \"control centre: cardiovascular centre, medulla\"; a `SignalPulse` runs from receptor to control centre. On \"effectors\" \"heart\" and \"arterioles, which narrow\" underline; `m8-heart-v1.png` drops small into the effector slot, label \"effectors: heart, arterioles\"; a pulse runs from control centre to effector (grey tag \"nerve impulses: fast\"). On \"response\" the response slot stays empty for a beat with an amber \"?\"; on \"rises back\" it writes \"response: blood pressure rises back towards normal\" (teal). On \"minus\" the return arrow from response to stimulus draws with a large minus sign. Answer box (a) builds line by line on the same cues (one line per component, then \"− : the response opposes the fall\"); each slot label dims to grey as the next writes, so at most three are bright. Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-predict": [
+        "new",
+        "the ring stays.",
+        "Cut one link: Now the prediction.",
+        "low",
+        "On the spoken cues: On \"baroreceptor nerves are damaged\" \"nerves from the baroreceptors were damaged\" underlines amber in the strip and a `LinkCut` mark crosses the arrow from receptor to control centre (the pulse stops at the cut). On \"no signal\" the control centre and effector slots dim to grey. On \"stays low\" a",
+        "explain",
+        "the ring stays. On \"baroreceptor nerves are damaged\" \"nerves from the baroreceptors were damaged\" underlines amber in the strip and a `LinkCut` mark crosses the arrow from receptor to control centre (the pulse stops at the cut). On \"no signal\" the control centre and effector slots dim to grey. On \"stays low\" a tiny coded trace beside the ring shows blood pressure dropping and staying down, with a grey dashed line where it would have recovered (tag \"no correction\"). On \"dizzy or faint\" a grey tag \"less blood to the brain\". Answer box (b) writes in two lines: \"Blood pressure would stay low after standing.\" on \"low\"; \"The medulla would receive no signal of the fall, so the heart and arterioles would not respond.\" on \"loop can't correct\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"response: the heart beats faster\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is ending at the effector, with \"response: the heart beats faster\".",
+        "the classic mistake / That's what the effector does / the change in the regulated variable",
+        "On the spoken cues: On \"That's what the effector does\" the chip slides into the effector slot's position and fits there (grey tag \"effector action\"); on \"the change in the regulated variable\" the teal response label pulses. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"response: the heart beats faster\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"That's what the effector does\" the chip slides into the effector slot's position and fits there (grey tag \"effector action\"); on \"the change in the regulated variable\" the teal response label pulses. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: glucose after a meal) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A healthy adult ate a meal",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: glucose after a meal)",
+        "explain",
+        "board clears. Type badge hidden. `m8-pancreas-v1.png` sits small at the card's upper left. The card writes on: \"A healthy adult fasted overnight, then ate a meal containing carbohydrate at time 0. Blood samples were taken for 3 hours to measure blood glucose and blood insulin concentrations.\" Coded `lineGraph` with two y axes: left \"blood glucose (mmol/L)\" 4.0 to 8.0, right \"blood insulin (mU/L)\" 0 to 70; x axis \"time after meal (min)\" 0 to 180. Teal glucose line through: 0 min 5.0, 15 min 6.4, 30 min 7.6, 45 min 7.2, 60 min 6.6, 90 min 5.6, 120 min 5.0, 150 min 4.6, 180 min 4.9. Amber insulin line through: 0 min 6, 15 min 28, 30 min 50, 45 min 62, 60 min 52, 90 min 30, 120 min 14, 150 min 7, 180 min 6. Key: \"glucose\", \"insulin\". Grey chip: \"teaching data\". Demands: \"(a) Identify the time at which blood glucose and blood insulin each peaked, and account for the difference. (2 marks)\" \"(b) Explain the change in blood glucose between 45 and 120 minutes, with reference to negative feedback. (3 marks)\" \"(c) Using the graph and your knowledge, explain the change in blood glucose between 150 and 180 minutes. (2 marks)\". Three answer boxes. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-peaks": [
+        "new",
+        "the card shrinks to a strip; type badge \"Read a glucose graph\".",
+        "Read the axes first: Start with the peaks, and read them off the axes.",
+        "thirty minutes / forty-five minutes / after",
+        "On the spoken cues: The graph enlarges. On \"thirty minutes\" a `PeakMarker` drops from the glucose peak to the x axis (label \"30 min, 7.6 mmol/L\"); \"blood glucose\" in the key and axis underline amber. On \"forty-five minutes\" a second `PeakMarker` drops from the insulin peak (label \"45 min, 62 mU/L\"); \"blood insulin\"",
+        "explain",
+        "the card shrinks to a strip; type badge \"Read a glucose graph\". The graph enlarges. On \"thirty minutes\" a `PeakMarker` drops from the glucose peak to the x axis (label \"30 min, 7.6 mmol/L\"); \"blood glucose\" in the key and axis underline amber. On \"forty-five minutes\" a second `PeakMarker` drops from the insulin peak (label \"45 min, 62 mU/L\"); \"blood insulin\" underlines. On \"The rise in glucose is the stimulus\" the rising part of the glucose line (0 to 30) brightens and a grey tag writes \"stimulus: glucose rises\". On \"Beta cells\" the pancreas plate moves beside the graph with a callout \"beta cells: detect, release insulin\". On \"after\" a short bracket joins the two peak markers (label \"insulin follows glucose\"). Answer box (a) builds line by line: \"Glucose peaked at 30 min (7.6 mmol/L); insulin at 45 min (62 mU/L).\" on \"forty-five minutes\"; \"Insulin is released in response to the rise in glucose, so it peaks after glucose.\" on \"after\". Hold 1 second.",
+        [
+            "Mark underline"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-explain": [
+        "adjust",
+        "the peak markers dim.",
+        "The fall, then the dip: Now forty-five to one hundred and twenty minutes.",
+        "glycogen / five / negative feedback / Alpha cells / rises back",
+        "On the spoken cues: On \"Insulin is high\" the insulin line from 45 to 90 brightens; `m8-liver-v1.png` and `m8-skeletal-muscle-v1.png` sit small beside the pancreas with a grey label \"liver, muscle and fat cells take up glucose\" (Revision 2: the liver plate is delivered; no membrane or transporter inset, so b03's",
+        "explain",
+        "the peak markers dim. On \"Insulin is high\" the insulin line from 45 to 90 brightens; `m8-liver-v1.png` and `m8-skeletal-muscle-v1.png` sit small beside the pancreas with a grey label \"liver, muscle and fat cells take up glucose\" (Revision 2: the liver plate is delivered; no membrane or transporter inset, so b03's teaching stays recall). On \"glycogen\" a grey tag \"stored as glycogen (liver, muscle)\". On \"five\" the glucose line from 45 to 120 brightens teal with reading guides at 7.2 and 5.0; \"between 45 and 120 minutes\" underlines amber in the strip. On \"insulin falls too\" the insulin line from 60 to 120 brightens. On \"negative feedback\" a mini loop ring thumbnail writes beside the graph with its minus arrow (grey tag \"b01\"). Answer box (b) builds line by line: \"Insulin (high) causes liver, muscle and fat cells to take up glucose; liver and muscle store it as glycogen.\" on \"glycogen\"; \"Blood glucose falls from 7.2 to 5.0 mmol/L.\" on \"five\"; \"As glucose falls, beta cells release less insulin; the response opposed the rise (negative feedback).\" on \"negative feedback\". The (b) working tags dim. On \"dipped just below\" a reading guide at 150 min, 4.6 and \"between 150 and 180 minutes\" underlines; on \"doesn't show glucagon\" \"Using the graph and your knowledge\" underlines amber. On \"Alpha cells\" the pancreas callout changes to \"alpha cells: detect the fall, release glucagon\"; on \"rises back\" the glucose line from 150 to 180 brightens. Answer box (c): \"Glucose fell slightly below fasting (4.6 mmol/L at 150 min).\" on \"dipped just below\"; \"Alpha cells released glucagon; the liver broke down glycogen and released glucose, so glucose rose (4.9 mmol/L at 180 min).\" on \"rises back\". A grey tag writes small last: \"Insulin lets glucose in. Glucagon acts when glucose has gone.\" At most three bright text items. Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"insulin breaks down glucose\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is writing that insulin breaks down glucose.",
+        "the classic mistake / Insulin is the signal / the effectors that take glucose in",
+        "On the spoken cues: On \"Insulin is the signal\" a small arrow draws from the pancreas plate to the liver and muscle plates, labelled \"insulin (signal)\"; on \"the effectors that take glucose in\" small coded dots move from a short vessel line into both plates (label \"cells take up glucose\"). Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"insulin breaks down glucose\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Insulin is the signal\" a small arrow draws from the pancreas plate to the liver and muscle plates, labelled \"insulin (signal)\"; on \"the effectors that take glucose in\" small coded dots move from a short vessel line into both plates (label \"cells take up glucose\"). Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: negative or positive?) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. Three processes are described. In P,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: negative or positive?)",
+        "explain",
+        "board clears. Type badge hidden. Three small plates sit at the card's left margin, one beside each process: `b2b-prop-new-plant-v1.png` (P), `m8-pancreas-v1.png` (Q) and new `m8-bananas-unripe-v1.png` (R). The card writes on: \"Process P: As soil dries, root and leaf cells produce more abscisic acid (ABA). ABA causes the stomata to close, and the rate of water loss from the leaves falls.\" \"Process Q: During a long run, blood glucose concentration falls. The pancreas releases glucagon. Liver cells break down glycogen and release glucose, and blood glucose concentration rises back towards its usual level.\" \"Process R: A ripening banana releases ethylene, a gas. Ethylene causes the banana and nearby bananas to ripen faster, and ripening bananas release more ethylene.\" Demands: \"(a) Identify which process is an example of positive feedback. (1 mark)\" \"(b) A student states that process Q is an example of positive feedback because blood glucose concentration increases. Explain why the student is incorrect. (3 marks)\". Two answer boxes. **Countdown 10 seconds**; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-identify": [
+        "adjust",
+        "the card shrinks to a strip; type badge \"Negative or positive?\".",
+        "One test for every process: Test each process with one question: does the response oppose the change, or strengthen it?",
+        "oppose / strengthen / positive feedback",
+        "On the spoken cues: A test chip writes at the top of the working area: \"Does the response oppose the change, or strengthen it?\" (\"oppose\" and \"strengthen\" light on their cues). Three `ProcessStrip`s draw, P, Q and R, each with its plate, Q greyed for now (grey tag \"next scene\"). On \"In P\" \"rate of water loss from the",
+        "explain",
+        "the card shrinks to a strip; type badge \"Negative or positive?\". A test chip writes at the top of the working area: \"Does the response oppose the change, or strengthen it?\" (\"oppose\" and \"strengthen\" light on their cues). Three `ProcessStrip`s draw, P, Q and R, each with its plate, Q greyed for now (grey tag \"next scene\"). On \"In P\" \"rate of water loss from the leaves falls\" underlines; strip P writes \"change: water content falls → response: stomata close, less loss\"; its return arrow takes a minus (teal). On \"In R\" \"ripen faster\" and \"release more ethylene\" underline; strip R writes \"change: ripening, ethylene → response: more ripening, more ethylene\" and its arrow cycles twice, then takes a plus (amber); the banana plate cross-fades to its matched state `m8-bananas-ripe-v1.png` on \"until the fruit is ripe\" (label \"end point: ripe\"). Answer box (a) writes \"R (ethylene and ripening)\" on \"positive feedback\". Hold 1 second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-explain": [
+        "new",
+        "strip Q brightens.",
+        "Correct the student: Now Q.",
+        "up / fall / negative feedback",
+        "On the spoken cues: On \"up\" \"because blood glucose concentration increases\" underlines amber in the strip and a grey up arrow pulses beside Q (tag \"the student's reason: up\"). On \"fall\" \"blood glucose concentration falls\" underlines amber and a down arrow writes at the start of strip Q (label \"stimulus: glucose",
+        "explain",
+        "strip Q brightens. On \"up\" \"because blood glucose concentration increases\" underlines amber in the strip and a grey up arrow pulses beside Q (tag \"the student's reason: up\"). On \"fall\" \"blood glucose concentration falls\" underlines amber and a down arrow writes at the start of strip Q (label \"stimulus: glucose falls\"); on \"raises it back\" \"rises back towards its usual level\" underlines and an up arrow writes at the end (label \"response: glucose rises back\"). On \"negative feedback\" strip Q's return arrow takes a minus (teal), and the down and up arrows join in a small opposing pair (tag \"opposes the fall\"). Answer box (b) builds line by line: \"The stimulus in Q is a fall in blood glucose.\" on \"fall\"; \"The response (glucagon, liver releases glucose) raises glucose back towards its usual level, opposing the fall.\" on \"raises it back\"; \"So Q is negative feedback; the direction the variable moves does not decide the type.\" on \"whichever direction\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"positive = goes up, negative = goes down\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: So the classic mistake is reading positive as \"goes up\" and negative as \"goes down\".",
+        "the classic mistake / opposes the change / adds to it",
+        "On the spoken cues: On \"opposes the change\" strip Q's minus pulses; on \"adds to it\" strip R's plus pulses. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"positive = goes up, negative = goes down\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"opposes the change\" strip Q's minus pulses; on \"adds to it\" strip R's plus pulses. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a system described in words → five parts in order; response = change in the variable (Q1)\" with the ring thumbnail; \"a hormone graph → find the stimulus, then the response that follows (Q2)\" with the graph thumbnail; \"negative or positive? → compare the response with the change (Q3)\" with the three strips thumbnail.",
+        "Decision board: So here's how to start each type.",
+        "Next",
+        "On the spoken cues: The memory line \"Opposes the change: negative. Adds to it: positive.\" writes small under the board. On \"Next\" a chip \"Next: Investigating plant water loss\" slides in at the lower right with a small `m8-stoma-open-v1.png` (new in b05). Hold about 2 seconds.",
+        "explain",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a system described in words → five parts in order; response = change in the variable (Q1)\" with the ring thumbnail; \"a hormone graph → find the stimulus, then the response that follows (Q2)\" with the graph thumbnail; \"negative or positive? → compare the response with the change (Q3)\" with the three strips thumbnail. The memory line \"Opposes the change: negative. Adds to it: positive.\" writes small under the board. On \"Next\" a chip \"Next: Investigating plant water loss\" slides in at the lower right with a small `m8-stoma-open-v1.png` (new in b05). Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M8 b03, b04, b05 and g03 rows (end) ---
 
 
 LESSONS = {
@@ -11892,6 +12830,60 @@ LESSONS = {
         'rows': M8B02_ROWS,
     },
     # --- M7 p05 and M8 b01, b02 entries (end) ---
+    # --- M8 b03, b04, b05 and g03 entries (start) ---
+    'm8b03': {
+        'design': D + 'lessons/bio-m8-b03.md',
+        'learning_review': D + 'checks/m8b03-learning-review.md',
+        'science_check': D + 'checks/m8b03-claude-science-check.md',
+        'meta': {"title": "How Do Insulin and Glucagon Regulate Blood Glucose? Two Feedback Loops", "subtitle": "After a big pasta meal, glucose pours into your blood. Overnight you eat nothing for eight hours or more, yet your brain keeps using glucose. What brings blood glucose down after the meal, and what pushes it back up while you sleep?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 4, "lessonIntent": "separating glucose (blood sugar, fuel), glycogen (stored glucose in liver and muscle) and glucagon (a hormone); stating the usual fasting range (about 4 to 6 mmol/L) and the temporary rise after a meal; naming the islets' beta cells (detect a rise, release insulin) and alpha cells (detect a fall, release glucagon) as receptor and control centre; explaining insulin's effects (muscle and fat cells take up more glucose as transporters move into the membrane; liver and muscle build glycogen, glycogenesis) and the fall in insulin as glucose returns (to a low background level); explaining glucagon's effect (the liver splits glycogen and releases glucose, glycogenolysis) when glucose falls; explaining why two opposing hormones give control in both directions; identifying the effectors (liver, muscle and fat cells, not the pancreas) and reading a graph in which insulin rises after glucose."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "three-words", "islets", "insulin", "insulin-eases", "glucagon", "two-hormones", "exam-checks", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; negative feedback opposes a change and eases as the variable returns; the pancreas as both receptor and control centre for glucose, insulin as a hormone, liver and muscle cells as effectors (b01 scene 7 outline). From Year 11: cellular respiration uses glucose; hormones are chemical messengers carried in the blood to target cells with receptors; proteins in membranes carry substances across. Not assumed: glycogen, glucagon, islets, beta and alpha cells, glycogenesis, glycogenolysis, glucose transporters, mmol/L.", "startsWith": "Trace the response to rising glucose. The video opens: Picture a big bowl of pasta.", "stopsAfter": "separating glucose (blood sugar, fuel), glycogen (stored glucose in liver and muscle) and glucagon (a hormone); stating the usual fasting range (about 4 to 6 mmol/L) and the temporary rise after a meal; naming the islets' beta cells (detect a rise, release insulin) and alpha cells (detect a fall, release glucagon) as receptor and control centre; explaining insulin's effects (muscle and fat cells take up more glucose as transporters move into the membrane; liver and muscle build glycogen, glycogenesis) and the fall in insulin as glucose returns (to a low background level); explaining glucagon's effect (the liver splits glycogen and releases glucose, glycogenolysis) when glucose falls; explaining why two opposing hormones give control in both directions; identifying the effectors (liver, muscle and fat cells, not the pancreas) and reading a graph in which insulin rises after glucose.", "nextLesson": "the same kind of loop for water: how the kidneys control the water in blood (route entry bio-m8-b04)."},
+        'teaching': {"task": "After a big pasta meal, glucose pours into your blood. Overnight you eat nothing for eight hours or more, yet your brain keeps using glucose. What brings blood glucose down after the meal, and what pushes it back up while you sleep?", "causalExplanation": "Causes: why glucose enters cells faster (more transporters in the membrane; 4); why glucose falls and why insulin then falls (5); where overnight glucose comes from (liver glycogen split and released; 6) and why the liver, not muscle, does that (6); why two hormones beat one (7). Attention: a meal and a night's sleep the learner has lived (1), a three-word trap (2), the car analogy (7). Visual medium: one glucose strip with a moving marker across a day, two coloured loop rings, and matched cell pairs that show the store filling and emptying. Apply: construct the falling loop (10a), interpret a two-line graph (10c). Remember: \"in\" and \"gone\", and the B for beta line.", "conversationalApproach": "After a big pasta meal glucose pours into your blood, then you sleep eight hours or more without eating while your brain keeps using glucose, yet a breakfast blood test is back in range, so the question is what pulls glucose down after the meal and what pushes it back up overnight. Three similar words get plain meanings first (glucose the blood sugar, glycogen the store, glucagon the hormone), with the fasting range of about four to six millimoles per litre. The pancreas is both receptor and control centre because its islets hold beta cells that detect a rise and release insulin and alpha cells that detect a fall and release glucagon. Insulin makes muscle and fat cells move extra glucose transporters into their membranes and switches on glycogenesis in the liver, so glucose leaves the blood; as glucose falls the beta cells release less insulin, which is negative feedback. Overnight, glucagon acts mainly on the liver, switching on glycogenolysis so the liver releases glucose. Driving over hills shows why two hormones are needed, insulin as the brake and glucagon as the accelerator, with the limit that both are released at some level all the time. Two exam checks follow (the pancreas signals but the liver, muscle and fat cells act; on a graph the hormone follows the glucose), then the memory aid insulin lets glucose in, glucagon acts when glucose has gone, and beta cells bring it down, and two exam questions with brief feedback.", "openingDecision": "Picture a big bowl of pasta. Within an hour, glucose from that meal is pouring into your blood. Then you sleep for eight hours or more without eating, and your brain keeps using glucose all night. Yet a blood test at breakfast would usually show glucose back in its normal range. So what pulls glucose down after the meal, and what pushes it back up while you sleep?", "understandingCheck": "10a is a construct item on the falling side (the route's stop and the dotpoint's first verb). 10c is an interpret item from a two-line graph (the second verb, and the 2020 Q31 trap). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B8-IQ1-01 (p 56): \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed example \"glucose\" (\"construct\" is attempt 1, \"interpret\" is attempt 2; sources: a loop diagram, a trace graph, a written description, painted tissue). B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\" (insulin and glucagon as hormonal coordination; scenes 3 to 7)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "A glucose strip owns the top of the frame from scene 2: the coded `lineGraph` drawn wide and short, y axis \"blood glucose (mmol/L)\" 3 to 9, x axis a 24-hour clock from noon to noon, a pale band from 4 to 6 marked \"usual fasting range\", and a bright marker dot that moves along the trace to show where the story is (after the meal, overnight, breakfast). Below it, the working area holds one painted plate or one pair at a time with callouts. b01's loop ring returns in two colours: a teal ring for the rising side (built in scenes 4 and 5) and an amber ring for the falling side (scene 6), shown side by side in scenes 7 and 8. Abstract glucose molecules are small coded hexagons (abstract, not plates). People are never drawn: no body outline; the brain plate stands for \"your brain\"; the meal is a tray of pasta. At most three bright text items at once; earlier labels dim to grey.", "transitionPlan": "The pasta tray plate appears as a coded vessel line draws and glucose dots stream along it, then the tray dims under a moon outline as a trickle of glucose dots leaves into the brain plate and a glucose reader slides in reading back in range; the board clears to three word cards writing one per cue with their shared letters grey and endings bright, and the glucose strip draws across the top with its shaded range band; b01's loop ring thumbnail appears as the pancreas plate enters, a zoom picks out an islet and the beta and alpha cells light on their cues; a teal loop ring fills slot by slot as signal pulses travel from the pancreas to muscle, fat and liver cells and an inset moves transporters into the membrane; the strip's marker runs back into the band, the ring closes with a minus arrow and the pulses thin; the teal ring slides aside and an amber ring fills for the overnight fall as glycogen chains break back into glucose in the liver; the two rings sit side by side under a coded road line whose dot rides the hills as the brake and accelerator chips light; two numbered check chips write, the crossed pancreas effector chip lands and a mini graph shows the hormone following the glucose; the two memory lines write by hand; each attempt clears the board with its question card or graph, and its feedback underlines each given as the ring slots or graph lines light and a crossed answer chip lands; four step chips write on and a next chip slides in; scene crossfade with settle."},
+        'rows': M8B03_ROWS,
+    },
+    'm8b04': {
+        'design': D + 'lessons/bio-m8-b04.md',
+        'learning_review': D + 'checks/m8b04-learning-review.md',
+        'science_check': D + 'checks/m8b04-claude-science-check.md',
+        'meta': {"title": "How Does the Kidney Regulate Water Balance? ADH, Aquaporins and Feedback", "subtitle": "On a hot day with little to drink, you pass a small amount of dark urine. Drink a litre of water quickly, and within an hour or so you pass a lot of pale urine. What tells your kidneys how much water to keep, and how do they do it?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 5, "lessonIntent": "naming blood osmolarity (the concentration of dissolved particles) as the regulated variable, not the volume drunk; describing filtration and reabsorption in a nephron, with the collecting duct setting the final water kept; tracing a rise in osmolarity through osmoreceptors in the hypothalamus (which shrink as water leaves them), nerve impulses to the posterior pituitary (neural) and ADH in the blood (hormonal; made in the hypothalamus, released from the pituitary), with thirst replacing water the kidney can only conserve; explaining how ADH inserts aquaporins into the collecting duct so water leaves by osmosis into the concentrated surrounding tissue, giving a small volume of concentrated urine; explaining the loop as negative feedback and running it in reverse after drinking water (less ADH, fewer aquaporins, a large volume of dilute urine); contrasting aldosterone (low blood volume or pressure, more sodium reabsorbed, water follows by osmosis); predicting ADH and urine changes for a salty snack and interpreting urine output after water against a salt solution of blood concentration."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "concentration", "nephron", "adh-release", "aquaporins", "loop-closes", "reverse", "aldosterone", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; negative feedback opposes a change and eases as the variable returns; the hypothalamus as a control centre (temperature). From Year 11: osmosis (water moves across a partially permeable membrane towards the side with more dissolved particles); membranes contain channel proteins; hormones travel in the blood to target cells with receptors; neurons carry nerve impulses. Not assumed: osmolarity, nephron, filtrate, reabsorption, collecting duct, osmoreceptor, posterior pituitary, ADH, aquaporin, diuresis, aldosterone.", "startsWith": "Connect blood osmolarity to ADH and nephron permeability. The video opens: On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine.", "stopsAfter": "naming blood osmolarity (the concentration of dissolved particles) as the regulated variable, not the volume drunk; describing filtration and reabsorption in a nephron, with the collecting duct setting the final water kept; tracing a rise in osmolarity through osmoreceptors in the hypothalamus (which shrink as water leaves them), nerve impulses to the posterior pituitary (neural) and ADH in the blood (hormonal; made in the hypothalamus, released from the pituitary), with thirst replacing water the kidney can only conserve; explaining how ADH inserts aquaporins into the collecting duct so water leaves by osmosis into the concentrated surrounding tissue, giving a small volume of concentrated urine; explaining the loop as negative feedback and running it in reverse after drinking water (less ADH, fewer aquaporins, a large volume of dilute urine); contrasting aldosterone (low blood volume or pressure, more sodium reabsorbed, water follows by osmosis); predicting ADH and urine changes for a salty snack and interpreting urine output after water against a salt solution of blood concentration.", "nextLesson": "how plants keep enough water (route entry bio-m8-b05)."},
+        'teaching': {"task": "On a hot day with little to drink, you pass a small amount of dark urine. Drink a litre of water quickly, and within an hour or so you pass a lot of pale urine. What tells your kidneys how much water to keep, and how do they do it?", "causalExplanation": "Causes: why losing water raises osmolarity (same particles, less water; 2); why the collecting duct matters (it sets the last of the water kept; 3); how the receptor detects (it shrinks by osmosis; 4); why water leaves the duct (aquaporins plus a concentrated surrounding tissue; 5); why the loop eases (osmoreceptors swell back; 6); why aldosterone moves water at all (water follows sodium by osmosis; 8). Attention: everyday urine colour (1), the 180 L against 1.5 L surprise (3). Visual medium: a gauge that slides with every change, matched pairs for the receptor and the duct, and the two sample cups as the output. Apply: predict for a salt load (10a), interpret a two-line graph (10c). Remember: \"anti-wee\" and \"water follows salt\".", "conversationalApproach": "On a hot day with little to drink you pass a small amount of dark urine, and after a litre of water you pass a lot of pale urine, so the question is what tells your kidneys how much water to keep and how they do it. The regulated variable is not how much you drink but blood osmolarity, how much dissolved salt and other particles are in each litre of plasma, with Year 11 osmosis as the rule behind the whole video. The kidneys filter about a hundred and eighty litres a day yet you pass about one and a half, because most of the filtrate is reabsorbed and the collecting duct sets how much of the rest you keep. Osmoreceptors in the hypothalamus shrink slightly when blood is too concentrated, the hypothalamus signals by nerve impulses to the posterior pituitary, which releases ADH, and thirst is the drinking side. ADH moves aquaporins into the duct membrane so water leaves the duct by osmosis into the concentrated tissue around it, giving a small volume of concentrated urine; as osmolarity falls the osmoreceptors swell back and ADH falls, which is negative feedback. The litre of water runs the same loop in reverse. Aldosterone is the contrast: it responds mainly to low blood volume or pressure and increases sodium reabsorption, and water follows the salt. The memory aid is ADH the anti-wee hormone and, for aldosterone, water follows salt, then two exam questions with brief feedback.", "openingDecision": "On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine. Drink a litre of water quickly, and within an hour or so you pass a lot of pale urine. Same kidneys, same day, opposite results. The colour is a clue: similar wastes dissolved in less water, or in more. So what tells your kidneys how much water to keep, and how do they do it?", "understandingCheck": "10a is a predict and explain item (the route's stop: changed intake, here salt without water). 10c is an interpret item from a two-line graph (changed intake: water against a salt solution of blood concentration). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\". The neural step (hypothalamus to posterior pituitary by nerve impulses) and the hormonal step (ADH in the blood) are both named in scene 4; aldosterone is a second hormone on the same organ (scene 8). \"Within tolerance limits\" is carried by osmolarity's range (scene 2) and the loop (scene 6)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "A concentration gauge owns the upper right from scene 2: a coded horizontal bar labelled \"blood osmolarity\" with a pale band \"normal range\" in the middle and a marker that slides right (\"more concentrated\") or left (\"more dilute\") as the story changes; the urine sample cups sit beneath it when urine is the output. The working area at the left and centre holds one painted plate or one matched pair at a time with callouts. b01's loop ring fills in scene 6 and returns as a thumbnail in 7, 10b and 11. Water molecules are small coded blue dots (abstract), salt particles small coded grey dots. People are never drawn: no body outline; urine appears only in sample cups; the brain and kidney are organ plates. At most three bright text items at once; earlier labels dim to grey.", "transitionPlan": "The dark and pale urine cup plates appear side by side with their grey tags; the cups shrink as a crossed chip rejects the amount drunk and a coded plasma box draws with water and particle dots, an osmolarity gauge sliding as dots leave or join; the nephron plate enters full size, a scribble ellipse circles one nephron and the filtrate flow and reabsorption arrows draw with a hundred and eighty against one and a half litre chips; the brain plate enters with the pituitary aligned below, an osmoreceptor pair cross-fades from normal to shrunk, a nerve pulse runs down to the posterior pituitary and ADH signal pulses enter the blood; the collecting duct pair cross-fades from closed to open as aquaporins move into the membrane and water dots leave the duct; b01's loop ring fills slot by slot and closes with a minus arrow as the ADH bar falls; the ring shrinks to a thumbnail as the water glass enters and the duct pair runs in reverse; the kidney and adrenal plate enters as sodium dots are reabsorbed and water dots follow them; the two memory lines write by hand; each attempt clears the board with its question card or graph, and its feedback underlines each given as answer lines write and a crossed answer chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."},
+        'rows': M8B04_ROWS,
+    },
+    'm8b05': {
+        'design': D + 'lessons/bio-m8-b05.md',
+        'learning_review': D + 'checks/m8b05-learning-review.md',
+        'science_check': D + 'checks/m8b05-claude-science-check.md',
+        'meta': {"title": "How Do Plants Keep Enough Water? Stomata, ABA and Xerophytes", "subtitle": "A plant on a hot, dry, windy afternoon can lose water faster than its roots take it up, and it has no brain, nerves or blood. How does it keep enough water?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 6, "lessonIntent": "tracing water from the roots through xylem to the leaf, where it evaporates from cell walls into air spaces and diffuses as vapour out through stomata (transpiration), faster in hot, dry, windy air because the outside air is drier and wind removes the humid layer at the leaf surface; explaining why stomata cannot simply stay shut (the same pores let in carbon dioxide for photosynthesis); explaining how guard cells open a stoma (they take in potassium ions, water follows by osmosis, the cells swell, and the thicker inner walls make them bow apart) and how ABA closes it under water stress (potassium ions leave, water follows by osmosis, the guard cells go limp and straighten); building the plant's negative feedback loop (falling water content, root and leaf cells, ABA, guard cells, less water loss); explaining the cost of closing (less carbon dioxide, slower photosynthesis and growth) and wilting when loss still outruns uptake; explaining how xerophyte features save water (waxy cuticle as a barrier; sunken, hairy stomata trap humid air so diffusion slows; rolled spinifex leaves; small leaves; hanging eucalypt leaves stay cooler); comparing a response that switches on and off with built-in features that work all the time."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "where-water-goes", "trade-off", "guard-cells", "aba-closes", "plant-loop", "cost-of-closing", "xerophytes", "australian-examples", "response-or-built-in", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From Year 11: xylem carries water up from the roots; leaves exchange gases; diffusion (particles spread from higher to lower concentration) and osmosis (water moves across a membrane towards the more concentrated solution); photosynthesis needs carbon dioxide. From b01: the five-part loop, negative feedback opposes a change, and a single organ can be both receptor and control centre (the pancreas). Not assumed: stoma, transpiration, guard cell, turgid, flaccid, ABA, wilting, xerophyte, cuticle, sunken stomata.", "startsWith": "Follow water loss through stomata. The video opens: On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up.", "stopsAfter": "tracing water from the roots through xylem to the leaf, where it evaporates from cell walls into air spaces and diffuses as vapour out through stomata (transpiration), faster in hot, dry, windy air because the outside air is drier and wind removes the humid layer at the leaf surface; explaining why stomata cannot simply stay shut (the same pores let in carbon dioxide for photosynthesis); explaining how guard cells open a stoma (they take in potassium ions, water follows by osmosis, the cells swell, and the thicker inner walls make them bow apart) and how ABA closes it under water stress (potassium ions leave, water follows by osmosis, the guard cells go limp and straighten); building the plant's negative feedback loop (falling water content, root and leaf cells, ABA, guard cells, less water loss); explaining the cost of closing (less carbon dioxide, slower photosynthesis and growth) and wilting when loss still outruns uptake; explaining how xerophyte features save water (waxy cuticle as a barrier; sunken, hairy stomata trap humid air so diffusion slows; rolled spinifex leaves; small leaves; hanging eucalypt leaves stay cooler); comparing a response that switches on and off with built-in features that work all the time.", "nextLesson": "practise feedback loop questions across the homeostasis topic (bio-m8-g03, route review change 7), then investigate plant water loss (bio-m8-p02)."},
+        'teaching': {"task": "A plant on a hot, dry, windy afternoon can lose water faster than its roots take it up, and it has no brain, nerves or blood. How does it keep enough water?", "causalExplanation": "Causes: why water leaves a leaf (evaporation inside, diffusion out down a concentration difference; 2); why hot, dry, windy air speeds it (drier air, humid layer removed; 2); why stomata cannot simply stay shut (shared pore; 3); why guard cells open (ions in, water follows, thick inner walls make them bow; 4); why ABA closes them (ions out, water follows; 5); why the response is negative feedback (it opposes the fall; 6); why closing costs growth (less CO₂; 7); why each xerophyte feature saves water (barrier, smaller vapour difference, less surface, cooler leaf; 8, 9). Attention: a plant with no brain still responds within minutes (1); a deal with a price (3). Visual medium: one leaf window that the camera moves through, a matched stoma pair that opens and closes on the spoken cause, a leaf that turns into a xerophyte leaf, and a plant that wilts. Apply: interpret data (11a), explain and compare an unseen plant (11c). Remember: \"ions move, water follows\" and \"waterproof, shrink, keep cool, trap humid air\".", "conversationalApproach": "On a hot, dry, windy afternoon a potted plant can lose water faster than its roots take it up, and it has no brain, nerves or blood, yet within minutes its leaves can cut the loss, so the question is how a plant keeps enough water. Water rises in the xylem, evaporates inside the leaf and diffuses out through the stomata as transpiration, faster in hot, dry, windy air. The trade-off is that the same pores let carbon dioxide in for photosynthesis. Guard cells open the pore by taking in potassium ions so water follows by osmosis and the turgid cells bow apart, like two long balloons taped along their inner edges. Under water stress, root and leaf cells make more ABA, which makes potassium ions leave the guard cells, water follows them out and the pore closes, so guard cells move ions, not water. The same five-part negative feedback loop fits, with no brain: the same cells detect and signal, the guard cells are the effectors and the response opposes the fall. Closing has a cost, less carbon dioxide and slower growth, and wilting follows if the soil stays dry. Xerophytes have built-in savings: a thick waxy cuticle and sunken, hairy stomata that trap humid air, and Australian examples (spinifex rolled leaves, small leaves, vertical eucalypt leaves) are sorted by whether a feature waterproofs, shrinks, cools or traps humid air. ABA closure is a reversible response and xerophyte features are always there, then two exam questions follow with brief feedback.", "openingDecision": "On a hot, dry, windy afternoon, a plant in a pot can lose water from its leaves faster than its roots can take it up. It has no brain, no nerves and no blood. Yet within minutes, its leaves can cut that loss. So how does a plant keep enough water?", "understandingCheck": "11a is an interpret and explain item on a graph (leaf ABA and transpiration while a pot dries), so the stimulus, signal and response are read from data. 11c is an explain and compare item on an unseen xerophyte (the stop: compare ABA action and xerophyte adaptations). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s each): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"mechanisms in plants that allow water balance to be maintained (ACSBL115)\". Physiological mechanism (scenes 4 to 7), structural mechanisms (8, 9) and the comparison (10, attempt 2). \"Within tolerance limits\" is carried by scenes 6, 7 and 10. B8-IQ1-01 (construct and interpret negative feedback loops) is practised once in scene 6, as a transfer of b01's template to a plant, and drilled in g03."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One leaf window owns the frame from scene 2: the new leaf cross-section plate, large, with the camera (`Cam`) moving between the mesophyll air space and the stoma, never stretched. The new matched stoma pair (surface view, open and closed) carries scenes 4 and 5. A small coded water budget bar graph sits at the upper right from the hook (\"water in: roots\" against \"water out: leaves\", two bars that change height with the narration), so the balance being maintained is always visible. b01's loop ring takes the frame in scene 6. The matched potted plant pair (existing turgid plate, new wilted plate) opens and closes the story (1, 5, 7). No people, hands or faces. Coded elements are limited to the loop ring, the bar graph, the attempt graph, signal pulses, vapour wisps (b02's `EvapDots`), arrows, chips and tags. At most three bright text items at once; earlier labels dim to grey.", "transitionPlan": "The potted plant plate appears with its root cut-away as coded wind lines stream past and water budget bars compare in and out; the plant slides aside and the leaf cross-section plate fills the centre as water vapour dots evaporate into the air spaces and diffuse out of a stoma, faster on the windy cue; teal carbon dioxide dots drift in through the same pore against the leaving vapour; the stoma pair enters large and cross-fades from closed to open as potassium dots enter the guard cells and water dots follow; the plant returns with a dry soil tint, ABA glows pulse in its roots and leaves, and the stoma pair cross-fades back to closed as potassium and water dots leave; b01's loop ring fills slot by slot with plant crops and closes with a minus arrow; the closed stoma returns as carbon dioxide dots bunch outside it, a photosynthesis bar shrinks and the plant cross-fades to wilted; the ordinary leaf section cross-fades to its matched xerophyte section as the cuticle and hairy pit light; the spinifex, small-leaf and eucalypt plates enter with callouts and four sorting chips; a two-column board compares the ABA response with the built-in features row by row; each attempt clears the board with its question card or graph, and its feedback underlines each given as answer lines write and a crossed answer chip lands; two step chips write on and a next chip slides in; scene crossfade with settle."},
+        'rows': M8B05_ROWS,
+    },
+    'm8g03': {
+        'design': D + 'lessons/bio-m8-g03.md',
+        'learning_review': D + 'checks/m8g03-learning-review.md',
+        'science_check': D + 'checks/m8g03-claude-science-check.md',
+        'meta': {"title": "Feedback Loop Practice: Loops, Glucose Graphs, Positive Feedback", "subtitle": "When an exam gives you an unfamiliar system, a glucose graph or a list of processes, how do you build the loop, read it off the data, and tell negative feedback from positive?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 6.5, "lessonIntent": "constructing the blood pressure loop from a description (stimulus: blood pressure falls; receptors: baroreceptors in the aorta and carotid arteries; control centre: cardiovascular centre in the medulla oblongata; effectors: heart and arterioles; response: a faster, stronger heartbeat and narrower arterioles raise blood pressure back towards normal; a minus on the return arrow) and predicting that damaged baroreceptor nerves leave pressure low after standing; reading a glucose and insulin graph after a meal (glucose peaks first at 30 minutes, insulin at 45 minutes because the rise in glucose is the stimulus for insulin release; from 45 to 120 minutes insulin makes liver, muscle and fat cells take up glucose and store glycogen, glucose falls to about its fasting value and insulin falls with it; after the dip below fasting at 150 minutes, alpha cells release glucagon and the liver releases glucose from glycogen); identifying ethylene ripening as positive feedback and explaining that glucagon raising a fallen glucose level is negative feedback because the response opposes the change."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-build", "q1-predict", "q1-mistake", "q2-question", "q2-peaks", "q2-explain", "q2-mistake", "q3-question", "q3-identify", "q3-explain", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: the five parts in order (\"Some Really Cool Elephants Run\"); negative feedback opposes a change; positive feedback strengthens a change until an end point (blood clotting); the regulated variable is inside the body. From b02: nerve impulses are the fast neural pathway; hormones travel in the blood. From b03 (route level only: \"Trace the response to rising glucose\" and \"Explain the reciprocal response to falling glucose\"): beta cells release insulin when glucose rises; liver, muscle and fat cells take up glucose and the liver stores glycogen; alpha cells release glucagon when glucose falls, and the liver breaks glycogen down to release glucose. From b04 (route level only): not used. From b05: ABA closes stomata under water stress. Not assumed: baroreceptor (the card supplies its meaning: \"stretch receptors\"), cardiovascular centre (supplied), ethylene (supplied: \"a gas\").", "startsWith": "An unfamiliar system described in words. The video opens: Feedback loop questions turn up in HSC Biology again and again, in different disguises.", "stopsAfter": "constructing the blood pressure loop from a description (stimulus: blood pressure falls; receptors: baroreceptors in the aorta and carotid arteries; control centre: cardiovascular centre in the medulla oblongata; effectors: heart and arterioles; response: a faster, stronger heartbeat and narrower arterioles raise blood pressure back towards normal; a minus on the return arrow) and predicting that damaged baroreceptor nerves leave pressure low after standing; reading a glucose and insulin graph after a meal (glucose peaks first at 30 minutes, insulin at 45 minutes because the rise in glucose is the stimulus for insulin release; from 45 to 120 minutes insulin makes liver, muscle and fat cells take up glucose and store glycogen, glucose falls to about its fasting value and insulin falls with it; after the dip below fasting at 150 minutes, alpha cells release glucagon and the liver releases glucose from glycogen); identifying ethylene ripening as positive feedback and explaining that glucagon raising a fallen glucose level is negative feedback because the response opposes the change.", "nextLesson": "investigate plant water loss in a practical (route entry bio-m8-p02)."},
+        'teaching': {"task": "When an exam gives you an unfamiliar system, a glucose graph or a list of processes, how do you build the loop, read it off the data, and tell negative feedback from positive?", "causalExplanation": "Why the response must name the variable (it is what the loop regulates; 2b, 2d); how the effectors raise pressure (more blood pumped each minute, narrower arterioles; 2b, the 2021 and 2025 marker comments on causal paths); why a cut link leaves pressure low (no signal reaches the control centre; 2c); why insulin peaks after glucose (glucose is its stimulus; 3b); why glucose falls and insulin falls with it (target cells take up glucose, and the falling stimulus lowers secretion; 3c); why glucose rises after the dip (glucagon, liver glycogen; 3c); why R is positive (each round adds more ethylene; 4b); why Q is negative despite the rise (the response opposes the fall; 4c).", "conversationalApproach": "Feedback loop questions turn up in HSC Biology in different disguises, and most come down to three moves: build the loop in order, read it off a graph, and tell negative feedback from positive. Q1 (blood pressure falling on standing up quickly) takes each part from the stem: the fall in pressure as stimulus, the baroreceptors, the cardiovascular centre in the medulla, the heart and arterioles as effectors, and a response written as the change in the variable, pressure rising back, with a minus on the return arrow; damaged baroreceptor nerves cut the loop, so pressure stays low and the person may faint; the classic slip ends at the effector with the heart beats faster. Q2 (blood glucose and insulin after a meal) reads the peaks off the axes, glucose at thirty minutes and insulin at forty-five, as the stimulus and the response that follows it, explains the fall from forty-five to one hundred and twenty minutes as insulin making liver, muscle and fat cells take up and store glucose with insulin easing as glucose falls, and explains the late rise from glucagon and the liver, which the graph does not show; the slip says insulin breaks down glucose. Q3 (ABA closing stomata, glucagon in a long run, ethylene ripening bananas) tests each process by whether the response opposes or strengthens the change, picks ethylene ripening as positive feedback, and corrects a student who calls the glucagon loop positive because glucose goes up; the slip reads positive as goes up. A decision board closes: five parts in order with the response as a change in the variable, find the stimulus first on a graph, and compare the response with the original change.", "openingDecision": "Feedback loop questions turn up in HSC Biology again and again, in different disguises. Most of them come down to three moves. Build the loop in order, read it off a graph, and tell negative feedback from positive. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.", "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`, p 56; practice and transfer only, first coverage stays with b01 to b05): B8-IQ1-01: \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed examples \"temperature (ACSBL098)\" and \"glucose\". Q1 is construct (a written description of an unseen system); Q2 is interpret (a glucose and insulin graph, the listed \"glucose\" example); Q3 is interpret by classifying (negative against positive, across a plant, a glucose and a fruit process). \"Range of sources\": a written description (Q1), a two-line graph (Q2), three short process descriptions (Q3). B8-IQ1-02 (recalled, not taught): \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways\" (Q1's nerve impulses, Q2's hormones) and \"mechanisms in plants that allow water balance to be maintained\" (Q3's process P)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in g01's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Build a loop\", \"Read a glucose graph\", \"Negative or positive?\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is b01's `LoopRing`, filling slot by slot with small plates (`m8-heart-v1.png`, `b3a2-brain-v1.png`) and short labels, then one link cut for the prediction. Q2's working is the coded `lineGraph` with two y axes (glucose and insulin), peak markers and reading guides, with `m8-pancreas-v1.png` and `m8-skeletal-muscle-v1.png` small beside it. Q3's working is three process strips (P, Q, R), each a mini two-slot loop (change → response) with its return arrow taking a minus or a plus, beside its plate (`b2b-prop-new-plant-v1.png`, `m8-pancreas-v1.png`, the new banana pair). No people, hands or faces: the person in Q1 and the adult in Q2 are words only; the body is never outlined. Coded elements are limited to loops, graphs, arrows, chips, tags, answer boxes and the decision board. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.", "transitionPlan": "The heading writes on as an empty five-slot loop ring, a blank two-line graph and two return arrows marked minus and plus draw in the working area; each question opens on a fresh board with the type badge hidden while the worded card writes beside its small plates; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the loop ring draws large and fills one slot per cue as signal pulses travel round, then a link cut mark stops the pulse and the downstream slots grey; the effector chip slides into its slot to show where it belongs; the graph enlarges, peak markers drop to the axes and the line segments brighten on their cues beside the pancreas, liver and muscle plates; three process strips draw with their plates, each gaining a minus or plus on its cue, and the student's up arrow is set against the stimulus arrow; each question ends with its classic slip chip taking a scribble cross; the decision board becomes two columns, each row lighting on its cue with its question badge; scene crossfade with settle."},
+        'rows': M8G03_ROWS,
+    },
+    # --- M8 b03, b04, b05 and g03 entries (end) ---
 }
 
 

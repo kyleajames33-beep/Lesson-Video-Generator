@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b04/measured/lesson.json",
+    "lessonSha256": "dccc4fc6bbdf1e48aef47b1598200c6bb9ea4479a8a1033e2a4b143fccad8369"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; negative feedback opposes a change and eases as the variable returns; the hypothalamus as a control centre (temperature). From Year 11: osmosis (water moves across a partially permeable membrane towards the side with more dissolved particles); membranes contain channel proteins; hormones travel in the blood to target cells with receptors; neurons carry nerve impulses. Not assumed: osmolarity, nephron, filtrate, reabsorption, collecting duct, osmoreceptor, posterior pituitary, ADH, aquaporin, diuresis, aldosterone.",
+    "startsWith": "Connect blood osmolarity to ADH and nephron permeability. The video opens: On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine.",
+    "stopsAfter": "naming blood osmolarity (the concentration of dissolved particles) as the regulated variable, not the volume drunk; describing filtration and reabsorption in a nephron, with the collecting duct setting the final water kept; tracing a rise in osmolarity through osmoreceptors in the hypothalamus (which shrink as water leaves them), nerve impulses to the posterior pituitary (neural) and ADH in the blood (hormonal; made in the hypothalamus, released from the pituitary), with thirst replacing water the kidney can only conserve; explaining how ADH inserts aquaporins into the collecting duct so water leaves by osmosis into the concentrated surrounding tissue, giving a small volume of concentrated urine; explaining the loop as negative feedback and running it in reverse after drinking water (less ADH, fewer aquaporins, a large volume of dilute urine); contrasting aldosterone (low blood volume or pressure, more sodium reabsorbed, water follows by osmosis); predicting ADH and urine changes for a salty snack and interpreting urine output after water against a salt solution of blood concentration.",
+    "nextLesson": "how plants keep enough water (route entry bio-m8-b05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b04.md"
+  ],
+  "teaching": {
+    "task": "On a hot day with little to drink, you pass a small amount of dark urine. Drink a litre of water quickly, and within an hour or so you pass a lot of pale urine. What tells your kidneys how much water to keep, and how do they do it?",
+    "causalExplanation": "Causes: why losing water raises osmolarity (same particles, less water; 2); why the collecting duct matters (it sets the last of the water kept; 3); how the receptor detects (it shrinks by osmosis; 4); why water leaves the duct (aquaporins plus a concentrated surrounding tissue; 5); why the loop eases (osmoreceptors swell back; 6); why aldosterone moves water at all (water follows sodium by osmosis; 8). Attention: everyday urine colour (1), the 180 L against 1.5 L surprise (3). Visual medium: a gauge that slides with every change, matched pairs for the receptor and the duct, and the two sample cups as the output. Apply: predict for a salt load (10a), interpret a two-line graph (10c). Remember: \"anti-wee\" and \"water follows salt\".",
+    "conversationalApproach": "On a hot day with little to drink you pass a small amount of dark urine, and after a litre of water you pass a lot of pale urine, so the question is what tells your kidneys how much water to keep and how they do it. The regulated variable is not how much you drink but blood osmolarity, how much dissolved salt and other particles are in each litre of plasma, with Year 11 osmosis as the rule behind the whole video. The kidneys filter about a hundred and eighty litres a day yet you pass about one and a half, because most of the filtrate is reabsorbed and the collecting duct sets how much of the rest you keep. Osmoreceptors in the hypothalamus shrink slightly when blood is too concentrated, the hypothalamus signals by nerve impulses to the posterior pituitary, which releases ADH, and thirst is the drinking side. ADH moves aquaporins into the duct membrane so water leaves the duct by osmosis into the concentrated tissue around it, giving a small volume of concentrated urine; as osmolarity falls the osmoreceptors swell back and ADH falls, which is negative feedback. The litre of water runs the same loop in reverse. Aldosterone is the contrast: it responds mainly to low blood volume or pressure and increases sodium reabsorption, and water follows the salt. The memory aid is ADH the anti-wee hormone and, for aldosterone, water follows salt, then two exam questions with brief feedback.",
+    "openingDecision": "On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine. Drink a litre of water quickly, and within an hour or so you pass a lot of pale urine. Same kidneys, same day, opposite results. The colour is a clue: similar wastes dissolved in less water, or in more. So what tells your kidneys how much water to keep, and how do they do it?",
+    "understandingCheck": "10a is a predict and explain item (the route's stop: changed intake, here salt without water). 10c is an interpret item from a two-line graph (changed intake: water against a salt solution of blood concentration). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed example \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\". The neural step (hypothalamus to posterior pituitary by nerve impulses) and the hormonal step (ADH in the blood) are both named in scene 4; aldosterone is a second hormone on the same organ (scene 8). \"Within tolerance limits\" is carried by osmolarity's range (scene 2) and the loop (scene 6)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "A concentration gauge owns the upper right from scene 2: a coded horizontal bar labelled \"blood osmolarity\" with a pale band \"normal range\" in the middle and a marker that slides right (\"more concentrated\") or left (\"more dilute\") as the story changes; the urine sample cups sit beneath it when urine is the output. The working area at the left and centre holds one painted plate or one matched pair at a time with callouts. b01's loop ring fills in scene 6 and returns as a thumbnail in 7, 10b and 11. Water molecules are small coded blue dots (abstract), salt particles small coded grey dots. People are never drawn: no body outline; urine appears only in sample cups; the brain and kidney are organ plates. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "The dark and pale urine cup plates appear side by side with their grey tags; the cups shrink as a crossed chip rejects the amount drunk and a coded plasma box draws with water and particle dots, an osmolarity gauge sliding as dots leave or join; the nephron plate enters full size, a scribble ellipse circles one nephron and the filtrate flow and reabsorption arrows draw with a hundred and eighty against one and a half litre chips; the brain plate enters with the pituitary aligned below, an osmoreceptor pair cross-fades from normal to shrunk, a nerve pulse runs down to the posterior pituitary and ADH signal pulses enter the blood; the collecting duct pair cross-fades from closed to open as aquaporins move into the membrane and water dots leave the duct; b01's loop ring fills slot by slot and closes with a minus arrow as the ADH bar falls; the ring shrinks to a thumbnail as the water glass enters and the duct pair runs in reverse; the kidney and adrenal plate enters as sodium dots are reabsorbed and water dots follow them; the two memory lines write by hand; each attempt clears the board with its question card or graph, and its feedback underlines each given as answer lines write and a crossed answer chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. New matched pair, side by side at the centre: `m8-urine-sample-dark-v1.png` at the left (a small volume of dark amber urine in a clear sample cup) with a grey tag \"hot day, little to drink\", and on \"Drink a litre of water quickly\" new `m8-water-glass-v1.png` enters small between them and slides out, then `m8-urine-sample-pale-v1.png` fills in at the right (a large volume of pale straw urine, same cup) with a grey tag \"an hour after a litre of water\".",
+      "teachingReason": "Hook (dark urine, pale urine): On a hot day when you haven't had much to drink, you pass a small amount of dark yellow urine.",
+      "narrationCue": "Drink a litre of water quickly / The colour is a clue / Same kidneys",
+      "motionPurpose": "On the spoken cues: On \"The colour is a clue\" a few grey waste dots sit crowded in the dark cup and spread out in the pale cup (coded overlay, low opacity). On \"Same kidneys\" a small `m8-kidney-nephron-v1.png` thumbnail (cropped by `Cam` to the kidney half) sits between the cups with two curved arrows, one to each. On",
+      "motionRole": "explain",
+      "onScreenChange": "no people. New matched pair, side by side at the centre: `m8-urine-sample-dark-v1.png` at the left (a small volume of dark amber urine in a clear sample cup) with a grey tag \"hot day, little to drink\", and on \"Drink a litre of water quickly\" new `m8-water-glass-v1.png` enters small between them and slides out, then `m8-urine-sample-pale-v1.png` fills in at the right (a large volume of pale straw urine, same cup) with a grey tag \"an hour after a litre of water\". On \"The colour is a clue\" a few grey waste dots sit crowded in the dark cup and spread out in the pale cup (coded overlay, low opacity). On \"Same kidneys\" a small `m8-kidney-nephron-v1.png` thumbnail (cropped by `Cam` to the kidney half) sits between the cups with two curved arrows, one to each. On the question the heading writes: \"How does the kidney regulate water balance?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "concentration",
+      "visualDecision": "new",
+      "visualReference": "the cups shrink to the lower right.",
+      "teachingReason": "The variable is concentration: The variable here isn't how much you drink.",
+      "narrationCue": "osmolarity",
+      "motionPurpose": "On the spoken cues: On \"isn't how much you drink\" a grey chip \"regulated: amount drunk\" takes a scribble cross. On \"how concentrated your blood is\" a coded box of blood plasma (a rounded rectangle, abstract) draws at the centre with blue `WaterDots` and grey salt dots; gloss \"osmolarity: concentration of dissolved",
+      "motionRole": "explain",
+      "onScreenChange": "the cups shrink to the lower right. On \"isn't how much you drink\" a grey chip \"regulated: amount drunk\" takes a scribble cross. On \"how concentrated your blood is\" a coded box of blood plasma (a rounded rectangle, abstract) draws at the centre with blue `WaterDots` and grey salt dots; gloss \"osmolarity: concentration of dissolved particles in blood\". The coded `ConcGauge` draws at the upper right, marker in the \"normal range\" band. On \"Lose water\" some blue dots leave the box upward (grey tag \"sweat, breath\"), the grey dots crowd together, and the gauge marker slides right to \"more concentrated\". On \"Drink lots of water\" blue dots pour in, the grey dots spread out, and the marker slides left past the band to \"more dilute\", then returns to the band. On \"osmosis\" a membrane line draws across a second small box with few grey dots on the left and many on the right; blue dots drift across to the right; grey tag \"Year 11: osmosis\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "nephron",
+      "visualDecision": "adjust",
+      "visualReference": "the plasma box leaves; the gauge stays.",
+      "teachingReason": "A hundred and eighty litres: Your kidneys control how much water leaves.",
+      "narrationCue": "nephrons / reabsorption / collecting duct",
+      "motionPurpose": "On the spoken cues: `m8-kidney-nephron-v1.png` enters at the centre left at full size. On \"about a million tiny tubes\" a `scribbleEllipse` circles the nephron drawing at the right of the plate, label \"nephron (one of about a million per kidney)\", and the `Cam` moves to the nephron. On \"blood is filtered\" a callout",
+      "motionRole": "explain",
+      "onScreenChange": "the plasma box leaves; the gauge stays. `m8-kidney-nephron-v1.png` enters at the centre left at full size. On \"about a million tiny tubes\" a `scribbleEllipse` circles the nephron drawing at the right of the plate, label \"nephron (one of about a million per kidney)\", and the `Cam` moves to the nephron. On \"blood is filtered\" a callout points to the glomerulus and its cup, label \"filtered here\"; `WaterDots` and small grey dots move into the tube. On \"flows along the tubule\" a coded flow line traces along the coiled tubule; on \"taken back into the blood\" short arrows leave the tubule into the surrounding vessels, label \"reabsorption: back into the blood\". On \"control comes from what's taken back\" the reabsorption arrows pulse. On \"a hundred and eighty litres\" two coded columns write at the right, a tall one \"filtered: about 180 L a day\" and a tiny one \"passed as urine: about 1.5 L\"; on \"one and a half\" the tiny column takes a bright outline. On \"collecting duct\" a callout to the straight branching tube at the far right of the plate, label \"collecting duct: sets the final water kept\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "adh-release",
+      "visualDecision": "adjust",
+      "visualReference": "the kidney plate dims and moves to the lower left.",
+      "teachingReason": "Who's measuring: hypothalamus, pituitary, ADH: So who's measuring?",
+      "narrationCue": "osmoreceptors / ADH",
+      "motionPurpose": "On the spoken cues: The gauge marker sits right of the band (\"more concentrated\"). `b3a2-brain-v1.png` enters at the centre with `b3a2-pituitary-part-v1.png` aligned in place below the hypothalamus. On \"osmoreceptors\" a `scribbleEllipse` circles the hypothalamus and a callout zooms into new",
+      "motionRole": "explain",
+      "onScreenChange": "the kidney plate dims and moves to the lower left. The gauge marker sits right of the band (\"more concentrated\"). `b3a2-brain-v1.png` enters at the centre with `b3a2-pituitary-part-v1.png` aligned in place below the hypothalamus. On \"osmoreceptors\" a `scribbleEllipse` circles the hypothalamus and a callout zooms into new `m8-osmoreceptor-normal-v1.png` (grey tag \"osmoreceptor cell, drawn far larger than real\"); on \"they shrink slightly\" it cross-fades to `m8-osmoreceptor-shrunk-v1.png` while blue `WaterDots` leave it; label \"osmoreceptor: shrinks as water leaves\". On \"nerve impulses down to the posterior pituitary\" a bright `DrawPath` nerve line draws down the stalk and a fast `SignalPulse` runs along it; label \"neural: nerve impulses\". On \"releases ADH\" slow `SignalPulse` dots in a second colour leave the pituitary into a coded vessel line; label \"hormonal: ADH in the blood\". On \"made in the hypothalamus\" a grey tag \"made in hypothalamus, released from posterior pituitary\" and a grey chip \"ADH released from the hypothalamus\" takes a small scribble cross. On \"makes you thirsty\" `m8-water-glass-v1.png` appears small at the right with a grey tag \"thirst: drinking replaces water\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "aquaporins",
+      "visualDecision": "adjust",
+      "visualReference": "the brain plate leaves; the ADH `SignalPulse` dots carry on along the vessel line to the right.",
+      "teachingReason": "ADH opens water channels: ADH travels in the blood to the collecting ducts.",
+      "narrationCue": "aquaporins",
+      "motionPurpose": "On the spoken cues: New matched pair at the centre: `m8-collecting-duct-closed-v1.png` (a cut-away of a collecting duct wall, filtrate inside at the left, surrounding tissue and a capillary at the right, aquaporins held in vesicles inside the cells). On \"binds to the duct cells\" a callout to a receptor on the blood",
+      "motionRole": "explain",
+      "onScreenChange": "the brain plate leaves; the ADH `SignalPulse` dots carry on along the vessel line to the right. New matched pair at the centre: `m8-collecting-duct-closed-v1.png` (a cut-away of a collecting duct wall, filtrate inside at the left, surrounding tissue and a capillary at the right, aquaporins held in vesicles inside the cells). On \"binds to the duct cells\" a callout to a receptor on the blood side, label \"ADH binds here\". On \"moves water channels ... into the membrane\" the plate cross-fades to `m8-collecting-duct-open-v1.png` (vesicles fused, aquaporins in the membrane facing the filtrate); gloss \"aquaporins: water channels\". On \"very concentrated\" the surrounding tissue takes a coded dense scatter of grey dots and a grey tag \"surrounding tissue: very concentrated (medulla)\". On \"water moves out of the duct by osmosis\" blue `WaterDots` stream through the aquaporins and on into the capillary. On \"smaller volume of more concentrated urine\" the dark sample cup from the hook reappears small below the gauge, and the gauge marker slides back towards the band. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "loop-closes",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to b01's `LoopRing`, filling slot by slot on cue: stimulus \"blood osmolarity rises\" (gauge thumbnail, marker right), receptor \"osmoreceptors (hypothalamus)\" (`m8-osmoreceptor-shrunk-v1.png` small), control centre \"hypothalamus → posterior pituitary releases ADH\", effector \"collecting ducts: aquaporins in, more water reabsorbed\" (`m8-collecting-duct-open-v1.png` small), response \"osmolarity falls back\".",
+      "teachingReason": "The loop closes: As water returns to the blood, osmolarity falls back towards normal.",
+      "narrationCue": "swell back / negative feedback / varies with concentration / extremely low",
+      "motionPurpose": "On the spoken cues: On \"swell back\" the osmoreceptor thumbnail cross-fades to its normal state; the `SignalPulse` dots thin. On \"negative feedback\" the return arrow draws with a minus sign. On \"varies with concentration\" a small coded \"ADH\" bar beside the control centre slot rises and falls with the gauge marker; on",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to b01's `LoopRing`, filling slot by slot on cue: stimulus \"blood osmolarity rises\" (gauge thumbnail, marker right), receptor \"osmoreceptors (hypothalamus)\" (`m8-osmoreceptor-shrunk-v1.png` small), control centre \"hypothalamus → posterior pituitary releases ADH\", effector \"collecting ducts: aquaporins in, more water reabsorbed\" (`m8-collecting-duct-open-v1.png` small), response \"osmolarity falls back\". On \"swell back\" the osmoreceptor thumbnail cross-fades to its normal state; the `SignalPulse` dots thin. On \"negative feedback\" the return arrow draws with a minus sign. On \"varies with concentration\" a small coded \"ADH\" bar beside the control centre slot rises and falls with the gauge marker; on \"extremely low\" it drops to a thin sliver, tag \"very low after a big drink\" (Revision 2), which sets up scene 7. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "reverse",
+      "visualDecision": "adjust",
+      "visualReference": "the ring shrinks to the upper left as a thumbnail.",
+      "teachingReason": "The reverse: a litre of water: Now the litre of water.",
+      "narrationCue": "ADH release drops / taken back out / less water can leave / large volume of pale, dilute urine / back in range / opposite direction",
+      "motionPurpose": "On the spoken cues: `m8-water-glass-v1.png` enters at the left and blue `WaterDots` flow from it into a vessel line; the gauge marker slides left to \"more dilute\". On \"ADH release drops\" the ADH bar on the ring thumbnail falls lower. The collecting duct pair returns at the centre in its open state and, on \"taken back",
+      "motionRole": "explain",
+      "onScreenChange": "the ring shrinks to the upper left as a thumbnail. `m8-water-glass-v1.png` enters at the left and blue `WaterDots` flow from it into a vessel line; the gauge marker slides left to \"more dilute\". On \"ADH release drops\" the ADH bar on the ring thumbnail falls lower. The collecting duct pair returns at the centre in its open state and, on \"taken back out\", cross-fades to `m8-collecting-duct-closed-v1.png`; on \"less water can leave\" only a few blue dots cross the wall and most stream on down the duct. On \"large volume of pale, dilute urine\" the pale sample cup from the hook fills in below the gauge; on \"back in range\" the gauge marker returns to the band. On \"opposite direction\" the two cups pulse, dark at the left, pale at the right. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "aldosterone",
+      "visualDecision": "adjust",
+      "visualReference": "the duct pair dims.",
+      "teachingReason": "Aldosterone: water follows salt: One more hormone often turns up beside ADH.",
+      "narrationCue": "Aldosterone",
+      "motionPurpose": "On the spoken cues: New `m8-kidney-adrenal-v1.png` enters at the left (a kidney with its adrenal gland capping the top); on \"adrenal glands\" a callout to the adrenal, label \"adrenal gland: aldosterone\". On \"low blood volume or pressure\" a grey tag \"detected in the kidney; via renin and angiotensin (extension)\". On",
+      "motionRole": "explain",
+      "onScreenChange": "the duct pair dims. New `m8-kidney-adrenal-v1.png` enters at the left (a kidney with its adrenal gland capping the top); on \"adrenal glands\" a callout to the adrenal, label \"adrenal gland: aldosterone\". On \"low blood volume or pressure\" a grey tag \"detected in the kidney; via renin and angiotensin (extension)\". On \"reabsorb more sodium\" the nephron plate returns small with a callout to the later tubule and duct (grey tag \"late distal tubule and collecting duct\"); grey salt dots (labelled \"Na⁺\") move from the tubule into the blood first, and on \"water follows the sodium\" blue dots follow them a beat later through the open aquaporins of a small `m8-collecting-duct-open-v1.png` thumbnail (grey tag \"needs water channels\"; Revision 2). On \"doesn't move water directly\" a grey chip \"aldosterone reabsorbs water\" takes a scribble cross. On the last sentence a two-column chip writes: \"ADH: osmolarity → water channels (duct)\" and \"aldosterone: volume, pressure → sodium; water follows (through channels)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears to two handwritten lines, large: \"ADH: the anti-wee hormone\" beside the small dark sample cup, with a small grey gloss \"diuresis = making urine\"; and \"Aldosterone: water follows salt\" with grey dots and blue dots drawn following them.",
+      "teachingReason": "Memory: To keep them apart: ADH is the anti-wee hormone.",
+      "narrationCue": "To keep them apart: ADH is the anti-wee",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to two handwritten lines, large: \"ADH: the anti-wee hormone\" beside the small dark sample cup, with a small grey gloss \"diuresis = making urine\"; and \"Aldosterone: water follows salt\" with grey dots and blue dots drawn following them. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a salty snack)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A student eats a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a salty snack))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student eats a large packet of salted potato chips and drinks nothing for the next two hours. Sodium chloride from the chips is absorbed into the blood. The student has not been sweating.\" Demand: \"(a) Predict the change in ADH release, and in the volume and concentration of the student's urine. (2 marks) (b) Explain how this response limits further water loss, and why drinking water would help restore blood osmolarity. (3 marks)\" (Revision 2). Lined answer space and a blank five-slot ring outline as a drawing space (no labels). No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "raises blood osmolarity / even without sweating / Drinking supplies / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"raises blood osmolarity\" the given \"Sodium chloride ... absorbed into the blood\" takes an amber underline; on \"even without sweating\" the given \"has not been sweating\" takes an underline (Revision 3). Answer lines write, one per cue, earlier lines dimming: \"(a) ADH increases; urine: small",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"raises blood osmolarity\" the given \"Sodium chloride ... absorbed into the blood\" takes an amber underline; on \"even without sweating\" the given \"has not been sweating\" takes an underline (Revision 3). Answer lines write, one per cue, earlier lines dimming: \"(a) ADH increases; urine: small volume, concentrated\", \"osmoreceptors detect rise → posterior pituitary releases ADH\", \"aquaporins in collecting ducts → more water reabsorbed → limits further water loss\", \"(b) drinking supplies new water → dilutes the salt\". The drawn ring fills its slots in short labels; its response slot reads \"limits further water loss\" (not a full recovery while drinks are withheld; Revision 2). On \"Drinking supplies\" the given \"drinks nothing for the next two hours\" takes an amber underline and `m8-water-glass-v1.png` appears small beside the card. On \"classic mistake\" a chip \"ADH makes new water\" writes and takes a scribble cross, with small text \"it only keeps water already filtered\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (water against a salt solution)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. On separate days, a healthy adult drank",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (water against a salt solution))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"On two separate days, a healthy adult drank 1 L of liquid over 5 minutes at time 0: on day 1, pure water; on day 2, a salt solution with the same osmolarity as blood plasma. Urine output was measured every 30 minutes for 180 minutes.\" The coded `lineGraph`: y axis \"urine output (mL per minute)\" 0 to 12; x axis \"time after drinking (min)\" 0 to 180. Blue line \"pure water\": 1.0 (0), 3.0 (30), 9.0 (60), 8.0 (90), 4.0 (120), 1.5 (150), 1.0 (180). Grey line \"salt solution\": 1.0, 1.2, 1.5, 1.5, 1.5, 1.3, 1.2. A small grey tag \"teaching data\". Demand: \"(a) Explain the change in urine output after drinking pure water, with reference to ADH. (3 marks) (b) Explain why drinking the salt solution caused little change in urine output. (2 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Pure water diluted the blood / urine output peaked at about an hour / fell as concentration recovered / matched blood concentration / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"Pure water diluted the blood\" the given \"pure water\" takes an amber underline and an answer line writes \"blood diluted → osmoreceptors → less ADH → fewer aquaporins\"; on \"urine output peaked at about an hour\" the blue line's peak brightens with a marker \"about 9 mL/min at 60 min\"; on \"fell as",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Pure water diluted the blood\" the given \"pure water\" takes an amber underline and an answer line writes \"blood diluted → osmoreceptors → less ADH → fewer aquaporins\"; on \"urine output peaked at about an hour\" the blue line's peak brightens with a marker \"about 9 mL/min at 60 min\"; on \"fell as concentration recovered\" the blue line's fall brightens. On \"matched blood concentration\" the given \"same osmolarity as blood plasma\" takes an amber underline and the grey line brightens along its length. A mini `ConcGauge` beside the graph shows the marker sliding left then back for water, and staying in the band for the salt solution. On \"classic mistake\" the given \"1 L\" takes a thin grey underline, and a chip \"the kidneys respond to the volume drunk\" writes and takes a scribble cross. Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on, one per cue: \"blood concentration up or down?\", \"ADH up or down?\", \"ducts and urine?\".",
+      "teachingReason": "Decision rule and handoff: So for any water balance question, ask what happened to blood concentration, which way ADH moved, and what that did to the collecting ducts and the urine.",
+      "narrationCue": "So for any water balance question, ask what",
+      "motionPurpose": "On the spoken cues: The loop ring returns small above them with the two sample cups. A \"Next\" chip slides in at the lower right: \"Next: How do plants keep enough water?\" (small grey tag; a small coded leaf outline beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on, one per cue: \"blood concentration up or down?\", \"ADH up or down?\", \"ducts and urine?\". The loop ring returns small above them with the two sample cups. A \"Next\" chip slides in at the lower right: \"Next: How do plants keep enough water?\" (small grey tag; a small coded leaf outline beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b04-learning-review.md",
+      "sha256": "795b6c2eb78e7e69479519762cbd4eaf38d4c695e10400f289a56425c96102c5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b04-claude-science-check.md",
+      "sha256": "6e1d8f85dd7b09a1ad04be7cc7389425f6d6ced34954db4b7c039137afd640d6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}
