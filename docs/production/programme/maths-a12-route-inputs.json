@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "purpose": "Brief128 route inputs for Claude, not the route itself or a coverage approval.",
+  "syllabus": "Mathematics Advanced 11-12 (2024), Year12",
+  "identifierPolicy": "Use the exact NESA CMS content-item codenames. NESA code fields are blank; do not label these as published outcome codes.",
+  "officialEvidence": {
+    "source": "NSW Curriculum current HTML, downloaded 2026-11-01",
+    "year12Points": 158,
+    "mathPolicy": "sourceHtml preserves the official mathematical layout; text is a flattened search aid."
+  },
+  "recommendations": [
+    "Keep candidate IDs/order d01-d10, with revised Year12 boundaries. d01 introduces scaled/shifted exponentials; the unscaled derivative is Year11 knowledge.",
+    "d06-d08 recall Year11 chain/product/quotient rules and extend them to the new function families, rather than claiming these rules are new Year12 content.",
+    "Use applications L06 for d09 and L09 for d10. Preserve L01 as later exponential application material.",
+    "Add later focused homes for tan proof, sec/cosec/cot, remaining trig composites and tangent/normal problems. These are mandatory actions omitted by the first-ten draft, not outgoing content.",
+    "After d10 teach physical modelling, continuity/differentiability, second derivatives/concavity and further graphing in a coherent route. The first ten are not complete calculus coverage."
+  ],
+  "subjects": {
+    "Mathematics Advanced": {
+      "year": 12,
+      "entries": [
+        {
+          "id": "math-a12-d01",
+          "playlistOrder": 1,
+          "mainLearnerQuestion": "How does the derivative change when an exponential is scaled or shifted?",
+          "syllabusActionIds": [
+            "ci8306d30a",
+            "ci4380403a"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci8306d30a",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Apply the rules of differentiation to find the derivative of f x = k e ax , where k and a are constants",
+              "sourceHtml": "<div><span>Apply the rules of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7a40deaa-1a5c-4df4-904b-197ec9a540af\" data-item-codename=\"glo_link__mav__differentiation\" data-item-id=\"7a40deaa-1a5c-4df4-904b-197ec9a540af\" data-item-systemname=\"GLO Link: MAV: differentiation\" data-item-type=\"link_glossary\">differentiation</a> to find the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>k</mi><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant=\"italic\">ax</mi></mrow></msup></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> are <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-codename=\"glo_link__shared__constant\" data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-systemname=\"GLO Link: SHARED: constant\" data-item-type=\"link_glossary\">constants</a></span></div>",
+              "coverage": "owned-action"
+            },
+            {
+              "id": "ci4380403a",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Use the chain rule to prove d dx e ax + b = a e ax + b , where a and b are constants and a ≠ 0",
+              "sourceHtml": "<div><span>Use the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a> to prove </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant=\"italic\">ax</mi><mo>+</mo><mi>b</mi></mrow></msup></mrow></mfenced><mo>=</mo><mi>a</mi><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant=\"italic\">ax</mi><mo>+</mo><mi>b</mi></mrow></msup></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span> are constants and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>≠</mo><mn>0</mn></math></span></div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson01.sa",
+            "sectionIds": [
+              "derive-differentiating-exponential-rule",
+              "work-differentiating-exponential-examples"
+            ],
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "55f33541a1b8fd90cce56ca5cdc98d3375bf42438e428637c922201cb6464430"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ciac4383bd",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Conclude that Euler’s number, e , is a unique number such that d dx e x = e x , that is, e x is its own derivative",
+              "sourceHtml": "<div><span>Conclude that Euler’s number, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math></span><span>, is a unique number such that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, that is, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> is its own <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a></span></div>"
+            },
+            {
+              "id": "ci00fa8fac",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the chain rule : if y is a differentiable function of u , and u is a differentiable function of x , then dy dx = dy du × du dx or if h x = f g x for differentiable functions f ( x ) and g ( x ) then h ' x = f ' g x g ' x",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cif6a6cb7d",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d dx f x + g x = f ' x + g ' ( x ) , and the derivative of a multiple of a function is the multiple of its derivative: d dx ( k ⋅ f x ) = k ⋅ f ' ( x )",
+              "sourceHtml": "<div><span>Apply the fact that the derivative of a sum is the sum of the derivatives: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mo>=</mo><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span><span>, and the derivative of a multiple of a function is the multiple of its derivative: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>)</mo><mo>=</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span></div>"
+            },
+            {
+              "id": "ci98f43d14",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Graph the exponential functions y = k a x and y = k a - x for constants a and k where a > 0 , a ≠ 1 and k ≠ 0 , and identify its asymptote , y - intercept , domain and range",
+              "sourceHtml": "<div><span>Graph the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8c7e319c-9b00-48fb-9cee-8efe079dec2a\" data-item-codename=\"glo_link__mav__exponential_function\" data-item-id=\"8c7e319c-9b00-48fb-9cee-8efe079dec2a\" data-item-systemname=\"GLO Link: MAV: exponential function\" data-item-type=\"link_glossary\">exponential functions</a></span> <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></mfenced><mi></mi></math></span> <span>for <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-codename=\"glo_link__shared__constant\" data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-systemname=\"GLO Link: SHARED: constant\" data-item-type=\"link_glossary\">constants</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span>, <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi></mi></math></span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">a</mi><mo>≠</mo><mn>1</mn><mi></mi></math></span> <span>and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>≠</mo><mn>0</mn></math></span><span>, and identify its <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-codename=\"glo_link__ma__asymptote\" data-item-id=\"ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-systemname=\"GLO Link: MA: asymptote\" data-item-type=\"link_glossary\">asymptote</a>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-<a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-codename=\"glo_link__shared__intercept\" data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-systemname=\"GLO Link: SHARED: intercept\" data-item-type=\"link_glossary\">intercept</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-codename=\"glo_link__shared__domain\" data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-systemname=\"GLO Link: SHARED: domain\" data-item-type=\"link_glossary\">domain</a> and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-codename=\"glo_link__shared__range__function_\" data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-systemname=\"GLO Link: SHARED: range (function)\" data-item-type=\"link_glossary\">range</a><br/></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            }
+          ],
+          "startBoundary": "Recall that e^x is its own derivative, then connect the horizontal scale in e^(ax+b) to its gradient.",
+          "stopBoundary": "Differentiate k e^(ax+b), retaining the inner expression and multiplying by a. Stop before general bases, products and quotients.",
+          "nextHandoff": "math-a12-d02: rewrite a^x with base e.",
+          "recommendation": "Keep d01 identity but change the draft learner question. The unscaled e^x rule is Year11 ciac4383bd, so a Year12 video must extend to k e^(ax+b). Recall chain rule before using it; it is Year11 content.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d02",
+          "playlistOrder": 2,
+          "mainLearnerQuestion": "Why does differentiating a^x introduce ln a?",
+          "syllabusActionIds": [
+            "ci31a76d4a"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci31a76d4a",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Prove and use the formula d dx a x = ( ln ⁡ a ) a x , where a is a constant and a > 0",
+              "sourceHtml": "<div><span>Prove and use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><mo>(</mo><mrow><mrow><mi>ln</mi></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow><mo>)</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> is a constant and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span></div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson02.sa",
+            "sectionIds": [
+              "derive-differentiating-general-exponential-rule",
+              "work-differentiating-general-exponential-examples"
+            ],
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "d82bf5eca440e61298bc65c1b702bd1365a5c4e3de70d510c9b67d77ca28edfa"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ciac4383bd",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Conclude that Euler’s number, e , is a unique number such that d dx e x = e x , that is, e x is its own derivative",
+              "sourceHtml": "<div><span>Conclude that Euler’s number, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math></span><span>, is a unique number such that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, that is, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> is its own <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a></span></div>"
+            },
+            {
+              "id": "ci00fa8fac",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the chain rule : if y is a differentiable function of u , and u is a differentiable function of x , then dy dx = dy du × du dx or if h x = f g x for differentiable functions f ( x ) and g ( x ) then h ' x = f ' g x g ' x",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cic84a1659",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Recognise and use the logarithmic properties: log a ⁡ a x = x for all real x , a log a ⁡ x = x where x > 0",
+              "sourceHtml": "<div><span>Recognise and use the logarithmic properties: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mrow><mo>=</mo><mi>x</mi></math></span><span> for all real </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>a</mi></mrow><mrow><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></msup><mo>=</mo><mi>x</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></span></div>"
+            },
+            {
+              "id": "ciae7673fb",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Prove the change of base rule log a ⁡ x = log b ⁡ x log b ⁡ a and use it to solve problems",
+              "sourceHtml": "<p>Prove the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-codename=\"glo_link__mav__change_of_base_rule\" data-item-id=\"ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-systemname=\"GLO Link: MAV: change of base rule\" data-item-type=\"link_glossary\">change of base rule</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></mrow></mfrac></math></span> and use it to solve problems</p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            }
+          ],
+          "startBoundary": "Rewrite a^x=e^(x ln a), using fixed a>0.",
+          "stopBoundary": "Prove and apply (a^x)′=a^x ln a. Include the constant a=1 case; stop before products and extended composites.",
+          "nextHandoff": "math-a12-d03: derive the natural-log slope.",
+          "recommendation": "Retain d02 after scaled exponentials in d01. Keep the proof, not only the memorised rule. Positive a below1 gives ln a<0; a=1 gives derivative0.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d03",
+          "playlistOrder": 3,
+          "mainLearnerQuestion": "Why is the derivative of ln x equal to 1/x?",
+          "syllabusActionIds": [
+            "cib961593d"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cib961593d",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Use chain rule on the identity e ln ⁡ x = x to prove the formula d dx ln ⁡ x = 1 x for the derivative of the natural logarithm function where x > 0",
+              "sourceHtml": "<div><span>Use chain rule on the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/0be21110-2e0f-40b1-abd9-8aa4a1a3308a\" data-item-codename=\"glo_link__shared__ma___identity\" data-item-id=\"0be21110-2e0f-40b1-abd9-8aa4a1a3308a\" data-item-systemname=\"GLO Link: SHARED (MA): identity\" data-item-type=\"link_glossary\">identity</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mrow><mrow><mi>ln</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></msup><mo>=</mo><mi>x</mi></math></span><span> to prove the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mrow><mrow><mi>ln</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>x</mi></mrow></mfrac></math></span><span> for the derivative of the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-codename=\"glo_link__mav__natural_logarithm\" data-item-id=\"a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-systemname=\"GLO Link: MAV: natural logarithm\" data-item-type=\"link_glossary\">natural logarithm</a> function where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></span></div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson03.sa",
+            "sectionIds": [
+              "derive-differentiating-natural-log-rule",
+              "work-differentiating-natural-log-examples"
+            ],
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "67acb31aa3cef7b424bbd7021a490f9fd09f47f30521fb92f3f90c9a67b1ef01"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ci00fa8fac",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the chain rule : if y is a differentiable function of u , and u is a differentiable function of x , then dy dx = dy du × du dx or if h x = f g x for differentiable functions f ( x ) and g ( x ) then h ' x = f ' g x g ' x",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cic84a1659",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Recognise and use the logarithmic properties: log a ⁡ a x = x for all real x , a log a ⁡ x = x where x > 0",
+              "sourceHtml": "<div><span>Recognise and use the logarithmic properties: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mrow><mo>=</mo><mi>x</mi></math></span><span> for all real </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>a</mi></mrow><mrow><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></msup><mo>=</mo><mi>x</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></span></div>"
+            },
+            {
+              "id": "ci7cd97f8c",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Define the natural logarithm ln ⁡ a = log e ⁡ a",
+              "sourceHtml": "<p>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-codename=\"glo_link__mav__natural_logarithm\" data-item-id=\"a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-systemname=\"GLO Link: MAV: natural logarithm\" data-item-type=\"link_glossary\">natural logarithm</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi mathvariant=\"normal\">ln</mi></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></math></span></p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "ciac4383bd",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Conclude that Euler’s number, e , is a unique number such that d dx e x = e x , that is, e x is its own derivative",
+              "sourceHtml": "<div><span>Conclude that Euler’s number, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math></span><span>, is a unique number such that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, that is, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> is its own <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a></span></div>"
+            }
+          ],
+          "startBoundary": "Use e^(ln x)=x on x>0 and differentiate both sides with the known chain rule.",
+          "stopBoundary": "Obtain (ln x)′=1/x, preserve x>0, and apply constant-multiple/log-law cases. Leave general composite logarithms to d06.",
+          "nextHandoff": "math-a12-d04: change the logarithm base.",
+          "recommendation": "Retain d03, but make the official chain-rule proof through e^(ln x)=x explicit. The site implicit proof through x=e^y is equivalent mathematics; the official content explicitly asks for the identity proof.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d04",
+          "playlistOrder": 4,
+          "mainLearnerQuestion": "How does changing the log base change its derivative?",
+          "syllabusActionIds": [
+            "ciba8514ff"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ciba8514ff",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Prove and use the formula d dx log a x = 1 x ln ⁡ a , where a is a constant and a > 0",
+              "sourceHtml": "<div><span>Prove and use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub><mi>x</mi></mrow></mfenced><mo>=</mo><mi></mi><mfrac><mrow><mn>1</mn></mrow><mrow><mrow><mrow><mi mathvariant=\"italic\">x</mi><mi>ln</mi></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></mrow></mfrac></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> is a constant and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson04.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson04.sa",
+            "sectionIds": [
+              "derive-differentiating-general-log-rule",
+              "work-differentiating-general-log-examples"
+            ],
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "96a99daeb562b1b8d49f9322c70def702a177fbb5142c306a0250952958a27d0"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ciae7673fb",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Prove the change of base rule log a ⁡ x = log b ⁡ x log b ⁡ a and use it to solve problems",
+              "sourceHtml": "<p>Prove the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-codename=\"glo_link__mav__change_of_base_rule\" data-item-id=\"ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-systemname=\"GLO Link: MAV: change of base rule\" data-item-type=\"link_glossary\">change of base rule</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></mrow></mfrac></math></span> and use it to solve problems</p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "ci7cd97f8c",
+              "focusArea": "Exponential and logarithmic functions",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "text": "Define the natural logarithm ln ⁡ a = log e ⁡ a",
+              "sourceHtml": "<p>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-codename=\"glo_link__mav__natural_logarithm\" data-item-id=\"a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-systemname=\"GLO Link: MAV: natural logarithm\" data-item-type=\"link_glossary\">natural logarithm</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi mathvariant=\"normal\">ln</mi></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></math></span></p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cif6a6cb7d",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d dx f x + g x = f ' x + g ' ( x ) , and the derivative of a multiple of a function is the multiple of its derivative: d dx ( k ⋅ f x ) = k ⋅ f ' ( x )",
+              "sourceHtml": "<div><span>Apply the fact that the derivative of a sum is the sum of the derivatives: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mo>=</mo><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span><span>, and the derivative of a multiple of a function is the multiple of its derivative: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>)</mo><mo>=</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span></div>"
+            }
+          ],
+          "startBoundary": "Rewrite log_a x=(ln x)/(ln a), with x>0, a>0 and a≠1.",
+          "stopBoundary": "Differentiate simple base-a logarithms and compare their slopes. Leave composite and product examples to d06/d07.",
+          "nextHandoff": "math-a12-d05: read sine/cosine derivatives from their graphs.",
+          "recommendation": "Retain d04. Although the official point says a>0, logarithms also require a≠1; retain that necessary condition. Include a base between0 and1 so the explanation does not imply every log increases.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d05",
+          "playlistOrder": 5,
+          "mainLearnerQuestion": "How do the sine and cosine graphs reveal their derivatives?",
+          "syllabusActionIds": [
+            "ci55bbcbd8"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci55bbcbd8",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Determine the formulas d dx sin ⁡ x = cos ⁡ x and d dx cos ⁡ x = - sin ⁡ x informally by using the graphs of y = sin ⁡ x and y = cos ⁡ x and verify with graphing applications",
+              "sourceHtml": "<div><span>Determine the formulas </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfenced><mo>=</mo><mrow><mrow><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow><mi> </mi></math></span><span>and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mrow><mrow><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfenced><mo>=</mo><mo>-</mo><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span> <span></span><span>informally by using the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-codename=\"glo_link__shared__graph\" data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-systemname=\"GLO Link: SHARED: graph\" data-item-type=\"link_glossary\">graphs</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>y</mi><mo>=</mo><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>y</mi><mo>=</mo><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span><span> and verify with graphing applications </span></div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson05.sa",
+            "sectionIds": [
+              "read-and-prove-trig-derivatives",
+              "work-trig-examples"
+            ],
+            "exampleIds": [],
+            "sha256": "db0b045dcd7d18b9fe84ed1e03d77f93564a690c792680aa9e139ad5bda4be68"
+          },
+          "entryKnowledge": [
+            {
+              "id": "cid79268a8",
+              "focusArea": "Trigonometry and measure of angles",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5",
+              "text": "Graph y = s i n x , y = c o s x and y = t a n x over domains given in degrees or radians, showing intercepts with the x -axis and y -axis and any asymptotes , determine their domains and ranges , and period and amplitude where appropriate, and whether each is even or odd or neither",
+              "sourceHtml": "<p><span>Graph <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"normal\">s</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi> </mi><mi>x</mi></math></span></span><span>, <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mi> </mi><mi>x</mi></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi> </mi><mi>x</mi></math></span> over <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-codename=\"glo_link__shared__domain\" data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-systemname=\"GLO Link: SHARED: domain\" data-item-type=\"link_glossary\">domains</a> given in degrees or radians, showing <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-codename=\"glo_link__shared__intercept\" data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-systemname=\"GLO Link: SHARED: intercept\" data-item-type=\"link_glossary\">intercepts</a> with the <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span></span><span>-axis and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span></span><span>-axis and any <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-codename=\"glo_link__ma__asymptote\" data-item-id=\"ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-systemname=\"GLO Link: MA: asymptote\" data-item-type=\"link_glossary\">asymptotes</a>, determine their domains and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-codename=\"glo_link__shared__range__function_\" data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-systemname=\"GLO Link: SHARED: range (function)\" data-item-type=\"link_glossary\">ranges</a>, and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/9548f847-7f59-4232-90c2-d8e34ddfba3e\" data-item-codename=\"glo_link__shared__period\" data-item-id=\"9548f847-7f59-4232-90c2-d8e34ddfba3e\" data-item-systemname=\"GLO Link: SHARED: period\" data-item-type=\"link_glossary\">period</a> and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4975d265-2437-472e-95b7-dd8d9540ad96\" data-item-codename=\"glo_link__shared__ma___amplitude\" data-item-id=\"4975d265-2437-472e-95b7-dd8d9540ad96\" data-item-systemname=\"GLO Link: SHARED (MA): amplitude\" data-item-type=\"link_glossary\">amplitude</a> where appropriate, and whether each is even or <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/3c4d7c57-21e0-4d67-bd43-d9a47450bbf9\" data-item-codename=\"glo_link__shared__odd_function\" data-item-id=\"3c4d7c57-21e0-4d67-bd43-d9a47450bbf9\" data-item-systemname=\"GLO Link: SHARED: odd function\" data-item-type=\"link_glossary\">odd</a> or neither<br/></span></p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "ciccaa78be",
+              "focusArea": "Trigonometry and measure of angles",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5",
+              "text": "Convert between degrees and radians and find the exact sine, cosine and tangent ratios for integer multiples of π 6 and π 4",
+              "sourceHtml": "<div><span>Convert between degrees and radians and find the exact sine, cosine and tangent ratios for <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/663b4839-286b-455e-ac14-f5b4fb4c48fc\" data-item-codename=\"glo_link__shared__integer\" data-item-id=\"663b4839-286b-455e-ac14-f5b4fb4c48fc\" data-item-systemname=\"GLO Link: SHARED: integer\" data-item-type=\"link_glossary\">integer</a> multiples of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>π</mi></mrow><mrow><mn>6</mn></mrow></mfrac></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>π</mi></mrow><mrow><mn>4</mn></mrow></mfrac></math></span></div>"
+            },
+            {
+              "id": "cie4815a8e",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Define f ' ( x ) , for any function f ( x ) and any value x , to be the gradient of the tangent to the curve y = f ( x ) at the point P x , f x if the tangent exists and is not vertical",
+              "sourceHtml": "<div><span>Define </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span>, for any function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and any value </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, to be the gradient of the tangent to the curve </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> at the point </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>,</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> if the tangent exists and is not vertical</span></div>"
+            },
+            {
+              "id": "ci447b12b9",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Examine the gradient of a curve at a point on the curve using graphing applications",
+              "sourceHtml": "<p>Examine the gradient of a curve at a point on the curve using graphing applications</p>"
+            }
+          ],
+          "startBoundary": "Read the tangent gradient along y=sin x with x in radians and build its gradient graph.",
+          "stopBoundary": "Establish and verify sin′=cos and cos′=-sin. Keep tan, reciprocal derivatives, composite trig and motion for later focused videos.",
+          "nextHandoff": "math-a12-d06: apply the chain rule to the new function families.",
+          "recommendation": "Keep the focused sine/cosine opener. Add explicit later homes for tan proof, sec/cosec/cot and tangent/normal transfer. The ten-video draft does not complete Differential calculus. Do not import every topic from site L05 into d05.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d06",
+          "playlistOrder": 6,
+          "mainLearnerQuestion": "How do we apply the chain rule to exponential, log and trig functions?",
+          "syllabusActionIds": [
+            "ci3eebb8d2",
+            "ci004fc1ed",
+            "ci04cbaf6f",
+            "ci4f1f8ece"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci3eebb8d2",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Use the chain rule to differentiate functions of the form e f x",
+              "sourceHtml": "<div><span>Use the chain rule to differentiate <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-codename=\"glo_link__shared__function\" data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-systemname=\"GLO Link: SHARED (MA): function\" data-item-type=\"link_glossary\">functions</a> of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></msup></math></span></div>",
+              "coverage": "owned-action"
+            },
+            {
+              "id": "ci004fc1ed",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Use the chain rule to differentiate functions of the form ln ⁡ f x",
+              "sourceHtml": "<div><span>Use the chain rule to differentiate functions of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>ln</mi></mrow><mo>⁡</mo><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mrow></math></span></div>",
+              "coverage": "owned-action"
+            },
+            {
+              "id": "ci04cbaf6f",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Use the chain rule to differentiate functions of the form sin ⁡ f x , cos ⁡ f x and tan ⁡ f x",
+              "sourceHtml": "<div><span>Use the chain rule to differentiate functions of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mrow></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mrow></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>tan</mi></mrow><mo>⁡</mo><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mrow></math></span></div>",
+              "coverage": "partial",
+              "remaining": "Tan composites need the separate tan-derivative lesson first; this pack owns sine and cosine composites."
+            },
+            {
+              "id": "ci4f1f8ece",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Apply the product, quotient and chain rules to differentiate functions of the form f x g x , f x g x or f ( g ( x ) ) , where f ( x ) and g ( x ) are any of the functions within the scope of the Mathematics Advanced course",
+              "sourceHtml": "<div><span>Apply the product, quotient and chain rules to differentiate functions of the form</span><br/><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfrac></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> are any of the functions within the scope of the Mathematics Advanced course</span></div>",
+              "coverage": "partial"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson06.sa",
+            "sectionIds": [
+              "apply-chain-rule-and-tangents"
+            ],
+            "exampleIds": [],
+            "sha256": "78e7c736197b665f805e37d29f18f38a3c68f577c38731f9e139ff16f0277bf9"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ci00fa8fac",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the chain rule : if y is a differentiable function of u , and u is a differentiable function of x , then dy dx = dy du × du dx or if h x = f g x for differentiable functions f ( x ) and g ( x ) then h ' x = f ' g x g ' x",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cie3d91a6e",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function",
+              "sourceHtml": "<p>Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function</p>"
+            }
+          ],
+          "startBoundary": "Recall the Year11 inner/outer rule, then substitute the new exponential, logarithmic and sine/cosine derivatives.",
+          "stopBoundary": "Differentiate focused mixed composites with domains stated. Leave products and quotients to d07/d08 and extended triple nesting to later practice.",
+          "nextHandoff": "math-a12-d07: products of the new function families.",
+          "recommendation": "d06 is an extension/refresher, not the first teaching of chain rule. A short chain recall belongs in d01-d04 proofs. Keep tan composites pending the separate tan-derivative home.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d07",
+          "playlistOrder": 7,
+          "mainLearnerQuestion": "How do both factors contribute to a product derivative?",
+          "syllabusActionIds": [
+            "ci4f1f8ece"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci4f1f8ece",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Apply the product, quotient and chain rules to differentiate functions of the form f x g x , f x g x or f ( g ( x ) ) , where f ( x ) and g ( x ) are any of the functions within the scope of the Mathematics Advanced course",
+              "sourceHtml": "<div><span>Apply the product, quotient and chain rules to differentiate functions of the form</span><br/><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfrac></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> are any of the functions within the scope of the Mathematics Advanced course</span></div>",
+              "coverage": "partial"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson06.sa",
+            "sectionIds": [
+              "apply-product-and-quotient-rules",
+              "work-combining-examples"
+            ],
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "78e7c736197b665f805e37d29f18f38a3c68f577c38731f9e139ff16f0277bf9"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ci72e90f3a",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the product rule : if y = uv , where u and v are both differentiable functions of x , then dy dx = u dv dx + v du dx or if h ( x ) = f ( x ) g ( x ) for differentiable functions f ( x ) and g ( x ) then h ' x = f x g ' x + f ' x g ( x )",
+              "sourceHtml": "<p><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/34ebb454-26c9-49c1-bd02-739c32d6400a\" data-item-codename=\"glo_link__shared__product_rule\" data-item-id=\"34ebb454-26c9-49c1-bd02-739c32d6400a\" data-item-systemname=\"GLO Link: SHARED: product rule\" data-item-type=\"link_glossary\">product rule</a>: if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">uv</mi></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math></span><span> are both <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/18b38972-1a2a-4054-b0a3-eb923cd84043\" data-item-codename=\"glo_link__mav__differentiable\" data-item-id=\"18b38972-1a2a-4054-b0a3-eb923cd84043\" data-item-systemname=\"GLO Link: MAV: differentiable\" data-item-type=\"link_glossary\">differentiable</a> functions of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>=</mo><mi>u</mi><mfrac><mrow><mi mathvariant=\"italic\">dv</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>+</mo><mi>v</mi><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span></span><span> for differentiable functions <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> then <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>f</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> </span></p>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cie3d91a6e",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function",
+              "sourceHtml": "<p>Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function</p>"
+            },
+            {
+              "id": "ci00fa8fac",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the chain rule : if y is a differentiable function of u , and u is a differentiable function of x , then dy dx = dy du × du dx or if h x = f g x for differentiable functions f ( x ) and g ( x ) then h ' x = f ' g x g ' x",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            }
+          ],
+          "startBoundary": "Recall the Year11 product rule and use it with newly known exponential and trig derivatives.",
+          "stopBoundary": "Apply and factor one new-family product, then transfer to a product whose second factor needs chain rule. Leave quotients and stationary classification.",
+          "nextHandoff": "math-a12-d08: quotients and denominator restrictions.",
+          "recommendation": "Retain d07 after d06. Avoid re-teaching elementary product rule at length; the Year12 addition is the range of functions and combinations.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d08",
+          "playlistOrder": 8,
+          "mainLearnerQuestion": "How do we differentiate a quotient and keep its domain?",
+          "syllabusActionIds": [
+            "ci4f1f8ece"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci4f1f8ece",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480",
+              "text": "Apply the product, quotient and chain rules to differentiate functions of the form f x g x , f x g x or f ( g ( x ) ) , where f ( x ) and g ( x ) are any of the functions within the scope of the Mathematics Advanced course",
+              "sourceHtml": "<div><span>Apply the product, quotient and chain rules to differentiate functions of the form</span><br/><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfrac></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> are any of the functions within the scope of the Mathematics Advanced course</span></div>",
+              "coverage": "partial"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\differential-calculus\\lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson06.sa",
+            "sectionIds": [
+              "apply-product-and-quotient-rules",
+              "work-combining-examples"
+            ],
+            "exampleIds": [
+              "we-2"
+            ],
+            "sha256": "78e7c736197b665f805e37d29f18f38a3c68f577c38731f9e139ff16f0277bf9"
+          },
+          "entryKnowledge": [
+            {
+              "id": "cifb023b4e",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Apply the quotient rule : if y = u v , where u and v are both differentiable functions of x , then dy dx = v du dx - u dv dx v 2 or if h x = f x g x then h ' x = g x f ' x - f x g ' x [ g x ] 2",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/048c348e-40a4-436f-bb30-3c83f0f2f72b\" data-item-codename=\"glo_link__shared__quotient_rule\" data-item-id=\"048c348e-40a4-436f-bb30-3c83f0f2f72b\" data-item-systemname=\"GLO Link: Shared: quotient rule\" data-item-type=\"link_glossary\">quotient rule</a>: if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>u</mi></mrow><mrow><mi>v</mi></mrow></mfrac></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math></span><span> are both differentiable functions of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>,</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>-</mo><mi>u</mi><mfrac><mrow><mi mathvariant=\"italic\">dv</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></mrow><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathcolor=\"000000\">h</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">=</mo><mfrac><mrow><mi mathcolor=\"000000\">f</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow></mfrac></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathcolor=\"000000\">h</mi><mrow><mo mathcolor=\"000000\">'</mo><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">=</mo><mfrac><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><msup><mrow><mi mathcolor=\"000000\">f</mi></mrow><mrow><mo mathcolor=\"000000\">'</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">-</mo><mi mathcolor=\"000000\">f</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><msup><mrow><mi mathcolor=\"000000\">g</mi></mrow><mrow><mo mathcolor=\"000000\">'</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow><mrow><mo mathcolor=\"000000\">[</mo><msup><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">]</mo></mrow><mrow><mn mathcolor=\"000000\">2</mn></mrow></msup></mrow></mfrac></mrow></math></span></div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_LiveRegion\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_HoverRegion\" style=\"background-color: white;\">\n<div style=\"line-height: 0;\"></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>\n<div class=\"MJX_ToolTip\" style=\"background-color: white;\">\n<div></div>\n</div>"
+            },
+            {
+              "id": "cie3d91a6e",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function",
+              "sourceHtml": "<p>Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function</p>"
+            },
+            {
+              "id": "ci3d1a69e4",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Use the rules for differentiation to find equations of tangents and normals to a curve at points on the curve",
+              "sourceHtml": "<p>Use the rules for differentiation to find <a data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" href=\"\">equations</a> of tangents and <a data-item-id=\"b1954c59-df57-4732-bdd3-b95e50597207\" href=\"\">normals to a curve</a> at points on the curve</p>"
+            }
+          ],
+          "startBoundary": "Recall the Year11 quotient rule, preserving which factor is the numerator and which is the denominator.",
+          "stopBoundary": "Differentiate quotients of new functions, simplify without changing the original domain, and evaluate a gradient. Leave full tangent/normal problems to a later home.",
+          "nextHandoff": "math-a12-d09: use derivative signs on valid intervals.",
+          "recommendation": "Retain d08. DC06 we-2 also serves later tangent transfer but its tangent equation is not required to teach quotient differentiation.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d09",
+          "playlistOrder": 9,
+          "mainLearnerQuestion": "How do derivative signs identify increasing, decreasing and turning?",
+          "syllabusActionIds": [
+            "ci5a635ade"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci5a635ade",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa383c9104",
+              "text": "Analyse the stationary points of a function by testing values for f ' ( x ) , then classify the stationary points as local minima or local maxima where gradients change around the point, or horizontal points of inflection where gradients have the same sign on both sides of the point",
+              "sourceHtml": "<div><span>Analyse the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-codename=\"glo_link__mav__stationary_point\" data-item-id=\"415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-systemname=\"GLO Link: MAV: stationary point\" data-item-type=\"link_glossary\">stationary points</a> of a function by testing values for </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span>, then classify the stationary points as local minima or local maxima where <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-codename=\"glo_link__shared__gradient\" data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-systemname=\"GLO Link: SHARED: gradient\" data-item-type=\"link_glossary\">gradients</a> change around the point, or horizontal points of inflection where gradients have the same sign on both sides of the point</span></div>",
+              "coverage": "owned-action"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\applications-of-calculus\\lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/applications-of-calculus/lesson06.sa",
+            "sectionIds": [
+              "build-the-sign-table",
+              "work-sign-test-examples"
+            ],
+            "exampleIds": [
+              "we-l17-1",
+              "we-l17-2",
+              "we-l17-3"
+            ],
+            "sha256": "657d500145cd430aa6e261213b25bd24ea6112f85af490a0f9bce6bae8e7b4e7"
+          },
+          "entryKnowledge": [
+            {
+              "id": "cie435d18f",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Interpret f x as increasing at x = c when f ' c > 0 and decreasing at x = c when f ' c < 0",
+              "sourceHtml": "<div><span>Interpret </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> as increasing at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>&gt;</mo><mn>0</mn></mrow></math></span><span> and decreasing at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>&lt;</mo><mn>0</mn></mrow></math></span></span><span></span></div>"
+            },
+            {
+              "id": "cief55e727",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x -axis, and recognise that f x is stationary at x = c when f ' c = 0",
+              "sourceHtml": "<div><span>Describe the behaviour of a function at a point as stationary when the tangent at the point is <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-codename=\"glo_link__shared__parallel\" data-item-id=\"7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-systemname=\"GLO Link: SHARED: parallel\" data-item-type=\"link_glossary\">parallel</a> to the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis, and recognise that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> is stationary at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>=</mo><mn>0</mn></mrow></math></span></div>"
+            },
+            {
+              "id": "ci6341be75",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Identify stationary points on the graph of a cubic function , and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions",
+              "sourceHtml": "<div><span>Identify <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-codename=\"glo_link__mav__stationary_point\" data-item-id=\"415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-systemname=\"GLO Link: MAV: stationary point\" data-item-type=\"link_glossary\">stationary points</a> on the graph of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-codename=\"glo_link__shared__cubic_function\" data-item-id=\"15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-systemname=\"GLO Link: SHARED: cubic function\" data-item-type=\"link_glossary\">cubic function</a>, and the values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions</span></div>"
+            },
+            {
+              "id": "ci1d192d62",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Use the formula d dx ( x n ) = n x n - 1 for all real values of n",
+              "sourceHtml": "<div><span>Use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup><mo>)</mo><mo>=</mo><mi>n</mi><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></span><span> for all real values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span></span></div>"
+            }
+          ],
+          "startBoundary": "Recall the Year11 sign-to-direction connection, then organise intervals and distinguish stationary from turning.",
+          "stopBoundary": "Classify local maxima/minima by sign changes and recognize a stationary point that does not turn. Keep concavity proof and general inflection tests for the later concavity lesson.",
+          "nextHandoff": "math-a12-d10: compare candidates over the whole domain.",
+          "recommendation": "Replace the draft primary source applications L01 with L06. L01 is an exponential-optimisation application, not a complete first sign-chart lesson. Recall the Year11 increasing/decreasing rule, then teach the Year12 stationary classification.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d09.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a12-d10",
+          "playlistOrder": 10,
+          "mainLearnerQuestion": "Which valid candidate gives the global maximum or minimum?",
+          "syllabusActionIds": [
+            "cif819815e",
+            "ci7e542996",
+            "ci4a528415",
+            "ci5668f984"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cif819815e",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa383c9104",
+              "text": "Define a global maximum of a function f ( x ) to be a point P a , f a on the graph where f x ≤ f ( a ) , for all x in the domain, and define a global minimum similarly",
+              "sourceHtml": "<div><span>Define a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8b1baf02-3dc2-4d75-9198-f1a8a75f1ead\" data-item-codename=\"glo_link__mav__global_maximum\" data-item-id=\"8b1baf02-3dc2-4d75-9198-f1a8a75f1ead\" data-item-systemname=\"GLO Link: MAV: global maximum\" data-item-type=\"link_glossary\">global maximum</a> of a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> to be a point </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mo>,</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>a</mi></mrow></mfenced></mrow></mfenced></math></span><span> on the graph where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>≤</mo><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo></math></span><span>, for all </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> in the domain, and define a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5f9be9e4-310f-4e21-ac23-d009c9793210\" data-item-codename=\"glo_link__mav__global_minimum\" data-item-id=\"5f9be9e4-310f-4e21-ac23-d009c9793210\" data-item-systemname=\"GLO Link: MAV: global minimum\" data-item-type=\"link_glossary\">global minimum</a> similarly </span></div>",
+              "coverage": "owned-action"
+            },
+            {
+              "id": "ci7e542996",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa383c9104",
+              "text": "Examine whether any discontinuities or endpoints of the domain on which f ( x ) is being considered are points of maxima or minima",
+              "sourceHtml": "<div><span>Examine whether any discontinuities or endpoints of the domain on which </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> is being considered are points of maxima or minima</span></div>",
+              "coverage": "owned-action"
+            },
+            {
+              "id": "ci4a528415",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa383c9104",
+              "text": "Solve optimisation problems by using calculus to find local and global maxima and minima of differentiable functions, checking discontinuities of f ' ( x ) and endpoints of the domain if applicable",
+              "sourceHtml": "<div><span>Solve optimisation problems by using calculus to find local and global maxima and minima of differentiable functions, checking discontinuities of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and endpoints of the domain if applicable</span></div>",
+              "coverage": "partial"
+            },
+            {
+              "id": "ci5668f984",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa383c9104",
+              "text": "Formulate conclusions to optimisation problems by evaluating solutions given the constraints of the domain",
+              "sourceHtml": "<p>Formulate conclusions to optimisation problems by evaluating solutions given the constraints of the domain</p>",
+              "coverage": "partial"
+            }
+          ],
+          "sourceLesson": {
+            "path": "C:\\Users\\kygs\\hscscience\\subjects\\maths-advanced\\year12\\applications-of-calculus\\lesson09.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year12/applications-of-calculus/lesson09.sa",
+            "sectionIds": [
+              "local-versus-global",
+              "work-optimisation-examples"
+            ],
+            "exampleIds": [
+              "we-l20-3"
+            ],
+            "sha256": "369b2272d143657b8c4ef9f53c2f25ddaccc3c110f0d7fbac806964abaaf0d3a"
+          },
+          "entryKnowledge": [
+            {
+              "id": "ci6341be75",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Identify stationary points on the graph of a cubic function , and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions",
+              "sourceHtml": "<div><span>Identify <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-codename=\"glo_link__mav__stationary_point\" data-item-id=\"415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-systemname=\"GLO Link: MAV: stationary point\" data-item-type=\"link_glossary\">stationary points</a> on the graph of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-codename=\"glo_link__shared__cubic_function\" data-item-id=\"15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-systemname=\"GLO Link: SHARED: cubic function\" data-item-type=\"link_glossary\">cubic function</a>, and the values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions</span></div>"
+            },
+            {
+              "id": "cief55e727",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x -axis, and recognise that f x is stationary at x = c when f ' c = 0",
+              "sourceHtml": "<div><span>Describe the behaviour of a function at a point as stationary when the tangent at the point is <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-codename=\"glo_link__shared__parallel\" data-item-id=\"7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-systemname=\"GLO Link: SHARED: parallel\" data-item-type=\"link_glossary\">parallel</a> to the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis, and recognise that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> is stationary at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>=</mo><mn>0</mn></mrow></math></span></div>"
+            },
+            {
+              "id": "ci1d192d62",
+              "focusArea": "Introduction to differentiation",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "text": "Use the formula d dx ( x n ) = n x n - 1 for all real values of n",
+              "sourceHtml": "<div><span>Use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup><mo>)</mo><mo>=</mo><mi>n</mi><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></span><span> for all real values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span></span></div>"
+            }
+          ],
+          "startBoundary": "Separate a nearby local extremum from the largest/smallest value over the full stated domain.",
+          "stopBoundary": "On one closed interval, list all valid stationary/nondifferentiable candidates and endpoints, evaluate f and compare. Briefly transfer to an exponential interval. Leave building physical objectives and open-domain limit cases to the next video.",
+          "nextHandoff": "Applied optimisation: define variables/units, establish the constraint and objective, state the physical domain, then optimise.",
+          "recommendation": "Replace the primary source applications L01 with L09, especially we-l20-3. Use L01 exponential examples as later application, not the sole basis for global comparisons. Keep endpoint inclusion explicit and defer noncompact-domain reasoning to the next lesson.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d10.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}
