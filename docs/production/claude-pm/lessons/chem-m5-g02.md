@@ -1,6 +1,8 @@
 # G02 (Chemistry, Module 5): Every type of HSC equilibrium question, part 1: explain and predict (design)
 
-Status: Revision 5 (31 Oct): cut to length and moved to the current practice-video format; needs a Codex error check before voicing.
+Status: Revision 6 (1 Nov): brief 127 reviews resolved (0 blockers; 2 should fix fixed: "no net reaction, no net heat change", and the equal-gas-count clause removed from learner tags). Narration 5,960 characters, about 567 s. Needs a Codex error check before voicing.
+
+Earlier status, Revision 5 (31 Oct): cut to length and moved to the current practice-video format; needs a Codex error check before voicing.
 
 Earlier status, Revision 4 (14 Oct): Codex fact check resolved; ready for owner read and voicing approval.
 
@@ -116,9 +118,9 @@ Visual: earlier working clears. Type card 3 lights. The question card writes on 
 Visual: the vessel gains argon dots on "Argon" (pale blue, ten dots drop in), the gauge rises from 1 to 2. On "bumps into things" the argon dots bounce off the walls while the reacting dots keep the same spacing (two NO2 dots meet as often as before; N2O4 pairs split as often as before). A big test card writes on the right: "Does Q still equal K?" with a pen arrow to the NO2 and N2O4 dials, which stay at 8 and 4 (C4a made-up units), the gauge ringed and the tag "pressure up, concentrations unchanged". The rate bars stay level at 32 and 32 with a teal "equal" bracket. A K chip sits small at the top: "Q = K". The written answer builds at lower left in four short lines: "Argon is inert and the volume is fixed, so [NO2] and [N2O4] are unchanged." "The collision rates are unchanged, so both rates stay equal." "No net reaction, so the colour is unchanged." "No net reaction, so no heat is released or absorbed: temperature unchanged." On "family" two small chips lie under the test card: "catalyst" and "added pure solid (not in K)", each with a small "Q = K". Hold about 2 seconds.
 
 ### 4c. q3-mistake (two slips)
-> Two slips: **pressure rises, so it shifts to fewer particles**, and pressure rises, so the **temperature rises**. Pressure alone is not a disturbance here, and with no reaction there's no heat change.
+> Two slips: **pressure rises, so it shifts to fewer particles**, and pressure rises, so the **temperature rises**. Pressure alone is not a disturbance here: no net reaction, no net heat change.
 
-Visual: two slips write on and are crossed out, with green corrections: "shifts to fewer particles" with "pressure alone is not a disturbance here"; "pressure up so temperature up" with "no reaction, no heat change". The memory aid writes large at the end: "Does Q still equal K? If yes, nothing shifts." with the condition tag "closed system, steady temperature; the equation as written; the volume may change only if the gas count is equal; here: fixed volume, insulated, argon at the mixture's temperature". The type board ticks card 3; all three are ticked.
+Visual: two slips write on and are crossed out, with green corrections: "shifts to fewer particles" with "pressure alone is not a disturbance here"; "pressure up so temperature up" with "no net reaction, no net heat change". The memory aid writes large at the end: "Does Q still equal K? If yes, nothing shifts." with the condition tag "closed system, steady temperature; Q for the equation as written; here: fixed volume, insulated, argon at the mixture's temperature". The type board ticks card 3; all three are ticked.
 
 ### 5a. try1-question (attempt 1, countdown 10 seconds)
 > Your turn. Nitrogen and hydrogen make ammonia in a rigid sealed container, at equilibrium. Some extra nitrogen is injected, and the temperature does not change. Using collision theory, explain the effect on the concentration of hydrogen. For now, decide: which rate changes first, and does the hydrogen concentration rise or fall? Pause here to answer.
@@ -153,7 +155,7 @@ Heading on screen: "Key notes: what to write in your book".
 2. Graphs: axis label first. Only the added or removed substance jumps on its own. A volume change makes every gas concentration jump, but no amount jumps. Curves follow the ratio and level on ruled lines.
 3. No shift: if Q still equals K, nothing shifts (argon at fixed volume, catalyst, added solid).
 
-Memory aid (large, on the notes screen): *Change, collisions, rate, other rate, net, named species, level.* Seven words, five lines: collisions and rate are line 2; net and named species are line 4. Condition tag: "one concentration changed, temperature steady; a volume change or heating changes both rates". Second line: *Does Q still equal K? If yes, nothing shifts.* Condition tag: "closed system, steady temperature; the equation as written; the volume may change only if the gas count is equal".
+Memory aid (large, on the notes screen): *Change, collisions, rate, other rate, net, named species, level.* Seven words, five lines: collisions and rate are line 2; net and named species are line 4. Condition tag: "one concentration changed, temperature steady; a volume change or heating changes both rates". Second line: *Does Q still equal K? If yes, nothing shifts.* Condition tag: "closed system, steady temperature; Q for the equation as written; here, fixed volume". (Equal-gas-count reasoning moves to G02b with the other moved-out types.)
 
 ## Teaching checks
 
