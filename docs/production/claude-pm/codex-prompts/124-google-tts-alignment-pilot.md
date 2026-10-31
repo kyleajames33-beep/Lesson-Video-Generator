@@ -29,3 +29,10 @@ Hand in to `status.md` with:
 - any blocker.
 
 Don't change the ElevenLabs scripts or any lesson folder. No commits.
+
+## Addendum (root, 1 November 2026): maths pronunciation
+
+When the key is available, also test 3 lines from `../lessons/math-a12-d01.md`, including "k e to the a x plus b" and "the derivative of e to the two x is two e to the two x".
+- Check whether the voice reads the constant "a" as the letter ("ay") or as the article ("uh").
+- Check how it reads fractions such as "one half" and expressions such as "e to the x".
+- If a pronunciation override (for example a phonetic respelling or an alias) is needed, give the exact method.

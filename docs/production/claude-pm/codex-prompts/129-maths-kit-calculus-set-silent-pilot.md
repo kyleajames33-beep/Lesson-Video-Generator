@@ -49,3 +49,13 @@ Write `checks/codex-build-129.md`, covering:
 - anything you couldn't build.
 
 Hand in to `status.md`. No lesson designs, narration, voice or commits.
+
+## Addendum (root, 1 November 2026): needs found while designing d01
+
+Add these as reusable kit parts, because d02 to d05 reuse them. Show each one in the pilot on d01's examples (`../lessons/math-a12-d01.md`).
+
+6. **Parameter animation:** `FunctionGraph` animates a parameter smoothly, for example e^x morphing to e^(2x) as s goes from 1 to 2, with an optional dashed ghost of the start curve.
+7. **Rigid transforms that carry attachments:** mirror in the y-axis, horizontal slides and vertical stretches move the curve's tangent lines, points and triangles with it.
+8. **Gradient dots:** `DerivativeTracer` can plot gradient dots on the **same axes** as the curve (in d01 they land on the curve itself for e^x), as well as on a separate lower graph.
+9. **Tangent triangle:** a part with labelled run and rise legs whose labels can change on cue (for example "run 1" becoming "run ½"), plus number readouts for height and gradient.
+10. **Question card:** `src/explainer/lessons/skills-shared/card.tsx` currently accepts only Chemistry or Biology. Add a Mathematics subject, with its own badge colour from the explainer tokens, without changing how the existing subjects look.
