@@ -14,6 +14,20 @@ Written by Claude (designer and PM) on 1 November 2026, from the owner's plan of
 
 Year 12 Maths goes first because its students need it this term. The Year 11 science courses begin in Term 1 2027, so their videos should be ready by about February 2027.
 
+## Syllabus rule (owner, 1 November 2026)
+
+Maths and Physics videos use **only the new syllabuses**:
+- Mathematics Advanced, Extension 1, Extension 2 and Standard 11-12 (2024);
+- Physics 11-12 (2025);
+- Biology 11-12 (2025) for Year 11 Biology.
+
+In practice:
+- **Syllabus point IDs:** every route entry and design cites the exact new-syllabus content point IDs and wording, taken from the official NSW Curriculum pages.
+- **Site lessons:** a site lesson is a source only where the crosswalk (brief 128 for Advanced; one to follow per course) shows that it teaches new-syllabus content. Site lessons with outgoing 2017 content or stale module labels are not used as written.
+- **Old Physics maps:** the existing Physics kit (`src/explainer/physics/`, 54 families) and the image bank's `physics-plan.json` map the **outgoing 2017 Year 12 course**. They supply reusable drawing parts (vectors, fields, trajectories, graphs), never a route or lesson list. Year 11 Physics gets its own map from the 2025 syllabus.
+- **Old Maths plans:** the Maths image bank's 60 rows predate the crosswalk. Each row is checked against the 2024 syllabus before use.
+- **Review checks:** every learning review and science check for these courses confirms the syllabus version and point IDs.
+
 ## Decisions
 
 1. **Year 12 Mathematics Advanced comes first.** It has the largest cohort, the best groundwork, and Extension 1 builds on it.
@@ -57,8 +71,10 @@ Year 12 Maths goes first because its students need it this term. The Year 11 sci
 | 6. Year 11 Biology designs from the brief 61 packs, from about December | Claude, Codex | Year 12 science voicing done |
 | 7. Year 11 Physics map, then designs; Year 11 Maths route | Codex, Claude | After step 6 starts |
 
-## Open questions for the owner
+## Owner answers (1 November 2026)
 
-1. Is Advanced first right, or do you want Standard earlier?
-2. OK to commit the Physics kit source and archive its media (decision 8)?
-3. The Google AI Studio key for the pilot.
+1. Advanced first: agreed.
+2. Physics kit: commit the source and archive the media. Done in commit e583fe8; the media is on Drive under `physics-kit-review-2026-10-25`, with a sha256 manifest at `claude-pm/assets/physics-kit-review-archive-manifest.txt`.
+3. Use the new syllabuses only for Maths and Physics: recorded above under "Syllabus rule".
+4. The Google AI Studio key is still needed for the pilot (brief 124).
+5. Cultural review decisions: on hold for now (owner). B15, B17 and B20 stay unvoiced until those calls are made.
