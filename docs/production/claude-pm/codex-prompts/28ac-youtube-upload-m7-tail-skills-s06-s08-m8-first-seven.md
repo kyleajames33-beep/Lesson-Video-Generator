@@ -1,8 +1,8 @@
-# Brief 28ac: upload 15 videos (the rest of Module 7, skills S06 and S08, and the first seven Module 8 videos)
+# Brief 28ac: upload 20 videos (the rest of Module 7, skills S06 and S08, and the first twelve Module 8 videos)
 
 Read `28y-youtube-upload-m6-practicals-s05-m7-first-twenty.md` first and follow its rules exactly: hash checks, metadata, cumulative-timing chapters, captions, playlists and the hand-in. Do this after brief 28ab, when the browser connection works.
 
-These were rendered on 30 October to 1 November under the standing render policy. Claude verified every file: 1920 by 1080 with audio, and the frame count matches the design's scene total (a shortfall of 1 to 4 frames is normal). Paths are under `out/explainer/`; captions are under `docs/production/claude-pm/lessons/`, and so are the designs.
+These were rendered on 30 October to 1 November (the last five, P02, G01, B03, B04 and B05, were built by Codex in briefs 125 and 126) under the standing render policy. Claude verified every file: 1920 by 1080 with audio, and the frame count matches the design's scene total (a shortfall of 1 to 4 frames is normal). Paths are under `out/explainer/`; captions are under `docs/production/claude-pm/lessons/`, and so are the designs.
 
 | Video | File | sha256 | Captions | Design | Min |
 |---|---|---|---|---|---|
@@ -21,11 +21,17 @@ These were rendered on 30 October to 1 November under the standing render policy
 | chem-m8-c03b | `Explainer-chem-m8-c03b/Explainer-chem-m8-c03b-v1.mp4` | `fdb8d2e10a6abc2b84641bb34629575c932f1eb81580b38a87ebb11b77bb3908` | `m8c03b/measured/captions-cumulative.srt` | `chem-m8-c03b.md` | 7.8 |
 | bio-m8-b01 | `Explainer-bio-m8-b01/Explainer-bio-m8-b01-v1.mp4` | `c09562b0c5dde96c701fb9521851bc6430d3425f8101d3d02a9207e9f9ba5622` | `m8b01/measured/captions-cumulative.srt` | `bio-m8-b01.md` | 7.4 |
 | bio-m8-b02 | `Explainer-bio-m8-b02/Explainer-bio-m8-b02-v1.mp4` | `7330d70f1c3f15613b44c2b9e8508669bc28e2236af49e8359425d5313ab06c6` | `m8b02/measured/captions-cumulative.srt` | `bio-m8-b02.md` | 7.7 |
+| chem-m8-p02 | `Explainer-chem-m8-p02/Explainer-chem-m8-p02-v1.mp4` | `2a8e1ddb269062d558dd7d8461f1507eff0f62dc2aec0262a3cd36dbc32c70ba` | `m8p02/measured/captions-cumulative.srt` | `chem-m8-p02.md` | 8.5 |
+| chem-m8-g01 | `Explainer-chem-m8-g01/Explainer-chem-m8-g01-v1.mp4` | `bee2ffc910879fe12907efa41e9f81537b53fda50211b554b3cb815df044de84` | `m8g01/measured/captions-cumulative.srt` | `chem-m8-g01.md` | 8.4 |
+| bio-m8-b03 | `Explainer-bio-m8-b03/Explainer-bio-m8-b03-v1.mp4` | `c4c0a01c3b6e35d8dbbbf250e20731c0213d0e5d8bae4d3e01fc7c646965f27b` | `m8b03/measured/captions-cumulative.srt` | `bio-m8-b03.md` | 8.1 |
+| bio-m8-b04 | `Explainer-bio-m8-b04/Explainer-bio-m8-b04-v1.mp4` | `a28fbb93c46d39c8a1f0912f8b0e8e318c1665f088365e76d8bacd918f14dfa0` | `m8b04/measured/captions-cumulative.srt` | `bio-m8-b04.md` | 8.2 |
+| bio-m8-b05 | `Explainer-bio-m8-b05/Explainer-bio-m8-b05-v1.mp4` | `fa30ec198c75db7948bb0d429e80841b33b6f237231702056b7d1c8869a7cdb2` | `m8b05/measured/captions-cumulative.srt` | `bio-m8-b05.md` | 8.6 |
 
 ## Notes
 
 - **S08: upload v2 only.** v1 has a word-spacing fault and must never be uploaded; it stays as evidence.
-- **Captions:** use only the `captions-cumulative.srt` files listed.
+- **Captions:** use only the `captions-cumulative.srt` files listed. For P02 and G01 they were exported from the playback timeline (`measured/lesson.playback.json`), because those builds add quiet reading holds mid-video.
+- **Frame counts:** the five Codex builds run longer than their measured narration because of quiet holds (the key-notes hold everywhere, plus mid-video reading holds in P02 and G01). Their playback timelines match the files exactly.
 - **Metadata:** take it from each design's "YouTube metadata" section, quoting the syllabus dotpoints verbatim.
 
 ## Playlists
@@ -33,7 +39,7 @@ These were rendered on 30 October to 1 November under the standing render policy
 Put every video in route order and read back each playlist you change.
 - **Module 7 Chemistry:** P04, P05, P06, G03, C15 and G04, at their positions in `module7-video-route-draft.json`. **Module 7 Biology:** P05.
 - **Exam skills playlist:** S06 and S08, in skills order (S06 sixth and S08 eighth, after S07).
-- **Module 8:** create one playlist for Chemistry and one for Biology, using the naming pattern of the Module 7 playlists. Order them by `module8-video-route-draft.json` `playlistOrder` (Chemistry: C01, C02, C03a, C03b; Biology: B01, B02). They show gaps until later videos arrive.
+- **Module 8:** create one playlist for Chemistry and one for Biology, using the naming pattern of the Module 7 playlists. Order them by `module8-video-route-draft.json` `playlistOrder` (Chemistry: C01, C02, P02, G01, C03a, C03b; Biology: B01, B02, B03, B04, B05). They show gaps until later videos arrive.
 - **Skills videos in the subject playlists:** add them only if the Module 7 playlists already do this for S07; otherwise keep them in the skills playlist only. If they are added, S06 goes before Chemistry M8 G02 and S08 between Chemistry M8 G03 and C13. Those videos aren't uploaded yet, so leave this for a later brief.
 
 Hand in to `status.md` with every link and the playlist readbacks. Record each upload in a new `youtube/wave6-uploads.json` in the format of `wave5-uploads.json`.

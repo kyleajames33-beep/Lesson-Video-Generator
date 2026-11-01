@@ -237,13 +237,13 @@ export const SceneRisk: React.FC = () => {
 				<Note x={1100} y={880} text="never the sink" size={40} color={HAZ} at={K11.sink} />
 				<AChip x={96} y={940} text="follow your school's risk assessment and each bottle's safety data sheet" size={24} color={GREYX} hand={false} at={K11.sink} />
 			</g>
-			<RTable x={640} y={120} cols={[380, 330, 490]} head={['Hazard', 'Harm', 'Control']} at={T} rowH={106} size={18} headSize={24} rows={FULL.map(r => ({at: T, cells: r, dimAt: 1e9}))} />
+			<RTable x={96} y={240} cols={[550, 420, 758]} head={['Hazard', 'Harm', 'Control']} at={T} rowH={104} size={24} headSize={30} rows={FULL.map(r => ({at: T, cells: r, dimAt: 1e9}))} />
 			<Fade at={T}>
 				<Sx x={96} y={190} text="Pause to read the full risk table" size={36} color={NAVY} hand weight={700} at={T} />
-				<PicF p={GLASSES} x={110} y={300} h={110} />
-				<PicF p={GLOVES} x={330} y={280} h={150} />
-				<Sx x={300} y={480} text="always" size={32} color={GREENC} anchor="middle" hand weight={700} at={T} />
-				<Sx x={640} y={990} text="Follow your school's risk assessment and each bottle's safety data sheet." size={22} color={INK_SOFT} weight={600} at={T} />
+				<PicF p={GLASSES} x={1320} y={110} h={65} />
+				<PicF p={GLOVES} x={1580} y={100} h={85} />
+				<Sx x={1780} y={170} text="always" size={28} color={GREENC} anchor="middle" hand weight={700} at={T} />
+				<Sx x={96} y={1060} text="Follow your school's risk assessment and each bottle's safety data sheet." size={22} color={INK_SOFT} weight={600} at={T} />
 			</Fade>
 			{void K11.barely}{void K11.teacher}{void K11.after}{void K11.diss}
 		</Overlay>

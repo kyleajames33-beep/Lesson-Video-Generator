@@ -31,3 +31,7 @@ Append a short entry to `docs/production/claude-pm/status.md` under "Codex hand-
 Every video description quotes the syllabus dotpoint(s) the video teaches, word for word from the official syllabus for that course version, in a block after the course line and before the official course link:
 "Syllabus dotpoint (NSW <Subject> Stage 6, <year>, Module <n>):" followed by the quoted dotpoint. Claude names the dotpoint in each upload brief; check the wording against the official syllabus. See brief 21 for the format.
 
+
+## Quiet holds and captions (root, 1 November 2026)
+
+If a build adds quiet frames to a scene in `config.ts` (a reading hold, or a longer key-notes hold), the cumulative captions must be exported from that playback timeline, not from `measured/lesson.json`. A mid-video hold shifts every later caption. Write the playback snapshot to `measured/lesson.playback.json`, export the captions from it, and say so in the build report. Holds added only to the final scene don't shift any captions.

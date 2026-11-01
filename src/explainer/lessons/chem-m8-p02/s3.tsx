@@ -50,8 +50,8 @@ export const SceneFeedback1: React.FC = () => {
 		<Overlay>
 			<Shrink k={0.6}>
 				<Question1 t={[-100, -100, -100, -100]} plate={false} marks={[
-					{phrase: `0.350${NB}g`, at: K14.p350, color: NAVY}, {phrase: 'M(Na₂SO₄) = 142.04', at: K14.p350 + 20, color: NAVY},
-					{phrase: 'M(BaSO₄) = 233.39', at: K14.should, color: NAVY}, {phrase: `0.561${NB}g.`, at: K14.p561, color: NAVY},
+					{phrase: `0.350${NB}g`, at: K14.p350, color: NAVY}, {phrase: '142.04', at: K14.p350 + 20, color: NAVY},
+					{phrase: '233.39', at: K14.should, color: NAVY}, {phrase: `0.561${NB}g.`, at: K14.p561, color: NAVY},
 					{phrase: 'State what this result suggests about the accuracy', at: K14.low, color: SETB},
 				]} />
 			</Shrink>

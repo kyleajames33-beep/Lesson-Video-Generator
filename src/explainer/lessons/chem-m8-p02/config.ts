@@ -3,7 +3,9 @@ import type {ExplainerConfig} from '../../types';
 import {SCENES} from './scenes';
 import {ASSETS} from './assets';
 
-const l = lesson as unknown as ExplainerConfig['lesson'];
+// Keep the recorded narration unchanged and add a quiet full-table reading interval.
+const source = lesson as unknown as ExplainerConfig['lesson'];
+const l = {...source, scenes: source.scenes.map(s => s.id === 'risk' ? {...s, durationInFrames: s.durationInFrames + 130} : s.id === 'key-notes' ? {...s, durationInFrames: Math.max(1800, s.durationInFrames)} : s)};
 const missing = l.scenes.filter(s => !SCENES[s.id]).map(s => s.id);
 if (missing.length) throw new Error('M8 P02 scenes missing: ' + missing.join(', '));
 export const config_m8p02: ExplainerConfig = {
