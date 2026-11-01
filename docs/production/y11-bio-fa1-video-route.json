@@ -1,0 +1,1818 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "course": "Biology 11-12 (2025), Year 11",
+  "focusArea": "Focus Area 1: Cells as the basis of life",
+  "syllabusSource": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+  "status": "Route approved by root (Claude), 1 Nov 2026, with rootApproval decisions; needs a Codex syllabus coverage check.",
+  "identifierPolicy": "Use the content-point IDs in docs/production/programme/syllabus/bio-new-y11.json (B25-FA1-Gn-nn). These are local ledger IDs, not NESA codes. 2025 syllabus only.",
+  "textRendering": "syllabusActions.text is the ledger wording with MathML spacing artefacts tidied (fraction, subscripts, stray spaces before commas). Where it differs, ledgerText keeps the raw ledger string.",
+  "fieldNames": "Boundary fields follow maths-a12-video-route.json: startBoundary, stopBoundary, nextHandoff. laterHomes is given per video and at top level.",
+  "sources": {
+    "preDesignIndex": "docs/production/claude-pm/pre-design/y11-bio/y11-bio-index.md",
+    "syllabusLedger": "docs/production/programme/syllabus/bio-new-y11.json",
+    "scoping": "docs/production/programme/year11-scoping.md",
+    "progression": "docs/production/course-progression-plan-2026-10-09.md",
+    "siteLessons": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\"
+  },
+  "stage5AssumedKnowledge": [
+    "Cells are the basic unit of living things; plant and animal cells have a nucleus, cytoplasm and membrane.",
+    "Using a light microscope at a basic level.",
+    "Particle model: particles move randomly and spread out.",
+    "Word equations for photosynthesis and respiration; reactants and products.",
+    "DNA, genes and chromosomes carry inherited information.",
+    "Fair tests: independent, dependent and controlled variables.",
+    "These are assumed, not verified against each school's Stage 5 programme. Each video restates any term it relies on in one plain sentence."
+  ],
+  "rootDecisions": [
+    "Merge fa1-l06-light-microscopy and fa1-l06-electron-microscopy-impact into bio-y11-fa1-v07. Both own B25-FA1-G1-07, the light microscopy pack has one section, and the assess demand needs the light microscope limit and the electron microscope gains in one argument.",
+    "Re-split L08: bio-y11-fa1-v09 merges fa1-l08-facilitated-diffusion (one section) into the diffusion and osmosis explanation, so all three passive processes are explained together for B25-FA1-G2-02. The demonstration section of fa1-l08-diffusion-osmosis becomes its own practical video, bio-y11-fa1-v10, for B25-FA1-G2-03.",
+    "Keep fa1-l10-active-transport (bio-y11-fa1-v12) and fa1-l10-bulk-transport (bio-y11-fa1-v13) separate. Pumps and vesicles are different mechanisms, and together they would rush. B25-FA1-G2-05 is jointly owned; bio-y11-fa1-v13 closes with the passive versus active comparison.",
+    "Merge fa1-l17-enzyme-factors (one section) into bio-y11-fa1-v20 with fa1-l18-enzyme-graphs, because the factor explanations are the causes behind the graph shapes; standing alone they would double-teach. Reorder so the graph video (bio-y11-fa1-v20, G3-07) comes before the fair-test practical (bio-y11-fa1-v21, G3-06), so students plan with a prediction. This departs from site order (L17 before L18).",
+    "Keep the two L05 practical packs separate (bio-y11-fa1-v05 wet mount, bio-y11-fa1-v06 cell size): each carries its own syllabus investigation. bio-y11-fa1-v06 leads with the syllabus field-of-view equation.",
+    "Keep fa1-l20-dna-replication (bio-y11-fa1-v23, practical) and fa1-l20-dna-replication-models (bio-y11-fa1-v24) separate. The fork, two strands and four enzymes fill a video; the model assessment is a distinct evaluative question. bio-y11-fa1-v24 is the thinnest video and the first merge candidate if design finds it under 5 minutes.",
+    "Keep fa1-l23-cell-cycle and fa1-l23-mitosis-model separate, and fa1-l24-meiosis-model and fa1-l24-meiosis-variation separate. The mitosis and meiosis models are syllabus investigations; the cycle and variation points are distinct questions. The meiosis model comes before variation so the variation events appear on a model students already know.",
+    "Merge fa1-l25-division-growth-repair and fa1-l25-division-reproduction into bio-y11-fa1-v31. Both own B25-FA1-G4-10, and the evaluate demand needs all four processes weighed in one judgement.",
+    "Otherwise follow site lesson order L01 to L25. Result: 34 packs become 31 videos.",
+    "All cell division videos use the 2n = 4 model with painted chromosomes at true scale, following the cell division visual rules."
+  ],
+  "coverage": {
+    "contentPointsInFocusArea": 30,
+    "ownedByAtLeastOneVideo": 30,
+    "unownedContentPoints": [],
+    "jointlyOwned": [
+      "B25-FA1-G2-05 (bio-y11-fa1-v12 active transport; bio-y11-fa1-v13 exocytosis and endocytosis)"
+    ],
+    "note": "Draft self-check only; Codex coverage check pending.",
+    "preDesignPacksUsed": "34 of 34"
+  },
+  "openQuestionsForRoot": [
+    "Approve placing bio-y11-fa1-v20 (graphs) before bio-y11-fa1-v21 (fair test), against site order?",
+    "Is bio-y11-fa1-v24 (assess replication models) long enough alone, or should it merge into bio-y11-fa1-v23?",
+    "bio-y11-fa1-v02 must describe eleven structures. Accept one video, or split protein production from the other organelles if the script runs past 10 minutes?",
+    "FA2 opening video id and boundary for the bio-y11-fa1-v31 handoff.",
+    "Year 12 (2025 syllabus) later homes are named generically; confirm them against a Year 12 ledger when one exists."
+  ],
+  "laterHomes": [
+    "FA2 owns surface area to volume, organ-level exchange (alveoli, kidney, digestion), plant transport, photosynthesis limiting factors, and optimal range and homeostasis.",
+    "FA3 owns natural selection using meiotic variation, aquatic osmoregulation, resistance and model validity.",
+    "Year 12 (2025 syllabus) owns protein synthesis, mutation, heredity, immunity and reproduction detail.",
+    "Old 2017 Module 5 designs (B1 to B9) are possible asset sources only; their content is not reused."
+  ],
+  "videos": [
+    {
+      "id": "bio-y11-fa1-v01",
+      "playlistOrder": 1,
+      "title": "How do prokaryotic and eukaryotic cells differ?",
+      "mainLearnerQuestion": "How do prokaryotic and eukaryotic cells differ, and how do we know?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-01"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-01",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use a variety of sources to compare the cellular structures of eukaryotic and prokaryotic cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson01.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson01.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l01-b1",
+          "we-bio2025-y11-fa1-l01-b2"
+        ],
+        "sha256": "e4ebfdec1327e470e2c7e685743b17636b754f0a33494f6f7a80ccb034664ae0"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l01-cell-types.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "All living things are made of cells, and a light microscope shows cells and a nucleus."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Bacteria are single-celled living things."
+        }
+      ],
+      "startBoundary": "Start from one dividing question: is the cell's DNA wrapped inside its own membrane? Define prokaryote and eukaryote in plain words.",
+      "stopBoundary": "Stop when students can compare the two cell types feature by feature (nucleus, DNA shape, membrane-bound organelles, size, ribosome size) and name shared features. Cite light and electron microscope sources as the evidence, in one short beat only; the microscopy assessment belongs to bio-y11-fa1-v07. Name the bacterial parts only at outline level; their functions belong to bio-y11-fa1-v04.",
+      "nextHandoff": "bio-y11-fa1-v02: look inside the eukaryotic cell at what each organelle does.",
+      "laterHomes": [
+        "Why a prokaryote stays small (worked example b2 touches surface area to volume): FA2 ratio and exchange videos.",
+        "Detailed structure and function of capsule, plasmid, flagella and pili: bio-y11-fa1-v04.",
+        "Microscope resolution and its impact: bio-y11-fa1-v07.",
+        "DNA forms (circular versus linear with histones): bio-y11-fa1-v25."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v02",
+      "playlistOrder": 2,
+      "title": "How do eukaryotic organelles work together?",
+      "mainLearnerQuestion": "What does each eukaryotic organelle do, and how do they work together to make and export a protein?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-05"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-05",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Describe the structure and function of the cell wall, cell membrane, cytoplasm, nucleus, mitochondria, chloroplast, endoplasmic reticulum, Golgi body, ribosomes, lysosomes and vacuoles in eukaryotic cells",
+          "practical": false,
+          "coverage": "owned-action",
+          "coverageNote": "All eleven named structures need a structure and a function. Plant-only structures are described here; the reasons plant and animal cells differ belong to bio-y11-fa1-v03."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson02.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson02.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l02-b1",
+          "we-bio2025-y11-fa1-l02-b2"
+        ],
+        "sha256": "a295c2d3501ac0a1ebfc571fb5473756643b595b85db1bdee5275ab6678f2b3c"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l02-eukaryotic-organelles.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v01",
+          "idea": "Eukaryotic cells have a membrane-bound nucleus and membrane-bound organelles."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Cells carry out respiration to release energy (word equation level)."
+        }
+      ],
+      "startBoundary": "Start inside one eukaryotic cell, grouping the eleven structures by job: boundary and control, the protein production line, and digestion, storage and energy capture.",
+      "stopBoundary": "Stop when students can describe the structure and function of the cell wall, cell membrane, cytoplasm, nucleus, mitochondria, chloroplast, endoplasmic reticulum, Golgi body, ribosomes, lysosomes and vacuoles, and trace a protein from ribosome to rough ER to Golgi body to the membrane. Do not explain why plant and animal cells differ (bio-y11-fa1-v03), the membrane model (bio-y11-fa1-v08) or the respiration equation (bio-y11-fa1-v16).",
+      "nextHandoff": "bio-y11-fa1-v03: use these organelles to explain why plant and animal cells differ.",
+      "laterHomes": [
+        "Fluid mosaic membrane detail: bio-y11-fa1-v08.",
+        "Exocytosis as a transport process: bio-y11-fa1-v13.",
+        "Respiration and photosynthesis equations: bio-y11-fa1-v16 and bio-y11-fa1-v17.",
+        "Protein synthesis from DNA: Year 12 (2025 syllabus) genetics content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v03",
+      "playlistOrder": 3,
+      "title": "Why do plant and animal cells differ?",
+      "mainLearnerQuestion": "Could you predict a plant cell's extra structures from what the plant cell needs to do?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-04"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-04",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Contrast the cell structure and organelles of plant and animal cells based on the function of the cell",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson03.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson03.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l03-b1"
+        ],
+        "sha256": "efaf324df87b37d62450b074a0f2c3ad7d10cd26759c7541ea61bd4e670af7e3"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l03-plant-animal-cells.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Structure and function of the cell wall, chloroplast, vacuole, mitochondria and the other named organelles."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Plants make their own food using light; animals eat food."
+        }
+      ],
+      "startBoundary": "Start from the shared toolkit both cells inherit from bio-y11-fa1-v02, then ask what each cell's lifestyle demands.",
+      "stopBoundary": "Stop when students can contrast plant and animal cells and link each plant-only structure (cell wall, chloroplasts, large central vacuole) to a cell function, and explain that plant cells also have mitochondria. Mention turgor only as the purpose of the vacuole and wall; predicting water movement in solutions belongs to bio-y11-fa1-v11.",
+      "nextHandoff": "bio-y11-fa1-v04: return to the prokaryote and give each bacterial structure its job.",
+      "laterHomes": [
+        "Plant cell in pure water becoming turgid (worked example b2): bio-y11-fa1-v11.",
+        "Photosynthesis equation: bio-y11-fa1-v17.",
+        "Plant tissues and organs: FA2."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v04",
+      "playlistOrder": 4,
+      "title": "How does a bacterium function without membrane-bound organelles?",
+      "mainLearnerQuestion": "How does a bacterium carry out every life process without membrane-bound organelles?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-03"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-03",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Describe the structure and function of the capsule, cell wall, cell membrane, cytoplasm, nucleoid, plasmid, ribosomes, flagella and pili in prokaryotic cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson04.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson04.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l04-b1",
+          "we-bio2025-y11-fa1-l04-b2"
+        ],
+        "sha256": "c7227a66977cc948fc7f28a9c2657559d1a07634fa9811797c53c3fab4831dd6"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l04-prokaryotic-structures.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v01",
+          "idea": "Prokaryotes have no nucleus and no membrane-bound organelles, and have small ribosomes."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "What a cell membrane, ribosome and cell wall do in a eukaryote."
+        }
+      ],
+      "startBoundary": "Start from the bacterium plate, working from the outer layers inward and then outward to flagella and pili.",
+      "stopBoundary": "Stop when students can describe the structure and function of the capsule, cell wall, cell membrane, cytoplasm, nucleoid, plasmid, ribosomes, flagella and pili, and explain that a plasmid is separate from the main chromosome. Mention that respiration happens at the cell membrane only as the answer to the opening question. The DNA packaging comparison belongs to bio-y11-fa1-v25.",
+      "nextHandoff": "bio-y11-fa1-v05: prepare a real specimen and find cell structures under a light microscope.",
+      "laterHomes": [
+        "Circular chromosome versus linear chromosomes compared with diagrams: bio-y11-fa1-v25.",
+        "Plasmids and antibiotic resistance: FA3 resistance video.",
+        "Bacteria as pathogens: Year 12 (2025 syllabus) disease content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v05",
+      "playlistOrder": 5,
+      "title": "How do we prepare and identify cells in a wet mount?",
+      "mainLearnerQuestion": "How do we prepare a wet mount slide and identify the cytoplasm, cell wall and nucleus?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-02"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-02",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct a practical investigation to prepare a wet mount slide and identify the cytoplasm, cell wall and nucleus under a light microscope",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation; kept as its own video."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson05.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson05.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l05-b1"
+        ],
+        "sha256": "f7deb4532ab122223a1c520630ab63cd643b0692cd363b8042220ea5823bf788"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l05-wet-mount.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "What the cytoplasm, cell wall and nucleus are."
+        },
+        {
+          "source": "bio-y11-fa1-v03",
+          "idea": "Plant cells have a cell wall."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Basic light microscope parts and focusing."
+        }
+      ],
+      "startBoundary": "Start at the bench with onion epidermis, slide, stain, coverslip and microscope.",
+      "stopBoundary": "Stop when students can outline the wet mount steps with the reason for each (thin single layer, mounting liquid, stain, coverslip lowered at an angle to avoid bubbles) and identify the cytoplasm, cell wall and nucleus in the view. Do not calculate cell size (bio-y11-fa1-v06).",
+      "nextHandoff": "bio-y11-fa1-v06: measure how big those cells really are.",
+      "laterHomes": [
+        "Real size calculations: bio-y11-fa1-v06.",
+        "Resolution and magnification limits: bio-y11-fa1-v07.",
+        "Plant tissue sections: FA2 plant section practical."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v06",
+      "playlistOrder": 6,
+      "title": "How do we calculate real cell size?",
+      "mainLearnerQuestion": "A cell looks huge down the microscope, so how big is it really?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-06"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-06",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct a practical investigation to calculate the size of a variety of specialised cells under the microscope using a mini-grid and the equation Cell size = diameter of field of view ÷ number of cells across the field of view",
+          "ledgerText": "Conduct a practical investigation to calculate the size of a variety of specialised cells under the microscope using a mini-grid and the equation Cell size = diameter of field of view number of cells across the field of view",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation. The syllabus equation (field of view diameter ÷ number of cells across) must be the main method; the site's image size ÷ magnification is a supporting method (index source finding)."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson05.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson05.sa",
+        "sectionIds": [
+          "learn-second-idea",
+          "learn-third-idea",
+          "practice-apply"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l05-b2"
+        ],
+        "sha256": "f7deb4532ab122223a1c520630ab63cd643b0692cd363b8042220ea5823bf788"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l05-cell-size.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v05",
+          "idea": "How a wet mount is prepared and viewed under a light microscope."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Units of length and converting millimetres to smaller units. Introduce the micrometre (µm) plainly."
+        }
+      ],
+      "startBoundary": "Start with the field of view measured using a mini-grid at low power.",
+      "stopBoundary": "Stop when students can find field of view diameter with a mini-grid, calculate cell size as field of view diameter ÷ number of cells across, convert to µm, and compare sizes of a variety of specialised cells. Show image size ÷ magnification as a second method with the divide-not-multiply trap. Do not assess microscope technology (bio-y11-fa1-v07).",
+      "nextHandoff": "bio-y11-fa1-v07: ask how far light microscopes can go, and what electron microscopes changed.",
+      "laterHomes": [
+        "Surface area to volume and why specialised cells have their shapes: FA2 ratio and exchange videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v07",
+      "playlistOrder": 7,
+      "title": "How did better microscopes change our understanding of cells?",
+      "mainLearnerQuestion": "How did developments from early lenses to the electron microscope change what scientists understood about cell structure and function?",
+      "syllabusActionIds": [
+        "B25-FA1-G1-07"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G1-07",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Assess the impact of technological developments in microscopy on scientific understanding of cell structure and function",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson06.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson06.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l06-b1",
+          "we-bio2025-y11-fa1-l06-b2"
+        ],
+        "sha256": "640feebb7fe9ff66f822eee7711e51b9f18128e74b7ae71b1979ddbdfefa124c"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l06-light-microscopy.md",
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l06-electron-microscopy-impact.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v01",
+          "idea": "Electron microscopes revealed that prokaryotes lack internal membrane-bound compartments."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Names and jobs of organelles such as ER, Golgi body and mitochondria."
+        },
+        {
+          "source": "bio-y11-fa1-v06",
+          "idea": "Using a light microscope to view and measure cells."
+        }
+      ],
+      "startBoundary": "Start with early lenses and the light microscope: what they revealed (cells, cell theory) and the resolution limit of about 200 nm.",
+      "stopBoundary": "Stop when students can distinguish magnification from resolution, link the electron microscope's finer resolution (about 0.2 nm) to specific discoveries about internal membranes and organelles, weigh limitations (dead, prepared specimens, artefacts, cost) and write a balanced assessment of impact. Do not re-teach organelle functions.",
+      "nextHandoff": "bio-y11-fa1-v08: zoom in on the membrane those microscopes revealed.",
+      "laterHomes": [
+        "Membrane structure revealed by electron microscopy: bio-y11-fa1-v08."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v08",
+      "playlistOrder": 8,
+      "title": "How does membrane structure control what crosses it?",
+      "mainLearnerQuestion": "Why can oxygen slip through a cell membrane while a sodium ion needs a protein doorway?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-01"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-01",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins, integral proteins, cholesterol and glycoproteins",
+          "ledgerText": "Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins , integral proteins, cholesterol and glycoproteins",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson07.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson07.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l07-b1",
+          "we-bio2025-y11-fa1-l07-b2"
+        ],
+        "sha256": "c4a3f09924dcfc9a4c134f82ec897816d3ed4e4f764c4c98479a283b6b31b592"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l07-fluid-mosaic-membrane.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "The cell membrane is the boundary that controls what enters and leaves."
+        },
+        {
+          "source": "bio-y11-fa1-v07",
+          "idea": "Electron microscopy made membrane structure visible."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Particles of substances; some substances mix with water and some, like oils, do not."
+        }
+      ],
+      "startBoundary": "Start with one phospholipid: a water-attracting head and water-avoiding tails, and why many of them form a bilayer in water.",
+      "stopBoundary": "Stop when students can explain the structure and function of phospholipids, protein channels, integral proteins, peripheral proteins, cholesterol and glycoproteins, and justify the name fluid mosaic. Say which kinds of particles pass the bilayer only as a preview; the transport processes belong to bio-y11-fa1-v09 onward.",
+      "nextHandoff": "bio-y11-fa1-v09: explain the passive ways substances cross this membrane.",
+      "laterHomes": [
+        "Diffusion, osmosis and facilitated diffusion: bio-y11-fa1-v09.",
+        "Carrier proteins that pump using ATP: bio-y11-fa1-v12.",
+        "Glycoproteins in cell recognition and immunity: Year 12 (2025 syllabus) disease and immunity content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v09",
+      "playlistOrder": 9,
+      "title": "Why do diffusion, osmosis and facilitated diffusion happen?",
+      "mainLearnerQuestion": "Why do substances move across a membrane on their own, and when do they need a protein to help?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-02"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-02",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Explain the processes of simple diffusion, osmosis and facilitated diffusion",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson08.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson08.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l08-b1",
+          "we-bio2025-y11-fa1-l08-b2"
+        ],
+        "sha256": "402f33249c25617b869d40f41a0b80fd2c26937b3b48dfa0d778701a1d97796b"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l08-diffusion-osmosis.md",
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l08-facilitated-diffusion.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v08",
+          "idea": "The bilayer lets small non-polar particles through and blocks ions and large polar molecules; channel and carrier proteins provide routes."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Particles move randomly and spread out (particle model)."
+        }
+      ],
+      "startBoundary": "Start with random particle movement producing net movement down a concentration gradient.",
+      "stopBoundary": "Stop when students can explain simple diffusion, osmosis (water across a partially permeable membrane) and facilitated diffusion through channel and carrier proteins, and state that all three are passive. Do not describe practical demonstrations (bio-y11-fa1-v10) or predict cell outcomes in named solutions (bio-y11-fa1-v11).",
+      "nextHandoff": "bio-y11-fa1-v10: demonstrate diffusion and osmosis in the lab.",
+      "laterHomes": [
+        "Practical demonstrations: bio-y11-fa1-v10.",
+        "Hypotonic, isotonic and hypertonic solutions: bio-y11-fa1-v11.",
+        "Gas exchange in alveoli: FA2 gas exchange videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v10",
+      "playlistOrder": 10,
+      "title": "How can we demonstrate diffusion and osmosis?",
+      "mainLearnerQuestion": "How can a simple lab set-up show diffusion and osmosis happening, and what should we measure?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-03"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-03",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct practical investigations to demonstrate the processes of diffusion and osmosis",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation; separated from the explanation video."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson08.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson08.sa",
+        "sectionIds": [
+          "learn-third-idea",
+          "practice-apply"
+        ],
+        "exampleIds": [],
+        "sha256": "402f33249c25617b869d40f41a0b80fd2c26937b3b48dfa0d778701a1d97796b"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l08-diffusion-osmosis.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v09",
+          "idea": "What diffusion and osmosis are and why they happen."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Independent, dependent and controlled variables in a fair test."
+        }
+      ],
+      "startBoundary": "Start at the bench: a potassium permanganate crystal (or dyed agar) for diffusion and Visking tubing in water for osmosis.",
+      "stopBoundary": "Stop when students can outline both demonstrations, state what to measure (colour spread, change in mass or liquid level), predict the result and explain it using bio-y11-fa1-v09. Agar cube surface area to volume calculations belong to FA2.",
+      "nextHandoff": "bio-y11-fa1-v11: predict what happens to whole cells in different solutions.",
+      "laterHomes": [
+        "Agar cube surface area to volume practical: FA2 agar cube practical video.",
+        "Tonicity predictions for animal and plant cells: bio-y11-fa1-v11."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v11",
+      "playlistOrder": 11,
+      "title": "What happens to cells in different solutions?",
+      "mainLearnerQuestion": "Why does a wilted lettuce leaf go crisp in water while a slug shrivels in salt?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-04"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-04",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Predict the effects of hypertonic, hypotonic and isotonic solutions on animal and plant cells",
+          "ledgerText": "Predict the effects of hypertonic , hypotonic and isotonic solutions on animal and plant cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson09.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson09.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l09-b1",
+          "we-bio2025-y11-fa1-l09-b2"
+        ],
+        "sha256": "1dcbc53cb91a82914dde9d7123c2652b001668bed9ccbce77fe9fe5bc85929e0"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l09-tonicity.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v09",
+          "idea": "Osmosis is net movement of water from lower to higher solute concentration across a partially permeable membrane."
+        },
+        {
+          "source": "bio-y11-fa1-v03",
+          "idea": "Plant cells have a cell wall and a large vacuole; animal cells have no wall."
+        }
+      ],
+      "startBoundary": "Start by defining hypotonic, isotonic and hypertonic relative to the cell's contents.",
+      "stopBoundary": "Stop when students can predict and explain water movement and the result for animal cells (swell and may burst, no net change, shrink) and plant cells (turgid, flaccid, plasmolysed) in each solution. Do not cover energy-using transport (bio-y11-fa1-v12).",
+      "nextHandoff": "bio-y11-fa1-v12: what a cell does when it must move a substance against its gradient.",
+      "laterHomes": [
+        "Osmoregulation in aquatic organisms: FA3 aquatic osmoregulation video.",
+        "Dialysis fluid composition: FA2 renal dialysis video.",
+        "Water movement into root cells: FA2 plant transport videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v12",
+      "playlistOrder": 12,
+      "title": "Why does a cell spend energy to move ions uphill?",
+      "mainLearnerQuestion": "Why would a cell pay energy to move ions against their concentration gradient?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-05"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-05",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Explain the processes of active transport, exocytosis and endocytosis",
+          "ledgerText": "Explain the processes of active transport , exocytosis and endocytosis",
+          "practical": false,
+          "coverage": "owned-part",
+          "coverageNote": "Owns active transport. Exocytosis and endocytosis are owned by bio-y11-fa1-v13."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson10.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson10.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-third-idea"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l10-b2"
+        ],
+        "sha256": "a879a4abec75f953c3df39af20fc9f27a6700b70d3a3b2c5026f82fe06429362"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l10-active-transport.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v09",
+          "idea": "Passive transport moves substances down a gradient without ATP; carrier proteins exist."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Mitochondria supply ATP."
+        }
+      ],
+      "startBoundary": "Start with a concentration gradient that a cell needs to build, not just follow.",
+      "stopBoundary": "Stop when students can explain active transport through a carrier protein pump using ATP against the gradient, contrast it with facilitated diffusion, and explain why cells that do a lot of active transport have many mitochondria. Do not cover vesicles (bio-y11-fa1-v13).",
+      "nextHandoff": "bio-y11-fa1-v13: how cells move cargo too large for any protein.",
+      "laterHomes": [
+        "Root hair mineral uptake: FA2 plant requirements videos.",
+        "Kidney tubule reabsorption: FA2 reabsorption and secretion video.",
+        "Nerve impulses: not in Year 11 FA1."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v13",
+      "playlistOrder": 13,
+      "title": "How do cells move large cargo across membranes?",
+      "mainLearnerQuestion": "How does a cell take in or release cargo too large to pass through any membrane protein?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-05"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-05",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Explain the processes of active transport, exocytosis and endocytosis",
+          "ledgerText": "Explain the processes of active transport , exocytosis and endocytosis",
+          "practical": false,
+          "coverage": "owned-part",
+          "coverageNote": "Owns exocytosis and endocytosis, and closes the transport sequence with the passive versus active comparison."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson10.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson10.sa",
+        "sectionIds": [
+          "learn-second-idea",
+          "learn-work-it",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l10-b1"
+        ],
+        "sha256": "a879a4abec75f953c3df39af20fc9f27a6700b70d3a3b2c5026f82fe06429362"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l10-bulk-transport.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v12",
+          "idea": "Active transport uses ATP to move particles against a gradient."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "The Golgi body packages proteins into vesicles."
+        },
+        {
+          "source": "bio-y11-fa1-v08",
+          "idea": "The membrane is fluid, so it can fold inward and fuse."
+        }
+      ],
+      "startBoundary": "Start with a large particle at the membrane, such as a bacterium beside a white blood cell or a protein inside a Golgi vesicle.",
+      "stopBoundary": "Stop when students can explain endocytosis (including phagocytosis) and exocytosis step by step, state that both use energy, and complete the passive versus active comparison table. The immune role of phagocytes is only an example here.",
+      "nextHandoff": "bio-y11-fa1-v14: decide which route each real material takes.",
+      "laterHomes": [
+        "Phagocytes in immunity: Year 12 (2025 syllabus) disease and immunity content.",
+        "Hormone secretion: FA2 hormone videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v14",
+      "playlistOrder": 14,
+      "title": "How do material properties decide transport routes?",
+      "mainLearnerQuestion": "Why do oxygen, glucose and salts, which the body needs every minute, cross membranes by different routes?",
+      "syllabusActionIds": [
+        "B25-FA1-G2-06"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G2-06",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Relate the movement of glucose, oxygen, carbon dioxide, salts and wastes across membranes to concentration gradients and the characteristics of the materials being exchanged",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson11.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson11.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l11-b1",
+          "we-bio2025-y11-fa1-l11-b2"
+        ],
+        "sha256": "777be335b474eab48280ea10fe55057553481bca5cf1206bfa6910f5310d0277"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l11-exchange-gradients.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v08",
+          "idea": "How size, polarity and charge affect crossing the bilayer."
+        },
+        {
+          "source": "bio-y11-fa1-v09",
+          "idea": "Simple and facilitated diffusion."
+        },
+        {
+          "source": "bio-y11-fa1-v12",
+          "idea": "Active transport."
+        },
+        {
+          "source": "bio-y11-fa1-v13",
+          "idea": "Bulk transport."
+        }
+      ],
+      "startBoundary": "Start by sorting each material by size, polarity and charge.",
+      "stopBoundary": "Stop when students can relate the movement of glucose, oxygen, carbon dioxide, salts and wastes (such as urea) to their concentration gradients and characteristics, and explain that the cell's activity sets the direction of the gradient. Use the alveolus and kidney tubule only as settings; their organ function belongs to FA2.",
+      "nextHandoff": "bio-y11-fa1-v15: what each of these materials is used for inside the cell.",
+      "laterHomes": [
+        "Alveoli and capillaries: FA2 gas exchange videos.",
+        "Kidney filtration and reabsorption: FA2 kidney videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v15",
+      "playlistOrder": 15,
+      "title": "What does a cell need from its environment?",
+      "mainLearnerQuestion": "Why does a cell need six different substances from its environment, and what does each one build or power?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-01"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-01",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Relate carbon dioxide, oxygen, water, ions, amino acids and glucose to cell requirements",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson12.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson12.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l12-b1",
+          "we-bio2025-y11-fa1-l12-b2"
+        ],
+        "sha256": "5fd04b64625006abfbbef3fa7051657d904e2fb4528ee58f87fae03ca2765e1e"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l12-cell-raw-materials.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v14",
+          "idea": "How these materials cross the membrane."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Mitochondria, chloroplasts and ribosomes."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Word equations for respiration and photosynthesis."
+        }
+      ],
+      "startBoundary": "Start with plant and animal cells side by side, each receiving its inputs.",
+      "stopBoundary": "Stop when students can relate carbon dioxide, oxygen, water, ions, amino acids and glucose to cell requirements (energy, building materials, structure, reactions). Name respiration and photosynthesis only; their summary equations belong to bio-y11-fa1-v16 and bio-y11-fa1-v17.",
+      "nextHandoff": "bio-y11-fa1-v16: follow glucose and oxygen into respiration.",
+      "laterHomes": [
+        "Respiration equation: bio-y11-fa1-v16.",
+        "Photosynthesis equation: bio-y11-fa1-v17.",
+        "Plant mineral and water requirements: FA2 plant requirements video.",
+        "Digestion and absorption of nutrients: FA2 digestive videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v16",
+      "playlistOrder": 16,
+      "title": "How does respiration release usable energy?",
+      "mainLearnerQuestion": "How does one short equation capture the controlled release of energy from glucose?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-02"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-02",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use the summary equation C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy to describe the process of cellular respiration",
+          "ledgerText": "Use the summary equation C 6 H 12 O 6 + 6 O 2 → 6 CO 2 + 6 H 2 O + energy to describe the process of cellular respiration",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson13.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson13.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l13-b1",
+          "we-bio2025-y11-fa1-l13-b2"
+        ],
+        "sha256": "e9edc7bce7eb1ad996a3ed0fb9b03fce0cf1895726bb136385000ad1780cbbfb"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l13-cellular-respiration.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v15",
+          "idea": "Cells need glucose and oxygen for energy."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Mitochondria are the site of aerobic respiration."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Reactants, products and simple balanced chemical equations."
+        }
+      ],
+      "startBoundary": "Start with glucose and oxygen entering a mitochondrion.",
+      "stopBoundary": "Stop when students can use C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy to describe aerobic respiration, give the role of each reactant and product, explain that energy is transferred to ATP (some is lost as heat) and that respiration is not breathing. Anaerobic respiration is a short contrast only; it is not part of this content point. Do not compare with photosynthesis in depth (bio-y11-fa1-v17).",
+      "nextHandoff": "bio-y11-fa1-v17: run the equation the other way in photosynthesis.",
+      "laterHomes": [
+        "Photosynthesis and respiration as a cycle: bio-y11-fa1-v17.",
+        "Breathing and gas exchange: FA2 gas exchange videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v17",
+      "playlistOrder": 17,
+      "title": "How does photosynthesis build glucose?",
+      "mainLearnerQuestion": "Where does the wood in a tree actually come from?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-03"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-03",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use the summary equation 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (light and chlorophyll written above the arrow) to describe the process of photosynthesis",
+          "ledgerText": "Use the summary equation 6 CO 2 + 6 H 2 O → light chlorophyll C 6 H 12 O 6 + 6 O 2 to describe the process of photosynthesis",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson14.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson14.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l14-b1",
+          "we-bio2025-y11-fa1-l14-b2"
+        ],
+        "sha256": "09617bc40be01d08d96f3291bf5dfb81de70a1039accf678a19d6d056dda65e5"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l14-photosynthesis.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v16",
+          "idea": "The respiration summary equation and energy transfer to ATP."
+        },
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "Chloroplasts contain chlorophyll."
+        }
+      ],
+      "startBoundary": "Start with the misconception that a plant's mass comes from the soil.",
+      "stopBoundary": "Stop when students can use the photosynthesis summary equation with light and chlorophyll above the arrow, identify reactants and products, explain that light energy is stored as chemical energy in glucose and that the carbon comes from carbon dioxide, and compare photosynthesis with respiration as a cycle. Limiting factors belong to FA2.",
+      "nextHandoff": "bio-y11-fa1-v18: ask what makes these reactions fast enough to keep a cell alive.",
+      "laterHomes": [
+        "Limiting factors and conditions for photosynthesis: FA2 photosynthesis conditions and limiting factors videos.",
+        "Leaf structure: FA2 leaf, stem and root video."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v18",
+      "playlistOrder": 18,
+      "title": "Why do cells need enzymes?",
+      "mainLearnerQuestion": "What makes the same reaction happen thousands of times faster inside a cell?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-04"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-04",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Explain the role of enzymes in cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson15.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson15.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l15-b1",
+          "we-bio2025-y11-fa1-l15-b2"
+        ],
+        "sha256": "2736ede8a8502b66198a1ab1730949daa34e84911203d58b90707fb21f6e1aa0"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l15-enzyme-role.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v16",
+          "idea": "Respiration is a series of reactions in cells."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Chemical reactions need energy to start; catalysts speed up reactions. Restate both plainly."
+        }
+      ],
+      "startBoundary": "Start with catalase breaking down hydrogen peroxide in liver.",
+      "stopBoundary": "Stop when students can explain that enzymes are protein catalysts that lower activation energy, are not used up, are specific to a substrate and let cell reactions run fast at body temperature. Name the active site; the lock-and-key and induced fit models belong to bio-y11-fa1-v19.",
+      "nextHandoff": "bio-y11-fa1-v19: use two models to explain why an enzyme is specific.",
+      "laterHomes": [
+        "Enzyme specificity models: bio-y11-fa1-v19.",
+        "Digestive enzymes: FA2 digestive videos."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v19",
+      "playlistOrder": 19,
+      "title": "How do enzyme models explain substrate specificity?",
+      "mainLearnerQuestion": "How do the lock-and-key and induced fit models explain why an enzyme works on one substrate?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-05"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-05",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use diagrams of the induced fit model and the lock and key model to explain the interaction between enzymes and specific substrates",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson16.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson16.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l16-b1",
+          "we-bio2025-y11-fa1-l16-b2"
+        ],
+        "sha256": "d06e7031a38e6da0fb5e2a3a6ae5dd789adc0207130710d197fa2dde20eb92d9"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l16-enzyme-models.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v18",
+          "idea": "Enzymes are specific protein catalysts with an active site."
+        }
+      ],
+      "startBoundary": "Start with a diagram of an enzyme, its active site and a matching substrate.",
+      "stopBoundary": "Stop when students can use diagrams of both models to explain enzyme and substrate interaction, state one similarity and one difference, and correct the idea that induced fit lets an enzyme fit any substrate. Do not explain temperature or pH effects (bio-y11-fa1-v20).",
+      "nextHandoff": "bio-y11-fa1-v20: use active site shape to explain how temperature, pH and substrate concentration change rate.",
+      "laterHomes": [
+        "Denaturation and rate graphs: bio-y11-fa1-v20.",
+        "Protein shape from amino acid sequence: Year 12 (2025 syllabus) genetics content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v20",
+      "playlistOrder": 20,
+      "title": "How do enzyme graphs explain changing activity?",
+      "mainLearnerQuestion": "Why does enzyme activity rise and then fall with temperature and pH, but level off with substrate concentration?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-07"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-07",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Analyse graphs to explain the effect of temperature, pH and substrate concentration on enzyme activity",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson18.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson18.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l18-b1",
+          "we-bio2025-y11-fa1-l18-b2"
+        ],
+        "sha256": "9fc002332bc1dbbdbc3cf63632bbcaf6f7b1f25dfdeee93c9e15b7d245508ace"
+      },
+      "additionalSourceLessons": [
+        {
+          "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson17.sa.html",
+          "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson17.sa",
+          "sectionIds": [
+            "learn-first-idea"
+          ],
+          "exampleIds": [],
+          "sha256": "df82e88f3d65595a71735c29320be33421a3b70bf4a0fef43a666c062c08d489",
+          "use": "Three factors that change enzyme efficiency (enzyme-factors pack), merged here as the causes behind each curve."
+        }
+      ],
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l18-enzyme-graphs.md",
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l17-enzyme-factors.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v19",
+          "idea": "Active site shape and the two enzyme models."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Reading a line graph: axes, trend and peak."
+        }
+      ],
+      "startBoundary": "Start with the temperature curve drawn region by region using the shared lineGraph diagram.",
+      "stopBoundary": "Stop when students can analyse temperature, pH and substrate concentration graphs, explaining collisions, optimum, denaturation and saturation, and contrast the plateau (saturation) with the fall (denaturation). Do not plan an experiment (bio-y11-fa1-v21).",
+      "nextHandoff": "bio-y11-fa1-v21: plan and conduct a fair test that produces one of these curves.",
+      "laterHomes": [
+        "Fair test planning: bio-y11-fa1-v21.",
+        "Optimal range and tolerance limits in organisms: FA2 optimal range video."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v21",
+      "playlistOrder": 21,
+      "title": "How do we fairly test enzyme activity?",
+      "mainLearnerQuestion": "How can you design a fair test that shows temperature, pH or substrate concentration causes a change in enzyme efficiency?",
+      "syllabusActionIds": [
+        "B25-FA1-G3-06"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G3-06",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Plan and conduct laboratory experiments to demonstrate the effect of temperature, pH and substrate concentration on the efficiency of a selected enzyme",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation. Plan one factor in full and show how the independent variable would change for the other two, so all three factors in the content point are addressed."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson17.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson17.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-work-it",
+          "practice-apply"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l17-b1",
+          "we-bio2025-y11-fa1-l17-b2"
+        ],
+        "sha256": "df82e88f3d65595a71735c29320be33421a3b70bf4a0fef43a666c062c08d489"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l17-enzyme-practical.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v20",
+          "idea": "Expected shapes of the temperature, pH and substrate graphs and their causes."
+        },
+        {
+          "source": "bio-y11-fa1-v18",
+          "idea": "Catalase breaks down hydrogen peroxide into water and oxygen."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Independent, dependent and controlled variables; repeat trials."
+        }
+      ],
+      "startBoundary": "Start with a catalase and hydrogen peroxide set-up and one question: how can we show the factor is the cause?",
+      "stopBoundary": "Stop when students can identify independent, dependent and controlled variables, outline a method, measure rate (for example oxygen volume or foam height in a set time), discuss reliability, validity and improvements, and assess a flawed method. Do not re-explain why each curve has its shape; cite bio-y11-fa1-v20.",
+      "nextHandoff": "bio-y11-fa1-v22: the cell's instructions, starting with DNA structure.",
+      "laterHomes": [
+        "Data processing and graphing skills: Working scientifically outcomes across the course."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v22",
+      "playlistOrder": 22,
+      "title": "How does DNA structure store and copy information?",
+      "mainLearnerQuestion": "How can four bases spell out the instructions for a whole organism?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-01"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-01",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Use the deoxyribonucleic acid (DNA) double helix model to demonstrate the structure of DNA, including nucleotide composition, complementary base pairing and hydrogen bonding",
+          "ledgerText": "Use the deoxyribonucleic acid ( DNA ) double helix model to demonstrate the structure of DNA, including nucleotide composition, complementary base pairing and hydrogen bonding",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson19.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson19.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l19-b1",
+          "we-bio2025-y11-fa1-l19-b2"
+        ],
+        "sha256": "b7225be9ed538cda37bc68b673b713a9ddfea95ca7be0aef4f20157896a37c55"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l19-dna-structure.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v02",
+          "idea": "DNA is held in the nucleus."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "DNA carries inherited information in genes on chromosomes."
+        }
+      ],
+      "startBoundary": "Start with one nucleotide: phosphate, deoxyribose sugar and a base.",
+      "stopBoundary": "Stop when students can use the double helix model to describe nucleotide composition, complementary base pairing (A with T, C with G) and hydrogen bonds between bases, and write a complementary strand. Say that pairing suggests a copying method as a hook only; the mechanism belongs to bio-y11-fa1-v23.",
+      "nextHandoff": "bio-y11-fa1-v23: model how the double helix copies itself.",
+      "laterHomes": [
+        "Replication: bio-y11-fa1-v23.",
+        "DNA forms in cells: bio-y11-fa1-v25.",
+        "Genes and protein synthesis: Year 12 (2025 syllabus) genetics content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v23",
+      "playlistOrder": 23,
+      "title": "How does a replication fork copy both strands?",
+      "mainLearnerQuestion": "How does a replication fork copy both strands when they run in opposite directions?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-02"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-02",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct a practical investigation to model the process of DNA replication, demonstrating the role of complementary bases, the replication fork with leading and lagging strands, and the enzymes of helicase, primase, DNA polymerases and ligase",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation (physical model)."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson20.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson20.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-work-it"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l20-b1"
+        ],
+        "sha256": "fdcc5d1325ae7522325d05063e904d0a7cc72e6d5e9a1d3ce7a3cff9bad406c2"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l20-dna-replication.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v22",
+          "idea": "Nucleotide structure, complementary base pairing and hydrogen bonds; the two strands run in opposite directions."
+        },
+        {
+          "source": "bio-y11-fa1-v18",
+          "idea": "Enzymes are specific catalysts."
+        }
+      ],
+      "startBoundary": "Start with a physical model of a short parent double strand ready to unzip.",
+      "stopBoundary": "Stop when students can model replication showing complementary bases, the replication fork, leading and lagging strands, and the roles of helicase, primase, DNA polymerases and ligase, and explain semi-conservative replication. Do not judge model strengths and limitations (bio-y11-fa1-v24).",
+      "nextHandoff": "bio-y11-fa1-v24: assess what that model showed and what it hid.",
+      "laterHomes": [
+        "Assessing models: bio-y11-fa1-v24.",
+        "Mutation from replication errors: Year 12 (2025 syllabus) genetics content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v24",
+      "playlistOrder": 24,
+      "title": "What can a DNA replication model show and hide?",
+      "mainLearnerQuestion": "How useful are physical and digital models for showing DNA replication?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-03"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-03",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Assess the use of models to demonstrate DNA replication",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson20.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson20.sa",
+        "sectionIds": [
+          "learn-third-idea",
+          "practice-apply"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l20-b2"
+        ],
+        "sha256": "fdcc5d1325ae7522325d05063e904d0a7cc72e6d5e9a1d3ce7a3cff9bad406c2"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l20-dna-replication-models.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v23",
+          "idea": "The replication process with its fork, strands and four enzymes."
+        }
+      ],
+      "startBoundary": "Start with the finished model from bio-y11-fa1-v23 next to the real scale and speed of replication.",
+      "stopBoundary": "Stop when students can assess replication models against criteria (what they show accurately, and what they distort or omit, such as scale, speed, helix twist, enzyme shape and many origins) and reach a judgement. Do not re-teach enzyme roles.",
+      "nextHandoff": "bio-y11-fa1-v25: how that copied DNA is arranged in bacteria and eukaryotes.",
+      "laterHomes": [
+        "Use of models in science generally: FA3 model validity video."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v25",
+      "playlistOrder": 25,
+      "title": "How is DNA arranged in bacteria and eukaryotes?",
+      "mainLearnerQuestion": "How does a eukaryotic cell pack a huge length of DNA into a nucleus, and why doesn't a bacterium face the same problem?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-04"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-04",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Construct diagrams to compare the forms in which DNA exists in prokaryotic and eukaryotic cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson21.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson21.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l21-b1",
+          "we-bio2025-y11-fa1-l21-b2"
+        ],
+        "sha256": "b766633961f734e4409cc2d279c48ae8f2746e9367f55c4c2fb78f4dc9195f7b"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l21-dna-packaging.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v01",
+          "idea": "Prokaryotes have a nucleoid; eukaryotes have a nucleus."
+        },
+        {
+          "source": "bio-y11-fa1-v04",
+          "idea": "Nucleoid and plasmids."
+        },
+        {
+          "source": "bio-y11-fa1-v22",
+          "idea": "DNA double helix structure."
+        }
+      ],
+      "startBoundary": "Start with the same DNA molecule in two cells of very different size.",
+      "stopBoundary": "Stop when students can construct and compare labelled diagrams of DNA in prokaryotes (one circular chromosome in the nucleoid, plasmids, no histones) and eukaryotes (several linear chromosomes wound on histones inside a nucleus, plus mitochondrial and chloroplast DNA if the site lesson includes it), including at least one shared feature. Do not cover chromosome number or ploidy (bio-y11-fa1-v26).",
+      "nextHandoff": "bio-y11-fa1-v26: compare chromosome numbers in body cells and sex cells.",
+      "laterHomes": [
+        "Chromosome number, diploid and haploid: bio-y11-fa1-v26.",
+        "Gene regulation and histones: Year 12 (2025 syllabus) genetics content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v26",
+      "playlistOrder": 26,
+      "title": "Why do gametes carry half the chromosomes?",
+      "mainLearnerQuestion": "How does the body stop chromosome numbers doubling every generation?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-05"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-05",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Compare the structures and roles of somatic and gametic cells",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson22.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson22.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l22-b1",
+          "we-bio2025-y11-fa1-l22-b2"
+        ],
+        "sha256": "5ab589ca626ed975d28ce1d4b397213bf784475611769269237d77a31dba0855"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l22-somatic-gametic-cells.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v25",
+          "idea": "Eukaryotic DNA is in linear chromosomes."
+        },
+        {
+          "source": "Stage 5 science (assumed, not re-taught)",
+          "idea": "Sexual reproduction joins a sperm and an egg."
+        }
+      ],
+      "startBoundary": "Start with the doubling problem: what if two ordinary body cells joined at fertilisation?",
+      "stopBoundary": "Stop when students can compare somatic and gametic cells in structure (diploid versus haploid, shape, specialisations of sperm and egg) and role (growth and repair versus reproduction), and correct the half-chromosome misconception. Name mitosis and meiosis as the producing divisions only; their mechanisms belong to bio-y11-fa1-v27 to bio-y11-fa1-v30.",
+      "nextHandoff": "bio-y11-fa1-v27: the cell cycle that makes new somatic cells.",
+      "laterHomes": [
+        "Mitosis: bio-y11-fa1-v27 and bio-y11-fa1-v28.",
+        "Meiosis: bio-y11-fa1-v29 and bio-y11-fa1-v30.",
+        "Fertilisation and inheritance patterns: Year 12 (2025 syllabus) heredity content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v27",
+      "playlistOrder": 27,
+      "title": "Why must a cell copy DNA before it divides?",
+      "mainLearnerQuestion": "Why does a cell grow and copy its DNA before it divides, and what happens in each phase of the cell cycle?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-06"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-06",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Account for the phases of gap 1 (G1), synthesis, gap 2 (G2) and mitosis in the cell cycle",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson23.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson23.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-third-idea"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l23-b1"
+        ],
+        "sha256": "40028db84ae4d1bf54edae7e3c37e4c96b7db90ca630915b27814c0b5ef6ae56"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l23-cell-cycle.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v23",
+          "idea": "DNA replication produces two identical copies."
+        },
+        {
+          "source": "bio-y11-fa1-v26",
+          "idea": "Somatic cells are diploid and are made by mitosis."
+        }
+      ],
+      "startBoundary": "Start with a cell that must give two daughters a complete set of chromosomes.",
+      "stopBoundary": "Stop when students can account for G1, S, G2 and mitosis in order, explain why the order matters and the role of checkpoints, and place cytokinesis at the end. Treat mitosis as one block here; its named phases belong to bio-y11-fa1-v28.",
+      "nextHandoff": "bio-y11-fa1-v28: model the named phases of mitosis and cytokinesis.",
+      "laterHomes": [
+        "Named phases of mitosis: bio-y11-fa1-v28.",
+        "Uncontrolled division and cancer: Year 12 (2025 syllabus) non-infectious disease content, if present."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v28",
+      "playlistOrder": 28,
+      "title": "How does mitosis share identical chromosomes?",
+      "mainLearnerQuestion": "How do the named phases of mitosis give each daughter cell an identical, complete set of chromosomes?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-07"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-07",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct a practical investigation to model the named phases of mitosis and cytokinesis",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation (physical model)."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson23.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson23.sa",
+        "sectionIds": [
+          "learn-second-idea",
+          "learn-work-it",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l23-b2"
+        ],
+        "sha256": "40028db84ae4d1bf54edae7e3c37e4c96b7db90ca630915b27814c0b5ef6ae56"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l23-mitosis-model.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v27",
+          "idea": "G1, S and G2 come before mitosis; chromosomes are copied in S."
+        },
+        {
+          "source": "bio-y11-fa1-v26",
+          "idea": "Body cells are diploid."
+        }
+      ],
+      "startBoundary": "Start with a 2n = 4 cell model after S phase (two homologous pairs, each chromosome made of two sister chromatids), following the cell division visual rules.",
+      "stopBoundary": "Stop when students can model and describe prophase, metaphase, anaphase and telophase, then cytokinesis, and explain why the daughter cells are identical. Do not cover meiosis (bio-y11-fa1-v29).",
+      "nextHandoff": "bio-y11-fa1-v29: model how meiosis halves the chromosome number.",
+      "laterHomes": [
+        "Meiosis: bio-y11-fa1-v29.",
+        "Growth and repair evaluation: bio-y11-fa1-v31."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v29",
+      "playlistOrder": 29,
+      "title": "How does meiosis halve the chromosome number?",
+      "mainLearnerQuestion": "How do the two divisions of meiosis turn one diploid cell into four haploid cells?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-09"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-09",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Conduct a practical investigation to model the named phases of meiosis and cytokinesis",
+          "practical": true,
+          "coverage": "owned-action",
+          "coverageNote": "Practical investigation (physical model)."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson24.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson24.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-work-it"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l24-b2"
+        ],
+        "sha256": "66063e5b489b93ad72521146ffa62cf9c78eca6b9de8d496b6af249fb77ade18"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l24-meiosis-model.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v28",
+          "idea": "The named phases of mitosis on the same 2n = 4 model."
+        },
+        {
+          "source": "bio-y11-fa1-v26",
+          "idea": "Gametes are haploid."
+        }
+      ],
+      "startBoundary": "Start with the same 2n = 4 model from bio-y11-fa1-v28, using two colours for maternal and paternal homologues.",
+      "stopBoundary": "Stop when students can model and name the phases of meiosis I and II with cytokinesis, show homologous pairs separating in meiosis I and sister chromatids separating in meiosis II, and contrast meiosis with mitosis. Show crossing over and the line-up of pairs only as visible events; how they create variation belongs to bio-y11-fa1-v30.",
+      "nextHandoff": "bio-y11-fa1-v30: explain where variation arises during meiosis.",
+      "laterHomes": [
+        "Variation mechanisms: bio-y11-fa1-v30."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v30",
+      "playlistOrder": 30,
+      "title": "Where does variation arise during meiosis?",
+      "mainLearnerQuestion": "How does meiosis make every egg and sperm carry a different combination of alleles?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-08"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-08",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Describe the processes of crossing over, independent assortment and random segregation during meiosis",
+          "practical": false,
+          "coverage": "owned-action",
+          "coverageNote": "Index source finding: the site page uses random segregation loosely. Describe crossing over, independent assortment and random segregation as three distinct processes."
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson24.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson24.sa",
+        "sectionIds": [
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l24-b1"
+        ],
+        "sha256": "66063e5b489b93ad72521146ffa62cf9c78eca6b9de8d496b6af249fb77ade18"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l24-meiosis-variation.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v29",
+          "idea": "Phases of meiosis I and II on the 2n = 4 model."
+        }
+      ],
+      "startBoundary": "Start with prophase I on the two-colour model, homologues paired.",
+      "stopBoundary": "Stop when students can describe crossing over (prophase I), independent assortment (orientation of each pair at metaphase I) and random segregation (which chromosome or chromatid moves to which pole), and explain how each adds variation, including 2ⁿ combinations for n pairs. Random fertilisation is a short mention only. Introduce allele in one plain sentence.",
+      "nextHandoff": "bio-y11-fa1-v31: weigh which division process matters most.",
+      "laterHomes": [
+        "Variation as the raw material for natural selection: FA3 natural selection video.",
+        "Inheritance and Punnett squares: Year 12 (2025 syllabus) heredity content."
+      ],
+      "status": "route draft; design pending"
+    },
+    {
+      "id": "bio-y11-fa1-v31",
+      "playlistOrder": 31,
+      "title": "How important is each process in cell division?",
+      "mainLearnerQuestion": "Which of DNA replication, mitosis, meiosis and cytokinesis matters most, or is each essential for a different reason?",
+      "syllabusActionIds": [
+        "B25-FA1-G4-10"
+      ],
+      "syllabusActions": [
+        {
+          "id": "B25-FA1-G4-10",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+          "text": "Evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis in cell division",
+          "practical": false,
+          "coverage": "owned-action"
+        }
+      ],
+      "sourceLesson": {
+        "path": "C:\\Users\\kygs\\hscscience\\subjects\\biology\\year11\\fa1-cells-as-the-basis-of-life\\lesson25.sa.html",
+        "url": "https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson25.sa",
+        "sectionIds": [
+          "learn-orient",
+          "learn-first-idea",
+          "learn-second-idea",
+          "learn-third-idea",
+          "learn-why-it-matters"
+        ],
+        "exampleIds": [
+          "we-bio2025-y11-fa1-l25-b1",
+          "we-bio2025-y11-fa1-l25-b2"
+        ],
+        "sha256": "0bb17fecb4aa66747f744c2e0a315e5636effbd96c3f3b5dd5725cea6fa212ad"
+      },
+      "preDesignPacks": [
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l25-division-growth-repair.md",
+        "docs/production/claude-pm/pre-design/y11-bio/fa1-l25-division-reproduction.md"
+      ],
+      "entryKnowledge": [
+        {
+          "source": "bio-y11-fa1-v23",
+          "idea": "DNA replication."
+        },
+        {
+          "source": "bio-y11-fa1-v28",
+          "idea": "Mitosis and cytokinesis."
+        },
+        {
+          "source": "bio-y11-fa1-v29",
+          "idea": "Meiosis phases."
+        },
+        {
+          "source": "bio-y11-fa1-v30",
+          "idea": "Sources of variation in meiosis."
+        }
+      ],
+      "startBoundary": "Start with the evaluation demand: listing is not evaluating. Set criteria (what each process contributes, and what fails without it).",
+      "stopBoundary": "Stop when students can evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis using growth and repair (healing skin) and reproduction (gametes) as the two focused cases, and reach a justified judgement. Recall each mechanism in one line; do not re-teach phases.",
+      "nextHandoff": "FA2 opening video (route pending): from single cells to levels of cellular organisation.",
+      "laterHomes": [
+        "Levels of organisation and specialised tissues: FA2 opening video.",
+        "Asexual and sexual reproduction in detail: Year 12 (2025 syllabus) reproduction content."
+      ],
+      "status": "route draft; design pending"
+    }
+  ],
+  "rootApproval": [
+    "Approved: v20 (enzyme graphs, which absorbs the factors pack) comes before v21 (fair-test practical), against site order, because students need to know what each factor does to rate before they plan a fair test of one.",
+    "v24 (assessing replication models) stays separate for now. If its Revision 1 design is under 5,500 narration characters, merge it into v23 and renumber.",
+    "v02 (11 eukaryotic structures) stays one video. If its design runs past about 570 s, split it by function group (information and making proteins; energy; transport and support) and renumber.",
+    "v31's handoff stays 'FA2 opening video (route pending)' until the FA2 route is written.",
+    "Year 12 later homes stay generic until checked against bio-new-y12.json in the FA2/FA3 route pass.",
+    "v06 leads with the syllabus field-of-view method; v30 separates independent assortment from random segregation (route notes)."
+  ]
+}
