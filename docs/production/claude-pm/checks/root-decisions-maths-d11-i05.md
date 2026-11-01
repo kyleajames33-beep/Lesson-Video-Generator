@@ -26,3 +26,6 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 ## Site log and voice
 18. **Site log item 50 is wrong.** Lesson 5 card 07 derives the sec, cosec and cot derivatives. Brief 142 corrects the item and logs all designers' new site findings without duplicates. The route's d12 decision is reworded.
 19. **Voice pilot list additions:** "seck", "co-seck", "co-tan", "mod x".
+
+## After brief 142 repairs (2 November 2026)
+20. **Final frame, one rule.** Series rule 16 in `root-decisions-bio-y11-fa1-v01-v06.md` governs: each video's key-notes hold ends by cross-fading back to its handoff frame, so the next video opens on that handoff frame. The d11 to d17 openings that describe the previous key-notes screen fading out, and the d18 to i05 closings with a 0.6 s fade, are both read as that one rule; the shared key-notes component implements it once (1 s cross-fade). Reviewers do not log the wording difference as an error.
