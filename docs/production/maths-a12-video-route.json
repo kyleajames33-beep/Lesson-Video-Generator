@@ -19,7 +19,7 @@
     "Voice: Google AI Studio after the brief 124 pilot passes; no maths lesson is voiced before then.",
     "Accept Codex brief 136 route inputs for d11 to d19 and i01 to i05 (1 Nov 2026). Production order follows the ids; playlist order may later place the trig-graph strand (t01 to t04) between d19 and i01 as the course outline recommends.",
     "d11 to d13 recall d05 to d08 (sin/cos derivatives, chain, product, quotient rules) in one sentence each; they do not re-teach them.",
-    "d12 teaches sec, cosec and cot derivatives as original teaching because the site lesson does not (site log 50).",
+    "d12 uses lesson 5 card 07 for the sec, cosec and cot quotient-rule derivations (site log item 50 was wrong; brief 142 corrects it) and adds original teaching for the graph-based cause, the domains and the co-function minus.",
     "i01 owns many short definition points; the design groups them under one question (one curve chosen from a family by a condition) rather than listing them.",
     "Integral videos i01 to i05 use the existing graph parts plus brief 136 kit needs; area-under-curve parts belong to i06 onwards."
   ],
@@ -797,7 +797,7 @@
       "nextHandoff": "math-a12-d12",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d11.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "Why does differentiating tan x give sec squared x?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d11.md"
     },
@@ -877,7 +877,7 @@
       "nextHandoff": "math-a12-d13",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d12.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do reciprocal trig functions change when x changes?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d12.md"
     },
@@ -1007,7 +1007,7 @@
       "nextHandoff": "math-a12-d14",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d13.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do we keep inner factors and domains in the remaining composites?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d13.md"
     },
@@ -1111,7 +1111,7 @@
       "nextHandoff": "math-a12-d15",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d14.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do a point and derivative determine tangent and normal lines?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d14.md"
     },
@@ -1207,7 +1207,7 @@
       "nextHandoff": "math-a12-d16",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d15.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "When is a continuous join differentiable?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d15.md"
     },
@@ -1327,7 +1327,7 @@
       "nextHandoff": "math-a12-d17",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d16.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How does the changing gradient reveal concavity and inflection?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d16.md"
     },
@@ -1419,7 +1419,7 @@
       "nextHandoff": "math-a12-d18",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d17.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do the function and its two derivative graphs constrain a sketch?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d17.md"
     },
@@ -1535,7 +1535,7 @@
       "nextHandoff": "math-a12-d19",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d18.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do a constraint and physical domain determine an optimum?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d18.md"
     },
@@ -1663,7 +1663,7 @@
       "nextHandoff": "math-a12-i01",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-d19.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do proportional rates produce exponential growth and decay?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-d19.md"
     },
@@ -1852,7 +1852,7 @@
       "nextHandoff": "math-a12-i02",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-i01.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How does a family of primitives become one curve?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-i01.md"
     },
@@ -1956,7 +1956,7 @@
       "nextHandoff": "math-a12-i03",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-i02.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "How do algebra and a reverse chain rule reveal power primitives?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-i02.md"
     },
@@ -2076,7 +2076,7 @@
       "nextHandoff": "math-a12-i04",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-i03.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "Why does an exponential primitive divide by the inner rate?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-i03.md"
     },
@@ -2178,7 +2178,7 @@
       "nextHandoff": "math-a12-i05",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-i04.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "Why does a reciprocal primitive need an absolute-value log?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-i04.md"
     },
@@ -2295,7 +2295,7 @@
       "nextHandoff": "math-a12-i06: accumulation rectangles",
       "recommendation": "Preserve the focused boundary and exact source numbers. Source gaps need original teaching; stale module labels are not the route. Claude chooses final splits/length.",
       "preDesignPack": "docs/production/claude-pm/pre-design/maths-a12/math-a12-i05.md",
-      "status": "route-approved-root-2026-11-01; design pending",
+      "status": "Revision 1 designed 1 Nov 2026; brief 142 reviews next",
       "title": "Which trig primitives reverse the derivative rules?",
       "designPath": "docs/production/claude-pm/lessons/math-a12-i05.md"
     }
