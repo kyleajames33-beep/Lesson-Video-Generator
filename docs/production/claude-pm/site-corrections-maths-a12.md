@@ -538,4 +538,84 @@ Line507 prints “N(30)=200e^(-0.0578 times30)=200e^(-1.733)”. The displayed m
 
 ## 50. reciprocal-trig source-coverage correction (brief136)
 
-Fresh inspection of differential lesson05 finds tan=sin/cos and the tan quotient proof, but no sec/cosec/cot derivative worked teaching. The earlier crosswalk's “covered” for cifea7f68d overstates that page. Keep the historical crosswalk, but treat d12 as requiring original reciprocal-derivative preparation. This is a source-coverage correction, not a claim the page prints a false derivative. The whole-course outline and route inputs explicitly record the gap.
+Correction, 2 November 2026: differential lesson05 card 07 derives the sec, cosec and cot derivatives by the quotient rule, with a domain note and sec 3x chain example. The earlier claim that the page has no reciprocal-trig derivative teaching was wrong. Card 07 covers the derivations; it has no worked numerical example. The historical crosswalk is retained.
+
+## 51. Equivalent forms of the tangent derivative (brief 142, d11)
+
+Differential calculus lesson05 card 06: "HSC tip: write $\sec^2 x$, not $\dfrac{1}{\cos^2 x}$ or $1 + \tan^2 x$ (all equivalent, but $\sec^2 x$ is the standard form)". The rule against equivalent forms is unsupported: on the common domain all three expressions are equal. Describe sec²x as a usual form without implying the other exact forms are incorrect.
+
+## 52. Domains in composite log and tangent examples (brief 142, d13)
+
+Differential lesson04 line 318 prints the chain rule for log_a(g(x)) without a condition beside it. The rule needs a > 0, a ≠ 1, g(x) > 0. In its worked log₃(x²+1) example, the domain is all real x because x²+1 > 0. This extends existing item 30 to the composite expression.
+
+Differential lesson05 card 09 gives d/dx tan(e^x) = e^x sec²(e^x) without its excluded values. The formula holds where cos(e^x) ≠ 0, namely x ≠ ln(π/2+kπ), k=0,1,2,... . State this with the example and state cos(f(x)) ≠ 0 with the general composite rule.
+
+Lesson02 trap 03 says "Both the chain-rule factor ($3$) and the $\ln a$ factor ($\ln 2$) are required. Omitting either one loses marks." Both factors are mathematically necessary here. Whether marks are lost depends on the question and marking criteria, so remove the universal marking claim.
+
+## 53. Applications lesson05 source details (brief 142, d15)
+
+The lesson header still uses the older "MAV-12-06 · Turning points and graphing" and a Module 6 label. Use the 2024 Applications of calculus focus-area label instead.
+
+Card 04 says "knowing which way is worth a mark on its own"; Trap 01 calls a mistake "the single most common error in this topic"; Trap 02 says solving only the gradient condition "loses half the marks". These claims need specific marking or frequency evidence. State the mathematical consequences without universal mark or frequency claims.
+
+Card 03 specifies a non-vertical tangent before its zoom analogy, so the proposed complaint that the site omits that qualifier is not confirmed. Its drill 3 uses an em dash in learner copy; replace it with a colon under the project style rule.
+
+## 54. Applications lesson07 cubic statement and title (brief 142, d16)
+
+The header uses the older Module 6 and MAV-12-06 labels. Use the 2024 Applications of calculus label.
+
+Worked example step 5 says the inflection is at the mean of the turning points' x-values, "which is always true for a cubic". The stated mean requires two distinct turning points to exist. For a cubic with two turning points, their x-coordinates average to the inflection's x-coordinate. A cubic can have none, so scope the sentence to that condition.
+
+## 55. Applications lesson08 sketch and derivative-source claims (brief 142, d17)
+
+The header uses the older Module 6/MAV-12-06 labels; use the 2024 Applications of calculus name. The checklist says an unlabelled beautiful curve scores below a rough labelled curve, and the worked example calls one check a feature "the marker looks for" and another "the check people skip". Replace universal marking and frequency claims with the concrete features a sketch should label.
+
+Short-answer Q3 says a graph of f′ determines the shape of f completely and that one point fixes the whole curve. That is valid on a connected interval, but disconnected pieces can have independent additive constants. Scope both assertions to an interval, or require one point on each connected component.
+
+The translation-table sentence that any inflection gives a turning point of f′ and a zero-crossing of f″ needs its smoothness conditions: a cube-root inflection at zero has no finite f′ there. State that these equivalences apply when the needed derivatives exist and the indicated sign change occurs.
+
+## 56. Applications lesson09 endpoint wording (brief 142, d18)
+
+The modelling card says "The domain is where the marks hide". Explain instead that the physical domain identifies valid candidates and controls endpoint checks; marks depend on the question's marking criteria.
+
+Short-answer Q3 asks why integer endpoints must still be checked despite one local maximum, and its answer says an endpoint could be larger. Its answer separately assumes a smooth continuous model with a single stationary point that is a local maximum. Under that stronger condition the derivative cannot change sign again, so the model increases to the maximum and decreases after it; the adjacent integer candidates beat the endpoints. Either add the necessary smoothness and single-stationary-point condition and explain this consequence, or ask for the general endpoint principle without asserting that this particular endpoint can win. The question itself does not state all the answer's smooth-model assumptions.
+
+## 57. Applications lesson02 proportional growth claims (brief 142, d19)
+
+The page uses older Module 6/MAV-12-06 labels; use the 2024 Applications of calculus focus area. Its hook calls the mathematics of pandemic modelling, interest, dating and metabolism identical and says one equation rules them all. Scope the statement to simple exponential models or suitable early stages; many relevant processes require different models.
+
+The derive card uses separation of variables to obtain N₀=e^C from ln|N|=kt+C. That step assumes a positive solution; a nonzero negative solution has N₀=−e^C, and the zero solution also needs separate treatment. The Advanced syllabus asks students to verify Q=Ae^(kt) by substitution, so that verification avoids suggesting the separation step is required course content.
+
+The COVID box is headed "Basic Reproduction Number" but describes growth rate r, a different quantity, and says lockdowns reduced r below zero as a general statement. Reducing growth can flatten a curve without making r negative; r<0 corresponds to decline in the simple model.
+
+The odd-one-out option "Newton's Law of Cooling: temperature of a hot object in a cold room" needs to identify temperature difference from the room as the exponentially decaying quantity. The temperature itself approaches the room temperature rather than necessarily zero. The "traps that cost marks" heading makes an unsupported universal marking claim.
+
+## 58. Integral lessons01 and 04 primitive definitions (brief 142, i01)
+
+Lesson01 defines an antiderivative as one F with F′=f and then says it is also called the indefinite integral. Lesson04 similarly labels one F but writes F+C. Distinguish one primitive F from the general primitive F+C on an interval. C labels a member of the family; F+C as C varies represents the family.
+
+Lesson01 calls the 1/x special case outside the Year 11 syllabus on a page now used in Year 12; identify it as a separate Year 12 reciprocal case. Both lessons assert marks are invariably lost or that examiners actively check for +C. Explain the mathematical reason for +C without universal marking claims. Lesson04 retains old Module 6 labelling.
+
+Lesson04 Q3 switches from a downward-positive free-fall velocity 9.8t to an upward-positive thrown-particle velocity 5−9.8t without naming the change. Name the sign convention for each part. The elongated-S history is a teaching note, not a mathematical error.
+
+## 59. Integral lesson05 power-rule corrections (brief 142, i02)
+
+Trap 02 says x^(3/2)/(3/2) "does NOT equal" x^(3/2)/1.5 left unsimplified. They are exactly equal because 3/2=1.5. Present (2/3)x^(3/2)+C as a simplified form, not as a correction of a false inequality.
+
+The examples omit original real domains: x⁻³ and (x³+2x)/x require x≠0, x^(3/2) requires x≥0, and 1/√x requires x>0. Keep the original exclusion when simplifying; on disconnected domains explain that primitive constants can differ by component.
+
+The water-tank hook uses definite total accumulation before the route introduces definite integrals, and its assertion that pressure drops as the tank fills is unsupported by the given rate. Treat the sequencing as a teaching note and remove or substantiate the physical explanation. The page retains old Module 6 labelling and makes an unsubstantiated claim about how many students forget a negative exponent.
+
+## 60. Integral lesson06 exponential presentation (brief 142, i03)
+
+The visible header retains the older Module 6 label. The key insight says every Ceˣ is "its own integral"; Ceˣ is one of its own primitives, while its indefinite integral is the family Ceˣ+K. Distinguish the stretch constant from the additive integration constant.
+
+The e^(kx) primitive is printed without the condition k≠0. At k=0 the integrand is the constant 1 and its primitive is x+C. The general-base card's claim that the rule is less common in the HSC and the trap's universal mark claim need evidence or should be removed.
+
+The medical-imaging box calls −D₀τe^(−t/τ)+C a "total dose". It is a family of primitives; a total over a specified time interval requires limits and subtraction. The broad clinical outcome statement is not established by the displayed mathematical model.
+
+## 61. Integral lesson06 reciprocal branches (brief 142, i04)
+
+The 1/x card says the absolute value covers positive and negative domains, but a single +C cannot represent all primitives across the disconnected union. State that each of x<0 and x>0 can have its own additive constant, and that the usual expression with one C describes one interval or a subset of the full family. Mixed examples also need x≠0; the square-root term in Q2 further requires x>0.
+
+The hook claims a climate scientist needs ∫1/x dx for CO₂ absorption but states no physical model yielding that rate. Supply such a model or remove the assertion. The site header and unsupported mark claims for this page were recorded in item 60; do not duplicate them.

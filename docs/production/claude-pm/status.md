@@ -1919,3 +1919,74 @@ After brief 138 was handed in, generated all 20 new plate candidates and attempt
 ### Brief 139 complete: final plates and alpha repairs (1 November 2026)
 
 Supersedes the earlier pending-cleanup entry. User authorised local pixel editing. Delivered 20 final plates and two alpha-only repairs; exact 15 onion lengths, eight equivalent cheek widths and ten bacteria are verified. Bubble registration, lysosome alignment, common glass/grid scale, transparent backgrounds, canvases and final hashes pass local QA. Both repaired originals preserve all RGB and interior pixels; original neuron.png is preserved with a new sibling replacement. See assets/brief139-manifest.json, brief139-validation.json, brief139-inspection.md and brief139-qa/final/. All seven provenance files updated. No design edits, speech, renders or commits. Briefs 136, 137, 138 and 139 completed sequentially.
+
+### Brief 140: partial error check (2 November 2026)
+
+In progress. `checks/y11b-v01-error-check.md` records the remaining cheek-sampling instruction as a blocker and an outdated author note. `checks/y11b-v06-error-check.md` records the neuron asset reference, the illustration labelled as a photomicrograph, and the handoff frame issue. The seven narration counts match the Revision 2 per-scene totals, with no em dashes in the designs. The remaining checks and reports are not yet complete. Briefs 141 to 143 remain queued in that order.
+
+### Brief 140: error check hand-in (2 November 2026)
+
+- m5g02b: 0 blockers, 2 should fix.
+- y11b-v01: 1 blocker, 2 should fix.
+- y11b-v02: 0 blockers, 1 should fix.
+- y11b-v03: 0 blockers, 2 should fix.
+- y11b-v04: 0 blockers, 2 should fix.
+- y11b-v05: 0 blockers, 2 should fix.
+- y11b-v06: 0 blockers, 2 should fix.
+
+Reports: `checks/m5g02b-error-check.md` and `checks/y11b-v01-error-check.md` through `checks/y11b-v06-error-check.md`. Root decision 10 and the site correction contain the cheek-tissue restriction. Handoff frames need a final-notes decision; actual playback is not yet available. No design edits, speech, renders or commits.
+
+Correction to brief 140 counts: y11b-v04 has 3 should-fix findings (feedback still presents transfer as established); y11b-v06 has 3 (attempt 2 speech omits the printed-size condition). See the reports.
+
+### Brief 141 complete (2 November 2026)
+
+- phys-y11-fa1-v13: pack written at `pre-design/phys-y11/phys-y11-fa1-v13.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v14: pack written at `pre-design/phys-y11/phys-y11-fa1-v14.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v15: pack written at `pre-design/phys-y11/phys-y11-fa1-v15.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v16: pack written at `pre-design/phys-y11/phys-y11-fa1-v16.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v17: pack written at `pre-design/phys-y11/phys-y11-fa1-v17.md`; route refinement proposed; site correction added.
+- phys-y11-fa1-v18: pack written at `pre-design/phys-y11/phys-y11-fa1-v18.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v19: pack written at `pre-design/phys-y11/phys-y11-fa1-v19.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v20: pack written at `pre-design/phys-y11/phys-y11-fa1-v20.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v21: pack written at `pre-design/phys-y11/phys-y11-fa1-v21.md`; route refinement proposed; no new site correction for this source.
+- phys-y11-fa1-v22: pack written at `pre-design/phys-y11/phys-y11-fa1-v22.md`; route refinement proposed; site correction added.
+- phys-y11-fa1-v23: pack written at `pre-design/phys-y11/phys-y11-fa1-v23.md`; route refinement proposed; site correction added.
+- phys-y11-fa1-v24: pack written at `pre-design/phys-y11/phys-y11-fa1-v24.md`; route refinement proposed; site correction added.
+
+Four corrections in `site-corrections-phys-y11.md`; calculations and validation in `work/brief141/`. Investigation data are illustrative, not observed. No designs, code, speech, renders or commits.
+
+### Brief 142: d11 review in progress (2 November 2026)
+
+`checks/m-a12d11-learning-review.md` and `checks/m-a12d11-claude-science-check.md`: 0 blockers, 2 unique should fix, 0 optional; 5,928 characters, about 538 s. Corrected site log item 50. The remaining thirteen reviews are not yet complete.
+
+Brief 142 d12: `checks/m-a12d12-learning-review.md` and `checks/m-a12d12-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 5,693 characters, about 516 s. Official Year 11 placement of all co-function identities remains unconfirmed.
+
+Brief 142 d13: `checks/m-a12d13-learning-review.md` and `checks/m-a12d13-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 5,527 characters, about 506 s. Site corrections added. The root's scene 11 claim appears in d13, not d11.
+
+Brief 142 d14: `checks/m-a12d14-learning-review.md` and `checks/m-a12d14-claude-science-check.md`: 0 blockers, 4 unique should fix, 0 optional; 5,643 characters, about 516 s. No new site correction found in the sections used.
+
+Brief 142 d15: `checks/m-a12d15-learning-review.md` and `checks/m-a12d15-claude-science-check.md`: 0 blockers, 2 unique should fix, 0 optional; 6,070 characters, about 549 s. Site log updated; source already specifies the non-vertical tangent, so the proposed missing-qualifier finding was rejected.
+
+Brief 142 d16: `checks/m-a12d16-learning-review.md` and `checks/m-a12d16-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 5,643 characters, about 517 s. Site log updated. Root decision 10 confirmed for the stated examples.
+
+Brief 142 d17: `checks/m-a12d17-learning-review.md` and `checks/m-a12d17-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 6,280 characters, about 567 s. Site findings logged; use the listed cuts in order if speech must grow.
+
+Brief 142 d18: `checks/m-a12d18-learning-review.md` and `checks/m-a12d18-claude-science-check.md`: 0 blockers, 1 unique should fix, 0 optional; 5,651 characters, about 518 s. Site log updated. Root decision 12 confirmed.
+
+Brief 142 d19: `checks/m-a12d19-learning-review.md` and `checks/m-a12d19-claude-science-check.md`: 0 blockers, 2 unique should fix, 0 optional; 6,091 characters, about 551 s. Site corrections logged. Root decision 13 confirmed.
+
+Brief 142 i01: `checks/m-a12i01-learning-review.md` and `checks/m-a12i01-claude-science-check.md`: 0 blockers, 2 unique should fix, 0 optional; 5,589 characters, about 514 s. Site log updated; root decision 14 confirmed.
+
+Brief 142 i02: `checks/m-a12i02-learning-review.md` and `checks/m-a12i02-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 5,669 characters, about 520 s. Site corrections logged.
+
+Brief 142 i03: `checks/m-a12i03-learning-review.md` and `checks/m-a12i03-claude-science-check.md`: 0 blockers, 3 unique should fix, 0 optional; 5,623 characters, about 519 s. Site log updated; root decision 15 confirmed.
+
+Brief 142 i04: `checks/m-a12i04-learning-review.md` and `checks/m-a12i04-claude-science-check.md`: 0 blockers, 1 unique should fix, 0 optional; 5,845 characters, about 538 s. Site log updated. Root decision 16 is reflected in the current definition and branch sentence.
+
+Brief 142 i05: `checks/m-a12i05-learning-review.md` and `checks/m-a12i05-claude-science-check.md`: 0 blockers, 2 unique should fix, 0 optional; 5,765 characters, about 529 s. The harder matched example is retained pending voiced playback; no new site correction in the cited worked derivatives.
+
+Brief 142 source verification: fresh official pages were checked on 2 November 2026. All 50 route actions across d11 to i05 matched their original expanded official HTML text and codenames; machine evidence is in `work/brief142-syllabus-validation.json`. The Year 11 reciprocal, complementary-angle and Pythagorean identity points confirm root decision 7, as appended to the d12 maths report. Item 50 of the site log was corrected before adding findings. All 28 reviews are now written. No designs, speech, renders or commits.
+
+### Brief 143 partial build checkpoint (2 November 2026)
+
+Work is in progress, not complete. The current graph changes and prototype parts, tests passed, and remaining required APIs, stills, motion sample, full decode and manifest are recorded in `checks/codex-build-143-progress.md`. No lesson designs, speech or commits were changed. Do not treat this checkpoint as motion or production approval.

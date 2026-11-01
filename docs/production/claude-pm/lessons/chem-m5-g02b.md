@@ -193,7 +193,7 @@ Recalculated with Python (PYTHONIOENCODING=utf-8), 1 Nov.
 | q2 first stretch | [H2] = 0.200, [I2] = 0.050, [HI] = 0.700 mol/L; K = 0.700^2 / (0.200 x 0.050) = 0.49 / 0.010 = 49.0 | K = 49 as in C8 and C9; made-up values; H2 and I2 unequal so their lines do not overlap |
 | q2 t1 (HI added) | [HI] jumps to 1.000; Q = 1.000 / 0.010 = 100 > 49, net reverse; (1.000 − 2x)^2 = 49(0.200 + x)(0.050 + x) gives x = 0.0290 (other root −0.390 rejected); new [H2] = 0.229, [I2] = 0.079, [HI] = 0.942; check 0.942^2 / (0.229 x 0.079) ≈ 49.05, about 49 at this rounding | HI falls 0.058, H2 and I2 each rise 0.029 (2 : 1 : 1) |
 | q2 t2 (volume halved) | every concentration doubles: [H2] = 0.458, [I2] = 0.158, [HI] = 1.884; Q multiplied by 2^2 / (2 x 2) = 4 / 4 = 1, so Q = K (about 49 from the rounded values); lines flat | equal gas count, two each side |
-| q2 t3 (heated) | K falls to 36 (made-up); (1.884 − 2y)^2 = 36(0.458 + y)(0.158 + y) gives y = 0.0308 (y = 0.03076; other root −0.959 rejected); new [H2] = 0.489, [I2] = 0.189, [HI] = 1.822; check 1.822^2 / (0.489 x 0.189) ≈ 35.9, about 36 at this rounding (plot endpoints from the unrounded roots) | HI falls 0.061, H2 and I2 each rise 0.031; no temperature stated (author note (d): about 620 C if ΔH = −9.6 kJ, not shown) |
+| q2 t3 (heated) | K falls to 36 (made-up); (1.884 − 2y)^2 = 36(0.458 + y)(0.158 + y) gives y = 0.0308 from the rounded t2 inputs (y = 0.03076; other root −0.959 rejected); for the build, plot from the unrounded t1 root instead: y = 0.03066825, final [H2] = 0.4887642, [I2] = 0.1887642, [HI] = 1.8224716 mol/L; new [H2] = 0.489, [I2] = 0.189, [HI] = 1.822; check 1.822^2 / (0.489 x 0.189) ≈ 35.9, about 36 at this rounding (plot endpoints from the unrounded roots) | HI falls 0.061, H2 and I2 each rise 0.031; no temperature stated (author note (d): about 620 C if ΔH = −9.6 kJ, not shown) |
 | q3 conditions | about 450 C, about 1 atm, vanadium(V) oxide, excess air | Site lesson 8 Q7 (450 C, 1 atm); site lesson 7 key term (vanadium(V) oxide); real 400 to 450 C, 1 to 2 atm (author note (c)) |
 | q3 gas count | 3 → 2 (2SO2 + O2 to 2SO3) | |
 | Hook and q3 contrast | Haber about 200 atm, 4 → 2; Contact about 1 atm, 3 → 2 | C7 (about 200 atm); site lesson 8 Q7 |
@@ -236,9 +236,9 @@ Counted by script (18 scenes; `### N.` headings with letter suffixes, "> " lines
 | 8. key-notes | 75 |
 | **Total** | **5,708** (Revision 2) |
 
-Timing: speech about 425 s; padding about 36 s (18 scenes at 2 s); stated holds about 7 s (hook 1 s, q1-chain 2 s, q2-t3 2 s, q4-answer 2 s; the decision board's 2 s is in padding); countdowns 50 s (five); the quiet notes hold beyond its speech about 55 s: **about 573 s, 9.54 minutes**. Spoken numbers ("196", "450", "550", "57") take longer than their characters, so the voiced preview may add about 5 s.
+Timing: speech about 429 s (5,708 ÷ 13.3); padding about 36 s (18 scenes at 2 s); stated holds about 7 s (hook 1 s, q1-chain 2 s, q2-t3 2 s, q4-answer 2 s; the decision board's 2 s is in padding); countdowns 50 s (five); the quiet notes hold beyond its speech about 55 s: **about 573 s, 9.54 minutes**. Spoken numbers ("196", "450", "550", "57") take longer than their characters, so the voiced preview may add about 5 s.
 
-Reserve trims if the voiced preview runs over 9.8 minutes: (1) the hook's "By the end you'll know why." (about 2 s); (2) q2-t2's colour sentence (about 4 s; the crossed chip carries it); (3) q3-mistake's spoken corrections (about 5 s; the green chips carry them); (4) the attempt answer's last sentence (about 4 s). Do not cut q1-profile, q2-t2's Q factor, q3's pressure row or q4's Q against K lines.
+Reserve trims if the voiced preview runs over 9.8 minutes: (1) the hook's "By the end you'll know why." (about 2 s); (2) [used at Revision 2: q2-t2's colour sentence is already cut]; (3) q3-mistake's spoken corrections (about 5 s; the green chips carry them); (4) the attempt answer's last sentence (about 4 s). Do not cut q1-profile, q2-t2's Q factor, q3's pressure row or q4's Q against K lines.
 
 ## Scene list and build ids
 
