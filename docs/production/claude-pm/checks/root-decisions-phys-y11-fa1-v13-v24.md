@@ -14,3 +14,10 @@ Decisions 1 to 16 in `root-decisions-phys-y11-fa1-v01-v12.md` still apply. Revie
 10. **v18 and v20** keep their added scenes (pulley; hanging sign). **v19** at 5,420 characters is accepted. v18's trolleys on a smooth track replace the site's blocks, with the same numbers.
 11. **Not added** (later homes or exam practice): unsymmetrical cable systems, two hanging masses over a pulley, recoil.
 12. **Route refinements** each design adopted are accepted; root enters them in the route JSON at its next edit.
+
+## v21 to v24
+13. **v21** now opens on v20's actual handoff frame (crate at rest on the 25° ramp with W, the shorter F_N and the ghost of W), then builds the measured set-up (root edit).
+14. **v24 handoff** goes to v26 because v25 is on cultural hold; v26's proposed question "How does a force along the motion change an object's kinetic energy?" is adopted in the route at the next edit. If v25 is later released, only the separate handoff take changes.
+15. **v24 uncertainty bars:** taught at the minimum level (as v15), with standard deviation deferred; recalled in one sentence if the FA0 skills video is released first.
+16. **Smaller calls accepted:** v21 attempt 2 card uses an HSC-style line drawing; v22's vertical check uses a tall stand rod; v23 says "about one hundred and seventy newtons" for 1.7 × 10² N; v24's illustrative data extend to six angles.
+17. **Ramp kit:** one adjustable-ramp plate set (plank, hinge block, stand, boss, protractor without numerals, force scales) serves v21 to v24; plates are rotated by code, never stretched.
