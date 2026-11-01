@@ -68,3 +68,5 @@ export * from './algebra';
 export * from './graphs';
 
 export * from './reflection';
+
+export * from './strand-parts';

@@ -116,26 +116,38 @@ export const dialFraction = (value: number, min: number, max: number) => {
  if (![value,min,max].every(Number.isFinite) || max <= min) throw new RangeError('Finite dial value and increasing range required');
  return Math.max(0,Math.min(1,(value-min)/(max-min)));
 };
-export type NumericDialProps = {value: number; min: number; max: number; label: string; digits?: number; width?: number};
-/** Controlled numeric parameter: pass a frame-animated value to sweep the dial. */
-export const NumericDial: React.FC<NumericDialProps> = ({value,min,max,label,digits=2,width=300}) => {
- const p=dialFraction(value,min,max), angle=Math.PI*(1-p), x=150+90*Math.cos(angle), y=120-90*Math.sin(angle);
- return <svg width={width} height={178} viewBox="0 0 300 178" role="img" aria-label={`${label} = ${value.toFixed(digits)}`}><path d="M60 120 A90 90 0 0 1 240 120" stroke="#d8cdbb" strokeWidth={8} fill="none"/><line x1={150} y1={120} x2={x} y2={y} stroke={ACCENT} strokeWidth={5}/><circle cx={150} cy={120} r={7} fill={ACCENT}/><Text x={50} y={149} size={22}>{min}</Text><Text x={250} y={149} size={22} anchor="end">{max}</Text><Text x={150} y={174} size={26} anchor="middle">{label} = {value.toFixed(digits)}</Text></svg>;
+/** Clamp an animated parameter before evaluating its function. Limits cannot straddle an exclusion. */
+export const limitedParameter = (value:number,min:number,max:number,excluded:readonly number[] = []) => {
+ if(![value,min,max,...excluded].every(Number.isFinite)||max<min||excluded.some(x=>x>=min&&x<=max))throw new RangeError('Finite parameter limits must avoid every excluded value');
+ return Math.max(min,Math.min(max,value));
 };
-export type FunctionGraphProps = GraphSpec & {draw?: number; movingX?: number; tangent?: Tangent; children?: React.ReactNode; parameter?: number; parameterFn?: (x: number, parameter: number) => number; ghostParameter?: number; transform?: AttachedTransform};
+export const foldAnnotationsVisible = (scale:number,threshold=0.08) => {
+ if(!Number.isFinite(scale)||!Number.isFinite(threshold)||threshold<0)throw new RangeError('Finite fold scale and nonnegative threshold required');
+ return Math.abs(scale)>threshold;
+};
+export type NumericDialProps = {value: number; min: number; max: number; label: string; digits?: number; width?: number; excluded?: {value:number;label?:string}};
+/** Controlled numeric parameter: pass a frame-animated value to sweep the dial. */
+export const NumericDial: React.FC<NumericDialProps> = ({value,min,max,label,digits=2,width=300,excluded}) => {
+ if(excluded && (!Number.isFinite(excluded.value)||value===excluded.value))throw new RangeError('Dial cannot display an excluded value');
+ const excludedFraction=excluded ? dialFraction(excluded.value,min,max) : undefined;
+ const p=dialFraction(value,min,max), angle=Math.PI*(1-p), x=150+90*Math.cos(angle), y=120-90*Math.sin(angle);
+ return <svg width={width} height={178} viewBox="0 0 300 178" role="img" aria-label={`${label} = ${value.toFixed(digits)}`}><path d="M60 120 A90 90 0 0 1 240 120" stroke="#d8cdbb" strokeWidth={8} fill="none"/><line x1={150} y1={120} x2={x} y2={y} stroke={ACCENT} strokeWidth={5}/><circle cx={150} cy={120} r={7} fill={ACCENT}/>{excluded && excludedFraction!==undefined && (()=>{const a=Math.PI*(1-excludedFraction),px=150+90*Math.cos(a),py=120-90*Math.sin(a);return <g><path d={`M${px-5},${py-5} l10,10 m0,-10 l-10,10`} stroke="#b33930" strokeWidth={3}/><Text x={150} y={22} size={20} anchor="middle" color="#b33930">{excluded.label ?? `${excluded.value} excluded`}</Text></g>;})()}<Text x={50} y={149} size={22}>{min}</Text><Text x={250} y={149} size={22} anchor="end">{max}</Text><Text x={150} y={174} size={26} anchor="middle">{label} = {value.toFixed(digits)}</Text></svg>;
+};
+export type FunctionGraphProps = GraphSpec & {draw?: number; movingX?: number; tangent?: Tangent; children?: React.ReactNode; parameter?: number; parameterFn?: (x: number, parameter: number) => number; ghostParameter?: number; transform?: AttachedTransform; labelsVisible?: boolean; foldThreshold?: number};
 export const endpointMarkers = (s: GraphSpec): GraphMarker[] => (s.domain ?? []).flatMap(d => ([{x: d.from, included: d.includeFrom}, {x: d.to, included: d.includeTo}])).filter(v => Number.isFinite(v.x) && Number.isFinite(s.fn(v.x)) && !s.markers?.some(m => m.x === v.x)).map(v => ({x: v.x, y: s.fn(v.x), kind: v.included ? 'included' : 'excluded'}));
 /** A complete SVG, or use GraphLayer inside an existing SVG with the same spec. */
 export const FunctionGraph: React.FC<FunctionGraphProps> = props => <svg style={{display: 'block'}} width={props.width ?? 800} height={props.height ?? 520} viewBox={`0 0 ${props.width ?? 800} ${props.height ?? 520}`} role="img" aria-label={props.label ?? 'Function graph'}><GraphLayer {...props} /></svg>;
-export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: baseX, tangent: baseTangent, children, parameter = 0, parameterFn, ghostParameter, transform, ...base}) => {
+export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: baseX, tangent: baseTangent, children, parameter = 0, parameterFn, ghostParameter, transform, labelsVisible=true, foldThreshold=0.08, ...base}) => {
 	const source = parameterFn ? {...base, fn: (x: number) => parameterFn(x, parameter)} : base;
 	const s = transform ? transformedGraph(source, transform) : source;
+	const annotations = labelsVisible && foldAnnotationsVisible(transform?.yScale ?? 1,foldThreshold);
 	const movingX = baseX === undefined ? undefined : carriedPoint(baseX, 0, transform).x;
 	const tangent = baseTangent ? {...baseTangent, x: carriedPoint(baseTangent.x, 0, transform).x, slope: carriedSlope(baseTangent.slope, transform), span: baseTangent.span === undefined ? undefined : Math.abs((transform?.xScale ?? 1) * baseTangent.span)} : undefined;
 	const id = `graph-${useId().replace(/:/g, '')}`, t = graphTransform(s), b = t.box;
 	const curves = useMemo(() => sampleFunction(s), [s.fn, s.x[0], s.x[1], s.domain, s.breaks, s.markers, s.asymptotes]);
 	const until = s.x[0] + Math.max(0, Math.min(1, draw)) * (s.x[1] - s.x[0]);
 	const p = movingX !== undefined && inDomain(s, movingX) && Number.isFinite(s.fn(movingX)) ? t.point(movingX, s.fn(movingX)) : undefined;
-	const a = tangent && inDomain(s, tangent.x) && Number.isFinite(tangent.slope) ? {x: tangent.x, y: s.fn(tangent.x)} : undefined;
+	const a = annotations && tangent && inDomain(s, tangent.x) && Number.isFinite(tangent.slope) ? {x: tangent.x, y: s.fn(tangent.x)} : undefined;
 	return <g>
 		<defs><clipPath id={id}><rect x={b.left} y={b.top} width={b.width} height={b.height} /></clipPath><clipPath id={`${id}-draw`}><rect x={b.left} y={b.top} width={Math.max(0, t.point(until, 0).x - b.left)} height={b.height} /></clipPath></defs>
 		<GraphAxes spec={s} />
@@ -144,11 +156,11 @@ export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: bas
 			{(s.asymptotes ?? []).map((v, i) => {const p = t.point(v.axis === 'x' ? v.value : s.x[0], v.axis === 'y' ? v.value : s.y[0]); return <g key={i}><line x1={v.axis === 'x' ? p.x : b.left} x2={v.axis === 'x' ? p.x : b.left + b.width} y1={v.axis === 'x' ? b.top : p.y} y2={v.axis === 'x' ? b.top + b.height : p.y} stroke={ACCENT} strokeWidth={3} strokeDasharray="10 8" />{v.label && <Text x={v.axis === 'x' ? p.x + 12 : b.left + 12} y={v.axis === 'x' ? b.top + 30 : p.y - 14} color={ACCENT}>{v.label}</Text>}</g>;})}
 			<g clipPath={`url(#${id}-draw)`}>{curves.map((line, i) => <path key={i} d={dPath(line, t)} stroke={s.color ?? BLUE} strokeWidth={5} fill="none" strokeLinejoin="round" />)}</g>
 			{a && tangent && Number.isFinite(a.y) && (() => {const span = tangent.span ?? (s.x[1] - s.x[0]) * 0.22, p = t.point(a.x - span, a.y - tangent.slope * span), q = t.point(a.x + span, a.y + tangent.slope * span), c = t.point(a.x, a.y), run = span * 0.6, r = t.point(a.x + run, a.y), e = t.point(a.x + run, a.y + tangent.slope * run); return <g><line x1={p.x} y1={p.y} x2={q.x} y2={q.y} stroke={ACCENT} strokeWidth={4} />{tangent.showSlope && <><path d={`M${c.x},${c.y} H${r.x} V${e.y}`} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="7 5" fill="none" /></>}</g>;})()}
-			{p && <circle cx={p.x} cy={p.y} r={9} fill={ACCENT} stroke={CARD} strokeWidth={3} />}
+			{annotations && p && <circle cx={p.x} cy={p.y} r={9} fill={ACCENT} stroke={CARD} strokeWidth={3} />}
 		</g>
-		{[...endpointMarkers(s), ...(s.markers ?? [])].filter(m => m.x <= until).map((m, i) => {const p = t.point(m.x, m.y); if (m.x < s.x[0] || m.x > s.x[1] || m.y < s.y[0] || m.y > s.y[1]) return null; return <g key={i}>{m.kind === 'corner' ? <path d={`M${p.x},${p.y - 10} l10,10 l-10,10 l-10,-10 Z`} fill={ACCENT} /> : <circle cx={p.x} cy={p.y} r={8} stroke={s.color ?? BLUE} strokeWidth={3.5} fill={m.kind === 'included' ? s.color ?? BLUE : CARD} />}{m.label && <Text x={p.x + 15} y={p.y - 16}>{m.label}</Text>}</g>;})}
+		{annotations && [...endpointMarkers(s), ...(s.markers ?? [])].filter(m => m.x <= until).map((m, i) => {const p = t.point(m.x, m.y); if (m.x < s.x[0] || m.x > s.x[1] || m.y < s.y[0] || m.y > s.y[1]) return null; return <g key={i}>{m.kind === 'corner' ? <path d={`M${p.x},${p.y - 10} l10,10 l-10,10 l-10,-10 Z`} fill={ACCENT} /> : <circle cx={p.x} cy={p.y} r={8} stroke={s.color ?? BLUE} strokeWidth={3.5} fill={m.kind === 'included' ? s.color ?? BLUE : CARD} />}{annotations && m.label && <Text x={p.x + 15} y={p.y - 16}>{m.label}</Text>}</g>;})}
 		{a && tangent?.showSlope && <ReadoutPanel graph={s} x={a.x} y={a.y} gradient={tangent.slope} />}
-		{children}
+		{annotations && children}
 	</g>;
 };
 

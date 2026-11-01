@@ -431,3 +431,99 @@ Lesson02 line 399 says “The chain rule drops $\ln a$ out front”, immediately
 ## Teaching and syllabus note, not a mathematical error (brief 132)
 
 Lesson03 derive line 404 uses x = e^y and implicit differentiation. This is correct. The 2024 point cib961593d explicitly asks for the chain rule on e^(ln x) = x. Lead with that exact identity: e^(ln x)(ln x)' = 1, hence x(ln x)' = 1 and (ln x)' = 1/x for x > 0. Retain the implicit version as an equivalent explanation if desired. The stale course identity is already item 3 and is not duplicated. No site HTML changed.
+
+## 29. differential-calculus/lesson04.sa.html: repeat of item 11 in consolidate (brief 133)
+
+The consolidate paragraph at line 640 repeats “ln a ... measures how far the base a sits from e”. This extends existing item 11 to that second location, rather than adding a new mathematical defect. Replace with “The 1/ln a factor comes from change of base. For a > 1, increasing the base gives a smaller positive factor; for 0 < a < 1, the factor is negative and the log decreases.” The existing slower-growing claim needs that a > 1 scope. Check: ln e = 1, not zero; the factor is 1/ln a.
+
+## 30. differential-calculus/lesson04.sa.html: conditions beside the formula (brief 133)
+
+Line 351 says the formula holds “for any valid base a”; the derive formula omits adjacent domain conditions. Put “x > 0, a > 0, a ≠ 1” beside the boxed derivative so learners can retain the necessary conditions with the rule. This is a missing condition reminder, not a false derivative. [Official 2024 differential-calculus content](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480); base one is invalid because 1^y cannot invert to a logarithm.
+
+## 31. differential-calculus/lesson04.sa.html: generic marking claim (brief 133)
+
+Lines 525, 528 and 539 say “Meet the three errors that cost marks” and “the 3 traps that cost marks”. Replace with “three common errors”. No question-specific marking criteria are identified; a mistake's credit depends on the actual task. This is the same generic wording issue already logged for other lessons, applied to lesson04's distinct occurrences.
+
+## Notation clarification request, not a proved false convention (brief 133)
+
+Lesson04 line 555 says “In HSC, log x without a stated base usually means log_10 x.” No cited HSC convention is provided on this page. This review has not established that the convention claim is false. Safer teaching text is “Check which base is intended. For base 10 the derivative is 1/(x ln 10).” Keep this as an editorial clarification, not a confirmed mathematical site error. No site HTML changed.
+
+## 32. lesson05: frequency and absolute exam claims (brief 134, d05)
+
+Verified the actual lesson05 HTML: “Most errors come from putting a minus here”, “Every HSC trig differentiation question uses radian measure”, and “HSC always uses radians for calculus”. No frequency data or universal examination rule is cited. Replace with “A common slip is adding a minus sign” and “These derivative formulas require radian measure; degrees introduce a pi/180 factor.” This records unsupported teaching claims, not a claim about an examined paper.
+
+## 33. lesson05: half-maximum distractor explanation (brief 134, d05)
+
+Card05 labels sqrt(2)/2 as “half the maximum slope”. The maximum sine slope is 1, whose half is 1/2. Drop that parenthesis or use 1/2 for the stated explanation. A wrong distractor should not carry a false explanatory fact.
+
+## 34. lesson05: cosine minimum wording (brief 134, d05)
+
+“then decreases (negative slope) reaching minimum at x = pi/2” ambiguously refers to the curve. Cosine reaches its minimum at pi; its slope reaches -1 at pi/2. Say “The curve falls; its slope reaches its minimum, -1, at pi/2.”
+
+## Outcome-code clarification (brief 134, d05)
+
+MAV-12-04 is a valid 2024 official outcome, as confirmed on the official differential-calculus page. Do not remove the bare code as a false identifier. The site's “MAV-12-04 dot point 1” and “dot points 3-4” are not official content-point identifiers; use the actual content wording/codename for those claims. Existing metadata findings remain separate. No site edits.
+
+## 35. lesson06: retain composite domains (brief 134, d06)
+
+Actual card07 and its ln(cos x) key point omit the domain: keep cos x>0 beside -sin x/cos x=-tan x. The square-root example cos2x/sqrt(sin2x) requires sin2x>0 for this finite derivative; the function can exist at its boundary zeros without that derivative. Add these conditions beside the results.
+
+## 36. lesson06: tangent definition (brief 134, d06)
+
+Key terms says a tangent touches a curve at a single point. Replace with “The line through (x0,f(x0)) with gradient f'(x0).” A tangent may cross or meet the curve again. This is a distinct location of the lesson05 issue, not a new mathematical defect.
+
+## 37. lesson06: universal scope claims (brief 134, d06)
+
+“you can differentiate anything the HSC can throw at you” and “Three rules cover every case in Maths Advanced” give an unsupported universal promise. Say “Apply these rules to combinations of the course functions.” Preserve actual domain and differentiability checks.
+
+## Double-angle scope note (brief 134, d06)
+
+Fresh official Advanced trigonometric content contains no double-angle identity point. The site's derivative 6sin3x cos3x=3sin6x is mathematically correct. Keep the first form as the expected endpoint and the second as an optional known-identity simplification. Do not log a false derivative. Official HTML evidence: work/brief134-trig-official.json; no Advanced content point supports making this simplification required.
+
+## 38. lesson06 we-3: unspecified full-marks promise (brief 134, d07)
+
+“Award full marks for recognising this clearly” is not an identified marking scheme. Replace with “State clearly that the tangent is parallel to the x-axis.” Keep the correct derivative. Existing tangent/universal scope issues are items36 and37, not repeated.
+
+## 39. lesson06 revisit punctuation (brief 134, d07)
+
+“The answer is no it's f'g + fg'” needs punctuation: “The answer is no: it's f'g + fg'.” Formula unchanged. This is an editorial correction, not a mathematical defect.
+
+## 40. lesson06 quotient conditions and cancellation (brief 134, d08)
+
+Section06 examples/true-false and we-2/SA1(b) omit adjacent domain restrictions. Retain x!=0 for sin x/x squared and exp x/x, x!=-1 for exp x/(x+1), and x>0,cos x!=0 for ln x/cos x. Keep g(x)!=0 beside the general rule. Cancel x in the first example only because the original domain excludes zero; carry that exclusion down.
+
+## Method clarification, not a false derivative (brief 134, d08)
+
+“Using the product rule with g^-1 can avoid the 'over bottom squared' step for messy denominators” can mean avoiding the memorised quotient-rule arrangement, but it does not remove the g^-2 from differentiating the reciprocal. Say “The product and chain rules give the same result; choose the shorter algebra.” The neighbouring advice about complex numerators need not contradict advice about denominators. Do not log a mathematical error merely because two methods are available.
+
+## 41. applications lesson06: obsolete module identity (brief134,d09)
+
+Actual title uses “Year12 Module6”. Use the 2024 focus-area name Applications of calculus. Do not label a bare official outcome code false merely because no published content-point code exists; the old module mapping and “Turning points and graphing” label need the correction. Existing item17's sign-chart domain issue remains separate.
+
+## 42. applications lesson06: unsupported marking heading (brief134,d09)
+
+“traps that cost marks” and “Where these marks are lost” identify no task-specific marking criteria. Use “Common errors” and describe the mathematical consequence. This logs the distinct page occurrence, not a universal scoring rule.
+
+## 43. applications lesson09: module and internal-label copy (brief134,d10)
+
+Replace obsolete“Year12 Module6” with the2024 Applications of calculus focus. The visible“dp12 exists” is an internal label; remove it and the unsupported“routinely forgotten” claim. Bare outcome codes must be checked separately from module mappings.
+
+## 44. applications lesson09: candidate method conditions (brief134,d10)
+
+“short and completely reliable procedure” needs its hypotheses: continuous on a closed finite interval, with every interior stationary or nondifferentiable candidate and both ends checked. A break or open domain may fail to attain an extreme. Keep the stated domain with the answer.
+
+## 45. applications lesson09: wrong factor-of-nine comparison (brief134,d10)
+
+The core example x cubed-3x on[0,3] has only the interior stationary minimum-2 at1. Its maximum is18 at3, so no interior maximum2 is available for a factor-of-nine comparison. Say that stopping at stationary points finds only the minimum and misses the endpoint maximum. The hook's separate interval contains the local maximum2.
+
+## 46. applications lesson09: second-place endpoint (brief134,d10)
+
+“The maximum is at an endpoint and the other endpoint is not even second” is false for x+4/x on[1/2,4]. Candidate values are8.5,4,5; the other endpoint5 is second. Replace with“the other endpoint comes second, ahead of the stationary point.”
+
+## 47. applications lesson09: universal marks/frequency claims (brief134,d10)
+
+“single most expensive error”,“every one of the five is a marked step”,“worth a mark in its own right”,“Rejecting the root explicitly is a marked step” and generic traps-that-cost-marks headings cite no task-specific marking criteria. Use“Show this step” and describe why it is needed; marks depend on the question.
+
+## Local/global convention clarification (brief134,d10)
+
+Do not log“Every global extremum is local” as unconditionally false. It is true under the definition using neighbourhoods relative to the domain; two-sided interior-local conventions treat endpoints separately. Specify the intended convention. An endpoint winner need not be stationary or a turning point. [OpenStax4.3](https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima) explicitly uses the interior-local convention. No site edits.

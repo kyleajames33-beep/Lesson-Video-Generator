@@ -141,3 +141,31 @@ Read-only site quotations rechecked against the HTML. B03 and G03 share one set 
 | Lesson and page | Exact page text | Problem | Correct statement | Source |
 | --- | --- | --- | --- | --- |
 | Biology L10, `C:\Users\kygs\hscscience\subjects\biology\year12\module8\lesson10.sa.html` | Typically 4 to 8 driver mutations in cell-cycle genes must accumulate in the same cell lineage before a tumour becomes fully malignant. | This imposes a particular required range and limits drivers to cell-cycle genes. Driver numbers and affected pathways differ by cancer type. | Cancer usually involves several driver changes in one cell lineage; the number and pathways vary between cancers. Do not require every tumour to accumulate four to eight cell-cycle-gene mutations. | [Vogelstein et al., Science 2013](https://pubmed.ncbi.nlm.nih.gov/23539594/) |
+
+
+## Brief 122 confirmed addition (31 October 2026)
+
+The three L06 quotations below were rechecked in the read-only HTML. They are one repeated classification error, separate from the unchanged owner cultural hold.
+
+| Lesson and page | Exact page text | Problem | Correct statement | Source |
+| --- | --- | --- | --- | --- |
+| Biology L06, `biology/year12/module8/lesson06.sa.html`, card text | "The dividing criterion is transmissibility, not severity, treatability or genetics." | Environmentally acquired infections such as tetanus need not pass between people. | Classify infectious disease by a pathogen causing it. Many infections pass between people; tetanus does not. | [CDC tetanus chapter](https://stacks.cdc.gov/view/cdc/252999/cdc_252999_DS1.pdf) |
+| Biology L06, same page, notes | "The criterion is transmissibility, not genetics: cystic fibrosis and Huntington's are genetic and non-infectious." | The classification criterion is again incorrect. | The criterion is a pathogen causing the disease. Cystic fibrosis and Huntington's are genetic and non-infectious. | [CDC tetanus chapter](https://stacks.cdc.gov/view/cdc/252999/cdc_252999_DS1.pdf) |
+| Biology L06, same page, misconception feedback | "Non-infectious refers only to transmissibility. Genetic diseases such as cystic fibrosis and Huntington's are non-infectious. The term describes how a disease is or is not transmitted, not what causes it at the molecular level." | This confuses infectious with contagious and repeats the wrong dividing rule. | Non-infectious means the disease is not caused by a pathogen. A disease can be infectious without being contagious between people, as tetanus shows. | [CDC tetanus chapter](https://stacks.cdc.gov/view/cdc/252999/cdc_252999_DS1.pdf) |
+
+### B09 rejected proposals, not site errors
+
+- B09 site finding 3, "a large benign tumour never metastasises": **rejected** by `checks/m8b09-claude-science-check.md`. A tumour does not metastasise while it is benign. No replacement requested.
+- B09 site finding 8, BRCA1 risk around 70% against a general-population lifetime estimate around 12%: **rejected** by the same science check. The proposed Australian replacement mixed risks measured to different ages. No replacement requested.
+
+B14's Mackenzie's Mission attribution is already logged above. The separate one-in-twenty figure is supported by Archibald et al. (12,000 tests, 610 carriers, 5.08%), not by Mackenzie's Mission. [Original study](https://www.geneticclinic.com.au/wp-content/uploads/2017-prepair-Genet-Med-1.pdf). No duplicate site error added. No site file was edited.
+
+## Brief 127 confirmed addition and coverage note (1 November 2026)
+
+Read-only source checked: `C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson02.sa.html`. No site file was edited.
+
+| Lesson and page | Exact page text | Problem | Correct statement | Source |
+| --- | --- | --- | --- | --- |
+| Biology L02, same file, insulation card (line 587), summary (595), category card (517) | "Insulation is always on, so an animal cannot shed it when conditions change quickly." Summary: "Insulation traps still air or lipid, slowing heat transfer both ways, always on." Category: "fixed body features: fur, blubber, body shape, countercurrent vessel arrangement. No ongoing energy cost, but cannot be switched off." | The absolute wording makes effective insulation sound fixed. Piloerection or feather fluffing changes the air layer quickly, even though an animal does not instantly remove its coat. The page's own line 551 already explains that raising hairs improves insulation. | Fur and feathers remain body features, but animals can change effective insulation by raising or flattening them. A coat cannot simply be shed on demand. Seasonal coat changes also alter insulation. | [Stanford bird thermoregulation](https://web.stanford.edu/group/stanfordbirds/text/essays/Temperature_Regulation.html), feather fluffing and coat thickness; [Berkeley thermoregulation lab](https://mcb.berkeley.edu/courses/bio1a/lab/downloads/Bio1AL_Diveristy_Birds.pdf), trapped-air insulation. |
+
+Coverage note, not a factual-error quotation: the existing learning-goal text at line 285 is "How insulation and surface area affect heat transfer." The page's syllabus text includes "investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:". Full-page inspection found explanation cards and questions but no student method card for testing insulation or size with a model. Add or link the planned P01 practical, with equal starts and volumes for the insulation comparison, the bare control, readings and a cooling graph, school-approved risk controls, and the limit that a flask does not regulate. A beaker-size comparison can extend it. Do not claim the syllabus mandates this exact apparatus. [Official Biology 2017 syllabus, page 56](https://educationstandards.nsw.edu.au/wps/wcm/connect/657d2611-c201-49ce-a18e-ef0f786a5de0/biology-stage-6-syllabus-2017.pdf?MOD=AJPERES).
