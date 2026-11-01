@@ -13,7 +13,7 @@ export const AlignedAlgebra: React.FC<AlignedAlgebraProps> = ({steps, givens, do
   <div style={{display: 'grid', gridTemplateColumns: 'auto 45px 1fr', columnGap: 12, rowGap: 20, alignItems: 'baseline'}}>
    {steps.filter(s => frame >= s.at && (s.until === undefined || frame < s.until)).map(s => <React.Fragment key={s.id}>
     <div style={{textAlign: 'right', color: s.id === 'answer' ? ACCENT : INK}}>{s.left}</div>
-    <div style={{textAlign: 'center'}}>{s.relation ?? '='}</div>
+    <div style={{textAlign: 'center', opacity: prog(frame, s.at, 12)}}>{s.relation ?? '='}</div>
     <div style={{opacity: prog(frame, s.at, 12), color: s.id === 'answer' ? ACCENT : INK}}>{s.right}</div>
    </React.Fragment>)}
   </div>

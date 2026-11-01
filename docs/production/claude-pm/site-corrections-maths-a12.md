@@ -344,3 +344,44 @@ Integral L01 (`reverse-differentiation`, `apply-the-power-rule`) and L04 both in
 Read-only lesson01, orient, line 311: `$\dfrac{d}{dx}(e^{kx}) = ke^{kx}$, the constant $k$ comes down in front. Worth memorising.` This formula is correct. To match 2024 ci8306d30a's letters, use a as the coefficient of x and reserve k for the outer multiple. Prefer “multiply by the coefficient of x” to “comes down”, which can cue a mistaken power-rule operation. [Official content](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480).
 
 The design's third site finding is thus confirmed as a notation/teaching suggestion only. Its factorisation finding is already item 9 and was not duplicated. No site HTML was changed.
+
+
+## 22. differential-calculus/lesson02.sa.html: key terms, excluded base one (brief 131)
+
+**Exact old text:** “General exponential derivative $\dfrac{d}{dx}(a^x) = a^x \ln a$ for any base $a > 0$, $a \neq 1$.”
+
+**Correction:** The formula holds for every a > 0, including a = 1: 1^x = 1 and (ln 1)1^x = 0. The restriction a != 1 applies to logarithm bases, not to this derivative rule.
+
+**Reason:** The old restriction needlessly excludes a valid constant case and can be confused with the restriction on log bases.
+
+**Verified file:** `C:/Users/kygs/hscscience/subjects/maths-advanced/year12/differential-calculus/lesson02.sa.html`, line 370. HTML encodes > as `&gt;`.
+
+**Source:** [NESA 2024, ci31a76d4a](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480), which states a > 0; direct substitution at a = 1.
+
+## 23. differential-calculus/lesson02.sa.html: consolidate, circular explanation of e (brief 131)
+
+**Exact old text:** “This is not a coincidence, $e$ was chosen precisely because $\ln e = 1$.”
+
+**Correction:** e is the base whose exponential has slope 1 at its y-intercept. Its exponential is its own derivative. The natural log is logarithm to that base, so ln e = 1.
+
+**Reason:** log_b b = 1 for any valid base b. The identity ln e = 1 does not by itself distinguish e from other bases or explain its special derivative.
+
+**Verified file:** same read-only lesson02, consolidate section, line 649; “chosen” is wrapped in an em element.
+
+**Source:** [OpenStax, definition of e and natural logarithm](https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions).
+
+## 24. differential-calculus/lesson02.sa.html: orient and Trap 01, unsupported frequency and marking claims (brief 131)
+
+**Exact old text:** “Forgetting $\ln a$ is the single most common error for this topic.” And: “Writing $2^x$ as the derivative is the most common error for this topic, it costs full marks.”
+
+**Correction:** “Do not omit ln a. For y = 2^x, the derivative is (ln 2)2^x, not 2^x. Credit for an incorrect derivative depends on the question and its marking criteria.” Remove the unsupported error-frequency ranking.
+
+**Reason:** The derivative is wrong, but no marking scheme is identified that makes this a universal loss of all marks. The design's proposed replacement “a differentiate mark is lost” also needs question-specific criteria; do not turn that into a new universal rule.
+
+**Verified file:** same read-only lesson02, orient line 311 and Trap 01 line 553.
+
+**Source/check:** [NESA exact derivative rule ci31a76d4a](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480); the lesson cites no frequency study or universal marking criterion.
+
+## Teaching note, not a mathematical error (brief 131)
+
+Lesson02 line 399 says “The chain rule drops $\ln a$ out front”, immediately explaining that the derivative of x ln a is ln a. The calculation is correct. Prefer “The chain rule multiplies by ln a, the derivative of x ln a” to avoid evoking the power-rule operation. This is a wording suggestion only. The stale course identity is already item 2, so it is not duplicated. No site file was edited.
