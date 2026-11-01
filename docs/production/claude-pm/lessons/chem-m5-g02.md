@@ -1,6 +1,6 @@
 # G02 (Chemistry, Module 5): Every type of HSC equilibrium question, part 1: explain and predict (design)
 
-Status: Revision 7 (1 Nov): Codex error check 130 resolved (one author-note error: moved-out destination now chem-m5-g02b; no learner-copy errors); ready to voice.
+Status: Revision 8 (1 Nov): "part two" now names chem-m5-g02b's actual content (temperature, industry and open systems), not calculations, in the scene 1 narration, its card and the metadata; ready to voice. Previously Revision 7 (1 Nov): Codex error check 130 resolved (one author-note error: moved-out destination now chem-m5-g02b; no learner-copy errors); ready to voice.
 
 Earlier status, Revision 6 (1 Nov): brief 127 reviews resolved (0 blockers; 2 should fix fixed: "no net reaction, no net heat change", and the equal-gas-count clause removed from learner tags). Narration 5,960 characters, about 567 s. Needs a Codex error check before voicing.
 
@@ -63,9 +63,9 @@ Handoff: part 2 of this practice series (chem-m5-g03: calculation types: writing
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Board layout and colour key as Decisions ("Visual system"). Each question card carries "HSC-style question, written for HSCScience". Pronunciations as author note (f).
 
 ### 1. hook
-> Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. By the end you'll know what to write instead. We'll work through three types of equilibrium question in full: **explain with collision theory**, **graphs after a change**, and **the no-shift traps**. Then you **try two**. Calculations come in **part two**.
+> Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. By the end you'll know what to write instead. We'll work through three types of equilibrium question in full: **explain with collision theory**, **graphs after a change**, and **the no-shift traps**. Then you **try two**. Temperature, industry and open systems come in **part two**.
 
-Visual: a ruled exam page; the line "Le Chatelier's principle says it shifts right." writes on and a muted red cross-out strikes it, with the tag "sounds right, but not enough on its own". The heading "Every type of HSC equilibrium question, part 1" writes on, with a small footer tag "question types are our grouping, not an official NESA list; all questions are written for HSCScience". On each named type a numbered card slides into the type board row (a small icon each: a collision pair, a graph with a jump, a tick-in-a-circle for no shift). On "try two" two small pen icons appear on the board. On "part two" a greyed fourth card appears ("calculations") with the tag "part 2". The board shrinks to the thin strip along the top. Hold about 1 second.
+Visual: a ruled exam page; the line "Le Chatelier's principle says it shifts right." writes on and a muted red cross-out strikes it, with the tag "sounds right, but not enough on its own". The heading "Every type of HSC equilibrium question, part 1" writes on, with a small footer tag "question types are our grouping, not an official NESA list; all questions are written for HSCScience". On each named type a numbered card slides into the type board row (a small icon each: a collision pair, a graph with a jump, a tick-in-a-circle for no shift). On "try two" two small pen icons appear on the board. On "part two" a greyed fourth card appears ("temperature, industry, open systems") with the tag "part 2". The board shrinks to the thin strip along the top. Hold about 1 second.
 
 ### 2a. q1-question (type 1: explain with collision theory)
 > Type one, the one that catches the most people: **explain with collision theory**. A rigid sealed container holds hydrogen and carbon dioxide, making water vapour and carbon monoxide, at equilibrium. A drying agent removes some of the water vapour, and the temperature does not change. **Using collision theory, explain** the effect on the concentration of carbon monoxide. Underline the givens: **rigid**, so the volume is fixed; **water removed**; and the species to finish on, **carbon monoxide**.
@@ -276,7 +276,7 @@ Error-only check, with a short learning trace (`docs/production/student-learning
 
   "Full lesson, notes and practice questions: (lesson link: root to confirm)
 
-  Work through three types of HSC-style equilibrium question. Explain a change with collision theory in five lines and finish on the species the question asks about. Describe concentration and amount graphs after a squeeze, and see why the amount graph has no jump. Spot the no-shift traps with one test: does Q still equal K? Then try two questions yourself. Questions are written for HSCScience in the HSC style; they are not official NESA questions. Calculations come in part 2.
+  Work through three types of HSC-style equilibrium question. Explain a change with collision theory in five lines and finish on the species the question asks about. Describe concentration and amount graphs after a squeeze, and see why the amount graph has no jump. Spot the no-shift traps with one test: does Q still equal K? Then try two questions yourself. Questions are written for HSCScience in the HSC style; they are not official NESA questions. Temperature, industry and open-system questions come in part 2.
 
   Chemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions.
   Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 5):
