@@ -1,6 +1,6 @@
 # Maths A12 D03: Why is the derivative of ln x equal to 1/x? Measuring the slope, reflecting e^x in y = x, and the chain rule proof on e^(ln x) = x (design)
 
-Status: Revision 2 (1 Nov): brief 132 reviews resolved (0 blockers; ln(kx) described as a vertical shift by ln k, not always up; scene 8 domain restriction scoped to ln x and its derivative, e^x ghost kept). Needs a Codex error check. Voicing is gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131 additions (see "Assets" for two kit gaps, one of them the reflection carrier). Nothing recorded; human listening pending.
+Status: Revision 3 (1 Nov): brief 133 error check resolved (0 errors; no repairs needed). Ready to voice after the brief 124 Google voice pilot, then a voiced-preview review. Narration 6,355 characters, about 570 s. Previously Revision 2: brief 132 reviews resolved (0 blockers; ln(kx) described as a vertical shift by ln k, not always up; scene 8 domain restriction scoped to ln x and its derivative, e^x ghost kept). Needs a Codex error check. Voicing is gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131 additions (see "Assets" for two kit gaps, one of them the reflection carrier). Nothing recorded; human listening pending.
 
 Narration 6,347 characters, 17 scenes, about 9.5 minutes (570 s), counted by script with the build parser rules (see "Narration length estimate").
 

@@ -1,6 +1,6 @@
 # Maths A12 D04: How does changing the log base change its derivative? Comparing log₂ x with ln x, the change of base as a vertical scale, and the proof of 1/(x ln a) (design)
 
-Status: Revision 1 (1 Nov): needs learning review and maths check (Codex), then a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131 and 132 additions (`SecantToTangent` stops are not needed; `ReadoutPanel.rows`, `NumericDial`, `TangentTriangle` with `transform`, `FunctionGraph` with `parameterFn` and `transform.yScale`); see "Assets" for two small kit gaps. Nothing recorded; human listening pending.
+Status: Revision 2 (1 Nov): brief 133 reviews passed with no findings (learning review and maths check: 0 blockers, 0 should fix; no repairs). Ready to voice after the brief 124 Google voice pilot, then a voiced-preview review. Narration 6,086 characters, about 551 s. Previously Revision 1: needs learning review and maths check (Codex), then a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131 and 132 additions (`SecantToTangent` stops are not needed; `ReadoutPanel.rows`, `NumericDial`, `TangentTriangle` with `transform`, `FunctionGraph` with `parameterFn` and `transform.yScale`); see "Assets" for two small kit gaps. Nothing recorded; human listening pending.
 
 Narration 6,086 characters, 16 scenes, about 551 s (9.2 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
