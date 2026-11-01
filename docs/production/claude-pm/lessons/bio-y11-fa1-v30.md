@@ -1,0 +1,284 @@
+# FA1-V30 (Biology, Year 11): Where does variation arise during meiosis? Crossing over, independent assortment and random segregation (design)
+
+Status: Revision 1 (2 Nov). Written by Claude (designer) from the route, the root decisions for v01 to v18, the L24 variation pre-design pack, the full site page (L24, read as text), the site memory hooks (entry l24), the Module 5 meiosis and variation designs (`bio-m5-b05b.md`, `bio-m5-b08.md`) and the brief 88 plate set and anchors. Needs independent student learning review (review key **y11b-v30**), then a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+
+Narration 5,679 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 559 s (9.3 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns, the notes hold and about 5 s for the spoken form of 8,388,608. Nothing recorded; human listening pending.
+
+## Decisions
+
+- **File name and route id.** Route entry **bio-y11-fa1-v30** in `docs/production/y11-bio-fa1-video-route.json`: "Where does variation arise during meiosis?", playlist order 30, syllabus action B25-FA1-G4-08, site lesson L24 (sections learn-second-idea, learn-third-idea, learn-why-it-matters; example we-bio2025-y11-fa1-l24-b1). Main learner question (route): "How does meiosis make every egg and sperm carry a different combination of alleles?" Start: "Start with prophase I on the two-colour model, homologues paired." Stop: "Stop when students can describe crossing over (prophase I), independent assortment (orientation of each pair at metaphase I) and random segregation (which chromosome or chromatid moves to which pole), and explain how each adds variation, including 2ⁿ combinations for n pairs. Random fertilisation is a short mention only. Introduce allele in one plain sentence." Next: "bio-y11-fa1-v31: weigh which division process matters most." Route coverage note: "the site page uses random segregation loosely. Describe crossing over, independent assortment and random segregation as three distinct processes." Lesson key **y11fa1v30**, production label FA1-V30. Pre-design pack `../pre-design/y11-bio/fa1-l24-meiosis-variation.md`; site page `C:/Users/kygs/hscscience/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson24.sa.html` (read in full as text, 2 Nov, read-only).
+- **Templates.** `bio-y11-fa1-v16.md` (structure and voice); `bio-y11-fa1-v29.md` (the visual system and plates this video continues); series root decisions 5, 7, 10, 15 and 16 applied.
+- **Opening (root decision 16).** v30 opens on v29's actual final frame (`bio-y11-fa1-v29.md`, scene 15): `cd-four-cells-v1.png` at the centre with a terracotta "?", the two question chips ("Partners paired or apart?", "Chromosomes doubled or single?") at the upper left, the stage strip along the bottom and the Next chip "Next: Where does variation arise during meiosis?". Scene 1 starts on that frame: the question chips fade, the Next chip becomes this video's heading, the "?" stays.
+- **How the three processes are kept distinct (route coverage note; site error 4 in v29).** One plain test, spoken in scene 6 and shown on the summary board: **crossing over** mixes alleles *within* one chromosome (prophase I); **random segregation** is about *one pair at a time*: the partners separate, each cell gets exactly one of them, and which one is chance (anaphase I; and the sister chromatids, which differ after crossing over, in anaphase II); **independent assortment** is about *the pairs together*: each pair's orientation at metaphase I does not depend on any other pair's. 2ⁿ is then built from both: each pair gives two possibilities (segregation), and independence makes them multiply (assortment). This matches the syllabus wording (three processes) and the route note, and is how Mendel's two laws divide the work (not spoken). The site's SA1 model treats random segregation as "which chromosomes and chromatids end up together", which blends it with assortment; this video does not repeat that.
+- **Scope (start: prophase I, homologues paired; stop: the three processes described, how each adds variation, 2ⁿ, fertilisation short).** In order: the sibling surprise (1, opening on v29's four cells); genes and alleles marked with letters (2); crossing over with a prediction (3); what crossing over makes (4); independent assortment, crossing over switched off (5); random segregation, and the distinction (6); outcomes and why the choices multiply, with a prediction (7); 2ⁿ and 2²³ (8); crossing over switched back on, meiosis II and four different cells (9); random fertilisation, siblings and why it matters (10); the summary and memory aid (11); two unseen items (12a to 12d); decision rule and handoff (13); key notes (14).
+- **What this video does not teach.** Punnett squares, dominance, genotype and phenotype, linkage as a term (Year 12 heredity). Mutation as a source of new alleles (scene 4 says only that crossing over makes no new alleles; v31 uses replication errors as the source of new alleles in one clause). Non-disjunction and Down syndrome (site "why it matters"; outside the route boundary). Chiasma and synapsis by name (screen tag "chiasma" optional, Open decision 2). Natural selection beyond one clause (FA3).
+- **Syllabus (2025, `docs/production/programme/syllabus/bio-new-y11.json`).** B25-FA1-G4-08: "Describe the processes of crossing over, independent assortment and random segregation during meiosis". "Describe" (provide characteristics and features) is carried by the three-part decision rule (13): when it happens, what physically happens, what it mixes; each process gets all three in its own scene (3 and 4; 5; 6 and 9) and on the summary board (11).
+- **One main question (route):** *How does meiosis make every egg and sperm carry a different combination of alleles?* Heading on screen: "Where does variation arise during meiosis?" Answered in three named steps, each tied to a phase, then multiplied (7 to 10).
+- **Case and surprise.** The site's own hook: brothers and sisters share both parents, yet only identical twins share the same genes (1, words only; no people drawn). Second surprise (8): two pairs give 4 combinations, but 23 pairs give over 8 million. Two predictions (3: combinations after the swap; 7: three pairs).
+- **Allele (route).** Introduced in one plain sentence in scene 2: "each gene can come in different versions, called alleles", with one example (a pea flower colour gene with a purple and a white version: Mendel's classic, true for a single gene).
+- **Letters (owner rule: HSC-style genetics diagrams use letters only).** Long pair: gene A at the painted upper band (anchor y 570) and gene B at the lowest band (y 1435); the middle painted band carries a silent grey tag "another gene, not followed". Short pair: gene D, letters beside the painted short chromosomes (no band painted at cell scale). The pink set carries A, B, D; the teal set a, b, d. The crossing-over plates swap the distal segment below y 1200, so the swap falls between A and B, exactly as narrated: recombinant chromatids A b (pink with teal end) and a B (teal with pink end). Every letter is a coded `AnchorLabel` beside a painted chromosome; no coded chromosome bars are drawn over any cell. Outcome grids are letters only.
+- **Crossing over switched off, then on.** Scenes 5 to 8 follow whole chromosomes with crossing over switched off (grey tag "crossing over switched off for this step"), using the brief 88 cell plates, which have no painted swaps. Scene 9 switches it back on with a new matched plate, `cd-four-cells-crossover-v1.png`, so the plates and the letters agree in every scene.
+- **Split decision.** One video; the three processes and the count are one content point.
+- **Site alignment.** Kept in substance and order: the hook (1); the vocabulary for homologous chromosomes and crossing over (2, 3); card 2: "Crossing over occurs in prophase I: homologous chromosomes pair up and exchange equivalent segments with each other, producing new combinations of alleles on each chromosome" (3, 4); "Independent assortment occurs in metaphase I: each pair of homologous chromosomes lines up at the equator independently of the other pairs" (5); "Random segregation is the random separation of the homologous chromosomes (in anaphase I) and then the chromatids (in anaphase II)" (6, 9); the worked answer's "Same genes, possibly different alleles is the fact that makes shuffling meaningful" (2) and "Crossing over creates new chromosomes, whereas the other two processes only rearrange existing ones" (11); "With twenty-three pairs ... over eight million" (8); card 3 and "why it matters": the processes combine, random fertilisation multiplies again, variation is the raw material for natural selection (9, 10); the site's l24 memory hook (11); SA3's sibling context and SA1's demand (12c is built on SA1's crossing-over part; 12a on the "over 8 million" reasoning).
+- **Site errors found (this read).** Logged in `bio-y11-fa1-v29.md` Decisions (items 3 and 4: absolute "no two gametes are alike" wording; the blurred assortment and segregation definitions). Proposed wording for item 4, for the site: "Independent assortment: each homologous pair lines up at metaphase I independently of the other pairs. Random segregation: the two members of each pair (and later the two chromatids of each chromosome) separate, and which one goes into a given cell is a matter of chance." One new item:
+  5. L24 SA3 model answer: "a defensible judgement is that crossing over contributes most because it multiplies an already vast number". The page's marking note credits either judgement, which is fine; but the model's reason, "rather than simply reshuffling existing chromosomes", sits beside "each sibling started from a different sperm and a different egg", which is random fertilisation, not one of the three named processes. Minor wording item; root to judge whether to log ("design-suggested, not categorical").
+- **Added beyond the site (flagged for the learning review).** (a) The pea flower allele example (2; Mendel's single-gene trait). (b) The combinations prediction (3) and the three-pair prediction (7). (c) The "one pair / pairs together" test (6; Claude's, from the route note). (d) 8,388,608 squared, about 70 trillion (10; as B8). (e) Identical twins come from one fertilised egg (10, screen tag). (f) The mosquito 2n = 6 item (12a; checked below). (g) The letters item for crossing over (12c; original).
+- **Entry knowledge.** From v29: the phases of meiosis I and II on the 2n = 4 model, homologous partners, crossing over as a visible swap, "which partner faces which end is up to chance", four haploid cells, one copy then two divisions, counts. From v26: gametes are haploid; fertilisation joins two gametes. From v22 to v25 (FA1 DNA videos): DNA carries genes; chromosomes are DNA. Stage 5 (assumed): offspring inherit features from both parents; genes are sections of DNA. Not assumed: allele, independent assortment, random segregation, 2ⁿ.
+- **Recall, not re-teach.** The meiosis phases are named, not re-explained; prophase I pairing and the swap are recalled in one sentence each in scene 3.
+- **Terms: meaning before or with the name.** Allele (2, "different versions of a gene"); crossing over (3, recalled with its meaning); combination (3, "which alleles sit together on one chromosome"); independent assortment (5, after "each pair does this independently of the other pairs"); segregation (6, "the partners separate, each new cell gets exactly one"); random segregation (6, "which partner a cell gets is chance"); two to the power of n (8, "two times two, n times"); fertilisation (10, recalled); natural selection (10, one clause, "later in the course"). Screen only: "chiasma" (optional grey tag, Open decision 2).
+- **Visual system.** Continues v29: (1) the **stage plates** (brief 88 cell series, one cell at one scale, cross-fading at native aspect ratio, uniform `Cam` moves only); (2) the **stage strip** along the bottom, lighting P I, M I, A I, A II as each process is placed; (3) **allele letters** as `AnchorLabel`s beside painted chromosomes, capital and small in the pink and teal tints; (4) the **combinations board** at the right: letters-only outcome rows and the multiplying count (5 to 10); (5) the **summary board** (11, 13): three rows (process | when | what happens | what it mixes). Painted: the stage plates and the two new plates. At most three bright text items at once. No people, no hands, no faces, no body outlines.
+- **Predictions (root decision 7).** Scene 3 ends "how many combinations are there after?" with a 3 s countdown ring (answered at the start of 4). Scene 7 ends "with three pairs, how many combinations?" with a 3 s countdown ring (answered at the start of 8).
+- **Attempt (two unseen, exam-worded items).** 12a: mosquito 2n = 6, combinations from independent assortment alone, and why the real number is larger (calculate and explain). 12c: a chromosome carrying A and b in an egg when the parent's chromosomes carried A B and a b: name and describe the process (identify and describe; discriminates crossing over from assortment). Each ends "Pause here to answer." with a 10 s countdown; the card stays during and after it. Feedback is brief, with givens underlined and one crossed-out classic mistake.
+- **Memory aids.** The site's l24 hook, "One copy, two cuts, four different cards. Meiosis deals, mitosis photocopies." (11, after all three processes; v29 used its first half, so this completes it). "Crossing over mixes within a chromosome; assortment and segregation mix whole chromosomes" (the site's own worked-answer point, as a short rule on the summary board). Assumptions checked below.
+- **A mistake/fix scene** is not included as a separate scene. "Crossing over makes new alleles" is fixed in 4; "assortment and segregation are the same thing" in 6; "2 × n" is crossed in 12b; "independent assortment" for a within-chromosome change in 12d.
+- **Legacy ideas.** None ported.
+- **Reuse:** the explainer kit; B6a's `WrongChip`, `GreyTag`, `Cross`; v29's `StageStrip` and `AnchorLabel`; B5b's number ticker look for 8,388,608. New coded component: `CombosBoard` (letters-only rows of gamete combinations that write in, double when a pair is added and carry a multiplying count; goes to the shared FA1 kit folder).
+
+Main question: *How does meiosis make every egg and sperm carry a different combination of alleles?*
+Entry knowledge: see above. Students have watched v01 to v29.
+Stops after: allele as a version of a gene; crossing over in prophase I (a chromatid of each partner breaks at the same point and they swap matching pieces) makes new combinations of alleles within a chromosome, no new alleles, sister chromatids now differ, position varies; independent assortment at metaphase I (each pair's orientation independent of the others); random segregation (partners separate in anaphase I, each cell gets exactly one of each pair, which one is chance; the differing sister chromatids separate the same way in anaphase II); 2 possibilities per pair multiplied across independent pairs: 2ⁿ, 2² = 4, 2³ = 8, 2²³ = 8,388,608 before crossing over; four different cells once crossing over is included; random fertilisation multiplies again (about 70 trillion pairings); variation as the raw material for natural selection (one clause).
+Handoff: weigh which division process matters most (route entry bio-y11-fa1-v31).
+
+## Script and shots
+
+The video has 17 voiced scene files (1 to 11, 12a, 12b, 12c, 12d, 13 and the notes lead-in, scene 14). The **stage plates** carry scenes 1 and 3 to 9, the **combinations board** sits at the right from scene 5 to scene 10, the **stage strip** stays along the bottom. No people appear at any point.
+
+### 1. the sibling surprise (opening)
+> Last time, one diploid cell made four haploid cells. Here's the surprise. Brothers and sisters have the same two parents, but unless they're identical twins, they never get exactly the same genes. That's because every egg and every sperm carries a different mix. So how does meiosis make every gamete different?
+
+Visual: opens on v29's final frame (see Decisions). On "four haploid cells" the question chips fade and each cell takes a brief ring; the Next chip lifts into the heading area. On "Brothers and sisters" two coded family-tree glyphs (two parent squares joined by a line, two offspring squares below; letters only, no figures) draw at the upper right; on "never get exactly the same genes" each offspring square fills with a different short letter string ("A b D ...", "a B d ...") and a "≠" writes between them; grey tag "identical twins: one fertilised egg that splits". On "every egg and every sperm" small `b3a-egg-v1.png` and `b3a-sperm-v1.png` enter (uniform scale), each with a different letter tag. The "?" between the four cells pulses. The heading writes: "Where does variation arise during meiosis?" At most three bright items. Hold one second.
+
+### 2. genes, alleles and letters
+> To see the mix, we'll mark some genes. Homologous partners carry the same genes in the same places. But each gene can come in different versions, called alleles. A pea flower colour gene, for example, has a purple version and a white version. We'll label alleles with letters. On the long pair, the pink partner carries big A and big B, and the teal partner carries small a and small b. On the short pair, it's big D and small d.
+
+Visual: the `Cam` pushes into the upper left cell and cross-fades back through the stages to `cd-m1-prophase-v1.png` (one smooth 1.5 s cross-fade; grey tag "back to prophase I"). On "same genes in the same places" the view cross-fades to `cd-homologous-pair-loci-v1.png` (the long pair, close up): the three painted bands light across both partners at matching heights, dotted "same place" links joining them. On "different versions, called alleles" a gloss writes: "allele: a version of a gene". On "pea flower" a small coded pair of flower-colour chips, "purple" and "white", sits beside the gloss (grey tag "one gene, two alleles"). On "big A and big B" `AnchorLabel`s write "A" at the upper band and "B" at the lowest band of the pink partner; on "small a and small b" "a" and "b" on the teal; the middle band takes a silent grey tag "another gene, not followed". On "On the short pair" the view pulls back to `cd-m1-prophase-v1.png` and the letters re-anchor to the long chromosomes at cell scale; "D" writes beside the short pink and "d" beside the short teal. A key chip: "capital and small: two alleles of one gene". At most three bright items. Hold one second.
+
+### 3. crossing over, and a prediction
+> Now prophase one, where homologous partners lie side by side. Here's crossing over again, close up. A chromatid from each partner breaks at the same point, here between gene A and gene B, and the two swap the matching end pieces. Before the swap, the long chromatids carried just two combinations: big A with big B, and small a with small b. Prediction: how many combinations are there after?
+
+Visual: the "P I" chip lights. The `Cam` pushes into the long pair: `cd-crossing-over-a-v1.png` (synapsed pair), letters on all four chromatids: "A ... B" on both pink chromatids, "a ... b" on both teal. On "breaks at the same point" the view cross-fades to `cd-crossing-over-b-v1.png`; the crossing point takes an amber ring and a dashed coded line marks the break level between the A and B letters. On "swap the matching end pieces" the view cross-fades to `cd-crossing-over-c-v1.png`; the swapped end pieces take brief outlines, but the B and b letters on the two inner chromatids are hidden behind small terracotta "?" tags (the answer stays hidden). On "two combinations" a combinations chip writes at the right: "before: A B, a b". On "Prediction" a "Predict" chip writes and an empty "after: ?" chip appears; **a 3 s countdown ring** runs.
+
+### 4. what crossing over makes
+> Four. Big A big B, big A small b, small a big B, and small a small b. Crossing over doesn't make new alleles. It makes new combinations of alleles on one chromosome, combinations neither parent's chromosome had. Even the two sister chromatids now differ. And in each meiosis, the break can fall at a different point, or in more than one place.
+
+Visual: on "Four" the "?" tags lift: the inner pink chromatid now reads "A ... b" and the inner teal "a ... B". The "after" chip fills one combination per spoken item: "A B", "A b", "a B", "a b", the two new ones in amber. On "doesn't make new alleles" a `WrongChip` "crossing over makes new alleles" writes and takes a scribble cross; a grey tag "same four letters, new partners". On "neither parent's chromosome had" the two recombinant chromatids take rings. On "sister chromatids now differ" the two pink chromatids take a bracket, label "sisters: A B and A b". On "different point" two faint alternative break lines flicker at other heights (grey tag "position varies; often more than one"). At most three bright items. Hold one second.
+
+### 5. independent assortment (crossing over switched off)
+> Now let's follow whole chromosomes. To keep it clear, we'll switch crossing over off for a moment. In metaphase one, each pair lines up across the middle, and which partner faces which end is chance. The key is that each pair does this independently of the other pairs. Here, pink long faces left with teal short. In another cell, pink long faces left with pink short. That's independent assortment.
+
+Visual: the "M I" chip lights. The `Cam` pulls back to the cell; a grey tag writes at the lower left, "crossing over switched off for this step" (stays through scene 8). The plate cross-fades to `cd-m1-metaphase-v1.png`, letters re-anchored ("A B" on pink long, "a b" on teal long, "d" on teal short, "D" on pink short); a dashed equator draws. On "which partner faces which end" each pair takes a small coin glyph that flips once. On "independently of the other pairs" the two coins flip at different moments, a coded "≠" link between them (label "each pair on its own"). On "Here, pink long faces left with teal short" those two take rings, label "line-up 1". On "In another cell" the plate slides left and shrinks to half width; the new `cd-m1-metaphase-alt-v1.png` (the short pair flipped) enters at the right at the same scale with its letters, and pink long and pink short take rings, label "line-up 2". On "independent assortment" a gloss writes under the two cells: "independent assortment: each pair lines up independently of the other pairs (metaphase I)". At most three bright items. Hold one second.
+
+### 6. random segregation, and the difference
+> Then in anaphase one, the partners separate. That's segregation. Each new cell gets exactly one partner from every pair, so exactly one allele of each gene: big A or small a, never both. Which partner a cell gets is chance, so we call it random segregation. Notice the difference. Segregation is about one pair: which partner goes where. Independent assortment is about the pairs together: one pair's choice doesn't affect another's.
+
+Visual: the "A I" chip lights. The line-up 1 cell returns to full size and cross-fades to `cd-m1-anaphase-v1.png` (slowed to about 1.2 s, motion arrows to each pole), letters travelling with their chromosomes. On "exactly one partner from every pair" each pole's long and short chromosomes take a ring; on "big A or small a, never both" the left pole's "A" and the right pole's "a" glow, and a small `WrongChip` "A and a in one cell" takes a scribble cross. On "Which partner a cell gets is chance" a coin glyph over the long pair flips once (tag "50 : 50 for each pair"); gloss: "random segregation: partners separate; each cell gets one, by chance (anaphase I)". On "Notice the difference" a two-row test card writes beside the cell, one row per cue: "segregation: one pair, which partner goes where" (one pair outlined) and "independent assortment: pairs together, one doesn't affect another" (both pairs outlined, the ≠ link from scene 5 returning). At most three bright items besides the test card. Hold one second.
+
+### 7. why the choices multiply, and a prediction
+> Follow the letters. Line-up one gives cells carrying big A B with small d, and small a b with big D. Line-up two gives big A B D, and small a b d. So two pairs give four combinations. Why four? Each pair can separate two ways, and because the pairs are independent, the choices multiply: two times two. Prediction: with three pairs, how many combinations?
+
+Visual: the `CombosBoard` draws at the right. On "Line-up one" the plate cross-fades to `cd-m1-telophase-v1.png` (two cells), and the board writes "line-up 1: A B d | a b D", each string lifting from its cell's letters; on "Line-up two" a small thumbnail of `cd-m1-metaphase-alt-v1.png` lights and the board writes "line-up 2: A B D | a b d" (letters only; no cell drawn for the outcome). On "four combinations" the four strings ring in turn and a count chip writes "4". On "Each pair can separate two ways" each row takes a "2" under its pair letter ("long: 2", "short: 2"); on "the choices multiply" the chip writes "2 × 2 = 4". On "Prediction" a third pair label "E / e" appears greyed on the board with an empty count chip "?"; a "Predict" chip writes; **a 3 s countdown ring** runs.
+
+### 8. two to the power of n
+> Eight: two times two times two. With n pairs, it's two to the power of n. A human cell has twenty-three pairs, so two to the power of twenty-three, which is 8,388,608. That's over eight million combinations of whole chromosomes, and that's before crossing over.
+
+Visual: on "Eight" the board doubles: each of the four strings splits into two, one ending "E", one "e" (eight letters-only strings; tag "8"), and the count chip writes "2 × 2 × 2 = 8". On "two to the power of n" the formula writes: "combinations = 2ⁿ, n = number of pairs". On "twenty-three pairs" "n = 23" writes and a number ticker runs up from 8 to "2²³ = 8,388,608", with a hand-lettered "over 8 million". On "before crossing over" a grey tag: "whole chromosomes only". At most three bright items. Hold one second.
+
+### 9. crossing over back on: four different cells
+> Now switch crossing over back on, and run meiosis two. After crossing over, the two sister chromatids of a chromosome carry different alleles. In anaphase two, which chromatid goes to which new cell is chance, so random segregation happens again. The result is four cells, and all four are different. Because crossovers can fall at so many points, the real number of possible gametes is far more than eight million.
+
+Visual: the grey "switched off" tag takes a scribble line through it and changes to "crossing over on". The board shrinks to the upper right. The plate returns to `cd-m1-telophase-v1.png` with the recombinant letters now shown: left cell "A B" and "A b" on the two chromatids of pink long, "d" on teal short; right cell "a b" and "a B" on teal long, "D" on pink short. On "two sister chromatids" one chromosome's two chromatids take a bracket, label "sisters differ". On "In anaphase two" the "A II" chip lights and the plate cross-fades through `cd-pair-anaphase-v1.png` (letters travelling apart; a coin glyph flips once over each cell) to the new `cd-four-cells-crossover-v1.png`. On "all four are different" each cell takes its letters in turn, "A B d", "A b d", "a b D", "a B D", and a "4 different" chip writes. On "far more than eight million" the ticker chip from scene 8 takes an amber "+ crossing over: far more". At most three bright items. Hold one second.
+
+### 10. one more layer of chance
+> One more layer of chance. At fertilisation, any one of a father's sperm could join any one of a mother's eggs. Eight million times eight million is about seventy trillion pairings, even before crossing over. That's why siblings differ. And this variation matters. It's the raw material that natural selection works on, which you'll meet later in the course.
+
+Visual: `b3a-sperm-v1.png` and `b3a-egg-v1.png` return at the centre (uniform scale), each with a ticker "2²³ = 8,388,608"; on "any one of ... could join any one" three coded paths from three sperm letter tags converge on the egg in turn, a different one arriving each time (tag "chance"). On "Eight million times eight million" the tickers join: "8,388,608 × 8,388,608 ≈ 70 trillion" (grey tag "70,368,744,177,664 combined sets"). On "That's why siblings differ" the family-tree glyph from scene 1 returns small with its "≠". On "raw material that natural selection works on" a grey tag writes: "variation: the raw material for natural selection (Focus Area 3)". At most three bright items. Hold one second.
+
+### 11. three processes, and a way to remember
+> So, three processes, each with a time and a job. Crossing over, in prophase one, mixes alleles within a chromosome. Independent assortment, in metaphase one, mixes whole chromosomes across the pairs. Random segregation, in anaphase one and two, decides which partner or chromatid each cell gets. Here's a way to remember it: one copy, two cuts, four different cards. Meiosis deals, mitosis photocopies.
+
+Visual: the summary board draws at the centre (columns "process", "when", "what it mixes"), one row per cue, each with a thumbnail: "crossing over | prophase I | alleles within a chromosome" (`cd-crossing-over-c-v1.png`), "independent assortment | metaphase I | whole chromosomes across pairs" (`cd-m1-metaphase-v1.png` and the alt thumbnail), "random segregation | anaphase I and II | which partner or chromatid each cell gets" (`cd-m1-anaphase-v1.png`). The matching stage strip chip lights with each row. A short rule writes under the board: "crossing over makes new chromosomes; the other two rearrange whole ones". On "one copy, two cuts, four different cards" a hand-lettered amber rule writes (grey tag "the site's memory hook"); on "Meiosis deals" four small coded card outlines fan out under `cd-four-cells-crossover-v1.png` (small), each with a different letter string; on "mitosis photocopies" a small `cd-daughters-v1.png` thumbnail appears with two identical strings. At most three bright items besides the board. Hold one second.
+
+### 12a. attempt one (a mosquito's gametes)
+> Two exam questions. First. A mosquito has six chromosomes in its body cells, in three homologous pairs. How many combinations of whole chromosomes can its gametes carry from independent assortment alone? Then explain why the real number of genetically different gametes is larger. Pause here to answer.
+
+Visual: the board clears; the stage strip stays dim. The card writes on, tagged "HSC-style question, written for HSCScience". Stem: "Body cells of the yellow fever mosquito (*Aedes aegypti*) contain 6 chromosomes, in 3 homologous pairs (2n = 6)." Demand: "(a) Calculate the number of different combinations of whole chromosomes that its gametes can carry as a result of independent assortment alone. (1 mark) (b) Explain why the actual number of genetically different gametes it can produce is larger. (2 marks)". Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 12b. feedback, item one
+> Each pair can line up two ways, independently of the others, so it's two times two times two: eight. The real number is larger, because crossing over makes new combinations of alleles within each chromosome. The classic mistake is two times three, which gives six. The choices multiply, so it's two to the power of three.
+
+Visual: the card stays. On "Each pair can line up two ways" the given "3 homologous pairs" takes an amber underline; answer line "(a) 2 × 2 × 2 = 2³ = 8". On "crossing over" the given "actually ... larger" is underlined; answer line "(b) crossing over in prophase I: new allele combinations within chromosomes, at varying points, so far more than 8". On "classic mistake" a chip "2 × 3 = 6" writes and takes a scribble cross. Settle one second.
+
+### 12c. attempt two (a new chromosome)
+> Second. In a female animal, the chromosome she inherited from her mother carries alleles big A and big B. Its homologous partner, from her father, carries small a and small b. One of her eggs has a chromosome carrying big A and small b. Name the process that produced this chromosome, and describe when and how it happened. Pause here to answer.
+
+Visual: the board clears. The card writes on, tagged "HSC-style question, written for HSCScience". Stem: "In a female animal, one chromosome inherited from her mother carries alleles A and B of two genes. Its homologous chromosome, inherited from her father, carries alleles a and b of the same genes. One of her eggs contains a chromosome carrying A and b." A letters-only diagram beside the stem: "from mother: A B", "from father: a b", "in egg: A b" (three short rows of letters, no chromosome drawings). Demand: "Name the process that produced the chromosome carrying A and b, and describe when and how it occurred. (3 marks)". Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 12d. feedback, item two
+> Crossing over, in prophase one. While the homologous partners were paired, a chromatid from each broke at the same point between the two genes, and they swapped matching pieces. That put big A and small b on one chromosome. The classic mistake is independent assortment. It moves whole chromosomes, so it can't split A from B.
+
+Visual: the card stays. On "Crossing over, in prophase one" the given "A and b" is underlined; answer line "crossing over, prophase I". On "a chromatid from each broke" the givens "homologous" and "A and B" / "a and b" are underlined; answer line "non-sister chromatids break at the same point between the genes; matching pieces swap"; a small `cd-crossing-over-c-v1.png` thumbnail with its recombinant chromatid ringed sits beside the card. On "classic mistake" a chip "independent assortment" writes and takes a scribble cross; grey line under it "moves whole chromosomes: A and B stay together". Settle one second.
+
+### 13. decision rule and handoff
+> So to describe any source of variation, say when it happens, what physically happens, and what it mixes. Next, we weigh up the whole topic. Of DNA replication, mitosis, meiosis and cytokinesis, which matters most?
+
+Visual: the summary board returns small at the left; three step chips write under it, one per cue: "when (phase)", "what physically happens", "what it mixes". On "DNA replication, mitosis, meiosis and cytokinesis" four small chips write in a row at the right, each with a thumbnail: "DNA replication" (`cd-nucleus-zoom-breaking-v1.png`), "mitosis" (`cd-daughters-v1.png`), "meiosis" (`cd-four-cells-crossover-v1.png`), "cytokinesis" (`cd-cytokinesis-v1.png`); a coded balance outline draws faintly above them with a terracotta "?". A "Next" chip slides in at the lower right: "Next: How important is each process in cell division?". This is the video's final frame (root decision 16): the small summary board with its three step chips at the left, the four process chips with thumbnails under the faint balance and "?", the stage strip and the Next chip. Hold half a second before the notes.
+
+### 14. key notes (quiet, about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+- Allele: a version of a gene. Homologous partners carry the same genes, possibly different alleles.
+- Crossing over (prophase I): a chromatid from each paired partner breaks at the same point and they swap matching pieces. New combinations of alleles within a chromosome (no new alleles).
+- Independent assortment (metaphase I): each homologous pair lines up independently of the other pairs.
+- Random segregation (anaphase I, and anaphase II for chromatids): partners separate; each cell gets one of each pair, which one by chance.
+- Combinations of whole chromosomes = 2ⁿ (n = number of pairs). Human: 2²³ = 8,388,608, before crossing over. Random fertilisation multiplies again.
+- Variation is the raw material for natural selection.
+
+Memory: one copy, two cuts, four different cards. Meiosis deals, mitosis photocopies.
+
+## Practice question and feedback
+
+Two unseen items, each followed by its own brief feedback (12a, 12b, 12c, 12d). Each attempt ends with "Pause here to answer." and a 10 second countdown; the card and every demand stay on screen during the countdown and after it. Marks appear on the card; the narration does not read them. Every card carries the tag "HSC-style question, written for HSCScience". Item 1 is original (the site's "over 8 million" reasoning on a new organism); item 2 is original, built on the crossing-over part of the site's SA1 demand.
+
+1. (12a, calculate and explain, 3 marks.) *Aedes aegypti*, 2n = 6 (3 pairs). (a) Combinations of whole chromosomes from independent assortment alone. (b) Why the actual number of different gametes is larger.
+   Model: (a) Each pair can orient two ways at metaphase I, independently of the other pairs, so 2³ = 8 (1 mark). (b) Crossing over in prophase I exchanges segments between non-sister chromatids of homologous chromosomes, producing new combinations of alleles within chromosomes (1 mark); crossovers can occur at many different points, so the number of genetically different gametes is far greater than 8 (1 mark). Classic mistake crossed out: "2 × 3 = 6". Other wrong chains: "3² = 9" (base and power swapped); "crossing over makes new alleles" (new combinations, not new alleles); citing random fertilisation (affects offspring, not the gametes one individual makes).
+2. (12c, identify and describe, 3 marks.) Mother's chromosome A B, father's homologue a b; an egg carries a chromosome with A and b. Name and describe the process.
+   Model: Crossing over (1 mark), during prophase I of meiosis (1 mark), when the homologous chromosomes were paired: a chromatid of each homologue broke at the same point between the two genes and the matching segments were exchanged, so A and b ended up on the same chromatid (1 mark). Classic mistake crossed out: "independent assortment" (moves whole chromosomes; cannot separate alleles on the same chromosome). Other wrong chains: "mutation" (changes an allele; here both alleles already existed); "random segregation" (moves whole chromosomes or chromatids).
+
+Feedback spoken lengths are about 24 s (12b) and 25 s (12d) by script; time the exact audio. Neither re-teaches the lesson.
+
+## Numbers or facts to verify
+
+Self-check (2 Nov). The Codex science check must confirm each before voicing.
+- **Letters on the plates.** Brief 88 anchors: locus bands at y 570, 1145, 1435 on both partners; centromere y 945; crossover distal from y 1200 (`cd-crossing-over-c`: "teal distal segment starts at y 1200" on the inner pink chromatid, and the reverse on the inner teal). With A at 570 and B at 1435 the swap separates A from B: recombinants A b and a B. Correct.
+- **Combinations after one crossover (4).** Four chromatids: A B, A b, a B, a b. Correct.
+- **Outcomes, crossing over off (7).** `cd-m1-metaphase-v1.png`: left pink long (A B) with teal short (d); right teal long (a b) with pink short (D): A B d and a b D. Alt plate (short pair flipped): A B D and a b d. Correct (as B5b's inset).
+- **Outcomes, crossing over on (9).** Left after meiosis I: pink long (A B, A b) + teal short (d, d) → A B d, A b d; right: teal long (a b, a B) + pink short (D, D) → a b D, a B D. Four different. Correct. `cd-four-cells-crossover-v1.png` must be painted to match this (asset brief).
+- **2ⁿ (7, 8, 12a).** 2² = 4; 2³ = 8; 2²³ = 8,388,608. Assumes each pair orients either way with equal chance, independently (pairs on different chromosomes), with no crossing over. Correct.
+- **Fertilisation (10).** 8,388,608² = 2⁴⁶ = 70,368,744,177,664, "about seventy trillion". Correct. "Eight million times eight million" is spoken as rounding (64 trillion strictly); the screen shows the exact product. Flag: if the science check prefers, say "about eight million times about eight million, roughly seventy trillion" (same length within 10 characters).
+- **Siblings (1).** Siblings (other than identical twins) share about half their DNA variants by descent, so they never inherit exactly the same genetic make-up; "never get exactly the same genes" is a strong statement. Identical gametes are possible in principle, but two siblings having identical genomes from different sperm and eggs is vanishingly unlikely. Flag for the science check; fallback "almost never get exactly the same mix of alleles" (+12 characters).
+- **Pea flower colour (2).** Mendel's purple and white flower alleles of one gene. Correct.
+- **Random segregation in anaphase II (9).** Which of two non-identical sister chromatids goes to which daughter cell is random. Correct.
+- **Mosquito (12a).** *Aedes aegypti* 2n = 6. Correct (three pairs; sex determined by a locus on chromosome 1, no heteromorphic sex chromosomes, so three homologous pairs is exact).
+- **Natural selection (10).** Variation is the raw material for natural selection. Correct.
+- **Time-sensitive facts spoken.** None.
+- **No em dashes** in this file (searched by script).
+
+## Memory aid check
+
+- **"One copy, two cuts, four different cards. Meiosis deals, mitosis photocopies."** (Site l24 hook.) Assumptions: one replication, two divisions, four cells (v29); "different" because of the three processes (said after all three); "photocopies" because mitosis gives identical daughters. Limits: a dealer hands out cards at random from one deck, but meiosis gives each cell exactly one of each pair, never two from one pair; the summary board row for segregation says "one of each pair" beside the aid, and the "deals" image is shown as four hands of cards that each hold one of every kind (letters, one per gene). "Four different" is per meiosis (in females one egg; v29's tag). Accepted with that limit.
+- **"Crossing over makes new chromosomes; the other two rearrange whole ones."** (Site worked answer.) Assumption: "new chromosomes" means new allele combinations on a chromosome, not new genes or alleles (scene 4 says so first). Correct.
+
+## Narration length estimate
+
+Revision 1 count (2 Nov) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, two 3 s prediction countdowns, 10 s per attempt countdown and 55 s more of the quiet notes hold. Script: a uniquely named counter in the designer's scratchpad folder `y11b-v29-31`.
+
+| Scene | Characters |
+| --- | --- |
+| 1. the sibling surprise (opening) | 311 |
+| 2. genes, alleles and letters | 429 |
+| 3. crossing over, and a prediction | 392 |
+| 4. what crossing over makes | 343 |
+| 5. independent assortment (crossing over switched off) | 399 |
+| 6. random segregation, and the difference | 433 |
+| 7. why the choices multiply, and a prediction | 355 |
+| 8. two to the power of n | 261 |
+| 9. crossing over back on: four different cells | 415 |
+| 10. one more layer of chance | 357 |
+| 11. three processes, and a way to remember | 402 |
+| 12a. attempt one (a mosquito's gametes) | 302 |
+| 12b. feedback, item one | 321 |
+| 12c. attempt two (a new chromosome) | 345 |
+| 12d. feedback, item two | 326 |
+| 13. decision rule and handoff | 213 |
+| 14. key notes (quiet, about 60 seconds) | 75 |
+
+Revision 1 total: **5,679 characters**, 17 scene files (inside 5,500 to 6,800). Speech about 427 s; with 34 s of padding (17 scenes), about 11.5 s of stated holds and settles (1 s for scenes 1, 2, 4 to 6 and 8 to 11; half a second on scene 13; about 1 s settle on each feedback scene), two 3 s prediction countdowns, 20 s of attempt countdowns and 55 s more of the quiet notes hold: about 554 s, plus about 5 s because "8,388,608" (9 characters as written) is voiced as about 70 characters of words: **about 559 s (9.3 minutes)**. Feedback 12b is about 24 s and 12d about 25 s by script. Scenes 6 (433) and 2 (429) are the longest; check them at playback speed. Time the exact Google voice audio.
+
+The content fills this length without padding; nothing was added to reach the range. Reserve cuts, if the voiced preview runs long: (1) scene 2's pea flower sentence (73 saved; the gloss stays); (2) scene 10's last sentence (natural selection; about 90, if the learning review moves it to v31). Do not cut below 5,500 without replacing the content.
+
+## Assets
+
+Have (reuse; inspected 2 Nov in the brief 88 QA strips and `cd-crossing-over-c-v1.png` at full size on black):
+- Brief 88 plates (2000 x 2000, true alpha, one cell, one scale): `cd-four-cells-v1.png` (1), `cd-m1-prophase-v1.png` (2), `cd-homologous-pair-loci-v1.png` (2; three bands at matching heights on both partners, per anchors), `cd-crossing-over-a/b/c-v1.png` (3, 4, 11, 12d; inspected `-c-`: the swap lies below the middle band, so between bands 1 and 3; red fringe on the envelope edge against black, Codex to check on the video background), `cd-m1-metaphase-v1.png` (5, 11), `cd-m1-anaphase-v1.png` (6, 11), `cd-m1-telophase-v1.png` (7, 9), `cd-pair-anaphase-v1.png` (9), `cd-daughters-v1.png` (11, 13), `cd-nucleus-zoom-breaking-v1.png` and `cd-cytokinesis-v1.png` (13, thumbnails).
+- `b3a-sperm-v1.png`, `b3a-egg-v1.png` (1, 10).
+- Anchor data: `brief88-anchors.json`, `brief88-meiosis-provenance.json`.
+
+New (two plates; Codex asset brief below), in `public/assets/biology/`:
+- `cd-m1-metaphase-alt-v1.png` (5, 7, 11).
+- `cd-four-cells-crossover-v1.png` (9, 11, 13; also the opening frame of v31).
+
+Plate list summary (Revision 1). **Existing:** 13 plates plus 2 gamete plates. **New:** two, both matched brief 88 variants. Priority: the crossover four-cell plate (essential: without it the letters and the painted chromosomes disagree in scene 9), then the alternative metaphase I (fallback: mirror nothing; show line-up 2 on the combinations board only, with a grey tag, which loses the side-by-side comparison of the two cells; never flip or stretch the existing plate).
+
+Coded: allele letters (`AnchorLabel`), coin glyphs, equator lines, motion arrows, the combinations board, number tickers, the summary board, family-tree glyphs (squares and lines only), card outlines, chips, cards and countdowns. Never coded chromosome bars over a cell. No people, no hands, no faces, no body outlines.
+
+Process clip: none.
+
+## Codex asset brief (FA1-V30, variation in meiosis)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` and `codex-prompts/88-cell-division-plate-series.md` first; the design is `docs/production/claude-pm/lessons/bio-y11-fa1-v30.md`. Same canvas (2000 x 2000), cell, scale, palette and painted style as the brief 88 series; transparent PNG with a true alpha channel, no fringe or halo (check on black and white), no text, letters, labels, arrows, people, hands or faces. Never stretch, never mirror an existing plate.
+
+1. `cd-m1-metaphase-alt-v1.png`: identical to `cd-m1-metaphase-v1.png` (same cell outline, spindle, poles and equator; cell mask IoU at least 0.99) except that the short pair is flipped: on the left side of the equator, rose-pink long and rose-pink short; on the right, teal long and teal short. Duplicated (X-shaped) chromosomes, centromeres on the spindle as in the original. Record chromosome anchors in a new `assets/y11fa1v30-anchors.json`.
+2. `cd-four-cells-crossover-v1.png`: identical to `cd-four-cells-v1.png` (same four cells, positions, organelles and nuclei; IoU at least 0.99) except for painted crossover segments. Upper left cell: long rose-pink chromosome, all pink, with the short teal. Lower left cell: long rose-pink chromosome whose lower end (the distal part beyond about the lower third of the arm, matching the swap position of `cd-crossing-over-c-v1.png`) is teal, with the short teal. Upper right cell: long teal chromosome, all teal, with the short rose-pink. Lower right cell: long teal chromosome with the matching lower end rose-pink, with the short rose-pink. Single chromatids, at true scale. Record the swap point on each recombinant chromosome in the anchors file.
+
+QA: cross-fade strips `cd-m1-metaphase` ↔ `cd-m1-metaphase-alt` and `cd-pair-anaphase` → `cd-four-cells-crossover`; confirm colours and counts. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/y11fa1v30-provenance.json`.
+
+## Codex error-check brief (FA1-V30)
+
+Error-only report to `../checks/` (root names the check number). Check against a current senior biology text:
+- Scene 1: "unless they're identical twins, they never get exactly the same genes" (see Numbers; fallback wording ready).
+- Scene 2: allele meaning; the pea flower example.
+- Scenes 3, 4: crossing over wording; "doesn't make new alleles"; sister chromatids differ; position varies, can be more than one.
+- Scenes 5, 6: independent assortment and random segregation as distinct processes, as defined here; "each new cell gets exactly one partner from every pair".
+- Scenes 7, 8: the letter outcomes; 2ⁿ and its assumptions; 2²³ = 8,388,608.
+- Scene 9: random segregation of sister chromatids in anaphase II; the four outcomes; "far more than eight million".
+- Scene 10: about 70 trillion; natural selection clause.
+- Scene 11: the summary board and the memory aid's limit.
+- Attempts: mosquito 2n = 6; the model answers and mark split.
+- Letters match the painted bands and swap position on every plate (anchors file).
+- Site item 5 in Decisions: judge whether to log.
+- Search for em dashes and absolute claims in narration. Known: "never get exactly the same genes" (1); "never both" (6, true for a normal meiosis); "can't split A from B" (12d, true for assortment). Judge each.
+
+## YouTube metadata (draft)
+
+- Title: "Why Every Sperm and Egg Is Different: Crossing Over, Independent Assortment and Random Segregation | Year 11 Biology"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson24.sa.html
+
+Brothers and sisters share the same two parents, so why are they different? Follow lettered alleles through meiosis on one 2n = 4 model cell: see crossing over make new allele combinations on a chromosome, see why independent assortment and random segregation are two different processes, and work out why 23 chromosome pairs give over 8 million combinations before crossing over adds more. Finish with two exam-style questions and brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Year 11 Biology (2025 syllabus), Focus Area 1
+B25-FA1-G4-08: Describe the processes of crossing over, independent assortment and random segregation during meiosis
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c
+
+Previous: How does meiosis halve the chromosome number? Next: How important is each process in cell division?
+
+#Year11Biology #Meiosis #GeneticVariation #HSCScience"
+
+- Syllabus line and course label follow root decision 15 (route `syllabusActions.text`).
+
+## Open decisions
+
+- **1. Assortment and segregation (learning review, science check).** The definitions in scenes 5 and 6 follow the route's coverage note and standard texts (Mendel's law of segregation for one pair; independent assortment between pairs). Some school texts use "random segregation" for the anaphase movement only; this design includes both anaphase I (partners) and anaphase II (chromatids), as the site and the route do. Reviewers confirm the distinction reads clearly at playback speed.
+- **2. "Chiasma" (learning review).** Not spoken. A silent grey tag "the crossing point: a chiasma" could sit on the scene 3 ring; drop if it adds load.
+- **3. Siblings wording (science check).** Scene 1's "never get exactly the same genes" has a fallback (see Numbers).
+- **4. Plates.** Two matched variants requested. If root commissions crossover versions of the meiosis I and II cell plates for v29 (v29 Open decision 4), v30 scene 9 can show the swap on every stage; not needed for v30 as designed.
+
+## Build ids
+
+Lesson key `y11fa1v30`. Suggested explainer folder `src/explainer/lessons/bio-y11-fa1-v30`, build folder `docs/production/claude-pm/lessons/y11fa1v30` (root to confirm).
+
+In order (17 scene headings): opening, alleles, crossing-over-predict, crossing-over-makes, assortment, segregation, multiply-predict, two-to-the-n, four-different, fertilisation, summary-memory, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
+
+Holds: crossing-over-predict and multiply-predict end with the 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1, 2, 4 to 6 and 8 to 11 hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take; `motionRole: "hold"`). Review evidence paths: `learning_review` (review key y11b-v30) and `science_check`, root names them.
+
+## Review notes for Claude (author, not learner copy)
+
+- **Teaching checks.** Causes: why crossing over makes new combinations (pieces swap between partners that carry different alleles; 3, 4); why alleles must differ for shuffling to matter (2); why each cell gets one allele of each gene (partners separate; 6); why the count is 2ⁿ (two possibilities per pair, independent pairs multiply; 7, 8); why all four cells differ (sister chromatids differ after crossing over, then separate randomly; 9); why siblings differ (different gametes, random fertilisation; 10). Attention: the sibling surprise (1), two predictions (3, 7), the jump from 4 to over 8 million (8). Visual medium: lettered chromatids swapping ends, the two line-ups side by side, letters travelling with chromosomes, the board doubling. Apply: a new organism's count (12a), a lettered chromosome to diagnose (12c). Remember: the site's card hook; the "within a chromosome / whole chromosomes" rule; the three-part decision rule.
+- **Term load.** New spoken terms: allele, combination, independent assortment, segregation, random segregation, two to the power of n, natural selection (one clause). Crossing over, homologous and the phase names are recalls from v29.
+- **Boundary with v31 and Year 12.** No Punnett squares, dominance or genotype; the letters only track which alleles travel together. Random fertilisation is one scene (10), as the route allows ("short mention"); the learning review may judge whether scene 10's natural selection clause should move to v31.
+- **Cultural content.** None.
+- **Pronunciation.** "allele" uh-LEEL; "meiosis" my-OH-sis; "homologous" huh-MOL-uh-gus; "Aedes aegypti" (screen only); "8,388,608" spoken as "eight million, three hundred and eighty-eight thousand, six hundred and eight" (the build writes the spoken form for the voice).
+- **Doubts for the reviewers.** (a) Scene 7 carries two outcomes and the multiplying idea; check its pace. (b) Is "switch crossing over off" clear as a teaching move, not a biological claim? The tag says "for this step". (c) Scene 1's spoken claim about siblings (see Numbers).
+- **No em dashes** in this file (searched by script).

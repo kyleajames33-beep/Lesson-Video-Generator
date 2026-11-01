@@ -26,3 +26,12 @@ Written by Claude (root) after reading the two designers' open questions. Series
 18. **v16:** keep "glycolysis" as a silent screen tag; glucose stays the flame object. The lactic acid item is logged only if the science check confirms the site text is wrong.
 19. **v17:** van Helmont's figures stay in kilograms with "about" (converted from his pounds; author note keeps the conversion). Leaving out the source of the released oxygen is accepted, for the reason given.
 20. **v18:** 5,327 characters (about 523 s) accepted. The route question now says "millions of times faster" (root edit). Keep the bottle-opener sprites (small plates). The two minor site items are logged.
+
+## v19 to v24 (2 November 2026)
+21. **Frames:** v22 opens on v21's actual handoff frame (root edit). v21's handoff now uses the new `y11-dna-helix-v1.png` instead of `b5x-zoom-helix-v1.png`, whose rung colours pair inconsistently (root edit).
+22. **v20 pH wording:** keep the corrected explanation (near the optimum, changed charges weaken binding and this can reverse; far from it, the enzyme denatures). The site's "denatures on both sides" is logged as a correction.
+23. **v21:** potato is the enzyme source; 3% hydrogen peroxide; students cut discs and the teacher boils the control, subject to the safety check. Optional plates (padlock and key, egg white pair, boiled discs) are kept if Codex has capacity; otherwise cut without text change. The drug-design idea and the pineapple jelly hook stay out.
+24. **v22** at 5,493 characters is accepted. Base colour key for v22 to v24: A red, T yellow, C blue, G green, always with letters on the tiles.
+25. **v23:** add a grey screen tag "Okazaki fragments" on the lagging-strand pieces (screen only, not spoken). "Another DNA polymerase" for primer replacement stays, with the human-cell simplification in an author note, subject to the science check.
+26. **v24** stays a separate video (merging would push v23 past the cap). Its 64,000 km figure is available to v25 as a hook if v25 needs one.
+27. **Shared components** `ModelDiagram` (v19) and `EnzymeLens` (v20) join the shared FA1 kit folder.

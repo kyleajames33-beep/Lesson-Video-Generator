@@ -2,7 +2,7 @@
 
 Status: Revision 1 (2 Nov). Written by Claude (designer) from the route, the root decisions for v01 to v12 (and v13 to v15), the L16 pre-design pack, the full site page and v18's Revision 1 design. Needs independent student learning review (review key **y11b-v19**), then a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
-Narration NARR_TOTAL characters (Revision 1; SCENE_COUNT scene files, counted by script from lines starting "> " with bold markers removed), about TOTAL_S s (TOTAL_MIN minutes) including holds, one 3 s prediction countdown, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
+Narration 5,820 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 562 s (9.4 minutes) including holds, one 3 s prediction countdown, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
 ## Decisions
 
@@ -38,7 +38,7 @@ Handoff: active site shape explains how temperature, pH and substrate concentrat
 
 ## Script and shots
 
-The video has SCENE_COUNT voiced scene files (1 to 10, 10b, 11a, 11b, 11c, 11d, 12 and the notes lead-in, scene 13). The **enzyme close-up** carries scenes 1 to 3, 5, 6, 8, 9 and 10b; the **exam diagram** scenes 4, 7, 11a, 11b and 12; the **compare board** builds in 10. Colour key: enzyme teal; substrate gold; near-miss molecule lilac-grey; ghost outline dashed teal; strained bonds amber; faults terracotta; grey for tags and callbacks. No people appear at any point.
+The video has 17 voiced scene files (1 to 10, 10b, 11a, 11b, 11c, 11d, 12 and the notes lead-in, scene 13). The **enzyme close-up** carries scenes 1 to 3, 5, 6, 8, 9 and 10b; the **exam diagram** scenes 4, 7, 11a, 11b and 12; the **compare board** builds in 10. Colour key: enzyme teal; substrate gold; near-miss molecule lilac-grey; ghost outline dashed teal; strained bonds amber; faults terracotta; grey for tags and callbacks. No people appear at any point.
 
 ### 1. a key, a lock, and a lock that moves (opening)
 > Last time, we saw that only the right substrate fits an enzyme's active site. But how does an enzyme pick out its one substrate from the thousands of molecules bumping into it? In 1894, a chemist pictured it as a key in a lock. About sixty years later, another scientist suggested the lock can move. So how do these two models explain why an enzyme works on just one substrate?
@@ -140,7 +140,7 @@ Two unseen items, each followed by its own brief feedback (11a, 11b, 11c, 11d). 
 2. (11c, explain, 3 marks.) A student claims induced fit means an enzyme can act on any substrate.
    Model: In the lock-and-key model the active site is rigid, so only a substrate with an exactly complementary shape can fit and form an enzyme-substrate complex (1 mark). In the induced fit model the active site changes shape only when the correct, approximately complementary substrate binds; a wrong-shaped molecule does not induce that change, so it is not gripped and its bonds are not strained, and no product forms (1 mark). So in both models the enzyme remains specific; induced fit refines the explanation of specificity rather than removing it (1 mark). Classic mistake crossed out: "the substrate changes shape to fit the enzyme" (in induced fit the active site changes; bond strain distorts the substrate only once it is bound). Other wrong chains: describing only induced fit; "the enzyme changes shape for any molecule but only reacts with some" (the change is induced by the correct substrate).
 
-Feedback spoken lengths are about FB1 s (11b) and FB2 s (11d) by script; time the exact audio. Neither re-teaches the lesson.
+Feedback spoken lengths are about 24 s (11b) and 30 s (11d) by script; time the exact audio. Neither re-teaches the lesson.
 
 ## Numbers or facts to verify
 
@@ -164,7 +164,29 @@ Self-check (2 Nov). The Codex science check must confirm each before voicing.
 
 Revision 1 count (2 Nov) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, one 3 s prediction countdown, 10 s per attempt countdown and 55 s more of the quiet notes hold.
 
-COUNT_TABLE
+| Scene | Characters |
+| --- | --- |
+| 1. a key, a lock, and a lock that moves (opening) | 377 |
+| 2. what both models must explain | 440 |
+| 3. the lock-and-key model | 532 |
+| 4. drawing the lock-and-key model | 375 |
+| 5. a flexible protein, and induced fit | 495 |
+| 6. why the tight grip matters | 342 |
+| 7. drawing the induced fit model | 399 |
+| 8. a near miss: a prediction | 187 |
+| 9. still specific | 416 |
+| 10. same and different | 319 |
+| 10b. why induced fit is preferred | 392 |
+| 11a. attempt one (read the diagram) | 208 |
+| 11b. feedback, item one | 318 |
+| 11c. attempt two (correct a claim) | 216 |
+| 11d. feedback, item two | 394 |
+| 12. decision rule and handoff | 335 |
+| 13. key notes (quiet, about 60 seconds) | 75 |
+
+Revision 1 total: **5,820 characters**, 17 scene files (inside 5,500 to 6,800). Speech about 438 s; with 34 s of padding (17 scenes), about 12.5 s of stated holds and settles (1 s for scenes 1 to 7, 9, 10 and 10b; half a second on scene 12; about 1 s settle on each feedback scene), 3 s of prediction countdown, 20 s of attempt countdowns and 55 s more of the quiet notes hold: **about 562 s (9.4 minutes)**, about 8 s under the cap. Feedback 11b is about 24 s and 11d about 30 s by script (11d is at the top of the range; reserve cut 3 applies if the audio runs over 30 s). Scene 3 (532) is the longest; check it at playback speed.
+
+Reserve cuts, if the voiced preview runs long: (1) scene 1's "from the thousands of molecules bumping into it" shortened to "from all the molecules around it" (about 20 saved); (2) scene 10b's "The newer model refines the older one. It doesn't throw it out." shortened to "The newer model refines the older one." (about 25 saved; the arrow label carries the rest); (3) 11d's last sentence "It's the active site that changes." (34; the chip's small text carries it). Do not cut the weak-bonds clause (5), the strain sentence (6), the near-miss sentence (9) or the "same shape in every panel" clue (4, 12).
 
 ## Assets
 
@@ -244,7 +266,7 @@ Previous: Why do cells need enzymes? Next: How do enzyme graphs explain changing
 
 Lesson key `y11fa1v19`. Suggested explainer folder `src/explainer/lessons/bio-y11-fa1-v19`, build folder `docs/production/claude-pm/lessons/y11fa1v19` (root to confirm).
 
-In order (SCENE_COUNT scene headings): opening, what-models-explain, lock-and-key, draw-lock-and-key, induced-fit, tight-grip, draw-induced-fit, near-miss-prediction, still-specific, same-and-different, why-preferred, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
+In order (17 scene headings): opening, what-models-explain, lock-and-key, draw-lock-and-key, induced-fit, tight-grip, draw-induced-fit, near-miss-prediction, still-specific, same-and-different, why-preferred, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
 
 Holds: near-miss-prediction ends with a 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1 to 7, 9, 10 and 10b hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take); it ends with root decision 16's 1 s cross-fade back to scene 12's final frame. Review evidence paths: `learning_review` (review key y11b-v19) and `science_check`, root names them.
 
