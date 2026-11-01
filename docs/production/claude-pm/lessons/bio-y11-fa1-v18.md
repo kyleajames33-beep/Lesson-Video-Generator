@@ -2,7 +2,7 @@
 
 Status: Revision 1 (2 Nov). Written by Claude (designer) from the route, the root decisions for v01 to v12, the L15 pre-design pack and the full site page. Needs independent student learning review (review key **y11b-v18**), then a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
-Narration COUNT_TOTAL characters (Revision 1; COUNT_SCENES scene files, counted by script from lines starting "> " with bold markers removed), about TIME_TOTAL including holds, one 3 s prediction countdown, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
+Narration 5,327 characters (Revision 1; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 523 s (8.7 minutes) including holds, one 3 s prediction countdown, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
 ## Decisions
 
@@ -10,7 +10,7 @@ Narration COUNT_TOTAL characters (Revision 1; COUNT_SCENES scene files, counted 
 - **Templates.** `bio-y11-fa1-v08.md` (structure and voice), `bio-y11-fa1-v16.md` and `bio-y11-fa1-v17.md` (this run's equation strip and energy picture); series root decisions 5, 7, 15 and 16 applied.
 - **Opening (root decision 16).** v18 opens on v17's final frame (`bio-y11-fa1-v17.md`, scene 14): both equation strips small at the top, the three step chips, `b6a-plant-cell-v1.png` at the centre with the cycle loop drawn as chains of small arrows, a teal dot pulsing on each small arrow, and the chip "Next: Why do cells need enzymes?". Scene 1 starts on that frame: the strips and chips fade, the chip becomes this video's heading, and the `Cam` pushes in on one teal dot, which glows and gives way to the new liver plate.
 - **Main question wording.** The route says "thousands of times faster". The video says "millions of times faster" for the liver demonstration, because that is what the demonstration itself shows (months on the shelf against seconds in the tube is a factor of about a million; see Numbers) and the site's own introduction says "millions of times". The heading uses the route's title. Root may change the route's question to "millions" (Open decision 1).
-- **Scope (start: catalase and liver; stop: protein catalysts, activation energy lowered, not used up, specific, fast reactions at body temperature, active site named).** In order: the liver hook (1); catalase, enzyme and catalyst, and why liver has it (2); substrate, active site, products, with a prediction (3); not used up (4); activation energy as a hill (5); the enzyme's lower hill (6); why a cell can't just heat up (7); specificity (8); specificity gives control (9); two unseen items (10a to 10d); decision rule and handoff (11); key notes (12).
+- **Scope (start: catalase and liver; stop: protein catalysts, activation energy lowered, not used up, specific, fast reactions at body temperature, active site named).** In order: the liver hook (1); catalase, enzyme and catalyst, and why liver has it (2); substrate, active site, products, with a prediction (3); not used up (4); activation energy as a hill (5); the enzyme's lower hill (6); drawing the energy diagram, as the site asks (6b); why a cell can't just heat up (7); specificity (8); specificity gives control (9); two unseen items (10a to 10d); decision rule and handoff (11); key notes (12).
 - **What this video does not teach.** The lock-and-key and induced fit models by name or as mechanisms (v19; scene 8 says only that the active site has a particular shape and only the right substrate fits; no key, lock or handshake image). Temperature, pH and concentration effects on rate, and denaturation as a term (v20; scene 7 says "proteins would lose their shape and stop working", one clause, no graph). Enzyme inhibitors as a topic (scene 9 says "blocking it", one clause). Cofactors, coenzymes, ribozymes (screen tag "almost all"). Collision theory beyond one sentence (Stage 5 and chemistry). Digestive enzymes beyond amylase as the specificity contrast (FA2).
 - **Syllabus (2025, `docs/production/programme/syllabus/bio-new-y11.json`).** B25-FA1-G3-04: "Explain the role of enzymes in cells". "Explain" asks for causes: why cells have enzymes (2: harmful hydrogen peroxide; 7: heat is not an option), how they speed reactions (5, 6: activation energy), why a little goes a long way (4), why the cell can control its reactions (8, 9). The **role board** collects four statements (protein catalyst, not used up; lowers activation energy; specific; fast and controlled at body temperature) and becomes the decision rule (11), which follows the site's explain answer.
 - **One main question (route):** *What makes the same reaction happen thousands of times faster inside a cell?* Heading on screen: "Why do cells need enzymes?" Named in 1 (what's in the liver?), answered by name in 2 (catalase, an enzyme) and by mechanism in 6 (a lower hill).
@@ -40,7 +40,7 @@ Handoff: two models that explain why only one substrate fits an active site (rou
 
 ## Script and shots
 
-The video has 16 voiced scene files (1 to 9, 10a, 10b, 10c, 10d, 11 and the notes lead-in, scene 12). The **liver tube** is on screen in scenes 1 to 4, the **enzyme close-up** from scene 3, and the **role board** from scene 2. No people appear at any point.
+The video has 16 voiced scene files (1 to 6, 6b, 7 to 9, 10a, 10b, 10c, 10d, 11 and the notes lead-in, scene 12). The **liver tube** is on screen in scenes 1 to 4, the **enzyme close-up** from scene 3, and the **role board** from scene 2. No people appear at any point.
 
 ### 1. the liver and the peroxide (opening)
 > Every one of those small steps is run by an enzyme. To see what that means, start with a bottle of hydrogen peroxide. On a shelf, it breaks down into water and oxygen, but so slowly that you'd hardly notice in months. Now drop a small piece of raw liver into some. Within seconds, it foams up out of the tube. Same reaction, millions of times faster. So what's in the liver?
@@ -71,6 +71,11 @@ Visual: the board dims. The coded `EnergyHill` graph draws large at the centre l
 > An enzyme gives the reaction a different route, with a lower hill. In the active site, the substrate is held in just the right position, and the bonds that need to break are strained, so less energy is needed. Now many more molecules make it over the hill, so many more react every second. Notice what doesn't change: the starting substance, the products, and the overall energy released are all the same.
 
 Visual: on "a lower hill" a second, lower hump draws under the first on the same graph (solid; the first turns dashed), labelled "with enzyme"; a smaller activation-energy bracket writes beside the first. On "held in just the right position" a small callout of `y11-enzyme-bound-v1.png` appears above the graph; on "bonds ... strained" coded strain lines flicker across the seated substrate. On "many more molecules" the dashed threshold line in the population drops to the new peak height and a large share of the dots now sits above it (shaded; tag "enough energy: many"); a stream of dots rolls over the lower hump; the rate gauge swings to "fast". On "doesn't change" the start and end levels both glow and a tag writes: "same start, same products, same energy released". The role board's third slot writes: "lowers the activation energy". A memory chip writes: "a lower hill, not a harder push". At most three bright items. Hold one second.
+
+### 6b. drawing the energy diagram
+> This graph is worth being able to draw. Put energy up the side and the progress of the reaction along the bottom. Mark the substrate's level on the left and the products' level on the right. Join them with a tall hump for no enzyme, and a lower hump with the enzyme. Activation energy is the height from the substrate's level to the top of each hump, not from the products.
+
+Visual: the graph from scenes 5 and 6 clears and redraws step by step as a sketch on a coded page, one element per cue, earlier elements staying: on "energy up the side" the vertical axis and label "energy"; on "progress of the reaction" the horizontal axis and label; on "substrate's level" a short line at the left labelled "substrate"; on "products' level" a lower short line at the right labelled "products"; on "a tall hump" a dashed curve, label "no enzyme"; on "a lower hump" a solid curve under it, label "with enzyme", both ending on the same products line. On "Activation energy is the height" two vertical brackets draw from the substrate line to each peak, labelled "activation energy (no enzyme)" and "activation energy (with enzyme)". On "not from the products" a `WrongChip` bracket from the products line to a peak writes and takes a scribble cross. A grey tag: "both curves start and end at the same levels". At most three bright items. Hold one second.
 
 ### 7. why a cell can't just heat up
 > Chemists often speed up reactions by heating them, which gives more molecules enough energy to get over the hill. A cell can't do that. Heat a cell enough to speed up its reactions, and its proteins would lose their shape and stop working. Think about starch. In a beaker, breaking it down needs acid and heating. In your body, enzymes do it in minutes, at about thirty-seven degrees.
@@ -133,7 +138,7 @@ Two unseen items, each followed by its own brief feedback (10a, 10b, 10c, 10d). 
 2. (10c, justify, 4 marks.) Justify: "A cell could not survive at 37 °C without enzymes."
    Model: Every reaction needs a minimum energy, the activation energy, to start; at 37 °C only a small fraction of molecules have this much energy (1 mark), so without enzymes the reactions of respiration and other processes would be far too slow to supply what the cell needs (1 mark). Raising the temperature enough to speed them up would damage the cell's proteins and membranes, so heating is not an option (1 mark). Enzymes provide a route with a lower activation energy, so many more molecules react at 37 °C and the reactions run fast enough to keep the cell alive (1 mark). Classic mistake crossed out: "enzymes give the molecules extra energy". Other wrong chains: "enzymes raise the temperature of the cell"; "enzymes are used up to supply energy".
 
-Feedback spoken lengths are about FB1 s (10b) and FB2 s (10d) by script; time the exact audio. Neither re-teaches the lesson.
+Feedback spoken lengths are about 23 s (10b) and 27 s (10d) by script; time the exact audio. Neither re-teaches the lesson.
 
 ## Numbers or facts to verify
 
@@ -164,7 +169,28 @@ Self-check (2 Nov). The Codex science check must confirm each before voicing.
 
 Revision 1 count (2 Nov) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, one 3 s prediction countdown, 10 s per attempt countdown and 55 s more of the quiet notes hold.
 
-COUNT_TABLE
+| Scene | Characters |
+| --- | --- |
+| 1. the liver and the peroxide (opening) | 374 |
+| 2. catalase, an enzyme | 383 |
+| 3. substrate, active site, products, and a prediction | 396 |
+| 4. not used up | 420 |
+| 5. activation energy: the hill | 380 |
+| 6. the enzyme's lower hill | 405 |
+| 6b. drawing the energy diagram | 373 |
+| 7. why a cell can't just heat up | 384 |
+| 8. specific | 397 |
+| 9. specificity gives control | 384 |
+| 10a. attempt one (potato and peroxide) | 247 |
+| 10b. feedback, item one | 309 |
+| 10c. attempt two (justify) | 126 |
+| 10d. feedback, item two | 358 |
+| 11. decision rule and handoff | 316 |
+| 12. key notes (quiet, about 60 seconds) | 75 |
+
+Revision 1 total: **5,327 characters**, 16 scene files (**under the 5,500 floor**). Speech about 401 s; with 32 s of padding (16 scenes), about 11.5 s of stated holds and settles (1 s for scenes 1, 2, 4 to 6, 6b and 7 to 9; half a second on scene 11; about 1 s settle on each feedback scene), one 3 s prediction countdown, 20 s of attempt countdowns and 55 s more of the quiet notes hold: **about 523 s (8.7 minutes)**. Feedback 10b is about 23 s and 10d about 27 s by script.
+
+**Length decision: stopped, not padded.** The first full draft came to 4,954 characters. One scene was added because the content genuinely needs it (6b: drawing and labelling the energy diagram, which the site asks students to sketch and exams ask them to draw). Every part of the stop line is taught once, with a cause; further length would mean re-teaching (activation energy twice), pulling v19's models or v20's temperature effects forward, or padding. This mirrors root decision 9 (v07 to v12) accepting v12 at 5,348 characters. Root to accept or name an addition (Open decision 4). No reserve cuts are listed.
 
 ## Assets
 
@@ -233,14 +259,15 @@ Previous: Where does the wood in a tree come from? Next: How do enzyme models ex
 - **1. "Thousands" or "millions" (root).** The route's main question says "thousands of times faster"; the narration says "millions" (scene 1), matching the demonstration and the site's introduction. The heading uses the route title, so no on-screen conflict. Root to update the route question or tell the designer to revert.
 - **2. Liver cell plate (learning review).** Scene 2 uses `b6a-animal-cell-v1.png` as "a liver cell, simplified" (it has an empty nucleus). If the review finds this confusing, use `m5x-cell-protein-synthesis-v1.png` (nucleus painted) instead; no new plate needed.
 - **3. The opener sprites (root).** Three small sprites for a 6 s memory image. If the plate budget is tight, keep the memory chip and the spoken image only.
+- **4. Length (root).** 5,327 characters, about 523 s, below the 5,500 floor; the design stops rather than pads (see Narration length estimate). If root wants more, the most useful addition is a short worked reading of a second enzyme example (amylase on starch with iodine evidence), about 300 characters, though it edges into FA2 digestion.
 
 ## Build ids
 
 Lesson key `y11fa1v18`. Suggested explainer folder `src/explainer/lessons/bio-y11-fa1-v18`, build folder `docs/production/claude-pm/lessons/y11fa1v18` (root to confirm).
 
-In order (16 scene headings): opening, catalase, active-site, not-used-up, activation-energy, lower-hill, no-heating, specific, control, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes. (15 headings listed plus the notes lead-in counted in the 16 scene files: opening to control are scenes 1 to 9.)
+In order (16 scene headings): opening, catalase, active-site, not-used-up, activation-energy, lower-hill, draw-diagram, no-heating, specific, control, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
 
-Holds: active-site ends with the 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1, 2 and 4 to 9 hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take). Review evidence paths: `learning_review` (review key y11b-v18) and `science_check`, root names them.
+Holds: active-site ends with the 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1, 2, 4 to 6, 6b and 7 to 9 hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take). Review evidence paths: `learning_review` (review key y11b-v18) and `science_check`, root names them.
 
 ## Review notes for Claude (author, not learner copy)
 

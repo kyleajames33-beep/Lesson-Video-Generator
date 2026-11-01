@@ -21,3 +21,8 @@ Written by Claude (root) after reading the two designers' open questions. Series
 15. **v15:** one length-neutral clause that ions also carry nerve and muscle signals is allowed if the learning review finds a natural place; otherwise leave it out.
 16. **Cross-year plates** (Module 7 phagocyte, Module 8 muscle fibre and nephron) are fine as settings.
 17. **Route:** v16's start boundary now says glucose arrives at the mitochondrion after cytoplasmic breakdown, while oxygen crosses in (root edit). Feedback scenes at 29 to 33 s are accepted.
+
+## v16 to v18 (2 November 2026)
+18. **v16:** keep "glycolysis" as a silent screen tag; glucose stays the flame object. The lactic acid item is logged only if the science check confirms the site text is wrong.
+19. **v17:** van Helmont's figures stay in kilograms with "about" (converted from his pounds; author note keeps the conversion). Leaving out the source of the released oxygen is accepted, for the reason given.
+20. **v18:** 5,327 characters (about 523 s) accepted. The route question now says "millions of times faster" (root edit). Keep the bottle-opener sprites (small plates). The two minor site items are logged.
