@@ -307,6 +307,14 @@ All ten pass the 1600 px long-side minimum, real alpha, 8% empty margin, checker
 
 Nothing could not be done. Question for Claude: which of these plates should replace the coded stand-ins after visual review?
 
+### Brief 129: calculus kit and silent pilot (1 November 2026)
+
+Completed the shared maths calculus kit, preserving the original square graph and tangent pilot. Source: `src/explainer/math/kit.tsx`, `graphs.tsx`, `algebra.tsx`, `calculus-examples.ts`, `calculus-pilot.tsx`, `calculus-pilot-entry.tsx`, `tsconfig.calculus.json` and the updated README. The shared QuestionCard and colour map now support Maths Advanced. Renderer: `scripts/render-maths-calculus-pilot.mjs`.
+
+Hand-in: [checks/codex-build-129.md](checks/codex-build-129.md). It documents every component's props, examples and limits. Outputs: `out/explainer/maths-calculus-kit-pilot/`, containing the silent 60-second MP4, 12 desktop stills, 12 phone-landscape stills, maths/media checks and a hashed input manifest. Scoped strict typecheck passed; 2,774 plotted values and 11,398 numeric assertions passed. The MP4 has 1,800 frames at 30 fps, no audio stream and passes full decoding. Shared lock released, temporary bundle removed, render browsers closed.
+
+No requested component omitted. Claude still needs to watch the exact pilot at playback speed. No lesson designs, narration, speech, uploads or commits.
+
 ## 12 October
 
 | Task | Owner | State |
@@ -1714,3 +1722,116 @@ For Claude: resolve the reports before recording. Restore the browser connection
 ### Briefs 28ab and 116 to 121: continuation (31 October 2026)
 
 Browser access still fails after the Chrome reset, a fresh control session and a direct Chrome tab attempt. No YouTube change was applied. All four prepared C02 input hashes still match. Seven NIST catalogs are now readable: no additional appropriate neat-liquid transmittance record was certified. The measured package remains three of ten; the two apparent liquid entries record real refractive index. Exact IR/NMR checks remain open. Nineteen author design revisions differ from the 30 October inputs; old reviews and validation remain historical. No design, narration or existing review was changed. Details: `assets/brief116-121-continuation-2026-10-31.md`. Additive ZIP/checkpoint verified; earlier archives preserved.
+
+### Briefs 122 to 124 and 28ab: hand-in (31 October 2026)
+
+Brief 122: `checks/codex-check-122.md` reports six new errors: chem-m8-c04 1, bio-m8-b08 1, bio-m8-b11 1, bio-m8-b14 1, bio-m8-b16 1 and bio-m8-g02 1. The other 24 designs each have zero new errors. Exact per-design counts and sources are in the report. Open items: 18 verified, two corrected, 11 cannot verify across 31 report lines. Exact spectra, calcium-control visibility, the exact NSW panel count, exact unrounded melanoma cases, exact shared male peak year and live-link verification remain open where named. Cultural, listening and release holds remain unchanged. Furnace art, QA and provenance: `assets/brief122-provenance.json`, `brief122-b14-provenance.json`, `brief122-g02b-provenance.json`, `brief122-qa/` and `brief122-media-checkpoint.json`. Local archive `out/archives/brief122-rev2-check-and-plates-2026-10-31.zip` has 21 members, CRC/member-hash checks passed, SHA256 `af3eb8105d7a4c640fb36e6f714d79a1a1586e12639a671a0cd8354975d42a18`. It was not uploaded. Site corrections log updated. No design or narration edits.
+
+Brief 123: `checks/new-voice-programme-inventory-2026-10-31.md` completes all five sections. (1) Four programme tracks inventoried with official syllabus implementation, existing plans, code and plates. (2) Year 12 Maths has 317 source pages across four course choices; exact Extension crosswalk and a separate Standard 1 route remain unverified. (3) Visual gaps ranked against existing kits. (4) Untracked Physics work is 280 files, 40.22 MB; preservation and source/media separation recommended, nothing deleted or committed. (5) Ten opening Advanced candidates supplied, conditional on the owner's course choice. All 130 image-bank lesson hashes and 17 brief79 plate hashes still match.
+
+Brief 124: `checks/google-tts-pilot-2026-10-31.md` completes the sourced facts stage only. `.env.local` has no Google AI Studio key, so the brief requires stopping before samples. Provisional audition: Gemini 3.8 Flash-Lite TTS with Charon, Iapetus and Sulafat. Estimated USD $0.082 for 6,000 characters under a nine-minute/1,500-input-token assumption at the quoted 2026 rates. No voice is listening-approved. Alignment median/p95, adapter, assembled pilot and caption fit are not measured or tested. No speech requests, package installation or lesson changes.
+
+Brief 28ab: all four prepared C02 input hashes still match (`youtube/brief28ab-input-check-current-session.json`). Native inventory now works, but the browser host is unavailable and Chrome has no targetable window. Automatic approval review rejected launching Google Chrome: `Computer Use was not approved to use Google Chrome`. Exact access record: `youtube/brief28ab-access-current-session.json`. C02 was not uploaded; the published P02 description was not changed. No live readback or link was invented. Prepared metadata and correction remain in `youtube/brief28ab-preflight.json`.
+
+Briefs 125 and 126 continue through their still/preview checks. Their source reports distinguish completed checks from the pending jobs behind the existing Skills S08 render lock. No full MP4 or commit is authorised by these build briefs.
+
+### Briefs 125 and 126: first preview hand-in (31 October 2026)
+
+B03 v1 is built at `out/prototypes/Explainer-bio-m8-b03-preview-v1/index.html`. Scoped typecheck and cue checks pass. All 59 planned frames were rendered and ten contact sheets inspected after repairs. P02 v1 is built at `out/prototypes/Explainer-chem-m8-p02-preview-v1/index.html`. Scoped typecheck and cue checks pass. Its repeated 61-frame round and eleven contact sheets pass the listed static checks; the final risk table fits at 24 px with its reading hold. Reports: `checks/codex-build-125.md` and `checks/codex-build-126.md`. These are voiced preview pages for Claude/owner review, not playback-speed or human-listening approval.
+
+G01, B04 and B05 code is written and registered. Their final still/preview work is queued behind a new C03a full export that acquired the shared lock after B03/P02. A single G01 waiter is queued, followed by B04 and B05. No active export or lock has been interrupted. Root has asked the owner whether to leave C03a running or pause it for the remaining preview checks; until an explicit answer, the export continues.
+
+The 8 GB PC exhausted committed memory with the catalogue-wide tooling. The documented direct-config fallback uses the same shared engine and Player, loads one lesson and reuses one browser. P02's exact config-adjusted playback lesson is saved for future caption export. G01 also has two 60-frame reading holds and an exact playback lesson; both must use those adjusted timings for captions. No recorded text or alignment changed. No new full MP4 was rendered by this brief work and no commit was made.
+
+### Brief 122: source follow-up (31 October 2026)
+
+Final open-item totals are 21 verified, two corrected and eight cannot verify across the same 31 rows. The six design errors are unchanged. Government Cancer Australia data verifies B09's exact 17,443 projected 2025 cases. A university 0.1 mol/L calcium chloride wire-loop procedure plus the RSC colour reference resolves P03's source request. Public NIST plots verify C09's substantial m/z 15 fragment (about 47% of base, with 94:100 and 96:94 approximate plot-read heights), and G03's ketone base peak 43 and molecular ion 86 (about 21%). No exact raw heights, uninspected energy condition or missing IR/NMR record is invented. C09's separate SDBS cross-checks and the other named spectrum holds remain.
+
+Updated report: `checks/codex-check-122.md`. Additive evidence/checkpoints: `assets/brief122-source-followup-2026-10-31.json`, `brief122-media-checkpoint-followup1.json`, `brief122-public-plot-followup.json` and `brief122-media-checkpoint-followup2.json`. Follow-up archives: `out/archives/brief122-source-followup-2026-10-31.zip` (SHA256 `6d6bd025dd337156ed57dba314655fe78ab2c5bdaf085885235ea016f2b501ee`) and `out/archives/brief122-public-plots-followup-2026-10-31.zip` (SHA256 `4f4be55405787891db6f1d11e42193749a6f61e42da6fe478876e2607b2f1862`). CRC and every member hash passed. Both earlier archives and their checkpoints are preserved. No remote upload or design edit.
+
+
+## Briefs 125 and 126: five previews ready (1 November 2026)
+
+B03, B04, B05, P02 and G01 now have v1 browser previews in `out/prototypes/Explainer-<lesson-id>-preview-v1/index.html`. B03's axis-label refresh is included; its earlier unapproved bundle is preserved. Scoped TypeScript and cue checks pass for all five. Several frames per scene and every response countdown were inspected, findings repaired and affected stills checked again. Reports: `checks/codex-build-125.md` and `checks/codex-build-126.md`, including contact sheets, exact preview paths, timing changes and design departures. The scoped one-config fallback was used after catalogue-wide tooling exhausted this 8 GB machine's committed memory; it retains the shared ExplainerVideo engine and Player UI.
+
+These are ready for Claude/owner preview review. Stills do not establish continuous motion, human listening, caption fit during playback or learning/release approval. No full MP4 export or commit was made for these briefs. Use the config-adjusted `playback-lesson.json` when generating future cumulative captions, especially P02 and G01 whose interior reading holds shift later scenes. The final B05 batch retained one owned render lease across repairs and packaging, then released it after its heavy processes exited.
+
+Briefs 122 and 123 are handed in in the reports above. Brief 124 remains at its required facts-stage stop because the Google key is missing. Brief 28ab remains unapplied because the browser host is unavailable and automatic approval review rejected opening Google Chrome. No upload or live YouTube description change occurred.
+
+
+### Briefs 127, 124 and 28ab: hand-in (1 November 2026)
+
+Brief 127, G02 Revision 5: **0 blockers, 2 unique should fix**. `checks/m5g02-learning-review.md` has 2 should fix; `checks/m5g02-claude-science-check.md` has 1, shared with the learning review. Correct the new "no reaction" line to "no net reaction" and remove the unexplained equal-gas-count learner tag. Numbers, full question givens and all three official syllabus quotes pass. No G02 site error found.
+
+Brief 127, P01 Revision 1: **0 blockers, 6 unique should fix**. `checks/m8p01b-learning-review.md` and `checks/m8p01b-claude-science-check.md` each have 3. Exact repairs and length-neutral cuts are in the reports. Numbers and syllabus wording pass. No stricter public school-science temperature cap was found; detailed NSW CSIS instructions require staff access, and school plumbing outlet limits do not establish a practical preparation limit. The 40-degree fallback is recalculated. `site-corrections-m8.md` adds the verified L02 insulation overclaim and missing-practical coverage note, preserving earlier entries.
+
+The two apparatus plates are `public/assets/biology/m8-flask-bare-v1.png` and `public/assets/biology/m8-flask-wrapped-v1.png`. Built-in imagegen prompts, native files, hashes and processing are recorded in `assets/brief127-provenance.json` and `assets/brief127-qa/`. Both are 2000 px RGBA with at least 10 percent clear margin. Dark/black/white 300 and 600 px views and the 50 percent overlay were inspected. Shared apparatus aligns visually, with small generated texture differences. Claude and owner artwork acceptance remain pending. Local archive `out/archives/brief127-reviews-and-flasks-2026-11-01.zip`: 15 members, 4,588,808 bytes, SHA256 `fb65d34e035d1383654470502f54f2e7da7b7bbbcfa4662691fd7c080e72f2b5`; CRC and every member verified. `assets/brief127-media-checkpoint.json` records it. Not uploaded.
+
+Brief 124: `checks/google-tts-pilot-2026-10-31.md` has a 1 November source/key recheck. Step 1 is complete. No Google AI Studio key is present, so the brief requires stopping before samples. Provisional model is Gemini 3.8 Flash-Lite TTS; Charon, Iapetus and Sulafat are audition candidates, not a listening-approved choice. Estimated cost for a 6,000-character, nine-minute lesson is USD $0.082 under the report's token assumptions. Alignment median/p95 remain unmeasured; adapter, assembled pilot and caption fit remain untested. No speech or installation occurred.
+
+Brief 28ab: MP4, cumulative captions, design and measured lesson hashes still match the prepared metadata. Current evidence is appended to `youtube/brief28ab-input-check-current-session.json` and `youtube/brief28ab-access-current-session.json`. C02 was not uploaded, P02's description was not changed and no playlist readback is claimed. Browser inventory was empty and its host unavailable. Computer Use then stopped because it could not determine Chrome's current URL confidently enough to enforce policy; no UI input followed that stop. Prepared metadata and the correction paragraph remain available in `youtube/brief28ab-preflight.json`.
+
+No selected design, recorded text, scene code, lesson folder, public site HTML or published YouTube item was changed by this work. No speech, render, commit or push. Claude must resolve review findings before recording; exact voiced review and human listening remain pending. Further work on Brief 124 needs the Google key; Brief 28ab needs a working browser connection.
+
+### Briefs 127, 128, 124, 28ab and 28ac: continuation (1 November 2026)
+
+Brief 127 is verified complete and current: both design hashes, all 15 artifact hashes, and archive size/hash/count/CRC pass. G02 has 0 blockers and 2 unique should fix; P01 has 0 blockers and 6 unique should fix. No regeneration or review edits.
+
+Brief 124 remains at its facts-stage stop. The owner confirms no Google AI Studio key is available yet. No speech or alignment work was run.
+
+Briefs 28ab/28ac: C02's four prepared input hashes and all 15 new MP4 hashes pass. The 15 cumulative caption files match the exporter and avoid response holds. Prepared metadata, chapters, source checks and upload requirements are in youtube/wave6-metadata-draft.json and youtube/brief28ac-preflight.json. youtube/wave6-uploads.json explicitly records zero published videos and 15 pending. Browser inventory and the signed-in HSCScience Studio initially worked, then DOM actions repeatedly timed out. A native attempt placed P02's correction in the editor but Save stayed disabled; reload restored its original saved description. No persisted YouTube change or playlist readback is claimed. Memory exhaustion also caused small shell processes to fail. Existing render jobs were preserved.
+
+Brief 128 research and preparation is in progress. Final hand-in follows after validation.
+
+Brief 128 final hand-in: all four sections complete. (1) programme/syllabus/maths-advanced-2024-y12-crosswalk.json and programme/maths-a12-crosswalk.md map all 158 official points across seven focus areas to 59 read-only site lessons: 133 covered, 19 partial, 6 missing. Exact official HTML/MathML and actual CMS IDs are preserved; published content-point codes are absent. (2) programme/maths-a12-route-inputs.json supplies all ten entries, exact source sections, Year11 prerequisites and boundaries. Revise d01 to extend the Year11 exponential rule; d06-d08 extend known rules; use Applications L06 for d09 and L09 for d10. (3) pre-design/maths-a12/math-a12-d01.md through d10.md retain site examples and recalculations, plus 20 original practice questions with worked answers checked by independent numerical/identity/sign tests. site-corrections-maths-a12.md records 20 verified findings. (4) checks/maths-kit-needs-d01-d10.md maps all four programme kit components and names missing capabilities. JSON parsing, distinct IDs, source section references and copy checks pass. No site/design/narration/code edits, speech, renders or commits. Claude owns route/design decisions; research coverage does not approve a future video.
+
+### Brief 28ab retry: complete (1 November 2026)
+
+Published Chemistry M6 C02: https://youtu.be/C12nlyE-8zY. Exact approved MP4 hash rechecked. Title, description, cumulative chapters, Education, not Made for Kids, AI disclosure Yes, English (Australia), published cumulative captions and generated thumbnail 2 verified. Copyright and Community Guidelines checks found no issues. Final notes occupy the end, so no end screen was added. Module6 Chemistry manual playlist readback has 32 videos, with C02 fourth overall after Skills S01, S02 and C01, before C03. Complete readback: youtube/brief28ab-playlist-readback.json. Biology M7 P02 description correction saved and verified present after reload: https://youtu.be/sGl2I3C9TyY. Title, video, captions and playlist preserved. wave5-uploads.json updated for both. Publication screenshot saved in this chat's outputs/c02-published.png. Brief28ac uploads are in progress separately.
+
+### Brief 28ac retry: complete (1 November 2026)
+
+All 15 videos are Public. Exact prepared titles, descriptions, MP4 hashes and caption references match all 15 final records. Cumulative English (Australia) caption tracks are published, audience is not Made for Kids, AI disclosure is Yes, category Education, and YouTube checks found no issues. S08 uses v2 only. Useful generated thumbnails were visually checked; G03 and G04 use frame1 because frame2 showed near-empty response holds. End screens were skipped where final key notes occupy the frame. No daily upload limit was encountered.
+
+- chem-m7-p04: https://youtu.be/JMmrUJxoaQE
+- chem-m7-p05: https://youtu.be/WjCfarquFJ8
+- chem-m7-p06: https://youtu.be/3gQQ-hasiw8
+- chem-m7-g03: https://youtu.be/dMjkM6_NBY4
+- chem-m7-c15: https://youtu.be/4ilaHAMeqiU
+- chem-m7-g04: https://youtu.be/R5VJ8EsGEp4
+- bio-m7-p05: https://youtu.be/ipZfLvpuNBM
+- skills-s06: https://youtu.be/fKUEvH4i7O0
+- skills-s08: https://youtu.be/xO7HoISN8-k
+- chem-m8-c01: https://youtu.be/ahwV_6MQqHU
+- chem-m8-c02: https://youtu.be/irU2BTyFdEg
+- chem-m8-c03a: https://youtu.be/OUjLwWRUiNM
+- chem-m8-c03b: https://youtu.be/JIej-SISftM
+- bio-m8-b01: https://youtu.be/JK2yJHP9x2c
+- bio-m8-b02: https://youtu.be/D8-LzqJ6ZxY
+
+Manual playlist readbacks: Module7 Chemistry 28 entries, Biology18; Skills8 with S06 sixth/S07 seventh/S08 eighth; new Module8 Chemistry4 ordered C01/C02/C03a/C03b and Biology2 ordered B01/B02. Readback files are linked in youtube/wave6-uploads.json. Existing subject playlist entries are retained. The later Module8 skills interleaving remains for a later brief, as instructed.
+
+Brief28ab was completed above: C02 public and P02 description correction saved/read back. Combined retry totals:16 new public uploads, one description correction and six playlist readbacks. Brief124 remains at its research-stage stop because the owner has no Google AI Studio key. No new speech, renders, commits or pushes.
+
+### Briefs 129 and 130: hand-in (1 November 2026)
+
+Brief 129 complete, including the d01 addendum. `checks/codex-build-129.md` documents the component APIs, mathematical checks and limitations. The reusable kit supports parameter animation and ghost curves, carried squash/slide/stretch/mirror transforms, same-axis gradient dots and labelled tangent triangles alongside the calculus components. Silent pilot: `out/explainer/maths-calculus-kit-pilot/maths-calculus-kit-pilot.mp4`, 72 seconds, 2160 frames at 30 fps, 1920 x 1080, no audio, full decode passed. All 32 desktop/phone-landscape stills and input hashes refreshed. Scoped TypeScript and 11,424 numerical assertions pass. Root independently inspected the transform formulas and a phone mirror still. Shared render lock, temporary bundle and owned browser cleaned up. Claude's exact playback review remains pending; stills and code checks do not establish motion approval.
+
+Brief 130 complete. Reports: `checks/m-a12d01-learning-review.md`, `checks/m-a12d01-claude-science-check.md`, `checks/codex-check-130.md`. Maths has 0 blockers and 3 unique should-fix findings: slide/derivative wording, horizontal-scale scope, and negative-a positivity scope. Learning review reports 2 overlapping should-fix findings. Official 2024 maths source HTML was freshly checked against both codenames. All worked values and answers recalculated; CAS unavailable, hand derivation and numerical checks recorded honestly. Chemistry has one contradictory author-note destination for moved-out content; Biology has one stale hook cue. Neither has a new learner-science error. Site log `site-corrections-maths-a12.md` adds the cooling qualification and notation suggestion without duplicating the existing factorisation finding. Claude owns design repairs. No lesson designs, narration, commits or pushes changed.
+
+### Briefs 28ab and 28ac: expanded twenty-video hand-in (1 November 2026)
+
+Browser connection worked. Brief 28ab was already complete: C02 https://youtu.be/C12nlyE-8zY reverified saved Public, v2, HD complete and no notices. Biology M7 P02 correction reverified saved verbatim. No duplicate upload or unnecessary edit.
+
+Brief 28ac now has all 20 videos Public. Preserved the prior 15 and published the five additions:
+- chem-m8-p02: https://youtu.be/6b3_H8Cawfg
+- chem-m8-g01: https://youtu.be/RtYZC9fRdVI
+- bio-m8-b03: https://youtu.be/KkEiSSPJEDU
+- bio-m8-b04: https://youtu.be/N5F5wZIZQXY
+- bio-m8-b05: https://youtu.be/kWLPJqEJTvg
+
+All five exact MP4 hashes passed. Title/description and cumulative English (Australia) captions entered; Education, not Made for Kids, AI disclosure Yes, HD complete and notices none verified. Generated thumbnail 2 inspected for each. No end screen because final notes occupy the frame. Root independently checked all five chapter lists against cumulative playback scene starts, total timeline frames and small input hashes. P02 and G01 use the playback timeline including interior quiet holds. Evidence: `youtube/wave6-last5-root-check.json`.
+
+Final Module8 Chemistry Public/Manual playlist has six entries in C01,C02,P02,G01,C03a,C03b order. Biology Public/Manual has five entries B01,B02,B03,B04,B05, reloaded after B05 publication. Prior15 verified through live playlists: Module7 Chemistry28, Biology18, Skills8 with S06 sixth and S08 eighth, and the existing M8 entries. Final readbacks: `youtube/brief28ac-m8-chem-final-readback.json`, `youtube/brief28ac-m8-bio-final-readback.json`, `youtube/brief28ac-existing-playlists-recheck.json`. `youtube/wave6-uploads.json` now has20 distinct Public records and no pending videos. Draft/progress: `youtube/wave6-last5-metadata-draft.json`, `youtube/wave6-last5-progress.json`.
+
+No speech, lesson design edits, commits or pushes. Optional disk cleanup skipped because the user's deletion instruction was cut off.

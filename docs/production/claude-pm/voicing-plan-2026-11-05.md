@@ -14,6 +14,8 @@ Voice in playlist order, earliest lesson first in each module, alternating betwe
 | # | Lesson | Credits (approx.) | Gate before voicing |
 |---|---|---|---|
 | 1 | bio-m8-g03 (11 remaining scenes) | 4,300 | None: ready now |
+| 1a | bio-m8-p01 (fills the gap between public B02 and B03) | 5,800 | None: ready now (Revision 3) |
+| 1b | chem-m5-g02 (fills a Module 5 gap) | 6,000 | None: ready now (Revision 7) |
 | 2 | bio-m8-p02 | 5,900 | Brief 122 clean |
 | 3 | chem-m8-p03 | 6,300 | Brief 122 clean |
 | 4 | bio-m8-b06 | 5,700 | Brief 122 clean |
@@ -30,14 +32,13 @@ Voice in playlist order, earliest lesson first in each module, alternating betwe
 | 15 | chem-m8-c08 | 6,000 | Brief 122 clean |
 | 16 | bio-m8-g01 | 5,800 | Brief 122 clean |
 | 17 | chem-m8-p05 | 6,200 | Brief 122 clean |
-| 18 | bio-m8-b12 | 6,000 | Brief 122 clean |
-| 19 | chem-m8-c09 | 6,200 | Brief 122: bromomethane spectrum verified |
 
-The total is about 111,000 credits, which leaves about 9,000 spare for any short resolver edits that change narration. If a lesson is still held on 5 November, take the next ready one from Cycle 2 instead.
+Updated 1 Nov: bio-m8-p01 and chem-m5-g02 were added at 1a and 1b, and bio-m8-b12 and chem-m8-c09 moved to Cycle 2. The total is still about 111,000 credits, which leaves about 9,000 spare for any short resolver edits that change narration. If a lesson is still held on 5 November, take the next ready one from Cycle 2 instead.
 
 ## Cycle 2: December refresh (or a top-up)
 
 The remaining Module 8 lessons, in this order:
+- bio-m8-b12 and chem-m8-c09 (moved from Cycle 1 on 1 Nov);
 - bio-m8-b13;
 - chem-m8-c10, chem-m8-c11a and chem-m8-c11b (recording hold: measured spectra);
 - bio-m8-b16;
@@ -46,12 +47,11 @@ The remaining Module 8 lessons, in this order:
 - bio-m8-g02.
 
 Then the lessons held for the owner, or not yet designed:
-- bio-m8-b14, bio-m8-b15 and bio-m8-b17 (cultural holds);
+- bio-m8-b15 and bio-m8-b17 (cultural holds; bio-m8-b14 has no cultural content and is ready, after bio-m8-b13 above);
 - bio-m6-b20 (cultural decision; otherwise ready);
 - chem-m5-c12 (cultural review);
 - bio-m7-g02 (held);
-- chem-m5-g02 (being reworked into the current format);
-- bio-m8-p01 (being designed).
+- chem-m5-g02b (not yet designed).
 
 These total about 105,000 credits.
 

@@ -1,0 +1,31 @@
+{
+  "brief": "28ab",
+  "date": "2026-10-31",
+  "inputHashes": "All four C02 hashes rechecked and match brief28ab-preflight.json: MP4, cumulative captions, design, measured lesson.",
+  "connection": {
+    "nativeApps": "Inventory works; Chrome reports running with no targetable windows.",
+    "browserInventory": [],
+    "browserError": "The browser access host is unavailable",
+    "chromeLaunchResult": "Computer Use was not approved to use Google Chrome"
+  },
+  "c02UploadApplied": false,
+  "p02DescriptionChanged": false,
+  "playlistReadback": null,
+  "blocker": "Automatic approval review rejected opening Google Chrome. Browser host is unavailable. Prepared metadata is preserved; no live change or readback claimed.",
+  "continuations": [
+    {
+      "date": "2026-11-01",
+      "inputHashes": "All four prepared hashes rechecked and matched.",
+      "connection": {
+        "browserInventory": [],
+        "browserError": "The browser access host is unavailable",
+        "nativeChromeWindowAvailable": true,
+        "nativeChromeBindResult": "Computer Use has been stopped for this turn because it could not determine the current browser URL on Windows with enough confidence to enforce policy. Stop your work and send a final message noting why Computer Use ended."
+      },
+      "c02UploadApplied": false,
+      "p02DescriptionChanged": false,
+      "playlistReadback": null,
+      "blocker": "Computer Use stopped because it could not determine the current browser URL confidently enough to enforce policy. No further UI actions attempted."
+    }
+  ]
+}

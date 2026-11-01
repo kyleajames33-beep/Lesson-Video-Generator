@@ -14,7 +14,7 @@ export const GREY = '#9a948a', GREY_INK = '#6f695f', GREY_FILL = '#eceae4';
 export const CARD = '#fffefb';
 export const RULE = '#cfdff0', MARGIN = '#ecb7b0';
 export const CAUSE = '#dcebf8', CAUSE_EDGE = '#6f9bc8';
-export const SUBJECT_COLOUR: Record<'Chemistry' | 'Biology', string> = {Chemistry: '#0d6b52', Biology: '#1f6fb2'};
+export const SUBJECT_COLOUR: Record<'Chemistry' | 'Biology' | 'Mathematics Advanced', string> = {Chemistry: '#0d6b52', Biology: '#1f6fb2', 'Mathematics Advanced': '#8a5a12'};
 /** Eyebrow accent for the shared series (neither subject colour). */
 export const SKILLS_ACCENT = '#8a5a12';
 

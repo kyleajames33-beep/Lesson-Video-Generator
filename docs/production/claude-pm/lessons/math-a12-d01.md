@@ -1,6 +1,8 @@
 # Maths A12 D01: How does the derivative change when an exponential is scaled or shifted? Squashing, sliding and stretching e^x, and the chain rule proof (design)
 
-Status: Revision 1 (1 Nov): needs learning review (`../../student-learning-review.md`) and maths check (Codex); then a Codex error check. Voicing is gated by the brief 124 Google voice pilot, and the build is gated by the brief 129 kit (FunctionGraph, SecantToTangent, DerivativeTracer, AlignedAlgebra extensions).
+Status: Revision 2 (1 Nov): brief 130 learning review and maths check resolved (0 blockers; slide wording now "a slide adds no derivative factor" and keeps slope at the moved point; key notes 2 and 5 scoped for a ≠ 0, |a| < 1 and negative a). Narration 6,350 characters, about 570 s. Needs a Codex error check before voicing (Google voice, after the brief 124 pilot).
+
+Earlier status, Revision 1 (1 Nov): needs learning review (`../../student-learning-review.md`) and maths check (Codex); then a Codex error check. Voicing is gated by the brief 124 Google voice pilot, and the build is gated by the brief 129 kit (FunctionGraph, SecantToTangent, DerivativeTracer, AlignedAlgebra extensions).
 
 Narration 6,332 characters (Revision 1), 16 scenes, about 9.5 minutes (569 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
@@ -57,7 +59,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (e) Adding a constant (e^(2x) + 5) uses the Year 11 sum rule and is met in d06 (mixed composites). It is not in this video because the syllabus point is ke^(ax) and e^(ax+b), and it would break the "gradient compares with height" idea of scene 5 (note b). Root may add one sentence if the learning review asks (Open decisions).
   (f) Pronunciations: "e to the two x"; "f prime"; "d y by d u"; "a half" for 1/2. The letter e is said as the letter, never as "exp". The constant a must be said as the letter name ("ay") everywhere it is a constant ("a x plus b", "multiply by k and a", "a is two", "a equals two", "a is the speed"), never as the article "uh". The brief 124 pilot must test this; if the voice reads it as the article, use a per-word pronunciation override and keep the caption text "a" (Open decisions).
 
-Main question: *Squash e^x sideways and its derivative gains a factor. Slide it sideways and its derivative stays the same, even though the slid curve can be steeper. Why, and how do you differentiate k e^(ax+b)?*
+Main question: *Squash e^x sideways and its derivative gains a factor. Slide it sideways and there is no extra derivative factor, even though the slid curve can be steeper. Why, and how do you differentiate k e^(ax+b)?*
 Entry knowledge (Year 11, `ciac4383bd`, `ci00fa8fac`, `cif6a6cb7d`, `ci98f43d14`): e^x is its own derivative; the chain rule; the constant multiple rule; graphs of exponentials; gradient as the slope of the tangent.
 Stops after: explaining with the graph why the factor a appears and why b adds nothing; proving d/dx(e^(ax+b)) = ae^(ax+b) with the chain rule; differentiating k e^(ax+b) and finding a gradient at a point; using the sign of a to decide whether the curve rises or falls. No general bases, products or quotients.
 Handoff: 2^x written as e to some multiple of x (route math-a12-d02).
@@ -69,7 +71,7 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 ### 1. hook (squash or slide?)
 > Here's the curve y equals e to the x. Squash it sideways, and you get y equals e to the two x. Or slide it one unit left, and you get y equals e to the x plus one. At x equals zero, which new curve do you think is **steeper**? Hold on to your guess. Here's the twist. Only one of them puts a new factor into its derivative, and it might not be the one you'd pick. By the end, you'll know why, and how to differentiate k e to the a x plus **b**.
 
-Visual: heading writes on: "Squash it or slide it: what happens to the derivative?". `FunctionGraph` draws axes (x from −2 to 2, y from 0 to 8) and y = eˣ draws on left to right in ink, label "y = eˣ". On "squash" a blue copy morphs sideways toward the y-axis into y = e²ˣ (label writes); it fades to a thin blue line. On "slide" a second copy (teal) translates one unit left into y = e^(x+1) (label writes). On "steeper" a vertical dashed line draws at x = 0 and two small hollow rings mark (0, 1) on e²ˣ and (0, e) on e^(x+1), each with a "?" chip. No gradient numbers yet. On "twist" the two labels pulse once each. On "b" the curves fade to ghosts and a dim chip writes at the right: "y = k e^(ax+b)", with k, a and b in amber. Two question chips stay dim at the right edge: "steeper at x = 0?" and "which derivative changes?".
+Visual: heading writes on: "Squash it or slide it: what happens to the derivative?". `FunctionGraph` draws axes (x from −2 to 2, y from 0 to 8) and y = eˣ draws on left to right in ink, label "y = eˣ". On "squash" a blue copy morphs sideways toward the y-axis into y = e²ˣ (label writes); it fades to a thin blue line. On "slide" a second copy (teal) translates one unit left into y = e^(x+1) (label writes). On "steeper" a vertical dashed line draws at x = 0 and two small hollow rings mark (0, 1) on e²ˣ and (0, e) on e^(x+1), each with a "?" chip. No gradient numbers yet. On "twist" the two labels pulse once each. On "b" the curves fade to ghosts and a dim chip writes at the right: "y = k e^(ax+b)", with k, a and b in amber. Two question chips stay dim at the right edge: "steeper at x = 0?" and "which gains a derivative factor?".
 
 ### 2. recall: gradient equals height
 > Two quick reminders. The gradient at a point is the slope of the tangent there, the line the secants settle onto as the second point slides **in**. And e to the x is its own derivative. On the graph, that means at every point, the gradient equals the height, the y value. Where the curve is one unit high, the tangent's slope is **one**. Where it's about two point seven high, the slope is about two point **seven**. Height and gradient always match, and that's our measuring stick.
@@ -119,7 +121,7 @@ Visual: board clears to a calculation layout: task strip "Differentiate"; equati
 Visual: calculation board sets up at the top: task strip "Find f′(−3)"; equation strip "f(x) = 5e^(2x+6)"; givens group (navy), each written on its spoken word ("five", "two", then the first bold "six"): "k = 5", "a = 2", "b = 6", each with a small leader to its place in the equation (k under the 5, a under the 2, b under the 6). `AlignedAlgebra` rows, one at a time: on "a" (in "multiply by k and a") the k and a givens glow; row 1 "f′(x) = 5 × 2 × e^(2x+6)"; on the second "six" row 2 "= 10e^(2x+6)" (bright; inner slot kept). Row 1 dims. On "minus three" row 3 "f′(−3) = 10e^(2(−3)+6)"; on "one" the power ticks "2(−3) + 6 = 0" and row 4 "= 10e⁰ = 10 × 1"; on "ten" row 5 "= 10" (bright). Rows 2 to 4 dim; row 2 and the answer stay. On "graph" a small `FunctionGraph` (x from −4.5 to −2, y from 0 to 12, curve clipped at the top) draws y = 5e^(2x+6) with the point (−3, 5), tangent and triangle (run ½, rise 5); readouts 5.00 and 10.00; on "predicts" the ratio chip "gradient = 2 × height" writes and the "a = 2" given glows.
 
 ### 10. memory aid
-> Here's one way to remember it. Think of the power, a x plus b, as the playback speed of the curve. a is the speed. Play it twice as fast, and the curve rises twice as fast at every height. Play it backwards, and it falls instead. b just starts the playback at a different point, so no rate changes. And k makes the whole picture bigger, so heights and slopes grow **together**. In short, copy the exponential, then multiply by k and by **a**.
+> Here's one way to remember it. Think of the power, a x plus b, as the playback speed of the curve. a is the speed. Play it twice as fast, and the curve rises twice as fast at every height. Play it backwards, and it falls instead. b just starts the playback at a different point, so it adds no rate factor. And k makes the whole picture bigger, so heights and slopes grow **together**. In short, copy the exponential, then multiply by k and by **a**.
 
 Visual: board clears. The thumbnail of e^x returns with a coded speed badge beside it (a rounded chip, "×1"). On "twice" the badge reads "×2" and the curve morphs to e²ˣ (the scene 3 morph, replayed fast). On "backwards" the badge reads "×(−1)" and the curve mirrors to e^(−x). On "different point" the badge stays and the curve slides (scene 5 replay, short). On "together" the curve stretches up (scene 6 replay, short). On "a" the handwritten line writes large: "Copy the exponential, then multiply by k and a." Under it, smaller: "d/dx(k e^(ax+b)) = k·a·e^(ax+b)". Hold about 2 seconds.
 
@@ -144,7 +146,7 @@ Visual: `QuestionCard`, worded as printed: "A curve has equation y = 3e^(−2x).
 Visual: card shrinks to the top. On "x" "−2x" in the card is underlined; row "dy/dx = 3 × (−2) × e^(−2x) = −6e^(−2x)" (bright). On "six" "x = 0" underlined; row "at x = 0: −6e⁰ = −6" (bright). On "positive" a chip writes "e^(−2x) > 0 for every x" and "(−6) × (positive) < 0" beside it; "for all real values of x" is underlined. On "decreasing" a small `FunctionGraph` thumbnail draws y = 3e^(−2x) falling, staying above the x-axis. On "does" a chip "decreasing because y < 0" fades in and is crossed (caption "y > 0; the minus comes from a = −2"). Hold about 1 second.
 
 ### 15. handoff
-> So squashing by a multiplies every slope by a, sliding changes nothing, and k scales everything. **Next**: what about two to the x? Two to the x is secretly e to some number times x. Find that number, and you can differentiate it the same way.
+> So horizontal scaling multiplies slopes by a, a slide adds no factor, and k multiplies heights and slopes. **Next**: what about two to the x? Two to the x is secretly e to some number times x. Find that number, and you can differentiate it the same way.
 
 Visual: board clears. The memory line from scene 10 returns small at the top. On "Next" a blue curve y = 2ˣ draws beside the ghost of eˣ (same window), with a chip "2ˣ = e^(? · x)" in which the "?" sits in an amber inner slot; chip "Next: differentiating aˣ". Hold about 2 seconds.
 
@@ -153,10 +155,10 @@ Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. d/dx(e^(ax+b)) = ae^(ax+b), and d/dx(k e^(ax+b)) = k·a·e^(ax+b). Copy the exponential, then multiply by k and a.
-2. Why: x → ax squashes the curve sideways (mirrors it too if a < 0), so every slope is multiplied by a. +b slides it sideways: slopes unchanged. k stretches heights and slopes together. So for y = k e^(ax+b), gradient = a × height.
+2. Why: for a ≠ 0, the horizontal scale is 1/|a|, with a mirror if a < 0; slopes multiply by a. +b slides it sideways: slopes unchanged. k stretches heights and slopes together. So for y = k e^(ax+b), gradient = a × height.
 3. Proof: let u = ax + b, so du/dx = a. dy/dx = dy/du × du/dx = eᵘ × a = ae^(ax+b).
 4. Example: f(x) = 5e^(2x+6) gives f′(x) = 10e^(2x+6), and f′(−3) = 10e⁰ = 10.
-5. Traps: not 3x·e^(3x−1) (the power rule needs x in the base). e to any power is positive; a negative a makes the gradient negative, not the curve.
+5. Traps: not 3x·e^(3x−1) (the power rule needs x in the base). e to any power is positive; for y = e^(ax+b), negative a makes the gradient negative while y stays positive.
 
 Memory aid (large, on the notes screen): *Copy the exponential, then multiply by k and a.* Second line: *a is the playback speed: it changes the slopes; b only changes the start.*
 
@@ -271,7 +273,7 @@ Title: Differentiating k e^(ax+b): Why Squashing e^x Changes the Derivative | Ye
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-advanced/year12/differential-calculus/lesson01.sa.html
 
-Squash the curve y = e^x sideways and its derivative gains a factor. Slide it sideways and the derivative stays the same, even though the slid curve can be steeper. See why on the graph, using tangent triangles: the factor a changes how the gradient compares with the height, b only slides the curve, and k scales heights and slopes together. Then prove d/dx(e^(ax+b)) = ae^(ax+b) with the chain rule, and differentiate k e^(ax+b). Two exam-style questions at the end.
+Squash the curve y = e^x sideways and its derivative gains a factor. Slide it sideways and there is no extra derivative factor, even though the slid curve can be steeper. See why on the graph, using tangent triangles: the factor a changes how the gradient compares with the height, b only slides the curve, and k scales heights and slopes together. Then prove d/dx(e^(ax+b)) = ae^(ax+b) with the chain rule, and differentiate k e^(ax+b). Two exam-style questions at the end.
 
 Mathematics Advanced 11-12 (2024 syllabus), Year 12, differential calculus.
 Syllabus content (NSW Mathematics Advanced 11-12, 2024):

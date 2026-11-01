@@ -14,7 +14,7 @@ import {AMBER, AMBER_INK, CARD, GREEN, GREY_FILL, GREY_INK, HI, INK, INK_SOFT, P
 export type QText = {text: string; at?: number; align?: 'left' | 'center'; marks?: string; marksAt?: number; gap?: number; weight?: number; label?: string};
 export type QTable = {table: {head: string[]; rows: string[][]; colW: number[]}; at?: number; gap?: number};
 export type QItem = QText | QTable;
-export type Subject = 'Chemistry' | 'Biology';
+export type Subject = 'Chemistry' | 'Biology' | 'Mathematics Advanced';
 export type CardSpec = {x: number; y: number; w: number; subject: Subject; items: QItem[]; size?: number; slotW?: number; pad?: number; note?: string};
 export type GWord = {t: string; ax: number; ay: number; w: number; line: number; item: number; bold?: boolean};
 const HEADER = 62;
@@ -191,7 +191,8 @@ export const QuestionCard: React.FC<{spec: CardSpec; at: number; out?: number; a
 	const dimOf = (item: number) => dims.reduce((acc, d) => (d.items.includes(item) ? acc * (1 - (1 - (d.to ?? 0.28)) * vis(f, d.at, d.out, 12)) : acc), 1);
 	const itemAt = (i: number) => spec.items[i].at ?? at + 6;
 	const spansOf = (a: Ann) => (a.kind === 'marks' ? [] : cardSpans(g, a.phrase, a.occ ?? 1, a.item));
-	const badgeW = measure(spec.subject.toUpperCase(), 21, false, 800) + 34;
+	const badgeText = spec.subject === 'Mathematics Advanced' ? 'MATHS ADVANCED' : spec.subject.toUpperCase();
+	const badgeW = measure(badgeText, 21, false, 800) + 34;
 	const tagText = 'HSC-style question, written for HSCScience';
 	const tagW = measure(tagText, 25, true, 700) + 40;
 	// word index within its item, for the write-on stagger
@@ -201,7 +202,7 @@ export const QuestionCard: React.FC<{spec: CardSpec; at: number; out?: number; a
 			<rect x={g.x + 4} y={g.y + 8} width={g.w} height={g.h} rx={14} fill="rgba(60,45,20,0.08)" />
 			<rect x={g.x} y={g.y} width={g.w} height={g.h} rx={14} fill={CARD} stroke="rgba(60,45,20,0.24)" strokeWidth={2.5} />
 			<rect x={g.x + 26} y={g.y + 18} width={badgeW} height={34} rx={8} fill={col} />
-			<T x={g.x + 26 + badgeW / 2} y={g.y + 42} text={spec.subject.toUpperCase()} size={21} color="#fffdf8" anchor="middle" weight={800} />
+			<T x={g.x + 26 + badgeW / 2} y={g.y + 42} text={badgeText} size={21} color="#fffdf8" anchor="middle" weight={800} />
 			{spec.note ? (
 				<g>
 					<rect x={g.x + 40 + badgeW} y={g.y + 18} width={measure(spec.note, 21, false, 600) + 28} height={34} rx={8} fill={GREY_FILL} />

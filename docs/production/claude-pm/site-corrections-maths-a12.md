@@ -325,3 +325,22 @@ The total profit generated between the break-even points is $\int_{10}^{50}[R(x)
 ## Route/source overlap, not a content error
 
 Integral L01 (`reverse-differentiation`, `apply-the-power-rule`) and L04 both introduce primitives and reverse differentiation. Treat one as the introduction and the other as a bridge/revision source; do not duplicate both as distinct first videos. Exact point mapping and outgoing/optional content flags are in the crosswalk.
+
+
+## 21. differential-calculus/lesson01.sa.html: derive, cooling example (brief 130)
+
+**Exact old text:** “This underpins radioactive decay ($k < 0$), compound interest, bacterial growth, and Newton's law of cooling, all solved by differentiating $e^{kx}$.”
+
+**Correction:** For Newton cooling, the temperature difference from the surroundings follows Ce^(-kt). Absolute temperature is T_env+Ce^(-kt).
+
+**Reason:** The preceding dy/dx=ky and y=Ce^(kx) require y to mean the difference from ambient in the cooling example. The site leaves that change of variable unstated.
+
+**Verified file:** `C:/Users/kygs/hscscience/subjects/maths-advanced/year12/differential-calculus/lesson01.sa.html`, derive section, line 402. HTML encodes the less-than sign as `&lt;`.
+
+**Source:** [OpenStax, Newton cooling](https://openstax.org/books/calculus-volume-2/pages/2-8-exponential-growth-and-decay).
+
+## Notation and teaching note, not a mathematical error (brief 130)
+
+Read-only lesson01, orient, line 311: `$\dfrac{d}{dx}(e^{kx}) = ke^{kx}$, the constant $k$ comes down in front. Worth memorising.` This formula is correct. To match 2024 ci8306d30a's letters, use a as the coefficient of x and reserve k for the outer multiple. Prefer “multiply by the coefficient of x” to “comes down”, which can cue a mistaken power-rule operation. [Official content](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480).
+
+The design's third site finding is thus confirmed as a notation/teaching suggestion only. Its factorisation finding is already item 9 and was not duplicated. No site HTML was changed.
