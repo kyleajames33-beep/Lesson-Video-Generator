@@ -1,0 +1,280 @@
+# FA1-V31 (Biology, Year 11): How important is each process in cell division? Switch one off and see what fails (design)
+
+Status: Revision 1 (2 Nov). Written by Claude (designer) from the route, the root decisions for v01 to v18, the two L25 pre-design packs, the full site page (L25, read as text), the site memory hooks (entry l25), the FA2 L01 pre-design pack (for the handoff) and the v07 assess scene. Needs independent student learning review (review key **y11b-v31**), then a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+
+Narration 5,276 characters (Revision 1; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 518 s (8.6 minutes) including holds, one 3 s prediction countdown, two 10 s countdowns and the notes hold. Under the 5,500 floor: the content fills this length and was not padded (Open decision 4). Nothing recorded; human listening pending.
+
+## Decisions
+
+- **File name and route id.** Route entry **bio-y11-fa1-v31** in `docs/production/y11-bio-fa1-video-route.json`: "How important is each process in cell division?", playlist order 31, syllabus action B25-FA1-G4-10, site lesson L25 (all five learn sections; examples we-bio2025-y11-fa1-l25-b1 and -b2). Main learner question (route): "Which of DNA replication, mitosis, meiosis and cytokinesis matters most, or is each essential for a different reason?" Start: "Start with the evaluation demand: listing is not evaluating. Set criteria (what each process contributes, and what fails without it)." Stop: "Stop when students can evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis using growth and repair (healing skin) and reproduction (gametes) as the two focused cases, and reach a justified judgement. Recall each mechanism in one line; do not re-teach phases." Next (route): "FA2 opening video (route pending): from single cells to levels of cellular organisation." Lesson key **y11fa1v31**, production label FA1-V31. Pre-design packs `../pre-design/y11-bio/fa1-l25-division-growth-repair.md` and `fa1-l25-division-reproduction.md`; site page `C:/Users/kygs/hscscience/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson25.sa.html` (read in full as text, 2 Nov, read-only).
+- **Templates.** `bio-y11-fa1-v16.md` (structure and voice); `bio-y11-fa1-v07.md` scene 12, "writing the assessment" (the three-step answer frame and `AssessBalance`), mirrored in scene 10; series root decisions 5, 7, 10, 15 and 16 applied.
+- **Opening (root decision 16).** v31 opens on v30's actual final frame (`bio-y11-fa1-v30.md`, scene 13): the small summary board with its three step chips at the left, four process chips in a row at the right with thumbnails ("DNA replication" `cd-nucleus-zoom-breaking-v1.png`, "mitosis" `cd-daughters-v1.png`, "meiosis" `cd-four-cells-crossover-v1.png`, "cytokinesis" `cd-cytokinesis-v1.png`) under a faint balance outline with a terracotta "?", the stage strip and the Next chip "Next: How important is each process in cell division?". Scene 1 starts on that frame: the summary board and stage strip fade, the Next chip becomes this video's heading, and the four process chips move to the centre; the faint balance stays.
+- **Handoff (route: pending; root approval).** The route's v31 handoff stays "FA2 opening video (route pending)" (rootApproval item 4). This design hands off to the FA2 L01 pre-design pack's video (`../pre-design/y11-bio/fa2-l01-levels-of-cellular-organisation.md`): learner question "What did multicellular life trade away to become big?", content point B25-FA2-G1-01 (unicellular, colonial and multicellular cells). The Next chip uses that question; root confirms the FA2 route title when it is written (Open decision 1).
+- **Scope (start: listing is not evaluating, criteria; stop: a justified judgement across the four processes from two cases).** In order: the switch-off thought experiment (1, opening on v30's four process chips); what evaluating needs: criteria and levels (2); case one, healing a graze: what three processes contribute (3); switching each off, with a prediction (4); meiosis plays no part in healing (5); case two, making gametes: what each contributes and what fails without meiosis (6); the twist: the processes depend on each other (7); accuracy matters too: replication errors (8); importance depends on level, with the banana evidence (9); writing the evaluation (10); two unseen items (11a to 11d); decision rule and handoff (12); key notes (13).
+- **What this video does not teach.** No phase is re-taught: each mechanism gets one line (3, 6). Cancer and cell cycle control beyond one clause (Year 12 non-infectious disease, route later home; scene 4 gives "cells can pile up into a tumour" in one clause). Asexual and sexual reproduction in detail (Year 12). Proofreading enzymes, semi-conservative replication (v23 and v24; recalled in one clause, "the copy is checked"). Non-disjunction. Binary fission in bacteria (not mitosis; Decisions, site error 2).
+- **Syllabus (2025, `docs/production/programme/syllabus/bio-new-y11.json`).** B25-FA1-G4-10: "Evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis in cell division". "Evaluate" (make a judgement based on criteria; determine the value of) is carried by the criteria (2), the evidence from two cases with switch-off tests (3 to 7), the accuracy and level arguments (8, 9), the three-step answer with a model verdict (10) and item 11c.
+- **One main question (route):** *Which of DNA replication, mitosis, meiosis and cytokinesis matters most, or is each essential for a different reason?* Heading on screen: "How important is each process in cell division?" Answered as a judgement: all four are essential but not in the same way; replication has the strongest claim for the cell, meiosis for the species (10).
+- **Case and surprise.** The site's own hook, as a thought experiment: switch off one process; which loss hurts most? (1). The switch-off is then run on screen for each process in each case (4, 6), which is the evidence the criterion asks for. Surprises: meiosis plays no part in healing at all (prediction in 4, answered in 5); mitosis still matters in the gamete case (7); you could live a healthy life without meiosis, but a species of clones is fragile (9, with Cavendish bananas and TR4, a current Australian case).
+- **The verdict this video models.** Faithful to the site's full-mark answer, with one correction: the site says meiosis "is the only one of the four that generates anything new". New alleles arise from replication errors (mutations), which the same page says "become permanent mutations inherited by every descendant cell". The video says: replication's mistakes are where new alleles first come from (8), and meiosis is the only process that reshuffles alleles into new combinations every generation (10). Logged as site error 1.
+- **Split decision.** One video.
+- **Site alignment.** Kept in substance and order: the hook (1); the warm-up's two cases, a cut that heals and gametes for a baby (3 to 7; the cut becomes a graze on the existing plate); the misconception "To evaluate ... you just list what each one does" (1, 2, 11d); card 1: replication "produces an exact copy ... so every new cell receives a complete and accurate set of instructions", mitosis for "growth ... repair and replacement ... asexual reproduction", "If mitosis loses control, the result can be cancer; if it stops, wounds cannot heal" (3, 4); card 2: meiosis halves and makes variation, "the raw material for evolution by natural selection"; cytokinesis "physically complete[s] every cell division ... without it, mitosis and meiosis would leave multiple nuclei in one cell" (4, 6); card 3: "DNA replication must happen first ...; cytokinesis completes both kinds of division; mitosis maintains the organism while meiosis renews the species" (7); the worked answer's criterion, "by what would be lost if it failed ... the cell, the organism or the species" (2), "replication ... matters both for the existence of the copy and for its fidelity" (8), "Meiosis is important on a different level: it is not required for an individual to grow, repair itself or survive" (9) and the verdict "All four are essential, but not equally and not in the same way" (10); the site's l25 memory hook (12); the match activity's failure consequences (4, 11a). The site's Discuss item (uncontrolled mitosis and failed halving) is not used; its two failures appear in one clause each (4, 6).
+- **Site errors found (this read).** Root to add to `../site-corrections-bio-y11.md` after confirmation.
+  1. L25 worked answer step 7 and the full-mark answer: meiosis "is the only one of the four that generates anything new". New alleles arise from DNA replication errors (mutations), as the same answer states in step 3. Proposed: "meiosis is the only one of the four that creates new combinations of alleles in every generation; new alleles themselves arise from copying errors".
+  2. L25 vocabulary: "Asexual reproduction: Producing offspring from one parent by mitosis". Prokaryotes reproduce asexually by binary fission, which is not mitosis. Proposed: "Producing genetically identical offspring from one parent (by mitosis in eukaryotes)".
+  3. L25 worked answer step 3: "Without it a cell could still divide, but each daughter would receive roughly half a genome". Cell cycle checkpoints normally stop a cell dividing before replication is complete (taught in v27), so this is a hypothetical stated as a likely outcome. Proposed: "Without it, checkpoints would stop the cell dividing; if it divided anyway, each daughter would lack much of its genetic information".
+  4. L25 card 3: "Removing any one would be fatal to growth, accuracy, or reproduction." Losing meiosis is not fatal to an individual, as step 5 of the same page says. Minor wording; proposed: "Removing any one would stop growth, accuracy or sexual reproduction."
+- **Added beyond the site (flagged for the learning review).** (a) The on-screen switch-off of each process in each case (Claude's). (b) The prediction "which process plays no part in healing?" (4). (c) "You could live a long, healthy life without a single one of your cells doing meiosis" (9; true: gamete production is not needed for survival). (d) Cavendish bananas and TR4 (9; reuses the Module 5 B1 plate; current Australian case, Northern Territory and Queensland). (e) The cytokinesis-blocking drug item (11a; based on real cytokinesis inhibitors such as cytochalasin B, which give binucleate cells; the drug is not named).
+- **Entry knowledge.** From v23: DNA replication makes two identical copies (and v24's models). From v27: G1, S, G2, mitosis and checkpoints; cytokinesis at the end. From v28: mitosis gives two identical daughter cells; cytokinesis. From v29: meiosis, one copy, two divisions, four haploid cells. From v30: crossing over, independent assortment, random segregation; variation; natural selection named. From v26: somatic and gametic cells; the doubling problem. From v07: "assess" answers with a criterion, evidence and a judgement. Not assumed: "evaluate" as a verb (scene 2), level (cell, body, species), clone (scene 9).
+- **Recall, not re-teach.** One line each: replication (3, "copies every chromosome first"), mitosis (3, "shares the copies, so each new nucleus gets one complete, identical set"), cytokinesis (3, "splits the cytoplasm, so there are two separate cells"), meiosis (6, "halves the number, and crossing over, independent assortment and random segregation make every gamete different"). Checkpoints (4, one clause).
+- **Terms: meaning before or with the name.** Evaluate (2, "weigh things up and reach a judgement"); criterion (2, "a question you judge each process by"); level (2, "who loses: a single cell, the whole body, or the species"); tumour (4, one clause, "cells pile up"); mutation (8, "a copying mistake that isn't fixed"); clone (9, "genetically identical copies"); verdict (10, screen only, "judgement"). Screen only: "binucleate" (grey tag in 4 and 11b, beside "two nuclei").
+- **Visual system.** (1) The **process chips**: four chips with thumbnails from v30's final frame, the anchor of the whole video; each can grey out ("switched off") and relight. (2) The **case plates**: case one, `b5a-skin-graze-v1.png` and `b5a-skin-healed-v1.png` (a matched pair, cross-fading as cells fill the graze); case two, the brief 88 meiosis plates (`cd-m1-prophase`, `cd-four-cells-crossover`) and `b3a-sperm-v1.png` and `b3a-egg-v1.png`. (3) The **evidence grid**: a coded table filling at the right, rows the four processes, columns "healing a graze" and "making gametes", each cell taking a short "contributes / without it" entry and a tick or a dash (4 to 7). (4) The **level bar**: three stacked bands "cell", "body", "species" beside the grid (2, 9, 10). (5) The **balance**: v07's `AssessBalance`, here with four chip slots, for the verdict (10). (6) The **answer frame** (10): v07's three-step frame. Painted: the skin pair, the cell plates, the gametes, a new binucleate cell plate and the banana plantation. At most three bright text items at once. No people, no hands, no faces, no body outlines.
+- **Predictions (root decision 7).** Scene 4 ends "which process plays no part in healing at all?" with a 3 s countdown ring (answered at the start of 5). Only one in-teaching prediction: the rest of the video is weighing evidence, and the switch-off tests themselves ask the student to anticipate each failure as it is shown.
+- **Attempt (two unseen, exam-worded items).** 11a: a drug blocks cytokinesis but not mitosis in dividing skin cells: predict and explain (applies the switch-off criterion to one process). 11c: evaluate the importance of mitosis and meiosis to an individual and to its species (a short evaluate item using the level criterion). Each ends "Pause here to answer." with a 10 s countdown; the card stays during and after it. Feedback is brief, with givens underlined and one crossed-out classic mistake. 11d runs about 30 s, the top of the range, because an evaluate answer needs both levels and a judgement (Open decision 3).
+- **Memory aids.** The site's l25 hook, "Evaluate means weigh, then decide. A list is not a judgement." (12, after the answer frame has been used). "Mitosis maintains the body; meiosis makes the next generation" (7; the site's card 3 wording, simplified). Assumptions checked below.
+- **A mistake/fix scene** is not included as a separate scene. "Evaluating is listing" is fixed in 2 and crossed in 11d; "cytokinesis doesn't matter because the nucleus has divided" is crossed in 11b; "meiosis creates new alleles" is corrected in 8.
+- **Legacy ideas.** None ported.
+- **Reuse:** the explainer kit; B6a's `WrongChip`, `GreyTag`, `Cross`; v07's `AssessBalance` and answer frame; v29's `StageStrip` (thumbnail only). New coded components: `EvidenceGrid` (a rows-by-cases table whose cells fill with a short entry and a tick or dash, and whose row can grey out when a process is switched off) and `LevelBar` (three stacked labelled bands that light singly). Both go to the shared FA1 kit folder.
+
+Main question: *Which of DNA replication, mitosis, meiosis and cytokinesis matters most, or is each essential for a different reason?*
+Entry knowledge: see above. Students have watched v01 to v30.
+Stops after: evaluating as weighing against criteria and reaching a judgement; criteria: what each contributes, what fails without it, and at which level (cell, body, species); healing a graze needs replication (a full copy), mitosis (identical complete sets) and cytokinesis (separate cells), not meiosis; without them: no division (checkpoints), no new nuclei, one cell with two nuclei; uncontrolled mitosis can form a tumour; making gametes needs replication, meiosis (halving and variation) and cytokinesis; without meiosis the number would double and alleles would not be reshuffled; mitosis makes the cells that do meiosis and grows the fertilised egg; the processes depend on each other; replication's accuracy matters, and its rare errors are the source of new alleles; importance depends on level; a species of clones is vulnerable (Cavendish bananas, TR4); a model verdict.
+Handoff: the next focus area: when cells team up into many-celled organisms, what do they give up? (FA2 L01, route pending.)
+
+## Script and shots
+
+The video has 16 voiced scene files (1 to 10, 11a, 11b, 11c, 11d, 12 and the notes lead-in, scene 13). The **process chips** are on screen throughout (at the centre in 1 and 2, then as a row at the top), the **evidence grid** at the right from scene 3 to scene 9, the **level bar** beside it from scene 2. No people appear at any point.
+
+### 1. switch one off (opening)
+> Last time we finished meiosis, so now you've met all four processes: DNA replication, mitosis, meiosis and cytokinesis. Here's a thought experiment. Imagine you could switch off just one of them. Which loss would hurt most? Or is each one essential, for a different reason? Answering that is called evaluating, and it takes more than a list of what each process does.
+
+Visual: opens on v30's final frame (see Decisions). On "all four processes" the summary board and stage strip fade and the four process chips glide to the centre in a row, each thumbnail enlarging slightly; each chip lights on its spoken name. On "switch off just one" a small coded toggle appears under each chip; the toggles flick off and on again in turn, and each chip greys for a moment as its toggle is off (no effect shown yet). On "Which loss would hurt most?" the faint balance above the chips draws in fully, its pans empty, the "?" on the pivot. On "more than a list" a `WrongChip` writes beside the chips: "evaluate = list what each does". The heading writes: "How important is each process in cell division?" At most three bright items. Hold one second.
+
+### 2. criteria and levels
+> A list describes. An evaluation weighs things up and reaches a judgement. So we need criteria first: questions to judge each process by. Ask two. What does it contribute? And what fails without it? Then ask who loses: a single cell, the whole body, or the species. We'll test all four on two cases: healing a graze, and making gametes.
+
+Visual: on "A list describes" the `WrongChip` from scene 1 takes a scribble cross; a gloss writes: "evaluate: weigh up, then judge". On "criteria first" a criteria card writes at the upper left, one line per cue: "1 What does it contribute?" "2 What fails without it?". On "who loses" the `LevelBar` draws beside the card, three stacked bands lighting in turn on "a single cell", "the whole body", "the species" (a small `cd-interphase-v1.png` thumbnail in the cell band; a small `b5a-skin-healed-v1.png` crop in the body band; four small letter-tag cards, "A b D", "a B d", "A B d", "a b D", in the species band, letters only). On "two cases" two case chips write under the process chips: "healing a graze" and "making gametes". The process chips move to a row along the top for the rest of the video. At most three bright items besides the card. Hold one second.
+
+### 3. case one: healing a graze
+> Case one: a graze. Cells at the edge of the wound divide again and again, until new cells fill the gap. Each division needs three of our processes. DNA replication copies every chromosome first. Mitosis then shares the copies, so each new nucleus gets one complete, identical set. And cytokinesis splits the cytoplasm, so there are two separate cells.
+
+Visual: the "healing a graze" chip lights; `b5a-skin-graze-v1.png` enters at the centre left (native aspect ratio, uniform scale). On "Cells at the edge of the wound" the pale rounded cells at the graze edges take small rings, label "cells at the edge divide"; on "until new cells fill the gap" the plate cross-fades slowly (about 2 s) to `b5a-skin-healed-v1.png` while a coded counter beside it ticks up ("cells: more and more"). On "three of our processes" the `EvidenceGrid` draws at the right (rows: the four processes; column "healing a graze"). Each line lights its row and its process chip in turn, with a small cell thumbnail sliding in beside the row: on "DNA replication" `cd-nucleus-zoom-breaking-v1.png` (entry "full copy of every chromosome"); on "Mitosis" `cd-anaphase-v1.png` (entry "identical, complete set in each nucleus"); on "cytokinesis" `cd-cytokinesis-v1.png` (entry "two separate cells"). The meiosis row stays empty. At most three bright items besides the grid. Hold one second.
+
+### 4. switch each off, and a prediction
+> Now switch each one off. Without DNA replication, there's no second set to share, so checkpoints stop the cell dividing, and the gap stays open. Without mitosis, the copies aren't shared into new nuclei. And when mitosis runs out of control, cells pile up into a tumour. Without cytokinesis, the nucleus divides, but you get one big cell with two nuclei, so the number of cells doesn't rise. Prediction: which process plays no part in healing at all?
+
+Visual: one switch-off at a time; each row's toggle flicks off and its process chip greys, then relights before the next. On "Without DNA replication" a small `cd-interphase-v1.png` takes a coded stop chip, "checkpoint: stop" (tag "v27"), and the healed skin plate cross-fades back to the graze for a moment; grid entry "without: no division, wound stays open". On "Without mitosis" a small `cd-prophase-v1.png` thumbnail freezes with a grey veil; entry "without: no new nuclei". On "runs out of control" a grey tag writes, "uncontrolled mitosis: a tumour (Year 12)" (no tumour image). On "Without cytokinesis" the new plate `cd-binucleate-v1.png` (one enlarged cell with two nuclei) enters small beside the grid; its two nuclei take rings, label "two nuclei, one cell" (grey tag "binucleate"); entry "without: cell number doesn't rise". On "Prediction" a "Predict" chip writes beside the empty meiosis row; **a 3 s countdown ring** runs.
+
+### 5. meiosis plays no part
+> Meiosis. Skin cells never do it. Healing needs identical cells with the full chromosome number, and meiosis makes neither. So for growth and repair, replication, mitosis and cytokinesis are all essential, and meiosis isn't needed.
+
+Visual: on "Meiosis" the meiosis row lights and its chip toggles off with no change at all to the skin plate (the healed state stays; tag "no change"). On "identical cells with the full chromosome number" two chips write beside the row, "identical" and "full number", each then crossed lightly in grey with a small `cd-four-cells-crossover-v1.png` thumbnail beside them (label "different, half"). Grid entry "not used in healing" with a dash. On "all essential" the three ticked rows glow together under the column head. At most three bright items. Hold one second.
+
+### 6. case two: making gametes
+> Case two: making gametes, in the ovaries or testes. DNA replication copies the chromosomes once. Meiosis halves the number, and crossing over, independent assortment and random segregation make every gamete different. Cytokinesis, twice, turns one cell into four separate cells. If gametes were made by mitosis instead, each would carry the full number, so it would double every generation, and there'd be no new mix of alleles.
+
+Visual: the "making gametes" chip lights; the grid adds its second column. The skin plate slides out; `cd-m1-prophase-v1.png` enters at the centre left. On "copies the chromosomes once" the replication row lights (entry "one copy before meiosis I"). On "Meiosis halves the number" the plate cross-fades to `cd-four-cells-crossover-v1.png`; on "make every gamete different" each of the four cells takes a different letter tag, "A B d", "A b d", "a b D", "a B D" (as v30); entry "halves the number; makes variation". On "Cytokinesis, twice" the cytokinesis row lights, entry "four separate cells". On "If gametes were made by mitosis" the meiosis toggle flicks off: `b3a-sperm-v1.png` and `b3a-egg-v1.png` appear small with chips "46" each, joining into a coded circle "92" with a terracotta "doubles every generation" (tag "v26"); on "no new mix" the four letter tags turn identical. Entry "without: number doubles; no reshuffling". The toggle flicks back on. At most three bright items besides the grid. Hold one second.
+
+### 7. the twist: they depend on each other
+> Here's the twist. Even in this case, mitosis matters. Mitosis made the cells that go on to do meiosis. And after fertilisation, mitosis grows one fertilised egg into a whole body. So the four processes depend on each other. Replication comes first in every division. Cytokinesis finishes every division. Mitosis maintains the body, and meiosis makes the next generation.
+
+Visual: the mitosis row's second cell, empty until now, fills with "made the cells that do meiosis; grows the fertilised egg" and a tick. On "grows one fertilised egg" the egg and sperm join and a short coded strip of 1 → 2 → 4 → 8 circles grows beside them (tag "mitosis after fertilisation"). On "depend on each other" the grid fades back and a coded chain draws across the centre from the four process chips: "DNA replication" → (two arrows) "mitosis" and "meiosis" → both arrows into "cytokinesis"; on "Replication comes first" the replication chip pulses with the label "first, in every division"; on "Cytokinesis finishes" the cytokinesis chip pulses, "finishes every division". On "Mitosis maintains the body" the mitosis chip takes a small healed-skin crop, label "maintains the body"; on "meiosis makes the next generation" the meiosis chip takes the sperm and egg thumbnails, label "makes the next generation". At most three bright items besides the chain. Hold one second.
+
+### 8. accuracy matters too
+> One more point about replication. It doesn't just make a copy. It has to make an accurate copy, and the copy is checked. A copying mistake that isn't fixed is called a mutation, and every cell that comes from that cell inherits it. In a cell that makes gametes, a mutation can pass to the next generation. Rare mistakes like these are where new alleles first come from.
+
+Visual: the chain shrinks to the top. The replication chip enlarges at the centre with `y11-dna-helix-v1.png` (the FA1 DNA helix plate, small, uniform scale; grey tag "v23"; root decision 21 replaced `b5x-zoom-helix-v1.png`, whose rung colours pair inconsistently). On "accurate copy" a coded "check" tick passes along the helix (grey tag "the copy is checked and most mistakes are fixed"). On "A copying mistake that isn't fixed" one rung of the helix takes a terracotta ring, gloss "mutation: a copying mistake that isn't fixed". On "every cell that comes from that cell" a coded family of circles branches from one marked circle (1 → 2 → 4), each carrying a small terracotta dot. On "a cell that makes gametes" one branch ends in a small sperm thumbnail with the dot. On "new alleles first come from" a chip writes, "new alleles: from rare copying mistakes", and beside it, smaller, "meiosis: new combinations of alleles" (tag "v30"). At most three bright items. Hold one second.
+
+### 9. it depends on the level
+> So does one matter most? It depends on the level. You could live a long, healthy life without a single one of your cells doing meiosis. But you couldn't heal a graze without mitosis. For a species, though, meiosis is vital. Australia's main banana, the Cavendish, is a clone: every plant is a genetically identical copy, grown from pieces of other plants. A soil fungus called TR4 kills it, and because the plants are identical, they're all at risk.
+
+Visual: the `LevelBar` returns large at the left. On "live a long, healthy life without ... meiosis" the "body" band lights and the meiosis chip toggles off beside it with no effect (a small healed-skin crop stays healthy); on "couldn't heal a graze without mitosis" the mitosis chip toggles off and the crop flicks back to the graze. On "For a species" the "species" band lights. On "the Cavendish, is a clone" `b1-banana-plantation-tr4-v1.png` enters at the right (native aspect ratio); the two healthy plants are shown first, the rest of the row under a soft veil, with a gloss "clone: genetically identical copies" and identical letter tags "A B D" above every plant. On "A soil fungus called TR4 kills it" the veil lifts to show the wilting plants (tag "Fusarium wilt, TR4: present in parts of the Northern Territory and Queensland"); on "they're all at risk" every identical tag takes a terracotta outline. A small side note: "varied offspring: some may resist (meiosis, v30)". At most three bright items. Hold one second.
+
+### 10. writing the evaluation
+> Here's how to write the evaluation. First, state your criteria. Next, judge each process against them, using what fails without it as your evidence. Then give a judgement with a reason. For example: all four are essential, but not in the same way. DNA replication has the strongest claim for the cell, because the others only share out what it copies. Meiosis matters most for the species, because only meiosis reshuffles alleles in every generation.
+
+Visual: the `AssessBalance` moves to the centre, now with four chip slots on its beam. A three-step frame writes at the left, one line per cue: "1 Criteria: contributes? fails without it? which level?" "2 Each process: evidence from the cases" "3 Judgement + reason". On "judge each process" the four process chips drop onto the beam one by one, each carrying a one-line evidence tag lifted from the grid ("full copy; without it no division", "identical sets; without it no healing", "halves and reshuffles; without it number doubles", "finishes division; without it two nuclei"); the beam stays level (tag "all essential"). On "not in the same way" the `LevelBar` appears small beside the beam: on "strongest claim for the cell" the cell band lights and the replication chip lifts slightly; on "Meiosis matters most for the species" the species band lights and the meiosis chip lifts. The example verdict writes as a short paragraph card below the balance, each clause underlined on its words (the judgement; "because" plus the reason for replication; "because" plus the reason for meiosis). At most three bright items besides the frame. Hold one second.
+
+### 11a. attempt one (cytokinesis blocked)
+> Two exam questions. First. A drug stops cytokinesis but lets mitosis continue. It's added to dividing skin cells growing in a dish. Predict what each cell will look like after one division, and explain the effect this would have on wound healing. Pause here to answer.
+
+Visual: the board clears. The card writes on, tagged "HSC-style question, written for HSCScience". Stem: "A drug prevents cytokinesis but does not affect DNA replication or mitosis. It is added to a culture of dividing human skin cells." Demand: "(a) Predict the appearance of each cell after one cell cycle. (1 mark) (b) Explain how this drug would affect the healing of a wound if it acted on skin cells in the body. (2 marks)". A small `cd-interphase-v1.png` sits beside the stem (tag "one skin cell before the drug"). Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 11b. feedback, item one
+> Each cell will have two nuclei. Mitosis still shares the chromosomes into two nuclei, but the cytoplasm never splits. So the number of cells doesn't rise, and healing needs more cells to fill the gap, so the wound can't close. The classic mistake is saying there's no effect, because the nucleus has already divided.
+
+Visual: the card stays. On "two nuclei" the given "prevents cytokinesis" takes an amber underline; `cd-binucleate-v1.png` replaces the interphase thumbnail; answer line "(a) one cell with two nuclei (binucleate)". On "Mitosis still shares" the given "does not affect ... mitosis" is underlined. On "number of cells doesn't rise" answer line "(b) no increase in cell number, so new cells can't fill the wound; healing fails". On "classic mistake" a chip "no effect: the nucleus has divided" writes and takes a scribble cross. Settle one second.
+
+### 11c. attempt two (evaluate)
+> Second. Evaluate the importance of mitosis and meiosis, first to an individual organism, and then to its species. Pause here to answer.
+
+Visual: the board clears. The card writes on, tagged "HSC-style question, written for HSCScience". Stem: "Mitosis and meiosis are both forms of nuclear division in animals." Demand: "Evaluate the importance of mitosis and meiosis to (a) an individual animal and (b) its species. (5 marks)". Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 11d. feedback, item two
+> For the individual, mitosis is essential. It grows the body and repairs damage, while meiosis isn't needed to survive. For the species, meiosis is essential. It keeps the chromosome number constant across generations, and makes the variation that helps a population survive change. So each matters most at a different level. The classic mistake is describing both, with no judgement.
+
+Visual: the card stays. Answer lines write one per cue, earlier lines dimming: on "For the individual" the given "an individual animal" is underlined; line "(a) mitosis essential: growth, repair; meiosis not needed to survive"; the `LevelBar`'s body band lights small beside the card. On "For the species" the given "its species" is underlined; line "(b) meiosis essential: constant chromosome number across generations; variation for survival"; the species band lights. On "each matters most at a different level" a judgement line writes with an amber box: "judgement: each is more important at a different level". On "classic mistake" a chip "describes both, no judgement" writes and takes a scribble cross. Settle one second.
+
+### 12. decision rule and handoff
+> So to evaluate, set your criteria, weigh each process against them, then decide, and say why. As the site puts it: evaluate means weigh, then decide. A list is not a judgement. That completes cells as the basis of life. Next, cells team up. When a many-celled body forms, what does each cell give up?
+
+Visual: three step chips write, one per cue: "criteria", "weigh each", "decide + why". On "evaluate means weigh, then decide" a hand-lettered amber rule writes (grey tag "the site's memory hook"); on "A list is not a judgement" the scene 1 `WrongChip` returns briefly, already crossed. On "completes cells as the basis of life" the four process chips settle in a row at the top. On "cells team up" `b5a-skin-healed-v1.png` returns at the centre left (its many cells take a soft ring), and `y11-volvox-colony-v1.png` enters small and dimmed at the right. A "Next" chip slides in at the lower right: "Next: What did multicellular life trade away to become big?". This is the video's final frame (root decision 16): the four process chips along the top, the three step chips, the healed skin plate at the left, the dimmed Volvox colony at the right and the Next chip. Hold half a second before the notes.
+
+### 13. key notes (quiet, about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+- Evaluate: weigh against criteria, then judge. Criteria: what does it contribute, what fails without it, at which level (cell, body, species)?
+- DNA replication: a complete, accurate copy before every division. Without it, no division. Unfixed copying mistakes (mutations) are the source of new alleles.
+- Mitosis: identical, complete sets for growth and repair (a graze heals). Without it, no new cells; uncontrolled, a tumour.
+- Meiosis: halves the number and reshuffles alleles in gametes. Not needed by the individual; essential for the species (constant number, variation).
+- Cytokinesis: splits the cytoplasm to finish every division. Without it, one cell with two nuclei.
+- Judgement: all four essential, not in the same way; replication strongest for the cell, meiosis for the species.
+
+Memory: evaluate means weigh, then decide. A list is not a judgement.
+
+## Practice question and feedback
+
+Two unseen items, each followed by its own brief feedback (11a, 11b, 11c, 11d). Each attempt ends with "Pause here to answer." and a 10 second countdown; the card and every demand stay on screen during the countdown and after it. Marks appear on the card; the narration does not read them. Every card carries the tag "HSC-style question, written for HSCScience". Item 1 is original (built on the site's match activity, "cytokinesis fails: one cell is left holding several nuclei", and its true or false item); item 2 is original, a short form of the site's evaluate question using its level criterion.
+
+1. (11a, predict and explain, 3 marks.) A drug prevents cytokinesis but not replication or mitosis, in cultured skin cells. (a) Appearance after one cycle. (b) Effect on wound healing.
+   Model: (a) Each cell contains two nuclei (binucleate), each with a full set of chromosomes (1 mark). (b) Mitosis divides the nucleus, but without cytokinesis the cytoplasm is not divided, so no separate daughter cells form and cell number does not increase (1 mark); wound healing depends on increasing the number of cells to replace damaged ones, so the wound would not close (1 mark). Classic mistake crossed out: "no effect, because the nucleus has already divided". Other wrong chains: "cells would have half the chromosomes" (mitosis keeps the number); "cells would die immediately" (not what the stem allows you to predict).
+2. (11c, evaluate, 5 marks.) Evaluate the importance of mitosis and meiosis to an individual animal and to its species.
+   Model: Individual: mitosis is essential because it produces genetically identical cells with the full chromosome number for growth from a zygote, repair and replacement of cells; without it the animal could not develop or heal (2 marks). Meiosis is not required for the individual to survive (1 mark, with the contrast). Species: meiosis halves the chromosome number so fertilisation restores it, keeping the number constant across generations, and crossing over, independent assortment and random segregation produce variation that improves the chance some individuals survive environmental change or disease (1 mark). Judgement: both are essential but at different levels; mitosis matters most to the individual and meiosis to the species, and meiosis depends on mitosis having produced the cells that undergo it (1 mark). Classic mistake crossed out: "describes both with no judgement". Other wrong chains: "meiosis is more important because it makes variation" (ignores the individual level); "mitosis makes gametes".
+
+Feedback spoken lengths are about 24 s (11b) and 29 s (11d) by script; time the exact audio. Neither re-teaches the lesson.
+
+## Numbers or facts to verify
+
+Self-check (2 Nov). The Codex science check must confirm each before voicing.
+- **Graze healing (3).** Re-epithelialisation: basal keratinocytes at the wound edge migrate and proliferate by mitosis to cover the wound. "divide again and again until new cells fill the gap" simplifies migration plus division. Correct at this level; flag the simplification.
+- **Replication knock-out (4).** Cells that have not completed S phase are held by the G2 checkpoint (and S-phase checkpoints) rather than entering mitosis. Correct.
+- **Uncontrolled mitosis (4).** Uncontrolled cell division can form a tumour. Correct (one clause; cancer is not discussed).
+- **Cytokinesis knock-out (4, 11).** Cells that complete mitosis without cytokinesis become binucleate (for example with cytochalasin B). Correct.
+- **Meiosis in skin (5).** Somatic skin cells do not undergo meiosis. Correct.
+- **Gametes (6).** Meiosis in ovaries and testes; two cytokineses give four cells (in females unequal, one egg and polar bodies; v29's tag, not restated). "If gametes were made by mitosis ... double every generation" (v26's doubling problem). Correct.
+- **Germ line by mitosis (7).** Spermatogonia and oogonia multiply by mitosis before meiosis; the zygote develops by mitosis. Correct.
+- **Mutation and new alleles (8).** Replication is highly accurate with proofreading and repair; unrepaired errors become mutations inherited by daughter cells; germ-line mutations can be inherited; mutation is the ultimate source of new alleles. Correct. "the copy is checked" (proofreading) is one clause.
+- **Meiosis not needed to live (9).** True: an individual can live without producing gametes.
+- **Cavendish and TR4 (9).** Cavendish dominates Australian banana production and is propagated vegetatively (suckers and tissue culture); plants are genetically identical. Panama disease Tropical Race 4 (*Fusarium oxysporum* f. sp. *cubense*) is a soil-borne fungus that kills Cavendish; detected in the Northern Territory (1997) and in Far North Queensland (2015). "they're all at risk" (not "all die"): some somaclonal Cavendish selections show partial tolerance, not stated. Correct as worded; flag for the science check, time-sensitive (see below).
+- **Meiosis reshuffles alleles every generation (10).** In sexually reproducing species. Correct.
+- **Time-sensitive facts spoken.** TR4 presence in Australia and Cavendish as the main banana (scene 9). Re-check at voicing.
+- **No em dashes** in this file (searched by script).
+
+## Memory aid check
+
+- **"Evaluate means weigh, then decide. A list is not a judgement."** (Site l25 hook.) Assumption: an evaluate answer needs criteria, evidence and a judgement (NESA glossary: "make a judgement based on criteria; determine the value of"). Limit: "decide" can be "all are equally essential" if justified; scene 10's example shows a judgement that is more than "all matter". Said after the frame is used. Correct.
+- **"Mitosis maintains the body; meiosis makes the next generation."** (Site card 3, simplified.) Assumption: sexually reproducing animals. Limits: mitosis also builds the body from the zygote (scene 7 says so first) and serves asexual reproduction in some eukaryotes (not spoken). Correct for the lesson's cases.
+
+## Narration length estimate
+
+Revision 1 count (2 Nov) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, one 3 s prediction countdown, 10 s per attempt countdown and 55 s more of the quiet notes hold. Script: a uniquely named counter in the designer's scratchpad folder `y11b-v29-31`.
+
+| Scene | Characters |
+| --- | --- |
+| 1. switch one off (opening) | 367 |
+| 2. criteria and levels | 335 |
+| 3. case one: healing a graze | 351 |
+| 4. switch each off, and a prediction | 450 |
+| 5. meiosis plays no part | 230 |
+| 6. case two: making gametes | 428 |
+| 7. the twist: they depend on each other | 370 |
+| 8. accuracy matters too | 369 |
+| 9. it depends on the level | 449 |
+| 10. writing the evaluation | 450 |
+| 11a. attempt one (cytokinesis blocked) | 268 |
+| 11b. feedback, item one | 316 |
+| 11c. attempt two (evaluate) | 135 |
+| 11d. feedback, item two | 383 |
+| 12. decision rule and handoff | 300 |
+| 13. key notes (quiet, about 60 seconds) | 75 |
+
+Revision 1 total: **5,276 characters**, 16 scene files (224 under the 5,500 floor). Speech about 397 s; with 32 s of padding (16 scenes), about 11.5 s of stated holds and settles (1 s for scenes 1 to 3 and 5 to 10; half a second on scene 12; about 1 s settle on each feedback scene), one 3 s prediction countdown, 20 s of attempt countdowns and 55 s more of the quiet notes hold: **about 518 s (8.6 minutes)**. Feedback 11b is about 24 s and 11d about 29 s by script. Scenes 4, 9 and 10 (about 450 each) are the longest; check them at playback speed. Time the exact Google voice audio.
+
+Why it stops here: the route's stop boundary forbids re-teaching phases, and the evaluation needs criteria, two cases with switch-off evidence, interdependence, accuracy, levels and a modelled verdict, all present. Adding a third case or a phase recap would be padding. No reserve cuts are needed for length; Open decision 2 lists an optional cut for focus.
+
+## Assets
+
+Have (reuse; inspected 2 Nov unless stated):
+- `b5a-skin-graze-v1.png` (inspected at full size on black: a skin cross-section block with a shallow red graze, rounded pale cells at both graze edges with nuclei, dermis with capillaries, fat below; no body). Scenes 3, 4, 9. `b5a-skin-healed-v1.png` (matched pair from Module 5 B5a; not re-inspected). Scenes 2, 3, 7, 9, 12.
+- `b1-banana-plantation-tr4-v1.png` (inspected at full size on black: a row of six banana plants, two healthy, four yellowing and collapsing, a soil strip; **visible red, green and yellow fringe pixels around the leaves against black**; Codex to clean the alpha edge before use). Scene 9.
+- Brief 88 plates: `cd-interphase`, `cd-nucleus-zoom-breaking`, `cd-prophase`, `cd-anaphase`, `cd-cytokinesis`, `cd-daughters`, `cd-m1-prophase`, `cd-four-cells-crossover` (new in v30). Thumbnails and scene 6.
+- `b3a-sperm-v1.png`, `b3a-egg-v1.png` (6, 7, 8; Module 5).
+- `y11-dna-helix-v1.png` (8; the FA1 helix plate named in root decision 21, which replaces `b5x-zoom-helix-v1.png`; not inspected for this design; Codex to confirm it exists and reads at about 400 px).
+- `y11-volvox-colony-v1.png` (12, final frame; v07's plate).
+- Coded reuse: v07's `AssessBalance` and answer frame.
+
+New (one plate; Codex asset brief below), in `public/assets/biology/`:
+- `cd-binucleate-v1.png`: scenes 4, 11b.
+
+Plate list summary (Revision 1). **Existing:** 15 plates. **New:** one. Priority: the binucleate cell (essential: the cytokinesis failure must be seen, and item 11b uses it). Fallback: `cd-telophase-v1.png` held with its furrow coded as "not completing" (weaker: shows a furrow that is forming rather than absent); no coded cell drawing.
+
+Coded: process chips and toggles, the evidence grid, the level bar, the chain diagram, stop chip, circle families (1 → 2 → 4), letter tags, the balance, the answer frame, chips, cards and countdowns. No people, no hands, no faces, no body outlines.
+
+Process clip: none.
+
+## Codex asset brief (FA1-V31, evaluating cell division)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` and `codex-prompts/88-cell-division-plate-series.md` first; the design is `docs/production/claude-pm/lessons/bio-y11-fa1-v31.md`. Transparent PNG with a true alpha channel, no fringe or halo (check on black and white), no text, labels, arrows, people, hands or faces. Never stretch.
+
+1. `cd-binucleate-v1.png` (2000 x 2000, the brief 88 canvas): one animal cell in the brief 88 style, the same painterly cell as `cd-interphase-v1.png` but enlarged to about 1.4 times its area (it has grown through a cycle without dividing), slightly oval, with **two** round intact nuclei side by side, each with a nucleolus and faint chromatin, and no cleavage furrow. Organelles as the series. Provide `-empty` (no nuclei contents) for consistency. Record nuclei centres and radii in `assets/y11fa1v31-anchors.json`.
+2. **Clean** `b1-banana-plantation-tr4-v1.png`: remove the coloured fringe pixels (red, green, yellow) around the leaves and soil so the edges are clean on black and white; keep the painting unchanged otherwise. Save as `b1-banana-plantation-tr4-v2.png` (the v1 file stays for videos already built) and use v2 in this video.
+
+Confirm `y11-dna-helix-v1.png` exists (root decision 21; commissioned for v21) and reads as a DNA double helix at about 400 px wide on the video background; until it exists, scene 8 uses `cd-nucleus-zoom-breaking-v1.png` with the mutation marked on one chromosome. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/y11fa1v31-provenance.json`.
+
+## Codex error-check brief (FA1-V31)
+
+Error-only report to `../checks/` (root names the check number). Check against a current senior biology text:
+- Scene 3: graze healing by division of edge cells (simplification noted).
+- Scene 4: checkpoints stop division without replication; tumour clause; binucleate cells without cytokinesis.
+- Scene 5: skin cells do not undergo meiosis.
+- Scenes 6, 7: gamete case; mitosis makes the cells that undergo meiosis; zygote growth by mitosis.
+- Scene 8: proofreading clause; mutations inherited by descendant cells; germ-line inheritance; mutations as the source of new alleles.
+- Scene 9: "live a long, healthy life without ... meiosis"; Cavendish as a clone; TR4 and its Australian status (time-sensitive).
+- Scene 10: the model verdict's two reasons.
+- Attempts: model answers and mark splits.
+- Add site errors 1 to 4 from this design's Decisions to `../site-corrections-bio-y11.md` after confirmation.
+- Search for em dashes and absolute claims in narration. Known: "Skin cells never do it" (5, true for somatic cells); "they're all at risk" (9); "only meiosis reshuffles alleles" (10, true among the four processes). Judge each.
+
+## YouTube metadata (draft)
+
+- Title: "Which Matters Most? Evaluating DNA Replication, Mitosis, Meiosis and Cytokinesis | Year 11 Biology"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year11/fa1-cells-as-the-basis-of-life/lesson25.sa.html
+
+Switch off one of the four processes of cell division. Which loss hurts most? Test DNA replication, mitosis, meiosis and cytokinesis on two cases, healing a graze and making gametes, see what fails without each one, and find out why the answer depends on whether you ask about a cell, a body or a species (with Australia's cloned Cavendish bananas as evidence). Then learn how to write an evaluate answer with criteria, evidence and a justified judgement. Finish with two exam-style questions and brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Year 11 Biology (2025 syllabus), Focus Area 1
+B25-FA1-G4-10: Evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis in cell division
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c
+
+Previous: Where does variation arise during meiosis? Next: What did multicellular life trade away to become big?
+
+#Year11Biology #CellDivision #HSCScience"
+
+- Syllabus line and course label follow root decision 15 (route `syllabusActions.text`). The "Next" line follows the FA2 L01 pack until the FA2 route is written.
+
+## Open decisions
+
+- **1. Handoff (root; route pending).** The Next chip and description use the FA2 L01 pack's question, "What did multicellular life trade away to become big?". Root confirms or replaces it when the FA2 route is written; the final frame (healed skin, dimmed Volvox) suits any FA2 opening on levels of organisation, and only the chip text would change.
+- **2. Cavendish and TR4 (science check, time-sensitive).** Scene 9's banana evidence is one sentence pair on an existing plate. If the science check or the learning review finds it off-focus, the fallback is "A population of identical copies can be wiped out by one disease" over the same plate (saves about 150 characters), which keeps the species-level point.
+- **3. 11d length (learning review).** About 29 s, at the top of the brief-feedback range, because an evaluate answer needs both levels and a judgement. Possible cut: "across generations" (19 characters).
+- **4. Length (root).** At 5,276 characters (about 518 s) this design is under 5,500. The content fills that length: every scene carries one evaluation step, the two required cases, or the answer frame, and the route forbids re-teaching phases, which is where padding would go. Root decision 9 (v07 to v12) accepted v12 at 5,348 characters on the same grounds. No padding was added.
+
+## Build ids
+
+Lesson key `y11fa1v31`. Suggested explainer folder `src/explainer/lessons/bio-y11-fa1-v31`, build folder `docs/production/claude-pm/lessons/y11fa1v31` (root to confirm).
+
+In order (16 scene headings): opening, criteria, graze-case, switch-off-predict, meiosis-no-part, gamete-case, depend, accuracy, levels, write-evaluation, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
+
+Holds: switch-off-predict ends with the 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1 to 3 and 5 to 10 hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take; `motionRole: "hold"`). Review evidence paths: `learning_review` (review key y11b-v31) and `science_check`, root names them.
+
+## Review notes for Claude (author, not learner copy)
+
+- **Teaching checks.** Causes: why each process matters, shown by what fails without it (4, 6); why meiosis plays no part in healing (it makes neither identical cells nor the full number; 5); why the processes depend on each other (replication first, cytokinesis last, mitosis makes the meiotic cells; 7); why accuracy matters (mutations are inherited by every descendant cell; 8); why importance depends on level (an individual survives without meiosis; a clone population shares one weakness; 9). Attention: the switch-off thought experiment (1), the prediction (4), the twist (7), the banana case (9). Visual medium: toggles switching processes off with the skin plate reverting to a graze, a binucleate cell appearing, the evidence grid filling from two cases, the balance taking four chips. Apply: a blocked process (11a), a short evaluate (11c). Remember: the site's l25 hook; the three-step frame.
+- **Term load.** New spoken terms: evaluate, criteria, level, tumour (one clause), mutation, clone, TR4 (named, not explained beyond "a soil fungus"). All others are recalls.
+- **Boundary.** No phase is re-taught; meiosis's three processes are named in one line (6). Cancer stays one clause. Asexual reproduction is not discussed.
+- **Cultural content.** None.
+- **Pronunciation.** "cytokinesis" SY-toh-kin-EE-sis; "meiosis" my-OH-sis; "Cavendish" KAV-en-dish; "TR4" as letters and number.
+- **Doubts for the reviewers.** (a) Is the gamete case (6) too dense with the one-line meiosis recall plus the mitosis switch-off? (b) Should scene 8 (accuracy) stay, given it is the site's argument for replication's strongest claim, or does it add load before the verdict? (c) Does the verdict in 10 model a judgement strong enough for Band 6 without becoming a script students copy word for word?
+- **No em dashes** in this file (searched by script).

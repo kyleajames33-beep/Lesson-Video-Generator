@@ -35,3 +35,12 @@ Written by Claude (root) after reading the two designers' open questions. Series
 25. **v23:** add a grey screen tag "Okazaki fragments" on the lagging-strand pieces (screen only, not spoken). "Another DNA polymerase" for primer replacement stays, with the human-cell simplification in an author note, subject to the science check.
 26. **v24** stays a separate video (merging would push v23 past the cap). Its 64,000 km figure is available to v25 as a hook if v25 needs one.
 27. **Shared components** `ModelDiagram` (v19) and `EnzymeLens` (v20) join the shared FA1 kit folder.
+
+## v25 to v31 (2 November 2026)
+28. **Frames:** v25 opens on v24's actual handoff frame (balances, Earth, coiled ball; first sentence rewritten, +11 characters, about 571 s) and v29 on v28's (phase strip and bead model, then `cd-daughters-v1.png`); both root edits. The error check confirms every frame in v13 to v31.
+29. **Drawing rulings under the cell-division rule:** v25's student diagrams as coded ink sketches on a paper card (never over a cell) are accepted, because the syllabus verb is "construct diagrams". v26's chromosomes on karyotype-style cards beside the cells are accepted; no extra nucleus plates.
+30. **Series colour rule:** chromosomes from the egg are pink, from the sperm teal (v26 to v31), in the brief 88 palette.
+31. **Lengths accepted:** v27 (5,366), v28 (5,313) and v31 (5,276), each complete within its route boundary; v29 at about 571 s with its listed spare cuts.
+32. **Plates:** keep `cd-anaphase-v1.png` (upright chromatids); no v2. Codex confirms real alpha on `b3a-sperm-v1.png`, re-checks the fringes on `cd-crossing-over-c-v1.png` and `b1-banana-plantation-tr4`, and paints `y11-dna-helix-v1.png` (v22) before v31 uses it. v29's crossover note stays a screen tag; no extra crossover cell plates (v30 has them).
+33. **v30:** an optional grey "chiasma" screen tag is allowed; the softer fallback for "siblings never get exactly the same genes" applies only if the science check asks.
+34. **v31:** the FA2 handoff chip uses the FA2 L01 pack's question until the FA2 route (brief 152) fixes the title; the TR4 and Cavendish facts are re-checked at voicing (fallback line ready).
