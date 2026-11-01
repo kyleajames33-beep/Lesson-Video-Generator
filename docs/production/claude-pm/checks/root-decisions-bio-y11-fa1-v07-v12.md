@@ -14,3 +14,10 @@ Written by Claude (root) after reading the two designers' open questions. Series
 10. **Shared components** `SizeLadder`, `AssessBalance` (v07) and `GapBox` (v09) go to a shared FA1 kit folder in the Biology kit brief.
 11. **Site findings** listed in each design are added by brief 147 after confirmation, including the L08 Visking statement, the L09 wording items and the L10 phosphate statement.
 12. **Route text:** the v03 note's worked-example label is corrected in the route when root next edits it (not a site error).
+
+## v13 to v15 (2 November 2026)
+13. **v13:** commission the seven matched step frames (`y11-endo-step1` to `4`, `y11-exo-step1` to `3`) with the painted teal membrane stretch; the crop fallback is used only if QA fails. The "whole surface in about half an hour" figure needs the science check's confirmation; otherwise use the design's softer fallback line (same length or shorter). The new word-root memory aid is accepted.
+14. **v14:** keep the companion line "Whatever it makes piles up, so that flows out" after the site's hook. Kidney glucose uptake stays "active transport using energy from ATP" in learner copy, with the secondary active transport detail in the author note (as v12).
+15. **v15:** one length-neutral clause that ions also carry nerve and muscle signals is allowed if the learning review finds a natural place; otherwise leave it out.
+16. **Cross-year plates** (Module 7 phagocyte, Module 8 muscle fibre and nephron) are fine as settings.
+17. **Route:** v16's start boundary now says glucose arrives at the mitochondrion after cytoplasmic breakdown, while oxygen crosses in (root edit). Feedback scenes at 29 to 33 s are accepted.

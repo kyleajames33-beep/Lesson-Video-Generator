@@ -1,0 +1,299 @@
+# Year 11 Physics FA1 V21 (Physics 2025, Year 11, Focus Area 1): Why is the normal force on a ramp less than the weight? (design)
+
+Status: Revision 1 (2 Nov). Needs independent student learning review (key `p-y11-v21`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: a new adjustable-ramp kit shared by v21 to v24 (plank, hinge block, stand, sliding boss, protractor) and a new force-scales plate; the v12 box plate reused (see Assets).
+
+Narration 6,231 characters, 16 scenes, about 568 s (9.5 minutes) including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
+
+Scope: twenty-first video of the Year 11 Physics (2025) Focus Area 1 route and the first of four inclined-plane videos (v21 to v24; v25 is on cultural hold). Templates: `phys-y11-fa1-v03.md` (components as shadows on axes, reused here for the weight's components on tilted axes), `phys-y11-fa1-v08.md` (physics format, colours, readouts), `math-a12-d10.md` (section list, calculation layout) and `bio-y11-fa1-v05.md` (painted objects at native aspect). Force colours follow `phys-y11-fa1-v12.md`, which fixed them: weight purple, normal teal, friction terracotta, tension orange, net force thick ink with a double head, components dashed in their force's colour. Pre-design pack: `../pre-design/phys-y11/phys-y11-fa1-v21.md` (every number recalculated below). Site lesson read in full (2 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year11/fa1-fundamentals-of-mechanics/lesson20.sa.html` (orient, intentions and key terms, the four forces on a slope, finding the normal force with `we-1`, apply, why tilting the axes helps, independent practice, retrieve). Route entry: `phys-y11-fa1-v21` in `../../phys-y11-video-route.json` (route-approved by root, 1 Nov). Route start: "Start with Inclined Planes: Normal Force and Free-Body Diagrams. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions." Route stop: "Stop after the learner can answer: How can I explain and apply inclined planes: normal force and free-body diagrams? Teach only the listed actions; the next video owns its separate question." Next (route, placeholder wording): "phys-y11-fa1-v22: How can I explain and apply resolving weight and incline acceleration?" (v22's pack and design use "How does splitting weight along a ramp give the acceleration down it?").
+
+Owner rules applied: 2025 syllabus only; no people, hands, faces or body outlines (the plank is tilted by the code, the string in scene 9 runs off the frame); objects and apparatus painted, never stretched; vectors, axes, shadows and readouts coded; one reasoning stage at a time; the worked example as task, equation and grouped givens with units; 3 s in-teaching predictions; "Pause here to answer." with a 10 s countdown and the full worded question on screen; brief feedback with one crossed mistake; original HSC-style questions; a key-notes hold; Australian spelling; no em dashes; v20, v19, v13, v12 and v03 recalled in a sentence each, never re-taught.
+
+Syllabus content points (Physics 11-12 (2025), Year 11, Focus Area 1, group "Motion on inclined planes"; local ledger IDs with NESA content-system codenames), quoted from the route JSON `syllabusActions`:
+
+- P25-FA1-G4-01 `ci85e17ad3`: "Determine the normal force on objects on inclined planes"
+- P25-FA1-G4-02 `ci90862bda`: "Construct free-body diagrams to show the gravitational, normal, frictional and net force acting on an object on an inclined plane"
+
+Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa874ba975
+
+**Boundary:** starts from v20's handoff (a crate on level ground, weight and normal force equal; assumed, open decision 1); weight stays vertical while the normal force tilts with the surface; the complete free-body diagram on a slope (weight, normal force, friction along the surface against sliding or its tendency, and the net force: zero at rest, along the slope otherwise) (`ci90862bda`); tilted axes; the angle between the weight and the perpendicular axis equals the ramp angle; the perpendicular component mg cos θ as the weight's shadow; N = mg cos θ from the balance across the slope, with its condition; the site's `we-1` (`ci85e17ad3`). Stops at the normal force and the free-body diagram. Not taught: the parallel component mg sin θ as a calculation and anything about acceleration along the slope (v22, which owns `ci9a2bd04a` and its formula; here the parallel part is drawn dashed with "?" and named only as "the other part, along the slope"); the size of friction (v22, v23); ramp problems (v23); the investigation (v24).
+
+## Decisions
+
+- **Learner question kept (route).** "Why is the normal force on a ramp less than the weight?" The answer, built in order: the scales read less on a tilted plank although the box weighs the same (1, 2); the weight stays vertical but the normal force stays perpendicular to the surface, so they stop lining up (2); a complete free-body diagram: at rest, weight, normal and friction close into a triangle, net zero (3); with no friction, weight and normal leave a net force along the slope, because across the slope they cancel (4); tilted axes put every force but the weight on an axis (5); the weight's angle to the perpendicular axis is the ramp angle, and its shadow on that axis, mg cos θ, is the part that presses in (6); nothing accelerates across the slope, so the normal force balances exactly that part: N = mg cos θ, which shrinks as θ grows (7, 8); the worked example matches the scales (8); the condition: balance every force across the slope (9).
+- **Opening frame (v20 handoff, assumed).** v20 is being designed in parallel. Its route `nextHandoff` names only the next question ("inclined planes: normal force and free-body diagrams"), and its pack's worked example is a 25 kg crate on level ground with N = mg = 245 N. This design assumes v20's last frame is: the box plate (`y11p-box-v1.png`) on a coded level floor line, a purple weight arrow down and a teal normal arrow up of equal length, a chip "N = mg (level ground, no vertical acceleration)" and a "Next" chip. Scene 1 recalls it in one sentence, then the floor line becomes the plank (open decision 1).
+- **The hook (site hook, made measurable).** The site's hook says tyres press less firmly on a steep road. This video makes that a reading: the box rests on a set of force scales on the plank; flat, the display reads 118 N (12.0 kg × 9.80 m s⁻²); the question "tilt to 30°: up, same or down?" gets a 3 s prediction (site warm-up and pack candidate 2); the reveal is 102 N. The box's weight has not changed, so the drop needs a cause. The scales show the normal force (their display measures the push between platform and box, perpendicular to the platform). Author note a covers why the box stays on the scales at 30°.
+- **The cause made visible (owner quality bar).** (2) The plank tilts while the purple weight arrow stays vertical and the teal normal arrow rotates with the surface, shrinking as it turns; crossed chips for "the normal points straight up" and "the weight tilts with the ramp" (both site misconceptions). (3) Tip-to-tail triangle of weight, normal and static friction closing exactly: net force zero (v02, v12, v13 ideas). (4) With friction removed, the two-force chain leaves a gap whose closing arrow lies along the slope. (5) The axes rotate to the slope and the normal and friction arrows snap onto them. (6) The perpendicular axis rotates by the same angle as the plank, its angle arc copying the plank's arc; light shining along the slope casts the weight's shadow on that axis (v03's shadow, now on tilted axes). (7) A live sweep: the plank rotates from 0° to 60° and the shadow and the normal arrow shrink together, readouts ticking; the dot-only diagram then carries on to 90°.
+- **Free-body diagram rules (`ci90862bda`; logged site corrections applied).** Weight W = mg, straight down. Normal force N, perpendicular to the surface, away from it. Friction along the surface, opposing sliding or the tendency to slide relative to the surface (the logged L12 correction: not "opposing motion"). Net force: the vector sum; at rest, zero; otherwise along the slope, because across the slope the forces balance. The net force is drawn in a separate panel, never as a fourth force on the dot (v12's convention).
+- **Why N = mg cos θ, with its condition (logged L12 correction, extended to slopes).** The box neither sinks into the plank nor lifts off, so there is no acceleration across the slope and the forces across it balance (Newton's first law across the slope, v13). With only the weight and the normal force across the slope, N = mg cos θ. Scene 9 shows the condition: a string pulling straight away from the plank lowers N; a pull along the slope does not change it. The condition stays in learner copy (key note 4) because omitting it would teach a wrong rule.
+- **Why the angle is θ (geometry made visible, not asserted).** At 0° the perpendicular axis is vertical, in line with the weight. Rotating the plank by θ rotates its perpendicular by θ, so the weight makes angle θ with the perpendicular axis. The cosine then follows v03's rule ("cos hugs the angle").
+- **Worked example (site `we-1`, numbers unchanged; precision stated).** m = 12.0 kg, θ = 30.0°, g = 9.80 m s⁻² (taken to three significant figures, as v12 and v03 do with site values of unstated precision); mg = 117.6 N; N = 117.6 × cos 30.0° = 101.8 N = 102 N to three figures, the scales' reading. The site's 102 N is kept with the givens stated to three figures (pack precision note: with 12 kg and 9.8 to two figures the answer would be 1.0 × 10² N).
+- **Prediction 2 (3 s, scene 7).** "What is the normal force when the ramp is vertical?" Zero. The sweep shows the trend first, so the prediction tests the idea rather than recall.
+- **Attempts (original, HSC style).** (A1) A 5.00 kg crate at rest on a 40.0° ramp: construct the labelled free-body diagram showing the net force, and calculate N: 37.5 N; diagram: weight down, normal perpendicular, static friction up the ramp, net zero. Crossed: "N = mg = 49.0 N". (A2) A 2.00 kg steel block at rest on a 35.0° ramp with a magnet under the ramp pulling it into the surface with 6.00 N: N = 16.1 + 6.00 = 22.1 N. Crossed: "N = mg cos θ = 16.1 N" (the formula without the balance). A2 tests scene 9's condition in the opposite direction (inward), so it is not a copy.
+- **Mistake scene:** none separate. "N = mg on a slope" (2, crossed in feedback 1); "the normal force points straight up" (2, crossed chip); "the weight tilts with the ramp" (2, crossed chip); "friction opposes motion" (3: it opposes sliding or its tendency, shown on a box at rest); "N = mg cos θ always" (9, A2 crossed); "mg sin θ is the normal force" (8, a grey check line: the scales read 102 N, not 58.8 N).
+- **Memory aid:** "Squash gets cos." (see "Memory aid check"). v22 completes it as "Squash gets cos, slide gets sin."; v21 uses only the half it has explained.
+- **Handoff (route next).** The dot diagram on the slope with the solid perpendicular component "mg cos θ" and the parallel component dashed purple with "?", the plank and box faint behind, chip "Next: How does splitting weight along a ramp give the acceleration down it?". This is the frame v22 opens on.
+- **Site sources used:** hook (tyres press less on a steep road, made into the scales reading); warm-up (tilting from flat towards vertical; scene 1 and prediction 2); key terms (inclined plane, normal force, weight, tilted axes); misconceptions 1 and 2 (scene 2); card 1 (the four forces; friction along the slope against sliding or its tendency; net force along the incline when frictionless); card 2 and `we-1` (scenes 6 to 8; N = mg at 0° and 0 at 90°); card 3 (tilted axes, scene 5); quick check (10 kg at 60°, 49 N: its idea is the sweep's 60° stop, "half the weight"). Not used: activity (20 kg at 25°: left for site practice), short-answer Q1 and Q2 (same structure as `we-1`), Q3 (scene 5 covers the reason in narration).
+- **Site corrections (quoted from site lesson 20, read 2 Nov; for `../site-corrections-phys-y11.md`; not logged yet):**
+  1. Short-answer Q3 model answer: "An object on an incline accelerates along the slope, never vertically". An acceleration along a slope has a vertical component (a sliding block's height changes faster and faster). Suggest: "accelerates along the slope, never perpendicular to it".
+  2. Key terms, normal force: "The support force the surface exerts perpendicular to itself; on a slope, $N = mg\cos\theta$." True only when the weight and N are the only forces across the slope and nothing accelerates across it (the same condition as the logged L12 row). Suggest: "on a slope, $N = mg\cos\theta$ when no other force acts across the slope".
+  - Precision (pack note, not an error): `we-1` gives 102 N from 12 kg and g = 9.8; this design states the givens to three figures.
+  - Checked and correct: `we-1` arithmetic (101.8 N); text description (static friction 58.8 N at rest); quick check B (49 N); Q1 (64 N; 64.2); Q2 (170 N; 169.7); activity (177.6 N, not shown); the card 2 limits (N = mg at 0°, 0 at 90°).
+- **Pack questions answered:** `we-1` used unchanged with precision stated; pack candidate 2 (does N rise or fall from 0° to 45°) is the hook's prediction; pack candidate 1 (2.0 kg at 60°, 9.8 N) appears as the sweep's 60° stop ("half the weight") rather than a question. Pack visual needs met: adjustable ramp, fixed vertical weight, rotating parallel and perpendicular axes and normal, and v03's angle construction.
+- **Cause chain taught, in order:** (1) the reading drops though the weight doesn't (1, 2); (2) weight stays vertical; the normal stays perpendicular to the surface (2); (3) at rest the three forces close: net zero (3); (4) no friction: net force along the slope, since across the slope the forces cancel (4); (5) tilt the axes: only the weight needs splitting (5); (6) the weight's angle to the perpendicular axis is θ, and its shadow there is mg cos θ (6); (7) no acceleration across the slope, so N = mg cos θ; it shrinks as θ grows, zero at 90° (7, 8); (8) the worked example matches the scales (8); (9) the condition: balance every force across the slope (9); (10) memory aid (10).
+- **Entry knowledge (route `entryKnowledge`):** Stage 5 Science and Mathematics (forces, right-triangle trigonometry). From earlier FA1 videos, recalled in one line each: v03 (components as shadows; cos goes with the angle's own axis), v12 (free-body diagram, isolate the object, its colour key), v13 (balanced forces mean no acceleration), v19 (static friction opposes the tendency to slide), v20 (on level ground N = mg when nothing accelerates vertically).
+- **Learner-visible vocabulary (plain meaning at first use):** inclined plane (a flat surface tilted at an angle to the horizontal: a ramp, scene 1, said as "ramp" and "plank"); normal (perpendicular: at right angles to the surface, scene 2); tilted axes (axes along the slope and perpendicular to it, scene 5); component (recalled from v03: the part of a force along one axis, scene 6); theta (the ramp's angle to the horizontal, scene 6).
+- **Legacy logic ported:** none. Drawing parts only: `Arrow`, `Label`, `Dot`, `Panel` from `src/explainer/physics/course-kit.tsx`.
+- **New explainer motion (coded unless a plate is named):** **tilting ramp** (kit gap 1: the plank plate rotates about its hinge; the boss slides up the stand so its crossbar stays under the plank; objects on the plank ride its top surface; a coded angle arc and the protractor's coded numerals follow the plank edge); **live scales display** (coded seven-segment digits in the scales' window, N = 117.6 cos θ rounded to whole newtons); **free-body dot** (v12's dot with coloured arrows to one scale); **tip-to-tail chain and gap** (arrows slide head to tail, the closing arrow draws in ink); **axis rotation** (the x and y axes rotate by θ into along-slope and perpendicular axes; arrows that land on an axis glow); **perpendicular-follows-plank** (a dashed perpendicular line fixed to the plank rotates with it; its arc copies the plank's arc); **projection shadow on tilted axes** (v03 kit gap 1 generalised: parallel light lines running along the slope; the drop line from the weight's tip to the perpendicular axis; the shadow segment grows); **sweep with readouts**; `AlignedAlgebra`; `Countdown` (3 s, 10 s); `QuestionCard` (subject "Physics"); `Chip` with `cross`; `PenArrow`; scribble circle; `KeyNotes`; `Heading`.
+- **Board layout (constant):** heading top-left; the ramp scene in the left 60 per cent (hinge at lower left, stand at the right of the ramp); the free-body dot and its axes in the right column, working below it. Equal unit lengths on both axes; arrows to one scale per scene with a scale chip.
+- **No human figures.** "We tilt the plank": the boss slides on its own; the string in scene 9 leaves the frame.
+- **Author notes (not learner copy):**
+  (a) Hook physics: the box rests on the scales' rubber-topped platform; staying at rest at 30° needs μs ≥ tan 30° = 0.577, plausible for rubber on card or wood. The sweep in the hook stops at 30°. The display reads the force between platform and box perpendicular to the platform, which is N (author note; the narration says "the push between the box and the surface"). The scales' own weight is irrelevant to the box's free-body diagram.
+  (b) Readings: N = 117.6 cos θ: 0° 117.6 (display 118), 10° 115.8 (116), 15° 113.6 (114), 20° 110.5 (111), 30° 101.8 (102). The display ticks through whole newtons as the plank moves.
+  (c) Scene 3 arrows at 3 px per newton: weight 117.6 N = 353 px; normal 101.8 N = 306 px; static friction 58.8 N = 176 px (shown without a number; its size belongs to v22 and v23). The triangle closes exactly (right angle between N and f).
+  (d) Scene 4: frictionless, the closing arrow equals 117.6 sin 30° = 58.8 N along the slope; shown without a number ("its size: next video").
+  (e) Sweep (scene 7): N = 117.6 cos θ: 0° 118 N; 30° 102 N; 45° 83.2 N; 60° 58.8 N (half the weight); 90° 0. The plank and box run to 60°; beyond that the dot-only diagram continues (a box would slide; the narration doesn't claim otherwise; the dot sweep is labelled "diagram only").
+  (f) Scene 9: a string pulling straight away from the plank with 20.0 N: N = 101.8 − 20.0 = 81.8 N; a pull along the slope leaves N at 101.8 N. Both at 30.0° with the 12.0 kg box.
+  (g) A1: 5.00 × 9.80 = 49.0 N; N = 49.0 cos 40.0° = 37.54 N = 37.5 N; static friction = 49.0 sin 40.0° = 31.5 N (not asked; the diagram shows it unlabelled for size). Crossed: 49.0 N.
+  (h) A2: 2.00 × 9.80 = 19.6 N; 19.6 cos 35.0° = 16.06 N; N = 16.06 + 6.00 = 22.06 N = 22.1 N. Crossed: 16.1 N.
+  (i) Pronunciations: "theta"; "m g cos theta" ("cos" as "coz"); "one hundred and seventeen point six newtons"; "nine point eight oh metres per second squared"; "thirty-seven point five newtons"; "twenty-two point one newtons".
+
+Main question: *A box on a set of scales reads 118 N on a flat plank and only 102 N when the plank is tilted to 30°. The box weighs the same. Why does the ramp push back with less than the weight?*
+Entry knowledge (Stage 5; v03 components; v12 free-body diagrams; v13 balance; v19 static friction; v20 level ground N = mg).
+Stops after: the free-body diagram on a slope with weight, normal, friction and net force; tilted axes; mg cos θ as the pressing part of the weight; N = mg cos θ from the balance across the slope, with its condition; `we-1`. No parallel-component calculation, no acceleration.
+Handoff: v22, the parallel component and the acceleration down a ramp.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key (v12): weight purple; normal teal; friction terracotta; tension orange; components dashed in their force's colour until named, then solid and thinner; the net force thick ink with a double head, in its own panel; angle arcs amber; light lines and drop lines pale grey dashes; axes grey, the axis in use darker; crossed items red with a scribble cross; current result bright, earlier items dim. At most three bright text items.
+
+### 1. hook (scales on a tilting plank)
+> Last time, on level ground, the floor pushed up on the crate exactly as hard as gravity pulled down. Now let's tilt the ground. Here's a twelve kilogram box resting on a set of scales, and the scales rest on a wooden plank. They measure force, in newtons. Flat, they read one hundred and eighteen newtons, the box's weight. Now we tilt the plank to thirty degrees. Will the reading go up, stay the same, or go **down**?
+
+Visual: opens on v20's last frame (assumed: the box on a level floor line, equal purple and teal arrows, chip "N = mg"). The arrows and chips fade; the floor line becomes the plank plate (`y11p-ramp-plank-v1.png`) lying flat on its hinge block, the stand and boss at the right, the protractor at the hinge. The scales plate (`y11p-force-scales-v1.png`) settles on the plank and the box plate on the scales; the display writes "118 N" (grey tag "12.0 kg × 9.80 m s⁻²"). Heading writes on: "The normal force on a ramp". On "tilt" the boss slides up and the plank rotates to 30°, the box and scales riding it; the display is covered by a "?" chip during the rise, and the arc "30°" draws. On "down" chips "up?", "same?", "down?" and a 3-second countdown ring.
+
+### 2. the reading drops
+> It goes down, to one hundred and two **newtons**. But the box hasn't lost any weight. The Earth still pulls it straight down with one hundred and eighteen newtons, however the plank is tilted. What's changed is the surface. The scales measure the normal force, and normal means perpendicular, at right angles to the surface. So as the plank tilts, the normal force tilts with **it**, away from the weight. So why is it smaller? First, let's draw every force on the box.
+
+Visual: on "newtons" the "?" lifts and the display reads "102 N", ringed. The plank returns to flat over 1 s and tilts again slowly to 30° while two arrows draw from the box's centre: a purple weight arrow, which stays vertical and the same length the whole time (label "weight W = 117.6 N, always straight down"), and a teal normal arrow from the platform, which rotates with the plank, always at a right-angle mark to it, and shortens as the angle grows, its length matching the display. On "perpendicular" a gloss "normal: perpendicular (at right angles) to the surface". On "it" two chips fade in and take scribble crosses: "normal force points straight up" and "weight tilts with the ramp". On "smaller" the display "102 N" and the weight label "117.6 N" glow side by side.
+
+### 3. the forces on a box at rest on a slope
+> Isolate the box and shrink it to a dot. Its weight points straight down. The normal force points out of the slope, at right angles to it. And there's a third force. The box tends to slide down the slope, so static friction acts up the slope, along the surface, against that **tendency**. The box is at rest, so the forces must add to zero. Put them tip to tail, and they close into a **triangle**. The net force is zero.
+
+Visual: the scales fade out of the diagram (they stay faint on the plank); a dashed ink loop isolates the box, which shrinks to v12's dot in the right column with a faint copy of the 30° slope line under it. Arrows draw one per clause, to one scale (author note c; chip "1 cm = 40 N"): purple "W" down; teal "N" perpendicular to the slope line with a right-angle mark; on "tendency" a faint dashed arrow down the slope labelled "tends to slide" and then the terracotta "f (static friction)" up the slope, its tag "against sliding, or the tendency to slide". On "Put them tip to tail" the three arrows slide head to tail beside the dot; on "triangle" the chain closes on its own start and the triangle fills faintly; the net-force panel reads "net force = 0" (chip "at rest").
+
+### 4. no friction: the net force runs down the slope
+> Now grease the surface, so there's no friction. Just the weight and the normal force act, and they don't point in opposite directions, so they can't cancel. Tip to tail, they leave a gap, and the arrow that closes it is the net force. Look where it **points**: straight down the slope, along the surface. Across the slope, their parts cancel, so the box can only speed up along the slope. On a rough slope, with the box sliding down, friction points up the slope, and the net force still lies along the **slope**.
+
+Visual: the friction arrow fades from the dot (chip "frictionless"); on the plank the box (without scales) slides a short way down and is reset. The weight and normal slide tip to tail; a gap shows between the chain's end and its start. On "points" a thick ink double-headed arrow closes the gap and runs parallel to the slope line, downhill; the net-force panel shows it with "net force: along the slope (size: next video)". On "Across the slope" a pale perpendicular band across the slope dims both arrows' cross-slope parts to show they cancel. On "rough slope" terracotta friction returns up the slope, shorter than the net arrow's start; the net arrow shortens but stays along the slope line (tag "sliding down a rough slope").
+
+### 5. tilt the axes
+> That's a clue for choosing axes. With ordinary horizontal and vertical axes, the normal force and friction both sit at awkward angles, so we'd have to split two forces. Instead, tilt the axes to match the slope. One axis runs along the slope, and the other is perpendicular to it. Now the normal force lies on one axis, friction and any motion lie on the other, and only the weight sits at an **angle**. One force to split, instead of **two**.
+
+Visual: the rest-case dot (W, N, f) returns. Grey horizontal and vertical axes draw through the dot; the normal and friction arrows each show faint dashed components on them (tag "two forces to split"). On "tilt the axes" the axes rotate by 30° about the dot into "along the slope" and "perpendicular" (labels on the axes); the normal arrow snaps onto the perpendicular axis and glows; friction snaps onto the along axis and glows; their dashed components vanish. On "angle" the weight arrow glows alone, off both axes. On "two" a chip "only the weight needs splitting".
+
+### 6. the part of the weight that presses in
+> So let's split the weight. On flat ground, the perpendicular axis points straight up, in line with the weight. Tilt the plank by thirty degrees, and the perpendicular axis tilts by the same thirty **degrees**. So the weight makes the ramp's own angle, theta, with the perpendicular axis. Now shine light along the slope, and the weight casts a shadow on the perpendicular axis. That shadow is the part of the weight that presses the box into the surface. It sits next to the angle, and cos hugs the angle, so it's m g cos **theta**. The other part runs down the slope, and that's next video's job.
+
+Visual: left: the plank returns to flat; a dashed ink perpendicular line, fixed to the plank at the box, stands vertical beside the purple weight arrow (tag "in line"). On "Tilt" the plank rotates to 30° and the perpendicular line rotates with it; an amber arc between the vertical (weight) and the perpendicular line grows in step with the plank's arc; on "degrees" both arcs read "30°" and pulse together. Chip "angle between weight and perpendicular axis = θ" (gloss "θ, theta: the ramp's angle to the horizontal"). Right: the tilted axes at the dot; on "shine light along the slope" pale parallel light lines run along the slope direction; a dashed drop line runs from the weight's tip to the perpendicular axis, and a dashed purple shadow grows along that axis from the dot. Grey chip from v03 "cos θ = adjacent / hypotenuse". On "theta" the shadow turns solid and thinner: "W⊥ = mg cos θ (presses into the surface)". A dashed purple segment along the slope appears with "?" and the tag "the other part: next video".
+
+### 7. why the normal force equals m g cos theta
+> Why does the normal force equal that part? The box doesn't sink into the plank, and it doesn't lift off it. So across the slope there's no acceleration, and the forces across the slope must balance. The only forces across the slope are the normal force and that part of the weight. So N equals m g cos **theta**. As the angle **grows**, cos theta shrinks, so the normal force shrinks. Flat, it's the full weight. At sixty degrees, it's half the weight. Predict: what's the normal force when the ramp is **vertical**?
+
+Visual: right: the teal normal arrow and the solid purple W⊥ sit on the perpendicular axis, head to head, equal length; tag "no acceleration across the slope: these balance". On "theta" the boxed row "N = mg cos θ" writes. On "grows" the sweep (author note e): the plank rotates from 30° back to 0°, then up to 60°, the box riding it; on the right the shadow and the normal arrow change length together; readouts tick "θ", "cos θ", "N": 0° 1.00 118 N; 30° 0.866 102 N; 60° 0.500 58.8 N, each stop holding about half a second (chip "half the weight" at 60°). The plank stops at 60°; the dot diagram carries on alone to 80° (tag "diagram only"), and on "vertical" the readout covers with "?" and a 3-second countdown ring.
+
+### 8. worked example: the box on the scales
+> Zero. Cos ninety degrees is zero, so a vertical surface holds up none of the weight. Back to the box. Task: find the normal force on it. The equation is N equals m g cos theta. The givens: m is twelve point oh kilograms, theta is thirty point oh degrees, and g is nine point eight oh metres per second squared. So m g is one hundred and seventeen point six newtons. Times cos thirty, which is zero point eight six six, that's one hundred and two **newtons**, to three significant figures. That's the scales' reading, and it's less than the **weight**.
+
+Visual: the dot sweep reaches 90°: the shadow shrinks to a point and the normal arrow vanishes; readout "90° 0 0 N" (tag "a vertical wall holds none of the weight"). Clear change to the calculation layout: the plank at 30° with the box on the scales stays at the left. Task strip "Find the normal force on the box". Equation strip "N = mg cos θ (forces across the slope balance)". Givens group (navy): "m = 12.0 kg; θ = 30.0°; g = 9.80 m s⁻²" (grey tag "site values, taken to three significant figures"). `AlignedAlgebra` rows, one per cue: "mg = 12.0 × 9.80 = 117.6 N"; "N = 117.6 × cos 30.0° = 117.6 × 0.866"; on "newtons" "N = 102 N (3 s.f.)", boxed, and the scales' display "102 N" pulses. On "weight" a grey check line: "102 N < mg = 117.6 N ✓". A chip "mg sin θ = 58.8 N" fades in and takes a scribble cross (tag "that's the part along the slope, not the normal force").
+
+### 9. when something else acts across the slope
+> One condition. N equals m g cos theta only when the weight is the only other force across the slope. Suppose a string pulls the box straight away from the plank, with twenty newtons. Now the string and the plank share the job of balancing the pressing part of the weight, so the plank only pushes with eighty-one point eight **newtons**. A pull along the slope, though, changes nothing across it. So balance every force across the **slope**.
+
+Visual: the plank and box at 30° (scales removed). An orange string draws from the box's top face straight out, perpendicular to the plank, leaving the frame; an orange arrow "T = 20.0 N" along it. Right: the perpendicular axis with W⊥ = 101.8 N inward, T = 20.0 N outward and N shrinking; rows "N + T = mg cos θ"; on "newtons" "N = 101.8 − 20.0 = 81.8 N" boxed. On "A pull along the slope" the string swings to run up the slope (still leaving the frame); the T arrow lies on the along axis, and N grows back to "101.8 N" (tag "along the slope: N unchanged"). On "slope" a chip "Balance every force across the slope" stays.
+
+### 10. memory aid
+> A short way to remember it: squash gets cos. The squash is the part of the weight that presses into the surface, and it's m g cos theta, as long as theta is the ramp's angle to the **horizontal**.
+
+Visual: the dot with tilted axes and W⊥ solid stays. The handwritten line writes large: "Squash gets cos." Under it, smaller: "θ = the ramp's angle to the horizontal." On "horizontal" the plank's 30° arc at the hinge glows. Hold about 2 seconds.
+
+### 11. attempt 1 (countdown, 10 seconds)
+> Your turn. A five point oh oh kilogram crate rests on a ramp inclined at forty point oh degrees to the horizontal. Take g as nine point eight oh metres per second squared. Construct a labelled free-body diagram for the crate, showing the net force, and calculate the normal force on the crate. Pause here to answer.
+
+Visual: board clears. `QuestionCard` (subject "Physics"), worded as printed, with a small plain sketch (the plank plate at 40° with the box plate on it, the "40.0°" arc only; no arrows, axes or dot): "A 5.00 kg crate rests on a ramp inclined at 40.0° to the horizontal. Take g = 9.80 m s⁻². (a) Construct a labelled free-body diagram for the crate, showing the net force. (b) Calculate the normal force on the crate. (4 marks)" Tag: "HSC-style question, written for HSCScience". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 12. feedback 1 (brief)
+> Three forces. Weight straight down, the normal force perpendicular to the ramp, and static friction up the **ramp**. The crate's at rest, so the net force is zero. N is forty-nine point oh, times cos forty, which is thirty-seven point five **newtons**. Forty-nine newtons is the full weight, but the ramp only holds up the part that presses **in**.
+
+Visual: card shrinks to the top; "rests" and "40.0°" underlined as used. The dot at the right with purple W, teal N (right-angle mark) and terracotta f up the slope, labelled; net-force panel "net force = 0". On "newtons" rows "mg = 5.00 × 9.80 = 49.0 N" and "N = 49.0 × cos 40.0° = 37.5 N", boxed "(b) 37.5 N". On "in" a chip "N = mg = 49.0 N" fades in and is crossed (caption "only the part pressing in"). Hold about 1 second.
+
+### 13. attempt 2 (countdown, 10 seconds)
+> Last one. A two point oh oh kilogram steel block rests on a ramp inclined at thirty-five point oh degrees. A magnet fixed under the ramp pulls the block into the ramp surface, perpendicular to it, with a force of six point oh oh newtons. Take g as nine point eight oh metres per second squared. Calculate the normal force the ramp exerts on the block. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed, with an HSC-style line diagram (coded: a ramp outline at 35.0°, a rectangle labelled "steel block, 2.00 kg", a rectangle under the ramp surface labelled "magnet"; no arrows): "A 2.00 kg steel block rests on a ramp inclined at 35.0°. A magnet fixed under the ramp pulls the block into the ramp surface, perpendicular to it, with a force of 6.00 N. Take g = 9.80 m s⁻². Calculate the normal force the ramp exerts on the block. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 14. feedback 2 (brief)
+> Across the slope, the normal force balances two forces pressing in. The pressing part of the weight is nineteen point six, times cos thirty-five, which is sixteen point oh six **newtons**. Add the magnet's six point oh oh, and N is twenty-two point one **newtons**. Sixteen point one newtons forgets the magnet. The formula only covers the **weight**.
+
+Visual: card shrinks to the top; "pulls the block into the ramp surface, perpendicular to it" underlined. The perpendicular axis at the right: teal N outward; purple W⊥ and a grey "magnet 6.00 N" arrow inward, head to tail. Rows "mg cos θ = 19.6 × cos 35.0° = 16.06 N"; on "newtons" (second) "N = 16.06 + 6.00 = 22.1 N", boxed. On "weight" a chip "N = mg cos θ = 16.1 N" fades in and is crossed (caption "include every force across the slope"). Hold about 1 second.
+
+### 15. handoff
+> So a ramp holds up only the part of the weight that presses into it, m g cos theta, and that part shrinks as the ramp gets steeper. But the other part of the weight, along the slope, is still untouched. Next, we'll find it, and use it to work out how fast the box speeds up when it **slides**.
+
+Visual: the memory line returns small at the top. The plank at 30° with the box, faint, at the left; the dot with tilted axes at the right, W⊥ solid with "mg cos θ" and the teal N balancing it. On "the part along the slope" the dashed purple along-slope segment brightens with "?". On "slides" the chip "Next: How does splitting weight along a ramp give the acceleration down it?". This is the final frame of the video (series rule). Hold about 2 seconds.
+
+### 16. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Weight W = mg always points straight down. The normal force N is perpendicular to the surface, so on a ramp it tilts.
+2. Free-body diagram on a slope: weight (down), normal force (perpendicular to the slope), friction (along the slope, against sliding or the tendency to slide). At rest the net force is zero; otherwise it lies along the slope.
+3. Use tilted axes: along and perpendicular to the slope. The weight makes angle θ (the ramp's angle) with the perpendicular axis; its perpendicular part is mg cos θ.
+4. Nothing accelerates across the slope, so the forces across it balance: N = mg cos θ when no other force acts across the slope. N is less than mg, and it falls as θ grows.
+
+Memory aid (large, on the notes screen): *Squash gets cos.* Second line: *θ = the ramp's angle to the horizontal.*
+
+At the end the notes cross-fade back to scene 15's final frame (series rule: the handoff frame is the video's last frame).
+
+## Teaching checks
+
+- **Does it explain causes?** Why the scales read less: the normal force only has to balance the part of the weight that presses into the surface (2, 6, 7). Why the normal force tilts: normal means perpendicular to the surface (2). Why the net force lies along the slope: across the slope the forces cancel (4). Why tilt the axes: then only the weight is off-axis (5). Why the angle is θ: the perpendicular turns with the plank (6, shown). Why cos: the part pressing in sits next to the angle (6, v03's rule). Why N equals it: no acceleration across the slope (7). Why N falls with angle: cos θ falls (7, the sweep). Why the formula can fail: another force across the slope changes the balance (9).
+- **Misconceptions addressed:** N = mg on a slope (2, 8, feedback 1 crossed); normal straight up (2, crossed); weight tilts with the ramp (2, crossed); friction "opposes motion" (3: it acts on a box at rest, against the tendency to slide); N = mg cos θ in every case (9, feedback 2 crossed); mg sin θ as the normal force (8, crossed chip).
+- **One idea at a time:** the reading (1, 2), the directions (2), the diagram at rest (3), the net force without friction (4), the axes (5), the angle and the shadow (6), the balance and the sweep (7), the numbers (8), the condition (9).
+- **Video makes it easier:** the student watches the weight stay vertical while the normal arrow turns and shrinks with the plank and the scales' digits fall (2); watches three arrows close into a triangle (3) and two arrows leave a gap along the slope (4); watches the axes rotate and two forces snap onto them (5); watches the perpendicular line turn with the plank so the two arcs match (6); watches the shadow and the normal arrow shrink together in the sweep (7).
+- **Response opportunity:** two 3 s in-teaching predictions (1, 7); two unseen HSC-style tasks, 10 seconds each with the invitation to pause, every condition on the card, nothing answer-bearing (the A1 sketch has no arrows; the A2 diagram shows the magnet's position but no force arrows). One crossed mistake each; feedback about 25 s and 30 s.
+- **Avoided double teaching:** components as shadows (v03), the free-body dot (v12), balanced forces (v13), static friction (v19) and level-ground N = mg (v20) are recalled in a line each.
+- **Syllabus coverage:** `ci90862bda`: gravitational, normal, frictional and net force on an inclined plane (2 to 5, A1); `ci85e17ad3`: N = mg cos θ from the balance, its condition, `we-1` (6 to 9, A1, A2).
+- **Out of scope by design:** mg sin θ as a calculation, acceleration along the slope (v22); friction sizes and full problems (v23); the investigation (v24).
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 11; original wording, HSC style, 4 marks suggested, not an official marking scheme).** "A 5.00 kg crate rests on a ramp inclined at 40.0° to the horizontal. Take g = 9.80 m s⁻². (a) Construct a labelled free-body diagram for the crate, showing the net force. (b) Calculate the normal force on the crate."
+Model answer: (a) Weight W = mg = 49.0 N vertically down; normal force N perpendicular to the ramp surface, away from it; static friction f along the ramp, up the slope (against the crate's tendency to slide down). The crate is at rest, so the net force is zero (a net-force panel or a statement "F_net = 0"). (b) No acceleration perpendicular to the ramp and no other force across it, so N = mg cos θ = 49.0 × cos 40.0° = 37.5 N. Classic mistake (crossed): "N = mg = 49.0 N".
+
+**Attempt 2 (scene 13; original wording, HSC style, 3 marks suggested).** "A 2.00 kg steel block rests on a ramp inclined at 35.0°. A magnet fixed under the ramp pulls the block into the ramp surface, perpendicular to it, with a force of 6.00 N. Take g = 9.80 m s⁻². Calculate the normal force the ramp exerts on the block."
+Model answer: No acceleration perpendicular to the ramp, so the forces across the slope balance: N = mg cos θ + 6.00 = 2.00 × 9.80 × cos 35.0° + 6.00 = 16.06 + 6.00 = 22.1 N. Classic mistake (crossed): "N = mg cos θ = 16.1 N" (the magnet ignored).
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Box weight | 12.0 kg × 9.80 = 117.6 N (display 118 N) | 1, 2, 8 |
+| Scales readings | 0° 118; 10° 116; 15° 114; 20° 111; 30° 102 N | 1, 2 |
+| Rest diagram (30°) | W 117.6 N; N 101.8 N; f 58.8 N (unlabelled sizes) | 3, 5 |
+| Frictionless net (30°) | 58.8 N along the slope (unlabelled) | 4 |
+| Sweep | cos θ 1.00, 0.866, 0.707, 0.500, 0; N 118, 102, 83.2, 58.8, 0 N | 7, 8 |
+| Worked (site we-1) | mg 117.6 N; cos 30.0° 0.866; N 101.8 = 102 N; crossed 58.8 N | 8 |
+| Condition | 101.8 − 20.0 = 81.8 N; along-slope pull: 101.8 N | 9 |
+| A1 | 49.0 N; cos 40.0° 0.766; N 37.5 N; crossed 49.0 N | 11, 12 |
+| A2 | 19.6 N; cos 35.0° 0.819; 16.06 N; N 22.1 N; crossed 16.1 N | 13, 14 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (2 Nov); Codex to re-check.
+
+- 12.0 × 9.80 = 117.6; 117.6 cos 10° = 115.8; cos 15° gives 113.6; cos 20° gives 110.5; cos 30° gives 101.84; cos 45° gives 83.16; cos 60° gives 58.80; cos 90° gives 0.
+- 117.6 sin 30° = 58.8 (static friction at rest; frictionless net force).
+- 101.84 − 20.0 = 81.84 = 81.8.
+- A1: 5.00 × 9.80 = 49.0; 49.0 cos 40.0° = 37.54 = 37.5; 49.0 sin 40.0° = 31.50.
+- A2: 2.00 × 9.80 = 19.6; 19.6 cos 35.0° = 16.055; + 6.00 = 22.055 = 22.1.
+- Static hold at 30°: tan 30° = 0.577.
+
+## Memory aid check
+
+- **"Squash gets cos."** Written for this lesson; v22 adds "slide gets sin". Meaning, as said in scene 10: the part of the weight that presses ("squashes") the object into the surface is mg cos θ. Assumptions checked: θ must be the ramp's angle to the horizontal (second line on screen and spoken); it names a component of the weight only, not the normal force in every case (scene 9 and A2 show when N differs, and key note 4 carries the condition); it holds for 0° to 90°. It helps a new case: whatever the ramp's angle, the student knows which trig ratio goes with the pressing part without redrawing the triangle, and the word "squash" points at the surface, which is what the normal force acts against. Introduced after the cause (6, 7) and the example (8).
+- **Considered, not used:** "cos is close" (vaguer); v03's "Cos hugs the angle" alone (true, recalled in scene 6, but it doesn't tell the student which angle the weight makes with which axis on a ramp, which scene 6 shows).
+
+## Narration length estimate
+
+Revision 1 count (2 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,231 characters**, 16 scenes. Characters per scene (1 to 16): 415, 461, 412, 505, 435, 589, 504, 543, 433, 192, 315, 336, 373, 339, 289, 75. At 13.3 characters per second the speech is about 468 s; add about 18 s of holds and settling (the slow re-tilt in 2, the triangle in 3, the axis rotation in 5, the sweep in 7, the 2-second memory hold), 6 s for two prediction countdowns, 20 s for two attempt countdowns, 2 s of feedback holds and about 55 s more of the quiet notes hold (about 100 s of holds): **about 568 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Two syllabus points, the four-force diagram, the axes, the geometry, the balance and its condition fill it without padding. Scene 7 is the longest visual beat (the sweep must stop on each spoken value); if the learning review finds it long, drop the 80° dot-only continuation and go straight to the prediction.
+
+## Scene list and build ids
+
+Lesson key `p-y11-v21` (route phys-y11-fa1-v21). Suggested explainer folder `src/explainer/lessons/phys-y11-fa1-v21` and build folder `docs/production/claude-pm/lessons/p-y11-v21` (root to confirm).
+
+In order (kebab-case; 16 scene headings, all `### N.`): hook, reading-drops, forces-at-rest, net-without-friction, tilted-axes, pressing-part, normal-balance, worked-example, condition, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`: the learner reads the worded question and works during the countdown) and key-notes (`hold`: the learner copies four notes). The hook and normal-balance carry 3 s prediction countdowns inside explain scenes. Transitions (`pickTransition`): v20's last frame continues into scene 1 (camera continue: the floor becomes the plank); 1 to 2 camera continue (same plank); 2 to 3 camera push from the box to the dot (isolate); 3 to 4 to 5 camera continue (same dot); 5 to 6 split board (plank left, dot right); 6 to 7 camera continue; 7 to 8 clear change to the calculation layout; 8 to 9 camera continue; 9 to 10 camera continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
+
+Holds: hook and normal-balance (3 s countdowns), attempt-1, attempt-2 (10 s countdowns after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/p-y11-v21-learning-review.md`, `science_check` = `checks/p-y11-v21-physics-check.md`.
+
+## Assets
+
+Have (inspected 2 Nov as named in earlier designs; uniform scaling only, never stretched):
+- `y11p-box-v1.png` (requested in v12; a plain closed box, side view): the 12.0 kg box (scenes 1 to 9, 15) and the A1 sketch.
+- **Inspected, not used:** `public/assets/chemistry/m6-burette-clamp-stand-v1.png` (a stand with a burette and clamp: chemistry apparatus, and its clamp can't slide); `public/assets/scale.png` (a balance-style kitchen scale, not a flat platform); `public/assets/chemistry/m7-hdpe-crate-v1.png` (rejected in v12 for perspective).
+
+Need (new plates, Codex; the ramp kit is shared by v21 to v24, so it is specified once here):
+1. `y11p-ramp-plank-v1.png`: scenes 1 to 9, 11, 15; v22, v23. Essential.
+2. `y11p-ramp-hinge-block-v1.png`: scenes 1 to 9, 15; v22, v23. Essential.
+3. `y11p-retort-stand-v1.png`: scenes 1 to 9; v22 to v24. Essential.
+4. `y11p-boss-crossbar-v1.png`: scenes 1 to 9; v22 to v24. Essential.
+5. `y11p-protractor-v1.png`: scenes 1, 2, 6, 7; v24. Essential (the angle scale).
+6. `y11p-force-scales-v1.png`: scenes 1, 2, 3 (faint), 7, 8. Essential (the hook's measurement).
+
+Coded: the floor line; the angle arcs and the protractor's numerals (0 to 90 in tens); the scales' display digits; all force arrows (`Arrow`, one colour per force) and the free-body dot; the isolating loop; the tip-to-tail chains and gap; the net-force panel; axes and their rotation; the perpendicular line fixed to the plank; light lines, drop lines and shadows; the sweep readouts; the string in scene 9; `AlignedAlgebra`; `Countdown`; `QuestionCard` with the A2 line diagram; `Chip` with `cross`; `KeyNotes`; `Heading`.
+
+Kit gaps (for the build brief):
+1. **`TiltRamp`** (new, physics; serves v21 to v24): props `angle` (degrees, animatable), plank plate and its hinge pivot and top-surface line (from the plate's sidecar), stand x-position; it rotates the plank about the hinge, slides the boss so the crossbar's top sits under the plank's underside (height = d tan θ for stand distance d), and exposes a `surfacePoint(s)` and `surfaceAngle` so objects ride the plank at distance s along it, rotated to the surface. Includes the coded angle arc and protractor numerals.
+2. **`FreeBodyDot`** (v12's gap, now needed): a dot with named, coloured, scaled arrows; optional tilted axes; optional component shadows with light lines and drop lines (v03 gap 1 on any axis pair); a separate net-force panel; a tip-to-tail mode that slides the arrows into a chain and draws the closing arrow.
+3. **`ScalesDisplay`**: seven-segment digits clipped to the scales plate's display window (window rectangle from the sidecar), driven by a value function.
+
+## Codex asset brief (Year 11 Physics FA1 v21, adjustable ramp kit and force scales)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; design `docs/production/claude-pm/lessons/phys-y11-fa1-v21.md`. Paint after the learning review, physics check and error check pass and the owner gives the go-ahead. Transparent PNG with a true alpha channel, clean edges with no coloured fringe or halo (check on black and white), ink and watercolour in the house style matched to `public/assets/biology/b4-car-blue-v1.png`, at least 8 per cent clear margin, no text, labels, numbers, scale numerals, brand names, people, hands, faces, backdrop, floor, glow or ground shadow. Keep the native aspect; never stretch. Each plate gets a small JSON sidecar with the named pixel coordinates below (the code rotates and places by them).
+
+1. **`y11p-ramp-plank-v1.png`**: a plain, smooth, light-coloured timber plank seen exactly side-on (edge view), lying horizontal: about 14 times as long as it is thick (for example 2800 × 200 px canvas), square ends, fine straight grain along its length, a flat, clean top edge. At its left end, a small brass hinge knuckle at the lower-left corner. It is rotated by code about the hinge. Sidecar: hinge centre; the top-surface line's two end points; the underside line's two end points.
+2. **`y11p-ramp-hinge-block-v1.png`**: a low wooden block that the plank's hinge is screwed to, side view, about 3:1, its top at the hinge height. Fixed on the floor line. Sidecar: the hinge centre on its top face; its base line.
+3. **`y11p-retort-stand-v1.png`**: a school retort stand side view: a heavy, dark rectangular cast base and one tall, thin, polished steel rod rising from near one end (rod about 6 times the base length, and in use at least as tall as the plank's length above the hinge height, because v22 stands the plank vertical against it), no clamp, boss or bosshead. Sidecar: the rod's centre line (bottom and top points); the base line.
+4. **`y11p-boss-crossbar-v1.png`**: a boss head (bosshead clamp) with its thumbscrew, shown side-on as it would sit on the stand's rod, carrying a short steel crossbar that points straight towards the viewer, so the crossbar reads as a small round end (a circle with a highlight) on the side away from the rod. The plank rests on top of that round end. Painted separately so it slides up and down the rod by code. Sidecar: the rod-hole centre line; the top point of the crossbar's round end.
+5. **`y11p-protractor-v1.png`**: a clear, faintly tinted plastic 180° protractor, flat edge down, seen face-on, with fine black tick marks every degree and longer ticks every 10° but **no numerals** (numerals are coded), a small centre mark on the flat edge. Transparency in the plastic must be partial alpha (the plank and floor show through). Sidecar: the centre mark; the 0° and 180° tick ends.
+6. **`y11p-force-scales-v1.png`**: a slim, flat platform scale (bathroom-scale shape, grey and white) seen side-on, so it rests flat on the plank: a thin platform with a rubber mat on top and small feet underneath, and on its front face a dark, blank rectangular display window (no digits). Sidecar: the base line (feet), the top-surface line, the display window rectangle.
+
+Inspected and reused (no repaint): `y11p-box-v1.png` (from the v12 brief).
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and every value in the narration, screen text, attempts and key notes against the "Numbers used" table.
+2. Confirm the scales' displayed readings follow N = 117.6 cos θ and read 118 N flat and 102 N at 30°.
+3. Confirm the physics claims: weight vertical; normal force perpendicular to the surface; static friction along the surface against the tendency to slide; at rest the three forces close (net zero); with no friction the net force lies along the slope; the angle between the weight and the perpendicular axis equals the ramp angle; N = mg cos θ only with no other force across the slope and no acceleration across it; a pull perpendicular and away reduces N; a pull along the slope does not change N; N = 0 at 90°.
+4. Confirm the arrow scales and that the scene 3 triangle closes and the scene 4 closing arrow lies along the slope (author notes c, d).
+5. Confirm the memory aid's condition (θ the ramp's angle to the horizontal) is on screen and spoken.
+6. Confirm both attempt questions are original in wording, carry every needed condition (at rest; the magnet's direction), and that the cards show no force arrows, axes or answers.
+7. Confirm the syllabus quotes match the route JSON exactly and no 2017-syllabus label appears.
+8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
+9. Confirm the narration character count by script with the build parser rules.
+10. Add site corrections 1 and 2 under Decisions to `../site-corrections-phys-y11.md` (owner record only).
+
+## YouTube metadata (draft)
+
+Title: Normal Force on an Inclined Plane: Why N = mg cos θ | Year 11 Physics
+
+(Title length: 71 characters.)
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year11/fa1-fundamentals-of-mechanics/lesson20.sa.html
+
+A box on a set of scales reads 118 N on a flat plank and only 102 N when the plank tilts to 30°, yet the box weighs exactly the same. See why: the weight always points straight down, but the normal force stays perpendicular to the surface, so the ramp only has to hold up the part of the weight that presses into it. Build a complete free-body diagram on a slope (weight, normal force, friction and the net force), see why tilted axes make the problem simpler, watch the weight's shadow on the perpendicular axis give mg cos θ, and learn when N = mg cos θ needs another force added. Two exam-style questions at the end.
+
+Year 11 Physics (2025 syllabus), Focus Area 1: Fundamentals of mechanics.
+Syllabus content (NSW Physics 11-12, 2025):
+"Determine the normal force on objects on inclined planes" (ci85e17ad3)
+"Construct free-body diagrams to show the gravitational, normal, frictional and net force acting on an object on an inclined plane" (ci90862bda)
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa874ba975
+
+Builds on: Applying Newton's laws to real situations (previous video). Next: Resolving weight and the acceleration down a ramp.
+
+#Year11Physics #Physics #InclinedPlanes #HSCScience
+
+## Open decisions
+
+- **1. Opening frame (assumption, root with v20's designer).** v20's design was not available. This design assumes v20 ends on the box plate on a level floor with equal weight and normal arrows and an "N = mg" chip. If v20's final frame differs (another object, the 25 kg crate's 245 N labels, or a free-body dot only), scene 1's first sentence still holds ("on level ground, the floor pushed up on the crate exactly as hard as gravity pulled down") and only the first 2 seconds of the visual change: the v20 object cross-fades to the box on the scales. If v20 uses a different object word than "crate", change one word before voicing.
+- **2. Route refinement (adopted from the pack; root to record).** The pack proposes "Start with force components and a tilted surface. Stop at perpendicular weight and normal under no perpendicular acceleration. Hand the parallel component to v22." Adopted, with one addition the syllabus point needs: the net force's direction (along the slope) is shown here, its size left to v22. Root to replace the route's placeholder stop and next-handoff wording.
+- **3. Card diagrams.** A1's card uses the painted plank and box (a sketch, no arrows); A2's uses an HSC-style line diagram (ramp outline and labelled rectangles), because a magnet and steel block would need two more plates for one card. Root to confirm the line diagram is acceptable on a practice card.
+- **4. Ramp kit size.** Six plates serve four videos. If root prefers fewer, the hinge block can be coded as a plain wooden rectangle, but the stand, boss and protractor carry the "measured angle" idea through to v24.
+- **5. Site link form.** As v08.
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v03, v12, v13, v19 and v20 at Year 11 entry; check that the scales reading makes the question feel real; that "normal means perpendicular" lands before the diagram; that the closing triangle and the gap along the slope make the net-force direction feel caused; that the perpendicular line turning with the plank shows why the angle is θ; that the condition in scene 9 is understood and A2 is fair; that the cards give nothing away), then the Codex physics check and error check.
+- The tilting plank with the turning normal arrow and falling digits (2), the closing chain (3, 4), the rotating axes (5), the matching arcs and shadow (6) and the sweep (7) carry the explanation; judge them at playback speed in the voiced preview. All arrow lengths, readouts and shadows must come from the same angle value.
