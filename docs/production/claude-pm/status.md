@@ -1881,3 +1881,41 @@ All six reviewed one at a time, no sub-agents. Fresh official source HTML, count
 Scoped TypeScript passes. New772 numerical assertions and invalid-input regressions pass; earlier12,745 assertions and2,774 plotted values still pass. Forty desktop/phone-landscape stills inspected across the parts. Separate `out/explainer/maths-strand-kit-pilot/brief135-motion-sample.mp4`:480frames,16seconds,1920x1080,silent,full decode passed. One sample contains parts2,3,6,8 in motion. `brief135-manifest.json` verifies6 source hashes and41 artifact hashes; `media-check.json` records video verification. Domain-strip layout fixed and final views verified. Shared lock,owned browser and temporary bundle cleaned;no server left. Claude must judge the exact sample at playback speed; no motion,voiced or human-listening approval claimed.
 
 Briefs133,134,135 are finished in the requested order. No lesson designs,speech,commits or pushes changed. Review findings need Claude's repairs; exact voiced timing/listening remain later gates.
+
+### Brief136: complete hand-in (1 November2026)
+
+1. Whole-course outline: `programme/maths-a12-course-outline.json` and `.md` propose67 videos including d01-d10 and optional practice; all158 fresh official Year12 content points have an owner,none unowned. Strand-order reasons and source gaps are explicit. This is Claude's route input,not a canonical route or teaching approval.
+2. Next preparation: `programme/maths-a12-route-inputs-2.json` and14 packs `pre-design/maths-a12/math-a12-d11.md` throughd19 andi01 throughi05,with exact syllabus HTML/IDs,actual source data-step/example IDs and hashes,entry knowledge,boundaries,handoffs,recalculated original site numbers and28 original candidate questions/answers. SymPy derivative checks and numeric/substitution checks pass. Source gaps are explicit. Site log48-50 adds two confirmed source issues and corrects the earlier reciprocal-trig coverage overstatement without changing the historical crosswalk.
+3. Kit needs: `checks/maths-kit-needs-next-strands.md` maps every prepared video to existing parts and new needs; later signed-area,accumulation,probability and cash-flow requirements named. Validation in `work/brief136/validation.json` confirms67 unique IDs,158 point owners,14 packs,28 questions and source hashes. No designs,product code,speech,renders or commits. Brief136 complete before137 starts.
+
+### Brief 137: complete hand-in (1 November 2026)
+
+1. Ledger: `programme/syllabus/phys-new-y11.json` records all 168 official Year 11 Physics (2025) points across FA0 to FA3, exact CMS codenames, wording, source HTML/URLs and retrieval date.
+2. Map: `programme/phys-y11-video-map.md` and `programme/phys-y11-route-inputs.json` map all 79 site lessons to 101 proposed videos, with every point assigned, source sections/hashes, entry knowledge, boundaries and handoffs; named investigations are separate, and the old kit is drawing reuse only. Claude must finalise WS playlist placement and the route.
+3. Packs: `claude-pm/pre-design/phys-y11/phys-y11-fa1-v01.md` to `v12.md` contain exact site examples, recalculations, misconceptions, drawing needs and 24 worked candidate questions; `claude-pm/site-corrections-phys-y11.md` records seven confirmed passages and separate precision notes. Validation: `work/brief137/validation.json`. No designs, product code, speech, renders, commits or subagents. Complete before starting brief 138.
+
+### Brief 138: complete hand-in (1 November 2026)
+
+chem-m5-g02b Revision 1: 0 blockers, 4 unique should fix, 0 optional; 5664 narration characters including scene joins, about 573 s (root accepted). Reports: `checks/m5g02b-learning-review.md` and `checks/m5g02b-claude-science-check.md`. Conditions, graph inference and rounded build data need resolution; G02 Revision 8 part-two wording matches.
+
+bio-y11-fa1-v01 Revision 1: 0 blocker, 4 unique should fix, 0 optional; 5,986 narration characters including scene joins, about 568 s. Reports: `checks/y11b-v01-learning-review.md` and `checks/y11b-v01-science-check.md`. Repairs are replacements or name cuts; no added duration.
+
+bio-y11-fa1-v02 Revision 1: 0 blocker, 2 unique should fix, 0 optional; 5,963 narration characters including scene joins, about 565 s. Reports: `checks/y11b-v02-learning-review.md` and `checks/y11b-v02-science-check.md`. Repairs are replacements or name cuts; no added duration.
+
+bio-y11-fa1-v03 Revision 1: 0 blocker, 3 unique should fix, 0 optional; 5,799 narration characters including scene joins, about 563 s. Reports: `checks/y11b-v03-learning-review.md` and `checks/y11b-v03-science-check.md`. Repairs are replacements or name cuts; no added duration.
+
+bio-y11-fa1-v04 Revision 1: 0 blocker, 3 unique should fix, 0 optional; 5,850 narration characters including scene joins, about 564 s. Reports: `checks/y11b-v04-learning-review.md` and `checks/y11b-v04-science-check.md`. Repairs are replacements or name cuts; no added duration.
+
+bio-y11-fa1-v05 Revision 1: 1 blocker, 1 unique should fix, 0 optional; 5,860 narration characters including scene joins, about 565 s. Reports: `checks/y11b-v05-learning-review.md` and `checks/y11b-v05-science-check.md`. Fresh cheek sampling is held against the public NSW CSIS restriction; use the prepared-slide fallback. Current 2026 staff-only biological-material policy was not accessible.
+
+bio-y11-fa1-v06 Revision 1: 0 blocker, 3 unique should fix, 0 optional; 5,728 narration characters including scene joins, about 552 s. Reports: `checks/y11b-v06-learning-review.md` and `checks/y11b-v06-science-check.md`. Repairs are replacements or name cuts; no added duration.
+
+Site: `site-corrections-bio-y11.md` contains ten verified exact-text rows, a syllabus-method coverage gap and explicit rejected/unverified author suggestions. Fresh official FA1 HTML and numerical/source evidence: `work/brief138/`. All seven designs were reviewed sequentially and are unchanged. No subagents, speech, renders or commits. Complete before starting brief 139.
+
+### Brief 139: candidates prepared, precise cleanup awaiting user choice (1 November 2026)
+
+After brief 138 was handed in, generated all 20 new plate candidates and attempted the two requested alpha repairs, without subagents, designs, speech or commits. `assets/brief139-manifest.json` records prompts, references, native dimensions, alpha and hashes; `assets/brief139-qa/` contains 66 QA composites; `assets/brief139-inspection.md` lists failed conditions. Per-design provenance files are written. Both old assets remain untouched because image-tool repairs changed interiors/geometry. Exact onion/cheek counts, coloured fringe, requested canvas fit, crucible haze and lysosome registration remain. Asked the user whether local pixel editing may be used; no answer yet. Brief 139 is not marked complete.
+
+### Brief 139 complete: final plates and alpha repairs (1 November 2026)
+
+Supersedes the earlier pending-cleanup entry. User authorised local pixel editing. Delivered 20 final plates and two alpha-only repairs; exact 15 onion lengths, eight equivalent cheek widths and ten bacteria are verified. Bubble registration, lysosome alignment, common glass/grid scale, transparent backgrounds, canvases and final hashes pass local QA. Both repaired originals preserve all RGB and interior pixels; original neuron.png is preserved with a new sibling replacement. See assets/brief139-manifest.json, brief139-validation.json, brief139-inspection.md and brief139-qa/final/. All seven provenance files updated. No design edits, speech, renders or commits. Briefs 136, 137, 138 and 139 completed sequentially.

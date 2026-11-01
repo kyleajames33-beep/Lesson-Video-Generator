@@ -527,3 +527,15 @@ The core example x cubed-3x on[0,3] has only the interior stationary minimum-2 a
 ## Local/global convention clarification (brief134,d10)
 
 Do not log“Every global extremum is local” as unconditionally false. It is true under the definition using neighbourhoods relative to the domain; two-sided interior-local conventions treat endpoints separately. Specify the intended convention. An endpoint winner need not be stationary or a turning point. [OpenStax4.3](https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima) explicitly uses the interior-local convention. No site edits.
+
+## 48. applications lesson08: relative heights do not prove discontinuity (brief136)
+
+Exact source line410: “The minimum sits ABOVE the maximum, which only a discontinuous curve can do.” This is false in general. The continuous function f(x)=x+2sin x has a local maximum at2pi/3 with value2pi/3+sqrt3, and a later local minimum at10pi/3 with value10pi/3-sqrt3, which is higher. Replace with “In this example the two extrema lie on separate branches, so their heights do not compare neighbouring points.” Keep the correct x+1/x extrema and excluded zero.
+
+## 49. applications lesson02: rounded decay parameter used as an exact equality (brief136)
+
+Line507 prints “N(30)=200e^(-0.0578 times30)=200e^(-1.733)”. The displayed multiplication is1.734, not1.733. Retain k=-ln2/12 until evaluation: N(30)=200exp(-30ln2/12)≈35.355g. Use approximate signs for rounded displays. The short-answer check at line746 similarly uses .0866 times20=1.732, not1.733; retain -ln2/8 for its50g/20day calculation, yielding50·2^(-2.5)≈8.839g. The rounded final amounts remain correct.
+
+## 50. reciprocal-trig source-coverage correction (brief136)
+
+Fresh inspection of differential lesson05 finds tan=sin/cos and the tan quotient proof, but no sec/cosec/cot derivative worked teaching. The earlier crosswalk's “covered” for cifea7f68d overstates that page. Keep the historical crosswalk, but treat d12 as requiring original reciprocal-derivative preparation. This is a source-coverage correction, not a claim the page prints a false derivative. The whole-course outline and route inputs explicitly record the gap.

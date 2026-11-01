@@ -11,9 +11,13 @@ Written by Claude (root) after reading the three designers' open decisions. Revi
 7. **Prediction holds:** short in-teaching predictions use a 3 s countdown; end-of-video attempts keep the 10 s countdown.
 8. **Centrioles (v03):** on screen only, with a label; not spoken.
 9. **v04 bacterium art:** the new cutaway plate replaces the ambiguous existing bacterium plate for this video only; the old plate stays for videos already built.
-10. **v05 cheek cells:** keep the cheek-cell mount, said as "if your school's risk assessment allows it", with sterile swab use and disposal into disinfectant shown. The onion mount is the main method.
+10. **v05 cheek cells (superseded 1 Nov, after brief 138):** NSW Department of Education Chemical Safety in Schools guidance prohibits human tissue, including cheek-cell smears, in science practicals, and a school risk assessment does not override it. v05 uses a commercially prepared cheek-cell slide; no sampling, swab or disposal is shown. The onion mount is the only student-prepared mount. v06's ×400 cheek field is a prepared slide too.
 11. **v05 stain order:** site order kept, with the grey tag noting the alternative.
 12. **v06 spoken counts:** the plates are painted to match the narration (15 onion cells across the ×40 field; about 8 cheek cells across the ×400 field). Plates change, not numbers.
 13. **v06 `neuron.png`:** the plate brief checks its provenance (`assets` manifests) before reuse; if unknown, paint a new one.
 14. **Site corrections log:** create `claude-pm/site-corrections-bio-y11.md` from the six designs' site findings (brief 138).
 15. **Syllabus lines in YouTube descriptions:** quote the content point verbatim with its ID, for example "B25-FA1-G1-01: Use a variety of sources to compare...". Course label: "Year 11 Biology (2025 syllabus), Focus Area 1".
+
+## After brief 138 (1 November 2026)
+
+All seven designs (chem-m5-g02b and v01 to v06) are at Revision 2 with every blocker and should-fix finding applied as a replacement or a reviewer-named cut. Decision 10 is superseded as above. Decision 7 is applied in v05 and v06 (3 s countdown on the in-teaching predictions). Next gate: a Codex error check of the seven Revision 2 files.

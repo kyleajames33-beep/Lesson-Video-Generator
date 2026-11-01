@@ -1,0 +1,1226 @@
+{
+  "brief": 139,
+  "date": "2026-11-01",
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "root",
+      "name": "y11-root-cell-v1.png",
+      "path": "public\\assets\\biology\\y11-root-cell-v1.png",
+      "sha256": "15a6a8cd27a760341d7a1ba8886e184c1678cb361a04289c67cf3f4351ffe5f9",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Use case scientific-educational. Generate a single root cortex plant cell, same house fine ink and layered watercolour style, scale, line weight and viewpoint as the reference plant cell. 2000x2000 square transparent PNG with 8 percent clear margin. Boxy cellulose cell wall pale tan/cream NOT GREEN, thin membrane immediately inside, one very large pale-blue central vacuole, nucleus pushed to one side, several small orange mitochondria and several pearl-white rounded amyloplast starch grains. Short stubs of neighbouring walls at corners. No chloroplasts and no green anywhere. No text, labels, arrows, people, hands, faces, logos, ground shadow. Reference is for style, cell geometry and scale only; remove all green chloroplasts.",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ]
+    },
+    {
+      "key": "vesicle-r2",
+      "name": "y11-vesicle-v1.png",
+      "path": "public\\assets\\biology\\y11-vesicle-v1.png",
+      "sha256": "81df3b6a28c68a08fc47316328aee1da5e0a6bb987fa27decc2147438839de88",
+      "dimensions": [
+        600,
+        600
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Edit empty vesicle sprite. Make the membrane ring much thinner, only about2 percent of vesicle diameter, with just two close delicate lilac contour strokes for a single membrane bilayer. Remove all chunky granules and bead shapes from membrane. Empty faintly translucent interior. Remove all magenta fringe outside. Preserve same round shape and transparent background, no glow, no text. Square600x600 with10percent margin, delicate ink-watercolour.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-cd41a672-c3ed-4465-bf56-817963479202.png"
+      ]
+    },
+    {
+      "key": "crucible-r2",
+      "name": "m5-g02b-open-crucible-v1.png",
+      "path": "public\\assets\\chemistry\\m5-g02b-open-crucible-v1.png",
+      "sha256": "020bace330fd65460226cadd5718174b30c8056fb6231161444ca38fe444a215",
+      "dimensions": [
+        1280,
+        1920
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas. Removed broad low-alpha haze, preserving solid apparatus and flame.",
+      "sourceCandidate": null,
+      "prompt": "Edit target only background alpha. Remove ALL the grey and white glow/haze surrounding the crucible, tripod and Bunsen burner. Every pixel outside the actual solid apparatus and blue flame must be truly transparent. Keep all object geometry, powder, ceramic, triangle, tripod and blue flame EXACTLY unchanged. No shadow or backdrop, no halo. Preserve portrait composition. Also clean any fluorescent edge fringe, neutral antialiasing only. No text.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-edbd11db-8957-4f3b-93db-445ccd77afec.png"
+      ]
+    },
+    {
+      "key": "bacterium",
+      "name": "y11-prokaryote-cutaway-v1.png",
+      "path": "public\\assets\\biology\\y11-prokaryote-cutaway-v1.png",
+      "sha256": "83d02756fb2a5625f1279f212625923a1a026e0bfb3e3c57ebb5a984c342e8db",
+      "dimensions": [
+        2400,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "One horizontal rod bacterium cut away along its near half, 2400x1400 landscape. Clearly distinct capsule pale transparent slime halo, firm thicker warm-tan cell wall, thin purple-grey membrane inside wall, cream cytoplasm. Many tiny dark ribosome granules; one fine tangled single DNA loop nucleoid in centre WITHOUT enclosing membrane; exactly two small blue-green separate plasmid rings away from nucleoid. One long helical corkscrew flagellum at right pole with small hook and visible base. About 18 short thin straight pili spread over outside, each less than one tenth cell length and distinctly thinner than flagellum. No nucleus, no other organelles, no internal membranes. Every structure readable at 960px width, whole flagellum inside margin. Reference for line/watercolour finish only. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ]
+    },
+    {
+      "key": "onion-high",
+      "name": "y11-onion-iodine-field-high-v1.png",
+      "path": "public\\assets\\biology\\y11-onion-iodine-field-high-v1.png",
+      "sha256": "c0c8a336a80a9135273434b2f470c708859c1e8a462b482f79c3d5475734f60d",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000square, one circular iodine-stained onion microscope field, transparent outside thin rim. High-power ×400 detail: two to three long brick cells fill field, shared straight walls, PALE dilute iodine yellow-brown not saturated orange, no chloroplasts. Very large clear central vacuole, very thin slightly grainy peripheral cytoplasm along inside of wall and around darker oval nucleus. One nucleus left of centre pressed to side wall, with 1-2 tiny nucleoli. Cells are long horizontally, rest of cells extend beyond field. Match reference iodine palette, but enlarge to high power; leave space beside nucleus for later coded leaders. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png"
+      ]
+    },
+    {
+      "key": "neuron",
+      "name": "y11-neuron-v1.png",
+      "path": "public\\assets\\biology\\y11-neuron-v1.png",
+      "sha256": "153bd361afe538c7bd760957ecb4f58ce6f9cd08577a8264d562b53eb304afb3",
+      "dimensions": [
+        2400,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Scientific educational plate of a single long motor neuron, horizontal 2400x1000 canvas. At left one pale rose cell body with visible purple nucleus and 5 short branching dendrites. ONE long thin axon travels right, several cream myelin sheath segments separated by small nodes, ending with a small branching terminal arbor. Natural ink and watercolour matching reference finish, neuronal anatomy not mitochondrion. Complete cell fits with 10 percent clear margin. No coded break mark or ruler because those will be added in software. No surrounding tissue, synapse cells or additional neurons. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ]
+    },
+    {
+      "key": "slide",
+      "name": "y11-slide-clean-v1.png",
+      "path": "public\\assets\\biology\\y11-slide-clean-v1.png",
+      "sha256": "5b933eff644e0fb061da5f641f6521a41c37a68b3fa6ea16e6afa7ca2b034fd7",
+      "dimensions": [
+        2000,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000x1000 landscape. One clean empty glass microscope slide, physical shape 76 x26mm, no frosted end, no drop, no specimen. Faint blue-grey glass edges, subtly transparent interior, clearly readable on a dark background. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "scalepeel",
+      "name": "y11-onion-scale-peel-v1.png",
+      "path": "public\\assets\\biology\\y11-onion-scale-peel-v1.png",
+      "sha256": "f23ad817da560d9e48b6cabdac8cac9720f729afeb70574ad464105d25f6629d",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000x2000 square. One fleshy curved onion bulb scale (a single curved leaf from the bulb), inner concave surface facing viewer. At upper left corner a small thin transparent epidermis patch is partly lifting free, edge slightly curled, still attached to scale. Cream white onion, faint natural layering. Not an entire onion bulb. No knife or tools. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "peel",
+      "name": "y11-onion-peel-v1.png",
+      "path": "public\\assets\\biology\\y11-onion-peel-v1.png",
+      "sha256": "6153ec2273aafba46a1d692a5a5ab81af6d71e36e50581cee8d2da334f7baf37",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "1000x1000square. One small FLAT UNFOLDED almost transparent thin onion epidermis piece, physical size about8mm across, irregular torn rectangular outline. Faint delicate horizontal long-brick cell pattern, unstained pale cream, no folds or curled edges. Not fleshy onion scale. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "needle",
+      "name": "y11-mounting-needle-v1.png",
+      "path": "public\\assets\\biology\\y11-mounting-needle-v1.png",
+      "sha256": "66a1d36a3382f313ded8c0077152bd49e9429711230d462bd2a30ba9082e4ad3",
+      "dimensions": [
+        2000,
+        500
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000x500 wide canvas. A single straight steel mounting needle in a simple natural wooden cylindrical handle, needle pointing horizontally left. Fine long silver needle, securely fixed in handle; not a syringe or sewing needle. Low three-quarter viewpoint. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "filter",
+      "name": "y11-filter-paper-strip-v1.png",
+      "path": "public\\assets\\biology\\y11-filter-paper-strip-v1.png",
+      "sha256": "e31e5e0f9c7af8b82256f1f5d1c63c8b97cf466b93fd71b3d509ffcc8c7bb759",
+      "dimensions": [
+        1000,
+        500
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "1000x500 landscape. One short torn strip of white laboratory filter paper, softly fibrous edges, flat low three-quarter viewpoint. Plain unmarked absorbent paper, no folds, no liquids, no ruler. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "iodine",
+      "name": "y11-iodine-dropper-bottle-v1.png",
+      "path": "public\\assets\\biology\\y11-iodine-dropper-bottle-v1.png",
+      "sha256": "4277ad199c4aae78028aa657b198687e819c97939ccc7e4bd4e80a278fd4c888",
+      "dimensions": [
+        1000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "1000x2000portrait. One small amber-glass dropper bottle containing dilute brown iodine solution, black rubber teat attached to ribbed cap, bottle closed. Amber liquid visible through translucent glass. No label or only blank unmarked label area. Same low three-quarter viewpoint and glass treatment as reference. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "onion-low-r3",
+      "name": "y11-onion-iodine-field-low-v1.png",
+      "path": "public\\assets\\biology\\y11-onion-iodine-field-low-v1.png",
+      "sha256": "4ff78f085bbded3263f1708d6de7087d0eec4f674c645b1e59e554b94c1fc377",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Uniformly scaled painted brick sample tiled at 112x28 px; central diameter 1680 px contains exactly fifteen 112px cell lengths, with one common scale across all rows.",
+      "sourceCandidate": null,
+      "prompt": "Edit this microscope field. Make every cell EXACTLY TWO THIRDS of its current linear size, preserving each brick aspect ratio, but keep the outer circular field the SAME size. Fill the newly exposed area with more staggered rows of the same tiny long horizontal bricks. This should change the count across the horizontal diameter from about10 to EXACTLY15 cell lengths, with about60 rows vertically. All cells identical physical scale, no special central stripe. Keep iodine palette thin shared walls and small darker nucleus dots. Circle has 8 percent margin and true transparent exterior. No text labels numbers arrows. 2000x2000 PNG.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png"
+      ]
+    },
+    {
+      "key": "onion-bubbles",
+      "name": "y11-onion-iodine-field-bubbles-v1.png",
+      "path": "public\\assets\\biology\\y11-onion-iodine-field-bubbles-v1.png",
+      "sha256": "d825056e084bd644e24c0f285494a6a170ba1c83d097fd510e7498df849f0a24",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Added three circular air-bubble rim overlays to the exact final onion source pixels. All cell geometry, colour and framing outside bubble disks are byte-identical.",
+      "sourceCandidate": null,
+      "prompt": "Edit the reference low-power onion field. Keep EVERY cell wall, nucleus, cell count, framing, circle, canvas and iodine palette EXACTLY fixed. Add only THREE trapped air bubbles of different sizes: perfect circular dark thick rims with bright centres, the largest near upper left overlapping at least3 tiny cells, medium near bottom right and small near top right. Cell walls remain visible under transparent bubble centres. No other change. True transparent outside circle, no text labels arrows numbers, clean neutral edges. This must crossfade with reference without any moving underlying cells.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-1e885c14-54a6-4e59-bdeb-037e0e73dd37.png"
+      ]
+    },
+    {
+      "key": "cheek-eight",
+      "name": "y11-cheek-cells-field-x400-v1.png",
+      "path": "public\\assets\\biology\\y11-cheek-cells-field-x400-v1.png",
+      "sha256": "4d21731cfb6863b4766658f6a53d267b9d2ebe63f028a28a61669c9f3684d930",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Extracted painted cell and assembled eight equal end-to-end central widths with no empty gap counted as cell. Other rows use the same cell scale; actual centre-line width calibrated before assembly.",
+      "sourceCandidate": null,
+      "prompt": "2000square. One circular methylene-blue cheek-cell microscope field, thin dark rim and transparent outside. Pale blue irregular flat polygonal cells, dark blue oval nuclei, thin outlines, loose mostly touching sheet. CRITICAL the horizontal centre line should pass through EIGHT roughly equal cell WIDTHS end to end with no gaps, no overlaps at that line; partial edge cells total one full if used. Each typical width 1/8 field diameter, field 450 µm so cell widths 56 µm. About eight rows of comparable cell size, natural variation elsewhere. No visible grid, counting line, labels or numbers. Preserve reference delicate blue microscopy finish, but many smaller cells, eight across instead of three. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ]
+    },
+    {
+      "key": "cheek-bacteria",
+      "name": "y11-cheek-cell-bacteria-v1.png",
+      "path": "public\\assets\\biology\\y11-cheek-cell-bacteria-v1.png",
+      "sha256": "d440fec769b8365a2f6e9a2f8867a755eb8887e5d4b8f0e1773cb7b1cdff3b0f",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Assembled three painted cheek-cell cutouts and exactly ten darker bacterial specks. Approximate cheek width550px; rod length13.4px, ratio1:41; cocci10px, within intended1-2 µm scale.",
+      "sourceCandidate": null,
+      "prompt": "Generate two or three blue-stained cheek epithelial cells in a circular field, with 8 to 12 oral bacteria at about one fortieth of cell width; fine ink and watercolour, 2000 square, real transparency, no labels or people.",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ]
+    },
+    {
+      "key": "lys-before",
+      "name": "y11-lysosome-before-v1.png",
+      "path": "public\\assets\\biology\\y11-lysosome-before-v1.png",
+      "sha256": "ec9e4fc072cd68a9cef92e66e085d2b83292dde81f9c5da55067029981a375ae",
+      "dimensions": [
+        2000,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Separated painted lysosome and membrane-wrapped mitochondrion; fixed shared mitochondrial box x550,y385,w1260,h630 on2000x1400 canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000x1400 landscape. One faded worn-out orange mitochondrion with irregular cristae on the right, matching reference organelle, and a small round pale-rose lysosome one third its length on the left, single smooth membrane and small darker enzyme granules. Mitochondrion is already enclosed in a separate thin pale autophagosome membrane, clearly not the mitochondrion's own envelope; lysosome nearby not yet fused. This supplies the wrapping membrane referred to in the requested after-state and avoids implying direct lysosome engulfment of a bare mitochondrion. Very pale local cytoplasm wash only immediately around both organelles, otherwise transparent. Keep simple horizontal arrangement for an aligned after-state. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ]
+    },
+    {
+      "key": "lys-after",
+      "name": "y11-lysosome-after-v1.png",
+      "path": "public\\assets\\biology\\y11-lysosome-after-v1.png",
+      "sha256": "b35aef187cafbd4ab63d2b9e079ef85267cc97478134faf771150d78c0bb9f14",
+      "dimensions": [
+        2000,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Isotropically registered degraded organelle to the same shared box and centre as before; the fused sac replaces the separate lysosome. No duplicate intact organelle remains.",
+      "sourceCandidate": null,
+      "prompt": "Edit this exact before-state into its aligned after-state, preserving canvas 1753x897, mitochondrion centre, size, viewpoint and palette. The small rose lysosome at left has FUSED with the pre-existing pale membrane wrapping the mitochondrion at right. Now a single ROSE membrane sac surrounds the partly broken-down mitochondrion at SAME right-hand location; the separate left lysosome no longer exists. Mitochondrial edges fragment and irregular cristae dissolve into granules inside the rose sac. Keep all changes local to those two organelles; no repositioning of the main mitochondrion. Transparent background, no shadow. This pair will be checked by overlay. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-fd96d7bf-690d-4c1b-8e70-92a125e47112.png"
+      ]
+    },
+    {
+      "key": "grid",
+      "name": "y11-mini-grid-v1.png",
+      "path": "public\\assets\\biology\\y11-mini-grid-v1.png",
+      "sha256": "ade8e70de8c09320f2ca6cbf63baa5d8044b20e72ec9239c9b81d3a4c9f9c968",
+      "dimensions": [
+        2000,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Replaced generated approximate grid with exactly20x10 one-millimetre square cells projected onto the same painted slide plane; same uniform fit as clean slide.",
+      "sourceCandidate": null,
+      "prompt": "2000x1000landscape. One clear rectangular plastic mini-grid slide physical 76x26mm, lying flat at same low three-quarter viewpoint as reference glass slide. Central printed grid consists of EXACTLY20 by10 very fine black 1mm SQUARES, central physical20x10mm rectangular area on otherwise clear slide. Do not cover the full 76x26 slide with grid. Thin even orthogonal printed lines follow perspective correctly, faint blue plastic edge, no numbers or letters. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    },
+    {
+      "key": "coverslip",
+      "name": "y11-coverslip-v1.png",
+      "path": "public\\assets\\biology\\y11-coverslip-v1.png",
+      "sha256": "7b5d8ecdaaf9a685bd9c89db3afdcca11b473e528cc62e8c8eaf07585fc4820d",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Used the slide’s painted glass wash and the same calibrated physical-axis projection for a22x22mm coverslip; common uniform pixels/mm, no independent stretching.",
+      "sourceCandidate": null,
+      "prompt": "1000x1000 square. One very thin square glass microscope coverslip 22x22mm, flat parallelogram perspective consistent with reference slide. Faint edge highlights, transparent interior. Empty, no water or specimen. Keep square physical aspect even in perspective. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    }
+  ],
+  "generationHistory": [
+    {
+      "key": "root",
+      "name": "y11-root-cell-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ],
+      "prompt": "Use case scientific-educational. Generate a single root cortex plant cell, same house fine ink and layered watercolour style, scale, line weight and viewpoint as the reference plant cell. 2000x2000 square transparent PNG with 8 percent clear margin. Boxy cellulose cell wall pale tan/cream NOT GREEN, thin membrane immediately inside, one very large pale-blue central vacuole, nucleus pushed to one side, several small orange mitochondria and several pearl-white rounded amyloplast starch grains. Short stubs of neighbouring walls at corners. No chloroplasts and no green anywhere. No text, labels, arrows, people, hands, faces, logos, ground shadow. Reference is for style, cell geometry and scale only; remove all green chloroplasts.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-89b1b5f5-62be-4e3f-877d-1797c0d52f48.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-89b1b5f5-62be-4e3f-877d-1797c0d52f48.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\root.png",
+      "sha256": "e456bbf8a7fff1688ef9449d12a1e035ee29b5bbba3f419a76a89c8d5f282317",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "vesicle",
+      "name": "y11-vesicle-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-animal-organelles-set-v1.png"
+      ],
+      "prompt": "Use case scientific-educational. Generate ONE small empty round transport vesicle sprite, square 600x600 PNG, true transparent background, 10 percent clear margin. Single thin membrane represented by two close pale-lilac contour lines (one membrane bilayer, not two nested compartments), faint translucent interior EMPTY. Fine dark ink with subtle layered watercolour matching vesicles in reference organelle set, not a glossy sphere. No protein or content, no text, labels, arrows, numbers, hands, faces, people, backdrop, shadow.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-cd41a672-c3ed-4465-bf56-817963479202.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-cd41a672-c3ed-4465-bf56-817963479202.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\vesicle.png",
+      "sha256": "e285b8e119077d83542bf4a66115794239ce4684c2dceecfb4a0f0dd55179690",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "crucible",
+      "name": "m5-g02b-open-crucible-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/chemistry/c8-pressure-vessel-v1.png"
+      ],
+      "prompt": "Use case scientific-educational. One white porcelain crucible NO LID, visibly open elliptical mouth, two-thirds full of fine white calcium carbonate powder, resting correctly in a pipeclay triangle on a steel laboratory tripod. A blue Bunsen flame heats from below; include the Bunsen burner base below the tripod. Side-on viewed slightly from above so powder/open mouth are clear. 1280x1920 portrait transparent PNG, 10 percent clear margin. Painted ink outline and delicate watercolour soft metallic shading, light from upper left matching reference steel vessel for a side-by-side educational comparison at same object height. Reference is style only, do not copy the sealed vessel. No text labels arrows numbers brands people hands faces backdrop or ground shadow.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-edbd11db-8957-4f3b-93db-445ccd77afec.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-edbd11db-8957-4f3b-93db-445ccd77afec.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\crucible.png",
+      "sha256": "6d0da9047b479fd1fc925a07f3eb814265b1e42b4b9dc6dfaac9148cdfcac305",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "key": "bacterium",
+      "name": "y11-prokaryote-cutaway-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ],
+      "prompt": "One horizontal rod bacterium cut away along its near half, 2400x1400 landscape. Clearly distinct capsule pale transparent slime halo, firm thicker warm-tan cell wall, thin purple-grey membrane inside wall, cream cytoplasm. Many tiny dark ribosome granules; one fine tangled single DNA loop nucleoid in centre WITHOUT enclosing membrane; exactly two small blue-green separate plasmid rings away from nucleoid. One long helical corkscrew flagellum at right pole with small hook and visible base. About 18 short thin straight pili spread over outside, each less than one tenth cell length and distinctly thinner than flagellum. No nucleus, no other organelles, no internal membranes. Every structure readable at 960px width, whole flagellum inside margin. Reference for line/watercolour finish only. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d1bf0e45-2ad1-43de-b4d6-8bf50847537c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d1bf0e45-2ad1-43de-b4d6-8bf50847537c.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\bacterium.png",
+      "sha256": "c955dc45d157bbf71b1d0d0a57d5f848e1824dc35d5ba249f3ec7d51aa625d9c",
+      "nativeDimensions": [
+        1643,
+        957
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "lys-before",
+      "name": "y11-lysosome-before-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ],
+      "prompt": "2000x1400 landscape. One faded worn-out orange mitochondrion with irregular cristae on the right, matching reference organelle, and a small round pale-rose lysosome one third its length on the left, single smooth membrane and small darker enzyme granules. Mitochondrion is already enclosed in a separate thin pale autophagosome membrane, clearly not the mitochondrion's own envelope; lysosome nearby not yet fused. This supplies the wrapping membrane referred to in the requested after-state and avoids implying direct lysosome engulfment of a bare mitochondrion. Very pale local cytoplasm wash only immediately around both organelles, otherwise transparent. Keep simple horizontal arrangement for an aligned after-state. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-fd96d7bf-690d-4c1b-8e70-92a125e47112.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-fd96d7bf-690d-4c1b-8e70-92a125e47112.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\lys-before.png",
+      "sha256": "6e0e307cf3c8d8a04c13207f1cecc94747fb58d2b36677780041b53517308185",
+      "nativeDimensions": [
+        1753,
+        897
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "onion-low",
+      "name": "y11-onion-iodine-field-low-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ],
+      "prompt": "2000x2000 square. One circular transmitted-light microscope field, thin dark rim, transparent outside circle with 8 percent clear margin. Onion bulb epidermis stained dilute iodine, pale yellow and yellow-brown, NO purple, pink or green, no chloroplasts. Fine shared straight cell walls, long brick cells aspect ratio 4 to 5 times longer than wide, staggered rows horizontal. CRITICAL COUNT: the central horizontal diameter contains EXACTLY FIFTEEN equal cell lengths edge to edge, each one fifteenth of diameter. Fourteen full cells plus two half-cells at the rim is acceptable total 15. Centre row has 14 internal shared vertical walls if both end cells whole; measure/count visibly. Many surrounding rows in same cell size. Small darker oval nucleus dot per cell. This field depicts 4500 micrometres diameter, cells 300 micrometres long. No drawn numbers or scale. Reference only for circular field painted texture, replace all blue cheek cells with yellow onion cells. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-e137e0c0-faa0-49d2-affa-4593fb0fb8c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-e137e0c0-faa0-49d2-affa-4593fb0fb8c3.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\onion-low.png",
+      "sha256": "64e805f9cdc5aa803c6138d37fe5e7cafe002282b2057922f6233e8ddb38718d",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "onion-low-r2",
+      "name": "y11-onion-iodine-field-low-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-e137e0c0-faa0-49d2-affa-4593fb0fb8c3.png"
+      ],
+      "prompt": "Edit target onion microscope field. The central row is wrong: cells there are upright and surrounding cells far too large. REPLACE ALL cell geometry. Every cell must be a horizontal long thin brick, approximately 4.5 times as LONG left-right as its height. A central diameter needs 15 cell LENGTHS. Therefore this circular field should contain approximately SIXTY TO SEVENTY horizontal rows vertically and FIFTEEN cells left-right at the widest part, all at the SAME scale. NO special enlarged central stripe. This is a dense low-power field of tiny long onion cells, each with a tiny darker nucleus DOT. Pale dilute iodine wash, thin delicate brown shared walls. Count central diameter: 15 equal horizontal brick lengths. Retain circular rim, composition, true transparent outside, no text/numbers/labels. Output 2000square. No coloured alpha fringe.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\onion-low-r2.png",
+      "sha256": "ac5ad32193dc319fbbf38f1c62b3a195085b5e453edf89a7dd99f5e4699edda6",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "microscopy-repair",
+      "name": "y11-microscopy-pair-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-microscopy-pair-v1.png"
+      ],
+      "prompt": "Precise alpha-edge cleanup only of edit target. Remove red/magenta/yellow contaminated fringe pixels outside microscope stage and all object boundaries. Keep EXACT existing 1754x896 canvas dimensions, object geometry, every instrument, field image, positions, palette, lighting and all interior pixels. No redraw, no new content, no crop or resize. Preserve true transparency. Neutral natural antialiasing without coloured matte. No text.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d027b049-788f-4743-a931-a51bbf294af1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d027b049-788f-4743-a931-a51bbf294af1.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\microscopy-repair.png",
+      "sha256": "1e1f28f961275cca12f7772cf2dcd727cec5be9a068ee0e3ee1eb4b0c0489a08",
+      "nativeDimensions": [
+        1754,
+        896
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "organelles-repair",
+      "name": "y11-animal-organelles-set-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-animal-organelles-set-v1.png"
+      ],
+      "prompt": "Precise alpha-edge cleanup only of edit target. Remove bright red/magenta/yellow fringe pixels outside all five organelles, especially nucleus and rough/smooth ER. Keep EXACT existing 1754x896 canvas, geometry, positions, all interior pixel detail, colours and shapes. No redraw, no new content, no crop, no resize. Preserve true transparency including holes between ER branches. Neutral antialiasing without coloured matte. No text.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-31304a7c-f852-4fa9-95d4-dce9f8314007.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-31304a7c-f852-4fa9-95d4-dce9f8314007.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\organelles-repair.png",
+      "sha256": "2a4eed13e7143f7ee7e9e15b9f602fa0215ec080331349910007dc391423b1d0",
+      "nativeDimensions": [
+        1754,
+        896
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "onion-high",
+      "name": "y11-onion-iodine-field-high-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png"
+      ],
+      "prompt": "2000square, one circular iodine-stained onion microscope field, transparent outside thin rim. High-power ×400 detail: two to three long brick cells fill field, shared straight walls, PALE dilute iodine yellow-brown not saturated orange, no chloroplasts. Very large clear central vacuole, very thin slightly grainy peripheral cytoplasm along inside of wall and around darker oval nucleus. One nucleus left of centre pressed to side wall, with 1-2 tiny nucleoli. Cells are long horizontally, rest of cells extend beyond field. Match reference iodine palette, but enlarge to high power; leave space beside nucleus for later coded leaders. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-b36c90cd-da5b-4e02-898e-bb4ff0f828f3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-b36c90cd-da5b-4e02-898e-bb4ff0f828f3.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\onion-high.png",
+      "sha256": "2d4b4a2e1944072d8290d0ef7bfca09633dd03702e0c0a29c16a72679ae7fca2",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "cheek-eight",
+      "name": "y11-cheek-cells-field-x400-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ],
+      "prompt": "2000square. One circular methylene-blue cheek-cell microscope field, thin dark rim and transparent outside. Pale blue irregular flat polygonal cells, dark blue oval nuclei, thin outlines, loose mostly touching sheet. CRITICAL the horizontal centre line should pass through EIGHT roughly equal cell WIDTHS end to end with no gaps, no overlaps at that line; partial edge cells total one full if used. Each typical width 1/8 field diameter, field 450 µm so cell widths 56 µm. About eight rows of comparable cell size, natural variation elsewhere. No visible grid, counting line, labels or numbers. Preserve reference delicate blue microscopy finish, but many smaller cells, eight across instead of three. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-050ff755-bf05-4e5c-9632-c7c2184beb22.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-050ff755-bf05-4e5c-9632-c7c2184beb22.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\cheek-eight.png",
+      "sha256": "ff63df9854eb2cd786c76725a0fa3d37bdbc318b88a73938a627305b58da84bd",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "lys-after",
+      "name": "y11-lysosome-after-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-fd96d7bf-690d-4c1b-8e70-92a125e47112.png"
+      ],
+      "prompt": "Edit this exact before-state into its aligned after-state, preserving canvas 1753x897, mitochondrion centre, size, viewpoint and palette. The small rose lysosome at left has FUSED with the pre-existing pale membrane wrapping the mitochondrion at right. Now a single ROSE membrane sac surrounds the partly broken-down mitochondrion at SAME right-hand location; the separate left lysosome no longer exists. Mitochondrial edges fragment and irregular cristae dissolve into granules inside the rose sac. Keep all changes local to those two organelles; no repositioning of the main mitochondrion. Transparent background, no shadow. This pair will be checked by overlay. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-2d9b3dc5-859c-4430-a4e5-fdaa3bad2192.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-2d9b3dc5-859c-4430-a4e5-fdaa3bad2192.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\lys-after.png",
+      "sha256": "06ae0f10f4250dce8ab1ca151888ddcf9bcbf24e57a1e5a9e5a0777cd8ba8221",
+      "nativeDimensions": [
+        1753,
+        897
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "neuron",
+      "name": "y11-neuron-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ],
+      "prompt": "Scientific educational plate of a single long motor neuron, horizontal 2400x1000 canvas. At left one pale rose cell body with visible purple nucleus and 5 short branching dendrites. ONE long thin axon travels right, several cream myelin sheath segments separated by small nodes, ending with a small branching terminal arbor. Natural ink and watercolour matching reference finish, neuronal anatomy not mitochondrion. Complete cell fits with 10 percent clear margin. No coded break mark or ruler because those will be added in software. No surrounding tissue, synapse cells or additional neurons. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-b14d75ac-71b0-4372-a890-18ac410c0196.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-b14d75ac-71b0-4372-a890-18ac410c0196.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\neuron.png",
+      "sha256": "c1e8d53cff3230e6dc7e605509394b935b9f5bf329792394a13fe90563a4a2f3",
+      "nativeDimensions": [
+        1920,
+        819
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "slide",
+      "name": "y11-slide-clean-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "2000x1000 landscape. One clean empty glass microscope slide, physical shape 76 x26mm, no frosted end, no drop, no specimen. Faint blue-grey glass edges, subtly transparent interior, clearly readable on a dark background. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-98c2e335-8bb1-4c03-a84f-1dc28025f31f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-98c2e335-8bb1-4c03-a84f-1dc28025f31f.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\slide.png",
+      "sha256": "ae6bc3767690f211f383cfe81d366be0106eb30b6f4d504d88f74adf795a768b",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "coverslip",
+      "name": "y11-coverslip-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "1000x1000 square. One very thin square glass microscope coverslip 22x22mm, flat parallelogram perspective consistent with reference slide. Faint edge highlights, transparent interior. Empty, no water or specimen. Keep square physical aspect even in perspective. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-82ce7dd9-56b5-49d8-8931-fc57efc81291.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-82ce7dd9-56b5-49d8-8931-fc57efc81291.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\coverslip.png",
+      "sha256": "47d2439e90087b4c093dfe5c4cfdc4d9922e90b55a6d744bf9d0c202242d3edb",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "scalepeel",
+      "name": "y11-onion-scale-peel-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "2000x2000 square. One fleshy curved onion bulb scale (a single curved leaf from the bulb), inner concave surface facing viewer. At upper left corner a small thin transparent epidermis patch is partly lifting free, edge slightly curled, still attached to scale. Cream white onion, faint natural layering. Not an entire onion bulb. No knife or tools. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-32d07414-4836-458c-8d39-e8403d3c53d4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-32d07414-4836-458c-8d39-e8403d3c53d4.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\scalepeel.png",
+      "sha256": "f1f4cc363b63fe43038994f6b7382afc7fff7afe8fe4047d3043913a96a2350e",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "peel",
+      "name": "y11-onion-peel-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "1000x1000square. One small FLAT UNFOLDED almost transparent thin onion epidermis piece, physical size about8mm across, irregular torn rectangular outline. Faint delicate horizontal long-brick cell pattern, unstained pale cream, no folds or curled edges. Not fleshy onion scale. Single isolated object, low three-quarter viewpoint matching reference wet-mount set, fine dark ink outlines, layered subtle watercolour, TRUE transparent PNG, at least 10 percent clear margin, no text numbers labels letters arrows scale bars brands people hands faces, no glow coloured edge fringe or ground shadow. Reference is style/viewpoint only. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-109e4d94-8420-447a-905c-66cfe0cd4abc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-109e4d94-8420-447a-905c-66cfe0cd4abc.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\peel.png",
+      "sha256": "9d9b41c6a422d0f6fe2501468364eaad134d5d6dacbfcdea36a3ffb742741a15",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "needle",
+      "name": "y11-mounting-needle-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "2000x500 wide canvas. A single straight steel mounting needle in a simple natural wooden cylindrical handle, needle pointing horizontally left. Fine long silver needle, securely fixed in handle; not a syringe or sewing needle. Low three-quarter viewpoint. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-a0e4042b-6d8e-406c-b377-d96370b2e74a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-a0e4042b-6d8e-406c-b377-d96370b2e74a.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\needle.png",
+      "sha256": "6538c06d54760c82096a6d285a800430c29dbd78f2b86d1255b5e06c3d219088",
+      "nativeDimensions": [
+        1983,
+        793
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "filter",
+      "name": "y11-filter-paper-strip-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "1000x500 landscape. One short torn strip of white laboratory filter paper, softly fibrous edges, flat low three-quarter viewpoint. Plain unmarked absorbent paper, no folds, no liquids, no ruler. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-63b53b7c-7646-405e-b536-6c194e781c7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-63b53b7c-7646-405e-b536-6c194e781c7f.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\filter.png",
+      "sha256": "ba85ac18168f8ebf2cfadd9d0a1ed1db696d4b413b6488c5d6895a64eaabd901",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "iodine",
+      "name": "y11-iodine-dropper-bottle-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "1000x2000portrait. One small amber-glass dropper bottle containing dilute brown iodine solution, black rubber teat attached to ribbed cap, bottle closed. Amber liquid visible through translucent glass. No label or only blank unmarked label area. Same low three-quarter viewpoint and glass treatment as reference. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d20ecf5e-9c50-4118-b528-7302b653721f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-d20ecf5e-9c50-4118-b528-7302b653721f.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\iodine.png",
+      "sha256": "ac710f9aac7534b6389312651f9d7d299c39d70f027f708260a8b10d17416199",
+      "nativeDimensions": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "grid",
+      "name": "y11-mini-grid-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ],
+      "prompt": "2000x1000landscape. One clear rectangular plastic mini-grid slide physical 76x26mm, lying flat at same low three-quarter viewpoint as reference glass slide. Central printed grid consists of EXACTLY20 by10 very fine black 1mm SQUARES, central physical20x10mm rectangular area on otherwise clear slide. Do not cover the full 76x26 slide with grid. Thin even orthogonal printed lines follow perspective correctly, faint blue plastic edge, no numbers or letters. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-a3417419-66cc-4a06-923d-735c9583451a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-a3417419-66cc-4a06-923d-735c9583451a.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\grid.png",
+      "sha256": "d489f7b8134167e982527534dc82166f5691252412699a766d3cb3c09f361202",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "onion-low-r3",
+      "name": "y11-onion-iodine-field-low-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-67cfd5c0-70ad-42ce-858b-f970004b4341.png"
+      ],
+      "prompt": "Edit this microscope field. Make every cell EXACTLY TWO THIRDS of its current linear size, preserving each brick aspect ratio, but keep the outer circular field the SAME size. Fill the newly exposed area with more staggered rows of the same tiny long horizontal bricks. This should change the count across the horizontal diameter from about10 to EXACTLY15 cell lengths, with about60 rows vertically. All cells identical physical scale, no special central stripe. Keep iodine palette thin shared walls and small darker nucleus dots. Circle has 8 percent margin and true transparent exterior. No text labels numbers arrows. 2000x2000 PNG.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-1e885c14-54a6-4e59-bdeb-037e0e73dd37.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-1e885c14-54a6-4e59-bdeb-037e0e73dd37.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\onion-low-r3.png",
+      "sha256": "3843ef6d72a3b451c2de2d6c93e1aacb339eb6319518e20f4e8ec6cd384aac9e",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "crucible-r2",
+      "name": "m5-g02b-open-crucible-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-edbd11db-8957-4f3b-93db-445ccd77afec.png"
+      ],
+      "prompt": "Edit target only background alpha. Remove ALL the grey and white glow/haze surrounding the crucible, tripod and Bunsen burner. Every pixel outside the actual solid apparatus and blue flame must be truly transparent. Keep all object geometry, powder, ceramic, triangle, tripod and blue flame EXACTLY unchanged. No shadow or backdrop, no halo. Preserve portrait composition. Also clean any fluorescent edge fringe, neutral antialiasing only. No text.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-92f67afe-2da4-4435-a46e-2088736f0411.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-92f67afe-2da4-4435-a46e-2088736f0411.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\crucible-r2.png",
+      "sha256": "165c2eecc5364deebde536c3660b46585fed331a43849083a2d9857129378d61",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "key": "vesicle-r2",
+      "name": "y11-vesicle-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-cd41a672-c3ed-4465-bf56-817963479202.png"
+      ],
+      "prompt": "Edit empty vesicle sprite. Make the membrane ring much thinner, only about2 percent of vesicle diameter, with just two close delicate lilac contour strokes for a single membrane bilayer. Remove all chunky granules and bead shapes from membrane. Empty faintly translucent interior. Remove all magenta fringe outside. Preserve same round shape and transparent background, no glow, no text. Square600x600 with10percent margin, delicate ink-watercolour.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-353f4a81-437b-4ce1-889c-d1680fdee493.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-353f4a81-437b-4ce1-889c-d1680fdee493.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\vesicle-r2.png",
+      "sha256": "b6707d4a7c9bcb3c40a6c9d101588dda6893b6520b6bbf6e4c870ffb191974a1",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "onion-bubbles",
+      "name": "y11-onion-iodine-field-bubbles-v1.png",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-1e885c14-54a6-4e59-bdeb-037e0e73dd37.png"
+      ],
+      "prompt": "Edit the reference low-power onion field. Keep EVERY cell wall, nucleus, cell count, framing, circle, canvas and iodine palette EXACTLY fixed. Add only THREE trapped air bubbles of different sizes: perfect circular dark thick rims with bright centres, the largest near upper left overlapping at least3 tiny cells, medium near bottom right and small near top right. Cell walls remain visible under transparent bubble centres. No other change. True transparent outside circle, no text labels arrows numbers, clean neutral edges. This must crossfade with reference without any moving underlying cells.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-450bc232-d4a1-484a-85ae-8c19ffad8c0b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-450bc232-d4a1-484a-85ae-8c19ffad8c0b.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\onion-bubbles.png",
+      "sha256": "dc40b0f6cf00314f9d51053e2e6edf8998a844858e5a51936d65bf5f9bc2953a",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "cheek-bacteria",
+      "name": "y11-cheek-cell-bacteria-v1.png",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ],
+      "prompt": "Generate two or three blue-stained cheek epithelial cells in a circular field, with 8 to 12 oral bacteria at about one fortieth of cell width; fine ink and watercolour, 2000 square, real transparency, no labels or people.",
+      "hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e as C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-ff763585-5739-4d9e-a95f-8b3ddc1c1303.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e\\exec-ff763585-5739-4d9e-a95f-8b3ddc1c1303.png",
+      "candidatePath": "docs\\production\\claude-pm\\assets\\brief139-qa\\candidates\\cheek-bacteria.png",
+      "sha256": "b44b88b3515693c44d369cc7aeac1ca36f413ae76d595c8ca1fb44c340566a22",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    }
+  ],
+  "repairChecks": [
+    {
+      "file": "public\\assets\\biology\\y11-microscopy-pair-v1.png",
+      "beforeSha256": "3a4c059c1ca79d4b0c7a1c2886e82992ce4ed123a0601f09cb4da15da7a20f3e",
+      "afterSha256": "a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56",
+      "dimensions": [
+        1754,
+        896
+      ],
+      "changedAlphaPixels": 786,
+      "rgbPixelsUnchanged": true,
+      "interiorRGBAUnchanged": true,
+      "geometryUnchanged": true,
+      "method": "Only saturated edge-matte alpha set to zero within five pixels of the original transparency boundary."
+    },
+    {
+      "file": "public\\assets\\biology\\y11-animal-organelles-set-v1.png",
+      "beforeSha256": "fde2fa473f0b4a0406eb7a833f12813c8f883d8f7e55354b1f8fea231bb9ee55",
+      "afterSha256": "23d7527e38099c04c370fbc573e02a70611c88bf9089cdd8ce6ee065d4ce9354",
+      "dimensions": [
+        1754,
+        897
+      ],
+      "changedAlphaPixels": 15358,
+      "rgbPixelsUnchanged": true,
+      "interiorRGBAUnchanged": true,
+      "geometryUnchanged": true,
+      "method": "Only saturated edge-matte alpha set to zero within five pixels of the original transparency boundary."
+    }
+  ],
+  "neuronProvenance": {
+    "original": "public/assets/neuron.png",
+    "search": "No exact filename provenance found in repository asset manifests.",
+    "decision": "Generate sibling y11-neuron-v1.png; preserve original."
+  },
+  "reviewChanges": [
+    "Prepared cheek-cell views; no fresh-sampling apparatus required.",
+    "End-to-end equivalent counts needed, not a count of isolated cells intersecting a line.",
+    "Autophagosome membrane shown before lysosome fusion."
+  ],
+  "unresolved": [],
+  "countAndAlignmentGeometry": {
+    "onion": {
+      "fieldDiameterPixels": 1680,
+      "diameterEndpoints": [
+        [
+          160,
+          1000
+        ],
+        [
+          1840,
+          1000
+        ]
+      ],
+      "cellLengthPixels": 112,
+      "boundaries": [
+        [
+          160,
+          1000
+        ],
+        [
+          272,
+          1000
+        ],
+        [
+          384,
+          1000
+        ],
+        [
+          496,
+          1000
+        ],
+        [
+          608,
+          1000
+        ],
+        [
+          720,
+          1000
+        ],
+        [
+          832,
+          1000
+        ],
+        [
+          944,
+          1000
+        ],
+        [
+          1056,
+          1000
+        ],
+        [
+          1168,
+          1000
+        ],
+        [
+          1280,
+          1000
+        ],
+        [
+          1392,
+          1000
+        ],
+        [
+          1504,
+          1000
+        ],
+        [
+          1616,
+          1000
+        ],
+        [
+          1728,
+          1000
+        ],
+        [
+          1840,
+          1000
+        ]
+      ],
+      "equivalentCellCount": 15,
+      "fieldDiameterMicrometres": 4500,
+      "calculatedCellLengthMicrometres": 300
+    },
+    "bubbles": {
+      "circles": [
+        [
+          610,
+          570,
+          170
+        ],
+        [
+          1410,
+          470,
+          65
+        ],
+        [
+          1380,
+          1410,
+          115
+        ]
+      ],
+      "underlyingCellsIdentical": true
+    },
+    "cheek": {
+      "fieldDiameterPixels": 1680,
+      "diameterEndpoints": [
+        [
+          160,
+          1000
+        ],
+        [
+          1840,
+          1000
+        ]
+      ],
+      "equivalentCellWidths": 8,
+      "widthPixels": 210,
+      "boundaries": [
+        [
+          160,
+          1000
+        ],
+        [
+          370,
+          1000
+        ],
+        [
+          580,
+          1000
+        ],
+        [
+          790,
+          1000
+        ],
+        [
+          1000,
+          1000
+        ],
+        [
+          1210,
+          1000
+        ],
+        [
+          1420,
+          1000
+        ],
+        [
+          1630,
+          1000
+        ],
+        [
+          1840,
+          1000
+        ]
+      ],
+      "fieldDiameterMicrometres": 450,
+      "estimatedWidthMicrometres": 56.25,
+      "reportedWidthMicrometres": 56
+    },
+    "bacteria": {
+      "cheekWidthPixels": 550,
+      "rodLengthPixels": 13.416407864998739,
+      "count": 10,
+      "rodCount": 6,
+      "coccusCount": 4,
+      "positions": [
+        [
+          344,
+          548
+        ],
+        [
+          663,
+          872
+        ],
+        [
+          865,
+          432
+        ],
+        [
+          1089,
+          665
+        ],
+        [
+          1068,
+          1210
+        ],
+        [
+          1434,
+          819
+        ],
+        [
+          619,
+          1095
+        ],
+        [
+          438,
+          1491
+        ],
+        [
+          816,
+          1656
+        ],
+        [
+          964,
+          1249
+        ]
+      ]
+    },
+    "lysosome": {
+      "canvas": [
+        2000,
+        1400
+      ],
+      "sharedMitochondrialBox": [
+        550,
+        385,
+        1260,
+        630
+      ],
+      "sharedCentre": [
+        1180,
+        700
+      ],
+      "isotropicScaling": true
+    },
+    "glass": {
+      "slidePhysicalMillimetres": [
+        76,
+        26
+      ],
+      "coverslipPhysicalMillimetres": [
+        22,
+        22
+      ],
+      "gridCells": [
+        20,
+        10
+      ],
+      "gridSpacingMillimetres": 1,
+      "unitAxisVectorsBeforeUniformFit": [
+        [
+          14.276,
+          -4.895
+        ],
+        [
+          11.5,
+          4.846
+        ]
+      ],
+      "commonUniformFitScale": 1.103448275862069
+    }
+  },
+  "originalCandidateInspection": "brief139-inspection-before-cleanup.md",
+  "userApproval": "Yes, use local pixel editing"
+}
