@@ -385,3 +385,49 @@ The design's third site finding is thus confirmed as a notation/teaching suggest
 ## Teaching note, not a mathematical error (brief 131)
 
 Lesson02 line 399 says “The chain rule drops $\ln a$ out front”, immediately explaining that the derivative of x ln a is ln a. The calculation is correct. Prefer “The chain rule multiplies by ln a, the derivative of x ln a” to avoid evoking the power-rule operation. This is a wording suggestion only. The stale course identity is already item 2, so it is not duplicated. No site file was edited.
+
+## 25. differential-calculus/lesson03.sa.html: log product law conditions (brief 132)
+
+**Exact old text:** “Use log laws first: $\ln(kx) = \ln k + \ln x$, so $\frac{d}{dx}(\ln kx) = \frac{1}{x}$.”
+
+**Correction:** For k > 0 and x > 0, ln(kx) = ln k + ln x, so its derivative is 1/x.
+
+**Reason:** ln k is not real for k <= 0. When k < 0, ln(kx) has a different domain x < 0 and the displayed expansion is invalid. The video retains the positive-domain case.
+
+**Verified file:** `C:/Users/kygs/hscscience/subjects/maths-advanced/year12/differential-calculus/lesson03.sa.html`, orient line 332. The derive section at 414 uses the valid specific k = 3 example, not this unrestricted identity.
+
+**Source/check:** Real logarithm domain and log product identity; [OpenStax](https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions).
+
+## 26. differential-calculus/lesson03.sa.html: Trap 01 rationale (brief 132)
+
+**Exact old text:** “Think: $\ln x$ grows slowly, so its derivative $\frac{1}{x}$ gets smaller as $x$ increases, it's a hyperbola, not another log.”
+
+**Correction:** Check x = 1: ln x has tangent slope 1 there, whereas 1/ln 1 is undefined. Its derivative is 1/x for x > 0.
+
+**Reason:** Slow growth alone does not imply a decreasing derivative; .01x is a counterexample. Both 1/x and the trap answer 1/ln x decrease on x > 1, so the proposed test does not distinguish them.
+
+**Verified file:** same read-only lesson03, line 547. Source/check: direct derivative and x = 1 substitution; [official cib961593d](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480).
+
+## 27. differential-calculus/lesson03.sa.html: hook's rate wording (brief 132)
+
+**Exact old text:** “what is the function that slows down exactly as fast as the reciprocal of where it is?”
+
+**Correction:** “What function has rate of change 1/x at every positive x?”
+
+**Reason:** ln x has first derivative 1/x; its slope changes at rate -1/x². The wording confuses a function's rate with the rate at which that rate decreases.
+
+**Verified file:** same read-only lesson03, line 211; “exactly” is wrapped in an em element. Source/check: differentiate ln x and 1/x.
+
+## 28. differential-calculus/lesson03.sa.html: generic marking claim (brief 132)
+
+**Exact old text:** “Meet the three errors that cost marks” and “the 3 traps that cost marks”.
+
+**Correction:** “Three common errors.”
+
+**Reason:** No question-specific marking scheme is identified. These are valid mathematical traps, but credit depends on the actual task and marking criteria.
+
+**Verified file:** same read-only lesson03, lines527, 530, 541. Source/check: the page gives no universal marking criteria; [official derivative content](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480).
+
+## Teaching and syllabus note, not a mathematical error (brief 132)
+
+Lesson03 derive line 404 uses x = e^y and implicit differentiation. This is correct. The 2024 point cib961593d explicitly asks for the chain rule on e^(ln x) = x. Lead with that exact identity: e^(ln x)(ln x)' = 1, hence x(ln x)' = 1 and (ln x)' = 1/x for x > 0. Retain the implicit version as an equivalent explanation if desired. The stale course identity is already item 3 and is not duplicated. No site HTML changed.

@@ -66,3 +66,5 @@ export const SquareGraph: React.FC<{a: number; showRise: boolean}> = ({a, showRi
 
 export * from './algebra';
 export * from './graphs';
+
+export * from './reflection';

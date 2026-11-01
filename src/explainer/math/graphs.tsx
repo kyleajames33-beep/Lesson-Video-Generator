@@ -100,7 +100,7 @@ export const transformedGraph = (graph: GraphSpec, move: AttachedTransform): Gra
 		breaks: graph.breaks?.map(x => sx*x+shift), markers: graph.markers?.map(m => ({...m, ...carriedPoint(m.x, m.y, move)})),
 		asymptotes: graph.asymptotes?.map(a => ({...a, value: a.axis === 'x' ? sx*a.value+shift : sy*a.value}))};
 };
-export type ReadoutPanelProps = {graph: GraphWindow; x: number; y: number; gradient: number; ratio?: boolean; panelX?: number; panelY?: number};
+export type ReadoutPanelProps = {graph: GraphWindow; x: number; y: number; gradient: number; ratio?: boolean; panelX?: number; panelY?: number; rows?: readonly string[]};
 export const readoutPlacement = (graph: GraphWindow, x: number, y: number, ratio = false, panelX?: number, panelY?: number) => {
  const point = graphTransform(graph).point(x, y), width = ratio ? 300 : 248, height = ratio ? 114 : 82;
  const left = Math.max(8, Math.min((graph.width ?? 800)-width-8, panelX ?? (point.x+width+28 < (graph.width ?? 800) ? point.x+28 : point.x-width-28)));
@@ -108,9 +108,9 @@ export const readoutPlacement = (graph: GraphWindow, x: number, y: number, ratio
  return {point, left, top, width, height};
 };
 /** SVG panel remains joined to its exact mathematical point, including fixed placement. */
-export const ReadoutPanel: React.FC<ReadoutPanelProps> = ({graph, x, y, gradient, ratio = false, panelX, panelY}) => {
- const p = readoutPlacement(graph,x,y,ratio,panelX,panelY), number = (n: number) => Number(n.toFixed(3));
- return <g><line x1={p.point.x} y1={p.point.y} x2={Math.max(p.left,Math.min(p.left+p.width,p.point.x))} y2={Math.max(p.top,Math.min(p.top+p.height,p.point.y))} stroke={ACCENT} strokeWidth={2} /><rect x={p.left} y={p.top} width={p.width} height={p.height} rx={9} fill={CARD} stroke={ACCENT} strokeWidth={1.5}/><Text x={p.left+12} y={p.top+29} size={23}>height = {number(y)}</Text><Text x={p.left+12} y={p.top+60} size={23}>gradient = {number(gradient)}</Text>{ratio && <Text x={p.left+12} y={p.top+93} size={22} color={ACCENT}>gradient ÷ height = {y === 0 ? 'undefined' : number(gradient/y)}</Text>}</g>;
+export const ReadoutPanel: React.FC<ReadoutPanelProps> = ({graph, x, y, gradient, ratio = false, panelX, panelY, rows = []}) => {
+ const raw = readoutPlacement(graph,x,y,ratio,panelX,panelY), p = {...raw, height: raw.height + rows.length*30, top: Math.min(raw.top,(graph.height ?? 520)-raw.height-rows.length*30-82)}, number = (n: number) => Number(n.toFixed(3));
+ return <g><line x1={p.point.x} y1={p.point.y} x2={Math.max(p.left,Math.min(p.left+p.width,p.point.x))} y2={Math.max(p.top,Math.min(p.top+p.height,p.point.y))} stroke={ACCENT} strokeWidth={2} /><rect x={p.left} y={p.top} width={p.width} height={p.height} rx={9} fill={CARD} stroke={ACCENT} strokeWidth={1.5}/><Text x={p.left+12} y={p.top+29} size={23}>height = {number(y)}</Text><Text x={p.left+12} y={p.top+60} size={23}>gradient = {number(gradient)}</Text>{ratio && <Text x={p.left+12} y={p.top+93} size={22} color={ACCENT}>gradient ÷ height = {y === 0 ? 'undefined' : number(gradient/y)}</Text>}{rows.map((row,i)=><Text key={i} x={p.left+12} y={p.top+(ratio?123:90)+i*30} size={22} color={ACCENT}>{row}</Text>)}</g>;
 };
 export const dialFraction = (value: number, min: number, max: number) => {
  if (![value,min,max].every(Number.isFinite) || max <= min) throw new RangeError('Finite dial value and increasing range required');
