@@ -1,0 +1,281 @@
+# Y11 FA3 V31 (Biology 2025, Year 11, Focus Area 3): Why does carrying capacity change when biotic or abiotic limits change? (design)
+
+Status: Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa3-v31, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2, FA3), the FA3 L25 pre-design pack (carrying capacity), the full site page, the site's FA3 memory hooks file (entry l25), the FA3 v30 design (this designer; the opening frame), the FA3 v25 design and the templates `bio-y11-fa3-v24.md` to `v26.md`, and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa3-v31**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+
+Narration 5,120 characters (Revision 1; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 506 s (8.4 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
+
+## Decisions
+
+- **File name and route id.** Route entry **bio-y11-fa3-v31**: "Why does carrying capacity change when biotic or abiotic limits change?", playlist order 31 in Focus Area 3 (course playlist order 95), kind concept, syllabus action B25-FA3-G3-09, site lesson L25 (shared with v32). Entry knowledge (route): Stage 5 science and mathematics (assumed); "Abiotic and biotic limits affect a community" (bio-y11-fa3-v25); "Predator-prey and competition feedback can change populations" (bio-y11-fa3-v30). Start (route): "Recall the preceding result in one sentence, then start from this question: Why does carrying capacity change when biotic or abiotic limits change?" Stop (route): "Explain resource and interaction limits in a selected ecosystem and interpret a changing K rather than a fixed universal number." Next (route): "bio-y11-fa3-v32: When do ecological sampling data justify a conclusion about ecosystem change?" Lesson key **y11fa3v31**, production label FA3-V31. Pre-design pack `../pre-design/y11-bio/fa3-l25-carrying-capacity.md`; site page `C:/Users/kygs/hscscience/subjects/biology/year11/fa3-evolution-and-ecosystems/lesson25.sa.html` (read in full as text, 3 Nov, read-only). No cultural hold on this entry (route `culturalHold: false`); see Open decision 1 on the dingo fence.
+- **Opening (series decision 16).** v31 opens on v30's final frame (`bio-y11-fa3-v30.md`, scene 11, this designer's Revision 1): the "P. aurelia alone" culture tube (`y11-culture-tube-v1.png`) at the left, its amber S-shaped growth curve enlarged at the centre (x "days", y "number per mL"), a dashed horizontal line along the flat part with a terracotta "?" and the label "levels off here: why?", and the Next chip. Scene 1 starts on that frame: the Next chip shrinks into one grey tag "v30: crowding stopped it" at the top right; on "carrying capacity" the dashed line's label rewrites as "carrying capacity (K)" and the "?" moves to the heading.
+- **Route packUpdate applied.** (1) The pack's "Earlier video overlap" names outgoing Year 12 Module 5 designs; this design relies on 2025 entry knowledge only: FA3 v30 (within-species competition grows with numbers; a culture levels off; predators and competitors change populations), FA3 v25 (abiotic and biotic factors; tolerance and limiting factor), FA3 v24 (rainfall and conditions differ among ecosystems), each recalled in one sentence or clause (scenes 1, 3, 6). (2) Current source record: site page SHA256 `d18d4ce42667c8edb21c017851db754b607a38e0707d3cd3d189ca2117843a65` (recomputed 3 Nov; matches the route); data-step-id sections used: learn-orient (the island rabbit warm-up and the "fixed number" misconception), learn-carrying-capacity-growth-curve (definition, logistic curve, why it levels off), learn-changes-carrying-capacity (abiotic and biotic factors, the island drought, the western NSW rangelands and red kangaroo, the 1982 to 1983 drought, the dingo fence, myxoma and the persistent-against-one-off rule), learn-apply (not used: its activity is v32's survey evaluation), practice-apply (SA Q2's possum and hollows demand, transferred to 10a with sugar gliders), review-retrieve. Worked examples: we-bio2025-y11-fa3-l25-b1 (SHA256 `89e3348dbe7d961cc5a0253580937c8518affeb5862db575fa881692469c56fb`, carrying capacity and how biotic and abiotic factors determine it) **is taught here** (scenes 3 and 5 to 9: K on sustainability, the logistic curve explained by crowding, rain acting through pasture, the dingo fence holding abiotic factors similar, overgrazing lowering K, myxoma, "K is not a fixed number"); we-bio2025-y11-fa3-l25-b2 (`7c287c84a58f272d483b3b7d1027832a9f550d506e109097779bafbdd5ca4a7b`, evaluating two daisy surveys) belongs to v32 and is not used.
+- **Scope (start: v30's result in one sentence and this question; stop: resource and interaction limits explained in a selected ecosystem; a changing K interpreted).** In order: the question (1); the S-shaped curve, with a prediction (2); why it levels off (3); the ceiling moves, with a prediction (4); a drought lowers K (5); a selected ecosystem: rain, pasture, kangaroos (6); a biotic limit across a fence (7); lasting and one-off changes (8); explaining K in an ecosystem (9); two unseen items (10a to 10d); decision rule and handoff (11); key notes (12).
+- **What this video does not teach.** Exponential growth equations or the logistic equation; r and K selection; validity, reliability and accuracy of the survey numbers (v32; the handoff names the gap). Predator-prey cycles (v30; recalled only as "predators" in scene 7).
+- **Syllabus (2025, `docs/production/programme/syllabus/bio-new-y11.json`).** B25-FA3-G3-09: "Explain how the carrying capacity of a selected ecosystem is affected by biotic and abiotic factors": carrying capacity defined through the levelling-off curve (2, 3); a resource change moves K (4, 5); the selected ecosystem is the semi-arid rangelands of western New South Wales, with rainfall acting through pasture as the abiotic factor (6) and dingo predation as the biotic factor (7); a second biotic case (myxoma in rabbits) separates lasting from one-off changes (8); the answer frame names ecosystem, factor, direction and evidence (9).
+- **Length.** 5,120 characters, about 506 s, in the 5,000 to 5,500 band (see Narration length estimate). The route boundary is fully taught; nothing was added to fill it.
+- **One main question (route):** *Why does carrying capacity change when biotic or abiotic limits change?* Heading on screen: "The ceiling moves: what sets carrying capacity?". Answered as: a population levels off when crowding means each individual gets too little, so births fall and deaths rise until they balance; that level is K (2, 3); K is set by whatever is limiting the population now, so changing that limit, living or not, moves K (4, 5); in the rangelands, rain sets pasture and pasture sets kangaroo numbers, while dingoes lower the level kangaroos settle at (6, 7); a lasting factor moves K, a one-off event moves only the population (8).
+- **Cases and surprise.** The site's island rabbits (warm-up), its western NSW rangelands and red kangaroos (1982 to 1983 drought; dingo fence), its myxoma rabbits. Surprise 1: no predator or disease arrives, yet the rabbits stop growing (2). Surprise 2: kangaroos are densest where predators are kept out, and the ground there is worse (7). Surprise 3: a heatwave that kills a third of a population leaves K unchanged (10d).
+- **Site alignment.** Kept in substance and order: the warm-up ("A few rabbits are released onto an island with plenty of grass ... then the growth slows and the population levels off ... why does the population stop growing even though no predator or disease arrives? ... if a drought killed half the grass", 2, 4); the definition ("Carrying capacity (K) The maximum population size of a species that an ecosystem can support sustainably over time", 3); logistic growth ("rapid increase at first, then slowing as resources run short, then a plateau around K, where births roughly balance deaths", 2, 3); the cause ("individuals compete for finite food, water, space and shelter ... so the growth rate falls to zero at K", 3); the misconception ("Carrying capacity is a fixed number for a species ... Carrying capacity changes whenever the limiting factors change (e.g. a drought lowers it; more rain raises it)", 4, 5); the island drought ("a drought that halves the grass lowers the carrying capacity, and the rabbit population must fall to the new lower K (often after a crash); a good season raises K", 5); the rangelands ("Rain grows pasture, and pasture feeds kangaroos, so kangaroo numbers track pasture biomass, which in turn tracks rainfall with a lag of months ... a fall of about 24 % in red kangaroos", 6); the dingo fence ("similar soils, rainfall and vegetation on both sides ... the thing that differs across the line is the predator. Kangaroo density on the dingo-free side runs much higher ... lower ground cover and greater grazing pressure where dingoes are absent", 7); b1's overgrazing point ("it can be lowered permanently if overgrazing degrades the soil and vegetation", 7); myxoma ("cut the population from something of the order of 600 million to around 100 million ... flattened out around a new, lower carrying capacity, because the virus remained endemic ... a factor that persists moves K permanently, while a one-off event moves the population and leaves K where it was", 8); the answer frame ("name the ecosystem, name the specific limiting factors, say which way each pushes K, and say what the evidence for that is", "an answer that names rainfall alone, or predators alone, describes only half of it", 9). Memory aid from the site's hooks file: "The ceiling moves." (l25, first hook; scene 5 and the notes).
+- **Site errors found (this read).** Root to add to `../site-corrections-bio-y11.md`.
+  1. L25 contradicts itself on predators and K. The rangeland card says dingo predation "is one of the main things setting it [the ceiling]", then two paragraphs later "Dingo predation holds the population below that ceiling". The b1 answer says predation "can hold a population well below the level its food supply alone would support" yet counts it as setting K. Proposed one consistent wording: "Predation lowers the level the kangaroo population can be sustained at, so the carrying capacity for kangaroos is lower where dingoes are present." This design uses that wording (scene 7). Medium (students copy contradictory lines into answers).
+  2. L25 dingo fence: "the thing that differs across the line is the predator" is stronger than the evidence. Land use and artificial watering points also differ across parts of the fence. Proposed: "the clearest difference across the line is the predator". Science check to confirm. Minor.
+  3. L25 myxoma: "rabbit haemorrhagic disease virus, released in 1996". The virus escaped from quarantine trials on Wardang Island in 1995 and was officially released in 1996; v30 follows the site's L24 wording "from 1995". Proposed: "escaped in 1995 and was officially released in 1996". Minor (not spoken here).
+  4. L25 SA Q2 classifies tree hollows as "an abiotic resource provided by a biotic structure" and accepts either; sound, no error. Noted only because 10a reuses the idea.
+- **Added beyond the site (flagged for the learning review).** (a) "There are only a few breeding pairs" as the reason for the slow start (2; b1 says "as numbers and breeding individuals increase"). (b) The single cull as the one-off example (8; the site says only "a one-off event"). (c) The sugar glider and hollows attempt (10a; SA Q2's demand with a new animal). (d) The lake fish attempt with a lasting competitor and a one-off heatwave (10c; illustrative numbers built on the site's persistent-against-one-off rule).
+- **Entry knowledge.** From FA3 v30: within-species competition grows as numbers rise; a single-species culture rose and levelled off; predators and competitors change populations. From FA3 v25: abiotic and biotic factors; a limiting factor is the one in shortest supply. From FA3 v24: rainfall and temperature differ among ecosystems. Stage 5 (assumed): reading a line graph, percentage, food chains (rain to plant to herbivore). Not assumed: carrying capacity, K, logistic growth, limiting resource in this sense, semi-arid (each glossed at first use).
+- **Visual system.** (1) The **K graph**: the coded `lineGraph` (time across, population up) with the population in amber and K as a dashed teal horizontal line labelled "K"; when K moves, the dashed line slides to its new height and the amber line follows with a short delay. (2) The **resource bar**: a coded vertical bar beside the graph labelled with the limiting resource ("grass", "pasture", "hollows"), its height linked to K's height (it shrinks first, then K follows). (3) The **cause chain**: coded arrows between painted objects (rain → pasture → kangaroos). (4) The **fence map**: a coded abstract map of the rangelands with a single fence line, two shaded sides, kangaroo dot densities and a ground-cover tint. (5) The **answer frame**: four chips ("ecosystem", "limiting factor", "direction", "evidence") from scene 9. Painted: rabbits, island, kangaroo, rangeland pair, sugar glider, hollow tree pair, fish pair, virus. At most three bright text items at once. No people, no hands, no faces, no body outlines.
+- **Predictions (series decision 7).** Scene 2 ends "why does it stop growing?" with a 3 s countdown ring (answered at the start of 3). Scene 4 ends "what happens to the ceiling?" with a 3 s countdown ring (answered at the start of 5).
+- **Attempt (two unseen, exam-worded items).** 10a: sugar gliders after a fire destroys hollow trees while food plants recover; explain K and the population over ten years (site SA Q2's demand, new animal). 10c: a native fish population with a lasting introduced competitor and a one-off heatwave; explain both changes with K (interpret a changing K; the route's stop boundary). Each ends "Pause here to answer." with a 10 s countdown; the card stays during and after it. Feedback is brief, with givens underlined and one crossed-out classic mistake.
+- **Memory aids.** "The ceiling moves." (hooks l25, first hook; scene 5 and the notes). "A lasting factor moves K; a one-off event moves the population." (site card wording, shortened; scene 8). Checked below.
+- **A mistake/fix scene** is not included as a separate scene. "K is a fixed number for a species" is fixed in 4 and 5; "K recovers when the food recovers" is crossed in 10b; "a one-off event lowers K" is fixed in 8 and crossed in 10d.
+- **Legacy ideas.** None ported.
+- **Reuse:** v30's culture tube and growth curve (scene 1); v02's rabbit plate; `m8-red-kangaroo-v1.png`; `m6-virus-particle-v1.png`; v08's `y11-sugar-glider-gliding-v1.png`; the coded `lineGraph`; the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`, `Cam`); B6a's `WrongChip`, `GreyTag`, `Cross`; FA2's `StepChain` (the answer frame). No new coded component: the moving K line is a `lineGraph` with an animated reference line.
+
+Main question: *Why does carrying capacity change when biotic or abiotic limits change?*
+Entry knowledge: see above. Students have watched FA3 v30, v25 and v24.
+Stops after: a population released with plenty of resources grows slowly, then fast, then slows and levels off (logistic, S-shaped growth); it levels off because each individual gets less food, water, space and shelter, competition within the species rises, fewer young survive and more adults die, until births and deaths balance; that level is the carrying capacity (K), the largest population the ecosystem can keep supporting with its current resources and conditions; K is not fixed for a species, it is set by whatever limits the population now; a drought that halves the grass lowers K and the population falls, often in a crash, towards it; rain raises K again; in the semi-arid rangelands of western New South Wales, rain grows pasture and pasture feeds red kangaroos, so kangaroo numbers follow pasture months behind the rain (the 1982 to 1983 drought cut red kangaroos by about a quarter); across the dingo fence, with similar soils, rain and plants, kangaroos are far denser where dingoes are controlled and the ground cover there is thinner, so predators lower the level kangaroos settle at, and long overgrazing can lower K itself; after myxoma in 1950, rabbits fell from around 600 million to around 100 million, recovered, then levelled off at a lower ceiling because the virus persisted; a lasting factor moves K, a one-off event moves only the population; to explain K, name the ecosystem, each limiting factor, its direction and the evidence.
+Handoff: every population number used here came from sampling, so how do you know a drop is real and not sampling error, and when do ecological sampling data justify a conclusion about ecosystem change (route entry bio-y11-fa3-v32)? Final frame described in scene 11.
+
+## Script and shots
+
+The video has 15 voiced scene files (1 to 9, 10a, 10b, 10c, 10d, 11 and the notes lead-in, scene 12). The K graph is the main stage throughout the teaching scenes. No people or hands appear at any point.
+
+### 1. the question (opening)
+> Last time, a Paramecium culture grown on its own rose, then levelled off, with no predator and no competitor. Its own crowding stopped it. That level has a name: carrying capacity. So why does carrying capacity change when biotic or abiotic limits change?
+
+Visual: opens on v30's final frame (see Decisions). On "rose, then levelled off" the amber curve re-traces once. On "Its own crowding stopped it" the Next chip shrinks into the grey tag "v30: crowding stopped it" at the top right. On "carrying capacity" the dashed line's label rewrites as "carrying capacity (K)" in teal. On the question the terracotta "?" lifts off the line and the heading writes: "The ceiling moves: what sets carrying capacity?". At most three bright text items. Hold one second.
+
+### 2. the S-shaped curve, and a prediction
+> Take a few rabbits released on an island covered in grass. At first, numbers climb slowly, because there are only a few breeding pairs. Then they shoot up, since more rabbits have more young. But then growth slows, and the population levels off. No predator arrives, and no disease. Prediction: why does it stop growing?
+
+Visual: the culture tube and graph slide off to the left. The new `y11-grassy-island-v1.png` sits at the upper left at native aspect (label "island: grass, no predators"); `y11-wild-rabbit-v1.png` (v02's plate) appears on it as two small glyphs. A fresh `lineGraph` writes at the right: x "time (years)", y "rabbits". On "climb slowly" the amber line draws a shallow start (label "few breeding pairs"); on "shoot up" it steepens and the island's rabbit glyphs multiply, two, six, twenty (label "more rabbits, more young"); on "growth slows, and the population levels off" the line bends and flattens. On "No predator arrives, and no disease" two grey chips write and take light strikes: "predator", "disease". On "Prediction" a "Predict" chip writes and a "?" sits on the flat part; **a 3 s countdown ring** runs.
+
+### 3. why it levels off
+> Because the rabbits run short of what they need. As numbers rise, each rabbit gets less grass, water, space and shelter, so they compete harder with each other. Fewer young survive and more adults die, until births and deaths balance. That steady level is the carrying capacity, written K. It's the largest population the ecosystem can keep supporting, with its current resources and conditions. The curve's S shape is called logistic growth.
+
+Visual: on "run short" the resource bar writes beside the graph, labelled "grass per rabbit", tall at the start and shortening as the amber line rises (linked by a faint guide line to the curve). On "grass, water, space and shelter" four small coded icons write under the bar. On "compete harder with each other" a small chip writes "competition within the species rises" (grey tag "v30"). On "Fewer young survive and more adults die" two small coded counters write by the flat part of the curve: "births ↓", "deaths ↑"; on "until births and deaths balance" they meet as "births = deaths" (label "steady"). On "carrying capacity, written K" the dashed teal line writes along the plateau with the label "K" (gloss "carrying capacity (K): the largest population the ecosystem can keep supporting, with its current resources and conditions"). On "logistic growth" the curve takes a soft highlight and a label "S-shaped: logistic growth" with three small tags along it: "slow start", "rapid growth", "levels off at K". At most three bright items. Hold one second.
+
+### 4. the ceiling moves, and a prediction
+> Here's the key idea. K isn't fixed for a species. It's set by whatever is limiting the population right now. Say a drought kills half the grass. Prediction: what happens to the ceiling?
+
+Visual: on "K isn't fixed for a species" a `WrongChip` "K is a fixed number for rabbits" writes and takes a scribble cross. On "whatever is limiting the population right now" the resource bar relabels "limiting resource: grass" and pulses. On "a drought kills half the grass" the island plate cross-fades to the new `y11-grassy-island-dry-v1.png` (the same island, browned and sparse; label "drought: half the grass") and the resource bar halves. On "Prediction" a "Predict" chip writes and a "?" sits on the K line; **a 3 s countdown ring** runs.
+
+### 5. a drought lowers K
+> It drops. With half the grass, the island can support fewer rabbits, so K falls. The population is now above the new ceiling, so it falls too, often in a crash, until it settles near the lower K. When rain returns and the grass grows back, K rises, and the population can climb again. The ceiling moves, and the population follows it.
+
+Visual: on "It drops" the dashed K line slides down to about half its height (label "new K"; the old K stays as a faint ghost line, "old K"). On "The population is now above the new ceiling" the amber line, still at the old level, takes a terracotta bracket "above new K"; on "often in a crash" it drops steeply, dipping just below the new K, then settles on it. On "When rain returns" the island cross-fades back to the green plate, the resource bar rises, the K line slides back up, and the amber line climbs after it with a short delay (label "K moves first, the population follows"). On "The ceiling moves" a hand-lettered amber line writes it (grey tag "the site's memory hook"). At most three bright items. Hold one second.
+
+### 6. a selected ecosystem: rain, pasture, kangaroos
+> Exams ask you to explain this for a selected ecosystem, so here's a real one: the semi-arid rangelands of western New South Wales, home to red kangaroos. Rainfall there is low and unpredictable. Rain doesn't feed kangaroos directly. Rain grows pasture, and pasture feeds kangaroos, so kangaroo numbers follow pasture, months behind the rain. In the drought of nineteen eighty-two and eighty-three, red kangaroo numbers fell by about a quarter, then climbed again in the wet years that followed.
+
+Visual: the island clears. The new `y11-semi-arid-rangeland-v1.png` slides in across the top at native aspect (label "semi-arid rangelands, western NSW"; gloss "semi-arid: low, unpredictable rainfall"); `m8-red-kangaroo-v1.png` sits small on its right side (label "red kangaroo"). On "Rain doesn't feed kangaroos directly" a coded rain-cloud glyph writes at the left; on "Rain grows pasture, and pasture feeds kangaroos" the cause chain writes under the plate, one arrow per cue: "rain → pasture → kangaroos" (label "abiotic factor acts through a resource"). On "months behind the rain" a small three-line `lineGraph` writes (x "years", y "relative"): rain bars, a green pasture line just after them and an amber kangaroo line after that (grey tag "shape shown"). On "the drought of nineteen eighty-two and eighty-three" the plate cross-fades to the new matched `y11-semi-arid-rangeland-dry-v1.png` (bare red soil, dry saltbush) and the K graph returns small at the right: the K line drops and the amber line drops after it; a chip writes "red kangaroos: about 24% fewer" (grey source tag "aerial surveys, Caughley and colleagues, 1985"); on "climbed again" the plate returns to green and both lines rise. At most three bright items. Hold one second.
+
+### 7. a biotic limit across a fence
+> Living factors move K too. Across the rangelands runs the dingo fence. On one side, dingoes are controlled. On the other, they aren't. Soils, rainfall and plants are similar on both sides, so the clearest difference is the predator. Kangaroos are far denser where dingoes are kept out, and the ground cover there is thinner. So predators lower the level kangaroos settle at. And if heavy grazing strips the ground for years, the soil erodes, and K itself can fall.
+
+Visual: the plate shrinks to a strip at the top. The fence map writes at the centre: a coded abstract rangeland rectangle split by one vertical fence line (label "dingo fence"); left side labelled "dingoes present", right side "dingoes controlled". On "Soils, rainfall and plants are similar" three small matching chips write across both sides ("soil", "rain", "plants", each with "=" between the sides). On "the clearest difference is the predator" a teal chip writes over the left side: "predator present" (no dingo plate; see Open decision 1). On "Kangaroos are far denser" kangaroo dots fill the map: sparse on the left, dense on the right (grey source tag "Caughley and colleagues, 1980"); on "the ground cover there is thinner" a ground-cover tint writes: fuller green on the left, patchy brown on the right (grey tag "Newsome and colleagues, 2001; Letnic and Koch, 2010"). On "predators lower the level kangaroos settle at" the K graph returns small with two dashed K lines, "dingoes present: lower K" and "dingoes controlled: higher K". On "the soil erodes, and K itself can fall" the right side's tint browns further and its upper K line slides down a little (label "overgrazing can lower K for years"). At most three bright items. Hold one second.
+
+### 8. lasting and one-off changes
+> How long does a change last? In nineteen fifty, the myxoma virus was released against rabbits in Australia. Rabbits fell from around six hundred million to around one hundred million. They recovered, but they levelled off at a new, lower ceiling, because the virus stayed in the population. A factor that persists moves K. A one-off event, like a single cull, moves the population, but leaves K where it was, so numbers climb back.
+
+Visual: the map clears. `y11-wild-rabbit-v1.png` sits at the left with `m6-virus-particle-v1.png` small beside it (label "myxoma virus, 1950"). The K graph writes large: x "years" 1945 to 1965, y "rabbits (millions)". On "fell from around six hundred million to around one hundred million" the amber line drops from a chip "about 600 million" to "about 100 million" (grey tag "order of magnitude; site figures"). On "levelled off at a new, lower ceiling" the old K ghost stays high and a new dashed K line writes lower; the amber line recovers and flattens on it (label "virus persists → lower K"). On "A factor that persists moves K" a teal line writes it. On "A one-off event, like a single cull" a second small graph writes beside it: steady line on K, a sudden drop at one marker (label "one-off cull"), then a climb back to the same unchanged K (label "K unchanged"). A hand-lettered amber line writes: "A lasting factor moves K; a one-off event moves the population." At most three bright items. Hold one second.
+
+### 9. explaining K in an ecosystem
+> So to explain carrying capacity in a selected ecosystem, name the ecosystem, name each limiting factor, say which way it pushes K, and give the evidence. In the rangelands, rain sets how much pasture grows, and dingoes set how many kangaroos get to eat it. Name only one, and you've explained half the story.
+
+Visual: the answer frame writes down the left edge, one chip per cue: "1 ecosystem", "2 limiting factor", "3 direction", "4 evidence". Beside it a two-row example card fills: row 1 "rangelands, western NSW | rain → pasture (abiotic) | less rain → K down | 1982 to 1983 drought: about 24% fewer"; row 2 "same ecosystem | dingoes (biotic) | dingoes present → K lower | dingo fence densities". On "rain sets how much pasture grows" row 1 lights; on "dingoes set how many kangaroos get to eat it" row 2 lights. On "Name only one" a `WrongChip` "rain alone" writes and takes a scribble cross (label "half the story"). At most three bright items. Hold one second.
+
+### 10a. attempt one (explain a change in K)
+> Two exam questions. First. Sugar gliders in a forest reserve nest in tree hollows, which take many decades to form. A bushfire destroys most hollow-bearing trees, but the gliders' food plants recover within a year. Explain what happens to the carrying capacity and to the glider population over the next ten years. Pause here to answer.
+
+Visual: the board clears; the answer frame stays small. `y11-sugar-glider-gliding-v1.png` (v08's plate) and the new `y11-hollow-tree-v1.png` sit at the left of the card at native aspect. The card writes on, tagged "HSC-style question, written for HSCScience". Information: "Sugar gliders in a forest reserve shelter and breed in tree hollows, which take many decades to form. A bushfire destroys most of the hollow-bearing trees. The plants the gliders feed on recover within a year." Demand: "Explain what happens to the carrying capacity of the reserve for sugar gliders, and to the glider population, over the next ten years. (4 marks)". Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 10b. feedback, item one
+> Carrying capacity falls, because nesting hollows are now the limiting resource. The population falls towards the new, lower K, perhaps after a delay as gliders fail to breed. And K stays low for decades, even after the forest looks green, because hollows take that long to form. The classic mistake is saying K recovers when the food plants regrow.
+
+Visual: the card stays. On "nesting hollows are now the limiting resource" "tree hollows" and "destroys most of the hollow-bearing trees" take amber underlines; line "limiting resource: hollows (shelter) → K falls". On "falls towards the new, lower K" a small K graph writes beside the card: K drops at a "fire" marker, the population follows with a short lag (label "may lag: gliders fail to breed"). On "stays low for decades" "many decades" is underlined; "recover within a year" is underlined in grey; line "food recovers, hollows don't → K stays low". On "classic mistake" a chip "K recovers when food plants regrow" writes and takes a scribble cross. Settle one second.
+
+### 10c. attempt two (interpret a changing K)
+> Second. A lake's population of a native fish was steady at about two thousand for five years. Then an introduced fish arrived that eats the same insect larvae, and the native fish fell and levelled off near twelve hundred. Later, a heatwave killed six hundred native fish in one summer, but within three years they were back near twelve hundred. Explain both changes using carrying capacity. Pause here to answer.
+
+Visual: the board clears. The new `y11-golden-perch-v1.png` (label "native fish") and `y11-redfin-perch-v1.png` (label "introduced fish") sit at the left of the card at native aspect. The card writes on, tagged "HSC-style question, written for HSCScience". Information: "A lake's population of golden perch (native) was steady at about 2000 for five years. Redfin perch (introduced), which eat the same insect larvae, then established, and the golden perch population fell and levelled off at about 1200. Some years later, a summer heatwave killed about 600 golden perch, but within three years the population was again about 1200 (illustrative data)." A small `lineGraph` of these numbers sits on the card (x "year", y "golden perch"; no K lines drawn). Demand: "Explain both changes in the golden perch population, using the concept of carrying capacity. (4 marks)". Lined answer space. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 10d. feedback, item two
+> The introduced fish is a lasting biotic factor. It leaves less food, so K fell from about two thousand to twelve hundred. The heatwave was a one-off abiotic event. It cut the population to about six hundred, but K stayed at twelve hundred, so the fish recovered to it. The classic mistake is saying the heatwave lowered K.
+
+Visual: the card stays. On "lasting biotic factor" "eat the same insect larvae" and "established" take amber underlines; on "K fell from about two thousand to twelve hundred" two dashed K lines write on the card's graph at 2000 and 1200 (label "competitor stays → K lower"). On "one-off abiotic event" "a summer heatwave" is underlined; on "cut the population to about six hundred" the dip takes a ring (label "1200 − 600 = 600"); on "K stayed at twelve hundred" the 1200 line pulses and the recovery takes an arrow (label "K unchanged → recovers"). On "classic mistake" a chip "the heatwave lowered K" writes and takes a scribble cross. Settle one second.
+
+### 11. decision rule and handoff
+> So K is set by whatever limits a population now. Change a lasting limit, living or not, and the ceiling moves. A one-off event moves only the population. But every number here, two thousand, twelve hundred, a quarter fewer kangaroos, came from sampling. How do you know a drop is real, and not sampling error? Next: when do ecological sampling data justify a conclusion about ecosystem change?
+
+Visual: the answer frame returns at full size and fades on "But every number here" (it returns in the key notes). The golden perch graph from 10c grows to the centre with its two dashed K lines (2000 and 1200) and the heatwave dip; the fish plates stay small at the left. On "came from sampling" each plotted point takes a small grey vertical range bar, and a chip writes "every point is an estimate". On "How do you know a drop is real" a terracotta "?" writes on the step down from 2000 to 1200 with the label "real drop, or sampling error?". A "Next" chip slides in at the lower right: "Next: When do ecological sampling data justify a conclusion about ecosystem change?". This is the video's final frame (series decision 16): the golden perch population graph (x "year", y "golden perch") with dashed K lines at 2000 and 1200, the heatwave dip, a grey range bar on every point, the chip "every point is an estimate", the terracotta "?" on the drop with "real drop, or sampling error?", the two fish plates small at the left, and the Next chip. Hold half a second before the notes.
+
+### 12. key notes (quiet, about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+- Carrying capacity (K): the largest population an ecosystem can keep supporting with its current resources and conditions. Logistic (S-shaped) growth: slow start, rapid growth, levels off at K.
+- It levels off because each individual gets less food, water, space and shelter: competition rises, births fall, deaths rise, until births = deaths.
+- K is not fixed: a lasting change in a limiting factor moves it (drought lowers K; rain raises it; a persistent disease or predator lowers it). A one-off event moves only the population.
+- Rangelands, western NSW: rain → pasture → red kangaroos (1982 to 1983 drought: about 24% fewer). Across the dingo fence: kangaroos denser and ground cover thinner where dingoes are controlled.
+- To explain K: name the ecosystem, each limiting factor, its direction and the evidence.
+
+Memory: The ceiling moves.
+
+## Teaching checks
+
+- **Does it explain causes?** Why growth starts slowly (few breeders; 2). Why it levels off (less per individual, rising competition, births fall and deaths rise until they balance; 3). Why a drought lowers K (less of the limiting resource; 5). Why the population can crash below K (it was above the new ceiling; 5). Why rain affects kangaroos with a delay (rain acts through pasture; 6). Why the fence is good evidence (abiotic factors similar on both sides; 7). Why overgrazing can lower K (soil erosion damages the resource base; 7). Why myxoma lowered K but a cull wouldn't (persistence; 8).
+- **Graph rule:** each graph appears with labelled axes before any change; K and the population move on separate cues, K first; earlier states stay as faint ghosts only while compared. At most three bright text items.
+- **Response opportunities:** two 3 s prediction countdowns (2, 4; not practice questions); two unseen HSC-style items with every condition visible (10a: the hollows, the fire, the food recovery and the ten-year demand; 10c: all four numbers, the graph and the demand). 10 seconds each with the invitation to pause; nothing answer-bearing on screen (no K lines on the 10c graph). One crossed mistake each.
+- **Avoided double teaching:** v30's within-species competition (one clause); v25's abiotic and biotic factors (used, not re-taught); v24's rainfall differences (one clause, "low and unpredictable").
+- **Exam question patterns covered:** define K and describe the logistic curve (2, 3; b1); explain a drought's effect on K (4, 5; site warm-up and multiple choice); explain K in a selected ecosystem with abiotic and biotic factors and evidence (6 to 9; b1, SA Q1's first half); apply to a new shelter-limited case (10a; SA Q2); interpret a graph of changing K (10c).
+- **Out of scope by design:** growth equations; r and K selection; data quality (v32).
+
+## Practice question and feedback
+
+Two unseen items, each followed by its own brief feedback (10a, 10b, 10c, 10d). Each attempt ends with "Pause here to answer." and a 10 second countdown; the card and every demand stay on screen during the countdown and after it. Marks appear on the card; the narration does not read them. Every card carries the tag "HSC-style question, written for HSCScience". Item 1 transfers the site's SA Q2 to sugar gliders; item 2 applies the site's persistent-against-one-off rule to new data.
+
+1. (10a, explain, 4 marks.) Sugar gliders nest in tree hollows that take many decades to form; a bushfire destroys most hollow-bearing trees; food plants recover within a year. Explain what happens to K and to the population over ten years.
+   Model: Tree hollows (shelter and breeding sites) are now the limiting resource; accept abiotic (a physical space) or biotic (provided by living trees) if justified (1 mark). With far fewer hollows, the reserve can support fewer gliders, so K falls (1 mark). The population falls towards the new lower K, through deaths, failed breeding and dispersal, possibly lagging behind the fire (1 mark). K stays low for decades even though food recovers within a year, because hollows take many decades to form, so food is no longer the limiting factor (1 mark). Classic mistake crossed out: "K recovers when the food plants regrow". Other weak answers: "the population returns to normal in a year"; naming the fire itself, not the hollows, as the limiting factor.
+2. (10c, explain using K, 4 marks.) Golden perch steady at about 2000; redfin perch (same insect larvae) establish; golden perch level off at about 1200; a heatwave kills about 600; within three years back to about 1200.
+   Model: The redfin perch are a lasting biotic factor: as competitors for the same insect larvae they reduce the food available to golden perch (1 mark), so K for golden perch fell from about 2000 to about 1200 and the population levelled off at the new K (1 mark). The heatwave was a one-off abiotic event that killed about 600 fish, reducing the population to about 600 but not changing the limiting resources, so K stayed at about 1200 (1 mark), and the population grew back to that K within three years (1 mark). Classic mistake crossed out: "the heatwave lowered K". Other weak answers: "the redfin ate the golden perch" (the stem gives competition for larvae; accept predation only as an additional suggestion); describing the numbers without naming K.
+
+Feedback spoken lengths are about 26 s (10b) and 24 s (10d) by script. Each names the answer and one or two key reasons, underlines the givens as they are used and crosses one classic mistake. Neither re-teaches the lesson.
+
+## Numbers or facts to verify
+
+| Item | Value | Where it appears |
+| --- | --- | --- |
+| 1982 to 1983 drought | red kangaroos about 24% fewer (spoken "about a quarter"), greys about 35% (not used) (site; Caughley, Grigg and Smith, J. Wildl. Manage. 1985) | 6, 9, key notes, 11 |
+| Rain to kangaroos lag | "months" (site) | 6 |
+| Dingo fence | kangaroo density much higher where dingoes are controlled (site; Caughley and colleagues 1980); lower ground cover there (site; Newsome and colleagues 2001; Letnic and Koch 2010) | 7, key notes |
+| Myxoma | released 1950; about 600 million to about 100 million (site, "something of the order of") | 8 |
+| Attempt 2 | 2000 → 1200 (K); 1200 − 600 = 600 after heatwave; recovery to 1200 in 3 years (illustrative) | 10c, 10d |
+
+Arithmetic: 1200 − 600 = 600; 24% ≈ "about a quarter". Checked by script, 3 Nov.
+
+Facts for the science check: the 1985 drought percentage (if it differs, speech says "fell heavily" and the chip changes; length-neutral within 10 characters); the dingo fence density and ground-cover claims and the "clearest difference" hedge (site error 2); the myxoma figures; sugar gliders as hollow-dependent nesters (they use tree hollows and nest boxes); redfin perch diet including aquatic insect larvae.
+
+## Memory aid check
+
+- **"The ceiling moves."** (Site hooks file l25, first hook; scene 5 and the notes.) Assumption: K is set by the limiting resources and interactions at the time, so a lasting change in them moves K. Limit: a one-off event moves the population, not the ceiling (scene 8). Correct.
+- **"A lasting factor moves K; a one-off event moves the population."** (Site card wording, shortened; scene 8.) Assumption: K depends on conditions that persist; a single loss of individuals leaves resources unchanged. Limit: a one-off event that destroys a slow-to-replace resource (a fire destroying hollows, 10a) does move K, because the resource loss lasts. 10b handles this case. Correct with that reading.
+
+## Narration length estimate
+
+Revision 1 count (3 Nov) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, two 3 s prediction countdowns, 10 s per attempt countdown and 55 s more of the quiet notes hold.
+
+| Scene | Characters |
+| --- | --- |
+| 1. the question (opening) | 255 |
+| 2. the S-shaped curve, and a prediction | 320 |
+| 3. why it levels off | 442 |
+| 4. the ceiling moves, and a prediction | 185 |
+| 5. a drought lowers K | 334 |
+| 6. a selected ecosystem: rain, pasture, kangaroos | 494 |
+| 7. a biotic limit across a fence | 464 |
+| 8. lasting and one-off changes | 431 |
+| 9. explaining K in an ecosystem | 308 |
+| 10a. attempt one (explain a change in K) | 336 |
+| 10b. feedback, item one | 348 |
+| 10c. attempt two (interpret a changing K) | 413 |
+| 10d. feedback, item two | 322 |
+| 11. decision rule and handoff | 393 |
+| 12. key notes (quiet, about 60 seconds) | 75 |
+
+Revision 1 total: **5,120 characters**, 15 scene files. Speech about 385 s; with 30 s of padding (15 scenes), about 9.5 s of stated holds and settles (1 s for scenes 1, 3 and 5 to 9; half a second on scene 11; about 1 s settle on each feedback scene), two 3 s prediction countdowns, 20 s of attempt countdowns and 55 s more of the quiet notes hold: **about 506 s (8.4 minutes)**. The total is in the 5,000 to 5,500 band. The route boundary (a changing K explained with resource and interaction limits in one selected ecosystem) is fully taught with the site's cases; a further ecosystem would repeat the same reasoning, so nothing was padded (as root accepted for v02, v10, v15 and v20). Feedback 10b is about 26 s and 10d about 24 s by script. Scene 6 (494) is the longest; check it at playback speed. Time the exact Google voice audio.
+
+Reserve cuts (if the voiced preview runs long): scene 7's last sentence (the browning tint carries it, and key note 4 does not need it); scene 9's last sentence (the crossed "rain alone" chip carries it), with the learning reviewer's agreement.
+
+## Assets
+
+Have (reuse; inspected or named from earlier FA3 briefs):
+- From v30's brief: `y11-culture-tube-v1.png` (scene 1, opening frame).
+- From v02's brief: `y11-wild-rabbit-v1.png` (scenes 2 to 5, 8).
+- `m8-red-kangaroo-v1.png` (inspected 3 Nov: a red kangaroo grooming, transparent, clean; scenes 6, 7).
+- `m6-virus-particle-v1.png` (scene 8, small).
+- From v08's brief: `y11-sugar-glider-gliding-v1.png` (scene 10a).
+- Inspected, not used: `b2b-far-fence-v1.png` (a timber rail fence; the dingo fence is a tall wire-netting fence, and scene 7 draws it as a coded map line).
+
+New (seven plates; Codex asset brief below), in `public/assets/biology/`:
+- `y11-grassy-island-v1.png` and `y11-grassy-island-dry-v1.png` (matched pair): scenes 2 to 5.
+- `y11-semi-arid-rangeland-v1.png` and `y11-semi-arid-rangeland-dry-v1.png` (matched pair): scenes 6, 7.
+- `y11-hollow-tree-v1.png`: scene 10a.
+- `y11-golden-perch-v1.png` and `y11-redfin-perch-v1.png`: scenes 10c, 11 (final frame).
+
+Plate list summary (Revision 1). **Existing or briefed:** culture tube, rabbit, red kangaroo, virus, sugar glider. **New:** seven plates. Priority: the rangeland pair (the selected ecosystem), the island pair, the two fish (they carry the final frame and v32's opening), then the hollow tree. Fallbacks: island pair: one green island with a coded brown tint over it for the drought (weaker, acceptable); rangeland pair: the same tint fallback; fish: none acceptable as code (organisms); if late, the final frame keeps the graph and drops the fish plates (root aligns v32's opening); hollow tree: text card with the full question on screen.
+
+Coded: the K graphs, dashed K lines and ghosts, the resource bar and its icons, births and deaths counters, the cause chain arrows, the rain glyph and rain bars, the fence map, its dots, tint and chips, the answer frame and example card, range bars, chips, cards and countdowns. No people, no hands, no faces, no body outlines.
+
+Process clip: none.
+
+## Codex asset brief (FA3-V31, carrying capacity)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/bio-y11-fa3-v31.md`. All plates: transparent PNG with a true alpha channel, clean edges with no fringe or halo (check on black and white), fine dark ink outlines with layered watercolour washes matching `y11-wild-rabbit-v1.png` (v02's brief), about 8 per cent clear margin, no text, numbers, labels, arrows, people, hands, faces, buildings or vehicles, no glow behind objects. Never stretch; keep the native aspect ratio. Matched pairs share the same canvas, outline and composition so they cross-fade cleanly.
+
+1. `y11-grassy-island-v1.png` (about 1800 x 1000): a small low island seen from a slight elevation, covered in green grass with a few low shrubs, a thin sandy shore, a band of blue water around it, no trees taller than shrubs, no animals.
+2. `y11-grassy-island-dry-v1.png` (same canvas): the same island in drought: grass browned and sparse with bare patches, shrubs dull, the same shoreline and water.
+3. `y11-semi-arid-rangeland-v1.png` (about 2000 x 900): western NSW semi-arid rangeland after rain: flat red soil plain with green grasses and herbs, scattered saltbush and bluebush, a few distant low trees, wide sky band optional but no clouds. No fences, no animals.
+4. `y11-semi-arid-rangeland-dry-v1.png` (same canvas): the same plain in drought: bare red soil, dry grey saltbush, almost no green.
+5. `y11-hollow-tree-v1.png` (about 1000 x 1600): an old eucalypt trunk and lower branches with two or three visible tree hollows, smooth and rough bark, no animal in the hollows.
+6. `y11-golden-perch-v1.png` (about 1400 x 700): a golden perch (Macquaria ambigua), deep-bodied, golden-olive, side view facing right.
+7. `y11-redfin-perch-v1.png` (about 1400 x 700): a redfin (European) perch (Perca fluviatilis), greenish with dark vertical bars and red-orange lower fins, side view facing left, the same scale as the golden perch.
+
+Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/y11fa3v31-provenance.json`.
+
+## Codex error-check brief (FA3-V31)
+
+Error-only report to `../checks/` (root names the check number). Check against a current senior biology text, the site page and the sources named above:
+- Scene 1: the opening frame matches v30's final frame (`bio-y11-fa3-v30.md`, scene 11) exactly.
+- Scene 11: the final frame is the frame v32 opens on (`bio-y11-fa3-v32.md`, Decisions, "Opening").
+- Every number in "Numbers or facts to verify" (recalculate by script).
+- Scene 3: the definition of K and the explanation of levelling off.
+- Scene 6: the drought percentage and its source; "months behind the rain".
+- Scene 7: the dingo fence density and ground-cover claims, the "clearest difference" hedge, and the overgrazing sentence.
+- Scene 8: the myxoma figures and the persistence claim.
+- Attempts: both cards, model answers and mark splits.
+- Add site errors 1 to 3 from this design's Decisions to `../site-corrections-bio-y11.md`.
+- Search for em dashes and absolute claims in narration. Known: "Rain doesn't feed kangaroos directly" (6); "so the clearest difference is the predator" (7, hedged). Judge each.
+
+## YouTube metadata (draft)
+
+- Title: "Carrying Capacity: Why the Ceiling Moves | Year 11 Biology"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year11/fa3-evolution-and-ecosystems/lesson25.sa.html
+
+Why does a population stop growing even when no predator or disease arrives? Learn what carrying capacity (K) is, why logistic growth levels off, and why K is not a fixed number. Follow a selected ecosystem, the semi-arid rangelands of western New South Wales: rain grows pasture and pasture feeds red kangaroos, while the dingo fence shows how a predator changes the level kangaroos settle at. Then see why myxoma lowered the ceiling for rabbits but a one-off event doesn't. Finish with two exam-style questions and brief feedback. Some data are illustrative, and all questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Year 11 Biology (2025 syllabus), Focus Area 3
+B25-FA3-G3-09: Explain how the carrying capacity of a selected ecosystem is affected by biotic and abiotic factors
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fad715a0de
+
+Previous: Why do predator-prey lags and competition change population trends? Next: When do ecological sampling data justify a conclusion about ecosystem change?
+
+#Year11Biology #Ecology #HSCScience"
+
+- Syllabus line and course label follow series decision 15 (route `syllabusActions.text`, quoted exactly), with the course label "Year 11 Biology (2025 syllabus), Focus Area 3".
+
+## Open decisions
+
+- **1. Dingo fence (root, cultural).** Root decision 9 left the dingo out of v06 because its arrival story is contested and tied to First Nations history. This design uses the dingo only as a present-day predator across the fence (no arrival story, no cultural claim, no dingo plate; the chip says "predator present"). It is the site's own biotic case and the strongest evidence available. If root holds all dingo content with the cultural calls, scene 7 uses this fallback (319 characters against 464), with the fence map replaced by a pasture patch shared with rabbit glyphs: "Living factors move K too. Rabbits and sheep eat the same pasture as kangaroos. Wherever they graze heavily, there's less food left for kangaroos, so the kangaroo carrying capacity is lower. Remove the competitor, and K can rise. And if heavy grazing strips the ground for years, the soil erodes, and K itself can fall." Scene 9 row 2 and key note 4 change to match.
+- **2. Predators and K wording (root).** The design adopts one wording (predators lower the level the population settles at, so K is lower where predators are present) and logs the site's contradiction (site error 1). Confirm.
+- **3. Plate count (root).** Seven new plates; the rangeland pair and the fish pair are first priority.
+
+## Build ids
+
+Lesson key `y11fa3v31`. Suggested explainer folder `src/explainer/lessons/bio-y11-fa3-v31`, build folder `docs/production/claude-pm/lessons/y11fa3v31` (root to confirm).
+
+In order (15 scene headings): opening, s-curve, levels-off, ceiling-moves, drought, rangelands, fence, lasting-one-off, answer-frame, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
+
+Holds: s-curve and ceiling-moves end with the 3 s prediction countdown. Attempt and attempt-two: 10 s countdown after the speech, card on screen during and after. Scenes 1, 3 and 5 to 9 hold 1 s; decision-rule half a second; feedback scenes settle about 1 s. key-notes is the quiet notes hold (about 60 s, reuse take). Review evidence paths: `learning_review` (review key y11b-fa3-v31) and `science_check`, root names them.
+
+## Review notes for Claude (author, not learner copy)
+
+- **Term load.** New spoken terms: carrying capacity, K, logistic growth, semi-arid, rangelands, myxoma, sugar gliders, golden perch and redfin perch (card only). Not used: density-dependent (scene 3 explains the idea in plain words: "competition rises as numbers rise"), r and K selection.
+- **Definition choice.** K is defined on "keep supporting" (sustainability) rather than "maximum at any moment", following b1; a population can briefly exceed K (scene 5's crash shows it). The "births = deaths" plateau is idealised; real populations wobble around K (author note; the site mentions it).
+- **Boundary with v30 and v32.** v30's competition is recalled in one clause; data quality is only named in the handoff.
+- **Cultural content.** The dingo fence is used as a present-day predator comparison only (Open decision 1). No named Country. The rangelands are described ecologically.
+- **Pronunciation.** "myxoma" as "mix-OH-ma"; "semi-arid" as "semmy-ARID".
+- **Doubts for the reviewers.** (a) Is the island-then-rangelands switch clear, or should the island drop after scene 5 without return? (It does not return.) (b) Is scene 7 too dense (fence, densities, ground cover, two K lines, overgrazing) for one scene at playback speed? (c) Does 10c's graph on the card make the answer too easy, or is it needed for "interpret"?
+- **No em dashes** in this file (searched by script).

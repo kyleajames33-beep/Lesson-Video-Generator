@@ -52,3 +52,8 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 31. **v28** applies the site's fish numbers to the beetle model and keeps the farm dam practice item as the site's case. The licence wording is checked in the science check. Marking uses no live animals in class; the beetle is a model.
 32. **v29** is accepted at 4,993 characters (7 under 5,000): adding content would repeat the same scoring reasoning. It keeps the on-screen allelopathy tag "some books score it 0/−: give your reason". The magpie replaces the site's dingo (item 9).
 33. **Plates.** The beetle and magpie plates are first priority, because they carry the v27 to v28 and v28 to v29 joins.
+
+## v30 to v32 (3 November 2026)
+34. **Length.** v30 (5,338) and v31 (5,120) are accepted. v32 ends Focus Area 3 and the Year 11 Biology course on a "Focus Area 3 complete" frame with no Next chip.
+35. **v31's dingo fence** stays, with the dingo used only as a present-day predator. There is no dingo plate and nothing about its arrival or history (item 9 still holds that). The ready replacement scene is used only if the owner holds all dingo content.
+36. **Wording.** v30 drops "always" from the site's lag hook. v31 says predators usually hold numbers below what the food would support, while lasting changes in resources move K. v32 says washed-off marks make the estimate too high (a bias, not scatter). v32's recall of v28 uses N = M × C ÷ R, which matches v28.
