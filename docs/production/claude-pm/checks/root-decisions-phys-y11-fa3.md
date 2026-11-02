@@ -33,3 +33,10 @@ The FA1 and FA2 physics root decisions apply unless an item below changes them.
 20. **Route questions** for v14 to v16 are entered as the designs propose (v15's is reworded for plain speech).
 21. **v14** is accepted at 5,448 characters. A non-ohmic resistance is always V ÷ I at a point (a line from the origin), never the curve's slope; the site's "the gradient IS the resistance" hook is logged as a site error.
 22. **v15** uses the supply's dial rather than a rheostat, so voltage sharing waits for series circuits. Graphs keep V up and I across, as on the site, so a straight line's gradient is R. The physics check confirms that the warm-wire reading (0.55 A) is plausible for nichrome, or uses 0.58 A.
+
+## v16 to v18 (3 November 2026)
+23. **Route questions** for v17 to v19 are entered as the designs propose.
+24. **Length.** v17 (5,495) and v18 (5,363) are accepted. v16 sits at the cap, with scene 9 as its first cut.
+25. **Mains.** The site's 240 V is kept with a grey "usual exam value" tag, so every mains value in FA3 uses 240 V.
+26. **v16** keeps P = V²/R as a derived form (from P = VI and V = IR). The syllabus names P = VI and P = W/Δt, and those stay the boxed equations.
+27. **v18** states energy sharing in series and parallel qualitatively only. v20 owns the current and voltage rules with numbers, and v21 or v22 own brightness comparisons. `CircuitDiagram` (HSC symbols) is a shared kit part for every later circuit video.
