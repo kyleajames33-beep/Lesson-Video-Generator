@@ -2,11 +2,11 @@
 
 Read `00-standing-rules.md` and briefs 142 and 155 first, and use their methods and file formats exactly. Do not spawn sub-agents. Make no design edits, speech, renders or commits.
 
-**Designs.** `lessons/math-a12-s01.md` to `s09.md` (keys `m-a12sNN`) cover probability and continuous random variables, up to the normal model (2024 syllabus).
+**Designs.** `lessons/math-a12-s01.md` to `s12.md` (keys `m-a12sNN`) cover probability and continuous random variables, the normal model, z-scores and finding μ or σ (2024 syllabus).
 - Reconcile each design with its pack in `pre-design/maths-a12/` (if one exists) and with the course outline.
 - Each design's draft route entry is in its Decisions. Propose route changes in the review; root edits the route.
 
-**Root decisions.** Confirm items 56 to 59 in `checks/root-decisions-maths-d11-i05.md`.
+**Root decisions.** Confirm items 56 to 62 in `checks/root-decisions-maths-d11-i05.md`.
 
 **For each lesson:**
 1. **Learning review**, traced from the entry knowledge. Pay attention to:
