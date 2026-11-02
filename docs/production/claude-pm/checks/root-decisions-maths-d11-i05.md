@@ -44,3 +44,8 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 29. **i06:** the tap context with an irrational time is fine at Year 12, with the grey readout carrying the decimal. **i07:** the semicircle recall is allowed (Year 10 area of a circle). Link the page the worked numbers come from (lesson 7) and note lesson 2 as the outline source.
 30. **i08:** use the 81-character title alternative. The chain-rule upper limit stays out (outside the 2024 points).
 31. **Kit:** `AreaFill`, `RiemannStrips`, `RefinementTable`, `AccumulationTracer`, `LowerLimitDial` go to the next maths kit brief.
+
+## i09 to i11 (2 November 2026, overnight)
+32. These three were written before brief 151's packs landed; the brief 15x review reconciles each with `pre-design/maths-a12/math-a12-i09.md` to `i11.md` and the route inputs (ids and order kept).
+33. **i09:** matched-inside definite integrals go to the integral practice video g02. **i10:** areas between two curves stay out (not a 2024 Advanced point); link lesson 9 for the area pages and extend site log item 20 for the profit integrals. **i11:** 5,137 characters (about 480 s) accepted; the "x ≤ 0 throughout" case stays as stated on a piece; feedback at 29 to 30 s accepted.
+34. **Kit:** `LimitSubstitution`, reverse `RiemannStrips`, `AreaFlip` (x-axis and y-axis), `DisplacementTrack`, `HorizontalStrips`, `SwapReflection` (equal axis units) join the next maths kit brief.
