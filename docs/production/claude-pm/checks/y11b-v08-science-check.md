@@ -1,0 +1,35 @@
+# y11b-v08 science check
+
+Revision 1, reviewed 2 November 2026. Design SHA256 `132265bc514db2803e7d60a94dcf0a0c8f2d8124f6ade1cb533e826823cc91d9`. Full written design, current site L07, route and root decisions inspected. No plates, build or audio reviewed. Human listening and exact playback remain pending.
+
+## Exact 2025 syllabus
+
+Local route ID `B25-FA1-G2-01`, official CMS codename `ciba6b0335`: Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins , integral proteins, cholesterol and glycoproteins
+
+Fresh official source, 2 November 2026: [NSW Biology FA1](https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c). Exact HTML is in `work/brief147/v08/official-point.json`. B25 is a local alias. The route display normalises punctuation spacing; the local ledger matches the fresh text exactly.
+
+## Findings
+
+1. **Should fix:** The opening inherits v07’s mitochondrial outer-membrane trace as the cell-membrane cue. These are different membranes. Match v07’s repaired final frame using the plasma-membrane thumbnail/cell boundary. This is learning finding 1, a zero-time visual replacement, not another narration scene.
+
+2. **Should fix:** Scene 6, rail, notes and fact-check section define all integral proteins as spanning the whole bilayer. Integral proteins are embedded; transmembrane proteins are the spanning subset. An original structural study identifies an integral protein embedded in one leaflet: [Picot, Loll and Garavito, 1994](https://www.nature.com/articles/367243a0). Say “The integral proteins shown span the bilayer” and label the channel/carrier as spanning examples. Notes can say “embedded; many span the bilayer”. This is shared with learning finding 2. Keep the existing artwork and function teaching; no extra subtype scene is needed.
+
+3. **Should fix:** Attempt 2’s feedback/model and fixed warm/cold animation turn the qualitative buffer model into guaranteed “too fluid and leaky” at 40°C and “stiff” at 10°C, with cholesterol normally preventing both. These temperatures alone do not establish a phase change, leakage or protein failure in unspecified cultured cells. Make the prediction relative to matched cells retaining cholesterol and explicitly use the illustrated buffer response. Keep the two temperatures; replace “too fluid/leaky” with “more fluid” and “stiff” with “tighter packing/less fluid”, within the stated response. The shorter feedback in `repairs.json` saves 99 characters; no added time or composition lecture is needed. This is a real limit on the claimed outcome: [primary DOPC/DPPC measurements](https://www.sciencedirect.com/science/article/pii/S0927776520307098) find opposite cholesterol effects in the two lipid preparations at the same temperature. [Primary NMR work](https://pubmed.ncbi.nlm.nih.gov/1782223/) ties the ordering effect to the lipid transition. The intended warm/cold buffer contrast is retained, not rejected.
+
+4. **Should fix:** Scene 9 depicts two identical carbohydrate chains lighting together as “same pattern: recognised”, making self-matching chains the general recognition mechanism. Show a recognition protein/receptor on the second cell recognising the carbohydrate tag instead. This is a visual replacement at the same cue with no narration increase. [Somers et al., 2000](https://pubmed.ncbi.nlm.nih.gov/11081633/) directly resolves a cell-adhesion receptor bound to a glycosylated ligand. This does not claim carbohydrate–carbohydrate interactions never occur; it removes the unsupported generic mechanism from this example.
+
+## Confirmed science and numerical checks
+
+All six syllabus components have structure/function teaching: phospholipid bilayer, protein channels, integral and peripheral proteins, cholesterol and glycoproteins. The hydrophobic-effect self-assembly language is the accepted introductory simplification; it is not a purposeful pushing agent. Heads face water on both sides, tails form the core, and the depicted lateral movement stays in a leaflet. Small non-polar oxygen/carbon dioxide can cross the lipid core, while ions face a large charge/hydration barrier. Ion charge, not simply dry size, earns the channel comparison. Carrier shape changes can be shown passively here; ATP-driven pumping stays in v12. Peripheral support/signalling and receptor functions are appropriate for the stated scope. The membrane figure of about 7 nm is a useful approximate scale, not a universal measured thickness.
+
+1970 is the correct Frye–Edidin experiment date: [original paper](https://pubmed.ncbi.nlm.nih.gov/4098863/). The about-40-minute mixing illustration is appropriate for the original warm fusion experiment and demonstrates lateral mobility of labelled surface proteins, not that every protein is freely mobile or that every bilayer mixes at that rate. No percentage is spoken; the design’s author-only claim “50 percent fully mixed by 40 minutes” should not become learner copy without the original count context. The supported learner claim is qualitative mixing by about 40 minutes. The experiment does not require painting people.
+
+ABO carbohydrate determinants can be on glycoproteins and glycolipids; [original glycosphingolipid characterisation](https://onlinelibrary.wiley.com/doi/10.1111/j.1432-1033.1995.0862d.x) supports the site correction. The screen explicitly names A/B/AB/O, so the learner’s sugar-tag example is understood as ABO, not every blood-group system. Cholesterol is correctly scoped to the animal-cell example, and the plant-sterol tag is appropriate without asserting plants universally lack cholesterol. The scene uses a conceptual relative fluidity comparison; it is not a completed membrane experiment or a prediction of universal temperature thresholds after finding 3 is repaired.
+
+7 nm = 0.007 µm. The two temperatures differ by 30°C; 40°C = 313.15 K and 10°C = 283.15 K, with no use of Celsius ratios. A bilayer has two leaflets. No other worked numerical calculation is required. Exact count is 5,847 separate-scene narration characters (5,863 joined), 17 scenes, matching the stated 5,847 convention and about 564 s. Existing root decisions on the liquid-floor hook, shared carrier, no people and final handoff remain in force.
+
+## Source findings and limits
+
+The site hash matches the recorded value. `work/brief147/v08/site-findings.json` verifies the integral-protein definition and “impermeable barrier” contradiction, records the ABO/sterol context for root’s exact-passage check, and verifies the memory-hook quote in `bio2025-y11-fa1-memory-hooks.json` (a separate source from the HTML). “Nothing is glued in place” should become “many components drift; some are anchored”, not another unsupported count claim. Parent deduplicates the shared log; site files remain read only. Source worked examples were inspected directly, not inferred from the thin extract.
+
+Count: 0 blockers, 4 should fix, 0 optional. Unique cross-report total: 4 should fix. Repairs are shorter wording or same-time visual substitutions. No design edits, speech, renders or commits.

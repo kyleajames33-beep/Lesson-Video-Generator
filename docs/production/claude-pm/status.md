@@ -1990,3 +1990,124 @@ Brief 142 source verification: fresh official pages were checked on 2 November 2
 ### Brief 143 partial build checkpoint (2 November 2026)
 
 Work is in progress, not complete. The current graph changes and prototype parts, tests passed, and remaining required APIs, stills, motion sample, full decode and manifest are recorded in `checks/codex-build-143-progress.md`. No lesson designs, speech or commits were changed. Do not treat this checkpoint as motion or production approval.
+
+### Brief 143 verification checkpoint (2 November 2026)
+
+The kit additions, stills and 16-second silent sample are available; the sample passed a full decode. `checks/codex-build-143.md` records the APIs, checks and unresolved detailed contract gaps. The brief remains open, and Claude playback judgment is pending. Source and artifact hashes are in `assets/brief143-manifest.json`.
+
+### Brief 143 resumed repairs (2 November 2026)
+
+Repaired timed concavity reveals, stacked-panel palettes, declared common secant limits and nested constant highlighting in `src/explainer/math/brief143-parts.tsx`. Fixed the pilot sign-chart cropping and added typography and reveal examples. TypeScript, existing numerical suites, new regression checks and 17 SymPy derivatives pass. Re-rendered the main stills and 16-second silent sample, with full decode passed; expanded extra stills are present. Updated `checks/codex-build-143.md` and `assets/brief143-manifest.json`. Detailed per-design pilot coverage remains open; no motion approval claimed. Briefs 144 to 152 have not started.
+
+### Brief 143 completed (2 November 2026)
+
+Final APIs and checks: `checks/codex-build-143.md`; source and artifact hashes: `assets/brief143-manifest.json`. Fixed family clipping, full merged tangent and concavity colours, rechecked TypeScript and both earlier numerical suites, added symbolic and geometry comparisons, and regenerated 68 desktop/phone stills and the silent 16-second sample. Complete decode passed. Claude playback judgment is pending; no motion approval claimed. No lesson designs, speech or commits changed. Proceeding to brief 144.
+
+### Brief 144 completed (2 November 2026)
+
+- m-a12d10 handoff edit: clean.
+- m-a12d11: 2 should fix, 0 blockers.
+- m-a12d12: 1 should fix, 0 blockers.
+- m-a12d13: 1 should fix, 0 blockers.
+- m-a12d14: 1 should fix, 0 blockers.
+- m-a12d15: 1 should fix, 0 blockers.
+- m-a12d16: 1 should fix, 0 blockers.
+- m-a12d17: 2 should fix, 0 blockers.
+- m-a12d18: clean, ready to voice after the brief 124 pilot.
+- m-a12d19: clean, ready to voice after the brief 124 pilot.
+- m-a12i01: clean, ready to voice after the brief 124 pilot.
+- m-a12i02: clean, ready to voice after the brief 124 pilot.
+- m-a12i03: clean, ready to voice after the brief 124 pilot.
+- m-a12i04: clean, ready to voice after the brief 124 pilot.
+- m-a12i05: clean, ready to voice after the brief 124 pilot.
+- y11b-v01: clean, ready to voice after the brief 124 pilot.
+- y11b-v02: clean, ready to voice after the brief 124 pilot.
+- y11b-v03: clean, ready to voice after the brief 124 pilot.
+- y11b-v04: clean, ready to voice after the brief 124 pilot.
+- y11b-v05: clean, ready to voice after the brief 124 pilot.
+- y11b-v06: clean, ready to voice after the brief 124 pilot.
+- m5g02b: 1 should fix, 0 blockers (timing total).
+
+Reports: `checks/m-a12d10-error-check.md` through `m-a12d19-error-check.md`, `checks/m-a12i01-error-check.md` through `m-a12i05-error-check.md`, and Brief 144 confirmation sections in the seven existing chemistry/Biology error checks. Changed calculations and scene counts are in `work/brief144/`. Error-only hand-in: no designs, speech, renders or commits changed.
+
+### Brief 145 completed (2 November 2026)
+
+p-y11-v01: 0 blockers, 0 should fix, 0 optional. 6,308 characters in separate scenes, about 569 s. Reports: `checks/p-y11-v01-learning-review.md` and `checks/p-y11-v01-science-check.md`.
+
+p-y11-v02: 0 blockers, 1 should fix, 0 optional. 5,809 characters in separate scenes, about 532 s. Reports: `checks/p-y11-v02-learning-review.md` and `checks/p-y11-v02-science-check.md`.
+
+p-y11-v03: 0 blockers, 1 should fix, 0 optional. 5,421 characters in separate scenes, about 504 s. Reports: `checks/p-y11-v03-learning-review.md` and `checks/p-y11-v03-science-check.md`.
+
+p-y11-v04: 0 blockers, 0 should fix, 0 optional. 5,955 characters in separate scenes, about 544 s. Reports: `checks/p-y11-v04-learning-review.md` and `checks/p-y11-v04-science-check.md`.
+
+p-y11-v05: 0 blockers, 3 should fix, 0 optional. 6,259 characters in separate scenes, about 566 s. Reports: `checks/p-y11-v05-learning-review.md` and `checks/p-y11-v05-science-check.md`.
+
+p-y11-v06: 0 blockers, 0 should fix, 0 optional. 5,507 characters in separate scenes, about 515 s. Reports: `checks/p-y11-v06-learning-review.md` and `checks/p-y11-v06-science-check.md`.
+
+p-y11-v07: 0 blockers, 1 should fix, 0 optional. 5,393 characters in separate scenes, about 505 s. Reports: `checks/p-y11-v07-learning-review.md` and `checks/p-y11-v07-science-check.md`.
+
+p-y11-v08: 0 blockers, 1 should fix, 0 optional. 5,510 characters in separate scenes, about 516 s. Reports: `checks/p-y11-v08-learning-review.md` and `checks/p-y11-v08-science-check.md`.
+
+p-y11-v09: 0 blockers, 3 should fix, 0 optional. 6,297 characters in separate scenes, about 567 s. Reports: `checks/p-y11-v09-learning-review.md` and `checks/p-y11-v09-science-check.md`.
+
+p-y11-v10: 0 blockers, 4 should fix, 0 optional. 6,319 characters in separate scenes, about 569 s. Reports: `checks/p-y11-v10-learning-review.md` and `checks/p-y11-v10-science-check.md`.
+
+p-y11-v11: 0 blockers, 0 should fix, 0 optional. 4,990 characters in separate scenes, about 469 s. Reports: `checks/p-y11-v11-learning-review.md` and `checks/p-y11-v11-science-check.md`.
+
+p-y11-v12: 0 blockers, 1 should fix, 0 optional. 5,329 characters in separate scenes, about 494 s. Reports: `checks/p-y11-v12-learning-review.md` and `checks/p-y11-v12-science-check.md`.
+
+19 FA1 action instances and nine v10 FA0 actions checked against fresh official page data. Numerical scripts, site comparisons and review records are in `work/brief145/`. Confirmed site findings appended without duplicating the existing L10/L12 items. User requested sub-agents during this brief; v09, v10 and v11/v12 were delegated, with root integration and an independent false-positive audit of v05/v07. No designs, speech, renders or commits changed. Human listening and implemented motion review remain pending. Next: brief 152 under the revised owner order.
+
+### Brief 152 completed (2 November 2026)
+
+- Content map: every FA2/FA3 point is quoted with its local ID and fresh official CMS codename. All 59 match the current official pages. Existing sources: 53 covered, 6 partial, none missing; proposed homes do not erase those gaps.
+- Ordered route: 33 FA2 and 32 FA3 videos, using all 71 packs and 50 site lessons. FA2 v01 to v12 retain the provisional IDs and source order unchanged. FA1 v31 opening and FA2 v33 to FA3 v01 handoff match. Named investigations have separate homes.
+- Cultural hold: FA3 v05 and v16 remain in sequence with owner decision pending. Navigation and health-access keyword hits are not blanket holds.
+- Pack updates: 48 update records identify changed boundaries, practical/source supplements and stale pack pointers. The six partial points need agar conduct, renal/diabetes source comparisons, paired hormone data, resistance sources and protein-sequence evidence.
+
+Deliverables: `docs/production/programme/bio-y11-fa2-fa3-route-inputs.json` and `docs/production/programme/bio-y11-fa2-fa3-video-map.md`. Independent final audit `work/brief152/final-audit.json` passes all 65 videos, 59 actions, 71 packs, source hashes/anchors and the two cultural holds. No designs, site files, speech, renders or commits changed. Claude route approval remains pending; these are the requested research inputs. Next: brief 151, maths part 2 first.
+
+### Brief 151 part 2 (maths) completed before physics (2 November 2026)
+
+- math-a12-t01: route inputs only, current design/source checked; no pack created.
+- math-a12-t02: route inputs only, current design/source checked; no pack created.
+- math-a12-t03: route inputs only, current design/source checked; no pack created.
+- math-a12-t04: route inputs only, current design/source checked; no pack created.
+- math-a12-i06: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i07: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i08: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i09: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i10: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i11: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i12: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i13: full pack, source examples recalculated, two original candidate cards with worked answers.
+- math-a12-i14: full pack, source examples recalculated, two original candidate cards with worked answers.
+
+Route inputs: `docs/production/programme/maths-a12-route-inputs-3.json`. Nine integral packs: `claude-pm/pre-design/maths-a12/math-a12-i06.md` to `i14.md`. Existing outline questions retained for i11 to i13; pack refinements are explicit proposals. 32 fresh official actions match. Author numerical suites pass 55 plus 65 checks; independent audit samples all nine packs and validates all source/section/example hashes. Thirteen kit-needs rows added, with the actual six pending trig parts and yShift/domain extensions distinguished from existing APIs. Source corrections 62 to 65 added; existing log-scale/profit/rest-time issues extended or referenced without duplicate entries. No designs, speech, renders or commits changed. Starting brief 151 part 1 physics next.
+
+### Brief 151 completed, physics after maths (2 November 2026)
+
+- phys-y11-fa1-v26: pack written; causal question and boundary changes proposed. How does a force along the motion change an object's kinetic energy?
+- phys-y11-fa1-v27: pack written; causal question and boundary changes proposed. How do changes in height and speed change an object's gravitational and kinetic energy?
+- phys-y11-fa1-v28: pack written; causal question and boundary changes proposed. Why does mechanical energy stay constant on a smooth track but decrease when friction does work?
+- phys-y11-fa1-v29: pack written; causal question and boundary changes proposed. Why does a longer stopping time reduce the average force for the same change in momentum?
+- phys-y11-fa1-v30: pack written; causal question and boundary changes proposed. Why can two colliding objects keep the same total momentum while losing kinetic energy?
+- phys-y11-fa1-v31: pack written; causal question and boundary changes proposed. Does the measured total momentum survive a collision?
+
+Six physics packs complete in `claude-pm/pre-design/phys-y11/`, v26 to v31. v26 starts after v24 and does not require held v25. v31 includes a full method,18 repeated illustrative trials, conservative uncertainty intervals, graphs, risks and partial FA0 proposals; total-KE interpretation is conditional on rotation/external-work bounds. All14 fresh Physics actions, source hashes, actual sections/examples and numeric checks pass. Confirmed site findings added without duplicating existing entries.
+
+The maths section was completed first:13 route entries,9 integral packs, no trig packs,13 kit-needs rows and source corrections. Combined validation: `work/brief151/validation.json`. Independent audits cover all15 packs and all19 video inputs. No designs, site files, speech, renders or commits changed. Next: brief147.
+
+
+### Brief 147: Year 11 Biology FA1 v07 to v12
+
+- v07: 0 blockers, 3 should fix, 0 optional; 5,899 characters, about 572 s (accepted). Reports: `checks/y11b-v07-learning-review.md`, `checks/y11b-v07-science-check.md`.
+- v08: 0 blockers, 4 should fix, 0 optional; 5,847 characters, about 564 s. Reports: `checks/y11b-v08-learning-review.md`, `checks/y11b-v08-science-check.md`.
+- v09: 0 blockers, 4 should fix, 0 optional; 5,577 characters, about 540 s. Reports: `checks/y11b-v09-learning-review.md`, `checks/y11b-v09-science-check.md`.
+- v10: 1 blocker, 4 should fix, 0 optional; 5,927 characters, about 569 s. The open-beaker demonstration does not isolate diffusion; the reports specify a source-backed agar replacement and shorter wording. Reports: `checks/y11b-v10-learning-review.md`, `checks/y11b-v10-science-check.md`.
+- v11: 0 blockers, 3 should fix, 0 optional; 5,669 characters, about 549 s. Reports: `checks/y11b-v11-learning-review.md`, `checks/y11b-v11-science-check.md`.
+- v12: 0 blockers, 2 should fix, 0 optional; 5,348 characters, about 519 s (accepted). Reports: `checks/y11b-v12-learning-review.md`, `checks/y11b-v12-science-check.md`.
+
+Plates: 21 new plates, including three schematic agar stages replacing the four original beaker requests, with alpha, black/white, phone and paired-state checks in `assets/brief147-qa/`; hashes and prompts in `assets/brief147-manifest.json` and six per-video provenance files. The optional towel and extra-mitochondrion plate were not needed. The source designs remain unchanged; Claude resolves reported findings before voice/build.
+
+Shared diagrams: `src/explainer/biology/fa1/` exports `SizeLadder`, `AssessBalance` and `GapBox`; `checks/brief147-bio-fa1-components.md` records targeted TypeScript, numerical checks and still proofs. Source reviews and still checks are not human listening or continuous playback approval. Site findings are in `site-corrections-bio-y11.md`.

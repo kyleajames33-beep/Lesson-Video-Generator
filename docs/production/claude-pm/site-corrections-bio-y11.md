@@ -38,3 +38,65 @@ L05 teaches direct stage-grid sizing and image/magnification calculations but do
 - L05 calculated 3,9,4,3 µm: arithmetic is correct. These are not automatically impossible plant/animal dimensions without naming the cell type and dimension. Small cell size alone does not prove a numerical error.
 - L05 most cells 10 to 100 µm: a typical range can have exceptions, and onion length is not equivalent to width. The listed exceptional examples do not logically refute the word “most”.
 - L05 100 µm grid versus 1 mm grid: both spacings can exist. Specify the grid being used, not a universal spacing.
+
+
+## Brief 147: FA1 L06 microscopy
+
+Confirmed 2 November 2026 against the current lesson HTML (SHA256 `640feebb7fe9ff66f822eee7711e51b9f18128e74b7ae71b1979ddbdfefa124c`) and the linked primary sources. Site-owner findings only; no site edits. The existing L01 internal-membrane and resolution findings also occur in L06, as recorded below.
+
+| Lesson | Exact page text | Correction and reason | Source |
+|---|---|---|---|
+| FA1 L06 | For 250 years after cells were discovered, no one knew mitochondria had internal folds or that membranes existed, not because they didn't exist, but because no microscope could resolve them. | Use about 290 years between Hooke (1665) and cristae images (1952–1953). Distinguish resolving membrane structure from earlier evidence that cell boundaries exist. 1952−1665=287 years; first clear cristae images appeared in 1952–1953. | [Source 1](https://journals.sagepub.com/doi/10.1177/1.4.188), [Source 2](https://pubmed.ncbi.nlm.nih.gov/19868999/) |
+| FA1 L06 | specimens must be dead, dehydrated and viewed in a vacuum | Scope dehydration and thin-section preparation to conventional TEM. Cryo-EM preserves frozen-hydrated material; SEM surface preparation differs. Frozen-hydrated bacterial research avoids dehydration; the compared conventional methods still cannot film living cells. | [Source 1](https://journals.asm.org/doi/epdf/10.1128/jb.155.1.381-390.1983) |
+| FA1 L06 | It revealed the cell's ultrastructure, the cell membrane, ribosomes, the cristae of mitochondria, the ER and Golgi, and confirmed prokaryotes lack internal membrane-bound organelles. | Say “the structure of the cell membrane”. Membrane existence and the lipid-layer model were inferred before electron microscopy. Scope the organelle statement to bacteria such as E. coli; do not imply all prokaryotes lack all internal membrane structures. Gorter and Grendel’s original 1925 lipid-layer study predates EM. The internal-membrane scope issue is already in the shared log; deduplicate. The internal-membrane clause extends the existing L01 finding. | [Source 1](https://pubmed.ncbi.nlm.nih.gov/19868999/) |
+| FA1 L06 | viruses (~20–300 nm) are far too small for any light microscope to resolve. | Most viruses are too small for an ordinary light microscope to show internal detail. Do not generalise to all viruses or all optical methods. The listed range reaches the ordinary optical limit; larger giant viruses exist, and super-resolution optical techniques overcome the ordinary diffraction bound. | [Source 1](https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2014.pdf), [Source 2](https://pubmed.ncbi.nlm.nih.gov/12663918/) |
+| FA1 L06 | the electron microscope resolves to about 0.2 nm | Give 0.2 nm as an instrument benchmark with suitable specimen conditions; distinguish resolution achieved on prepared biological specimens. Do not replace it with a new universal limit. Resolution depends on instrument and specimen preparation; the conventional biological 1–2 nm teaching benchmark describes a different context. This extends the existing L01 resolution-context finding to L06. | [Source 1](https://www.ncbi.nlm.nih.gov/books/NBK26880/) |
+
+
+## Brief 147: FA1 L07 membrane structure
+
+Confirmed 2 November 2026. Page SHA256 `c4a3f09924dcfc9a4c134f82ec897816d3ed4e4f764c4c98479a283b6b31b592`. The separate memory-hook source is named explicitly below.
+
+| Source | Exact old text | Correction and reason | Source evidence |
+|---|---|---|---|
+| FA1 L07 page | Integral proteins span the whole bilayer | Integral proteins are embedded in the bilayer. Transmembrane integral proteins span it; not all integral proteins do. The original prostaglandin synthase structure is an integral monotopic protein embedded in one leaflet. | [Source 1](https://www.nature.com/articles/367243a0) |
+| FA1 L07 page | the fluid bilayer provides a self-sealing, impermeable barrier | Use a self-sealing barrier to ions and large polar solutes; small non-polar molecules can pass the lipid core. The same page correctly allows oxygen and carbon dioxide through, so impermeable is contradictory. | Same page: small non-polar oxygen and carbon dioxide cross the lipid core. |
+| FA1 L07 page | The reason you have a blood type, A, B, AB or O, comes down to glycoproteins on the surface of your red blood cells. | ABO blood groups depend on carbohydrate determinants carried by both glycoproteins and glycolipids on red cells. The carbohydrate epitope, rather than an exclusively protein carrier, determines the ABO antigen. | [Source 1](https://onlinelibrary.wiley.com/doi/10.1111/j.1432-1033.1995.0862d.x) |
+| FA1 L07 memory-hooks JSON, l07 | Nothing is glued in place. | Many components drift laterally; some are anchored or restricted. Do not replace nothing with an unsupported numerical claim that only a few are anchored.  | [Source 1](https://pubmed.ncbi.nlm.nih.gov/95669/) |
+
+
+## Brief 147: FA1 L08 practical evidence
+
+Confirmed against the unchanged page on 2 November 2026 (SHA256 `402f33249c25617b869d40f41a0b80fd2c26937b3b48dfa0d778701a1d97796b`). The agar alternative is already allowed by this page; the Nuffield source gives a concrete method.
+
+| Lesson | Exact page text | Correction | Source |
+|---|---|---|---|
+| FA1 L08 | water molecules are small enough to cross but sugar molecules are not | Do not say generic sugar cannot pass Visking. Glucose passes directly in the published model-gut practical; sucrose behaviour depends on the tubing and interval. State relative permeability for an identified and piloted setup, not a universal30min retention rate. | [Source 1](https://practicalbiology.org/exchange-of-materials/digestion-and-absorption/evaluating-visking-tubing-as-a-model-for-a-gut.html), [Source 2](https://www.medicellmembranes.co.uk/tubing1.html), [Source 3](https://www.serva.de/enDE/Catalog/311_Sample_Preparation_Dialysis_212_0.html) |
+| FA1 L08 | a crystal of potassium permanganate dropped into still water spreads colour outward over time with no stirring, visible evidence of particles moving down a concentration gradient | Colour spread in this arrangement can include convection generated by the crystal and dissolving density differences. Lack of stirring alone does not isolate diffusion. Use dye entering agar or a validated diffusion chamber for the diffusion demonstration. | [Source 1](https://pubs.acs.org/doi/abs/10.1021/acs.jchemed.5c00262), [Source 2](https://assets.ctfassets.net/pc40tpn1u6ef/file-14740/f38818f1a3c97330263cbd2f04968f57/9288-Rev_Nuff_Biol_Text_2_living_things_3.pdf) |
+
+The v09 review’s water-route wording, carrier-saturation wording and missing aquaporin example are retained as clarification or coverage notes in `work/brief147/v09/root-site-decisions.json`; they are not added as categorical page errors.
+
+
+## Brief 147: FA1 L09 tonicity
+
+Confirmed 2 November 2026 against page SHA256 `1dcbc53cb91a82914dde9d7123c2652b001668bed9ccbce77fe9fe5bc85929e0`.
+
+| Lesson | Exact page text | Correction and reason | Source |
+|---|---|---|---|
+| FA1 L09 | the animal cell swells and bursts | Use swells and may burst for a generic hypotonic case; distilled-water haemolysis remains a valid severe example. A modest hypotonic change need not exceed the cell’s volume reserve. | [Source 1](https://openstax.org/books/biology-2e/pages/5-2-passive-transport) |
+| FA1 L09 | this is the only safe environment for animal cells | Scope to the normal isolated red-cell example; do not make a universal safety claim for every animal-cell context. Tonicity response depends on cell type and size of the osmotic change. | [Source 1](https://openstax.org/books/biology-2e/pages/5-2-passive-transport) |
+| FA1 L09 | the cell becomes plasmolysed , the cause of wilting | Separate loss of turgor/flaccidity causing ordinary wilting from plasmolysis under stronger osmotic stress. Plasmolysis is not required for ordinary water-loss wilting. | [Source 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4844282/) |
+| FA1 L09 | it is actively losing it to the soil | Wording clarification: replace actively losing with losing by osmosis. The passage describes passive water loss; do not read the ordinary adverb as an explicit assertion of an ATP-driven pump. | [Source 1](https://openstax.org/books/biology-2e/pages/5-2-passive-transport) |
+
+The water-always reminder is read with its surrounding net-movement explanation. Keep its concentration rule within the initial, effectively nonpenetrating-solute comparison and distinguish the pressure-balanced turgid state; no separate claim that the site says water molecules stop moving is logged.
+
+
+## Brief 147: FA1 L10 active transport
+
+Confirmed 2 November 2026 against the current page (SHA256 `a879a4abec75f953c3df39af20fc9f27a6700b70d3a3b2c5026f82fe06429362`).
+
+| Lesson | Exact page text | Correction | Sources |
+|---|---|---|---|
+| FA1 L10 | Active transport is powered by the hydrolysis of ATP, whose released phosphate changes the shape of the carrier protein and so carries the bound substance across the membrane. | For a direct P-type pump, ATP transfers a phosphate to the protein during its cycle; secondary uptake can use an ion gradient maintained by ATP without direct phosphate transfer to each uptake carrier. | [Nitrate transporter study](https://www.nature.com/articles/nature13116), [ATP-driven potassium pump study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7535926/) |
+
+The one-third whole-body ATP statement requires its source and physiological context; it is a source request, not a confirmed numerical error.

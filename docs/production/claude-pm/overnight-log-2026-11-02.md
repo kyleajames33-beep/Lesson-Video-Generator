@@ -19,3 +19,6 @@
 - 2026-11-02 23:10: physics FA2 v10 to v12 designed; started wave F1 (Biology FA2 v19 to v21).
 - 2026-11-02 23:30: Biology FA2 v13 to v15 designed; started wave F2 (maths f09 to f11).
 - 2026-11-02 23:35: maths f05 to f08 designed; started wave F3 (Biology FA2 v22 to v24).
+- 2026-11-02 23:50: physics FA2 v13 to v15 designed; started wave G1 (physics FA2 v16 to v18).
+- 2026-11-03 00:00: Biology FA2 v16 to v18 designed; started wave G2 (maths f12 to f15).
+- 2026-11-02 22:25 check: brief 147 landed (Biology FA1 v07 to v12: 1 blocker in v10, about 20 should-fix; 21 plates; shared FA1 components built). Repair R1 queued as top priority for the next free slot. 5 agents running.
