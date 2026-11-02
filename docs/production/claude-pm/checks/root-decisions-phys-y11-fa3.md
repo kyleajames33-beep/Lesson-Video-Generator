@@ -15,3 +15,9 @@ The FA1 and FA2 physics root decisions apply unless an item below changes them.
 8. **Length.** v05 (5,391) and v06 (5,476) are accepted. v05's optional two-charge comparison is added only if the learning review finds a gap. v06's torsion-balance scene is the first cut if the review finds it a detour.
 9. **Equation form.** The syllabus 1/4πε₀ form is shown first, then k = 8.99 × 10⁹. Brief 164 checks the 2025 reference sheet and, if it prints only one form, aligns the screen text to it. v04 leaves rearranging for r to practice. v05 uses a uniform field as a given (tagged "how to make one: a later video") and the hovering drop without naming Millikan. v06 adds no gravity comparison, because Newton's law of gravitation is Year 12.
 10. **Crossed mistakes** are a grey scribble in all FA3 designs. v01 to v03 were corrected.
+
+## v07 to v09 (3 November 2026)
+11. **Route questions** for v08 to v10 are entered as the designs propose (v10 from v09's handoff chip).
+12. **v07** explains E = V/d through the voltmeter probe and slope, without energy (energy arrives in v09). The push-sum scene stays at its current depth, and the semolina scene is the first cut if the voiced preview runs long.
+13. **Colours.** Velocity in FA3 is a thin blue arrow, as FA2's particle velocity was, because teal is the electric field. Electric potential energy is green, like gravitational potential energy in FA1. v08 states "vacuum, gravity negligible" once and on every practice card.
+14. **v09** owns W = qEd and, across the full gap, W = qV. v10 owns what a volt measures. Feedback near 31 s is accepted, and v09's listed trim is used only if the voiced preview runs long.
