@@ -20,3 +20,9 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 11. **v08** keeps the heterozygote point as an unspoken extension tag, since dominance is not yet taught. Speech says "Hand models can't show that well" (+5 characters). The glider plates are first priority because they carry v08's final frame and v09's opening. Codex fixes the yellow fringe on `m5x-bead-bag-v1.png` and the opaque background on `y11-laptop-blank-v1.png`.
 12. **v09** replaces the site's human arm with a cat foreleg (no people). The thylacine's prey claim is left to the science check: keep "hunted large prey" only if supported, otherwise say "hunted other animals". Whale and cat thumbnails are not added (screen load).
 13. **v10** is accepted at 5,285 characters. Grey mangrove aerial roots stand as the plant structural adaptation, although they are not on the site.
+
+## v14, v15 and v17 (3 November 2026)
+14. **Held v16.** v15 hands off directly to v17, and v17 opens on v15's final frame. The route's v15 nextHandoff and v17 opening are superseded while v16 is held, as item 7 does for v05.
+15. **v14** opens on an assumed v13 final frame (bearded dragon, red kangaroo, thermometer, "?" and Next chip). The v13 designer was asked to match it; root aligns scene 1's first visual sentence if they differ.
+16. **v15** is accepted at 5,295 characters. Its site error on "concentrated urine" in marine bony fish is high priority for the site log.
+17. **Science checks** for brief 163: the dunnart torpor values (v14), "about three times saltier" (v15) and a burst length of "tens of thousands of years" (v17). The Anopheles mosquito plate gets a fringe check before reuse.
