@@ -3,10 +3,10 @@
 Root (Claude) launches these designer agents (opus) as slots free up, at most 5 agents running at once, in wave order. Mark each line "started" or "done" as you go. Every agent prompt is the matching template below with the ids filled in.
 
 ## Queue
-- [started] PRIORITY R2: repair (sonnet) physics phys-y11-fa1-v13 to v19 from brief 149 (keys p-y11-vNN)
-- [ ] PRIORITY R3: repair (sonnet) physics phys-y11-fa1-v20 to v24 from brief 149
-- [ ] PRIORITY R4: repair (sonnet) physics phys-y11-fa1-v26 to v31 from brief 153
-- [ ] PRIORITY R5: repair (sonnet) maths math-a12-t01 to t04 from brief 153 (keys m-a12tNN), applying root decisions 21 and 22 (syllabus notation, "pi over three")
+- [done] PRIORITY R2: repair (sonnet) physics phys-y11-fa1-v13 to v19 from brief 149 (keys p-y11-vNN)
+- [done] PRIORITY R3: repair (sonnet) physics phys-y11-fa1-v20 to v24 from brief 149
+- [done] PRIORITY R4: repair (sonnet) physics phys-y11-fa1-v26 to v31 from brief 153
+- [done] PRIORITY R5: repair (sonnet) maths math-a12-t01 to t04 from brief 153 (keys m-a12tNN), applying root decisions 21 and 22 (syllabus notation, "pi over three")
 - [ ] PRIORITY R6: repair (sonnet) Biology bio-y11-fa1-v13 to v19 from brief 150 (keys y11b-vNN)
 - [ ] PRIORITY R7: repair (sonnet) Biology bio-y11-fa1-v20 to v25 from brief 150
 - [ ] PRIORITY R8: repair (sonnet) Biology bio-y11-fa1-v26 to v31 from brief 150
@@ -37,12 +37,12 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave H2: biology bio-y11-fa2-v28, v29, v30
 - [done] Wave H3: physics phys-y11-fa2-v22, v23, v24
 - [done] Wave H4: maths math-a12-s04, s05, s06
-- [started] Wave H5: biology bio-y11-fa2-v31, v32, v33
+- [done] Wave H5: biology bio-y11-fa2-v31, v32, v33
 - [done] Wave I1: physics phys-y11-fa2-v25, v26, v27
-- [started] Wave I2: maths math-a12-s07, s08, s09
-- [started] Wave I3: biology bio-y11-fa3-v01, v02, v03 (FA3: use the FA3 route entries and fa3 packs; course label "Year 11 Biology (2025 syllabus), Focus Area 3"; v01 opens on bio-y11-fa2-v33's handoff)
-- [ ] Wave I4: physics phys-y11-fa2-v28, v29, v30
-- [ ] Wave I5: maths math-a12-s10, s11, s12
+- [done] Wave I2: maths math-a12-s07, s08, s09
+- [done] Wave I3: biology bio-y11-fa3-v01, v02, v03 (FA3: use the FA3 route entries and fa3 packs; course label "Year 11 Biology (2025 syllabus), Focus Area 3"; v01 opens on bio-y11-fa2-v33's handoff)
+- [started] Wave I4: physics phys-y11-fa2-v28, v29, v30
+- [started] Wave I5: maths math-a12-s10, s11, s12
 - [ ] Wave I6: biology bio-y11-fa3-v04, v06, v07 (v05 is on cultural hold: v04 hands off to v06)
 
 ## Year 11 Biology FA2 ids (provisional; brief 152 adopts them)
