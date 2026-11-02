@@ -1,6 +1,6 @@
 # Year 11 Physics FA1 V04: Distance and displacement problems. How do I keep total path length and change of position apart, in one and two dimensions? (design)
 
-Status: Revision 1 (2 Nov). Needs student learning review and physics check (Codex), then a Codex error check. Voicing follows the brief 124 Google voice pilot. No new plate: uses the v01-brief drone and top-view car plates (blue and yellow). Two small kit gaps (signed number line with an odometer; axis tally board). Nothing recorded; human listening pending.
+Status: Revision 2 (2 Nov): brief 145 repairs applied (independent reviews found no issues; no text changed). Needs a Codex error check. Voicing follows the brief 124 Google voice pilot. No new plate: uses the v01-brief drone and top-view car plates (blue and yellow). Two small kit gaps (signed number line with an odometer; axis tally board). Nothing recorded; human listening pending.
 
 Narration 5,971 characters, 17 scenes, about 544 s (9.1 minutes), counted by script with the build parser rules (see "Narration length estimate").
 

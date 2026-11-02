@@ -1,6 +1,6 @@
 # Y11 Physics FA1 V06 (Physics 2025, Year 11, Focus Area 1): How do I find average velocity in two dimensions? (design)
 
-Status: Revision 1 (2 Nov). Needs student learning review (key `p-y11-v06`), physics check (Codex) and a Codex error check, then plates (Codex asset brief) before build. Voicing follows the programme queue (Google AI Studio after the brief 124 pilot; physics after Year 12 Maths and Year 11 Biology). Nothing recorded; human listening pending.
+Status: Revision 2 (2 Nov): brief 145 repairs applied (independent reviews found no issues; no text changed). Needs a Codex error check. Voicing follows the programme queue (Google AI Studio after the brief 124 pilot; physics after Year 12 Maths and Year 11 Biology). Nothing recorded; human listening pending.
 
 Narration 5,520 characters, 14 scenes, about 515 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate").
 

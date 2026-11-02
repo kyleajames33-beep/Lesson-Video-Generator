@@ -1,6 +1,6 @@
 # Year 11 Physics FA1 V01: Scalars and vectors. Why do some motion quantities need a direction, and which ones are they? (design)
 
-Status: Revision 1 (2 Nov). Needs student learning review and physics check (Codex), then a Codex error check. Voicing follows the brief 124 Google voice pilot (physics follows Year 12 Maths and Year 11 Biology in the voicing queue). Five new painted plates are requested (see "Codex asset brief"); two existing car plates are reused. Two small kit gaps (plan-view route tracer, dial overlay). Nothing recorded; human listening pending. First video of the whole Year 11 Physics playlist: opens cold, no course title card.
+Status: Revision 2 (2 Nov): brief 145 repairs applied (independent reviews found no issues; no text changed). Needs a Codex error check. Voicing follows the brief 124 Google voice pilot (physics follows Year 12 Maths and Year 11 Biology in the voicing queue). Five new painted plates are requested (see "Codex asset brief"); two existing car plates are reused. Two small kit gaps (plan-view route tracer, dial overlay). Nothing recorded; human listening pending. First video of the whole Year 11 Physics playlist: opens cold, no course title card.
 
 Narration 6,324 characters, 17 scenes, about 569 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate").
 

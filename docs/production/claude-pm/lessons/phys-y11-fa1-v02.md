@@ -1,6 +1,6 @@
 # Year 11 Physics FA1 V02: Vector diagrams. Why do vectors join tip to tail, and how does a diagram show a resultant or a difference? (design)
 
-Status: Revision 1 (2 Nov). Needs student learning review and physics check (Codex), then a Codex error check. Voicing follows the brief 124 Google voice pilot. Uses plates requested in the v01 brief (top-view boat, drone, top-view car) plus the existing ruler and tennis ball plates; no new plate. Two small kit gaps (vector slide, time-tick stepping). Nothing recorded; human listening pending.
+Status: Revision 2 (2 Nov): brief 145 repairs applied (ruler scale unified to 0.964 in author note (a)). Needs a Codex error check. Voicing follows the brief 124 Google voice pilot. Uses plates requested in the v01 brief (top-view boat, drone, top-view car) plus the existing ruler and tennis ball plates; no new plate. Two small kit gaps (vector slide, time-tick stepping). Nothing recorded; human listening pending.
 
 Narration 5,823 characters, 15 scenes, about 532 s (8.9 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -47,7 +47,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/
 - **Board layout (constant, as v01):** heading top-left; plan view or arrow board on the left two thirds with compass (N up); algebra and chips in the right column. Plan views of the river: banks run left to right, current flows to the right (east), "across" is north.
 - **No human figures.** Boat without passengers; car without driver.
 - **Author notes (not learner copy):**
-  (a) Arrow scales: scene 2 and the worked example, 1 cm = 1 m s⁻¹ shown as 90 px per unit so the ruler plate (`m7-ruler-clear-v1.png`, 1,400 px between its end ticks for 15 cm at native size, about 93 px per cm) is scaled uniformly to match: plate width × 0.967 gives 90 px per cm. 3.0 → 270 px, 4.0 → 360 px, 5.0 → 450 px. Scene 3 drone: 70 px per metre (as v01). Scene 8: 20 m s⁻¹ → 300 px; Δv 28.28 → 424 px.
+  (a) Arrow scales: scene 2 and the worked example, 1 cm = 1 m s⁻¹ shown as 90 px per unit so the ruler plate (`m7-ruler-clear-v1.png`, 1,400 px between its end ticks for 15 cm at native size, about 93 px per cm) is scaled uniformly to match: plate width × 0.964 gives 90 px per cm. 3.0 → 270 px, 4.0 → 360 px, 5.0 → 450 px. Scene 3 drone: 70 px per metre (as v01). Scene 8: 20 m s⁻¹ → 300 px; Δv 28.28 → 424 px.
   (b) River: the 3.0 m s⁻¹ is the boat's velocity relative to the water and the 4.0 m s⁻¹ the water's velocity relative to the bank; the resultant is the boat's velocity relative to the bank. The words "relative to" are not used; v11 owns relative velocity and changing the observer. Narration: "the boat's own motion" and "the water carries it".
   (c) Corner: v_i = 20 m s⁻¹ east, v_f = 20 m s⁻¹ north; Δv = (−20, 20), |Δv| = 20√2 = 28.28 m s⁻¹, direction 45° west of north (north-west, exactly 45° here, so "north-west" is correct). Average acceleration over the turn is parallel to Δv; instantaneous acceleration is not discussed (site note 3).
   (d) A − B and B − A have equal size and opposite directions (site Q3); mentioned on screen only as a grey tag in scene 8 ("v_i − v_f would point the other way"), not narrated.
