@@ -10,3 +10,7 @@ Series decisions in `root-decisions-bio-y11-fa1-v01-v06.md` and `root-decisions-
 6. **v04:** the organism rung as a cluster of organ plates is accepted (no body outline); the disease-at-each-level section stays out. The fringe on `m8-skin-cross-section-v1.png` is fixed once for v03 and v04.
 7. **v05:** the replacement memory line "Light switches photosynthesis on. Nothing switches respiration off." is accepted.
 8. **v06** at 5,256 characters accepted. Its handoff now leads to the route's v07 (controlled pondweed investigation): root rewrote the last sentence and final frame (pondweed tube by a lamp, bubbles, "?").
+9. **v07** (5,289) and **v08** (5,292) accepted at their lengths: the route separates conduct from analysis. Use the designers' shorter on-screen headings; the full route question stays in metadata. The odd count (47, recounted 33) stays in v07 for v08 to process.
+10. **v07 species:** do not name Cabomba (a Weed of National Significance); use Elodea only if the science check confirms its NSW status for school use, otherwise "a pondweed approved by your school" with a generic pondweed plate. The safety check confirms the pondweed and electrical rows.
+11. **v08:** keep the light-and-distance sentence (inverse square at Year 11 level, stated as "about four times"); its reserve cut applies only if the review finds it confusing.
+12. **v09:** add a grey screen tag "the pull: video 12" on "pulled" (screen only). Memory aid "Xylem is a pipe, not a pump" accepted.
