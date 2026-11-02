@@ -290,6 +290,9 @@ Moving 1 unit on the dB scale = multiplying intensity by 10. Moving 3 units = mu
 
 **Source/check:** NESA ci1275a9f6; direct rearrangement of the stated acoustics formula.
 
+
+**Brief 151 additional location:** `orient-modelling` also says "A difference of 3 on a log scale means a ratio of $10^3 = 1000$, not a difference of 3." The scale coefficient and sign matter. For S = k log10(Q/Q0), Q2/Q1 = 10^((S2-S1)/k). This is the same coefficient error as the dB item, not a separate duplicate finding. The original dB location remains unchanged on the read-only site.
+
 ## 19. random-variables/lesson03.sa.html: work-normal-examples/we-2
 
 **Exact old text or HTML:**
@@ -326,6 +329,9 @@ The total profit generated between the break-even points is $\int_{10}^{50}[R(x)
 
 Integral L01 (`reverse-differentiation`, `apply-the-power-rule`) and L04 both introduce primitives and reverse differentiation. Treat one as the introduction and the other as a bridge/revision source; do not duplicate both as distinct first videos. Exact point mapping and outgoing/optional content flags are in the crosswalk.
 
+
+
+**Brief 151 additional location for item 20:** `integral-calculus/lesson09.sa.html`, `we-3`, uses R(x)=100x and C(x)=x²+20x+400 and asks for "the total profit between them". Its area step says "The area between the curves is the total accumulated profit." This has the same total-versus-marginal dimensional error as item 20. Profit at an output is R-C. If calculating only the geometric integral, keep exact boundaries 40 +/- 20√3 rather than substituting rounded 5.4 and 74.6; the geometric value is 32000√3 in integrand-times-output units. No second duplicate profit item is created.
 
 ## 21. differential-calculus/lesson01.sa.html: derive, cooling example (brief 130)
 
@@ -619,3 +625,41 @@ The medical-imaging box calls −D₀τe^(−t/τ)+C a "total dose". It is a fam
 The 1/x card says the absolute value covers positive and negative domains, but a single +C cannot represent all primitives across the disconnected union. State that each of x<0 and x>0 can have its own additive constant, and that the usual expression with one C describes one interval or a subset of the full family. Mixed examples also need x≠0; the square-root term in Q2 further requires x>0.
 
 The hook claims a climate scientist needs ∫1/x dx for CO₂ absorption but states no physical model yielding that rate. Supply such a model or remove the assertion. The site header and unsupported mark claims for this page were recorded in item 60; do not duplicate them.
+
+## 62. Trig lesson01: closed-period endpoint solutions (brief 151)
+
+**Source:** `further-graph-transformations-and-modelling/lesson01.sa.html`, `solve-and-consolidate`.
+
+**Exact old text:** Count solutions: Use the period, each full period of the graph can produce at most 2 solutions for sin/cos (one on the way up, one on the way down).
+
+**Correction:** Count distinct crossings in the specified domain, including both closed endpoints.
+
+**Reason:** A closed interval spanning one period can contain both equivalent endpoints as distinct solutions plus another crossing. Site we-3 gives x=0,pi/2,2pi for 2cos(x-pi/4)=sqrt2 on[0,2pi].
+
+Evidence: `work/brief151/trig-source-evidence.json` and `trig-source-checks.json`.
+
+## 63. Trig lesson02: amplitude and phase parameter summary (brief 151)
+
+**Source:** `further-graph-transformations-and-modelling/lesson02.sa.html`, `orient-modelling`.
+
+**Exact old text:** $f(t) = a\sin(bt + c) + d$, amplitude $a$, angular frequency $b = 2\pi/T$, phase shift $c$, vertical shift $d$.
+
+**Correction:** Use amplitude |a| and horizontal translation -c/b; retain the frequency and vertical-shift meanings.
+
+**Reason:** Amplitude is |a| and the horizontal translation is -c/b in t units. The site itself uses a negative cosine coefficient for the bottom-start wheel.
+
+Evidence: `work/brief151/trig-source-evidence.json` and `trig-source-checks.json`.
+
+## 64. Integral lesson08 we-2: upper-limit logarithm domain (brief 151)
+
+**Exact task:** Find $d/dx (integral from 1 to x^2 of ln t dt)$. The worked simplification writes $2 ln(x) * 2x = 4x ln x$ and correctly qualifies its logarithm identity as "for x > 0", but the question does not restrict x to that branch.
+
+**Correction:** For the ordinary proper integral, x is nonzero. Retain 2x ln(x²), equivalently 4x ln|x|, on both branches; or state x > 0 in the question before using 4x ln x. Do not silently extend the proper-integral definition through an upper endpoint of zero.
+
+Evidence: unchanged source task and both-branch SymPy checks in `work/brief151/integral-a-numeric.json`.
+
+## 65. Integral lesson07 we-2: incorrect example heading (brief 151)
+
+**Exact heading and task:** "PROBLEM 2 · EXPONENTIAL + LOG" followed by $integral from 0 to 2 of (e^x + x) dx$.
+
+**Correction:** This is exponential plus linear, not a logarithmic integrand. Keep the unchanged integral and result e² + 1; change only the heading.
