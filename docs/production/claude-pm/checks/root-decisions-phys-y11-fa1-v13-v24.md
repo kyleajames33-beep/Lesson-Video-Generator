@@ -21,3 +21,10 @@ Decisions 1 to 16 in `root-decisions-phys-y11-fa1-v01-v12.md` still apply. Revie
 15. **v24 uncertainty bars:** taught at the minimum level (as v15), with standard deviation deferred; recalled in one sentence if the FA0 skills video is released first.
 16. **Smaller calls accepted:** v21 attempt 2 card uses an HSC-style line drawing; v22's vertical check uses a tall stand rod; v23 says "about one hundred and seventy newtons" for 1.7 × 10² N; v24's illustrative data extend to six angles.
 17. **Ramp kit:** one adjustable-ramp plate set (plank, hinge block, stand, boss, protractor without numerals, force scales) serves v21 to v24; plates are rotated by code, never stretched.
+
+## v26 to v28 (2 November 2026, evening)
+18. **Energy colours, course-wide:** kinetic energy blue, gravitational potential energy green, work bars amber-outlined and hatched, heat warm grey, total as a dashed outline; velocity stays teal.
+19. **Learner questions adopted:** v27 "How does a change in height store energy, and how does speed set kinetic energy?"; v28 "When only gravity does work, why does kinetic plus potential energy stay the same?". Route boundaries as written in the designs.
+20. **v26** keeps the conservative and non-conservative point (as the route assigns), with "where was the energy kept?" left open for v27. Sign convention: W = ΔU is the work done against gravity by the lift; gravity's own work is shown as W_g = −ΔU.
+21. **v28** at 5,658 characters is accepted. Its handoff chip is aligned to v29's question when v29 lands.
+22. **Public copy:** YouTube descriptions write formulas readably (for example "KE = ½mv²") after the verbatim syllabus quote, never altering the quote.
