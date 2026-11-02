@@ -15,3 +15,8 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 8. **v04** keeps the four-limit scene (its reserve cut is used only if the voiced preview runs long). The finch species count is left to the science check: "about fifteen" stays unless brief 163 confirms a different current figure, in which case the speech says "more than a dozen" (length-neutral).
 9. **v06** leaves out the dingo. Its arrival story is contested and tied to First Nations history, so it waits with the cultural holds. v06 keeps the hedged counterfactual ("the outcome would likely have been very different"); the evaluation rests on the fox and cat evidence.
 10. **v07** accepts the three method changes: forceps as the beak (no hands on screen), a spare pile of offspring dots and a plain white control sheet. The site's 15 s hunt is kept and the 10 s figure is logged as a site inconsistency.
+
+## v08 to v10 (3 November 2026)
+11. **v08** keeps the heterozygote point as an unspoken extension tag, since dominance is not yet taught. Speech says "Hand models can't show that well" (+5 characters). The glider plates are first priority because they carry v08's final frame and v09's opening. Codex fixes the yellow fringe on `m5x-bead-bag-v1.png` and the opaque background on `y11-laptop-blank-v1.png`.
+12. **v09** replaces the site's human arm with a cat foreleg (no people). The thylacine's prey claim is left to the science check: keep "hunted large prey" only if supported, otherwise say "hunted other animals". Whale and cat thumbnails are not added (screen load).
+13. **v10** is accepted at 5,285 characters. Grey mangrove aerial roots stand as the plant structural adaptation, although they are not on the site.
