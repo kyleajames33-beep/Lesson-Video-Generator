@@ -38,7 +38,7 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave H3: physics phys-y11-fa2-v22, v23, v24
 - [done] Wave H4: maths math-a12-s04, s05, s06
 - [started] Wave H5: biology bio-y11-fa2-v31, v32, v33
-- [started] Wave I1: physics phys-y11-fa2-v25, v26, v27
+- [done] Wave I1: physics phys-y11-fa2-v25, v26, v27
 - [started] Wave I2: maths math-a12-s07, s08, s09
 - [started] Wave I3: biology bio-y11-fa3-v01, v02, v03 (FA3: use the FA3 route entries and fa3 packs; course label "Year 11 Biology (2025 syllabus), Focus Area 3"; v01 opens on bio-y11-fa2-v33's handoff)
 - [ ] Wave I4: physics phys-y11-fa2-v28, v29, v30

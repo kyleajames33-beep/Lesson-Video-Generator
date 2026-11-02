@@ -1,0 +1,287 @@
+# Year 11 Physics FA2 V27 (Physics 2025, Year 11, Focus Area 2): Why do waves spread into the space behind a gap or an obstacle, and what decides how far they spread? (design)
+
+Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v27`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new; v18's ripple tank and v20's barrier layer, v15's portable radio and house, v13's filament lamp and radio mast, and the FA2 microphone and light meter reused by name.
+
+Narration 5,803 characters, 17 scenes, about 536 s (8.9 minutes) including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
+
+Scope: twenty-seventh video of the Year 11 Physics (2025) Focus Area 2 route and the first of two diffraction videos (v27 explains, v28 investigates). Templates: `phys-y11-fa1-v22.md` (concept format, section list, calculations as task, equation and grouped givens) and `phys-y11-fa1-v24.md` (apparatus conventions); house conventions and the FA2 colour key from `phys-y11-fa2-v18.md` to `phys-y11-fa2-v26.md` (Revision 1). No pre-design pack exists: the pack work is done in this file. Site lesson read in full (3 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year11/fa2-waves/lesson20.sa.html` (orient and predict, intentions and key terms, misconceptions 1 and 2, card 1 what diffraction is with its figure, card 2 how much a wave diffracts with `we-1` and the quick check, activity 1, fill the gaps, card 3 modelling diffraction in a ripple tank, last check, matching task, independent practice Q1 to Q3, retrieve). Card 3, the matching task and Q2 belong to v28. Route entry: `phys-y11-fa2-v27` in `../../phys-y11-video-route.json` (proposed; coverage "preparation-for-investigation"; placeholder question rewritten below). Route start: "Start with Diffraction. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions." Route stop: "Stop after the learner can answer: How can I explain and apply diffraction? Teach only the listed actions; the next video owns its separate question." Route next: "phys-y11-fa2-v28: How does opening size relative to wavelength affect spreading?" (v28's route question; the handoff chip uses it as written, and root aligns the chip if v28's designer rewrites it).
+
+**Opening frame (v26's actual handoff, Revision 1, 3 Nov).** v26's scene 18 ends with the memory line "Short sight falls short: spread it. Long sight lands long: pull it in. The bench shows the focus moving." small at the top; the optical bench faint at the left with the lamp's rays in straight lines to the lens and the chip "light: straight lines, until a lens bends it"; at the right the ripple tank plate (`phys-y11-ripple-tank-v1.png`) with a coded top-view inset of straight wavefronts reaching a barrier with a narrow gap and curved wavefronts spreading behind it; chip "spreading behind a gap?"; chip "Next: Why do waves spread into the space behind a gap or an obstacle, and what decides how far they spread?". This video opens on that frame.
+
+Owner rules applied: 2025 syllabus only; no people, faces, hands or body outlines (the doorway scene uses a radio, a lamp, a microphone and a light meter as source and detectors, not a listener or a watcher; the barriers move by code); apparatus and objects painted (the ripple tank, the radio, the lamp, the microphone, the light meter, the house, the mast); wavefronts, wavelets, barriers in top view, the doorway plan, the hill profile and readouts coded (abstract diagrams); one reasoning stage at a time; calculations as task, equation and grouped givens with units; 3 s in-teaching predictions; "Pause here to answer." with a 10 s countdown and the full worded question on screen; brief feedback with one crossed mistake; original questions; key-notes hold; Australian spelling; no em dashes; v05 (v = fλ), v16 (energy spreading over a larger area) and v20 (the source sets the frequency; the medium sets the speed) recalled in a sentence at most. Root decision 20's earlier "diffract in plain words" mentions are now taught properly here.
+
+Syllabus content point (Physics 11-12 (2025), Year 11, Focus Area 2, group "Wave behaviours"; local ledger ID with NESA content-system codename), quoted from the syllabus JSON:
+
+- P25-FA2-G3-12 `ciedffc9b0`: "Conduct a practical investigation to model how waves diffract through openings and around obstacles of different sizes" (route coverage for this video: "preparation-for-investigation"; v28 owns the action)
+
+Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa307d399c
+
+**Boundary:** starts from v26's handoff (above); the prediction (wide gap or narrow gap?); diffraction seen at a wide gap: the middle goes straight, the edges curve into the shadow; the definition, for all waves; the cause in plain words: every point on a wavefront passes the motion on in all forward directions like a small source (a Huygens-style picture, not named as a principle beyond a grey tag), so a straight front rebuilds itself in open water but leaks round an edge; the narrow gap acts almost like one small source, so semicircles; the wavelength, frequency and speed are unchanged, the amplitude falls as the energy spreads; what decides the spread: the gap compared with the wavelength, in both directions (narrower gap, longer wave); the ratio w/λ; below about one wavelength, still semicircles, with less energy getting through (site correction 1); the site's worked example; obstacles small and large; sound and light at a doorway; the memory aid; two attempts. Stops at the qualitative rule and the w/λ comparison. Not taught: the investigation, its variables, data and risks (v28); the spreading angle formula (sin θ = λ/w, Year 12; author note c); single-slit minima and interference within the spread (v29 onwards owns superposition); diffraction as evidence that light is a wave (Year 12; one grey tag at most).
+
+## Decisions
+
+- **Learner question rewritten (route placeholder).** "Why do waves spread into the space behind a gap or an obstacle, and what decides how far they spread?" One causal question with its two parts tied: the cause of spreading (edges with nothing beyond them) and the controlling comparison (gap with wavelength). It is v26's handoff chip (open decision 1). The answer, built in order: the prediction (1); spreading seen at a wide gap and named (2); why: each point passes the motion on like a small source, and an edge has nothing beyond it to fill in (3); a narrow gap acts almost like one source (4); what stays the same (5, 6); the gap compared with the wavelength decides (7); the numbers (8); obstacles (9); the doorway (10); memory aid (11).
+- **The hook (site warm-up, made a prediction on v26's frame).** The ripple tank inset from v26 enlarges into a split top view: the same straight waves approach a wide gap (left) and a gap about one wavelength wide (right); "Through which gap will the waves spread out more?" 3 s with chips "wide gap?", "narrow gap?". Site misconception 1 ("waves diffract more through wider gaps") is the expected wrong answer; answered in 4.
+- **The cause made visible (owner quality bar).** (3) `WaveletBuilder`: along one straight crest in open water, a row of dots each sends out a small semicircular ripple; the ripples' common front (their envelope) traces the next straight crest, one wavelength on (one cycle shown, then looped). At the wide gap, the barrier deletes the dots it covers; the dots at the gap's edge still send out their ripples, and on the barrier side no neighbouring ripples overlap them, so the curved edge of the front shows through into the shadow (highlighted gold). (4) The gap closes to about one wavelength: only a couple of dots fit, close together, so their ripples merge into one semicircle. The rendering of every diffraction pattern in the video (`WavefrontDiffract`) is computed from the same wavelet sum, so the pictures are the cause, not decoration (author note a).
+- **Plain-language model, honestly scoped.** Narration: "each bit acts like a tiny source of its own little ripple"; the grey tag "this picture is called Huygens' principle (more in Year 12)" appears once in scene 3. The phrase "nothing fills in" describes the missing neighbouring ripples; the build must not draw the barrier reflecting or absorbing in a way that contradicts it (reflections off the barrier's front face are drawn faint, on the incoming side only).
+- **Prediction 2 (3 s, scene 5; site misconception 2).** "After the gap, are the waves longer, shorter, or the same length as before?" Chips "longer?", "shorter?", "the same?". Answered in 6: the same, because the depth (so the speed, v20) and the bar's frequency (the source sets the frequency, v20's memory aid) haven't changed, and v = fλ (v05). The amplitude falls as the same energy spreads along a longer front (v16 recalled in a clause).
+- **What decides the spread (site card 2; site correction 1).** "Keep the wavelength and narrow the gap, and the spreading grows. Keep the gap and lengthen the wavelength, and the spreading grows too." The ratio w/λ (gap width divided by wavelength) is introduced as "a useful number": about ten or more, little spreading; about one or smaller, near semicircles. Then: "Make the gap even narrower than that, and the waves still spread as semicircles, but less energy gets through." The site's "maximum spreading when w ≈ λ" is not used; it conflicts with the site's own "a narrower gap diffracts more" and its matching task's "comparable to or narrower than the wavelength".
+- **Worked example (site `we-1`, unchanged numbers).** λ = 2.0 cm; gaps 2.0 cm and 20 cm: w/λ = 1 and 10; the 2.0 cm gap spreads the waves far more; its ratio is ten times smaller. Layout: task strip, equation strip "compare w/λ (small → strong spreading)", givens group with units; one row per cue.
+- **Obstacles (`ciedffc9b0`'s "around obstacles of different sizes"; site last check).** A post about one wavelength across: the waves wrap round both sides and close up behind it, almost no shadow. A block many wavelengths wide: the fronts curve a short way round its ends, and a calm shadow lies behind the middle. Both drawn from the same wavelet sum.
+- **The doorway (site Q3, made a measurement with objects; no people).** Plan view: a room with an open doorway (0.90 m wide); inside, the portable radio (playing a 340 Hz note) and the filament lamp side by side; round the corner outside, out of the straight line from both, a microphone and a light meter on a small coded table. Sound fronts (λ = 1.0 m) spread through the doorway and reach the microphone (its level bar rises); light rays go straight through and the light meter round the corner reads near zero (its bar stays low; a sharp-edged bright patch on the far wall). Numbers: w/λ = 0.90 for the sound; 0.90 ÷ 5.0 × 10⁻⁷ = 1.8 × 10⁶ for the light ("nearly two million wavelengths wide").
+- **Attempts (original, HSC style).** (A1, ripple tank, links v05) "Water waves in a ripple tank have a frequency of 10 Hz and a wavelength of 3.0 cm. They pass through a gap 3.0 cm wide. The frequency is then increased to 20 Hz, with the water depth unchanged. (a) Calculate the speed of the waves. (b) Calculate the new wavelength. (c) Explain how the spreading of the waves beyond the gap changes. (4 marks)" Answer: 0.30 m s⁻¹; 1.5 cm; w/λ from 1 to 2, so the waves spread less. Crossed: "higher frequency means more energy, so the waves spread more". (A2, radio, links v13 to v15) "An AM radio station broadcasts at 1.0 MHz and an FM station at 100 MHz. A house lies behind a hill several hundred metres across. Take c = 3.00 × 10⁸ m s⁻¹. (a) Calculate the wavelength of each signal. (b) Explain why the AM station is received clearly at the house, while the FM signal is weak. (4 marks)" Answer: 300 m and 3.0 m; AM's wavelength is comparable to the hill, so it diffracts round it; FM's is far smaller, so it barely bends, leaving a radio shadow. Crossed: "AM waves travel faster, so they get round the hill".
+- **Mistake scene:** none separate. "Waves diffract more through wider gaps" (1, 4, site misconception 1); "diffraction changes the wavelength or speed" (5, 6, site misconception 2); "spreading peaks at exactly one wavelength and falls for narrower gaps" (7, site correction 1); "higher frequency waves spread more" (feedback 1 crossed); "AM gets round because it's faster" (feedback 2 crossed); "light doesn't diffract at all" (10: it does, by a tiny amount at a doorway).
+- **Memory aid:** "Squeeze the gap, or stretch the wave, and the spread grows." Second line: "until the gap is about one wavelength or less: then semicircles." (see "Memory aid check").
+- **Handoff (route next).** Board change: the split top view returns with three gap widths side by side (about 5λ, 2λ and λ) and their patterns; a ruler laid across five crests (coded, from v20); chips "measure the spread?", "change the gap, keep λ?"; the ripple tank plate small at the right; then "Next: How does opening size relative to wavelength affect spreading?". This is the frame v28 opens on.
+- **Site sources used:** warm-up (wide gap and one-wavelength gap: 1); key terms (diffraction, wavelength, aperture, ripple tank: 2, 7); misconceptions 1 and 2 (1, 4, 5, 6); card 1 and its figure (2, 6); true or false (the wavelength does not get longer: 6); card 2 (the ratio, both directions: 7; its "maximum when w ≈ λ" corrected); `we-1` (8); quick check (sound through a doorway: 10); fill the gaps (spreading, wavelength, more: 7, 11); last check (small obstacles bend, large ones shadow: 9); Q1 (definition and the ratio: 2, 7); Q3 (doorway: 10, with the factor corrected). Not used here: card 3, the matching task and Q2 (v28); activity 1 (its numbers are kept clear of A1's so v28 can use them).
+- **Site corrections (quoted from site lesson 20, read 3 Nov; for `../site-corrections-phys-y11.md`; none already logged for this lesson):**
+  1. Card 2: "Maximum spreading when $w \approx \lambda$"; learning intention: "Why diffraction is greatest when the gap is about one wavelength wide"; misconception 1's correction: "Waves diffract most when the gap is about the same size as the wavelength"; Q1 marking: "max diffraction when $w \approx \lambda$". These imply that a gap narrower than one wavelength spreads the waves less, which contradicts the same card's "for a fixed wavelength, a narrower gap diffracts more" and the matching task's "Gap comparable to or narrower than the wavelength". Spreading increases as the gap narrows; once the gap is about one wavelength or less, the waves leave as near semicircles, and narrower gaps let less energy through. Suggest: "Spreading increases as the gap narrows compared with the wavelength. When the gap is about one wavelength wide or narrower, the waves spread out as almost semicircular fronts."
+  2. Card 2: "The amount of diffraction depends on the ratio $\dfrac{\lambda}{w}$ of wavelength to gap width" while `we-1` and activity 1 compute $w/\lambda$, and the key term compares "$w$ with $\lambda$". Suggest using one ratio throughout, for example "the gap-to-wavelength ratio w/λ: the smaller it is, the more the waves spread". (Suggestion, not an error.)
+  3. Q3 marking line: "visible light wavelengths are hundreds of thousands of times smaller than the doorway"; the model answer says "smaller than the doorway by a factor of about a million". For a doorway of about 1 m and λ = 5 × 10⁻⁷ m the factor is about 2 × 10⁶. Suggest: "about two million times smaller than the doorway".
+  - Checked and correct: key terms; misconception 2; card 1 and its figure (same wavelength after the gap); true or false (false); `we-1` (1 and 10, a factor of 10); quick check (A); fill the gaps; last check (true); Q1 and Q3 model answers apart from the factor.
+- **Cause chain taught, in order:** (1) a prediction that needs a cause (1); (2) at a wide gap the edges curve into the shadow; this is diffraction (2); (3) each point on a front passes the motion on like a small source; in open water the ripples rebuild a straight front; at an edge nothing fills in, so the front leaks round (3); (4) a narrow gap acts almost like one source, so semicircles (4); (5) the medium and source are unchanged, so λ is unchanged; the energy spreads, so the amplitude falls (5, 6); (6) the gap compared with λ decides; both directions; below λ, semicircles with less energy (7); (7) numbers (8); (8) obstacles: small ones are wrapped, large ones cast shadows (9); (9) sound fits a doorway, light doesn't (10); (10) memory aid (11).
+- **Entry knowledge (route `entryKnowledge`):** Stage 5 (waves carry energy; water and sound waves). From FA2, recalled in a phrase each: v05 (v = fλ), v13 to v15 (radio as electromagnetic waves at c), v16 (energy spread over a larger area), v18 (the ripple tank; wavefronts), v20 (the source sets the frequency; the medium sets the speed).
+- **Learner-visible vocabulary (plain meaning at first use):** diffraction (waves spreading out as they pass through a gap or around the edge of an obstacle, scene 2); wavefront (a line joining the crests, recalled from v18, scene 2); shadow region (the space behind the barrier that a straight path can't reach, 2); gap-to-wavelength ratio w/λ (the gap width divided by the wavelength, 7); obstacle (something in the waves' path, 9).
+- **Legacy logic ported:** none. Drawing parts only: `Arrow`, `Label`, `Panel` (`course-kit.tsx`).
+- **New explainer motion (coded unless a plate is named):** v19's **`WavefrontRefract`** extended to **`WavefrontDiffract`** (top-view crests computed from a wavelet sum over the open part of a barrier line: gaps of any width, posts and blocks; crest lines drawn where the summed displacement peaks, opacity following the amplitude; one shared clock and wavelength readout); **`WaveletBuilder`** (a row of source dots on a crest, each growing a small semicircular ripple, with their envelope traced; dots removable where a barrier covers them; the uncovered edge ripple highlighted); **split tank view** (two `WavefrontDiffract` panels side by side, synchronised); **ratio bar** (a horizontal bar "w/λ" with a sliding marker and pattern thumbnails at 1, 2, 5 and 10); **doorway plan** (coded walls and doorway, sound fronts from the radio, straight light rays from the lamp, the bright patch on the far wall, level bars on the microphone and light meter); **hill profile** (a coded side-view hill with the mast, house and long and short wave fronts, for feedback 2); `AlignedAlgebra`; `Countdown` (3 s, 10 s); `QuestionCard` (subject "Physics"); `Chip` with `cross`; `KeyNotes`; `Heading`.
+- **Board layout (constant):** heading top-left; the tank top view (single or split) across the centre left; the ripple tank plate small at the top right as the "real apparatus" reminder; working and chips in the right column.
+- **Colour key:** as v18 to v20: water crests navy, fading with amplitude; wavelets thin pale navy; the leaking edge front highlighted gold; barriers and obstacles dark grey; the shadow region pale grey hatch; sound fronts navy dashed; light rays warm white with amber-outlined heads; the bright patch pale gold; level bars teal; readouts navy; crossed items muted red.
+- **No human figures.** No listener, watcher, hands or faces; the radio, lamp, microphone and light meter stand in for people.
+- **Author notes (not learner copy):**
+  (a) Rendering: for a gap of width w in a straight barrier with plane waves of wavelength λ, sum point sources spaced at most λ/8 across the gap, each with amplitude falling as 1/√r (2D) and phase kr; draw crest lines where the summed field peaks; opacity from the local amplitude, floored so weak fronts stay faintly visible. The same routine handles posts (sources along the whole line except the post) and blocks. Near-field fringes inside the pattern (single-slit minima) appear naturally; they are not pointed out (v29 onwards).
+  (b) Patterns used: hook and scene 4, gaps about 6λ and 1λ; scene 7's sweep, w/λ from 10 to 0.5 with the wavelength fixed, then λ from 0.5 cm to 3.0 cm with the gap fixed at 3.0 cm (wavelengths drawn at tank scale); scene 9, a post 1λ across and a block 8λ wide.
+  (c) Spreading angle (not taught): the first minimum of a single gap is at sin θ = λ/w; w = 10λ gives 5.7°; w = 2λ gives 30°; w = λ gives 90° (the whole forward half-plane, near semicircles). For w < λ there is no minimum; the spread is semicircular and the transmitted power falls with w.
+  (d) What stays: the water depth sets the speed (v20); f set by the bar; λ = v/f unchanged. The amplitude falls with distance from a narrow gap roughly as 1/√r (energy spreading along a longer front in 2D; v16's inverse square is the 3D version); narration says only "the waves do get smaller as they spread".
+  (e) Doorway: 340 Hz at 340 m s⁻¹ (air at about 15 °C) gives 1.00 m; w = 0.90 m, w/λ = 0.90. Light 5.0 × 10⁻⁷ m (green-yellow), w/λ = 1.8 × 10⁶; its edge spreading angle about 5.6 × 10⁻⁷ rad, invisible. Higher-pitched sounds (3.4 kHz, 0.10 m) spread less, which is why sound round a corner sounds duller; not said.
+  (f) A1: v = 10 × 0.030 = 0.30 m s⁻¹; new λ = 0.30 ÷ 20 = 0.015 m = 1.5 cm; w/λ = 3.0 ÷ 3.0 = 1 → 3.0 ÷ 1.5 = 2. Edge angle from about 90° to 30° (author note c; not said).
+  (g) A2: λ = 3.00 × 10⁸ ÷ 1.0 × 10⁶ = 300 m; 3.00 × 10⁸ ÷ 100 × 10⁶ = 3.0 m. AM medium-wave reception behind hills also relies on the ground wave following the Earth's surface, which is itself a diffraction effect at these wavelengths; the model answer's diffraction reasoning is the accepted HSC account.
+  (h) Pronunciations: "dif-RAK-shun"; "w over lambda" said as "the gap width divided by the wavelength" in learner narration; "megahertz".
+
+Main question: *Waves going through a gap don't stay in straight lines. Why do they spread into the space behind a gap or an obstacle, and what decides how far they spread?*
+Entry knowledge (Stage 5 waves; v05 v = fλ; v13 to v15 radio waves; v16 energy spreading; v18 the ripple tank; v20 source and medium).
+Stops after: the definition; the wavelet cause; the narrow gap as one source; what stays the same; the gap compared with the wavelength, both directions, with the below-one-wavelength case; the worked comparison; obstacles; the doorway; the memory aid; two attempts. No investigation, no angle formula, no interference.
+Handoff: v28, the diffraction investigation.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key as in Decisions.
+
+### 1. hook (wide gap or narrow gap?)
+> Last time, lenses steered light that travels in straight lines. But waves passing through a gap don't stay in straight lines. Here are the same water waves heading for two gaps. On the left, the gap is wide. On the right, it's only about one wavelength across. Through which gap will the waves spread out more? The wide one, or the **narrow** one?
+
+Visual: opens on v26's last frame (the faint bench, the ripple tank plate with its top-view inset, the chips). The "Next" chip becomes the heading: "Diffraction"; the memory line and the bench fade. On "don't stay in straight lines" the inset's curved fronts pulse. On "the same water waves" the inset enlarges into the split tank view (straight navy crests moving right towards a barrier in each panel; the gaps still closed); the ripple tank plate stays small at the top right with the barrier layer (`phys-y11-ripple-tank-barrier-v1.png`). On "the gap is wide" the left barrier opens a wide gap (about 6λ); on "one wavelength" the right barrier opens a narrow gap (1λ), with a small wavelength bracket "λ" on the incoming crests and a matching bracket across the gap. The waves stop just short of the barriers. On "narrow" chips "wide gap?", "narrow gap?" and a 3-second countdown ring.
+
+### 2. what diffraction is
+> Let's watch the wide gap first. Straight wavefronts arrive at the barrier. The middle of each front goes straight through. But at the edges, the fronts curve round into the space behind the barrier, where a straight path couldn't reach. That's diffraction: waves spreading out as they pass through a gap, or around the edge of an obstacle. It happens to every kind of wave, water, sound and **light**.
+
+Visual: camera push to the left panel. `WavefrontDiffract` runs: the crests pass the wide gap; their middles stay straight; on "at the edges" the crest ends curve into the grey-hatched shadow region (tag "shadow region: where a straight path can't reach"); thin dashed straight-line limits from the gap edges show where the waves would stop if they went straight. On "diffraction" the definition writes in the right column: "diffraction: waves spreading out as they pass through a gap or around the edge of an obstacle". On "water, sound and light" three small grey chips "water", "sound", "light".
+
+### 3. why waves spread
+> Why does it happen? Every bit of water on a wavefront moves up and down, and pushes on the water around it, in every forward direction, not just straight ahead. So each bit acts like a tiny source of its own little ripple. In open water, those little ripples overlap side by side, and together they rebuild a straight front, one wavelength on. At the edge of a gap, though, there's no water beyond the barrier making ripples on that side. Nothing fills in, so the edge ripple spreads freely into the **shadow**.
+
+Visual: board change to one crest in open water (no barrier). `WaveletBuilder`: on "every bit of water" a row of dots lights along the crest; on "every forward direction" one dot grows a small semicircular ripple with short arrows fanning forward; on "tiny source" every dot grows its ripple. On "overlap side by side" their common front traces gold and becomes the next straight crest (bracket "λ"); one cycle loops. Grey tag (once): "this picture is called Huygens' principle (more in Year 12)". On "edge of a gap" the barrier slides in and removes the dots it covers; on "no water beyond the barrier" the edge dot's neighbours on the barrier side are gone (their places shown as faint empty circles); on "shadow" the edge dot's ripple, with nothing overlapping it on that side, curves into the shadow region (highlighted gold), and the real pattern from scene 2 fades back in behind it.
+
+### 4. a narrow gap acts like one source
+> Now the narrow gap, about one wavelength wide. It's so narrow that the whole gap acts almost like a single tiny source. So the wave comes out as one ripple, spreading in near semicircles. That's the answer: the narrow gap spreads the waves far more. In the wide gap, only the edges curve, and most of the wave goes straight **on**.
+
+Visual: camera to the right panel. On "narrow gap" `WaveletBuilder` shows only two dots fitting in the gap, close together; on "single tiny source" their ripples merge into one; on "near semicircles" `WavefrontDiffract` runs and near-semicircular crests fill the space behind the barrier. On "the answer" the split view returns with both patterns running; the hook's chip "narrow gap?" ticks and "wide gap?" takes a scribble cross. On "on" the wide panel's straight middle highlights (bracket "goes straight on").
+
+### 5. prediction: the wavelength after the gap
+> Look at the waves after the gap. Are they longer, shorter, or the same length as **before**?
+
+Visual: the right panel enlarges; the crests before and after the gap pulse. Two small blank brackets "λ before?" and "λ after?". On "before" chips "longer?", "shorter?", "the same?" and a 3-second countdown ring.
+
+### 6. what stays the same
+> The same. The water's depth hasn't changed, so the wave speed hasn't, and the bar still sets the frequency. Same speed and same frequency means the same wavelength, because speed equals frequency times wavelength. Diffraction only changes the direction the waves travel. They do get smaller as they spread, though, because the same energy is shared along a longer **front**.
+
+Visual: on "The same" the two brackets fill with equal readouts "λ = 2.0 cm" and "λ = 2.0 cm" (grey "tank values"); the chip "the same?" ticks. On "depth" a grey chip "same depth → same speed (v20)"; on "the bar" a chip "the source sets the frequency (v20)". On "speed equals" the row "v = fλ: v same, f same → λ same" (grey "v05"). On "direction" curved arrows show the fronts' travel directions fanning out. On "front" crest opacity fades with distance from the gap, and a curved front lengthens with a gold energy arrow spreading along it.
+
+### 7. what decides how far waves spread
+> So what decides how far waves spread? It's the gap compared with the wavelength. Keep the wavelength the same and narrow the gap, and the spreading **grows**. Keep the gap the same and make the wavelength longer, and the spreading grows too. A handy number is the gap width divided by the wavelength. When it's large, say ten or more, the waves barely spread. When it's about one, they spread out as near semicircles. Make the gap even narrower than that, and they still spread as semicircles, but less energy gets **through**.
+
+Visual: board change: one large `WavefrontDiffract` panel with a gap-width slider and a wavelength readout. On "narrow the gap" the gap closes from about 10λ towards 1λ with λ fixed; on "grows" the spread widens continuously. On "make the wavelength longer" the gap holds at 3.0 cm and λ grows from 0.5 cm to 3.0 cm (crests spacing out); the spread widens again. On "gap width divided by the wavelength" the ratio bar appears: "w/λ" with thumbnails at 10, 5, 2 and 1; the marker slides as spoken: at "ten or more" a nearly straight beam; at "about one" near semicircles. On "even narrower" the gap closes to 0.5λ: semicircles stay, crest opacity drops (tag "less energy through").
+
+### 8. worked example: two gaps
+> Let's compare two gaps. Task: decide which gap spreads the waves more. The givens: the wavelength is two point oh centimetres, one gap is two point oh centimetres wide, and the other is twenty centimetres wide. For the narrow gap, two point oh over two point oh is **one**. For the wide gap, twenty over two point oh is **ten**. So the two centimetre gap spreads the waves far more. Its ratio is ten times **smaller**.
+
+Visual: clear change to the calculation layout; the split tank view small at the left (gaps 2.0 cm and 20 cm at tank scale). Task strip "Which gap spreads the waves more?". Equation strip "compare w/λ (small → strong spreading)". Givens group (navy): "λ = 2.0 cm; gap A: w = 2.0 cm; gap B: w = 20 cm" (grey tag "site example values"). Rows, one per cue: on "one" "gap A: w/λ = 2.0 ÷ 2.0 = 1"; on "ten" "gap B: w/λ = 20 ÷ 2.0 = 10"; then "gap A spreads far more", boxed; on "smaller" "10 ÷ 1 = 10 times smaller ratio". The two thumbnails pulse (near semicircles; nearly straight).
+
+### 9. obstacles
+> Obstacles work the same way. Put a small post in the tank, about one wavelength across. The waves bend round both sides and close up behind it, as if it hardly **matters**. Now put a long block in the way, many wavelengths wide. The waves curve a little way round its ends, but behind the middle there's a calm **shadow**.
+
+Visual: board change: one `WavefrontDiffract` panel with no barrier. On "small post" a dark grey dot (1λ across) appears in the waves' path; the crests wrap round both sides and rejoin a short way behind it; on "matters" a faint gap in the crests just behind the post closes within a couple of wavelengths. On "long block" a dark grey bar 8λ wide replaces the post; the crest ends curve a short way round each end; on "shadow" the region behind the middle shades calm (grey hatch, tag "shadow"). Grey chip at the right: "obstacle size compared with λ decides".
+
+### 10. sound and light round a doorway
+> This explains something you've probably noticed. Music from another room reaches you round an open doorway, but you can't see round the corner. A note of three hundred and forty hertz has a wavelength of about one metre, close to the width of a doorway, so it spreads widely. Visible light has a wavelength of about five times ten to the minus seven metres. The doorway is nearly two million wavelengths wide, so light goes almost perfectly straight, and casts a sharp-edged **shadow**.
+
+Visual: board change: the doorway plan (coded walls, doorway "0.90 m"). Inside the room, the portable radio plate (`phys-y11-portable-radio-v1.png`) and the filament lamp plate (`phys-y11-filament-lamp-v1.png`) side by side; round the corner outside, out of their straight line, the microphone plate (`phys-y11-microphone-v1.png`) and the light meter plate (`phys-y11-light-meter-v1.png`) on a coded table. On "Music" navy dashed sound fronts spread from the radio, through the doorway and round the corner; the microphone's level bar rises (teal). On "can't see round the corner" the lamp's rays go straight through the doorway to a sharp-edged bright patch on the far wall; the light meter's bar stays near zero. On "one metre" a row "sound: λ = 340 ÷ 340 = 1.0 m; w/λ = 0.90 ÷ 1.0 = 0.9"; on "five times ten to the minus seven" a row "light: λ = 5.0 × 10⁻⁷ m"; on "two million" "w/λ = 0.90 ÷ 5.0 × 10⁻⁷ = 1.8 × 10⁶"; on "shadow" the patch's sharp edges glow.
+
+### 11. memory aid
+> Here's the rule to remember. Squeeze the gap, or stretch the wave, and the spread grows. That works until the gap is about one wavelength or less. By then, the waves already leave as **semicircles**.
+
+Visual: board change: the ratio bar with its thumbnails. The handwritten line writes large: "Squeeze the gap, or stretch the wave, and the spread grows." Under it, smaller: "until the gap is about one wavelength or less: then semicircles." On "Squeeze" a thumbnail gap narrows; on "stretch" a thumbnail's crests space out; on "semicircles" the 1λ thumbnail glows. Hold about 2 seconds.
+
+### 12. attempt 1 (countdown, 10 seconds)
+> Your turn. In a ripple tank, waves of frequency ten hertz and wavelength three point oh centimetres pass through a gap three point oh centimetres wide. The frequency is then increased to twenty hertz, with the depth unchanged. Calculate the speed of the waves and their new wavelength, and explain how the spreading beyond the gap changes. Pause here to answer.
+
+Visual: board clears. `QuestionCard` (subject "Physics"), worded as printed (no diagram): "Water waves in a ripple tank have a frequency of 10 Hz and a wavelength of 3.0 cm. They pass through a gap 3.0 cm wide. The frequency is then increased to 20 Hz, with the water depth unchanged. (a) Calculate the speed of the waves. (b) Calculate the new wavelength. (c) Explain how the spreading of the waves beyond the gap changes. (4 marks)" Tag: "HSC-style question, written for HSCScience". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 13. feedback 1 (brief)
+> The speed is ten times zero point oh three, zero point three oh metres per **second**, and it stays the same, because the depth is the same. So at twenty hertz, the wavelength halves to one point five **centimetres**. The gap is now two wavelengths wide instead of one, so the waves spread **less**. A higher frequency doesn't make waves spread more. Shorter waves spread **less**.
+
+Visual: card shrinks to the top; "10 Hz", "3.0 cm" and "depth unchanged" underlined. Rows: on "second" "(a) v = fλ = 10 × 0.030 = 0.30 m s⁻¹", boxed; on "centimetres" "(b) λ = v/f = 0.30 ÷ 20 = 0.015 m = 1.5 cm", boxed; on the first "less" "(c) w/λ: 3.0 ÷ 3.0 = 1 → 3.0 ÷ 1.5 = 2: less spreading", boxed, with two thumbnails (near semicircles; narrower fan). On the final "less" a chip "higher frequency, more energy, so more spreading" fades in and is crossed. Hold about 1 second.
+
+### 14. attempt 2 (countdown, 10 seconds)
+> Last one. An AM radio station broadcasts at one point oh megahertz, and an FM station at one hundred megahertz. A house lies behind a hill several hundred metres across. Taking c as three point oh oh times ten to the eight metres per second, calculate both wavelengths, and explain why the AM station is received clearly at the house, while the FM signal is weak. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed, with an HSC-style line drawing (a hill profile with a transmitting mast on the left and a house on the right, beyond the hill; no waves drawn): "An AM radio station broadcasts at 1.0 MHz and an FM station at 100 MHz. A house lies behind a hill several hundred metres across. Take c = 3.00 × 10⁸ m s⁻¹. (a) Calculate the wavelength of each signal. (b) Explain why the AM station is received clearly at the house, while the FM signal is weak. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 15. feedback 2 (brief)
+> The AM wavelength is three times ten to the eight, over one times ten to the six, three hundred **metres**. The FM wavelength is three point oh **metres**. The AM waves are comparable in size to the hill, so they diffract round it strongly. The FM waves are tiny by comparison, so they barely bend, and the house sits in a radio shadow. AM gets round because it's longer, not **faster**.
+
+Visual: card shrinks to the top; "1.0 MHz", "100 MHz" and "several hundred metres" underlined. Rows: on the first "metres" "(a) AM: λ = c/f = 3.00 × 10⁸ ÷ 1.0 × 10⁶ = 300 m"; on the second "metres" "FM: λ = 3.00 × 10⁸ ÷ 100 × 10⁶ = 3.0 m", boxed. The hill profile enlarges with the mast plate (`phys-y11-radio-mast-v1.png`) and the house plate (`phys-y11-house-v1.png`): long, widely spaced fronts bend over the hill and reach the house; short fronts pass over the top and leave a grey shadow over the house. Row "(b) AM λ ~ hill size → diffracts round; FM λ ≪ hill → radio shadow", boxed. On "faster" a chip "AM travels faster, so it gets round the hill" fades in and is crossed. Hold about 1 second.
+
+### 16. handoff
+> So waves spread behind a gap or an obstacle, because nothing fills in beyond the edge, and the gap compared with the wavelength decides how much. So far, we've watched a model. Next, we test it properly in the tank. How does opening size relative to wavelength affect **spreading**?
+
+Visual: the memory line returns small at the top. Board change: the split tank view becomes three panels side by side, gaps about 5λ, 2λ and 1λ with their patterns running; a coded ruler laid across five crests in the middle panel (v20's wavelength ruler); the ripple tank plate small at the right. On "watched a model" chips "measure the spread?" and "change the gap, keep λ?". On "spreading" the chip "Next: How does opening size relative to wavelength affect spreading?". This is the final frame of the video (series rule). Hold about 2 seconds.
+
+### 17. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Diffraction: waves spreading out as they pass through a gap or around the edge of an obstacle. It happens to all waves.
+2. Why: each point on a wavefront acts like a small source of ripples. In open water they rebuild a straight front; at an edge nothing fills in, so the wave spreads into the shadow.
+3. Wavelength, frequency and speed are unchanged by diffraction (same medium, same source); the amplitude falls as the energy spreads.
+4. The spread depends on the gap compared with the wavelength (w/λ). Large w/λ (10 or more): little spreading. About 1 or less: near semicircles (narrower still: less energy gets through). Small obstacles are wrapped round; large ones cast shadows.
+5. Sound (λ about 1 m) spreads round a doorway; light (λ about 5 × 10⁻⁷ m) goes almost straight.
+
+Memory aid (large, on the notes screen): *Squeeze the gap, or stretch the wave, and the spread grows.* Second line: *until the gap is about one wavelength or less: then semicircles.*
+
+At the end the notes cross-fade back to scene 16's final frame (series rule).
+
+## Teaching checks
+
+- **Does it explain causes?** Why waves spread at an edge: each point passes the motion on in all forward directions, and beyond the edge nothing fills in (3, shown with wavelets). Why a narrow gap spreads more: it acts almost like one source (4). Why the wavelength stays the same: same medium, same source, v = fλ (6). Why the waves get smaller: the energy spreads along a longer front (6). Why the gap must be compared with the wavelength (7, swept both ways). Why a small post barely matters and a big block casts a shadow (9). Why sound bends round a doorway and light doesn't: one wavelength against two million (10). Why AM gets behind a hill: its wavelength is comparable to the hill (feedback 2).
+- **Misconceptions addressed:** wider gaps diffract more (1, 4); diffraction changes the wavelength or speed (5, 6); spreading peaks at one wavelength (7); higher frequency spreads more (feedback 1 crossed); AM is faster (feedback 2 crossed); light never diffracts (10: tiny, not zero).
+- **One idea at a time:** what (2), why (3), the narrow gap (4), what stays (5, 6), what decides (7), numbers (8), obstacles (9), the doorway (10), memory aid (11).
+- **Video makes it easier:** the student watches crest ends curve into the shadow (2), watches the wavelets rebuild a straight front and then leak round an edge with nothing beside them (3), watches two close sources merge into one semicircle (4), watches the spread widen as the gap narrows and as the waves lengthen (7), watches waves close up behind a post but not a block (9), and watches a microphone round the corner pick up the music while the light meter stays dark (10).
+- **Response opportunity:** two 3 s predictions (1, 5); two unseen HSC-style tasks, 10 seconds each, every condition on the card (depth unchanged; c given; the hill's size), nothing answer-bearing (A2's drawing shows no waves). One crossed mistake each; feedback about 28 s and 29 s.
+- **Avoided double teaching:** v = fλ (v05), radio as electromagnetic waves at c (v13 to v15), energy spreading (v16), the ripple tank and wavefronts (v18), source and medium (v20) recalled in a phrase each.
+- **Syllabus coverage:** `ciedffc9b0` prepared: how waves diffract through openings and around obstacles of different sizes, modelled with ripple-tank wavefronts (2 to 11, A1, A2). The practical investigation itself is v28.
+- **Out of scope by design:** the investigation, its data and risks (v28); sin θ = λ/w; minima within the pattern and interference (v29 onwards); diffraction as evidence for the wave model of light (Year 12).
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 12; original wording, HSC style, 4 marks suggested, not an official marking scheme).** "Water waves in a ripple tank have a frequency of 10 Hz and a wavelength of 3.0 cm. They pass through a gap 3.0 cm wide. The frequency is then increased to 20 Hz, with the water depth unchanged. (a) Calculate the speed of the waves. (b) Calculate the new wavelength. (c) Explain how the spreading of the waves beyond the gap changes."
+Model answer: (a) v = fλ = 10 × 0.030 = 0.30 m s⁻¹. (b) The depth is unchanged, so the speed stays 0.30 m s⁻¹: λ = v/f = 0.30 ÷ 20 = 0.015 m = 1.5 cm. (c) The amount of diffraction depends on the gap compared with the wavelength. The gap-to-wavelength ratio rises from 3.0 ÷ 3.0 = 1 to 3.0 ÷ 1.5 = 2, so the waves spread out less beyond the gap (a narrower fan instead of near semicircles). Classic mistake (crossed): "higher frequency means more energy, so the waves spread more".
+
+**Attempt 2 (scene 14; original wording, HSC style, 4 marks suggested).** "An AM radio station broadcasts at 1.0 MHz and an FM station at 100 MHz. A house lies behind a hill several hundred metres across. Take c = 3.00 × 10⁸ m s⁻¹. (a) Calculate the wavelength of each signal. (b) Explain why the AM station is received clearly at the house, while the FM signal is weak."
+Model answer: (a) AM: λ = c/f = 3.00 × 10⁸ ÷ 1.0 × 10⁶ = 3.0 × 10² m (300 m). FM: λ = 3.00 × 10⁸ ÷ 1.00 × 10⁸ = 3.0 m. (b) Diffraction is significant when the wavelength is comparable to the size of the obstacle. The AM wavelength (300 m) is comparable to the hill, so the AM waves diffract around and over it and reach the house. The FM wavelength (3.0 m) is very small compared with the hill, so the FM waves diffract very little and the house lies in a radio shadow. Both travel at c. Classic mistake (crossed): "AM waves travel faster, so they get round the hill".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Hook gaps | about 6λ and 1λ | 1, 4 |
+| Tank wavelength (display) | 2.0 cm, the same before and after | 6 |
+| Sweep | w/λ 10 to 0.5; λ 0.5 to 3.0 cm at a 3.0 cm gap | 7 |
+| Worked (site `we-1`) | λ 2.0 cm; gaps 2.0 and 20 cm; ratios 1 and 10; factor 10 | 8 |
+| Obstacles | post 1λ; block 8λ | 9 |
+| Doorway | 340 Hz, 340 m s⁻¹, λ 1.0 m; w 0.90 m; ratio 0.9; light 5.0 × 10⁻⁷ m; ratio 1.8 × 10⁶ | 10 |
+| A1 | 10 Hz, 3.0 cm; 0.30 m s⁻¹; 20 Hz, 1.5 cm; ratio 1 → 2 | 12, 13 |
+| A2 | 1.0 MHz → 300 m; 100 MHz → 3.0 m; c = 3.00 × 10⁸ m s⁻¹ | 14, 15 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (3 Nov); Codex to re-check.
+
+- 2.0 ÷ 2.0 = 1; 20 ÷ 2.0 = 10; 10 ÷ 1 = 10.
+- 340 ÷ 340 = 1.00 m; 0.90 ÷ 1.00 = 0.90; 0.90 ÷ 5.0 × 10⁻⁷ = 1.8 × 10⁶.
+- A1: 10 × 0.030 = 0.30 m s⁻¹; 0.30 ÷ 20 = 0.015 m; 3.0 ÷ 1.5 = 2.
+- A2: 3.00 × 10⁸ ÷ 1.0 × 10⁶ = 300 m; 3.00 × 10⁸ ÷ 1.00 × 10⁸ = 3.0 m.
+- Angles (author note c, not shown): sin⁻¹(0.1) = 5.74°; sin⁻¹(0.5) = 30°; sin⁻¹(1) = 90°.
+
+## Memory aid check
+
+- **"Squeeze the gap, or stretch the wave, and the spread grows."** Written for this lesson. Meaning, as said in scene 11: a narrower gap (same wavelength) or a longer wavelength (same gap) makes the waves spread more, because both lower the gap compared with the wavelength. Assumptions checked: the other quantity is held fixed (said in 7: "keep the wavelength the same", "keep the gap the same"); the growth stops once the gap is about one wavelength or less, when the waves already leave as near semicircles (second line, spoken and on screen); applies to obstacles too in the sense that longer waves get round a given obstacle more (9, A2). It blocks site misconception 1 and the "higher frequency spreads more" error (A1: higher frequency at the same speed is a shorter wave). Introduced after the sweep (7), the numbers (8) and the doorway (10).
+- **Considered, not used:** "Long waves get round things" (true and short, but it leaves out the gap, which the investigation in v28 changes).
+
+## Narration length estimate
+
+Revision 1 count (3 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,803 characters**, 17 scenes. Characters per scene (1 to 17): 343, 397, 507, 327, 88, 370, 519, 406, 314, 482, 195, 361, 365, 385, 375, 278, 75. At 13.3 characters per second the speech is about 436 s; add about 16 s of holds and settling (the split view in 1, the wavelet build and leak in 3, the merge in 4, the two sweeps in 7, the post and block in 9, the doorway run in 10, the 2-second memory hold), 6 s for two prediction countdowns, 20 s for two attempt countdowns, 2 s of feedback holds and about 56 s more of the quiet notes hold (about 100 s of holds): **about 536 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. One concept point, its cause, its controlling ratio, obstacles and two applications fill it; nothing is padded to reach a longer time. If the voiced preview runs long, the first cut is the "less energy gets through" sentence in scene 7 (about 100 characters; key note 4 keeps it), then the opening sentence of scene 10 (about 50 characters).
+
+## Scene list and build ids
+
+Lesson key `p-y11-fa2-v27` (root decision 2). Suggested explainer folder `src/explainer/lessons/phys-y11-fa2-v27` and build folder `docs/production/claude-pm/lessons/p-y11-fa2-v27` (root to confirm).
+
+In order (kebab-case; 17 scene headings, all `### N.`): hook, what-is-diffraction, why-waves-spread, narrow-gap, wavelength-prediction, what-stays, what-decides, worked-example, obstacles, doorway, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). The hook and wavelength-prediction carry 3 s countdowns inside explain scenes. Transitions (`pickTransition`): v26's last frame continues into scene 1 (camera continue: the inset enlarges into the split view); 1 to 2 camera push to the left panel; 2 to 3 board change to open water; 3 to 4 camera to the right panel; 4 to 5 to 6 camera continue; 6 to 7 board change; 7 to 8 clear change to the calculation layout; 8 to 9 board change; 9 to 10 board change to the doorway; 10 to 11 board change; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
+
+Holds: hook and wavelength-prediction (3 s), attempt-1, attempt-2 (10 s after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/p-y11-fa2-v27-learning-review.md`, `science_check` = `checks/p-y11-fa2-v27-physics-check.md`.
+
+## Assets
+
+`public/assets/physics/` holds FA1 plates and `phys-y11-protractor-v1.png`; no FA2 plates are there yet (checked 3 Nov). Requested earlier, reused by name (uniform scaling only, never stretched):
+- v18's `phys-y11-ripple-tank-v1.png` with v20's separate barrier layer `phys-y11-ripple-tank-barrier-v1.png` (scenes 1 to 9, 16; root decisions 22 and 23).
+- v15's `phys-y11-portable-radio-v1.png` (scene 10) and `phys-y11-house-v1.png` (feedback 2).
+- v13's `phys-y11-filament-lamp-v1.png` (scene 10) and `phys-y11-radio-mast-v1.png` (feedback 2).
+- The FA2 `phys-y11-microphone-v1.png` and `phys-y11-light-meter-v1.png` (scene 10).
+- **Considered, not used:** a loudspeaker plate (v04's is a side cut-away, which reads oddly in a plan view; the radio is the familiar music source); a doorway plate (the plan view is an abstract diagram; a painted door would invite a person); a hill photograph-style plate (the profile is abstract; the mast and house carry the realism).
+
+Need: no new plates.
+
+Coded: the top-view crests and wavelets, barriers, posts and blocks, the shadow hatch, the ratio bar and thumbnails, the doorway plan, sound fronts and light rays, the bright patch, level bars, the hill profile and its fronts, the ruler, `AlignedAlgebra`, `Countdown`, `QuestionCard` with a line drawing, `Chip` with `cross`, `KeyNotes`, `Heading`.
+
+Kit gaps (for the build brief): **`WavefrontDiffract`** (from v19's `WavefrontRefract`; wavelet-sum rendering, author note a; reused in v28 and the interference videos); **`WaveletBuilder`**; **split tank view**; **ratio bar**; **doorway plan**; **hill profile** (lesson-local acceptable for Revision 1).
+
+## Codex asset brief (Year 11 Physics FA2 v27, diffraction)
+
+No new plates. Two confirmations on plates requested earlier: (1) the ripple tank barrier layer (`phys-y11-ripple-tank-barrier-v1.png`, v20) should be a plain straight metal strip that the code can cut into two pieces to make a gap of any width; if it is painted with any texture that would show a seam when cut, paint a short end-cap piece as well (`phys-y11-ripple-tank-barrier-end-v1.png`) so each cut end looks finished (v28 will need the same); (2) the microphone and light meter plates should stand upright on a flat base so they can sit on a coded table in a plan view without looking like they are lying down.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and every value in the narration, screen text, attempts and key notes against the "Numbers used" table.
+2. Confirm every diffraction pattern is computed from the wavelet sum in author note a, with the same wavelength before and after the gap, and that the sweeps in scene 7 widen the spread continuously as the gap narrows and as the wavelength grows, with semicircles (not a narrowing fan) below one wavelength.
+3. Confirm the physics claims: diffraction is the spreading of waves through gaps and around obstacles and occurs for all waves; each point on a wavefront acts as a source of wavelets (Huygens, tagged once); the wavelength, frequency and speed are unchanged by diffraction; the amplitude falls as the energy spreads; spreading increases as w/λ decreases and is near semicircular for w ≲ λ, with less energy transmitted through narrower gaps; small obstacles are wrapped round and large ones cast shadows; the doorway and radio values.
+4. Confirm no person, face, hand or body outline appears in any scene, card or plate (owner instruction); the doorway scene uses only objects.
+5. Confirm the memory aid's conditions (the other quantity held fixed; the limit at about one wavelength) are spoken or on screen.
+6. Confirm both attempt questions are original in wording, carry every condition (depth unchanged; c; the hill's size), and show nothing answer-bearing (A2's drawing shows no waves).
+7. Confirm the syllabus quote matches the syllabus JSON exactly and no 2017-syllabus label appears.
+8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
+9. Confirm the narration character count by script with the build parser rules.
+10. Add site corrections 1 to 3 under Decisions to `../site-corrections-phys-y11.md` (owner record only).
+
+## YouTube metadata (draft)
+
+Title: Diffraction: Why Waves Spread Through Gaps and Round Obstacles | Year 11 Physics
+
+(Title length: 82 characters.)
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year11/fa2-waves/lesson20.sa.html
+
+Send the same water waves at a wide gap and a narrow one. Which spreads them more? Watch wavefronts curve into the shadow behind a barrier, and see why: every point on a wave acts like a tiny source, and at an edge nothing fills in. Find out why the wavelength doesn't change, how the gap compared with the wavelength decides the spreading, what happens at small and large obstacles, and why you can hear music round a doorway but can't see round it. Two exam-style questions at the end.
+
+Year 11 Physics (2025 syllabus), Focus Area 2: Waves.
+Syllabus content (NSW Physics 11-12, 2025):
+"Conduct a practical investigation to model how waves diffract through openings and around obstacles of different sizes" (ciedffc9b0)
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa307d399c
+
+Builds on: The spectacles investigation (previous video). Next: The diffraction investigation.
+
+#Year11Physics #Physics #Waves #Diffraction #HSCScience
+
+## Open decisions
+
+- **1. Learner question (root).** The route placeholder is rewritten as "Why do waves spread into the space behind a gap or an obstacle, and what decides how far they spread?". It is v26's handoff chip; root to enter it in the route.
+- **2. The w/λ ratio here and in v28 (root).** This video introduces w/λ qualitatively with the site's worked example so the doorway and radio cases can be explained; v28 investigates it with measurements. If root prefers v28 to own the ratio entirely, scene 8 and the ratio bar move to v28 and scene 7 keeps the two directions in words only (about 250 characters cut, so the video would fall to about 5,550 characters; still inside the band, with no padding added).
+- **3. Huygens tag (root).** One grey tag naming Huygens' principle as "more in Year 12". It is not on the 2025 Year 11 list; it is kept because the wavelet picture is the cause shown. Root to confirm or remove the tag (no narration change).
+- **4. Handoff chip wording.** Uses v28's route question as written; root aligns it if v28's design rewrites the question.
+- **5. Site link form.** As v20.
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v18 to v20 at Year 11 entry; check that the wavelet picture makes "nothing fills in beyond the edge" feel like a cause, not a slogan; that the narrow gap as "one source" follows from it; that "same wavelength" is reasoned from v20, not asserted; that the two-way sweep makes "gap compared with wavelength" concrete; that the doorway's microphone and light meter land without a person; that the cards give nothing away), then the Codex physics check and error check.
+- The wavelet build and edge leak (3), the merge into one semicircle (4), the two sweeps (7), the post and block (9) and the doorway run (10) carry the explanation; judge them at playback speed in the voiced preview. Every pattern must come from the same wavelet-sum routine.

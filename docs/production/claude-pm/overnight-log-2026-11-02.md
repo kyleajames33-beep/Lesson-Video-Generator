@@ -35,3 +35,10 @@
 - 2026-11-03 02:50: physics FA2 v22 to v24 designed; started wave I3 (Biology FA3 v01 to v03).
 - 2026-11-03 02:25 check: briefs 146, 148, 149, 150 (reviews) and 153 landed. Queued priority repairs R2 to R8 (physics v13 to v24, v26 to v31; maths t01 to t04; Biology v13 to v31) for the next free slots. 5 design agents running.
 - 2026-11-03 02:30: maths s04 to s06 designed; started priority repair R2 (physics v13 to v19, brief 149).
+- 2026-11-03 02:45: weekly Claude limit reached (resets 05:00). Done just before: physics FA2 v25 to v27. Interrupted with work saved (resume each by sending the agent a "continue" message after the reset, or restart from the queue file): Biology FA2 v31 to v33 (wave H5), Biology FA3 v01 to v03 (wave I3), maths s07 to s09 (wave I2), physics FA1 v13 to v19 repair (R2). Partial lesson files from those agents are NOT committed.
+- Overnight cron stopped (no further usage this week). Remaining queue: R3 to R8 repairs, waves I4 to I6.
+
+## Morning summary for the owner
+Designed overnight (Revision 1, committed): maths t01 to t04, i06 to i14, f01 to f15, s01 to s06; physics FA1 v26 to v31, FA2 v01 to v07 and v09 to v27; Biology FA2 v01 to v30. Repairs to Revision 2: maths d11 to d17 and g02b (Revision 3, ready to voice), physics FA1 v01 to v12, Biology FA1 v07 to v12. Routes approved: maths t01 to i14, Biology FA2/FA3.
+
+New Codex briefs to add to the queue (in order, after whatever Codex is doing): 154 (error check physics v01 to v12), 155 (reviews maths i06 to i14), 156 (physics FA2 reviews and plates), 157 (Biology FA2 v01 to v12 reviews and plates), 158 (error check Biology v07 to v12). Still to write: review briefs for maths f01 to f15 and s01 to s06, Biology FA2 v13 to v30, physics FA2 v13 to v27 (Claude, next session).
