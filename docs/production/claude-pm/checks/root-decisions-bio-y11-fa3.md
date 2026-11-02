@@ -46,3 +46,9 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 27. **v18** replaces the risk table with the one-row screen note "For your own treatment, follow your doctor's or pharmacist's advice", as FA2 v25 did. The fluoroquinolone example is not added (screen load). Codex confirms all four named sources before voicing and uses the written fallbacks for any it cannot confirm. "Finish the course" is logged as outdated site advice. Current guidance ("only when needed, exactly as prescribed") goes in learner copy only if the science check confirms it.
 28. **v19's** Archaeopteryx slab and **v20's** two matched assemblage plates are first-priority plates, because they carry the joins.
 29. **v20** is accepted at 5,351 characters. The science check may change "wasn't the direct ancestor" to "couldn't have been" only if the Polish trackway dating supports the stronger claim. The v20 to v21 join is confirmed: v21's assumed opening matches. v20 adds a small time arrow and coloured feature outlines, which v21 inherits (visual only).
+
+## v27 to v29 (3 November 2026)
+30. **v27** keeps the oval as its main case. The line transect runs the full 12 m so its presence record agrees with the quadrat holding 2 dandelions; Revision 2 makes the change, length-neutral.
+31. **v28** applies the site's fish numbers to the beetle model and keeps the farm dam practice item as the site's case. The licence wording is checked in the science check. Marking uses no live animals in class; the beetle is a model.
+32. **v29** is accepted at 4,993 characters (7 under 5,000): adding content would repeat the same scoring reasoning. It keeps the on-screen allelopathy tag "some books score it 0/−: give your reason". The magpie replaces the site's dingo (item 9).
+33. **Plates.** The beetle and magpie plates are first priority, because they carry the v27 to v28 and v28 to v29 joins.
