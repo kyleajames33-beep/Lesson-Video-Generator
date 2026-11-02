@@ -1,0 +1,11 @@
+# Root decisions: Year 11 Physics (2025 syllabus), Focus Area 3
+
+The FA1 and FA2 physics root decisions apply unless an item below changes them.
+
+## v01 to v03 (3 November 2026)
+1. **Colour key.** Positive charge is red "+" and negative charge is navy "−". The electric field is teal and forces stay amber with an ink outline. Crossed-out mistakes use a grey scribble, never a red cross, so they cannot be read as positive charges. Plates avoid red and navy.
+2. **Units.** nC is fine on screen in v01, with "nanocoulombs" spoken the first time and 10⁻⁹ C shown beside it.
+3. **Opening.** v01 opens on an assumed fa2-v33 final frame through a one-sentence bridge take. When fa2-v33 is designed, root aligns only that bridge.
+4. **Scope.** v02 owns conductors and insulators. "Electric forces get weaker with distance" is a given in v02 and is taught properly in v04 (proposed handoff: "Why does a charge's field get weaker so quickly as you move away from it?").
+5. **v03** stays one video. If the learning review finds the lightning half rushed, root splits it into v03a (fields and field diagrams) and v03b (lightning). The grey tags noting the lower positive region and that most lightning stays in the cloud stay as tags.
+6. **Kit and plates.** The coded parts and `phys-y11-` plates are the ones the designs list. The plates go in a later brief after the reviews.
