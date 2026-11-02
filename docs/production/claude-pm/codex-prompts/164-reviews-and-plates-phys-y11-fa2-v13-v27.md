@@ -3,7 +3,7 @@
 Read `00-standing-rules.md` and briefs 145, 146 and 156 first, and use their methods and file formats exactly. Do not spawn sub-agents. Make no design edits, speech or commits.
 
 ## Inputs
-- **Designs:** `lessons/phys-y11-fa2-v13.md` to `v33.md` that exist (Revision 1; keys `p-y11-fa2-vNN`), plus `lessons/phys-y11-fa3-v01.md` to `v06.md` that exist (keys `p-y11-fa3-vNN`; root decisions in `checks/root-decisions-phys-y11-fa3.md`; for FA3 check charge conservation, electron transfer only, induction and earthing order, field-line rules, and the lightning simplifications).
+- **Designs:** `lessons/phys-y11-fa2-v13.md` to `v33.md` that exist (Revision 1; keys `p-y11-fa2-vNN`), plus `lessons/phys-y11-fa3-v01.md` to `v15.md` that exist (keys `p-y11-fa3-vNN`; root decisions in `checks/root-decisions-phys-y11-fa3.md`; for FA3 check charge conservation, electron transfer only, induction and earthing order, field-line rules, and the lightning simplifications).
 - **Route:** `docs/production/phys-y11-video-route.json`.
 - **Root decisions:** the two FA1 physics files and `checks/root-decisions-phys-y11-fa2.md`. Confirm them.
 
