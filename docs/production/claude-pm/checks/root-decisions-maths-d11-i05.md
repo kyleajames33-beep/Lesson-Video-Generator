@@ -55,3 +55,9 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 36. **i12:** use the reference-sheet form of the trapezoidal rule as printed on the 2024 NESA Mathematics reference sheet (the maths check confirms the exact form); "erf" is shown on screen only, not spoken. Use the shorter title alternative if over 90 characters.
 37. **i14:** "end of calculus for now" is fine; differential lesson 5's examples stay out; ẋ notation stays out (ẍ shown once as an alternative only if the syllabus point uses it).
 38. **Kit:** `SymmetryPairs`, `CoefficientLedger`, `ToolPanel` (unbranded), `UnitProduct`, `ParticleTrack` join the next maths kit brief, with `HorizontalStrips` from i11.
+
+## f01 to f04 (2 November 2026, overnight)
+39. **Notation:** syllabus aₙ throughout the sequences strand, with a grey "also written Tₙ" note. Finding aₙ from a formula for Sₙ goes to the practice video (not a 2024 point); f01 shows only S₅ − S₄ on the stacks.
+40. **f03 title:** use the syllabus-form alternative in the metadata, with "a + l" shown on screen as the exam-style form.
+41. **f04** feedback at about 30 s and 28 s accepted; "bends upward" without "quadratic" accepted.
+42. **Kit:** `TermLadder`, `PartialSumStack`, `SigmaBuilder`, `TermPlot`, `StepCounter`, `PairingRectangle`, `PeriodTimeline` (first cash-flow part) join the next maths kit brief.
