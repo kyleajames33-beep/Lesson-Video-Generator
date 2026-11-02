@@ -61,3 +61,9 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 40. **f03 title:** use the syllabus-form alternative in the metadata, with "a + l" shown on screen as the exam-style form.
 41. **f04** feedback at about 30 s and 28 s accepted; "bends upward" without "quadratic" accepted.
 42. **Kit:** `TermLadder`, `PartialSumStack`, `SigmaBuilder`, `TermPlot`, `StepCounter`, `PairingRectangle`, `PeriodTimeline` (first cash-flow part) join the next maths kit brief.
+
+## f05 to f08 (2 November 2026, overnight)
+43. **f07** at 5,157 characters accepted, with its listed genuine addition (r = 0.9 against r = ½) allowed at Revision 2 if the learning review wants it.
+44. **f08:** keep the bouncing ball; trim its feedback to 30 s using the listed trim. f05 key note 3 reads "exponential growth or decay for r > 0" with negative r noted as alternating.
+45. **Titles:** use the shorter alternatives for f06 and f08.
+46. **Kit:** `FoldLayers`, `ShiftCancelRows`, `ConvergenceStrip`, plus the `TermLadder`, `TermPlot` and `PeriodTimeline` extensions, join the next maths kit brief.
