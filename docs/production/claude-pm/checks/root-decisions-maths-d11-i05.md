@@ -71,3 +71,10 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 ## f09 to f11 (2 November 2026, overnight)
 47. **f09** may use the $2,147.29 repayment as a given ("the bank sets this repayment; f11 shows how to find it"). **f10:** say "a rise usually costs more time than an equal fall saves" (scoped). **f11:** keep the exact final-repayment detail. Use "log" as in f05 to f08. Show the site's present-value form only as a grey "another form you may see" note. Lesson 14's offset and redraw content is logged as outside the 2024 Advanced syllabus.
 48. **Finance kit:** `BalanceTable`, `LoanBalanceGraph`, `RepaymentSplit`, `LoanTermCurve`, `SolveForPanel`, `PeriodTimeline` loan and deposit modes, `ToolPanel` table mode, one shared loan engine.
+
+## f12 to f15 (3 November 2026, overnight)
+49. **Payment symbol M** across f09 to f15 (avoids clashing with a, the first term); a grey note "some sources write a" at first use.
+50. **Rounding to reach a target:** say "round up to be sure of reaching the target" beside the nearest-cent value; this is the strand convention for find-the-deposit and find-n questions.
+51. Lesson 10 as an extra source for f12 and f14 is fine; f14 links lesson 18 (its source) with lesson 6 noted. The maths check confirms whether the 2024 reference sheet prints an annuity formula; f14's bar parts carry a grey "parts rounded separately" tag.
+52. Feedback at 31 to 32 s in f13, f14 and f15 accepted.
+53. **Kit:** twin strips, interest caps, `cashFlowMode`, `SortBins`, `DepositLayers`, `growthMode`, `ToolPanel` explorer mode, `ValueSplitBar`, `twoStage` timeline mode, `FrequencyBars`.

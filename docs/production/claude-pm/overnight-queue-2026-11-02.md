@@ -23,12 +23,12 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave F2: maths math-a12-f09, f10, f11
 - [done] Wave F3: biology bio-y11-fa2-v22, v23, v24
 - [done] Wave G1: physics phys-y11-fa2-v16, v17, v18
-- [started] Wave G2: maths math-a12-f12, f13, f14, f15
+- [done] Wave G2: maths math-a12-f12, f13, f14, f15
 - [started] Wave G3: biology bio-y11-fa2-v25, v26, v27
 - [started] Wave G4: physics phys-y11-fa2-v19, v20, v21
 - [started] Wave H1: maths math-a12-s01, s02, s03
 - [started] Wave H2: biology bio-y11-fa2-v28, v29, v30
-- [ ] Wave H3: physics phys-y11-fa2-v22, v23, v24
+- [started] Wave H3: physics phys-y11-fa2-v22, v23, v24
 - [ ] Wave H4: maths math-a12-s04, s05, s06
 - [ ] Wave H5: biology bio-y11-fa2-v31, v32, v33
 
