@@ -7,9 +7,9 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] PRIORITY R3: repair (sonnet) physics phys-y11-fa1-v20 to v24 from brief 149
 - [done] PRIORITY R4: repair (sonnet) physics phys-y11-fa1-v26 to v31 from brief 153
 - [done] PRIORITY R5: repair (sonnet) maths math-a12-t01 to t04 from brief 153 (keys m-a12tNN), applying root decisions 21 and 22 (syllabus notation, "pi over three")
-- [ ] PRIORITY R6: repair (sonnet) Biology bio-y11-fa1-v13 to v19 from brief 150 (keys y11b-vNN)
-- [ ] PRIORITY R7: repair (sonnet) Biology bio-y11-fa1-v20 to v25 from brief 150
-- [ ] PRIORITY R8: repair (sonnet) Biology bio-y11-fa1-v26 to v31 from brief 150
+- [done] PRIORITY R6: repair (sonnet) Biology bio-y11-fa1-v13 to v19 from brief 150 (keys y11b-vNN)
+- [done] PRIORITY R7: repair (sonnet) Biology bio-y11-fa1-v20 to v25 from brief 150
+- [done] PRIORITY R8: repair (sonnet) Biology bio-y11-fa1-v26 to v31 from brief 150
 - [done] PRIORITY R1: repair agent (sonnet) for Biology FA1 v07 to v12 from brief 147 (v10 blocker: replace the open-beaker diffusion demo with the reports' agar version); takes the next free slot before any design wave
 - [done] Wave A1: maths math-a12-i06, i07, i08
 - [done] Wave A2: biology bio-y11-fa2-v01, v02, v03
