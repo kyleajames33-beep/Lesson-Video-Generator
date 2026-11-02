@@ -26,3 +26,8 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 15. **v14** opens on an assumed v13 final frame (bearded dragon, red kangaroo, thermometer, "?" and Next chip). The v13 designer was asked to match it; root aligns scene 1's first visual sentence if they differ.
 16. **v15** is accepted at 5,295 characters. Its site error on "concentrated urine" in marine bony fish is high priority for the site log.
 17. **Science checks** for brief 163: the dunnart torpor values (v14), "about three times saltier" (v15) and a burst length of "tens of thousands of years" (v17). The Anopheles mosquito plate gets a fringe check before reuse.
+
+## v11 to v13 (3 November 2026)
+18. **v13 to v14 join.** v13 keeps its small "one reading" thermometer label and the route-question Next chip, so v14's assumed opening now matches. v14 records the label fading in scene 1 (visual only).
+19. **v12** keeps the site's privet data and says "privet, a garden hedge plant". A one-line author note records that privet is a weed in parts of NSW, so students should use leaves from school grounds with permission (the risk table's collecting row already covers this). The numbers are unchanged.
+20. **Science checks** for brief 163: the spinifex stomata surface (v11 stays neutral until confirmed); the cuticle "costs the least" claim (v11; soften to "costs little" if not supported); koala trunk temperatures, dunnart torpor values and "many times more food" (v13). Torpor is treated as a physiological state that behaviour can support, not as a behaviour.
