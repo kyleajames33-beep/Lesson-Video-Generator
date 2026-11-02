@@ -21,3 +21,9 @@ The FA1 and FA2 physics root decisions apply unless an item below changes them.
 12. **v07** explains E = V/d through the voltmeter probe and slope, without energy (energy arrives in v09). The push-sum scene stays at its current depth, and the semolina scene is the first cut if the voiced preview runs long.
 13. **Colours.** Velocity in FA3 is a thin blue arrow, as FA2's particle velocity was, because teal is the electric field. Electric potential energy is green, like gravitational potential energy in FA1. v08 states "vacuum, gravity negligible" once and on every practice card.
 14. **v09** owns W = qEd and, across the full gap, W = qV. v10 owns what a volt measures. Feedback near 31 s is accepted, and v09's listed trim is used only if the voiced preview runs long.
+
+## v10 to v12 (3 November 2026)
+15. **Route questions** for v11 to v13 are entered as the designs propose. v13's title follows its one syllabus point; its designer narrows "Resistance and Its Factors" if the point is narrower.
+16. **Energy rule.** W = ΔU + ΔKE is the stated form, with W meaning the work done by an outside force. Later FA3 videos use W only in that sense.
+17. **Current arrows.** From v11 to v30, conventional current is a bold ink "I" arrow and electron flow is navy dotted arrows. Circuit diagrams follow HSC symbols.
+18. **v12's** marble tube is the first cut if the learning review finds it distracting. The site's "50 times a second" is logged as a site error (100 reversals a second at 50 Hz).
