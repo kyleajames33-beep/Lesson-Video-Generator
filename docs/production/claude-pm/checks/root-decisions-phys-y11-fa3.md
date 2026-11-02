@@ -40,3 +40,9 @@ The FA1 and FA2 physics root decisions apply unless an item below changes them.
 25. **Mains.** The site's 240 V is kept with a grey "usual exam value" tag, so every mains value in FA3 uses 240 V.
 26. **v16** keeps P = V²/R as a derived form (from P = VI and V = IR). The syllabus names P = VI and P = W/Δt, and those stay the boxed equations.
 27. **v18** states energy sharing in series and parallel qualitatively only. v20 owns the current and voltage rules with numbers, and v21 or v22 own brightness comparisons. `CircuitDiagram` (HSC symbols) is a shared kit part for every later circuit video.
+
+## v19 to v21 (3 November 2026)
+28. **Route questions** for v20 to v22 are entered as the designs propose. v22 opens on site lesson 21's worked example (4.0 Ω in series with 6.0 Ω and 3.0 Ω in parallel).
+29. **Length.** v19 (5,389), v20 (5,134) and v21 (5,109) are accepted.
+30. **v19's lamp.** v19 uses a resistor in scenes 3 to 7 rather than a 12 Ω lit lamp, because v14 taught that lamps are non-ohmic. The lamp stays only where it shows something lighting or going dark. Revision 2 makes the swap, length-neutral.
+31. **Kit and cuts.** `LoopFlow` is the single charge-dot part, extended to split at junctions. The first cuts if reviews find them distracting are v20's charge pile-up overlay and v21's home-circuit sentence.
