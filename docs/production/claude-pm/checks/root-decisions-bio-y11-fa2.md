@@ -18,3 +18,6 @@ Series decisions in `root-decisions-bio-y11-fa1-v01-v06.md` and `root-decisions-
 14. **Water potential:** screen tag only in v11 and v12, with one spoken sentence allowed in v12 if the learning review says exam wording needs it (water-concentration explanation stays primary).
 15. **Science-check fallbacks** (car tyre comparison, "nothing keeps the sieve tube cell alive", root pressure "a few metres", dendrometer stem) are used if the science check asks.
 16. **Shared FA2 kit:** `CompareTable`, `PressureTube`, `StepChain`, `MunchModel`, `WaterChain`. The delivery-van hook is replaced by "Xylem's pull is free. Phloem's load costs fuel." (no character metaphors).
+17. **v13 to v15** accepted. Blades: the teacher cuts fine sections (v15); students cut the shoot under water with a capped scalpel only if the safety check allows, otherwise the teacher does it (one clause change). The spoken "sweat" analogy in v14 is fine (never drawn). Light and humidity stay as a screen tag plus attempt 1 in v14. Optional towel and water lily plates are kept if Codex has capacity.
+18. **Provenance:** brief 157 confirms provenance of the reused `m8-` plates (potometer, fan, leaf section, stomata pair and fields, nail varnish) before reuse.
+19. **Shared FA2 kit** adds `TwoDials`, `GradientRamp` and the "I see / So it can / How sure?" evidence frame.
