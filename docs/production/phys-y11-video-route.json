@@ -3862,10 +3862,11 @@
       "id": "phys-y11-fa3-v13",
       "playlistOrder": 77,
       "mainLearnerQuestion": "Why does a bigger voltage push more charge through the same wire each second, and what holds the electrons back?",
-      "title": "Resistance and Its Factors",
+      "title": "Voltage, Electron Flow and Resistance",
       "kind": "concept",
       "syllabusActionIds": [
-        "cif8293068"
+        "cif8293068",
+        "cib4d17ff9"
       ],
       "syllabusActions": [
         {
@@ -3899,7 +3900,7 @@
       ],
       "startBoundary": "Start with Resistance and Its Factors. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions.",
       "stopBoundary": "Stop after the learner can answer: How can I explain and apply resistance and its factors? Teach only the listed actions; the next video owns its separate question.",
-      "nextHandoff": "phys-y11-fa3-v14: How can I explain and apply ohm's law, ohmic and non-ohmic conductors?",
+      "nextHandoff": "phys-y11-fa3-v14: Why does doubling the voltage double a resistor's current but not a lamp's, and how does V = IR handle both?",
       "authorDecision": "Research proposal for Claude; not an approved route or design.",
       "designPath": "docs/production/claude-pm/lessons/phys-y11-fa3-v13.md",
       "status": "proposed; root finalises the main learner question, FA0 placement and boundaries before its pack and design",
@@ -3908,11 +3909,10 @@
     {
       "id": "phys-y11-fa3-v14",
       "playlistOrder": 78,
-      "mainLearnerQuestion": "How can I explain and apply ohm's law, ohmic and non-ohmic conductors?",
+      "mainLearnerQuestion": "Why does doubling the voltage double a resistor's current but not a lamp's, and how does V = IR handle both?",
       "title": "Ohm's Law, Ohmic and Non-Ohmic Conductors",
       "kind": "concept",
       "syllabusActionIds": [
-        "cib4d17ff9",
         "ci3bbf4fbd"
       ],
       "syllabusActions": [
@@ -3954,7 +3954,7 @@
       ],
       "startBoundary": "Start with Ohm's Law, Ohmic and Non-Ohmic Conductors. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions.",
       "stopBoundary": "Stop after the learner can answer: How can I explain and apply ohm's law, ohmic and non-ohmic conductors? Teach only the listed actions; the next video owns its separate question.",
-      "nextHandoff": "phys-y11-fa3-v15: How can I-V measurements distinguish ohmic and non-ohmic behaviour?",
+      "nextHandoff": "phys-y11-fa3-v15: How can measuring the current at several voltages show whether a conductor is ohmic or non-ohmic?",
       "authorDecision": "Research proposal for Claude; not an approved route or design.",
       "designPath": "docs/production/claude-pm/lessons/phys-y11-fa3-v14.md",
       "status": "proposed; root finalises the main learner question, FA0 placement and boundaries before its pack and design",
@@ -3963,7 +3963,7 @@
     {
       "id": "phys-y11-fa3-v15",
       "playlistOrder": 79,
-      "mainLearnerQuestion": "How can I-V measurements distinguish ohmic and non-ohmic behaviour?",
+      "mainLearnerQuestion": "How can measuring the current at several voltages show whether a conductor is ohmic or non-ohmic?",
       "title": "Conductor investigation",
       "kind": "investigation",
       "syllabusActionIds": [
@@ -4001,7 +4001,7 @@
       ],
       "startBoundary": "Start with Conductor investigation. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions.",
       "stopBoundary": "Complete conductor investigation: identify variables and risks, acquire repeated data, analyse graphs or sources, and evaluate limitations. Do not report predictions as observations.",
-      "nextHandoff": "phys-y11-fa3-v16: How can I explain and apply electrical power, p = vi and p = v²/r?",
+      "nextHandoff": "phys-y11-fa3-v16: Why do a voltage and a current together set how fast a component transfers energy?",
       "authorDecision": "Research proposal for Claude; not an approved route or design.",
       "designPath": "docs/production/claude-pm/lessons/phys-y11-fa3-v15.md",
       "status": "proposed; root finalises the main learner question, FA0 placement and boundaries before its pack and design"
@@ -4009,7 +4009,7 @@
     {
       "id": "phys-y11-fa3-v16",
       "playlistOrder": 80,
-      "mainLearnerQuestion": "How can I explain and apply electrical power, p = vi and p = v²/r?",
+      "mainLearnerQuestion": "Why do a voltage and a current together set how fast a component transfers energy?",
       "title": "Electrical Power, P = VI and P = V²/R",
       "kind": "concept",
       "syllabusActionIds": [

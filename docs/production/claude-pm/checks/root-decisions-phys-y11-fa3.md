@@ -27,3 +27,9 @@ The FA1 and FA2 physics root decisions apply unless an item below changes them.
 16. **Energy rule.** W = ΔU + ΔKE is the stated form, with W meaning the work done by an outside force. Later FA3 videos use W only in that sense.
 17. **Current arrows.** From v11 to v30, conventional current is a bold ink "I" arrow and electron flow is navy dotted arrows. Circuit diagrams follow HSC symbols.
 18. **v12's** marble tube is the first cut if the learning review finds it distracting. The site's "50 times a second" is logged as a site error (100 reversals a second at 50 Hz).
+
+## v13 to v15 (3 November 2026)
+19. **Resistance factors.** v13 owns both `cif8293068` (voltage and electron flow at constant resistance) and `cib4d17ff9` (the four resistance factors), matching site lesson 13 and v12's handoff. v14 owns V = IR only. The route is updated: v13's title is "Voltage, Electron Flow and Resistance", and v14's syllabus actions drop `cib4d17ff9`. The crosswalk error is logged.
+20. **Route questions** for v14 to v16 are entered as the designs propose (v15's is reworded for plain speech).
+21. **v14** is accepted at 5,448 characters. A non-ohmic resistance is always V ÷ I at a point (a line from the origin), never the curve's slope; the site's "the gradient IS the resistance" hook is logged as a site error.
+22. **v15** uses the supply's dial rather than a rheostat, so voltage sharing waits for series circuits. Graphs keep V up and I across, as on the site, so a straight line's gradient is R. The physics check confirms that the warm-wire reading (0.55 A) is plausible for nichrome, or uses 0.58 A.
