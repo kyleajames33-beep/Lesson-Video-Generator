@@ -78,3 +78,7 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 51. Lesson 10 as an extra source for f12 and f14 is fine; f14 links lesson 18 (its source) with lesson 6 noted. The maths check confirms whether the 2024 reference sheet prints an annuity formula; f14's bar parts carry a grey "parts rounded separately" tag.
 52. Feedback at 31 to 32 s in f13, f14 and f15 accepted.
 53. **Kit:** twin strips, interest caps, `cashFlowMode`, `SortBins`, `DepositLayers`, `growthMode`, `ToolPanel` explorer mode, `ValueSplitBar`, `twoStage` timeline mode, `FrequencyBars`.
+
+## s01 to s03 (3 November 2026, overnight)
+54. **s02** at 5,346 accepted; trim its feedback 2 to 30 s. **s01:** replace the unexplained binomial tail line with the listed same-length replacement (binomial is not taught). Descriptions write "σ²" (typographic rendering). The voice pilot checks "E of X squared" against "mu squared".
+55. **Probability kit:** `ProbabilityBars`, `DistributionTable`, `StackedTotalBar`, `OutcomeDrop`, `OutcomeSort`, `OutcomeGrid`, `BalancePoint`, `DeviationArms`, `SpreadBrackets`, `RunningMeanTrace`; painted dice, coin, blank spinner discs and a counter bag, with no gambling styling.

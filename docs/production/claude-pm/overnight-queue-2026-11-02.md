@@ -26,11 +26,11 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave G2: maths math-a12-f12, f13, f14, f15
 - [done] Wave G3: biology bio-y11-fa2-v25, v26, v27
 - [started] Wave G4: physics phys-y11-fa2-v19, v20, v21
-- [started] Wave H1: maths math-a12-s01, s02, s03
+- [done] Wave H1: maths math-a12-s01, s02, s03
 - [started] Wave H2: biology bio-y11-fa2-v28, v29, v30
 - [started] Wave H3: physics phys-y11-fa2-v22, v23, v24
 - [started] Wave H4: maths math-a12-s04, s05, s06
-- [ ] Wave H5: biology bio-y11-fa2-v31, v32, v33
+- [started] Wave H5: biology bio-y11-fa2-v31, v32, v33
 
 ## Year 11 Biology FA2 ids (provisional; brief 152 adopts them)
 v01 L01 levels of cellular organisation; v02 L02 surface-area-to-volume ratio and exchange; v03 L02 agar cube practical; v04 L03 from organelles to systems; v05 L04 plant requirements; v06 L05 limiting factors; v07 L05 photosynthesis conditions (practical); v08 L06 changing conditions on photosynthesis; v09 L07 xylem structure; v10 L07 phloem structure; v11 L08 translocation in phloem; v12 L09 cohesion-tension in xylem. Packs: `pre-design/y11-bio/fa2-lNN-*.md`. v01 opens on FA1 v31's handoff frame.
