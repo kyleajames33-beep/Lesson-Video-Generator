@@ -1,10 +1,10 @@
 # G02b (Chemistry, Module 5): Every type of HSC equilibrium question, part 2: temperature, industry and open systems (design)
 
-Status: Revision 2 (1 Nov): brief 138 review repairs applied (F1 to F4: rigid container in q1; q4 outcomes as observations with air CO2; flat lines do not identify a catalyst; rounded-check numbers). Needs a Codex error check. Voicing: Cycle 2 (December) ElevenLabs.
+Status: Revision 3 (2 Nov): brief 144 timing fix applied. Ready to voice in the December ElevenLabs cycle.
 
 Root decisions (1 Nov, Claude): (1) chem-m5-g02 Revision 8 now says part two covers temperature, industry and open systems, so the name clash is resolved. (2) One attempt with a pause on every question is accepted for this hard-practice video. (3) Use the site value ΔH = −196 kJ/mol here (the site is the source of truth); g02 does not voice its −198 figure, so the series stays consistent on screen. (4) Contact conditions: say "close to atmospheric pressure (about 1 atm)", matching the site; the 1 to 2 atm range stays in an author note. (5) Multi-variable questions get a later home in chem-m5-g03 or a later practice video; recorded for the route, not added here. (6) About 573 s is accepted at Revision 1; the reviewer may apply a listed reserve trim.
 
-Narration 5,708 characters (Revision 2, +61 from the review repairs), 18 scenes, about 578 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Narration 5,708 characters (Revision 2, +61 from the review repairs), 18 scenes, about 577 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
 Working title: "Every type of HSC equilibrium question, part 2: temperature, industry and open systems" (the route title; see Open decisions on the "part 2" clash with g02's spoken "Calculations come in part two"). Video type 3 in `../teaching-playbook.md` (HSC practice-question walkthrough), authored questions only. Every question on screen is written for HSCScience, carries the tag "HSC-style question, written for HSCScience", and is never presented, said or implied to be an official NESA question. This is a hard-practice video: the worked walkthroughs are the content, so the brief end-of-video feedback rule does not apply (AGENTS.md exception, owner 16 Oct). Every question, worked or unseen, ends "Pause here to answer." with a 10 s countdown, and the full question card stays on screen during the countdown. The walkthrough underlines each given in the question text at the cue where it is used (owner rule, 18 Oct: no givens card). Learner copy never mentions marks. **Route id:** `chem-m5-g02b` (playlist order 13.5, after chem-m5-c09, before chem-m5-p02 and chem-m5-c10). Lesson key `m5g02b` (root to confirm).
 
@@ -236,7 +236,7 @@ Counted by script (18 scenes; `### N.` headings with letter suffixes, "> " lines
 | 8. key-notes | 75 |
 | **Total** | **5,708** (Revision 2) |
 
-Timing: speech about 429 s (5,708 ÷ 13.3); padding about 36 s (18 scenes at 2 s); stated holds about 7 s (hook 1 s, q1-chain 2 s, q2-t3 2 s, q4-answer 2 s; the decision board's 2 s is in padding); countdowns 50 s (five); the quiet notes hold beyond its speech about 55 s: **about 573 s, 9.54 minutes**. Spoken numbers ("196", "450", "550", "57") take longer than their characters, so the voiced preview may add about 5 s.
+Timing: speech about 429 s (5,708 ÷ 13.3); padding about 36 s (18 scenes at 2 s); stated holds about 7 s (hook 1 s, q1-chain 2 s, q2-t3 2 s, q4-answer 2 s; the decision board's 2 s is in padding); countdowns 50 s (five); the quiet notes hold beyond its speech about 55 s: **about 577 s, 9.62 minutes**. Spoken numbers ("196", "450", "550", "57") take longer than their characters, so the voiced preview may add about 5 s.
 
 Reserve trims if the voiced preview runs over 9.8 minutes: (1) the hook's "By the end you'll know why." (about 2 s); (2) [used at Revision 2: q2-t2's colour sentence is already cut]; (3) q3-mistake's spoken corrections (about 5 s; the green chips carry them); (4) the attempt answer's last sentence (about 4 s). Do not cut q1-profile, q2-t2's Q factor, q3's pressure row or q4's Q against K lines.
 
@@ -275,7 +275,7 @@ One plate (Codex art, standing rules apply):
 4. Memory aids: check "The taller barrier feels the temperature more." and its condition tag.
 
 **Error check (Codex, after root resolves the review).** Error-only:
-1. Re-check the narration character count by script with the build parser rules (target 5,500 to 6,800; this file counts 5,708 at Revision 2) and the timing sum (about 578 s; reserve trims (3) and (4) remain available if the voiced preview runs over 9.8 minutes).
+1. Re-check the narration character count by script with the build parser rules (target 5,500 to 6,800; this file counts 5,708 at Revision 2) and the timing sum (about 577 s; reserve trims (3) and (4) remain available if the voiced preview runs over 9.8 minutes).
 2. Recompute every value in "Numbers used" (the q2 quadratics, Q factor, gas counts, barrier differences).
 3. Check each full question stem (q1 to q4, try1) contains every given the walkthrough underlines and every condition the model answer needs (q1 "sealed, rigid container", "450 °C to 550 °C", the profile; q2 "sealed container", "releases heat", "one change at each"; q3 the four conditions and ΔH; q4 "two equal samples", "same high temperature", "open crucible in air", "sealed steel vessel", the two stated observations; try1 "+57", "sealed", "ice water", the profile). No givens card remains.
 4. Confirm the four syllabus dotpoints are verbatim against `docs/production/programme/syllabus/chem-2017-y12.json` (C5-IQ2-03, C5-IQ3-03, C5-IQ2-01 as the stem ending "for example:", C5-IQ1-02), including the curly apostrophe in "Le Chatelier’s".
