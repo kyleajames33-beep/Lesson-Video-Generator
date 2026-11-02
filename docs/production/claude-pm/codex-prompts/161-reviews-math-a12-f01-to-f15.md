@@ -2,7 +2,7 @@
 
 Read `00-standing-rules.md` and briefs 142 and 155 first, and use their methods and file formats exactly. Do not spawn sub-agents. Make no design edits, speech, renders or commits.
 
-**Designs.** `lessons/math-a12-f01.md` to `f15.md` (keys `m-a12fNN`) cover sequences, series and financial mathematics (2024 syllabus). They were written overnight. Reconcile each design with:
+**Designs.** `lessons/math-a12-f01.md` to `f15.md` (keys `m-a12fNN`) cover sequences, series and financial mathematics (2024 syllabus). Also review `lessons/math-a12-g01.md` to `g03.md` (keys `m-a12gNN`; mixed practice, root decisions 63 to 65): check that each question's choice of rule or model is justified by its givens, and that the full walkthroughs stay within the practice-video exception. They were written overnight. Reconcile each design with:
 - its pack in `pre-design/maths-a12/`, if one exists;
 - `docs/production/maths-a12-video-route.json`;
 - `docs/production/programme/maths-a12-course-outline.json`.
