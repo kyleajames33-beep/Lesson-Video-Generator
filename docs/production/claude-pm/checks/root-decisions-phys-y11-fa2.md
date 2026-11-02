@@ -14,3 +14,7 @@ Physics series decisions in `root-decisions-phys-y11-fa1-v01-v12.md` and `v13-v2
 10. **Scope additions** (direction of motion from a snapshot in v07; slope reading in v06) accepted, with their listed trims if the review finds them crowded. v09 keeps the speed-in-media scenes.
 11. **YouTube quotes:** write stacked fractions inline (for example "f = 1/T") inside the verbatim quote; this is a typographic rendering, not a wording change.
 12. If v08 comes off cultural hold, only v07's handoff take and chip and v09's opening change.
+13. **Signal generator plate:** one two-dial plate (frequency and amplitude) for the whole FA2 run; v01's plate request is amended (root edit). v10's coded dial chips sit on the real dials.
+14. **Decibels in v12** are allowed as a measuring tool only (three step rules, one calculator step), with a grey tag "not on the syllabus: a measuring scale". The particle-swing limitation is stated as designed; the physics check confirms the framing.
+15. **v11 pitch data** as listener rankings meets "relate frequency to pitch". v12 keeps the route question with "displacement amplitude" glossed.
+16. **v13's question:** "How can light carry energy across empty space, with no particles to pass it on?" (route updated). FA0 placement tables in v11 and v12 are accepted.
