@@ -10,3 +10,5 @@ The FA2 and FA3 pre-design packs already exist in `claude-pm/pre-design/y11-bio/
 4. Note any pack that needs updating for a route boundary.
 
 Write `docs/production/programme/bio-y11-fa2-fa3-route-inputs.json` and a short table `programme/bio-y11-fa2-fa3-video-map.md`. Hand in to `status.md` with one line per section.
+
+**Root note (2 Nov, evening):** Claude has started designing FA2 with provisional ids bio-y11-fa2-v01 to v12, mapped in claude-pm/overnight-queue-2026-11-02.md. Adopt those ids and that order for v01 to v12 unless a syllabus point would be left without a home; if you change any, say so clearly in the hand-in.

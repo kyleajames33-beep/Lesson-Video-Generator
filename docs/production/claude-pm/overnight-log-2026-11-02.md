@@ -1,0 +1,1 @@
+- 2026-11-02 21:00: brief 144 fixes applied (maths d11 to d17 and g02b at Revision 3, ready to voice); designers running for physics v26 to v31 and maths t01 to t04.
