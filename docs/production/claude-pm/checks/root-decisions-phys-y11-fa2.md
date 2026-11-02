@@ -18,3 +18,8 @@ Physics series decisions in `root-decisions-phys-y11-fa1-v01-v12.md` and `v13-v2
 14. **Decibels in v12** are allowed as a measuring tool only (three step rules, one calculator step), with a grey tag "not on the syllabus: a measuring scale". The particle-swing limitation is stated as designed; the physics check confirms the framing.
 15. **v11 pitch data** as listener rankings meets "relate frequency to pitch". v12 keeps the route question with "displacement amplitude" glossed.
 16. **v13's question:** "How can light carry energy across empty space, with no particles to pass it on?" (route updated). FA0 placement tables in v11 and v12 are accepted.
+17. **v14 and v15 questions** entered in the route; v16's question is "Why does light get dimmer so quickly as you move away from the source?" (v15's chip).
+18. **Field colours:** electric field teal, magnetic field plum dashed (site figure match) for light in FA2; FA3 keeps these for E and B fields so students meet one convention.
+19. **v15's depth-study point:** a short grey "Research task" end card (screen only) suggests a depth-study question; no extra narration.
+20. **Cross-subject plate reuse** (Biology X-ray machine and UV cabinet, Chemistry coffee cup) is fine where the style fits; "diffract" in plain words before v27/v28 is fine with a grey "more in a later video" tag.
+21. v14 feedback 2 at about 33 s accepted.
