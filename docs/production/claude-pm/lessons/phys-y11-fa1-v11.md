@@ -1,6 +1,6 @@
 # Year 11 Physics FA1 V11: How does changing the observer change a measured velocity? Frames of reference and relative velocity, v_AB = v_A − v_B, in one and two dimensions (design)
 
-Status: Revision 1 (2 Nov). Needs independent student learning review (`docs/production/student-learning-review.md`), a Codex physics check and a Codex error check. Voice: Google AI Studio, after the brief 124 pilot. Nothing recorded; human listening pending. Plates: two reused car plates, three new top-view plates (two boats, one drone) and one sledge plate shared with v12 (see Assets).
+Status: Revision 2 (2 Nov): brief 145 repairs applied (no findings from the learning review or the physics check; no wording changed; 4,990 characters, about 469 s confirmed by recount). Needs a Codex error check.
 
 Narration 4,990 characters, 14 scenes, about 469 s (7.8 minutes) including one 3 s prediction countdown, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate"). **Below the 5,500 character band by design:** the content point's teaching (frames, the subtraction, perpendicular 2D cases, direction naming, order) fills about 5,000 characters without padding; root decides whether to accept it or add one of the options in open decision 5.
 
@@ -256,5 +256,5 @@ Builds on: Measuring g with two graphs (previous video); vectors and vector subt
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (trace from v02 and Stage 5: does riding with B make the subtraction feel inevitable; is the order rule clear after scene 8; does scene 6 separate "moving" from "comes from" without confusing; do the direction names follow from the compass arcs), then the Codex physics check and error check.
+- Revision 2 (2 Nov): brief 145 review applied. Learning review and physics check found nothing to repair; recount confirms 4,990 characters (5,003 with the 13 joining spaces) and per-scene counts 384, 461, 439, 369, 550, 403, 520, 298, 192, 385, 266, 391, 257, 75. Earlier plan for the review, kept for reference: Next: student learning review (trace from v02 and Stage 5: does riding with B make the subtraction feel inevitable; is the order rule clear after scene 8; does scene 6 separate "moving" from "comes from" without confusing; do the direction names follow from the compass arcs), then the Codex physics check and error check.
 - The frame-lock camera moves carry the explanation; judge them at playback speed in the voiced preview. They must be exact (author note a): if the background speed and A's apparent speed don't match the arithmetic on screen, the visual teaches the wrong thing.

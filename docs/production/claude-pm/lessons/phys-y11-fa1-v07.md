@@ -1,6 +1,6 @@
 # Y11 Physics FA1 V07 (Physics 2025, Year 11, Focus Area 1): How can motion data become linked displacement, velocity and acceleration graphs? (design)
 
-Status: Revision 1 (2 Nov). Needs student learning review (key `p-y11-v07`), physics check (Codex) and a Codex error check before build. No new plate. Voicing follows the programme queue (Google AI Studio after the brief 124 pilot; physics after Year 12 Maths and Year 11 Biology). Nothing recorded; human listening pending.
+Status: Revision 2 (2 Nov): brief 145 repairs applied (author note (e) no longer says "per second" after m s⁻²). Needs a Codex error check.
 
 Narration 5,406 characters, 14 scenes, about 505 s (8.4 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -49,7 +49,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/
   (b) Road scale: 0 to 110 m across the road strip (markers labelled 0, 4, 16, 36, 60, 84, 102, 108 m; the reversing markers at 104, 96, 88 m sit under the strip in a second row to avoid overlap).
   (c) Graph windows: displacement 0 to 120 m (ticks 20); velocity −6 to 14 m s⁻¹ (ticks 4, zero line bold); acceleration −4 to 3 m s⁻² (ticks 1, zero line bold); time 0 to 24 s (ticks 2). The velocity and acceleration panels show the zero line clearly, because scene 7 depends on "below the axis".
   (d) Scene 4 cursor at t = 4 s: s = 16 m, v = 8 m s⁻¹, a = 2.0 m s⁻².
-  (e) A1: 1.5/1.0 = 1.5 m s⁻² per second for 0 to 2.0 s (3.5 − 2.0 = 1.5; 5.0 − 3.5 = 1.5); 0 for 2.0 to 4.0 s. A2: 3.0/1.0 = +3.0 m s⁻¹ (0 to 2.0 s); 0 (2.0 to 3.0 s); (4.0 − 6.0)/1.0 = −2.0 m s⁻¹ and (2.0 − 4.0)/1.0 = −2.0 m s⁻¹ (3.0 to 5.0 s). A2's intervals are joined straight in the model answer, assuming steady motion within each part (the same assumption as scene 2, said in the feedback as "steady"); the sudden changes at 2.0 and 3.0 s are an idealisation.
+  (e) A1: 1.5/1.0 = 1.5 m s⁻² for 0 to 2.0 s (3.5 − 2.0 = 1.5; 5.0 − 3.5 = 1.5); 0 for 2.0 to 4.0 s. A2: 3.0/1.0 = +3.0 m s⁻¹ (0 to 2.0 s); 0 (2.0 to 3.0 s); (4.0 − 6.0)/1.0 = −2.0 m s⁻¹ and (2.0 − 4.0)/1.0 = −2.0 m s⁻¹ (3.0 to 5.0 s). A2's intervals are joined straight in the model answer, assuming steady motion within each part (the same assumption as scene 2, said in the feedback as "steady"); the sudden changes at 2.0 and 3.0 s are an idealisation.
   (f) Pronunciations: "displacement-time graph" (said in full, never "s-t" or "d-t"); "two point oh metres per second squared"; "minus three point oh"; "one point five"; "plus three point oh metres per second".
 
 Main question: *A car speeds up, cruises, brakes, parks and reverses. Its position and velocity are recorded every two seconds. How do those numbers become three linked graphs, and what does each shape tell us?*
@@ -254,5 +254,5 @@ Builds on: Velocity in two dimensions and acceleration (previous video). Next: R
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (trace from v05, v06 and Stage 5 graphing; check that the gap brackets on the road make the curve's shape feel caused, not stated; that the joining assumption reads as a condition; that the three-panel cursor is readable on a phone; that "flat means that quantity isn't changing" is clear across the three graphs; that the attempt cards give nothing away), then the Codex physics check and error check.
+- Revision 2 (2 Nov): brief 145 review applied. Learning review: no findings. Physics check: one should-fix, author note (e) "1.5 m s⁻² per second" corrected to "1.5 m s⁻²" (no narration change; 5,406 characters, about 505 s unchanged). Earlier plan for the review, kept for reference: Next: student learning review (trace from v05, v06 and Stage 5 graphing; check that the gap brackets on the road make the curve's shape feel caused, not stated; that the joining assumption reads as a condition; that the three-panel cursor is readable on a phone; that "flat means that quantity isn't changing" is clear across the three graphs; that the attempt cards give nothing away), then the Codex physics check and error check.
 - The markers, gap brackets, flying data points and the time cursor carry the explanation; judge them at playback speed in the voiced preview. The road position, the table and the three graphs must come from the same motion function.
