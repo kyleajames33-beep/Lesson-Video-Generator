@@ -38,3 +38,9 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 25. **Plates approved:** tide board, layered Ferris wheel (empty cabins), sound level meter. "Earthquake magnitude" spoken, "Richter" once in grey.
 26. **Year 11 codenames** for transformations, trig equations, inverse trig and log laws are added by the brief 153 maths check from fresh official pages.
 27. t04 ends on i05's handoff frame, so i06 opens on that frame whichever comes before it.
+
+## i06 to i08 (2 November 2026, overnight)
+28. **Route:** the draft route entries in i06 to i08 are adopted as provisional inputs; brief 151 confirms or adjusts them (keeping these ids and order).
+29. **i06:** the tap context with an irrational time is fine at Year 12, with the grey readout carrying the decimal. **i07:** the semicircle recall is allowed (Year 10 area of a circle). Link the page the worked numbers come from (lesson 7) and note lesson 2 as the outline source.
+30. **i08:** use the 81-character title alternative. The chain-rule upper limit stays out (outside the 2024 points).
+31. **Kit:** `AreaFill`, `RiemannStrips`, `RefinementTable`, `AccumulationTracer`, `LowerLimitDial` go to the next maths kit brief.
