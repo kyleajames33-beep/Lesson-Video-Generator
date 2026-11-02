@@ -36,3 +36,5 @@ When the key is available, also test 3 lines from `../lessons/math-a12-d01.md`, 
 - Check whether the voice reads the constant "a" as the letter ("ay") or as the article ("uh").
 - Check how it reads fractions such as "one half" and expressions such as "e to the x".
 - If a pronunciation override (for example a phonetic respelling or an alias) is needed, give the exact method.
+
+**Update (3 November 2026).** The owner has added the key to `.env.local` as `GEMINI_API_KEY` and chose the voice ID `voice_shdbjsxcrr0a`. Use that voice for every pilot line. If the API rejects the ID in the field you first try, check the current Google AI Studio documentation for how a saved or custom voice ID is passed (it may differ from the prebuilt voice-name field) and retry once. If it still fails, stop and report the exact error message (never the key). Record in the hand-in which model you used and why.
