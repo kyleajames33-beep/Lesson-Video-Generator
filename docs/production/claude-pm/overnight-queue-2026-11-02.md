@@ -3,7 +3,7 @@
 Root (Claude) launches these designer agents (opus) as slots free up, at most 5 agents running at once, in wave order. Mark each line "started" or "done" as you go. Every agent prompt is the matching template below with the ids filled in.
 
 ## Queue
-- [ ] PRIORITY R2: repair (sonnet) physics phys-y11-fa1-v13 to v19 from brief 149 (keys p-y11-vNN)
+- [started] PRIORITY R2: repair (sonnet) physics phys-y11-fa1-v13 to v19 from brief 149 (keys p-y11-vNN)
 - [ ] PRIORITY R3: repair (sonnet) physics phys-y11-fa1-v20 to v24 from brief 149
 - [ ] PRIORITY R4: repair (sonnet) physics phys-y11-fa1-v26 to v31 from brief 153
 - [ ] PRIORITY R5: repair (sonnet) maths math-a12-t01 to t04 from brief 153 (keys m-a12tNN), applying root decisions 21 and 22 (syllabus notation, "pi over three")
@@ -36,7 +36,7 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave H1: maths math-a12-s01, s02, s03
 - [done] Wave H2: biology bio-y11-fa2-v28, v29, v30
 - [done] Wave H3: physics phys-y11-fa2-v22, v23, v24
-- [started] Wave H4: maths math-a12-s04, s05, s06
+- [done] Wave H4: maths math-a12-s04, s05, s06
 - [started] Wave H5: biology bio-y11-fa2-v31, v32, v33
 - [started] Wave I1: physics phys-y11-fa2-v25, v26, v27
 - [started] Wave I2: maths math-a12-s07, s08, s09

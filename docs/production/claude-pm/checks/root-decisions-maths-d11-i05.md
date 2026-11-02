@@ -82,3 +82,7 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 ## s01 to s03 (3 November 2026, overnight)
 54. **s02** at 5,346 accepted; trim its feedback 2 to 30 s. **s01:** replace the unexplained binomial tail line with the listed same-length replacement (binomial is not taught). Descriptions write "σ²" (typographic rendering). The voice pilot checks "E of X squared" against "mu squared".
 55. **Probability kit:** `ProbabilityBars`, `DistributionTable`, `StackedTotalBar`, `OutcomeDrop`, `OutcomeSort`, `OutcomeGrid`, `BalancePoint`, `DeviationArms`, `SpreadBrackets`, `RunningMeanTrace`; painted dice, coin, blank spinner discs and a counter bag, with no gambling styling.
+
+## s04 to s06 (3 November 2026, overnight)
+56. **s04** keeps the reaction-time hook and one painted stopwatch plate (blank display, no hands). **s05:** Codex strips the invisible character from the quoted syllabus text in metadata (no wording change). **s06:** keep attempt 2's reuse of s04's CDF unless the learning review objects (replacement listed); the cause sentence stays, checked by the learning review; add lesson 9 as a second description link.
+57. **Kit:** `ClassHistogram`, `ShrinkingWindow`, `CumulativeBuild`, `CdfSubtraction`, `StripRiseRatio`, `SlidingWindow`, `QuantileReader`. Voice pilot list adds "zero point" and "F prime of x".
