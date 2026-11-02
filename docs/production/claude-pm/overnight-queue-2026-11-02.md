@@ -31,6 +31,12 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [started] Wave H3: physics phys-y11-fa2-v22, v23, v24
 - [started] Wave H4: maths math-a12-s04, s05, s06
 - [started] Wave H5: biology bio-y11-fa2-v31, v32, v33
+- [ ] Wave I1: physics phys-y11-fa2-v25, v26, v27
+- [ ] Wave I2: maths math-a12-s07, s08, s09
+- [ ] Wave I3: biology bio-y11-fa3-v01, v02, v03 (FA3: use the FA3 route entries and fa3 packs; course label "Year 11 Biology (2025 syllabus), Focus Area 3"; v01 opens on bio-y11-fa2-v33's handoff)
+- [ ] Wave I4: physics phys-y11-fa2-v28, v29, v30
+- [ ] Wave I5: maths math-a12-s10, s11, s12
+- [ ] Wave I6: biology bio-y11-fa3-v04, v06, v07 (v05 is on cultural hold: v04 hands off to v06)
 
 ## Year 11 Biology FA2 ids (provisional; brief 152 adopts them)
 v01 L01 levels of cellular organisation; v02 L02 surface-area-to-volume ratio and exchange; v03 L02 agar cube practical; v04 L03 from organelles to systems; v05 L04 plant requirements; v06 L05 limiting factors; v07 L05 photosynthesis conditions (practical); v08 L06 changing conditions on photosynthesis; v09 L07 xylem structure; v10 L07 phloem structure; v11 L08 translocation in phloem; v12 L09 cohesion-tension in xylem. Packs: `pre-design/y11-bio/fa2-lNN-*.md`. v01 opens on FA1 v31's handoff frame.
