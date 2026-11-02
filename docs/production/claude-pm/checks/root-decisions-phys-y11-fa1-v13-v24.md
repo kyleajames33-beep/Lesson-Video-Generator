@@ -28,3 +28,10 @@ Decisions 1 to 16 in `root-decisions-phys-y11-fa1-v01-v12.md` still apply. Revie
 20. **v26** keeps the conservative and non-conservative point (as the route assigns), with "where was the energy kept?" left open for v27. Sign convention: W = ΔU is the work done against gravity by the lift; gravity's own work is shown as W_g = −ΔU.
 21. **v28** at 5,658 characters is accepted. Its handoff chip is aligned to v29's question when v29 lands.
 22. **Public copy:** YouTube descriptions write formulas readably (for example "KE = ½mv²") after the verbatim syllabus quote, never altering the quote.
+
+## v29 to v31 (2 November 2026, evening)
+23. **Momentum colour:** magenta for momentum bars and arrows course-wide; impulse as a pale amber area.
+24. **Hands rule:** v29's stiff board and loose net replace the site's hands, same numbers. Accepted.
+25. **v30** stays one video at about 566 s; the v30a/v30b split is used only if the learning review finds the elastic algebra rushed. The site's 6.0 m s⁻¹ stays, tagged "teaching values".
+26. **v31:** air track method and its constant-drag illustrative data model accepted; its FA0 placement table accepted. Its handoff chip uses "How do the particles move when a wave carries energy?" for phys-y11-fa2-v01 unless the FA2 designer writes a better causal question (then the chip is aligned).
+27. **Route:** v29 "Why does the same change in momentum take a smaller force when it happens over a longer time?"; v30 "Why does the total momentum stay the same when two objects collide, even when kinetic energy is lost?". v28's handoff chip now names v29's question (root edit).

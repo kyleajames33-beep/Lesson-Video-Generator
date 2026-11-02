@@ -141,7 +141,7 @@ Visual: card shrinks to the top; "rough", "drops 1.20 m vertically" and "3.50 m 
 ### 15. handoff
 > So when only gravity does work, kinetic plus potential energy stays the same, because gravity's work just moves energy from one to the other. Friction leaks some out as heat. Energy tells us how fast the box is going at the bottom. But when it hits the end stop, how hard is the stop? Next: momentum and **impulse**.
 
-Visual: the memory line returns small at the top. The rough ramp from scenes 8 and 9 with the box at its foot, sliding toward `y11p-padded-stop-v1.png` clamped at the end; its bars small beside it (U 0, KE 36 J, heat 22.8 J, the total outline fixed). On "how hard" a chip "how hard does it stop?" beside the stop. On "impulse" the chip "Next: momentum and impulse". This is the final frame of the video (series rule). Hold about 2 seconds.
+Visual: the memory line returns small at the top. The rough ramp from scenes 8 and 9 with the box at its foot, sliding toward `y11p-padded-stop-v1.png` clamped at the end; its bars small beside it (U 0, KE 36 J, heat 22.8 J, the total outline fixed). On "how hard" a chip "how hard does it stop?" beside the stop. On "impulse" the chip "Next: Why does the same change in momentum take a smaller force over a longer time?". This is the final frame of the video (series rule). Hold about 2 seconds.
 
 ### 16. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
