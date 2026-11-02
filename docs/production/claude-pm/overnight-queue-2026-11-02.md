@@ -3,7 +3,7 @@
 Root (Claude) launches these designer agents (opus) as slots free up, at most 5 agents running at once, in wave order. Mark each line "started" or "done" as you go. Every agent prompt is the matching template below with the ids filled in.
 
 ## Queue
-- [ ] PRIORITY R1: repair agent (sonnet) for Biology FA1 v07 to v12 from brief 147 (v10 blocker: replace the open-beaker diffusion demo with the reports' agar version); takes the next free slot before any design wave
+- [started] PRIORITY R1: repair agent (sonnet) for Biology FA1 v07 to v12 from brief 147 (v10 blocker: replace the open-beaker diffusion demo with the reports' agar version); takes the next free slot before any design wave
 - [done] Wave A1: maths math-a12-i06, i07, i08
 - [done] Wave A2: biology bio-y11-fa2-v01, v02, v03
 - [done] Wave B1: maths math-a12-i09, i10, i11
@@ -19,7 +19,7 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 - [done] Wave E2: maths math-a12-f05, f06, f07, f08
 - [done] Wave E3: biology bio-y11-fa2-v16, v17, v18
 - [done] Wave E4: physics phys-y11-fa2-v13, v14, v15
-- [started] Wave F1: biology bio-y11-fa2-v19, v20, v21
+- [done] Wave F1: biology bio-y11-fa2-v19, v20, v21
 - [started] Wave F2: maths math-a12-f09, f10, f11
 - [started] Wave F3: biology bio-y11-fa2-v22, v23, v24
 - [started] Wave G1: physics phys-y11-fa2-v16, v17, v18
