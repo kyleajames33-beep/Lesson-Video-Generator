@@ -67,3 +67,7 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 44. **f08:** keep the bouncing ball; trim its feedback to 30 s using the listed trim. f05 key note 3 reads "exponential growth or decay for r > 0" with negative r noted as alternating.
 45. **Titles:** use the shorter alternatives for f06 and f08.
 46. **Kit:** `FoldLayers`, `ShiftCancelRows`, `ConvergenceStrip`, plus the `TermLadder`, `TermPlot` and `PeriodTimeline` extensions, join the next maths kit brief.
+
+## f09 to f11 (2 November 2026, overnight)
+47. **f09** may use the $2,147.29 repayment as a given ("the bank sets this repayment; f11 shows how to find it"). **f10:** say "a rise usually costs more time than an equal fall saves" (scoped). **f11:** keep the exact final-repayment detail. Use "log" as in f05 to f08. Show the site's present-value form only as a grey "another form you may see" note. Lesson 14's offset and redraw content is logged as outside the 2024 Advanced syllabus.
+48. **Finance kit:** `BalanceTable`, `LoanBalanceGraph`, `RepaymentSplit`, `LoanTermCurve`, `SolveForPanel`, `PeriodTimeline` loan and deposit modes, `ToolPanel` table mode, one shared loan engine.
