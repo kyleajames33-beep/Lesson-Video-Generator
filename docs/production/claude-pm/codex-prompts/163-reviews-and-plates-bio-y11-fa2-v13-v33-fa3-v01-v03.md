@@ -5,7 +5,7 @@ Read `00-standing-rules.md` and briefs 147, 150 and 157 first, and use their met
 ## Inputs
 **Designs** (all Revision 1; review those that exist):
 - `lessons/bio-y11-fa2-v13.md` to `v33.md` (keys `y11b-fa2-vNN`);
-- `lessons/bio-y11-fa3-v01.md` to `v20.md` that exist (keys `y11b-fa3-vNN`; v05 and v16 are on cultural hold).
+- `lessons/bio-y11-fa3-v01.md` to `v26.md` that exist (keys `y11b-fa3-vNN`; v05 and v16 are on cultural hold).
 
 **Route.** `docs/production/y11-bio-fa2-fa3-video-route.json` is root-approved. Say where a design differs from it.
 
