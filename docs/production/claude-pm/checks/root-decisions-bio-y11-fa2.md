@@ -14,3 +14,7 @@ Series decisions in `root-decisions-bio-y11-fa1-v01-v06.md` and `root-decisions-
 10. **v07 species:** do not name Cabomba (a Weed of National Significance); use Elodea only if the science check confirms its NSW status for school use, otherwise "a pondweed approved by your school" with a generic pondweed plate. The safety check confirms the pondweed and electrical rows.
 11. **v08:** keep the light-and-distance sentence (inverse square at Year 11 level, stated as "about four times"); its reserve cut applies only if the review finds it confusing.
 12. **v09:** add a grey screen tag "the pull: video 12" on "pulled" (screen only). Memory aid "Xylem is a pipe, not a pump" accepted.
+13. **v10 to v12** accepted, including v12 at 5,400 characters. v09 keeps its four-row board and route-worded Next chip (v10 depends on them).
+14. **Water potential:** screen tag only in v11 and v12, with one spoken sentence allowed in v12 if the learning review says exam wording needs it (water-concentration explanation stays primary).
+15. **Science-check fallbacks** (car tyre comparison, "nothing keeps the sieve tube cell alive", root pressure "a few metres", dendrometer stem) are used if the science check asks.
+16. **Shared FA2 kit:** `CompareTable`, `PressureTube`, `StepChain`, `MunchModel`, `WaterChain`. The delivery-van hook is replaced by "Xylem's pull is free. Phloem's load costs fuel." (no character metaphors).
