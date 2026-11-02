@@ -49,3 +49,9 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 32. These three were written before brief 151's packs landed; the brief 15x review reconciles each with `pre-design/maths-a12/math-a12-i09.md` to `i11.md` and the route inputs (ids and order kept).
 33. **i09:** matched-inside definite integrals go to the integral practice video g02. **i10:** areas between two curves stay out (not a 2024 Advanced point); link lesson 9 for the area pages and extend site log item 20 for the profit integrals. **i11:** 5,137 characters (about 480 s) accepted; the "x ≤ 0 throughout" case stays as stated on a piece; feedback at 29 to 30 s accepted.
 34. **Kit:** `LimitSubstitution`, reverse `RiemannStrips`, `AreaFlip` (x-axis and y-axis), `DisplacementTrack`, `HorizontalStrips`, `SwapReflection` (equal axis units) join the next maths kit brief.
+
+## i12 to i14 (2 November 2026, overnight)
+35. **Frames:** i12 now opens on i11's actual handoff (∫₋₂² x³ dx with two matching pieces; root edit). f01 opens on i14's handoff ("−1, 0, 9, 32", "Next: sequences"), with a first sentence that stays true in any playlist position.
+36. **i12:** use the reference-sheet form of the trapezoidal rule as printed on the 2024 NESA Mathematics reference sheet (the maths check confirms the exact form); "erf" is shown on screen only, not spoken. Use the shorter title alternative if over 90 characters.
+37. **i14:** "end of calculus for now" is fine; differential lesson 5's examples stay out; ẋ notation stays out (ẍ shown once as an alternative only if the syllabus point uses it).
+38. **Kit:** `SymmetryPairs`, `CoefficientLedger`, `ToolPanel` (unbranded), `UnitProduct`, `ParticleTrack` join the next maths kit brief, with `HorizontalStrips` from i11.
