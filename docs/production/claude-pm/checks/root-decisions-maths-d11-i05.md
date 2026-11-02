@@ -29,3 +29,12 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 
 ## After brief 142 repairs (2 November 2026)
 20. **Final frame, one rule.** Series rule 16 in `root-decisions-bio-y11-fa1-v01-v06.md` governs: each video's key-notes hold ends by cross-fading back to its handoff frame, so the next video opens on that handoff frame. The d11 to d17 openings that describe the previous key-notes screen fading out, and the d18 to i05 closings with a 0.6 s fade, are both read as that one rule; the shared key-notes component implements it once (1 s cross-fade). Reviewers do not log the wording difference as an error.
+
+## t01 to t04 (2 November 2026, evening)
+21. **Notation:** use the 2024 syllabus form y = k f(a(x + b)) + c for transformations in t01 to t04 (labels, key notes and cards), with a one-line grey note that some sources write a f(bx + c) + d. Applied at Revision 2 after review.
+22. **Spoken π:** "pi over three" (series form), not "pi on three"; applied at Revision 2 (+ about 60 characters per video, within band).
+23. **Partial coverage:** `ci5f2b7245` beyond trig models, and earthquake and star attempts, go to the practice video g02/g03.
+24. **Lengths** of t02 (5,499) and t03 (5,520) are accepted; no padding.
+25. **Plates approved:** tide board, layered Ferris wheel (empty cabins), sound level meter. "Earthquake magnitude" spoken, "Richter" once in grey.
+26. **Year 11 codenames** for transformations, trig equations, inverse trig and log laws are added by the brief 153 maths check from fresh official pages.
+27. t04 ends on i05's handoff frame, so i06 opens on that frame whichever comes before it.
