@@ -86,3 +86,7 @@ Written by Claude (root) after reading the five designers' open questions. Revie
 ## s04 to s06 (3 November 2026, overnight)
 56. **s04** keeps the reaction-time hook and one painted stopwatch plate (blank display, no hands). **s05:** Codex strips the invisible character from the quoted syllabus text in metadata (no wording change). **s06:** keep attempt 2's reuse of s04's CDF unless the learning review objects (replacement listed); the cause sentence stays, checked by the learning review; add lesson 9 as a second description link.
 57. **Kit:** `ClassHistogram`, `ShrinkingWindow`, `CumulativeBuild`, `CdfSubtraction`, `StripRiseRatio`, `SlidingWindow`, `QuantileReader`. Voice pilot list adds "zero point" and "F prime of x".
+
+## s07 to s09 (3 November 2026)
+58. **s07** keeps the rounding-error example and the bus-stop plate (no people). **s08** keeps the ½ sin x app case as the one beyond-course example; the app panel stays unbranded. **s09** keeps the "924 of 4,096" peg-board readout and links the description to site lesson 2. Named cuts that would take s07 or s08 under 5,500 characters are used only if voiced takes exceed 570 s.
+59. **Kit:** `WaitStrip`, `AreaFill` height dial and open ends, `BalancePoint` density mode, `FormulaCrosswalk`, `RiemannStrips` toBars, `ToolPanel` input and output mode, `PegBoard`, `NormalCurve`, `TailMirror`. Plates: `maths-a12-bus-stop.png`, `maths-a12-bottle.png`. s10 opens on s09's handoff (area within one, two and three σ).
