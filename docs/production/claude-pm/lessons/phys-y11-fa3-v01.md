@@ -66,7 +66,7 @@ Handoff: v02, the three ways of charging.
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: see Decisions (positive red "+", negative navy "−", neutrons grey; electron paths navy dashes; readouts navy; crossed items grey scribble).
 
 ### 1. hook (made, or moved?)
-> That wraps up waves, and now we start something new: electricity and magnetism, beginning with charge.
+> Now, electricity and magnetism, beginning with charge.
 
 > Here's a balloon and a wool cloth. A charge meter reads zero for each, so both are neutral. Now rub them together. The balloon now reads minus eight nanocoulombs, a tiny amount of charge, and the cloth reads plus eight. Nothing was added to either one. So where did that charge come from? Did the rubbing make it, or was it already there, and just **moved**?
 
