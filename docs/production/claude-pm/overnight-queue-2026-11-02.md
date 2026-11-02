@@ -5,22 +5,31 @@ Root (Claude) launches these designer agents (opus) as slots free up, at most 5 
 ## Queue
 - [done] Wave A1: maths math-a12-i06, i07, i08
 - [done] Wave A2: biology bio-y11-fa2-v01, v02, v03
-- [started] Wave B1: maths math-a12-i09, i10, i11
-- [started] Wave B2: biology bio-y11-fa2-v04, v05, v06
-- [started] Wave B3: physics phys-y11-fa2-v01, v02, v03, v04
-- [started] Wave C1: maths math-a12-i12, i13, i14
-- [started] Wave C2: biology bio-y11-fa2-v07, v08, v09
-- [ ] Wave C3: physics phys-y11-fa2-v05, v06, v07, v09 (v08 is on cultural hold: v07 hands off to v09)
-- [ ] Wave D1: maths math-a12-f01, f02, f03, f04
-- [ ] Wave D2: biology bio-y11-fa2-v10, v11, v12
-- [ ] Wave D3: physics phys-y11-fa2-v10, v11, v12
-- [ ] Wave E1: biology bio-y11-fa2-v13, v14, v15
-- [ ] Wave E2: maths math-a12-f05, f06, f07, f08
-- [ ] Wave E3: biology bio-y11-fa2-v16, v17, v18
-- [ ] Wave E4: physics phys-y11-fa2-v13, v14, v15
-- [ ] Wave F1: biology bio-y11-fa2-v19, v20, v21
-- [ ] Wave F2: maths math-a12-f09, f10, f11
-- [ ] Wave F3: biology bio-y11-fa2-v22, v23, v24
+- [done] Wave B1: maths math-a12-i09, i10, i11
+- [done] Wave B2: biology bio-y11-fa2-v04, v05, v06
+- [done] Wave B3: physics phys-y11-fa2-v01, v02, v03, v04
+- [done] Wave C1: maths math-a12-i12, i13, i14
+- [done] Wave C2: biology bio-y11-fa2-v07, v08, v09
+- [done] Wave C3: physics phys-y11-fa2-v05, v06, v07, v09 (v08 is on cultural hold: v07 hands off to v09)
+- [done] Wave D1: maths math-a12-f01, f02, f03, f04
+- [done] Wave D2: biology bio-y11-fa2-v10, v11, v12
+- [done] Wave D3: physics phys-y11-fa2-v10, v11, v12
+- [done] Wave E1: biology bio-y11-fa2-v13, v14, v15
+- [done] Wave E2: maths math-a12-f05, f06, f07, f08
+- [started] Wave E3: biology bio-y11-fa2-v16, v17, v18
+- [started] Wave E4: physics phys-y11-fa2-v13, v14, v15
+- [started] Wave F1: biology bio-y11-fa2-v19, v20, v21
+- [started] Wave F2: maths math-a12-f09, f10, f11
+- [started] Wave F3: biology bio-y11-fa2-v22, v23, v24
+- [ ] Wave G1: physics phys-y11-fa2-v16, v17, v18
+- [ ] Wave G2: maths math-a12-f12, f13, f14, f15
+- [ ] Wave G3: biology bio-y11-fa2-v25, v26, v27
+- [ ] Wave G4: physics phys-y11-fa2-v19, v20, v21
+- [ ] Wave H1: maths math-a12-s01, s02, s03
+- [ ] Wave H2: biology bio-y11-fa2-v28, v29, v30
+- [ ] Wave H3: physics phys-y11-fa2-v22, v23, v24
+- [ ] Wave H4: maths math-a12-s04, s05, s06
+- [ ] Wave H5: biology bio-y11-fa2-v31, v32, v33
 
 ## Year 11 Biology FA2 ids (provisional; brief 152 adopts them)
 v01 L01 levels of cellular organisation; v02 L02 surface-area-to-volume ratio and exchange; v03 L02 agar cube practical; v04 L03 from organelles to systems; v05 L04 plant requirements; v06 L05 limiting factors; v07 L05 photosynthesis conditions (practical); v08 L06 changing conditions on photosynthesis; v09 L07 xylem structure; v10 L07 phloem structure; v11 L08 translocation in phloem; v12 L09 cohesion-tension in xylem. Packs: `pre-design/y11-bio/fa2-lNN-*.md`. v01 opens on FA1 v31's handoff frame.

@@ -6,3 +6,16 @@
 - 2026-11-02 21:40: Biology FA2 v01 to v03 designed; started wave B2 (Biology FA2 v04 to v06).
 - 2026-11-02 21:50: maths i06 to i08 designed; started wave C1 (maths i12 to i14).
 - 2026-11-02 21:55: physics v07 to v12 at Revision 2; brief 154 written (error check v01 to v12); started wave C2 (Biology FA2 v07 to v09).
+- 2026-11-02 21:25 check: briefs 151 (maths) and 152 landed; maths route t01 to i14 and Biology FA2/FA3 route approved; queue extended to waves E and F; 5 agents running (maths i09 to i11, i12 to i14; physics FA2 v01 to v04; Biology FA2 v04 to v06, v07 to v09).
+- 2026-11-02 21:45: maths i09 to i11 designed; started wave C3 (physics FA2 v05, v06, v07, v09).
+- 2026-11-02 21:50: physics FA2 v01 to v04 designed; started wave D1 (maths f01 to f04).
+- 2026-11-02 22:00: Biology FA2 v04 to v06 designed (v06 handoff aligned to the approved route); started wave D2 (Biology FA2 v10 to v12).
+- 2026-11-02 22:10: maths i12 to i14 designed (integral strand designed); brief 155 written; started wave D3 (physics FA2 v10 to v12).
+- 2026-11-02 22:35: Biology FA2 v07 to v09 designed; started wave E1 (Biology FA2 v13 to v15).
+- 2026-11-02 22:40: physics FA2 v05 to v07 and v09 designed; started wave E2 (maths f05 to f08).
+- 2026-11-02 21:55 check: brief 151 physics part landed (packs v26 to v31; designs already exist, brief 153 reconciles). Briefs 156 and 157 written. 5 agents running (maths f01 to f04, f05 to f08; physics FA2 v10 to v12; Biology FA2 v10 to v12, v13 to v15).
+- 2026-11-02 22:55: maths f01 to f04 designed; started wave E3 (Biology FA2 v16 to v18).
+- 2026-11-02 23:05: Biology FA2 v10 to v12 designed; started wave E4 (physics FA2 v13 to v15).
+- 2026-11-02 23:10: physics FA2 v10 to v12 designed; started wave F1 (Biology FA2 v19 to v21).
+- 2026-11-02 23:30: Biology FA2 v13 to v15 designed; started wave F2 (maths f09 to f11).
+- 2026-11-02 23:35: maths f05 to f08 designed; started wave F3 (Biology FA2 v22 to v24).
