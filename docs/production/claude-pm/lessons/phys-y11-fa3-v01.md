@@ -63,7 +63,7 @@ Handoff: v02, the three ways of charging.
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: see Decisions (positive red "+", negative navy "−", neutrons grey; electron paths navy dashes; readouts navy; crossed items muted red scribble).
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: see Decisions (positive red "+", negative navy "−", neutrons grey; electron paths navy dashes; readouts navy; crossed items grey scribble).
 
 ### 1. hook (made, or moved?)
 > That wraps up waves, and now we start something new: electricity and magnetism, beginning with charge.
