@@ -62,3 +62,12 @@ None of the Maths or Year 11 lessons is built in Remotion yet. That is expected:
 There is no Remotion preview in this brief. Brief 166 builds d01 and runs the cue-timing preview.
 
 **Part 3** goes ahead once d01's measured data validates, because it does not depend on brief 166. Stop at the first lesson that fails alignment or the caption export.
+
+## Update (4 November 2026): request budget
+The account is already on Paid Tier 1, and this model is limited to 100 requests a day there. Google raises the tier automatically (Tier 2 needs US$100 total spend and 3 days since the first payment), so there is nothing to change on the account. The request count has to come down instead.
+
+- **One request per scene, not per sentence.** Send the scene's whole pronunciation text in one request. Split the returned audio into sentences only for alignment: run WhisperX one sentence at a time against the text, cutting at the pauses nearest each sentence boundary. Keep one heavy process at a time.
+- **If a scene is too long for one request**, split it into the fewest chunks that fit, breaking at paragraph ends.
+- **Keep what is already saved.** d01 scenes 01 to 13 and the cached sentence of scene 14 stay as they are. Never re-voice an unchanged take.
+- **Budget.** Count the requests before each lesson. Stop for the day before the limit, never on a half-finished scene. Record the requests used per lesson in the hand-in.
+- **Listening.** Whole-scene takes may change pacing between scenes. Flag any audible jump in voice or volume at a scene join for human listening.
