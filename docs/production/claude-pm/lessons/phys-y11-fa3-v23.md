@@ -1,0 +1,354 @@
+# Year 11 Physics FA3 V23 (Physics 2025, Year 11, Focus Area 3): Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values? The combination circuit investigation (design)
+
+Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v23`, `docs/production/student-learning-review.md`), a Codex physics check (including the safety facts) and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: one new (a resistor board, used three times); the bench supply (delivered), the digital multimeter (requested in `phys-y11-fa3-v15.md`, used twice) and the knife switch (requested in `phys-y11-fa3-v18.md`) reused by name; a plotting compass (requested in `phys-y11-fa3-v24.md`) in the handoff only. All data in this video are illustrative and labelled so.
+
+Narration 6,223 characters, 21 scenes, about 570 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
+
+Scope: twenty-third video of the Year 11 Physics (2025) Focus Area 3 route and the combination circuit investigation; it tests what v22 calculated. Templates: `phys-y11-fa3-v15.md` (investigation format: FA0 placement table, risk table showing only the spoken row, illustrative data from a stated model, an inconsistency checked before a reading is replaced), with `phys-y11-fa1-v24.md` and `phys-y11-fa2-v28.md` behind it; FA3 conventions and colour key from `phys-y11-fa3-v01.md` to `phys-y11-fa3-v22.md` (Revision 1; v22's scene 16 frame is this video's first frame); FA3 root decisions 1 to 31 (resistors, not lamps, for ohmic calculations, decision 30; `LoopFlow` the single charge-dot part, decision 31). No pre-design pack exists: the pack work is done in this file (method, illustrative data model, FA0 proposals). Site lesson read (3 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year11/fa3-electricity-and-magnetism/lesson21.sa.html`, activity 1 (measure and compare a combination circuit: a 10 Ω resistor in series with a parallel pair of 20 Ω and 20 Ω from a low-voltage supply; calculate, measure current at different points and voltage across each component, tabulate measured against calculated, account for variation with wire resistance, meter loading and tolerance), card 3 (why measurements differ: wires and switches, meter loading, ±5 % tolerance, temperature, percentage difference), key term "systematic error", misconception 2, last check, fill the blanks, Q1 (reason for variation) and Q3 with its model answer (systematically lower voltages; ohmmeter; high-resistance voltmeter; short leads; repeats). Cards 1 and 2 and `we-1` belong to v22. Route entry: `phys-y11-fa3-v23` in `../../phys-y11-video-route.json` (proposed; coverage "owned-action"). Route start: "Start with Combination circuit investigation. Recall only the signed arithmetic, measurement or earlier physical quantities needed for the listed actions." Route stop: "Complete combination circuit investigation: identify variables and risks, acquire repeated data, analyse graphs or sources, and evaluate limitations. Do not report predictions as observations." Route next (placeholder wording): "phys-y11-fa3-v24: How can I explain and apply magnetic fields and field lines?" (`phys-y11-fa3-v24.md`, designed in the same session, words it "Why do magnetic field lines always form closed loops, and how do they map the field around a magnet, a wire and a loop?").
+
+**Opening frame (v22's actual handoff, Revision 1, 3 Nov).** v22's scene 16 ends with its memory line "Shrink it in, then share it out." small at the top; a bench with the painted bench supply (dial at "6.0 V"), three painted resistor boards with coded value chips "10 Ω", "20 Ω", "20 Ω" laid out as the 10 Ω resistor in series with the 20 Ω pair, coded leads, two painted digital multimeters showing "? A" and "? V"; beside them the HSC diagram with chips "calculated: R_T = ?" and "I = ?"; a grey tag "ideal: no lead resistance, exact resistor values"; chips "will the meters agree?" and "if not, why not?"; chip "Next: Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values?". This video opens on that frame.
+
+Owner rules applied: 2025 syllabus only; no people, hands, faces or body outlines (leads and clips place themselves by code; the supply's dial and the knife switch move by code); apparatus painted at native aspect (supply, multimeters, resistor boards, knife switch, compass); circuit diagrams in HSC symbols with conventional current a bold ink "I" arrow (FA3 root decision 17); readouts, tables, percentage rows and working coded; one reasoning stage at a time; calculations as task, equation and grouped givens with units; 3 s in-teaching predictions; "Pause here to answer." with a 10 s countdown and the full worded question with its data on screen; brief feedback with one crossed mistake (grey scribble, FA3 root decision 10); original HSC-style questions; key-notes hold; Australian spelling; no em dashes; v22 (shrink it in, share it out), v21 (junction rule), v20 (series voltages add), v19 (meter placement; a real ammeter has a small resistance, a real voltmeter a very large one), v15 (zero the meters; check an odd reading before replacing it) and v13 (a warmer resistor resists more) recalled in a phrase each; FA1 v10 (mean and range) recalled in a phrase. Investigation data are illustrative, labelled on screen and said aloud; calculated values are labelled "calculated" and never shown as readings.
+
+Syllabus content point (Physics 11-12 (2025), Year 11, Focus Area 3, group "Electric circuits"; local ledger ID with NESA content-system codename), quoted from the syllabus JSON:
+
+- P25-FA3-G2-22 `ci40cee3de`: "Conduct a laboratory experiment to measure the voltage differences across components and current at different points in a combination circuit of fixed resistance, and account for variation from the calculated values"
+
+Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fabcbab907
+
+Working scientifically points taught in part, just in time (FA0, local ledger IDs with official codenames, quoted from `docs/production/programme/syllabus/phys-new-y11.json`; proposal for root, see the placement section): P25-FA0-G3-02 `ci86146789`, P25-FA0-G3-03 `ci752a2a2f`, P25-FA0-G2-02 `ci6c11c587`, P25-FA0-G5-02 `ci7afa7b23`, P25-FA0-G5-03 `ci914a5e7e`, P25-FA0-G5-05 `ci8856aeb0`, P25-FA0-G5-06 `ci7e38e278`, P25-FA0-G3-01 `ci6e7b9681`, P25-FA0-G2-04 `cif90164e3`.
+
+Source: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fad694c6c2
+
+**Boundary:** starts from v22's handoff (above); the aim; calculate first (v22's method: 20 Ω, 0.30 A, 3.0 V and 3.0 V, 0.15 A in each branch); the circuit built from its diagram; five ammeter points (A to E) and the ammeter moved with the switch off; the voltmeter across the supply and each resistor; what stays the same and why; currents, each read three times (repeats shown once); a prediction (does a branch reading fit the junction rule?); one inconsistent reading caught by the junction rule, its cause checked (a loose clip) and retaken; voltages; measured against calculated as percentage differences: every reading a few per cent low; a prediction (two 20 Ω branches, unequal currents: why?); three causes, each tested (the supply's actual voltage, resistor tolerance measured with the ohmmeter, extra resistance of leads, switch and ammeter); recalculating with measured values; conclusion and memory aid; limitations and improvements; a two-row risk assessment; two attempts. Stops at conducting the experiment and accounting for variation. Not taught: internal resistance of a supply (author note b); power ratings beyond a one-phrase risk control; standard deviation (FA0 videos); new circuit rules.
+
+## Decisions
+
+- **Learner question (route question rewritten; v22's proposal).** Route: "How do measured branch currents and voltages compare with predictions?" Rewritten as one causal question: "Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values?" The answer, built in order: calculate first (2); build and measure (3 to 8); compare: all a few per cent low (9); why the two "equal" branches differ (10); three causes, each checked (11); recalculating with the measured values closes most of the gap, and the leftover matches the extra resistance (12); so real components and meters, not wrong rules, explain the difference (13).
+- **The circuit (site activity 1, values unchanged).** A 10 Ω resistor in series with a parallel pair of 20 Ω and 20 Ω, a low-voltage DC bench supply set to 6.0 V, a knife switch, two digital multimeters (one on amps, one on volts), leads with crocodile clips. Resistors are 5 W wire-wound resistors on boards, each marked with its value and "±5 %" (author note a); the calculated powers (0.90 W and 0.45 W) are not shown (v16's idea; one risk phrase only).
+- **Calculate first (`ci8856aeb0` predictions).** Scene 2 applies v22 in one stage per cue, with a "calculated" column added to the results table: R_p = 10 Ω ("two equal branches act like half of one"), R_T = 20 Ω, I = 0.30 A, V₁ = 3.0 V, V_p = 3.0 V, 0.15 A in each branch. These stay labelled "calculated" throughout; no reading is ever shown in that column.
+- **Five current points (the point's "current at different points").** A: leaving the supply; B: between the 10 Ω resistor and the junction; C: the first 20 Ω branch; D: the second 20 Ω branch; E: returning to the supply after the branches rejoin. One ammeter is moved between points: switch off, open the circuit at that point, insert the ammeter in series (v19's rule), switch on, read, switch off. The voltmeter is connected across the supply's terminals, the 10 Ω resistor and each 20 Ω resistor in turn (in parallel, v19). The ammeter stays at A while voltages are read (author note c).
+- **Controls with reasons (`ci9ce164ec` applied).** The same supply setting; the same resistors in the same places; the switch off between readings, because a warmer resistor resists more (v13); both meters zeroed and on fixed ranges (v15). Each reading taken three times, switching off and on between, and averaged (FA1 v10 mean and range).
+- **Illustrative data (labelled; generating model stated, author note c).** Means of three: supply terminals 5.90 V; currents A 0.285 A, B 0.285 A, C 0.146 A, D 0.140 A, E 0.285 A; voltages across the 10 Ω resistor 2.93 V, across each 20 Ω resistor 2.85 V. Repeats shown once, at A: 0.285, 0.286, 0.285 A (range 0.001 A). Said aloud in 5: "These numbers are illustrative, made up to show the method, not real results." Every table, readout and percentage row carries the grey tag "illustrative data".
+- **Prediction 1 (3 s, scene 6): the junction rule as a check.** D's first mean reads 0.121 A. "Does it fit?" Chips "it fits", "too small", "too big". Answered in 7: 0.146 + 0.121 = 0.267 A, less than the 0.285 A arriving at the junction, so too small. Before replacing it, the cause is checked: the reading flickered when the lead was nudged; the crocodile clip at the ammeter was loose; reclipped and retaken three times: 0.140, 0.140, 0.141 A, mean 0.140 A; now 0.146 + 0.140 = 0.286 A, which agrees with 0.285 A to the meter's last digit. A physics rule is used to catch a bad reading, and the narration says "before replacing it, we checked why" (`ci7afa7b23`, `ci8856aeb0`).
+- **The comparison (`ci914a5e7e`, percentage error).** Percentage difference = (measured − calculated) ÷ calculated × 100 %, one worked row for the main current: (0.285 − 0.30) ÷ 0.30 × 100 = −5.0 %. The other rows fill silently: C −2.7 %, D −6.7 %, 10 Ω voltage −2.3 %, pair voltage −5.0 %. Pattern spoken: every reading is below its calculated value, and the repeats agree to within 0.001 A, far less than the 0.015 A gap, so this is not random reading error; something consistent is lowering them (site key term "systematic error", glossed plainly). The rules still hold for the measured values: A = B = E; C + D ≈ B; the two branch voltages are equal.
+- **Prediction 2 (3 s, scene 10): two "equal" branches.** "Both branch resistors are marked twenty ohms. So why does one carry 0.146 A and the other 0.140 A?" Chips "reading error?", "the resistors aren't equal?", "the branch voltages differ?". Answered in 11: the branch voltages are equal (both 2.85 V), the repeats rule out reading error, so the resistances differ.
+- **Three causes, each tested, not just listed (site card 3; `ci7e38e278`).** (1) The supply: the voltmeter across its terminals reads 5.90 V, not the dial's 6.0 V: dial markings are approximate (−1.7 %); improvement: measure the supply voltage and calculate from that. (2) Tolerance: switched off and taken out of the circuit, the multimeter on its ohms setting reads 10.3 Ω, 19.6 Ω and 20.5 Ω, each within ±5 % of its marking; the 19.6 Ω branch takes the larger current. (3) Extra resistance: the voltages across the resistors add to 5.78 V, 0.12 V less than the supply's 5.90 V; that 0.12 V is across the leads, switch contacts and the ammeter itself, about 0.4 Ω the calculation left out (v19: a real ammeter has a small resistance). The voltmeter's very large resistance (v19) means it draws almost no current, so it is not a cause here (one sentence; the site lists "meter loading" generally, and the design separates the two meters).
+- **Recalculating closes the gap (the payoff of "account for variation").** With the measured values (5.90 V; 10.3 Ω; 19.6 Ω ∥ 20.5 Ω = 10.0 Ω), R_T = 20.3 Ω and I = 0.290 A; the measured 0.285 A is now within 2 %. Adding the 0.4 Ω of leads, switch and ammeter gives 0.285 A: the whole gap is explained. A grey row shows the recalculated column beside the measured one.
+- **Conclusion and memory aid (12, 13).** The series and parallel rules hold for the real readings; the differences come from real components and meters that the ideal calculation leaves out. Memory aid: "The rules are exact. The parts are not." (see "Memory aid check").
+- **Limitations and improvements.** (1) Resistor tolerance: measure each resistance with the ohmmeter and calculate from the measured values (or use ±1 % resistors). (2) Lead, contact and ammeter resistance: short, thick leads, clean, tight clips; include the ammeter's resistance or keep it in place for every reading. (3) Warming: switch off between readings; read quickly. Meter resolution (±0.001 A, ±0.01 V) is much smaller than the differences found, so it is not the main limitation (one sentence).
+- **Risk assessment (`cif90164e3`, `ci6e7b9681` partial).** Two spoken rows, hazard, harm and control: (1) a short circuit if the ammeter is connected across a resistor or the supply instead of in series (overheating leads, a blown meter fuse; switch off before moving the ammeter, check against the diagram, start from 0 V and raise to 6.0 V); (2) warm resistors (burns; use resistors rated well above their power, switch off between readings, let them cool before handling). Only the spoken row is shown; the earlier row collapses to a grey chip.
+- **Attempts (original, HSC style).** (A1, calculate, connect, compare) "A student builds a circuit in which a 15 Ω resistor is connected in series with a parallel pair of 30 Ω resistors. The circuit is connected to a 6.0 V supply. (a) Calculate the current the student should expect through the 15 Ω resistor. (b) Describe how the student should connect an ammeter to measure the current in one of the 30 Ω resistors. (c) The student measures the current through the 15 Ω resistor as 0.19 A. Calculate the percentage difference between the measured and calculated values. (4 marks)" A circuit diagram is printed. Answer: 0.20 A; switch off, break the circuit in that branch next to the resistor and connect the ammeter in series there; −5 % (5 % lower). Crossed: "connect the ammeter across the 30 Ω resistor". (A2, account for variation) "A student connects two resistors, each marked 47 Ω ± 5 %, in parallel across a 6.0 V supply. The measured branch currents are 0.131 A and 0.124 A. Repeated readings of each current agree to within 0.001 A. The student claims the difference between the two currents is caused by random error in reading the ammeter. (a) Evaluate the student's claim. (b) Describe how the student could test a better explanation. (3 marks)" Answer: the claim is not supported: repeats agree within 0.001 A, much less than the 0.007 A difference, so it is a consistent difference; both branches have the same voltage, so the resistances must differ, which the ±5 % tolerance allows; test: switch off, remove each resistor and measure its resistance with an ohmmeter (or swap the resistors and see whether the larger current moves with the resistor). Crossed: "random error, so just take more readings".
+- **Mistake scene:** none separate. "A difference means the experiment failed" (9, 13; site misconception 2); "drop a reading that doesn't fit" (7: check first); "calculated values are results" (labelled "calculated" throughout); "the ammeter goes across the resistor" (A1 crossed; risk row 1); "consistent differences are random error" (A2 crossed).
+- **Handoff (route next; proposal for v24's question).** Board change: the finished circuit on the bench, switch open; a painted plotting compass (`phys-y11-plotting-compass-v1.png`, coded needle pointing north, grey "N" tag) under the straight lead from the supply to point A, the lead running north-south over it. On "close the switch" the knife switch closes, the ammeter reads "0.285 A" and the needle swings about 15° (north end towards west; author note g); on "open it" it swings back. Chips "a current moved a compass?" and "what does its field look like?"; then "Next: Why do magnetic field lines always form closed loops, and how do they map the field around a magnet, a wire and a loop?". This is the frame v24 opens on. The spoken "That completes circuits" marks the end of the electric-circuits strand (site retrieve: "That completes the electric-circuits strand, next we turn to magnetic fields").
+- **Site sources used:** intro ("measure such a circuit in the lab and see how close real readings come", 1); intentions (Know 3: 9, 13; Understand 3: 11; Can Do 3: 2 to 12); key term systematic error (9, glossed); misconception 2 (9, 13); activity 1 (circuit and values: 2 to 8; steps 1 to 4: 2, 5, 8, 9, 11); card 3 (causes: 11; percentage difference: 9; temperature: 4, 14); last check (true: 11); fill the blanks (lower, resistance: 9, 11); Q1 (reason for variation: A1 structure); Q3 and its model answer (systematically lower: 9; ohmmeter, short leads, repeats: 11, 14; high-resistance voltmeter: 11); retrieve and reflect (handoff).
+- **Site corrections:** none new for this video. Suggestions, not errors: (a) activity 1 does not say how to move the ammeter safely; suggest "switch off, open the circuit at the point, and insert the ammeter in series". (b) Card 3 lists "meter loading" for both meters; for a voltmeter of about 10 MΩ across 20 Ω the effect is negligible, so suggest "a real ammeter adds a small resistance; a real voltmeter draws a tiny current (usually negligible)".
+- **Cause chain taught, in order:** (1) calculate first, so there is something to test (2); (2) the meters' places and controls make each reading mean one thing (3, 4); (3) repeats show how much a reading wanders (5); (4) the junction rule catches a bad reading, whose cause is checked before it is replaced (6, 7); (5) every reading is a few per cent low, and the repeats are too close for that to be random (8, 9); (6) equal branch voltages with unequal currents mean unequal resistances (10, 11); (7) the supply's actual voltage, the resistors' tolerance and the extra resistance of leads, switch and ammeter each lower the readings (11); (8) recalculating with measured values closes the gap (12); (9) the rules are exact, the parts are not (13); (10) improvements match the causes (14); (11) risks (15).
+- **Entry knowledge (route `entryKnowledge`):** Stage 5 (simple circuits). From FA1, recalled in a phrase: v10 (mean and range). From FA2: v28 (check an odd reading before replacing it). From FA3: v13 (a warmer resistor resists more), v15 (zero the meters; investigation routine), v19 (ammeter in series with a small resistance; voltmeter in parallel with a very large resistance), v20 and v21 (series and parallel rules), v22 (shrink it in, share it out).
+- **Learner-visible vocabulary (plain meaning at first use):** tolerance (how far a resistor's real value may be from its marking, for example ±5 %, 11); ohmmeter (a multimeter setting that measures resistance, used with the component switched off and out of the circuit, 11); percentage difference (how far the measured value is from the calculated one, as a percentage of the calculated value, 9); systematic difference (a difference in the same direction every time, from a cause that doesn't change, 9).
+- **Legacy logic ported:** none. Drawing parts only: `DataTable` from `src/explainer/lessons/bio-m5-b13/shared.tsx` (row-at-a-time table; copy lesson-local, as v15).
+- **New explainer motion (coded unless a plate is named):** v14's HSC-symbol **`CircuitDiagram`** with v15's **diagram-to-bench build** and v19's ammeter insert animation (reused; the ammeter hops between points A to E, the circuit opening and closing at each); v15's **`MeterDisplay`** (reused, in the multimeter plate's display window, with an "Ω" chip for the ohms setting); v18's knife switch with its coded blade (reused); **point markers** A to E (new: small ink letters on the diagram and the bench, lit when the ammeter is there); **table fill** (columns: quantity, calculated, measured (mean), % difference, recalculated); v15's **inconsistent-reading flag and retake** (amber ring; the strike-through and rewrite); **junction check** (v22's `CurrentSplit` arrows labelled with measured values, the sum row turning amber or ticked); v20's **`VoltageStaircase`** (reused with measured steps, a small 0.12 V step across the leads, switch and ammeter); **percentage row** (new: a signed bar per quantity below a zero line, grey, all below it); **recalculated column** (new: a column that writes in beside the measured one with a "within 2 %" chip); **risk table, one row at a time**; `AlignedAlgebra`; `Countdown` (3 s, 10 s); `QuestionCard` (subject "Physics") with a small table and diagram; `Chip` with `cross` (grey scribble); `KeyNotes`; `Heading`.
+- **Board layout (constant):** heading top-left; the bench (or the diagram) across the upper left; the table under it; the comparison bars or working in the right half.
+- **Colour key:** as v01 to v22: conventional current a bold ink "I" arrow; readings ink; calculated values ink with a "calculated" grey tag; the recalculated column grey-blue outline (not navy fill); the inconsistent-reading ring amber; percentage bars grey; the staircase hollow gold; magnetic field in the handoff not drawn (v24 introduces its plum dashed lines); crossed items grey scribble; plates avoid red and navy except the supply's red terminal (used as delivered, as v12 and v15).
+- **No human figures.** Leads, clips, the switch blade, the ammeter and the dial move by code; no hand appears.
+- **Author notes (not learner copy):**
+  (a) Apparatus: a 0 to 12 V DC bench supply; a knife switch; three 5 W wire-wound resistors on boards with 4 mm sockets, marked 10 Ω, 20 Ω, 20 Ω, ±5 %; two digital multimeters (2 A range, 0.001 A resolution; 20 V range, 0.01 V resolution; 200 Ω ohms range); leads with crocodile clips. Calculated powers 0.30² × 10 = 0.90 W and 0.15² × 20 = 0.45 W, well within 5 W.
+  (b) Data model: supply terminal voltage 5.90 V (treated as fixed; a real supply's voltage also falls a little as it delivers current, which is internal resistance, not taught in Year 11 and not mentioned); actual resistances 10.3, 19.6 and 20.5 Ω; leads and switch 0.20 Ω; ammeter 0.20 Ω. With the ammeter at A: I = 5.90 ÷ (10.3 + 10.02 + 0.40) = 0.2845 A; V₁ = 2.93 V; V_p = 2.85 V; branch currents 0.1456 and 0.1392 A. With the ammeter in a branch, the branch resistance rises by 0.2 Ω and the main current changes by about 0.002 A; the illustrative branch means (0.146, 0.140 A) are rounded from these and agree with B to within the last digit. Voltmeter about 10 MΩ: draws about 0.3 μA across 20 Ω, negligible.
+  (c) Voltages are read with the ammeter at A, so the 0.12 V across leads, switch and ammeter is in the loop the voltmeter readings leave out: 5.90 − (2.93 + 2.85) = 0.12 V; 0.12 ÷ 0.285 ≈ 0.42 Ω, said "about 0.4 Ω".
+  (d) Percentage differences against calculated: main current (0.285 − 0.30)/0.30 = −5.0 %; C −2.7 %; D −6.7 %; V₁ −2.3 %; V_p −5.0 %; supply −1.7 %. Against recalculated (5.90 V, measured R): I 0.290 A, −1.8 %; V₁ 2.99 V, −2.0 %; V_p 2.91 V, −2.0 %; I_C 0.148 A, −1.6 %; I_D 0.142 A, −1.4 %. With the extra 0.42 Ω: 0.2845 A.
+  (e) Tolerance: 10.3 Ω is +3.0 %, 19.6 Ω −2.0 %, 20.5 Ω +2.5 %; all within ±5 % (9.5 to 10.5 Ω; 19 to 21 Ω).
+  (f) The inconsistent reading: a loose crocodile clip adds a contact resistance of a few ohms in that branch (0.121 A in a 20 Ω branch at 2.85 V implies about 23.5 Ω). Retaken: 0.140, 0.140, 0.141 A, mean 0.140 A.
+  (g) Handoff compass: lead about 1 cm above the compass, 0.285 A gives about 6 μT, against a horizontal Earth field of about 25 μT in NSW, so a deflection of about 13°, shown "about 15°". With the current flowing north in a lead above the needle, the field below the lead points west, so the needle's north end swings west. No value or direction is spoken.
+  (h) Pronunciation: "tolerance"; "ohmmeter" (OHM-mee-ter).
+
+Main question: *v22 calculated this circuit exactly. Build it and the meters disagree, by a few per cent. Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values?*
+Entry knowledge (FA1 v10 mean and range; FA2 v28 odd readings; FA3 v13 warm resistors; v15 investigation routine; v19 meters; v20, v21 rules; v22 solving combination circuits).
+Stops after: calculate first; the circuit and meter points; controls; repeated currents and voltages; a bad reading caught by the junction rule and retaken; percentage differences; three causes tested; recalculated values; conclusion; limitations; risks; two attempts. No internal resistance, no new rules.
+Handoff: v24, magnetic fields and field lines.
+
+## FA0 Working scientifically placement (proposal for root)
+
+Route root decision: "FA0 (Working scientifically) skills are taught just in time inside or immediately before the investigation videos (fa1-v10, v15, v24, v31 and the FA2/FA3 investigations)". This video adds to that coverage as follows, marking each as **partial** in the ledger.
+
+| FA0 point (ledger ID, codename) | Exact wording (ledger) | Taught in v23 | Left for later |
+| --- | --- | --- | --- |
+| P25-FA0-G3-02 `ci86146789` | "Construct and manipulate identified materials and technologies to perform scientific investigations" | Scenes 3, 5: a combination circuit built from its diagram; the ammeter moved safely between five points | (continues across FA3) |
+| P25-FA0-G3-03 `ci752a2a2f` | "Use equipment appropriately and systematically to collect and record data, information, evidence and findings" | Scenes 3 to 5, 8, 11: switch off to move the ammeter; meters zeroed on fixed ranges; the ohms setting used with the component out of the circuit; a table with calculated and measured columns | Data logging (later FA3) |
+| P25-FA0-G2-02 `ci6c11c587` | "Explain how reliable primary data is obtained" | Scenes 4, 5, 9: three readings each, switching off between; the repeats' range used to judge whether a difference is real | (continues FA3 v15) |
+| P25-FA0-G5-02 `ci7afa7b23` | "Explain patterns and trends , including inconsistencies in data and information" | Scenes 6, 7, 9, 10: the inconsistent branch reading; the pattern "all a few per cent low"; the unequal branches | (continues across FA3) |
+| P25-FA0-G5-03 `ci914a5e7e` | "Assess error, uncertainty and limitations in data and include calculations of percentage error , range , mean and standard deviation" | Scenes 5, 9: mean and range of repeats; percentage difference from the calculated value; systematic against random | Standard deviation (fa0 videos) |
+| P25-FA0-G5-05 `ci8856aeb0` | "Interpret data and information to identify outliers , make predictions , explain results and draw conclusions" | Scenes 2, 6, 7, 12, 13: calculated predictions; a reading checked against a rule before it is replaced; results explained; the conclusion | (continues across FA3) |
+| P25-FA0-G5-06 `ci7e38e278` | "Evaluate data and information to suggest improvements or further investigations" | Scenes 11, 14: each improvement matched to a tested cause (measure the supply, measure each R, short leads and tight clips) | (continues across FA3) |
+| P25-FA0-G3-01 `ci6e7b9681` | "Apply safe work practices and manage risks while conducting a scientific investigation" | Scene 15: switch off before moving the ammeter; start from 0 V; let resistors cool | Other practices (fa0-v02) |
+| P25-FA0-G2-04 `cif90164e3` | "Assess potential hazards and their associated risks to develop a risk assessment" | Scene 15: two hazard, harm, control rows | Likelihood and consequence rating (fa0-v02) |
+
+Applied, not re-taught: P25-FA0-G2-01 `ci9ce164ec` (what stays the same, with reasons, scene 4), P25-FA0-G4-03 `ci0fca96de` (table and comparison bars), P25-FA0-G5-01 `ci7f1f6fbd` (the measured values obey the series and parallel relationships, 9). Recommendation to root: accept the table and record it in the route as v23's partial FA0 coverage.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key as in Decisions.
+
+### 1. hook (do the meters agree?)
+> Last time, we solved circuits like this one exactly, on paper. Today we build it and measure it. The meters won't agree exactly with the calculation. They'll be a few per cent off. So why do real readings come out close to the calculated values, but not exactly **on** them?
+
+Visual: opens on v22's last frame (see "Opening frame"). The "Next" chip becomes the heading: "The combination circuit investigation"; the memory line fades. On "on paper" the HSC diagram enlarges slightly. On "build it" the multimeter plates pulse. On "a few per cent off" a grey tag "measured vs calculated". On "on" the chips "will the meters agree?" and "if not, why not?" slide to the right column as a two-row plan: "1. calculate", "2. measure and compare".
+
+### 2. calculate first
+> First, the calculation, so we have something to test. The two twenty ohm branches act like ten ohms, so the total is twenty ohms. On six volts, that's point three oh amps from the supply. Each section takes three volts, and the current splits evenly: point one five amps in each **branch**.
+
+Visual: camera continue; the diagram in the upper left, the table under it with columns "quantity", "calculated", "measured (mean)", "% difference" (grey tag on "calculated": "ideal parts"). Rows write in, one per cue: "R_p = 10 Ω" (v22's `CircuitReduce` collapses the pair in the diagram; grey tag "two equal branches: half of one"); "R_T = 20 Ω"; "I = 6.0 ÷ 20 = 0.30 A"; "V₁ = 3.0 V, V_p = 3.0 V"; "I_C = I_D = 0.15 A". The pair un-collapses.
+
+### 3. the circuit, and where the meters go
+> Now build it from the diagram, with a switch to turn it off between readings. We'll read the current at five points: leaving the supply, before the branches, in each branch, and on the way back. The ammeter must be in series, so to move it, we switch off, open the circuit there, and connect it. The voltmeter goes across each part in **turn**.
+
+Visual: camera continue. Diagram-to-bench build (v15): each symbol's painted part slides into place: the supply (`phys-y11-low-voltage-supply-v1.png`), the knife switch (`phys-y11-knife-switch-v1.png`), the three resistor boards (`phys-y11-resistor-board-v1.png`, chips "10 Ω ±5 %", "20 Ω ±5 %", "20 Ω ±5 %"), coded leads drawing in loop order. On "five points" ink markers "A", "B", "C", "D", "E" light on the diagram and the bench. On "switch off" the knife blade lifts; on "open the circuit" a lead unclips at "C"; the ammeter (`phys-y11-digital-multimeter-v1.png`, chip "A") clips in series; the blade closes. On "across each part" the second multimeter (chip "V") clips across the 10 Ω board, then hops to each 20 Ω board.
+
+### 4. what stays the same
+> To make the comparison fair, we keep the supply on the same setting, and the same resistors in the same places. We switch off between readings, because a warm resistor resists more. Both meters are zeroed and stay on the same ranges. And we take every reading three times, and **average**.
+
+Visual: camera continue. A controls panel builds at the right, each with its reason: "same supply setting (6.0 V)"; "same resistors, same places"; "switch off between readings → a warmer resistor resists more" (tag "from the resistance video"); "meters zeroed; fixed ranges" (both `MeterDisplay` readouts "0.000" and "0.00" with ticks); "three readings each → mean".
+
+### 5. the currents
+> These numbers are illustrative, made up to show the method, not real results. At point A, three readings: point two eight five, point two eight six, point two eight five amps. They agree to a thousandth of an amp. Points B and E also average point two eight five. Branch C reads point one four **six**.
+
+Visual: board change: the bench small at the upper left; the table grows a "measured (mean)" column (grey tag "illustrative data"). On "point A" the ammeter at A shows each reading in turn; a small repeats strip "0.285, 0.286, 0.285 → mean 0.285 A; range 0.001 A". On "B and E" the ammeter hops (switch open, clip, switch closed) to B, then E, each "0.285". On "Branch C" it hops into branch C: "0.146".
+
+### 6. prediction: does branch D fit?
+> Branch D's first average is point one two one amps. Use the junction rule to check it. Does it fit, is it too small, or is it too **big**?
+
+Visual: camera continue. The ammeter hops into branch D: "0.121" writes into the table. v22's `CurrentSplit` arrows on the diagram: "0.285 A" in at B, "0.146 A" in C, "0.121 A" in D. On "big" chips "it fits", "too small", "too big" and a 3-second countdown ring.
+
+### 7. a reading that doesn't fit
+> Too small. Point one four six plus point one two one is only point two six seven, but point two eight five arrives at the junction. Before replacing it, we checked why. The reading flickered when the lead was nudged: a crocodile clip was loose. Clipped firmly, it reads point one four oh, and the branches add to point two eight six, which agrees to the last **digit**.
+
+Visual: camera continue. Chip "too small" glows; the others take grey scribble crosses. Row "0.146 + 0.121 = 0.267 A ≠ 0.285 A"; an amber ring circles "0.121" (gloss "inconsistent reading: one that doesn't fit the others"). On "flickered" the `MeterDisplay` jitters between "0.12" and "0.13"; the clip at the ammeter wobbles; grey note "loose clip". On "Clipped firmly" the clip snaps tight; "0.121" strikes through and the repeats strip "0.140, 0.140, 0.141 → 0.140" writes in. On "agrees" row "0.146 + 0.140 = 0.286 A ≈ 0.285 A ✓".
+
+### 8. the voltages
+> Now the voltages, with the ammeter back at A. Across the supply's terminals, five point nine oh volts. Across the ten ohm resistor, two point nine three. Across each twenty ohm resistor, two point eight five. The two branches share the same voltage, just as the parallel rule **says**.
+
+Visual: camera continue. The voltmeter hops: across the supply "5.90 V"; across the 10 Ω board "2.93 V"; across each 20 Ω board "2.85 V", "2.85 V" (repeats not shown; tag "means of three"). Table rows fill. On "same voltage" the two "2.85" cells pulse; v20's `VoltageStaircase` draws over the diagram with measured steps "2.93 V" and "2.85 V".
+
+### 9. measured against calculated
+> Now compare. The main current is point two eight five against a calculated point three oh. Take the difference, divide by the calculated value, and that's five per cent low. Every reading is a few per cent low, and the repeats wander by only a thousandth of an amp, far less than the gap. So this isn't random. Something consistent is pulling every reading **down**.
+
+Visual: board change: the table full width, with the "% difference" column. Row for the main current: "(0.285 − 0.30) ÷ 0.30 × 100 = −5.0 %" (gloss "percentage difference: how far off, as a percentage of the calculated value"). The other cells fill silently: "C −2.7 %", "D −6.7 %", "V₁ −2.3 %", "V_p −5.0 %". On "Every reading" a percentage-bar row builds below a zero line, all bars below it. On "a thousandth" a tiny range bar "±0.001 A" beside the "0.015 A" gap. On "consistent" chip "systematic difference: the same direction every time, from a cause that doesn't change". On "down" small ticks: "A = B = E", "C + D ≈ B", "branch voltages equal" (grey tag "the rules still hold").
+
+### 10. prediction: two "equal" branches
+> Here's a clue. Both branch resistors are marked twenty ohms. So why does one carry point one four six amps, and the other only point one four oh? Is it reading error, unequal resistors, or different branch **voltages**?
+
+Visual: board change: the two branch boards side by side with "20 Ω ±5 %" chips, their ammeter readouts "0.146 A" and "0.140 A" and voltmeter readouts "2.85 V", "2.85 V". On "voltages" chips "reading error?", "unequal resistors?", "different voltages?" and a 3-second countdown ring.
+
+### 11. three causes, each checked
+> Unequal resistors. The voltages are equal, and the repeats rule out reading error. Out of the circuit, the multimeter on ohms reads nineteen point six and twenty point five ohms, and ten point three for the other. Each is within its five per cent tolerance, the amount a real value may differ from its marking. The supply gives five point nine oh volts, not six. And the resistor voltages add to only five point seven eight, so point one two volts is lost across the leads, the switch and the ammeter **itself**.
+
+Visual: camera continue. Chip "unequal resistors?" glows; the others take grey scribble crosses. On "out of the circuit" each board slides off the bench; the multimeter (chip "Ω") clips across it: "19.6 Ω", "20.5 Ω", "10.3 Ω" (tags "within ±5 %"; gloss "tolerance: how far a real value may be from its marking"; "ohmmeter: a multimeter setting for resistance, used with the part out of the circuit"). On "nineteen point six" the 19.6 Ω branch's current arrow thickens slightly ("less R, more I"). The boards slide back. On "five point nine oh" a cause list builds: "1. supply 5.90 V, not 6.0 V (−1.7 %)"; "2. resistors within tolerance, not exact"; on "point one two volts" the staircase shows a small "0.12 V" step at the leads, switch and ammeter: "3. leads, switch, ammeter: about 0.4 Ω extra" (row "5.90 − (2.93 + 2.85) = 0.12 V"). At the end, grey tag (screen only) "voltmeter: very large resistance, draws almost no current: not a cause here (meters video)".
+
+### 12. recalculating with what's really there
+> So recalculate with the measured values: five point nine oh volts, and the resistors as they really are. The predicted current becomes point two nine oh amps, within two per cent of our reading. Add the point four ohms of the leads, switch and ammeter, and it comes out at point two eight five, exactly what we **measured**.
+
+Visual: board change: the table with a "recalculated" column writing in beside "measured": "R_p = 19.6 ∥ 20.5 = 10.0 Ω"; "R_T = 10.3 + 10.0 = 20.3 Ω"; "I = 5.90 ÷ 20.3 = 0.290 A"; chip "within 2 %". On "Add the point four ohms" row "I = 5.90 ÷ 20.7 ≈ 0.285 A ✓"; the measured "0.285" and the new value pulse together.
+
+### 13. conclusion and the memory aid
+> So the series and parallel rules held for every real reading. The differences came from the parts: a supply that's a bit low, resistors that aren't exactly their markings, and extra resistance in the leads and ammeter. The experiment didn't fail. It found what the ideal calculation left out. So remember: the rules are exact. The parts are **not**.
+
+Visual: board change: a conclusion panel builds as spoken: "rules held: A = B = E; C + D = B; branch voltages equal"; "differences: supply 5.90 V; tolerance; lead, switch and ammeter resistance"; "not a failure: explained". On "remember" the handwritten line writes large: "The rules are exact. The parts are not." Hold about 2 seconds.
+
+### 14. limitations and improvements
+> Each cause points to an improvement. Measure each resistor and the supply, then calculate from those values. Use short leads and tight clips, and allow for the ammeter's own resistance. And switch off between readings, so the resistors don't **warm**.
+
+Visual: board change: a limitations list builds, each row with its improvement: "resistor tolerance → measure each R; calculate from measured values"; "supply setting → measure the supply's voltage"; "leads, clips, ammeter → short leads, tight clips, allow for the ammeter"; "warming → switch off between readings". At the end, grey row (screen only) "meter resolution ±0.001 A, ±0.01 V: much smaller than the differences, so not the main limit".
+
+### 15. risk assessment
+> Now the risks. The ammeter has a very low resistance, so connecting it across a resistor or the supply makes a short circuit, and the leads overheat. So switch off before moving it, check against the diagram, and start from zero volts. And resistors get warm, so use ones rated well above their power, and let them **cool**.
+
+Visual: board change: the risk table, one row at a time (hazard, harm, control): "ammeter connected across a resistor or the supply (short circuit) | overheating leads; blown fuse | switch off before moving it; check against the diagram; start from 0 V"; "warm resistors | burns | resistors rated well above their power; switch off between readings; let them cool". Only the spoken row is shown in full; the earlier row collapses to a grey chip "short circuit".
+
+### 16. attempt 1 (countdown, 10 seconds)
+> Your turn. A fifteen ohm resistor is in series with a parallel pair of thirty ohm resistors, on a six volt supply. Calculate the expected current through the fifteen ohm resistor. Describe how to connect an ammeter in one thirty ohm branch. Then, if it measures point one nine amps, find the percentage difference. Pause here to answer.
+
+Visual: board clears. `QuestionCard` (subject "Physics"), worded as printed, with a printed HSC-symbol circuit: "A student builds a circuit in which a 15 Ω resistor is connected in series with a parallel pair of 30 Ω resistors. The circuit is connected to a 6.0 V supply. (a) Calculate the current the student should expect through the 15 Ω resistor. (b) Describe how the student should connect an ammeter to measure the current in one of the 30 Ω resistors. (c) The student measures the current through the 15 Ω resistor as 0.19 A. Calculate the percentage difference between the measured and calculated values. (4 marks)" Tag: "HSC-style question, written for HSCScience". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 17. feedback 1 (brief)
+> The pair acts like fifteen ohms, so the total is thirty, and the current is six over thirty, point two oh **amps**. To measure a branch, switch off, open that branch, and connect the ammeter in series there. Point one nine against point two oh is five per cent low. Connecting the ammeter across the resistor would short it **out**.
+
+Visual: card shrinks to the top; "series", "parallel pair", "6.0 V" and "0.19 A" underlined. Rows: "(a) R_p = 15 Ω; R_T = 30 Ω; I = 6.0 ÷ 30 = 0.20 A", boxed; "(b) switch off; break the branch; ammeter in series with that 30 Ω resistor", boxed, with a small diagram; "(c) (0.19 − 0.20) ÷ 0.20 × 100 = −5 %", boxed. On "short it out" a chip "connect the ammeter across the 30 Ω resistor" fades in and takes a grey scribble cross. Hold about 1 second.
+
+### 18. attempt 2 (countdown, 10 seconds)
+> Last one. Two resistors, each marked forty-seven ohms, plus or minus five per cent, are in parallel. Their currents differ, and repeats agree to a thousandth of an amp. A student blames random reading error. Evaluate the claim, and describe how to test a better explanation. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed, with a small table: "A student connects two resistors, each marked 47 Ω ± 5 %, in parallel across a 6.0 V supply. The measured branch currents are 0.131 A and 0.124 A. Repeated readings of each current agree to within 0.001 A. The student claims the difference between the two currents is caused by random error in reading the ammeter. (a) Evaluate the student's claim. (b) Describe how the student could test a better explanation. (3 marks)" Table: "Branch 1: 0.131 A"; "Branch 2: 0.124 A". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 19. feedback 2 (brief)
+> The claim isn't supported. The repeats agree to a thousandth of an amp, but the currents differ by seven thousandths, every time. Both branches have the same voltage, so the resistances must differ, which the tolerance allows. Switch off, and measure each resistor with an ohmmeter. Taking more readings won't remove a difference that's always **there**.
+
+Visual: card shrinks to the top; the table stays; "47 Ω ± 5 %", "0.001 A" and "random error" underlined. Rows: "(a) 0.007 A ≫ 0.001 A: consistent, not random; same V, so different R (within ±5 %)", boxed; "(b) switch off; measure each R with an ohmmeter (or swap them and see if the larger current follows the resistor)", boxed. On "won't remove" a chip "random error, so just take more readings" fades in and takes a grey scribble cross. Hold about 1 second.
+
+### 20. handoff
+> That completes circuits. But a current does something else too. Put a compass under this lead, and close the switch. The needle swings. Open it, and the needle swings back. So the current makes a magnetic field. What does that field look like, and how do we draw **it**?
+
+Visual: board change: the memory line small at the top. The finished circuit on the bench, switch open; a painted plotting compass (`phys-y11-plotting-compass-v1.png`) with a coded needle pointing north (grey "N" tag) under the straight lead from the supply to A, the lead running north-south over it. On "close the switch" the knife blade closes, the ammeter reads "0.285 A" and the needle swings about 15° (north end towards west; author note g). On "swings back" the blade opens and the needle returns. On "magnetic field" chip "a current moved a compass?"; on "it" chip "what does its field look like?". Then the chip "Next: Why do magnetic field lines always form closed loops, and how do they map the field around a magnet, a wire and a loop?". This is the final frame of the video (series rule). Hold about 2 seconds.
+
+### 21. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Method: calculate first. Measure the current at several points (ammeter in series; switch off to move it) and the voltage across each part (voltmeter in parallel). Repeat each reading and average.
+2. Use the circuit rules as checks: the series current is the same everywhere, branch currents add to the main current, and parallel branches share the same voltage.
+3. Percentage difference = (measured − calculated) ÷ calculated × 100 %. A difference in the same direction every time, larger than the spread of repeats, is systematic.
+4. Causes of variation: resistor tolerance (for example ±5 %); the supply's actual voltage; extra resistance in leads, contacts and the ammeter; resistors warming. A voltmeter's very large resistance makes its effect tiny.
+5. Improvements: measure each resistance (ohmmeter, out of circuit) and the supply voltage, then recalculate; short leads, tight clips; switch off between readings. Risk: never connect an ammeter across a component or the supply.
+
+Memory aid (large, on the notes screen): *The rules are exact. The parts are not.*
+
+At the end the notes cross-fade back to scene 20's final frame (series rule).
+
+## Teaching checks
+
+- **Does it explain causes?** Why calculate first: so the measurement tests something (2). Why the ammeter is moved with the switch off: it must be in series, and moving it opens the circuit (3, 15). Why switch off between readings: a warm resistor resists more (4). Why branch D's first reading is rejected only after a check: it breaks the junction rule, and a loose clip explains it (7). Why the gap isn't random: the repeats wander far less than the gap (9). Why the two "equal" branches differ: same voltage, so different resistance (10, 11). Why every reading is low: a lower supply voltage, slightly higher total resistance from tolerance, and the extra resistance of leads, switch and ammeter (11). Why recalculating closes the gap: it uses what is really there (12).
+- **Misconceptions addressed:** a difference means failure (9, 13; site misconception 2); drop an odd reading (7: check first); calculated values are results (always labelled "calculated"); the ammeter across a resistor (A1 crossed; risk row 1); consistent differences are random (A2 crossed); both meters load the circuit equally (11, voltmeter sentence).
+- **One idea at a time:** prediction by calculation (2), circuit and meters (3), controls (4), currents (5), the bad reading (6, 7), voltages (8), comparison (9), the branch clue (10), causes (11), recalculation (12), conclusion (13), improvements (14), risks (15).
+- **Video makes it easier:** the student sees the ammeter hop safely between five lettered points (3, 5), the junction arrows fail to add until a loose clip is fixed (6, 7), every percentage bar fall below the zero line beside a tiny repeat bar (9), each resistor measured off the bench (11), a small staircase step appear across the leads (11), and the recalculated column land on the measured value (12).
+- **Response opportunity:** two 3 s predictions (6, 10); two unseen HSC-style tasks, 10 seconds each, every condition, the diagram and the data on the card, nothing answer-bearing. One crossed mistake each; feedback about 24 s and 26 s.
+- **Avoided double teaching:** v22's method used in one stage per cue (2); v19's meter rules and resistances recalled in a phrase (3, 11); v20 and v21 rules used as checks only (7, 9); v15's investigation routine (zeroing, checking a reading) recalled in a phrase (4, 7).
+- **Syllabus coverage:** `ci40cee3de`: a laboratory experiment conducted on a combination circuit of fixed resistance (3 to 8), voltage differences measured across each component (8) and current at different points (5 to 7), with variation from the calculated values accounted for (9 to 13), and limitations and risks (14, 15).
+- **Out of scope by design:** internal resistance; power ratings beyond one phrase; standard deviation; magnetism (v24, set up in 20).
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 16; original wording, HSC style, 4 marks suggested, not an official marking scheme).** "A student builds a circuit in which a 15 Ω resistor is connected in series with a parallel pair of 30 Ω resistors. The circuit is connected to a 6.0 V supply. (a) Calculate the current the student should expect through the 15 Ω resistor. (b) Describe how the student should connect an ammeter to measure the current in one of the 30 Ω resistors. (c) The student measures the current through the 15 Ω resistor as 0.19 A. Calculate the percentage difference between the measured and calculated values." (Circuit diagram printed.)
+Model answer: (a) Two equal 30 Ω branches: R_p = 15 Ω; R_T = 15 + 15 = 30 Ω; the 15 Ω resistor is in the main path, so I = V/R_T = 6.0 ÷ 30 = 0.20 A. (b) Switch off; disconnect the lead in that branch next to the 30 Ω resistor and connect the ammeter in series in the gap, so all of that branch's current passes through it; then switch on (expected about 0.10 A). (c) (0.19 − 0.20) ÷ 0.20 × 100 = −5 %: the measured value is 5 % lower than calculated. Classic mistake (crossed): "connect the ammeter across the 30 Ω resistor".
+
+**Attempt 2 (scene 18; original wording, HSC style, 3 marks suggested).** "A student connects two resistors, each marked 47 Ω ± 5 %, in parallel across a 6.0 V supply. The measured branch currents are 0.131 A and 0.124 A. Repeated readings of each current agree to within 0.001 A. The student claims the difference between the two currents is caused by random error in reading the ammeter. (a) Evaluate the student's claim. (b) Describe how the student could test a better explanation."
+Model answer: (a) The claim is not supported. Random reading error would show as scatter between repeats, but the repeats agree to within 0.001 A, while the two currents differ by 0.007 A every time, so the difference is systematic. Both resistors are in parallel, so they have the same voltage; a different current means a different resistance (about 45.8 Ω and 48.4 Ω if the full 6.0 V is across them), which is within the ±5 % tolerance (44.65 Ω to 49.35 Ω). (b) Switch off, remove each resistor and measure its resistance with an ohmmeter; the lower resistance should be in the branch with the larger current. (Or swap the two resistors between branches: if the larger current moves with the resistor, the resistors differ.) Classic mistake (crossed): "random error, so just take more readings".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Circuit (site activity 1) | 10 Ω in series with 20 Ω ∥ 20 Ω; 6.0 V; ±5 % | 1 to 3 |
+| Calculated | R_p = 10 Ω; R_T = 20 Ω; I = 0.30 A; V₁ = V_p = 3.0 V; I_C = I_D = 0.15 A | 2, 9 |
+| Repeats at A (illustrative) | 0.285, 0.286, 0.285 A; mean 0.285 A; range 0.001 A | 5, 9 |
+| Currents (illustrative means) | A, B, E 0.285 A; C 0.146 A; D first 0.121 A (rejected), retaken 0.140, 0.140, 0.141, mean 0.140 A | 5 to 7 |
+| Junction sums | 0.146 + 0.121 = 0.267 A; 0.146 + 0.140 = 0.286 A | 7 |
+| Voltages (illustrative means) | supply 5.90 V; 10 Ω 2.93 V; each 20 Ω 2.85 V; sum 5.78 V; missing 0.12 V | 8, 11 |
+| % differences | I −5.0 %; C −2.7 %; D −6.7 %; V₁ −2.3 %; V_p −5.0 %; supply −1.7 % | 9, 11 |
+| Gap vs spread | 0.015 A vs ±0.001 A | 9 |
+| Measured resistances | 10.3 Ω (+3.0 %), 19.6 Ω (−2.0 %), 20.5 Ω (+2.5 %) | 11 |
+| Extra resistance | 0.12 V ÷ 0.285 A ≈ 0.42 Ω ("about 0.4 Ω") | 11, 12 |
+| Recalculated | R_p = 10.0 Ω; R_T = 20.3 Ω; I = 0.290 A (−1.8 %, "within 2 %"); with 0.42 Ω: R ≈ 20.7 Ω, I ≈ 0.285 A | 12 |
+| Meter resolution | ±0.001 A; ±0.01 V | 14 |
+| A1 | 15 Ω; 30 Ω ∥ 30 Ω = 15 Ω; R_T = 30 Ω; 6.0 V; I = 0.20 A; branch 0.10 A; measured 0.19 A; −5 % | 16, 17 |
+| A2 | 47 Ω ± 5 % (44.65 to 49.35 Ω); 6.0 V; 0.131 A, 0.124 A; difference 0.007 A; repeats 0.001 A; 45.8 Ω, 48.4 Ω | 18, 19 |
+| Handoff | 0.285 A; needle swing about 15° (13° modelled) | 20 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (3 Nov); Codex to re-check.
+
+- Calculated: 1/(1/20 + 1/20) = 10; 10 + 10 = 20; 6.0 ÷ 20 = 0.30; 0.30 × 10 = 3.0; 0.30 × 10 = 3.0; 3.0 ÷ 20 = 0.15.
+- Repeats: (0.285 + 0.286 + 0.285) ÷ 3 = 0.2853 → 0.285; (0.140 + 0.140 + 0.141) ÷ 3 = 0.1403 → 0.140.
+- Sums: 0.146 + 0.121 = 0.267; 0.146 + 0.140 = 0.286; 2.93 + 2.85 = 5.78; 5.90 − 5.78 = 0.12; 0.12 ÷ 0.285 = 0.421.
+- % differences: (0.285 − 0.30)/0.30 = −5.0 %; (0.146 − 0.15)/0.15 = −2.7 %; (0.140 − 0.15)/0.15 = −6.7 %; (2.93 − 3.0)/3.0 = −2.3 %; (2.85 − 3.0)/3.0 = −5.0 %; (5.90 − 6.0)/6.0 = −1.7 %; 0.30 − 0.285 = 0.015.
+- Tolerances: 10.3/10 = +3.0 %; 19.6/20 = −2.0 %; 20.5/20 = +2.5 %; ±5 % bounds 9.5 to 10.5 and 19 to 21.
+- Recalculated: 1/(1/19.6 + 1/20.5) = 10.02; 10.3 + 10.02 = 20.32; 5.90 ÷ 20.32 = 0.2904; (0.285 − 0.2904)/0.2904 = −1.8 %; 0.2904 × 10.3 = 2.99; 0.2904 × 10.02 = 2.91; 2.91 ÷ 19.6 = 0.148; 2.91 ÷ 20.5 = 0.142; 5.90 ÷ (20.32 + 0.42) = 0.2845.
+- Model (author note b): 5.90 ÷ (10.3 + 10.02 + 0.40) = 0.2847; 0.2847 × 10.3 = 2.93; 0.2847 × 10.02 = 2.85; 2.85 ÷ 19.6 = 0.1456; 2.85 ÷ 20.5 = 0.1392. Powers 0.90 W, 0.45 W.
+- A1: 1/(1/30 + 1/30) = 15; 15 + 15 = 30; 6.0 ÷ 30 = 0.20; 0.20 ÷ 2 = 0.10; (0.19 − 0.20)/0.20 = −5 %.
+- A2: 6.0 ÷ 0.131 = 45.8; 6.0 ÷ 0.124 = 48.4; 47 × 0.95 = 44.65; 47 × 1.05 = 49.35; 0.131 − 0.124 = 0.007.
+- Handoff: 2 × 10⁻⁷ × 0.285 ÷ 0.01 = 5.7 × 10⁻⁶ T; arctan(5.7/25) = 12.8°.
+
+## Safety facts check (self-check, 3 Nov; Codex to confirm)
+
+- **Ammeter misconnected.** A digital multimeter on its current range has a very small resistance (a fraction of an ohm); connected across a resistor it bypasses it, and across the supply it draws a very large current: leads can overheat and the meter's fuse blows. Controls: switch off before moving the ammeter; insert it only by opening the circuit; check against the diagram; start at 0 V and raise to 6.0 V. Learner copy as scene 15.
+- **Warm resistors.** At 0.90 W a 5 W wire-wound resistor warms noticeably but stays safe; a small 0.25 W resistor would overheat. Controls: resistors rated well above their power; switch off between readings; let them cool before handling. Learner copy as scene 15 ("rated well above their power"; power is v16's idea, recalled in a phrase).
+- **Low voltage.** A low-voltage DC supply; no mains at the bench, so no shock row (teacher note only).
+- **Ohmmeter use.** Resistance is measured with the circuit switched off and the resistor removed (or one end disconnected), so the meter is not driven by the supply and other parts don't affect the reading. Learner copy as scene 11.
+
+## Memory aid check
+
+- **"The rules are exact. The parts are not."** Written for this lesson. Meaning, as said in scene 13: the series and parallel rules (same current in series, currents add at junctions, the same voltage across parallel branches, voltages add around a loop) hold for the real readings; the differences from the calculation come from real parts that are not their ideal values (supply voltage, tolerance, lead and meter resistance). Assumptions checked: "exact" holds within meter resolution for steady currents in this circuit (the checks in 7 and 9 agree to the last digit); "the parts" includes leads, contacts and the ammeter, said in 11 and 13; it does not claim that measurement has no random error (the repeats show a little, 5). Introduced after the recalculation (12, 13).
+- **Considered, not used:** the site's lesson 21 hook (v22's site correction 1; v22's aid "Shrink it in, then share it out" is recalled in 2 only by its method).
+
+## Narration length estimate
+
+Revision 1 count (3 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,223 characters** (6,243 joined), 21 scenes. Characters per scene (1 to 21): 270, 286, 340, 285, 298, 134, 365, 281, 362, 215, 508, 320, 345, 247, 320, 336, 324, 296, 350, 266, 75. At 13.3 characters per second the speech is about 468 s; add about 14 s of holds and settling (the build in 3, the ammeter hops in 5 and 6, the retake in 7, the ohmmeter readings in 11, the recalculated column in 12), the 2-second memory hold, the compass swing and 2-second handoff hold (about 3 s), 6 s for two prediction countdowns, 20 s for two attempt countdowns, 2 s of feedback holds and about 54 s more of the quiet notes hold (about 102 s of holds): **about 570 s**, at the owner's cap. Feedback 1 is about 24 s and feedback 2 about 26 s. A first draft at 6,705 characters (about 605 s) was trimmed by 482 characters: the voltmeter sentence (11) and the meter-resolution sentence (14) moved to screen-only rows, and scenes 2, 3, 7, 9, 12, 13, 15 and 18 were tightened. If the voiced preview runs long, the first cut is scene 4's last sentence (about 60 characters; the panel row stays), then scene 8's last sentence (about 75 characters; the cells still pulse), then open decision 3's shorter handoff (about 150 characters).
+
+## Scene list and build ids
+
+Lesson key `p-y11-fa3-v23` (route phys-y11-fa3-v23). Suggested explainer folder `src/explainer/lessons/phys-y11-fa3-v23` and build folder `docs/production/claude-pm/lessons/p-y11-fa3-v23` (root to confirm).
+
+In order (kebab-case; 21 scene headings, all `### N.`): hook, calculate-first, circuit-and-meters, controls, currents, junction-prediction, inconsistent-reading, voltages, compare, branch-prediction, three-causes, recalculate, conclusion-memory-aid, limitations, risk-assessment, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). junction-prediction and branch-prediction carry 3 s countdowns inside explain scenes. Transitions (`pickTransition`): v22's last frame continues into scene 1 (camera continue: the bench, diagram and meters carry over); 1 to 2 to 3 to 4 camera continue; 4 to 5 board change (bench small, table); 5 to 6 to 7 to 8 camera continue; 8 to 9 board change (table full width); 9 to 10 board change; 10 to 11 camera continue; 11 to 12 board change; 12 to 13 board change; 13 to 14 board change; 14 to 15 board change; attempts and feedback card shrink to the top; 19 to 20 board clear; 20 to 21 fade to the notes board, and 21 cross-fades back to 20's final frame.
+
+Holds: junction-prediction and branch-prediction (3 s), attempt-1, attempt-2 (10 s after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/p-y11-fa3-v23-learning-review.md`, `science_check` = `checks/p-y11-fa3-v23-physics-check.md`.
+
+## Assets
+
+Checked first (3 Nov): `public/assets/physics/` holds the bench supply (`phys-y11-low-voltage-supply-v1.png`) and FA1 plates; no meter, resistor, switch or compass plate is delivered. Reused by name (uniform scaling only, never stretched):
+- `phys-y11-low-voltage-supply-v1.png` (delivered; 1 to 15, 20; its knob is v12's coded dial).
+- `phys-y11-digital-multimeter-v1.png` (requested in `phys-y11-fa3-v15.md`; two copies, 1 to 15, 20; its sidecar places `MeterDisplay` and the A, V or Ω chip).
+- `phys-y11-knife-switch-v1.png` with its blade layer (requested in `phys-y11-fa3-v18.md`; 3 to 15, 20).
+- `phys-y11-plotting-compass-v1.png` (requested in `phys-y11-fa3-v24.md`; 20 only; needle coded).
+
+New (requested below): `phys-y11-resistor-board-v1.png` (three copies; 3 to 15, 20; also v22's handoff).
+
+Considered, not used: crocodile-clip lead plates (coded, as v12 and v15); a breadboard (harder to read at video scale, and the site's practical uses separate components); a lamp (FA3 root decision 30: resistors for ohmic calculations).
+
+Coded: the HSC diagram, point markers, leads, clips, meter readouts, the table, the repeats strips, the amber ring, the current arrows, the staircase, the percentage bars, the recalculated column, the risk table, the compass needle, working.
+
+Kit gaps (for the build brief): **point markers** and the ammeter hop between them (extends v19's insert animation); **percentage bars**; **recalculated column**; reused: v15's diagram-to-bench build, `MeterDisplay` and inconsistent-reading flag, v18's knife switch blade, v20's `VoltageStaircase`, v22's `CircuitReduce` and `CurrentSplit`.
+
+## Codex asset brief (Year 11 Physics FA3 v23, combination circuit investigation)
+
+Same house style and rules as v01's brief (soft painted realism, gentle top-left light, transparent PNG with a true alpha channel, no text, numerals or brand marks, no people or hands, never stretched). Save to `public/assets/physics/`.
+
+1. `phys-y11-resistor-board-v1.png`: a school resistor board, three-quarter view from slightly above with a top-left light: a small pale wooden or light grey plastic base about three times as long as it is wide, two brass 4 mm socket terminals near each end, and between them a wire-wound power resistor (a plain off-white ceramic rectangular body with two short metal leads to the terminals). No colour bands, no printed value, no text or numerals (values are coded chips). About 1200 px wide. Sidecar `phys-y11-resistor-board-v1.json`: both terminal centres, the resistor body's rectangle (for a coded value chip and a warm tint), in plate pixels.
+
+Acceptance: true transparency, no halo; no text, numerals, symbols or brand marks; no red or navy; correct proportions; not stretched. The multimeter (`phys-y11-fa3-v15.md`), knife switch (`phys-y11-fa3-v18.md`) and plotting compass (`phys-y11-fa3-v24.md`) requests are unchanged.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and every value in the narration, screen text, tables, attempts and key notes against the "Numbers used" table.
+2. Confirm the physics and method claims: an ammeter goes in series and is moved with the switch off by opening the circuit; a voltmeter goes in parallel; a real ammeter adds a small resistance and a real voltmeter of very large resistance draws a negligible current here; a warmer resistor resists more; resistor tolerance of ±5 % allows the measured values; branch currents must add to the main current and parallel branches share the same voltage; the voltages across the resistors add to less than the supply's terminal voltage by the voltage across the leads, switch and ammeter; recalculating with the measured supply voltage and resistances, then adding about 0.4 Ω, reproduces the measured current.
+3. Confirm the safety facts (see the section above).
+4. Confirm no internal resistance, no new circuit rule and no power value is taught.
+5. Confirm every data item carries "illustrative data" and the narration says so in scene 5; confirm calculated values are always labelled "calculated" and never shown as readings.
+6. Confirm both attempt questions are original in wording, carry every condition and their data, and give nothing away.
+7. Confirm the syllabus and FA0 quotes match the syllabus JSON exactly and no 2017-syllabus label appears.
+8. Confirm the opening frame matches `phys-y11-fa3-v22.md` scene 16, and the handoff matches `phys-y11-fa3-v24.md`'s opening frame; confirm the compass deflection direction (author note g).
+9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
+10. Confirm the narration character count by script with the build parser rules.
+
+## YouTube metadata (draft)
+
+Title: Combination Circuit Practical: Measured vs Calculated | Year 11 Physics
+
+(Title length: 71 characters.)
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year11/fa3-electricity-and-magnetism/lesson21.sa.html
+
+Calculate a combination circuit, then build it and measure it. Move the ammeter safely between five points, read the voltage across each part, and use the junction rule to catch a reading that doesn't fit. Every real reading comes out a few per cent low: find out why by testing the supply, the resistors' tolerance and the leads, then recalculate with what's really there. Limitations, improvements and risks included. Two exam-style questions at the end.
+
+Year 11 Physics (2025 syllabus), Focus Area 3: Electricity and magnetism.
+Syllabus content (NSW Physics 11-12, 2025):
+"Conduct a laboratory experiment to measure the voltage differences across components and current at different points in a combination circuit of fixed resistance, and account for variation from the calculated values" (ci40cee3de)
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fabcbab907
+
+Builds on: Combination circuits (previous video). Next: Magnetic fields and field lines.
+
+#Year11Physics #Physics #Circuits #PhysicsPractical #HSCScience
+
+## Open decisions
+
+- **1. Learner question.** The design rewrites the route's question as "Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values?" (v22's chip). Root to enter it.
+- **2. v24's question (proposal).** The handoff chip uses `phys-y11-fa3-v24.md`'s question "Why do magnetic field lines always form closed loops, and how do they map the field around a magnet, a wire and a loop?".
+- **3. The handoff compass.** It bridges the electric-circuits strand to magnetism with a real observation; no direction or field value is spoken. If root prefers a clean break, scene 20 becomes a short "That completes circuits" line with the bench fading (about 150 characters fewer) and v24's hook carries the compass alone.
+- **4. Data model.** Illustrative and tagged; the physics check confirms that a 0.4 Ω total for leads, switch contacts and a DMM's current range is plausible (author note b), or adjusts it with the matching values.
+- **5. Route refinement (root to record).** Start "Begin at v22's unconnected bench with the site's 10 Ω and 20 Ω ∥ 20 Ω circuit; calculate first"; stop "Stop at measured currents and voltages compared with calculated values, three causes tested, recalculation, limitations and risks; hand magnetism to v24". Entry knowledge should add v19 and v22.
+- **6. Site link form.** As FA1 v08 (the site's practical is in lesson 21).
+
+## Review notes
+
+- Revision 1 next steps: student learning review (trace from v22 at Year 11 entry; check that calculating first makes the comparison purposeful; that the junction check reads as a use of physics, not a trick; that "systematic" is understood from the repeat bar, not just named; that each cause is tested, not listed; that the attempts give nothing away), then the Codex physics check (with the safety facts) and error check.
+- The ammeter hopping between lettered points (3, 5), the junction arrows failing and then adding (6, 7), the percentage bars below the line (9), the resistors measured off the bench (11) and the recalculated column landing on the measurement (12) carry the explanation; judge them at playback speed in the voiced preview.
