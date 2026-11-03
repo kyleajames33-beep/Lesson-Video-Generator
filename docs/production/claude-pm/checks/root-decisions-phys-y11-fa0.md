@@ -1,0 +1,18 @@
+# Root decisions: Year 11 Physics (2025 syllabus), Focus Area 0 Working scientifically
+
+The FA1 Physics root decisions files apply to FA0 unless an item below changes them. Decision 14 in `root-decisions-phys-y11-fa1-v01-v12.md` is extended by item 1.
+
+## v01 to v07 (4 November 2026)
+1. **Placement.** The playlist runs fa1-v14, fa0-v01, v02, v03, v04, v05, fa1-v15, fa0-v07, fa1-v16, and later fa1-v30, fa0-v06, fa1-v31. Questioning, planning, conducting, processing and analysing form one block in the syllabus order and share one data thread (the falling ball, then the paper cones). Each FA0 final frame opens the next video. v05 ends on fa1-v14's final frame, so fa1-v15 opens unchanged.
+2. **Frame alignment applied.** v04's handoff sentence and chip now name fa0-v05's question ("Next, we analyse the evidence and ask how sure we can be."). Its incline readings are tagged "from an incline investigation (illustrative data)", since fa1-v24 comes later. v05's bridge take now opens on v04's final frame: "Last time, we turned raw readings into usable evidence. Now, what does that evidence really show?" v04's proposal to sit before fa1-v24 is superseded.
+3. **Neighbour edits applied.** fa1-v15 opens "In the force and mass video, every number was perfect." fa1-v31 opens "In the momentum video, theory said...". Both are bridge sentences only. v15's uncertainty lines and v31's first mention of precision become short recalls when Revision 3 is next opened; until then they stand as reinforcement.
+4. **v02.** The steel-ball control run is accepted, framed as "the factor being tested is missing" (the air barely pushes on the ball), with the author note that it checks the method. Ethics at Year 11 covers honest records, consent for data about people and honest claims; the depth study takes it further.
+5. **v03.** The single frame-to-time conversion (133 frames to 0.554 s) in the control check is accepted, ahead of v04.
+6. **v05.** All eight Analysing data points stay in one video. If the learning review finds the prefixes and significant figures scenes rushed, they split into a short video placed after v04. Standard deviation uses the sample form (divide by n minus 1), 2.9 ms. v05's meanings of precise, accurate, reliable and valid are the course definitions; the error checks confirm the other Physics videos match them.
+7. **v06.** Road values (1.5 s reaction time, 7.0 and 4.0 m s⁻² braking) stay tagged as assumed typical values; the science check may substitute a sourced figure. The cricket ball and air-track plates go in the same Codex plate batch.
+8. **v07.** "Solutions" in `ci9fda93ae` is recorded as covered for practices and conclusions. fa3-v29's FA0 table credits the referencing style to fa0-v04, not v07. Title: the 52-character option.
+9. **Plates.** New: `phys-y11-paper-cone-set-v1.png`, `phys-y11-paper-circle-slit-v1.png` (v02, v03), `phys-y11-scissors-v1.png` (v03), plus v01's two. Everything else is reused by filename.
+10. **Route.** Root enters each rewritten learner question in `phys-y11-video-route.json`.
+
+## FA3 v27 (4 November 2026)
+11. **v27** keeps the axis model and the sand-pile analogy (the fallback stays listed). It ends without a memory line so its final frame matches v28's opening. The two coil plates (wide, spread) are requested; coded ghost coils are the fallback. The site's μ₀nI misquote and the two width claims go to the site corrections log.

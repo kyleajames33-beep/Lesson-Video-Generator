@@ -87,7 +87,7 @@ Applied, not re-taught (earlier videos taught them): P25-FA0-G2-01 `ci9ce164ec` 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key (as v24, v29 and v30): measured points and their bars ink; the best-fit line teal; the model line dashed grey and labelled "model prediction"; the ghost line (proportional loss) dashed terracotta; the outlier ringed muted red; momentum bars magenta; kinetic energy blue; the light-gate beam red while unbroken and dark while broken; givens navy; working ink; the "illustrative data" tag grey on every data item; crossed items muted red with a scribble cross.
 
 ### 1. hook (equal, less or more?)
-> Last time, theory said the total momentum before a collision equals the total after. But real gliders feel a little air drag, and no track is perfectly level. So when we measure a real collision, will the total momentum after come out equal, a little less, or a little **more**?
+> In the momentum video, theory said the total momentum before a collision equals the total after. But real gliders feel a little air drag, and no track is perfectly level. So when we measure a real collision, will the total momentum after come out equal, a little less, or a little **more**?
 
 Visual: opens on v30's last frame (the air track with gliders A and B, two light gates, the launcher, the boxed "Σmv before = Σmv after" with a grey "?" and the chip "measured?"). The "Next" chip becomes the heading "The collision investigation". On "air drag" faint coded air lines under the gliders and a tiny grey arrow "drag" on A; on "level" a coded level-bubble readout flickers off centre and back. On "more" chips "equal?", "a little less?", "a little more?" and a 3-second countdown ring.
 

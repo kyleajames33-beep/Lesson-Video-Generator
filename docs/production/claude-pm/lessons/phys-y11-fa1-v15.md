@@ -77,7 +77,7 @@ Handoff: v16, forces on accelerating objects.
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Board layout (three zones, constant, as v10): top-left the short question and a method rail ("1 set-up, 2 cancel friction, 3 variables, 4 repeats, 5 series A, 6 series B, 7 conclude, 8 stay safe"); the centre is the bench (a pale bench strip) or a graph; the right third holds the current card, one at a time. Colour key as Decisions. At most three bright text items. No people, hands or faces.
 
 ### 1. hook (how close is close enough?)
-> Last video, every number was perfect. Double the net force, double the acceleration. Real measurements never land exactly on a line, though. If your points miss the line by a little, does that disprove Newton's second law, or not? Let's find out how close is close **enough**.
+> In the force and mass video, every number was perfect. Double the net force, double the acceleration. Real measurements never land exactly on a line, though. If your points miss the line by a little, does that disprove Newton's second law, or not? Let's find out how close is close **enough**.
 
 Visual: opens on v14's last frame (the boxed law, the two "fixed" lines, the grey bench outlines). The chip becomes the heading: "Testing F_net = ma with measured data". On "perfect" the boxed "a ∝ F_net" glows and a ghost graph shows four points exactly on a line through the origin. On "Real measurements" the points shift slightly off the line (to series A's means), grey tag "illustrative data (simulated)". On "miss the line" two of the gaps get small amber brackets. On "enough" a chip "close enough?" writes beside the graph. The bench outlines stay at the bottom.
 
