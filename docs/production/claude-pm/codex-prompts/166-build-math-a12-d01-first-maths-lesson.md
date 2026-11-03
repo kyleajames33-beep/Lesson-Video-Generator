@@ -5,7 +5,7 @@ Read these first:
 - `docs/production/motion-design-standard.md` and `docs/visual-design-handbook.md`;
 - briefs 125, 135, 143 and 148.
 
-This is a code build. Claude reviews the preview afterwards. Do not spawn sub-agents. Make no commits.
+This is a code build of Claude's design, not a design task. The design file is the specification. Build each scene, visual, cue, colour and layout exactly as it is written. Do not add, drop, restyle or reinterpret anything. Where the design is silent or unclear, stop and list the question in the hand-in rather than inventing an answer. Claude reviews the stills and the preview, and nothing moves on without Claude's approval. Do not spawn sub-agents. Make no commits.
 
 **Inputs**
 - **Design:** `docs/production/claude-pm/lessons/math-a12-d01.md`. It is at Revision 3 and passed its error check.
