@@ -50,3 +50,15 @@ Hand in to `status.md` with:
 - d01's preview findings;
 - one line per voiced lesson (characters, seconds, cost, cue-timing result);
 - anything that needs human listening.
+
+## Update (3 November 2026, after the first progress report)
+None of the Maths or Year 11 lessons is built in Remotion yet. That is expected: in this pipeline we voice first, then build the scenes from the measured narration (see brief 125). Change Parts 2 and 3 as follows.
+
+**Part 2 now.** Voice `math-a12-d01` and write its measured lesson data in the form brief 125's builds read (`<key>/measured/lesson.json`, with scene ids, durations and word timings). Validate three things:
+- the alignment on every scene;
+- the caption export;
+- that the scene durations match the design's holds.
+
+There is no Remotion preview in this brief. Brief 166 builds d01 and runs the cue-timing preview.
+
+**Part 3** goes ahead once d01's measured data validates, because it does not depend on brief 166. Stop at the first lesson that fails alignment or the caption export.
