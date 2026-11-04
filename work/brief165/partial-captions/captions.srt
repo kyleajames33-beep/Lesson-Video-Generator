@@ -1,0 +1,803 @@
+1
+00:00:00,302 --> 00:00:02,395
+Here's the curve y equals e to the
+
+2
+00:00:02,556 --> 00:00:02,596
+x.
+
+3
+00:00:03,583 --> 00:00:06,013
+Squash it sideways, and you get y equals
+
+4
+00:00:06,033 --> 00:00:07,258
+e to the two x.
+
+5
+00:00:08,062 --> 00:00:10,009
+Or slide it one unit left, and you
+
+6
+00:00:10,029 --> 00:00:12,058
+get y equals e to the x plus
+
+7
+00:00:12,178 --> 00:00:12,298
+one.
+
+8
+00:00:13,061 --> 00:00:14,607
+At x equals zero,
+
+9
+00:00:15,169 --> 00:00:17,779
+which new curve do you think is steeper?
+
+10
+00:00:18,384 --> 00:00:19,316
+Hold on to your guess.
+
+11
+00:00:19,883 --> 00:00:20,552
+Here's the twist.
+
+12
+00:00:21,441 --> 00:00:23,247
+Only one of them puts a new factor
+
+13
+00:00:23,369 --> 00:00:25,296
+into its derivative, and it might not be
+
+14
+00:00:25,316 --> 00:00:25,999
+the one you'd pick.
+
+15
+00:00:26,661 --> 00:00:29,209
+By the end, you'll know why, and how
+
+16
+00:00:29,550 --> 00:00:32,137
+to differentiate k e to the a x
+
+17
+00:00:32,177 --> 00:00:32,679
+plus b.
+
+18
+00:00:33,350 --> 00:00:34,261
+Two quick reminders.
+
+19
+00:00:34,968 --> 00:00:36,912
+The gradient at a point is the slope
+
+20
+00:00:36,933 --> 00:00:39,399
+of the tangent there, the line the secants
+
+21
+00:00:39,460 --> 00:00:41,645
+settle onto as the second point slides in.
+
+22
+00:00:42,450 --> 00:00:44,260
+And e to the x is its own
+
+23
+00:00:44,302 --> 00:00:44,784
+derivative.
+
+24
+00:00:45,388 --> 00:00:47,475
+On the graph, that means at every point,
+
+25
+00:00:47,596 --> 00:00:50,225
+the gradient equals the height, the y value.
+
+26
+00:00:50,928 --> 00:00:53,618
+Where the curve is one unit high, the
+
+27
+00:00:53,699 --> 00:00:55,264
+tangent's slope is one.
+
+28
+00:00:56,189 --> 00:00:58,719
+Where it's about two point seven high, the
+
+29
+00:00:58,761 --> 00:01:00,065
+slope is about two point seven.
+
+30
+00:01:00,669 --> 00:01:02,697
+Height and gradient always match,
+
+31
+00:01:03,200 --> 00:01:04,264
+and that's our measuring stick.
+
+32
+00:01:05,104 --> 00:01:06,036
+Now squash it.
+
+33
+00:01:06,681 --> 00:01:08,809
+In e to the two x, x gets
+
+34
+00:01:08,910 --> 00:01:11,098
+doubled before the exponential acts.
+
+35
+00:01:11,801 --> 00:01:14,792
+So the new curve reaches every height in
+
+36
+00:01:14,993 --> 00:01:16,379
+half the sideways distance.
+
+37
+00:01:17,143 --> 00:01:18,857
+Watch this tangent triangle.
+
+38
+00:01:19,542 --> 00:01:22,454
+It runs across one unit and rises about
+
+39
+00:01:22,595 --> 00:01:23,378
+two point seven.
+
+40
+00:01:24,122 --> 00:01:26,837
+Squash the curve, and the triangle squashes with
+
+41
+00:01:26,878 --> 00:01:26,938
+it.
+
+42
+00:01:27,622 --> 00:01:29,894
+The rise stays the same, but the run
+
+43
+00:01:30,255 --> 00:01:30,738
+halves.
+
+44
+00:01:31,462 --> 00:01:34,134
+Same rise, half the run, so the slope
+
+45
+00:01:34,234 --> 00:01:35,138
+is twice as steep.
+
+46
+00:01:35,801 --> 00:01:38,835
+The whole curve squashed evenly, so that's true
+
+47
+00:01:38,875 --> 00:01:39,518
+at every point.
+
+48
+00:01:40,202 --> 00:01:41,995
+At height one, the slope is now two.
+
+49
+00:01:42,841 --> 00:01:45,367
+The gradient is always two times the height,
+
+50
+00:01:45,788 --> 00:01:47,593
+so the derivative of e to the two
+
+51
+00:01:47,753 --> 00:01:49,738
+x is two e to the two x.
+
+52
+00:01:50,748 --> 00:01:53,415
+Squash by three, and every run shrinks to
+
+53
+00:01:53,456 --> 00:01:56,304
+a third, so every slope is three times
+
+54
+00:01:56,325 --> 00:01:56,765
+as steep.
+
+55
+00:01:57,408 --> 00:01:59,476
+The derivative of e to the three x
+
+56
+00:01:59,758 --> 00:02:01,444
+is three e to the three x.
+
+57
+00:02:02,108 --> 00:02:04,979
+What about a negative number, like e to
+
+58
+00:02:05,000 --> 00:02:06,144
+the minus two x?
+
+59
+00:02:06,868 --> 00:02:08,955
+The minus also flips the curve in the
+
+60
+00:02:09,177 --> 00:02:11,545
+y axis, so it falls instead of rising.
+
+61
+00:02:12,349 --> 00:02:15,642
+Every uphill tangent becomes a downhill one, just
+
+62
+00:02:15,703 --> 00:02:16,044
+as steep.
+
+63
+00:02:16,849 --> 00:02:19,342
+So the gradient is minus two times the
+
+64
+00:02:19,383 --> 00:02:19,583
+height.
+
+65
+00:02:20,409 --> 00:02:23,501
+The height stays positive, because e to any
+
+66
+00:02:23,562 --> 00:02:24,565
+power is positive.
+
+67
+00:02:25,050 --> 00:02:26,923
+It's only the slope that turns negative.
+
+68
+00:02:27,584 --> 00:02:28,598
+Now the slide.
+
+69
+00:02:29,121 --> 00:02:31,129
+E to the x plus one is the
+
+70
+00:02:31,210 --> 00:02:33,318
+same curve moved one unit left.
+
+71
+00:02:34,163 --> 00:02:35,696
+Sliding doesn't tilt anything.
+
+72
+00:02:36,522 --> 00:02:38,873
+Each tangent just slides along with its point,
+
+73
+00:02:39,235 --> 00:02:39,939
+keeping its slope.
+
+74
+00:02:40,561 --> 00:02:42,266
+So the gradient still equals the height,
+
+75
+00:02:42,767 --> 00:02:44,271
+and the derivative of e to the x
+
+76
+00:02:44,291 --> 00:02:46,437
+plus one is just e to the x
+
+77
+00:02:46,457 --> 00:02:46,939
+plus one.
+
+78
+00:02:47,644 --> 00:02:48,354
+Back to your guess.
+
+79
+00:02:49,141 --> 00:02:51,648
+At x equals zero, the slid curve is
+
+80
+00:02:51,708 --> 00:02:54,516
+about two point seven high, so its slope
+
+81
+00:02:54,596 --> 00:02:55,619
+is about two point seven.
+
+82
+00:02:56,422 --> 00:02:58,854
+The squashed curve is only one high there,
+
+83
+00:02:59,095 --> 00:02:59,859
+with a slope of two.
+
+84
+00:03:00,482 --> 00:03:02,792
+So the slid curve is steeper at zero
+
+85
+00:03:03,094 --> 00:03:04,138
+only because it's higher.
+
+86
+00:03:04,822 --> 00:03:07,396
+What matters is how the gradient compares with
+
+87
+00:03:07,416 --> 00:03:07,818
+the height.
+
+88
+00:03:08,482 --> 00:03:10,757
+Last change: stretch the curve upwards.
+
+89
+00:03:11,562 --> 00:03:13,812
+Three e to the x makes every height
+
+90
+00:03:14,013 --> 00:03:15,058
+three times taller.
+
+91
+00:03:15,843 --> 00:03:17,516
+Look at the tangent triangle.
+
+92
+00:03:18,361 --> 00:03:21,510
+The run doesn't change, but the rise is
+
+93
+00:03:21,670 --> 00:03:22,653
+three times bigger,
+
+94
+00:03:23,154 --> 00:03:24,979
+so the slope is three times steeper.
+
+95
+00:03:25,581 --> 00:03:28,353
+That's the Year 11 constant multiple rule: the
+
+96
+00:03:28,393 --> 00:03:29,699
+three comes along for the ride.
+
+97
+00:03:30,261 --> 00:03:32,569
+And notice, the gradient still equals the height,
+
+98
+00:03:32,830 --> 00:03:34,978
+because both grew by the same factor of
+
+99
+00:03:35,058 --> 00:03:35,299
+three.
+
+100
+00:03:35,941 --> 00:03:38,672
+So k scales everything, but only a changes
+
+101
+00:03:38,692 --> 00:03:40,178
+the gradient compared with the height.
+
+102
+00:03:40,708 --> 00:03:42,940
+Now let's prove it, with the Year 11
+
+103
+00:03:43,042 --> 00:03:43,564
+chain rule.
+
+104
+00:03:44,168 --> 00:03:46,681
+Take y equals e to the a x
+
+105
+00:03:46,822 --> 00:03:47,324
+plus b.
+
+106
+00:03:48,028 --> 00:03:49,573
+Call the inside part u,
+
+107
+00:03:50,196 --> 00:03:52,685
+so u equals a x plus b.
+
+108
+00:03:53,368 --> 00:03:53,627
+Then y
+
+109
+00:03:54,310 --> 00:03:55,332
+equals e to the u,
+
+110
+00:03:55,975 --> 00:03:57,397
+and since that's its own derivative,
+
+111
+00:03:57,900 --> 00:03:59,864
+d y by d u is e to
+
+112
+00:03:59,905 --> 00:04:00,145
+the u.
+
+113
+00:04:00,988 --> 00:04:03,335
+The inside part's derivative, d u by d
+
+114
+00:04:03,517 --> 00:04:05,603
+x, is just a, because the b is
+
+115
+00:04:05,644 --> 00:04:06,145
+a constant.
+
+116
+00:04:06,708 --> 00:04:08,294
+The chain rule multiplies them:
+
+117
+00:04:08,978 --> 00:04:10,383
+e to the u, times a.
+
+118
+00:04:11,328 --> 00:04:13,335
+Put the inside part back, and you get
+
+119
+00:04:13,657 --> 00:04:15,824
+a e to the a x plus b.
+
+120
+00:04:16,588 --> 00:04:18,495
+The b stays in the power, but it
+
+121
+00:04:18,596 --> 00:04:19,820
+adds nothing to the factor,
+
+122
+00:04:20,383 --> 00:04:21,145
+just like the slide.
+
+123
+00:04:21,889 --> 00:04:23,900
+And with k out the front, k just
+
+124
+00:04:24,042 --> 00:04:24,544
+rides along.
+
+125
+00:04:25,104 --> 00:04:25,694
+Let's use it.
+
+126
+00:04:26,301 --> 00:04:29,133
+Differentiate y equals e to the three x.
+
+127
+00:04:31,261 --> 00:04:33,893
+The inside part is three x, and its
+
+128
+00:04:33,953 --> 00:04:35,058
+derivative is three.
+
+129
+00:04:35,721 --> 00:04:38,050
+So keep e to the three x exactly
+
+130
+00:04:38,110 --> 00:04:38,512
+as it is,
+
+131
+00:04:39,114 --> 00:04:40,439
+and multiply by three.
+
+132
+00:04:40,981 --> 00:04:43,856
+The derivative is three e to the three
+
+133
+00:04:44,017 --> 00:04:44,158
+x.
+
+134
+00:04:44,924 --> 00:04:45,714
+Check it on the graph.
+
+135
+00:04:46,320 --> 00:04:48,808
+At x equals zero, the curve is one
+
+136
+00:04:48,968 --> 00:04:51,837
+unit high, and its slope is three, three
+
+137
+00:04:51,877 --> 00:04:52,499
+times the height.
+
+138
+00:04:53,327 --> 00:04:53,895
+One trap.
+
+139
+00:04:54,582 --> 00:04:56,212
+Don't bring the power down like you would
+
+140
+00:04:56,292 --> 00:04:57,198
+for x cubed.
+
+141
+00:04:57,761 --> 00:04:59,687
+That rule needs x in the base, and
+
+142
+00:04:59,747 --> 00:05:00,008
+here
+
+143
+00:05:00,529 --> 00:05:02,816
+x is in the power, so the exponential
+
+144
+00:05:02,997 --> 00:05:03,619
+stays whole.
+
+145
+00:05:04,390 --> 00:05:05,622
+Now all three constants.
+
+146
+00:05:06,308 --> 00:05:06,790
+The task:
+
+147
+00:05:07,314 --> 00:05:09,585
+find f prime of minus three.
+
+148
+00:05:10,188 --> 00:05:13,098
+The function is f of x equals five
+
+149
+00:05:13,299 --> 00:05:15,085
+e to the two x plus six.
+
+150
+00:05:15,868 --> 00:05:17,173
+So k is five,
+
+151
+00:05:18,017 --> 00:05:18,739
+a is two and
+
+152
+00:05:19,523 --> 00:05:20,205
+b is six.
+
+153
+00:05:20,748 --> 00:05:23,862
+Copy the exponential, then multiply by k and
+
+154
+00:05:24,064 --> 00:05:24,204
+a.
+
+155
+00:05:24,988 --> 00:05:27,575
+Five times two is ten, so f prime
+
+156
+00:05:27,616 --> 00:05:29,782
+of x is ten e to the two
+
+157
+00:05:29,904 --> 00:05:30,464
+x plus six.
+
+158
+00:05:31,310 --> 00:05:32,882
+Now substitute minus three.
+
+159
+00:05:33,548 --> 00:05:36,637
+Two times minus three, plus six, is zero,
+
+160
+00:05:37,220 --> 00:05:38,342
+and e to the zero is one.
+
+161
+00:05:39,769 --> 00:05:41,961
+So f prime of minus three is ten.
+
+162
+00:05:43,068 --> 00:05:45,894
+On the graph, it's five high there with
+
+163
+00:05:45,935 --> 00:05:48,541
+a slope of ten, twice the height, as
+
+164
+00:05:48,822 --> 00:05:50,365
+a equals two predicts.
+
+165
+00:05:51,010 --> 00:05:52,383
+Here's one way to remember it.
+
+166
+00:05:52,988 --> 00:05:55,216
+Think of the power, a x plus b,
+
+167
+00:05:55,739 --> 00:05:57,305
+as the playback speed of the curve.
+
+168
+00:05:58,072 --> 00:05:58,981
+a is the speed.
+
+169
+00:05:59,728 --> 00:06:02,156
+Play it twice as fast, and the curve
+
+170
+00:06:02,217 --> 00:06:04,364
+rises twice as fast at every height.
+
+171
+00:06:05,109 --> 00:06:07,484
+Play it backwards, and it falls instead.
+
+172
+00:06:08,108 --> 00:06:10,055
+b just starts the playback at a different
+
+173
+00:06:10,116 --> 00:06:12,324
+point, so it adds no rate factor.
+
+174
+00:06:13,048 --> 00:06:15,717
+And k makes the whole picture bigger, so
+
+175
+00:06:15,818 --> 00:06:17,764
+heights and slopes grow together.
+
+176
+00:06:18,468 --> 00:06:18,909
+In short,
+
+177
+00:06:19,411 --> 00:06:22,743
+copy the exponential, then multiply by k and
+
+178
+00:06:22,844 --> 00:06:23,264
+by a.
+
+179
+00:06:26,121 --> 00:06:26,527
+Your turn.
+
+180
+00:06:27,155 --> 00:06:30,121
+Differentiate f of x equals four e to
+
+181
+00:06:30,162 --> 00:06:32,748
+the two x minus one, then find f
+
+182
+00:06:33,110 --> 00:06:34,131
+prime of a half.
+
+183
+00:06:35,137 --> 00:06:36,248
+Pause here to answer.
+
+184
+00:06:46,961 --> 00:06:49,291
+The inside part is two x minus one,
+
+185
+00:06:49,753 --> 00:06:51,039
+with derivative two.
+
+186
+00:06:51,721 --> 00:06:51,941
+So f
+
+187
+00:06:52,623 --> 00:06:55,269
+prime of x is four times two, e
+
+188
+00:06:55,811 --> 00:06:57,675
+to the two x minus one, which is
+
+189
+00:06:57,836 --> 00:06:59,319
+eight e to the two x minus one.
+
+190
+00:06:59,901 --> 00:07:01,987
+At a half, the power is zero, and
+
+191
+00:07:02,067 --> 00:07:04,073
+e to the zero is one, so f
+
+192
+00:07:04,114 --> 00:07:05,819
+prime of a half is eight.
+
+193
+00:07:06,602 --> 00:07:08,813
+If you got four, you dropped the factor
+
+194
+00:07:08,833 --> 00:07:09,858
+of two from the inside.
+
+195
+00:07:11,714 --> 00:07:12,261
+Last one.
+
+196
+00:07:12,948 --> 00:07:16,060
+A curve has equation y equals three e
+
+197
+00:07:16,141 --> 00:07:17,184
+to the minus two x.
+
+198
+00:07:17,928 --> 00:07:20,314
+Find its gradient at x equals zero,
+
+199
+00:07:20,937 --> 00:07:23,283
+and explain why the curve is decreasing for
+
+200
+00:07:23,464 --> 00:07:23,945
+every x.
+
+201
+00:07:24,690 --> 00:07:25,921
+Pause here to answer.
