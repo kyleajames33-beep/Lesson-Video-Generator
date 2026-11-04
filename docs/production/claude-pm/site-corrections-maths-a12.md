@@ -867,3 +867,19 @@ Evidence: `work/brief153/t02-calculations.py`.
 ### 105. Random variables lesson 7: standard deviation does not order all central probabilities
 
 **Location:** `random-variables/lesson07.sa.html`, short-answer Q3(b). Smaller standard deviation alone does not prove a larger proportion of values within a fixed distance of a centre without a distribution-shape assumption. For example, a line with standard deviation 2 can have 90% of its observations exactly at 50, whereas standard deviation 0.2 alone gives only a lower bound on the share within 0.5. Ask which is *likely* to produce more if the shapes are comparable, or provide a shape assumption. Reviewed for brief 162, 4 November 2026.
+
+### 106. Random variables lesson 8: relative-frequency bars are not density heights
+
+**Location:** `random-variables/lesson08.sa.html`, card 09. The statement that the earlier relative-frequency histogram was already a density picture is only true after rescaling each bar's height by its class width. A class with relative frequency 0.35 and width 0.1 s has density height 3.5 per second, not 0.35. Show the rescaling before equating bar areas with probabilities. Confirmed by brief 162, 4 November 2026.
+
+### 107. Random variables lesson 9: histogram height terminology
+
+**Location:** `random-variables/lesson09.sa.html`, card 02. “Bar heights were relative frequency per class, which is density” conflates a probability with a rate per unit x. The density is relative frequency divided by class width; the density bar's *area* equals relative frequency. Confirmed by brief 162, 4 November 2026.
+
+### 108. Random variables lesson 10: quantile uniqueness qualification
+
+**Location:** `random-variables/lesson10.sa.html`, card 02. Non-decreasing continuous `F` ensures that a target cumulative probability between 0 and 1 is attained, but does not ensure a unique value when `F` is flat. Add that uniqueness requires `F` strictly increasing on the relevant part of the support. Brief 162, 4 November 2026. Minor wording clarification.
+
+### 109. Random variables lesson 9: continuous mode phrasing
+
+**Location:** `random-variables/lesson09.sa.html`, card 06. Calling the mode the “most likely region” mixes a value and a region. Define the mode as the value where density is greatest; equal-width small neighbourhoods around a higher-density point have greater approximate probability. Brief 162, 4 November 2026.
