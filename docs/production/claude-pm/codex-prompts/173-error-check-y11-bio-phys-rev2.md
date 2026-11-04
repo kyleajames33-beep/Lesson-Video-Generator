@@ -21,3 +21,14 @@ Read `00-standing-rules.md` and brief 160 first, and use its method and file for
 Write `checks/y11b-fa2-vNN-error-check.md`, `checks/y11b-fa3-vNN-error-check.md`, `checks/p-y11-fa2-vNN-error-check.md` and `checks/p-y11-fa3-vNN-error-check.md`. Plates for these designs may be painted only after a clean error check.
 
 **Hand-in:** to `status.md`, one line per design: clean, or the findings.
+
+**Source checks added by root (5 November 2026).** Settle these, or confirm the written fallback is used:
+- Biology FA2 v25: the review-article text;
+- FA2 v31: any published correction of Leone 2022's insulin unit;
+- FA3 v18: the AGAR community-onset denominators and hospitals (v18 stays held from voicing until then);
+- FA3 v22: the Knapp and others (2005) dispersal-dating case;
+- FA3 v30: a named rabbit-disease study;
+- FA3 v31: a western NSW drought figure;
+- Physics FA3 v29: whether any steel value is presented as published data.
+
+Plate request for the next plate brief: `phys-y11-house-front-v1.png` (front view, shared by Physics FA3 v17 and v18).

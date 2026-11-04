@@ -57,3 +57,21 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 34. **Length.** v30 (5,338) and v31 (5,120) are accepted. v32 ends Focus Area 3 and the Year 11 Biology course on a "Focus Area 3 complete" frame with no Next chip.
 35. **v31's dingo fence** stays, with the dingo used only as a present-day predator. There is no dingo plate and nothing about its arrival or history (item 9 still holds that). The ready replacement scene is used only if the owner holds all dingo content.
 36. **Wording.** v30 drops "always" from the site's lag hook. v31 says predators usually hold numbers below what the food would support, while lasting changes in resources move K. v32 says washed-off marks make the estimate too high (a bias, not scatter). v32's recall of v28 uses N = M × C ÷ R, which matches v28.
+37. **Brief 163 repairs, v01 to v32 (5 November 2026; v05 and v16 still on cultural hold).** All findings are resolved at Revision 2. The agent's alternative fixes are accepted:
+- v03 and v04 wording;
+- v06 at +12;
+- v17 keeps the ramp and staircase line and funds the fix with another cut;
+- v18 drops the sentence rather than repeating the earlier one;
+- v23 uses its listed reserve cuts;
+- v29 gains a new controlled germination comparison.
+
+**Length growth without a cut is accepted** for v20 (+147), v25 (+43), v27 (+57), v29 (+135), v30 (+57), v31 (+173) and v32 (+28); most were below the 5,500 guide and all stay under 570 s. v24 has no reserve cuts left, and v26 sits at about 570 s.
+
+**Voicing hold:** v18 must not be voiced until the AGAR surveillance figures (community-onset denominators and hospitals) are read from the source. If they cannot be confirmed, use one of open decision 0's two written fallbacks.
+
+**Open source checks**, carried in brief 173:
+- v22: the exact case in Knapp and others (2005);
+- v30: a named rabbit-disease study;
+- v31: a western NSW drought figure.
+
+Each design keeps its written fallback until its source is checked. Next: brief 173 error check.
