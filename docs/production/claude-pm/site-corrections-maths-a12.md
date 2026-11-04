@@ -851,3 +851,19 @@ Evidence: `work/brief153/t02-calculations.py`.
 ### 101. Financial mathematics lesson 13: maximum borrowing rounding
 
 **Location:** `financial-mathematics/lesson13.sa.html`, worked problem 2. The unrounded maximum principal is $488,658.786235..., so the displayed approximately $488,659 is a nearest-dollar estimate and exceeds the mathematical budget by about 21 cents. If the answer is intended as an achievable maximum, state the rounding convention and round down to $488,658.78 in whole cents, or $488,658 in whole dollars. Confirmed by brief 161, 4 November 2026.
+
+### 102. Random variables lesson 6: uniform distribution coincidence
+
+**Location:** `random-variables/lesson06.sa.html`, trap 02. The claim that `P(15)` is `1/5`, “not `15/75`”, presents mathematically equal fractions as different answers. The numerical coincidence hides the faulty size-weighting method. Use `P(25)` instead: the faulty `25/75 = 1/3` differs from the correct `1/5`. Independently recalculated for brief 162, 4 November 2026.
+
+### 103. Random variables lesson 7: cancellation of deviations
+
+**Location:** `random-variables/lesson07.sa.html`, card 03. The claim that the raw signed departures from the mean “always sum to zero” is false without probability weights. The page's example has unweighted sum `-0.8`, while the weighted sum is zero. State that the departures cancel *when weighted by their probabilities*. Independently recalculated for brief 162, 4 November 2026.
+
+### 104. Random variables lesson 7: variance compared with mean
+
+**Location:** `random-variables/lesson07.sa.html`, problem 2 step 4. A variance larger than the mean is not a signal of an error; the quantities also have different units. The worked insurance example has mean 210 and variance 1,285,900. Replace this advice with the valid check that a variance cannot be negative. Independently recalculated for brief 162, 4 November 2026.
+
+### 105. Random variables lesson 7: standard deviation does not order all central probabilities
+
+**Location:** `random-variables/lesson07.sa.html`, short-answer Q3(b). Smaller standard deviation alone does not prove a larger proportion of values within a fixed distance of a centre without a distribution-shape assumption. For example, a line with standard deviation 2 can have 90% of its observations exactly at 50, whereas standard deviation 0.2 alone gives only a lower bound on the share within 0.5. Ask which is *likely* to produce more if the shapes are comparable, or provide a shape assumption. Reviewed for brief 162, 4 November 2026.

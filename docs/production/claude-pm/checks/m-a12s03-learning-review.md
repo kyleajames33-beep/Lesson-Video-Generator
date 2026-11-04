@@ -1,0 +1,11 @@
+# m-a12s03 learning review
+
+Revision 1 source review, 4 November 2026. No voiced or animated preview was available.
+
+The opening matches s02's fair-die balance-question handoff. The reasoning is coherent for a student who knows discrete distributions: repeated rolls introduce the long-run meaning of expectation; expected counts derive the weighted mean; weighted signed deviations cancel; squaring explains the variance; and expanding the square derives the shortcut. The insurance application distinguishes a positive long-run mean from a large single-policy spread. Both attempts keep their conditions visible without giving away the result. The final continuous-bars question matches the s04 opening specified in the design.
+
+1. **Should fix:** The teaching-check prose claims “why 1.7 is left of 1.5”, which reverses the order of these numbers. The actual scene correctly places the balance at 1.7; correct this author note to avoid a misleading instruction during the build. This is an author-note correction, not a narration change.
+2. **Should fix:** Scene 2 shows exact simulated checkpoints (3.496 after 1,000 rolls and 3.491 after 2,000), but the first four rolls are listed and the full 2,000-roll sequence is not part of the named build evidence. Reconstruct or preserve a reproducible sequence with those checkpoint sums before animating the trace; do not imply it is a recorded experiment if invented to fit the result.
+3. **Should fix:** Scene 5 uses “typical distance” for standard deviation. Keep the qualifier grounded in this distribution, since one standard deviation does not universally contain most probability. The scene specifically checks 0.7 here, which makes that local claim valid.
+
+The balance-point and variance animations are doing explanatory work rather than decorating formulas. The quick formula is taught after the underlying square calculation, and the memory aid retains the probability-weighted meaning. Root decision 55 names the required shared probability parts. No separate pack or adopted route entry was found, so the draft route remains for root approval. About 5,664 narration characters and 529 seconds, within the cap. Count: 0 blockers, 3 should fix, 0 optional.
