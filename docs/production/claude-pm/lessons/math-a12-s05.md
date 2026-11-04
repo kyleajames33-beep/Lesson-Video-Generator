@@ -1,6 +1,6 @@
 # Maths A12 S05: How does a density determine its CDF and probabilities? f(x) = F′(x), probability as area, the two properties of a density, and moving between f and F (design)
 
-Status: Revision 1 (3 Nov 2026), overnight queue wave H4. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer` with `domain` intervals, `DerivativeTracer` in paired mode, `TangentTriangle` with `ReadoutPanel`, `NumericDial`, `IntegralNotation`, `AlignedAlgebra`, `ExpressionSlot`, `Chip` with `cross`, `QuestionCard`, `Countdown`, `KeyNotes`), the integral parts proposed in `math-a12-i06.md` and `math-a12-i08.md` (`AreaFill`, `RiemannStrips`, `AccumulationTracer`), and the continuous parts proposed in `math-a12-s04.md` (`ClassHistogram`, `CdfSubtraction`). One new part is specified under "Codex asset brief" (`StripRiseRatio`). Nothing recorded; human listening pending.
+Status: Revision 2 (4 Nov 2026), brief 162 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov 2026), overnight queue wave H4. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer` with `domain` intervals, `DerivativeTracer` in paired mode, `TangentTriangle` with `ReadoutPanel`, `NumericDial`, `IntegralNotation`, `AlignedAlgebra`, `ExpressionSlot`, `Chip` with `cross`, `QuestionCard`, `Countdown`, `KeyNotes`), the integral parts proposed in `math-a12-i06.md` and `math-a12-i08.md` (`AreaFill`, `RiemannStrips`, `AccumulationTracer`), and the continuous parts proposed in `math-a12-s04.md` (`ClassHistogram`, `CdfSubtraction`). One new part is specified under "Codex asset brief" (`StripRiseRatio`). Nothing recorded; human listening pending.
 
 Narration 5,692 characters, 16 scenes, about 520 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -11,9 +11,9 @@ Owner rules applied: new 2024 syllabus only, content points cited by codename an
 Syllabus content points (Mathematics Advanced 11-12 (2024), Year 12, Random variables; NESA content-system codenames, official `code` field empty), quoted from `../../programme/syllabus/maths-advanced-2024-y12-crosswalk.json`:
 
 - `cicf91daa4`: "Define a probability density function (PDF), f(x) , for a random variable X with cumulative distribution function F(x) as f(x)=F'(x) and recognise that P(a<X<b)=∫_{a}^(b)f(x)dx"
-- `ci660140f9`: "Recognise the properties of a probability density function: f(x)≥0 for all x in the domain of f(x), and ∫_{a}^(b)f⁡(x)dx=1 if the domain of f(x) is [a,b] , or ∫_{-∞}^(∞)f⁡(x)dx=1 if the domain of f(x) is all real x"
+- `ci660140f9`: "Recognise the properties of a probability density function: f(x)≥0 for all x in the domain of f(x), and ∫_{a}^(b)f(x)dx=1 if the domain of f(x) is [a,b] , or ∫_{-∞}^(∞)f(x)dx=1 if the domain of f(x) is all real x"
 - `ci7d5b28b0`: "Apply the properties of a probability density function to solve problems and justify conclusions"
-- `cic6439f2a`: "Obtain the cumulative distribution function using the formula F(x)=∫_{a}^(x)f(t)dt where f(x) is a given probability density function defined on the interval [a,b]"
+- `cic6439f2a`: "Obtain the cumulative distribution function using the formula F(x)=∫_{a}^(x)f(t)dt where f(x) is a given probability density function defined on the interval (a,b]"
 - `cibf3988c1`: "Find the probability density function from a given cumulative distribution function"
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4579cc54
@@ -263,9 +263,9 @@ Where a cumulative distribution function climbs steeply, values of X are packed 
 Mathematics Advanced 11-12 (2024 syllabus), Year 12, statistics and probability.
 Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Define a probability density function (PDF), f(x) , for a random variable X with cumulative distribution function F(x) as f(x)=F'(x) and recognise that P(a<X<b)=∫_{a}^(b)f(x)dx"
-"Recognise the properties of a probability density function: f(x)≥0 for all x in the domain of f(x), and ∫_{a}^(b)f⁡(x)dx=1 if the domain of f(x) is [a,b] , or ∫_{-∞}^(∞)f⁡(x)dx=1 if the domain of f(x) is all real x"
+"Recognise the properties of a probability density function: f(x)≥0 for all x in the domain of f(x), and ∫_{a}^(b)f(x)dx=1 if the domain of f(x) is [a,b] , or ∫_{-∞}^(∞)f(x)dx=1 if the domain of f(x) is all real x"
 "Apply the properties of a probability density function to solve problems and justify conclusions"
-"Obtain the cumulative distribution function using the formula F(x)=∫_{a}^(x)f(t)dt where f(x) is a given probability density function defined on the interval [a,b]"
+"Obtain the cumulative distribution function using the formula F(x)=∫_{a}^(x)f(t)dt where f(x) is a given probability density function defined on the interval (a,b]"
 "Find the probability density function from a given cumulative distribution function"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4579cc54
 
@@ -275,7 +275,7 @@ Builds on: Continuous random variables and the CDF (previous video); definite in
 
 ## Open decisions
 
-- **1. Syllabus quote form (maths check).** The crosswalk text for `cicf91daa4`, `ci660140f9` and `cic6439f2a` carries linear MathML with odd spacing and an invisible function-application character (U+2061) in "f⁡(x)". The quotes here copy it exactly; the YouTube description may need the clean linear form ("∫_a^b f(x) dx = 1") if the invisible character causes problems in the upload tool. Root to decide once for s04 to s09.
+- **1. Syllabus quote form (maths check).** The crosswalk text for `cicf91daa4`, `ci660140f9` and `cic6439f2a` carries linear MathML with odd spacing and an invisible function-application character (U+2061) in "f(x)". The quotes here copy it exactly; the YouTube description may need the clean linear form ("∫_a^b f(x) dx = 1") if the invisible character causes problems in the upload tool. Root to decide once for s04 to s09.
 - **2. Spoken "F prime of x" (voice pilot).** Series form from d10 onwards; listed for the brief 124 pilot with "f of t, d t".
 - **3. Density histogram (learning review).** Scene 3 rescales s04's histogram; confirm the "same area, new height" move is clear without a separate class-width explanation.
 
@@ -283,3 +283,7 @@ Builds on: Continuous random variables and the CDF (previous video); definite in
 
 - Revision 1 has had no independent review. Next: student learning review (trace from s04 and i08 entry knowledge; check that the equal strips make "packing" visible before f is defined; that the narrowing strip is the evidence for f = F′; that "a density can be bigger than 1" is earned by the area labels; that each property has its reason; that the dial shows why k = 1/8; that the dummy variable reason is clear; that "0 elsewhere" comes from the flat pieces; that the tank aid's assumptions are not over-claimed; that the attempt cards give nothing away), then the Codex maths check and error check.
 - The strips, the rescaling bars, the k dial and the accumulation sweep carry the explanation; judge them at playback speed in the voiced preview, not from stills. Readouts must be computed from the same functions as the curves.
+
+## Revision 2 (4 November 2026, brief 162 repairs)
+
+Invisible U+2061 removed from the quotes (root decision 56); `cic6439f2a` quote corrected to the official (a,b]. No narration change. Narration now 5,692 characters (counted by the build parser rules). No em dashes.
