@@ -1,6 +1,6 @@
 # Year 11 Physics FA3 V05 (Physics 2025, Year 11, Focus Area 3): Why does the same electric field push a proton and an electron with equal force, but in opposite directions? (design)
 
-Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v05`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: one new (oil drop).
+Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v05`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: one new (oil drop).
 
 Narration 5,391 characters, 16 scenes, about 505 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate"). Below 5,500 by design: one syllabus point, fully taught; not padded (open decision 6).
 
@@ -131,7 +131,7 @@ Visual: card shrinks to the top; "east" and "west" underlined. Rows: "q = F ÷ E
 Visual: `QuestionCard`, worded as printed (no diagram): "An oil drop of mass 3.2 × 10⁻¹⁵ kg is held stationary in a uniform electric field of strength 4.9 × 10⁴ N C⁻¹ directed vertically upwards. (a) Calculate the magnitude of the charge on the drop, and state its sign. (b) Determine how many electrons the drop has gained or lost. (Take g = 9.8 m s⁻² and e = 1.6 × 10⁻¹⁹ C.) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 14. feedback 2 (brief)
-> The drop is still, so the electric force balances its weight. m g is three point one times ten to the minus fourteen newtons, upward. So q is F over E: six point four times ten to the minus nineteen **coulombs**. The force is up, along the upward field, so the drop is **positive**. Divide by e, and that's four electrons **lost**. Saying it gained four would make it **negative**.
+> The drop is still, so the electric force balances its weight. Its weight, m g, is three point one times ten to the minus fourteen newtons, down, so the electric force is the same size, upward. So q is F over E: six point four times ten to the minus nineteen **coulombs**. The force is up, along the upward field, so the drop is **positive**. Divide by e, and that's four electrons **lost**. Saying it gained four would make it **negative**.
 
 Visual: card shrinks to the top; "held stationary" and "vertically upwards" underlined. A small free-body sketch on the drop (W down, F up, equal). Rows: "F = mg = 3.2 × 10⁻¹⁵ × 9.8 = 3.1 × 10⁻¹⁴ N"; on "coulombs" "(a) q = 3.1 × 10⁻¹⁴ ÷ 4.9 × 10⁴ = 6.4 × 10⁻¹⁹ C"; on "positive" "force along E: positive", boxed; on "lost" "(b) n = 6.4 × 10⁻¹⁹ ÷ 1.6 × 10⁻¹⁹ = 4: four electrons lost", boxed. On "negative" a chip "gained 4 electrons" fades in and takes a grey scribble cross. Hold about 1 second.
 
@@ -285,3 +285,8 @@ Builds on: Electric field strength and the inverse square law (previous video). 
 
 - Revision 1 next steps: student learning review (trace from v04 at Year 11 entry; check that F = qE feels built from E rather than announced; that the sign flip lands from the q slider; that the uniform field sentence is enough without plates; that the acceleration race doesn't distract from force; that the balanced drop is not too big a step from FA1; that the attempts give nothing away), then the Codex physics check and error check.
 - The coulomb tiles (2), the arrow flipping through zero (3), the acceleration race (7) and the matching drop forces (8) carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (5 November 2026, brief 164 repairs)
+
+- Should fix 1 (both reviews): feedback 2 no longer attaches "upward" to m g. It now says "Its weight, m g, is three point one times ten to the minus fourteen newtons, down, so the electric force is the same size, upward." The free-body sketch (W down, F up), the rows, the positive sign and the four-electrons-lost result are unchanged.
+- Narration count: 5,465 characters (build parser rule), about 509 s with the stated holds (59 characters longer than the reviewed 5,406; within the cap).

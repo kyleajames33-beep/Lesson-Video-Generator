@@ -1,6 +1,6 @@
 # Year 11 Physics FA3 V03 (Physics 2025, Year 11, Focus Area 3): How does a charge push and pull across empty space, and how does that build into a lightning strike? (design)
 
-Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v03`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: four new (thundercloud, ground strip, ice crystal, soft hailstone); v01's balloon and wool cloth, v02's polythene rod, metal sphere stand and paper scraps, and FA1's retort stand and boss crossbar reused by name.
+Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v03`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: four new (thundercloud, ground strip, ice crystal, soft hailstone); v01's balloon and wool cloth, v02's polythene rod, metal sphere stand and paper scraps, and FA1's retort stand and boss crossbar reused by name.
 
 Narration 6,026 characters, 17 scenes, about 553 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -88,9 +88,9 @@ Visual: board change: a coded point charge (red disc with "+") centre left; labe
 Visual: the positive charge returns. The probe sits at three distances along one line; its amber arrows shrink sharply with distance (author note b; no numbers). At the same three spots, short ticks across neighbouring lines show their spacing growing. Chip "closer lines: stronger field". On "same in every direction" the probe circles at a fixed distance and its arrow length stays constant. On "dimensions" the 3D spoke turn (lines on a wireframe sphere rotate once) and flatten back to the slice (tag "a slice through the field").
 
 ### 5. the rules for field lines
-> That gives us the rules for field lines. Lines start on positive charges and end on negative charges. The arrows show the direction of the force on a positive test charge. Closer lines mean a stronger field. A bigger charge gets more lines. And lines never cross, because the field can only point one way at each spot. A test charge at a crossing would have to be pushed two ways at **once**.
+> That gives us the rules for field lines. Lines start on positive charges and end on negative charges, or run off the edge of the picture. The arrows show the direction of the force on a positive test charge. Closer lines mean a stronger field. A bigger charge gets more lines. And lines never cross, because the field can only point one way at each spot. A test charge at a crossing would have to be pushed two ways at **once**.
 
-Visual: right column, one rule per sentence, each with a small teal sketch: "start on +, end on −"; "arrow = force on a + test charge"; "closer = stronger"; "bigger charge, more lines" (a +2 charge with 24 lines beside a +1 with 12); "never cross". On "two ways" two lines are forced to cross in a sketch; a red "+" probe at the crossing gets two amber arrows in different directions, then the sketch takes a scribble cross. Grey tag under the rules: "field lines are a drawing tool, not real threads".
+Visual: right column, one rule per sentence, each with a small teal sketch: "start on +, end on − (or run off the edge)"; "arrow = force on a + test charge"; "closer = stronger"; "bigger charge, more lines" (a +2 charge with 24 lines beside a +1 with 12); "never cross". On "two ways" two lines are forced to cross in a sketch; a red "+" probe at the crossing gets two amber arrows in different directions, then the sketch takes a scribble cross. Grey tag under the rules: "field lines are a drawing tool, not real threads".
 
 ### 6. worked example: reading a field diagram
 > Let's read a diagram. Task: these field lines point radially inward towards a single charge, and they're closer together at point P than at point Q. Find the sign of the charge, the direction of the force on an electron at P, and where the field is stronger. The lines point in, so they end on the charge: it's **negative**. An electron is negative, so the force on it is opposite to the field. At P, it's pushed outward, away from the **charge**. And the lines are closer at P, so the field is stronger at **P**.
@@ -100,10 +100,10 @@ Visual: clear change to the worked layout. Task strip: "Find: the sign of the ch
 ### 7. two charges, and a prediction
 > Now two charges. A positive and a negative, side by side. Lines leave the positive charge and curve round to land on the negative one, packed tightly in the space between them. That's the picture of attraction. Now make both positive. What happens to the lines in the middle, between **them**?
 
-Visual: board change: a red "+" and a navy "−" of equal size; `FieldLines` draw on slowly from the "+" and curve into the "−", dense on the axis between them; small amber arrows on each charge point towards the other (chip "attraction"). On "both positive" the "−" flips to red "+" and the lines clear. On "them" chips "join up?" and "bend away?" and a 3-second countdown ring.
+Visual: board change: a red "+" and a navy "−" of equal size; `FieldLines` draw on slowly from the "+" and curve into the "−", dense on the axis between them; small amber arrows on each charge point towards the other (chip "attraction"). On "both positive" the "−" flips to red "+" (same size as the other; label "equal charges") and the lines clear. On "them" chips "join up?" and "bend away?" and a 3-second countdown ring.
 
 ### 8. like charges and the neutral point
-> They bend away. None of them reaches the other charge. Halfway between, the two pushes cancel, so there's a spot with no field at all, called a neutral point. And the lines bunch up on the outer sides, as if the charges are being pushed apart. That's exactly what like charges do. The field picture tells the force **story**.
+> They bend away. None of them reaches the other charge. Halfway between, the two equal pushes cancel, so there's a spot with no field, called a neutral point. And the lines bunch up on the outer sides, as if the charges are being pushed apart. That's exactly what like charges do. The field picture tells the force **story**.
 
 Visual: `FieldLines` for the like pair draw on: lines from each charge turn aside, leaving an empty region in the middle. Neutral-point finder: a red "+" probe slides along the axis from one charge towards the midpoint; its amber arrow shrinks to nothing at the midpoint, marked "neutral point: no field". Small amber arrows on each charge point away from the other (chip "repulsion"). On "story" a small side-by-side recap: the unlike pair (lines join: attract) and the like pair (lines bend away: repel).
 
@@ -153,7 +153,7 @@ Heading on screen: "Key notes: what to write in your book".
 
 1. An electric field is a region where a charge feels a force. It exists round a charge whether or not another charge is there.
 2. Field direction = the direction of the force on a small positive test charge. Round a point charge the field is radial: outward from +, inward to −. It is strongest close to the charge and the same in every direction.
-3. Field lines start on + and end on −; closer lines mean a stronger field; more lines for a bigger charge; lines never cross. A negative charge feels a force opposite to the field.
+3. Field lines start on + and end on − (or run off the page); closer lines mean a stronger field; more lines for a bigger charge; lines never cross. A negative charge feels a force opposite to the field.
 4. Lightning: collisions charge ice particles; updraughts carry + to the top, leaving the base strongly −; the base induces + on the ground. The strong field makes free electrons knock more loose, the air conducts, and the static charge flows as a strike.
 
 Memory aid (large, on the notes screen): *Out of plus, into minus. Crowded means strong. Never cross.*
@@ -243,7 +243,7 @@ Acceptance: true transparency, no halo; the cloud and ground strip align edge to
 
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" and the A1 diagram geometry (P on the axis, Q off-axis and weaker).
-2. Confirm the physics claims: a field exists round a charge without a second charge; direction is the force on a positive test charge; radially outward from +, inward to −; strongest close in; symmetric in three dimensions; lines start on + and end on −; closer lines mean stronger; more lines for a bigger charge; lines never cross; a negative charge feels a force opposite to the field; unlike pairs join, like pairs bend away with a neutral point midway (equal charges); charges act through a vacuum.
+2. Confirm the physics claims: a field exists round a charge without a second charge; direction is the force on a positive test charge; radially outward from +, inward to −; strongest close in; symmetric in three dimensions; lines start on + and end on − (or run off the drawing, for a lone charge); closer lines mean stronger; more lines for a bigger charge; lines never cross; a negative charge feels a force opposite to the field; unlike pairs join, like pairs bend away with a neutral point midway (equal charges); charges act through a vacuum.
 3. Confirm the lightning claims: collisions between ice crystals and soft hail transfer charge; crystals tend positive, hail negative; updraughts carry crystals up; base strongly negative; ground surface positive by induction; the field points upwards from ground to cloud; breakdown by an electron avalanche; the strike as a discharge of the separated static charge; both grey tags present.
 4. Confirm no field equation, unit or inverse square law is stated.
 5. Confirm both attempt questions are original in wording, carry every condition, and that the A1 diagram shows no signs or answer labels.
@@ -286,3 +286,9 @@ Builds on: Charging by friction, conduction and induction (previous video). Next
 
 - Revision 1 next steps: student learning review (trace from v02 at Year 11 entry; check that "it isn't the air" lands without a real vacuum demonstration; that the probe arrows make line direction and spacing feel caused; that the line rules come after their reasons; that the cloud's sorting by updraught is clear; that the avalanche explains "the air conducts"; that the A1 diagram gives nothing away), then the Codex physics check and error check.
 - The probe building the lines (3, 4), the crossing failure (5), the neutral-point finder (8), the cloud sorting (9) and the avalanche into a strike (10) carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (5 November 2026, brief 164 repairs)
+
+- Should fix 1 (both reviews): the halfway neutral point now carries the equal-charge condition. Scene 8 says "the two equal pushes cancel"; scene 7's Visual labels the flipped charge "equal charges" (same size as the other). The physics-check line already said "(equal charges)".
+- Should fix 2 (both reviews): scene 5's rule now reads "Lines start on positive charges and end on negative charges, or run off the edge of the picture", matching the isolated radial diagram. The rule chip, key note 3 and the physics-check line match.
+- Narration count: 6,077 characters (build parser rule), about 556 s with the stated holds (35 characters longer than the reviewed 6,042; scene 8's "no field at all" became "no field", which part-funds it; within the cap).

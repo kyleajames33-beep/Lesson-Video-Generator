@@ -1,6 +1,6 @@
 # Year 11 Physics FA3 V21 (Physics 2025, Year 11, Focus Area 3): Why does adding another branch in parallel lower the total resistance, and how do the branch currents add up? (design)
 
-Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v21`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new; the bench supply (delivered) and the filament lamp (requested in FA2) reused by name.
+Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v21`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new; the bench supply (delivered) and the filament lamp (requested in FA2) reused by name.
 
 Narration 5,109 characters, 18 scenes, about 486 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate"). Inside the 5,000 to 5,500 range the template allows: two parallel rules, each taught from its cause with the site's worked example and one added branch; not padded.
 
@@ -83,7 +83,7 @@ Visual: camera continue. A working panel: task "the current in each branch"; equ
 Visual: camera continue. v11 `ChargeGate`s: one on the main lead before the top junction, one on each branch. On "can't build up there" the junction gets a tally "in = out" (tag "charge can't build up, from the series video"). On "leave along one branch or the other" the dots split at the junction, two to one; the branch gates read "2.0 C each second" and "4.0 C each second". On "six amps" the main gate reads "6.0 C each second" and the main ammeter fills "6.0 A"; at the bottom junction the dots rejoin. On "I parallel equals I one plus I two" the row "I_parallel = I₁ + I₂ (+ ⋯ + Iₙ)", boxed (gloss "total current: the current in the main lead").
 
 ### 5. the total resistance is smaller
-> So what single resistance would draw six amps from twelve volts? R equals V over I: twelve over six, two ohms. That's not nine. It's less than either resistor on its **own**. In fact, a parallel total is always less than its smallest branch, and the next scene shows why.
+> So what single resistance would draw six amps from twelve volts? R equals V over I: twelve over six, two ohms. That's not nine. It's less than either resistor on its **own**. In fact, a parallel total is always less than its smallest branch. So why would adding a path lower it?
 
 Visual: camera continue. Working: task "the total resistance"; equation "R = V/I"; givens "V = 12 V; I_parallel = 6.0 A"; on "two ohms" "R_parallel = 12 ÷ 6.0 = 2.0 Ω", boxed (gloss "total resistance: the one resistance that would draw the same total current"). On "That's not nine" the "9.0 Ω?" chip and "more?" take grey scribble crosses; "less?" glows. On "on its own" a comparison row "2.0 Ω < 3.0 Ω < 6.0 Ω"; on "always less than its smallest branch" the row "R_parallel < the smallest branch", boxed.
 
@@ -288,3 +288,8 @@ Builds on: Analysing series circuits (previous video). Next: Combination circuit
 
 - Revision 1 next steps: student learning review (trace from v20 at Year 11 entry; check that the branched staircase makes "the same voltage" a reason; that the junction gates make "the currents add" visible; that "2.0 Ω, less than either" lands as a surprise answered by the extra path; that the algebra in 7 is one line per cue; that "flip back" is clear; that the added branch shows the others unchanged; that the attempts give nothing away), then the Codex physics check and error check.
 - The branched staircase (2), the dots splitting two to one with the gates reading 2.0, 4.0 and 6.0 (4), the first branch's gate holding at 2.0 as the second joins (6), the V's fading from the algebra (7) and the third branch sliding in with the other readings unchanged (11) carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (5 November 2026, brief 164 repairs)
+
+- Should fix 1 (both reviews): the spoken production phrase "and the next scene shows why" is gone. The scene now ends "In fact, a parallel total is always less than its smallest branch. So why would adding a path lower it?", a causal question the next scene answers. No learner text was added.
+- Narration count: 5,133 characters (build parser rule), about 488 s with the stated holds (7 characters longer than the reviewed 5,126; within the cap).

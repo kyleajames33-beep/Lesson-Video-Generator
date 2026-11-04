@@ -1,6 +1,6 @@
 # Year 11 Physics FA3 V22 (Physics 2025, Year 11, Focus Area 3): Why can a parallel pair be swapped for one resistor, and how does that let you solve a mixed circuit? (design)
 
-Status: Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v22`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new in the teaching; the handoff bench reuses the bench supply (delivered), the digital multimeter (requested in `phys-y11-fa3-v15.md`) and v23's resistor board (requested in `phys-y11-fa3-v23.md`).
+Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v22`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new in the teaching; the handoff bench reuses the bench supply (delivered), the digital multimeter (requested in `phys-y11-fa3-v15.md`) and v23's resistor board (requested in `phys-y11-fa3-v23.md`).
 
 Narration 5,883 characters, 17 scenes, about 544 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -139,7 +139,7 @@ Visual: `QuestionCard`, worded as printed, with a printed HSC-symbol circuit (br
 Visual: card shrinks to the top; "branches in parallel", "in series" and "8.0 Ω" underlined. Rows: "(a) R_A = 4.0 + 8.0 = 12 Ω; 1/R_T = 1/12 + 1/6.0 = 3/12, R_T = 4.0 Ω", boxed; "(b) I = 12 ÷ 4.0 = 3.0 A", boxed; "(c) I_A = 12 ÷ 12 = 1.0 A; V₈ = 1.0 × 8.0 = 8.0 V", boxed. On "twenty-four volts" a chip "V = 3.0 A × 8.0 Ω = 24 V" fades in and takes a grey scribble cross. Hold about 1 second.
 
 ### 16. handoff
-> So any mix of series and parallel can be shrunk to one resistance, then shared back out. But all of that assumes perfect resistors and perfect meters. Build a real one and measure it. Will the meters agree with the calculation? And if they don't, **why** not?
+> So any circuit built from series and parallel groups can be shrunk to one resistance, then shared back out. But all of that assumes perfect resistors and perfect meters. Build a real one and measure it. Will the meters agree with the calculation? And if they don't, **why** not?
 
 Visual: board change: the memory line small at the top. A bench: the painted bench supply (`phys-y11-low-voltage-supply-v1.png`, dial at "6.0 V"), three painted resistor boards (`phys-y11-resistor-board-v1.png`) with coded value chips "10 Ω", "20 Ω", "20 Ω", laid out as the 10 Ω in series with the 20 Ω pair, coded leads, and two painted digital multimeters (`phys-y11-digital-multimeter-v1.png`) showing "? A" and "? V". Beside them the HSC diagram with chips "calculated: R_T = ?" and "I = ?". On "perfect" a grey tag "ideal: no lead resistance, exact resistor values". On "agree" chip "will the meters agree?"; on "why" chip "if not, why not?". Then the chip "Next: Why do real meter readings in a combination circuit come out close to, but not exactly on, the calculated values?". This is the final frame of the video (series rule). Hold about 2 seconds.
 
@@ -278,3 +278,8 @@ Builds on: Parallel circuits (previous video). Next: The combination circuit inv
 
 - Revision 1 next steps: student learning review (trace from v21 at Year 11 entry; check that the black-box test makes "equivalent resistance" meaningful before any reduction; that the reductions and un-collapse keep the student oriented; that "inside out" is clear without a rule list; that the attempts give nothing away), then the Codex physics check and error check.
 - The black-box swap (2), the reductions (3, 8), the staircase steps (5), the current split (6) and the values flowing back out (9) carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (5 November 2026, brief 164 repairs)
+
+- Should fix 1 (both reviews): "any mix of series and parallel" is gone. The handoff now says "So any circuit built from series and parallel groups can be shrunk to one resistance", which limits the method to series-parallel reducible networks (a bridge is not built from such groups) without adding learner text about bridges.
+- Narration count: 5,918 characters (build parser rule), about 547 s with the stated holds (19 characters longer than the reviewed 5,899; within the cap).
