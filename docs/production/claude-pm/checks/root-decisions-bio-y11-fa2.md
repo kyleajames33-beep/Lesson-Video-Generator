@@ -34,3 +34,6 @@ Series decisions in `root-decisions-bio-y11-fa1-v01-v06.md` and `root-decisions-
 ## Brief 157 repairs (4 November 2026)
 29. **v03 agar practical.** The school-safety assessment for students cutting phenolphthalein agar with a scalpel was not established, so item 3's fallback applies: the teacher cuts the cubes as a demonstration (one clause), and students time the colour change and record. The acid strength stays the dilute value the science check confirmed.
 30. **Plates.** Plates with halos are not accepted. The agar cube set must meet the exact 1 : 2 : 3 measured proportions before use. Painting follows the Revision 2 error checks.
+31. **Revision 2 lengths.** v07 (+279 characters, to 5,568) and v08 (+545, to 5,837) are accepted. v07 had been below the 5,500 floor, and both additions carry safety, measurement or the v08 blocker's reasoning. Both stay under 570 s.
+32. **v12's partial cut** is accepted. The cut-flower clue stays because it is the video's only observable sign of tension; the rest of the clue is the next reserve cut if the voiced preview runs long.
+33. **Frame joins.** v08's final frame has new memory-line and step-list wording; v09 needs no edit. v09's final board rows 1 and 4 changed, and v10 scene 1 already opens on the new wording. The error check compares each join against the Revision 2 wording.
