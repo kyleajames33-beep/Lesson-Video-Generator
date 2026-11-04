@@ -1,0 +1,11 @@
+# y11b-v28 learning review
+
+Revision 1, 3 November 2026; design SHA256 `d45208fc8b8c4f8070038ca382b471bf5f915e0a291eadc947c3f76f25da253f`. Opening matches v27's G2 cycle ring, four-chromosome card and interphase cell. A model builds long and short chromosomes in both parental colours, copies them, then traces PMAT and cytokinesis beside painted cells. The prediction precedes the separation; each attempt requires the stage cues or the particular parental homologue. Model recording and limits meet the design's classroom-practical aim, but watching a video does not itself constitute the syllabus practical.
+
+1. **Should fix, shared with science:** Scenes 9 and 10 guarantee exact copies and that one chromatid must go to each pole. Typical mitosis shares sisters this way, but replication or segregation errors can occur. Describe the intended model outcome as normally genetically matching; do not promise an infallible process. Replace the absolutes in speech and notes.
+2. **Should fix, shared with science:** Telophase says chromosomes uncoil "so their genes can be used again", implying all gene use stopped throughout mitosis. Condensation and transcription regulation vary; say decondensation helps restore access to DNA. Replace the causal clause.
+3. **Should fix, shared with science:** Centromeres do not physically split into two fragments as the cause of chromatid separation; cohesin is cleaved so the sister centromeres separate. Keep the accessible count but say sister chromatids separate at their joined centromeres. Replace the spoken wording.
+
+Inspected the existing stage plate sheet `work/brief150/v28/stages.png`: metaphase has four doubled chromosomes and anaphase has four single chromatids at each pole, including long and short in each parental colour. The anaphase chromatids are upright; root decision 32 explicitly keeps this version. Preserve chromosomes painted into cells rather than overlaying coded chromosomes; use the separate model for movement. Root accepts the unpadded length. Source-only review, no animated playback or student practical observed.
+
+Count: 0 blockers, 3 should fix, 0 optional; 5,313 separate and 5,331 joined characters, 19 scenes, about 530 s. No design edit, voice or render.

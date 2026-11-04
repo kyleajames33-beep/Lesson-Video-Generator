@@ -1,58 +1,39 @@
-# Brief 124: Google speech pilot
+# Google speech and alignment pilot
 
-Checked 31 October 2026. Step 1 complete. Steps 2 to 5 stopped as the brief requires: `.env.local` contains no Google AI Studio key. No secret values were printed. No speech request, installation, alignment, adapter, lesson change or caption export was made.
+Checked 3 November 2026. This is a pilot, not a release or human listening approval.
 
-## Models and voices
+## Outcome
 
-The current [speech guide](https://ai.google.dev/gemini-api/docs/speech-generation) lists Gemini 3.8 Flash TTS, 3.8 Flash-Lite TTS, 3.1 Flash TTS Preview and 2.5 Pro Preview TTS. The pricing page also retains 2.5 Flash Preview TTS. These are Developer API/AI Studio names; Cloud model names and billing differ.
+Use `gemini-3.8-flash-tts` and the owner's saved voice `voice_shdbjsxcrr0a` for further evaluation. Google accepted that ID in the current Interactions API `generation_config.speech_config: [{"voice":"voice_shdbjsxcrr0a"}]`. The model supports custom voices and Google describes it as its higher-fidelity 3.8 option for accents and longer narration. The three biology scenes and four maths samples plus a science-terms sample are in `out/google-tts-pilot/`. The three biology scripts are the exact texts in the ElevenLabs voice manifest. There is one voice, as the 3 November update directs, so this is not a comparison among voices.
 
-The [3.8 Flash model page](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts) and [Flash-Lite page](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-lite-tts) present production models without a Preview designation. The other three explicitly retain Preview in their names. Availability for this owner's account has not been tested.
+The adapter `scripts/google-tts-pilot.mjs` created `out/google-tts-pilot/measured/lesson.json`, local per-scene alignment files and timed captions. `node scripts/export-explainer-captions.mjs out/google-tts-pilot/measured/lesson.json out/google-tts-pilot/captions-export` succeeded and exported 34 cues. This checks data and caption compatibility, not a rendered video or cue synchronisation in playback. The adapter uses measured word boundaries and evenly interpolates character positions inside each word. Its character boundaries are estimates, not native Google timestamps. The pilot audio paths are outside `public/`, so this does not establish that the production renderer can serve them without a separate media-path decision.
 
-The guide lists 30 prebuilt voices: Zephyr, Puck, Charon, Kore, Fenrir, Leda, Orus, Aoede, Callirrhoe, Autonoe, Enceladus, Iapetus, Umbriel, Algieba, Despina, Erinome, Algenib, Rasalgethi, Laomedeia, Achernar, Alnilam, Schedar, Gacrux, Pulcherrima, Achird, Zubenelgenubi, Vindemiatrix, Sadachbia, Sadaltager and Sulafat. For 3.8 it also documents an extended voice library, voice design and replication. Those are not necessary for this pilot.
+## Google facts and sources
 
-Provisional audition: 3.8 Flash-Lite with Charon, Iapetus and Sulafat. These are candidates, not a listening recommendation. Keep one identical Australian English direction across all three scenes and test consistency between scenes.
+- Google's [speech generation guide](https://ai.google.dev/gemini-api/docs/speech-generation) lists Gemini 3.8 Flash TTS and 3.8 Flash-Lite TTS, both with custom voice design and replication support. It also lists 3.1 Flash TTS Preview and 2.5 Pro Preview TTS; the pricing page also lists 2.5 Flash Preview TTS. The 3.8 IDs do not carry a preview suffix; Google identifies 3.1 and 2.5 variants as preview. [Deprecation schedule](https://ai.google.dev/gemini-api/docs/deprecations): 3.1 Flash TTS Preview has an earliest shutdown date of 17 November 2026. Availability and account access can differ.
+- The guide lists 30 prebuilt studio voices plus an extended library and saved designed or replicated voices. Custom voices are passed directly by ID in the `voice` field; they are not prebuilt voice names. Stored voices expire after one year without use. Gemini TTS produces audio, not native character or word timings. The separate [Cloud Text-to-Speech SSML API](https://docs.cloud.google.com/text-to-speech/docs/ssml#ssml_timepoints) can return timestamps for explicitly inserted `<mark>` tags; this is a different service and is not a demonstrated timestamp facility for the selected Gemini voice.
+- [Google pricing](https://ai.google.dev/gemini-api/docs/pricing), checked 3 November: standard paid 3.8 Flash TTS is US$0.50 per million input text tokens and US$9 per million output audio tokens through 31 December 2026, then US$1 and US$18 respectively. Audio is 25 tokens per second: output is US$0.0135 per minute now, US$0.027 per minute from January, plus input. The Flash-Lite output is US$6 per million through December, then US$12; 3.1 Flash preview is US$1 input and US$20 output per million tokens, and 2.5 Flash preview is US$0.50 and US$10. Prices are token based, not a fixed per-character tariff.
+- The three biology takes total 1,146 characters, 237 billed input tokens and 1,897 output tokens. At the current standard paid rates that is US$0.01719; scaling this sample by characters gives approximately **US$0.090 per 6,000-character lesson**, before taxes. This is an estimate, not a quote: speech speed, tokens and pauses vary, and free-tier billing may differ. From January the same usage would cost approximately US$0.18.
+- [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) vary by model, project, tier and request/token/day limits; the actual project quota is shown in AI Studio. Google does not provide a reliable single public RPM for this account, and none was inferred from the successful sample calls.
+- Google's [API terms](https://ai.google.dev/gemini-api/terms#use-generated) say Google does not claim ownership of generated content and the user is responsible for its use. The terms do not state a blanket ban on publishing generated audio on commercial YouTube; applicable terms and voice rights still govern the particular use. The terms separately restrict API clients directed to or likely accessed by under-18s; the distinction between a published video and an interactive API client matters and is not resolved by this pilot.
 
-## Price
+## Forced alignment and comparison
 
-[Developer API pricing](https://ai.google.dev/gemini-api/docs/pricing), checked today. USD, standard paid requests, per million text input/audio output tokens:
+Installed Python 3.11.15, WhisperX 3.8.6, PyTorch 2.8.0 and PyAV 18.1.0 in `work/brief124/venv`. Reproduce with `uv python install 3.11`, `uv venv work/brief124/venv --python 3.11`, and `uv pip install --python work/brief124/venv/Scripts/python.exe whisperx`. The local `work/brief124/align.py` decodes audio with PyAV and aligns the supplied exact text using WhisperX's English `WAV2VEC2_ASR_BASE_960H` model on CPU. No full-video render was run.
 
-| Model | Input | Output | Audio per minute |
+Comparing forced-aligned ElevenLabs word starts against the existing ElevenLabs character starts yielded:
+
+| Scene | Words compared | Median absolute error | 95th percentile |
 | --- | ---: | ---: | ---: |
-| 3.8 Flash-Lite TTS | $0.50 | $6 | $0.009 |
-| 3.8 Flash TTS | $0.50 | $9 | $0.0135 |
-| 3.1 Flash TTS Preview | $1 | $20 | $0.030 |
-| 2.5 Flash Preview TTS | $0.50 | $10 | $0.015 |
-| 2.5 Pro Preview TTS | $1 | $20 | $0.030 |
+| hook | 68 | 34 ms | 114.6 ms |
+| insulin | 81 | 31 ms | 96 ms |
+| attempt | 50 | 45 ms | 130.3 ms |
+| combined | 199 | 34 ms | 113.3 ms |
 
-3.8 rates above last through 31 December 2026; the page doubles them from 1 January 2027. Output uses 25 audio tokens/second. Google bills tokens, not characters. Assuming 1,500 input tokens and nine spoken minutes for a 6,000-character lesson, estimates are $0.08175, $0.12225, $0.2715, $0.13575 and $0.2715 respectively. These are calculated estimates, excluding retries, alignment and tax. Actual token count and speech duration determine cost. Free quota is listed for Flash variants; Pro has no free tier.
+The individual word rows are `out/google-tts-pilot/alignment-comparison.csv`; summary and machine-readable results are beside it. All 199 words had a start time. **Limitation:** the hook used a whole-scene alignment, while the two longer reference scenes were broken into sentence windows based on the ElevenLabs character timing, with 0.6 s padding. Those reference-derived windows can make the benchmark optimistic and it is not a fully independent timing test. Google attempt windows were scaled from those reference sentence windows as well. This benchmark compares the aligner to ElevenLabs' alignment, not to a human-labelled ground truth. The machine could not complete the longer whole-scene job in one process, so an independently segmented benchmark and playback check remain necessary before claiming production accuracy.
 
-## Limits
+## Pronunciation and listening
 
-The [rate-limit documentation](https://ai.google.dev/gemini-api/docs/rate-limits) directs users to their active AI Studio quota. Limits depend on project, model, tier and account status; they are not a universal RPM entitlement. Requests/minute, input tokens/minute and requests/day can each block a request. Daily quota resets at midnight Pacific time. Preview models have tighter limits. Exact owner quotas remain unverified without an authenticated project. Do not plan throughput from an old public quota table.
+The three selected biology scenes include insulin and glucose but not glucagon, islets or homeostasis; `science-terms.wav` supplies those terms separately. The maths samples include exact sentences from the D01 design and an extra `one half` probe. The files are in `out/google-tts-pilot/`.
 
-## Commercial output
-
-The [Gemini terms](https://ai.google.dev/gemini-api/terms), effective 23 March 2026, permit professional/business use and say Google does not claim ownership of generated content. They do not impose a blanket non-commercial restriction on Preview output. Commercial YouTube narration is therefore compatible with these terms, subject to applicable rights, law, policies and attribution requirements. Unpaid inputs/outputs may be used for improvement and human review; paid processing has different data terms. Offline rendered videos are the proposed use, rather than exposing an API client to students.
-
-## Timings and the remaining pilot
-
-Gemini TTS is audio-only; its speech guide does not document word or character alignment output. Cloud TTS offers [SSML timepoints](https://docs.cloud.google.com/text-to-speech/docs/ssml): returned times identify explicit `mark` positions, rather than automatic word boundaries. The [v1beta1 synthesis response](https://docs.cloud.google.com/text-to-speech/docs/reference/rest/v1beta1/text/synthesize) documents `timepoints`. This does not establish SSML/mark support for Gemini TTS or justify switching APIs silently.
-
-After the key is available, use the exact existing B03 `hook`, `insulin` and `attempt` text. First align the matching ElevenLabs files and compare normalized matched words with the saved reference. Report median and 95th-percentile absolute start error and unmatched-word counts. Then align the Google takes, build the adapter and three-scene lesson under `out/google-tts-pilot/`, and run the cumulative caption exporter. No installation recipe or tool version is claimed before that installation is tested on this 8 GB PC.
-
-| Required outcome | Result |
-| --- | --- |
-| Recommended model/voice | Provisional 3.8 Flash-Lite; audition Charon, Iapetus, Sulafat |
-| Typical 6,000-character cost | About USD $0.082 under the stated nine-minute assumption |
-| Median / p95 alignment error | Not measured |
-| Pipeline and caption fit | Not tested |
-| Listening | No samples generated; owner decides after audition |
-| Blocker | Google AI Studio key absent from `.env.local` |
-
-Independent source review repeated the official model, voice, price, rate-limit, terms and timepoint checks. It found no factual error and recalculated all five estimates. This does not test account access, voice quality, alignment or pipeline fit.
-
-## Continuation, 1 November 2026
-
-Rechecked `.env.local` without printing secret values: the file exists, but no nonempty Google AI Studio key was found under a Google, Gemini or AI Studio variable name. Steps 2 to 5 remain stopped under the brief's explicit no-key rule. No speech, aligner installation, adapter, pipeline assembly or caption export was performed.
-
-Reopened the official [speech guide](https://ai.google.dev/gemini-api/docs/speech-generation), [pricing](https://ai.google.dev/gemini-api/docs/pricing), [rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) and [terms](https://ai.google.dev/gemini-api/terms) on 1 November. They continue to support the model, price, quota and commercial-use summary above. The voice candidates remain provisional because no samples have been generated. Alignment median and p95 remain unmeasured, and pipeline fit remains untested.
+An automated audio review in `automated-listening-biology.txt`, `automated-listening-math.txt` and `automated-listening-supplement.txt` tentatively describes clear, consistent pacing and an Australian accent and recognises the science terms. It flags the maths constant `a` as an article-like “uh”; its transcription also omits `e` in the first expression, so both need human listening. A second take `math-constant-override.wav` sends `ay` in place of the spoken variable `a`; the automated review identifies the letter sound as “ay”. To use this approach, keep the display/caption text as `a`, maintain a separate pronunciation text with `ay`, and align against what was actually sent; a mapping back to display text would need explicit testing. This is phonetic respelling, not a demonstrated SSML alias. Human listening must decide the accent, science pronunciation, whether `e` is audible, and whether the override is acceptable. The automated review's warning that the second exam question is absent is not a speech omission: the selected source scene itself contains only the first question.

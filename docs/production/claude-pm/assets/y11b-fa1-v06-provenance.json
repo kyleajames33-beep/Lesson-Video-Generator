@@ -1,0 +1,71 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "neuron",
+      "name": "y11-neuron-v1.png",
+      "path": "public\\assets\\biology\\y11-neuron-v1.png",
+      "sha256": "153bd361afe538c7bd760957ecb4f58ce6f9cd08577a8264d562b53eb304afb3",
+      "dimensions": [
+        2400,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Scientific educational plate of a single long motor neuron, horizontal 2400x1000 canvas. At left one pale rose cell body with visible purple nucleus and 5 short branching dendrites. ONE long thin axon travels right, several cream myelin sheath segments separated by small nodes, ending with a small branching terminal arbor. Natural ink and watercolour matching reference finish, neuronal anatomy not mitochondrion. Complete cell fits with 10 percent clear margin. No coded break mark or ruler because those will be added in software. No surrounding tissue, synapse cells or additional neurons. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ]
+    },
+    {
+      "key": "cheek-eight",
+      "name": "y11-cheek-cells-field-x400-v1.png",
+      "path": "public\\assets\\biology\\y11-cheek-cells-field-x400-v1.png",
+      "sha256": "4d21731cfb6863b4766658f6a53d267b9d2ebe63f028a28a61669c9f3684d930",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Extracted painted cell and assembled eight equal end-to-end central widths with no empty gap counted as cell. Other rows use the same cell scale; actual centre-line width calibrated before assembly.",
+      "sourceCandidate": null,
+      "prompt": "2000square. One circular methylene-blue cheek-cell microscope field, thin dark rim and transparent outside. Pale blue irregular flat polygonal cells, dark blue oval nuclei, thin outlines, loose mostly touching sheet. CRITICAL the horizontal centre line should pass through EIGHT roughly equal cell WIDTHS end to end with no gaps, no overlaps at that line; partial edge cells total one full if used. Each typical width 1/8 field diameter, field 450 µm so cell widths 56 µm. About eight rows of comparable cell size, natural variation elsewhere. No visible grid, counting line, labels or numbers. Preserve reference delicate blue microscopy finish, but many smaller cells, eight across instead of three. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ]
+    },
+    {
+      "key": "grid",
+      "name": "y11-mini-grid-v1.png",
+      "path": "public\\assets\\biology\\y11-mini-grid-v1.png",
+      "sha256": "ade8e70de8c09320f2ca6cbf63baa5d8044b20e72ec9239c9b81d3a4c9f9c968",
+      "dimensions": [
+        2000,
+        1000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Replaced generated approximate grid with exactly20x10 one-millimetre square cells projected onto the same painted slide plane; same uniform fit as clean slide.",
+      "sourceCandidate": null,
+      "prompt": "2000x1000landscape. One clear rectangular plastic mini-grid slide physical 76x26mm, lying flat at same low three-quarter viewpoint as reference glass slide. Central printed grid consists of EXACTLY20 by10 very fine black 1mm SQUARES, central physical20x10mm rectangular area on otherwise clear slide. Do not cover the full 76x26 slide with grid. Thin even orthogonal printed lines follow perspective correctly, faint blue plastic edge, no numbers or letters. Fine dark ink outlines and subtle layered watercolour matching reference wet-mount plate. One isolated object, true transparent PNG, 10 percent clear margin, clean neutral edges NO coloured matte fringe. No text labels letters numbers arrows brands people hands faces ground shadow or glow. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-onion-wet-mount-v1.png"
+      ]
+    }
+  ],
+  "repairs": [],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

@@ -1,0 +1,15 @@
+# y11b-fa2-v05 science check
+
+Revision 1, 3 November 2026; design SHA256 `55e86eb4fb3eb70cea61f243a5435a5dc80b4c94df7ce20c9860a95386ddcc18`. Fresh official syllabus action `B25-FA2-G2-01`, official codename `ci9070ea61`: "Describe the nutrient, water and gas requirements of plants for photosynthesis and respiration". https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
+
+1. **Should fix:** Scene 11d says roots cannot photosynthesise. Some illuminated roots contain functioning chloroplasts. Say the flooded rice roots need oxygen for aerobic respiration; remove the universal claim. The replacement is shorter.
+2. **Should fix:** Scene 7 assigns 1% of absorbed water specifically to photosynthesis and shows 99% evaporating and the remaining drop becoming glucose. The sources reviewed do not establish this fixed partition; metabolic and retained water are not all photosynthetic reactant. Use the written fallback "only a tiny share" and remove the precise 99:1 graphic.
+3. **Should fix:** Scene 3 presents daylight net CO₂ in and O₂ out as universal. Under weak light or stress respiration can exceed photosynthesis. Specify bright light where photosynthesis exceeds respiration, and align the board and notes. Replace the existing wording; cut the scene 7 1% sentence to make room.
+4. **Should fix:** Root decision 7 accepts the memory line, but "nothing switches respiration off" and "light switches photosynthesis on" overstate conditions. Retain the approved line only with a screen explanation that both processes need other requirements and respiration changes with conditions; plants also have anaerobic pathways. The exception needs no added speech.
+5. **Should fix:** Scene 5's chain shows pumps stop and no oxygen in all flooded soil, and scene 11c implies most crops die after several days. Flooding severity and duration vary; show reduced oxygen and uptake for the example, not automatic zero. Replace existing claims.
+
+[Root photosynthesis experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730084/) demonstrate the exception; [flooded root experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC5055620/) support adapted root aeration. Oxygen diffusion coefficient in water is roughly ten thousand times lower than in air; see [root aeration methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC8622749/). Reduced root hydraulic conductance and water uptake under flooding are supported by [flooding experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC1065914/).
+
+Current L04 site water wording is not necessarily wrong: water is the medium for cellular reactions, even though aerobic respiration produces water in its net equation. Chlorophyll absorbs light as a pigment; its quoted "site" wording is imprecise, not a demonstrated scientific error. The staged hook's breathing analogy conflicts with the series distinction; flag to root rather than alter the site.
+
+Count: 0 blockers, 5 should fix, 0 optional; 5,601 separate and 5,616 joined characters, 16 scenes, about 545 s. No audio or playback checked.

@@ -1,0 +1,14 @@
+# y11b-fa2-v03 learning review
+
+Revision 1, 3 November 2026; design SHA256 `5f298deb3dae6a1b6f92b4481f97d2e609a5141559823db652844e1e90ef9b95`. The opening matches v02. Entry builds on FA1 practical variables and v02 geometry. Prediction precedes results; the calculation walks through core volume before the percentage and both practice cards retain the givens.
+
+1. **Blocker:** NSW school permission for students to handle phenolphthalein agar and use scalpels was not verified from an accessible current NSW chemical entry. The school's current risk assessment and the product SDS must determine handling, disposal and who cuts; use root decision 3's teacher-cutting fallback until cleared. A 0.1 mol/L hydrochloric acid teaching method exists, but this does not establish NSW approval for this particular preparation. Do not increase the concentration without the local assessment.
+2. **Should fix:** The colour boundary is a pH indicator endpoint, not proof the acid has reached no further or that the colourless material is acidic. Say the acid causes the pink to fade, and measure the colour-change boundary. Update the method, model and notes. Replace the existing claims; cut the scene 8 sentence about adding a larger cube if timing grows.
+3. **Should fix:** Rinsing removes external acid but cannot instantly stop diffusion or neutralisation within the gel. Remove the claim that rinsing stops it; standardise timing and measure promptly. This is shorter.
+4. **Should fix:** The replicate depths are 4, 4, 4 mm for the 1 cm cubes, 4, 3.5, 4.5 mm for the 2 cm cubes and 4, 4.5, 3.5 mm for the 3 cm cubes. Four mm is each group mean, not every observation. State "about four on average" and do not infer equal instantaneous molecular speed from one endpoint. Keep the illustrative label and memory aid.
+5. **Should fix:** Three repeats cannot alone establish reliability or validity, and the agar result cannot establish what occurs in every real cell. Say the repeats show consistency in this illustrative set and controlled conditions support this test; retain the model limits. Replace the current claims.
+6. **Should fix:** Do not assert diffusion across real cells takes a tiny fraction of a second irrespective of molecule or distance. Cut that clause; retain the size contrast.
+
+Route reconciliation: the actual v02 handoff and v03 opening match. The approved question specifies the greater fraction changing in a fixed time; the draft question asks how the prediction is tested. Both retain the conduct and calculation boundary. The packUpdate requires safe conduct, measurements, repeats and separation of depth from fraction: these are present but require the repairs above. The v04 route question must be reconciled with the actual final skin frame.
+
+Count: 1 blocker, 5 should fix, 0 optional; 5,937 separate and 5,952 joined characters, 16 scenes, about 569 s. No audio or playback checked.

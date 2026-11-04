@@ -1,0 +1,13 @@
+# y11b-v20 learning review
+
+Revision 1, 3 November 2026; design SHA256 `44dd31339b01406abe64c1bf98e700320b043839691e7fa51971e74b470b3615`. The v19 two-diagram and enzyme handoff matches the opening, carrying shape into the temperature, pH and substrate graphs. Each graph is drawn by regions before the compare rule; the pepsin prediction distinguishes location and optimum, and the saturation prediction separates plateau from damage. Both attempt cards retain axes and demands during the hold, and the final question hands experimental fairness to v21.
+
+1. **Blocker, shared with science:** Scenes 10 and 12 say a fall means lost active-site shape, contradicting scene 7's correct distinction between reversible ionisation changes near the pH optimum and denaturation at extremes. Split the rule: on the illustrated pH curve changed charges can reduce activity reversibly; loss of structure is a possible cause at damaging extremes or high temperature. Replace the short decision rule and notes, preserving root decision 22.
+2. **Should fix, shared with science:** A2 supplies a denaturation threshold but does not say the effect after the specified 80 °C exposure is irreversible. Denaturation can sometimes reverse, so a flat post-cooling graph is not determined from the stated data alone. Add the observed failure to recover or state that this example's denaturation is irreversible, without printing the graph answer; align the mark scheme.
+3. **Should fix, shared with science:** The rising-to-plateau curve and fixed temperature do not on their own prove enzyme damage never occurred or prove every active site is occupied at every instant. State that the illustrated assay uses an active stable enzyme and initial rates, and describe near-saturation and a limiting maximum. Keep the car-park analogy as an approximation.
+4. **Should fix, shared with science:** The temperature curve is assay-specific and its fall need not be entirely explained by permanent structural loss in every enzyme. Label the drawn enzyme and exposure conditions, keep the given 40 °C and 60 °C as an illustrative case, and avoid applying the steep irreversible fall as a universal shape. Replace the absolute statements, not the graph lesson.
+
+
+The contrast between pH charge effects and denaturation is a central teaching point and should not be erased by the mnemonic. The v19 inherited model and site colour choices remain subject to its separate repair. The named sentence replacements do not require another graph or scene; use a reserve cut if needed. Source-only: playback, graph legibility and listening untested.
+
+Count: 1 blocker, 3 should fix, 0 optional; 5,555 separate and 5,570 joined characters, 16 scenes, about 541 s. No design edit, speech or render.

@@ -1,0 +1,11 @@
+# p-y11-v09: learning review
+
+Reviewed Revision 1 on 2 November 2026. Design SHA256 `4364f56b9846ff00c481af63c6c1dd2d6b89b17b81652a35ff36b08f253aadd6`. Written design and site source only; no built frames or audio. Narration recount 6,297 characters in separate scenes (6,312 with joining spaces); stated duration about 566 s. Per-scene counts: 522, 511, 285, 503, 453, 443, 441, 542, 463, 508, 216, 383, 227, 403, 322, 75.
+
+The learner should use graph-derived equations to predict an unmeasured displacement. From v08 slopes and signed areas, the 4-to-20 m/s graph supplies a visible rectangle and triangle before the equations are collected. The time-elimination algebra retains each intermediate row and the difference-of-squares link. The 30 m/s braking case then chooses a positive direction, finds -6.0 m/s², and predicts 75 m; the folding triangle explains why this is half the steady-speed reference. The half-speed case keeps the same acceleration and isolates braking distance, so the quarter-distance conclusion is earned. The three-equation selection aid states its missing-a exception before the worked solution; the extra average-velocity form is a recalled graph check, as root decided. The actual first visual matches v08 boxed relationships and five chips. The two unseen cards retain every needed condition and reveal neither equation nor solution. Keep the named reserve cuts if voiced timing is tight.
+
+## Findings
+
+1. **Should fix:** Scene 15 says a falling object has a constant acceleration too, called g, without restricting it to gravity-dominated free fall. A falling object with appreciable drag need not have constant acceleration. Replace that sentence with a short statement of the gravity-only condition, for example In free fall, with air resistance negligible, the acceleration is g. Fund any extra characters by the named scene 6 reserve cut. This preserves why v10 can use the equations.
+
+Root decisions retained. Colour and unit normalisation belong to the shared build, per decisions 2 and 3. Decision 16 restores the handoff after notes, so a notes scene by itself is not a continuity error. Repairs must replace wording or name a reserve cut. Judge the implemented motion and timing on the voiced preview; this source review supplies no listening or motion approval.

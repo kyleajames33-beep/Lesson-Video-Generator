@@ -1,0 +1,33 @@
+[
+  {
+    "scene": "hook",
+    "compared": 68,
+    "missing": 0,
+    "median_ms": 34.0,
+    "p95_ms": 114.6,
+    "window_method": "whole-scene"
+  },
+  {
+    "scene": "insulin",
+    "compared": 81,
+    "missing": 0,
+    "median_ms": 31.0,
+    "p95_ms": 96.0,
+    "window_method": "Sentence windows derived from reference character timing; scaled for Google and expanded by 0.6s. Benchmark is not fully independent."
+  },
+  {
+    "scene": "attempt",
+    "compared": 50,
+    "missing": 0,
+    "median_ms": 45.0,
+    "p95_ms": 130.3,
+    "window_method": "Sentence windows derived from reference character timing; scaled for Google and expanded by 0.6s. Benchmark is not fully independent."
+  },
+  {
+    "scene": "all",
+    "compared": 199,
+    "missing": 0,
+    "median_ms": 34.0,
+    "p95_ms": 113.3
+  }
+]

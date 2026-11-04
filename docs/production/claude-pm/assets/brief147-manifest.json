@@ -1,0 +1,1188 @@
+{
+  "brief": 147,
+  "date": "2026-11-02",
+  "status": "complete-local-QA",
+  "tool": "built-in image_gen; authorised local region compositing and transparent-column padding as recorded",
+  "assets": [
+    {
+      "name": "y11-early-microscopes-v1.png",
+      "path": "public/assets/biology/y11-early-microscopes-v1.png",
+      "sha256": "6ac287e1516312126626acbe60553c09c1ecebd477749536a91ea09010071c39",
+      "dimensions": [
+        1500,
+        1049
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-early-microscopes-v1",
+        "target": "public/assets/biology/y11-early-microscopes-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-27935cdc-9606-4f19-ad95-bc434742ad33.png",
+        "referencePaths": [
+          "public/assets/biology/y11-microscopy-pair-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-5d140bdf-db29-4697-b8f0-b5479ed41dcc.png",
+            "prompt": "Create ONE transparent PNG teaching plate for Year11 Biology in the HSCScience house style: fine dark ink outlines and layered natural watercolour washes, softly modelled form, clean alpha edges, no paper rectangle. Two seventeenth-century microscopes side by side, isolated with 8 percent clear margin, landscape canvas about2000x1400. LEFT a historically recognisable Hooke-style compound microscope, long tooled-leather and brass body tube on a ball-jointed stand, small specimen pin below lens; RIGHT a vanLeeuwenhoek single-lens microscope: small flat brass plate about matchbox size, one tiny central bead lens and specimen pin on a screw in front. Keep the small brass instrument readable by drawing it larger relative to compound microscope; do not make it a modern microscope. Restrained cream, warm brass, tan leather palette matching painted biological apparatus. Entire instruments visible, no cropping. No lamp, flask, table, background, ground shadow, people, hands, faces, portraits, text, numbers, labels, arrows or watermark. True transparent background, not a checkerboard painting. Output only this single plate.",
+            "reason": "Superseded: insufficient clear margin; edge QA pending",
+            "toolReferencePaths": []
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-27935cdc-9606-4f19-ad95-bc434742ad33.png",
+            "prompt": "Edit this microscope illustration only. Preserve the two historically recognisable instruments, their shapes, detail, warm brass/leather palette and ink-watercolour style. Repair the transparent cutout: remove every red, yellow or neon fringe, all outline halos and stray coloured edge pixels. Object edges must be natural dark ink against REAL alpha transparency, clean on both black and white backgrounds. Recompose by uniformly making BOTH instruments slightly smaller to provide at least8percent completely clear margin on ALL four sides; show both complete instruments including base and screws. Keep background entirely transparent with no shadow, no paper, no text, no labels, no extra objects. Preserve the pair as ONE landscape teaching plate.",
+            "reason": "Selected after margin repair, compositing QA pending",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-5d140bdf-db29-4697-b8f0-b5479ed41dcc.png"
+            ]
+          }
+        ],
+        "dimensions": [
+          1500,
+          1049
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1192338,
+        "visibleBboxAlpha128": [
+          256,
+          102,
+          1218,
+          934
+        ],
+        "alphaPartialPixels": 380693,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-early-microscopes-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-early-microscopes-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-early-microscopes-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-early-microscopes-v1-phone-600.png"
+        ],
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "6ac287e1516312126626acbe60553c09c1ecebd477749536a91ea09010071c39",
+        "bytes": 1062854,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "Recognisable compound and single-lens instruments, full bases/screws, readable historical contrast; scale difference is illustrative as approved."
+        },
+        "sourceReferences": [
+          {
+            "path": "public/assets/biology/y11-microscopy-pair-v1.png",
+            "sha256": "a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-cork-cells-v1.png",
+      "path": "public/assets/biology/y11-cork-cells-v1.png",
+      "sha256": "356371cb30184f11ea459aef0f3c5ffd428817a74c056d68077c5444523a2f21",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-cork-cells-v1",
+        "target": "public/assets/biology/y11-cork-cells-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-21525213-d61b-40d6-a3ab-6488c96bb4a0.png",
+        "referencePaths": [
+          "public/assets/biology/y11-microscopy-pair-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-04c498c6-ba4c-4fba-a523-03df1b71e675.png",
+            "prompt": "Generate ONE square transparent PNG teaching plate, about1600x1600, in fine dark ink outlines with layered warm brown and tan watercolour washes, matching an elegant hand-painted biology atlas. A circular microscope field of a thin slice of dead cork: irregular rows of adjacent empty box-like rectangular cells, honeycomb architecture but recognisably cork rectangular boxes, thin brown walls, pale empty interiors. No nuclei, no organelles, no living contents, no dots inside the cells. View straight through thin cork section. Entire circular field centred with at least8percent transparent margin. Soft dark circular optical vignette at field edge fades smoothly to real alpha, outside fully transparent. Natural painted texture INSIDE cells and walls, no paper background. No microscope instrument, labels, letters, numbers, scale bar, arrows, people, hands or watermark. Output only one circular field.",
+            "reason": "Superseded after QA: insufficient clear outer margin",
+            "toolReferencePaths": []
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-21525213-d61b-40d6-a3ab-6488c96bb4a0.png",
+            "prompt": "Edit only the framing of this existing cork microscope field. Preserve the exact empty cork-cell architecture, warm brown/tan watercolour, circular optical field and soft dark vignette. Uniformly reduce the entire circle to80percent of the square canvas width and height, centred, so there is10percent fully transparent clear margin on every side. Do not crop or change cells. Outside circle must be real alpha transparency with no paper, halo or rectangle. No nuclei, contents, text, arrows, labels or extra objects. Preserve square canvas and painted scientific style.",
+            "reason": "Tool framing repair, composite QA pending",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-04c498c6-ba4c-4fba-a523-03df1b71e675.png"
+            ]
+          }
+        ],
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 773786,
+        "visibleBboxAlpha128": [
+          123,
+          127,
+          1119,
+          1139
+        ],
+        "alphaPartialPixels": 797976,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-cork-cells-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-cork-cells-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-cork-cells-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-cork-cells-v1-phone-600.png"
+        ],
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "356371cb30184f11ea459aef0f3c5ffd428817a74c056d68077c5444523a2f21",
+        "bytes": 1685921,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "Empty cork boxes, brown walls only, no nuclei or organelles; circular edge clear and vignette fades to alpha."
+        },
+        "sourceReferences": [
+          {
+            "path": "public/assets/biology/y11-microscopy-pair-v1.png",
+            "sha256": "a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-sem-bacteria-v1.png",
+      "path": "public/assets/biology/y11-sem-bacteria-v1.png",
+      "sha256": "d9cd9968db98b2f7ed20193a3a7402a27d055810d5fba00999d6f4fbe0cc69cd",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "provenance": {
+        "id": "y11-sem-bacteria-v1",
+        "target": "public/assets/biology/y11-sem-bacteria-v1.png",
+        "generatedPath": "C:/lesson-video-generator/work/brief147/y11-sem-bacteria-v1-clean.png",
+        "referencePaths": [
+          "public/assets/biology/y11-microscopy-pair-v1.png",
+          "public/assets/biology/y11-prokaryote-cutaway-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-566e5a30-b846-46e5-8996-ebcea4f413d2.png",
+            "prompt": "Create ONE transparent PNG biology teaching plate in a painted scanning-electron-micrograph style, landscape about2000x1300. Three or four separate rod-shaped bacteria resting on a modest textured surface island, viewed obliquely from above with convincing THREE-DIMENSIONAL surface topography, strong side lighting and soft contact shadows. Each rod has many SHORT FINE surface pili, visibly much shorter than its body length. Exactly ONE rod also has ONE long slender curling flagellum; the other rods have only short pili. GREYSCALE ONLY, no colour. Fine dark ink edges and layered grey watercolour texture matching a hand-painted scientific atlas rather than a photo or cartoon. Show only external surfaces, no cross-sections or internal organelles. Surface island fades smoothly to real transparent alpha at all edges with8percent clear margin, no rectangular opaque background. Keep every bacterium entirely visible. No text, labels, numbers, arrows, scale bar, instrument, people, hands or watermark. This is a single plate demonstrating SEM surface appearance.",
+            "reason": "Superseded after framing QA: surface/flagellum too close to edge",
+            "toolReferencePaths": []
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-f9efdcce-7141-438f-b02f-9fc72b8abe3f.png",
+            "prompt": "Edit only framing and transparency of this existing greyscale SEM-style teaching plate. Preserve all FOUR rod bacteria exactly, their short fine pili, ONE long flagellum, surface topography, lighting, grey ink-watercolour texture and modest textured surface island. Uniformly reduce the entire illustration to80percent of the SAME landscape canvas width and height and centre it, with at least8percent completely clear transparent margin on all sides. Gently fade the textured surface island into REAL alpha transparency; no grey rectangle, no glow halo or opaque background. All bacteria and flagellum wholly inside frame. No new objects, sections, colour, text, labels, arrows, people or hands.",
+            "reason": "Tool-only margin/alpha framing repair, QA pending",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-566e5a30-b846-46e5-8996-ebcea4f413d2.png"
+            ]
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-bda2274b-3520-45b8-9fa4-14b1708f2f15.png",
+            "prompt": "Make ONE tiny cleanup to this image: remove the single isolated bright white speck floating just ABOVE the tip of the long flagellum in the upper-right transparent area. Replace that speck with completely transparent pixels. Preserve every other element exactly: same four bacteria, pili, single flagellum shape, positions, scale, canvas, textured surface island, greyscale watercolour detail, lighting, faded alpha edges and clear margins. Do not redraw, recolour, add anything or change the framing. Keep real alpha transparency. No text or labels.",
+            "reason": "Rejected: tool flattened background; alpha minimum78, no fully transparent pixel",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-f9efdcce-7141-438f-b02f-9fc72b8abe3f.png"
+            ]
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-df848e70-79cf-4dee-91c7-e9a0b785fa4e.png",
+            "prompt": "Clean ONE isolated tiny white speck just above the long flagellum's tip in the upper-right clear area of this reference. Keep the exact remaining four-bacteria illustration and TRUE transparent-alpha cutout from this reference. Do not create any background, vignette, checkerboard, grey field or shadow in the clear areas. Every outer corner and the generous outer margin MUST remain completely TRANSPARENT with alphaZERO, not partially opaque grey. Preserve the existing modest textured surface island and its fade only near the bacteria. Same1536x1024 landscape canvas, same four rods and short pili, single long flagellum, scientific greyscale watercolour rendering, scale and positions. The tiny isolated speck alone is removed; everything else unchanged. Transparent PNG.",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-bda2274b-3520-45b8-9fa4-14b1708f2f15.png"
+            ],
+            "reason": "Rejected: isolated speck retained"
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-fbfe1f0a-d330-4a03-becd-509cd9565cf2.png",
+            "prompt": "Generate a clean transparent PNG scientific teaching illustration, landscape3:2 canvas. FOUR grey rod-shaped bacteria seen in oblique SEM surface view, resting on a SMALL textured surface island confined to the CENTRAL75percent of the canvas. All outside that island and bacteria is COMPLETELY TRANSPARENT alpha0, especially all corners and a10percent clear outer margin. No black/grey background, no vignette, no glow, no floating specks, no detached particles or dots. Greyscale ONLY, fine dark ink edges and layered grey watercolour washes, hand-painted scientific atlas. The rods are visibly three-dimensional with surface texture and side-lighting. Each has many short fine attached pili. Exactly ONE rod has ONE long thin curling flagellum, fully inside the margin with a clean tip; other rods have only pili. No internal anatomy or sectioning. Surface island can feather naturally ONLY immediately at its edge into alpha, no broad halo. All four complete bacteria, distinct and uncropped. No text, letters, numbers, labels, arrows, scale bars, watermarks, instruments, people or hands.",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-df848e70-79cf-4dee-91c7-e9a0b785fa4e.png"
+            ],
+            "reason": "Not selected; framed earlier master preserves desired composition"
+          }
+        ],
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaZeroPixels": 723952,
+        "visibleBboxAlpha128": [
+          171,
+          125,
+          1370,
+          904
+        ],
+        "alphaPartialPixels": 848912,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-sem-bacteria-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-sem-bacteria-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-sem-bacteria-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-sem-bacteria-v1-phone-600.png"
+        ],
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "selectedGeneratedMaster": "C:/Users/kygs/.codex/generated_images/01a19ba6-cd31-7f31-980e-ffb4863f7b4d/exec-f9efdcce-7141-438f-b02f-9fc72b8abe3f.png",
+        "localCleanup": "work/brief147/sem-local-cleanup.json",
+        "sha256": "d9cd9968db98b2f7ed20193a3a7402a27d055810d5fba00999d6f4fbe0cc69cd",
+        "bytes": 2339303,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "Four external rod bacteria, short pili and one long flagellum; greyscale surface topology, clear isolated cutout. One detached speck removed by authorised Node alpha-only edit."
+        },
+        "sourceReferences": [
+          {
+            "path": "public/assets/biology/y11-microscopy-pair-v1.png",
+            "sha256": "a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56"
+          },
+          {
+            "path": "public/assets/biology/y11-prokaryote-cutaway-v1.png",
+            "sha256": "83d02756fb2a5625f1279f212625923a1a026e0bfb3e3c57ebb5a984c342e8db"
+          }
+        ],
+        "finalPixels": "authorised Node alpha-only cleanup; see sem-local-cleanup.json; original master preserved"
+      }
+    },
+    {
+      "name": "y11-red-cell-lysed-v1.png",
+      "path": "public/assets/biology/y11-red-cell-lysed-v1.png",
+      "sha256": "9d5e5f46691fef3ccd1c94661fea3682790e582e0ee504a2f5f2ca05b84d3c33",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-red-cell-lysed-v1",
+        "target": "public/assets/biology/y11-red-cell-lysed-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-67da781f-35db-4677-a930-565bc53bd920.png",
+        "referencePaths": [
+          "C:/lesson-video-generator/docs/production/claude-pm/assets/brief147-qa/sphere-native-reference.png",
+          "public/assets/biology/y11-animal-tonicity-cells-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-67da781f-35db-4677-a930-565bc53bd920.png",
+            "prompt": "Edit ONLY the single red-blood-cell sphere in this1000x1000 transparent reference into its lysed state for a clean cross-fade. Preserve exactly the same canvas, centre at500,500, natural outer diameter about400pixels, same lighting direction and delicate watercolour rendering; do not enlarge the cell to fill the canvas. A pale almost colourless deflated membrane GHOST, approximately round outer outline retaining the previous sphere's footprint, with ONE clearly visible torn opening on the right-upper edge. Soft folded translucent membrane, faint blush of red remaining near tear, a short faint red wisp escaping from that tear and fading naturally to alpha. No intact red mass, no second cell, no nucleus, no spiky crenation. Keep cell recognisable at300pixel-wide displayed canvas by a restrained ink edge, without white halo. TRUE transparent background and clear margins, no backdrop, no shadow rectangle, no labels, text, arrows, hands, people or watermark. Only change the cell's rupture/deflation/colour state; keep its registration and scale.",
+            "reason": "Initial generated rupture state, native-registration QA pending",
+            "toolReferencePaths": [
+              "C:/lesson-video-generator/docs/production/claude-pm/assets/brief147-qa/sphere-native-reference.png"
+            ]
+          }
+        ],
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1355252,
+        "visibleBboxAlpha128": [
+          375,
+          379,
+          906,
+          875
+        ],
+        "alphaPartialPixels": 217206,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-red-cell-lysed-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-red-cell-lysed-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-red-cell-lysed-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-red-cell-lysed-v1-phone-600.png"
+        ],
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "9d5e5f46691fef3ccd1c94661fea3682790e582e0ee504a2f5f2ca05b84d3c33",
+        "bytes": 468268,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "One pale folded membrane ghost and visible tear/wisp; original red sphere palette/lighting and logical footprint retained; registered cross-fade QA passed."
+        },
+        "sourceReferences": [
+          {
+            "path": "C:/lesson-video-generator/docs/production/claude-pm/assets/brief147-qa/sphere-native-reference.png",
+            "sha256": "df1c592d30a26d8b37bf9263b890a4033d5d3795fe5cc7ee69e0ef50ce21b5c3"
+          },
+          {
+            "path": "public/assets/biology/y11-animal-tonicity-cells-v1.png",
+            "sha256": "f5945f413f8bad94053dee017496abd1a087edcb9dac01094f7ebb51f8a7434d"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-lettuce-leaf-crisp-v1.png",
+      "path": "public/assets/biology/y11-lettuce-leaf-crisp-v1.png",
+      "sha256": "1f9a132fce073879645d59b2277bad39a0e482ff84037938ad92f7cddda0021e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-lettuce-leaf-crisp-v1",
+        "target": "public/assets/biology/y11-lettuce-leaf-crisp-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-46db7997-d54e-4fa6-990a-08c66194d66d.png",
+        "referencePaths": [
+          "public/assets/biology/y11-root-cell-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-46db7997-d54e-4fa6-990a-08c66194d66d.png",
+            "prompt": "ONE transparent PNG scientific teaching plate of ONE loose-leaf green lettuce leaf, UPRIGHT CRISP RECOVERED state. Portrait canvas4:5 aspect about1600x2000. Fine dark natural ink contours with layered green watercolour washes, hand-painted biology atlas style; central pale green midrib and characteristic branching veins, ruffled scalloped edge, firm glossy fresh healthy leaf. Complete single detached leaf with short pale stem/base, no roots or other leaves. Fixed registration for a future matched wilted state: stem base exactly at horizontal centre and88percent of canvas height; leaf tip near12percent height; keep at least8percent entirely clear margin. Natural mild three-quarter front view, green face visible. Leaf is firm and spread rather than drooped. No glass, no water, no floor, no shadow, no background, no paper rectangle. TRUE ALPHA transparency with clean natural edges on black and white. No text, labels, arrows, numbers, people, hands or watermark. This is not a salad or whole lettuce head; it is ONE leaf.",
+            "reason": "Matched-pair crisp master, QA pending",
+            "toolReferencePaths": []
+          }
+        ],
+        "dimensions": [
+          1122,
+          1402
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 925405,
+        "visibleBboxAlpha128": [
+          90,
+          135,
+          1038,
+          1269
+        ],
+        "alphaPartialPixels": 647545,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-crisp-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-crisp-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-crisp-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-crisp-v1-phone-600.png"
+        ],
+        "baseAnchor": {
+          "x": 547.3648170011807,
+          "y": 1269,
+          "coordinateSystem": "native canvas"
+        },
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "1f9a132fce073879645d59b2277bad39a0e482ff84037938ad92f7cddda0021e",
+        "bytes": 1561310,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "One firm upright glossy leaf; same leaf identity and stem base as wilted partner."
+        },
+        "sourceReferences": [
+          {
+            "path": "public/assets/biology/y11-root-cell-v1.png",
+            "sha256": "15a6a8cd27a760341d7a1ba8886e184c1678cb361a04289c67cf3f4351ffe5f9"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-lettuce-leaf-wilted-v1.png",
+      "path": "public/assets/biology/y11-lettuce-leaf-wilted-v1.png",
+      "sha256": "4e2d244d097894f092ee514ac50dbc58ee7842ccf32bea95f5fbdc3adf1b0ba9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-lettuce-leaf-wilted-v1",
+        "target": "public/assets/biology/y11-lettuce-leaf-wilted-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-8d5ea8e1-b3bf-44f7-8967-ee878309f266.png",
+        "referencePaths": [
+          "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-46db7997-d54e-4fa6-990a-08c66194d66d.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-8d5ea8e1-b3bf-44f7-8967-ee878309f266.png",
+            "prompt": "Create the WILTED state of this EXACT same single loose-leaf lettuce leaf, for a matched educational before/after cross-fade. Edit the reference, keeping its exact portrait canvas dimensions, transparent background, fixed short stem base at exactly the same coordinate and same stem size, green hue, identity, branching vein pattern, ruffled edge features, lighting and fine ink-watercolour style. Change only water-loss posture: the upper blade becomes limp and folds over, drooping clearly to the RIGHT, with the midrib bending in its upper half; blade slightly duller and less glossy but still GREEN and living, not yellow/brown, torn or rotten. Retain the same true leaf size: bent/folded rather than shrunk into a different smaller leaf. Keep at least8percent clear margin and the whole drooping blade in the frame. One leaf only, no glass, water, floor, shadow, other leaves, people, hands, text, labels, arrows or watermark. REAL ALPHA transparency with clean natural edges. The base MUST remain registered to the exact same pixel point as the upright reference.",
+            "reason": "Wilted edit of crisp master; same-canvas/base QA pending",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-46db7997-d54e-4fa6-990a-08c66194d66d.png"
+            ]
+          }
+        ],
+        "dimensions": [
+          1122,
+          1402
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1009475,
+        "visibleBboxAlpha128": [
+          91,
+          277,
+          1042,
+          1271
+        ],
+        "alphaPartialPixels": 563427,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-wilted-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-wilted-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-wilted-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-lettuce-leaf-wilted-v1-phone-600.png"
+        ],
+        "baseAnchor": {
+          "x": 542.2275312855518,
+          "y": 1271,
+          "coordinateSystem": "native canvas"
+        },
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "4e2d244d097894f092ee514ac50dbc58ee7842ccf32bea95f5fbdc3adf1b0ba9",
+        "bytes": 1359804,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "Same green leaf with limp rightward fold, no damage; stem registration differs about5x2nativepixels, under1percent."
+        },
+        "sourceReferences": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-46db7997-d54e-4fa6-990a-08c66194d66d.png",
+            "sha256": "1f9a132fce073879645d59b2277bad39a0e482ff84037938ad92f7cddda0021e"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-garden-slug-v1.png",
+      "path": "public/assets/biology/y11-garden-slug-v1.png",
+      "sha256": "95d13d705d25d6ab0baf5c6f62f20d276e2b27a3cf5578d253ae06145eb13ca9",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "id": "y11-garden-slug-v1",
+        "target": "public/assets/biology/y11-garden-slug-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-1c8dcb51-8dd7-488c-bc6d-9eec86a5e043.png",
+        "referencePaths": [
+          "public/assets/biology/y11-prokaryote-cutaway-v1.png"
+        ],
+        "versions": [
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-0e8bea95-e24f-4e05-9581-42329fb5adc4.png",
+            "prompt": "Create ONE isolated healthy brown garden slug in SIDE VIEW, gliding naturally, entire animal visible from tail to tips of extended eyestalks. Transparent PNG teaching sprite, landscape2:1 aspect about2000x1000, centred with8percent clear margin. Fine natural dark ink outline, layered brown/tan/olive watercolour washes, moist subtly glossy granular skin and a clearly recognisable mantle near head, slim flexible foot, two long upper eyestalks and two short lower sensory tentacles. Natural science atlas style, not cute cartoon, not photoreal studio product. Healthy calm extended posture, not distressed, shrivelled or dead. NO SALT, no wounds, no damage, no face expression, no human features. No ground, path, leaf, soil, puddle, ground shadow or background; all outside the animal is TRUE alpha transparency. No text, labels, arrows, numbers, watermark, people or hands. Output one slug only.",
+            "reason": "Superseded after QA: insufficient clear outer margin",
+            "toolReferencePaths": []
+          },
+          {
+            "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-1c8dcb51-8dd7-488c-bc6d-9eec86a5e043.png",
+            "prompt": "Edit ONLY framing of this healthy brown slug teaching sprite. Keep the exact animal, anatomy, extended two upper eyestalks and two shorter lower tentacles, healthy posture, brown moist watercolour skin, lighting, side view and horizontal orientation. Uniformly make the complete slug80percent as large within the SAME landscape2:1 canvas, centred, leaving at least8percent completely transparent space at both tail and eyestalk ends, with ample clear top/bottom margin. NO cropping, ground, shadow, background, salt, injury, shrivelling, text, arrows, labels or new objects. Preserve true alpha transparency and clean natural edge.",
+            "reason": "Tool framing repair, composite QA pending",
+            "toolReferencePaths": [
+              "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-cd31-7f31-980e-ffb4863f7b4d\\exec-0e8bea95-e24f-4e05-9581-42329fb5adc4.png"
+            ]
+          }
+        ],
+        "dimensions": [
+          1774,
+          887
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1338563,
+        "visibleBboxAlpha128": [
+          175,
+          261,
+          1621,
+          612
+        ],
+        "alphaPartialPixels": 234661,
+        "qaFiles": [
+          "docs/production/claude-pm/assets/brief147-qa/y11-garden-slug-v1-black.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-garden-slug-v1-white.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-garden-slug-v1-phone-300.png",
+          "docs/production/claude-pm/assets/brief147-qa/y11-garden-slug-v1-phone-600.png"
+        ],
+        "styleReferenceRole": "Listed local references were visually inspected for style; brand-new calls used text prompts without attached reference paths. State edits used the preceding generated image or QA registration reference.",
+        "sha256": "95d13d705d25d6ab0baf5c6f62f20d276e2b27a3cf5578d253ae06145eb13ca9",
+        "bytes": 666709,
+        "qa": {
+          "status": "pass",
+          "nativeBlackViewed": true,
+          "nativeWhiteViewed": true,
+          "phoneLandscape300Viewed": true,
+          "phoneLandscape600Viewed": true,
+          "cleanVisibleEdges": true,
+          "trueAlphaVerified": true,
+          "noPeopleHandsTextLabels": true,
+          "contentNotes": "Healthy brown moist slug, extended upper/lower tentacles, no salt, distress or injuries; complete tail/tips and clear margin."
+        },
+        "sourceReferences": [
+          {
+            "path": "public/assets/biology/y11-prokaryote-cutaway-v1.png",
+            "sha256": "83d02756fb2a5625f1279f212625923a1a026e0bfb3e3c57ebb5a984c342e8db"
+          }
+        ],
+        "finalPixels": "untouched builtin generated bytes"
+      }
+    },
+    {
+      "name": "y11-fluid-mosaic-v1.png",
+      "path": "public/assets/biology/y11-fluid-mosaic-v1.png",
+      "sha256": "0bacff3370e37c142e85764d7ab6f4f8cf7969be03ac00cb5a2a08d4ad4abef3",
+      "dimensions": [
+        1967,
+        799
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-fluid-mosaic-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-4f6ea345-46ba-41f5-b1dd-f309ac56237b.png",
+        "destination": "public/assets/biology/y11-fluid-mosaic-v1.png",
+        "sha256": "0bacff3370e37c142e85764d7ab6f4f8cf7969be03ac00cb5a2a08d4ad4abef3",
+        "dimensions": [
+          1967,
+          799
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1054692,
+        "alphaIntermediatePixels": 516305,
+        "alphaOpaquePixels": 636,
+        "alphaBbox": [
+          0,
+          39,
+          1929,
+          799
+        ],
+        "substantialAlphaBbox128": [
+          201,
+          109,
+          1776,
+          676
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fluid-mosaic-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "inspected: main parts readable; membrane specific part labels belong in code, not paint",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-phospholipid-v1.png",
+      "path": "public/assets/biology/y11-phospholipid-v1.png",
+      "sha256": "768e35d54c0d6ae0aae1080cdab1498af56d385e853ddfe9ac5d7764a74ccf8c",
+      "dimensions": [
+        821,
+        1915
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-phospholipid-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-ac207797-0c24-48f3-bac7-4d120f3825d2.png",
+        "destination": "public/assets/biology/y11-phospholipid-v1.png",
+        "sha256": "768e35d54c0d6ae0aae1080cdab1498af56d385e853ddfe9ac5d7764a74ccf8c",
+        "dimensions": [
+          821,
+          1915
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1209207,
+        "alphaIntermediatePixels": 362378,
+        "alphaOpaquePixels": 630,
+        "alphaBbox": [
+          33,
+          25,
+          783,
+          1899
+        ],
+        "substantialAlphaBbox128": [
+          192,
+          249,
+          622,
+          1678
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-phospholipid-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "inspected: main parts readable; membrane specific part labels belong in code, not paint",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-fused-cells-before-v1.png",
+      "path": "public/assets/biology/y11-fused-cells-before-v1.png",
+      "sha256": "f63022c1b654fe27db7cc6777a802de433e5b4bcbbbfac29dd4029f7c6bdb511",
+      "dimensions": [
+        1620,
+        971
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-fused-cells-before-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-e0906cd2-fa28-4324-b782-f362e3686280.png",
+        "destination": "public/assets/biology/y11-fused-cells-before-v1.png",
+        "sha256": "f63022c1b654fe27db7cc6777a802de433e5b4bcbbbfac29dd4029f7c6bdb511",
+        "dimensions": [
+          1620,
+          971
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 912484,
+        "alphaIntermediatePixels": 660075,
+        "alphaOpaquePixels": 461,
+        "alphaBbox": [
+          0,
+          0,
+          1604,
+          971
+        ],
+        "substantialAlphaBbox128": [
+          193,
+          161,
+          1425,
+          810
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-before-v1-phone600-white.png"
+        ],
+        "copyVerified": false,
+        "qa": {
+          "nativeBlackWhite": "Rechecked after one-column padding; no visual changes or extra outline. True alpha remains0..255.",
+          "phone300and600": "Rechecked after padding; unchanged legibility and aligned pair.",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        },
+        "imageGenOriginal": {
+          "path": "C:\\lesson-video-generator\\work\\brief147\\y11-fused-cells-before-v1-imagegen-original.png",
+          "sha256": "bff2e2fd36e82f69d00ccc1fc024fdb5c5cc6ed58ce2a3d1b67923269157ed44",
+          "dimensions": [
+            1619,
+            971
+          ]
+        },
+        "localEdit": {
+          "method": "Node/pngjs lossless canvas padding: one transparent RGBA(0,0,0,0) column appended at right. No resampling or changes within original extent.",
+          "authorization": "Parent-directed current task; brief139-manifest.json userApproval records: Yes, use local pixel editing",
+          "script": "work/brief147/pad-fusion-canvas.mjs",
+          "pixelIdentityInsideOriginalExtent": true,
+          "changedOriginalRgbaBytes": 0,
+          "newColumnNonzeroRgbaBytes": 0,
+          "newColumnPixels": 971,
+          "otherSixAssetsUnchanged": true
+        }
+      }
+    },
+    {
+      "name": "y11-fused-cells-after-v1.png",
+      "path": "public/assets/biology/y11-fused-cells-after-v1.png",
+      "sha256": "615f9a4ddd03e93c1b7b1eecba3910fd7bb54b0b2bded3728125591aff255227",
+      "dimensions": [
+        1620,
+        971
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-fused-cells-after-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-84125a5c-4c1f-4ea4-844d-bb3f78c5df29.png",
+        "destination": "public/assets/biology/y11-fused-cells-after-v1.png",
+        "sha256": "615f9a4ddd03e93c1b7b1eecba3910fd7bb54b0b2bded3728125591aff255227",
+        "dimensions": [
+          1620,
+          971
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 874627,
+        "alphaIntermediatePixels": 697736,
+        "alphaOpaquePixels": 657,
+        "alphaBbox": [
+          0,
+          157,
+          1536,
+          817
+        ],
+        "substantialAlphaBbox128": [
+          191,
+          161,
+          1426,
+          811
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-fused-cells-after-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "inspected: main parts readable; membrane specific part labels belong in code, not paint",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-visking-tubing-flat-v1.png",
+      "path": "public/assets/biology/y11-visking-tubing-flat-v1.png",
+      "sha256": "c0382152b0da2dc34f049a959d463d503504a6a164a329812fe1073d797209f9",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-visking-tubing-flat-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-4607aeaf-c8ba-4f98-bff8-460c7277883b.png",
+        "destination": "public/assets/biology/y11-visking-tubing-flat-v1.png",
+        "sha256": "c0382152b0da2dc34f049a959d463d503504a6a164a329812fe1073d797209f9",
+        "dimensions": [
+          2172,
+          724
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1088209,
+        "alphaIntermediatePixels": 484079,
+        "alphaOpaquePixels": 240,
+        "alphaBbox": [
+          0,
+          9,
+          2156,
+          675
+        ],
+        "substantialAlphaBbox128": [
+          202,
+          235,
+          1971,
+          489
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-tubing-flat-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "inspected: main parts readable; membrane specific part labels belong in code, not paint",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-visking-bag-floppy-v1.png",
+      "path": "public/assets/biology/y11-visking-bag-floppy-v1.png",
+      "sha256": "23423783280299dd81e4e488242f6969ab239b5293af3a461b9d063e81d7df33",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-visking-bag-floppy-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-1fc90838-10a1-4d25-a362-4e0d9fbe4d1e.png",
+        "destination": "public/assets/biology/y11-visking-bag-floppy-v1.png",
+        "sha256": "23423783280299dd81e4e488242f6969ab239b5293af3a461b9d063e81d7df33",
+        "dimensions": [
+          1983,
+          793
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1255022,
+        "alphaIntermediatePixels": 317414,
+        "alphaOpaquePixels": 83,
+        "alphaBbox": [
+          0,
+          97,
+          1961,
+          769
+        ],
+        "substantialAlphaBbox128": [
+          145,
+          292,
+          1837,
+          491
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-floppy-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "inspected: main parts readable; membrane specific part labels belong in code, not paint",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-visking-bag-swollen-v1.png",
+      "path": "public/assets/biology/y11-visking-bag-swollen-v1.png",
+      "sha256": "335afee9818527e0a797bff344248dd3865abe56db8bbc0e4f9c06d8506a3d1c",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": {
+        "name": "y11-visking-bag-swollen-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19ba6-e241-7b10-85e7-4285aa8722c8\\exec-460f07b7-e6d7-4e97-9c17-458479028391.png",
+        "destination": "public/assets/biology/y11-visking-bag-swollen-v1.png",
+        "sha256": "335afee9818527e0a797bff344248dd3865abe56db8bbc0e4f9c06d8506a3d1c",
+        "dimensions": [
+          1983,
+          793
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1192652,
+        "alphaIntermediatePixels": 379731,
+        "alphaOpaquePixels": 136,
+        "alphaBbox": [
+          0,
+          64,
+          1957,
+          789
+        ],
+        "substantialAlphaBbox128": [
+          143,
+          261,
+          1840,
+          527
+        ],
+        "qaFiles": [
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-native-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-native-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-phone300-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-phone300-white.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-phone600-black.png",
+          "docs\\production\\claude-pm\\assets\\brief147-qa\\y11-visking-bag-swollen-v1-phone600-white.png"
+        ],
+        "copyVerified": true,
+        "qa": {
+          "nativeBlackWhite": "inspected: clean object silhouette with normal antialiasing; no paper rectangle, broad halo, glow or shadow",
+          "phone300and600": "Revised smoothly bulging taut state inspected at300/600; visually distinct from slack before state.",
+          "noBakedText": true,
+          "noPeopleHandsFaces": true,
+          "trueAlpha": true
+        }
+      }
+    },
+    {
+      "name": "y11-mesosome-chemical-v1.png",
+      "path": "public/assets/biology/y11-mesosome-chemical-v1.png",
+      "sha256": "23ad7830341a040bd71dc1c80a25bfcc683074d3ce03b1bbd246aca258bec93d",
+      "dimensions": [
+        1752,
+        897
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": [
+        {
+          "prompt": "Use case: scientific-educational. Asset: y11-mesosome-chemical-v1.png, a Year 11 biology textbook plate, one bacterium in thin section, landscape canvas about 2000 x 1200 with 8 percent transparent clear margin. Fine dark ink and delicately layered watercolour, painted greyscale TEM appearance, grayscale ONLY. One horizontal rod-shaped bacterium with rounded ends, fine dark double boundary representing wall and cell membrane, pale fibrous nucleoid centrally, finely granular cytoplasm and small dark ribosome dots. At the LOWER RIGHT side only, one clearly visible membrane infolding connected to the inner boundary: a rounded pocket containing folded membrane loops, representing the mesosome preparation artefact. It must be connected to the membrane, not a free floating organelle. Cell outline smooth elsewhere. No flagellum, no pili, no capsules outside the thin section. Isolated specimen, genuinely transparent background outside the cell, clean alpha edges with no halo. No text, labels, arrows, scale bar, people, hands, faces, instruments or circular micrograph field. Keep the entire cell within clear margin. This will be the master for a second exactly aligned image with only the lower-right membrane pocket removed; preserve a simple stable horizontal silhouette.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-c210e03c-732c-4746-9d0f-9220a07e2bde.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        },
+        {
+          "prompt": "Edit this existing chemical-preparation bacterium plate only. Keep the same bacterium, greyscale TEM watercolour/ink style, central fibrous nucleoid, dark ribosomes and connected lower-right folded mesosome pocket. Give the entire specimen a proper clear transparent margin: the bacterium must occupy ONLY 80 percent of the canvas width, centered, with at least 10 percent completely empty transparent pixels at left and right and ample top and bottom. Uniformly reduce the specimen, never stretch it. Clean the alpha: every background pixel outside the isolated cell must be fully transparent, with no stray speckles, haze, border residue or matte halo. Do not add text, labels, people, scale bars, instruments or extra structures. Preserve the specimen anatomy and connected membrane pocket. Output a landscape transparent PNG. This is the master for an aligned second state.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-44f9e885-f22b-4635-a3b7-914f933362bf.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root"
+    },
+    {
+      "name": "y11-mesosome-frozen-v1.png",
+      "path": "public/assets/biology/y11-mesosome-frozen-v1.png",
+      "sha256": "7ec1728fa93c3277dff325d95b6eb68c14bdc6e6b97e272a1674c3d9e7332a01",
+      "dimensions": [
+        1752,
+        897
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": [
+        {
+          "prompt": "Create the frozen-preparation counterpart of this exact existing bacterial thin-section plate. EDIT ONLY the folded membrane pocket at the LOWER RIGHT inside the bacterium. Remove the mesosome: replace that small local pocket with ordinary finely granular cytoplasm and a few matching dark ribosomes; restore the inner membrane there as one smooth continuous line along the unchanged outer rod silhouette. All other pixels, including the cell outline, position, scale, ribosome pattern, fibrous nucleoid, greyscale texture, canvas dimensions, alpha and empty transparent margins, must remain identical to the reference. Do not regenerate or reposition the rest of the cell. The pair will be overlaid at 50 percent to test exact registration and to cross-fade only the pocket. Keep genuine transparency, clean edges, no text, no labels, no scale bar, no additional structures.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-69cac9e9-3a65-4791-b46e-1213a7501969.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root",
+      "localEdit": "Generated pocket-only counterpart composited into master inside x1150..1449 y465..699; all outside RGBA pixels and all alpha bytes preserved, same canvas. Original source and Node script retained in work/brief147."
+    },
+    {
+      "name": "y11-permanganate-agar-before-v1.png",
+      "path": "public/assets/biology/y11-permanganate-agar-before-v1.png",
+      "sha256": "bf91960f38d11130aa5996fa67fd957b728a0e9099afb6e598de0f90178f5b74",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "provenance": [
+        {
+          "prompt": "Scientific educational plate, transparent PNG. One clear uncoloured agar jelly cube, on a simple pale transparent tray, three-quarter view. The cube represents a 1 cm specimen, shown large and readable, with softly translucent pale cream watercolour and fine dark ink outlines matching a biology textbook illustration. Leave generous clear margin. No purple, numbers, ruler, labels, text, hands, faces, people or other objects. The cube and tray must be positioned for later matched before and after states.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-458588ae-9c7e-450b-b82c-97d4c3cdc589.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root",
+      "illustrative": "Qualitative illustration, not a measured five-minute penetration depth."
+    },
+    {
+      "name": "y11-permanganate-agar-after-v1.png",
+      "path": "public/assets/biology/y11-permanganate-agar-after-v1.png",
+      "sha256": "7cf28aefc5e4875cc59418606080323a7df88d0c8e38ecfcbf022da06b20b9b8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "provenance": [
+        {
+          "prompt": "Edit this exact agar cube illustration into a matching AFTER state. Preserve the cube geometry, tray, view, position, scale, canvas and fine ink/watercolour style. The cube has been immersed in dilute purple permanganate and blotted: add a qualitative translucent purple tint ONLY within its outer region, leaving a lighter central interior visible. No puddle or liquid coating outside. This is a schematic illustrative outcome, not a measured penetration depth. Keep a truly transparent background and clean edges. No labels, text, numbers, ruler, hands, people or other objects.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-db12a92d-8cd7-41ed-91af-2e653da7ae9f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root",
+      "illustrative": "Qualitative illustration, not a measured five-minute penetration depth."
+    },
+    {
+      "name": "y11-permanganate-agar-cut-v1.png",
+      "path": "public/assets/biology/y11-permanganate-agar-cut-v1.png",
+      "sha256": "76e13102db40276956f002116f714593fd416922d8cd1efa1880d24f0ab49936",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "provenance": [
+        {
+          "prompt": "Edit the reference agar specimen into a clean bisected state for a scientific biology plate. One half of the SAME cube, matched to reference scale and three-quarter view, on the same transparent tray, with a fresh cut face turned toward viewer. Show a qualitative purple outer penetration region and lighter clear central core on the cut face. The freshly cut face itself has not been dipped into dye. Optional other half sits beside it at the same scale. This is a schematic illustration, not measured data. Fine dark ink and delicate watercolour, genuine transparent background, clean edges, no labels, text, numerals, ruler, people, hands, knife or other objects.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-08a5cf12-74b8-4559-b7ed-7d6d0ea1b65b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root",
+      "illustrative": "Qualitative illustration, not a measured five-minute penetration depth."
+    },
+    {
+      "name": "y11-top-pan-balance-v1.png",
+      "path": "public/assets/biology/y11-top-pan-balance-v1.png",
+      "sha256": "75dca871d9aee737ccfd4ced562ed25518bdcc12c4cdf661bdac21483f665853",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "provenance": [
+        {
+          "prompt": "Scientific educational plate, one school electronic top-pan balance isolated on a genuinely transparent background. Three-quarter view with a flat round brushed-metal pan and an evenly lit blank rectangular display facing the viewer, front display vertical and level, large enough for digits added later. No digits, marks, buttons with lettering, brand name, draft shield, object on pan, hands, faces, people, shadows or glow. Fine dark ink outlines and layered cream and grey watercolour, matching a biology textbook apparatus illustration. Leave at least eight percent transparent margin; no stretch. Approximately 2000 by 1500 landscape.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-6f21002a-e5a6-4f00-b0d2-522d3491d2ee.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        },
+        {
+          "prompt": "Edit this balance plate only: make the blank rectangular display perfectly front-facing and level, with horizontal top and bottom and vertical sides so flat coded digits can be placed inside. Retain the same balance, empty round metal pan, cream and grey ink-and-watercolour style, three-quarter apparatus view and transparent background. No digits, text, labels, brand, hands, people, extra objects, shadows or glow. Generous transparent margin.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-2f487ba1-56ee-4bcd-8574-e345067eadfc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root"
+    },
+    {
+      "name": "y11-visking-capillary-v1.png",
+      "path": "public/assets/biology/y11-visking-capillary-v1.png",
+      "sha256": "9897b903c0d3207722641c81bb7f60f379844cd65d56575c75b1cf68fe6af19b",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "provenance": [
+        {
+          "prompt": "Scientific educational apparatus plate in fine dark ink and layered watercolour, isolated on genuine transparent background. A clear glass beaker partly filled with water contains ONE filled Visking dialysis bag entirely submerged. Its open neck is securely tied around the bottom of a long, narrow, CLEAR GLASS CAPILLARY TUBE. The tube rises perfectly straight and vertical far above the beaker, its upper bore EMPTY AND CLEAR, no liquid inside above bag neck, so an animated column can be added later. A clamp grips the upper glass tube and attaches to a vertical retort stand beside the beaker, on a simple small stand base. All connections anatomically and mechanically correct, show the open tube communicating with the bag contents. Blank glass, no ruler or scale markings, no text, no labels, digits, logos, hands, people, faces, background, shadows or glow. Portrait composition with generous transparent margin, never stretched.",
+          "output": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4 as C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-1ecb9014-fe27-4055-a745-3a1f37b49c86.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+        }
+      ],
+      "qaDirectory": "docs/production/claude-pm/assets/brief147-qa/root"
+    }
+  ],
+  "sharedComponents": "src/explainer/biology/fa1/",
+  "reviewDrivenSubstitution": "Three schematic agar plates replace four misleading permanganate beaker requests. See work/brief147/v10/agar-repair-and-assets.json.",
+  "sourceReviews": "work/brief147/review-validation.json",
+  "inspection": "docs/production/claude-pm/assets/brief147-qa/",
+  "mesosomeExactRegistration": "work/brief147/root-art-independent-peer.json",
+  "fusionPadding": "work/brief147/fusion-padding-validation.json",
+  "components": "docs/production/claude-pm/checks/brief147-bio-fa1-components.md",
+  "optionalNotCommissioned": [
+    "y11-paper-towel-v1.png",
+    "y11-root-cell-many-mito-v1.png"
+  ]
+}

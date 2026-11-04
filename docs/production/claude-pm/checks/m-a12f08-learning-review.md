@@ -1,0 +1,10 @@
+# m-a12f08 learning review
+
+Revision 1, checked 4 November 2026. Source SHA-256 `67d697ae93ed8dce6973c551cd84b44afabf8238b71283fb5f04b664cdd5eed4`. Source review only; no voice or animation checked.
+
+The learner asks how a fixed percentage or factor models repeated growth. The hook counts six triplings from time zero, then distinguishes the term number from elapsed periods. The car example contrasts a 15% loss of the changing value with a fixed dollar loss; the oil output uses year 1 as the first term and a sum. The ball feedback counts the initial fall once and each later bounce height twice. Both attempt cards preserve the givens and conceal the answers.
+
+1. **Should fix:** Scene 4 says the bacterial colony passes one million “just before seven hours”, although the givens describe triplings per hour and do not establish the within-hour behaviour. The log boundary identifies the first integer hour under the period model. Replace the sentence with “The first whole hour above a million is seven”; keep the six- and seven-hour checks. This is shorter and preserves the taught result.
+2. **Should fix:** The handoff says every geometric model starts at time zero, even though scene 3 explicitly teaches that some sequences take their first term after one period. Replace “from a start at time zero” with “from its stated starting time” in the closing line. This preserves the comparison with the loan without reversing the earlier lesson.
+
+The f07 500-bacteria strip and ×3 handoff match the opening. The 30,000 loan, interest factor and repayment question match f09's opening. No f08 pack or approved route entry was found; propose the draft to root with its action, stated entry knowledge and boundaries. The outline agrees. Root decision 45 selects the shorter f08 title at revision. Count: 0 blockers, 2 should fix, 0 optional; 6,111 separate and 6,124 joined narration characters, about 560 s. Check cue timing and whether the proposed sign-flip explanation stays within the limit in the voiced preview.

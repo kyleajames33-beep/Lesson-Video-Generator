@@ -1,0 +1,86 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "vesicle-r2",
+      "name": "y11-vesicle-v1.png",
+      "path": "public\\assets\\biology\\y11-vesicle-v1.png",
+      "sha256": "81df3b6a28c68a08fc47316328aee1da5e0a6bb987fa27decc2147438839de88",
+      "dimensions": [
+        600,
+        600
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Edit empty vesicle sprite. Make the membrane ring much thinner, only about2 percent of vesicle diameter, with just two close delicate lilac contour strokes for a single membrane bilayer. Remove all chunky granules and bead shapes from membrane. Empty faintly translucent interior. Remove all magenta fringe outside. Preserve same round shape and transparent background, no glow, no text. Square600x600 with10percent margin, delicate ink-watercolour.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-cd41a672-c3ed-4465-bf56-817963479202.png"
+      ]
+    },
+    {
+      "key": "lys-before",
+      "name": "y11-lysosome-before-v1.png",
+      "path": "public\\assets\\biology\\y11-lysosome-before-v1.png",
+      "sha256": "ec9e4fc072cd68a9cef92e66e085d2b83292dde81f9c5da55067029981a375ae",
+      "dimensions": [
+        2000,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Separated painted lysosome and membrane-wrapped mitochondrion; fixed shared mitochondrial box x550,y385,w1260,h630 on2000x1400 canvas.",
+      "sourceCandidate": null,
+      "prompt": "2000x1400 landscape. One faded worn-out orange mitochondrion with irregular cristae on the right, matching reference organelle, and a small round pale-rose lysosome one third its length on the left, single smooth membrane and small darker enzyme granules. Mitochondrion is already enclosed in a separate thin pale autophagosome membrane, clearly not the mitochondrion's own envelope; lysosome nearby not yet fused. This supplies the wrapping membrane referred to in the requested after-state and avoids implying direct lysosome engulfment of a bare mitochondrion. Very pale local cytoplasm wash only immediately around both organelles, otherwise transparent. Keep simple horizontal arrangement for an aligned after-state. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-mitochondrion-v1.png"
+      ]
+    },
+    {
+      "key": "lys-after",
+      "name": "y11-lysosome-after-v1.png",
+      "path": "public\\assets\\biology\\y11-lysosome-after-v1.png",
+      "sha256": "b35aef187cafbd4ab63d2b9e079ef85267cc97478134faf771150d78c0bb9f14",
+      "dimensions": [
+        2000,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Isotropically registered degraded organelle to the same shared box and centre as before; the fused sac replaces the separate lysosome. No duplicate intact organelle remains.",
+      "sourceCandidate": null,
+      "prompt": "Edit this exact before-state into its aligned after-state, preserving canvas 1753x897, mitochondrion centre, size, viewpoint and palette. The small rose lysosome at left has FUSED with the pre-existing pale membrane wrapping the mitochondrion at right. Now a single ROSE membrane sac surrounds the partly broken-down mitochondrion at SAME right-hand location; the separate left lysosome no longer exists. Mitochondrial edges fragment and irregular cristae dissolve into granules inside the rose sac. Keep all changes local to those two organelles; no repositioning of the main mitochondrion. Transparent background, no shadow. This pair will be checked by overlay. Fine dark ink and layered watercolour school-science plate on TRUE transparent background, 10 percent clear margin, clean edges with no coloured fringe, no glow or ground shadow, no text labels numbers arrows scales brand people hands faces. ",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-fd96d7bf-690d-4c1b-8e70-92a125e47112.png"
+      ]
+    }
+  ],
+  "repairs": [
+    {
+      "file": "public\\assets\\biology\\y11-animal-organelles-set-v1.png",
+      "beforeSha256": "fde2fa473f0b4a0406eb7a833f12813c8f883d8f7e55354b1f8fea231bb9ee55",
+      "afterSha256": "23d7527e38099c04c370fbc573e02a70611c88bf9089cdd8ce6ee065d4ce9354",
+      "dimensions": [
+        1754,
+        897
+      ],
+      "changedAlphaPixels": 15358,
+      "rgbPixelsUnchanged": true,
+      "interiorRGBAUnchanged": true,
+      "geometryUnchanged": true,
+      "method": "Only saturated edge-matte alpha set to zero within five pixels of the original transparency boundary."
+    }
+  ],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

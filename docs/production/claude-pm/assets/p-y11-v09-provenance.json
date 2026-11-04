@@ -1,0 +1,64 @@
+{
+  "brief": 146,
+  "video": "v09",
+  "assets": [
+    {
+      "file": "public/assets/physics/y11p-dynamics-trolley-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "177f98b44e4be9213f59e0313051bbe6933a41da35f93219f5b6eec5f11dea71",
+      "sourceCandidate": "work/brief146/candidates/trolley.png",
+      "prompt": "side-on low blue-grey school dynamics trolley, two visible wheels and bumpers, no card or masses; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        180,
+        323,
+        1820,
+        677
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

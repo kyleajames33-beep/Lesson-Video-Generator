@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-31",
+  "kind": "final combined additive public-plot evidence",
+  "item": "C09 bromomethane MS",
+  "result": "verified",
+  "evidence": "[NIST MS 19630 public digitized plot](https://webbook.nist.gov/cgi/cbook.cgi?Index=0&Large=on&Spec=C74839&Type=Mass), independently inspected in `out/brief122-bromomethane-public-view.png`: approximate plot-read relative heights m/z 15:47%, 94:100%, 96:94%. Thus 15 is substantial enough to name and the molecular-ion pair is approximately equal. A drawing may use these rounded values labelled approximate; exact raw heights and a 70 eV condition were not independently obtained. The [record](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74839&Mask=200) explicitly restricts numerical download; no bypass was attempted. This closes the public-plot source request, not the separate SDBS cross-checks.",
+  "image": "out/brief122-bromomethane-public-view.png",
+  "image_sha256": "7aad67d98e64b571d29037eb926d9181889f5220d9c2394ec599c84478368160",
+  "counts": {
+    "cannot verify": 8,
+    "verified": 21,
+    "corrected": 2
+  },
+  "historical_archives": "Both prior archives and checkpoints remain unchanged.",
+  "g03": {
+    "result": "MS part verified; IR/NMR hold remains",
+    "evidence": "The [NIST MS 61712 public plot](https://webbook.nist.gov/cgi/cbook.cgi?Index=0&Large=on&Spec=C563804&Type=Mass), independently inspected, verifies 3-methylbutan-2-one base peak m/z 43 (100%) and molecular ion 86 (approximately 21%, plot-read). These MS facts are verified; no exact raw-height table is claimed. Pentan-3-ol, 2-methylbutan-2-ol and 2,2-dimethylpropanoic acid still need requested NMR and liquid-film IR records. The ketone liquid band near 1715, its own proton/carbon shifts and the pentanoic acid/pentan-2-one rival shifts remain unverified. G03 IR/NMR recording hold remains."
+  },
+  "archived_public_images": [
+    {
+      "path": "docs/production/claude-pm/assets/brief122-bromomethane-public-view.png",
+      "sha256": "7aad67d98e64b571d29037eb926d9181889f5220d9c2394ec599c84478368160",
+      "origin": "out/brief122-bromomethane-public-view.png"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief122-methylbutanone-public-view.png",
+      "sha256": "d567512b9bef27d6e193a62ca6998c0ab8de1725088b7398b5b72752609e7c33",
+      "origin": "out/brief122-methylbutanone-public-view.png"
+    }
+  ]
+}

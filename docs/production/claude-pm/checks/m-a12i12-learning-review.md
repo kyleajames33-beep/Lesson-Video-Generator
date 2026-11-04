@@ -1,0 +1,7 @@
+# m-a12i12 learning review
+
+Revision 1, checked 3 November 2026. Source SHA-256 `7c0a1dee832fc90cd7e6161d38f0cab2a78045e95b47468edf430ea9ae889578`. Written design only; no voiced preview.
+
+The opening matches i11's actual x³ handoff (root decision 35), and the power graph handoff matches i13. Symmetry is grounded in paired strips before the shortcut, symmetric limits and signed-versus-total area are explicit, shared edges explain trapezoidal weights, and concavity is scoped to the whole interval. Site problem 2 retains its values. The later pack's tasks and intermediate framing differ but its core aims are met; decision 32 accepts reconciliation.
+
+**Should fix:** scenes 8–9 demonstrate a simulated tool but do not ask learners to use an online application themselves. Replace scene 8's last sentence with a short pause invitation to enter one definite and one indefinite integral; use its named reserve cut to preserve length. Root decision 36 requires the precise 2024 reference-sheet expression and screen-only erf, and the shorter title; verify the sheet from an official 2024-syllabus sample before building, as the independently located official downloadable reference sheet is the 2020 examination version. The current spoken “erf” must be replaced by “a new function outside the course” under decision 36. Count: 0 blockers, 2 should fix, 0 optional; 6,224 separate characters, approximately 565 seconds before cuts.

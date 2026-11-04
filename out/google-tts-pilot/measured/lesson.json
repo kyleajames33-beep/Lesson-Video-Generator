@@ -1,0 +1,1453 @@
+{
+  "title": "How Do Insulin and Glucagon Regulate Blood Glucose? Two Feedback Loops",
+  "subtitle": "After a big pasta meal, glucose pours into your blood. Overnight you eat nothing for eight hours or more, yet your brain keeps using glucose. What brings blood glucose down after the meal, and what pushes it back up while you sleep?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 4,
+  "lessonIntent": "separating glucose (blood sugar, fuel), glycogen (stored glucose in liver and muscle) and glucagon (a hormone); stating the usual fasting range (about 4 to 6 mmol/L) and the temporary rise after a meal; naming the islets' beta cells (detect a rise, release insulin) and alpha cells (detect a fall, release glucagon) as receptor and control centre; explaining insulin's effects (muscle and fat cells take up more glucose as transporters move into the membrane; liver and muscle build glycogen, glycogenesis) and the fall in insulin as glucose returns (to a low background level); explaining glucagon's effect (the liver splits glycogen and releases glucose, glycogenolysis) when glucose falls; explaining why two opposing hormones give control in both directions; identifying the effectors (liver, muscle and fat cells, not the pancreas) and reading a graph in which insulin rises after glucose.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "pilot-only",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 750,
+      "voiceover": {
+        "text": "Picture a big bowl of pasta. Within an hour, glucose from that meal is pouring into your blood. Then you sleep for eight hours or more without eating, and your brain keeps using glucose all night. Yet a blood test at breakfast would usually show glucose back in its normal range. So what pulls glucose down after the meal, and what pushes it back up while you sleep?",
+        "audioFile": "out/google-tts-pilot/hook.wav",
+        "startFrame": 0,
+        "endFrame": 690
+      },
+      "captions": [
+        {
+          "text": "Picture",
+          "startMs": 360,
+          "endMs": 721,
+          "timestampMs": 540.5,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 801,
+          "endMs": 841,
+          "timestampMs": 821,
+          "confidence": null
+        },
+        {
+          "text": " big",
+          "startMs": 941,
+          "endMs": 1141,
+          "timestampMs": 1041,
+          "confidence": null
+        },
+        {
+          "text": " bowl",
+          "startMs": 1201,
+          "endMs": 1501,
+          "timestampMs": 1351,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1521,
+          "endMs": 1581,
+          "timestampMs": 1551,
+          "confidence": null
+        },
+        {
+          "text": " pasta.",
+          "startMs": 1701,
+          "endMs": 2202,
+          "timestampMs": 1951.5,
+          "confidence": null
+        },
+        {
+          "text": " Within",
+          "startMs": 2862,
+          "endMs": 3083,
+          "timestampMs": 2972.5,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 3103,
+          "endMs": 3163,
+          "timestampMs": 3133,
+          "confidence": null
+        },
+        {
+          "text": " hour,",
+          "startMs": 3203,
+          "endMs": 3443,
+          "timestampMs": 3323,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 3623,
+          "endMs": 4104,
+          "timestampMs": 3863.5,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 4124,
+          "endMs": 4244,
+          "timestampMs": 4184,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 4264,
+          "endMs": 4404,
+          "timestampMs": 4334,
+          "confidence": null
+        },
+        {
+          "text": " meal",
+          "startMs": 4444,
+          "endMs": 4664,
+          "timestampMs": 4554,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4724,
+          "endMs": 4784,
+          "timestampMs": 4754,
+          "confidence": null
+        },
+        {
+          "text": " pouring",
+          "startMs": 4944,
+          "endMs": 5505,
+          "timestampMs": 5224.5,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 5605,
+          "endMs": 5765,
+          "timestampMs": 5685,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 5785,
+          "endMs": 5885,
+          "timestampMs": 5835,
+          "confidence": null
+        },
+        {
+          "text": " blood.",
+          "startMs": 5905,
+          "endMs": 6165,
+          "timestampMs": 6035,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 6946,
+          "endMs": 7066,
+          "timestampMs": 7006,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 7106,
+          "endMs": 7226,
+          "timestampMs": 7166,
+          "confidence": null
+        },
+        {
+          "text": " sleep",
+          "startMs": 7286,
+          "endMs": 7547,
+          "timestampMs": 7416.5,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 7607,
+          "endMs": 7727,
+          "timestampMs": 7667,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 7807,
+          "endMs": 7987,
+          "timestampMs": 7897,
+          "confidence": null
+        },
+        {
+          "text": " hours",
+          "startMs": 8026.999999999999,
+          "endMs": 8307,
+          "timestampMs": 8167,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 8387,
+          "endMs": 8467,
+          "timestampMs": 8427,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 8507,
+          "endMs": 8708,
+          "timestampMs": 8607.5,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 8768,
+          "endMs": 9048,
+          "timestampMs": 8908,
+          "confidence": null
+        },
+        {
+          "text": " eating,",
+          "startMs": 9128,
+          "endMs": 9408,
+          "timestampMs": 9268,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9809,
+          "endMs": 9889,
+          "timestampMs": 9849,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 9909,
+          "endMs": 10009,
+          "timestampMs": 9959,
+          "confidence": null
+        },
+        {
+          "text": " brain",
+          "startMs": 10029,
+          "endMs": 10349,
+          "timestampMs": 10189,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 10429,
+          "endMs": 10629,
+          "timestampMs": 10529,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 10729,
+          "endMs": 10909,
+          "timestampMs": 10819,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 10950,
+          "endMs": 11370,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 11450,
+          "endMs": 11610,
+          "timestampMs": 11530,
+          "confidence": null
+        },
+        {
+          "text": " night.",
+          "startMs": 11650,
+          "endMs": 11910,
+          "timestampMs": 11780,
+          "confidence": null
+        },
+        {
+          "text": " Yet",
+          "startMs": 12731,
+          "endMs": 12891,
+          "timestampMs": 12811,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12971,
+          "endMs": 13011,
+          "timestampMs": 12991,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 13071,
+          "endMs": 13312,
+          "timestampMs": 13191.5,
+          "confidence": null
+        },
+        {
+          "text": " test",
+          "startMs": 13352,
+          "endMs": 13592,
+          "timestampMs": 13472,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 13612,
+          "endMs": 13692,
+          "timestampMs": 13652,
+          "confidence": null
+        },
+        {
+          "text": " breakfast",
+          "startMs": 13732,
+          "endMs": 14192,
+          "timestampMs": 13962,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 14473,
+          "endMs": 14633,
+          "timestampMs": 14553,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 14713,
+          "endMs": 14973,
+          "timestampMs": 14843,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 14993,
+          "endMs": 15173,
+          "timestampMs": 15083,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 15213,
+          "endMs": 15654,
+          "timestampMs": 15433.5,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 15714,
+          "endMs": 15894,
+          "timestampMs": 15804,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15934,
+          "endMs": 15994,
+          "timestampMs": 15964,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 16014,
+          "endMs": 16134,
+          "timestampMs": 16074,
+          "confidence": null
+        },
+        {
+          "text": " normal",
+          "startMs": 16174,
+          "endMs": 16434,
+          "timestampMs": 16304,
+          "confidence": null
+        },
+        {
+          "text": " range.",
+          "startMs": 16474,
+          "endMs": 16755,
+          "timestampMs": 16614.5,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 17735,
+          "endMs": 17876,
+          "timestampMs": 17805.5,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 17916,
+          "endMs": 18076,
+          "timestampMs": 17996,
+          "confidence": null
+        },
+        {
+          "text": " pulls",
+          "startMs": 18136,
+          "endMs": 18396,
+          "timestampMs": 18266,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 18436,
+          "endMs": 18856,
+          "timestampMs": 18646,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 18916,
+          "endMs": 19337,
+          "timestampMs": 19126.5,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 19517,
+          "endMs": 19697,
+          "timestampMs": 19607,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19717,
+          "endMs": 19797,
+          "timestampMs": 19757,
+          "confidence": null
+        },
+        {
+          "text": " meal,",
+          "startMs": 19837,
+          "endMs": 20097,
+          "timestampMs": 19967,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20598,
+          "endMs": 20678,
+          "timestampMs": 20638,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 20698,
+          "endMs": 20818,
+          "timestampMs": 20758,
+          "confidence": null
+        },
+        {
+          "text": " pushes",
+          "startMs": 20858,
+          "endMs": 21138,
+          "timestampMs": 20998,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21178,
+          "endMs": 21238,
+          "timestampMs": 21208,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 21279,
+          "endMs": 21479,
+          "timestampMs": 21379,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 21619,
+          "endMs": 21719,
+          "timestampMs": 21669,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 21799,
+          "endMs": 21939,
+          "timestampMs": 21869,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 21959,
+          "endMs": 22059,
+          "timestampMs": 22009,
+          "confidence": null
+        },
+        {
+          "text": " sleep?",
+          "startMs": 22079,
+          "endMs": 22299,
+          "timestampMs": 22189,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "insulin",
+      "type": "concept",
+      "durationInFrames": 1044,
+      "voiceover": {
+        "text": "Back to the pasta. As glucose rises, beta cells release more insulin, and it travels in the blood to cells all over the body. In muscle and fat cells, insulin binds to receptors on the cell surface. That signal moves extra glucose transporters, proteins that let glucose through, from inside the cell into its membrane. More doors open, so glucose moves in faster. In the liver, insulin switches on glycogenesis, which means building glycogen: glucose is joined into chains and stored.",
+        "audioFile": "out/google-tts-pilot/insulin.wav",
+        "startFrame": 0,
+        "endFrame": 984
+      },
+      "captions": [
+        {
+          "text": "Back",
+          "startMs": 220,
+          "endMs": 380,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 400,
+          "endMs": 460,
+          "timestampMs": 430,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 480,
+          "endMs": 540,
+          "timestampMs": 510,
+          "confidence": null
+        },
+        {
+          "text": " pasta.",
+          "startMs": 580,
+          "endMs": 1521,
+          "timestampMs": 1050.5,
+          "confidence": null
+        },
+        {
+          "text": " As",
+          "startMs": 1541,
+          "endMs": 1581,
+          "timestampMs": 1561,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 1721,
+          "endMs": 2221,
+          "timestampMs": 1971,
+          "confidence": null
+        },
+        {
+          "text": " rises,",
+          "startMs": 2301,
+          "endMs": 2722,
+          "timestampMs": 2511.5,
+          "confidence": null
+        },
+        {
+          "text": " beta",
+          "startMs": 3182,
+          "endMs": 3522,
+          "timestampMs": 3352,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 3542,
+          "endMs": 3902,
+          "timestampMs": 3722,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 3982,
+          "endMs": 4303,
+          "timestampMs": 4142.5,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 4423,
+          "endMs": 4663,
+          "timestampMs": 4543,
+          "confidence": null
+        },
+        {
+          "text": " insulin,",
+          "startMs": 4743,
+          "endMs": 5143,
+          "timestampMs": 4943,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5543,
+          "endMs": 5623,
+          "timestampMs": 5583,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 5663,
+          "endMs": 5703,
+          "timestampMs": 5683,
+          "confidence": null
+        },
+        {
+          "text": " travels",
+          "startMs": 5764,
+          "endMs": 6084,
+          "timestampMs": 5924,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 6124,
+          "endMs": 6184,
+          "timestampMs": 6154,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6224,
+          "endMs": 6284,
+          "timestampMs": 6254,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 6324,
+          "endMs": 6564,
+          "timestampMs": 6444,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6624,
+          "endMs": 6704,
+          "timestampMs": 6664,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 6744,
+          "endMs": 7044,
+          "timestampMs": 6894,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 7324,
+          "endMs": 7505,
+          "timestampMs": 7414.5,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 7565,
+          "endMs": 7685,
+          "timestampMs": 7625,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7725,
+          "endMs": 7785,
+          "timestampMs": 7755,
+          "confidence": null
+        },
+        {
+          "text": " body.",
+          "startMs": 7805,
+          "endMs": 8025,
+          "timestampMs": 7915,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 8825,
+          "endMs": 8905,
+          "timestampMs": 8865,
+          "confidence": null
+        },
+        {
+          "text": " muscle",
+          "startMs": 8985,
+          "endMs": 9286,
+          "timestampMs": 9135.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9326,
+          "endMs": 9406,
+          "timestampMs": 9366,
+          "confidence": null
+        },
+        {
+          "text": " fat",
+          "startMs": 9466,
+          "endMs": 9646,
+          "timestampMs": 9556,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 9686,
+          "endMs": 10006,
+          "timestampMs": 9846,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 10286,
+          "endMs": 10687,
+          "timestampMs": 10486.5,
+          "confidence": null
+        },
+        {
+          "text": " binds",
+          "startMs": 10767,
+          "endMs": 11087,
+          "timestampMs": 10927,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 11127,
+          "endMs": 11207,
+          "timestampMs": 11167,
+          "confidence": null
+        },
+        {
+          "text": " receptors",
+          "startMs": 11267,
+          "endMs": 11687,
+          "timestampMs": 11477,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 11747,
+          "endMs": 11807,
+          "timestampMs": 11777,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11847,
+          "endMs": 11907,
+          "timestampMs": 11877,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 11967,
+          "endMs": 12227,
+          "timestampMs": 12097,
+          "confidence": null
+        },
+        {
+          "text": " surface.",
+          "startMs": 12267,
+          "endMs": 12668,
+          "timestampMs": 12467.5,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 13328,
+          "endMs": 13528,
+          "timestampMs": 13428,
+          "confidence": null
+        },
+        {
+          "text": " signal",
+          "startMs": 13628,
+          "endMs": 13989,
+          "timestampMs": 13808.5,
+          "confidence": null
+        },
+        {
+          "text": " moves",
+          "startMs": 14169,
+          "endMs": 14489,
+          "timestampMs": 14329,
+          "confidence": null
+        },
+        {
+          "text": " extra",
+          "startMs": 14689,
+          "endMs": 14969,
+          "timestampMs": 14829,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 15009,
+          "endMs": 15449,
+          "timestampMs": 15229,
+          "confidence": null
+        },
+        {
+          "text": " transporters,",
+          "startMs": 15489,
+          "endMs": 16190.000000000002,
+          "timestampMs": 15839.5,
+          "confidence": null
+        },
+        {
+          "text": " proteins",
+          "startMs": 16550,
+          "endMs": 16970,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17010,
+          "endMs": 17130,
+          "timestampMs": 17070,
+          "confidence": null
+        },
+        {
+          "text": " let",
+          "startMs": 17170,
+          "endMs": 17311,
+          "timestampMs": 17240.5,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 17351,
+          "endMs": 17731,
+          "timestampMs": 17541,
+          "confidence": null
+        },
+        {
+          "text": " through,",
+          "startMs": 17771,
+          "endMs": 18031,
+          "timestampMs": 17901,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 18471,
+          "endMs": 18651,
+          "timestampMs": 18561,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 18851,
+          "endMs": 19272,
+          "timestampMs": 19061.5,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19312,
+          "endMs": 19392,
+          "timestampMs": 19352,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 19432,
+          "endMs": 19692,
+          "timestampMs": 19562,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 19892,
+          "endMs": 20112,
+          "timestampMs": 20002,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 20152,
+          "endMs": 20252,
+          "timestampMs": 20202,
+          "confidence": null
+        },
+        {
+          "text": " membrane.",
+          "startMs": 20312,
+          "endMs": 20733,
+          "timestampMs": 20522.5,
+          "confidence": null
+        },
+        {
+          "text": " More",
+          "startMs": 21273,
+          "endMs": 21453,
+          "timestampMs": 21363,
+          "confidence": null
+        },
+        {
+          "text": " doors",
+          "startMs": 21493,
+          "endMs": 21793,
+          "timestampMs": 21643,
+          "confidence": null
+        },
+        {
+          "text": " open,",
+          "startMs": 21893,
+          "endMs": 22113,
+          "timestampMs": 22003,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 22414,
+          "endMs": 22574,
+          "timestampMs": 22494,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 22654,
+          "endMs": 23094,
+          "timestampMs": 22874,
+          "confidence": null
+        },
+        {
+          "text": " moves",
+          "startMs": 23154,
+          "endMs": 23374,
+          "timestampMs": 23264,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 23434,
+          "endMs": 23514,
+          "timestampMs": 23474,
+          "confidence": null
+        },
+        {
+          "text": " faster.",
+          "startMs": 23614,
+          "endMs": 24055,
+          "timestampMs": 23834.5,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 24935,
+          "endMs": 24995,
+          "timestampMs": 24965,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25015,
+          "endMs": 25095,
+          "timestampMs": 25055,
+          "confidence": null
+        },
+        {
+          "text": " liver,",
+          "startMs": 25115,
+          "endMs": 25355,
+          "timestampMs": 25235,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 25716,
+          "endMs": 26116,
+          "timestampMs": 25916,
+          "confidence": null
+        },
+        {
+          "text": " switches",
+          "startMs": 26156,
+          "endMs": 26636,
+          "timestampMs": 26396,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 26656,
+          "endMs": 26696,
+          "timestampMs": 26676,
+          "confidence": null
+        },
+        {
+          "text": " glycogenesis,",
+          "startMs": 26776,
+          "endMs": 27777,
+          "timestampMs": 27276.5,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 28137,
+          "endMs": 28257,
+          "timestampMs": 28197,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 28297,
+          "endMs": 28477,
+          "timestampMs": 28387,
+          "confidence": null
+        },
+        {
+          "text": " building",
+          "startMs": 28637,
+          "endMs": 29018,
+          "timestampMs": 28827.5,
+          "confidence": null
+        },
+        {
+          "text": " glycogen:",
+          "startMs": 29038,
+          "endMs": 29558,
+          "timestampMs": 29298,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 30198,
+          "endMs": 30639,
+          "timestampMs": 30418.5,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 30699,
+          "endMs": 30759,
+          "timestampMs": 30729,
+          "confidence": null
+        },
+        {
+          "text": " joined",
+          "startMs": 30799,
+          "endMs": 31079,
+          "timestampMs": 30939,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 31139,
+          "endMs": 31279,
+          "timestampMs": 31209,
+          "confidence": null
+        },
+        {
+          "text": " chains",
+          "startMs": 31379,
+          "endMs": 31779,
+          "timestampMs": 31579,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 31879,
+          "endMs": 31979,
+          "timestampMs": 31929,
+          "confidence": null
+        },
+        {
+          "text": " stored.",
+          "startMs": 32060.000000000004,
+          "endMs": 32460,
+          "timestampMs": 32260,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 939,
+      "voiceover": {
+        "text": "Two exam questions. First. A student eats breakfast at seven, skips lunch, and runs a cross-country race at two in the afternoon. Their blood glucose begins to fall. Construct a negative feedback loop that returns blood glucose to normal, and explain the role of the liver. Pause here to answer.",
+        "audioFile": "out/google-tts-pilot/attempt.wav",
+        "startFrame": 0,
+        "endFrame": 603
+      },
+      "responseHold": {
+        "startFrame": 615,
+        "endFrame": 915
+      },
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 202,
+          "endMs": 383,
+          "timestampMs": 292.5,
+          "confidence": null
+        },
+        {
+          "text": " exam",
+          "startMs": 525,
+          "endMs": 827,
+          "timestampMs": 676,
+          "confidence": null
+        },
+        {
+          "text": " questions.",
+          "startMs": 848,
+          "endMs": 1231,
+          "timestampMs": 1039.5,
+          "confidence": null
+        },
+        {
+          "text": " First.",
+          "startMs": 1960,
+          "endMs": 2202,
+          "timestampMs": 2081,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 2987,
+          "endMs": 3007,
+          "timestampMs": 2997,
+          "confidence": null
+        },
+        {
+          "text": " student",
+          "startMs": 3047,
+          "endMs": 3388,
+          "timestampMs": 3217.5,
+          "confidence": null
+        },
+        {
+          "text": " eats",
+          "startMs": 3508,
+          "endMs": 3689,
+          "timestampMs": 3598.5,
+          "confidence": null
+        },
+        {
+          "text": " breakfast",
+          "startMs": 3749,
+          "endMs": 4150,
+          "timestampMs": 3949.5,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 4290,
+          "endMs": 4390,
+          "timestampMs": 4340,
+          "confidence": null
+        },
+        {
+          "text": " seven,",
+          "startMs": 4491,
+          "endMs": 4751,
+          "timestampMs": 4621,
+          "confidence": null
+        },
+        {
+          "text": " skips",
+          "startMs": 5293,
+          "endMs": 5554,
+          "timestampMs": 5423.5,
+          "confidence": null
+        },
+        {
+          "text": " lunch,",
+          "startMs": 5594,
+          "endMs": 5814,
+          "timestampMs": 5704,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6195,
+          "endMs": 6275,
+          "timestampMs": 6235,
+          "confidence": null
+        },
+        {
+          "text": " runs",
+          "startMs": 6316,
+          "endMs": 6516,
+          "timestampMs": 6416,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6576,
+          "endMs": 6596,
+          "timestampMs": 6586,
+          "confidence": null
+        },
+        {
+          "text": " cross-country",
+          "startMs": 6676,
+          "endMs": 7298,
+          "timestampMs": 6987,
+          "confidence": null
+        },
+        {
+          "text": " race",
+          "startMs": 7358,
+          "endMs": 7599,
+          "timestampMs": 7478.5,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 7739,
+          "endMs": 7819,
+          "timestampMs": 7779,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 7940,
+          "endMs": 8221,
+          "timestampMs": 8080.5,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8321,
+          "endMs": 8381,
+          "timestampMs": 8351,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8401,
+          "endMs": 8501,
+          "timestampMs": 8451,
+          "confidence": null
+        },
+        {
+          "text": " afternoon.",
+          "startMs": 8582,
+          "endMs": 8963,
+          "timestampMs": 8772.5,
+          "confidence": null
+        },
+        {
+          "text": " Their",
+          "startMs": 9606,
+          "endMs": 9767,
+          "timestampMs": 9686.5,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 9787,
+          "endMs": 10008,
+          "timestampMs": 9897.5,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 10028,
+          "endMs": 10489,
+          "timestampMs": 10258.5,
+          "confidence": null
+        },
+        {
+          "text": " begins",
+          "startMs": 10509,
+          "endMs": 10770,
+          "timestampMs": 10639.5,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10790,
+          "endMs": 10870,
+          "timestampMs": 10830,
+          "confidence": null
+        },
+        {
+          "text": " fall.",
+          "startMs": 10930,
+          "endMs": 11191,
+          "timestampMs": 11060.5,
+          "confidence": null
+        },
+        {
+          "text": " Construct",
+          "startMs": 11933,
+          "endMs": 12393,
+          "timestampMs": 12163,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12513,
+          "endMs": 12573,
+          "timestampMs": 12543,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 12733,
+          "endMs": 13074,
+          "timestampMs": 12903.5,
+          "confidence": null
+        },
+        {
+          "text": " feedback",
+          "startMs": 13254,
+          "endMs": 13674,
+          "timestampMs": 13464,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 13714,
+          "endMs": 13894,
+          "timestampMs": 13804,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 13975,
+          "endMs": 14095,
+          "timestampMs": 14035,
+          "confidence": null
+        },
+        {
+          "text": " returns",
+          "startMs": 14155,
+          "endMs": 14635,
+          "timestampMs": 14395,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 14675,
+          "endMs": 14875,
+          "timestampMs": 14775,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 14895,
+          "endMs": 15316,
+          "timestampMs": 15105.5,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15356,
+          "endMs": 15436,
+          "timestampMs": 15396,
+          "confidence": null
+        },
+        {
+          "text": " normal,",
+          "startMs": 15476,
+          "endMs": 15796,
+          "timestampMs": 15636,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16155.999999999998,
+          "endMs": 16236,
+          "timestampMs": 16196,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 16337,
+          "endMs": 16737,
+          "timestampMs": 16537,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16757,
+          "endMs": 16837,
+          "timestampMs": 16797,
+          "confidence": null
+        },
+        {
+          "text": " role",
+          "startMs": 16877,
+          "endMs": 17077,
+          "timestampMs": 16977,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 17177,
+          "endMs": 17257,
+          "timestampMs": 17217,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17297,
+          "endMs": 17377,
+          "timestampMs": 17337,
+          "confidence": null
+        },
+        {
+          "text": " liver.",
+          "startMs": 17397,
+          "endMs": 17618,
+          "timestampMs": 17507.5,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 18441,
+          "endMs": 18664,
+          "timestampMs": 18552.5,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 18704,
+          "endMs": 18927,
+          "timestampMs": 18815.5,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19069,
+          "endMs": 19190,
+          "timestampMs": 19129.5,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 19230,
+          "endMs": 19453,
+          "timestampMs": 19341.5,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "local-alignment-pilot-not-production"
+}

@@ -1,0 +1,223 @@
+{
+  "brief": 122,
+  "date": "2026-10-31",
+  "generator": "built-in image_gen for new furnace only",
+  "newPlates": 1,
+  "records": [
+    {
+      "path": "public/assets/chemistry/m8-graphite-furnace-v1.png",
+      "sha256": "460f4489350d36d50bf2aed11768624320b73f63931cee76f5773e1a1e7f24db",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        373,
+        393,
+        1610,
+        1593
+      ],
+      "clearMargins": [
+        373,
+        393,
+        390,
+        407
+      ],
+      "design": "chem-m8-c04",
+      "action": "new generated plate",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Make a standalone ink and watercolour educational apparatus plate matching the inspected hollow-cathode lamp's delicate ink edges, grey metallic washes and restrained orange glow. Transparent background with real alpha, square composition and at least 15% clear margin on every side. A graphite furnace atomiser for atomic absorption spectroscopy: side view, horizontal short dark grey graphite tube, roughly half the canvas width, held between two distinct grey metal end contacts. Both ends open along its horizontal axis, with an unobstructed axial bore for an external light beam to pass. A small round sample introduction port on TOP of the tube. Faint orange inner glow indicating heat inside the graphite tube. Show a simple sectional cutaway so the open bore is legible while retaining a clear side view. No flame. No beam, labels or letters painted, these will be added in code. No text, numbers, logos, branding, people, faces or hands. It must read as a heated graphite tube in a holder rather than an ordinary pipe or battery. Only the apparatus, no pedestal or background.",
+      "rawPath": "docs/production/claude-pm/assets/brief122-raw/m8-graphite-furnace-generated.png",
+      "rawSha256": "c3345d13943a900b893b1d519a126bb21effeda63e7df35d13704cf9a95c9763",
+      "processing": "Proportional resampling of full 1254 by 1254 source to 1560-square maximum, centred on transparent 2000-square canvas. No apparatus geometry edited.",
+      "qa": "Tube open axially, top port, two end contacts, orange inner glow. No flame, text, people, hands, faces or brands. More than 150px transparent margin on every side. Owner acceptance pending.",
+      "rawSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "path": "public/assets/biology/m8-aav-vector-v1.png",
+      "sha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        281,
+        220,
+        1719,
+        1780
+      ],
+      "clearMargins": [
+        281,
+        220,
+        281,
+        220
+      ],
+      "design": "bio-m8-b14",
+      "action": "inspect and retain existing plate; no retake",
+      "earlierProvenance": "brief120-provenance.json",
+      "qa": "Open single blue strand has two free ends. No closed loop. Shell is faceted and non-enveloped. Reuse verified for this design.",
+      "historicalManifest": "unchanged; this brief records the new reuse check without rewriting archived evidence"
+    },
+    {
+      "path": "public/assets/biology/m8-aav-vector-v1.png",
+      "sha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        281,
+        220,
+        1719,
+        1780
+      ],
+      "clearMargins": [
+        281,
+        220,
+        281,
+        220
+      ],
+      "design": "bio-m8-g02",
+      "action": "inspect and retain existing plate; no retake",
+      "earlierProvenance": "brief121-provenance.json",
+      "qa": "Open single blue strand has two free ends. No closed loop. Shell is faceted and non-enveloped. Reuse verified for this design.",
+      "historicalManifest": "unchanged; this brief records the new reuse check without rewriting archived evidence"
+    },
+    {
+      "path": "public/assets/biology/m8-red-cells-iron-deficient-v1.png",
+      "sha256": "6ce25230dca628b87e9f3eda426f97a59f77e5122b2ca520a6df92a00a1ca9db",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        341,
+        351,
+        1720,
+        1646
+      ],
+      "clearMargins": [
+        341,
+        351,
+        280,
+        354
+      ],
+      "designs": [
+        "bio-m8-b06",
+        "bio-m8-b08"
+      ],
+      "action": "reuse one existing B06 delivery",
+      "earlierProvenance": "brief117-provenance.json",
+      "qa": "Smaller paler cells with enlarged central pallor. Same centres and orientations as m5x reference on 50% overlay. No second copy painted."
+    },
+    {
+      "path": "public/assets/biology/m8-skin-mole-v1.png",
+      "sha256": "c222851bc1a99f1356337ff79261cbc7f2453414208a5208b8320462c568ab9c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        57,
+        49,
+        1962,
+        1996
+      ],
+      "clearMargins": [
+        57,
+        49,
+        38,
+        4
+      ],
+      "design": "bio-m8-b09",
+      "action": "inspect and retain; side-by-side only",
+      "qa": "Block outline/layers/vessels align in 50% QA overlay. Mole nest is shallow; melanoma enters dermis. Overlay is not a teaching cross-fade."
+    },
+    {
+      "path": "public/assets/biology/m8-skin-melanoma-v1.png",
+      "sha256": "e7b02960ee7905d67ff9606a90adab36fb96ebc81771a036b43c97effcba984e",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        160,
+        227,
+        1840,
+        1773
+      ],
+      "clearMargins": [
+        160,
+        227,
+        160,
+        227
+      ],
+      "design": "bio-m8-b09",
+      "action": "inspect and retain; side-by-side only",
+      "qa": "Block outline/layers/vessels align in 50% QA overlay. Mole nest is shallow; melanoma enters dermis. Overlay is not a teaching cross-fade."
+    }
+  ],
+  "generationAttempts": [
+    {
+      "attempt": 1,
+      "result": "success",
+      "source": "C:/Users/kygs/.codex/generated_images/01a191c8-ba59-7312-9a59-bc8ac6837e8d/exec-7eb490a8-a04f-45c6-8d24-148b91a10093.png"
+    },
+    {
+      "attempt": 2,
+      "intent": "framing-only revision, preserve exact apparatus with larger transparent margins",
+      "result": "tool rejected output as violence",
+      "requestId": "4c398a35-99b4-4034-9b04-fc1219d7e396",
+      "used": false
+    }
+  ],
+  "notCommissioned": [
+    "m8-skeletal-muscle-v1.png"
+  ],
+  "qaViews": [
+    "docs/production/claude-pm/assets/brief122-qa/furnace-and-aav-on-cream.png",
+    "docs/production/claude-pm/assets/brief122-qa/iron-pair-overlay.png",
+    "docs/production/claude-pm/assets/brief122-qa/skin-pair-overlay.png"
+  ],
+  "unresolved": [
+    "Owner artwork acceptance",
+    "Measured spectra and other source requests exactly as listed in checks/codex-check-122.md"
+  ],
+  "additiveAavReuseManifests": [
+    "brief122-b14-provenance.json",
+    "brief122-g02b-provenance.json"
+  ]
+}

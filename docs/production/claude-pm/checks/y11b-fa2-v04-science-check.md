@@ -1,0 +1,12 @@
+# y11b-fa2-v04 science check
+
+Revision 1, 3 November 2026; design SHA256 `9e9e8035524bcb6882169b93c874c5faada409c919cee6aa31ad50dac9ddb223`. Fresh official syllabus action `B25-FA2-G1-04`, official codename `ci7247a15f`: "Explain the hierarchical organisation of organelles, cells, tissues, organs and systems in organisms". https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
+
+1. **Should fix:** The final placing rule treats any structure inside a cell as an organelle. Many structures and molecules inside cells are not organelles. Change this to "a specialised structure inside a cell?" and align the onscreen question. Replace the existing question.
+2. **Should fix:** Scene 7 says "every cell" needs oxygen and glucose. Mature red blood cells lack mitochondria and rely on glycolysis; not all cells use these materials in the same way. Say the blood carries oxygen and nutrients to tissues. This is shorter.
+3. **Should fix:** The organism rung is a loose cluster containing an alveolus and neuron rather than a whole organism; learners could mistake organ parts for complete organs. Label the cluster as parts of systems in a human, and let the whole plant carry the whole-organism visual. Screen-only; retain root decision 6's no-outline rule.
+4. **Should fix:** The tissue definition and decision rule treat similar cells as sufficient and count tissue types mechanically. Tissues can contain distinct cell types and extracellular matrix; say cells and supporting material work together, and reserve the multiple tissues test for the worked cases. Use the scene 7 reserve cut if additional speech is needed.
+
+The current L03's ladder diagram says each level is assembled from the level above while its list runs smallest to largest; its phrasing conflicts with the surrounding teaching. It also assigns rhythm setting to nervous tissue and describes tissue as one cell type. These are logged once. The design correctly has autonomic nerves adjust the heartbeat. [Intestinal cell study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7041720/) distinguishes several epithelial cell types; [NIH skin teaching](https://www.ncbi.nlm.nih.gov/books/NBK20361/) supports skin as an organ and identifies its tissue components.
+
+Count: 0 blockers, 4 should fix, 0 optional; 5,785 separate and 5,799 joined characters, 15 scenes, about 556 s. No audio or playback checked.

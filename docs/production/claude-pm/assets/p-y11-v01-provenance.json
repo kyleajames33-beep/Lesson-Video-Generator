@@ -1,0 +1,149 @@
+{
+  "brief": 146,
+  "video": "v01",
+  "assets": [
+    {
+      "file": "public/assets/physics/phys-y11-boat-top-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "bcece608448eab6f67573dde73f0d152223f40f64ded58e4d8c985a5a2414cff",
+      "sourceCandidate": "work/brief146/candidates/boat.png",
+      "prompt": "overhead white cabin motorboat nose up, navy trim, no water or passengers; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        184,
+        180,
+        816,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-blue-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "4512fbb30f29e9c112f9d18f8d59f2c5dc404c210f1c8ddfbf40368b24edf69f",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "top-down blue hatchback nose up, symmetric, isolated ink-watercolour, matched to blue car reference; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        119,
+        180,
+        880,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "08e8ca91fdc93cd97016713631f953ea8c882e4ca813571ebf4fde1ce51047b1",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "top-down blue hatchback nose up, symmetric, isolated ink-watercolour, matched to blue car reference; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        95,
+        1456,
+        704
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-yellow-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "a27422eeca6033b6e6585fcad1e176e78492caef5e68b49b18ec5170e75928f6",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "top-down blue hatchback nose up, symmetric, isolated ink-watercolour, matched to blue car reference; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        119,
+        180,
+        880,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-dashboard-cluster-v1.png",
+      "size": [
+        2400,
+        1000
+      ],
+      "sha256": "bbe095fd19ab6b187b7f396a221eff079af57d6ce004794d57325fe74ba75555",
+      "sourceCandidate": "work/brief146/candidates/dashboard.png",
+      "prompt": "face-on charcoal instrument cluster, 240-degree unnumbered dial without needle, two blank windows; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        216,
+        133,
+        2184,
+        867
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "overhead quadcopter X arms, translucent rotor discs, grey-white body, blue accent and amber front marker, parcel outline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

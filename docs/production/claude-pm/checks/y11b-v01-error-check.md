@@ -13,3 +13,7 @@ Design SHA256: `8f800153353a45f71857ff24c565d9ee36c12adfe721e58d3280a9a4bf95ff61
 No em dashes found in the design. The Revision 2 count matches the stated per-scene count. Timing is an estimate; exact voiced playback is still needed.
 
 Scene 2 traces the nuclear envelope; scene 6 uses 5 µm and 50 µm. The 138 cheek-scraping site correction already contains the NSW source.
+
+## Brief 144 confirmation
+
+2 November 2026. Prepared stained slide replaces scraping in the hook and author note. The remaining no-internal-membranes wording is removed. Decision 16 resolves the notes/handoff order. Recount: 5,927 narration characters. Current SHA256 `357dce94b4a527a5e942f8d40063cb6feeeaeb45abcdc7adcf564aedaee49ef7`. No em dashes found. No remaining error found in the brief 140 repairs. Clean, ready to voice after the brief 124 pilot.

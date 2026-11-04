@@ -12,3 +12,7 @@ Design SHA256: `e0805a7c9c5b1b36f2af44d347dd9aca334f282b34816196daa6308a26166f2d
 No em dashes found in the design. The Revision 2 count matches the stated per-scene count. Timing is an estimate; exact voiced playback is still needed.
 
 Scene 10 uses a commercially prepared slide, scene 11 uses the lamp risk row, and scene 6 specifies a 3 s countdown. The swab asset is not used.
+
+## Brief 144 confirmation
+
+2 November 2026. Author doubts now match the 3 s countdown. The prepared-slide method and lamp risk row remain in place. Decision 16 resolves the handoff order. Recount: 5,790 narration characters. Current SHA256 `b8b474504056a1c97dfb189c24bfebb1620e54f4dfdd8d685bfa753896d3fe05`. No em dashes found. No remaining error found in the brief 140 repairs. Clean, ready to voice after the brief 124 pilot.

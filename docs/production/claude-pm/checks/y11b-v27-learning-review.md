@@ -1,0 +1,12 @@
+# y11b-v27 learning review
+
+Revision 1, 3 November 2026; design SHA256 `7235b200efe47ac86aa2eddc1fe6ea28551534ba54b453390838c135da775d27`. The v26 cell and four-chromosome card carry into the opening; a prediction makes copying necessary before the ring names G1, S, G2, mitosis and cytokinesis. The 2n=4 model and separate chromosome card respect root's painted-cell rule; the attempts use DNA amount separately from chromosome count. The four mitotic stages remain for v28.
+
+1. **Blocker, shared with science:** Scenes 9, 12 and 13 guarantee a perfect G2 check, exact DNA copying and identical daughters, saying every remaining error becomes permanent in both. Checkpoints and repair reduce risk but do not guarantee perfection, and consequences depend on the lesion and segregation. Say checkpoints delay division when problems are detected and typical mitosis preserves chromosome number; mistakes can remain. Replace the absolutes in speech, notes and feedback.
+2. **Should fix, shared with science:** A2 assumes stopping replication partway leaves whole chromosomes entirely uncopied and therefore one daughter missing each. Human chromosomes have many replication origins; partial replication can leave incomplete regions and cause breaks or segregation problems. State that incomplete DNA can damage or unbalance daughter chromosomes, without asserting a specific outcome. Replace the feedback.
+3. **Should fix, shared with science:** "Every division halves the cytoplasm and organelles" and "each daughter starts its own cycle again" are universal claims. Unequal division and cells exiting into G0 occur. Describe the illustrated symmetric cycle and typical growth, while noting some cells stop dividing. Replace those absolutes.
+4. **Should fix, shared with science:** Sister chromatids are held by cohesin along their length, with centromeric cohesion persisting into mitosis; they are not held solely at a narrow point immediately after S. Say they remain joined and identify the centromere for counting. The count remains four chromosomes and eight chromatids in the 2n=4 model.
+
+The accepted 5,366-character length is complete without padding. Replace existing clauses, retaining the distinction between a checkpoint's purpose and its fallibility. The G0 example remains a plain description, not a claim that all neurons are incapable of cycling. No playback or audio inspected.
+
+Count: 1 blocker, 3 should fix, 0 optional; 5,366 separate and 5,385 joined characters, 20 scenes, about 539 s. No design edit, voice or render.

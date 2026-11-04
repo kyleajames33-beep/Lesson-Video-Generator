@@ -1,0 +1,98 @@
+{
+  "brief": 127,
+  "date": "2026-11-01",
+  "archive": "out/archives/brief127-reviews-and-flasks-2026-11-01.zip",
+  "bytes": 4588808,
+  "sha256": "fb65d34e035d1383654470502f54f2e7da7b7bbbcfa4662691fd7c080e72f2b5",
+  "members": 15,
+  "crcAndMemberHashesVerified": true,
+  "remoteUpload": false,
+  "reviewCounts": {
+    "m5g02": {
+      "blockers": 0,
+      "uniqueShouldFix": 2,
+      "learningShouldFix": 2,
+      "scienceShouldFix": 1,
+      "overlap": 1
+    },
+    "m8p01b": {
+      "blockers": 0,
+      "uniqueShouldFix": 6,
+      "learningShouldFix": 3,
+      "scienceShouldFix": 3,
+      "overlap": 0
+    }
+  },
+  "designHashesUnchanged": {
+    "chem-m5-g02.md": "14d2542dbaa87198fa7dad510c4fdf57c8579aeba0708daefd98fd1078bdd3fe",
+    "bio-m8-p01.md": "039117130757b77bfd13e9f99427282c5d13d38e50a856acd9ef5afc6c49e065"
+  },
+  "files": [
+    {
+      "path": "docs/production/claude-pm/checks/m5g02-learning-review.md",
+      "sha256": "b2c037ae420c21d07fa0f65f5ac02bbbbfc12a8e514bad3eeeb5974e41fd0a7c"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m5g02-claude-science-check.md",
+      "sha256": "d2b2d7ac7313f4ad45b7056fda2bd2b37285560eb3ae48e40d1b67ff96099058"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m8p01b-learning-review.md",
+      "sha256": "2e0c5263451d2efb9a20a395451181a8abd6b7ff618611fcc964175bf0c29ab8"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m8p01b-claude-science-check.md",
+      "sha256": "27d5009b582d196942f7b67018a32147ade16601dfcb1412f9ebb5d8f5b1c394"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-provenance.json",
+      "sha256": "1b06d259c5a40e77703c0128fa07f5471b63aab45528fb85fabce44680dddae5"
+    },
+    {
+      "path": "docs/production/claude-pm/site-corrections-m8.md",
+      "sha256": "bed67239efd125bb1ef0965aa64f4477b0fd48903f8d435e10a9e22e20a2c636"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/bare-native-black-white.jpg",
+      "sha256": "f04b5196ed2b5f384dbab94eba067c30ce8feb469cb95f4b23a68d2804008731"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/metrics.json",
+      "sha256": "91a06301ae3ef520ece7b6778fa118538d5524fc68b281d1d4ed43b1ce8d1551"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/overlay-50-percent.jpg",
+      "sha256": "390ebd1c98dc11748cb42f2b97fee4e6f3529a8177884eb5c746f927cd4f8ce7"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/pair-300px.jpg",
+      "sha256": "53b6783e252da6d4a61fe39224eb16b5df99c296be85c357a2a31a15c95295e1"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/pair-600px.jpg",
+      "sha256": "91d73f0547a3d70fc5687216fc8dd0a590a09c01326bf7882469ec8e7780db64"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/raw/m8-flask-bare-v1-native.png",
+      "sha256": "670cea981f791cd4b8940fc0d589e3989f0d09efea3fe7fbcdf7985dcae13f31"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief127-qa/raw/m8-flask-wrapped-v1-native.png",
+      "sha256": "6ca046b5f912ab79d0545274e1daa8460efb728ff89d7915abecb84b114d4857"
+    },
+    {
+      "path": "public/assets/biology/m8-flask-bare-v1.png",
+      "sha256": "4f887173e6ab25818685de8df7ebc2ea7eed0ac9dd760501e6a91ee96bc55e22"
+    },
+    {
+      "path": "public/assets/biology/m8-flask-wrapped-v1.png",
+      "sha256": "efbac468aa92fae068b7e439a88ec7a8bfb2a7f38df57c43fa9aa6be7d655a80"
+    }
+  ],
+  "gates": [
+    "Claude resolves review findings",
+    "Claude and owner accept artwork",
+    "Actual implemented motion and exact voiced review",
+    "Human listening and existing release requirements"
+  ]
+}

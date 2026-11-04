@@ -14,3 +14,7 @@ No em dashes found in the design. The Revision 2 count matches the stated per-sc
 The conjugation visual transfers a single strand and completes both rings. The attempt asks how transfer could account for survival.
 
 3. **Should fix:** Attempt 2 feedback still states "An A cell used a pilus" as the observed event, and the model and other wrong chains treat this explanation as established. The question only supports it as a possible explanation of survival.
+
+## Brief 144 confirmation
+
+2 November 2026. Key note names membrane-bound organelles in this bacterium; the attempt model says a possible explanation. Single-strand transfer and completion of both rings remain specified. Decision 16 resolves the handoff order. Recount: 5,879 narration characters. Current SHA256 `dec5401ac31ef3ada59dc9ef63d87c225e07bdf7e3b08117784467c21ada46ee`. No em dashes found. No remaining error found in the brief 140 repairs. Clean, ready to voice after the brief 124 pilot.

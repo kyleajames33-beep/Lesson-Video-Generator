@@ -1,0 +1,15 @@
+# y11b-fa2-v07 science check
+
+Revision 1, 3 November 2026; design SHA256 `75fa69de1d2caccebebbc8f0fa0e9f110470871b67d95a8a503d001ac7def2c6`. Fresh official syllabus action `B25-FA2-G2-03`, official codename `ci18102c1a`: "Conduct a practical investigation to predict how changes in conditions affect photosynthesis". https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
+
+1. **Should fix:** Use root decision 10's "pondweed approved by your school". NSW WeedWise identifies Elodea as a weed subject to the general biosecurity duty and directs local disposal advice; school use is not independently verified. Cabomba has regional prohibitions or recommended controls, so do not name it as a school supply. Replace the generic bin instruction with school and local-council disposal instructions and prevent fragments entering drains.
+2. **Should fix:** Electrical row says wipe spills straight away without addressing an energised lamp. Keep electricity apart; if a spill reaches equipment, stop and tell the teacher, who isolates power before cleanup under the school risk assessment. Replace existing risk text and use the scene 5 memory line as a cut if needed.
+3. **Should fix:** The opening presents a plateau as a certain observation before a test and the bubbles as oxygen left over. Treat the opening as a prediction; bubble counts are an imperfect proxy influenced by gas composition, dissolution and storage, and are not a direct quantitative measurement of net oxygen. Replace the existing claims.
+4. **Should fix:** The shield graphic makes heat waves stop and asserts constant temperature. A water shield or LED does not guarantee stable temperature or equal transmitted light; measure and control temperature, and record variation. Replace the guarantee with a check.
+5. **Should fix:** Sodium hydrogen carbonate concentration is not a direct calibrated CO₂ concentration and changes solution chemistry; 0–2% is an unvalidated range. Describe the changed solution concentration, choose the range under the school assessment and measure dissolved CO₂ if a concentration claim is needed.
+
+[NSW WeedWise Elodea](https://weeds.dpi.nsw.gov.au/Weed/Elodea) identifies the general biosecurity duty and asks for council disposal advice; it does not establish school permission. [NSW WeedWise Cabomba](https://weeds.dpi.nsw.gov.au/Weed?id=26) records duties that vary by region. [NSW school chemical safety guidance](https://education.nsw.gov.au/content/dam/main-education/asset-management/chemical-safety/3._Section_3_Curriculum_Support.pdf) requires teachers to know electrical isolation and local procedures. Do not infer permission for a specific plant or rig from this general guidance.
+
+The current L06 page names Cabomba and calls bubble counting a direct measure. Both findings are recorded in the site log.
+
+Count: 0 blockers, 5 should fix, 0 optional; 5,289 separate and 5,302 joined characters, 14 scenes, about 515 s. No audio or playback checked.

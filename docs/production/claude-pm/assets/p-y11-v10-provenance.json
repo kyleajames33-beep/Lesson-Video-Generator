@@ -1,0 +1,166 @@
+{
+  "brief": 146,
+  "video": "v10",
+  "assets": [
+    {
+      "file": "public/assets/physics/y11p-digital-timer-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "bd8524d7e2db225ff0c11dc025a96f9776bfd3f99b37c8a1829fe6b73716670f",
+      "sourceCandidate": "work/brief146/candidates/timer.png",
+      "prompt": "plain grey electronic timer, front view, blank display and two pairs of sockets; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        100,
+        1456,
+        899
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-low-voltage-supply-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "c7a35c69d04974048a0947d3fa3a3fddc9ba207656346ee9f047a52a7d2ac2d7",
+      "sourceCandidate": "work/brief146/candidates/supply.png",
+      "prompt": "school low voltage supply, dial, switch, red and black terminals, no markings; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        236,
+        1456,
+        763
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-phone-tripod-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "e4e33f5f7e45f99883205bca59e2432e498a864fcf75e434e48f318a40ba8c1c",
+      "sourceCandidate": "work/brief146/candidates/phone.png",
+      "prompt": "landscape smartphone on small tripod, blank dark screen; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        90,
+        453,
+        910,
+        1546
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-retort-stand-electromagnet-v1.png",
+      "size": [
+        1200,
+        2400
+      ],
+      "sha256": "23cbc1479770c0a96cfae118a5f2fb0282a332bbfd57c1afb43c5cac4cbdb2df",
+      "sourceCandidate": "work/brief146/candidates/stand.png",
+      "prompt": "retort stand and downward electromagnet, two loose leads, no ball; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        131,
+        216,
+        1068,
+        2184
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-sand-tray-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "999fae9be4d91d521c56571965035e8a40e828f332bcce651fb0a48b75776758",
+      "sourceCandidate": "work/brief146/candidates/sand.png",
+      "prompt": "shallow metal tray containing pale sand; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        191,
+        1456,
+        609
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-steel-ball-v1.png",
+      "size": [
+        800,
+        800
+      ],
+      "sha256": "81996315de8961ef8b6dafe183bbad07c7e54f36c7e29d31798b54f3a2d594b5",
+      "sourceCandidate": "work/brief146/candidates/ball.png",
+      "prompt": "polished steel ball with soft highlights, isolated; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        81,
+        72,
+        719,
+        728
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-trapdoor-switch-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "4c14ac3981519500a60be4147abf0d5dcccff33dd39d731caabfb84c734b2fd0",
+      "sourceCandidate": "work/brief146/candidates/trapdoor.png",
+      "prompt": "school trapdoor switch pad with hinged flap and two terminal posts; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        81,
+        1456,
+        719
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

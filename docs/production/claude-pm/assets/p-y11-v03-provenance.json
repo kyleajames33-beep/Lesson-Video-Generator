@@ -1,0 +1,64 @@
+{
+  "brief": 146,
+  "video": "v03",
+  "assets": [
+    {
+      "file": "public/assets/physics/phys-y11-cart-side-v1.png",
+      "size": [
+        2000,
+        1200
+      ],
+      "sha256": "31fec386265fbad77d92489091bca65cb6bf93b3fdf5146d5d3043c4be8d24e4",
+      "sourceCandidate": "work/brief146/candidates/cart.png",
+      "prompt": "side-on wooden cart facing right, two crates and front tow ring, common wheel baseline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        180,
+        222,
+        1820,
+        978
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

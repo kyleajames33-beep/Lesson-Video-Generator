@@ -1,0 +1,99 @@
+{
+  "brief": 127,
+  "date": "2026-11-01",
+  "tool": "OpenAI built-in imagegen",
+  "status": "Two plates delivered for Claude and owner review",
+  "prompts": {
+    "bare": "Scientific educational apparatus plate, ink and watercolour in the naturalistic house style of the reference image (reference only, create a new composition). One 250 mL glass conical flask, front view upright, filled just over half with clear water with barely warm tint, no steam. A plain flat grey square card rests on neck, slightly overhanging, lid seen as thin perspective plane. Slim stainless-steel temperature probe passes vertically through central hole in card; tip ends in centre of water about one third of the way up from base, clearly away from glass. Thin black cable rises from probe top, curls once, ends with small plain connector, all inside canvas. Restrained fine grey ink edges, transparent softly painted glass and water, probe tip very readable. Genuinely transparent background, true alpha, no white backdrop, no ground shadow or glow. 2000x2000 square with at least 10 percent clear margin around entire cable and flask. No text numbers graduations labels brands people hands animals. This is bare flask in a matched apparatus pair, keep simple centered geometry.",
+    "wrapped": "Edit target: the generated bare flask apparatus. Preserve the identical canvas, flask geometry, card lid, probe, cable, connector, water level, viewpoint, scale, framing and lighting. Change only this: wrap the sloping flask body and base edge in an even 1.5 to 2 cm thick layer of dry soft white cotton wool with visible delicate fibrous texture, held by exactly TWO plain rubber bands, one near the top of the slope and one near the base. Neck stays bare. Wool is opaque so it hides the water and submerged probe, no phantom probe drawn on wool. Keep lid probe top and cable exactly unchanged in position and appearance for a clean crossfade and overlay. Match naturalistic fine grey ink and watercolour. Genuinely transparent background with true alpha and clean edges, no fringe, shadow, glow, text, numbers, scale marks, people, hands or animals. Output a square PNG, ideally 2000x2000."
+  },
+  "references": [
+    "public/assets/chemistry/m6-conical-flask-v1.png"
+  ],
+  "metrics": "docs/production/claude-pm/assets/brief127-qa/metrics.json",
+  "qa": [
+    "docs/production/claude-pm/assets/brief127-qa/pair-300px.jpg",
+    "docs/production/claude-pm/assets/brief127-qa/pair-600px.jpg",
+    "docs/production/claude-pm/assets/brief127-qa/overlay-50-percent.jpg"
+  ],
+  "inspection": {
+    "alpha": "Both are RGBA with alpha range 0 to 255. All final margins are at least 200 px on a 2000 px canvas.",
+    "appearance": "Inspected on dark, black and white at 300 and 600 px. Two rubber bands, dry fibrous wool, bare neck, lid, probe and cable read clearly. Bare probe tip stays visibly clear of the glass. No text, people, hands, ground shadow or visible coloured edge fringe.",
+    "overlay": "50 percent overlay inspected. Neck, card, probe top and cable visually coincide. Small generated texture differences remain; the pair is not pixel identical. Wool extends outside the bare body as expected.",
+    "approval": "Artwork acceptance remains with Claude and owner. Static inspection supplies no motion or learning approval."
+  },
+  "processing": "Uniform resize and transparent padding only, using the same transform for both native square images. No alpha was removed and no geometry was stretched.",
+  "files": [
+    "public/assets/biology/m8-flask-bare-v1.png",
+    "public/assets/biology/m8-flask-wrapped-v1.png"
+  ],
+  "designsUnchanged": true,
+  "records": [
+    {
+      "path": "public/assets/biology/m8-flask-bare-v1.png",
+      "native": "docs/production/claude-pm/assets/brief127-qa/raw/m8-flask-bare-v1-native.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19383-6cf0-73d3-a10d-46f22caf5776\\exec-a07854e8-c821-46b6-9333-3b0a1be52793.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        200,
+        236,
+        1754,
+        1721
+      ],
+      "sha256": "4f887173e6ab25818685de8df7ebc2ea7eed0ac9dd760501e6a91ee96bc55e22",
+      "method": "Uniformly resize native square to 1600 square, then centre on transparent 2000 square; no alpha cleanup or geometry edits.",
+      "nativeSha256": "670cea981f791cd4b8940fc0d589e3989f0d09efea3fe7fbcdf7985dcae13f31",
+      "margins": [
+        200,
+        236,
+        246,
+        279
+      ]
+    },
+    {
+      "path": "public/assets/biology/m8-flask-wrapped-v1.png",
+      "native": "docs/production/claude-pm/assets/brief127-qa/raw/m8-flask-wrapped-v1-native.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19383-6cf0-73d3-a10d-46f22caf5776\\exec-64719869-577c-4ce2-836f-46a47e37d46b.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        200,
+        237,
+        1772,
+        1795
+      ],
+      "sha256": "efbac468aa92fae068b7e439a88ec7a8bfb2a7f38df57c43fa9aa6be7d655a80",
+      "method": "Uniformly resize native square to 1600 square, then centre on transparent 2000 square; no alpha cleanup or geometry edits.",
+      "nativeSha256": "6ca046b5f912ab79d0545274e1daa8460efb728ff89d7915abecb84b114d4857",
+      "margins": [
+        200,
+        237,
+        228,
+        205
+      ]
+    }
+  ]
+}

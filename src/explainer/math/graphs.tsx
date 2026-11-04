@@ -42,6 +42,14 @@ export const connectedDomains = (s: GraphSpec): Range[] => {
 		return xs.slice(1).map((b, i) => [xs[i], b] as const);
 	});
 };
+/** Clip a tangent to the connected branch containing its contact point. */
+export const branchTangentSpan = (s: GraphSpec, x: number, span: number): Range => {
+	if (!inDomain(s, x) || !Number.isFinite(span) || span <= 0) throw new RangeError('A finite tangent on a valid branch is required');
+	const branch = connectedDomains(s).find(([lo, hi]) => x >= lo && x <= hi);
+	if (!branch) throw new RangeError('Tangent point has no connected branch');
+	const inset = (branch[1] - branch[0]) * 1e-8;
+	return [Math.min(x, Math.max(x - span, branch[0] + inset)), Math.max(x, Math.min(x + span, branch[1] - inset))];
+};
 export type Sample = {x: number; y: number};
 /** Samples are mathematical coordinates; all SVG consumers use graphTransform. */
 export const sampleFunction = (s: GraphSpec, until = s.x[1], samples = 600): Sample[][] => {
@@ -133,11 +141,11 @@ export const NumericDial: React.FC<NumericDialProps> = ({value,min,max,label,dig
  const p=dialFraction(value,min,max), angle=Math.PI*(1-p), x=150+90*Math.cos(angle), y=120-90*Math.sin(angle);
  return <svg width={width} height={178} viewBox="0 0 300 178" role="img" aria-label={`${label} = ${value.toFixed(digits)}`}><path d="M60 120 A90 90 0 0 1 240 120" stroke="#d8cdbb" strokeWidth={8} fill="none"/><line x1={150} y1={120} x2={x} y2={y} stroke={ACCENT} strokeWidth={5}/><circle cx={150} cy={120} r={7} fill={ACCENT}/>{excluded && excludedFraction!==undefined && (()=>{const a=Math.PI*(1-excludedFraction),px=150+90*Math.cos(a),py=120-90*Math.sin(a);return <g><path d={`M${px-5},${py-5} l10,10 m0,-10 l-10,10`} stroke="#b33930" strokeWidth={3}/><Text x={150} y={22} size={20} anchor="middle" color="#b33930">{excluded.label ?? `${excluded.value} excluded`}</Text></g>;})()}<Text x={50} y={149} size={22}>{min}</Text><Text x={250} y={149} size={22} anchor="end">{max}</Text><Text x={150} y={174} size={26} anchor="middle">{label} = {value.toFixed(digits)}</Text></svg>;
 };
-export type FunctionGraphProps = GraphSpec & {draw?: number; movingX?: number; tangent?: Tangent; children?: React.ReactNode; parameter?: number; parameterFn?: (x: number, parameter: number) => number; ghostParameter?: number; transform?: AttachedTransform; labelsVisible?: boolean; foldThreshold?: number};
+export type FunctionGraphProps = GraphSpec & {draw?: number; movingX?: number; tangent?: Tangent; children?: React.ReactNode; parameter?: number; parameterFn?: (x: number, parameter: number) => number; ghostParameter?: number; transform?: AttachedTransform; labelsVisible?: boolean; foldThreshold?: number; pairedCurve?: {fn:(x:number)=>number; derivative?:(x:number)=>number; color?:string}};
 export const endpointMarkers = (s: GraphSpec): GraphMarker[] => (s.domain ?? []).flatMap(d => ([{x: d.from, included: d.includeFrom}, {x: d.to, included: d.includeTo}])).filter(v => Number.isFinite(v.x) && Number.isFinite(s.fn(v.x)) && !s.markers?.some(m => m.x === v.x)).map(v => ({x: v.x, y: s.fn(v.x), kind: v.included ? 'included' : 'excluded'}));
 /** A complete SVG, or use GraphLayer inside an existing SVG with the same spec. */
 export const FunctionGraph: React.FC<FunctionGraphProps> = props => <svg style={{display: 'block'}} width={props.width ?? 800} height={props.height ?? 520} viewBox={`0 0 ${props.width ?? 800} ${props.height ?? 520}`} role="img" aria-label={props.label ?? 'Function graph'}><GraphLayer {...props} /></svg>;
-export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: baseX, tangent: baseTangent, children, parameter = 0, parameterFn, ghostParameter, transform, labelsVisible=true, foldThreshold=0.08, ...base}) => {
+export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: baseX, tangent: baseTangent, children, parameter = 0, parameterFn, ghostParameter, transform, labelsVisible=true, foldThreshold=0.08, pairedCurve, ...base}) => {
 	const source = parameterFn ? {...base, fn: (x: number) => parameterFn(x, parameter)} : base;
 	const s = transform ? transformedGraph(source, transform) : source;
 	const annotations = labelsVisible && foldAnnotationsVisible(transform?.yScale ?? 1,foldThreshold);
@@ -152,10 +160,12 @@ export const GraphLayer: React.FC<FunctionGraphProps> = ({draw = 1, movingX: bas
 		<defs><clipPath id={id}><rect x={b.left} y={b.top} width={b.width} height={b.height} /></clipPath><clipPath id={`${id}-draw`}><rect x={b.left} y={b.top} width={Math.max(0, t.point(until, 0).x - b.left)} height={b.height} /></clipPath></defs>
 		<GraphAxes spec={s} />
 		<g clipPath={`url(#${id})`}>
+			{pairedCurve && sampleFunction({...s,fn:pairedCurve.fn}).map((line,i)=><path key={`paired-${i}`} d={dPath(line,t)} fill="none" stroke={pairedCurve.color??'#178079'} strokeWidth={3} strokeDasharray="8 7"/>)}
+			{pairedCurve && movingX!==undefined && inDomain(s,movingX) && Number.isFinite(pairedCurve.fn(movingX)) && (()=>{const x=movingX,y=pairedCurve.fn(x),p=t.point(x,y),m=pairedCurve.derivative?.(x),segment=m!==undefined&&Number.isFinite(m)?branchTangentSpan(s,x,(s.x[1]-s.x[0])*.08):undefined,l=segment?t.point(segment[0],y+m!*(segment[0]-x)):undefined,r=segment?t.point(segment[1],y+m!*(segment[1]-x)):undefined;return <g>{l&&r&&<line x1={l.x} y1={l.y} x2={r.x} y2={r.y} stroke={pairedCurve.color??'#178079'} strokeWidth={3}/>}<circle cx={p.x} cy={p.y} r={8} fill={pairedCurve.color??'#178079'} stroke={CARD} strokeWidth={3}/></g>;})()}
 			{parameterFn && ghostParameter !== undefined && sampleFunction(transform ? transformedGraph({...base, fn: x => parameterFn(x, ghostParameter)}, transform) : {...base, fn: x => parameterFn(x, ghostParameter)}).map((line, i) => <path key={`ghost-${i}`} d={dPath(line, t)} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="9 8" fill="none" opacity={0.5} />)}
 			{(s.asymptotes ?? []).map((v, i) => {const p = t.point(v.axis === 'x' ? v.value : s.x[0], v.axis === 'y' ? v.value : s.y[0]); return <g key={i}><line x1={v.axis === 'x' ? p.x : b.left} x2={v.axis === 'x' ? p.x : b.left + b.width} y1={v.axis === 'x' ? b.top : p.y} y2={v.axis === 'x' ? b.top + b.height : p.y} stroke={ACCENT} strokeWidth={3} strokeDasharray="10 8" />{v.label && <Text x={v.axis === 'x' ? p.x + 12 : b.left + 12} y={v.axis === 'x' ? b.top + 30 : p.y - 14} color={ACCENT}>{v.label}</Text>}</g>;})}
 			<g clipPath={`url(#${id}-draw)`}>{curves.map((line, i) => <path key={i} d={dPath(line, t)} stroke={s.color ?? BLUE} strokeWidth={5} fill="none" strokeLinejoin="round" />)}</g>
-			{a && tangent && Number.isFinite(a.y) && (() => {const span = tangent.span ?? (s.x[1] - s.x[0]) * 0.22, p = t.point(a.x - span, a.y - tangent.slope * span), q = t.point(a.x + span, a.y + tangent.slope * span), c = t.point(a.x, a.y), run = span * 0.6, r = t.point(a.x + run, a.y), e = t.point(a.x + run, a.y + tangent.slope * run); return <g><line x1={p.x} y1={p.y} x2={q.x} y2={q.y} stroke={ACCENT} strokeWidth={4} />{tangent.showSlope && <><path d={`M${c.x},${c.y} H${r.x} V${e.y}`} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="7 5" fill="none" /></>}</g>;})()}
+			{a && tangent && Number.isFinite(a.y) && (() => {const span = tangent.span ?? (s.x[1] - s.x[0]) * 0.22, [lo, hi] = branchTangentSpan(s, a.x, span), p = t.point(lo, a.y + tangent.slope * (lo-a.x)), q = t.point(hi, a.y + tangent.slope * (hi-a.x)), c = t.point(a.x, a.y), run = Math.max(0, Math.min(span * 0.6, hi-a.x)), r = t.point(a.x + run, a.y), e = t.point(a.x + run, a.y + tangent.slope * run); return <g><line x1={p.x} y1={p.y} x2={q.x} y2={q.y} stroke={ACCENT} strokeWidth={4} />{tangent.showSlope && <><path d={`M${c.x},${c.y} H${r.x} V${e.y}`} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="7 5" fill="none" /></>}</g>;})()}
 			{annotations && p && <circle cx={p.x} cy={p.y} r={9} fill={ACCENT} stroke={CARD} strokeWidth={3} />}
 		</g>
 		{annotations && [...endpointMarkers(s), ...(s.markers ?? [])].filter(m => m.x <= until).map((m, i) => {const p = t.point(m.x, m.y); if (m.x < s.x[0] || m.x > s.x[1] || m.y < s.y[0] || m.y > s.y[1]) return null; return <g key={i}>{m.kind === 'corner' ? <path d={`M${p.x},${p.y - 10} l10,10 l-10,10 l-10,-10 Z`} fill={ACCENT} /> : <circle cx={p.x} cy={p.y} r={8} stroke={s.color ?? BLUE} strokeWidth={3.5} fill={m.kind === 'included' ? s.color ?? BLUE : CARD} />}{annotations && m.label && <Text x={p.x + 15} y={p.y - 16}>{m.label}</Text>}</g>;})}
@@ -210,17 +220,28 @@ export const SecantToTangent: React.FC<SecantToTangentProps> = ({graph, derivati
 	</div>;
 };
 
-export type DerivativeTracerProps = {graph: GraphSpec; derivative: (x: number) => number; derivativeY: Range; derivativeTicks?: readonly Tick[]; derivativeLabel?: string; derivativeDomain?: readonly DomainInterval[]; derivativeBreaks?: readonly number[]; at?: number; duration?: number; mode?: 'paired' | 'overlay'; dotXs?: readonly number[]};
+export type DerivativeTracerProps = {graph: GraphSpec; derivative: (x: number) => number; derivativeY: Range; derivativeTicks?: readonly Tick[]; derivativeLabel?: string; derivativeDomain?: readonly DomainInterval[]; derivativeBreaks?: readonly number[]; at?: number; duration?: number; mode?: 'paired' | 'overlay'; dotXs?: readonly number[]; sweepBranch?: number; candidateScale?:number; target?:{fn:(x:number)=>number;label?:string;dashed?:boolean}};
 export const derivativeSpec = (graph: GraphSpec, derivative: (x: number) => number, derivativeY: Range, domain?: readonly DomainInterval[], breaks: readonly number[] = []): GraphSpec => ({...graph, fn: derivative, y: derivativeY, domain: domain ?? graph.domain, breaks: [...(graph.breaks ?? []), ...breaks, ...(graph.asymptotes ?? []).filter(a => a.axis === 'x').map(a => a.value), ...(graph.markers ?? []).filter(m => m.kind !== 'included').map(m => m.x)], markers: [], asymptotes: []});
-export const DerivativeTracer: React.FC<DerivativeTracerProps> = ({graph, derivative, derivativeY, derivativeTicks, derivativeLabel = 'gradient f′(x)', derivativeDomain, derivativeBreaks, at = 0, duration = 200, mode = 'paired', dotXs}) => {
-	const f = useCurrentFrame(), p = prog(f, at, duration), x = graph.x[0] + p * (graph.x[1] - graph.x[0]);
+export const DerivativeTracer: React.FC<DerivativeTracerProps> = ({graph:rawGraph, derivative:rawDerivative, derivativeY, derivativeTicks, derivativeLabel = 'gradient f′(x)', derivativeDomain, derivativeBreaks, at = 0, duration = 200, mode = 'paired', dotXs, sweepBranch = 0,candidateScale=1,target}) => {
+	if(!Number.isFinite(candidateScale))throw new RangeError('Finite candidate scale required');
+	const graph={...rawGraph,fn:(x:number)=>candidateScale*rawGraph.fn(x)},derivative=(x:number)=>candidateScale*rawDerivative(x);
+	const f = useCurrentFrame(), p = prog(f, at, duration);
 	const lower: GraphSpec = {...derivativeSpec(graph, derivative, derivativeY, derivativeDomain, derivativeBreaks), yTicks: derivativeTicks, yLabel: derivativeLabel, color: ACCENT};
-	const valid = inDomain(graph, x) && inDomain(lower, x) && Number.isFinite(derivative(x)), a = graphTransform(graph).point(x, graph.fn(x)), b = graphTransform(lower).point(x, derivative(x));
-	if (mode === 'overlay') return <FunctionGraph {...graph} movingX={valid ? x : undefined} tangent={valid ? {x, slope: derivative(x)} : undefined}>{(dotXs ?? Array.from({length: 13}, (_, i) => graph.x[0] + (graph.x[1]-graph.x[0])*i/12)).filter(v => v >= graph.x[0] && v <= graph.x[1] && v <= x && inDomain(lower, v) && Number.isFinite(derivative(v))).map(v => {const q = graphTransform(graph).point(v, derivative(v)); return q.y >= graphTransform(graph).box.top && q.y <= graphTransform(graph).box.top + graphTransform(graph).box.height ? <circle key={v} cx={q.x} cy={q.y} r={8} fill={ACCENT} stroke={CARD} strokeWidth={2} /> : null;})}<Text x={graphTransform(graph).box.left} y={(graph.height ?? 520)-2} size={20} color={ACCENT}>Dots: (x, gradient), same y scale</Text></FunctionGraph>;
+	const branches = connectedDomains(lower), branch = branches[sweepBranch];
+	if (!branch) throw new RangeError('Tracer branch index is outside the connected domain');
+	for (let i=0;i<21;i++) {
+		const testX=branch[0]+(branch[1]-branch[0])*(.02+.96*i/20), h=Math.min(1e-5*Math.max(1,Math.abs(testX)),(branch[1]-branch[0])*.001);
+		const numeric=(graph.fn(testX+h)-graph.fn(testX-h))/(2*h), expected=derivative(testX);
+		if(!Number.isFinite(numeric)||!Number.isFinite(expected)||Math.abs(numeric-expected)>1e-6*Math.max(1,Math.abs(expected))) throw new RangeError('Tracer derivative does not match candidate');
+	}
+	const inset = (branch[1]-branch[0])*1e-6, x = branch[0]+inset+p*(branch[1]-branch[0]-2*inset);
+	const branchLower: GraphSpec = {...lower, domain:[{from:branch[0],to:branch[1],includeFrom:false,includeTo:false}]};
+	const valid = inDomain(graph, x) && inDomain(lower, x) && Number.isFinite(graph.fn(x)) && Number.isFinite(derivative(x)), a = valid ? graphTransform(graph).point(x, graph.fn(x)) : undefined, b = valid ? graphTransform(lower).point(x, derivative(x)) : undefined;
+	if (mode === 'overlay') return <FunctionGraph {...graph} movingX={valid ? x : undefined} tangent={valid ? {x, slope: derivative(x)} : undefined}>{target&&(()=>{const tt=graphTransform(graph),lines=sampleFunction({...lower,y:graph.y,fn:target.fn}),matches=lines.flat().every(v=>Math.abs(derivative(v.x)-v.y)<=1e-9*Math.max(1,Math.abs(v.y)));return <g>{lines.map((line,i)=><path key={i} d={dPath(line,tt)} fill="none" stroke={INK} strokeWidth={3} strokeDasharray={matches?undefined:'8 7'}/>)}</g>;})()}{(dotXs ?? Array.from({length: 13}, (_, i) => graph.x[0] + (graph.x[1]-graph.x[0])*i/12)).filter(v => v >= graph.x[0] && v <= graph.x[1] && v <= x && inDomain(graph,v) && inDomain(lower, v) && Number.isFinite(derivative(v))).map(v => {const q = graphTransform(graph).point(v, derivative(v)); return q.y >= graphTransform(graph).box.top && q.y <= graphTransform(graph).box.top + graphTransform(graph).box.height ? <circle key={v} cx={q.x} cy={q.y} r={8} fill={ACCENT} stroke={CARD} strokeWidth={2} /> : null;})}<Text x={graphTransform(graph).box.left} y={(graph.height ?? 520)-2} size={20} color={ACCENT}>Dots: (x, gradient), same y scale</Text></FunctionGraph>;
 	return <div style={{position: 'relative', width: graph.width ?? 800}}>
 		<FunctionGraph {...graph} yLabel={graph.yLabel ?? 'height f(x)'} movingX={valid ? x : undefined} tangent={valid ? {x, slope: derivative(x), span: (graph.x[1] - graph.x[0]) * 0.09} : undefined} />
-		<FunctionGraph {...lower} draw={p} movingX={valid ? x : undefined} />
-		{valid && <svg width={graph.width ?? 800} height={(graph.height ?? 520) * 2} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}><path d={`M${a.x},${a.y} V${(graph.height ?? 520) + b.y}`} stroke={INK_SOFT} strokeDasharray="8 7" strokeWidth={2} fill="none" /><circle cx={b.x} cy={(graph.height ?? 520) + b.y} r={8} fill={ACCENT} /></svg>}
+		<FunctionGraph {...branchLower} draw={(x-graph.x[0])/(graph.x[1]-graph.x[0])} movingX={valid ? x : undefined}>{target&&(()=>{const tt=graphTransform(lower),lines=sampleFunction({...lower,fn:target.fn}),matches=lines.flat().every(v=>Math.abs(derivative(v.x)-v.y)<=1e-9*Math.max(1,Math.abs(v.y)));return <g>{lines.map((line,i)=><path key={i} d={dPath(line,tt)} fill="none" stroke={INK} strokeWidth={3} strokeDasharray={matches?undefined:'8 7'}/>)}{target.label&&<Text x={tt.box.left+12} y={tt.box.top+25} size={20}>{target.label}</Text>}</g>;})()}</FunctionGraph>
+		{valid && a && b && <svg width={graph.width ?? 800} height={(graph.height ?? 520) * 2} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}><path d={`M${a.x},${a.y} V${(graph.height ?? 520) + b.y}`} stroke={INK_SOFT} strokeDasharray="8 7" strokeWidth={2} fill="none" /><circle cx={b.x} cy={(graph.height ?? 520) + b.y} r={8} fill={ACCENT} /></svg>}
 	</div>;
 };
 
@@ -233,14 +254,15 @@ export const TangentTriangle: React.FC<TangentTriangleProps> = ({graph, x, slope
 };
 
 export type SignBoundary = {x: number; kind: 'zero' | 'excluded' | 'undefined'; label?: string};
-export type SignChartProps = {graph: GraphSpec; derivative: (x: number) => number; boundaries: readonly SignBoundary[]; at?: number};
+export type SignChartProps = {graph: GraphSpec; derivative: (x: number) => number; boundaries: readonly SignBoundary[]; at?: number; mode?:'gradient'|'concavity'};
 export const signIntervals = (graph: GraphSpec, derivative: (x: number) => number, boundaries: readonly SignBoundary[]) => connectedDomains({...graph, breaks: [...(graph.breaks ?? []), ...boundaries.map(v => v.x)]}).map(([from, to]) => ({from, to, sign: Math.sign(derivative((from + to) / 2))}));
 /** Same width, left margin and x transform as FunctionGraph. List every derivative zero/undefined point. */
-export const SignChart: React.FC<SignChartProps> = ({graph, derivative, boundaries, at = 0}) => {
+export const SignChart: React.FC<SignChartProps> = ({graph, derivative, boundaries, at = 0,mode='gradient'}) => {
 	const f = useCurrentFrame(), t = graphTransform(graph), b = t.box;
 	return <svg width={graph.width ?? 800} height={176} role="img" aria-label="Derivative signs and increasing or decreasing intervals" style={{opacity: prog(f, at, 16)}}>
-		<Text x={b.left} y={29}>f′ sign → f behaviour</Text>
-		{signIntervals(graph, derivative, boundaries).map((v, i) => {const l = t.point(v.from, 0).x, r = t.point(v.to, 0).x; if (!Number.isFinite(v.sign)) return null; return <g key={i}><rect x={l + 3} y={45} width={Math.max(0, r - l - 6)} height={70} fill={v.sign > 0 ? '#d9e8f6' : v.sign < 0 ? '#f5e5c8' : '#e6e1d7'} /><Text x={(l + r) / 2} y={76} anchor="middle" size={28}>{v.sign > 0 ? '+  ↗' : v.sign < 0 ? '−  ↘' : '0'}</Text><Text x={(l + r) / 2} y={103} anchor="middle" size={22}>{v.sign > 0 ? 'increasing' : v.sign < 0 ? 'decreasing' : 'constant'}</Text></g>;})}
-		{boundaries.map((v, i) => {const x = t.point(v.x, 0).x; return <g key={i}><line x1={x} x2={x} y1={40} y2={119} stroke={INK_SOFT} strokeWidth={2} strokeDasharray={v.kind === 'zero' ? undefined : '5 4'} /><circle cx={x} cy={45} r={6} fill={v.kind === 'zero' ? INK : CARD} stroke={INK} strokeWidth={2} /><Text x={x} y={151} anchor="middle" size={25}>{v.label ?? `${v.x}${v.kind === 'zero' ? ': 0' : v.kind === 'excluded' ? ': excluded' : ': f′ undefined'}`}</Text></g>;})}
+		<Text x={b.left} y={29}>{mode==='concavity'?'sign of f″(x)':'f′ sign → f behaviour'}</Text>
+		{signIntervals(graph, derivative, boundaries).map((v, i) => {const l = t.point(v.from, 0).x, r = t.point(v.to, 0).x; if (!Number.isFinite(v.sign)) return null; return <g key={i}><rect x={l + 3} y={45} width={Math.max(0, r - l - 6)} height={70} fill={v.sign > 0 ? (mode==='concavity'?'#5c9fb2':'#d9e8f6') : v.sign < 0 ? (mode==='concavity'?'#bf725c':'#f5e5c8') : '#e6e1d7'} /><Text x={(l + r) / 2} y={76} anchor="middle" size={28}>{v.sign > 0 ? (mode==='concavity'?'+  ∪':'+  ↗') : v.sign < 0 ? (mode==='concavity'?'−  ∩':'−  ↘') : '0'}</Text><Text x={(l + r) / 2} y={103} anchor="middle" size={22}>{v.sign > 0 ? (mode==='concavity'?'concave up':'increasing') : v.sign < 0 ? (mode==='concavity'?'concave down':'decreasing') : 'constant'}</Text></g>;})}
+		{boundaries.map((v, i) => {const x = t.point(v.x, 0).x; return <g key={i}><line x1={x} x2={x} y1={40} y2={119} stroke={INK_SOFT} strokeWidth={2} strokeDasharray={v.kind === 'zero' ? undefined : '5 4'} /><circle cx={x} cy={45} r={6} fill={v.kind === 'zero' ? INK : CARD} stroke={v.kind==='excluded'?'#ad3e32':INK} strokeWidth={2} /><Text x={x} y={151} anchor="middle" size={25}>{v.label ?? `${v.x}${v.kind === 'zero' ? ': 0' : v.kind === 'excluded' ? ': excluded' : ': f′ undefined'}`}</Text></g>;})}
 	</svg>;
 };
+

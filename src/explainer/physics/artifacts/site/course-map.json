@@ -1,0 +1,1941 @@
+{
+  "scope": "Year 12 2017 course Modules 5 to 8; visual support does not establish syllabus or teaching coverage",
+  "modules": [
+    {
+      "number": 5,
+      "title": "Advanced mechanics",
+      "visuals": [
+        {
+          "id": "m5-launch-angle",
+          "title": "Launch angle and range",
+          "focus": "How does the same launch speed produce different ranges?",
+          "siteLessons": [
+            1,
+            2,
+            4
+          ],
+          "entry": "Horizontal and vertical velocity components",
+          "limits": [
+            "Level ground only; no drag. Original projectile kit remains the component-motion reference."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-elevated-launch",
+          "title": "Horizontal launch from a height",
+          "focus": "The vertical drop determines time; horizontal velocity determines range.",
+          "siteLessons": [
+            2,
+            3,
+            4
+          ],
+          "entry": "Constant acceleration and upward-positive coordinates",
+          "limits": [
+            "One configured horizontal launch; not an obstacle solver or a full worked calculation."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-projectile-practical",
+          "title": "Testing the projectile model",
+          "focus": "A launcher and a graph connect measured drop to range squared.",
+          "siteLessons": [
+            5
+          ],
+          "entry": "Horizontal launch model and graph axes",
+          "limits": [
+            "All dots are simulated. Companion measurement families show intervals; method controls and practical assessment need lesson-specific work."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-torque",
+          "title": "Force direction changes torque",
+          "focus": "A perpendicular force produces the largest turning effect.",
+          "siteLessons": [
+            6,
+            13
+          ],
+          "entry": "Force and a pivot",
+          "limits": [
+            "Single-force comparison. Companion moment-arm and beam families supply the distance construction and force ledger."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-circular-motion",
+          "title": "Velocity turns while speed stays constant",
+          "focus": "The inward net force continually changes the direction of velocity.",
+          "siteLessons": [
+            7,
+            13
+          ],
+          "entry": "Vectors and Newton’s second law",
+          "limits": [
+            "Uniform circular motion only. Net force is not an extra force in a free-body diagram."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-banked-track",
+          "title": "A banked track without friction",
+          "focus": "The normal force supports weight and supplies the inward resultant.",
+          "siteLessons": [
+            8
+          ],
+          "entry": "Force components and circular motion",
+          "limits": [
+            "This family shows frictionless design speed. Companions cover conical motion and friction direction; limiting-speed derivations remain open."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-vertical-loop",
+          "title": "Forces around a vertical loop",
+          "focus": "Weight stays downward while tension points towards the centre.",
+          "siteLessons": [
+            9,
+            13
+          ],
+          "entry": "Energy conservation and radial force equations",
+          "limits": [
+            "Ideal string stays taut; no loss of contact, rigid rods or normal-force loop."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-inverse-square",
+          "title": "Distance weakens the gravitational field",
+          "focus": "Double the separation and the field falls to one quarter.",
+          "siteLessons": [
+            10,
+            15,
+            18
+          ],
+          "entry": "Force per unit mass",
+          "limits": [
+            "Single spherical central mass outside its surface. Field-line density is not quantitative."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-orbit-energy",
+          "title": "Compare circular orbital energies",
+          "focus": "A higher circular orbit has lower speed and less negative total energy.",
+          "siteLessons": [
+            11,
+            12,
+            13,
+            18
+          ],
+          "entry": "Gravity provides radial net force; energy zero at infinity",
+          "limits": [
+            "A parameter comparison, not an animated transfer manoeuvre. GEO synchronisation and orbit-transfer burns remain gaps."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-gravitational-potential",
+          "title": "Read a gravitational potential graph",
+          "focus": "Potential rises towards zero as distance increases.",
+          "siteLessons": [
+            14,
+            15,
+            18
+          ],
+          "entry": "Potential is potential energy per unit mass",
+          "limits": [
+            "The graph does not yet draw its tangent or show equipotential surfaces and work integrals."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-escape",
+          "title": "Escape requires nonnegative total energy",
+          "focus": "Compare kinetic, potential and total specific energy at one launch radius.",
+          "siteLessons": [
+            16,
+            18
+          ],
+          "entry": "Signed gravitational energy with zero at infinity",
+          "limits": [
+            "Energy threshold only; no trajectory classification or relativistic escape models."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-kepler",
+          "title": "Equal times, equal swept areas",
+          "focus": "An orbit speeds up near the central body and slows farther away.",
+          "siteLessons": [
+            17,
+            18
+          ],
+          "entry": "An ellipse has two foci; period means one complete orbit",
+          "limits": [
+            "Ideal Keplerian two-body motion; no perturbations, precession or numerical orbital data fit."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m5-vector-resolution",
+          "title": "Resolve the initial velocity",
+          "focus": "Connect triangle sides to sine and cosine",
+          "siteLessons": [
+            1,
+            4
+          ],
+          "entry": "Right-triangle sine/cosine ratios; vectors have magnitude and direction.",
+          "limits": [
+            "Launch angle measured above horizontal; first-quadrant example.",
+            "Use at least 24 seconds to hold each equation."
+          ],
+          "seconds": 24,
+          "stillFrame": 435
+        },
+        {
+          "id": "m5-range-derivation",
+          "title": "Derive level-ground range",
+          "focus": "Vertical return time feeds horizontal range",
+          "siteLessons": [
+            2,
+            4
+          ],
+          "entry": "Velocity components, displacement equations and factorising a quadratic.",
+          "limits": [
+            "Equal launch/landing height, no drag, constant g.",
+            "Use at least 32 seconds."
+          ],
+          "seconds": 32,
+          "stillFrame": 585
+        },
+        {
+          "id": "m5-obstacle-clearance",
+          "title": "Clear a wall from a cliff",
+          "focus": "Time at a horizontal location, then height against one datum",
+          "siteLessons": [
+            3,
+            4
+          ],
+          "entry": "Resolve velocity; substitute time in vertical displacement; signed displacement.",
+          "limits": [
+            "Point projectile, zero-width wall, no drag, constant g.",
+            "Use at least 30 seconds."
+          ],
+          "seconds": 30,
+          "stillFrame": 548
+        },
+        {
+          "id": "m5-target-angles",
+          "title": "Two angles for one target",
+          "focus": "Two sine solutions produce different physical paths",
+          "siteLessons": [
+            2,
+            3,
+            4
+          ],
+          "entry": "Level-ground range formula; inverse sine; supplementary-angle identity.",
+          "limits": [
+            "Equal heights, 0° < θ < 90°, no drag, constant g.",
+            "Use at least 30 seconds."
+          ],
+          "seconds": 30,
+          "stillFrame": 548
+        },
+        {
+          "id": "m5-repeat-measurements",
+          "title": "Repeated range measurements",
+          "focus": "Compare repeated readings before assigning a range and its uncertainty.",
+          "siteLessons": [
+            5
+          ],
+          "entry": "Horizontal launch, range and a mean.",
+          "limits": [
+            "Five readings are simulated; mean plus or minus half-range is an illustrative spread estimate, not a confidence interval or full instrument budget.",
+            "The same launch is shown once; the reading list represents simulated repeats."
+          ],
+          "seconds": 16,
+          "stillFrame": 285
+        },
+        {
+          "id": "m5-slope-intervals",
+          "title": "Uncertainty in a projectile graph",
+          "focus": "Compatible slopes produce a range of inferred launch speeds.",
+          "siteLessons": [
+            5
+          ],
+          "entry": "Graph slope and the horizontal-launch relation h = gx²/(2u²).",
+          "limits": [
+            "Measurements are simulated and centred on the ideal model; intervals are illustrative bounds.",
+            "Zero intercept is imposed by the model. No least-squares fit, systematic-error model or confidence level is asserted."
+          ],
+          "seconds": 24,
+          "stillFrame": 435
+        },
+        {
+          "id": "m5-moment-arm",
+          "title": "Perpendicular moment arm",
+          "focus": "Measure the shortest pivot-to-force-line distance.",
+          "siteLessons": [
+            6
+          ],
+          "entry": "Force vectors and sine.",
+          "limits": [
+            "Fixed lever; angle parameter comparison."
+          ],
+          "seconds": 16,
+          "stillFrame": 285
+        },
+        {
+          "id": "m5-beam-equilibrium",
+          "title": "Beam equilibrium",
+          "focus": "Check signed torque and vertical force separately.",
+          "siteLessons": [
+            6
+          ],
+          "entry": "Torque sign and force balance.",
+          "limits": [
+            "Light rigid beam; vertical forces only."
+          ],
+          "seconds": 24,
+          "stillFrame": 435
+        },
+        {
+          "id": "m5-conical-pendulum",
+          "title": "Conical pendulum projections",
+          "focus": "Link a moving circular bob to tension components.",
+          "siteLessons": [
+            8
+          ],
+          "entry": "Uniform circular motion and vector components.",
+          "limits": [
+            "Ideal string; fixed angle; side view is a projection."
+          ],
+          "seconds": 20,
+          "stillFrame": 360
+        },
+        {
+          "id": "m5-banked-friction",
+          "title": "Banked curve friction",
+          "focus": "Friction changes direction across design speed.",
+          "siteLessons": [
+            8
+          ],
+          "entry": "Normal force, friction and inward net force.",
+          "limits": [
+            "Steady circular states; μs = 0.50; no longitudinal acceleration."
+          ],
+          "seconds": 24,
+          "stillFrame": 435
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Electromagnetism",
+      "visuals": [
+        {
+          "id": "m6-plates",
+          "title": "Electron between plates",
+          "focus": "Constant force changes one velocity component",
+          "siteLessons": [
+            1,
+            2
+          ],
+          "entry": "Field direction and charge sign",
+          "limits": [
+            "Uniform interior only; trajectory is schematic; gravity neglected"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-potential-energy",
+          "title": "Potential and electron energy",
+          "focus": "Higher potential lowers electron potential energy",
+          "siteLessons": [
+            3
+          ],
+          "entry": "Signed charge and energy conservation",
+          "limits": [
+            "No collisions; electrostatic field; bar lengths show energy changes"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-magnetic-orbit",
+          "title": "Force turns a moving charge",
+          "focus": "Separate tangential velocity from inward force",
+          "siteLessons": [
+            4,
+            5
+          ],
+          "entry": "Velocity as a vector",
+          "limits": [
+            "Positive charge; perpendicular entry; non-relativistic; no helix"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-selector-analyser",
+          "title": "Select speed, then separate ions",
+          "focus": "Balanced selector forces precede magnetic analysis",
+          "siteLessons": [
+            6,
+            18
+          ],
+          "entry": "Electric and magnetic force directions",
+          "limits": [
+            "Common speed and charge magnitude; analyser paths schematic; source not modelled"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-parallel-wires",
+          "title": "Two currents attract",
+          "focus": "Each wire experiences the field of the other",
+          "siteLessons": [
+            7,
+            8
+          ],
+          "entry": "Conventional current and magnetic force",
+          "limits": [
+            "Long straight parallel wires; same-direction case only; no SI definition claim"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-coil-torque",
+          "title": "Force pair turns a coil",
+          "focus": "Torque changes with lever arm",
+          "siteLessons": [
+            7,
+            9,
+            10
+          ],
+          "entry": "Motor effect and moment of a force",
+          "limits": [
+            "End-on section; angle measured from coil plane; commutator omitted"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-generator-flux",
+          "title": "Rotating area and induced emf",
+          "focus": "Flux rate produces a phase-shifted emf",
+          "siteLessons": [
+            11,
+            12,
+            13
+          ],
+          "entry": "Area normal and cosine",
+          "limits": [
+            "Ideal constant angular speed; graph normalised; slip rings omitted"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-sliding-rod",
+          "title": "Changing area induces current",
+          "focus": "Lenz direction closes a mechanical energy account",
+          "siteLessons": [
+            13,
+            14,
+            21
+          ],
+          "entry": "Flux and closed-circuit current",
+          "limits": [
+            "Constant speed; uniform field; total resistance R; one turn"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-transformer-grid",
+          "title": "Transform voltage to reduce losses",
+          "focus": "Shared changing flux and reciprocal current ratio",
+          "siteLessons": [
+            15,
+            20,
+            21
+          ],
+          "entry": "Faraday law and power",
+          "limits": [
+            "Ideal loaded transformer; fixed transmitted power; resistive line; no three-phase calculation"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-motor-back-emf",
+          "title": "A spinning motor limits its current",
+          "focus": "Back emf increases with angular speed",
+          "siteLessons": [
+            10,
+            17
+          ],
+          "entry": "Ohm law and induction",
+          "limits": [
+            "Fixed field, constant R; externally prescribed speed; no transient inductance"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-induction-slip",
+          "title": "Rotor follows a rotating field",
+          "focus": "Relative motion is necessary for induced torque",
+          "siteLessons": [
+            10,
+            16,
+            21
+          ],
+          "entry": "Faraday law and Lenz law",
+          "limits": [
+            "Schematic resultant field; illustrative 20 percent slip; no winding phase detail"
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m6-eddy-brake",
+          "title": "A conductor enters a field",
+          "focus": "Induced circulation opposes increasing flux",
+          "siteLessons": [
+            19
+          ],
+          "entry": "Faraday and Lenz laws",
+          "limits": [
+            "Entry interval only; drag arrow schematic; no lamination geometry"
+          ],
+          "stillFrame": 210
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The nature of light",
+      "visuals": [
+        {
+          "id": "m7-em-geometry",
+          "title": "Electromagnetic geometry",
+          "focus": "Track in-phase perpendicular fields and rightward propagation.",
+          "siteLessons": [
+            1,
+            2,
+            10
+          ],
+          "entry": "Transverse oscillation and wavelength.",
+          "limits": [
+            "A plane wave in vacuum, not a microscopic emission mechanism.",
+            "Symbol radii encode signed field amplitude; E and B use different display scales.",
+            "No numerical spectrum, medium boundary or inverse-square apparatus."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-double-slit",
+          "title": "Double-slit coherence",
+          "focus": "Connect secondary wavefronts to fringe intensity and loss of coherence.",
+          "siteLessons": [
+            3,
+            10,
+            20
+          ],
+          "entry": "Superposition and path difference.",
+          "limits": [
+            "Illustrative wavefront geometry and separate far-field intensity strip are not a common physical scale.",
+            "Identical finite slits, equal in-phase illumination, far field.",
+            "Which-path mode shows zero visibility without asserting two narrow bands.",
+            "No photon trajectories or which-path measurement mechanism."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-diffraction",
+          "title": "Slit and grating patterns",
+          "focus": "Compare sinc envelope and increasingly narrow array maxima.",
+          "siteLessons": [
+            4,
+            10
+          ],
+          "entry": "Angle, wavelength, slit width and spacing.",
+          "limits": [
+            "Six slits illustrate an array, not the thousands in a commercial grating.",
+            "Each intensity pattern is separately peak-normalised.",
+            "No white-light ray dispersion or wavelength-measuring apparatus."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-polarisation",
+          "title": "Polariser and analyser",
+          "focus": "Rotate the analyser and track transmitted intensity.",
+          "siteLessons": [
+            5,
+            10
+          ],
+          "entry": "A transverse electric field and intensity.",
+          "limits": [
+            "Ideal lossless polarisers other than rejected component.",
+            "Intensity for a plane-polarised input; initial unpolarised factor is stated separately.",
+            "No Brewster-angle ray construction or three-filter chain."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-spectra-shift",
+          "title": "Spectra and redshift",
+          "focus": "Match emission/absorption wavelengths, then shift all lines by one factor.",
+          "siteLessons": [
+            9
+          ],
+          "entry": "Wavelength and photon energy.",
+          "limits": [
+            "Hydrogen visible Balmer lines rounded in nm; colours schematic.",
+            "Display is wavelength-linear, not frequency-linear.",
+            "z is a measured shift factor, not a claim that z=v/c at arbitrary speeds.",
+            "No pressure broadening, Hubble data or source apparatus."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-light-clock",
+          "title": "Light-clock geometry",
+          "focus": "Compare a vertical rest-frame round trip with a lab-frame diagonal round trip.",
+          "siteLessons": [
+            11,
+            12
+          ],
+          "entry": "Constant light speed and Pythagoras.",
+          "limits": [
+            "Inertial flat-spacetime example at 0.60c.",
+            "Same progress fraction spans different coordinate times in the two panels.",
+            "No twin turnaround, GPS gravity correction or muon decay statistics."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-length",
+          "title": "Simultaneous endpoint measurement",
+          "focus": "Contract only the dimension parallel to relative velocity.",
+          "siteLessons": [
+            13
+          ],
+          "entry": "Proper length and Lorentz factor.",
+          "limits": [
+            "Coordinate measurement, not a photograph or physical squeezing.",
+            "Both lab endpoints measured simultaneously in the lab.",
+            "No barn doors, ladder collisions or muon evidence."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-simultaneity",
+          "title": "Lorentz event pair",
+          "focus": "Transform two spacelike events and see their unequal frame times.",
+          "siteLessons": [
+            11,
+            15
+          ],
+          "entry": "x and ct coordinates; inertial frame.",
+          "limits": [
+            "S-prime moves in positive x. B is the positive-x event and is earlier there.",
+            "Axes carry the same units and scale. Connecting line joins simultaneous-S events, not a trajectory.",
+            "No signal-reception timing or twin acceleration."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-energy",
+          "title": "Relativistic energy curve",
+          "focus": "Contrast classical and relativistic kinetic energy as speed approaches c.",
+          "siteLessons": [
+            14
+          ],
+          "entry": "Kinetic energy and invariant mass.",
+          "limits": [
+            "Dimensionless vertical ratio K/(mc²), for nonzero invariant mass.",
+            "Curve stops below c; infinity is not a plotted data point.",
+            "No nuclear reaction mechanism, mass budget or accelerator apparatus."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m7-photoelectric",
+          "title": "Photoelectric threshold",
+          "focus": "Show emission only when a photon clears the work-function threshold.",
+          "siteLessons": [
+            10,
+            16,
+            20
+          ],
+          "entry": "Photon energy hf and work function.",
+          "limits": [
+            "Ideal collector with ammeter, no variable stopping-voltage circuit.",
+            "Electron dots represent emitted charge, not resolved quantum paths.",
+            "Graph is model prediction for a fictional 2.20 eV work function, not Millikan data.",
+            "Emission energies span 0 to Kmax; dots do not assign each electron Kmax."
+          ],
+          "stillFrame": 210
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "From the Universe to the atom",
+      "visuals": [
+        {
+          "id": "m8-expansion",
+          "title": "Expanding space and Hubble relation",
+          "focus": "Expand comoving separations and stretch a light wave, then connect distance to recession speed.",
+          "siteLessons": [
+            1,
+            2,
+            3
+          ],
+          "entry": "Wavelength and graph gradients.",
+          "limits": [
+            "Local illustrative Hubble law, not a high-redshift distance calculator.",
+            "No CMB scattering or primordial-abundance mechanism."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-stellar-evolution",
+          "title": "Mass-dependent stellar branches",
+          "focus": "Distinguish a Sun-like path from a massive-star core-collapse path.",
+          "siteLessons": [
+            6,
+            10
+          ],
+          "entry": "Gravity attracts matter; fusion releases energy.",
+          "limits": [
+            "No universal remnant mass boundary.",
+            "No Type Ia mechanism or pulsar beam geometry; red-dwarf evolution omitted."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-hr-diagram",
+          "title": "HR regions and a stellar path",
+          "focus": "Locate populations on temperature and luminosity axes and show a conceptual post-main-sequence track.",
+          "siteLessons": [
+            6,
+            8,
+            10
+          ],
+          "entry": "Luminosity is emitted power, not apparent brightness.",
+          "limits": [
+            "Illustrative positions, not observed data or calibrated evolutionary tracks.",
+            "No cluster turn-off dating or radius calculation."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-spectra",
+          "title": "Absorption and radial redshift",
+          "focus": "Place cooler gas between a hot source and a dispersed spectrum, then shift a fixed line pattern.",
+          "siteLessons": [
+            2,
+            3,
+            9
+          ],
+          "entry": "Light contains wavelengths; atoms absorb selected photon energies.",
+          "limits": [
+            "Schematic bands and lines, no element-specific wavelengths.",
+            "No OBAFGKM classification, emission-source mechanism or relativistic Doppler calculation."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-nucleosynthesis",
+          "title": "Binding and element origins",
+          "focus": "Relate binding energy to broad fusion and fission energy directions, and distinguish element-producing environments.",
+          "siteLessons": [
+            2,
+            6,
+            7,
+            14
+          ],
+          "entry": "Nuclei contain protons and neutrons.",
+          "limits": [
+            "Iron-group maximum, not an exact Fe-56 maximum; Ni-62 has greater binding per nucleon.",
+            "Neutron capture is not shown step by step; no claim all supernovae provide the main r-process.",
+            "No reaction energetics or operational chain-reaction design."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-rutherford",
+          "title": "Rare large-angle scattering",
+          "focus": "Contrast common nearly straight alpha paths with rare strong Coulomb deflections.",
+          "siteLessons": [
+            11
+          ],
+          "entry": "Like electric charges repel.",
+          "limits": [
+            "Not a quantitative scattering simulation or measured frequency sample.",
+            "Nuclei enlarged; electron and neutron discovery experiments are not implemented."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-quantum-atom",
+          "title": "Hydrogen levels and probability density",
+          "focus": "Link a discrete downward energy change to a photon while distinguishing density from an electron trajectory.",
+          "siteLessons": [
+            12,
+            13
+          ],
+          "entry": "Photon energy is hf.",
+          "limits": [
+            "Rounded nonrelativistic hydrogen energies.",
+            "Density marks show a 2D slice of 1s probability per volume, not radial probability or repeated detections.",
+            "No uncertainty experiment, quantum-number catalogue or Bohr orbital dynamics."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-decay-population",
+          "title": "Random decays and expected half-life curve",
+          "focus": "Show changing individual membership alongside an expected exponential population trend.",
+          "siteLessons": [
+            15
+          ],
+          "entry": "Radioactive decay changes an unstable nucleus.",
+          "limits": [
+            "Deterministic stratified illustrative sample, not a prediction for individual nuclei.",
+            "No alpha/beta/gamma transformation or Q-value working."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-particles",
+          "title": "Annihilation and nucleon charge",
+          "focus": "Show opposite photon momenta and sum the charges of valence quarks.",
+          "siteLessons": [
+            16,
+            17,
+            18
+          ],
+          "entry": "Energy, momentum and charge are conserved.",
+          "limits": [
+            "No literal quark or photon sizes.",
+            "No complete Standard Model table, pair-production recoil or weak-decay mechanism.",
+            "Carrier labels name interactions; they do not animate virtual-particle exchange."
+          ],
+          "stillFrame": 210
+        },
+        {
+          "id": "m8-accelerator",
+          "title": "Ring steering and layered detection",
+          "focus": "Separate electric acceleration from magnetic steering and show different schematic detector responses.",
+          "siteLessons": [
+            19
+          ],
+          "entry": "A perpendicular force changes motion direction.",
+          "limits": [
+            "Ring not an LHC engineering layout; no timing or magnet ramp model.",
+            "Detector trajectories are schematic; no quantitative momentum reconstruction or missing-momentum inference."
+          ],
+          "stillFrame": 210
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "module": 5,
+      "lesson": 1,
+      "title": "Projectile Motion Fundamentals",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson01.sa.html",
+      "visuals": [
+        "m5-launch-angle",
+        "m5-vector-resolution"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Level ground only; no drag. Original projectile kit remains the component-motion reference.",
+        "Launch angle measured above horizontal; first-quadrant example.",
+        "Use at least 24 seconds to hold each equation."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 2,
+      "title": "Launch Angle and Range Equation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson02.sa.html",
+      "visuals": [
+        "m5-launch-angle",
+        "m5-elevated-launch",
+        "m5-range-derivation",
+        "m5-target-angles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Level ground only; no drag. Original projectile kit remains the component-motion reference.",
+        "One configured horizontal launch; not an obstacle solver or a full worked calculation.",
+        "Equal launch/landing height, no drag, constant g.",
+        "Use at least 32 seconds.",
+        "Equal heights, 0° < θ < 90°, no drag, constant g.",
+        "Use at least 30 seconds."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 3,
+      "title": "Solving Projectile Motion Problems",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson03.sa.html",
+      "visuals": [
+        "m5-elevated-launch",
+        "m5-obstacle-clearance",
+        "m5-target-angles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "One configured horizontal launch; not an obstacle solver or a full worked calculation.",
+        "Point projectile, zero-width wall, no drag, constant g.",
+        "Use at least 30 seconds.",
+        "Equal heights, 0° < θ < 90°, no drag, constant g.",
+        "Use at least 30 seconds."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 4,
+      "title": "Projectile Motion Consolidation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson04.sa.html",
+      "visuals": [
+        "m5-launch-angle",
+        "m5-elevated-launch",
+        "m5-vector-resolution",
+        "m5-range-derivation",
+        "m5-obstacle-clearance",
+        "m5-target-angles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Level ground only; no drag. Original projectile kit remains the component-motion reference.",
+        "One configured horizontal launch; not an obstacle solver or a full worked calculation.",
+        "Launch angle measured above horizontal; first-quadrant example.",
+        "Use at least 24 seconds to hold each equation.",
+        "Equal launch/landing height, no drag, constant g.",
+        "Use at least 32 seconds.",
+        "Point projectile, zero-width wall, no drag, constant g.",
+        "Use at least 30 seconds.",
+        "Equal heights, 0° < θ < 90°, no drag, constant g.",
+        "Use at least 30 seconds."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 5,
+      "title": "Practical: Validating Projectile Motion",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson05.sa.html",
+      "visuals": [
+        "m5-projectile-practical",
+        "m5-repeat-measurements",
+        "m5-slope-intervals"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "All dots are simulated. Companion measurement families show intervals; method controls and practical assessment need lesson-specific work.",
+        "Five readings are simulated; mean plus or minus half-range is an illustrative spread estimate, not a confidence interval or full instrument budget.",
+        "The same launch is shown once; the reading list represents simulated repeats.",
+        "Measurements are simulated and centred on the ideal model; intervals are illustrative bounds.",
+        "Zero intercept is imposed by the model. No least-squares fit, systematic-error model or confidence level is asserted."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 6,
+      "title": "Torque and Rotational Equilibrium",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson06.sa.html",
+      "visuals": [
+        "m5-torque",
+        "m5-moment-arm",
+        "m5-beam-equilibrium"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Single-force comparison. Companion moment-arm and beam families supply the distance construction and force ledger.",
+        "Fixed lever; angle parameter comparison.",
+        "Light rigid beam; vertical forces only."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 7,
+      "title": "Uniform Circular Motion",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson07.sa.html",
+      "visuals": [
+        "m5-circular-motion"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Uniform circular motion only. Net force is not an extra force in a free-body diagram."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 8,
+      "title": "Horizontal Circular Motion and Banked Tracks",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson08.sa.html",
+      "visuals": [
+        "m5-banked-track",
+        "m5-conical-pendulum",
+        "m5-banked-friction"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "This family shows frictionless design speed. Companions cover conical motion and friction direction; limiting-speed derivations remain open.",
+        "Ideal string; fixed angle; side view is a projection.",
+        "Steady circular states; μs = 0.50; no longitudinal acceleration."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 9,
+      "title": "Vertical Circular Motion Extension",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson09.sa.html",
+      "visuals": [
+        "m5-vertical-loop"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal string stays taut; no loss of contact, rigid rods or normal-force loop."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 10,
+      "title": "Newton's Law of Universal Gravitation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson10.sa.html",
+      "visuals": [
+        "m5-inverse-square"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Single spherical central mass outside its surface. Field-line density is not quantitative."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 11,
+      "title": "Gravitational Orbits",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson11.sa.html",
+      "visuals": [
+        "m5-orbit-energy"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "A parameter comparison, not an animated transfer manoeuvre. GEO synchronisation and orbit-transfer burns remain gaps."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 12,
+      "title": "Energy in Gravitational Orbits",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson12.sa.html",
+      "visuals": [
+        "m5-orbit-energy"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "A parameter comparison, not an animated transfer manoeuvre. GEO synchronisation and orbit-transfer burns remain gaps."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 13,
+      "title": "Circular Motion and Orbits Consolidation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson13.sa.html",
+      "visuals": [
+        "m5-torque",
+        "m5-circular-motion",
+        "m5-vertical-loop",
+        "m5-orbit-energy"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Single-force comparison. Companion moment-arm and beam families supply the distance construction and force ledger.",
+        "Uniform circular motion only. Net force is not an extra force in a free-body diagram.",
+        "Ideal string stays taut; no loss of contact, rigid rods or normal-force loop.",
+        "A parameter comparison, not an animated transfer manoeuvre. GEO synchronisation and orbit-transfer burns remain gaps."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 14,
+      "title": "Gravitational Potential Energy",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson14.sa.html",
+      "visuals": [
+        "m5-gravitational-potential"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "The graph does not yet draw its tangent or show equipotential surfaces and work integrals."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 15,
+      "title": "Gravitational Potential and Field Strength",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson15.sa.html",
+      "visuals": [
+        "m5-inverse-square",
+        "m5-gravitational-potential"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Single spherical central mass outside its surface. Field-line density is not quantitative.",
+        "The graph does not yet draw its tangent or show equipotential surfaces and work integrals."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 16,
+      "title": "Escape Velocity",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson16.sa.html",
+      "visuals": [
+        "m5-escape"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Energy threshold only; no trajectory classification or relativistic escape models."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 17,
+      "title": "Kepler's Laws",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson17.sa.html",
+      "visuals": [
+        "m5-kepler"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal Keplerian two-body motion; no perturbations, precession or numerical orbital data fit."
+      ]
+    },
+    {
+      "module": 5,
+      "lesson": 18,
+      "title": "Gravitational Fields Consolidation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson18.sa.html",
+      "visuals": [
+        "m5-inverse-square",
+        "m5-orbit-energy",
+        "m5-gravitational-potential",
+        "m5-escape",
+        "m5-kepler"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Single spherical central mass outside its surface. Field-line density is not quantitative.",
+        "A parameter comparison, not an animated transfer manoeuvre. GEO synchronisation and orbit-transfer burns remain gaps.",
+        "The graph does not yet draw its tangent or show equipotential surfaces and work integrals.",
+        "Energy threshold only; no trajectory classification or relativistic escape models.",
+        "Ideal Keplerian two-body motion; no perturbations, precession or numerical orbital data fit."
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 1,
+      "title": "Uniform Electric Fields",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson01.sa.html",
+      "visuals": [
+        "m6-plates"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Uniform interior only; trajectory is schematic; gravity neglected"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 2,
+      "title": "Charged Particle Trajectories in Electric Fields",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson02.sa.html",
+      "visuals": [
+        "m6-plates"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Uniform interior only; trajectory is schematic; gravity neglected"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 3,
+      "title": "Work, Energy and Electric Potential",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson03.sa.html",
+      "visuals": [
+        "m6-potential-energy"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No collisions; electrostatic field; bar lengths show energy changes"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 4,
+      "title": "Magnetic Fields and the Lorentz Force",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson04.sa.html",
+      "visuals": [
+        "m6-magnetic-orbit"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Positive charge; perpendicular entry; non-relativistic; no helix"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 5,
+      "title": "Circular Motion of Charges in Magnetic Fields",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson05.sa.html",
+      "visuals": [
+        "m6-magnetic-orbit"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Positive charge; perpendicular entry; non-relativistic; no helix"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 6,
+      "title": "Electric vs Magnetic Fields and Velocity Selection",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson06.sa.html",
+      "visuals": [
+        "m6-selector-analyser"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Common speed and charge magnitude; analyser paths schematic; source not modelled"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 7,
+      "title": "The Motor Effect",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson07.sa.html",
+      "visuals": [
+        "m6-parallel-wires",
+        "m6-coil-torque"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Long straight parallel wires; same-direction case only; no SI definition claim",
+        "End-on section; angle measured from coil plane; commutator omitted"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 8,
+      "title": "Forces Between Parallel Conductors",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson08.sa.html",
+      "visuals": [
+        "m6-parallel-wires"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Long straight parallel wires; same-direction case only; no SI definition claim"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 9,
+      "title": "Torque on a Current-Carrying Coil",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson09.sa.html",
+      "visuals": [
+        "m6-coil-torque"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "End-on section; angle measured from coil plane; commutator omitted"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 10,
+      "title": "DC and AC Motors Compared",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson10.sa.html",
+      "visuals": [
+        "m6-coil-torque",
+        "m6-motor-back-emf",
+        "m6-induction-slip"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "End-on section; angle measured from coil plane; commutator omitted",
+        "Fixed field, constant R; externally prescribed speed; no transient inductance",
+        "Schematic resultant field; illustrative 20 percent slip; no winding phase detail"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 11,
+      "title": "AC Generators and Changing Flux",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson11.sa.html",
+      "visuals": [
+        "m6-generator-flux"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal constant angular speed; graph normalised; slip rings omitted"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 12,
+      "title": "Magnetic Flux Explained",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson12.sa.html",
+      "visuals": [
+        "m6-generator-flux"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal constant angular speed; graph normalised; slip rings omitted"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 13,
+      "title": "Faraday's Law of Electromagnetic Induction",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson13.sa.html",
+      "visuals": [
+        "m6-generator-flux",
+        "m6-sliding-rod"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal constant angular speed; graph normalised; slip rings omitted",
+        "Constant speed; uniform field; total resistance R; one turn"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 14,
+      "title": "Lenz's Law and Induced Current Direction",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson14.sa.html",
+      "visuals": [
+        "m6-sliding-rod"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Constant speed; uniform field; total resistance R; one turn"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 15,
+      "title": "Transformers, Theory and Operation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson15.sa.html",
+      "visuals": [
+        "m6-transformer-grid"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal loaded transformer; fixed transmitted power; resistive line; no three-phase calculation"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 16,
+      "title": "AC Induction Motors and Generators",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson16.sa.html",
+      "visuals": [
+        "m6-induction-slip"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Schematic resultant field; illustrative 20 percent slip; no winding phase detail"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 17,
+      "title": "DC Motors in Depth, Back EMF and Torque-Speed",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson17.sa.html",
+      "visuals": [
+        "m6-motor-back-emf"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Fixed field, constant R; externally prescribed speed; no transient inductance"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 18,
+      "title": "Mass Spectrometers",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson18.sa.html",
+      "visuals": [
+        "m6-selector-analyser"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Common speed and charge magnitude; analyser paths schematic; source not modelled"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 19,
+      "title": "Eddy Currents",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson19.sa.html",
+      "visuals": [
+        "m6-eddy-brake"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Entry interval only; drag arrow schematic; no lamination geometry"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 20,
+      "title": "Power Transmission and Distribution",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson20.sa.html",
+      "visuals": [
+        "m6-transformer-grid"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal loaded transformer; fixed transmitted power; resistive line; no three-phase calculation"
+      ]
+    },
+    {
+      "module": 6,
+      "lesson": 21,
+      "title": "Module 6 Revision and Exam Strategies",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson21.sa.html",
+      "visuals": [
+        "m6-sliding-rod",
+        "m6-transformer-grid",
+        "m6-induction-slip"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Constant speed; uniform field; total resistance R; one turn",
+        "Ideal loaded transformer; fixed transmitted power; resistive line; no three-phase calculation",
+        "Schematic resultant field; illustrative 20 percent slip; no winding phase detail"
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 1,
+      "title": "The Electromagnetic Spectrum",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson01.sa.html",
+      "visuals": [
+        "m7-em-geometry"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "A plane wave in vacuum, not a microscopic emission mechanism.",
+        "Symbol radii encode signed field amplitude; E and B use different display scales.",
+        "No numerical spectrum, medium boundary or inverse-square apparatus."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 2,
+      "title": "Properties of Electromagnetic Waves",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson02.sa.html",
+      "visuals": [
+        "m7-em-geometry"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "A plane wave in vacuum, not a microscopic emission mechanism.",
+        "Symbol radii encode signed field amplitude; E and B use different display scales.",
+        "No numerical spectrum, medium boundary or inverse-square apparatus."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 3,
+      "title": "Interference and Young's Double Slit Experiment",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson03.sa.html",
+      "visuals": [
+        "m7-double-slit"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Illustrative wavefront geometry and separate far-field intensity strip are not a common physical scale.",
+        "Identical finite slits, equal in-phase illumination, far field.",
+        "Which-path mode shows zero visibility without asserting two narrow bands.",
+        "No photon trajectories or which-path measurement mechanism."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 4,
+      "title": "Diffraction and Diffraction Gratings",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson04.sa.html",
+      "visuals": [
+        "m7-diffraction"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Six slits illustrate an array, not the thousands in a commercial grating.",
+        "Each intensity pattern is separately peak-normalised.",
+        "No white-light ray dispersion or wavelength-measuring apparatus."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 5,
+      "title": "Polarisation of Light and Malus's Law",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson05.sa.html",
+      "visuals": [
+        "m7-polarisation"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal lossless polarisers other than rejected component.",
+        "Intensity for a plane-polarised input; initial unpolarised factor is stated separately.",
+        "No Brewster-angle ray construction or three-filter chain."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 9,
+      "title": "Spectroscopy and Astronomical Applications",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson09.sa.html",
+      "visuals": [
+        "m7-spectra-shift"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Hydrogen visible Balmer lines rounded in nm; colours schematic.",
+        "Display is wavelength-linear, not frequency-linear.",
+        "z is a measured shift factor, not a claim that z=v/c at arbitrary speeds.",
+        "No pressure broadening, Hubble data or source apparatus."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 10,
+      "title": "Synthesis: Evidence for the Wave Model of Light",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson10.sa.html",
+      "visuals": [
+        "m7-em-geometry",
+        "m7-double-slit",
+        "m7-diffraction",
+        "m7-polarisation",
+        "m7-photoelectric"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "A plane wave in vacuum, not a microscopic emission mechanism.",
+        "Symbol radii encode signed field amplitude; E and B use different display scales.",
+        "No numerical spectrum, medium boundary or inverse-square apparatus.",
+        "Illustrative wavefront geometry and separate far-field intensity strip are not a common physical scale.",
+        "Identical finite slits, equal in-phase illumination, far field.",
+        "Which-path mode shows zero visibility without asserting two narrow bands.",
+        "No photon trajectories or which-path measurement mechanism.",
+        "Six slits illustrate an array, not the thousands in a commercial grating.",
+        "Each intensity pattern is separately peak-normalised.",
+        "No white-light ray dispersion or wavelength-measuring apparatus.",
+        "Ideal lossless polarisers other than rejected component.",
+        "Intensity for a plane-polarised input; initial unpolarised factor is stated separately.",
+        "No Brewster-angle ray construction or three-filter chain.",
+        "Ideal collector with ammeter, no variable stopping-voltage circuit.",
+        "Electron dots represent emitted charge, not resolved quantum paths.",
+        "Graph is model prediction for a fictional 2.20 eV work function, not Millikan data.",
+        "Emission energies span 0 to Kmax; dots do not assign each electron Kmax."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 11,
+      "title": "Special Relativity, Inertial Frames and Postulates",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson11.sa.html",
+      "visuals": [
+        "m7-light-clock",
+        "m7-simultaneity"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Inertial flat-spacetime example at 0.60c.",
+        "Same progress fraction spans different coordinate times in the two panels.",
+        "No twin turnaround, GPS gravity correction or muon decay statistics.",
+        "S-prime moves in positive x. B is the positive-x event and is earlier there.",
+        "Axes carry the same units and scale. Connecting line joins simultaneous-S events, not a trajectory.",
+        "No signal-reception timing or twin acceleration."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 12,
+      "title": "Time Dilation",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson12.sa.html",
+      "visuals": [
+        "m7-light-clock"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Inertial flat-spacetime example at 0.60c.",
+        "Same progress fraction spans different coordinate times in the two panels.",
+        "No twin turnaround, GPS gravity correction or muon decay statistics."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 13,
+      "title": "Length Contraction",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson13.sa.html",
+      "visuals": [
+        "m7-length"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Coordinate measurement, not a photograph or physical squeezing.",
+        "Both lab endpoints measured simultaneously in the lab.",
+        "No barn doors, ladder collisions or muon evidence."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 14,
+      "title": "Relativistic Momentum and Energy",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson14.sa.html",
+      "visuals": [
+        "m7-energy"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Dimensionless vertical ratio K/(mc²), for nonzero invariant mass.",
+        "Curve stops below c; infinity is not a plotted data point.",
+        "No nuclear reaction mechanism, mass budget or accelerator apparatus."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 15,
+      "title": "Simultaneity and Relativistic Paradoxes",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson15.sa.html",
+      "visuals": [
+        "m7-simultaneity"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "S-prime moves in positive x. B is the positive-x event and is earlier there.",
+        "Axes carry the same units and scale. Connecting line joins simultaneous-S events, not a trajectory.",
+        "No signal-reception timing or twin acceleration."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 16,
+      "title": "The Photoelectric Effect",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson16.sa.html",
+      "visuals": [
+        "m7-photoelectric"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ideal collector with ammeter, no variable stopping-voltage circuit.",
+        "Electron dots represent emitted charge, not resolved quantum paths.",
+        "Graph is model prediction for a fictional 2.20 eV work function, not Millikan data.",
+        "Emission energies span 0 to Kmax; dots do not assign each electron Kmax."
+      ]
+    },
+    {
+      "module": 7,
+      "lesson": 20,
+      "title": "Quantum Model and Wave-Particle Duality Synthesis",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson20.sa.html",
+      "visuals": [
+        "m7-double-slit",
+        "m7-photoelectric"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Illustrative wavefront geometry and separate far-field intensity strip are not a common physical scale.",
+        "Identical finite slits, equal in-phase illumination, far field.",
+        "Which-path mode shows zero visibility without asserting two narrow bands.",
+        "No photon trajectories or which-path measurement mechanism.",
+        "Ideal collector with ammeter, no variable stopping-voltage circuit.",
+        "Electron dots represent emitted charge, not resolved quantum paths.",
+        "Graph is model prediction for a fictional 2.20 eV work function, not Millikan data.",
+        "Emission energies span 0 to Kmax; dots do not assign each electron Kmax."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 1,
+      "title": "The Big Bang Theory",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson01.sa.html",
+      "visuals": [
+        "m8-expansion"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Local illustrative Hubble law, not a high-redshift distance calculator.",
+        "No CMB scattering or primordial-abundance mechanism."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 2,
+      "title": "Evidence for the Big Bang",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson02.sa.html",
+      "visuals": [
+        "m8-expansion",
+        "m8-spectra",
+        "m8-nucleosynthesis"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Local illustrative Hubble law, not a high-redshift distance calculator.",
+        "No CMB scattering or primordial-abundance mechanism.",
+        "Schematic bands and lines, no element-specific wavelengths.",
+        "No OBAFGKM classification, emission-source mechanism or relativistic Doppler calculation.",
+        "Iron-group maximum, not an exact Fe-56 maximum; Ni-62 has greater binding per nucleon.",
+        "Neutron capture is not shown step by step; no claim all supernovae provide the main r-process.",
+        "No reaction energetics or operational chain-reaction design."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 3,
+      "title": "Hubble's Law",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson03.sa.html",
+      "visuals": [
+        "m8-expansion",
+        "m8-spectra"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Local illustrative Hubble law, not a high-redshift distance calculator.",
+        "No CMB scattering or primordial-abundance mechanism.",
+        "Schematic bands and lines, no element-specific wavelengths.",
+        "No OBAFGKM classification, emission-source mechanism or relativistic Doppler calculation."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 6,
+      "title": "The Stellar Life Cycle",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson06.sa.html",
+      "visuals": [
+        "m8-stellar-evolution",
+        "m8-hr-diagram",
+        "m8-nucleosynthesis"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No universal remnant mass boundary.",
+        "No Type Ia mechanism or pulsar beam geometry; red-dwarf evolution omitted.",
+        "Illustrative positions, not observed data or calibrated evolutionary tracks.",
+        "No cluster turn-off dating or radius calculation.",
+        "Iron-group maximum, not an exact Fe-56 maximum; Ni-62 has greater binding per nucleon.",
+        "Neutron capture is not shown step by step; no claim all supernovae provide the main r-process.",
+        "No reaction energetics or operational chain-reaction design."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 7,
+      "title": "Nucleosynthesis and the Origin of Elements",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson07.sa.html",
+      "visuals": [
+        "m8-nucleosynthesis"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Iron-group maximum, not an exact Fe-56 maximum; Ni-62 has greater binding per nucleon.",
+        "Neutron capture is not shown step by step; no claim all supernovae provide the main r-process.",
+        "No reaction energetics or operational chain-reaction design."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 8,
+      "title": "The Hertzsprung-Russell Diagram",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson08.sa.html",
+      "visuals": [
+        "m8-hr-diagram"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Illustrative positions, not observed data or calibrated evolutionary tracks.",
+        "No cluster turn-off dating or radius calculation."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 9,
+      "title": "Spectroscopy and Stellar Classification",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson09.sa.html",
+      "visuals": [
+        "m8-spectra"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Schematic bands and lines, no element-specific wavelengths.",
+        "No OBAFGKM classification, emission-source mechanism or relativistic Doppler calculation."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 10,
+      "title": "Supernovae and Neutron Stars",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson10.sa.html",
+      "visuals": [
+        "m8-stellar-evolution",
+        "m8-hr-diagram"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No universal remnant mass boundary.",
+        "No Type Ia mechanism or pulsar beam geometry; red-dwarf evolution omitted.",
+        "Illustrative positions, not observed data or calibrated evolutionary tracks.",
+        "No cluster turn-off dating or radius calculation."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 11,
+      "title": "The Nuclear Model of the Atom",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson11.sa.html",
+      "visuals": [
+        "m8-rutherford"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Not a quantitative scattering simulation or measured frequency sample.",
+        "Nuclei enlarged; electron and neutron discovery experiments are not implemented."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 12,
+      "title": "Bohr's Model of the Hydrogen Atom",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson12.sa.html",
+      "visuals": [
+        "m8-quantum-atom"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Rounded nonrelativistic hydrogen energies.",
+        "Density marks show a 2D slice of 1s probability per volume, not radial probability or repeated detections.",
+        "No uncertainty experiment, quantum-number catalogue or Bohr orbital dynamics."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 13,
+      "title": "Quantum Mechanics and the Atom",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson13.sa.html",
+      "visuals": [
+        "m8-quantum-atom"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Rounded nonrelativistic hydrogen energies.",
+        "Density marks show a 2D slice of 1s probability per volume, not radial probability or repeated detections.",
+        "No uncertainty experiment, quantum-number catalogue or Bohr orbital dynamics."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 14,
+      "title": "The Strong Nuclear Force",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson14.sa.html",
+      "visuals": [
+        "m8-nucleosynthesis"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Iron-group maximum, not an exact Fe-56 maximum; Ni-62 has greater binding per nucleon.",
+        "Neutron capture is not shown step by step; no claim all supernovae provide the main r-process.",
+        "No reaction energetics or operational chain-reaction design."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 15,
+      "title": "Radioactive Decay",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson15.sa.html",
+      "visuals": [
+        "m8-decay-population"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Deterministic stratified illustrative sample, not a prediction for individual nuclei.",
+        "No alpha/beta/gamma transformation or Q-value working."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 16,
+      "title": "Particles and Antiparticles",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson16.sa.html",
+      "visuals": [
+        "m8-particles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No literal quark or photon sizes.",
+        "No complete Standard Model table, pair-production recoil or weak-decay mechanism.",
+        "Carrier labels name interactions; they do not animate virtual-particle exchange."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 17,
+      "title": "Quarks and the Standard Model",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson17.sa.html",
+      "visuals": [
+        "m8-particles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No literal quark or photon sizes.",
+        "No complete Standard Model table, pair-production recoil or weak-decay mechanism.",
+        "Carrier labels name interactions; they do not animate virtual-particle exchange."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 18,
+      "title": "The Fundamental Forces",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson18.sa.html",
+      "visuals": [
+        "m8-particles"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "No literal quark or photon sizes.",
+        "No complete Standard Model table, pair-production recoil or weak-decay mechanism.",
+        "Carrier labels name interactions; they do not animate virtual-particle exchange."
+      ]
+    },
+    {
+      "module": 8,
+      "lesson": 19,
+      "title": "Particle Accelerators and Detectors",
+      "siteSource": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson19.sa.html",
+      "visuals": [
+        "m8-accelerator"
+      ],
+      "status": "visual-support-present-teaching-coverage-not-approved",
+      "limits": [
+        "Ring not an LHC engineering layout; no timing or magnet ramp model.",
+        "Detector trajectories are schematic; no quantitative momentum reconstruction or missing-momentum inference."
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "mechanics-details",
+      "compositionId": "PhysicsMechanicsDetailsSilent",
+      "title": "Derive the level-ground range",
+      "visualIds": [
+        "m5-range-derivation"
+      ],
+      "seconds": 32
+    }
+  ]
+}

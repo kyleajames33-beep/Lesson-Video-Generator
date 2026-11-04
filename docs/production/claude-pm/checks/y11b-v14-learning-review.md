@@ -1,0 +1,12 @@
+# y11b-v14 learning review
+
+Revision 1, 3 November 2026; design SHA256 `613c1b6247197769c61ed4eafea75a3de2c45b4fdc0e6defccd21b866147b2be`. Stage 5 gases and respiration, v08 membrane properties, v09 passive routes, v12 active transport and v13 bulk transport traced. The opening reproduces v13's table and five-material handoff. The two questions give a usable organising rule, and the leaf reverses the gas directions before the mnemonic. The setting stays at exchange-surface level and v15 receives uses rather than another transport lesson. Practice cards supply their questions and hold without displaying answers.
+
+1. **Should fix, shared with science:** The universal direction rule ignores the electrical part of an ion's driving force and treats every route as an ATP pump. Preserve the concrete sodium-leak and pump example, but scope the concentration-only rule to the examples in which it predicts the direction, and say ion movement also depends on electrical conditions. Keep kidney glucose as energy from ATP without painting direct ATP transfer to its cotransporter. Replace the existing generalisation; do not add a new electrochemistry lesson.
+2. **Should fix, shared with science:** The yeast card's observed halt in uptake does not itself establish equality of inside and outside concentrations or exclude an effect of the chemical on transport. Give the measured equal concentrations and an unaffected carrier in the stem, or present equality explicitly as an assumed model. Replace the existing experimental clause; keep the reasoning task and do not put the answer on the card.
+3. **Should fix, shared with science:** Scene 2 and feedback say polar glucose can only cross via a protein or cannot cross lipid at all, while A1's protein-free bilayer gives glucose a very slow nonzero rate. Say it crosses the bare bilayer very slowly and real cells use carriers for much faster transport. Replace the absolute words in speech, key notes and marking guide.
+
+
+Root decisions 14 to 16 accept the two-line hook, ATP-level kidney wording and reuse of settings; the findings refine the scope of those choices. Shorter replacements and the named reserve cut keep the accepted pacing. Actual relative sizes and all plate settings need later build inspection. This is source-only review; no audio or playback inspected.
+
+Count: 0 blockers, 3 should fix, 0 optional. Recount 6,100 separate and 6,114 joined characters, 15 scenes, about 549 s. No design edits, speech or render.

@@ -11,3 +11,7 @@ Design SHA256: `3333b0caa94310f88b48d8bff4441a75be4f872def8fe30a42b368e28c826e6f
 No em dashes found in the design. The Revision 2 count matches the stated per-scene count. Timing is an estimate; exact voiced playback is still needed.
 
 Scene 8 breaks glucose down before its products enter the mitochondrion. Scene 11 uses a double-membrane envelope.
+
+## Brief 144 confirmation
+
+2 November 2026. Cytoplasmic breakdown and double-membrane envelope repairs remain correct. Decision 16 resolves the handoff order. Recount: 5,954 narration characters. Current SHA256 `3333b0caa94310f88b48d8bff4441a75be4f872def8fe30a42b368e28c826e6f`. No em dashes found. No remaining error found in the brief 140 repairs. Clean, ready to voice after the brief 124 pilot.

@@ -1,0 +1,11 @@
+# m-a12g03 learning review
+
+Revision 1, checked 4 November 2026. Source SHA-256 `4fe0dcb10e0ed0873cb5956924b8a1efa92518db2f0c084fa51600921e6e7f91`. Source-only review; no voiced or animated preview.
+
+The learner asks which model is justified by the givens. The opening contrasts simple and compound interest on the same principal. A budget and fixed period justify solving the loan equation for the initial principal. For probability, the list's probabilities sum to one while the density's area sums to one; the calculations give different k values. The three full walkthroughs are the content of this practice video under the practice exception. The two attempts show the complete question and withhold the model and result.
+
+1. **Blocker:** Scene 4 introduces the delivery as taking between 40 and 60 minutes, then scene 5 applies an unbounded normal distribution to the same delivery. The later author note intends the normal model to be unbounded, but the spoken setup implies a hard interval. Say “consider a 40-to-60-minute interval” rather than claiming all deliveries fall there, and state the two alternative givens separately. Replace the existing setup and retain the comparison and 2.5% estimate. This implements root decision 64.
+2. **Should fix:** Scene 3 says the maximum is about $488,658.79 and then “round down” to 78 cents. The floor must be taken from the unrounded $488,658.786..., not from the already nearest-cent amount. Show the unrounded digits before explaining the downward cent rounding; replace the current two rounding sentences.
+3. **Should fix:** Scene 2's annuity and loan quotient formulas divide by r without the r ≠ 0 condition. Add the zero-rate results as a short on-screen note; keep the spoken comparison focused on the positive-rate case.
+
+The g02 simple-versus-compound strips match the opening; the last frame is the three memory aids and course-end chip. The outline assigns no new action to this optional practice video; no g03 pack or approved route entry was found, so propose the draft to root. Decision 64's maximum-loan direction is confirmed from the unrounded value. Count: 1 blocker, 2 should fix, 0 optional; 5,820 separate and 5,832 joined narration characters, about 538 s. Playback and actual learner evidence remain untested.

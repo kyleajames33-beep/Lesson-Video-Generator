@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d01.md",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's the curve y equals e to the x. Squash it sideways, and you get y equals e to the two x. Or slide it one unit left, and you get y equals e to the x plus one. At x equals zero, which new curve do you think is steeper? Hold on to your guess. Here's the twist. Only one of them puts a new factor into its derivative, and it might not be the one you'd pick. By the end, you'll know why, and how to differentiate k e to the a x plus b.",
+      "audioFile": "public/audio/math-a12-d01/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Two quick reminders. The gradient at a point is the slope of the tangent there, the line the secants settle onto as the second point slides in. And e to the x is its own derivative. On the graph, that means at every point, the gradient equals the height, the y value. Where the curve is one unit high, the tangent's slope is one. Where it's about two point seven high, the slope is about two point seven. Height and gradient always match, and that's our measuring stick.",
+      "audioFile": "public/audio/math-a12-d01/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now squash it. In e to the two x, x gets doubled before the exponential acts. So the new curve reaches every height in half the sideways distance. Watch this tangent triangle. It runs across one unit and rises about two point seven. Squash the curve, and the triangle squashes with it. The rise stays the same, but the run halves. Same rise, half the run, so the slope is twice as steep. The whole curve squashed evenly, so that's true at every point. At height one, the slope is now two. The gradient is always two times the height, so the derivative of e to the two x is two e to the two x.",
+      "audioFile": "public/audio/math-a12-d01/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Squash by three, and every run shrinks to a third, so every slope is three times as steep. The derivative of e to the three x is three e to the three x. What about a negative number, like e to the minus two x? The minus also flips the curve in the y axis, so it falls instead of rising. Every uphill tangent becomes a downhill one, just as steep. So the gradient is minus two times the height. The height stays positive, because e to any power is positive. It's only the slope that turns negative.",
+      "audioFile": "public/audio/math-a12-d01/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now the slide. E to the x plus one is the same curve moved one unit left. Sliding doesn't tilt anything. Each tangent just slides along with its point, keeping its slope. So the gradient still equals the height, and the derivative of e to the x plus one is just e to the x plus one. Back to your guess. At x equals zero, the slid curve is about two point seven high, so its slope is about two point seven. The squashed curve is only one high there, with a slope of two. So the slid curve is steeper at zero only because it's higher. What matters is how the gradient compares with the height.",
+      "audioFile": "public/audio/math-a12-d01/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Last change: stretch the curve upwards. Three e to the x makes every height three times taller. Look at the tangent triangle. The run doesn't change, but the rise is three times bigger, so the slope is three times steeper. That's the Year 11 constant multiple rule: the three comes along for the ride. And notice, the gradient still equals the height, because both grew by the same factor of three. So k scales everything, but only a changes the gradient compared with the height.",
+      "audioFile": "public/audio/math-a12-d01/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now let's prove it, with the Year 11 chain rule. Take y equals e to the a x plus b. Call the inside part u, so u equals a x plus b. Then y equals e to the u, and since that's its own derivative, d y by d u is e to the u. The inside part's derivative, d u by d x, is just a, because the b is a constant. The chain rule multiplies them: e to the u, times a. Put the inside part back, and you get a e to the a x plus b. The b stays in the power, but it adds nothing to the factor, just like the slide. And with k out the front, k just rides along.",
+      "audioFile": "public/audio/math-a12-d01/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Let's use it. Differentiate y equals e to the three x. The inside part is three x, and its derivative is three. So keep e to the three x exactly as it is, and multiply by three. The derivative is three e to the three x. Check it on the graph. At x equals zero, the curve is one unit high, and its slope is three, three times the height. One trap. Don't bring the power down like you would for x cubed. That rule needs x in the base, and here x is in the power, so the exponential stays whole.",
+      "audioFile": "public/audio/math-a12-d01/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Now all three constants. The task: find f prime of minus three. The function is f of x equals five e to the two x plus six. So k is five, a is two and b is six. Copy the exponential, then multiply by k and a. Five times two is ten, so f prime of x is ten e to the two x plus six. Now substitute minus three. Two times minus three, plus six, is zero, and e to the zero is one. So f prime of minus three is ten. On the graph, it's five high there with a slope of ten, twice the height, as a equals two predicts.",
+      "audioFile": "public/audio/math-a12-d01/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's one way to remember it. Think of the power, a x plus b, as the playback speed of the curve. a is the speed. Play it twice as fast, and the curve rises twice as fast at every height. Play it backwards, and it falls instead. b just starts the playback at a different point, so it adds no rate factor. And k makes the whole picture bigger, so heights and slopes grow together. In short, copy the exponential, then multiply by k and by a.",
+      "audioFile": "public/audio/math-a12-d01/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Differentiate f of x equals four e to the two x minus one, then find f prime of a half. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d01/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The inside part is two x minus one, with derivative two. So f prime of x is four times two, e to the two x minus one, which is eight e to the two x minus one. At a half, the power is zero, and e to the zero is one, so f prime of a half is eight. If you got four, you dropped the factor of two from the inside.",
+      "audioFile": "public/audio/math-a12-d01/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. A curve has equation y equals three e to the minus two x. Find its gradient at x equals zero, and explain why the curve is decreasing for every x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d01/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "The derivative is three times minus two, e to the minus two x, which is minus six e to the minus two x. At zero, that's minus six. E to any power is positive, so e to the minus two x is always positive. Times minus six, the gradient is negative for every x, so the curve is always decreasing. It isn't because the curve dips below zero. It never does.",
+      "audioFile": "public/audio/math-a12-d01/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So horizontal scaling multiplies slopes by a, a slide adds no factor, and k multiplies heights and slopes. Next: what about two to the x? Two to the x is secretly e to some number times x. Find that number, and you can differentiate it the same way.",
+      "audioFile": "public/audio/math-a12-d01/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d01/scene-16.wav"
+    }
+  ]
+}

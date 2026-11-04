@@ -1,0 +1,13 @@
+// Local three-scene pilot. Character times within each word are interpolated,
+// not measured phoneme boundaries. No production lesson or ElevenLabs file is edited.
+import fs from 'node:fs';
+import {alignmentToCaptions} from './lib/caption-timeline.mjs';
+const root='out/google-tts-pilot',source='docs/production/claude-pm/lessons/m8b03/lesson.json',manifest=JSON.parse(fs.readFileSync('docs/production/claude-pm/lessons/m8b03/voice-manifest.json'));
+const lesson=JSON.parse(fs.readFileSync(source));lesson.scenes=lesson.scenes.filter(s=>['hook','insulin','attempt'].includes(s.id));lesson.productionRole='pilot-only';lesson.status='local-alignment-pilot-not-production';
+for(const scene of lesson.scenes){const alignment=JSON.parse(fs.readFileSync(`${root}/google-${scene.id}-alignment.json`)),ref=manifest.scenes.find(s=>s.id===scene.id),words=alignment.result.segments.flatMap(s=>s.words||[]),tokens=[...ref.text.matchAll(/\S+/g)];if(words.length!==tokens.length)throw Error(`${scene.id}: word count ${words.length} != ${tokens.length}`);
+ const chars=[],starts=[],ends=[];let cursor=0,last=0;
+ for(let i=0;i<tokens.length;i++){let token=tokens[i][0],w=words[i];if(token.toLowerCase()!==w.word.toLowerCase()||!Number.isFinite(w.start)||!Number.isFinite(w.end)||w.start<last||w.end<w.start)throw Error(`${scene.id}: unmatched or untimed word ${i}`);while(cursor<tokens[i].index){chars.push(ref.text[cursor++]);starts.push(last);ends.push(last)}for(let k=0;k<token.length;k++){chars.push(token[k]);starts.push(w.start+(w.end-w.start)*k/token.length);ends.push(w.start+(w.end-w.start)*(k+1)/token.length);cursor++}last=w.end;}
+ while(cursor<ref.text.length){chars.push(ref.text[cursor++]);starts.push(last);ends.push(last)}const a={characters:chars,character_start_times_seconds:starts.map(x=>Math.round(x*1e6)/1e6),character_end_times_seconds:ends.map(x=>Math.round(x*1e6)/1e6),source:'WhisperX word boundaries; interpolated within words'};fs.writeFileSync(`${root}/${scene.id}.alignment.json`,JSON.stringify(a,null,2));
+ let frames=Math.ceil(alignment.duration*lesson.fps);scene.voiceover={...scene.voiceover,text:ref.text,audioFile:`${root}/${scene.id}.wav`,startFrame:0,endFrame:frames};scene.captions=alignmentToCaptions(a);let hold=scene.responseHold?scene.responseHold.endFrame-scene.responseHold.startFrame:0;if(hold){scene.responseHold={startFrame:frames+12,endFrame:frames+12+hold};scene.durationInFrames=scene.responseHold.endFrame+24}else scene.durationInFrames=frames+60;
+}
+fs.mkdirSync(`${root}/measured`,{recursive:true});fs.writeFileSync(`${root}/measured/lesson.json`,JSON.stringify(lesson,null,2));console.log('Three-scene pilot lesson and character-shaped timing adapters written.');

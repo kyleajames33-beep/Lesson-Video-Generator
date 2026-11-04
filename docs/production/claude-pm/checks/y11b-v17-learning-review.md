@@ -1,0 +1,13 @@
+# y11b-v17 learning review
+
+Revision 1, 3 November 2026; design SHA256 `ded9bef73ac2c27de547c0620d9d5347c45224273277129a69422fecff7e5b51`. Entry from v16's equation and v15's carbon dioxide use, v02 chloroplasts, and Stage 5 mass and conservation traced. The opening reproduces v16's actual respiration strip, mitochondrion, dim chloroplast and handoff. The willow prediction creates the question before light, the equation and carbon fixation resolve it. A first check of the coefficients follows the earlier balancing method, and the closed-jar attempt requires both photosynthesis and respiration without answer labels on the card.
+
+1. **Should fix, shared with science:** Van Helmont's tree mass was measured wet while the soil was dried. The difference supports that soil alone cannot explain the gain, but does not by itself measure the source of the tree's dry biomass. Mark the modern carbon-dioxide explanation as evidence learned later, and do not compare wet mass and dry mass as if they were the same quantity. Replace the existing transition.
+2. **Should fix, shared with science:** "That's the missing sixty grams" identifies the entire measured soil loss as mineral ions absorbed by the tree. The historical mass difference did not identify its chemical composition or establish exclusive uptake. Say the soil supplies some mineral nutrients and the measured change was small; replace the assertion, keeping the accepted historical figures.
+3. **Should fix, shared with science:** Scene 5 calls photosynthesis the respiration equation "run the other way" and can suggest the reactions reverse. Make it explicit that the overall summary equations have opposite inputs and outputs while the pathways differ; replace the existing phrase and use no extra scene.
+4. **Should fix, shared with science:** The balanced net equation proves total atoms on each side, not that each of the six water molecules in the simplified equation donates a specific hydrogen atom to glucose. The decision rule promises to say where each atom comes from, which overstates the model. Keep carbon from CO₂ and the balance count, and say what inputs contribute rather than mapping every atom. Do not add the oxygen-source lesson that root excluded.
+
+
+Root decision 19 keeps the rounded kilogram figures and accepts omitting the oxygen-source topic. Root decision 18's prior respiration handoff needs its separate repair. The atom-count view and cycle diagram must distinguish arrows for matter and energy. Replace clauses and use the listed cut if needed; no additional scene. Source-only review, no audio or playback inspected.
+
+Count: 0 blockers, 4 should fix, 0 optional; 5,676 separate and 5,693 joined characters, 18 scenes, about 556 s. No design edit, voice or render.

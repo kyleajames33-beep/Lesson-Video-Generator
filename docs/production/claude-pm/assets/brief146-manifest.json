@@ -1,0 +1,668 @@
+{
+  "brief": 146,
+  "date": "2026-11-02",
+  "entries": [
+    {
+      "file": "public/assets/physics/phys-y11-boat-top-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "bcece608448eab6f67573dde73f0d152223f40f64ded58e4d8c985a5a2414cff",
+      "sourceCandidate": "work/brief146/candidates/boat.png",
+      "prompt": "One isolated small modern harbour motorboat, overhead plan view bow UP, white hull navy trim and small cabin roof, no water or wake. Ink and watercolour matching reference. Transparent background, no text, people, shadows, generous margin, portrait.",
+      "alphaBounds": [
+        184,
+        180,
+        816,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-blue-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "4512fbb30f29e9c112f9d18f8d59f2c5dc404c210f1c8ddfbf40368b24edf69f",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "Create a single isolated top-down plan view blue hatchback, exactly nose UP, symmetric, ink and watercolour consistent with reference hatchback. Transparent background, no ground shadow, no text or people. Full object with ample transparent margin. Portrait 1:2 canvas, clean edges.",
+      "alphaBounds": [
+        119,
+        180,
+        880,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "08e8ca91fdc93cd97016713631f953ea8c882e4ca813571ebf4fde1ce51047b1",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "Create a single isolated top-down plan view blue hatchback, exactly nose UP, symmetric, ink and watercolour consistent with reference hatchback. Transparent background, no ground shadow, no text or people. Full object with ample transparent margin. Portrait 1:2 canvas, clean edges.",
+      "alphaBounds": [
+        144,
+        95,
+        1456,
+        704
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-car-top-yellow-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "a27422eeca6033b6e6585fcad1e176e78492caef5e68b49b18ec5170e75928f6",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "Create a single isolated top-down plan view blue hatchback, exactly nose UP, symmetric, ink and watercolour consistent with reference hatchback. Transparent background, no ground shadow, no text or people. Full object with ample transparent margin. Portrait 1:2 canvas, clean edges.",
+      "alphaBounds": [
+        119,
+        180,
+        880,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-cart-side-v1.png",
+      "size": [
+        2000,
+        1200
+      ],
+      "sha256": "31fec386265fbad77d92489091bca65cb6bf93b3fdf5146d5d3043c4be8d24e4",
+      "sourceCandidate": "work/brief146/candidates/cart.png",
+      "prompt": "Create a single isolated sturdy wooden four wheeled cart with low slatted sides holding two plain wooden crates, exact SIDE view facing RIGHT, tow ring on right front edge at deck height, wheels share horizontal baseline, no rope, no handles. Ink and watercolour matched to reference, transparent, no shadow, text or people, ample margin. Landscape canvas.",
+      "alphaBounds": [
+        180,
+        222,
+        1820,
+        978
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-dashboard-cluster-v1.png",
+      "size": [
+        2400,
+        1000
+      ],
+      "sha256": "bbe095fd19ab6b187b7f396a221eff079af57d6ce004794d57325fe74ba75555",
+      "sourceCandidate": "work/brief146/candidates/dashboard.png",
+      "prompt": "A single isolated car instrument cluster face-on, dark charcoal with soft chrome rims, one large round speedometer dial LEFT, evenly spaced ticks in 240 degree arc, no numerals NO NEEDLE, central hub only; centre one blank dark rectangular odometer window; right one smaller blank dark rectangular clock window; no other lights, symbols, text or digits. Clean ink and watercolour illustration matching reference, transparent background, ample clear margin, wide horizontal composition.",
+      "alphaBounds": [
+        216,
+        133,
+        2184,
+        867
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "Create one small quadcopter directly overhead, symmetric X arms with four rotors as faint translucent discs, light grey-white body with blue accent and amber front marker, subtle square parcel outline under central body, recognizable at small scale. Watercolour ink style matching reference. True transparency, no shadow or text, square composition with ample margin.",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-light-gate-v1.png",
+      "size": [
+        1000,
+        1400
+      ],
+      "sha256": "cd8e347dfd58d12e3133adf387109ca93336538c69927281bbe44b4f8b8dc8f5",
+      "sourceCandidate": "work/brief146/candidates/gate-repair.png",
+      "prompt": "Edit this physics light gate into a true U-shaped photogate: REMOVE the horizontal lower bar entirely so there is a wide OPEN gap between the two vertical arms. The upper horizontal bridge connects the tops of the arms, creating an inverted U open at the bottom; emitter and detector face one another on the arms; the vertical stand rod attaches to the upper bridge by an offset side clamp, not spanning the opening. A trolley's upright card must pass unobstructed through the open bottom. Isolated, transparent, no shadow, no beam, text or people; matching ink-watercolour styling.",
+      "alphaBounds": [
+        90,
+        343,
+        910,
+        1057
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-trolley-card-v1.png",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "f528d6424ba43be0595d6abe5f829247c06786eb2dbfd6fefe82d360e34c44e1",
+      "sourceCandidate": "work/brief146/candidates/cardtrolley.png",
+      "prompt": "One single school dynamics trolley exact SIDE view facing right, low blue plastic rectangular body, four small wheels, thin plain rectangular card standing vertically on top held by a clip, top horizontal and leading/trailing card edges sharp vertical, wheel bottoms level. Isolated ink and watercolour matching reference, transparent background, no text, shadow, people, generous clear margin.",
+      "alphaBounds": [
+        144,
+        149,
+        1456,
+        751
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-boat-top-red-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "fafe33e26978ca2c000629a2c89ee90a96cbde800218fc79e26e9eafebd671dc",
+      "sourceCandidate": "work/brief146/candidates/boats.png",
+      "prompt": "A single small open motorboat seen directly overhead, bow straight UP, red hull, pale deck and outboard motor at stern, empty of people and gear; no water, wake, shadow, marks or text. Ink and watercolour illustration matching reference, transparent background, generous margin, portrait canvas.",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-boat-top-white-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "2c9bd5da7b94805ee86d3934c1cd6716e58133c2c1418c7942f58778229adf3a",
+      "sourceCandidate": "work/brief146/candidates/boatwhite.png",
+      "prompt": "Edit this open motorboat artwork: keep exactly the same hull, motor, scale, outlines and composition. Change red hull to white with a narrow blue stripe. Completely remove any glow, shadow or surrounding colour; fully transparent background outside the boat, crisp edges. No other changes.",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-box-v1.png",
+      "size": [
+        1200,
+        1000
+      ],
+      "sha256": "f830ff936148d7e868a8a046cf9c5dc3b2ce54ce106501d8ebea4f3a30db26ec",
+      "sourceCandidate": "work/brief146/candidates/box.png",
+      "prompt": "One plain closed heavy cardboard box, exact side view, flat level bottom, no markings, no tape text or labels. Isolated transparent background, no shadow or people, generous margin. Ink and watercolour style consistent with reference.",
+      "alphaBounds": [
+        108,
+        275,
+        1092,
+        725
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-digital-timer-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "bd8524d7e2db225ff0c11dc025a96f9776bfd3f99b37c8a1829fe6b73716670f",
+      "sourceCandidate": "work/brief146/candidates/timer.png",
+      "prompt": "One isolated school electronic millisecond timer/scaler: plain grey box, front view, blank dark rectangular display, two pairs of terminal sockets, absolutely no digits, lettering or brands. Ink and watercolour matching reference, transparent, no shadows, generous margin.",
+      "alphaBounds": [
+        144,
+        100,
+        1456,
+        899
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "Create one small quadcopter directly overhead, symmetric X arms with four rotors as faint translucent discs, light grey-white body with blue accent and amber front marker, subtle square parcel outline under central body, recognizable at small scale. Watercolour ink style matching reference. True transparency, no shadow or text, square composition with ample margin.",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-dynamics-trolley-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "177f98b44e4be9213f59e0313051bbe6933a41da35f93219f5b6eec5f11dea71",
+      "sourceCandidate": "work/brief146/candidates/trolley.png",
+      "prompt": "A single school dynamics trolley exact SIDE view facing right, low blue-grey rectangular metal body with four small wheels seen as two from side, flat empty top and two small end bumpers, wheel bottoms level, no card or masses or extended plunger. Isolated ink and watercolour matching reference, transparent background, no shadow, text, person, generous clear margins.",
+      "alphaBounds": [
+        180,
+        323,
+        1820,
+        677
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-low-voltage-supply-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "c7a35c69d04974048a0947d3fa3a3fddc9ba207656346ee9f047a52a7d2ac2d7",
+      "sourceCandidate": "work/brief146/candidates/supply.png",
+      "prompt": "One school low-voltage DC power supply, plain grey box, front view, one dial, on/off switch, red and black terminals, no markings, digits or brand. Isolated ink and watercolour matching reference, true transparent background, no shadow, generous margin, wide composition.",
+      "alphaBounds": [
+        144,
+        236,
+        1456,
+        763
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-phone-tripod-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "e4e33f5f7e45f99883205bca59e2432e498a864fcf75e434e48f318a40ba8c1c",
+      "sourceCandidate": "work/brief146/candidates/phone.png",
+      "prompt": "A smartphone held horizontally in landscape orientation on a small plain tripod, side view with camera lens visible, blank dark screen, no markings, no hands, isolated on transparency, no shadow. Ink and watercolour matching reference, generous clear margin, tall composition.",
+      "alphaBounds": [
+        90,
+        453,
+        910,
+        1546
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-retort-stand-electromagnet-v1.png",
+      "size": [
+        1200,
+        2400
+      ],
+      "sha256": "23cbc1479770c0a96cfae118a5f2fb0282a332bbfd57c1afb43c5cac4cbdb2df",
+      "sourceCandidate": "work/brief146/candidates/stand.png",
+      "prompt": "One isolated laboratory retort stand: heavy rectangular base, tall straight vertical rod, boss and clamp near top holding small cylindrical electromagnet pointing straight DOWN, dark coil housing and flat metal pole face, two thin loose leads leaving top. Nothing under magnet. Front view, isolated ink and watercolour matching reference, transparent, no shadow or labels, tall portrait with generous margin.",
+      "alphaBounds": [
+        131,
+        216,
+        1068,
+        2184
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-sand-tray-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "999fae9be4d91d521c56571965035e8a40e828f332bcce651fb0a48b75776758",
+      "sourceCandidate": "work/brief146/candidates/sand.png",
+      "prompt": "One shallow rectangular metal tray filled with pale sand, low front three-quarter view, no background, no shadow. Ink and watercolour matching the reference, true transparent background, no text or people, generous margin, wide composition.",
+      "alphaBounds": [
+        144,
+        191,
+        1456,
+        609
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-sledge-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "8e7d3426fb5e12032b396677c27b234a36c4c348d8fd1af8a565e192f3baea25",
+      "sourceCandidate": "work/brief146/candidates/sledge.png",
+      "prompt": "One empty wooden toboggan sledge with two curved metal runners and a flat slatted wooden seat, exact side view facing RIGHT, runners level on same baseline, small metal towing eye at right front tip, no rope, no snow. Ink and watercolour matching reference; isolated transparent background, no shadow, letters or people, generous margin, landscape.",
+      "alphaBounds": [
+        180,
+        298,
+        1820,
+        701
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-steel-ball-v1.png",
+      "size": [
+        800,
+        800
+      ],
+      "sha256": "81996315de8961ef8b6dafe183bbad07c7e54f36c7e29d31798b54f3a2d594b5",
+      "sourceCandidate": "work/brief146/candidates/ball.png",
+      "prompt": "One isolated polished steel ball bearing, plain sphere with soft highlight and dark reflections, no shadow, no text. Transparent background with generous margin, ink and watercolour style consistent with reference, square canvas.",
+      "alphaBounds": [
+        81,
+        72,
+        719,
+        728
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-trapdoor-switch-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "4c14ac3981519500a60be4147abf0d5dcccff33dd39d731caabfb84c734b2fd0",
+      "sourceCandidate": "work/brief146/candidates/trapdoor.png",
+      "prompt": "One isolated small school trapdoor switch pad on bench: flat base with hinged metal flap on top, two terminal posts at one end, low front three-quarter view. Ink and watercolour matching reference, transparent, no numbers letters or shadow, wide landscape with clear margins.",
+      "alphaBounds": [
+        144,
+        81,
+        1456,
+        719
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-boat-top-red-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "fafe33e26978ca2c000629a2c89ee90a96cbde800218fc79e26e9eafebd671dc",
+      "sourceCandidate": "work/brief146/candidates/boats.png",
+      "prompt": "A single small open motorboat seen directly overhead, bow straight UP, red hull, pale deck and outboard motor at stern, empty of people and gear; no water, wake, shadow, marks or text. Ink and watercolour illustration matching reference, transparent background, generous margin, portrait canvas.",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-boat-top-white-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "2c9bd5da7b94805ee86d3934c1cd6716e58133c2c1418c7942f58778229adf3a",
+      "sourceCandidate": "work/brief146/candidates/boatwhite.png",
+      "prompt": "Edit this open motorboat artwork: keep exactly the same hull, motor, scale, outlines and composition. Change red hull to white with a narrow blue stripe. Completely remove any glow, shadow or surrounding colour; fully transparent background outside the boat, crisp edges. No other changes.",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-box-v1.png",
+      "size": [
+        1200,
+        1000
+      ],
+      "sha256": "f830ff936148d7e868a8a046cf9c5dc3b2ce54ce106501d8ebea4f3a30db26ec",
+      "sourceCandidate": "work/brief146/candidates/box.png",
+      "prompt": "One plain closed heavy cardboard box, exact side view, flat level bottom, no markings, no tape text or labels. Isolated transparent background, no shadow or people, generous margin. Ink and watercolour style consistent with reference.",
+      "alphaBounds": [
+        108,
+        275,
+        1092,
+        725
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-digital-timer-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "bd8524d7e2db225ff0c11dc025a96f9776bfd3f99b37c8a1829fe6b73716670f",
+      "sourceCandidate": "work/brief146/candidates/timer.png",
+      "prompt": "One isolated school electronic millisecond timer/scaler: plain grey box, front view, blank dark rectangular display, two pairs of terminal sockets, absolutely no digits, lettering or brands. Ink and watercolour matching reference, transparent, no shadows, generous margin.",
+      "alphaBounds": [
+        144,
+        100,
+        1456,
+        899
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "Create one small quadcopter directly overhead, symmetric X arms with four rotors as faint translucent discs, light grey-white body with blue accent and amber front marker, subtle square parcel outline under central body, recognizable at small scale. Watercolour ink style matching reference. True transparency, no shadow or text, square composition with ample margin.",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-dynamics-trolley-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "177f98b44e4be9213f59e0313051bbe6933a41da35f93219f5b6eec5f11dea71",
+      "sourceCandidate": "work/brief146/candidates/trolley.png",
+      "prompt": "A single school dynamics trolley exact SIDE view facing right, low blue-grey rectangular metal body with four small wheels seen as two from side, flat empty top and two small end bumpers, wheel bottoms level, no card or masses or extended plunger. Isolated ink and watercolour matching reference, transparent background, no shadow, text, person, generous clear margins.",
+      "alphaBounds": [
+        180,
+        323,
+        1820,
+        677
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "c7a35c69d04974048a0947d3fa3a3fddc9ba207656346ee9f047a52a7d2ac2d7",
+      "sourceCandidate": "work/brief146/candidates/supply.png",
+      "prompt": "One school low-voltage DC power supply, plain grey box, front view, one dial, on/off switch, red and black terminals, no markings, digits or brand. Isolated ink and watercolour matching reference, true transparent background, no shadow, generous margin, wide composition.",
+      "alphaBounds": [
+        144,
+        236,
+        1456,
+        763
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-phone-tripod-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "e4e33f5f7e45f99883205bca59e2432e498a864fcf75e434e48f318a40ba8c1c",
+      "sourceCandidate": "work/brief146/candidates/phone.png",
+      "prompt": "A smartphone held horizontally in landscape orientation on a small plain tripod, side view with camera lens visible, blank dark screen, no markings, no hands, isolated on transparency, no shadow. Ink and watercolour matching reference, generous clear margin, tall composition.",
+      "alphaBounds": [
+        90,
+        453,
+        910,
+        1546
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-retort-stand-electromagnet-v1.png",
+      "size": [
+        1200,
+        2400
+      ],
+      "sha256": "23cbc1479770c0a96cfae118a5f2fb0282a332bbfd57c1afb43c5cac4cbdb2df",
+      "sourceCandidate": "work/brief146/candidates/stand.png",
+      "prompt": "One isolated laboratory retort stand: heavy rectangular base, tall straight vertical rod, boss and clamp near top holding small cylindrical electromagnet pointing straight DOWN, dark coil housing and flat metal pole face, two thin loose leads leaving top. Nothing under magnet. Front view, isolated ink and watercolour matching reference, transparent, no shadow or labels, tall portrait with generous margin.",
+      "alphaBounds": [
+        131,
+        216,
+        1068,
+        2184
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-sand-tray-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "999fae9be4d91d521c56571965035e8a40e828f332bcce651fb0a48b75776758",
+      "sourceCandidate": "work/brief146/candidates/sand.png",
+      "prompt": "One shallow rectangular metal tray filled with pale sand, low front three-quarter view, no background, no shadow. Ink and watercolour matching the reference, true transparent background, no text or people, generous margin, wide composition.",
+      "alphaBounds": [
+        144,
+        191,
+        1456,
+        609
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-sledge-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "8e7d3426fb5e12032b396677c27b234a36c4c348d8fd1af8a565e192f3baea25",
+      "sourceCandidate": "work/brief146/candidates/sledge.png",
+      "prompt": "One empty wooden toboggan sledge with two curved metal runners and a flat slatted wooden seat, exact side view facing RIGHT, runners level on same baseline, small metal towing eye at right front tip, no rope, no snow. Ink and watercolour matching reference; isolated transparent background, no shadow, letters or people, generous margin, landscape.",
+      "alphaBounds": [
+        180,
+        298,
+        1820,
+        701
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "size": [
+        800,
+        800
+      ],
+      "sha256": "81996315de8961ef8b6dafe183bbad07c7e54f36c7e29d31798b54f3a2d594b5",
+      "sourceCandidate": "work/brief146/candidates/ball.png",
+      "prompt": "One isolated polished steel ball bearing, plain sphere with soft highlight and dark reflections, no shadow, no text. Transparent background with generous margin, ink and watercolour style consistent with reference, square canvas.",
+      "alphaBounds": [
+        81,
+        72,
+        719,
+        728
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    },
+    {
+      "file": "public/assets/physics/phys-y11-trapdoor-switch-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "4c14ac3981519500a60be4147abf0d5dcccff33dd39d731caabfb84c734b2fd0",
+      "sourceCandidate": "work/brief146/candidates/trapdoor.png",
+      "prompt": "One isolated small school trapdoor switch pad on bench: flat base with hinged metal flap on top, two terminal posts at one end, low front three-quarter view. Ink and watercolour matching reference, transparent, no numbers letters or shadow, wide landscape with clear margins.",
+      "alphaBounds": [
+        144,
+        81,
+        1456,
+        719
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained",
+      "canonicalPerRootDecision4": true
+    }
+  ],
+  "reuse": [
+    "public/assets/biology/b4-car-blue-v1.png",
+    "public/assets/biology/b4-car-yellow-v1.png",
+    "public/assets/biology/m7-ruler-clear-v1.png",
+    "public/assets/biology/b6a-tennis-ball-v1.png",
+    "public/assets/chemistry/c8-stopwatch-v1.png"
+  ],
+  "decisions": [
+    "Existing side car plates are not top views. Existing burette stand cannot serve as an electromagnet stand. v01/v06 request the same drone filename at different sizes; one shared 1500px camera/delivery drone provides both and is duplicated under the v11 name. v05 top car is rotated from the shared matched blue plate. Yellow car is recoloured with glass restored; its alpha matches blue exactly. Red and white boat alpha masks match exactly. Light gate candidate replaced with open U version. v10 light gate request was withdrawn and not supplied as a v10 item.",
+    "Physics reference was the named blue car for vehicles and stopwatch for apparatus. Original ImageGen masters retained in work/brief146/candidates. Local alpha cleanup, uniform scaling, rotation and recolouring follow existing project authorization.",
+    "Root decision 4 normalises later y11p filenames to phys-y11; canonical copies have identical hashes and original requested spellings are retained as compatibility aliases."
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ],
+  "validation": "work/brief146/validation.json"
+}

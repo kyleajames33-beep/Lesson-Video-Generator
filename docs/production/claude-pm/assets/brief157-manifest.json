@@ -1,0 +1,120 @@
+{
+  "brief": 157,
+  "status": "in progress",
+  "reviews": "checks/y11b-fa2-v01-learning-review.md through y11b-fa2-v12-science-check.md",
+  "generatedCandidatesRoot": "C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4",
+  "candidates": {
+    "agarTile": "exec-cbd8fe04-3fee-4ddc-89a6-d8a00155ea95.png",
+    "agarCut": "exec-a6f899f7-296b-44de-9376-c30ccaaad329.png",
+    "beakerStart": "exec-8040ed58-45a2-454f-9f27-3ceb35f0441f.png",
+    "wiltedWaterlogged": "exec-7c5d5157-86d5-431b-8549-e8462713cf47.png",
+    "healthyPot": "exec-f5d33e35-9da5-42c3-ae61-92a6f9ecff00.png",
+    "aphid": "exec-2032d159-e47d-49a3-bbbe-7cbfe2361409.png",
+    "aphidStylet": "exec-a7040696-c3b3-4800-959b-0d49247f722d.png",
+    "lamp": "exec-972d5ccc-9ffb-4bfd-90b1-7fba915d8521.png"
+  },
+  "unresolved": [
+    "Cube front-face widths are not verified exact 1:2:3; agar cut core dimensions are also not verified.",
+    "Matched plant candidates do not match original canvas and alignment.",
+    "Many candidates contain alpha halos and require replacements.",
+    "Aphid candidates are preliminary; verify dimensions and registration.",
+    "Practical safety checks remain subject to school-specific clearance."
+  ],
+  "qa": "assets/brief157-qa/",
+  "reusedPlateProvenance": [
+    {
+      "file": "m8-leaf-cross-section-v1",
+      "source": "docs/production/claude-pm/assets/brief114-water-plants-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": null
+    },
+    {
+      "file": "m8-stoma-open-v1",
+      "source": "docs/production/claude-pm/assets/brief114-water-plants-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": null
+    },
+    {
+      "file": "m8-stoma-closed-v1",
+      "source": "docs/production/claude-pm/assets/brief114-water-plants-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": null
+    },
+    {
+      "file": "m8-clear-nail-varnish-v1.png",
+      "source": "docs/production/claude-pm/assets/brief117-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": false
+    },
+    {
+      "file": "m8-desk-fan-v1.png",
+      "source": "docs/production/claude-pm/assets/brief117-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": false
+    },
+    {
+      "file": "m8-potometer-v1.png",
+      "source": "docs/production/claude-pm/assets/brief117-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": false
+    },
+    {
+      "file": "m8-stomata-field-lower-v1.png",
+      "source": "docs/production/claude-pm/assets/brief117-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": false
+    },
+    {
+      "file": "m8-stomata-field-upper-v1.png",
+      "source": "docs/production/claude-pm/assets/brief117-provenance.json",
+      "present": true,
+      "hashMatch": true,
+      "ownerAccepted": false
+    }
+  ],
+  "acceptedPlates": [
+    {
+      "path": "public/assets/biology/y11-chlorosis-leaf-v1.png",
+      "sha256": "b8b27e58665e4fcb988758cbadd77c7bcf8daaea54fae4cc973b21888f281426",
+      "qa": "brief157-qa/three-candidates.png",
+      "note": "Native square canvas; prompt requested approximate portrait dimensions.",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-e599cc72-dcab-481b-8c32-e90f9681ec3f.png",
+      "generator": "built-in image_gen",
+      "prompt": "A scientific watercolor cutout of a chlorotic pale yellow leaf with green veins, on a completely transparent background with no shadow, no glow, no halo, no text or labels. The entire subject is crisp with fine dark ink outlines, isolated centrally with 20 percent padding around all edges."
+    },
+    {
+      "path": "public/assets/biology/y11-variegated-leaf-v1.png",
+      "sha256": "6305e9dc6b941ebb7a73f54547882238111ba18bd12b41538f9808a8b7907a39",
+      "qa": "brief157-qa/three-candidates.png",
+      "note": "Native square canvas; prompt requested approximate portrait dimensions.",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-7443a009-9a75-452e-9955-f909c069e046.png",
+      "generator": "built-in image_gen",
+      "prompt": "A scientific watercolor cutout of a broad leaf with irregular white margin and green center, on a completely transparent background with no shadow, no glow, no halo, no text or labels. The entire subject is crisp with fine dark ink outlines, isolated centrally with 20 percent padding around all edges."
+    },
+    {
+      "path": "public/assets/biology/y11-fertiliser-bag-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-891426e4-2702-405f-b1cb-ed470a19cd3a.png",
+      "sha256": "03f0dc7cc9443a4842a75e370f9247bb66ede751bd8e837fa2f68ea238896627",
+      "qa": "assets/brief157-qa/bag-barrel.png",
+      "generator": "built-in image_gen",
+      "prompt": "Fine ink and watercolor scientific illustration of one blank beige woven fertiliser sack with folded stitched top and a single empty rectangular label, no designs or plants printed. Single subject centered at 60% of the canvas, with 20% completely transparent blank border on every side. No text, labels, glow, shadows, halo, paper, people or background. Render as isolated transparent PNG.",
+      "note": "Native square canvas; dimensions requested were approximate."
+    },
+    {
+      "path": "public/assets/biology/y11-stave-barrel-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a19b84-b5e8-7ed1-bb8e-6d506a956ff4\\exec-03388514-963b-41a3-8be1-ed1f7d8a6a49.png",
+      "sha256": "c2bf18959b6157d332aa26b2fd8474b0d89b17eaa3e37c16ec349b90aef9cf53",
+      "qa": "assets/brief157-qa/bag-barrel.png",
+      "generator": "built-in image_gen",
+      "prompt": "Fine ink and watercolor scientific illustration of one standalone open wooden barrel, one front stave two fifths lower than the tallest, other staves intermediate, iron hoops. Single subject centered at 60% of the canvas, with 20% completely transparent blank border on every side. No text, labels, glow, shadows, halo, paper, people or background. Render as isolated transparent PNG.",
+      "note": "Native square canvas; dimensions requested were approximate."
+    }
+  ]
+}

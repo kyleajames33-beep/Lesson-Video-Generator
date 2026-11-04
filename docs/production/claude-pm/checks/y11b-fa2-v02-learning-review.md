@@ -1,0 +1,12 @@
+# y11b-fa2-v02 learning review
+
+Revision 1, 3 November 2026; design SHA256 `6d7bef23d7d6baf5fb955e9af4c67df8c284305a3265e5a9800f490ae5da875b`. The v01 final frame matches the opening. Students bring diffusion and membrane knowledge from FA1; nets and three cubes precede independent calculations. The egg exception has a purpose if repaired; retain it subject to the plate QA and root's fallback.
+
+1. **Should fix:** Scene 6 asserts equal demand per cubic centimetre whatever the cell size, but this is an assumption of the simple comparison, not a universal cell property. Say "If demand per cubic centimetre stays the same"; apply the same assumption to the practice feedback. Replace the existing sentence, so length is comparable.
+2. **Should fix:** Scenes 1, 6 and 7 state that larger cells inevitably run short or exchange too slowly. SA:V alone does not establish an actual rate or failure; transport, demand and cell shape matter. Say exchange capacity per unit volume falls for the same shape and conditions, and the giant model could struggle. Replace existing claims and preserve the rate-per-volume distinction demanded by the route.
+3. **Should fix:** Scene 10d promises dividing keeps volume unchanged and increases each daughter cell's ratio without specifying shape or timing. Frame the volume and similar shapes as a model assumption. A division-plane diagram alone makes two rectangular halves, not two smaller cubes; update the visual so it does not imply both daughters are cubes. Replace existing wording without adding a new scene.
+4. **Should fix:** Scene 9 says stored yolk uses almost no oxygen and calls the disc the entire busy living part. The quantitative oxygen claim and exclusive location are not established by the design. Explain the large yolk as nutrient storage and omit these claims pending a source. The cut covers the replacement. Keep the exception if the plate passes; root decides on the shorter fallback if not.
+
+Route reconciliation: the draft giant-cell heading is the inherited v01 chip; the approved question specifies exchange surface per unit of living material. The draft and route agree that calculation, diffusion distance and relative exchange belong here and agar conduct belongs to v03. The route's v03 question specifies the fraction changed; update metadata and retain the actual frame for continuity. No v02 packUpdate applies.
+
+Count: 0 blockers, 4 should fix, 0 optional; 5,148 separate and 5,162 joined characters, 15 scenes, about 506 s. No audio or playback checked.

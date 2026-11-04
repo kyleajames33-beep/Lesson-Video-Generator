@@ -1,0 +1,101 @@
+{
+  "brief": 148,
+  "sources": [
+    {
+      "file": "src/explainer/physics/y11-kit.tsx",
+      "sha256": "d42f1608e913390b33bf20371cb31e685547b41c7b47800810968b4e8f283ef6"
+    },
+    {
+      "file": "src/explainer/physics/y11-kit-pilot-entry.tsx",
+      "sha256": "c4016d90d9ee06fbd9421d3370853413878cc460ab6225c425a9a021985af291"
+    },
+    {
+      "file": "scripts/render-physics-y11-kit-pilot.mjs",
+      "sha256": "62e398df1fade69768c94baa038177190328f5ec4a5bab07d233e8766c83dddd"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/brief148-motion-sample.mp4",
+      "sha256": "73a26063276ba2d83fb6b9ca8a568a39d17b95291cf8ae69ffba98bc5de4dffb"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f210.png",
+      "sha256": "a44b5fa84d9c38243cce907c7654d7e12a1629212e58fbc979875be8ea705220"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f330.png",
+      "sha256": "ce242b8b9dfbc9cf892aef8b7e939f7b8f82f337b713ce1b22c9f43b586c6108"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f450.png",
+      "sha256": "99062f323fc8ef71e3b89fadce73cfb4d417d7488a51e056b489c84e8c9b68da"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f570.png",
+      "sha256": "0dc2c3d159cd1914c88b4a736c6227b204a08533519638afe962bcc24c76f92a"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f690.png",
+      "sha256": "f49041570b1a326f080bee2415edc9fd729b8b7a85ce12b39e4389d4b91bb8b8"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f810.png",
+      "sha256": "f3eaffef3a9e8613e7b97960b19ba02d8019371305b743014dcabe82fc0ab272"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f90.png",
+      "sha256": "4183863f43189e5b3c1448426005d94b5c4372f6c6e6d728fc58ee75af430bc4"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/desktop-f930.png",
+      "sha256": "e0d7137e340e7895b2108bfc83c91398798161acedbe9e716e36f5bed5e964db"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/media-check.json",
+      "sha256": "3761ffb057279c394748c5121541be8062c68ea17e693abb0c4ade60742ead59"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/numeric-check.json",
+      "sha256": "b9d2e9c4521d80ec984dd3d3a9345ffae2281d4916e0e43d6ff47fdee2dbb847"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f210.png",
+      "sha256": "6829c8f0bfa33d78a8f9ed8d8a298f022594d5938330b0330b93d2b5442a2901"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f330.png",
+      "sha256": "0b718bacd43d77a82a6ea1c464c833227bdf5b70aa8a8bf96055d8b3757c708e"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f450.png",
+      "sha256": "db0755502197d1a592fa953d3311703c1ac4c1ccfeddb7f7dd9138d8f4d12261"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f570.png",
+      "sha256": "dd4be5e446c8a03ae13fb5217a54f5c083a4fcadae8b1262fe2cefc15151c327"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f690.png",
+      "sha256": "49b510cb62a5d8a110425914cc2b5399341b0695bf641c31ed7ca90bbca937c9"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f810.png",
+      "sha256": "2b6f97c9cae3c66c96ea9235913150717e87f3ecb30d8fae51f81c6dce809265"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f90.png",
+      "sha256": "f70434cbd8c7d5436aedf414f0368ca62b803b3b6cd1ed71cc5351a0cae9cc6f"
+    },
+    {
+      "file": "out/explainer/physics-y11-kit-pilot/phone-f930.png",
+      "sha256": "3449d781a785518ae617778b0a51008d49a23abcf1d9a2a5da8a734c1fb366c5"
+    }
+  ],
+  "checks": {
+    "numericAssertions": 841,
+    "typescript": "passed",
+    "desktopPhoneStills": 16,
+    "motion": "16 seconds, silent, full decode passed; human playback judgment pending"
+  }
+}

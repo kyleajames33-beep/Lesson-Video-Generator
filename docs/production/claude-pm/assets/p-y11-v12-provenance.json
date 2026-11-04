@@ -1,0 +1,81 @@
+{
+  "brief": 146,
+  "video": "v12",
+  "assets": [
+    {
+      "file": "public/assets/physics/y11p-box-v1.png",
+      "size": [
+        1200,
+        1000
+      ],
+      "sha256": "f830ff936148d7e868a8a046cf9c5dc3b2ce54ce106501d8ebea4f3a30db26ec",
+      "sourceCandidate": "work/brief146/candidates/box.png",
+      "prompt": "closed plain cardboard box, side view with flat baseline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        108,
+        275,
+        1092,
+        725
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-sledge-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "8e7d3426fb5e12032b396677c27b234a36c4c348d8fd1af8a565e192f3baea25",
+      "sourceCandidate": "work/brief146/candidates/sledge.png",
+      "prompt": "side-on empty wooden sledge with metal runners, tow eye and no rope; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        180,
+        298,
+        1820,
+        701
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

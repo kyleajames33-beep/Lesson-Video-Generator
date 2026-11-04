@@ -1,0 +1,98 @@
+{
+  "brief": 146,
+  "video": "v05",
+  "assets": [
+    {
+      "file": "public/assets/physics/phys-y11-car-top-v1.png",
+      "size": [
+        1600,
+        800
+      ],
+      "sha256": "08e8ca91fdc93cd97016713631f953ea8c882e4ca813571ebf4fde1ce51047b1",
+      "sourceCandidate": "work/brief146/candidates/car.png",
+      "prompt": "top-down blue hatchback nose up, symmetric, isolated ink-watercolour, matched to blue car reference; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        95,
+        1456,
+        704
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-light-gate-v1.png",
+      "size": [
+        1000,
+        1400
+      ],
+      "sha256": "cd8e347dfd58d12e3133adf387109ca93336538c69927281bbe44b4f8b8dc8f5",
+      "sourceCandidate": "work/brief146/candidates/gate-repair.png",
+      "prompt": "edit light gate to inverted U with unobstructed open bottom, facing emitter and detector, offset stand and cable; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        90,
+        343,
+        910,
+        1057
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-trolley-card-v1.png",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "f528d6424ba43be0595d6abe5f829247c06786eb2dbfd6fefe82d360e34c44e1",
+      "sourceCandidate": "work/brief146/candidates/cardtrolley.png",
+      "prompt": "side-on blue school trolley with vertical plain card, common wheel baseline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        144,
+        149,
+        1456,
+        751
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

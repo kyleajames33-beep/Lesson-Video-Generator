@@ -1,0 +1,40 @@
+{
+  "brief": 122,
+  "date": "2026-10-31",
+  "design": "bio-m8-g02",
+  "continues": "brief121-provenance.json",
+  "earlierCheckpoint": "brief121-media-checkpoint.json",
+  "reasonForAdditiveManifest": "The earlier exact provenance file is part of a verified historical media archive. Preserve its bytes and original hashes. This additive manifest records the current inspection and reuse for this consumer.",
+  "records": [
+    {
+      "path": "public/assets/biology/m8-aav-vector-v1.png",
+      "sha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        281,
+        220,
+        1719,
+        1780
+      ],
+      "clearMargins": [
+        281,
+        220,
+        281,
+        220
+      ],
+      "design": "bio-m8-g02",
+      "action": "inspect and retain existing plate; no retake",
+      "earlierProvenance": "brief121-provenance.json",
+      "qa": "Open single blue strand has two free ends. No closed loop. Shell is faceted and non-enveloped. Reuse verified for this design.",
+      "historicalManifest": "unchanged; this brief records the new reuse check without rewriting archived evidence"
+    }
+  ]
+}

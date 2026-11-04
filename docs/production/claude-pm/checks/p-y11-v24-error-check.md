@@ -1,0 +1,8 @@
+# p-y11-v24 Revision 2 error check
+
+Checked 3 November 2026. Source SHA-256 `01a786e469e2ab953c69422d33fdef5515873eb08f34d459b24cd42419435096`.
+
+1. **Should fix:** Attempt 1 still asks for the mean's “uncertainty as half the range”, and the feedback presents the half-range as an unqualified ± value. That contradicts the revision's distinction between repeat scatter and total uncertainty; the FA0 and learner-question summaries also retain the older full-uncertainty wording.
+2. **Should fix:** Scene 9 says independent angle and timing checks “would confirm” resistance, although those checks alone cannot establish it as the cause. Feedback 1 says the deviations suggest a systematic effect but then says more trials “won't fix it” as a certainty. Qualify the inferred cause and distinguish a hypothesis from an established bias. The learner-question and cause-chain summaries still state the intercept shows a resisting force as fact.
+
+The A2 gap is correctly 0.05 + 0.2 sin θ, including 0.15 at sin θ = 0.5. The main graph identifies repeat scatter and names other limits, says gradient uncertainty was not calculated, and describes a conditional approximate relationship; controls, height-difference uncertainty and WS03 wording are revised. Calculations are in `work/brief159/v24-calculations.json`. The v23 opening and v26 handoff match. Seventeen scenes total 6,203 separate and 6,219 joined characters, about 570 seconds using the shortened notes hold; the design names a scene 10 trim if needed. No em dash or checked American spelling appears in narration. No audio or animation was inspected.

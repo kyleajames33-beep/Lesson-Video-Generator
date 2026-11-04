@@ -2111,3 +2111,410 @@ The maths section was completed first:13 route entries,9 integral packs, no trig
 Plates: 21 new plates, including three schematic agar stages replacing the four original beaker requests, with alpha, black/white, phone and paired-state checks in `assets/brief147-qa/`; hashes and prompts in `assets/brief147-manifest.json` and six per-video provenance files. The optional towel and extra-mitochondrion plate were not needed. The source designs remain unchanged; Claude resolves reported findings before voice/build.
 
 Shared diagrams: `src/explainer/biology/fa1/` exports `SizeLadder`, `AssessBalance` and `GapBox`; `checks/brief147-bio-fa1-components.md` records targeted TypeScript, numerical checks and still proofs. Source reviews and still checks are not human listening or continuous playback approval. Site findings are in `site-corrections-bio-y11.md`.
+
+
+### Brief 153: Physics v26 to v31 and Mathematics t01 to t04 reviews
+
+- v26: complete; 0 blockers, 2 should fix: nonconservative drive and narration count. Reports: `checks/p-y11-v26-learning-review.md`, `checks/p-y11-v26-science-check.md`.
+- v27: complete; 0 blockers, 2 should fix: energy change and released-from-rest condition. Reports: `checks/p-y11-v27-learning-review.md`, `checks/p-y11-v27-science-check.md`.
+- v28: complete; 0 blockers, 2 should fix: net work and rounding. Reports: `checks/p-y11-v28-learning-review.md`, `checks/p-y11-v28-science-check.md`.
+- v29: complete; 0 blockers, 4 should fix: handoff, average force, signed graph and external impulse. Reports: `checks/p-y11-v29-learning-review.md`, `checks/p-y11-v29-science-check.md`.
+- v30: complete; 0 blockers, 5 should fix: assumptions, deformation, rotation, algebraic branch and inelastic scope. Reports: `checks/p-y11-v30-learning-review.md`, `checks/p-y11-v30-science-check.md`.
+- v31: complete; 3 blockers, 1 should fix: uncertainty, unsupported drag attribution and underdetermined comparison. Reports: `checks/p-y11-v31-learning-review.md`, `checks/p-y11-v31-science-check.md`.
+- t01: complete; 0 blockers, 1 should fix: scope the period rule. Reports: `checks/m-a12t01-learning-review.md`, `checks/m-a12t01-claude-science-check.md`.
+- t02: complete; 0 blockers, 1 should fix, 1 optional: endpoint and tangent branch counting. Reports: `checks/m-a12t02-learning-review.md`, `checks/m-a12t02-claude-science-check.md`.
+- t03: complete; 0 blockers, 3 should fix: model assumptions, handoff and threshold. Reports: `checks/m-a12t03-learning-review.md`, `checks/m-a12t03-claude-science-check.md`.
+- t04: complete; 0 blockers, 4 should fix: hearing reference, seismic model, pH and axis wording. Reports: `checks/m-a12t04-learning-review.md`, `checks/m-a12t04-claude-science-check.md`.
+
+Fresh official action evidence and independent calculations are in `work/brief153/`; confirmed site issues were logged without changing site files. Source designs, voice, renders and commits were untouched. Findings are for designer resolution before recording. Next: brief 146.
+
+
+### Brief 146: Physics FA1 v01 to v12 plates
+
+Completed 22 transparent physics PNGs, including matched plan-view cars and boats, open light gate, card trolley, dynamics trolley, investigation apparatus, sledge and box. Existing side cars, ruler, ball and stopwatch were reviewed for reuse. The v01/v06 drone filename conflict is resolved with one shared 1500 px plate; the v05 car is the shared blue plate rotated to face right. The v10 light gate request was withdrawn. Manifest, source prompts, hashes, reuse decisions and approximate attachment coordinates are in `assets/brief146-manifest.json`; per-video provenance is in `assets/`. Black/white and phone contact sheets and a scale mock are in `assets/brief146-qa/`. Both matched pairs have identical alpha masks; all 22 files pass transparency, dimensions and margin checks. ImageGen masters and local operations remain in `work/brief146/`. The hand-in is plate-only and does not imply voiced or motion approval. Next: brief 148.
+
+Brief 146 filename addendum: root decision 4 canonical `phys-y11-` copies are included for every `y11p-` request, with original spellings kept as matching aliases. Manifest hashes cover both.
+
+
+### Brief 148: Year 11 Physics kit
+
+Completed the shared physics kit in `src/explainer/physics/y11-kit.tsx`, with the pilot entry and serial renderer. `checks/codex-build-148.md` records the APIs, 841 numeric assertions, TypeScript and 16 desktop/phone stills; `assets/brief148-manifest.json` records hashes. The 16-second silent motion sample is `out/explainer/physics-y11-kit-pilot/brief148-motion-sample.mp4`, with a successful full decode. Claude judges the motion at playback speed; no approval is claimed. No lesson design, speech or commit changed. Next: brief 149.
+
+### Brief 149: Physics FA1 v13 to v24 reviews and plates
+
+- v13: review complete; 0 blockers, 3 should fix, 0 optional; about 524 s. See `checks/p-y11-v13-learning-review.md` and `checks/p-y11-v13-science-check.md`.
+- v14: review complete; 0 blockers, 3 should fix, 0 optional; about 516 s. See `checks/p-y11-v14-learning-review.md` and `checks/p-y11-v14-science-check.md`.
+- v15: review complete; 3 blockers, 2 should fix, 0 optional; about 559 s. See `checks/p-y11-v15-learning-review.md` and `checks/p-y11-v15-science-check.md`.
+- v16: review complete; 0 blockers, 2 should fix, 0 optional; about 524 s. See `checks/p-y11-v16-learning-review.md` and `checks/p-y11-v16-science-check.md`.
+- v17: review complete; 1 blocker, 2 should fix, 0 optional; about 567 s. See `checks/p-y11-v17-learning-review.md` and `checks/p-y11-v17-science-check.md`.
+- v18: review complete; 1 blocker, 3 should fix, 0 optional; about 526 s. See `checks/p-y11-v18-learning-review.md` and `checks/p-y11-v18-science-check.md`.
+- v19: review complete; 0 blockers, 3 should fix, 0 optional; about 508 s. See `checks/p-y11-v19-learning-review.md` and `checks/p-y11-v19-science-check.md`.
+- v20: review complete; 0 blockers, 2 should fix, 0 optional; about 547 s. See `checks/p-y11-v20-learning-review.md` and `checks/p-y11-v20-science-check.md`.
+- v21: review complete; 2 blockers, 1 should fix, 0 optional; about 567 s. See `checks/p-y11-v21-learning-review.md` and `checks/p-y11-v21-science-check.md`.
+- v22: review complete; 0 blockers, 3 should fix, 0 optional; about 532 s. See `checks/p-y11-v22-learning-review.md` and `checks/p-y11-v22-science-check.md`.
+- v23: review complete; 1 blocker, 2 should fix, 0 optional; about 538 s. See `checks/p-y11-v23-learning-review.md` and `checks/p-y11-v23-science-check.md`.
+- v24: review complete; 3 blockers, 3 should fix, 0 optional; about 568 s. See `checks/p-y11-v24-learning-review.md` and `checks/p-y11-v24-science-check.md`.
+
+Plates: 44 files including variants and animation layers; source, hashes, filename conflicts and reuse are in `assets/brief149-manifest.json`, with visual tests in `assets/brief149-qa/`. Coordinates in sidecars are visually estimated and must be registered in the build; the strips extend to both edges to tile. The pulley-and-string composition is illustrative and needs final rope registration. Review blockers require designer repair before recording; no design edits, speech or commits. Next: brief 150.
+
+### Brief 150 progress: Biology FA1 v13
+
+v13 review complete: 0 blockers, 3 should fix, 0 optional; about 547 s. Reports `checks/y11b-v13-learning-review.md` and `checks/y11b-v13-science-check.md`; two confirmed L10 findings logged. Repairs and playback remain for the designer. Next review: v14.
+
+### Brief 150 progress: Biology FA1 v14
+
+v14 review complete: 0 blockers, 3 should fix, 0 optional; about 549 s. Reports `checks/y11b-v14-learning-review.md` and `checks/y11b-v14-science-check.md`; confirmed L11 issues logged. Next review: v15.
+
+### Brief 150 progress: Biology FA1 v15
+
+v15 review complete: 0 blockers, 5 should fix, 0 optional; about 527 s. Reports `checks/y11b-v15-learning-review.md` and `checks/y11b-v15-science-check.md`; L12 source findings logged. Next review: v16.
+
+### Brief 150 progress: Biology FA1 v16
+
+v16 review complete: 0 blockers, 4 should fix, 0 optional; about 569 s. Reports `checks/y11b-v16-learning-review.md` and `checks/y11b-v16-science-check.md`; balanced atom count and L13 site findings recorded. Next review: v17.
+
+### Brief 150 progress: Biology FA1 v17
+
+v17 review complete: 0 blockers, 4 should fix, 0 optional; about 556 s. Reports `checks/y11b-v17-learning-review.md` and `checks/y11b-v17-science-check.md`; atom counts, willow conversions and confirmed L14 findings recorded. Next review: v18.
+
+### Brief 150 progress: Biology FA1 v18
+
+v18 review complete: 0 blockers, 5 should fix, 0 optional; about 523 s. Reports `checks/y11b-v18-learning-review.md` and `checks/y11b-v18-science-check.md`; L15 findings logged. Next review: v19.
+
+### Brief 150 progress: Biology FA1 v19
+
+v19 review complete: 1 blocker, 3 should fix, 0 optional; about 562 s. Reports `checks/y11b-v19-learning-review.md` and `checks/y11b-v19-science-check.md`; L16 model findings logged. Next review: v20.
+
+### Brief 150 progress: Biology FA1 v20
+
+v20 review complete: 1 blocker, 3 should fix, 0 optional; about 541 s. Reports `checks/y11b-v20-learning-review.md` and `checks/y11b-v20-science-check.md`; L18 graph findings logged. Next review: v21.
+
+### Brief 150 progress: Biology FA1 v21
+
+v21 review complete: 1 blocker, 4 should fix, 0 optional; about 566 s. Reports `checks/y11b-v21-learning-review.md` and `checks/y11b-v21-science-check.md`; calculations and L17 findings logged. NSW public guidance was checked; the exact local chemical category requires the school register and SDS. Next review: v22.
+
+### Brief 150 progress: Biology FA1 v22
+
+v22 review complete: 0 blockers, 3 should fix, 0 optional; about 537 s. Reports `checks/y11b-v22-learning-review.md` and `checks/y11b-v22-science-check.md`; sequence calculations and L19 bond-count correction recorded. Next review: v23.
+
+### Brief 150 progress: Biology FA1 v23
+
+v23 review complete: 2 blockers, 2 should fix, 0 optional; about 567 s. Reports `checks/y11b-v23-learning-review.md` and `checks/y11b-v23-science-check.md`; L20 model findings logged. Next review: v24.
+
+### Brief 150 progress: Biology FA1 v24
+
+v24 review complete: 0 blockers, 4 should fix, 0 optional; about 548 s. Reports `checks/y11b-v24-learning-review.md` and `checks/y11b-v24-science-check.md`; scale and fork calculations recorded. Next review: v25.
+
+### Brief 150 progress: Biology FA1 v25
+
+v25 review complete: 1 blocker, 3 should fix, 0 optional; about 571 s. Reports `checks/y11b-v25-learning-review.md` and `checks/y11b-v25-science-check.md`; DNA scale calculations and L21 findings recorded. Next review: v26.
+
+### Brief 150 progress: Biology FA1 v26
+
+v26 review complete: 1 blocker, 3 should fix, 0 optional; about 570 s. Reports `checks/y11b-v26-learning-review.md` and `checks/y11b-v26-science-check.md`; counts and L22 findings recorded. Next review: v27.
+
+### Brief 150 progress: Biology FA1 v27
+
+v27 review complete: 1 blocker, 3 should fix, 0 optional; about 539 s. Reports `checks/y11b-v27-learning-review.md` and `checks/y11b-v27-science-check.md`; chromosome/DNA counts and L23 findings recorded. Next review: v28.
+
+### Brief 150 progress: Biology FA1 v28
+
+v28 review complete: 0 blockers, 3 should fix, 0 optional; about 530 s. Reports `checks/y11b-v28-learning-review.md` and `checks/y11b-v28-science-check.md`; existing stage plates and chromosome counts inspected. Next review: v29.
+
+### Brief 150 progress: Biology FA1 v29
+
+v29 review complete: 0 blockers, 4 should fix, 0 optional; about 571 s. Reports `checks/y11b-v29-learning-review.md` and `checks/y11b-v29-science-check.md`; meiosis counts and L24 findings recorded. Next review: v30.
+
+### Brief 150 progress: Biology FA1 v30
+
+v30 review complete: 1 blocker, 3 should fix, 0 optional; about 559 s. Reports `checks/y11b-v30-learning-review.md` and `checks/y11b-v30-science-check.md`; combination calculations and L24 findings recorded. Next review: v31.
+
+### Brief 150 progress: Biology FA1 v31
+
+v31 review complete: 2 blockers, 3 should fix, 0 optional; about 518 s. Reports `checks/y11b-v31-learning-review.md` and `checks/y11b-v31-science-check.md`; L25 findings and current Cavendish/TR4 evidence recorded. All v13 to v31 reviews are complete; next: brief 150 plates.
+# Brief 150 plate work in progress — early visual checks
+
+The seven membrane candidates and 50% transition strip are in `assets/brief150-qa/membrane-crossfades.png`. Outer membrane sections are registered, but the cargo scale and changing central geometry still need checking against the commission before acceptance. The existing macrophage plates have clean-looking edges on the dark-board strip `assets/brief150-qa/macrophage.png`, but the after plate's cell appears larger than the other stages; do not assume exact registration. The exchange/cell strip `assets/brief150-qa/exchange.png` shows visible muscle-membrane carriers, a separate nephron tubule, and distinct painted mitochondria in both cell illustrations; actual scene-specific cropping and relative layout still need build-time verification. The isolated plates were composited on black and white in `assets/brief150-qa/individual-black.png` and `individual-white.png`: the earlier apparent apparatus glow came from viewing RGB values in transparent pixels, not the composited plate. Brief 150 remains in progress.
+
+The original enzyme has been split into `y11-enzyme-alone-v1.png` and `y11-substrate-alone-v1.png`; recombining the non-overlapping layers reproduces the original with zero pixel mismatches. `assets/brief150-qa/matched-crossfades.png` records further candidate transitions: the liver no-liver and pair-telophase empty edits show a background or registration defect; a local repair to the former still needs another inspection and the latter needs replacement. The other matched sets still require full-resolution acceptance. The chromosome files are candidates, with arm widths, colours, centromeres and bands still to be verified. The helix candidate has correct colour pairings but only eight visible rungs and lacks the requested painted phosphate spheres; it is not accepted. No plate hand-in is complete yet.
+
+Further progress: the helix was replaced by a ten-rung candidate with phosphate spheres; `assets/brief150-qa/helix-400.png` and `helix-inspection.md` show the 400 px and colour-pairing check. The telophase-empty replacement and the local liver repair now appear registered in the updated `matched-crossfades.png`, subject to full-size checks. The v27 still and findings are `assets/brief150-qa/v27-cells-and-stage-strip.png` and `v27-inspection.md`; the v28 still, approximate string path and findings are in `assets/y11fa1v28-qa/`. The small bead Xs and actual stage playback remain build checks. v19 and v20 plates have explicit prerequisites that their reviews pass; both reviews report blockers and the design hashes have not changed. v21 has the same review prerequisite and its review also reports a blocker. Brief 150 remains open.
+
+### Brief 124 hand-in: Google speech alignment pilot
+
+Report `checks/google-tts-pilot-2026-10-31.md`; audio, timing comparison and pilot measured lesson under `out/google-tts-pilot/`; adapter `scripts/google-tts-pilot.mjs`. Gemini 3.8 Flash TTS accepted the owner's saved voice ID. Six original and two supplemental speech probes were generated. Estimated paid cost is US$0.09 per 6,000 characters at current rates, scaled from the three scenes. The 199-word ElevenLabs comparison gave median 34 ms and 95th percentile 113.3 ms, but two scenes used reference-derived sentence windows, so these are not independent benchmark figures. The caption exporter succeeded with 34 cues; actual renderer media serving and playback were not tested. Automated audio observations flag the maths letter `a` as “uh”; an `ay` respelling probe is present. Human listening and a genuinely independent timing check remain open. No key was printed or committed. Brief 150 remains open separately; the user's new requested order continues at brief 154.
+
+### Brief 154 progress
+
+v01: one shared should-fix, conflicting course-wide velocity colours in the two root-decision files. v02: no lesson-specific errors; shared colour issue remains. v03: one should-fix, author note (c) wrongly says all vectors are in the first quadrant although attempt 2 points west of north. Reports `checks/p-y11-v01-error-check.md` through `p-y11-v03-error-check.md`; counts and calculations in `work/brief154/`. Continue with v04; brief 154 is not yet handed in.
+
+### Brief 154 hand-in: Physics FA1 v01-v12 Revision 2 error checks
+
+- v01: 1 shared should-fix, conflicting course-wide velocity-colour decisions; about 570 s.
+- v02: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 532 s.
+- v03: 1 should-fix, blanket first-quadrant author note excludes the west-of-north example; about 503 s.
+- v04: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 544 s.
+- v05: 1 should-fix, the light-gate narration overstates when an interval average can match an instantaneous value; about 561 s.
+- v06: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 515 s.
+- v07: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 505 s.
+- v08: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 517 s.
+- v09: 2 should-fix, joined-count headline and an over-general author-note instruction; about 568 s.
+- v10: 2 should-fix, certainty of the A2 repeat prediction and joined-count headline; about 570 s.
+- v11: no lesson-specific errors; clean for voicing after the brief 124 pilot, subject to its listening and independent timing checks; about 469 s.
+- v12: 1 should-fix, screen normal-force labels use N rather than the owner's F_N; about 494 s.
+
+Reports are `checks/p-y11-v01-error-check.md` through `checks/p-y11-v12-error-check.md`; parser outputs and Python calculations are in `work/brief154/`. The shared colour conflict affects later build normalisation. These are source checks; no voiced or rendered playback was inspected. Next in the owner's current order: brief 158.
+
+## Brief 158 hand-in (3 November 2026)
+
+Revision 2 source checks, with counts and evidence in `checks/y11b-v07-error-check.md` through `y11b-v12-error-check.md` and `work/brief158/`. No designs, speech, renders or commits changed. Playback and human listening remain pending.
+
+- y11b-v07: 1 should fix, stale scene 9 cue; accepted approximately 572 seconds.
+- y11b-v08: 3 should fix, stale feedback cue, cholesterol comparison and timing header.
+- y11b-v09: 1 should fix, ion direction caveat missing from repeated summaries.
+- y11b-v10: 2 should fix, conditional mass interpretation and stale timing figures; scene 8 is approximately 46 seconds and needs playback inspection.
+- y11b-v11: 2 should fix, hospital-drip generalisation and inconsistent timing figures.
+- y11b-v12: 3 should fix, stale graph cue, generic ion condition and inconsistent timing figures.
+
+## Brief 159 hand-in (3 November 2026)
+
+Revision 2 source checks: `checks/p-y11-v13-error-check.md` through `p-y11-v24-error-check.md`, and `p-y11-v26-error-check.md` through `p-y11-v31-error-check.md`; counts and recalculations in `work/brief159/`. All 18 specified designs begin Revision 2; none skipped. v25 remains on cultural hold. No design edits, speech, renders or commits. Audio and built motion remain untested.
+
+- v13: 1 should fix, stale force/speed sequence description.
+- v14: clean, ready to voice after the brief 124 pilot.
+- v15: 4 should fix, force approximation, uncertainty summaries, v16 opening and stale scene timing figures.
+- v16: 2 should fix, v15 opening match and speech-time intermediate.
+- v17: 1 should fix, stale opening-frame assumption.
+- v18: 1 should fix, unresolved narration placeholders and stale count/timing.
+- v19: 2 should fix, unqualified area claim and threshold/trace consistency.
+- v20: clean, ready to voice after the brief 124 pilot.
+- v21: 3 should fix, opposite closing-arrow descriptions, normal-force symbol and stale opening assumption.
+- v22: 2 should fix, normal-force symbol and incomplete angle summary.
+- v23: 1 should fix, normal-force symbol.
+- v24: 2 should fix, remaining half-range uncertainty claim and inferred-cause wording; about 570 s with named trim.
+- v26: 1 should fix, old plate names; about 570 s with named trims.
+- v27: 1 should fix, old plate names.
+- v28: 1 should fix, old plate names.
+- v29: 1 should fix, old plate name retained in a visual.
+- v30: 2 should fix, stale rolling note and old plate names; about 570 s with named trims.
+- v31: 3 should fix, categorical collision inference, systematic-error and scatter wording, and old plate names; about 570 s with named trim.
+
+## Brief 160 hand-in (3 November 2026)
+
+Revision 2 source checks: `checks/m-a12t01-error-check.md` through `m-a12t04-error-check.md` and `checks/y11b-v13-error-check.md` through `y11b-v31-error-check.md`. Counts, calculations and plate scan are in `work/brief160/`. All 23 specified designs start Revision 2; none skipped. No design edits, speech, renders or commits. The brief 150 manifest explicitly remains in progress: candidate files are not a completed plate hand-in; missing essential plates are identified below. Audio, animation and real student practicals were not inspected.
+
+- m-a12t01: 1 should fix, stale parameter in a heading.
+- m-a12t02: clean, ready to voice after the brief 124 pilot.
+- m-a12t03: 1 should fix, stale parameter in a heading.
+- m-a12t04: clean, ready to voice after the brief 124 pilot.
+- y11b-v13: 1 should fix, overgeneralised low-ATP feedback.
+- y11b-v14: 2 should fix, glucose absolute in attempt 2 and stale timing table.
+- y11b-v15: 2 should fix, water net-flow table and stale timing table.
+- y11b-v16: 1 should fix, stale handoff scene count; about 569 s.
+- y11b-v17: 2 should fix, missing cue phrase and atom-mapping summary.
+- y11b-v18: 2 should fix, peroxide-depletion inference and enzyme-mechanism summaries.
+- y11b-v19: 3 should fix, stale cue, mechanism summaries and missing essential induced-fit plates; about 570 s.
+- y11b-v20: 3 should fix, timing header, saturation summaries and missing essential enzyme plates.
+- y11b-v21: 4 should fix, start-state plate, control and validity claims, and missing essential plunger; about 569 s.
+- y11b-v22: 2 should fix, inaccurate proposed site wording and stale opening assumption.
+- y11b-v23: 1 should fix, stale primer and copy-accuracy summary.
+- y11b-v24: 2 should fix, digital-model summary and origin-timing wording.
+- y11b-v25: 2 should fix, unqualified histone references and stale opening assumption.
+- y11b-v26: 1 should fix, two stale visual cues; about 570 s.
+- y11b-v27: 2 should fix, checkpoint/daughter absolutes and stale timing.
+- y11b-v28: 1 should fix, stale centromere and daughter summary.
+- y11b-v29: 2 should fix, stale centromere note and overstrong proposed site correction; about 569 s.
+- y11b-v30: 1 should fix, stale four-different-cells summary; about 570 s.
+- y11b-v31: 3 should fix, universal meiosis verdict, healing wording and stale length header.
+
+## Brief 155 hand-in (3 November 2026)
+
+Nine learning reviews and nine maths checks are in `checks/m-a12i06-learning-review.md` through `m-a12i14-learning-review.md` and the corresponding `m-a12iNN-claude-science-check.md` files. Independent symbolic evidence is in `work/brief130-python/i06.py` through `i14.py` and their JSON output. Reviewed against packs, route, official 2024 syllabus and root decisions 28–38. Site corrections are deduplicated in `site-corrections-maths-a12.md`. No design edits, audio, renders or commits; playback remains untested.
+
+**i06:** 0 blockers, 1 should fix: provide actual learner use of a graphing application. 6,176 characters, about 561 s. GPS elevation error logged as item 72.
+
+**i07:** 1 blocker, 1 should fix: a −2 m rectangle estimate is mislabelled as exact when the integral is −3 m; f≤0 permits zero. 5,711 characters, about 531 s.
+
+**i08:** 0 blockers, 2 should fix: learner use of graphing application and approximation described as equality. 5,599 characters, about 525 s. FTC site wording logged as item 73.
+
+**i09:** 0 blockers, 0 should fix; 5,683 characters, about 522 s. Brackets, splits and reversed limits verified.
+
+**i10:** 0 blockers, 1 should fix: mark included zeros without open circles. 5,644 characters, about 521 s. Profit issue already logged under item 20.
+
+**i11:** 0 blockers, 0 should fix; 5,137 characters, about 480 s, length accepted by root. Reflection, log domains and strips verified.
+
+**i12:** 0 blockers, 2 should fix: learner application use and screen-only erf under root decision 36. 6,224 characters, about 565 s. Item 74 covers site concavity. The exact 2024-syllabus reference sheet remains to be verified before build; the official sheet independently located is a 2020 exam sheet.
+
+**i13:** 0 blockers, 2 should fix: qualify an absolute statement about integrating totals and the solar model continuation. 5,625 characters, about 522 s.
+
+**i14:** 0 blockers, 0 should fix; 5,722 characters, about 531 s. Motion and distance recalculated; item 75 covers site distance and drift wording, with separate unsourced claims flagged for verification.
+
+## Brief 156 work in progress (3 November 2026; not a completed hand-in)
+
+Learning and science checks for FA2 v01–v07 and v09–v12 are saved under `checks/p-y11-fa2-vNN-{learning-review,science-check}.md`; v08 remains on cultural hold. Official actions and calculation evidence are in `work/brief156/`. The plate manifest `assets/brief156-manifest.json` records candidates and remaining work; the painted set, sidecars and QA are incomplete. Several generated candidates have visible halos and must not be treated as approved. No design edits, speech, renders or commits.
+
+## Brief 156 hand-in (3 November 2026)
+
+Reviews and independent checks are in `checks/p-y11-fa2-v01-learning-review.md` through v07 and v09 through v12, with corresponding `-science-check.md` files. v08 remains on cultural hold. Fresh 2025 syllabus validation and arithmetic evidence are in `work/brief156/`. No designs, audio, renders or commits were changed. Counts below combine overlapping learning and science findings rather than counting the same issue twice; timings are design estimates, not voiced measurements.
+
+**v01:** 0 blockers, 1 should fix: limit the particle-oscillation summary to mechanical models. 5,580 characters, about 518 s.
+
+**v02:** 0 blockers, 2 should fix: the stated camera field misses the extra markers, and the near-zero directional component cannot support the claimed ratio at ±1 cm. 6,239 characters, about 569 s; inspect timing closely.
+
+**v03:** 0 blockers, 1 should fix: restrict the crest-to-trough half-wavelength statement to the sinusoidal wave shown. 5,453 characters, about 510 s; root accepted the length.
+
+**v04:** 0 blockers, 1 should fix: qualify the conversational sound-displacement value by its frequency and intensity. 5,882 characters, about 542 s.
+
+**v05:** 0 blockers, 1 should fix: scope constant phase speed and the energy-speed comparison to the illustrated nondispersive cord. 5,865 characters, about 541 s.
+
+**v06:** 0 blockers, 2 should fix: distinguish a position axis from the vertical displacement and scope fastest-at-zero to the sinusoidal motion. 5,781 characters, about 535 s.
+
+**v07:** 0 blockers, 1 should fix: scope zero-crossing compression positions to the illustrated sinusoid. 5,822 characters, about 538 s; handoff skips held v08.
+
+**v09:** 0 blockers, 2 should fix: soft supports reduce rather than eliminate solid sound paths; use air parcels rather than the absolute motion of individual molecules. 5,652 characters, about 525 s.
+
+**v10:** 0 blockers, 2 should fix: the scope displays microphone voltage and a louder verdict across different frequencies needs perceptual evidence; retain the fixed-displacement condition on the energy comparison. 5,853 characters, about 538 s.
+
+**v11:** 0 blockers, 1 should fix: check microphone-channel phase together and retain the reflection limitation. 5,980 characters, about 550 s; illustrative data and safety sources checked.
+
+**v12:** 0 blockers, 1 should fix: a pressure-level meter estimates intensity under the stated wave model and the fixed-displacement test is model-dependent. 5,974 characters, about 549 s; illustrative data and safety sources checked.
+
+**Plates:** 17 separate painted transparent PNGs and sidecars are recorded with hashes and prompts in `assets/brief156-manifest.json`; black/white contact sheets, phone-scale mock, attachment grids and assembled component checks are in `assets/brief156-qa/`. The v09 cutaway has its own filename to avoid colliding with the exterior microphone. Anchors were read from grids and tested in compositions; check final placement during build. The earlier FA1 air-track, glider and blower plates are absent and remain reuse dependencies; they were not represented as existing. All artwork uses built-in imagegen.
+
+### Brief 157 work in progress (3 November 2026)
+
+Fresh official actions verified for v01 to v12. Reviews completed for v01 to v05: `checks/y11b-fa2-v01-learning-review.md` through `checks/y11b-fa2-v05-science-check.md`. Confirmed FA2 L01 to L03 findings appended to `site-corrections-bio-y11.md`. v03 has a school-safety clearance blocker: current NSW student-handling permissions for the specific agar and scalpel were not verified. Next: v06 review, then v07 to v12 and the plate work. This is not a completed hand-in.
+
+### Brief 157 work in progress: reviews complete (3 November 2026)
+
+All twelve learning reviews and science checks are in `checks/y11b-fa2-v01-learning-review.md` through `checks/y11b-fa2-v12-science-check.md`; their findings include blockers for practical safety (v03), net oxygen/bubble measurement (v08), universal phloem loading (v10) and osmotic pressure (v12). Artwork is in progress. Candidate images are under the image-generation session directory; some fail alpha, dimensional accuracy or matched-state registration and have not been accepted. Existing skin and epithelium viewed on dark in `assets/brief157-qa/existing-skin-dark.png`. The brief is not handed in; exact 1:2:3 agar cubes and other matched plates still require QA.
+
+### Brief 157 artwork progress (3 November 2026)
+
+Four inspected native PNGs saved: `public/assets/biology/y11-chlorosis-leaf-v1.png`, `y11-variegated-leaf-v1.png`, `y11-fertiliser-bag-v1.png`, and `y11-stave-barrel-v1.png`; sizes and provenance are recorded in `assets/brief157-manifest.json`. Their native canvases differ from the approximate portrait dimensions in the asset requests. Reused water-plant plate provenance and hashes confirmed in the manifest; some earlier plates still await owner acceptance. The matching and scale-critical assets remain unfinished, including the 1:2:3 agar set. This is not the completed hand-in.
+
+### Brief 157 further artwork check (3 November 2026; not a completed hand-in)
+
+Additional Gonium, egg, greenhouse and cardiac muscle candidates were generated but not accepted: the candidates have visible halos, inaccurate details or missing matched plates. The v03, v07 and v09 to v12 asset briefs require a passed Codex error check before painting; no such checks were found, and the reviews record unresolved blockers. The v03 review also could not establish NSW student handling clearance for the agar and scalpel. The agar images generated so far do not meet the exact measured cube and core requirements; pot and other paired states do not register on the requested canvases. The paper-towel dependency for v03 was not found. No later brief in the queue has been started during this work.
+
+### Brief 157 additional checks (3 November 2026; not a completed hand-in)
+
+`y11-red-cell-lysed-v1.png` exists. `b2c-amoeba-fission-1-v1.png` shows one undivided nucleus, but its existing image has a visible halo on dark and should be checked before use. Further attempts to remove the halos from the Gonium, greenhouse and cardiac candidates did not meet the requested clean-edge standard. No candidates from those attempts were accepted. The required error checks for the gated plates are still absent.
+
+### Brief 157 stoma registration check (3 November 2026; work in progress)
+
+The open and closed stoma PNGs both use a 2000 x 2000 canvas. Their 50% overlay is in `assets/brief157-qa/stoma-overlay.png`; the surrounding cells and centre register closely, while the guard cells change shape around the pore as intended. Four further illustration candidates have not passed the clean-edge or scientific-detail checks and were not saved as plates. Brief 157 remains incomplete.
+
+## Brief 157 hand-in, with open items (3 November 2026)
+
+Twelve learning reviews and twelve science checks are in `checks/y11b-fa2-v01-learning-review.md` through v12 and their corresponding `-science-check.md` files. Confirmed site findings are in `site-corrections-bio-y11.md`. Counts below are from the learning reviews; see both reports for all findings. No design edits, speech or commits.
+
+**v01:** 0 blockers, 4 should fix, about 537 s. Red-cell bursting needs a possibility rather than certainty. The lysed-cell plate exists; the amoeba plate has an undivided nucleus but a visible halo.
+
+**v02:** 0 blockers, 4 should fix, about 506 s. State the equal-demand assumption in the surface-area comparison.
+
+**v03:** 1 blocker, 5 should fix, about 569 s. Student handling of the phenolphthalein agar and scalpel needs the school's current safety assessment; use the teacher-cutting fallback until cleared. The paper-towel dependency was not found.
+
+**v04:** 0 blockers, 4 should fix, about 556 s. Narrow the organelle placing rule. The existing skin and epithelium were inspected on dark.
+
+**v05:** 0 blockers, 5 should fix, about 545 s. Remove the universal claim about roots and photosynthesis. The existing open and closed stoma images use the same canvas and register closely in `assets/brief157-qa/stoma-overlay.png`.
+
+**v06:** 0 blockers, 4 should fix, about 515 s. State the initial limiting condition or present the result as a particular test.
+
+**v07:** 0 blockers, 5 should fix, about 515 s. Use school-approved pondweed and local disposal instructions; school-use permission for named species was not established.
+
+**v08:** 1 blocker, 6 should fix, about 517 s. Bubble counts are not equivalent to net oxygen exchange.
+
+**v09:** 0 blockers, 4 should fix, about 540 s. Correct the universal vessel and stem claims and distinguish illustrations from independent source evidence.
+
+**v10:** 1 blocker, 4 should fix, about 569 s. Active phloem loading is not universal.
+
+**v11:** 0 blockers, 5 should fix, about 540 s. Identify active loading as the example rather than a universal mechanism.
+
+**v12:** 1 blocker, 5 should fix, about 528 s. Separate osmotic pressure from root pressure.
+
+**Plates:** Four inspected PNGs, reused-asset records, candidate provenance and unresolved work are listed in `assets/brief157-manifest.json`; QA is in `assets/brief157-qa/`. Remaining requested plates are open: several candidates have halos, the agar cube set and cores have not met exact measured proportions, and the matched pot and other states do not yet meet registration and canvas requirements. The relevant design asset briefs also call for passed error checks before painting; no such checks were found. Do not treat the outstanding artwork as delivered.
+
+### Brief 165 work in progress (3 November 2026; not a completed hand-in)
+
+An experimental sentence-by-sentence Google generator is in `scripts/generate-google-audio.mjs`; the pronunciation rules and word-to-display mapping are in `scripts/lib/google-pronunciation.mjs`. The independently voiced `math-constant-override` sample was aligned with WhisperX and all 18 mapped word starts and ends agree with their spoken-word alignment endpoints to 0 ms; the detailed rows are `out/google-tts-pilot/math-constant-mapping-check.json`. This verifies mapping only, not true timing accuracy. An existing pilot take was used as a cached fixture; the generator wrote a WAV, alignment, generation metadata and a lesson data file, the caption exporter wrote three cues, and a second run reused the take. No new Google request was made for this fixture; its cost figure is the historical sample usage, not a new charge.
+
+Open before production: pronunciation rules still require review against every lesson, sentence-level voice consistency and text segmentation need listening and full-scene validation, and the generator does not yet assemble or validate all scene cue frames, holds and production durations. The D01 design is present as Markdown but no corresponding Remotion lesson or composition was found; no D01 audio or preview has been generated, no cue timing verified, and no build or pilot render run. Therefore Part 2 has not passed and Part 3 must not start. Human listening remains required. No key was printed or logged, no design edited and no commit made.
+
+### Brief 165 d01 voicing progress and quota hold (3 November 2026; not a completed hand-in)
+
+The revised brief's voice-first sequence is in use. `lessons/math-a12-d01/voice-manifest.json` and `lesson.json` contain the 16 extracted narration scenes, with two 10-second countdown holds and a 60-second notes hold. Eleven scenes, `scene-01` through `scene-11`, have saved Google WAV takes, WhisperX alignment and generation sidecars under `public/audio/math-a12-d01/`. Their saved metadata records 5,172 characters, 1,370 input tokens, 9,867 output tokens and an estimated US$0.089488 at the stated rates. These totals exclude any incomplete sentence cache and are estimates, not an account invoice. The already saved takes were reused on restart.
+
+Google returned HTTP 429 at scene 12: the Tier 1 model limit is 100 requests per day, with the response estimating 20 hours 36 minutes 55 seconds until retry. Retrying over several minutes did not clear it. Scenes 12 to 16 and the measured lesson file are not complete; alignment and caption export for the whole lesson, hold validation, and human listening remain outstanding. Do not start the remaining Part 3 lessons until d01 passes. Sentence-by-sentence requests used the quota quickly; a future run should reduce request count while retaining independent alignment and never replace unchanged takes. Brief 166 also needs the completed measured d01 input. No key was printed or logged and no design or commit was made.
+
+### Brief 165 quota recheck and partial validation (3 November 2026)
+
+Google still returns HTTP 429 for d01 scene 12, reporting the Tier 1 daily limit and about 20 hours 25 minutes until retry. The 11 saved scenes were reused. `work/brief165/partial-validation.json` records checks of each saved alignment's text, ordered timestamps, media bounds and generation metadata. This does not assess spoken-word accuracy or replace listening. Scenes 12 to 16, the complete measured lesson, caption export, and briefs 166 and 161 to 164 remain outstanding.
+
+### Brief 165 additional d01 progress (3 November 2026)
+
+A retry reused scenes 01 to 11 and saved and aligned the first two sentences of scene 12 in the sentence cache. The third request hit HTTP 429 again; Google reported approximately 20 hours 13 minutes until the daily limit resets. The scene 12 take and measured lesson are not yet complete; the cached sentences will be reused on the next retry.
+
+### Brief 165 d01 continuation (3 November 2026)
+
+Scenes 12 and 13 are now generated and aligned; the first sentence of scene 14 is cached. The partial structural and media-bound validation was rerun for all 13 completed scenes. Google returned HTTP 429 on scene 14 sentence 2, with a stated retry estimate of 19 hours 58 minutes. Scenes 14 to 16 and final measured lesson validation remain open; saved takes and cached sentences will be reused.
+
+### Brief 165 partial caption check (3 November 2026)
+
+A retry reused the 13 finished scenes but the next Google request was still rejected with HTTP 429; Google estimated 19 hours 41 minutes until the daily reset. A temporary measured lesson containing just those 13 saved scenes successfully exported 201 caption cues to `work/brief165/partial-captions`. This is a partial check only; the full d01 caption export still needs all 16 scenes.
+
+### Brief 165 speech quota check (4 November 2026)
+
+A retry saved and aligned one more sentence of d01 scene 14 before Google again returned HTTP 429. Google reported the Tier 1 daily limit and estimated 12 hours 20 minutes until retry. The scene remains incomplete; cached sentences and completed takes are preserved.
+
+### Brief 165 request-budget preparation (4 November 2026)
+
+The 4 November update requires one Google request per scene. The current `scripts/generate-google-audio.mjs` still requests one sentence at a time and must be changed before further generation. `work/brief165-pause-test.mjs` tests a simple nearest-silence method on the 13 existing d01 scene takes against their saved alignments: the worst sentence-boundary differences per scene range from 0.32 to 1.83 seconds. Those takes were assembled from sentence recordings, so they are useful a preliminary test but are not proof for whole-scene output. The naive method is not accurate enough to accept without refinement and validation. Scenes 01 to 13 and the first two cached scene 14 sentences remain unchanged. The speech quota has not been spent on these tests.
+
+### Brief 161 work in progress (4 November 2026; not a completed hand-in)
+
+Source learning reviews and independent maths checks for f01 to f11 are saved as `checks/m-a12fNN-learning-review.md` and `checks/m-a12fNN-claude-science-check.md`, with independent calculations in `work/brief161/`. Confirmed site findings are recorded as items 76 to 92 in `site-corrections-maths-a12.md`. f11 has two blockers: the exact repayment total needs a consistent final-payment convention, and its summary incorrectly sets the balance to zero for the intermediate amount-owing calculation. f12 to f15 and g01 to g03 remain to be reviewed; this is not the completed brief 161 hand-in.
+
+## Brief 161 hand-in (4 November 2026)
+
+Learning reviews and maths checks for f01 to f15 and g01 to g03 are under `checks/m-a12fNN-learning-review.md`, `checks/m-a12fNN-claude-science-check.md`, and the corresponding `m-a12gNN` files. Independent SymPy and recurrence evidence is in `work/brief161/`; confirmed site findings are in `site-corrections-maths-a12.md` items 76 to 101. The 2024 syllabus pages were refreshed; the exact 2024 reference-sheet version is still unverified. No design edits, audio, renders or commits. Counts below refer to learning reviews; f13's maths check also reports one author-note correction. Times are design estimates.
+
+**f01:** 0 blockers, 1 should fix; 5,637 joined characters, about 524 s. Use a dummy index that does not also name the upper limit.
+
+**f02:** 0 blockers, 1 should fix; 5,680 characters, about 527 s. Distinguish testing a finite list from proving the difference for an infinite sequence.
+
+**f03:** 0 blockers, 1 should fix; 5,733 characters, about 531 s. Arithmetic sequences guarantee equal end-pairs; they are not the only sequences with that property.
+
+**f04:** 0 blockers, 2 should fix; 5,722 characters, about 530 s. Scope the time-index and growing-percentage claims to the illustrated models.
+
+**f05:** 0 blockers, 3 should fix; 5,972 characters, about 549 s. Scope the negative-start and even-gap cases and state the nonzero-term condition for ratio division.
+
+**f06:** 0 blockers, 1 should fix; 5,648 characters, about 525 s. The numerator's sign also depends on the first term.
+
+**f07:** 0 blockers, 2 should fix; 5,157 characters, about 488 s, accepted by root. Scope the negative-ratio comparison and explain the zero-tail x = 0 case separately.
+
+**f08:** 0 blockers, 2 should fix; 6,124 characters, about 560 s. Keep the bacteria crossing to the first whole hour unless a continuous model is specified; scope the time-zero summary.
+
+**f09:** 0 blockers, 2 should fix; 6,184 characters, about 565 s. State the zero-interest case and scope the loan-curve claim.
+
+**f10:** 0 blockers, 2 should fix; 5,691 characters, about 530 s. The first repayment change is $352.71, not $500; distinguish the smooth term curve from whole-payment counts.
+
+**f11:** 2 blockers, 1 should fix; 6,040 characters, about 555 s. Reconcile the actual final payment with the stated total; do not set an intermediate outstanding balance to zero. Distinguish a zero denominator from a negative ratio.
+
+**f12:** 0 blockers, 2 should fix; 5,584 characters, about 515 s. Specify the nominal-rate conversion and the smaller final withdrawal.
+
+**f13:** 0 blockers, 3 should fix in learning review; 5,609 characters, about 519 s. State the zero-rate case, distinguish exact from rounded balance and scope the memory aid. The maths check also corrects an unrounded author-note value.
+
+**f14:** 0 blockers, 3 should fix; 5,554 characters, about 513 s. Give learners a digital exploration and scope the rate/time and rounding claims.
+
+**f15:** 0 blockers, 2 should fix; 5,539 characters, about 510 s. Scope the final summary to the contribution model and include the zero-rate case.
+
+**g01:** 0 blockers, 2 should fix; 5,697 characters, about 528 s. Name the division by two and scope the one-equation claim to the linear example.
+
+**g02:** 0 blockers, 1 should fix; 5,421 characters, about 515 s, accepted by root. A rate can have an integral even when readings do not determine its exact value.
+
+**g03:** 1 blocker, 2 should fix; 5,832 characters, about 538 s. Separate the unbounded normal model from the bounded uniform givens; explain maximum-loan rounding from the unrounded value and include zero-rate cases.
+
+### Brief 165 handover voicing progress (4 November 2026)
+
+For handover, the remaining four sentences of d01 scene 14 were saved as one Google request in the scene 14 cache, preserving its two earlier aligned sentence takes. Whole-scene Google takes for scenes 15 and 16 were also saved in their respective `work/google-tts-cache/scene-15-*` and `scene-16-*` folders, one request each. These three new takes have not yet been segmented or aligned, and no measured lesson, complete captions, cue-timing check, human listening or render has been produced. The production generator still needs the 4 November request-budget changes before use on additional lessons. No key was printed or logged.

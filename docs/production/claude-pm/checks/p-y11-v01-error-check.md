@@ -1,0 +1,7 @@
+# p-y11-v01 Revision 2 error check
+
+Checked 3 November 2026. Source SHA-256 `ac393a5dee66fdd39d084dc3935b955efb1c3b9257e0c2e4f8cebff9ef0b17cd`. Brief 145 reported no findings for v01 and Revision 2 says no narration changed.
+
+1. **Should fix, shared course decision:** the v01-v12 root decision 2 assigns velocity blue, while the later v13-v24 root decision 1 says velocity teal and attributes that to the earlier decision. Both present themselves as course-wide. Resolve the conflict before normalising the arrows at build time; do not infer which colour overrides the other.
+
+The first lesson opens cold; there is no preceding lesson frame. Its handoff shows the 4 m and 3 m unjoined arrows and the next lesson opens on that frame. The shared notes rule restores it after the notes hold. The chosen quantities, motion examples and significant-figure answers check out. Python results in `work/brief154/v01-calculations.json`: 4-3-5, 36.87 degrees, 14 m distance and 10 m displacement for 6-8, 4.0 km round-trip distance, and 120 km separation of the two cars after an hour. Braking and speeding-up changes are 3 m s⁻¹ per second. Screen units are to be normalised per the root decision. Zero em dashes found. The parser counted 17 scenes, 6,324 joined narration characters; with the design's 94 s of holds, about 569.5 s at 13.3 characters per second. This is at the limit and requires a voiced timing check. No rendered frame or audio was inspected.

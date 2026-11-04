@@ -1,0 +1,31 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "bacterium",
+      "name": "y11-prokaryote-cutaway-v1.png",
+      "path": "public\\assets\\biology\\y11-prokaryote-cutaway-v1.png",
+      "sha256": "83d02756fb2a5625f1279f212625923a1a026e0bfb3e3c57ebb5a984c342e8db",
+      "dimensions": [
+        2400,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "One horizontal rod bacterium cut away along its near half, 2400x1400 landscape. Clearly distinct capsule pale transparent slime halo, firm thicker warm-tan cell wall, thin purple-grey membrane inside wall, cream cytoplasm. Many tiny dark ribosome granules; one fine tangled single DNA loop nucleoid in centre WITHOUT enclosing membrane; exactly two small blue-green separate plasmid rings away from nucleoid. One long helical corkscrew flagellum at right pole with small hook and visible base. About 18 short thin straight pili spread over outside, each less than one tenth cell length and distinctly thinner than flagellum. No nucleus, no other organelles, no internal membranes. Every structure readable at 960px width, whole flagellum inside margin. Reference for line/watercolour finish only. Scientific-educational asset, fine dark ink and layered watercolour matching the reference, transparent PNG true alpha, 10 percent clear margin. Clean neutral antialiased edges, NO fluorescent red magenta yellow fringe, NO glow. No text, letters, numbers, labels, arrows, scale bars, people, hands, faces, brand or backdrop. ",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ]
+    }
+  ],
+  "repairs": [],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

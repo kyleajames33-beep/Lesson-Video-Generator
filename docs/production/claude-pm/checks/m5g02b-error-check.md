@@ -12,3 +12,9 @@ Design SHA256: `7ec49a53ac14ca008fc5675eea1391932538fdbb06cd00ab7ebd1094b1a6abdf
 No em dashes found in the design. The Revision 2 count matches the stated per-scene count. Timing is an estimate; exact voiced playback is still needed.
 
 The rigid vessel, observation-based carbonate stem, catalyst qualification, and rounded table check are present. The q2 initial root is 0.02904798, and doubling all concentrations leaves Q unchanged. The constructed t3 rounded-input equation has root 0.0307642. The carbonate visual keeps both events running at equilibrium.
+
+## Brief 144 confirmation
+
+2 November 2026. Rounded and unrounded t3 routes are now distinguished, and both recalculate correctly: 0.03076420434 and 0.03066824502. Unrounded final concentrations are 0.4887642043, 0.1887642043 and 1.822471591 mol/L. The already-cut q2 colour sentence is removed from the reserve list; speech estimate is updated to 429 s.
+
+**Should fix:** The timing summary still totals these as about 573 s, but its own components are 429 + 36 + 7 + 50 + 55 = 577 s (577.17 using 5708/13.3). Correct the total and corresponding headline; still below the 590 s check threshold. No new speech required. The chemistry and numeric repairs otherwise pass.

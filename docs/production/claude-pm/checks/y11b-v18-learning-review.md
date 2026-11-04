@@ -1,0 +1,14 @@
+# y11b-v18 learning review
+
+Revision 1, 3 November 2026; design SHA256 `37adbc8ce4c2c646c88c93bb34484982338e2dc27c57b76196918104c2d0d479`. Entry from Stage 5 catalysts and v16/v17 reaction chains checked. The opening follows v17's equations, plant cell, cycle and pulsing enzyme dot before the liver example. Substrate and active site get meanings before the activation hill. Both questions hold their demands without answer labels, and v19 receives the active-site-model question. The bottle-opener analogy captures reuse, not a literal identical shape throughout every intermediate state.
+
+1. **Should fix, shared with science:** Scene 7 says heating enough to speed a cell's reactions would make proteins lose their shape. Small temperature increases can accelerate reactions without denaturing all proteins. Say the extreme heating needed to substitute for catalysis would damage the cell; match attempt 2. Replace the existing sentence.
+2. **Should fix, shared with science:** The foaming stopping and restarting with fresh peroxide shows that some catalytic activity remains; it does not alone prove all initial peroxide was used up. State this as the assumed demonstration condition or add a measurement that shows depletion, and align potato feedback. Use a short condition in the card, without showing the answer.
+3. **Should fix, shared with science:** Scene 9 claims altering one enzyme speeds respiration while leaving everything else alone. Metabolic reactions share intermediates and regulation, so changing one enzyme can affect other pathways. Say specificity permits selective regulation, while linked reactions can also change. Replace the absolute phrase.
+4. **Should fix, shared with science:** Scene 6 presents orienting and straining bonds as the mechanism of every enzyme. These are possible mechanisms, not universal steps for all substrates and enzymes. Say "can hold substrates in position or help make bonds easier to change" while retaining the lower activation barrier. Replace the existing clause.
+5. **Should fix, shared with science:** The claimed million-fold comparison between a shelf bottle and liver tube does not specify comparable concentrations, temperature, or measured rates. Either use a verified like-for-like comparison or say "much faster" for this unmeasured visual. Root's rate decision remains a target only if equivalent conditions are evidenced.
+
+
+Root decision 20 accepts the shorter runtime and bottle-opener plates. The graph measures barrier height from the substrate energy level; it does not raise starting energy or change the net reaction energy. Phrases can be replaced within existing scenes and the listed reserve cut is available if speech grows. Review is source-only; no audio or animation was observed.
+
+Count: 0 blockers, 5 should fix, 0 optional; 5,327 separate and 5,342 joined characters, 16 scenes, about 523 s. No design edit, voice or render.

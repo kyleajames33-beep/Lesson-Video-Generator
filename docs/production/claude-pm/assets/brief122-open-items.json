@@ -1,0 +1,164 @@
+{
+  "counts": {
+    "cannot verify": 8,
+    "verified": 21,
+    "corrected": 2
+  },
+  "items": [
+    {
+      "item": "C09 bromomethane MS",
+      "result": "verified",
+      "evidence": "[NIST MS 19630 public digitized plot](https://webbook.nist.gov/cgi/cbook.cgi?Index=0&Large=on&Spec=C74839&Type=Mass), independently inspected in `out/brief122-bromomethane-public-view.png`: approximate plot-read relative heights m/z 15:47%, 94:100%, 96:94%. Thus 15 is substantial enough to name and the molecular-ion pair is approximately equal. A drawing may use these rounded values labelled approximate; exact raw heights and a 70 eV condition were not independently obtained. The [record](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74839&Mask=200) explicitly restricts numerical download; no bypass was attempted. This closes the public-plot source request, not the separate SDBS cross-checks."
+    },
+    {
+      "item": "C09 six SDBS MS cross-checks",
+      "result": "cannot verify",
+      "evidence": "Butanone, butanal, chloromethane, pentan-3-one, pentan-2-one and chloroethane: no inspected SDBS records obtained. The existing NIST data remain separate evidence; this SDBS cross-check request stays open."
+    },
+    {
+      "item": "C09 and C12 common butanone heights",
+      "result": "verified",
+      "evidence": "NIST MS 50206 in `brief120-nist/butanone.jdx` and `brief120-mass-spectra.json`: m/z:intensity = 15:4, 26:1, 27:8, 28:3, 29:17, 39:2, 41:1, 42:3, 43:100, 44:3, 57:8, 71:1, 72:25, 73:1 (% of base, rounded). C09's seven listed peaks match C12, and C12 requires all 14. Use this one list for both drawings. [NIST](https://webbook.nist.gov/cgi/cbook.cgi?ID=C78933&Mask=200)."
+    },
+    {
+      "item": "C10 seven liquid IR traces",
+      "result": "cannot verify",
+      "evidence": "Ethanol, ethanoic acid, propanone, propan-1-amine, propan-1-ol, propan-2-ol and ethyl ethanoate still need inspected liquid-phase curves and drawable band positions/shapes. Ethanol's [SDBS 1300](https://sdbs.db.aist.go.jp/CompoundLanding.aspx?sdbsno=1300) lists liquid-film IR2011-88120TK; propan-1-ol [SDBS 1212](https://sdbs.db.aist.go.jp/CompoundLanding.aspx?sdbsno=1212) lists liquid-film IR-NIDA-59922. These identities do not verify the trace. Hold remains."
+    },
+    {
+      "item": "C11a all carbon shifts",
+      "result": "cannot verify",
+      "evidence": "Propan-1-ol, propan-2-ol, ethanol, butanone, pentan-3-one, ethyl ethanoate, 2-methylpropan-2-ol, methyl ethanoate and propanoic acid: no complete inspected solvent-labelled shift set obtained. Ethanol [NMR-CDS-00-245](https://sdbs.db.aist.go.jp/SpectralLanding.aspx?spcode=NMR-CDS-00-245) is identified, not numerically verified. Environment counts are structurally consistent, but do not certify shifts. Hold remains."
+    },
+    {
+      "item": "C11b all proton shifts, including 2.44 and 1.05",
+      "result": "cannot verify",
+      "evidence": "Ethanol, bromoethane, ethyl ethanoate, methyl propanoate and pentan-3-one still need the actual proton curves. Ethanol [NMR-HSP-01-876](https://sdbs.db.aist.go.jp/SpectralLanding.aspx?spcode=NMR-HSP-01-876) lists CDCl3 and 89.56 MHz (0.04 mL sample in 0.5 mL solvent); no numerical shifts were obtained. Pentan-3-one's printed 2.44/1.05 are not cleared. Hold remains."
+    },
+    {
+      "item": "C12 all NMR and four liquid-film IR records",
+      "result": "cannot verify",
+      "evidence": "NMR: butanone, butanal, 2-methylpropanal, ethanoic acid, methyl methanoate, 2-chloropropane, 1-chloropropane, ethyl propanoate and the A2 rivals pentanoic acid, methyl butanoate and propyl ethanoate. Liquid-film IR: butanone, ethanoic acid, methyl methanoate and ethyl propanoate. Every exact shift, phase-specific band and applicable proton field/solvent remains held; no gas trace substituted."
+    },
+    {
+      "item": "G03 all requested spectra",
+      "result": "cannot verify",
+      "evidence": "The [NIST MS 61712 public plot](https://webbook.nist.gov/cgi/cbook.cgi?Index=0&Large=on&Spec=C563804&Type=Mass), independently inspected, verifies 3-methylbutan-2-one base peak m/z 43 (100%) and molecular ion 86 (approximately 21%, plot-read). These MS facts are verified; no exact raw-height table is claimed. Pentan-3-ol, 2-methylbutan-2-ol and 2,2-dimethylpropanoic acid still need requested NMR and liquid-film IR records. The ketone liquid band near 1715, its own proton/carbon shifts and the pentanoic acid/pentan-2-one rival shifts remain unverified. G03 IR/NMR recording hold remains."
+    },
+    {
+      "item": "P03 0.1 mol/L calcium flame visibility",
+      "result": "verified",
+      "evidence": "The [Western Carolina University Chem 132 procedure, printed p3](https://www2.chem21labs.com/labfiles/westerncarolina_gl132lab03_procedure.pdf) specifies 0.1 M CaCl2, a nichrome wire loop, a thin solution film and brief placement at the top of the blue cone to observe colour. The [RSC procedure](https://edu.rsc.org/experiments/flame-tests-the-wooden-splint-method/759.article) identifies calcium as brick-red. Together these verify documented use of the requested concentration and loop method, not guaranteed visibility on every bench. Use a clean loop and the documented flame conditions; no concentration change is inferred."
+    },
+    {
+      "item": "C04 graphite furnace and 0.005 mg/L lead",
+      "result": "verified",
+      "evidence": "[EPA Method 200.9](https://www.epa.gov/sites/default/files/2015-08/documents/method_200-9_rev_2-2_1994.pdf), sections 2 and 6.1.1 and Tables 2/3: programmed heating of a graphite tube, lead atomisation about 2000 C; typical MDL 0.7 micrograms/L; Table 3 includes a 5.0 micrograms/L fortification with 1.9% RSD. This supports the heated-tube description and measurement at 0.005 mg/L, without confusing detection and quantification limits."
+    },
+    {
+      "item": "Chem G02 lead LOQ 0.001 mg/L",
+      "result": "verified",
+      "evidence": "A primary DPHE laboratory analysis reproduced in the [World Bank PRIDE environmental assessment, Table 4-9](https://documents1.worldbank.org/curated/en/639201582839586063/pdf/Revised-Environmental-and-Social-Impact-Assessment-Bangladesh-Private-Investment-amp-Digital-Entrepreneurship-Project-P170688.pdf) gives lead, AAS, LOQ 0.001 mg/L. This establishes feasibility, not a universal limit for every AAS system. The question correctly provides a validated method-specific limit."
+    },
+    {
+      "item": "Chem G02 NSW school contact",
+      "result": "corrected",
+      "evidence": "For a NSW school, use: \"seek advice from the local public health unit and the school facilities manager, and ask the water supplier to check the incoming supply\". [NSW Health](https://www.health.nsw.gov.au/environment/water/Pages/Drinking-Water-and-Public-Health.aspx) identifies public health units for health advice and suppliers for supply issues. A supplier can advise, but does not own all internal school plumbing. This is the requested contact clarification, not a new calculation error."
+    },
+    {
+      "item": "C06 fisheries first light wording",
+      "result": "verified",
+      "evidence": "[DPI July 2023 submission, printed p4](https://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0013/1606/DPI-Fisheries-Submission-to-Independent-Review-into-Menindee-Fish-Deaths-2023.pdf) says the largest reported events were observed at first light. The new wording attributes the observation to fisheries reports and does not assert a measured all-night series."
+    },
+    {
+      "item": "C08 alkene/dichromate reliance",
+      "result": "verified",
+      "evidence": "No learner conclusion relies on an alkene staying orange. Attempt 1 uses hexane. The reaction paragraph explicitly allows an alkene to turn dichromate green, and feedback 2 conditions alcohol support on bromine staying orange. P05 keeps C out of that demonstration. Source: exact Revision 2 narration, Visual paragraphs, attempts and tables in `../lessons/chem-m8-c08.md` and `chem-m8-p05.md`."
+    },
+    {
+      "item": "B06 tetanus tag",
+      "result": "verified",
+      "evidence": "[CDC tetanus chapter](https://stacks.cdc.gov/view/cdc/252999/cdc_252999_DS1.pdf) describes infectious tetanus acquired through contaminated wounds, with soil as a reservoir and no person-to-person contagion. \"Tetanus comes from soil\" is a fair short counterexample."
+    },
+    {
+      "item": "B06 L06 transmissibility site error",
+      "result": "corrected",
+      "evidence": "Use: \"The dividing criterion is whether a pathogen causes the disease. Many infectious diseases pass between people; tetanus does not.\" Exact standing text rechecked in the read-only L06 HTML. Added to `../site-corrections-m8.md`. [CDC](https://stacks.cdc.gov/view/cdc/252999/cdc_252999_DS1.pdf). Owner cultural finding 5 is unchanged."
+    },
+    {
+      "item": "B07 survey behind 17 July 2026 release",
+      "result": "verified",
+      "evidence": "[AIHW release](https://www.aihw.gov.au/news-media/media-releases/2026/july/daily-smoking-rates-have-fallen-over-the-past-20-years): first results of the 2025 National Drug Strategy Household Survey; more than 17,500 participants aged 14+, June to December 2025; daily smoking 5.6% at 14+. [Ministerial release](https://www.health.gov.au/ministers/the-hon-mark-butler-mp/media/australias-smoking-rates-declining?language=en) gives 5.8% at 18+, so \"about six in a hundred Australian adults\" fits the adult figure."
+    },
+    {
+      "item": "B08 heavy periods and gut bleeding",
+      "result": "verified",
+      "evidence": "[NHLBI iron-deficiency anaemia](https://www.nhlbi.nih.gov/health/anemia/iron-deficiency-anemia) names heavy menstrual periods and gastrointestinal bleeding. Both new examples are supported."
+    },
+    {
+      "item": "B09 melanoma figures",
+      "result": "verified",
+      "evidence": "[Cancer Australia melanoma statistics](https://www.canceraustralia.gov.au/cancer-types/melanoma-skin/melanoma-skin-statistics), updated 18 December 2025 and explicitly sourced to AIHW Cancer Data in Australia 2025, prints 17,443 estimated new cases in 2025: 10,187 males plus 7,256 females. It also gives 94% five-year relative survival for 2017 to 2021. The exact count and rounded 17,400 tag are supported when labelled as the 2025 estimate. Relative survival is not an individual cure chance."
+    },
+    {
+      "item": "B09 exact 17,443 count",
+      "result": "verified",
+      "evidence": "[Cancer Australia melanoma statistics](https://www.canceraustralia.gov.au/cancer-types/melanoma-skin/melanoma-skin-statistics), updated 18 December 2025 and explicitly sourced to AIHW Cancer Data in Australia 2025, prints 17,443 estimated new cases in 2025: 10,187 males plus 7,256 females. It also gives 94% five-year relative survival for 2017 to 2021. The exact count and rounded 17,400 tag are supported when labelled as the 2025 estimate. Relative survival is not an individual cure chance."
+    },
+    {
+      "item": "B10 diabetes prevalence",
+      "result": "verified",
+      "evidence": "[AIHW Australia's health 2024](https://healthcarefunding.specialcommission.nsw.gov.au/assets/Uploads/publications/Exhibit-M/Exhibit-M_TAB_M.015_SCI.0011.0498.0001.pdf) gives diagnosed diabetes prevalence 5.1% in 2021, all types excluding gestational. Keep that year and definition if quoting it. The 5.5% city example is explicitly teaching data; it is not a national estimate."
+    },
+    {
+      "item": "B10 cancer incidence by age",
+      "result": "verified",
+      "evidence": "[AIHW cancer overview](https://www.aihw.gov.au/reports/australias-health/cancer) supports higher incidence at older ages. The Revision 2 grey tag and rising age-band shape print no age-specific numbers. No invented precise bar heights were approved."
+    },
+    {
+      "item": "B11 1922/1947 death counts",
+      "result": "verified",
+      "evidence": "[Doll and Hill 1950 opening paragraph](https://csts.ua.edu/files/2019/01/1950-09-30-BMJ-Smoking-Carcinoma-of-the-Lung-Doll-Hill.pdf) gives England and Wales 612 and 9,287; 9287/612 = 15.1748. \"About fifteen times\" is correct."
+    },
+    {
+      "item": "B11 male peak years",
+      "result": "cannot verify",
+      "evidence": "A single claimed 1980 to 1982 peak for both incidence and mortality is not established. [Cancer Australia mortality](https://ncci.canceraustralia.gov.au/node/559) identifies male mortality 1981. [AIHW incidence Table D3.2](https://www.aihw.gov.au/getmedia/60a20708-55e4-4dc0-a9c4-d5430c096b6c/12466.pdf?inline=true) starts in 1982 and shows 85.1 in 1982 and 85.3 in 1984 on the 2001 standard. The spoken overall decline since the early 1980s is supported; do not invent one exact shared peak year."
+    },
+    {
+      "item": "B11 1950 heavy-smoking chart",
+      "result": "verified",
+      "evidence": "[Doll and Hill 1950 Table V](https://www.bmj.com/content/bmj/2/4682/739.full.pdf): male smokers consuming at least 25 cigarette-equivalents/day, most recent amount before illness: cases 136 + 32 = 168/647 (26.0%); controls 71 + 13 = 84/622 (13.5%). Draw two bars labelled \"male smokers, 25+ cigarette-equivalents/day\". If using all 649 male patients per group, recalculate to 25.9% and 12.9% and change the denominator label."
+    },
+    {
+      "item": "B12 five-year 11 of 85",
+      "result": "verified",
+      "evidence": "[Lean et al. 2024](https://doi.org/10.1016/S2213-8587%2823%2900385-6): 11/85 (13%) of extension participants with data were in remission at five years. \"Followed with continued support\" is appropriate. It is not 13% of every originally randomised participant."
+    },
+    {
+      "item": "B12 two-year 36% bar",
+      "result": "verified",
+      "evidence": "[Lean et al. 2019 primary report](https://eprints.gla.ac.uk/180894/) gives 53/149 (36%) in the original intervention group at two years. Keep the different denominator from the five-year extension explicit on the chart, as Revision 2 does."
+    },
+    {
+      "item": "B13 national young-adult trend",
+      "result": "verified",
+      "evidence": "[Cancer Australia, AIHW-based incidence series](https://ncci.canceraustralia.gov.au/diagnosis/cancer-incidence/cancer-incidence): age 20 to 29 fell from 16.8/100,000 in 1999 to 7.6 projected in 2024. This supports \"young adults ... since the late 1990s\". It does not establish that date for a pooled 0 to 39 group; the newer AIHW commentary uses 2005 for that pooled group."
+    },
+    {
+      "item": "B13 personal UV meters",
+      "result": "verified",
+      "evidence": "[Vanos et al. 2017](https://onlinelibrary.wiley.com/doi/10.1111/php.12721) used personal wrist dosimeters in a schoolyard shade comparison. A wearable UV measurement is a fair method to name in a teaching case. The card's 40% is teaching data, not this paper's result."
+    },
+    {
+      "item": "B14 one-in-twenty carrier source",
+      "result": "verified",
+      "evidence": "[Archibald et al., original 12,000-test study](https://www.geneticclinic.com.au/wp-content/uploads/2017-prepair-Genet-Med-1.pdf), abstract: 610/12000 = 5.08%, 342 CF, 35 fragile X, 241 SMA, with eight carrying two conditions. This is the three-condition program, not Mackenzie's Mission. The already logged Mackenzie correction stands; no duplicate entry added."
+    },
+    {
+      "item": "B14 exact NSW newborn panel total",
+      "result": "cannot verify",
+      "evidence": "The [October 2026 NSW brochure](https://www.health.nsw.gov.au/kidsfamilies/MCFhealth/Publications/new-born-bloodspot.pdf) verifies offer to every baby, consent and 48 to 72 hours, but gives examples rather than an exact total. The [national state-by-state panel](https://www.health.gov.au/our-work/newborn-bloodspot-screening/what-is-screened) distinguishes implemented, pending and non-target conditions. No exact count is certified here. Keep the exact-count request open; do not infer a total by mixing those categories."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "brief": 146,
+  "video": "v11",
+  "assets": [
+    {
+      "file": "public/assets/physics/y11p-boat-top-red-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "fafe33e26978ca2c000629a2c89ee90a96cbde800218fc79e26e9eafebd671dc",
+      "sourceCandidate": "work/brief146/candidates/boats.png",
+      "prompt": "overhead red open motorboat, pale deck, stern outboard, no people or water; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-boat-top-white-v1.png",
+      "size": [
+        1000,
+        2000
+      ],
+      "sha256": "2c9bd5da7b94805ee86d3934c1cd6716e58133c2c1418c7942f58778229adf3a",
+      "sourceCandidate": "work/brief146/candidates/boatwhite.png",
+      "prompt": "edit red open boat to white hull and blue stripe, retain shape and motor; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        197,
+        180,
+        802,
+        1820
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "overhead quadcopter X arms, translucent rotor discs, grey-white body, blue accent and amber front marker, parcel outline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    },
+    {
+      "file": "public/assets/physics/y11p-sledge-v1.png",
+      "size": [
+        2000,
+        1000
+      ],
+      "sha256": "8e7d3426fb5e12032b396677c27b234a36c4c348d8fd1af8a565e192f3baea25",
+      "sourceCandidate": "work/brief146/candidates/sledge.png",
+      "prompt": "side-on empty wooden sledge with metal runners, tow eye and no rope; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        180,
+        298,
+        1820,
+        701
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

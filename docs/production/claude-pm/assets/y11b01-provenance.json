@@ -1,0 +1,46 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "cheek-bacteria",
+      "name": "y11-cheek-cell-bacteria-v1.png",
+      "path": "public\\assets\\biology\\y11-cheek-cell-bacteria-v1.png",
+      "sha256": "d440fec769b8365a2f6e9a2f8867a755eb8887e5d4b8f0e1773cb7b1cdff3b0f",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Assembled three painted cheek-cell cutouts and exactly ten darker bacterial specks. Approximate cheek width550px; rod length13.4px, ratio1:41; cocci10px, within intended1-2 µm scale.",
+      "sourceCandidate": null,
+      "prompt": "Generate two or three blue-stained cheek epithelial cells in a circular field, with 8 to 12 oral bacteria at about one fortieth of cell width; fine ink and watercolour, 2000 square, real transparency, no labels or people.",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/y11-cheek-cells-field-v1.png"
+      ]
+    }
+  ],
+  "repairs": [
+    {
+      "file": "public\\assets\\biology\\y11-microscopy-pair-v1.png",
+      "beforeSha256": "3a4c059c1ca79d4b0c7a1c2886e82992ce4ed123a0601f09cb4da15da7a20f3e",
+      "afterSha256": "a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56",
+      "dimensions": [
+        1754,
+        896
+      ],
+      "changedAlphaPixels": 786,
+      "rgbPixelsUnchanged": true,
+      "interiorRGBAUnchanged": true,
+      "geometryUnchanged": true,
+      "method": "Only saturated edge-matte alpha set to zero within five pixels of the original transparency boundary."
+    }
+  ],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

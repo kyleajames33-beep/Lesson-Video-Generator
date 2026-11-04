@@ -1,0 +1,11 @@
+# m-a12f11 learning review
+
+Revision 1, checked 4 November 2026. Source SHA-256 `d4688f00a8418b4ff46951e1acac05519a83527fc196b78c33b83962121bdd8d`. Source-only review; no audio or motion checked.
+
+The learner asks how to find a repayment, a balance, a term and the total paid. The zero balance at payoff gives a reason to rearrange the earlier balance equation. The numerical loan makes the equal-payment calculation concrete, and the separate term example compares the 59th balance with a smaller final 60th payment. Both attempt cards give the givens and demand without revealing the working.
+
+1. **Blocker:** Scene 5 calls 240 × $1,791.08 the total paid on the loan, but that rounded repayment clears this model about $1.09 early at the final period. A final payment of about $1,789.99 yields a total about $429,858.11 and interest about $179,858.11, assuming full precision through the recurrence and cent rounding of the final payment. The current statement conflicts with scene 8's actual-final-payment method. Use the smaller final payment and revised total, or explicitly label the existing product as a full-payment approximation and stop calling it the exact total. Replace the repeated percentage sentence to fund the explanation.
+2. **Blocker:** Scenes 9 and 14 say setting the balance to zero answers all four calculations. For the amount still owing after 120 repayments, A₁₂₀ is the unknown and is not zero. Say “use the balance equation; set it to zero when the loan is paid off”, replacing the existing memory and handoff lines. This preserves the distinction students must choose in practice.
+3. **Should fix:** Scene 7 says that otherwise the right side is negative when M is not greater than Pr. At equality M = Pr the denominator is zero; below it the ratio is negative. Say “at equality the denominator is zero; below it the ratio is negative”, replacing the existing last sentence.
+
+The f10 $250,000 loan and M question match the opening; the f12 $200 end-of-month deposit timeline matches the handoff. No f11 pack or approved route entry was found; propose its draft to root with the one action and stated boundaries. M follows root decision 49. Count: 2 blockers, 1 should fix, 0 optional; 6,026 separate and 6,040 joined narration characters, about 555 s. Timing and final-cent convention require build review.

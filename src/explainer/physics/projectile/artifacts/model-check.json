@@ -1,0 +1,61 @@
+{
+  "model": {
+    "vx0": 16,
+    "vy0": 12,
+    "g": 10
+  },
+  "units": {
+    "t": "s",
+    "x": "m",
+    "y": "m",
+    "vx": "m/s",
+    "vy": "m/s",
+    "g": "m/s²"
+  },
+  "samples": [
+    {
+      "t": 0,
+      "x": 0,
+      "y": 0,
+      "vx": 16,
+      "vy": 12
+    },
+    {
+      "t": 0.6,
+      "x": 9.6,
+      "y": 5.3999999999999995,
+      "vx": 16,
+      "vy": 6
+    },
+    {
+      "t": 1.2,
+      "x": 19.2,
+      "y": 7.199999999999999,
+      "vx": 16,
+      "vy": 0
+    },
+    {
+      "t": 1.8,
+      "x": 28.8,
+      "y": 5.400000000000002,
+      "vx": 16,
+      "vy": -6
+    },
+    {
+      "t": 2.4,
+      "x": 38.4,
+      "y": 0,
+      "vx": 16,
+      "vy": -12
+    }
+  ],
+  "checks": [
+    "2.4 s flight",
+    "7.2 m peak at 1.2 s",
+    "38.4 m range",
+    "velocity agrees with position derivatives at 239 interior times",
+    "height is symmetric",
+    "unsupported inputs rejected"
+  ],
+  "playbackApproval": "pending: no browser surface is available in this session"
+}

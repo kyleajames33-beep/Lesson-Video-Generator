@@ -663,3 +663,191 @@ Evidence: unchanged source task and both-branch SymPy checks in `work/brief151/i
 **Exact heading and task:** "PROBLEM 2 · EXPONENTIAL + LOG" followed by $integral from 0 to 2 of (e^x + x) dx$.
 
 **Correction:** This is exponential plus linear, not a logarithmic integrand. Keep the unchanged integral and result e² + 1; change only the heading.
+
+
+## 66. Trig lesson01: horizontal transformation order (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson01.sa.html`, card 04.
+
+**Exact old text:** “Order of operations: first apply the horizontal dilation and phase shift inside the function, then the vertical dilation outside, then the vertical translation.”
+
+**Correction:** Specify the order and size: factor b first, dilate horizontally by 1/|b| (and reflect when b is negative), then translate by -c/b; perform the vertical operations as stated. The amount of translation depends on the order.
+
+## 67. Trig lesson01: unsupported exam frequency and marking claims (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson01.sa.html`, cards 05, 06 and 07.
+
+**Exact old text:** “Amplitude and period are the two most commonly tested features of a transformed trig graph.” “These two formulas are the most frequently examined.” “Many students get this backwards.” “Missing labels cost marks even when the shape is correct.”
+
+**Correction:** Describe amplitude and period as useful features, say the shift direction is easy to reverse, and advise labelling features clearly. Remove unsupported claims about assessment frequency, student prevalence and universal marking consequences.
+
+
+## 68. Trig lesson01 Problem 3: open-interval count (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson01.sa.html`, worked Problem 3.
+
+**Exact old text:** “over an interval of exactly one period, $\cos u = \sqrt{2}/2$ is met twice in the OPEN interval”.
+
+**Correction:** The open interval (-π/4, 7π/4) contains only u = π/4; the other two solutions are its excluded endpoints. A half-open interval one period long contains two, and adding the second endpoint produces three distinct x values in the stated closed domain. The site's final answers remain correct.
+
+Evidence: `work/brief153/t02-calculations.py`.
+
+
+## 69. Trig lesson02: amplitude coefficient sign (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson02.sa.html`, key terms.
+
+**Exact old text:** “Amplitude ($a$) Half the distance between the maximum and minimum values: $a = (max - min)/2$. Always positive in context.”
+
+**Correction:** Write amplitude |a| = (max - min)/2. The coefficient a can be negative, as in the site's own bottom-start wheel model; nonzero amplitude is positive.
+
+## 70. Trig lesson01: Ferris wheel missing starting position (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson01.sa.html`, hook and Revisit.
+
+**Exact old text:** “A Ferris wheel with radius 15 m has its centre 20 m above the ground. It completes one full rotation every 40 seconds. Which function models the height of a passenger above the ground?” The revisit gives a model assuming a bottom start and says “the $-\pi/2$ shifts the curve right so it starts at a trough”.
+
+**Correction:** State the passenger starts at the lowest point when t = 0; otherwise phase is undetermined. In the revisit explain the horizontal shift is 10 seconds, while -π/2 is the phase angle.
+
+
+## 71. Trig lesson02: unqualified logarithmic step (brief 153)
+
+**Source:** `further-graph-transformations-and-modelling/lesson02.sa.html`, card 02.
+
+**Exact old text:** “A difference of 3 on a log scale means a ratio of 10³ = 1000, not a difference of 3.”
+
+**Correction:** Specify the coefficient and direction of the scale. A three-unit difference corresponds to a factor of 1000 for a unit-coefficient base-10 logarithm, approximately 2 for +3 dB, and approximately 15.85 for three stellar magnitude units, with direction reversed for negative coefficients.
+
+## 72. Integral lesson03: elevation samples and vertical gain (brief 155)
+
+**Source:** `integral-calculus/lesson03.sa.html`, hook.
+
+**Exact old text:** “A GPS records your elevation every 500 m along a hiking trail. You want the total vertical gain but you only have sampled values, not a formula. The trapezoidal rule turns these measurements into a reliable area estimate.”
+
+**Correction:** Trapezia on elevation against horizontal distance estimate an area with square-metre units, not vertical gain. Use a suitable rate of elevation change to estimate net vertical change, or sum positive rises for sampled total gain.
+
+## 73. Integral lesson08: FTC evaluation and inverse wording (brief 155)
+
+**Source:** `integral-calculus/lesson08.sa.html`, card 06 introduction and big-idea card.
+
+**Exact old text:** “differentiating the antiderivative and substituting limits evaluates any definite integral” and “One undoes the other, just like addition and subtraction.”
+
+**Correction:** For the stated theorem, find a primitive and subtract its values at the limits for a continuous integrand. When describing indefinite integration as reversing differentiation, retain the arbitrary constant; the site's key-terms definition already says “up to +C”.
+
+### 74. Integral lesson 3: concavity needs the whole interval
+
+**Location:** `integral-calculus/lesson03.sa.html`, two-moves card, key terms and Q3 answer. **Exact old text:** “Concave up → overestimate. Concave down → underestimate.” Q3 says “the curve is predominantly concave up”.
+
+**Correction:** State that the curve must be concave in the relevant direction throughout the interval; a change of concavity does not determine the error direction from that rule alone. In Q3 f″(x)=6x is positive throughout (0,2), so say concave up throughout, not predominantly. The estimate −1 and exact value −2 are correct. Confirmed brief 155, 3 November 2026.
+
+### 75. Applications lesson 3: distance can be zero; drift needs a stated error model
+
+**Location:** `applications-of-calculus/lesson03.sa.html`, kinematics card and short-answer Q3(b). **Exact old text:** “Distance = ∫|v| dt (always positive)” and “Errors accumulate quadratically (drift)”.
+
+**Correction:** Distance is non-negative and can be zero when velocity is zero throughout. A constant acceleration bias b yields position error bt²/2 (for zero initial error), but arbitrary errors do not necessarily accumulate quadratically. Specify this error model. Confirmed brief 155, 3 November 2026.
+
+**Source verification:** The hook and concept card assert a 60 Hz comparison and identical guidance systems at two named companies without a source. Verify those specifics independently or remove them; lack of a citation alone does not establish that the claims are false.
+
+### 76. Sequences lesson 2: worked identification does not answer its question
+
+**Location:** `sequences-and-series/lesson02.sa.html`, card 05, “Example, identify each type”. The prompt asks which sequence has T₅ = 32, then works out that sequence B has T₅ = 16 and T₆ = 32 without answering the original question. The displayed finite sequence A has T₅ = 25 and C has T₅ = −7, so none has T₅ = 32. Either answer “none” or ask which term of B is 32 and answer T₆. Confirmed by brief 161, 4 November 2026.
+
+### 77. Sequences lesson 2: reason for first-term check
+
+**Location:** `sequences-and-series/lesson02.sa.html`, card 02 tip. It says the first term must be checked separately “since S_0 may be undefined or zero”. When S₀ is defined as zero, S₁ − S₀ = S₁ is valid; zero is not a reason the subtraction fails. State that S₁ is the first term directly and apply the subtraction when the previous partial sum is defined. Confirmed by brief 161, 4 November 2026.
+
+### 78. Sequences lesson 3: next-lesson number
+
+**Location:** `sequences-and-series/lesson03.sa.html`, footer. The link to `lesson04.sa.html` reads “Lesson 3 · Geometric Sequences, Series and Limiting Sums”. Its destination is lesson 4; correct the displayed number. Confirmed by brief 161, 4 November 2026.
+
+### 79. Sequences lesson 3: equality changed to a threshold
+
+**Location:** `sequences-and-series/lesson03.sa.html`, card 08 Type A. The prompt asks for Sₙ = 200 when Sₙ = 3n² + 2n, but rounds the noninteger solution up to 8 and answers the different question Sₙ ≥ 200. S₇ = 161 and S₈ = 208. Ask for the least n reaching 200, or answer that the equality has no whole-number solution. Confirmed by brief 161, 4 November 2026.
+
+### 80. Sequences lesson 3: working contains a visible self-correction
+
+**Location:** `sequences-and-series/lesson03.sa.html`, worked problem 2(b), explanation. The problem asks for Sₙ = 322 and the displayed answer correctly establishes that no integer n works, but the explanation repeats “re-check” and trial calculations as learner copy. Replace that drafting trail with one concise statement that 319 < 322 < 378 for consecutive partial sums S₁₁ and S₁₂. Confirmed by brief 161, 4 November 2026.
+
+### 81. Sequences lesson 3: quadratic boundary rounded incorrectly
+
+**Location:** `sequences-and-series/lesson03.sa.html`, card 08 Type C. (−3 + √40009)/10 is approximately 19.70, not 19.8. The resulting least integer 20 is unchanged. Confirmed by brief 161, 4 November 2026.
+
+### 82. Sequences lesson 3: unknown-count shortcut overstates sufficiency
+
+**Location:** `sequences-and-series/lesson03.sa.html`, card 08 strategy. The heading says “3-unknown rule”, then lists five quantities and claims that two pieces of information give two equations to solve. Two equations do not generally determine all five quantities without additional given values or relationships. Name the quantities, identify the knowns, and count independent equations for the actual unknowns. Confirmed by brief 161, 4 November 2026.
+
+### 83. Sequences lesson 4: threshold rounded before solving
+
+**Location:** `sequences-and-series/lesson04.sa.html`, card 06 example 1 and worked problem 1(c). The work replaces 1000/3 by 333.3 inside a strict inequality and takes the logarithm of that rounded value. Keep 1000/3 exact through the inequality and put 333.3 only in an approximate calculator readout. The stated first term above 1000 is still term 10. Confirmed by brief 161, 4 November 2026.
+
+### 84. Sequences lesson 4: geometric-sum sign range
+
+**Location:** `sequences-and-series/lesson04.sa.html`, card 02 tip and card 07 choice of form. The claim that 1 − rⁿ is positive whenever r < 1 fails, for example at r = −2 and n = 2. The factor is positive for −1 < r < 1, while r < −1 needs sign care. Also distinguish the bracketed factor from the complete numerator, whose sign depends on a. Confirmed by brief 161, 4 November 2026.
+
+### 85. Sequences lesson 4: syllabus proof quotation
+
+**Location:** `sequences-and-series/lesson04.sa.html`, card 07 “NESA proof requirement”. The displayed wording is presented as a syllabus quotation, but differs from the official 2024 action. Quote the official expansion identity with x and n ≥ 1 and show the product expansion, explaining its connection to the multiply-and-subtract derivation already on the page. Confirmed by brief 161, 4 November 2026.
+
+### 86. Financial mathematics lesson 12: third loan balance
+
+**Location:** `financial-mathematics/lesson12.sa.html`, worked problem 1, step 3. With the displayed second balance and full precision, 29157.48 × 1.006 − 600 = 28732.42488, which rounds to $28,732.42, not $28,732.43. Confirmed by brief 161, 4 November 2026.
+
+### 87. Financial mathematics lesson 12: early interest split
+
+**Location:** `financial-mathematics/lesson12.sa.html`, card 05 key statement and copy cue. The assertion that early repayments are mostly interest is true for the featured loan but not for every amortising loan; for example, a large repayment can cover much more principal than interest from the start. Scope the claim to the illustrated loan or give the repayment and interest conditions. Confirmed by brief 161, 4 November 2026.
+
+### 88. Financial mathematics lesson 14: term estimate
+
+**Location:** `financial-mathematics/lesson14.sa.html`, card 04 worked problem 1. The stated formula gives approximately 261.42 months rather than 261.5 months. The rounded 21.8 years is unchanged. Confirmed by brief 161, 4 November 2026.
+
+### 89. Financial mathematics lesson 14: stated 30-year repayment
+
+**Location:** `financial-mathematics/lesson14.sa.html`, short-answer Q1. For $300,000 at 5.4% compounded monthly over 360 periods, the usual end-of-month repayment is about $1,684.59, rather than $1,687. Either correct the stated minimum or present $1,687 as an independently chosen payment without claiming it is the exact 30-year payment. Confirmed by brief 161, 4 November 2026.
+
+### 90. Financial mathematics lesson 14: interest-saved shortcut
+
+**Location:** `financial-mathematics/lesson14.sa.html`, card 04. The displayed repayment-times-term shortcut needs the actual total payments. When the last payment is smaller or the term is shown as a rounded number of years, multiplying the regular payment by the displayed count can misstate the interest saved. Sum the actual repayments and subtract the original principal for each loan. Confirmed by brief 161, 4 November 2026.
+
+### 91. Financial mathematics lesson 13: logarithm and term estimate
+
+**Location:** `financial-mathematics/lesson13.sa.html`, card 05 example. ln(1.006) is approximately 0.0059821, not 0.005978; the displayed term is about 59.62 months rather than 59.7. The conclusion that 60 repayments are needed remains correct. Confirmed by brief 161, 4 November 2026.
+
+### 92. Financial mathematics lesson 13: full-payment total and final payment
+
+**Location:** `financial-mathematics/lesson13.sa.html`, worked problem 3. Multiplying the rounded regular payment by all 240 periods treats the final payment as full even though a smaller final payment clears this model. State that the full-payment product is an estimate, or compute the actual last payment and total using a clearly stated rounding convention. If showing a dollar-rounded result, label the rounding. Confirmed by brief 161, 4 November 2026.
+
+### 93. Financial mathematics lessons 6 and 7: annuity-due links
+
+**Location:** `financial-mathematics/lesson06.sa.html`, card 02 tip, and `financial-mathematics/lesson07.sa.html`, footer. Both refer to annuities due as lesson 9, but the footer links to lesson 8. Correct the displayed lesson numbers. Confirmed by brief 161, 4 November 2026.
+
+### 94. Financial mathematics lesson 7: rounded final withdrawal
+
+**Location:** `financial-mathematics/lesson07.sa.html`, problem 3. The statement that 120 withdrawals of $1,050.91 leave exactly zero ignores rounding of the regular withdrawal. With full precision between periods, a smaller last withdrawal of about $1,050.33 clears the fund; 120 full rounded withdrawals produce approximately −$0.58. State the rounding convention and the last withdrawal. Confirmed by brief 161, 4 November 2026.
+
+### 95. Financial mathematics lesson 6: superannuation guarantee rate
+
+**Location:** `financial-mathematics/lesson06.sa.html`, card 02. The employer superannuation guarantee is stated as 11.5% without a date. The [Australian Taxation Office](https://www.ato.gov.au/api/public/content/0-1cca4d23-4e4a-4642-96f8-eb229b882fb3) states 12% from 1 July 2025 for eligible employees' ordinary time earnings. Update the rate and the example's assumptions and numbers, or present $9,200 as hypothetical given data without calling it the current guarantee. Confirmed by brief 161, 4 November 2026.
+
+### 96. Financial mathematics lesson 6: loan cash-flow viewpoint
+
+**Location:** `financial-mathematics/lesson06.sa.html`, examples listing mortgage and car-loan repayments as annuities. Clarify the lender's cash-flow perspective when linking a loan repayment stream to an investment annuity, rather than implying a borrower's loan is their investment account. Confirmed by brief 161, 4 November 2026.
+
+### 97. Financial mathematics lesson 18: term estimate
+
+**Location:** `financial-mathematics/lesson18.sa.html`, problem 3. The stated 59.7 months should be about 59.62 months for the displayed inputs. The rounded conclusion of 60 monthly repayments remains correct. Confirmed by brief 161, 4 November 2026.
+
+### 98. Financial mathematics lesson 18: present-value drill
+
+**Location:** `financial-mathematics/lesson18.sa.html`, drill 1. The exact displayed expression with $500, 0.005 and 120 periods is approximately $45,036.73, not $45,035. The factor 90.07 is an intermediate rounding, and multiplying that rounded figure does not verify the exact calculator output. Keep the full factor until the final rounding. Confirmed by brief 161, 4 November 2026.
+
+### 99. Financial mathematics lesson 6: fortnightly annuity rounding
+
+**Location:** `financial-mathematics/lesson06.sa.html`, worked problem 2. The page displays 0.064/26 = 0.002462 as an equality and then substitutes that rounded rate while reporting the full-precision result. Keep 0.064/26 in the working, mark 0.002462 as approximate, and round the resulting $720,885.32 only at the end. The explanatory text also says interest is $425K although its calculation gives about $428K; correct that rounded description. Confirmed by brief 161, 4 November 2026.
+
+### 100. Financial mathematics lesson 6: target deposit rounding
+
+**Location:** `financial-mathematics/lesson06.sa.html`, short-answer Q2. The shown $597.30 is correct to the nearest cent, but it falls approximately $3.17 short of the $600,000 target under the stated model. If the question requires at least the target in whole cents, specify rounding up to $597.31; otherwise label $597.30 as nearest-cent rounding. Keep the annuity factor unrounded in the calculation. Confirmed by brief 161, 4 November 2026.
+
+### 101. Financial mathematics lesson 13: maximum borrowing rounding
+
+**Location:** `financial-mathematics/lesson13.sa.html`, worked problem 2. The unrounded maximum principal is $488,658.786235..., so the displayed approximately $488,659 is a nearest-dollar estimate and exceeds the mathematical budget by about 21 cents. If the answer is intended as an achievable maximum, state the rounding convention and round down to $488,658.78 in whole cents, or $488,658 in whole dollars. Confirmed by brief 161, 4 November 2026.

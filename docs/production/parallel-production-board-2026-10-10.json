@@ -1,4 +1,857 @@
 {
+  "brief115Oct30": {
+    "owner": "/root",
+    "status": "handed-in-reviews-three-plates-and-verified-media-archive",
+    "ownership": {
+      "learningReview": "/root/brief113",
+      "scienceAndSiteReview": "/root/brief114_reviews",
+      "currentCourtStatusResearch": "/root/brief112",
+      "artworkAndIntegration": "/root"
+    },
+    "design": "docs/production/claude-pm/lessons/bio-m6-b20.md",
+    "outputs": [
+      "docs/production/claude-pm/checks/m6b20-learning-review.md",
+      "docs/production/claude-pm/checks/m6b20-claude-science-check.md",
+      "docs/production/claude-pm/checks/brief115-site-additions.md",
+      "docs/production/claude-pm/assets/brief115-provenance.json",
+      "docs/production/claude-pm/assets/brief115-media-checkpoint.json"
+    ],
+    "results": {
+      "uniqueBlockers": 2,
+      "uniqueShouldFix": 12,
+      "newPlatesDelivered": 3,
+      "newSiteCorrectionPassages": 6,
+      "exactSiteQuotationsVerified": 7,
+      "archiveMembersRestoredAndVerified": 48,
+      "designUnchanged": true
+    },
+    "restrictions": "No design edits, speech, renders, published edits, uploads or commits.",
+    "unresolvedGates": [
+      "Independent findings require Claude resolution and a combined narration recount",
+      "Owner art acceptance and exact voiced review",
+      "Reused rice and cotton edge cleanup remains outside this brief",
+      "Current PhilRice FAQ reports a hold; complete October 2026 court docket, current executed licence, global patent status and exact 2026 Bt share were not certified"
+    ]
+  },
+  "briefs112To114Oct30": {
+    "owner": "/root",
+    "status": "handed-in-with-p02-plates-and-school-permission-holds",
+    "ownership": {
+      "brief112Verification": "/root/brief112",
+      "brief113Audit": "/root/brief113",
+      "brief114Reviews": "/root/brief114_reviews",
+      "chemistryPlatesAndIntegration": "/root",
+      "waterPlantsPlates": "/root/brief112",
+      "glucosePlates": "/root/brief113"
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-check-112.md",
+      "docs/production/claude-pm/checks/coverage-audit-2026-10-30.md",
+      "docs/production/claude-pm/checks/coverage-audit-2026-10-30.json",
+      "docs/production/claude-pm/checks/brief114-site-additions.md",
+      "docs/production/claude-pm/assets/brief114-provenance.json",
+      "docs/production/claude-pm/assets/brief114-media-checkpoint.json"
+    ],
+    "results": {
+      "brief112DesignErrors": 8,
+      "brief114UniqueBlockers": 3,
+      "brief114UniqueShouldFix": 21,
+      "blockersIncludeOneUnresolvedSchoolPermissionCheck": true,
+      "newPlatesDelivered": 29,
+      "newP02PlatesHeld": 3,
+      "flameCopiesTranslated": 5,
+      "nephronAlphaRepair": 1,
+      "siteErrorsAdded": 12,
+      "archiveMembersRestoredAndVerified": 323
+    },
+    "unresolvedGates": [
+      "Brief112 staff-only culture permissions and potassium dichromate Appendix D unread",
+      "P02 plates require passed learning/science reviews under its asset brief",
+      "Independent brief114 findings need Claude resolution",
+      "New art requires owner acceptance"
+    ],
+    "restrictions": "No design edits, speech, renders, uploads or commits."
+  },
+  "physicsMathsImageBankOct25": {
+    "owner": "/root",
+    "status": "130-lesson-image-brief-and-queue-complete-independent-planning-review-no-blockers",
+    "scope": "70 Year 12 Physics lessons, 59 Year 12 Maths Advanced lessons and one Year 11 calculus bridge. Other courses and GCSE excluded from this pass.",
+    "ownership": {
+      "physicsPlan": "/root/closure_audit",
+      "mathsPlan": "/root/learning_review_b11",
+      "inventoryMergeValidationAndReuse": "/root",
+      "independentReview": "/root/assessment_readiness"
+    },
+    "handoff": "docs/production/claude-pm/assets/physics-maths-image-bank/README.md",
+    "queue": "docs/production/claude-pm/assets/physics-maths-image-bank/generation-queue.json",
+    "independentReviewEvidence": "docs/production/claude-pm/checks/codex-interim-image-bank-review.md",
+    "counts": {
+      "lessonRows": 130,
+      "codedOnlyLessons": 103,
+      "rasterOrReuseLessonRows": 27,
+      "assetFamilies": 18,
+      "plannedViewsOrStatesIncludingReuse": 26,
+      "baseDependentEdits": 1,
+      "referenceHeldFamilies": 13,
+      "reuseHeldFamilies": 2,
+      "sceneSelectionHeldFamilies": 2,
+      "promptReadyCandidateFamilies": 1
+    },
+    "evidence": [
+      "docs/production/claude-pm/assets/physics-maths-image-bank/source-inventory.json",
+      "docs/production/claude-pm/assets/physics-maths-image-bank/existing-raster-inventory.json",
+      "docs/production/claude-pm/assets/physics-maths-image-bank/brief-contract.md",
+      "docs/production/claude-pm/assets/physics-maths-image-bank/reuse-review.md",
+      "scripts/build-image-bank-inventory.mjs",
+      "scripts/check-image-bank-plan.mjs"
+    ],
+    "rawRasterFilesInventoried": 793,
+    "existingAppearanceChecks": 4,
+    "generationCallsMade": 7,
+    "firstRasterBatch": {
+      "family": "ph-eddy-tube",
+      "owner": "/root",
+      "reviewer": "/root/assessment_readiness",
+      "status": "white-background-shape-candidates-created-cleanup-method-choice-and-transition-review-pending",
+      "provenance": "docs/production/claude-pm/assets/physics-maths-image-bank/eddy-tube-first-batch.json",
+      "review": "docs/production/claude-pm/checks/physics-eddy-tube-first-asset-review.md",
+      "candidatePaths": [
+        "out/checks/physics-eddy-tube-2026-10-25/raw/04-intact-white-base.png",
+        "out/checks/physics-eddy-tube-2026-10-25/raw/07-slotted-white-corrected.png"
+      ],
+      "limits": [
+        "Native 1024 by 1536 RGB candidates have white backgrounds",
+        "Transparent attempts retain outside halos; user method choice requested before deterministic alpha cleanup",
+        "Slot and rim shapes pass a bounded independent review, but global texture changes prevent unchanged-pixel or seamless-transition approval",
+        "No final public asset or selected scene input changed"
+      ]
+    },
+    "unresolvedGates": [
+      "Select exact scenes and required apparatus references before commissioning held families",
+      "Inspect reuse candidates for their selected purpose; inventoried or viewed files are not integration approvals",
+      "First conditional raster batch: intact copper tube, then edit that inspected base into the full-length slotted version",
+      "Generated image, alignment, scene-size and playback review remain future work; no images generated in this task",
+      "Other Maths courses, other Year 11 routes and GCSE remain outside this first pass"
+    ]
+  },
+  "physicsMathsFirstPacksOct25": {
+    "owner": "/root",
+    "status": "both-unrecorded-packs-and-correction-drafts-independently-reviewed-no-source-blockers",
+    "scope": "Two unrecorded first-lesson authoring packs and exact copy drafts for six assessment repair areas. No selected release inputs changed.",
+    "ownership": {
+      "physicsPack": "/root/closure_audit",
+      "mathsPack": "/root/learning_review_b11",
+      "correctionDraft": "/root",
+      "correctionReview": "/root/assessment_readiness",
+      "physicsReview": "/root/assessment_readiness",
+      "mathsReview": "/root/closure_audit (separate author)"
+    },
+    "sourceReviewState": {
+      "corrections": "no blocking copy/calculation finding",
+      "physics": "no source-level science or learner blocker",
+      "maths": "no source-level mathematics or learner blocker; local-view marker footprint needs implementation check"
+    },
+    "handoff": "docs/production/claude-pm/drafts/physics-maths-first-packs.md",
+    "reviewEvidence": [
+      "docs/production/claude-pm/checks/codex-interim-assessment-corrections-review.md",
+      "docs/production/claude-pm/checks/codex-interim-physics-first-pack-review.md",
+      "docs/production/claude-pm/checks/codex-interim-maths-first-pack-review.md"
+    ],
+    "files": [
+      "docs/production/claude-pm/drafts/physics-horizontal-launch-pack.md",
+      "docs/production/claude-pm/drafts/maths-secant-tangent-pack.md",
+      "docs/production/claude-pm/drafts/physics-maths-assessment-corrections.md"
+    ],
+    "unresolvedGates": [
+      "Claude reviews draft direction and selects integration",
+      "Implement paired-ball shared clock, first ground contact and sign conversion before visual review",
+      "Implement exact secants and local view with nonoverlapping point markers; inspect actual caption-on phone output",
+      "Schema 4 production brief, recording review, exact voiced learning review, human listening and release gates remain pending",
+      "Site correction application and hidden-feedback behaviour remain untested; source copies were not changed"
+    ]
+  },
+  "interimPhysicsMathsQualityOct25": {
+    "owner": "/root",
+    "status": "independent-kit-and-assessment-reviews-complete-browser-checks-pending",
+    "roles": {
+      "physicsReview": "/root/closure_audit",
+      "mathsReview": "/root/learning_review_b11",
+      "assessmentReview": "/root/assessment_readiness",
+      "integration": "/root"
+    },
+    "scope": "All 54 Physics visual families, the Maths tangent kit, and a bounded audit of Physics M5 lessons 1 to 4 and Maths limits/differentiation prerequisites. No full-course assessment claim.",
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-interim-physics-kit-review.md",
+      "docs/production/claude-pm/checks/codex-interim-maths-kit-review.md",
+      "docs/production/claude-pm/checks/codex-interim-physics-maths-assessment-review.md",
+      "docs/production/claude-pm/checks/codex-interim-caption-layer-audit.json"
+    ],
+    "results": {
+      "physicsFamiliesReviewed": 54,
+      "physicsModelSuitesPassed": 7,
+      "physicsSourceFingerprintsMatched": 47,
+      "mathsReuseGuardResolved": true,
+      "mathsPilotFrameStatesUnchanged": 450,
+      "assessmentRepairAreas": 6,
+      "decodedCaptionLayerFrames": 9,
+      "bakedCaptionVideosObserved": 6
+    },
+    "unresolvedGates": [
+      "Repair the six assessment source issues before adapting those prompts and explanations into videos; site files were read only",
+      "Clarify the M8 accelerator connector/field arrow before selected lesson reuse",
+      "Browser reconnect timed out: 26 saved-track captures and new continuous motion checks remain pending",
+      "Resolve external-caption presentation for the six confirmed baked-caption MP4s; four missing early videos remain unsampled",
+      "Lesson-specific beginner teaching, voiced preview, human listening and release review remain pending"
+    ],
+    "mathsScopedTypeScript": "pass after guard integration, using --ignoreConfig and the Maths pilot entry",
+    "browserFinalRetry": "Timed out after the independent reviewers finished; no new saved-track or continuous playback pass",
+    "productionChanges": "Only a documented Maths component guard was added. Existing pilot visuals, MP4s, narration and released lesson source are unchanged."
+  },
+  "mathsAdvancedTangentPilot": {
+    "status": "silent-pilot-delivered-playback-check-complete-with-capture-limits",
+    "updated": "2026-10-25",
+    "owner": "/root",
+    "independentReviewer": "/root/math_review (Sol 6.1, read-only source and still review)",
+    "scope": "Small reusable maths kit and 15-second silent pilot in src/explainer/math",
+    "evidence": [
+      "src/explainer/math/README.md",
+      "scripts/render-maths-pilot.mjs",
+      "out/explainer/maths-tangent-pilot/maths-tangent-pilot.mp4",
+      "out/explainer/maths-tangent-pilot/desktop-f420.png",
+      "out/explainer/maths-tangent-pilot/phone-landscape-f420.png",
+      "out/explainer/maths-tangent-pilot/math-check.json",
+      "out/explainer/maths-tangent-pilot/playback-review.json"
+    ],
+    "checks": "Focused strict TypeScript passed; exact model and inverse-axis plotted slope = 4; independent source/still review passed; decoded 450 video frames at 30 fps with no audio stream; exact MP4 played at 1x in connected Chrome with graph and algebra observations; emulated 844 x 475 phone viewport playback reached the end",
+    "unresolvedGates": [],
+    "reviewLimits": [
+      "Screenshot observations during continuous desktop playback do not measure every frame or dropped frames",
+      "Later phone screenshots timed out; detailed phone algebra evidence is from independently reviewed rendered stills",
+      "Browser viewport emulation only; no physical phone test",
+      "Kit demo only; first-introduction teaching timing and whole-lesson release are outside this pilot"
+    ]
+  },
+  "interimEarlierCaptionRepairOct25": {
+    "owner": "/root",
+    "date": "2026-10-25",
+    "status": "91-QA-preserving-local-candidates-independent-source-review-passed-playback-and-replacement-pending",
+    "baselineCorrection": {
+      "owner": "/root",
+      "implementationOwner": "/root/learning_review_b11",
+      "status": "31-QA-preserving-tracks-prepared-and-independently-verified",
+      "qaPreservingManifest": "out/caption-repairs/qa-preserving-2026-10-25-v1/manifest.json",
+      "qaCueBodiesPreserved": 5589,
+      "notationEditsRetained": 213,
+      "savedStudioReferencesVerified": 5,
+      "uncapturedQASavedTrackIdentities": 26,
+      "checkpoint": "docs/production/claude-pm/checks/codex-interim-qa-caption-repair.json",
+      "evidence": [
+        "docs/production/claude-pm/checks/codex-interim-caption-provenance-review.md",
+        "docs/production/claude-pm/checks/codex-interim-live-caption-provenance.json",
+        "docs/production/claude-pm/checks/codex-interim-missing-video-recovery.json"
+      ],
+      "limits": "Do not publish the 31 superseded text candidates. Preserve all 213 later notation edits and QA line breaks. Saved Studio captures establish the five references, not public playback or listening approval."
+    },
+    "scope": "Earlier waves 1 to 4 and the previous wave 5 repair, with exact media/source exceptions preserved",
+    "reviewUrl": "http://127.0.0.1:8784/",
+    "selectedCatalog": "out/caption-repairs/review-catalog-2026-10-25-v4/catalog.json",
+    "presentationAddendumArchive": "out/archives/caption-layer-review-addendum-2026-10-25.zip",
+    "archive": "out/archives/caption-timing-review-qa-preserved-2026-10-25.zip",
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-interim-earlier-media-inventory.json",
+      "docs/production/claude-pm/checks/codex-interim-earlier-caption-review.md",
+      "docs/production/claude-pm/checks/codex-interim-earlier-source-exceptions.md",
+      "docs/production/claude-pm/checks/codex-interim-b03a-audio-evidence.json",
+      "docs/production/claude-pm/checks/codex-interim-earlier-corrected-caption-audit.json",
+      "docs/production/claude-pm/checks/codex-interim-b03a-corrected-caption-audit.json",
+      "docs/production/claude-pm/checks/codex-interim-earlier-caption-repair.json",
+      "docs/production/claude-pm/checks/codex-interim-caption-playback-review.md",
+      "docs/production/claude-pm/checks/codex-interim-caption-review-tool.md",
+      "docs/production/claude-pm/checks/codex-interim-chapter-fixes.json"
+    ],
+    "results": {
+      "earlierPublicRecords": 50,
+      "supersededDeletedRecordsExcluded": 1,
+      "earlierCaptionCandidates": 50,
+      "totalCaptionCandidates": 91,
+      "totalCues": 15934,
+      "qaCueBodiesPreserved": 5589,
+      "totalResponseHoldsClearOfExternalCaptions": 163,
+      "historicalArchiveMembersHashVerified": 198,
+      "uncapturedQASavedTrackIdentities": 26,
+      "missingLocalMp4s": 4,
+      "focusedTestsPassed": 25,
+      "targetedActualPlayback": [
+        "chem-m6-c15",
+        "chem-m5-c04b",
+        "bio-m5-b03a"
+      ],
+      "publicTracksChanged": false
+    },
+    "unresolvedGates": [
+      "Complete affected playback and human listening review before public track replacement",
+      "B2a, B2b, B2c, B03a, C3 and C4a have baked-in captions in decoded samples; resolve external-caption presentation before replacement",
+      "B03a's nine-frame source/container tail difference remains a separate video review item; do not spread it through captions",
+      "Recover four missing local videos and capture the remaining 26 QA saved tracks before asserting current saved-track identity",
+      "Apply and verify intended public caption tracks and the two chapter-description drafts",
+      "Existing lesson-author repairs remain in the separate eleven-item fix list"
+    ]
+  },
+  "interimCaptionRepairOct25": {
+    "owner": "/root",
+    "date": "2026-10-25",
+    "status": "corrected-local-tracks-prepared-playback-and-public-track-replacement-pending",
+    "scope": "41 published wave5 upload records, local captions and measured explainer timelines",
+    "roles": {
+      "root": "Caption exporter, batch repair, timing audit, archive and integration",
+      "learning_review_b11": "Independent chapter and caption drift/repair review",
+      "media_audit": "Live lesson links and rendered MP4 PCM timing evidence",
+      "closure_audit": "Exact handoff for the eleven open teaching/science issues"
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-interim-fix-list.md",
+      "docs/production/claude-pm/checks/codex-interim-published-links.json",
+      "docs/production/claude-pm/checks/codex-interim-chapter-review.md",
+      "docs/production/claude-pm/checks/codex-interim-caption-drift-review.md",
+      "docs/production/claude-pm/checks/codex-interim-caption-audio-evidence.json",
+      "docs/production/claude-pm/checks/codex-interim-published-metadata.json",
+      "docs/production/claude-pm/checks/codex-interim-corrected-caption-audit.json",
+      "docs/production/claude-pm/checks/codex-interim-caption-repair.json",
+      "out/caption-repairs/wave5-2026-10-25/manifest.json",
+      "out/archives/wave5-caption-timing-repair-2026-10-25.zip"
+    ],
+    "results": {
+      "workingUniqueLessonLinks": 34,
+      "recordedChaptersMechanicallyChecked": 677,
+      "chaptersIndependentlyReviewedForMeaning": 199,
+      "correctedCaptionTracks": 41,
+      "captionCuesTextUnchanged": 7012,
+      "responseHoldsClearedOfEarlyCaptions": 85,
+      "independentlyComparedCorrectedCues": 531,
+      "tests": "Five explainer caption tests and 25 existing playback/timeline tests pass",
+      "renderedAudioEvidence": "C15 feedback-1 starts at 349.10 s in the hash-matched MP4; original SRT starts at 339.50 s",
+      "publicTracksChanged": false
+    },
+    "unresolvedGates": [
+      "Play corrected captions against the exact voiced videos",
+      "Replace the corresponding public caption tracks and verify saved tracks",
+      "Preserve original caption files and historical upload evidence",
+      "Claude resolves the eleven author findings in the separate fix list"
+    ]
+  },
+  "interimReviewOct25": {
+    "owner": "/root",
+    "date": "2026-10-25",
+    "status": "source-still-and-backup-reviews-complete-author-repairs-and-playback-pending",
+    "scope": "Owner-authorised Module 7 review work while Claude is unavailable. GCSE planning is parked. External Physics and Maths kit agents own their separate work.",
+    "roles": {
+      "root": "Review integration, artwork/source inspection and handoff",
+      "learning_review_b11": "Independent B11 learner trace, source only",
+      "closure_audit": "Compare Codex checks 100 to 105 with current designs and available builds",
+      "media_audit": "Verify archives 102 to 105 and current repaired assets against earlier archives"
+    },
+    "banksiaRetakeIntegrationCheck": {
+      "owner": "/root",
+      "independentReviewer": "/root/closure_audit",
+      "status": "five-scene-consumer-audit-and-placement-independently-verified-source-only",
+      "sharedAlpha20Box": [
+        220,
+        256,
+        1780,
+        1744
+      ],
+      "hookOnlyCandidate": {
+        "width": 380,
+        "soilY": 880,
+        "trunkBottomAnchorY": 1744,
+        "centreY": 698.7692307692307
+      },
+      "finding": "The rootless retake cannot replace all five root-bearing scene uses by filename and crop alone. Keep a separate hook pair until each mechanism visual is decided.",
+      "browserState": "Two read-only reconnect attempts timed out; no additional Studio captures or motion checks were completed in this turn.",
+      "evidence": [
+        "docs/production/claude-pm/checks/codex-interim-art-review.md",
+        "docs/production/claude-pm/checks/codex-interim-art-source.json"
+      ],
+      "productionInputsChanged": false
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-interim-findings-closure.md",
+      "docs/production/claude-pm/checks/codex-interim-b11-learning-review.md",
+      "docs/production/claude-pm/checks/codex-interim-art-review.md",
+      "docs/production/claude-pm/checks/codex-interim-art-source.json",
+      "docs/production/claude-pm/checks/codex-interim-media-audit.json",
+      "scripts/check-interim-art-sources.mjs"
+    ],
+    "results": {
+      "priorFindingsFixedInDesign": 14,
+      "priorFindingsStillOpen": 8,
+      "additionalB11LearningFindings": 3,
+      "previewPngDifferences": {
+        "bio-m7-b05": 10,
+        "bio-m7-b06": 1,
+        "bio-m7-b07": 1
+      },
+      "archives102to105": "All four archive size, SHA-256 and CRC checks pass; 217 recorded hashes agree with archive and local files",
+      "productionInputsChanged": false
+    },
+    "unresolvedGates": [
+      "Author resolves remaining findings from checks 103, 104 and 105, including the author-only B12 correction proposal",
+      "Resolve B11 timing, assessment-row and trend-evidence findings before recording",
+      "Select hook-only Banksia integration or provide root-bearing mechanism replacements; check all five scene uses before any global swap",
+      "Build new numbered previews with intended current artwork before evaluating cleaned edges",
+      "B05/B06/B07 current-artwork motion, intended-size inspection and listening remain pending; the latest browser reconnect attempts timed out",
+      "Macrophage before-v1 local hash matches brief58 provenance; archive-level preservation was not verified"
+    ]
+  },
+  "codexPromptsOct18": {
+    "owner": "/root",
+    "brief100": {
+      "status": "prepared-with-art-qa-blockers",
+      "owner": "/root, /root/plates100, /root/plates101, /root/check100",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief100-provenance.json",
+        "docs/production/claude-pm/assets/brief100-media-checkpoint.json",
+        "docs/production/claude-pm/checks/codex-check-100.md",
+        "docs/production/claude-pm/site-corrections-m7.md",
+        "out/archives/brief100-plates-2026-10-22.zip"
+      ],
+      "unresolvedGates": [
+        "Correct B05 script findings before voicing",
+        "Retake or clean B05 Banksia pair for alpha fringe and crossfade alignment",
+        "Review C04b faded tube fume margin of 5.45 percent",
+        "Claude reviews all plates before use"
+      ]
+    },
+    "brief101": {
+      "status": "prepared-with-art-qa-blockers",
+      "owner": "/root, /root/plates100, /root/plates101, /root/check100",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief101-provenance.json",
+        "docs/production/claude-pm/assets/brief101-media-checkpoint.json",
+        "docs/production/claude-pm/checks/codex-check-101.md",
+        "docs/production/claude-pm/site-corrections-m7.md",
+        "out/archives/brief101-plates-2026-10-22.zip"
+      ],
+      "unresolvedGates": [
+        "Correct seven error-only report findings before voicing",
+        "Review three macrophage plate clear margins below 10 percent and the before-to-after crossfade timing",
+        "Review plasma cell scale against the 1.5 times width request and 10 percent clear margin",
+        "Claude reviews all plates before use"
+      ]
+    },
+    "brief95": {
+      "status": "draft-plans-complete-Claude-review-pending",
+      "owner": "/root, /root/chem_practicals, /root/bio_practicals, /root/practice_plans",
+      "evidence": [
+        "docs/production/claude-pm/pre-design/m6-practical-plan-index.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p01-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p02-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p03-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p04-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p05-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p06-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-p07-practical-plan.md",
+        "docs/production/claude-pm/pre-design/bio-m6-p01-practical-plan.md",
+        "docs/production/claude-pm/pre-design/bio-m6-p02-practical-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-g01-practice-plan.md",
+        "docs/production/claude-pm/pre-design/chem-m6-g02-practice-plan.md",
+        "docs/production/claude-pm/pre-design/bio-m6-g02-practice-plan.md",
+        "docs/production/module6-video-route-draft.json"
+      ],
+      "unresolvedGates": [
+        "Claude reviews Biology P01/P02 inclusion, practical methods and computed examples",
+        "Use school-specific risk assessment and actual bottle SDS before any class practical",
+        "Reconcile older Biology core and G entries in the Module 6 route with Claude's review",
+        "Commission and review missing plates only after design"
+      ]
+    },
+    "brief93": {
+      "status": "draft-complete-Claude-review-pending",
+      "owner": "/root/module7 and /root",
+      "evidence": [
+        "docs/production/module7-video-route-draft.json",
+        "docs/production/module7-video-route-draft.md",
+        "docs/production/claude-pm/assets/m7-plate-gaps.md"
+      ],
+      "unresolvedGates": [
+        "Claude reviews route boundaries and practical selections",
+        "Correct Chemistry Module 7 L11 methanol combustion source before design"
+      ]
+    },
+    "brief94": {
+      "status": "draft-complete-Claude-review-pending",
+      "owner": "/root/module8 and /root",
+      "evidence": [
+        "docs/production/module8-video-route-draft.json",
+        "docs/production/module8-video-route-draft.md",
+        "docs/production/claude-pm/assets/m8-plate-gaps.md"
+      ],
+      "unresolvedGates": [
+        "Claude reviews route boundaries and practical selections",
+        "Write route-specific teaching plans for 16 G and P entries before design",
+        "Resolve affected site correction findings before recording"
+      ]
+    },
+    "brief28u": {
+      "status": "complete-public-studio-and-playlist-readback",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave4-metadata-draft.json",
+        "docs/production/claude-pm/youtube/wave4-uploads.json",
+        "docs/production/claude-pm/youtube/wave5-metadata-draft.json",
+        "docs/production/claude-pm/youtube/wave5-uploads.json",
+        "docs/production/claude-pm/status.md"
+      ],
+      "unresolvedGates": []
+    },
+    "brief91": {
+      "status": "plates-and-error-check-complete-design-corrections-pending",
+      "owner": "/root, /root/fact_check_91, /root/site_log_91",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief91-provenance.json",
+        "docs/production/claude-pm/assets/brief91-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief91-qa/contact-sheet-cream.png",
+        "docs/production/claude-pm/checks/codex-check-91.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve five design findings before voicing",
+        "Owner reviews site corrections before site edits",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Review plates in selected scenes at playback speed"
+      ]
+    },
+    "brief92": {
+      "status": "plates-and-error-check-complete-design-corrections-pending",
+      "owner": "/root, /root/fact_check_92, /root/site_log_92",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief92-provenance.json",
+        "docs/production/claude-pm/assets/brief92-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief92-qa/contact-sheet-checker.png",
+        "docs/production/claude-pm/checks/codex-check-92.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve five design findings before voicing",
+        "Owner reviews site corrections and pituri item before site edits",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Review plates in selected scenes at playback speed"
+      ]
+    },
+    "brief28q": {
+      "status": "complete-public-studio-readback",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave4-uploads.json",
+        "docs/production/claude-pm/lessons/p01/measured/captions-fixed.srt"
+      ],
+      "unresolvedGates": []
+    },
+    "brief28p": {
+      "status": "B11-public-B7-B8-pending",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave4-metadata-draft.json",
+        "docs/production/claude-pm/youtube/wave4-uploads.json"
+      ],
+      "unresolvedGates": [
+        "Studio reached the daily upload limit again after ten new uploads",
+        "Publish B6c before B7, and B5b and B7 before B8"
+      ]
+    },
+    "brief28r": {
+      "status": "complete-three-public-studio-readback",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave4-uploads.json"
+      ],
+      "unresolvedGates": []
+    },
+    "brief28s": {
+      "status": "three-public-two-private-prerequisites-pending",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave4-metadata-draft.json",
+        "docs/production/claude-pm/youtube/wave4-uploads.json"
+      ],
+      "unresolvedGates": [
+        "Publish B6c before Biology P01 and B8 before Biology P02",
+        "Custom thumbnails for B13 and G03 await completion of YouTube video verification"
+      ]
+    },
+    "brief29": {
+      "status": "on-hold-owner-scrapped-style-a",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/codex-prompts/29-thumbnails-style-a.md"
+      ],
+      "unresolvedGates": []
+    },
+    "brief84": {
+      "status": "error-check-complete-design-corrections-pending",
+      "owner": "/root/brief84_review",
+      "evidence": [
+        "docs/production/claude-pm/checks/codex-check-84.md"
+      ],
+      "unresolvedGates": [
+        "Resolve four reported findings before voicing S01 and S02"
+      ]
+    },
+    "brief85": {
+      "status": "complete-handoff-design-corrections-pending",
+      "owner": "/root/brief85_plates, /root/brief85_factcheck, /root/brief85_site_log",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief85-provenance.json",
+        "docs/production/claude-pm/assets/brief85-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief85-qa/README.md",
+        "docs/production/claude-pm/checks/codex-check-85.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve five reported biology design findings before voicing",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Check aligned-pair fit at playback speed when scenes are built"
+      ]
+    },
+    "brief86": {
+      "status": "complete-handoff-design-corrections-pending",
+      "owner": "/root/brief86_plates, /root/brief86_factcheck, /root/brief86_site_log",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief86-provenance.json",
+        "docs/production/claude-pm/assets/brief86-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief86-qa/",
+        "docs/production/claude-pm/checks/codex-check-86.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve five reported design findings before voicing",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Review optional melanoma plate at preview before deciding on repaint"
+      ]
+    },
+    "brief87": {
+      "status": "complete-handoff-design-corrections-pending",
+      "owner": "/root/brief87_plates, /root/brief87_factcheck, /root/brief87_site_log",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief87-provenance.json",
+        "docs/production/claude-pm/assets/brief87-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief87-qa/",
+        "docs/production/claude-pm/checks/codex-check-87.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve four reported design findings before voicing",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Check aligned cat pair at playback speed when scenes are built"
+      ]
+    },
+    "brief88": {
+      "status": "plates-and-handoff-complete-scene-review-pending",
+      "owner": "/root, /root/mitosis_plates, /root/meiosis_plates, /root/closeup_plates, /root/brief88_independent_review",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief88-anchors.json",
+        "docs/production/claude-pm/assets/brief88-provenance.json",
+        "docs/production/claude-pm/assets/brief88-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief88-qa/README.md",
+        "docs/production/claude-pm/status.md"
+      ],
+      "unresolvedGates": [
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Check plate crossfades and empty/full edge movement at playback speed in selected B5a and B5b scenes",
+        "Complete teaching, motion and exact voiced-preview reviews before release"
+      ]
+    },
+    "brief65": {
+      "status": "complete-studio-readback",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/site-links.md"
+      ],
+      "unresolvedGates": [
+        "Owner account verification is needed for clickable external links"
+      ]
+    },
+    "brief74": {
+      "status": "live-audit-complete-playback-review-pending",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/channel-audit-2026-10.md"
+      ],
+      "unresolvedGates": [
+        "Check chapter-to-scene boundaries and captions during public playback"
+      ]
+    },
+    "brief76": {
+      "status": "complete-core-draft-owner-site-review-pending",
+      "owner": "/root/module6_site_sweep",
+      "evidence": [
+        "docs/production/claude-pm/site-fixes-draft-m6.md"
+      ],
+      "unresolvedGates": [
+        "Owner reviews 395 corrections before applying to the read-only site checkout",
+        "Separate worksheet and bank.json content review remains partial"
+      ]
+    },
+    "brief77": {
+      "status": "complete-local-owner-publication-review-pending",
+      "owner": "/root/practice_questions",
+      "evidence": [
+        "docs/production/claude-pm/practice-bank/m5/index.md"
+      ],
+      "unresolvedGates": [
+        "Owner reviews before site publication"
+      ]
+    },
+    "brief78": {
+      "status": "complete-studio-caption-replacement",
+      "owner": "/root/syllabus_audit and /root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/captions-qa-2026-10.md"
+      ],
+      "unresolvedGates": [
+        "Optional full public playback with captions enabled"
+      ]
+    },
+    "brief79": {
+      "status": "fa1-complete-fa2-through-l02",
+      "owner": "/root/practice_questions",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief79-handin.md",
+        "docs/production/claude-pm/assets/brief79-provenance.json",
+        "docs/production/claude-pm/assets/brief79-media-checkpoint.json"
+      ],
+      "unresolvedGates": [
+        "Transfer the Git-ignored media archive before another-computer production",
+        "FA2 L03 onward remains beyond the FA1 core"
+      ]
+    },
+    "brief80": {
+      "status": "complete-local",
+      "owner": "/root/syllabus_audit",
+      "evidence": [
+        "docs/production/claude-pm/assets/m6-plate-gaps.md",
+        "docs/production/claude-pm/assets/brief80-media-checkpoint.json"
+      ],
+      "unresolvedGates": [
+        "Transfer Git-ignored plates and archive before another-computer production"
+      ]
+    },
+    "brief81": {
+      "status": "complete-ledger-and-live-quotes",
+      "owner": "/root/syllabus_audit and /root",
+      "evidence": [
+        "docs/production/programme/syllabus/ledger-audit-2026-10.md"
+      ],
+      "unresolvedGates": []
+    },
+    "brief82": {
+      "status": "complete-handoffs-design-resolution-pending",
+      "owner": "/root/brief82_plates, /root/brief82_factcheck, /root/brief82_sitecorrections",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief82-provenance.json",
+        "docs/production/claude-pm/assets/brief82-media-checkpoint.json",
+        "docs/production/claude-pm/assets/brief82-qa/README.md",
+        "docs/production/claude-pm/checks/codex-check-82.md",
+        "docs/production/claude-pm/site-corrections-m6.md"
+      ],
+      "unresolvedGates": [
+        "Resolve eight design findings before voicing",
+        "Owner reviews site correction log before site edits",
+        "Transfer Git-ignored plate archive before another-computer production",
+        "Check aligned-pair edge movement at playback speed"
+      ]
+    },
+    "brief28w": {
+      "status": "complete-public",
+      "owner": "/root",
+      "evidence": [
+        "docs/production/claude-pm/youtube/wave5-metadata-draft.json",
+        "docs/production/claude-pm/codex-prompts/28w-youtube-upload-m6-c15-c16-b13-b15-b16-b18-b19-g02b-p02-p05.md",
+        "docs/production/claude-pm/youtube/wave5-uploads.json",
+        "docs/production/claude-pm/youtube/brief28w-final-readback.json"
+      ],
+      "unresolvedGates": [],
+      "publicVideoCount": 12
+    },
+    "brief102": {
+      "status": "handed-in-design-review-pending",
+      "owner": "/root/brief102",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief102-provenance.json",
+        "docs/production/claude-pm/assets/brief102-media-checkpoint.json",
+        "out/archives/brief102-plates-2026-10-23.zip"
+      ],
+      "unresolvedGates": [
+        "Claude reviews the new Banksia pair in motion before replacing the B05 side-by-side fallback"
+      ]
+    },
+    "brief103": {
+      "status": "handed-in-design-review-pending",
+      "owner": "/root/brief103",
+      "evidence": [
+        "docs/production/claude-pm/checks/codex-check-103.md",
+        "docs/production/claude-pm/assets/brief103-provenance.json",
+        "docs/production/claude-pm/assets/brief103-media-checkpoint.json",
+        "docs/production/claude-pm/site-corrections-m7.md",
+        "out/archives/brief103-plates-2026-10-23.zip"
+      ],
+      "unresolvedGates": [
+        "Claude reviews the 13 plates, including calorimeter crossfades at playback speed",
+        "Claude resolves the two Biology script findings before voicing"
+      ]
+    },
+    "brief104": {
+      "status": "handed-in-design-review-pending",
+      "owner": "/root/brief104",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief104-provenance.json",
+        "docs/production/claude-pm/assets/brief104-media-checkpoint.json",
+        "docs/production/claude-pm/checks/codex-check-104.md",
+        "docs/production/claude-pm/site-corrections-m7.md",
+        "out/archives/brief104-plates-2026-10-23.zip"
+      ],
+      "unresolvedGates": [
+        "Claude reviews the four plates, including the retaken airport bin in its scene",
+        "Claude resolves three script findings before voicing"
+      ]
+    },
+    "brief105": {
+      "status": "handed-in-design-review-pending",
+      "owner": "/root/brief102",
+      "evidence": [
+        "docs/production/claude-pm/assets/brief105-provenance.json",
+        "docs/production/claude-pm/assets/brief105-media-checkpoint.json",
+        "docs/production/claude-pm/checks/codex-check-105.md",
+        "docs/production/claude-pm/site-corrections-m7.md",
+        "out/archives/brief105-plates-2026-10-23.zip"
+      ],
+      "unresolvedGates": [
+        "Claude reviews the 17 plates in scenes",
+        "Claude resolves two B11 script findings before voicing"
+      ]
+    }
+  },
+  "siteReviewBrief62": {
+    "status": "review-complete-site-corrections-pending-owner-decision",
+    "scope": "2025 Year 11 Chemistry draft site lessons, FA1 to FA3, 75 pages",
+    "owner": "Codex review; site checkout read-only",
+    "evidence": [
+      "docs/production/claude-pm/site-corrections-y11-chem-new.md",
+      "docs/production/programme/y11-chem-new-site-review.md"
+    ],
+    "lessonContentFindings": {
+      "fa1": 19,
+      "fa2": 10,
+      "fa3": 16,
+      "total": 45
+    },
+    "unresolvedGates": [
+      "Correct science and assessment findings before using draft pages as video sources",
+      "Complete practical and secondary-source syllabus tasks",
+      "Repair shared course navigation and review subject visuals",
+      "Owner decides whether to fix the site before video design"
+    ]
+  },
   "waitingOnKyle": [
     {
       "action": "Judge the runner pilot for motion, clarity and visual character.",
@@ -1421,5 +2274,1313 @@
     "handIn": "docs/production/claude-pm/status.md",
     "mediaCheckpoint": "docs/production/claude-pm/assets/brief38-39-media-checkpoint.json",
     "remainingGate": "Transfer the local ZIP before review on another computer."
+  },
+  "claudePmBrief28j": {
+    "owner": "/root",
+    "status": "complete-public",
+    "date": "2026-10-16",
+    "videos": [
+      {
+        "lessonId": "bio-m5-b06a",
+        "url": "https://youtu.be/2vsAqgI-1NI",
+        "playlistPosition": 9
+      },
+      {
+        "lessonId": "chem-m5-g03c",
+        "url": "https://youtu.be/UPoHGWWm9MA",
+        "playlistPosition": 12
+      },
+      {
+        "lessonId": "chem-m5-g03d",
+        "url": "https://youtu.be/wSSh97iXkio",
+        "playlistPosition": 13
+      }
+    ],
+    "evidence": "docs/production/claude-pm/youtube/wave4-uploads.json",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief43": {
+    "owner": "/root",
+    "status": "complete-local-archive-verified",
+    "date": "2026-10-16",
+    "plates": 3,
+    "provenance": "docs/production/claude-pm/assets/brief43-provenance.json",
+    "mediaCheckpoint": "out/archives/brief43-tug-plates-2026-10-16.zip",
+    "remainingGate": "Transfer the local ZIP before review on another computer."
+  },
+  "claudePmBrief44": {
+    "owner": "/root/extract44",
+    "status": "complete-spot-checked",
+    "date": "2026-10-16",
+    "extracts": 81,
+    "evidence": "docs/production/claude-pm/site-extracts/m7-index.md and m8-index.md",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief51": {
+    "owner": "/root",
+    "status": "complete-plan-only",
+    "date": "2026-10-16",
+    "manifest": "docs/production/programme/site-video-manifest.json",
+    "publishedVideos": 22,
+    "plan": "docs/production/programme/website-video-plan.md"
+  },
+  "claudePmBrief52": {
+    "owner": "/root",
+    "status": "complete-research-only",
+    "date": "2026-10-16",
+    "report": "docs/production/programme/physics-maths-feasibility.md",
+    "sitePagesInventoried": 701
+  },
+  "claudePmBrief53": {
+    "owner": "/root",
+    "status": "complete-qa-checked",
+    "date": "2026-10-16",
+    "plates": 7,
+    "provenance": "docs/production/claude-pm/assets/brief53-provenance.json",
+    "qa": "docs/production/claude-pm/assets/brief53-qa/",
+    "handIn": "docs/production/claude-pm/status.md",
+    "mediaCheckpoint": "docs/production/claude-pm/assets/brief47-48-53-54-media-checkpoint.json"
+  },
+  "claudePmBrief46": {
+    "owner": "/root/predesign46",
+    "status": "complete-spot-checked",
+    "date": "2026-10-16",
+    "packs": 32,
+    "index": "docs/production/claude-pm/pre-design/m6-index.md",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief50": {
+    "owner": "/root/question50",
+    "status": "complete-spot-checked",
+    "date": "2026-10-16",
+    "banks": 7,
+    "path": "docs/production/claude-pm/research/",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief45": {
+    "owner": "/root/syllabus45",
+    "status": "complete-spot-checked",
+    "date": "2026-10-16",
+    "ledgers": 6,
+    "path": "docs/production/programme/syllabus/",
+    "handIn": "docs/production/claude-pm/status.md",
+    "remainingCheck": "Verify 2017 DOCX page markers in Word before citing page numbers publicly."
+  },
+  "claudePmBrief54": {
+    "owner": "/root",
+    "status": "complete-qa-checked",
+    "date": "2026-10-16",
+    "plates": 15,
+    "provenance": "docs/production/claude-pm/assets/brief54-provenance.json",
+    "qa": "docs/production/claude-pm/assets/brief54-qa/",
+    "handIn": "docs/production/claude-pm/status.md",
+    "mediaCheckpoint": "docs/production/claude-pm/assets/brief47-48-53-54-media-checkpoint.json"
+  },
+  "claudePmBrief49": {
+    "owner": "/root/syllabus45",
+    "status": "complete-spot-checked",
+    "date": "2026-10-16",
+    "lessonsInventoried": 216,
+    "extracts": 216,
+    "report": "docs/production/programme/year11-scoping.md",
+    "handIn": "docs/production/claude-pm/status.md",
+    "remainingCheck": "Read candidate lesson bodies before claiming exact 2025 syllabus coverage."
+  },
+  "claudePmBrief48": {
+    "owner": "/root/question50",
+    "status": "complete-visual-spot-check",
+    "date": "2026-10-16",
+    "plates": 23,
+    "provenance": "docs/production/claude-pm/assets/brief48-provenance.json",
+    "qa": "docs/production/claude-pm/assets/brief48-qa/",
+    "handIn": "docs/production/claude-pm/status.md",
+    "mediaCheckpoint": "docs/production/claude-pm/assets/brief47-48-53-54-media-checkpoint.json"
+  },
+  "claudePmBrief47": {
+    "owner": "/root/predesign46",
+    "status": "complete-pair-alignment-checked",
+    "date": "2026-10-16",
+    "plates": 28,
+    "provenance": "docs/production/claude-pm/assets/brief47-provenance.json",
+    "qa": "docs/production/claude-pm/assets/brief47-qa/",
+    "handIn": "docs/production/claude-pm/status.md",
+    "mediaCheckpoint": "docs/production/claude-pm/assets/brief47-48-53-54-media-checkpoint.json"
+  },
+  "claudePmBrief59": {
+    "owner": "/root",
+    "status": "complete-qa-checked",
+    "date": "2026-10-18",
+    "newPlates": 6,
+    "existingPodRetained": "public/assets/biology/b2b-pod-seeds-v1.png",
+    "provenance": "docs/production/claude-pm/assets/brief59-provenance.json",
+    "qa": "docs/production/claude-pm/assets/brief59-qa/",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief28l": {
+    "owner": "/root",
+    "status": "complete-public",
+    "date": "2026-10-18",
+    "lessonId": "chem-m5-c07",
+    "url": "https://youtu.be/8hZ3MVi7kHU",
+    "playlistPosition": 10,
+    "captionStatus": "Published, English (Australia), timed SRT",
+    "chapters": 9,
+    "endScreen": "Skipped because the final key notes fill the screen",
+    "evidence": "docs/production/claude-pm/youtube/wave4-uploads.json",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief57": {
+    "owner": "/root",
+    "status": "complete-with-source-checks-noted",
+    "date": "2026-10-18",
+    "packs": 67,
+    "groups": {
+      "chemM7": 18,
+      "bioM7": 16,
+      "chemM8": 14,
+      "bioM8": 19
+    },
+    "indexes": [
+      "docs/production/claude-pm/pre-design/m7-index.md",
+      "docs/production/claude-pm/pre-design/m8-index.md"
+    ],
+    "evidence": "All packs passed seven-section, under-1500-word, local-link and no-em-dash checks. Site errors are recorded in pack section 3 and the status hand-in.",
+    "remainingGate": "Check named sources for the flagged Chemistry M7 property and bond-energy values and any source-dependent example chosen for recording.",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief61": {
+    "owner": "/root",
+    "status": "complete-with-source-findings-noted",
+    "date": "2026-10-18",
+    "packs": 105,
+    "groups": {
+      "bioY11Fa1": 34,
+      "bioY11Fa2": 35,
+      "bioY11Fa3": 36
+    },
+    "index": "docs/production/claude-pm/pre-design/y11-bio/y11-bio-index.md",
+    "evidence": "All 75 site lessons covered; all packs passed seven-section, exact-ledger-quote, under-1500-word, relative-link and no-em-dash checks.",
+    "remainingGate": "Resolve the source findings in the index before designing or recording the affected videos.",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief69": {
+    "owner": "/root",
+    "status": "complete-draft-for-Claude-review",
+    "date": "2026-10-18",
+    "chemistryVideos": 27,
+    "biologyVideos": 20,
+    "json": "docs/production/module6-video-route-draft.json",
+    "readableRoute": "docs/production/module6-video-route-draft.md",
+    "evidence": "Mapped all 33 local Module 6 content points to candidate entries; checked 47 unique IDs, 64 site references and prerequisite links.",
+    "remainingGate": "Claude reviews boundaries and verifies the Chemistry Ka/pKa syllabus mismatch before recording briefs.",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief28o": {
+    "owner": "/root",
+    "status": "complete-public-old-deleted",
+    "date": "2026-10-18",
+    "videos": [
+      {
+        "lessonId": "chem-m5-c13",
+        "url": "https://youtu.be/4IYt7nemcRI",
+        "playlistPosition": 17
+      },
+      {
+        "lessonId": "chem-m5-p03",
+        "url": "https://youtu.be/cY7hnSTN1uY",
+        "playlistPosition": 18
+      },
+      {
+        "lessonId": "chem-m5-c14",
+        "url": "https://youtu.be/UMgrHQaLSH8",
+        "playlistPosition": 19
+      }
+    ],
+    "oldC14": "https://youtu.be/zIYzqE5XbaU",
+    "evidence": "docs/production/claude-pm/youtube/wave4-uploads.json",
+    "handIn": "docs/production/claude-pm/status.md",
+    "oldC14Status": "Permanently deleted in YouTube Studio on 2026-10-18; public playlist shows replacement at position 19."
+  },
+  "claudePmBrief83": {
+    "owner": "/root",
+    "status": "complete-research-with-quotation-limit",
+    "date": "2026-10-19",
+    "path": "docs/production/claude-pm/research/exam-skills/",
+    "evidence": "Ten official 2021-2025 Section II exam papers counted; matching 2021-2025 guidelines and 2020-2025 feedback audited; NESA glossary and current science definitions linked. Marking examples were corrected to the same five-year range on 2026-10-19.",
+    "remainingGate": "Claude reviews the research before designing or recording the exam skills videos. The full NESA glossary definitions were paraphrased and linked because a word-for-word copy could not be included.",
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "claudePmBrief89": {
+    "owner": "/root/check_89",
+    "status": "complete-check",
+    "date": "2026-10-20",
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-check-89.md",
+      "docs/production/claude-pm/site-corrections-m6.md",
+      "docs/production/module6-memory-aids-2026-10-11.md"
+    ],
+    "remainingGate": "The site copy of the memory aid and the site lesson errors still need correction by the site owner."
+  },
+  "claudePmBrief90": {
+    "owner": "/root",
+    "status": "complete-check-findings-open",
+    "date": "2026-10-20",
+    "evidence": [
+      "docs/production/claude-pm/assets/brief90-provenance.json",
+      "docs/production/claude-pm/assets/brief90-media-checkpoint.json",
+      "docs/production/claude-pm/checks/codex-check-90.md",
+      "docs/production/claude-pm/site-corrections-m6.md",
+      "docs/production/module6-video-route-draft.json"
+    ],
+    "remainingGate": "Resolve the C11 and B10 fact-check findings before voicing, and review the new plates in their selected scenes. The site corrections are logged but the read-only site pages have not changed."
+  },
+  "claudePmBrief28t": {
+    "owner": "/root/upload_28t",
+    "status": "public-playlist-readback-pending",
+    "date": "2026-10-20",
+    "evidence": [
+      "docs/production/claude-pm/youtube/wave4-uploads.json",
+      "docs/production/claude-pm/youtube/wave4-metadata-draft.json",
+      "docs/production/claude-pm/youtube/wave5-uploads.json",
+      "docs/production/claude-pm/youtube/wave5-metadata-draft.json",
+      "docs/production/claude-pm/status.md"
+    ],
+    "remainingGate": "Module 6 playlist IDs and final available-video order were confirmed on public pages during brief 28v, 22 October 2026. See docs/production/claude-pm/youtube/brief28v-final-readback.json."
+  },
+  "claudePmBriefs28v96to99": {
+    "owner": "/root",
+    "date": "2026-10-22",
+    "status": "complete-with-design-findings-open",
+    "tasks": {
+      "96": {
+        "owner": "/root/site96_99",
+        "status": "complete-artwork-and-error-check-findings-open",
+        "evidence": [
+          "docs/production/claude-pm/checks/codex-check-96.md",
+          "docs/production/claude-pm/assets/brief96-provenance.json",
+          "docs/production/claude-pm/assets/brief96-media-checkpoint.json",
+          "docs/production/claude-pm/assets/brief96-99-final-audit.md"
+        ],
+        "plateCount": 11,
+        "findingCount": 2,
+        "remaining": "Designer resolves findings before voicing and reviews the plates in their scenes."
+      },
+      "97": {
+        "owner": "/root/reviews98_99",
+        "status": "complete-artwork-and-error-check-findings-open",
+        "evidence": [
+          "docs/production/claude-pm/checks/codex-check-97.md",
+          "docs/production/claude-pm/assets/brief97-provenance.json",
+          "docs/production/claude-pm/assets/brief97-media-checkpoint.json",
+          "docs/production/claude-pm/assets/brief96-99-final-audit.md"
+        ],
+        "plateCount": 12,
+        "findingCount": 2,
+        "remaining": "Designer resolves findings before voicing and reviews the plates in their scenes."
+      },
+      "98": {
+        "owner": "/root/reviews96_97",
+        "status": "complete-artwork-and-error-check-findings-open",
+        "evidence": [
+          "docs/production/claude-pm/checks/codex-check-98.md",
+          "docs/production/claude-pm/assets/brief98-provenance.json",
+          "docs/production/claude-pm/assets/brief98-media-checkpoint.json",
+          "docs/production/claude-pm/assets/brief96-99-final-audit.md"
+        ],
+        "plateCount": 14,
+        "findingCount": 6,
+        "remaining": "Designer resolves findings before voicing and reviews the plates in their scenes."
+      },
+      "99": {
+        "owner": "/root/reviews98_99",
+        "status": "complete-artwork-and-error-check-findings-open",
+        "evidence": [
+          "docs/production/claude-pm/checks/codex-check-99.md",
+          "docs/production/claude-pm/assets/brief99-provenance.json",
+          "docs/production/claude-pm/assets/brief99-media-checkpoint.json",
+          "docs/production/claude-pm/assets/brief96-99-final-audit.md"
+        ],
+        "plateCount": 20,
+        "findingCount": 8,
+        "remaining": "Designer resolves findings before voicing and reviews the plates in their scenes."
+      },
+      "28v": {
+        "owner": "/root",
+        "status": "complete-public",
+        "evidence": [
+          "docs/production/claude-pm/youtube/wave5-metadata-draft.json",
+          "docs/production/claude-pm/youtube/wave5-uploads.json",
+          "docs/production/claude-pm/youtube/brief28v-final-readback.json"
+        ],
+        "remaining": "None for upload brief. All 12 public, captions published, HD/settings verified and playlist order reconciled.",
+        "publicVideoCount": 12
+      }
+    },
+    "remainingGates": [
+      "Resolve reported design findings before voicing.",
+      "Claude reviews artwork in the planned scenes.",
+      "No paid narration or full renders in this batch."
+    ],
+    "handIn": "docs/production/claude-pm/status.md"
+  },
+  "ownerApprovedReleaseOct25": {
+    "date": "2026-10-25",
+    "owner": "/root",
+    "status": "rendering-from-isolated-source",
+    "lessons": [
+      "chem-m6-p06",
+      "chem-m6-g01",
+      "chem-m6-g02",
+      "bio-m6-p01"
+    ],
+    "roles": {
+      "root": "Preview and media review, frozen renders, exact export checks, metadata and publication",
+      "chem_release_check": "Independent P06/G01 source review and four-lesson MP3 decode audit",
+      "bio_g02_check": "Independent Bio P01/Chem G02 source review and historical release-hold audit"
+    },
+    "ownerApproval": "docs/production/claude-pm/checks/owner-approval-2026-10-25.json",
+    "evidence": [
+      "docs/production/claude-pm/checks/owner-release-2026-10-25-chem-p06-g01.md",
+      "docs/production/claude-pm/checks/owner-release-2026-10-25-bio-p01-chem-g02.md",
+      "docs/production/claude-pm/checks/owner-release-2026-10-25-historical.md",
+      "out/checks/owner-release-2026-10-25/media-inputs.json",
+      "out/checks/owner-release-2026-10-25/audio-decode-audit.json",
+      "docs/production/claude-pm/checks/owner-release-2026-10-25-render-setup.md"
+    ],
+    "unresolvedGates": [
+      "Finish four full MP4 exports",
+      "Full decode, loudness, response-gap and caption checks on exports",
+      "Inspect exported frames and playback; record exact-package reviews",
+      "Live upload, captions and playlist readback"
+    ],
+    "historicalHolds": {
+      "enzyme": "Original src/lesson/types.ts hash not recovered; local exact MP4 absent",
+      "molePartB": "MP4 exists, but exact Studio binding and release evidence missing"
+    },
+    "frozenWorkspace": "out/checks/owner-release-2026-10-25/frozen-workspace",
+    "renderQueue": "out/checks/owner-release-2026-10-25/queue-clean-freeze.err.log",
+    "renderPolicy": "One lesson at a time, four workers, fresh chunks-v1-frozen. Prior interrupted partial chunks are preserved and excluded.",
+    "runtime": {
+      "renderQueuePid": 20400,
+      "queueRunner": "out/checks/owner-release-2026-10-25/render-approved-queue.mjs",
+      "queueStdout": "out/checks/owner-release-2026-10-25/queue-clean-freeze.log",
+      "queueStderr": "out/checks/owner-release-2026-10-25/queue-clean-freeze.err.log",
+      "frozenPerLessonBase": "out/checks/owner-release-2026-10-25/frozen-workspace/out/checks/owner-release-2026-10-25",
+      "currentLesson": "chem-m6-p06",
+      "then": [
+        "chem-m6-g01",
+        "chem-m6-g02",
+        "bio-m6-p01"
+      ],
+      "auditCommand": "python out/checks/owner-release-2026-10-25/audit-final-export.py <lesson-id>",
+      "metadata": "docs/production/claude-pm/youtube/owner-approved-oct25-metadata-draft.json",
+      "studioTab": "664115098",
+      "chemPlaylistTab": "664115095",
+      "browserId": "1",
+      "uploadDialogOpen": true,
+      "termsConfirmation": "Not yet requested. Dialog says submission acknowledges Terms of Service. Request once at first actual upload after completed-file checks. User has already approved publication and confirmed exact preview listening."
+    }
+  },
+  "brief28x": {
+    "owner": "/root",
+    "date": "2026-10-27",
+    "status": "paused-browser-timeout-four-public-one-caption-replaced",
+    "uploadCount": 4,
+    "captionReplacementCount": 1,
+    "captionReplacementAuthorised": true,
+    "evidence": [
+      "docs/production/claude-pm/youtube/brief28x-preflight.json",
+      "docs/production/claude-pm/youtube/brief28x-caption-local-validation.json",
+      "docs/production/claude-pm/youtube/caption-replacement-2026-10.json"
+    ],
+    "remaining": [
+      "Inspect Biology B01 caption editor after file chooser timeout; existing track captured, replacement unconfirmed",
+      "Complete authorised caption queue, read back each saved feedback cue, skip six baked-caption videos",
+      "Start brief 28y only after 28x is complete"
+    ],
+    "resumeAttemptDate": "2026-10-27",
+    "nextBrief": "28y not started; finish 28x first unless browser remains unavailable"
+  },
+  "briefs106to108": {
+    "date": "2026-10-27",
+    "owner": "/root",
+    "status": "handed-in-plates-checks-and-site-log-complete-with-documented-limits",
+    "ownership": {
+      "art106": "/root/check108",
+      "art107": "/root/check107",
+      "art108": "/root/check106",
+      "integrationAndFinalInspection": "/root"
+    },
+    "holds": [
+      "G02 neutral leaf awaits cultural reviewer",
+      "B14/B15/G02 cultural review before publication",
+      "Current NSW chemical-specific CSIS entry needs staff access; P01 teacher adds indicator"
+    ],
+    "prerequisite": "28x and 28y stopped after browser input timeout, per owner instruction",
+    "confirmedErrorFindings": {
+      "106": 5,
+      "107": 4,
+      "108": 1
+    },
+    "generated106Plates": 8,
+    "userApprovedDeterministicCleanup": true,
+    "plateCount": 30,
+    "newSiteRows": 87,
+    "existingSiteRowsExtended": 2,
+    "siteQuotesVerified": 113,
+    "readOnlySiteFilesVerified": 15,
+    "allArchivesVerified": true,
+    "archives": [
+      {
+        "brief": 106,
+        "archive": "out/archives/brief106-plates-2026-10-27.zip",
+        "sha256": "6a53c2546260b5a97b4cffd067d6ede61e103cb9964626ed64f2a1eea17b953f",
+        "bytes": 42301323,
+        "memberCount": 51,
+        "plateCount": 8,
+        "checkpointSha256": "6b42d73f60305b5b7f4a27529c5231e21225852584399099e263f6d5583cd631",
+        "crcAndMemberHashesPass": true
+      },
+      {
+        "brief": 107,
+        "archive": "out/archives/brief107-plates-2026-10-27.zip",
+        "sha256": "027ac3d49ee6637e9cad24f0c92ca059c6cd90b9fc6629a148354ed4d71a6363",
+        "bytes": 59965074,
+        "memberCount": 93,
+        "plateCount": 13,
+        "checkpointSha256": "017eb2e7496e6f1ddf549d5ec5e9894ab3646f832c1a40f6a756c95f0b2b5c95",
+        "crcAndMemberHashesPass": true
+      },
+      {
+        "brief": 108,
+        "archive": "out/archives/brief108-plates-2026-10-27.zip",
+        "sha256": "2b09b1126274c57f5f50bace31b1dccc094ea8508b72ab54675663ff52d4f7a9",
+        "bytes": 50994698,
+        "memberCount": 65,
+        "plateCount": 9,
+        "checkpointSha256": "296298d71f9d34ca015ed8a531806799a3c18745ed13465456074d7157aa6834",
+        "crcAndMemberHashesPass": true
+      }
+    ],
+    "rootVisualInspection": "All 90 final background views, all six 50% aligned overlays and G01 at 220 px, after opaque-interior mask repairs.",
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-check-106.md",
+      "docs/production/claude-pm/checks/codex-check-107.md",
+      "docs/production/claude-pm/checks/codex-check-108.md",
+      "docs/production/claude-pm/checks/brief106-108-site-log-verification.json",
+      "docs/production/claude-pm/checks/brief106-108-integration-review.md",
+      "docs/production/claude-pm/checks/brief106-108-final-validation.json",
+      "docs/production/claude-pm/site-corrections-m7.md"
+    ],
+    "remaining": [
+      "Claude resolves ten reported findings before voicing",
+      "Owner artwork and exact scene-use acceptance",
+      "B14/B15/G02 cultural review; G02 leaf remains unpainted",
+      "Current NSW chemical-specific CSIS entry and local risk assessment need staff access; P01 teacher adds indicator",
+      "John Watson living status remains unverified",
+      "Exact current Wolbachia city total behind dozens remains unverified",
+      "Date-sensitive gene-drive release status needs recording-date recheck"
+    ],
+    "publicationOrNarrationPerformed": false,
+    "mediaUploaded": false,
+    "resumeVerification": {
+      "date": "2026-10-27",
+      "order": [
+        106,
+        107,
+        108
+      ],
+      "all209ArchiveMembersAnd30PlatesReverified": true,
+      "siteLogAnd15SourceHashesMatch": true,
+      "contactSheetsInspected": true,
+      "freshFullFactCheck": false
+    }
+  },
+  "brief28y": {
+    "status": "complete",
+    "owner": "/root",
+    "date": "2026-10-28",
+    "evidence": [
+      "docs/production/claude-pm/youtube/wave5-uploads.json",
+      "docs/production/claude-pm/youtube/brief28y-final-readback.json"
+    ],
+    "summary": "All 20 public. G04 and S05 published from existing drafts. Both Module 7, Chemistry M6 and skills playlist orders read back. No duplicate uploads.",
+    "unresolvedGates": []
+  },
+  "brief28z": {
+    "status": "complete",
+    "latestResumeDate": "2026-10-29",
+    "latestResumeResult": "All fifteen videos public. Saved Studio settings and metadata passed; three Public Manual playlists read back.",
+    "owner": "/root",
+    "date": "2026-10-28",
+    "evidence": [
+      "docs/production/claude-pm/youtube/brief28z-preflight.json",
+      "docs/production/claude-pm/youtube/wave5-uploads.json",
+      "docs/production/claude-pm/youtube/brief28z-input-check.json",
+      "docs/production/claude-pm/youtube/brief28z-final-readback.json"
+    ],
+    "summary": "15 public uploads, timed cumulative captions, HD complete, no initial check issues. P02 in route order; S07 after P03 in Chemistry and after S05 in skills.",
+    "unresolvedGates": []
+  },
+  "brief109": {
+    "status": "complete-review-findings-unresolved",
+    "owner": "/root/brief109",
+    "date": "2026-10-28",
+    "summary": "Eight reviews, seven new plates, LDPE contrast correction, verified local archive, five new confirmed site rows.",
+    "evidence": [
+      "docs/production/claude-pm/assets/brief109-hand-in.md",
+      "docs/production/claude-pm/assets/brief109-provenance.json",
+      "docs/production/claude-pm/assets/brief109-media-checkpoint.json"
+    ],
+    "reviewCounts": {
+      "m7c15": {
+        "learning": [
+          0,
+          3
+        ],
+        "science": [
+          0,
+          4
+        ]
+      },
+      "m7g04": {
+        "learning": [
+          0,
+          3
+        ],
+        "science": [
+          0,
+          3
+        ]
+      },
+      "m7p05b": {
+        "learning": [
+          2,
+          2
+        ],
+        "science": [
+          2,
+          3
+        ]
+      },
+      "skills06": {
+        "learning": [
+          0,
+          3
+        ],
+        "science": [
+          0,
+          4
+        ]
+      }
+    },
+    "countMeaning": "[blocker, should fix]; review types overlap",
+    "unresolvedGates": [
+      "Claude resolves findings",
+      "Owner artwork acceptance",
+      "Teacher reconciles current school policy",
+      "Source and originality limits in hand-in",
+      "Exact voiced preview and human listening"
+    ],
+    "mediaUploaded": false
+  },
+  "brief110": {
+    "status": "complete-review-findings-unresolved",
+    "owner": "/root/brief110",
+    "date": "2026-10-28",
+    "summary": "Ten independent reviews, three plate candidates, verified 100-member local archive, eight confirmed site corrections.",
+    "evidence": [
+      "docs/production/claude-pm/assets/brief110-provenance.json",
+      "docs/production/claude-pm/assets/brief110-media-checkpoint.json",
+      "docs/production/claude-pm/assets/brief110-site-corrections-proposed.md"
+    ],
+    "reviewCounts": {
+      "m7g03": {
+        "learning": [
+          0,
+          2
+        ],
+        "science": [
+          0,
+          3
+        ]
+      },
+      "m7p04": {
+        "learning": [
+          0,
+          3
+        ],
+        "science": [
+          1,
+          3
+        ]
+      },
+      "m7p05c": {
+        "learning": [
+          2,
+          2
+        ],
+        "science": [
+          2,
+          4
+        ]
+      },
+      "m7p06c": {
+        "learning": [
+          1,
+          3
+        ],
+        "science": [
+          1,
+          3
+        ]
+      },
+      "skills08": {
+        "learning": [
+          2,
+          3
+        ],
+        "science": [
+          2,
+          2
+        ]
+      }
+    },
+    "countMeaning": "[blocker, should fix]; review types overlap",
+    "unresolvedGates": [
+      "Claude resolves design findings",
+      "Current school chemical permissions and local risk assessment",
+      "Owner artwork acceptance",
+      "Exact voiced preview and listening before render"
+    ],
+    "mediaUploaded": false
+  },
+  "brief111": {
+    "status": "complete-review-findings-unresolved",
+    "owner": "/root/brief111 (reviews and 15 plates); /root (3 wildlife plates and integration)",
+    "date": "2026-10-28",
+    "summary": "Eight independent reviews, 18 plate candidates, 15 confirmed site corrections and verified local archive. Three independent artwork findings repaired and reinspected.",
+    "reviewCounts": {
+      "m8c01": {
+        "learning": [
+          0,
+          2
+        ],
+        "science": [
+          0,
+          0
+        ]
+      },
+      "m8c02": {
+        "learning": [
+          1,
+          3
+        ],
+        "science": [
+          1,
+          3
+        ]
+      },
+      "m8b01": {
+        "learning": [
+          0,
+          2
+        ],
+        "science": [
+          0,
+          2
+        ]
+      },
+      "m8b02": {
+        "learning": [
+          2,
+          2
+        ],
+        "science": [
+          2,
+          3
+        ]
+      }
+    },
+    "countMeaning": "[blocker, should fix]; review types overlap",
+    "evidence": [
+      "docs/production/claude-pm/assets/brief111-provenance.json",
+      "docs/production/claude-pm/assets/brief111-media-checkpoint.json",
+      "docs/production/claude-pm/assets/brief111-geometry-repair.json",
+      "docs/production/claude-pm/site-corrections-m8.md",
+      "docs/production/claude-pm/checks/brief111-site-log-verification.json",
+      "docs/production/claude-pm/checks/brief109-111-final-validation.json"
+    ],
+    "framingExceptions": [
+      {
+        "path": "public/assets/chemistry/m8-baso4-beaker-settled-v1.png",
+        "minimumMarginFraction": 0.0801,
+        "decision": "Retained exact requested legacy outline, alpha and canvas for stationary cross-fade. Specific reference matching takes priority over the generic 10 percent margin."
+      },
+      {
+        "path": "public/assets/chemistry/m8-mohr-flask-endpoint-v1.png",
+        "minimumMarginFraction": 0.0812,
+        "decision": "Retained exact requested legacy outline, alpha and canvas for stationary cross-fade. Specific reference matching takes priority over the generic 10 percent margin."
+      },
+      {
+        "path": "public/assets/chemistry/m8-mohr-flask-white-v1.png",
+        "minimumMarginFraction": 0.0812,
+        "decision": "Retained exact requested legacy outline, alpha and canvas for stationary cross-fade. Specific reference matching takes priority over the generic 10 percent margin."
+      },
+      {
+        "path": "public/assets/chemistry/m8-mohr-flask-yellow-v1.png",
+        "minimumMarginFraction": 0.0812,
+        "decision": "Retained exact requested legacy outline, alpha and canvas for stationary cross-fade. Specific reference matching takes priority over the generic 10 percent margin."
+      }
+    ],
+    "unresolvedGates": [
+      "Claude resolves review findings",
+      "Owner artwork acceptance",
+      "Exact voiced preview and human listening before rendering"
+    ],
+    "mediaUploaded": false
+  },
+  "brief109to111Verification": {
+    "date": "2026-10-28",
+    "status": "verified-local-handoff",
+    "reviews": 26,
+    "plateAssets": 29,
+    "archives": [
+      {
+        "brief": 109,
+        "path": "out/archives/brief109-plates-reviews-2026-10-28.zip",
+        "sha256": "aa1f49717e2b1b0ac1764f5111bb2df096935d5183bd430b9813a1173349237f",
+        "contentMembersVerified": 73,
+        "zipEntries": 73,
+        "internalManifestVerified": false,
+        "crcPass": true
+      },
+      {
+        "brief": 110,
+        "path": "out/archives/brief110-plates-2026-10-28.zip",
+        "sha256": "4696815afa522a8eb6ffa6595b29950dc736d3614c9f11ece3bad7fa0c75cd04",
+        "contentMembersVerified": 100,
+        "zipEntries": 100,
+        "internalManifestVerified": false,
+        "crcPass": true
+      },
+      {
+        "brief": 111,
+        "path": "out/archives/brief111-plates-2026-10-28.zip",
+        "sha256": "d988c94b3e8767b820b240df1bc34b08bd383a5956dcffa5f0f10229c5d8306f",
+        "contentMembersVerified": 158,
+        "zipEntries": 159,
+        "internalManifestVerified": true,
+        "crcPass": true
+      }
+    ],
+    "newSiteCorrections": 28,
+    "evidence": "docs/production/claude-pm/checks/brief109-111-final-validation.json",
+    "sourceDesignsChanged": false,
+    "narrationOrRenderingPerformed": false,
+    "referenceFramingExceptions": 4
+  },
+  "brief28aa": {
+    "status": "complete",
+    "owner": "/root",
+    "date": "2026-10-29",
+    "delegatedPreflightOwner": "/root/preflight",
+    "summary": "Nine approved Module 7 videos public, cumulative timed captions saved, metadata checked. Chemistry 22 and Biology 17 entries in persisted route order.",
+    "evidence": [
+      "docs/production/claude-pm/youtube/brief28aa-final-readback.json",
+      "docs/production/claude-pm/youtube/brief28aa-preflight.json",
+      "docs/production/claude-pm/youtube/wave5-uploads.json"
+    ],
+    "unresolvedGates": []
+  },
+  "codexBriefs112113Oct30": {
+    "owner": "/root",
+    "date": "2026-10-30",
+    "scope": "Revision 2 error check and Year 12 coverage audit. Reports only. No lesson or published-video changes.",
+    "brief112": {
+      "status": "review-complete-eight-design-errors-one-separate-published-memory-finding-access-checks-open",
+      "ownership": {
+        "chemistry": "/root/chem_design_check",
+        "biologyAndSkills": "/root/bio_skills_check",
+        "integrationAndSiteVerification": "/root"
+      },
+      "report": "docs/production/claude-pm/checks/codex-check-112.md",
+      "evidence": [
+        "docs/production/claude-pm/checks/brief112-input-audit.json",
+        "docs/production/claude-pm/checks/brief112-site-verification.json",
+        "docs/production/claude-pm/checks/brief112-chemistry.md",
+        "docs/production/claude-pm/checks/brief112-biology-skills.md"
+      ],
+      "unresolved": [
+        "Resolve eight reported design errors before recording",
+        "Current staff-only potassium dichromate Appendix D entry and culture permissions not accessible",
+        "P06 detergent screen does not establish complete recipe or example outcome values",
+        "Published Biology P02 memory line finding recorded; video unchanged"
+      ]
+    },
+    "brief113": {
+      "status": "audit-complete-independently-verified-partial-support-correction-integrated",
+      "ownership": {
+        "independentValidation": "/root/coverage_audit"
+      },
+      "report": "docs/production/claude-pm/checks/coverage-audit-2026-10-30.md",
+      "data": "docs/production/claude-pm/checks/coverage-audit-2026-10-30.json",
+      "note": "Dated audit and status hand-in appeared from another session during this task. Preserved and checked rather than overwritten.",
+      "review": "docs/production/claude-pm/checks/coverage-audit-2026-10-30-review.md",
+      "summary": {
+        "active": 192,
+        "public": 134,
+        "builtNotUploaded": 1,
+        "designed": 13,
+        "held": 3,
+        "notStarted": 41,
+        "publicPlaylistVideos": 145
+      },
+      "unresolvedLimits": [
+        "Video support does not establish student practical or depth-study completion",
+        "Independent reviewer verified all nine playlists but did not repeat saved five-page channel feed"
+      ]
+    }
+  },
+  "codexBriefs28ab116to121": {
+    "date": "2026-10-30",
+    "status": "reports-and-local-media-delivered-with-explicit-open-gates",
+    "owner": "/root",
+    "ownership": {
+      "117": "/root/brief117",
+      "118": "/root/brief118",
+      "120": "/root/brief120_121",
+      "121": "/root",
+      "28ab116119": "/root"
+    },
+    "resourcePolicy": "No renders or bundles. Sequential image processing and streamed ZIP verification. Work paused during low memory, resumed after recovery. No unrelated process terminated.",
+    "unresolvedGates": [
+      "Browser/native host unavailable: C02 upload and published P02 description correction are not applied.",
+      "Measured liquid-phase IR and solvent-labelled NMR checks remain incomplete where reported. Resolve recording blockers.",
+      "Author resolution, school-specific practical permissions where reported, owner artwork acceptance, exact voiced preview and human listening remain pending.",
+      "Matched-state framing and alignment exceptions are recorded in the per-brief hand-ins.",
+      "Archives are local only; no remote backup was made."
+    ],
+    "evidence": [
+      "docs/production/claude-pm/status.md",
+      "docs/production/claude-pm/checks/brief116-121-final-validation.json",
+      "docs/production/claude-pm/youtube/brief28ab-preflight.json",
+      "docs/production/claude-pm/assets/brief120-ir-followup.json",
+      "docs/production/claude-pm/checks/brief117-118-repair-archive-check.json",
+      "docs/production/claude-pm/youtube/brief28ab-access-block.json"
+    ],
+    "briefs": {
+      "116": {
+        "owner": "/root",
+        "state": "one-error-reported-three-plates-delivered"
+      },
+      "117": {
+        "owner": "/root/brief117",
+        "handIn": "docs/production/claude-pm/assets/brief117-hand-in.md",
+        "checkpoint": "docs/production/claude-pm/assets/brief117-media-checkpoint.json",
+        "state": "reports-and-artwork-delivered-see-open-gates"
+      },
+      "118": {
+        "owner": "/root/brief118",
+        "handIn": "docs/production/claude-pm/assets/brief118-hand-in.md",
+        "checkpoint": "docs/production/claude-pm/assets/brief118-media-checkpoint.json",
+        "state": "reports-and-artwork-delivered-see-open-gates"
+      },
+      "119": {
+        "owner": "/root",
+        "state": "two-errors-reported-two-alpha-cleanups-delivered"
+      },
+      "120": {
+        "owner": "/root/brief120_121",
+        "handIn": "docs/production/claude-pm/assets/brief120-hand-in.md",
+        "checkpoint": "docs/production/claude-pm/assets/brief120-media-checkpoint.json",
+        "state": "reports-and-artwork-delivered-see-open-gates"
+      },
+      "121": {
+        "owner": "/root",
+        "handIn": "docs/production/claude-pm/assets/brief121-hand-in.md",
+        "checkpoint": "docs/production/claude-pm/assets/brief121-media-checkpoint.json",
+        "state": "reports-and-artwork-delivered-see-open-gates"
+      },
+      "28ab": {
+        "owner": "/root",
+        "state": "local-preflight-complete-browser-blocked"
+      }
+    },
+    "finalCounts": {
+      "designInputs": 39,
+      "reviews": 60,
+      "pngDeliverables": 100,
+      "existingEdgeCleanups": 2,
+      "newSiteRows": 59,
+      "mediaArchives": 6
+    },
+    "sourceFollowup": {
+      "owner": "/root/brief117",
+      "state": "complete-access-blocked",
+      "report": "docs/production/claude-pm/assets/brief120-ir-followup.json",
+      "additionalMeasuredDatasets": 0,
+      "httpStatus": 403
+    },
+    "handInMetadataCheckpoint": "docs/production/claude-pm/assets/brief116-121-hand-in-checkpoint.json",
+    "artRepairCloseout": {
+      "mucus": "Protected lower RGBA region exactly matches unchanged reference; clean seam inspected.",
+      "flasks": "Three states share exact protected glass RGBA and identical alpha bounds.",
+      "open": "Existing unlit/calcium burner references differ; new blue matches calcium within 2 pixels. Other framing exceptions and owner acceptance remain documented."
+    },
+    "resourceCloseout": {
+      "checkedAt": "2026-10-30T22:55:13.898671+11:00",
+      "diskFreeGiB": 7.68,
+      "processing": "Sequential image operations; paused during low memory; no unrelated process terminated."
+    },
+    "continuation20261031": {
+      "owner": "/root",
+      "catalogAuditOwner": "/root/brief117",
+      "state": "continuation-recorded-browser-and-measured-spectrum-gates-open",
+      "report": "docs/production/claude-pm/assets/brief116-121-continuation-2026-10-31.md",
+      "checkpoint": "docs/production/claude-pm/assets/brief116-121-continuation-2026-10-31-checkpoint.json",
+      "changedAuthorDesigns": 19,
+      "preparedC02HashesMatch": 4,
+      "additionalMeasuredIRRecords": 0,
+      "acceptedIRCompounds": 3,
+      "requiredIRCompounds": 10
+    }
+  },
+  "briefs12712428abNov01": {
+    "owner": "/root",
+    "status": "handed-in-reviews-and-plates-with-key-and-browser-blockers",
+    "ownership": {
+      "g02Reviews": "/root/g02_reviews",
+      "p01ReviewsAndSiteLog": "/root/p01_reviews",
+      "speechPilotAndYouTube": "/root/tts_upload",
+      "flaskPlatesAndHandIn": "/root"
+    },
+    "gates": [
+      "Claude resolves 8 unique should-fix findings across two designs",
+      "Claude and owner artwork acceptance",
+      "Exact implemented motion and voiced review plus human listening",
+      "Google AI Studio key required before brief124 samples",
+      "Browser host unavailable; Computer Use stopped because Chrome URL could not be verified",
+      "No C02 upload or P02 description save/readback applied"
+    ],
+    "results": {
+      "m5g02": {
+        "blockers": 0,
+        "uniqueShouldFix": 2
+      },
+      "m8p01b": {
+        "blockers": 0,
+        "uniqueShouldFix": 6
+      },
+      "newPlates": 2,
+      "newSiteFindings": 2,
+      "archiveMembersVerified": 15,
+      "brief124": "facts-complete-key-absent-samples-alignment-and-pipeline-not-run",
+      "brief28ab": "four-input-hashes-match-no-live-changes-browser-policy-stop"
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/m5g02-learning-review.md",
+      "docs/production/claude-pm/checks/m5g02-claude-science-check.md",
+      "docs/production/claude-pm/checks/m8p01b-learning-review.md",
+      "docs/production/claude-pm/checks/m8p01b-claude-science-check.md",
+      "docs/production/claude-pm/assets/brief127-provenance.json",
+      "docs/production/claude-pm/assets/brief127-media-checkpoint.json",
+      "docs/production/claude-pm/checks/google-tts-pilot-2026-10-31.md",
+      "docs/production/claude-pm/youtube/brief28ab-access-current-session.json",
+      "docs/production/claude-pm/youtube/brief28ab-input-check-current-session.json"
+    ]
+  },
+  "briefs12712812428ab28acContinuation": {
+    "status": "complete-except124-owner-has-no-google-key",
+    "owner": "/root",
+    "brief127": "verified-complete-current-designs-all-15-artifacts-and-archive",
+    "brief128": "complete-158-points-59-pages-10-packs-20-practice-questions-20-site-findings",
+    "brief124": "key-absent-owner-confirms-no-key-yet",
+    "youtube": "28ab-and28ac-complete-16-public-uploads-P02-description-corrected-six-playlist-readbacks",
+    "memory": "memory-exhaustion-observed-existing-render-jobs-preserved"
+  },
+  "brief129MathsCalculusKit": {
+    "owner": "/root",
+    "status": "handed-in-kit-24-stills-and-verified-silent-pilot",
+    "ownership": {
+      "graphsPilotIntegrationAndRenders": "/root",
+      "algebraAndSharedMathsBadge": "/root/algebra",
+      "independentGraphAndMathReview": "/root/algebra"
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-build-129.md",
+      "out/explainer/maths-calculus-kit-pilot/math-check.json",
+      "out/explainer/maths-calculus-kit-pilot/media-check.json",
+      "out/explainer/maths-calculus-kit-pilot/input-manifest.json",
+      "out/explainer/maths-calculus-kit-pilot/maths-calculus-kit-pilot.mp4"
+    ],
+    "unresolvedGates": [
+      "Claude playback-speed review of the exact silent MP4"
+    ],
+    "restrictions": "No lesson designs, narration, voice, publication or commits.",
+    "results": {
+      "scopedStrictTypecheck": "passed",
+      "sampledPlottedValues": 2774,
+      "numericalAssertions": 11398,
+      "desktopStills": 12,
+      "phoneLandscapeStills": 12,
+      "silentVideoFrames": 1800,
+      "silentVideoSeconds": 60,
+      "fullDecode": "passed"
+    }
+  },
+  "brief129130Nov1": {
+    "status": "handed-in",
+    "ownership": {
+      "calculusKit": "/root/kit129",
+      "reviews": "/root/review130",
+      "uploads": "/root/uploads",
+      "integration": "/root"
+    },
+    "scope": "Brief129 kit and silent pilot including addendum; brief130 independent checks; 28ab verification then remaining 28ac uploads",
+    "unresolvedGates": [
+      "Claude exact silent pilot playback review",
+      "Claude design repairs from brief130"
+    ],
+    "restrictions": "No commits, narration or design edits; preserve prior published uploads and existing work",
+    "results": {
+      "129": "72-second silent pilot,32 stills,scoped typecheck and11424 numerical assertions passed",
+      "130": "Maths0 blockers3 unique should-fix; Chemistry1 author destination error; Biology1 stale cue; no new learner science errors",
+      "uploads": "28ab verified complete; all20 brief28ac videos Public, timed captions published, playlist readbacks complete"
+    }
+  },
+  "brief131Nov1": {
+    "status": "handed-in",
+    "ownership": {
+      "reviews": "/root/review131",
+      "kit": "/root/kit131",
+      "integration": "/root"
+    },
+    "scope": "D02 learning/maths reviews; D01 Revision2 error check; reusable kit additions and root129 fixes",
+    "unresolvedGates": [
+      "Claude design repairs",
+      "Exact lesson playback/voiced review; earlier129 MP4 not refreshed"
+    ],
+    "restrictions": "No design edits, speech or commits",
+    "results": {
+      "d02": "0 blockers,3 unique should-fix",
+      "d01": "1 residual summary-strip error",
+      "kit": "three additions and all root129 fixes; scoped typecheck and11447 numeric assertions pass;32 stills refreshed"
+    },
+    "outputs": [
+      "checks/m-a12d02-learning-review.md",
+      "checks/m-a12d02-claude-science-check.md",
+      "checks/codex-check-131.md",
+      "checks/codex-build-131.md"
+    ]
+  },
+  "brief132Nov1": {
+    "status": "handed-in",
+    "ownership": {
+      "reviewsAndRoute": "/root/review132",
+      "reflectionKit": "/root/kit132",
+      "integration": "/root"
+    },
+    "scope": "D03 learning/maths, D02 Revision2 error check, Year11 entryKnowledge addition, reflection/custom-readout kit",
+    "unresolvedGates": [
+      "Claude design repairs",
+      "Claude reflection playback review",
+      "Exact voiced review and human listening"
+    ],
+    "restrictions": "No lesson design edits, speech or commits; edit only d03 route entryKnowledge array",
+    "results": {
+      "d03": "0 blockers,2 unique should-fix",
+      "d02": "2 residual visual/build errors and1 stale author note",
+      "route": "official Year11 ci9eb0125c added only to d03 entryKnowledge",
+      "kit": "reflection/custom rows; scoped typecheck and12081 assertions pass;12 stills and9s silent clip"
+    },
+    "outputs": [
+      "checks/m-a12d03-learning-review.md",
+      "checks/m-a12d03-claude-science-check.md",
+      "checks/codex-check-132.md",
+      "checks/codex-build-132.md"
+    ]
+  },
+  "brief133to135Nov1": {
+    "status": "all-three-handed-in-sequentially",
+    "order": [
+      "133",
+      "134",
+      "135"
+    ],
+    "ownership": {
+      "133reviews": "/root/review133",
+      "133kit": "/root/kit133",
+      "134": "/root (no sub-agents)",
+      "135": "/root (no sub-agents)"
+    },
+    "unresolvedGates": [
+      "Claude repairs134 findings (0 blockers,6unique should-fix,1optional)",
+      "Claude playback review of133/135 silent samples",
+      "Exact voiced timing and human listening"
+    ],
+    "restrictions": "Briefs strictly sequential; no lesson design edits,speech,commits",
+    "completed": {
+      "133": "Handed in before134: D04 no findings,D03 no errors; kit12 stills11sclip,typecheck12745checks",
+      "134": "Handed in before135:12 reports,d05 throughd10 reviewed sequentially;0 blockers,6 unique should-fix,1optional; official/source checks and site log",
+      "135": "All10 parts built;scoped typecheck;772 newchecks plus12745 regressions;40 stills;16s silentclip full decode passed"
+    },
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-build-133.md",
+      "docs/production/claude-pm/checks/m-a12d05-learning-review.md through m-a12d10-claude-science-check.md",
+      "docs/production/claude-pm/checks/codex-build-135.md",
+      "out/explainer/maths-strand-kit-pilot/brief135-manifest.json"
+    ]
+  },
+  "brief137Nov01": {
+    "owner": "/root",
+    "status": "complete-handed-in",
+    "outputs": [
+      "programme/syllabus/phys-new-y11.json",
+      "programme/phys-y11-video-map.md",
+      "programme/phys-y11-route-inputs.json",
+      "claude-pm/pre-design/phys-y11/",
+      "claude-pm/site-corrections-phys-y11.md"
+    ],
+    "evidence": "work/brief137/validation.json",
+    "results": {
+      "officialPoints": 168,
+      "siteLessons": 79,
+      "proposedVideos": 101,
+      "preDesignPacks": 12,
+      "candidatePracticeQuestions": 24,
+      "coverage": {
+        "covered": 117,
+        "partial": 17,
+        "missing": 34
+      },
+      "sourceHashesAndSectionIds": "verified",
+      "unassignedPoints": []
+    },
+    "unresolvedGates": [
+      "Claude writes final route and designs; confirm WS placement and resolve logged site corrections."
+    ],
+    "restrictions": "No subagents, designs, product code, speech, renders or commits."
+  },
+  "brief138Nov01": {
+    "owner": "/root",
+    "status": "complete-handed-in-findings",
+    "outputs": [
+      "checks/m5g02b-learning-review.md",
+      "checks/m5g02b-claude-science-check.md",
+      "checks/y11b-v01-to-v06-learning-and-science-reports",
+      "claude-pm/site-corrections-bio-y11.md"
+    ],
+    "results": {
+      "designs": 7,
+      "reports": 14,
+      "blockers": 1,
+      "uniqueShouldFix": 20,
+      "optional": 0,
+      "siteRows": 10
+    },
+    "evidence": "work/brief138/",
+    "unresolvedGates": [
+      "Claude resolves findings before recording.",
+      "V05 fresh human-tissue sampling gate; use prepared-slide fallback.",
+      "2026 staff-only NSW biological-material policy not accessible.",
+      "Human listening and built playback pending."
+    ]
+  },
+  "brief139Nov01": {
+    "owner": "/root",
+    "status": "complete-artwork-and-local-QA",
+    "outputs": [
+      "claude-pm/assets/brief139-manifest.json",
+      "claude-pm/assets/brief139-inspection.md",
+      "claude-pm/assets/brief139-validation.json",
+      "claude-pm/assets/brief139-qa/final/"
+    ],
+    "results": {
+      "newFinalPlates": 20,
+      "alphaOnlyRepairs": 2,
+      "onionLengths": 15,
+      "cheekEquivalentWidths": 8,
+      "bacteria": 10,
+      "originalRepairRgbAndInteriorsPreserved": true,
+      "neuronOriginalPreserved": true
+    },
+    "unresolvedGates": [],
+    "next": "Production reviewer accepts artwork in builds and resolves science review findings before recording."
+  },
+  "brief143ResumedRepairs": {
+    "status": "completed",
+    "owner": "Codex root",
+    "date": "2026-11-02",
+    "evidence": [
+      "docs/production/claude-pm/checks/codex-build-143.md",
+      "docs/production/claude-pm/assets/brief143-manifest.json"
+    ],
+    "remaining": [
+      "Claude playback judgment"
+    ],
+    "nextBrief": 144,
+    "laterBriefsStarted": false
+  },
+  "orderedBriefs143to152": {
+    "owner": "Codex root",
+    "completed": [
+      143,
+      144,
+      145,
+      152,
+      151,
+      147,
+      153,
+      146,
+      148
+    ],
+    "current": 149,
+    "remaining": [
+      149,
+      150
+    ],
+    "evidence": [
+      "docs/production/claude-pm/status.md"
+    ],
+    "unresolvedGates": [
+      "Brief 144 reported design errors",
+      "Claude playback judgment for 143"
+    ],
+    "ownerOrderChanged": "2026-11-02",
+    "delegation": "User explicitly requested sub-agents; nonoverlapping ownership within one active brief.",
+    "partOrder": [
+      2,
+      1
+    ]
+  },
+  "brief147Nov02": {
+    "status": "completed-hand-in",
+    "owner": "/root",
+    "order": "v07 to v12, complete both reviews per design before the next; all reviews before plates/components",
+    "agents": {
+      "learning": "/root/phys145_v09",
+      "science-and-official-safety": "/root/phys145_v10",
+      "independent-peer-and-asset-inventory": "/root/phys145_v11_v12"
+    },
+    "evidence": [
+      "docs/production/claude-pm/assets/brief147-manifest.json",
+      "docs/production/claude-pm/checks/brief147-bio-fa1-components.md",
+      "docs/production/claude-pm/status.md"
+    ],
+    "nextBrief": 153,
+    "reviews": "12 reports completed; six designs unchanged; one v10 practical blocker reported with source-backed agar replacement",
+    "expectedMandatoryPlates": 21,
+    "subsequentQueueRule": "After current queue, discover unfinished briefs numbered 154+ after every hand-in; no subagents, design edits or commits for those briefs.",
+    "results": {
+      "reviewReports": 12,
+      "blockers": 1,
+      "uniqueShouldFixAcrossVideos": 20,
+      "mandatoryPlates": 21,
+      "sharedComponents": 3
+    },
+    "unresolvedGates": [
+      "Designer resolves review findings before voicing; human listening and playback pending."
+    ]
   }
 }

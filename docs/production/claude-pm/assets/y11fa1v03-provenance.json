@@ -1,0 +1,31 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "root",
+      "name": "y11-root-cell-v1.png",
+      "path": "public\\assets\\biology\\y11-root-cell-v1.png",
+      "sha256": "15a6a8cd27a760341d7a1ba8886e184c1678cb361a04289c67cf3f4351ffe5f9",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas.",
+      "sourceCandidate": null,
+      "prompt": "Use case scientific-educational. Generate a single root cortex plant cell, same house fine ink and layered watercolour style, scale, line weight and viewpoint as the reference plant cell. 2000x2000 square transparent PNG with 8 percent clear margin. Boxy cellulose cell wall pale tan/cream NOT GREEN, thin membrane immediately inside, one very large pale-blue central vacuole, nucleus pushed to one side, several small orange mitochondria and several pearl-white rounded amyloplast starch grains. Short stubs of neighbouring walls at corners. No chloroplasts and no green anywhere. No text, labels, arrows, people, hands, faces, logos, ground shadow. Reference is for style, cell geometry and scale only; remove all green chloroplasts.",
+      "refs": [
+        "C:/lesson-video-generator/public/assets/biology/b6a-plant-cell-v1.png"
+      ]
+    }
+  ],
+  "repairs": [],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

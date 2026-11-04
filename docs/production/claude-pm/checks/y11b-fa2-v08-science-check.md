@@ -1,0 +1,17 @@
+# y11b-fa2-v08 science check
+
+Revision 1, 3 November 2026; design SHA256 `e19589003e7147e58d9b154c882e0e591e8ba5b31963041da46f3f7c550fbfd5`. Fresh official syllabus action `B25-FA2-G2-03`, official codename `ci18102c1a`: "Conduct a practical investigation to predict how changes in conditions affect photosynthesis". https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
+
+1. **Blocker:** The net/gross diagram equates bubbles with net oxygen, despite oxygen dissolving and bubble counts not measuring volume. Include dissolved oxygen and any other gas in the measurement explanation; net oxygen exchange is gross production minus respiration under matching conditions, not the count of bubbles. Repair the equation, memory line, feedback and notes before production. Replace existing claims and use the scene 8 improvement sentence as a cut if needed.
+2. **Should fix:** The second stream at a leaf may be real plant output; the note does not prove the 47 was an error unrelated to the rate. Retain it and recount, then state a predefined consistent counting rule and show sensitivity to inclusion instead of treating the value as automatically invalid. Preserve v07's record as root requires.
+3. **Should fix:** The 1.5% means 8, 15, 30, 44, 58 are still rising at the last point; they do not show a higher plateau. Say the curve rises above the first, and do not draw or infer a plateau beyond measured points. Sodium hydrogen carbonate also changes chemistry, not just measured CO₂; present the comparison as evidence consistent with a limitation, not proof.
+4. **Should fix:** A constant temperature column does not establish all other variables stayed constant or prove the cause. Say the control strengthens a causal interpretation and list unmeasured changes. Replace existing claim.
+5. **Should fix:** A falling temperature curve does not by itself show enzyme denaturation or damage. It can reflect multiple reversible limitations. Frame that as a possible explanation, not a deduction from the shape; apply the same change to attempt 1.
+6. **Should fix:** Equal 2-count spreads show consistency of these measurements, not guaranteed reliability. Three nearby observations alone do not establish repeatability across plants or days. Replace the absolute claim.
+7. **Should fix:** The inverse-square conversion is approximate for an ideal point source and may fail near a lamp with a water shield; label it as a model, not measured light. Keep the root-approved "about four times" sentence and the small-lamp condition.
+
+Numerical check: original-row means excluding the 47 are 8, 14, 26, 33, 35 bubbles/min; the alternate 15 cm mean including all four observations is 36.5. Relative point-source values for 40, 30, 20, 15, 10 cm are [6.25, 11.11, 25.0, 44.44, 100.0]%, rounding to 6, 11, 25, 44, 100. The 30 °C attempt mean is 26; the tested temperatures do not prove the continuous optimum lies between 20 and 40 °C without assumptions about curve shape. The enhanced dataset's last two values 44 and 58 do not form a plateau. [Heat-response experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC10192301/) identify multiple causes for a high-temperature decline.
+
+The L06 bubble-count issue was logged under v07. A transformed distance is relative intensity under point-source assumptions, not a measured true intensity; this is logged.
+
+Count: 1 blocker, 6 should fix, 0 optional; 5,292 separate and 5,306 joined characters, 15 scenes, about 517 s. No audio or playback checked.

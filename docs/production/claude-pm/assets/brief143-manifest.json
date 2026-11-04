@@ -1,0 +1,360 @@
+{
+  "brief": 143,
+  "status": "complete; Claude playback judgment pending",
+  "source_files": [
+    {
+      "file": "src/explainer/math/kit.tsx",
+      "sha256": "5a86fe179c72fb276e381ca8a9becff385a0d6d431e2533d983e6b491fb21c7c"
+    },
+    {
+      "file": "src/explainer/math/graphs.tsx",
+      "sha256": "51a1e4dba5f897034f6349e78200c2bc9bf8718049a3d12f1e8b1fab5af37070"
+    },
+    {
+      "file": "src/explainer/math/strand-parts.tsx",
+      "sha256": "5ec92eae9c64b9c183cf9434c8286bcbaeebccbd550f579325946c0904439254"
+    },
+    {
+      "file": "src/explainer/math/brief143-parts.tsx",
+      "sha256": "d9f7af6481e562e44c53c5818ab5b85f495a7f9ebfbef47ffc68cf85cec3bfc6"
+    },
+    {
+      "file": "src/explainer/math/brief143-pilot-entry.tsx",
+      "sha256": "a09b51b5e55c729331f13d788912ecbba4f7e595e4cae4ec27110403ba447682"
+    },
+    {
+      "file": "src/explainer/math/brief143-extra-entry.tsx",
+      "sha256": "06e09bdb4efbc12559613283ef44fc71401eff6ce4b62c3cfd76eccd5e69eb0c"
+    },
+    {
+      "file": "src/explainer/math/tsconfig.calculus.json",
+      "sha256": "1ff09a2aed13813f51e2c93c84be4f7b23b40dbfdd6542bd4f7859e284d86a69"
+    },
+    {
+      "file": "scripts/render-maths-brief143.mjs",
+      "sha256": "634d1c8d12e3fd63c5b894c48924b55cb24191fd89bec4aa0cdc7c44f54567e5"
+    },
+    {
+      "file": "scripts/render-maths-brief143-extra.mjs",
+      "sha256": "3f1b7cde47695cad8565f097508ac73fa3477e6ab07f2a5e018f3c1c83740450"
+    },
+    {
+      "file": "work/brief143-check.mjs",
+      "sha256": "0b59a745655dce431981c188f3cfde403089f09f1205be922fa2267f34011478"
+    },
+    {
+      "file": "docs/production/claude-pm/checks/codex-build-143.md",
+      "sha256": "68b41e18d549975cb63397cec5ee0865062e889fd4ab3107bcebb81f5e0f32a2"
+    },
+    {
+      "file": "work/brief143-regressions.mjs",
+      "sha256": "2cf7da05c2975cc874e8e65f1aed469f5db8bbf49c738e1a6f12963e88c85180"
+    },
+    {
+      "file": "work/brief143-sympy.py",
+      "sha256": "d714af78ad336e0340b5533dd48596161455d0ea99f5484beeb0149cba237dba"
+    },
+    {
+      "file": "work/brief143-sympy.json",
+      "sha256": "9ac16f4bce84af3855fbd8ce8104af017265c20c09da20cdce12f6db059ec2e8"
+    },
+    {
+      "file": "work/brief143-geometry.mjs",
+      "sha256": "b1e5f8970806c05e08fbb8a66eecd3553e642ab6fb5b0de99611b1d325dbc1bb"
+    },
+    {
+      "file": "work/brief143-crosscheck.mjs",
+      "sha256": "e332e9381b288759f0246537acdfde8f14d0d6f9e569556f53b7b72811d944ae"
+    },
+    {
+      "file": "work/brief143-symbolic-values.json",
+      "sha256": "be0e47e9cbe7aabfd0c4002f27a1346a3fa56db134ddb7addc073527df83271a"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-10.png",
+      "sha256": "2520077d183704b2bb08d42951c79fa03ae757569ec120c64d4931a67f89858c"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-100.png",
+      "sha256": "bb4839275173868ec915adca48cd2a777218fa010efe73f28d2ae7604bb8a41f"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-130.png",
+      "sha256": "644b44c7333f18f7ad55820dbffad3d07a20a25059401bab7f1b3bc8b28024bc"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-220.png",
+      "sha256": "201d253b20e550dc47c06aae3d802a6d2c7eeadcdebf2766687114a1f5178fa1"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-250.png",
+      "sha256": "a30f6b7c08ed207cd6ecba1194ffb5b356e4911ca8d5ddf940dd5e43de5b22e7"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-340.png",
+      "sha256": "6199eee92ff191960f6f3387fc7fa3334c12f0849cfad060e29439d40b0cdcc3"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-370.png",
+      "sha256": "085fb3ea43ca2ab6ffd8d356b4e940f775a855456cf812f7b78fc3c39863d6f9"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-460.png",
+      "sha256": "842b39909f1e6258357d5bff920a2e4ee0ea62669764dddc17bfff1c84a97f8e"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-490.png",
+      "sha256": "2a8ee26c50bbc3d00cad2cfb88b2221c5ace6c94aa0fbbd6d79de4f5dffc40d4"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-580.png",
+      "sha256": "50880ac12b48f56f3d4026c397682b414afc3f7c15acace7b6542056782e8580"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-610.png",
+      "sha256": "388d63521744014bd80b97672ef5e096fa2315a282303a4d8dc08d601370b7de"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-700.png",
+      "sha256": "5fd08637882efa062947ce17867eca5a7be5a55ec342c1660eb56b6c49461451"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-730.png",
+      "sha256": "0c487591a1b9af40105b26714e508012aaf7e6a26ce14224176711beb2729d18"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-820.png",
+      "sha256": "ea9278e5dae515e361722602a1e5c197f61b7fc4adf26236de9e1a88d593e80e"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-850.png",
+      "sha256": "bc0afcbeb0c81195f019a9ab6cc56cb1bad05d1edecea1bd809337d1b5a94f80"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-desktop-940.png",
+      "sha256": "9d94daff6fe0ec45c01574358ec2c1fb3aba45665bcb0e9027db62ad725d6cd5"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-100.png",
+      "sha256": "e47dcad683a8a24436a75975abf4a3fbbd8ba65291c8b9ec9d5101409e3990da"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-1060.png",
+      "sha256": "4d102f81fa53e04016038134ba29b6f2b7932cc5bf0a6515d01f7d063052e16a"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-1090.png",
+      "sha256": "03ad124e9855b69e59eb50ec9a8e9f4bae17e8ada04dbc7499018e13f31e61fa"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-1180.png",
+      "sha256": "03ad124e9855b69e59eb50ec9a8e9f4bae17e8ada04dbc7499018e13f31e61fa"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-1210.png",
+      "sha256": "7f51f1a4c23d58abb1b45e429cfe1007291f008b87fe252d3b1a6315e4eec5ab"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-1300.png",
+      "sha256": "59fe7a0621a94db2ef4b8c891e1ed6b605c300398268fb6baab296557cf51010"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-220.png",
+      "sha256": "917d3bbfb380176df148e613d0afbce70c48cd39d1f0a4d580672da2efa40d22"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-340.png",
+      "sha256": "7ce125ed6410e1347d4598b32cbab6a8f430410ca3b2392714c73145bcf15e6c"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-460.png",
+      "sha256": "a3ae77c78b0461fadccbf0274a77929e6e0274ed11ad320b0ad7ad255840f173"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-490.png",
+      "sha256": "460b1a330ce2644a622e79f542b8a7238ad0442d10aebd4214b1d36f544729ab"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-580.png",
+      "sha256": "37d88e6f459202d3af8da4063ae5affd08b3a7ebfccf6f23225731e5f5950d02"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-610.png",
+      "sha256": "497898464dea133fb127151927f19ce1cd6d04f638ce110b784df105be3aaca8"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-700.png",
+      "sha256": "d97dc8f862b044dbd03adfd57d195eac7c519db85998a9f9732a46aabb59ae10"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-730.png",
+      "sha256": "77c81321f970a70875a63569c2217002758defcaac0791cf00b43508adecf5aa"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-820.png",
+      "sha256": "29576fc315bc53b730f0d717d570593ccfe15bdebec8c3df237428b6d32ce48e"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-850.png",
+      "sha256": "5fe544ef66fac7bf20bf3ff3582108d1a348d90aed0cc285c319b89c047156f8"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-940.png",
+      "sha256": "0b73860718b00d182e6ca50820880e50b5fe4a30fae1919518333b936b5694cf"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-desktop-970.png",
+      "sha256": "f60a34796451e4021656b3b07730b129ac98648f23c07c44e4ee160ccd1dbdcc"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-100.png",
+      "sha256": "d2a338bf65856f1d1878d3ced833276067faac3d086e2ed05259cb5da3aa8051"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-1060.png",
+      "sha256": "ce9e8372c4a3cff79f38172ce8f3e7969d442855f983e7cbb29a8db68e74159d"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-1090.png",
+      "sha256": "c38d58b84e81cfe4d61efbb78982d356758f4b68fa39e6463a1f9803a7c9c03b"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-1180.png",
+      "sha256": "c38d58b84e81cfe4d61efbb78982d356758f4b68fa39e6463a1f9803a7c9c03b"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-1210.png",
+      "sha256": "79f487e1e5681e416d37a9094a2eeeda5d27c1e2a71b56993c0eeeeb4c60af1f"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-1300.png",
+      "sha256": "5b725217b6055b9ba6d5e69f4ac128d13425aa140fd54b272a7d811439028a3a"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-220.png",
+      "sha256": "ba617e1c126b4d16a2878b6d1adf6d5576ff15de9e2e48f12bb3362a3495a0e4"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-340.png",
+      "sha256": "90e30c1a81bf286d32983904baaedded99e1141f877cb04c626d468856661e71"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-460.png",
+      "sha256": "2cd04c40bca948ac323794d615d3339dc77100e4ebd98dfaa5ad5fc879da1c81"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-490.png",
+      "sha256": "babd7071d332937dfcc03e5606986e11db3a807bda3a789064faf203998ec473"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-580.png",
+      "sha256": "1a5a57bdcdf543f4642bc6c40c00c9dd4919abd35523ddc864e92e5c3c7f92a5"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-610.png",
+      "sha256": "cffff7fac30d42aea7122e2a8fc4fa5261dfeab1d178ae214ad8448cd1b0a853"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-700.png",
+      "sha256": "1fe289a2f61d2e0cdceed98ba7cb0126d10c386d9b859755b88de88aa54d295b"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-730.png",
+      "sha256": "afad87c488dc7db62669e5d9daa05d7a0227c6851d044df79efc4868965b3d22"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-820.png",
+      "sha256": "32ae847fc3af65a415e7cc04e763c5cfe6d1ff26281c43fcf2303b19a6e4c951"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-850.png",
+      "sha256": "e663b048240b611aa234160fb0ab3fc9f1a6007a926428f300c88574e7311daf"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-940.png",
+      "sha256": "f90a28bc0ee25e97fc3067f8c05373b73c0b557eebc182ed25dda031ee95740c"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-extra-phone-970.png",
+      "sha256": "b72193743d74ad3b56b22ed3447fed92652f9367f770e515839157ca2df494f0"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-10.png",
+      "sha256": "c17d9c580c33d1326120355b308363c85e2170b2ee4f2d0041820e4cb457c1b9"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-100.png",
+      "sha256": "2f8c8d108d0a449cb2c51142b3f736b4db5b9185a579a7e9f1fb9b136be85b23"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-130.png",
+      "sha256": "e65e762a0d919fb12e96643a2462f5518f95be8edb9efc7ac9813b5b5696b58b"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-220.png",
+      "sha256": "9215dcb6e5c0593fd3bc87b29b27cf8dffbc73d7caa5927dc139a8562debd1fd"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-250.png",
+      "sha256": "9194cc056250ff0ba23c12420702f586fcf412fe0a0d434b78d61d869d811740"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-340.png",
+      "sha256": "17ff7efd4300d0eb88facc0bb11bc585a64a3dbc83174d3c6827cc9b151021ca"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-370.png",
+      "sha256": "73b877c5798a7898c50a2b0a8da3929047ef099167e643510729e8e89d485598"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-460.png",
+      "sha256": "1a0878440ad058c5517d781072f1f13373b455111ffe062236c429694c3504c5"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-490.png",
+      "sha256": "dbd85237c3e620b36113440058a3bc192129951d561313be181e6e04790d9410"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-580.png",
+      "sha256": "e97cdbb9271448cb170eb9ea7f9a3cec1660f8cfcf715c94b3d4644460f21e2c"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-610.png",
+      "sha256": "07cbc3394c4aba187b83be64837d34cf9178ed42c982f7f2a2a4a1f38ef7db04"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-700.png",
+      "sha256": "27bda0d04ca072c7e69fff4b6b8e1117b57a33cb274266b0eff3c7dbcb005c35"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-730.png",
+      "sha256": "c7df068cfbae895e0fcc09938e54c23204143960681a780da49086578e634e10"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-820.png",
+      "sha256": "01cf0c41a039edbf73569b2cad1e1eb7b7ad973bcf48daa1b2902b8bf3b6b3d2"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-850.png",
+      "sha256": "a81efee5bd8ae1c2d3085e20251978b1d30f6d6a79e44a0d882f5dc49881b555"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-phone-940.png",
+      "sha256": "5eb8ac3bf04259921155328aa94e44e2fdb80a675a7c6f449be849a1ef07c8a0"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-motion-sample.mp4",
+      "sha256": "ec1adcf1a260d284f66146f60628c819f589416118d5edf18d6546dd83ce734b"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-media-check.json",
+      "sha256": "a4992f940a670604f3584a7fecd56faf463de65b7f26877edf48ce1a218dce10"
+    },
+    {
+      "file": "out/explainer/maths-strand-kit-pilot/brief143-render-manifest.json",
+      "sha256": "5e5f1beb45dbbf526d2b52bbb7adc39e31f179157424189eea5f71f4ed68d56e"
+    }
+  ]
+}

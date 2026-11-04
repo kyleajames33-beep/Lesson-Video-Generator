@@ -1,0 +1,64 @@
+{
+  "brief": 146,
+  "video": "v06",
+  "assets": [
+    {
+      "file": "public/assets/physics/phys-y11-drone-top-v1.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "sha256": "68dc2697e1d511bfecca5e72fff8cac3d0c52fb7daf3d43a74f646f5cc491af2",
+      "sourceCandidate": "work/brief146/candidates/drone.png",
+      "prompt": "overhead quadcopter X arms, translucent rotor discs, grey-white body, blue accent and amber front marker, parcel outline; transparent background, no shadow, people or text; house ink and watercolour style",
+      "alphaBounds": [
+        135,
+        156,
+        1365,
+        1343
+      ],
+      "treatment": "uniform scaling and transparent padding; alpha cleanup; original candidate retained"
+    }
+  ],
+  "coordinates": {
+    "dashboardApproxPx": {
+      "hub": [
+        730,
+        527
+      ],
+      "needleRadius": 210,
+      "firstLastAnglesDegreesCanvas": [
+        144,
+        396
+      ],
+      "odometerInterior": [
+        1065,
+        440,
+        1565,
+        627
+      ],
+      "clockInterior": [
+        1647,
+        483,
+        1932,
+        606
+      ]
+    },
+    "cartTowRingCentreApproxPx": [
+      1775,
+      635
+    ],
+    "cartWheelBaselineApproxPx": 978,
+    "sledgeTowEyeCentreApproxPx": [
+      1793,
+      429
+    ],
+    "sledgeRunnerBaselineApproxPx": 730
+  },
+  "qa": [
+    "brief146-qa/contact-black.png",
+    "brief146-qa/contact-white.png",
+    "brief146-qa/phone-landscape-contact.png",
+    "brief146-qa/v10-composed-scale.png"
+  ]
+}

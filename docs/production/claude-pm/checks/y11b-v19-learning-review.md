@@ -1,0 +1,13 @@
+# y11b-v19 learning review
+
+Revision 1, 3 November 2026; design SHA256 `56a61d4593c51e42a8d8421edb8159323355212045e309a9ea311f18b4fee69d`. The opening reproduces v18's role board, enzyme and starch cue. The two three-panel drawings supply the syllabus verb "use diagrams"; the ghost outline makes the difference visible before students apply it in the attempts. Terms model, complementary, complex and induced are introduced before use. The comparison returns the same substrate and makes the model change visible; v20 receives factors that affect enzyme rate.
+
+1. **Blocker, shared with science:** Scenes 1 and 2 state as an observation that every enzyme acts on just one substrate. Many enzymes accept a group of substrates, and the previous lesson explicitly allows a few similar ones. Present the diagrams as one enzyme and its chosen substrate, and state specificity means selective recognition, which may include related substrates. Replace the universal claims and align both model comparisons.
+2. **Should fix, shared with science:** A near-match can bind the active site without undergoing the illustrated reaction, including when it acts as a competitive inhibitor. The diagram may stipulate that this drawn example does not react, but its shape alone does not establish that all near matches cannot bind. Replace the absolute in scenes 3, 9 and feedback; keep the no-product result as a stated model example.
+3. **Should fix, shared with science:** Scene 6 treats substrate bond strain as the universal reason for induced-fit catalysis. Enzyme conformational change can also align catalytic groups and exclude water; mechanisms vary. Show strain as one possible example and explain that the change helps form a catalytically useful complex. Replace the existing clause.
+4. **Should fix, shared with science:** Attempt 2 crosses out "substrate changes shape" without explaining that the model's defining movement is the enzyme's. Substrates can also be distorted during binding or reaction, as scene 6 itself says. Cross out "only the substrate changes while the enzyme remains rigid" instead; distinguish which change identifies induced fit.
+
+
+The near-miss prediction and the card's comparison remain useful once the case is stipulated. Hexokinase evidence is real, but illustrations are idealised models and should not claim a single image proves every enzyme uses the same mechanism. The named repairs replace existing clauses; use the reserve cut if the 570-second cap is exceeded. No playback, audio or final plate inspected.
+
+Count: 1 blocker, 3 should fix, 0 optional; 5,820 separate and 5,836 joined characters, 17 scenes, about 562 s. No design edit, voice or render.

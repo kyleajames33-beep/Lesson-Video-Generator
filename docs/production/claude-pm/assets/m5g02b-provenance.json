@@ -1,0 +1,31 @@
+{
+  "brief": 139,
+  "status": "complete-artwork-and-local-QA",
+  "method": "Built-in image_gen for painted masters; local pixel editing explicitly authorised by user on1November2026; final script work/brief139/finalize.py.",
+  "assets": [
+    {
+      "key": "crucible-r2",
+      "name": "m5-g02b-open-crucible-v1.png",
+      "path": "public\\assets\\chemistry\\m5-g02b-open-crucible-v1.png",
+      "sha256": "020bace330fd65460226cadd5718174b30c8056fb6231161444ca38fe444a215",
+      "dimensions": [
+        1280,
+        1920
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "localEdits": "Removed saturated matte edge pixels and isolated debris; uniformly fitted and padded to commissioned canvas. Removed broad low-alpha haze, preserving solid apparatus and flame.",
+      "sourceCandidate": null,
+      "prompt": "Edit target only background alpha. Remove ALL the grey and white glow/haze surrounding the crucible, tripod and Bunsen burner. Every pixel outside the actual solid apparatus and blue flame must be truly transparent. Keep all object geometry, powder, ceramic, triangle, tripod and blue flame EXACTLY unchanged. No shadow or backdrop, no halo. Preserve portrait composition. Also clean any fluorescent edge fringe, neutral antialiasing only. No text.",
+      "refs": [
+        "C:/Users/kygs/.codex/generated_images/01a194ab-8d7f-7f81-a6ed-1a48ce1c9b9e/exec-edbd11db-8957-4f3b-93db-445ccd77afec.png"
+      ]
+    }
+  ],
+  "repairs": [],
+  "qaDirectory": "docs\\production\\claude-pm\\assets\\brief139-qa\\final",
+  "unresolved": [],
+  "note": "Final artwork and local QA complete. Use y11-neuron-v1.png for the neuron replacement; the original neuron.png is preserved. Design/build acceptance remains with the production reviewer."
+}

@@ -1,0 +1,12 @@
+# y11b-v29 learning review
+
+Revision 1, 3 November 2026; design SHA256 `90e86bc5b6f5ac887a254593f82796f5e076245c9f11e86b34befa34a4db5f7b`. The actual root-edited opening matches v28's phase strip, bead model and daughter cells, despite the stale assumption paragraph. The same long/short, pink/teal 2n=4 model carries through both divisions, and chromosome versus chromatid counts are tracked before the fruit-fly transfer task. A1 uses givens; A2 requires the doubled anaphase-I structure. The crossing-over explanation leaves variation causes to v30.
+
+1. **Should fix, shared with science:** The handoff states all four products are different. Crossing over and independent assortment create variation, but identical products remain possible. Say the products can differ and ask why; carry that qualification into v30. Replace the existing line.
+2. **Should fix, shared with science:** Scene 10 says the centromeres split. As in v28, sister-chromatid cohesion is removed and the centromeres separate; use that wording without suggesting a centromere itself is cut in two. Replace the clause.
+3. **Should fix, shared with science:** The cross-over inset shows exchanged segments, while the subsequent stage plates use pure parental colours. Root decision 32 keeps those plates and the screen note; explicitly identify the later colour coding as a simplified homologue-origin key that does not depict the exchanged segment. Do not imply every sister remains genetically identical after crossover.
+4. **Should fix, shared with science:** The four-cell diagram is a general meiosis model, not four mature human eggs. Keep the existing polar-body note visible when human gametes are mentioned; in human oogenesis typically one egg and polar bodies result, while plants and fungi can produce spores. Scope statements to the illustrated animal model.
+
+The full-size existing `cd-m1-anaphase-v1.png` was inspected: four doubled chromosomes are visible, one long and one short at each pole, each with two discernible sister chromatids. Keep root's inherited stage plates and the painted-chromosome rule. Named sentence replacements and the reserve cut keep timing near the accepted cap; source-only review does not approve playback or a conducted student practical.
+
+Count: 0 blockers, 4 should fix, 0 optional; 5,829 separate and 5,847 joined characters, 19 scenes, about 571 s. No design edit, voice or render.

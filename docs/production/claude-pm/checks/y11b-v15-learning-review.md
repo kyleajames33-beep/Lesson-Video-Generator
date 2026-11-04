@@ -1,0 +1,14 @@
+# y11b-v15 learning review
+
+Revision 1, 3 November 2026; design SHA256 `2927067a6d609fc17df6df5ece50153cdab5f9776322775629d07f18efe0f4cb`. Entry traced from Stage 5 word equations and v02, v03, v08, v11 to v14. The opening follows the actual v14 handoff, introducing six material chips and plant and animal cells. The three needs categories precede the six roles; the leaf versus root task uses the cross-cell comparison. Attempt cards show their givens without the answer, and v16 owns the detailed respiration sequence.
+
+1. **Should fix, shared with science:** Scene 4 says ATP-driven pumping is among the first jobs to fail whenever oxygen falls. Timing varies with cell, oxygen supply, reserves and demand; the script provides no basis for that ranking. Say that prolonged shortage can reduce ATP available for pumps and other jobs, replacing the existing sentence.
+2. **Should fix, shared with science:** The final cue sends glucose itself into mitochondria and conflicts with v16's approved cytoplasmic breakdown before mitochondrial entry. Follow the products of glucose breakdown and oxygen into respiration, or say "follow glucose and oxygen through respiration" without showing intact glucose entering the mitochondrion. Replace the cue and visual, with no extra scene.
+3. **Should fix, shared with science:** The seedling feedback says nitrate deprivation means no amino acids, no new proteins and no new cells, but the illustrative nitrate-free plants still gain mass and seedlings can use stored nitrogen. Say less nitrate limits nitrogen available for new amino acids and proteins, reducing growth. Replace the absolutes in feedback and marking notes.
+4. **Should fix, shared with science:** The diagram labels water as a net outward flow from the animal cell solely because respiration produces water. Water movement depends on the full water balance, and production alone does not determine net membrane direction. Show "water made in respiration" without an outward net arrow; replace the existing label.
+5. **Should fix, shared with science:** "The cell's chemicals dissolve in water" and the dry-grid comparison make an absolute claim about all substances and reactions, although membrane lipids do not dissolve and reactions can occur in membranes. Say many cell chemicals dissolve and meet in water. Replace the sentence and label without adding a scene.
+
+
+The memory aid is a figure of speech rather than a numerical half; explain it using the preceding examples. The accepted sodium/potassium signalling clause fits the ion examples without another scene. Oxygen shortage, nitrate and water corrections can replace existing language; use the named reserve cut if delivery exceeds the cap. Source-only review: playback and listening untested.
+
+Count: 0 blockers, 5 should fix, 0 optional. Recount 5,815 separate and 5,829 joined characters, 15 scenes, about 527 s. No design edits, voice or render.

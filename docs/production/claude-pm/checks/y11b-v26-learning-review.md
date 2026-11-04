@@ -1,0 +1,12 @@
+# y11b-v26 learning review
+
+Revision 1, 3 November 2026; design SHA256 `27e13dfb81bad54f8dd6e8fc2138ef115e8ced27bcae72eddb1d6d368487687c`. The scene opens on v25's two book-page diagrams and nucleus handoff. The 2n=4 model gives the doubling problem before diploid, haploid and homologous are named. Pink egg-derived and teal sperm-derived sets are clear in the intended model; karyotype cards sit beside the cell rather than drawing chromosomes over a painted stage. The fruit-fly and germline-mutation cards require transfer of the explanation, and the cell-cycle handoff sets up v27.
+
+1. **Blocker, shared with science:** The human example says all 23 chromosome pairs are the same length and carry the same genes, and that every sperm has one copy of every gene. X and Y differ in size and gene content apart from homologous regions; a Y-bearing sperm does not contain every X-linked gene. Use autosomes for the matching-pair model, note the sex-chromosome exception briefly, and say one chromosome from each pair rather than one copy of every gene.
+2. **Should fix, shared with science:** "Nearly all" human body cells share a diploid chromosome set is false when mature red blood cells, which lack nuclei, are counted. Scope the number to a typical nucleated diploid somatic cell and note that anucleate red cells are an exception. Update the comparison and notes in the same cue.
+3. **Should fix, shared with science:** The statements that every human generation has 46 chromosomes and every gamete has 23 imply that viable chromosome-number variations never occur. Present 46 and 23 as the typical human complement, retaining the doubling argument as a model.
+4. **Should fix, shared with science:** "A sperm adds little more than a nucleus" is acceptable as a cytoplasm comparison but omits other essential sperm contributions, and "every cell" in the offspring inherits a mutation without qualification overlooks later cell variation. Keep the egg providing most cytoplasm, and say a sperm carries genetic material that can be passed on through the zygote.
+
+The card analogy works for the two model autosomal pairs once its scope is explicit. Apply root's painted stage, matched-locus and pink/teal rules to any real-cell plates. The named repairs replace existing clauses; at about 570 s use the reserve cut if needed. No animation or listening inspected.
+
+Count: 1 blocker, 3 should fix, 0 optional; 5,770 separate and 5,790 joined characters, 21 scenes, about 570 s. No design edit, voice or render.

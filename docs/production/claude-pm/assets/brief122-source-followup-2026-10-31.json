@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-31",
+  "kind": "additive source follow-up",
+  "original_archive": "out/archives/brief122-rev2-check-and-plates-2026-10-31.zip",
+  "original_archive_sha256": "af3eb8105d7a4c640fb36e6f714d79a1a1586e12639a671a0cd8354975d42a18",
+  "original_checkpoint_preserved": "brief122-media-checkpoint.json",
+  "counts": {
+    "cannot verify": 9,
+    "verified": 20,
+    "corrected": 2
+  },
+  "new_error_findings": 6,
+  "changes": [
+    {
+      "item": "P03 0.1 mol/L calcium flame visibility",
+      "previous_result": "cannot verify",
+      "result": "verified",
+      "evidence": "The [Western Carolina University Chem 132 procedure, printed p3](https://www2.chem21labs.com/labfiles/westerncarolina_gl132lab03_procedure.pdf) specifies 0.1 M CaCl2, a nichrome wire loop, a thin solution film and brief placement at the top of the blue cone to observe colour. The [RSC procedure](https://edu.rsc.org/experiments/flame-tests-the-wooden-splint-method/759.article) identifies calcium as brick-red. Together these verify documented use of the requested concentration and loop method, not guaranteed visibility on every bench. Use a clean loop and the documented flame conditions; no concentration change is inferred."
+    },
+    {
+      "item": "B09 exact 17,443 count",
+      "previous_result": "cannot verify",
+      "result": "verified",
+      "evidence": "[Cancer Australia melanoma statistics](https://www.canceraustralia.gov.au/cancer-types/melanoma-skin/melanoma-skin-statistics), updated 18 December 2025 and explicitly sourced to AIHW Cancer Data in Australia 2025, prints 17,443 estimated new cases in 2025: 10,187 males plus 7,256 females. It also gives 94% five-year relative survival for 2017 to 2021. The exact count and rounded 17,400 tag are supported when labelled as the 2025 estimate. Relative survival is not an individual cure chance."
+    }
+  ],
+  "scope": "Independent source verification only. No design, narration, source code, image or historical manifest edits. Existing source and cultural holds remain."
+}

@@ -100,3 +100,135 @@ Confirmed 2 November 2026 against the current page (SHA256 `a879a4abec75f953c3df
 | FA1 L10 | Active transport is powered by the hydrolysis of ATP, whose released phosphate changes the shape of the carrier protein and so carries the bound substance across the membrane. | For a direct P-type pump, ATP transfers a phosphate to the protein during its cycle; secondary uptake can use an ion gradient maintained by ATP without direct phosphate transfer to each uptake carrier. | [Nitrate transporter study](https://www.nature.com/articles/nature13116), [ATP-driven potassium pump study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7535926/) |
 
 The one-third whole-body ATP statement requires its source and physiological context; it is a source request, not a confirmed numerical error.
+
+### L10 bulk-transport scope (brief 150, v13)
+
+- L10 walk-through b1 step 4 and its full-mark answer define endocytosis only as uptake of matter too large for any transport protein; fluid-phase pinocytosis can also take in small dissolved molecules in bulk. Describe large particles or amounts of fluid/material taken into vesicles.
+- Step 5 says exocytosis prevents a cell from "shrinking"; its membrane-recycling explanation concerns replenishing surface membrane, while volume is a separate quantity. Clarify the surface-area claim.
+
+### L11 material routes (brief 150, v14)
+
+- Walk-through b1 step 4 and the full answer imply the same glucose carrier is directly ATP-driven for facilitated and active uptake. Kidney and intestinal sodium-glucose cotransport uses a different carrier powered by the sodium gradient maintained by ATP-dependent pumping.
+- The kidney example says no glucose is lost in urine; ordinarily almost all filtered glucose is recovered, but saturation and disease can cause loss.
+- The full answer generalises that all cells produce urea; urea is made mainly in the liver.
+- Walk-through b2 says endocytosis is reserved for material too large for proteins; fluid-phase uptake also captures small dissolved molecules. Cross-reference L10 v13.
+
+### L12 cell requirements (brief 150, v15)
+
+- Misconception box compares the speed of failure from water/ion and fuel deprivation without conditions; retain the importance of each without an unsupported universal speed comparison.
+- Why-it-matters and SA Q3 present cramp as a necessary consequence of electrolyte loss after sweating; evidence supports multiple possible factors, so do not state this causal outcome as inevitable.
+- Card 3 says all the cell's chemicals dissolve in water; membrane lipids do not, and reactions also occur in membranes. Say many chemicals dissolve and react in the aqueous environment.
+
+### L13 respiration (brief 150, v16)
+
+- The why-it-matters paragraph presents a breathalyser as a detector of aerobic respiration; an ethanol breath test detects alcohol, while a CO₂ sensor can detect exhaled carbon dioxide.
+- Walk-through b2 step 3 asserts that the energy from one glucose molecule released as heat would raise the cell enough to denature enzymes; the quantitative claim lacks support. Describe the benefit of controlled energy capture without that assertion.
+- ATP wording repeatedly puts energy into or released from a single terminal bond; describe chemical energy transferred to ATP and the overall reaction rather than implying that bond breaking alone releases energy.
+
+### L14 photosynthesis (brief 150, v17)
+
+- Card 3 and figure caption say energy cycles with carbon and oxygen. Matter cycles, while energy enters as light and is transferred and dissipated as heat.
+- The compare answer says some bacteria photosynthesise in chloroplasts; photosynthetic bacteria lack chloroplasts and use photosynthetic membranes.
+- Describe-answer wording that chlorophyll emerges unchanged and acts as a catalyst is loose mechanistically; it is not a net reactant in the summary equation, but is restored and replaced over time. Cross-reference the earlier ATP and bond-energy wording item.
+
+### L15 enzymes (brief 150, v18)
+
+- The justify answer says proteins denature above about 40 °C without specifying organism, protein or exposure. Thermal stability varies and there is no universal sharp threshold; describe damaging high temperatures for the human-cell example.
+- The detergent example calls grass a protein stain. Grass marks contain pigments as well as other material; use a clearly protein-rich example or explain the role of protease without implying protein is the sole stain.
+
+### L16 enzyme models (brief 150, v19)
+
+- Q3 assumes every similar molecule cannot bind the rigid site. Some similar molecules can occupy the site without reacting, as competitive inhibition on the same page illustrates. State the particular model case or accept binding without product.
+- The evaluate answer says a rigid active site cannot account for several related substrates. A group of similar molecules can share complementary features, so scope the claim to limitations of the simplified model.
+
+### L18 enzyme graphs (brief 150, v20)
+
+- Card 2 and the misconception/memory wording treat the full pH fall as denaturation, while the detailed explanation recognises ionisation changes and extreme-pH denaturation. Restore the distinction, including reversible near-optimum effects.
+- The definition calls denaturation permanent without exception. Some proteins regain structure or activity under suitable conditions; describe permanent loss as common in the illustrated severe-heat case, not universal.
+- A perfectly symmetrical pH curve is a possible illustration rather than a necessary graph shape for every enzyme.
+
+### L17 enzyme investigation (brief 150, v21)
+
+- The full method says to discard any obvious outlier; an unusual result needs investigation and a documented reason for exclusion. Retain raw results and justify exclusions.
+- The 20/40/60 °C readings do not establish that the maximum lies specifically from 30 to 50 °C without extra assumptions; take finer measurements and report the sampled range.
+- The source calls peroxide corrosive without specifying the concentration and proposes an 8% test. Check the exact product SDS, current school chemical category and local risk assessment; the public material checked did not establish a universal school cutoff.
+
+### L19 DNA structure (brief 150, v22)
+
+- Q2 lists three A–T and three C–G pairs: 3×2 + 3×3 = 15 hydrogen bonds, not 14. Correct both the pair count and total.
+- The hook says every cell contains about two metres of nuclear DNA. Mature human red blood cells lack nuclei and are numerous; use a typical nucleated diploid cell, not "nearly every cell".
+- "A and T are the two-letter pair" does not distinguish them from C and G, also two letters. Clarify the mnemonic without replacing the A–T/C–G pairing rule.
+
+### L20 DNA replication model (brief 150, v23)
+
+- The page says models usually hide antiparallel direction but elsewhere credits a model with making it visible; say that a model can show it if strand direction is marked.
+- The ~1000 bases-per-second figure has no organism or fork scope; specify the organism and rate per fork with a source. Human and bacterial fork rates differ, and multiple origins contribute to whole-genome timing.
+- The leading-strand wording "toward the fork" is clearer as synthesis in the same direction as fork movement.
+
+### L21 DNA organisation (brief 150, v25)
+
+- The comparison says eukaryotes lack plasmids; yeast has a naturally occurring 2-micron plasmid. Scope to typical examples.
+- Several billion base pairs is appropriate for human cells, not a general typical size for every eukaryote.
+- The reflection implies bacteria do not need DNA compaction; bacterial chromosomes are compacted by supercoiling and associated proteins.
+
+### L22 somatic and gametic cells (brief 150, v26)
+
+- The page assigns 46 chromosomes to all human somatic cells. Scope this to typical nucleated diploid cells; mature red blood cells have no nucleus, and other cells can vary.
+- Extra chromosome sets are not uniformly fatal across animals; specify the relevant human or mammalian context rather than treating the claim as universal.
+
+### L23 cell cycle (brief 150, v27)
+
+- The hook gives two trillion new cells daily and calls every one an exact copy with the same chromosome count. Verify the turnover estimate and scope the claim; mature red cells lose their nuclei and errors can occur.
+- G2 is described as proofreading all newly copied DNA; distinguish polymerase proofreading during synthesis from checkpoint signalling and DNA repair, which operate across stages.
+
+### L24 meiosis (brief 150, v29)
+
+- Four meiotic products are not universally four mature gametes: human oogenesis produces an egg and polar bodies, while plants and fungi form spores. Scope the outcome to the organism.
+- The claims that all four products and all gametes are necessarily unique are too absolute; variation makes repeated combinations less likely, not impossible.
+- Meiosis is not confined to animal reproductive organs across all organisms. Clarify the animal setting and distinguish assortment of pairs from segregation of homologues.
+
+### L24 variation comparison (brief 150, v30)
+
+- SA3 mixes random fertilisation with the listed processes of meiosis and claims crossing over contributes most without sufficient comparative data. Separate fertilisation and accept a supported, appropriately scoped judgement.
+
+### L25 evaluation (brief 150, v31)
+
+- The assertion that only meiosis generates anything new conflicts with new alleles arising through mutation; distinguish new alleles from new combinations.
+- Asexual reproduction is not always mitosis: prokaryotic binary fission is one counterexample.
+- Removing any process is not universally fatal to an individual; scope the effect to the specified life cycle or task.
+
+### FA2 L01: Volvox colonial cells (3 November 2026)
+
+The current introduction calls Volvox cells identical; the colonial vocabulary says each cell can survive alone. Volvox has distinct somatic and reproductive cells. Use a simpler colony for the independence example and identify Volvox reproductive division of labour. [Volvox primary study](https://pubmed.ncbi.nlm.nih.gov/1985018/); [Gonium primary study](https://pmc.ncbi.nlm.nih.gov/articles/PMC4844696/). No site edit.
+
+### FA2 L02: large cells and agar penetration (3 November 2026)
+
+The misconception box says large cells cannot survive; large cells exist, including cells with shapes or internal organisation that change exchange constraints. The agar answer says acid reaches the small cube centre in the available time although the prompt gives no penetration rate or measurement. State that equal penetration depths occupy a larger fraction of the small cube and do not assert complete penetration without evidence. [Cell-size and uptake study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12167981/). No site edit.
+
+### FA2 L03: hierarchy, heart rhythm and tissue composition (3 November 2026)
+
+The ladder describes each level as assembled from the level above while listing smallest to largest; clarify that each larger level contains smaller components. The heart explanation says nervous tissue sets its rhythm; the heart has intrinsic pacemaker cells and nerves adjust its rate. The tissue memory line says one cell type; intestinal epithelium includes different cell types. [Intestinal cell study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7041720/). No site edit.
+
+### FA2 L05: unlimited light (3 November 2026)
+
+The discuss answer says light and CO₂ can be raised indefinitely without harming the plant. Excess light can inhibit photosynthesis and damage its apparatus; limit the comparison to a specified range. [Wheat experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC1080141/). No site edit.
+
+### FA2 L06: pondweed and bubble measurement (3 November 2026)
+
+The site recommends Cabomba for an investigation, although NSW WeedWise lists regional restrictions and controls; use a plant approved by the school and follow local biosecurity advice. It calls bubble counting a direct measure of photosynthesis; variable bubble size, dissolved gas and respiration make it an imperfect proxy. [NSW WeedWise](https://weeds.dpi.nsw.gov.au/Weed?id=26). No site edit.
+
+### FA2 L06: lamp-distance conversion (3 November 2026)
+
+The site calls 1/d² true light intensity. It is a relative approximation for a point-like source in suitable geometry; measure illuminance or state the model assumptions for a real lamp and shield. No site edit.
+
+### FA2 L07: xylem direction and tissue composition (3 November 2026)
+
+The page says water never travels down xylem, although xylem transport can vary in direction, and defines xylem tissue entirely as dead hollow vessels although xylem includes other cell types. Distinguish the usual upward transport from an absolute rule and distinguish vessels from the whole tissue. [Xylem vessel study](https://pmc.ncbi.nlm.nih.gov/articles/PMC59064/). No site edit.
+
+### FA2 L07: phloem loading (3 November 2026)
+
+The phloem section treats active energy-using loading as universal. Some species load passively via connected cells; describe active loading as a mechanism used by some plants. [Comparative experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC3375970/). No site edit.
+
+### FA2 L09: mineral uptake and transport (3 November 2026)
+
+The site says blocking transpiration means the plant struggles to take up minerals because the stream stalls. Mineral uptake by root cells and delivery in the xylem are different processes; reduced transpiration can slow delivery to the shoot without proving that all active uptake stops. Clarify which movement is meant. [Root water transport research](https://pmc.ncbi.nlm.nih.gov/articles/PMC9579117/). No site edit.
