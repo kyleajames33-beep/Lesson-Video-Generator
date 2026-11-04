@@ -883,3 +883,23 @@ Evidence: `work/brief153/t02-calculations.py`.
 ### 109. Random variables lesson 9: continuous mode phrasing
 
 **Location:** `random-variables/lesson09.sa.html`, card 06. Calling the mode the “most likely region” mixes a value and a region. Define the mode as the value where density is greatest; equal-width small neighbourhoods around a higher-density point have greater approximate probability. Brief 162, 4 November 2026.
+
+### 110. Random variables lesson 10: symmetry needs a single peak for mode coincidence
+
+**Location:** `random-variables/lesson10.sa.html`, opening. Symmetry alone does not ensure that mean, median and mode coincide. A symmetric bimodal density may have modes away from the centre; a uniform density has no unique mode. Qualify the assertion with a single central peak. Brief 162, 4 November 2026.
+
+### 111. Random variables lesson 10: skew does not force mean and median to differ
+
+**Location:** `random-variables/lesson10.sa.html`, trap 04. The claim that mean and median agree *only* for symmetric densities, and always differ when skewed, is too strong. Non-symmetric distributions can have equal mean and median. Use “usually differ” when describing skewed examples. Brief 162, 4 November 2026.
+
+### 112. Normal distribution lesson 2: empirical rule is approximate
+
+**Location:** normal distribution lesson 2, card 06. Its lead-in calls the 68–95–99.7 percentages exact, contrary to its own precision note. The corresponding normal areas are approximately 68.27%, 95.45% and 99.73%. State that the rule gives approximate percentages. Brief 162, 4 November 2026.
+
+### 113. Normal distribution lesson 2: empirical rule is not the start of every problem
+
+**Location:** normal distribution lesson 2, card 02. “Every normal probability problem starts here” overstates the empirical rule, which is only useful for quick standard-deviation-band estimates. Most arbitrary probabilities require standardisation and a table or technology. Brief 162, 4 November 2026.
+
+### 114. Normal distribution lesson 2: exam-mark shapes are conditional
+
+**Location:** normal distribution lesson 2, card 05. Exam marks are discrete and bounded, so they cannot be exactly normal. Replace “normal” with “sometimes approximately normal” for sufficiently broad and well-designed assessment data. Brief 162, 4 November 2026.
