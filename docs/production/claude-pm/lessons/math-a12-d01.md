@@ -373,3 +373,10 @@ What changed and why: the owner rejected the rendered v1 as boring, with no imag
 - A new stage every 16 to 85 s, each with its own visual idea, instead of one graph for most of the video.
 - Memory aid now in flask terms (growth per cell, start time, how many flasks), replacing the playback-speed analogy. SecantToTangent and the gradient-mark overlay are dropped; the riding point and readouts carry the recall.
 - Eleven reusable kit parts specified; five `ma12-` plates briefed. Narration 6,528 characters, about 562 s.
+
+## Root decisions after the kit pilot (6 Nov 2026)
+
+1. Scene 5's graph window is x from -2.5 to 4.5 and y from 0 to 9, so a = 1/2 fits with its triangle.
+2. During the mirror the gradient and ratio readouts dim; they never display a through zero.
+3. The flasks reuse the existing Biology straight-neck clear and cloudy pair, not new conical plates. Codex paints only the microscope field and the two rod-cell sprites.
+4. The kit pilot (`out/explainer/maths-studio-pilot/`) passed root's contact-sheet review in principle. Before the voiced build: fill worked example step 1 (a leader from the givens card to the power slot), fill the empty lower part of the key-notes screen, and use the hook's bottom strip.
