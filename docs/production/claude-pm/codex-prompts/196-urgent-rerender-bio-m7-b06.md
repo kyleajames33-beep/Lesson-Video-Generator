@@ -1,4 +1,4 @@
-# Brief 196 (urgent): re-render bio-m7-b06, which went public with broken images and fallback fonts
+# Brief 196 (urgent): re-render bio-m7-b06 and bio-m7-b10, which went public with broken images and fallback fonts
 
 Read `00-standing-rules.md`. Do not spawn sub-agents. No design or narration edits, no new speech, no commits. Render one job at a time.
 
@@ -11,7 +11,9 @@ Read `00-standing-rules.md`. Do not spawn sub-agents. No design or narration edi
 4. Also check `Explainer-bio-m5-b06b-v1.mp4` (https://youtu.be/o0hwEiJjqrg), which seems to end on a black frame: say whether that is an intended fade or a defect. Do not re-render it.
 5. Add a pre-render guard to `scripts/render-explainer.mjs`: fail before rendering if any referenced asset is missing from the slim public folder or a required font fails to load. Report the change.
 
-**YouTube (owner approved, 6 November).**
+**Also bio-m7-b10 (found in audit batch 2).** `Explainer-bio-m7-b10-v1.mp4` has the same fault: serif fallback text from about half-way, and broken-image icons in the table at about 10/16 (`work/quality-audit/sheets/bio-m7-b10.jpg`). Apply steps 1 to 3 to it as well (v2, its own `work/brief196/b10-*` files) and treat it exactly like b06 below. Then find the render session or queue that produced b06 and b10 (`out/explainer/render-queue-*.log`), list every other video rendered in the same session, and scan each one with the same automated check (broken-image icon, blank frames, serif text). Report any further defects; do not re-render them without a new brief.
+
+**YouTube (owner approved, 6 November).** Apply this to b06 and b10 alike.
 - Unlist v1 (https://youtu.be/iNiVBNVSRvs) now, before the re-render. Do not delete it.
 - Once v2's checks pass, upload v2 with v1's title, description, captions, settings and AI disclosure, and publish it.
 - Put v2 in v1's position in the Biology Module 7 playlist and take v1 out. Read the playlist back.
