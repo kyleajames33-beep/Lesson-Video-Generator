@@ -10,3 +10,13 @@ Claude (root), 5 November 2026. Earlier course decisions in `root-decisions-chem
 6. **Safety and demonstrations** to the science check: v02 sodium and chlorine as teacher demonstration or footage; v04 cold-dish soot demonstration and the carbon monoxide wording; v05 indicator wording; v07 calcium in water as a teacher demonstration. Soluble barium salts are never called safer.
 7. **Plates.** v03's closed-air-hole yellow flame aligned with `m8-flame-blue-v2`; v04's sooty dish and copper foil pairs; v07's six essential reactivity plates and two optional with fallbacks; v02's hydrogen peroxide splint pair.
 8. **Site corrections** (Module 3 lessons 1, 2, 3, 4, 5, 7) are listed in each design's Decisions; Codex logs them, first lesson 2's unbalanced "Na + Cl₂ → NaCl" and lesson 3's "safer" barium salts.
+
+## Wave 7: m3-v08 to v15 (5 November 2026)
+
+9. **m3-v12 to v13 join.** v13's designer reconciled its scene 1 to v12's actual final frame (zinc and aluminium in acid, "bigger E°cell = faster" crossed, "how fast? particles must meet"). Root confirms.
+10. **m3-v08** keeps the second and third ionisation energies (total energy to form each ion) with the words-only fallback written in. The aluminium foil, copper sulfate and salt demonstration goes to the science check; approved video is the fallback.
+11. **Acidic-medium half-equations** (MnO₄⁻, site lesson 8) are not a Year 11 route action; noted for the coverage check, no extra video now. Cell notation and cathodic protection (site lesson 9) likewise.
+12. **m3-v11** class readings (Mg 1.80, Zn 1.05, Fe 0.65 V) stay tagged illustrative. Charge build-up and copper sulfate disposal wording go to the science check.
+13. **m3-v12** potentials follow the NESA data sheet (Mg −2.36 V, Al −1.68 V); Codex confirms against the official PDF. Rewrite the spoken "minus negative 0.76" as "subtract negative zero point seven six" or speak the steps in words only, whichever reads clearly in the voicing pilot.
+14. **Rates.** m3-v13's memory aid "Hit often, hit hard, hit right" is accepted. m3-v14's data-logging balance is the digital technology example (avoids the capped-vessel question). v14's illustrative rate model is tagged. v15's recovered catalyst mass goes to the science check.
+15. **Site corrections** (Module 3 lessons 7 to 12, Module 1 lesson 18) are listed in each design's Decisions; Codex logs them.
