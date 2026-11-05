@@ -26,3 +26,17 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`.
 19. **Shared components.** v11's subshell ladder and `PeriodicGrid` (also used by v12 to v14) go into one build brief before these lessons are built.
 20. **Key-notes hold** is timed at about 52 s; ws-v01 to ws-v03 sit near the cap, so the hold must not grow.
 21. **Site corrections** found in this wave (lessons 13, 15, 16, 17, 18, 20) are listed in each design's Decisions; Codex logs them.
+
+## Wave 3: m1-v18 to v27 (5 November 2026)
+
+22. **Learner questions.** v22's reworded question (hard, brittle, and conducting only when ions can move) is accepted; v21's final chip already uses it. The others keep the route wording.
+23. **v22 to v23 join.** Root reconciled v23's opening to v22's actual final frame (bent water and straight CO₂ already drawn in 2D with bond-dipole arrows and "net?" marks). Scene 1 keeps them and lifts them into 3D on "shape".
+24. **3D shapes.** The legacy `molecule3d` type is frozen; v23 uses the explainer's `BallStick`, `Lobes` and `AngleArc` (`src/explainer/lessons/chem-m7-c01/molecules.tsx`), with only the shape-direction table ported (legacy policy). Adding B, N, F, Si, P and S to that kit is a build item. VSEPR is taught from OpenStax because the site never teaches shapes. BCl₃ replaces BF₃ (B–F's difference is above the site's 1.7 guide).
+25. **MgO melting point.** Keep the site's 2852 °C (a common textbook value) on the card and "about two thousand eight hundred and fifty" in narration; the CRC's 2825 °C stays in the author note.
+26. **v18.** Gamma written as γ alone (no ⁰₀γ); the N-14 + neutron → C-14 + proton missing-particle example is accepted.
+27. **v19 and v20 overlap.** v19 works a charge out from a formula only as far as v20 needs; v20 owns Roman numerals. Accepted.
+28. **v21.** Lewis diagrams keep amber dots for shared or moving electrons. The 0.4 and 1.7 electronegativity guides are labelled guides, not boundaries. The CO₂ double-bond scene stays unless the learning review finds the video too full. The coded rope line stays (no `c7-tug` plates: `c7-tug-scene` shows children).
+29. **v24 to v27.** v24's coin callback, essential lit-lamp plate and optional sodium versus magnesium beat stay. v25 shows "above 3500 °C" for carbon, with no single melting point. v26's 18-electron fair test (F₂, CH₃F, CH₃OH) replaces the site trio; "methoxymethane (dimethyl ether)" is spoken. v27 uses AgCl as the "not a law" example, entropy as one grey tag, and ends on the balance reading 110.0 g with "Module 1 complete"; `chem-y11-m2-v01` opens on it.
+30. **Safety.** v22: molten salt is footage-style plate only and the solution test uses a low-voltage tester; science check against current NSW school guidance.
+31. **Plate dependencies.** v17's lead-shielded vial (v18), v10's lit lamp (v22, v24), v06's balance (v27), v02's dry ice (v25). Check `phys-y11` battery-holder alpha before reuse.
+32. **Site corrections** found in this wave (lessons 7, 8, 9, 10, 12, 18, 19, 20, 21) are listed in each design's Decisions; Codex logs them, with lesson 10's butane/dimethyl ether ranking and HCl electronegativity claim, and lesson 12's "if and only if" first.
