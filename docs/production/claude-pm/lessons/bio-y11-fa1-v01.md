@@ -1,6 +1,6 @@
 # V01 (Biology, Year 11, Focus Area 1): How do prokaryotic and eukaryotic cells differ? One dividing question, the shared kit, five differences, and how we know (design)
 
-Status: Revision 2 (1 Nov): brief 138 repairs applied (nuclear-envelope trace in scene 2; one 5 µm and 50 µm pair at 1 : 10 in scene 6; "no nucleus or eukaryotic organelles" instead of a universal no-internal-membranes claim, funded by cutting scene 4's summary sentence). Needs a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (6 Nov 2026): brief 175 error-check fixes applied (key-notes memory line and compartment note scoped to the bacterium shown, no unqualified "no organelles" shorthand; scene 5 bacterium cue retied to the spoken "no nucleus and none of those organelles"). Narration 5,927 characters excluding scene joins, 5,942 including (unchanged), about 565 s. Needs the next Codex error check before voicing. Previously Revision 2 (1 Nov): brief 138 repairs applied (nuclear-envelope trace in scene 2; one 5 µm and 50 µm pair at 1 : 10 in scene 6; "no nucleus or eukaryotic organelles" instead of a universal no-internal-membranes claim, funded by cutting scene 4's summary sentence). Needs a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,927 characters (Revision 2 after brief 140, was 5,971; about 565 s after the scene 4 cut; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.5 minutes (568 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -62,7 +62,7 @@ Visual: the `Cam` pushes in on the bacterium. A coded overlay simplifies its tan
 ### 5. compartments
 > Next, compartments. A eukaryotic cell is divided up by internal membranes into **organelles**, small structures that each do one job, such as mitochondria, which release energy from glucose. Each membrane keeps its own contents and conditions apart, so reactions that would clash can run at the same time in separate spaces. A prokaryote like this one has no nucleus and none of those organelles. It runs its reactions in the cytoplasm and on the inside of its cell membrane. That doesn't make it primitive. Bacteria carry out every process of life.
 
-Visual: the camera moves to the eukaryote. On "internal membranes" bright `DrawPath` outlines trace the rough ER, the Golgi stack and one mitochondrion in turn; label "organelles: membrane-bound compartments". On "mitochondria" a callout to a mitochondrion, label "mitochondrion: energy released from glucose". On "contents and conditions apart" two of the traced compartments tint in two different colours (coded, low opacity) with a tiny coded dot cluster inside each that stays inside its own boundary. On "no membrane-bound organelles" the camera moves to the bacterium; a grey chip "no nucleus or eukaryotic organelles". On "in the cytoplasm and on the inside of its cell membrane" the bacterium's cytoplasm tints and its inner membrane edge glows. On "primitive" a grey chip "prokaryotes are primitive" writes and takes a scribble cross; on "every process of life" the hook's two chips ("release energy", "make proteins") return small beside the bacterium with ticks. The ledger adds a row: "Membrane-bound organelles | none | many (e.g. mitochondria)". At most three bright items. Hold one second.
+Visual: the camera moves to the eukaryote. On "internal membranes" bright `DrawPath` outlines trace the rough ER, the Golgi stack and one mitochondrion in turn; label "organelles: membrane-bound compartments". On "mitochondria" a callout to a mitochondrion, label "mitochondrion: energy released from glucose". On "contents and conditions apart" two of the traced compartments tint in two different colours (coded, low opacity) with a tiny coded dot cluster inside each that stays inside its own boundary. On "no nucleus and none of those organelles" the camera moves to the bacterium; a grey chip "this bacterium: no nucleus or eukaryotic organelles" (Revision 3: cue retied to the spoken phrase). On "in the cytoplasm and on the inside of its cell membrane" the bacterium's cytoplasm tints and its inner membrane edge glows. On "primitive" a grey chip "prokaryotes are primitive" writes and takes a scribble cross; on "every process of life" the hook's two chips ("release energy", "make proteins") return small beside the bacterium with ticks. The ledger adds a row: "Membrane-bound organelles | none | many (e.g. mitochondria)". At most three bright items. Hold one second.
 
 ### 6. size
 > Then size. Most prokaryotic cells are about one to five micrometres long. A micrometre is a thousandth of a millimetre. Eukaryotic cells are usually about ten to a hundred micrometres across. So a typical eukaryotic cell is around ten times wider, and because volume grows in all three directions, that's roughly a thousand times more volume. Diagrams often draw the two cells the same size. They're not even close.
@@ -117,13 +117,13 @@ Visual: three step chips write on, one per cue: "DNA in a membrane-bound nucleus
 ### 13. key notes (quiet, about 60 seconds)
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-- Eukaryote: DNA inside a membrane-bound nucleus; has membrane-bound organelles (animals, plants, fungi, protists). Prokaryote: no nucleus; DNA free in the nucleoid; no membrane-bound organelles (bacteria).
+- Eukaryote: DNA inside a membrane-bound nucleus; has membrane-bound organelles (animals, plants, fungi, protists). Prokaryote: no nucleus; DNA free in the nucleoid; no eukaryotic organelles such as mitochondria (bacteria).
 - Shared by both: cell membrane, cytoplasm, ribosomes, DNA.
 - Differences: one circular chromosome and often plasmids, against several linear chromosomes in a nucleus; about 1 to 5 µm, against about 10 to 100 µm; 70S ribosomes, against 80S.
-- Compartments let clashing reactions run apart. "No organelles" is not "primitive": prokaryotes carry out every life process.
+- Compartments let clashing reactions run apart. A bacterium without a nucleus or eukaryotic organelles is not "primitive": prokaryotes carry out every life process.
 - Light microscopes show cells and nuclei, not internal membranes; electron microscopes showed typical prokaryotes lack a nucleus and membrane-bound organelles. Compare cells using several cross-checked sources.
 
-Memory: karyon = kernel (nucleus). No walls inside does not mean no work.
+Memory: karyon = kernel (nucleus). For a bacterium like this one, no walls inside (no nucleus or organelle membranes) does not mean no work.
 
 ## Practice question and feedback
 
@@ -273,3 +273,13 @@ Holds (10 s countdown after the speech, "Pause here to answer." on screen, the c
 - **Pronunciation (Google voice pilot to confirm).** "prokaryote" as "proh-KA-ree-oht"; "eukaryote" as "yoo-KA-ree-oht"; "nucleoid" as "NYOO-klee-oyd"; "karyon" as "KA-ree-on"; "micrometres" as "MY-kroh-mee-ters"; "70S" as "seventy S", "80S" as "eighty S"; "protists" as "PROH-tists"; numbers as words.
 - **Doubts for the reviewers.** (a) Scene 3 lists four organism groups quickly; is "single-celled protists" meaningful to a Stage 5 student without an example? (A grey screen tag could add "e.g. amoeba".) (b) Scene 6's cube pair: is it clear, or would "ten times in each direction, so ten times ten times ten" spoken help? (c) Scene 10's root line avoids "before"; check it still helps recall.
 - **No em dashes** in this file (searched by script).
+
+## Revision 3 (6 November 2026, brief 175 repairs)
+
+Findings from `../checks/y11b-fa1-v01-error-check.md` (Codex skipped voicing for remaining compartment wording and a stale cue).
+
+1. Scene 5 cue: the move to the bacterium now triggers on "no nucleus and none of those organelles", which is in the scene narration; the chip reads "this bacterium: no nucleus or eukaryotic organelles".
+2. Key-notes memory line scoped: "For a bacterium like this one, no walls inside (no nucleus or organelle membranes) does not mean no work."
+3. Key notes: the unqualified "No organelles" shorthand is replaced by "A bacterium without a nucleus or eukaryotic organelles is not primitive", and the prokaryote definition note reads "no eukaryotic organelles such as mitochondria", matching scene 5's Revision 2 wording.
+
+Narration: 5,927 characters excluding scene joins, 5,942 including joins (unchanged; the repairs are screen text and cue placement only), about 565 s. No em dashes. File saved with LF line endings.

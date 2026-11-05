@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V11: Electron configuration and spdf notation. How does spdf notation locate the electrons in an atom? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: count corrected to the joined parser convention. Narration 5,830 characters (joined parser count), about 529.4 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 5,812 characters, 19 scenes, about 528 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,830 characters (Revision 2; Revision 1 was 5,830 by the joined parser count), 19 scenes, about 529.4 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: eleventh core video of Year 11 Chemistry (2017 syllabus), Module 1, playlist entry 14, after the three Working Scientifically videos. Templates: `phys-y11-fa1-v01.md` (structure), `bio-y11-fa1-v05.md` (asset brief format); chemistry conventions from `chem-y11-m1-v10.md` (its energy-level staircase and the s, p, d, f chips are the starting point). No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m1-v11` in `../../programme/chem-y11-route-inputs.json` (stop: "Build subshell occupancy using capacities, filling order and unpaired electrons; check P, Fe and Cl. Stop before ion-removal order in transition metals."). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson16.sa.html` (SHA256 `1f62b2fec083361eaa2187bcb30a08332c32c03294713cc4f101b1695a90692f`, recomputed, matches the route). Used: `l16-subshells-orbitals-and-electron-capacity-title` (orbital counts 1, 3, 5, 7; capacities 2, 6, 10, 14; 2n²), `l16-the-aufbau-filling-order-title` (order to 4p; 4s before 3d; write in level order), `l16-the-three-rules-aufbau-pauli-hund-s-title` (the three rules; noble-gas shorthand), `l16-worked-examples-title` (phosphorus and iron exactly; the chlorine misconception example), the site's running totals "2 → 4 → 10 → 12 → 18 → 20 → 26" and its hook (potassium's outer electron "skips into a new shell"). Site correction applied: item 11 of `../site-corrections-chem-y11.md` (chlorine's 3p⁵ has two paired orbitals and one singly occupied orbital).
 
@@ -280,3 +280,11 @@ Previous: Collecting and sourcing chemistry data safely and accurately. Next: Ho
 
 - Revision 1 has had no independent review. Next: student learning review (does the address analogy carry the notation; is "4s before 3d" felt as an energy fact rather than a rule; does the repulsion cause make "one per box" stick; is iron's written order clear after its filling order), then the science check and Codex error check.
 - Checker output (5 November): narration 5,812 characters; per scene (1 to 19): 423, 380, 455, 380, 354, 131, 357, 321, 322, 342, 395, 334, 246, 192, 308, 191, 332, 274, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+
+## Revision 2 (6 November 2026, brief 178 repairs)
+
+Findings from `../checks/c-y11-m1-v11-learning-review.md` and `../checks/c-y11-m1-v11-science-check.md` (status.md, "Codex hand-in: brief 178").
+
+1. Count (should fix): headline 5,812 corrected to the joined parser count 5,830; estimate about 529.4 s with the same holds. No speech change.
+
+Narration: 5,830 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; 0 against Revision 1's 5,830), about 529.4 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.

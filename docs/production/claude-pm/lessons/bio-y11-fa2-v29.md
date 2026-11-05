@@ -1,6 +1,6 @@
 # Y11 FA2 V29 (Biology 2025, Year 11, Focus Area 2): How do insulin and glucagon push blood glucose back towards its operating range? (design)
 
-Status: Revision 3 (5 Nov 2026): brief 173 error-check fixes applied; feedback 12b events reordered. Narration 5,645 characters (unchanged), about 553 s. Needs the next Codex error check before voicing. Previously: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v29, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v21, v27 and v28 designs (v28 is this designer's Revision 1), the Year 12 2017-syllabus B8-03 design and its science check (read for verified facts and plates only; a different course) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v29**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 4 (6 Nov 2026): brief 176 fixes applied; scene 6 insulin-stream event now precedes the negative-feedback return arrow, in spoken order. Narration 5,645 characters (unchanged), about 553 s. Needs the next Codex error check before voicing. Previously: Revision 3 (5 Nov 2026): brief 173 error-check fixes applied; feedback 12b events reordered. Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v29, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v21, v27 and v28 designs (v28 is this designer's Revision 1), the Year 12 2017-syllabus B8-03 design and its science check (read for verified facts and plates only; a different course) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v29**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,643 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 552 s (9.2 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -70,7 +70,7 @@ Visual: the muscle plate shrinks to the left. On "the liver" `m8-liver-v1.png` e
 ### 6. the response eases: negative feedback
 > Glucose leaves the blood, so blood glucose falls back towards its normal range. As it falls, the beta cells detect less of a rise, so they release less insulin. Insulin drops back to a low background level, not to zero. That's negative feedback. The rise caused a response that lowered it, and the response eased as the rise **disappeared**.
 
-Visual: the strip's marker dot runs down the falling side of the peak into the band. The teal ring completes: response box "glucose taken in and stored: level falls", and the return arrow draws from response to stimulus with a "−" sign on "negative feedback". On "release less insulin" the teal stream on the vessel thins; a small "insulin" level bar beside the ring falls from tall to a low bar that stays above zero (label "low background level"; grey tag "basal secretion"). On "the response eased" the teal ring's arrows dim one by one from effector back to receptor, matching the falling bar (grey tag "the loop switches itself down: video 27"). At most three bright items. Hold one second.
+Visual: the strip's marker dot runs down the falling side of the peak into the band. The teal ring's response box writes: "glucose taken in and stored: level falls". On "release less insulin" the teal stream on the vessel thins; a small "insulin" level bar beside the ring falls from tall to a low bar that stays above zero (label "low background level"; grey tag "basal secretion"). On "negative feedback" the teal ring completes: the return arrow draws from response to stimulus with a "−" sign. On "the response eased" the teal ring's arrows dim one by one from effector back to receptor, matching the falling bar (grey tag "the loop switches itself down: video 27"). At most three bright items. Hold one second.
 
 ### 7. between meals, and a prediction
 > Now the other direction. Hours after your last meal, cells keep using glucose, and blood glucose drifts down. Alpha cells detect the fall, and release more glucagon. Prediction: which organ has a store of glucose it can release into the **blood**?
@@ -297,3 +297,11 @@ Findings from `../checks/y11b-fa2-v29-error-check.md`.
 1. Feedback 12b: the classic-mistake chip now writes on "classic mistake" before the grey underline on "Insulin is released normally", following the speech.
 
 Narration: 5,645 characters (unchanged), about 553 s (counted by script from lines starting "> " with bold markers removed). No em dashes.
+
+## Revision 4 (6 November 2026, brief 176 repairs)
+
+Finding from `../checks/y11b-fa2-v29-rev3-error-check.md`.
+
+1. Scene 6 cue order: the response box writes first, the thinning teal stream and falling insulin bar stay on "release less insulin", and the return arrow with its "−" sign now draws on "negative feedback" after them, following the speech. Same speech.
+
+Narration: 5,645 characters excluding scene joins, 5,661 including joins (unchanged), about 553 s. No em dashes.
