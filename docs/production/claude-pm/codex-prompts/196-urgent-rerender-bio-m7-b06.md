@@ -11,6 +11,10 @@ Read `00-standing-rules.md`. Do not spawn sub-agents. No design or narration edi
 4. Also check `Explainer-bio-m5-b06b-v1.mp4` (https://youtu.be/o0hwEiJjqrg), which seems to end on a black frame: say whether that is an intended fade or a defect. Do not re-render it.
 5. Add a pre-render guard to `scripts/render-explainer.mjs`: fail before rendering if any referenced asset is missing from the slim public folder or a required font fails to load. Report the change.
 
-Do not upload. Replacing a public video is the owner's decision: report the v2 path and wait.
+**YouTube (owner approved, 6 November).**
+- Unlist v1 (https://youtu.be/iNiVBNVSRvs) now, before the re-render. Do not delete it.
+- Once v2's checks pass, upload v2 with v1's title, description, captions, settings and AI disclosure, and publish it.
+- Put v2 in v1's position in the Biology Module 7 playlist and take v1 out. Read the playlist back.
+- Record the new link wherever v1's link is recorded in the repo.
 
-**Hand-in:** to `status.md`: the missing assets and their cause, the v2 path, duration and sheet, the b06b verdict and the guard change.
+**Hand-in:** to `status.md`: the missing assets and their cause, the v2 path, duration and sheet, the b06b verdict, the guard change, the unlisting, and the v2 link with the playlist readback.
