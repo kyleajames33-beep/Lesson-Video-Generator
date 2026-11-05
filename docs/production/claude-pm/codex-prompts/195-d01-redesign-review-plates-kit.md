@@ -1,4 +1,4 @@
-# Brief 195: d01 Revision 5 (owner-driven redesign): review, plates and maths kit upgrade
+# Brief 195: d01 Revision 5 (owner-driven redesign): review and plates
 
 Read `00-standing-rules.md` and `maths-visual-standard.md` first. Do not spawn sub-agents. No design edits, no speech, no commits. One heavy job at a time.
 
@@ -8,23 +8,6 @@ Read `00-standing-rules.md` and `maths-visual-standard.md` first. Do not spawn s
 
 **Step 2: plates.** Paint the five `ma12-` plates in the design's Codex asset brief into `public/assets/maths/`: transparent PNG with alpha, never stretched, no people. The flask pair must have identical geometry for the crossfade. The rod-cell sprites must work at the sizes the design gives. Use the usual QA (checkerboard, phone size, overlay) and record provenance.
 
-**Step 3: kit parts and a silent kit pilot.** Build the reusable parts listed under "Kit parts needed" in the design, as shared parts in `src/explainer/math/` (not lesson-local code):
-- `MATH_ROLES` and `Role`
-- `ParameterSlider`
-- `CurveSimulator`
-- `LiveReadoutBoard`
-- `GrowthField`
-- `AnchorStage`
-- `WorkingBoard` (with `AnswerFrame` and `MistakeCard`)
-- `HandTag`
-- `MemoryAidCard`
-- a bullets variant of `KeyNotes`
-- maths styling for `QuestionCard`
+**Step 3 is Claude's (owner, 6 November).** Claude builds the maths kit parts, the d01 lesson and its pilot. Do not edit `src/explainer/math/` beyond brief 185's tick fix, and do not build, voice or render d01.
 
-Match the look of the Chemistry M5 g01 render (`assets/maths-std-ref-chem-m5-g01.jpg`): its hand font, accent colours, card styles and type sizes.
-
-Then render a silent kit pilot of about 60 s, using the design's scenes 1, 4, 5 and 10 with placeholder timing. Make a 16-frame contact sheet and place it beside the reference. Record the build-gate checks from `maths-visual-standard.md` in `work/brief195/kit-pilot-report.md`.
-
-Steps 2 and 3 may proceed while root resolves step 1 findings, because step 1 is unlikely to change the visual system. Do not build the full d01 lesson, voice it or render it yet. Root will send a build brief after the repairs, and the owner sees the d01 pilot before any other maths build.
-
-**Hand-in:** to `status.md`: the review findings (blockers, should fix, optional), the plate paths and QA, the kit parts and their files, and the kit-pilot video and contact-sheet paths.
+**Hand-in:** to `status.md`: the review findings (blockers, should fix, optional), and the plate paths and QA.
