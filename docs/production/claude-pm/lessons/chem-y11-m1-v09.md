@@ -132,7 +132,7 @@ Visual: card shrinks to the top; "only two isotopes" in the card is underlined o
 ### 15. handoff: what are the electrons doing?
 > So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole **rainbow**. Next time, we'll see what those colours reveal about the energy of electrons in an **atom**.
 
-Visual: board clears. The two chlorine nuclei from scene 1 return small at the top left, dimmed, with tag "nuclei: done". A small coded atom draws at the left: a dim nucleus and a soft blue electron region with a "?". On the fourth sentence the new plate `chem-y11-hydrogen-discharge-tube-lit-v1.png` (requested in v10's asset brief) fades in at the centre, glowing pink-violet. On "rainbow" a coded spectrum strip draws to its right: a dark band with four thin vertical lines (red, blue-green, blue, violet) at their hydrogen positions; a faint full rainbow ghost appears above it and is crossed. On "atom" the chip writes "How do line spectra reveal discrete atomic energy levels?". Hold about 2 seconds. This is the final frame (v10 opens on it).
+Visual: board clears. The two chlorine nuclei from scene 1 return small at the top left, dimmed, with tag "nuclei: done". A small coded atom draws at the left: a dim nucleus and a soft blue electron region with a "?". On the fourth sentence the new plate `y11c-hydrogen-discharge-tube-lit-v1.png` (requested in v10's asset brief) fades in at the centre, glowing pink-violet. On "rainbow" a coded spectrum strip draws to its right: a dark band with four thin vertical lines (red, blue-green, blue, violet) at their hydrogen positions; a faint full rainbow ghost appears above it and is crossed. On "atom" the chip writes "How do line spectra reveal discrete atomic energy levels?". Hold about 2 seconds. This is the final frame (v10 opens on it).
 
 ### 16. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -212,7 +212,7 @@ Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Re
 Have (inspected 5 November on a paper-background contact sheet):
 - `public/assets/chemistry/m8-mass-spectrometer-v1.png` (2000 × 2000; benchtop instrument): scene 3, small, named only.
 
-Need: none new for this video. Scene 15 uses `chem-y11-hydrogen-discharge-tube-lit-v1.png`, requested in `chem-y11-m1-v10.md`'s asset brief (v10 also opens on this frame). Fallback if that plate is not ready: the coded spectrum strip alone with the chip.
+Need: none new for this video. Scene 15 uses `y11c-hydrogen-discharge-tube-lit-v1.png`, requested in `chem-y11-m1-v10.md`'s asset brief (v10 also opens on this frame). Fallback if that plate is not ready: the coded spectrum strip alone with the chip.
 
 Coded: chlorine box, nuclei and tokens, number lines, tally, data tables, beams, stacks, pivot and ticker, rows, chips, small atom with electron region, spectrum strip, attempt cards, countdowns, key notes board.
 
