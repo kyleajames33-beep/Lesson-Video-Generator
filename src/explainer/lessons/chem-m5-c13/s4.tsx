@@ -94,6 +94,7 @@ export const SceneFeedback2: React.FC = () => {
 		{ion: 'Na^{+}', u: -0.45, v: -0.3, ph: 0.3, grey, o: a}, {ion: 'NO_3^{-}', u: 0.15, v: -0.5, ph: 1.2, grey, o: a}, {ion: 'Na^{+}', u: 0.5, v: 0.05, ph: 2.1, grey, o: a},
 		{ion: 'NO_3^{-}', u: -0.35, v: 0.4, ph: 3.3, grey, o: a}, {ion: 'Na^{+}', u: 0.1, v: 0.52, ph: 4.4, grey, o: a}, {ion: 'NO_3^{-}', u: -0.62, v: 0.0, ph: 5.2, grey, o: a},
 		{ion: 'Cl^{-}', u: 0.0, v: 0.0, ph: 0.8, o: cl}, {ion: 'Cl^{-}', u: 0.48, v: -0.48, ph: 2.9, o: cl},
+		{ion: 'Na^{+}', u: 0.65, v: 0.3, ph: 1.6, grey, o: cl}, {ion: 'Na^{+}', u: -0.2, v: -0.62, ph: 3.8, grey, o: cl},
 	];
 	return (
 		<>

@@ -104,7 +104,7 @@ export const SceneFeedback2: React.FC = () => {
 				<Sx x={P.x + picW(SAT, P.h) / 2} y={P.y + P.h + 40} text="saturated CaSO_4(aq)" size={28} color={INK_SOFT} anchor="middle" hand at={-100} />
 				<path d={`M${fl[0]},${fl[1]} L${L.cx - L.r},${L.cy + 30}`} stroke={INK_SOFT} strokeWidth={3} />
 				<SwarmLens cx={L.cx} cy={L.cy} r={L.r} at={-100} cat="Ca^{2+}" an="SO_4^{2-}" nFree={nFree} scale={0.72}
-					rain={{at: 4, ion: 'SO_4^{2-}', n: 5, every: 8, partner: 'Na^{+}'}}
+					rain={{at: 4, ion: 'SO_4^{2-}', n: 5, every: 8, partner: 'Na^{+}', partnerCount: 2}}
 					units={[{at: K16.ppt - 10, kind: 'join', slot: 3, ring: K16.ppt + 20}, {at: K16.ppt + 14, kind: 'join', slot: 6, ring: K16.ppt + 44}]}
 					title="sulfate added" titleAt={4} />
 				<Sx x={1100} y={240} text="SO_4^{2−}: a common ion" size={34} color={AN_INK} hand at={K16.common} />
