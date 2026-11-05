@@ -28,3 +28,9 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`; M
 19. **Learning review items:** v16 scene 4's "a quarter as hard, four times as often" (fallback written); v15's ionic equation before Module 3; v12 scene 7's length.
 20. **Plates.** New: the plugged marble-chip flask set, the spent flask, the colourless-solution beaker, `y11c-sample-bottle-clear-v1.png` (a crop of `m8-river-sampling-bottle-v1.png`), optional dry-salt basin. The syringe plate is rejected (opaque background).
 21. **Site corrections** found in this wave (lessons 4, 7, 8, 9, 10, 13, 15, 18, and Module 1 lesson 5) are listed in each design's Decisions; Codex logs them, with lesson 13 Q2(c) (0.18 g), lesson 8 drill 2 (insoluble calcium carbonate) and lesson 10 worked example 3 (insoluble Mg(OH)₂) first.
+
+## Wave 6: m2-v17 to v20 (5 November 2026)
+
+22. **m2-v18 secondary data.** Tagged illustrative fixed-volume values stand unless Codex finds a citable dataset; if one is found, use it unchanged. If the combined bath-rig plates do not layer cleanly, request one syringe-in-water-bath plate. 80 °C bath limit goes to the science check.
+23. **Units.** Pressure in kPa only; atm and mmHg are never spoken or shown. m2-v17's coded bike-pump outline and m2-v19's balloon as a weather balloon are accepted. m2-v18's first named cut (110 characters) is the reserve.
+24. **Site corrections** (Module 2 lesson 15, including trap 1's 9% error) are listed in each design's Decisions; Codex logs them.
