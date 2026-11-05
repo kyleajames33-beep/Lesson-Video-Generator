@@ -1,8 +1,8 @@
 # Year 11 Chemistry M2 V06: Mole ratios. Why do reaction coefficients give mole ratios rather than mass ratios? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): visual upgrade to maths-visual-standard.md (pilot for the course). Needs independent learning review and science check before voicing.
 
-Narration 5,671 characters, 17 scenes, about 516 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,769 characters, 17 scenes, about 527 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: sixth Module 2 video of Year 11 Chemistry (2017 syllabus), playlist entry 38, between `chem-y11-m2-v05` and `chem-y11-ws-v06`. Templates: `chem-y11-m1-v07.md` (Year 11 calculation video), `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates); chemistry practical conventions `chem-m8-p02.md`. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m2-v06` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Use a balanced equation and a continuous-variation investigation to establish a whole-number amount ratio"; practical: "Teacher-approved continuous-variation investigation"; next handoff: "How can a chemistry model solve an unfamiliar quantitative problem?"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson11.sa.html` (SHA256 `1c1afd11799fc27c88f06f6c643be9e8cc0f475b4a4f3a4a9c62c620a3ba8d83`, recomputed, matches the route), sections `l11-conservation-title` and `l11-jobs-title`. Used: 2H₂ + O₂ → 2H₂O as the anchor ("a molar recipe"); "Coefficients ... mole ratio, not subscripts" and traps 1 and 2; the general rule n(wanted) = n(given) × coeff(wanted) ÷ coeff(given); the 2Al + 3Cl₂ → 2AlCl₃ drill (0.40 mol Al needs 0.60 mol Cl₂); the continuous variation (Job's) method with 1.0 mol L⁻¹ HCl and NaOH, 40 mL total, 5 mL steps, polystyrene cup, peak at 20 : 20; "Why total volume must stay constant"; the quick check's X + 2Y idea (made into attempt 1 with a real 1 : 2 reaction). Not used: balancing by inspection in full (taught in `chem-y11-m2-v01`; recalled), the propane worked example, percentage yield and limiting-reagent items (m2-v08 and later).
 
@@ -45,7 +45,11 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **equation strip** carried in; **particle diagram** (ball molecules that rearrange; HSC colours); **count-up** (two molecules → two dozen → two moles; the "6.02 × 10²³" chip); **mass bars** (three bars to scale, 4.03, 32.00 and 36.03 g; the first two stack to equal the third); **ratio chips** (mole ratio teal, mass ratio amber); **analogy plates** (frame and wheels on one pan of a coded double label, count tag versus mass tag); **two-twos callout** (large and small "2" circled in different colours); **scaling row** (n(wanted) = n(given) × coeff ratio, one row at a time); **mixing strip** (seven foam cups with coded volume labels and a coded thermometer readout over each); **`LineGraph`** (ΔT against volume of HCl, points plot as each cup is read, two lines of best fit, crossing marked); `Countdown`, `QuestionCard`, `Chip` with `cross`, scribble circle, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key:** hydrogen white, oxygen red, nitrogen blue, aluminium grey, chlorine green; coefficients and mole ratios teal; masses and mass ratios amber; acid volumes navy, base volumes violet; ΔT points ink; best-fit lines grey; illustrative-data tag grey; crossed items red strike.
-- **Board layout (constant):** heading top left; equation strip across the top; particles, plates or cups in the left half; bars, working rows or the graph in the right half.
+- **Board layout (constant):** heading top left; equation strip across the top; particles, plates or cups in the left half; bars, working rows or the graph in the right half. Revision 2 exception: the current stage takes the full width when it carries the reasoning (scene 8 working, scene 11 graph), with the rest shrunk to thumbnails.
+- **Colour roles (Revision 2, fixed for the whole video):** coefficients, counts and mole ratios teal; masses, gram values and mass ratios amber; acid volume navy; base volume violet; temperature rise (readout, points) ink with a terracotta readout frame; best-fit lines grey; givens card navy; framed answers dark ink box with a green tick; crossed mistakes red strike and red hand tag; hand-font teacher tags take the colour of the quantity they mark (teal on counts, amber on masses, navy or violet on volumes, red on slips). The same colours appear in the equation strip, the working, the bars, the graph, the slider and the key notes.
+- **Type sizes (Revision 2, 1080p):** the current working line or equation at least 44 px (scene 8 rows 56 px, the "2H₂O" callout in scene 7 about 140 px); live readouts (balance display, molecule counter, slider volumes, ΔT and leftover readouts) about 52 px; supporting lines and givens 30 to 36 px; hand-font tags at least 30 px; nothing a student must read below 26 px (the "illustrative data" and source tags are 26 px). All text above the bottom 12% of the frame.
+- **Anchor (Revision 2).** The existing painted top-pan balance (`y11c-top-pan-balance-v1.png`) enters in scene 1 at about 12 s with the wrong instinct written beside its pan in hand font; it returns in scene 4 holding a beaker of two moles of water (new plate `y11c-beaker-water-36ml-v1.png`), its display ticking to 36.03 g. No gas is shown on the pan: hydrogen and oxygen are never weighed on an open pan, so the scene 1 masses are hand-written questions, not readings.
+- **Simulations (Revision 2).** Two live simulations with readouts: the scene 3 count-up (a molecule counter climbs from 2 and 1 to two dozen and one dozen to 1.20 × 10²⁴ and 6.02 × 10²³ while a ratio readout stays at "2 : 1"); and the scenes 10 and 11 continuous-variation slider (acid volume sweeps 5 to 35 mL, base volume, cup fill, ΔT and "left over" readouts update together, and each mixture's point drops onto the graph).
 
 Author notes (not learner copy):
 (a) Masses (data sheet): 2 × (2 × 1.008) = 4.032 g; 2 × 16.00 = 32.00 g; 2 × (2 × 1.008 + 16.00) = 36.032 g; 4.032 : 32.00 : 36.032 = 1 : 7.94 : 8.94. O₂ ÷ H₂ = 32.00 ÷ 2.016 = 15.87.
@@ -73,7 +77,7 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook: two, one, two of what?
 > The iron oxide showed us that atoms combine by count, not by mass. Now look at a reaction. Two H two plus O two makes two H two O, and the coefficients are two, one and two. So does two grams of hydrogen react with one gram of oxygen, to make two grams of **water**?
 
-Visual: opens on m2-v05's final frame; the "Next" chip fades; the Fe₂O₃ pair slides to a thumbnail at the top left. On "coefficients" the three amber coefficients pulse in turn. On "two grams" three gram chips "2 g", "1 g", "2 g?" write under the formulae. On "water" the heading writes: "Mole ratios, not mass ratios".
+Visual: opens on m2-v05's final frame; the "Next" chip fades; the Fe₂O₃ pair slides to a thumbnail at the top left. On "coefficients" the three coefficients pulse in turn (teal from here on, the colour role for counts). On "two grams" the painted top-pan balance (`y11c-top-pan-balance-v1.png`, about 620 px wide, uniform scale) slides in under the equation at the right, its coded display reading "0.00 g" (52 px); three amber hand-font tags write beside the empty pan as a plan, "2 g H₂?", "1 g O₂?", "→ 2 g H₂O?" (36 px), each linked by a thin amber pen arrow to its formula in the strip, and a hand tag "weigh out the coefficients?" writes above the pan. On "water" the heading writes: "Mole ratios, not mass ratios".
 
 ### 2. prediction (countdown, 3 seconds)
 > Yes or no? And if not, what do the two, one and two actually **count**?
@@ -83,47 +87,47 @@ Visual: chips "yes" and "no", and "count what?". On "count" the 3 s `Countdown` 
 ### 3. coefficients count particles
 > No. Coefficients count particles. Two hydrogen molecules react with one oxygen molecule to make two water molecules. Count the atoms, and there are four hydrogens and two oxygens on each side, just as we balanced equations **earlier**. Now scale it up. Two dozen hydrogen molecules need one dozen oxygen molecules. And two moles need one mole, because a mole is just a very large count, six point zero two times ten to the twenty-three **particles**. So the coefficients give a mole ratio, two to one to **two**.
 
-Visual: the gram chips are crossed. The particle diagram: two white H₂ pairs and one red O₂ pair rearrange into two bent H₂O molecules. On "earlier" atom tallies "4 H, 2 O | 4 H, 2 O" with a tick (grey tag "balancing video"). On "Two dozen" the diagram multiplies into a 2 : 1 block of 24 and 12 molecules (coded, small). On "particles" a chip "1 mol = 6.02 × 10²³ particles" (grey tag "the mole video"); the block blurs into labels "2 mol", "1 mol", "2 mol". On "two" (last) a teal chip "mole ratio 2 : 1 : 2".
+Visual: on "No" the three amber hand tags on the balance are struck through in red and a red hand tag "not grams" writes; the balance slides to a small thumbnail at the left edge. Board change to the particle stage at full height: two white H₂ pairs and one red O₂ pair rearrange into two bent H₂O molecules. On "earlier" atom tallies "4 H, 2 O | 4 H, 2 O" with a tick (grey tag "balancing video") and a teal hand tag "same atoms, rearranged" with a pen ring round the tallies. On "Two dozen" the live count-up starts (simulation): the diagram multiplies into a 2 : 1 block of 24 and 12 molecules, and two teal counters above the block tick "H₂: 2 → 24" and "O₂: 1 → 12" (52 px) while a fixed readout between them stays "ratio 2 : 1". On "particles" a chip "1 mol = 6.02 × 10²³ particles" (grey tag "the mole video"); the block blurs into a dense field, the counters run on to "H₂: 1.20 × 10²⁴" and "O₂: 6.02 × 10²³", the ratio readout still "2 : 1" (it pulses once, hand tag "never changes"), and the counters relabel "2 mol", "1 mol", "2 mol". On "two" (last) a teal chip "mole ratio 2 : 1 : 2".
 
 ### 4. but the masses
 > Now the masses. Two moles of hydrogen molecules weigh about four grams. One mole of oxygen weighs thirty-two grams. And two moles of water weigh about thirty-six **grams**. So the mass ratio is roughly four to thirty-two to thirty-six, or about one to eight to nine. That's nothing like two to one to two, because each oxygen molecule is about sixteen times heavier than a hydrogen **molecule**.
 
-Visual: givens (navy): "H 1.008, O 16.00 g mol⁻¹ (data sheet)". Under each formula a mass bar grows to scale as spoken: "4.03 g" (short), "32.00 g" (long), and on "grams" "36.03 g" (longest). On "one to eight to nine" an amber chip "mass ratio ≈ 1 : 8 : 9" beside the teal "mole ratio 2 : 1 : 2". On "molecule" a single H₂ and a single O₂ appear on a coded two-pan comparison, the O₂ pan lower, tag "16 × heavier".
+Visual: board change: the particle stage shrinks to a thumbnail; the balance returns at the left, large. Givens card (navy): "H 1.008, O 16.00 g mol⁻¹ (data sheet)". Under each formula an amber mass bar grows to scale as spoken: "4.03 g" (short), "32.00 g" (long), and on "grams" "36.03 g" (longest); at the same moment a painted beaker of water (`y11c-beaker-water-36ml-v1.png`, new) sets down on the balance pan and the display ticks from 0.00 to "36.03 g" (52 px, amber), hand tag "2 mol of water". On "one to eight to nine" an amber chip "mass ratio ≈ 1 : 8 : 9" beside the teal "mole ratio 2 : 1 : 2", a red hand tag "not the same!" with a pen arrow between them. On "molecule" a single H₂ and a single O₂ appear on a coded two-pan comparison, the O₂ pan lower, amber hand tag "16 × heavier" with a pen ring round the O₂.
 
 ### 5. what a balanced equation does promise
 > But notice what does hold. Four point zero three plus thirty-two point zero zero is thirty-six point zero **three**. Mass is conserved, because the same atoms are just rearranged. So a balanced equation promises two things. Moles react in the ratio of the coefficients, and the total mass stays the **same**. It never promises that masses react in the ratio of the **coefficients**.
 
-Visual: on "three" the 4.03 g and 32.00 g bars slide end to end and match the 36.03 g bar exactly (tick, "conserved"). On "same" two teal ticks write: "moles react in the coefficient ratio" and "total mass is conserved". On "coefficients" a third line "masses react in the coefficient ratio" writes and is crossed.
+Visual: camera continue; the beaker and balance shrink to the left edge, the bars take the centre. On "three" the 4.03 g and 32.00 g bars slide end to end and match the 36.03 g bar exactly; the sum "4.03 + 32.00 = 36.03 g" writes at 56 px and is framed in a dark-ink box with a green tick, amber hand tag "same atoms, rearranged". On "same" the bars shrink up and two teal ticks write at 44 px: "moles react in the coefficient ratio" and "total mass is conserved". On "coefficients" a third line "masses react in the coefficient ratio" writes and is crossed in red, with a red hand tag "never promised".
 
 ### 6. a recipe that counts parts
 > Here's a picture that helps. To build a bike, you need two wheels for every frame. That's a count ratio, two to one. But nobody says you need two kilograms of wheels for every kilogram of frame. The recipe counts parts, and their masses depend on what each part weighs. A chemical equation works the same way, with moles as the **count**.
 
-Visual: board change. The frame plate (`y11c-bike-frame-v1.png`, new) and two wheel plates (`y11c-bike-wheel-v1.png`, new, used twice) slide in as a 2 : 1 group, tag "2 wheels : 1 frame (count)". On "two kilograms" a chip "2 kg wheels : 1 kg frame?" fades in and is crossed. On "count" the group shrinks beside the equation strip, the "2 : 1" tag aligned under "2H₂ + O₂".
+Visual: board change. The frame plate (`y11c-bike-frame-v1.png`, new) and two wheel plates (`y11c-bike-wheel-v1.png`, new, used twice) slide in as a 2 : 1 group, tag "2 wheels : 1 frame (count)". On "two kilograms" a chip "2 kg wheels : 1 kg frame?" fades in and is crossed in red. On "masses depend" amber hand tags write under the plates, "light" by the wheels and "heavier" by the frame (masses illustrative, no values). On "count" the group shrinks beside the equation strip, the "2 : 1" tag aligned under "2H₂ + O₂", teal hand tag "count the parts".
 
 ### 7. two different twos
 > One trap. In two H two O, there are two different twos. The big two in front is the coefficient, and it counts water molecules. The small two is the subscript, and it counts hydrogen atoms inside one molecule. Mole ratios come only from the **coefficients**. And when balancing, change coefficients, never subscripts, because changing a subscript makes a different **substance**.
 
-Visual: "2H₂O" writes large. On "big two" a teal circle rings the coefficient, tag "coefficient: counts molecules (moles)"; on "small two" a grey circle rings the subscript, tag "subscript: atoms in one molecule". On "coefficients" the teal tag glows. On "substance" "H₂O → H₂O₂?" writes, the "₂" amber, with a tag "hydrogen peroxide: a different substance" and a cross on the edit.
+Visual: camera continue; the bike group stays small at the top left. "2H₂O" writes large at the centre (about 140 px). On "big two" a teal scribble circle rings the coefficient, hand tag "coefficient: counts molecules (moles)" (teal, 36 px); on "small two" a grey circle rings the subscript, hand tag "subscript: atoms in one molecule". On "coefficients" the teal tag glows and a teal pen arrow runs from the coefficient to the "2 : 1 : 2" chip. On "substance" "H₂O → H₂O₂?" writes, the "₂" amber, with a tag "hydrogen peroxide: a different substance", a red cross on the edit and a red hand tag "never change this one" with a pen arrow to the subscript.
 
 ### 8. using a mole ratio
-> Using a ratio is just scaling. In two A l plus three C l two, making two A l C l three, aluminium and chlorine react two to **three**. So zero point four zero moles of aluminium needs zero point four zero times three over two, which is zero point six zero moles of **chlorine**. Wanted equals given, times the wanted coefficient over the given **coefficient**.
+> Using a ratio is just scaling. In two A l plus three C l two, making two A l C l three, aluminium and chlorine react two to **three**. So zero point four zero moles of aluminium needs zero point four zero times three over two, which is zero point six zero moles of **chlorine**. Wanted equals given, times the wanted coefficient over the given **coefficient**. Flip the fraction by mistake, and you'd get zero point two seven, which is the ratio upside **down**.
 
-Visual: equation strip "2Al + 3Cl₂ → 2AlCl₃"; on "three" teal "Al : Cl₂ = 2 : 3". Task strip "How many moles of Cl₂ react with 0.40 mol of Al?"; givens "n(Al) = 0.40 mol". On "chlorine" row "n(Cl₂) = 0.40 × 3 ÷ 2 = 0.60 mol" (bright). On "coefficient" the rule writes: "n(wanted) = n(given) × coeff(wanted) ÷ coeff(given)".
+Visual: clear change to the full-width calculation layout (Chemistry g01 layout). Task strip (short, 40 px): "How many moles of Cl₂ react with 0.40 mol of Al?". Equation strip "2Al + 3Cl₂ → 2AlCl₃" with teal coefficients; on "three" teal "Al : Cl₂ = 2 : 3" and a pen ring round the "2" and "3". Givens card (navy): "n(Al) = 0.40 mol". On "chlorine" the working row builds term by term at 56 px, colours carried: "n(Cl₂) = 0.40 × 3 ÷ 2" with "3" and "2" in teal (teal hand tag "wanted ÷ given" under the fraction), then "= 0.60 mol" framed in a dark-ink box with a green tick. On "coefficient" the rule writes under it (36 px): "n(wanted) = n(given) × coeff(wanted) ÷ coeff(given)". On "down" a red chip "0.40 × 2 ÷ 3 = 0.27 mol" writes at the lower left, is struck through in red, and a red hand tag "ratio upside down" writes beside it.
 
 ### 9. testing it: continuous variation
 > But how do we know reactions really follow whole-number mole ratios? We can test it. In the continuous variation method, we mix two reactants in changing proportions, always with the same total volume, and measure something that shows how much reaction **happened**. For hydrochloric acid and sodium hydroxide, that's the temperature rise, because the reaction releases **heat**.
 
-Visual: board change. Gloss chip "continuous variation: change the proportions, keep the total the same". A row of seven foam cup plates (`m6-foam-cup-calorimeter-v1.png`, small, uniform scale) slides in. On "happened" a thermometer readout chip appears over the first cup. On "heat" the equation "HCl + NaOH → NaCl + H₂O" writes above with a small "heat released" tag (grey, "Stage 5").
+Visual: board change to the practical stage. Gloss chip "continuous variation: change the proportions, keep the total the same" (36 px). One large foam cup plate (`m6-foam-cup-calorimeter-v1.png`, about 420 px tall, uniform scale) sits at the left as the hero; a row of seven small copies of the same plate slides in along the top right as the run sheet. On "happened" a coded ΔT readout (terracotta frame, 52 px) appears over the hero cup's probe reading "ΔT = 0.0 °C", ink hand tag "how much reacted". On "heat" the equation "HCl + NaOH → NaCl + H₂O" writes above with a small "heat released" tag (grey, "Stage 5") and a pen arrow from "heat" to the readout.
 
 ### 10. why equal concentrations and a fixed total
 > Both solutions have the same concentration, so every millilitre holds the same number of moles. That makes a volume ratio a mole **ratio**. We mix five millilitres of acid with thirty-five of base, then ten and thirty, and so on, always forty millilitres in **total**. Keeping the total fixed means the only thing that changes is how the moles are **split**. Safety glasses go on, because both solutions are corrosive or irritating at this **strength**.
 
-Visual: two coded reagent labels "HCl 1.0 mol L⁻¹" (navy) and "NaOH 1.0 mol L⁻¹" (violet); gloss chip "same concentration: same moles in every mL"; on "ratio" a tag "volume ratio = mole ratio". On "total" each cup gains a two-colour label as spoken ("5 + 35", "10 + 30", "15 + 25", "20 + 20", "25 + 15", "30 + 10", "35 + 5"), with a small "40 mL" under each. On "split" the navy and violet parts of each label slide to show the changing split at a constant total height. On "strength" the safety glasses plate (`m5x-safety-glasses-v1.png`) sets down at the left, tag "glasses; teacher-approved solutions".
+Visual: camera continue. Two coded reagent labels "HCl 1.0 mol L⁻¹" (navy) and "NaOH 1.0 mol L⁻¹" (violet); gloss chip "same concentration: same moles in every mL"; on "ratio" a hand tag "volume ratio = mole ratio" (navy and violet halves). On "five millilitres" the live mixing slider appears under the hero cup (simulation): a horizontal track 5 to 35 mL, navy to the left of the handle and violet to the right, with two readouts above it, "acid 5 mL" (navy, 52 px) and "base 35 mL" (violet, 52 px), and a fixed readout "total 40 mL" (ink). The hero cup's cutaway fill shows the split as a navy layer and a violet layer of constant total height. On "total" the handle steps 5, 10, 15, 20, 25, 30, 35 mL as the mixtures are spoken; at each stop the readouts and the cup fill update together and the matching small cup in the run sheet gains its two-colour label ("5 + 35" to "35 + 5"). On "split" the handle sweeps back from 35 to 5 mL in one smooth pass: the navy and violet layers trade height while the "total 40 mL" readout never changes, and an ink hand tag "only the split changes" rings that readout. On "strength" the safety glasses plate (`m5x-safety-glasses-v1.png`) sets down at the left, tag "glasses; teacher-approved solutions".
 
 ### 11. the peak marks the ratio
 > The temperature rise climbs, peaks at twenty millilitres of each, then falls **again**. Why a peak? With too little acid, some base is left over with nothing to react with. With too much acid, it's the other way round. Only at the right ratio is everything used up, so that mixture releases the most heat. Draw a straight line through each side, and where they cross is the ratio, twenty to twenty, or one to **one**. That crossing is better evidence than the single highest point, because the true ratio could fall between two **mixtures**.
 
-Visual: a `LineGraph` builds at the right: "ΔT (°C)" against "volume of HCl (mL), total 40 mL"; each cup's readout drops onto the graph as a point (1.7, 3.3, 5.0, 6.6, 5.0, 3.4, 1.6), grey tag "illustrative data". On "again" the points are all plotted. On "too little acid" the left cups' labels show a violet leftover chip "base left over"; on "too much acid" the right cups show a navy chip "acid left over"; the 20 + 20 cup gains a tick "all used up: most heat". On "straight line" two grey lines of best fit draw and on "one" their crossing is marked at 20 mL with the chip "20 : 20 = 1 : 1" (teal), which matches "HCl : NaOH = 1 : 1" from the equation. On "mixtures" a ghost point slides between 15 and 20 mL, tag "true ratio could fall between".
+Visual: board change: the `LineGraph` takes the right two-thirds as the hero ("ΔT (°C)" against "volume of HCl (mL), total 40 mL", axis labels 30 px), the hero cup, slider and readouts shrink to a column at the left, and the glasses and run sheet leave. From "climbs" the slider handle sweeps 5 to 35 mL: as it passes each mixture the ΔT readout ticks up to that cup's value and the point drops from the readout onto the graph (1.7, 3.3, 5.0, 6.6, 5.0, 3.4, 1.6), grey tag "illustrative data" (26 px). On "again" the points are all plotted and the 6.6 point gets an ink pen ring. On "too little acid" the handle jumps to 5 mL and a violet leftover readout under the cup reads "base left over: 30 mL"; on "too much acid" it jumps to 30 mL and the readout turns navy, "acid left over: 20 mL"; on "everything used up" it settles at 20 mL, the readout reads "left over: nothing" with a green tick and an ink hand tag "most heat". On "straight line" two grey lines of best fit draw and on "one" their crossing is marked at 20 mL with the framed teal answer "20 : 20 = 1 : 1" (dark-ink box, 52 px), which matches "HCl : NaOH = 1 : 1" from the equation. On "mixtures" a ghost point slides between 15 and 20 mL, a red chip "highest point = the ratio" is struck through, and a hand tag "true ratio could fall between" writes.
 
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. The same method is used with sulfuric acid and sodium hydroxide, both at the same concentration, thirty millilitres in total. The biggest temperature rise comes near ten millilitres of acid. Use the data to find the mole ratio, and write the balanced equation. Pause here to answer.
@@ -133,7 +137,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 13. feedback 1 (brief)
 > The lines through each side cross at ten millilitres of acid and twenty of base. Equal concentrations mean that's a mole ratio of one to two. So H two S O four plus two N a O H makes N a two S O four plus two H two **O**. Saying one to one, because the concentrations were equal, is the classic slip. Equal concentrations make volumes count moles. They don't make the ratio one to **one**.
 
-Visual: card shrinks to the top. A small `LineGraph` of the five points with two best-fit lines crossing at 10 mL (tag "10 mL acid : 20 mL base"). Rows: "(a) 10 : 20 by volume = 1 : 2 by moles"; on "O" "(b) H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O". On "one" (last) a chip "1 : 1 (equal concentrations)" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. A small `LineGraph` of the five points with two best-fit lines crossing at 10 mL (tag "10 mL acid : 20 mL base"). Rows (44 px): "(a) 10 : 20 by volume = 1 : 2 by moles", the "1 : 2" framed in a dark-ink box, navy and violet hand tags "acid" and "base" under the two volumes; on "O" "(b) H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O" framed, teal pen ring on the "2" before NaOH. On "one" (last) a chip "1 : 1 (equal concentrations)" fades in and is crossed in red. Hold about 1 second.
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. For N two plus three H two making two N H three, a student says twenty-eight point zero grams of nitrogen needs three times twenty-eight point zero, or eighty-four point zero grams of hydrogen. Evaluate this claim. Pause here to answer.
@@ -143,24 +147,24 @@ Visual: `QuestionCard`: "N₂ + 3H₂ → 2NH₃. A student claims: '28.0 g of N
 ### 15. feedback 2 (brief)
 > The claim is wrong. Twenty-eight point zero grams of nitrogen is almost exactly one mole. The equation says one mole of nitrogen needs three moles of hydrogen, and three moles of H two is only about six grams. The student treated the coefficients as a mass ratio. They're a mole **ratio**.
 
-Visual: card shrinks to the top. Rows: "n(N₂) = 28.0 ÷ 28.02 = 0.999 mol"; "n(H₂) = 0.999 × 3 = 3.00 mol"; "m(H₂) = 3.00 × 2.016 = 6.04 g"; on "ratio" the student's "84.0 g" fades in and is crossed, tag "coefficients are moles, not grams". Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px, the colour roles carried): "n(N₂) = 28.0 ÷ 28.02 = 0.999 mol" (amber mass in, teal moles out, hand tag "grams → moles first"); "n(H₂) = 0.999 × 3 = 3.00 mol" (teal "× 3"); "m(H₂) = 3.00 × 2.016 = 6.04 g", the "6.04 g" framed in a dark-ink box. On "ratio" the student's "84.0 g" fades in and is crossed in red, red hand tag "coefficients are moles, not grams". Hold about 1 second.
 
 ### 16. conclusion and handoff
 > So coefficients count particles, and that makes them mole ratios. Masses follow from moles, and the total mass is conserved. Experiments confirm the whole-number ratios. Now we have a model, moles, molar mass and ratios. Can it solve a problem we haven't seen? An old jar of copper sulfate crystals loses only thirty point two percent of its mass. How can a chemistry model solve an unfamiliar quantitative **problem**?
 
-Visual: the memory line writes at the top in hand lettering: "Coefficients count; masses weigh." A strip writes as spoken: "coefficients count particles → mole ratios → masses from moles; total conserved → experiment confirms whole numbers". On "model" three teal chips stack at the right: "moles count particles", "n = m ÷ MM", "ratios come from moles (formulae and equations)". On "old jar" the old-crystals plate slides in at the left beside the white-powder crucible, with the navy chip "lost only 30.2%" against the gold "formula: 36.1%" and an amber "?" between plate and model panel. On "problem" the chip "Next: How can a chemistry model solve an unfamiliar quantitative problem?" writes. Hold about 2 seconds. This is the final frame (ws-v06 opens on it).
+Visual: the memory aid writes at the top in hand lettering inside a framed card (teal "Coefficients count;" amber "masses weigh.", 48 px; small grey condition line "total mass still conserved"). A strip writes as spoken: "coefficients count particles → mole ratios → masses from moles; total conserved → experiment confirms whole numbers". On "model" three teal chips stack at the right: "moles count particles", "n = m ÷ MM", "ratios come from moles (formulae and equations)". On "old jar" the old-crystals plate slides in at the left beside the white-powder crucible, with the navy chip "lost only 30.2%" against the gold "formula: 36.1%" and an amber "?" between plate and model panel. On "problem" the chip "Next: How can a chemistry model solve an unfamiliar quantitative problem?" writes. Hold about 2 seconds. This is the final frame (ws-v06 opens on it).
 
 ### 17. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Coefficients count particles, so they give the mole ratio: 2H₂ + O₂ → 2H₂O is 2 : 1 : 2 by moles (about 1 : 8 : 9 by mass).
-2. Mass is conserved in total (4.03 + 32.00 = 36.03 g), but masses do not react in the coefficient ratio.
-3. Coefficient (in front) counts molecules; subscript (inside) counts atoms in one molecule. Balance with coefficients only.
+1. Coefficients give mole ratios: 2H₂ + O₂ → 2H₂O is 2 : 1 : 2 by moles, about 1 : 8 : 9 by mass.
+2. Total mass is conserved; masses do not react in the coefficient ratio.
+3. Coefficient counts molecules; subscript counts atoms in one molecule. Balance with coefficients only.
 4. n(wanted) = n(given) × coeff(wanted) ÷ coeff(given).
-5. Continuous variation: equal concentrations, constant total volume; the lines of best fit cross at the mole ratio.
+5. Continuous variation: equal concentrations, fixed total volume; best-fit lines cross at the mole ratio.
 
-Memory aid (large, on the notes screen): *Coefficients count; masses weigh.*
+Memory aid (framed card under the notes, hand lettering, teal and amber as in scene 16): *Coefficients count; masses weigh.* Notes in the role colours (mole ratios teal, masses amber), 32 px; no paragraphs.
 
 At the end the notes cross-fade back to scene 16's final frame.
 
@@ -187,11 +191,13 @@ Model answer: n(N₂) = 28.0 ÷ 28.02 = 0.999 mol (1 mark). Mole ratio N₂ : H�
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
-| Avogadro's constant | 6.02 × 10²³ | 3 |
+| Avogadro's constant | 6.02 × 10²³; counter end values 1.20 × 10²⁴ (2 mol H₂) and 6.02 × 10²³ (1 mol O₂); 24 and 12 molecules | 3 |
+| Balance display | 0.00 g; 36.03 g (2 mol H₂O) | 1, 4 |
 | Masses (H 1.008, O 16.00) | 4.03 g, 32.00 g, 36.03 g; ≈ 1 : 8 : 9; ≈ 16 × heavier | 4, 5 |
-| Al and Cl₂ | 2 : 3; 0.40 mol → 0.60 mol | 8 |
+| Al and Cl₂ | 2 : 3; 0.40 mol → 0.60 mol; crossed slip 0.40 × 2 ÷ 3 = 0.27 mol | 8 |
 | Mixtures | 5 + 35 to 35 + 5 mL, total 40 mL; 1.0 mol L⁻¹ | 10 |
 | ΔT (illustrative) | 1.7, 3.3, 5.0, 6.6, 5.0, 3.4, 1.6 °C; cross at 20 : 20 | 11 |
+| Leftover readouts | 5 mL acid: base left over 30 mL; 30 mL acid: acid left over 20 mL; 20 mL: nothing | 11 |
 | A1 | 30 mL; 1.0 mol L⁻¹; 4.4, 8.8, 6.6, 4.4, 2.2 °C; cross at 10 : 20; 1 : 2 | 12, 13 |
 | A2 | 28.0 g; 28.02; 0.999 mol; 3.00 mol; 6.04 g; claim 84.0 g | 14, 15 |
 | Handoff | 30.2%; 36.1% | 16 |
@@ -201,7 +207,9 @@ Model answer: n(N₂) = 28.0 ÷ 28.02 = 0.999 mol (1 mark). Mole ratio N₂ : H�
 Checked with Python (5 November); Codex to re-check.
 
 - 2 × 2.016 = 4.032; 2 × 16.00 = 32.00; 2 × 18.016 = 36.032; 4.032 + 32.00 = 36.032; 32.00 ÷ 2.016 = 15.87; ratio 1 : 7.94 : 8.94.
-- 0.40 × 3 ÷ 2 = 0.60.
+- 0.40 × 3 ÷ 2 = 0.60; slip 0.40 × 2 ÷ 3 = 0.267 (0.27).
+- 2 × 6.022 × 10²³ = 1.204 × 10²⁴ (1.20 × 10²⁴ on the counter).
+- Leftovers at 40 mL total: 35 − 5 = 30 mL base; 30 − 10 = 20 mL acid.
 - HCl series ideal 0.342 °C per mmol × min(x, 40 − x): 1.71, 3.42, 5.12, 6.83, 5.12, 3.42, 1.71.
 - H₂SO₄ series ideal 0.455 °C per mmol × min(2x, 30 − x): 4.55, 9.11, 6.83, 4.55, 2.28; lines 0.88x and 0.44(30 − x) cross at x = 10.
 - 28.0 ÷ 28.02 = 0.9993; × 3 = 2.998; × 2.016 = 6.044; 3 × 28.0 = 84.0.
@@ -219,7 +227,7 @@ Checked with Python (5 November); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules): **5,671 characters**, 17 scenes. At 13.3 characters per second the speech is about 426 s; add about 9 s of holds and settling (the molecule rearrangement in 3, the bars in 4 and 5, the graph points in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 516 s (8.6 minutes)**.
+Revision 2 count (6 November; by script: only lines starting "> ", `**` removed): **5,769 characters**, 17 scenes (Revision 1 was 5,671; scene 8 gains 98). At 13.3 characters per second the speech is about 434 s; add about 9 s of holds and settling (the molecule rearrangement in 3, the bars in 4 and 5, the graph points in 11), about 3 s for the count-up and slider sweeps to settle (3, 10, 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 527 s (8.8 minutes)**, inside 5,500 to 6,800 characters and under 570 s.
 
 ## Scene list and build ids
 
@@ -227,14 +235,15 @@ Lesson key `c-y11-m2-v06` (route chem-y11-m2-v06; root to confirm). Suggested ex
 
 In order (17 scene headings, all `### N.`): hook, prediction, particles-to-moles, masses, conservation, bike-analogy, two-twos, scaling, continuous-variation, method, peak, attempt-1, feedback-1, attempt-2, feedback-2, conclusion-handoff, key-notes.
 
-Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: m2-v05's final frame into scene 1 by camera continue; 1 to 2 to 3 to 4 to 5 camera continue (the equation strip stays); 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 clear change; 9 to 10 to 11 camera continue (the cups stay; the graph builds at the right); attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
+Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions (Revision 2): m2-v05's final frame into scene 1 by camera continue (the balance slides in); 1 to 2 camera continue; 2 to 3 stage change to the particle stage (the balance to a thumbnail; the equation strip stays); 3 to 4 stage change (the balance returns large with the bars); 4 to 5 camera continue (bars to the centre); 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change to the full-width calculation layout; 8 to 9 clear change; 9 to 10 camera continue (the slider is added); 10 to 11 stage change (the graph becomes the hero); attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v06-learning-review.md`, `checks/c-y11-m2-v06-science-check.md`.
 
 ## Assets
 
 Have (inspected 5 November; uniform scaling only):
-- `public/assets/chemistry/m6-foam-cup-calorimeter-v1.png` (lidded foam cup with a probe thermometer, cutaway showing liquid): scenes 9 to 11 (seven copies at small scale).
+- `public/assets/chemistry/y11c-top-pan-balance-v1.png` (inspected 6 November: grey top-pan balance, steel pan, blank dark display that takes the coded readout): scenes 1, 3 (thumbnail), 4, 5.
+- `public/assets/chemistry/m6-foam-cup-calorimeter-v1.png` (lidded foam cup with a probe thermometer, cutaway showing liquid): scenes 9 to 11 (one large hero copy with a coded two-colour fill in the cutaway, plus seven small copies as the run sheet).
 - `public/assets/chemistry/p02-foam-cup-in-beaker-v1.png`: alternative for a close-up cup.
 - `public/assets/chemistry/m5x-safety-glasses-v1.png`: scene 10.
 - From ws-v05 and m2-v05: `y11c-cuso4-crucible-lid-white-v1.png` (final frame).
@@ -243,8 +252,9 @@ Need (new plates, Codex):
 1. `y11c-bike-frame-v1.png`: scene 6. Wanted; fallback: cut scene 6 (334 characters; the narration would fall to about 5,340, so about 200 characters would be added to scene 5 or 11).
 2. `y11c-bike-wheel-v1.png`: scene 6 (used twice). As above.
 3. `y11c-cuso4-old-crystals-v1.png`: final frame here; essential for ws-v06 (its main case). Fallback: `y11c-cuso4-crucible-blue-v1.png` with a coded pale crust (weaker: the crust is the evidence).
+4. `y11c-beaker-water-36ml-v1.png` (Revision 2): scene 4, on the balance pan. The existing `m6-beaker-v1.png` is empty (inspected 6 November); a coded water fill would be a stand-in. Fallback: `m6-beaker-v1.png` with the tag "36 mL of water" and no fill (weaker).
 
-Coded: equation strips, particle diagrams, count-up, mass bars, ratio chips, two-twos callout, scaling rows, reagent labels, cup labels, `LineGraph`, model panel chips, attempt cards, countdowns, key notes board.
+Coded: balance display readout, molecule counters, mixing slider and its readouts, cup cutaway fill, equation strips, particle diagrams, count-up, mass bars, ratio chips, two-twos callout, scaling rows, reagent labels, cup labels, `LineGraph`, model panel chips, attempt cards, countdowns, key notes board.
 
 ## Codex asset brief (Year 11 Chemistry M2 v06)
 
@@ -253,8 +263,9 @@ Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the d
 1. `y11c-bike-frame-v1.png` (1400 × 1000 px): a plain bicycle frame alone (no wheels, no seat or handlebars needed, or a simple seat and handlebars), side view, single muted colour. Must sit between two copies of plate 2 at the true scale of a bike.
 2. `y11c-bike-wheel-v1.png` (1000 × 1000 px): one bicycle wheel with tyre and spokes, side view, matching plate 1's style and scale.
 3. `y11c-cuso4-old-crystals-v1.png` (1000 × 1000 px): a small clear glass screw-top jar, lid off beside it, containing blue copper sulfate crystals whose surfaces carry a pale, whitish-blue powdery crust (weathered crystals), three-quarter view. The crust must read clearly at 300 px wide; the crystal blue must match `y11c-cuso4-crucible-blue-v1.png`.
+4. `y11c-beaker-water-36ml-v1.png` (1000 × 1000 px): a small 50 mL glass beaker, three-quarter view at the same viewing angle as `y11c-top-pan-balance-v1.png`, holding clear, very faintly blue water to about three-quarters full (about 36 mL), with a visible meniscus and no graduation numbers. Glass style must match `m6-beaker-v1.png`. Its base must sit flat on the balance's steel pan when the beaker is about one-third of the pan's width; report the placement on the balance.
 
-Report inspection on the paper and dark board backgrounds at about 300 px wide, and the frame-plus-two-wheels placement. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/chem-y11-m2-v06-provenance.json`.
+Report inspection on the paper and dark board backgrounds at about 300 px wide, the frame-plus-two-wheels placement and the beaker-on-balance placement. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/chem-y11-m2-v06-provenance.json`.
 
 ## Codex error-check brief
 
@@ -291,8 +302,32 @@ Previous: How mass percentages reveal an empirical formula. Next: How a chemistr
 - **2. Concentration word (root).** "Concentration" is used in plain words before m2-v10 defines c = n ÷ V; confirm.
 - **3. Old-crystals plate (root).** Needed by ws-v06; requested here because this video's final frame introduces it.
 - **4. Safety strength (science check).** 1.0 mol L⁻¹ as on the site, or 0.5 mol L⁻¹ for the shown practical (narration says "at this strength", so either fits).
+- **5. Water beaker plate (root, Revision 2).** One new small plate (`y11c-beaker-water-36ml-v1.png`) so the balance can show a real 36.03 g reading in scene 4; fallback is the empty `m6-beaker-v1.png` with a tag.
+- **6. Added narration sentence (root, Revision 2).** Scene 8 gains one sentence (98 characters) to voice the crossed 0.27 mol slip; the rest of the narration is unchanged.
 
 ## Review notes
 
 - Revision 1 has had no independent review. Next: student learning review (does the 1 : 8 : 9 surprise land; is "every millilitre holds the same number of moles" enough without c = n ÷ V; is the leftover explanation of the peak clear at playback speed), then the science check and Codex error check.
 - Checker output (5 November): narration 5,671 characters; per scene (1 to 17): 262, 67, 500, 387, 370, 334, 371, 348, 371, 437, 529, 293, 381, 246, 285, 415, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+- Revision 2 count (6 November): 5,769 characters; per scene (1 to 17): 262, 67, 500, 387, 370, 334, 371, 446, 371, 437, 529, 293, 381, 246, 285, 415, 75. New cues ("No" in 3; "masses depend" in 6; "down" in 8; "five millilitres" in 10; "climbs", "everything used up" in 11) checked against the narration in spoken order. Revision 2 needs the same learning review, science check and Codex error check as Revision 1, plus a contact-sheet check of the build against `../assets/maths-std-ref-chem-m5-g01.jpg` (course pilot).
+
+## Visual upgrade (Revision 2, 6 November 2026)
+
+Against `../maths-visual-standard.md` items 2 to 9 and the audit (`../checks/visual-standard-audit-chem-y11-phys-y12.md`). Science, numbers, scope, route boundaries, opening and final frames and practice questions unchanged.
+
+- Decisions: "Colour roles" and "Type sizes" lines added; anchor and simulation decisions recorded; board-layout exception for full-width stages.
+- Scene 1: painted anchor in the first 20 s: `y11c-top-pan-balance-v1.png` with its display at 0.00 g and the wrong instinct ("2 g H₂?", "1 g O₂?", "→ 2 g H₂O?", "weigh out the coefficients?") in amber hand font beside the empty pan. Coefficients take teal.
+- Scene 3: the hand tags on the balance are struck through in red ("not grams"); new stage for the particles; "same atoms, rearranged" ring on the tallies; live count-up simulation with counters (2 to 24 to 1.20 × 10²⁴; 1 to 12 to 6.02 × 10²³) and a ratio readout that stays at 2 : 1 ("never changes").
+- Scene 4: stage change; the balance returns with a new painted beaker of water (`y11c-beaker-water-36ml-v1.png`) and its display ticks to 36.03 g; "not the same!" between the ratio chips; "16 × heavier" ring on O₂.
+- Scene 5: the conservation sum framed with a green tick; "same atoms, rearranged"; red "never promised" on the crossed third line.
+- Scene 6: hand tags "light", "heavier", "count the parts".
+- Scene 7: callout at about 140 px; teal pen arrow to the mole ratio; red "never change this one".
+- Scene 8: full-width g01 layout: short task strip, navy givens card, row built term by term with teal coefficients, framed "0.60 mol", crossed slip "0.40 × 2 ÷ 3 = 0.27 mol" with "ratio upside down" (one narration sentence added).
+- Scene 9: one hero foam cup with a live ΔT readout; the seven small cups become a run sheet.
+- Scene 10: live mixing slider (5 to 35 mL; acid, base and total readouts; two-colour cup fill); the split sweep shows the total fixed.
+- Scene 11: the graph becomes the hero; the slider sweep drops each point from the readout; live leftover readouts (30 mL base, nothing, 20 mL acid); framed "20 : 20 = 1 : 1"; crossed "highest point = the ratio".
+- Scenes 13 and 15: answers framed ("1 : 2", the equation, "6.04 g"); hand tags in role colours.
+- Scene 16: the memory aid becomes a framed card in teal and amber.
+- Scene 17: five shorter bullets in role colours; the framed memory-aid card on the notes screen.
+- Set-ups: no stage now runs more than about 60 s unchanged (scene 11, about 40 s of speech on the graph stage, is the longest).
+- Assets: one new plate requested (`y11c-beaker-water-36ml-v1.png`); the balance plate is reused.
