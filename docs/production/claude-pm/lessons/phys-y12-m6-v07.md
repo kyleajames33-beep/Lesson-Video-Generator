@@ -1,0 +1,274 @@
+# Year 12 Physics M6 V07: The motor effect. Why does a current-carrying wire feel a magnetic force? (design)
+
+Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+
+Narration 6,005 characters, 14 scenes, about 540 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v06's final frame (reconciled 6 Nov; see "Opening frame").
+
+Scope: seventh video of Year 12 Physics Module 6 (Electromagnetism, Physics Stage 6, 2017 syllabus), first video of the inquiry question "Under what circumstances is a force produced on a current-carrying conductor in a magnetic field?". Templates: `phys-y12-m5-v09.md` (this run's structure), `phys-y11-fa1-v01.md`, `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief format). No pre-design pack exists; the pack work is done here (2017 wording from the ledger, site givens unchanged, every number recalculated in Python, original attempts, asset reuse). Site lesson read in full (6 Nov, read-only, through the brief 168 text extract `work/brief168/module6-lesson07.sa.txt`, hash checked against the live file): orient and predict (horseshoe-magnet prediction, warm-up, learning intentions, vocabulary), model force magnitude and direction (motor effect, drift-velocity derivation, Figure 1, Stop and Check, MC), reason with variables and angle (four factors, Figure 2, applications, Stop and Check), solve a loudspeaker force problem (worked example, HSC tip on the angle, model limit), investigate force patterns (interactive, Activity 1), apply and consolidate (Activity 2, boundary, misconceptions, copy-into-books, "Analyse 6 marks", "Assess 6 marks"), independent practice (Q1, Q2 and model answers), retrieve and finish: `C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson07.sa.html`, SHA256 `1ba6d04173c8eed041862f0fdd4568e96b53c6dd97da3958a88854b085c109f3` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m6-v07` in `../../programme/phys-y12-route-inputs.json`, sections `model-force-and-direction`, `reason-with-variables`, `solve-loudspeaker-force`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Connect charge motion to I length B sin theta, active length and direction; distinguish field-parallel zero force. Stop before wire-wire interactions." Next: "phys-y12-m6-v08: Why do parallel currents attract or repel?"
+
+Owner rules applied: 2017 syllabus only, quoted exactly; one main learner question; no people, hands, faces or body outlines (the right-hand palm rule is named in narration and shown only as three labelled coded axes, "thumb: I", "fingers: B", "palm faces: F"; no hand is drawn); the horseshoe magnet, the copper rod, the switch, the supply and the loudspeaker are painted plates (one new, the rest reused Year 11 plates), and field symbols, current and force arrows, charges, brackets, graphs and calculation strips are coded; B into the page is a grid of crosses and B out of the page a grid of dots; plates never stretched; one reasoning stage at a time; every number recalculated in Python; HSC data-sheet and syllabus symbols (F = lI⊥B = lIB sin θ); an in-teaching prediction with a 3 s countdown; "Pause here to answer." then a 10 s countdown with the full worded question on screen; brief feedback with one crossed-out mistake; original HSC-style questions; optional key-notes hold; Australian spelling; no em dashes.
+
+Syllabus content (Physics Stage 6 (2017), Module 6 Electromagnetism; ledger id `P6-IQ2-01`), quoted from the route JSON `syllabusActions`:
+
+- `P6-IQ2-01`: "investigate qualitatively and quantitatively the interaction between a current-carrying conductor and a uniform magnetic field F=lI_(⊥)B=lIBsinθ to establish: (ACSPH080, ACSPH081)" "conditions under which the maximum force is produced", "the relationship between the directions of the force, magnetic field strength and current", "conditions under which no force is produced on the conductor"
+
+Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx (page 56)
+
+**Boundary:** starts on v06's final frame (a wire across a field into the page, electrons drifting left with upward force arrows, a dashed "F = ?" on the wire). Teaches: the motor effect (a current-carrying conductor in a magnetic field feels a force); why a neutral wire feels it (each drifting charge feels the v04 force and transfers it to the metal); dots and crosses recalled from v04 for the top view; F = BIl from Q = It and v = l/t; the active length; F = lIB sin θ with θ between the current and the field, the maximum at 90° and zero along the field; direction by the right-hand palm rule (coded axes), reversal with I or B; electrons and conventional current give the same direction; the loudspeaker voice coil (site worked example, ideal radial field). Stops before the field of a wire and wire-wire forces (v08), torque on a coil and motors (v16), induction (v10).
+
+## Decisions
+
+- **Learner question (route wording kept).** "Why does a current-carrying wire feel a magnetic force?" is causal. The answer, built in order: a current is moving charge, and every moving charge crossing a field feels a sideways force (2); the charges cannot leave the metal, so the whole wire is pushed (2); adding up the pushes gives F = BIl for the active length (3); only the part of the current running across the field counts, so F = lIB sin θ (5).
+- **Hook (site "Before you read, predict", re-staged).** The site's case is kept: a horizontal copper wire between the poles of a horseshoe magnet, north pole above, so the field points down. Here it is a copper rod hanging on two light leads (a "swing"), seen from the front, current left to right; the rod swings away from the viewer. A 3 s prediction asks which way it swings when the current reverses. The surprise that carries the question: the rod has no overall charge, yet the field pushes it.
+- **Camera tilt to the top view (links the bench to v04's dots and crosses).** Scene 2 lifts the camera above the magnet: the downward field becomes a grid of slate crosses (into the screen), and "away from us" becomes "up the screen". Dots and crosses were taught in v04 (`phys-y12-m6-v04.md`); here they are recalled in a clause with a small inset. The tilt is a coded transition between the painted front view and a coded top view (the top view of the pole face is a coded outline, not a second plate).
+- **Microscopic origin (site Figure 1 text and Stop and Check).** Electrons drift opposite to the conventional current; each feels the v04 force; they are pushed to one side and, unable to leave, push the rest of the rod (author note a). The direction check that electrons and conventional current agree ("two flips cancel") is in scene 6.
+- **Derivation (site "From moving charges to current-carrying wires").** Q = It, l = v t, F = QvB = BIl, with v the drift speed; θ = 90° first. The syllabus form F = lI⊥B = lIB sin θ follows in scene 5 by splitting the current direction into components across and along the field.
+- **Calculation (site MC, unchanged).** 0.30 m, 4.0 A, 0.050 T: F = 0.060 N (about the weight of a 6 g mass, author note b). Angle values from site Figure 2 (sin 30° = 0.50): 0.030 N.
+- **Direction (site Figure 1 and "Copy into your books").** The right-hand palm rule is shown as three coded perpendicular axes with labels; the narration names the fingers, thumb and palm because that is the HSC rule's wording, but no hand or body outline is drawn. On the rod: thumb right, fingers into the screen, palm up the screen.
+- **Loudspeaker (site worked example, unchanged, ideal model).** 80 turns, diameter 2.0 cm, 0.40 T, 0.50 A: circumference 0.0628 m, total 5.03 m, F = 1.0 N. The site's "model limit" (whole circumference in a uniform radial field) is kept as a short screen tag "ideal: all the coil in the field" and in the author notes; the narration says "every bit of wire runs at right angles to the field" only for this ideal model.
+- **Mistake content (no separate mistake scene).** The site's HSC tip (θ between current and field, not wire and horizontal) and "count only the active length" sit in scene 8 with the memory aid; the cos slip is crossed in feedback 1 and the "force along the field" slip in feedback 2.
+- **Memory aid (scene 8, new): "Across the field, full force. Along the field, no force."** See "Memory aid check".
+- **Attempts (original, HSC style).** A1: 2.5 A, 0.40 m in 0.15 T, at 90° (0.15 N) and 30° (0.075 N). A2: direction for current into the page with B to the right (down the page), and zero when the wire lies along the field. Crossed: A1 "cos 30° (0.13 N)"; A2 "force along the field".
+- **Significant figures.** Site data give 0.060 N, 0.030 N, 5.03 m and 1.0 N as the site does; A1 0.15 N and 0.075 N (two significant figures, like the data).
+- **Handoff (route next).** Scene 13 reduces the rod to a straight wire, then adds a second parallel wire, both currents up the screen, with "?" between them (v08: "Why do parallel currents attract or repel?"). See "Final frame".
+- **Colour key (Module 6 key from `phys-y12-m6-v01.md`, open decision 1 there, and v06's final frame):** conventional current orange (as v06's "I"); electrons small grey "−" dots; magnetic field slate ink: arrows, dots and crosses; forces amber (`#b87918`, `PHYS.force`); active-length brackets navy; angle arcs ink; crossed chips red.
+- **Site sources used:** predict box (1); motor-effect definition and "the wire jumps sideways" (1, 2); vocabulary "Motor effect", "Right-hand palm rule", "Drift velocity", "Loudspeaker" (2, 6, 7); derivation (3); formula card with F_max and F = 0 (5); Figure 1 (6); Figure 2 values (5); MC 0.30 m, 4.0 A, 0.050 T (4); four factors (5, key notes); loudspeaker worked example and model limit (7); HSC tip on the angle (8); misconceptions "depends on the metal" (author note a, key notes) and "θ is the angle between the wire and the horizontal" (8); "Analyse 6 marks" steps 3 to 5 (5, 6); Q1 and Q2 ideas (A1). Not used: the "Assess 6 marks" balance investigation (kept for the practical coverage check; see open decision 4), Activity 1 and Activity 2 calculations, galvanometers, pumps and maglev (enrichment), coil torque (v16).
+- **Site notes (quoted from site lesson 7, read 6 Nov; for root to log in `../site-corrections-phys-y12.md` if accepted):**
+  1. Coherence: the retrieve section says "At the start you were asked about Faraday's 1821 electromagnetic rotation experiment at the Royal Institution, if you reversed the current in the rotating wire, what happens?", but the lesson's "Before you read, predict" box asks about a wire between the poles of a horseshoe magnet; no Faraday 1821 question appears at the start. Suggest rewriting the revisit to the horseshoe case (reversing the current reverses the force; doubling B and I quadruples it).
+  2. Checked and correct: Figure 1 direction (I right, B into the page, F up); predict box (I east, B down: F north); MC 0.30 m, 4.0 A, 0.050 T (0.060 N); Stop and Check voice coil (0.40 A); worked example (0.0628 m, 5.03 m, 1.01 N, 1.0 N); MC "current east, field up" (south); Activity 2 (3.93 m, 0.364 A); Q1 (0.060 N, 0.042 N); Q2 (F' = F).
+- **Cause chain taught, in order:** (1) a neutral copper rod in a magnetic field swings when a current flows, and swings back the other way when it reverses (1); (2) the current is drifting electrons, and each moving charge crossing the field feels a sideways force (2); (3) the charges cannot leave the metal, so the rod is pushed with them (2); (4) adding up the pushes on all the moving charge in the active length gives F = BIl (3); (5) only the part of the current running across the field is pushed, so F = lIB sin θ: largest at 90°, zero along the field (5); (6) the force is at right angles to both the current and the field, its sense given by the right-hand palm rule, and it reverses with I or B (6); (7) a loudspeaker uses many turns in a radial field to add the pushes along the axis (7).
+- **Entry knowledge (route `entryKnowledge`):** Year 11 charge, current (conventional current; electrons carry it in metals), potential difference, force; v04's F = qvB sin θ and its direction rule (assumed taught as coded axes, recalled here in a sentence); v06's balanced forces (not needed). Sine of 0°, 30°, 90°.
+- **Learner-visible vocabulary (plain meaning at first use):** motor effect (the force on a current-carrying conductor in a magnetic field, 1); conventional current (the direction positive charges would move, 2); dots and crosses (recalled from v04, 2); drift (the slow average motion of free electrons along the wire, 2); active length (the length of wire inside the field, 3); right-hand palm rule (the direction rule, 6); radial field (a field pointing outwards from a centre like wheel spokes, 7).
+- **Legacy logic ported:** none. The coded family `m6-parallel-wires` (`src/explainer/physics/module6/`) supplies the wire, field-symbol and force-arrow parts (its two-wire limits apply only to v08).
+- **New explainer motion:** **magnet stage** (front view: horseshoe plate, rod plate on two coded leads swinging about the lead tops by a small illustrative angle; top view: coded pole-face outline with a slate cross grid, the rod seen from above); **camera tilt** (front view to top view: the down arrows rotate into crosses, author note c); **charge drift** (ions as fixed pale "+" circles, electrons as grey "−" dots drifting left, each with a small amber force arrow, bunching slightly towards the top edge); **current split** (the orange current arrow resolving into components across and along the field, with the along component greying out); `DataGraph` (F/BIl against θ, 0° to 90°, site Figure 2 points); **palm-rule axes** (three labelled perpendicular arrows that rotate into place over a diagram); **voice-coil section** (radial slate arrows from the centre magnet, current dots and crosses on the coil section, axial amber arrows adding); `AlignedAlgebra`; `Countdown` (3 s in scene 1; 10 s in scenes 9 and 11); `QuestionCard`; `Chip` with `cross`; `PenArrow`; `KeyNotes`; `Heading`.
+- **Board layout:** heading top-left; the magnet stage or diagram on the left; working on the right (task strip, equation strip, grouped givens, then one step at a time); everything above the bottom 12% of the frame.
+- **No human figures.** No hands for the palm rule; the rod is moved only by the current; switches are shown changing state, not operated.
+- **Author notes (not learner copy):**
+  (a) Mechanism: the magnetic force acts on the drifting electrons; they accumulate slightly on one side, setting up a small transverse (Hall) electric field that pushes on the positive lattice, so the net force is transmitted to the conductor. The narration says "they can't leave the metal, so they push on the rest of the rod", which is correct at this level. The force does not depend on the metal (site misconception): the same I, l, B and θ give the same force.
+  (b) 0.060 N ÷ 9.8 m s⁻² = 6.1 × 10⁻³ kg, "about the weight of a six gram mass".
+  (c) Geometry: front view x to the right, y up, z towards the viewer. Field down (−y), current +x: F = I l × B along −z, away from the viewer. Top view (looking down): field into the screen (crosses), current to the right, F up the screen. Reversed current: towards the viewer, down the screen. Electron check: v = −x, q = −e, B = −z gives F along +y in the top view (same).
+  (d) Illustrative swing: the rod's swing angle is not to scale and no value is shown. Drift speed is only described as "slow" (about 0.3 mm s⁻¹ for 4 A in a 1 mm² copper wire; not shown).
+  (e) Pronunciations: "B I L" letter by letter; "sine theta"; "tesla"; "newtons"; "l perpendicular" is not spoken (the screen shows I⊥).
+- **Open decisions for root:**
+  - **1. v06 join (root).** Drafted on an assumed v06 frame, then reconciled on 6 Nov to v06's actual final frame once `phys-y12-m6-v06.md` was on disk (see "Opening frame"); v06's own open decision 4 can be closed in favour of v06's frame. Colours (slate field, orange current) follow v01's Module 6 key.
+  - **2. Horseshoe magnet plate (root, Codex).** One new plate, `y12p-horseshoe-magnet-v1.png` (front view, poles one above the other). Fallback: two coded pole blocks labelled N and S (weaker; the owner rule asks for plates for real objects).
+  - **3. Module 6 colour key extension:** v07 to v12 follow v01's key (field slate, current orange, force amber) and add: area normal navy (v09) and induced emf, induced current and induced field rose (v10 to v12; v06 uses rose for F_B only where F_E and F_B appear together, so no clash in these videos).
+  - **4. Practical coverage.** `P6-IQ2-01` is marked practical in the ledger (`depthStudyOrPractical: true`). This video shows the demonstration qualitatively and calculates from site values; the site's "Assess 6 marks" balance investigation is not used. Record for the Module 6 coverage check, or add a short balance-reading beat if the learning review asks.
+Main question: *A copper rod has no overall charge, yet it swings when a current flows through it between the poles of a magnet. Why?*
+Entry knowledge: current is moving charge; a moving charge crossing a magnetic field feels a sideways force (v04); sine of 0°, 30°, 90°.
+Stops after: motor effect, dots and crosses, F = BIl, active length, F = lIB sin θ, maximum and zero, the palm rule, reversal, the loudspeaker. No wire-wire forces.
+Handoff: v08, why parallel currents attract or repel.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *F*, *B*, *I*, *l*, *θ*. Paper background and handwritten headline face as the explainer house style.
+
+### 1. hook (the swinging rod)
+> Last time ended on this picture. A wire crosses a magnetic field, and every electron drifting inside it feels a sideways push. So does the wire itself get pushed? Here's a real copper rod, hanging on two light leads between the poles of a strong magnet. The north pole is on top, so the field points straight **down**. Close the switch, and a current flows through the rod from left to right. The rod swings away from **us**. Now reverse the current. Which way will it swing this **time**? Towards us. But this rod has no overall charge. So why does a magnetic field push on it at **all**?
+
+Visual: opens on v06's final frame (see "Opening frame"). On "So does the wire itself get pushed?" the dashed amber "F = ?" arrow on the wire pulses. On "copper rod" camera change to the magnet stage: the horseshoe magnet plate (`y12p-horseshoe-magnet-v1.png`, new) seen from the front, poles one above the other, the copper rod plate (`phys-y11-rod-copper-v1.png`) hanging across the gap on two coded leads from a coded support bar; coded leads run to the knife switch (`phys-y11-knife-switch-v1.png` with `phys-y11-knife-switch-blade-v1.png`) and the low-voltage supply (`phys-y11-low-voltage-supply-v1.png`) at the right. Coded "N" on the upper pole, "S" on the lower. On "down" slate field arrows draw down through the gap, label "B". On "Close the switch" the switch blade closes and a orange arrow "I" runs along the rod to the right. On "us" the rod swings back (it shrinks slightly and rises, illustrative, author note d) and an amber arrow "F (away from us)" draws in perspective. On "time" the switch reopens, the rod falls back, the orange arrow flips to point left, and a 3 s `Countdown` runs beside two chips "towards us" and "away from us". On "Towards us." the rod swings forward (it grows slightly); the "towards us" chip ticks. On "all" the heading writes on: "Why does a current-carrying wire feel a magnetic force?" and a chip "the motor effect: a force on a current in a magnetic field".
+
+### 2. inside the wire
+> Let's look from above. From up here, the field points away from us, into the screen, so we draw it as crosses, just as in earlier **videos**. Now zoom into the rod. The metal ions stay put, but free electrons drift slowly along it, the opposite way to the conventional **current**. Each drifting electron is a moving charge in a magnetic field, so each one feels a sideways **push**. The electrons can't leave the metal, so they push on the rest of the rod, and the whole rod **moves**. A neutral wire feels a force because of the moving charges inside it.
+
+Visual: camera tilt (author note c): the front view rotates down to a top view; the slate down arrows turn end-on into a grid of slate crosses over the coded pole-face outline (tag "N pole above"); the rod lies across the stage, orange current arrow to the right (the forward current of scene 1's first close). On "videos" a small inset recalls the convention: one cross "into the screen" and one dot "out of the screen". On "current" camera push into the rod: pale fixed "+" ions in a lattice and grey "−" electrons drifting left; a orange arrow "conventional current" points right above them, tag "electrons drift the other way". On "push" each electron gets a small amber arrow pointing up the screen. On "moves" the electrons bunch slightly towards the top edge, then a single large amber arrow "F" grows on the whole rod, pointing up the screen; the camera pulls back and the rod slides a little up the screen (tag "up the screen = away from us in the front view").
+
+### 3. adding up the pushes
+> So how big is the total force? Say a charge Q flows through the rod in a time t. The current is I equals Q over t. In that same time, the charges drift the length of rod that's inside the field, so their speed is l over **t**. Each moving charge gets a push of q v B, so all of them together get Q times v times B. Now swap in Q equals I t, and v equals l over t. The t's cancel, and the force is B I **l**. Here l is only the length of wire inside the field, called the active **length**.
+
+Visual: the top view stays at the left; a navy bracket marks the rod length between the edges of the cross grid, "l". On "Q flows through" a pale band of charge slides along the rod and a small clock "t" ticks. On "I equals Q over t" the equation strip writes "I = Q/t". On "t" a second line "v = l/t". On "q v B" a line "one charge: F = qvB (v at right angles to B)". On "Q times v times B" "all the moving charge: F = QvB". On "l" `AlignedAlgebra` writes "F = (It)(l/t)B" with the two t's struck through, then "F = BIl" (boxed). On "active length" the parts of the rod outside the grid grey out and the bracket pulses, tag "active length: only the wire inside the field".
+
+### 4. a first calculation
+> Let's try it. A rod has thirty centimetres inside a field of zero point zero five zero tesla, and carries four point zero amps straight across the field. F equals B I l, so that's zero point zero five zero times four point zero times zero point three zero, which is zero point zero six zero **newtons**. That's about the weight of a six gram **mass**. Small, but enough to swing a light rod.
+
+Visual: board change to the working layout, the top-view diagram small at the left with its labels. Task strip: "Find the force on the rod." Equation strip: "F = BIl (current at right angles to B)". Givens grouped: "B = 0.050 T", "I = 4.0 A", "l = 0.30 m (inside the field)". On "newtons" `AlignedAlgebra` "F = 0.050 × 4.0 × 0.30 = 0.060 N" and the amber arrow on the small diagram reads "0.060 N". On "mass" a small chip "≈ weight of 6 g (0.060 ÷ 9.8 ≈ 0.0061 kg)".
+
+### 5. the angle: only the part across the field
+> But that's only true when the current runs straight across the field. Let's lay the field flat across the screen, and turn the wire so its current makes an angle theta with the **field**. Split the current's direction into two parts. One part runs across the field, and those charges get pushed. The other part runs along the field, and a charge moving along a field feels no force at **all**. So the force is B I l sine theta, which the syllabus writes as F equals l I perpendicular **B**. At thirty degrees, sine is a half, so our force halves to zero point zero three zero **newtons**. At ninety degrees, it's the biggest it can be, B I l. And when the current runs along the field, theta is zero, and there's no force, however big the **current**.
+
+Visual: board change: slate field arrows run left to right across a coded panel, label "B". A straight wire (the rod plate, scaled, in the plane of the screen) with a orange current arrow pointing up the screen lies at right angles to the field, with an amber circled cross "F into the screen" (author note c: I up the screen, B to the right, F into the screen). On "field" the wire rotates to 30° from the field direction; an arc "θ" draws between the current arrow and a field arrow. On "Split the current's direction" the orange arrow resolves into "I sin θ (across B)" (orange) and "I cos θ (along B)" (grey). On "all" the grey component dims, tag "along B: no force". On "B" the equation strip writes "F = BIl sin θ" and under it the syllabus form "F = lI⊥B = lIB sin θ" (boxed) with a grey tag "Physics Stage 6 (2017)". On "newtons" `AlignedAlgebra` "F = 0.060 × sin 30° = 0.030 N". On "B I l" the wire turns to 90°: "F_max = BIl = 0.060 N" and a `DataGraph` "F ÷ BIl" against "θ (degrees)" 0 to 90 draws beside it with points 0, 0.50 (30°), 0.87 (60°), 1.00 (90°). On "current" the wire turns to lie along the field, the force symbol disappears, "θ = 0°: F = 0", and the current arrow lengthens (tag "bigger current, still zero").
+
+### 6. which way: the right-hand palm rule
+> Which way is the push? It's always at right angles to both the current and the field. To choose between the two possible directions, use the right-hand palm rule. Thumb along the conventional current, fingers along the field, and the palm pushes in the direction of the **force**. On our rod from above, thumb to the right, fingers into the screen, so the palm faces up the **screen**. Reverse the current, or reverse the field, and the force **reverses**. Reverse both, and it's back where it started. And the electrons give the same answer. They move the opposite way, but their charge is negative too, so the two flips **cancel**.
+
+Visual: board change back to the top view of the rod (crosses, current right). On "right-hand palm rule" three coded perpendicular axes appear beside the diagram (no hand): a orange arrow "thumb: I", a slate arrow "fingers: B" drawn in perspective into the screen, and an amber arrow "palm faces: F". On "force" the axes rotate in place to match the rod: orange right, slate into the screen, amber up the screen; the amber arrow on the rod pulses. On "screen" a chip "F ⟂ I and F ⟂ B". On "reverses" two quick variants side by side: current flipped (orange left, F down the screen); field flipped (dots instead of crosses, F down the screen). On "Reverse both" a third variant: current left and dots, F up the screen (tick). On "cancel" the electron inset from scene 2 returns: a grey "−" dot drifting left, a chip "electron: opposite motion × negative charge = same force direction" and its amber arrow up the screen.
+
+### 7. the loudspeaker
+> Here's where this force earns its keep. Inside a loudspeaker, a coil of wire sits in the gap of a ring-shaped magnet. The field points outwards from the centre, like the spokes of a wheel. Say the coil has eighty turns, each two point zero centimetres across, in a field of zero point four zero tesla, carrying zero point five zero amps. In this ideal model, all of the wire is in the field, at right angles to it. One turn is pi times the diameter, about zero point zero six three metres, so eighty turns give about five point zero three metres of **wire**. Then F equals B I l, about one point zero **newton**. Every piece of the coil is pushed the same way, along its axis, so the cone moves in or out. Make the current reverse back and forth, and the cone vibrates. That's **sound**.
+
+Visual: board change: the loudspeaker plate (`phys-y11-loudspeaker-v1.png`, cross-section) at the left, with the cone layer (`phys-y11-loudspeaker-cone-v1.png`) registered to it; a coded end-on inset of the voice coil in the magnet gap: slate arrows pointing radially outwards ("radial field"), the coil's cross-section as a ring of orange dots on one side and crosses on the other. On "ring-shaped magnet" the magnet in the plate highlights; on "spokes of a wheel" the radial arrows pulse. Task strip: "Find the force on the voice coil." Equation strip: "F = BIl (l = total length in the field)". Givens grouped: "N = 80 turns", "d = 2.0 cm", "B = 0.40 T", "I = 0.50 A". On "ideal model" a grey tag "ideal: all the coil in the field". On "wire" `AlignedAlgebra` "one turn: πd = π × 0.020 = 0.0628 m", "l = 80 × 0.0628 = 5.03 m". On "newton" "F = 0.40 × 0.50 × 5.03 = 1.0 N". On "along its axis" short amber arrows on every coil segment in the inset all point the same way along the axis and add into one arrow "1.0 N" on the plate's coil. On "back and forth" the orange current symbols flip twice and the cone layer moves in and out with the amber arrow flipping. On "sound" faint coded arcs spread from the cone.
+
+### 8. two checks and a way to remember
+> Two quick checks for exam questions. Theta is the angle between the current and the field, not between the wire and the bench. And count only the length of wire that's inside the **field**. Here's a way to remember the angle rule. Across the field, full force. Along the field, no **force**.
+
+Visual: board clears to the scene 5 panel (field arrows across the screen, wire at 30°). On "not between the wire and the bench" a chip "θ = angle to the bench" draws beside a ghost bench line under the wire and is crossed; "θ = angle between I and B" is ticked. On "field" the wire extends beyond the panel edge; the outside part greys, "l = inside only". On "force" the handwritten line writes large above: "Across the field, full force. Along the field, no force." with a small line under it "F = lIB sin θ"; the wire turns to 90° (amber arrow full), then to 0° (no arrow). Hold about 2 seconds.
+
+### 9. attempt 1 (countdown, 10 seconds)
+> Your turn. A straight wire carries a current of two point five amps, and forty centimetres of it lies inside a uniform magnetic field of zero point one five tesla. Calculate the force on the wire when the current is at right angles to the field, and when it's at thirty degrees to the field. Pause here to answer.
+
+Visual: `QuestionCard` (subject "Physics"), worded as printed: "A straight wire carrying a current of 2.5 A has 0.40 m of its length inside a uniform magnetic field of 0.15 T. Calculate the magnitude of the force on the wire when the current is (a) perpendicular to the field, (b) at 30° to the field. (2 marks)" A small coded HSC-style diagram: slate field arrows across a rectangle, the wire crossing it with a orange current arrow and an arc "θ" (no value). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 10. feedback 1 (brief)
+> At right angles, F equals B I l, zero point one five times two point five times zero point four zero, which is zero point one five **newtons**. At thirty degrees, multiply by sine thirty, a half, giving zero point zero seven five **newtons**. The classic slip is using cos thirty, which gives about zero point one three. Theta is between the current and the field, so it's **sine**.
+
+Visual: card shrinks to the top; "perpendicular" and "at 30° to the field" underline. On "zero point one five newtons" `AlignedAlgebra` writes "(a) F = BIl = 0.15 × 2.5 × 0.40 = 0.15 N"; on "zero point zero seven five newtons" "(b) F = BIl sin 30° = 0.15 × 0.5 = 0.075 N". On "sine" a chip "F = 0.15 × cos 30° = 0.13 N" fades in and is crossed (caption "θ is between I and B: use sin θ"). Hold about 1 second.
+
+### 11. attempt 2 (countdown, 10 seconds)
+> Last one. A wire carries a current into the page, in a uniform magnetic field that points to the right. State the direction of the force on the wire. Then state the force on the wire if it's turned to lie along the field. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed: "A straight wire carries a current into the page, in a uniform magnetic field directed to the right, as shown. (a) State the direction of the magnetic force on the wire. (b) The wire is turned so that it lies parallel to the magnetic field. State the magnitude of the force on the wire. (2 marks)" A small coded HSC-style diagram: slate field arrows to the right and a wire end-on as a circle with a cross, labelled "I". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 12. feedback 2 (brief)
+> Thumb into the page, fingers to the right, and the palm faces down the page. So the force is towards the bottom of the **page**. Lying along the field, theta is zero, so the force is zero, however large the **current**. The slip is saying the force points along the field, like an electric force. A magnetic force is always at right angles to the **field**.
+
+Visual: card shrinks to the top; "into the page" and "to the right" underline. The palm-rule axes appear beside the diagram (orange "thumb: I" into the page, slate "fingers: B" right, amber "palm faces: F" down); on "page" "(a) F: towards the bottom of the page" and an amber arrow down from the wire. On "current" the wire turns to lie along the field arrows: "(b) θ = 0°, F = BIl sin 0° = 0". On "field" a chip "F to the right, along B" fades in and is crossed (caption "magnetic force ⟂ B"). Hold about 1 second.
+
+### 13. handoff
+> So a current in a magnetic field feels a force, because every moving charge in it does. But a current also makes a magnetic field of its own. Put two current-carrying wires side by side, and each one sits in the other's field. So do they pull together, or push **apart**?
+
+Visual: board clears (camera change) to a coded panel: one long vertical wire with a orange current arrow up the screen. On "magnetic field of its own" faint slate circles draw round it (in perspective, tag "Year 11: a current makes a field"). On "side by side" a second parallel wire with an upward orange current arrow slides in beside it, "I₁" and "I₂". On "other's field" each wire's faint circles reach the other wire. On "apart" a large "?" between the wires with two faint amber double-headed arrows, and a chip "Next: why do parallel currents attract or repel?". Hold about 2 seconds. This is the final frame (see "Final frame").
+
+### 14. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Motor effect: a current-carrying conductor in a magnetic field feels a force, because each moving charge in it does. It does not depend on the metal.
+2. F = lI⊥B = lIB sin θ. l: active length (inside the field). θ: angle between the current and B. Maximum F = BIl at 90°; F = 0 when the current is along the field (0° or 180°).
+3. Direction: F is at right angles to both I and B (right-hand palm rule: thumb I, fingers B, palm F). Reversing I or B reverses F. × = into the page, • = out of the page.
+4. Example: 4.0 A, 0.30 m, 0.050 T: 0.060 N. Loudspeaker: l = N × πd; alternating current makes the cone vibrate.
+
+Memory aid (large, on the notes screen): *Across the field, full force. Along the field, no force.*
+
+## Teaching checks
+
+- **Does it explain causes?** Why a neutral wire feels a force: its moving charges each feel the v04 force and cannot leave the metal (2). Why F = BIl: adding the pushes on all the moving charge in the active length (3). Why sin θ: only the current's part across the field is pushed (5). Why reversing I or B reverses F (6). Why electrons give the same direction: two sign flips (6). Why the loudspeaker cone moves along its axis and vibrates (7).
+- **Misconceptions addressed:** a neutral wire cannot feel a field (1, 2); the force depends on the metal (author note a, key note 1); θ measured from the bench (8, crossed); cos instead of sin (10, crossed); the force points along the field (12, crossed); a big current always gives a force (5).
+- **One idea at a time:** the observation (1), the mechanism (2), the size at 90° (3, 4), the angle (5), the direction (6), the application (7).
+- **Video makes it easier:** the rod swinging both ways (1); the camera tilt turning down arrows into crosses (2); electrons drifting with tiny force arrows (2); the struck-through t's (3); the current splitting with its along-field part greying out (5); the palm-rule axes rotating into place (6); every coil segment's arrow adding along the axis (7).
+- **Response opportunity:** one prediction (3 s countdown) and two unseen HSC-style tasks with every condition visible, 10 s each with the invitation to pause; nothing answer-bearing. One crossed mistake each; feedback about 28 s and 26 s.
+- **Avoided double teaching:** v04's force on a moving charge, its direction rule and dots and crosses recalled in a sentence; v06's final picture of drifting electrons reused, not rebuilt; Year 11 conventional current and "a current makes a field" recalled in a clause.
+- **Syllabus coverage:** `P6-IQ2-01`: quantitative F = lIB sin θ (3 to 5, 7), maximum force (5), directions of F, B and I (6), zero force (5, 12). The investigation is shown qualitatively (1; open decision 4).
+- **Out of scope by design:** the field of a wire and wire-wire forces (v08), torque on a coil and motors (v16), induction (v10).
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 9; original wording, HSC style, 2 marks suggested, not an official marking scheme).** "A straight wire carrying a current of 2.5 A has 0.40 m of its length inside a uniform magnetic field of 0.15 T. Calculate the magnitude of the force on the wire when the current is (a) perpendicular to the field, (b) at 30° to the field."
+Model answer: (a) F = lIB = 0.40 × 2.5 × 0.15 = 0.15 N. (b) F = lIB sin 30° = 0.15 × 0.5 = 0.075 N. Classic mistake (crossed): using cos 30° (0.13 N).
+
+**Attempt 2 (scene 11; original wording, HSC style, 2 marks).** "A straight wire carries a current into the page, in a uniform magnetic field directed to the right, as shown. (a) State the direction of the magnetic force on the wire. (b) The wire is turned so that it lies parallel to the magnetic field. State the magnitude of the force on the wire."
+Model answer: (a) Right-hand palm rule: thumb into the page (I), fingers to the right (B), palm faces the bottom of the page: the force is towards the bottom of the page. (b) θ = 0°, so F = lIB sin 0° = 0. Classic mistake (crossed): "the force is to the right, along the field".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Site MC (unchanged) | B = 0.050 T, I = 4.0 A, l = 0.30 m: F = 0.060 N | 4, 5, key notes |
+| Weight comparison | 0.060 ÷ 9.8 = 0.0061 kg ≈ 6 g | 4 |
+| Angle | sin 30° = 0.50: 0.030 N; sin 60° = 0.87; sin 90° = 1; sin 0° = 0 | 5 |
+| Loudspeaker (site, unchanged) | 80 turns, d = 0.020 m, B = 0.40 T, I = 0.50 A; πd = 0.0628 m; l = 5.03 m; F = 1.005 N ≈ 1.0 N | 7 |
+| A1 | 0.15 × 2.5 × 0.40 = 0.15 N; × 0.5 = 0.075 N; cos slip 0.15 × cos 30° = 0.130 N | 9, 10 |
+| A2 | I into the page, B to the right: F towards the bottom of the page; 0 along the field | 11, 12 |
+| Directions | front view: B down, I right, F away; top view: B into the screen, I right, F up the screen | 1, 2, 6 |
+| Drift speed (author note only) | 4.0 ÷ (8.5 × 10²⁸ × 1.0 × 10⁻⁶ × 1.602 × 10⁻¹⁹) = 2.9 × 10⁻⁴ m s⁻¹ | not shown |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (6 Nov); Codex to re-check.
+
+- 0.050 × 4.0 × 0.30 = 0.060; × sin 30° = 0.030; × sin 60° = 0.051962; 0.060 / 9.8 = 0.0061224.
+- π × 0.020 = 0.0628319; × 80 = 5.026548; 0.40 × 0.50 × 5.026548 = 1.005310.
+- 0.15 × 2.5 × 0.40 = 0.15; × 0.5 = 0.075; × cos 30° = 0.129904.
+- Cross products (x right, y up the screen, z out of the screen): x × (−z) = +y; (−e)(−x × −z) = +y; (−z) × x = −y; front view x × (−y) = −z.
+- Site checks: 0.48 / (0.30 × 50 × 0.080) = 0.40 A; 50 × π × 0.025 = 3.927 m; 0.50 / (0.35 × 3.927) = 0.3638 A; 0.080 × 3.0 × 0.25 = 0.060 N; × sin 45° = 0.04243 N.
+
+## Memory aid check
+
+- **"Across the field, full force. Along the field, no force."** Meaning, as said in scene 8: when the current runs at right angles across the field the force is the maximum BIl; when the current runs along the field (parallel or antiparallel) the force is zero; in between it follows sin θ. Assumptions checked: "across" means at right angles to B (90°), not merely "not parallel"; the conductor is straight and the field uniform over the active length; it states size only, not direction (the palm rule gives direction). It helps a new case: A1 (90° gives the larger force), A2 (b) (along the field: zero), and v16's coil sides parallel to the field. Introduced after the explanation (3 to 6).
+- **Considered, not used:** "FBI" (force, field, current on thumb, fingers, palm): the letter order does not match the HSC palm rule's thumb-fingers-palm order and invites wrong assignments.
+
+## Narration length estimate
+
+Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,005 characters**, 14 scenes. Characters per scene (1 to 14): 573, 540, 477, 383, 731, 617, 775, 283, 313, 370, 243, 345, 267, 75. At 13.3 characters per second the speech is about 452 s; add about 3 s for the prediction countdown, 2 s for the swings in scene 1, 2 s for the camera tilt, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 88 s of holds and countdowns): **about 540 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 6's electron sentences (the point is also in scene 2's inset); scene 7's sound sentence; scene 4's weight comparison.
+
+## Opening frame
+
+v06's final frame (`phys-y12-m6-v06.md`, read on disk 6 Nov after this design was first drafted on an assumed frame; reconciled): paper background; a square region filled with a regular grid of slate crosses, tag "B into page"; a straight horizontal coded copper-coloured wire crossing the region from left to right; an orange arrow "I" above it pointing right, tag "conventional current"; small "−" electrons drifting left inside the wire, each with a small amber arrow pointing up; a large dashed amber outline arrow "F = ?" pointing up on the middle of the wire; heading "How can crossed fields select one particle speed?"; chip "Next: why does a current-carrying wire feel a magnetic force?". Scene 1 turns the chip into the heading (on "all"), pulses the "F = ?" arrow, then changes to the magnet stage. Directions agree: current right, B into the page, force up the page.
+
+## Final frame
+
+The last explained frame (end of scene 13, before the key-notes board): paper background; two long parallel vertical coded wires a short distance apart, each with a orange current arrow pointing up the screen, labelled "I₁" (left) and "I₂" (right); faint slate circles around each wire, drawn in perspective, reaching the other wire; a large "?" between the wires with two faint amber double-headed arrows; heading unchanged ("Why does a current-carrying wire feel a magnetic force?"); a chip reads "Next: why do parallel currents attract or repel?". No values. v08 opens on this frame.
+
+## Scene list and build ids
+
+Lesson key `p-y12-m6-v07` (route phys-y12-m6-v07). Suggested explainer folder `src/explainer/lessons/phys-y12-m6-v07` and build folder `docs/production/claude-pm/lessons/p-y12-m6-v07` (root to confirm when adding the LESSONS entry).
+
+In order (kebab-case; 14 scene headings, all `### N.`): hook, inside-the-wire, adding-pushes, first-calculation, angle, palm-rule, loudspeaker, checks-memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: magnet stage (swinging rod layer), camera tilt, charge drift, current split, palm-rule axes, voice-coil section, `DataGraph`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue (tilt); 2 to 3 camera continue (same top view); 3 to 4 clear change (working layout); 4 to 5 clear change; 5 to 6 clear change back to the top view; 6 to 7 clear change; 7 to 8 clear change; attempts and feedback card shrink to the top; 12 to 13 clear change; 13 to 14 fade to the notes board.
+
+Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v07-learning-review.md`, `science_check` = `checks/p-y12-m6-v07-physics-check.md`.
+
+## Assets
+
+Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
+- `public/assets/physics/phys-y11-rod-copper-v1.png` (2172 × 724, RGBA): the rod (1 to 6, 8).
+- `public/assets/physics/phys-y11-knife-switch-v1.png` and `phys-y11-knife-switch-blade-v1.png` (1774 × 887 each, RGBA): the switch (1).
+- `public/assets/physics/phys-y11-low-voltage-supply-v1.png` (1600 × 1000, RGBA): the supply (1).
+- `public/assets/physics/phys-y11-loudspeaker-v1.png` and `phys-y11-loudspeaker-cone-v1.png` (2172 × 724 each, RGBA; sidecars `phys-y11-loudspeaker-v1.json`, `phys-y11-loudspeaker-cone-v1.json`): the loudspeaker cross-section and its moving cone (7). The plate's content is small within its canvas; display it at a size where the magnet and coil gap read clearly, uniformly scaled.
+- **Checked, not used:** `phys-y11-bar-magnet-v1.png` (a bar magnet cannot hold the rod between two poles); `phys-y11-retort-stand-electromagnet-v1.png` (an electromagnet on a stand, not a pole gap); `phys-y11-top-pan-balance-v1.png` (the balance investigation is not used, open decision 4; it is used in v08).
+
+Need (new plate, Codex):
+1. `y12p-horseshoe-magnet-v1.png`: scenes 1 and 2 (front view; the top view is coded). Essential.
+
+Coded: field arrows, dots and crosses, the pole-face outline (top view), leads and support bar, current and force arrows, ions and electrons, brackets, the angle panel, the palm-rule axes, the radial-field coil inset, sound arcs, graph, calculation strips, crossed chips, attempt cards and diagrams, countdowns, key notes board, the two handoff wires.
+
+Kit gaps (for the v07 build brief):
+1. **Magnet stage with camera tilt.** The front-view plate stage with a swinging rod layer, and a coded top view whose slate down arrows rotate into a cross grid as the camera tilts.
+2. **Charge drift.** Ions fixed, electrons drifting at a set speed, each with a small force arrow; slight bunching to one edge.
+3. **Current split and palm-rule axes.** A current arrow resolving into across-field and along-field components; three labelled axes that rotate to match any diagram.
+4. **Voice-coil section.** Radial field arrows, coil dots and crosses, segment force arrows adding along the axis, cone layer motion.
+
+## Codex asset brief (Year 12 Physics M6 v07: horseshoe magnet)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/phys-y12-m6-v07.md`, route entry phys-y12-m6-v07. Paint after the learning review, physics check and Codex error check pass and the owner gives the go-ahead. Save to `public/assets/physics/`. Every plate: transparent PNG with a true alpha channel and **clean edges with no coloured fringe or halo** (check on a black and a white background), ink and watercolour in the house style, matched to `phys-y11-bar-magnet-v1.png` and `phys-y11-rod-copper-v1.png` in line weight, palette and finish, at least 8 per cent clear margin, no text, labels, letters (no "N" or "S"; they are coded), numbers, scale bars, brand names, logos, people, hands, faces, backdrop, glow or ground shadow. Never stretch to fit; keep the native aspect ratio.
+
+1. `y12p-horseshoe-magnet-v1.png` (1600 × 1400 px): a large school horseshoe (U-shaped) magnet lying on its side on an unseen bench, seen from the front at a slight elevation, so its two pole pieces sit one directly above the other with a clear horizontal gap between their flat faces, and the curved bend is at the back (partly hidden behind the poles). The upper arm painted red and the lower arm painted grey (the conventional colouring; the coded letters will mark N on the red pole and S on the grey pole), with bare steel pole faces. The gap is wide enough for the copper rod plate (`phys-y11-rod-copper-v1.png`) to hang across it at the same scale, with room for it to swing a little. Codex reports, in plate pixels: the gap rectangle between the pole faces, the centre of each pole face, and the scale at which the copper rod plate fits across the gap with about 15 per cent of its length outside on each side.
+
+Report inspection on the paper background and the dark board background at about 400 px wide, and confirm the copper rod reads clearly in the gap at the reported scale. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/phys-y12-m6-v07-provenance.json`.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and the values in the narration, screen text, attempts and key notes against the "Numbers used" table.
+2. Confirm the physics of every learner-visible claim: the motor effect; the neutral-wire mechanism (author note a); dots and crosses; Q = It, v = l/t, F = BIl; active length; F = lIB sin θ with θ between the current and the field; maximum at 90° and zero at 0°; the palm rule and every direction in scenes 1, 2, 6 and 12 (author note c); electrons giving the same direction; the ideal loudspeaker model and its axial force.
+3. Confirm the scene 1 swing is described as illustrative and no swing angle is shown.
+4. Confirm the memory aid's assumptions (see "Memory aid check").
+5. Confirm every visual cue phrase quoted after "On" appears verbatim in its scene's narration, in spoken order.
+6. Confirm both attempt cards are original in wording, carry every condition and show nothing answer-bearing.
+7. Confirm the syllabus quote matches the route JSON exactly and is labelled 2017.
+8. Confirm no person, hand, face or body outline is drawn or requested (the palm rule is coded axes only).
+9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
+10. Confirm the narration character count and per-scene counts by script with the build parser rules.
+11. Report site note 1 under Decisions to root.
+
+## YouTube metadata (draft)
+
+Title: Why a Current-Carrying Wire Feels a Force: F = lIB sin θ | HSC Physics Module 6
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module6/lesson07.sa.html
+
+A copper rod has no overall charge, yet it swings when a current flows through it between the poles of a magnet. Why? See how every drifting charge in the wire feels a magnetic push, how those pushes add up to F = BIl, why only the part of the current across the field counts, which way the force points, and how a loudspeaker uses it. Two exam-style questions at the end.
+
+Year 12 Physics (2017 syllabus), Module 6: Electromagnetism.
+Syllabus content (NSW Physics Stage 6, 2017):
+"investigate qualitatively and quantitatively the interaction between a current-carrying conductor and a uniform magnetic field F = lI⊥B = lIB sin θ to establish: conditions under which the maximum force is produced; the relationship between the directions of the force, magnetic field strength and current; conditions under which no force is produced on the conductor"
+Official syllabus: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx
+
+Previous: how crossed fields select one particle speed. Next: why parallel currents attract or repel.
+
+#HSCPhysics #Physics #MotorEffect #HSCScience
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v04's force on a moving charge; check the camera tilt makes the crosses clear; that "they push on the rest of the rod" is enough for the neutral-wire puzzle; that the palm rule reads clearly as axes without a hand; that the attempt cards give nothing away), then the physics check and the Codex error check.
+- The swing, the tilt, the drifting electrons, the current split and the coil arrows adding along the axis carry the explanation; judge them at playback speed in the voiced preview.
