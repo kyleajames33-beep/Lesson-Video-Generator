@@ -10,8 +10,10 @@ import {Beads, GhostBead, StopBar} from '../bio-m6-b03/parts';
 import {S} from './common';
 import {CHR1, CHR2} from './s1';
 import {
-	AMBER, AMBER_INK, BIO_INK, Bar, Book, BreakMark, CW, DoseBar, Glyph, INK, INK_SOFT, KChrom, Karyo, MCell, PLUMC, TEALC, TickC, karyoX, lay, lerp, vis,
+	AMBER, AMBER_INK, BIO_INK, Bar, BreakMark, CW, DoseBar, Glyph, INK, INK_SOFT, KChrom, Karyo, PCell, PChrom, PLUMC, TEALC, TickC, karyoX, lay, lerp, vis,
 } from './parts';
+import {PlateB} from '../bio-m5-b13/shared';
+import {PLATES} from './assets';
 import type {Seg} from './parts';
 
 const SLATE = '#4f86ad';
@@ -19,62 +21,69 @@ const SLATE = '#4f86ad';
 // ---------- 7. Nondisjunction ----------
 const K7 = cues(S('nondisjunction'), {normally: 'normally separate', fails: 'a pair fails to separate', called: 'which is called nondisjunction', one: 'One gamete then gets both', neither: 'another gets neither', fert: 'is fertilised', zygote: 'the zygote has three copies', tri: 'called a trisomy', humans: 'In humans'});
 export const SceneNondisjunction: React.FC = () => {
+	// Quality pass (6 Nov): larger cells holding B5a's painted chromosomes (plum and teal partners), as in B5b.
 	const f = useCurrentFrame();
 	// faint normal row
-	const nO = 0.6 * (1 - prog(f, K7.fert, 14));
+	const nO = 0.7 * (1 - prog(f, K7.fert, 14));
 	const nd = prog(f, K7.normally + 8, 16), ng = prog(f, K7.normally + 40, 16);
 	// main row
 	const mv = prog(f, K7.fails, 30);
 	const gm = prog(f, K7.one, 18);
 	const fm = prog(f, K7.fert + 4, 26);
 	const zy = prog(f, K7.zygote, 14);
-	const st = [230, 640], up = [600, 520], lo = [600, 780];
-	const gU = [[960, 470], [1090, 470]], gL = [[960, 790], [1090, 790]];
-	const mover = [lerp(gU[1][0], 1430, fm), lerp(gU[1][1], 640, fm)];
-	const partner = [lerp(1780, 1570, fm), 640];
-	const line = (a: number[], b: number[], o: number, k: string) => <line key={k} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="6 6" opacity={o} />;
+	const st = [250, 650], up = [640, 470], lo = [640, 830];
+	const gU = [[1000, 450], [1170, 450]], gL = [[1000, 840], [1170, 840]];
+	const ZX = 1580, ZY = 640;
+	const mover = [lerp(gU[1][0], ZX - 120, fm), lerp(gU[1][1], ZY, fm)];
+	const partner = [lerp(1840, ZX + 120, fm), ZY];
+	const line = (a: number[], b: number[], o: number, k: string) => <line key={k} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="7 7" opacity={o} />;
+	const pair = (sep: number, h: number): CChrom2[] => [{color: PLUMC, dx: -sep, dy: 0, dup: true, h}, {color: TEALC, dx: sep, dy: 0, dup: true, h}];
+	const both = (h: number): CChrom2[] => [{color: PLUMC, dx: -h * 0.2, dy: 0, h}, {color: TEALC, dx: h * 0.2, dy: 0, h}];
 	return (
 		<>
 			<Heading text="Nondisjunction: a change in number" at={4} size={56} />
 			<Overlay>
 				{/* the normal row, faint and small */}
 				<g opacity={nO}>
-					<Sx x={110} y={282} text="normal" size={30} color={INK_SOFT} hand />
-					<MCell x={300} y={270} r={50} chroms={[{color: PLUMC, dx: -12, dy: 0, dup: true}, {color: TEALC, dx: 12, dy: 0, dup: true}]} />
-					<MCell x={460} y={270} r={38} o={nd} chroms={[{color: PLUMC, dx: 0, dy: 0, dup: true}]} />
-					<MCell x={560} y={270} r={38} o={nd} chroms={[{color: TEALC, dx: 0, dy: 0, dup: true}]} />
-					{[PLUMC, PLUMC, TEALC, TEALC].map((c, k) => <MCell key={k} x={700 + k * 76} y={270} r={30} o={ng} chroms={[{color: c, dx: 0, dy: 0}]} />)}
+					<Sx x={110} y={262} text="normal" size={32} color={INK_SOFT} hand />
+					<PCell x={300} y={250} r={56} chroms={pair(14, 70)} />
+					<PCell x={450} y={250} r={44} o={nd} chroms={[{color: PLUMC, dx: 0, dy: 0, dup: true, h: 60}]} />
+					<PCell x={550} y={250} r={44} o={nd} chroms={[{color: TEALC, dx: 0, dy: 0, dup: true, h: 60}]} />
+					{[PLUMC, PLUMC, TEALC, TEALC].map((c, k) => <PCell key={k} x={690 + k * 84} y={250} r={36} o={ng} chroms={[{color: c, dx: 0, dy: 0, h: 50}]} />)}
+					<Sx x={1040} y={262} text="one copy each" size={30} color={INK_SOFT} hand opacity={ng} />
 				</g>
 				{/* the main row */}
-				{line([st[0] + 95, st[1]], [up[0] - 72, up[1]], prog(f, K7.fails, 10), 'a')}
-				{line([st[0] + 95, st[1]], [lo[0] - 72, lo[1]], prog(f, K7.fails, 10), 'b')}
-				{[gU[0], gU[1]].map((g, k) => line([up[0] + 72, up[1]], [g[0] - 46, g[1]], gm, 'u' + k))}
-				{[gL[0], gL[1]].map((g, k) => line([lo[0] + 72, lo[1]], [g[0] - 46, g[1]], gm, 'l' + k))}
-				<MCell x={st[0]} y={st[1]} r={95} o={1 - 0.6 * mv} chroms={mv < 0.02 ? [{color: PLUMC, dx: -22 + 8 * prog(f, K7.normally, 14), dy: 0, dup: true}, {color: TEALC, dx: 22 - 8 * prog(f, K7.normally, 14), dy: 0, dup: true}] : []} />
-				<MCell x={up[0]} y={up[1]} r={72} o={mv} />
-				<MCell x={lo[0]} y={lo[1]} r={72} o={mv} />
-				{mv > 0.01 && mv < 1 ? [PLUMC, TEALC].map((c, k) => <Glyph key={k} x={lerp(st[0] - 14 + 28 * k, up[0] - 14 + 28 * k, mv)} y={lerp(st[1], up[1], mv)} color={c} dup />) : null}
-				{mv >= 1 ? <MCell x={up[0]} y={up[1]} r={72} chroms={[{color: PLUMC, dx: -14, dy: 0, dup: true}, {color: TEALC, dx: 14, dy: 0, dup: true}]} o={1} /> : null}
-				{gU.map((g, k) => (k === 1 && fm > 0.01 ? null : <MCell key={'gu' + k} x={g[0]} y={g[1]} r={46} o={gm} chroms={[{color: PLUMC, dx: -10, dy: 0}, {color: TEALC, dx: 10, dy: 0}]} />))}
-				{gL.map((g, k) => <MCell key={'gl' + k} x={g[0]} y={g[1]} r={46} o={gm} />)}
-				{gU.map((g, k) => <Sx key={'cu' + k} x={g[0]} y={g[1] + 82} text="2 copies" size={28} color={AMBER_INK} hand anchor="middle" at={K7.one + 18} out={K7.fert} />)}
-				{gL.map((g, k) => <Sx key={'cl' + k} x={g[0]} y={g[1] + 82} text="0" size={30} color={INK_SOFT} hand anchor="middle" at={K7.neither} out={K7.fert} />)}
-				<Lbl x={140} y={918} text="nondisjunction: a pair fails to separate" size={40} color={AMBER_INK} at={K7.called} out={K7.neither + 40} />
-				<GTag x={140} y={942} text="or sister chromatids, in meiosis II" at={K7.called + 24} out={K7.neither + 40} size={26} />
+				{line([st[0] + 150, st[1]], [up[0] - 115, up[1]], prog(f, K7.fails, 10), 'a')}
+				{line([st[0] + 150, st[1]], [lo[0] - 115, lo[1]], prog(f, K7.fails, 10), 'b')}
+				{[gU[0], gU[1]].map((g, k) => line([up[0] + 115, up[1]], [g[0] - 72, g[1]], gm, 'u' + k))}
+				{[gL[0], gL[1]].map((g, k) => line([lo[0] + 115, lo[1]], [g[0] - 72, g[1]], gm, 'l' + k))}
+				<PCell x={st[0]} y={st[1]} r={150} o={1 - 0.75 * mv} chroms={mv < 0.02 ? pair(46 - 12 * prog(f, K7.normally, 14), 150) : []} />
+				<PCell x={up[0]} y={up[1]} r={115} o={mv} />
+				<PCell x={lo[0]} y={lo[1]} r={115} o={mv} />
+				{mv > 0.01 && mv < 1 ? [PLUMC, TEALC].map((c, k) => <PChrom key={k} x={lerp(st[0] - 34 + 68 * k, up[0] - 26 + 52 * k, mv)} y={lerp(st[1], up[1], mv)} color={c} dup h={lerp(150, 120, mv)} />) : null}
+				{mv >= 1 ? <PCell x={up[0]} y={up[1]} r={115} chroms={pair(26, 120)} /> : null}
+				{gU.map((g, k) => (k === 1 && fm > 0.01 ? null : <PCell key={'gu' + k} x={g[0]} y={g[1]} r={72} o={gm} chroms={both(96)} />))}
+				{gL.map((g, k) => <PCell key={'gl' + k} x={g[0]} y={g[1]} r={72} o={gm} />)}
+				{gU.map((g, k) => <Sx key={'cu' + k} x={g[0]} y={g[1] + 112} text="2 copies" size={34} color={AMBER_INK} hand anchor="middle" at={K7.one + 18} out={K7.fert} />)}
+				{gL.map((g, k) => <Sx key={'cl' + k} x={g[0]} y={g[1] + 112} text="0" size={40} color={INK_SOFT} hand anchor="middle" at={K7.neither} out={K7.fert} />)}
+				<Lbl x={1300} y={330} text="nondisjunction:" size={46} color={AMBER_INK} at={K7.called} out={K7.fert + 10} />
+				<Lbl x={1300} y={384} text="a pair fails to separate" size={42} color={AMBER_INK} at={K7.called + 6} out={K7.fert + 10} />
+				<GTag x={1300} y={420} text="or sister chromatids, in meiosis II" at={K7.called + 24} out={K7.fert + 10} size={26} />
 				{/* fertilisation */}
 				{fm > 0.01 && zy < 1 ? (
 					<g opacity={1 - zy}>
-						<MCell x={mover[0]} y={mover[1]} r={46} chroms={[{color: PLUMC, dx: -10, dy: 0}, {color: TEALC, dx: 10, dy: 0}]} />
-						<MCell x={partner[0]} y={partner[1]} r={46} chroms={[{color: SLATE, dx: 0, dy: 0}]} />
+						<PCell x={mover[0]} y={mover[1]} r={72} chroms={both(96)} />
+						<PCell x={partner[0]} y={partner[1]} r={72} chroms={[{color: SLATE, dx: 0, dy: 0, h: 96}]} />
 					</g>
 				) : null}
-				<MCell x={1500} y={640} r={92} o={zy} chroms={[{color: PLUMC, dx: -26, dy: 0}, {color: TEALC, dx: 0, dy: 0}, {color: SLATE, dx: 26, dy: 0}]} />
-				<Lbl x={1500} y={790} text="trisomy: three copies" size={42} color={AMBER_INK} anchor="middle" at={K7.tri} />
-				<Sx x={1500} y={878} text="46 + 1 = 47" size={60} color={AMBER_INK} weight={800} anchor="middle" at={K7.humans + 8} />
+				<PCell x={ZX} y={ZY} r={160} o={zy} chroms={[{color: PLUMC, dx: -52, dy: 0, h: 140}, {color: TEALC, dx: 0, dy: 0, h: 140}, {color: SLATE, dx: 52, dy: 0, h: 140}]} />
+				<Lbl x={ZX} y={860} text="trisomy: three copies" size={46} color={AMBER_INK} anchor="middle" at={K7.tri} />
+				<Sx x={ZX} y={950} text="46 + 1 = 47" size={64} color={AMBER_INK} weight={800} anchor="middle" at={K7.humans + 8} />
 			</Overlay>
 		</>
 	);
 };
+type CChrom2 = {color: string; dx: number; dy: number; dup?: boolean; h?: number; o?: number};
 
 // ---------- 8. Trisomy 21 ----------
 const K8 = cues(S('trisomy-21'), {instead: 'three copies instead of two', half: 'half as much again', many: 'many parts of the body', survive: 'can survive', smallest: 'is the smallest', most2: 'most other numbered chromosomes'});
@@ -185,43 +194,42 @@ export const SceneCompare: React.FC = () => {
 
 // ---------- 10. Memory: the book ----------
 const K10 = cues(S('memory'), {book: 'Think of a chromosome as a book', del: 'In a deletion', dup: 'In a duplication', inv: 'In an inversion', trans: 'in a translocation', limit: 'The analogy has a limit', intact: 'An intact flipped gene', brk: 'a break inside it', switches: 'switches it on'});
-const TABS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 export const SceneMemory: React.FC = () => {
 	const f = useCurrentFrame();
 	const dimL = 1 - 0.6 * prog(f, K10.limit, 14);
 	const phase = f >= K10.trans ? 4 : f >= K10.inv ? 3 : f >= K10.dup ? 2 : f >= K10.del ? 1 : 0;
-	const tabs = phase === 1 ? TABS.map(l => ({l, o: l === 'C' || l === 'D' ? 0.15 : 1}))
-		: phase === 2 ? ['A', 'B', 'C', 'D', 'C', 'D', 'E', 'F', 'G', 'H'].map((l, i) => ({l, amber: i === 4 || i === 5}))
-			: phase === 3 ? ['A', 'B', 'C', 'D', 'G', 'F', 'E', 'H'].map(l => ({l, amber: 'GFE'.includes(l)}))
-				: phase === 4 ? ['A', 'B', 'C', 'D', 'E', 'F'].map(l => ({l})) : TABS.map(l => ({l}));
 	const lines = [
 		{at: K10.del, t: 'deletion: chapter lost'},
 		{at: K10.dup, t: 'duplication: printed twice'},
 		{at: K10.inv, t: 'inversion: back to front'},
 		{at: K10.trans, t: 'translocation: moved to another book'},
 	];
-	const mk = (labels: string[], x0: number, mod?: (s: Seg) => Seg, tone?: 'blue') => { const L = lay(labels, x0, 28, 14, tone ?? 'n'); return {segs: mod ? L.segs.map(mod) : L.segs, cen: L.cen, end: L.end}; };
+	// Quality pass (6 Nov): the painted book carries the analogy; each line's bar is drawn large enough to read.
+	const MG = 54, MC = 24, BX = 800;
+	const mk = (labels: string[], x0: number, mod?: (s: Seg) => Seg, tone?: 'blue') => { const L = lay(labels, x0, MG, MC, tone ?? 'n'); return {segs: mod ? L.segs.map(mod) : L.segs, cen: L.cen, end: L.end}; };
 	const bars = [
-		mk(CHR1, 900, s => (s.l === 'C' || s.l === 'D' ? {...s, dashed: true} : s)),
-		(() => { const b = mk(['A', 'B', '●', 'C', 'D', 'C', 'D', 'E', 'F', 'G', 'H'], 900); b.segs[4].tone = 'amber'; b.segs[5].tone = 'amber'; return b; })(),
-		mk(['A', 'B', '●', 'C', 'D', 'G', 'F', 'E', 'H'], 900, s => ('GFE'.includes(s.l) ? {...s, tone: 'amber'} : s)),
+		mk(CHR1, BX, s => (s.l === 'C' || s.l === 'D' ? {...s, dashed: true} : s)),
+		(() => { const b = mk(['A', 'B', '●', 'C', 'D', 'C', 'D', 'E', 'F', 'G', 'H'], BX); b.segs[4].tone = 'amber'; b.segs[5].tone = 'amber'; return b; })(),
+		mk(['A', 'B', '●', 'C', 'D', 'G', 'F', 'E', 'H'], BX, s => ('GFE'.includes(s.l) ? {...s, tone: 'amber'} : s)),
 	];
-	const t1 = mk(['A', 'B', '●', 'C', 'D', 'E', 'F'], 900);
-	const t2 = mk(['M', 'N', '●', 'O', 'G', 'H'], 900 + t1.end - 900 + 30, s => (s.l === 'G' || s.l === 'H' ? {...s, tone: 'amber'} : s), 'blue');
+	const t1 = mk(['A', 'B', '●', 'C', 'D', 'E', 'F'], BX);
+	const t2 = mk(['M', 'N', '●', 'O', 'G', 'H'], t1.end + 34, s => (s.l === 'G' || s.l === 'H' ? {...s, tone: 'amber'} : s), 'blue');
 	const inset = vis(f, K10.limit + 6, 866, 14);
 	const tag2 = f >= K10.switches;
+	const RY = (i: number) => 300 + i * 100;
 	return (
 		<>
 			<Heading text="A chromosome is a book" at={K10.book} size={56} />
 			<Overlay>
 				<g opacity={dimL}>
-					<Book x={1400} y={210} w={180} h={330} tabs={tabs} o={prog(f, K10.book, 14)} />
-					<Book x={1660} y={330} w={110} h={210} tabs={[{l: 'M'}, {l: 'N'}, {l: 'G', amber: true}, {l: 'H', amber: true}]} o={prog(f, K10.trans + 6, 14)} />
-					{lines.map((l, i) => <Sx key={i} x={140} y={300 + i * 100} text={l.t} size={44} color={i === phase - 1 ? AMBER_INK : INK} hand at={l.at} />)}
-					{bars.map((b, i) => <g key={i} opacity={prog(f, lines[i].at + 8, 12)}><Bar segs={b.segs} cen={b.cen} y={290 + i * 100} gw={28} h={28} size={16} /></g>)}
+					<PlateB p={PLATES.book} cx={1650} cy={360} w={400} o={prog(f, K10.book, 14)} />
+					<Sx x={1650} y={540} text="genes = chapters" size={38} color={BIO_INK} hand anchor="middle" at={K10.book + 20} />
+					<PlateB p={PLATES.book} cx={1690} cy={650} w={240} o={prog(f, K10.trans + 30, 14)} />
+					{lines.map((l, i) => <Sx key={i} x={110} y={RY(i) + 14} text={l.t} size={44} color={i === phase - 1 ? AMBER_INK : INK} hand at={l.at} />)}
+					{bars.map((b, i) => <g key={i} opacity={prog(f, lines[i].at + 8, 12)}><Bar segs={b.segs} cen={b.cen} y={RY(i)} gw={MG} h={50} size={30} /></g>)}
 					<g opacity={prog(f, K10.trans + 8, 12)}>
-						<Bar segs={t1.segs} cen={t1.cen} y={590} gw={28} h={28} size={16} />
-						<Bar segs={t2.segs} cen={t2.cen} cenTone="blue" y={590} gw={28} h={28} size={16} />
+						<Bar segs={t1.segs} cen={t1.cen} y={RY(3) + 50} gw={MG} h={50} size={30} />
+						<Bar segs={t2.segs} cen={t2.cen} cenTone="blue" y={RY(3) + 50} gw={MG} h={50} size={30} />
 					</g>
 				</g>
 				{/* the analogy's limit */}

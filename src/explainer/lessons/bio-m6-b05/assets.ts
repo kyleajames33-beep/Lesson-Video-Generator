@@ -11,6 +11,7 @@
 import type {PB} from '../bio-m5-b07/shared';
 import {PLATES as B01} from '../bio-m6-b01/assets';
 import {PLATES as B04} from '../bio-m6-b04/assets';
+import {P_PAIR} from '../bio-m5-b05a/chrom';
 
 const B = 'assets/biology/';
 const mk = (name: string, nat: [number, number], box: [number, number, number, number]): PB => ({src: B + name, nat, box});
@@ -25,6 +26,14 @@ export const PLATES = {
 	sperm: mk('b3a-sperm-v1.png', [2200, 1600], [264, 640, 1936, 958]),
 	egg: mk('b3a-egg-v1.png', N2, [240, 252, 1759, 1748]),
 	milk: mk('b2c-milk-glass-bench-v1.png', [1800, 1200], [493, 228, 1346, 984]),
+	// Quality pass (6 Nov): reused body-tissue plates for the somatic examples, measured from the real files.
+	skin: mk('m8-skin-normal-v1.png', N2, [160, 228, 1838, 1772]),
+	muscle: mk('b3a2-smooth-muscle-cell-relaxed-v1.png', [2500, 724], [208, 205, 2271, 509]),
+	liver: mk('m8-liver-cell-glycogen-full-v1.png', N2, [221, 294, 1779, 1706]),
+	chrom: B04.chrom,
+	// Quality pass 2: the painted polymerase (drawn by parts.tsx Pol) and the small intestine for the lactase anchor.
+	pol: mk('y11-enzyme-polymerase-v1.png', [800, 800], [95, 72, 704, 728]),
+	gut: mk('y11-small-intestine-v1.png', [1330, 1182], [63, 64, 1270, 1140]),
 };
 if (PLATES.flyPatch.box.join() !== PLATES.flyRed.box.join()) throw new Error('White-patch fly plate must overlay the red-eye fly exactly');
-export const ASSETS_B05: string[] = Object.values(PLATES).map(p => p.src);
+export const ASSETS_B05: string[] = [...Object.values(PLATES).map(p => p.src), P_PAIR.src];

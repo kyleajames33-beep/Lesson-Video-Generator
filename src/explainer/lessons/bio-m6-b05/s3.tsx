@@ -127,7 +127,7 @@ export const SceneDecision: React.FC = () => {
 	const PX = [110, 990], PY = 230, PW = 820, PH = 500;
 	const cards: {at: number; head: string; lines: {t: string; at: number; color: string}[]}[] = [
 		{at: K14.body, head: '1. where in the body?', lines: [{t: 'somatic: this organism', at: K14.som, color: INK}, {t: 'germ line: can be inherited', at: K14.som + 40, color: PLUM}]},
-		{at: K14.dna, head: '2. where in the DNA?', lines: [{t: 'coding: check the codons', at: K14.coding, color: INK}, {t: 'non-coding: does it', at: K14.nc, color: TEALC}, {t: 'control the gene?', at: K14.nc, color: TEALC}]},
+		{at: K14.dna, head: '2. where in the DNA?', lines: [{t: 'coding: check the codons', at: K14.coding, color: INK}, {t: 'non-coding: does it control the gene?', at: K14.nc, color: TEALC}]},
 	];
 	return (
 		<>
@@ -137,12 +137,21 @@ export const SceneDecision: React.FC = () => {
 					<g key={i} opacity={prog(f, c.at, 14)}>
 						<CardBox x={PX[i]} y={PY} w={PW} h={PH} at={-100} stroke={AMBER} sw={3.5} />
 						<Sx x={PX[i] + 36} y={PY + 74} text={c.head} size={50} color={INK} hand />
-						{c.lines.map((l, k) => <Sx key={k} x={PX[i] + 36} y={PY + 160 + k * 58} text={l.t} size={42} color={l.color} hand at={l.at} />)}
+						{c.lines.map((l, k) => <Sx key={k} x={PX[i] + 36} y={PY + 140 + k * 54} text={l.t} size={40} color={l.color} hand at={l.at} />)}
 						{i === 0 ? <CurveArrow a={[PX[0] + PW + 8, PY + PH / 2]} b={[PX[1] - 8, PY + PH / 2]} at={K14.dna - 4} bow={0} color={AMBER_INK} width={6} /> : null}
 					</g>
 				))}
-				<g opacity={prog(f, K14.som + 10, 14)}><PatchTree x={PX[0] + 200} y={PY + 330} R={80} /><GermArrow x={PX[0] + 440} y={PY + 380} /></g>
-				<g opacity={prog(f, K14.coding + 10, 14)}><BandIcon x={PX[1] + 70} y={PY + 380} kind="warm" /><BandIcon x={PX[1] + 420} y={PY + 380} kind="teal" /></g>
+				{/* quality pass (6 Nov): painted examples with each question, shown as the card lands */}
+				<PlateAt p={PLATES.uvSkin} cx={PX[0] + 200} cy={PY + 360} w={210} at={K14.body + 10} />
+				<Sx x={PX[0] + 200} y={PY + 480} text="skin cell: somatic" size={32} color={INK} hand anchor="middle" at={K14.body + 16} />
+				<PlateAt p={PLATES.dish} cx={PX[0] + 590} cy={PY + 360} w={230} at={K14.body + 16} />
+				<Sx x={PX[0] + 590} y={PY + 480} text="gametes: germ line" size={32} color={PLUM} hand anchor="middle" at={K14.body + 22} />
+				<g opacity={prog(f, K14.dna + 10, 14)}>
+					<g transform={`translate(${PX[1] + 100},${PY + 360}) scale(1.5) translate(${-(PX[1] + 100)},${-(PY + 360)})`}><BandIcon x={PX[1] + 30} y={PY + 360} kind="warm" /></g>
+					<g transform={`translate(${PX[1] + 520},${PY + 360}) scale(1.5) translate(${-(PX[1] + 520)},${-(PY + 360)})`}><BandIcon x={PX[1] + 450} y={PY + 360} kind="teal" bar={1} /></g>
+					<Sx x={PX[1] + 150} y={PY + 470} text="codons" size={32} color={INK} hand anchor="middle" />
+					<Sx x={PX[1] + 570} y={PY + 470} text="control" size={32} color={TEALC} hand anchor="middle" />
+				</g>
 				<g opacity={prog(f, K14.next, 14)}>
 					<CardBox x={980} y={800} w={840} h={150} at={-100} stroke={AMBER} sw={3.5} />
 					<CodonText x={1010} y={890} codons={['AUG', 'GCU']} size={30} gap={14} />
@@ -157,12 +166,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 15. Key notes ----------
 const NOTES = [
-	'Somatic mutation: in a body cell. Copied by mitosis into that cell\'s descendants, so it can affect part of one organism (for example, a skin cancer). Not inherited (in animals).',
-	'Germ-line mutation: in a cell that makes gametes. An offspring that inherits it has it in every cell, including its germ cells, so it can be passed on and enter the gene pool.',
-	'Coding DNA (about 1 to 2% of human DNA) is translated into protein; a mutation there changes a codon (silent, missense, nonsense, frameshift).',
-	'Non-coding DNA includes promoters and regulatory sequences, which control when, where and how much a gene is expressed (lactase persistence), and introns, cut out of mRNA. Some has no known job.',
-	'Significance depends on what the changed stretch does, and what the change does to it, not on whether it is translated.',
+	'Somatic mutation: in a body cell; mitosis copies it only into that cell\'s descendants.',
+	'It can affect part of one organism (e.g. a skin cancer); not inherited (in animals).',
+	'Germ-line mutation: in a cell that makes gametes; offspring have it in every cell.',
+	'Germ-line mutations can be passed on again and enter the gene pool.',
+	'Coding DNA (1 to 2%): a change alters a codon (silent, missense, nonsense, frameshift).',
+	'Non-coding DNA: promoters and regulatory sequences control the gene (lactase persistence); introns are cut out.',
+	'Significance: what the changed stretch does, not whether it is translated.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Somatic stays with you. Germ line can go to your kids (animals). Non-coding doesn't mean unimportant." tag="where in the body decides who it can affect; where in the DNA decides what it does" size={30} aidTop={690} />
+	<NotesBoard notes={NOTES} aid="Somatic stays with you. Germ line can go to your kids (animals). Non-coding doesn't mean unimportant." tag="where in the body decides who it can affect; where in the DNA decides what it does" size={36} aidTop={720} />
 );

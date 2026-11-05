@@ -12,6 +12,7 @@ import {MRNA, MRNA_INK, RnaPol} from '../bio-m5-b06b/shared';
 import {ProteinBlob} from '../bio-m5-b06c/shared';
 import {BIO_INK, CARD, EDGE, FillBar, PLUM, PLUM_SOFT, SlimStrand, clamp01, lerp, rungX, smooth, vis} from '../bio-m6-b01/parts';
 import {TEALC} from '../bio-m6-b04/parts';
+import {PlateB} from '../bio-m5-b07/shared';
 
 export {clamp01, lerp, smooth, vis, PLUM, PLUM_SOFT, BIO_INK, CARD, EDGE, TEALC, MRNA, MRNA_INK, GREYT, GREY_INK};
 export const TEAL_FILL = '#d4ede9';
@@ -118,7 +119,12 @@ export const StopMark: React.FC<{x: number; y: number; o?: number; w?: number}> 
 ));
 
 // ---------- the gene map ----------
-export const GX0 = 110, GP = 28, GN = 61, GY = 700, GG = 34;
+// Quality pass 2 (6 Nov, root review): the gene map is the hero. The strand is drawn about four times thicker (gap 130,
+// thick rails and rungs) across 89% of the width at mid-height, with the regions as solid coloured blocks; LBY is the
+// baseline for the region labels under it. The polymerase is the painted enzyme plate docking on the strand.
+export const GX0 = 110, GP = 28, GN = 61, GY = 470, GG = 130;
+export const LBY = GY + GG + 100;
+export const GMID = GY + GG / 2;
 export const gr = (i: number) => rungX(GX0, i, GP);
 export const REG = {ctrl: [5, 7], promo: [20, 23], e1: [24, 29], e2: [32, 37], e3: [40, 45]} as const;
 export type RegKey = keyof typeof REG;
@@ -129,11 +135,11 @@ export const GENE_X: [number, number] = [regX('e1')[0], regX('e3')[1]];
 export const Band: React.FC<{x1: number; x2: number; o?: number; kind: 'teal' | 'warm' | 'grey'; bright?: number; y?: number; gap?: number; dy?: number}> = ({x1, x2, o = 1, kind, bright = 0, y = GY, gap = GG, dy = 0}) => (o <= 0.01 ? null : (
 	<rect x={x1} y={y - 14 + dy} width={x2 - x1} height={gap + 28} rx={12}
 		fill={kind === 'teal' ? TEAL_FILL : kind === 'warm' ? WARM_FILL : '#eceae4'} stroke={kind === 'teal' ? TEALC : kind === 'warm' ? WARM : '#c9c3b8'}
-		strokeWidth={2 + 2.5 * bright} opacity={o * (0.75 + 0.25 * bright)} />
+		strokeWidth={3 + 2.5 * bright} opacity={o * (0.85 + 0.15 * bright)} />
 ));
 /** Grey intron loop lifted above the strand, between two exon bands. */
 export const IntronLoop: React.FC<{x1: number; x2: number; o?: number; y?: number; lift?: number; hot?: number}> = ({x1, x2, o = 1, y = GY - 14, lift = 1, hot = 0}) => (o <= 0.01 ? null : (
-	<path d={`M${x1},${y} C${x1 + 4},${y - 70 * lift} ${x2 - 4},${y - 70 * lift} ${x2},${y}`} fill="none" stroke={hot > 0.5 ? AMBER_INK : '#9a948a'} strokeWidth={4} strokeLinecap="round" opacity={o} />
+	<path d={`M${x1},${y} C${x1 + 4},${y - 70 * lift} ${x2 - 4},${y - 70 * lift} ${x2},${y}`} fill="none" stroke={hot > 0.5 ? AMBER_INK : '#9a948a'} strokeWidth={9} strokeLinecap="round" opacity={o} />
 ));
 export type GeneMapProps = {
 	o?: number; ctrl?: number; promo?: number; exons?: number; brightCoding?: number; brightNC?: number; introns?: number;
@@ -160,23 +166,26 @@ export const GeneMap: React.FC<GeneMapProps> = ({o = 1, ctrl = 0, promo = 0, exo
 					<IntronLoop x1={regX('e2')[1] + 3} x2={regX('e3')[0] - 3} lift={introns} o={introns} />
 				</>
 			) : null}
-			<SlimStrand x={GX0} y={GY} n={GN} pitch={GP} gap={GG} draw={draw} rung={i => { const r = rungs.find(q => q.i === i); return r && r.o > 0.01 ? {color: AMBER, w: 7, o: 1} : undefined; }} />
+			<SlimStrand x={GX0} y={GY} n={GN} pitch={GP} gap={GG} lineW={13} color="#7d7264" draw={draw} rung={i => { const r = rungs.find(q => q.i === i); return r && r.o > 0.01 ? {color: AMBER, w: 14, o: 1} : {color: '#bfb3a0', w: 7}; }} />
 		</g>
 	);
 };
 /** The B6b polymerase, small, sitting on the promoter (it can wobble off and on). */
-export const Pol: React.FC<{x?: number; y?: number; o?: number; dx?: number; dy?: number; w?: number}> = ({x = regC('promo'), y = GY - 62, o = 1, dx = 0, dy = 0, w = 170}) => (
-	<RnaPol x={x + dx} y={y + dy} w={w} h={w * 0.72} o={o} label={false} />
+/** RNA polymerase: the painted enzyme plate (y11 polymerase, a clamp), centred on the strand when docked. */
+export const POL_PLATE = {src: 'assets/biology/y11-enzyme-polymerase-v1.png', nat: [800, 800] as [number, number], box: [95, 72, 704, 728] as [number, number, number, number]};
+export const Pol: React.FC<{x?: number; y?: number; o?: number; dx?: number; dy?: number; w?: number}> = ({x = regC('promo'), y = GMID, o = 1, dx = 0, dy = 0, w = 250}) => (
+	<PlateB p={POL_PLATE} cx={x + dx} cy={y + dy} w={w} o={0.96 * o} />
 );
+void RnaPol;
 /** An mRNA ribbon above the gene, growing from left to right; `th` sets its thickness. */
-export const MrnaRibbon: React.FC<{x1?: number; x2?: number; y?: number; grow?: number; th?: number; o?: number}> = ({x1 = GENE_X[0], x2 = GENE_X[1], y = GY - 150, grow = 1, th = 12, o = 1}) => (o <= 0.01 || grow <= 0.01 ? null : (
+export const MrnaRibbon: React.FC<{x1?: number; x2?: number; y?: number; grow?: number; th?: number; o?: number}> = ({x1 = GENE_X[0], x2 = GENE_X[1], y = GY - 60, grow = 1, th = 22, o = 1}) => (o <= 0.01 || grow <= 0.01 ? null : (
 	<g opacity={o}>
 		<line x1={x1} y1={y} x2={lerp(x1, x2, clamp01(grow))} y2={y} stroke={MRNA} strokeWidth={Math.max(2, th)} strokeLinecap="round" />
 		{th >= 6 ? Array.from({length: Math.floor((x2 - x1) * clamp01(grow) / 22)}, (_, k) => <line key={k} x1={x1 + 11 + k * 22} y1={y + th / 2} x2={x1 + 11 + k * 22} y2={y + th / 2 + 9} stroke={MRNA_INK} strokeWidth={2.5} opacity={0.7} />) : null}
 	</g>
 ));
 /** Protein blob with an amount bar beneath it. */
-export const Protein: React.FC<{x: number; y: number; p?: number; o?: number; r?: number; bar?: boolean; ring?: number; short?: number; barW?: number}> = ({x, y, p = 1, o = 1, r = 46, bar = true, ring = 0, short = 0, barW = 150}) => (o <= 0.01 ? null : (
+export const Protein: React.FC<{x: number; y: number; p?: number; o?: number; r?: number; bar?: boolean; ring?: number; short?: number; barW?: number}> = ({x, y, p = 1, o = 1, r = 72, bar = true, ring = 0, short = 0, barW = 220}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
 		<ProteinBlob x={x - short * r * 0.3} y={y} r={r * (1 - 0.35 * short)} fill="#b8c9b0" stroke="#5c7353" />
 		{short > 0.01 ? <ellipse cx={x + r * 0.55} cy={y} rx={r * 0.45} ry={r * 0.5} fill="none" stroke={GREYT} strokeWidth={2.5} strokeDasharray="6 5" opacity={short} /> : null}
@@ -191,7 +200,7 @@ export const Tag: React.FC<{x: number; y: number; text: string; at: number; out?
 	<Sx x={x} y={y} text={text} size={size} color={color} hand anchor={anchor} at={at} out={out} />
 );
 /** Small grey region label. */
-export const RLab: React.FC<{x: number; y: number; text: string; at: number; out?: number; size?: number; anchor?: 'start' | 'middle' | 'end'; color?: string}> = ({x, y, text, at, out, size = 26, anchor = 'middle', color = INK_SOFT}) => (
+export const RLab: React.FC<{x: number; y: number; text: string; at: number; out?: number; size?: number; anchor?: 'start' | 'middle' | 'end'; color?: string}> = ({x, y, text, at, out, size = 32, anchor = 'middle', color = INK_SOFT}) => (
 	<Sx x={x} y={y} text={text} size={size} color={color} hand anchor={anchor} at={at} out={out} />
 );
 /** A small rounded chip with display text. */

@@ -31,13 +31,15 @@ const D_1 = ['A', 'B', 'C', '●', 'D', 'E', 'F', 'E', 'F', 'G', 'H'];
 const D_2 = ['A', 'B', 'C', '●', 'D', 'G', 'F', 'E', 'H'];
 const D_3a = ['A', 'B', 'C', '●', 'D', 'E', 'F', 'P', 'Q'];
 const D_3b = ['M', 'N', '●', 'O', 'G', 'H'];
-const DG = 44, DC = 26, DH = 38, DX = 470;
-const DY = {n1: 370, n2: 445, m1: 525, m2: 605, m3: 685};
+// Quality pass (6 Nov): the diagram is drawn larger (letters 28 px), with row 3's second chromosome on its own line
+// beneath the first, as exam papers often set it, so the demands keep their own column.
+const DG = 56, DC = 30, DH = 48, DX = 480, DS = 28;
+const DY = {n1: 372, n2: 442, m1: 528, m2: 598, m3: 668, m3b: 738};
 const L = {
 	n1: lay(D_N1, DX, DG, DC), n2: lay(D_N2, DX, DG, DC), m1: lay(D_1, DX, DG, DC), m2: lay(D_2, DX, DG, DC),
-	m3a: lay(D_3a, DX, DG, DC), m3b: lay(D_3a, 0, DG, DC).end + DX + 80,
+	m3a: lay(D_3a, DX, DG, DC),
 };
-const M3B = lay(D_3b, L.m3b, DG, DC);
+const M3B = lay(D_3b, DX, DG, DC);
 const ROWLAB: [string, number][] = [['Normal chromosome 1', DY.n1], ['Normal chromosome 2', DY.n2], ['1', DY.m1], ['2', DY.m2], ['3', DY.m3]];
 const under = (L1: {segs: Seg[]}, i0: number, i1: number, y: number, at: number, k: string) => {
 	const a = L1.segs[i0].x, b = L1.segs[i1].x + DG;
@@ -51,23 +53,24 @@ const DEM1 = (t: T1) => qCheck([
 ] as QBlock[], []);
 const COLS1 = [{w: 190, head: 'mutation'}, {w: 610, head: '(a) type'}];
 const ROWS1 = [['1', 'duplication'], ['2', 'inversion'], ['3', 'translocation (reciprocal)']];
-const Card1: React.FC<{t: T1; diagAt: number[]; extra?: React.ReactNode}> = ({t, diagAt, extra}) => {
+const TBY = 792;
+const Card1: React.FC<{t: T1; diagAt: number[]; extra?: React.ReactNode; demands?: boolean}> = ({t, diagAt, extra, demands = true}) => {
 	const f = useCurrentFrame();
 	return (
 		<>
-			<CardBox x={100} y={180} w={1720} h={800} at={t.a - 6} />
-			<QText q={STEM1(t)} x={140} y={232} w={1640} size={28} card={false} />
-			{ROWLAB.map(([l, y], i) => <Sx key={l} x={140} y={y + 10} text={l} size={i < 2 ? 28 : 32} color={INK} weight={700} at={diagAt[i]} />)}
-			<g opacity={prog(f, diagAt[0], 12)}><Bar segs={L.n1.segs} cen={L.n1.cen} y={DY.n1} gw={DG} h={DH} size={22} /></g>
-			<g opacity={prog(f, diagAt[1], 12)}><Bar segs={L.n2.segs} cen={L.n2.cen} y={DY.n2} gw={DG} h={DH} size={22} /></g>
-			<g opacity={prog(f, diagAt[2], 12)}><Bar segs={L.m1.segs} cen={L.m1.cen} y={DY.m1} gw={DG} h={DH} size={22} /></g>
-			<g opacity={prog(f, diagAt[3], 12)}><Bar segs={L.m2.segs} cen={L.m2.cen} y={DY.m2} gw={DG} h={DH} size={22} /></g>
+			<CardBox x={100} y={180} w={1720} h={830} at={t.a - 6} />
+			<QText q={STEM1(t)} x={140} y={232} w={1640} size={29} card={false} />
+			{ROWLAB.map(([l, y], i) => <Sx key={l} x={140} y={y + 10} text={l} size={i < 2 ? 28 : 34} color={INK} weight={700} at={diagAt[i]} />)}
+			<g opacity={prog(f, diagAt[0], 12)}><Bar segs={L.n1.segs} cen={L.n1.cen} y={DY.n1} gw={DG} h={DH} size={DS} /></g>
+			<g opacity={prog(f, diagAt[1], 12)}><Bar segs={L.n2.segs} cen={L.n2.cen} y={DY.n2} gw={DG} h={DH} size={DS} /></g>
+			<g opacity={prog(f, diagAt[2], 12)}><Bar segs={L.m1.segs} cen={L.m1.cen} y={DY.m1} gw={DG} h={DH} size={DS} /></g>
+			<g opacity={prog(f, diagAt[3], 12)}><Bar segs={L.m2.segs} cen={L.m2.cen} y={DY.m2} gw={DG} h={DH} size={DS} /></g>
 			<g opacity={prog(f, diagAt[4], 12)}>
-				<Bar segs={L.m3a.segs} cen={L.m3a.cen} y={DY.m3} gw={DG} h={DH} size={22} />
-				<Sx x={L.m3b - 40} y={DY.m3 + 9} text="and" size={26} color={INK_SOFT} weight={600} anchor="middle" />
-				<Bar segs={M3B.segs} cen={M3B.cen} y={DY.m3} gw={DG} h={DH} size={22} />
+				<Bar segs={L.m3a.segs} cen={L.m3a.cen} y={DY.m3} gw={DG} h={DH} size={DS} />
+				<Sx x={DX - 24} y={DY.m3b + 10} text="and" size={28} color={INK_SOFT} weight={600} anchor="end" />
+				<Bar segs={M3B.segs} cen={M3B.cen} y={DY.m3b} gw={DG} h={DH} size={DS} />
 			</g>
-			<QText q={DEM1(t)} x={1260} y={385} w={520} size={28} card={false} />
+			{demands ? <QText q={DEM1(t)} x={1200} y={390} w={580} size={28} card={false} /> : null}
 			{extra}
 		</>
 	);
@@ -80,10 +83,10 @@ export const SceneAttempt: React.FC = () => (
 		<Heading text="Exam question 1" at={KA.two} size={50} />
 		<Overlay>
 			<Card1 t={{a: KA.diagram, d: KA.name, b: KA.identify}} diagAt={[KA.diagram + 20, KA.diagram + 30, KA.three, KA.three + 8, KA.three + 16]} />
-			<AnsTable x={140} y={745} cols={COLS1} rows={ROWS1} at={KA.name + 20} size={30} rowH={52} />
-			<CardBox x={1260} y={700} w={520} h={220} at={KA.identify + 20} dash="10 7" />
-			<Sx x={1284} y={744} text="(b)" size={28} color={INK_SOFT} weight={700} at={KA.identify + 20} />
-			<PauseHold id="attempt" at={KA.pause} cx={1090} cy={820} />
+			<AnsTable x={140} y={TBY} cols={COLS1} rows={ROWS1} at={KA.name + 20} size={30} rowH={50} />
+			<CardBox x={1200} y={760} w={580} h={220} at={KA.identify + 20} dash="10 7" />
+			<Sx x={1224} y={804} text="(b)" size={28} color={INK_SOFT} weight={700} at={KA.identify + 20} />
+			<PauseHold id="attempt" at={KA.pause} y={1052} cx={1062} cy={880} />
 		</Overlay>
 	</>
 );
@@ -93,35 +96,35 @@ const KB = cues(S('feedback-one'), {ef: 'E and F appear twice', dup: "so it's a 
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
 	const hot = (r: number) => [vis(f, KB.ef, KB.efg, 10), vis(f, KB.efg, KB.gh, 10), vis(f, KB.gh, KB.only, 10)][r];
-	const part = lay(D_N1, 960, 28, 16);
+	const part = lay(D_N1, 1250, 40, 22);
 	const tk = prog(f, KB.mistake + 40, 12);
 	const fx = (L1: {segs: Seg[]}, i: number) => L1.segs[i].x + DG / 2;
 	return (
 		<>
 			<Heading text="Compare gene by gene" at={4} size={50} />
 			<Overlay>
-				<Card1 t={{a: -100, d: -100, b: -100}} diagAt={[-100, -100, -100, -100, -100]} extra={
+				<Card1 t={{a: -100, d: -100, b: -100}} diagAt={[-100, -100, -100, -100, -100]} demands={false} extra={
 					<>
 						{under(L.m1, 6, 7, DY.m1, KB.ef, 'u1')}
 						{under(L.m2, 4, 6, DY.m2, KB.back, 'u2')}
 						<g opacity={vis(f, KB.back + 6, KB.gh, 10)}><CurveArrow a={[L.m2.segs[6].x + DG - 4, DY.m2 - 26]} b={[L.m2.segs[4].x + 4, DY.m2 - 26]} at={KB.back + 6} bow={-16} color={AMBER_INK} width={3.5} /></g>
 						{under(L.m3a, 6, 7, DY.m3, KB.gh + 20, 'u3a')}
-						{under(M3B, 3, 4, DY.m3, KB.gh + 8, 'u3b')}
-						<g opacity={vis(f, KB.gh + 24, KB.only, 10)}><CurveArrow a={[fx(M3B, 3), DY.m3 - 26]} b={[fx(L.m3a, 7), DY.m3 - 26]} at={KB.gh + 24} bow={-40} color={AMBER_INK} width={3.5} dash="7 6" /></g>
-						<g opacity={prog(f, KB.partner, 12)}><Bar segs={part.segs} cen={part.cen} y={DY.m1} gw={28} h={30} size={16} /></g>
-						<Sx x={960 + 120} y={DY.m1 - 24} text="partner" size={24} color={INK_SOFT} hand anchor="middle" at={KB.partner + 6} />
-						{[4, 5].map(i => <Count key={i} x={fx(L.m1, i)} y={DY.m1 - 26} n="3" hot o={prog(f, KB.three, 10)} size={24} />)}
-						{f >= KB.moved ? M3B.segs.slice(3).map((q, i) => <rect key={i} x={q.x - 4} y={DY.m3 - DH / 2 - 6} width={DG + 8} height={DH + 12} rx={10} fill="none" stroke={AMBER} strokeWidth={4} opacity={Math.abs(Math.sin((f - KB.moved) / 5)) * (1 - prog(f, KB.moved + 40, 10))} />) : null}
-						{[...L.m2.segs.map(q => [q.x, DY.m2]), ...L.m3a.segs.map(q => [q.x, DY.m3]), ...M3B.segs.map(q => [q.x, DY.m3])].map(([x, y], i) => <TickC key={i} x={x + DG / 2} y={y - 32} s={14} o={tk} />)}
+						{under(M3B, 3, 4, DY.m3b, KB.gh + 8, 'u3b')}
+						<g opacity={vis(f, KB.gh + 24, KB.only, 10)}><CurveArrow a={[fx(M3B, 4) + 46, DY.m3b]} b={[fx(L.m3a, 7) + 50, DY.m3]} at={KB.gh + 24} bow={-60} color={AMBER_INK} width={4} dash="7 6" /></g>
+						<g opacity={prog(f, KB.partner, 12)}><Bar segs={part.segs} cen={part.cen} y={DY.m1} gw={40} h={40} size={24} /></g>
+						<Sx x={1250 + 180} y={DY.m1 - 32} text="its partner" size={30} color={INK_SOFT} hand anchor="middle" at={KB.partner + 6} />
+						{[4, 5].map(i => <Count key={i} x={fx(L.m1, i)} y={DY.m1 - 30} n="3" hot o={prog(f, KB.three, 10)} size={30} />)}
+						{f >= KB.moved ? M3B.segs.slice(3).map((q, i) => <rect key={i} x={q.x - 4} y={DY.m3b - DH / 2 - 6} width={DG + 8} height={DH + 12} rx={10} fill="none" stroke={AMBER} strokeWidth={4} opacity={Math.abs(Math.sin((f - KB.moved) / 5)) * (1 - prog(f, KB.moved + 40, 10))} />) : null}
+						{[...L.m2.segs.map(q => [q.x, DY.m2]), ...L.m3a.segs.map(q => [q.x, DY.m3]), ...M3B.segs.map(q => [q.x, DY.m3b])].map(([x, y], i) => <TickC key={i} x={x + DG / 2} y={y - DH / 2 - 8} s={14} o={tk} />)}
 					</>
 				} />
-				<AnsTable x={140} y={745} cols={COLS1} rows={ROWS1} at={-100} size={30} rowH={52} fillAt={[KB.dup, KB.back, KB.trans]} hot={hot} />
-				<CardBox x={1260} y={700} w={520} h={220} at={-100} dash="10 7" />
-				<Sx x={1284} y={744} text="(b)" size={28} color={INK_SOFT} weight={700} at={-100} />
-				<Sx x={1290} y={796} text="1, duplication: E and F now" size={32} color={AMBER_INK} hand at={KB.three} />
-				<Sx x={1290} y={840} text="3 copies (2 on this chromosome" size={32} color={AMBER_INK} hand at={KB.three + 8} />
-				<Sx x={1290} y={884} text="+ 1 on its partner)" size={32} color={AMBER_INK} hand at={KB.three + 16} />
-				<MistakeChip x={140} y={992} text="3 is a deletion: G and H are lost" at={KB.calling} cross={KB.mistake} size={30} />
+				<AnsTable x={140} y={TBY} cols={COLS1} rows={ROWS1} at={-100} size={30} rowH={50} fillAt={[KB.dup, KB.back, KB.trans]} hot={hot} />
+				<CardBox x={1200} y={760} w={580} h={220} at={-100} dash="10 7" />
+				<Sx x={1224} y={804} text="(b)" size={28} color={INK_SOFT} weight={700} at={-100} />
+				<Sx x={1230} y={850} text="1, duplication: E and F now" size={33} color={AMBER_INK} hand at={KB.three} />
+				<Sx x={1230} y={896} text="3 copies (2 on this chromosome" size={33} color={AMBER_INK} hand at={KB.three + 8} />
+				<Sx x={1230} y={942} text="+ 1 on its partner)" size={33} color={AMBER_INK} hand at={KB.three + 16} />
+				<MistakeChip x={1200} y={640} text="3 is a deletion: G and H are lost" at={KB.calling} cross={KB.mistake} size={30} />
 				{void KB.only}{void gx}{void CW}
 			</Overlay>
 		</>
@@ -162,32 +165,38 @@ const TROWS: {h: string; a: string[]; b: string[]; atA: keyof typeof KD; atB: ke
 	{h: 'effect', a: ['one amino acid in one protein (Glu to Val):', 'haemoglobin forms fibres, cells sickle'], b: ['normal genes, extra dosage:', 'many body systems'], atA: 'amino', atB: 'hundreds'},
 ];
 export const SceneFeedbackTwo: React.FC = () => {
+	// Quality pass (6 Nov): a tall header carries the painted sickle cells and the three chromosome 21s, row labels
+	// show from the start so the frame reads as a plan, and the question strip is set at about 27 px.
 	const f = useCurrentFrame();
 	const W = TW.reduce((a, b) => a + b, 0);
-	const rowY = [520, 610, 700];
+	const rowY = [600, 690, 780];
 	const tO = prog(f, KD.both - 4, 12);
 	return (
 		<>
 			<Heading text="Compare cause, amount and effect" at={4} size={50} />
 			<Overlay>
 				<CardBox x={100} y={176} w={1720} h={176} at={-100} />
-				<QText q={Q2(ALL2, [{phrase: 'single base substitution', at: KD.copying}, {phrase: 'extra copy of chromosome 21', at: KD.tri}])} x={140} y={222} w={2640} size={40} card={false} s={0.62} />
+				<QText q={Q2(ALL2, [{phrase: 'single base substitution', at: KD.copying}, {phrase: 'extra copy of chromosome 21', at: KD.tri}])} x={140} y={222} w={2400} size={40} card={false} s={0.68} />
 				<g opacity={tO}>
-					<rect x={TX[0]} y={380} width={W} height={440} rx={18} fill="#fffdf8" stroke="rgba(60,45,20,0.22)" strokeWidth={3} />
-					<rect x={TX[0]} y={380} width={W} height={56} rx={18} fill="#efe6d4" />
-					<Sx x={TX[1] + 20} y={418} text="sickle cell (substitution)" size={30} color={INK} weight={700} />
-					<Sx x={TX[2] + 20} y={418} text="Down syndrome (trisomy 21)" size={30} color={INK} weight={700} />
-					{[490, 580, 670].map(y => <line key={y} x1={TX[0] + 10} y1={y} x2={TX[0] + W - 10} y2={y} stroke="rgba(60,45,20,0.18)" strokeWidth={2} />)}
+					<rect x={TX[0]} y={380} width={W} height={510} rx={18} fill="#fffdf8" stroke="rgba(60,45,20,0.22)" strokeWidth={3} />
+					<rect x={TX[0]} y={380} width={W} height={160} rx={18} fill="#f4ecdc" />
+					<PlateB p={PLATES.sickle} cx={TX[1] + 150} cy={460} w={250} />
+					<Sx x={TX[1] + 300} y={452} text="sickle cell" size={34} color={INK} weight={700} />
+					<Sx x={TX[1] + 300} y={494} text="(substitution)" size={30} color={INK_SOFT} weight={600} />
+					{[0, 1, 2].map(k => <KChrom key={k} x={TX[2] + 50 + k * 40} y={515} i={20} sc={2.3} w={24} amber />)}
+					<Sx x={TX[2] + 190} y={452} text="Down syndrome" size={34} color={INK} weight={700} />
+					<Sx x={TX[2] + 190} y={494} text="(trisomy 21)" size={30} color={INK_SOFT} weight={600} />
+					{[540, 610, 700, 790].map(y => <line key={y} x1={TX[0] + 10} y1={y} x2={TX[0] + W - 10} y2={y} stroke="rgba(60,45,20,0.18)" strokeWidth={2} />)}
+					{TROWS.map((r, i) => <Sx key={r.h} x={TX[0] + 20} y={rowY[i] + 46} text={r.h} size={34} color={INK_SOFT} hand />)}
 				</g>
-				<Sx x={TX[0] + 20} y={470} text="similarity: both change the DNA and the phenotype" size={32} color={INK} weight={600} at={KD.both} />
+				<Sx x={TX[0] + 20} y={588} text="similarity: both change the DNA and the phenotype" size={34} color={INK} weight={600} at={KD.both} />
 				{TROWS.map((r, i) => (
 					<g key={i}>
-						<Sx x={TX[0] + 20} y={rowY[i] + 26} text={r.h} size={32} color={INK_SOFT} hand at={KD[r.atA]} />
-						{r.a.map((t, k) => <Sx key={'a' + k} x={TX[1] + 20} y={rowY[i] + 26 + k * 40} text={t} size={30} color={AMBER_INK} hand at={KD[r.atA] + 4 + k * 6} />)}
-						{r.b.map((t, k) => <Sx key={'b' + k} x={TX[2] + 20} y={rowY[i] + 26 + k * 40} text={t} size={30} color={AMBER_INK} hand at={KD[r.atB] + 4 + k * 6} />)}
+						{r.a.map((t, k) => <Sx key={'a' + k} x={TX[1] + 20} y={rowY[i] + 46 + k * 40} text={t} size={32} color={AMBER_INK} hand at={KD[r.atA] + 4 + k * 6} />)}
+						{r.b.map((t, k) => <Sx key={'b' + k} x={TX[2] + 20} y={rowY[i] + 46 + k * 40} text={t} size={32} color={AMBER_INK} hand at={KD[r.atB] + 4 + k * 6} />)}
 					</g>
 				))}
-				<MistakeChip x={140} y={880} text="the genes on the extra chromosome are faulty" at={KD.saying} cross={KD.mistake} size={30} />
+				<MistakeChip x={140} y={950} text="the genes on the extra chromosome are faulty" at={KD.saying} cross={KD.mistake} size={32} />
 			</Overlay>
 		</>
 	);
@@ -203,7 +212,7 @@ export const SceneDecision: React.FC = () => {
 		{at: KE.moved + 30, l: ['2. check the other', 'chromosome too']},
 		{at: KE.then, l: ['3. effect: copy number,', 'or a broken or', 'moved gene']},
 	];
-	const icon = (labels: string[], x: number, y: number, mod?: (s: Seg, i: number) => Seg, tone?: 'blue') => { const Lx = lay(labels, x, 22, 12, tone ?? 'n'); return <Bar segs={mod ? Lx.segs.map(mod) : Lx.segs} cen={Lx.cen} cenTone={tone ?? 'n'} y={y} gw={22} h={22} size={13} />; };
+	const icon = (labels: string[], x: number, y: number, mod?: (s: Seg, i: number) => Seg, tone?: 'blue') => { const Lx = lay(labels, x, 40, 18, tone ?? 'n'); return <Bar segs={mod ? Lx.segs.map(mod) : Lx.segs} cen={Lx.cen} cenTone={tone ?? 'n'} y={y} gw={40} h={40} size={24} />; };
 	return (
 		<>
 			<Heading text="Read a chromosome diagram" at={KE.so} size={56} />
@@ -215,25 +224,25 @@ export const SceneDecision: React.FC = () => {
 						{i < 2 ? <CurveArrow a={[PX[i] + PW + 10, PY + PH / 2]} b={[PX[i + 1] - 10, PY + PH / 2]} at={steps[i + 1].at - 4} bow={0} color={AMBER_INK} width={6} /> : null}
 					</g>
 				))}
-				<g opacity={prog(f, KE.is, 14)}>
-					{icon(CHR1, PX[0] + 40, PY + 250, s => (s.l === 'C' || s.l === 'D' ? {...s, dashed: true} : s))}
-					{icon(['A', 'B', '●', 'C', 'D', 'C', 'D', 'E', 'F'], PX[0] + 40, PY + 310, (s, i) => (i === 4 || i === 5 ? {...s, tone: 'amber'} : s))}
-					{icon(['A', 'B', '●', 'C', 'D', 'G', 'F', 'E', 'H'], PX[0] + 40, PY + 370, s => ('GFE'.includes(s.l) ? {...s, tone: 'amber'} : s))}
-					{icon(['A', 'B', '●', 'C', 'D', 'E', 'F', 'P', 'Q'], PX[0] + 40, PY + 430, s => (s.l === 'P' || s.l === 'Q' ? {...s, tone: 'amber'} : s))}
+				<g opacity={prog(f, KE.compare + 20, 14)}>
+					{icon(CHR1, PX[0] + 40, PY + 220, s => (s.l === 'C' || s.l === 'D' ? {...s, dashed: true} : s))}
+					{icon(['A', 'B', '●', 'C', 'D', 'C', 'D', 'E', 'F'], PX[0] + 40, PY + 285, (s, i) => (i === 4 || i === 5 ? {...s, tone: 'amber'} : s))}
+					{icon(['A', 'B', '●', 'C', 'D', 'G', 'F', 'E', 'H'], PX[0] + 40, PY + 350, s => ('GFE'.includes(s.l) ? {...s, tone: 'amber'} : s))}
+					{icon(['A', 'B', '●', 'C', 'D', 'E', 'F', 'P', 'Q'], PX[0] + 40, PY + 415, s => (s.l === 'P' || s.l === 'Q' ? {...s, tone: 'amber'} : s))}
 				</g>
 				<g opacity={prog(f, KE.moved + 40, 14)}>
-					{icon(['A', 'B', '●', 'C', 'D', 'E', 'F', 'P', 'Q'], PX[1] + 60, PY + 260, s => (s.l === 'P' || s.l === 'Q' ? {...s, tone: 'amber'} : s))}
-					{icon(['M', 'N', '●', 'O', 'G', 'H'], PX[1] + 60, PY + 380, s => (s.l === 'G' || s.l === 'H' ? {...s, tone: 'amber'} : s), 'blue')}
-					<CurveArrow a={[PX[1] + 300, PY + 270]} b={[PX[1] + 200, PY + 370]} at={KE.moved + 46} bow={-30} color={AMBER_INK} width={4} dash="7 6" />
+					{icon(['A', 'B', '●', 'C', 'D', 'E', 'F', 'P', 'Q'], PX[1] + 50, PY + 250, s => (s.l === 'P' || s.l === 'Q' ? {...s, tone: 'amber'} : s))}
+					{icon(['M', 'N', '●', 'O', 'G', 'H'], PX[1] + 50, PY + 400, s => (s.l === 'G' || s.l === 'H' ? {...s, tone: 'amber'} : s), 'blue')}
+					<CurveArrow a={[PX[1] + 380, PY + 280]} b={[PX[1] + 230, PY + 375]} at={KE.moved + 46} bow={-30} color={AMBER_INK} width={4} dash="7 6" />
 				</g>
 				<g opacity={prog(f, KE.then + 20, 14)}>
-					<DoseBar x={PX[2] + 80} y={PY + 330} w={40} h={50} label="2" size={24} />
-					<DoseBar x={PX[2] + 140} y={PY + 330} w={40} h={75} amber label="3" size={24} />
+					<DoseBar x={PX[2] + 80} y={PY + 320} w={56} h={80} label="2 copies" size={28} />
+					<DoseBar x={PX[2] + 200} y={PY + 320} w={56} h={120} amber label="3 copies" size={28} />
 				</g>
 				<g opacity={prog(f, KE.whole, 14)}>
-					{[0, 1, 2].map(k => <KChrom key={k} x={PX[2] + 300 + k * 26} y={PY + 330} i={20} sc={1.4} w={16} amber />)}
-					<Sx x={PX[2] + 30} y={PY + 430} text="whole chromosome?" size={30} color={AMBER_INK} hand />
-					<Sx x={PX[2] + 30} y={PY + 468} text="nondisjunction, dosage" size={30} color={AMBER_INK} hand />
+					{[0, 1, 2].map(k => <KChrom key={k} x={PX[2] + 330 + k * 34} y={PY + 320} i={20} sc={2.4} w={22} amber />)}
+					<Sx x={PX[2] + 30} y={PY + 420} text="whole chromosome?" size={34} color={AMBER_INK} hand />
+					<Sx x={PX[2] + 30} y={PY + 464} text="nondisjunction, dosage" size={34} color={AMBER_INK} hand />
 				</g>
 				<g opacity={prog(f, KE.next, 14)}>
 					<CardBox x={980} y={800} w={840} h={170} at={-100} stroke={AMBER} sw={3.5} />
@@ -247,12 +256,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'Chromosomal mutation: a change in chromosome structure or number. It can affect many genes at once; large ones are visible on a karyotype.',
-	'Structure: deletion (segment lost), duplication (segment repeated; extra gene dosage), inversion (segment reversed), translocation (segment moved to a non-matching chromosome). Causes: breaks rejoined wrongly (e.g. ionising radiation) and unequal crossing over.',
-	'Balanced inversions and translocations keep every gene, so carriers are often healthy, but breakpoints can disrupt genes, and a carrier\'s gametes can be unbalanced.',
-	'Number: nondisjunction in meiosis gives gametes with an extra or missing chromosome. Trisomy 21 (47 chromosomes) causes Down syndrome: normal genes, extra dosage.',
-	'Point mutation: one gene\'s base sequence changes. Chromosomal mutation: the number, order or position of many genes changes. The effect depends on which genes are affected, not size alone.',
+	'Chromosomal mutation: a change in chromosome structure or number; it changes many genes at once.',
+	'Deletion: a segment is lost. Duplication: a segment is repeated (extra gene dosage).',
+	'Inversion: a segment is reversed. Translocation: a segment moves to a non-matching chromosome.',
+	'Causes: breaks rejoined wrongly (e.g. ionising radiation) and unequal crossing over.',
+	'Balanced carriers keep every gene, but their gametes can be unbalanced.',
+	'Nondisjunction in meiosis: a gamete gets an extra or missing chromosome. Trisomy 21: normal genes, extra dosage.',
+	'Point mutation: one gene. Effect depends on which genes change, not on size alone.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="A chromosome is a book. Deletion: chapter lost. Duplication: printed twice. Inversion: back to front. Translocation: moved to another book. Nondisjunction: fail to dis-join." tag="chromosomal mutations: what changes, and how it compares with a point mutation" size={28} aidTop={770} />
+	<NotesBoard notes={NOTES} aid="A chromosome is a book. Deletion: chapter lost. Duplication: printed twice. Inversion: back to front. Translocation: moved to another book. Nondisjunction: fail to dis-join." tag="chromosomal mutations: what changes, and how it compares with a point mutation" size={36} aidTop={730} />
 );

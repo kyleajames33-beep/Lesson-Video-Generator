@@ -18,7 +18,7 @@ import type {Seg} from './parts';
 const K4 = cues(S('deletion-duplication'), {lost: 'a segment is lost', one: 'only one copy', dup: 'In a duplication', twice: 'a segment appears twice', dosage: 'called gene dosage', product: 'how much product', flies: 'In fruit flies'});
 export const SceneDelDup: React.FC = () => {
 	const f = useCurrentFrame();
-	const X0 = 625, gw = 80, YT = 330, YB = 500;
+	const X0 = 520, gw = 108, YT = 330, YB = 520;
 	const top = lay(CHR1, X0, gw, CW);
 	const base = lay(CHR1, X0, gw, CW);
 	const boardO = 1 - prog(f, K4.flies - 6, 14);
@@ -28,7 +28,7 @@ export const SceneDelDup: React.FC = () => {
 	const sh = prog(f, K4.twice, 18) * 2 * gw;
 	const cp = prog(f, K4.twice + 4, 18);
 	const lower: Seg[] = base.segs.map((q, i) => {
-		if (isDel && (i === 2 || i === 3)) return {...q, tone: f >= K4.lost ? 'amber' : 'n', y: YB + 70 * drop, o: 1 - drop};
+		if (isDel && (i === 2 || i === 3)) return {...q, tone: f >= K4.lost ? 'amber' : 'n', y: YB + 90 * drop, o: 1 - drop};
 		if (!isDel && i >= 4) return {...q, x: q.x + sh, capR: q.capR};
 		if (!isDel && (i === 2 || i === 3)) return {...q, o: back};
 		return q;
@@ -50,16 +50,16 @@ export const SceneDelDup: React.FC = () => {
 			<Heading text="Deletion and duplication" at={4} size={56} />
 			<Overlay>
 				<g opacity={boardO}>
-					<BarTag x={600} y={YT} text="partner" at={6} size={32} />
-					<Bar segs={top.segs} cen={top.cen} y={YT} gw={gw} h={56} />
-					<Bar segs={[...lower, ...ghosts, ...copies]} cen={base.cen} y={YB} gw={gw} h={56} />
+					<BarTag x={X0 - 25} y={YT} text="partner" at={6} size={34} />
+					<Bar segs={top.segs} cen={top.cen} y={YT} gw={gw} h={76} />
+					<Bar segs={[...lower, ...ghosts, ...copies]} cen={base.cen} y={YB} gw={gw} h={76} />
 					{/* copy counters: this chromosome plus its partner */}
-					{base.segs.map((q, i) => <Count key={'d' + i} x={q.x + gw / 2} y={YB + 72} n={i === 2 || i === 3 ? '1' : '2'} hot={i === 2 || i === 3} o={countsDel} />)}
-					{base.segs.map((q, i) => <Count key={'u' + i} x={q.x + gw / 2 + (i >= 4 ? 2 * gw : 0)} y={YB + 72} n={i === 2 || i === 3 ? '3' : '2'} hot={i === 2 || i === 3} o={countsDup} />)}
+					{base.segs.map((q, i) => <Count key={'d' + i} x={q.x + gw / 2} y={YB + 100} n={i === 2 || i === 3 ? '1' : '2'} hot={i === 2 || i === 3} o={countsDel} size={44} />)}
+					{base.segs.map((q, i) => <Count key={'u' + i} x={q.x + gw / 2 + (i >= 4 ? 2 * gw : 0)} y={YB + 100} n={i === 2 || i === 3 ? '3' : '2'} hot={i === 2 || i === 3} o={countsDup} size={44} />)}
 				</g>
-				<Lbl x={X0} y={680} text="deletion: segment lost" size={42} color={AMBER_INK} at={K4.lost + 10} out={K4.one} />
-				<Lbl x={X0} y={680} text="half the usual copies" size={42} color={AMBER_INK} at={K4.one + 10} out={K4.dup} />
-				<Lbl x={X0} y={680} text="duplication: segment twice" size={42} color={AMBER_INK} at={K4.twice + 16} out={K4.dosage} />
+				<Lbl x={X0} y={730} text="deletion: segment lost" size={46} color={AMBER_INK} at={K4.lost + 10} out={K4.one} />
+				<Lbl x={X0} y={730} text="half the usual copies" size={46} color={AMBER_INK} at={K4.one + 10} out={K4.dup} />
+				<Lbl x={X0} y={730} text="duplication: segment twice" size={46} color={AMBER_INK} at={K4.twice + 16} out={K4.dosage} />
 				<Term x={140} y={940} term="gene dosage" gloss="how many copies of a gene: more copies, more product" at={K4.dosage} out={K4.flies} size={46} />
 				<g opacity={vis(f, K4.product - 10, K4.flies, 12)}>
 					<DoseBar x={1480} y={860} h={110} p={1} label="2 copies" />
@@ -86,10 +86,10 @@ export const SceneDelDup: React.FC = () => {
 const K5 = cues(S('inversion-translocation'), {breaks: 'breaks out', flips: 'flips', back: 'back to front', trans: 'In a translocation', nonmatch: 'non-matching chromosome', swap: 'a swap between two', every: 'every gene is still there', split: 'split it', join: 'join two genes together', single: 'a single blood-forming cell', swap922: 'swap between chromosomes nine', joining: 'joining two genes into one', active: 'always active', dividing: 'keep dividing'});
 export const SceneInvTrans: React.FC = () => {
 	const f = useCurrentFrame();
-	const gw = 72, YN = 300, YM = 470, YC = 620;
-	const N = lay(CHR1, 700, gw, CW);
-	const M = lay(CHR1, 700, gw, CW);
-	const C = lay(CHR2, 916, gw, CW, 'blue');
+	const gw = 98, gwL = 80, YN = 300, YM = 470, YC = 630, X5 = 660;
+	const N = lay(CHR1, X5, gw, CW);
+	const M = lay(CHR1, X5, gw, CW);
+	const C = lay(CHR2, X5 + 3 * gw, gw, CW, 'blue');
 	const oldO = 1 - prog(f, K5.single - 6, 16);
 	// inversion of E F G
 	const lift = prog(f, K5.breaks, 14) * (1 - prog(f, K5.back - 8, 14));
@@ -114,11 +114,11 @@ export const SceneInvTrans: React.FC = () => {
 	const oX = C.segs[2].x + gw / 2, gX = M.segs[6].x + gw / 2;
 	// the leukaemia: chromosomes 9 and 22 (no gene names)
 	const nO = prog(f, K5.single + 4, 16);
-	const L9 = lay(['', '', '●', '', '', '', '', '', ''], 700, gw, CW);
-	const L22 = lay(['', '●', '', '', ''], 700, gw, CW, 'blue');
+	const L9 = lay(['', '', '●', '', '', '', '', '', ''], X5, gwL, CW);
+	const L22 = lay(['', '●', '', '', ''], X5, gwL, CW, 'blue');
 	const t2 = prog(f, K5.swap922 + 6, 26);
 	const s9 = L9.segs.map((q, i) => (i === 7 ? {...q, x: lerp(q.x, L22.segs[2].x, t2), y: lerp(YM, YC, t2), capR: true} : q));
-	const s22 = L22.segs.map((q, i) => (i >= 2 ? {...q, x: lerp(q.x, L9.segs[7].x + (i - 2) * gw, t2), y: lerp(YC, YM, t2)} : q));
+	const s22 = L22.segs.map((q, i) => (i >= 2 ? {...q, x: lerp(q.x, L9.segs[7].x + (i - 2) * gwL, t2), y: lerp(YC, YM, t2)} : q));
 	if (t2 > 0.5) { s9[6] = {...s9[6], capR: false}; s22[1] = {...s22[1], capR: false}; }
 	const fuseO = prog(f, K5.joining, 12);
 	const glow = prog(f, K5.active, 10);
@@ -129,37 +129,38 @@ export const SceneInvTrans: React.FC = () => {
 			<Heading text="Inversion and translocation" at={4} size={56} />
 			<Overlay>
 				<g opacity={oldO}>
-					<BarTag x={675} y={YN} text="normal" at={6} size={32} />
-					<Bar segs={N.segs} cen={N.cen} y={YN} gw={gw} h={54} />
-					<Bar segs={mid} cen={M.cen} y={YM} gw={gw} h={54} />
-					<g opacity={cO} transform={`translate(0,${(1 - cO) * 40})`}><Bar segs={chr2} cen={C.cen} cenTone="blue" y={YC} gw={gw} h={54} /></g>
-					{[...mid.map(q => ({x: q.x, y: q.y ?? YM})), ...chr2.map(q => ({x: q.x, y: q.y ?? YC}))].map((q, i) => <TickC key={i} x={q.x + gw / 2} y={q.y - 44} o={ticks * prog(f, K5.every + i * 2, 6)} s={20} />)}
-					<BreakMark x={oX} y={YC} h={54} o={vis(f, K5.split, K5.join + 10, 8)} />
-					{joinO > 0.01 ? <rect x={oX} y={YC - 36} width={gX - oX} height={72} rx={14} fill="none" stroke={AMBER} strokeWidth={6} opacity={joinO} /> : null}
+					<BarTag x={X5 - 25} y={YN} text="normal" at={6} size={34} />
+					<Bar segs={N.segs} cen={N.cen} y={YN} gw={gw} h={70} />
+					<Bar segs={mid} cen={M.cen} y={YM} gw={gw} h={70} />
+					<g opacity={cO} transform={`translate(0,${(1 - cO) * 40})`}><Bar segs={chr2} cen={C.cen} cenTone="blue" y={YC} gw={gw} h={70} /></g>
+					{[...mid.map(q => ({x: q.x, y: q.y ?? YM})), ...chr2.map(q => ({x: q.x, y: q.y ?? YC}))].map((q, i) => <TickC key={i} x={q.x + gw / 2} y={q.y - 52} o={ticks * prog(f, K5.every + i * 2, 6)} s={24} />)}
+					<BreakMark x={oX} y={YC} h={70} o={vis(f, K5.split, K5.join + 10, 8)} />
+					{joinO > 0.01 ? <rect x={oX} y={YC - 44} width={gX - oX} height={88} rx={14} fill="none" stroke={AMBER} strokeWidth={6} opacity={joinO} /> : null}
 				</g>
-				<Lbl x={1340} y={560} text="inversion: segment reversed" size={38} color={AMBER_INK} at={K5.back + 10} out={K5.trans} />
-				<Lbl x={1340} y={560} text="translocation: moved to" size={38} color={AMBER_INK} at={K5.swap + 26} out={K5.every} />
-				<Lbl x={1340} y={604} text="another chromosome" size={38} color={AMBER_INK} at={K5.swap + 30} out={K5.every} />
-				<Lbl x={1340} y={560} text="balanced: nothing lost or gained" size={38} color={BIO_INK} at={K5.every + 10} out={K5.split} />
-				<Lbl x={1340} y={640} text="breakpoint inside a gene" size={38} color={AMBER_INK} at={K5.split + 8} out={K5.join} />
-				<Lbl x={1340} y={640} text="two genes joined" size={38} color={AMBER_INK} at={K5.join + 8} out={K5.single} />
+				<Lbl x={X5} y={790} text="inversion: segment reversed" size={46} color={AMBER_INK} at={K5.back + 10} out={K5.trans} />
+				<Lbl x={X5} y={790} text="translocation: moved to another chromosome" size={46} color={AMBER_INK} at={K5.swap + 26} out={K5.every} />
+				
+				<Lbl x={X5} y={790} text="balanced: nothing lost or gained" size={46} color={BIO_INK} at={K5.every + 10} out={K5.split} />
+				<Lbl x={X5} y={790} text="breakpoint inside a gene" size={46} color={AMBER_INK} at={K5.split + 8} out={K5.join} />
+				<Lbl x={X5} y={790} text="two genes joined" size={46} color={AMBER_INK} at={K5.join + 8} out={K5.single} />
 				{/* chromosomes 9 and 22 in one blood-forming cell */}
 				<g opacity={nO}>
-					<BarTag x={675} y={YM} text="9" at={-100} size={40} />
-					<BarTag x={675} y={YC} text="22" at={-100} size={40} />
-					<Bar segs={s9} cen={L9.cen} y={YM} gw={gw} h={54} />
-					<Bar segs={s22} cen={L22.cen} cenTone="blue" y={YC} gw={gw} h={54} />
-					{fuseO > 0.01 ? <rect x={L22.segs[1].x + gw / 2} y={YC - 36} width={gw * 1.0 + 4} height={72} rx={14} fill="none" stroke={AMBER} strokeWidth={6} opacity={fuseO} /> : null}
+					<BarTag x={X5 - 25} y={YM} text="9" at={-100} size={44} />
+					<BarTag x={X5 - 25} y={YC} text="22" at={-100} size={44} />
+					<Bar segs={s9} cen={L9.cen} y={YM} gw={gwL} h={64} />
+					<Bar segs={s22} cen={L22.cen} cenTone="blue" y={YC} gw={gwL} h={64} />
+					{fuseO > 0.01 ? <rect x={L22.segs[1].x + gwL / 2} y={YC - 42} width={gwL * 1.0 + 4} height={84} rx={14} fill="none" stroke={AMBER} strokeWidth={6} opacity={fuseO} /> : null}
 					<g opacity={prog(f, K5.active - 6, 12)}>
-						{glow > 0.01 ? <circle cx={1180} cy={YC} r={64 + 6 * Math.sin(f / 5)} fill={AMBER} opacity={0.3 * glow} /> : null}
-						<ProteinBlob x={1180} y={YC} r={42} fill="#f3d9a6" stroke={AMBER_INK} />
+						{glow > 0.01 ? <circle cx={1550} cy={YC} r={84 + 6 * Math.sin(f / 5)} fill={AMBER} opacity={0.3 * glow} /> : null}
+						<ProteinBlob x={1550} y={YC} r={58} fill="#f3d9a6" stroke={AMBER_INK} />
 					</g>
 					<g opacity={cellIn}>
-						{(cells === 1 ? [[1400, YC]] : cells === 2 ? [[1370, YC], [1440, YC]] : [[1370, YC - 36], [1440, YC - 36], [1370, YC + 36], [1440, YC + 36]]).map(([cx, cy], k) => <circle key={k} cx={cx} cy={cy} r={28} fill="#f4e4ec" stroke="#9a5a78" strokeWidth={3} />)}
+						{(cells === 1 ? [[1770, YC]] : cells === 2 ? [[1725, YC], [1815, YC]] : [[1725, YC - 46], [1815, YC - 46], [1725, YC + 46], [1815, YC + 46]]).map(([cx, cy], k) => <circle key={k} cx={cx} cy={cy} r={40} fill="#f4e4ec" stroke="#9a5a78" strokeWidth={3} />)}
 					</g>
 				</g>
-				<Lbl x={700} y={780} text="two genes joined" size={40} color={AMBER_INK} at={K5.joining + 8} out={K5.dividing} />
-				<Lbl x={700} y={780} text="chronic myeloid leukaemia" size={40} color={AMBER_INK} at={K5.dividing + 6} />
+				<Lbl x={X5} y={800} text="two genes joined: always active" size={46} color={AMBER_INK} at={K5.joining + 8} out={K5.dividing} />
+				<Lbl x={X5} y={800} text="chronic myeloid leukaemia" size={46} color={AMBER_INK} at={K5.dividing + 6} />
+				<Lbl x={1770} y={770} text="white blood cells" size={34} color={INK_SOFT} anchor="middle" at={K5.dividing} />
 			</Overlay>
 		</>
 	);
@@ -167,7 +168,7 @@ export const SceneInvTrans: React.FC = () => {
 
 // ---------- 6. A balanced carrier's gametes ----------
 const K6 = cues(S('carrier-gametes'), {just: 'can get just one', missing: 'one segment is missing', doubled: 'another is doubled', misc: 'repeated miscarriages'});
-const SG = 34, SC = Math.round(CW * SG / 64);
+const SG = 50, SC = Math.round(CW * SG / 64);
 export const SceneCarrier: React.FC = () => {
 	const f = useCurrentFrame();
 	const n1 = lay(CHR1, 0, SG, SC), n2 = lay(CHR2, 0, SG, SC, 'blue');
@@ -177,39 +178,41 @@ export const SceneCarrier: React.FC = () => {
 	t2.segs[3].tone = 'n'; t2.segs[4].tone = 'n';
 	const mv = prog(f, K6.just + 10, 30);
 	const P = (L: {segs: Seg[]; cen: number | null}, x: number, y: number, extra?: (s: Seg, i: number) => Seg) => (
-		<g transform={`translate(${x},0)`}><Bar segs={extra ? L.segs.map(extra) : L.segs} cen={L.cen} cenTone={L.segs[0].tone === 'blue' ? 'blue' : 'n'} y={y} gw={SG} h={30} size={18} /></g>
+		<g transform={`translate(${x},0)`}><Bar segs={extra ? L.segs.map(extra) : L.segs} cen={L.cen} cenTone={L.segs[0].tone === 'blue' ? 'blue' : 'n'} y={y} gw={SG} h={44} size={28} /></g>
 	);
-	const cellRows = {n1: [330, 455], t1: [330, 515], n2: [330, 600], t2: [330, 660]};
-	const LG = [1130, 420], RG = [1560, 420];
+	const cellRows = {n1: [230, 400], t1: [230, 490], n2: [230, 610], t2: [230, 700]};
+	const LG = [1140, 470], RG = [1640, 470];
 	const go = (from: number[], to: number[]) => [lerp(from[0], to[0], mv), lerp(from[1], to[1], mv)];
 	const ringPQ = prog(f, K6.doubled, 10);
+	const tw1 = t1.end, tw2 = t2.end;
 	return (
 		<>
 			<Heading text="A balanced carrier's gametes" at={4} size={56} />
 			<Overlay>
-				<ellipse cx={475} cy={560} rx={300} ry={200} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={4} opacity={prog(f, 0, 12)} />
+				<ellipse cx={450} cy={555} rx={360} ry={250} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={4} opacity={prog(f, 0, 12)} />
+				<Lbl x={450} y={850} text="carrier's cell: every gene once" size={38} color={BIO_INK} anchor="middle" at={8} out={K6.just} />
 				<g opacity={1 - 0.5 * mv}>
 					{P(n1, cellRows.n1[0], cellRows.n1[1])}
 					{P(t1, cellRows.t1[0], cellRows.t1[1])}
 					{P(n2, cellRows.n2[0], cellRows.n2[1])}
 					{P(t2, cellRows.t2[0], cellRows.t2[1])}
 				</g>
-				{[LG, RG].map((g, k) => <circle key={k} cx={g[0]} cy={g[1]} r={175} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={4} opacity={prog(f, K6.just, 14)} />)}
+				{[LG, RG].map((g, k) => <circle key={k} cx={g[0]} cy={g[1]} r={235} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={4} opacity={prog(f, K6.just, 14)} />)}
 				{mv > 0.01 ? (
 					<>
-						{(() => { const [x, y] = go(cellRows.t1, [LG[0] - 144, 385]); return P(t1, x, y); })()}
-						{(() => { const [x, y] = go(cellRows.t2, [LG[0] - 93, 460]); return P(t2, x, y); })()}
-						{(() => { const [x, y] = go(cellRows.t1, [RG[0] - 144, 385]); return P(t1, x, y, (s, i) => (i >= 6 ? {...s, ring: ringPQ} : s)); })()}
-						{(() => { const [x, y] = go(cellRows.n2, [RG[0] - 93, 460]); return P(n2, x, y, (s, i) => (i >= 3 ? {...s, ring: ringPQ} : s)); })()}
+						{(() => { const [x, y] = go(cellRows.t1, [LG[0] - tw1 / 2, 420]); return P(t1, x, y); })()}
+						{(() => { const [x, y] = go(cellRows.t2, [LG[0] - tw2 / 2, 530]); return P(t2, x, y); })()}
+						{(() => { const [x, y] = go(cellRows.t1, [RG[0] - tw1 / 2, 420]); return P(t1, x, y, (s, i) => (i >= 6 ? {...s, ring: ringPQ} : s)); })()}
+						{(() => { const [x, y] = go(cellRows.n2, [RG[0] - n2.end / 2, 530]); return P(n2, x, y, (s, i) => (i >= 3 ? {...s, ring: ringPQ} : s)); })()}
 					</>
 				) : null}
-				<TickC x={LG[0] + 120} y={290} o={prog(f, K6.just + 44, 10)} s={34} />
-				<Lbl x={LG[0]} y={650} text="every gene once" size={40} color={BIO_INK} anchor="middle" at={K6.just + 44} out={K6.doubled} />
-				<Lbl x={RG[0]} y={650} text="G H missing" size={40} color={AMBER_INK} anchor="middle" at={K6.missing + 10} out={K6.misc - 10} />
-				<Lbl x={RG[0]} y={700} text="P Q twice" size={40} color={AMBER_INK} anchor="middle" at={K6.doubled + 6} out={K6.misc - 10} />
-				<Lbl x={RG[0]} y={222} text="unbalanced" size={42} color={AMBER_INK} anchor="middle" at={K6.doubled + 20} />
-				<CurveArrow a={[RG[0], 610]} b={[RG[0], 790]} at={K6.misc} bow={0} color={AMBER_INK} width={5} />
-				<Lbl x={RG[0]} y={850} text="unbalanced embryo" size={42} color={AMBER_INK} anchor="middle" at={K6.misc + 12} />
+				<TickC x={LG[0] + 170} y={290} o={prog(f, K6.just + 44, 10)} s={40} />
+				<Lbl x={LG[0]} y={770} text="every gene once" size={44} color={BIO_INK} anchor="middle" at={K6.just + 44} out={K6.doubled} />
+				<Lbl x={RG[0]} y={640} text="G H missing" size={44} color={AMBER_INK} anchor="middle" at={K6.missing + 10} out={K6.misc - 10} />
+				<Lbl x={RG[0]} y={770} text="P Q twice" size={44} color={AMBER_INK} anchor="middle" at={K6.doubled + 6} out={K6.misc - 10} />
+				<Lbl x={RG[0]} y={210} text="unbalanced" size={46} color={AMBER_INK} anchor="middle" at={K6.doubled + 20} />
+				<CurveArrow a={[RG[0], 710]} b={[RG[0], 860]} at={K6.misc} bow={0} color={AMBER_INK} width={5} />
+				<Lbl x={RG[0]} y={920} text="unbalanced embryo" size={46} color={AMBER_INK} anchor="middle" at={K6.misc + 12} />
 				{void INK_SOFT}
 			</Overlay>
 		</>

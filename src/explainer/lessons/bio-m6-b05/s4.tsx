@@ -13,7 +13,8 @@ import {CardBox, CurveArrow, FillBar, PlateAt} from '../bio-m6-b01/parts';
 import {ChartCard, codonToAA} from '../bio-m6-b03/parts';
 import {S, hold} from './common';
 import {PLATES} from './assets';
-import {AMBER_INK, CellTree, Dot, INK, INK_SOFT, PLUM, TEALC, lerp, prog, smooth, treePt, vis} from './parts';
+import {AMBER, AMBER_INK, Band, CellTree, Dot, FONT_DISPLAY, INK, INK_SOFT, PLUM, TEALC, WARM, lerp, prog, smooth, treePt, vis} from './parts';
+import {SlimStrand} from '../bio-m6-b01/parts';
 
 /** "Pause here to answer." with the 10 s countdown ring. */
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1660, cy = 790}) => {
@@ -69,9 +70,9 @@ const EyeZoom: React.FC<{fx: number; fy: number; fw: number; zx: number; zy: num
 		</g>
 	);
 };
-const Flies: React.FC<{at: number; s?: number; x?: number; y?: number}> = ({at, s = 1, x = 210, y = 330}) => (
+const Flies: React.FC<{at: number; s?: number; x?: number; y?: number; zr?: number}> = ({at, s = 1, x = 210, y = 330, zr = 50}) => (
 	<>
-		<EyeZoom fx={x} fy={y} fw={150 * s} zx={x + 150} zy={y + 40} r={50} at={at + 12} />
+		<EyeZoom fx={x} fy={y} fw={150 * s} zx={x + 150 * s} zy={y + 40 * s} r={zr} at={at + 12} />
 		<PlateAt p={PLATES.flyPatch} cx={x} cy={y} w={150 * s} at={at} />
 		<Sx x={x} y={y + 125 * s} text="fly A" size={32 * Math.max(0.8, s)} color={INK} hand anchor="middle" at={at} />
 		<PlateAt p={PLATES.flyRed} cx={x} cy={y + 260 * s} w={150 * s} at={at + 8} />
@@ -89,12 +90,13 @@ export const SceneAttempt: React.FC = () => {
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
-				<Flies at={KA.flyA - 10} />
-				<QText q={STEM1(t)} x={440} y={240} w={1340} size={32} card={false} />
-				<QText q={DEM1(t)} x={440} y={470} w={1340} size={31} card={false} />
-				<AnsBox x={440} y={620} w={1040} h={110} at={KA.identify + 10} label="(a)" />
-				<AnsBox x={440} y={750} w={1040} h={230} at={KA.explain + 16} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} />
+				{/* quality pass (6 Nov): the two flies large in the right column, the question text in the left */}
+				<Flies at={KA.flyA - 10} x={1480} y={350} s={1.55} zr={72} />
+				<QText q={STEM1(t)} x={140} y={240} w={1180} size={33} card={false} />
+				<QText q={DEM1(t)} x={140} y={520} w={1180} size={32} card={false} />
+				<AnsBox x={140} y={680} w={1180} h={100} at={KA.identify + 10} label="(a)" />
+				<AnsBox x={140} y={800} w={1180} h={190} at={KA.explain + 16} label="(b)" />
+				<PauseHold id="attempt" at={KA.pause} cx={1660} cy={930} />
 			</Overlay>
 		</>
 	);
@@ -170,6 +172,38 @@ const CHART2 = ['CCU', 'CUC', 'CUU', 'UUU'];
 })();
 const CLAIM = 'Q is more significant than P, because Q is in coding DNA.';
 
+/** The givens of item 2 on one gene: a strand with the promoter (teal) and the coding sequence (warm); P and Q pins
+ *  land on their own words. Nothing answer-bearing: no amounts, codon meanings or protein. */
+const GivenGene: React.FC<{at: number; pAt: number; qAt: number}> = ({at, pAt, qAt}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 14);
+	if (o <= 0.01) return null;
+	const X = 190, Y = 540, PIT = 30, GAP = 40;
+	const rx = (i: number) => X + i * PIT + PIT / 2;
+	const pin = (i: number, label: string, a: number, color: string) => {
+		const po = prog(f, a, 10);
+		return po > 0.01 ? (
+			<g opacity={po}>
+				<line x1={rx(i)} y1={Y - 6} x2={rx(i)} y2={Y - 42} stroke={color} strokeWidth={4} />
+				<circle cx={rx(i)} cy={Y - 58} r={20} fill="#fff6e6" stroke={color} strokeWidth={4} />
+				<text x={rx(i)} y={Y - 49} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 26}} fill={color}>{label}</text>
+				<line x1={rx(i) - 2} y1={Y} x2={rx(i) - 2} y2={Y + GAP} stroke={AMBER} strokeWidth={9} />
+			</g>
+		) : null;
+	};
+	return (
+		<g opacity={o}>
+			<Band x1={rx(5) - 15} x2={rx(10) + 15} kind="teal" y={Y} gap={GAP} />
+			<Band x1={rx(12) - 15} x2={rx(33) + 15} kind="warm" y={Y} gap={GAP} />
+			<SlimStrand x={X} y={Y} n={36} pitch={PIT} gap={GAP} lineW={5} />
+			<Sx x={(rx(5) + rx(10)) / 2} y={Y + GAP + 44} text="promoter" size={30} color={TEALC} hand anchor="middle" />
+			<Sx x={(rx(12) + rx(33)) / 2} y={Y + GAP + 44} text="coding sequence" size={30} color={WARM} hand anchor="middle" />
+			{pin(8, 'P', pAt, TEALC)}
+			{pin(22, 'Q', qAt, AMBER_INK)}
+		</g>
+	);
+};
+
 // ---------- 13c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', two: 'Two mutations are found', p: 'P is a substitution', q: 'Q is a substitution', claims: 'A student claims', assess: 'Assess the claim', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
@@ -182,11 +216,13 @@ export const SceneAttemptTwo: React.FC = () => {
 				<CardBox x={100} y={180} w={1720} h={830} at={KC.two - 6} />
 				<QText q={STEM2(t)} x={140} y={240} w={1180} size={32} card={false} />
 				<ChartCard x={1390} y={210} w={390} rows={CHART2} at={KC.q + 10} title="Codon chart (part)" size={32} rowH={54} />
-				<CardBox x={140} y={500} w={1180} h={90} at={KC.claims} fill="#fff6e6" stroke="#d9b37a" />
-				<Sx x={170} y={556} text={`Student's claim: "${CLAIM}"`} size={30} color={INK} weight={600} at={KC.claims} />
-				<Sx x={140} y={650} text="Assess the student's claim. (4 marks)" size={31} color={INK} weight={700} at={KC.assess} />
-				<AnsBox x={140} y={690} w={1300} h={290} at={KC.assess + 10} label="answer" />
-				<PauseHold id="attempt-two" at={KC.pause} cx={1650} cy={760} />
+				{/* quality pass (6 Nov): the givens drawn on one gene, promoter and coding sequence, P and Q placed on their words */}
+				<GivenGene at={KC.two + 10} pAt={KC.p + 10} qAt={KC.q + 10} />
+				<CardBox x={140} y={640} w={1180} h={90} at={KC.claims} fill="#fff6e6" stroke="#d9b37a" />
+				<Sx x={170} y={696} text={`Student's claim: "${CLAIM}"`} size={30} color={INK} weight={600} at={KC.claims} />
+				<Sx x={140} y={786} text="Assess the student's claim. (4 marks)" size={32} color={INK} weight={700} at={KC.assess} />
+				<AnsBox x={140} y={810} w={1300} h={180} at={KC.assess + 10} label="answer" />
+				<PauseHold id="attempt-two" at={KC.pause} cx={1650} cy={880} />
 			</Overlay>
 		</>
 	);

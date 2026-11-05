@@ -9,6 +9,7 @@ import {AMBER, AMBER_INK, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog, rng} fro
 import {GREYT, GREY_INK, Sx} from '../bio-m5-b13/shared';
 import {SERIF} from '../bio-m5-b09/genetics';
 import {BIO_INK, CARD, EDGE, clamp01, lerp, vis} from '../bio-m6-b01/parts';
+import {ChromPlate, plateOf} from '../bio-m5-b05a/chrom';
 
 export {clamp01, lerp, vis};
 export const PLUMC = '#a8508f', TEALC = '#2b9a8e';
@@ -153,6 +154,21 @@ export const MCell: React.FC<{x: number; y: number; r: number; o?: number; chrom
 	<g opacity={o}>
 		<circle cx={x} cy={y} r={r} fill="#fbf6e8" stroke={stroke} strokeWidth={4} />
 		{chroms.map((c, k) => <Glyph key={k} x={x + c.dx} y={y + c.dy} color={c.color} dup={c.dup} o={c.o} />)}
+	</g>
+));
+
+/** Quality pass (6 Nov): a painted chromosome (B5a's single or duplicated plate, plum or teal; any other colour gives
+ *  the neutral plate) with its centromere at (x, y), for the scene 7 meiosis cells. Drawn only inside the coded cells. */
+export const PChrom: React.FC<{x: number; y: number; color: string; dup?: boolean; h?: number; o?: number; rot?: number}> = ({x, y, color, dup = false, h = 110, o = 1, rot = 0}) => {
+	if (o <= 0.01) return null;
+	const {p, filter} = plateOf(color, dup);
+	return <ChromPlate p={p} cx={x} cy={y} h={h} o={o} filter={filter} rot={rot} />;
+};
+/** A coded meiosis cell holding painted chromosomes. */
+export const PCell: React.FC<{x: number; y: number; r: number; o?: number; chroms?: (CChrom & {h?: number})[]; stroke?: string}> = ({x, y, r, o = 1, chroms = [], stroke = '#8a7a63'}) => (o <= 0.01 ? null : (
+	<g opacity={o}>
+		<circle cx={x} cy={y} r={r} fill="#fbf6e8" stroke={stroke} strokeWidth={4} />
+		{chroms.map((c, k) => <PChrom key={k} x={x + c.dx} y={y + c.dy} color={c.color} dup={c.dup} o={c.o} h={c.h ?? r * 0.95} />)}
 	</g>
 ));
 
