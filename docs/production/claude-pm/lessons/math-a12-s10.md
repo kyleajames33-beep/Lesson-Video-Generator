@@ -1,6 +1,6 @@
 # Maths A12 S10: How do graphing tools verify the empirical rule and normal CDF? The normal PDF's parts, the global maximum at μ, inflection at μ ± σ, 68%, 95% and 99.7% measured and applied, and the S-shaped CDF (design)
 
-Status: Revision 2 (4 Nov 2026), brief 162 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov 2026), overnight queue wave I5. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer`, `AlignedAlgebra`, `ReadoutPanel`, `Chip` with `cross`, `Callout`, `PenArrow`, `QuestionCard`, `Countdown`, `KeyNotes`, `ConcavityTint`), `ToolPanel` (unbranded, root decision 38, with s08's input/output mode), `AreaFill` (i06, with s09's open ends), `AccumulationTracer` (i08), the s09 parts (`NormalCurve`, `TailMirror`) and the additions under "Codex asset brief" (`ToolPanel` graph mode, `NormalCurve` bands and inflection marks, `TailLadder`). Nothing recorded; human listening pending.
+Status: Revision 3 (5 Nov 2026): brief 171 fixes applied (Numbers used heights row separates the 194 and 196 tails; scene 9 cue retied); needs the Codex error check of Revision 3. Previously Revision 2 (4 Nov 2026, brief 162 repairs). Previously Revision 1 (3 Nov 2026), overnight queue wave I5. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer`, `AlignedAlgebra`, `ReadoutPanel`, `Chip` with `cross`, `Callout`, `PenArrow`, `QuestionCard`, `Countdown`, `KeyNotes`, `ConcavityTint`), `ToolPanel` (unbranded, root decision 38, with s08's input/output mode), `AreaFill` (i06, with s09's open ends), `AccumulationTracer` (i08), the s09 parts (`NormalCurve`, `TailMirror`) and the additions under "Codex asset brief" (`ToolPanel` graph mode, `NormalCurve` bands and inflection marks, `TailLadder`). Nothing recorded; human listening pending.
 
 Narration 6,032 characters, 17 scenes, about 556 s (9.3 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -107,7 +107,7 @@ Visual: clear change. Task strip top: "Heights: find P(162 < H < 178) and P(H > 
 ### 9. judgements, and where the rule stops
 > The rule also helps you judge. Is a student of one ninety-six centimetres unusual? Three sigma above is one ninety-four. Only about zero point one five percent are above that, so even fewer are above one ninety-six. Very **unusual**. Now underfilled bottles, below four ninety. Four ninety sits between one sigma below and two sigma **below**. So that tail is between two point five and sixteen **percent**. The rule gives a range, not a value. For the value, we need the area to the left of four **ninety**.
 
-Visual: camera continue on the heights bell. A mark at 194 ("μ + 3σ") and a dot at 196 beyond it; on "unusual" the tail beyond 194 shades thinly, boxed "P(H > 194) ≈ 0.15%", tag "very unusual". Clear change on "Now the underfilled": the fills' bell N(500, 64) with the bottle plate small, marks at 484 and 492, a red dot at 490 between them, tags "μ − σ = 492" and "μ − 2σ = 484". On "below" (second) two shaded tails flash in turn: below 492 ("about 16%") and below 484 ("about 2.5%"). On "percent" the tail below 490 shades between them, row "2.5% < P(X < 490) < 16%". On "ninety" a "?" over the tail.
+Visual: camera continue on the heights bell. A mark at 194 ("μ + 3σ") and a dot at 196 beyond it; on "unusual" the tail beyond 194 shades thinly, boxed "P(H > 194) ≈ 0.15%", tag "very unusual". Clear change on "Now underfilled bottles": the fills' bell N(500, 64) with the bottle plate small, marks at 484 and 492, a red dot at 490 between them, tags "μ − σ = 492" and "μ − 2σ = 484". On "below" (second) two shaded tails flash in turn: below 492 ("about 16%") and below 484 ("about 2.5%"). On "percent" the tail below 490 shades between them, row "2.5% < P(X < 490) < 16%". On "ninety" a "?" over the tail.
 
 ### 10. the CDF, graphed
 > That's the cumulative distribution function. Capital F of x is the probability that X is at most x, the area to the left of **x**. Graph it in the app, and it draws an S **shape**. It starts near zero, and at the mean it's exactly a half, because half the area is on each **side**. Its slope is the density, so it climbs fastest at mu, where the bell is **highest**. Then it levels off towards **one**. At four ninety, the app reads zero point one zero five **six**, so about ten point six percent of bottles are underfilled.
@@ -186,7 +186,7 @@ Model answer: comparing with f(x) = (1/(σ√(2π))) e^(−(x − μ)²/(2σ²))
 | Application areas | 0.6827, 0.9545, 0.9973; app percentages 68.27%, 95.45%, 99.73% | 5, 7 |
 | Apples | N(150, 15²); 135 to 165 gives 0.6827; stretch 15/8, squash 8/15 | 6 |
 | Empirical rule | approximately 68%, 95%, 99.7%; outside 32%, 5%, 0.3%; each tail 16%, 2.5%, 0.15% | 7, 8, 9, 11, 13 |
-| Heights (site problem 1) | N(170, 8²); 162, 178 (±σ): ≈ 68%; 186 (+2σ): ≈ 2.5%; below 186 ≈ 97.5%; 194 (+3σ), 196: ≈ 0.15% | 8, 9 |
+| Heights (site problem 1) | N(170, 8²); 162, 178 (±σ): ≈ 68%; 186 (+2σ): ≈ 2.5%; below 186 ≈ 97.5%; above 194 (+3σ): ≈ 0.15% (exact 0.1350%); above 196: fewer still (exact 0.0577%, not shown as a percentage on screen) | 8, 9 |
 | Fills below 490 | between 2.5% and 16%; F(490) ≈ 0.1056, about 10.6% | 9, 10 |
 | CDF | F(500) = 0.5; F(492) ≈ 0.1587 (≈ 16%); F(508) ≈ 0.8413 (≈ 84%) | 10 |
 | A1 | N(80, 36): σ = 6; 68, 92 = μ ± 2σ: ≈ 95%; 86 = μ + σ: ≈ 16%; crossed 32% | 12, 13 |
@@ -299,3 +299,11 @@ Builds on: The normal distribution: shape, notation and uses (previous video); c
 ## Revision 2 (4 November 2026, brief 162 repairs)
 
 Scene 9's 196 cm sentence corrected (0.15% is above 194, so even fewer above 196); feedback 2's spoken 2σ² check cut (root decision 60). Narration now 6,029 characters (counted by the build parser rules). No em dashes.
+
+## Revision 3 (5 November 2026, brief 171 fixes)
+
+Findings from `checks/m-a12s10-error-check.md`.
+
+- Should fix 1 (Numbers used): the heights row now gives "above 194 (+3σ): ≈ 0.15% (exact 0.1350%); above 196: fewer still (exact 0.0577%)". Recalculated: P(H > 194) = 0.001349898, P(H > 196) = 0.000577025 at N(170, 8²).
+- Should fix 2 (scene 9): the graph-change cue "Now the underfilled" becomes "Now underfilled bottles", which occurs in the narration.
+- Narration count: 6,029 characters (scene narration only, ** removed, joins excluded; narration unchanged), estimated about 555.8 s with the stated holds. No em dashes.

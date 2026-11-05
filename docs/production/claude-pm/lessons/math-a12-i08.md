@@ -1,6 +1,6 @@
 # Maths A12 I08: Why does differentiating accumulation recover the rate? The accumulation function A(x), its gradient at the moving edge, moving the start, and the Fundamental Theorem of Calculus (design)
 
-Status: Revision 2 (4 Nov 2026), brief 161 repairs applied; needs the Codex error check. Previously Revision 1 (2 Nov 2026), overnight queue wave A1. Needs root decisions, the student learning review and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `DerivativeTracer` in paired mode, `TangentTriangle` with `ReadoutPanel`, `NumericDial`, `IntegralNotation`, `PrimitiveFamily`, `AlignedAlgebra`), plus the new area parts specified in `math-a12-i06.md` ("Codex asset brief") and the two accumulation parts specified under "Codex asset brief" here (`AccumulationTracer`, `LowerLimitDial`). Nothing recorded; human listening pending.
+Status: Revision 3 (5 Nov 2026): brief 171 fixes applied (scene 9 pulse cue retied); needs the Codex error check of Revision 3. Previously Revision 2 (4 Nov 2026, brief 161 repairs). Previously Revision 1 (2 Nov 2026), overnight queue wave A1. Needs root decisions, the student learning review and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the brief 129 kit with the d01 addendum and the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `DerivativeTracer` in paired mode, `TangentTriangle` with `ReadoutPanel`, `NumericDial`, `IntegralNotation`, `PrimitiveFamily`, `AlignedAlgebra`), plus the new area parts specified in `math-a12-i06.md` ("Codex asset brief") and the two accumulation parts specified under "Codex asset brief" here (`AccumulationTracer`, `LowerLimitDial`). Nothing recorded; human listening pending.
 
 Narration 5,599 characters, 16 scenes, about 525 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -109,7 +109,7 @@ Visual: board clears to the right-column algebra with a small paired-graph thumb
 ### 9. the earlier results agree
 > Now check the earlier results. The trolley's strips settled near two point six six seven. A primitive of x squared is x cubed over three, so the integral from zero to two is eight thirds, minus zero. That's about two point six six **seven**. The tap's strips settled on one. A primitive of cos x is sine x, and sine of pi over two, minus sine of zero, is exactly **one**. And the car's thirty-two comes from twelve t minus t squared. Ninety-six minus sixty-four is thirty-**two**. So instead of adding thousands of strips, we need two values of one primitive.
 
-Visual: three small coded thumbnails in a row (redrawn: y = x² on [0, 2] with fine strips and readout "≈ 2.667"; y = cos x on [0, π/2] with readout "≈ 1"; y = 12 − 2t on [0, 8] with signed fills and "32"). Under each, a row writes in turn: "[x³/3]₀² = 8/3 − 0 = 8/3" (grey "≈ 2.667"; tick on "seven"); "[sin x]₀^{π/2} = 1 − 0 = 1" (tick on "one"); "[12t − t²]₀⁸ = (96 − 64) − 0 = 32" (tick on "two"). On "agree" the three ticks pulse together; on the last sentence the fine strips in each thumbnail fade and two dots remain at each end of the interval, tag "F(b) − F(a)".
+Visual: three small coded thumbnails in a row (redrawn: y = x² on [0, 2] with fine strips and readout "≈ 2.667"; y = cos x on [0, π/2] with readout "≈ 1"; y = 12 − 2t on [0, 8] with signed fills and "32"). Under each, a row writes in turn: "[x³/3]₀² = 8/3 − 0 = 8/3" (grey "≈ 2.667"; tick on "seven"); "[sin x]₀^{π/2} = 1 − 0 = 1" (tick on "one"); "[12t − t²]₀⁸ = (96 − 64) − 0 = 32" (tick on "two"). On "two values of one primitive", after all three ticks have appeared, the three ticks pulse together and the fine strips in each thumbnail fade and two dots remain at each end of the interval, tag "F(b) − F(a)".
 
 ### 10. memory aid
 > Here's the pair to remember. Differentiate the area, and you get the height. Integrate the rate, and you get the change. The first is why the second **works**.
@@ -287,3 +287,10 @@ Builds on: The definite integral as a signed sum (previous video); primitives an
 ## Revision 2 (4 November 2026, brief 161 repairs)
 
 Scene 6's trace is approximate ("as closely as the strips allow") with a learner invitation to try it in a graphing app; scene 9's payoff shortened to fund it. Narration now 5,636 characters (counted by the build parser rules). No em dashes.
+
+## Revision 3 (5 November 2026, brief 171 fixes)
+
+Findings from `checks/m-a12i08-error-check.md`.
+
+- Should fix 1 (scene 9): the three-tick pulse moves from "agree" (no longer spoken) to "two values of one primitive", after all three ticks have appeared, together with the strip fade. No narration change.
+- Narration count: 5,636 characters (scene narration only, ** removed, joins excluded; narration unchanged), estimated about 527.8 s with the stated holds. No em dashes.

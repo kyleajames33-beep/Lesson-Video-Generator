@@ -1,6 +1,6 @@
 # Maths A12 S09: When is a normal model useful, and what does its shape mean? Many small nudges, the bell curve, mean = median = mode, X ∼ N(μ, σ²), and tail areas out to ±∞ (design)
 
-Status: Revision 2 (4 Nov 2026), brief 162 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov 2026), overnight queue wave I2. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer`, `AlignedAlgebra`, `ReadoutPanel`, `Chip` with `cross`, `Callout`, `PenArrow`, `QuestionCard`, `Countdown`, `KeyNotes`), `AreaFill` (i06), the probability parts from s01 to s04 (`ClassHistogram`, `BalancePoint`) and the additions under "Codex asset brief" (`PegBoard`, `NormalCurve`, `AreaFill` open ends, `TailMirror`). Nothing recorded; human listening pending.
+Status: Revision 3 (5 Nov 2026): brief 171 fixes applied (scene 14 summary scoped to a clue check, matching "clues, not a proof"); needs the Codex error check of Revision 3. Previously Revision 2 (4 Nov 2026, brief 162 repairs). Previously Revision 1 (3 Nov 2026), overnight queue wave I2. Needs root decisions, the student learning review, a Codex maths check and a Codex error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit and the brief 129 maths kit with the brief 131, 133, 135 and 143 additions (`FunctionGraph`, `GraphLayer`, `AlignedAlgebra`, `ReadoutPanel`, `Chip` with `cross`, `Callout`, `PenArrow`, `QuestionCard`, `Countdown`, `KeyNotes`), `AreaFill` (i06), the probability parts from s01 to s04 (`ClassHistogram`, `BalancePoint`) and the additions under "Codex asset brief" (`PegBoard`, `NormalCurve`, `AreaFill` open ends, `TailMirror`). Nothing recorded; human listening pending.
 
 Narration 5,627 characters, 15 scenes, about 525 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate").
 
@@ -130,7 +130,7 @@ Visual: `QuestionCard`, worded as printed: "The masses, X g, of chocolate bars a
 Visual: card shrinks to the top. "250", "242" and "258" underlined as used; on "below" a bell at 250 with marks at 242 and 258, tags "8 below", "8 above". On "eight" the left tail shades, `TailMirror` lays it on the right tail, boxed "P(X > 258) = 0.0548". On "four" the middle shades, boxed "P(242 < X < 258) = 1 − 2(0.0548) = 0.8904". On "tail" a chip "1 − 0.0548 = 0.9452" fades in and is crossed (caption "the right tail is still in it"). Hold about 1 second.
 
 ### 14. handoff
-> So a normal model fits data that bunch symmetrically around one peak, and its shape tells us the mean, median and mode are the same. Next, a new question. Mark one sigma either side of the mean. How much of the area lies between those **marks**? And what about two sigma, or **three**?
+> So check the peak, symmetry and tails against the normal model, and a normal shape tells us the mean, median and mode are the same. Next, a new question. Mark one sigma either side of the mean. How much of the area lies between those **marks**? And what about two sigma, or **three**?
 
 Visual: the boxed "mean = median = mode = μ" and "X ∼ N(μ, σ²)" show small at the top, then fade on "Next". Board clears to the fills' bell N(500, 64) (x 460 to 540). On "Mark" dashed marks at 492 and 508 with tags "μ − σ", "μ + σ"; on "marks" the region between them tints, "?" over it. On "three" further dashed marks at 484 and 516 ("μ ± 2σ") and 476 and 524 ("μ ± 3σ"), each with a "?". Chip "Next: how much area lies within one, two and three σ?". No percentage is shown or spoken. Hold about 2 seconds. This is s10's assumed opening frame (open decision 1); scene 15 returns to it silently after the notes.
 
@@ -288,3 +288,11 @@ Builds on: Expected value and variance of continuous random variables (previous 
 ## Revision 2 (4 November 2026, brief 162 repairs)
 
 Scene 1 says "simulated fills" with a grey tag; scene 6 adds the tail comparison with the bell and "clues, not a proof"; key note 5 updated. Narration now 5,693 characters (counted by the build parser rules). No em dashes.
+
+## Revision 3 (5 November 2026, brief 171 fixes)
+
+Findings from `checks/m-a12s09-error-check.md`.
+
+- Should fix 1 (scene 14): "So a normal model fits data that bunch symmetrically around one peak, and its shape tells us ..." becomes "So check the peak, symmetry and tails against the normal model, and a normal shape tells us the mean, median and mode are the same." The mean/median/mode result and the handoff are unchanged.
+- Opening (scene 1) checked against s08's revised handoff: both say "simulated" and show the "simulated: 1,000 fills" tag. No change needed.
+- Narration count: 5,692 characters (scene narration only, ** removed, joins excluded; -1 against Revision 2's 5,693), estimated about 529.9 s with the stated holds. No em dashes.

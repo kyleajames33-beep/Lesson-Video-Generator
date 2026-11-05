@@ -1,6 +1,6 @@
 # Year 11 Physics FA3 V24 (Physics 2025, Year 11, Focus Area 3): Why do magnetic field lines always form closed loops, and how do they map the field around a magnet, a wire and a loop? (design)
 
-Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v24`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: two new (a bar magnet; a plotting compass body, used many times with coded needles); the bench supply and the retort stand (both delivered) reused by name.
+Status: Revision 3 (5 Nov 2026): brief 173 fixes applied (scene 8 events reordered); needs the Codex error check of Revision 3. Previously Revision 2 (5 Nov, brief 164 repairs) and Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa3-v24`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: two new (a bar magnet; a plotting compass body, used many times with coded needles); the bench supply and the retort stand (both delivered) reused by name.
 
 Narration 5,877 characters (Revision 2 count), 22 scenes, about 540 s including three 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -103,7 +103,7 @@ Visual: camera continue. On "two smaller magnets" the cut faces label "S" and "N
 ### 8. a current's field: circles
 > Now the field of a current. Run a straight wire vertically through a card, and switch on a large current. Compasses placed around the wire don't point at it or away from it. They line up in a circle around it. Sprinkle filings, and they form rings. The field lines are circles centred on the wire, in the flat card at right angles to **it**.
 
-Visual: board change: the painted retort stand (`phys-y11-retort-stand-v1.png`) holds a coded vertical wire through a coded horizontal card in perspective; leads to the painted bench supply (`phys-y11-low-voltage-supply-v1.png`); a bold ink "I" arrow up the wire. Grey tag "a large current, switched on briefly". On "Compasses" six compass bodies on the card, needles pointing north; on "switch on" the needles swing to form a circle round the wire. On "filings" `IronFilings` on the card form rings. On "circles centred on the wire" plum dashed circles draw on the card with arrowheads (gloss "concentric: sharing one centre"). A chip "the field points along the wire" fades in and takes a grey scribble cross (site misconception 2).
+Visual: board change: the painted retort stand (`phys-y11-retort-stand-v1.png`) holds a coded vertical wire through a coded horizontal card in perspective; leads to the painted bench supply (`phys-y11-low-voltage-supply-v1.png`); a bold ink "I" arrow up the wire. Grey tag "a large current, switched on briefly". On "switch on" the "I" arrow brightens; on "Compasses" six compass bodies appear on the card; on "line up in a circle" their needles swing to form a circle round the wire. On "filings" `IronFilings` on the card form rings. On "circles centred on the wire" plum dashed circles draw on the card with arrowheads (gloss "concentric: sharing one centre"). A chip "the field points along the wire" fades in and takes a grey scribble cross (site misconception 2).
 
 ### 9. strongest near the wire, and it reverses
 > Look at the spacing. The circles are close together near the wire and spread out further away, so the field is strongest near the wire and weakens with distance. And if you reverse the current, every compass turns right **around**.
@@ -317,3 +317,10 @@ Builds on: The combination circuit investigation (previous video). Next: The mag
 - Should fix 1 (both reviews): the loop's field is no longer "strong and nearly uniform" inside. Scene 9 now says "near the centre, the two fields add and change only slowly, and outside the loop, the field spreads out and weakens"; the cue moves from "nearly uniform" to "change only slowly", and `FieldLines` shows nearly parallel lines near the centre, crowding closer to the wire. Nothing calls the centre the strongest point. Key note 4, the scope line, the physics-check line and author note d match.
 - The Revision 1 header and length section still held unfilled placeholders (COUNT_PENDING, SECONDS_PENDING, COUNT_DETAIL); they now carry the Revision 2 count.
 - Narration count: 5,877 characters (build parser rule), about 540 s with the stated holds (17 characters longer than the reviewed 5,860; within the cap).
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `checks/p-y11-fa3-v24-error-check.md`.
+
+- Scene 8: "switch on" (the I arrow brightens) now comes first, then "Compasses" (compass bodies appear), then "line up in a circle" (needles swing round the wire), matching the spoken order.
+- Narration count: 5,856 characters (scene narration only, ** removed, joins excluded), estimated about 540 s with the stated holds. Narration unchanged; visual/event instructions only.

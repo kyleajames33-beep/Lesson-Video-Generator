@@ -1,6 +1,6 @@
 # Year 11 Physics FA2 V20 (Physics 2025, Year 11, Focus Area 2): What changes when waves cross a boundary between media? The refraction investigation (design)
 
-Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v20`, `docs/production/student-learning-review.md`), a Codex physics check (including the safety facts) and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new; v18's ray box, glass block and ripple tank reused by name, with fa1-v21's protractor. All data in this video are illustrative and labelled so.
+Status: Revision 3 (5 Nov 2026): brief 173 fixes applied (cue "every crest" retied); needs the Codex error check of Revision 3. Previously Revision 2 (5 Nov, brief 164 repairs) and Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v20`, `docs/production/student-learning-review.md`), a Codex physics check (including the safety facts) and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new; v18's ray box, glass block and ripple tank reused by name, with fa1-v21's protractor. All data in this video are illustrative and labelled so.
 
 Narration 6,265 characters, 20 scenes, about 569 s (9.5 minutes) including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -143,7 +143,7 @@ Visual: board change: the ripple tank plate (`phys-y11-ripple-tank-v1.png`) thre
 ### 11. frequency stays, wavelength shortens
 > It stays the same. The bar makes ten crests every second, and each crest that reaches the boundary sends one across. Crests can't pile up there or vanish, so ten cross every second on both sides. Speed equals frequency times wavelength, so with the same frequency and a lower speed, the wavelength must be shorter. Here it drops from three centimetres to two, by the same factor as the speed. And at an angle, the crests turn towards the normal, just like the **light**.
 
-Visual: on "stays the same" the "stays the same?" chip ticks; "it drops?" takes a scribble cross. On "every crest" crest counters at each side of the boundary tick together, both reaching "10" in one second. On "pile up" a ghost of crests bunching at the boundary flashes and is crossed. On "speed equals" the equation strip "v = fλ" (tag "v05"). On "three centimetres to two" coded rulers lie across six crests (five wavelengths) on each side: "15 cm ÷ 5 = 3.0 cm" and "10 cm ÷ 5 = 2.0 cm"; rows "deep: v = 10 × 0.030 = 0.30 m s⁻¹", "shallow: v = 10 × 0.020 = 0.20 m s⁻¹" (tag "illustrative data"). On "at an angle" the sheet's edge rotates to an angle; the crests cross and pivot towards the dashed normal of the edge (`WavefrontRefract`, angled mode); on "light" a small inset of the glass block ray beside it.
+Visual: on "stays the same" the "stays the same?" chip ticks; "it drops?" takes a scribble cross. On "each crest" crest counters at each side of the boundary tick together, both reaching "10" in one second. On "pile up" a ghost of crests bunching at the boundary flashes and is crossed. On "speed equals" the equation strip "v = fλ" (tag "v05"). On "three centimetres to two" coded rulers lie across six crests (five wavelengths) on each side: "15 cm ÷ 5 = 3.0 cm" and "10 cm ÷ 5 = 2.0 cm"; rows "deep: v = 10 × 0.030 = 0.30 m s⁻¹", "shallow: v = 10 × 0.020 = 0.20 m s⁻¹" (tag "illustrative data"). On "at an angle" the sheet's edge rotates to an angle; the crests cross and pivot towards the dashed normal of the edge (`WavefrontRefract`, angled mode); on "light" a small inset of the glass block ray beside it.
 
 ### 12. what changes, and the memory aid
 > So here's what changes. When a wave crosses into a new medium, its speed changes, so its wavelength changes by the same factor, and unless it arrives along the normal, its direction changes. Its frequency doesn't, because the source sets it. Light's colour, set by its frequency, stays the same in glass too. So remember. The source sets the frequency, and the medium sets the **speed**.
@@ -344,3 +344,10 @@ Builds on: Refractive index (previous video). Next: The law of refraction.
 - Found while fixing v28's blocker (same counting slip, visual only): scene 11's rulers lay "across five crests" while dividing by 5. They now lie across six crests (five wavelengths); all numbers unchanged.
 - Scene 8 also drops the opening "So" of its last sentence to fund the longer first sentence.
 - Narration count: 6,258 characters (build parser rule), about 568 s with the stated holds (26 characters shorter than the reviewed 6,284).
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `checks/p-y11-fa2-v20-error-check.md`.
+
+- Scene 11: the crest-counter cue "every crest" is now "each crest", which occurs in the narration.
+- Narration count: 6,239 characters (scene narration only, ** removed, joins excluded), estimated about 568 s with the stated holds. Narration unchanged; visual/event instructions only.

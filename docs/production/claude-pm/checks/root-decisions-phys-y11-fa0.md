@@ -16,3 +16,6 @@ The FA1 Physics root decisions files apply to FA0 unless an item below changes t
 
 ## FA3 v27 (4 November 2026)
 11. **v27** keeps the axis model and the sand-pile analogy (the fallback stays listed). It ends without a memory line so its final frame matches v28's opening. The two coil plates (wide, spread) are requested; coded ghost coils are the fallback. The site's μ₀nI misquote and the two width claims go to the site corrections log.
+
+## FA0 v01 to v07, brief 169 repairs (5 November 2026)
+12. All brief 169 findings are resolved at Revision 2, including the v05 blocker (sets A and B are two separate example runs; A from a rig whose release delay was not subtracted; data unchanged, s = 0.707 ms and 2.915 ms). Calls accepted: **v06** checks the gate with a dropped 2.00 cm card released 4.2 cm above the beam (SymPy: 4.15 cm for 20.0 ms), not phone video; **v02** keeps v01's handoff question about "area facing the air" in scene 1, with the width-versus-area correction in scene 3; v02 (about 569.5 s) and v05 (about 569.9 s) sit at the cap, so any later addition needs a matching cut. Root also put v02 scene 6's "falls past a scale" event before "watch every drop again", in spoken order. The remaining label wording a checker may read as cues ("possible / moderate = medium", "a tick on") is left for the error check to confirm. Next: Codex error check.

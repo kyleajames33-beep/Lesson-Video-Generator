@@ -1,6 +1,6 @@
 # Year 11 Physics FA0 V07 (Physics 2025, Year 11, Working scientifically): How do you turn your results into an argument that other people can check, trust and understand? Communicating (design)
 
-Status: Revision 1 (4 Nov). Needs independent student learning review (key `p-y11-fa0-v07`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new (fa1-v15's bench and handoff plates reused by name). All data in this video are fa1-v15's illustrative (simulated) data, labelled so on every table and graph; the report, poster, slide and review comments are coded documents invented for teaching and labelled so.
+Status: Revision 2 (5 Nov 2026): brief 169 repairs applied (Numbers used row relabels 0.93 to 1.1 kg as the inferred mass range); needs the Codex error check of Revision 2. Previously Revision 1 (4 Nov). Needs independent student learning review (key `p-y11-fa0-v07`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: none new (fa1-v15's bench and handoff plates reused by name). All data in this video are fa1-v15's illustrative (simulated) data, labelled so on every table and graph; the report, poster, slide and review comments are coded documents invented for teaching and labelled so.
 
 Narration 5,924 characters, 15 scenes, about 546 s including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -190,7 +190,7 @@ Model answer: (a) "With a net force of 0.40 N, the trolley's mean acceleration w
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Series A (v15) | m = 1.00 kg; F_net 0.20, 0.40, 0.60, 0.80 N; a 0.21, 0.39, 0.61, 0.79 m s⁻² (±0.05) | 1 to 3, 7, 8, 13 |
-| Gradient (v15) | 1.0 kg⁻¹; balance 1.00 kg; steepest and shallowest 0.93 to 1.1 kg (on screen only, small) | 3 |
+| Gradient (v15) | 1.0 kg⁻¹; balance 1.00 kg; steepest and shallowest gradients 1.08 and 0.90 kg⁻¹, giving an inferred mass range of 0.93 to 1.1 kg (1 ÷ 1.08 = 0.926, 1 ÷ 0.90 = 1.11; on screen only, small) | 3 |
 | Friction limit (v15) | leftover force ≲ 0.02 N at 1.00 kg | 3 |
 | Draft sentence | 0.8, 0.79; repaired 0.80 N, 0.79 m s⁻² | 4 |
 | Scientific notation | 0.000 65 s = 6.5 × 10⁻⁴ s | 4 |
@@ -298,3 +298,10 @@ Builds on: The force, mass and acceleration investigation. Next: Forces on accel
 
 - Revision 1 has had no independent review. Next: student learning review (trace from fa1-v15 at Year 11 entry and, for open decision 1's alternative, from the course end; check that the claim meter makes "too much" and "too little" visible, not told; that the four slots tie to the graph rather than float as a template; that the sentence repairs are one at a time with their reasons; that the peer review prediction lands without implying reviews are worthless; that the media and audience scenes keep the evidence fixed on screen; that the cards give nothing away), then the Codex physics check and error check.
 - The claim markers sliding (2), the slots tied to the line and bars (2, 3), the word-by-word repair (4), the margin notes changing the report (6) and the same live graph on two documents (8) carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (5 November 2026, brief 169 repairs)
+
+Findings from `checks/p-y11-fa0-v07-learning-review.md` and `checks/p-y11-fa0-v07-science-check.md`.
+
+- Should fix 1 (Numbers used): the gradient row now gives the steepest and shallowest gradients 1.08 and 0.90 kg⁻¹ and labels 0.93 to 1.1 kg as the inferred mass range (1 ÷ 1.08 = 0.926; 1 ÷ 0.90 = 1.11). No spoken change.
+- Narration count: 5,924 characters (scene narration only, ** removed, joins excluded; narration unchanged), estimated about 546.0 s with the stated holds.

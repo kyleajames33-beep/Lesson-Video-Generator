@@ -1,6 +1,6 @@
 # Year 11 Physics FA2 V25 (Physics 2025, Year 11, Focus Area 2): How do curved lenses bend light so spectacles can sharpen blurry vision? (design)
 
-Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v25`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: four new (two loose lenses, two pairs of spectacles); three Biology Module 8 eye cutaway plates reused by name (root decision 20, cross-subject reuse).
+Status: Revision 3 (5 Nov 2026): brief 173 fixes applied (four cues retied); needs the Codex error check of Revision 3. Previously Revision 2 (5 Nov, brief 164 repairs) and Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v25`, `docs/production/student-learning-review.md`), a Codex physics check and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: four new (two loose lenses, two pairs of spectacles); three Biology Module 8 eye cutaway plates reused by name (root decision 20, cross-subject reuse).
 
 Narration 6,218 characters, 18 scenes, about 569 s (9.5 minutes) including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -79,12 +79,12 @@ Visual: camera continue: v24's convex lens outline grows into a large coded conv
 ### 3. converging lens: focal point and focal length
 > In a lens that's thicker in the middle, every outer strip is a wedge with its thick end pointing in. So outer rays bend inwards, and the further out a ray hits, the steeper its wedge, and the more it **bends**. Parallel rays all meet at one point, the focal point, F. The distance from the centre of the lens to F is the focal length. It's a converging lens: it brings rays together. A more curved lens has steeper wedges, so it bends more, and its focal length is **shorter**.
 
-Visual: the wedge slides back into the lens; the strips close. `ThinLensRays`: five parallel rays from the left (tag "thin lens drawing", grey, first time only). On "bend down" the top ray bends down; on "bend up" the bottom ray bends up; on "bends" the outer rays' turn arcs show larger than the inner ones'. On "focal point" all five meet at a gold dot labelled "F"; gloss "converging: brings rays together". On "focal length" a navy bracket from the lens centre to F labelled "focal length, f". The loose converging lens plate (`phys-y11-lens-converging-v1.png`) appears small in the right column with the label "converging lens". On "more curved" the coded lens bulges more; on "shorter" F slides towards the lens and the bracket shortens (readout "f shorter").
+Visual: the wedge slides back into the lens; the strips close. `ThinLensRays`: five parallel rays from the left (tag "thin lens drawing", grey, first time only). On "outer rays bend inwards" the top ray bends down and the bottom ray bends up; on "bends" the outer rays' turn arcs show larger than the inner ones'. On "focal point" all five meet at a gold dot labelled "F"; gloss "converging: brings rays together". On "focal length" a navy bracket from the lens centre to F labelled "focal length, f". The loose converging lens plate (`phys-y11-lens-converging-v1.png`) appears small in the right column with the label "converging lens". On "more curved" the coded lens bulges more; on "shorter" F slides towards the lens and the bracket shortens (readout "f shorter").
 
 ### 4. diverging lens: a virtual focal point
 > Now flip the shape. A lens that's thinner in the middle has wedges with their thick ends pointing out. So the rays bend outwards. It's a diverging lens. Trace the spreading rays backwards, and they seem to come from one point on the same side as the incoming light. No light actually passes through that point, so it's a virtual focal **point**. A screen behind this lens just shows a growing patch of light.
 
-Visual: the coded lens morphs to a diverging cross-section (thin centre, thick rims); the strips flash once with their wedges flipped (thick ends outward). On "spread apart" the five parallel rays bend outward. Gloss "diverging: spreads rays apart". The loose diverging lens plate (`phys-y11-lens-diverging-v1.png`) appears under the converging one in the right column. On "backwards" dashed navy back-traces run left from the spreading rays and meet at a hollow navy dot "F (virtual)" on the incoming side. On "point" a gloss "virtual: the rays only seem to come from here". On "screen" a coded white screen line slides along behind the lens and the lit patch on it grows; no point ever forms (tag "no real focus").
+Visual: the coded lens morphs to a diverging cross-section (thin centre, thick rims); the strips flash once with their wedges flipped (thick ends outward). On "bend outwards" the five parallel rays bend outward. Gloss "diverging: spreads rays apart". The loose diverging lens plate (`phys-y11-lens-diverging-v1.png`) appears under the converging one in the right column. On "backwards" dashed navy back-traces run left from the spreading rays and meet at a hollow navy dot "F (virtual)" on the incoming side. On "point" a gloss "virtual: the rays only seem to come from here". On "screen" a coded white screen line slides along behind the lens and the lit patch on it grows; no point ever forms (tag "no real focus").
 
 ### 5. the eye: a converging system with a screen
 > Your eye is a converging system with a screen at the back. Light first meets the cornea, the clear curved front, which does about two thirds of the bending. The lens inside adds the rest. The screen is the retina, the light-sensitive layer at the back. Light from a distant object arrives as nearly parallel rays, and in a healthy, relaxed eye, they meet exactly on the **retina**.
@@ -149,7 +149,7 @@ Visual: card shrinks to the top; "short-sighted" and "3 mm in front" underlined.
 ### 17. handoff
 > So spectacles work by moving the focus. A diverging lens moves it back for short sight, and a converging lens moves it forward for long sight. But so far, that's a prediction from ray diagrams. How can a model eye on an optical bench show that spectacles work by moving the focus back onto the **retina**?
 
-Visual: the memory line returns small at the top. Board: the coded short-sighted eye with the diverging spectacle lens in front and the focus on the retina (teal). On "prediction" a grey chip "prediction from ray diagrams". On "test it" a faint coded optical bench line slides in beneath, with chips "lamp", "lens", "screen = retina?". On "retina" the chip "Next: How can a model eye on an optical bench show that spectacles work by moving the focus back onto the retina?". This is the final frame of the video (series rule). Hold about 2 seconds.
+Visual: the memory line returns small at the top. Board: the coded short-sighted eye with the diverging spectacle lens in front and the focus on the retina (teal). On "prediction" a grey chip "prediction from ray diagrams". On "optical bench" a faint coded optical bench line slides in beneath, with chips "lamp", "lens", "screen = retina?". On "retina" the chip "Next: How can a model eye on an optical bench show that spectacles work by moving the focus back onto the retina?". This is the final frame of the video (series rule). Hold about 2 seconds.
 
 ### 18. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -303,3 +303,12 @@ Builds on: Measuring refractive index (previous video). Next: The spectacles inv
 - Should fix 2 (both reviews): "So here's the rule for any lens" becomes "So for a glass lens in air, light bends towards the thick part." The memory line stays short; the memory-aid check already records the n > 1 condition. The YouTube blurb drops "always".
 - Funding: scene 4 "only ever shows" becomes "just shows".
 - Narration count: 6,214 characters (build parser rule), about 569 s with the stated holds (4 characters shorter than the reviewed 6,218).
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `checks/p-y11-fa2-v25-error-check.md`.
+
+- Scene 3: "bend down" and "bend up" merged into one event on "outer rays bend inwards" (top ray bends down, bottom ray bends up).
+- Scene 4: "spread apart" retied to "bend outwards".
+- Scene 17: "test it" retied to "optical bench".
+- Narration count: 6,197 characters (scene narration only, ** removed, joins excluded), estimated about 569 s with the stated holds. Narration unchanged; visual/event instructions only.

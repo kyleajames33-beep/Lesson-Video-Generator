@@ -1,6 +1,6 @@
 # Year 11 Physics FA2 V24 (Physics 2025, Year 11, Focus Area 2): How can a graph determine a material's refractive index and its uncertainty? The refractive index investigation (design)
 
-Status: Revision 2 (5 Nov 2026), brief 164 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v24`, `docs/production/student-learning-review.md`), a Codex physics check (including the safety facts) and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: no new plate (v18's ray box and glass block, v23's set square, the existing protractor and low-voltage supply). All data in this video are illustrative and labelled so.
+Status: Revision 3 (5 Nov 2026): brief 173 fixes applied (scene 4 events reordered to follow speech); needs the Codex error check of Revision 3. Previously Revision 2 (5 Nov, brief 164 repairs) and Revision 1 (3 Nov). Needs independent student learning review (key `p-y11-fa2-v24`, `docs/production/student-learning-review.md`), a Codex physics check (including the safety facts) and a Codex error check before build. Voice: Google AI Studio after the brief 124 pilot; physics follows Year 12 Maths and Year 11 Biology in the voicing queue. Nothing recorded; human listening pending. Plates: no new plate (v18's ray box and glass block, v23's set square, the existing protractor and low-voltage supply). All data in this video are illustrative and labelled so.
 
 Narration 6,211 characters, 18 scenes, about 569 s (9.5 minutes) including two 3 s prediction countdowns, two 10 s attempt countdowns and the notes hold, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -104,7 +104,7 @@ Visual: camera push to the paper: the ray box plate on the low-voltage supply pl
 ### 4. a better method, and repeats
 > This time we improve on our refraction investigation: a narrower slit, dots at least eight centimetres apart, a set square for each normal, and angles read to half a degree. Each angle is traced three times. These numbers are illustrative, made up to show the method, not real results. At thirty degrees, the angle of refraction comes out at nineteen, nineteen and a half, and twenty degrees. The mean is nineteen and a half, and half the range gives plus or minus zero point five **degrees**.
 
-Visual: a list writes at the right, each item with a grey tag "(v20 limit)" crossed through: "narrower slit", "dots ≥ 8 cm apart (v23)", "set square for each normal" (the set square plate `phys-y11-set-square-v1.png` slides along the face), "read to 0.5°". On "illustrative" a large grey banner "illustrative data: not real results" writes and shrinks to a corner tag that stays on every data item to the end of scene 11. On "three times" three traces at 30° overlay on the paper, almost together. Three dots land on a short number line "19.0", "19.5", "20.0"; a bracket; on "degrees" rows "mean θ₂ = 19.5°", "± ½ range = ± 0.5°", boxed "θ₂ = 19.5 ± 0.5°".
+Visual: a list writes at the right, each item with a grey tag "(v20 limit)" crossed through: "narrower slit", "dots ≥ 8 cm apart (v23)", "set square for each normal" (the set square plate `phys-y11-set-square-v1.png` slides along the face), "read to 0.5°". On "three times" three traces at 30° overlay on the paper, almost together. On "illustrative" a large grey banner "illustrative data: not real results" writes and shrinks to a corner tag that stays on every data item to the end of scene 11. Three dots land on a short number line "19.0", "19.5", "20.0"; a bracket; on "degrees" rows "mean θ₂ = 19.5°", "± ½ range = ± 0.5°", boxed "θ₂ = 19.5 ± 0.5°".
 
 ### 5. the table
 > The table turns every angle into a sine. At thirty degrees, sin theta one is zero point five oh oh, and sin of nineteen and a half is zero point three three four. The uncertainty carries through, too, so sin theta two is zero point three three four, plus or minus zero point oh oh eight, ready to plot as a **bar**.
@@ -338,3 +338,10 @@ Builds on: Measuring refractive index (previous video). Next: Lenses and vision.
 - Should fix 3 (science check only): the horizontal-only simplification needed a justified smaller θ₁ uncertainty. The incident line is drawn once with a protractor read to half a degree, so θ₁ carries ± 0.25° reading uncertainty. Its sine bars (0.0038 at 30°) are under half the horizontal ones (0.0082), so root decision 24 stands. Scene 6 says "the **main** uncertainty is in sin theta two", the graph carries the grey note, and author note (c) holds the numbers. Root to confirm this justification.
 - Consistency with v19's Revision 2 scope: feedback 2 says "because glass has n more than **one**", replacing "n is never less than one"; the model answer and attempt note match. Funded by "One more matters here: the block is handled" in scene 12.
 - Narration count: 6,209 characters (build parser rule), about 569 s with the stated holds (2 characters shorter than the reviewed 6,211).
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `checks/p-y11-fa2-v24-error-check.md`.
+
+- Scene 4: the "three times" event (three traces at 30°) now comes before the "illustrative" banner, matching the spoken order.
+- Narration count: 6,192 characters (scene narration only, ** removed, joins excluded), estimated about 569 s with the stated holds. Narration unchanged; visual/event instructions only.
