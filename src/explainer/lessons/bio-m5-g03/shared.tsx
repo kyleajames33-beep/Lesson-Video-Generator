@@ -173,10 +173,10 @@ export const Traces: React.FC<{x: number; y: number; w: number; h: number; trace
 			<line x1={x} y1={y + h} x2={x + w} y2={y + h} stroke={INK} strokeWidth={3} />
 			<line x1={x} y1={y} x2={x} y2={y + h} stroke={INK} strokeWidth={3} />
 			{[0, 1, 2, 3, 4, 5].map(k => (k * max) / 5).map(v => (
-				<g key={v}><line x1={x - 8} y1={Y(v)} x2={x} y2={Y(v)} stroke={INK} strokeWidth={2} /><text x={x - 14} y={Y(v) + 8} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 20}} fill={INK_SOFT}>{v.toFixed(1)}</text></g>
+				<g key={v}><line x1={x - 8} y1={Y(v)} x2={x} y2={Y(v)} stroke={INK} strokeWidth={2} /><text x={x - 14} y={Y(v) + 8} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 26}} fill={INK_SOFT}>{v.toFixed(1)}</text></g>
 			))}
-			<text x={x - 52} y={y + h / 2} textAnchor="middle" transform={`rotate(-90 ${x - 52} ${y + h / 2})`} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 20}} fill={INK_SOFT}>allele frequency</text>
-			<text x={x + w / 2} y={y + h + 34} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 22}} fill={INK_SOFT}>generations (0 to {gens})</text>
+			<text x={x - 64} y={y + h / 2} textAnchor="middle" transform={`rotate(-90 ${x - 64} ${y + h / 2})`} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 26}} fill={INK_SOFT}>allele frequency</text>
+			<text x={x + w / 2} y={y + h + 34} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT}>generations (0 to {gens})</text>
 			<line x1={x} y1={Y(traces[0][0])} x2={x + w} y2={Y(traces[0][0])} stroke={INK_SOFT} strokeWidth={2} strokeDasharray="6 6" />
 			{traces.map((t, i) => {
 				const upto = Math.max(1, Math.floor(p * gens));

@@ -4,9 +4,10 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
+import {PLB} from './big';
 import {
 	AMBER, AMBER_INK, CARD, DotArray, DrawPath, EDGE, Fade, GREYT, GreyTag, HandText, Heading, ICELAND_PTS, INK, INK_SOFT, LandChip, MistakeChip, Overlay, PSym,
-	Panel, Pedigree, PlainArrow, PopBar, QMark, Ring, S, Sx, TEAL, Tick, CF, pedXY, prog, pulse,
+	Panel, Pedigree, PlainArrow, PlateB, PopBar, QMark, Ring, S, Sx, TEAL, Tick, CF, lerp, pedXY, prog, pulse,
 } from './shared';
 import type {PLay, Ped} from './shared';
 
@@ -24,50 +25,63 @@ export const FAM: Ped = {
 	],
 	fams: [{a: 'I-1', b: 'I-2', kids: ['II-2', 'II-3', 'II-4']}, {a: 'II-1', b: 'II-2', kids: ['III-1', 'III-2']}],
 };
-const L7: PLay = {x0: 400, y0: 290, gap: 175, row: 220, sz: 66};
+const L7: PLay = {x0: 430, y0: 270, gap: 250, row: 265, sz: 92};
+// Quality fix: the whole family is drawn from the first word (the set-up), 1.3 times larger, with 40 px tags; the
+// 2003 ruling uses the painted bundle of health records and large pedigree symbols.
 export const SceneRelativesG03: React.FC = () => {
 	const f = useCurrentFrame();
 	const xy = pedXY(FAM, L7);
-	const appear = (id: string) => prog(f, id.startsWith('III') ? K7.children - 6 : id === 'II-3' || id === 'II-4' ? K7.bros - 6 : 0, 12);
-	const tag = (id: string, at: number) => { const [x, y] = xy(id); return <Sx key={id} x={x} y={y + 96} text="1 in 2" size={30} color={AMBER_INK} hand anchor="middle" at={at} />; };
+	const appear = () => prog(f, 0, 14);
+	const tag = (id: string, at: number) => { const [x, y] = xy(id); return <Sx key={id} x={x} y={y + 112} text="1 in 2" size={42} color={AMBER_INK} hand anchor="middle" at={at} />; };
 	const [wx, wy] = xy('II-2');
 	const [mx, my] = xy('I-2');
 	const spread = prog(f, K7.never, 30);
+	const [bx0, by0] = xy('II-1'), [bx1] = xy('II-4'), [, by1] = xy('III-2');
+	const R = {x0: bx0 - 90, y0: my - 90, x1: bx1 + 90, y1: by1 + 140};
+	const rx = lerp(wx - 70, R.x0, spread), ry = lerp(wy - 70, R.y0, spread);
+	const rw = lerp(140, R.x1 - R.x0, spread), rh = lerp(140, R.y1 - R.y0, spread);
+	void by0;
+	const mv = prog(f, K7.court - 24, 24);
+	const shift = lerp(380, 0, mv * mv * (3 - 2 * mv));
 	return (
 		<>
 			<Heading text="Risk is shared with relatives" at={K7.shared} size={54} />
 			<Overlay>
+				<g transform={`translate(${shift},0)`}>
 				<Pedigree ped={FAM} L={L7} o={appear} numerals={1} />
-				{/* carrier dots and the woman */}
-				<circle cx={wx} cy={wy} r={L7.sz * 0.16} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} opacity={prog(f, K7.woman, 10)} />
-				<Ring cx={wx} cy={wy} rx={54} ry={50} at={K7.woman + 6} />
-				<Sx x={wx} y={wy + 100} text="carries a BRCA1 variant" size={26} color={AMBER_INK} hand anchor="middle" at={K7.woman + 10} />
-				<circle cx={mx} cy={my} r={L7.sz * 0.16 * (1 + 0.5 * pulse(f, K7.parents, 30))} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} opacity={prog(f, K7.parents, 10)} />
-				<Sx x={mx + 60} y={my + 8} text="a parent almost certainly carries it" size={26} color={AMBER_INK} hand at={K7.parents + 6} />
-				<GreyTag x={mx + 60} y={my + 22} text="unless it arose new in her" at={K7.parents + 16} size={20} />
+				<circle cx={wx} cy={wy} r={L7.sz * 0.18} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} opacity={prog(f, K7.woman, 10)} />
+				<Ring cx={wx} cy={wy} rx={66} ry={62} at={K7.woman + 6} />
+				<Sx x={wx - 40} y={wy - 70} text="carries a BRCA1 variant" size={36} color={AMBER_INK} hand anchor="middle" at={K7.woman + 10} out={K7.children - 4} />
+				<circle cx={mx} cy={my} r={L7.sz * 0.18 * (1 + 0.5 * pulse(f, K7.parents, 30))} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} opacity={prog(f, K7.parents, 10)} />
+				<Sx x={mx + 70} y={my - 10} text="a parent almost" size={38} color={AMBER_INK} hand at={K7.parents + 6} />
+				<Sx x={mx + 70} y={my + 32} text="certainly carries it" size={38} color={AMBER_INK} hand at={K7.parents + 10} />
 				{['III-1', 'III-2'].map((id, i) => tag(id, K7.children + 10 + i * 6))}
 				{['II-3', 'II-4'].map((id, i) => tag(id, K7.bros + 10 + i * 6))}
-				<GreyTag x={140} y={880} text="B9: one in two per child" at={K7.children + 20} size={22} />
-				{spread > 0.01 ? <rect x={wx - 60 - spread * 260} y={wy - 60 - spread * 190} width={120 + spread * 820} height={120 + spread * 470} rx={40} fill="none" stroke={AMBER} strokeWidth={4} opacity={0.8} /> : null}
+				<Sx x={110} y={1046} text="each child: 1 in 2 (B9)" size={32} color={INK_SOFT} hand at={K7.children + 20} />
+				{spread > 0.01 ? <rect x={rx} y={ry} width={rw} height={rh} rx={40} fill="none" stroke={AMBER} strokeWidth={5} opacity={0.85} /> : null}
+				<Sx x={R.x0 + 20} y={R.y1 + 50} text="data about one person inform the family" size={38} color={AMBER_INK} hand at={K7.never + 20} />
+				</g>
 				{/* Iceland ruling */}
 				<g opacity={prog(f, K7.court, 14)}>
-					<Panel x={1200} y={230} w={640} h={560} />
-					<LandChip pts={ICELAND_PTS} x={1240} y={270} w={170} />
-					<Sx x={1440} y={300} text="2003" size={40} color={INK} weight={800} />
-					<Sx x={1440} y={344} text="Supreme Court of Iceland" size={28} color={INK} weight={700} />
-					{[0, 1, 2].map(i => <line key={i} x1={1240} y1={420 + i * 22} x2={1800} y2={420 + i * 22} stroke={INK_SOFT} strokeWidth={3} opacity={0.35} />)}
+					<Panel x={1200} y={180} w={660} h={840} />
+					<LandChip pts={ICELAND_PTS} x={1240} y={210} w={190} />
+					<Sx x={1460} y={260} text="2003" size={56} color={INK} weight={800} />
+					<Sx x={1460} y={310} text="Supreme Court of Iceland" size={34} color={INK} weight={700} />
+					<Sx x={1240} y={400} text="a planned national database" size={34} color={INK_SOFT} hand />
 				</g>
 				<g opacity={prog(f, K7.father, 12)}>
-					<PSym x={1360} y={560} sex="M" aff={false} sz={60} />
-					<Sx x={1360} y={630} text="father (deceased)" size={24} color={INK_SOFT} weight={600} anchor="middle" />
-					<rect x={1300} y={660} width={120} height={70} rx={8} fill={CARD} stroke={INK_SOFT} strokeWidth={2.5} />
-					{[0, 1, 2].map(i => <line key={i} x1={1314} y1={680 + i * 16} x2={1404} y2={680 + i * 16} stroke={INK_SOFT} strokeWidth={2.5} />)}
-					<Sx x={1360} y={756} text="his health records" size={22} color={INK_SOFT} weight={600} anchor="middle" />
+					<PSym x={1340} y={560} sex="M" aff={false} sz={90} />
+					<line x1={1290} y1={610} x2={1390} y2={510} stroke={INK} strokeWidth={4} />
+					<Sx x={1340} y={650} text="father (died)" size={32} color={INK} weight={600} anchor="middle" />
+					<PlateB p={PLB.files} cx={1360} cy={810} w={260} />
+					<Sx x={1360} y={950} text="his health records" size={34} color={INK} hand anchor="middle" />
 				</g>
-				<PSym x={1700} y={560} sex="F" aff={false} sz={60} o={prog(f, K7.father + 6, 12)} />
-				<Sx x={1700} y={630} text="daughter" size={24} color={INK_SOFT} weight={600} anchor="middle" at={K7.father + 6} />
-				<PlainArrow x1={1400} y1={560} x2={1660} y2={560} at={K7.reveal} color={AMBER_INK} width={5} />
-				<Sx x={1200} y={840} text="data about him reveal information about her" size={32} color={AMBER_INK} hand at={K7.reveal + 10} />
+				<PSym x={1720} y={560} sex="F" aff={false} sz={90} o={prog(f, K7.father + 6, 12)} />
+				<Sx x={1720} y={650} text="daughter" size={32} color={INK} weight={600} anchor="middle" at={K7.father + 6} />
+				<PlainArrow x1={1400} y1={560} x2={1660} y2={560} at={K7.reveal} color={AMBER_INK} width={6} />
+				<Sx x={1530} y={780} text="data about him" size={36} color={AMBER_INK} hand at={K7.reveal + 10} />
+				<Sx x={1530} y={824} text="reveal information" size={36} color={AMBER_INK} hand at={K7.reveal + 14} />
+				<Sx x={1530} y={868} text="about her" size={36} color={AMBER_INK} hand at={K7.reveal + 18} />
 			</Overlay>
 		</>
 	);

@@ -47,4 +47,6 @@ export const FEAT = {
 	airSide: [690, 1100] as [number, number],
 	airIn: [1000, 900] as [number, number],
 };
-export const ASSETS_M7B11: string[] = Array.from(new Set(Object.values(PLATES).map(p => p.src)));
+/** Quality fix (6 Nov 2026): the pig and hospital-bed plates for "using drugs well" (big.tsx PLX). */
+const QF = ['m6-pig-side-v1.png', 'm8-hospital-bed-v1.png', 'm6-antibiotic-colonies-before-v1.png', 'm6-antibiotic-colonies-after-v1.png'].map(f => B + f);
+export const ASSETS_M7B11: string[] = Array.from(new Set([...Object.values(PLATES).map(p => p.src), ...QF]));

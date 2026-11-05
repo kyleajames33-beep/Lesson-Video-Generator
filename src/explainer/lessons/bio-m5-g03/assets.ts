@@ -15,4 +15,6 @@ export const SPOT = B + 'm5x-newborn-blood-spot-card-v1.png';
 const DELIVERED: string[] = [];
 export const PENDING = [RACK, SPOT];
 export const HAVE = new Set<string>([...DELIVERED, ...PENDING]); // brief 70 delivered 18 Oct (2000 px), boxes re-measured
-export const ASSETS: string[] = [...DELIVERED, ...PENDING].filter(a => HAVE.has(a));
+/** Quality fix (6 Nov): plates added in big.tsx (pair, body cell, helix, repair enzyme, health records). */
+const B6 = ['cd-homologous-pair-loci-v1.png', 'b6a-animal-cell-v1.png', 'y11-dna-helix-v1.png', 'y11-enzyme-ligase-v1.png', 'm8-hospital-case-files-v1.png'].map(f => B + f);
+export const ASSETS: string[] = [...[...DELIVERED, ...PENDING].filter(a => HAVE.has(a)), ...B6];

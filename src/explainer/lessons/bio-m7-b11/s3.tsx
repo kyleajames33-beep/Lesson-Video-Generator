@@ -15,18 +15,18 @@ import {PLATES} from './assets';
 import {AMBER, AMBER_INK, CardBox, GREY_INK, GTag, MistakeChip, Pl, PlateB, StepChip, TEAL, TickMark, fitW, prog, tw, vis, wOfH} from './parts';
 
 // ---------- item 1: drug K ----------
-type T1 = {a: number; b: number; c: number; d: number; q: number};
-const STEM1 = (t: T1): QBlock[] => [
+export type T1 = {a: number; b: number; c: number; d: number; q: number};
+export const STEM1 = (t: T1): QBlock[] => [
 	{text: 'Virus V is an RNA virus. It copies its RNA genome using its own enzyme, V polymerase.', at: t.a},
 	{text: 'Human cells have no enzyme like V polymerase, so drug K does not bind to any human enzyme.', at: t.b},
 	{text: 'Drug K binds to V polymerase and blocks it.', at: t.c},
 	{text: 'A patient infected with virus V asks to be given penicillin instead of drug K.', at: t.d, para: true},
 ];
-const DEM1 = (t: T1, para = false): QBlock[] => [{text: 'Explain why drug K, but not penicillin, can treat this infection, and why drug K is most effective when taken soon after symptoms begin. (3 marks)', at: t.q, weight: 700, para}];
+export const DEM1 = (t: T1, para = false): QBlock[] => [{text: 'Explain why drug K, but not penicillin, can treat this infection, and why drug K is most effective when taken soon after symptoms begin. (3 marks)', at: t.q, weight: 700, para}];
 const ALL1: T1 = {a: -100, b: -100, c: -100, d: -100, q: -100};
 qCheck([...STEM1(ALL1), ...DEM1(ALL1)], ['its own enzyme, V polymerase', 'Human cells have no enzyme like V polymerase', 'penicillin', 'soon after symptoms begin'].map(phrase => ({phrase, at: 0})));
 
-const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', virus: 'Virus V copies', human: 'Human cells have', drug: 'Drug K blocks', patient: 'A patient infected', explain: 'Explain why drug', pause: 'Pause here to answer'});
+export const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', virus: 'Virus V copies', human: 'Human cells have', drug: 'Drug K blocks', patient: 'A patient infected', explain: 'Explain why drug', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
 	const t: T1 = {a: KA.virus, b: KA.human, c: KA.drug, d: KA.patient, q: KA.explain};
 	const h = hold('attempt');
@@ -89,18 +89,18 @@ const WorkRow: React.FC<{y: number; text: string; at: number; lit: number; color
 };
 
 // ---------- item 2: one drug or three ----------
-type T2 = {a: number; b: number; c: number; d: number; q: number};
-const STEM2 = (t: T2): QBlock[] => [
+export type T2 = {a: number; b: number; c: number; d: number; q: number};
+export const STEM2 = (t: T2): QBlock[] => [
 	{text: 'In an untreated patient, virus W produces about 10 000 000 000 (10¹⁰) new virus particles each day.', at: t.a},
 	{text: 'About 1 in every 100 000 new particles (a probability of 10⁻⁵) carries resistance to drug A.', at: t.b},
 	{text: 'The same is true for drug B and for drug C.', at: t.c},
 	{text: "Resistance to each drug arises independently, and each drug blocks a different step in the virus's replication.", at: t.d},
 ];
-const DEM2 = (t: T2, para = false): QBlock[] => [{text: 'Explain why treatment with drugs A, B and C together is more effective than treatment with drug A alone. (3 marks)', at: t.q, weight: 700, para}];
+export const DEM2 = (t: T2, para = false): QBlock[] => [{text: 'Explain why treatment with drugs A, B and C together is more effective than treatment with drug A alone. (3 marks)', at: t.q, weight: 700, para}];
 const ALL2: T2 = {a: -100, b: -100, c: -100, d: -100, q: -100};
 qCheck([...STEM2(ALL2), ...DEM2(ALL2)], ['about 10 000 000 000 (10¹⁰)', '1 in every 100 000', 'arises independently'].map(phrase => ({phrase, at: 0})));
 
-const KC = cues(S('attempt-two'), {second: 'Second', untreated: 'In an untreated', about: 'About one particle', same: 'The same is', arises: 'arises separately', explain: 'Explain why treating', pause: 'Pause here to answer'});
+export const KC = cues(S('attempt-two'), {second: 'Second', untreated: 'In an untreated', about: 'About one particle', same: 'The same is', arises: 'arises separately', explain: 'Explain why treating', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
 	const t: T2 = {a: KC.untreated, b: KC.about, c: KC.same, d: KC.arises - 20, q: KC.explain};
 	const h = hold('attempt-two');
