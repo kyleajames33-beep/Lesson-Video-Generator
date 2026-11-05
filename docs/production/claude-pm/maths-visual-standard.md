@@ -40,3 +40,15 @@ Painted plates are allowed and expected for the anchor and any real object. Use 
 - The other 66 maths designs are audited against this bar (`checks/maths-visual-standard-audit.md`) and upgraded in waves after the pilot is accepted.
 - Narration may change where an anchor needs it. Re-voice only the changed scenes on the Google voice; keep unchanged takes.
 - The same bar applies to Year 11 Chemistry and Year 12 Physics designs. Those designs already use plates, but they are checked against items 2 to 9.
+
+## Build gate (every course, from 6 November)
+
+- **One pilot per course.** The first build in each new course (Maths, Year 11 Chemistry, Year 12 Physics, Year 11 Biology and Physics) is rendered alone and shown to the owner. No further builds in that course start until the owner accepts it.
+- **Contact-sheet check before every full render.** Make a 16-frame contact sheet (evenly spaced) from the short pilot or stills. Place it beside `assets/maths-std-ref-chem-m5-g01.jpg` and record the result in the build report.
+- **Any of these blocks the render:**
+  - text a student must read below about 26 px at 1080p;
+  - a current working line below about 44 px;
+  - one unchanged visual set-up for more than about 90 s;
+  - more than about 40% of the frame empty during a worked step;
+  - key notes written as paragraphs;
+  - a design-requested plate missing or replaced by a coded stand-in.
