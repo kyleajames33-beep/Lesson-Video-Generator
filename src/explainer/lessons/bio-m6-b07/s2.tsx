@@ -27,7 +27,7 @@ export const SceneOneGen: React.FC = () => {
 	const f = useCurrentFrame();
 	const leftDim = 1 - 0.6 * prog(f, K6.almost, 14);
 	const glow = prog(f, K6.almost, 14);
-	const BX0 = 170, BX1 = 850, BY = 520;
+	const BX0 = 370, BX1 = 870, BY = 520;
 	return (
 		<>
 			<Heading text="How much in one generation?" at={4} size={60} />
@@ -35,25 +35,37 @@ export const SceneOneGen: React.FC = () => {
 				{/* left: new mutations in one child */}
 				<g opacity={leftDim * prog(f, K6.humans, 14)}>
 					<rect x={110} y={230} width={800} height={580} rx={24} fill="#fffdf8" stroke={EDGE} strokeWidth={3} />
-					<Sx x={510} y={300} text="new mutations per child" size={38} color={INK} hand anchor="middle" />
-					<rect x={BX0} y={BY - 12} width={BX1 - BX0} height={24} rx={12} fill="#ece3d1" stroke={INK_SOFT} strokeWidth={2} />
-					{TICKS.map((t, k) => <line key={k} x1={lerp(BX0 + 8, BX1 - 8, t)} y1={BY - 20} x2={lerp(BX0 + 8, BX1 - 8, t)} y2={BY + 20} stroke={AMBER} strokeWidth={2.2} opacity={prog(f, K6.sixty + k * 0.7, 6)} />)}
-					<Sx x={510} y={680} text="about 60 to 70" size={64} color={AMBER_INK} weight={800} anchor="middle" at={K6.sixty + 10} />
+					<Sx x={510} y={300} text="new mutations per child" size={44} color={INK} hand anchor="middle" />
+					<PlateB p={PLATES.pair} cx={260} cy={470} w={150} />
+					<rect x={BX0} y={BY - 26} width={BX1 - BX0} height={52} rx={26} fill="#ece3d1" stroke={INK_SOFT} strokeWidth={3} />
+					{TICKS.map((t, k) => <line key={k} x1={lerp(BX0 + 12, BX1 - 12, t)} y1={BY - 40} x2={lerp(BX0 + 12, BX1 - 12, t)} y2={BY + 40} stroke={AMBER} strokeWidth={3.2} opacity={prog(f, K6.sixty + k * 0.7, 6)} />)}
+					<Sx x={510} y={700} text="about 60 to 70" size={72} color={AMBER_INK} weight={800} anchor="middle" at={K6.sixty + 10} />
 				</g>
-				<Tg x={510} y={455} text="about 6 billion bases" at={K6.six} out={K6.meanwhile + 20} anchor="middle" size={36} color={INK_SOFT} />
-				<Tg x={510} y={750} text="new in this child" at={K6.sixty + 30} out={K6.almost + 20} anchor="middle" size={36} />
+				<Tg x={620} y={420} text="parent and child DNA, read and compared" at={K6.humans + 10} out={K6.six} anchor="middle" size={34} color={INK_SOFT} />
+				<Tg x={620} y={420} text="about 6 billion bases" at={K6.six} out={K6.meanwhile + 20} anchor="middle" size={42} color={INK_SOFT} />
+				<Tg x={510} y={770} text="new in this child" at={K6.sixty + 30} out={K6.almost + 20} anchor="middle" size={42} />
 				{/* right: combinations per parent */}
-				<g opacity={prog(f, K6.meanwhile, 14)}>
+				<g opacity={0.4 * prog(f, K6.humans + 20, 14) + 0.6 * prog(f, K6.meanwhile, 14)}>
 					<rect x={1010} y={230} width={800} height={580} rx={24} fill={glow > 0.5 ? '#fff6e0' : '#fffdf8'} stroke={glow > 0.5 ? AMBER : EDGE} strokeWidth={glow > 0.5 ? 4 : 3} />
-					<Sx x={1410} y={300} text="combinations per parent" size={38} color={INK} hand anchor="middle" />
-					<PlateB p={PLATES.dish} cx={1170} cy={470} w={210} />
+					<Sx x={1410} y={300} text="combinations per parent" size={44} color={INK} hand anchor="middle" />
+					<PlateB p={PLATES.dish} cx={1180} cy={470} w={240} />
 				</g>
 				<g opacity={prog(f, K6.millions, 12)}>
-					<Chromatid x={1420} y={340} L={290} w={30} pieces={[{t0: 0, t1: 1, set: 'rose'}]} loci={PAIR_R.map((l, i) => ({t: PAIR_Y[i], l}))} beadR={12} />
-					<Chromatid x={1480} y={340} L={290} w={30} pieces={[{t0: 0, t1: 1, set: 'teal'}]} loci={PAIR_T.map((l, i) => ({t: PAIR_Y[i], l}))} beadR={12} />
-					{PAIR_R.map((l, i) => (l !== PAIR_T[i] ? <circle key={i} cx={1550} cy={340 + PAIR_Y[i] * 290} r={5} fill={INK_SOFT} opacity={prog(f, K6.millions + 10 + i * 3, 8)} /> : null))}
+					<PlateB p={PLATES.pair} cx={1430} cy={470} w={170} />
+					{PAIR_R.slice(0, 4).map((l, i) => {
+						const diff = l !== PAIR_T[i];
+						const y = 375 + i * 62;
+						return (
+							<g key={i} opacity={prog(f, K6.millions + 6 + i * 4, 8)}>
+								<ABead x={1590} y={y} l={l} r={24} />
+								<ABead x={1650} y={y} l={PAIR_T[i]} r={24} />
+								{diff ? <circle cx={1620} cy={y} r={52} fill="none" stroke={AMBER} strokeWidth={4} opacity={prog(f, K6.millions + 24 + i * 4, 8)} /> : null}
+							</g>
+						);
+					})}
+					<Sx x={1740} y={560} text="differ" size={34} color={AMBER_INK} hand at={K6.millions + 30} />
 				</g>
-				<Ticker x={1410} y={700} from={0} to={COMB} a={K6.eight} b={K6.eight + 40} size={56} anchor="middle" prefix="2^{23} = " at={K6.eight - 4} />
+				<Ticker x={1410} y={700} from={0} to={COMB} a={K6.eight} b={K6.eight + 40} size={64} anchor="middle" prefix="2^{23} = " at={K6.eight - 4} />
 				<g opacity={prog(f, K6.before, 12)}>
 					<path d="M1640,450 a26,26 0 1 1 -8,-18" fill="none" stroke={INK_SOFT} strokeWidth={4} />
 					<path d="M1626,420 l8,12 l-14,4" fill="none" stroke={INK_SOFT} strokeWidth={4} strokeLinejoin="round" />
@@ -110,7 +122,7 @@ export const SceneUltimate: React.FC = () => {
 				<Tg x={550} y={800} text="lost alleles not made again" at={K7.lost + 26} out={K7.finches} anchor="middle" size={42} />
 				{/* the island board returns small */}
 				<g opacity={mini}>
-					<Finch deep cx={1240} cy={790} w={130} plates={FP} />
+					<Finch deep cx={1200} cy={800} w={210} plates={FP} />
 					<DotStrip x0={1360} x1={1800} y={845} dots={[0.4, 0.53, 0.6, 0.66, 0.72, 0.8, 0.88].map(v => ({v}))} r={8} />
 					<DotStrip x0={1360} x1={1800} y={905} dots={[0.2, 0.35, 0.5, 0.62, 0.7, 0.82, 0.9].map(v => ({v}))} r={8} />
 					<DrawPath d="M1350,915 C1150,1000 900,990 700,945" at={K7.finches + 10} dur={30} color={AMBER} width={4} dash="6 8" />
@@ -125,18 +137,18 @@ export const SceneUltimate: React.FC = () => {
 // ---------- 8. Without meiosis or fertilisation ----------
 const K8 = cues(S('asexual'), {what: 'What about organisms', bact: 'A bacterium copies', splits: 'splits in two', clones: 'are clones', except: 'except for any new mutations', huge: 'huge numbers', pick: 'pick up genes', plasmids: 'on plasmids', asex: 'reproduce asexually', mut: 'mutation and gene transfer', not: 'not from meiosis'});
 const GEN: {x: number; ys: number[]; w: number}[] = [
-	{x: 230, ys: [560], w: 170},
-	{x: 500, ys: [420, 700], w: 140},
-	{x: 770, ys: [350, 490, 630, 770], w: 116},
-	{x: 1040, ys: [315, 385, 455, 525, 595, 665, 735, 805], w: 92},
+	{x: 210, ys: [560], w: 230},
+	{x: 490, ys: [400, 720], w: 190},
+	{x: 770, ys: [320, 480, 640, 800], w: 150},
+	{x: 1040, ys: [290, 370, 450, 530, 610, 690, 770, 850], w: 118},
 ];
 const RINGED = (g: number, j: number) => (g === 2 && j === 1) || (g === 3 && (j === 2 || j === 3));
-const FIELD = popGrid(36, 6, 1290, 330, 88, 74, 9, 0.35);
-const FIELD_RING = [4, 13, 22, 31];
+const FIELD = popGrid(24, 4, 1260, 320, 140, 96, 9, 0.3);
+const FIELD_RING = [2, 9, 14, 21];
 export const SceneAsexual: React.FC = () => {
 	const f = useCurrentFrame();
 	const genAt = [K8.bact, K8.splits + 6, K8.splits + 40, K8.clones + 4];
-	const treeO = 1 - 0.65 * prog(f, K8.huge, 14);
+	const treeO = 1 - 0.25 * prog(f, K8.huge, 14);
 	const fieldO = prog(f, K8.huge + 6, 10) * (1 - prog(f, K8.pick, 14));
 	const slide = smooth(prog(f, K8.plasmids, 30));
 	const [px, py] = platePt(PLATES.plasmid, 1360, 520, 320, 1164, 948);
@@ -162,13 +174,13 @@ export const SceneAsexual: React.FC = () => {
 						);
 					}))}
 				</g>
-				<Tg x={1140} y={260} text="clones" at={K8.clones + 10} out={K8.huge} size={42} />
+				<Tg x={1180} y={260} text="clones" at={K8.clones + 10} out={K8.huge} size={50} />
 				{FIELD.map(([x, y], k) => (
 					<g key={k} opacity={fieldO * prog(f, K8.huge + 6 + k * 1.2, 6)}>
-						<Bact cx={x} cy={y} w={62} ring={FIELD_RING.includes(k) ? 'new' : undefined} r={8} />
+						<Bact cx={x} cy={y} w={124} ring={FIELD_RING.includes(k) ? 'new' : undefined} r={14} />
 					</g>
 				))}
-				<Tg x={1540} y={880} text="many divisions: many chances" at={K8.huge + 20} out={K8.pick} anchor="middle" size={40} />
+				<Tg x={1530} y={900} text="many divisions: many chances" at={K8.huge + 20} out={K8.pick} anchor="middle" size={46} />
 				{/* gene transfer */}
 				<g opacity={prog(f, K8.pick, 14)}>
 					<PlateB p={PLATES.plasmid} cx={1360} cy={520} w={320} />
@@ -191,30 +203,34 @@ const K9 = cues(S('memory'), {heres: "Here's a way", deck: 'deck of cards', prin
 const HAND1 = ['A', 'b', 'C'], HAND2 = ['a', 'B', 'c'];
 export const SceneMemory: React.FC = () => {
 	const f = useCurrentFrame();
-	const dimL = 1 - 0.6 * prog(f, K9.one, 14);
+	const dimL = 1 - 0.75 * prog(f, K9.one, 14);
 	const deal = smooth(prog(f, K9.deals + 6, 30));
 	const join = smooth(prog(f, K9.puts + 10, 30));
-	const DX = 280, DY = 790;
+	const DX = 330, DY = 700, CS = 1.9;
 	return (
 		<>
 			<Heading text="The deck of cards" at={K9.heres} size={60} />
 			<Overlay>
+				{/* each line labels its own action on the cards */}
 				<g opacity={dimL}>
-					<Sx x={200} y={320} text="Mutation: prints a new card" size={54} color={AMBER_INK} hand at={K9.prints} />
-					<Sx x={200} y={410} text="Meiosis: deals each gamete a hand" size={54} color={INK} hand at={K9.deals} />
-					<Sx x={200} y={500} text="Fertilisation: two hands together" size={54} color={INK} hand at={K9.puts} />
+					<Sx x={DX} y={470} text="Mutation:" size={52} color={AMBER_INK} hand anchor="middle" at={K9.prints} />
+					<Sx x={DX} y={530} text="prints a new card" size={52} color={AMBER_INK} hand anchor="middle" at={K9.prints} />
+					<Sx x={1130} y={400} text="Meiosis: deals each gamete a hand" size={52} color={INK} hand anchor="middle" at={K9.deals} />
+					<Sx x={1130} y={480} text="Fertilisation: two hands together" size={52} color={BIO_INK} hand anchor="middle" at={K9.puts} />
 				</g>
 				{/* the deck */}
 				<g opacity={prog(f, K9.deck, 14)}>
-					{[0, 1, 2, 3, 4].map(k => <Card key={k} x={DX - 8 + k * 4} y={DY + 8 - k * 4} t="" />)}
-					<Card x={DX + 12} y={DY - 12} t="C" amber={prog(f, K9.prints + 8, 8)} />
+					{[0, 1, 2, 3, 4].map(k => <Card key={k} x={DX - 16 + k * 8} y={DY + 16 - k * 8} t="" s={CS} />)}
+					<Card x={DX + 24} y={DY - 24} t="C" amber={prog(f, K9.prints + 8, 8)} s={CS} />
 				</g>
 				{/* the two hands */}
-				{HAND1.map((t, k) => <Card key={'h1' + k} x={lerp(DX, lerp(700, 860, join) + k * 70, deal)} y={lerp(DY, DY, deal)} t={t} rot={(k - 1) * 8 * deal} o={deal} amber={t === 'C' ? 1 : 0} />)}
-				{HAND2.map((t, k) => <Card key={'h2' + k} x={lerp(DX, lerp(1240, 1080, join) + k * 70, deal)} y={DY} t={t} rot={(k - 1) * 8 * deal} o={deal} />)}
-				<Brace x1={790} x2={1290} y={700} at={K9.one + 6} label="one generation: the dealing" size={46} />
-				<Brace x1={200} x2={380} y={880} at={K9.long + 6} down label="" size={40} />
-				<Sx x={160} y={950} text="long term: every card was once new" size={46} color={AMBER_INK} hand at={K9.long + 14} />
+				{HAND1.map((t, k) => <Card key={'h1' + k} x={lerp(DX, lerp(780, 840, join) + k * 120, deal)} y={DY} t={t} rot={(k - 1) * 8 * deal * (1 - join)} o={deal} amber={t === 'C' ? 1 : 0} s={CS} />)}
+				{HAND2.map((t, k) => <Card key={'h2' + k} x={lerp(DX, lerp(1420, 1200, join) + k * 120, deal)} y={DY} t={t} rot={(k - 1) * 8 * deal * (1 - join)} o={deal} s={CS} />)}
+				<Sx x={900} y={890} text="gamete 1" size={34} color={INK_SOFT} hand anchor="middle" at={K9.deals + 30} out={K9.puts + 10} />
+				<Sx x={1540} y={890} text="gamete 2" size={34} color={INK_SOFT} hand anchor="middle" at={K9.deals + 30} out={K9.puts + 10} />
+				<Brace x1={760} x2={1520} y={860} at={K9.one + 6} down label="one generation: the dealing" size={50} />
+				<Brace x1={230} x2={430} y={860} at={K9.long + 6} down label="" size={40} />
+				<Sx x={100} y={980} text="long term: every card was once new" size={48} color={AMBER_INK} hand at={K9.long + 14} />
 				{void K9.dealing}{void K9.every}
 			</Overlay>
 		</>

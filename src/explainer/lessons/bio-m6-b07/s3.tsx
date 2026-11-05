@@ -10,6 +10,8 @@ import {HscTag, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AlleleRing, CardBox, PoolBasin} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
+import {PLATES} from './assets';
+import {PlateB} from '../bio-m5-b13/shared';
 import {ABead, AMBER, AMBER_INK, BIO_INK, Chrom, GreyCross, INK, INK_SOFT, InkCell, Punnett, TickG, geno, prog, vis} from './parts';
 
 /** "Pause here to answer." with the 10 s countdown ring. */
@@ -55,18 +57,34 @@ if (C2.filter(g => g === 'nn').length / C2.length !== 0.25) throw new Error('B07
 // ---------- 10a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions now', mutation: 'A mutation in one sperm', that: 'That sperm fertilises', later: 'It later mates', what: 'What fraction', then: 'Then explain how', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
+	const f = useCurrentFrame();
 	const t: T1 = {a: KA.mutation, b: KA.that, c: KA.later, d: KA.what, e: KA.then};
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={180} w={1720} h={830} at={KA.mutation - 6} />
-				<QText q={STEM1(t)} x={140} y={242} w={1640} size={34} card={false} />
-				<QText q={DEM1(t)} x={140} y={430} w={1640} size={33} card={false} />
-				<AnsBox x={140} y={600} w={1300} h={100} at={KA.what + 20} label="(a)" />
-				<AnsBox x={140} y={720} w={1300} h={260} at={KA.then + 30} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KA.two} />
+				<QText q={STEM1(t)} x={140} y={242} w={1080} size={34} card={false} />
+				<QText q={DEM1(t)} x={140} y={530} w={1080} size={33} card={false} />
+				<AnsBox x={140} y={735} w={1080} h={90} at={KA.what + 20} label="(a)" />
+				<AnsBox x={140} y={840} w={1080} h={150} at={KA.then + 30} label="(b)" />
+				{/* the givens, drawn (nothing answer-bearing): a sperm with the new n, the animal's cells, its mate */}
+				<PlateB p={PLATES.sperm} cx={1480} cy={290} w={320} o={prog(f, KA.mutation, 14)} />
+				<ABead x={1602} y={294} l="n" r={26} amber o={prog(f, KA.mutation + 10, 10)} />
+				<Sx x={1480} y={380} text="new recessive allele n" size={32} color={AMBER_INK} hand anchor="middle" at={KA.mutation + 14} />
+				<g opacity={prog(f, KA.that, 12)}>
+					<line x1={1480} y1={400} x2={1480} y2={440} stroke={INK_SOFT} strokeWidth={4} />
+					<path d="M1468,430 L1480,448 L1492,430" fill="none" stroke={INK_SOFT} strokeWidth={4} />
+				</g>
+				<PlateB p={PLATES.cleave4} cx={1480} cy={560} w={210} o={prog(f, KA.that + 10, 14)} />
+				{f >= KA.that + 10 ? <ellipse cx={1480} cy={560} rx={116} ry={116} fill="none" stroke={AMBER} strokeWidth={5} opacity={prog(f, KA.that + 20, 10)} /> : null}
+				<Sx x={1480} y={710} text="one copy of n in every cell" size={32} color={AMBER_INK} hand anchor="middle" at={KA.that + 24} />
+				<g opacity={prog(f, KA.later, 12)}>
+					<rect x={1300} y={740} width={360} height={70} rx={35} fill="#fffaf0" stroke="rgba(60,45,20,0.25)" strokeWidth={2.5} />
+					<Sx x={1480} y={786} text="× a mate with no n" size={34} color={INK} hand anchor="middle" />
+				</g>
+				<PauseHold id="attempt" at={KA.pause} cx={1700} cy={930} />
 			</Overlay>
 		</>
 	);
@@ -127,18 +145,28 @@ qCheck(Q2({a: 0, b: 0}).blocks, MARKS2.map(phrase => ({phrase, at: 0})));
 
 // ---------- 10c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', claims: 'A student claims', evaluate: 'Evaluate this claim', pause: 'Pause here to answer'});
-export const SceneAttemptTwo: React.FC = () => (
-	<>
-		<Heading text="Exam question 2" at={KC.second} size={50} />
-		<Overlay>
-			<HscTag at={KC.second} />
-			<CardBox x={100} y={180} w={1720} h={830} at={KC.claims - 6} />
-			<QText q={Q2({a: KC.claims, b: KC.evaluate})} x={140} y={256} w={1640} size={40} card={false} />
-			<AnsBox x={140} y={480} w={1320} h={480} at={KC.evaluate + 14} label="answer" />
-			<PauseHold id="attempt-two" at={KC.pause} cy={720} />
-		</Overlay>
-	</>
-);
+export const SceneAttemptTwo: React.FC = () => {
+	const f = useCurrentFrame();
+	return (
+		<>
+			<Heading text="Exam question 2" at={KC.second} size={50} />
+			<Overlay>
+				<HscTag at={KC.second} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KC.second} />
+				<QText q={Q2({a: KC.claims, b: KC.evaluate})} x={140} y={256} w={1080} size={40} card={false} />
+				<AnsBox x={140} y={560} w={1080} h={420} at={KC.evaluate + 14} label="answer" />
+				{/* the claim's two parts, drawn (nothing answer-bearing) */}
+				<PlateB p={PLATES.metIcon} cx={1380} cy={340} w={220} o={prog(f, KC.second + 4, 14)} />
+				<PlateB p={PLATES.dish} cx={1640} cy={340} w={240} o={prog(f, KC.second + 10, 14)} />
+				<Sx x={1510} y={500} text="meiosis and fertilisation:" size={34} color={BIO_INK} hand anchor="middle" at={KC.claims + 10} />
+				<Sx x={1510} y={546} text={'"almost all the variation"'} size={34} color={BIO_INK} hand anchor="middle" at={KC.claims + 16} />
+				<ABead x={1510} y={650} l="" r={36} amber o={prog(f, KC.claims + 30, 12)} />
+				<Sx x={1510} y={740} text={'mutation: "not important"?'} size={34} color={AMBER_INK} hand anchor="middle" at={KC.claims + 36} />
+				<PauseHold id="attempt-two" at={KC.pause} cx={1700} cy={900} />
+			</Overlay>
+		</>
+	);
+};
 
 // ---------- 10d. Feedback two ----------
 const KD = cues(S('feedback-two'), {first: 'The first part is right', one: 'In one generation', but: 'But the conclusion is wrong', resh: 'Reshuffling only recombines', ultimate: 'ultimate source', asexual: 'asexual organisms', partly: 'partly correct', saying: 'Saying crossing over', mistake: 'the classic mistake'});
@@ -201,26 +229,14 @@ export const SceneDecision: React.FC = () => {
 						return (
 							<g key={i} opacity={prog(f, s.at, 12)}>
 								<rect x={x - 20} y={540} width={520} height={260} rx={20} fill={l > 0.5 ? '#fff3d9' : '#fffdf8'} stroke={l > 0.5 ? AMBER : 'rgba(60,45,20,0.22)'} strokeWidth={l > 0.5 ? 4 : 2.5} />
-								{i === 0 ? (
+								{i === 0 ? <PlateB p={PLATES.coIcon} cx={x + 240} cy={640} w={170} /> : i === 1 ? <PlateB p={PLATES.metIcon} cx={x + 240} cy={640} w={170} /> : (
 									<g>
-										<Chrom x={395} y={580} L={120} w={30} set="rose" piecesA={[{t0: 0, t1: 0.55, set: 'rose'}, {t0: 0.55, t1: 1, set: 'teal'}]} lociA={[{t: 0.25, l: 'E'}, {t: 0.78, l: 'd', amber: true}]} beadR={12} />
-										<Chrom x={445} y={580} L={120} w={30} set="teal" piecesA={[{t0: 0, t1: 0.55, set: 'teal'}, {t0: 0.55, t1: 1, set: 'rose'}]} lociA={[{t: 0.25, l: 'e'}, {t: 0.78, l: 'D'}]} beadR={12} />
-									</g>
-								) : i === 1 ? (
-									<g>
-										<Chrom x={900} y={590} L={110} w={30} set="rose" beadR={12} />
-										<Chrom x={950} y={600} L={80} w={30} set="teal" beadR={12} />
-										<Chrom x={1020} y={590} L={110} w={30} set="teal" beadR={12} />
-										<Chrom x={1070} y={600} L={80} w={30} set="rose" beadR={12} />
-									</g>
-								) : (
-									<g>
-										<InkCell cx={1500} cy={640} rx={34} />
-										<InkCell cx={1580} cy={640} rx={34} />
+										<PlateB p={PLATES.egg} cx={x + 300} cy={640} w={120} />
+										<PlateB p={PLATES.sperm} cx={x + 170} cy={640} w={170} />
 									</g>
 								)}
-								<Sx x={x + 240} y={750} text={s.t} size={38} color={l > 0.5 ? AMBER_INK : INK} hand anchor="middle" />
-								<Sx x={x + 240} y={786} text={s.s} size={28} color={INK_SOFT} hand anchor="middle" />
+								<Sx x={x + 240} y={752} text={s.t} size={42} color={l > 0.5 ? AMBER_INK : INK} hand anchor="middle" />
+								<Sx x={x + 240} y={790} text={s.s} size={32} color={INK_SOFT} hand anchor="middle" />
 							</g>
 						);
 					})}
@@ -239,12 +255,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const NOTES = [
-	'Mutation changes the base sequence and is the only process that makes new alleles. Meiosis (crossing over and independent assortment) and fertilisation (random joining of gametes) make new combinations of existing alleles.',
-	'A new allele in a germ-line cell gives a carrier with one copy. Meiosis I separates the partner chromosomes, so half the carrier\'s gametes carry the allele. Two copies need two carriers\' gametes to meet (1 in 4 for two carriers).',
-	'In one generation, almost all the differences between offspring come from reshuffling (more than 8 million chromosome combinations per human parent, against about 60 to 70 new mutations per child).',
-	'Every allele first arose by mutation: mutation is the ultimate source of variation; meiosis and fertilisation are the immediate source.',
-	'Bacteria reproduce asexually, with no meiosis or fertilisation: new variation comes from mutation and gene transfer.',
+	'Mutation changes the base sequence: the only process that makes new alleles.',
+	'Meiosis shuffles existing alleles into varied gametes (crossing over, independent assortment).',
+	'Fertilisation joins two gametes at random, making new combinations.',
+	'A carrier passes a new allele to half its gametes; two carriers give two copies in 1 in 4 offspring.',
+	'One generation: almost all differences come from reshuffling (over 8 million combinations per parent; about 60 to 70 new mutations per child).',
+	'Mutation is the ultimate source of variation; meiosis and fertilisation are the immediate source.',
+	'Bacteria (asexual): new variation comes from mutation and gene transfer.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Mutation prints a new card; meiosis deals the hands; fertilisation puts two hands together." tag="one generation: the dealing; long term: every card was once new" size={30} aidTop={680} />
+	<NotesBoard notes={NOTES} aid="Mutation prints a new card; meiosis deals the hands; fertilisation puts two hands together." tag="one generation: the dealing; long term: every card was once new" size={36} aidTop={780} />
 );

@@ -27,6 +27,17 @@ export const PLATES = {
 	calf: mk('m6-dairy-calf-horn-buds-v1.png', N2, [115, 210, 1953, 1794]),
 	field: mk('m6-field-monoculture-mixed-v1.png', N2, [200, 709, 1800, 1291]),
 	rice: mk('m6-golden-white-rice-v1.png', N2, [200, 685, 1800, 1314]),
+	// Quality pass (6 Nov): reused plates for the stakeholders, the embryos and surrogate, and the exam givens. Alpha boxes
+	// measured from the real files (PIL, alpha > 20).
+	sprayer: mk('m7-insecticide-sprayer-v1.png', N2, [373, 220, 1627, 1780]),
+	bee: mk('b2b-bee-on-flower-v1.png', [1600, 1600], [309, 227, 1291, 1374]),
+	coins: mk('y11-coins-v1.png', [1200, 900], [108, 137, 1092, 762]),
+	blastocyst: mk('m8-blastocyst-v1.png', N2, [330, 337, 1671, 1663]),
+	cow: mk('b3b-dairy-cow-side-v1.png', [2200, 1600], [404, 460, 1796, 1360]),
+	salmon: mk('b2-salmon-spawning-v1.png', [1856, 1344], [182, 319, 1675, 1070]),
+	ricePlant: mk('m6-rice-plant-panicle-v1.png', N2, [313, 221, 1687, 1779]),
+	riceBowls: mk('m6-rice-bowls-white-golden-v1.png', N2, [221, 679, 1779, 1321]),
+	cellPlasmid: mk('m6-bacterium-plasmid-v1.png', N2, [200, 551, 1800, 1448]),
 };
 /** Natural pixel between the calf's two horn buds; the monoculture half of the field plate. */
 export const BUDS: [number, number] = [1690, 250];

@@ -9,6 +9,8 @@ import {cues} from '../../cues';
 import {DrawPath, Heading, Overlay, PlateB, Sx} from '../bio-m5-b13/shared';
 import {gametes} from '../bio-m5-b08/shared';
 import {S, dur} from './common';
+import {AN, CD, CdStage, SideBead, pt} from './painted';
+import type {Place} from './painted';
 import {PLATES} from './assets';
 import {
 	ABead, AMBER, AMBER_INK, BIO_INK, Brace, Chrom, Finch, GPill, GameteCell, GreyCross, HalfPlate, INK, INK_SOFT, InkCell, Punnett, ROSE, ScribbleRing,
@@ -33,11 +35,13 @@ const BV = [0.22, 0.68, 0.35, 0.82, 0.15, 0.6, 0.42, 0.9, 0.3, 0.74];
 const BS = [0.95, 1.04, 0.9, 1.0, 0.97, 1.08, 0.92, 1.02, 0.88, 0.99];
 const SURV = [3, 5, 6, 7];
 const NEXT = [0.42, 0.53, 0.6, 0.66, 0.72, 0.78, 0.85, 0.93];
-const SX0 = 600, SX1 = 1400, SY0 = 400, SY1 = 300;
+const SX0 = 820, SX1 = 1720, SY0 = 400, SY1 = 300;
 const ISLAND = blobPath([[150, 600], [420, 500], [900, 470], [1400, 490], [1760, 560], [1800, 800], [1600, 1010], [1000, 1040], [380, 1010], [130, 840]]);
-const birdX = (i: number) => 255 + i * 157;
-const BIRD_Y = 660, BIRD_W = 140;
-const SEED = {cx: 960, cy: 895, w: 430};
+// two staggered rows of larger birds (quality pass, 6 Nov)
+const birdX = (i: number) => 300 + (i >> 1) * 330 + (i % 2) * 165;
+const birdY = (i: number) => (i % 2 ? 830 : 640);
+const BIRD_W = 215;
+const SEED = {cx: 330, cy: 330, w: 400};
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
 	const dies = (i: number) => !SURV.includes(i);
@@ -46,7 +50,7 @@ export const SceneHook: React.FC = () => {
 	const flash = vis(f, K1.already, K1.already + 36, 10);
 	const dots: SDot[] = BV.map((v, i) => ({v, o: dies(i) ? Math.max(1 - prog(f, K1.most + 20 + i * 4, 16), 0.45 * flash) : 1, dy: dies(i) ? 40 * prog(f, K1.most + 20 + i * 4, 16) * (1 - flash) : 0, glow: flash, amber: false}));
 	const next: SDot[] = NEXT.map((v, i) => ({v, o: prog(f, K1.chicks + 8 + i * 5, 10)}));
-	const [hx, hy] = platePt(PLATES.deep, birdX(7), BIRD_Y, BIRD_W * BS[7], 1520, 460);
+	const [hx, hy] = platePt(PLATES.deep, birdX(7), birdY(7), BIRD_W * BS[7], 1520, 460);
 	const [sx, sy] = platePt(PLATES.seeds, SEED.cx, SEED.cy, SEED.w, 1650, 1125);
 	const stripO = 1 - prog(f, K1.where + 40, 14) * 0;
 	return (
@@ -54,30 +58,30 @@ export const SceneHook: React.FC = () => {
 			<Heading text="Where each generation's variation comes from" at={K1.where + 24} size={58} />
 			<Overlay>
 				<path d={ISLAND} fill="#efe6cf" stroke={INK_SOFT} strokeWidth={3} opacity={prog(f, 2, 18)} />
-				<Tg x={190} y={560} text="Daphne Major, Galápagos" at={K1.daphne} out={K1.small} size={36} color={BIO_INK} />
+				<Tg x={960} y={1010} text="Daphne Major, Galápagos" at={K1.daphne} out={K1.small} size={44} color={BIO_INK} anchor="middle" />
 				{BV.map((v, i) => (
 					<g key={i} opacity={(1 - gone(i)) * prog(f, 6 + i * 3, 12)}>
-						<Finch deep={i % 2 === 1} cx={birdX(i)} cy={BIRD_Y} w={BIRD_W * BS[i]} grey={grey(i)} plates={FP} />
+						<Finch deep={i % 2 === 1} cx={birdX(i)} cy={birdY(i)} w={BIRD_W * BS[i]} grey={grey(i)} plates={FP} />
 					</g>
 				))}
 				{/* the seeds: the soft half fades when the drought starts */}
 				<HalfPlate p={PLATES.seeds} cx={SEED.cx} cy={SEED.cy} w={SEED.w} side="L" id="b07-seed-l" o={prog(f, 8, 14) * (1 - prog(f, K1.ran, 24))} />
 				<HalfPlate p={PLATES.seeds} cx={SEED.cx} cy={SEED.cy} w={SEED.w} side="R" id="b07-seed-r" o={prog(f, 8, 14)} />
-				<Tg x={1250} y={930} text="1977 drought" at={K1.ran} out={K1.chicks} size={40} />
-				<ScribbleRing cx={hx} cy={hy} rx={58} ry={52} at={K1.crack} out={K1.inh} seed={4} />
+				<Tg x={330} y={520} text="1977 drought" at={K1.ran} out={K1.chicks} size={46} anchor="middle" />
+				<ScribbleRing cx={hx} cy={hy} rx={70} ry={62} at={K1.crack} out={K1.inh} seed={4} />
 				<ScribbleRing cx={sx} cy={sy} rx={56} ry={52} at={K1.crack + 8} out={K1.inh} seed={6} />
 				{/* beak-depth strips */}
 				<g opacity={stripO * prog(f, 10, 14)}>
-					<DotStrip x0={SX0} x1={SX1} y={SY0} dots={dots} />
-					<Sx x={SX1 + 18} y={SY0 + 8} text="deeper" size={26} color={INK_SOFT} hand />
+					<DotStrip x0={SX0} x1={SX1} y={SY0} dots={dots} r={14} />
+					<Sx x={SX1 - 10} y={SY0 + 46} text="deeper →" size={32} color={INK_SOFT} hand anchor="end" />
 				</g>
-				<Tg x={SX0 - 20} y={SY0 - 2} text="beak depth" at={14} out={K1.where} size={32} color={INK_SOFT} anchor="end" />
+				<Tg x={SX0 - 20} y={SY0 - 2} text="beak depth" at={14} out={K1.where} size={38} color={INK_SOFT} anchor="end" />
 				<g opacity={prog(f, K1.inh, 10) * (1 - prog(f, K1.where, 12))}>
 					<DrawPath d={`M${stripX(SX0, SX1, BV[7])},${SY0 - 28} L${stripX(SX0, SX1, 0.93)},${SY1 - 4}`} at={K1.inh + 4} dur={14} color={AMBER_INK} width={3} />
 					<circle cx={stripX(SX0, SX1, 0.93)} cy={SY1 - 14} r={11} fill="#8a6a48" stroke={INK} strokeWidth={1.5} opacity={1 - prog(f, K1.chicks + 40, 10)} />
 				</g>
-				<DotStrip x0={SX0} x1={SX1} y={SY1} dots={next} lineO={prog(f, K1.chicks, 12)} o={prog(f, K1.chicks - 4, 10)} />
-				<Tg x={SX0 - 20} y={SY1 - 2} text="next generation" at={K1.chicks} out={K1.where} size={32} color={INK_SOFT} anchor="end" />
+				<DotStrip x0={SX0} x1={SX1} y={SY1} dots={next} r={14} lineO={prog(f, K1.chicks, 12)} o={prog(f, K1.chicks - 4, 10)} />
+				<Tg x={SX0 - 20} y={SY1 - 2} text="next generation" at={K1.chicks} out={K1.where} size={38} color={INK_SOFT} anchor="end" />
 				{void dur}
 			</Overlay>
 		</>
@@ -96,7 +100,6 @@ export const SceneThreeJobs: React.FC = () => {
 		{y: 780, at: K2.fert, name: 'fertilisation', job: 'joins two gametes'},
 	];
 	const amber = prog(f, K2.brand, 10);
-	const sw = smooth(prog(f, K2.crossing + 6, 20));
 	const meet = smooth(prog(f, K2.random - 30, 30));
 	const drop = smooth(prog(f, K2.follow + 20, 24));
 	return (
@@ -115,15 +118,12 @@ export const SceneThreeJobs: React.FC = () => {
 					<g opacity={prog(f, K2.mutation, 14)}>
 						<ABead x={500} y={ROWS[0].y - 4} l="" r={34} amber={amber > 0.5} glow={vis(f, K2.brand, K2.brand + 30, 8)} />
 					</g>
-					{/* icon 2: a small pair; the lower beads swap */}
-					<g opacity={prog(f, K2.meiosis, 14)}>
-						<Chrom x={470} y={ROWS[1].y - 70} L={140} w={34} set="rose" piecesA={[{t0: 0, t1: 0.55, set: 'rose'}, {t0: 0.55, t1: 1, set: 'rose', dx: 60 * sw}]} lociA={[{t: 0.25, l: 'E'}, {t: 0.78, l: 'D'}]} />
-						<Chrom x={530} y={ROWS[1].y - 70} L={140} w={34} set="teal" piecesA={[{t0: 0, t1: 0.55, set: 'teal'}, {t0: 0.55, t1: 1, set: 'teal', dx: -60 * sw}]} lociA={[{t: 0.25, l: 'e'}, {t: 0.78, l: 'd'}]} />
-					</g>
-					{/* icon 3: two gametes meet */}
+					{/* icon 2: the painted crossing-over pair */}
+					<PlateB p={PLATES.coIcon} cx={500} cy={ROWS[1].y - 4} w={150} o={prog(f, K2.meiosis, 14)} />
+					{/* icon 3: a sperm meets an egg */}
 					<g opacity={prog(f, K2.fert, 14)}>
-						<InkCell cx={lerp(410, 476, meet)} cy={ROWS[2].y} rx={36} />
-						<InkCell cx={lerp(590, 524, meet)} cy={ROWS[2].y} rx={36} />
+						<PlateB p={PLATES.egg} cx={540} cy={ROWS[2].y} w={120} />
+						<PlateB p={PLATES.sperm} cx={lerp(360, 430, meet)} cy={ROWS[2].y} w={150} />
 					</g>
 				</g>
 				<Progress active={-1} o={shrink} />
@@ -138,29 +138,25 @@ export const SceneThreeJobs: React.FC = () => {
 
 // ---------- 3. One new allele, half the gametes ----------
 const K3 = cues(S('half-the-gametes'), {suppose: 'Suppose one sperm', mut: 'carries a mutation', fert: 'fertilises an egg', chick: 'The chick that grows', every: 'every cell', copied: 'copied from that first one', sits: 'It sits on one chromosome', partner: 'partner chromosome', when: 'When this bird makes', meiosis: 'meiosis one separates', about: 'about half', orig: 'half get the original'});
-const LOC = 0.72;
-const CLUSTER: [number, number][] = [[-52, -40], [52, -40], [-80, 30], [0, 22], [80, 30], [-40, 92], [40, 92], [0, -100]];
+// Painted stages (quality pass, 6 Nov): sperm meets egg, B3a's cleavage plates, then brief 88's homologous pair,
+// meiosis I metaphase, anaphase, telophase and the four cells, with allele beads beside the painted chromosomes.
+const PB3: Place = {cx: 960, cy: 600, size: 920};
+const PRE3 = [CD('homologous-pair-loci'), CD('m1-metaphase'), CD('m1-anaphase'), CD('m1-telophase'), CD('four-cells')];
 export const SceneHalf: React.FC = () => {
 	const f = useCurrentFrame();
-	// stage A: sperm meets egg, zygote, cluster
+	// stage A: sperm meets egg, zygote, cleavage
 	const travel = smooth(prog(f, K3.fert - 6, 30));
-	const spx = lerp(560, 860, travel), spy = 500;
+	const spx = lerp(330, 860, travel), spy = 560;
 	const fuse = prog(f, K3.fert + 26, 14);
-	const split = clamp01((f - K3.copied) / 40);
-	const nCells = split <= 0 ? 1 : split < 0.34 ? 2 : split < 0.67 ? 4 : 8;
+	const c2 = prog(f, K3.copied + 6, 12), c4 = prog(f, K3.copied + 30, 12);
 	const stageA = 1 - prog(f, K3.sits - 6, 16);
-	// stage B and C: the model cell
-	const cellIn = prog(f, K3.sits, 16);
-	const dupT = prog(f, K3.when + 6, 26);
-	const sep = smooth(prog(f, K3.meiosis + 4, 30));
-	const two = prog(f, K3.meiosis + 30, 14);
-	const mii = smooth(prog(f, K3.meiosis + 52, 30));
-	const roseX = lerp(lerp(905, 885, dupT), 640, sep), tealX = lerp(lerp(1015, 1035, dupT), 1280, sep);
-	const chromY = 400, L = 300;
+	// stages B and C: painted pair, then meiosis I and the four gametes
+	const pairO = prog(f, K3.sits, 16) * (1 - prog(f, K3.when + 4, 16));
+	const metO = prog(f, K3.when + 4, 16) * (1 - prog(f, K3.meiosis + 4, 14));
+	const anaO = prog(f, K3.meiosis + 4, 14) * (1 - prog(f, K3.meiosis + 34, 14));
+	const telO = prog(f, K3.meiosis + 34, 14) * (1 - prog(f, K3.meiosis + 62, 14));
+	const fourO = prog(f, K3.meiosis + 62, 14);
 	const active = f < K3.when ? 0 : 1;
-	const GX = [560, 760, 1160, 1360], GY = 860;
-	const lociR: Loc[] = [{t: LOC, l: 'D'}];
-	const lociT: Loc[] = [{t: LOC, l: 'd', amber: true}];
 	return (
 		<>
 			<Heading text="Follow one new allele" at={4} size={60} />
@@ -168,61 +164,65 @@ export const SceneHalf: React.FC = () => {
 				<Progress active={active} />
 				{/* stage A */}
 				<g opacity={stageA}>
-					<PlateB p={PLATES.egg} cx={1000} cy={520} w={260} o={prog(f, K3.mut, 14) * (1 - fuse)} />
-					<ABead x={1000} y={520} l="D" r={22} o={prog(f, K3.fert, 12) * (1 - fuse)} />
+					<PlateB p={PLATES.egg} cx={1200} cy={570} w={470} o={prog(f, K3.mut, 14) * (1 - fuse)} />
+					<ABead x={1200} y={570} l="D" r={30} o={prog(f, K3.fert, 12) * (1 - fuse)} />
 					<g opacity={1 - fuse}>
-						<PlateB p={PLATES.sperm} cx={spx} cy={spy} w={240} o={prog(f, 4, 14)} />
-						<ABead x={spx + 92} y={spy + 3} l="d" r={20} amber o={prog(f, K3.mut + 8, 12)} glow={vis(f, K3.mut + 8, K3.mut + 40, 8)} />
+						<PlateB p={PLATES.sperm} cx={spx} cy={spy} w={460} o={prog(f, 4, 14)} />
+						<ABead x={spx + 176} y={spy + 6} l="d" r={30} amber o={prog(f, K3.mut + 8, 12)} glow={vis(f, K3.mut + 8, K3.mut + 40, 8)} />
 					</g>
-					<DrawPath d={`M470,500 L${lerp(470, 950, travel)},${lerp(500, 520, travel)}`} at={K3.fert} dur={30} color={AMBER} width={3} dash="4 8" opacity={0.6 * (1 - prog(f, K3.chick + 30, 14))} />
-					{fuse > 0.01 && nCells === 1 ? (
-						<g opacity={fuse}>
-							<InkCell cx={1000} cy={520} rx={110} />
-							<ABead x={970} y={520} l="D" r={22} />
-							<ABead x={1030} y={520} l="d" r={22} amber />
+					<Tg x={spx} y={spy + 150} text="sperm with a mutation" at={K3.mut + 10} out={K3.fert} anchor="middle" size={42} />
+					<Tg x={1200} y={880} text="egg" at={K3.mut + 16} out={K3.fert} anchor="middle" size={42} color={INK_SOFT} />
+					<g opacity={fuse}>
+						<PlateB p={PLATES.cleave1} cx={1100} cy={570} w={560} o={1 - c2} />
+						<PlateB p={PLATES.cleave2} cx={1100} cy={570} w={560} o={c2 * (1 - c4)} />
+						<PlateB p={PLATES.cleave4} cx={1100} cy={570} w={560} o={c4} />
+						<g opacity={1 - c2}>
+							<ABead x={1070} y={570} l="D" r={26} />
+							<ABead x={1130} y={570} l="d" r={26} amber />
 						</g>
-					) : null}
-					{nCells > 1 ? CLUSTER.slice(0, nCells).map(([dx, dy], k) => {
-						const sc = nCells === 2 ? 1 : nCells === 4 ? 0.8 : 0.62;
-						return (
-							<g key={k}>
-								<InkCell cx={1000 + dx * (nCells === 2 ? 0.7 : 1)} cy={520 + dy * (nCells === 2 ? 0 : 1)} rx={62 * sc} />
-								<circle cx={1000 + dx * (nCells === 2 ? 0.7 : 1)} cy={520 + dy * (nCells === 2 ? 0 : 1)} r={10 * sc} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} />
-							</g>
-						);
-					}) : null}
-					<Tg x={1000} y={730} text="one copy in every cell" at={K3.every} out={K3.partner} anchor="middle" size={42} />
-				</g>
-				{/* stage B: the model cell, one pair */}
-				<g opacity={cellIn * (1 - two)}>
-					<InkCell cx={960} cy={550} rx={lerp(300, 470, sep)} ry={270} />
-				</g>
-				{two > 0.01 ? (
-					<g opacity={two * (1 - 0.7 * prog(f, K3.meiosis + 60, 14))}>
-						<InkCell cx={640} cy={550} rx={170} ry={210} />
-						<InkCell cx={1280} cy={550} rx={170} ry={210} />
-						<Sx x={960} y={560} text="meiosis I" size={34} color={INK_SOFT} hand anchor="middle" />
-						{[[640, 560], [640, 760], [1280, 1160], [1280, 1360]].map(([a, b], k) => <line key={k} x1={a} y1={760} x2={b} y2={786} stroke={INK_SOFT} strokeWidth={2.5} opacity={mii} />)}
+						{c4 > 0.01 ? <ellipse cx={1100} cy={570} rx={300} ry={300} fill="none" stroke={AMBER} strokeWidth={6} opacity={0.7 * c4} /> : null}
 					</g>
-				) : null}
-				<g opacity={cellIn * (1 - prog(f, K3.meiosis + 52, 10))}>
-					<Chrom x={roseX} y={chromY} L={L} set="rose" loci={lociR} dup={dupT} />
-					<Chrom x={tealX} y={chromY} L={L} set="teal" loci={lociT} dup={dupT} />
-					<g opacity={vis(f, K3.sits + 20, K3.when, 12)}>
-						<line x1={roseX + 22} y1={chromY + LOC * L} x2={tealX - 22} y2={chromY + LOC * L} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="5 6" />
-						<Sx x={960} y={chromY + L + 44} text="same gene" size={30} color={INK_SOFT} hand anchor="middle" />
+					<Tg x={1100} y={920} text="fertilised egg: D and the new d" at={K3.fert + 34} out={K3.copied} anchor="middle" size={44} />
+					<g opacity={vis(f, K3.every, K3.sits - 6, 10)}>
+						<ABead x={560} y={560} l="d" r={34} amber />
+						<Sx x={560} y={650} text="one copy" size={48} color={AMBER_INK} hand anchor="middle" />
+						<Sx x={560} y={706} text="in every cell" size={48} color={AMBER_INK} hand anchor="middle" />
 					</g>
 				</g>
-				<Tg x={1060} y={chromY + LOC * L + 12} text="new allele" at={K3.sits + 14} out={K3.when} size={36} />
-				<Tg x={860} y={chromY + LOC * L + 12} text="original allele" at={K3.partner + 6} out={K3.when} size={36} anchor="end" color={INK_SOFT} />
-				{/* meiosis II: four gametes drop into a row */}
-				{mii > 0.01 ? GX.map((x, k) => {
-					const fromX = k < 2 ? 640 : 1280;
-					const amb = k >= 2;
-					return <GameteCell key={k} x={lerp(fromX, x, mii)} y={lerp(550, GY, mii)} r={74} o={mii} chroms={[{set: (amb ? 'teal' : 'rose') as SetK, loci: amb ? lociT : lociR, L: 110, cen: 0.3}]} w={36} />;
-				}) : null}
-				<Brace x1={1090} x2={1430} y={968} at={K3.about + 8} label="1/2 new allele" size={40} down />
-				<Brace x1={490} x2={830} y={968} at={K3.orig} label="1/2 original" size={40} down />
+				{/* stages B and C: painted chromosomes, beads beside them */}
+				<CdStage pl={PB3} preload={PRE3} layers={[
+					{src: CD('homologous-pair-loci'), o: pairO},
+					{src: CD('m1-metaphase'), o: metO},
+					{src: CD('m1-anaphase'), o: anaO},
+					{src: CD('m1-telophase'), o: telO},
+					{src: CD('four-cells'), o: fourO},
+				]} />
+				<SideBead pl={PB3} at={[520, 1435]} to={[660, 1435]} l="D" o={pairO} r={32} />
+				<SideBead pl={PB3} at={[1480, 1435]} to={[1340, 1435]} l="d" amber o={pairO} r={32} glow={vis(f, K3.sits + 10, K3.sits + 40, 8)} />
+				<g opacity={vis(f, K3.sits + 20, K3.when, 12)}>
+					<line x1={pt(PB3, 870, 1435)[0]} y1={pt(PB3, 0, 1435)[1]} x2={pt(PB3, 1130, 1435)[0]} y2={pt(PB3, 0, 1435)[1]} stroke={INK} strokeWidth={3} strokeDasharray="5 7" />
+					<Sx x={960} y={pt(PB3, 0, 1690)[1]} text="same gene" size={40} color={INK} hand anchor="middle" />
+				</g>
+				<Tg x={pt(PB3, 90, 0)[0] - 20} y={pt(PB3, 0, 1435)[1] + 14} text="original allele" at={K3.partner + 6} out={K3.when} size={44} anchor="end" color={INK_SOFT} />
+				<Tg x={pt(PB3, 1910, 0)[0] + 20} y={pt(PB3, 0, 1435)[1] + 14} text="new allele" at={K3.sits + 14} out={K3.when} size={44} />
+				<SideBead pl={PB3} at={[700, 1000]} to={[845, 1000]} l="D" o={metO} r={30} />
+				<SideBead pl={PB3} at={[1300, 1000]} to={[1155, 1000]} l="d" amber o={metO} r={30} />
+				<SideBead pl={PB3} at={[580, 740]} to={[600, 880]} l="D" o={anaO} r={30} />
+				<SideBead pl={PB3} at={[1420, 740]} to={[1420, 880]} l="d" amber o={anaO} r={30} />
+				<SideBead pl={PB3} at={[575, 620]} to={[575, 760]} l="D" o={telO} r={30} />
+				<SideBead pl={PB3} at={[1325, 620]} to={[1325, 760]} l="d" amber o={telO} r={30} />
+				<Tg x={960} y={1000} text="meiosis I separates the partners" at={K3.meiosis + 6} out={K3.meiosis + 60} anchor="middle" size={44} />
+				{[[380, 560, false], [380, 1525, false], [1360, 560, true], [1360, 1525, true]].map(([x, y, am], k) => (
+					<SideBead key={k} pl={PB3} at={[x as number, y as number]} to={[(x as number) + 90, (y as number) + 20]} l={am ? 'd' : 'D'} amber={am as boolean} o={fourO * prog(f, K3.meiosis + 70 + k * 4, 10)} r={30} />
+				))}
+				<g opacity={prog(f, K3.about + 4, 12)}>
+					<Sx x={1660} y={560} text="1/2" size={96} color={AMBER_INK} weight={800} anchor="middle" />
+					<Sx x={1660} y={630} text="new allele d" size={44} color={AMBER_INK} hand anchor="middle" />
+				</g>
+				<g opacity={prog(f, K3.orig, 12)}>
+					<Sx x={260} y={560} text="1/2" size={96} color={INK} weight={800} anchor="middle" />
+					<Sx x={260} y={630} text="original D" size={44} color={INK_SOFT} hand anchor="middle" />
+				</g>
 				{void K3.suppose}{void K3.chick}
 			</Overlay>
 		</>
@@ -236,75 +236,82 @@ const G4 = gametes([[['E', 'D'], ['e', 'd']], [['F'], ['f']]], {pair: 0, after: 
 const WITH_D = [...G4.parental, ...G4.recombinant].filter(g => g.includes('d'));
 const ORDER = ['EdF', 'edf', 'Edf', 'edF'];
 if (ORDER.some(g => !WITH_D.includes(g)) || WITH_D.length !== 4) throw new Error('B07 scene 4 gamete labels must come from the cross function: ' + WITH_D.join());
-const CUT = 0.6;
+const PB4: Place = {cx: 600, cy: 610, size: 860};
+const PRE4 = [CD('crossing-over-a'), CD('crossing-over-b'), CD('crossing-over-c'), CD('m1-metaphase-empty'), CD('m1-metaphase')];
+const XC = AN.crossing.chromatidX;
 export const SceneCombos: React.FC = () => {
 	const f = useCurrentFrame();
-	const x0 = smooth(prog(f, K4.swap + 12, 34));
-	const LY = 380, LL = 320, SYt = 470, SL = 190;
-	const rose = 600, teal = 712;
-	const shift = (teal - 24) - (rose + 24);
-	const arc = Math.sin(x0 * Math.PI) * 22;
-	const roseB: Piece[] = [{t0: 0, t1: CUT, set: 'rose'}, {t0: CUT, t1: 1, set: 'rose', dx: shift * x0, dy: -arc}];
-	const tealA: Piece[] = [{t0: 0, t1: CUT, set: 'teal'}, {t0: CUT, t1: 1, set: 'teal', dx: -shift * x0, dy: arc}];
-	const flip = (a: number) => smooth(prog(f, a, 18));
-	const s = flip(K4.either) * (1 - flip(K4.either + 44));
-	const sArc = Math.sin(Math.PI * clamp01(prog(f, K4.either, 18) + prog(f, K4.either + 44, 18))) * 50;
-	const fx = lerp(900, 1010, s), tx = lerp(1010, 900, s);
-	const coinO = vis(f, K4.either - 6, K4.either + 70, 8);
-	const coinFlip = Math.abs(Math.cos((f - K4.either) * 0.25));
-	const GP: [number, number][] = [[1350, 420], [1640, 420], [1350, 700], [1640, 700]];
-	const fade = 1 - 0.55 * prog(f, K4.many, 14);
+	const bO = prog(f, K4.swap - 6, 12), cO = prog(f, K4.swap + 22, 14);
+	const metO = prog(f, K4.indep - 10, 16);
+	const coA = 1 - metO;
+	const sw = smooth(prog(f, K4.swap + 4, 34));
+	// the short pair flips over (independent assortment): sx 1 -> -1 -> 1
+	const flip = (q: number) => smooth(prog(f, q, 18));
+	const s = flip(K4.either) * (1 - flip(K4.either + 50));
+	const sx = 1 - 2 * s;
+	const fade = 1 - 0.5 * prog(f, K4.many, 14);
+	// beads: upper band (E or e) above each chromatid, lower band (D or d) below; the inner lower beads swap on the cue
+	const upper = ['E', 'E', 'e', 'e'];
+	const lowX = [XC[0], lerp(XC[1], XC[2], sw), lerp(XC[2], XC[1], sw), XC[3]];
+	const lowL = ['D', 'D', 'd', 'd'];
+	const ring = vis(f, K4.end, K4.indep, 10);
+	const GP: [number, number][] = [[1330, 430], [1650, 430], [1330, 640], [1650, 640]];
 	return (
 		<>
 			<Heading text="New neighbours" at={4} size={60} />
 			<Overlay>
 				<Progress active={1} />
-				<g opacity={fade} transform="translate(-150,0)">
-					<InkCell cx={800} cy={560} rx={380} ry={300} o={prog(f, 2, 14)} />
-					<g opacity={prog(f, 6, 14)}>
-						<Chrom x={rose} y={LY} L={LL} set="rose" dup={1} lociA={[{t: 0.22, l: 'E'}, {t: 0.78, l: 'D'}]} lociB={[{t: 0.22, l: 'E'}, {t: 0.78, l: 'D'}]} piecesB={roseB} />
-						<Chrom x={teal} y={LY} L={LL} set="teal" dup={1} lociA={[{t: 0.22, l: 'e'}, {t: 0.78, l: 'd', amber: true}]} lociB={[{t: 0.22, l: 'e'}, {t: 0.78, l: 'd', amber: true}]} piecesA={tealA} />
-						<g transform={`translate(0,${-sArc})`}>
-							<Chrom x={fx} y={SYt} L={SL} set="rose" dup={1} loci={[{t: 0.72, l: 'F'}]} cen={0.3} />
-							<Chrom x={tx} y={SYt} L={SL} set="teal" dup={1} loci={[{t: 0.72, l: 'f'}]} cen={0.3} />
+				<g opacity={fade}>
+					<CdStage pl={PB4} preload={PRE4} layers={[
+						{src: CD('crossing-over-a'), o: coA * (1 - bO)},
+						{src: CD('crossing-over-b'), o: coA * bO * (1 - cO)},
+						{src: CD('crossing-over-c'), o: coA * cO},
+						{src: CD('m1-metaphase-empty'), o: metO},
+						{src: CD('m1-metaphase'), o: metO, box: [760, 590, 1240, 1118], feather: 16},
+						{src: CD('m1-metaphase'), o: metO, box: [760, 1118, 1240, 1405], feather: 16, mirror: 1000, sx},
+					]} />
+					{/* crossing over: alleles beside the painted bands */}
+					<g opacity={coA}>
+						{XC.map((x, i) => <SideBead key={'u' + i} pl={PB4} at={[x, 225]} to={[x, 340]} l={upper[i]} r={26} o={prog(f, 8 + i * 3, 10)} />)}
+						{lowX.map((x, i) => <SideBead key={'l' + i} pl={PB4} at={[x, 1745]} to={[XC[i], 1630]} l={lowL[i]} amber={lowL[i] === 'd'} r={26} o={prog(f, 14 + i * 3, 10)} />)}
+						<ScribbleRing cx={pt(PB4, 1000, 1175)[0]} cy={pt(PB4, 0, 1175)[1]} rx={70} ry={60} at={K4.swap - 4} out={K4.end} seed={8} />
+						<g opacity={ring}>
+							<ScribbleRing cx={pt(PB4, XC[1] + 30, 0)[0]} cy={pt(PB4, 0, 990)[1]} rx={66} ry={420} at={K4.end + 4} seed={5} />
 						</g>
 					</g>
-					{/* crossover mark between the inner chromatids */}
-					<g opacity={vis(f, K4.swap - 4, K4.swap + 50, 8)}>
-						<DrawPath d={`M${rose + 10},${LY + CUT * LL - 26} L${teal - 10},${LY + CUT * LL + 26} M${teal - 10},${LY + CUT * LL - 26} L${rose + 10},${LY + CUT * LL + 26}`} at={K4.swap - 4} dur={10} color={AMBER_INK} width={4} />
-					</g>
-					{/* coin: either way */}
-					<g opacity={coinO} transform={`translate(960,${SYt - 70}) scale(${coinFlip},1)`}>
-						<circle r={26} fill="#f3e2b0" stroke={AMBER_INK} strokeWidth={3} />
-						<circle r={16} fill="none" stroke={AMBER_INK} strokeWidth={2} />
+						{/* assortment: the F and f beads ride with the flipping short pair */}
+					<g opacity={metO}>
+						<SideBead pl={PB4} at={[1290, 900]} to={[1140, 900]} l="d" amber r={28} />
+						<SideBead pl={PB4} at={[lerp(1290, 710, s), 1250]} to={[lerp(1140, 860, s), 1250]} l="F" r={28} />
+						<SideBead pl={PB4} at={[lerp(710, 1290, s), 1250]} to={[lerp(860, 1140, s), 1250]} l="f" r={28} />
 					</g>
 				</g>
-				<Tg x={300} y={920} text="new neighbour" at={K4.end} out={K4.indep} size={42} />
-				<ScribbleRing cx={rose + 24 - 150} cy={LY + 0.5 * LL} rx={50} ry={190} at={K4.end + 4} out={K4.indep} seed={8} />
-				<Tg x={300} y={920} text="either partner, either side" at={K4.either + 10} out={K4.many} size={42} color={INK_SOFT} />
-				{/* gametes (computed labels) */}
+				<Tg x={1060} y={520} text="new neighbour:" at={K4.end + 6} out={K4.indep} size={48} />
+				<Tg x={1060} y={584} text="E now beside the new d" at={K4.end + 12} out={K4.indep} size={48} />
+				<Tg x={1060} y={470} text="partner chromatids swap pieces" at={K4.swap} out={K4.end} size={48} />
+				<Tg x={1060} y={400} text="crossing over" at={K4.crossing} out={K4.end} size={60} />
+				<Tg x={1060} y={470} text="independent assortment:" at={K4.indep} out={K4.many - 10} size={52} />
+				<Tg x={1060} y={540} text="each pair can face either way" at={K4.either} out={K4.many - 10} size={48} color={INK_SOFT} />
+				{/* gametes (labels computed by the cross function) */}
 				{ORDER.map((g, k) => {
 					const [gx, gy] = GP[k];
 					const o = prog(f, K4.many - 10 + k * 8, 12);
 					const drop = (1 - smooth(o)) * -40;
-					const recomb = g[0] === 'E';
-					const longPieces: Piece[] = recomb ? [{t0: 0, t1: CUT, set: 'rose'}, {t0: CUT, t1: 1, set: 'teal'}] : [{t0: 0, t1: 1, set: 'teal'}];
-					const shortSet: SetK = g[2] === 'F' ? 'rose' : 'teal';
 					return (
 						<g key={g} opacity={o} transform={`translate(0,${drop})`}>
-							<GameteCell x={gx} y={gy} r={108} w={38} chroms={[
-								{set: 'teal', pieces: longPieces, loci: [{t: 0.22, l: g[0]}, {t: 0.78, l: 'd', amber: true}], L: 160, dx: -26},
-								{set: shortSet, loci: [{t: 0.72, l: g[2]}], L: 100, dx: 34, cen: 0.3},
-							]} />
-							<Sx x={gx} y={gy + 150} text={g.split('').join(' ')} size={36} color={INK} weight={800} anchor="middle" />
+							<rect x={gx - 145} y={gy - 70} width={290} height={140} rx={24} fill="#fffdf8" stroke="rgba(60,45,20,0.25)" strokeWidth={3} />
+							<ABead x={gx - 80} y={gy - 8} l={g[0]} r={32} />
+							<ABead x={gx} y={gy - 8} l="d" r={32} amber />
+							<ABead x={gx + 80} y={gy - 8} l={g[2]} r={32} />
+							<Sx x={gx} y={gy + 56} text="gamete" size={28} color={INK_SOFT} hand anchor="middle" />
 						</g>
 					);
 				})}
-				<Tg x={1495} y={262} text="same new allele, new combinations" at={K4.many + 20} out={K4.none} anchor="middle" size={38} />
-				<GPill x={1495} y={912} text="from many meioses" at={K4.many + 34} anchor="middle" />
-				<ABead x={1255} y={262 - 12} l="" r={22} ghost o={prog(f, K4.none, 10)} />
-				<GreyCross x={1255} y={250} at={K4.none + 12} s={24} />
-				<Tg x={1295} y={262} text="no new allele from shuffling" at={K4.none + 10} size={38} />
+				<Tg x={1490} y={320} text="same new allele, new combinations" at={K4.many + 20} out={K4.none} anchor="middle" size={42} />
+				<GPill x={1490} y={790} text="from many meioses" at={K4.many + 34} anchor="middle" size={30} />
+				<ABead x={1250} y={880} l="" r={30} ghost o={prog(f, K4.none, 10)} />
+				<GreyCross x={1250} y={880} at={K4.none + 12} s={32} />
+				<Tg x={1300} y={896} text="no new allele from shuffling" at={K4.none + 10} size={44} />
 				{void K4.doesnt}{void K4.neighbours}{void K4.crossing}{void ROSE}{void TEALC}{void AMBER}
 			</Overlay>
 		</>

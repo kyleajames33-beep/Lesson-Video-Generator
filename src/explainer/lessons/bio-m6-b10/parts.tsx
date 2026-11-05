@@ -27,8 +27,8 @@ export const colsAt = (t: number): Cols => {
 		{x: lerp(1820, 1480, k), w: 340},
 	];
 };
-export const ROWY = [310, 425, 525];
-export const WHO_Y = 880;
+export const ROWY = [300, 440, 580];
+export const WHO_Y = 870;
 export const slotX = (k: number) => 930 + k * 160;
 export const HEADS = ['benefit', 'harm or risk', "the animal's welfare"];
 
@@ -41,12 +41,12 @@ export const BoardFrame: React.FC<{cols: Cols; heads?: number[]; headDim?: numbe
 			if (o <= 0.01) return null;
 			return (
 				<g key={i} opacity={o}>
-					<Sx x={c.x + 6} y={264} text={HEADS[i]} size={i === 2 ? 34 : 40} color={i === 2 ? BIO_INK : INK} weight={800} />
+					<Sx x={c.x + 6} y={264} text={HEADS[i]} size={i === 2 ? 38 : 46} color={i === 2 ? BIO_INK : INK} weight={800} />
 					<line x1={c.x} y1={282} x2={c.x + c.w - 20} y2={282} stroke={i === 2 ? BIO_INK : INK_SOFT} strokeWidth={3} />
 				</g>
 			);
 		})}
-		{who > 0.01 ? <Sx x={760} y={WHO_Y + 14} text="who" size={44} color={INK} weight={800} opacity={who * (1 - 0.65 * headDim)} /> : null}
+		{who > 0.01 ? <Sx x={760} y={WHO_Y + 14} text="who" size={50} color={INK} weight={800} opacity={who * (1 - 0.65 * headDim)} /> : null}
 	</g>
 );
 
@@ -54,7 +54,7 @@ export const BoardFrame: React.FC<{cols: Cols; heads?: number[]; headDim?: numbe
 export type ChipKind = 'benefit' | 'harm';
 /** A board chip in a column: one or two lines; `lit` 1 bright, 0 grey. Benefit chips carry a green stripe and a plus,
  * harm chips a red stripe and a minus. `dash` marks an objection that is not about outcomes. */
-export const JChip: React.FC<{col: {x: number; w: number}; y: number; lines: string[]; kind: ChipKind; o?: number; lit?: number; blank?: boolean; dash?: boolean; size?: number}> = ({col, y, lines, kind, o = 1, lit = 1, blank = false, dash = false, size = 30}) => {
+export const JChip: React.FC<{col: {x: number; w: number}; y: number; lines: string[]; kind: ChipKind; o?: number; lit?: number; blank?: boolean; dash?: boolean; size?: number}> = ({col, y, lines, kind, o = 1, lit = 1, blank = false, dash = false, size = 36}) => {
 	if (o <= 0.01) return null;
 	const l = clamp01(lit);
 	const w = col.w - 20, h = 24 + Math.max(1, lines.length) * size * 1.15;
@@ -69,7 +69,7 @@ export const JChip: React.FC<{col: {x: number; w: number}; y: number; lines: str
 	);
 };
 /** Bottom-centre anchor of a chip (for join lines). */
-export const chipAnchor = (col: {x: number; w: number}, y: number, lines = 1, size = 30): [number, number] => [col.x + (col.w - 20) / 2, y + 24 + lines * size * 1.15];
+export const chipAnchor = (col: {x: number; w: number}, y: number, lines = 1, size = 36): [number, number] => [col.x + (col.w - 20) / 2, y + 24 + lines * size * 1.15];
 /** A join line from a chip to a stakeholder icon, drawn on at `at`. */
 export const Join: React.FC<{a: [number, number]; b: [number, number]; at: number; o?: number; lit?: number}> = ({a, b, at, o = 1, lit = 1}) => {
 	const f = useCurrentFrame();
@@ -135,14 +135,14 @@ const icon = (k: WhoK, c: string) => {
 		default: return null;
 	}
 };
-export const WHO: Record<string, {k: WhoK; label: string[]}> = {
+export const WHO: Record<string, {k: WhoK; label: string[]; plate?: 'sprayer' | 'bee' | 'coins' | 'field'; pw?: number}> = {
 	growers: {k: 'tractor', label: ['growers']},
-	workers: {k: 'spray', label: ['farm', 'workers']},
+	workers: {k: 'spray', label: ['farm', 'workers'], plate: 'sprayer', pw: 64},
 	workersT: {k: 'tractor', label: ['farm', 'workers']},
 	community: {k: 'house', label: ['nearby', 'communities']},
-	insects: {k: 'bee', label: ['beneficial', 'insects']},
+	insects: {k: 'bee', label: ['beneficial', 'insects'], plate: 'bee', pw: 96},
 	company: {k: 'building', label: ['seed', 'company']},
-	ecosystem: {k: 'field', label: ['farm', 'ecosystem']},
+	ecosystem: {k: 'field', label: ['farm', 'ecosystem'], plate: 'field', pw: 150},
 	calves: {k: 'calf', label: ['calves']},
 	regulators: {k: 'building', label: ['regulators']},
 };
@@ -153,14 +153,16 @@ export const WhoIcon: React.FC<{name: keyof typeof WHO; x: number; y?: number; o
 	const l = clamp01(lit);
 	return (
 		<g opacity={o}>
-			{l > 0.01 ? <circle cx={x} cy={y} r={44} fill={AMBER} opacity={0.18 * l} /> : null}
-			{d.k === 'calf' ? <Pl p={PLATES.calf} cx={x} cy={y} w={78} /> : <g transform={`translate(${x},${y}) scale(1.05)`}>{icon(d.k, l > 0.5 ? INK : GREY_INK)}</g>}
-			{d.label.map((t, i) => <Sx key={i} x={x} y={y + 64 + i * 26} text={t} size={24} color={GREY_INK} hand anchor="middle" />)}
+			{l > 0.01 ? <circle cx={x} cy={y} r={60} fill={AMBER} opacity={0.2 * l} /> : null}
+			{d.k === 'calf' ? <Pl p={PLATES.calf} cx={x} cy={y} w={110} /> : d.plate ? <Pl p={PLATES[d.plate]} cx={x} cy={y} w={d.pw ?? 90} /> : <g transform={`translate(${x},${y}) scale(1.45)`}>{icon(d.k, l > 0.5 ? INK : GREY_INK)}</g>}
+			{d.label.map((t, i) => <Sx key={i} x={x} y={y + 82 + i * 30} text={t} size={29} color={l > 0.5 ? INK : GREY_INK} hand anchor="middle" />)}
 		</g>
 	);
 };
+/** A stakeholder glyph alone (no label), for checklist cards. */
+export const WhoGlyph: React.FC<{k: WhoK; s?: number}> = ({k, s = 1.5}) => <g transform={`scale(${s})`}>{icon(k, INK)}</g>;
 /** Top-centre anchor of an icon (join lines end here). */
-export const whoTop = (x: number): [number, number] => [x, WHO_Y - 40];
+export const whoTop = (x: number): [number, number] => [x, WHO_Y - 56];
 
 // ---------- caterpillar glyphs ----------
 /** Open (susceptible) or filled (resistant) caterpillar glyph; `dead` greys and flattens it. */

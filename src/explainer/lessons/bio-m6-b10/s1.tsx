@@ -6,7 +6,7 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
-import {Heading, MistakeChip, Overlay, Sx} from '../bio-m5-b13/shared';
+import {Heading, MistakeChip, Overlay, PlateB, Sx} from '../bio-m5-b13/shared';
 import {FillBar, GTag} from '../bio-m6-b01/parts';
 import {GreyCross, ScribbleRing, TickG, Tg} from '../bio-m6-b07/parts';
 import {S} from './common';
@@ -27,17 +27,18 @@ export const SceneHook: React.FC = () => {
 		<>
 			<Heading text="How should we judge it?" at={K1.judge} size={64} />
 			<Overlay>
-				<Pl p={PLATES.cotton} cx={460} cy={440} w={320} o={prog(f, K1.two + 20, 16)} />
-				<Pl p={PLATES.larva} cx={730} cy={560} w={190} o={prog(f, K1.cat, 14)} />
-				<StopMark x={800} y={490} o={prog(f, K1.cat + 14, 10)} />
-				<Pl p={PLATES.bull} cx={1380} cy={420} w={460} o={prog(f, K1.bull, 16)} glow={vis(f, K1.why + 10, K1.why + 70, 14)} />
-				<Sx x={1380} y={612} text="a hornless dairy bull" size={28} color={GREY_INK} hand anchor="middle" at={K1.bull + 14} />
-				<AlleleStrip cx={1380} y={670} n={12} pitch={30} gap={30} band={prog(f, K1.edited + 16, 12)} bandAt={5} draw={prog(f, K1.edited, 20, x => x)} o={f >= K1.edited ? 1 : 0} />
-				<ScribbleRing cx={stripRung(1380, 5, 12, 30)} cy={685} rx={30} ry={40} at={K1.edited + 24} out={K1.both} seed={6} />
-				<Tg x={1380} y={780} text="hornless allele" at={K1.edited + 28} out={K1.both} anchor="middle" size={38} />
-				<g transform={`translate(460,690) scale(${shrink}) translate(-460,-690)`}><TickG x={460} y={690} at={K1.both} s={44} /></g>
-				<g transform={`translate(1660,560) scale(${shrink}) translate(-1660,-560)`}><TickG x={1660} y={560} at={K1.both + 8} s={44} /></g>
-				<Sx x={960} y={890} text="works ≠ justified" size={66} color={AMBER_INK} hand anchor="middle" at={K1.same + 6} />
+				<Pl p={PLATES.cotton} cx={430} cy={450} w={420} o={prog(f, K1.two + 20, 16)} />
+				<Pl p={PLATES.larva} cx={760} cy={600} w={250} o={prog(f, K1.cat, 14)} />
+				<StopMark x={850} y={520} r={34} o={prog(f, K1.cat + 14, 10)} />
+				<Sx x={430} y={760} text="Bt cotton" size={40} color={INK} hand anchor="middle" at={K1.two + 30} />
+				<Pl p={PLATES.bull} cx={1400} cy={410} w={620} o={prog(f, K1.bull, 16)} glow={vis(f, K1.why + 10, K1.why + 70, 14)} />
+				<Sx x={1400} y={640} text="a hornless dairy bull" size={36} color={GREY_INK} hand anchor="middle" at={K1.bull + 14} />
+				<AlleleStrip cx={1400} y={700} n={12} pitch={40} gap={40} band={prog(f, K1.edited + 16, 12)} bandAt={5} draw={prog(f, K1.edited, 20, x => x)} o={f >= K1.edited ? 1 : 0} />
+				<ScribbleRing cx={stripRung(1400, 5, 12, 40)} cy={720} rx={36} ry={48} at={K1.edited + 24} out={K1.both} seed={6} />
+				<Tg x={1400} y={830} text="hornless allele" at={K1.edited + 28} out={K1.both} anchor="middle" size={44} />
+				<g transform={`translate(560,760) scale(${shrink}) translate(-560,-760)`}><TickG x={600} y={750} at={K1.both} s={50} /></g>
+				<g transform={`translate(1760,600) scale(${shrink}) translate(-1760,-600)`}><TickG x={1760} y={600} at={K1.both + 8} s={50} /></g>
+				<Sx x={960} y={960} text="works ≠ justified" size={76} color={AMBER_INK} hand anchor="middle" at={K1.same + 6} />
 			</Overlay>
 		</>
 	);
@@ -55,9 +56,13 @@ export const SceneNeeds: React.FC = () => {
 				<BoardFrame cols={C2} heads={[prog(f, K2.benefit, 12), prog(f, K2.harm, 12), 0]} who={prog(f, K2.who, 12)} />
 				{W4.map((n, k) => <WhoIcon key={n} name={n} x={slotX(k)} o={prog(f, K2.stake + 14 + k * 6, 12)} />)}
 				{/* one group helped, another pays: the lines cross */}
-				<JChip col={C2[0]} y={ROWY[0]} lines={['']} kind="benefit" blank o={prog(f, K2.help, 12)} />
-				<JChip col={C2[1]} y={ROWY[0]} lines={['']} kind="harm" blank o={prog(f, K2.help + 8, 12)} />
-				<Join a={chipAnchor(C2[0], ROWY[0])} b={whoTop(slotX(3))} at={K2.help + 14} />
+				<Pl p={PLATES.cotton} cx={410} cy={420} w={300} o={prog(f, 4, 14) * (1 - prog(f, K2.pros - 20, 14))} />
+				<Pl p={PLATES.bull} cx={410} cy={760} w={420} o={prog(f, 10, 14) * (1 - prog(f, K2.pros - 20, 14))} />
+				<JChip col={C2[0]} y={ROWY[0]} lines={['what improves,', 'and by how much?']} kind="benefit" o={prog(f, K2.benefit + 6, 12)} lit={1 - 0.6 * prog(f, K2.pros, 12)} />
+				<JChip col={C2[1]} y={ROWY[0]} lines={['what could go wrong?']} kind="harm" o={prog(f, K2.harm + 6, 12)} lit={1 - 0.6 * prog(f, K2.pros, 12)} />
+				<Tg x={1015} y={560} text="helps one group" at={K2.help + 14} anchor="middle" size={38} />
+				<Tg x={1560} y={560} text="costs another" at={K2.help + 24} anchor="middle" size={38} />
+				<Join a={chipAnchor(C2[0], ROWY[0], 2)} b={whoTop(slotX(3))} at={K2.help + 14} />
 				<Join a={chipAnchor(C2[1], ROWY[0])} b={whoTop(slotX(0))} at={K2.help + 24} />
 				<Sx x={760} y={800} text="stakeholders:" size={42} color={INK} weight={800} at={K2.stake} />
 				<Sx x={1060} y={800} text="anyone or anything affected" size={38} color={BIO_INK} hand at={K2.stake + 10} />
@@ -70,7 +75,7 @@ export const SceneNeeds: React.FC = () => {
 					{[0, 1, 2].map(k => <g key={k}><line x1={210} y1={420 + k * 60} x2={370} y2={420 + k * 60} stroke={GREYT} strokeWidth={5} strokeLinecap="round" /><line x1={450} y1={420 + k * 60} x2={610} y2={420 + k * 60} stroke={GREYT} strokeWidth={5} strokeLinecap="round" /></g>)}
 				</g>
 				<GreyCross x={410} y={465} at={K2.pros + 30} s={110} />
-				<Tg x={410} y={710} text="say who gets which" at={K2.say} anchor="middle" size={44} />
+				<Tg x={410} y={720} text="say who gets which" at={K2.say} anchor="middle" size={50} />
 				{void K2.three}{void PANEL}
 			</Overlay>
 		</>
@@ -81,7 +86,7 @@ export const SceneNeeds: React.FC = () => {
 const W6 = ['growers', 'workers', 'community', 'insects', 'company', 'ecosystem'] as const;
 type CB = {chips: {o: number; lit: number}[]; joinAt: number[][]; whoLit?: number[]; whoO?: number; cols?: Cols; joinO?: number};
 const CHIPS = [
-	{col: 0, row: 0, lines: ['far fewer insecticide sprays'], kind: 'benefit' as const, to: [0, 1, 2, 3]},
+	{col: 0, row: 0, lines: ['far fewer', 'insecticide sprays'], kind: 'benefit' as const, to: [0, 1, 2, 3]},
 	{col: 1, row: 0, lines: ['resistance can evolve;', 'managed by refuges'], kind: 'harm' as const, to: [0, 5]},
 	{col: 1, row: 1, lines: ['licence fee each season'], kind: 'harm' as const, to: [4]},
 	{col: 1, row: 2, lines: ['still a monoculture', '(not caused by Bt)'], kind: 'harm' as const, to: [5]},
@@ -100,24 +105,32 @@ const K3 = cues(S('cotton-benefit'), {start: 'Start with the plant', carries: 'B
 export const SceneCottonBenefit: React.FC = () => {
 	const f = useCurrentFrame();
 	const joins = [[K3.growers, K3.workers, K3.comm, K3.ins], ...NEVER.slice(1)];
+	const m = smooth(prog(f, K3.sprayed - 30, 30, x => x));
 	return (
 		<>
 			<Heading text="Bt cotton: the benefit" at={4} size={60} />
 			<Overlay>
-				<BoardFrame cols={C2} />
-				<Pl p={PLATES.cotton} cx={250} cy={400} w={240} o={prog(f, K3.carries, 14)} />
-				<Pl p={PLATES.larva} cx={540} cy={420} w={200} o={prog(f, K3.toxic - 6, 14)} dim={prog(f, K3.toxic + 40, 20)} />
-				{Array.from({length: 5}, (_, k) => {
-					const t = smooth(prog(f, K3.toxic + 4 + k * 5, 26, x => x));
-					return <circle key={k} cx={lerp(330, 520, t)} cy={lerp(380, 420, t) - Math.sin(t * Math.PI) * 30} r={6} fill="#cfe3d2" stroke="#3f7a52" strokeWidth={2} opacity={prog(f, K3.toxic + 4 + k * 5, 6) * (1 - prog(f, K3.toxic + 28 + k * 5, 8))} />;
+				{/* the mechanism fills the frame first; plant and caterpillar move into the case panel when the sprays start */}
+				<BoardFrame cols={C2} heads={[m, m, 0]} who={m} panel={m} />
+				<Pl p={PLATES.cotton} cx={lerp(700, 250, m)} cy={lerp(560, 420, m)} w={lerp(560, 290, m)} o={prog(f, K3.carries, 14)} />
+				<Pl p={PLATES.larva} cx={lerp(1380, 555, m)} cy={lerp(560, 420, m)} w={lerp(560, 260, m)} o={prog(f, K3.toxic - 6, 14)} dim={prog(f, K3.toxic + 40, 20)} />
+				{Array.from({length: 7}, (_, k) => {
+					const t = smooth(prog(f, K3.toxic + 4 + k * 5, 30, x => x));
+					return <circle key={k} cx={lerp(860, 1250, t)} cy={lerp(500, 560, t) - Math.sin(t * Math.PI) * 60} r={13} fill="#cfe3d2" stroke="#3f7a52" strokeWidth={3} opacity={prog(f, K3.toxic + 4 + k * 5, 6) * (1 - prog(f, K3.toxic + 32 + k * 5, 8)) * (1 - m)} />;
 				})}
-				<Tg x={410} y={600} text="Bt protein: certain caterpillars only" at={K3.toxic + 10} out={K3.pct} anchor="middle" size={34} />
-				<Sx x={130} y={704} text="before Bt" size={30} color={GREY_INK} hand at={K3.sprayed} />
-				<FillBar x={280} y={682} w={410} h={30} p={prog(f, K3.sprayed, 26)} color="#9aa3ab" o={prog(f, K3.sprayed, 10)} />
-				<Sx x={130} y={784} text="with Bt" size={30} color={GREY_INK} hand at={K3.pct} />
-				<FillBar x={280} y={762} w={410} h={30} p={0.15 * prog(f, K3.pct, 20)} color={AMBER} o={prog(f, K3.pct, 10)} />
-				<GTag x={410} y={830} text="since 1996: insecticide use down about 85% (CSIRO)" at={K3.pct + 10} size={20} anchor="middle" />
-				<CottonBoard chips={[{o: prog(f, K3.benefits, 12), lit: 1}, {o: 0, lit: 0}, {o: 0, lit: 0}, {o: 0, lit: 0}]} joinAt={joins} whoO={0.85}
+				<Tg x={1040} y={940} text="Bt protein: toxic to certain caterpillars" at={K3.toxic + 10} out={K3.only} anchor="middle" size={48} />
+				<Tg x={1040} y={940} text="works only after binding in their guts" at={K3.only + 6} out={K3.sprayed - 30} anchor="middle" size={48} />
+				<Pl p={PLATES.bact} cx={1380} cy={540} w={420} o={vis(f, K3.carries + 10, K3.toxic - 10, 12)} />
+				<Tg x={1380} y={760} text="soil bacterium" at={K3.carries + 16} out={K3.toxic - 10} anchor="middle" size={42} color={GREY_INK} />
+				<Tg x={700} y={260} text="carries a gene from a soil bacterium" at={K3.carries + 20} out={K3.toxic} anchor="middle" size={44} color={BIO_INK} />
+				<PlateB p={PLATES.sprayer} cx={170} cy={700} w={52} o={prog(f, K3.sprayed, 10)} />
+					<Sx x={210} y={712} text="before" size={34} color={GREY_INK} hand at={K3.sprayed} />
+				<FillBar x={330} y={680} w={370} h={40} p={prog(f, K3.sprayed, 26)} color="#9aa3ab" o={prog(f, K3.sprayed, 10)} />
+				<Sx x={210} y={792} text="with Bt" size={34} color={GREY_INK} hand at={K3.pct} />
+				<FillBar x={330} y={760} w={370} h={40} p={0.15 * prog(f, K3.pct, 20)} color={AMBER} o={prog(f, K3.pct, 10)} />
+					<Sx x={410} y={856} text="about 85% fewer sprays" size={38} color={AMBER_INK} weight={800} anchor="middle" at={K3.pct + 16} />
+				<Sx x={410} y={900} text="with better pest management (CSIRO)" size={28} color={GREY_INK} anchor="middle" weight={600} at={K3.pct + 10} />
+				<CottonBoard chips={[{o: prog(f, K3.benefits, 12), lit: 1}, {o: 0, lit: 0}, {o: 0, lit: 0}, {o: 0, lit: 0}]} joinAt={joins} whoO={0.85 * m}
 					whoLit={[K3.growers, K3.workers, K3.comm, K3.ins, 1e9, 1e9].map(a => prog(f, a + 10, 10))} />
 				{void K3.start}{void K3.only}{void K3.together}
 			</Overlay>
@@ -149,29 +162,30 @@ export const SceneCottonRisks: React.FC = () => {
 			<Heading text="Bt cotton: the risks" at={4} size={60} />
 			<Overlay>
 				<BoardFrame cols={C2} />
-				<Pl p={PLATES.cotton} cx={410} cy={320} w={130} o={1 - prog(f, K4.bio - 10, 12)} />
+				<Pl p={PLATES.cotton} cx={250} cy={330} w={150} o={1 - prog(f, K4.bio - 10, 12)} />
+					<Pl p={PLATES.larva} cx={560} cy={330} w={150} o={1 - prog(f, K4.bio - 10, 12)} />
 				{/* the refuge field */}
 				<g opacity={fieldO}>
 					<rect x={130} y={440} width={410} height={330} rx={12} fill="#eef3e2" stroke="#7c9a5a" strokeWidth={3} />
 					<rect x={560} y={440} width={130} height={330} rx={12} fill="#f6f1df" stroke="#a39a6a" strokeWidth={3} strokeDasharray="10 7" opacity={prog(f, K4.refuges - 6, 12)} />
-					<Sx x={335} y={428} text="Bt cotton" size={26} color={GREY_INK} hand anchor="middle" />
-					<Sx x={625} y={428} text="refuge" size={26} color={GREY_INK} hand anchor="middle" opacity={prog(f, K4.refuges - 6, 12)} />
+					<Sx x={335} y={428} text="Bt cotton" size={34} color={INK} hand anchor="middle" />
+					<Sx x={625} y={428} text="refuge" size={34} color={INK} hand anchor="middle" opacity={prog(f, K4.refuges - 6, 12)} />
 					{BLK.map(([x, y], i) => {
 						const isBase = BASE.includes(i);
 						const mx = isBase ? lerp(x, 515, meet) : x;
 						const resO = isBase ? 1 : vis(f, addAt(i), K4.refuges, 10);
 						return (
 							<g key={i}>
-								<CatG x={mx} y={y} res={false} o={prog(f, K4.cat + i, 8) * (1 - resO)} dead={prog(f, K4.survive + 4 + (i % 4) * 3, 14)} />
-								<CatG x={mx} y={y} res o={resO * prog(f, K4.cat + i, 8)} />
+								<CatG x={mx} y={y} s={1.3} res={false} o={prog(f, K4.cat + i, 8) * (1 - resO)} dead={prog(f, K4.survive + 4 + (i % 4) * 3, 14)} />
+								<CatG x={mx} y={y} s={1.3} res o={resO * prog(f, K4.cat + i, 8)} />
 							</g>
 						);
 					})}
-					{REF.map(([x, y], i) => <CatG key={i} x={x} y={y} res={false} s={0.85} o={prog(f, K4.refuges + 8 + i * 3, 10)} />)}
+					{REF.map(([x, y], i) => <CatG key={i} x={x} y={y} res={false} s={1} o={prog(f, K4.refuges + 8 + i * 3, 10)} />)}
 					{[[626, 529], [626, 607], [626, 685]].map(([x, y], i) => <CatG key={i} x={x} y={y} res={i === 2} s={0.55} o={prog(f, K4.keeping + i * 6, 10)} />)}
 				</g>
-				<Tg x={410} y={830} text="selection for resistance" at={K4.natsel} out={K4.refuges} anchor="middle" size={38} />
-				<Tg x={410} y={830} text="refuge: keeps resistance alleles rare" at={K4.rare} out={K4.licence} anchor="middle" size={34} />
+				<Tg x={410} y={830} text="selection for resistance" at={K4.natsel} out={K4.refuges} anchor="middle" size={44} />
+				<Tg x={410} y={830} text="refuge keeps resistance rare" at={K4.rare} out={K4.licence} anchor="middle" size={40} />
 				{/* the monoculture */}
 				<Pl p={PLATES.field} cx={410} cy={600} w={520} o={prog(f, K4.bio - 6, 14)} />
 				<ScribbleRing cx={277} cy={600} rx={128} ry={78} at={K4.bio + 10} seed={8} />
@@ -182,9 +196,9 @@ export const SceneCottonRisks: React.FC = () => {
 				{/* growers pay, the company gains */}
 				<g opacity={fee}>
 					<path d={`M${arcA[0]},${arcA[1]} C${arcA[0]},770 ${arcB[0]},770 ${arcB[0]},${arcB[1]}`} fill="none" stroke={AMBER} strokeWidth={3.5} strokeDasharray="10 8" />
-					<Coin x={coinX} y={coinY} o={prog(f, K4.company, 8)} />
+					<Coin x={coinX} y={coinY} r={24} o={prog(f, K4.company, 8)} />
 				</g>
-				<Tg x={1560} y={700} text="growers pay, company gains" at={K4.company + 6} out={K4.bio} anchor="middle" size={38} />
+				<Tg x={1250} y={735} text="growers pay, company gains" at={K4.company + 6} out={K4.bio} anchor="middle" size={42} />
 				{void K4.over}{void K4.susc}{void K4.field}{void INK}{void INK_SOFT}{void AMBER_INK}
 			</Overlay>
 		</>
@@ -202,18 +216,18 @@ export const SceneCottonVerdict: React.FC = () => {
 			<Heading text="A verdict with a condition" at={4} size={60} />
 			<Overlay>
 				<BoardFrame cols={C2} />
-				<Pl p={PLATES.cotton} cx={410} cy={440} w={300} />
-				<CottonBoard chips={lit.map(l => ({o: 1, lit: l}))} joinAt={[[-100, -100, -100, -100], [-100, -100], [-100], [-100]]} whoO={0.85} joinO={1 - 0.9 * prog(f, K5.justified - 10, 14)}
+				<Pl p={PLATES.cotton} cx={410} cy={450} w={400} />
+				<CottonBoard chips={lit.map(l => ({o: 1, lit: l}))} joinAt={[[-100, -100, -100, -100], [-100, -100], [-100], [-100]]} whoO={0.85 * (1 - prog(f, K5.justified - 10, 14))} joinO={1 - prog(f, K5.justified - 10, 14)}
 					whoLit={[0, 1, 2, 3, 4, 5].map(k => (k < 4 ? lit[0] : 0) + (k === 0 || k === 5 ? lit[1] : 0) + (k === 4 || k === 0 ? lit[2] : 0))} />
-				<GTag x={410} y={650} text="most Australian cotton is Bt" at={K5.chosen} out={K5.justified} size={26} anchor="middle" />
+				<Tg x={410} y={720} text="most Australian cotton is Bt" at={K5.chosen} out={K5.notice} anchor="middle" size={36} color={GREY_INK} />
 				<g opacity={prog(f, K5.justified, 12)}>
-					<rect x={vx} y={650} width={vw} height={70} rx={20} fill="#fff3d9" stroke={AMBER} strokeWidth={4} />
-					<Sx x={vx + 30} y={698} text="Verdict: justified for Australian cotton" size={40} color={INK} hand />
+					<rect x={vx} y={730} width={vw} height={86} rx={20} fill="#fff3d9" stroke={AMBER} strokeWidth={4} />
+					<Sx x={vx + 30} y={788} text="Verdict: justified for Australian cotton" size={48} color={INK} hand />
 				</g>
-				<Sx x={vx + 30} y={775} text="condition: resistance management keeps working" size={36} color={AMBER_INK} hand at={K5.aslong} />
-				<ScribbleRing cx={vx + 102} cy={764} rx={88} ry={30} at={K5.cond} seed={2} />
+				<Sx x={vx + 30} y={880} text="condition: resistance management keeps working" size={42} color={AMBER_INK} hand at={K5.aslong} />
+				<ScribbleRing cx={vx + 118} cy={867} rx={104} ry={34} at={K5.cond} seed={2} />
 				<g opacity={1 - prog(f, K5.notice + 90, 14)}>
-					<MistakeChip x={130} y={860} text="it boosts yield, so it's good" at={K5.notice} cross={K5.notice + 20} size={30} />
+					<MistakeChip x={130} y={930} text="it boosts yield, so it's good" at={K5.notice} cross={K5.notice + 20} size={32} />
 				</g>
 				{void K5.so}{void K5.reaches}{void BIO_INK}
 			</Overlay>

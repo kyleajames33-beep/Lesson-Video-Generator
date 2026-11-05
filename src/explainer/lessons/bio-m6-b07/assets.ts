@@ -31,5 +31,15 @@ export const PLATES = {
 	dish: B04.dish,
 	bact: B01.bact,
 	plasmid: mk('m6-bacterium-plasmid-v1.png', N2, [200, 551, 1799, 1447]),
+	// Quality pass (6 Nov), measured from the real files: B3a's cleavage stages for "every cell is copied from that first
+	// one", B5a's painted chromosome pair (scene 6), the crossing-over plate as a scene 2 and decision-rule icon.
+	cleave1: mk('b3a-cleavage-1-v1.png', [1800, 1800], [213, 212, 1587, 1582]),
+	cleave2: mk('b3a-cleavage-2-v1.png', [1800, 1800], [213, 212, 1587, 1582]),
+	cleave4: mk('b3a-cleavage-4-v1.png', [1800, 1800], [213, 212, 1587, 1582]),
+	pair: mk('b5x-chromosome-pair-v1.png', N2, [283, 232, 1784, 1793]),
+	coIcon: mk('cd-crossing-over-c-v1.png', N2, [100, 106, 1901, 1860]),
+	metIcon: mk('cd-m1-metaphase-v1.png', N2, [98, 97, 1903, 1861]),
 };
-export const ASSETS_B07: string[] = Object.values(PLATES).map(p => p.src);
+/** Brief 88 stage plates drawn by painted.tsx (scenes 3 and 4). */
+const CD_FILES = ['homologous-pair-loci', 'm1-metaphase', 'm1-metaphase-empty', 'm1-anaphase', 'm1-telophase', 'four-cells', 'crossing-over-a', 'crossing-over-b', 'crossing-over-c'].map(n => `${B}cd-${n}-v1.png`);
+export const ASSETS_B07: string[] = [...new Set([...Object.values(PLATES).map(p => p.src), ...CD_FILES])];

@@ -11,7 +11,7 @@ import {HscTag, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, BIO_INK, CARD, GREY_INK, INK, INK_SOFT, JChip, PLATES, Pl, Strip, prog} from './parts';
+import {AMBER, AMBER_INK, BIO_INK, CARD, EDGE, GREY_INK, INK, INK_SOFT, JChip, PLATES, Pl, Strip, prog} from './parts';
 
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1680, cy = 840}) => {
 	const h = hold(id);
@@ -31,6 +31,19 @@ const AnsBox: React.FC<{x: number; y: number; w: number; h: number; at: number; 
 const Line: React.FC<{x: number; y: number; text: string; at: number; size?: number; color?: string}> = ({x, y, text, at, size = 34, color = AMBER_INK}) => (
 	<Sx x={x} y={y} text={text} size={size} color={color} hand at={at} />
 );
+
+/** A small givens card for an exam question (the stem's facts drawn as a card, nothing answer-bearing). */
+const GivenChip: React.FC<{x: number; y: number; lines: string[]; at: number; w?: number}> = ({x, y, lines, at, w = 500}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12);
+	if (o <= 0.01) return null;
+	return (
+		<g opacity={o}>
+			<rect x={x} y={y} width={w} height={22 + lines.length * 40} rx={16} fill="#fffaf0" stroke={EDGE} strokeWidth={2.5} />
+			{lines.map((t, i) => <Sx key={i} x={x + 20} y={y + 46 + i * 40} text={t} size={32} color={INK} hand />)}
+		</g>
+	);
+};
 
 // ---------- item 1: Golden Rice ----------
 type T1 = {a: number; b: number; qa: number; qb: number};
@@ -55,12 +68,18 @@ export const SceneAttempt: React.FC = () => {
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
-				<Pl p={PLATES.rice} cx={1660} cy={300} w={250} o={prog(f, KA.golden, 14)} />
-				<QText q={Q1(t)} x={140} y={250} w={1360} size={36} card={false} />
-				<AnsBox x={140} y={690} w={1300} h={110} at={KA.identify + 20} label="(a)" />
-				<AnsBox x={140} y={815} w={1300} h={180} at={KA.explain + 20} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KA.two} />
+				<QText q={Q1(t)} x={140} y={244} w={1120} size={34} card={false} />
+				<AnsBox x={140} y={740} w={1120} h={100} at={KA.identify + 20} label="(a)" />
+				<AnsBox x={140} y={855} w={1120} h={140} at={KA.explain + 20} label="(b)" />
+				{/* the givens, drawn: rice plant, white and golden rice, and the stem's facts (nothing answer-bearing) */}
+				<Pl p={PLATES.ricePlant} cx={1400} cy={370} w={230} o={prog(f, KA.golden - 6, 14)} />
+				<Pl p={PLATES.riceBowls} cx={1640} cy={400} w={280} o={prog(f, KA.golden + 10, 14)} />
+				<Sx x={1640} y={510} text="white and Golden Rice" size={30} color={GREY_INK} hand anchor="middle" at={KA.golden + 16} />
+				<GivenChip x={1290} y={560} lines={['beta-carotene', '→ vitamin A']} at={KA.golden + 30} />
+				<GivenChip x={1290} y={680} lines={['too little vitamin A', '→ blindness in children']} at={KA.developed + 10} />
+				<GivenChip x={1290} y={800} lines={['rice: the main food']} at={KA.developed + 40} />
+				<PauseHold id="attempt" at={KA.pause} cx={1700} cy={950} />
 			</Overlay>
 		</>
 	);
@@ -110,18 +129,26 @@ qCheck(S2({a: 0, b: 0, c: 0, d: 0}).blocks, MARKS2.map(phrase => ({phrase, at: 0
 
 // ---------- 11c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', aqua: 'AquAdvantage salmon carry', produced: 'They are produced', raised: 'and were raised', evaluate: 'Evaluate the use', pause: 'Pause here to answer'});
-export const SceneAttemptTwo: React.FC = () => (
-	<>
-		<Heading text="Exam question 2" at={KC.second} size={50} />
-		<Overlay>
-			<HscTag at={KC.second} />
-			<CardBox x={100} y={180} w={1720} h={830} at={KC.aqua - 6} />
-			<QText q={Q2({a: KC.aqua, b: KC.produced, c: KC.raised, d: KC.evaluate})} x={140} y={252} w={1640} size={36} card={false} />
-			<AnsBox x={140} y={600} w={1320} h={390} at={KC.evaluate + 20} label="answer" />
-			<PauseHold id="attempt-two" at={KC.pause} cy={800} />
-		</Overlay>
-	</>
-);
+export const SceneAttemptTwo: React.FC = () => {
+	const f = useCurrentFrame();
+	return (
+		<>
+			<Heading text="Exam question 2" at={KC.second} size={50} />
+			<Overlay>
+				<HscTag at={KC.second} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KC.second} />
+				<QText q={Q2({a: KC.aqua, b: KC.produced, c: KC.raised, d: KC.evaluate})} x={140} y={244} w={1120} size={34} card={false} />
+				<AnsBox x={140} y={720} w={1120} h={275} at={KC.evaluate + 20} label="answer" />
+				{/* the givens, drawn: a salmon and the stem's three facts (nothing answer-bearing) */}
+				<Pl p={PLATES.salmon} cx={1550} cy={330} w={460} o={prog(f, KC.second + 4, 14)} />
+				<GivenChip x={1290} y={500} lines={['extra growth hormone gene', '→ market size sooner']} at={KC.aqua + 20} />
+				<GivenChip x={1290} y={620} lines={['all female,', 'effectively sterile']} at={KC.produced + 10} />
+				<GivenChip x={1290} y={740} lines={['secure tanks on land']} at={KC.raised + 10} />
+				<PauseHold id="attempt-two" at={KC.pause} cx={1700} cy={940} />
+			</Overlay>
+		</>
+	);
+};
 
 // ---------- 11d. Feedback two ----------
 const KD = cues(S('feedback-two'), {fish: 'Fish farmers benefit', sooner: 'reach market sooner', escape: 'escape', breeding: 'breeding with wild', eff: 'Effective sterility', unlikely: 'very unlikely', protects: 'protects wild salmon', welfare: 'welfare', justified: 'justified under these controls', listing: 'Listing', mistake: 'the classic mistake'});
@@ -137,7 +164,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<CardBox x={100} y={180} w={1720} h={160} at={-100} />
 				<QText q={S2(ALL2, [{phrase: MARKS2[0], at: KD.sooner}, {phrase: MARKS2[1], at: KD.unlikely}, {phrase: MARKS2[2], at: KD.unlikely + 14}])} x={140} y={230} w={2500} size={36} card={false} s={0.62} />
 				{['benefit', 'harm or risk', "the fish's welfare"].map((h, i) => (
-					<g key={h} opacity={prog(f, i === 0 ? KD.sooner - 10 : i === 1 ? KD.escape - 6 : KD.welfare - 6, 12)}>
+					<g key={h} opacity={0.35 * prog(f, 4 + i * 4, 12) + 0.65 * prog(f, i === 0 ? KD.sooner - 10 : i === 1 ? KD.escape - 6 : KD.welfare - 6, 12)}>
 						<Sx x={MC[i].x + 6} y={408} text={h} size={36} color={i === 2 ? BIO_INK : INK} weight={800} />
 						<line x1={MC[i].x} y1={424} x2={MC[i].x + MC[i].w - 20} y2={424} stroke={i === 2 ? BIO_INK : INK_SOFT} strokeWidth={3} />
 					</g>
@@ -153,7 +180,8 @@ export const SceneFeedbackTwo: React.FC = () => {
 					<Sx x={170} y={744} text="Verdict: justified, with effective sterility and land tanks;" size={42} color={INK} hand />
 					<Sx x={170} y={798} text="welfare must be checked" size={42} color={INK} hand />
 				</g>
-				<MistakeChip x={140} y={870} text="a list of pros and cons, no verdict" at={KD.listing} cross={KD.mistake} size={32} />
+				<Pl p={PLATES.salmon} cx={1560} cy={930} w={360} o={prog(f, 4, 14) * (1 - prog(f, KD.justified - 10, 14))} />
+					<MistakeChip x={140} y={870} text="a list of pros and cons, no verdict" at={KD.listing} cross={KD.mistake} size={32} />
 				{void KD.fish}{void KD.breeding}{void KD.eff}{void CARD}
 			</Overlay>
 		</>
@@ -161,6 +189,12 @@ export const SceneFeedbackTwo: React.FC = () => {
 };
 
 // ---------- 12. Decision rule and handoff ----------
+const SHOW: {at: (k: Record<string, number>) => number; p: (typeof PLATES)[keyof typeof PLATES]; w: number; label: string; cy?: number}[] = [
+	{at: k => k.benefit, p: PLATES.cotton, w: 340, label: 'fewer sprays: growers, insects'},
+	{at: k => k.harm, p: PLATES.larva, w: 340, label: 'resistance: everyone using Bt'},
+	{at: k => k.animal, p: PLATES.calf, w: 420, label: 'the animal itself'},
+	{at: k => k.check, p: PLATES.cellPlasmid, w: 440, label: 'what the checks found', cy: 500},
+]
 const KE = cues(S('decision-rule'), {so: 'So to judge', benefit: 'name a concrete benefit', harm: 'a concrete harm', animal: 'for an animal', check: 'Check what the evidence', kind: 'say which kind', verdict: 'end with a verdict', next: 'Next, where'});
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
@@ -177,11 +211,22 @@ export const SceneDecision: React.FC = () => {
 			<Overlay>
 				{STEPS.map((s, i) => (
 					<g key={i} opacity={prog(f, s.at, 14)}>
-						<rect x={140} y={225 + i * 118} width={1180} height={94} rx={22} fill={CARD} stroke={s.blue ? BIO_INK : AMBER} strokeWidth={3.5} />
-						<Sx x={190} y={286 + i * 118} text={`${i + 1}`} size={44} color={AMBER_INK} weight={800} />
-						<Sx x={250} y={286 + i * 118} text={s.t} size={46} color={s.blue ? BIO_INK : INK} hand />
+						<rect x={120} y={225 + i * 118} width={1240} height={94} rx={22} fill={CARD} stroke={s.blue ? BIO_INK : AMBER} strokeWidth={3.5} />
+						<Sx x={170} y={290 + i * 118} text={`${i + 1}`} size={50} color={AMBER_INK} weight={800} />
+						<Sx x={240} y={290 + i * 118} text={s.t} size={52} color={s.blue ? BIO_INK : INK} hand />
 					</g>
 				))}
+				{/* the case that each step points at, one at a time */}
+				{SHOW.map((c, i) => {
+					const end = i + 1 < SHOW.length ? SHOW[i + 1].at(KE) : KE.next;
+					const o = prog(f, c.at(KE) + 6, 14) * (1 - prog(f, end + 2, 12));
+					return o > 0.01 ? (
+						<g key={i} opacity={o}>
+							<Pl p={c.p} cx={1600} cy={c.cy ?? 470} w={c.w} />
+							<Sx x={1600} y={720} text={c.label} size={36} color={GREY_INK} hand anchor="middle" />
+						</g>
+					) : null;
+				})}
 				<g opacity={prog(f, KE.next, 14)}>
 					<rect x={760} y={850} width={1060} height={96} rx={48} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
 					<Strip cx={880} y={884} n={5} pitch={22} gap={26} ins={prog(f, KE.next + 30, 12)} i0={2} i1={2} />
@@ -195,12 +240,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'Judge a biotechnology with a concrete benefit, a concrete harm or risk, and who gets each (stakeholders: people, animals or ecosystems affected). "It works" is not a judgement.',
-	'Bt cotton (Australia): far fewer insecticide sprays (about 85% less, with better pest management, CSIRO), benefiting growers, workers and beneficial insects. Risks: resistance by natural selection, managed with non-Bt refuges; a licence fee each season; a monoculture remains.',
-	'Animal cases add the animal\'s own welfare, the embryos and surrogates used, and objections in principle. Hornless dairy cattle: no painful dehorning, but checks later found unintended bacterial DNA beside the edit in one bull, inherited by some of his calves.',
-	'Three kinds of question: consequences (evidence can answer), distribution (who gains and pays: policy), principle (is it acceptable at all: evidence cannot settle).',
+	'Judge with a concrete benefit, a concrete harm or risk, and who gets each (stakeholders).',
+	'Bt cotton: about 85% fewer insecticide sprays (CSIRO), helping growers, farm workers and beneficial insects.',
+	'Bt cotton risks: resistance can evolve (managed with refuges), a licence fee each season, still a monoculture.',
+	"Animal cases add the animal's welfare, the embryos and surrogates used, and objections in principle.",
+	"Hornless dairy cattle: no painful dehorning, but unintended bacterial DNA was found beside one bull's edit.",
+	'Three kinds of question: consequences (evidence), distribution (policy), principle (evidence cannot settle).',
 	'Evaluate: end with a verdict, its main reason and any condition.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Who benefits? Who carries the risk? Who decides whether it's used? What happens to biodiversity?" tag="animal case: and what happens to the animal itself" size={29} aidTop={720} />
+	<NotesBoard notes={NOTES} aid="Who benefits? Who carries the risk? Who decides whether it's used? What happens to biodiversity?" tag="animal case: and what happens to the animal itself" size={34} aidTop={800} />
 );
