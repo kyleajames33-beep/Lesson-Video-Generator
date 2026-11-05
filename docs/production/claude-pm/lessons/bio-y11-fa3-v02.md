@@ -1,6 +1,6 @@
 # Y11 FA3 V02 (Biology 2025, Year 11, Focus Area 3): How do living and non-living pressures change which variants leave offspring? (design)
 
-Status: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa3-v02, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA3 L02 pre-design pack, the full site page, the site's FA3 memory hooks file (entry l02), the v01 design and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa3-v02**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (5 Nov 2026): brief 173 error-check fixes applied; scenes 7 and 11 events reordered. Narration 5,364 characters (unchanged), about 530 s. Needs the next Codex error check before voicing. Previously: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa3-v02, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA3 L02 pre-design pack, the full site page, the site's FA3 memory hooks file (entry l02), the v01 design and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa3-v02**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,361 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 530 s (8.8 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -73,7 +73,7 @@ Visual: two labelled boxes write over the stage: amber "pressure: drought (abiot
 ### 7. a wet year, and a prediction
 > A few years later, a very wet year filled the island with plants that make small, soft seeds, and the big spiky seeds became scarce. Prediction: when the next dry spell came, which beaks did better?
 
-Visual: a year chip "1983: very wet" writes; the ground line greens; the small-seed plate multiplies across the ground and the caltrop seeds thin to two. The histogram stays small at the top right showing the 1977 shift. On "the next dry spell" a year chip "a few years later: dry again" writes. On "Prediction" a "Predict" chip writes; the two finch plates take a "?" each; **a 3 s countdown ring** runs.
+Visual: a year chip "1983: very wet" writes; the ground line greens; the small-seed plate multiplies across the ground and the caltrop seeds thin to two. The histogram stays small at the top right showing the 1977 shift. On "Prediction" a "Predict" chip writes. On "the next dry spell" a year chip "a few years later: dry again" writes. On "which beaks did better" the two finch plates take a "?" each; **a 3 s countdown ring** runs.
 
 ### 8. the direction reverses
 > Shallower beaks. With mostly small seeds around, smaller-beaked finches handled them faster and survived better, so the average beak got smaller again. Same finches, opposite direction. The pressure sets the direction. So no beak is best everywhere. It's only better or worse in a particular environment.
@@ -93,7 +93,7 @@ Visual: the virus plate moves to the centre beside a coded "how deadly" dial. On
 ### 11. a pressure is not a punch
 > One more thing. A pressure doesn't have to kill. Even with no drought at all, if there are more finches than seeds, the finches that crack seeds faster raise more chicks. That's competition, when there isn't enough to go round, and it's biotic too. So think of it this way: a pressure is not a punch. Anything that makes reproduction unequal counts.
 
-Visual: the finch stage returns, green ground, no drought chip. On "more finches than seeds" more finch sprites than seeds; coded lines join finches to seeds and a few finches end with none. On "crack seeds faster raise more chicks" two finch sprites take a fast timer and more small chick sprites appear beside them. On "competition" a gloss: "competition: not enough to go round"; a card "competition" flies into the teal column. On "doesn't have to kill" a `WrongChip` "a pressure must be harmful" takes a scribble cross. On "a pressure is not a punch" a hand-lettered amber rule writes: "Not a punch: anything that makes reproduction unequal" (grey tag "the site's memory hook"). At most three bright items. Hold one second.
+Visual: the finch stage returns, green ground, no drought chip. On "doesn't have to kill" a `WrongChip` "a pressure must be harmful" writes and takes a scribble cross. On "more finches than seeds" more finch sprites than seeds; coded lines join finches to seeds and a few finches end with none. On "crack seeds faster raise more chicks" two finch sprites take a fast timer and more small chick sprites appear beside them. On "competition" a gloss: "competition: not enough to go round"; a card "competition" flies into the teal column. On "a pressure is not a punch" a hand-lettered amber rule writes: "Not a punch: anything that makes reproduction unequal" (grey tag "the site's memory hook"). At most three bright items. Hold one second.
 
 ### 12a. attempt one (classify and name the trait)
 > Two exam questions. First. For each factor, state whether it's abiotic or biotic, and name one trait it would favour in the population given. A: rising soil salinity, in a population of a native grass. B: a fast-running introduced predator, in a population of small ground-dwelling mammals. Pause here to answer.
@@ -284,3 +284,12 @@ Findings from `checks/y11b-fa3-v02-learning-review.md` and `checks/y11b-fa3-v02-
 2. Should fix (virus became less deadly as a universal trend): accepted. Scene 10 says "these early successful strains were less deadly"; funded by replacing "A drought can't evolve. A living pressure can." with "A drought can't do that." Visual cues updated ("were less deadly", "A drought can't do that"; the two-way arrow now follows a beat later; tag "Fenner's field studies: early decades"). Key note and description scoped the same way.
 
 Narration now 5,380 characters (build parser rule), about 530 s with the unchanged holds. No handoff change.
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `../checks/y11b-fa3-v02-error-check.md`.
+
+1. Scene 7: the Predict chip writes on "Prediction", the year chip on "the next dry spell", then the "?" marks and countdown on "which beaks did better" (spoken order).
+2. Scene 11: the WrongChip "a pressure must be harmful" now writes and is crossed on "doesn't have to kill", at the start of the scene, before the competition events.
+
+Narration: 5,364 characters (unchanged), about 530 s (counted by script from lines starting "> " with bold markers removed). No em dashes.

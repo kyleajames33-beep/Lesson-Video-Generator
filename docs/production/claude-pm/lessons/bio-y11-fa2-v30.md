@@ -1,6 +1,6 @@
 # Y11 FA2 V30 (Biology 2025, Year 11, Focus Area 2): Why do adrenaline and cortisol make more fuel available during stress? (design)
 
-Status: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v30, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v28 and v29 designs (this designer's Revision 1) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v30**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (5 Nov 2026): brief 173 error-check fixes applied; scene 3 events reordered. Narration 5,599 characters (unchanged), about 550 s. Needs the next Codex error check before voicing. Previously: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v30, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v28 and v29 designs (this designer's Revision 1) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v30**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,660 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 554 s (9.2 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -54,7 +54,7 @@ Visual: the snake shrinks to the upper left. On "respond to glucose itself" v29'
 ### 3. one gland, two glands inside
 > Nerves. To see why, look inside an adrenal gland, the small gland sitting on top of each kidney. It has two layers that are really two different glands. The outer layer, the adrenal cortex, makes cortisol. The inner core, the adrenal medulla, makes adrenaline. Different tissues, different hormones, and as you'll see, different **triggers**.
 
-Visual: on "Nerves" the nerve-line outline brightens and the chain outline dims. The board clears to the adrenal stage: `m8-kidney-adrenal-v1.png` at the centre (grey tag "kidney and adrenal gland, in isolation"); on "on top of each kidney" a callout rings the yellow cap. On "look inside" a `Cam` zoom cuts through the cap into new `y11-adrenal-section-v1.png` (grey tags "cut open" and "enlarged"). On "The outer layer, the adrenal cortex" the yellow outer band takes a leader "adrenal cortex (outer layer) → cortisol" and green dots appear in it. On "The inner core, the adrenal medulla" the red-brown core takes a leader "adrenal medulla (inner core) → adrenaline" and red dots appear in it. The colour tag writes: "red: adrenaline · green: cortisol". On "different triggers" a small "?" sits beside each leader. At most three bright items. Hold one second.
+Visual: on "Nerves" the nerve-line outline brightens and the chain outline dims. On "look inside" the board clears to the adrenal stage: `m8-kidney-adrenal-v1.png` at the centre (grey tag "kidney and adrenal gland, in isolation"); on "on top of each kidney" a callout rings the yellow cap. On "It has two layers" a `Cam` zoom cuts through the cap into new `y11-adrenal-section-v1.png` (grey tags "cut open" and "enlarged"). On "The outer layer, the adrenal cortex" the yellow outer band takes a leader "adrenal cortex (outer layer) → cortisol" and green dots appear in it. On "The inner core, the adrenal medulla" the red-brown core takes a leader "adrenal medulla (inner core) → adrenaline" and red dots appear in it. The colour tag writes: "red: adrenaline · green: cortisol". On "different triggers" a small "?" sits beside each leader. At most three bright items. Hold one second.
 
 ### 4. adrenaline: the nerve route
 > Start with adrenaline. When your brain detects danger, the hypothalamus sends nerve impulses down the spinal cord, straight to the adrenal medulla. There's no pituitary step. The medulla releases adrenaline into the blood within seconds, and blood carries it to every organ within about a **minute**.
@@ -294,3 +294,11 @@ Findings from `checks/y11b-fa2-v30-learning-review.md` and `checks/y11b-fa2-v30-
 3. Should fix (12c still uses the cortisol-like medicine stem): accepted per root decision 27. 12c is now the adrenal tumour stem ("The tumour releases large amounts of cortisol, whatever the ACTH level. Blood tests show high cortisol and a very low ACTH level."), and 12d explains the low ACTH by negative feedback, with the crossed mistake "the pituitary is damaged". Model answer, facts, Decisions and author notes follow.
 
 Narration now 5,615 characters (was 5,675 by the reviewers' count), about 4 s shorter; total about 550 s, under the 570 s cap. Final frame and handoff unchanged, so v31's opening is unaffected.
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `../checks/y11b-fa2-v30-error-check.md`.
+
+1. Scene 3: the adrenal stage now opens on "look inside", the callout rings the cap on "on top of each kidney", and the cut-through zoom runs on "It has two layers" (spoken order).
+
+Narration: 5,599 characters (unchanged), about 550 s (counted by script from lines starting "> " with bold markers removed). No em dashes.

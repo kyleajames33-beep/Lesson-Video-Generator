@@ -75,3 +75,5 @@ The FA1 and FA2 Biology root decisions files apply to Focus Area 3 unless an ite
 - v31: a western NSW drought figure.
 
 Each design keeps its written fallback until its source is checked. Next: brief 173 error check.
+
+38. **Brief 173 error-check fixes (5 November 2026).** All findings are resolved at Revision 3. Calls accepted: **v18** uses fallback (a), visuals only, with a grey "community-onset subset; sample sizes not confirmed" tag; it **stays on voicing hold** until 7.0% and 11.4% are read in the primary AGAR February 2018 report or replaced with confirmed figures. **v20** softens the model answer as well as the feedback (none of hard parts, quick burial or low oxygen is required). The fixes were made at the actual scenes 11d (v20) and 13b (v26). Next: Codex error check of the Revision 3 fixes.

@@ -1,6 +1,6 @@
 # Y11 FA2 V29 (Biology 2025, Year 11, Focus Area 2): How do insulin and glucagon push blood glucose back towards its operating range? (design)
 
-Status: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v29, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v21, v27 and v28 designs (v28 is this designer's Revision 1), the Year 12 2017-syllabus B8-03 design and its science check (read for verified facts and plates only; a different course) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v29**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (5 Nov 2026): brief 173 error-check fixes applied; feedback 12b events reordered. Narration 5,645 characters (unchanged), about 553 s. Needs the next Codex error check before voicing. Previously: Revision 2 (5 Nov 2026), brief 163 repairs applied; needs the Codex error check. Previously Revision 1 (3 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v29, with its packUpdate), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L24 pre-design pack (glucose and stress hormones), the full site page, the v21, v27 and v28 designs (v28 is this designer's Revision 1), the Year 12 2017-syllabus B8-03 design and its science check (read for verified facts and plates only; a different course) and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v29**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,643 characters (Revision 1; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 552 s (9.2 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -105,7 +105,7 @@ Visual: the board clears; the strip, rings and plates go. The card writes on, ta
 ### 12b. feedback, item one
 > After the meal, glucose rises higher and falls more slowly, because the liver can't take up and store as much, though muscle and fat cells still help. Late in the fast, glucose falls lower, because there's little glycogen for glucagon to trigger the release of. The classic mistake is blaming insulin. Insulin is released normally. The store is missing.
 
-Visual: the card stays. On "glucose rises higher" the given "store only a small amount of glycogen" takes an amber underline; a small coded sketch beside the card draws the normal day trace in grey and the person's trace in gold: a taller, slower peak after the meal; line "(a) higher, slower fall: less glucose stored by the liver". On "though muscle and fat cells still help" a short line "muscle and fat still take some up". On "Late in the fast" the gold trace dips below the band overnight; line "(b) lower: little glycogen to break down and release". On "Insulin is released normally" the given "releases insulin and glucagon normally" takes a thin grey underline. On "classic mistake" a chip "the person makes too little insulin" writes and takes a scribble cross. Settle one second.
+Visual: the card stays. On "glucose rises higher" the given "store only a small amount of glycogen" takes an amber underline; a small coded sketch beside the card draws the normal day trace in grey and the person's trace in gold: a taller, slower peak after the meal; line "(a) higher, slower fall: less glucose stored by the liver". On "though muscle and fat cells still help" a short line "muscle and fat still take some up". On "Late in the fast" the gold trace dips below the band overnight; line "(b) lower: little glycogen to break down and release". On "classic mistake" a chip "the person makes too little insulin" writes and takes a scribble cross. On "Insulin is released normally" the given "releases insulin and glucagon normally" takes a thin grey underline. Settle one second.
 
 ### 12c. attempt two (a glass of fruit juice)
 > Second. A student drinks a large glass of fruit juice, and their blood glucose rises. Construct a negative feedback loop that returns their blood glucose to its normal range. Name the hormone, its source and the effectors. Pause here to answer.
@@ -289,3 +289,11 @@ Findings from `checks/y11b-fa2-v29-learning-review.md` and `checks/y11b-fa2-v29-
 3. Should fix (attempt 1 assumes normal insulin release): the on-screen stem already says "Their pancreas releases insulin and glucagon normally", but the spoken stem did not. The spoken stem now adds "though their pancreas works normally" (replaces no existing condition paragraph); 12b's "Insulin is released normally" now refers to a stated given.
 
 Narration now 5,661 characters (was 5,659 by the reviewers' count), length-neutral; total about 553 s, under the 570 s cap. Final frame unchanged, so v30's opening is unaffected.
+
+## Revision 3 (5 November 2026, brief 173 fixes)
+
+Findings from `../checks/y11b-fa2-v29-error-check.md`.
+
+1. Feedback 12b: the classic-mistake chip now writes on "classic mistake" before the grey underline on "Insulin is released normally", following the speech.
+
+Narration: 5,645 characters (unchanged), about 553 s (counted by script from lines starting "> " with bold markers removed). No em dashes.

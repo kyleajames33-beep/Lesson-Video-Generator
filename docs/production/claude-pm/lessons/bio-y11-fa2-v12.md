@@ -1,6 +1,6 @@
 # Y11 FA2 V12 (Biology 2025, Year 11, Focus Area 2): How can evaporation at a leaf pull a continuous water column up xylem? (design)
 
-Status: Revision 2 (4 Nov). Revision 2 resolves the blocker and five should-fix findings in `../checks/y11b-fa2-v12-learning-review.md` and `../checks/y11b-fa2-v12-science-check.md` (see "Revision 2 changes" at the end). Revision 1 (2 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v12), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L09 pre-design pack, the full site page, v09's and this designer's v10 and v11 Revision 1 designs, and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v12**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (5 Nov 2026): brief 170 error-check fixes applied; feedback 10b beads slow instead of stopping. Narration 5,474 characters (unchanged), about 533 s. Needs the next Codex error check before voicing. Previously: Revision 2 (4 Nov). Revision 2 resolves the blocker and five should-fix findings in `../checks/y11b-fa2-v12-learning-review.md` and `../checks/y11b-fa2-v12-science-check.md` (see "Revision 2 changes" at the end). Revision 1 (2 Nov). Written by Claude (designer) from the root-approved route (`docs/production/y11-bio-fa2-fa3-video-route.json`, entry bio-y11-fa2-v12), the series root decisions (FA1 v01 to v06, FA1 v07 to v12, FA2), the FA2 L09 pre-design pack, the full site page, v09's and this designer's v10 and v11 Revision 1 designs, and an inspection of the existing plates. Needs independent student learning review (review key **y11b-fa2-v12**), then a science check and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,474 characters (Revision 2; Revision 1 was 5,400; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 533 s (8.9 minutes) including holds, two 3 s prediction countdowns, two 10 s countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -94,7 +94,7 @@ Visual: the board clears. The card writes, tagged "HSC-style question, written f
 ### 10b. feedback, item one
 > Water and mineral movement falls sharply. With the stomata sealed, little water vapour can escape, so there's far less tension to pull the column. Cohesion still holds the column together, but it only passes on a pull. It can't create one. The minerals slow with the water. The classic mistake is saying the roots keep pushing it up just as fast.
 
-Visual: the card shrinks to the top. On "falls sharply" line "prediction: water and mineral movement falls sharply (not to zero)". On "stomata sealed" the givens "sealing all the stomata" and "both surfaces" are underlined; the small water column returns at the right, its vapour wisps thin to one faint wisp and the tension arrow shrinks; line "little transpiration (some through the cuticle) → far less tension". On "only passes on a pull" the column's links stay lit but the beads stop; line "cohesion passes on a pull; it doesn't create one". On "minerals slow" "dissolved minerals" is underlined; line "minerals travel in the stream, so they slow too". On "classic mistake" a chip "the roots keep pushing it up just as fast" fades in and takes a scribble cross. Grey label "HSCScience marking guide (illustrative)". Hold one second.
+Visual: the card shrinks to the top. On "falls sharply" line "prediction: water and mineral movement falls sharply (not to zero)". On "stomata sealed" the givens "sealing all the stomata" and "both surfaces" are underlined; the small water column returns at the right, its vapour wisps thin to one faint wisp and the tension arrow shrinks; line "little transpiration (some through the cuticle) → far less tension". On "only passes on a pull" the column's links stay lit but the beads slow strongly to a slow creep (they do not stop); line "cohesion passes on a pull; it doesn't create one". On "minerals slow" "dissolved minerals" is underlined; line "minerals travel in the stream, so they slow too". On "classic mistake" a chip "the roots keep pushing it up just as fast" fades in and takes a scribble cross. Grey label "HSCScience marking guide (illustrative)". Hold one second.
 
 ### 10c. attempt two (a shrinking trunk)
 > One more. A dendrometer measures the diameter of a tree trunk very precisely. On a sunny day, the trunk is slightly narrower in the early afternoon than it was just before dawn. Explain this result using the cohesion-tension theory. Pause here to answer.
@@ -282,3 +282,11 @@ Findings from `../checks/y11b-fa2-v12-learning-review.md` and `../checks/y11b-fa
 Length: 5,400 to 5,474 characters (5,414 to 5,488 joined), about 528 s to about 533 s. Disagreement for root (one line): the blocker repair needs about 158 characters and the full cut-flower cut would remove the video's observable tension clue, so only part of the named cut is used, leaving a net +74 characters inside the accepted 5,000 to 5,500 band; the rest of the clue is listed as the next reserve cut.
 
 Frames: opening and final frames unchanged; v11 and v13 need no frame change.
+
+## Revision 3 (5 November 2026, brief 170 fixes)
+
+Findings from `../checks/y11b-fa2-v12-error-check.md`.
+
+1. Feedback 10b: on "only passes on a pull" the beads now slow strongly to a creep and do not stop, matching the spoken prediction (a sharp fall, not zero) and the faint transpiration wisp.
+
+Narration: 5,474 characters (unchanged), about 533 s (counted by script from lines starting "> " with bold markers removed). No em dashes.

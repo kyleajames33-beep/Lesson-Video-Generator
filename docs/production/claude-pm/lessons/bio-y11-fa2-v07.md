@@ -1,6 +1,6 @@
 # Y11 FA2 V07 (Biology 2025, Year 11, Focus Area 2): How can a controlled pondweed investigation test whether changing a condition changes photosynthesis? (design)
 
-Status: Revision 2 (4 Nov). Revision 1 (2 Nov, rewritten the same night to the root-approved route; an earlier draft on starch tests is withdrawn). Needs the independent learning review, a science check (including the safety facts) and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
+Status: Revision 3 (5 Nov 2026): brief 170 error-check fixes applied; handoff plan card Measure line corrected. Narration 5,568 characters (unchanged), about 536 s. Needs the next Codex error check before voicing. Previously: Revision 2 (4 Nov). Revision 1 (2 Nov, rewritten the same night to the root-approved route; an earlier draft on starch tests is withdrawn). Needs the independent learning review, a science check (including the safety facts) and a Codex error check. Voice: Google AI Studio (after the brief 124 pilot). Plates: see Assets.
 
 Narration 5,568 characters (Revision 2; Revision 1 was 5,289; about 419 s of speech; 14 scene files, counted by script from lines starting "> " with bold markers removed), about 536 s (8.9 minutes) including holds, one prediction countdown, two attempt countdowns and the notes hold. Nothing recorded; human listening pending.
 
@@ -129,7 +129,7 @@ Visual: the card shrinks to the top. An answer table writes one line per cue: on
 ### 10. decision rule and handoff
 > So, to test a condition: write a testable question, predict with a reason, change only that condition, control everything else, including the lamp's heat, let the plant settle, repeat, and record exactly what you see. Now you've got a page of numbers. **Next**: what can those numbers reveal about the factor limiting photosynthesis?
 
-Visual: the plan card writes in the "Change / Measure / Keep the same" frame, each line lighting on its words: "Question + prediction (with a reason)". "Change: one condition". "Measure: oxygen in a set time (bubbles or gas volume)". "Keep the same: everything else, including the lamp's heat". One line below: "settle 5 min; three counts; record as you go". The memory line writes under it: "Change one thing. If two things move, the result explains nothing." On "a page of numbers" the complete observation record grows to the centre (the 47 still ringed with its note), the pondweed tube and lamp small at the left; a terracotta "?" writes above the record's count columns. On "Next" the chip slides in: "Next: What can changed-condition data reveal about the factor limiting photosynthesis?". This is the handoff frame (root decision 16): the plan card and memory line, the small rig, the complete observation record with "?", and the Next chip. Hold about 1 second.
+Visual: the plan card writes in the "Change / Measure / Keep the same" frame, each line lighting on its words: "Question + prediction (with a reason)". "Change: one condition". "Measure: bubbles or gas volume in a set time". "Keep the same: everything else, including the lamp's heat". One line below: "settle 5 min; three counts; record as you go". The memory line writes under it: "Change one thing. If two things move, the result explains nothing." On "a page of numbers" the complete observation record grows to the centre (the 47 still ringed with its note), the pondweed tube and lamp small at the left; a terracotta "?" writes above the record's count columns. On "Next" the chip slides in: "Next: What can changed-condition data reveal about the factor limiting photosynthesis?". This is the handoff frame (root decision 16): the plan card and memory line, the small rig, the complete observation record with "?", and the Next chip. Hold about 1 second.
 
 ### 11. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -308,3 +308,11 @@ Holds: question-prediction has a 3 s prediction countdown after "what will the b
 - **Doubts for the reviewers.** (a) Scene 3 names four limits of the measure quickly; check each has its own visual beat and that "isn't a measurement of oxygen" lands (v08 builds on it). (b) Scene 5 carries the suspect, two controls and the memory line; check the chips stay readable at playback speed. (c) Scene 7 ends without means or a graph by design (route stop); check it feels like a finished record, not a cut-off. (d) A1's feedback has four rows, three spoken quickly plus one; check it stays under 30 s in audio. (e) The withdrawn starch-test draft (destarched geranium, foil strip, variegated leaf, soda lime bags) is not kept; its plates are not requested. If root wants the starch tests somewhere (for example as evidence in a later revision of v06), they need a new design.
 - **Cultural content.** None.
 - **No em dashes** in this file (searched by script).
+
+## Revision 3 (5 November 2026, brief 170 fixes)
+
+Findings from `../checks/y11b-fa2-v07-error-check.md`.
+
+1. Scene 10: the plan card line "Measure: oxygen in a set time (bubbles or gas volume)" now reads "Measure: bubbles or gas volume in a set time", matching scene 3 and key note 2 (counts and unanalysed gas volume do not measure oxygen itself). Screen only; v08's opening shows the same corrected card.
+
+Narration: 5,568 characters (unchanged), about 536 s (counted by script from lines starting "> " with bold markers removed). No em dashes.
