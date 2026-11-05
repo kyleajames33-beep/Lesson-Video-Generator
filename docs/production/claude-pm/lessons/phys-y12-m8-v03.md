@@ -1,0 +1,296 @@
+# Year 12 Physics M8 V03: Stellar spectra and classes. How can spectra classify stars and reveal their temperature? (design)
+
+Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+
+Narration 6,276 characters, 17 scenes, about 556 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v02's final frame.
+
+Scope: third video of Year 12 Physics Module 8 (From the Universe to the Atom, Physics Stage 6, 2017 syllabus), inquiry question "What evidence is there for the origins of the elements?". Templates as `phys-y12-m8-v01.md`; `math-a12-d10.md` for the calculation layout. No pre-design pack exists; the pack work is done here (2017 wording from the ledger, site values kept, every number recalculated in Python, line wavelengths from NIST, original attempts, asset reuse). Site lesson read in full (6 Nov, read-only, through the brief 168 text extract `work/brief168/module8-lesson09.sa.txt`, hash checked against the live file): orient and predict (dark lines prompt, warm-up, intentions, vocabulary including Fraunhofer lines), read the three spectra (Kirchhoff's laws, Figure 1), classify with OBAFGKM (table, Figure 2, mnemonic, subclasses, luminosity classes), measure motion from a wavelength shift (radial velocity, exoplanets), identify stars with care (HSC tip, Activity 1), calculate radial velocities (Activity 2, misconceptions, "Account 7 marks", "Compare 6 marks"), independent practice, retrieve and reflect (Payne, 1925). `C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson09.sa.html`, SHA256 `8c9204993c58f79ba383b7a39356ab3176285682c4d2cdc7a92a639847ca3796` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m8-v03`, sections `read-the-three-spectra`, `classify-with-obafgkm`, `identify-stars-with-care`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Revisit continuous, emission and absorption mechanisms; classify stellar spectra with ionisation/temperature reasoning. Stop before HR evolution tracks." Next: "phys-y12-m8-v04: How does the HR diagram distinguish brightness, temperature and stellar stage?"
+
+Owner rules applied: 2017 syllabus quoted exactly; no people, hands, faces or body outlines (Cecilia Payne and earlier classifiers are named in words only, never drawn; no astronomer at an eyepiece); spectra, intensity curves, energy levels, the class strip and calculation strips are coded graphs, never painted; the stars, filament lamp and discharge tube are painted plates (five reused, one new), scaled uniformly, never stretched; line wavelengths from NIST (Hα 656.3, Hβ 486.1, Hγ 434.0, Hδ 410.2 nm; Ca II K 393.4 and H 396.8 nm; He I 447.1 and 587.6 nm; He II 468.6 nm; Na D 589.0 and 589.6 nm; TiO band heads 476, 517, 545, 616, 671, 706 nm); every number recalculated in Python with h = 6.626 × 10⁻³⁴ J s, c = 3.00 × 10⁸ m s⁻¹, b = 2.898 × 10⁻³ m K, 1 eV = 1.602 × 10⁻¹⁹ J; data-sheet symbols E = hf, λ_max = b/T; a 3 s prediction; "Pause here to answer." with a 10 s countdown; brief feedback with one crossed-out mistake; original attempts; Australian spelling; no em dashes. Recalled, not re-taught: m7-v03 (spectroscope; three spectra in plain language; re-emission in all directions; fingerprints; Fraunhofer lines), m7-v04 (temperature from continuum colour and line strengths in outline; the O to M sequence named; Doppler shifts), m7-v09 (black body, Wien's law), m7-v10 (E = hf, eV), v02 (the black-body CMB; spectra as evidence).
+
+Syllabus content (Physics Stage 6 (2017), Module 8; ledger ids `P8-IQ1-04`, `P8-IQ1-05`), quoted from the route JSON `syllabusActions` and the ledger:
+
+- `P8-IQ1-04`: "account for the production of emission and absorption spectra and compare these with a continuous black body spectrum (ACSPH137)"
+- `P8-IQ1-05`: "investigate the key features of stellar spectra and describe how these are used to classify stars"
+
+Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx (page 62)
+
+**Boundary:** starts on v02's final frame (the Sun's spectrum strip and intensity curve with dips, "T = ?"). Teaches: the production of continuous, emission and absorption spectra, now with photons (E = hf; Hα's 1.89 eV gap); why absorption lines are dark (re-emission in all directions, recalled); a star's spectrum as a near black-body curve with dips, compared with a pure black body (the curve gives temperature; the dips give composition and temperature); temperature method 1, Wien's law (Sun: 500 nm, 5800 K) and its limits for hot stars; method 2, which lines are strong: the hydrogen line hump explained by level-2 population and ionisation; ionised helium (hottest), ionised calcium (Sun-like), titanium oxide bands (coolest); the classes O B A F G K M with temperature ranges and colours, subclasses 0 to 9, the Sun as G2; why the letters are out of order; Payne's result (classes are a temperature sequence, not a composition sequence); a worked classification (414 nm, 7000 K, F). Stops before luminosity classes and the HR diagram (v04; the handoff names the problem), radial velocity calculations (m7-v04 taught them; the site's Doppler card is not repeated) and exoplanets (site extension).
+
+## Decisions
+
+- **Learner question (route wording kept).** "How can spectra classify stars and reveal their temperature?" The answer: a star's spectrum is a near black-body curve, whose peak gives temperature (5); absorption lines cut into it, and which lines are strong depends on temperature because temperature sets which energy levels are occupied and which atoms are ionised (6, 7); sorting by those lines gives the classes O to M, a temperature sequence (8, 9).
+- **Hook (site predict "Why do these dark lines appear at specific wavelengths", turned to a surprise).** 3 s prediction chips: "hottest stars", "coolest stars", "in between". Answer: in between (about 10 000 K, A stars). This sets up scene 6's cause.
+- **Production of spectra (`P8-IQ1-04`; site `read-the-three-spectra`, Kirchhoff's three laws).** m7-v03 taught the three spectra before photons; this design adds the photon account: each drop between fixed levels emits one photon of energy E = hf equal to the gap; Hα at 656.3 nm is a 3.03 × 10⁻¹⁹ J (1.89 eV) gap. Kirchhoff is named on screen only ("Kirchhoff's laws", as the site). Plates reused from m7-v03 for the sources.
+- **Why dark (site "Account 7 marks" step 4).** Absorbed energy is re-emitted in all directions, so less reaches the observer at that wavelength; recalled in one sentence from m7-v03, with the same arrow visual.
+- **Comparison with a black body (`P8-IQ1-04` "compare"; site "Account 7 marks" step 5).** Coded intensity graph: a smooth Planck curve, then a stellar curve following it with narrow dips. "The curve tells you the temperature; the dips tell you which atoms, and the temperature again."
+- **Method 1: Wien (m7-v09 recalled).** Sun: peak about 500 nm, T = 2.898 × 10⁻³ / 5.0 × 10⁻⁷ = 5800 K (site 5800 K; author note a). Limits stated: hot stars peak in the ultraviolet (absorbed by our atmosphere) and dust reddens starlight, so lines are also used.
+- **Method 2: line strengths (site `identify-stars-with-care` and "Compare 6 marks" step 4).** The visible (Balmer) lines need an electron in level 2 (10.2 eV above the lowest level). Cool: almost all in level 1. Hotter: collisions lift more to level 2. Too hot: ionised (13.6 eV), no electron. Best near 10 000 K (A stars). Narration says "the balance is best", not "most atoms are in level 2" (author note b). The site trap "weak hydrogen lines mean little hydrogen" is narrated and crossed.
+- **Other features (site table "Spectral Types, Temperature and Dominant Features").** He II in O stars (helium holds its electrons more tightly: 24.6 eV against 13.6 eV); neutral He in B (on screen); Ca II H and K strong in G and K (calcium ionises at 6.1 eV); TiO bands below about 3500 K (molecules survive only in cool atmospheres; site "M < 3 700 K"). "Each feature works like a thermometer reading over its own range."
+- **Classes (site `classify-with-obafgkm`).** O B A F G K M with the site's ranges (O > 30 000 K; B 10 000 to 30 000; A 7500 to 10 000; F 6000 to 7500; G 5200 to 6000; K 3700 to 5200; M < 3700) on screen; colours blue to red; subclasses 0 to 9; Sun G2. The narration rounds M's boundary to "about three and a half thousand kelvin" (scene 7, 8); the screen shows the site's 3700 K (author note c). The site's mnemonic is not used (common versions are unsuitable; m7-v04 made the same call); the memory aid is the hydrogen-hump rule instead. Luminosity classes (V, III, I) are left to v04.
+- **Why the letters are out of order (history, accurate form).** The early Harvard scheme lettered spectra by hydrogen-line strength; astronomers later reordered them into a smooth sequence of features, which turned out to be a temperature sequence (author note d). Names: Cecilia Payne (1925) is named in scene 9, as the site does; the classifiers are in author note d.
+- **Payne's result (site retrieve and reflect).** Classes differ through temperature, not composition; almost all stars are mostly hydrogen and helium (site misconception "Spectral type depends only on chemical composition").
+- **Worked classification (original).** Peak 414 nm, strong but not maximal hydrogen, some metal lines, no ionised helium, no molecular bands: T = 2.898 × 10⁻³ / 4.14 × 10⁻⁷ = 7000 K, class F; the two methods agree. Two stages, givens grouped.
+- **Doppler and exoplanets (site `measure-motion-with-doppler-shift`; not in the route sections).** Not repeated: m7-v04 derived and used Δλ/λ = v/c, and v02 used it. One screen tag in scene 4 ("line positions also give speed: m7-v04").
+- **Memory aid (scene 11, new): "Hydrogen peaks in the middle: too cool to lift, too hot to keep."** See "Memory aid check".
+- **Attempts (original, HSC style).** A1 (3 marks): peak at 725 nm, strong metal lines, weak molecular bands: T = 4.0 × 10³ K, class K. Crossed: substituting 725 (nm) for metres gives 4.0 × 10⁻⁶ K. A2 (3 marks, explain): two stars of the same composition, one with ionised helium and one with titanium oxide, both with weak hydrogen lines. Crossed: "weak hydrogen lines mean little hydrogen".
+- **Significant figures.** Two figures for temperatures from peaks (peaks read to two or three figures).
+- **Handoff (route next).** Two M stars with matching spectra (same temperature) but luminosities a million times apart: a spectrum alone cannot say how big or how luminous a star is. "Next: how does the HR diagram distinguish brightness, temperature and stellar stage?". See "Final frame".
+- **Colour key (spectra as m7-v03):** spectrum strips coloured by wavelength on a 380 to 750 nm axis (extended to 350 nm when the calcium lines are shown), dark lines black; intensity curves amber (black body) and ink (star); energy levels navy, electrons rose, photons amber packets; class swatches blue (O) to red (M); crossed claims red.
+- **Site sources used:** lesson 9: predict (dark lines at specific wavelengths) (1, 3); vocabulary (absorption, emission, spectral type, Fraunhofer lines) (2, 3, 8); `read-the-three-spectra` (Kirchhoff's laws, stellar spectra are absorption spectra, temperature-dependent ions) (2, 3, 6); `classify-with-obafgkm` (sequence, ranges, dominant features, colours, Sun G2, subclasses) (7, 8, 10); `identify-stars-with-care` (O stars show He II; M stars show TiO; presence of lines more reliable than strength) (7, 10); misconceptions (spectral type is temperature, not composition; blueshift does not mean hotter) (9, 4 tag); "Account 7 marks" (continuum, cooler layer, quantised levels, re-emission, comparison, Fraunhofer) (2 to 4); "Compare 6 marks" (O against M; why hydrogen is not the discriminator) (6, 7, 14, 15); retrieve and reflect (Payne 1925, 300 spectra) (9). Not used: the mnemonic (above), luminosity classes (v04), radial velocity and exoplanet cards (m7-v04; site extension), example stars Mintaka, Procyon and Arcturus (author note c).
+- **Site notes (quoted from site lesson 9, read 6 Nov; for root to log in `../site-corrections-phys-y12.md` if accepted; v01 and v02 list notes 1 to 8, so these continue the numbering):**
+  9. Contradiction on O-star hydrogen lines: the table says "O (>30,000 K): Ionised He lines", Activity 1 says "A star shows no hydrogen lines, but strong ionised helium (He II) lines. State its spectral type", and the Q2 model answer says the O star is "hot enough to ionise hydrogen completely, removing Balmer lines"; but "Compare 6 marks" (correctly) says the O star shows "weak hydrogen lines". O stars do show weak Balmer lines. Suggest "weak hydrogen lines" in the Activity and the model answer.
+  10. Example star (site table): "O (>30,000 K): ... E.g. Mintaka." Mintaka's primary is O9.5 II at about 29 500 K, at the cool edge of class O. Suggest a clearer O example such as Naos (ζ Puppis, O4, about 40 000 K) or keep Mintaka with "late O".
+  11. Precision: "the Sun is 73% hydrogen and 25% helium" (retrieve and reflect, attributed to Payne 1925). Payne showed hydrogen and helium dominate stellar atmospheres; the mass fractions quoted are modern values. Suggest "showed that stars are made mostly of hydrogen and helium".
+  12. Checked and correct: Kirchhoff's three laws; re-emission in all directions; class order and ranges; Sun G2V; Ca II K 393.3 nm (NIST 393.37 nm); 658.1 nm gives z = 0.00274 and 820 km s⁻¹.
+- **Cause chain taught, in order:** (1) electrons in atoms have fixed energy levels, so a thin gas emits or absorbs photons of exact energies E = hf (2, 3); (2) a star's hot dense layers give a near black-body continuum, and its cooler atmosphere absorbs, so a star shows absorption lines on a black-body curve (3, 4); (3) the curve's peak gives temperature through Wien's law, but hot stars peak in the ultraviolet (5); (4) temperature sets how many electrons are lifted to each level and which atoms are ionised, so it sets which lines are strong (6, 7); (5) sorting by those lines gives O to M, a temperature sequence (8); (6) composition is nearly the same for all classes (9).
+- **Entry knowledge (route `entryKnowledge`):** v02 (spectra as evidence; black body); m7-v03 (spectra in plain language; fingerprints); m7-v04 (temperature from colour and lines in outline; Doppler); m7-v09 (Wien's law); m7-v10 (E = hf; eV).
+- **Learner-visible vocabulary (plain meaning at first use):** energy level (recalled: one of the fixed energies an electron in an atom can have, 2); photon (recalled, 2); continuous, emission, absorption spectrum (recalled, 2, 3); black body (recalled, 4); ionised (an atom that has lost one or more electrons, 6); spectral class (a star's group, O to M, set by its spectrum, 8); subclass (8); molecular band (a broad dark band from molecules, 7).
+- **Legacy logic ported:** none. Explainer family `m8-spectra` (absorption from a cooler layer between a hot source and a dispersed spectrum; src/explainer/physics/module8) supplies the source, gas and strip in scene 3, within its limit "schematic bands and lines, no element-specific wavelengths": this design supplies the NIST wavelengths and the classification.
+- **New explainer motion:** **energy ladder with photon** (hydrogen levels 1, 2, 3 and the ionisation line, an electron dropping or jumping, a photon leaving or arriving with its E = hf readout); **intensity graph with dips** (a black-body curve and a stellar curve with narrow dips aligned to the strip); **level-2 population meter** (three side-by-side atom panels, "cool", "about 10 000 K", "very hot", each showing where electrons sit, and a hump graph of Balmer line strength against temperature); **class strip** (seven spectrum strips O to M stacked, with the key features marked and coloured swatches); **feature thermometers** (bars showing the temperature range over which each feature is strong: He II, He I, H, Ca II, TiO); `AlignedAlgebra`; `NumberTicker`; `Countdown` (3 s in scene 1; 10 s in scenes 12 and 14); `QuestionCard`; `Chip` with `cross`; `KeyNotes`; `Heading`.
+- **Board layout:** heading top-left; the spectrum strip and intensity graph centre and right; star or source plates at the left; the feature thermometers at the lower right from scene 7 to scene 10; everything above the bottom 12% of the frame.
+- **Author notes (not learner copy):**
+  (a) The Sun's effective temperature is 5772 K (IAU 2015 nominal); its Wien peak is 502 nm. The site's 5800 K and a 500 nm peak are kept. The solar spectrum's measured peak per unit wavelength is near 500 nm; per unit frequency it is in the near infrared, which is not mentioned.
+  (b) By the Boltzmann factor, the fraction of neutral hydrogen with n = 2 is only about 10⁻⁵ even near 10 000 K; the Saha ionisation balance then sets the maximum of n₂/N_total near 9500 to 10 000 K. Narration: "collisions lift more electrons up to level two" and "the balance is best near ten thousand kelvin" are true; "most atoms" is never said.
+  (c) Site ranges kept on screen. Many texts put the K/M boundary at about 3700 to 3900 K; the narration's "about three and a half thousand kelvin" for "molecular bands dominate" and "M stars ... below about three and a half thousand" is rounded inside the site's M range. Science check to confirm, or change the narration to "about three thousand seven hundred" (adds 12 characters).
+  (d) The Harvard scheme (Williamina Fleming, Edward Pickering, 1890) used letters A to Q in order of hydrogen-line strength; Antonia Maury and Annie Jump Cannon reordered and merged them (Cannon 1901 to 1912: O B A F G K M with decimal subclasses); Cecilia Payne (1925 thesis) used Meghnad Saha's ionisation theory to show the sequence is one of temperature and that stars are mostly hydrogen and helium. Only Payne is named in narration.
+  (e) He I lines peak in B stars (about 20 000 K); He II requires He⁺ (24.6 eV to remove the first electron), present only above about 30 000 K. Ca II H and K peak in G and K stars; Ca ionisation energy 6.11 eV. TiO dissociation energy about 6.9 eV; bands strengthen below about 4000 K.
+  (f) Pronunciations: "H alpha"; "titanium oxide"; "Kirchhoff" as "keer-koff" (screen only); "Payne" as "pain".
+- **Open decisions for root:**
+  - **1. Mnemonic (root).** No O to M sentence mnemonic (the site's "Oh Be A Fine Girl/Guy, Kiss Me" is not used; m7-v04 made the same call). Keep, or adopt a neutral one.
+  - **2. M boundary wording (science check).** Author note c.
+  - **3. New plate `y12p-star-white-v1` (Codex).** An A-type white star for scenes 6 and 8. If not made, the hot-blue star plate stands in with a white tint tag.
+  - **4. Plates requested by m7-v03 and m7-v04** (`y12p-filament-lamp-v1`, `y12p-discharge-tube-v1`, `y12p-star-cool-red-v1`, `y12p-star-hot-blue-v1`) must exist before build; coded fallbacks as their designs say.
+  - **5. Site notes 9 to 11** for the site log.
+
+Main question: *Every star is mostly hydrogen, yet some show hydrogen lines strongly and others hardly at all. How do the lines reveal a star's temperature and class?*
+Entry knowledge: spectra in plain language (m7-v03, v04); Wien's law (m7-v09); E = hf (m7-v10); black body (v02).
+Stops after: production and comparison of spectra, two temperature methods, the classes and their causes. No HR diagram, no luminosity classes.
+Handoff: v04, the HR diagram.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *E*, *h*, *f*, *λ*, *T*, *b*.
+
+### 1. hook (where are hydrogen lines strongest?)
+> Here's the Sun's light, spread into a spectrum. A smooth rainbow, with dark lines cut into it. From this one strip, astronomers can read a star's temperature, and sort it into a class. Almost every star is mostly hydrogen. So which stars show the strongest hydrogen lines? The hottest, the coolest, or ones in between? Make your **prediction**. Ones in between, and the reason is the key to classifying stars. So how can spectra classify stars and reveal their **temperature**?
+
+Visual: opens on v02's final frame (see "Opening frame"); the four evidence tags fade. On "A smooth rainbow, with dark lines cut into it" the strip's dark lines pulse once. On "Almost every star is mostly hydrogen" chip "stars: mostly hydrogen (about 3/4 by mass)". On "prediction" a 3 s `Countdown` beside chips "hottest stars", "coolest stars", "in between"; three small star plates (`y12p-star-hot-blue-v1.png`, `y12p-star-white-v1.png`, `y12p-star-cool-red-v1.png`) appear above the chips. On "Ones in between" the "in between" chip ticks under the white star. On "temperature" the chip becomes the heading: "How can spectra classify stars and reveal their temperature?"; the "T = ?" gauge stays.
+
+### 2. light from fixed energy levels
+> First, the three kinds of spectra, now explained with photons. A hot, dense object gives a continuous spectrum, every wavelength. A hot, thin gas gives an emission spectrum, bright lines only. Its electrons can only have fixed energy levels. Each drop between levels gives out one photon, with E equals h f, an exact **energy**. Hydrogen's red line at six hundred and fifty-six nanometres comes from a drop of three point zero times ten to the minus nineteen joules, about one point nine electron **volts**.
+
+Visual: board change: at the left the painted filament lamp `y12p-filament-lamp-v1.png` with a continuous strip; below it the painted discharge tube `y12p-discharge-tube-v1.png` with a hydrogen emission strip (bright lines at 410.2, 434.0, 486.1, 656.3 nm on black). On "A hot, dense object gives a continuous spectrum" the first strip draws, tag "hot, dense: continuous" (chip "Kirchhoff's laws (m7-v03)"). On "A hot, thin gas gives an emission spectrum" the emission strip draws, tag "hot, thin gas: emission". On "fixed energy levels" the energy ladder draws at the right: levels "n = 1", "n = 2", "n = 3", and a dashed top line "ionised". On "Each drop between levels gives out one photon" a rose electron drops from n = 3 to n = 2 and an amber photon leaves. On "energy" chip "E = hf = hc/λ" (data sheet). On "volts" `AlignedAlgebra` "E = (6.626 × 10⁻³⁴)(3.00 × 10⁸) / 656.3 × 10⁻⁹ = 3.03 × 10⁻¹⁹ J = 1.89 eV", the photon colour matching the 656.3 nm line.
+
+### 3. absorption: why the lines are dark
+> Now put cooler, thinner gas in front of a hot source. Its atoms absorb only photons whose energy exactly matches a gap between their levels, lifting an electron **up**. They give that energy out again, but in all directions, so less reaches you at that wavelength. That's a dark line, at the same wavelength as the bright **one**. A star works like this. Its hot, dense layers give the continuous light, and the cooler gas above absorbs, so stars show absorption **spectra**.
+
+Visual: board change to the `m8-spectra` layout: filament plate, a coded cool gas cloud, a strip. On "absorb only photons whose energy exactly matches a gap" the energy ladder small at the right: an amber photon arrives and the electron jumps from n = 2 to n = 3. On "up" the strip shows a continuous spectrum with a dark line at 656.3 nm. On "in all directions" small amber arrows leave the cloud in every direction, only one continuing to the strip. On "one" the emission strip slides beneath, dashed connectors at identical positions. On "A star works like this" the Sun plate `phys-y11-sun-v1.png` replaces the filament, with a coded arc "hot, dense layers" and an outer arc "cooler atmosphere". On "spectra" chip "stars: absorption spectra (Fraunhofer lines in the Sun)".
+
+### 4. a star against a black body
+> How does a star's spectrum compare with a pure black body? Plot intensity against wavelength. A black body gives a smooth curve, and its shape depends only on **temperature**. A star's spectrum follows nearly the same curve, but with narrow dips cut into it. The curve tells you the **temperature**. The dips tell you which atoms are in the atmosphere, and, as you'll see, they tell you the temperature **again**.
+
+Visual: board change to the intensity graph: x "wavelength (nm)" 200 to 1000, y "intensity (relative)". On "smooth curve" the amber black-body curve for 5800 K draws, tag "black body: depends only on T". On "temperature" (first) two thinner curves at 4000 K and 8000 K draw and fade, peaks moving left as T rises. On "narrow dips cut into it" the ink stellar curve follows the 5800 K curve with narrow dips at 393.4, 396.8, 434.0, 486.1, 589.0 and 656.3 nm, the strip aligned beneath. On "The curve tells you the temperature" the curve's peak marker glows. On "which atoms are in the atmosphere" labels on the dips "Ca II", "H", "Na". On "again" the dips' labels get small thermometer icons; small tag "line positions also give speed (m7-v04)".
+
+### 5. method one: the peak
+> Method one is the peak. Wien's law says the peak wavelength is b over T. The Sun's spectrum peaks at about five hundred nanometres, so T is two point eight nine eight times ten to the minus three, over five times ten to the minus seven. That's about five thousand eight hundred **kelvin**. But hot stars peak in the ultraviolet, which our atmosphere blocks, and dust between the stars can redden light. So astronomers also read the **lines**.
+
+Visual: the graph stays; working layout at the right. Task strip: "Find the Sun's surface temperature from its peak." Equation strip: "λ_max = b/T → T = b/λ_max". Givens: "λ_max ≈ 500 nm = 5.0 × 10⁻⁷ m"; "b = 2.898 × 10⁻³ m K" (data sheet). On "b over T" the peak marker drops a line to the axis, "500 nm". On "kelvin" `AlignedAlgebra` "T = 2.898 × 10⁻³ / 5.0 × 10⁻⁷ ≈ 5.8 × 10³ K" (boxed); the "T = ?" gauge from scene 1 reads "≈ 5800 K". On "hot stars peak in the ultraviolet" a 30 000 K curve draws with its peak far left at 97 nm, a grey band "UV: absorbed by our atmosphere" shading it. On "dust between the stars can redden light" a small tag "dust reddens: colour can mislead". On "lines" the strip enlarges.
+
+### 6. why hydrogen peaks in the middle
+> Here's why hydrogen lines peak in the middle. The visible hydrogen lines are absorbed by electrons starting in level two, not the lowest level. In a cool star, almost every electron sits in level one, so hardly any atoms can absorb these lines. Heat the star, and collisions lift more electrons up to level two, so the lines grow **stronger**. But too hot, and collisions strip the electron off completely. Ionised hydrogen has no electron left to absorb. The balance is best near ten thousand kelvin, in A stars. So weak hydrogen lines can mean too cool or too hot, not too little **hydrogen**.
+
+Visual: board change to the level-2 population meter: three atom panels "cool (~4000 K)", "~10 000 K", "very hot (~30 000 K)", each with a small energy ladder. On "starting in level two" an arrow from n = 2 to n = 3 labelled "Hα (656.3 nm)", tag "visible hydrogen lines start from n = 2 (10.2 eV up)". On "almost every electron sits in level one" the cool panel's electrons all on n = 1; its strip shows faint hydrogen lines. On "stronger" the middle panel's electrons partly lifted to n = 2 (shown as a few, not most); its strip's hydrogen lines darken; the white star plate above it. On "strip the electron off completely" the hot panel's electrons leave past the "ionised" line (13.6 eV). On "Ionised hydrogen has no electron left to absorb" its strip's hydrogen lines fade. On "near ten thousand kelvin" a hump graph draws below: "hydrogen line strength" against temperature (hotter to the left, as stellar charts), peaking near 10 000 K, tag "A stars". On "hydrogen" (last) a chip "weak hydrogen lines = little hydrogen" fades in and is crossed.
+
+### 7. the other thermometers
+> Other features fill in the scale. Helium holds its electrons more tightly than hydrogen, so lines from ionised helium only show in the hottest stars, the O **stars**. Calcium loses an electron easily, so ionised calcium lines are strong in cooler stars like the **Sun**. And in the coolest stars, below about three and a half thousand kelvin, molecules like titanium oxide survive, adding broad dark **bands**. Each feature is like a thermometer, reading over its own range.
+
+Visual: board change: the feature thermometers at the lower right (horizontal bars on a shared temperature axis, hotter to the left: 40 000 K to 3000 K). On "Helium holds its electrons more tightly" chip "remove an electron: He 24.6 eV, H 13.6 eV". On "stars" (first) the He II bar draws over "> 30 000 K", and an O-star strip (the hot-blue plate beside it) shows a He II line at 468.6 nm with weak hydrogen lines; a He I bar over B (447.1 and 587.6 nm) draws silently. On "Sun" the Ca II bar draws over about 4000 to 6000 K, and a G-star strip shows strong lines at 393.4 and 396.8 nm (axis extended to 350 nm, tag "Ca II H and K"). On "bands" the TiO bar draws below about 3700 K, and an M-star strip (the cool-red plate) shows broad dark bands with sharp edges at 476, 517, 545, 616, 671 and 706 nm, tag "titanium oxide (TiO)". On "Each feature is like a thermometer" the hydrogen hump from scene 6 joins as a fifth bar peaking near 10 000 K.
+
+### 8. seven classes
+> Put it together, and stars fall into seven classes, O, B, A, F, G, K and M, from hottest to coolest. O stars are above about thirty thousand kelvin and look blue. M stars are below about three and a half thousand kelvin and look **red**. Each class splits into ten steps, zero to nine, and the Sun is a G2 **star**. The letters look scrambled because they began as an alphabet, sorted by hydrogen line strength. Astronomers later reordered them into a smooth sequence, and it turned out to be a sequence of **temperature**.
+
+Visual: board change to the class strip: seven spectrum strips stacked, labelled O, B, A, F, G, K, M, each with a coloured swatch (blue, blue-white, white, yellow-white, yellow, orange, red) and the site's range ("> 30 000 K", "10 000 to 30 000 K", "7500 to 10 000 K", "6000 to 7500 K", "5200 to 6000 K", "3700 to 5200 K", "< 3700 K"). On "from hottest to coolest" a navy arrow "hotter ← → cooler". On "red" the O and M swatches pulse. On "star" the G strip expands into "G0 ... G9" ticks with "G2: the Sun" and the Sun plate beside it. On "began as an alphabet" a faint row "A B C D ... (by hydrogen strength)" with A first. On "temperature" the letters slide into the order O B A F G K M under a thermometer arrow.
+
+### 9. same stuff, different temperature
+> And here's the surprise. In nineteen twenty-five, Cecilia Payne showed that the differences between classes come from temperature, not composition. Almost every star is mostly hydrogen and helium. An A star and an M star can be made of nearly the same stuff, and still have completely different **spectra**.
+
+Visual: the class strip shrinks to the left. On "temperature, not composition" chip "spectral class = temperature, not composition". On "mostly hydrogen and helium" two identical composition bars beside the A and M strips "H ≈ 3/4, He ≈ 1/4, everything else ≈ 2% (by mass)". On "spectra" the A strip (strong hydrogen) and the M strip (TiO bands) flash side by side, tag "same stuff, different T".
+
+### 10. classify a star
+> Let's classify one. A star's spectrum peaks at four hundred and fourteen nanometres. Its hydrogen lines are fairly strong, with some metal lines, but there's no ionised helium and no molecular bands. By Wien's law, T is b over four point one four times ten to the minus seven, about seven thousand **kelvin**. Strong but not the strongest hydrogen, no helium, no molecules, and seven thousand kelvin. That's an F star, and the lines and the curve **agree**.
+
+Visual: board change to the working layout. Task strip: "Classify the star." Givens grouped: "λ_max = 414 nm"; "lines: H fairly strong; some metal lines; no He II; no TiO"; "b = 2.898 × 10⁻³ m K". On "there's no ionised helium and no molecular bands" the feature thermometers reappear small, He II and TiO bars greyed with crosses. On "kelvin" `AlignedAlgebra` "T = 2.898 × 10⁻³ / 4.14 × 10⁻⁷ = 7.0 × 10³ K". On "Strong but not the strongest hydrogen" a vertical marker at 7000 K drops through the thermometers, hitting the hydrogen hump on its cooler side and the start of the metal lines. On "agree" chip "class F (6000 to 7500 K)" boxed, tag "curve and lines agree".
+
+### 11. a way to remember
+> Here's a way to remember why hydrogen peaks in the middle. Too cool to lift, too hot to **keep**.
+
+Visual: the three atom panels from scene 6 return small. On "Too cool to lift" the cool panel's electrons stay on n = 1; on "too hot to keep" the hot panel's electrons leave; on "keep" the handwritten line writes large: "Hydrogen peaks in the middle: too cool to lift, too hot to keep." Hold about 2 seconds.
+
+### 12. attempt 1 (countdown, 10 seconds)
+> Your turn. A star's spectrum peaks at seven hundred and twenty-five nanometres. It shows strong lines from metals, and weak molecular bands. Calculate its surface temperature, and identify its spectral class. Pause here to answer.
+
+Visual: `QuestionCard` (subject "Physics"), worded as printed: "The continuous spectrum of a star has its peak intensity at a wavelength of 725 nm. Its absorption spectrum shows strong lines of metals and weak molecular bands. (a) Calculate the star's surface temperature. (b) Identify the star's spectral class, giving a reason. (3 marks)" Data chip "b = 2.898 × 10⁻³ m K"; the class table (site ranges) small at the side. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 13. feedback 1 (brief)
+> T is b over seven point two five times ten to the minus seven metres, about four thousand **kelvin**. That's in the K range, three thousand seven hundred to five thousand two hundred, and strong metal lines with weak molecular bands fit a K **star**. The slip is putting in seven hundred and twenty-five without converting to **metres**.
+
+Visual: card shrinks to the top; "725 nm" and "weak molecular bands" underline. On "kelvin" "T = 2.898 × 10⁻³ / 7.25 × 10⁻⁷ = 4.0 × 10³ K". On "star" "K (3700 to 5200 K); metals strong, molecules only beginning" (boxed). On "metres" a chip "T = 2.898 × 10⁻³ / 725 = 4.0 × 10⁻⁶ K" fades in and is crossed (caption "nm → m: × 10⁻⁹"). Hold about 1 second.
+
+### 14. attempt 2 (countdown, 10 seconds)
+> Last one. Star P shows strong lines of ionised helium. Star Q shows strong titanium oxide bands. Both have weak hydrogen lines, and both have the same composition. Explain why both stars have weak hydrogen lines, and identify their spectral classes. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed: "Star P and Star Q have the same chemical composition. Star P's spectrum shows strong lines of ionised helium. Star Q's spectrum shows strong titanium oxide bands. Both stars show weak hydrogen absorption lines. Identify the spectral class of each star, and explain why both have weak hydrogen lines. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 15. feedback 2 (brief)
+> Star P is an O star. It's so hot that most hydrogen is ionised, with no electron left to **absorb**. Star Q is an M star. It's so cool that almost no electrons are lifted to level two, where the visible hydrogen lines start. Different temperatures, the same weak **lines**. The slip is saying weak hydrogen lines mean little **hydrogen**.
+
+Visual: card shrinks to the top; "same chemical composition", "ionised helium", "titanium oxide" and "weak hydrogen" underline. On "absorb" "P: class O (> 30 000 K): H mostly ionised". On "where the visible hydrogen lines start" "Q: class M (< 3700 K): electrons stay in n = 1". On "lines" the hydrogen hump with P on its hot side and Q on its cool side. On "hydrogen" (last) a chip "weak hydrogen lines mean little hydrogen" fades in and is crossed (caption "line strength depends on T"). Hold about 1 second.
+
+### 16. handoff
+> So a spectrum gives a star's temperature, from its curve and from its lines. But here's a problem. These two stars have matching spectra, both M stars at the same temperature. Yet one gives out about a million times more power than the **other**. A spectrum alone can't tell you that. So how does the HR diagram distinguish brightness, temperature and stellar **stage**?
+
+Visual: board clears (camera change). On "from its curve and from its lines" the curve and the hydrogen hump shrink into two small tags at the top, "λ_max → T" and "lines → T, class". On "These two stars have matching spectra" two copies of `y12p-star-cool-red-v1.png` appear: left small, right much larger (scaled uniformly), each above an identical M-class strip with TiO bands, both tagged "class M, about 3500 K". On "other" two luminosity bars beside them, "1" and "about 10⁶" (on a log scale), with "?" between. On "A spectrum alone can't tell you that" a crossed chip "same spectrum → same star?". On "stage" a faint empty pair of axes appears behind the stars: x "temperature (K)" with tick labels running 30 000 at the left to 3000 at the right, y "luminosity" with a log scale, no points; chip "Next: how does the HR diagram distinguish brightness, temperature and stellar stage?". Hold about 2 seconds. This is the final frame (see "Final frame").
+
+### 17. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Electrons in atoms have fixed energy levels. A drop emits, a jump absorbs, one photon of E = hf equal to the gap (Hα: 1.89 eV, 656.3 nm). Hot dense: continuous. Hot thin gas: emission. Cooler gas in front: absorption (re-emitted in all directions, so dark).
+2. A star's spectrum is a near black-body curve (temperature) with absorption lines (composition and temperature).
+3. Method 1: Wien's law, T = b/λ_max (Sun: 500 nm → 5800 K). Method 2: which lines are strong.
+4. Hydrogen lines peak near 10 000 K (A stars): too cool, electrons stay in level 1; too hot, ionised. He II in O stars; Ca II in G and K; TiO bands in M.
+5. Classes O B A F G K M, hottest (blue, > 30 000 K) to coolest (red, < 3700 K), subclasses 0 to 9; the Sun is G2. Class depends on temperature, not composition.
+
+Memory aid (large, on the notes screen): *Hydrogen peaks in the middle: too cool to lift, too hot to keep.*
+
+## Teaching checks
+
+- **Does it explain causes?** Why lines exist: fixed levels, one photon per transition (2). Why dark: re-emission in all directions (3). Why the curve gives temperature: black-body shape depends only on T (4, 5). Why hydrogen peaks in the middle: level-2 population against ionisation (6). Why helium is hot-only and molecules cool-only: binding energies (7). Why the letters are scrambled: the alphabet came before the cause (8).
+- **Misconceptions addressed:** weak hydrogen lines mean little hydrogen (6, 15 crossed); class depends on composition (9); colour alone is reliable (5); nm used as m (13 crossed).
+- **One idea at a time:** emission (2), absorption (3), comparison (4), Wien (5), hydrogen (6), other features (7), classes (8), composition (9), worked classification (10).
+- **Video makes it easier:** the photon colour matching the line (2); the one arrow that reaches the strip (3); the stellar curve hugging the black body with dips (4); the three atom panels and the hump (6); the feature thermometers (7); the letters sliding into order (8); the vertical marker crossing the thermometers (10).
+- **Response opportunity:** one prediction (3 s) and two unseen HSC-style tasks with every condition visible, 10 s each; nothing answer-bearing. One crossed mistake each; feedback about 25 s each.
+- **Avoided double teaching:** the three spectra in plain language (m7-v03), the outline of temperature from lines and the O to M names (m7-v04), Wien's law (m7-v09), E = hf (m7-v10) recalled in a clause; this video adds the photon account, the comparison with a black body, the causes of each class's features and the classification itself.
+- **Syllabus coverage:** `P8-IQ1-04`: production of emission and absorption spectra (2, 3), compared with a continuous black-body spectrum (4, 5). `P8-IQ1-05`: key features of stellar spectra (continuum peak, hydrogen, helium, calcium, molecular bands) (5 to 7) and their use to classify stars (8 to 10, 12 to 15).
+- **Out of scope by design:** luminosity classes and the HR diagram (v04); radial velocity, binary stars and exoplanets (m7-v04; site extension); line broadening (m7-v04); Saha and Boltzmann equations (author note b).
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 12; original wording, HSC style, 3 marks suggested, not an official marking scheme).** "The continuous spectrum of a star has its peak intensity at a wavelength of 725 nm. Its absorption spectrum shows strong lines of metals and weak molecular bands. (a) Calculate the star's surface temperature. (b) Identify the star's spectral class, giving a reason."
+Model answer: (a) T = b/λ_max = 2.898 × 10⁻³ / 7.25 × 10⁻⁷ = 4.0 × 10³ K. (b) Class K: 4000 K lies in the K range (3700 to 5200 K), and strong metal lines with molecular bands only beginning to appear are characteristic of K stars (M stars have strong molecular bands). Classic mistake (crossed): T = 2.898 × 10⁻³ / 725 = 4.0 × 10⁻⁶ K (nm not converted).
+
+**Attempt 2 (scene 14; original wording, HSC style, 3 marks).** "Star P and Star Q have the same chemical composition. Star P's spectrum shows strong lines of ionised helium. Star Q's spectrum shows strong titanium oxide bands. Both stars show weak hydrogen absorption lines. Identify the spectral class of each star, and explain why both have weak hydrogen lines."
+Model answer: Star P is class O: ionised helium lines need temperatures above about 30 000 K. At that temperature most hydrogen is ionised, so few atoms have an electron to absorb, and its hydrogen lines are weak. Star Q is class M: molecules such as titanium oxide survive only below about 3700 K. At that temperature almost all hydrogen electrons are in the lowest level, but the visible hydrogen lines are absorbed only by electrons starting in level 2, so its hydrogen lines are weak too. The weak lines are caused by temperature, not by a lack of hydrogen. Classic mistake (crossed): "weak hydrogen lines mean little hydrogen".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Constants (HSC data sheet) | h = 6.626 × 10⁻³⁴ J s; c = 3.00 × 10⁸ m s⁻¹; b = 2.898 × 10⁻³ m K; 1 eV = 1.602 × 10⁻¹⁹ J | 2, 5, 10, 12, 13 |
+| Hα (NIST) | 656.3 nm; E = 3.029 × 10⁻¹⁹ J = 1.891 eV | 2 |
+| Hydrogen levels | n = 2 at 10.2 eV above n = 1; ionisation 13.6 eV | 6 |
+| Ionisation energies | He 24.6 eV; Ca 6.11 eV | 7 |
+| Line wavelengths (NIST) | H 410.2, 434.0, 486.1, 656.3; Ca II 393.4, 396.8; He I 447.1, 587.6; He II 468.6; Na D 589.0, 589.6; TiO heads 476, 517, 545, 616, 671, 706 nm | 2 to 8, 16 |
+| Sun (site) | λ_max ≈ 500 nm → T = 5796 K ≈ 5800 K (IAU 5772 K → 502 nm) | 5 |
+| Hot star peak | 30 000 K → 96.6 nm | 5 |
+| Class ranges (site) | O > 30 000; B 10 000 to 30 000; A 7500 to 10 000; F 6000 to 7500; G 5200 to 6000; K 3700 to 5200; M < 3700 K | 7, 8, 10, 13, 15 |
+| Worked example | 414 nm → 7000 K → F | 10 |
+| A1 | 725 nm → 3997 K ≈ 4.0 × 10³ K → K; slip 4.0 × 10⁻⁶ K | 12, 13 |
+| Handoff | luminosity ratio about 10⁶ (red dwarf about 0.01 L☉ against red supergiant about 10⁴ L☉; illustrative) | 16 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re-check.
+
+- 6.626e-34 × 3.00e8 / 656.3e-9 = 3.029e-19 J; / 1.602e-19 = 1.891 eV.
+- 13.6 × (1 − 1/4) = 10.2 eV.
+- 2.898e-3 / 500e-9 = 5796 K; 2.898e-3 / 5772 = 502 nm; 2.898e-3 / 30 000 = 96.6 nm.
+- 2.898e-3 / 414e-9 = 7000 K.
+- 2.898e-3 / 725e-9 = 3997 K; 2.898e-3 / 725 = 4.0e-6.
+
+## Memory aid check
+
+- **"Hydrogen peaks in the middle: too cool to lift, too hot to keep."** Meaning, as said in scene 11: visible hydrogen absorption needs electrons in level 2; in cool stars collisions are too weak to lift electrons there; in very hot stars hydrogen is ionised and keeps no electron; so the lines are strongest at intermediate temperatures, near 10 000 K. Assumptions checked: "lift" means collisional excitation to n = 2 (not absorption from n = 1, which gives ultraviolet Lyman lines); "keep" means ionisation; the peak is in A stars; the aid is about line strength, not hydrogen abundance (which is nearly the same in all classes). It helps a new case: A2 (both P and Q have weak lines for opposite reasons). Introduced after the explanation (6).
+- **Considered, not used:** the site's O to M sentence mnemonic (open decision 1).
+
+## Narration length estimate
+
+Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,276 characters**, 17 scenes. Characters per scene (1 to 17): 469, 499, 463, 401, 434, 587, 462, 511, 303, 449, 93, 230, 325, 271, 326, 362, 75. At 13.3 characters per second the speech is about 472 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 84 s of holds and countdowns): **about 556 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's alphabet history (keep the reorder on screen); scene 5's dust clause; scene 9's last sentence.
+
+## Opening frame
+
+v02's final frame (`phys-y12-m8-v02.md`, "Final frame"): paper background; heading "What evidence supports an expanding hot early Universe?"; four small evidence tags across the top; the painted Sun `phys-y11-sun-v1.png` at the left with a light path to a coded spectrum strip at the right (dark lines at 393.4, 396.8, 410.2, 434.0, 486.1, 656.3 nm); above it an intensity curve with narrow dips, tag "continuous + absorption"; a small thermometer gauge "T = ?"; chip "Next: how can spectra classify stars and reveal their temperature?". Scene 1 fades the evidence tags, keeps the Sun, strip, curve and gauge, and turns the chip into the heading.
+
+## Final frame
+
+The last explained frame (end of scene 16, before the key-notes board): paper background; heading "How can spectra classify stars and reveal their temperature?"; two small tags at the top, "λ_max → T" and "lines → T, class"; behind everything, faint empty axes: x "temperature (K)" with labels from 30 000 at the left to 3000 at the right, y "luminosity" with a log scale, no points plotted; in front, two copies of the painted star `y12p-star-cool-red-v1.png` (scaled uniformly), small at the left and much larger at the right, each above an identical M-class spectrum strip with titanium oxide bands, both tagged "class M, about 3500 K"; beside them two luminosity bars "1" and "about 10⁶" with "?" between; a crossed chip "same spectrum → same star?"; chip "Next: how does the HR diagram distinguish brightness, temperature and stellar stage?". v04 opens on this frame.
+
+## Scene list and build ids
+
+Lesson key `p-y12-m8-v03` (route phys-y12-m8-v03). Suggested explainer folder `src/explainer/lessons/phys-y12-m8-v03` and build folder `docs/production/claude-pm/lessons/p-y12-m8-v03` (root to confirm).
+
+In order (kebab-case; 17 scene headings, all `### N.`): hook, emission-levels, absorption, black-body-comparison, wien-method, hydrogen-hump, other-features, classes, payne, worked-classify, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff-v04, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: energy ladder with photon, intensity graph with dips, level-2 population meter, class strip, feature thermometers, `m8-spectra`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change; 2 to 3 clear change; 3 to 4 clear change to the graph; 4 to 5 camera continue; 5 to 6 clear change; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue; 9 to 10 clear change to working; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
+
+Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v03-learning-review.md`, `science_check` = `checks/p-y12-m8-v03-physics-check.md`.
+
+## Assets
+
+Have or requested earlier (scaled uniformly only, never stretched):
+- `public/assets/physics/phys-y11-sun-v1.png` (1254 × 1254, RGBA): 1, 3, 8.
+- `y12p-filament-lamp-v1.png` and `y12p-discharge-tube-v1.png` (requested by m7-v03): 2, 3.
+- `y12p-star-cool-red-v1.png` and `y12p-star-hot-blue-v1.png` (requested by m7-v04): 1, 7, 16.
+
+Need (new plate):
+1. `y12p-star-white-v1.png`: 1, 6, 8.
+
+Coded: spectrum strips, intensity graphs, energy ladders, photons, atom panels, hump graph, feature thermometers, class strip and swatches, composition bars, luminosity bars, faint axes, calculation strips, crossed chips, countdowns, key notes board.
+
+Kit gaps (for the v03 build brief):
+1. **Intensity graph with dips.** Planck curves at given T, with narrow absorption dips at given wavelengths aligned to a strip below.
+2. **Level-2 population meter.** Three atom panels with electrons on levels, set by a temperature parameter, and the hump graph.
+3. **Feature thermometers.** Bars on a shared reversed temperature axis (reused in v04's colour band).
+4. **Class strip.** Seven stacked strips with real line positions and swatches.
+
+## Codex asset brief
+
+1. **`y12p-star-white-v1.png`** (new). A painted white star of spectral class A (like Sirius): a glowing sphere, white with a faint blue tint, soft limb darkening, a subtle bright corona fading to transparent. Same size, framing and painting style as `y12p-star-cool-red-v1.png` and `y12p-star-hot-blue-v1.png` (requested by m7-v04) so the three sit in a row. No text, no lens flare spikes. Transparent PNG with alpha channel, about 1200 × 1200, centred with even margins.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and the values in the narration, screen text and attempts against the "Numbers used" table and NIST line wavelengths.
+2. Confirm the physics of every learner-visible claim: photon account of emission and absorption; re-emission in all directions; star spectra as absorption spectra on a near black-body curve; Wien's law use and its limits (UV, dust); the hydrogen hump explanation (author note b); He II, Ca II and TiO temperature ranges (author note e); class ranges and colours (author note c); subclasses and the Sun as G2; the history of the letters (author note d); Payne's result.
+3. Confirm the memory aid's assumptions (see "Memory aid check").
+4. Confirm every visual cue phrase quoted after "On" appears verbatim in its scene's narration, in spoken order.
+5. Confirm both attempt cards are original in wording, carry every condition and show nothing answer-bearing.
+6. Confirm the syllabus quotes match the route JSON exactly and are labelled 2017.
+7. Confirm no person, hand, face or body outline is drawn or requested.
+8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
+9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+10. Report site notes 9 to 11 under Decisions to root.
+
+## YouTube metadata (draft)
+
+Title: Stellar Spectra and Spectral Classes (OBAFGKM): Reading a Star's Temperature | HSC Physics Module 8
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module8/lesson09.sa.html
+
+How do emission and absorption spectra form, and how does a star's spectrum compare with a black body? Read a star's temperature two ways: from the peak of its curve with Wien's law, and from which absorption lines are strong. See why hydrogen lines are strongest in the middle of the temperature range, why ionised helium marks the hottest stars and titanium oxide the coolest, and how this gives the classes O, B, A, F, G, K and M. Two exam-style questions at the end.
+
+Year 12 Physics (2017 syllabus), Module 8: From the Universe to the Atom.
+Syllabus content (NSW Physics Stage 6, 2017):
+"account for the production of emission and absorption spectra and compare these with a continuous black body spectrum (ACSPH137)"
+"investigate the key features of stellar spectra and describe how these are used to classify stars"
+Official syllabus: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx
+
+Previous: evidence for an expanding hot early Universe. Next: the Hertzsprung-Russell diagram.
+
+#HSCPhysics #Physics #StellarSpectra #HSCScience
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v02 and m7-v03 and v04; check that the photon account adds to m7-v03 without repeating it; that the level-2 argument is followable at speech pace and never implies most atoms are in level 2; that the class ranges on screen do not overload the reading; that the handoff's million-times luminosity gap motivates the HR diagram), then the physics check and the Codex error check.
+- The photon colour matching its line, the curve with dips, the three atom panels and the marker crossing the feature thermometers carry the explanation; judge them at playback speed in the voiced preview.

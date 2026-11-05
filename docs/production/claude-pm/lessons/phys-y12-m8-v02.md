@@ -1,0 +1,308 @@
+# Year 12 Physics M8 V02: Evidence for the Big Bang. What evidence supports an expanding hot early Universe? (design)
+
+Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+
+Narration 6,462 characters, 18 scenes, about 570 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v01's final frame.
+
+Scope: second video of Year 12 Physics Module 8 (From the Universe to the Atom, Physics Stage 6, 2017 syllabus), inquiry question "What evidence is there for the origins of the elements?". Templates as `phys-y12-m8-v01.md`; `math-a12-d10.md` for the calculation layout. No pre-design pack exists; the pack work is done here (2017 wording from the ledger, site values kept, every number recalculated in Python, real astronomical data cited, original attempts, asset reuse). Site lessons read in full (6 Nov, read-only, through the brief 168 text extracts `work/brief168/module8-lesson02.sa.txt` and `module8-lesson03.sa.txt`, hashes checked against the live files):
+- `C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson02.sa.html`, SHA256 `66b3f0995f5c1aac5dd5d873ad7328c8efe70438c8254c93c14e404deb965ddb` (matches the route): orient and predict (three observations, steady-state prompt), goals and vocabulary, evidence 1 (redshift and expansion), evidence 2 (CMB; steady state), evidence 3 (primordial abundances; why not stars), apply and evaluate ("Assess 7 marks", "Analyse 6 marks"), independent practice, retrieve and reflect.
+- `C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson03.sa.html`, SHA256 `350eddc0e32c2fc388c556c89b0bab38d6869f29c0dd3c1cd5336e010a329b4a` (matches the route): orient and predict (656.3 to 656.5 nm), read the Hubble graph (Figure 1, units), calculate distance from a redshift (worked example 656 to 714 nm), link redshift to the scale factor (extension), apply units, reason about expansion and limits (misconceptions, "Analyse 7 marks", "Assess 6 marks"), independent practice, retrieve and reflect.
+
+Route entry: `phys-y12-m8-v02`, sections `evidence-redshift-and-expansion`, `evidence-cosmic-microwave-background`, `evidence-primordial-abundances` (lesson 2), `read-the-hubble-graph`, `reason-about-expansion-and-limits` (lesson 3). Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Connect Hubble distance-redshift evidence, background radiation and light-element abundance to distinct predictions; state limits of simple v=H0d. Stop before full cosmological parameter fitting." Next: "phys-y12-m8-v03: How can spectra classify stars and reveal their temperature?" Entry knowledge asks that each newly introduced equation is derived before use: z is defined from the measured stretch (2), v ≈ cz comes from m7-v04's derived Doppler relation (2), and v = H₀d is read off the graph's gradient (3).
+
+Owner rules applied: 2017 syllabus quoted exactly; no people, hands, faces or body outlines (Edwin Hubble and the two radio astronomers are named in words only; no observer, telescope operator or scientist is drawn); spectra, the Hubble graph, the expanding grid, the black-body curve, the abundance bars and the supernova light curves are coded graphs, never painted; the galaxy and the horn antenna are painted plates (one reused, one new), scaled uniformly, never stretched; real data cited (COBE and Planck CMB temperature 2.7255 K; Planck 2018 H₀ = 67.4 km s⁻¹ Mpc⁻¹ and the distance-ladder 73 km s⁻¹ Mpc⁻¹ in author notes, site value 70 on screen; primordial helium 0.245; Dark Energy Survey supernova time dilation, 2024); every number recalculated in Python; a 3 s prediction; "Pause here to answer." with a 10 s countdown; brief feedback with one crossed-out mistake; original attempts; Australian spelling; no em dashes. Recalled, not re-taught: v01 (the hot early Universe, 25% helium count, recombination at about 3000 K), m7-v04 (Doppler shift, Δλ/λ = v/c derived for v ≪ c), m7-v09 (Wien's law, black-body curves), m7-v13 (time dilation), Year 11 (inverse square law for light).
+
+Syllabus content (Physics Stage 6 (2017), Module 8; ledger id `P8-IQ1-02`), quoted from the route JSON `syllabusActions` and the ledger:
+
+- `P8-IQ1-02`: "investigate the evidence that led to the discovery of the expansion of the Universe by Hubble (ACSPH138)"
+
+Coverage carried from Module 7 (root decisions for Module 7, item 7): `P7-IQ4-02` lists "evidence from cosmological studies" for time dilation; scene 10 supplies it (supernova light curves stretched by 1 + z).
+
+Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx (page 62)
+
+**Boundary:** starts on v01's final frame (stretched light arriving from every edge, "still here?"; galaxies receding, "still receding?"). Teaches: redshift z = Δλ/λ_rest and v ≈ cz for small z; how Hubble's distances were found (pulsing stars of known luminosity, compared with apparent brightness); the 1929 graph and Hubble's law v = H₀d with H₀ ≈ 70 km s⁻¹ Mpc⁻¹ and the megaparsec; why proportional recession means uniform expansion with no centre; 1/H₀ ≈ 14 billion years as a rough age; the site's worked example (656 to 714 nm, 380 Mpc); limits of v = H₀d (local motion dominates nearby, Andromeda blueshifted; v = cz fails above z ≈ 0.1); the CMB (predicted, found in 1965, black body at 2.725 K, Wien peak about 1 mm, stretched about 1100 times from about 3000 K, uniform to 1 part in 10⁵, no steady-state source); primordial helium (predicted 25%, observed 24 to 25% in the least processed gas; stars add only a few per cent); cosmological time dilation of supernova light curves; why independent lines together are stronger. Stops before the scale factor and lookback-time calculations (site extension), the Hubble tension, dark energy and parameter fitting (route stop).
+
+## Decisions
+
+- **Learner question (route wording kept).** "What evidence supports an expanding hot early Universe?" The answer is four independent observations, each a prediction of v01's model: galaxies' redshift grows in proportion to distance (2 to 6); a black-body microwave glow fills the sky (7, 8); the oldest gas is about a quarter helium (9); distant supernovae run slow by 1 + z (10). Together they rule out rivals (11).
+- **Hook (site lesson 2 predict, "What does redshift of galaxies tell us about the motion of the universe?").** 3 s prediction chips: "more redshifted", "less redshifted", "the same". Answer: more stretched with distance.
+- **Redshift (site lesson 2 `evidence-redshift-and-expansion` and vocabulary).** z defined as the fractional stretch, z = (λ_obs − λ_rest)/λ_rest. v ≈ cz linked to m7-v04's derivation (Δλ/λ = v/c, v ≪ c). The cosmological cause (space stretching the wave in transit, not motion through space) is stated in scene 4 and in feedback 2.
+- **How the distances were found (site lesson 3 "Edwin Hubble at Mount Wilson Observatory published exactly this result").** One sentence on pulsing stars whose rhythm reveals their true brightness (Cepheid variables, not named on screen; author note a) and the inverse square comparison (Year 11, recalled in a clause). The velocities were largely measured earlier by other astronomers ("astronomers measured these redshifts"; author note a).
+- **Hubble's law (site lesson 3 `read-the-hubble-graph`, Figure 1).** Coded scatter graph, velocity (km s⁻¹) against distance (Mpc), illustrative points scattered about a line through the origin with gradient 70 (tag "illustrative modern data"); "twice as far, twice as fast"; the megaparsec defined (3.26 million light years). Hubble's own 1929 gradient (about 500 km s⁻¹ Mpc⁻¹) is in author note b only.
+- **Why proportional means expansion (site lesson 3 Activity 2; "Analyse 7 marks" step 3).** The `m8-expansion` grid: uniform stretching makes recession proportional to distance from every galaxy; no centre. 1/H₀ ≈ 14 billion years as "a rough age" (site "Hubble time ... approximate age"); the 13.8 billion years of v01 differs because the expansion rate has changed (one clause on screen only).
+- **Worked example (site lesson 3 worked example, numbers unchanged).** Hα 656 nm observed at 714 nm: z = 58/656 = 0.088; v = cz = 2.6 × 10⁴ km s⁻¹; d = v/H₀ = 380 Mpc (site 377 Mpc from a rounded v; author note c); about 1.2 billion light years. Three stages, one at a time, givens grouped with units (c = 3.00 × 10⁵ km s⁻¹, as the site).
+- **Limits (route "state limits of simple v=H0d"; site lesson 3 misconceptions and "Analyse 7 marks" step 5).** Nearby: Andromeda approaches at about 300 km s⁻¹ (relative to the Sun) against an expansion speed at its distance (0.77 Mpc) of about 54 km s⁻¹ (author note d). Far: v = cz is only good for z below about 0.1 (site "roughly z < 0.1"); galaxies are now known beyond z = 10 (author note e). The Hubble tension is in author note b only.
+- **CMB (site lesson 2 `evidence-cosmic-microwave-background`).** Predicted as relic radiation (1948, author note f); found in 1965 by two radio astronomers with a horn antenna (Arno Penzias and Robert Wilson, named in words in the narration; the antenna is a painted plate with no people). Black body at 2.725 K (COBE FIRAS); Wien peak 1.06 mm (site's "~1.9 mm" is the frequency-peak wavelength; site note 1); emitted at about 3000 K, peak about 0.97 μm, stretched about 1100 times (site lesson 1); uniform to 1 part in 10⁵; steady state (defined in a phrase: an unchanging Universe with matter continuously created) has no source.
+- **Helium (site lesson 2 `evidence-primordial-abundances`; "Analyse 6 marks").** v01's predicted 25%; observed about 24 to 25% in old, unprocessed gas (author note g: Y_p = 0.245 ± 0.003); stars add only a few per cent over the Universe's age, and gas that has formed few stars still has nearly a quarter helium (site "Analyse 6 marks" steps 2 and 3).
+- **Cosmological time dilation (root decision 7 for Module 7; not on the site).** A wavelength is c times the time between crests, so the stretch of 1 + z applies to every interval in the signal; Type Ia supernova light curves at z = 1 last twice as long (schematic light curves; measured by the Dark Energy Survey, 2024, to z ≈ 1.2; author note h). Called "cosmological time dilation" and linked to m7-v13 in one sentence. It also counts against a static "tired light" model (on screen only).
+- **Combination (site lesson 2 "Assess 7 marks").** Four independent lines with different instruments; expansion (redshift, slowed clocks), heat (black body), dense enough to fuse (helium); one model explains all. A small table "Big Bang ✓ / steady state ✗" on screen.
+- **Memory aid (scene 12, new): "Stretched light, leftover glow, a quarter helium, slow supernovae."** See "Memory aid check".
+- **Attempts (original, HSC style).** A1 (3 marks): calcium K line 393.4 nm observed at 425.0 nm, H₀ = 70: z = 0.080; v = 2.4 × 10⁴ km s⁻¹; d = 340 Mpc. Crossed: using v in m s⁻¹ gives 3.4 × 10⁵ "Mpc". A2 (3 marks, evaluate): Andromeda's blueshift as evidence against expansion. Crossed: "blueshift means the Universe is contracting".
+- **Significant figures.** Two figures for results (site data have two or three).
+- **Handoff (route next).** Every clue was read from light, mostly from spectra. Turn the same tool on stars: "Next: how can spectra classify stars and reveal their temperature?". See "Final frame".
+- **Colour key (as v01; spectra as m7-v03):** spectrum strips coloured by wavelength with black absorption lines; graph axes ink, data points navy, best-fit line amber; the CMB curve amber; abundance bars rose (hydrogen) and grey (helium); supernova light curves navy (nearby) and red (z = 1); crossed predictions red.
+- **Site sources used:** lesson 2: predict (redshift, CMB 2.7 K, 75%/25%, steady state, could stars make the helium?) (1, 7 to 9); vocabulary (redshift, Hubble constant, CMB, primordial nucleosynthesis) (2, 3, 7, 9); `evidence-redshift-and-expansion` (stretched lines; v = H₀d; v ≈ cz for small z; z > 10) (2, 3, 6); `evidence-cosmic-microwave-background` (1965, black body 2.725 K, 1 part in 100 000, satellites, steady state) (7, 8); `evidence-primordial-abundances` (75% and 25%, why not stars) (9); "Assess 7 marks" (independence, joint constraint) (11); "Analyse 6 marks" (amount and uniformity of helium) (9). Lesson 3: `read-the-hubble-graph` (1929, units, gradient, Mpc) (3); worked example (656 to 714 nm) (5); misconceptions (no centre; z = 2 is not twice light speed) (4, 6); "Analyse 7 marks" (origin, scatter as peculiar motion, Andromeda) (4, 6). Not used: scale factor a = 1/(1 + z) and lookback-time steps (site extension), the Hubble tension (author note b), the Hubble time "overestimate" argument (author note b).
+- **Site notes (quoted from the site, read 6 Nov; for root to log in `../site-corrections-phys-y12.md` if accepted; v01 lists notes 1 to 3 on lessons 1, 2 and 7, so these continue the numbering):**
+  4. CMB peak (lesson 2 `evidence-cosmic-microwave-background`): "The CMB peaks at ~160 GHz (~1.9 mm wavelength)". 160 GHz is the peak of the spectrum per unit frequency; its wavelength (c/f) is 1.9 mm, but the peak per unit wavelength (Wien's law, the form HSC students use) is λ_max = 2.898 × 10⁻³ / 2.725 = 1.06 mm. Lesson 1 says "~1 mm". Suggest "peaks at about 1 mm (Wien's law)" with the frequency peak as an aside.
+  5. Prediction example (lesson 3 retrieve and reflect): "d = v/H₀ = 91.5/70 ≈ 1.31 Mpc ... roughly the distance to nearby galaxies like M81." M81 is about 3.6 Mpc away, and at 1.3 Mpc a galaxy's own motion (hundreds of km s⁻¹) swamps a 91.5 km s⁻¹ Hubble speed, which is the limit lesson 3 itself teaches. Suggest choosing a distant galaxy for the worked prediction or adding the limit.
+  6. Count (lesson 3 `read-the-hubble-graph`): "In 1929, Edwin Hubble ... published exactly this result for 46 galaxies". The 1929 paper's distance-velocity plot used 24 galaxies with individual distance estimates (46 velocities in total were listed). Suggest "for about two dozen galaxies".
+  7. Reason (lesson 3 `link-redshift-to-scale-factor`): "actual age ~13.8 Gyr, slightly less because gravity slowed early expansion". With H₀ = 67.4 the Hubble time is 14.5 Gyr; the closeness of 1/H₀ to the age is because early deceleration and later acceleration nearly cancel. Suggest "1/H₀ is close to the age only approximately, because the expansion rate has changed".
+  8. Checked and correct: z = 0.088, v = 2.64 × 10⁴ km s⁻¹ (site), d ≈ 377 to 379 Mpc, 1.23 Gly; 3000/2.725 ≈ 1100; 1 part in 100 000; 75% and 25%.
+- **Cause chain taught, in order:** (1) expanding space stretches light in transit, so lines shift red by z (2); (2) uniform stretching makes recession proportional to distance, v = H₀d, from every galaxy (3, 4); (3) running it back means a denser past (4); (4) local gravity can beat the expansion nearby, and v = cz fails at large z (6); (5) light from the hot early Universe, released at 3000 K, stretched about 1100 times, should arrive as a 2.7 K black body from all directions, and does (7, 8); (6) the first minutes fixed a quarter helium, and stars cannot supply it (9); (7) the same stretch slows every distant clock by 1 + z (10); (8) independent lines agreeing make the model far stronger than any one (11).
+- **Entry knowledge (route `entryKnowledge`):** v01 (the model's timeline and predictions); m7-v04 (Doppler relation); m7-v09 (black body, Wien's law); m7-v13 (time dilation); Year 11 inverse square law and graph gradients.
+- **Learner-visible vocabulary (plain meaning at first use):** redshift z (the fractional stretch of a wavelength, 2); megaparsec (about 3.26 million light years, 3); Hubble constant (the gradient of the speed-distance graph, 3); cosmic microwave background (the leftover glow of the hot early Universe, 7); black body (an ideal emitter whose spectrum depends only on temperature, recalled, 8); steady state (an unchanging Universe with no hot past, 8); supernova (an exploding star, 10); cosmological time dilation (10).
+- **Legacy logic ported:** none. Explainer families reused: `m8-expansion` (grid and stretched wave, scenes 4 and 10, within its limit "local illustrative Hubble law"), `m8-spectra` (a fixed line pattern shifting, scene 2, within its limit "schematic bands"; this design supplies real wavelengths). New coded graphs below.
+- **New explainer motion:** **Hubble scatter graph** (points appear one by one, best-fit line draws through the origin, gradient triangle with units); **black-body curve with Wien marker** (a curve at 3000 K slides and lowers into the 2.725 K curve as a stretch factor counts up to 1100); **sky uniformity dial** (a ring of identical temperature readings round a small "us" dot); **abundance bars** (predicted against observed, rose and grey); **supernova light curves** (two curves on a shared time axis, the second stretched by 2); **evidence table** (ticks and crosses filling); `AlignedAlgebra`; `NumberTicker`; `Countdown` (3 s in scene 1; 10 s in scenes 13 and 15); `QuestionCard`; `Chip` with `cross`; `KeyNotes`; `Heading`.
+- **Board layout:** heading top-left; the current evidence (graph, curve, bars) in the centre; a persistent evidence column at the right that gains one tick per line of evidence (scenes 3, 8, 9, 10); calculation strips at the right in scenes 5, 13 and 14; everything above the bottom 12% of the frame.
+- **Author notes (not learner copy):**
+  (a) Hubble's distances came from Cepheid variables (period-luminosity relation discovered by Henrietta Leavitt, 1912); most of the velocities came from Vesto Slipher's spectra (1912 to 1925); Georges Lemaître published the relation in 1927. Narration names Hubble only, as the syllabus does; "astronomers measured these redshifts" covers Slipher.
+  (b) Hubble's 1929 gradient was about 500 km s⁻¹ Mpc⁻¹ (distance errors). Modern values: Planck 2018 (CMB, ΛCDM) H₀ = 67.4 ± 0.5 km s⁻¹ Mpc⁻¹; SH0ES 2022 (Cepheids and supernovae) 73.0 ± 1.0 km s⁻¹ Mpc⁻¹ (the "Hubble tension"). 1/H₀ = 14.0 Gyr for 70, 14.5 Gyr for 67.4; the age is 13.8 Gyr because the rate has changed. The HSC value 70 is used throughout.
+  (c) 58/656 = 0.0884; v = 2.65 × 10⁴ km s⁻¹; d = 379 Mpc (site 377 Mpc via v rounded to 26 400). Two figures: 380 Mpc. 380 × 3.26 × 10⁶ ly = 1.24 × 10⁹ ly.
+  (d) Andromeda (M31): heliocentric radial velocity about −300 km s⁻¹; relative to the Milky Way's centre about −110 km s⁻¹ (most of the 300 is the Sun's orbit). Distance about 0.77 Mpc (2.5 million ly). H₀d = 54 km s⁻¹. Narration says "towards us at about three hundred kilometres per second", which is the measured value relative to the Sun.
+  (e) Spectroscopic redshifts above 14 (JWST, 2024 and 2025). Narration says "above ten".
+  (f) The relic radiation was predicted by Ralph Alpher and Robert Herman (1948, about 5 K); Robert Dicke's group was preparing a search when Penzias and Wilson found it (Holmdel horn antenna, 1964 to 1965). COBE FIRAS (1990, 1996) measured the black-body form; Fixsen 2009: 2.72548 ± 0.00057 K. Planck (2013, 2018) mapped the 10⁻⁵ anisotropies.
+  (g) Primordial helium mass fraction from metal-poor H II regions: Y_p = 0.2453 ± 0.0034 (Aver et al. 2021); Planck 2018 with standard Big Bang nucleosynthesis predicts 0.2471. The Sun's initial helium (about 0.27) shows stars have added only a few per cent.
+  (h) Type Ia light-curve stretch by 1 + z: Goldhaber et al. 2001; Blondin et al. 2008 (spectral ageing); Dark Energy Survey (White et al. 2024, 1504 supernovae to z ≈ 1.2) found time dilation consistent with 1 + z and inconsistent with no dilation. Quasar variability shows the same (Lewis and Brewer 2023, University of Sydney). This is the general-relativistic expansion effect, not special-relativistic speed dilation; the syllabus's "evidence from cosmological studies" refers to it.
+  (i) Pronunciations: "H nought"; "megaparsec"; "zed" for z (Australian); "Penzias" as "pen-zee-as".
+- **Open decisions for root:**
+  - **1. Time-dilation scene (root, coverage).** Scene 10 closes root decision 7 for Module 7. Keep here, or move to a Module 7 revision.
+  - **2. Named scientists (root).** The narration names Edwin Hubble (the syllabus does) and the two radio astronomers. Slipher, Leavitt and Lemaître stay in author note a. Keep, or name none but Hubble.
+  - **3. New plate `y12p-horn-antenna-v1` (Codex).** If not made, scene 7 uses a coded horn outline.
+  - **4. Site notes 4 to 7** for the site log.
+
+Main question: *A model is only science if it makes predictions. What did the hot, expanding Universe predict, and what did we find?*
+Entry knowledge: v01's timeline; Doppler Δλ/λ = v/c (m7-v04); Wien's law (m7-v09); time dilation (m7-v13).
+Stops after: four lines of evidence, the limits of v = H₀d and why the lines are stronger together. No scale-factor or lookback calculations.
+Handoff: v03, how spectra classify stars and reveal their temperature.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *z*, *λ*, *v*, *d*, *H₀*, *T*.
+
+### 1. hook (more stretched, or not?)
+> Last time, we followed the hot early Universe from light to atoms. But a story isn't science until it makes predictions you can check. If space is expanding, how should light from a distant galaxy compare with light from a nearer one? Make your **prediction**. More stretched, more redshifted. So what evidence supports an expanding hot early **Universe**?
+
+Visual: opens on v01's final frame (see "Opening frame"); the timeline markers fade. On "predictions you can check" an empty evidence column draws at the right with four blank rows. On "a distant galaxy" one of the two galaxy plates moves far right, the other stays near. On "prediction" a 3 s `Countdown` beside chips "more redshifted", "less redshifted", "the same". On "More stretched, more redshifted" the chip "more redshifted" ticks and a wave from the far galaxy is drawn longer than the near one's. On "Universe" the chip becomes the heading: "What evidence supports an expanding hot early Universe?".
+
+### 2. measuring the stretch
+> Start with a galaxy's spectrum. Its dark lines form the same pattern as hydrogen in the lab, but every line has slid towards the **red**. We measure that with the redshift, z. It's the change in wavelength divided by the rest wavelength, the fractional **stretch**. You met this before as a Doppler shift, delta lambda over lambda equals v over c. So for small z, the galaxy's speed away from us is about c times **z**.
+
+Visual: board change: two coded spectrum strips on a shared 380 to 750 nm axis (the `m8-spectra` family with real lines): top "laboratory hydrogen" with dark lines at 434.0, 486.1 and 656.3 nm; bottom "galaxy" with the same three lines. On "red" the galaxy's lines slide right by the same fraction (z = 0.04, so 656.3 → 682.6 nm; tag "every line, same fraction"). On "the change in wavelength divided by the rest wavelength" `AlignedAlgebra` "z = (λ_obs − λ_rest) / λ_rest = Δλ / λ_rest". On "stretch" tag "z: fractional stretch (no units)". On "delta lambda over lambda equals v over c" chip "Δλ/λ = v/c (m7-v04, v ≪ c)". On "z" (last) "v ≈ cz (small z)" boxed.
+
+### 3. Hubble's graph
+> In the nineteen twenties, astronomers measured these redshifts, and Edwin Hubble measured distances, using pulsing stars whose rhythm reveals how bright they really are. Compare that with how bright they look, and you get the **distance**. In nineteen twenty-nine, he plotted speed against distance. The points fell close to a straight line through the **origin**. Twice as far, twice as fast. That's Hubble's law, v equals H nought d. The gradient, H nought, is about seventy kilometres per second per **megaparsec**, where a megaparsec is about three point two six million light years.
+
+Visual: board change: the painted galaxy `phys-y11-galaxy-v1.png` small at the left with a coded pulsing star dot inside it, its brightness rising and falling regularly. On "pulsing stars whose rhythm reveals how bright they really are" tag "rhythm → true brightness (luminosity)". On "distance" chip "dimmer than expected → farther (inverse square law, Year 11)". On "plotted speed against distance" the Hubble scatter graph draws: x "distance d (Mpc)" 0 to 500, y "recession speed v (km s⁻¹)" 0 to 35 000. Points appear one by one (illustrative, tag "illustrative modern data"). On "origin" the best-fit line draws through (0, 0). On "Twice as far, twice as fast" two points at 200 and 400 Mpc highlight with speeds 14 000 and 28 000 km s⁻¹. On "v equals H nought d" equation strip "v = H₀d". On "megaparsec" a gradient triangle "H₀ = 28 000 / 400 = 70 km s⁻¹ Mpc⁻¹", chip "1 Mpc ≈ 3.26 million light years"; the evidence column's first row ticks "redshift grows with distance".
+
+### 4. why a straight line means expansion
+> Why does a straight line mean space is expanding? Picture a grid of galaxies, and stretch all the spacing by the same factor. A galaxy one step away moves one step further. Two steps away, it moves two steps. So farther galaxies recede faster, in proportion, and that's true seen from every galaxy on the grid. No galaxy is the **centre**. Run the expansion backwards, and the Universe was once far denser. One over H nought even gives a rough age, about fourteen billion **years**.
+
+Visual: board change to the `m8-expansion` grid, one galaxy marked "us". On "stretch all the spacing by the same factor" the grid doubles in spacing. On "one step away moves one step further" an arrow of length 1 on the neighbour. On "Two steps away, it moves two steps" an arrow of length 2. On "seen from every galaxy" the "us" label hops to two other dots in turn, the same arrow pattern appearing each time. On "centre" chip "no centre: expansion everywhere" (site misconception). On "Run the expansion backwards" the grid shrinks back, dots crowding, tag "denser and hotter in the past". On "years" chip "1/H₀ ≈ 14 billion years (rough; the rate has changed: age 13.8 billion years)".
+
+### 5. worked example: how far is it?
+> Let's use it. A galaxy's hydrogen alpha line, rest wavelength six hundred and fifty-six nanometres, is observed at seven hundred and fourteen. So z is fifty-eight over six hundred and fifty-six, zero point zero eight **eight**. The speed is c times z, three times ten to the five kilometres per second times that, about two point six times ten to the four kilometres per **second**. Then d is v over H nought, divided by seventy, about three hundred and eighty **megaparsecs**.
+
+Visual: board change to the working layout. Task strip: "Find the galaxy's distance." Equation strip: "z = Δλ/λ_rest; v ≈ cz; v = H₀d". Givens grouped: "λ_rest = 656 nm, λ_obs = 714 nm (Hα, site)"; "c = 3.00 × 10⁵ km s⁻¹"; "H₀ = 70 km s⁻¹ Mpc⁻¹". On "eight" `AlignedAlgebra` stage 1 "z = (714 − 656) / 656 = 58/656 = 0.088", tag "z < 0.1: v ≈ cz is fine". On "second" stage 2 "v = cz = (3.00 × 10⁵)(0.088) = 2.6 × 10⁴ km s⁻¹" (stage 1 kept small). On "megaparsecs" stage 3 "d = v/H₀ = 2.6 × 10⁴ / 70 ≈ 380 Mpc" (boxed), with a tag "380 × 3.26 million ly ≈ 1.2 × 10⁹ ly".
+
+### 6. where the simple law fails
+> The simple law has limits. Nearby, a galaxy's own motion can swamp the expansion. Andromeda's light is **blueshifted**. It's coming towards us at about three hundred kilometres per second, pulled by gravity, while the expansion at its distance is only about **fifty**. And far away, v equals c z breaks down. Beyond a z of about zero point one, you need a fuller model of how the expansion has changed. Some galaxies have z above **ten**.
+
+Visual: the Hubble graph returns small. On "a galaxy's own motion can swamp the expansion" the scatter near the origin enlarges, points spread above and below the line, tag "own motion (gravity) adds scatter". On "blueshifted" the galaxy plate at 0.77 Mpc with its lines sliding left, tag "Andromeda: blueshift, approaching". On "fifty" two arrows: "own motion ≈ 300 km s⁻¹ towards us" and "expansion: H₀d = 70 × 0.77 ≈ 54 km s⁻¹ away". On "v equals c z breaks down" a chip "v ≈ cz: only for z ≲ 0.1". On "ten" a crossed chip "z = 2 means v = 2c" (site misconception) and tag "observed galaxies: z > 10".
+
+### 7. the leftover glow
+> The second prediction is about heat. If the early Universe was hot, the light released at recombination should still be here, stretched into microwaves. In nineteen sixty-five, two radio astronomers, Arno Penzias and Robert Wilson, testing a large horn antenna, found a faint microwave hiss, coming equally from every **direction**. It was that **light**, the cosmic microwave background.
+
+Visual: board change: the painted horn antenna `y12p-horn-antenna-v1.png` at the left (no people), scaled uniformly. On "stretched into microwaves" a stretched wave from v01's final frame arrives, tag "predicted: relic radiation (1948)". On "horn antenna" tag "1965". On "direction" the antenna's beam outline sweeps across a coded sky arc; the same small reading "hiss" appears at every pointing. On "light" chip "cosmic microwave background (CMB): leftover glow of the hot early Universe".
+
+### 8. reading the glow
+> Its spectrum is a near-perfect black body curve, at two point seven two five kelvin. By Wien's law, that peaks at about one millimetre, in the **microwaves**. Light released at about three thousand kelvin peaked near one micrometre. Stretch it about eleven hundred times, and you get today's **millimetre**. It's the same in every direction, to about one part in a hundred thousand. A steady-state Universe, unchanging forever, has no way to make a glow like **this**.
+
+Visual: board change: the black-body graph, x "wavelength (mm)" log axis, y "intensity (relative)". On "near-perfect black body curve" the amber 2.725 K curve draws, tag "COBE satellite measurements (1990) lie on this curve; error bars smaller than the line". On "microwaves" Wien marker "λ_max = b/T = 2.898 × 10⁻³ / 2.725 = 1.06 × 10⁻³ m ≈ 1 mm". On "three thousand kelvin" a second, taller curve at the far left "3000 K: λ_max ≈ 0.97 μm". On "eleven hundred times" a `NumberTicker` "stretch × 1 → × 1100" slides and lowers the 3000 K curve onto the 2.725 K curve. On "millimetre" tag "0.97 μm × 1100 ≈ 1.06 mm ✓". On "one part in a hundred thousand" the sky uniformity dial: a ring of readings "2.725 K" round a small "us" dot, tag "uniform to 1 part in 10⁵ (Planck satellite map)". On "steady-state Universe, unchanging forever" chip "steady state: no hot past". On "this" the steady-state chip is crossed; the evidence column's second row ticks "black-body glow at 2.7 K".
+
+### 9. a quarter helium
+> The third prediction is a number, the one we counted last time. The early Universe should be about a quarter helium by **mass**. In the oldest, least processed gas clouds astronomers can find, helium is about twenty-four to twenty-five per **cent**. Could stars have made it instead? Over the whole age of the Universe, stars have added only a few per cent, and even gas that has barely formed any stars still has nearly a quarter **helium**.
+
+Visual: board change: abundance bars. On "a quarter helium by mass" bar "predicted (v01): 25% He, 75% H". On "cent" bar "observed, oldest gas: 24 to 25% He" beside it, tag "match". On "Could stars have made it instead?" a chip "made by stars?". On "only a few per cent" a thin bar "added by stars: a few %". On "helium" a row of small gas-cloud tags "few stars formed: still ≈ 24% He"; the chip is crossed; the evidence column's third row ticks "about a quarter helium".
+
+### 10. slow supernovae
+> The fourth clue links to relativity. A wavelength is just the time between crests, times the speed of light. So if expansion stretches each wavelength by one plus z, it stretches every time interval in the signal by one plus z as well. Exploding stars called supernovae show exactly this. One at a z of one brightens and fades twice as slowly as a nearby **one**. That's cosmological time dilation, and it's been **measured**.
+
+Visual: board change: on the `m8-expansion` grid, a wave packet's crests tick past a marker like clock ticks, tag "λ = c × (time between crests)". On "stretches every time interval in the signal" the crest spacing and the tick spacing stretch together, readout "× (1 + z)". On "Exploding stars called supernovae" the galaxy plate gains a bright coded point, tag "supernova: an exploding star". On "one" (last) two light curves on a shared axis "days": navy "nearby" rising and fading over about 60 days; red "z = 1" with the same shape stretched to 120 days, readout "duration × 2 = 1 + z". On "measured" tag "Dark Energy Survey (2024): stretch = 1 + z, up to z ≈ 1.2"; chip "time dilation, from cosmological studies (m7-v13 link)"; the evidence column's fourth row ticks "distant clocks run slow".
+
+### 11. stronger together
+> Each clue alone might have another explanation. Together, they point the same way. Expanding, because of the redshift and the slowed clocks. Hot, because of the black body glow. Dense enough to fuse, because of the helium. Four independent measurements, made with different instruments, and one model explains them **all**.
+
+Visual: board change to the evidence table: rows "redshift ∝ distance", "2.7 K black body", "25% helium", "supernovae × (1 + z)"; columns "hot Big Bang", "steady state". On "Expanding" the first and fourth rows highlight, tag "expanding". On "Hot" the second row, tag "hot". On "Dense enough to fuse" the third row, tag "dense". On "independent measurements" tags "galaxy spectra", "microwave antenna", "gas-cloud composition", "supernova timing". On "all" the hot Big Bang column fills with ticks; the steady-state column shows one partial tick (expansion, with continuous creation) and three crosses.
+
+### 12. a way to remember
+> Here's a way to remember the four clues. Stretched light, leftover glow, a quarter helium, slow **supernovae**.
+
+Visual: the table stays faint. On "supernovae" the handwritten line writes large: "Stretched light, leftover glow, a quarter helium, slow supernovae." Hold about 2 seconds.
+
+### 13. attempt 1 (countdown, 10 seconds)
+> Your turn. In a galaxy's spectrum, the calcium K line, with a rest wavelength of three hundred and ninety-three point four nanometres, is observed at four hundred and twenty-five point zero. Using a Hubble constant of seventy kilometres per second per megaparsec, estimate the galaxy's distance. Pause here to answer.
+
+Visual: `QuestionCard` (subject "Physics"), worded as printed: "The calcium K absorption line has a rest wavelength of 393.4 nm. In the spectrum of a distant galaxy it is observed at 425.0 nm. Using H₀ = 70 km s⁻¹ Mpc⁻¹, estimate the distance to the galaxy in megaparsecs. (3 marks)" Data chip "c = 3.00 × 10⁵ km s⁻¹". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 14. feedback 1 (brief)
+> z is thirty-one point six over three ninety-three point four, zero point zero eight **zero**. So v is c z, about two point four times ten to the four kilometres per **second**. And d is v over seventy, about three hundred and forty **megaparsecs**. The slip is putting v in metres per second, which gives a distance a thousand times too **big**.
+
+Visual: card shrinks to the top; "393.4 nm", "425.0 nm" and "H₀ = 70 km s⁻¹ Mpc⁻¹" underline. On "zero" "z = (425.0 − 393.4) / 393.4 = 31.6/393.4 = 0.080". On "second" "v = cz = (3.00 × 10⁵)(0.080) = 2.4 × 10⁴ km s⁻¹". On "megaparsecs" "d = v/H₀ = 2.4 × 10⁴ / 70 ≈ 340 Mpc" (boxed). On "big" a chip "d = 2.4 × 10⁷ m s⁻¹ / 70 = 3.4 × 10⁵ Mpc" fades in and is crossed (caption "H₀ is in km s⁻¹ Mpc⁻¹: use v in km s⁻¹"). Hold about 1 second.
+
+### 15. attempt 2 (countdown, 10 seconds)
+> Last one. The Andromeda galaxy is zero point seven seven megaparsecs away, and its light is blueshifted. It's approaching us at about three hundred kilometres per second. A student claims this shows the Universe isn't expanding. Evaluate the claim. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed: "The Andromeda galaxy is 0.77 Mpc from Earth. Its spectral lines are blueshifted, showing it is approaching at about 300 km s⁻¹. A student claims: 'This shows that the Universe is not expanding.' Evaluate this claim. Use H₀ = 70 km s⁻¹ Mpc⁻¹. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 16. feedback 2 (brief)
+> At that distance, expansion would give only seventy times zero point seven seven, about fifty-four kilometres per **second**. Andromeda's own motion, pulled by gravity, is much bigger. Hubble's law describes the average trend for distant galaxies, and those are all redshifted in proportion to **distance**. So the claim is wrong. The slip is reading one nearby blueshift as the Universe **contracting**.
+
+Visual: card shrinks to the top; "0.77 Mpc", "blueshifted" and "300 km s⁻¹" underline. On "second" "H₀d = 70 × 0.77 ≈ 54 km s⁻¹ (expansion)". On "much bigger" "300 km s⁻¹ (own motion) ≫ 54 km s⁻¹". On "distance" the Hubble graph thumbnail with the line and distant points, tag "distant galaxies: all redshifted, v ∝ d". On "contracting" a chip "blueshift means the Universe is contracting" fades in and is crossed (caption "nearby: local motion; far: expansion"). Hold about 1 second.
+
+### 17. handoff
+> Every one of these clues was read from light, and most of them from spectra. Now turn the same tool on the stars themselves. A star's spectrum is a black body curve with dark lines cut into it. So how can spectra classify stars and reveal their **temperature**?
+
+Visual: board clears (camera change). On "Every one of these clues was read from light" the four evidence rows shrink to small tags across the top. On "turn the same tool on the stars themselves" the painted Sun `phys-y11-sun-v1.png` appears at the left with a light path to a coded spectrum strip at the right. On "a black body curve with dark lines cut into it" an intensity curve draws above the strip with narrow dips at the strip's dark lines (hydrogen at 410.2, 434.0, 486.1, 656.3 nm; calcium at 393.4 and 396.8 nm), tag "continuous + absorption". On "temperature" a small thermometer gauge beside the curve reads "T = ?", and the chip "Next: how can spectra classify stars and reveal their temperature?". Hold about 2 seconds. This is the final frame (see "Final frame").
+
+### 18. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Redshift z = (λ_obs − λ_rest)/λ_rest. For small z (below about 0.1), v ≈ cz.
+2. Hubble's law: v = H₀d, H₀ ≈ 70 km s⁻¹ Mpc⁻¹ (1 Mpc ≈ 3.26 million ly). Uniform expansion of space, no centre. Limits: nearby galaxies' own motion (Andromeda is blueshifted); v = cz fails at large z.
+3. CMB: black body at 2.725 K from every direction (uniform to 1 part in 10⁵), peak about 1 mm; light from about 3000 K stretched about 1100 times. Steady state cannot explain it.
+4. Light elements: about 25% helium by mass in the least processed gas, as the first minutes predict; stars add only a few per cent.
+5. Distant supernovae brighten and fade (1 + z) times slower: cosmological time dilation.
+
+Memory aid (large, on the notes screen): *Stretched light, leftover glow, a quarter helium, slow supernovae.*
+
+## Teaching checks
+
+- **Does it explain causes?** Why lines shift: expanding space stretches light in transit (2, 4). Why v ∝ d: uniform stretching (4). Why the law fails nearby: gravity-driven motion is larger than the expansion at small d (6). Why the CMB is microwaves: 3000 K light stretched 1100 times (8). Why stars cannot supply the helium: too little, and gas with few stars still has it (9). Why supernovae last longer: the same stretch applies to every interval (10). Why together is stronger: independence (11).
+- **Misconceptions addressed:** Earth at the centre (4); the Big Bang as an explosion into space (4, carried from v01); z = 2 means v = 2c (6); blueshift disproves expansion (15, 16 crossed); units of H₀ (14 crossed); stars made the helium (9).
+- **One idea at a time:** z (2), Hubble's law (3), meaning (4), calculation (5), limits (6), CMB discovery (7), CMB spectrum (8), helium (9), time dilation (10), combination (11).
+- **Video makes it easier:** lines sliding together (2); points building the line (3); the grid arrows doubling (4); the 3000 K curve sliding onto the 2.725 K curve (8); the stretched light curve beside the nearby one (10); the evidence column filling (3 to 10).
+- **Response opportunity:** one prediction (3 s) and two unseen HSC-style tasks with every condition visible, 10 s each; nothing answer-bearing. One crossed mistake each; feedback about 26 s and 30 s.
+- **Avoided double teaching:** the timeline and helium count (v01), the Doppler relation (m7-v04), Wien's law (m7-v09), time dilation (m7-v13), inverse square law (Year 11) recalled in a clause.
+- **Syllabus coverage:** `P8-IQ1-02`: the evidence for expansion discovered by Hubble (redshift-distance, distances from pulsing stars, the graph and gradient) (2 to 6, 13, 14); with the CMB and light-element evidence for the hot early state (7 to 9) and limits (6, 15, 16). Module 7 `P7-IQ4-02` "evidence from cosmological studies" (10).
+- **Out of scope by design:** scale factor and lookback time (site extension); the Hubble tension, dark energy, accelerating expansion and parameter fitting (route stop); CMB anisotropy physics; inflation.
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 13; original wording, HSC style, 3 marks suggested, not an official marking scheme).** "The calcium K absorption line has a rest wavelength of 393.4 nm. In the spectrum of a distant galaxy it is observed at 425.0 nm. Using H₀ = 70 km s⁻¹ Mpc⁻¹, estimate the distance to the galaxy in megaparsecs."
+Model answer: z = (425.0 − 393.4)/393.4 = 0.080. Since z < 0.1, v ≈ cz = 3.00 × 10⁵ × 0.080 = 2.4 × 10⁴ km s⁻¹. d = v/H₀ = 2.4 × 10⁴ / 70 = 3.4 × 10² Mpc (about 340 Mpc). Classic mistake (crossed): using v = 2.4 × 10⁷ m s⁻¹ with H₀ in km s⁻¹ Mpc⁻¹, giving 3.4 × 10⁵ Mpc.
+
+**Attempt 2 (scene 15; original wording, HSC style, 3 marks).** "The Andromeda galaxy is 0.77 Mpc from Earth. Its spectral lines are blueshifted, showing it is approaching at about 300 km s⁻¹. A student claims: 'This shows that the Universe is not expanding.' Evaluate this claim. Use H₀ = 70 km s⁻¹ Mpc⁻¹."
+Model answer: At 0.77 Mpc the recession speed due to expansion would be H₀d = 70 × 0.77 ≈ 54 km s⁻¹. Andromeda's own motion through space, caused by the gravitational attraction between it and our galaxy, is about 300 km s⁻¹ towards us, which is much larger, so the net shift is a blueshift. Hubble's law describes the average behaviour of distant galaxies, which are all redshifted by amounts proportional to their distance, so one nearby blueshifted galaxy does not show the Universe is not expanding. The claim is invalid. Classic mistake (crossed): "blueshift means the Universe is contracting".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Constants | c = 3.00 × 10⁵ km s⁻¹ (site form of 3.00 × 10⁸ m s⁻¹); b = 2.898 × 10⁻³ m K (data sheet); H₀ = 70 km s⁻¹ Mpc⁻¹ (site, HSC); 1 Mpc = 3.086 × 10²² m = 3.26 × 10⁶ ly | 2 to 6, 8, 13 to 16 |
+| Scene 2 illustration | z = 0.04: 656.3 → 682.6 nm, 486.1 → 505.5 nm, 434.0 → 451.4 nm | 2 |
+| Graph | gradient 28 000 / 400 = 70; 200 Mpc → 14 000 km s⁻¹ | 3 |
+| Hubble time | 3.086 × 10¹⁹ km / 70 km s⁻¹ = 4.41 × 10¹⁷ s = 14.0 Gyr (67.4: 14.5 Gyr) | 4 |
+| Worked example (site) | z = 58/656 = 0.0884; v = 2.65 × 10⁴ km s⁻¹; d = 379 Mpc; 1.24 × 10⁹ ly | 5 |
+| Andromeda | 0.77 Mpc (2.5 million ly); H₀d = 53.9 km s⁻¹; approach ≈ 300 km s⁻¹ (heliocentric) | 6, 15, 16 |
+| v = cz limit | z ≈ 0.1 (3 × 10⁴ km s⁻¹); observed z > 10 | 6 |
+| CMB (COBE FIRAS; Fixsen 2009) | 2.725 K; λ_max = 1.063 × 10⁻³ m; 3000 K → 9.66 × 10⁻⁷ m; 3000/2.725 = 1101; 9.66 × 10⁻⁷ × 1100 = 1.06 × 10⁻³ m; uniform to 10⁻⁵ | 8 |
+| Helium (Aver et al. 2021; Planck 2018 BBN) | observed Y_p = 0.245; predicted 0.247 (v01's count 0.25); stars added about 0.025 by the Sun's formation | 9 |
+| Supernova stretch | 1 + z = 2 at z = 1; 60 days → 120 days (schematic) | 10 |
+| A1 | z = 31.6/393.4 = 0.0803; v = 2.41 × 10⁴ km s⁻¹; d = 344 Mpc; slip 3.44 × 10⁵ | 13, 14 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re-check.
+
+- 656.3 × 1.04 = 682.6; 486.1 × 1.04 = 505.5; 434.0 × 1.04 = 451.4.
+- 28 000 / 400 = 70; 70 × 200 = 14 000.
+- 3.086e19 / 70 = 4.409e17 s; / 3.156e16 = 13.97 Gyr; 3.086e19 / 67.4 / 3.156e16 = 14.51 Gyr.
+- 58 / 656 = 0.08841; × 3.00e5 = 26 524; / 70 = 378.9; × 3.26e6 = 1.235e9.
+- 70 × 0.77 = 53.9.
+- 2.898e-3 / 2.725 = 1.0635e-3 m; 2.898e-3 / 3000 = 9.66e-7 m; 3000 / 2.725 = 1100.9; 9.66e-7 × 1100 = 1.0626e-3 m.
+- 31.6 / 393.4 = 0.08033; × 3.00e5 = 24 098; / 70 = 344.3; 2.41e7 / 70 = 3.44e5.
+
+## Memory aid check
+
+- **"Stretched light, leftover glow, a quarter helium, slow supernovae."** Meaning, as said in scene 12: the four observations in the order taught: galaxies' light stretched in proportion to distance (Hubble); the leftover black-body glow (CMB); about 25% helium by mass in the least processed gas; distant supernovae evolving (1 + z) times slower. Assumptions checked: "stretched light" refers to cosmological redshift growing with distance, not to any single redshift (the aid is used with scene 6's limits); "a quarter helium" is by mass (stated on screen and in scene 9); "slow supernovae" refers to observed durations, stretched by 1 + z, not to the explosions themselves being slower. It helps a new case: an exam question asking for evidence for the Big Bang (recall four distinct lines, each with its observation). Introduced after the explanation (2 to 11).
+- **Considered, not used:** "Three pillars" (the site's term; it leaves out time dilation and invites listing without observations).
+
+## Narration length estimate
+
+Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,462 characters**, 18 scenes. Characters per scene (1 to 18): 348, 407, 575, 474, 465, 426, 380, 456, 430, 418, 319, 107, 317, 329, 270, 392, 257, 75. At 13.3 characters per second the speech is about 486 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 84 s of holds and countdowns): **about 570 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 3's megaparsec clause (keep it on screen); scene 4's Hubble-time sentence; scene 9's last clause.
+
+## Opening frame
+
+v01's final frame (`phys-y12-m8-v01.md`, "Final frame"): paper background; heading "How did cooling radiation allow matter to form in the early Universe?"; a coded expanding square grid of ink dots with small ink circles (neutral atoms); a small row of five timeline markers along the top; long, faint red-brown stretched waves arriving from every frame edge at a small central dot labelled "us", tags "light from recombination, stretched" and "still here?"; at the lower left two grid dots each carrying the small painted galaxy `phys-y11-galaxy-v1.png`, drifting apart with arrows, tag "still receding?"; chip "Next: what evidence supports an expanding hot early Universe?". Scene 1 fades the timeline markers, draws the evidence column, moves one galaxy far right and turns the chip into the heading. The "still here?" waves return in scene 7; the receding galaxies return in scene 3.
+
+## Final frame
+
+The last explained frame (end of scene 17, before the key-notes board): paper background; heading "What evidence supports an expanding hot early Universe?"; across the top four small tags "redshift ∝ distance", "2.7 K black body", "25% helium", "supernovae × (1 + z)"; at the left the painted Sun `phys-y11-sun-v1.png` (scaled uniformly) with a light path to a coded horizontal spectrum strip at the right (380 to 750 nm axis, wavelength-coloured continuum with dark lines at 393.4 and 396.8 nm (calcium) and 410.2, 434.0, 486.1 and 656.3 nm (hydrogen)); above the strip a smooth intensity curve with narrow dips at those lines, tag "continuous + absorption"; beside the curve a small thermometer gauge reading "T = ?"; chip "Next: how can spectra classify stars and reveal their temperature?". v03 opens on this frame.
+
+## Scene list and build ids
+
+Lesson key `p-y12-m8-v02` (route phys-y12-m8-v02). Suggested explainer folder `src/explainer/lessons/phys-y12-m8-v02` and build folder `docs/production/claude-pm/lessons/p-y12-m8-v02` (root to confirm).
+
+In order (kebab-case; 18 scene headings, all `### N.`): hook, redshift, hubble-graph, expansion-meaning, worked-distance, limits, cmb-discovery, cmb-spectrum, helium, time-dilation, together, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff-v03, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: Hubble scatter graph, black-body curve with Wien marker, sky uniformity dial, abundance bars, supernova light curves, evidence table, `m8-expansion`, `m8-spectra`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change; 2 to 3 clear change; 3 to 4 clear change; 4 to 5 clear change to working; 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change to the graph; 8 to 9 clear change; 9 to 10 clear change; 10 to 11 clear change to the table; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
+
+Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v02-learning-review.md`, `science_check` = `checks/p-y12-m8-v02-physics-check.md`.
+
+## Assets
+
+Have (scaled uniformly only, never stretched):
+- `public/assets/physics/phys-y11-galaxy-v1.png`: galaxies (1, 3, 6, 10). Inspect alpha and appearance before build (not inspected in this session).
+- `public/assets/physics/phys-y11-sun-v1.png` (1254 × 1254, RGBA, inspected for m7-v16): the handoff (17).
+
+Need (new plate):
+1. `y12p-horn-antenna-v1.png`: 7.
+
+Coded: spectrum strips, Hubble graph, expanding grid, black-body curves, uniformity dial, abundance bars, light curves, evidence table and column, calculation strips, crossed chips, countdowns, key notes board.
+
+Kit gaps (for the v02 build brief):
+1. **Hubble scatter graph.** Points that appear in sequence, a best-fit line through the origin, gradient triangle with units, and a zoom on the scatter near the origin.
+2. **Black-body curve with stretch.** Planck curves at given temperatures on a log wavelength axis, a Wien marker, and a stretch factor that slides one curve onto another.
+3. **Supernova light curves.** One schematic shape drawn at two time stretches on a shared axis.
+4. **Evidence table.** Rows and columns filling with ticks and crosses.
+
+## Codex asset brief
+
+1. **`y12p-horn-antenna-v1.png`** (new). A painted large horn-reflector radio antenna of the 1960s Holmdel type: a long, flared, square-section aluminium horn on a turntable mount with a curved reflector mouth, three-quarter view, pale grey metal with rivet lines, small cabin at the narrow end. No people, no hands, no text, labels or logos. Transparent PNG with alpha channel, about 1600 × 1100, object centred with even margins, soft shadow inside the alpha only. Style: match `phys-y11-power-station-v2.png` (painted engineering object, neutral lighting, clean edges).
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and the values in the narration, screen text and attempts against the "Numbers used" table.
+2. Confirm the physics of every learner-visible claim: z definition; v ≈ cz for small z; distances from pulsing stars and the inverse square comparison; v = H₀d and H₀ units; uniform expansion with no centre; 1/H₀ as a rough age; Andromeda numbers (author note d); v = cz limit near z ≈ 0.1; CMB discovery year, temperature, Wien peak (site note 4), 1100 stretch, uniformity; steady state's lack of a source; helium values (author note g) and the stellar contribution; time dilation by 1 + z and the DES result (author note h).
+3. Confirm the memory aid's assumptions (see "Memory aid check").
+4. Confirm every visual cue phrase quoted after "On" appears verbatim in its scene's narration, in spoken order.
+5. Confirm both attempt cards are original in wording, carry every condition and show nothing answer-bearing.
+6. Confirm the syllabus quote matches the route JSON exactly and is labelled 2017.
+7. Confirm no person, hand, face or body outline is drawn or requested (the horn antenna plate has no people).
+8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
+9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+10. Report site notes 4 to 7 under Decisions to root.
+
+## YouTube metadata (draft)
+
+Title: Evidence for the Big Bang: Hubble's Law, the CMB, Helium and Slow Supernovae | HSC Physics Module 8
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module8/lesson02.sa.html and https://hscscience.com.au/subjects/physics/year12/module8/lesson03.sa.html
+
+A model is only science if it makes predictions. See what the hot, expanding Universe predicted and what we found: galaxies' redshift growing with distance (Hubble's law, v = H₀d, with a worked distance calculation and its limits), the 2.7 K cosmic microwave background, a Universe about a quarter helium, and distant supernovae that run slow by a factor of 1 + z. Two exam-style questions at the end.
+
+Year 12 Physics (2017 syllabus), Module 8: From the Universe to the Atom.
+Syllabus content (NSW Physics Stage 6, 2017):
+"investigate the evidence that led to the discovery of the expansion of the Universe by Hubble (ACSPH138)"
+Official syllabus: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx
+
+Previous: from radiation to matter in the early Universe. Next: classifying stars by their spectra.
+
+#HSCPhysics #Physics #HubblesLaw #HSCScience
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v01; check that z, v ≈ cz and v = H₀d are each earned before use; that the expansion grid makes "no centre" convincing; that the CMB stretch from 3000 K to 2.725 K links back to v01 without re-teaching; that the time-dilation step from wavelength to clock ticks is followable at speech pace (open decision 1)), then the physics check and the Codex error check.
+- The points building the line, the doubling grid arrows, the curve sliding onto the CMB curve and the stretched light curve carry the explanation; judge them at playback speed in the voiced preview.
