@@ -1,0 +1,285 @@
+# Year 11 Chemistry M2 V16: Avogadro's law and molar volume. Why do equal gas volumes contain equal amounts at the same conditions? (design)
+
+Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+
+Narration 5,573 characters, 15 scenes, about 504 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+
+Scope: sixteenth Module 2 video of Year 11 Chemistry (2017 syllabus), playlist entry 50, between `chem-y11-m2-v15` and `chem-y11-m2-v17`; the first gas-laws video. Templates: `chem-y11-m2-v04.md` (which stated the equal-volumes fact and used 24.79 L mol⁻¹, pointing here), `chem-y11-m2-v12.md` to `v15.md` (same designer), `chem-y11-m2-v07.md` (calculation layout), `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation staging), `bio-y11-fa1-v05.md` (plates). No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m2-v16` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Connect Avogadro law with n and molar volume at explicitly stated T and P. Distinguish 22.71 from 24.8 L/mol."; next handoff: "How does changing gas volume change pressure at constant temperature?"). Site lessons read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson04.sa.html` (SHA256 `3dd0767ed684e895dbabbbf45d28db13b2186b08b1115072a0772b9eec2de8ec`, recomputed, matches the route), sections `l04-why-title` and `l04-formula-title`; and `module2/lesson15.sa.html` (SHA256 `fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e`, recomputed, matches), section `l15-avogadro-title` (with the related formula card, worked example 4 and the volume-ratio trap). Used: the surprise ("surely a mole of large CO₂ molecules takes more space than a mole of tiny He atoms?"); "the molecules are so far apart that the actual size of the molecule barely matters"; pressure from wall collisions setting the volume; the three-box picture (H₂, O₂, CO₂: same volume, different masses); the two standard conditions (22.71 L mol⁻¹ at 0 °C and 100 kPa; 24.79 at 25 °C and 100 kPa) and the older 22.4 at 1 atm; V = n × Vm and n = V ÷ Vm with litres; worked example 2's data (4.96 L of CO₂: 0.200 mol at 25 °C, 0.218 mol at 0 °C, "always state which conditions you used"); trap 2 (molar volume applies to gases only; liquid water is about 18 mL per mole); lesson 15's V₁/n₁ = V₂/n₂, "mole ratios equal volume ratios for gases", drill 3 (N₂ + 3H₂, 10 L and 30 L) and the trap "only when ALL species in the comparison are gases at the same temperature and pressure". Not used: Boyle, Charles, Gay-Lussac and PV = nRT (m2-v17 to v19), the gas-stoichiometry "Step 0 / Step 5" pathway (site note 3; m2-v07's bridge with a volume end is enough), "SATP" and "RTP" as names (site note 1).
+
+Owner rules applied: as `chem-y11-m2-v12.md` (one learner question; no people, hands or faces; real objects as painted plates; particle models, volume cubes, wall-hit counters and calculation rows coded, following HSC particle conventions: particles as small circles, far apart, straight-line paths between collisions; 3 s prediction; "Pause here to answer." then a 10 s countdown with the full worded question on screen; brief feedback with one crossed mistake; original HSC-style questions; optional key notes; Australian spelling; no em dashes; nothing in the bottom 12% of the frame).
+
+Syllabus content (Chemistry Stage 6, 2017, Module 2; local ledger IDs), quoted from `../../programme/syllabus/chem-2017-y11.json` (the ledger's broken apostrophes shown corrected, root decision m1-9):
+
+- `C2-IQ4-01`: "conduct investigations and solve problems to determine the relationship between the Ideal Gas Law and:"
+  - "Avogadro's Law (ACSCH060)"
+- `C2-IQ2-03`: "explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate masses, chemical amounts and numbers of particles in: (ACSCH007, ACSCH039)"
+
+Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx (page 40)
+
+**Boundary:** opens on m2-v15's final frame (three 1.00 L jars of H₂, O₂ and CO₂ at 25 °C and 100 kPa, masses 0.0813, 1.29 and 1.78 g; "same number of particles?"). Teaches: the claim (same number, 2.43 × 10²² each); reason 1, gas is almost all empty space (liquid nitrogen about 35 mL per mole against about 24.8 L as a gas, roughly 700 times), so particle size hardly matters; reason 2, a gas's volume is set by how often and how hard its particles hit the walls, until its push matches the outside pressure; reason 3, at the same temperature lighter particles move faster, so each particle pushes equally on average (H₂ against O₂: a quarter as hard, four times as often); Avogadro's law, and V ∝ n at constant T and P (V₁/n₁ = V₂/n₂); molar volume, 22.71 and 24.79 L mol⁻¹ and why the warmer value is larger; n = V ÷ Vm with stated conditions; volume ratios equal mole ratios for gases at the same T and P, and not for solids or liquids; "particles" means molecules (or atoms for monatomic gases). Not taught: Boyle's law (m2-v17, the handoff), temperature in kelvin and Charles's law (m2-v18), PV = nRT (m2-v19), real-gas deviations beyond one tag.
+
+## Decisions
+
+- **Learner question (route wording kept).** "Why do equal gas volumes contain equal amounts at the same conditions?" The answer, in order: the particles' size hardly matters, because gas is almost all empty space (2); volume is set by the push of wall hits against the outside pressure (3); at one temperature every particle pushes equally, whatever its mass (4); so equal volumes, temperatures and pressures mean equal numbers (5); which gives one molar volume per set of conditions (6, 7) and volume ratios for gas reactions (8).
+- **Opening frame (equals `chem-y11-m2-v15.md`'s final frame, same designer).** Three method chips ("solid", "solution", "precipitate" ticked; "gas: ?" amber); three gas jars "H₂", "O₂", "CO₂", "1.00 L, 25 °C, 100 kPa", masses "0.0813 g", "1.29 g", "1.78 g"; "same number of particles?"; the "Next" chip, which fades.
+- **Callback to m2-v04.** m2-v04 stated the equal-volumes rule with one sentence of reason and used 24.79 L mol⁻¹ "explained in a later video"; scene 1 names that promise. No re-teaching of the magnesium method.
+- **Prediction (3 s, scene 1).** "Does the heavy CO₂ jar hold fewer particles than the H₂ jar, more, or the same?" Answer: the same, 0.0403 mol, 2.43 × 10²² particles each (the number ties to Avogadro's constant, `C2-IQ2-03`).
+- **Reason 1, empty space (site; numbers new).** One mole of liquid nitrogen fills about 35 mL; as a gas at 25 °C and 100 kPa about 24.8 L, roughly 700 times as much. The particles take up well under 1% of the jar. A coded pair of cubes to scale (side ratio about 8.9). Nitrogen is chosen because it is the main gas in air and is a liquid students may have seen in demonstrations; water is the site's example but is not a gas at 25 °C.
+- **Reason 2, what sets the volume.** Wall hits make pressure; a gas expands or shrinks until its push on the walls matches the outside push (100 kPa). Taught as the particle picture students know from Stage 5; m2-v17 builds Boyle's law on it.
+- **Reason 3, why mass doesn't matter (adds the missing half of the site's account; site note 2).** At the same temperature, the particles' average kinetic energy is the same, so lighter particles move faster: H₂ is about 16 times lighter than O₂ and moves about 4 times faster on average. Each hit transfers a quarter of the push, but there are four times as many hits each second, so each particle contributes the same average push. Spoken without "kinetic energy" (one grey tag "same temperature: same average energy of motion"). The numbers are exact consequences of ½mv² being equal (author note c).
+- **Avogadro's law (scene 5).** "Equal volumes of gases, at the same temperature and pressure, contain equal numbers of particles"; the inverse form "double the moles, double the volume" shown with the gas syringe (2.00 × 10⁻³ mol → 49.6 mL; 4.00 × 10⁻³ mol → 99.2 mL at 25 °C). V₁/n₁ = V₂/n₂ on screen. Ideal-gas caveat: "real gases follow it very closely at everyday conditions" (spoken once, because "exactly" would teach a wrong idea; author note d).
+- **The two molar volumes (route stop "Distinguish 22.71 from 24.8").** HSC data sheet: 22.71 L mol⁻¹ at 0 °C (273.15 K) and 100 kPa; 24.79 L mol⁻¹ at 25 °C (298.15 K) and 100 kPa. The route's "24.8" is the same value to three figures; the course uses 24.79 (root decision m2-2). Why the warmer value is larger: faster particles push harder, so the gas expands until its push again matches 100 kPa (qualitative; the 9% ratio equals 298.15 ÷ 273.15, Charles's law, m2-v18, not spoken). 22.4 L mol⁻¹ appears only as a grey tag ("older value at 1 atm = 101.3 kPa; not on the HSC data sheet"). The names STP and SATP are not used in narration (they differ across sources and the site uses both "SATP" and "RTP"; site note 1); the cards say "0 °C, 100 kPa" and "25 °C, 100 kPa".
+- **Worked example (site worked example 2, unchanged).** 4.96 L of CO₂: 0.200 mol at 25 °C; 0.218 mol at 0 °C. Why more at 0 °C: colder particles push less, so more fit in the same volume at the same pressure.
+- **Volume ratios (site lesson 15, drill 3).** N₂ + 3H₂ → 2NH₃: 10 L + 30 L → 20 L at the same T and P; only for gases. A2 tests the liquid-water trap.
+- **Particles, not atoms (exam trap).** A litre of O₂ and a litre of He at the same conditions hold the same number of particles (molecules and atoms respectively), so the O₂ holds twice as many atoms. One sentence in scene 9 with the memory aid.
+- **Memory aid (see "Memory aid check"):** "Same T, same P, same V: same number."
+- **Attempts (original wording, HSC style).** A1 (the 0 °C value): volume of 0.640 g of O₂ at 0 °C and 100 kPa: 0.02000 mol × 22.71 = 0.454 L; crossed "0.496 L (24.79 used)". A2 (volume ratio with a liquid product): 40 mL of CH₄ burns at 25 °C and 100 kPa, CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l): 80 mL O₂, 40 mL CO₂; crossed "80 mL of water vapour".
+- **Mistake scene:** none separate. "Bigger or heavier molecules need more room" (1, 2, 4); "one molar volume for all conditions" (6, 7; crossed in A1); "22.4" (6, tag); "volume ratios for anything in the equation" (8; crossed in A2); "equal volumes, equal atoms" (9).
+- **Handoff (route next: `chem-y11-m2-v17`, "How does changing gas volume change pressure at constant temperature?").** Scene 14: everything so far held T and P fixed; seal gas in a syringe, keep T steady, push the plunger in. Final frame: see "Opening frame and final frame".
+- **Site notes (read 5 November; for root to log if accepted):**
+  1. Naming of 25 °C and 100 kPa: lesson 4 calls it "SATP ... Current IUPAC standard, used in most NSW HSC resources" and uses 24.8; lesson 15 calls the same conditions "RTP" and uses 24.8, with "standard" as a cue for 22.71; the HSC data sheet gives 24.79 at 25 °C and 100 kPa without either name. IUPAC's standard temperature and pressure is 0 °C and 100 kPa. Suggest one name throughout (or none, quoting the conditions as the data sheet does) and 24.79 to match the data sheet, with "24.8 to three significant figures".
+  2. Lesson 4 `l04-why-title`: "the container pressure (and thus volume) would be set by the number of collisions per second, not the size of each particle". The number of collisions per second depends on the particles' speed, which depends on their mass; the mass-independence comes from lighter particles moving faster while each hit pushes less. Suggest adding: "At the same temperature, lighter particles move faster but each hit pushes less, so every particle contributes the same average pressure."
+  3. Lesson 15 `l15-avogadro-title`: "If a gas volume is the input (given) → use Step 0: n = V ÷ MV, then proceed to Step 3 directly", and "Step 5" for the output, against a "4-step" method elsewhere in the module. Suggest "replace the mass-to-moles step with n = V ÷ Vm" and "replace the moles-to-mass step with V = n × Vm".
+  4. Lesson 4 Q4 model answer: "Student A's mass is incorrect (used a single nitrogen atom mass)". Student A's 14.014 g is not the result of using a single atom's mass (0.500 mol of N atoms would be 7.004 g; 1 mol of N atoms would be 14.007 g). Suggest "Student A's mass is incorrect: 0.500 mol of N₂ is 0.500 × 28.014 = 14.007 g".
+  5. Lesson 4 "Revisit your thinking": "they occupy exactly the same volume". For real gases this is very nearly, not exactly, true. Suggest "the same volume (very nearly, for real gases at everyday conditions)".
+  - Checked and correct: lesson 4 worked examples 1 (86.8 L with 24.8; 86.8 L with 24.79) and 2 (0.200, 0.218 mol); drills 1 to 5 (62.0 L, 0.493 mol, 13.0 L, 0.025 mol, 45.4 g mol⁻¹); Q2 (0.100 mol, 2.48 L); Q3 (45 g mol⁻¹); lesson 15 drills 2 to 4 (0.500 mol, 30 L, 4.96 L); worked example 4 (4.00 L of steam).
+- **Cause chain taught, in order:** (1) gas is almost all empty space, so particle size hardly affects volume (2); (2) particles hitting walls push, and a gas takes up the volume where its push matches the outside pressure (3); (3) at the same temperature lighter particles move faster, so each particle pushes equally on average (4); (4) so at the same T and P, the same volume needs the same number of particles (5); (5) so one mole of any gas has the same volume at stated conditions, larger when warmer (6); (6) so volume counts moles, and gas volumes react in the coefficient ratio (7, 8).
+- **Entry knowledge:** Stage 5 particle model (particles in motion; gas pressure from collisions); m2-v02 (mole, Avogadro's constant); m2-v04 (the rule used, 24.79 L mol⁻¹); m2-v06 (coefficients as mole ratios); m2-v15 (the jars).
+- **Learner-visible vocabulary (plain meaning at first use):** pressure (the push of the gas on each square metre of wall, measured in kilopascals, 3); Avogadro's law (5, stated); molar volume (the volume of one mole of a gas at stated temperature and pressure, 6; recalled from m2-v04).
+- **Legacy logic ported:** none.
+- **Explainer motion (coded unless a plate is named):** **particle jars** (scenes 1 to 5: inside each gas jar plate, a coded window of moving particles, the same count in each, small white H₂, larger red O₂, larger grey-red CO₂ pairs and triples, spaced far apart); **volume cubes** (scene 2: a tiny cube "1 mol liquid N₂: 35 mL" beside a large cube "1 mol N₂ gas: 24.8 L", to scale, the small cube pulsing as it expands into the large one); **wall-hit counter** (scenes 3, 4: a magnified wall section with a hit counter per second and a push meter; for O₂ slow, firm hits; for H₂ fast, light hits; both meters settle at the same average); **balance of pushes** (scene 3: arrows from inside and outside on the jar lid, equal at 100 kPa); **syringe** (scene 5: `c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png` sliding out as moles double; volume readout); **molar volume cards** (scene 6: two cards, "0 °C, 100 kPa: 22.71 L mol⁻¹" and "25 °C, 100 kPa: 24.79 L mol⁻¹", with a slower and a faster particle box beside them); **volume blocks** (scene 8: 1 block N₂ + 3 blocks H₂ → 2 blocks NH₃, each 10 L); calculation layout; `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
+- **Colour key (continues m2-v12 to v15):** moles teal; volumes slate blue; masses amber; conditions strip slate with a thermometer icon; H₂ white, O₂ red, N₂ blue, CO₂ grey and red (HSC atom colours), He pale yellow; crossed items red strike.
+- **Board layout (constant):** heading top left; a conditions strip at the top right ("T = ..., P = ..."), always visible; jars or syringe at the left; cards and rows at the right.
+
+Author notes (not learner copy):
+(a) Jars: n = 1.00 ÷ 24.79 = 0.04034 mol; × 6.022 × 10²³ = 2.429 × 10²² particles; masses: × 2.016 = 0.0813 g H₂; × 32.00 = 1.291 g O₂; × 44.01 = 1.775 g CO₂; CO₂ ÷ H₂ = 21.8 ("more than twenty times").
+(b) Liquid nitrogen: density 0.807 g mL⁻¹ at its boiling point; 28.02 ÷ 0.807 = 34.7 mL mol⁻¹; 24 790 ÷ 34.7 = 714 ("around seven hundred times"); cube side ratio 714^(1/3) = 8.9. The particles' own volume is "well under one percent" (a liquid's volume overstates the molecules' own volume, so the true share is smaller still).
+(c) Mass independence: at temperature T, average translational kinetic energy is the same for every gas, so m⟨v²⟩ is equal; pressure from N particles is proportional to N m⟨v²⟩. For H₂ (2.016) against O₂ (32.00): mass ratio 15.87; rms speed ratio √15.87 = 3.98 ("about four times faster"); momentum per hit ratio (1/15.87) × 3.98 = 0.25 ("a quarter as hard"); hit rate ratio 3.98 ("four times as many").
+(d) Real gases at 25 °C and 100 kPa: molar volumes of common gases differ from 24.79 by well under 1% (CO₂ about 0.5% smaller). Not spoken beyond "very closely".
+(e) Molar volumes: 8.314 × 273.15 ÷ 100 = 22.71; 8.314 × 298.15 ÷ 100 = 24.79; 24.79 ÷ 22.71 = 1.0916 ≈ 298.15 ÷ 273.15 = 1.0915 (m2-v18's Charles's law; not spoken). 22.4 L mol⁻¹: 0 °C and 101.325 kPa.
+(f) Syringe: 2.00 × 10⁻³ × 24.79 = 0.0496 L = 49.6 mL; 4.00 × 10⁻³ × 24.79 = 99.2 mL.
+(g) Worked example: 4.96 ÷ 24.79 = 0.2001 → 0.200 mol; 4.96 ÷ 22.71 = 0.2184 → 0.218 mol.
+(h) A1: 0.640 ÷ 32.00 = 0.02000 mol; × 22.71 = 0.4542 → 0.454 L; slip × 24.79 = 0.4958 → 0.496 L. A2: CH₄ : O₂ : CO₂ = 1 : 2 : 1, so 40 mL : 80 mL : 40 mL; water is liquid at 25 °C.
+(i) Pronunciations: "Avogadro" (av-oh-GAD-roh); "N two plus three H two makes two N H three"; "C H four gas plus two O two gas makes C O two gas plus two H two O liquid"; "twenty-two point seven one litres per mole".
+
+Main question: *Why do equal gas volumes contain equal amounts at the same conditions?*
+Entry knowledge: Stage 5 particle model; m2-v02, m2-v04, m2-v06, m2-v15.
+Stops after: the three-part reason, Avogadro's law (both forms), the two data-sheet molar volumes and why they differ, n = V ÷ Vm at stated conditions, gas volume ratios, particles versus atoms. No Boyle, Charles or ideal gas law.
+Handoff: chem-y11-m2-v17, Boyle's law.
+
+## Opening frame and final frame
+
+- **Opening frame:** m2-v15's final frame exactly (Decisions).
+- **Final frame (m2-v17 opens on it):** at the centre the sealed gas syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`; the nozzle closed by a coded cap), its plunger shown pushed in from "100 mL" to "50 mL" by a dashed ghost; inside, a coded window of the same twelve particles now closer together; a strip "same gas, same n, same T" (teal and slate); an amber chip "V halves → P = ?"; the conditions strip at the top right "T = 25 °C (steady)"; the chip "Next: How does changing gas volume change pressure at constant temperature?".
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Colour key as in Decisions.
+
+### 1. hook and prediction (countdown, 3 seconds at the end)
+> Here are those three jars, each holding one litre of gas at twenty-five degrees and a hundred kilopascals. The hydrogen has a mass of less than a tenth of a gram. The carbon dioxide is more than twenty times heavier. Back in the molar mass practical, we used a rule that equal volumes of gases hold equal numbers of particles, and promised to explain it. So, quick prediction. Does the heavy carbon dioxide jar hold fewer particles than the hydrogen jar, more, or the **same**?
+
+Visual: opens on m2-v15's final frame; the "Next" chip and the method chips fade (the "gas: ?" chip stays small at the top left). The conditions strip writes at the top right: "T = 25 °C, P = 100 kPa". On "less than a tenth of a gram" the "0.0813 g" chip glows; on "more than twenty times heavier" the "1.78 g" chip glows with a tag "× 22". On "molar mass practical" a small thumbnail of m2-v04's card "24.79 L mol⁻¹ at 25 °C and 100 kPa" with its old tag "explained in a later video", which flips to "explained now". Chips "fewer", "more", "same". On "same" the 3 s `Countdown` ring runs. Heading writes: "Avogadro's law".
+
+### 2. the same, and mostly empty space
+> The same, about two point four times ten to the twenty-two particles in each. To see why, think about how much room the particles themselves take up. A mole of liquid nitrogen fills about thirty-five millilitres. Let it boil, and at room conditions the same particles fill about twenty-five litres, around seven hundred times the space. So a gas is almost all empty space, and the particles take up well under one percent of the jar. That's why their size hardly **matters**.
+
+Visual: "same" ticks; a teal chip under each jar "0.0403 mol = 2.43 × 10²² particles". The particle jars open: windows show the same count of particles in each, far apart. On "liquid nitrogen" the volume cubes: a tiny blue cube "1 mol N₂ (liquid): 35 mL"; on "Let it boil" it expands smoothly into a large cube "1 mol N₂ (gas, 25 °C, 100 kPa): 24.8 L" with the tiny cube left as an outline inside it for scale; tag "× 700". On "matters" the particles in the CO₂ window briefly grow to show their size, then the tag "size: well under 1% of the space" writes.
+
+### 3. what sets a gas's volume
+> So what does set the volume? Gas particles never stop moving, and every time one hits a wall, it pushes on it. All those pushes add up to the gas's pressure, the push on each square metre of wall. A gas spreads out until its push on the walls matches the push from outside, here a hundred kilopascals. So the volume depends on how often the particles hit the walls, and how hard each hit **is**.
+
+Visual: the O₂ jar enlarges; particles move in straight lines between collisions (HSC convention). On "hits a wall" a magnified wall section opens with a hit counter. Gloss chip "pressure: the push on each square metre of wall (kPa)". On "matches the push from outside" two arrow sets on the jar's lid, inside (red) and outside (grey), equal length, tag "100 kPa = 100 kPa". On "how often" the counter ticks; on "is" a push meter shows the strength of each hit.
+
+### 4. lighter particles move faster
+> Now the surprise. Hydrogen molecules are sixteen times lighter than oxygen molecules, so you might expect them to push less. But at the same temperature, lighter molecules move faster, about four times faster here. Each hit is only a quarter as hard, but there are four times as many hits each second. The two effects cancel. So at the same temperature, every gas particle, heavy or light, pushes on the walls just as hard on **average**.
+
+Visual: split wall sections, O₂ on the left and H₂ on the right, each with its counter and meter. On "sixteen times lighter" mass tags "O₂: 32.00", "H₂: 2.016" ("÷ 16"). On "four times faster" H₂ particles speed up (motion trails four times longer; tag "× 4 speed"). On "a quarter as hard" the H₂ meter's bar per hit is a quarter of O₂'s; on "four times as many hits" the H₂ counter runs four times as fast. On "cancel" the two "average push per particle" bars slide together and match. On "average" grey tag "same temperature: same average energy of motion".
+
+### 5. Avogadro's law
+> Put it together. Same temperature, same pressure and same volume means the same total push, and since every particle pushes equally, the same number of particles. That's Avogadro's law. Equal volumes of gases, at the same temperature and pressure, contain equal numbers of particles. Real gases follow it very closely at everyday conditions. It works the other way too. Double the moles at the same conditions, and you double the **volume**.
+
+Visual: the three jars return side by side with their particle windows; equal-sign links between them. On "Avogadro's law" the statement writes large in a navy card. On "Real gases" grey tag "ideal-gas behaviour: very close at everyday conditions". On "the other way too" the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`) slides in with "2.00 × 10⁻³ mol: 49.6 mL" and its particle window; more particles enter through the nozzle; on "volume" the plunger slides out to "4.00 × 10⁻³ mol: 99.2 mL" and the strip "V ∝ n (same T and P): V₁ ÷ n₁ = V₂ ÷ n₂" writes.
+
+### 6. molar volume, and why it changes with temperature
+> So one mole of any gas takes up the same volume at the same conditions. That's its molar volume. The data sheet gives two values, both at a hundred kilopascals. At zero degrees Celsius, it's twenty-two point seven one litres per mole. At twenty-five degrees, it's twenty-four point seven nine. The warmer gas is bigger because its particles move faster and hit harder, so the gas expands until its push matches the hundred kilopascals **again**.
+
+Visual: board clears to two molar volume cards with particle boxes: "0 °C, 100 kPa: 22.71 L mol⁻¹" (a box with slower particles) and "25 °C, 100 kPa: 24.79 L mol⁻¹" (a larger box with faster particles); tag "HSC data sheet". On "hit harder" the warmer box's walls bulge outward and settle at its larger size; the outside arrows stay "100 kPa". On "again" a grey tag below: "22.4 L mol⁻¹: an older value at 1 atm (101.3 kPa); not on the HSC data sheet". The conditions strip at the top right now flashes "T and P: always check".
+
+### 7. the conditions decide
+> So the conditions decide which number you use. n equals V over the molar volume, with V in litres. Take four point nine six litres of carbon dioxide. At twenty-five degrees, that's four point nine six over twenty-four point seven nine, zero point two zero zero **moles**. At zero degrees, it's over twenty-two point seven one, which is zero point two one eight moles. Same volume, more moles, because colder particles push less, so more of them fit. Always check the conditions **first**.
+
+Visual: calculation layout. Task strip: "Find n in 4.96 L of CO₂". Rule strip: "n = V ÷ Vm (V in L)". Two columns: left "25 °C, 100 kPa" (slate): on "moles" row "n = 4.96 ÷ 24.79 = 0.200 mol" (teal). Right "0 °C, 100 kPa": row "n = 4.96 ÷ 22.71 = 0.218 mol" (teal). On "more of them fit" a small particle box at 0 °C with slightly more, slower particles in the same outline. On "first" the conditions strip and both column headers glow.
+
+### 8. volume ratios for gas reactions
+> Avogadro's law gives a shortcut for reactions between gases. In N two plus three H two makes two N H three, the coefficients are mole ratios. And since equal volumes hold equal moles, they're volume ratios too. Ten litres of nitrogen reacts with thirty litres of hydrogen to make twenty litres of **ammonia**. But only for gases at the same temperature and pressure. A solid or a liquid doesn't follow the molar volume, so it can't join a volume **ratio**.
+
+Visual: equation strip "N₂(g) + 3H₂(g) → 2NH₃(g)" with the coefficients outlined in teal. On "volume ratios too" each coefficient gains a slate block outline. On "ammonia" volume blocks: 1 blue block "10 L N₂" + 3 white blocks "30 L H₂" → 2 blocks "20 L NH₃" (tag "same T and P"). On "A solid or a liquid" a ghost strip "CaCO₃(s) → CaO(s) + CO₂(g)" with a crossed chip "1 L of CaCO₃ → 1 L of CO₂"; on "ratio" tag "gases only".
+
+### 9. particles, not atoms, and the memory line
+> So remember: same T, same P, same V, same number. Just be careful what you're counting. It's particles, which means molecules, or single atoms for gases like helium. A litre of oxygen holds as many molecules as a litre of helium holds atoms, but each oxygen molecule has two atoms, so it holds twice as many **atoms**.
+
+Visual: the memory line writes large in the explainer's handwriting style: "Same T, same P, same V: same number." Below, two jars: "O₂, 1 L" with six red pairs and "He, 1 L" with six pale-yellow single atoms (counts "6 particles" each). On "atoms" each O₂ pair splits into its two atoms for a moment: "12 atoms" against "6 atoms" (tag "same number of particles, not atoms").
+
+### 10. attempt 1 (countdown, 10 seconds)
+> Your turn. Calculate the volume occupied by zero point six four zero grams of oxygen gas at zero degrees Celsius and one hundred kilopascals. Use oxygen sixteen point zero zero. Pause here to answer.
+
+Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Calculate the volume occupied by 0.640 g of oxygen gas, O₂, at 0 °C and 100 kPa. (O = 16.00; molar volume of an ideal gas at 100 kPa: 22.71 L mol⁻¹ at 0 °C, 24.79 L mol⁻¹ at 25 °C) (2 marks)" The full question stays on screen (both data-sheet values, as on the HSC data sheet). Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the conditions strip shows "?").
+
+### 11. feedback 1 (brief)
+> The molar mass of O two is thirty-two point zero zero, so that's zero point zero two zero zero moles. At zero degrees, the molar volume is twenty-two point seven one, so the volume is zero point four five four litres. Using twenty-four point seven nine gives zero point four nine six, the right method at the wrong **temperature**.
+
+Visual: card shrinks to the top. Rows: "n(O₂) = 0.640 ÷ 32.00 = 0.02000 mol"; "V = n × Vm = 0.02000 × 22.71 = 0.454 L" (slate); the conditions strip reads "0 °C, 100 kPa". On "temperature" a chip "0.496 L (24.79 at 0 °C)" fades in and is crossed. Hold about 1 second.
+
+### 12. attempt 2 (countdown, 10 seconds)
+> Last one. Methane burns completely in oxygen. C H four gas plus two O two gas makes C O two gas plus two H two O liquid. At twenty-five degrees and a hundred kilopascals, forty millilitres of methane burns. What volume of oxygen reacts, and what volume of carbon dioxide forms, at the same conditions? Pause here to answer.
+
+Visual: `QuestionCard`: "Methane burns completely in oxygen: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). At 25 °C and 100 kPa, 40 mL of methane is burnt. Calculate the volume of oxygen that reacts and the volume of carbon dioxide formed, both measured at 25 °C and 100 kPa. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 13. feedback 2 (brief)
+> Methane, oxygen and carbon dioxide are all gases at the same conditions, so their volumes follow the coefficients, one to two to one. Eighty millilitres of oxygen react, and forty millilitres of carbon dioxide form. The water is a liquid here, so it doesn't add eighty millilitres of gas. Counting a liquid in a volume ratio is the classic **slip**.
+
+Visual: card shrinks. Volume blocks: 1 block "40 mL CH₄" + 2 blocks "80 mL O₂" → 1 block "40 mL CO₂"; the "2H₂O(l)" term greys with a tag "liquid: no gas volume". On "slip" a chip "80 mL of water vapour" fades in and is crossed. Hold about 1 second.
+
+### 14. conclusion and handoff
+> So equal volumes of gases hold equal numbers of particles, because size hardly matters, and at one temperature every particle pushes equally. That's why one mole has one molar volume, as long as the temperature and pressure are stated. But what if we change them? Seal some gas in a syringe, keep the temperature steady, and push the plunger in. How does changing gas volume change pressure at constant **temperature**?
+
+Visual: the memory line returns small at the top with the two molar volume cards. On "what if we change them" the board clears to the final frame's layout: the sealed syringe at the centre with twelve particles inside; the conditions strip "T = 25 °C (steady)"; on "push the plunger in" a dashed ghost plunger slides from "100 mL" to "50 mL" and the particles crowd closer; the strip "same gas, same n, same T" and the amber chip "V halves → P = ?". On "temperature" the chip "Next: How does changing gas volume change pressure at constant temperature?" writes. Hold about 2 seconds. This is the final frame (m2-v17 opens on it).
+
+### 15. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Avogadro's law: equal volumes of gases at the same temperature and pressure contain equal numbers of particles. At constant T and P, V ∝ n (V₁ ÷ n₁ = V₂ ÷ n₂).
+2. Why: gas particles take up well under 1% of the space, and at the same temperature every particle pushes equally on average (lighter particles move faster).
+3. Molar volume at 100 kPa (any gas): 22.71 L mol⁻¹ at 0 °C; 24.79 L mol⁻¹ at 25 °C. n = V ÷ Vm, V in litres. Always state the conditions.
+4. For gases at the same T and P only: volume ratio = mole ratio (coefficients).
+5. Equal particles, not equal atoms (O₂ against He).
+
+Memory aid (large, on the notes screen): *Same T, same P, same V: same number.*
+
+At the end the notes cross-fade back to scene 14's final frame.
+
+## Teaching checks
+
+- **Does it explain causes?** Why size hardly matters (2); what sets the volume (3); why mass cancels (4); why that gives the law (5); why the warmer molar volume is larger (6); why the colder sample holds more moles (7); why the shortcut fails for solids and liquids (8).
+- **Misconceptions addressed:** bigger or heavier molecules need more room (1 to 4); one molar volume for all conditions (6, 7; A1 crossed); 22.4 (6); volume ratios for every species (8; A2 crossed); equal atoms (9).
+- **One idea at a time:** the claim (1), size (2), pressure and volume (3), mass (4), the law (5), molar volume (6), calculation (7), reactions (8), counting (9).
+- **Video makes it easier:** a tiny liquid cube grows seven hundred times into the gas cube (2); wall-hit counters and push meters for O₂ and H₂ settle to the same average (4); the syringe plunger slides out as moles double (5); a warmer box bulges against the same outside pressure (6); volume blocks combine in the coefficient ratio (8).
+- **Response opportunity:** one 3 s prediction (1); two unseen HSC-style tasks, all facts on the card, 10 s each, nothing answer-bearing. Feedback about 19 s and 22 s.
+- **Avoided double teaching:** the mole and Avogadro's constant (m2-v02); the rule's use in the magnesium practical (m2-v04, recalled, not repeated); coefficients as mole ratios (m2-v06).
+- **Syllabus coverage:** `C2-IQ4-01` "Avogadro's Law" (5 to 8, A1, A2); `C2-IQ2-03` "numbers of particles" (1, 2, 9).
+- **Out of scope by design:** Boyle, Charles and Gay-Lussac, kelvin, PV = nRT, real-gas corrections.
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 10; original wording, HSC style, 2 marks suggested, not an official marking scheme).** As on the card.
+Model answer: n(O₂) = 0.640 ÷ 32.00 = 0.02000 mol (1 mark). At 0 °C and 100 kPa, V = n × 22.71 = 0.454 L (1 mark). Classic mistake (crossed): 0.496 L (24.79 L mol⁻¹ used at 0 °C).
+
+**Attempt 2 (scene 12; original wording, HSC style, 2 marks suggested).** As on the card.
+Model answer: CH₄, O₂ and CO₂ are gases at the same T and P, so by Avogadro's law volumes are in the mole ratio 1 : 2 : 1 (1 mark); V(O₂) = 80 mL and V(CO₂) = 40 mL (1 mark). Classic mistake (crossed): "80 mL of water vapour" (water is a liquid at 25 °C).
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Jars | 1.00 L; 25 °C; 100 kPa; 0.0403 mol; 2.43 × 10²² particles; 0.0813 g, 1.29 g, 1.78 g; × 22 | opening, 1, 2 |
+| Liquid nitrogen | about 35 mL mol⁻¹; about 24.8 L as gas; × 700; under 1% | 2 |
+| H₂ against O₂ | 2.016, 32.00 (× 16 lighter); × 4 speed; ¼ push per hit; × 4 hits | 4 |
+| Syringe | 2.00 × 10⁻³ mol, 49.6 mL; 4.00 × 10⁻³ mol, 99.2 mL | 5 |
+| Molar volumes | 22.71 (0 °C, 100 kPa); 24.79 (25 °C, 100 kPa); 22.4 (1 atm, 101.3 kPa; tag) | 6, 7, 10, 11 |
+| Worked example (site) | 4.96 L; 0.200 mol; 0.218 mol | 7 |
+| Volume ratio (site) | 10 L N₂ + 30 L H₂ → 20 L NH₃ | 8 |
+| Atoms | 6 particles each; 12 against 6 atoms (illustrative) | 9 |
+| A1 | 0.640 g; 32.00; 0.02000 mol; 22.71; 0.454 L; slip 0.496 L | 10, 11 |
+| A2 | 40 mL CH₄; 80 mL O₂; 40 mL CO₂; slip 80 mL H₂O | 12, 13 |
+| Handoff | 100 mL → 50 mL; 12 particles; 25 °C | 14 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (5 November); Codex to re-check.
+
+- 1.00 ÷ 24.79 = 0.040339; × 6.022 × 10²³ = 2.429 × 10²²; × 2.016 = 0.0813; × 32.00 = 1.2908; × 44.01 = 1.7753; 1.7753 ÷ 0.0813 = 21.8.
+- 28.02 ÷ 0.807 = 34.72 mL; 24 790 ÷ 34.72 = 714; 714^(1/3) = 8.94.
+- 32.00 ÷ 2.016 = 15.87; √15.87 = 3.98; 3.98 ÷ 15.87 = 0.251.
+- 8.314 × 273.15 ÷ 100 = 22.71; 8.314 × 298.15 ÷ 100 = 24.79.
+- 2.00 × 10⁻³ × 24.79 = 0.04958 L; 4.00 × 10⁻³ × 24.79 = 0.09916 L.
+- 4.96 ÷ 24.79 = 0.2001; 4.96 ÷ 22.71 = 0.2184.
+- 0.640 ÷ 32.00 = 0.02000; × 22.71 = 0.4542; × 24.79 = 0.4958.
+
+## Memory aid check
+
+- **"Same T, same P, same V: same number."** A compact form of Avogadro's law, written for this video. Meaning: if three of temperature, pressure and volume match for two gas samples, so does the number of particles. Assumptions checked: ideal-gas behaviour (scene 5's tag); "number" means particles (molecules, or atoms for monatomic gases), not atoms (scene 9); gases only (scene 8). It helps a new case: A2 (volumes in the coefficient ratio) and m2-v17 to v19, where one of T, P or V changes and the number stays fixed.
+- **Considered, not used:** "A mole is a mole is a mole" (catchy, but hides the conditions, which are the route's key distinction).
+
+## Narration length estimate
+
+Revision 1 count (5 November; build parser rules): **5,573 characters**, 15 scenes. At 13.3 characters per second the speech is about 419 s; add about 8 s of settling (the cube expansion in 2, the wall counters in 4, the syringe in 5, the bulging box in 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 504 s**.
+
+## Scene list and build ids
+
+Lesson key `c-y11-m2-v16` (route chem-y11-m2-v16; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v16`.
+
+In order (15 scene headings, all `### N.`): hook-prediction, empty-space, what-sets-volume, mass-cancels, avogadro-law, molar-volume, conditions-decide, volume-ratios, particles-not-atoms, attempt-1, feedback-1, attempt-2, feedback-2, conclusion-handoff, key-notes.
+
+Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v15's final frame into scene 1 by camera continue; 1 to 2 camera continue (the jar windows open); 2 to 3 camera continue (O₂ jar enlarges); 3 to 4 camera continue (the wall section splits); 4 to 5 camera continue (the jars return); 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
+
+Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v16-learning-review.md`, `checks/c-y11-m2-v16-science-check.md`.
+
+## Assets
+
+Have (inspected 5 November on a paper-background contact sheet; uniform scaling only, never stretched):
+- `public/assets/chemistry/y11c-gas-jar-v1.png` (935 × 1682; lidded glass gas jar): opening frame, scenes 1 to 5, 9 (copies at one scale; coded particle windows inside).
+- `public/assets/chemistry/c4a-syringe-barrel-v1.png` and `c4a-syringe-plunger-v1.png` (2062 × 1031 each, one canvas; the plunger slides along the barrel by code): scene 5, final frame.
+- **Inspected, not used:** `y11c-gas-jar-v2.png` (a shorter jar; one jar type for all three); `biology/y11-balloon-large-v1.png` (a pink balloon; the syringe gives a readable volume); `biology/y11-gas-syringe-rig-v1.png` (a gas-collection rig with yeast; wrong context); `c4a-cylinder-body-v1.png` with `c4a-cylinder-piston-v1.png` (a metal cylinder; the transparent syringe shows the particles).
+- No liquid nitrogen plate exists; scene 2 uses coded volume cubes (an abstract comparison, so coded is right).
+
+Need (new plates, Codex): none.
+
+Coded: particle windows, volume cubes, wall sections, counters and push meters, pressure arrows, molar volume cards and boxes, syringe particles and readouts, volume blocks, atom split, rows, chips, attempt cards, countdowns, key notes board.
+
+## Codex asset brief (Year 11 Chemistry M2 v16)
+
+No new plates. Codex confirms the syringe barrel and plunger align when the plunger is translated along the barrel axis (Year 12 `chem-m5-c04a.md` used them) and that the nozzle can carry a coded cap without clipping, on the dark board.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify" and every number in narration, screen text, attempts and key notes against "Numbers used".
+2. Confirm the molar volumes match the current HSC Chemistry data sheet (22.71 L at 0 °C, 24.79 L at 25 °C, both 100 kPa).
+3. Confirm the site content used matches `lesson04.sa.html` (`l04-why-title`, `l04-formula-title`, worked example 2) and `lesson15.sa.html` (`l15-avogadro-title`, V₁/n₁ = V₂/n₂, drill 3, the gases-only trap).
+4. Confirm the equations are balanced: N₂ + 3H₂ → 2NH₃; CH₄ + 2O₂ → CO₂ + 2H₂O.
+5. Confirm both attempt cards are original, carry every needed fact, and show nothing answer-bearing.
+6. Confirm the syllabus quotes match `chem-2017-y11.json` (apart from the corrected apostrophes).
+7. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
+8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
+9. Confirm the opening frame equals m2-v15's final frame, and send the final frame to the m2-v17 designer.
+
+## YouTube metadata (draft)
+
+Title: Avogadro's Law: Why Equal Gas Volumes Hold Equal Moles | Year 11 Chemistry Module 2
+
+Description: Full Year 11 Chemistry course: https://hscscience.com.au/subjects/chemistry/year11/
+
+One litre of carbon dioxide is more than twenty times heavier than one litre of hydrogen at the same temperature and pressure. So why do they hold the same number of particles? See why a gas is almost all empty space, how wall collisions set a gas's volume, and the surprise that makes mass cancel out: lighter particles move faster. Then use Avogadro's law: molar volume (22.71 L/mol at 0 °C and 24.79 L/mol at 25 °C, both at 100 kPa), n = V / Vm, and volume ratios for gas reactions. Two exam-style questions at the end.
+
+Year 11 Chemistry (2017 syllabus), Module 2: Introduction to Quantitative Chemistry.
+Syllabus content (NSW Chemistry Stage 6):
+"conduct investigations and solve problems to determine the relationship between the Ideal Gas Law and:"
+"Avogadro's Law (ACSCH060)"
+"explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate masses, chemical amounts and numbers of particles in: (ACSCH007, ACSCH039)"
+
+Previous: How does precipitate mass reveal an ion concentration? Next: How does changing gas volume change pressure at constant temperature?
+
+#Year11Chemistry #Chemistry #HSCChemistry #HSCScience
+
+## Open decisions
+
+- **1. Reason 3 depth (learning review, science check).** Scene 4's "a quarter as hard, four times as often" goes beyond the site (site note 2) and is the true reason mass cancels. Confirm it is followable for a student starting Year 11 without "kinetic energy" in narration; the fallback is one sentence ("at the same temperature, lighter particles move faster, which makes up for their smaller mass") and the meters without numbers (saves about 150 characters).
+- **2. "Room conditions" wording (root).** Scene 2 says "at room conditions" for 25 °C and 100 kPa (on screen, the stated conditions). The design avoids "STP", "SATP" and "RTP" in narration (site note 1); root to confirm the course convention for Module 2 cards.
+- **3. Ideal-gas caveat (root).** One spoken sentence in scene 5 ("Real gases follow it very closely at everyday conditions") because "exactly" would teach a wrong idea; the site's lesson 15 ideal-gas assumptions are left to m2-v19.
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (are scenes 2 to 4 one connected argument or three facts; does the wall-hit picture land at playback speed), then the science check and Codex error check.
+- Checker output (5 November): narration 5,573 characters; per scene (1 to 15): 473, 471, 391, 434, 437, 441, 480, 448, 314, 199, 327, 323, 345, 415, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
