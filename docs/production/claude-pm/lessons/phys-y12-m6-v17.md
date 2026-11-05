@@ -1,0 +1,292 @@
+# Year 12 Physics M6 V17: Back emf in DC motors. Why does a spinning DC motor draw less current? (design)
+
+Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+
+Narration 6,339 characters, 16 scenes, about 563 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v16's final frame as assumed below (v16 is being designed in parallel; see "Opening frame").
+
+Scope: seventeenth video of Year 12 Physics Module 6 (Electromagnetism, Physics Stage 6, 2017 syllabus), inquiry question "How has knowledge about the Motor Effect been applied to technological advances?". Templates as `phys-y12-m6-v07.md` and `phys-y12-m6-v11.md`; calculation layout as `math-a12-d10.md`. No pre-design pack exists; the pack work is done here (2017 wording from the ledger, site givens unchanged, every number recalculated in Python, original attempts, asset reuse). Site lesson read in full (6 Nov, read-only, through the brief 168 text extract `work/brief168/module6-lesson17.sa.txt`, hash checked against the live file): orient and retrieve (12 V motor prediction, warm-up, intentions, vocabulary, cross-lesson links), model back emf and current (ammeter observation, I = (V − ε_back)/R, ε_back = k_eω, equivalent circuit and speed graphs, startup, running and loading, back emf and conservation of energy, power ledger, HSC tip, Stop and Check, MC), protect startup current (starting resistor, 5 to 10 times the running current, PWM controllers, true/false), calculate the power ledger (worked example 18 V, 3.0 Ω, 15 V), analyse performance (Activity 1: 12 V, 2.0 Ω, 10 V), apply and consolidate (Activity 2 seized motor, synthesis, "Analyse 6 marks" heavier load, "Account 5 marks" jammed drill), practice (MC, Q1, Q2 and model answers), review and revisit (tram puzzle): `C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson17.sa.html`, SHA256 `b666280482f9179bb7ab6b0592004f6ec93f4a529967113c60a9ee36d628c48d` (recomputed 6 Nov; matches the route). Also read in full for the same motor: lesson 10 (`module6/lesson10.sa.html`, SHA256 `736384e8c6b6ea3e705767d723a0ee76e77ccceae7ab2d40f7f297065de8d36f`; its back-emf overview and worked example use the same 12 V, 2.0 Ω, 10 V motor). Route entry: `phys-y12-m6-v17`, sections `model-back-emf-current`, `protect-startup-current`, `calculate-power-ledger`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Explain back emf as induction opposing supply, current=(V-back emf)/R and start/stall current. Stop before AC induction motors." Next: "phys-y12-m6-v18: How do simple AC and DC generators produce different outputs?"
+
+Owner rules applied: as v07 and v11 (2017 syllabus quoted exactly; one main learner question; no people, hands, faces or body outlines: the load on the shaft is a coded amber torque arrow and a hanging mass plate, the jam is a coded block, the switch is shown changing state; the motor, flywheel, ammeter, supply, switch and starting resistor are painted plates; the motor model, equivalent circuit, graph, power bars and calculation strips are coded; every number recalculated in Python; data-sheet and syllabus symbols (V, I, R, ε, P = VI, P = I²R); a 3 s prediction; "Pause here to answer." with a 10 s countdown; brief feedback with one crossed mistake; original attempts; optional key notes; Australian spelling; no em dashes). Recalled, not re-taught: v16 (the simple DC motor, its coil, split-ring commutator and brushes, torque on the coil, torque proportional to current), v10 (changing flux induces an emf), v11 (Lenz's law and its energy argument), Year 11 (V = IR, P = VI, P = I²R, a voltage shared round a series loop).
+
+Syllabus content (Physics Stage 6 (2017), Module 6 Electromagnetism; ledger ids `P6-IQ4-01`, `P6-IQ4-03`), quoted from the route JSON `syllabusActions`:
+
+- `P6-IQ4-01`: "investigate the operation of a simple DC motor to analyse:" "the functions of its components", "production of a torque τ=nIA_(⊥)B=nIABsinθ", "effects of back emf (ACSPH108)"
+- `P6-IQ4-03`: "relate Lenz’s Law to the law of conservation of energy and apply the law of conservation of energy to:" "DC motors and", "magnetic braking"
+
+Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx (page 57)
+
+**Boundary:** starts on v16's final frame (assumed: the simple DC motor model turning steadily with the handoff chip). Teaches: the observation (a 12 V motor draws 6.0 A at switch-on and 1.0 A at full speed; site prediction box); the spinning coil is also a generator; the back emf defined and its direction from Lenz's law; why it must oppose (the runaway what-if, energy from nothing; `P6-IQ4-03` for DC motors); V = ε_back + IR and I = (V − ε_back)/R derived from the voltage shared round the loop; back emf proportional to speed for a fixed field; start (6.0 A), full speed (10 V, 1.0 A), a heavier load (half speed: 5.0 V, 3.5 A; self-regulation); the power ledger VI = I²R + ε_backI (12 W = 2.0 W + 10 W; about 83 per cent converted; shaft output a little less after friction); the jammed motor (6.0 A, 72 W of heating, 36 times the running heat, all input to heat); the starting resistor (4.0 Ω added: 2.0 A) and electronic controllers. Stops before generators (v18), AC induction motors (v19) and magnetic braking (v20). Torque, the commutator and dead points stay with v16.
+
+## Decisions
+
+- **Learner question (route wording kept).** "Why does a spinning DC motor draw less current?" is causal and matches the site's opening observation. The answer, built in order: the spinning coil is also a generator and its induced emf opposes the supply (2); it must oppose, or energy would come from nothing (3); only the voltage left over drives current, I = (V − ε_back)/R (4); back emf grows with speed, so the current falls as the motor speeds up (5).
+- **Hook (site prediction box and lesson 17's ammeter observation).** The same 12 V motor with coil resistance 2.0 Ω draws 6.0 A at switch-on and 1.0 A at full speed (site prediction box values, unchanged). A 3 s prediction with chips "the coil's resistance rises" and "something in the coil pushes back"; the narration then states "same coil, same resistance", so the first option is ruled out on screen.
+- **One motor throughout (site lesson 10 worked example and lesson 17 Activity 1).** The 12 V, 2.0 Ω motor with a 10 V full-speed back emf carries every teaching stage: start 6.0 A, full speed 1.0 A, power ledger 12 W = 2.0 W + 10 W (Activity 1's 83 per cent), jammed 6.0 A and 72 W. The site's 18 V worked example (6.0 A, 1.0 A, 18 W, 3.0 W, 15 W, 83.3 per cent) is checked and not used: a second motor would add numbers without adding an idea. The loaded case (half speed, 5.0 V, 3.5 A) and the starting resistor value (4.0 Ω, giving 2.0 A) are original numbers on the same motor; the site gives the half-speed case only as a question (Stop and Check, 24 V motor) and the resistor only as a formula.
+- **Derivation before use (route entry knowledge).** V = ε_back + IR is built from the Year 11 idea that a supply's voltage is shared round a series loop; I = (V − ε_back)/R is its rearrangement; the power ledger is the same equation multiplied by I (site "Power ledger: VI = I²R + ε_backI"). Back emf proportional to speed is stated as the result of v10's "faster change, bigger emf" (site ε_back = k_eω, shown as "ε_back ∝ ω, fixed field"; the constant k_e is not introduced).
+- **Energy argument (`P6-IQ4-03`, site HSC tip "always link back emf to Lenz's Law and conservation of energy").** Scene 3 runs v11's what-if on the motor: a helping emf would make the motor run away, gaining kinetic energy from nothing. The opposing emf means the supply must do work pushing charge against it, and that work is the converted mechanical energy (scene 7 shows it in watts). v20 applies the same law to magnetic braking.
+- **Conversion versus shaft output (site lesson 17 wording).** ε_backI is called "power converted into mechanical work"; the narration adds that the shaft delivers a little less because of bearing friction (site: "shaft output is less than 15 W if bearing, windage or other mechanical losses are present"). No shaft efficiency is calculated.
+- **Jammed motor (site Activity 2 and "Account 5 marks").** The jam uses the same motor, so the 6.0 A matches the start; the heating ratio 72 W / 2.0 W = 36 makes the site's "tens of times faster" concrete. "Every joule from the supply becomes heat" is the site's energy point.
+- **Starting resistor (site section 3).** One original value (4.0 Ω added, 2.0 A); the resistor is a painted rheostat plate (reused) switched out in steps; electronic controllers appear as one on-screen chip (site: PWM ramps the effective voltage). The site's claim about a particular car maker's motors is not used (site note 2).
+- **Memory aid (scene 10, new): "No spin, no push back."** See "Memory aid check".
+- **Attempts (original, HSC style).** A1 (calculation): 9.0 V supply, 1.5 Ω coil, 0.80 A at full speed: back emf 7.8 V; jammed current 6.0 A. A2 (explain, energy): a heavier load on a motor lifting at steady speed. Crossed: A1 "back emf = IR = 1.2 V"; A2 "the current falls because the motor is slower".
+- **Handoff (route next).** Scene 15 removes the battery, turns the shaft by an outside drive (an amber input arrow on the flywheel, no hand) and connects the motor's terminals to an oscilloscope with a "?" on its screen: the motor is now a generator; what shape is its output? See "Final frame".
+- **Colour key (root decision 1):** supply current orange; back emf and its symbol rose; magnetic field slate; forces and torques amber; power bars: input orange, heat red, converted amber.
+- **Site sources used:** prediction box (1); ammeter observation paragraph (1, 5); back emf definition and "not a separate component" (lesson 10 HSC tip and misconception; 2); "Back emf and Conservation of Energy" and the HSC tip (3, 7); equivalent circuit V = ε_back + IR (4); startup, running and loading states (5, 6); "Analyse 6 marks" chain (6, A2); power ledger (7); Activity 1 numbers (5, 7); Activity 2 and "Account 5 marks" (8); starting resistor and PWM (9); lesson 10 worked example (5); Q2 model answer wording "conversion power, not automatically shaft output" (7). Not used: the 18 V worked example (checked), the tram puzzle (checked), the interactive, the MC drills, k_e as a named constant.
+- **Site notes (quoted from site lesson 17, read 6 Nov; for Codex to log in `site-corrections-phys-y12.md`):**
+  1. Review section: "At the start you were asked about Melbourne's W-class trams (Melbourne and Metropolitan Tramways Board, 1923 fleet) on 600 V DC with 0.3 Ω coil resistance." The lesson's opening prediction box asks about a 12 V motor, not trams; the tram question is never asked at the start. Proposed fix: add the tram question to the opening prediction, or change "At the start you were asked about" to "Now consider". Arithmetic checked and correct (2000 A; 597.6 V; 99.6 per cent).
+  2. Section `protect-startup-current`: "Tesla's drive motors are AC induction motors controlled by high-frequency PWM inverters." This is dated: several current models use permanent-magnet motors, with induction motors in some earlier or front-axle drives. Proposed fix: "Some electric vehicles use AC induction motors controlled by high-frequency PWM inverters."
+  3. Section `model-back-emf-current`: "If there were no back emf, the stationary circuit current would be limited to $V/R$ by the winding resistance. The deeper contradiction is that a model with no speed-dependent back emf would fail to account consistently for electromagnetic power conversion as speed changes." Not wrong but hard to follow; it never states the energy contradiction. Proposed clarity fix: "Without back emf, the current would stay at V/R at every speed, so the electrical power in would be the same whether the motor was doing mechanical work or not, and the energy for the work would come from nowhere."
+  Checked and correct: prediction box (back emf 10 V); Stop and Check (16 V; at half speed 8.0 V and 4.0 A); worked example (6.0 A, 1.0 A, 18 W, 3.0 W, 15 W, 83.3 per cent); Activity 1 (6.0 A, 1.0 A, 12 W, 2.0 W, 10 W, 83 per cent, matching the MC option); Activity 2 (24 A seized); Q1 (6.0 A, 1.2 A, 14.4 W); lesson 10 worked example (1.0 A, 6.0 A), Activity 2 (12 V, 5.0 A), MC (1.0 A) and extension (9.0 V, 6.0 V).
+- **Cause chain taught, in order:** (1) a 12 V motor draws 6.0 A at switch-on but 1.0 A at full speed, with the same coil and resistance (1); (2) the turning coil's flux changes, so an emf is induced in it: it is a generator as well as a motor (2); (3) by Lenz's law that emf opposes the supply: the back emf (2); (4) if it helped, the motor would run away and gain energy from nothing, so it must oppose, and the supply's work against it becomes mechanical work (3); (5) the supply voltage is shared between the back emf and the resistance, so I = (V − ε_back)/R (4); (6) back emf grows with speed, so the current falls as the motor speeds up (5); (7) a heavier load slows the motor, lowering the back emf and raising the current and torque until they match the load (6); (8) multiplying by I splits the input power into heat and converted power (7); (9) with no rotation there is no back emf, so a jammed motor draws the full V/R and turns all of it into heat (8); (10) a series resistor or a controller limits the starting surge until the back emf builds (9).
+- **Entry knowledge (route `entryKnowledge`):** v16's DC motor and torque proportional to current; v10's Faraday's law; v11's Lenz's law and energy argument; Year 11 V = IR, series voltages, P = VI, P = I²R, work and energy.
+- **Learner-visible vocabulary (plain meaning at first use):** back emf (the emf induced in a motor's spinning coil, opposing the supply voltage, 2); stall or jammed (prevented from turning, 8); starting resistor (a resistor in series that limits the current while the motor starts, 9); converted power (the rate at which electrical energy becomes mechanical work, 7).
+- **Legacy logic ported:** none. The kit family `m6-motor-back-emf` (coded: back emf increasing with angular speed, fixed field, constant R, prescribed speed) is the candidate support for scenes 4 to 6; respect its limits (no transient inductance; speed prescribed, not simulated).
+- **New explainer motion:** **motor bench** (hobby motor plate with a rotating flywheel layer whose spin rate is set per scene; the multimeter plate as an ammeter with a coded digital readout; supply and knife switch plates; coded leads with orange current dots whose speed follows the current); **back-emf overlay on v16's motor model** (rose "ε_back" arrow along the coil opposing the orange supply-current arrow); **runaway what-if** (v11's greyed what-if style: the flywheel spinning faster and faster with a climbing current readout and a kinetic-energy bar rising from an empty source bar); **equivalent circuit** (coded supply, resistor R and a rose back-emf cell pointing against the supply, with a voltage-share bar beside it: V split into ε_back and IR); **current-speed graph** (coded `lineGraph`: I from 6.0 A at ω = 0 falling linearly to 1.0 A at full speed, a moving dot); **power bars** (input splits into heat and converted, with a thin "friction" sliver off the converted bar); **jam block** (coded block against the flywheel); **rheostat stepper** (the rheostat plate's slider moving in steps, a coded bypass link closing); `AlignedAlgebra`; `Countdown` (3 s in scene 1; 10 s in scenes 11 and 13); `QuestionCard`; `Chip` with `cross`; `KeyNotes`; `Heading`.
+- **Board layout:** heading top-left; the motor bench or the motor model centre-left; the equivalent circuit, graph or power bars on the right; calculation strips (task, equation, grouped givens) in the right column when numbers are worked; everything above the bottom 12% of the frame.
+- **Author notes (not learner copy):**
+  (a) Model: fixed field (permanent magnets), constant winding resistance, inductance and brush drop ignored, steady states only; ε_back ∝ ω. The spin-up animation is illustrative (no times on screen).
+  (b) Values: V = 12 V, R = 2.0 Ω; full speed ε_back = 10 V, I = 1.0 A; half speed ε_back = 5.0 V, I = 3.5 A (a hypothetical steady state at half speed, as in the site's Stop and Check; torque at 3.5 A is 3.5 times the full-speed torque); start and jam I = 6.0 A; resistor 4.0 Ω gives 2.0 A.
+  (c) Ledger at full speed: VI = 12 W; I²R = 2.0 W; ε_backI = 10 W; 10/12 = 83 per cent (83.3). At half speed (author check, not narrated): 42 W = 24.5 W + 17.5 W. Jammed: 72 W, all heat; 72/2.0 = 36.
+  (d) Back emf direction: the induced emf in the turning coil drives (or would drive) a current whose motor-effect torque opposes the rotation; in the circuit it acts against the supply current. The overlay shows it as a rose arrow along the coil pointing against the orange current arrow.
+  (e) Pronunciations: "emf" letter by letter; "back emf" as "back E M F"; "ohms"; "I R" as "eye ar"; "I squared R" as "eye squared ar"; "V I" as "vee eye".
+  (f) The runaway what-if is counterfactual and greyed with a "what if" tag; no values.
+- **Open decisions for root:**
+  - **1. v16 join.** The opening assumes v16 ends on its coded DC motor model turning steadily, with a chip "Next: why does a spinning DC motor draw less current?". If v16's final frame differs (for example, if it already shows an ammeter or a bench), root replaces scene 1's first sentence and the opening camera move; nothing else depends on it.
+  - **2. Motor plates.** New `y12p-hobby-motor-v1.png` and `y12p-motor-flywheel-v1.png`. If v16 requests a demonstration-motor plate, root keeps one family for both videos and drops the duplicate request.
+  - **3. `P6-IQ4-03` split (root decision 5).** This video applies conservation of energy to DC motors (3, 7, 8); v11 relates Lenz's law to conservation; v20 applies it to magnetic braking. The coverage check confirms.
+  - **4. Optional beats** the learning review may cut: scene 9's controllers chip; scene 10's memory aid; scene 6's half-speed numbers (keep the chain without numbers).
+Main question: *Switch on a 12 V motor and it draws 6.0 A; once it's spinning it draws only 1.0 A, with the same coil and the same resistance. Why does a spinning DC motor draw less current?*
+Entry knowledge: v16's DC motor; Faraday's law (v10); Lenz's law (v11); Year 11 V = IR, P = VI, P = I²R.
+Stops after: back emf, I = (V − ε_back)/R, start, full speed, load, jam, the power ledger, starting resistors. No generators, induction motors or braking.
+Handoff: v18, how simple AC and DC generators produce different outputs.
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
+
+### 1. hook (six amps, then one)
+> Here's the motor, turning steadily. Let's stop it, and start it again from rest, with an ammeter in the circuit. At the instant the switch closes, the ammeter reads six amps. As the coil **speeds up**, the reading falls, and settles at just **one amp**. Same twelve volt supply, same coil, same resistance. So why does a spinning motor draw less current? Make your **prediction**. Does the coil's resistance go up, or does something in the coil push back? Something pushes **back**.
+
+Visual: opens on v16's final frame exactly (`phys-y12-m6-v16.md` "Final frame": power pack at left, coded ammeter with a ghost "at switch-on" needle and a live "spinning" needle, the coded split-ring motor schematic spinning at right); the chip becomes the heading: "Why does a spinning DC motor draw less current?". On "stop it" the coil model slows to rest and shrinks to the upper left as a reference inset, and the power pack and two-needle ammeter fade (the bench below replaces them with real readings). On "ammeter" camera change to the motor bench: the hobby motor plate (`y12p-hobby-motor-v1.png`, new) with its flywheel layer (`y12p-motor-flywheel-v1.png`, new) at rest; coded leads through the multimeter plate used as an ammeter (`phys-y11-digital-multimeter-v1.png`, coded readout "0.0 A"), the knife switch (`phys-y11-knife-switch-v1.png` with `phys-y11-knife-switch-blade-v1.png`, open) and the low-voltage supply (`phys-y11-low-voltage-supply-v1.png`, coded tag "12 V"). On "switch closes" the blade closes, the readout jumps to "6.0 A" and dense orange current dots flow in the leads. On "speeds up" the flywheel starts turning and accelerates; the readout counts down. On "one amp" the readout settles at "1.0 A", the flywheel turns steadily and the current dots thin out. On "Same twelve volt supply" three small tags tick in turn: "same 12 V", "same coil", "same R = 2.0 Ω". On "prediction" a 3 s `Countdown` beside two chips: "the coil's resistance rises" and "something in the coil pushes back". On "back" the first chip is crossed (it contradicts "same R") and the second ticks.
+
+### 2. the motor is also a generator
+> The spinning coil is a loop of wire turning in a magnetic field. As it turns, the flux through it keeps changing, and from Faraday's law, a changing flux induces an **emf**. So the motor's coil is also a generator. Which way does this emf point? Lenz's law says it opposes the change that causes it. The rotation is driven by the supply's current, so the induced emf pushes against the **supply**. We call it the back emf. Back emf is the emf induced in a motor's spinning coil, opposing the supply voltage. It isn't an extra part. It comes from the motion **itself**.
+
+Visual: camera change to v16's coded motor model (coil between "N" and "S" pole blocks, slate field arrows, split ring and brushes, coded leads to the supply), turning. On "flux through it keeps changing" a small slate "Φ" tag beside the coil pulses with the turning (bigger, smaller, reversing), tag "Φ changing". On "emf" a rose "ε" appears on the coil, tag "Faraday: changing Φ → ε". On "also a generator" a split chip "motor (current → turning)" and "generator (turning → ε)" both light. On "Lenz's law" a small grey chip "Lenz: opposes the change". On "supply" an orange arrow "I (from supply)" runs along the coil and a rose arrow "ε_back" along the same side points the opposite way. On "back emf" a boxed chip "back emf: the emf induced in a motor's spinning coil, opposing the supply voltage". On "itself" a crossed chip "an extra part inside the motor" and a ticked chip "made by the rotation".
+
+### 3. why it must push back
+> Why against, and not with? Use the same energy argument as Lenz's law. Suppose the induced emf helped the supply. Then a faster coil would drive a bigger current, giving a bigger turning force, so it would spin faster still. The motor would run away, gaining kinetic energy from **nothing**. So the back emf must oppose the supply. That means the supply has to do work, pushing each coulomb of charge through the coil against the back emf. And that work is exactly the energy that becomes the motor's mechanical **work**.
+
+Visual: the model greys into a "what if" panel (tag "what if: the emf helps the supply", author note f). On "helped the supply" the rose arrow flips to point with the orange arrow. On "bigger current" a current readout climbs; on "spin faster still" the coil spins faster and faster and a loop arrow "faster → more ε → more I → more torque → faster" circles. On "nothing" a "kinetic energy" bar rises beside an empty "energy supplied" bar, and a red "✗ energy from nothing" stamps across the panel; the panel fades back to colour with the rose arrow opposing again. On "do work" coded charge dots climb a small rose "hill" labelled "ε_back" in the circuit (each coulomb pushed against the back emf), tag "supply does work against ε_back". On "work" an arrow from that tag to a chip "→ mechanical work (turning the load)".
+
+### 4. what the circuit sees
+> Let's put that into the circuit. Picture the coil as two things in series. Its resistance, R, and the back emf, pointing against the supply. Going round the loop, the supply voltage V is shared between them. Part of it balances the back emf, and the rest drives the current through the resistance, I R. So V equals the back emf **plus I R**. Rearrange, and the current is the supply voltage minus the back emf, **all over R**. Only the voltage that's left over drives the **current**.
+
+Visual: board change to the equivalent circuit (coded): a supply cell "V", a resistor "R" and a rose cell "ε_back" whose positive terminal faces the supply's positive terminal (pointing against it), an orange "I" arrow round the loop. On "shared between them" a vertical voltage-share bar beside the circuit: total height "V", split into a rose part "ε_back" and an orange part "IR". On "plus I R" equation strip "V = ε_back + IR". On "all over R" `AlignedAlgebra` second line "I = (V − ε_back) / R". On "current" the orange "IR" part of the bar pulses, tag "only the leftover drives I".
+
+### 5. spinning up
+> Now follow the motor as it spins up. At the instant it starts, the coil isn't moving, so there's no back emf. The full twelve volts drives current through two point zero ohms, giving **six point zero amps**. As the coil speeds up, the back emf grows. For a fixed field, it's **proportional to the speed**. At full speed, the back emf here is **ten volts**. That leaves only two volts to drive the current, so the current is two volts over two point zero ohms, **one point zero amp**. The faster it spins, the bigger the back emf, and the smaller the **current**.
+
+Visual: the equivalent circuit moves to the left; at the right a coded current-speed graph (`lineGraph`: x "speed ω", y "current I (A)", 0 to 7) with a straight falling line from (0, 6.0) to (full speed, 1.0), drawn as the dot moves. Grouped givens in a small strip above it: "V = 12 V", "R = 2.0 Ω". On "six point zero amps" the dot sits at ω = 0; the share bar is all orange "IR = 12 V"; working "I = (12 − 0) / 2.0 = 6.0 A". On "proportional to the speed" the dot moves right; the rose part of the share bar grows; tag "ε_back ∝ ω (fixed field)". On "ten volts" the share bar reads "ε_back = 10 V" and "IR = 2 V". On "one point zero amp" working "I = (12 − 10) / 2.0 = 1.0 A"; the dot sits at full speed. On "current" a small inset of the motor bench returns with the ammeter at "1.0 A", tag "spinning fast → big ε_back → small I".
+
+### 6. a heavier load
+> Now put a heavier load on the shaft. The load needs more turning force than the motor is giving, so the motor **slows down**. Slower means less back emf. Suppose it drops to half speed. The back emf is now only five volts, so seven volts drives the current, and the current rises to **three point five amps**. More current means more turning force. So the motor settles at a new, slower speed, where its turning force matches the **load**. The back emf makes the motor draw more current exactly when it needs more **torque**.
+
+Visual: camera change to the motor bench: a string from the flywheel's axle over a pulley (`phys-y11-bench-pulley-v1.png`) to the slotted-mass hanger (`phys-y11-slotted-masses-v1.png`); an amber "load torque" arrow on the flywheel. On "heavier load" a second slotted mass drops onto the hanger and the amber arrow grows. On "slows down" the flywheel slows; the graph dot (graph inset at the right) slides left to half speed. On "five volts" the share bar reads "ε_back = 5 V", "IR = 7 V". On "three point five amps" working "I = (12 − 5) / 2.0 = 3.5 A"; the ammeter readout rises to "3.5 A". On "turning force" an amber "motor torque" arrow on the flywheel grows (tag "torque ∝ I"). On "load" the two amber arrows match in length; the flywheel turns steadily at the slower rate; tag "new steady speed". On "torque" a chain chip: "load ↑ → speed ↓ → ε_back ↓ → I ↑ → torque ↑".
+
+### 7. where the energy goes
+> Where does the energy go? Take V equals the back emf plus I R, and multiply every term by the current. The supply's power, V I, splits into two parts. I squared R is heat in the coil. The back emf times I is the power converted into mechanical **work**. Here at full speed, the supply gives twelve times one, **twelve watts**. Heat in the coil is one squared times two, **two watts**. And ten volts times one amp, **ten watts**, is converted. That's about eighty three percent of the input. The shaft delivers a little less than ten watts, because friction in the bearings takes some **too**.
+
+Visual: board change to the working layout. Task strip: "Where does the supplied power go (full speed)?" Equation strip: "V = ε_back + IR" then, on "multiply every term by the current", "× I: VI = I²R + ε_back I". Givens grouped: "V = 12 V", "I = 1.0 A", "R = 2.0 Ω", "ε_back = 10 V". On "heat in the coil" a red label under "I²R": "heat in the coil"; on "work" an amber label under "ε_back I": "converted to mechanical work". At the right, power bars build: on "twelve watts" an orange input bar "P_in = VI = 12 × 1.0 = 12 W"; on "two watts" a red bar splits off "I²R = 1.0² × 2.0 = 2.0 W"; on "ten watts" an amber bar "ε_back I = 10 × 1.0 = 10 W". On "eighty three percent" tag "10 / 12 ≈ 83% converted". On "too" a thin grey sliver splits off the amber bar "friction", tag "shaft output < 10 W", and a tick under the bars "12 W = 2.0 W + 10 W".
+
+### 8. jam the shaft
+> Now jam the shaft, so it can't turn at all. No spin, no back emf. So the current jumps straight back to **six point zero amps**. The heating in the coil is I squared R, six squared times two, **seventy two watts**. That's **thirty six times** the two watts at full speed. And because the shaft does no work, every joule from the supply becomes **heat**. A stalled motor can burn out its windings within **seconds**.
+
+Visual: camera change to the motor bench; on "jam the shaft" a coded grey block slides against the flywheel and it stops; a tag "stalled: ω = 0". On "No spin, no back emf" the share bar (small, right) returns to all orange, "ε_back = 0". On "six point zero amps" the ammeter readout jumps to "6.0 A"; working "I = 12 / 2.0 = 6.0 A". On "seventy two watts" working "I²R = 6.0² × 2.0 = 72 W"; the red heat bar grows far past the earlier 2.0 W bar (shown faded beside it). On "thirty six times" tag "72 / 2.0 = 36 ×". On "heat" the amber converted bar shrinks to nothing; the whole input bar turns red, "all input → heat". On "seconds" the coil windings on the motor plate tint red (overlay glow on the coil region only), tag "windings overheat".
+
+### 9. starting big motors safely
+> Big motors have the same problem at every start, because their winding resistance is tiny. So a starting resistor is added in series, a resistor that limits the current while the motor starts. Here, adding four ohms makes the starting current twelve volts over six ohms, **two point zero amps**. As the motor speeds up and the back emf grows, the resistor is switched out, step by step, until the motor runs on the full **supply**.
+
+Visual: the equivalent circuit returns with the rheostat plate (`phys-y11-rheostat-v1.png`) drawn in series as "R_start", tag "starting resistor: limits the current while starting". Working strip: "I_start = V / (R + R_start)". On "two point zero amps" "I_start = 12 / (2.0 + 4.0) = 2.0 A" (beside it, faded, "without it: 6.0 A"). On "step by step" the rheostat slider moves in three steps towards zero while the rose ε_back cell grows; on "supply" a coded bypass link closes across the rheostat, tag "bypassed at full speed", and a small grey chip "modern controllers: ramp V up from 0 electronically".
+
+### 10. a way to remember
+> Here's a way to remember it. No spin, no push back. Starting or stalled, only the coil's small resistance holds the current **back**.
+
+Visual: board clears to two small benches side by side: left, the flywheel spinning, ammeter "1.0 A", a rose "ε_back" arrow; right, the flywheel stopped (block), ammeter "6.0 A", no rose arrow. On "No spin, no push back" the left bench pulses, then the right; on "back" the right bench's ammeter pulses. The handwritten line writes large above: "No spin, no push back." with "I = (V − ε_back) / R" under it. Hold about 2 seconds.
+
+### 11. attempt 1 (countdown, 10 seconds)
+> Your turn. A small DC motor runs on a nine point zero volt supply. Its coil has a resistance of one point five ohms, and at full speed it draws zero point eight zero amps. Calculate the back emf at full speed. Then calculate the current if the shaft is jammed. Pause here to answer.
+
+Visual: `QuestionCard` (subject "Physics"), worded as printed: "A small DC motor is connected to a 9.0 V supply. The resistance of its coil is 1.5 Ω. When running at full speed, the motor draws a current of 0.80 A. (a) Calculate the back emf at full speed. (b) Calculate the current in the motor if its shaft is jammed so that it cannot turn. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 12. feedback 1 (brief)
+> At full speed, the back emf is V minus I R. That's nine point zero minus zero point eight zero times one point five, so **seven point eight volts**. Jammed, there's no back emf, so the current is nine point zero over one point five, **six point zero amps**. The classic slip is giving I R, one point two volts, as the back emf. That's the voltage across the resistance, not the back **emf**.
+
+Visual: card shrinks to the top; "full speed", "0.80 A" and "jammed" underline. Working strip: "ε_back = V − IR". On "seven point eight volts" "ε_back = 9.0 − 0.80 × 1.5 = 7.8 V". On "six point zero amps" "jammed: ε_back = 0, I = 9.0 / 1.5 = 6.0 A". On "emf" a chip "back emf = IR = 1.2 V" fades in and is crossed (caption "IR is the resistor's share"). Hold about 1 second.
+
+### 13. attempt 2 (countdown, 10 seconds)
+> Last one. A DC motor is lifting a load at a steady speed. The load is suddenly made heavier. Explain what happens to the motor's speed, back emf and current, and explain how energy is conserved at the new steady speed. Pause here to answer.
+
+Visual: `QuestionCard`, worded as printed: "A DC motor connected to a constant supply voltage is lifting a load at a steady speed. The load is suddenly increased. Explain the changes in the motor's speed, back emf and current, and explain how energy is conserved when the motor reaches its new steady speed. (4 marks)" A small coded diagram: the motor bench silhouette with the hanger and an extra mass. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 14. feedback 2 (brief)
+> The heavier load slows the motor, so the back emf falls. With less back emf, more of the supply voltage drives current, so the current **rises**. More current gives more torque, so the motor settles at a lower speed. The supply now delivers more power, V I. It splits into more mechanical work for the heavier load, plus more heat, because I squared R has **grown**. The slip is saying the current falls because the motor is **slower**.
+
+Visual: card shrinks to the top; "suddenly increased" and "energy is conserved" underline. The chain builds: on "rises" "speed ↓ → ε_back ↓ → I = (V − ε_back)/R ↑"; on "lower speed" "→ torque ↑ → new steady speed (lower)"; on "grown" the power bars: a taller orange "VI" splitting into a taller amber "mechanical work" and a taller red "I²R". On "slower" a chip "current falls because the motor is slower" fades in and is crossed (caption "slower → less back emf → more current"). Hold about 1 second.
+
+### 15. handoff
+> So a spinning motor draws less current because its coil is also a generator, and the back emf it makes pushes against the supply. Now remove the supply. Turn the shaft with something else, and connect the motor to an **oscilloscope**. The back emf is still there, but now it's the output. The motor has become a **generator**. So what shape is **its output**?
+
+Visual: board clears (camera change) to the motor bench. On "remove the supply" the supply plate, switch and ammeter slide out of frame. On "Turn the shaft with something else" a curved amber outline arrow "turned by an outside drive" appears round the flywheel and it turns steadily (no hand). On "oscilloscope" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a "?". On "generator" the rose "ε_back" tag beside the motor changes to "ε (output)", chip "motor → generator". On "its output" a "?" pulses on the oscilloscope screen and a chip "Next: how do simple AC and DC generators produce different outputs?". Hold about 2 seconds. This is the final frame (see "Final frame").
+
+### 16. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Back emf: the emf induced in a motor's spinning coil (Faraday), opposing the supply voltage (Lenz). It grows with speed (fixed field).
+2. V = ε_back + IR, so I = (V − ε_back) / R. Only the leftover voltage drives the current.
+3. Start or jammed: ε_back = 0, I = V/R (large). Full speed: ε_back close to V, small I. Heavier load: slower, smaller ε_back, larger I and torque.
+4. Energy: VI = I²R + ε_back I (heat + converted to mechanical work). If the emf helped the supply, energy would come from nothing.
+5. Starting resistor in series limits the surge, then is switched out as ε_back builds.
+
+Memory aid (large, on the notes screen): *No spin, no push back.*
+
+## Teaching checks
+
+- **Does it explain causes?** Why the current falls: the turning coil induces an emf that opposes the supply (2, 5). Why it opposes: the alternative creates energy from nothing (3). Why the leftover voltage sets the current: the supply's voltage is shared round the loop (4). Why a load raises the current: slower coil, smaller back emf (6). Why a jam overheats the coil: no back emf, full V/R, no work done, all heat (8). Why starting resistors exist: no back emf at start (9).
+- **Misconceptions addressed:** the resistance changes with speed (1, crossed); back emf is a component (2, crossed); back emf is IR (12, crossed); a slower motor draws less current (6; crossed in 14); all input power becomes shaft work (7); a jammed motor draws no current because it isn't moving (8).
+- **One idea at a time:** observation (1), origin (2), direction from energy (3), circuit equation (4), spin-up (5), load (6), power (7), jam (8), starting (9).
+- **Video makes it easier:** the ammeter falling while the flywheel speeds up (1); the opposing rose and orange arrows on the coil (2); the runaway what-if (3); the voltage-share bar filling with back emf while the current-speed dot slides (4, 5); the two torque arrows matching (6); the splitting power bars (7); the heat bar dwarfing the running heat (8); the rheostat stepping out (9).
+- **Response opportunity:** one prediction (3 s) and two unseen HSC-style tasks with every condition visible, 10 s each; nothing answer-bearing. One crossed mistake each; feedback about 25 s and 28 s.
+- **Avoided double teaching:** v16's motor and torque recalled in a clause; v10's Faraday's law and v11's Lenz's law and energy argument recalled, not re-derived; Year 11 V = IR and power recalled.
+- **Syllabus coverage:** `P6-IQ4-01` effects of back emf (1 to 9); components and torque are v16's. `P6-IQ4-03` conservation of energy applied to DC motors, with Lenz's law (3, 7, 8, A2); magnetic braking in v20.
+- **Out of scope by design:** generators (v18), induction motors (v19), braking (v20), k_e and NBAω, inductance and transients, shaft efficiency.
+
+## Practice questions and model answers
+
+**Attempt 1 (scene 11; original wording, HSC style, 3 marks suggested, not an official marking scheme).** "A small DC motor is connected to a 9.0 V supply. The resistance of its coil is 1.5 Ω. When running at full speed, the motor draws a current of 0.80 A. (a) Calculate the back emf at full speed. (b) Calculate the current in the motor if its shaft is jammed so that it cannot turn."
+Model answer: (a) V = ε_back + IR, so ε_back = V − IR = 9.0 − (0.80)(1.5) = 9.0 − 1.2 = 7.8 V (2 marks). (b) Jammed: the coil does not rotate, so ε_back = 0 and I = V/R = 9.0/1.5 = 6.0 A (1 mark). Classic mistake (crossed): "back emf = IR = 1.2 V" (that is the potential difference across the coil's resistance).
+
+**Attempt 2 (scene 13; original wording, HSC style, 4 marks).** "A DC motor connected to a constant supply voltage is lifting a load at a steady speed. The load is suddenly increased. Explain the changes in the motor's speed, back emf and current, and explain how energy is conserved when the motor reaches its new steady speed."
+Model answer: The heavier load needs more torque than the motor supplies, so the motor slows. Back emf is proportional to speed, so it decreases. Since I = (V − ε_back)/R with V and R unchanged, the current increases; torque is proportional to current, so the torque increases until it matches the load, and the motor runs steadily at a lower speed. The electrical power supplied, VI, is now larger; it equals the heat produced in the coil, I²R (larger, since I is larger), plus the power converted to mechanical work, ε_backI, which supplies the extra work done on the heavier load. Energy is conserved: the extra mechanical work is paid for by the extra electrical energy drawn. Classic mistake (crossed): "the current falls because the motor is slower".
+
+## Numbers used (author note: every value)
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Hook motor (site prediction box, lesson 10 worked example, lesson 17 Activity 1; unchanged) | V = 12 V, R = 2.0 Ω; start 6.0 A; full speed 1.0 A, ε_back = 10 V | 1, 5, 10, key notes |
+| Spin-up | (12 − 0)/2.0 = 6.0 A; (12 − 10)/2.0 = 1.0 A; leftover 2 V | 5 |
+| Load (original, hypothetical half speed) | ε_back = 5.0 V; leftover 7 V; (12 − 5)/2.0 = 3.5 A | 6 |
+| Power ledger (site Activity 1 values) | VI = 12 × 1.0 = 12 W; I²R = 1.0² × 2.0 = 2.0 W; ε_backI = 10 × 1.0 = 10 W; 10/12 = 83% (83.3) | 7 |
+| Jam | I = 12/2.0 = 6.0 A; I²R = 6.0² × 2.0 = 72 W; 72/2.0 = 36 | 8 |
+| Starting resistor (original) | R_start = 4.0 Ω; 12/(2.0 + 4.0) = 2.0 A | 9 |
+| A1 | 9.0 − 0.80 × 1.5 = 7.8 V; 9.0/1.5 = 6.0 A; slip 0.80 × 1.5 = 1.2 V | 11, 12 |
+| A2 | none | 13, 14 |
+
+## Numbers to verify (all values, repeated for Codex)
+
+Checked with Python (6 Nov); Codex to re-check.
+
+- 12/2.0 = 6.0; 12 − 1.0 × 2.0 = 10; (12 − 10)/2.0 = 1.0.
+- Half speed: 10/2 = 5.0; (12 − 5.0)/2.0 = 3.5. Author check: 12 × 3.5 = 42; 3.5² × 2.0 = 24.5; 5.0 × 3.5 = 17.5; 24.5 + 17.5 = 42.
+- 12 × 1.0 = 12; 1.0² × 2.0 = 2.0; 10 × 1.0 = 10; 10/12 = 0.833.
+- 6.0² × 2.0 = 72; 72/2.0 = 36.
+- 12/(2.0 + 4.0) = 2.0.
+- A1: 0.80 × 1.5 = 1.2; 9.0 − 1.2 = 7.8; 9.0/1.5 = 6.0.
+- Site checks: 18/3.0 = 6.0; (18 − 15)/3.0 = 1.0; 18 × 1.0 = 18; 1.0² × 3.0 = 3.0; 18 − 3.0 = 15; 15/18 = 83.3%; 24 − 2.0 × 4.0 = 16; (24 − 8)/4.0 = 4.0; (12 − 10)/0.5 = 4.0; 12/0.5 = 24; 600/0.3 = 2000; 600 − 8 × 0.3 = 597.6; 597.6/600 = 99.6%; 15/2.5 = 6.0; (15 − 12)/2.5 = 1.2; 12 × 1.2 = 14.4; (24 − 20)/4.0 = 1.0; 15 − 1.0 × 3.0 = 12; 15/3.0 = 5.0; 12 − 1.5 × 2.0 = 9.0; 12 − 3.0 × 2.0 = 6.0.
+
+## Memory aid check
+
+- **"No spin, no push back."** Meaning, as said in scene 10: a motor's back emf exists only while its coil turns, so at the start and when stalled nothing but the coil's resistance limits the current (I = V/R). Assumptions checked: a DC motor with a fixed field on a steady supply; "push back" means the back emf opposing the supply (said in scene 2 and shown as the rose arrow); it is not a statement that the current is zero when stopped (the opposite). It helps a new case: A1(b) (jammed, 6.0 A), any start-up or stall question, and v20's braking (no motion, no eddy currents). Introduced after the explanation (2 to 9).
+- **Considered, not used:** "Back emf is the motor talking back" (anthropomorphic; says nothing about speed).
+
+## Narration length estimate
+
+Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,339 characters**, 16 scenes. Characters per scene (1 to 16): 466, 556, 513, 472, 542, 509, 572, 395, 423, 129, 282, 379, 240, 424, 347, 75. At 13.3 characters per second the speech is about 477 s; add about 3 s for the prediction countdown, 2 s for the what-if, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 86 s of holds and countdowns): **about 563 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 10 (open decision 4); scene 6's numbers; scene 3's last sentence.
+
+## Opening frame
+
+v16's final frame exactly (reconciled by root, 6 November): see `phys-y12-m6-v16.md` "Final frame" (power pack plate, coded ammeter with ghost and live needles and no numbers, coded split-ring motor schematic spinning, "Next" chip). Scene 1 shrinks the motor to an inset and fades the pack and ammeter before the bench enters.
+
+## Final frame
+
+The last explained frame (end of scene 15, before the key-notes board): paper background; the hobby motor plate with its flywheel turning steadily, a curved amber outline arrow round the flywheel "turned by an outside drive"; no supply, switch or ammeter; coded leads from the motor's terminals to the oscilloscope plate at the right, its screen showing a flat coded trace with a "?"; a rose tag "ε (output)" beside the motor and a chip "motor → generator"; heading unchanged ("Why does a spinning DC motor draw less current?"); a chip reads "Next: how do simple AC and DC generators produce different outputs?". v18 opens on this frame.
+
+## Scene list and build ids
+
+Lesson key `p-y12-m6-v17` (route phys-y12-m6-v17). Suggested explainer folder `src/explainer/lessons/phys-y12-m6-v17` and build folder `docs/production/claude-pm/lessons/p-y12-m6-v17` (root to confirm).
+
+In order (kebab-case; 16 scene headings, all `### N.`): hook, also-a-generator, why-oppose, circuit, spinning-up, heavier-load, power-ledger, jammed, starting-resistor, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: motor bench (flywheel spin rate, ammeter readout, current dots), back-emf overlay, runaway what-if, equivalent circuit with voltage-share bar, current-speed `lineGraph`, power bars, jam block, rheostat stepper, `AlignedAlgebra`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 camera change (model to bench); 1 to 2 camera change (bench to model); 2 to 3 camera continue (greys into the what-if); 3 to 4 clear change (to the circuit); 4 to 5 camera continue; 5 to 6 camera change (bench with load); 6 to 7 clear change (working layout); 7 to 8 camera change (bench); 8 to 9 clear change (circuit); 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
+
+Holds: hook (3 s countdown), what-if (2 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v17-learning-review.md`, `science_check` = `checks/p-y12-m6-v17-physics-check.md`.
+
+## Assets
+
+Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
+- `public/assets/physics/phys-y11-digital-multimeter-v1.png` (1086 × 1448; used as the ammeter, coded readout over its blank display): 1, 6, 8, 10.
+- `public/assets/physics/phys-y11-low-voltage-supply-v1.png` (1600 × 1000): 1, 8, 15.
+- `public/assets/physics/phys-y11-knife-switch-v1.png` and `phys-y11-knife-switch-blade-v1.png`: 1, 8.
+- `public/assets/physics/phys-y11-bench-pulley-v1.png` (1200 × 1200) and `phys-y11-slotted-masses-v1.png` (1000 × 1000): the load (6, 13 diagram).
+- `public/assets/physics/phys-y11-rheostat-v1.png` (1572 × 1001): the starting resistor (9).
+- `public/assets/physics/phys-y11-oscilloscope-v1.png` (2172 × 724): the handoff (15).
+- v16's coded motor model (assumed): 1, 2, 3.
+
+Need (new plates, Codex):
+1. `y12p-hobby-motor-v1.png`: the motor on the bench (1, 6, 8, 10, 15). Essential (open decision 2).
+2. `y12p-motor-flywheel-v1.png`: the rotating layer that shows speed (1, 6, 8, 10, 15). Essential.
+
+Coded: the motor model overlays, back-emf and current arrows, the what-if, the equivalent circuit and share bar, the graph, power bars, jam block, bypass link, ramp chip, readouts, summary panels, crossed chips, attempt cards and diagram, countdowns, key notes board.
+
+Kit gaps (for the v17 build brief):
+1. **Motor bench.** Plate composite with a flywheel layer rotating at a scene-set rate, a coded ammeter readout that counts between values, current dots whose density follows the current.
+2. **Equivalent circuit with voltage-share bar.** Supply, resistor and an opposing rose cell; a bar split into ε_back and IR that animates with speed; a current-speed `lineGraph` linked to the same speed value.
+3. **Power bars.** An input bar splitting into heat and converted, with an optional friction sliver.
+
+## Codex asset brief (Year 12 Physics M6 v17: hobby motor and flywheel)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/phys-y12-m6-v17.md`, route entry phys-y12-m6-v17. Paint after the learning review, physics check and Codex error check pass and the owner gives the go-ahead. Check first whether v16's design requests a motor plate; if it does, report to root before painting (open decision 2). Save to `public/assets/physics/`. Every plate: transparent PNG with a true alpha channel and **clean edges with no coloured fringe or halo** (check on a black and a white background), ink and watercolour in the house style, matched to `phys-y11-low-voltage-supply-v1.png` and `phys-y11-digital-multimeter-v1.png` in line weight, palette and finish, at least 8 per cent clear margin, no text, labels, letters, numbers, scale bars, brand names, logos, people, hands, faces, backdrop, glow or ground shadow. Never stretch to fit; keep the native aspect ratio.
+
+1. `y12p-hobby-motor-v1.png` (1600 × 1000 px): a small school DC motor of the common "can" type (a silver cylindrical steel can about the size of a film canister, a plastic end cap with two small brass solder tabs as terminals) clamped in a simple low metal cradle on an unseen bench, seen from the front at a slight elevation with the shaft pointing to the right and slightly towards the viewer. The thin steel shaft sticks out about one can-length. **No flywheel or pulley on the shaft** (it is a separate layer). Codex reports, in plate pixels: the shaft tip and the point on the shaft where the flywheel centre sits, the two terminal centres (for coded leads), and the region of the can over which a red "hot windings" overlay can sit.
+2. `y12p-motor-flywheel-v1.png` (1000 × 1000 px): a small brass flywheel disc seen face-on (as if looking along the shaft), with a central hub, four round lightening holes and one painted white index stripe from the hub to the rim so that rotation is visible. Centred exactly on the canvas so it rotates cleanly about the canvas centre. Codex reports the disc's radius in pixels and the scale at which it fits on plate 1's shaft point looking like a disc about 1.5 times the can's diameter (the build shows it face-on as a stylised view; root accepts the slight perspective cheat, or Codex proposes a three-quarter-view disc with an elliptical outline if it reads better).
+
+Report inspection on the paper background and the dark board background at about 400 px wide, and confirm that the flywheel, rotated by 45° steps, keeps its edges clean. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/phys-y12-m6-v17-provenance.json`.
+
+## Codex error-check brief
+
+Error-only check (report errors; do not restyle or rewrite):
+1. Re-check every value under "Numbers to verify", and the values in the narration, screen text, attempts and key notes against the "Numbers used" table.
+2. Confirm the physics of every learner-visible claim: back emf as the induced emf in the spinning coil opposing the supply; the runaway what-if; V = ε_back + IR and I = (V − ε_back)/R; back emf proportional to speed for a fixed field; start, full-speed, loaded and jammed currents; torque proportional to current; the power ledger and the friction note; all input becomes heat when jammed; the starting resistor and controllers.
+3. Confirm the what-if and the spin-up times are described as counterfactual and illustrative respectively.
+4. Confirm the memory aid's assumptions (see "Memory aid check").
+5. Confirm every visual cue phrase quoted after "On" appears verbatim in its scene's narration, in spoken order.
+6. Confirm both attempt cards are original in wording, carry every condition and show nothing answer-bearing.
+7. Confirm the syllabus quotes match the route JSON exactly and are labelled 2017.
+8. Confirm no person, hand, face or body outline is drawn or requested (the shaft is turned by a coded arrow; loads are plates and arrows).
+9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
+10. Confirm the narration character count and per-scene counts by script with the build parser rules.
+11. Log the three site notes in `site-corrections-phys-y12.md`.
+
+## YouTube metadata (draft)
+
+Title: Back EMF: Why a Spinning DC Motor Draws Less Current | HSC Physics Module 6
+
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module6/lesson17.sa.html
+
+Switch on a 12 V motor and it draws 6 A, but once it's spinning it draws just 1 A, with the same coil and the same resistance. See why the spinning coil acts as a generator, why its back emf must oppose the supply, how I = (V − ε)/R sets the current at start, full speed, under load and when jammed, where the energy goes, and why big motors need starting resistors. Two exam-style questions at the end.
+
+Year 12 Physics (2017 syllabus), Module 6: Electromagnetism.
+Syllabus content (NSW Physics Stage 6, 2017):
+"investigate the operation of a simple DC motor to analyse: the functions of its components; production of a torque τ = nIA⊥B = nIAB sin θ; effects of back emf"
+"relate Lenz’s Law to the law of conservation of energy and apply the law of conservation of energy to: DC motors and magnetic braking"
+Official syllabus: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx
+
+Previous: how a split-ring DC motor keeps turning. Next: how simple AC and DC generators produce different outputs.
+
+#HSCPhysics #Physics #BackEMF #HSCScience
+
+## Review notes
+
+- Revision 1 has had no independent review. Next: student learning review (trace from v16; check that "the coil is also a generator" lands before the equation; that the voltage-share bar makes I = (V − ε_back)/R feel obvious; that the load chain is followed at speed; that the attempt cards give nothing away), then the physics check and the Codex error check.
+- The ammeter and flywheel, the opposing arrows, the share bar with the moving graph dot and the power bars carry the explanation; judge them at playback speed in the voiced preview.
