@@ -1,18 +1,23 @@
 # Published-video quality fix plan (6 Nov 2026)
 
-Owner request (6 Nov): list every rendered or published video that is below the Year 12 Module 5 standard, then fix and replace it. Grades come from 16-frame contact sheets (`work/quality-audit/sheets/`) against `maths-visual-standard.md`. Stills only: motion and pacing still need a playback check. Batch details: `work/quality-audit/grades-batch1..3.md`.
+Owner request (6 Nov): list every rendered or published video that is below the Year 12 Module 5 standard, then fix and replace it. Grades come from 16-frame contact sheets against `../maths-visual-standard.md` and `rubric.md`. Stills only: motion and pacing still need a playback check. Batch details: `grades-batch1.md` to `grades-batch3.md` in this folder.
 
-Totals: 152 videos. A 43, B 89, C 15.
+Totals: 152 videos. A 43, B 89, C 20 (of which 6 are render defects).
 
 Process: Claude fixes the scene code on the existing narration and timing, and checks a 16-still sheet against the references. Codex re-renders, scans for defects, publishes v2 with the same metadata, swaps the playlist position and unlists v1 (never deletes it).
 
-Order: wave 1, render defects (briefs 196, 199); wave 2, C grades, two videos per Claude pass; wave 3, B grades in batches of about 10, grouped by problem.
+Order: wave 1, render defects (briefs 196, 199); wave 2, other C grades, two videos per Claude pass; wave 3, B grades in batches of about 10, grouped by problem.
 
-## C: rebuild scenes (15)
+## C: rebuild scenes (20)
 
 | id | status | YouTube | frames | fix |
 |---|---|---|---|---|
 | bio-m7-b06 | render defect, brief 196 | https://youtu.be/iNiVBNVSRvs | 3, 5, 7, 9, 10 (broken-image placeholders rendered, 7 full-frame); 13 (empty exam card) | Supply or re-link the missing plates and re-render; check every asset path before export. |
+| bio-m7-b10 | render defect, brief 196 | https://youtu.be/nwBfq4XGI0w | 8 to 16 (titles, labels and question text in a Times-like serif fallback font); 10 (broken-image icons in both table rows); 8 (label overflows its chip); 9, 11, 13 (sparse or empty) | Fix the font load and the two missing table images, then re-render; run the pre-render asset guard. Fill the empty exam card in 11 and 13 while re-rendering. |
+| chem-m6-g03 | render defect, brief 199 | https://youtu.be/Rl7RUILbyHY | 11 to 15 (headings, question text, checks and summary table in a Times-like serif fallback font); 11 to 14 (broken-image icons in the question card, and a large broken flask image in 14) | Fix the font load and the missing tablet and flask images, then re-render; run the pre-render asset guard. |
+| chem-m7-c10 | render defect, brief 199 | https://youtu.be/_y2Ow9e-0sI | 13 to 15 ("Last one" heading and "HSC-style question" chips in a serif fallback font; the hand font failed) | Fix the hand-font load and re-render; no design change needed. 9 (one flow-chart pair in an empty frame) and 11 (one line) can be filled while re-rendering. |
+| chem-m7-p05 | render defect, brief 199 | https://youtu.be/WjCfarquFJ8 | 5 to 15 (all headings and question text in a serif fallback font); 9, 10, 11, 13, 14 (broken-image icons, full-height in 11 and 13) | Fix the font load and re-link the separating-funnel, glassware and ester plates, then re-render; run the pre-render asset guard. |
+| chem-m8-c01 | render defect, brief 199 | https://youtu.be/ahwV_6MQqHU | 8 (broken-image icons for the burette and flask); 9 to 15 (headings, givens, question text and "Pause here to answer" in a serif fallback font) | Fix the font load and the missing titration plate, then re-render; run the pre-render asset guard. |
 | bio-m5-g03 | queued | https://youtu.be/OtPe_zLuGGk | 3, 4 (near-empty); 7 (bare checklist); 8 (empty pedigree); 11, 13, 14, 15 (sparse text-only) | Rebuild the middle scenes around the dot-array and pedigree visuals at full size; stage each calculation on the g01 layout. |
 | bio-m6-b04 | fixed, brief 198 | https://youtu.be/ldAXVZXHFuM | 2, 3 (small strip in empty frame); 7 (small coded circles); 10 (tiny exam diagram); 14 (empty table); 15 (sparse) | Rebuild with painted chromosome plates at readable size; enlarge exam diagrams; fill the compare table as it is narrated. |
 | bio-m6-b05 | fixed, brief 198 | https://youtu.be/fyvYjlBBRmk | 1 to 4 (small diagrams, empty space); 5 to 8 (bare DNA line); 9 (near-blank); 11, 13, 15 (empty cards) | Rebuild around a large gene and promoter diagram with the skin and fly plates; fill the exam cards. |
