@@ -46,6 +46,7 @@ Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course w
 3c. **220:** voice the remaining Module 8 lessons (ElevenLabs, within the cap), then fetch measured spectra for the spectroscopy lessons.
 3d. **223, 226, 228, 229, 230, 231 (and later build-render briefs):** render and publish new Module 8 builds as Claude grades them A. These are new videos, so they come before the C-grade re-renders.
 3e. **235:** review, plates and re-voice for the Maths d02 to d14 redesigns. Maths is the owner's top course; run this before the C-grade re-renders. The review and plates are light work and may run alongside a render, but the voicing runs alone.
+3e2. **238:** review, plates and voicing for the Maths d15 to d19 and i01 to i14 redesigns (19 designs). Run it straight after 235. Maths is the owner's top course.
 3f. **236:** voice Year 11 Chemistry waves 1 to 6 (Google voice), one wave at a time, handing in after each wave. Interleave with renders: never run voicing at the same time as a render. Waves 1 and 2 come before the C-grade re-renders.
 3g. **237:** error check, plates and voicing for the repaired chem-y11-m1-v18 to v27 (wave 7). Run it after 236 wave 2.
 4. **199:** re-render the four Chemistry videos with render defects, check chem-m7-p06, and resolve the c10/c05 link record. g03 was already found in 196; reuse that work.
