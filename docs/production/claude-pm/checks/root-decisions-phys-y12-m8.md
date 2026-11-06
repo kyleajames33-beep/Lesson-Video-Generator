@@ -42,3 +42,11 @@ Claude (root), 6 November 2026. Module 5 to 7 decisions still apply where releva
 22. **v12 ring radii** come from a model tube (13.5 cm to the screen), tagged "model tube". Accepted.
 23. **v18 power station.** If no clean painted power-station plate exists at build time, scene 12 drops it and keeps the text contrast. No new plate request.
 24. **Speech changed** in all of v12 to v22 except v17. Final frames changed only in v15 (tag and balance label) and in v16 and v18 (fission arrow up and to the left); the next openings match.
+
+## After brief 192 repairs, v01 to v11 (7 November 2026)
+
+25. **CRT (v06, v07).** Accepted: the delivered Maltese-cross tube shows in v06's final frame and v07 scenes 1 to 3. Thomson's tube in v07 scenes 3 to 6 follows the Module 6 CRT outcome: the painted `y12p-crt-tube-v1` if brief 232's single retry passes, otherwise the coded-outline CRT (the accepted fallback, not a missing plate).
+26. **v08 gold foil.** Accepted: thin gold uses Rutherford 1911's "about 1 in 20 000 near 90°", and the A1 card says "a very small fraction" with no number. The "1 in 8000" (thick platinum) figure is gone.
+27. **v03 absorber.** Accepted: sodium vapour (589 nm, absorbing from its lowest level) replaces cool hydrogen, which matches m7-v03.
+28. **Plate edges.** The molecular cloud (v05), gold ring, planetary nebula and supernova remnant (v06) show coloured low-alpha edge pixels on black. The error-check brief has Codex inspect them on cream and report; Codex repaints only those that show a visible fringe there.
+29. **Joins.** v01 opens on m7-v16's Revision 2 final frame and fades the "head-on, equal energies" tag in its first beat. Every join from v01 to v12 matches.
