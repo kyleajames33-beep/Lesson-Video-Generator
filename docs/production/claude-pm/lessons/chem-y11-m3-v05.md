@@ -1,8 +1,8 @@
 # Year 11 Chemistry M3 V05: Acid-base and acid-carbonate reactions. How can we predict acid-base and acid-carbonate products? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,578 characters, 19 scenes, about 503 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,621 characters, 19 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: fifth Module 3 video of Year 11 Chemistry (2017 syllabus), playlist entry 59, between `chem-y11-m3-v04` and `chem-y11-m3-v06` (cultural hold; not designed). Templates: `phys-y11-fa1-v01.md` (structure), `bio-y11-fa1-v05.md` (plates); series conventions from `chem-y11-m3-v02.md` to `v04.md` (same designer: charge tiles, atom tallies, ion lens, swap-partner strips); the Year 12 design `chem-m6-c02.md` (acid reaction products and salt names) supplies the Module 6 bank's naming line, which this video shares. No starter pack exists; the pack work is done here. Route entry: `chem-y11-m3-v05` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Compare the two product patterns and test the gas where appropriate, with balanced equations. Stop before acid-base equilibrium."; next handoff: "How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?"; practical: "Teacher-approved neutralisation and carbonate reactions"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson05.sa.html` (SHA256 `841ad941bfdbd76871134c3e936ced7b63449aaca6727da9ec6660a1786d5976`, recomputed, matches the route), sections `l05-acid-base-neutralisation-reactions-title`, `l05-acid-carbonate-acid-hydrogen-carbonate-react-title` and `l05-worked-examples-title`, plus the hook, key terms, antacid card, misconceptions, drill and answers. Used: the Arrhenius definitions ("In NSW Year 11 Chemistry, use this definition"); "a metal oxide/carbonate that reacts with acid"; "Alkalis are soluble bases"; "The H⁺ from the acid combines with the OH⁻ from the base to form water; the remaining ions form the salt"; the salt definition (cation from the base, anion from the acid); the neutralisation table rows HCl + NaOH and HCl + MgO; the net ionic H⁺(aq) + OH⁻(aq) → H₂O(l); the H₂O₂ trap; the observation "an indicator ... changes colour as the acid is consumed (never smell the acid or the mixture)" and "warms slightly"; acid + carbonate → salt + water + CO₂ (SWC) and both examples (CaCO₃, NaHCO₃); the CO against CO₂ trap (with a corrected reason, site note 1); worked example 1 (H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O); the antacid comparison by active ingredient (Mg(OH)₂ against CaCO₃, CO₂ and belching); drill 1 (2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O, the CaNO₃ error); Q2 (excess HCl with K₂CO₃: 2HCl + K₂CO₃ → 2KCl + H₂O + CO₂). Not used: brand names and the patient scenario (site note 2), ΔH ≈ −57 kJ mol⁻¹ (Module 4), H₃O⁺ (Year 12), "neutralisation always produces pH 7" and the stomach pH discussion (route: stop before acid-base equilibrium; pH is Year 12), the antacid mole calculation.
 
@@ -31,12 +31,12 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Definitions (site, Year 11).** Acid and alkali in the Arrhenius form the site prescribes; base as "reacts with an acid and uses up its hydrogen ions" (site key term "a metal oxide/carbonate that reacts with acid"), so oxides and carbonates are bases without an OH⁻ (site misconception 1). Brønsted-Lowry is not named (Year 12 Module 6).
 - **Neutralisation shown with ions (cause before rule).** The ion lens from m3-v03: H⁺ and OH⁻ pair into water; Na⁺ and Cl⁻ stay as spectators and form the salt if the water is evaporated (tag). The net ionic equation H⁺ + OH⁻ → H₂O links back to m3-v03's method.
 - **Observation (route practical: "Teacher-approved neutralisation and carbonate reactions").** Neutralisation: phenolphthalein in dilute sodium hydroxide, dilute acid added in portions, the pink vanishes and the mixture warms slightly (site). Carbonate: marble chips or sodium carbonate with dilute hydrochloric acid, the gas led into limewater. Controls spoken once each: safety glasses and dilute solutions (scene 4); dilute acid, small amounts, glasses (scene 10). The site's "never smell the acid or the mixture" is spoken in scene 4 as "never sniff it" (site wording, no invented rule).
-- **Salt naming (Module 6 bank line, shared with Year 12 C02).** "The metal names the first word; the acid names the second." HCl → chloride, H₂SO₄ → sulfate, HNO₃ → nitrate. Charges then fix the formula (m3-v02's memory line). The 3 s prediction (scene 6) asks for K₂SO₄'s formula before balancing.
+- **Salt naming (Module 6 bank line, shared with Year 12 C02; Revision 2 scope).** "The metal names the first word; the acid names the second." Scoped on screen to "the metal bases here"; a salt is defined generally as an ionic compound of a positive ion (often a metal ion, or ammonium) and a negative ion, and oxides are "basic oxides such as MgO", not "all metal oxides" (brief 182 finding 1). HCl → chloride, H₂SO₄ → sulfate, HNO₃ → nitrate. Charges then fix the formula (m3-v02's memory line). The 3 s prediction (scene 6) asks for K₂SO₄'s formula before balancing.
 - **Why CO₂ and never CO (site trap, corrected reason).** The carbonate ion's carbon leaves with two of its three oxygens; the third joins two H⁺ as water; nothing removes oxygen from that carbon (no electron transfer), so the gas is carbon dioxide. The site's "cannot be further oxidised" reason is not used (site note 1).
 - **Limewater explained (callback to m3-v03).** Ca(OH)₂ + CO₂ → CaCO₃(s) + H₂O: the milky cloud is insoluble calcium carbonate, a precipitate the student can now predict. One line on screen; spoken in plain words.
 - **Antacids (site card, active ingredients only).** Magnesium hydroxide against calcium carbonate with hydrochloric acid; only the carbonate makes carbon dioxide, "which is why only one kind makes you burp" (site: "That extra CO₂ is why a carbonate antacid can make you belch"). Grey tag "chemistry, not medical advice" (site wording). No brands, no patient.
 - **Memory aid (see "Memory aid check"):** "Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and carbon dioxide." (Module 6 bank, shortened; shared with Year 12 C02's first two lines.)
-- **Attempts (original wording, HSC style).** A1 (site drill 1's reaction, new wording): nitric acid with calcium hydroxide: 2HNO₃(aq) + Ca(OH)₂(aq) → Ca(NO₃)₂(aq) + 2H₂O(l); crossed "CaNO₃". A2 (site Q2's reaction, new wording): excess hydrochloric acid with potassium carbonate solution, equation and gas test: 2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g); limewater turns milky; crossed "2HCl + K₂CO₃ → 2KCl + H₂CO₃" (carbon dioxide left out).
+- **Attempts (original wording, HSC style).** A1 (site drill 1's reaction, new wording): nitric acid with calcium hydroxide: 2HNO₃(aq) + Ca(OH)₂(aq) → Ca(NO₃)₂(aq) + 2H₂O(l); crossed "CaNO₃". A2 (site Q2's reaction, new wording): excess hydrochloric acid with potassium carbonate solution, equation and gas test: 2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g); limewater turns milky; crossed "2HCl + K₂CO₃ → 2KCl + H₂O" (carbon dioxide left out; Revision 2 aligns this with scene 17, brief 182 finding 5).
 - **Mistake scene:** none separate. "Bases must contain OH⁻" (2, oxides and carbonates listed); "H₂O₂ as the product" (3, one crossed chip, site trap); "CaNO₃" (A1 crossed); "CO instead of CO₂" (12, crossed); "only salt and water from a carbonate" (A2 crossed, site misconception 3).
 - **Handoff (route next: `chem-y11-m3-v06`, cultural hold).** v06 is not designed (cultural hold for the owner). Scene 18 closes this video's question, gathers the six reaction types as a toolkit, and asks v06's route question in neutral words, with no images, claims or content about the practices. Final frame: see "Opening frame and final frame". Root reconciles it when v06 is designed; `chem-y11-m3-v07` does not depend on it.
 - **Site notes (read 5 November; for root to log if accepted):**
@@ -50,7 +50,10 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **ion lens** (scenes 2, 3, 8, 9, 11: from m3-v03; H⁺ small pale pink, OH⁻ violet, O²⁻ violet, CO₃²⁻ violet triangle cluster; H⁺ ions dock onto the base's ion; water molecules form as small blue bent shapes; CO₂ forms as a small linear shape and rises out as a bubble; spectators get grey tags); **salt namer** (scenes 5, 7, A1: two slots "first word: from the base's metal" and "second word: from the acid", the acid tile turning into its anion name; charge tiles then build the formula); **atom tiles and tally** (scenes 7 to 11, A1, A2: from m3-v02); **delivery tube** (scene 10: a coded tube joins `m8-carbonate-tube-fizz-v1.png` to the inlet of `m6-limewater-milky-v1.png`, with bubbles travelling along it); **pattern compare** (scene 12: two columns "hydroxide or oxide" and "carbonate or hydrogen carbonate" with product chips); `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key (continues m3-v03):** H⁺ pale pink; other cations amber; anions violet; water pale blue; carbon dioxide grey bubbles; spectators grey when tagged; neutralisation teal; carbonate pattern amber; crossed items red strike.
-- **Board layout (constant):** heading top left; plates in a column on the left third; ion lens or equation lines in the centre; the pattern compare at the right from scene 12; earlier strips small at the top right.
+- **Board layout (Revision 2):** heading top left; earlier strips small at the top right. Revision 1 kept plates in a column on the left third and the lens or lines in the centre. Revision 2 stages, each under about 35 s: the three beakers filling the frame (1); the large acid and alkali lenses (2); the merged lens with the two lines (3); the phenolphthalein drip stage (4); the salt namer at full width (5, 6, 7); the MgO beaker and lens (8); the marble-chip beaker and lens (9); the delivery tube to the limewater (10); the baking-soda plates (11); the pattern compare at full width (12); the antacid comparison (13).
+- **Colour roles (Revision 2, fixed for the whole video):** H⁺ pale pink; OH⁻ and other anions violet; metal ions amber; water pale blue; CO₂ grey; hydroxide/oxide column teal; carbonate column amber; coefficients teal; framed answers in a dark-ink box with a green tick; crossed mistakes red strike plus a red hand tag; hand-font teacher tags take the colour of the ion they mark; scope and safety tags grey.
+- **Type sizes (Revision 2, 1080p):** the current equation line at least 44 px (48 px); live readouts about 52 px; namer slots 40 px; supporting lines 30 to 36 px; hand-font tags 34 to 40 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
+- **Simulation (Revision 2): the acid drip (scene 4).** A live control on the core idea (each H⁺ uses up one OH⁻ to make water): as coded acid drops fall into the pink phenolphthalein flask, three readouts update live (52 px): "OH⁻ left" (violet, 10 → 0), "H₂O made" (pale blue, 0 → 10) and the thermometer "21.0 → 21.6 °C" (illustrative); the lens shows each arriving H⁺ docking on an OH⁻; at "OH⁻ left 0" the flask swaps to colourless.
 
 Author notes (not learner copy):
 (a) Year 11 definitions: the site prescribes Arrhenius for Year 11; "base: reacts with an acid and uses up its hydrogen ions" is the site's wider key-term sense (oxides and carbonates). Brønsted-Lowry is Year 12 Module 6.
@@ -78,27 +81,27 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook: one fizzes, one doesn't
 > Here's where we left off. Magnesium oxide dissolves in dilute hydrochloric acid without a single bubble. Marble chips, calcium carbonate, fizz in the same acid. Both use up the acid, so both are reacting. But only one makes a **gas**. To predict what forms, start with what an acid actually brings to the **reaction**.
 
-Visual: opens on m3-v04's final frame; the "Next" chip fades. On "gas" the marble-chips beaker pulses and a pen ring circles its bubbles (tag "gas"); the MgO beaker gets a tag "no gas". On "reaction" the HCl tag on the middle beaker grows into the heading "What does an acid bring?".
+Visual: opens on m3-v04's final frame; the "Next" chip fades; the three beaker plates grow to fill the frame at uniform scale. On "gas" the marble-chips beaker pulses and a pen ring circles its bubbles (amber hand tag "gas"); the MgO beaker gets a teal hand tag "no gas". On "reaction" the HCl tag on the middle beaker grows into the heading "What does an acid bring?".
 
 ### 2. acids, bases and alkalis
-> An acid is a substance that releases hydrogen ions, H plus, when it dissolves in water. Hydrochloric acid gives hydrogen ions and chloride ions. A base is a substance that reacts with an acid and uses up those hydrogen ions. Metal hydroxides, metal oxides and carbonates are all bases. A base that dissolves in water, like sodium hydroxide, is called an **alkali**, and it gives hydroxide ions, O H minus.
+> An acid is a substance that releases hydrogen ions, H plus, when it dissolves in water. Hydrochloric acid gives hydrogen ions and chloride ions. A base is a substance that reacts with an acid and uses up those hydrogen ions. Metal hydroxides, oxides like magnesium oxide, and carbonates are all bases. A base that dissolves in water, like sodium hydroxide, is called an **alkali**, and it gives hydroxide ions, O H minus.
 
-Visual: ion lens over the acid beaker: pale pink H⁺ and violet Cl⁻ in water shells; gloss chip "acid: releases H⁺ in water". Gloss chip "base: reacts with an acid and uses up its H⁺"; three base tiles write under it: "metal hydroxides (NaOH, Mg(OH)₂)", "metal oxides (MgO)", "carbonates (CaCO₃)"; a chip "bases must contain OH⁻" fades in and is crossed. On "alkali" gloss chip "alkali: a base that dissolves in water, giving OH⁻" and a second lens shows Na⁺ and violet OH⁻.
+Visual: stage change: a large ion lens over the acid beaker: pale pink H⁺ and violet Cl⁻ in water shells; gloss chip "acid: releases H⁺ in water" (pink hand tag "H⁺"). Gloss chip "base: reacts with an acid and uses up its H⁺"; three base tiles write under it: "metal hydroxides (NaOH, Mg(OH)₂)", "basic oxides (MgO)", "carbonates (CaCO₃)"; a chip "bases must contain OH⁻" fades in and is crossed in red (red hand tag "MgO and CaCO₃ don't"). On "alkali" gloss chip "alkali: a base that dissolves in water, giving OH⁻" and a second large lens shows Na⁺ and violet OH⁻.
 
 ### 3. neutralisation: hydrogen ion meets hydroxide ion
-> Mix hydrochloric acid with sodium hydroxide solution. Each hydrogen ion meets a hydroxide ion, and they join to make a water **molecule**. That's neutralisation. The ions left over, sodium and chloride, make a salt, which in chemistry means any ionic compound made from the base's metal ion and the acid's negative ion. So acid plus base gives salt plus water. The net ionic equation is just H plus plus O H minus gives water, and sodium and chloride are **spectators**.
+> Mix hydrochloric acid with sodium hydroxide solution. Each hydrogen ion meets a hydroxide ion, and they join to make a water **molecule**. That's neutralisation. The ions left over, sodium and chloride, make a salt, which in chemistry means an ionic compound of a positive ion, here sodium from the base, and a negative ion from the acid. So acid plus base gives salt plus water. The net ionic equation is just H plus plus O H minus gives water, and sodium and chloride are **spectators**.
 
-Visual: the two lenses merge; on "molecule" each H⁺ docks onto an OH⁻ and a pale blue water shape forms. Gloss chip "neutralisation: acid + base → salt + water". Gloss chip "salt: ionic compound from the base's metal ion and the acid's negative ion" (tag "NaCl here; table salt is one salt of many"). Lines: "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)" (molecular) and "H⁺(aq) + OH⁻(aq) → H₂O(l)" (net ionic). On "spectators" Na⁺ and Cl⁻ get grey tags (m3-v03 style). A chip "H₂O₂" fades in and is crossed (tag "one H⁺ + one OH⁻ = H₂O").
+Visual: the two lenses merge at full frame; on "molecule" each H⁺ docks onto an OH⁻ and a pale blue water shape forms (pale blue hand tag "H⁺ + OH⁻ → water"). Gloss chip "neutralisation: acid + base → salt + water". Gloss chip "salt: ionic compound of a positive ion (often a metal ion, or ammonium) and a negative ion" (tag "NaCl here; table salt is one salt of many"). Lines (48 px): "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)" (molecular) and "H⁺(aq) + OH⁻(aq) → H₂O(l)" (net ionic), framed. On "spectators" Na⁺ and Cl⁻ get grey tags (m3-v03 style). A chip "H₂O₂" fades in and is crossed in red (red hand tag "one H⁺ + one OH⁻ = H₂O").
 
 ### 4. watching it happen
 > You can watch it happen. Add a few drops of phenolphthalein, an indicator, to dilute sodium hydroxide, and it turns pink. Add dilute acid a little at a time, and the mixture warms slightly. When the hydroxide ions are used up, the pink **vanishes**. Wear safety glasses, use dilute solutions, and never sniff the mixture.
 
-Visual: `m6-clip-phenolphthalein-pink-v1.png` with tag "dilute NaOH + phenolphthalein"; gloss chip "indicator: a dye whose colour changes between acid and base". Coded acid drops fall in from above; a small thermometer glyph rises a little (tag "warms slightly"); the lens beside it shows OH⁻ dots disappearing as H⁺ arrive. On "vanishes" cross-fade to `m6-clip-phenolphthalein-colourless-v1.png`. Safety strip: "safety glasses; dilute solutions; never sniff" with `m5x-safety-glasses-v1.png` small.
+Visual: stage change to the drip stage: `m6-clip-phenolphthalein-pink-v1.png` large at the left with tag "dilute NaOH + phenolphthalein"; gloss chip "indicator: a dye whose colour changes between acid and base". The acid drip runs (simulation): coded acid drops fall in from above; the readouts "OH⁻ left" (10 → 0), "H₂O made" (0 → 10) and the thermometer (21.0 → 21.6 °C, tag "illustrative") update live (52 px); the lens beside it shows each H⁺ docking on an OH⁻ (violet hand tag "OH⁻ running out"). On "vanishes" "OH⁻ left" reaches 0 and the flask cross-fades to `m6-clip-phenolphthalein-colourless-v1.png` (green tick). Safety strip: "safety glasses; dilute solutions; never sniff" with `m5x-safety-glasses-v1.png` small.
 
 ### 5. naming the salt
 > To predict the salt, the metal names the first word, and the acid names the second. Hydrochloric acid gives chlorides, sulfuric acid gives sulfates, and nitric acid gives **nitrates**. Then the charges fix the formula, just like in synthesis.
 
-Visual: the salt namer: slot 1 "metal from the base", slot 2 "from the acid". Three acid tiles flip on their words: "HCl → chloride (Cl⁻)", "H₂SO₄ → sulfate (SO₄²⁻)", and on "nitrates" "HNO₃ → nitrate (NO₃⁻)". m3-v02's line "Charges fix the formula" ghosts in small under the slots.
+Visual: stage change: the salt namer at full width (40 px): slot 1 "metal from the base", slot 2 "from the acid", with a grey tag "for the metal bases here". Three acid tiles flip on their words: "HCl → chloride (Cl⁻)", "H₂SO₄ → sulfate (SO₄²⁻)", and on "nitrates" "HNO₃ → nitrate (NO₃⁻)" (violet hand tags "-ide", "-ate"). m3-v02's line "Charges fix the formula" ghosts in small under the slots.
 
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Sulfuric acid reacts with potassium hydroxide. What's the formula of the **salt**?
@@ -108,37 +111,37 @@ Visual: line "H₂SO₄(aq) + KOH(aq) → ? + H₂O(l)" with the salt namer's sl
 ### 7. potassium sulfate, balanced
 > Potassium sulfate. Potassium is plus one and sulfate is minus two, so it takes two potassiums: K two S O four. Now balance. Two potassiums need two potassium hydroxides. That brings two hydroxide ions, and sulfuric acid has two hydrogens to give, so they make two **waters**. Sulfuric acid plus two potassium hydroxide gives potassium sulfate plus two water.
 
-Visual: slots fill "potassium sulfate"; charge tiles two "K⁺" with one "SO₄²⁻", tally "2(+1) + (−2) = 0", "K₂SO₄". Line with atom tiles; teal "2" before KOH; the lens shows two H⁺ docking on two OH⁻; on "waters" teal "2" before H₂O; tally "4 H, 2 K, 1 S, 6 O" green: "H₂SO₄(aq) + 2KOH(aq) → K₂SO₄(aq) + 2H₂O(l)".
+Visual: slots fill "potassium sulfate"; charge tiles two "K⁺" with one "SO₄²⁻", tally "2(+1) + (−2) = 0", "K₂SO₄". Line with atom tiles; teal "2" before KOH; the lens shows two H⁺ docking on two OH⁻; on "waters" teal "2" before H₂O; tally "4 H, 2 K, 1 S, 6 O" green: "H₂SO₄(aq) + 2KOH(aq) → K₂SO₄(aq) + 2H₂O(l)", framed in a dark-ink box with a green tick (teal hand tag "2 H⁺, 2 OH⁻, 2 waters").
 
 ### 8. metal oxides: two hydrogen ions per oxide
 > A metal oxide works the same way, but it brings oxide ions instead of hydroxide ions. Each oxide ion takes two hydrogen ions and becomes water. So magnesium oxide plus two hydrochloric acid gives magnesium chloride plus **water**. Salt and water again, and no gas, which is why it dissolved without a bubble.
 
-Visual: the opening's MgO beaker returns with the lens: amber Mg²⁺ and violet O²⁻ in the solid; two H⁺ dock on each O²⁻ and a water shape forms; Mg²⁺ drifts off into solution. On "magnesium chloride plus water" line "MgO(s) + 2HCl(aq) → MgCl₂(aq) + H₂O(l)" with tally green "1 Mg, 1 O, 2 H, 2 Cl". The tag "dissolves, no fizz" from the opening ticks.
+Visual: stage change: the opening's MgO beaker returns large with the lens: amber Mg²⁺ and violet O²⁻ in the solid; two H⁺ dock on each O²⁻ and a water shape forms; Mg²⁺ drifts off into solution. On "magnesium chloride plus water" line "MgO(s) + 2HCl(aq) → MgCl₂(aq) + H₂O(l)" with tally green "1 Mg, 1 O, 2 H, 2 Cl", framed. The tag "dissolves, no fizz" from the opening ticks (teal hand tag "salt + water").
 
 ### 9. carbonates: water and carbon dioxide
 > Now the carbonate. A carbonate ion, C O three two minus, also takes two hydrogen ions. But that makes water and carbon dioxide, and carbon dioxide is a gas, so it bubbles **out**. That's the fizz. So acid plus carbonate gives three products: a salt, water and carbon dioxide. Two hydrochloric acid plus calcium carbonate gives calcium chloride, water and carbon **dioxide**.
 
-Visual: the marble-chips beaker returns with the lens: a violet CO₃²⁻ cluster (one C, three O); two H⁺ dock; on "out" the cluster splits into a water shape and a grey linear CO₂ that rises as a bubble and leaves the surface. Net line "2H⁺(aq) + CO₃²⁻(aq) → H₂O(l) + CO₂(g)" small. On "calcium chloride, water and carbon dioxide" the full line "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)" with tally green "1 Ca, 1 C, 3 O, 2 H, 2 Cl"; three product chips "salt", "water", "carbon dioxide".
+Visual: stage change: the marble-chips beaker returns large with the lens at a chip's surface: a violet CO₃²⁻ cluster (one C, three O) in the solid; two H⁺ dock; on "out" the cluster splits into a water shape and a grey linear CO₂ that rises as a bubble and leaves the surface, while Ca²⁺ drifts into the solution (grey hand tag "the fizz"). Net line (40 px) "CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)" (grey tag "solid carbonate: never split"). On "calcium chloride, water and carbon dioxide" the full line "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)" with tally green "1 Ca, 1 C, 3 O, 2 H, 2 Cl", framed in a dark-ink box with a green tick; three product chips "salt", "water", "carbon dioxide".
 
 ### 10. testing the gas
 > To show the gas is carbon dioxide, lead it through a delivery tube into limewater. It turns milky. And now you can explain why. Carbon dioxide reacts with the calcium hydroxide in limewater to make calcium carbonate, which is insoluble, so it clouds the **water**. Use dilute acid and small amounts, and keep your safety glasses on.
 
-Visual: `m8-carbonate-tube-fizz-v1.png` (tag "carbonate + dilute HCl") joined by the coded delivery tube to `m6-limewater-clear-v1.png`; bubbles travel along the tube; cross-fade to `m6-limewater-milky-v1.png`. A line writes: "Ca(OH)₂(aq) + CO₂(g) → CaCO₃(s) + H₂O(l)" with the rules-card row "carbonates: mostly insoluble" flashing small (tag "a precipitate: m3-v03"). On "clouds the water" the cloud thickens. Safety strip: "dilute acid, small amounts, safety glasses".
+Visual: stage change: `m8-carbonate-tube-fizz-v1.png` large (tag "carbonate + dilute HCl") joined by the coded delivery tube to `m6-limewater-clear-v1.png`; bubbles travel along the tube; cross-fade to `m6-limewater-milky-v1.png`. A line writes: "Ca(OH)₂(aq) + CO₂(g) → CaCO₃(s) + H₂O(l)" with the rules-card row "carbonates: mostly insoluble" flashing small (tag "a precipitate: m3-v03"). On "clouds the water" the cloud thickens (amber hand tag "CaCO₃ cloud"). Safety strip: "dilute acid, small amounts, safety glasses".
 
 ### 11. hydrogen carbonates
 > Hydrogen carbonates, like baking soda, sodium hydrogen carbonate, do the same thing. The hydrogen carbonate ion already carries one hydrogen, so it needs only one more. Hydrochloric acid plus sodium hydrogen carbonate gives sodium chloride, water and carbon dioxide, all one to **one**.
 
-Visual: `m6-clip-baking-soda-vinegar-before-v1.png` cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png` (tag "baking soda in dilute acid"). Lens: an HCO₃⁻ cluster with one H already on it; one H⁺ docks; water and CO₂ form. Gloss chip "hydrogen carbonate: HCO₃⁻, a carbonate that already carries one H". On "all one to one" line "NaHCO₃(s) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)" with green tally.
+Visual: stage change: `m6-clip-baking-soda-vinegar-before-v1.png` large cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png` (tag "baking soda in dilute acid"). Lens: an HCO₃⁻ cluster with one H already on it; one H⁺ docks; water and CO₂ form. Gloss chip "hydrogen carbonate: HCO₃⁻, a carbonate that already carries one H". On "all one to one" line "NaHCO₃(s) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)" with green tally, framed (amber hand tag "1 : 1"); grey tag "this plate uses vinegar: same pattern".
 
 ### 12. the base decides
-> So the base decides the products. A hydroxide or oxide gives a salt and water. A carbonate or hydrogen carbonate gives a salt, water and carbon dioxide. A common slip is to write carbon monoxide. But the carbon leaves the carbonate with two of its oxygens, and the third becomes water. Nothing takes oxygen away from that carbon, so it's always carbon **dioxide**.
+> So the base decides the products. A hydroxide or oxide gives a salt and water. A carbonate or hydrogen carbonate gives a salt, water and carbon dioxide. A common slip is to write carbon monoxide. But the carbon leaves the carbonate with two of its oxygens, and the third becomes water. Only that one oxygen is taken, so it's always carbon **dioxide**.
 
-Visual: the pattern compare: two columns, "hydroxide or oxide" with chips "salt + water" (teal), "carbonate or hydrogen carbonate" with "salt + water + CO₂" (amber). On "carbon monoxide" a chip "... + CO" fades in; a CO₃ tile set splits: C with two O tiles to "CO₂", the third O with two H⁺ to "H₂O"; on "always carbon dioxide" the CO chip is crossed (tag "carbon keeps two oxygens"). The memory line writes large in the handwriting style: "Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂."
+Visual: stage change: the pattern compare at full width: two columns, "hydroxide or oxide" with chips "salt + water" (teal), "carbonate or hydrogen carbonate" with "salt + water + CO₂" (amber). On "carbon monoxide" a chip "... + CO" fades in; a CO₃ tile set splits: C with two O tiles to "CO₂", the third O with two H⁺ to "H₂O" (grey hand tag "one O taken"); on "always carbon dioxide" the CO chip is crossed in red (red hand tag "carbon keeps two oxygens"). The memory line writes large as a framed card in the handwriting style (dark-ink frame; teal "salt and water", amber "carbonate"): "Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂."
 
 ### 13. antacids
-> That's the difference between two kinds of antacid. A magnesium hydroxide tablet neutralises stomach acid, which is mostly hydrochloric acid, making magnesium chloride and water. A calcium carbonate tablet makes calcium chloride and water too, plus carbon dioxide gas. That gas is why only one kind makes you **burp**.
+> That's the difference between two kinds of antacid. A magnesium hydroxide tablet neutralises stomach acid, which is mostly hydrochloric acid, making magnesium chloride and water. A calcium carbonate tablet makes calcium chloride and water too, plus carbon dioxide gas. Only the carbonate makes a gas, which is why it can make you **burp**.
 
-Visual: `m6-antacid-tablets-v1.png` small, split into two labelled tiles "active ingredient: Mg(OH)₂" and "active ingredient: CaCO₃"; grey tag "chemistry, not medical advice". Lines under each: "Mg(OH)₂(s) + 2HCl(aq) → MgCl₂(aq) + 2H₂O(l)" (teal column) and "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)" (amber column). On "burp" grey CO₂ bubbles rise from the carbonate column only.
+Visual: stage change: `m6-antacid-tablets-v1.png` large, split into two labelled tiles "active ingredient: Mg(OH)₂" and "active ingredient: CaCO₃"; grey tag "chemistry, not medical advice". Lines under each: "Mg(OH)₂(s) + 2HCl(aq) → MgCl₂(aq) + 2H₂O(l)" (teal column) and "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)" (amber column). On "burp" grey CO₂ bubbles rise from the carbonate column only (amber hand tag "gas from this one").
 
 ### 14. attempt 1 (countdown, 10 seconds)
 > Your turn. Nitric acid reacts with calcium hydroxide solution. Name the salt, and write the balanced equation, including states. Pause here to answer.
@@ -148,7 +151,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 15. feedback 1 (brief)
 > Calcium nitrate. Calcium is plus two and nitrate is minus one, so there are two nitrate ions for each calcium. Two nitrates need two nitric acids, and calcium hydroxide's two hydroxide ions make two waters. Two nitric acid plus calcium hydroxide gives calcium nitrate plus two water. Writing C a N O three, with one nitrate, ignores the **charges**.
 
-Visual: card shrinks to the top. Salt namer "calcium nitrate"; charge tiles "Ca²⁺" with two "NO₃⁻", "Ca(NO₃)₂". Line "2HNO₃(aq) + Ca(OH)₂(aq) → Ca(NO₃)₂(aq) + 2H₂O(l)" with tally "4 H, 2 N, 8 O, 1 Ca" green. On "charges" a chip "CaNO₃" fades in and is crossed (tag "Ca²⁺ needs two NO₃⁻"). Hold about 1 second.
+Visual: card shrinks to the top. Salt namer "calcium nitrate"; charge tiles "Ca²⁺" with two "NO₃⁻", "Ca(NO₃)₂". Line "2HNO₃(aq) + Ca(OH)₂(aq) → Ca(NO₃)₂(aq) + 2H₂O(l)" with tally "4 H, 2 N, 8 O, 1 Ca" green, framed in a dark-ink box with a green tick. On "charges" a chip "CaNO₃" fades in and is crossed in red (red hand tag "Ca²⁺ needs two NO₃⁻"). Hold about 1 second.
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Excess hydrochloric acid is added to potassium carbonate solution. Write the balanced equation, and describe a test that identifies the gas. Pause here to answer.
@@ -158,7 +161,7 @@ Visual: `QuestionCard`: "Excess dilute hydrochloric acid is added to potassium c
 ### 17. feedback 2 (brief)
 > It's a carbonate, so salt, water and carbon dioxide. The salt is potassium chloride. The carbonate takes two hydrogen ions, so two hydrochloric acid, and two potassium chloride. Then water and carbon dioxide. Bubble the gas through limewater, and it turns milky. Stopping at the salt and water leaves out a whole **product**.
 
-Visual: card shrinks. Line "2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g)" with tally "2 H, 2 Cl, 2 K, 1 C, 3 O" green; three product chips. `m6-limewater-milky-v1.png` small with "CO₂: limewater turns milky". On "product" a chip "2HCl + K₂CO₃ → 2KCl + H₂O" fades in and is crossed (tag "carbonate: + CO₂"). Hold about 1 second.
+Visual: card shrinks. Line "2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g)" with tally "2 H, 2 Cl, 2 K, 1 C, 3 O" green, framed in a dark-ink box with a green tick; three product chips. `m6-limewater-milky-v1.png` small with "CO₂: limewater turns milky". On "product" a chip "2HCl + K₂CO₃ → 2KCl + H₂O" fades in and is crossed in red (red hand tag "carbonate: + CO₂"). Hold about 1 second.
 
 ### 18. conclusion and handoff
 > So to predict an acid reaction, look at the base. Hydroxides and oxides give a salt and water. Carbonates give a salt, water and carbon dioxide, and limewater proves the gas. That gives you six reaction types for predicting products. Next, a different question about chemistry and food. How do particular Aboriginal and Torres Strait Islander food-processing practices remove **toxins**?
@@ -169,12 +172,13 @@ Visual: the pattern compare shrinks into two strips, "acid + base: salt + water"
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Acid: releases H⁺ in water. Base: reacts with an acid, using up H⁺ (hydroxides, oxides, carbonates). Alkali: a soluble base, gives OH⁻.
-2. Acid + hydroxide or oxide → salt + water. Net ionic: H⁺(aq) + OH⁻(aq) → H₂O(l). Example: H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O.
-3. Acid + carbonate (or hydrogen carbonate) → salt + water + CO₂. Example: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. Test: CO₂ turns limewater milky (CaCO₃ precipitate).
-4. Salt name: metal from the base first, anion from the acid second (chloride, sulfate, nitrate); charges fix the formula.
+1. Acid: releases H⁺. Base: uses up H⁺. Alkali: soluble base, gives OH⁻.
+2. Acid + hydroxide or basic oxide → salt + water.
+3. Hydroxide solutions: H⁺(aq) + OH⁻(aq) → H₂O(l).
+4. Acid + carbonate → salt + water + CO₂ (limewater turns milky).
+5. Salt name: metal first, acid's anion second; charges fix the formula.
 
-Memory aid (large, on the notes screen): *Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂.*
+Memory aid (framed card, on the notes screen): *Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂.*
 
 At the end the notes cross-fade back to scene 18's final frame.
 
@@ -204,7 +208,7 @@ Model answer: (a) 2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g) (1
 | Neutralisation | HCl + NaOH → NaCl + H₂O; H⁺ + OH⁻ → H₂O | 3 |
 | Potassium sulfate | 2(+1) + (−2) = 0; H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O (4 H, 2 K, 1 S, 6 O) | 6, 7 |
 | Oxide | MgO + 2HCl → MgCl₂ + H₂O (1 Mg, 1 O, 2 H, 2 Cl) | 8 |
-| Carbonate | 2H⁺ + CO₃²⁻ → H₂O + CO₂; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂ (1 Ca, 1 C, 3 O, 2 H, 2 Cl) | 9, 13 |
+| Carbonate | CaCO₃(s) + 2H⁺ → Ca²⁺ + H₂O + CO₂ (Revision 2 net line for the solid); CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂ (1 Ca, 1 C, 3 O, 2 H, 2 Cl) | 9, 13 |
 | Limewater | Ca(OH)₂ + CO₂ → CaCO₃ + H₂O | 10 |
 | Hydrogen carbonate | NaHCO₃ + HCl → NaCl + H₂O + CO₂ (1 : 1) | 11 |
 | Antacid | Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O | 13 |
@@ -215,16 +219,16 @@ Model answer: (a) 2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g) (1
 
 Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
-- HCl + NaOH → NaCl + H₂O; H⁺ + OH⁻ → H₂O; H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O; MgO + 2HCl → MgCl₂ + H₂O; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; 2H⁺ + CO₃²⁻ → H₂O + CO₂; Ca(OH)₂ + CO₂ → CaCO₃ + H₂O; NaHCO₃ + HCl → NaCl + H₂O + CO₂; Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O; 2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O; 2HCl + K₂CO₃ → 2KCl + H₂O + CO₂. All balanced in atoms and charge.
+- HCl + NaOH → NaCl + H₂O; H⁺ + OH⁻ → H₂O; H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O; MgO + 2HCl → MgCl₂ + H₂O; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; CaCO₃(s) + 2H⁺ → Ca²⁺ + H₂O + CO₂ (Revision 2; atoms 1 Ca, 1 C, 3 O, 2 H; charge +2 each side); 2H⁺ + CO₃²⁻ → H₂O + CO₂; Ca(OH)₂ + CO₂ → CaCO₃ + H₂O; NaHCO₃ + HCl → NaCl + H₂O + CO₂; Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O; 2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O; 2HCl + K₂CO₃ → 2KCl + H₂O + CO₂. All balanced in atoms and charge.
 
 ## Memory aid check
 
-- **"Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂."** From the Module 6 memory aids bank ("The metal names the first word; the acid names the second", and "Acid + carbonate → salt + water + carbon dioxide"), shared with Year 12 `chem-m6-c02.md`. Assumptions checked: "metal" includes ammonium for ammonium bases (not met here; Year 12 adds it); the patterns assume enough acid (site: "with excess acid present"; A2 says "excess"); "carbonate" includes hydrogen carbonate (said in scene 12). It helps a new case: A1 (calcium nitrate), A2 (potassium carbonate), and any acid with a metal oxide made in m3-v04. The site's SWC mnemonic is shown as a small tag ("S, W, C") in scene 9, not a second aid.
+- **"Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂."** From the Module 6 memory aids bank ("The metal names the first word; the acid names the second", and "Acid + carbonate → salt + water + carbon dioxide"), shared with Year 12 `chem-m6-c02.md`. Assumptions checked: the naming line is scoped to the metal bases studied here (Revision 2, brief 182 finding 1: ammonium is a polyatomic positive ion, not a metal; an ammonium salt is named from its ammonium ion in the same first-word slot, Year 12); the patterns assume enough acid (site: "with excess acid present"; A2 says "excess"); "carbonate" includes hydrogen carbonate (said in scene 12). It helps a new case: A1 (calcium nitrate), A2 (potassium carbonate), and any acid with a metal oxide made in m3-v04. The site's SWC mnemonic is shown as a small tag ("S, W, C") in scene 9, not a second aid.
 - **Considered, not used:** "pH 7 at neutralisation" (wrong in general; out of scope).
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules): **5,578 characters**, 19 scenes. At 13.3 characters per second the speech is about 419 s; add about 5 s of settling (the lens docking in 3, 8, 9; the delivery tube in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 503 s**.
+Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,621 characters**, 19 scenes (Revision 1: 5,578). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 419 s; add about 5 s of settling (the lens docking in 3, 8, 9; the delivery tube in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 508 s** (Revision 1: about 503 s).
 
 ## Scene list and build ids
 
@@ -269,7 +273,7 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Acid-Base and Acid-Carbonate Reactions: Predicting the Salt, Water and Carbon Dioxide | Year 11 Chemistry Module 3
+Title: Acid-Base and Acid-Carbonate Reactions: Predicting the Products | Year 11 Chemistry Module 3
 
 Description: Full Year 11 Chemistry course: https://hscscience.com.au/subjects/chemistry/year11/
 
@@ -292,5 +296,30 @@ Previous: How do oxygen supply and fuel affect combustion products? Next: How do
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (is scene 3 too dense with salt, neutralisation and the net ionic equation together; is scene 12's CO explanation clear), then the science check and Codex error check.
+- Revision 1 was reviewed by brief 182 (0 blockers, 5 should fix, 1 optional); every finding is resolved in Revision 2 (see "Revision 2"). Earlier note: Revision 1 had no independent review. Next: student learning review (is scene 3 too dense with salt, neutralisation and the net ionic equation together; is scene 12's CO explanation clear), then the science check and Codex error check.
 - Checker output (5 November): narration 5,578 characters; per scene (1 to 19): 310, 401, 462, 317, 238, 96, 354, 304, 366, 328, 282, 360, 314, 150, 345, 172, 321, 383, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+
+- Checker output (Revision 2, 6 November): narration 5,621 characters (sum of scene strings); per scene (1 to 19): 310, 417, 481, 317, 238, 96, 354, 304, 366, 328, 282, 347, 335, 150, 345, 172, 321, 383, 75; no em dash; every bold cue quoted in its scene's Visual in spoken order.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 182 findings (`checks/c-y11-m3-v05-learning-review.md`, `checks/c-y11-m3-v05-science-check.md`):
+1. Salt and metal-base scope (should fix): scene 3 now defines a salt as "an ionic compound of a positive ion, here sodium from the base, and a negative ion from the acid", with the gloss "positive ion (often a metal ion, or ammonium)"; scene 2 says "oxides like magnesium oxide" (tile "basic oxides (MgO)"), not all metal oxides; the salt namer carries a grey tag "for the metal bases here"; the memory-aid note no longer says "metal" includes ammonium.
+2. Solid carbonate and ionic states (should fix): scene 9's net line is "CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)" (the solid is never split); key note 3 labels H⁺ + OH⁻ → H₂O as the hydroxide-solution case.
+3. Oxygen explanation (optional, applied): scene 12 now says "Only that one oxygen is taken, so it's always carbon dioxide" (was "Nothing takes oxygen away from that carbon").
+4. Chemistry versus individual symptom (should fix): scene 13 now says "Only the carbonate makes a gas, which is why it can make you burp."
+5. Crossed-mistake consistency (should fix): the Decisions A2 crossed chip is now "2HCl + K₂CO₃ → 2KCl + H₂O" (carbon dioxide left out), matching scene 17.
+6. Metadata length (should fix): the title is now "Acid-Base and Acid-Carbonate Reactions: Predicting the Products | Year 11 Chemistry Module 3" (92 characters).
+m3-v06 boundary rechecked: scene 18 asks v06's question in neutral words only, with no content about the practices (root decision m3-1).
+
+Visual upgrade (scene-level visual changes; teaching logic unchanged):
+- Scene 1: the three beakers fill the frame in the first 20 s.
+- Stage changes in every teaching scene (large lenses, drip stage, salt namer, large MgO and chip beakers, delivery tube, baking soda, pattern compare, antacids); no stage longer than about 35 s.
+- Live control: the acid drip (scene 4) drives "OH⁻ left", "H₂O made" and the thermometer, with the pink-to-colourless swap at zero.
+- Framed answers with a green tick: the neutralisation lines (3), K₂SO₄ (7), MgO (8), CaCO₃ (9), NaHCO₃ (11), Ca(NO₃)₂ (15), K₂CO₃ (17). Crossed slips carry red hand tags ("bases must contain OH⁻", H₂O₂, CO, CaNO₃, the CO₂-less A2 line).
+- Hand tags and pen marks in role colours in every teaching scene (1 to 13).
+- Memory line as a framed card (scene 12 and the notes screen); key notes cut to five short bullets.
+- Decisions gain "Colour roles", "Type sizes", "Simulation" and a revised "Board layout"; the salt-naming decision gains its scope.
+- No new plate requests.
+
+Counts: 5,621 characters (Revision 1: 5,578); about 503 to about 508 s.

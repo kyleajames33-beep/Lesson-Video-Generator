@@ -47,3 +47,4 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`; M
 29. **m2-v12's cue word is "accurately"** (was "precisely" in decision 11). m2-v11 scene 13 now also says "known accurately"; its "exactly?" chip stays as the question m2-v12 answers.
 30. **m2-v11's ppm unit-basis caveat** is a grey on-screen tag, not speech. Accepted: the spoken claim ("volume-based unit") is correct as said.
 31. **ws-v07 at about 567 s** is accepted under the 570 s cap; its named 58-character trim in scene 7 is the first reserve.
+32. **m2-v18 secondary data** now uses the published OpenStax fixed-volume air table (figure 8.11) unchanged, with an on-screen citation (supersedes the illustrative values in decision 22 for that table only).

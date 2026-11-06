@@ -22,3 +22,9 @@ Claude (root), 5 November 2026. Earlier course decisions in `root-decisions-chem
 15. **Site corrections** (Module 3 lessons 7 to 12, Module 1 lesson 18) are listed in each design's Decisions; Codex logs them.
 
 16. (6 Nov 2026) m3-v10 Revision 2 visual redesign accepted. Ions formed by oxidation get a teal rim and multipliers move to navy in this video; v07's amber Zn2+ stays as built. The final "e- ?" stays amber for v11's opening. Briefs 182 and 183 paint the v07 and v08 anchor plates and v10's three edited plates in one batch. The science check confirms the Fe2+/Fe3+ colours and Cl2(g), and the corrected trap wording ("vanished").
+
+## After brief 182 repairs (6 November 2026)
+
+17. **m3-v04 carbon monoxide.** Keep the one learner line "a poisonous gas with no colour and no smell". The ventilation and CO-alarm safety point needs it, so it is inside the route boundary as a necessary safety condition. The soot lung-health claim stays cut.
+18. **Yellow-flame plate (m3-v03, reused in m3-v04).** The revised request stands: a 2000 × 2800 portrait canvas at the blue-flame plate's scale, aligned by bottom edges, with the flame about 1.8 times the blue flame's height. Codex paints to this spec, replacing the held canvas conflict.
+19. **Demonstrations without an approved method** (m3-v04 cold dish, m3-v07 calcium) stay as teacher-demonstration footage or painted stills only, with "follow your school's approved method" on screen. Codex flags any that cannot meet this in the error check.
