@@ -38,3 +38,10 @@ Claude (root), 6 November 2026. Designs written to `phys-y12-design-brief.md`.
 - **v16 corrected test accepted.** The drooping string is treated as a conical pendulum (inward part of the tension only, radius L cos α, which cancels), so Mg = mω²L. The investigation holds string length and plots Mg against ω² (gradient mL). This meets the route's force-against-speed-squared aim correctly; a constant radius cannot be held with a drooping string. The near-horizontal, heavy-mass alternative is not used.
 - **v17/v18 join:** v18's opening frame becomes the teal tangent arrow, matching v17's colour repair (applied in the v18 repair).
 - **Paper clip:** paint `y12p-paper-clip-v1.png` once; v15 and v16 both use it. The old backdrop plate is kept, not deleted.
+
+## After brief 188 repairs, part 2 (6 November 2026)
+
+- **Station plate:** `y12p-space-station-v1.png` gets a QA check at 420 px (pale flecks on the truss top); repaint only if the flecks show at build size.
+- **Exhaust plate:** `y12p-spacecraft-exhaust-v1.png` (a glow on a dark field) is not used on the paper background; burns stay as short coded green arrows.
+- **v20 swept areas** are recoloured pale grey, so amber keeps one meaning (force) in that design. The build follows this; the design note stands corrected by this decision.
+- **v19 period slider** assumes a 24 h Earth turn, tagged on screen. Accepted.

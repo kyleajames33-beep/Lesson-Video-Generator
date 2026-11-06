@@ -1,8 +1,8 @@
 # Year 12 Physics M5 V20: Kepler's laws. How do Kepler's laws describe circular and elliptical orbits? (design)
 
-Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,679 characters, 16 scenes, about 519 s, counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,664 characters (scene sum; Revision 1 stated 5,679 by the joined convention), 16 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate").
 
 Scope: Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), inquiry question "How does the force of gravity determine the motion of planets and satellites?". Templates as `phys-y12-m5-v17.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson17.sa.html`, SHA256 `01842919fdfa6884fe4144bf4197bb53f8d91c2f43873464c113dadcc13b8f8e` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m5-v20`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Use equal areas and ellipse focus qualitatively, and T squared proportional to semimajor axis cubed quantitatively. Distinguish circular r from elliptical semimajor axis." Next: "phys-y12-m5-v21: Why does gravitational potential energy use a zero at infinity?"
 
@@ -21,17 +21,21 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
 ## Decisions
 
 - **Learner question.** Possessive added (above). The answer, built in order: what Kepler found and why it is description, not cause (2); first law, the shape (3); second law, the speed (4); gravity's components as the cause (5); the r v rule at the extremes (6); third law, the size and period (7); applied to Halley (8) and its trap (9).
-- **Hook (site lesson 17 hook "a comet shoots past faster when close to the Sun"; real data).** Halley's comet: perihelion 0.5871 AU on 9 February 1986, aphelion 35.25 AU in 1948, average period about 76 years, return in 2061 (NASA "1P/Halley"). Prediction with a 3 s countdown. The comet's motion on screen is computed from Kepler's equation for e = 0.967 (author note a).
+- **Hook (site lesson 17 hook "a comet shoots past faster when close to the Sun"; real data).** Halley's comet: perihelion 0.5871 AU on 9 February 1986, aphelion 35.25 AU in 1948, average period about 76 years, return in 2061 (NASA "1P/Halley"). Prediction with a 3 s countdown. The comet's motion on screen is computed from Kepler's equation for e = 0.967 (author note a). Revision 2: the year counter only runs forwards (1986 at perihelion, out to the far end, back to 2061); the far-end chip gives the distance without a year, because the 1948 aphelion lies before the counter's start (brief 188 note).
 - **Kepler and Tycho (site card 1).** One scene: twenty years of naked-eye Mars measurements; no circle fitted; an ellipse did; laws describe, Newton's gravity explains. No portraits; a coded page of tabulated angles and a Mars plate on a dashed circle that fails to match the plotted points.
 - **First law.** The constant-sum property is shown with two coded lines from the foci to a moving point (no pins, string or hands). The circle as the special case (foci merge, a = r) carries the route's "distinguish circular r from elliptical semi-major axis". Eccentricity is shown only as a slider word "more stretched"; e = c/a is not taught (site lists it; not required by the route stop).
 - **Second law and its cause (site card 2; the syllabus "relationship ... to the forces").** The cause is taught with forces, not energy, because U = −GMm/r is v21's: gravity always points at the Sun, so its component along the path speeds the planet on the way in and slows it on the way out; in a circle it is perpendicular (v15). The torque sentence (v09) explains why the swept rate is constant (site: "a central force gives zero torque"); "angular momentum" is not named (author note b).
 - **The r v rule (site card 2).** Derived in one sentence from thin triangles (area ≈ ½ r v t when v is perpendicular to r). Checked with Earth: perihelion 147.095, aphelion 152.100 million km; NASA max and min orbital speeds 30.29 and 29.29 km s⁻¹; ratios 1.0340 and 1.0341.
 - **Third law (site card 3, re-sourced).** Linked to v18's circular result, then stated for ellipses with a (Newton's generalisation stated, not derived). Units: a in astronomical units (Earth's average distance from the Sun, defined on first use) and T in Earth years, so the constant is 1 for the Sun; the site's own Mars check (687 days, 1.524 AU) is re-valued with NASA data (a = 1.5238 AU, T = 1.8808 yr; a³ = 3.537, T² = 3.537). SI use with a given central mass was v18's; noted in key note 3.
-- **Worked example (new, real data).** Halley: a = (0.5871 + 35.25)/2 = 17.92 AU; T = 17.92^1.5 = 75.8 years ≈ 76 (NASA average 76). The crossed mistake (scene 9) uses 35.25 AU (209 years) and 0.587 AU (0.45 years).
+- **Worked example (new, real data).** Halley: a = (0.5871 + 35.25)/2 = 17.9186 AU, shown as 17.92 with the carried value kept; T = 17.9186^1.5 = 75.8 years ≈ 76 (NASA average 76). Revision 2: the screen shows the carried value in the power line, because 17.92^1.5 gives 75.9 (brief 188 note). The crossed mistake (scene 9) uses 35.25 AU (209 years) and 0.587 AU (0.45 years).
 - **Memory aid.** "Shape, speed, size." See "Memory aid check".
 - **Attempts.** A1 (site's Jupiter worked example, in AU and years with NASA data): a = 5.20 AU, T = 11.9 years. A2 (new, NASA Mars data): perihelion 1.381 AU, aphelion 1.666 AU; faster at perihelion by 1.21. Crossed: A1 "cubing T and squaring a"; A2 "faster at aphelion" / inverted ratio.
-- **Colour key.** As v17 to v19; swept areas pale amber, the semi-major axis navy, foci small navy crosses, velocity orange, gravity amber with its along-path component dashed orange and its perpendicular component dashed grey.
-- **Handoff.** Scene 16 holds Halley at aphelion with a dashed line running outwards to "∞" and "U = ?" (v21).
+- **Colour key (root decisions 2 and 10; Revision 2).** Velocity, speed arrows and speed bars teal (previously orange); gravity amber, with its along-path component dashed amber (previously dashed orange, which is now kinetic energy's colour) and its perpendicular component dashed grey; swept areas pale amber; the semi-major axis navy; foci small navy crosses; framed answers in a dark-ink box; crossed chips and their hand tags red; grey at full opacity.
+- **Type sizes (Revision 2, 1080p):** the current working line at least 44 px (scenes 6, 8 and the feedback rows 52 px); live readouts (scenes 1, 3, 4, 5, 7) about 52 px; the memory card 60 px; supporting lines, givens, table rows and chips 30 to 36 px; hand-font tags at least 30 px; question text 36 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
+- **Anchor (Revision 2).** Scene 1 is painted: the Sun with the delivered comet on Halley's true ellipse. The delivered Mars plate carries scenes 2, 7 and attempt 2; the Earth plate scenes 1, 6, 7; the existing Jupiter plate sits beside attempt 1.
+- **Simulation (Revision 2).** The core live control is scene 4's equal-area run on a teaching orbit (a = 1 AU, e = 0.6): live r, v and "area this month" readouts, the area fixed at 0.209 AU² while r runs from 0.40 to 1.60 AU and v from 59.6 to 14.9 km s⁻¹ (r v equal at the two ends). Scene 3 adds a live d₁, d₂, d₁ + d₂ readout and a shape slider that squashes the ellipse into a circle; scene 1 a live speed bar on the comet; scene 5 a live speed readout as gravity's component speeds and slows the planet; scene 7 live lap counters.
+- **Stage changes (Revision 2).** Scene 1 the Sun and comet; scene 2 the Mars ledger; scene 3 the shape stage; scene 4 the equal-area run; scene 5 a close-up of the inward and outward legs (a new set-up that breaks the scenes 3 to 5 Kepler-stage run); scene 6 the end triangles, then Earth's orbit; scene 7 the two-orbit diagram; scene 8 Halley with full-width working. No set-up runs past about 60 s.
+- **Handoff.** Scene 15 holds Halley at aphelion with a dashed line running outwards to "∞" and "U = ?" (v21). (Revision 2: scene number corrected from 16.)
 - **Site sources used:** lesson 17 hook (comet), vocabulary (ellipse, semi-major axis, perihelion and aphelion), misconceptions (perfect circles; constant speed; Kepler only for the Sun's planets, in scene 7's "same for every planet around the Sun" and key note 3), card 1 (Tycho, Kepler 1609, the circular approximation), card 2 (equal areas, zero central torque, v_p/v_a = r_a/r_p, Earth's perihelion and aphelion), card 3 (T² ∝ a³, circular derivation, a for ellipses), Review Mars check (scene 7, re-valued), the "Account 5 marks" comet answer (its force half only; the energy half is v22), Activity 1 (Halley in year and AU units, here from real perihelion and aphelion data). Not used: eccentricity table and e = c/a; vis-viva worked example; Hohmann transfers and exoplanets (site optional); the 4.2 × 10⁸ m moon example (SI is v18's).
 - **Site notes (for root to log if accepted):**
   1. Lesson 17, Activity 1 MC: "Halley's comet has a period of 75.3 years ... semi-major axis is approximately 17.8 AU" (75.3^(2/3) = 17.83 AU) is correct as arithmetic; NASA quotes an average period of 76 years (74 to 79 years). Not an error; suggest "about 76 years".
@@ -53,7 +57,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
   (g) Pronunciations: "aff-ELL-ee-on" for aphelion (the common teaching pronunciation; "ap-HEE-lee-on" also accepted), "peri-HEE-lee-on", "FOH-sigh" for foci, "TEE-koh BRAH-hee".
 
 - **Open decisions for root:**
-  - **1. Plates (root).** New `y12p-comet-v1.png` (essential: the hook and worked example) and `y12p-mars-v1.png` (scene 2 and 7). Reused: `phys-y11-sun-v1.png`, `phys-y11-earth-v1.png`. Fallback for Mars: a small coded red disc.
+  - **1. Plates (root).** Revision 2: settled; `y12p-comet-v1.png` and `y12p-mars-v1.png` are delivered (brief 188) and inspected. Reused: `phys-y11-sun-v1.png`, `phys-y11-earth-v1.png`, and the existing `y12p-jupiter-v1.png` (attempt 1).
   - **2. "Total energy" part of P5-IQ3-04 (root).** Covered by v21 and v22 (energy built from U = −GMm/r) rather than here, because zero-at-infinity energy is not yet taught. v22's design should name the comet case in its energy-trade scene; recorded there.
   - **3. Pronunciation of aphelion (voicing).** Check the Google voice's reading in the pilot (author note g).
 
@@ -69,88 +73,89 @@ Cue words in **bold** trigger the visual change. Paper background and handwritte
 ### 1. hook (Halley's comet)
 > Let's zoom out to the Sun and follow Halley's comet. In nineteen eighty-six it swung past the Sun at less than six tenths of Earth's distance from it. Then it headed out beyond Neptune, more than thirty-five times Earth's distance, and it won't be back until twenty sixty-**one**. It spends decades crawling far out, and only months racing near the **Sun**. Why does it move so much faster up close? Have a **think**.
 
-Visual: opens on v19's final frame (see "Opening frame"); camera pull back hard: Earth shrinks to a dot on a small circle around the Sun plate (`phys-y11-sun-v1.png`). The comet plate (`y12p-comet-v1.png`, new, tail drawn pointing away from the Sun by rotation in code) moves on Halley's true-shape ellipse (e = 0.967, Sun at one focus), with a year counter. On "one" date chips appear at the two ends: "1986: 0.59 × Earth's distance" near the Sun and "1948: 35.25 × Earth's distance" far out; "2061" at the inner end. On "Sun" the comet replays in real proportion: about 3 s crawling across the outer half, then a whip round the Sun in a fraction of a second; a speed bar beside it shoots up near the Sun. On "think" the 3 s `Countdown` runs beside "Why faster near the Sun?" with chips "pulled harder", "a shorter path", "something speeds it up".
+Visual: opens on v19's final frame (see "Opening frame"); camera pull back hard: Earth shrinks to a dot on a small circle around the painted Sun (`phys-y11-sun-v1.png`). The painted comet (`y12p-comet-v1.png`, delivered and inspected, rotated in code about its nucleus so the tails point away from the Sun; never stretched) moves on Halley's true-shape ellipse (e = 0.967, Sun at one focus) with a year counter (52 px) that only runs forwards: it starts at perihelion in 1986 (chip "1986: 0.59 × Earth's distance"), runs on as the comet heads out (chip "furthest: 35.25 × Earth's distance" at the far end) and back in. On "one" the counter reaches "2061" as the comet returns to the inner end. On "Sun" the comet replays one orbit in real proportion: about 3 s crawling across the outer half, then a whip round the Sun in a fraction of a second, with a live teal speed bar and readout beside it shooting up near the Sun. Hand tags (30 px): teal "crawls", teal "races", and a teal pen ring round the whip near the Sun. On "think" the 3 s `Countdown` runs beside "Why faster near the Sun?" with three option chips (36 px) "pulled harder", "a shorter path", "something speeds it up".
 
 ### 2. Kepler's three laws
 > About four hundred years ago, Johannes Kepler worked through twenty years of careful measurements of Mars, made by Tycho Brahe without a telescope. No circle fitted them, however he adjusted it. What fitted was an **ellipse**. Kepler summed up planetary motion in three laws. They describe how planets move, and Newton's gravity later explained why.
 
-Visual: clear change: a coded ledger page of Mars sky angles (grey hand-ruled columns, no names or faces) slides in at the left; plotted Mars positions (small red dots) appear around the Sun plate. A dashed circle tries to fit them and shifts twice, missing at two sides (red gap marks). On "ellipse" a navy ellipse snaps through every dot; the Mars plate (`y12p-mars-v1.png`, new) rides it. Heading writes on: "How do Kepler's laws describe circular and elliptical orbits?" and three empty slots "Law 1", "Law 2", "Law 3" appear in the right column.
+Visual: clear change: a coded ledger page of Mars sky angles (grey hand-ruled columns, no names or faces; 30 px) slides in at the left; plotted Mars positions (small red dots) appear around the Sun plate. A dashed circle tries to fit them and shifts twice, missing at two sides (red gap marks). On "ellipse" a navy ellipse snaps through every dot; the painted Mars (`y12p-mars-v1.png`, delivered and inspected) rides it. Heading writes on: "How do Kepler's laws describe circular and elliptical orbits?" and three empty slots "Law 1", "Law 2", "Law 3" appear in the right column (36 px). Hand tags: red "no circle fits", navy "an ellipse does", and a red pen ring round one gap.
 
 ### 3. law 1: an ellipse with the Sun at a focus
 > Kepler's first law: each planet moves on an ellipse, with the Sun at one focus. An ellipse has two special points called foci. From any point on it, the two distances to the foci always add to the same **total**. The Sun sits at one focus, and the other is just empty **space**. Half the longest width is called the semi-major axis, a. The closest point to the Sun is the perihelion, and the furthest is the **aphelion**. Squash the foci together, and the ellipse becomes a circle, where a is just the radius.
 
-Visual: camera change to the Kepler orbit stage with a teaching ellipse (e = 0.6, tag "stretched for clarity"). Two navy crosses mark the foci. A point travels round the ellipse with two navy lines to the foci; on "total" a readout "d₁ + d₂ = constant" holds steady while d₁ and d₂ change. On "space" the Sun plate settles on the left focus; the right focus gets a faint "empty" tag. The long axis draws; half of it highlights "a: semi-major axis". On "aphelion" markers "perihelion (closest)" and "aphelion (furthest)" at the two ends of the long axis. As "Squash" is spoken the foci slide together and the ellipse rounds into a circle with "a = r". The "Law 1" slot fills: "shape: ellipse, Sun at one focus".
+Visual: camera change to the Kepler orbit stage with a teaching ellipse (e = 0.6, a = 1 unit, tag "stretched for clarity", 30 px). Two navy crosses mark the foci. A point travels round the ellipse with two navy lines to the foci and live readouts (52 px) "d₁", "d₂" and "d₁ + d₂"; on "total" the sum holds at "2.00" while d₁ and d₂ change (0.40 + 1.60, 1.00 + 1.00, 1.60 + 0.40). On "space" the Sun plate settles on the left focus; the right focus gets a grey tag "empty". The long axis draws; half of it highlights navy "a: semi-major axis". On "aphelion" markers "perihelion (closest)" and "aphelion (furthest)" at the two ends of the long axis. As "Squash" is spoken a live shape control (slider "more stretched ↔ circle") slides the foci together and the ellipse rounds into a circle with "a = r"; the d₁ + d₂ readout stays at 2.00 throughout. The "Law 1" slot fills: "shape: ellipse, Sun at one focus". Hand tags: navy "sum stays the same", grey "nothing here", and a navy pen ring round "a = r".
 
 ### 4. law 2: equal areas in equal times
 > Kepler's second law: a line from the Sun to the planet sweeps out equal areas in equal times. Near the Sun, that line is short, so to sweep the same area in a month, the planet has to cover a longer stretch of its **path**. Far away, the line is long, and a short stretch does the **job**. So a planet moves fastest at perihelion, and slowest at aphelion.
 
-Visual: camera continue (ellipse again, e = 0.6). The planet moves by Kepler's equation; every equal time step a pale amber sector fills from the Sun to the arc travelled. On "path" a short, wide sector near perihelion pulses, its arc bracket long. On "job" a long, thin sector near aphelion pulses, its arc bracket short; both carry the same area readout "A". Orange speed arrows at both ends: long at perihelion, short at aphelion. The "Law 2" slot fills: "speed: equal areas in equal times, fast when near".
+Visual: camera continue on the same teaching ellipse, now a teaching planet with a = 1 AU and e = 0.6 (grey tag "teaching orbit, not a real planet"). The planet moves by Kepler's equation; every month a pale amber sector fills from the Sun to the arc travelled, with live readouts (52 px) navy "r", teal "v" and "area this month = 0.209 AU²", the area holding fixed while r and v change (perihelion r = 0.40 AU, v = 59.6 km s⁻¹; aphelion r = 1.60 AU, v = 14.9 km s⁻¹). On "path" a short, wide sector near perihelion pulses, its arc bracket long. On "job" a long, thin sector near aphelion pulses, its arc bracket short; both carry the same area readout. Teal speed arrows at both ends: long at perihelion, short at aphelion. The "Law 2" slot fills: "speed: equal areas in equal times, fast when near". Hand tags: teal "fast", teal "slow", and a navy pen ring round the two matching areas.
 
 ### 5. why: gravity's components
 > Gravity explains it. Gravity always points at the Sun. As the planet falls inwards, part of that pull points along its motion, so it speeds **up**. On the way out, part of the pull points backwards, and it slows **down**. So gravity does work on it on the way in, and against it on the way out. In a circle, gravity is always at right angles to the motion, so the speed never changes. And because gravity points straight at the Sun, it never twists the planet around the Sun. That's why the area swept each month stays the **same**.
 
-Visual: camera continue. At a point on the inward leg: the amber gravity arrow towards the Sun splits into a dashed orange component along the velocity and a dashed grey component across it; on "up" the orange speed arrow lengthens as the planet moves in. On "down" at a point on the outward leg the along-path component points backwards and the speed arrow shortens. As "In a circle" is spoken an inset circle shows gravity at a right angle to v with the right-angle mark (v15). On "same" a small torque note writes beside the Sun: "force through the Sun: no moment arm, no twist (torque = 0)" and the equal sectors pulse once together.
+Visual: camera push to a close-up of the inward leg (a new set-up: the planet large, the Sun at the left edge). The amber gravity arrow towards the Sun splits into a dashed amber component along the velocity and a dashed grey component across it (labels 36 px); on "up" the teal speed arrow lengthens as the planet moves in, its live speed readout rising. On "down" the camera swings to a point on the outward leg: the along-path component points backwards and the teal arrow shortens, readout falling. As "In a circle" is spoken an inset circle shows gravity at a right angle to v with the right-angle mark (v15). On "same" the camera pulls back to the whole ellipse; a torque note writes beside the Sun (32 px): "force through the Sun: no moment arm, no twist (torque = 0)" and the equal sectors pulse once together. Hand tags: amber "part along the motion", amber "part against it", and an amber pen ring round the right-angle mark.
 
 ### 6. the speeds at the two ends
 > At perihelion and aphelion, the velocity is at right angles to the line from the Sun. Over a short time, each swept area is close to a thin triangle, half times r times v times t. Equal areas means r times v is the same at both **points**. Earth is a hundred and forty-seven million kilometres from the Sun in January, and a hundred and fifty-two million in July. So in January it moves about three per cent **faster**. NASA lists thirty point three kilometres per second, against twenty-nine point three.
 
-Visual: camera push to the two ends of the ellipse. A thin triangle at perihelion (base v t along the path, height r) and one at aphelion, both shaded amber, labelled "area ≈ ½ r v t". On "points" `AlignedAlgebra`: "½ r_p v_p t = ½ r_a v_a t", "r_p v_p = r_a v_a", "v_p / v_a = r_a / r_p" boxed. Then a near-circular Earth orbit (e = 0.017, true shape) with the Earth plate: "January: 147.1 × 10⁶ km", "July: 152.1 × 10⁶ km". On "faster" "v_p / v_a = 152.1 / 147.1 = 1.034"; a grey source chip "NASA: 30.29 and 29.29 km s⁻¹ (ratio 1.034)".
+Visual: camera push to the two ends of the ellipse. A thin triangle at perihelion (base v t along the path, height r) and one at aphelion, both shaded pale amber, labelled "area ≈ ½ r v t" (36 px). On "points" `AlignedAlgebra` (52 px): "½ r_p v_p t = ½ r_a v_a t", "r_p v_p = r_a v_a", "v_p / v_a = r_a / r_p" in a dark-ink frame. Then a clear change to a near-circular Earth orbit (e = 0.017, true shape) with the Earth plate: "January: 147.1 × 10⁶ km", "July: 152.1 × 10⁶ km". On "faster" "v_p / v_a = 152.1 / 147.1 = 1.034" in a dark-ink frame (52 px); a grey source chip "NASA: 30.29 and 29.29 km s⁻¹ (ratio 1.034)". Hand tags: navy "short r, long base", teal "about 3 % faster", and a navy pen ring round "r_p v_p = r_a v_a".
 
 ### 7. law 3: size and period
 > Kepler's third law links the size of an orbit to its period. T squared is proportional to a cubed. For circles, we've already derived it from gravity: r cubed over T squared equals big G M over four pi squared. Newton showed the same holds for an ellipse, with the semi-major axis a in place of **r**. Measure a in astronomical units, Earth's average distance from the Sun, and T in years. Earth gives one and one. Mars has an a of one point five two four, and a period of one point eight eight one years. Cube one, square the other, and both come to three point five **four**.
 
-Visual: clear change to a two-orbit diagram (Earth and Mars plates on their near-circular orbits around the Sun plate, true shapes). The right column: "r³/T² = GM/4π² (circles, from gravity)"; on "r" the r is replaced by a: "a³/T² = GM/4π²", tag "same constant for everything orbiting the Sun". A table writes: "Earth: a = 1 AU, T = 1 yr: a³ = 1, T² = 1"; "Mars: a = 1.524 AU, T = 1.881 yr"; on "four" "a³ = 3.54, T² = 3.54" both boxed; source chip "NASA Mars Fact Sheet". The "Law 3" slot fills: "size: T² ∝ a³, one constant per central body".
+Visual: clear change to a two-orbit diagram (the Earth and Mars plates on their near-circular orbits around the Sun plate, true shapes), each planet with a live lap counter (Earth about 1.88 laps for each Mars lap). The right column (44 px): "r³/T² = GM/4π² (circles, from gravity)"; on "r" the r is replaced by a: "a³/T² = GM/4π²", tag "same constant for everything orbiting the Sun". A table writes (36 px): "Earth: a = 1 AU, T = 1 yr: a³ = 1, T² = 1"; "Mars: a = 1.524 AU, T = 1.881 yr"; on "four" "a³ = 3.54, T² = 3.54" in a dark-ink frame (52 px); source chip "NASA Mars Fact Sheet". The "Law 3" slot fills: "size: T² ∝ a³, one constant per central body". Hand tags: navy "a in place of r", grey "AU and years", and a navy pen ring round the two matching 3.54s.
 
 ### 8. worked example: Halley's period
 > Now Halley. Its closest distance from the Sun is zero point five eight seven astronomical units, and its furthest is thirty-five point two five. The long axis runs from one end to the other, so a is half their sum, about seventeen point nine **units**. With T squared equal to a cubed, T is seventeen point nine to the power one and a half, about seventy-six **years**. That matches the comet's real **return**. Notice we didn't need the Sun's mass, because Earth's orbit sets the constant.
 
-Visual: camera change to Halley's true ellipse (scene 1), Sun at the focus. Task strip: "Find Halley's period." Equation strip: "T² = a³ (T in years, a in AU, around the Sun)". Givens grouped: "perihelion 0.587 AU", "aphelion 35.25 AU". The long axis lights end to end, "2a = 0.587 + 35.25 = 35.84 AU". On "units" "a = 17.92 AU" with the half-axis highlighted navy. On "years" "T = 17.92^1.5 = 75.8 years" boxed. On "return" a chip "NASA: average about 76 years; next return 2061".
+Visual: camera change to Halley's true ellipse (scene 1) with the comet plate, Sun at the focus; the working sits full width below it. Task strip (36 px): "Find Halley's period." Equation strip: "T² = a³ (T in years, a in AU, around the Sun)". Givens grouped in one navy box (32 px): "perihelion 0.587 AU", "aphelion 35.25 AU". The long axis lights end to end, "2a = 0.587 + 35.25 = 35.84 AU". On "units" "a = 17.92 AU" (52 px) with the half-axis highlighted navy and a grey tag "keep 17.9186 in the calculator". On "years" "T = 17.9186^1.5 = 75.8 years ≈ 76 years" in a dark-ink frame (52 px). On "return" a chip "NASA: average about 76 years; next return 2061". Hand tags: navy "half the long axis", grey "power 1.5", and a navy pen ring round "75.8 years".
 
 ### 9. the extreme-distance mistake
 > Here's the classic mistake: using one of the distances as a. Use the furthest distance, and you'd predict over two hundred years. Use the closest, and you'd get less than half a year. The third law needs the semi-major axis, the average of the two **extremes**. A circle is the one case where those two distances are equal, so a is just r.
 
-Visual: camera continue. Two chips write beside the ellipse: "a = 35.25 AU → T = 209 years" and "a = 0.587 AU → T = 0.45 years", each crossed in red. On "extremes" the navy half-axis pulses with "a = (r_min + r_max) / 2". Small tag "for a circle, r_min = r_max = r".
+Visual: camera continue. Two chips write beside the ellipse (36 px): "a = 35.25 AU → T = 209 years" and "a = 0.587 AU → T = 0.45 years", each crossed in red. On "extremes" the navy half-axis pulses with "a = (r_min + r_max) / 2" in a dark-ink frame (44 px). Small tag "for a circle, r_min = r_max = r". Hand tags: red "not one end", navy "the average", and a navy pen ring round the half-axis.
 
 ### 10. memory aid
 > To keep the three laws apart, think shape, speed, size. The first law gives the shape, an ellipse with the Sun at one focus. The second gives the speed, fast when close and slow when far. And the third links the size, a, to the period, with T squared proportional to a **cubed**.
 
-Visual: board clears to the three filled law slots, each with a tiny icon (ellipse with focus; equal sectors; a and T² ∝ a³). The handwritten line writes above: "Shape, speed, size." On "cubed" the third slot glows. Hold about 2 seconds.
+Visual: board clears to the three filled law slots, each with a tiny icon (ellipse with focus; equal sectors; a and T² ∝ a³; labels 36 px). The handwritten line writes above in a framed memory card (hand lettering, navy, amber and teal, 60 px; the same card is reused on the notes screen): "Shape, speed, size." On "cubed" the third slot glows. Hold about 2 seconds.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Jupiter's orbit around the Sun has a semi-major axis of five point two zero astronomical units. Using Earth's orbit as a reference, calculate Jupiter's orbital period in Earth years. Pause here to answer.
 
-Visual: `QuestionCard` (subject "Physics"), worded as printed: "Jupiter orbits the Sun with a semi-major axis of 5.20 AU. Earth's orbit has a semi-major axis of 1.00 AU and a period of 1.00 year. Use Kepler's third law to calculate Jupiter's orbital period in years." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with the painted Jupiter (`y12p-jupiter-v1.png`, inspected) small beside it, worded as printed: "Jupiter orbits the Sun with a semi-major axis of 5.20 AU. Earth's orbit has a semi-major axis of 1.00 AU and a period of 1.00 year. Use Kepler's third law to calculate Jupiter's orbital period in years." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 12. feedback 1 (brief)
 > Both orbit the Sun, so T squared over a cubed is the same, and for Earth it's one in these units. So T squared equals five point two zero cubed, about one hundred and forty-one, and T is about eleven point nine **years**. The slip to avoid is cubing the period and squaring the distance, the wrong way **round**.
 
-Visual: card shrinks to the top. Rows: "T²/a³ = 1 (Earth, AU and years)", "T² = 5.20³ = 140.6", on "years" "T = √140.6 = 11.9 years" boxed. On "round" a chip "T³ = a² → T = 3.0 years" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px): "T²/a³ = 1 (Earth, AU and years)", "T² = 5.20³ = 140.6", on "years" "T = √140.6 = 11.9 years" in a dark-ink frame (52 px). On "round" a chip "T³ = a² → T = 3.0 years" fades in and is crossed. Hold about 1 second.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Mars is one point three eight one astronomical units from the Sun at perihelion, and one point six six six at aphelion. At which of these points is Mars moving faster, and by what factor? Pause here to answer.
 
-Visual: `QuestionCard`, worded as printed: "At perihelion Mars is 1.381 AU from the Sun; at aphelion it is 1.666 AU from the Sun. (a) At which of these two points does Mars move faster? (b) Calculate the ratio of its speed at that point to its speed at the other point. Justify your answers using Kepler's second law." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with the Mars plate small beside it, worded as printed: "At perihelion Mars is 1.381 AU from the Sun; at aphelion it is 1.666 AU from the Sun. (a) At which of these two points does Mars move faster? (b) Calculate the ratio of its speed at that point to its speed at the other point. Justify your answers using Kepler's second law." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 14. feedback 2 (brief)
 > It's faster at perihelion, the closer point. r times v is the same at both points, so the speed ratio is the inverse of the distance ratio: one point six six six over one point three eight one, about one point two **one**. The slip is flipping the ratio and saying it's faster far **away**.
 
-Visual: card shrinks to the top; "Kepler's second law" underlines. A small ellipse with two thin triangles. Rows: "equal areas: r_p v_p = r_a v_a"; on "one" "v_p / v_a = r_a / r_p = 1.666 / 1.381 = 1.21" boxed, "(a) perihelion". On "away" a chip "faster at aphelion, ratio 0.83" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top; "Kepler's second law" underlines. A small ellipse with two thin triangles. Rows (44 px): "equal areas: r_p v_p = r_a v_a"; on "one" "v_p / v_a = r_a / r_p = 1.666 / 1.381 = 1.21" in a dark-ink frame (52 px), "(a) perihelion". On "away" a chip "faster at aphelion, ratio 0.83" fades in and is crossed. Hold about 1 second.
 
 ### 15. handoff
 > So Kepler's laws describe the shape, speed and size of every orbit, and gravity explains them. As Halley's comet falls in, it speeds up, trading one kind of energy for another. But how much gravitational energy does something have out in space? Next, we'll see why that energy uses a zero at **infinity**.
 
-Visual: board clears to Halley's ellipse with the Sun plate; the comet at aphelion. As "falls in" is spoken a speed bar rises and an empty energy bar labelled "gravitational energy?" falls as the comet runs in, then the comet returns to aphelion. On "infinity" a dashed line runs from the comet outwards off the right edge to "∞", with a chip "U = ?" and the chip "Next: why does gravitational potential energy use a zero at infinity?". Hold about 2 seconds. This is the final frame.
+Visual: board clears to Halley's ellipse with the Sun plate; the comet plate at aphelion. As "falls in" is spoken a teal speed bar rises and an empty energy bar labelled "gravitational energy?" falls as the comet runs in, then the comet returns to aphelion. On "infinity" a dashed line runs from the comet outwards off the right edge to "∞", with a chip "U = ?" and the chip "Next: why does gravitational potential energy use a zero at infinity?". Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 50 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Kepler's first law (shape): each planet moves on an ellipse with the Sun at one focus. Semi-major axis a = half the longest width; a circle is the special case with a = r.
-2. Kepler's second law (speed): the line from the Sun sweeps equal areas in equal times, so a planet is fastest at perihelion. At perihelion and aphelion r_p v_p = r_a v_a. Cause: gravity points at the Sun, so it speeds the planet on the way in and slows it on the way out.
-3. Kepler's third law (size): T² ∝ a³, with a³/T² = GM/4π² the same for everything orbiting one central body. For the Sun, with a in AU and T in years, T² = a³.
-4. Use the semi-major axis, a = (closest + furthest)/2, never one extreme distance.
+1. Law 1 (shape): an ellipse with the Sun at one focus.
+2. Law 2 (speed): equal areas in equal times; fastest at perihelion.
+3. At the two ends r_p v_p = r_a v_a; gravity speeds it in, slows it out.
+4. Law 3 (size): T² ∝ a³, one constant per central body (AU, years: T² = a³).
+5. a = (closest + furthest)/2; for a circle, a = r.
 
-Memory aid (large, on the notes screen): *Shape, speed, size.*
+Memory aid (framed card under the notes, hand lettering, navy, amber and teal as in scene 10): *Shape, speed, size.* Notes in the role colours, 32 px; about 310 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
@@ -176,13 +181,13 @@ Model answer: (a) Perihelion. The line from the Sun sweeps equal areas in equal 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Halley (NASA) | perihelion 0.5871 AU (1986); aphelion 35.25 AU (1948); e = 0.967; return 2061; average period about 76 years | 1, 8, 9, 15 |
-| Halley a and T | a = (0.5871 + 35.25)/2 = 17.92 AU; T = 17.92^1.5 = 75.85 years ≈ 76 | 8 |
+| Halley a and T | a = (0.5871 + 35.25)/2 = 17.9186 AU ("17.92", carried); T = 17.9186^1.5 = 75.85 years ("75.8", ≈ 76); with the rounded 17.92, 75.86 years (not used) | 8 |
 | Mistake values | 35.25^1.5 = 209.3 years; 0.5871^1.5 = 0.450 years | 9 |
 | Earth (NASA) | 147.095 and 152.100 × 10⁶ km; ratio 1.0340; speeds 30.29 and 29.29 km s⁻¹, ratio 1.0341 ("about three per cent") | 6 |
 | Mars (NASA) | a = 1.5238 AU ("1.524"); T = 1.8808 yr ("1.881"); a³ = 3.537; T² = 3.537 ("3.54") | 7 |
 | A1 | 5.20³ = 140.6; T = 11.86 ≈ 11.9 years; slip T = 5.20^(2/3) = 3.00 years | 11, 12 |
 | A2 | 1.666 / 1.381 = 1.206 ≈ 1.21; inverse 0.829 ≈ 0.83 | 13, 14 |
-| Teaching ellipse | e = 0.6 (screen only, tagged) | 3 to 5 |
+| Teaching ellipse | e = 0.6 (screen only, tagged); scene 3 in units of a = 1: d₁ + d₂ = 2.00 (0.40 + 1.60, 1.00 + 1.00); scene 4 teaching orbit a = 1 AU, T = 1 yr: b = 0.80 AU, area per month = πab/12 = 0.209 AU²; r_p = 0.40 AU, r_a = 1.60 AU; v_p = 29.78 × 2 = 59.6 km s⁻¹, v_a = 29.78 × 0.5 = 14.9 km s⁻¹; r v = 23.8 at both ends | 3 to 5 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
@@ -192,6 +197,7 @@ Checked with Python (6 Nov); Codex to re-check.
 - Earth: 152.100 / 147.095 = 1.034026; 30.29 / 29.29 = 1.034141.
 - Mars: 227.956 / 149.598 = 1.523790 AU; 686.980 / 365.256 = 1.880818 yr; 1.523790³ = 3.537237; 1.880818² = 3.537476. Perihelion 206.650 / 149.598 = 1.381369 AU; aphelion 249.261 / 149.598 = 1.666205 AU; ratio 249.261 / 206.650 = 1.206199.
 - Jupiter: 5.20³ = 140.608; √140.608 = 11.858 years; NASA 5.2038 AU and 11.862 years. 5.20^(2/3) = 3.000.
+- Revision 2 teaching orbit (a = 1 AU, e = 0.6, Earth's mean speed 29.78 km s⁻¹): v_p = 29.78 √((1 + e)/(1 − e)) = 59.56 km s⁻¹; v_a = 29.78 √((1 − e)/(1 + e)) = 14.89 km s⁻¹ (vis-viva with GM_Sun = 1.32712 × 10²⁰ m³ s⁻² gives 59.57 km s⁻¹ at 0.4 AU); b = √(1 − 0.36) = 0.80; πab/12 = 0.20944 AU². Halley with rounded a: 17.92^1.5 = 75.859.
 
 ## Memory aid check
 
@@ -200,7 +206,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,679 characters**, 16 scenes. Characters per scene (1 to 16): 405, 345, 497, 347, 520, 497, 569, 478, 335, 275, 215, 304, 219, 282, 301, 75. At 13.3 characters per second the speech is about 427 s; add about 3 s for the prediction countdown, about 4 s for the comet's real-proportion replay in scene 1, about 2 s for the circle-fit attempts in scene 2, about 2 s for the sector fills in scene 4, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 92 s of holds and countdowns): **about 519 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's Tycho clause (keep the ledger page); scene 6's NASA sentence (keep the chip); scene 8's last sentence.
+
+Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,679): **5,664 characters**, 16 scenes (narration unchanged). Characters per scene (1 to 16): 405, 345, 497, 347, 520, 497, 569, 478, 335, 275, 215, 304, 219, 282, 301, 75. At 13.3 characters per second the speech is about 426 s; add about 3 s for the prediction countdown, about 4 s for the comet's real-proportion replay in scene 1, about 2 s for the circle-fit attempts in scene 2, about 2 s for the shape slider in scene 3, about 2 s for the sector fills in scene 4, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 83 s of holds and countdowns): **about 509 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's Tycho clause (keep the ledger page); scene 6's NASA sentence (keep the chip); scene 8's last sentence.
 
 ## Opening frame
 
@@ -216,33 +223,31 @@ Lesson key `p-y12-m5-v20` (route phys-y12-m5-v20). Suggested explainer folder `s
 
 In order (16 scene headings): hook, kepler-laws, law-1-ellipse, law-2-areas, gravity-cause, end-speeds, law-3, worked-halley, extreme-mistake, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
 
-Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). `motionTools`: Kepler orbit stage (kit gap 5), `AlignedAlgebra`, table, `Countdown`, `CameraStage`. Transitions: 1 camera pull back; 1 to 2 clear change; 2 to 3 camera change; 3 to 4 to 5 camera continue; 5 to 6 camera push; 6 to 7 clear change; 7 to 8 camera change; 8 to 9 camera continue; 9 to 10 clear change; attempts card shrink; 14 to 15 clear change; 15 to 16 fade.
+Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). `motionTools`: Kepler orbit stage (kit gap 5) with live d₁ + d₂, r, v and area readouts and a shape slider, `AlignedAlgebra`, table, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (Revision 2): 1 camera pull back; 1 to 2 clear change; 2 to 3 camera change; 3 to 4 camera continue; 4 to 5 camera push to the close-up; 5 to 6 camera push to the ends; 6 to 7 clear change; 7 to 8 camera change; 8 to 9 camera continue; 9 to 10 clear change; attempts card shrink; 14 to 15 clear change; 15 to 16 fade.
 
-Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m5-v20-learning-review.md`, `checks/p-y12-m5-v20-physics-check.md`.
+Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v20-learning-review.md`, `checks/p-y12-m5-v20-science-check.md`.
 
 ## Assets
 
-Have (inspected 6 Nov on a session contact sheet; scaled uniformly only):
+
+Have (inspected 6 Nov with the Read tool; scaled uniformly only, never stretched):
 - `public/assets/physics/phys-y11-sun-v1.png` (1254 × 1254, RGBA, watercolour Sun): scenes 1 to 9, 15.
 - `public/assets/physics/phys-y11-earth-v1.png`: scenes 1, 6, 7.
+- `public/assets/physics/y12p-comet-v1.png` (1983 × 793, RGBA, with JSON; delivered in brief 188: nucleus and coma at the right, dust and ion tails to the left): scenes 1, 8, 9, 15; rotated about the nucleus in code.
+- `public/assets/physics/y12p-mars-v1.png` (1254 × 1254, RGBA, with JSON; delivered in brief 188): scenes 2, 7, 13.
+- `public/assets/physics/y12p-jupiter-v1.png` (1254 × 1254, RGBA; existing banded Jupiter): scene 11, small beside the card.
 - **Checked, not used:** `public/assets/sun.png` (cartoon rays, off style).
 
-Need (new plates, Codex), in priority order:
-1. `y12p-comet-v1.png`: scenes 1, 8, 9, 15. Essential (the case the lesson explains).
-2. `y12p-mars-v1.png`: scenes 2, 7. Useful; fallback a coded red disc.
+Need (new plates, Codex): none (Revision 2: the comet and Mars are delivered).
 
-Coded: ledger page, plotted dots, ellipses, foci, constant-sum lines, sectors, triangles, arrows and components, scale chips, tables, algebra, chips, cards, countdowns, notes board.
+Coded: ledger page, plotted dots, ellipses, foci, constant-sum lines, sliders and readouts, sectors, triangles, arrows and components, scale chips, tables, algebra, chips, cards, countdowns, notes board.
 
-Kit gaps: 5. **Kepler orbit stage** (ellipse from a and e; body positions from Kepler's equation; equal-time sectors; velocity from the model; gravity split into along-path and perpendicular components; constant-sum focus lines; true-shape and teaching-shape modes).
+Kit gaps: 5. **Kepler orbit stage** (ellipse from a and e; body positions from Kepler's equation; equal-time sectors with a live area readout; live r and v from the model; gravity split into along-path and perpendicular components; constant-sum focus lines with live d₁ and d₂; a shape slider; true-shape and teaching-shape modes).
 
 ## Codex asset brief (Year 12 Physics M5 v20: comet and Mars)
 
-Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/phys-y12-m5-v20.md`. Paint after the reviews pass and the owner gives the go-ahead. Save to `public/assets/physics/`. Transparent PNG with a true alpha channel, clean edges with no fringe or halo, ink and watercolour matched to `phys-y11-sun-v1.png` and `phys-y11-earth-v1.png`, at least 8 per cent clear margin, no text, labels, people, backdrop, stars or glow beyond the comet's own coma. Never stretch.
 
-1. `y12p-comet-v1.png` (2000 × 800 px): a comet seen side-on: a small bright nucleus with a soft coma at the right, a long pale dust tail fanning to the left and a thinner straight bluish ion tail beside it, both tails fading to transparent. The nucleus must read at 30 px. Codex reports the nucleus centre in plate pixels (the code rotates the plate about it so the tails point away from the Sun).
-2. `y12p-mars-v1.png` (1254 × 1254 px): Mars as a full sphere, rusty red with darker markings and a small white polar cap, soft limb shading, same edge style as the Earth plate. Codex writes `y12p-mars-v1.json` with centre and radius, matching the Earth plate's JSON.
-
-Report inspection on the paper and dark backgrounds at about 400 px and at 30 px. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/phys-y12-m5-v20-provenance.json`.
+Revision 2 (6 Nov 2026): items 1 and 2 (`y12p-comet-v1.png`, `y12p-mars-v1.png`) were delivered in brief 188 and are accepted at native size. No new plate requests.
 
 ## Codex error-check brief
 
@@ -279,3 +284,26 @@ Planet and comet data: NASA. Next: why gravitational potential energy uses a zer
 
 - Revision 1 has had no independent review. Next: student learning review (is the constant-sum ellipse definition needed or can it be a picture only; is the thin-triangle step followable at speed), then the physics check and the Codex error check.
 - Judge the comet's real-proportion motion and the equal sectors at playback speed.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 188 findings (`checks/p-y12-m5-v20-learning-review.md`, `checks/p-y12-m5-v20-science-check.md`): 0 blocker, 1 should fix, 1 optional.
+- **Should fix, orbit stages (root decision 10 velocity colour).** Resolved: speed arrows, speed bars and speed readouts are teal in scenes 1, 4, 5, 6 and 15; gravity's along-path component is dashed amber (a force), no longer dashed orange; orange does not appear (it is kinetic energy's colour from v21 on).
+- **Optional, Decisions handoff bullet (scene 16 named).** Resolved: the bullet now names scene 15, matching the script and "Final frame".
+
+Notes in the reports, also acted on: the year counter now runs only forwards (1986, out, back to 2061), with the far-end chip giving the distance without a year; the Halley power line uses the carried a (17.9186^1.5 = 75.8 years), because the rounded 17.92 gives 75.9.
+
+Visual upgrade (to `../maths-visual-standard.md` and the build gate):
+- Decisions gain "Type sizes", "Anchor", "Simulation" and "Stage changes"; the colour key states teal velocity, the amber force component and full-opacity grey.
+- Plates: the delivered comet and Mars move to "Have" (inspected); the existing Jupiter plate is added beside attempt 1 and the Mars plate beside attempt 2. Scene 1 already opens on the painted Sun and comet.
+- Live controls: the core one is scene 4's equal-area run on a teaching orbit (a = 1 AU, e = 0.6) with live r, v and area readouts (Python: 0.209 AU² a month; 0.40 AU and 59.6 km s⁻¹ at perihelion, 1.60 AU and 14.9 km s⁻¹ at aphelion); scene 3 adds live d₁ + d₂ readouts and a shape slider; scenes 1, 5 and 7 add a live speed bar, a live speed readout and lap counters.
+- Stage changes: scene 5 becomes a close-up of the inward and outward legs, which breaks the scenes 3 to 5 Kepler-stage run (about 105 s in Revision 1); scene 8 adds full-width working under Halley's ellipse.
+- Hand tags and a pen mark in role colours in every teaching scene ("crawls", "races", "no circle fits", "an ellipse does", "sum stays the same", "nothing here", "fast", "slow", "part along the motion", "part against it", "short r, long base", "about 3 % faster", "a in place of r", "AU and years", "half the long axis", "power 1.5", "not one end", "the average").
+- Framed answers: v_p/v_a = r_a/r_p and 1.034 (6), the matching 3.54s (7), 75.8 years (8), a = (r_min + r_max)/2 (9) and every feedback result.
+- Scene 10 and the notes: the memory aid is a framed card; key notes cut from four dense items (about 680 characters) to five short bullets (about 310 characters); quiet notes hold 60 s to 50 s.
+- Question cards arrive with their full text in one move.
+- Type sizes stated; grey tags at full opacity.
+
+New plate requests: none.
+
+Counts: 5,679 (joined) or 5,664 (scene sum) to 5,664 characters (scene sum; narration unchanged); about 519 s to about 509 s.

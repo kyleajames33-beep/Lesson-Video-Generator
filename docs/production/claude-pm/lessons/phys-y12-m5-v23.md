@@ -1,8 +1,8 @@
 # Year 12 Physics M5 V23: Escape velocity. What minimum launch speed allows escape without further propulsion? (design)
 
-Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,585 characters, 15 scenes, about 513 s, counted by script with the build parser rules (see "Narration length estimate"). Last video of Module 5.
+Narration 5,570 characters (scene sum; Revision 1 stated 5,585 by the joined convention), 15 scenes, about 503 s, counted by script with the build parser rules (see "Narration length estimate"). Last video of Module 5.
 
 Scope: Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), inquiry question "How does the force of gravity determine the motion of planets and satellites?". Templates as `phys-y12-m5-v17.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson16.sa.html`, SHA256 `042db07a785136be57b3e58e165d27e71c4f98e4a992d449e1da6b100c2de8cc` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m5-v23`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Use total energy zero at infinity to derive escape speed, state no drag/no propulsion assumptions and distinguish orbit speed. Stop before relativistic escape." Next: "phys-y12-m6-v01: How does voltage between parallel plates determine a charged particle acceleration?"
 
@@ -16,12 +16,12 @@ This video covers the escape velocity example; v21 and v22 covered the others.
 
 Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx (page 54)
 
-**Boundary:** starts on v22's final frame (a probe on Earth's surface with an upward launch arrow "v = ?", the energy graph with the dashed "E = 0: escape?" band). Teaches: the case (a probe launched straight up with no air and no engine after launch: 5 km s⁻¹ rises about 4,200 km, 10 km s⁻¹ about 25,000 km, both return); the energy picture (constant E; K turns into U; the climb to infinity is finite); the threshold (arrival at infinity with zero speed, E = 0), the derivation v_esc = √(2GM/r) with m cancelling; Earth's value 11.2 km s⁻¹ (NASA 11.186); comparison with circular orbit speed (√2 times; the 400 km case); classification by total energy (bound, threshold, escape with speed to spare, v∞ = √(v² − v_esc²)); independence of mass and direction (unless the path hits the planet); the model's assumptions and why rockets do not leave the pad at 11.2 km s⁻¹; a closing link to Module 6's uniform electric field. Stops before relativistic escape, black holes and the Schwarzschild radius (site enrichment), and heliocentric escape (frames).
+**Boundary:** starts on v22's final frame (a probe on Earth's surface with an upward launch arrow "v = ?", the energy graph with the dashed "E = 0: escape?" band). Teaches: the case (a probe launched straight up with no air and no engine after launch: 5 km s⁻¹ rises about 1,600 km (Revision 2 correction), 10 km s⁻¹ about 25,000 km, both return); the energy picture (constant E; K turns into U; the climb to infinity is finite); the threshold (arrival at infinity with zero speed, E = 0), the derivation v_esc = √(2GM/r) with m cancelling; Earth's value 11.2 km s⁻¹ (NASA 11.186); comparison with circular orbit speed (√2 times; the 400 km case); classification by total energy (bound, threshold, escape with speed to spare, v∞ = √(v² − v_esc²)); independence of mass and direction (unless the path hits the planet); the model's assumptions and why rockets do not leave the pad at 11.2 km s⁻¹; a closing link to Module 6's uniform electric field. Stops before relativistic escape, black holes and the Schwarzschild radius (site enrichment), and heliocentric escape (frames).
 
 ## Decisions
 
 - **Learner question (route wording kept).** "What minimum launch speed allows escape without further propulsion?" The answer, built in order: a launched probe trades K for U and returns if K runs out first (1, 2); U only rises to zero, so a finite K can be enough (2); the minimum is reaching infinity with zero speed, E = 0 (3); so v_esc = √(2GM/r), 11.2 km s⁻¹ from Earth (3, 4); it is √2 times the orbital speed (5); the sign of E sorts every launch (6); mass and direction do not matter (7); only under the stated assumptions (8).
-- **Hook (site hook and Think First, made concrete).** A probe launched vertically; heights computed exactly from energy conservation (author note a): 5 km s⁻¹ → 4.21 × 10⁶ m (mgh would predict 1.28 × 10⁶ m, a v21 echo shown as a grey tag only); 10 km s⁻¹ → 2.49 × 10⁷ m. The question "does it have to be infinite?" is the surprise the v21 area result answers. Prediction with a 3 s countdown.
+- **Hook (site hook and Think First, made concrete).** A probe launched vertically; heights computed exactly from energy conservation (author note a): 5 km s⁻¹ → 1.58 × 10⁶ m, "about one thousand six hundred kilometres" (mgh would predict 1.28 × 10⁶ m, a v21 echo shown as a grey tag only); 10 km s⁻¹ → 2.49 × 10⁷ m. Revision 2 (brief 188): the 5 km s⁻¹ height was wrong (4.21 × 10⁶ m belongs to about 7.07 km s⁻¹) and is corrected in speech, on screen and in the notes. The question "does it have to be infinite?" is the surprise the v21 area result answers. Prediction with a 3 s countdown.
 - **Derivation (site card 1 and "Apply 6 marks").** Total energy at infinity in the minimum case is 0 + 0; conservation (only gravity does work) carries E = 0 back to launch; ½mv² − GMm/r = 0; m cancels; v = √(2GM/r). "The 2 goes inside the root" is shown and narrated as the site's HSC trap.
 - **Earth's value.** Data sheet constants give 1.121 × 10⁴ m s⁻¹; NASA Earth Fact Sheet 11.186 km s⁻¹ (author note b); site 11.2.
 - **Orbit versus escape (route stop "distinguish orbit speed").** √2 relation; surface values 7.93 and 11.2 km s⁻¹; at 400 km, 7.69 (v18) and 10.87 km s⁻¹, an extra 3.18 km s⁻¹ (author note c). A2 tests the factor.
@@ -31,7 +31,11 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
 - **Module close and handoff (route next).** Scene 14 closes Module 5 in one sentence and bridges to Module 6 through uniform fields: the near-surface gravitational field arrows (parallel, equal) morph into the field between two coded parallel plates with a charged particle; the question chip states the route's next question (with "particle's" possessive).
 - **Memory aid.** "Escape is root two times orbit; the two goes inside the root." See "Memory aid check".
 - **Attempts.** A1 (site Activity 1 Mars, with NASA radius 3.39 × 10⁶ m and the site's mass 6.42 × 10²³ kg): 5.03 × 10³ m s⁻¹ (NASA 5.03 km s⁻¹), plus one assumption. A2 (new): the factor by which a circular-orbit satellite's speed must rise to escape: √2 ≈ 1.41. Crossed: A1 "leaving out the 2" (3.55 km s⁻¹); A2 "doubling".
-- **Colour key.** As v22; launch velocity orange; E bar navy; thrust green.
+- **Colour key (root decisions 2 and 10; Revision 2).** Velocity teal (launch arrows, speed readouts and the escape and orbit arrows; previously orange); kinetic energy orange; potential energy violet; total energy navy (E bars); thrust and extra speed green; framed answers in a dark-ink box; crossed chips and their hand tags red; grey at full opacity.
+- **Type sizes (Revision 2, 1080p):** the current working line at least 44 px (scenes 3, 4 and the feedback rows 52 px; the framed "v_esc = √(2GM/r)" 60 px); live readouts (scenes 1, 2, 6, 8) about 52 px; supporting lines, givens, lane labels and chips 30 to 36 px; hand-font tags at least 30 px; question text 36 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
+- **Anchor (Revision 2).** Scene 1 launches the delivered satellite plate (the probe) from the painted Earth; the painted rocket carries scene 8; the delivered Mars plate sits beside attempt 1.
+- **Simulation (Revision 2).** The core live control is a launch-speed slider on the vertical launch stage (scenes 1 and 6) with live launch speed, E per kilogram and result readouts (5 km s⁻¹: −5.03 × 10⁷ J kg⁻¹, back from about 1,600 km; 8: −3.08 × 10⁷, about 6,600 km; 10: −1.28 × 10⁷, about 25,000 km; 11.2: 0, just escapes; 14: +3.52 × 10⁷ J kg⁻¹, escapes with 8.39 km s⁻¹ to spare). Scene 2 adds riding energy bars with a live speed readout; scene 8 a live speed readout on the rocket's slow climb.
+- **Stage changes (Revision 2).** Scenes 1 and 2 the launch stage; scene 3 the algebra column; scene 4 full-width working; scene 5 the gravity stage with the two formulas; scene 6 the launch slider and lanes; scene 7 the three directions; scene 8 the model box and rocket. No set-up runs past about 80 s.
 - **Site sources used:** lesson 16 intro and hook (11.2 km s⁻¹; rockets do not get one kick), Think First (estimate; does mass matter), vocabulary (escape velocity, reference at infinity, threshold, residual speed), the core model box (assumptions), misconceptions (continuous thrust; heavier rockets), card 1 (derivation, HSC trap, Earth worked example), card 2 (characteristics, energy classification, 2R example in author note), Activity 1 (Mars, 14 km s⁻¹), Activity 2 (mass cancels), the "Apply 6 marks" and "Account 5 marks" answers (scenes 3, 7, 8). Not used: the Schwarzschild enrichment; New Horizons and heliocentric frames; the Oberth effect; Jupiter's escape speed; conic labels.
 - **Site notes (for root to log if accepted):**
   1. Lesson 16, short-answer SA1 model answer: the speed at infinity is computed as √(12² − 10.4²) = 5.99 km s⁻¹ using the rounded 10.4 km s⁻¹; with the unrounded 10.36 km s⁻¹ it is √(144 − 107.4) = 6.05 km s⁻¹. Premature rounding (as in the lesson 3 correction); suggest 6.05 km s⁻¹ (6.1 km s⁻¹ to 2 s.f.).
@@ -44,7 +48,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
 - **New explainer motion:** **vertical launch stage** (kit gap 8: probe launched radially from the Earth plate at a chosen speed, motion from energy conservation in real proportion with a slow-motion factor, maximum height readout, optional mgh ghost, with K, U and E bars riding alongside); the energy bars (kit gap 7) and the well graph (kit gap 6); the gravity stage; **uniform-field morph** (parallel equal arrows near a flat ground segment morphing into the field between two coded plates); `AlignedAlgebra`; `Countdown`; `QuestionCard`; `Chip` with `cross`; `KeyNotes`.
 - **No human figures.** No crew; the rocket has no people drawn.
 - **Author notes (not learner copy):**
-  (a) Maximum height for a vertical launch from R at speed v: 1/r_max = 1/R − v²/(2GM). 5 km s⁻¹: r_max = 1.0583 × 10⁷ m, h = 4.21 × 10⁶ m; 8 km s⁻¹: h = 6.62 × 10⁶ m (not shown); 10 km s⁻¹: r_max = 3.1227 × 10⁷ m, h = 2.49 × 10⁷ m. mgh estimate for 5 km s⁻¹: v²/2g = 1.28 × 10⁶ m.
+  (a) Maximum height for a vertical launch from R at speed v: 1/r_max = 1/R − v²/(2GM). 5 km s⁻¹: r_max = 7.9538 × 10⁶ m, h = 1.58 × 10⁶ m (Revision 2; Revision 1 wrongly gave 1.0583 × 10⁷ m and 4.21 × 10⁶ m, which is the height for about 7.07 km s⁻¹); 8 km s⁻¹: h = 6.62 × 10⁶ m (slider readout "about 6,600 km"); 10 km s⁻¹: r_max = 3.1227 × 10⁷ m, h = 2.49 × 10⁷ m. mgh estimate for 5 km s⁻¹: v²/2g = 1.28 × 10⁶ m.
   (b) NASA Earth Fact Sheet (nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html): escape velocity 11.186 km s⁻¹, GM 3.9860 × 10¹⁴ m³ s⁻²; the data sheet GM (4.002 × 10¹⁴) gives 11.21 km s⁻¹.
   (c) Earth's rotation adds up to 0.46 km s⁻¹ for an eastward launch at the equator, a frame detail not narrated.
   (d) Below-threshold paths: radial launches return; sideways launches above the circular speed give ellipses (v20); the conic labels are site content but not narrated (route stop; site applicability caution).
@@ -52,9 +56,9 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
   (f) Pronunciations: "the square root of two big G M over r"; "eleven point two kilometres per second"; "root two".
 
 - **Open decisions for root:**
-  - **1. Module 6 bridge (root).** Scene 14 uses a uniform-field analogy (near-surface gravity ↔ parallel plates). Confirm it fits phys-y12-m6-v01's own opening (not yet designed); if m6-v01 opens differently, scene 14's visual can end on the plates alone.
+  - **1. Module 6 bridge (root).** Revision 2: settled; `phys-y12-m6-v01.md` is now designed and its "Opening frame" quotes this design's final frame (plates, "E: uniform", "V", "+q" with "a = ?", the gravity inset and both chips). Scene 14 and "Final frame" are unchanged so the join holds.
   - **2. Rocket plate (root).** `phys-y11-rocket-v1.png` (a slim sounding-rocket style, 2400 × 800) is reused in scene 8, rotated to vertical. Confirm the rotation reads correctly (the plate is drawn horizontal); fallback: a coded rocket outline.
-  - **3. Hook heights (learning review).** The two heights are exact energy results shown before the method; confirm the review is comfortable with "we'll see why" values in the hook (they are recomputed nowhere else in the lesson).
+  - **3. Hook heights (learning review).** Revision 2: brief 188 accepted "we'll see why" values in the hook but found the 5 km s⁻¹ height wrong; corrected to about 1,600 km (author note a).
 
 Main question: *Launch a probe straight up with no air and no engine after launch. Faster launches go higher and still fall back. Is there a speed at which it never returns, and why isn't it infinite?*
 Entry knowledge: v18, v21, v22.
@@ -66,85 +70,86 @@ Handoff: Module 6 v01, how voltage between parallel plates determines a charged 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *v*, *v_esc*, *r*, *G*, *M*, *m*, *E*. Paper background and handwritten headline face as the explainer house style.
 
 ### 1. hook (does it ever not come back?)
-> Launch a probe straight up from Earth's surface, with no air, and no engine after launch. At five kilometres per second, it climbs about four thousand two hundred kilometres before falling back. At ten kilometres per second, it gets about twenty-five thousand kilometres up, and still falls **back**. Is there a launch speed where it never comes back at all, and does that speed have to be infinite? Have a **think**.
+> Launch a probe straight up from Earth's surface, with no air, and no engine after launch. At five kilometres per second, it climbs about one thousand six hundred kilometres before falling back. At ten kilometres per second, it gets about twenty-five thousand kilometres up, and still falls **back**. Is there a launch speed where it never comes back at all, and does that speed have to be infinite? Have a **think**.
 
-Visual: opens on v22's final frame (see "Opening frame"); the energy graph shrinks to the top right. Vertical launch stage (kit gap 8): the satellite plate (`y12p-satellite-v1.png`, here "probe") leaves Earth's surface straight up at "5 km s⁻¹", rises (time compressed, clock readout), stops at a height marker "h = 4.2 × 10⁶ m", falls back; a faint grey ghost marker at "mgh estimate: 1.3 × 10⁶ m" (tag "v21: constant g underestimates the climb"). On "back" a second launch at "10 km s⁻¹" rises far higher (Earth scaled down to fit), marker "h = 2.5 × 10⁷ m", and falls back. On "think" the 3 s `Countdown` runs beside "Never comes back: at what speed? Infinite?" with chips "infinite", "a finite speed", "no such speed".
+Visual: opens on v22's final frame (see "Opening frame"); the energy graph shrinks to the top right. Vertical launch stage (kit gap 8) with the live launch-speed control (see "Simulation"): the satellite plate (`y12p-satellite-v1.png`, here "probe") leaves the painted Earth (`phys-y11-earth-v1.png`) straight up with a teal readout (52 px) "launch speed: 5 km s⁻¹" and a live height readout; it rises (time compressed, clock readout), stops at a height marker "h = 1.6 × 10⁶ m" and falls back; a grey ghost marker sits at "mgh estimate: 1.3 × 10⁶ m" (tag "v21: constant g underestimates the climb"). On "back" the slider moves to "10 km s⁻¹" and a second launch rises far higher (Earth scaled down to fit), marker "h = 2.5 × 10⁷ m", and falls back. Hand tags (30 px): teal "faster", grey "still falls back", and a grey pen ring round the two height markers. On "think" the 3 s `Countdown` runs beside "Never comes back: at what speed? Infinite?" with three option chips (36 px) "infinite", "a finite speed", "no such speed".
 
 ### 2. trading kinetic for potential energy
 > Think about its energy. With gravity the only force, its total energy, kinetic plus potential, stays the same. As it climbs, kinetic energy turns into potential energy, so it slows down. Each extra kilometre costs less than the one before, because the pull keeps weakening. If its kinetic energy runs out before it gets far enough, it stops and falls back. But remember, potential energy only rises to zero, even at infinity. So the probe needs only enough kinetic energy to cover that finite climb, not an infinite **amount**.
 
-Visual: camera continue; the 10 km s⁻¹ launch replays with energy bars (kit gap 7) riding beside the probe: navy E bar fixed (below zero), orange K shrinking, violet U rising towards the zero line; at the top K is zero and U still below zero, so it falls. Heading writes on: "What minimum launch speed allows escape without further propulsion?". On "amount" a small inset of v21's well graph: the zero line at the rim, a bracket from the surface value up to the rim "finite climb: GMm/R".
+Visual: camera continue; the 10 km s⁻¹ launch replays with energy bars (kit gap 7) riding beside the probe: navy E bar fixed (below zero), orange K shrinking, violet U rising towards the zero line, and a live teal speed readout falling; at the top K is zero and U is still below zero, so it falls. Heading writes on: "What minimum launch speed allows escape without further propulsion?". On "amount" a small inset of v21's well graph: the zero line at the rim, a bracket from the surface value up to the rim "finite climb: GMm/R" (36 px). Hand tags: orange "K runs out", violet "U only rises to 0", and a navy pen ring round the fixed E bar.
 
 ### 3. the threshold: zero total energy
 > The slowest escape is when the probe just reaches infinity, with zero speed left. Out there, its kinetic energy is zero, and its potential energy is zero, so its total energy is zero. Total energy doesn't change, so it must be zero at **launch** too. At launch, that's a half m v squared, minus big G M m over r, equals zero. It's like having exactly enough to pay for the whole climb, with nothing left over. The mass m **cancels**. So v squared equals two big G M over r, and the escape velocity is the square root of two big G M over **r**.
 
-Visual: camera push to the right column. A two-state strip: "at infinity (just escaping): K = 0, U = 0, E = 0" with the probe drawn tiny at "∞" and its bars all at zero. On "launch" an arrow carries "E = 0" back to "at launch: E = 0". `AlignedAlgebra`: "½mv² − GMm/r = 0", "½mv² = GMm/r"; on "cancels" both m's strike through. "v² = 2GM/r". On "r" boxed "v_esc = √(2GM/r)", tag "the 2 is inside the root".
+Visual: camera push to the right column. A two-state strip (36 px): "at infinity (just escaping): K = 0, U = 0, E = 0" with the probe drawn tiny at "∞" and its bars all at zero. On "launch" an arrow carries "E = 0" back to "at launch: E = 0". `AlignedAlgebra` (current line 52 px): "½mv² − GMm/r = 0", "½mv² = GMm/r"; on "cancels" both m's strike through. "v² = 2GM/r". On "r" "v_esc = √(2GM/r)" in a dark-ink frame (60 px), tag "the 2 is inside the root". Hand tags: navy "E = 0 at the start too", red "m cancels", and a navy pen ring round the 2 inside the root.
 
 ### 4. Earth's escape velocity
 > From Earth's surface, with the data sheet values, that's the square root of two times four point zero zero two times ten to the fourteen, over six point three seven one times ten to the six. That gives about one point one two times ten to the four metres per second, or eleven point two kilometres per **second**. NASA quotes the same value, eleven point two. That's about forty thousand kilometres an **hour**. From the Moon, with far less mass, it's only about two point four.
 
-Visual: calculation layout. Task strip: "Find the escape velocity from Earth's surface." Equation strip: "v_esc = √(2GM/r)". Givens grouped: "GM = 4.002 × 10¹⁴ m³ s⁻² (data sheet G and M_E)", "r = R_E = 6.371 × 10⁶ m". `AlignedAlgebra`: "v_esc = √(2 × 4.002 × 10¹⁴ / 6.371 × 10⁶) = √(1.2563 × 10⁸)"; on "second" "= 1.12 × 10⁴ m s⁻¹ = 11.2 km s⁻¹" boxed. Source chip "NASA: 11.186 km s⁻¹". On "hour" "× 3600 ≈ 40,000 km h⁻¹"; a small grey chip follows "Moon: about 2.4 km s⁻¹ (NASA 2.38)".
+Visual: clear change to full-width working (the Earth plate small at the left with the probe on its surface). Task strip (36 px): "Find the escape velocity from Earth's surface." Equation strip: "v_esc = √(2GM/r)". Givens grouped in one navy box (32 px): "GM = 4.002 × 10¹⁴ m³ s⁻² (data sheet G and M_E)", "r = R_E = 6.371 × 10⁶ m". `AlignedAlgebra` (52 px): "v_esc = √(2 × 4.002 × 10¹⁴ / 6.371 × 10⁶) = √(1.2563 × 10⁸)"; on "second" "= 1.12 × 10⁴ m s⁻¹ = 11.2 km s⁻¹" in a dark-ink frame (52 px). Source chip "NASA: 11.186 km s⁻¹". On "hour" "× 3600 ≈ 40,000 km h⁻¹"; a small grey chip follows "Moon: about 2.4 km s⁻¹ (NASA 2.38)". A chip "v = 2GM/r = 1.26 × 10⁸ m s⁻¹" fades in and is crossed (red tag "take the square root"). Hand tags: grey "data sheet GM", teal "11.2 km every second", and a teal pen ring round "11.2 km s⁻¹".
 
 ### 5. escape versus orbit
 > Compare that with the speed of a circular orbit at the same radius, the square root of big G M over r. The only difference is the two inside the root, so escape velocity is root two, about one point four one times the orbital **speed**. A satellite four hundred kilometres up moves at seven point six nine kilometres per second. To escape from there, it needs ten point nine, an extra three point two kilometres per **second**. A common slip is putting the two outside the root.
 
-Visual: camera change to the gravity stage. Two boxed formulas side by side: "orbit: v = √(GM/r)" and "escape: v_esc = √(2GM/r)". On "speed" a bracket "v_esc = √2 × v_orbit ≈ 1.41 × v_orbit"; at the surface radius the orange arrows read "7.93 km s⁻¹" (orbit) and "11.2 km s⁻¹" (escape). At the 400 km circle with a satellite: "orbit 7.69 km s⁻¹", "escape 10.9 km s⁻¹"; on "second" a green gap bar "extra 3.2 km s⁻¹". A chip "2√(GM/r)" fades in and is crossed.
+Visual: camera change to the gravity stage. Two formulas side by side in dark-ink frames (52 px): "orbit: v = √(GM/r)" and "escape: v_esc = √(2GM/r)". On "speed" a bracket "v_esc = √2 × v_orbit ≈ 1.41 × v_orbit"; at the surface radius the teal arrows read "7.93 km s⁻¹" (orbit) and "11.2 km s⁻¹" (escape). At the 400 km circle with a satellite plate: "orbit 7.69 km s⁻¹", "escape 10.9 km s⁻¹"; on "second" a green gap bar "extra 3.2 km s⁻¹" in a dark-ink frame (44 px). A chip "2√(GM/r)" fades in and is crossed. Hand tags: teal "× 1.41", red "2 inside, not outside", and a teal pen ring round the gap bar.
 
 ### 6. sorting launches by total energy
 > So the launch speed sorts every case by total energy. Below escape velocity, the total is negative. The probe is bound, so it falls back, or ends up in an orbit if it's launched **sideways**. Exactly at escape velocity, the total is zero, and the probe just escapes, slowing towards zero speed forever. Above it, the total is positive, and the probe escapes with speed to spare. Launch at fourteen kilometres per second, and far away it's still doing about eight point four kilometres per **second**.
 
-Visual: camera change to a three-lane comparison, each lane with a launch from Earth and its navy E bar: lane 1 "v < v_esc: E < 0, bound" (radial launch returns; on "sideways" a second probe launched sideways settles into a dashed closed orbit); lane 2 "v = v_esc: E = 0" (the probe rises, its speed readout falling towards 0 forever); lane 3 "v > v_esc: E > 0" (the probe rises with a speed readout levelling off). On "second" lane 3's readout settles at "8.4 km s⁻¹" and a row writes: "½mv∞² = ½mv² − GMm/r → v∞ = √(v² − v_esc²) = √(14.0² − 11.21²) = 8.39 km s⁻¹".
+Visual: camera change to the vertical launch stage with the live launch-speed control (see "Simulation"): one probe launches from Earth as the slider sweeps, with readouts (52 px) teal "launch speed", navy "E per kg" and grey "result" (5 km s⁻¹: −5.03 × 10⁷ J kg⁻¹, back from 1,600 km; 8: −3.08 × 10⁷, back from 6,600 km; 10: −1.28 × 10⁷, back from 25,000 km; 11.2: 0, just escapes; 14: +3.52 × 10⁷ J kg⁻¹, escapes). Three lanes then form, each with its navy E bar: lane 1 "v < v_esc: E < 0, bound" (radial launch returns; on "sideways" a second probe launched sideways settles into a dashed closed orbit); lane 2 "v = v_esc: E = 0" (the probe rises, its teal speed readout falling towards 0 forever); lane 3 "v > v_esc: E > 0" (the probe rises with a teal speed readout levelling off). On "second" lane 3's readout settles at "8.4 km s⁻¹" and a row writes (44 px): "½mv∞² = ½mv² − GMm/r → v∞ = √(v² − v_esc²) = √(14.0² − 11.21²) = 8.39 km s⁻¹" in a dark-ink frame. Hand tags: navy "the sign of E decides", teal "speed to spare", and a navy pen ring round "E = 0".
 
 ### 7. what it doesn't depend on
 > Two things escape velocity doesn't depend on. The probe's mass, because it cancelled. And the direction of launch, because energy has no direction. Aim it sideways or straight up, and the threshold is the same, as long as its path doesn't hit the planet. It depends only on the planet's mass, and the distance from its centre that you launch **from**.
 
-Visual: camera change to the gravity stage: from one launch point, three probes of different sizes (the satellite plate at three scales) leave at the same speed in three directions (up, slanted, sideways), each with "v = 11.2 km s⁻¹" and each path running off the frame; tag "mass cancels; energy has no direction". A fourth, aimed into the ground, is drawn faint and crossed "unless the path hits the planet". On "from" the formula "v_esc = √(2GM/r)" highlights M and r.
+Visual: camera change to the gravity stage: from one launch point, three probes (the satellite plate at three uniform scales) leave at the same speed in three directions (up, slanted, sideways), each with a teal arrow "v = 11.2 km s⁻¹" and each path running off the frame; tag "mass cancels; energy has no direction". A fourth, aimed into the ground, is drawn faint and crossed "unless the path hits the planet". On "from" the formula "v_esc = √(2GM/r)" (52 px) highlights M and r. Hand tags: grey "any mass", teal "any direction", and a navy pen ring round M and r.
 
 ### 8. the model's assumptions, and real rockets
 > This model makes real assumptions. No air, which would slow the probe and heat it. No propulsion after launch. And only Earth's gravity, ignoring the Sun and the Moon. Real rockets never leave the pad at eleven point two kilometres per second. They keep their engines burning as they climb, so the energy is supplied gradually, much of it high up, where the pull is weaker. Escape velocity is the speed for a single kick at the **start**.
 
-Visual: clear change. A model box writes: "no air", "no propulsion after launch", "only the planet's gravity". A coded atmosphere band glows red at a fast probe's nose (tag "air: drag and heating"). The rocket plate (`phys-y11-rocket-v1.png`, rotated to vertical, scaled uniformly) climbs slowly from the pad with a green thrust arrow at its base that stays on, a speed readout climbing gradually; tag "keeps thrusting: not the escape-velocity model". On "start" a single orange arrow at a probe on the surface with a one-off flash, "escape velocity: one kick at launch".
+Visual: clear change. A model box writes (36 px): "no air", "no propulsion after launch", "only the planet's gravity". A coded atmosphere band glows red at a fast probe's nose (tag "air: drag and heating"). The painted rocket (`phys-y11-rocket-v1.png`, rotated to vertical, scaled uniformly) climbs slowly from the pad with a green thrust arrow at its base that stays on and a live teal speed readout (52 px) climbing gradually; tag "keeps thrusting: not the escape-velocity model". On "start" a single teal arrow at a probe on the surface with a one-off flash, "escape velocity: one kick at launch". Hand tags: green "energy added all the way up", teal "one kick", and a green pen ring round the thrust arrow.
 
 ### 9. memory aid
 > To remember it: orbit speed is root G M over r, and escape speed is root two G M over r. Escape is root two times orbit, and the two goes inside the **root**. And escaping doesn't mean leaving gravity behind. The probe is pulled back the whole way out, it just never stops.
 
-Visual: board clears to the two formulas stacked, the "2" in the escape formula circled inside the root. The handwritten line writes above: "Escape = √2 × orbit. The 2 goes inside the root." On "root" the circled 2 pulses. Hold about 2 seconds.
+Visual: board clears to the two formulas stacked (52 px), the "2" in the escape formula circled inside the root. The handwritten line writes above in a framed memory card (hand lettering, teal and navy, 52 px; the same card is reused on the notes screen): "Escape = √2 × orbit. The 2 goes inside the root." On "root" the circled 2 pulses. Hold about 2 seconds.
 
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. Mars has a mass of six point four two times ten to the twenty-three kilograms, and a radius of three point three nine times ten to the six metres. Calculate the escape velocity from its surface, and state one assumption you made. Pause here to answer.
 
-Visual: `QuestionCard` (subject "Physics"), worded as printed: "Mars has a mass of 6.42 × 10²³ kg and a radius of 3.39 × 10⁶ m. (a) Calculate the escape velocity from the surface of Mars. (b) State one assumption made in this calculation. (G = 6.67 × 10⁻¹¹ N m² kg⁻²)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with the painted Mars (`y12p-mars-v1.png`, inspected) small beside it, worded as printed: "Mars has a mass of 6.42 × 10²³ kg and a radius of 3.39 × 10⁶ m. (a) Calculate the escape velocity from the surface of Mars. (b) State one assumption made in this calculation. (G = 6.67 × 10⁻¹¹ N m² kg⁻²)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 11. feedback 1 (brief)
 > v equals the square root of two big G M over r: two times six point six seven times ten to the minus eleven, times six point four two times ten to the twenty-three, over three point three nine times ten to the six. That's about five point zero three times ten to the three metres per **second**. Assumptions include no atmosphere, and no propulsion after launch. The classic slip is leaving out the **two**.
 
-Visual: card shrinks to the top. Rows: "v_esc = √(2GM/r) = √(2 × 6.67 × 10⁻¹¹ × 6.42 × 10²³ / 3.39 × 10⁶)"; on "second" "= √(2.526 × 10⁷) = 5.03 × 10³ m s⁻¹" boxed; "(b) e.g. no air resistance; no thrust after launch; only Mars's gravity"; source chip "NASA: 5.03 km s⁻¹". On "two" a chip "√(GM/r) = 3.55 × 10³ m s⁻¹" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px): "v_esc = √(2GM/r) = √(2 × 6.67 × 10⁻¹¹ × 6.42 × 10²³ / 3.39 × 10⁶)"; on "second" "= √(2.526 × 10⁷) = 5.03 × 10³ m s⁻¹" in a dark-ink frame (52 px); "(b) e.g. no air resistance; no thrust after launch; only Mars's gravity"; source chip "NASA: 5.03 km s⁻¹". On "two" a chip "√(GM/r) = 3.55 × 10³ m s⁻¹" fades in and is crossed. Hold about 1 second.
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A satellite is in a circular orbit around a planet. Its engine fires briefly to increase its speed. By what factor must its speed increase, so that it can escape with no further propulsion? Pause here to answer.
 
-Visual: `QuestionCard`, worded as printed: "A satellite is in a circular orbit around a planet. Its engine fires briefly, increasing its speed. By what factor must its speed increase for the satellite to escape from the planet without further propulsion? Justify your answer. (2 marks)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "A satellite is in a circular orbit around a planet. Its engine fires briefly, increasing its speed. By what factor must its speed increase for the satellite to escape from the planet without further propulsion? Justify your answer. (2 marks)" A small satellite plate on a dashed circle sits beside the card. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 13. feedback 2 (brief)
 > At the same radius, the orbital speed is root G M over r, and the escape speed is root two G M over r. So the speed must increase by a factor of root two, about one point four one, whatever the radius or the planet. The slip is answering two, by doubling the speed instead of multiplying it by root **two**.
 
-Visual: card shrinks to the top. Rows: "v_orbit = √(GM/r)", "v_esc = √(2GM/r)", "ratio = √2 ≈ 1.41" boxed; small tag "same r: the burn is brief". On "two" a chip "× 2" fades in and is crossed (caption "doubling speed quadruples K"). Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px): "v_orbit = √(GM/r)", "v_esc = √(2GM/r)", "ratio = √2 ≈ 1.41" in a dark-ink frame (52 px); small tag "same r: the burn is brief". On "two" a chip "× 2" fades in and is crossed (caption "doubling speed quadruples K"). Hold about 1 second.
 
 ### 14. end of Module 5, and the next field
 > That completes Module five. A gravitational field around every mass sets every orbit, and every escape. Next, in Module six, we meet a different kind of field. Between two charged plates, the electric field is uniform, just like gravity close to the ground, so a charged particle accelerates steadily. So how does the voltage across the plates set that **acceleration**?
 
 Visual: board clears to the gravity stage; the radial violet field arrows around Earth draw in. Camera push to a small patch of ground: the arrows there are parallel and equal, tag "near the surface: uniform". As "Between two charged plates" is spoken the ground patch morphs into two coded horizontal plates (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", and a small coded "+q" particle between them with an empty acceleration arrow "a = ?" and a label "V" across the plates. On "acceleration" a chip writes "Next (Module 6): how does voltage between parallel plates determine a charged particle's acceleration?". Hold about 2 seconds. This is the final frame.
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 50 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. With gravity the only force, E = K + U stays constant. The minimum escape reaches infinity with zero speed, so E = 0: ½mv² − GMm/r = 0.
-2. v_esc = √(2GM/r) (the 2 inside the root; r from the centre). Earth's surface: 11.2 km s⁻¹. Independent of the object's mass and of launch direction (if the path misses the planet).
-3. v_esc = √2 × v_orbit at the same radius. E < 0: bound; E = 0: just escapes; E > 0: escapes with speed to spare, v∞ = √(v² − v_esc²).
-4. Assumptions: no air, no propulsion after launch, only the planet's gravity. Rockets keep thrusting, so they never need 11.2 km s⁻¹ at the pad.
+1. Gravity only: E = K + U stays constant.
+2. Just escaping: E = 0, so ½mv² = GMm/r.
+3. v_esc = √(2GM/r); from Earth's surface 11.2 km s⁻¹.
+4. v_esc = √2 × v_orbit; mass and direction don't matter.
+5. Assumes no air, no thrust after launch, one planet's gravity.
 
-Memory aid (large, on the notes screen): *Escape = √2 × orbit.* Second line: *The 2 goes inside the root.*
+Memory aid (framed card under the notes, hand lettering, teal and navy as in scene 9): *Escape = √2 × orbit.* Second line in the card: *The 2 goes inside the root.* Notes in the role colours, 32 px; about 240 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
@@ -170,7 +175,9 @@ Model answer: The burn is brief, so r is unchanged. Orbital speed v = √(GM/r);
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Constants | GM = 4.002 × 10¹⁴ m³ s⁻²; R_E = 6.371 × 10⁶ m | throughout |
-| Hook heights | 5 km s⁻¹: h = 4.21 × 10⁶ m ("about four thousand two hundred kilometres"); mgh estimate 1.28 × 10⁶ m; 10 km s⁻¹: h = 2.49 × 10⁷ m ("about twenty-five thousand kilometres") | 1 |
+| Hook heights | 5 km s⁻¹: h = 1.58 × 10⁶ m ("about one thousand six hundred kilometres"; Revision 2); mgh estimate 1.28 × 10⁶ m; 10 km s⁻¹: h = 2.49 × 10⁷ m ("about twenty-five thousand kilometres") | 1 |
+| Launch slider (Revision 2) | E per kg = ½v² − GM/R (GM/R = 6.28 × 10⁷ J kg⁻¹): 5 km s⁻¹: −5.03 × 10⁷; 8: −3.08 × 10⁷ (h = 6.62 × 10⁶ m); 10: −1.28 × 10⁷; 11.21: 0; 14: +3.52 × 10⁷ J kg⁻¹ (v∞ = 8.39 km s⁻¹) | 1, 6 |
+| Crossed slip (Revision 2) | 2GM/R = 1.26 × 10⁸ (root left out) | 4 |
 | Climb | GMm/R per kg = 6.28 × 10⁷ J kg⁻¹ (screen only, v21) | 2 |
 | Earth v_esc | √(1.2563 × 10⁸) = 11,208.6 m s⁻¹ = 1.12 × 10⁴ ("eleven point two"); NASA 11.186; × 3.6 = 40,351 km h⁻¹ ("about forty thousand") | 4, 5, 8 |
 | Orbit at R | 7,925.6 m s⁻¹ ("7.93") | 5 |
@@ -188,7 +195,8 @@ Checked with Python (6 Nov); Codex to re-check.
 - v_esc = √(2 × 4.002 × 10¹⁴ / 6.371 × 10⁶) = 11,208.56 m s⁻¹; √(4.002 × 10¹⁴ / 6.371 × 10⁶) = 7,925.65 m s⁻¹; ratio 1.414214.
 - r = 6.771 × 10⁶ m: √(2GM/r) = 10,872.44 m s⁻¹; √(GM/r) = 7,687.98 m s⁻¹; difference 3,184.46 m s⁻¹.
 - v∞ at 14.0 km s⁻¹: √(1.96 × 10⁸ − 1.25632 × 10⁸) = 8,388.58 m s⁻¹.
-- Hook: 1/r_max = 1/6.371 × 10⁶ − v²/(2 × 4.002 × 10¹⁴): v = 5,000 → r_max = 1.05829 × 10⁷ m, h = 4.21185 × 10⁶ m; v = 10,000 → r_max = 3.12269 × 10⁷ m, h = 2.48559 × 10⁷ m. 5,000² / (2 × 9.8) = 1.27551 × 10⁶ m.
+- Hook: 1/r_max = 1/6.371 × 10⁶ − v²/(2 × 4.002 × 10¹⁴): v = 5,000 → r_max = 7.95375 × 10⁶ m, h = 1.58275 × 10⁶ m (Revision 2 correction); v = 8,000 → h = 6.61581 × 10⁶ m; v = 10,000 → r_max = 3.12269 × 10⁷ m, h = 2.48559 × 10⁷ m. 5,000² / (2 × 9.8) = 1.27551 × 10⁶ m.
+- Revision 2 slider: GM/R = 6.28159 × 10⁷ J kg⁻¹; ½v² − GM/R: 5,000: −5.03159 × 10⁷; 8,000: −3.08159 × 10⁷; 10,000: −1.28159 × 10⁷; 14,000: +3.51841 × 10⁷ J kg⁻¹. Crossed slip: 2 × 4.002 × 10¹⁴ / 6.371 × 10⁶ = 1.25632 × 10⁸.
 - Mars: 2 × 6.67 × 10⁻¹¹ × 6.42 × 10²³ = 8.5643 × 10¹³; / 3.39 × 10⁶ = 2.52634 × 10⁷; √ = 5,026.27 m s⁻¹. √(GM/r) = 3,554.12 m s⁻¹. (NASA Mars Fact Sheet: 0.64169 × 10²⁴ kg, 3,389.5 km mean radius, escape 5.03 km s⁻¹.)
 
 ## Memory aid check
@@ -198,11 +206,13 @@ Checked with Python (6 Nov); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,585 characters**, 15 scenes. Characters per scene (1 to 15): 409, 523, 531, 470, 470, 492, 347, 434, 269, 262, 399, 221, 303, 366, 75. At 13.3 characters per second the speech is about 420 s; add about 3 s for the prediction countdown, about 5 s for the two launches in scene 1, about 2 s for the replay in scene 2, about 3 s for the three lanes in scene 6, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 93 s of holds and countdowns): **about 513 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's rocket sentences (keep the plate and tag) if the review cuts them, add a line elsewhere to stay above 5,500 characters; scene 4's Moon sentence.
+
+Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,585): **5,570 characters**, 15 scenes. Characters per scene (1 to 15): 408, 523, 531, 470, 470, 492, 347, 434, 269, 262, 399, 221, 303, 366, 75. At 13.3 characters per second the speech is about 419 s; add about 3 s for the prediction countdown, about 5 s for the two launches in scene 1, about 2 s for the replay in scene 2, about 4 s for the launch slider and three lanes in scene 6, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 84 s of holds and countdowns): **about 503 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 4's Moon sentence; scene 8's rocket sentences (keep the plate and tag).
 
 ## Opening frame
 
-v22's final frame (`phys-y12-m5-v22.md`): paper background; at the right the three-curve energy graph (orange K above, violet U and navy E below) with a dashed zero band "E = 0: escape?"; at the left the Earth plate with the satellite plate on its surface, an orange launch arrow straight up "v = ?" and the dashed radial line to "∞"; heading "Why does a higher circular orbit have lower speed but greater total energy?"; chip "Next: what minimum launch speed allows escape without further propulsion?". Scene 1 shrinks the graph to the top right and launches the probe; the heading changes in scene 2.
+
+v22's final frame (`phys-y12-m5-v22.md`, Revision 2): paper background; at the right the three-curve energy graph (orange K above, violet U and navy E below) with a dashed zero band "E = 0: escape?"; at the left the Earth plate with the satellite plate on its surface, a teal launch arrow straight up "v = ?" (Revision 2: teal, matching v22's repaired final frame) and the dashed radial line to "∞"; heading "Why does a higher circular orbit have lower speed but greater total energy?"; chip "Next: what minimum launch speed allows escape without further propulsion?". Scene 1 shrinks the graph to the top right and launches the probe; the heading changes in scene 2.
 
 ## Final frame
 
@@ -214,23 +224,24 @@ Lesson key `p-y12-m5-v23` (route phys-y12-m5-v23). Suggested explainer folder `s
 
 In order (15 scene headings): hook, energy-trade, threshold, earth-value, escape-vs-orbit, classify, independence, assumptions, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, module-bridge, key-notes.
 
-Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). `motionTools`: vertical launch stage (kit gap 8), energy bars (kit gap 7), well graph (kit gap 6), gravity stage (kit gap 1), uniform-field morph, `AlignedAlgebra`, `Countdown`, `CameraStage`. Transitions: 1 to 2 camera continue; 2 to 3 camera push to the column; 3 to 4 clear change to the calculation layout; 4 to 5 camera change; 5 to 6 camera change; 6 to 7 camera change; 7 to 8 clear change; 8 to 9 clear change; attempts card shrink; 13 to 14 clear change; 14 to 15 fade.
+Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). `motionTools`: vertical launch stage (kit gap 8) with a live launch-speed slider, energy bars (kit gap 7), well graph (kit gap 6), gravity stage (kit gap 1), uniform-field morph, `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (Revision 2): 1 to 2 camera continue; 2 to 3 camera push to the column; 3 to 4 clear change to full-width working; 4 to 5 camera change; 5 to 6 camera change to the launch slider; 6 to 7 camera change; 7 to 8 clear change; 8 to 9 clear change; attempts card shrink; 13 to 14 clear change; 14 to 15 fade.
 
-Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m5-v23-learning-review.md`, `checks/p-y12-m5-v23-physics-check.md`.
+Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v23-learning-review.md`, `checks/p-y12-m5-v23-science-check.md`.
 
 ## Assets
 
-Have (inspected 6 Nov on a session contact sheet; scaled uniformly only):
-- `public/assets/physics/phys-y11-earth-v1.png`: scenes 1, 2, 5 to 8, 14.
-- `public/assets/physics/phys-y11-rocket-v1.png` (2400 × 800, RGBA, horizontal slim rocket): scene 8, rotated to vertical (open decision 2).
 
-Requested earlier in this run: `y12p-satellite-v1.png` (v17), used as the probe.
+Have (inspected 6 Nov with the Read tool; scaled uniformly only, never stretched):
+- `public/assets/physics/phys-y11-earth-v1.png`: scenes 1, 2, 4 to 8, 14.
+- `public/assets/physics/y12p-satellite-v1.png` (1585 × 992, RGBA; delivered in brief 188), used as the probe: scenes 1 to 8, 12.
+- `public/assets/physics/phys-y11-rocket-v1.png` (2400 × 800, RGBA, horizontal slim rocket with fins, nozzle at the left): scene 8, rotated to vertical (open decision 2).
+- `public/assets/physics/y12p-mars-v1.png` (1254 × 1254, RGBA; delivered in brief 188): scene 10, small beside the card.
 
 Need (new plates): none.
 
-Coded: launch paths, height markers, energy bars, well inset, lanes, atmosphere band, thrust arrows, parallel plates, field arrows, particle, algebra, chips, cards, countdowns, notes board.
+Coded: launch paths, height markers, slider and readouts, energy bars, well inset, lanes, atmosphere band, thrust arrows, parallel plates, field arrows, particle, algebra, chips, cards, countdowns, notes board.
 
-Kit gaps: 8. **Vertical launch stage** (radial launch at a chosen speed; motion from energy conservation in real proportion with a slow-motion factor; maximum-height readout; optional mgh ghost; bars riding along).
+Kit gaps: 8. **Vertical launch stage** (radial launch at a chosen speed from a live slider; motion from energy conservation in real proportion with a slow-motion factor; maximum-height readout; E-per-kilogram readout; optional mgh ghost; bars riding along).
 
 ## Codex asset brief (Year 12 Physics M5 v23)
 
@@ -271,3 +282,26 @@ Planet data: NASA. Next: Module 6, charged particles between parallel plates.
 
 - Revision 1 has had no independent review. Next: student learning review (is the E = 0 at infinity step clear for a student who confuses U = 0 with E = 0; is the Module 6 bridge helpful or a distraction), then the physics check and the Codex error check.
 - Judge the launches, the three lanes and the rocket contrast at playback speed.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 188 findings (`checks/p-y12-m5-v23-learning-review.md`, `checks/p-y12-m5-v23-science-check.md`): 0 blocker, 2 should fix, 0 optional.
+- **Should fix, S1, height marker and author note (a) (5 km s⁻¹ launch height).** Resolved: recomputed with 1/r_max = 1/R − v²/(2GM) (G = 6.67 × 10⁻¹¹ N m² kg⁻², M = 6.0 × 10²⁴ kg, R = 6.371 × 10⁶ m): r_max = 7.954 × 10⁶ m, h = 1.58 × 10⁶ m. Speech now says "about one thousand six hundred kilometres"; the marker reads "h = 1.6 × 10⁶ m"; Decisions, author note (a), open decision 3 and both numbers tables are corrected. The 1.28 × 10⁶ m constant-g ghost stays (it still underestimates the climb); the 10 km s⁻¹ case is unchanged. Scene 1 narration -1 characters.
+- **Should fix, launch stages (root decision 10 velocity colour).** Resolved: launch arrows, the escape and orbit speed arrows and every speed readout are teal (scenes 1, 2, 4 to 8); the opening frame's launch arrow is teal, matching v22's repaired final frame; orange is kinetic energy only.
+
+Join check: `phys-y12-m6-v01.md` "Opening frame" quotes this design's final frame exactly; scene 14 and "Final frame" are unchanged, so the Module 5 to Module 6 join holds (open decision 1 settled).
+
+Visual upgrade (to `../maths-visual-standard.md` and the build gate):
+- Decisions gain "Type sizes", "Anchor", "Simulation" and "Stage changes"; the colour key states teal velocity and the energy colours.
+- Plates: the delivered satellite (probe) and Mars move to "Have" (inspected); the rocket plate was inspected (horizontal, nozzle at the left; rotated in code). Scene 1 already launches the painted probe from the painted Earth.
+- Live controls: the core one is a launch-speed slider on the vertical launch stage (scenes 1 and 6) with live launch speed, E per kilogram and result readouts (Python: −5.03, −3.08, −1.28 × 10⁷ J kg⁻¹ at 5, 8, 10 km s⁻¹; 0 at 11.2; +3.52 × 10⁷ J kg⁻¹ at 14 km s⁻¹); scene 2 a live speed readout with the riding bars; scene 8 a live speed readout on the rocket.
+- Stage changes: scene 4 is full-width working; scene 6 becomes the launch slider with the lanes. No set-up runs past about 80 s.
+- Hand tags and a pen mark in role colours in every teaching scene ("faster", "still falls back", "K runs out", "U only rises to 0", "E = 0 at the start too", "m cancels", "data sheet GM", "11.2 km every second", "× 1.41", "2 inside, not outside", "the sign of E decides", "speed to spare", "any mass", "any direction", "energy added all the way up", "one kick"). Scene 14 is left unchanged to keep the m6-v01 join.
+- Framed answers: v_esc = √(2GM/r) (3), 11.2 km s⁻¹ (4), the two formulas and the 3.2 km s⁻¹ gap (5), v∞ = 8.39 km s⁻¹ (6) and every feedback result. New crossed slip: the square root left out (4).
+- Scene 9 and the notes: the memory aid is a framed card; key notes cut from four dense items (about 590 characters) to five short bullets (about 240 characters); quiet notes hold 60 s to 50 s.
+- Question cards arrive with their full text in one move; attempt 1 gains the Mars plate.
+- Type sizes stated; grey tags at full opacity.
+
+New plate requests: none.
+
+Counts: 5,585 (joined) or 5,571 (scene sum) to 5,570 characters (scene sum); about 513 s to about 503 s.
