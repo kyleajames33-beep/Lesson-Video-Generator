@@ -45,4 +45,10 @@ Also:
 - Make a montage at `work/quality-audit/fixed/<id>-sheet.jpg` and grade it honestly against the A rules. Fix and re-sheet until every frame passes.
 - Write `work/quality-audit/fixed/<id>-notes.md`: the files created, any departures from the design with reasons, any plate truly missing, the cue check, and things to check at playback speed.
 
+## Root rules added after the first builds (6 November)
+- **Key notes:** about five SHORT bullets, each one line or at most two short lines, at 34 px or more, with the framed memory card. Notes are on-screen only, so trim the design's longer note text to its core fact. Dense paragraph bullets fail A even when they match the design.
+- **Fill from the first frame:** every stage shows its main picture (plate, apparatus, diagram or simulation) from its first frame, with labels and answers arriving on cue. Empty boxes or bare panels waiting for a later cue fail A.
+- **Contrast:** use full-ink text for content students must read (no pale grey). Plates that carry the idea should be at least about 300 px tall.
+- **Sheets:** no frame-number stamps on the final sheet.
+
 Never ship placeholder art. If a design-named plate is missing, stop that scene and report it.
