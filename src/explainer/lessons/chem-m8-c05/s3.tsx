@@ -200,12 +200,12 @@ export const SceneHandoff: React.FC = () => {
 
 // ---------- 18. Key notes ----------
 const NOTES = [
-	'Nitrogen and phosphorus are needed nutrients; the scarcer one (often phosphorus in fresh water) holds growth back.',
-	'Sources: fertiliser runoff (diffuse), sewage effluent (point), urban stormwater.',
-	'Feed → bloom → die → decay → suffocate: bacteria decomposing dead algae use O_2 faster than it dissolves back in, so the crash can come after the bloom.',
-	'Physical: temperature, turbidity. Chemical: pH, dissolved oxygen, conductivity, nitrate, phosphate. Biological: E. coli, algal cell counts.',
-	'Monitor for early warning, to find the source, to compare with the guideline for that use, to tell treatment what to remove and to check a fix.',
+	'N and P are needed nutrients; the scarcer one holds growth back.',
+	'Sources: fertiliser runoff (diffuse), sewage (point), stormwater.',
+	'Feed → bloom → die → decay → suffocate: the crash can come after the bloom.',
+	'Physical, chemical and biological parameters: choose for the purpose.',
+	'Monitor to warn early, find the source and check against the guideline.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={34} aidTop={720} aids={['Feed, bloom, die, decay, suffocate.', 'Warm water holds less oxygen.']} tag="one measurement can't judge water quality" />
+	<KeyNotesBoard notes={NOTES} size={44} aidTop={600} aids={['Feed, bloom, die, decay, suffocate.', 'Warm water holds less oxygen.']} tag="one measurement can't judge water quality" />
 );

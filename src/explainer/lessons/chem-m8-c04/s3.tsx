@@ -184,14 +184,13 @@ export const SceneHandoff: React.FC = () => {
 
 // ---------- 19. Key notes ----------
 const NOTES = [
-	'Measure with the colour a species absorbs, not the colour you see (copper(II): red or orange filter).',
-	'UV-visible: a grating and slit pick one wavelength (visible or UV); measure at λmax, the peak of the spectrum.',
-	'c = A ÷ (εl). Excess NH_3 makes Cu^{2+} absorb more strongly: add it to standards and sample alike.',
-	'AAS: atomise in a flame; a lamp of the element shines its lines; those atoms absorb; the missing light is measured. It measures atoms in the flame, not ions in solution.',
-	'Flame AAS for higher levels, graphite furnace for trace levels. One element per lamp; match standards to the sample.',
-	'Blank + standards, line of best fit; read across, then down, only inside the standards. Too high: dilute, then × dilution factor.',
+	'Measure with the colour a species absorbs (copper(II): red or orange filter).',
+	'UV-visible: one wavelength, measured at λmax, the peak of the spectrum.',
+	'c = A ÷ (εl). Excess NH_3 makes Cu^{2+} absorb more strongly.',
+	'AAS: a lamp of the element; atoms in the flame absorb its light.',
+	'Read across, then down, inside the standards. Too high: dilute, × dilution factor.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={33} aidTop={740} aids={['Across, then down, inside the standards, × dilution factor.', "AAS: the lamp is made of the element you're testing."]} tag="measure with the colour it absorbs, not the colour you see" />
+	<KeyNotesBoard notes={NOTES} size={44} aidTop={600} aids={['Across, then down, inside the standards, × dilution factor.', "AAS: the lamp is made of the element you're testing."]} tag="measure with the colour it absorbs, not the colour you see" />
 );
 void INK;

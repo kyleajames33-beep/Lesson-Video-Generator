@@ -1,6 +1,6 @@
 # Brief 223: render and publish chem-m8-c04 and chem-m8-c05 (new Module 8 videos)
 
-**ON HOLD (root, 6 Nov late): do not render until Claude commits a key-notes trim for these lessons and removes this line.** The key-notes screens are too dense for the A standard.
+**Hold released (root, 6 Nov late):** the key notes are trimmed to five short bullets at 44 px.
 
 Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate) and brief 196 (the pre-render asset and font guard). Do not spawn sub-agents. No design, narration or scene-code edits, no new speech, no commits. One render at a time.
 

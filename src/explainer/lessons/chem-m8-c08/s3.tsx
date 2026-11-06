@@ -164,12 +164,12 @@ export const SceneHandoff: React.FC = () => {
 
 // ---------- 17. Key notes ----------
 const NOTES = [
-	'C=C (among hydrocarbons, alcohols and acids): bromine water in normal room light, read at once. Orange → colourless within seconds: bromine adds and is used up. An alkane stays orange.',
-	'–COOH: NaHCO_3 (or Na_2CO_3) fizzes: CH_3COOH + NaHCO_3 → CH_3COONa + H_2O + CO_2. The CO_2 turns limewater milky: CO_2 + Ca(OH)_2 → CaCO_3(s) + H_2O. Alcohols: no fizz.',
-	'–OH: warm acidified K_2Cr_2O_7 goes orange → green with a 1° or 2° alcohol (aldehydes do it too, so check the candidates). 3° alcohols, alkanes and ethanoic acid usually stay orange.',
-	'Orange means "no 1° or 2° alcohol detected", not "no OH". After a bromine fade, green alone doesn\'t prove an OH group.',
-	'Use a fresh portion for each test and run all three: one molecule can have two groups. The tests show groups, not the full structure.',
+	'C=C: bromine water, orange → colourless within seconds.',
+	'–COOH: NaHCO_3 fizzes; the CO_2 turns limewater milky.',
+	'1° or 2° –OH: warm acidified K_2Cr_2O_7, orange → green.',
+	'Orange means no 1° or 2° alcohol detected, not "no OH".',
+	'Fresh portion for each test; run all three tests.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={33} aidTop={760} aids={['Fizz, fade, green.', 'Every no rules a candidate out.']} tag="run all three, each on a fresh portion" />
+	<KeyNotesBoard notes={NOTES} size={44} aidTop={600} aids={['Fizz, fade, green.', 'Every no rules a candidate out.']} tag="run all three, each on a fresh portion" />
 );

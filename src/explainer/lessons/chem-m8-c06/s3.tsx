@@ -256,13 +256,13 @@ export const SceneHandoff: React.FC = () => {
 
 // ---------- 21. Key notes ----------
 const NOTES = [
-	'Dissolved oxygen (DO): O_2 gas dissolved in water, in mg/L. Warm water holds less. DO swings between day and night, so one reading is a snapshot.',
-	'Measure DO with a meter (fast, can log all night) or a Winkler titration. Fill the sample bottle with no air bubbles and fix the O_2 at once.',
-	'Winkler: fix (O_2 oxidises Mn(OH)_2 to brown MnO(OH)_2), acidify (I^{−} oxidised to I_2), titrate the I_2 with S_2O_3^{2−}, starch near the end. 1 O_2 : 4 S_2O_3^{2−}.',
-	'Calculation: n(S_2O_3^{2−}) = cV; ÷ 4 = n(O_2); × 32.00 g/mol; g to mg; ÷ the sample volume in L, not the titre.',
-	'BOD_5 = initial DO − DO after 5 days (sealed, dark, 20 °C): the O_2 microbes use breaking down organic matter. A low BOD doesn\'t prove water is safe.',
+	'DO: O_2 dissolved in water (mg/L). Warm water holds less.',
+	'Fill the bottle with no air bubbles; fix the O_2 at once.',
+	'Winkler: fix, acidify, titrate the I_2. 1 O_2 : 4 S_2O_3^{2−}.',
+	'n(S_2O_3^{2−}) ÷ 4 = n(O_2); × 32.00; ÷ sample volume in L.',
+	'BOD_5 = DO now − DO after 5 days (sealed, dark, 20 °C).',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={34} aidTop={740} aids={['DO = oxygen now. BOD = oxygen used later.', 'One oxygen, four thiosulfates.']} tag="read DO and BOD together; neither sees every pollutant" />
+	<KeyNotesBoard notes={NOTES} size={44} aidTop={600} aids={['DO = oxygen now. BOD = oxygen used later.', 'One oxygen, four thiosulfates.']} tag="read DO and BOD together; neither sees every pollutant" />
 );
 export {BURETTE};
