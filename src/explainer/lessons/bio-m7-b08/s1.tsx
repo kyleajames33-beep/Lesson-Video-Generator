@@ -36,9 +36,13 @@ export const SceneHook: React.FC = () => {
 	const top = ptOf(PLATES.cell, AC1.cx, AC1.cy, AC1.w, [1010, 470]);
 	const leftEdge = ptOf(PLATES.cell, AC1.cx, AC1.cy, AC1.w, [762, 1000])[0];
 	const inU = smooth(prog(f, K1.gets + 4, 30));
-	const row = smooth(prog(f, K1.billions, 30));
-	const leftO = 1 - prog(f, K1.billions, 16);
-	const slot = (i: number): Pt => [760 + i * 130, 540];
+	// Quality fix (6 Nov): the row of identical cells fills the stage (220 px cells, 215 px apart) and builds from
+	// "find the infected cells", so the question frame is not four tiny cells in an empty frame.
+	const rowAt = K1.billions - 40;
+	const row = smooth(prog(f, rowAt, 30));
+	const leftO = 1 - prog(f, rowAt, 16);
+	const RW = 220;
+	const slot = (i: number): Pt => [215 + i * 215, 560];
 	return (
 		<>
 			<Heading text={HEAD} at={K1.tcells + 6} size={58} />
@@ -59,11 +63,11 @@ export const SceneHook: React.FC = () => {
 				<Pl p={PLATES.virus} cx={lerp(980, top[0], inU)} cy={lerp(260, top[1] + 40 * inU, inU)} w={70} o={prog(f, K1.gets, 8) * (1 - prog(f, K1.gets + 36, 12)) * leftO} />
 				{Array.from({length: 8}, (_, i) => {
 					const s = slot(i);
-					if (i === 3) return <AirCell key={i} cx={lerp(AC1.cx, s[0], row)} cy={lerp(AC1.cy, s[1], row)} w={lerp(AC1.w, 120, row)} o={prog(f, 0, 16)} />;
-					return <AirCell key={i} cx={s[0]} cy={s[1]} w={120} o={prog(f, K1.billions + 10 + i * 3, 10)} />;
+					if (i === 3) return <AirCell key={i} cx={lerp(AC1.cx, s[0], row)} cy={lerp(AC1.cy, s[1], row)} w={lerp(AC1.w, RW, row)} o={prog(f, 0, 16)} />;
+					return <AirCell key={i} cx={s[0]} cy={s[1]} w={RW} o={prog(f, rowAt + 8 + Math.abs(i - 3) * 3, 10)} />;
 				})}
-				<Ring cx={slot(5)[0]} cy={slot(5)[1]} rx={58} ry={130} at={K1.billions + 40} color={GREY_INK} width={3} />
-				<GTag x={880} y={800} text="which one is infected?" at={K1.billions + 44} size={24} />
+				<Ring cx={slot(5)[0]} cy={slot(5)[1]} rx={100} ry={240} at={K1.billions + 40} color={GREY_INK} width={3} />
+				<CTag x={slot(5)[0] - 170} y={850} text="which one is infected?" at={K1.billions + 44} color={AMBER_INK} size={36} />
 				<GTag x={120} y={980} text="Doherty and Zinkernagel, John Curtin School of Medical Research, ANU, 1973; Nobel Prize 1996" at={K1.y1973 + 6} size={22} />
 			</Overlay>
 		</>

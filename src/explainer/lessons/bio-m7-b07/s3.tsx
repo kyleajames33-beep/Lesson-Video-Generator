@@ -14,8 +14,9 @@ import {ResponseStrip, stripRects} from '../bio-m7-b06/strip';
 import {ARow} from '../bio-m7-b06/s3';
 import {S, hold} from './common';
 import {PLATES} from './assets';
+import {PLATES2} from './plates2';
 import {strip7} from './board';
-import {AMBER, AMBER_INK, CARD, CardBox, CloneTree, GREY_INK, GTag, INK, INK_SOFT, PlateB, Sx, TEAL, prog, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, CardBox, CloneTree, GREY_INK, GTag, INK, INK_SOFT, PlainArrow, PlateB, Sx, TEAL, prog, tw, vis} from './parts';
 
 // ---------- item 1: two tubes ----------
 type T1 = {a: number; b: number; c: number; d: number; q: number};
@@ -31,22 +32,42 @@ qCheck(STEM1({a: 0, b: 0, c: 0, d: 0, q: 0}), ['killed cells of bacterium A', 'T
 // ---------- 13a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', mouse: 'A mouse was', weeks: 'Two weeks later', serum: 'The serum was mixed', tube: ['In tube one', 2], explain: 'Explain the results', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {a: KA.mouse, b: KA.weeks, c: KA.serum, d: KA.tube, q: KA.explain};
+	// Quality fix (6 Nov): the whole question lands with its card (read along), and painted plates carry the named
+	// things on their cues: the mouse, then bacterium A in tube 1 and bacterium B in tube 2. Nothing answer-bearing.
+	const f = useCurrentFrame();
+	const c = KA.first;
+	const t: T1 = {a: c, b: c, c: c, d: c, q: c};
 	const h = hold('attempt');
+	const tubesO = prog(f, KA.serum + 4, 14);
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={560} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={640} w={1340} h={360} at={KA.explain + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c - 6} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1120} size={36} card={false} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={610} w={1120} size={36} card={false} />
+				<AnsBox x={140} y={660} w={1120} h={340} at={KA.explain + 30} />
+				<PlateB p={PLATES2.mouse} cx={1550} cy={290} w={340} o={prog(f, KA.mouse, 14)} />
+				<Sx x={1550} y={440} text="injected: killed bacterium A" size={30} color={INK_SOFT} weight={600} anchor="middle" at={KA.mouse + 12} />
+				<g opacity={tubesO}>
+					<rect x={1330} y={480} width={210} height={250} rx={22} fill="#fffaf0" stroke={EDGE_Q} strokeWidth={2.5} />
+					<rect x={1570} y={480} width={210} height={250} rx={22} fill="#fffaf0" stroke={EDGE_Q} strokeWidth={2.5} />
+					<PlateB p={PLATES.bact} cx={1435} cy={615} w={190} />
+					<PlateB p={PLATES.coccus} cx={1675} cy={615} w={110} id="b07-q1-cc" />
+					<Sx x={1435} y={526} text="tube 1" size={32} color={INK} weight={700} anchor="middle" at={-100} />
+					<Sx x={1675} y={526} text="tube 2" size={32} color={INK} weight={700} anchor="middle" at={-100} />
+					<Sx x={1435} y={710} text="bacterium A" size={28} color={INK_SOFT} weight={600} anchor="middle" at={-100} />
+					<Sx x={1675} y={710} text="bacterium B" size={28} color={INK_SOFT} weight={600} anchor="middle" at={-100} />
+				</g>
+				<Sx x={1555} y={772} text="+ serum from the mouse" size={28} color={INK_SOFT} weight={600} anchor="middle" at={KA.serum + 14} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
+				{void KA.weeks}{void KA.tube}
 			</Overlay>
 		</>
 	);
 };
+const EDGE_Q = '#d9cdb8';
 
 // ---------- 13b. Feedback one ----------
 const KB = cues(S('feedback-one'), {selected: 'antigens selected the', released: 'released antibodies', linked: 'linked them into', visibly: 'visibly clump', alone: 'this test alone', saying: 'Saying they killed', mistake: 'classic mistake'});
@@ -102,10 +123,15 @@ const ClaimBox: React.FC<{x: number; y: number; w: number; at: number; s?: numbe
 };
 
 // ---------- 13c. Attempt two ----------
-const KC = cues(S('attempt-two'), {second: 'Second', anti: 'Antibodies against a', student: 'A student says', evaluate: 'Evaluate the', pause: 'Pause here to answer'});
+const KC = cues(S('attempt-two'), {second: 'Second', anti: 'Antibodies against a', week: 'a week or more', student: 'A student says', evaluate: 'Evaluate the', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.anti, claim: KC.student, d: KC.evaluate};
+	// Quality fix (6 Nov): the whole question lands with its card, and a small painted timeline carries the given
+	// (new pathogen at day 0, antibodies first detected 7 to 10 days later). No B cells, so nothing answer-bearing.
+	const f = useCurrentFrame();
+	const c = KC.second + 8;
+	const t: T2 = {a: c, claim: c, d: c};
 	const h = hold('attempt-two');
+	const dayO = prog(f, KC.week, 14);
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
@@ -113,10 +139,17 @@ export const SceneAttemptTwo: React.FC = () => {
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
 				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<ClaimBox x={140} y={330} w={1500} at={t.claim} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={550} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={620} w={1340} h={380} at={KC.evaluate + 30} />
+				<ClaimBox x={140} y={330} w={1220} at={t.claim} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={550} w={1220} size={36} card={false} />
+				<AnsBox x={140} y={620} w={1220} h={380} at={KC.evaluate + 30} />
+				<PlateB p={PLATES.bact} cx={1610} cy={410} w={260} o={prog(f, KC.anti, 14)} />
+				<Sx x={1610} y={510} text="day 0: new pathogen" size={28} color={INK_SOFT} weight={600} anchor="middle" at={KC.anti + 8} />
+				{f >= KC.week - 10 ? <PlainArrow x1={1610} y1={532} x2={1610} y2={590} at={KC.week - 10} color={AMBER} width={4} /> : null}
+				<PlateB p={PLATES.antibody} cx={1610} cy={650} w={120} o={dayO} />
+				<Sx x={1610} y={738} text="day 7 to 10:" size={28} color={AMBER_INK} weight={700} anchor="middle" at={KC.week + 8} />
+				<Sx x={1610} y={770} text="antibodies detected" size={28} color={AMBER_INK} weight={700} anchor="middle" at={KC.week + 8} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
+				{void KC.student}{void KC.evaluate}
 			</Overlay>
 		</>
 	);
@@ -194,12 +227,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 15. Key notes ----------
 const NOTES = [
-	'Antigen: a molecule the immune system can recognise, usually a protein or sugar chain on a pathogen\'s surface. Receptors and antibodies bind one small part of it (an epitope) with a particular shape.',
-	'Antibody: a Y-shaped protein; two identical binding sites at the arm tips (variable region); stem the same in many different antibodies (constant region). A B cell\'s receptors are antibodies held in its membrane.',
-	'Each B cell has one receptor shape; random shuffling of receptor genes gives millions of shapes before any infection.',
-	'Clonal selection: the antigen picks out the few B cells that fit; usually a helper T cell\'s go-ahead is also needed. The cell divides into a clone (days). Many become plasma cells (release antibodies of the selected shape, which the blood carries to the infection); some become memory B cells.',
-	'Antibodies don\'t kill by themselves: they block attachment and toxins, clump bacteria (agglutination) and coat them for phagocytes (opsonisation).',
+	"Antigen: a molecule the immune system can recognise, usually a protein or sugar chain on a pathogen's surface.",
+	'Antibody: a Y-shaped protein with two identical binding sites at its arm tips.',
+	"A B cell's receptors are antibodies held in its membrane. Each B cell has one receptor shape.",
+	'Random shuffling of receptor genes makes millions of shapes before any infection.',
+	'Clonal selection: the antigen picks out the few fitting B cells (usually with a helper T cell go-ahead).',
+	'The chosen cell divides into a clone (days): plasma cells release antibodies; memory B cells stay.',
+	"Antibodies don't kill: they block attachment and toxins, clump bacteria and coat them for phagocytes.",
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Clonal selection: the name is the process." tag="selected, then cloned" size={27} aidTop={840} />
+	<NotesBoard notes={NOTES} aid="Clonal selection: the name is the process." tag="selected, then cloned" size={32} aidTop={820} />
 );

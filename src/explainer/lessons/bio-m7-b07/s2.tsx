@@ -25,11 +25,14 @@ const K7 = cues(S('clone'), {divides: 'cell divides', again: 'again and again', 
 export const T7 = {x: 150, y: 540, dx: 170, h: 560, cellW: 80};
 export const SceneClone: React.FC = () => {
 	const f = useCurrentFrame();
+	// Quality fix (6 Nov): the selected cell now grows to a large hero at the centre of the stage while it divides,
+	// then its two daughters shrink into the first level of the clone tree.
 	const mv = smooth(prog(f, 0, 22));
-	const root = {cx: lerp(row6X(2), T7.x, mv), cy: lerp(690, T7.y, mv), w: lerp(170, 200, mv)};
+	const HERO = {cx: 600, cy: 540, w: 460};
+	const root = {cx: lerp(row6X(2), HERO.cx, mv), cy: lerp(690, HERO.cy, mv), w: lerp(170, HERO.w, mv)};
 	const div = prog(f, K7.divides + 4, 12);
 	const splitAt = K7.divides + 24;
-	const sp = smooth(prog(f, splitAt, 22));
+	const sp = smooth(prog(f, splitAt, 56));
 	const lv1 = cloneNodes(T7.x, T7.y, T7.dx, T7.h)[1];
 	const rootO = f < splitAt ? 1 : 0;
 	const copiesO = f < splitAt ? 0 : 1 - prog(f, K7.again + 12, 8);
@@ -38,10 +41,12 @@ export const SceneClone: React.FC = () => {
 		<Overlay>
 			<ResponseStrip {...strip} />
 			<BCell cx={root.cx} cy={root.cy} w={root.w} k="tri" divide={div} o={rootO} lit={1} glow={0.6} />
-			{f >= splitAt ? lv1.map((p, i) => <BCell key={i} cx={lerp(T7.x, p[0], sp)} cy={lerp(T7.y + (i ? 40 : -40), p[1], sp)} w={lerp(150, T7.cellW, sp)} k="tri" o={copiesO} />) : null}
+			{f >= splitAt ? lv1.map((p, i) => <BCell key={i} cx={lerp(HERO.cx, p[0], sp)} cy={lerp(HERO.cy + (i ? 160 : -160), p[1], sp)} w={lerp(300, T7.cellW, sp)} k="tri" o={copiesO} />) : null}
 			<CloneTree x={T7.x} y={T7.y} dx={T7.dx} h={T7.h} cellW={T7.cellW} at={K7.again} step={16} />
 			<BCell cx={T7.x} cy={T7.y} w={T7.cellW} k="tri" o={prog(f, K7.rare, 12) * 0.85} lit={1} />
 			<Ring cx={T7.x} cy={T7.y} rx={58} ry={58} at={K7.rare + 6} color={AMBER} />
+			<CTag x={HERO.cx + 270} y={400} text="the B cell divides" at={K7.divides + 6} color={TEAL} size={34} out={splitAt + 20} />
+			<CTag x={HERO.cx + 270} y={480} text="two identical daughter cells" at={splitAt + 4} color={TEAL} size={30} out={K7.again} />
 			<CTag x={700} y={180} text="a clone: identical cells" at={K7.clone + 8} color={TEAL} size={30} dim={prog(f, K7.days, 10)} />
 			<DayAxis x0={T7.x} x1={1040} y={900} at={K7.days + 2} />
 			<CTag x={420} y={960} text="first time: days" at={K7.days + 14} color={AMBER_INK} size={30} dim={prog(f, K7.rare, 10)} />
@@ -147,13 +152,22 @@ export const SceneActions: React.FC = () => {
 	const grip = prog(f, K9.stem + 8, 12);
 	const strip = strip7(4, [{}, {}, {}, {}, {at: K9.coat + 6, lit: prog(f, K9.coat + 10, 10)}]);
 	const pairs: [number, number][] = [[0, 1], [0, 2], [1, 3], [2, 3]];
+	// Quality fix (6 Nov): the misconception visual. While "Antibodies don't kill bacteria by themselves. They bind"
+	// is spoken, a large bacterium is coated with bound antibodies and stays whole; it then shrinks into panel 1.
+	const hm = smooth(prog(f, K9.cover - 4, 26));
+	const hero = {cx: lerp(560, 280, hm), cy: lerp(560, 625, hm), w: lerp(640, 300, hm), L: lerp(128, 60, hm)};
+	const heroOn = f < K9.cover + 22;
 	return (
 		<Overlay>
 			<ResponseStrip {...strip} />
+			{heroOn ? <Bact cx={hero.cx} cy={hero.cy} w={hero.w} id="b07-s9-hero" o={prog(f, 0, 14)} coat="tri" coatO={prog(f, K9.dont + 72, 16)} coatL={hero.L} /> : null}
+			<CTag x={940} y={420} text="antibodies bound" at={K9.dont + 76} color={TEAL} size={34} out={K9.cover + 2} />
+			<CTag x={940} y={500} text="the bacterium is still whole" at={K9.dont + 92} color={AMBER_INK} size={34} out={K9.cover + 2} />
+			<Gloss x={940} y={650} text="binding helps in three ways" at={K9.dont + 140} color={GREY_INK} size={30} out={K9.cover + 2} />
 			<MistakeChip x={100} y={170} text="antibodies kill bacteria" at={K9.dont} cross={K9.dont + 16} size={30} />
 			<g opacity={1 - 0.55 * d1} style={d1 > 0.01 ? {filter: `grayscale(${d1})`} : undefined}>
 				<Membrane x0={90} x1={470} y={720} at={K9.cover} h={90} />
-				<Bact cx={280} cy={lerp(625, 520, up)} w={300} id="b07-s9-p1" o={prog(f, K9.cover, 14)} coat="tri" coatO={prog(f, K9.cover + 14, 14)} coatL={60} />
+				<Bact cx={280} cy={lerp(625, 520, up)} w={300} id="b07-s9-p1" o={heroOn ? 0 : 1} coat="tri" coatO={1} coatL={60} />
 				<CTag x={90} y={840} text="block: can't attach" at={K9.cover + 20} color={TEAL} size={30} />
 				<GTag x={90} y={910} text="b03: fimbriae" at={K9.cover + 30} size={22} />
 				<GTag x={270} y={910} text="also blocks toxins" at={K9.cover + 44} size={22} />

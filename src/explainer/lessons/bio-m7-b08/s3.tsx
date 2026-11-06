@@ -14,8 +14,9 @@ import {ResponseStrip, stripRects} from '../bio-m7-b06/strip';
 import {ARow} from '../bio-m7-b06/s3';
 import {S, hold} from './common';
 import {PLATES} from './assets';
+import {PLATES2} from './plates2';
 import {strip8} from './board';
-import {AMBER, AMBER_INK, CARD, CardBox, GREY_INK, GTag, INK, INK_SOFT, PlateB, Sx, TEAL, prog, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, CardBox, DrawPath, GREY_INK, GTag, INK, INK_SOFT, PlateB, Sx, TEAL, prog, tw, vis} from './parts';
 
 /** A dashed claim box with a worded claim (marks underline its phrases on cue). Shared with b09. */
 export const ClaimBox: React.FC<{x: number; y: number; w: number; at: number; text: string; label?: string; s?: number; marks?: QMark[]; h?: number}> = ({x, y, w, at, text, label = "Student's claim", s = 1, marks = [], h = 150}) => {
@@ -58,18 +59,40 @@ qCheck(STEM1({a: 0, b: 0, g1: 0, g2: 0, g3: 0, k: 0, q: 0}), MARKS1.map(phrase =
 // ---------- 13a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', cyto: 'Cytotoxic T cells were', mixed: 'They were mixed', g1: 'Group one', g2: 'Group two', g3: 'Group three', only: 'Only the group', explain: 'Explain these', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {a: KA.cyto, b: KA.mixed, g1: KA.g1, g2: KA.g2, g3: KA.g3, k: KA.only, q: KA.explain};
+	// Quality fix (6 Nov): the whole question lands with its card (read along), and painted plates carry the named
+	// things on their cues: the mouse and its cytotoxic T cells, then the three groups of body cells. Nothing
+	// answer-bearing (no display pieces, no binding).
+	const f = useCurrentFrame();
+	const c = KA.first;
+	const t: T1 = {a: c, b: c, g1: c, g2: c, g3: c, k: c, q: c};
 	const h = hold('attempt');
+	const groups = [
+		{at: KA.g1, p: PLATES.cell, label: 'group 1', sub: 'uninfected'},
+		{at: KA.g2, p: PLATES.infected, label: 'group 2', sub: 'virus X'},
+		{at: KA.g3, p: PLATES.infected, label: 'group 3', sub: 'virus Y'},
+	];
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={640} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={700} w={1340} h={300} at={KA.explain + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c - 6} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1120} size={36} card={false} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={690} w={1120} size={36} card={false} />
+				<AnsBox x={140} y={740} w={1120} h={260} at={KA.explain + 30} />
+				<PlateB p={PLATES2.mouse} cx={1440} cy={290} w={250} o={prog(f, KA.cyto + 70, 14)} />
+				<PlateB p={PLATES.killer} cx={1690} cy={290} w={170} o={prog(f, KA.cyto, 14)} />
+				<Sx x={1690} y={410} text="cytotoxic T cells" size={26} color={INK_SOFT} weight={600} anchor="middle" at={KA.cyto + 8} />
+				<Sx x={1440} y={410} text="mouse with virus X" size={26} color={INK_SOFT} weight={600} anchor="middle" at={KA.cyto + 76} />
+				{groups.map((g, i) => (
+					<g key={i}>
+						<PlateB p={g.p} cx={1400 + i * 155} cy={580} w={100} o={prog(f, g.at, 14)} />
+						<Sx x={1400 + i * 155} y={700} text={g.label} size={28} color={INK} weight={700} anchor="middle" at={g.at + 6} />
+						<Sx x={1400 + i * 155} y={734} text={g.sub} size={26} color={INK_SOFT} weight={600} anchor="middle" at={g.at + 10} />
+					</g>
+				))}
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
+				{void KA.mixed}{void KA.only}{void KA.explain}
 			</Overlay>
 		</>
 	);
@@ -122,19 +145,35 @@ qCheck([{text: CLAIM2, at: 0}], [{phrase: 'antibodies are made by B cells', at: 
 // ---------- 13c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', hiv: 'HIV infects', without: 'Without treatment', student: 'A student says', evaluate: 'Evaluate the', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.hiv, b: KC.without, claim: KC.student, q: KC.evaluate};
+	// Quality fix (6 Nov): the whole question lands with its card, and the givens are drawn on cue: the painted helper
+	// T cell with a virus (HIV infects helper T cells), then a coded falling count over years. Nothing answer-bearing.
+	const f = useCurrentFrame();
+	const c = KC.second + 8;
+	const t: T2 = {a: c, b: c, claim: c, q: c};
 	const h = hold('attempt-two');
+	const gx = 1450, gy = 560, gw = 320, gh = 170;
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
-				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<ClaimBox x={140} y={360} w={1640} at={t.claim} text={CLAIM2} h={160} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={590} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={650} w={1340} h={350} at={KC.evaluate + 30} />
+				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1220} size={36} card={false} />
+				<ClaimBox x={140} y={370} w={1220} at={t.claim} text={CLAIM2} h={160} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={600} w={1220} size={36} card={false} />
+				<AnsBox x={140} y={660} w={1220} h={340} at={KC.evaluate + 30} />
+				<PlateB p={PLATES.helper} cx={1590} cy={320} w={200} o={prog(f, KC.hiv, 14)} />
+				<PlateB p={PLATES.virus} cx={1720} cy={230} w={80} o={prog(f, KC.hiv + 20, 12)} />
+				<Sx x={1590} y={460} text="HIV infects helper T cells" size={26} color={INK_SOFT} weight={600} anchor="middle" at={KC.hiv + 24} />
+				<g opacity={prog(f, KC.without, 14)}>
+					<line x1={gx} y1={gy} x2={gx} y2={gy + gh} stroke={INK_SOFT} strokeWidth={3} />
+					<line x1={gx} y1={gy + gh} x2={gx + gw} y2={gy + gh} stroke={INK_SOFT} strokeWidth={3} />
+					<Sx x={gx + gw / 2} y={gy + gh + 34} text="years" size={26} color={INK_SOFT} weight={600} anchor="middle" at={-100} />
+					<Sx x={gx + 12} y={gy - 16} text="helper T cells in blood" size={26} color={INK_SOFT} weight={600} at={-100} />
+				</g>
+				{f >= KC.without + 10 ? <DrawPath d={`M${gx + 8},${gy + 24} C${gx + gw * 0.4},${gy + 34} ${gx + gw * 0.6},${gy + gh * 0.7} ${gx + gw - 10},${gy + gh - 18}`} at={KC.without + 10} dur={40} color={AMBER} width={5} /> : null}
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
+				{void KC.student}
 			</Overlay>
 		</>
 	);
@@ -177,17 +216,35 @@ export const SceneDecision: React.FC = () => {
 	const strip = strip8(5, [], {x: 70, y: 190, w: 420, rh: 64, gap: 14, stepH: 50, size: 24});
 	strip.rungs = strip.rungs.map(r => ({...r, thumbs: []}));
 	const R = stripRects(strip);
+	// Quality fix (6 Nov): the painted cast (infected cell, helper and cytotoxic T cells) fills the stage while
+	// "So for any T cell question" is spoken, then each rule card carries its plate.
 	const steps = [
-		{at: KE.which, text: 'who displays the pieces'},
-		{at: KE.fit, text: 'fitting T cells: selected, cloned'},
-		{at: KE.helper, text: 'helpers: cytokines to B cells and killers'},
-		{at: KE.cyto, text: 'killers: bind, apoptosis'},
+		{at: KE.which, text: 'who displays the pieces', p: PLATES.infected, w: 48},
+		{at: KE.fit, text: 'fitting T cells: selected, cloned', p: PLATES.helper, w: 80},
+		{at: KE.helper, text: 'helpers: cytokines to B cells and killers', p: PLATES.helper, w: 80},
+		{at: KE.cyto, text: 'killers: bind, apoptosis', p: PLATES.killer, w: 80},
+	];
+	const castO = prog(f, 0, 12) * (1 - prog(f, KE.which - 8, 14));
+	const cast = [
+		{p: PLATES.infected, cx: 800, cy: 540, w: 250, label: 'infected cell'},
+		{p: PLATES.helper, cx: 1200, cy: 540, w: 300, label: 'helper T cell'},
+		{p: PLATES.killer, cx: 1600, cy: 540, w: 300, label: 'cytotoxic T cell'},
 	];
 	return (
 		<>
 			<Heading text="Display, fit, signal, destroy" at={KE.so} size={56} />
 			<Overlay>
 				<ResponseStrip {...strip} />
+				{castO > 0.01 ? (
+					<g opacity={castO}>
+						{cast.map((c, i) => (
+							<g key={i}>
+								<PlateB p={c.p} cx={c.cx} cy={c.cy} w={c.w} />
+								<Sx x={c.cx} y={860} text={c.label} size={36} color={INK_SOFT} hand weight={700} anchor="middle" at={-100} />
+							</g>
+						))}
+					</g>
+				) : null}
 				{steps.map((s, i) => {
 					const o = prog(f, s.at, 14);
 					const y = R[3].y - 120 + i * 130;
@@ -198,6 +255,7 @@ export const SceneDecision: React.FC = () => {
 							<rect x={560} y={y} width={1240} height={96} rx={26} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
 							<Sx x={600} y={y + 64} text={`${i + 1}`} size={46} color={AMBER_INK} weight={800} at={-100} />
 							<Sx x={670} y={y + 64} text={s.text} size={42} color={INK} hand at={-100} />
+							<PlateB p={s.p} cx={1735} cy={y + 48} w={s.w} />
 						</g>
 					) : null;
 				})}
@@ -212,11 +270,14 @@ export const SceneDecision: React.FC = () => {
 // ---------- 15. Key notes ----------
 const NOTES = [
 	"Antibodies can't reach a virus inside a cell. Cell-mediated immunity: T cells act on infected cells.",
-	'Antigen presentation: almost every cell displays pieces of the proteins it makes in display molecules (MHC). Infected cells display virus pieces; dendritic cells display pieces of what they took up.',
-	'A T cell receptor fits a displayed piece together with its display molecule, not free virus. In a lymph node, the few fitting T cells are selected and cloned (days): helper and cytotoxic T cells.',
-	'Helper T cells mainly coordinate: they release cytokines that give B cells the go-ahead, make cytotoxic T cells multiply and make macrophages better at destroying what they engulf.',
-	'Cytotoxic T cells bind infected cells displaying the matching piece and trigger apoptosis (self-destruct); healthy cells are left alone. NK cells (innate) also kill infected cells, without a receptor for one pathogen.',
+	'Almost every cell displays pieces of the proteins it makes in display molecules (MHC).',
+	'Infected cells display virus pieces; dendritic cells display pieces of what they took up.',
+	'A T cell receptor fits a displayed piece with its display molecule, not free virus.',
+	'In a lymph node the few fitting T cells are selected and cloned (days): helper and cytotoxic T cells.',
+	'Helper T cells release cytokines: the go-ahead for B cells, more cytotoxic T cells, stronger macrophages.',
+	'Cytotoxic T cells bind matching infected cells and trigger apoptosis (self-destruct).',
+	'NK cells (innate) also kill infected cells, without a receptor for one pathogen.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="B cells make antiBodies; T cells Terminate or Tell." tag="cytotoxic T cells terminate infected cells; helper T cells tell other cells to act" size={27} aidTop={850} />
+	<NotesBoard notes={NOTES} aid="B cells make antiBodies; T cells Terminate or Tell." tag="cytotoxic T cells terminate infected cells; helper T cells tell other cells to act" size={32} aidTop={830} />
 );

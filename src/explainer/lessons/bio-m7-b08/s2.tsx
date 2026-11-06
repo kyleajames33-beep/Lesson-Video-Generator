@@ -124,9 +124,28 @@ export const SceneNK: React.FC = () => {
 	const rT = tCentreFor(rseat.p, rseat.a, 130);
 	const rightO = prog(f, K9.natural + 30, 14);
 	const R = stripRects(strip8(4));
+	// Quality fix (6 Nov): while "Cytotoxic T cells aren't the only cells that kill infected cells" is spoken, a large
+	// cytotoxic T cell sits seated on an infected airway cell (the painted plates), then clears for the two columns.
+	const I9 = {cx: 640, cy: 580, w: 460};
+	const cs9 = cupSize(I9.w);
+	const site9 = cupSites(I9.cx, I9.cy, I9.w)[7];
+	const seat9 = seatFor(site9.p[0], site9.p[1], site9.a, cs9);
+	const home9 = tCentreFor(seat9.p, seat9.a, 200);
+	const introO = prog(f, 0, 12) * (1 - prog(f, K9.natural - 14, 14));
 	return (
 		<Overlay>
 			<ResponseStrip {...strip8(5)} />
+			{introO > 0.01 ? (
+				<g opacity={introO}>
+					<AirCell cx={I9.cx} cy={I9.cy} w={I9.w} inf={1} cups={{red: RED_CUPS}} />
+					<TCell cx={home9[0]} cy={home9[1]} w={200} killer={1} ring="amber" angles={anglesFrom(seat9.a / DEG)} skip={0} />
+					<Fork x={seat9.p[0]} y={seat9.p[1]} ang={seat9.a} s={cs9} lit={1} />
+					<CTag x={90} y={300} text="cytotoxic T cell" at={8} color={AMBER_INK} size={36} />
+					<CTag x={90} y={380} text="kills infected cells" at={K9.natural - 60} color={AMBER_INK} size={34} />
+					<GTag x={I9.cx + 140} y={900} text="infected airway cell" at={14} size={28} />
+					<CTag x={1000} y={300} text="the only killer?" at={K9.natural - 50} color={TEAL} size={36} />
+				</g>
+			) : null}
 			<GTag x={1390} y={R[2].y + 20} text="NK cells" at={K9.natural + 20} anchor="end" size={22} />
 			<CTag x={90} y={160} text="NK cells: innate" at={K9.natural} color={TEAL} size={32} />
 			<CTag x={830} y={160} text="cytotoxic T cells: adaptive" at={K9.natural + 30} color={AMBER_INK} size={32} />

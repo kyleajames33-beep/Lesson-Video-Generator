@@ -2,6 +2,7 @@ import lesson from '../../../../docs/production/claude-pm/lessons/m7b08/measured
 import type {ExplainerConfig} from '../../types';
 import {SCENES} from './scenes';
 import {ASSETS_M7B08} from './assets';
+import {ASSETS2_M7B08} from './plates2';
 
 const l = lesson as unknown as ExplainerConfig['lesson'];
 const missing = l.scenes.filter(s => !SCENES[s.id]).map(s => s.id);
@@ -13,5 +14,5 @@ export const config_m7b08: ExplainerConfig = {
 	subjectLabel: 'BIOLOGY',
 	topicLabel: 'HOW T CELLS RESPOND',
 	accent: undefined,
-	assets: ASSETS_M7B08,
+	assets: Array.from(new Set([...ASSETS_M7B08, ...ASSETS2_M7B08])),
 };

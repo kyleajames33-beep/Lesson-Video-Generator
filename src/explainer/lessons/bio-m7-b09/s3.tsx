@@ -227,12 +227,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 15. Key notes ----------
 const NOTES = [
-	'Primary response (first exposure): few fitting B and T cells must be selected and multiply; antibody appears after a week or more, peaks low (mainly IgM at first); illness often occurs while it builds. Most plasma cells then die, so antibody falls.',
-	'Memory B and T cells are long-lived and far more numerous than the original fitting cells. Memory is stored mainly in these cells; antibody falls far below its peak.',
-	'Secondary response (same antigen again): short lag, much higher peak (often 10 to 100 times, log scale), lasts longer; memory helper and cytotoxic T cells act sooner; often cleared before illness. A new antigen gets a primary response.',
-	"Vaccination: antigen in a form that doesn't cause the full disease (weakened live, killed, one protein, mRNA instructions) gives a primary response and memory without illness. A booster is a later extra dose: secondary response, more memory.",
-	'Acquired immunity (gained during life). Active (own response, memory, often long-lasting, slow to build): natural = infection; artificial = vaccine. Passive (given antibodies another person or animal made, immediate; receiving them makes no memory cells; fades in weeks to months): natural = mother\'s antibodies across the placenta and in breast milk; artificial = antibody injection, such as antivenom.',
+	'Primary response (first exposure): few fitting B and T cells, lag of a week or more, low peak.',
+	'Afterwards most plasma cells die and antibody falls; long-lived memory B and T cells stay.',
+	'Secondary response (same antigen): short lag, peak often 10 to 100 times higher, lasts longer.',
+	'Memory is specific: a new antigen still gets a primary response.',
+	"Vaccine: antigen in a form that doesn't cause the disease, so memory forms without illness. Booster: later dose.",
+	'Active immunity: your own B cells respond and memory forms. Natural = infection; artificial = vaccine.',
+	"Passive immunity: given ready-made antibodies, immediate, no memory, fades. Natural = mother's; artificial = antivenom.",
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Second exposure: faster, bigger, longer." tag="Active: you do the work. Passive: you're handed the antibodies." size={25} aidTop={870} />
+	<NotesBoard notes={NOTES} aid="Second exposure: faster, bigger, longer." tag="Active: you do the work. Passive: you're handed the antibodies." size={32} aidTop={810} />
 );
