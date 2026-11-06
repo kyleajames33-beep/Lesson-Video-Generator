@@ -76,3 +76,21 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - `ma12-pen-wall-v1` (needed for d17's handoff and for d18), `ma12-stone-wall-top-v1` and `ma12-card-texture-v1`.
     Reused: the Biology laptop, sheep and yellow car.
 27. **Kit additions (next kit pass):** `OneSidedSecants`, an animated zoom factor, a piecewise helper, a profile interior for `ContainerFill`, `MATH_CUP` and `MATH_CAP` with a concavity mode for `SignStrip`, `StackedDerivativePanels`, `ScreenChart`, `FencePen`, `BoxNetFold`, limit rows in the candidate table, and money and unit readouts.
+
+## i08 to i14 (wave 5, not yet voiced)
+
+28. **Anchors:**
+    - i08: a shopping-centre car park filling and emptying;
+    - i09: an outdoor thermometer on a frosty morning;
+    - i10: a lift going up 2 floors and down 2 (net 0, travelled 4); lifts belong to i10, and i01 is told not to use them;
+    - i11: a backyard pool's sloping beach entry;
+    - i12: garden-path cut and fill (odd), and a stone footbridge arch (even);
+    - i13: a home air conditioner over a hot day, replacing solar;
+    - i14: a robot vacuum in a hallway, and snow depth at a ski field.
+29. **i14 units.** The robot's motion uses centimetres with the site's numbers (24 cm/s, not 24 m/s); the worked example stays a particle in metres. Accepted.
+30. **Plates painted to profiles** (`pool-cutaway-v1`, `garden-cut-fill-v1`, `stone-footbridge-v1`, `lift-shaft-v1` landings). Codex paints to the stated profile tables and reports the measured positions. If the plate misses tolerance, the builder fits the coded curve to the measured positions; it never warps the plate.
+31. **i11** sits near the 5,500 floor and has no trims. **i12** cuts the e^(−x²) example to stay under the cap. **i13**'s attempt 1 is sand into a trailer.
+32. **Kit additions (next kit pass):**
+    - new parts: `NetFlowArrow`, `ThermoColumn`, a level fill against a plate, a plate meter readout and a constant-family slider;
+    - studio versions of `AccumulationTracer`, `LowerLimitDial`, `LimitSubstitution`, `AreaFlip`, `HorizontalStrips`, `SwapReflection`, `SymmetryPairs`, `CoefficientLedger`, `ToolPanel` and `UnitProduct`;
+    - extensions: backwards and trapezium modes on `AreaStrips`, reverse and odometer on `TripSim`, and plate sprites on `ParticleTrack`.
