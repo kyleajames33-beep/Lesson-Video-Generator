@@ -8,7 +8,7 @@ import {Heading, hold, sc} from './common';
 import {CAL_G} from './assets';
 import {
 	AChip, BASE, BASE_INK, CalCup, CupOutline, Fade, HEAT_INK, HeatOut, INK, INK_SOFT, KeyNotesBoard, LimitBars, Mistake, Note, Overlay, P, PROTON, PROTON_INK, PauseHold, QText, Ripples,
-	RuleCard, Sx, TEAL, TaskLine, VBracket, WLine, WTok, calPt, calW, qCheck, smooth,
+	RuleCard, Sx, TEAL, TaskLine, TempChip, VBracket, WLine, WTok, calPt, calW, qCheck, readW, smooth,
 } from './parts';
 import type {BarSpec, QBlock, QMark} from './parts';
 
@@ -51,23 +51,29 @@ const F1 = 'feedback-1';
 const K14 = cues(sc(F1), {moles: 'Moles first', z6: 'zero point zero six', z5: 'and zero point zero five', runs: 'runs out first', ninety: 'ninety grams', dT: 'delta T is seven', q: 'so q is about', res: 'two thousand seven hundred and eighty four', divide: 'Divide by the moles', minus: 'minus fifty six', excess: 'in excess'});
 const FA: BarSpec = {label: 'H^{+} 0.0600 mol', n: 0.06, color: PROTON, ink: PROTON_INK};
 const FB: BarSpec = {label: 'OH^{-} 0.0500 mol', n: 0.05, color: BASE, ink: BASE_INK};
+// Quality fix (6 Nov): the working is 44 px (was 38); the polystyrene cup from the question stands on the right with
+// its readout, which climbs from 21.0 to 28.4 °C on "delta T is seven point four".
 export const SceneFeedback1: React.FC = () => {
-	const X = 140, S = 38, RX = 1110;
+	const X = 140, S = 44, RX = 1150;
+	const C = {x: 1610, y: 590, h: 390};
+	const ccx = C.x + calW(C.h) / 2;
 	return (
 		<Overlay>
 			<Shrink k={0.66}>
 				<Question1 t={[-100, -100, -100, -100]} marks={[{phrase: '40.0 mL of 1.50 mol/L nitric acid', at: K14.z6 - 10}, {phrase: '50.0 mL of 1.00 mol/L potassium hydroxide', at: K14.z5}, {phrase: 'density of the mixture is 1.00 g/mL', at: K14.ninety - 10}, {phrase: '21.0 °C to 28.4 °C', at: K14.dT}, {phrase: 'specific heat capacity is 4.18 J g⁻¹ °C⁻¹', at: K14.q}]} />
 			</Shrink>
+			<CalCup x={C.x} y={C.y} h={C.h} o={1} />
+			<TempChip x={ccx - readW(34) / 2} y={C.y + C.h + 8} from={21.0} to={28.4} at={-100} rise={K14.dT} dur={50} size={34} />
 			<WLine x={X} y={560} size={S} dim={K14.ninety} items={P('n(H^{+}) = 1.50 × 0.0400', K14.z6 - 6, {t: '= 0.0600 mol', color: PROTON_INK}, K14.z6 + 40)} />
-			<WLine x={X} y={630} size={S} dim={K14.ninety} items={P('n(OH^{-}) = 1.00 × 0.0500', K14.z5, {t: '= 0.0500 mol', color: BASE_INK}, K14.z5 + 40)} />
-			<LimitBars x={RX} y={520} k={4000} a={FA} b={FB} at={K14.runs - 30} use={K14.runs} useDur={40} out={K14.ninety - 10} size={30} />
-			<AChip x={RX} y={690} text="n(H_2O) = 0.0500 mol" size={36} color={TEAL} hand={false} at={K14.runs + 30} />
-			<WLine x={X} y={730} size={S} dim={K14.divide} items={P('m = 40.0 + 50.0 = 90.0 g', K14.ninety)} />
-			<WLine x={X} y={800} size={S} dim={K14.divide} items={P('ΔT = 28.4 − 21.0 = 7.4 °C', K14.dT)} />
-			<WLine x={X} y={870} size={S} dim={K14.minus} items={P('q = 90.0 × 4.18 × 7.4', K14.q, '= 2783.9 J', K14.res)} />
-			<WLine x={X} y={950} size={S} items={P('ΔH = −2.784 kJ ÷ 0.0500 mol', K14.divide, '= −55.68 kJ/mol', K14.minus - 24)} />
-			<AChip x={RX} y={800} text="ΔH = −56 kJ/mol" size={46} color={TEAL} hand={false} at={K14.minus} />
-			<Note x={RX + 8} y={910} text="2 s.f., as ΔT = 7.4 °C" size={32} color={INK_SOFT} hand={false} at={K14.minus + 12} />
+			<WLine x={X} y={636} size={S} dim={K14.ninety} items={P('n(OH^{-}) = 1.00 × 0.0500', K14.z5, {t: '= 0.0500 mol', color: BASE_INK}, K14.z5 + 40)} />
+			<LimitBars x={RX} y={500} k={4000} a={FA} b={FB} at={K14.runs - 30} use={K14.runs} useDur={40} out={K14.ninety - 10} size={32} />
+			<AChip x={RX} y={690} text="n(H_2O) = 0.0500 mol" size={38} color={TEAL} hand={false} at={K14.runs + 30} />
+			<WLine x={X} y={740} size={S} dim={K14.divide} items={P('m = 40.0 + 50.0 = 90.0 g', K14.ninety)} />
+			<WLine x={X} y={816} size={S} dim={K14.divide} items={P('ΔT = 28.4 − 21.0 = 7.4 °C', K14.dT)} />
+			<WLine x={X} y={892} size={S} dim={K14.minus} items={P('q = 90.0 × 4.18 × 7.4', K14.q, '= 2783.9 J', K14.res)} />
+			<WLine x={X} y={972} size={S} items={P('ΔH = −2.784 kJ ÷ 0.0500 mol', K14.divide, '= −55.68 kJ/mol', K14.minus - 24)} />
+			<AChip x={RX} y={800} text="ΔH = −56 kJ/mol" size={48} color={TEAL} hand={false} at={K14.minus} />
+			<Note x={RX + 8} y={916} text="2 s.f., as ΔT = 7.4 °C" size={34} color={INK_SOFT} hand={false} at={K14.minus + 12} />
 			<Mistake x={RX} y={530} text="÷ 0.0600 mol: −46 kJ/mol" at={K14.excess} note="use the reactant that runs out" size={34} />
 			{void K14.moles}
 		</Overlay>
@@ -165,12 +171,16 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 18. Key notes ----------
+// Quality fix (6 Nov): seven one-line notes at 36 px replace four paragraphs at 33 px. The memory aid is unchanged.
 const NOTES = [
-	'Enthalpy of neutralisation: the enthalpy change per mole of water formed. Exothermic, so ΔH is negative: about −57 kJ/mol for a strong acid with a base fully split into ions (only H^{+}(aq) + OH^{-}(aq) → H_2O(l) happens; the other ions are spectators).',
-	'q = mcΔT: m = mass of all the solution (1 mL ≈ 1 g), c = 4.18 J g^{-1} °C^{-1}, ΔT = T(final) − T(initial).',
-	'n = cV for H^{+} and OH^{-} (H_2SO_4 gives 2 H^{+}). The one that runs out first sets n(H_2O). ΔH = −q ÷ n(H_2O), in kJ/mol, rounded to the data’s significant figures.',
-	'Example: 50.0 mL each of 1.00 mol/L HCl and NaOH, 21.5 → 28.0 °C: q = 2717 J, n(H_2O) = 0.0500 mol, ΔH = −54 kJ/mol (less negative than −57, mainly heat loss).',
+	'Enthalpy of neutralisation: the enthalpy change per mole of water formed.',
+	'Exothermic, so ΔH is negative: about −57 kJ/mol for a strong acid with a strong base.',
+	'Only H^{+}(aq) + OH^{-}(aq) → H_2O(l) happens; the other ions are spectators.',
+	'q = mcΔT: m = mass of all the solution (1 mL ≈ 1 g), c = 4.18 J g^{-1} °C^{-1}.',
+	'n = cV for H^{+} and OH^{-} (H_2SO_4 gives 2 H^{+}); the one that runs out first sets n(H_2O).',
+	'ΔH = −q ÷ n(H_2O), in kJ/mol, rounded to the data’s significant figures.',
+	'Example: 50.0 mL each of 1.00 mol/L HCl and NaOH, 21.5 → 28.0 °C: ΔH = −54 kJ/mol.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={33} aidTop={760} aids={['Per mole of water, not per mole of acid.', 'Temperature up, ΔH negative.']} tag="use the mass of everything in the cup" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={720} aids={['Per mole of water, not per mole of acid.', 'Temperature up, ΔH negative.']} tag="use the mass of everything in the cup" />
 );

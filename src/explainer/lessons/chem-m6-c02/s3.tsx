@@ -122,9 +122,13 @@ export const SceneAttempt1: React.FC = () => (
 );
 const F1 = 'feedback-1';
 const K15 = cues(sc(F1), {nitric: 'Nitric acid is', carb: 'a carbonate means', co2: 'water and carbon dioxide', ca: 'Calcium is two plus', no3: 'nitrate is one minus', canit: 'calcium nitrate', two: 'That needs two', stopped: 'If you stopped', left: 'left out the carbon'});
+// Quality fix (6 Nov): the salt builder's empty slots are on the board from the first frame (the tiles still drop in on
+// "Calcium is two plus" and "nitrate is one minus"), and the marble plate shows the solid calcium carbonate beside the
+// pattern card until the equation needs the width.
 export const SceneFeedback1: React.FC = () => {
 	const items = eq(['CaCO_3(s)', '+', '2HNO_3(aq)', '->', 'Ca(NO_3)_2(aq)', '+', 'H_2O(l)', '+', 'CO_2(g)'], [K15.two, K15.two + 4, K15.two + 8, K15.two + 14, K15.two + 18, K15.two + 22, K15.two + 26, K15.two + 30, K15.two + 34]);
-	const S = fitSize(items, 1700, 54);
+	const S = fitSize(items, 1700, 56);
+	const MH = 290, mx = 1500, my = 570;
 	return (
 		<Overlay>
 			<TaskLine text="Name, spot the pattern, build the salt, balance" at={K15.nitric} size={46} />
@@ -132,8 +136,11 @@ export const SceneFeedback1: React.FC = () => {
 			<AChip x={140} y={460} text="nitric acid: HNO_3" size={38} color={INK} hand={false} at={K15.nitric + 6} />
 			<AChip x={560} y={460} text="calcium carbonate: CaCO_3(s)" size={38} color={INK} hand={false} at={K15.carb + 6} />
 			<PatternCard x={1150} y={455} n={2} partner="carbonate" products={['salt', 'water', 'CO₂']} at={K15.carb + 10} s={0.72} lit={K15.co2} />
-			<SaltBuilder x={140} y={600} s={0.88} slotW={240} at={K15.ca - 6} spec={{cat: 'Ca^{2+}', an: 'NO_3^{-}', nCat: 1, nAn: 2, formula: 'Ca(NO_3)_2', tally: '(+2) + 2(−1) = 0', name: 'calcium nitrate'}} catAt={K15.ca} anAt={K15.no3} resAt={K15.canit} />
-			<EqLine items={items} x={140} y={900} size={S} />
+			<SaltBuilder x={140} y={610} s={0.92} slotW={250} at={K15.nitric + 10} spec={{cat: 'Ca^{2+}', an: 'NO_3^{-}', nCat: 1, nAn: 2, formula: 'Ca(NO_3)_2', tally: '(+2) + 2(−1) = 0', name: 'calcium nitrate'}} catAt={K15.ca} anAt={K15.no3} resAt={K15.canit} />
+			<PlateAt p={MARBLE} x={mx} y={my} h={MH} at={K15.carb + 4} out={K15.two - 12} />
+			<Note x={mx - 24} y={my + 150} text="marble:" size={36} color={INK_SOFT} anchor="end" at={K15.carb + 10} out={K15.two - 12} />
+			<Note x={mx - 24} y={my + 198} text="CaCO_3(s)" size={38} color={INK} anchor="end" hand={false} at={K15.carb + 10} out={K15.two - 12} />
+			<EqLine items={items} x={140} y={910} size={S} />
 			<Mistake x={1120} y={640} text="CaCO_3 + 2HNO_3 → Ca(NO_3)_2 + H_2O" at={K15.stopped} note="carbonate: CO₂ too" size={32} />
 			{void K15.left}
 		</Overlay>
@@ -224,13 +231,17 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 19. Key notes ----------
+// Quality fix (6 Nov): eight one-line notes at 36 px replace five paragraphs at 30 px. The memory aid is unchanged.
 const NOTES = [
-	'Common inorganic acids come in two groups. Binary acids (H + one non-metal, no O): hydro + non-metal + ic acid. HCl hydrochloric, HBr hydrobromic, HF hydrofluoric, H_2S hydrosulfuric.',
-	'Oxoacids (contain O), named from the ion: -⁠ate → -⁠ic (H_2SO_4 sulfuric, HNO_3 nitric, H_3PO_4 phosphoric, H_2CO_3 carbonic); -⁠ite → -⁠ous (H_2SO_3 sulfurous, HNO_2 nitrous). Never hydro-.',
-	'Bases: metal hydroxides (NaOH sodium hydroxide, Ca(OH)_2, Mg(OH)_2); ammonia NH_3 (not "ammonium hydroxide"); carbonates and hydrogen carbonates. Acids: sour, blue litmus red; bases: bitter, slippery, red litmus blue.',
-	'Salt = positive ion from the other reactant + negative ion from the acid; formula from charges first. Acid + hydroxide → salt + water: Mg(OH)_2 + 2HCl → MgCl_2 + 2H_2O. Acid + ammonia → salt only: 2NH_3 + H_2SO_4 → (NH_4)_2SO_4. Acid + carbonate or hydrogen carbonate → salt + water + CO_2: CaCO_3 + 2HCl → CaCl_2 + H_2O + CO_2. Acid + metal above H → salt + H_2: 2Al + 6HCl → 2AlCl_3 + 3H_2 (Cu, Ag: no reaction).',
+	'Binary acids (H + one non-metal): hydro- + non-metal + -ic acid. HCl hydrochloric, H_2S hydrosulfuric.',
+	'Oxoacids (contain O), from the ion: -⁠ate → -⁠ic (H_2SO_4 sulfuric), -⁠ite → -⁠ous (HNO_2 nitrous). Never hydro-.',
+	'Bases: metal hydroxides, NH_3 (not "ammonium hydroxide"), carbonates and hydrogen carbonates.',
+	'Salt = positive ion from the base or metal + negative ion from the acid; formula from the charges.',
+	'Acid + hydroxide → salt + water. Acid + ammonia → salt only: 2NH_3 + H_2SO_4 → (NH_4)_2SO_4.',
+	'Acid + carbonate → salt + water + CO_2: CaCO_3 + 2HCl → CaCl_2 + H_2O + CO_2.',
+	'Acid + metal above H → salt + H_2: 2Al + 6HCl → 2AlCl_3 + 3H_2. Cu, Ag: no reaction.',
 	'Gas tests: CO_2 turns limewater milky; H_2 burns with a squeaky pop.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={30} aidTop={790} aids={['Metal (or ammonium) names the first word; the acid names the second.', 'Hydroxide: water. Carbonate: water and CO₂. Metal: hydrogen.  -⁠ate → -⁠ic, -⁠ite → -⁠ous.']} tag="ammonia: salt only; metal must be above hydrogen" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={770} aids={['Metal (or ammonium) names the first word; the acid names the second.', 'Hydroxide: water. Carbonate: water and CO₂. Metal: hydrogen.  -⁠ate → -⁠ic, -⁠ite → -⁠ous.']} tag="ammonia: salt only; metal must be above hydrogen" />
 );

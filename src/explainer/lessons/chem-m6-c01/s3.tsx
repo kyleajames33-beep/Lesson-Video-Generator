@@ -4,67 +4,89 @@ import {useCurrentFrame} from 'remotion';
 import {prog} from '../../kit';
 import {cues} from '../../cues';
 import {Heading, sc} from './common';
-import {TUBE} from './assets';
+import {SODA_BOX, TUBE, TUBE_G} from './assets';
 import {
 	ACID, ACID_INK, AChip, AMBER, AMBER_INK, BASE, BASE_INK, Card, DrawPath, EqBox, EqLine, EqUnder, Fade, GREYT, GREY_INK, HopArrow, INK, INK_SOFT, Ion, LensFrame, Mistake, Mol, Note,
-	Overlay, PROTON, PROTON_INK, PlateAt, Proton, ProtonHop, Ring, RuleCard, Sx, TEAL, Timeline, VBracket, eAnchor, eSpan, eq, fitSize, giveAt, hopState, picW, slotAt, smooth, vis,
+	Overlay, PROTON, PROTON_INK, PlateAt, Proton, ProtonHop, Ring, RuleCard, Sx, TEAL, VBracket, eAnchor, eSpan, eq, fitSize, giveAt, hopState, picW, slotAt, smooth, vis,
 } from './parts';
+import {Timeline} from './timeline';
 
 // ---------- 11. The gas tube and carbonate, solved ----------
+// Quality fix (6 Nov): two columns, one per problem, both named from the first frame ("The other two problems"):
+// left, the NH4Cl tube (large) over its lens and equation; right, the baking soda and washing soda box over its lens
+// and equation. Lenses r 180 (were 190 and 170 in one cramped column); notes 34 px or more.
 const H11 = 'gas-carbonate';
 const K11 = cues(sc(H11), {other: 'The other two', tube: 'In the glass tube', directly: 'directly to ammonia', nowater: 'No water needed', pack: 'pack together', solid: 'the white solid', carb: 'a carbonate ion', takes: 'takes a proton from a water', leaving: 'leaving hydroxide behind', same: 'for the same reason', acceptors: "they're proton acceptors"});
 export const SceneGasCarb: React.FC = () => {
 	const f = useCurrentFrame();
-	const A = {cx: 330, cy: 410, r: 190};
-	const hx = 245, nx = 430, ay = 420, s = 1.1;
+	// left column: the tube and the gas reaction
+	const tx = 96, ty = 232, tW = 800, tH = tW * 344 / 1600;
+	const y0 = ty + tH * TUBE_G.axisV, ringX = tx + tW * TUBE_G.ringU;
+	const A = {cx: 290, cy: 650, r: 180};
+	const hx = 210, nx = 380, ay = 660, s = 1.2;
 	const hop1 = K11.directly - 4;
 	const st1 = hopState(f, hop1);
 	const pk = smooth(prog(f, K11.pack, 40));
-	const B = {cx: 330, cy: 850, r: 170};
-	const cx2 = 270, wx2 = 420, by2 = 870, s2 = 0.95;
+	const lat = [0, 1, 2, 3, 4, 5, 6, 7, 8].map(i => ({x: A.cx - 80 + (i % 3) * 80, y: A.cy - 80 + Math.floor(i / 3) * 80, k: (i % 3 + Math.floor(i / 3)) % 2}));
+	const e1 = eq(['HCl(g)', '+', 'NH_3(g)', '->', 'NH_4Cl(s)'], [K11.tube, K11.tube + 4, K11.tube + 8, K11.pack, K11.pack + 4]);
+	const S1 = fitSize(e1, 800, 50);
+	const E1Y = 900;
+	// right column: carbonate in water
+	const RX = 1000;
+	const BH = 220;
+	const B = {cx: 1190, cy: 650, r: 180};
+	const cx2 = 1122, wx2 = 1278, by2 = 670, s2 = 1.15;
 	const hop2 = K11.takes + 4;
 	const st2 = hopState(f, hop2);
-	const EX = 650;
-	const e1 = eq(['HCl(g)', '+', 'NH_3(g)', '->', 'NH_4Cl(s)'], [K11.tube, K11.tube + 4, K11.tube + 8, K11.pack, K11.pack + 4]);
-	const S1 = 50;
 	const e2 = eq(['CO_3^{2-}(aq)', '+', 'H_2O(l)', '<=>', 'HCO_3^{-}(aq)', '+', 'OH^{-}(aq)'], [K11.carb, K11.carb + 4, K11.carb + 8, K11.takes + 30, K11.takes + 34, K11.leaving - 4, K11.leaving]);
-	const S2 = fitSize(e2, 1000, 48);
-	// packed lattice positions (2 x 3, alternating)
-	const lat = [0, 1, 2, 3, 4, 5, 6, 7, 8].map(i => ({x: A.cx - 80 + (i % 3) * 80, y: A.cy - 80 + Math.floor(i / 3) * 80, k: (i % 3 + Math.floor(i / 3)) % 2}));
-	const tubeW = 560, tubeH = tubeW * 344 / 1600;
+	const S2 = fitSize(e2, 830, 50);
+	const E2Y = 900;
 	return (
 		<>
 			<Heading text="The other two problems, solved" at={4} size={56} />
 			<Overlay>
-				<PlateAt p={TUBE.ring} x={1264} y={190} h={tubeH} at={K11.tube - 6} />
-				<Note x={1264 + tubeW / 2} y={190 + tubeH + 40} text="gas reaction, no aqueous medium" size={30} color={TEAL} anchor="middle" at={K11.nowater} />
-				<LensFrame cx={A.cx} cy={A.cy} r={A.r} at={K11.other}>
+				{/* problem 1: the gas tube */}
+				<PlateAt p={TUBE.ring} x={tx} y={ty} h={tH} at={0} />
+				<Note x={tx + tW * 0.11} y={y0 - 44} text="NH_3(g)" size={32} color="#3f63b6" anchor="middle" hand={false} at={6} />
+				<Note x={tx + tW * 0.89} y={y0 - 44} text="HCl(g)" size={32} color="#3f8a43" anchor="middle" hand={false} at={6} />
+				<Note x={tx + tW / 2} y={ty + tH + 36} text="no water: a gas reaction" size={34} color={TEAL} anchor="middle" at={K11.nowater} out={K11.solid} />
+				<Ring cx={ringX} cy={y0} rx={36} ry={56} at={K11.solid} color={AMBER} seed={3} />
+				<Note x={tx + tW / 2} y={ty + tH + 36} text="white ring: NH_4Cl(s)" size={34} color={AMBER_INK} anchor="middle" at={K11.solid + 4} />
+				<LensFrame cx={A.cx} cy={A.cy} r={A.r} at={6}>
 					<rect x={A.cx - A.r} y={A.cy - A.r} width={2 * A.r} height={2 * A.r} fill="#f7f4ee" />
 					<g opacity={1 - pk}>
 						<Mol x={hx} y={ay} m="HCl" s={s} give={st1.give} />
 						<Mol x={nx} y={ay} m="NH3" s={s} take={st1.take} />
-						<ProtonHop a={giveAt('HCl', hx, ay, s)} b={slotAt('NH3', nx, ay, s)} at={hop1} s={0.95} bow={-80} />
+						<ProtonHop a={giveAt('HCl', hx, ay, s)} b={slotAt('NH3', nx, ay, s)} at={hop1} s={1.0} bow={-90} />
 					</g>
 					{pk > 0.01 ? lat.map((p, i) => <Ion key={i} x={p.x} y={p.y} kind={p.k ? '-' : '+'} r={p.k ? 31 : 33} label={p.k ? 'Cl^{-}' : 'NH_4^{+}'} o={pk} labelSize={17} />) : null}
 				</LensFrame>
-				<Note x={EX} y={560} text="no water: H^{+} goes straight to NH_3" size={34} color={PROTON_INK} at={K11.nowater} out={K11.carb} />
-				<EqLine items={e1} x={EX} y={440} size={S1} />
-				<Note x={EX + 560} y={510} text="ions packed in the solid" size={34} color={INK_SOFT} at={K11.solid} out={K11.carb} />
-				<EqBox items={e1} i={2} size={S1} x={EX} y={440} at={K11.acceptors} color={BASE} />
-				{/* carbonate in water */}
-				<LensFrame cx={B.cx} cy={B.cy} r={B.r} at={K11.carb - 4}>
+				<Note x={500} y={610} text="H^{+} goes straight" size={34} color={PROTON_INK} at={K11.directly} out={K11.carb} />
+				<Note x={500} y={656} text="to NH_3" size={34} color={PROTON_INK} at={K11.directly + 6} out={K11.carb} />
+				<Note x={500} y={740} text="ions pack into" size={34} color={INK_SOFT} at={K11.solid} out={K11.carb} />
+				<Note x={500} y={786} text="the white solid" size={34} color={INK_SOFT} at={K11.solid + 6} out={K11.carb} />
+				<EqLine items={e1} x={tx} y={E1Y} size={S1} />
+				<EqBox items={e1} i={2} size={S1} x={tx} y={E1Y} at={K11.acceptors} color={BASE} />
+				{/* problem 2: carbonates */}
+				<PlateAt p={SODA_BOX} x={RX} y={210} h={BH} at={0} />
+				<Note x={RX + picW(SODA_BOX, BH) + 30} y={292} text="baking soda, washing soda" size={34} at={8} />
+				<Note x={RX + picW(SODA_BOX, BH) + 30} y={342} text="basic, but no OH^{-} of their own" size={34} color={AMBER_INK} at={14} />
+				<LensFrame cx={B.cx} cy={B.cy} r={B.r} at={12}>
 					<rect x={B.cx - B.r} y={B.cy - B.r} width={2 * B.r} height={2 * B.r} fill="#eef6fb" />
 					<Mol x={cx2} y={by2} m="CO3" s={s2} take={st2.take} />
 					<Mol x={wx2} y={by2} m="H2O" s={s2} give={st2.give} rot={-0.5} />
-					<ProtonHop a={giveAt('H2O', wx2, by2, s2, -0.5)} b={slotAt('CO3', cx2, by2, s2)} at={hop2} s={0.85} bow={-60} />
+					<ProtonHop a={giveAt('H2O', wx2, by2, s2, -0.5)} b={slotAt('CO3', cx2, by2, s2)} at={hop2} s={1.0} bow={-70} />
 				</LensFrame>
-				<Ring cx={wx2 + 2} cy={by2 - 2} rx={52} ry={48} at={K11.leaving} color={TEAL} seed={8} />
-				<EqLine items={e2} x={EX} y={860} size={S2} />
-				<Note x={eAnchor(e2, 6, S2, EX, 860, 0)[0]} y={930} text="left from water" size={32} color={TEAL} anchor="middle" at={K11.leaving + 6} />
-				<EqBox items={e2} i={0} size={S2} x={EX} y={860} at={K11.acceptors} color={BASE} />
-				<Note x={EX} y={690} text="carbonates are bases for the same reason as ammonia:" size={36} color={INK_SOFT} at={K11.same} />
-				<Note x={EX} y={750} text="both are proton acceptors" size={48} color={BASE_INK} at={K11.acceptors + 6} />
-				{void picW}{void PROTON}{void AMBER}{void ACID}
+				<Ring cx={wx2 + 2} cy={by2 - 2} rx={62} ry={56} at={K11.leaving} color={TEAL} seed={8} />
+				<Note x={B.cx + B.r + 30} y={640} text="H^{+} from water" size={34} color={PROTON_INK} at={K11.takes} />
+				<Note x={B.cx + B.r + 30} y={686} text="onto CO_3^{2-}" size={34} color={PROTON_INK} at={K11.takes + 6} />
+				<EqLine items={e2} x={RX} y={E2Y} size={S2} />
+				<Note x={eAnchor(e2, 6, S2, RX, E2Y, 0)[0]} y={E2Y + 66} text="left from water" size={34} color={TEAL} anchor="middle" at={K11.leaving + 6} />
+				<EqBox items={e2} i={0} size={S2} x={RX} y={E2Y} at={K11.acceptors} color={BASE} />
+				{/* the conclusion */}
+				<Note x={96} y={996} text="carbonates are bases for the same reason as ammonia:" size={38} color={INK_SOFT} at={K11.same} />
+				<Note x={1000} y={996} text="both are proton acceptors" size={48} color={BASE_INK} at={K11.acceptors + 6} />
+				{void PROTON}{void ACID}
 			</Overlay>
 		</>
 	);
@@ -85,7 +107,6 @@ export const SceneFollow: React.FC = () => {
 		<>
 			<Heading text="Acid and base are roles" at={4} size={58} />
 			<Overlay>
-				<Timeline fill={[-1000, -1000, -1000, -1000]} stamp={[-1000, -1000, -1000]} strip={1} />
 				<EqLine items={e1} x={X} y={Y1} size={S} />
 				<EqLine items={e2} x={X} y={Y2} size={S} />
 				<EqBox items={e1} i={2} size={S} x={X} y={Y1} at={K12.accepted} color={BASE} tag="base here" tagBelow={false} />

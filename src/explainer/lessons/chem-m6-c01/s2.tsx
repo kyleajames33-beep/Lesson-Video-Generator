@@ -4,11 +4,12 @@ import {useCurrentFrame} from 'remotion';
 import {prog, rng} from '../../kit';
 import {cues} from '../../cues';
 import {Heading, sc} from './common';
-import {AMMONIA, LITMUS, SODA_BOX, TUBE, TUBE_G} from './assets';
+import {AMMONIA, BEAKER, LITMUS, SODA_BOX, TUBE, TUBE_G} from './assets';
 import {
 	ACID, ACID_INK, AChip, AMBER, AMBER_INK, Arrow, Atom, BASE, BASE_INK, Card, DrawPath, EqBox, EqLine, EqUnder, FTile, Fade, GREYT, GREY_INK, HopArrow, INK, INK_SOFT, Ion, LensFrame,
-	Mistake, Mol, Note, Overlay, PROTON, PROTON_INK, PairAt, PlateAt, Proton, ProtonHop, Ring, RoleRing, Sx, TEAL, Tick, Timeline, eAnchor, eSpan, eq, fitSize, eWidth, giveAt, hopState, mw, picW, platePt, pulseAt, slotAt, smooth, tileW, vis,
+	Mistake, Mol, Note, Overlay, PROTON, PROTON_INK, PairAt, PlateAt, Proton, ProtonHop, Ring, RoleRing, Sx, TEAL, Tick, eAnchor, eSpan, eq, fitSize, eWidth, giveAt, hopState, mw, picW, platePt, pulseAt, slotAt, smooth, tileW, vis,
 } from './parts';
+import {Timeline} from './timeline';
 
 // ---------- 6. Arrhenius and ammonia: a made-up compound ----------
 const H6 = 'arrhenius-ammonia';
@@ -160,39 +161,46 @@ const Pieces2: React.FC<{y: number; parts: [string, number, string][]}> = ({y, p
 const mwh = (t: string) => mw(t, 46, false, 800);
 
 // ---------- 9. Hydrogen chloride in water: hydronium ----------
+// Quality fix (6 Nov): the small top-right timeline strip is gone; the lens is larger (r 350, molecules at 2.2) and a
+// beaker of hydrochloric acid anchors it; the equation and notes sit in one right-hand column at 40 px or more.
 const H9 = 'hcl-water';
 const K9 = cues(sc(H9), {watch: 'Watch it work', diss: 'dissolves in water', moves: 'One hydrogen moves', acid: 'is the acid', base: 'water is the base', h3o: 'H three O plus', hydronium: 'the hydronium ion', means: 'H plus, aqueous', attached: 'attached to water'});
 export const SceneHClWater: React.FC = () => {
 	const f = useCurrentFrame();
-	const L = {cx: 470, cy: 650, r: 290};
-	const hx = 340, wx = 620, my = 660, s = 1.6;
+	const L = {cx: 500, cy: 610, r: 350};
+	const s = 2.2, hx = 330, wx = 660, my = 640;
 	const hop = K9.moves + 8;
 	const st = hopState(f, hop);
-	const EX = 870, EY = 560;
+	const EX = 960, EY = 330;
 	const items = eq(['HCl(g)', '+', 'H_2O(l)', '->', 'H_3O^{+}(aq)', '+', 'Cl^{-}(aq)'], [K9.diss, K9.diss + 4, K9.diss + 8, K9.moves + 30, K9.moves + 34, K9.moves + 38, K9.moves + 42]);
-	const S = fitSize(items, 960, 50);
-	const h3o = eAnchor(items, 4, S, EX, EY, 50);
+	const S = fitSize(items, 860, 54);
+	const h3o = eAnchor(items, 4, S, EX, EY, 62);
+	const BH = 300, bx = 1560, by = 700;
+	const ga = giveAt('HCl', hx, my, s), sl = slotAt('H2O', wx, my, s);
 	return (
 		<>
 			<Heading text="Hydrogen chloride in water" at={4} size={58} />
 			<Overlay>
-				<Timeline fill={[-1000, -1000, -1000, -1000]} stamp={[-1000, -1000, -1000]} strip={1} />
 				<LensFrame cx={L.cx} cy={L.cy} r={L.r} at={K9.watch}>
 					<rect x={L.cx - L.r} y={L.cy - L.r} width={2 * L.r} height={2 * L.r} fill="#eef6fb" />
 					<Mol x={hx} y={my} m="HCl" s={s} give={st.give} />
 					<Mol x={wx} y={my} m="H2O" s={s} take={st.take} />
-					<ProtonHop a={giveAt('HCl', hx, my, s)} b={slotAt('H2O', wx, my, s)} at={hop} s={1.1} bow={-90} />
+					<ProtonHop a={ga} b={sl} at={hop} s={1.4} bow={-120} />
 				</LensFrame>
-				<HopArrow a={[giveAt('HCl', hx, my, s)[0], my - 50]} b={[slotAt('H2O', wx, my, s)[0] - 20, slotAt('H2O', wx, my, s)[1] - 40]} at={hop + 30} bow={-60} />
-				<RoleRing x={hx + 20} y={my} r={100} role="acid" at={K9.acid} tag="donor" />
-				<RoleRing x={wx} y={my} r={100} role="base" at={K9.base} tag="acceptor" />
+				<Note x={hx + 10} y={my + 130} text="HCl" size={40} color={INK} anchor="middle" hand={false} at={K9.diss} out={K9.acid} />
+				<Note x={wx} y={my + 150} text="H_2O" size={40} color={INK} anchor="middle" hand={false} at={K9.diss + 8} out={K9.base} />
+				<HopArrow a={[ga[0], my - 80]} b={[sl[0] - 26, sl[1] - 56]} at={hop + 30} bow={-80} />
+				<RoleRing x={hx + 30} y={my} r={135} role="acid" at={K9.acid} tag="donor" size={40} />
+				<RoleRing x={wx} y={my - 10} r={135} role="base" at={K9.base} tag="acceptor" size={40} />
 				<EqLine items={items} x={EX} y={EY} size={S} />
 				<EqUnder items={items} i={0} size={S} x={EX} y={EY} at={K9.acid} color={ACID} />
 				<EqUnder items={items} i={2} size={S} x={EX} y={EY} at={K9.base} color={BASE} />
-				<Note x={h3o[0]} y={h3o[1]} text="hydronium ion" size={36} color={INK} anchor="middle" at={K9.h3o} out={K9.attached} />
-				<AChip x={EX} y={680} text="H^{+}(aq) = H_3O^{+}(aq)" size={40} color={TEAL} hand={false} at={K9.means} />
-				<Note x={EX} y={820} text="a proton in water is always attached to water" size={36} color={INK} at={K9.attached} />
-				<Mistake x={EX} y={880} text="HCl → H^{+} + Cl^{-} (for a Brønsted-Lowry answer)" at={K9.attached + 16} note="show the water" size={30} />
+				<Note x={h3o[0]} y={h3o[1]} text="hydronium ion" size={40} color={INK} anchor="middle" at={K9.h3o} out={K9.attached} />
+				<AChip x={EX} y={470} text="H^{+}(aq) = H_3O^{+}(aq)" size={46} color={TEAL} hand={false} at={K9.means} />
+				<Note x={EX} y={630} text="a proton in water is always attached to water" size={40} color={INK} at={K9.attached} />
+				<Mistake x={EX} y={680} text="HCl → H^{+} + Cl^{-} (in a Brønsted-Lowry answer)" at={K9.attached + 16} note="show the water" size={32} />
+				<PlateAt p={BEAKER} x={bx} y={by} h={BH} at={K9.diss - 6} />
+				<Note x={bx + picW(BEAKER, BH) / 2} y={by + BH + 46} text="hydrochloric acid" size={36} color={INK_SOFT} anchor="middle" at={K9.diss + 6} />
 				{void K9.hydronium}
 			</Overlay>
 		</>
@@ -200,60 +208,69 @@ export const SceneHClWater: React.FC = () => {
 };
 
 // ---------- 10. Ammonia in water: where the hydroxide comes from ----------
+// Quality fix (6 Nov): no timeline strip; a larger lens (r 340, molecules at 2.05); the hook's ammonia bottle is on
+// stage from the start; the "only some" lens and the closing litmus and molecule pair are larger.
 const H10 = 'ammonia-water';
 const K10 = cues(sc(H10), {hook: 'Now the hook', diss: 'Ammonia dissolves', donor: 'water is the donor', gives: 'gives a proton to ammonia', ammonium: 'an ammonium ion', left: "What's left", hydroxide: 'a hydroxide ion', comes: 'comes from water', some: 'Only some ammonia', dbl: 'double arrow', accepts: 'accepts a proton'});
 export const SceneNH3Water: React.FC = () => {
 	const f = useCurrentFrame();
-	const L = {cx: 450, cy: 650, r: 290};
-	const nx = 330, wx = 600, my = 680, s = 1.5;
+	const L = {cx: 490, cy: 620, r: 340};
+	const nx = 340, wx = 650, my = 660, s = 2.05;
 	const hop = K10.gives + 6;
 	const st = hopState(f, hop);
-	const EX = 860, EY = 540;
+	const EX = 960, EY = 330;
 	const items = eq(['NH_3(aq)', '+', 'H_2O(l)', '<=>', 'NH_4^{+}(aq)', '+', 'OH^{-}(aq)'], [K10.diss, K10.diss + 4, K10.diss + 8, K10.ammonium, K10.ammonium + 4, K10.hydroxide - 4, K10.hydroxide]);
-	const S = fitSize(items, 980, 50);
+	const S = fitSize(items, 860, 54);
 	const wTok = eAnchor(items, 2, S, EX, EY, 36), ohTok = eAnchor(items, 6, S, EX, EY, 36);
 	const arr = eSpan(items, 3, S, EX);
 	const pulse = pulseAt(f, K10.dbl, 0.25, 30);
-	// population lens: most NH3 unchanged, a few NH4+
+	const BH = 400, bx = 1000, by = 600;
+	const [lx, ly] = platePt(AMMONIA, bx, by, BH, 0.5, 0.56);
+	const PL = {cx: 1480, cy: 780, r: 170};
 	const pop = [[-0.5, -0.4], [0.1, -0.55], [0.55, -0.2], [-0.6, 0.2], [0.0, 0.05], [0.45, 0.45], [-0.2, 0.55], [0.2, -0.05 + 0.5]];
 	return (
 		<>
 			<Heading text="Ammonia in water" at={4} size={58} />
 			<Overlay>
-				<Timeline fill={[-1000, -1000, -1000, -1000]} stamp={[-1000, -1000, -1000]} strip={1} />
 				<LensFrame cx={L.cx} cy={L.cy} r={L.r} at={K10.hook}>
 					<rect x={L.cx - L.r} y={L.cy - L.r} width={2 * L.r} height={2 * L.r} fill="#eef6fb" />
 					<Mol x={nx} y={my} m="NH3" s={s} take={st.take} />
 					<Mol x={wx} y={my} m="H2O" s={s} give={st.give} rot={-0.6} />
-					<ProtonHop a={giveAt('H2O', wx, my, s, -0.6)} b={slotAt('NH3', nx, my, s)} at={hop} s={1.1} bow={-120} />
+					<ProtonHop a={giveAt('H2O', wx, my, s, -0.6)} b={slotAt('NH3', nx, my, s)} at={hop} s={1.4} bow={-150} />
 				</LensFrame>
-				<RoleRing x={wx + 6} y={my - 6} r={92} role="acid" at={K10.donor} out={K10.hydroxide} tag="donor" />
-				<RoleRing x={nx} y={my - 16} r={108} role="base" at={K10.ammonium} tag="NH_4^{+}" />
-				<Ring cx={wx + 4} cy={my - 4} rx={70} ry={64} at={K10.hydroxide} color={TEAL} seed={6} />
-				<Note x={L.cx} y={L.cy + L.r + 46} text="OH^{-}: left from water" size={36} color={TEAL} anchor="middle" at={K10.hydroxide + 6} out={K10.comes} />
+				<Note x={nx} y={my + 150} text="NH_3" size={40} color={INK} anchor="middle" hand={false} at={K10.diss} out={K10.ammonium} />
+				<Note x={wx} y={my + 150} text="H_2O" size={40} color={INK} anchor="middle" hand={false} at={K10.diss + 8} out={K10.donor} />
+				<RoleRing x={wx + 8} y={my - 8} r={122} role="acid" at={K10.donor} out={K10.hydroxide} tag="donor" size={40} />
+				<RoleRing x={nx} y={my - 20} r={140} role="base" at={K10.ammonium} tag="NH_4^{+}" size={40} />
+				<Ring cx={wx + 6} cy={my - 6} rx={92} ry={84} at={K10.hydroxide} color={TEAL} seed={6} />
+				<Note x={L.cx} y={L.cy + L.r + 48} text="OH^{-}: left from water" size={40} color={TEAL} anchor="middle" at={K10.hydroxide + 6} out={K10.comes} />
 				<g transform={`translate(${arr.cx},${EY - S * 0.3}) scale(${pulse}) translate(${-arr.cx},${-(EY - S * 0.3)})`}>
 					<EqLine items={items} x={EX} y={EY} size={S} />
 				</g>
 				<DrawPath d={`M${wTok[0]},${wTok[1]} C${wTok[0] + 60},${wTok[1] + 90} ${ohTok[0] - 60},${ohTok[1] + 90} ${ohTok[0]},${ohTok[1]}`} at={K10.comes} dur={24} color={TEAL} width={4.5} />
-				<Note x={(wTok[0] + ohTok[0]) / 2} y={wTok[1] + 120} text="the OH^{-} comes from water" size={36} color={TEAL} anchor="middle" at={K10.comes + 10} />
-				<AChip x={arr.cx} y={400} text="Module 5: reversible, at equilibrium" size={32} color={INK_SOFT} at={K10.dbl} out={K10.accepts - 10} anchor="middle" />
+				<Note x={(wTok[0] + ohTok[0]) / 2} y={wTok[1] + 124} text="the OH^{-} comes from water" size={40} color={TEAL} anchor="middle" at={K10.comes + 10} />
+				<AChip x={arr.cx} y={196} text="Module 5: reversible, at equilibrium" size={34} color={INK_SOFT} at={K10.dbl} out={K10.accepts - 10} anchor="middle" />
+				{/* the hook's bottle, on stage throughout */}
+				<PlateAt p={AMMONIA} x={bx} y={by} h={BH} at={0} />
+				<Sx x={lx} y={ly - 10} text="ammonia solution" size={26} color={INK} anchor="middle" weight={700} at={6} />
+				<Sx x={lx} y={ly + 26} text="NH_3(aq)" size={32} color={INK} anchor="middle" weight={800} at={6} />
 				{/* only some at any moment */}
-				<LensFrame cx={1060} cy={890} r={130} at={K10.some} out={K10.accepts - 10}>
-					<rect x={930} y={760} width={260} height={260} fill="#eef6fb" />
-					{pop.map(([u, v], i) => <Mol key={i} x={1060 + u * 130} y={890 + v * 130} m="NH3" s={0.42} take={i === 4 || i === 1 ? 1 : 0} charge={false} />)}
+				<LensFrame cx={PL.cx} cy={PL.cy} r={PL.r} at={K10.some} out={K10.accepts - 10}>
+					<rect x={PL.cx - PL.r} y={PL.cy - PL.r} width={2 * PL.r} height={2 * PL.r} fill="#eef6fb" />
+					{pop.map(([u, v], i) => <Mol key={i} x={PL.cx + u * PL.r} y={PL.cy + v * PL.r} m="NH3" s={0.55} take={i === 4 || i === 1 ? 1 : 0} charge={false} />)}
 				</LensFrame>
-				<Note x={1060} y={1060} text="most stay NH_3" size={30} color={INK_SOFT} anchor="middle" at={K10.some + 10} out={K10.accepts - 10} />
+				<Note x={PL.cx} y={PL.cy + PL.r + 46} text="most stay NH_3" size={36} color={INK_SOFT} anchor="middle" at={K10.some + 10} out={K10.accepts - 10} />
 				{/* back to the hook */}
 				<Fade at={K10.accepts - 4}>
-					<g transform="translate(1280,780)">
+					<g transform="translate(1290,640)">
 						<PlateBlue />
 					</g>
 				</Fade>
-				<Fade at={K10.accepts - 4}><Mol x={1720} y={830} m="NH3" s={0.85} /></Fade>
-				<Note x={1300} y={1000} text="base: proton acceptor" size={42} color={BASE_INK} at={K10.accepts} />
-				{void K10.left}{void eWidth}{void Atom}{void picW}{void PROTON}{void Ion}{void FTile}{void AMBER}{void EqBox}{void ACID_INK}{void GREYT}{void tileW}{void vis}{void AMBER_INK}{void INK}{void PlateAt}
+				<Note x={1290 + picW(LITMUS.blue, 230) / 2} y={920} text="turns red litmus blue" size={34} color="#2f55b8" anchor="middle" at={K10.accepts} />
+				<Note x={1290} y={1010} text="base: proton acceptor" size={46} color={BASE_INK} at={K10.accepts} />
+				{void K10.left}{void eWidth}{void Atom}{void PROTON}{void Ion}{void FTile}{void AMBER}{void EqBox}{void ACID_INK}{void GREYT}{void tileW}{void vis}{void AMBER_INK}
 			</Overlay>
 		</>
 	);
 };
-const PlateBlue: React.FC = () => <PairAt a={LITMUS.blue} b={LITMUS.blue} x={0} y={0} h={170} at={-1000} swap={-1000} />;
+const PlateBlue: React.FC = () => <PairAt a={LITMUS.blue} b={LITMUS.blue} x={0} y={0} h={230} at={-1000} swap={-1000} />;

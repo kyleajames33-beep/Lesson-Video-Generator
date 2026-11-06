@@ -7,8 +7,9 @@ import {Heading, sc} from './common';
 import {BEAKER, CLEANER, LITMUS} from './assets';
 import {
 	ACID, ACID_INK, AChip, AMBER, AMBER_INK, Arrow, BASE, BASE_INK, Card, Chip, DrawPath, EqLine, FTile, Fade, GREYT, GREY_INK, HBracket, INK, INK_SOFT, Ion, LensFrame, Mol, Note,
-	OXY, Overlay, PROTON, PROTON_INK, PairAt, PicH, PlateAt, Proton, Ring, Sx, TEAL, Timeline, VBracket, cardX, clamp01, eq, lerp, picW, smooth, tileW, TL, vis,
+	OXY, Overlay, PROTON, PROTON_INK, PairAt, PicH, PlateAt, Proton, Ring, Sx, TEAL, VBracket, cardX, clamp01, eq, lerp, picW, smooth, tileW, TL, vis,
 } from './parts';
+import {Timeline} from './timeline';
 
 // ---------- 1. Hook: a base with no hydroxide ----------
 const H1 = 'hook';
@@ -103,10 +104,10 @@ export const SceneLavoisier: React.FC = () => {
 		<>
 			<Heading text="Model 1: acids contain oxygen" at={4} size={58} />
 			<Overlay>
-				<Timeline fill={[K3.lav]} stamp={[K3.noox + 20]} />
+				<Timeline fill={[4]} stamp={[K3.noox + 20]} />
 				{ACIDS.map((a, i) => (
 					<g key={a.f}>
-						<FTile x={xs[i]} y={ty} formula={a.f} size={S} at={K3.studied + i * 10} glow={[{el: 'O', at: K3.oxygen + i * 4, color: OXY}]} />
+						<FTile x={xs[i]} y={ty} formula={a.f} size={S} at={14 + i * 10} glow={[{el: 'O', at: K3.oxygen + i * 4, color: OXY}]} />
 						<Note x={xs[i] + tileW(a.f, S) / 2} y={ty + 90} text={a.name} size={34} color={INK_SOFT} anchor="middle" at={K3.studied + i * 10} />
 					</g>
 				))}

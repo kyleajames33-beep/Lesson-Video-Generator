@@ -55,7 +55,9 @@ export const SceneHook: React.FC = () => {
 	const [wx, wy] = calPt(CX, CY, CH, CAL_G.win);
 	return (
 		<>
-			<Heading text="No fizz. How much heat?" at={K1.sohow} size={60} />
+			{/* quality fix (6 Nov): a title from the first frame, replaced by the question on "So how much heat" */}
+				<Heading text="Two clear solutions, mixed" at={4} size={60} out={K1.sohow - 12} />
+				<Heading text="No fizz. How much heat?" at={K1.sohow} size={60} />
 			<Overlay>
 				<CalCup x={CX} y={CY} h={CH} lift={lift} glow={glow} />
 				<TempChip x={probe[0] + 18} y={probe[1] - 8 - lift} from={21.5} to={28.0} at={K1.pour + 120} rise={K1.but + 8} dur={56} up={K1.t28} />
@@ -252,6 +254,8 @@ export const SceneCalorimeter: React.FC = () => {
 	const MX = 760;
 	return (
 		<>
+			{/* quality fix (6 Nov): scene title */}
+			<Heading text="Measuring the heat: the calorimeter" at={4} size={56} />
 			<Overlay>
 				<CalCup x={PX} y={PY} h={PH} glow={prog(f, K5.assume, 30) * 0.8} />
 				<Ripples x={wx} y={wy} at={K5.assume} r={150} o={0.8} />

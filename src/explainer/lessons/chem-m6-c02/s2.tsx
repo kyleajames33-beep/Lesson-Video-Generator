@@ -176,9 +176,11 @@ export const SceneCarbonate: React.FC = () => {
 			<Heading text="Acid + carbonate" at={4} size={56} />
 			<Overlay>
 				<PatternCard x={96} y={170} n={2} partner="carbonate" products={['salt', 'water', 'CO₂']} at={K9.p2} />
-				<PlateAt p={MARBLE} x={96} y={300} h={260} at={K9.marble - 4} />
-				<Note x={96} y={610} text="marble: CaCO_3" size={36} at={K9.marble} />
-				<LensFrame cx={L.cx} cy={L.cy} r={L.r} at={K9.co2}>
+				{/* quality fix (6 Nov): the marble, the lens and the empty salt slots are on stage from the start, so the scene opens
+				    full; each still changes on its cue */}
+				<PlateAt p={MARBLE} x={96} y={300} h={260} at={6} />
+				<Note x={96} y={610} text="marble: CaCO_3" size={36} at={12} />
+				<LensFrame cx={L.cx} cy={L.cy} r={L.r} at={10}>
 					<rect x={L.cx - L.r} y={L.cy - L.r} width={2 * L.r} height={2 * L.r} fill={LENS_BG} />
 					<g opacity={1 - split}>
 						<Mol x={cx} y={cy} m={f >= hop1 + 26 ? 'HCO3' : 'CO3'} s={1.0} take={f >= hop1 + 26 ? (f >= hop2 + 26 ? 1 : 0) : 0} />
@@ -196,7 +198,7 @@ export const SceneCarbonate: React.FC = () => {
 				<Fade at={K9.carbonic} out={K9.breaks}><circle cx={cx} cy={cy} r={95} fill="none" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" /></Fade>
 				<Note x={L.cx} y={L.cy + L.r + 44} text="H_2CO_3: unstable" size={36} color={INK_SOFT} anchor="middle" at={K9.unstable} out={K9.breaks + 10} />
 				<Note x={L.cx} y={L.cy + L.r + 44} text="→ H_2O + CO_2 (the fizz)" size={36} color={CO2_INK} anchor="middle" at={K9.fizz} />
-				<SaltBuilder x={990} y={320} s={0.9} slotW={240} at={K9.marble} spec={{cat: 'Ca^{2+}', an: 'Cl^{-}', nCat: 1, nAn: 2, formula: 'CaCl_2', tally: '(+2) + 2(−1) = 0'}} catAt={K9.marble + 10} anAt={K9.twocl} resAt={K9.cacl2} />
+				<SaltBuilder x={990} y={320} s={0.9} slotW={240} at={16} spec={{cat: 'Ca^{2+}', an: 'Cl^{-}', nCat: 1, nAn: 2, formula: 'CaCl_2', tally: '(+2) + 2(−1) = 0'}} catAt={K9.marble + 10} anAt={K9.twocl} resAt={K9.cacl2} />
 				<EqLine items={items} x={EQ_X} y={840} size={S} />
 				<Coefs items={items} size={S} x={EQ_X} y={840} at={K9.cacl2 + 20} />
 				<PairAt a={SODA_CLIP.before} b={SODA_CLIP.fizz} x={1500} y={560} h={200} at={K9.hco3} swap={K9.same} dur={30} />

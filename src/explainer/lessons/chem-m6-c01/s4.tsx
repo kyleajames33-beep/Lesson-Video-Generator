@@ -155,13 +155,17 @@ export const SceneDecision: React.FC = () => (
 );
 
 // ---------- 20. Key notes ----------
+// Quality fix (6 Nov): eight one-line notes at 36 px replace five paragraphs at 33 px. The memory aid is unchanged.
 const NOTES = [
 	'Lavoisier (1770s): acids contain oxygen. Broken by HCl, an acid with no oxygen.',
-	'Davy (1810s): acids contain hydrogen. Limit: hydrogen alone does not identify an acid (methane has H, not acidic); no definition of a base.',
-	'Arrhenius (1880s): an acid releases H^{+} in water; a base releases its own OH^{-} in water. Works for acids and hydroxide bases in water. Limitation: needs an aqueous solution and a base with its own OH^{-}, so it can’t explain NH_3, carbonates, or HCl(g) + NH_3(g) → NH_4Cl(s) (a gas reaction).',
-	'Brønsted-Lowry (1923): an acid is a proton (H^{+}) donor; a base is a proton acceptor; any medium. HCl + H_2O → H_3O^{+} + Cl^{-}. NH_3 + H_2O ⇌ NH_4^{+} + OH^{-} (the OH^{-} comes from water). Limitation: needs a proton to transfer (CaO + SO_3 → CaSO_4 has none).',
-	'H^{+}(aq) means H_3O^{+}(aq), the hydronium ion. Acid and base are roles in a reaction: follow the proton.',
+	'Davy (1810s): acids contain hydrogen. Not enough alone (CH_4 is not acidic); no base definition.',
+	'Arrhenius (1880s): an acid releases H^{+} in water; a base releases its own OH^{-}.',
+	'Arrhenius limits: needs water and a base with its own OH^{-}; fails for NH_3, carbonates, gas reactions.',
+	'Brønsted-Lowry (1923): acid = proton (H^{+}) donor; base = proton acceptor; in water or not.',
+	'NH_3 + H_2O ⇌ NH_4^{+} + OH^{-}: the OH^{-} comes from water, so NH_3 is a base.',
+	'H^{+}(aq) means H_3O^{+}(aq). Acid and base are roles in a reaction: follow the proton.',
+	'Brønsted-Lowry limit: needs a proton to move (CaO + SO_3 → CaSO_4 has none).',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={33} aidTop={800} aids={['Each model fixed a failure of the one before.', 'Acid gives, base takes (a proton).']} tag="assess a model: what it explained, then what it couldn't" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={770} aids={['Each model fixed a failure of the one before.', 'Acid gives, base takes (a proton).']} tag="assess a model: what it explained, then what it couldn't" />
 );
