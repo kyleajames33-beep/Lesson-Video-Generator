@@ -33,10 +33,11 @@ Claude committed your previous outputs on 6 November (reports, measured data, th
    - Either way, keep a running list in `work/youtube-pending.json` of every checked v2 master waiting for upload, with its file path, its v1 link, the metadata to copy, its captions file and its playlist position.
 2. **196:** finish the YouTube steps for bio-m7-b06 and b10 (owner approved).
 3. **213:** voice d01 Revision 6, the Maths owner pilot. It is short and uses the Google voice; run it before or after the 19:00 scheduled task, not alongside.
+3b. **217:** check and voice the two science pilots (chem-y11-m2-v06 and phys-y12-m5-v04), straight after 213.
 4. **199:** re-render the four Chemistry videos with render defects, check chem-m7-p06, and resolve the c10/c05 link record. g03 was already found in 196; reuse that work.
 5. **Re-render-and-replace briefs, in number order:** 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212. Claude has already fixed each video's scene code. You render v2, scan it, compare its sheet with Claude's, do a playback check, and replace it on YouTube (or add it to `work/youtube-pending.json` if access is still broken).
 6. **214:** error check of Claude's brief 180 repairs, then one plate. It is light work and may run alongside a render.
 7. **Production reviews and plates:** 191, 192 and 193 (Year 12 Physics Modules 7 and 8).
-8. Any brief numbered above 214 (check the folder).
+8. Any brief numbered above 214 (check the folder): 215 (re-render wave 4b) goes after 212; 216 (error check, light) goes after 214.
 
 Hand in to `status.md` after each brief, as before.
