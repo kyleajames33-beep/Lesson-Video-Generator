@@ -33,7 +33,7 @@ export const SceneRecordP03: React.FC = () => {
 			<Overlay>
 				<Rail lit={3} at={K6.record} />
 				<Desk />
-				<PlateB p={PLP.clipboard} cx={300} cy={850} w={150} o={prog(f, 0, 12)} />
+				<PlateB p={PLP.clipboard} cx={440} cy={845} w={280} o={prog(f, 0, 12)} />
 				<Fade at={K6.record}>
 					<rect x={CZ.x} y={TY0} width={CZ.w} height={TROW * 5} rx={14} fill={CARD} stroke={EDGE} strokeWidth={3} />
 					<rect x={CZ.x} y={TY0} width={CZ.w} height={TROW} rx={14} fill="#efe6d4" />

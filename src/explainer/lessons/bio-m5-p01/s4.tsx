@@ -10,7 +10,7 @@ import {
 	PLP, PaperRibo, PenLink, PlainArrow, PlateB, QMark, QUESTION, S, Snap, StrandArrow, Sx, TEAL, Tick, TrnaCard, HB, acCell, lerp, prog, pulse, Bench,
 } from './shared';
 
-const NARROW = 650;
+const NARROW = 600;
 const rowPt = (col: number, row: number): [number, number] => {
 	const [x, y] = acCell(col, row);
 	return [x - 12, y + 22];
@@ -38,12 +38,12 @@ export const SceneStrengthsP01: React.FC = () => {
 				<g opacity={prog(f, K10.assess + 6, 12)}>
 					<MiniLadder x={330} y={320} w={330} h={34} top={ORIG} bot={NEWC} />
 					<MiniLadder x={330} y={410} w={330} h={34} top={NEWC} bot={ORIG} />
-					<Sx x={495} y={490} text="two copies" size={26} color={INK_SOFT} weight={700} anchor="middle" />
+					<Sx x={495} y={490} text="two copies" size={30} color={INK_SOFT} weight={700} anchor="middle" />
 				</g>
 				<PaperRibo cx={230} cy={720} w={250} o={prog(f, K10.assess + 12, 12)} hot={pulse(f, K10.threes, 40)} />
-				<Sx x={230} y={860} text="card ribosome" size={22} color={INK_SOFT} weight={700} anchor="middle" at={K10.assess + 12} />
+				<Sx x={230} y={860} text="card ribosome" size={28} color={INK_SOFT} weight={700} anchor="middle" at={K10.assess + 12} />
 				<PlateB p={PLP.riboReal} cx={430} cy={715} w={150} o={prog(f, K10.window, 14)} />
-				<Sx x={430} y={820} text="real ribosome" size={22} color={INK_SOFT} weight={700} anchor="middle" at={K10.window + 8} />
+				<Sx x={430} y={820} text="real ribosome" size={28} color={INK_SOFT} weight={700} anchor="middle" at={K10.window + 8} />
 				<TrnaCard cx={610} cy={705} w={140} anti="UAC" bead="red" o={prog(f, K10.assess + 18, 12)} tabGlow={pulse(f, K10.links, 40)} />
 				<PenLink a={[190, 400]} b={rowPt(0, 0)} at={K10.tab + 8} />
 				<PenLink a={[660, 380]} b={rowPt(0, 1)} at={K10.colours + 8} />
@@ -84,21 +84,21 @@ export const SceneLimitsP01: React.FC = () => {
 							<QMark x={460 + k * 76} y={334} size={40} color={GREYT} />
 						</g>
 					))}
-					<GreyTag x={110} y={356} text="helicase, DNA polymerase, RNA polymerase" at={K11.enz} size={18} />
+					<GreyTag x={110} y={356} text="helicase, DNA polymerase, RNA polymerase" at={K11.enz} size={22} />
 				</g>
 				{/* 2. flat against the real helix */}
 				<g opacity={prog(f, K11.flat, 12) * dimAfter(1)}>
 					<MiniLadder x={110} y={470} w={300} h={34} />
-					<Sx x={110} y={540} text="model: flat" size={24} color={INK_SOFT} weight={700} />
-					<PlateB p={PLP.helix} cx={lerp(760, 560, prog(f, K11.twist, 20))} cy={490} w={70} o={prog(f, K11.twist, 14)} />
-					<Sx x={600} y={600} text="real: twisted" size={24} color={INK_SOFT} weight={700} anchor="middle" at={K11.twist + 10} />
+					<Sx x={110} y={540} text="model: flat" size={30} color={INK_SOFT} weight={700} />
+					<PlateB p={PLP.helix} cx={lerp(640, 560, prog(f, K11.twist, 20))} cy={490} w={70} o={prog(f, K11.twist, 14)} />
+					<Sx x={600} y={600} text="real: twisted" size={30} color={INK_SOFT} weight={700} anchor="middle" at={K11.twist + 10} />
 				</g>
 				{/* 3. scale bar running off screen */}
 				<g opacity={prog(f, K11.tiny, 12) * dimAfter(2)}>
 					<rect x={lerp(600, -2600, stretch)} y={650} width={lerp(60, 3260, stretch)} height={18} rx={9} fill="#ddd3c0" />
 					<rect x={600} y={650} width={60} height={18} rx={9} fill={ORIG} />
 					<Sx x={630} y={640} text="12" size={24} color={ORIG} weight={800} anchor="middle" />
-					<Sx x={110} y={705} text="a real gene: thousands of bases" size={28} color={INK} hand at={K11.thousands} />
+					<Sx x={110} y={705} text="a real gene: thousands of bases" size={34} color={INK} hand at={K11.thousands} />
 				</g>
 				{/* 4. direction not enforced */}
 				<g opacity={prog(f, K11.dir, 12) * dimAfter(3)}>
@@ -108,14 +108,14 @@ export const SceneLimitsP01: React.FC = () => {
 					</g>
 					<StrandArrow x1={250 - 21} x2={250 + 3 * 50 + 21} y={745} at={K11.dir} dir={1} size={22} />
 					<QMark x={160} y={760} size={48} color={GREYT} o={prog(f, K11.oneway, 10)} />
-					<Sx x={420} y={800} text="added at the wrong end" size={22} color={INK_SOFT} weight={600} at={K11.oneway} />
+					<Sx x={420} y={800} text="added at the wrong end" size={28} color={INK_SOFT} weight={600} at={K11.oneway} />
 				</g>
 				{/* 5. no folding */}
 				<g opacity={prog(f, K11.fold, 12)}>
 					<BeadChain x={150} y={880} cols={['red', 'gold', 'green']} r={18} />
 					<ellipse cx={330} cy={880} rx={60} ry={34} fill="none" stroke={GREYT} strokeWidth={3} strokeDasharray="6 6" />
 					<PlainArrow x1={250} y1={880} x2={262} y2={880} at={K11.fold} />
-					<GreyTag x={420} y={862} text="folding: next video" at={K11.order} size={20} />
+					<GreyTag x={420} y={862} text="folding: next video" at={K11.order} size={24} />
 				</g>
 				<ColourKey />
 			</Overlay>
@@ -154,7 +154,7 @@ export const SceneImproveP01: React.FC = () => {
 					<StrandArrow x1={160 - 25} x2={160 + 3 * 59 + 25} y={312} at={K12.arrow} dir={1} size={22} />
 					<Tick x={390} y={420} at={K12.cells + 12} s={30} color={TEAL} />
 					<Cross x={96} y={390} s={14} at={K12.arrow + 10} />
-					<Sx x={420} y={430} text="3' end: allowed" size={24} color={TEAL} weight={700} at={K12.cells + 12} />
+					<Sx x={420} y={430} text="3' end: allowed" size={30} color={TEAL} weight={700} at={K12.cells + 12} />
 				</g>
 				{/* enzyme job cards near a fork */}
 				<g opacity={prog(f, K12.enzyme, 12)}>
@@ -163,7 +163,7 @@ export const SceneImproveP01: React.FC = () => {
 					{['unzip', 'build DNA', 'build RNA'].map((t, k) => {
 						const p = prog(f, K12.enzyme + 6 + k * 8, 14);
 						return (
-							<g key={t} transform={`translate(${lerp(700, 440 + k * 0, p)},${510 + k * 48})`} opacity={p}>
+							<g key={t} transform={`translate(${lerp(620, 440 + k * 0, p)},${510 + k * 48})`} opacity={p}>
 								<rect x={0} y={0} width={150} height={40} rx={8} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={2.5} />
 								<text x={75} y={28} textAnchor="middle" style={{fontFamily: 'Inter Tight', fontWeight: 700, fontSize: 22}} fill={INK}>{t}</text>
 							</g>
@@ -173,7 +173,7 @@ export const SceneImproveP01: React.FC = () => {
 				{/* twist into a helix */}
 				<g opacity={prog(f, K12.twist, 12)}>
 					<MiniLadder x={140} y={720} w={440} h={70} top={ORIG} bot={NEWC} tw={tw} n={16} />
-					<Sx x={360} y={830} text="twisted: a helix" size={26} color={INK_SOFT} weight={700} anchor="middle" at={K12.helix} />
+					<Sx x={360} y={830} text="twisted: a helix" size={30} color={INK_SOFT} weight={700} anchor="middle" at={K12.helix} />
 				</g>
 				<MistakeChip x={AC.x} y={888} text="the model is wrong because it's simplified" at={K12.decor - 20} cross={K12.decor} size={26} />
 				<ColourKey />

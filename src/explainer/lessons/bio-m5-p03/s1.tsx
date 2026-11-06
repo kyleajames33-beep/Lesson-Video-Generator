@@ -21,14 +21,14 @@ export const SceneHookP03: React.FC = () => {
 			<Heading text={QUESTION} at={K1.doesnt} size={54} />
 			<Overlay>
 				<Desk o={prog(f, 0, 14)} />
-				<PlateB p={PLP.clipboard} cx={280} cy={760} w={260} o={prog(f, 0, 14)} />
+				<PlateB p={PLP.clipboard} cx={360} cy={560} w={430} o={prog(f, 0, 14)} />
 				<Fade at={K1.nine}>
-					<Panel x={160} y={720} w={240} h={110} r={10} />
-					<Sx x={180} y={764} text="attached:" size={30} color={INK} weight={700} />
-					<Sx x={180} y={810} text={`${CLASS1.attached} of ${CLASS1_CLASSIFIED}`} size={40} color={AMBER_INK} weight={800} />
+					<Panel x={200} y={500} w={320} h={150} r={12} stroke={AMBER} />
+					<Sx x={226} y={556} text="attached:" size={38} color={INK} weight={700} />
+					<Sx x={226} y={624} text={`${CLASS1.attached} of ${CLASS1_CLASSIFIED}`} size={56} color={AMBER_INK} weight={800} />
 				</Fade>
-				<Sx x={470} y={760} text="one class" size={34} color={INK} hand at={K1.nine + 10} />
-				<GreyTag x={470} y={780} text="example data" at={K1.nine + 20} size={22} />
+				<Sx x={150} y={880} text="one class" size={48} color={INK} hand at={K1.nine + 10} />
+				<GreyTag x={380} y={848} text="example data" at={K1.nine + 20} size={24} />
 				{/* everyone your age */}
 				<Field x={CZ.x + 40} y={270} cols={30} rows={14} p={prog(f, K1.everyone, 40)} />
 				<Sx x={CZ.x + 40} y={660} text="everyone your age (a population)" size={30} color={INK_SOFT} weight={600} at={K1.everyone + 20} />
@@ -110,8 +110,8 @@ export const SceneAgreeP03: React.FC = () => {
 					</g>
 				))}
 				{/* one slip stays blank */}
-				<PlateB p={PLP.slip} cx={250} cy={790} w={240} o={prog(f, K3.sayno, 12)} rot={-4} />
-				<Sx x={150} y={900} text="no reason needed" size={30} color={AMBER_INK} hand at={K3.sayno + 14} />
+				<PlateB p={PLP.slip} cx={270} cy={830} w={340} o={prog(f, K3.sayno, 12)} rot={-4} />
+				<Sx x={130} y={985} text="no reason needed" size={38} color={AMBER_INK} hand at={K3.sayno + 14} />
 				{/* the unnamed slip */}
 				<g opacity={prog(f, K3.nonames, 12)} transform={`translate(${lerp(560, 450, big)},${lerp(800, 470, big)}) scale(${lerp(0.5, 1, big)})`}>
 					<PaperSlip x={0} y={0} w={500} nameLine={1} tick={1} tickP={prog(f, K3.tick + 10, 12)} />
@@ -136,59 +136,63 @@ const PAN = [{k: 'free' as const, t: 'free', d: 'hangs below the join'}, {k: 'at
 export const SceneDefineP03: React.FC = () => {
 	const f = useCurrentFrame();
 	const pa = [K4.free, K4.attached, K4.unsure];
+	const mv = prog(f, K4.clear - 24, 24);
 	return (
 		<>
 			<Question />
 			<Overlay>
 				<Rail lit={1} at={K4.write} />
 				<Desk />
-				<Fade at={K4.write}>
-					<Panel x={CZ.x} y={CZ.y} w={CZ.w} h={450} />
-					<Sx x={CZ.x + 30} y={CZ.y + 50} text="definition card (decide before counting)" size={30} color={INK_SOFT} hand />
-				</Fade>
-				{PAN.map((p, i) => {
-					const x0 = CZ.x + 110 + i * 320;
-					return (
-						<g key={p.k}>
-							<LobeDiagram x={x0} y={CZ.y + 120} kind={p.k} at={pa[i]} />
-							<Sx x={x0 + 40} y={CZ.y + 370} text={p.t} size={40} color={p.k === 'free' ? FREE : p.k === 'attached' ? AMBER_INK : INK_SOFT} hand anchor="middle" at={pa[i] + 10} />
-							<Sx x={x0 + 40} y={CZ.y + 410} text={p.d} size={26} color={INK} weight={600} anchor="middle" at={pa[i] + 20} />
-						</g>
-					);
-				})}
+				{/* the definition card fills the frame while it is written, then moves right for the disagreement */}
+				<g transform={`translate(${lerp(240, CZ.x, mv)},${CZ.y}) scale(${lerp(1.42, 1, mv)}) translate(${-CZ.x},${-CZ.y})`}>
+					<Fade at={K4.write}>
+						<Panel x={CZ.x} y={CZ.y} w={CZ.w} h={450} />
+						<Sx x={CZ.x + 30} y={CZ.y + 50} text="definition card (decide before counting)" size={30} color={INK_SOFT} hand />
+					</Fade>
+					{PAN.map((p, i) => {
+						const x0 = CZ.x + 110 + i * 320;
+						return (
+							<g key={p.k}>
+								<LobeDiagram x={x0} y={CZ.y + 120} kind={p.k} at={pa[i]} />
+								<Sx x={x0 + 40} y={CZ.y + 370} text={p.t} size={40} color={p.k === 'free' ? FREE : p.k === 'attached' ? AMBER_INK : INK_SOFT} hand anchor="middle" at={pa[i] + 10} />
+								<Sx x={x0 + 40} y={CZ.y + 410} text={p.d} size={28} color={INK} weight={600} anchor="middle" at={pa[i] + 20} />
+							</g>
+						);
+					})}
+				</g>
 				{f >= K4.sharpen ? <DrawPath d={`M${CZ.x + 40},${CZ.y + 420} L${CZ.x + 290},${CZ.y + 420}`} at={K4.sharpen} dur={14} color={AMBER} width={5} /> : null}
 				<Sx x={CZ.x + 30} y={CZ.y + 500} text="sharpen the wording" size={34} color={AMBER_INK} hand at={K4.sharpen + 10} />
 				{/* the same lobe, judged differently */}
-				<g opacity={prog(f, K4.judge, 12) * (1 - prog(f, K4.test - 6, 12))}>
+				<g opacity={prog(f, K4.clear, 12) * (1 - prog(f, K4.test - 4, 12))}>
 					<Panel x={110} y={270} w={660} h={390} />
-					<LobeDiagram x={190} y={330} kind="unsure" at={K4.judge} labels={false} color={INK_SOFT} />
+					<LobeDiagram x={190} y={330} kind="unsure" at={K4.clear} labels={false} color={INK_SOFT} />
 					{[0, 1].map(k => (
 						<g key={k}>
-							<Sx x={380} y={360 + k * 130} text={k ? 'person 2' : 'person 1'} size={28} color={INK_SOFT} hand />
+							<Sx x={380} y={360 + k * 130} text={k ? 'person 2' : 'person 1'} size={34} color={INK_SOFT} hand />
 							{['attached', 'free'].map((b, j) => (
 								<g key={b}>
 									<rect x={380 + j * 180} y={378 + k * 130} width={30} height={30} rx={5} fill="#fff" stroke={INK} strokeWidth={2} />
-									<Sx x={418 + j * 180} y={402 + k * 130} text={b} size={24} color={INK} weight={600} />
+									<Sx x={418 + j * 180} y={402 + k * 130} text={b} size={30} color={INK} weight={600} />
 									{(k === 0 && j === 0) || (k === 1 && j === 1) ? <Tick x={395 + j * 180} y={393 + k * 130} at={K4.judge + 14 + k * 12} s={26} color={INK} /> : null}
 								</g>
 							))}
 						</g>
 					))}
 					<QMark x={700} y={480} size={70} o={prog(f, K4.mean, 10)} />
-					<Sx x={140} y={630} text="same earlobe, different boxes: numbers mean different things" size={24} color={AMBER_INK} hand at={K4.mean} />
+					<Sx x={130} y={628} text="same earlobe, different boxes" size={38} color={AMBER_INK} hand at={K4.mean} />
 				</g>
 				{/* practice diagrams */}
 				{[0, 1, 2].map(i => (
-					<g key={i} opacity={prog(f, K4.practice + i * 8, 12)}>
-						<LobeDiagram x={170 + i * 220} y={735} kind={i === 1 ? 'unsure' : i === 0 ? 'free' : 'attached'} at={K4.practice + i * 8} s={0.55} labels={false} color={INK_SOFT} shade={0} />
+					<g key={i} opacity={prog(f, K4.test + 16 + i * 8, 12)}>
+						<LobeDiagram x={190 + i * 220} y={700} kind={i === 1 ? 'unsure' : i === 0 ? 'free' : 'attached'} at={K4.test + 16 + i * 8} s={0.7} labels={false} color={INK_SOFT} shade={0} />
 						{[0, 1].map(k => {
 							const agree = i !== 1;
-							return <Sx key={k} x={180 + i * 220} y={880 + k * 40} text={`${k ? 'B' : 'A'}: ${agree ? (i === 0 ? 'free' : 'attached') : k ? 'free' : 'attached'}`} size={24} color={!agree ? AMBER_INK : INK} weight={700} />;
+							return <Sx key={k} x={170 + i * 220} y={900 + k * 44} text={`${k ? 'B' : 'A'}: ${agree ? (i === 0 ? 'free' : 'attached') : k ? 'free' : 'attached'}`} size={32} color={!agree ? AMBER_INK : INK} weight={700} />;
 						})}
 					</g>
 				))}
-				<Ring cx={180 + 220 + 50} cy={890} rx={80} ry={50} at={K4.practice + 30} />
-				<Sx x={110} y={680} text="test the definitions on practice diagrams" size={30} color={INK} hand at={K4.test} />
+				<Ring cx={170 + 220 + 70} cy={910} rx={100} ry={60} at={K4.practice + 10} />
+				<Sx x={110} y={640} text="test the definitions on practice diagrams" size={36} color={INK} hand at={K4.test} />
 			</Overlay>
 		</>
 	);
@@ -211,14 +215,21 @@ export const SceneMethodP03: React.FC = () => {
 			<Overlay>
 				<Rail lit={2} at={K5.method} />
 				<Desk />
-				<PlateB p={PLP.slipBox} cx={BOX[0]} cy={BOX[1]} w={300} o={prog(f, K5.give, 12)} />
-				<PlateB p={PLP.mirror} cx={640} cy={830} w={220} o={prog(f, K5.checks, 12)} />
-				<GreyTag x={470} y={950} text="earlobes are visible anyway; the slip stays unnamed" at={K5.partner} size={18} />
-				<Fade at={K5.show}>
-					<rect x={560} y={270} width={210} height={120} rx={10} fill={CARD} stroke={EDGE} strokeWidth={2.5} />
-					<Sx x={575} y={300} text="definition card" size={20} color={INK_SOFT} weight={700} />
-				</Fade>
-				{(['free', 'attached', 'unsure'] as const).map((k, i) => <LobeDiagram key={k} x={590 + i * 62} y={318} kind={k} at={K5.show} s={0.32} labels={false} />)}
+				<PlateB p={PLP.slipBox} cx={BOX[0]} cy={BOX[1]} w={360} o={prog(f, K5.give, 12)} />
+				<PlateB p={PLP.mirror} cx={650} cy={810} w={270} o={prog(f, K5.checks, 12)} />
+				<GreyTag x={430} y={990} text="earlobes are visible anyway; the slip stays unnamed" at={K5.partner} size={22} />
+				{/* the definition card each student checks against (right zone until the counting starts) */}
+				<g opacity={prog(f, K5.show, 12) * (1 - prog(f, K5.two - 2, 10))}>
+					<Panel x={CZ.x} y={270} w={CZ.w} h={430} stroke={AMBER} />
+					<Sx x={CZ.x + 30} y={322} text="definition card: check against it" size={32} color={INK_SOFT} hand />
+					{(['free', 'attached', 'unsure'] as const).map((k, i) => (
+						<g key={k}>
+							<LobeDiagram x={CZ.x + 130 + i * 320} y={380} kind={k} at={K5.show} s={0.9} labels={false} />
+							<Sx x={CZ.x + 166 + i * 320} y={650} text={k} size={40} color={k === 'free' ? FREE : k === 'attached' ? AMBER_INK : INK_SOFT} hand anchor="middle" />
+						</g>
+					))}
+				</g>
+				<Sx x={CZ.x + 30} y={780} text="check in a mirror, or ask a partner" size={40} color={INK} hand at={K5.checks} out={K5.two - 2} />
 				{/* the slip: tick, fold, drop */}
 				<g transform={`translate(${lerp(300, BOX[0], drop)},${lerp(470, BOX[1] - 80, drop)}) scale(${lerp(1, 0.4, drop)}) translate(-300,-470)`} opacity={1 - prog(f, K5.drops + 14, 6)}>
 					<PaperSlip x={300} y={470} w={360} tick={0} tickP={prog(f, K5.ticks, 10)} fold={fold} o={prog(f, K5.give, 12)} />

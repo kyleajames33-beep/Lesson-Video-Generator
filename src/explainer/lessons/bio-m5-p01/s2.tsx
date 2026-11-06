@@ -7,7 +7,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Bench, CH, CODING, CZ, ColourKey, Cross, DrawPath, EDGE, Fade, GREYT, GreyTag, HB, Heading, INK, INK_SOFT, NCard, NEWC, ORIG, Overlay, PITCH,
+	AMBER, AMBER_INK, Bench, CH, CW, CODING, CZ, ColourKey, Cross, DrawPath, EDGE, Fade, GREYT, GreyTag, HB, Heading, INK, INK_SOFT, NCard, NEWC, ORIG, Overlay, PITCH,
 	PLP, Panel, PlateB, QUESTION, Rail, S, Snap, StrandArrow, Sx, TEAL, TEMPLATE, CRow, Tick, clamp01, lerp, prog, pulse,
 } from './shared';
 import {LX0} from './s1';
@@ -21,22 +21,39 @@ const K4 = cues(S('build-molecule'), {
 	other: 'point the second arrow the other way', anti: 'DNA is antiparallel', taped: 'The tape holds each backbone', cov: 'strong covalent bonds', touch: 'tabs only touch', weak: 'weaker hydrogen bonds',
 });
 export const YT4 = 420;
+const PILE4: [number, number] = [660, 790];
 export const SceneBuildP01: React.FC = () => {
 	const f = useCurrentFrame();
 	const topIn = (i: number) => K4.tape + 6 + i * 5;
 	const botIn = (i: number) => K4.pair + 4 + i * 5;
 	const yJ = YT4 + CH, yB = YT4 + 2 * CH;
 	const glowA = pulse(f, K4.anti, 40);
+	const fly = (at: number, i: number, y: number) => {
+		const t = prog(f, at - 6, 16);
+		return {o: prog(f, at - 6, 6), dx: (1 - t) * (PILE4[0] - colX(i)), dy: (1 - t) * (PILE4[1] - 40 - y), rot: (1 - t) * (i % 2 ? 14 : -12)};
+	};
 	return (
 		<>
 			<Heading text={QUESTION} at={-200} size={54} />
 			<Overlay>
 				<Rail lit={2} at={K4.step} />
 				<Bench />
-				<PlateB p={PLP.tape} cx={300} cy={800} w={190} o={prog(f, K4.tape, 12)} />
+				{/* the cards cut in step 1 wait in a pile on the bench; each flies into its row as it is taped */}
+				<PlateB p={PLP.pile} cx={PILE4[0]} cy={PILE4[1]} w={400} o={1 - prog(f, K4.pair + 70, 20)} />
+				<Sx x={PILE4[0]} y={PILE4[1] + 150} text="the cards you cut in step 1" size={36} color={INK_SOFT} hand anchor="middle" at={4} out={K4.tape} />
+				<PlateB p={PLP.tape} cx={300} cy={800} w={190} o={prog(f, 0, 12)} />
+				{/* the plan: dashed slots for both strands, with the order to follow, filled as the cards arrive */}
+				{CODING.split('').map((l, i) => (
+					<g key={'slot' + i}>
+						<rect x={colX(i) - CW / 2} y={YT4} width={CW} height={CH} rx={8} fill="none" stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="7 6" opacity={0.6 * prog(f, 6, 14) * (1 - prog(f, topIn(i) + 6, 6))} />
+						<Sx x={colX(i)} y={YT4 + 62} text={l} size={34} color={INK_SOFT} weight={800} anchor="middle" opacity={0.7 * prog(f, 10 + i * 2, 10) * (1 - prog(f, topIn(i) + 6, 6))} />
+						<rect x={colX(i) - CW / 2} y={yB - CH} width={CW} height={CH} rx={8} fill="none" stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="7 6" opacity={0.6 * prog(f, 14, 14) * (1 - prog(f, botIn(i) + 6, 6))} />
+					</g>
+				))}
+				<Sx x={LX0 - 35} y={YT4 - 60} text="12 blue cards, in this order" size={36} color={AMBER_INK} hand at={10} out={K4.arrow - 10} />
 				<PlateB p={PLP.pencil} cx={1010} cy={800} w={200} o={prog(f, K4.arrow, 12)} />
-				<CRow x0={LX0} y={YT4} face="down" letters={CODING} c="blue" card={i => ({o: prog(f, topIn(i), 10), dy: -40 * (1 - prog(f, topIn(i), 12))})} tape={i => prog(f, topIn(i + 1) + 8, 8)} tapeGlow={pulse(f, K4.cov, 50)} />
-				<CRow x0={LX0} y={yB} face="up" letters={TEMPLATE} c="blue" card={i => ({o: prog(f, botIn(i), 8), dy: 60 * (1 - prog(f, botIn(i), 12))})} tape={i => prog(f, botIn(i + 1) + 8, 8)} tapeGlow={pulse(f, K4.cov, 50)} />
+				<CRow x0={LX0} y={YT4} face="down" letters={CODING} c="blue" card={i => fly(topIn(i), i, YT4)} tape={i => prog(f, topIn(i + 1) + 8, 8)} tapeGlow={pulse(f, K4.cov, 50)} />
+				<CRow x0={LX0} y={yB} face="up" letters={TEMPLATE} c="blue" card={i => fly(botIn(i), i, yB)} tape={i => prog(f, botIn(i + 1) + 8, 8)} tapeGlow={pulse(f, K4.cov, 50)} />
 				{CODING.split('').map((l, i) => <Snap key={i} x={colX(i)} y={yJ} at={botIn(i) + 12} />)}
 				{CODING.split('').map((l, i) => <HB key={'h' + i} x={colX(i)} y={yJ} l={l} p={prog(f, K4.touch + i * 2, 10)} />)}
 				<StrandArrow x1={X1} x2={X2} y={YT4 - 26} at={K4.arrow} dir={1} glow={glowA} />

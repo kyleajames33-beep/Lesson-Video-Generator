@@ -8,7 +8,7 @@ import {cues} from '../../cues';
 import {Blob} from '../bio-m5-b06b/shared';
 import {
 	AMBER_INK, AnswerBox, BeadChain, CH, CODING, CRow, Countdown, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, Fade, GREYT, HB, HandText, Heading, INK, INK_SOFT, MiniLadder,
-	MistakeChip, ModelLine, NEWC, ORIG, Overlay, PITCH, Panel, QMark, S, Sx, TEMPLATE, colMix, hold, lerp, notesCheck, prog, AMBER, beadPitch,
+	MistakeChip, ModelLine, NEWC, ORIG, Overlay, PITCH, Panel, QMark, S, Sx, TEMPLATE, colMix, hold, lerp, notesCheck, prog, AMBER, beadPitch, NCard, EDGE,
 } from './shared';
 import type {CardCol} from './shared';
 import {LX0} from './s1';
@@ -106,15 +106,17 @@ export const SceneDecisionP01: React.FC = () => {
 		{t: 'Assess: represents well / leaves out / improve.', at: K15.name},
 	];
 	const fold = prog(f, K15.next + 16, 30);
+	const mv = prog(f, K15.decide - 24, 24);
 	const r = 18;
 	const cx = 1500, cy = 900;
 	return (
 		<>
 			<Heading text="To build and assess a model" at={K15.so} size={54} />
 			<Overlay>
-				<Panel x={120} y={230} w={1180} h={470} stroke={AMBER} o={prog(f, K15.decide - 10, 12)} />
+				{lines.map((l, i) => <Panel key={'p' + i} x={120} y={258 + i * 100} w={1180} h={88} r={16} stroke={i === 3 ? AMBER : EDGE} o={prog(f, l.at - 6, 10)} />)}
 				{lines.map((l, i) => <Sx key={i} x={160} y={320 + i * 100} text={l.t} size={48} color={INK} hand at={l.at} />)}
-				<g opacity={prog(f, K15.so, 14)}>
+				{/* the two models open the rule large, then settle under it as the steps arrive */}
+				<g opacity={prog(f, 0, 14)} transform={`translate(${lerp(960, 425, mv)},${lerp(600, 820, mv)}) scale(${lerp(1.9, 1, mv)}) translate(-425,-820)`}>
 					<MiniLadder x={150} y={780} w={360} h={40} top={ORIG} bot={NEWC} />
 					<BeadChain x={600} y={800} cols={['red', 'gold', 'green']} r={18} />
 					<Sx x={150} y={870} text="model 1: copying" size={28} color={INK_SOFT} weight={700} />
@@ -141,11 +143,13 @@ export const SceneDecisionP01: React.FC = () => {
 
 // ---------- 16. Key notes ----------
 const NOTES = notesCheck([
-	'Key: blue = original DNA, green = new DNA, yellow = RNA, orange = tRNA, bead = amino acid. Tabs fit only A-T (two notches) and C-G (three notches): complementary pairing and hydrogen bonds. Each card: phosphate and sugar on the strip, base on the tab. Tape = covalent backbone. Arrows 5\' to 3\', opposite on the two strands (antiparallel).',
-	'Replication model: separate at the tabs (backbones intact); each strand is a template; add new cards opposite partners. Result: two identical molecules, each with one original strand (semi-conservative). They become two sister chromatids.',
-	'Synthesis model: yellow RNA cards (U has T\'s notches); orange tRNA cards with three base tabs (anticodon) and a bead; card ribosome with a three-tab window. Template strand only; mRNA with U opposite A; gene unchanged. The ribosome shows one codon (three bases); the tRNA whose tabs fit brings its amino acid; start AUG; a stop codon ends the chain.',
+	'Key: blue = original DNA, green = new DNA, yellow = RNA, orange = tRNA, bead = amino acid.',
+	'Tabs fit only A-T (two notches) and C-G (three notches): complementary pairing.',
+	"Tape = covalent backbone; touching tabs = hydrogen bonds. Arrows 5' to 3', antiparallel.",
+	'Replication: each strand is a template; each copy keeps one original strand (semi-conservative).',
+	'Synthesis: template strand to mRNA (U opposite A); the tRNA whose anticodon fits the codon brings its amino acid.',
 	'Results: AUG GCA UUU UGA gives Met-Ala-Phe, then stop.',
-	'Assess a model: what it represents well; what it leaves out or distorts (no enzymes, flat, tiny, direction not enforced, chain not folded); say what each limit hides; one improvement per limit (add cards at the 3\' end only, enzyme cards, twist into a helix).',
+	'Assess: what it represents well; what it leaves out and hides; one improvement per limit.',
 ]);
 export const SceneNotesP01: React.FC = () => (
 	<>
@@ -153,17 +157,27 @@ export const SceneNotesP01: React.FC = () => (
 		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 160, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 24}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 33, fontWeight: 500, color: INK, lineHeight: 1.28}}>{n}</div>
+				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 16}}>
+					<div style={{flex: 'none', width: 14, height: 14, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.25}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 930}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: AMBER_INK, lineHeight: 1.15}}>Memory: Key, build, record, assess.</div>
-			<div style={{fontFamily: FONT_DISPLAY, fontSize: 26, fontWeight: 600, color: INK_SOFT, marginTop: 6}}>A model is judged by what it shows and what it hides.</div>
+		<Enter at={100} style={{position: 'absolute', left: 110, top: 770, width: 1700, height: 210, boxSizing: 'border-box', padding: '22px 34px', background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 26}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 34, fontWeight: 700, color: AMBER_INK}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: INK, lineHeight: 1.25}}>Key, build, record, assess.<br />A model is judged by what it shows and what it hides.</div>
+			<svg width={300} height={200} viewBox="0 0 300 200" style={{position: 'absolute', right: 30, top: 2}}>
+				<g transform="translate(150,100) scale(0.85)">
+					<NCard x={-50} y={-CH} face="down" l="A" c="blue" />
+					<NCard x={-50} y={CH} face="up" l="T" c="green" />
+					<HB x={-50} y={0} l="A" />
+					<NCard x={60} y={-CH} face="down" l="C" c="blue" />
+					<NCard x={60} y={CH} face="up" l="G" c="green" />
+					<HB x={60} y={0} l="C" />
+				</g>
+			</svg>
 		</Enter>
 	</>
 );

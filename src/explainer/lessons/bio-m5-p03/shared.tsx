@@ -72,9 +72,10 @@ export const Rail: React.FC<{lit: number; at?: number}> = ({lit, at = 0}) => {
 		</g>
 	);
 };
-/** The desk strip (lower left). */
+/** The desk zone (lower left). The flat beige desk rectangle was removed in the 6 Nov B-fix: with small plates on it,
+ * it read as an empty panel. Plates now sit directly on the board, larger. Desk stays as a no-op for the scenes. */
 export const DESK = {x: 96, y: 700, w: 690, h: 300};
-export const Desk: React.FC<{o?: number}> = ({o = 1}) => (o <= 0.01 ? null : <rect x={DESK.x} y={DESK.y} width={DESK.w} height={DESK.h} rx={26} fill="#efe5d1" stroke="rgba(60,45,20,0.12)" strokeWidth={2} opacity={o} />);
+export const Desk: React.FC<{o?: number}> = () => null;
 /** The card zone (right). */
 export const CZ = {x: 830, y: 250, w: 1010};
 

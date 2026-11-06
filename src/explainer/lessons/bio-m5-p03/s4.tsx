@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, AnswerBox, CARD, ColumnGraph, Countdown, EDGE, Enter, FONT_DISPLAY, FONT_HAND, Fade, GRAPH_DATA, GreyTag, HandText, Heading, INK, INK_SOFT, ITEM,
-	MistakeChip, ModelLine, Overlay, Panel, QUESTION, S, Sx, TEAL, hold, notesCheck, pctOf, prog,
+	MistakeChip, ModelLine, Overlay, Panel, QUESTION, S, Sx, TEAL, hold, notesCheck, pctOf, prog, PLP, PlateB, LobeDiagram, Tally, Field,
 } from './shared';
 
 // ---------- the item table ----------
@@ -97,22 +97,39 @@ export const SceneDecisionP03: React.FC = () => {
 		{t: 'Agree; anonymous.', at: K14.agree}, {t: 'Define first (with unsure).', at: K14.define}, {t: 'Two counters.', at: K14.count},
 		{t: 'Frequency = count / stated total.', at: K14.divide}, {t: 'Column graph from zero.', at: K14.graph}, {t: "Name the limits; 'in this sample'.", at: K14.limits},
 	];
+	const RY = (i: number) => 236 + i * 104;
 	return (
 		<>
 			<Heading text="To collect frequency data well" at={K14.so} size={54} />
 			<Overlay>
-				<Panel x={120} y={220} w={1000} h={560} stroke={AMBER} o={prog(f, K14.agree - 10, 12)} />
-				{lines.map((l, i) => <Sx key={i} x={160} y={300 + i * 82} text={l.t} size={46} color={INK} hand at={l.at} />)}
-				<ColumnGraph x={1290} y={300} w={460} h={260} data={GRAPH_DATA} at={K14.graph} size={18} />
+				{/* one row card per step, each entering with its picture as it is said */}
+				{lines.map((l, i) => (
+					<g key={i}>
+						<Panel x={110} y={RY(i)} w={1180} h={90} r={16} stroke={i === lines.length - 1 ? AMBER : EDGE} o={prog(f, l.at - 6, 10)} />
+						<Sx x={360} y={RY(i) + 60} text={l.t} size={46} color={INK} hand at={l.at} />
+					</g>
+				))}
+				<PlateB p={PLP.slip} cx={232} cy={RY(0) + 45} w={150} rot={-4} o={prog(f, K14.agree, 10)} />
+				{(['free', 'attached', 'unsure'] as const).map((k, i) => <LobeDiagram key={k} x={170 + i * 60} y={RY(1) + 18} kind={k} at={K14.define} s={0.33} labels={false} />)}
+				<g opacity={prog(f, K14.count, 10)}>
+					<Tally x={160} y={RY(2) + 28} n={5} h={34} color="#3d5a7a" gap={9} />
+					<Tally x={250} y={RY(2) + 28} n={5} h={34} color="#8a4a2a" gap={9} />
+				</g>
+				<Sx x={232} y={RY(3) + 62} text={`${ITEM.A.att} / 60`} size={40} color={AMBER_INK} weight={800} anchor="middle" at={K14.divide} />
+				<ColumnGraph x={170} y={RY(4) + 14} w={130} h={64} data={GRAPH_DATA} at={K14.graph} max={40} step={40} size={12} labels={false} />
+				<Field x={168} y={RY(5) + 20} cols={7} rows={3} p={prog(f, K14.limits, 20)} size={12} gap={6} />
+				<Sx x={1350} y={262} text="the class result (example data)" size={28} color={INK_SOFT} hand at={K14.so + 10} />
+				<ColumnGraph x={1420} y={300} w={400} h={230} data={GRAPH_DATA} at={K14.so + 10} size={20} />
 				<Fade at={K14.next}>
-					<Panel x={1180} y={820} w={660} h={130} stroke={AMBER} sw={3.5} />
+					<Panel x={1330} y={600} w={510} h={290} stroke={AMBER} sw={3.5} />
 					{BASES.map((b, i) => (
 						<g key={i}>
-							<rect x={1210 + i * 44} y={846} width={38} height={44} rx={6} fill={BASEC[b]} stroke={INK} strokeWidth={2} />
-							<text x={1229 + i * 44} y={877} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 24}} fill={INK}>{b}</text>
+							<rect x={1370 + i * 66} y={640} width={58} height={68} rx={8} fill={BASEC[b]} stroke={INK} strokeWidth={2} />
+							<text x={1399 + i * 66} y={687} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34}} fill={INK}>{b}</text>
 						</g>
 					))}
-					<Sx x={1210} y={930} text="Next: DNA sequencing and profiling" size={32} color={INK} hand />
+					<Sx x={1370} y={780} text="Next: DNA sequencing" size={40} color={INK} hand />
+					<Sx x={1370} y={836} text="and profiling" size={40} color={INK} hand />
 				</Fade>
 			</Overlay>
 		</>
@@ -121,11 +138,13 @@ export const SceneDecisionP03: React.FC = () => {
 
 // ---------- 15. Key notes ----------
 const NOTES = notesCheck([
-	'Choose a visible, quick, non-sensitive characteristic that cannot identify anyone (earlobe shape, tongue rolling). Neither is a one-gene trait: count the characteristic, not alleles.',
-	'Ethics: teacher approval; say what and why; anyone can say no; no names (anonymous slips).',
-	'Method: definitions before counting, with an "unsure" box; self-check with a mirror; fold slips into a box; two people count and check totals agree.',
-	'Frequency = count / total x 100; state the total (for example, "of the 28 classified"). Pool classes by adding counts. Present categories on a column graph: gaps, y-axis from zero, title, labelled axes with units.',
-	'Small samples scatter by chance; bigger samples give better estimates. Analyse: trend (overall direction), pattern (a repeated feature), relationship (two characteristics change together; association, not cause). Limits: one school, small sample, classification errors. Valid: clear definitions. Reliable: two counters, pool, repeat. Write "in this sample".',
+	'Choose a visible, quick, non-sensitive characteristic. Count the characteristic, not alleles.',
+	'Ethics: teacher approval; anyone can say no; no names on the slips.',
+	'Write the definitions first, with an "unsure" box. Two people count.',
+	'Frequency = count / total × 100. Always state the total.',
+	'Pool classes by adding counts. Column graph: gaps, y-axis from zero, title, labelled axes.',
+	'Small samples scatter by chance; bigger samples give better estimates.',
+	'Trend, pattern, relationship (association, not cause). Write "in this sample".',
 ]);
 export const SceneNotesP03: React.FC = () => (
 	<>
@@ -133,17 +152,17 @@ export const SceneNotesP03: React.FC = () => (
 		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 165, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 18}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 31, fontWeight: 500, color: INK, lineHeight: 1.26}}>{n}</div>
+				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 16}}>
+					<div style={{flex: 'none', width: 14, height: 14, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.25}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 925}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: AMBER_INK, lineHeight: 1.15}}>Memory: Agree, define, count twice, state the total.</div>
-			<div style={{fontFamily: FONT_DISPLAY, fontSize: 26, fontWeight: 600, color: INK_SOFT, marginTop: 6}}>A frequency describes the sample, not every person.</div>
+		<Enter at={100} style={{position: 'absolute', left: 110, top: 700, width: 1700, boxSizing: 'border-box', padding: '22px 34px', background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 26}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 34, fontWeight: 700, color: AMBER_INK}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: INK, lineHeight: 1.25}}>Agree, define, count twice, state the total.<br />A frequency describes the sample, not every person.</div>
 		</Enter>
 	</>
 );

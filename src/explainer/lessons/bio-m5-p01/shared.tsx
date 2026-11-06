@@ -419,7 +419,7 @@ export const CodonMini: React.FC<{x: number; y: number; rows: string[]; at: numb
 };
 
 // ---------- assessment card ----------
-export const AC = {x: 760, y: 252, w: 1100, colW: 366, head: 74, rowH: 104};
+export const AC = {x: 690, y: 252, w: 1180, colW: 393, head: 74, rowH: 104};
 export const AC_HEADS = ['Represents well', 'Leaves out or distorts', 'Improvement'];
 /** The three-column assessment card frame. */
 export const AssessFrame: React.FC<{at?: number; hotCol?: number; heads?: string[]; rows?: number}> = ({at = -100, hotCol = -1, heads = AC_HEADS, rows = 5}) => {
@@ -435,7 +435,7 @@ export const AssessFrame: React.FC<{at?: number; hotCol?: number; heads?: string
 				<g key={t}>
 					{i ? <line x1={AC.x + i * AC.colW} y1={AC.y + 12} x2={AC.x + i * AC.colW} y2={AC.y + h - 12} stroke={EDGE} strokeWidth={2} /> : null}
 					{i === hotCol ? <rect x={AC.x + i * AC.colW + 6} y={AC.y + 6} width={AC.colW - 12} height={AC.head - 12} rx={14} fill="none" stroke={AMBER} strokeWidth={4} /> : null}
-					<text x={AC.x + i * AC.colW + AC.colW / 2} y={AC.y + 48} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 27}} fill={INK}>{t}</text>
+					<text x={AC.x + i * AC.colW + AC.colW / 2} y={AC.y + 48} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32}} fill={INK}>{t}</text>
 				</g>
 			))}
 		</g>
@@ -444,7 +444,7 @@ export const AssessFrame: React.FC<{at?: number; hotCol?: number; heads?: string
 /** Top-left point of a cell (column, row) inside the assessment card. */
 export const acCell = (col: number, row: number): [number, number] => [AC.x + col * AC.colW + 22, AC.y + AC.head + 18 + row * AC.rowH];
 /** Two-line cell text. */
-export const AcText: React.FC<{col: number; row: number; lines: string[]; at: number; color?: string; o?: number; size?: number}> = ({col, row, lines, at, color = INK, o = 1, size = 26}) => {
+export const AcText: React.FC<{col: number; row: number; lines: string[]; at: number; color?: string; o?: number; size?: number}> = ({col, row, lines, at, color = INK, o = 1, size = 31}) => {
 	const [x, y] = acCell(col, row);
 	return <g opacity={o}>{lines.map((t, i) => <Sx key={i} x={x} y={y + 30 + i * (size + 8)} text={t} size={size} color={color} weight={i ? 600 : 700} at={at + i * 6} />)}</g>;
 };
