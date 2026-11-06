@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V27: Solubility. How can attractions explain whether a substance dissolves? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
 
-Narration 5,576 characters, 16 scenes, about 500 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,516 characters (sum of scene strings), 16 scenes, about 497 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: twenty-seventh and last video of Year 11 Chemistry (2017 syllabus), Module 1; the solubility video, after `chem-y11-m1-v26.md` (intermolecular forces) and before `chem-y11-m2-v01` (conservation of mass in balanced equations). Templates: `phys-y11-fa1-v01.md` (structure), `chem-y11-m1-v14.md`, `chem-y11-m1-v24.md` and `chem-y11-m1-v26.md` (series conventions). No starter pack exists; the pack work is done here. Route entry: `chem-y11-m1-v27` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson12.sa.html` (SHA256 `fc891bb1b48fe54628821bf7809bb06df59a90c5dfef259c51307abb815218e7`, recomputed, matches the route; used: the recall prompt (salt in water but not oil; wax in oil but not water), `l12-why-do-things-dissolve-an-imf-perspective-title` (the three-step energy balance and its "first-pass heuristic, not a law" caution), `l12-water-as-a-polar-solvent-why-it-s-exceptiona-title` (ion–dipole forces, hydration shell, "not all ionic compounds dissolve"), `l12-non-polar-solvents-and-hydrophobic-substance-title` (dispersion with dispersion; iodine in hexane; the lab-safety note), the iodine-extraction short answer, the misconception "polar molecules attract non-polar molecules" framed as "not attracted enough", Activity 2 B ("oil has no intermolecular forces" is wrong) and the drill on ethanol's small non-polar part). Site corrections file checked: no logged item touches lesson 12.
 
@@ -22,7 +22,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Learner question (route wording kept).** "How can attractions explain whether a substance dissolves?" The answer, in order: dissolving trades old attractions for new ones (2); it works when the new attractions are about as strong as those given up (2, 3, 7); it fails when the solvent gives up strong attractions for weak ones (4, 5); like dissolves like is the usual result, not a law (8, 9).
 - **Opening frame (equals v26's final frame).** `m5x-unsaturated-beaker-v1.png` at the left, tag "salt + water"; `m7-oil-water-tube-layers-v1.png` at the centre, "oil + water"; `y11c-iodine-hexane-water-tube-v1.png` at the right, "iodine + hexane + water"; the chip "Next: how can attractions explain whether a substance dissolves?".
 - **Solute and solvent defined.** Solute: the substance that dissolves; solvent: the liquid it dissolves in (scene 2). "Miscible" is defined once in scene 8 (liquids that mix in any amount).
-- **"A fair trade" (the analogy, from the site's energy balance).** Dissolving gives up attractions (energy in) and makes new ones (energy out). The narration says a substance dissolves well "when the new attractions are about as strong as the ones it gives up". It does not say "stronger", because mixing itself favours dissolving (entropy), which is why an "about equal" trade is enough (author note a; grey tag "mixing itself helps a little" in scene 2). The site's "if and only if hydration energy exceeds lattice energy" is not used (site note 1).
+- **"A fair trade" (the analogy, from the site's energy balance).** Dissolving gives up attractions (energy in) and makes new ones (energy out). The narration says a substance dissolves well "when the new attractions are about as strong as the ones it gives up". It does not say "stronger", because mixing itself favours dissolving (entropy), which is why an "about equal" trade is enough (author note a). Revision 2 (brief 179): the attraction comparison is presented as "a first prediction", not the deciding test, because dissolving can be driven by mixing even when it absorbs energy; the one grey tag (root decision 29) now reads "mixing itself helps" (not "a little"), and scene 10 says once that mixing helps because particles spread out. "Entropy" and "energy balance" stay in author notes. The site's "if and only if hydration energy exceeds lattice energy" is not used (site note 1).
 - **Oil and water (site misconception).** Oil and water molecules attract each other by dispersion; they do not repel. Water gives up hydrogen bonds for weak dispersion attractions, a bad trade, so the water molecules stay together and the oil is pushed into its own layer. The site's own "no energy is released" for a non-polar solute in water is softened (site note 2). One sentence separates density (why the oil is on top) from attraction (why it is a separate layer), following the site's multiple-choice explanation.
 - **Iodine (site worked example and short answer 6).** Iodine dissolves in hexane (violet) and only slightly in water (pale yellow-brown). Solubility figures stay in author notes (author note c), because the water figure varies between sources; the plate shows the colours.
 - **Hexane safety (site lab-safety note).** A grey tag in scenes 4 and 7: "hexane is flammable: teacher demonstration, fume cupboard, no flames". The plate shows a stoppered tube only.
@@ -44,6 +44,9 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded):** **trade ledger** (a two-sided strip: "given up" on the left with grey attraction lines snapping, "formed" on the right with new lines drawing; a small balance-arm icon tilts or levels); **hydration lens** (a NaCl crystal edge in water; water models (v23 kit) rotate oxygen-first toward Na⁺ and hydrogen-first toward Cl⁻, orange ion–dipole lines; an ion lifts off wrapped in a shell); **hexane lens** (zigzag hexane molecules beside an ion, only faint light blue lines); **oil lens** (water molecules linked by violet hydrogen-bond dots; oil chains squeezed into a separate region; light blue lines at the boundary); **iodine lens** (I₂ molecules slipping between hexane chains, light blue lines both sides); **alcohol pair** (methanol and hexan-1-ol skeletal models with the O–H ringed violet and the carbon chain shaded light blue); **solubility bars** (two bars on a log-style split scale, labelled in words); **balance display** (coded digits on the plate's display window); `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, scribble circle, `HandText`, `KeyNotes`, `Heading`.
 - **Board layout (constant):** heading top left; the real object (plate) at the left; the particle lens at the right; the trade ledger as a strip across the top from scene 2, updated per case.
+- **Simulations (Revision 2).** (1) The hydration counter (scene 3): as water molecules turn toward the crystal edge, a readout "ions in solution" (52 px) counts up each time an ion lifts off in its shell; in the hexane lens (scene 4) the same readout stays at 0. (2) The chain slider (scene 8): a slider steps the alcohol from one to six carbons; the skeletal model grows, the light blue non-polar part lengthens, and a readout "solubility in water (about 25 °C)" updates: C1, C2, C3 "mixes in any amount"; C4 "about 70 g/L"; C5 "about 22 g/L"; C6 "about 6 g/L" (author note h). The ledger's balance arm (live, every case) tilts or levels with each trade.
+- **Colour roles (Revision 2, fixed for the whole video):** hydrogen bonds violet dotted; dispersion and non-polar parts light blue; ion–dipole orange; Na⁺ purple, Cl⁻ green; δ− red, δ+ blue; ledger "given up" grey, "formed" teal; masses on the balance amber; givens strips navy; framed answers dark-ink box with a green tick; crossed slips red strike with a red hand tag; hand tags take the colour of the attraction they mark.
+- **Type sizes (Revision 2, 1080p):** the current statement or ledger line at least 44 px; counter, slider and balance readouts about 52 px; tags, chips and supporting lines 32 to 36 px; hand tags at least 30 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
 
 Author notes (not learner copy):
 (a) Energy and entropy: dissolving is favourable when the Gibbs energy change is negative; the enthalpy of solution can be slightly positive (NaCl about +3.9 kJ/mol; NH₄NO₃ about +25.7 kJ/mol) and dissolving still occurs because mixing increases entropy (OpenStax Chemistry 2e, section 11.1). Hence "about as strong", and the one grey tag. Non-polar solutes in water: the hydrophobic effect is largely entropic (water ordering); the "bad trade of hydrogen bonds for weak dispersion" is the site's and the syllabus-level explanation.
@@ -52,6 +55,8 @@ Author notes (not learner copy):
 (d) AgCl: Ksp 1.77 × 10⁻¹⁰ at 25 °C; s = √Ksp = 1.33 × 10⁻⁵ mol/L; × 143.32 g/mol = 1.91 mg/L ("about two thousandths of a gram per litre"). Its low solubility is usually attributed to partial covalent character of the Ag–Cl bond (author's simplification on screen: "ions held very tightly").
 (e) Hexan-1-ol: 5.9 g/L at 25 °C (PubChem: "In water, 5,900 mg/L at 25 °C"); methanol miscible with water at 20 and 25 °C (PubChem). Glucose: about 91 g per 100 mL water at 25 °C (CRC); five O–H groups in both the chain and ring forms.
 (f) Hexane: water solubility 9.5 mg/L at 25 °C (PubChem), so "hexane and water don't mix" is accurate.
+(h) Alcohol solubilities for the chain slider (Revision 2; PubChem values near 20 to 25 °C, rounded; Codex to verify): methanol, ethanol and propan-1-ol miscible; butan-1-ol about 68 to 77 g/L (shown "about 70"); pentan-1-ol about 22 g/L; hexan-1-ol 5.9 g/L (note e).
+(i) Ion near hexane (Revision 2, brief 179): an ion polarises a nearby non-polar molecule (ion–induced dipole attraction), so the attraction is not only dispersion; the narration says the ion distorts the hexane's electron cloud but the attractions are far too weak to pull the ions apart. No new force name is used.
 (g) Pronunciations: "hexan-one-ol" for hexan-1-ol; "methanol"; "hydration"; "miscible" (MISS-ih-bul).
 
 Main question: *How can attractions explain whether a substance dissolves?*
@@ -61,32 +66,32 @@ Handoff: chem-y11-m2-v01, conservation of mass.
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Colour key (continues v26): hydrogen bonds violet dotted; dispersion light blue dotted; ion–dipole orange; Na⁺ purple, Cl⁻ green; δ− red, δ+ blue; crossed chips red strike.
+Cue words in **bold** trigger the visual change. Colour key (continues v26; Revision 2 colour roles and type sizes in Decisions): hydrogen bonds violet dotted; dispersion light blue dotted; ion–dipole orange; Na⁺ purple, Cl⁻ green; δ− red, δ+ blue; crossed chips red strike.
 
 ### 1. hook: three mixtures, three results
 > Stir salt into water, and it **disappears**. Pour oil into water, and however hard you shake it, the oil ends up in its own **layer**. Stir salt into hexane, a liquid made of non-polar molecules, and it just sits on the **bottom**. So why does a substance dissolve in one liquid, but not in another? The answer comes from the attractions we met last time.
 
-Visual: opens on v26's final frame (Decisions). On "disappears" the salt-solution beaker's tag adds "dissolves". On "layer" the oil tube's tag adds "separate layer". On "bottom" the iodine tube slides aside and `y11c-salt-hexane-tube-v1.png` (new) slides in, tag "salt + hexane: does not dissolve". The heading writes on: "Why some things dissolve".
+Visual: opens on v26's final frame (Decisions); the plates are solid at about 420 px tall. On "disappears" the salt-solution beaker's tag adds "dissolves", with a green pen tick. On "layer" the oil tube's tag adds "separate layer", with a pen bracket on the two layers. On "bottom" the iodine tube slides aside and `y11c-salt-hexane-tube-v1.png` (delivered) slides in, tag "salt + hexane: does not dissolve", red pen ring round the crystals on the bottom. The heading writes on: "Why some things dissolve".
 
 ### 2. dissolving is a trade
-> Dissolving is a trade of attractions. The solute is the substance that dissolves, and the solvent is the liquid it dissolves in. First, solute particles are pulled away from each other. Second, solvent particles move apart to make room. Both steps take **energy**. Third, new attractions form between solute and solvent particles, and that releases **energy**. A substance dissolves well when the new attractions are about as strong as the ones it gives up. If they're much weaker, it barely **dissolves**.
+> Dissolving is a trade of attractions. The solute is the substance that dissolves, and the solvent is the liquid it dissolves in. First, solute particles are pulled away from each other. Second, solvent particles move apart to make room. Both steps take **energy**. Third, new attractions form between solute and solvent particles, and that releases **energy**. As a first prediction, a substance dissolves well when the new attractions are about as strong as the ones it gives up. If they're much weaker, it barely **dissolves**.
 
-Visual: board clears to the trade ledger: on the second sentence labels write "solute: the substance that dissolves" and "solvent: the liquid". Step 1 icon: solute particles separate, grey lines snapping. Step 2 icon: solvent particles part. On "energy" (first) both steps tag "energy in" on the "given up" side. Step 3: new lines draw between mixed particles; on "energy" (second) tag "energy out" on the "formed" side. The small balance-arm icon levels as the sixth sentence runs, tag "about equal: dissolves" (with a grey tag "mixing itself helps a little"). On "dissolves" the arm tips heavily to "given up", tag "much weaker: barely dissolves".
+Visual: board clears to the trade ledger: on the second sentence labels write "solute: the substance that dissolves" and "solvent: the liquid". Step 1 icon: solute particles separate, grey lines snapping. Step 2 icon: solvent particles part. On "energy" (first) both steps tag "energy in" on the "given up" side. Step 3: new lines draw between mixed particles; on "energy" (second) tag "energy out" on the "formed" side. The small balance-arm icon levels as the sixth sentence runs, tag "about equal: dissolves" with a teal hand tag "first prediction" (and the grey tag "mixing itself helps"). On "dissolves" the arm tips heavily to "given up", tag "much weaker: barely dissolves".
 
 ### 3. salt in water
 > Take salt in water. In the crystal, sodium ions and chloride ions attract each other strongly. But water is polar, with a slightly negative oxygen end, and slightly positive hydrogen ends. Water molecules turn their oxygen ends toward the sodium **ions**, and their hydrogen ends toward the chloride **ions**. These ion dipole attractions are strong enough to pull ions off the crystal, one by one. Each ion ends up wrapped in water molecules, called a hydration **shell**.
 
-Visual: the salt-solution beaker at the left; the hydration lens at the right shows a NaCl crystal edge (v22's lattice) in water molecules (v23's bent models with δ− and δ+). On "ions" (first) several water molecules rotate oxygen-first toward a Na⁺ with orange lines. On "ions" (second) others rotate hydrogen-first toward a Cl⁻. On the fifth sentence a Na⁺ lifts off the edge with its water molecules, then a Cl⁻; tag "ion–dipole attraction". On "shell" a ring of water molecules closes round each lifted ion, tag "hydration shell". The ledger updates: "given up: ion–ion, some hydrogen bonds" against "formed: ion–dipole (strong)", arm level.
+Visual: the salt-solution beaker at the left; the hydration lens at the right shows a NaCl crystal edge (v22's lattice) in water molecules (v23's bent models with δ− and δ+). On "ions" (first) several water molecules rotate oxygen-first toward a Na⁺ with orange lines. On "ions" (second) others rotate hydrogen-first toward a Cl⁻. On the fifth sentence a Na⁺ lifts off the edge with its water molecules, then a Cl⁻; tag "ion–dipole attraction". The hydration counter (simulation, Decisions) reads "ions in solution" from 0 and counts up as each ion lifts off. On "shell" a ring of water molecules closes round each lifted ion, tag "hydration shell"; hand tags red "δ− O to Na⁺" and blue "δ+ H to Cl⁻", each with a pen arrow. The ledger updates: "given up: ion–ion, some hydrogen bonds" against "formed: ion–dipole (strong)", arm level.
 
 ### 4. salt in hexane
-> Now try hexane. Hexane molecules are non-polar, so they have no charged ends to offer. They can attract an ion only through weak dispersion forces, which can't pay for pulling the ions apart. So salt doesn't dissolve in **hexane**. That's also why the hexane won't conduct electricity: no ions have left the **crystal**.
+> Now try hexane. Hexane molecules are non-polar, so they have no charged ends to offer. An ion can distort the electron cloud of a nearby hexane molecule, but those attractions are far too weak to pull the ions **apart**. So salt doesn't dissolve in **hexane**.
 
-Visual: the salt-hexane tube at the left; the hexane lens shows zigzag hexane molecules beside the crystal edge, faint light blue lines only; the ions stay in place, tag "no charged ends". On "hexane" the ledger reads "given up: ion–ion (strong)" against "formed: dispersion (weak)", arm tipped, tag "salt: does not dissolve in hexane". On "crystal" a small coded conductivity tag "no free ions: no current" writes beside the tube (v22 recalled). A grey tag: "hexane is flammable: teacher demonstration, fume cupboard, no flames".
+Visual: the salt-hexane tube (solid) at the left; the hexane lens shows zigzag hexane molecules beside the crystal edge; the ions stay in place, tag "no charged ends"; the "ions in solution" readout stays at 0. On "apart" a Na⁺ at the edge distorts the nearest hexane cloud (it bulges slightly toward the ion, a faint orange-to-blue line), hand tag "cloud distorted, but weak". On "hexane" the ledger reads "given up: ion–ion (strong)" against "formed: weak attractions", arm tipped, tag "salt: does not dissolve in hexane", red pen ring round the "0" readout. A grey tag: "hexane is flammable: teacher demonstration, fume cupboard, no flames".
 
 ### 5. oil and water: a bad trade
 > Oil is made of large, mostly non-polar molecules. Here's the surprise. Oil and water molecules do attract each other, through dispersion forces. They don't **repel**. The problem is that water molecules attract each other much more strongly, through hydrogen bonds. For oil to spread through water, the water would have to give up hydrogen bonds, and get only weak dispersion attractions back. That's a bad trade, so the water molecules stay together, and the oil is pushed into its own **layer**. It floats on top because it's less dense, but it stays separate because of the **attractions**.
 
-Visual: the oil tube at the left; the oil lens shows water molecules linked by violet dots and long oil chains among them. On "repel" light blue lines draw between oil chains and water molecules at their contact, and a chip "oil and water repel" fades in and is crossed (caption "they attract, weakly"). On the fifth sentence the violet hydrogen bonds glow; the ledger reads "given up: hydrogen bonds (strong)" against "formed: dispersion (weak)", arm tipped. On "layer" the water molecules close up and the oil chains gather into an upper region, matching the tube. On "attractions" two tags write: "on top: less dense" and "separate layer: attractions".
+Visual: the oil tube at the left; the oil lens shows water molecules linked by violet dots and long oil chains among them. On "repel" light blue lines draw between oil chains and water molecules at their contact, and a chip "oil and water repel" fades in and is struck in red, red hand tag "they attract, weakly". On the fifth sentence the violet hydrogen bonds glow; the ledger reads "given up: hydrogen bonds (strong)" against "formed: dispersion (weak)", arm tipped. On "layer" the water molecules close up and the oil chains gather into an upper region, matching the tube. On "attractions" two tags write: "on top: less dense" and "separate layer: attractions", each with a pen arrow to the matching part of the tube; violet hand tag "water keeps its H-bonds".
 
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Iodine, I two, is a non-polar molecule. Will it dissolve better in water, or in hexane? Have a **think**.
@@ -96,58 +101,59 @@ Visual: board clears to an I₂ model with a large light blue cloud, a water len
 ### 7. iodine: a fair trade
 > Hexane. Iodine molecules attract each other by dispersion forces, and so do hexane molecules. When iodine dissolves in hexane, dispersion is traded for dispersion, a fair trade, so it dissolves easily, and the hexane turns **violet**. In water, iodine dissolves only slightly, because it can't replace the hydrogen bonds the water would give up. That's the idea behind the phrase, like dissolves like. Polar solutes and ionic solids tend to dissolve in polar solvents, and non-polar solutes in non-polar **solvents**.
 
-Visual: the iodine lens: I₂ molecules slip between hexane chains, light blue lines both sides; ledger "given up: dispersion" against "formed: dispersion", arm level. On "violet" `y11c-iodine-hexane-water-tube-v1.png` returns at the left and its top layer glows, tags "hexane layer: violet (iodine dissolved)" and "water layer: pale (only slightly)". On "solvents" the rule writes in two rows: "polar and ionic solutes → polar solvents (water)", "non-polar solutes → non-polar solvents (hexane)", heading chip "like dissolves like". The hexane safety tag stays small.
+Visual: the iodine lens: I₂ molecules slip between hexane chains, light blue lines both sides; ledger "given up: dispersion" against "formed: dispersion", arm level. On "violet" `y11c-iodine-hexane-water-tube-v1.png` returns at the left and its top layer glows, tags "hexane layer: violet (iodine dissolved)" and "water layer: pale (only slightly)". On "solvents" the rule writes in two rows: "polar and ionic solutes → polar solvents (water)", "non-polar solutes → non-polar solvents (hexane)", heading chip "like dissolves like". The hexane safety tag stays small. Light blue hand tag "dispersion for dispersion" with a pen ring round the violet layer.
 
 ### 8. molecules with both kinds of part
-> What about a molecule with both kinds of part? Methanol has an O H group that hydrogen bonds with water, and only a small non-polar end, so it's miscible with water, meaning they mix in any amount. Hexan-one-ol has the same O H group, but a chain of six carbons that can't hydrogen bond. Only about six grams dissolve in a litre of **water**. As the non-polar part grows, it takes over, and the substance becomes less **soluble**.
+> What about a molecule with both kinds of part? Methanol has an O H group that hydrogen bonds with water, and only a small non-polar end, so it's miscible with water, meaning they mix in any amount. Hexan-one-ol has the same O H group, but a chain of six carbons that can't hydrogen bond. Only about six grams dissolve in a litre of **water**. Watch the chain grow, one carbon at a time. As the non-polar part grows, it takes over, and the substance becomes less **soluble**.
 
-Visual: the alcohol pair: methanol (one carbon) and hexan-1-ol (six carbons) as skeletal models, each O–H ringed violet and the carbon chain shaded light blue. On the second sentence methanol molecules mix into a water lens with violet dots, tag "miscible: mix in any amount". On "water" the hexan-1-ol chain glows, tag "about 6 g per litre (25 °C)", grey Sources tag "PubChem". On "soluble" an arrow writes along a short row of alcohols (C1, C2, C3, C4, C6) "bigger non-polar part → less soluble in water".
+Visual: the alcohol pair: methanol (one carbon) and hexan-1-ol (six carbons) as skeletal models, each O–H ringed violet and the carbon chain shaded light blue. On the second sentence methanol molecules mix into a water lens with violet dots, tag "miscible: mix in any amount". On "water" the hexan-1-ol chain glows, tag "about 6 g per litre (25 °C)", grey Sources tag "PubChem". From "Watch the chain grow" the chain slider (simulation, Decisions) steps from C1 to C6: the model grows, its light blue chain lengthens, and the readout changes "mixes in any amount" (C1 to C3), "about 70 g/L" (C4), "about 22 g/L" (C5), "about 6 g/L" (C6); on "soluble" an arrow writes along it, "bigger non-polar part → less soluble in water" (44 px), light blue hand tag "chain takes over".
 
 ### 9. a guide, not a law
 > So like dissolves like is a useful guide, but it isn't a law. Silver chloride is ionic, like sodium chloride. Yet only about two thousandths of a gram dissolves in a litre of water, compared with about three hundred and sixty grams of sodium **chloride**. Its ions hold each other so tightly that water's attractions can't pay for pulling them **apart**. So for any prediction, compare the actual attractions that are broken and **formed**.
 
-Visual: two bars: "NaCl about 360 g per litre of water" (tall) and "AgCl about 0.002 g per litre" (a sliver, the scale break marked), on "chloride" both labelled, grey Sources tag "PubChem; CRC". On "apart" a small AgCl lattice lens shows water molecules turning toward it but no ion lifting off; ledger arm tipped. On "formed" a chip "all ionic compounds dissolve in water" fades in and is crossed (caption "a guide, not a law").
+Visual: two bars: "NaCl about 360 g per litre of water" (tall) and "AgCl about 0.002 g per litre" (a sliver, the scale break marked), on "chloride" both labelled, grey Sources tag "PubChem; CRC". On "apart" a small AgCl lattice lens shows water molecules turning toward it but no ion lifting off; ledger arm tipped. On "formed" a chip "all ionic compounds dissolve in water" fades in and is struck in red, red hand tag "a guide, not a law"; ink hand tag "×180 000" with a pen bracket between the bars.
 
 ### 10. one line to remember
-> So here's a line to keep. Dissolving is a trade, and like dissolves like because the trade is **fair**. To predict, name the strongest attractions in the solute and in the solvent, then ask whether they'd get something about as strong back when they **mix**.
+> So here's a line to keep. Dissolving is a trade, and like dissolves like because the trade is **fair**. That's a first prediction. Mixing helps too, because particles naturally spread out when they **mix**.
 
-Visual: the ledger shrinks to a small icon beside the handwritten line, which writes on "fair": "Dissolving is a trade: like dissolves like because the trade is fair." On "mix" a two-line check writes under it: "1 strongest attractions in solute? in solvent?", "2 about as strong back when mixed? dissolves". Hold about 2 seconds.
+Visual: the ledger shrinks to a small icon beside the memory line, which writes on "fair" in a framed card in hand lettering (48 px): "Dissolving is a trade: like dissolves like because the trade is fair." Under it a two-line check (36 px): "1 strongest attractions in solute? in solvent?", "2 about as strong back when mixed? first prediction: dissolves". On "mix" a small lens shows two kinds of particle spreading into each other, grey tag "mixing itself helps". Hold about 2 seconds.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Paraffin wax is made of long molecules containing only carbon and hydrogen. It dissolves in hexane, but not in water. Explain this, using intermolecular forces. Pause here to answer.
 
-Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience") with `m7-paraffin-candle-v1.png` small at the card's right: "Paraffin wax consists of long-chain molecules containing only carbon and hydrogen. Paraffin wax dissolves in hexane but not in water. Explain this observation in terms of intermolecular forces. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no lenses, no ledger).
+Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience") with `m7-paraffin-candle-v1.png` (about 240 px, uniform scale) at the card's right, card text 32 px: "Paraffin wax consists of long-chain molecules containing only carbon and hydrogen. Paraffin wax dissolves in hexane but not in water. Explain this observation in terms of intermolecular forces. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no lenses, no ledger).
 
 ### 12. feedback 1 (brief)
 > Wax molecules are non-polar, with only dispersion forces between them. In hexane, dispersion is traded for similar dispersion, so the wax dissolves. To dissolve in water, the water would have to give up its hydrogen bonds for only weak dispersion attractions, so it doesn't. Saying water repels the wax is the classic **slip**. They attract, just too **weakly**.
 
-Visual: card shrinks to the top. Rows write: "wax: non-polar, dispersion only"; "in hexane: dispersion ↔ dispersion, fair trade: dissolves"; "in water: hydrogen bonds given up for weak dispersion: does not dissolve". On "slip" a chip "water repels wax" fades in; on "weakly" it is crossed (caption "attract, too weakly"). Hold about 1 second.
+Visual: card shrinks to the top with its picture kept small. A navy givens strip on the answer side: "wax: C and H only, long chains | hexane: yes | water: no". Rows write at 44 px: "wax: non-polar, dispersion only"; "in hexane: dispersion ↔ dispersion, fair trade: dissolves", framed; "in water: hydrogen bonds given up for weak dispersion: does not dissolve", framed with a green tick. On "slip" a chip "water repels wax" fades in; on "weakly" it is struck in red, red hand tag "attract, too weakly". Hold about 1 second.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A glucose molecule has five O H groups. Glucose is very soluble in water, but hardly dissolves in hexane. Explain this difference. Pause here to answer.
 
-Visual: `QuestionCard`: "A glucose molecule (C₆H₁₂O₆) contains five –OH groups. Glucose is very soluble in water but almost insoluble in hexane. Explain this difference in terms of intermolecular forces. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard`: "A glucose molecule (C₆H₁₂O₆) contains five –OH groups. Glucose is very soluble in water but almost insoluble in hexane. Explain this difference in terms of intermolecular forces. (3 marks)" Picture on the card's right: `g1-sugar-bowl-v1.png` (about 240 px, uniform scale), captioned "sugars such as glucose are white crystals". Card text 32 px. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 14. feedback 2 (brief)
 > Each O H group can hydrogen bond with water, so glucose replaces the hydrogen bonds the water gives up with new ones of similar strength, and it dissolves. Hexane can offer only dispersion forces, far weaker than the hydrogen bonds holding glucose molecules together, so it doesn't. Saying glucose dissolves because it's ionic is the **trap**. It's a polar molecule, and it stays whole in solution.
 
-Visual: card shrinks to the top. A glucose ring (skeletal, five O–H ringed violet) with water molecules joining by violet dots, row "–OH groups hydrogen bond with water: fair trade: very soluble"; row "hexane: dispersion only, cannot replace glucose's hydrogen bonds: insoluble". On "trap" a chip "glucose is ionic" fades in and is crossed (caption "polar molecule; stays whole"). Hold about 1 second.
+Visual: card shrinks to the top with its picture kept small. A navy givens strip on the answer side: "glucose: 5 –OH groups | water: very soluble | hexane: almost insoluble". A glucose ring (skeletal, five O–H ringed violet) with water molecules joining by violet dots, row (44 px) "–OH groups hydrogen bond with water: fair trade: very soluble", framed; row "hexane: dispersion only, cannot replace glucose's hydrogen bonds: insoluble", framed with a green tick. On "trap" a chip "glucose is ionic" fades in and is struck in red, red hand tag "polar molecule; stays whole". Hold about 1 second.
 
 ### 15. handoff: nothing lost
 > That's the end of Module one. Here's one more thing about dissolving. Weigh a hundred grams of water, and ten grams of salt, then dissolve the salt. The solution weighs a hundred and ten **grams**. Nothing is lost, because every ion is still there. Dissolving is a physical change. In a chemical reaction, atoms rearrange into new substances, and the mass still doesn't change. Next time, we'll find out why mass must be conserved when a chemical equation is **balanced**.
 
 Visual: board clears to `y11c-top-pan-balance-v1.png` (v06's request), a grey tag "Module 1 complete" at the top right. The empty beaker (`m6-beaker-v1.png`) sits on the pan and the coded display reads "0.0 g", tag "beaker tared". Rows write as spoken: "water 100.0 g", "salt 10.0 g". The beaker cross-fades to `m5x-unsaturated-beaker-v1.png`; on "grams" the display ticks to "110.0 g" and the row "100.0 + 10.0 = 110.0 g" writes. On the sixth sentence a small lens shows Na⁺ and Cl⁻ ions among water molecules, tag "every particle still there". On "balanced" the chip writes: "Next: why must mass be conserved when a chemical equation is balanced?". Hold about 2 seconds. This is the final frame (`chem-y11-m2-v01` opens on it).
 
-### 16. key notes (quiet, hold about 52 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Dissolving: solute–solute and solvent–solvent attractions are given up (energy in); solute–solvent attractions form (energy out). A substance dissolves well when the new attractions are about as strong as those given up.
-2. Ionic solids such as NaCl dissolve in water by ion–dipole attraction: δ− O toward cations, δ+ H toward anions; ions surrounded by a hydration shell.
-3. Non-polar substances (oil, wax, I₂) dissolve in non-polar solvents (hexane): dispersion for dispersion. They do not dissolve in water: water would give up hydrogen bonds for weak dispersion attractions.
-4. "Like dissolves like" is a guide, not a law: a larger non-polar part lowers water solubility (hexan-1-ol), and some ionic solids are almost insoluble (AgCl).
+1. Dissolving trades attractions: old ones given up, new ones formed.
+2. First prediction: dissolves if the new attractions are about as strong.
+3. Salt in water: ion–dipole attraction; a hydration shell.
+4. Non-polar in non-polar: oil, wax, I₂ dissolve in hexane.
+5. "Like dissolves like" is a guide (hexan-1-ol, AgCl).
 
-Memory aid (large, on the notes screen): *Dissolving is a trade: like dissolves like because the trade is fair.*
+Memory aid (framed card under the notes, hand lettering as in scene 10): *Dissolving is a trade: like dissolves like because the trade is fair.* Notes 34 px in the attraction colours (ion–dipole orange, dispersion light blue, hydrogen bonds violet); no paragraphs. The quiet hold runs about 45 s after the spoken line.
 
 ## Teaching checks
 
@@ -175,6 +181,8 @@ Model answer: Glucose is a polar molecule whose –OH groups form hydrogen bonds
 | NaCl solubility | 36.0 g per 100 g water at 25 °C; about 360 g per litre of water | 9 |
 | AgCl solubility | 1.91 mg per litre (about 0.002 g) at 25 °C | 9 |
 | Hexan-1-ol solubility | 5.9 g per litre at 25 °C ("about six grams") | 8 |
+| Chain slider readouts (Revision 2) | C1 to C3 miscible; C4 about 70 g/L; C5 about 22 g/L; C6 about 6 g/L (author note h) | 8 |
+| AgCl against NaCl (hand tag) | 360 ÷ 0.002 = 180 000 | 9 |
 | Carbons in hexan-1-ol | 6 | 8 |
 | O–H groups in glucose | 5 | 13, 14 |
 | Mass conservation | 100.0 g + 10.0 g = 110.0 g | 15 |
@@ -190,13 +198,15 @@ Checked with Python (5 November); Codex to re-check.
 
 ## Memory aid check
 
-- **"Dissolving is a trade: like dissolves like because the trade is fair."** Written for this lesson, from the site's energy-balance card. Meaning, as said in scene 10: a substance dissolves well when the attractions it forms with the solvent are about as strong as those it gives up. Assumptions checked: "fair" means about equal, not exactly equal or stronger (entropy helps, author note a); it predicts the common cases (salt, oil, iodine, wax, glucose) and is explicitly not a law (AgCl, scene 9). It helps a new case: A1 and A2.
+- **"Dissolving is a trade: like dissolves like because the trade is fair."** Written for this lesson, from the site's energy-balance card. Meaning, as said in scene 10: as a first prediction, a substance dissolves well when the attractions it forms with the solvent are about as strong as those it gives up; mixing also helps (Revision 2), so the trade is a first prediction, not the deciding test. Assumptions checked: "fair" means about equal, not exactly equal or stronger (entropy helps, author note a); it predicts the common cases (salt, oil, iodine, wax, glucose) and is explicitly not a law (AgCl, scene 9). It helps a new case: A1 and A2.
 - **The balance-arm icon:** shows attractions given up against formed; it is not a mass balance, and it never appears at the same time as the real balance plate in scene 15.
 - **Considered, not used:** "hydrophobic and hydrophilic" (useful later in biology; adds two terms here).
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules, scenes joined with a space): **5,576 characters**, 16 scenes. At 13.3 characters per second the speech is about 419 s; add about 5 s for the hydration lens in scene 3 and the layer forming in scene 5, 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 47 s more of the quiet notes hold (about 81 s): **about 500 s**, inside the band and under the cap. Reserve trims: scene 1's last sentence, scene 7's last sentence (keep the rule rows), scene 15's sixth sentence.
+Revision 2 count (7 November; build parser rules, the total is the sum of the 16 scene strings): **5,516 characters** (Revision 1 was 5,561 as a sum, stated 5,576 with the joining spaces). At 13.3 characters per second the speech is about 415 s; add about 5 s for the hydration lens in scene 3 and the layer forming in scene 5, 3 s for the hydration counter and chain slider to settle (3, 8), 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s of quiet notes hold: **about 497 s**, inside 5,500 to about 7,000 characters and under 570 s.
+
+Revision 1 estimate (superseded): **5,576 characters**, 16 scenes. At 13.3 characters per second the speech is about 419 s; add about 5 s for the hydration lens in scene 3 and the layer forming in scene 5, 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 47 s more of the quiet notes hold (about 81 s): **about 500 s**, inside the band and under the cap. Reserve trims: scene 1's last sentence, scene 7's last sentence (keep the rule rows), scene 15's sixth sentence.
 
 ## Scene list and build ids
 
@@ -206,7 +216,7 @@ In order (16 scene headings, all `### N.`): hook, trade, salt-water, salt-hexane
 
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: 1 to 2 clear change to the ledger; 2 to 3 camera push into the hydration lens; 3 to 4 lens swap (water to hexane, crystal kept); 4 to 5 clear change; 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 clear change; 9 to 10 camera pull back to the ledger; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
-Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 52 s). Review evidence paths: `checks/c-y11-m1-v27-learning-review.md`, `checks/c-y11-m1-v27-science-check.md`.
+Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: the longest set-up is scenes 3 and 4 on the crystal-edge lens (about 54 s), with the lens swapping from water to hexane. Review evidence paths: `checks/c-y11-m1-v27-learning-review.md`, `checks/c-y11-m1-v27-science-check.md`.
 
 ## Assets
 
@@ -215,14 +225,14 @@ Have (inspected 5 November on a paper contact sheet; scaled uniformly only, neve
 - `public/assets/chemistry/m7-oil-water-tube-layers-v1.png` (2000 × 2000; stoppered tube, yellow oil on water): scenes 1, 5.
 - `public/assets/chemistry/m6-beaker-v1.png` (2048 × 2048; empty beaker): scene 15.
 - `public/assets/chemistry/m7-paraffin-candle-v1.png` (2000 × 2000; white pillar candle): attempt 1 card.
-- `y11c-top-pan-balance-v1.png`: requested in `chem-y11-m1-v06.md` (not yet painted); scene 15. Fallback: `public/assets/chemistry/m6-analytical-balance-v1.png` with coded digits.
+- `y11c-top-pan-balance-v1.png` (delivered; inspected for m2-v06): scene 15.
+- `y11c-iodine-hexane-water-tube-v1.png` and `y11c-salt-hexane-tube-v1.png` (brief 179, delivered; the salt-hexane tube inspected 7 November: stoppered tube in a wooden block, clear liquid, white crystals on the bottom): scenes 1, 4, 7.
+- `g1-sugar-bowl-v1.png` (Revision 2, inspected: a bowl of white sugar crystals with a spoon, no hands): attempt 2 card picture.
 - **Inspected, not used:** `public/assets/chemistry/m7-hexane-water-heptane-tubes-v1.png` (two colourless tubes with faint layer lines; at video size it does not show what is dissolved where); `public/assets/chemistry/c1-sealed-flask-iodine-v1.png` (iodine vapour, not a solution); `public/assets/chemistry/c1-salt-jar-crystals-v1.png` (salt under water in a jar: reads as "not dissolved in water", the opposite of scene 3).
 
-Need (new plates, Codex; `y11c-` prefix):
-1. `y11c-iodine-hexane-water-tube-v1.png`: scenes 7 and v26's final frame (and scene 1's opening). Essential.
-2. `y11c-salt-hexane-tube-v1.png`: scenes 1, 4. Essential (the hook's third result needs a real object).
+Need: none (Revision 2). Both Revision 1 plates were delivered in brief 179.
 
-Coded: trade ledger with balance-arm icon, hydration lens, hexane lens, oil lens, iodine lens, alcohol pair, solubility bars, balance display digits, chips, attempt cards, countdowns, key notes board.
+Coded: the hydration counter and chain slider with their readouts, trade ledger with balance-arm icon, hydration lens, hexane lens, oil lens, iodine lens, alcohol pair, solubility bars, balance display digits, chips, attempt cards, countdowns, key notes board.
 
 ## Codex asset brief (Year 11 Chemistry M1 v27; plate 1 also used in v26)
 
@@ -237,7 +247,7 @@ Report inspection on the paper and dark board backgrounds at about 400 px wide, 
 
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" and every number on screen against "Numbers used" and the cited sources.
-2. Confirm the science of every learner-visible claim: the three-step trade; "about as strong" (not "stronger"); ion–dipole orientation (δ− O toward Na⁺, δ+ H toward Cl⁻); hydration shell; salt insoluble in hexane; oil and water attract weakly and separate because water keeps its hydrogen bonds; floating from density; iodine colours in hexane and water; methanol miscible; hexan-1-ol solubility; AgCl and NaCl solubilities; glucose's five –OH groups; mass conservation on dissolving.
+2. Confirm the science of every learner-visible claim: the three-step trade as a first prediction (Revision 2), with mixing named as also helping; "about as strong" (not "stronger"); an ion distorting a hexane cloud with attractions too weak to separate the ions; ion–dipole orientation (δ− O toward Na⁺, δ+ H toward Cl⁻); hydration shell; salt insoluble in hexane; oil and water attract weakly and separate because water keeps its hydrogen bonds; floating from density; iodine colours in hexane and water; methanol miscible; hexan-1-ol solubility; AgCl and NaCl solubilities; glucose's five –OH groups; mass conservation on dissolving.
 3. Confirm the memory aid's assumptions.
 4. Confirm both attempt cards are original, carry every condition, and show nothing answer-bearing (the candle on card 1 is an object only).
 5. Confirm the syllabus quote matches the ledger.
@@ -266,12 +276,32 @@ Previous: Why molecular substances have very different boiling points. Next: Mod
 ## Open decisions
 
 - **1. m2-v01 opening (root).** The final frame (balance at 110.0 g with "Module 1 complete") is the frame `chem-y11-m2-v01` must open on; m2-v01's design should start from salt water's conserved mass and move to a reaction.
-- **2. Entropy (root).** Kept to author notes and one grey tag ("mixing itself helps a little"). The learning review may drop the tag if it distracts.
+- **2. Entropy (root).** Kept to author notes and one grey tag (decision 29), now "mixing itself helps" (Revision 2, brief 179), plus one spoken sentence in scene 10 that mixing helps because particles spread out. The word "entropy" is not used.
 - **3. Silver chloride (root).** Chosen as the "not a law" example over BaSO₄ (site), with a simplified reason (site note 3). Confirm.
-- **4. Balance plate dependency (root).** Scene 15 depends on v06's `y11c-top-pan-balance-v1.png`; fallback `m6-analytical-balance-v1.png`.
+- **4. Balance plate dependency (root).** Delivered; closed.
 - **5. Site notes 1 to 4 (root).** Log the "if and only if" rule, "no energy is released", the AgCl charge claim and the δ typo if accepted.
 
 ## Review notes
 
 - Revision 1 has had no independent review. Next: student learning review (does the trade ledger read without numbers; is scene 5's "they attract" surprise clear; is scene 8 needed at this length), then the science check and Codex error check.
 - Checker output (5 November): narration 5,576 characters; per scene (1 to 16): 343, 494, 461, 312, 581, 119, 509, 422, 428, 250, 193, 354, 162, 394, 464, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+
+## Revision 2 (7 Nov 2026)
+
+Findings from `../checks/c-y11-m1-v27-learning-review.md` and `../checks/c-y11-m1-v27-science-check.md` (brief 179; 0 blockers, 2 should fix). Root decision 29's framing (entropy as one grey tag, AgCl, the final frame) stands.
+
+1. **Energy trade treated as the deciding test (should fix):** scene 2 now says "As a first prediction, a substance dissolves well when..."; the grey tag reads "mixing itself helps" (no "a little"); scene 10's repeated trade sentence ("To predict, name the strongest attractions...") is cut and replaced by "That's a first prediction. Mixing helps too, because particles naturally spread out when they mix." Entropy and energy terms stay in author notes. Memory aid check, the error-check brief and open decision 2 match.
+2. **Ion and hexane is not only dispersion (should fix):** scene 4 now says "An ion can distort the electron cloud of a nearby hexane molecule, but those attractions are far too weak to pull the ions apart." The visual shows the cloud bulging toward the ion; the ledger reads "formed: weak attractions". Funded by cutting the final conductivity recall ("That's also why the hexane won't conduct electricity...", already taught in v22). Author note i.
+
+Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
+- Scene 1: the delivered plates (salt solution, oil and water, iodine and salt-hexane tubes) are the solid anchor, with pen ticks, brackets and rings.
+- Scene 8 gains one short sentence, "Watch the chain grow, one carbon at a time." (43 characters), to cue the chain slider and keep the narration above 5,500 characters after the two cuts.
+- Live simulations: the hydration counter ("ions in solution" counts up in water, stays at 0 in hexane) and the chain slider (C1 to C6 alcohols with a solubility readout, about 6 g/L at C6); the ledger's balance arm stays live for every case.
+- Hand tags and pen marks added to scenes 1 to 5 and 7 to 10; framed answers with green ticks in 12 and 14; red-struck slips with red hand tags in 5, 9, 12 and 14; navy givens strips on the answer side of 12 and 14.
+- Question cards carry pictures: the paraffin candle (attempt 1, enlarged) and a sugar bowl (attempt 2).
+- Memory aid framed in scene 10 and on the notes screen; key notes cut to five short bullets with a 45 s quiet hold.
+- Colour roles and type sizes stated in Decisions.
+- The final frame (balance reading 110.0 g, "Module 1 complete") is unchanged; `chem-y11-m2-v01` opens on it.
+- New plates: none.
+
+Narration: 5,516 characters as the sum of the 16 scene strings (Revision 1: 5,561 as a sum, 5,576 stated with joining spaces); about 497 s with holds. Bold cues quoted in spoken order; no em dashes.

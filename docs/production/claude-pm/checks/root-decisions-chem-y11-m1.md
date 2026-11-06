@@ -55,3 +55,8 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`.
     - **v22:** halite is brittle, not hard. The conductivity comparison is framed as a teacher demonstration or an approved video, not a student method.
     - **v18:** gamma is γ alone (decision 26).
     - **v25 to v27:** decision 29's framing choices stand (carbon "above 3500 °C", the 18-electron fair test, entropy as one grey tag) unless a finding shows a factual error. Factual errors are fixed and reported.
+38. **After the m1-v18 to v27 repairs (7 Nov):**
+    - **v26:** accepted. The F₂ / CH₃F / CH₃OH trio stays (decision 29) but is a comparison, not a fair test, because ethane (18 electrons) boils about 100 °C above F₂. Dipole forces "help explain" the first jump.
+    - **v25:** accepted. "Above 3500 °C" belongs to graphite's sublimation on strong heating; diamond turns to graphite.
+    - **v20:** the slip is "copper chloride" with no charge (decision 37), not copper(I) chloride.
+    - **To the error check:** v27's butanol (about 70 g/L) and pentanol (about 22 g/L) solubilities, and the halo on v24's coins plate on the paper board.
