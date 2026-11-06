@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c13/lesson.json",
+    "lessonSha256": "e4cd468f1feca6d71804f60688e89964001021c31d975da58416692d6178ce54"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c10 (esters and esterification as an equilibrium); chem-m7-c13 (synthesis routes; each step loses product); chem-m5-c04b (catalysts); chem-m5-c07 (the industrial yield, rate and cost compromise); Module 5 equilibrium shifts; skills-s08 (PEEL and the judgement with a condition); Year 11 percentage yield and collision theory. Not assumed: the aspirin reaction, ethanoic anhydride, recrystallisation, the iron(III) chloride purity check.",
+    "startsWith": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin. More than a century later, a school lab can make a few grams in an afternoon, and factories make it by the tonne. So how do chemists decide on a recipe, and how do you judge whether it's a good one?",
+    "stopsAfter": "explaining each design factor for aspirin and how the factors trade off; transferring them to biodiesel and fuel ethanol; planning an evaluation with a judgement and its condition. No atom economy or E-factor calculations, no drug trials, no mechanisms.",
+    "nextLesson": "none (end of Module 8 Chemistry and of the Year 12 Chemistry course content)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c13.md"
+  ],
+  "teaching": {
+    "task": "Aspirin has been made for well over a century, by the gram at school and by the tonne in factories. How do chemists decide on a recipe, and how do you judge whether it's a good one?",
+    "causalExplanation": "Why the anhydride: it makes no water, so nothing drives the reaction back, and it goes almost to completion (4). Why a catalyst and a warm bath: more collisions with enough energy, through a lower-energy pathway; the catalyst doesn't change where it ends (5, c04b recall). Why not hotter: side products, fumes, energy cost (5). Why yields fall short: product stays dissolved, sticks to glassware, stays on the paper (6). Why recrystallisation purifies: aspirin crystallises as the solution cools while most impurities stay dissolved (7). Why iron(III) chloride detects salicylic acid: salicylic acid has a free ring OH and aspirin's is an ester (7). Why the by-product needn't be waste: it can be turned back into anhydride (8). Why cost matters so much: a very low price per tablet (9). Why excess methanol: adding a reactant shifts an equilibrium to the products (feedback 1). Why a condition in the verdict: the judgement depends on recovery and purification, or on cheap energy for distillation (10, feedback 2).",
+    "conversationalApproach": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin. Here's the reaction. Before anything else, you need the reagents, in bulk. Why not use plain ethanoic acid, the acid in vinegar? It can make the same ester, but that reaction is an equilibrium. Next, speed. Now, how much do you get? Yield compares the aspirin you collect with the most the equation says you could make. A medicine has to be pure, and leftover salicylic acid can irritate the stomach. Then safety and waste. Finally, step back. So how do you judge it? As in the extended responses video, decide the verdict first, then give each factor a paragraph with its evidence. One line to keep: yield tells you how much product you collected, not how good the route is. Your turn. The reaction is an equilibrium, so adding extra methanol, a reactant, shifts it towards the products and converts more of the oil. Last one, and it's a long response. One strong plan starts with the verdict. So for any synthesis, ask where the reagents come from, which conditions balance speed, yield and cost, how pure the product must be, how safe it is and what it wastes, and who it serves at what cost.",
+    "openingDecision": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin. More than a century later, a school lab can make a few grams in an afternoon, and factories make it by the tonne. So how do chemists decide on a recipe, and how do you judge whether it's a good one?",
+    "understandingCheck": "(A1) biodiesel transesterification with excess methanol: a fuel (syllabus \"industrial uses\") and a Module 5 equilibrium argument plus cost, safety and waste, new to the video (the site's biodiesel card gives only an atom economy calculation, so the task differs). Crossed mistake: \"excess methanol mainly makes it faster\". (A2) an extended-response plan: evaluate hydration of ethene against fermentation of cane sugar for a company near sugar-cane farms (7 marks), with every fact on the card; the student writes a verdict and one line per paragraph, not the answer. Crossed mistake: a list of advantages and disadvantages with no verdict (s08's crossed habit, now applied). Near-match check: site L16 has no biodiesel excess-methanol question and no ethanol route evaluation; site M7 L10 compares ethanol routes but not as a located company with energy and carbon dioxide facts (checked by phrase, 30 Oct; Codex to confirm against NESA papers).",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ3-01 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to:\n- availability of reagents\n- reaction conditions (ACSCH133)\n- yield and purity (ACSCH134)\n- industrial uses (eg pharmaceutical, cosmetics, cleaning products, fuels) (ACSCH131)\n- environmental, social and economic issues\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "aspirin tablets, willow bark, the school set-up, the filter funnel, the balance, the fume cupboard, the waste bottle, test tubes, oil and sugar-cane plates as painted plates listed by filename, never stretched; molecules, the factor board, the trade-off see-saw and the plan card coded; no people, hands or faces (the 1897 chemist is named in the source chip only, never drawn); no clip-art; at most about three bright text items, earlier lines dim; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; givens underlined in the feedback as they are used, no givens card; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); attempt 2 is an extended-response plan; original HSC-style questions, tagged \"HSC-style question, written for HSCScience\"; optional key notes hold; Australian spelling (\"sulfuric\", \"colour\", \"recognise\", \"litre\"); no em dashes; conversational narration; no absolute claims (\"almost all the way\", \"can\", \"usually\").",
+    "transitionPlan": "heading writes on: \"Designing a synthesis: how do you judge a recipe?\". the board clears. the board clears; the \"supply\" tile lights. the board clears; the \"equilibrium\" tile lights. the board clears; the \"rate and conditions\" tile lights. the board clears; the \"yield\" tile lights. the board clears; the \"purity\" tile lights. the board clears; the \"safety\" tile lights. the board clears; the \"environment\" tile lights. the board clears. the board clears. the board clears. the card stays, shrunk to the top. the board clears. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Designing a synthesis: how do you judge a recipe?\". m6-aspirin-tablets-v1.png appears at the centre, small; on \"1897\" a date chip \"10 Aug 1897: pure acetylsalicylic acid, Bayer\" writes beside it (grey source chip \"Sneader 2000, BMJ\"); on \"Aspirin\" a second chip \"1899: sold as Aspirin\" writes and the first dims. On \"tonne\" the tablets shift left and the new m8-aspirin-water-bath-v1.png appears small beside them (tag \"school: a few grams\"), with a coded factory outline (a simple tank and pipe silhouette, no people) at the right (tag \"industry: by the tonne\"). On \"good\" both tags dim and a navy question chip writes under them: \"What makes a good recipe?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "teachingReason": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin.",
+      "narrationCue": "1897 / Aspirin / tonne / good",
+      "motionPurpose": "heading writes on: \"Designing a synthesis: how do you judge a recipe?\". m6-aspirin-tablets-v1.png appears at the centre, small; on \"1897\" a date chip \"10 Aug 1897: pure acetylsalicylic acid, Bayer\" writes beside it (grey source chip \"Sneader 2000, BMJ\"); on \"Aspirin\" a second chip \"1899: sold as Aspirin\" writes and the first dims. On \"tonne\" the tablets shift left and the new m8-aspirin-water-bath-v1.png appears small beside them (tag \"school: a few grams\"), with a coded factory outline (a simple tank and pipe silhouette, no people) at the right (tag \"industry: by the tonne\"). On \"good\" both tags dim and a navy question chip writes under them: \"What makes a good recipe?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Designing a synthesis: how do you judge a recipe?\". m6-aspirin-tablets-v1.png appears at the centre, small; on \"1897\" a date chip \"10 Aug 1897: pure acetylsalicylic acid, Bayer\" writes beside it (grey source chip \"Sneader 2000, BMJ\"); on \"Aspirin\" a second chip \"1899: sold as Aspirin\" writes and the first dims. On \"tonne\" the tablets shift left and the new m8-aspirin-water-bath-v1.png appears small beside them (tag \"school: a few grams\"), with a coded factory outline (a simple tank and pipe silhouette, no people) at the right (tag \"industry: by the tonne\"). On \"good\" both tags dim and a navy question chip writes under them: \"What makes a good recipe?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "motionTools": [
+        "m6-aspirin-tablets-v1.png",
+        "m8-aspirin-water-bath-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (one medicine, two scales): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "reaction",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"The reaction\". Coded structural formulas write left to right: salicylic acid (benzene ring with COOH and OH; the OH ringed red; tag \"salicylic acid\"), \"+\", ethanoic anhydride (CH₃CO–O–COCH₃). On \"oxygen\" the ester-swap runs: one acetyl group (amber, tag \"acetyl group: CH₃CO\") slides onto the ringed O, and a grey chip \"c10: ester link\" flashes and dims. On \"acid\" the other half peels off as CH₃COOH (grey-brown, tag \"by-product: a second product you didn't want\"). The full equation settles: \"salicylic acid + ethanoic anhydride → aspirin + ethanoic acid\", with formulas small underneath \"C₇H₆O₃ + (CH₃CO)₂O → C₉H₈O₄ + CH₃COOH\". On \"equation\" the factor board builds at the right: nine dim tiles place one at a time (supply, equilibrium, rate and conditions, yield, purity, safety, by-products and waste, environment, society and cost), with a small grey tag under the board \"same factors: medicines, cosmetics, cleaning products, fuels\". Bright at the end: the equation and the factor board outline. Hold about 1 second.",
+      "teachingReason": "Here's the reaction.",
+      "narrationCue": "oxygen / acid / equation",
+      "motionPurpose": "the board clears. Task line \"The reaction\". Coded structural formulas write left to right: salicylic acid (benzene ring with COOH and OH; the OH ringed red; tag \"salicylic acid\"), \"+\", ethanoic anhydride (CH₃CO–O–COCH₃). On \"oxygen\" the ester-swap runs: one acetyl group (amber, tag \"acetyl group: CH₃CO\") slides onto the ringed O, and a grey chip \"c10: ester link\" flashes and dims. On \"acid\" the other half peels off as CH₃COOH (grey-brown, tag \"by-product: a second product you didn't want\"). The full equation settles: \"salicylic acid + ethanoic anhydride → aspirin + ethanoic acid\", with formulas small underneath \"C₇H₆O₃ + (CH₃CO)₂O → C₉H₈O₄ + CH₃COOH\". On \"equation\" the factor board builds at the right: nine dim tiles place one at a time (supply, equilibrium, rate and conditions, yield, purity, safety, by-products and waste, environment, society and cost), with a small grey tag under the board \"same factors: medicines, cosmetics, cleaning products, fuels\". Bright at the end: the equation and the factor board outline. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"The reaction\". Coded structural formulas write left to right: salicylic acid (benzene ring with COOH and OH; the OH ringed red; tag \"salicylic acid\"), \"+\", ethanoic anhydride (CH₃CO–O–COCH₃). On \"oxygen\" the ester-swap runs: one acetyl group (amber, tag \"acetyl group: CH₃CO\") slides onto the ringed O, and a grey chip \"c10: ester link\" flashes and dims. On \"acid\" the other half peels off as CH₃COOH (grey-brown, tag \"by-product: a second product you didn't want\"). The full equation settles: \"salicylic acid + ethanoic anhydride → aspirin + ethanoic acid\", with formulas small underneath \"C₇H₆O₃ + (CH₃CO)₂O → C₉H₈O₄ + CH₃COOH\". On \"equation\" the factor board builds at the right: nine dim tiles place one at a time (supply, equilibrium, rate and conditions, yield, purity, safety, by-products and waste, environment, society and cost), with a small grey tag under the board \"same factors: medicines, cosmetics, cleaning products, fuels\". Bright at the end: the equation and the factor board outline. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the reaction: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "supply",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the \"supply\" tile lights. Task line \"1 Supply\". On \"willow\" the new m8-willow-bark-v1.png appears at the left (tag \"willow bark: salicin\"); a thin arrow to a small salicylic acid structure. On \"couldn't supply\" a crossed grey chip \"not enough for world demand\" fades in under the plate and the plate dims. On \"oil\" m7-crude-oil-barrel-v1.png appears at the right, with a short coded chain: \"crude oil → phenol → (+ CO₂, pressure) → salicylic acid\" (grey tag, not narrated: \"Kolbe–Schmitt process\"). On \"ethanoic acid\" a small chip \"ethanoic acid → ethanoic anhydride\" writes under the chain. On \"fossil fuels\" the barrel rings amber (tag \"supply depends on oil\"). The supply tile settles with a tick. Bright at the end: the chain and the \"supply depends on oil\" tag. Hold about 1 second.",
+      "teachingReason": "Before anything else, you need the reagents, in bulk.",
+      "narrationCue": "willow / couldn't supply / oil / ethanoic acid / fossil fuels",
+      "motionPurpose": "the board clears; the \"supply\" tile lights. Task line \"1 Supply\". On \"willow\" the new m8-willow-bark-v1.png appears at the left (tag \"willow bark: salicin\"); a thin arrow to a small salicylic acid structure. On \"couldn't supply\" a crossed grey chip \"not enough for world demand\" fades in under the plate and the plate dims. On \"oil\" m7-crude-oil-barrel-v1.png appears at the right, with a short coded chain: \"crude oil → phenol → (+ CO₂, pressure) → salicylic acid\" (grey tag, not narrated: \"Kolbe–Schmitt process\"). On \"ethanoic acid\" a small chip \"ethanoic acid → ethanoic anhydride\" writes under the chain. On \"fossil fuels\" the barrel rings amber (tag \"supply depends on oil\"). The supply tile settles with a tick. Bright at the end: the chain and the \"supply depends on oil\" tag. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"supply\" tile lights. Task line \"1 Supply\". On \"willow\" the new m8-willow-bark-v1.png appears at the left (tag \"willow bark: salicin\"); a thin arrow to a small salicylic acid structure. On \"couldn't supply\" a crossed grey chip \"not enough for world demand\" fades in under the plate and the plate dims. On \"oil\" m7-crude-oil-barrel-v1.png appears at the right, with a short coded chain: \"crude oil → phenol → (+ CO₂, pressure) → salicylic acid\" (grey tag, not narrated: \"Kolbe–Schmitt process\"). On \"ethanoic acid\" a small chip \"ethanoic acid → ethanoic anhydride\" writes under the chain. On \"fossil fuels\" the barrel rings amber (tag \"supply depends on oil\"). The supply tile settles with a tick. Bright at the end: the chain and the \"supply depends on oil\" tag. Hold about 1 second.",
+      "motionTools": [
+        "m8-willow-bark-v1.png",
+        "m7-crude-oil-barrel-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "supply: where the reagents come from: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "equilibrium",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the \"equilibrium\" tile lights. Task line \"2 Equilibrium\". Two equation rows. Upper row (route not chosen): \"salicylic acid + ethanoic acid ⇌ aspirin + water\", with m5x-vinegar-bottle-v1.png small at the left (tag \"ethanoic acid: in vinegar\"); on \"equilibrium\" the ⇌ arrow pulses (grey chip \"c10: esterification is an equilibrium\"). On \"left over\" a small gauge under the row settles low (tag \"much unreacted\"); on \"drives the reaction back\" a pale blue water glyph pushes the reverse half-arrow (tag \"water drives it back\"). Lower row (chosen): the scene 2 equation with its single arrow; on \"makes no water\" a crossed pale blue water glyph; on \"aspirin\" the gauge under this row rises nearly full (tag \"almost complete\"). On \"catch\" the see-saw appears in the right third: \"higher yield\" (green) against \"costs more\" (brick red); on \"dry\" a third chip hangs under the red side: \"reacts with water: keep dry\". Bright at the end: the lower equation, the see-saw. Hold about 1 second.",
+      "teachingReason": "Why not use plain ethanoic acid, the acid in vinegar? It can make the same ester, but that reaction is an equilibrium.",
+      "narrationCue": "equilibrium / left over / drives the reaction back / makes no water / aspirin / catch / dry",
+      "motionPurpose": "the board clears; the \"equilibrium\" tile lights. Task line \"2 Equilibrium\". Two equation rows. Upper row (route not chosen): \"salicylic acid + ethanoic acid ⇌ aspirin + water\", with m5x-vinegar-bottle-v1.png small at the left (tag \"ethanoic acid: in vinegar\"); on \"equilibrium\" the ⇌ arrow pulses (grey chip \"c10: esterification is an equilibrium\"). On \"left over\" a small gauge under the row settles low (tag \"much unreacted\"); on \"drives the reaction back\" a pale blue water glyph pushes the reverse half-arrow (tag \"water drives it back\"). Lower row (chosen): the scene 2 equation with its single arrow; on \"makes no water\" a crossed pale blue water glyph; on \"aspirin\" the gauge under this row rises nearly full (tag \"almost complete\"). On \"catch\" the see-saw appears in the right third: \"higher yield\" (green) against \"costs more\" (brick red); on \"dry\" a third chip hangs under the red side: \"reacts with water: keep dry\". Bright at the end: the lower equation, the see-saw. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"equilibrium\" tile lights. Task line \"2 Equilibrium\". Two equation rows. Upper row (route not chosen): \"salicylic acid + ethanoic acid ⇌ aspirin + water\", with m5x-vinegar-bottle-v1.png small at the left (tag \"ethanoic acid: in vinegar\"); on \"equilibrium\" the ⇌ arrow pulses (grey chip \"c10: esterification is an equilibrium\"). On \"left over\" a small gauge under the row settles low (tag \"much unreacted\"); on \"drives the reaction back\" a pale blue water glyph pushes the reverse half-arrow (tag \"water drives it back\"). Lower row (chosen): the scene 2 equation with its single arrow; on \"makes no water\" a crossed pale blue water glyph; on \"aspirin\" the gauge under this row rises nearly full (tag \"almost complete\"). On \"catch\" the see-saw appears in the right third: \"higher yield\" (green) against \"costs more\" (brick red); on \"dry\" a third chip hangs under the red side: \"reacts with water: keep dry\". Bright at the end: the lower equation, the see-saw. Hold about 1 second.",
+      "motionTools": [
+        "m5x-vinegar-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "equilibrium: why the anhydride, not the acid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "rate-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the \"rate and conditions\" tile lights. Task line \"3 Rate and conditions\". m8-aspirin-water-bath-v1.png at the centre. On \"catalyst\" a condition chip writes over the arrow of a small copy of the equation at the top: \"conc. H₂SO₄ or H₃PO₄ (a few drops)\" (grey chip \"c04b: same mixture, sooner\"). On \"water bath\" a second chip \"warm water bath, about 70 to 80 °C\" writes, and small coded collision sparks brighten in the flask. On \"sooner\" a tag writes and dims: \"catalyst: faster, not more product\". On \"side products\" the see-saw returns at the right: \"faster\" (green) against \"side products, fumes, energy cost\" (brick red), and the thermometer chip glows red briefly. On \"Haber\" a grey chip writes: \"c07: Haber, about 450 °C: speed, yield and cost\". On \"balance\" the chip dims. Bright at the end: the two condition chips and the see-saw. Hold about 1 second.",
+      "teachingReason": "Next, speed.",
+      "narrationCue": "catalyst / water bath / sooner / side products / Haber / balance",
+      "motionPurpose": "the board clears; the \"rate and conditions\" tile lights. Task line \"3 Rate and conditions\". m8-aspirin-water-bath-v1.png at the centre. On \"catalyst\" a condition chip writes over the arrow of a small copy of the equation at the top: \"conc. H₂SO₄ or H₃PO₄ (a few drops)\" (grey chip \"c04b: same mixture, sooner\"). On \"water bath\" a second chip \"warm water bath, about 70 to 80 °C\" writes, and small coded collision sparks brighten in the flask. On \"sooner\" a tag writes and dims: \"catalyst: faster, not more product\". On \"side products\" the see-saw returns at the right: \"faster\" (green) against \"side products, fumes, energy cost\" (brick red), and the thermometer chip glows red briefly. On \"Haber\" a grey chip writes: \"c07: Haber, about 450 °C: speed, yield and cost\". On \"balance\" the chip dims. Bright at the end: the two condition chips and the see-saw. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"rate and conditions\" tile lights. Task line \"3 Rate and conditions\". m8-aspirin-water-bath-v1.png at the centre. On \"catalyst\" a condition chip writes over the arrow of a small copy of the equation at the top: \"conc. H₂SO₄ or H₃PO₄ (a few drops)\" (grey chip \"c04b: same mixture, sooner\"). On \"water bath\" a second chip \"warm water bath, about 70 to 80 °C\" writes, and small coded collision sparks brighten in the flask. On \"sooner\" a tag writes and dims: \"catalyst: faster, not more product\". On \"side products\" the see-saw returns at the right: \"faster\" (green) against \"side products, fumes, energy cost\" (brick red), and the thermometer chip glows red briefly. On \"Haber\" a grey chip writes: \"c07: Haber, about 450 °C: speed, yield and cost\". On \"balance\" the chip dims. Bright at the end: the two condition chips and the see-saw. Hold about 1 second.",
+      "motionTools": [
+        "m8-aspirin-water-bath-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "rate and conditions: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "yield",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the \"yield\" tile lights. Task line \"4 Yield\". m8-filter-funnel-white-ppt-v1.png at the left (tag \"aspirin crystals collected by filtration\"), with m8-balance-watch-glass-v1.png small beside it. A coded yield bar writes at the right: \"most possible (from the equation)\" at full length, \"collected\" filling to about 80%, labelled \"illustrative\". On \"Yield compares\" a gloss tag: \"yield: collected ÷ most possible × 100%\" (grey chip \"Year 11\"). On \"lost\" the loss drips run: three grey dots fall from the bar on \"dissolved\", \"glassware\" and \"filter paper\", each with a two-word tag that dims. On \"money\" a small brick-red chip \"lost product = lost money\" writes. Bright at the end: the yield bar and the money chip. Hold about 1 second.",
+      "teachingReason": "Now, how much do you get? Yield compares the aspirin you collect with the most the equation says you could make.",
+      "narrationCue": "Yield compares / lost / dissolved / money",
+      "motionPurpose": "the board clears; the \"yield\" tile lights. Task line \"4 Yield\". m8-filter-funnel-white-ppt-v1.png at the left (tag \"aspirin crystals collected by filtration\"), with m8-balance-watch-glass-v1.png small beside it. A coded yield bar writes at the right: \"most possible (from the equation)\" at full length, \"collected\" filling to about 80%, labelled \"illustrative\". On \"Yield compares\" a gloss tag: \"yield: collected ÷ most possible × 100%\" (grey chip \"Year 11\"). On \"lost\" the loss drips run: three grey dots fall from the bar on \"dissolved\", \"glassware\" and \"filter paper\", each with a two-word tag that dims. On \"money\" a small brick-red chip \"lost product = lost money\" writes. Bright at the end: the yield bar and the money chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"yield\" tile lights. Task line \"4 Yield\". m8-filter-funnel-white-ppt-v1.png at the left (tag \"aspirin crystals collected by filtration\"), with m8-balance-watch-glass-v1.png small beside it. A coded yield bar writes at the right: \"most possible (from the equation)\" at full length, \"collected\" filling to about 80%, labelled \"illustrative\". On \"Yield compares\" a gloss tag: \"yield: collected ÷ most possible × 100%\" (grey chip \"Year 11\"). On \"lost\" the loss drips run: three grey dots fall from the bar on \"dissolved\", \"glassware\" and \"filter paper\", each with a two-word tag that dims. On \"money\" a small brick-red chip \"lost product = lost money\" writes. Bright at the end: the yield bar and the money chip. Hold about 1 second.",
+      "motionTools": [
+        "m8-filter-funnel-white-ppt-v1.png",
+        "m8-balance-watch-glass-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "yield: how much you actually get: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "purity",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the \"purity\" tile lights. Task line \"5 Purity\". The purity bar writes at the centre: white with violet flecks (tag \"crude aspirin: some salicylic acid left\"). On \"pure\" a small tag \"medicines have purity limits\" writes and dims. On \"dissolved in a little hot solvent\" a coded beaker outline warms (red glow), then cools (blue); white crystal glyphs form while violet flecks stay in the liquid. On \"recrystallising\" a gloss tag: \"recrystallise: dissolve hot, cool, collect the purer crystals\". On \"iron three chloride\" the new aligned pair m8-fecl3-violet-v1.png (left) and m8-fecl3-pale-yellow-v1.png (right) appear, with a small copy of the salicylic acid structure above the left tube, its ring OH ringed red (tag \"free ring OH\"), and aspirin above the right tube with its ester ringed amber (tag \"OH now an ester\"). On \"violet\" the left tube's tag writes \"violet: salicylic acid present\"; on \"Pure aspirin doesn't\" the right tube's tag \"no violet: no detectable salicylic acid\" (Revision 2, science S3: a negative test is not a general purity measure). A grey tag, not narrated: \"melting point near 135 °C, narrow range: another purity check\". On \"trade-off\" the tubes shrink and the purity bar returns beside the scene 6 yield bar; on \"yield\" two recrystallisation steps run: the violet flecks clear while the yield bar shortens step by step (see-saw chips \"purer\" against \"lower yield\"). Bright at the end: the purity bar, the shorter yield bar and the see-saw. Hold about 2 seconds.",
+      "teachingReason": "A medicine has to be pure, and leftover salicylic acid can irritate the stomach.",
+      "narrationCue": "pure / dissolved in a little hot solvent / recrystallising / iron three chloride / violet / Pure aspirin doesn't / trade-off / yield",
+      "motionPurpose": "the board clears; the \"purity\" tile lights. Task line \"5 Purity\". The purity bar writes at the centre: white with violet flecks (tag \"crude aspirin: some salicylic acid left\"). On \"pure\" a small tag \"medicines have purity limits\" writes and dims. On \"dissolved in a little hot solvent\" a coded beaker outline warms (red glow), then cools (blue); white crystal glyphs form while violet flecks stay in the liquid. On \"recrystallising\" a gloss tag: \"recrystallise: dissolve hot, cool, collect the purer crystals\". On \"iron three chloride\" the new aligned pair m8-fecl3-violet-v1.png (left) and m8-fecl3-pale-yellow-v1.png (right) appear, with a small copy of the salicylic acid structure above the left tube, its ring OH ringed red (tag \"free ring OH\"), and aspirin above the right tube with its ester ringed amber (tag \"OH now an ester\"). On \"violet\" the left tube's tag writes \"violet: salicylic acid present\"; on \"Pure aspirin doesn't\" the right tube's tag \"no violet: no detectable salicylic acid\" (Revision 2, science S3: a negative test is not a general purity measure). A grey tag, not narrated: \"melting point near 135 °C, narrow range: another purity check\". On \"trade-off\" the tubes shrink and the purity bar returns beside the scene 6 yield bar; on \"yield\" two recrystallisation steps run: the violet flecks clear while the yield bar shortens step by step (see-saw chips \"purer\" against \"lower yield\"). Bright at the end: the purity bar, the shorter yield bar and the see-saw. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"purity\" tile lights. Task line \"5 Purity\". The purity bar writes at the centre: white with violet flecks (tag \"crude aspirin: some salicylic acid left\"). On \"pure\" a small tag \"medicines have purity limits\" writes and dims. On \"dissolved in a little hot solvent\" a coded beaker outline warms (red glow), then cools (blue); white crystal glyphs form while violet flecks stay in the liquid. On \"recrystallising\" a gloss tag: \"recrystallise: dissolve hot, cool, collect the purer crystals\". On \"iron three chloride\" the new aligned pair m8-fecl3-violet-v1.png (left) and m8-fecl3-pale-yellow-v1.png (right) appear, with a small copy of the salicylic acid structure above the left tube, its ring OH ringed red (tag \"free ring OH\"), and aspirin above the right tube with its ester ringed amber (tag \"OH now an ester\"). On \"violet\" the left tube's tag writes \"violet: salicylic acid present\"; on \"Pure aspirin doesn't\" the right tube's tag \"no violet: no detectable salicylic acid\" (Revision 2, science S3: a negative test is not a general purity measure). A grey tag, not narrated: \"melting point near 135 °C, narrow range: another purity check\". On \"trade-off\" the tubes shrink and the purity bar returns beside the scene 6 yield bar; on \"yield\" two recrystallisation steps run: the violet flecks clear while the yield bar shortens step by step (see-saw chips \"purer\" against \"lower yield\"). Bright at the end: the purity bar, the shorter yield bar and the see-saw. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-fecl3-violet-v1.png",
+        "m8-fecl3-pale-yellow-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "purity: clean enough to swallow: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "safety-waste",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the \"safety\" tile lights. Task line \"6 Safety, by-products, waste\". m7-fume-cupboard-v1.png at the left; on \"corrosive\" two hazard chips write beside it: \"ethanoic anhydride: corrosive, irritating vapour\", \"conc. acid catalyst: corrosive\"; on \"cupboard\" the sash glows and a chip \"fume cupboard, gloves, eye protection\" writes; the hazard chips dim. The \"by-products and waste\" tile lights. On \"by-product\" the scene 2 equation returns small at the top with CH₃COOH ringed grey-brown; on \"anhydride\" a coded loop arrow runs from the ethanoic acid back to the anhydride (tag \"recovered and reused\"). A grey tag, not narrated: \"atom economy 75%: the ethanoic acid's atoms don't end up in aspirin (extension)\". On \"labelled waste containers\" m5x-waste-bottle-v1.png appears small at the right (tag \"labelled waste, not the sink\"). On \"treat\" the see-saw: \"less waste\" (green) against \"recovery equipment costs\" (brick red). Bright at the end: the loop arrow, the waste bottle tag and the see-saw. Hold about 1 second.",
+      "teachingReason": "Then safety and waste.",
+      "narrationCue": "corrosive / cupboard / by-product / anhydride / labelled waste containers / treat",
+      "motionPurpose": "the board clears; the \"safety\" tile lights. Task line \"6 Safety, by-products, waste\". m7-fume-cupboard-v1.png at the left; on \"corrosive\" two hazard chips write beside it: \"ethanoic anhydride: corrosive, irritating vapour\", \"conc. acid catalyst: corrosive\"; on \"cupboard\" the sash glows and a chip \"fume cupboard, gloves, eye protection\" writes; the hazard chips dim. The \"by-products and waste\" tile lights. On \"by-product\" the scene 2 equation returns small at the top with CH₃COOH ringed grey-brown; on \"anhydride\" a coded loop arrow runs from the ethanoic acid back to the anhydride (tag \"recovered and reused\"). A grey tag, not narrated: \"atom economy 75%: the ethanoic acid's atoms don't end up in aspirin (extension)\". On \"labelled waste containers\" m5x-waste-bottle-v1.png appears small at the right (tag \"labelled waste, not the sink\"). On \"treat\" the see-saw: \"less waste\" (green) against \"recovery equipment costs\" (brick red). Bright at the end: the loop arrow, the waste bottle tag and the see-saw. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"safety\" tile lights. Task line \"6 Safety, by-products, waste\". m7-fume-cupboard-v1.png at the left; on \"corrosive\" two hazard chips write beside it: \"ethanoic anhydride: corrosive, irritating vapour\", \"conc. acid catalyst: corrosive\"; on \"cupboard\" the sash glows and a chip \"fume cupboard, gloves, eye protection\" writes; the hazard chips dim. The \"by-products and waste\" tile lights. On \"by-product\" the scene 2 equation returns small at the top with CH₃COOH ringed grey-brown; on \"anhydride\" a coded loop arrow runs from the ethanoic acid back to the anhydride (tag \"recovered and reused\"). A grey tag, not narrated: \"atom economy 75%: the ethanoic acid's atoms don't end up in aspirin (extension)\". On \"labelled waste containers\" m5x-waste-bottle-v1.png appears small at the right (tag \"labelled waste, not the sink\"). On \"treat\" the see-saw: \"less waste\" (green) against \"recovery equipment costs\" (brick red). Bright at the end: the loop arrow, the waste bottle tag and the see-saw. Hold about 1 second.",
+      "motionTools": [
+        "m7-fume-cupboard-v1.png",
+        "m5x-waste-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "safety, by-products and waste: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "environment-society-cost",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the \"environment\" tile lights. Task line \"7 Environment, society, cost\". Three columns write one at a time. Environment: the crude oil barrel small and an energy glyph (tag \"oil-based starting materials; energy use\"; grey tag \"feedstock: the raw material a process starts from\"). On \"medicines\" the \"society\" tile lights and m6-aspirin-tablets-v1.png appears in the middle column (tag \"WHO essential medicine\"; grey source chip \"WHO Model List, 2023\"). On \"very little\" the \"cost\" tile lights and a coded price tag outline with a small coin glyph writes in the right column (tag \"very low price per tablet\"); on \"waste\" a chip \"high yield + cheap reagents + little waste\" writes. On \"others\" the whole factor board enlarges to the centre and thin grey lines draw between linked tiles (equilibrium to cost, rate to energy, purity to yield, waste to cost, supply to environment). Bright at the end: the linked factor board. Hold about 2 seconds.",
+      "teachingReason": "Finally, step back.",
+      "narrationCue": "medicines / very little / waste / others",
+      "motionPurpose": "the board clears; the \"environment\" tile lights. Task line \"7 Environment, society, cost\". Three columns write one at a time. Environment: the crude oil barrel small and an energy glyph (tag \"oil-based starting materials; energy use\"; grey tag \"feedstock: the raw material a process starts from\"). On \"medicines\" the \"society\" tile lights and m6-aspirin-tablets-v1.png appears in the middle column (tag \"WHO essential medicine\"; grey source chip \"WHO Model List, 2023\"). On \"very little\" the \"cost\" tile lights and a coded price tag outline with a small coin glyph writes in the right column (tag \"very low price per tablet\"); on \"waste\" a chip \"high yield + cheap reagents + little waste\" writes. On \"others\" the whole factor board enlarges to the centre and thin grey lines draw between linked tiles (equilibrium to cost, rate to energy, purity to yield, waste to cost, supply to environment). Bright at the end: the linked factor board. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the \"environment\" tile lights. Task line \"7 Environment, society, cost\". Three columns write one at a time. Environment: the crude oil barrel small and an energy glyph (tag \"oil-based starting materials; energy use\"; grey tag \"feedstock: the raw material a process starts from\"). On \"medicines\" the \"society\" tile lights and m6-aspirin-tablets-v1.png appears in the middle column (tag \"WHO essential medicine\"; grey source chip \"WHO Model List, 2023\"). On \"very little\" the \"cost\" tile lights and a coded price tag outline with a small coin glyph writes in the right column (tag \"very low price per tablet\"); on \"waste\" a chip \"high yield + cheap reagents + little waste\" writes. On \"others\" the whole factor board enlarges to the centre and thin grey lines draw between linked tiles (equilibrium to cost, rate to energy, purity to yield, waste to cost, supply to environment). Bright at the end: the linked factor board. Hold about 2 seconds.",
+      "motionTools": [
+        "m6-aspirin-tablets-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "environment, society and cost: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "judge",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Judge\". The verdict bookends frame (s08) draws: the judgement writes at the top in bold ink, built in three parts on their words: \"sound design for a cheap, essential medicine\", \"because: high yield, quick, mild conditions\", and on \"provided\" a green-bracketed condition \"provided: ethanoic acid recovered; product purified to medicine standard\" (grey chip \"s08: verdict first, PEEL, verdict last\"). Between the bookends, five small grey PEEL rows stand in for paragraphs, each labelled with its factor (supply; equilibrium and yield; rate and conditions; purity and safety; waste, environment and cost), with the PEEL rail colours as thin left bars. On \"weakness\" a small brick-red chip \"weakness: oil-based starting materials\" writes under the verdict. On \"evaluation\" a crossed chip at the side, \"list of factors, no verdict\", fades in and is crossed (caption \"weigh them, then judge\"). Bright at the end: the verdict, its condition and the crossed chip. Hold about 2 seconds.",
+      "teachingReason": "So how do you judge it? As in the extended responses video, decide the verdict first, then give each factor a paragraph with its evidence.",
+      "narrationCue": "provided / weakness / evaluation",
+      "motionPurpose": "the board clears. Task line \"Judge\". The verdict bookends frame (s08) draws: the judgement writes at the top in bold ink, built in three parts on their words: \"sound design for a cheap, essential medicine\", \"because: high yield, quick, mild conditions\", and on \"provided\" a green-bracketed condition \"provided: ethanoic acid recovered; product purified to medicine standard\" (grey chip \"s08: verdict first, PEEL, verdict last\"). Between the bookends, five small grey PEEL rows stand in for paragraphs, each labelled with its factor (supply; equilibrium and yield; rate and conditions; purity and safety; waste, environment and cost), with the PEEL rail colours as thin left bars. On \"weakness\" a small brick-red chip \"weakness: oil-based starting materials\" writes under the verdict. On \"evaluation\" a crossed chip at the side, \"list of factors, no verdict\", fades in and is crossed (caption \"weigh them, then judge\"). Bright at the end: the verdict, its condition and the crossed chip. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Judge\". The verdict bookends frame (s08) draws: the judgement writes at the top in bold ink, built in three parts on their words: \"sound design for a cheap, essential medicine\", \"because: high yield, quick, mild conditions\", and on \"provided\" a green-bracketed condition \"provided: ethanoic acid recovered; product purified to medicine standard\" (grey chip \"s08: verdict first, PEEL, verdict last\"). Between the bookends, five small grey PEEL rows stand in for paragraphs, each labelled with its factor (supply; equilibrium and yield; rate and conditions; purity and safety; waste, environment and cost), with the PEEL rail colours as thin left bars. On \"weakness\" a small brick-red chip \"weakness: oil-based starting materials\" writes under the verdict. On \"evaluation\" a crossed chip at the side, \"list of factors, no verdict\", fades in and is crossed (caption \"weigh them, then judge\"). Bright at the end: the verdict, its condition and the crossed chip. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "judging the route: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Handwritten line: \"Yield tells you how much product you collected, not how good the route is.\" A crossed chip under it: \"high yield = good route\" (site common error). On \"route\" (Revision 2: no longer narrated, screen only) three small grey chips light in turn and dim: \"waste\", \"hazardous solvent\", \"scarce supply\". On \"people\" the factor board returns small, with an amber path tracing from the supply tile to the society and cost tiles (tag \"reagents → … → people and cost\"). A grey tag, not narrated: \"atom economy measures how much of the reactants ends up in the product (extension)\". Hold about 2 seconds.",
+      "teachingReason": "One line to keep: yield tells you how much product you collected, not how good the route is.",
+      "narrationCue": "route / people",
+      "motionPurpose": "the board clears. Handwritten line: \"Yield tells you how much product you collected, not how good the route is.\" A crossed chip under it: \"high yield = good route\" (site common error). On \"route\" (Revision 2: no longer narrated, screen only) three small grey chips light in turn and dim: \"waste\", \"hazardous solvent\", \"scarce supply\". On \"people\" the factor board returns small, with an amber path tracing from the supply tile to the society and cost tiles (tag \"reagents → … → people and cost\"). A grey tag, not narrated: \"atom economy measures how much of the reactants ends up in the product (extension)\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Yield tells you how much product you collected, not how good the route is.\" A crossed chip under it: \"high yield = good route\" (site common error). On \"route\" (Revision 2: no longer narrated, screen only) three small grey chips light in turn and dim: \"waste\", \"hazardous solvent\", \"scarce supply\". On \"people\" the factor board returns small, with an amber path tracing from the supply tile to the society and cost tiles (tag \"reagents → … → people and cost\"). A grey tag, not narrated: \"atom economy measures how much of the reactants ends up in the product (extension)\". Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"Biodiesel is made by reacting a vegetable oil (a triglyceride) with methanol, using a sodium hydroxide catalyst. The reaction is reversible: triglyceride + 3 methanol ⇌ 3 biodiesel molecules + glycerol. A plant uses about twice the amount of methanol shown in the equation. After the reaction, the unreacted methanol is recovered by distillation and reused. Methanol is toxic and flammable. Explain why the plant uses excess methanol, and why it recovers the unreacted methanol. (3 marks)\" m7-vegetable-oil-bottle-v1.png small at the card's right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"Biodiesel is made by reacting a vegetable oil (a triglyceride) with methanol, using a sodium hydroxide catalyst. The reaction is reversible: triglyceride + 3 methanol ⇌ 3 biodiesel molecules + glycerol. A plant uses about twice the amount of methanol shown in the equation. After the reaction, the unreacted methanol is recovered by distillation and reused. Methanol is toxic and flammable. Explain why the plant uses excess methanol, and why it recovers the unreacted methanol. (3 marks)\" m7-vegetable-oil-bottle-v1.png small at the card's right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"Biodiesel is made by reacting a vegetable oil (a triglyceride) with methanol, using a sodium hydroxide catalyst. The reaction is reversible: triglyceride + 3 methanol ⇌ 3 biodiesel molecules + glycerol. A plant uses about twice the amount of methanol shown in the equation. After the reaction, the unreacted methanol is recovered by distillation and reused. Methanol is toxic and flammable. Explain why the plant uses excess methanol, and why it recovers the unreacted methanol. (3 marks)\" m7-vegetable-oil-bottle-v1.png small at the card's right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m7-vegetable-oil-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"equilibrium\" \"The reaction is reversible\" and \"⇌\" are underlined, then \"about twice the amount of methanol\"; an answer line writes: \"excess reactant → equilibrium shifts right → more oil converted\" (bright; grey chip \"Module 5: add a reactant, shift to products\"). On \"recovering\" \"recovered by distillation and reused\" and \"toxic and flammable\" are underlined; a second line writes: \"recover methanol → lower cost, less waste, less hazard\" (bright). On \"trap\" a chip \"excess methanol: mainly for speed\" fades in and is crossed (caption \"the main reason is the equilibrium position\"). Hold about 1 second.",
+      "teachingReason": "The reaction is an equilibrium, so adding extra methanol, a reactant, shifts it towards the products and converts more of the oil.",
+      "narrationCue": "equilibrium / recovering / trap / the main reason is the equilibrium position",
+      "motionPurpose": "the card stays, shrunk to the top. On \"equilibrium\" \"The reaction is reversible\" and \"⇌\" are underlined, then \"about twice the amount of methanol\"; an answer line writes: \"excess reactant → equilibrium shifts right → more oil converted\" (bright; grey chip \"Module 5: add a reactant, shift to products\"). On \"recovering\" \"recovered by distillation and reused\" and \"toxic and flammable\" are underlined; a second line writes: \"recover methanol → lower cost, less waste, less hazard\" (bright). On \"trap\" a chip \"excess methanol: mainly for speed\" fades in and is crossed (caption \"the main reason is the equilibrium position\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"equilibrium\" \"The reaction is reversible\" and \"⇌\" are underlined, then \"about twice the amount of methanol\"; an answer line writes: \"excess reactant → equilibrium shifts right → more oil converted\" (bright; grey chip \"Module 5: add a reactant, shift to products\"). On \"recovering\" \"recovered by distillation and reused\" and \"toxic and flammable\" are underlined; a second line writes: \"recover methanol → lower cost, less waste, less hazard\" (bright). On \"trap\" a chip \"excess methanol: mainly for speed\" fades in and is crossed (caption \"the main reason is the equilibrium position\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"A company in Queensland, close to sugar-cane farms and mills, plans to produce ethanol for fuel. It is considering two routes. Route 1, hydration of ethene: ethene made from crude oil reacts with steam over a phosphoric acid catalyst at about 300 °C and 60 to 70 atm; the reaction is reversible; the process runs continuously; ethanol is separated from water and unreacted gas is recycled. Route 2, fermentation: yeast ferments sugar from cane molasses at about 30 to 35 °C without oxygen; each batch takes days and stops at about 15% ethanol, so the ethanol must be distilled, which uses energy; sugar mills can burn cane waste to supply this energy; the carbon dioxide released is taken up again by the next crop of cane as it grows. Evaluate the two routes for this company. (7 marks)\" Below it, the task line: \"Plan your answer: a verdict, then one line per paragraph.\" m7-sugarcane-stalks-v1.png and m7-crude-oil-barrel-v1.png small at the card's right. Revision 2 (learning L1): the card writes on in full first, then a silent reading hold of about 8 s (no narration, no ring; small grey tag \"read the question\") before the narration starts. The full question stays on screen. After \"Pause here to answer.\" the countdown ring runs 10 seconds with \"Pause here to answer.\" and a grey tag \"longer task: pause the video and take about a minute\". Nothing answer-bearing.",
+      "teachingReason": "Last one, and it's a long response.",
+      "narrationCue": "Last one, and it's a long response",
+      "motionPurpose": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"A company in Queensland, close to sugar-cane farms and mills, plans to produce ethanol for fuel. It is considering two routes. Route 1, hydration of ethene: ethene made from crude oil reacts with steam over a phosphoric acid catalyst at about 300 °C and 60 to 70 atm; the reaction is reversible; the process runs continuously; ethanol is separated from water and unreacted gas is recycled. Route 2, fermentation: yeast ferments sugar from cane molasses at about 30 to 35 °C without oxygen; each batch takes days and stops at about 15% ethanol, so the ethanol must be distilled, which uses energy; sugar mills can burn cane waste to supply this energy; the carbon dioxide released is taken up again by the next crop of cane as it grows. Evaluate the two routes for this company. (7 marks)\" Below it, the task line: \"Plan your answer: a verdict, then one line per paragraph.\" m7-sugarcane-stalks-v1.png and m7-crude-oil-barrel-v1.png small at the card's right. Revision 2 (learning L1): the card writes on in full first, then a silent reading hold of about 8 s (no narration, no ring; small grey tag \"read the question\") before the narration starts. The full question stays on screen. After \"Pause here to answer.\" the countdown ring runs 10 seconds with \"Pause here to answer.\" and a grey tag \"longer task: pause the video and take about a minute\". Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card (tag \"HSC-style question, written for HSCScience\"), worded as printed: \"A company in Queensland, close to sugar-cane farms and mills, plans to produce ethanol for fuel. It is considering two routes. Route 1, hydration of ethene: ethene made from crude oil reacts with steam over a phosphoric acid catalyst at about 300 °C and 60 to 70 atm; the reaction is reversible; the process runs continuously; ethanol is separated from water and unreacted gas is recycled. Route 2, fermentation: yeast ferments sugar from cane molasses at about 30 to 35 °C without oxygen; each batch takes days and stops at about 15% ethanol, so the ethanol must be distilled, which uses energy; sugar mills can burn cane waste to supply this energy; the carbon dioxide released is taken up again by the next crop of cane as it grows. Evaluate the two routes for this company. (7 marks)\" Below it, the task line: \"Plan your answer: a verdict, then one line per paragraph.\" m7-sugarcane-stalks-v1.png and m7-crude-oil-barrel-v1.png small at the card's right. Revision 2 (learning L1): the card writes on in full first, then a silent reading hold of about 8 s (no narration, no ring; small grey tag \"read the question\") before the narration starts. The full question stays on screen. After \"Pause here to answer.\" the countdown ring runs 10 seconds with \"Pause here to answer.\" and a grey tag \"longer task: pause the video and take about a minute\". Nothing answer-bearing.",
+      "motionTools": [
+        "m7-sugarcane-stalks-v1.png",
+        "m7-crude-oil-barrel-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2: plan an extended response (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. s08's plan card writes in the right two-thirds. On \"verdict\" the verdict line writes at the top: \"Fermentation suits this company better, provided distillation can be powered cheaply (burn cane waste).\" On \"distillation\" \"must be distilled, which uses energy\" and \"burn cane waste\" are underlined. On \"supply\" four rows write one at a time on their words, each with a teal evidence chip and the matching card phrase underlined as it appears: \"Supply: cane is local and renewable; ethene comes from crude oil\" (chip \"close to sugar-cane farms\"; \"made from crude oil\"); \"Conditions and rate: 30 to 35 °C at normal pressure, but slow batches; hydration is fast and continuous at 300 °C, 60 to 70 atm\" (chip \"days\", \"continuously\"); \"Separation and energy: both routes separate ethanol from water; fermentation stops at about 15%, and its distillation uses energy (cane waste can supply it)\" (chips \"separated from water\", \"about 15%\"; Revision 2, science S1: same basis for both routes, no claim that the hydration reactor gives nearly pure fuel ethanol); \"Carbon dioxide: taken up by the next crop, but distillation and farming still use energy\" (chip \"taken up again\"). On \"trap\" a chip \"advantages and disadvantages, no verdict\" fades in and is crossed (caption \"verdict first, with its condition\"). Hold about 1 second.",
+      "teachingReason": "One strong plan starts with the verdict.",
+      "narrationCue": "verdict / distillation / supply / trap",
+      "motionPurpose": "the card stays, shrunk to the top. s08's plan card writes in the right two-thirds. On \"verdict\" the verdict line writes at the top: \"Fermentation suits this company better, provided distillation can be powered cheaply (burn cane waste).\" On \"distillation\" \"must be distilled, which uses energy\" and \"burn cane waste\" are underlined. On \"supply\" four rows write one at a time on their words, each with a teal evidence chip and the matching card phrase underlined as it appears: \"Supply: cane is local and renewable; ethene comes from crude oil\" (chip \"close to sugar-cane farms\"; \"made from crude oil\"); \"Conditions and rate: 30 to 35 °C at normal pressure, but slow batches; hydration is fast and continuous at 300 °C, 60 to 70 atm\" (chip \"days\", \"continuously\"); \"Separation and energy: both routes separate ethanol from water; fermentation stops at about 15%, and its distillation uses energy (cane waste can supply it)\" (chips \"separated from water\", \"about 15%\"; Revision 2, science S1: same basis for both routes, no claim that the hydration reactor gives nearly pure fuel ethanol); \"Carbon dioxide: taken up by the next crop, but distillation and farming still use energy\" (chip \"taken up again\"). On \"trap\" a chip \"advantages and disadvantages, no verdict\" fades in and is crossed (caption \"verdict first, with its condition\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. s08's plan card writes in the right two-thirds. On \"verdict\" the verdict line writes at the top: \"Fermentation suits this company better, provided distillation can be powered cheaply (burn cane waste).\" On \"distillation\" \"must be distilled, which uses energy\" and \"burn cane waste\" are underlined. On \"supply\" four rows write one at a time on their words, each with a teal evidence chip and the matching card phrase underlined as it appears: \"Supply: cane is local and renewable; ethene comes from crude oil\" (chip \"close to sugar-cane farms\"; \"made from crude oil\"); \"Conditions and rate: 30 to 35 °C at normal pressure, but slow batches; hydration is fast and continuous at 300 °C, 60 to 70 atm\" (chip \"days\", \"continuously\"); \"Separation and energy: both routes separate ethanol from water; fermentation stops at about 15%, and its distillation uses energy (cane waste can supply it)\" (chips \"separated from water\", \"about 15%\"; Revision 2, science S1: same basis for both routes, no claim that the hydration reactor gives nearly pure fuel ethanol); \"Carbon dioxide: taken up by the next crop, but distillation and farming still use energy\" (chip \"taken up again\"). On \"trap\" a chip \"advantages and disadvantages, no verdict\" fades in and is crossed (caption \"verdict first, with its condition\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "course-close",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. The factor board returns at full size at the centre, every tile ticked; as each clause is spoken its tiles light amber in turn (supply; equilibrium and rate; purity; safety and waste; society and cost), then all dim together. On \"judgement\" the verdict bookends frame closes around the board (green bracket). On \"course\" a chip writes under it: \"End of Module 8 Chemistry: Applying Chemical Ideas\". No \"Next\" chip. Hold about 2 seconds.",
+      "teachingReason": "So for any synthesis, ask where the reagents come from, which conditions balance speed, yield and cost, how pure the product must be, how safe it is and what it wastes, and who it serves at what cost.",
+      "narrationCue": "judgement / course",
+      "motionPurpose": "the board clears. The factor board returns at full size at the centre, every tile ticked; as each clause is spoken its tiles light amber in turn (supply; equilibrium and rate; purity; safety and waste; society and cost), then all dim together. On \"judgement\" the verdict bookends frame closes around the board (green bracket). On \"course\" a chip writes under it: \"End of Module 8 Chemistry: Applying Chemical Ideas\". No \"Next\" chip. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The factor board returns at full size at the centre, every tile ticked; as each clause is spoken its tiles light amber in turn (supply; equilibrium and rate; purity; safety and waste; society and cost), then all dim together. On \"judgement\" the verdict bookends frame closes around the board (green bracket). On \"course\" a chip writes under it: \"End of Module 8 Chemistry: Applying Chemical Ideas\". No \"Next\" chip. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "course close: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c13-learning-review.md",
+      "sha256": "70a8c37f49b6351f09db0f5590547679cb1bbc3bf447824c5841dbae5013ee9a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c13-claude-science-check.md",
+      "sha256": "2075702f94727291c5f0d460a907d041973fed12a3b2980e8940cade39b2cee7"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

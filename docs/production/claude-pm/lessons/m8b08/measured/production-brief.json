@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b08/measured/lesson.json",
+    "lessonSha256": "f559ae2dbbfa5c0801d3547778c38deee5e0eeec28acc39c3b53d126f04dc25f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b03: insulin from beta cells in the pancreatic islets; insulin binds receptors on muscle and fat cells and moves glucose transporters into the membrane; the liver stores glycogen; the usual fasting range of about 4 to 6 mmol/L; negative feedback. From b06: nutrition is an acquired cause of non-infectious disease. From b07: exposure, risk not certainty, and the artery plaque. From Year 11: red blood cells carry oxygen; enzymes; the gut absorbs nutrients; the thyroid and pituitary are endocrine glands (b01 named the pituitary). Not assumed: deficiency, excess (as defined terms), haemoglobin's iron, anaemia, collagen, scurvy, rickets, goitre, TSH, insulin resistance, risk factor, LDL.",
+    "startsWith": "A century ago, Australian doctors still treated children for rickets, where growing bones soften and bend, and scurvy, where gums bleed and wounds won't heal. Today, the nutrition-linked diseases that fill our hospitals are mostly type 2 diabetes and heart disease. One set comes from too little. The other is linked to long-term excess, alongside other risk factors. So how does what we eat change disease risk?",
+    "stopsAfter": "using the chain nutrient, normal job, change, effect; distinguishing deficiency (too little for long enough that a process fails) from excess (too much over years, overloading a system); explaining iron-deficiency anaemia (less haemoglobin, less oxygen carried, fatigue on exercise); explaining scurvy (vitamin C needed to build strong collagen; weak collagen, leaky vessels, bleeding gums, slow healing) and rickets (vitamin D needed to absorb calcium; soft bones bend); explaining goitre (too little iodine, less thyroid hormone, more TSH by negative feedback, the gland grows but still lacks iodine); explaining insulin resistance (excess energy and low activity build up body fat; insulin binds but fewer transporters move; glucose stays in the blood), beta cell compensation and its failure, and vessel damage from years of high glucose; distinguishing a risk factor from a certain outcome, comparing scurvy (one missing nutrient) with type 2 diabetes and heart disease (several risk factors); applying the chain to an unseen vitamin D case and evaluating a causal claim from rate data.",
+    "nextLesson": "when cell division escapes control: how cancer begins and spreads (bio-m8-b09). Managing type 2 diabetes: bio-m8-b12."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b08.md"
+  ],
+  "teaching": {
+    "task": "A century ago, Australian children were treated for rickets and scurvy; today the nutrition-linked diseases that fill hospitals are mostly type 2 diabetes and heart disease. How does what we eat change disease risk?",
+    "causalExplanation": "Earlier, you saw that nutrition is one acquired cause of disease. Here's the chain that explains any case. Start with the nutrient and its normal job in the body. Then ask what changes when there's too little for long enough, a deficiency, or too much over many years, an excess. Then link that change to the effect. A deficiency takes away a job. An excess overloads a system that normally works. Take iron. You've seen its chain already: too little iron means less haemoglobin, smaller, paler red cells, and less oxygen carried, which is iron-deficiency anaemia. The nutrition question is why the iron is low. A diet with too little iron, or a gut that absorbs it poorly, makes it a nutritional deficiency. But losing blood, for example from heavy periods or bleeding in the gut, drains iron too, and that cause isn't the diet. So check where the iron went before you call it nutritional. The same chain works for vitamins. Vitamin C is needed by the enzymes that build strong collagen, the rope-like protein that holds together gums, skin and blood vessel walls. Without it, new collagen is weak, so small vessels leak, gums bleed and wounds heal slowly. That's scurvy. Vitamin D lets your gut absorb calcium. Without it, growing bones don't harden properly, so they can bend under the body's weight. That's rickets. Scurvy has a C in it, for vitamin C. Rickets, think vitamin D. Your skin can make it in sunlight, and some foods and supplements supply it too.",
+    "conversationalApproach": "A century ago, Australian doctors still treated children for rickets, where growing bones soften and bend, and scurvy, where gums bleed and wounds won't heal. Earlier, you saw that nutrition is one acquired cause of disease. Take iron. The same chain works for vitamins. Iodine adds a twist you'll recognise from homeostasis. Now excess, and type 2 diabetes. At first, the beta cells in the pancreas cover for it by releasing more insulin, so blood glucose can stay close to normal for years. So does eating too much cause type 2 diabetes? Not on its own. Two exam questions. The nutrient is vitamin D, and its job is helping the gut absorb calcium. Second. Obesity and a family history both go with higher rates, and together, the highest. So for any nutrition question, name the nutrient and its normal job, say what changes with too little or too much, link it to the effect, then ask: is this one missing nutrient, or one risk factor among many? Next, what happens when cell division escapes control: how cancer begins and spreads.",
+    "openingDecision": "A century ago, Australian doctors still treated children for rickets, where growing bones soften and bend, and scurvy, where gums bleed and wounds won't heal. Today, the nutrition-linked diseases that fill our hospitals are mostly type 2 diabetes and heart disease. One set comes from too little. The other is linked to long-term excess, alongside other risk factors. So how does what we eat change disease risk?",
+    "understandingCheck": "Two exam questions. First. A fourteen-year-old spends almost all daylight hours indoors. Blood tests show low vitamin D, and their gut is absorbing little calcium. Using nutrient, change and effect, explain how this deficiency could affect their bones. Pause here to answer. Second. The chart shows new cases of type 2 diabetes per thousand adults each year, in four groups sorted by body weight and family history. Identify two risk factors the data show. Then explain why the claim \"eating too much causes type 2 diabetes\" overstates the evidence. Pause here to answer.",
+    "curriculumScope": "B8-IQ2-01 (p 57): \"investigate the causes and effects of non-infectious diseases in humans, including but not limited to:\" with the listed example \"nutritional diseases\". Causes: scenes 2 to 6. Effects: scenes 3 to 5 and 7 (anaemia, scurvy, rickets, goitre, type 2 diabetes and vessel damage). Inquiry question: \"Do non-infectious diseases cause more deaths than infectious diseases?\" (not answered here)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One nutrient chain owns the bottom fifth of the frame from scene 2 to scene 7: four coded boxes \"nutrient → normal job → change → effect\" (b07's PathwayStrip with four slots), each filling with a thumbnail and two to four words for the current nutrient, with a small coded balance beam at its left end that tips to \"too little\" (deficiency) or \"too much\" (excess). Above the chain, one painted plate or matched pair at a time with callouts. In scenes 6 and 7, a small coded years strip (a horizontal 0 to 15 years axis with two rising and falling bars, \"insulin\" and \"blood glucose\") sits at the upper right. No people, hands or faces: no faces with goitres, no children's legs, no gums in a mouth; each disease is shown at organ or tissue level (bones only, thyroid only, tissue around a capillary). Coded elements are limited to the chain, the beam, the years strip, the attempt chart, glucose hexagons (b03's GlucoseDots), oxygen dots, chips, tags and arrows. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the two panels shrink to the upper corners and dim (grey tag \"b06: acquired causes\" on the left one). m5x-red-blood-cells-v1. the red cells slide away. the board clears above the chain. the board clears above the chain; the beam tips to \"too much\". m8-pancreatic-islet-v1. the chain fades. the board clears. the card stays. the board clears. the card stays. the four-slot chain returns full width with step chips above it, one per cue: \"nutrient and job\", \"too little or too much?\", \"effect\", \"one cause, or one risk factor among many?\". > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. A coded two-panel board: left \"about 1900\", right \"today\". On \"rickets\" new m8-leg-bones-rickets-v1.png (a child's femur and tibia, bowed) enters small on the left; on \"scurvy\" new m8-collagen-weak-v1.png enters beside it (grey tag \"weak tissue, leaking vessel\"). On \"type 2 diabetes\" m8-pancreas-v1.png enters small on the right; on \"heart disease\" m8-artery-plaque-v1.png (shared with b07) enters beside it. On \"too little\" a coded BalanceBeam under the left panel tips down, label \"too little\"; on \"long-term excess\" a second beam under the right panel tips the other way, label \"too much\". On the question the heading writes: \"How does nutrition change disease risk?\" At most three bright text items. Hold one second.",
+      "teachingReason": "A century ago, Australian doctors still treated children for rickets, where growing bones soften and bend, and scurvy, where gums bleed and wounds won't heal.",
+      "narrationCue": "rickets / scurvy / type 2 diabetes / heart disease / too little / long-term excess",
+      "motionPurpose": "A coded two-panel board: left \"about 1900\", right \"today\". On \"rickets\" new m8-leg-bones-rickets-v1.png (a child's femur and tibia, bowed) enters small on the left; on \"scurvy\" new m8-collagen-weak-v1.png enters beside it (grey tag \"weak tissue, leaking vessel\"). On \"type 2 diabetes\" m8-pancreas-v1.png enters small on the right; on \"heart disease\" m8-artery-plaque-v1.png (shared with b07) enters beside it. On \"too little\" a coded BalanceBeam under the left panel tips down, label \"too little\"; on \"long-term excess\" a second beam under the right panel tips the other way, label \"too much\". On the question the heading writes: \"How does nutrition change disease risk?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. A coded two-panel board: left \"about 1900\", right \"today\". On \"rickets\" new m8-leg-bones-rickets-v1.png (a child's femur and tibia, bowed) enters small on the left; on \"scurvy\" new m8-collagen-weak-v1.png enters beside it (grey tag \"weak tissue, leaking vessel\"). On \"type 2 diabetes\" m8-pancreas-v1.png enters small on the right; on \"heart disease\" m8-artery-plaque-v1.png (shared with b07) enters beside it. On \"too little\" a coded BalanceBeam under the left panel tips down, label \"too little\"; on \"long-term excess\" a second beam under the right panel tips the other way, label \"too much\". On the question the heading writes: \"How does nutrition change disease risk?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m8-leg-bones-rickets-v1.png",
+        "m8-collagen-weak-v1.png",
+        "m8-pancreas-v1.png",
+        "m8-artery-plaque-v1.png",
+        "BalanceBeam",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (two eras of nutritional disease): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "one-chain",
+      "visualDecision": "new",
+      "visualReference": "the two panels shrink to the upper corners and dim (grey tag \"b06: acquired causes\" on the left one). b07's PathwayStrip draws at the bottom in four-slot mode, one slot per cue: \"nutrient\", \"normal job\", \"change\", \"effect\". The BalanceBeam sits at the strip's left end. On \"deficiency\" the beam tips to \"too little\" and a gloss writes \"deficiency: too little, for long enough that a process fails\"; on \"excess\" the beam tips to \"too much\", gloss \"excess: too much over years, overloading a system\". On \"takes away a job\" a small coded gear in the \"normal job\" slot greys out; on \"overloads a system\" a second small coded gear spins too fast and glows amber. At most three bright items. Hold one second.",
+      "teachingReason": "Earlier, you saw that nutrition is one acquired cause of disease.",
+      "narrationCue": "deficiency / excess / takes away a job / overloads a system",
+      "motionPurpose": "the two panels shrink to the upper corners and dim (grey tag \"b06: acquired causes\" on the left one). b07's PathwayStrip draws at the bottom in four-slot mode, one slot per cue: \"nutrient\", \"normal job\", \"change\", \"effect\". The BalanceBeam sits at the strip's left end. On \"deficiency\" the beam tips to \"too little\" and a gloss writes \"deficiency: too little, for long enough that a process fails\"; on \"excess\" the beam tips to \"too much\", gloss \"excess: too much over years, overloading a system\". On \"takes away a job\" a small coded gear in the \"normal job\" slot greys out; on \"overloads a system\" a second small coded gear spins too fast and glows amber. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the two panels shrink to the upper corners and dim (grey tag \"b06: acquired causes\" on the left one). b07's PathwayStrip draws at the bottom in four-slot mode, one slot per cue: \"nutrient\", \"normal job\", \"change\", \"effect\". The BalanceBeam sits at the strip's left end. On \"deficiency\" the beam tips to \"too little\" and a gloss writes \"deficiency: too little, for long enough that a process fails\"; on \"excess\" the beam tips to \"too much\", gloss \"excess: too much over years, overloading a system\". On \"takes away a job\" a small coded gear in the \"normal job\" slot greys out; on \"overloads a system\" a second small coded gear spins too fast and glows amber. At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "BalanceBeam",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one chain for every nutrient: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "iron",
+      "visualDecision": "new",
+      "visualReference": "m5x-red-blood-cells-v1.png enters at the centre with a grey tag \"b06: the iron chain\". On \"haemoglobin\" it cross-fades to b06's matched m8-red-cells-iron-deficient-v1.png while the chain fills at speed, one slot per phrase: \"iron\", \"builds haemoglobin, carries O₂\", \"smaller, paler cells, less O₂\"; on \"anaemia\" the effect slot fills \"iron-deficiency anaemia\". The cells shrink to the upper left. On \"why the iron is low\" a coded three-branch cause sorter writes in the centre: \"too little iron in the diet\" and \"poorly absorbed in the gut\" (both green, joined by a bracket \"nutritional deficiency\"), then on \"losing blood\" a third grey branch \"blood loss (heavy periods, bleeding in the gut)\" with the tag \"not the diet\". On \"nutritional\" the green bracket glows and a chip writes: \"check the cause before the category\". At most three bright items. Hold one second.",
+      "teachingReason": "Take iron.",
+      "narrationCue": "haemoglobin / anaemia / why the iron is low / losing blood / nutritional",
+      "motionPurpose": "m5x-red-blood-cells-v1.png enters at the centre with a grey tag \"b06: the iron chain\". On \"haemoglobin\" it cross-fades to b06's matched m8-red-cells-iron-deficient-v1.png while the chain fills at speed, one slot per phrase: \"iron\", \"builds haemoglobin, carries O₂\", \"smaller, paler cells, less O₂\"; on \"anaemia\" the effect slot fills \"iron-deficiency anaemia\". The cells shrink to the upper left. On \"why the iron is low\" a coded three-branch cause sorter writes in the centre: \"too little iron in the diet\" and \"poorly absorbed in the gut\" (both green, joined by a bracket \"nutritional deficiency\"), then on \"losing blood\" a third grey branch \"blood loss (heavy periods, bleeding in the gut)\" with the tag \"not the diet\". On \"nutritional\" the green bracket glows and a chip writes: \"check the cause before the category\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "m5x-red-blood-cells-v1.png enters at the centre with a grey tag \"b06: the iron chain\". On \"haemoglobin\" it cross-fades to b06's matched m8-red-cells-iron-deficient-v1.png while the chain fills at speed, one slot per phrase: \"iron\", \"builds haemoglobin, carries O₂\", \"smaller, paler cells, less O₂\"; on \"anaemia\" the effect slot fills \"iron-deficiency anaemia\". The cells shrink to the upper left. On \"why the iron is low\" a coded three-branch cause sorter writes in the centre: \"too little iron in the diet\" and \"poorly absorbed in the gut\" (both green, joined by a bracket \"nutritional deficiency\"), then on \"losing blood\" a third grey branch \"blood loss (heavy periods, bleeding in the gut)\" with the tag \"not the diet\". On \"nutritional\" the green bracket glows and a chip writes: \"check the cause before the category\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m5x-red-blood-cells-v1.png",
+        "m8-red-cells-iron-deficient-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "iron: recall the chain, then ask why it's low: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "vitamins-c-d",
+      "visualDecision": "new",
+      "visualReference": "the red cells slide away. Left half: new m8-collagen-strong-v1.png (connective tissue with thick, tightly wound collagen fibres around an intact capillary). The chain refills: \"vitamin C\" (beam \"too little\"), \"enzymes build strong collagen\". On \"rope-like protein\" a callout to a fibre, label \"collagen: rope-like protein\"; three grey tags write and dim in turn: \"gums\", \"skin\", \"vessel walls\". On \"new collagen is weak\" the plate cross-fades to its matched m8-collagen-weak-v1.png (the same field, fibres thin and frayed, the capillary wall gapped with a few red cells escaping); on \"small vessels leak\" a callout to the escaping red cells. The change slot fills \"weak collagen\", effect \"bleeding gums, slow healing: scurvy\". Right half: on \"Vitamin D\" new m8-leg-bones-normal-v1.png (a child's straight femur and tibia) enters; the chain refills for vitamin D: \"vitamin D\", \"gut absorbs calcium\". On \"don't harden properly\" small coded calcium dots stop entering the bone outline; on \"bend under the body's weight\" the plate cross-fades to its matched m8-leg-bones-rickets-v1.png (the same bones, bowed). Effect \"soft bones bend: rickets\". On \"Scurvy has a C in it\" the memory line writes large in hand lettering: \"sCurvy: vitamin C. Rickets: think vitamin D\", with the C and D bright; on \"sunlight\" m8-sun-v1.png appears small (grey tag \"one source: skin makes vitamin D in sunlight\"), and on \"foods and supplements\" a second grey tag writes \"also from food or supplements\". At most three bright items. Hold one second.",
+      "teachingReason": "The same chain works for vitamins.",
+      "narrationCue": "rope-like protein / new collagen is weak / small vessels leak / Vitamin D / don't harden properly / bend under the body's weight / Scurvy has a C in it / sunlight / foods and supplements",
+      "motionPurpose": "the red cells slide away. Left half: new m8-collagen-strong-v1.png (connective tissue with thick, tightly wound collagen fibres around an intact capillary). The chain refills: \"vitamin C\" (beam \"too little\"), \"enzymes build strong collagen\". On \"rope-like protein\" a callout to a fibre, label \"collagen: rope-like protein\"; three grey tags write and dim in turn: \"gums\", \"skin\", \"vessel walls\". On \"new collagen is weak\" the plate cross-fades to its matched m8-collagen-weak-v1.png (the same field, fibres thin and frayed, the capillary wall gapped with a few red cells escaping); on \"small vessels leak\" a callout to the escaping red cells. The change slot fills \"weak collagen\", effect \"bleeding gums, slow healing: scurvy\". Right half: on \"Vitamin D\" new m8-leg-bones-normal-v1.png (a child's straight femur and tibia) enters; the chain refills for vitamin D: \"vitamin D\", \"gut absorbs calcium\". On \"don't harden properly\" small coded calcium dots stop entering the bone outline; on \"bend under the body's weight\" the plate cross-fades to its matched m8-leg-bones-rickets-v1.png (the same bones, bowed). Effect \"soft bones bend: rickets\". On \"Scurvy has a C in it\" the memory line writes large in hand lettering: \"sCurvy: vitamin C. Rickets: think vitamin D\", with the C and D bright; on \"sunlight\" m8-sun-v1.png appears small (grey tag \"one source: skin makes vitamin D in sunlight\"), and on \"foods and supplements\" a second grey tag writes \"also from food or supplements\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the red cells slide away. Left half: new m8-collagen-strong-v1.png (connective tissue with thick, tightly wound collagen fibres around an intact capillary). The chain refills: \"vitamin C\" (beam \"too little\"), \"enzymes build strong collagen\". On \"rope-like protein\" a callout to a fibre, label \"collagen: rope-like protein\"; three grey tags write and dim in turn: \"gums\", \"skin\", \"vessel walls\". On \"new collagen is weak\" the plate cross-fades to its matched m8-collagen-weak-v1.png (the same field, fibres thin and frayed, the capillary wall gapped with a few red cells escaping); on \"small vessels leak\" a callout to the escaping red cells. The change slot fills \"weak collagen\", effect \"bleeding gums, slow healing: scurvy\". Right half: on \"Vitamin D\" new m8-leg-bones-normal-v1.png (a child's straight femur and tibia) enters; the chain refills for vitamin D: \"vitamin D\", \"gut absorbs calcium\". On \"don't harden properly\" small coded calcium dots stop entering the bone outline; on \"bend under the body's weight\" the plate cross-fades to its matched m8-leg-bones-rickets-v1.png (the same bones, bowed). Effect \"soft bones bend: rickets\". On \"Scurvy has a C in it\" the memory line writes large in hand lettering: \"sCurvy: vitamin C. Rickets: think vitamin D\", with the C and D bright; on \"sunlight\" m8-sun-v1.png appears small (grey tag \"one source: skin makes vitamin D in sunlight\"), and on \"foods and supplements\" a second grey tag writes \"also from food or supplements\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-collagen-strong-v1.png",
+        "m8-collagen-weak-v1.png",
+        "m8-leg-bones-normal-v1.png",
+        "m8-leg-bones-rickets-v1.png",
+        "m8-sun-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "vitamin C and vitamin D: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "iodine",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the chain. New m8-thyroid-normal-v1.png (the butterfly-shaped thyroid gland in front of a short section of trachea, organ only) enters at the centre. The chain refills: \"iodine\" (beam \"too little\"), \"builds thyroid hormones\". On \"set how fast your cells use energy\" a grey tag \"thyroid hormones (T3, T4): set metabolic rate\". On \"hormone levels fall\" a small coded \"thyroid hormone\" bar beside the gland drops. On \"Negative feedback responds\" b01's LoopRing thumbnail appears at the upper left (grey tag \"b01\"), and b3a2-pituitary-part-v1.png enters small above the thyroid; on \"releases more TSH\" teal SignalPulse dots run from the pituitary to the thyroid, more and faster (label \"TSH: thyroid-stimulating hormone\"). On \"the gland grows\" the plate cross-fades to its matched m8-thyroid-goitre-v1.png (the same gland, much enlarged). On \"still missing\" the hormone bar stays low and a grey tag writes \"no iodine, no hormone\". The change slot fills \"less hormone, more TSH\", effect \"goitre\". On \"iodised salt since 2009\" m6-bread-loaf-crumb-v1.png enters small at the right, tag \"bread with iodised salt (since 2009)\". At most three bright items. Hold one second.",
+      "teachingReason": "Iodine adds a twist you'll recognise from homeostasis.",
+      "narrationCue": "set how fast your cells use energy / hormone levels fall / Negative feedback responds / releases more TSH / the gland grows / still missing / iodised salt since 2009",
+      "motionPurpose": "the board clears above the chain. New m8-thyroid-normal-v1.png (the butterfly-shaped thyroid gland in front of a short section of trachea, organ only) enters at the centre. The chain refills: \"iodine\" (beam \"too little\"), \"builds thyroid hormones\". On \"set how fast your cells use energy\" a grey tag \"thyroid hormones (T3, T4): set metabolic rate\". On \"hormone levels fall\" a small coded \"thyroid hormone\" bar beside the gland drops. On \"Negative feedback responds\" b01's LoopRing thumbnail appears at the upper left (grey tag \"b01\"), and b3a2-pituitary-part-v1.png enters small above the thyroid; on \"releases more TSH\" teal SignalPulse dots run from the pituitary to the thyroid, more and faster (label \"TSH: thyroid-stimulating hormone\"). On \"the gland grows\" the plate cross-fades to its matched m8-thyroid-goitre-v1.png (the same gland, much enlarged). On \"still missing\" the hormone bar stays low and a grey tag writes \"no iodine, no hormone\". The change slot fills \"less hormone, more TSH\", effect \"goitre\". On \"iodised salt since 2009\" m6-bread-loaf-crumb-v1.png enters small at the right, tag \"bread with iodised salt (since 2009)\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the chain. New m8-thyroid-normal-v1.png (the butterfly-shaped thyroid gland in front of a short section of trachea, organ only) enters at the centre. The chain refills: \"iodine\" (beam \"too little\"), \"builds thyroid hormones\". On \"set how fast your cells use energy\" a grey tag \"thyroid hormones (T3, T4): set metabolic rate\". On \"hormone levels fall\" a small coded \"thyroid hormone\" bar beside the gland drops. On \"Negative feedback responds\" b01's LoopRing thumbnail appears at the upper left (grey tag \"b01\"), and b3a2-pituitary-part-v1.png enters small above the thyroid; on \"releases more TSH\" teal SignalPulse dots run from the pituitary to the thyroid, more and faster (label \"TSH: thyroid-stimulating hormone\"). On \"the gland grows\" the plate cross-fades to its matched m8-thyroid-goitre-v1.png (the same gland, much enlarged). On \"still missing\" the hormone bar stays low and a grey tag writes \"no iodine, no hormone\". The change slot fills \"less hormone, more TSH\", effect \"goitre\". On \"iodised salt since 2009\" m6-bread-loaf-crumb-v1.png enters small at the right, tag \"bread with iodised salt (since 2009)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-thyroid-normal-v1.png",
+        "LoopRing",
+        "b3a2-pituitary-part-v1.png",
+        "SignalPulse",
+        "m8-thyroid-goitre-v1.png",
+        "m6-bread-loaf-crumb-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "iodine: a loop that can't fix a missing ingredient: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "insulin-resistance",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the chain; the beam tips to \"too much\". b03's matched pair: m8-muscle-cell-transporters-inside-v1.png at the centre (grey tag \"b03\"). On \"binds to muscle and fat cells\" a teal insulin dot docks at a receptor; on \"moves glucose transporters into the membrane\" a quick replay cross-fades to m8-muscle-cell-transporters-membrane-v1.png and b03's GlucoseDots pass in; then the plate resets to the \"inside\" state. The chain refills: \"energy in > energy used, for years\" in the nutrient slot, \"insulin moves transporters\" in the job slot. On \"build up body fat\" m8-liver-v1.png enters small at the left with a pale yellow coded fat tint spreading through it (grey tag \"fat around organs\"). On \"respond less to insulin\" the YearsStrip draws at the upper right. On \"Insulin still binds\" insulin dots dock at the receptor again, but on \"fewer transporters move\" the plate cross-fades only partly towards the \"membrane\" state (a 30 per cent mix, so a few transporters reach the membrane; build note: set the cross-fade opacity, do not invent a third plate), and most GlucoseDots bounce off and drift back into the capillary (tag \"muscle and fat: less glucose in\"). On \"The liver also keeps releasing\" the small m8-liver-v1.png at the left sends one coded glucose-output arrow into the capillary (tag \"liver: keeps releasing glucose\"); the muscle plate stays the current case. On \"Both\" the two arrows (bounce-off and liver output) point to one glucose bar that rises. The change slot fills \"cells respond less to insulin\"; on \"insulin resistance\" the gloss writes \"insulin resistance: cells respond less to insulin\". At most three bright items. Hold one second.",
+      "teachingReason": "Now excess, and type 2 diabetes.",
+      "narrationCue": "binds to muscle and fat cells / moves glucose transporters into the membrane / build up body fat / respond less to insulin / Insulin still binds / fewer transporters move / The liver also keeps releasing / Both / insulin resistance",
+      "motionPurpose": "the board clears above the chain; the beam tips to \"too much\". b03's matched pair: m8-muscle-cell-transporters-inside-v1.png at the centre (grey tag \"b03\"). On \"binds to muscle and fat cells\" a teal insulin dot docks at a receptor; on \"moves glucose transporters into the membrane\" a quick replay cross-fades to m8-muscle-cell-transporters-membrane-v1.png and b03's GlucoseDots pass in; then the plate resets to the \"inside\" state. The chain refills: \"energy in > energy used, for years\" in the nutrient slot, \"insulin moves transporters\" in the job slot. On \"build up body fat\" m8-liver-v1.png enters small at the left with a pale yellow coded fat tint spreading through it (grey tag \"fat around organs\"). On \"respond less to insulin\" the YearsStrip draws at the upper right. On \"Insulin still binds\" insulin dots dock at the receptor again, but on \"fewer transporters move\" the plate cross-fades only partly towards the \"membrane\" state (a 30 per cent mix, so a few transporters reach the membrane; build note: set the cross-fade opacity, do not invent a third plate), and most GlucoseDots bounce off and drift back into the capillary (tag \"muscle and fat: less glucose in\"). On \"The liver also keeps releasing\" the small m8-liver-v1.png at the left sends one coded glucose-output arrow into the capillary (tag \"liver: keeps releasing glucose\"); the muscle plate stays the current case. On \"Both\" the two arrows (bounce-off and liver output) point to one glucose bar that rises. The change slot fills \"cells respond less to insulin\"; on \"insulin resistance\" the gloss writes \"insulin resistance: cells respond less to insulin\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the chain; the beam tips to \"too much\". b03's matched pair: m8-muscle-cell-transporters-inside-v1.png at the centre (grey tag \"b03\"). On \"binds to muscle and fat cells\" a teal insulin dot docks at a receptor; on \"moves glucose transporters into the membrane\" a quick replay cross-fades to m8-muscle-cell-transporters-membrane-v1.png and b03's GlucoseDots pass in; then the plate resets to the \"inside\" state. The chain refills: \"energy in > energy used, for years\" in the nutrient slot, \"insulin moves transporters\" in the job slot. On \"build up body fat\" m8-liver-v1.png enters small at the left with a pale yellow coded fat tint spreading through it (grey tag \"fat around organs\"). On \"respond less to insulin\" the YearsStrip draws at the upper right. On \"Insulin still binds\" insulin dots dock at the receptor again, but on \"fewer transporters move\" the plate cross-fades only partly towards the \"membrane\" state (a 30 per cent mix, so a few transporters reach the membrane; build note: set the cross-fade opacity, do not invent a third plate), and most GlucoseDots bounce off and drift back into the capillary (tag \"muscle and fat: less glucose in\"). On \"The liver also keeps releasing\" the small m8-liver-v1.png at the left sends one coded glucose-output arrow into the capillary (tag \"liver: keeps releasing glucose\"); the muscle plate stays the current case. On \"Both\" the two arrows (bounce-off and liver output) point to one glucose bar that rises. The change slot fills \"cells respond less to insulin\"; on \"insulin resistance\" the gloss writes \"insulin resistance: cells respond less to insulin\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-muscle-cell-transporters-inside-v1.png",
+        "m8-muscle-cell-transporters-membrane-v1.png",
+        "GlucoseDots",
+        "m8-liver-v1.png",
+        "YearsStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "excess: insulin resistance: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "beta-cells",
+      "visualDecision": "new",
+      "visualReference": "m8-pancreatic-islet-v1.png enters small at the left (grey tag \"b03: beta cells\"). On \"releasing more insulin\" more teal SignalPulse dots leave the islet; in the YearsStrip the \"insulin\" bar climbs over years 0 to 8 while the \"blood glucose\" bar stays in a pale \"usual range\" band (label \"glucose held near normal\"). On \"don't know anything's wrong\" a grey chip \"no symptoms yet\". On \"may not keep up\" the insulin bar falls back over years 8 to 15 and the glucose bar rises out of the band (label \"glucose stays high\"); a small grey tag \"type 1: immune cells destroy beta cells; not nutritional\" sits under the islet (screen only). The chain's effect slot fills \"type 2 diabetes\". On \"damage blood vessels\" three small plates appear in a row, each with a short coded vessel overlay that roughens: m8-eye-cutaway-v1.png (\"eyes\"), m8-kidney-nephron-v1.png (\"kidneys\"), m8-heart-v1.png (\"heart arteries\"); a grey tag \"nerves\" writes under them (no plate). On \"AusDiab\" a coded chip writes \"AusDiab (1999 to 2000): about 1 in 2 adults with diabetes undiagnosed\". At most three bright items. Hold one second.",
+      "teachingReason": "At first, the beta cells in the pancreas cover for it by releasing more insulin, so blood glucose can stay close to normal for years.",
+      "narrationCue": "releasing more insulin / don't know anything's wrong / may not keep up / damage blood vessels / AusDiab",
+      "motionPurpose": "m8-pancreatic-islet-v1.png enters small at the left (grey tag \"b03: beta cells\"). On \"releasing more insulin\" more teal SignalPulse dots leave the islet; in the YearsStrip the \"insulin\" bar climbs over years 0 to 8 while the \"blood glucose\" bar stays in a pale \"usual range\" band (label \"glucose held near normal\"). On \"don't know anything's wrong\" a grey chip \"no symptoms yet\". On \"may not keep up\" the insulin bar falls back over years 8 to 15 and the glucose bar rises out of the band (label \"glucose stays high\"); a small grey tag \"type 1: immune cells destroy beta cells; not nutritional\" sits under the islet (screen only). The chain's effect slot fills \"type 2 diabetes\". On \"damage blood vessels\" three small plates appear in a row, each with a short coded vessel overlay that roughens: m8-eye-cutaway-v1.png (\"eyes\"), m8-kidney-nephron-v1.png (\"kidneys\"), m8-heart-v1.png (\"heart arteries\"); a grey tag \"nerves\" writes under them (no plate). On \"AusDiab\" a coded chip writes \"AusDiab (1999 to 2000): about 1 in 2 adults with diabetes undiagnosed\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "m8-pancreatic-islet-v1.png enters small at the left (grey tag \"b03: beta cells\"). On \"releasing more insulin\" more teal SignalPulse dots leave the islet; in the YearsStrip the \"insulin\" bar climbs over years 0 to 8 while the \"blood glucose\" bar stays in a pale \"usual range\" band (label \"glucose held near normal\"). On \"don't know anything's wrong\" a grey chip \"no symptoms yet\". On \"may not keep up\" the insulin bar falls back over years 8 to 15 and the glucose bar rises out of the band (label \"glucose stays high\"); a small grey tag \"type 1: immune cells destroy beta cells; not nutritional\" sits under the islet (screen only). The chain's effect slot fills \"type 2 diabetes\". On \"damage blood vessels\" three small plates appear in a row, each with a short coded vessel overlay that roughens: m8-eye-cutaway-v1.png (\"eyes\"), m8-kidney-nephron-v1.png (\"kidneys\"), m8-heart-v1.png (\"heart arteries\"); a grey tag \"nerves\" writes under them (no plate). On \"AusDiab\" a coded chip writes \"AusDiab (1999 to 2000): about 1 in 2 adults with diabetes undiagnosed\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-pancreatic-islet-v1.png",
+        "SignalPulse",
+        "YearsStrip",
+        "m8-eye-cutaway-v1.png",
+        "m8-kidney-nephron-v1.png",
+        "m8-heart-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "beta cells cover, then fall behind: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "risk-factor",
+      "visualDecision": "new",
+      "visualReference": "the chain fades. Two columns: left \"scurvy\" with a small m8-collagen-weak-v1.png and one bold arrow from \"no vitamin C\" to \"scurvy\" (label \"one missing nutrient\"), with a grey tag \"restored vitamin C fixes it\"; right \"type 2 diabetes\" with b07's RiskDial. On \"risk factor\" a gloss writes \"risk factor: raises the chance, doesn't guarantee it\". On each factor a small chip writes around the dial and nudges the needle: \"excess energy intake\", \"family history\", \"age\", \"activity\", \"sleep\", \"some medicines\", \"food cost and access\" (chips dim as new ones land, so at most three are bright). On \"Heart disease is similar\" the shared m8-artery-healthy-v1.png cross-fades to m8-artery-plaque-v1.png at the lower right (grey tag \"b07: plaque\"; gloss \"LDL: a cholesterol carrier in blood\"), with its own three small chips: \"saturated fat → LDL\", \"smoking\", \"blood pressure\". A grey chip \"they ate badly, so it's their fault\" writes and takes a scribble cross. Hold one second.",
+      "teachingReason": "So does eating too much cause type 2 diabetes? Not on its own.",
+      "narrationCue": "risk factor / Heart disease is similar",
+      "motionPurpose": "the chain fades. Two columns: left \"scurvy\" with a small m8-collagen-weak-v1.png and one bold arrow from \"no vitamin C\" to \"scurvy\" (label \"one missing nutrient\"), with a grey tag \"restored vitamin C fixes it\"; right \"type 2 diabetes\" with b07's RiskDial. On \"risk factor\" a gloss writes \"risk factor: raises the chance, doesn't guarantee it\". On each factor a small chip writes around the dial and nudges the needle: \"excess energy intake\", \"family history\", \"age\", \"activity\", \"sleep\", \"some medicines\", \"food cost and access\" (chips dim as new ones land, so at most three are bright). On \"Heart disease is similar\" the shared m8-artery-healthy-v1.png cross-fades to m8-artery-plaque-v1.png at the lower right (grey tag \"b07: plaque\"; gloss \"LDL: a cholesterol carrier in blood\"), with its own three small chips: \"saturated fat → LDL\", \"smoking\", \"blood pressure\". A grey chip \"they ate badly, so it's their fault\" writes and takes a scribble cross. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the chain fades. Two columns: left \"scurvy\" with a small m8-collagen-weak-v1.png and one bold arrow from \"no vitamin C\" to \"scurvy\" (label \"one missing nutrient\"), with a grey tag \"restored vitamin C fixes it\"; right \"type 2 diabetes\" with b07's RiskDial. On \"risk factor\" a gloss writes \"risk factor: raises the chance, doesn't guarantee it\". On each factor a small chip writes around the dial and nudges the needle: \"excess energy intake\", \"family history\", \"age\", \"activity\", \"sleep\", \"some medicines\", \"food cost and access\" (chips dim as new ones land, so at most three are bright). On \"Heart disease is similar\" the shared m8-artery-healthy-v1.png cross-fades to m8-artery-plaque-v1.png at the lower right (grey tag \"b07: plaque\"; gloss \"LDL: a cholesterol carrier in blood\"), with its own three small chips: \"saturated fat → LDL\", \"smoking\", \"blood pressure\". A grey chip \"they ate badly, so it's their fault\" writes and takes a scribble cross. Hold one second.",
+      "motionTools": [
+        "m8-collagen-weak-v1.png",
+        "RiskDial",
+        "m8-artery-healthy-v1.png",
+        "m8-artery-plaque-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a risk factor, not a certain outcome: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 14-year-old spends almost all daylight hours indoors. Blood tests show a low vitamin D level, and their gut is absorbing little calcium from food.\" Demand: \"Using nutrient → change → effect, explain how this deficiency could affect the teenager's bones. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 14-year-old spends almost all daylight hours indoors. Blood tests show a low vitamin D level, and their gut is absorbing little calcium from food.\" Demand: \"Using nutrient → change → effect, explain how this deficiency could affect the teenager's bones. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 14-year-old spends almost all daylight hours indoors. Blood tests show a low vitamin D level, and their gut is absorbing little calcium from food.\" Demand: \"Using nutrient → change → effect, explain how this deficiency could affect the teenager's bones. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (a teenager indoors): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"The nutrient is vitamin D\" \"low vitamin D level\" underlines; answer line 1 writes \"nutrient: vitamin D; job: gut absorbs calcium\". On \"With little sunlight\" \"almost all daylight hours indoors\" underlines and line 2 writes \"little sunlight → skin makes little vitamin D → less calcium absorbed\" (\"absorbing little calcium\" underlines). On \"doesn't harden properly\" a small m8-leg-bones-normal-v1.png appears beside the card and cross-fades to m8-leg-bones-rickets-v1.png on \"bend\"; line 3 writes \"effect: soft, poorly mineralised bone bends: rickets\". On \"classic mistake\" a chip \"drink more milk\" writes and takes a scribble cross, small text \"no vitamin D, poor calcium absorption\". Settle one second.",
+      "teachingReason": "The nutrient is vitamin D, and its job is helping the gut absorb calcium.",
+      "narrationCue": "The nutrient is vitamin D / With little sunlight / doesn't harden properly / bend / classic mistake",
+      "motionPurpose": "the card stays. On \"The nutrient is vitamin D\" \"low vitamin D level\" underlines; answer line 1 writes \"nutrient: vitamin D; job: gut absorbs calcium\". On \"With little sunlight\" \"almost all daylight hours indoors\" underlines and line 2 writes \"little sunlight → skin makes little vitamin D → less calcium absorbed\" (\"absorbing little calcium\" underlines). On \"doesn't harden properly\" a small m8-leg-bones-normal-v1.png appears beside the card and cross-fades to m8-leg-bones-rickets-v1.png on \"bend\"; line 3 writes \"effect: soft, poorly mineralised bone bends: rickets\". On \"classic mistake\" a chip \"drink more milk\" writes and takes a scribble cross, small text \"no vitamin D, poor calcium absorption\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"The nutrient is vitamin D\" \"low vitamin D level\" underlines; answer line 1 writes \"nutrient: vitamin D; job: gut absorbs calcium\". On \"With little sunlight\" \"almost all daylight hours indoors\" underlines and line 2 writes \"little sunlight → skin makes little vitamin D → less calcium absorbed\" (\"absorbing little calcium\" underlines). On \"doesn't harden properly\" a small m8-leg-bones-normal-v1.png appears beside the card and cross-fades to m8-leg-bones-rickets-v1.png on \"bend\"; line 3 writes \"effect: soft, poorly mineralised bone bends: rickets\". On \"classic mistake\" a chip \"drink more milk\" writes and takes a scribble cross, small text \"no vitamin D, poor calcium absorption\". Settle one second.",
+      "motionTools": [
+        "m8-leg-bones-normal-v1.png",
+        "m8-leg-bones-rickets-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A study followed adults for several years and recorded new cases of type 2 diabetes.\" The coded house bar chart: y axis \"new cases of type 2 diabetes (per 1,000 adults per year)\" 0 to 35; four bars: \"healthy weight, no family history\" 3; \"healthy weight, family history\" 7; \"obesity, no family history\" 15; \"obesity, family history\" 30. A small grey tag \"teaching data\". Demand: \"(a) Identify TWO risk factors for type 2 diabetes shown by the data. (2 marks) (b) Explain why the claim 'Eating too much causes type 2 diabetes' overstates what the data show. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, chart included, stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A study followed adults for several years and recorded new cases of type 2 diabetes.\" The coded house bar chart: y axis \"new cases of type 2 diabetes (per 1,000 adults per year)\" 0 to 35; four bars: \"healthy weight, no family history\" 3; \"healthy weight, family history\" 7; \"obesity, no family history\" 15; \"obesity, family history\" 30. A small grey tag \"teaching data\". Demand: \"(a) Identify TWO risk factors for type 2 diabetes shown by the data. (2 marks) (b) Explain why the claim 'Eating too much causes type 2 diabetes' overstates what the data show. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, chart included, stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A study followed adults for several years and recorded new cases of type 2 diabetes.\" The coded house bar chart: y axis \"new cases of type 2 diabetes (per 1,000 adults per year)\" 0 to 35; four bars: \"healthy weight, no family history\" 3; \"healthy weight, family history\" 7; \"obesity, no family history\" 15; \"obesity, family history\" 30. A small grey tag \"teaching data\". Demand: \"(a) Identify TWO risk factors for type 2 diabetes shown by the data. (2 marks) (b) Explain why the claim 'Eating too much causes type 2 diabetes' overstates what the data show. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, chart included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (reading the rates): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"Obesity\" the two \"obesity\" bars brighten and \"obesity\" underlines in both labels; on \"family history\" the two \"family history\" bars take an amber outline; answer (a) writes \"obesity (excess body fat); family history\". On \"and together, the highest\" the 30 bar pulses. On \"about thirty in a thousand\" a coded 1,000-dot grid appears small beside the bar with 30 dots amber (label \"30 of 1,000 per year\"); on \"some healthy-weight adults did\" the 3 bar pulses. Answer (b) writes \"most people with the risk factors did not develop it; some without them did\" and, on \"didn't measure food intake\", \"food intake not measured: the data can't show eating too much caused these cases\". On \"classic mistake\" a chip \"higher rate = it will happen to you\" writes and takes a scribble cross, small text \"a rate is a chance\". Settle one second.",
+      "teachingReason": "Obesity and a family history both go with higher rates, and together, the highest.",
+      "narrationCue": "Obesity / family history / and together, the highest / about thirty in a thousand / some healthy-weight adults did / didn't measure food intake / classic mistake",
+      "motionPurpose": "the card stays. On \"Obesity\" the two \"obesity\" bars brighten and \"obesity\" underlines in both labels; on \"family history\" the two \"family history\" bars take an amber outline; answer (a) writes \"obesity (excess body fat); family history\". On \"and together, the highest\" the 30 bar pulses. On \"about thirty in a thousand\" a coded 1,000-dot grid appears small beside the bar with 30 dots amber (label \"30 of 1,000 per year\"); on \"some healthy-weight adults did\" the 3 bar pulses. Answer (b) writes \"most people with the risk factors did not develop it; some without them did\" and, on \"didn't measure food intake\", \"food intake not measured: the data can't show eating too much caused these cases\". On \"classic mistake\" a chip \"higher rate = it will happen to you\" writes and takes a scribble cross, small text \"a rate is a chance\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Obesity\" the two \"obesity\" bars brighten and \"obesity\" underlines in both labels; on \"family history\" the two \"family history\" bars take an amber outline; answer (a) writes \"obesity (excess body fat); family history\". On \"and together, the highest\" the 30 bar pulses. On \"about thirty in a thousand\" a coded 1,000-dot grid appears small beside the bar with 30 dots amber (label \"30 of 1,000 per year\"); on \"some healthy-weight adults did\" the 3 bar pulses. Answer (b) writes \"most people with the risk factors did not develop it; some without them did\" and, on \"didn't measure food intake\", \"food intake not measured: the data can't show eating too much caused these cases\". On \"classic mistake\" a chip \"higher rate = it will happen to you\" writes and takes a scribble cross, small text \"a rate is a chance\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the four-slot chain returns full width with step chips above it, one per cue: \"nutrient and job\", \"too little or too much?\", \"effect\", \"one cause, or one risk factor among many?\". Thumbnails sit in the slots (iron-deficient red cells, goitre, the years strip). A \"Next\" chip slides in at the lower right: \"Next: How does cancer begin and spread?\" with a small b5x-cell-dividing-v1.png thumbnail. A grey chip at the lower left: \"Later: managing type 2 diabetes (b12)\". Hold half a second before the notes.",
+      "teachingReason": "So for any nutrition question, name the nutrient and its normal job, say what changes with too little or too much, link it to the effect, then ask: is this one missing nutrient, or one risk factor among many? Next, what happens when cell division escapes control: how cancer begins and spreads.",
+      "narrationCue": "So for any nutrition question, name the nutrient and its normal job, say what changes with too little or too much, link it to the effect, then ask: is this one missing nutrient, or one risk factor among many? Next, what happens when cell division escapes control: how cancer begins and spreads",
+      "motionPurpose": "the four-slot chain returns full width with step chips above it, one per cue: \"nutrient and job\", \"too little or too much?\", \"effect\", \"one cause, or one risk factor among many?\". Thumbnails sit in the slots (iron-deficient red cells, goitre, the years strip). A \"Next\" chip slides in at the lower right: \"Next: How does cancer begin and spread?\" with a small b5x-cell-dividing-v1.png thumbnail. A grey chip at the lower left: \"Later: managing type 2 diabetes (b12)\". Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the four-slot chain returns full width with step chips above it, one per cue: \"nutrient and job\", \"too little or too much?\", \"effect\", \"one cause, or one risk factor among many?\". Thumbnails sit in the slots (iron-deficient red cells, goitre, the years strip). A \"Next\" chip slides in at the lower right: \"Next: How does cancer begin and spread?\" with a small b5x-cell-dividing-v1.png thumbnail. A grey chip at the lower left: \"Later: managing type 2 diabetes (b12)\". Hold half a second before the notes.",
+      "motionTools": [
+        "b5x-cell-dividing-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b08-learning-review.md",
+      "sha256": "9214f5776d8050675c22ff73704cf69c5d66ed69686729de12ccc9a9d393d11b"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b08-claude-science-check.md",
+      "sha256": "afd61715d9679462b0be6ccee6994895714b759aac7c2b502d50311c38d5471e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

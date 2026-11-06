@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B06-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b06/lesson.json",
+  "lessonSha256": "820453ff3a69b7ed00f1504413ae0cb5f4dc63825c619b9ecc1b2e27aaa95326",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b06/lesson.production-brief.json",
+    "sha256": "10e7f467b3267533846b6f42ccf331d3bdd98f4526e2beaaf1fd2517d06a7b26"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Around 1900, many Australians died of diseases they caught from someone else, like pneumonia and tuberculosis. Today, most Australians die of diseases nobody can catch: heart disease, dementia, stroke and lung cancer. That's partly because vaccines, antibiotics and clean water now prevent many deaths from infection, so more people live long enough for these slower diseases to develop. So if a disease isn't caught, what causes it?",
+      "hash": "caf69db41e33",
+      "textSha256": "caf69db41e330f890c1bc5321faab5f1b27729fc19559cdb22c7e5bfd4857828",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/hook.caf69db41e33.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/hook.caf69db41e33.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/hook.caf69db41e33.generation.json",
+      "plannedRequestSha256": "647a5b25649e98dc09e0cc0952f2cb9016e7ffa8c494201bef81f43da6e08dc0"
+    },
+    {
+      "id": "dividing-line",
+      "parentSceneId": "dividing-line",
+      "text": "Start with the dividing line. An infectious disease is caused by a pathogen, like a bacterium or virus, invading and multiplying in the body. Many, but not all, can pass between hosts. A non-infectious disease isn't caused by a pathogen, so you can't catch it. The test is the cause. It isn't about how serious the disease is, or whether genes are involved. Cystic fibrosis is genetic, and it's still non-infectious, because no pathogen causes it.",
+      "hash": "fbcae07f975b",
+      "textSha256": "fbcae07f975b16cbb6f6c7327da69d37fa55b58be929b18a16bb0e4d45e6168e",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/dividing-line.fbcae07f975b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/dividing-line.fbcae07f975b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/dividing-line.fbcae07f975b.generation.json",
+      "plannedRequestSha256": "731c9fa5ba11a00c14e030fcb7d5d0961c6ee6878a4e6d08561fc111bc9c0c50"
+    },
+    {
+      "id": "four-groups",
+      "parentSceneId": "four-groups",
+      "text": "So what does cause them? The causes fall into four groups. A genetic disease starts with a change in DNA that alters a protein. An environmental disease starts with something from outside the body that damages cells. A nutritional disease comes from too little, or too much, of a nutrient. And cancer is cells dividing out of control. For each one, trace the same chain: the cause, what changes in the cells, and the effect on the body.",
+      "hash": "98b020680ebe",
+      "textSha256": "98b020680ebe220ea5be11cd8ce1d1c48de0e2b7063815e1b5bffb8dc28ab2e8",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/four-groups.98b020680ebe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/four-groups.98b020680ebe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/four-groups.98b020680ebe.generation.json",
+      "plannedRequestSha256": "7fa6a0029acd654d0c423797a2f234ed3135d8466d01ba553dec6f0a6b2a14a9"
+    },
+    {
+      "id": "cf-normal-job",
+      "parentSceneId": "cf-normal-job",
+      "text": "Start with a genetic disease, cystic fibrosis. Cells lining your airways make a protein called CFTR, from the CFTR gene. It's a channel in the cell membrane that lets chloride ions out onto the airway surface. Water follows the chloride by osmosis, so the mucus there stays thin and runny, and tiny hairs called cilia sweep it, with any trapped bacteria, up and out.",
+      "hash": "3b521ae53dab",
+      "textSha256": "3b521ae53dab0c075ed5860787b3475869b4178a610f570d90fd4b63676bc324",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-normal-job.3b521ae53dab.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-normal-job.3b521ae53dab.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-normal-job.3b521ae53dab.generation.json",
+      "plannedRequestSha256": "6f32aa4a099ab3b6303a6f8f029c53279edecfac902bfafafb5acedbff73d122"
+    },
+    {
+      "id": "cf-what-goes-wrong",
+      "parentSceneId": "cf-what-goes-wrong",
+      "text": "In cystic fibrosis, both copies of the CFTR gene are altered. The most common change removes one amino acid, so the protein folds the wrong way, and the cell breaks it down before it reaches the membrane. With too few channels, less chloride leaves the cells, so less water follows. The mucus dries out and turns thick and sticky. The cilia can't clear it, bacteria stay trapped, and the lungs get repeated infections.",
+      "hash": "d9c535747c02",
+      "textSha256": "d9c535747c02e7305178b3741923f43f77efcc3ea1fbbb971afb33543475a22e",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-what-goes-wrong.d9c535747c02.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-what-goes-wrong.d9c535747c02.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/cf-what-goes-wrong.d9c535747c02.generation.json",
+      "plannedRequestSha256": "a339e35453d21e9f8cfeca4bf422a83c8f53d84f4f0aa4fb56ab138f6f514420"
+    },
+    {
+      "id": "effect-not-cause",
+      "parentSceneId": "effect-not-cause",
+      "text": "Notice the order. Thick mucus is the effect near the end of the chain, not the cause. The cause is the altered gene, then the faulty protein. And because cystic fibrosis needs two altered copies, two healthy carriers can have a child with it. It runs in families, but it's inherited, not caught.",
+      "hash": "1ea664faad8f",
+      "textSha256": "1ea664faad8f9f6b1b235c5e624d17584b76dba4255021ee7ab042d86a2759f1",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/effect-not-cause.1ea664faad8f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/effect-not-cause.1ea664faad8f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/effect-not-cause.1ea664faad8f.generation.json",
+      "plannedRequestSha256": "8d056af6383076008bf9736f219cbb9d717df774aa8948df9416ec82ab5ca0a5"
+    },
+    {
+      "id": "silicosis",
+      "parentSceneId": "silicosis",
+      "text": "An environmental disease starts outside the body. Cutting engineered stone, once used for new kitchen benchtops, releases fine silica dust, which can be breathed deep into the lungs. Immune cells there take up the particles but can't break them down, and the damage leads to scar tissue. Scarred lungs are stiff, so breathing gets harder. That's silicosis. The dust caused it, and nobody caught it from anyone.",
+      "hash": "d3d4e28c0028",
+      "textSha256": "d3d4e28c00288d64e57333fe28f88a7ead4bb9501f46a5d8444f7fb141671064",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/silicosis.d3d4e28c0028.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/silicosis.d3d4e28c0028.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/silicosis.d3d4e28c0028.generation.json",
+      "plannedRequestSha256": "05b8e13ac087160df76aa5b139483c094807d7ead7f9e4c4b0e3441eae925596"
+    },
+    {
+      "id": "iron-anaemia",
+      "parentSceneId": "iron-anaemia",
+      "text": "Too little available iron, from a poor diet or poor absorption, can cause a nutritional deficiency disease. Iron is part of haemoglobin, the protein in red blood cells that carries oxygen. With too little iron, the body makes less haemoglobin, so red blood cells come out smaller and paler, and the blood carries less oxygen. That's iron-deficiency anaemia, which can leave someone tired and short of breath. Too much of a nutrient can cause disease as well, and that's coming up soon.",
+      "hash": "f35cfca3bec3",
+      "textSha256": "f35cfca3bec3e8ae4d3130bd3e307e414f4bdd4656281e6adce601f921746793",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/iron-anaemia.f35cfca3bec3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/iron-anaemia.f35cfca3bec3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/iron-anaemia.f35cfca3bec3.generation.json",
+      "plannedRequestSha256": "fb44bd2113445a54131ef655c50b425d71e814358e01b2955f3aa205da644978"
+    },
+    {
+      "id": "melanoma",
+      "parentSceneId": "melanoma",
+      "text": "Cancer gets its own group, because it's defined by what the cells do, not by what started it. Genes normally control when a cell divides. When enough of those control genes are damaged, a cell keeps dividing, forms a lump called a tumour, and can invade nearby tissue. The damage can start in different ways. Melanoma, a skin cancer, is mainly triggered by ultraviolet light, so it's a cancer with an environmental trigger. Name the group first, then the trigger.",
+      "hash": "98a4e200a583",
+      "textSha256": "98a4e200a5832a8fec6e3fa43024fac0008e39e3d905e5bff193beff792f0d06",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/melanoma.98a4e200a583.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/melanoma.98a4e200a583.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/melanoma.98a4e200a583.generation.json",
+      "plannedRequestSha256": "17fefab6f16b7bdd6eced45b715aca4e82cd08609050bcfd52124ef3bb0640f8"
+    },
+    {
+      "id": "multifactorial",
+      "parentSceneId": "multifactorial",
+      "text": "Real diseases often have several causes acting together. Type 2 diabetes involves inherited genes, diet, activity and age, all pushing the same way. That's called multifactorial. So when you classify a disease, name its main contributing factor, then explain how that factor changes cells.",
+      "hash": "095229e68f5f",
+      "textSha256": "095229e68f5ff5d76c6ba754a243fe1a07cd69611275ba436ba911a7b41db0b0",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/multifactorial.095229e68f5f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/multifactorial.095229e68f5f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/multifactorial.095229e68f5f.generation.json",
+      "plannedRequestSha256": "2ff42ef39d8f520f303f1f23bf318792d5901e5b246dd0653cc3b9bd0292c661"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. Three conditions are described on screen: goitre, Huntington's disease and cervical cancer. Classify each one into a group. Then explain why a student who says cervical cancer is infectious is wrong. Pause here to answer.",
+      "hash": "373da33ad8a5",
+      "textSha256": "373da33ad8a5a0920caf8b517f0fbd9856404e8916c734d4a6a10fb79126973c",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt.373da33ad8a5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt.373da33ad8a5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt.373da33ad8a5.generation.json",
+      "plannedRequestSha256": "8a44483790a994512d853063525fecaf60e8b8d3d9dcc151a91e3f81427c6048"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Goitre is nutritional: too little iodine, so the thyroid can't make enough hormone and enlarges. Huntington's is genetic: an altered gene leads to a harmful protein. Cervical cancer is a cancer, with an infectious trigger. The virus can pass between people, but the cancer itself can't. The classic mistake: a virus is involved, so it's infectious. Classify the disease, then name its trigger.",
+      "hash": "9466976ce367",
+      "textSha256": "9466976ce3674e2e3abd33c1580fb3f31b270590698710ece3aaf0ca221bd09d",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-one.9466976ce367.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-one.9466976ce367.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-one.9466976ce367.generation.json",
+      "plannedRequestSha256": "0931371c61bf2c290c831f4b6da1a7beef50c066d646ae7435e59bf73ba22127"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Familial hypercholesterolaemia is caused by an altered LDLR gene. Normally, this gene codes for a receptor on liver cells that removes LDL cholesterol from the blood. Explain how the altered gene can lead to heart disease. Pause here to answer.",
+      "hash": "09a5b0cbd546",
+      "textSha256": "09a5b0cbd5468c0cf3cb37079a06baea8beec7bc66e12ef40e844b37227290de",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt-two.09a5b0cbd546.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt-two.09a5b0cbd546.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/attempt-two.09a5b0cbd546.generation.json",
+      "plannedRequestSha256": "c90e44b20e8a521447ec5b9d9edda7290ff4669ce643e91cb530ba3547e77bea"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The altered gene means fewer working LDL receptors on liver cells. So the liver removes less LDL, and LDL cholesterol builds up in the blood. Over years it's deposited in artery walls, narrowing the arteries that supply the heart. That's gene, protein, cells, body. The classic mistake is calling it nutritional because fatty food raises cholesterol. Diet can add to it, but the cause is the gene.",
+      "hash": "e79df4c24b34",
+      "textSha256": "e79df4c24b3439ef99dc698cb2d400ce118f859511db03afc2e4b79f724b621c",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-two.e79df4c24b34.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-two.e79df4c24b34.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/feedback-two.e79df4c24b34.generation.json",
+      "plannedRequestSha256": "038a6cca19d623ba1dd9579ff65cde212c0577979f52e706790b93625f8c71d8"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any disease, first ask: is it caused by a pathogen? If not, ask what kind of disease it is: genetic, environmental, nutritional, or cancer. Then ask what factor contributed, and trace the chain to the body. Next: how environmental exposures cause disease.",
+      "hash": "a9795b402b58",
+      "textSha256": "a9795b402b58ebe4c906c8e09f989b2f51efd4dd931b5940a9f346e57326679e",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/decision-rule.a9795b402b58.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/decision-rule.a9795b402b58.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/decision-rule.a9795b402b58.generation.json",
+      "plannedRequestSha256": "88b8cabaafe0944d9597b7ff99110596363da1debdff727ee0aae8af5b5fe920"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B06-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8g02b/lesson.json",
+    "lessonSha256": "04164fd60b07419a4993715d0b00897fcf136369fd79b6765941e6ec0c239c25"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b13: primary, secondary and tertiary prevention; process, impact and outcome measures (\"what we did, what people did, what the disease did\"); judging secondary sources; no control group for SunSmart. From b14: genetic technology finds, chooses or changes; somatic gene therapy treats one person and does not change inheritance; a viral vector carries a working gene. From b16: the retina's light-sensitive cells. From b15: a cochlear implant bypasses damaged hair cells; access to sound, not normal hearing. From b11 (Module 8): a comparison group, chance and sample size. Not assumed: bowel screening kit details, colonoscopy and polyp (glossed in 2b), RPE65 (named on the card with its effect), percentage point (glossed in 2b by use).",
+    "startsWith": "This is the last Module 8 video, and it's practice. Evaluate questions in this module ask you to judge a prevention method or a technology, using evidence. Here are three HSC-style questions: a screening campaign, a gene therapy and a hearing technology. Pause and try each one properly, then we'll work through it together.",
+    "stopsAfter": "evaluating a bowel screening campaign (kit return is an impact measure; Region A rose 9 percentage points, the comparison region 2, so about 7 can be linked to the campaign; limits: no deaths data yet over two years, regions not randomised, over half still not screening; judgement: effective at raising screening, outcome not yet shown; improvement: long follow-up and targeting the lowest-return groups); explaining and evaluating RPE65 gene therapy (a viral vector delivers working genes to retinal cells, which make the missing protein; it aims to prevent further vision loss in one person, not inheritance; 13 of 20 against 0 of 10 with a control group; limits: small, short, one gene, needs living cells, costly; judgement: improved functional vision over one year for this gene fault, with degeneration not shown to stop; not population prevention); rejecting \"implants fitted\" as a process measure, choosing speech scores as the outcome measure, and evaluating cochlear implants (15 to 70 per cent in quiet, 5 to 35 in noise, 28 of 30 daily users; limits: noise, averages hide spread, one clinic, no comparison group; access: a nine-month wait, surgery and rehabilitation; judgement: highly effective in quiet, partly in noise); and the four-move decision board.",
+    "nextLesson": "none (last video in the Year 12 Biology playlist; scene 5 closes the course)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-g02.md"
+  ],
+  "teaching": {
+    "task": "When an exam asks you to evaluate a prevention method or a technology from data, how do you get from the evidence to a judgement you can defend?",
+    "causalExplanation": "Why kit return can prevent deaths (polyps removed, cancers found early; 2b); why the comparison region matters (other changes raise returns too; 2b, 2d); why the data can't show fewer deaths (they measure returns, not deaths; longer follow-up would test outcomes; 2c); how the vector restores vision (working gene, protein made, pigment remade; 3b); why gene therapy doesn't change inheritance (body cells only; 3b, 3d); why it needs living cells (3b); why the control group matters (it strengthens the evidence that the treatment caused the change, without proving chance impossible; 3c); why implants fitted is not effectiveness (process, not outcome; 4b); why speech scores match the disorder (4b); why averages mislead (spread; 4d).",
+    "conversationalApproach": "This is the last Module 8 video, and it's practice. Question one. Start with how screening prevents harm. Now the limits. The classic mistake is saying the campaign raised returns by nine points. Question two. Explain first. Now the data. The classic mistake is writing that this gene therapy stops the disease being passed on. Question three. Thirty implants fitted is a process measure. Now the limits. The classic mistake is reading an average as if every patient improved that much. So for any evaluate question, use the same four moves.",
+    "openingDecision": "This is the last Module 8 video, and it's practice. Evaluate questions in this module ask you to judge a prevention method or a technology, using evidence. Here are three HSC-style questions: a screening campaign, a gene therapy and a hearing technology. Pause and try each one properly, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.",
+    "curriculumScope": "- B8-IQ4-01: \"use secondary sources to evaluate the effectiveness of current disease-prevention methods and develop strategies for the prevention of a non-infectious disease, including but not limited to:\" with the examples \"educational programs and campaigns\" and \"genetic engineering\". Q1 evaluates a screening campaign from secondary data and proposes an improvement; Q2 evaluates a gene therapy (genetic engineering of body cells) from trial data."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in g01's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Evaluate a campaign\", \"Evaluate a gene therapy\", \"Evaluate a technology\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Throughout, a four-slot evaluation frame strip (b11's frame strip, b07's PathwayStrip in four-slot mode) sits under the working area and fills per question: \"how it works\", \"what the evidence shows\", \"a real limit\", \"judgement\". Q1's working is two coded paired bars (Region A and Region B, before and after) with a bracket for each change and a third bar for the difference, plus b13's three-level measure ladder (process, impact, outcome) as a grey recall. Q2's working is m8-eye-cutaway-v1.png with a callout zoom to the retina, the vector path (b14's m8-aav-vector-v1.png), b14's PreventedStrip (\"symptoms, in one person\" against \"next generation\"), and a dot grid of 20 and 10 (13 and 0 tinted). Q3's working is the measure ladder again (process against outcome), a coded before-after score chart (two pairs of bars, quiet and noise) and a small coded spread strip showing individual dots behind an average. No people, hands or faces: residents, trial participants and patients are words or plain coded dots only. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "heading \"Evaluate it: evidence, limit, judgement\" writes on. fresh board. the card shrinks to a strip; type badge \"Evaluate a campaign\". the bars dim; the \"about 7 points\" bar stays. a chip \"the campaign raised returns by 9 points\" writes on and, on \"the classic mistake\", takes a grey scribble cross. board clears. the card shrinks to a strip; type badge \"Evaluate a gene therapy\". the zoom dims. a chip \"it stops the disease being inherited\" writes on and, on \"the classic mistake\", takes a grey scribble cross. board clears. the card shrinks to a strip; type badge \"Evaluate a technology\". the chart stays. a chip \"every patient improved to 70%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. the evaluation frame strip moves to the centre and enlarges, its four slots lighting one per cue with a thumbnail from each question beside the slot it carried best: \"how it works\" (the vector, Q2), \"what the evidence shows, with a fair comparison\" (the +9 and +2 bars, Q1), \"a real limit\" (the spread strip, Q3), \"judgement for that case\" (all three judgement lines in small text). > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Evaluate it: evidence, limit, judgement\" writes on. On \"prevention\" a small m8-sun-protection-v1.png thumbnail (b13) and a grey tag \"b13, b14\"; on \"technology\" small m8-glasses-v1.png, m8-cochlear-implant-v1.png and m8-kidney-nephron-v1.png thumbnails (grey tag \"b15 to b17\"). The four-slot evaluation frame strip outline draws under the working area, empty. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a bar pair, an eye outline, a score chart, without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "teachingReason": "This is the last Module 8 video, and it's practice.",
+      "narrationCue": "prevention / technology / three HSC-style questions",
+      "motionPurpose": "heading \"Evaluate it: evidence, limit, judgement\" writes on. On \"prevention\" a small m8-sun-protection-v1.png thumbnail (b13) and a grey tag \"b13, b14\"; on \"technology\" small m8-glasses-v1.png, m8-cochlear-implant-v1.png and m8-kidney-nephron-v1.png thumbnails (grey tag \"b15 to b17\"). The four-slot evaluation frame strip outline draws under the working area, empty. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a bar pair, an eye outline, a score chart, without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Evaluate it: evidence, limit, judgement\" writes on. On \"prevention\" a small m8-sun-protection-v1.png thumbnail (b13) and a grey tag \"b13, b14\"; on \"technology\" small m8-glasses-v1.png, m8-cochlear-implant-v1.png and m8-kidney-nephron-v1.png thumbnails (grey tag \"b15 to b17\"). The four-slot evaluation frame strip outline draws under the working area, empty. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a bar pair, an eye outline, a score chart, without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionTools": [
+        "m8-sun-protection-v1.png",
+        "m8-glasses-v1.png",
+        "m8-cochlear-implant-v1.png",
+        "m8-kidney-nephron-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type badge hidden. New m8-bowel-screening-kit-v1.png sits small at the card's upper left. The card writes on: \"Free bowel cancer screening kits are mailed to people aged 50 to 74. Each kit tests a small stool sample for hidden blood. A state health service ran a two-year campaign to increase the number of kits returned. Region A received the campaign (letters from local doctors and text-message reminders). Region B, similar in age structure and income, received the kits only.\" Table: \"Region | Kits returned before the campaign (%) | Kits returned after two years (%)\"; \"A (campaign) | 38 | 47\"; \"B (kits only) | 38 | 40\". Grey chip \"illustrative data\". Demand: \"Evaluate the effectiveness of this campaign as a disease-prevention method, using the data. (5 marks)\". One lined answer box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Question one.",
+      "narrationCue": "Question one",
+      "motionPurpose": "fresh board. Type badge hidden. New m8-bowel-screening-kit-v1.png sits small at the card's upper left. The card writes on: \"Free bowel cancer screening kits are mailed to people aged 50 to 74. Each kit tests a small stool sample for hidden blood. A state health service ran a two-year campaign to increase the number of kits returned. Region A received the campaign (letters from local doctors and text-message reminders). Region B, similar in age structure and income, received the kits only.\" Table: \"Region | Kits returned before the campaign (%) | Kits returned after two years (%)\"; \"A (campaign) | 38 | 47\"; \"B (kits only) | 38 | 40\". Grey chip \"illustrative data\". Demand: \"Evaluate the effectiveness of this campaign as a disease-prevention method, using the data. (5 marks)\". One lined answer box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type badge hidden. New m8-bowel-screening-kit-v1.png sits small at the card's upper left. The card writes on: \"Free bowel cancer screening kits are mailed to people aged 50 to 74. Each kit tests a small stool sample for hidden blood. A state health service ran a two-year campaign to increase the number of kits returned. Region A received the campaign (letters from local doctors and text-message reminders). Region B, similar in age structure and income, received the kits only.\" Table: \"Region | Kits returned before the campaign (%) | Kits returned after two years (%)\"; \"A (campaign) | 38 | 47\"; \"B (kits only) | 38 | 40\". Grey chip \"illustrative data\". Demand: \"Evaluate the effectiveness of this campaign as a disease-prevention method, using the data. (5 marks)\". One lined answer box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-bowel-screening-kit-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q1-question (question 1: screening kits): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q1-measure",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Evaluate a campaign\". The frame strip's \"how it works\" slot lights. On \"finds hidden blood\" \"tests a small stool sample for hidden blood\" underlines amber; a coded three-step chain draws in the working area: \"kit: hidden blood\" → \"closer look (colonoscopy)\" → \"polyps removed, or cancer found early\" (grey tag \"b13: secondary prevention\"). The slot fills \"kit → colonoscopy → polyps removed or cancer found early\". On \"impact\" b13's measure ladder appears small at the side with its three rungs \"process: what we did\", \"impact: what people did\", \"outcome: what the disease did\"; the \"impact\" rung lights, and \"Kits returned\" underlines in the table header. On \"Region A rose by nine\" \"38\" and \"47\" underline and the coded paired bars draw for A (38 to 47) with a bracket \"+9\"; on \"Region B ... rose by two\" \"38\" and \"40\" underline and B's bars draw with \"+2\" (grey tag \"comparison region\"). On \"seven\" a third bar draws the difference (label \"about 7 points linked to the campaign\"); the \"what the evidence shows\" slot fills \"+9 against +2: about 7 points from the campaign\". At most three bright text items. Hold 1 second.",
+      "teachingReason": "Start with how screening prevents harm.",
+      "narrationCue": "finds hidden blood / impact / Region A rose by nine / seven",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Evaluate a campaign\". The frame strip's \"how it works\" slot lights. On \"finds hidden blood\" \"tests a small stool sample for hidden blood\" underlines amber; a coded three-step chain draws in the working area: \"kit: hidden blood\" → \"closer look (colonoscopy)\" → \"polyps removed, or cancer found early\" (grey tag \"b13: secondary prevention\"). The slot fills \"kit → colonoscopy → polyps removed or cancer found early\". On \"impact\" b13's measure ladder appears small at the side with its three rungs \"process: what we did\", \"impact: what people did\", \"outcome: what the disease did\"; the \"impact\" rung lights, and \"Kits returned\" underlines in the table header. On \"Region A rose by nine\" \"38\" and \"47\" underline and the coded paired bars draw for A (38 to 47) with a bracket \"+9\"; on \"Region B ... rose by two\" \"38\" and \"40\" underline and B's bars draw with \"+2\" (grey tag \"comparison region\"). On \"seven\" a third bar draws the difference (label \"about 7 points linked to the campaign\"); the \"what the evidence shows\" slot fills \"+9 against +2: about 7 points from the campaign\". At most three bright text items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Evaluate a campaign\". The frame strip's \"how it works\" slot lights. On \"finds hidden blood\" \"tests a small stool sample for hidden blood\" underlines amber; a coded three-step chain draws in the working area: \"kit: hidden blood\" → \"closer look (colonoscopy)\" → \"polyps removed, or cancer found early\" (grey tag \"b13: secondary prevention\"). The slot fills \"kit → colonoscopy → polyps removed or cancer found early\". On \"impact\" b13's measure ladder appears small at the side with its three rungs \"process: what we did\", \"impact: what people did\", \"outcome: what the disease did\"; the \"impact\" rung lights, and \"Kits returned\" underlines in the table header. On \"Region A rose by nine\" \"38\" and \"47\" underline and the coded paired bars draw for A (38 to 47) with a bracket \"+9\"; on \"Region B ... rose by two\" \"38\" and \"40\" underline and B's bars draw with \"+2\" (grey tag \"comparison region\"). On \"seven\" a third bar draws the difference (label \"about 7 points linked to the campaign\"); the \"what the evidence shows\" slot fills \"+9 against +2: about 7 points from the campaign\". At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-measure (what the measure is, then the comparison): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-judge",
+      "visualDecision": "new",
+      "visualReference": "the bars dim; the \"about 7 points\" bar stays. On \"not deaths\" the table's column headings \"Kits returned\" underline (tag \"no deaths column\") and the measure ladder's \"outcome\" rung pulses grey with a tag \"not measured yet\"; on \"longer follow-up\" a coded timeline arrow writes \"polyp → cancer: often ten years or more\" (grey tag). On \"weren't chosen at random\" \"similar in age structure and income\" underlines (tag \"similar, but not randomised\"). On \"more than half of Region A\" \"47\" pulses (tag \"53% still not screened\"). The \"a real limit\" slot fills \"no deaths measured; not randomised; over half not screened\". On \"effective at increasing screening\" the \"judgement\" slot fills \"effective at raising screening; outcome not yet shown\". Answer box builds on the same cues (mechanism; evidence with comparison; limits; judgement). On \"A good improvement\" a chip writes \"follow diagnoses and deaths for 10+ years; target the lowest-return groups\" (grey tag \"b13: measure the groups at most risk\"). At most three bright items. Hold 1 second.",
+      "teachingReason": "Now the limits.",
+      "narrationCue": "not deaths / longer follow-up / weren't chosen at random / more than half of Region A / effective at increasing screening / A good improvement",
+      "motionPurpose": "the bars dim; the \"about 7 points\" bar stays. On \"not deaths\" the table's column headings \"Kits returned\" underline (tag \"no deaths column\") and the measure ladder's \"outcome\" rung pulses grey with a tag \"not measured yet\"; on \"longer follow-up\" a coded timeline arrow writes \"polyp → cancer: often ten years or more\" (grey tag). On \"weren't chosen at random\" \"similar in age structure and income\" underlines (tag \"similar, but not randomised\"). On \"more than half of Region A\" \"47\" pulses (tag \"53% still not screened\"). The \"a real limit\" slot fills \"no deaths measured; not randomised; over half not screened\". On \"effective at increasing screening\" the \"judgement\" slot fills \"effective at raising screening; outcome not yet shown\". Answer box builds on the same cues (mechanism; evidence with comparison; limits; judgement). On \"A good improvement\" a chip writes \"follow diagnoses and deaths for 10+ years; target the lowest-return groups\" (grey tag \"b13: measure the groups at most risk\"). At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the bars dim; the \"about 7 points\" bar stays. On \"not deaths\" the table's column headings \"Kits returned\" underline (tag \"no deaths column\") and the measure ladder's \"outcome\" rung pulses grey with a tag \"not measured yet\"; on \"longer follow-up\" a coded timeline arrow writes \"polyp → cancer: often ten years or more\" (grey tag). On \"weren't chosen at random\" \"similar in age structure and income\" underlines (tag \"similar, but not randomised\"). On \"more than half of Region A\" \"47\" pulses (tag \"53% still not screened\"). The \"a real limit\" slot fills \"no deaths measured; not randomised; over half not screened\". On \"effective at increasing screening\" the \"judgement\" slot fills \"effective at raising screening; outcome not yet shown\". Answer box builds on the same cues (mechanism; evidence with comparison; limits; judgement). On \"A good improvement\" a chip writes \"follow diagnoses and deaths for 10+ years; target the lowest-return groups\" (grey tag \"b13: measure the groups at most risk\"). At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-judge (limits, judgement, improvement): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "adjust",
+      "visualReference": "a chip \"the campaign raised returns by 9 points\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Region B rose by two without it\" B's \"+2\" bracket pulses (tag \"change without the campaign\"). On \"separates the campaign's effect\" the difference bar pulses (tag \"+9 − 2 ≈ 7\"). Grey tag at the side: \"b13: SunSmart had no comparison group\". Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is saying the campaign raised returns by nine points.",
+      "narrationCue": "the classic mistake / Region B rose by two without it / separates the campaign's effect",
+      "motionPurpose": "a chip \"the campaign raised returns by 9 points\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Region B rose by two without it\" B's \"+2\" bracket pulses (tag \"change without the campaign\"). On \"separates the campaign's effect\" the difference bar pulses (tag \"+9 − 2 ≈ 7\"). Grey tag at the side: \"b13: SunSmart had no comparison group\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"the campaign raised returns by 9 points\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Region B rose by two without it\" B's \"+2\" bracket pulses (tag \"change without the campaign\"). On \"separates the campaign's effect\" the difference bar pulses (tag \"+9 − 2 ≈ 7\"). Grey tag at the side: \"b13: SunSmart had no comparison group\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears. Type badge hidden. m8-eye-cutaway-v1.png sits small at the card's upper left with a faint callout to the retina (no label). The card writes on: \"An inherited retinal disease is caused by two faulty alleles of the RPE65 gene. Without the RPE65 protein, the retina cannot keep regenerating its light-detecting pigment, and vision worsens over time, often to blindness. In a trial, a modified, harmless virus carrying working copies of RPE65 was injected under the retina of 20 participants. 10 participants were not treated (control group).\" Table: \"Group | Number | Able to navigate a test course in the dimmest light after one year\"; \"Treated | 20 | 13\"; \"Not treated | 10 | 0\". Grey chip \"illustrative data, based on the pattern of a published trial\". Demands: \"(a) Explain how this gene therapy could improve vision. (2 marks)\" \"(b) Evaluate this gene therapy as a method of preventing vision loss. (4 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "teachingReason": "Question two.",
+      "narrationCue": "Question two",
+      "motionPurpose": "board clears. Type badge hidden. m8-eye-cutaway-v1.png sits small at the card's upper left with a faint callout to the retina (no label). The card writes on: \"An inherited retinal disease is caused by two faulty alleles of the RPE65 gene. Without the RPE65 protein, the retina cannot keep regenerating its light-detecting pigment, and vision worsens over time, often to blindness. In a trial, a modified, harmless virus carrying working copies of RPE65 was injected under the retina of 20 participants. 10 participants were not treated (control group).\" Table: \"Group | Number | Able to navigate a test course in the dimmest light after one year\"; \"Treated | 20 | 13\"; \"Not treated | 10 | 0\". Grey chip \"illustrative data, based on the pattern of a published trial\". Demands: \"(a) Explain how this gene therapy could improve vision. (2 marks)\" \"(b) Evaluate this gene therapy as a method of preventing vision loss. (4 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "board clears. Type badge hidden. m8-eye-cutaway-v1.png sits small at the card's upper left with a faint callout to the retina (no label). The card writes on: \"An inherited retinal disease is caused by two faulty alleles of the RPE65 gene. Without the RPE65 protein, the retina cannot keep regenerating its light-detecting pigment, and vision worsens over time, often to blindness. In a trial, a modified, harmless virus carrying working copies of RPE65 was injected under the retina of 20 participants. 10 participants were not treated (control group).\" Table: \"Group | Number | Able to navigate a test course in the dimmest light after one year\"; \"Treated | 20 | 13\"; \"Not treated | 10 | 0\". Grey chip \"illustrative data, based on the pattern of a published trial\". Demands: \"(a) Explain how this gene therapy could improve vision. (2 marks)\" \"(b) Evaluate this gene therapy as a method of preventing vision loss. (4 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionTools": [
+        "m8-eye-cutaway-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q2-question (question 2: a gene therapy): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q2-mechanism",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Evaluate a gene therapy\". The eye plate enlarges with a callout zoom to the back of the eye. On \"vector\" b14's m8-aav-vector-v1.png enters (label \"viral vector\"; grey tag \"b14: vectors carry genes\") and travels along a coded arrow into a coded strip of retinal cells under the zoom; on \"make the missing protein\" small coded protein dots appear in the cells (label \"protein made\"), and \"injected under the retina\" and \"working copies of RPE65\" underline. The \"how it works\" slot fills \"vector delivers working gene → retinal cells make the protein → pigment remade\". On \"what this prevents\" b14's PreventedStrip appears (\"symptoms, in one person\" / \"an affected birth\" / \"the gene in the next generation\"); \"symptoms, in one person\" lights green (grey tag \"b14: ask what's prevented\"). On \"children can still inherit\" the \"next generation\" slot stays amber (label \"body cells only\"). On \"cells that are still alive\" the coded retinal strip shows two greyed cells that stay grey (label \"lost cells can't be rescued\"). At most three bright text items. Hold 1 second.",
+      "teachingReason": "Explain first.",
+      "narrationCue": "vector / make the missing protein / what this prevents / children can still inherit / cells that are still alive",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Evaluate a gene therapy\". The eye plate enlarges with a callout zoom to the back of the eye. On \"vector\" b14's m8-aav-vector-v1.png enters (label \"viral vector\"; grey tag \"b14: vectors carry genes\") and travels along a coded arrow into a coded strip of retinal cells under the zoom; on \"make the missing protein\" small coded protein dots appear in the cells (label \"protein made\"), and \"injected under the retina\" and \"working copies of RPE65\" underline. The \"how it works\" slot fills \"vector delivers working gene → retinal cells make the protein → pigment remade\". On \"what this prevents\" b14's PreventedStrip appears (\"symptoms, in one person\" / \"an affected birth\" / \"the gene in the next generation\"); \"symptoms, in one person\" lights green (grey tag \"b14: ask what's prevented\"). On \"children can still inherit\" the \"next generation\" slot stays amber (label \"body cells only\"). On \"cells that are still alive\" the coded retinal strip shows two greyed cells that stay grey (label \"lost cells can't be rescued\"). At most three bright text items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Evaluate a gene therapy\". The eye plate enlarges with a callout zoom to the back of the eye. On \"vector\" b14's m8-aav-vector-v1.png enters (label \"viral vector\"; grey tag \"b14: vectors carry genes\") and travels along a coded arrow into a coded strip of retinal cells under the zoom; on \"make the missing protein\" small coded protein dots appear in the cells (label \"protein made\"), and \"injected under the retina\" and \"working copies of RPE65\" underline. The \"how it works\" slot fills \"vector delivers working gene → retinal cells make the protein → pigment remade\". On \"what this prevents\" b14's PreventedStrip appears (\"symptoms, in one person\" / \"an affected birth\" / \"the gene in the next generation\"); \"symptoms, in one person\" lights green (grey tag \"b14: ask what's prevented\"). On \"children can still inherit\" the \"next generation\" slot stays amber (label \"body cells only\"). On \"cells that are still alive\" the coded retinal strip shows two greyed cells that stay grey (label \"lost cells can't be rescued\"). At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "m8-aav-vector-v1.png",
+        "PreventedStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-mechanism (how it works, and what it prevents): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-evaluate",
+      "visualDecision": "new",
+      "visualReference": "the zoom dims. On \"sixty-five per cent\" \"13\" and \"20\" underline and g01's GroupDotField draws 20 dots with 13 tinted (label \"13 of 20 = 65%\"); on \"none of ten\" \"0\" and \"10\" underline and 10 dots draw, none tinted (label \"0 of 10\"). On \"the untreated group strengthens\" \"control group\" underlines (tag \"control: strengthens the case that treatment caused it\"; Revision 2). The \"what the evidence shows\" slot fills \"65% against 0%, with a control group\". On \"small trial, followed for one year\" \"20\" and \"after one year\" pulse (tag \"small, short\"); on \"one gene fault\" a chip \"one gene: a small share of inherited blindness\"; on \"very expensive\" a chip \"very costly\". The \"a real limit\" slot fills \"small, one year; one gene; costly; needs living cells\". On \"improved functional vision\" the \"judgement\" slot fills \"better dim-light navigation at 1 year, this gene fault; decline not shown to stop; not population prevention\" (Revision 2). Answer boxes (a) and (b) build line by line on the same cues. At most three bright items. Hold 1 second.",
+      "teachingReason": "Now the data.",
+      "narrationCue": "sixty-five per cent / none of ten / the untreated group strengthens / small trial, followed for one year / one gene fault / very expensive / improved functional vision",
+      "motionPurpose": "the zoom dims. On \"sixty-five per cent\" \"13\" and \"20\" underline and g01's GroupDotField draws 20 dots with 13 tinted (label \"13 of 20 = 65%\"); on \"none of ten\" \"0\" and \"10\" underline and 10 dots draw, none tinted (label \"0 of 10\"). On \"the untreated group strengthens\" \"control group\" underlines (tag \"control: strengthens the case that treatment caused it\"; Revision 2). The \"what the evidence shows\" slot fills \"65% against 0%, with a control group\". On \"small trial, followed for one year\" \"20\" and \"after one year\" pulse (tag \"small, short\"); on \"one gene fault\" a chip \"one gene: a small share of inherited blindness\"; on \"very expensive\" a chip \"very costly\". The \"a real limit\" slot fills \"small, one year; one gene; costly; needs living cells\". On \"improved functional vision\" the \"judgement\" slot fills \"better dim-light navigation at 1 year, this gene fault; decline not shown to stop; not population prevention\" (Revision 2). Answer boxes (a) and (b) build line by line on the same cues. At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the zoom dims. On \"sixty-five per cent\" \"13\" and \"20\" underline and g01's GroupDotField draws 20 dots with 13 tinted (label \"13 of 20 = 65%\"); on \"none of ten\" \"0\" and \"10\" underline and 10 dots draw, none tinted (label \"0 of 10\"). On \"the untreated group strengthens\" \"control group\" underlines (tag \"control: strengthens the case that treatment caused it\"; Revision 2). The \"what the evidence shows\" slot fills \"65% against 0%, with a control group\". On \"small trial, followed for one year\" \"20\" and \"after one year\" pulse (tag \"small, short\"); on \"one gene fault\" a chip \"one gene: a small share of inherited blindness\"; on \"very expensive\" a chip \"very costly\". The \"a real limit\" slot fills \"small, one year; one gene; costly; needs living cells\". On \"improved functional vision\" the \"judgement\" slot fills \"better dim-light navigation at 1 year, this gene fault; decline not shown to stop; not population prevention\" (Revision 2). Answer boxes (a) and (b) build line by line on the same cues. At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "GroupDotField",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-evaluate (evidence, limits, judgement): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"it stops the disease being inherited\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"body cells in one person\" the PreventedStrip's green \"symptoms, in one person\" slot pulses; on \"eggs or sperm still carry\" the amber \"next generation\" slot pulses (tag \"germ-line cells unchanged\"). Grey tag at the side: \"b14: somatic, not germline\". Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is writing that this gene therapy stops the disease being passed on.",
+      "narrationCue": "the classic mistake / body cells in one person / eggs or sperm still carry",
+      "motionPurpose": "a chip \"it stops the disease being inherited\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"body cells in one person\" the PreventedStrip's green \"symptoms, in one person\" slot pulses; on \"eggs or sperm still carry\" the amber \"next generation\" slot pulses (tag \"germ-line cells unchanged\"). Grey tag at the side: \"b14: somatic, not germline\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"it stops the disease being inherited\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"body cells in one person\" the PreventedStrip's green \"symptoms, in one person\" slot pulses; on \"eggs or sperm still carry\" the amber \"next generation\" slot pulses (tag \"germ-line cells unchanged\"). Grey tag at the side: \"b14: somatic, not germline\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "PreventedStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears. Type badge hidden. m8-cochlear-implant-v1.png sits small at the card's upper left. The card writes on: \"A hearing clinic fits cochlear implants for adults with severe to profound sensorineural hearing loss. Its annual report states: 'Our program is a success: we fitted 30 implants this year, up from 18 last year.'\" Table: \"Measure (30 adults) | Before (best hearing aids) | 12 months after implant\"; \"Words correctly repeated from sentences in quiet (average %) | 15 | 70\"; \"Words correctly repeated from sentences with background noise (average %) | 5 | 35\"; \"Adults using their implant every day | not applicable | 28 of 30\". Below: \"Average wait from referral to surgery: 9 months.\" Grey chip \"illustrative data\". Demands: \"(a) Explain why the number of implants fitted is not a valid measure of the program's effectiveness, and identify a more meaningful outcome measure from the data. (2 marks)\" \"(b) Evaluate the effectiveness of cochlear implants for these adults, using the data and one access consideration. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "teachingReason": "Question three.",
+      "narrationCue": "Question three",
+      "motionPurpose": "board clears. Type badge hidden. m8-cochlear-implant-v1.png sits small at the card's upper left. The card writes on: \"A hearing clinic fits cochlear implants for adults with severe to profound sensorineural hearing loss. Its annual report states: 'Our program is a success: we fitted 30 implants this year, up from 18 last year.'\" Table: \"Measure (30 adults) | Before (best hearing aids) | 12 months after implant\"; \"Words correctly repeated from sentences in quiet (average %) | 15 | 70\"; \"Words correctly repeated from sentences with background noise (average %) | 5 | 35\"; \"Adults using their implant every day | not applicable | 28 of 30\". Below: \"Average wait from referral to surgery: 9 months.\" Grey chip \"illustrative data\". Demands: \"(a) Explain why the number of implants fitted is not a valid measure of the program's effectiveness, and identify a more meaningful outcome measure from the data. (2 marks)\" \"(b) Evaluate the effectiveness of cochlear implants for these adults, using the data and one access consideration. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "board clears. Type badge hidden. m8-cochlear-implant-v1.png sits small at the card's upper left. The card writes on: \"A hearing clinic fits cochlear implants for adults with severe to profound sensorineural hearing loss. Its annual report states: 'Our program is a success: we fitted 30 implants this year, up from 18 last year.'\" Table: \"Measure (30 adults) | Before (best hearing aids) | 12 months after implant\"; \"Words correctly repeated from sentences in quiet (average %) | 15 | 70\"; \"Words correctly repeated from sentences with background noise (average %) | 5 | 35\"; \"Adults using their implant every day | not applicable | 28 of 30\". Below: \"Average wait from referral to surgery: 9 months.\" Grey chip \"illustrative data\". Demands: \"(a) Explain why the number of implants fitted is not a valid measure of the program's effectiveness, and identify a more meaningful outcome measure from the data. (2 marks)\" \"(b) Evaluate the effectiveness of cochlear implants for these adults, using the data and one access consideration. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionTools": [
+        "m8-cochlear-implant-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q3-question (question 3: a hearing technology): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q3-measure",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Evaluate a technology\". b13's measure ladder appears at the side. On \"process\" \"we fitted 30 implants this year\" underlines amber and the \"process: what we did\" rung lights (tag \"counts activity, not benefit\"); answer (a) line 1 writes \"implants fitted = process measure: what the clinic did\". On \"trouble understanding speech\" the \"outcome\" rung lights (relabelled \"outcome: what changed for the person\"; grey tag \"b15: access to sound\"); answer (a) line 2 \"outcome: speech scores, because the disorder's effect is difficulty understanding speech\". The \"how it works\" slot fills \"implant bypasses hair cells, stimulates the auditory nerve (b15)\". On \"seventy\" \"15\" and \"70\" underline and the before-after chart draws the quiet pair (label \"quiet: 15% → 70%\"); on \"five to thirty-five\" \"5\" and \"35\" underline and the noise pair draws (label \"noise: 5% → 35%\"). On \"own best hearing aids\" \"Before (best hearing aids)\" underlines (tag \"fair baseline: same people\"). On \"twenty-eight of thirty\" \"28 of 30\" underlines (tag \"still using it\"). The \"what the evidence shows\" slot fills \"large gain in quiet; smaller in noise; 28 of 30 daily users\". At most three bright items. Hold 1 second.",
+      "teachingReason": "Thirty implants fitted is a process measure.",
+      "narrationCue": "process / trouble understanding speech / seventy / five to thirty-five / own best hearing aids / twenty-eight of thirty",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Evaluate a technology\". b13's measure ladder appears at the side. On \"process\" \"we fitted 30 implants this year\" underlines amber and the \"process: what we did\" rung lights (tag \"counts activity, not benefit\"); answer (a) line 1 writes \"implants fitted = process measure: what the clinic did\". On \"trouble understanding speech\" the \"outcome\" rung lights (relabelled \"outcome: what changed for the person\"; grey tag \"b15: access to sound\"); answer (a) line 2 \"outcome: speech scores, because the disorder's effect is difficulty understanding speech\". The \"how it works\" slot fills \"implant bypasses hair cells, stimulates the auditory nerve (b15)\". On \"seventy\" \"15\" and \"70\" underline and the before-after chart draws the quiet pair (label \"quiet: 15% → 70%\"); on \"five to thirty-five\" \"5\" and \"35\" underline and the noise pair draws (label \"noise: 5% → 35%\"). On \"own best hearing aids\" \"Before (best hearing aids)\" underlines (tag \"fair baseline: same people\"). On \"twenty-eight of thirty\" \"28 of 30\" underlines (tag \"still using it\"). The \"what the evidence shows\" slot fills \"large gain in quiet; smaller in noise; 28 of 30 daily users\". At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Evaluate a technology\". b13's measure ladder appears at the side. On \"process\" \"we fitted 30 implants this year\" underlines amber and the \"process: what we did\" rung lights (tag \"counts activity, not benefit\"); answer (a) line 1 writes \"implants fitted = process measure: what the clinic did\". On \"trouble understanding speech\" the \"outcome\" rung lights (relabelled \"outcome: what changed for the person\"; grey tag \"b15: access to sound\"); answer (a) line 2 \"outcome: speech scores, because the disorder's effect is difficulty understanding speech\". The \"how it works\" slot fills \"implant bypasses hair cells, stimulates the auditory nerve (b15)\". On \"seventy\" \"15\" and \"70\" underline and the before-after chart draws the quiet pair (label \"quiet: 15% → 70%\"); on \"five to thirty-five\" \"5\" and \"35\" underline and the noise pair draws (label \"noise: 5% → 35%\"). On \"own best hearing aids\" \"Before (best hearing aids)\" underlines (tag \"fair baseline: same people\"). On \"twenty-eight of thirty\" \"28 of 30\" underlines (tag \"still using it\"). The \"what the evidence shows\" slot fills \"large gain in quiet; smaller in noise; 28 of 30 daily users\". At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-measure (the right measure, then the gains): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-evaluate",
+      "visualDecision": "new",
+      "visualReference": "the chart stays. On \"most words are missed\" the noise bar pulses (tag \"65% of words missed in noise\"). On \"one clinic, with no comparison group\" a grey tag \"one clinic; no comparison group\". On \"the average wait is nine months\" \"Average wait from referral to surgery: 9 months\" underlines amber; chips write one per cue: \"9-month wait\", \"surgery, programming, months of practice\" (grey tag \"access\"). The \"a real limit\" slot fills \"noise still hard; one clinic; access: 9-month wait, surgery and rehabilitation\". On \"highly effective\" the \"judgement\" slot fills \"highly effective in quiet; partly in noise; access to speech, not normal hearing\". Answer (b) builds line by line on the same cues. At most three bright items. Hold 1 second.",
+      "teachingReason": "Now the limits.",
+      "narrationCue": "most words are missed / one clinic, with no comparison group / the average wait is nine months / highly effective",
+      "motionPurpose": "the chart stays. On \"most words are missed\" the noise bar pulses (tag \"65% of words missed in noise\"). On \"one clinic, with no comparison group\" a grey tag \"one clinic; no comparison group\". On \"the average wait is nine months\" \"Average wait from referral to surgery: 9 months\" underlines amber; chips write one per cue: \"9-month wait\", \"surgery, programming, months of practice\" (grey tag \"access\"). The \"a real limit\" slot fills \"noise still hard; one clinic; access: 9-month wait, surgery and rehabilitation\". On \"highly effective\" the \"judgement\" slot fills \"highly effective in quiet; partly in noise; access to speech, not normal hearing\". Answer (b) builds line by line on the same cues. At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the chart stays. On \"most words are missed\" the noise bar pulses (tag \"65% of words missed in noise\"). On \"one clinic, with no comparison group\" a grey tag \"one clinic; no comparison group\". On \"the average wait is nine months\" \"Average wait from referral to surgery: 9 months\" underlines amber; chips write one per cue: \"9-month wait\", \"surgery, programming, months of practice\" (grey tag \"access\"). The \"a real limit\" slot fills \"noise still hard; one clinic; access: 9-month wait, surgery and rehabilitation\". On \"highly effective\" the \"judgement\" slot fills \"highly effective in quiet; partly in noise; access to speech, not normal hearing\". Answer (b) builds line by line on the same cues. At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-evaluate (limits, access, judgement): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"every patient improved to 70%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"could hide\" the SpreadStrip draws: an axis 0 to 100 with a marked average at 70 and individual coded dots spreading from about 30 to about 95 (grey tag \"illustrative spread\"; label \"same average, wide spread\"). On \"note the spread it hides\" \"(average %)\" in the table header underlines. Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is reading an average as if every patient improved that much.",
+      "narrationCue": "the classic mistake / could hide / note the spread it hides",
+      "motionPurpose": "a chip \"every patient improved to 70%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"could hide\" the SpreadStrip draws: an axis 0 to 100 with a marked average at 70 and individual coded dots spreading from about 30 to about 95 (grey tag \"illustrative spread\"; label \"same average, wide spread\"). On \"note the spread it hides\" \"(average %)\" in the table header underlines. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"every patient improved to 70%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"could hide\" the SpreadStrip draws: an axis 0 to 100 with a marked average at 70 and individual coded dots spreading from about 30 to about 95 (grey tag \"illustrative spread\"; label \"same average, wide spread\"). On \"note the spread it hides\" \"(average %)\" in the table header underlines. Hold about 1.5 seconds.",
+      "motionTools": [
+        "SpreadStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the evaluation frame strip moves to the centre and enlarges, its four slots lighting one per cue with a thumbnail from each question beside the slot it carried best: \"how it works\" (the vector, Q2), \"what the evidence shows, with a fair comparison\" (the +9 and +2 bars, Q1), \"a real limit\" (the spread strip, Q3), \"judgement for that case\" (all three judgement lines in small text). The memory line \"How it works, what the evidence shows, a real limit, a judgement\" writes small under the board (grey tag \"L21: mechanism, benefit, limitation, judgement\"). On \"Module 8, and Year 12 Biology, to a close\" the board dims and a coded row of eight small module markers (\"Module 5\" to \"Module 8\", and \"Year 11\" collapsed as one) lights to the end (abstract, no people; no \"Next\" chip). Hold about 2 seconds.",
+      "teachingReason": "So for any evaluate question, use the same four moves.",
+      "narrationCue": "Module 8, and Year 12 Biology, to a close",
+      "motionPurpose": "the evaluation frame strip moves to the centre and enlarges, its four slots lighting one per cue with a thumbnail from each question beside the slot it carried best: \"how it works\" (the vector, Q2), \"what the evidence shows, with a fair comparison\" (the +9 and +2 bars, Q1), \"a real limit\" (the spread strip, Q3), \"judgement for that case\" (all three judgement lines in small text). The memory line \"How it works, what the evidence shows, a real limit, a judgement\" writes small under the board (grey tag \"L21: mechanism, benefit, limitation, judgement\"). On \"Module 8, and Year 12 Biology, to a close\" the board dims and a coded row of eight small module markers (\"Module 5\" to \"Module 8\", and \"Year 11\" collapsed as one) lights to the end (abstract, no people; no \"Next\" chip). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the evaluation frame strip moves to the centre and enlarges, its four slots lighting one per cue with a thumbnail from each question beside the slot it carried best: \"how it works\" (the vector, Q2), \"what the evidence shows, with a fair comparison\" (the +9 and +2 bars, Q1), \"a real limit\" (the spread strip, Q3), \"judgement for that case\" (all three judgement lines in small text). The memory line \"How it works, what the evidence shows, a real limit, a judgement\" writes small under the board (grey tag \"L21: mechanism, benefit, limitation, judgement\"). On \"Module 8, and Year 12 Biology, to a close\" the board dims and a coded row of eight small module markers (\"Module 5\" to \"Module 8\", and \"Year 11\" collapsed as one) lights to the end (abstract, no people; no \"Next\" chip). Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision-board (and the course close): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key-notes (reuse take: key-notes; quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g02b-learning-review.md",
+      "sha256": "6612c22306017f38428904cefeb335a159de9e40a54968c21189491ed5610dee"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g02b-claude-science-check.md",
+      "sha256": "15f40dfa5278ecf6f483c7fedf359738eccc8357296f53f9c6562b627a27662b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

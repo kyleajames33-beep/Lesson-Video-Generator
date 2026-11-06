@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-P02-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8p02b/lesson.json",
+  "lessonSha256": "17dbb7f4f413e643f9c77abe53afde0869d904ad153ead126bcc9ea504e62126",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8p02b/lesson.production-brief.json",
+    "sha256": "1160231bce4b2f3526ca528f7b777ae78075a31ecb65b71d8182ad9143254669"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "You can't see water vapour leaving a leaf. But you can watch a tiny air bubble creep along a glass tube as a leafy shoot draws water in. In still air, it moves about four millimetres a minute. With a fan on, it moves more than twice as fast. So how do you test this fairly, and what does the bubble really tell you?",
+      "hash": "c66eed418ed1",
+      "textSha256": "c66eed418ed1e8c375f399149fb66232cb61d9d0e540ce24cd9117f96d574518",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/hook.c66eed418ed1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/hook.c66eed418ed1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/hook.c66eed418ed1.generation.json",
+      "plannedRequestSha256": "e887eed220bd444ebd3dd60f695ff477ed4fdf64b6b309f959cace9d5894456d"
+    },
+    {
+      "id": "uptake-tracks-loss",
+      "parentSceneId": "uptake-tracks-loss",
+      "text": "Recall how plants lose water. Water evaporates inside the leaves and diffuses out through the stomata, and more water is pulled up the xylem to replace it. So the faster a leafy shoot loses water, the faster its stem draws water in. Measuring what goes in lets you estimate what comes out.",
+      "hash": "78fa747a394e",
+      "textSha256": "78fa747a394e84781f0adef4e48fa0eeed455befb1bc54497501594fe0a08cc6",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/uptake-tracks-loss.78fa747a394e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/uptake-tracks-loss.78fa747a394e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/uptake-tracks-loss.78fa747a394e.generation.json",
+      "plannedRequestSha256": "ffc8e27872e44c13baf5a10289efeb9e7704ef31ca282bea9b6c41efb1596e2b"
+    },
+    {
+      "id": "potometer",
+      "parentSceneId": "potometer",
+      "text": "That's the job of a potometer, a device that measures how fast a shoot takes up water. The cut shoot is sealed into a tube of water, joined to a narrow glass tube with a scale. As the shoot draws water in, the water column moves towards it, carrying a small air bubble along. The distance the bubble moves in a set time gives the rate of uptake. A reservoir lets you push the bubble back to the start.",
+      "hash": "8542256bd5e2",
+      "textSha256": "8542256bd5e2098854e711f87fddc214cab4e97f7ecaaed02b796396c59a1364",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/potometer.8542256bd5e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/potometer.8542256bd5e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/potometer.8542256bd5e2.generation.json",
+      "plannedRequestSha256": "c088a028c1eaa60cb5e9a59f07e18d25883a24539546c3d8b6007d94dd8ebb66"
+    },
+    {
+      "id": "airtight-settled",
+      "parentSceneId": "airtight-settled",
+      "text": "Any leak means the bubble no longer tracks what the shoot takes in, so the set-up must be airtight. Cut the shoot under water, so air can't enter the xylem and block it, and fit it in under water too. Seal the joints with petroleum jelly. Then lift the narrow tube's end out of its water for a moment, so one small bubble enters, far from the shoot. Let the shoot settle for about five minutes before timing.",
+      "hash": "f444ab46c575",
+      "textSha256": "f444ab46c575a2f43b9a1806800910b325c83521d356b71d29dbd8c620d51b17",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/airtight-settled.f444ab46c575.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/airtight-settled.f444ab46c575.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/airtight-settled.f444ab46c575.generation.json",
+      "plannedRequestSha256": "4c922d8065c4dae38f70ee02b81e2e9e1192e2c7e966981bac00a8695348f442"
+    },
+    {
+      "id": "aim-variables",
+      "parentSceneId": "aim-variables",
+      "text": "The aim: find out how air movement affects the rate of water uptake by a leafy shoot. The independent variable is air movement, fan off or fan on. The dependent variable is the rate, how far the bubble moves per minute. Keep everything else the same: the same shoot, so the leaf area can't change, the same room, temperature and light, and the same fan distance.",
+      "hash": "b37b9a59e7cc",
+      "textSha256": "b37b9a59e7ccb7d943c4d7e14ace4e960b7de1b413f311411175f56da884dcbd",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/aim-variables.b37b9a59e7cc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/aim-variables.b37b9a59e7cc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/aim-variables.b37b9a59e7cc.generation.json",
+      "plannedRequestSha256": "e055b04eb83e282a2c66f2b23239a23b5d9a7b801d3aaf7d66b8c90e489c713b"
+    },
+    {
+      "id": "control-repeats",
+      "parentSceneId": "control-repeats",
+      "text": "Still air is the control, the comparison without the fan. Time the bubble over five minutes, push it back, and repeat three times for each condition. Alternate still and fan trials, and let the shoot settle after each switch before timing.",
+      "hash": "dfa67bc63dcd",
+      "textSha256": "dfa67bc63dcd8fe5fc149e2d3a768d96995b0588e6480acfc6bbcf833c7b7dd3",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/control-repeats.dfa67bc63dcd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/control-repeats.dfa67bc63dcd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/control-repeats.dfa67bc63dcd.generation.json",
+      "plannedRequestSha256": "4458cc236ae370afc7d5e77d336e035adf48460aef9c68a571a9a213e47cfb68"
+    },
+    {
+      "id": "one-reading",
+      "parentSceneId": "one-reading",
+      "text": "Here's one reading. In still air, the bubble moved twenty one millimetres in five minutes. Rate is distance divided by time, so that's four point two millimetres per minute. Read the same edge of the bubble each time, with your eye level with the tube.",
+      "hash": "6cba0d9e5e0b",
+      "textSha256": "6cba0d9e5e0bf26e57c21ac2e49647e1045f6fc260d1b05f1796ed63e32e0958",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/one-reading.6cba0d9e5e0b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/one-reading.6cba0d9e5e0b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/one-reading.6cba0d9e5e0b.generation.json",
+      "plannedRequestSha256": "db7d17614fd4d1ad9b04a9562b351037920badb18b44be0057689bfcdb228df5"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Here are all six. In still air, four point two, three point eight and four point oh, a mean of four. With the fan, nine point four, nine point two and nine point six, a mean of nine point four. The repeats agree within about half a millimetre per minute, and the gap is more than five. So with the fan, this shoot took up water a little more than twice as fast. Moving air sweeps the moist air from the leaf surface, so vapour diffuses out faster.",
+      "hash": "3626f375ffa3",
+      "textSha256": "3626f375ffa30639eef1c99da1631680ffdc21114b800a87f4615b634fc9f960",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/results.3626f375ffa3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/results.3626f375ffa3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/results.3626f375ffa3.generation.json",
+      "plannedRequestSha256": "8264b679b7d471e1725ddc3e81aab6876dc9bc52e4ee1a66cb07f99118eaa460"
+    },
+    {
+      "id": "what-it-measures",
+      "parentSceneId": "what-it-measures",
+      "text": "Be careful what you claim. A potometer measures water uptake, not water loss. Most of the water taken in is lost by transpiration, but a little is used in photosynthesis or stays in the cells. And this is one cut shoot with no roots, not a whole plant. So keep the conclusion narrow: with moving air, this shoot took up water faster than in still air.",
+      "hash": "a7a251fbbbb4",
+      "textSha256": "a7a251fbbbb4a85a612caa25bedcc2e2c2e132ea8229dc378a3a760602ad00e0",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/what-it-measures.a7a251fbbbb4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/what-it-measures.a7a251fbbbb4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/what-it-measures.a7a251fbbbb4.generation.json",
+      "plannedRequestSha256": "016d51b0af0bc46a438b7549b388890b778199c5f27dbe2b3d0aa43b99316977"
+    },
+    {
+      "id": "stomatal-count",
+      "parentSceneId": "stomatal-count",
+      "text": "A second method asks a different question: where can water leave? Paint clear nail varnish on a leaf, let it dry, and lift it off with clear tape. This peel keeps an imprint of the surface. Under a microscope, at one magnification, count stomata in several random fields on the lower surface, then the upper, across a few leaves. A count alone can't tell how much water is being lost.",
+      "hash": "6830da830bc3",
+      "textSha256": "6830da830bc3511d971d792ede6c2d9dd50053e31c63444886f5635f3f3cbb3d",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/stomatal-count.6830da830bc3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/stomatal-count.6830da830bc3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/stomatal-count.6830da830bc3.generation.json",
+      "plannedRequestSha256": "26be10cb54388f2962bb0e8b64b9c0ca3b0b9a656580d6958d53fdfdd3379635"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Now judge it with three questions. Validity: does it measure what it was meant to? Controls support it: one settled shoot, alternating trials, steady temperature and light. It tests uptake, which is close to water loss but not the same. Reliability: do repeats agree? Yes, within half a millimetre per minute. Accuracy: how close to the true value? A slow leak shifts every reading, and more repeats can't fix a leak.",
+      "hash": "990fbc938a7f",
+      "textSha256": "990fbc938a7fce2af011d09e0f3b52a35ab65cec9d389b10e3aafd5c3ca0c2a7",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/validity-reliability.990fbc938a7f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/validity-reliability.990fbc938a7f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/validity-reliability.990fbc938a7f.generation.json",
+      "plannedRequestSha256": "4228b9ccf37afb3c88a53687351a3e5c1e98f1744d2d7ba53ce0102e303b8d85"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Cut stems on a tile, away from your fingers, because a sharp blade can slip. Keep the fan and its cord away from the water, and mop up spills, to avoid an electric shock. Nail varnish is flammable and its fumes irritate, so use a little, in a ventilated room, away from flames.",
+      "hash": "97b5f48fcee9",
+      "textSha256": "97b5f48fcee9e57ccddd97c2392d5332a5190c6f4bc040f0c8263463be7b0030",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/risk-assessment.97b5f48fcee9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/risk-assessment.97b5f48fcee9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/risk-assessment.97b5f48fcee9.generation.json",
+      "plannedRequestSha256": "7304b68353412937e255154415d813342f002cb56495663dfeeb11131bb9ad4f"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student used a potometer on one leafy shoot, with and without a clear plastic bag over its leaves. Without the bag, the bubble moved thirty millimetres in six minutes. With the bag, it moved twelve millimetres in six minutes. Calculate both rates, then explain the difference. Pause here to answer.",
+      "hash": "ac3e043cdf6d",
+      "textSha256": "ac3e043cdf6d0a6383767a668ab8a9f4f2373f9123e7b419a51439eee66b7d16",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-1.ac3e043cdf6d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-1.ac3e043cdf6d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-1.ac3e043cdf6d.generation.json",
+      "plannedRequestSha256": "a01c017b34f8291c60df5d617369f77debf4c1f30666a101d81fcfd941155738"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Thirty divided by six is five millimetres per minute without the bag, and twelve divided by six is two with it. Inside the bag, water vapour builds up, so the air around the leaves gets very humid. The vapour difference between leaf and air is smaller, so vapour diffuses out more slowly, and the shoot takes up less. The classic mistake is saying the bag blocks the water. It traps humid air.",
+      "hash": "f1e8204963a7",
+      "textSha256": "f1e8204963a7e20137e9755b24491183203fcf509e22848e77509f5c5df8bdbf",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-1.f1e8204963a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-1.f1e8204963a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-1.f1e8204963a7.generation.json",
+      "plannedRequestSha256": "73bf591b2d2ddcbb59ba0e7a038db1da849d5da29546cb9b8a73aee94d50b0b4"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student cut a shoot in the air and pushed it into a potometer. She measured the rate with a fan on a warm Monday afternoon, and in still air on a cool Tuesday morning, then concluded that wind increases transpiration. Identify two problems, and propose a change that fixes each one. Pause here to answer.",
+      "hash": "6e38d4deec8b",
+      "textSha256": "6e38d4deec8b29a63c011b2690c648a379b56c02ca3a23bf2c010a05952bbcc8",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-2.6e38d4deec8b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-2.6e38d4deec8b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/attempt-2.6e38d4deec8b.generation.json",
+      "plannedRequestSha256": "d51085fc3512bc8d420a4c84db3b19ed6cf41a511a2e9dd0da5e4a17446d3416"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One: cutting in air lets air into the xylem, which can block uptake, so cut and fit the shoot under water. Two: the temperature changed as well as the fan, so the difference could come from the temperature. Test both with the same shoot, in the same room, on the same day. The classic mistake is to repeat it more times. Repeats help reliability, but they can't fix an uncontrolled variable.",
+      "hash": "327e416a8182",
+      "textSha256": "327e416a8182d0d7b40a32d0885deb93c4a349288586c6922193bc095547ae86",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-2.327e416a8182.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-2.327e416a8182.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/feedback-2.327e416a8182.generation.json",
+      "plannedRequestSha256": "b393fb8a1e4f2607fd0349dccdaf11cb3e30ee0a4417128b71f6a8122619620d"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any transpiration practical: change one factor, keep everything else the same, seal it airtight, repeat each reading, and claim only what you measured, the uptake by this shoot. Next: practical questions, and fixes that fix.",
+      "hash": "04f0c47c41e2",
+      "textSha256": "04f0c47c41e20b17e1281526ffacb05492823382fdbb1c6eea596e3b3e20cfc6",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/decision-rule.04f0c47c41e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/decision-rule.04f0c47c41e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/decision-rule.04f0c47c41e2.generation.json",
+      "plannedRequestSha256": "1ecb2d533f8893b873191e8db87619bf2acce72829dde2a3de091e1d2a3f3afa"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P02-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

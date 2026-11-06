@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b13/lesson.json",
+    "lessonSha256": "ad046e24e4d41591b9809e18c41a3674e477237981a04fb2f74e8576e08fa116"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b07: UV damages DNA in skin cells and mutations can build up over decades (latency); exposure raises risk, not certainty; SunSmart's five actions; population exposure reduction lowers disease. From b10: rates compare groups fairly; incidence counts new cases. From b11: control group, confounder, dose-response, self-report as a limitation, the benefit chain (finding, decision, action, outcome checked). From b12: type 2 diabetes is driven by insulin resistance linked to excess body fat and low activity (attempt 10c only). Not assumed: prevention (as a defined term), primary, secondary and tertiary prevention, campaign, upstream, process, impact and outcome measures, secondary source, attribution, equity.",
+    "startsWith": "Australia has one of the highest melanoma rates in the world. In 1981, a Victorian campaign told people to slip, slop, slap, and in 1988 it grew into SunSmart. Today, melanoma rates in younger Australians are falling. But was that the campaign, or something else? So how can prevention campaigns reduce disease, and how do we know one worked?",
+    "stopsAfter": "defining prevention and naming primary, secondary and tertiary prevention with an example of each; defining a campaign; designing from the mechanism (exposure, audience, action, measure); explaining why knowledge alone rarely changes behaviour and why changing conditions works better; distinguishing process, impact and outcome measures and matching them to time; evaluating SunSmart with impact evidence (more hats, sunscreen and shade, less sunburn; more advertising, less sunburn) and outcome evidence (falling melanoma in younger Australians, rising in older Australians, explained by latency); judging the secondary sources and the attribution (no control group, self-report, other changes; a package, not the ads alone); explaining equity and proposing an improvement that targets the highest-risk groups and measures them separately; applying this to an unseen school campaign and to an unseen type 2 diabetes campaign.",
+    "nextLesson": "when genetics can help prevent disease (bio-m8-b14)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b13.md"
+  ],
+  "teaching": {
+    "task": "In 1981, a campaign told Australians to slip, slop, slap. Today, melanoma rates in younger Australians are falling. How can prevention campaigns reduce disease, and how do we know one worked?",
+    "causalExplanation": "You've seen how UV damages DNA in skin cells. Prevention means acting before disease or harm develops. Primary prevention stops the exposure itself, like sun protection. Secondary prevention catches disease early, before symptoms, like screening. Tertiary prevention limits the damage once disease is established. A campaign is a planned program of messages and actions, aimed at a defined group, to change one behaviour. Good campaigns start from the mechanism. For melanoma, the risk is UV reaching skin cells, so the target behaviour is reducing that exposure, especially in childhood, when sunburn adds the most risk. Then choose the audience, and decide before you start what you'll measure. If you can't name the exposure, the people and the measure, it's an advert, not a strategy. Here's the problem campaigns run into. People learn the message, agree with it, and still don't change, because habit, cost, convenience and what others do matter more than information. So SunSmart didn't rely on ads. Schools adopted hat and shade policies, councils built shade, UV alerts went into weather forecasts, and commercial solariums were banned. These change the conditions, so the safe choice becomes the easy one. Tobacco control worked the same way, with taxes and smoke-free laws alongside the ads.",
+    "conversationalApproach": "Australia has one of the highest melanoma rates in the world. You've seen how UV damages DNA in skin cells. Good campaigns start from the mechanism. Here's the problem campaigns run into. So how do you measure whether it worked? Process measures count what the campaign did: ads shown, schools signed up. SunSmart has impact evidence over thirty years. Now outcomes. So how sure can we be? Judge the secondary sources first, data someone else collected: who produced them, when, is there real data, and do independent sources agree? Here, they're health agencies and peer-reviewed studies that agree. Effectiveness also means equity: whether the benefit reaches the people at highest risk. Two exam questions. Shade and a uniform hat protect students without relying on memory. Second. Change the conditions, not just the message. So, for any campaign.",
+    "openingDecision": "Australia has one of the highest melanoma rates in the world. In 1981, a Victorian campaign told people to slip, slop, slap, and in 1988 it grew into SunSmart. Today, melanoma rates in younger Australians are falling. But was that the campaign, or something else? So how can prevention campaigns reduce disease, and how do we know one worked?",
+    "understandingCheck": "Two exam questions. First. A school built shade sails and added broad-brimmed hats to its uniform. Over one school year, independent observers counted more students in shade at lunch, and UV meters worn by some students recorded 40 per cent less exposure. Evaluate this strategy for preventing melanoma. Pause here to answer. Second. A council ran an online campaign about type 2 diabetes. Afterwards, residents knew more about its risk factors, but physical activity didn't change. Many residents work long shifts, and few streets have footpaths. Propose two changes that would make the strategy more effective, and a way to measure its success. Pause here to answer.",
+    "curriculumScope": "B8-IQ4-01: \"use secondary sources to evaluate the effectiveness of current disease-prevention methods and develop strategies for the prevention of a non-infectious disease, including but not limited to:\" with the listed example \"educational programs and campaigns\" (this video; \"genetic engineering\" is b14's). Evaluate effectiveness: scenes 5 to 8, attempt 10a. Use secondary sources: scene 8. Develop strategies: scenes 3, 4 and 9, attempt 10c. Inquiry question: \"How can non-infectious diseases be prevented?\" (answered in part; b14 completes it)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One campaign board. A coded campaign frame owns the bottom fifth of the frame from scene 3 to scene 9: four slots, \"exposure\", \"audience\", \"action\", \"measure\" (b07's PathwayStrip, four-slot mode), filled for SunSmart in scenes 3 and 4. From scene 5, a coded evidence ladder stands at the right: three rungs, bottom to top, \"process: what we did\", \"impact: what people did\", \"outcome: what the disease did\", each rung lighting when its evidence is shown, with a small time bar beside it (\"months\", \"years\", \"decades\"). Above the frame, one painted plate or a coded chart at a time. Data are coded charts only (house bar chart, coded lineGraph). No people, hands or faces: behaviour is shown by objects (hat and sunscreen, shade sail, work shirt and hat), surveys by the clipboard plate, groups by coded dot rows. No campaign logos, mascots or brand marks; campaign names appear as plain text chips. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the board clears. the timeline shrinks and dims. on \"learn the message, agree with it, and still don't change\" a coded three-step bar writes, \"knows\", \"agrees\", \"does\", with the third bar much shorter (hand line \"knowing isn't doing\"). the board clears above the frame. the ladder's middle rung is lit. the ladder's top rung lights. the graph shrinks to the upper left. the chips clear. the board clears. the card stays; the EvidenceLadder returns small beside it. the board clears. the card stays; the campaign frame returns small beside it, empty. the campaign frame and the evidence ladder sit side by side full width, each lighting slot by slot or rung by rung on its cue, with small thumbnails (the UV skin plate in \"exposure\", the shade sail in \"action\", the falling under-40 line on the outcome rung). > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. m8-sun-v1.png enters at the upper left; m8-skin-melanoma-v1.png enters at the centre (grey tag \"melanoma: a skin cancer from pigment cells\"). On \"1981\" a coded dated axis draws along the bottom, 1980 to 2020, with a tick and plain text chip \"1981: Slip! Slop! Slap!\"; on \"1988\" a second chip \"1988: SunSmart\" (no logos or mascots). A small grey thumbnail of b07's five chips sits above the chips (tag \"b07: slip, slop, slap, seek, slide\"). On \"melanoma rates in younger Australians are falling\" a short coded falling line draws at the right end of the axis (label \"under 40s\", grey tag \"shape only, see scene 7\"). On \"or something else?\" a hand-drawn \"?\" writes beside the line. On the question the heading writes: \"How can prevention campaigns reduce disease?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Australia has one of the highest melanoma rates in the world.",
+      "narrationCue": "1981 / 1988 / melanoma rates in younger Australians are falling / or something else?",
+      "motionPurpose": "no people. m8-sun-v1.png enters at the upper left; m8-skin-melanoma-v1.png enters at the centre (grey tag \"melanoma: a skin cancer from pigment cells\"). On \"1981\" a coded dated axis draws along the bottom, 1980 to 2020, with a tick and plain text chip \"1981: Slip! Slop! Slap!\"; on \"1988\" a second chip \"1988: SunSmart\" (no logos or mascots). A small grey thumbnail of b07's five chips sits above the chips (tag \"b07: slip, slop, slap, seek, slide\"). On \"melanoma rates in younger Australians are falling\" a short coded falling line draws at the right end of the axis (label \"under 40s\", grey tag \"shape only, see scene 7\"). On \"or something else?\" a hand-drawn \"?\" writes beside the line. On the question the heading writes: \"How can prevention campaigns reduce disease?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. m8-sun-v1.png enters at the upper left; m8-skin-melanoma-v1.png enters at the centre (grey tag \"melanoma: a skin cancer from pigment cells\"). On \"1981\" a coded dated axis draws along the bottom, 1980 to 2020, with a tick and plain text chip \"1981: Slip! Slop! Slap!\"; on \"1988\" a second chip \"1988: SunSmart\" (no logos or mascots). A small grey thumbnail of b07's five chips sits above the chips (tag \"b07: slip, slop, slap, seek, slide\"). On \"melanoma rates in younger Australians are falling\" a short coded falling line draws at the right end of the axis (label \"under 40s\", grey tag \"shape only, see scene 7\"). On \"or something else?\" a hand-drawn \"?\" writes beside the line. On the question the heading writes: \"How can prevention campaigns reduce disease?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m8-sun-v1.png",
+        "m8-skin-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (a 1981 campaign, and the young): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "prevention-levels",
+      "visualDecision": "new",
+      "visualReference": "the board clears. m6-uv-skin-v1.png sits small at the upper left (grey tag \"b07: UV damages skin-cell DNA\"). A heading chip writes \"prevention: when we act\". A coded three-step timeline writes left to right: \"no disease yet\", \"disease starting, no symptoms\", \"disease established\". On \"Prevention\" the gloss writes \"prevention: acting before disease or harm develops\". On \"Primary\" the first step fills with m8-sun-protection-v1.png (label \"primary: stop the exposure\"); on \"Secondary\" the second fills with m5x-clipboard-sheet-v1.png small (label \"secondary: detect early (screening)\"); on \"Tertiary\" the third fills with b08's m8-eye-cutaway-v1.png small (label \"tertiary: limit damage (for example diabetes eye checks)\"). Earlier labels dim (at most three bright). On \"campaign\" the first step brightens again and a gloss writes \"campaign: planned messages and actions, a defined group, one behaviour\". Hold one second.",
+      "teachingReason": "You've seen how UV damages DNA in skin cells.",
+      "narrationCue": "Prevention / Primary / Secondary / Tertiary / campaign",
+      "motionPurpose": "the board clears. m6-uv-skin-v1.png sits small at the upper left (grey tag \"b07: UV damages skin-cell DNA\"). A heading chip writes \"prevention: when we act\". A coded three-step timeline writes left to right: \"no disease yet\", \"disease starting, no symptoms\", \"disease established\". On \"Prevention\" the gloss writes \"prevention: acting before disease or harm develops\". On \"Primary\" the first step fills with m8-sun-protection-v1.png (label \"primary: stop the exposure\"); on \"Secondary\" the second fills with m5x-clipboard-sheet-v1.png small (label \"secondary: detect early (screening)\"); on \"Tertiary\" the third fills with b08's m8-eye-cutaway-v1.png small (label \"tertiary: limit damage (for example diabetes eye checks)\"). Earlier labels dim (at most three bright). On \"campaign\" the first step brightens again and a gloss writes \"campaign: planned messages and actions, a defined group, one behaviour\". Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. m6-uv-skin-v1.png sits small at the upper left (grey tag \"b07: UV damages skin-cell DNA\"). A heading chip writes \"prevention: when we act\". A coded three-step timeline writes left to right: \"no disease yet\", \"disease starting, no symptoms\", \"disease established\". On \"Prevention\" the gloss writes \"prevention: acting before disease or harm develops\". On \"Primary\" the first step fills with m8-sun-protection-v1.png (label \"primary: stop the exposure\"); on \"Secondary\" the second fills with m5x-clipboard-sheet-v1.png small (label \"secondary: detect early (screening)\"); on \"Tertiary\" the third fills with b08's m8-eye-cutaway-v1.png small (label \"tertiary: limit damage (for example diabetes eye checks)\"). Earlier labels dim (at most three bright). On \"campaign\" the first step brightens again and a gloss writes \"campaign: planned messages and actions, a defined group, one behaviour\". Hold one second.",
+      "motionTools": [
+        "m6-uv-skin-v1.png",
+        "m8-sun-protection-v1.png",
+        "m5x-clipboard-sheet-v1.png",
+        "m8-eye-cutaway-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "three levels, and what a campaign is: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "design-frame",
+      "visualDecision": "new",
+      "visualReference": "the timeline shrinks and dims. b07's PathwayStrip draws at the bottom as the campaign frame, four slots on cues: \"exposure\", \"audience\", \"action\", \"measure\". On \"UV reaching skin cells\" the exposure slot fills \"UV on skin\" with a m6-uv-skin-v1.png thumbnail; on \"especially in childhood\" a grey tag \"childhood sunburn adds most risk\". On \"choose the audience\" the audience slot fills \"children, teens, outdoor workers\" (coded DotRows, three short rows). On \"what you'll measure\" the measure slot fills with a \"?\" that stays until scene 5. On \"it's an advert, not a strategy\" a chip \"a catchy advert\" writes, and an arrow from it to the frame takes a grey scribble cross (small text \"name exposure, people, measure\"). At most three bright items. Hold one second.",
+      "teachingReason": "Good campaigns start from the mechanism.",
+      "narrationCue": "UV reaching skin cells / especially in childhood / choose the audience / what you'll measure / it's an advert, not a strategy",
+      "motionPurpose": "the timeline shrinks and dims. b07's PathwayStrip draws at the bottom as the campaign frame, four slots on cues: \"exposure\", \"audience\", \"action\", \"measure\". On \"UV reaching skin cells\" the exposure slot fills \"UV on skin\" with a m6-uv-skin-v1.png thumbnail; on \"especially in childhood\" a grey tag \"childhood sunburn adds most risk\". On \"choose the audience\" the audience slot fills \"children, teens, outdoor workers\" (coded DotRows, three short rows). On \"what you'll measure\" the measure slot fills with a \"?\" that stays until scene 5. On \"it's an advert, not a strategy\" a chip \"a catchy advert\" writes, and an arrow from it to the frame takes a grey scribble cross (small text \"name exposure, people, measure\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline shrinks and dims. b07's PathwayStrip draws at the bottom as the campaign frame, four slots on cues: \"exposure\", \"audience\", \"action\", \"measure\". On \"UV reaching skin cells\" the exposure slot fills \"UV on skin\" with a m6-uv-skin-v1.png thumbnail; on \"especially in childhood\" a grey tag \"childhood sunburn adds most risk\". On \"choose the audience\" the audience slot fills \"children, teens, outdoor workers\" (coded DotRows, three short rows). On \"what you'll measure\" the measure slot fills with a \"?\" that stays until scene 5. On \"it's an advert, not a strategy\" a chip \"a catchy advert\" writes, and an arrow from it to the frame takes a grey scribble cross (small text \"name exposure, people, measure\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "m6-uv-skin-v1.png",
+        "DotRows",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "design from the mechanism: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "knowing-doing",
+      "visualDecision": "new",
+      "visualReference": "on \"learn the message, agree with it, and still don't change\" a coded three-step bar writes, \"knows\", \"agrees\", \"does\", with the third bar much shorter (hand line \"knowing isn't doing\"). On \"habit, cost, convenience and what others do\" four grey chips cluster around the gap (at most three bright). On \"didn't rely on ads\" new m8-television-1980s-blank-v1.png enters small (tag \"ads: one layer\"). On \"hat and shade policies\" m8-sun-protection-v1.png drops into the action slot; on \"councils built shade\" new m8-shade-sail-v1.png enters at the centre; on \"UV alerts went into weather forecasts\" a coded UV index scale (green to violet, a pointer at \"extreme\") writes small (grey tag \"UV index\"); on \"commercial solariums were banned\" a grey chip \"solarium bans (by 2016)\" with a small cross mark. The action slot fills \"education + hats + shade + UV alerts + bans\" (earlier items dim). On \"the safe choice becomes the easy one\" the \"does\" bar grows; on \"Tobacco control\" a grey tag \"b11: tobacco, in layers\" with chips \"taxes\", \"smoke-free laws\". A chip \"a memorable ad means it worked\" writes and takes a grey scribble cross. Hold one second.",
+      "teachingReason": "Here's the problem campaigns run into.",
+      "narrationCue": "learn the message, agree with it, and still don't change / habit, cost, convenience and what others do / didn't rely on ads / hat and shade policies / councils built shade / UV alerts went into weather forecasts / commercial solariums were banned / the safe choice becomes the easy one / Tobacco control",
+      "motionPurpose": "on \"learn the message, agree with it, and still don't change\" a coded three-step bar writes, \"knows\", \"agrees\", \"does\", with the third bar much shorter (hand line \"knowing isn't doing\"). On \"habit, cost, convenience and what others do\" four grey chips cluster around the gap (at most three bright). On \"didn't rely on ads\" new m8-television-1980s-blank-v1.png enters small (tag \"ads: one layer\"). On \"hat and shade policies\" m8-sun-protection-v1.png drops into the action slot; on \"councils built shade\" new m8-shade-sail-v1.png enters at the centre; on \"UV alerts went into weather forecasts\" a coded UV index scale (green to violet, a pointer at \"extreme\") writes small (grey tag \"UV index\"); on \"commercial solariums were banned\" a grey chip \"solarium bans (by 2016)\" with a small cross mark. The action slot fills \"education + hats + shade + UV alerts + bans\" (earlier items dim). On \"the safe choice becomes the easy one\" the \"does\" bar grows; on \"Tobacco control\" a grey tag \"b11: tobacco, in layers\" with chips \"taxes\", \"smoke-free laws\". A chip \"a memorable ad means it worked\" writes and takes a grey scribble cross. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"learn the message, agree with it, and still don't change\" a coded three-step bar writes, \"knows\", \"agrees\", \"does\", with the third bar much shorter (hand line \"knowing isn't doing\"). On \"habit, cost, convenience and what others do\" four grey chips cluster around the gap (at most three bright). On \"didn't rely on ads\" new m8-television-1980s-blank-v1.png enters small (tag \"ads: one layer\"). On \"hat and shade policies\" m8-sun-protection-v1.png drops into the action slot; on \"councils built shade\" new m8-shade-sail-v1.png enters at the centre; on \"UV alerts went into weather forecasts\" a coded UV index scale (green to violet, a pointer at \"extreme\") writes small (grey tag \"UV index\"); on \"commercial solariums were banned\" a grey chip \"solarium bans (by 2016)\" with a small cross mark. The action slot fills \"education + hats + shade + UV alerts + bans\" (earlier items dim). On \"the safe choice becomes the easy one\" the \"does\" bar grows; on \"Tobacco control\" a grey tag \"b11: tobacco, in layers\" with chips \"taxes\", \"smoke-free laws\". A chip \"a memorable ad means it worked\" writes and takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "m8-television-1980s-blank-v1.png",
+        "m8-sun-protection-v1.png",
+        "m8-shade-sail-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "knowing isn't doing: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "evidence-ladder",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the frame. A heading chip writes \"evidence: what we measure\" (a different shape and colour from scene 2's timeline). The coded EvidenceLadder draws at the right, three rungs from the bottom. On \"Process measures\" the bottom rung lights \"process: what we did\" with small chips \"ads shown\", \"schools signed up\" and a time bar \"months\". On \"Impact measures\" the middle rung lights \"impact: what people did\" with m8-sun-protection-v1.png small and chips \"hats, sunscreen, sunburn\" (time bar \"years\"). On \"Outcome measures\" the top rung lights \"outcome: what the disease did\" with m8-skin-melanoma-v1.png small (time bar \"decades\"). On \"melanoma takes decades to appear\" the top rung's time bar stretches and dims (grey tag \"b07: latency\"). On \"impact is the best evidence you can get\" the middle rung pulses. The measure slot in the campaign frame now fills \"impact first, outcome later\". At most three bright items. Hold one second.",
+      "teachingReason": "So how do you measure whether it worked? Process measures count what the campaign did: ads shown, schools signed up.",
+      "narrationCue": "Process measures / Impact measures / Outcome measures / melanoma takes decades to appear / impact is the best evidence you can get",
+      "motionPurpose": "the board clears above the frame. A heading chip writes \"evidence: what we measure\" (a different shape and colour from scene 2's timeline). The coded EvidenceLadder draws at the right, three rungs from the bottom. On \"Process measures\" the bottom rung lights \"process: what we did\" with small chips \"ads shown\", \"schools signed up\" and a time bar \"months\". On \"Impact measures\" the middle rung lights \"impact: what people did\" with m8-sun-protection-v1.png small and chips \"hats, sunscreen, sunburn\" (time bar \"years\"). On \"Outcome measures\" the top rung lights \"outcome: what the disease did\" with m8-skin-melanoma-v1.png small (time bar \"decades\"). On \"melanoma takes decades to appear\" the top rung's time bar stretches and dims (grey tag \"b07: latency\"). On \"impact is the best evidence you can get\" the middle rung pulses. The measure slot in the campaign frame now fills \"impact first, outcome later\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the frame. A heading chip writes \"evidence: what we measure\" (a different shape and colour from scene 2's timeline). The coded EvidenceLadder draws at the right, three rungs from the bottom. On \"Process measures\" the bottom rung lights \"process: what we did\" with small chips \"ads shown\", \"schools signed up\" and a time bar \"months\". On \"Impact measures\" the middle rung lights \"impact: what people did\" with m8-sun-protection-v1.png small and chips \"hats, sunscreen, sunburn\" (time bar \"years\"). On \"Outcome measures\" the top rung lights \"outcome: what the disease did\" with m8-skin-melanoma-v1.png small (time bar \"decades\"). On \"melanoma takes decades to appear\" the top rung's time bar stretches and dims (grey tag \"b07: latency\"). On \"impact is the best evidence you can get\" the middle rung pulses. The measure slot in the campaign frame now fills \"impact first, outcome later\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "EvidenceLadder",
+        "m8-sun-protection-v1.png",
+        "m8-skin-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "three levels of evidence: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "impact-evidence",
+      "visualDecision": "new",
+      "visualReference": "the ladder's middle rung is lit. m5x-clipboard-sheet-v1.png enters small at the left (tag \"summer surveys, Melbourne, 1987 to 2017\"; grey tag \"Tabbakh et al. 2019\"). On \"more people wearing hats and sunscreen and seeking shade\" a coded two-line lineGraph draws, x axis 1987 to 2017: \"used sunscreen\" and \"wore a hat\" rising (values in Numbers to verify; if not confirmed, grey tag \"shape only\"). On \"fewer getting sunburnt on weekends\" a third line, \"sunburnt on a summer weekend\", falls (label \"sunburn down\"). On \"more SunSmart TV advertising\" the lines shrink and m8-television-1980s-blank-v1.png enters beside a small coded two-bar chart: \"summers with less advertising\" and \"summers with more advertising\", y axis \"sunburn\" (shorter bar for more advertising; grey tag \"Dobbinson et al. 2008, shape only\"). On \"like a dose-response\" a grey tag \"b11: dose-response\" and a rising arrow over a mini set of bars. On \"not just a change in fashion\" a grey chip \"fashion changed anyway?\" writes, then dims. At most three bright items. Hold one second.",
+      "teachingReason": "SunSmart has impact evidence over thirty years.",
+      "narrationCue": "more people wearing hats and sunscreen and seeking shade / fewer getting sunburnt on weekends / more SunSmart TV advertising / like a dose-response / not just a change in fashion",
+      "motionPurpose": "the ladder's middle rung is lit. m5x-clipboard-sheet-v1.png enters small at the left (tag \"summer surveys, Melbourne, 1987 to 2017\"; grey tag \"Tabbakh et al. 2019\"). On \"more people wearing hats and sunscreen and seeking shade\" a coded two-line lineGraph draws, x axis 1987 to 2017: \"used sunscreen\" and \"wore a hat\" rising (values in Numbers to verify; if not confirmed, grey tag \"shape only\"). On \"fewer getting sunburnt on weekends\" a third line, \"sunburnt on a summer weekend\", falls (label \"sunburn down\"). On \"more SunSmart TV advertising\" the lines shrink and m8-television-1980s-blank-v1.png enters beside a small coded two-bar chart: \"summers with less advertising\" and \"summers with more advertising\", y axis \"sunburn\" (shorter bar for more advertising; grey tag \"Dobbinson et al. 2008, shape only\"). On \"like a dose-response\" a grey tag \"b11: dose-response\" and a rising arrow over a mini set of bars. On \"not just a change in fashion\" a grey chip \"fashion changed anyway?\" writes, then dims. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder's middle rung is lit. m5x-clipboard-sheet-v1.png enters small at the left (tag \"summer surveys, Melbourne, 1987 to 2017\"; grey tag \"Tabbakh et al. 2019\"). On \"more people wearing hats and sunscreen and seeking shade\" a coded two-line lineGraph draws, x axis 1987 to 2017: \"used sunscreen\" and \"wore a hat\" rising (values in Numbers to verify; if not confirmed, grey tag \"shape only\"). On \"fewer getting sunburnt on weekends\" a third line, \"sunburnt on a summer weekend\", falls (label \"sunburn down\"). On \"more SunSmart TV advertising\" the lines shrink and m8-television-1980s-blank-v1.png enters beside a small coded two-bar chart: \"summers with less advertising\" and \"summers with more advertising\", y axis \"sunburn\" (shorter bar for more advertising; grey tag \"Dobbinson et al. 2008, shape only\"). On \"like a dose-response\" a grey tag \"b11: dose-response\" and a rising arrow over a mini set of bars. On \"not just a change in fashion\" a grey chip \"fashion changed anyway?\" writes, then dims. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m5x-clipboard-sheet-v1.png",
+        "lineGraph",
+        "m8-television-1980s-blank-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "impact evidence: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "outcome-evidence",
+      "visualDecision": "new",
+      "visualReference": "the ladder's top rung lights. A coded lineGraph draws at the centre: x axis 1985 to 2020, y axis \"new melanoma cases per 100,000 per year\" (grey tag \"b10: rates; age-standardised\"); on \"under forty fell between 1995 and 2014\" a line \"under 40, invasive melanoma\" falls across 1995 to 2014 only (grey tag \"Aitken et al. 2018, Queensland, 1995 to 2014\"; shape only, values in Numbers to verify); on \"since the late 1990s\" a small grey tag \"national: AIHW, falling since the late 1990s\" writes beside the line, with no national line drawn; on \"In older Australians, rates kept rising\" a second line \"60 and over\" keeps rising (label \"still rising\"). On \"built up their UV damage before the campaign began\" a coded bracket under the older line spans \"exposure before 1981\" (label \"damage already done\"); on \"grew up with hats and shade\" m8-sun-protection-v1.png small slides under the younger line (label \"grew up SunSmart\"). On \"the pattern you'd expect\" the two lines pulse in turn. At most three bright items. Hold one second.",
+      "teachingReason": "Now outcomes.",
+      "narrationCue": "under forty fell between 1995 and 2014 / since the late 1990s / In older Australians, rates kept rising / built up their UV damage before the campaign began / grew up with hats and shade / the pattern you'd expect",
+      "motionPurpose": "the ladder's top rung lights. A coded lineGraph draws at the centre: x axis 1985 to 2020, y axis \"new melanoma cases per 100,000 per year\" (grey tag \"b10: rates; age-standardised\"); on \"under forty fell between 1995 and 2014\" a line \"under 40, invasive melanoma\" falls across 1995 to 2014 only (grey tag \"Aitken et al. 2018, Queensland, 1995 to 2014\"; shape only, values in Numbers to verify); on \"since the late 1990s\" a small grey tag \"national: AIHW, falling since the late 1990s\" writes beside the line, with no national line drawn; on \"In older Australians, rates kept rising\" a second line \"60 and over\" keeps rising (label \"still rising\"). On \"built up their UV damage before the campaign began\" a coded bracket under the older line spans \"exposure before 1981\" (label \"damage already done\"); on \"grew up with hats and shade\" m8-sun-protection-v1.png small slides under the younger line (label \"grew up SunSmart\"). On \"the pattern you'd expect\" the two lines pulse in turn. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder's top rung lights. A coded lineGraph draws at the centre: x axis 1985 to 2020, y axis \"new melanoma cases per 100,000 per year\" (grey tag \"b10: rates; age-standardised\"); on \"under forty fell between 1995 and 2014\" a line \"under 40, invasive melanoma\" falls across 1995 to 2014 only (grey tag \"Aitken et al. 2018, Queensland, 1995 to 2014\"; shape only, values in Numbers to verify); on \"since the late 1990s\" a small grey tag \"national: AIHW, falling since the late 1990s\" writes beside the line, with no national line drawn; on \"In older Australians, rates kept rising\" a second line \"60 and over\" keeps rising (label \"still rising\"). On \"built up their UV damage before the campaign began\" a coded bracket under the older line spans \"exposure before 1981\" (label \"damage already done\"); on \"grew up with hats and shade\" m8-sun-protection-v1.png small slides under the younger line (label \"grew up SunSmart\"). On \"the pattern you'd expect\" the two lines pulse in turn. At most three bright items. Hold one second.",
+      "motionTools": [
+        "lineGraph",
+        "m8-sun-protection-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "outcome evidence, and latency: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "how-sure",
+      "visualDecision": "adjust",
+      "visualReference": "the graph shrinks to the upper left. On \"secondary sources\" the gloss writes \"secondary source: data someone else collected\". Four check chips write in a column on their cues: \"who produced it?\", \"when?\", \"real data?\", \"do others agree?\" (at most three bright); on \"health agencies and peer-reviewed studies\" small grey tags write by them, \"AIHW\", \"Cancer Council\", \"peer-reviewed journals\", and the four chips tick. On \"no randomised control group\" a coded map-shaped dot field of Australia (coded dots only, no map plate) stays one colour, with an empty second box beside it labelled \"no randomised comparison here\" (grey tags \"b11: control group\" and \"comparison regions or staggered rollouts are possible\"). On \"self-reported\" the clipboard thumbnail returns with a grey tag \"people over-report sun protection\". On \"other exposures and policies changed too\" grey chips write: \"better sunscreens\", \"cheaper sunscreen\", \"fashion\" (label \"possible confounders\"). On \"a package, not the ads alone\" the action slot in the frame brightens as a whole. A chip \"rates fell, so the ads did it\" writes and takes a grey scribble cross. Hold one second.",
+      "teachingReason": "So how sure can we be? Judge the secondary sources first, data someone else collected: who produced them, when, is there real data, and do independent sources agree? Here, they're health agencies and peer-reviewed studies that agree.",
+      "narrationCue": "secondary sources / health agencies and peer-reviewed studies / no randomised control group / self-reported / other exposures and policies changed too / a package, not the ads alone",
+      "motionPurpose": "the graph shrinks to the upper left. On \"secondary sources\" the gloss writes \"secondary source: data someone else collected\". Four check chips write in a column on their cues: \"who produced it?\", \"when?\", \"real data?\", \"do others agree?\" (at most three bright); on \"health agencies and peer-reviewed studies\" small grey tags write by them, \"AIHW\", \"Cancer Council\", \"peer-reviewed journals\", and the four chips tick. On \"no randomised control group\" a coded map-shaped dot field of Australia (coded dots only, no map plate) stays one colour, with an empty second box beside it labelled \"no randomised comparison here\" (grey tags \"b11: control group\" and \"comparison regions or staggered rollouts are possible\"). On \"self-reported\" the clipboard thumbnail returns with a grey tag \"people over-report sun protection\". On \"other exposures and policies changed too\" grey chips write: \"better sunscreens\", \"cheaper sunscreen\", \"fashion\" (label \"possible confounders\"). On \"a package, not the ads alone\" the action slot in the frame brightens as a whole. A chip \"rates fell, so the ads did it\" writes and takes a grey scribble cross. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the graph shrinks to the upper left. On \"secondary sources\" the gloss writes \"secondary source: data someone else collected\". Four check chips write in a column on their cues: \"who produced it?\", \"when?\", \"real data?\", \"do others agree?\" (at most three bright); on \"health agencies and peer-reviewed studies\" small grey tags write by them, \"AIHW\", \"Cancer Council\", \"peer-reviewed journals\", and the four chips tick. On \"no randomised control group\" a coded map-shaped dot field of Australia (coded dots only, no map plate) stays one colour, with an empty second box beside it labelled \"no randomised comparison here\" (grey tags \"b11: control group\" and \"comparison regions or staggered rollouts are possible\"). On \"self-reported\" the clipboard thumbnail returns with a grey tag \"people over-report sun protection\". On \"other exposures and policies changed too\" grey chips write: \"better sunscreens\", \"cheaper sunscreen\", \"fashion\" (label \"possible confounders\"). On \"a package, not the ads alone\" the action slot in the frame brightens as a whole. A chip \"rates fell, so the ads did it\" writes and takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "how sure can we be?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "equity-improve",
+      "visualDecision": "new",
+      "visualReference": "the chips clear. Coded DotRows write: four short rows, \"children\", \"teens and young adults\", \"adults\", \"outdoor workers\", each with a tinted share of \"sunburnt last summer\" dots (teaching shapes; grey tag \"pattern from the National Sun Protection Survey; see Numbers to verify\"). On \"equity\" the gloss writes \"equity: does the benefit reach the highest-risk people?\". On \"lift the average\" a single average line draws across the rows, sitting well below the teens row (label \"average hides the gap\"). On \"Teenagers and young adults\" that row pulses; on \"outdoor workers\" new m8-outdoor-work-shirt-hat-v1.png enters beside its row. On \"reach them where they are\" the audience slot in the frame refills \"teens, young adults, outdoor workers\", and the action slot refills \"shade, shirts, hats supplied at work and sport\" with m8-shade-sail-v1.png small; on \"cost doesn't decide\" a grey chip \"free, not recommended\"; on \"measured separately\" the measure slot refills \"sunburn by group\" and the four rows each get their own small bar. Hold one second.",
+      "teachingReason": "Effectiveness also means equity: whether the benefit reaches the people at highest risk.",
+      "narrationCue": "equity / lift the average / Teenagers and young adults / outdoor workers / reach them where they are / cost doesn't decide / measured separately",
+      "motionPurpose": "the chips clear. Coded DotRows write: four short rows, \"children\", \"teens and young adults\", \"adults\", \"outdoor workers\", each with a tinted share of \"sunburnt last summer\" dots (teaching shapes; grey tag \"pattern from the National Sun Protection Survey; see Numbers to verify\"). On \"equity\" the gloss writes \"equity: does the benefit reach the highest-risk people?\". On \"lift the average\" a single average line draws across the rows, sitting well below the teens row (label \"average hides the gap\"). On \"Teenagers and young adults\" that row pulses; on \"outdoor workers\" new m8-outdoor-work-shirt-hat-v1.png enters beside its row. On \"reach them where they are\" the audience slot in the frame refills \"teens, young adults, outdoor workers\", and the action slot refills \"shade, shirts, hats supplied at work and sport\" with m8-shade-sail-v1.png small; on \"cost doesn't decide\" a grey chip \"free, not recommended\"; on \"measured separately\" the measure slot refills \"sunburn by group\" and the four rows each get their own small bar. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the chips clear. Coded DotRows write: four short rows, \"children\", \"teens and young adults\", \"adults\", \"outdoor workers\", each with a tinted share of \"sunburnt last summer\" dots (teaching shapes; grey tag \"pattern from the National Sun Protection Survey; see Numbers to verify\"). On \"equity\" the gloss writes \"equity: does the benefit reach the highest-risk people?\". On \"lift the average\" a single average line draws across the rows, sitting well below the teens row (label \"average hides the gap\"). On \"Teenagers and young adults\" that row pulses; on \"outdoor workers\" new m8-outdoor-work-shirt-hat-v1.png enters beside its row. On \"reach them where they are\" the audience slot in the frame refills \"teens, young adults, outdoor workers\", and the action slot refills \"shade, shirts, hats supplied at work and sport\" with m8-shade-sail-v1.png small; on \"cost doesn't decide\" a grey chip \"free, not recommended\"; on \"measured separately\" the measure slot refills \"sunburn by group\" and the four rows each get their own small bar. Hold one second.",
+      "motionTools": [
+        "DotRows",
+        "m8-outdoor-work-shirt-hat-v1.png",
+        "m8-shade-sail-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "equity, and an improvement: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A school built shade sails over its playground and made a broad-brimmed hat part of its uniform. Over one school year, independent observers recorded more students in shade at lunchtime, and personal UV meters worn by a sample of students recorded 40% less UV exposure during school hours than in the year before.\" Demand: \"Evaluate the effectiveness of this policy as a strategy for preventing melanoma. (5 marks)\". m8-shade-sail-v1.png (this lesson's plate) sits small at the card's upper left; no other plate. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A school built shade sails over its playground and made a broad-brimmed hat part of its uniform. Over one school year, independent observers recorded more students in shade at lunchtime, and personal UV meters worn by a sample of students recorded 40% less UV exposure during school hours than in the year before.\" Demand: \"Evaluate the effectiveness of this policy as a strategy for preventing melanoma. (5 marks)\". m8-shade-sail-v1.png (this lesson's plate) sits small at the card's upper left; no other plate. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A school built shade sails over its playground and made a broad-brimmed hat part of its uniform. Over one school year, independent observers recorded more students in shade at lunchtime, and personal UV meters worn by a sample of students recorded 40% less UV exposure during school hours than in the year before.\" Demand: \"Evaluate the effectiveness of this policy as a strategy for preventing melanoma. (5 marks)\". m8-shade-sail-v1.png (this lesson's plate) sits small at the card's upper left; no other plate. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-shade-sail-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (a school campaign): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays; the EvidenceLadder returns small beside it. On \"without relying on memory\" \"built shade sails\" and \"part of its uniform\" underline (tag \"conditions, not information\"). On \"impact measures\" \"more students in shade\" and \"40% less UV exposure\" underline and the middle rung lights (tag \"impact: behaviour and exposure\"). On \"observed and measured\" \"independent observers\" and \"personal UV meters\" underline (tag \"observed and measured: stronger than self-report\"). On \"one year can't show a fall in melanoma\" \"one school year\" underlines and the top rung stays grey (tag \"outcome needs decades\"). On \"promising, with outcome evidence still to come\" a judgement line writes under the card. On \"classic mistake\" a chip \"melanoma has been prevented\" writes and takes a grey scribble cross, small text \"impact now, outcome later\". Settle one second.",
+      "teachingReason": "Shade and a uniform hat protect students without relying on memory.",
+      "narrationCue": "without relying on memory / impact measures / observed and measured / one year can't show a fall in melanoma / promising, with outcome evidence still to come / classic mistake",
+      "motionPurpose": "the card stays; the EvidenceLadder returns small beside it. On \"without relying on memory\" \"built shade sails\" and \"part of its uniform\" underline (tag \"conditions, not information\"). On \"impact measures\" \"more students in shade\" and \"40% less UV exposure\" underline and the middle rung lights (tag \"impact: behaviour and exposure\"). On \"observed and measured\" \"independent observers\" and \"personal UV meters\" underline (tag \"observed and measured: stronger than self-report\"). On \"one year can't show a fall in melanoma\" \"one school year\" underlines and the top rung stays grey (tag \"outcome needs decades\"). On \"promising, with outcome evidence still to come\" a judgement line writes under the card. On \"classic mistake\" a chip \"melanoma has been prevented\" writes and takes a grey scribble cross, small text \"impact now, outcome later\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; the EvidenceLadder returns small beside it. On \"without relying on memory\" \"built shade sails\" and \"part of its uniform\" underline (tag \"conditions, not information\"). On \"impact measures\" \"more students in shade\" and \"40% less UV exposure\" underline and the middle rung lights (tag \"impact: behaviour and exposure\"). On \"observed and measured\" \"independent observers\" and \"personal UV meters\" underline (tag \"observed and measured: stronger than self-report\"). On \"one year can't show a fall in melanoma\" \"one school year\" underlines and the top rung stays grey (tag \"outcome needs decades\"). On \"promising, with outcome evidence still to come\" a judgement line writes under the card. On \"classic mistake\" a chip \"melanoma has been prevented\" writes and takes a grey scribble cross, small text \"impact now, outcome later\". Settle one second.",
+      "motionTools": [
+        "EvidenceLadder",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A local council ran a six-month online campaign about type 2 diabetes. A survey afterwards showed residents knew more about its risk factors, but measured physical activity did not change. Many residents work long or irregular shifts, and few streets in the area have footpaths.\" Demand: \"Propose TWO changes that would make this prevention strategy more effective, and a way to measure its success. Justify each part. (5 marks)\". m8-walking-shoes-v1.png (b12) sits small at the card's upper left. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A local council ran a six-month online campaign about type 2 diabetes. A survey afterwards showed residents knew more about its risk factors, but measured physical activity did not change. Many residents work long or irregular shifts, and few streets in the area have footpaths.\" Demand: \"Propose TWO changes that would make this prevention strategy more effective, and a way to measure its success. Justify each part. (5 marks)\". m8-walking-shoes-v1.png (b12) sits small at the card's upper left. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A local council ran a six-month online campaign about type 2 diabetes. A survey afterwards showed residents knew more about its risk factors, but measured physical activity did not change. Many residents work long or irregular shifts, and few streets in the area have footpaths.\" Demand: \"Propose TWO changes that would make this prevention strategy more effective, and a way to measure its success. Justify each part. (5 marks)\". m8-walking-shoes-v1.png (b12) sits small at the card's upper left. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-walking-shoes-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (improve a campaign): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays; the campaign frame returns small beside it, empty. On \"Change the conditions\" \"knew more ... but measured physical activity did not change\" underlines (tag \"knowing isn't doing\"). On \"footpaths and safe routes\" \"few streets ... have footpaths\" underlines; the action slot fills \"footpaths, safe routes\" with the shoes thumbnail. On \"where people already go\" \"long or irregular shifts\" underlines; the audience and action slots add \"free risk checks at workplaces and pharmacies; early support\" (grey tag \"b12: early weight loss can reverse it\"). On \"Measure activity first\" the measure slot fills \"activity (impact)\"; on \"new diabetes rates over several years\" it adds \"rate of new diabetes over years (outcome), same testing in a comparison area, by group\" (grey tag \"more testing finds more cases at first\"). On \"classic mistake\" a chip \"more information\" writes and takes a grey scribble cross, small text \"remove the barrier\". Settle one second.",
+      "teachingReason": "Change the conditions, not just the message.",
+      "narrationCue": "Change the conditions / footpaths and safe routes / where people already go / Measure activity first / new diabetes rates over several years / classic mistake",
+      "motionPurpose": "the card stays; the campaign frame returns small beside it, empty. On \"Change the conditions\" \"knew more ... but measured physical activity did not change\" underlines (tag \"knowing isn't doing\"). On \"footpaths and safe routes\" \"few streets ... have footpaths\" underlines; the action slot fills \"footpaths, safe routes\" with the shoes thumbnail. On \"where people already go\" \"long or irregular shifts\" underlines; the audience and action slots add \"free risk checks at workplaces and pharmacies; early support\" (grey tag \"b12: early weight loss can reverse it\"). On \"Measure activity first\" the measure slot fills \"activity (impact)\"; on \"new diabetes rates over several years\" it adds \"rate of new diabetes over years (outcome), same testing in a comparison area, by group\" (grey tag \"more testing finds more cases at first\"). On \"classic mistake\" a chip \"more information\" writes and takes a grey scribble cross, small text \"remove the barrier\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; the campaign frame returns small beside it, empty. On \"Change the conditions\" \"knew more ... but measured physical activity did not change\" underlines (tag \"knowing isn't doing\"). On \"footpaths and safe routes\" \"few streets ... have footpaths\" underlines; the action slot fills \"footpaths, safe routes\" with the shoes thumbnail. On \"where people already go\" \"long or irregular shifts\" underlines; the audience and action slots add \"free risk checks at workplaces and pharmacies; early support\" (grey tag \"b12: early weight loss can reverse it\"). On \"Measure activity first\" the measure slot fills \"activity (impact)\"; on \"new diabetes rates over several years\" it adds \"rate of new diabetes over years (outcome), same testing in a comparison area, by group\" (grey tag \"more testing finds more cases at first\"). On \"classic mistake\" a chip \"more information\" writes and takes a grey scribble cross, small text \"remove the barrier\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the campaign frame and the evidence ladder sit side by side full width, each lighting slot by slot or rung by rung on its cue, with small thumbnails (the UV skin plate in \"exposure\", the shade sail in \"action\", the falling under-40 line on the outcome rung). The hand line \"what we did, what people did, what the disease did\" writes beside the ladder. A \"Next\" chip slides in at the lower right: \"Next: When can genetics help prevent disease?\" with a small coded DNA strand. Hold half a second before the notes.",
+      "teachingReason": "So, for any campaign.",
+      "narrationCue": "So, for any campaign",
+      "motionPurpose": "the campaign frame and the evidence ladder sit side by side full width, each lighting slot by slot or rung by rung on its cue, with small thumbnails (the UV skin plate in \"exposure\", the shade sail in \"action\", the falling under-40 line on the outcome rung). The hand line \"what we did, what people did, what the disease did\" writes beside the ladder. A \"Next\" chip slides in at the lower right: \"Next: When can genetics help prevent disease?\" with a small coded DNA strand. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the campaign frame and the evidence ladder sit side by side full width, each lighting slot by slot or rung by rung on its cue, with small thumbnails (the UV skin plate in \"exposure\", the shade sail in \"action\", the falling under-40 line on the outcome rung). The hand line \"what we did, what people did, what the disease did\" writes beside the ladder. A \"Next\" chip slides in at the lower right: \"Next: When can genetics help prevent disease?\" with a small coded DNA strand. Hold half a second before the notes.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b13-learning-review.md",
+      "sha256": "a0f5ac3952a5a1748627e7f99132a6648326113f681ebf31566a0c909ea2c4e9"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b13-claude-science-check.md",
+      "sha256": "333352716eec066b932d1814803ddca574a4050396bd3440eb017f6f55a797a3"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

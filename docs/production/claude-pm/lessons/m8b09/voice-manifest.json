@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B09-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b09/lesson.json",
+  "lessonSha256": "f92ec2f6f13914ba77d4ba1fa3f6cef516b2455e0532ac9bc53fdbfbd74ba34b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b09/lesson.production-brief.json",
+    "sha256": "260cad7d4d8846e525a46e33b84226fbff8d1d284d0e7b3d539bd37e635bcb80"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Every day, your body makes huge numbers of new cells by mitosis, and each time DNA is copied, a few changes can slip through. So most of us carry cells with changed DNA. Yet most of those cells never become cancer. Why not? And when one does, how does it spread? That's today's question: how does cancer begin and spread?",
+      "hash": "494428ed8488",
+      "textSha256": "494428ed8488667b08acdb873e998fb2221c6dd4e16c6356b126a221382a52d2",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/hook.494428ed8488.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/hook.494428ed8488.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/hook.494428ed8488.generation.json",
+      "plannedRequestSha256": "3e1c1fb63f067f22c182c899e19d470abc116bc287e3fe90b5cd771656aae122"
+    },
+    {
+      "id": "mitosis-without-control",
+      "parentSceneId": "mitosis-without-control",
+      "text": "Start with what you know. Before mitosis, a cell copies its DNA. Mitosis separates the chromosome copies into two nuclei. A cancer cell still divides by mitosis. The main problem isn't how it divides, but when. Healthy cells divide when the body needs them, like when a graze heals. A cancer cell keeps dividing when it should stop.",
+      "hash": "d07d11a6b514",
+      "textSha256": "d07d11a6b514ea76cdb7925964cacb791ff367c7047e7692148528dbe19b25b3",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/mitosis-without-control.d07d11a6b514.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/mitosis-without-control.d07d11a6b514.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/mitosis-without-control.d07d11a6b514.generation.json",
+      "plannedRequestSha256": "b9bce1fee2cd8509f924ef610c5cb2876535d1d415f62c0079f413f5fd6edbb3"
+    },
+    {
+      "id": "cell-cycle-checkpoints",
+      "parentSceneId": "cell-cycle-checkpoints",
+      "text": "A cell's life runs in a loop called the cell cycle. It grows, copies its DNA, gets ready, then divides. Along the loop sit checkpoints, stops where the cell checks that it's safe to go on. You've met one: before the copies separate, the cell waits until every chromosome is attached to fibres from both poles. Another comes before the DNA is copied. It asks: is the cell big enough, is there a signal to divide, and is the DNA undamaged?",
+      "hash": "a1a4e3da30ff",
+      "textSha256": "a1a4e3da30ff8775396967e9a0ddad85f0be194c55fa151a6f60c38c5ffe3a83",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/cell-cycle-checkpoints.a1a4e3da30ff.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/cell-cycle-checkpoints.a1a4e3da30ff.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/cell-cycle-checkpoints.a1a4e3da30ff.generation.json",
+      "plannedRequestSha256": "093da2ddb21168545e2edc79bb3ed2d37d1ad6e89e198e37fe20790934215ed9"
+    },
+    {
+      "id": "p53-apoptosis",
+      "parentSceneId": "p53-apoptosis",
+      "text": "At that checkpoint, a protein called p53 responds to DNA damage. It stops the cycle, so repair enzymes can fix the damage. If the damage is too great, p53 triggers apoptosis: the cell destroys itself in a controlled way. And many mutations that do slip through don't affect the genes that control division. That's the first answer. Cancer usually needs several changes that defeat those controls.",
+      "hash": "7464144d7042",
+      "textSha256": "7464144d70423b6546c6fcc6eeedea9b73e7c5d05ffb0af04410ddf71bd0ee77",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/p53-apoptosis.7464144d7042.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/p53-apoptosis.7464144d7042.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/p53-apoptosis.7464144d7042.generation.json",
+      "plannedRequestSha256": "f008e01938e198f360eb17c7e83d7e7d649866d36f030fdf6acac16d8324b77b"
+    },
+    {
+      "id": "several-changes",
+      "parentSceneId": "several-changes",
+      "text": "Those changes usually build up in the same line of cells. A cell with one change that lets it divide a bit more often leaves more descendants than its neighbours. One of those picks up a second change, and its descendants take over again. That's why it usually takes years, and why cancer becomes more common as people age.",
+      "hash": "cfdf7d637bbc",
+      "textSha256": "cfdf7d637bbc89fc6d7ce7c94bdee4e9b63c65ea8dba141812ac64b18e016597",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/several-changes.cfdf7d637bbc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/several-changes.cfdf7d637bbc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/several-changes.cfdf7d637bbc.generation.json",
+      "plannedRequestSha256": "8f3e8cec34fed113c328997ef591237b901149cfed011698a273ed81b1d06eb0"
+    },
+    {
+      "id": "accelerator",
+      "parentSceneId": "accelerator",
+      "text": "Which genes? Two kinds control division. Proto-oncogenes are normal genes that tell a cell to divide when a growth signal arrives. They're the accelerator. A mutation can jam the accelerator down, so the gene's protein says divide even with no signal from outside. The mutated gene is called an oncogene. And one mutated copy is enough, because a protein that's stuck on overrides the normal copy.",
+      "hash": "59afbee3e578",
+      "textSha256": "59afbee3e578eb671e72cdcd077d6bd8815bc606684d01b17c4ab98834192113",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/accelerator.59afbee3e578.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/accelerator.59afbee3e578.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/accelerator.59afbee3e578.generation.json",
+      "plannedRequestSha256": "3341ea3f435568d2fe961c1a3703c0afc4f8d8d2c27bfcd47f3de8068ec2d7f3"
+    },
+    {
+      "id": "brakes",
+      "parentSceneId": "brakes",
+      "text": "The other kind are tumour suppressor genes, the brakes. They stop division, repair DNA or trigger apoptosis, and the gene for p53 is one of them. One working copy usually still makes enough brake, so both copies normally have to be lost. That's why inheriting one faulty copy, like a faulty BRCA1 gene, raises the risk of cancer a lot, but doesn't make it certain. So cancer is a stuck accelerator and failed brakes, though real cancers need several such changes.",
+      "hash": "83561c342e53",
+      "textSha256": "83561c342e537f21ec240336fc4ee9c82b5ecafc9da7c44a4ec10986ad2f4eab",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/brakes.83561c342e53.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/brakes.83561c342e53.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/brakes.83561c342e53.generation.json",
+      "plannedRequestSha256": "bd49b12d9f83016776ee2c974d2ea1fdcc1e4483c13d844fe7eb96898dce937c"
+    },
+    {
+      "id": "melanoma-uv",
+      "parentSceneId": "melanoma-uv",
+      "text": "Now a real case. Australia has some of the world's highest melanoma rates, and UV light from the sun is its main cause. UV damages DNA in melanocytes, the skin cells that make pigment. In many melanomas, one mutation jams an accelerator gene called BRAF, and later mutations knock out brakes. That cell line divides out of control and forms a tumour, a lump of cells that keep dividing.",
+      "hash": "d7174111cdad",
+      "textSha256": "d7174111cdad790c1dce8910765c9184be96e497f08119eef00584755dbc7ea9",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/melanoma-uv.d7174111cdad.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/melanoma-uv.d7174111cdad.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/melanoma-uv.d7174111cdad.generation.json",
+      "plannedRequestSha256": "b081f1c51fa0e1d98a3dfaf868019077ec509bc9144cd55f2d8a398fae712d5e"
+    },
+    {
+      "id": "benign-malignant",
+      "parentSceneId": "benign-malignant",
+      "text": "Compare that with a benign mole. A benign tumour, like most moles, stays where it started. It can grow, but it doesn't invade. A malignant tumour, like our melanoma, does. Its cells break through a thin sheet under the top layer of skin, called the basement membrane, into the layer below, where blood and lymph vessels run. A way to remember it: malignant moves, benign is bound.",
+      "hash": "d4d715b8f69b",
+      "textSha256": "d4d715b8f69b0c76ee5756368c2f1c7bdd3c481eec7a2e7d5539c47008181b69",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/benign-malignant.d4d715b8f69b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/benign-malignant.d4d715b8f69b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/benign-malignant.d4d715b8f69b.generation.json",
+      "plannedRequestSha256": "7cea768037a1b7e0dce2a4a3e9a7de524280ba7559036bf266c7944ecaf1c3e5"
+    },
+    {
+      "id": "metastasis",
+      "parentSceneId": "metastasis",
+      "text": "Spreading to a new site is called metastasis, and it takes several steps. Cells break away, because they've lost the proteins that stick them to their neighbours. They squeeze into a lymph or blood vessel and get carried off. Most die on the way. A few survive, leave the vessel somewhere else and grow a new, secondary tumour. For melanoma, that's often a nearby lymph node first, then organs such as the lungs, liver or brain.",
+      "hash": "75744b790c48",
+      "textSha256": "75744b790c48fe853e2baabef77ab0222182060b7c7414956873dc38457d1b4d",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/metastasis.75744b790c48.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/metastasis.75744b790c48.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/metastasis.75744b790c48.generation.json",
+      "plannedRequestSha256": "c37b29fb1c70d65d4562d785b12855d0a63d1aad0e6fe33ad01dc1bc39383b15"
+    },
+    {
+      "id": "why-spread-matters",
+      "parentSceneId": "why-spread-matters",
+      "text": "That's why metastasis causes most cancer deaths. Once tumours grow in several organs, they're much harder to remove. It's also why finding melanoma early matters: while it's thin and hasn't reached the vessels, cutting it out is often successful. And the main cause can be reduced: slip, slop, slap, seek and slide.",
+      "hash": "88185bd55921",
+      "textSha256": "88185bd559219e9911361006be46f9378951ed3315ed5e56207fb6c8d2db6120",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/why-spread-matters.88185bd55921.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/why-spread-matters.88185bd55921.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/why-spread-matters.88185bd55921.generation.json",
+      "plannedRequestSha256": "45cf8b291b5bef00c44ecb6bb48c65f75a314e7b11ad0e48de10182a564c72b2"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. Cell A has an activating mutation that keeps one copy of a proto-oncogene switched on. Cell B has a mutation that stops one copy of a tumour suppressor gene working, and one normal copy is enough for that gene's job. Every other copy is normal. Predict which cell is more likely to divide without a growth signal, and explain your prediction. Pause here to answer.",
+      "hash": "48a4938d999f",
+      "textSha256": "48a4938d999f1ceca7c552fc376e7b694a9c3071f9f9a82d84dd4ccabee14bbe",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt.48a4938d999f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt.48a4938d999f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt.48a4938d999f.generation.json",
+      "plannedRequestSha256": "579758babd734b1e12cf018981cbdd11fd328243376f0e0dfa6034d007ddd91e"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Cell A. Its activating mutation makes an oncogene, whose protein is stuck on, so one copy can drive division with no signal. In cell B, the normal copy of the tumour suppressor gene still makes enough brake, so control holds until that copy is lost too. The classic mistake is saying both are equally likely, because each has one mutation.",
+      "hash": "1d305e2cbece",
+      "textSha256": "1d305e2cbece531798b01d170fdbf3d637db242d44d08237e02253450b8a1123",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-one.1d305e2cbece.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-one.1d305e2cbece.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-one.1d305e2cbece.generation.json",
+      "plannedRequestSha256": "26a5c435d2fb06cecebf8b66b57bc3d3362fc4f20255e7b0ac98da135c509837"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Some types of human papillomavirus, or HPV, infect cells lining the cervix. One viral protein, called E6, causes the cell to destroy its p53. Explain how this infection can increase the risk of cancer. Then explain why a growth that hasn't crossed the basement membrane is unlikely to have spread. Pause here to answer.",
+      "hash": "d65988613896",
+      "textSha256": "d659886138969ccf46e33708fcef8221285cf21ce56f10d4166f9a416b9e6dca",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt-two.d65988613896.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt-two.d65988613896.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/attempt-two.d65988613896.generation.json",
+      "plannedRequestSha256": "af2d65c22a29c6d8f2c89dfffe34d9189a7a88907bb3a212d4a631ffd57bbd61"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Losing p53 weakens a key DNA-damage checkpoint. More damaged cells can survive and divide, so mutations can build up in that line. That raises the risk, but not every infection leads to cancer. And to spread, cells must break through the basement membrane to reach vessels. The classic mistake is calling cervical cancer a cancer you catch.",
+      "hash": "f2b9be581397",
+      "textSha256": "f2b9be5813979793f1ec8abe8047282988db37ab5d16dd53e0122418bcd168bc",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-two.f2b9be581397.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-two.f2b9be581397.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/feedback-two.f2b9be581397.generation.json",
+      "plannedRequestSha256": "ad1abdba76da7c65c9c9a554410d91f8c1b338dd83cdd460f13ccc341505a96b"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any cancer question, follow the chain: mutations build up, a control breaks, an accelerator stuck on or a brake lost, then division without stopping, a tumour, and, if it's malignant, invasion and spread. Next, how common is a disease? Incidence, prevalence and mortality.",
+      "hash": "e55cf97365f7",
+      "textSha256": "e55cf97365f7e07e46bbda4ca27c19ee60db313be1b037d18fbd7d52a87f0e0c",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/decision-rule.e55cf97365f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/decision-rule.e55cf97365f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/decision-rule.e55cf97365f7.generation.json",
+      "plannedRequestSha256": "462dc674a6f3c535502970994a822622d8f08c85e8af18f3ba79ccf9c4f6f909"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B09-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

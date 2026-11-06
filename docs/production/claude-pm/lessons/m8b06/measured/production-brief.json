@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b06/measured/lesson.json",
+    "lessonSha256": "1553af146cf837f14b47f8d21d0dc762d40466abafd1a494073667991293e8f1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "bio-m7-b01: one clause in scene 2 (\"caused by a pathogen, like a bacterium or virus, invading and multiplying in the body. Many, but not all, can pass between hosts.\"; Revision 2), grey tag \"What makes a disease infectious?\". bio-m5-b09: one clause in scene 6 (\"two healthy carriers can have a child with it\"), grey tag \"Module 5: inheritance\". bio-m5-b07: the chain idea, one grey tag in scene 5 (\"like sickle cell: one change, protein, cell, body\"). bio-m6-b05: one grey tag in scene 9 (\"mutations in body cells: not inherited\", for melanoma). Year 11 osmosis: one clause (\"Water follows the chloride by osmosis\"), grey tag \"Year 11\".",
+    "startsWith": "Around 1900, many Australians died of diseases they caught from someone else, like pneumonia and tuberculosis. Today, most Australians die of diseases nobody can catch: heart disease, dementia, stroke and lung cancer. That's partly because vaccines, antibiotics and clean water now prevent many deaths from infection, so more people live long enough for these slower diseases to develop. So if a disease isn't caught, what causes it?",
+    "stopsAfter": "stating that an infectious disease is caused by a pathogen invading and multiplying in the body (many, not all, pass between hosts), and a non-infectious disease is not caused by a pathogen and cannot be caught, so the dividing line is the cause, not severity or genes (cystic fibrosis is genetic and non-infectious); naming the four groups of cause with a plain meaning each (genetic: a DNA change alters a protein; environmental: an outside exposure damages cells; nutritional: too little or too much of a nutrient; cancer: cells dividing out of control, whatever the trigger); tracing cystic fibrosis from two altered CFTR genes to a misfolded channel that is broken down before it reaches the membrane, to less chloride and water leaving the airway cells, to thick mucus that cilia cannot clear, to repeated lung infections, with thick mucus as the effect, not the cause; explaining silicosis (inhaled silica dust, immune cells cannot break it down, scarring, stiff lungs), iron-deficiency anaemia (too little iron taken in or absorbed, less haemoglobin, smaller paler red cells, less oxygen carried) and melanoma (UV-triggered damage to genes that control division, a cancer with an environmental trigger); saying most diseases are multifactorial and classifying by the main contributing factor with its mechanism; classifying three unseen conditions and resolving an infectious trigger; tracing an unseen genetic disease (FH) from gene to body.",
+    "nextLesson": "how environmental exposure causes disease (bio-m8-b07), then nutrition (b08) and cancer (b09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b06.md"
+  ],
+  "teaching": {
+    "task": "Most Australians now die of diseases nobody can catch. If a disease isn't caught, what causes it?",
+    "causalExplanation": "Start with the dividing line. An infectious disease is caused by a pathogen, like a bacterium or virus, invading and multiplying in the body. Many, but not all, can pass between hosts. A non-infectious disease isn't caused by a pathogen, so you can't catch it. The test is the cause. It isn't about how serious the disease is, or whether genes are involved. Cystic fibrosis is genetic, and it's still non-infectious, because no pathogen causes it. So what does cause them? The causes fall into four groups. A genetic disease starts with a change in DNA that alters a protein. An environmental disease starts with something from outside the body that damages cells. A nutritional disease comes from too little, or too much, of a nutrient. And cancer is cells dividing out of control. For each one, trace the same chain: the cause, what changes in the cells, and the effect on the body. Start with a genetic disease, cystic fibrosis. Cells lining your airways make a protein called CFTR, from the CFTR gene. It's a channel in the cell membrane that lets chloride ions out onto the airway surface. Water follows the chloride by osmosis, so the mucus there stays thin and runny, and tiny hairs called cilia sweep it, with any trapped bacteria, up and out.",
+    "conversationalApproach": "Around 1900, many Australians died of diseases they caught from someone else, like pneumonia and tuberculosis. Start with the dividing line. So what does cause them? The causes fall into four groups. Start with a genetic disease, cystic fibrosis. In cystic fibrosis, both copies of the CFTR gene are altered. Notice the order. An environmental disease starts outside the body. Too little available iron, from a poor diet or poor absorption, can cause a nutritional deficiency disease. Cancer gets its own group, because it's defined by what the cells do, not by what started it. Real diseases often have several causes acting together. Two exam questions. Goitre is nutritional: too little iodine, so the thyroid can't make enough hormone and enlarges. Second. The altered gene means fewer working LDL receptors on liver cells. So for any disease, first ask: is it caused by a pathogen? If not, ask what kind of disease it is: genetic, environmental, nutritional, or cancer.",
+    "openingDecision": "Around 1900, many Australians died of diseases they caught from someone else, like pneumonia and tuberculosis. Today, most Australians die of diseases nobody can catch: heart disease, dementia, stroke and lung cancer. That's partly because vaccines, antibiotics and clean water now prevent many deaths from infection, so more people live long enough for these slower diseases to develop. So if a disease isn't caught, what causes it?",
+    "understandingCheck": "Two exam questions. First. Three conditions are described on screen: goitre, Huntington's disease and cervical cancer. Classify each one into a group. Then explain why a student who says cervical cancer is infectious is wrong. Pause here to answer. Second. Familial hypercholesterolaemia is caused by an altered LDLR gene. Normally, this gene codes for a receptor on liver cells that removes LDL cholesterol from the blood. Explain how the altered gene can lead to heart disease. Pause here to answer.",
+    "curriculumScope": "Scope: the opening video of the Module 8 Causes and Effects block (B8-IQ2-01). Route entry **bio-m8-b06** (\"What causes a non-infectious disease?\", type core, site lessons L06 and L07, syllabus action B8-IQ2-01, prerequisites bio-m6-b05 and bio-m7-b01, playlist order 8, plan anchor B06, next bio-m8-b07), from `../../module8-video-route-draft.json`. Route start: \"Separate inherited and acquired causes from infection.\" Route stop: \"Trace a genetic variant through protein and body effect.\" **Entry knowledge:** bio-m7-b01 (an infectious disease is caused by a pathogen, and most can pass between hosts; tuberculosis against type 2 diabetes); bio-m6-b05 (somatic mutations in body cells can start a cancer; germ-line mutations can be inherited); from Module 5, bio-m5-b07 (one base change traced through haemoglobin's shape to sickle cells and the trait) and bio-m5-b09 (autosomal recessive conditions such as cystic fibrosis need two altered alleles; carriers). Year 11: osmosis, cell membranes. **Start:** the dividing line between infectious and non-infectious disease (whether a pathogen causes it, not transmission alone, severity or genes). **Stop:** classify a cause into one of the four syllabus groups with one example each, and trace one genetic disease, cystic fibrosis, from gene to protein to cells to body. **Next handoff:** bio-m8-b07, \"How does environmental exposure cause disease?\" (then b08 nutrition and b09 cancer, which carry the detail this video leaves out). Visual: a four-column board writes, one column per cue, each with a one-line meaning and a small thumbnail: \"genetic: a DNA change alters a protein\" (`m5x-cell-protein-synthesis-v1.png`), \"environmental: an outside exposure damages cells\" (new `m8-lungs-silicosis-v1.png`, small), \"nutritional: too little or too much of a nutrient\" (`m5x-red-blood-cells-v1.png`), \"cancer: cells dividing out of control\" (`b5x-cell-dividing-v1.png`). Each column dims to its header as the next lights. On \"chain\" the board shrinks to the `GroupTab` at the upper left (four chips) and the `CauseChain` strip draws along the bottom: \"cause\" → \"what changes in the cells\" → \"effect on the body\" (empty slots). Grey tag under the strip: \"the syllabus lists these four\". At most three bright items. Hold one second. - Confirm the dotpoint wording against `docs/production/programme/syllabus/bio-2017-y12.json` and the YouTube title length (100 characters or fewer). Syllabus dotpoint (NSW Biology Stage 6, 2017, Module 8): - Dotpoint wording confirmed against `docs/production/programme/syllabus/bio-2017-y12.json` (B8-IQ2-01 and its four listed examples, p 57). - **Term load.** New spoken terms: non-infectious, genetic, environmental, nutritional, cancer (as groups), CFTR, chloride, cilia, carriers (recalled), silicosis, haemoglobin, anaemia, tumour, melanoma, multifactorial. That is heavier than b05; the four group names are syllabus words students will read anyway, and each example term arrives after its mechanism. The learning review should check scenes 4 and 5 at playback speed (CFTR, chloride, osmosis and cilia arrive together in scene 4)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One cause chain strip sits along the bottom of the frame from scene 3 to scene 11d: three linked slots, \"cause\" → \"what changes in the cells\" → \"effect on the body\", refilled for each example, so the same structure carries all four groups and both attempts. A small four-group tab at the upper left (four chips: genetic, environmental, nutritional, cancer) lights the group in use. Each example has a matched painted pair that cross-fades on the spoken change (airway cell with and without CFTR channels; thin and thick airway mucus; healthy and silicotic lungs; normal and iron-deficient red cells; normal skin and melanoma). Coded: the chart in the hook, the strip, chips, tags, chloride and water dots, dust particles, arrows, the Punnett mini (letters only, HSC style), the attempt cards. At most three bright text items at once; earlier labels dim to grey. No people, hands or faces.",
+    "transitionPlan": "no people. the board clears. a four-column board writes, one column per cue, each with a one-line meaning and a small thumbnail: \"genetic: a DNA change alters a protein\" (m5x-cell-protein-synthesis-v1. the group tab lights \"genetic\". the airway cell plate returns large. the full chain strip lifts to the centre and enlarges. the group tab lights \"environmental\". the group tab lights \"nutritional\". the group tab lights \"cancer\". the four group chips enlarge in a ring; m8-pancreas-v1. the board clears; the chain strip and tab dim to grey. the card stays. the board clears. the card stays. three step chips write on, one per cue: \"1 caused by a pathogen?\", \"2 what kind of disease? genetic / environmental / nutritional / cancer\", \"3 what factor contributed? trace: cause → cells → body\". > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. A coded two-column board: left \"around 1900\", right \"today\". On \"pneumonia and tuberculosis\" two chips write in the left column with a small m7-bacterium-rod-coccus-v1.png thumbnail and a grey tag \"caught: infectious\". On \"heart disease, dementia, stroke and lung cancer\" four chips write in the right column, one per word, with m8-heart-v1.png and m8-lungs-healthy-v1.png small beside them and a grey tag \"can't be caught\". No percentages, no bars (site findings 1, 2). On \"vaccines, antibiotics and clean water\" three small grey icons-as-words chips (\"vaccines\", \"antibiotics\", \"clean water\") slide under the left column and its chips dim; on \"live long enough\" a grey arrow runs from left to right, tag \"longer lives: time for slow diseases\". On \"causes\" the heading writes: \"What causes a non-infectious disease?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Around 1900, many Australians died of diseases they caught from someone else, like pneumonia and tuberculosis.",
+      "narrationCue": "pneumonia and tuberculosis / heart disease, dementia, stroke and lung cancer / vaccines, antibiotics and clean water / live long enough / causes",
+      "motionPurpose": "A coded two-column board: left \"around 1900\", right \"today\". On \"pneumonia and tuberculosis\" two chips write in the left column with a small m7-bacterium-rod-coccus-v1.png thumbnail and a grey tag \"caught: infectious\". On \"heart disease, dementia, stroke and lung cancer\" four chips write in the right column, one per word, with m8-heart-v1.png and m8-lungs-healthy-v1.png small beside them and a grey tag \"can't be caught\". No percentages, no bars (site findings 1, 2). On \"vaccines, antibiotics and clean water\" three small grey icons-as-words chips (\"vaccines\", \"antibiotics\", \"clean water\") slide under the left column and its chips dim; on \"live long enough\" a grey arrow runs from left to right, tag \"longer lives: time for slow diseases\". On \"causes\" the heading writes: \"What causes a non-infectious disease?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. A coded two-column board: left \"around 1900\", right \"today\". On \"pneumonia and tuberculosis\" two chips write in the left column with a small m7-bacterium-rod-coccus-v1.png thumbnail and a grey tag \"caught: infectious\". On \"heart disease, dementia, stroke and lung cancer\" four chips write in the right column, one per word, with m8-heart-v1.png and m8-lungs-healthy-v1.png small beside them and a grey tag \"can't be caught\". No percentages, no bars (site findings 1, 2). On \"vaccines, antibiotics and clean water\" three small grey icons-as-words chips (\"vaccines\", \"antibiotics\", \"clean water\") slide under the left column and its chips dim; on \"live long enough\" a grey arrow runs from left to right, tag \"longer lives: time for slow diseases\". On \"causes\" the heading writes: \"What causes a non-infectious disease?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m7-bacterium-rod-coccus-v1.png",
+        "m8-heart-v1.png",
+        "m8-lungs-healthy-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (what Australians die of): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "dividing-line",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Two coded grey host outlines (plain rounded rectangles labelled \"host 1\" and \"host 2\", abstract, no bodies). On \"pathogen\" m7-bacterium-rod-coccus-v1.png small travels along a curved arrow from host 1 to host 2 (grey tag \"What makes a disease infectious?\"). On \"Many, but not all\" a small grey tag writes under the arrow: \"many pass between hosts; some don't (tetanus comes from soil)\". On \"non-infectious\" the arrow and pathogen fade, and a gloss writes: \"non-infectious: not caused by a pathogen; you can't catch it\". On \"how serious\" and \"genes\" two grey chips write, \"how serious?\" and \"genes involved?\", each with a small grey \"not the test\" tag. On \"genetic\" a chip \"non-infectious means not genetic\" writes and takes a scribble cross; m7-airway-cilia-mucus-v1.png appears small with the label \"cystic fibrosis: genetic, can't be caught\". At most three bright items. Hold one second.",
+      "teachingReason": "Start with the dividing line.",
+      "narrationCue": "pathogen / Many, but not all / non-infectious / how serious / genetic",
+      "motionPurpose": "the board clears. Two coded grey host outlines (plain rounded rectangles labelled \"host 1\" and \"host 2\", abstract, no bodies). On \"pathogen\" m7-bacterium-rod-coccus-v1.png small travels along a curved arrow from host 1 to host 2 (grey tag \"What makes a disease infectious?\"). On \"Many, but not all\" a small grey tag writes under the arrow: \"many pass between hosts; some don't (tetanus comes from soil)\". On \"non-infectious\" the arrow and pathogen fade, and a gloss writes: \"non-infectious: not caused by a pathogen; you can't catch it\". On \"how serious\" and \"genes\" two grey chips write, \"how serious?\" and \"genes involved?\", each with a small grey \"not the test\" tag. On \"genetic\" a chip \"non-infectious means not genetic\" writes and takes a scribble cross; m7-airway-cilia-mucus-v1.png appears small with the label \"cystic fibrosis: genetic, can't be caught\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two coded grey host outlines (plain rounded rectangles labelled \"host 1\" and \"host 2\", abstract, no bodies). On \"pathogen\" m7-bacterium-rod-coccus-v1.png small travels along a curved arrow from host 1 to host 2 (grey tag \"What makes a disease infectious?\"). On \"Many, but not all\" a small grey tag writes under the arrow: \"many pass between hosts; some don't (tetanus comes from soil)\". On \"non-infectious\" the arrow and pathogen fade, and a gloss writes: \"non-infectious: not caused by a pathogen; you can't catch it\". On \"how serious\" and \"genes\" two grey chips write, \"how serious?\" and \"genes involved?\", each with a small grey \"not the test\" tag. On \"genetic\" a chip \"non-infectious means not genetic\" writes and takes a scribble cross; m7-airway-cilia-mucus-v1.png appears small with the label \"cystic fibrosis: genetic, can't be caught\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m7-bacterium-rod-coccus-v1.png",
+        "m7-airway-cilia-mucus-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the dividing line: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "four-groups",
+      "visualDecision": "new",
+      "visualReference": "a four-column board writes, one column per cue, each with a one-line meaning and a small thumbnail: \"genetic: a DNA change alters a protein\" (m5x-cell-protein-synthesis-v1.png), \"environmental: an outside exposure damages cells\" (new m8-lungs-silicosis-v1.png, small), \"nutritional: too little or too much of a nutrient\" (m5x-red-blood-cells-v1.png), \"cancer: cells dividing out of control\" (b5x-cell-dividing-v1.png). Each column dims to its header as the next lights. On \"chain\" the board shrinks to the GroupTab at the upper left (four chips) and the CauseChain strip draws along the bottom: \"cause\" → \"what changes in the cells\" → \"effect on the body\" (empty slots). Grey tag under the strip: \"the syllabus lists these four\". At most three bright items. Hold one second.",
+      "teachingReason": "So what does cause them? The causes fall into four groups.",
+      "narrationCue": "chain",
+      "motionPurpose": "a four-column board writes, one column per cue, each with a one-line meaning and a small thumbnail: \"genetic: a DNA change alters a protein\" (m5x-cell-protein-synthesis-v1.png), \"environmental: an outside exposure damages cells\" (new m8-lungs-silicosis-v1.png, small), \"nutritional: too little or too much of a nutrient\" (m5x-red-blood-cells-v1.png), \"cancer: cells dividing out of control\" (b5x-cell-dividing-v1.png). Each column dims to its header as the next lights. On \"chain\" the board shrinks to the GroupTab at the upper left (four chips) and the CauseChain strip draws along the bottom: \"cause\" → \"what changes in the cells\" → \"effect on the body\" (empty slots). Grey tag under the strip: \"the syllabus lists these four\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "a four-column board writes, one column per cue, each with a one-line meaning and a small thumbnail: \"genetic: a DNA change alters a protein\" (m5x-cell-protein-synthesis-v1.png), \"environmental: an outside exposure damages cells\" (new m8-lungs-silicosis-v1.png, small), \"nutritional: too little or too much of a nutrient\" (m5x-red-blood-cells-v1.png), \"cancer: cells dividing out of control\" (b5x-cell-dividing-v1.png). Each column dims to its header as the next lights. On \"chain\" the board shrinks to the GroupTab at the upper left (four chips) and the CauseChain strip draws along the bottom: \"cause\" → \"what changes in the cells\" → \"effect on the body\" (empty slots). Grey tag under the strip: \"the syllabus lists these four\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m5x-cell-protein-synthesis-v1.png",
+        "m8-lungs-silicosis-v1.png",
+        "m5x-red-blood-cells-v1.png",
+        "b5x-cell-dividing-v1.png",
+        "GroupTab",
+        "CauseChain",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "four groups of cause: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cf-normal-job",
+      "visualDecision": "new",
+      "visualReference": "the group tab lights \"genetic\". Centre: new m8-airway-cell-cftr-v1.png (one airway lining cell, side view, with small channel proteins in the top membrane), large. On \"CFTR\" a callout to a channel, label \"CFTR: a channel protein\", and a grey tag \"made from the CFTR gene\". On \"chloride\" IonDots marked \"Cl⁻\" pass out through the channels into a thin coded surface layer above the cell. On \"Water follows\" blue water dots follow (grey tag \"Year 11: osmosis\"). On \"thin and runny\" the plate slides left and m7-airway-cilia-mucus-v1.png enters at the centre right (a row of airway lining cells with cilia and a thin mucus layer); a callout \"thin mucus\". On \"cilia\" a callout to the cilia, label \"cilia: tiny hairs\", and a coded arrow along the mucus layer, label \"swept up and out\". The chain strip stays empty. At most three bright items. Hold one second.",
+      "teachingReason": "Start with a genetic disease, cystic fibrosis.",
+      "narrationCue": "CFTR / chloride / Water follows / thin and runny / cilia",
+      "motionPurpose": "the group tab lights \"genetic\". Centre: new m8-airway-cell-cftr-v1.png (one airway lining cell, side view, with small channel proteins in the top membrane), large. On \"CFTR\" a callout to a channel, label \"CFTR: a channel protein\", and a grey tag \"made from the CFTR gene\". On \"chloride\" IonDots marked \"Cl⁻\" pass out through the channels into a thin coded surface layer above the cell. On \"Water follows\" blue water dots follow (grey tag \"Year 11: osmosis\"). On \"thin and runny\" the plate slides left and m7-airway-cilia-mucus-v1.png enters at the centre right (a row of airway lining cells with cilia and a thin mucus layer); a callout \"thin mucus\". On \"cilia\" a callout to the cilia, label \"cilia: tiny hairs\", and a coded arrow along the mucus layer, label \"swept up and out\". The chain strip stays empty. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the group tab lights \"genetic\". Centre: new m8-airway-cell-cftr-v1.png (one airway lining cell, side view, with small channel proteins in the top membrane), large. On \"CFTR\" a callout to a channel, label \"CFTR: a channel protein\", and a grey tag \"made from the CFTR gene\". On \"chloride\" IonDots marked \"Cl⁻\" pass out through the channels into a thin coded surface layer above the cell. On \"Water follows\" blue water dots follow (grey tag \"Year 11: osmosis\"). On \"thin and runny\" the plate slides left and m7-airway-cilia-mucus-v1.png enters at the centre right (a row of airway lining cells with cilia and a thin mucus layer); a callout \"thin mucus\". On \"cilia\" a callout to the cilia, label \"cilia: tiny hairs\", and a coded arrow along the mucus layer, label \"swept up and out\". The chain strip stays empty. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-airway-cell-cftr-v1.png",
+        "IonDots",
+        "m7-airway-cilia-mucus-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "cystic fibrosis: the normal job: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cf-what-goes-wrong",
+      "visualDecision": "adjust",
+      "visualReference": "the airway cell plate returns large. On \"both copies\" a grey tag \"two altered CFTR alleles\". The chain strip's first slot fills: \"cause: altered CFTR gene (both copies)\" with m5x-cell-protein-synthesis-v1.png thumbnail. On \"folds\" the plate cross-fades to its matched state m8-airway-cell-cftr-missing-v1.png (no channels in the top membrane, a few small misfolded protein clumps inside the cell near the nucleus); a callout \"misfolded, broken down\"; grey tag \"like sickle cell: one change, protein, cell, body\". On \"less chloride\" the IonDots stay inside; the blue water dots stay inside. Second slot fills: \"cells: too few channels → less chloride and water out\". On \"thick\" the cilia plate cross-fades to its matched state m8-airway-mucus-thick-v1.png (the same cells, a thick, dense, sticky mucus layer pressing the cilia flat, more trapped bacteria); the sweep arrow stalls and fades. On \"infections\" third slot fills: \"body: thick mucus → blocked airways, repeated lung infections\" with m8-lungs-healthy-v1.png thumbnail and a grey tag \"infections follow; CF itself isn't caught\". At most three bright items (the strip's newest slot, the callout, one tag). Hold one second.",
+      "teachingReason": "In cystic fibrosis, both copies of the CFTR gene are altered.",
+      "narrationCue": "both copies / folds / less chloride / thick / infections",
+      "motionPurpose": "the airway cell plate returns large. On \"both copies\" a grey tag \"two altered CFTR alleles\". The chain strip's first slot fills: \"cause: altered CFTR gene (both copies)\" with m5x-cell-protein-synthesis-v1.png thumbnail. On \"folds\" the plate cross-fades to its matched state m8-airway-cell-cftr-missing-v1.png (no channels in the top membrane, a few small misfolded protein clumps inside the cell near the nucleus); a callout \"misfolded, broken down\"; grey tag \"like sickle cell: one change, protein, cell, body\". On \"less chloride\" the IonDots stay inside; the blue water dots stay inside. Second slot fills: \"cells: too few channels → less chloride and water out\". On \"thick\" the cilia plate cross-fades to its matched state m8-airway-mucus-thick-v1.png (the same cells, a thick, dense, sticky mucus layer pressing the cilia flat, more trapped bacteria); the sweep arrow stalls and fades. On \"infections\" third slot fills: \"body: thick mucus → blocked airways, repeated lung infections\" with m8-lungs-healthy-v1.png thumbnail and a grey tag \"infections follow; CF itself isn't caught\". At most three bright items (the strip's newest slot, the callout, one tag). Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the airway cell plate returns large. On \"both copies\" a grey tag \"two altered CFTR alleles\". The chain strip's first slot fills: \"cause: altered CFTR gene (both copies)\" with m5x-cell-protein-synthesis-v1.png thumbnail. On \"folds\" the plate cross-fades to its matched state m8-airway-cell-cftr-missing-v1.png (no channels in the top membrane, a few small misfolded protein clumps inside the cell near the nucleus); a callout \"misfolded, broken down\"; grey tag \"like sickle cell: one change, protein, cell, body\". On \"less chloride\" the IonDots stay inside; the blue water dots stay inside. Second slot fills: \"cells: too few channels → less chloride and water out\". On \"thick\" the cilia plate cross-fades to its matched state m8-airway-mucus-thick-v1.png (the same cells, a thick, dense, sticky mucus layer pressing the cilia flat, more trapped bacteria); the sweep arrow stalls and fades. On \"infections\" third slot fills: \"body: thick mucus → blocked airways, repeated lung infections\" with m8-lungs-healthy-v1.png thumbnail and a grey tag \"infections follow; CF itself isn't caught\". At most three bright items (the strip's newest slot, the callout, one tag). Hold one second.",
+      "motionTools": [
+        "m5x-cell-protein-synthesis-v1.png",
+        "m8-airway-cell-cftr-missing-v1.png",
+        "IonDots",
+        "m8-airway-mucus-thick-v1.png",
+        "m8-lungs-healthy-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what goes wrong: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "effect-not-cause",
+      "visualDecision": "adjust",
+      "visualReference": "the full chain strip lifts to the centre and enlarges. On \"Thick mucus is the effect\" a chip \"thick mucus causes CF\" writes and takes a scribble cross; a coded arrow runs right to left along the strip from \"body\" back to \"cause\", label \"trace back to the gene\". On \"gene\" the first slot pulses. On \"carriers\" a small coded Punnett mini writes at the right, letters only, HSC style: parents \"Ff\" and \"Ff\", boxes \"FF\", \"Ff\", \"Ff\", \"ff\", the \"ff\" box outlined amber (grey tag \"Module 5: inheritance; F = working allele, f = altered\"). On \"inherited\" a chip writes \"inherited: passed on in genes, not by a pathogen\". The strip returns to the bottom. At most three bright items. Hold one second.",
+      "teachingReason": "Notice the order.",
+      "narrationCue": "Thick mucus is the effect / gene / carriers / inherited",
+      "motionPurpose": "the full chain strip lifts to the centre and enlarges. On \"Thick mucus is the effect\" a chip \"thick mucus causes CF\" writes and takes a scribble cross; a coded arrow runs right to left along the strip from \"body\" back to \"cause\", label \"trace back to the gene\". On \"gene\" the first slot pulses. On \"carriers\" a small coded Punnett mini writes at the right, letters only, HSC style: parents \"Ff\" and \"Ff\", boxes \"FF\", \"Ff\", \"Ff\", \"ff\", the \"ff\" box outlined amber (grey tag \"Module 5: inheritance; F = working allele, f = altered\"). On \"inherited\" a chip writes \"inherited: passed on in genes, not by a pathogen\". The strip returns to the bottom. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the full chain strip lifts to the centre and enlarges. On \"Thick mucus is the effect\" a chip \"thick mucus causes CF\" writes and takes a scribble cross; a coded arrow runs right to left along the strip from \"body\" back to \"cause\", label \"trace back to the gene\". On \"gene\" the first slot pulses. On \"carriers\" a small coded Punnett mini writes at the right, letters only, HSC style: parents \"Ff\" and \"Ff\", boxes \"FF\", \"Ff\", \"Ff\", \"ff\", the \"ff\" box outlined amber (grey tag \"Module 5: inheritance; F = working allele, f = altered\"). On \"inherited\" a chip writes \"inherited: passed on in genes, not by a pathogen\". The strip returns to the bottom. At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "effect, not cause; inherited, not caught: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "silicosis",
+      "visualDecision": "new",
+      "visualReference": "the group tab lights \"environmental\". Centre: m8-lungs-healthy-v1.png large. On \"once used\" a small grey tag writes under the heading: \"Australia banned new engineered stone benchtops, panels and slabs from 1 July 2024; old stone and other silica work still carry risk\". On \"fine silica dust\" coded DustDots drift in through the trachea and settle deep in both lungs (grey tag \"fine dust reaches the air sacs\"). First slot: \"cause: inhaled silica dust\". On \"Immune cells\" a small grey gloss \"immune cells (macrophages) can't break silica down\". On \"scar\" the plate cross-fades to its matched state m8-lungs-silicosis-v1.png (the same lungs with scattered small pale grey nodules and patchy fibrotic scarring); a callout \"scar tissue (fibrosis)\". Second slot: \"cells: dust-damaged lung tissue scars\". On \"stiff\" the third slot: \"body: stiff lungs, harder to breathe\". On \"silicosis\" a label writes under the plate: \"silicosis\". On \"nobody caught it\" a \"Next\" chip previews small at the lower right: \"environmental exposure, in detail\" (screen only). At most three bright items. Hold one second.",
+      "teachingReason": "An environmental disease starts outside the body.",
+      "narrationCue": "once used / fine silica dust / Immune cells / scar / stiff / silicosis / nobody caught it",
+      "motionPurpose": "the group tab lights \"environmental\". Centre: m8-lungs-healthy-v1.png large. On \"once used\" a small grey tag writes under the heading: \"Australia banned new engineered stone benchtops, panels and slabs from 1 July 2024; old stone and other silica work still carry risk\". On \"fine silica dust\" coded DustDots drift in through the trachea and settle deep in both lungs (grey tag \"fine dust reaches the air sacs\"). First slot: \"cause: inhaled silica dust\". On \"Immune cells\" a small grey gloss \"immune cells (macrophages) can't break silica down\". On \"scar\" the plate cross-fades to its matched state m8-lungs-silicosis-v1.png (the same lungs with scattered small pale grey nodules and patchy fibrotic scarring); a callout \"scar tissue (fibrosis)\". Second slot: \"cells: dust-damaged lung tissue scars\". On \"stiff\" the third slot: \"body: stiff lungs, harder to breathe\". On \"silicosis\" a label writes under the plate: \"silicosis\". On \"nobody caught it\" a \"Next\" chip previews small at the lower right: \"environmental exposure, in detail\" (screen only). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the group tab lights \"environmental\". Centre: m8-lungs-healthy-v1.png large. On \"once used\" a small grey tag writes under the heading: \"Australia banned new engineered stone benchtops, panels and slabs from 1 July 2024; old stone and other silica work still carry risk\". On \"fine silica dust\" coded DustDots drift in through the trachea and settle deep in both lungs (grey tag \"fine dust reaches the air sacs\"). First slot: \"cause: inhaled silica dust\". On \"Immune cells\" a small grey gloss \"immune cells (macrophages) can't break silica down\". On \"scar\" the plate cross-fades to its matched state m8-lungs-silicosis-v1.png (the same lungs with scattered small pale grey nodules and patchy fibrotic scarring); a callout \"scar tissue (fibrosis)\". Second slot: \"cells: dust-damaged lung tissue scars\". On \"stiff\" the third slot: \"body: stiff lungs, harder to breathe\". On \"silicosis\" a label writes under the plate: \"silicosis\". On \"nobody caught it\" a \"Next\" chip previews small at the lower right: \"environmental exposure, in detail\" (screen only). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-lungs-healthy-v1.png",
+        "DustDots",
+        "m8-lungs-silicosis-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "environmental: silicosis: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "iron-anaemia",
+      "visualDecision": "new",
+      "visualReference": "the group tab lights \"nutritional\". Centre: m5x-red-blood-cells-v1.png large. On \"haemoglobin\" a callout to one cell, label \"full of haemoglobin: carries oxygen\"; a few small coded red \"O₂\" dots sit on the cells. First slot: \"cause: too little iron taken in or absorbed\" (grey tag \"blood loss can also lower iron\"). On \"paler\" the plate cross-fades to its matched state m8-red-cells-iron-deficient-v1.png (the same arrangement, cells smaller, paler with wider pale centres, slightly varied in size); half the \"O₂\" dots fade. Second slot: \"cells: less haemoglobin, smaller and paler red cells\". On \"anaemia\" third slot: \"body: less oxygen carried → tired, short of breath\", and a label writes \"iron-deficiency anaemia\". On \"Too much\" a grey chip \"too much can harm too\" with a small grey tag \"coming up: nutrition and disease\". At most three bright items. Hold one second.",
+      "teachingReason": "Too little available iron, from a poor diet or poor absorption, can cause a nutritional deficiency disease.",
+      "narrationCue": "haemoglobin / paler / anaemia / Too much",
+      "motionPurpose": "the group tab lights \"nutritional\". Centre: m5x-red-blood-cells-v1.png large. On \"haemoglobin\" a callout to one cell, label \"full of haemoglobin: carries oxygen\"; a few small coded red \"O₂\" dots sit on the cells. First slot: \"cause: too little iron taken in or absorbed\" (grey tag \"blood loss can also lower iron\"). On \"paler\" the plate cross-fades to its matched state m8-red-cells-iron-deficient-v1.png (the same arrangement, cells smaller, paler with wider pale centres, slightly varied in size); half the \"O₂\" dots fade. Second slot: \"cells: less haemoglobin, smaller and paler red cells\". On \"anaemia\" third slot: \"body: less oxygen carried → tired, short of breath\", and a label writes \"iron-deficiency anaemia\". On \"Too much\" a grey chip \"too much can harm too\" with a small grey tag \"coming up: nutrition and disease\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the group tab lights \"nutritional\". Centre: m5x-red-blood-cells-v1.png large. On \"haemoglobin\" a callout to one cell, label \"full of haemoglobin: carries oxygen\"; a few small coded red \"O₂\" dots sit on the cells. First slot: \"cause: too little iron taken in or absorbed\" (grey tag \"blood loss can also lower iron\"). On \"paler\" the plate cross-fades to its matched state m8-red-cells-iron-deficient-v1.png (the same arrangement, cells smaller, paler with wider pale centres, slightly varied in size); half the \"O₂\" dots fade. Second slot: \"cells: less haemoglobin, smaller and paler red cells\". On \"anaemia\" third slot: \"body: less oxygen carried → tired, short of breath\", and a label writes \"iron-deficiency anaemia\". On \"Too much\" a grey chip \"too much can harm too\" with a small grey tag \"coming up: nutrition and disease\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m5x-red-blood-cells-v1.png",
+        "m8-red-cells-iron-deficient-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "nutritional: iron-deficiency anaemia: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "melanoma",
+      "visualDecision": "new",
+      "visualReference": "the group tab lights \"cancer\". Centre: m8-skin-normal-v1.png large. On \"Genes normally control when a cell divides\" b5x-cell-dividing-v1.png appears small at the left, tag \"division under control\". On \"keeps dividing\" a coded ring of small dots multiplies outwards from one point in the skin's lower epidermis (abstract, a few beats). On \"tumour\" the plate cross-fades to its matched state m8-skin-melanoma-v1.png; a callout \"melanoma: cells dividing out of control, invading\". On \"Melanoma\" m6-uv-skin-v1.png appears small at the upper right, tag \"UV damages DNA in skin cells\"; grey tag \"mutations in body cells: not inherited\". The chain strip fills: \"cause: UV damages control genes\" → \"cells: divide without stopping\" → \"body: tumour invades the skin\". On \"trigger\" the group tab's \"cancer\" chip lights amber and the \"environmental\" chip lights grey beside it with a small label \"trigger\". On \"Name the group first\" a line writes under the plate: \"group: cancer; trigger: UV (environmental)\". At most three bright items. Hold one second.",
+      "teachingReason": "Cancer gets its own group, because it's defined by what the cells do, not by what started it.",
+      "narrationCue": "Genes normally control when a cell divides / keeps dividing / tumour / Melanoma / trigger / Name the group first",
+      "motionPurpose": "the group tab lights \"cancer\". Centre: m8-skin-normal-v1.png large. On \"Genes normally control when a cell divides\" b5x-cell-dividing-v1.png appears small at the left, tag \"division under control\". On \"keeps dividing\" a coded ring of small dots multiplies outwards from one point in the skin's lower epidermis (abstract, a few beats). On \"tumour\" the plate cross-fades to its matched state m8-skin-melanoma-v1.png; a callout \"melanoma: cells dividing out of control, invading\". On \"Melanoma\" m6-uv-skin-v1.png appears small at the upper right, tag \"UV damages DNA in skin cells\"; grey tag \"mutations in body cells: not inherited\". The chain strip fills: \"cause: UV damages control genes\" → \"cells: divide without stopping\" → \"body: tumour invades the skin\". On \"trigger\" the group tab's \"cancer\" chip lights amber and the \"environmental\" chip lights grey beside it with a small label \"trigger\". On \"Name the group first\" a line writes under the plate: \"group: cancer; trigger: UV (environmental)\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the group tab lights \"cancer\". Centre: m8-skin-normal-v1.png large. On \"Genes normally control when a cell divides\" b5x-cell-dividing-v1.png appears small at the left, tag \"division under control\". On \"keeps dividing\" a coded ring of small dots multiplies outwards from one point in the skin's lower epidermis (abstract, a few beats). On \"tumour\" the plate cross-fades to its matched state m8-skin-melanoma-v1.png; a callout \"melanoma: cells dividing out of control, invading\". On \"Melanoma\" m6-uv-skin-v1.png appears small at the upper right, tag \"UV damages DNA in skin cells\"; grey tag \"mutations in body cells: not inherited\". The chain strip fills: \"cause: UV damages control genes\" → \"cells: divide without stopping\" → \"body: tumour invades the skin\". On \"trigger\" the group tab's \"cancer\" chip lights amber and the \"environmental\" chip lights grey beside it with a small label \"trigger\". On \"Name the group first\" a line writes under the plate: \"group: cancer; trigger: UV (environmental)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-skin-normal-v1.png",
+        "b5x-cell-dividing-v1.png",
+        "m8-skin-melanoma-v1.png",
+        "m6-uv-skin-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "cancer: melanoma: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "multifactorial",
+      "visualDecision": "new",
+      "visualReference": "the four group chips enlarge in a ring; m8-pancreas-v1.png small at the centre, label \"type 2 diabetes\". On \"inherited genes, diet, activity and age\" four coded arrows run into the centre, one per word (\"genes\", \"diet\", \"activity\", \"age\"; genes from the genetic chip, diet from nutritional, activity and age as grey chips). On \"multifactorial\" a gloss writes \"multifactorial: several causes acting together\". On \"factor\" the decision line writes under the ring: \"classify by the main factor, then give its mechanism\" and the chain strip's three slot headings pulse once. Grey tag: \"risk factors: coming up\". At most three bright items. Hold one second.",
+      "teachingReason": "Real diseases often have several causes acting together.",
+      "narrationCue": "inherited genes, diet, activity and age / multifactorial / factor",
+      "motionPurpose": "the four group chips enlarge in a ring; m8-pancreas-v1.png small at the centre, label \"type 2 diabetes\". On \"inherited genes, diet, activity and age\" four coded arrows run into the centre, one per word (\"genes\", \"diet\", \"activity\", \"age\"; genes from the genetic chip, diet from nutritional, activity and age as grey chips). On \"multifactorial\" a gloss writes \"multifactorial: several causes acting together\". On \"factor\" the decision line writes under the ring: \"classify by the main factor, then give its mechanism\" and the chain strip's three slot headings pulse once. Grey tag: \"risk factors: coming up\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the four group chips enlarge in a ring; m8-pancreas-v1.png small at the centre, label \"type 2 diabetes\". On \"inherited genes, diet, activity and age\" four coded arrows run into the centre, one per word (\"genes\", \"diet\", \"activity\", \"age\"; genes from the genetic chip, diet from nutritional, activity and age as grey chips). On \"multifactorial\" a gloss writes \"multifactorial: several causes acting together\". On \"factor\" the decision line writes under the ring: \"classify by the main factor, then give its mechanism\" and the chain strip's three slot headings pulse once. Grey tag: \"risk factors: coming up\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-pancreas-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "several causes at once: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the chain strip and tab dim to grey. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Condition 1, goitre: the thyroid gland enlarges when the diet contains too little iodine, which the thyroid needs to make the hormone thyroxine. Condition 2, Huntington's disease: one altered copy of the HTT gene leads to a harmful protein that damages brain cells. Condition 3, cervical cancer: cells of the cervix divide out of control after a long-lasting human papillomavirus (HPV) infection.\" Demand: \"(a) Classify each condition as genetic, environmental, nutritional or cancer. (2 marks) (b) A student says cervical cancer is an infectious disease because a virus is involved. Explain why the student is incorrect. (2 marks)\". No plates. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears; the chain strip and tab dim to grey. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Condition 1, goitre: the thyroid gland enlarges when the diet contains too little iodine, which the thyroid needs to make the hormone thyroxine. Condition 2, Huntington's disease: one altered copy of the HTT gene leads to a harmful protein that damages brain cells. Condition 3, cervical cancer: cells of the cervix divide out of control after a long-lasting human papillomavirus (HPV) infection.\" Demand: \"(a) Classify each condition as genetic, environmental, nutritional or cancer. (2 marks) (b) A student says cervical cancer is an infectious disease because a virus is involved. Explain why the student is incorrect. (2 marks)\". No plates. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears; the chain strip and tab dim to grey. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Condition 1, goitre: the thyroid gland enlarges when the diet contains too little iodine, which the thyroid needs to make the hormone thyroxine. Condition 2, Huntington's disease: one altered copy of the HTT gene leads to a harmful protein that damages brain cells. Condition 3, cervical cancer: cells of the cervix divide out of control after a long-lasting human papillomavirus (HPV) infection.\" Demand: \"(a) Classify each condition as genetic, environmental, nutritional or cancer. (2 marks) (b) A student says cervical cancer is an infectious disease because a virus is involved. Explain why the student is incorrect. (2 marks)\". No plates. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (classify and resolve): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"Goitre is nutritional\" \"too little iodine\" underlines amber and the answer row writes \"1 goitre: nutritional (too little iodine)\"; on \"Huntington's is genetic\" \"one altered copy of the HTT gene\" underlines and \"2 Huntington's: genetic (gene → harmful protein)\"; on \"Cervical cancer\" \"divide out of control\" underlines and \"3 cervical cancer: cancer\". On \"trigger\" \"after a long-lasting human papillomavirus (HPV) infection\" underlines and answer (b) builds: \"HPV: an infectious trigger that can pass between people\", \"the cancer cells can't infect another person: non-infectious\". The group tab lights \"cancer\" amber with a grey \"trigger: infection\" label (the same layout as scene 9's melanoma, so the rule transfers). On \"classic mistake\" a chip \"a virus is involved, so it's infectious\" writes and takes a scribble cross, small text \"classify the disease, then its trigger\". Settle one second.",
+      "teachingReason": "Goitre is nutritional: too little iodine, so the thyroid can't make enough hormone and enlarges.",
+      "narrationCue": "Goitre is nutritional / Huntington's is genetic / Cervical cancer / trigger / classic mistake",
+      "motionPurpose": "the card stays. On \"Goitre is nutritional\" \"too little iodine\" underlines amber and the answer row writes \"1 goitre: nutritional (too little iodine)\"; on \"Huntington's is genetic\" \"one altered copy of the HTT gene\" underlines and \"2 Huntington's: genetic (gene → harmful protein)\"; on \"Cervical cancer\" \"divide out of control\" underlines and \"3 cervical cancer: cancer\". On \"trigger\" \"after a long-lasting human papillomavirus (HPV) infection\" underlines and answer (b) builds: \"HPV: an infectious trigger that can pass between people\", \"the cancer cells can't infect another person: non-infectious\". The group tab lights \"cancer\" amber with a grey \"trigger: infection\" label (the same layout as scene 9's melanoma, so the rule transfers). On \"classic mistake\" a chip \"a virus is involved, so it's infectious\" writes and takes a scribble cross, small text \"classify the disease, then its trigger\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Goitre is nutritional\" \"too little iodine\" underlines amber and the answer row writes \"1 goitre: nutritional (too little iodine)\"; on \"Huntington's is genetic\" \"one altered copy of the HTT gene\" underlines and \"2 Huntington's: genetic (gene → harmful protein)\"; on \"Cervical cancer\" \"divide out of control\" underlines and \"3 cervical cancer: cancer\". On \"trigger\" \"after a long-lasting human papillomavirus (HPV) infection\" underlines and answer (b) builds: \"HPV: an infectious trigger that can pass between people\", \"the cancer cells can't infect another person: non-infectious\". The group tab lights \"cancer\" amber with a grey \"trigger: infection\" label (the same layout as scene 9's melanoma, so the rule transfers). On \"classic mistake\" a chip \"a virus is involved, so it's infectious\" writes and takes a scribble cross, small text \"classify the disease, then its trigger\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Familial hypercholesterolaemia (FH) is caused by an altered LDLR gene. Normally, the LDLR gene codes for a receptor protein on the surface of liver cells. The receptor binds LDL cholesterol in the blood and takes it into the liver cell.\" Demand: \"Explain how an altered LDLR gene can lead to heart disease. (3 marks)\". No plates on the card. The empty chain strip stays dim under the card (structure only, no answer-bearing text). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Familial hypercholesterolaemia (FH) is caused by an altered LDLR gene. Normally, the LDLR gene codes for a receptor protein on the surface of liver cells. The receptor binds LDL cholesterol in the blood and takes it into the liver cell.\" Demand: \"Explain how an altered LDLR gene can lead to heart disease. (3 marks)\". No plates on the card. The empty chain strip stays dim under the card (structure only, no answer-bearing text). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Familial hypercholesterolaemia (FH) is caused by an altered LDLR gene. Normally, the LDLR gene codes for a receptor protein on the surface of liver cells. The receptor binds LDL cholesterol in the blood and takes it into the liver cell.\" Demand: \"Explain how an altered LDLR gene can lead to heart disease. (3 marks)\". No plates on the card. The empty chain strip stays dim under the card (structure only, no answer-bearing text). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (trace a genetic disease): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"fewer working LDL receptors\" \"altered LDLR gene\" and \"receptor protein on the surface of liver cells\" underline amber; m8-liver-v1.png appears small beside the card; first slot of the chain strip lights: \"gene: altered LDLR → fewer working receptors\". On \"removes less LDL\" \"takes it into the liver cell\" underlines; small amber coded LDL dots stop entering the liver thumbnail and gather beside it. On \"blood\" second slot: \"cells: liver takes up less LDL → LDL builds up in the blood\". On \"heart\" m8-heart-v1.png appears small; the LDL dots drift to its surface arteries and gather along them (abstract dots only; no coded artery cross-section); third slot: \"body: LDL deposits in artery walls → narrowed coronary arteries → heart disease\". On \"classic mistake\" a chip \"FH is nutritional (fatty food raises cholesterol)\" writes and takes a scribble cross, small text \"diet adds; the gene is the cause\". On \"gene\" the first slot pulses. Settle one second.",
+      "teachingReason": "The altered gene means fewer working LDL receptors on liver cells.",
+      "narrationCue": "fewer working LDL receptors / removes less LDL / blood / heart / classic mistake / gene",
+      "motionPurpose": "the card stays. On \"fewer working LDL receptors\" \"altered LDLR gene\" and \"receptor protein on the surface of liver cells\" underline amber; m8-liver-v1.png appears small beside the card; first slot of the chain strip lights: \"gene: altered LDLR → fewer working receptors\". On \"removes less LDL\" \"takes it into the liver cell\" underlines; small amber coded LDL dots stop entering the liver thumbnail and gather beside it. On \"blood\" second slot: \"cells: liver takes up less LDL → LDL builds up in the blood\". On \"heart\" m8-heart-v1.png appears small; the LDL dots drift to its surface arteries and gather along them (abstract dots only; no coded artery cross-section); third slot: \"body: LDL deposits in artery walls → narrowed coronary arteries → heart disease\". On \"classic mistake\" a chip \"FH is nutritional (fatty food raises cholesterol)\" writes and takes a scribble cross, small text \"diet adds; the gene is the cause\". On \"gene\" the first slot pulses. Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"fewer working LDL receptors\" \"altered LDLR gene\" and \"receptor protein on the surface of liver cells\" underline amber; m8-liver-v1.png appears small beside the card; first slot of the chain strip lights: \"gene: altered LDLR → fewer working receptors\". On \"removes less LDL\" \"takes it into the liver cell\" underlines; small amber coded LDL dots stop entering the liver thumbnail and gather beside it. On \"blood\" second slot: \"cells: liver takes up less LDL → LDL builds up in the blood\". On \"heart\" m8-heart-v1.png appears small; the LDL dots drift to its surface arteries and gather along them (abstract dots only; no coded artery cross-section); third slot: \"body: LDL deposits in artery walls → narrowed coronary arteries → heart disease\". On \"classic mistake\" a chip \"FH is nutritional (fatty food raises cholesterol)\" writes and takes a scribble cross, small text \"diet adds; the gene is the cause\". On \"gene\" the first slot pulses. Settle one second.",
+      "motionTools": [
+        "m8-liver-v1.png",
+        "m8-heart-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on, one per cue: \"1 caused by a pathogen?\", \"2 what kind of disease? genetic / environmental / nutritional / cancer\", \"3 what factor contributed? trace: cause → cells → body\". The group tab sits beside step 2 with all four chips lit; the chain strip sits under step 3. A \"Next\" chip slides in at the lower right: \"Next: How does environmental exposure cause disease?\" with the m6-uv-skin-v1.png thumbnail. Hold half a second before the notes.",
+      "teachingReason": "So for any disease, first ask: is it caused by a pathogen? If not, ask what kind of disease it is: genetic, environmental, nutritional, or cancer.",
+      "narrationCue": "So for any disease, first ask: is it caused by a pathogen? If not, ask what kind of disease it is: genetic, environmental, nutritional, or cancer",
+      "motionPurpose": "three step chips write on, one per cue: \"1 caused by a pathogen?\", \"2 what kind of disease? genetic / environmental / nutritional / cancer\", \"3 what factor contributed? trace: cause → cells → body\". The group tab sits beside step 2 with all four chips lit; the chain strip sits under step 3. A \"Next\" chip slides in at the lower right: \"Next: How does environmental exposure cause disease?\" with the m6-uv-skin-v1.png thumbnail. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on, one per cue: \"1 caused by a pathogen?\", \"2 what kind of disease? genetic / environmental / nutritional / cancer\", \"3 what factor contributed? trace: cause → cells → body\". The group tab sits beside step 2 with all four chips lit; the chain strip sits under step 3. A \"Next\" chip slides in at the lower right: \"Next: How does environmental exposure cause disease?\" with the m6-uv-skin-v1.png thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "m6-uv-skin-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b06-learning-review.md",
+      "sha256": "c2c9c62462d743491aef1d0da6692215c74f050cdd77d94f2d156cf5268f7fe2"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b06-claude-science-check.md",
+      "sha256": "e48b0990478d884c7db8df3f782507eb569235b5e98e291e17bcf70c297eadc2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b11/measured/lesson.json",
+    "lessonSha256": "e5b06e19f4c06262abfd005bc699404a4f68308e780729e26a11a2a008e11baf"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b10 (route level only, being designed in parallel: \"Define cases, population and time window\" and \"Calculate and compare rates without mixing denominators\"): a rate is cases out of a population over a time; incidence counts new cases, prevalence existing cases, mortality deaths. From b07: carcinogens in smoke reach airway cells and damage DNA; dose and pack-years; latency; men's lung cancer rates in Australia fell from the early 1980s, decades after smoking fell (b07 attempt 1). From Year 11 Working Scientifically: variables, controls, validity, reliability. Not assumed: observational study, intervention study, randomised controlled trial, case-control study, control (as a matched patient), bias, confounder, cohort study, dose-response, benefit (as an evaluate term).",
+    "startsWith": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteen times. Smoking had grown, but so had tarred roads, car exhaust and factory smoke. In 1950, Richard Doll and Austin Bradford Hill published the first of their studies on smoking. So how do we judge an epidemiological study, and what it achieved?",
+    "stopsAfter": "distinguishing observational from intervention studies and explaining why randomisation helps balance other differences by chance, and why smoking could not be randomised; describing the 1950 case-control study (lung cancer patients matched with controls, smoking histories compared) and evaluating it (quick, matched for age and sex; smoking recalled, so open to recall bias; strong association, not proof of cause); explaining a confounder; describing the British Doctors cohort (questionnaires in 1951, deaths recorded forward in time) and evaluating it (exposure recorded before the later deaths, large and long; doctors not typical, self-reported, still observational; the strongest ethical design); explaining how strength, dose-response, timing, consistency, mechanism and the effect of quitting together support a causal conclusion; evaluating the benefit as a chain from finding to checked outcome, with Australia's tobacco control, and its limits (delay, unequal reach, costs to participants); applying the frame to an unseen case-control study and the chain to the folate studies.",
+    "nextLesson": "practise rates, graphs and study judgements in exam questions (bio-m8-g01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b11.md"
+  ],
+  "teaching": {
+    "task": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteenfold. How do we judge an epidemiological study, and what it achieved?",
+    "causalExplanation": "Earlier, you measured disease with rates. Now we judge the studies behind them. An observational study watches what people already do, such as smoking, and compares their disease rates. In an intervention study, researchers decide who gets an exposure. In a randomised controlled trial, chance decides the groups, which helps balance other differences. But nobody could ethically make people smoke for decades, so the smoking evidence had to be observational. Their first study was a case-control study: it starts with the disease and looks back. They interviewed about seven hundred lung cancer patients in twenty London hospitals, each matched with a control, a patient without lung cancer, of the same sex and similar age. Then they compared smoking histories. Nearly every man with lung cancer smoked, and heavy smokers were far more common among the patients than among the controls. To judge any method, use four steps: design, strength, limitation, judgement. The design is case-control. Its strength is speed, and matching made age and sex more comparable. Its limitation is that smoking was remembered, not recorded at the time. That opens the door to bias, a flaw in the method that pushes results one way, which more data can't cancel. The judgement: a strong association, but not yet proof of cause.",
+    "conversationalApproach": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteen times. Earlier, you measured disease with rates. Their first study was a case-control study: it starts with the disease and looks back. To judge any method, use four steps: design, strength, limitation, judgement. Critics asked whether a third factor, perhaps something inherited, made people both more likely to smoke and more likely to get lung cancer. Doctors were easy to trace, and their causes of death were well recorded. Now the four steps again. So how did an association become a cause? Several kinds of evidence pointed the same way. Now, what did it achieve? A benefit isn't the finding itself. The benefit was large, mainly because smoking was common and could be changed. Two exam questions. It's case-control: it starts with the disease and looks back. Second. The studies found a risk factor that could be changed. So, for any study.",
+    "openingDecision": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteen times. Smoking had grown, but so had tarred roads, car exhaust and factory smoke. In 1950, Richard Doll and Austin Bradford Hill published the first of their studies on smoking. So how do we judge an epidemiological study, and what it achieved?",
+    "understandingCheck": "Two exam questions. First. Researchers found three hundred adults with bladder cancer and six hundred without, from the same hospitals, matched for age and sex. Each was asked how often they'd used hair dye over the past twenty years. Evaluate the method used in this study. Pause here to answer. Second. Studies in the 1980s and 90s linked low folate around conception with neural tube defects, where the early brain or spinal cord does not close properly. From 2009, non-organic Australian bread flour had to contain folic acid. Afterwards, neural tube defects fell, most in higher-risk groups. Evaluate the benefit of these studies. Pause here to answer.",
+    "curriculumScope": "B8-IQ3-03: \"evaluate the method used in an example of an epidemiological study\" (scenes 3 to 8, attempt 11a). B8-IQ3-04: \"evaluate, using examples, the benefits of engaging in an epidemiological study\" (scenes 9 and 10, attempt 11c). Inquiry question: \"Why are epidemiological studies used?\" (answered in scene 9)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One evidence board: a coded study timeline owns the bottom fifth of the frame from scene 2 to scene 8: a horizontal time axis (1948 to 2001) on which each study writes as a coloured span with a direction arrow (the 1950 case-control span points backwards in time from \"patients with lung cancer\" to \"past smoking\"; the 1951 cohort span points forwards from \"smokers and non-smokers\" to \"deaths recorded\"). Above it, the current study's working: plates, a coded matched-pairs block (case and control dots in pairs), coded record rows (a questionnaire, a ledger line per death), and the coded dose-response chart (house bar chart). A four-slot frame strip (\"design → strength → limitation → judgement\") writes in scene 4 at the upper right and refills for each study. In scenes 9 and 10, the timeline is replaced by a four-link benefit chain (\"finding → decision → action reaches people → outcome checked\"), each link a coded box that fills with a small plate or chip. No people, hands or faces: the studies are charts, records, envelopes, ledgers, lungs and airway cells; doctors and patients are coded dots. Researchers are named in narration only, never drawn. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the graph shrinks to the upper left and dims (grey tag \"b10: rates\"). the columns clear. b07's PathwayStrip in four-slot mode writes at the upper right as the frame strip, one slot per cue: \"design\", \"strength\", \"limitation\", \"judgement\". the frame strip dims to grey and shrinks. the triangle dims. the bar chart shrinks and dims. the board clears above the timeline. the heading adds its second line, \". the chain stays. the board clears. the card stays; the frame strip returns small beside it, empty. the board clears. the card stays; the benefit chain returns small beside it, empty. the frame strip and the benefit chain stack full width, each lighting slot by slot on its cue, with small thumbnails (the backwards and forwards timeline arrows in the design slot; the folate bread in the outcome link). > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. A coded lineGraph draws at the centre: x axis \"year\" 1920 to 1950, y axis \"lung cancer deaths per year, England and Wales\"; on \"rose about fifteen times\" one rising line draws from 612 in 1922 to 9,287 in 1947 (two labelled end points; grey tag \"Doll and Hill 1950, from the Registrar-General\"). On \"Smoking had grown\" new m8-cigarette-pack-plain-v1.png enters small at the upper left. On \"tarred roads, car exhaust and factory smoke\" three small grey chips write beside it, \"tarred roads\", \"car exhaust\", \"factory smoke\", each with a \"?\" (the suspects). On \"Richard Doll and Austin Bradford Hill\" a grey name tag writes under the graph, \"Doll and Hill, London, 1950\" (words only, no portraits). On the question the heading writes: \"How do we judge an epidemiological study?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteen times.",
+      "narrationCue": "rose about fifteen times / Smoking had grown / tarred roads, car exhaust and factory smoke / Richard Doll and Austin Bradford Hill",
+      "motionPurpose": "A coded lineGraph draws at the centre: x axis \"year\" 1920 to 1950, y axis \"lung cancer deaths per year, England and Wales\"; on \"rose about fifteen times\" one rising line draws from 612 in 1922 to 9,287 in 1947 (two labelled end points; grey tag \"Doll and Hill 1950, from the Registrar-General\"). On \"Smoking had grown\" new m8-cigarette-pack-plain-v1.png enters small at the upper left. On \"tarred roads, car exhaust and factory smoke\" three small grey chips write beside it, \"tarred roads\", \"car exhaust\", \"factory smoke\", each with a \"?\" (the suspects). On \"Richard Doll and Austin Bradford Hill\" a grey name tag writes under the graph, \"Doll and Hill, London, 1950\" (words only, no portraits). On the question the heading writes: \"How do we judge an epidemiological study?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. A coded lineGraph draws at the centre: x axis \"year\" 1920 to 1950, y axis \"lung cancer deaths per year, England and Wales\"; on \"rose about fifteen times\" one rising line draws from 612 in 1922 to 9,287 in 1947 (two labelled end points; grey tag \"Doll and Hill 1950, from the Registrar-General\"). On \"Smoking had grown\" new m8-cigarette-pack-plain-v1.png enters small at the upper left. On \"tarred roads, car exhaust and factory smoke\" three small grey chips write beside it, \"tarred roads\", \"car exhaust\", \"factory smoke\", each with a \"?\" (the suspects). On \"Richard Doll and Austin Bradford Hill\" a grey name tag writes under the graph, \"Doll and Hill, London, 1950\" (words only, no portraits). On the question the heading writes: \"How do we judge an epidemiological study?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "lineGraph",
+        "m8-cigarette-pack-plain-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (a fifteenfold rise): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "two-designs",
+      "visualDecision": "new",
+      "visualReference": "the graph shrinks to the upper left and dims (grey tag \"b10: rates\"). Two columns write. Left \"observational\": a field of coded dots, some with a small grey smoke tint (smokers); on \"watches what people already do\" the dots sort themselves into two groups (label \"people choose their own exposure\"). Right \"intervention\": an identical field of plain dots; on \"researchers decide\" a coded allocation marker passes over the field and dots drop into \"group A\" and \"group B\". On \"randomised controlled trial\" the gloss writes \"RCT: chance decides the groups\"; on \"helps balance other differences\" three tiny coloured tags (\"age\", \"diet\", \"genes\") scatter into both groups (label \"chance helps balance them; no guarantee\"). On \"nobody could ethically make people smoke\" m8-cigarette-pack-plain-v1.png slides over the right column and a grey cross draws through it (tag \"unethical: can't assign a harm\"). On \"had to be observational\" the left column brightens. The StudyTimeline draws at the bottom, 1948 to 2001, empty. At most three bright items. Hold one second.",
+      "teachingReason": "Earlier, you measured disease with rates.",
+      "narrationCue": "watches what people already do / researchers decide / randomised controlled trial / helps balance other differences / nobody could ethically make people smoke / had to be observational",
+      "motionPurpose": "the graph shrinks to the upper left and dims (grey tag \"b10: rates\"). Two columns write. Left \"observational\": a field of coded dots, some with a small grey smoke tint (smokers); on \"watches what people already do\" the dots sort themselves into two groups (label \"people choose their own exposure\"). Right \"intervention\": an identical field of plain dots; on \"researchers decide\" a coded allocation marker passes over the field and dots drop into \"group A\" and \"group B\". On \"randomised controlled trial\" the gloss writes \"RCT: chance decides the groups\"; on \"helps balance other differences\" three tiny coloured tags (\"age\", \"diet\", \"genes\") scatter into both groups (label \"chance helps balance them; no guarantee\"). On \"nobody could ethically make people smoke\" m8-cigarette-pack-plain-v1.png slides over the right column and a grey cross draws through it (tag \"unethical: can't assign a harm\"). On \"had to be observational\" the left column brightens. The StudyTimeline draws at the bottom, 1948 to 2001, empty. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the graph shrinks to the upper left and dims (grey tag \"b10: rates\"). Two columns write. Left \"observational\": a field of coded dots, some with a small grey smoke tint (smokers); on \"watches what people already do\" the dots sort themselves into two groups (label \"people choose their own exposure\"). Right \"intervention\": an identical field of plain dots; on \"researchers decide\" a coded allocation marker passes over the field and dots drop into \"group A\" and \"group B\". On \"randomised controlled trial\" the gloss writes \"RCT: chance decides the groups\"; on \"helps balance other differences\" three tiny coloured tags (\"age\", \"diet\", \"genes\") scatter into both groups (label \"chance helps balance them; no guarantee\"). On \"nobody could ethically make people smoke\" m8-cigarette-pack-plain-v1.png slides over the right column and a grey cross draws through it (tag \"unethical: can't assign a harm\"). On \"had to be observational\" the left column brightens. The StudyTimeline draws at the bottom, 1948 to 2001, empty. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-cigarette-pack-plain-v1.png",
+        "StudyTimeline",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "two kinds of design: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "case-control",
+      "visualDecision": "new",
+      "visualReference": "the columns clear. On \"case-control study\" a span writes on the StudyTimeline at 1948 to 1950 with its arrow pointing backwards (label \"case-control: starts with the disease, looks back\"; small hand line under it \"case-control looks back\"). New m8-hospital-case-files-v1.png enters at the left (grey tag \"20 London hospitals\"). On \"seven hundred lung cancer patients\" the coded MatchedPairs block builds at the centre: a column of amber dots (label \"cases: lung cancer, about 700\"); on \"matched with a control\" a teal dot slides in beside each amber dot (gloss \"control: a patient without the disease, same sex, similar age\"). On \"compared smoking histories\" m8-lungs-healthy-v1.png sits small at the right and cross-fades to m8-lungs-smoker-v1.png (grey tag \"the question: smoking?\"). On \"Nearly every man with lung cancer smoked\" a coded result row writes: \"men with lung cancer: 647 of 649 smoked\", with a dimmer row under it, \"men without: 622 of 649 smoked\" (screen only). On \"heavy smokers were far more common\" a third coded row writes under the two, brighter: \"heavy smoking: far more common among the cases\" (grey tag \"Doll and Hill 1950\"), and the two \"ever smoked\" rows dim (grey tag \"both groups mostly smoked; the difference is in how much\"). No unscaled bar: the heavy-smoking category and counts return as a scaled two-bar chart only if the Codex error check supplies them from the 1950 paper (open item). At most three bright items. Hold one second.",
+      "teachingReason": "Their first study was a case-control study: it starts with the disease and looks back.",
+      "narrationCue": "case-control study / seven hundred lung cancer patients / matched with a control / compared smoking histories / Nearly every man with lung cancer smoked / heavy smokers were far more common",
+      "motionPurpose": "the columns clear. On \"case-control study\" a span writes on the StudyTimeline at 1948 to 1950 with its arrow pointing backwards (label \"case-control: starts with the disease, looks back\"; small hand line under it \"case-control looks back\"). New m8-hospital-case-files-v1.png enters at the left (grey tag \"20 London hospitals\"). On \"seven hundred lung cancer patients\" the coded MatchedPairs block builds at the centre: a column of amber dots (label \"cases: lung cancer, about 700\"); on \"matched with a control\" a teal dot slides in beside each amber dot (gloss \"control: a patient without the disease, same sex, similar age\"). On \"compared smoking histories\" m8-lungs-healthy-v1.png sits small at the right and cross-fades to m8-lungs-smoker-v1.png (grey tag \"the question: smoking?\"). On \"Nearly every man with lung cancer smoked\" a coded result row writes: \"men with lung cancer: 647 of 649 smoked\", with a dimmer row under it, \"men without: 622 of 649 smoked\" (screen only). On \"heavy smokers were far more common\" a third coded row writes under the two, brighter: \"heavy smoking: far more common among the cases\" (grey tag \"Doll and Hill 1950\"), and the two \"ever smoked\" rows dim (grey tag \"both groups mostly smoked; the difference is in how much\"). No unscaled bar: the heavy-smoking category and counts return as a scaled two-bar chart only if the Codex error check supplies them from the 1950 paper (open item). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the columns clear. On \"case-control study\" a span writes on the StudyTimeline at 1948 to 1950 with its arrow pointing backwards (label \"case-control: starts with the disease, looks back\"; small hand line under it \"case-control looks back\"). New m8-hospital-case-files-v1.png enters at the left (grey tag \"20 London hospitals\"). On \"seven hundred lung cancer patients\" the coded MatchedPairs block builds at the centre: a column of amber dots (label \"cases: lung cancer, about 700\"); on \"matched with a control\" a teal dot slides in beside each amber dot (gloss \"control: a patient without the disease, same sex, similar age\"). On \"compared smoking histories\" m8-lungs-healthy-v1.png sits small at the right and cross-fades to m8-lungs-smoker-v1.png (grey tag \"the question: smoking?\"). On \"Nearly every man with lung cancer smoked\" a coded result row writes: \"men with lung cancer: 647 of 649 smoked\", with a dimmer row under it, \"men without: 622 of 649 smoked\" (screen only). On \"heavy smokers were far more common\" a third coded row writes under the two, brighter: \"heavy smoking: far more common among the cases\" (grey tag \"Doll and Hill 1950\"), and the two \"ever smoked\" rows dim (grey tag \"both groups mostly smoked; the difference is in how much\"). No unscaled bar: the heavy-smoking category and counts return as a scaled two-bar chart only if the Codex error check supplies them from the 1950 paper (open item). At most three bright items. Hold one second.",
+      "motionTools": [
+        "StudyTimeline",
+        "m8-hospital-case-files-v1.png",
+        "MatchedPairs",
+        "m8-lungs-healthy-v1.png",
+        "m8-lungs-smoker-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the 1950 case-control study: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "four-steps",
+      "visualDecision": "new",
+      "visualReference": "b07's PathwayStrip in four-slot mode writes at the upper right as the frame strip, one slot per cue: \"design\", \"strength\", \"limitation\", \"judgement\". On \"The design is case-control\" the design slot fills \"case-control (looks back)\". On \"speed\" the strength slot fills \"quick; many cases of a less common disease\"; on \"matching\" the paired dots pulse (tag \"age and sex matched\"). On \"remembered, not recorded\" a faded coded tally card (a blank card with a few uneven tally strokes; no face, no head) rises above the amber dots, and the limitation slot fills \"smoking recalled from memory\". On \"bias\" the gloss writes \"bias: a flaw in the method that pushes results one way\"; on \"more data can't cancel\" a chip \"more data fixes it\" writes and takes a grey scribble cross; grey tag \"recall bias\". On \"strong association\" the judgement slot fills \"strong association; cause not yet shown\". At most three bright items. Hold one second.",
+      "teachingReason": "To judge any method, use four steps: design, strength, limitation, judgement.",
+      "narrationCue": "The design is case-control / speed / matching / remembered, not recorded / bias / more data can't cancel / strong association",
+      "motionPurpose": "b07's PathwayStrip in four-slot mode writes at the upper right as the frame strip, one slot per cue: \"design\", \"strength\", \"limitation\", \"judgement\". On \"The design is case-control\" the design slot fills \"case-control (looks back)\". On \"speed\" the strength slot fills \"quick; many cases of a less common disease\"; on \"matching\" the paired dots pulse (tag \"age and sex matched\"). On \"remembered, not recorded\" a faded coded tally card (a blank card with a few uneven tally strokes; no face, no head) rises above the amber dots, and the limitation slot fills \"smoking recalled from memory\". On \"bias\" the gloss writes \"bias: a flaw in the method that pushes results one way\"; on \"more data can't cancel\" a chip \"more data fixes it\" writes and takes a grey scribble cross; grey tag \"recall bias\". On \"strong association\" the judgement slot fills \"strong association; cause not yet shown\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "b07's PathwayStrip in four-slot mode writes at the upper right as the frame strip, one slot per cue: \"design\", \"strength\", \"limitation\", \"judgement\". On \"The design is case-control\" the design slot fills \"case-control (looks back)\". On \"speed\" the strength slot fills \"quick; many cases of a less common disease\"; on \"matching\" the paired dots pulse (tag \"age and sex matched\"). On \"remembered, not recorded\" a faded coded tally card (a blank card with a few uneven tally strokes; no face, no head) rises above the amber dots, and the limitation slot fills \"smoking recalled from memory\". On \"bias\" the gloss writes \"bias: a flaw in the method that pushes results one way\"; on \"more data can't cancel\" a chip \"more data fixes it\" writes and takes a grey scribble cross; grey tag \"recall bias\". On \"strong association\" the judgement slot fills \"strong association; cause not yet shown\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "judge the method: four steps: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cohort",
+      "visualDecision": "new",
+      "visualReference": "the frame strip dims to grey and shrinks. On \"a third factor\" a coded triangle draws: \"smoking\" at the left, \"lung cancer\" at the right with a solid arrow between them, and a grey \"inherited factor?\" node above with dashed arrows to both (grey tag \"later critics included the statistician R. A. Fisher\"). On \"confounder\" the gloss writes \"confounder: linked to both the exposure and the disease\"; a small grey tag writes under it, \"like coffee and smoking (site L12)\". On \"cohort study\" a second span writes on the StudyTimeline from 1951 with its arrow pointing forwards to 2001 (label \"cohort: follows forwards\"; hand line \"cohort goes forward\"). On \"posted a smoking questionnaire\" new m8-questionnaire-envelope-v1.png enters at the left. On \"About forty thousand replied\" a coded field of about 400 small dots fills beside it (label \"about 40,000 doctors replied\"; grey tag \"each dot about 100\"), each tinted by its answer: grey for non-smoker, light, medium and heavy smoke tints. On \"recorded which doctors died\" new m8-record-ledger-v1.png enters at the right and coded RecordRows begin filling with short marks (label \"deaths recorded, with cause\"). At most three bright items. Hold one second.",
+      "teachingReason": "Critics asked whether a third factor, perhaps something inherited, made people both more likely to smoke and more likely to get lung cancer.",
+      "narrationCue": "a third factor / confounder / cohort study / posted a smoking questionnaire / About forty thousand replied / recorded which doctors died",
+      "motionPurpose": "the frame strip dims to grey and shrinks. On \"a third factor\" a coded triangle draws: \"smoking\" at the left, \"lung cancer\" at the right with a solid arrow between them, and a grey \"inherited factor?\" node above with dashed arrows to both (grey tag \"later critics included the statistician R. A. Fisher\"). On \"confounder\" the gloss writes \"confounder: linked to both the exposure and the disease\"; a small grey tag writes under it, \"like coffee and smoking (site L12)\". On \"cohort study\" a second span writes on the StudyTimeline from 1951 with its arrow pointing forwards to 2001 (label \"cohort: follows forwards\"; hand line \"cohort goes forward\"). On \"posted a smoking questionnaire\" new m8-questionnaire-envelope-v1.png enters at the left. On \"About forty thousand replied\" a coded field of about 400 small dots fills beside it (label \"about 40,000 doctors replied\"; grey tag \"each dot about 100\"), each tinted by its answer: grey for non-smoker, light, medium and heavy smoke tints. On \"recorded which doctors died\" new m8-record-ledger-v1.png enters at the right and coded RecordRows begin filling with short marks (label \"deaths recorded, with cause\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the frame strip dims to grey and shrinks. On \"a third factor\" a coded triangle draws: \"smoking\" at the left, \"lung cancer\" at the right with a solid arrow between them, and a grey \"inherited factor?\" node above with dashed arrows to both (grey tag \"later critics included the statistician R. A. Fisher\"). On \"confounder\" the gloss writes \"confounder: linked to both the exposure and the disease\"; a small grey tag writes under it, \"like coffee and smoking (site L12)\". On \"cohort study\" a second span writes on the StudyTimeline from 1951 with its arrow pointing forwards to 2001 (label \"cohort: follows forwards\"; hand line \"cohort goes forward\"). On \"posted a smoking questionnaire\" new m8-questionnaire-envelope-v1.png enters at the left. On \"About forty thousand replied\" a coded field of about 400 small dots fills beside it (label \"about 40,000 doctors replied\"; grey tag \"each dot about 100\"), each tinted by its answer: grey for non-smoker, light, medium and heavy smoke tints. On \"recorded which doctors died\" new m8-record-ledger-v1.png enters at the right and coded RecordRows begin filling with short marks (label \"deaths recorded, with cause\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "StudyTimeline",
+        "m8-questionnaire-envelope-v1.png",
+        "m8-record-ledger-v1.png",
+        "RecordRows",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a third factor, and the cohort: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "dose-response",
+      "visualDecision": "new",
+      "visualReference": "the triangle dims. On \"easy to trace\" two grey chips write by the dot field: \"easy to trace\", \"causes of death well recorded\". On \"1954\" the timeline marks 1954 with a tick (label \"first report, about 2.5 years in\"). On \"rose steadily\" the coded house bar chart draws large at the centre: x axis \"tobacco smoked (grams per day)\": \"none\", \"1 to 14\", \"15 to 24\", \"25 or more\"; y axis \"age-standardised lung-cancer deaths per 1,000 men aged 35+ per year\", 0 to 1.2; bars at 0.00, 0.48, 0.67 and 1.14, each value written small on its bar (grey tag \"Doll and Hill 1954, Table IV\"). On \"lowest in non-smokers\" the first bar pulses; on \"highest in heavy smokers\" the last bar pulses. On \"dose-response\" a rising arrow draws over the bar tops and the gloss writes \"dose-response: more exposure, more disease\". On \"recorded before the later deaths\" the cohort span on the timeline brightens and a small arrow writes from \"1951: smoking recorded\" to \"later: deaths\" (label \"exposure came first\"). At most three bright items. Hold one second.",
+      "teachingReason": "Doctors were easy to trace, and their causes of death were well recorded.",
+      "narrationCue": "easy to trace / 1954 / rose steadily / lowest in non-smokers / highest in heavy smokers / dose-response / recorded before the later deaths",
+      "motionPurpose": "the triangle dims. On \"easy to trace\" two grey chips write by the dot field: \"easy to trace\", \"causes of death well recorded\". On \"1954\" the timeline marks 1954 with a tick (label \"first report, about 2.5 years in\"). On \"rose steadily\" the coded house bar chart draws large at the centre: x axis \"tobacco smoked (grams per day)\": \"none\", \"1 to 14\", \"15 to 24\", \"25 or more\"; y axis \"age-standardised lung-cancer deaths per 1,000 men aged 35+ per year\", 0 to 1.2; bars at 0.00, 0.48, 0.67 and 1.14, each value written small on its bar (grey tag \"Doll and Hill 1954, Table IV\"). On \"lowest in non-smokers\" the first bar pulses; on \"highest in heavy smokers\" the last bar pulses. On \"dose-response\" a rising arrow draws over the bar tops and the gloss writes \"dose-response: more exposure, more disease\". On \"recorded before the later deaths\" the cohort span on the timeline brightens and a small arrow writes from \"1951: smoking recorded\" to \"later: deaths\" (label \"exposure came first\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the triangle dims. On \"easy to trace\" two grey chips write by the dot field: \"easy to trace\", \"causes of death well recorded\". On \"1954\" the timeline marks 1954 with a tick (label \"first report, about 2.5 years in\"). On \"rose steadily\" the coded house bar chart draws large at the centre: x axis \"tobacco smoked (grams per day)\": \"none\", \"1 to 14\", \"15 to 24\", \"25 or more\"; y axis \"age-standardised lung-cancer deaths per 1,000 men aged 35+ per year\", 0 to 1.2; bars at 0.00, 0.48, 0.67 and 1.14, each value written small on its bar (grey tag \"Doll and Hill 1954, Table IV\"). On \"lowest in non-smokers\" the first bar pulses; on \"highest in heavy smokers\" the last bar pulses. On \"dose-response\" a rising arrow draws over the bar tops and the gloss writes \"dose-response: more exposure, more disease\". On \"recorded before the later deaths\" the cohort span on the timeline brightens and a small arrow writes from \"1951: smoking recorded\" to \"later: deaths\" (label \"exposure came first\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the 1954 result: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "judge-cohort",
+      "visualDecision": "adjust",
+      "visualReference": "the bar chart shrinks and dims. The frame strip returns to full brightness at the upper right, cleared, and refills on cues: design \"cohort (goes forward)\"; strengths \"exposure recorded before the deaths; large, long (1951 to 2001)\"; limitations \"doctors, mostly men; self-reported; still observational\" (grey tags \"not a typical population\" and \"smoking updated by later questionnaires\" write small and dim); judgement \"strongest ethical design\". On \"fifty years\" the cohort span's arrow on the timeline extends to 2001 (tag \"50 years\"). On \"unmeasured confounder\" the grey \"inherited factor?\" node from scene 5 reappears small and faint (label \"can't be fully ruled out\"). On \"the strongest design that was ethical\" the crossed cigarette pack from scene 2 flashes small beside the strip (tag \"an RCT wasn't possible\"). At most three bright items. Hold one second.",
+      "teachingReason": "Now the four steps again.",
+      "narrationCue": "fifty years / unmeasured confounder / the strongest design that was ethical",
+      "motionPurpose": "the bar chart shrinks and dims. The frame strip returns to full brightness at the upper right, cleared, and refills on cues: design \"cohort (goes forward)\"; strengths \"exposure recorded before the deaths; large, long (1951 to 2001)\"; limitations \"doctors, mostly men; self-reported; still observational\" (grey tags \"not a typical population\" and \"smoking updated by later questionnaires\" write small and dim); judgement \"strongest ethical design\". On \"fifty years\" the cohort span's arrow on the timeline extends to 2001 (tag \"50 years\"). On \"unmeasured confounder\" the grey \"inherited factor?\" node from scene 5 reappears small and faint (label \"can't be fully ruled out\"). On \"the strongest design that was ethical\" the crossed cigarette pack from scene 2 flashes small beside the strip (tag \"an RCT wasn't possible\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the bar chart shrinks and dims. The frame strip returns to full brightness at the upper right, cleared, and refills on cues: design \"cohort (goes forward)\"; strengths \"exposure recorded before the deaths; large, long (1951 to 2001)\"; limitations \"doctors, mostly men; self-reported; still observational\" (grey tags \"not a typical population\" and \"smoking updated by later questionnaires\" write small and dim); judgement \"strongest ethical design\". On \"fifty years\" the cohort span's arrow on the timeline extends to 2001 (tag \"50 years\"). On \"unmeasured confounder\" the grey \"inherited factor?\" node from scene 5 reappears small and faint (label \"can't be fully ruled out\"). On \"the strongest design that was ethical\" the crossed cigarette pack from scene 2 flashes small beside the strip (tag \"an RCT wasn't possible\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "judge the cohort: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cause",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the timeline. Coded chips write in a column on their cues, each with a small thumbnail, dimming as the next lands (at most three bright): \"strong link\" (the 1950 result rows), \"dose-response\" (the 1954 bars), \"exposure came first\" (the cohort span), \"other countries agreed\" (m8-world-map-v1.png small, with coded dots on Britain and the United States; grey tag \"consistency\"), \"a mechanism\" (m8-lungs-smoker-v1.png with a callout to m7-airway-cell-v1.png and small dark dots on its nucleus; grey tag \"b07: carcinogens damage airway DNA\"). On \"quitting around thirty\" a small coded two-line lineGraph draws: \"kept smoking\" and \"stopped at about 30\", survival-style lines from age 30 to 90, the stopped line close to a dashed \"never smoked\" line (label \"all-cause survival, 2004 follow-up\"; grey tag \"Doll et al. 2004, shape only\"). On \"the extra risk of dying early\" a chip writes \"remove the exposure, the extra risk falls\". A grey chip writes last: \"correlation alone isn't causation; this is several lines of evidence\", with a grey tag \"Bradford Hill, 1965\". Hold one second.",
+      "teachingReason": "So how did an association become a cause? Several kinds of evidence pointed the same way.",
+      "narrationCue": "quitting around thirty / the extra risk of dying early",
+      "motionPurpose": "the board clears above the timeline. Coded chips write in a column on their cues, each with a small thumbnail, dimming as the next lands (at most three bright): \"strong link\" (the 1950 result rows), \"dose-response\" (the 1954 bars), \"exposure came first\" (the cohort span), \"other countries agreed\" (m8-world-map-v1.png small, with coded dots on Britain and the United States; grey tag \"consistency\"), \"a mechanism\" (m8-lungs-smoker-v1.png with a callout to m7-airway-cell-v1.png and small dark dots on its nucleus; grey tag \"b07: carcinogens damage airway DNA\"). On \"quitting around thirty\" a small coded two-line lineGraph draws: \"kept smoking\" and \"stopped at about 30\", survival-style lines from age 30 to 90, the stopped line close to a dashed \"never smoked\" line (label \"all-cause survival, 2004 follow-up\"; grey tag \"Doll et al. 2004, shape only\"). On \"the extra risk of dying early\" a chip writes \"remove the exposure, the extra risk falls\". A grey chip writes last: \"correlation alone isn't causation; this is several lines of evidence\", with a grey tag \"Bradford Hill, 1965\". Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the timeline. Coded chips write in a column on their cues, each with a small thumbnail, dimming as the next lands (at most three bright): \"strong link\" (the 1950 result rows), \"dose-response\" (the 1954 bars), \"exposure came first\" (the cohort span), \"other countries agreed\" (m8-world-map-v1.png small, with coded dots on Britain and the United States; grey tag \"consistency\"), \"a mechanism\" (m8-lungs-smoker-v1.png with a callout to m7-airway-cell-v1.png and small dark dots on its nucleus; grey tag \"b07: carcinogens damage airway DNA\"). On \"quitting around thirty\" a small coded two-line lineGraph draws: \"kept smoking\" and \"stopped at about 30\", survival-style lines from age 30 to 90, the stopped line close to a dashed \"never smoked\" line (label \"all-cause survival, 2004 follow-up\"; grey tag \"Doll et al. 2004, shape only\"). On \"the extra risk of dying early\" a chip writes \"remove the exposure, the extra risk falls\". A grey chip writes last: \"correlation alone isn't causation; this is several lines of evidence\", with a grey tag \"Bradford Hill, 1965\". Hold one second.",
+      "motionTools": [
+        "m8-world-map-v1.png",
+        "m8-lungs-smoker-v1.png",
+        "m7-airway-cell-v1.png",
+        "lineGraph",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "from association to cause: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "benefit-chain",
+      "visualDecision": "new",
+      "visualReference": "the heading adds its second line, \"...and what did it achieve?\". The StudyTimeline slides down and away; b07's PathwayStrip writes as the benefit chain at the bottom, four links on cues: \"finding: a changeable risk factor\", \"decision\", \"action reaches people\", \"outcome checked\". On \"benefit\" the gloss writes \"benefit: what the finding lets people do\". The finding link fills with a small m8-lungs-smoker-v1.png. On \"warning labels, advertising bans, taxes, quit programs\" small chips stack in the decision link, the earlier ones dimming (at most three bright). On \"plain packaging\" m8-cigarette-pack-plain-v1.png drops into the action link (tag \"Australia, 2012\"). On \"around one adult in ten\" a coded 10-dot row writes under the action link with one dot tinted (label \"daily smoking: about 1 in 10 adults aged 18+, ABS 2022\"). On \"men's lung cancer rates have fallen\" b07's attempt graph appears as a small thumbnail in the outcome link (grey tag \"b07\"), its lung cancer line brightening where it falls after the early 1980s. Hold one second.",
+      "teachingReason": "Now, what did it achieve? A benefit isn't the finding itself.",
+      "narrationCue": "benefit / warning labels, advertising bans, taxes, quit programs / plain packaging / around one adult in ten / men's lung cancer rates have fallen",
+      "motionPurpose": "the heading adds its second line, \"...and what did it achieve?\". The StudyTimeline slides down and away; b07's PathwayStrip writes as the benefit chain at the bottom, four links on cues: \"finding: a changeable risk factor\", \"decision\", \"action reaches people\", \"outcome checked\". On \"benefit\" the gloss writes \"benefit: what the finding lets people do\". The finding link fills with a small m8-lungs-smoker-v1.png. On \"warning labels, advertising bans, taxes, quit programs\" small chips stack in the decision link, the earlier ones dimming (at most three bright). On \"plain packaging\" m8-cigarette-pack-plain-v1.png drops into the action link (tag \"Australia, 2012\"). On \"around one adult in ten\" a coded 10-dot row writes under the action link with one dot tinted (label \"daily smoking: about 1 in 10 adults aged 18+, ABS 2022\"). On \"men's lung cancer rates have fallen\" b07's attempt graph appears as a small thumbnail in the outcome link (grey tag \"b07\"), its lung cancer line brightening where it falls after the early 1980s. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the heading adds its second line, \"...and what did it achieve?\". The StudyTimeline slides down and away; b07's PathwayStrip writes as the benefit chain at the bottom, four links on cues: \"finding: a changeable risk factor\", \"decision\", \"action reaches people\", \"outcome checked\". On \"benefit\" the gloss writes \"benefit: what the finding lets people do\". The finding link fills with a small m8-lungs-smoker-v1.png. On \"warning labels, advertising bans, taxes, quit programs\" small chips stack in the decision link, the earlier ones dimming (at most three bright). On \"plain packaging\" m8-cigarette-pack-plain-v1.png drops into the action link (tag \"Australia, 2012\"). On \"around one adult in ten\" a coded 10-dot row writes under the action link with one dot tinted (label \"daily smoking: about 1 in 10 adults aged 18+, ABS 2022\"). On \"men's lung cancer rates have fallen\" b07's attempt graph appears as a small thumbnail in the outcome link (grey tag \"b07\"), its lung cancer line brightening where it falls after the early 1980s. Hold one second.",
+      "motionTools": [
+        "StudyTimeline",
+        "PathwayStrip",
+        "m8-lungs-smoker-v1.png",
+        "m8-cigarette-pack-plain-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what it achieved: the benefit chain: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "benefit-limits",
+      "visualDecision": "new",
+      "visualReference": "the chain stays. On \"common and could be changed\" b07's RiskDial draws small above the finding link with two chips, \"common exposure\" and \"changeable\" (tag \"large benefit\"). On \"the chain was slow\" a coded gap opens between the finding and decision links, stretched along a small time bar \"mid-1950s → decades of policy\" (label \"delay\"). On \"unequal\" the 10-dot row splits into two short rows with different tints (label \"reach is unequal\"; no groups named on screen). On \"time and privacy\" m5x-clipboard-sheet-v1.png sits small beside the finding link (grey tag \"participants' costs: time, privacy, health records\"). On \"The classic mistake\" a chip \"beneficial the moment it's published\" writes and takes a grey scribble cross (small text \"benefit needs action and a checked outcome\"). Hold one second.",
+      "teachingReason": "The benefit was large, mainly because smoking was common and could be changed.",
+      "narrationCue": "common and could be changed / the chain was slow / unequal / time and privacy / The classic mistake",
+      "motionPurpose": "the chain stays. On \"common and could be changed\" b07's RiskDial draws small above the finding link with two chips, \"common exposure\" and \"changeable\" (tag \"large benefit\"). On \"the chain was slow\" a coded gap opens between the finding and decision links, stretched along a small time bar \"mid-1950s → decades of policy\" (label \"delay\"). On \"unequal\" the 10-dot row splits into two short rows with different tints (label \"reach is unequal\"; no groups named on screen). On \"time and privacy\" m5x-clipboard-sheet-v1.png sits small beside the finding link (grey tag \"participants' costs: time, privacy, health records\"). On \"The classic mistake\" a chip \"beneficial the moment it's published\" writes and takes a grey scribble cross (small text \"benefit needs action and a checked outcome\"). Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the chain stays. On \"common and could be changed\" b07's RiskDial draws small above the finding link with two chips, \"common exposure\" and \"changeable\" (tag \"large benefit\"). On \"the chain was slow\" a coded gap opens between the finding and decision links, stretched along a small time bar \"mid-1950s → decades of policy\" (label \"delay\"). On \"unequal\" the 10-dot row splits into two short rows with different tints (label \"reach is unequal\"; no groups named on screen). On \"time and privacy\" m5x-clipboard-sheet-v1.png sits small beside the finding link (grey tag \"participants' costs: time, privacy, health records\"). On \"The classic mistake\" a chip \"beneficial the moment it's published\" writes and takes a grey scribble cross (small text \"benefit needs action and a checked outcome\"). Hold one second.",
+      "motionTools": [
+        "RiskDial",
+        "m5x-clipboard-sheet-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "how big, and its limits: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Researchers identified 300 adults with bladder cancer and 600 adults without bladder cancer, from the same hospitals and matched for age and sex. All participants completed an interview about how often they had used permanent hair dye over the previous 20 years.\" Demand: \"Evaluate the method used in this study. (4 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Researchers identified 300 adults with bladder cancer and 600 adults without bladder cancer, from the same hospitals and matched for age and sex. All participants completed an interview about how often they had used permanent hair dye over the previous 20 years.\" Demand: \"Evaluate the method used in this study. (4 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Researchers identified 300 adults with bladder cancer and 600 adults without bladder cancer, from the same hospitals and matched for age and sex. All participants completed an interview about how often they had used permanent hair dye over the previous 20 years.\" Demand: \"Evaluate the method used in this study. (4 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (a study to judge): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays; the frame strip returns small beside it, empty. On \"case-control\" \"300 adults with bladder cancer and 600 adults without\" underlines and the design slot fills \"case-control: starts with the disease, looks back\". On \"quick\" \"matched for age and sex\" underlines and the strength slot fills \"quick for a less common cancer; age and sex matched\". On \"recalled over twenty years\" \"how often they had used permanent hair dye over the previous 20 years\" underlines and the limitation slot fills \"exposure recalled over 20 years: recall bias\". On \"an association, not a cause\" the judgement slot fills \"association only; cause not shown\". On \"classic mistake\" a chip \"matching removes every confounder\" writes and takes a grey scribble cross, small text \"only matched factors are controlled (smoking and job are not)\". Settle one second.",
+      "teachingReason": "It's case-control: it starts with the disease and looks back.",
+      "narrationCue": "case-control / quick / recalled over twenty years / an association, not a cause / classic mistake",
+      "motionPurpose": "the card stays; the frame strip returns small beside it, empty. On \"case-control\" \"300 adults with bladder cancer and 600 adults without\" underlines and the design slot fills \"case-control: starts with the disease, looks back\". On \"quick\" \"matched for age and sex\" underlines and the strength slot fills \"quick for a less common cancer; age and sex matched\". On \"recalled over twenty years\" \"how often they had used permanent hair dye over the previous 20 years\" underlines and the limitation slot fills \"exposure recalled over 20 years: recall bias\". On \"an association, not a cause\" the judgement slot fills \"association only; cause not shown\". On \"classic mistake\" a chip \"matching removes every confounder\" writes and takes a grey scribble cross, small text \"only matched factors are controlled (smoking and job are not)\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; the frame strip returns small beside it, empty. On \"case-control\" \"300 adults with bladder cancer and 600 adults without\" underlines and the design slot fills \"case-control: starts with the disease, looks back\". On \"quick\" \"matched for age and sex\" underlines and the strength slot fills \"quick for a less common cancer; age and sex matched\". On \"recalled over twenty years\" \"how often they had used permanent hair dye over the previous 20 years\" underlines and the limitation slot fills \"exposure recalled over 20 years: recall bias\". On \"an association, not a cause\" the judgement slot fills \"association only; cause not shown\". On \"classic mistake\" a chip \"matching removes every confounder\" writes and takes a grey scribble cross, small text \"only matched factors are controlled (smoking and job are not)\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Epidemiological studies in the 1980s and 1990s found that low folate intake around the time of conception was associated with a higher risk of neural tube defects (the neural tube is the early structure that becomes the brain and spinal cord). The neural tube closes in the first four weeks of pregnancy. From 2009, Australia required non-organic wheat flour for bread-making to contain folic acid. Afterwards, the rate of neural tube defects fell. The largest falls were in the groups with the highest rates before fortification.\" m6-bread-loaf-crumb-v1.png sits small at the card's upper left. Demand: \"Evaluate the benefit of these epidemiological studies. (4 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Epidemiological studies in the 1980s and 1990s found that low folate intake around the time of conception was associated with a higher risk of neural tube defects (the neural tube is the early structure that becomes the brain and spinal cord). The neural tube closes in the first four weeks of pregnancy. From 2009, Australia required non-organic wheat flour for bread-making to contain folic acid. Afterwards, the rate of neural tube defects fell. The largest falls were in the groups with the highest rates before fortification.\" m6-bread-loaf-crumb-v1.png sits small at the card's upper left. Demand: \"Evaluate the benefit of these epidemiological studies. (4 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Epidemiological studies in the 1980s and 1990s found that low folate intake around the time of conception was associated with a higher risk of neural tube defects (the neural tube is the early structure that becomes the brain and spinal cord). The neural tube closes in the first four weeks of pregnancy. From 2009, Australia required non-organic wheat flour for bread-making to contain folic acid. Afterwards, the rate of neural tube defects fell. The largest falls were in the groups with the highest rates before fortification.\" m6-bread-loaf-crumb-v1.png sits small at the card's upper left. Demand: \"Evaluate the benefit of these epidemiological studies. (4 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m6-bread-loaf-crumb-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (judging a benefit): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays; the benefit chain returns small beside it, empty. On \"risk factor that could be changed\" \"low folate intake ... associated with a higher risk\" underlines and the finding link fills \"low folate: changeable risk factor\". On \"Fortified flour reached people\" \"non-organic wheat flour for bread-making to contain folic acid\" underlines; the decision and action links fill \"fortify bread flour (2009)\" and \"reaches people through everyday bread\". On \"closes before many people know\" \"closes in the first four weeks\" underlines (tag \"advice alone would often come too late\"). On \"Follow-up data showed the fall\" \"the rate of neural tube defects fell\" and \"largest falls ... highest rates\" underline; the outcome link fills \"rates fell, most in highest-risk groups\". On \"other changes may have helped\" a grey tag \"limit: other factors may contribute\". On \"classic mistake\" a chip \"the studies prevented the defects\" writes and takes a grey scribble cross, small text \"the benefit came through the decision\". Settle one second.",
+      "teachingReason": "The studies found a risk factor that could be changed.",
+      "narrationCue": "risk factor that could be changed / Fortified flour reached people / closes before many people know / Follow-up data showed the fall / other changes may have helped / classic mistake",
+      "motionPurpose": "the card stays; the benefit chain returns small beside it, empty. On \"risk factor that could be changed\" \"low folate intake ... associated with a higher risk\" underlines and the finding link fills \"low folate: changeable risk factor\". On \"Fortified flour reached people\" \"non-organic wheat flour for bread-making to contain folic acid\" underlines; the decision and action links fill \"fortify bread flour (2009)\" and \"reaches people through everyday bread\". On \"closes before many people know\" \"closes in the first four weeks\" underlines (tag \"advice alone would often come too late\"). On \"Follow-up data showed the fall\" \"the rate of neural tube defects fell\" and \"largest falls ... highest rates\" underline; the outcome link fills \"rates fell, most in highest-risk groups\". On \"other changes may have helped\" a grey tag \"limit: other factors may contribute\". On \"classic mistake\" a chip \"the studies prevented the defects\" writes and takes a grey scribble cross, small text \"the benefit came through the decision\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; the benefit chain returns small beside it, empty. On \"risk factor that could be changed\" \"low folate intake ... associated with a higher risk\" underlines and the finding link fills \"low folate: changeable risk factor\". On \"Fortified flour reached people\" \"non-organic wheat flour for bread-making to contain folic acid\" underlines; the decision and action links fill \"fortify bread flour (2009)\" and \"reaches people through everyday bread\". On \"closes before many people know\" \"closes in the first four weeks\" underlines (tag \"advice alone would often come too late\"). On \"Follow-up data showed the fall\" \"the rate of neural tube defects fell\" and \"largest falls ... highest rates\" underline; the outcome link fills \"rates fell, most in highest-risk groups\". On \"other changes may have helped\" a grey tag \"limit: other factors may contribute\". On \"classic mistake\" a chip \"the studies prevented the defects\" writes and takes a grey scribble cross, small text \"the benefit came through the decision\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the frame strip and the benefit chain stack full width, each lighting slot by slot on its cue, with small thumbnails (the backwards and forwards timeline arrows in the design slot; the folate bread in the outcome link). The hand line \"cohort goes forward, case-control looks back\" sits small under the frame strip. A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small bar chart thumbnail. Hold half a second before the notes.",
+      "teachingReason": "So, for any study.",
+      "narrationCue": "So, for any study",
+      "motionPurpose": "the frame strip and the benefit chain stack full width, each lighting slot by slot on its cue, with small thumbnails (the backwards and forwards timeline arrows in the design slot; the folate bread in the outcome link). The hand line \"cohort goes forward, case-control looks back\" sits small under the frame strip. A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small bar chart thumbnail. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the frame strip and the benefit chain stack full width, each lighting slot by slot on its cue, with small thumbnails (the backwards and forwards timeline arrows in the design slot; the folate bread in the outcome link). The hand line \"cohort goes forward, case-control looks back\" sits small under the frame strip. A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small bar chart thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b11-learning-review.md",
+      "sha256": "d90fe4398c004afe91876657e2c368c90c63dc2fc98e2dde16544bc81cf8ea53"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b11-claude-science-check.md",
+      "sha256": "36ff8bb43bbb4663c468a325625a4636c6981a8ae46cb55f0aef4683c3447b09"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

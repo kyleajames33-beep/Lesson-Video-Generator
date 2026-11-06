@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C13-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c13/lesson.json",
+  "lessonSha256": "e4cd468f1feca6d71804f60688e89964001021c31d975da58416692d6178ce54",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c13/lesson.production-brief.json",
+    "sha256": "3709c88cce954ed1b98e8aec5bd7b543042d94b8bdd5d83d6d4b15c367e5713d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin. More than a century later, a school lab can make a few grams in an afternoon, and factories make it by the tonne. So how do chemists decide on a recipe, and how do you judge whether it's a good one?",
+      "hash": "004e86d2359c",
+      "textSha256": "004e86d2359cb4144fbb590bdb0e8626cb1764281c14cb9baa48413644353fbd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/hook.004e86d2359c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/hook.004e86d2359c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/hook.004e86d2359c.generation.json",
+      "plannedRequestSha256": "dc403b391225af29abe0237983f76233b86838b1f94e2b0b224981a2ad2562fe"
+    },
+    {
+      "id": "reaction",
+      "parentSceneId": "reaction",
+      "text": "Here's the reaction. Salicylic acid has an O H group on its ring. Ethanoic anhydride, also called acetic anhydride, puts an acetyl group onto that oxygen, making an ester link, like the ones in the esters video. The other half of the anhydride leaves as ethanoic acid. So you get aspirin, plus ethanoic acid as a by-product. Every factor we judge comes back to this one equation.",
+      "hash": "2f111fb64de8",
+      "textSha256": "2f111fb64de8fd548b11d71e949f083b50fc7d92e572531c650d1f264facfe19",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/reaction.2f111fb64de8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/reaction.2f111fb64de8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/reaction.2f111fb64de8.generation.json",
+      "plannedRequestSha256": "84ff18abce947d11a2f3e2de3e3e583710cdac3420a9003b66dbc196074bf654"
+    },
+    {
+      "id": "supply",
+      "parentSceneId": "supply",
+      "text": "Before anything else, you need the reagents, in bulk. Salicylic acid was first made from compounds in plants such as willow bark, but plants couldn't supply tablets for the whole world. Industry makes it from phenol and carbon dioxide, and phenol comes mostly from crude oil. The anhydride is made from ethanoic acid. So availability means a cheap, steady supply, and here that supply traces back to fossil fuels.",
+      "hash": "cf68316ee3c0",
+      "textSha256": "cf68316ee3c0a3ae1c72c0d7df60574f15dca328084b0a85c2fd1a1bf2056134",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/supply.cf68316ee3c0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/supply.cf68316ee3c0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/supply.cf68316ee3c0.generation.json",
+      "plannedRequestSha256": "eadcc0b7aa24fdde7f0b0d7af19f48acdd61bdc88fb30327fc227beeeea7a7af"
+    },
+    {
+      "id": "equilibrium",
+      "parentSceneId": "equilibrium",
+      "text": "Why not use plain ethanoic acid, the acid in vinegar? It can make the same ester, but that reaction is an equilibrium. The mixture settles with plenty of salicylic acid left over, and the water it makes drives the reaction back. The anhydride makes no water. It makes ethanoic acid instead, so the reaction runs almost all the way to aspirin. That means a much higher yield. The catch? The anhydride costs more, and it reacts with water, so everything has to stay dry.",
+      "hash": "9e50e4fa7444",
+      "textSha256": "9e50e4fa7444015e99af72750f3d8ba21a044d997d4338c776d3c0bebe15ad86",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/equilibrium.9e50e4fa7444.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/equilibrium.9e50e4fa7444.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/equilibrium.9e50e4fa7444.generation.json",
+      "plannedRequestSha256": "965cc6fb36147e36e8fbe1544e42bdc2764f506d5a56157d46a3a48a6fd24d0c"
+    },
+    {
+      "id": "rate-conditions",
+      "parentSceneId": "rate-conditions",
+      "text": "Next, speed. At room temperature the reaction is slow. A few drops of concentrated sulfuric or phosphoric acid act as a catalyst, and a warm water bath, about seventy to eighty degrees, gives more collisions with enough energy. The catalyst gets you there sooner; it doesn't change where you end up. So why not heat it harder? A hotter mixture can make more side products, the anhydride fumes more, and the energy costs money. Like the Haber process, it's a balance of speed, yield and cost.",
+      "hash": "62054e95b3d9",
+      "textSha256": "62054e95b3d9e5721f65354370d43e5ac3a1035c6239db6818ace90a9d629275",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/rate-conditions.62054e95b3d9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/rate-conditions.62054e95b3d9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/rate-conditions.62054e95b3d9.generation.json",
+      "plannedRequestSha256": "16f3d2e41629e39b759dfd4238c4b43e1cf6cc12493da3ff9e575a271a1aa850"
+    },
+    {
+      "id": "yield",
+      "parentSceneId": "yield",
+      "text": "Now, how much do you get? Yield compares the aspirin you collect with the most the equation says you could make. Even when the reaction goes almost to completion, product gets lost. Some stays dissolved in the liquid, some sticks to the glassware, and some is left on the filter paper. So a yield well under a hundred per cent is normal, and in a factory, every lost gram is lost money.",
+      "hash": "5428a8b558ab",
+      "textSha256": "5428a8b558abddcf5f5061c472cb6a32adda747c87901f8d3079e745eba38ac7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/yield.5428a8b558ab.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/yield.5428a8b558ab.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/yield.5428a8b558ab.generation.json",
+      "plannedRequestSha256": "58860a32ee918b3ca424b58913343a06d845033abbc5c25921524ac1eba8278a"
+    },
+    {
+      "id": "purity",
+      "parentSceneId": "purity",
+      "text": "A medicine has to be pure, and leftover salicylic acid can irritate the stomach. So the crude crystals are dissolved in a little hot solvent and cooled. The aspirin crystallises out, and most impurities stay dissolved. That's called recrystallising. To check, add iron three chloride. Salicylic acid still has its free O H on the ring, so it turns the solution violet. Pure aspirin doesn't. Here's the trade-off: each recrystallisation makes it purer, but loses more product, so the yield falls.",
+      "hash": "70a80a4596ec",
+      "textSha256": "70a80a4596ec1d80e22f152e3bbe7723e5bb2b0b3899178aa8c632903f6fb517",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/purity.70a80a4596ec.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/purity.70a80a4596ec.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/purity.70a80a4596ec.generation.json",
+      "plannedRequestSha256": "5a67d38e1dea99c9341744d771c2b4988c1e7663c1081eca17f0545d6691018f"
+    },
+    {
+      "id": "safety-waste",
+      "parentSceneId": "safety-waste",
+      "text": "Then safety and waste. Ethanoic anhydride is corrosive and its vapour irritates the eyes and lungs, and the acid catalyst is corrosive too. So the work goes in a fume cupboard, with gloves and eye protection. The by-product, ethanoic acid, doesn't have to be waste. A factory can recover it and turn it back into anhydride. Used solvents and leftover liquids go into labelled waste containers, not down the sink. Less waste means less to treat, and less to pay for.",
+      "hash": "296be67f3c66",
+      "textSha256": "296be67f3c665ff781b28276abaf426293a35cb22dd58c9af25c03fcf666287c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/safety-waste.296be67f3c66.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/safety-waste.296be67f3c66.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/safety-waste.296be67f3c66.generation.json",
+      "plannedRequestSha256": "69a32443bdf1a997442cecb47dbada04613fc7c3ddb002ab7e659d7461f99faf"
+    },
+    {
+      "id": "environment-society-cost",
+      "parentSceneId": "environment-society-cost",
+      "text": "Finally, step back. Environmentally, the starting materials come from crude oil, and heating, solvents and purification all use energy. Socially, aspirin is on the World Health Organization's list of essential medicines, so a cheap, reliable supply matters for people's health. Economically, each tablet sells for very little, so the route needs a high yield from cheap reagents, with little waste. Every factor pulls on the others.",
+      "hash": "8e6fd09d04d3",
+      "textSha256": "8e6fd09d04d399af37fbdd9039758fa0196e51521731e5d6688b2552d8d43f28",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/environment-society-cost.8e6fd09d04d3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/environment-society-cost.8e6fd09d04d3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/environment-society-cost.8e6fd09d04d3.generation.json",
+      "plannedRequestSha256": "0c49edf29b9ed6cc7e5906374026b3f2aea85a3afaccc9e5812a6f2f3883b4de"
+    },
+    {
+      "id": "judge",
+      "parentSceneId": "judge",
+      "text": "So how do you judge it? As in the extended responses video, decide the verdict first, then give each factor a paragraph with its evidence. Here's a judgement with a condition. The anhydride route is a sound design for a cheap, essential medicine, because it gives a high yield quickly under mild conditions, provided the ethanoic acid is recovered and the product is purified to medicine standard. Its weakness is its oil-based starting materials. That's an evaluation, not a list.",
+      "hash": "362a651c4b40",
+      "textSha256": "362a651c4b4031af247a912ac0af000fa4aa1a846b9121992070422d0655f295",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/judge.362a651c4b40.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/judge.362a651c4b40.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/judge.362a651c4b40.generation.json",
+      "plannedRequestSha256": "f7b161a12105ccd364da1d47a045a7992ececd05d597008476e758e004445783"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line to keep: yield tells you how much product you collected, not how good the route is. So when you evaluate a synthesis, start with the reagents, and end with the people and the cost.",
+      "hash": "f57b3b7a08c4",
+      "textSha256": "f57b3b7a08c4b089232ba54489c845179501243f890914188bed58932ea08dde",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/memory-aid.f57b3b7a08c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/memory-aid.f57b3b7a08c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/memory-aid.f57b3b7a08c4.generation.json",
+      "plannedRequestSha256": "f06685f607935610088ac0e734eb3a4833fbcfe949920e8156ddac934e119e93"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A biodiesel plant reacts vegetable oil with methanol, and the reaction is reversible. It uses about twice the methanol the equation needs, then recovers the leftover methanol and reuses it. Explain both choices. Pause here to answer.",
+      "hash": "8b06eb08e3b9",
+      "textSha256": "8b06eb08e3b98cc08e31d7ffdf0c0277aa45e689a247a712d26b3e939a124403",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-1.8b06eb08e3b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-1.8b06eb08e3b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-1.8b06eb08e3b9.generation.json",
+      "plannedRequestSha256": "a96d78647479888e2eced25f2611471f34b767eb27f282e9886a3ddfc5f6fab0"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The reaction is an equilibrium, so adding extra methanol, a reactant, shifts it towards the products and converts more of the oil. Methanol costs money, and it's toxic and flammable, so recovering it cuts cost, waste and risk. Saying the excess is mainly there to speed it up is the trap. The main reason is the equilibrium position.",
+      "hash": "25201427a486",
+      "textSha256": "25201427a48614cc841dee9ea62db29028c458614f023005fd6570b23152cb87",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-1.25201427a486.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-1.25201427a486.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-1.25201427a486.generation.json",
+      "plannedRequestSha256": "7d6ee59ea5b175f7043dd03014278550518cdf47699c5dd6a88a20b5a42c2144"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one, and it's a long response. A company near sugar-cane farms wants to make fuel ethanol, either by hydrating ethene or by fermenting sugar. Evaluate the two routes. Don't write the whole answer. Plan it: your verdict, then one line for each paragraph. Take a full minute if you like. Pause here to answer.",
+      "hash": "bcd838ecda71",
+      "textSha256": "bcd838ecda71ad9946072fb1f65254a7daeaf6c78313690ad6ed79d492e20087",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-2.bcd838ecda71.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-2.bcd838ecda71.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-2.bcd838ecda71.generation.json",
+      "plannedRequestSha256": "ce462df4566407ba2d8a7767b1b4559a061b1a50779ea27d7a4014897238d509"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One strong plan starts with the verdict. Fermentation suits this company better, provided it can power the distillation cheaply, for example by burning cane waste. Then one line per paragraph, each with evidence from the card: supply, conditions and rate, separation and energy, then carbon dioxide. Listing advantages and disadvantages with no verdict is the trap.",
+      "hash": "e53067a90b43",
+      "textSha256": "e53067a90b432cd2f1c756f20259f9ccbfc2572c22fce345652efc5d3698d4c5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-2.e53067a90b43.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-2.e53067a90b43.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-2.e53067a90b43.generation.json",
+      "plannedRequestSha256": "355f364bcde15c60c124d4dc62ee53ee152b656cfeec1176d77cd739866278d4"
+    },
+    {
+      "id": "course-close",
+      "parentSceneId": "course-close",
+      "text": "So for any synthesis, ask where the reagents come from, which conditions balance speed, yield and cost, how pure the product must be, how safe it is and what it wastes, and who it serves at what cost. Then weigh them, and finish with a judgement and its condition. That's the last video in Module 8, and the end of the Year 12 Chemistry course.",
+      "hash": "6fcc5af5327b",
+      "textSha256": "6fcc5af5327b45801ceb0b69ae7573831e8566c749c9e0771c9f99590d2fada9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/course-close.6fcc5af5327b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/course-close.6fcc5af5327b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/course-close.6fcc5af5327b.generation.json",
+      "plannedRequestSha256": "2f58a6a8c14a0877dadb2c1af92aef18498be593473193d77236bdf30f015605"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b10/measured/lesson.json",
+    "lessonSha256": "3781c821c8ba300b06b74affe270bc0f84cbe4c5c6362f77d42a003337c27aae"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "See the Scope paragraph. Not assumed: mortality (as a rate), population at risk, time window, crude rate, age-standardised rate, denominator (screen only).",
+    "startsWith": "More Australians die of cancer each year now than thirty years ago. Yet after allowing for the changing age mix, the cancer death rate is lower. Both statements are true. To see how, you need to know exactly what each disease number measures. So today's question: what do incidence, prevalence and mortality measure?",
+    "stopsAfter": "matching incidence (new cases in a set time), prevalence (everyone living with the disease at one moment) and mortality (deaths from the disease in a set time) to the questions they answer; defining a case, the population at risk and the time window for each; calculating incidence and mortality as counts ÷ population × 100,000 per year, and prevalence as existing cases ÷ population, as a percentage and per 100,000; explaining that mortality divides by the whole population, not by the people with the disease; explaining why a long-lasting disease has prevalence far above incidence, why a rapidly fatal one does not, and why better treatment can raise prevalence while incidence holds steady; explaining why counts and crude rates mislead when populations differ in size or age, and what an age-standardised rate fixes; converting values to one denominator before comparing; choosing a line graph for change over time and a bar graph for comparing groups, with units on the axis; applying this to two unseen data items.",
+    "nextLesson": "practice with new data: calculating rates and judging what the data show (bio-m8-g01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b10.md"
+  ],
+  "teaching": {
+    "task": "More Australians die of cancer each year than thirty years ago, yet after allowing for the changing age mix, the cancer death rate has fallen. How can both be true, and what do incidence, prevalence and mortality each measure?",
+    "causalExplanation": "You've met two of these with dengue. Incidence counts new cases in a set time, and prevalence counts everyone who has the disease at one moment. Incidence is the tap, prevalence is the tank. Now add a third. Mortality counts deaths from the disease in a set time, mort as in mortuary. So it's how many new cases, how many people living with it, and how many deaths. Every rate needs three things defined. First, what counts as a case, for example a diagnosis confirmed by a doctor. Second, the population at risk: the people who could get the disease. For cervical cancer, that's people with a cervix. Third, the time window: usually a year for incidence and mortality, but a single date for prevalence, because it's a snapshot. Leave any of these vague, and two rates that look alike may not be comparable. Let's work all three for type 2 diabetes in one city of eighty thousand people. In 2025, a hundred and sixty people were newly diagnosed. For incidence, new cases go on top and the population goes underneath, then we multiply by a hundred thousand. A hundred and sixty divided by eighty thousand is zero point zero zero two. Times a hundred thousand, that's two hundred per hundred thousand per year. Sense check: that's two in every thousand people, which fits.",
+    "conversationalApproach": "More Australians die of cancer each year now than thirty years ago. You've met two of these with dengue. Every rate needs three things defined. Let's work all three for type 2 diabetes in one city of eighty thousand people. Now prevalence. Third, mortality. Side by side: two hundred new cases, five thousand five hundred living with it, and twenty deaths, all per hundred thousand. Now the hook. To collect these data, use a trusted source such as the Australian Institute of Health and Welfare, and check each figure's denominator. Two exam questions. Region X is five hundred and forty over one point two million, times a hundred thousand: forty-five per hundred thousand per year. Second. Incidence stayed steady at about sixty new cases per hundred thousand. So for any disease data, ask three things.",
+    "openingDecision": "More Australians die of cancer each year now than thirty years ago. Yet after allowing for the changing age mix, the cancer death rate is lower. Both statements are true. To see how, you need to know exactly what each disease number measures. So today's question: what do incidence, prevalence and mortality measure?",
+    "understandingCheck": "Two exam questions. First. In 2024, Region X, with one point two million people, recorded five hundred and forty new lung cancer cases. Region Y, with three hundred thousand people, recorded one hundred and eighty. Calculate the incidence in each region per hundred thousand. Region Y's population is much older. Explain why these rates can't show which region's people are at greater risk. Pause here to answer. Second. The table shows incidence, mortality and prevalence for a non-infectious disease in Australia in 2005, 2015 and 2025, each per hundred thousand people. Describe the trend in each measure. Then suggest an explanation for the rise in prevalence that fits the table. Pause here to answer.",
+    "curriculumScope": "B8-IQ2-02 (p 57): \"collect and represent data to show the incidence, prevalence and mortality rates of non-infectious diseases, for example:\" with \"nutritional diseases\" and \"diseases caused by environmental exposure\" (scenes 4 to 6 and 9, type 2 diabetes as the nutritional example; attempt 1, lung cancer as the environmental example). B8-IQ3-01 (p 57): \"analyse patterns of non-infectious diseases in populations, including their incidence and prevalence, including but not limited to:\" with the same two examples (scenes 7 and 8, attempt 2). Inquiry questions: \"Do non-infectious diseases cause more deaths than infectious diseases?\" and \"Why are epidemiological studies used?\" (the hook and scene 8 show why careful measurement matters; b11 answers the second fully)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One coded data board fills the frame: a task strip at the top (the short task in plain words), the equation on its own line below it, and a grouped givens panel at the left, each value with its unit. Working writes one stage at a time at the right; a result stays only while the next step uses it. A three-column measures bar sits along the bottom from scene 2 to scene 9: \"incidence: new cases\", \"prevalence: living with it\", \"mortality: deaths\", each lighting when used and filling with its worked value from scenes 4 to 6. Painted thumbnails appear small and only where they carry the disease (m8-pancreas-v1.png for type 2 diabetes, m8-lungs-healthy-v1.png for lung cancer); populations are bars and pyramids, never figures. At most three bright text items; earlier lines dim to grey.",
+    "transitionPlan": "no people. the graph shrinks to the upper right and dims. the tank shrinks to a thumbnail above the measures bar. the DataBoard builds. the incidence working dims and clears; its answer stays only in the measures bar. the prevalence working clears. the measures bar lifts to the middle and becomes the house bar chart, three bars on one axis \"per 100,000\": incidence 200, prevalence 5,500, deaths 20 (on \"Side by side\", each bar on its number; grey tag \"prevalence: one date; the others: per year\"). the tanks clear. the board clears. the board clears. the card shrinks to a strip at the top. the board clears. the card stays. the measures bar returns full width with three question chips above it, one per cue: \"new, living with it, or deaths?\", \"which population, which time?\", \"count, crude or age-standardised?\". > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. Two coded lineGraph panels draw large, stacked, sharing one x axis \"year\" 1995 to 2025 (the two series have different units, so they never share an axis and never cross). On \"More Australians die of cancer each year\" the upper panel's grey-blue line \"cancer deaths per year (count)\" draws through all 31 annual values, 34,216 in 1995 to 53,545 in 2025 (it rises overall, with the small 2003 dip drawn as it is). On \"after allowing for the changing age mix\" the lower panel's amber line \"deaths per 100,000, age-standardised (2001 Australian Standard Population)\" falls from 208.6 to 142.7. In both panels 2024 and 2025 are dashed (tag \"projected\"). Grey source tag under the panels: \"AIHW, Cancer data in Australia 2025, Table S2a.1 (persons, all cancers)\". On \"Both statements are true\" a handwritten \"both true?\" writes between the panels (bright). On \"what each disease number measures\" the axis labels pulse in turn (\"count\", \"per 100,000, age-standardised\"). On the question the heading writes: \"What do incidence, prevalence and mortality measure?\" At most three bright text items. Hold one second.",
+      "teachingReason": "More Australians die of cancer each year now than thirty years ago.",
+      "narrationCue": "More Australians die of cancer each year / after allowing for the changing age mix / Both statements are true / what each disease number measures",
+      "motionPurpose": "Two coded lineGraph panels draw large, stacked, sharing one x axis \"year\" 1995 to 2025 (the two series have different units, so they never share an axis and never cross). On \"More Australians die of cancer each year\" the upper panel's grey-blue line \"cancer deaths per year (count)\" draws through all 31 annual values, 34,216 in 1995 to 53,545 in 2025 (it rises overall, with the small 2003 dip drawn as it is). On \"after allowing for the changing age mix\" the lower panel's amber line \"deaths per 100,000, age-standardised (2001 Australian Standard Population)\" falls from 208.6 to 142.7. In both panels 2024 and 2025 are dashed (tag \"projected\"). Grey source tag under the panels: \"AIHW, Cancer data in Australia 2025, Table S2a.1 (persons, all cancers)\". On \"Both statements are true\" a handwritten \"both true?\" writes between the panels (bright). On \"what each disease number measures\" the axis labels pulse in turn (\"count\", \"per 100,000, age-standardised\"). On the question the heading writes: \"What do incidence, prevalence and mortality measure?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Two coded lineGraph panels draw large, stacked, sharing one x axis \"year\" 1995 to 2025 (the two series have different units, so they never share an axis and never cross). On \"More Australians die of cancer each year\" the upper panel's grey-blue line \"cancer deaths per year (count)\" draws through all 31 annual values, 34,216 in 1995 to 53,545 in 2025 (it rises overall, with the small 2003 dip drawn as it is). On \"after allowing for the changing age mix\" the lower panel's amber line \"deaths per 100,000, age-standardised (2001 Australian Standard Population)\" falls from 208.6 to 142.7. In both panels 2024 and 2025 are dashed (tag \"projected\"). Grey source tag under the panels: \"AIHW, Cancer data in Australia 2025, Table S2a.1 (persons, all cancers)\". On \"Both statements are true\" a handwritten \"both true?\" writes between the panels (bright). On \"what each disease number measures\" the axis labels pulse in turn (\"count\", \"per 100,000, age-standardised\"). On the question the heading writes: \"What do incidence, prevalence and mortality measure?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "lineGraph",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (more deaths, lower rate): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "three-measures",
+      "visualDecision": "new",
+      "visualReference": "the graph shrinks to the upper right and dims. bio-m7-b13's TankModel draws at the centre (grey tag \"Module 7: dengue\"): on \"Incidence\" the inflow arrow labelled \"incidence: new cases in a set time\" pulses; on \"prevalence\" the level line labelled \"prevalence: everyone with it, at one moment\" pulses. On \"Incidence is the tap, prevalence is the tank\" the line writes in hand lettering under the tank. On \"Mortality\" the outflow splits into two arrows, \"recovery\" (grey) and \"death\" (amber), and the death arrow gains the label \"mortality: deaths from the disease in a set time\"; on \"mort as in mortuary\" a small grey memory tag writes \"mort, as in mortuary\". The MeasuresBar draws along the bottom with three columns, each lighting on its cue: \"new cases?\", \"living with it?\", \"deaths?\". At most three bright items. Hold one second.",
+      "teachingReason": "You've met two of these with dengue.",
+      "narrationCue": "Incidence / prevalence / Incidence is the tap, prevalence is the tank / Mortality / mort as in mortuary",
+      "motionPurpose": "the graph shrinks to the upper right and dims. bio-m7-b13's TankModel draws at the centre (grey tag \"Module 7: dengue\"): on \"Incidence\" the inflow arrow labelled \"incidence: new cases in a set time\" pulses; on \"prevalence\" the level line labelled \"prevalence: everyone with it, at one moment\" pulses. On \"Incidence is the tap, prevalence is the tank\" the line writes in hand lettering under the tank. On \"Mortality\" the outflow splits into two arrows, \"recovery\" (grey) and \"death\" (amber), and the death arrow gains the label \"mortality: deaths from the disease in a set time\"; on \"mort as in mortuary\" a small grey memory tag writes \"mort, as in mortuary\". The MeasuresBar draws along the bottom with three columns, each lighting on its cue: \"new cases?\", \"living with it?\", \"deaths?\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the graph shrinks to the upper right and dims. bio-m7-b13's TankModel draws at the centre (grey tag \"Module 7: dengue\"): on \"Incidence\" the inflow arrow labelled \"incidence: new cases in a set time\" pulses; on \"prevalence\" the level line labelled \"prevalence: everyone with it, at one moment\" pulses. On \"Incidence is the tap, prevalence is the tank\" the line writes in hand lettering under the tank. On \"Mortality\" the outflow splits into two arrows, \"recovery\" (grey) and \"death\" (amber), and the death arrow gains the label \"mortality: deaths from the disease in a set time\"; on \"mort as in mortuary\" a small grey memory tag writes \"mort, as in mortuary\". The MeasuresBar draws along the bottom with three columns, each lighting on its cue: \"new cases?\", \"living with it?\", \"deaths?\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "TankModel",
+        "MeasuresBar",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "three measures, three questions: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "case-population-time",
+      "visualDecision": "new",
+      "visualReference": "the tank shrinks to a thumbnail above the measures bar. Three chips write across the middle, one per cue: \"case: what counts?\" (on \"a diagnosis confirmed by a doctor\", a small coded tick on a record-card outline; no people); \"population at risk: who could get it?\" (on \"For cervical cancer, that's people with a cervix\" a coded population bar of 100 small squares, about half lit teal, label \"people with a cervix\"; grey tag \"state the case definition and the matching population\"); \"time window: when?\" (on \"a year\" a coded calendar strip spans January to December under the incidence and mortality columns; on \"a single date\" one day on the strip lights under the prevalence column, label \"snapshot\"). At most three bright items. Hold one second.",
+      "teachingReason": "Every rate needs three things defined.",
+      "narrationCue": "a diagnosis confirmed by a doctor / For cervical cancer, that's people with a cervix / a year / a single date",
+      "motionPurpose": "the tank shrinks to a thumbnail above the measures bar. Three chips write across the middle, one per cue: \"case: what counts?\" (on \"a diagnosis confirmed by a doctor\", a small coded tick on a record-card outline; no people); \"population at risk: who could get it?\" (on \"For cervical cancer, that's people with a cervix\" a coded population bar of 100 small squares, about half lit teal, label \"people with a cervix\"; grey tag \"state the case definition and the matching population\"); \"time window: when?\" (on \"a year\" a coded calendar strip spans January to December under the incidence and mortality columns; on \"a single date\" one day on the strip lights under the prevalence column, label \"snapshot\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the tank shrinks to a thumbnail above the measures bar. Three chips write across the middle, one per cue: \"case: what counts?\" (on \"a diagnosis confirmed by a doctor\", a small coded tick on a record-card outline; no people); \"population at risk: who could get it?\" (on \"For cervical cancer, that's people with a cervix\" a coded population bar of 100 small squares, about half lit teal, label \"people with a cervix\"; grey tag \"state the case definition and the matching population\"); \"time window: when?\" (on \"a year\" a coded calendar strip spans January to December under the incidence and mortality columns; on \"a single date\" one day on the strip lights under the prevalence column, label \"snapshot\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a case, a population, a time window: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-incidence",
+      "visualDecision": "new",
+      "visualReference": "the DataBoard builds. m8-pancreas-v1.png thumbnail at the upper left (grey tag \"b08: how type 2 diabetes develops\"). Task strip (on \"Let's work all three\"): \"Type 2 diabetes in one city, 2025: how many new cases per 100,000 people per year?\" Givens panel (on \"eighty thousand people\" and \"a hundred and sixty people were newly diagnosed\"): \"population: 80,000 people\"; \"new diagnoses in 2025: 160 people\"; \"time window: 1 year\"; grey tag \"teaching data\". On \"new cases go on top\" the equation writes on its own line: \"incidence = new cases ÷ population × 100,000\" (grey tag \"same recipe as dengue\"). On \"A hundred and sixty divided by eighty thousand\" the substitute line writes \"160 ÷ 80,000\" and \"160\" and \"80,000\" pulse in the givens panel; on \"zero point zero zero two\" \"= 0.002\" writes. On \"Times a hundred thousand\" the line writes \"0.002 × 100,000\"; on \"two hundred per hundred thousand per year\" the answer boxes: \"= 200 per 100,000 per year\". On \"Sense check\" a grey line writes after the answer: \"check: 2 in every 1,000 people\". The incidence column of the measures bar fills \"200 per 100,000 per year\". At most three bright items. Hold one second.",
+      "teachingReason": "Let's work all three for type 2 diabetes in one city of eighty thousand people.",
+      "narrationCue": "Let's work all three / eighty thousand people / new cases go on top / A hundred and sixty divided by eighty thousand / zero point zero zero two / Times a hundred thousand / two hundred per hundred thousand per year / Sense check",
+      "motionPurpose": "the DataBoard builds. m8-pancreas-v1.png thumbnail at the upper left (grey tag \"b08: how type 2 diabetes develops\"). Task strip (on \"Let's work all three\"): \"Type 2 diabetes in one city, 2025: how many new cases per 100,000 people per year?\" Givens panel (on \"eighty thousand people\" and \"a hundred and sixty people were newly diagnosed\"): \"population: 80,000 people\"; \"new diagnoses in 2025: 160 people\"; \"time window: 1 year\"; grey tag \"teaching data\". On \"new cases go on top\" the equation writes on its own line: \"incidence = new cases ÷ population × 100,000\" (grey tag \"same recipe as dengue\"). On \"A hundred and sixty divided by eighty thousand\" the substitute line writes \"160 ÷ 80,000\" and \"160\" and \"80,000\" pulse in the givens panel; on \"zero point zero zero two\" \"= 0.002\" writes. On \"Times a hundred thousand\" the line writes \"0.002 × 100,000\"; on \"two hundred per hundred thousand per year\" the answer boxes: \"= 200 per 100,000 per year\". On \"Sense check\" a grey line writes after the answer: \"check: 2 in every 1,000 people\". The incidence column of the measures bar fills \"200 per 100,000 per year\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the DataBoard builds. m8-pancreas-v1.png thumbnail at the upper left (grey tag \"b08: how type 2 diabetes develops\"). Task strip (on \"Let's work all three\"): \"Type 2 diabetes in one city, 2025: how many new cases per 100,000 people per year?\" Givens panel (on \"eighty thousand people\" and \"a hundred and sixty people were newly diagnosed\"): \"population: 80,000 people\"; \"new diagnoses in 2025: 160 people\"; \"time window: 1 year\"; grey tag \"teaching data\". On \"new cases go on top\" the equation writes on its own line: \"incidence = new cases ÷ population × 100,000\" (grey tag \"same recipe as dengue\"). On \"A hundred and sixty divided by eighty thousand\" the substitute line writes \"160 ÷ 80,000\" and \"160\" and \"80,000\" pulse in the givens panel; on \"zero point zero zero two\" \"= 0.002\" writes. On \"Times a hundred thousand\" the line writes \"0.002 × 100,000\"; on \"two hundred per hundred thousand per year\" the answer boxes: \"= 200 per 100,000 per year\". On \"Sense check\" a grey line writes after the answer: \"check: 2 in every 1,000 people\". The incidence column of the measures bar fills \"200 per 100,000 per year\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "DataBoard",
+        "m8-pancreas-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked: incidence: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-prevalence",
+      "visualDecision": "adjust",
+      "visualReference": "the incidence working dims and clears; its answer stays only in the measures bar. Task strip: \"On 30 June 2025: what share of the city lives with type 2 diabetes?\" Givens panel replaces its middle line: \"living with type 2 diabetes on 30 June 2025: 4,400 people\"; \"population: 80,000 people\" stays; \"time window: 1 date\". On \"counted on one day\" the time window line pulses (label \"snapshot: no 'per year'\"). Equation: \"prevalence = existing cases ÷ population\". On \"Four thousand four hundred over eighty thousand\" \"4,400 ÷ 80,000\" writes; \"= 0.055\". On \"As a percentage\" \"× 100 = 5.5%\" writes; on \"Per hundred thousand\" \"× 100,000 = 5,500 per 100,000\" writes beside it, and a small bracket joins the two answers: \"same value, two denominators\". The prevalence column fills \"5.5% = 5,500 per 100,000\". At most three bright items. Hold one second.",
+      "teachingReason": "Now prevalence.",
+      "narrationCue": "counted on one day / Four thousand four hundred over eighty thousand / As a percentage / Per hundred thousand",
+      "motionPurpose": "the incidence working dims and clears; its answer stays only in the measures bar. Task strip: \"On 30 June 2025: what share of the city lives with type 2 diabetes?\" Givens panel replaces its middle line: \"living with type 2 diabetes on 30 June 2025: 4,400 people\"; \"population: 80,000 people\" stays; \"time window: 1 date\". On \"counted on one day\" the time window line pulses (label \"snapshot: no 'per year'\"). Equation: \"prevalence = existing cases ÷ population\". On \"Four thousand four hundred over eighty thousand\" \"4,400 ÷ 80,000\" writes; \"= 0.055\". On \"As a percentage\" \"× 100 = 5.5%\" writes; on \"Per hundred thousand\" \"× 100,000 = 5,500 per 100,000\" writes beside it, and a small bracket joins the two answers: \"same value, two denominators\". The prevalence column fills \"5.5% = 5,500 per 100,000\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the incidence working dims and clears; its answer stays only in the measures bar. Task strip: \"On 30 June 2025: what share of the city lives with type 2 diabetes?\" Givens panel replaces its middle line: \"living with type 2 diabetes on 30 June 2025: 4,400 people\"; \"population: 80,000 people\" stays; \"time window: 1 date\". On \"counted on one day\" the time window line pulses (label \"snapshot: no 'per year'\"). Equation: \"prevalence = existing cases ÷ population\". On \"Four thousand four hundred over eighty thousand\" \"4,400 ÷ 80,000\" writes; \"= 0.055\". On \"As a percentage\" \"× 100 = 5.5%\" writes; on \"Per hundred thousand\" \"× 100,000 = 5,500 per 100,000\" writes beside it, and a small bracket joins the two answers: \"same value, two denominators\". The prevalence column fills \"5.5% = 5,500 per 100,000\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked: prevalence, two ways: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-mortality",
+      "visualDecision": "new",
+      "visualReference": "the prevalence working clears. Task strip: \"In 2025: how many deaths from type 2 diabetes per 100,000 people per year?\" Givens panel: \"deaths from type 2 diabetes in 2025: 16 people\" (grey tag \"diabetes as the underlying cause\"); \"population: 80,000 people\"; \"time window: 1 year\". Equation: \"mortality rate = deaths ÷ population × 100,000\". On \"Sixteen over eighty thousand, times a hundred thousand\" \"16 ÷ 80,000 × 100,000\" writes; on \"twenty per hundred thousand per year\" \"= 20 per 100,000 per year\" boxes. On \"the whole population goes underneath\" \"80,000\" pulses in the givens; a grey chip \"16 ÷ 4,400 (people with it)\" writes and takes a scribble cross, small text \"that's a different measure\". The mortality column fills \"20 per 100,000 per year\". At most three bright items. Hold one second.",
+      "teachingReason": "Third, mortality.",
+      "narrationCue": "Sixteen over eighty thousand, times a hundred thousand / twenty per hundred thousand per year / the whole population goes underneath",
+      "motionPurpose": "the prevalence working clears. Task strip: \"In 2025: how many deaths from type 2 diabetes per 100,000 people per year?\" Givens panel: \"deaths from type 2 diabetes in 2025: 16 people\" (grey tag \"diabetes as the underlying cause\"); \"population: 80,000 people\"; \"time window: 1 year\". Equation: \"mortality rate = deaths ÷ population × 100,000\". On \"Sixteen over eighty thousand, times a hundred thousand\" \"16 ÷ 80,000 × 100,000\" writes; on \"twenty per hundred thousand per year\" \"= 20 per 100,000 per year\" boxes. On \"the whole population goes underneath\" \"80,000\" pulses in the givens; a grey chip \"16 ÷ 4,400 (people with it)\" writes and takes a scribble cross, small text \"that's a different measure\". The mortality column fills \"20 per 100,000 per year\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the prevalence working clears. Task strip: \"In 2025: how many deaths from type 2 diabetes per 100,000 people per year?\" Givens panel: \"deaths from type 2 diabetes in 2025: 16 people\" (grey tag \"diabetes as the underlying cause\"); \"population: 80,000 people\"; \"time window: 1 year\". Equation: \"mortality rate = deaths ÷ population × 100,000\". On \"Sixteen over eighty thousand, times a hundred thousand\" \"16 ÷ 80,000 × 100,000\" writes; on \"twenty per hundred thousand per year\" \"= 20 per 100,000 per year\" boxes. On \"the whole population goes underneath\" \"80,000\" pulses in the givens; a grey chip \"16 ÷ 4,400 (people with it)\" writes and takes a scribble cross, small text \"that's a different measure\". The mortality column fills \"20 per 100,000 per year\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked: mortality: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "why-they-differ",
+      "visualDecision": "adjust",
+      "visualReference": "the measures bar lifts to the middle and becomes the house bar chart, three bars on one axis \"per 100,000\": incidence 200, prevalence 5,500, deaths 20 (on \"Side by side\", each bar on its number; grey tag \"prevalence: one date; the others: per year\"). On \"usually lasts for life\" the TankModel thumbnail returns large beside it with a thin inflow, a nearly closed drain and a high level (label \"long-lasting: tank fills\"). On \"Pancreatic cancer\" m8-pancreas-v1.png appears small with a second tank beside it: thin inflow, wide amber drain, low level (label \"rapidly fatal: tank stays low\"; grey tag \"Cancer Australia: five-year relative survival about 14% (2017 to 2021)\"). On \"better treatment\" the first tank's drain narrows further and its level rises while the inflow arrow stays the same width (label \"prevalence up, incidence steady\"). At most three bright items. Hold one second.",
+      "teachingReason": "Side by side: two hundred new cases, five thousand five hundred living with it, and twenty deaths, all per hundred thousand.",
+      "narrationCue": "Side by side / usually lasts for life / Pancreatic cancer / better treatment",
+      "motionPurpose": "the measures bar lifts to the middle and becomes the house bar chart, three bars on one axis \"per 100,000\": incidence 200, prevalence 5,500, deaths 20 (on \"Side by side\", each bar on its number; grey tag \"prevalence: one date; the others: per year\"). On \"usually lasts for life\" the TankModel thumbnail returns large beside it with a thin inflow, a nearly closed drain and a high level (label \"long-lasting: tank fills\"). On \"Pancreatic cancer\" m8-pancreas-v1.png appears small with a second tank beside it: thin inflow, wide amber drain, low level (label \"rapidly fatal: tank stays low\"; grey tag \"Cancer Australia: five-year relative survival about 14% (2017 to 2021)\"). On \"better treatment\" the first tank's drain narrows further and its level rises while the inflow arrow stays the same width (label \"prevalence up, incidence steady\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the measures bar lifts to the middle and becomes the house bar chart, three bars on one axis \"per 100,000\": incidence 200, prevalence 5,500, deaths 20 (on \"Side by side\", each bar on its number; grey tag \"prevalence: one date; the others: per year\"). On \"usually lasts for life\" the TankModel thumbnail returns large beside it with a thin inflow, a nearly closed drain and a high level (label \"long-lasting: tank fills\"). On \"Pancreatic cancer\" m8-pancreas-v1.png appears small with a second tank beside it: thin inflow, wide amber drain, low level (label \"rapidly fatal: tank stays low\"; grey tag \"Cancer Australia: five-year relative survival about 14% (2017 to 2021)\"). On \"better treatment\" the first tank's drain narrows further and its level rises while the inflow arrow stays the same width (label \"prevalence up, incidence steady\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "TankModel",
+        "m8-pancreas-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "why the three numbers differ: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "crude-age-standardised",
+      "visualDecision": "adjust",
+      "visualReference": "the tanks clear. On \"doubles in size\" coded RateBars show two count bars, \"10,000 people: 30 cases\" and \"20,000 people: 60 cases\", which relabel to \"300 per 100,000\" each and level (label \"same rate\"). On \"far more common in older people\" a small coded bar shape rises across age bands (grey tag \"AIHW: cancer incidence by age\"). On \"bigger and older\" the AgePyramid draws two stacks side by side, \"1995\" and \"2025\", the 2025 stack wider at the top (label \"older population\"; no figures). On \"crude\" the hook's count panel returns small with a gloss \"crude rate: not adjusted for age\" and a grey tag \"crude: 190.0 (1995), 193.6 (2025, projected)\". On \"age-standardised\" the two pyramids morph to one identical shape (label \"same age mix\"); gloss \"age-standardised: compares as if the age mix were the same\". On \"deaths have fallen\" the hook's amber panel redraws falling (208.6 to 142.7) and the \"both true?\" note ticks. At most three bright items. Hold one second.",
+      "teachingReason": "Now the hook.",
+      "narrationCue": "doubles in size / far more common in older people / bigger and older / crude / age-standardised / deaths have fallen",
+      "motionPurpose": "the tanks clear. On \"doubles in size\" coded RateBars show two count bars, \"10,000 people: 30 cases\" and \"20,000 people: 60 cases\", which relabel to \"300 per 100,000\" each and level (label \"same rate\"). On \"far more common in older people\" a small coded bar shape rises across age bands (grey tag \"AIHW: cancer incidence by age\"). On \"bigger and older\" the AgePyramid draws two stacks side by side, \"1995\" and \"2025\", the 2025 stack wider at the top (label \"older population\"; no figures). On \"crude\" the hook's count panel returns small with a gloss \"crude rate: not adjusted for age\" and a grey tag \"crude: 190.0 (1995), 193.6 (2025, projected)\". On \"age-standardised\" the two pyramids morph to one identical shape (label \"same age mix\"); gloss \"age-standardised: compares as if the age mix were the same\". On \"deaths have fallen\" the hook's amber panel redraws falling (208.6 to 142.7) and the \"both true?\" note ticks. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the tanks clear. On \"doubles in size\" coded RateBars show two count bars, \"10,000 people: 30 cases\" and \"20,000 people: 60 cases\", which relabel to \"300 per 100,000\" each and level (label \"same rate\"). On \"far more common in older people\" a small coded bar shape rises across age bands (grey tag \"AIHW: cancer incidence by age\"). On \"bigger and older\" the AgePyramid draws two stacks side by side, \"1995\" and \"2025\", the 2025 stack wider at the top (label \"older population\"; no figures). On \"crude\" the hook's count panel returns small with a gloss \"crude rate: not adjusted for age\" and a grey tag \"crude: 190.0 (1995), 193.6 (2025, projected)\". On \"age-standardised\" the two pyramids morph to one identical shape (label \"same age mix\"); gloss \"age-standardised: compares as if the age mix were the same\". On \"deaths have fallen\" the hook's amber panel redraws falling (208.6 to 142.7) and the \"both true?\" note ticks. At most three bright items. Hold one second.",
+      "motionTools": [
+        "RateBars",
+        "AgePyramid",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "counts, crude rates and age: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "collect-represent",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A coded source card writes: \"AIHW: Australian Institute of Health and Welfare\" (grey tag \"aihw.gov.au\"). On \"check each figure's denominator\" two value chips appear: \"prevalence: 5.5%\" and \"incidence: 200 per 100,000 per year\"; on \"convert before you compare\" the first chip rewrites \"5,500 per 100,000\" and a grey tag reads \"same denominator first\". On \"a line graph for change over time\" a small coded lineGraph draws with its y axis labelled \"new cases per 100,000 per year\" (the label pulses on \"units on the axis\"); on \"a bar graph for comparing groups\" a small house bar chart draws with three bars \"region A, B, C\" on the same axis label. On \"better screening\" a grey chip writes beside the line graph: \"screening starts: more cases found\". At most three bright items. Hold one second.",
+      "teachingReason": "To collect these data, use a trusted source such as the Australian Institute of Health and Welfare, and check each figure's denominator.",
+      "narrationCue": "check each figure's denominator / convert before you compare / a line graph for change over time / units on the axis / a bar graph for comparing groups / better screening",
+      "motionPurpose": "the board clears. A coded source card writes: \"AIHW: Australian Institute of Health and Welfare\" (grey tag \"aihw.gov.au\"). On \"check each figure's denominator\" two value chips appear: \"prevalence: 5.5%\" and \"incidence: 200 per 100,000 per year\"; on \"convert before you compare\" the first chip rewrites \"5,500 per 100,000\" and a grey tag reads \"same denominator first\". On \"a line graph for change over time\" a small coded lineGraph draws with its y axis labelled \"new cases per 100,000 per year\" (the label pulses on \"units on the axis\"); on \"a bar graph for comparing groups\" a small house bar chart draws with three bars \"region A, B, C\" on the same axis label. On \"better screening\" a grey chip writes beside the line graph: \"screening starts: more cases found\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A coded source card writes: \"AIHW: Australian Institute of Health and Welfare\" (grey tag \"aihw.gov.au\"). On \"check each figure's denominator\" two value chips appear: \"prevalence: 5.5%\" and \"incidence: 200 per 100,000 per year\"; on \"convert before you compare\" the first chip rewrites \"5,500 per 100,000\" and a grey tag reads \"same denominator first\". On \"a line graph for change over time\" a small coded lineGraph draws with its y axis labelled \"new cases per 100,000 per year\" (the label pulses on \"units on the axis\"); on \"a bar graph for comparing groups\" a small house bar chart draws with three bars \"region A, B, C\" on the same axis label. On \"better screening\" a grey chip writes beside the line graph: \"screening starts: more cases found\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "lineGraph",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "collect and represent, on one denominator: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two regions recorded new cases of lung cancer in 2024. Region Y has a much higher proportion of people aged 65 and over than Region X.\" A small table: \"Region: X, Y\"; \"Population: 1,200,000, 300,000\"; \"New lung cancer cases in 2024: 540, 180\". m8-lungs-healthy-v1.png small at the card's corner. Demand: \"(a) Calculate the incidence of lung cancer in each region, per 100,000 people per year. (2 marks) (b) Explain why these rates cannot show which region's people are at greater risk of lung cancer. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two regions recorded new cases of lung cancer in 2024. Region Y has a much higher proportion of people aged 65 and over than Region X.\" A small table: \"Region: X, Y\"; \"Population: 1,200,000, 300,000\"; \"New lung cancer cases in 2024: 540, 180\". m8-lungs-healthy-v1.png small at the card's corner. Demand: \"(a) Calculate the incidence of lung cancer in each region, per 100,000 people per year. (2 marks) (b) Explain why these rates cannot show which region's people are at greater risk of lung cancer. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two regions recorded new cases of lung cancer in 2024. Region Y has a much higher proportion of people aged 65 and over than Region X.\" A small table: \"Region: X, Y\"; \"Population: 1,200,000, 300,000\"; \"New lung cancer cases in 2024: 540, 180\". m8-lungs-healthy-v1.png small at the card's corner. Demand: \"(a) Calculate the incidence of lung cancer in each region, per 100,000 people per year. (2 marks) (b) Explain why these rates cannot show which region's people are at greater risk of lung cancer. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-lungs-healthy-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (two regions): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top. On \"Region X\" \"1,200,000\" and \"540\" underline amber and row 1 writes \"X: 540 ÷ 1,200,000 × 100,000 = 45 per 100,000 per year\". On \"Region Y is sixty\" \"300,000\" and \"180\" underline amber and row 2 writes \"Y: 180 ÷ 300,000 × 100,000 = 60 per 100,000 per year\". On \"Y's older population\" \"much higher proportion of people aged 65 and over\" underlines teal and row 3 writes: \"Y is older; lung cancer rises with age, so its crude rate is higher partly because of age\"; on \"age-standardised rates\" row 4 writes: \"fair comparison: age-standardised rates\" (grey tag \"b07: latency, so older people have had longer exposure\"). Rows 1 and 2 dim as row 3 writes. On \"classic mistake\" a chip \"X is worse: it had more cases\" writes and takes a scribble cross, small text \"compare rates, not counts\". Settle one second.",
+      "teachingReason": "Region X is five hundred and forty over one point two million, times a hundred thousand: forty-five per hundred thousand per year.",
+      "narrationCue": "Region X / Region Y is sixty / Y's older population / age-standardised rates / classic mistake",
+      "motionPurpose": "the card shrinks to a strip at the top. On \"Region X\" \"1,200,000\" and \"540\" underline amber and row 1 writes \"X: 540 ÷ 1,200,000 × 100,000 = 45 per 100,000 per year\". On \"Region Y is sixty\" \"300,000\" and \"180\" underline amber and row 2 writes \"Y: 180 ÷ 300,000 × 100,000 = 60 per 100,000 per year\". On \"Y's older population\" \"much higher proportion of people aged 65 and over\" underlines teal and row 3 writes: \"Y is older; lung cancer rises with age, so its crude rate is higher partly because of age\"; on \"age-standardised rates\" row 4 writes: \"fair comparison: age-standardised rates\" (grey tag \"b07: latency, so older people have had longer exposure\"). Rows 1 and 2 dim as row 3 writes. On \"classic mistake\" a chip \"X is worse: it had more cases\" writes and takes a scribble cross, small text \"compare rates, not counts\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. On \"Region X\" \"1,200,000\" and \"540\" underline amber and row 1 writes \"X: 540 ÷ 1,200,000 × 100,000 = 45 per 100,000 per year\". On \"Region Y is sixty\" \"300,000\" and \"180\" underline amber and row 2 writes \"Y: 180 ÷ 300,000 × 100,000 = 60 per 100,000 per year\". On \"Y's older population\" \"much higher proportion of people aged 65 and over\" underlines teal and row 3 writes: \"Y is older; lung cancer rises with age, so its crude rate is higher partly because of age\"; on \"age-standardised rates\" row 4 writes: \"fair comparison: age-standardised rates\" (grey tag \"b07: latency, so older people have had longer exposure\"). Rows 1 and 2 dim as row 3 writes. On \"classic mistake\" a chip \"X is worse: it had more cases\" writes and takes a scribble cross, small text \"compare rates, not counts\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The table shows data for a non-infectious disease in Australia (teaching data).\" Table, units in the header of each row: \"Year: 2005, 2015, 2025\"; \"Incidence (new cases per 100,000 per year): 60, 61, 59\"; \"Mortality (deaths per 100,000 per year): 30, 22, 15\"; \"Prevalence (people living with the disease per 100,000): 300, 420, 540\". Demand: \"(a) Describe the trend in each measure from 2005 to 2025. (3 marks) (b) Suggest an explanation, consistent with the data, for the rise in prevalence. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The table shows data for a non-infectious disease in Australia (teaching data).\" Table, units in the header of each row: \"Year: 2005, 2015, 2025\"; \"Incidence (new cases per 100,000 per year): 60, 61, 59\"; \"Mortality (deaths per 100,000 per year): 30, 22, 15\"; \"Prevalence (people living with the disease per 100,000): 300, 420, 540\". Demand: \"(a) Describe the trend in each measure from 2005 to 2025. (3 marks) (b) Suggest an explanation, consistent with the data, for the rise in prevalence. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The table shows data for a non-infectious disease in Australia (teaching data).\" Table, units in the header of each row: \"Year: 2005, 2015, 2025\"; \"Incidence (new cases per 100,000 per year): 60, 61, 59\"; \"Mortality (deaths per 100,000 per year): 30, 22, 15\"; \"Prevalence (people living with the disease per 100,000): 300, 420, 540\". Demand: \"(a) Describe the trend in each measure from 2005 to 2025. (3 marks) (b) Suggest an explanation, consistent with the data, for the rise in prevalence. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (a three-measure table): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays. On \"Incidence stayed steady\" the incidence row \"60, 61, 59\" underlines amber and answer line (a) 1 writes \"incidence: steady, about 60 per 100,000 per year\"; on \"Mortality halved\" \"30, 22, 15\" underlines and line 2 writes \"mortality: halved, 30 to 15\"; on \"Prevalence rose\" \"300, 420, 540\" underlines and line 3 writes \"prevalence: rose, 300 to 540 per 100,000\". On \"consistent with people living longer\" answer (b) writes: \"consistent with people living longer with it (for example, better treatment): existing cases build up while incidence stays similar\"; the tank thumbnail beside it narrows its drain while the tap stays the same (label \"tap same, drain narrower\"). On \"classic mistake\" a chip \"more people are getting it\" writes and takes a scribble cross, small text \"incidence didn't rise\". Settle one second.",
+      "teachingReason": "Incidence stayed steady at about sixty new cases per hundred thousand.",
+      "narrationCue": "Incidence stayed steady / Mortality halved / Prevalence rose / consistent with people living longer / classic mistake",
+      "motionPurpose": "the card stays. On \"Incidence stayed steady\" the incidence row \"60, 61, 59\" underlines amber and answer line (a) 1 writes \"incidence: steady, about 60 per 100,000 per year\"; on \"Mortality halved\" \"30, 22, 15\" underlines and line 2 writes \"mortality: halved, 30 to 15\"; on \"Prevalence rose\" \"300, 420, 540\" underlines and line 3 writes \"prevalence: rose, 300 to 540 per 100,000\". On \"consistent with people living longer\" answer (b) writes: \"consistent with people living longer with it (for example, better treatment): existing cases build up while incidence stays similar\"; the tank thumbnail beside it narrows its drain while the tap stays the same (label \"tap same, drain narrower\"). On \"classic mistake\" a chip \"more people are getting it\" writes and takes a scribble cross, small text \"incidence didn't rise\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Incidence stayed steady\" the incidence row \"60, 61, 59\" underlines amber and answer line (a) 1 writes \"incidence: steady, about 60 per 100,000 per year\"; on \"Mortality halved\" \"30, 22, 15\" underlines and line 2 writes \"mortality: halved, 30 to 15\"; on \"Prevalence rose\" \"300, 420, 540\" underlines and line 3 writes \"prevalence: rose, 300 to 540 per 100,000\". On \"consistent with people living longer\" answer (b) writes: \"consistent with people living longer with it (for example, better treatment): existing cases build up while incidence stays similar\"; the tank thumbnail beside it narrows its drain while the tap stays the same (label \"tap same, drain narrower\"). On \"classic mistake\" a chip \"more people are getting it\" writes and takes a scribble cross, small text \"incidence didn't rise\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the measures bar returns full width with three question chips above it, one per cue: \"new, living with it, or deaths?\", \"which population, which time?\", \"count, crude or age-standardised?\". On \"one denominator\" a fourth chip writes: \"same denominator\". A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "teachingReason": "So for any disease data, ask three things.",
+      "narrationCue": "one denominator",
+      "motionPurpose": "the measures bar returns full width with three question chips above it, one per cue: \"new, living with it, or deaths?\", \"which population, which time?\", \"count, crude or age-standardised?\". On \"one denominator\" a fourth chip writes: \"same denominator\". A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the measures bar returns full width with three question chips above it, one per cue: \"new, living with it, or deaths?\", \"which population, which time?\", \"count, crude or age-standardised?\". On \"one denominator\" a fourth chip writes: \"same denominator\". A \"Next\" chip slides in at the lower right: \"Next: Epidemiology calculation and interpretation practice\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b10-learning-review.md",
+      "sha256": "7a2fdf9565dcc163d6886ebe4cdbfb71180b7c95da68a88bed13e2007e382e73"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b10-claude-science-check.md",
+      "sha256": "5926c9855df5719143f4deb3d29fac26afdf2e54b753a8dee2435398986f03ee"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B07-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b07/lesson.json",
+  "lessonSha256": "ea76d52c1168db05bff84f7268d5b5f398c4be462b2bdc4ab2bae3cc29078694",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b07/lesson.production-brief.json",
+    "sha256": "5b2985935e670f519edcc94c01416d5b506eb346a1523be1f265dbaff233978c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Australia banned asbestos at the end of 2003. Yet each year, hundreds of Australians are still diagnosed with mesothelioma, a cancer that asbestos can cause. So how can a harm show up decades after the exposure stopped? And why do some people who breathed the same dust never get sick? That's today's question: how does environmental exposure cause disease?",
+      "hash": "6a01e0f821ca",
+      "textSha256": "6a01e0f821ca6972383a3ead98b34d27bc1265dc9e522c6d943c7477b256b75a",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/hook.6a01e0f821ca.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/hook.6a01e0f821ca.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/hook.6a01e0f821ca.generation.json",
+      "plannedRequestSha256": "57eb058db3eac279fc47faa935cb807087c3d411f86260c5952f79aa8fb3395b"
+    },
+    {
+      "id": "one-spine",
+      "parentSceneId": "one-spine",
+      "text": "Earlier, you sorted the causes of non-infectious disease, and environmental causes come from outside the body. Here's how they actually make people sick. Every case follows one spine. First, an exposure: real contact with a harmful agent, including how much and for how long. Next, a change in cells or tissue. Then, an effect on health. Let's run tobacco smoke through it, because one exposure can lead to three different diseases.",
+      "hash": "2c90026164ae",
+      "textSha256": "2c90026164aec07535b13333054cbc3d8b601a2c7df72ae552ea040233ee64de",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/one-spine.2c90026164ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/one-spine.2c90026164ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/one-spine.2c90026164ae.generation.json",
+      "plannedRequestSha256": "71228e227082caa41720519e0e7acb5af09484e6ab0f2fc7e707097d304907fb"
+    },
+    {
+      "id": "lung-cancer",
+      "parentSceneId": "lung-cancer",
+      "text": "Pathway one is lung cancer. Smoke carries carcinogens, chemicals that raise the risk of cancer. They reach the cells lining the airways and attach to their DNA. You've seen what happens next: if that damage is copied before it's repaired, it becomes a mutation. When mutations build up in genes that control cell division, a cell can start dividing when it shouldn't. That can be the start of a tumour.",
+      "hash": "950638dafc8d",
+      "textSha256": "950638dafc8dcc0dcdb53e980938dac52b0d52870e4515314830c3d898c6772a",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/lung-cancer.950638dafc8d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/lung-cancer.950638dafc8d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/lung-cancer.950638dafc8d.generation.json",
+      "plannedRequestSha256": "31713e233f9bccb905ff025994be6472f6006840dbc762aef89de838047ec6e9"
+    },
+    {
+      "id": "copd",
+      "parentSceneId": "copd",
+      "text": "Pathway two doesn't need a mutation at all. Smoke irritates the airways, so they stay inflamed for years. White blood cells gather and release enzymes that digest the thin walls between the tiny air sacs. Many small sacs merge into fewer, bigger ones, so there's much less surface for gas exchange. Mucus builds up too, because the hair-like cilia that sweep it out are damaged. Together this is COPD, chronic obstructive pulmonary disease, and the lost walls don't grow back.",
+      "hash": "f2e34f1d1709",
+      "textSha256": "f2e34f1d1709bf5ac858b6425f9a392a67777b9dd45b59c6d717c1956bdd0122",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/copd.f2e34f1d1709.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/copd.f2e34f1d1709.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/copd.f2e34f1d1709.generation.json",
+      "plannedRequestSha256": "2282f8226025ddc7458a2c0e3151934301f8d9783a19b425f63faf58953ed8da"
+    },
+    {
+      "id": "blood-vessels",
+      "parentSceneId": "blood-vessels",
+      "text": "Pathway three is in the blood vessels. Chemicals in smoke damage the smooth lining of the arteries. Fatty deposits and white blood cells build up at those damaged spots, forming a plaque that narrows the artery. Meanwhile, carbon monoxide from the smoke takes oxygen's place on haemoglobin, so the blood carries less oxygen, and nicotine makes the heart beat faster. A narrowed artery and a harder-working heart raise the risk of a heart attack or stroke.",
+      "hash": "9d42b8e1b3aa",
+      "textSha256": "9d42b8e1b3aa80cea6e95648b1abcb581fc379003fca30a334b63a7f838416c7",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/blood-vessels.9d42b8e1b3aa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/blood-vessels.9d42b8e1b3aa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/blood-vessels.9d42b8e1b3aa.generation.json",
+      "plannedRequestSha256": "75efde1c18441fc0417b686de69501ffa953a4ca1c4bcac937414d44d3e2e5dc"
+    },
+    {
+      "id": "dose",
+      "parentSceneId": "dose",
+      "text": "So what decides how much risk? First, dose: how much of the agent gets in, over how long. For smoking, it's counted in pack-years, packs per day multiplied by years smoked. One pack a day for twenty years is twenty pack-years. For cancer, think of each exposure as a ticket in a lottery you don't want to win. Most tickets lose, because the damage is repaired. But more tickets mean more chances that one cell collects several unlucky changes.",
+      "hash": "2381acf72434",
+      "textSha256": "2381acf72434967add60f16c11de51cb454f34bd8fb741040221a8b053c82975",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/dose.2381acf72434.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/dose.2381acf72434.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/dose.2381acf72434.generation.json",
+      "plannedRequestSha256": "ed0ccd3e94e1d00f4690394b384d1e34f604e8c9a3402ffb4c2f74188799ec38"
+    },
+    {
+      "id": "latency-asbestos",
+      "parentSceneId": "latency-asbestos",
+      "text": "Second, time. Those changes take years to build up, so there's usually a long gap between exposure and diagnosis, called latency. Asbestos shows it clearly. Its fibres are long and thin, and once breathed in, they can lodge in the lining around the lungs. Immune cells called macrophages try to swallow them, can't, and keep releasing reactive chemicals that damage nearby cells and their DNA. That slow damage can take twenty to fifty years to become mesothelioma, which is why the 2003 ban hasn't stopped new cases yet.",
+      "hash": "1d8c6e540a5c",
+      "textSha256": "1d8c6e540a5c796de1d3355c759fa28f878e77479e4121d6eb89ea31791fa7c6",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/latency-asbestos.1d8c6e540a5c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/latency-asbestos.1d8c6e540a5c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/latency-asbestos.1d8c6e540a5c.generation.json",
+      "plannedRequestSha256": "1d9337b204d192bed681431344f729fab7f416a8f2290274a86e7398abbd39ec"
+    },
+    {
+      "id": "risk-not-certainty",
+      "parentSceneId": "risk-not-certainty",
+      "text": "So why do many heavy smokers never get lung cancer, while some people who've never smoked do? Because exposure raises the probability, not the certainty. DNA repair works better in some people than others. The immune system destroys some damaged cells. And which cell collects which mutation is partly chance. Never-smokers can be exposed in other ways too, through second-hand smoke, radon gas or polluted air. And exposures can add up: asbestos and smoking together raise lung cancer risk far more than either alone.",
+      "hash": "ccba9d649ea9",
+      "textSha256": "ccba9d649ea9d41779cc62200257a627d24e11c8ce785f5a13a03460fb3a8130",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/risk-not-certainty.ccba9d649ea9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/risk-not-certainty.ccba9d649ea9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/risk-not-certainty.ccba9d649ea9.generation.json",
+      "plannedRequestSha256": "f7f95f0308a03a73f73222fc0229cb547ebc8600b6fd828464068b0198197ee6"
+    },
+    {
+      "id": "not-a-verdict",
+      "parentSceneId": "not-a-verdict",
+      "text": "That's also why a risk isn't a verdict on one person. Many exposures aren't chosen: a worker cutting asbestos sheeting, or a child breathing a parent's smoke. What reliably lowers disease is lowering exposure across a whole population. In 2025, about six in a hundred Australian adults smoked daily, and lung cancer rates in men have fallen too, decades behind. For UV, SunSmart's advice works the same way: slip, slop, slap, seek and slide.",
+      "hash": "7e8d39df485b",
+      "textSha256": "7e8d39df485bdee595ea2d5268adbfa2ebea0133a834b8a627a8241c0e3270da",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/not-a-verdict.7e8d39df485b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/not-a-verdict.7e8d39df485b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/not-a-verdict.7e8d39df485b.generation.json",
+      "plannedRequestSha256": "fe9057c2d7829a5251f246c0a26f2e46876d0dc7f65f4e533f5ac88136dcee15"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. The graph shows illustrative trends for one population of men: the percentage who smoked, and the rate of new lung cancer cases, from 1945 to 2020. Describe how the timing of the two trends differs. Then explain the difference. Pause here to answer.",
+      "hash": "701211c3a93e",
+      "textSha256": "701211c3a93ecef59bd72a0af18b2b149e285a88b3172dfcbfa9f82a0241b8b0",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt.701211c3a93e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt.701211c3a93e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt.701211c3a93e.generation.json",
+      "plannedRequestSha256": "1ca92a8f66bd70c9d70d54b56c89b4f204f5765d7901bff739b0b5997f923ed9"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Smoking fell steadily from 1945, but lung cancer kept rising until the early 1980s, then fell, decades behind. The explanation is latency. Mutations from earlier smoking were already building up, so cancers kept appearing long after people had quit, even while fewer young people took up smoking. The classic mistake is saying smoking can't cause lung cancer because the two peaks don't line up.",
+      "hash": "480c2ef2267e",
+      "textSha256": "480c2ef2267e741c306abe3d3414930529eb737e0486e6995f9f06693441a368",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-one.480c2ef2267e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-one.480c2ef2267e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-one.480c2ef2267e.generation.json",
+      "plannedRequestSha256": "2825d7648560cae61de7f930ed1004c36d5641a95344946c5a74712d5eac3179"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A gardener has worked outdoors in Queensland for thirty years without sun protection. Explain how this repeated UV exposure can increase the risk of melanoma. Then explain why a co-worker with similar exposure may never develop it. Pause here to answer.",
+      "hash": "250db9f11514",
+      "textSha256": "250db9f11514ad2634f9740e6adc1612874d1a47682533f07baf0fa3a26b1d1c",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt-two.250db9f11514.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt-two.250db9f11514.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/attempt-two.250db9f11514.generation.json",
+      "plannedRequestSha256": "1568764adb98e6b4cf739a4c048c0af4da5d3389ed15e8849954422bdbbdc344"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "UV is absorbed by DNA in skin cells and joins neighbouring bases, so the DNA kinks. If that's copied before it's repaired, it becomes a mutation, and thirty years of exposure let mutations build up in genes that control division. But exposure raises the probability. Repair, immune clearance and chance differ between people. The classic mistake is writing that UV always causes cancer.",
+      "hash": "c1e61d7e3dd7",
+      "textSha256": "c1e61d7e3dd7113431dbbecbd0044da28f505baa2a2e823e5f71fd86e7498922",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-two.c1e61d7e3dd7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-two.c1e61d7e3dd7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/feedback-two.c1e61d7e3dd7.generation.json",
+      "plannedRequestSha256": "c35128975b14fe8614774172ecababec0df2d4f0e3ff54e81452b2e3572a2dd4"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any environmental disease question, name the exposure and its dose, describe the change in cells or tissue, link it to the effect, then explain why it's a risk, not a certainty. Next, an exposure nobody can avoid: what we eat, and how nutrition changes disease risk.",
+      "hash": "25021a797a2e",
+      "textSha256": "25021a797a2e88b58ca07f655cfa91f1bd3dfb4e812170defbfe5afa86eef78a",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/decision-rule.25021a797a2e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/decision-rule.25021a797a2e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/decision-rule.25021a797a2e.generation.json",
+      "plannedRequestSha256": "b9dd5027b8dcb32237334ee3c63cb4902883df81ef7e63d26cc36ec7d8551dc9"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B07-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

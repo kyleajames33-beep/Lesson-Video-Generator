@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-G02-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8g02b/lesson.json",
+  "lessonSha256": "04164fd60b07419a4993715d0b00897fcf136369fd79b6765941e6ec0c239c25",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8g02b/lesson.production-brief.json",
+    "sha256": "d5dd64e596602c24d22af82b1f75e1aefd3053439f997bb7716a56e96a4a256d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This is the last Module 8 video, and it's practice. Evaluate questions in this module ask you to judge a prevention method or a technology, using evidence. Here are three HSC-style questions: a screening campaign, a gene therapy and a hearing technology. Pause and try each one properly, then we'll work through it together.",
+      "hash": "394acf25f811",
+      "textSha256": "394acf25f811865e5b0a58d01b371550f77be239503106f2a23e74df1a515463",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/hook.394acf25f811.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/hook.394acf25f811.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/hook.394acf25f811.generation.json",
+      "plannedRequestSha256": "5e1fd9db04d8a4ca2c2c308cb264f2c91ce35bf7198354b15d36aaa17158809e"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A state ran a two-year campaign to get more people aged fifty to seventy-four to return their free bowel cancer screening kits. Region A received the campaign, with letters from local doctors and text reminders. Region B, similar in age and income, received the kits only. The table shows the percentage of kits returned before and after. Evaluate the effectiveness of the campaign, using the data. Pause here to answer.",
+      "hash": "4583da3066a2",
+      "textSha256": "4583da3066a2206e798c214c5b8bfcc54ad3ecec21ad1829c87aab50b3f423b1",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-question.4583da3066a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-question.4583da3066a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-question.4583da3066a2.generation.json",
+      "plannedRequestSha256": "79e0ca24cbe10d20c3b7739b8b8308f64045142fc992ca1e1beaab9d72f0bf5f"
+    },
+    {
+      "id": "q1-measure",
+      "parentSceneId": "q1-measure",
+      "text": "Start with how screening prevents harm. The kit finds hidden blood, and a positive result leads to a closer look inside the bowel, where growths called polyps can be removed before they become cancer, or a cancer found early. So returning a kit is an impact measure: what people did, not yet what the disease did. Now use the comparison. Region A rose by nine percentage points, and Region B, without the campaign, rose by two. So about seven points can be linked to the campaign.",
+      "hash": "e9f7c7f45ad8",
+      "textSha256": "e9f7c7f45ad804a61d4f9cf07efda7dcd5259db15221a2f257f6825147dd0289",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-measure.e9f7c7f45ad8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-measure.e9f7c7f45ad8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-measure.e9f7c7f45ad8.generation.json",
+      "plannedRequestSha256": "1e10849ffb95add6bdfa7cb2a3999e9f651fc6eb83f662a7a8d27cb656a5abab"
+    },
+    {
+      "id": "q1-judge",
+      "parentSceneId": "q1-judge",
+      "text": "Now the limits. These data measure kit returns, not deaths, and longer follow-up would test health outcomes. The regions weren't chosen at random, so other differences might matter. And more than half of Region A still didn't return a kit. So the campaign was effective at increasing screening, which is promising for preventing deaths, but that outcome isn't shown yet. A good improvement: follow early diagnoses and deaths for ten years or more, and target the groups least likely to return kits.",
+      "hash": "be7ce0f96f58",
+      "textSha256": "be7ce0f96f5864662090fe2c8112373da4880ce73fbd62488dc653fe89a3365e",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-judge.be7ce0f96f58.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-judge.be7ce0f96f58.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-judge.be7ce0f96f58.generation.json",
+      "plannedRequestSha256": "f800c072ac9a32e0f3fe4ed672bd84abbbda9e2dc621ea6394c9a054498c1d0c"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is saying the campaign raised returns by nine points. Region B rose by two without it, perhaps from news stories or wider awareness. The comparison region is what separates the campaign's effect from everything else that changed. Compare with it before you credit the campaign.",
+      "hash": "8f3c7ab2eb3c",
+      "textSha256": "8f3c7ab2eb3cef8223d144da1fa70fe14d25d8c4c460e9164b45ff29ff31575b",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8f3c7ab2eb3c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8f3c7ab2eb3c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8f3c7ab2eb3c.generation.json",
+      "plannedRequestSha256": "03067f74a203d2c387fdcb4c61eb7049b1cd041c6d6df61809001a6b1f865f40"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. An inherited eye disease is caused by two faulty copies of a gene called RPE65. Without its protein, the retina can't keep remaking the pigment that detects light, so vision worsens, and many people become blind. In a trial, a harmless virus carried working copies of the gene into the retinas of twenty people. Ten others were not treated. After a year, thirteen treated people, and none of the untreated, could find their way through a test course in the dimmest light. Explain how this therapy works. Then evaluate it as a way to prevent vision loss. Pause here to answer.",
+      "hash": "6a13cda8dffb",
+      "textSha256": "6a13cda8dffb840873ea4e451c79a7f825ea5957a1b72623ad0b5271c23d9a5e",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-question.6a13cda8dffb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-question.6a13cda8dffb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-question.6a13cda8dffb.generation.json",
+      "plannedRequestSha256": "a460c04ba66976e6160014159b5085f3f96162334fed1e63992f7506bb85d1ce"
+    },
+    {
+      "id": "q2-mechanism",
+      "parentSceneId": "q2-mechanism",
+      "text": "Explain first. The virus is a vector: it delivers working copies of the gene into retinal cells, and those cells use them to make the missing protein, so the retina can respond to light again. Now ask what this prevents. It aims to prevent further vision loss in the treated person, a change to the phenotype. It doesn't change their eggs or sperm, so their children can still inherit the faulty gene. And it can only rescue retinal cells that are still alive.",
+      "hash": "25adb77dc486",
+      "textSha256": "25adb77dc486b11420e530dced2233362a7f3fe62eca5d464560ec2023902354",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mechanism.25adb77dc486.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mechanism.25adb77dc486.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mechanism.25adb77dc486.generation.json",
+      "plannedRequestSha256": "788af94776f1afceba833484b0f31595e3959c42d67e769afdef08b71d1d8eee"
+    },
+    {
+      "id": "q2-evaluate",
+      "parentSceneId": "q2-evaluate",
+      "text": "Now the data. Thirteen of twenty is sixty-five per cent, against none of ten, and the untreated group strengthens the evidence that treatment caused the improvement. But it's a small trial, followed for one year, and it helps only people with this one gene fault, a small share of inherited blindness. It's very expensive, too. So it improved functional vision over one year for this gene fault, but the trial doesn't show the retina has stopped declining. It can't prevent inherited eye disease across a population.",
+      "hash": "df8ee4e8a403",
+      "textSha256": "df8ee4e8a4030f25d7f20cfa739abcfb407bcf432a0da402af019dedea7ab175",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-evaluate.df8ee4e8a403.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-evaluate.df8ee4e8a403.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-evaluate.df8ee4e8a403.generation.json",
+      "plannedRequestSha256": "650622c9ea944863ce67b44cde5aa78fd859f2f55e01b654604f5bf870f6f0d6"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is writing that this gene therapy stops the disease being passed on. It changes body cells in one person. Their eggs or sperm still carry the faulty gene, so the risk for their children is unchanged.",
+      "hash": "40ad143dfcff",
+      "textSha256": "40ad143dfcffe7b5c66b7f0a2a2b7f412a551582999036db8bb08c584cc5784c",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.40ad143dfcff.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.40ad143dfcff.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.40ad143dfcff.generation.json",
+      "plannedRequestSha256": "476d93b2327d596b31d539cd49da0da53536fc6fa10e20f26c831ce67ce9db2b"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A clinic fits cochlear implants for adults with severe to profound hearing loss. Its report says, \"Our program is a success: we fitted thirty implants this year, up from eighteen.\" The table shows speech test results for those thirty adults, with their best hearing aids before, and twelve months after the implant. Explain why the number fitted doesn't measure effectiveness, and identify a better outcome measure. Then evaluate the implants, using the data and one access issue. Pause here to answer.",
+      "hash": "b88644f0dab6",
+      "textSha256": "b88644f0dab6adcfd22529c100750a06f3c23b49bf1a03c85dab79b97b4eda74",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-question.b88644f0dab6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-question.b88644f0dab6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-question.b88644f0dab6.generation.json",
+      "plannedRequestSha256": "65e884699499a5582a5d14cb247765d9d45700357723b9fc4e015a6c943b57b8"
+    },
+    {
+      "id": "q3-measure",
+      "parentSceneId": "q3-measure",
+      "text": "Thirty implants fitted is a process measure. It counts what the clinic did, not what changed for the patients. The disorder's effect is trouble understanding speech, so the meaningful outcome is the speech score. It rose from fifteen to seventy per cent in quiet, and from five to thirty-five in noise. Comparing each person with their own best hearing aids is a fair baseline, and twenty-eight of thirty still use the implant every day.",
+      "hash": "bd22167856f2",
+      "textSha256": "bd22167856f2a9132f2ecb3ce6813cfa9602272fa51574fc94179d44a9fb54c6",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-measure.bd22167856f2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-measure.bd22167856f2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-measure.bd22167856f2.generation.json",
+      "plannedRequestSha256": "abfcf3b6e70ab1936e272b415e9af84d0995dce6b4d61fe29047c0cf373ac4e8"
+    },
+    {
+      "id": "q3-evaluate",
+      "parentSceneId": "q3-evaluate",
+      "text": "Now the limits. Noise is still hard: thirty-five per cent means most words are missed. It's one clinic, with no comparison group. And for access, the average wait is nine months, and an implant needs surgery, programming and months of practice, which not everyone can reach. So the implants are highly effective at giving these adults access to speech in quiet, and partly effective in noise. They help a great deal, without restoring normal hearing.",
+      "hash": "0738790b0d4c",
+      "textSha256": "0738790b0d4c22724978240774de8bdeb7dbf35064a590c494d88525180939f6",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-evaluate.0738790b0d4c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-evaluate.0738790b0d4c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-evaluate.0738790b0d4c.generation.json",
+      "plannedRequestSha256": "e12e2198111d88aa69cf108409aff15050cfcd13059cba5f3bed7796ca23c777"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is reading an average as if every patient improved that much. An average of seventy could hide some people near ninety and others who gained very little. Say what the average shows, then note the spread it hides.",
+      "hash": "87683c0a6d24",
+      "textSha256": "87683c0a6d24562c845857e90d3420b79f8733facd9df8f0885e987e100ed698",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.87683c0a6d24.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.87683c0a6d24.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.87683c0a6d24.generation.json",
+      "plannedRequestSha256": "dab744a7204cd4be1bf7ccfd49f92c22fc6e0d82b39c206d81f63d37ce3c9d90"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So for any evaluate question, use the same four moves. Say how the method or technology works. Judge what the evidence shows, with a fair comparison. Name a real limit. Then commit to a judgement for that case. That brings Module 8, and Year 12 Biology, to a close. When you revise, come back to these practice questions.",
+      "hash": "dc9eca56bcc8",
+      "textSha256": "dc9eca56bcc886e447e13ad5b13c7ac807c24c5d2006d0c847d39c52fb922f39",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/decision-board.dc9eca56bcc8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/decision-board.dc9eca56bcc8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/decision-board.dc9eca56bcc8.generation.json",
+      "plannedRequestSha256": "849a2e83bf358d51f0ea228d70276cca2138b6831a2f901c0a88a5ad7c9a4940"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

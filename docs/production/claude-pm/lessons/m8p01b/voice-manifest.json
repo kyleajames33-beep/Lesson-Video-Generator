@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-P01-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8p01b/lesson.json",
+  "lessonSha256": "434d9a7791d4413b5726a6963a5fe28fa1907cd61d1ce6aa98e8ffc949af0616",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8p01b/lesson.production-brief.json",
+    "sha256": "19bd5b9b8e4abd7c19b53525a493b46b4cb3f0e4f985ee7a3adf1c41ca8a6d34"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Fur and blubber slow heat loss. Testing it on live animals isn't practical, or kind. But you can wrap a flask of warm water and leave another bare. After twenty minutes, the bare flask has cooled about twice as much. So how do you run this fairly, and what can a flask really tell you about an animal?",
+      "hash": "8d3c666f3196",
+      "textSha256": "8d3c666f31963a7808349b5e6168d6e0298cab54c16b7b0be230daf21bf2bac4",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/hook.8d3c666f3196.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/hook.8d3c666f3196.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/hook.8d3c666f3196.generation.json",
+      "plannedRequestSha256": "dd72a949de3b9c7f416e55bedef35e112a5dc103c4e9b6107a0d3363767607d1"
+    },
+    {
+      "id": "insulation-model",
+      "parentSceneId": "insulation-model",
+      "text": "Recall that heat flows from a warmer body to cooler air. Fur traps a layer of still air, and still air passes heat on slowly, so heat leaves more slowly. A model is a simpler object that stands in for the real thing. Here, a flask of warm water stands in for the body, and a layer of cotton wool stands in for fur, because it traps still air too.",
+      "hash": "dcb00e42f39d",
+      "textSha256": "dcb00e42f39ddd23368499e39c6cc853d5528861a9d1ce8a81c74d238aecb805",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/insulation-model.dcb00e42f39d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/insulation-model.dcb00e42f39d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/insulation-model.dcb00e42f39d.generation.json",
+      "plannedRequestSha256": "e7023b6bec3d60ea6ce2ab0c3c531a829ac443c83d4eaf6f1a8dc5b98a6e3f5c"
+    },
+    {
+      "id": "aim-variables",
+      "parentSceneId": "aim-variables",
+      "text": "The aim: find out how an insulating layer affects the rate of heat loss from a model body. The independent variable is insulation, wrapped or bare. The dependent variable is the temperature drop over twenty minutes. Keep everything else the same: the same flask type, the same volume of water, the same starting temperature, and the same place in the room.",
+      "hash": "a73b5f201dfe",
+      "textSha256": "a73b5f201dfeb0330a7a96cf706d6b95513626cca5216ed11e7af3371b153803",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/aim-variables.a73b5f201dfe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/aim-variables.a73b5f201dfe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/aim-variables.a73b5f201dfe.generation.json",
+      "plannedRequestSha256": "667983c415a65d46c9eb7cc45fd2aaa3d7f3d25830de965d32e3642067b8d5b5"
+    },
+    {
+      "id": "setup-control",
+      "parentSceneId": "setup-control",
+      "text": "The bare flask is the control, the comparison without insulation. Measure a hundred and fifty millilitres of warm water into each flask with a measuring cylinder. Wrap one in an even layer of cotton wool, and cover both with the same card lid, so evaporation is similar. A temperature probe goes through each lid into the water.",
+      "hash": "33a4b54eebdf",
+      "textSha256": "33a4b54eebdf47c039b3ea71e818d8934a441e8629a8791f70231cefd4abf37a",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/setup-control.33a4b54eebdf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/setup-control.33a4b54eebdf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/setup-control.33a4b54eebdf.generation.json",
+      "plannedRequestSha256": "d2d31b46d5ce155a1303ea4a9aeedb3ee2f99206ad6ffcb0e7162ff2f0aed2c9"
+    },
+    {
+      "id": "same-start",
+      "parentSceneId": "same-start",
+      "text": "Here's a quick prediction. In a room at twenty one degrees, which loses heat faster, water at sixty degrees or at forty five? The hotter water does, because the bigger the difference from the air, the faster heat flows out. So start timing when both probes read forty five point oh.",
+      "hash": "42b926f51001",
+      "textSha256": "42b926f51001e00149672bf7ac09fb8412de1b806f1dab501ed8b40db125316a",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/same-start.42b926f51001.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/same-start.42b926f51001.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/same-start.42b926f51001.generation.json",
+      "plannedRequestSha256": "c6bca3b7a11535bd91dd9bf06f055168d321b130920b81ae8e7d1690b4e3441c"
+    },
+    {
+      "id": "readings",
+      "parentSceneId": "readings",
+      "text": "Record each temperature every four minutes for twenty minutes. The bare flask falls from forty five to thirty two point nine. The wrapped flask falls to thirty eight point eight. Write each reading in a table as you go, with the unit in the column heading.",
+      "hash": "f4b04f53b30f",
+      "textSha256": "f4b04f53b30f98279c163d2ce30793752d2f8e1c108e44d04b13ff2e7591db1b",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/readings.f4b04f53b30f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/readings.f4b04f53b30f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/readings.f4b04f53b30f.generation.json",
+      "plannedRequestSha256": "9464e9c8b2b0e75e2ef0569f77bd91b4ca66eea74c56f3ec56c978eff8b8c83a"
+    },
+    {
+      "id": "graphing",
+      "parentSceneId": "graphing",
+      "text": "Graph temperature against time, with a curve for each insulation condition. Put time along the bottom and temperature up the side. Label both axes with units, plot each reading as a point, and draw a smooth curve through each set. Add a key, so the bare and wrapped lines can't be mixed up.",
+      "hash": "ef472b78449d",
+      "textSha256": "ef472b78449d7cf0c2217ccc39ef18bcef1149fad47265de555e921499e13e56",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/graphing.ef472b78449d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/graphing.ef472b78449d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/graphing.ef472b78449d.generation.json",
+      "plannedRequestSha256": "2f1b6a7362598f43fe389bfe0b808a5f2542b97ae19d53c1b108649ce019261e"
+    },
+    {
+      "id": "reading-graph",
+      "parentSceneId": "reading-graph",
+      "text": "A steeper line means faster cooling. The bare flask dropped twelve point one degrees, so its average rate is twelve point one divided by twenty, about point six degrees per minute. The wrapped flask dropped six point two, about point three. Notice both curves flatten. As the water nears room temperature, the difference shrinks, so heat leaves more slowly.",
+      "hash": "6579f0430945",
+      "textSha256": "6579f04309453ce50dccd59db3325d09a4fc5d9e3955d4d1e67b7502699ad696",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/reading-graph.6579f0430945.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/reading-graph.6579f0430945.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/reading-graph.6579f0430945.generation.json",
+      "plannedRequestSha256": "4596062b4ab2baed35ca891e81dc56932c575a0062f1e35615408c18f1b52d2f"
+    },
+    {
+      "id": "repeats-means",
+      "parentSceneId": "repeats-means",
+      "text": "Run three trials in total, starting from forty five each time. The bare flask's drops average twelve, and the wrapped flask's average six point two. Each set agrees within about half a degree, and the gap is nearly six. So in this model, the cotton wool roughly halved the heat loss. Its trapped still air slowed heat flowing out.",
+      "hash": "ce8dabedb48c",
+      "textSha256": "ce8dabedb48c023f3fdca1c5786dbc805df071ced3c51c21d62c02a9fdd63b0f",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/repeats-means.ce8dabedb48c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/repeats-means.ce8dabedb48c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/repeats-means.ce8dabedb48c.generation.json",
+      "plannedRequestSha256": "0dca4417e53cb7d4cb098c9fe82dd73d646044071e1dea22af39e2893f36d301"
+    },
+    {
+      "id": "model-limits",
+      "parentSceneId": "model-limits",
+      "text": "Now be careful what you claim. This flask is warm water, not an animal. It makes no heat, and it can't respond. A real endotherm keeps making heat, and its feedback loop changes blood flow, shivering and behaviour. Real fur can also be raised, or get wet. So keep the conclusion narrow: an insulating layer slowed heat loss from this model.",
+      "hash": "ef2ee434b44e",
+      "textSha256": "ef2ee434b44ebee3ebe418becbdaff6c90bf071eb1db3cbd2642caa55455f4cd",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/model-limits.ef2ee434b44e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/model-limits.ef2ee434b44e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/model-limits.ef2ee434b44e.generation.json",
+      "plannedRequestSha256": "3adf1219956ba1c86fb1d034e309061387301dcb84766014f76048285ddaaeca"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Now judge it with three questions. Validity: does it measure what it was meant to? For heat loss through a covering, the controls support it. For how an animal regulates its temperature, no. Reliability: do repeats agree? Yes, within about half a degree. Accuracy: how close to the true value? A probe tip touching the glass reads cooler than the water, so keep it in the middle. More repeats can't fix that.",
+      "hash": "7acb0760ecf0",
+      "textSha256": "7acb0760ecf05cb2f3e4970c99e9aff1d49a6646d69234bd65464d9070ed4e91",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/validity-reliability.7acb0760ecf0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/validity-reliability.7acb0760ecf0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/validity-reliability.7acb0760ecf0.generation.json",
+      "plannedRequestSha256": "57d2aa14545f5a93594ab612d5a1ab69242b87c0f7ac45ada0ddd5e3b7b1e85d"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Warm water can scald, so your teacher prepares it no hotter than about fifty degrees, and the flasks stay on the bench, not in your hands. Glass can break and cut, so check flasks for chips, and report breakages instead of picking up glass. Mop up spills straight away, so no one slips and the connections stay dry.",
+      "hash": "7a98f69344f6",
+      "textSha256": "7a98f69344f6dbc17af9233716231bd792a2deb37e4426f5d89563582cd17312",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/risk-assessment.7a98f69344f6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/risk-assessment.7a98f69344f6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/risk-assessment.7a98f69344f6.generation.json",
+      "plannedRequestSha256": "6ef463961e720f73b77ce20a06d7c379e59392690eb0efe6100d835dc6087dff"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Two glass beakers of the same shape held fifty millilitres and four hundred millilitres of water, both starting at forty five degrees in the same room. After ten minutes, the small beaker had cooled by nine degrees, and the large beaker by three. Calculate both cooling rates, then explain the difference using surface area to volume ratio: the surface through which heat leaves for each millilitre of water. Pause here to answer.",
+      "hash": "36a302edbe1f",
+      "textSha256": "36a302edbe1f959846c58d1683fb014de9c344865aa6ae4295e978b454488f22",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-1.36a302edbe1f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-1.36a302edbe1f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-1.36a302edbe1f.generation.json",
+      "plannedRequestSha256": "76ace196d68b49bc6216ccf6c0c1a2bd035b5932bc125483ff459a04ae73d7a3"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Nine divided by ten is point nine degrees per minute for the small beaker, and three divided by ten is point three for the large. The small beaker has more surface for each millilitre, a larger surface area to volume ratio. So it loses heat faster for the heat it holds, and cools faster. The classic mistake is saying the large beaker has less surface area. It has more, but less per millilitre.",
+      "hash": "7f597b056c55",
+      "textSha256": "7f597b056c557cf3eaf01396cf37d55eec40cc46998eb76adc173ea956ad72db",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-1.7f597b056c55.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-1.7f597b056c55.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-1.7f597b056c55.generation.json",
+      "plannedRequestSha256": "b35db6279c0b4cbf10f27f6f9556528f10d42b4e5c984a6c1748018e181ba48a"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student poured two hundred millilitres of water at fifty degrees into a bare flask, and a hundred millilitres at forty degrees into a flask wrapped in wool. After twenty minutes, the bare flask had cooled more. She concluded that wool reduces heat loss. Identify two problems with her method, and propose a change that fixes each one. Pause here to answer.",
+      "hash": "af0600e564e6",
+      "textSha256": "af0600e564e6439a19c4ed71002403c8415248f3ab099edcacd90ad563007726",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-2.af0600e564e6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-2.af0600e564e6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/attempt-2.af0600e564e6.generation.json",
+      "plannedRequestSha256": "63b081759ec5ecfe1002a9bd86a5cf1d536bf8c1f29d7d8763067c27a8ec4058"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One: the starting temperatures differed. Hotter water loses heat faster, so the bare flask's bigger drop could come from its higher start. Start both at the same temperature. Two: the volumes differed, which changes how fast each cools. Measure the same volume into each. The classic mistake is to use a more accurate thermometer. That won't fix an uncontrolled variable.",
+      "hash": "33e4db145212",
+      "textSha256": "33e4db145212a1d08b0141ef12425386f0aaee6a58fe36d19bd727733cafb6d2",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-2.33e4db145212.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-2.33e4db145212.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/feedback-2.33e4db145212.generation.json",
+      "plannedRequestSha256": "97759331afba116053c16f33f1a485779b688d9e6f07d3992f1489e942babe3a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for this insulation test: change only the wrap, keep the volume and starting temperature the same, repeat each trial, graph it, and claim only what the model can show. Next: how insulin and glucagon keep blood glucose in range.",
+      "hash": "df0ed7ecfd15",
+      "textSha256": "df0ed7ecfd1561039ad651539f0710381ec7b695cc6b18f33f210fdf08736064",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/decision-rule.df0ed7ecfd15.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/decision-rule.df0ed7ecfd15.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/decision-rule.df0ed7ecfd15.generation.json",
+      "plannedRequestSha256": "ba5c57d7272e10acbbe442a14aec5b9d5f466539300269b67bbcd69ae4c02d47"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-P01-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

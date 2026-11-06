@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B10-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b10/lesson.json",
+  "lessonSha256": "8d9345db745b3e224b64d2c79f7d29c1dc1ae236a2ff42cbebbb2168c1c93d46",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b10/lesson.production-brief.json",
+    "sha256": "fc9b1071b46560103b097c797b21b90e9ec6a770c2c0494e6f0a482645390d86"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "More Australians die of cancer each year now than thirty years ago. Yet after allowing for the changing age mix, the cancer death rate is lower. Both statements are true. To see how, you need to know exactly what each disease number measures. So today's question: what do incidence, prevalence and mortality measure?",
+      "hash": "77793c7cfba0",
+      "textSha256": "77793c7cfba0f2173a082725960ea2c46036e524eb3848f8a5deb8cb806b63fc",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/hook.77793c7cfba0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/hook.77793c7cfba0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/hook.77793c7cfba0.generation.json",
+      "plannedRequestSha256": "b8c04dbb30af787af43d017b646138c2bd9f0695bc3fe565ffc8101eb121b353"
+    },
+    {
+      "id": "three-measures",
+      "parentSceneId": "three-measures",
+      "text": "You've met two of these with dengue. Incidence counts new cases in a set time, and prevalence counts everyone who has the disease at one moment. Incidence is the tap, prevalence is the tank. Now add a third. Mortality counts deaths from the disease in a set time, mort as in mortuary. So it's how many new cases, how many people living with it, and how many deaths.",
+      "hash": "c1dea0a51818",
+      "textSha256": "c1dea0a518186144545c7f7e3e0094d492ff94187eceb7d3a75ae76a524efeeb",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/three-measures.c1dea0a51818.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/three-measures.c1dea0a51818.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/three-measures.c1dea0a51818.generation.json",
+      "plannedRequestSha256": "2cfada7eeb72925a22bf8633b4e4be6a25c7acc2485f730537741648a9c79e90"
+    },
+    {
+      "id": "case-population-time",
+      "parentSceneId": "case-population-time",
+      "text": "Every rate needs three things defined. First, what counts as a case, for example a diagnosis confirmed by a doctor. Second, the population at risk: the people who could get the disease. For cervical cancer, that's people with a cervix. Third, the time window: usually a year for incidence and mortality, but a single date for prevalence, because it's a snapshot. Leave any of these vague, and two rates that look alike may not be comparable.",
+      "hash": "798afb3c0e28",
+      "textSha256": "798afb3c0e2818cbf1cad5b90334b09003896effb2ead3f29b1e84ebb519db38",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/case-population-time.798afb3c0e28.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/case-population-time.798afb3c0e28.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/case-population-time.798afb3c0e28.generation.json",
+      "plannedRequestSha256": "3fa0fb9c51526bbb8088d112d00b37d5fdd129453afba7f09aec9018bc3410c0"
+    },
+    {
+      "id": "worked-incidence",
+      "parentSceneId": "worked-incidence",
+      "text": "Let's work all three for type 2 diabetes in one city of eighty thousand people. In 2025, a hundred and sixty people were newly diagnosed. For incidence, new cases go on top and the population goes underneath, then we multiply by a hundred thousand. A hundred and sixty divided by eighty thousand is zero point zero zero two. Times a hundred thousand, that's two hundred per hundred thousand per year. Sense check: that's two in every thousand people, which fits.",
+      "hash": "efb344e15377",
+      "textSha256": "efb344e15377faedca27a439496aed6d32c3cc0778a04cf68a209e00b373623a",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-incidence.efb344e15377.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-incidence.efb344e15377.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-incidence.efb344e15377.generation.json",
+      "plannedRequestSha256": "fb9ab27083bd33dc2daae6c427204d37b30058b0b00dd7cc7fcdb057cb42d0d9"
+    },
+    {
+      "id": "worked-prevalence",
+      "parentSceneId": "worked-prevalence",
+      "text": "Now prevalence. On the thirtieth of June 2025, four thousand four hundred people in the city were living with type 2 diabetes. These are all existing cases, counted on one day, so there's no \"per year\". Four thousand four hundred over eighty thousand is zero point zero five five. As a percentage, that's five point five per cent. Per hundred thousand, it's five thousand five hundred. Use whichever form the question asks for, but don't mix them.",
+      "hash": "2166ed8f5062",
+      "textSha256": "2166ed8f50627eecd727ebdacc423de767051cf57e7b5feeaf91b2ed56b27105",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-prevalence.2166ed8f5062.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-prevalence.2166ed8f5062.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-prevalence.2166ed8f5062.generation.json",
+      "plannedRequestSha256": "a4736f9db13bba8b09c465cc4d4702d6308f2002d9f4f50534528fbe49750836"
+    },
+    {
+      "id": "worked-mortality",
+      "parentSceneId": "worked-mortality",
+      "text": "Third, mortality. In 2025, sixteen people in the city died from type 2 diabetes. Sixteen over eighty thousand, times a hundred thousand, is twenty per hundred thousand per year. Notice the whole population goes underneath, not just the people who had the disease. That's what makes it a mortality rate. The share of patients who die is a different measure.",
+      "hash": "82cf251f871e",
+      "textSha256": "82cf251f871e27d4883e74222fe9afadb78d77cb940b4820673f7a4ebf4ac4cd",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-mortality.82cf251f871e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-mortality.82cf251f871e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/worked-mortality.82cf251f871e.generation.json",
+      "plannedRequestSha256": "6b9dcc7a6084bd9f393b5ee661d6e0d23400bc4aad8f5d96175868a2fcaea516"
+    },
+    {
+      "id": "why-they-differ",
+      "parentSceneId": "why-they-differ",
+      "text": "Side by side: two hundred new cases, five thousand five hundred living with it, and twenty deaths, all per hundred thousand. Prevalence is far bigger because type 2 diabetes usually lasts for life, so the tank keeps filling and little drains out. Pancreatic cancer is the opposite. Few people get it, but most die within a few years, so prevalence stays low. And better treatment that keeps people alive longer raises prevalence, even when incidence doesn't change.",
+      "hash": "56e424f40bba",
+      "textSha256": "56e424f40bba12acc60721ff16a0d81bbca4415bdd1f3eb03cab04cb2ec43cb1",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/why-they-differ.56e424f40bba.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/why-they-differ.56e424f40bba.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/why-they-differ.56e424f40bba.generation.json",
+      "plannedRequestSha256": "90fc24c5b0ff323878e10b5accbeaf72b9e72a7a591ff9ff26fdd2df943aca9e"
+    },
+    {
+      "id": "crude-age-standardised",
+      "parentSceneId": "crude-age-standardised",
+      "text": "Now the hook. If a town doubles in size and its cancer cases double too, the rate hasn't changed. But a rate fixes size, not age, and most cancers are far more common in older people. Australia's population is bigger and older than thirty years ago. So the count of cancer deaths has risen, and the unadjusted, or crude, rate has barely moved. An age-standardised rate works out what the rate would be if both years had the same age mix. On that measure, deaths have fallen.",
+      "hash": "bb13651581f9",
+      "textSha256": "bb13651581f91ac91fe2c6e50ee281af2829cf68b21b03e645a84303eb027b41",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/crude-age-standardised.bb13651581f9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/crude-age-standardised.bb13651581f9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/crude-age-standardised.bb13651581f9.generation.json",
+      "plannedRequestSha256": "8deff8b34524e40b187beebb4a0d338cefb7de48080dc58daa755c7cd9f74505"
+    },
+    {
+      "id": "collect-represent",
+      "parentSceneId": "collect-represent",
+      "text": "To collect these data, use a trusted source such as the Australian Institute of Health and Welfare, and check each figure's denominator. If one value's a percentage and another's per hundred thousand, convert before you compare. Then graph them: a line graph for change over time, a bar graph for comparing groups, with the units on the axis, and the source and year in the caption. And remember, a rise in incidence can come from better screening, not only more disease.",
+      "hash": "3f428e36f49d",
+      "textSha256": "3f428e36f49d5cbd8d5829f14943e49f50884e7936e2490579fa394e39d9623f",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/collect-represent.3f428e36f49d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/collect-represent.3f428e36f49d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/collect-represent.3f428e36f49d.generation.json",
+      "plannedRequestSha256": "70d036a8f77da951a2c98784896079ed9841896f8d99fb6307419165d0a50c04"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. In 2024, Region X, with one point two million people, recorded five hundred and forty new lung cancer cases. Region Y, with three hundred thousand people, recorded one hundred and eighty. Calculate the incidence in each region per hundred thousand. Region Y's population is much older. Explain why these rates can't show which region's people are at greater risk. Pause here to answer.",
+      "hash": "035830f7b62a",
+      "textSha256": "035830f7b62a23630ebb253c494f3addad7a645c68bfcc97bfcb1e44ec8d43e8",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt.035830f7b62a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt.035830f7b62a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt.035830f7b62a.generation.json",
+      "plannedRequestSha256": "77881eb4e5940f3c0104f1f378decd5b246b041e37bfc73032dbbd33b77429c0"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Region X is five hundred and forty over one point two million, times a hundred thousand: forty-five per hundred thousand per year. Region Y is sixty. But lung cancer is much more common in older people, so Y's older population could explain its higher crude rate. To compare risk fairly, you'd need age-standardised rates. The classic mistake is saying X is worse because it had more cases.",
+      "hash": "12a2b9947394",
+      "textSha256": "12a2b9947394bdd74cfff3ea13dffa04a125fa5230e6dc56b337e0429455c319",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-one.12a2b9947394.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-one.12a2b9947394.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-one.12a2b9947394.generation.json",
+      "plannedRequestSha256": "82d51abcf757c0d829627f1d3f393f24cb5533ee5fdc35d29494a8cfa8cef26d"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. The table shows incidence, mortality and prevalence for a non-infectious disease in Australia in 2005, 2015 and 2025, each per hundred thousand people. Describe the trend in each measure. Then suggest an explanation for the rise in prevalence that fits the table. Pause here to answer.",
+      "hash": "ebb3f13f3896",
+      "textSha256": "ebb3f13f389686a447751b830a2da7664f932121e8e41210e59bcb36cf296217",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt-two.ebb3f13f3896.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt-two.ebb3f13f3896.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/attempt-two.ebb3f13f3896.generation.json",
+      "plannedRequestSha256": "cf3878420464b7c948bab4937ecbb13af239a084e20715e569973953340f36a4"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Incidence stayed steady at about sixty new cases per hundred thousand. Mortality halved, from thirty to fifteen. Prevalence rose from three hundred to five hundred and forty. The pattern is consistent with people living longer with the disease, so existing cases build up while new-case rates stay similar. The classic mistake is saying more people are getting the disease.",
+      "hash": "ff635502fd4d",
+      "textSha256": "ff635502fd4d867d739174e409c508497ffa9f8aace6cd81e30683053230bcaf",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-two.ff635502fd4d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-two.ff635502fd4d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/feedback-two.ff635502fd4d.generation.json",
+      "plannedRequestSha256": "c8eacdd9e3800db537801e25c6a90c7e47bd8d2a52e76477e5e416cc80d3cc0f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any disease data, ask three things. Is it new cases, people living with it, or deaths? Over what population and time? And is it a count, a crude rate or an age-standardised rate? Put everything on one denominator before you compare. Next, practice with new data: calculating rates and judging what they show.",
+      "hash": "66f9201621a9",
+      "textSha256": "66f9201621a9413a33986a6b092a992bef2af5b5921790b981152bd4bb8e7aab",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/decision-rule.66f9201621a9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/decision-rule.66f9201621a9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/decision-rule.66f9201621a9.generation.json",
+      "plannedRequestSha256": "8457ce515101ef3a26a95b808752e763ea9f73e26de3d3c6dd3563be0b01fc2d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B10-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b07/measured/lesson.json",
+    "lessonSha256": "5ec2ab9f58e8f6f97b84c23d13e822aaeb0af820f3ed33abf1815fb39546d3f5"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m6-b02: a mutagen raises the chance of DNA damage; damage becomes a mutation when it is copied before it is repaired; UV joins neighbouring bases (thymine dimer); chemicals in tobacco smoke can attach to bases. From bio-m6-b05: a mutation in a body cell is copied into its daughter cells and can contribute to cancer. From b06: environmental causes are acquired and come from outside the body. From Year 11 (Module 2 and 4 basics): alveoli and gas exchange need a large surface; arteries carry blood from the heart; red blood cells carry oxygen on haemoglobin. Not assumed: exposure (as a defined term), carcinogen, COPD, plaque, dose, pack-years, latency, mesothelioma, macrophage.",
+    "startsWith": "Australia banned asbestos at the end of 2003. Yet each year, hundreds of Australians are still diagnosed with mesothelioma, a cancer that asbestos can cause. So how can a harm show up decades after the exposure stopped? And why do some people who breathed the same dust never get sick? That's today's question: how does environmental exposure cause disease?",
+    "stopsAfter": "using the exposure, change, effect spine; defining exposure as real contact including amount and duration; explaining three different pathways from one exposure, tobacco smoke (carcinogens damage airway-cell DNA, and mutations in genes that control division can start a tumour; inflammation and white blood cell enzymes destroy alveolar walls, with mucus build-up, giving COPD; damaged artery lining, plaque, carbon monoxide on haemoglobin and nicotine raising heart rate increase heart attack and stroke risk); explaining dose and calculating pack-years; explaining latency, with asbestos fibres that persist, frustrate macrophages and release reactive chemicals for decades before mesothelioma; explaining why exposure raises probability rather than guaranteeing disease (repair, immune clearance, chance, other exposures, interacting exposures); explaining why population-wide exposure reduction lowers disease, with Australian smoking and SunSmart; applying this to a smoking and lung cancer graph (latency) and to a named UV case without claiming every exposure causes disease.",
+    "nextLesson": "another exposure everyone has every day, what we eat: how nutrition changes disease risk (bio-m8-b08). Cancer itself, cell-cycle control and spread: bio-m8-b09."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b07.md"
+  ],
+  "teaching": {
+    "task": "Australia banned asbestos at the end of 2003, yet hundreds of Australians are still diagnosed with mesothelioma each year. How can a harm appear decades after the exposure stopped, and why do some exposed people never get sick?",
+    "causalExplanation": "Earlier, you sorted the causes of non-infectious disease, and environmental causes come from outside the body. Here's how they actually make people sick. Every case follows one spine. First, an exposure: real contact with a harmful agent, including how much and for how long. Next, a change in cells or tissue. Then, an effect on health. Let's run tobacco smoke through it, because one exposure can lead to three different diseases. Pathway one is lung cancer. Smoke carries carcinogens, chemicals that raise the risk of cancer. They reach the cells lining the airways and attach to their DNA. You've seen what happens next: if that damage is copied before it's repaired, it becomes a mutation. When mutations build up in genes that control cell division, a cell can start dividing when it shouldn't. That can be the start of a tumour. Pathway two doesn't need a mutation at all. Smoke irritates the airways, so they stay inflamed for years. White blood cells gather and release enzymes that digest the thin walls between the tiny air sacs. Many small sacs merge into fewer, bigger ones, so there's much less surface for gas exchange. Mucus builds up too, because the hair-like cilia that sweep it out are damaged. Together this is COPD, chronic obstructive pulmonary disease, and the lost walls don't grow back.",
+    "conversationalApproach": "Australia banned asbestos at the end of 2003. Earlier, you sorted the causes of non-infectious disease, and environmental causes come from outside the body. Pathway one is lung cancer. Pathway two doesn't need a mutation at all. Pathway three is in the blood vessels. So what decides how much risk? First, dose: how much of the agent gets in, over how long. Second, time. So why do many heavy smokers never get lung cancer, while some people who've never smoked do? Because exposure raises the probability, not the certainty. That's also why a risk isn't a verdict on one person. Two exam questions. Smoking fell steadily from 1945, but lung cancer kept rising until the early 1980s, then fell, decades behind. Second. UV is absorbed by DNA in skin cells and joins neighbouring bases, so the DNA kinks. So for any environmental disease question, name the exposure and its dose, describe the change in cells or tissue, link it to the effect, then explain why it's a risk, not a certainty.",
+    "openingDecision": "Australia banned asbestos at the end of 2003. Yet each year, hundreds of Australians are still diagnosed with mesothelioma, a cancer that asbestos can cause. So how can a harm show up decades after the exposure stopped? And why do some people who breathed the same dust never get sick? That's today's question: how does environmental exposure cause disease?",
+    "understandingCheck": "Two exam questions. First. The graph shows illustrative trends for one population of men: the percentage who smoked, and the rate of new lung cancer cases, from 1945 to 2020. Describe how the timing of the two trends differs. Then explain the difference. Pause here to answer. Second. A gardener has worked outdoors in Queensland for thirty years without sun protection. Explain how this repeated UV exposure can increase the risk of melanoma. Then explain why a co-worker with similar exposure may never develop it. Pause here to answer.",
+    "curriculumScope": "B8-IQ2-01 (p 57): \"investigate the causes and effects of non-infectious diseases in humans, including but not limited to:\" with the listed example \"diseases caused by environmental exposure\". Causes: scenes 2 to 7. Effects: scenes 3 to 5 and 7 (tumour, COPD, heart attack and stroke risk, mesothelioma). Inquiry question: \"Do non-infectious diseases cause more deaths than infectious diseases?\" (not answered here; g01 and b10 use death data)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One pathway strip owns the bottom fifth of the frame from scene 2 to scene 9: three coded boxes \"exposure → change in cells or tissue → effect\", each filling with a small thumbnail and two to four words for the current case, so the spine is always visible. Above it, one painted plate or matched pair at a time with callouts. Tobacco smoke's three pathways (scenes 3 to 5) branch from one \"tobacco smoke\" exposure box into three change boxes, the earlier two dimming. A coded risk dial (a semicircle gauge marked \"low\" to \"high\", with no numbers) sits at the upper right from scene 6 to scene 8 and moves on dose, latency and the modifying factors. No people, hands or faces: smoke is coded grey wisps; the asbestos worker is a fibre-cement sheet plate; the gardener in attempt 2 exists only in the card's words. Coded elements are limited to the strip, the dial, the dose bars, the lottery tickets, the attempt graph, wisps, dots, arrows, chips and tags. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the timeline shrinks to the upper left and dims. m8-lungs-healthy-v1. the airway cell slides left and shrinks. the alveoli dim. the board clears above the strip; the RiskDial draws at the upper right, needle low. the hook's timeline returns across the top; on \"latency\" a bracket between an exposure dot (1975) and a diagnosis dot (2015) writes \"latency\"; gloss \"latency: the gap between exposure and diagnosis\". two columns of coded cell outlines, left \"heavy smokers\", right \"never smoked\", each about twenty cells. no people. the board clears. the card stays. the board clears. the card stays. the pathway strip returns full width with four step chips above it, one per cue: \"exposure and dose\", \"change in cells or tissue\", \"effect\", \"risk, not certainty\". > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. Centre: new m8-fibro-sheet-asbestos-v1.png (a broken corner of old grey fibre-cement sheeting with fine fibres visible at the snapped edge) at medium size, grey tag \"old fibro sheeting, 1940s to 1980s\". On \"banned asbestos at the end of 2003\" a coded timeline draws along the top from 1940 to 2025; a bright marker writes \"ban: 31 Dec 2003\". On \"hundreds of Australians are still diagnosed\" small coded dots fall onto the timeline after 2003, year after year (grey tag \"new mesothelioma diagnoses each year, AIHW\"; no number spoken on screen beyond the tag; Numbers to verify). On \"decades after the exposure stopped\" a bracket spans from the 1970s to today, label \"decades\". On \"never get sick\" a second, fainter row of exposure dots appears under the first, most of which stay grey. On the question the heading writes: \"How does environmental exposure cause disease?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Australia banned asbestos at the end of 2003.",
+      "narrationCue": "banned asbestos at the end of 2003 / hundreds of Australians are still diagnosed / decades after the exposure stopped / never get sick",
+      "motionPurpose": "Centre: new m8-fibro-sheet-asbestos-v1.png (a broken corner of old grey fibre-cement sheeting with fine fibres visible at the snapped edge) at medium size, grey tag \"old fibro sheeting, 1940s to 1980s\". On \"banned asbestos at the end of 2003\" a coded timeline draws along the top from 1940 to 2025; a bright marker writes \"ban: 31 Dec 2003\". On \"hundreds of Australians are still diagnosed\" small coded dots fall onto the timeline after 2003, year after year (grey tag \"new mesothelioma diagnoses each year, AIHW\"; no number spoken on screen beyond the tag; Numbers to verify). On \"decades after the exposure stopped\" a bracket spans from the 1970s to today, label \"decades\". On \"never get sick\" a second, fainter row of exposure dots appears under the first, most of which stay grey. On the question the heading writes: \"How does environmental exposure cause disease?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Centre: new m8-fibro-sheet-asbestos-v1.png (a broken corner of old grey fibre-cement sheeting with fine fibres visible at the snapped edge) at medium size, grey tag \"old fibro sheeting, 1940s to 1980s\". On \"banned asbestos at the end of 2003\" a coded timeline draws along the top from 1940 to 2025; a bright marker writes \"ban: 31 Dec 2003\". On \"hundreds of Australians are still diagnosed\" small coded dots fall onto the timeline after 2003, year after year (grey tag \"new mesothelioma diagnoses each year, AIHW\"; no number spoken on screen beyond the tag; Numbers to verify). On \"decades after the exposure stopped\" a bracket spans from the 1970s to today, label \"decades\". On \"never get sick\" a second, fainter row of exposure dots appears under the first, most of which stay grey. On the question the heading writes: \"How does environmental exposure cause disease?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m8-fibro-sheet-asbestos-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (a ban in 2003, cases today): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "one-spine",
+      "visualDecision": "new",
+      "visualReference": "the timeline shrinks to the upper left and dims. b06's cause classification appears as a small thumbnail with its \"environmental\" branch lit (grey tag \"b06\"), then fades. The PathwayStrip draws at the bottom: three empty boxes joined by arrows. On \"exposure\" the first box lights with the gloss \"exposure: real contact, how much, how long\"; on \"a change in cells or tissue\" the second box lights, \"change in cells or tissue\"; on \"an effect on health\" the third, \"effect on health\". On \"tobacco smoke\" coded grey smoke wisps drift into the first box, label \"tobacco smoke\"; on \"three different diseases\" the second box splits into three stacked slots, each with a \"?\" (branch mode). At most three bright items. Hold one second.",
+      "teachingReason": "Earlier, you sorted the causes of non-infectious disease, and environmental causes come from outside the body.",
+      "narrationCue": "exposure / a change in cells or tissue / an effect on health / tobacco smoke / three different diseases",
+      "motionPurpose": "the timeline shrinks to the upper left and dims. b06's cause classification appears as a small thumbnail with its \"environmental\" branch lit (grey tag \"b06\"), then fades. The PathwayStrip draws at the bottom: three empty boxes joined by arrows. On \"exposure\" the first box lights with the gloss \"exposure: real contact, how much, how long\"; on \"a change in cells or tissue\" the second box lights, \"change in cells or tissue\"; on \"an effect on health\" the third, \"effect on health\". On \"tobacco smoke\" coded grey smoke wisps drift into the first box, label \"tobacco smoke\"; on \"three different diseases\" the second box splits into three stacked slots, each with a \"?\" (branch mode). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline shrinks to the upper left and dims. b06's cause classification appears as a small thumbnail with its \"environmental\" branch lit (grey tag \"b06\"), then fades. The PathwayStrip draws at the bottom: three empty boxes joined by arrows. On \"exposure\" the first box lights with the gloss \"exposure: real contact, how much, how long\"; on \"a change in cells or tissue\" the second box lights, \"change in cells or tissue\"; on \"an effect on health\" the third, \"effect on health\". On \"tobacco smoke\" coded grey smoke wisps drift into the first box, label \"tobacco smoke\"; on \"three different diseases\" the second box splits into three stacked slots, each with a \"?\" (branch mode). At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one spine for every case: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "lung-cancer",
+      "visualDecision": "new",
+      "visualReference": "m8-lungs-healthy-v1.png enters at the centre; on \"carcinogens\" coded grey wisps flow down the trachea and the plate cross-fades to its matched m8-lungs-smoker-v1.png (grey tag \"tar deposits\"); gloss \"carcinogen: raises cancer risk\". On \"cells lining the airways\" a callout from a bronchus opens into m7-airway-cell-v1.png (ciliated airway cell) at the right; small coded dark dots settle onto its nucleus (label \"carcinogens attach to DNA\"). On \"copied before it's repaired\" bio-m6-b02's RepairRace icon plays small inside the nucleus callout (grey tag \"Module 6: mutagens\"). On \"mutations build up\" two, then three amber dots appear in the nucleus (label \"mutations build up\"). On \"dividing when it shouldn't\" bio-m6-b05's patch icon (one cell becoming a crowded cluster) replays beside the airway cell (grey tag \"how: b09\"). The strip's top change slot fills: \"DNA damage → mutations\", effect box \"lung cancer risk\". At most three bright items. Hold one second.",
+      "teachingReason": "Pathway one is lung cancer.",
+      "narrationCue": "carcinogens / cells lining the airways / copied before it's repaired / mutations build up / dividing when it shouldn't",
+      "motionPurpose": "m8-lungs-healthy-v1.png enters at the centre; on \"carcinogens\" coded grey wisps flow down the trachea and the plate cross-fades to its matched m8-lungs-smoker-v1.png (grey tag \"tar deposits\"); gloss \"carcinogen: raises cancer risk\". On \"cells lining the airways\" a callout from a bronchus opens into m7-airway-cell-v1.png (ciliated airway cell) at the right; small coded dark dots settle onto its nucleus (label \"carcinogens attach to DNA\"). On \"copied before it's repaired\" bio-m6-b02's RepairRace icon plays small inside the nucleus callout (grey tag \"Module 6: mutagens\"). On \"mutations build up\" two, then three amber dots appear in the nucleus (label \"mutations build up\"). On \"dividing when it shouldn't\" bio-m6-b05's patch icon (one cell becoming a crowded cluster) replays beside the airway cell (grey tag \"how: b09\"). The strip's top change slot fills: \"DNA damage → mutations\", effect box \"lung cancer risk\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "m8-lungs-healthy-v1.png enters at the centre; on \"carcinogens\" coded grey wisps flow down the trachea and the plate cross-fades to its matched m8-lungs-smoker-v1.png (grey tag \"tar deposits\"); gloss \"carcinogen: raises cancer risk\". On \"cells lining the airways\" a callout from a bronchus opens into m7-airway-cell-v1.png (ciliated airway cell) at the right; small coded dark dots settle onto its nucleus (label \"carcinogens attach to DNA\"). On \"copied before it's repaired\" bio-m6-b02's RepairRace icon plays small inside the nucleus callout (grey tag \"Module 6: mutagens\"). On \"mutations build up\" two, then three amber dots appear in the nucleus (label \"mutations build up\"). On \"dividing when it shouldn't\" bio-m6-b05's patch icon (one cell becoming a crowded cluster) replays beside the airway cell (grey tag \"how: b09\"). The strip's top change slot fills: \"DNA damage → mutations\", effect box \"lung cancer risk\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-lungs-healthy-v1.png",
+        "m8-lungs-smoker-v1.png",
+        "m7-airway-cell-v1.png",
+        "RepairRace",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "pathway one: lung cancer: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "copd",
+      "visualDecision": "new",
+      "visualReference": "the airway cell slides left and shrinks. New m8-alveoli-healthy-v1.png (a cut-away cluster of many small alveoli with thin walls and capillaries) enters at the centre (grey tag \"Year 11: alveoli, gas exchange\"). On \"inflamed\" a faint coded red tint pulses over the cluster. On \"White blood cells gather\" small coded pale blobs gather between the sacs; on \"digest the thin walls\" the blobs release tiny coded dots at three wall junctions and the walls thin (label \"enzymes digest walls\"). On \"merge into fewer, bigger ones\" the plate cross-fades to its matched m8-alveoli-emphysema-v1.png (same outline: fewer, larger, ragged sacs). On \"much less surface\" a coded bar \"surface for gas exchange\" shrinks beside the plate. On \"cilia\" the airway cell's cilia flatten in a quick coded overlay and a few coded mucus blobs pool at its surface (label \"cilia damaged, mucus builds up\"). On \"COPD\" the gloss writes \"COPD: chronic obstructive pulmonary disease\" (grey tags \"emphysema + chronic bronchitis\"). The strip's middle slot fills: \"inflammation → walls destroyed\", effect \"COPD\". At most three bright items. Hold one second.",
+      "teachingReason": "Pathway two doesn't need a mutation at all.",
+      "narrationCue": "inflamed / White blood cells gather / digest the thin walls / merge into fewer, bigger ones / much less surface / cilia / COPD",
+      "motionPurpose": "the airway cell slides left and shrinks. New m8-alveoli-healthy-v1.png (a cut-away cluster of many small alveoli with thin walls and capillaries) enters at the centre (grey tag \"Year 11: alveoli, gas exchange\"). On \"inflamed\" a faint coded red tint pulses over the cluster. On \"White blood cells gather\" small coded pale blobs gather between the sacs; on \"digest the thin walls\" the blobs release tiny coded dots at three wall junctions and the walls thin (label \"enzymes digest walls\"). On \"merge into fewer, bigger ones\" the plate cross-fades to its matched m8-alveoli-emphysema-v1.png (same outline: fewer, larger, ragged sacs). On \"much less surface\" a coded bar \"surface for gas exchange\" shrinks beside the plate. On \"cilia\" the airway cell's cilia flatten in a quick coded overlay and a few coded mucus blobs pool at its surface (label \"cilia damaged, mucus builds up\"). On \"COPD\" the gloss writes \"COPD: chronic obstructive pulmonary disease\" (grey tags \"emphysema + chronic bronchitis\"). The strip's middle slot fills: \"inflammation → walls destroyed\", effect \"COPD\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the airway cell slides left and shrinks. New m8-alveoli-healthy-v1.png (a cut-away cluster of many small alveoli with thin walls and capillaries) enters at the centre (grey tag \"Year 11: alveoli, gas exchange\"). On \"inflamed\" a faint coded red tint pulses over the cluster. On \"White blood cells gather\" small coded pale blobs gather between the sacs; on \"digest the thin walls\" the blobs release tiny coded dots at three wall junctions and the walls thin (label \"enzymes digest walls\"). On \"merge into fewer, bigger ones\" the plate cross-fades to its matched m8-alveoli-emphysema-v1.png (same outline: fewer, larger, ragged sacs). On \"much less surface\" a coded bar \"surface for gas exchange\" shrinks beside the plate. On \"cilia\" the airway cell's cilia flatten in a quick coded overlay and a few coded mucus blobs pool at its surface (label \"cilia damaged, mucus builds up\"). On \"COPD\" the gloss writes \"COPD: chronic obstructive pulmonary disease\" (grey tags \"emphysema + chronic bronchitis\"). The strip's middle slot fills: \"inflammation → walls destroyed\", effect \"COPD\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-alveoli-healthy-v1.png",
+        "m8-alveoli-emphysema-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "pathway two: COPD: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "blood-vessels",
+      "visualDecision": "new",
+      "visualReference": "the alveoli dim. m8-heart-v1.png enters small at the left; a callout from a coronary artery on its surface opens into new m8-artery-healthy-v1.png (an artery cut across and lengthways, smooth pale inner lining, wide lumen) at the centre. On \"damage the smooth lining\" a few coded rough marks appear on the lining (label \"lining damaged\"; grey tag \"endothelium\"). On \"Fatty deposits and white blood cells build up\" the plate cross-fades to its matched m8-artery-plaque-v1.png (same artery with a yellow fatty plaque bulging into a narrowed lumen); label \"plaque narrows the artery\". On \"carbon monoxide\" m5x-red-blood-cells-v1.png appears small at the right; coded \"CO\" dots occupy small slots on two cells where \"O₂\" dots were (label \"CO takes oxygen's place\"; grey tag \"Year 11: haemoglobin carries O₂\"). On \"nicotine makes the heart beat faster\" the heart thumbnail pulses faster. On \"heart attack or stroke\" the strip's bottom slot fills: \"damaged arteries, less O₂\", effect \"heart attack, stroke risk\". The three slots now all show; a bracket groups them: \"one exposure, three changes\". At most three bright items. Hold one second.",
+      "teachingReason": "Pathway three is in the blood vessels.",
+      "narrationCue": "damage the smooth lining / Fatty deposits and white blood cells build up / carbon monoxide / nicotine makes the heart beat faster / heart attack or stroke",
+      "motionPurpose": "the alveoli dim. m8-heart-v1.png enters small at the left; a callout from a coronary artery on its surface opens into new m8-artery-healthy-v1.png (an artery cut across and lengthways, smooth pale inner lining, wide lumen) at the centre. On \"damage the smooth lining\" a few coded rough marks appear on the lining (label \"lining damaged\"; grey tag \"endothelium\"). On \"Fatty deposits and white blood cells build up\" the plate cross-fades to its matched m8-artery-plaque-v1.png (same artery with a yellow fatty plaque bulging into a narrowed lumen); label \"plaque narrows the artery\". On \"carbon monoxide\" m5x-red-blood-cells-v1.png appears small at the right; coded \"CO\" dots occupy small slots on two cells where \"O₂\" dots were (label \"CO takes oxygen's place\"; grey tag \"Year 11: haemoglobin carries O₂\"). On \"nicotine makes the heart beat faster\" the heart thumbnail pulses faster. On \"heart attack or stroke\" the strip's bottom slot fills: \"damaged arteries, less O₂\", effect \"heart attack, stroke risk\". The three slots now all show; a bracket groups them: \"one exposure, three changes\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the alveoli dim. m8-heart-v1.png enters small at the left; a callout from a coronary artery on its surface opens into new m8-artery-healthy-v1.png (an artery cut across and lengthways, smooth pale inner lining, wide lumen) at the centre. On \"damage the smooth lining\" a few coded rough marks appear on the lining (label \"lining damaged\"; grey tag \"endothelium\"). On \"Fatty deposits and white blood cells build up\" the plate cross-fades to its matched m8-artery-plaque-v1.png (same artery with a yellow fatty plaque bulging into a narrowed lumen); label \"plaque narrows the artery\". On \"carbon monoxide\" m5x-red-blood-cells-v1.png appears small at the right; coded \"CO\" dots occupy small slots on two cells where \"O₂\" dots were (label \"CO takes oxygen's place\"; grey tag \"Year 11: haemoglobin carries O₂\"). On \"nicotine makes the heart beat faster\" the heart thumbnail pulses faster. On \"heart attack or stroke\" the strip's bottom slot fills: \"damaged arteries, less O₂\", effect \"heart attack, stroke risk\". The three slots now all show; a bracket groups them: \"one exposure, three changes\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-heart-v1.png",
+        "m8-artery-healthy-v1.png",
+        "m8-artery-plaque-v1.png",
+        "m5x-red-blood-cells-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "pathway three: heart and blood vessels: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "dose",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the strip; the RiskDial draws at the upper right, needle low. On \"dose\" a gloss writes \"dose: how much gets in, over how long\". On \"pack-years\" the working writes in two lines, one per cue: \"pack-years = packs per day × years\"; \"1 × 20 = 20 pack-years\". Three coded dose bars draw beside it, \"never\", \"5 pack-years\", \"20 pack-years\", rising in height (grey tag \"shape only; real studies in b11\"), and the dial's needle moves up with each bar. On \"a ticket in a lottery\" the TicketRow deals a row of small ticket outlines; on \"Most tickets lose\" most flip grey with a small tick (label \"repaired\"); on \"more tickets\" the row lengthens; on \"several unlucky changes\" three tickets flip amber and slide into one coded cell outline (label \"several changes, one cell\"). On \"For cancer\" a small grey label \"cancer\" writes above the ticket row, and the strip's lung cancer thumbnail glows (the COPD and artery thumbnails stay dim: their damage is tissue injury and inflammation, not a mutation lottery). A grey tag sits under the analogy: \"for cancer only: COPD and artery damage build up through tissue injury and inflammation\". At most three bright items. Hold one second.",
+      "teachingReason": "So what decides how much risk? First, dose: how much of the agent gets in, over how long.",
+      "narrationCue": "dose / pack-years / a ticket in a lottery / Most tickets lose / more tickets / several unlucky changes / For cancer",
+      "motionPurpose": "the board clears above the strip; the RiskDial draws at the upper right, needle low. On \"dose\" a gloss writes \"dose: how much gets in, over how long\". On \"pack-years\" the working writes in two lines, one per cue: \"pack-years = packs per day × years\"; \"1 × 20 = 20 pack-years\". Three coded dose bars draw beside it, \"never\", \"5 pack-years\", \"20 pack-years\", rising in height (grey tag \"shape only; real studies in b11\"), and the dial's needle moves up with each bar. On \"a ticket in a lottery\" the TicketRow deals a row of small ticket outlines; on \"Most tickets lose\" most flip grey with a small tick (label \"repaired\"); on \"more tickets\" the row lengthens; on \"several unlucky changes\" three tickets flip amber and slide into one coded cell outline (label \"several changes, one cell\"). On \"For cancer\" a small grey label \"cancer\" writes above the ticket row, and the strip's lung cancer thumbnail glows (the COPD and artery thumbnails stay dim: their damage is tissue injury and inflammation, not a mutation lottery). A grey tag sits under the analogy: \"for cancer only: COPD and artery damage build up through tissue injury and inflammation\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the strip; the RiskDial draws at the upper right, needle low. On \"dose\" a gloss writes \"dose: how much gets in, over how long\". On \"pack-years\" the working writes in two lines, one per cue: \"pack-years = packs per day × years\"; \"1 × 20 = 20 pack-years\". Three coded dose bars draw beside it, \"never\", \"5 pack-years\", \"20 pack-years\", rising in height (grey tag \"shape only; real studies in b11\"), and the dial's needle moves up with each bar. On \"a ticket in a lottery\" the TicketRow deals a row of small ticket outlines; on \"Most tickets lose\" most flip grey with a small tick (label \"repaired\"); on \"more tickets\" the row lengthens; on \"several unlucky changes\" three tickets flip amber and slide into one coded cell outline (label \"several changes, one cell\"). On \"For cancer\" a small grey label \"cancer\" writes above the ticket row, and the strip's lung cancer thumbnail glows (the COPD and artery thumbnails stay dim: their damage is tissue injury and inflammation, not a mutation lottery). A grey tag sits under the analogy: \"for cancer only: COPD and artery damage build up through tissue injury and inflammation\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "RiskDial",
+        "TicketRow",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "dose: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "latency-asbestos",
+      "visualDecision": "adjust",
+      "visualReference": "the hook's timeline returns across the top; on \"latency\" a bracket between an exposure dot (1975) and a diagnosis dot (2015) writes \"latency\"; gloss \"latency: the gap between exposure and diagnosis\". The fibro sheet thumbnail sits at the left with a few coded fibres drifting from its edge. On \"lodge in the lining around the lungs\" m8-lungs-healthy-v1.png appears small with its outer lining (pleura) traced by a thin coded line (grey tag \"pleura: the lining around the lungs\"). On \"macrophages\" a callout opens into new m8-asbestos-fibre-macrophage-v1.png (a macrophage stretched along a long needle-like fibre, failing to enclose it, among lining cells); label \"macrophage can't swallow the fibre\". On \"keep releasing reactive chemicals\" small coded amber sparks leave the macrophage towards the neighbouring cells, repeating slowly (label \"reactive chemicals, for years\"). On \"twenty to fifty years\" the timeline bracket stretches from 1975 to 2025 (grey tag \"about 20 to 50 years\"). On \"the 2003 ban\" the ban marker pulses and the falling dots after 2003 brighten. The dial's needle stays high. The strip fills: \"asbestos fibres\" → \"persistent damage\" → \"mesothelioma (decades later)\". At most three bright items. Hold one second.",
+      "teachingReason": "Second, time.",
+      "narrationCue": "latency / lodge in the lining around the lungs / macrophages / keep releasing reactive chemicals / twenty to fifty years / the 2003 ban",
+      "motionPurpose": "the hook's timeline returns across the top; on \"latency\" a bracket between an exposure dot (1975) and a diagnosis dot (2015) writes \"latency\"; gloss \"latency: the gap between exposure and diagnosis\". The fibro sheet thumbnail sits at the left with a few coded fibres drifting from its edge. On \"lodge in the lining around the lungs\" m8-lungs-healthy-v1.png appears small with its outer lining (pleura) traced by a thin coded line (grey tag \"pleura: the lining around the lungs\"). On \"macrophages\" a callout opens into new m8-asbestos-fibre-macrophage-v1.png (a macrophage stretched along a long needle-like fibre, failing to enclose it, among lining cells); label \"macrophage can't swallow the fibre\". On \"keep releasing reactive chemicals\" small coded amber sparks leave the macrophage towards the neighbouring cells, repeating slowly (label \"reactive chemicals, for years\"). On \"twenty to fifty years\" the timeline bracket stretches from 1975 to 2025 (grey tag \"about 20 to 50 years\"). On \"the 2003 ban\" the ban marker pulses and the falling dots after 2003 brighten. The dial's needle stays high. The strip fills: \"asbestos fibres\" → \"persistent damage\" → \"mesothelioma (decades later)\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the hook's timeline returns across the top; on \"latency\" a bracket between an exposure dot (1975) and a diagnosis dot (2015) writes \"latency\"; gloss \"latency: the gap between exposure and diagnosis\". The fibro sheet thumbnail sits at the left with a few coded fibres drifting from its edge. On \"lodge in the lining around the lungs\" m8-lungs-healthy-v1.png appears small with its outer lining (pleura) traced by a thin coded line (grey tag \"pleura: the lining around the lungs\"). On \"macrophages\" a callout opens into new m8-asbestos-fibre-macrophage-v1.png (a macrophage stretched along a long needle-like fibre, failing to enclose it, among lining cells); label \"macrophage can't swallow the fibre\". On \"keep releasing reactive chemicals\" small coded amber sparks leave the macrophage towards the neighbouring cells, repeating slowly (label \"reactive chemicals, for years\"). On \"twenty to fifty years\" the timeline bracket stretches from 1975 to 2025 (grey tag \"about 20 to 50 years\"). On \"the 2003 ban\" the ban marker pulses and the falling dots after 2003 brighten. The dial's needle stays high. The strip fills: \"asbestos fibres\" → \"persistent damage\" → \"mesothelioma (decades later)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-lungs-healthy-v1.png",
+        "m8-asbestos-fibre-macrophage-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "latency, and the asbestos answer: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "risk-not-certainty",
+      "visualDecision": "new",
+      "visualReference": "two columns of coded cell outlines, left \"heavy smokers\", right \"never smoked\", each about twenty cells. Most left cells carry grey ticks; two turn amber (label \"some get lung cancer\"); one right cell turns amber (label \"some do\"). On \"probability, not the certainty\" the RiskDial writes \"probability\" under its arc. On each modifier a small chip writes beside the dial and nudges the needle: \"repair varies\", \"immune cells clear damage\", \"chance\" (each chip dims as the next lands). On \"second-hand smoke, radon gas or polluted air\" three small grey tags write under the right column. On \"add up\" two small dose bars, \"asbestos\" and \"smoking\", stack into one much taller bar (grey tag \"more than the sum\"; no figure). At most three bright items. Hold one second.",
+      "teachingReason": "So why do many heavy smokers never get lung cancer, while some people who've never smoked do? Because exposure raises the probability, not the certainty.",
+      "narrationCue": "probability, not the certainty / second-hand smoke, radon gas or polluted air / add up",
+      "motionPurpose": "two columns of coded cell outlines, left \"heavy smokers\", right \"never smoked\", each about twenty cells. Most left cells carry grey ticks; two turn amber (label \"some get lung cancer\"); one right cell turns amber (label \"some do\"). On \"probability, not the certainty\" the RiskDial writes \"probability\" under its arc. On each modifier a small chip writes beside the dial and nudges the needle: \"repair varies\", \"immune cells clear damage\", \"chance\" (each chip dims as the next lands). On \"second-hand smoke, radon gas or polluted air\" three small grey tags write under the right column. On \"add up\" two small dose bars, \"asbestos\" and \"smoking\", stack into one much taller bar (grey tag \"more than the sum\"; no figure). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "two columns of coded cell outlines, left \"heavy smokers\", right \"never smoked\", each about twenty cells. Most left cells carry grey ticks; two turn amber (label \"some get lung cancer\"); one right cell turns amber (label \"some do\"). On \"probability, not the certainty\" the RiskDial writes \"probability\" under its arc. On each modifier a small chip writes beside the dial and nudges the needle: \"repair varies\", \"immune cells clear damage\", \"chance\" (each chip dims as the next lands). On \"second-hand smoke, radon gas or polluted air\" three small grey tags write under the right column. On \"add up\" two small dose bars, \"asbestos\" and \"smoking\", stack into one much taller bar (grey tag \"more than the sum\"; no figure). At most three bright items. Hold one second.",
+      "motionTools": [
+        "RiskDial",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "risk, not certainty: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "not-a-verdict",
+      "visualDecision": "new",
+      "visualReference": "no people. On \"isn't a verdict on one person\" a grey chip \"it's their own fault\" writes and takes a scribble cross. On \"aren't chosen\" two grey tags write: \"work exposure\" (fibro sheet thumbnail) and \"childhood exposure\" (coded smoke wisps). On \"across a whole population\" a small coded lineGraph draws: \"Australian adults who smoke daily\" falling from 1980 to 2025, ending at a labelled point \"2025: 5.8% of adults\" (grey tag \"shape illustrative before 2025; 2025 figure: Australian Government release, 17 July 2026\"); a second, dashed line \"lung cancer rate, men\" rises then falls later (label \"decades behind\"). On \"SunSmart\" m8-sun-protection-v1.png (hat and sunscreen bottle) enters beside m8-sun-v1.png; on \"slip, slop, slap, seek and slide\" five chips write on, one per word: \"slip on a shirt\", \"slop on sunscreen\", \"slap on a hat\", \"seek shade\", \"slide on sunglasses\" (each later chip dims the earlier, so at most three are bright). The strip's exposure box gains a green \"reduce\" arrow. Hold one second.",
+      "teachingReason": "That's also why a risk isn't a verdict on one person.",
+      "narrationCue": "isn't a verdict on one person / aren't chosen / across a whole population / SunSmart / slip, slop, slap, seek and slide",
+      "motionPurpose": "On \"isn't a verdict on one person\" a grey chip \"it's their own fault\" writes and takes a scribble cross. On \"aren't chosen\" two grey tags write: \"work exposure\" (fibro sheet thumbnail) and \"childhood exposure\" (coded smoke wisps). On \"across a whole population\" a small coded lineGraph draws: \"Australian adults who smoke daily\" falling from 1980 to 2025, ending at a labelled point \"2025: 5.8% of adults\" (grey tag \"shape illustrative before 2025; 2025 figure: Australian Government release, 17 July 2026\"); a second, dashed line \"lung cancer rate, men\" rises then falls later (label \"decades behind\"). On \"SunSmart\" m8-sun-protection-v1.png (hat and sunscreen bottle) enters beside m8-sun-v1.png; on \"slip, slop, slap, seek and slide\" five chips write on, one per word: \"slip on a shirt\", \"slop on sunscreen\", \"slap on a hat\", \"seek shade\", \"slide on sunglasses\" (each later chip dims the earlier, so at most three are bright). The strip's exposure box gains a green \"reduce\" arrow. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. On \"isn't a verdict on one person\" a grey chip \"it's their own fault\" writes and takes a scribble cross. On \"aren't chosen\" two grey tags write: \"work exposure\" (fibro sheet thumbnail) and \"childhood exposure\" (coded smoke wisps). On \"across a whole population\" a small coded lineGraph draws: \"Australian adults who smoke daily\" falling from 1980 to 2025, ending at a labelled point \"2025: 5.8% of adults\" (grey tag \"shape illustrative before 2025; 2025 figure: Australian Government release, 17 July 2026\"); a second, dashed line \"lung cancer rate, men\" rises then falls later (label \"decades behind\"). On \"SunSmart\" m8-sun-protection-v1.png (hat and sunscreen bottle) enters beside m8-sun-v1.png; on \"slip, slop, slap, seek and slide\" five chips write on, one per word: \"slip on a shirt\", \"slop on sunscreen\", \"slap on a hat\", \"seek shade\", \"slide on sunglasses\" (each later chip dims the earlier, so at most three are bright). The strip's exposure box gains a green \"reduce\" arrow. Hold one second.",
+      "motionTools": [
+        "lineGraph",
+        "m8-sun-protection-v1.png",
+        "m8-sun-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a risk, not a verdict: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The graph shows illustrative trends for one population of adult men: the percentage who smoked, and the rate of new lung cancer cases (per 100,000 per year), from 1945 to 2020.\" The coded lineGraph with two y axes: left \"men who smoke (%), illustrative\" 0 to 80, right \"new lung cancer cases in men (per 100,000 per year), illustrative\" 0 to 100; x axis \"year\" 1945 to 2020. Grey smoking line: 1945 72, 1955 66, 1965 58, 1975 43, 1985 33, 1995 27, 2005 21, 2015 16, 2020 13. Amber lung cancer line: 1945 25, 1955 45, 1965 65, 1975 80, 1982 84, 1990 75, 2000 62, 2010 52, 2020 44. A grey tag at reading size: \"illustrative teaching data, not measured rates\". Demand: \"(a) Describe how the timing of the two trends differs. (2 marks) (b) Explain this difference in timing. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, graph included, stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The graph shows illustrative trends for one population of adult men: the percentage who smoked, and the rate of new lung cancer cases (per 100,000 per year), from 1945 to 2020.\" The coded lineGraph with two y axes: left \"men who smoke (%), illustrative\" 0 to 80, right \"new lung cancer cases in men (per 100,000 per year), illustrative\" 0 to 100; x axis \"year\" 1945 to 2020. Grey smoking line: 1945 72, 1955 66, 1965 58, 1975 43, 1985 33, 1995 27, 2005 21, 2015 16, 2020 13. Amber lung cancer line: 1945 25, 1955 45, 1965 65, 1975 80, 1982 84, 1990 75, 2000 62, 2010 52, 2020 44. A grey tag at reading size: \"illustrative teaching data, not measured rates\". Demand: \"(a) Describe how the timing of the two trends differs. (2 marks) (b) Explain this difference in timing. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"The graph shows illustrative trends for one population of adult men: the percentage who smoked, and the rate of new lung cancer cases (per 100,000 per year), from 1945 to 2020.\" The coded lineGraph with two y axes: left \"men who smoke (%), illustrative\" 0 to 80, right \"new lung cancer cases in men (per 100,000 per year), illustrative\" 0 to 100; x axis \"year\" 1945 to 2020. Grey smoking line: 1945 72, 1955 66, 1965 58, 1975 43, 1985 33, 1995 27, 2005 21, 2015 16, 2020 13. Amber lung cancer line: 1945 25, 1955 45, 1965 65, 1975 80, 1982 84, 1990 75, 2000 62, 2010 52, 2020 44. A grey tag at reading size: \"illustrative teaching data, not measured rates\". Demand: \"(a) Describe how the timing of the two trends differs. (2 marks) (b) Explain this difference in timing. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "lineGraph",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (two trends, decades apart): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"Smoking fell steadily from 1945\" the grey line brightens and \"the percentage who smoked\" underlines; on \"kept rising until the early 1980s\" the amber line to its 1982 peak brightens and \"rate of new lung cancer cases\" underlines; a coded bracket spans 1945 to 1982, label \"about 35 years\". Answer (a) writes: \"Smoking fell from 1945; lung cancer rose until about 1982, then fell. The cancer trend lags by decades.\" On \"latency\" answer (b) builds on the cues: \"latency: mutations take decades to build up\", \"cancers from past smoking still appeared\", \"falls once fewer people had smoked for long\". On \"classic mistake\" a chip \"the peaks don't match, so smoking isn't the cause\" writes and takes a scribble cross, small text \"a lag is what latency predicts\". Settle one second.",
+      "teachingReason": "Smoking fell steadily from 1945, but lung cancer kept rising until the early 1980s, then fell, decades behind.",
+      "narrationCue": "Smoking fell steadily from 1945 / kept rising until the early 1980s / latency / classic mistake",
+      "motionPurpose": "the card stays. On \"Smoking fell steadily from 1945\" the grey line brightens and \"the percentage who smoked\" underlines; on \"kept rising until the early 1980s\" the amber line to its 1982 peak brightens and \"rate of new lung cancer cases\" underlines; a coded bracket spans 1945 to 1982, label \"about 35 years\". Answer (a) writes: \"Smoking fell from 1945; lung cancer rose until about 1982, then fell. The cancer trend lags by decades.\" On \"latency\" answer (b) builds on the cues: \"latency: mutations take decades to build up\", \"cancers from past smoking still appeared\", \"falls once fewer people had smoked for long\". On \"classic mistake\" a chip \"the peaks don't match, so smoking isn't the cause\" writes and takes a scribble cross, small text \"a lag is what latency predicts\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Smoking fell steadily from 1945\" the grey line brightens and \"the percentage who smoked\" underlines; on \"kept rising until the early 1980s\" the amber line to its 1982 peak brightens and \"rate of new lung cancer cases\" underlines; a coded bracket spans 1945 to 1982, label \"about 35 years\". Answer (a) writes: \"Smoking fell from 1945; lung cancer rose until about 1982, then fell. The cancer trend lags by decades.\" On \"latency\" answer (b) builds on the cues: \"latency: mutations take decades to build up\", \"cancers from past smoking still appeared\", \"falls once fewer people had smoked for long\". On \"classic mistake\" a chip \"the peaks don't match, so smoking isn't the cause\" writes and takes a scribble cross, small text \"a lag is what latency predicts\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A gardener has worked outdoors in Queensland for 30 years without sun protection. A co-worker with similar exposure has not developed skin cancer.\" Demand: \"(a) Explain how repeated UV exposure can increase the risk of melanoma. (3 marks) (b) Explain why the co-worker may never develop melanoma. (2 marks)\". No plate on the card and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A gardener has worked outdoors in Queensland for 30 years without sun protection. A co-worker with similar exposure has not developed skin cancer.\" Demand: \"(a) Explain how repeated UV exposure can increase the risk of melanoma. (3 marks) (b) Explain why the co-worker may never develop melanoma. (2 marks)\". No plate on the card and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A gardener has worked outdoors in Queensland for 30 years without sun protection. A co-worker with similar exposure has not developed skin cancer.\" Demand: \"(a) Explain how repeated UV exposure can increase the risk of melanoma. (3 marks) (b) Explain why the co-worker may never develop melanoma. (2 marks)\". No plate on the card and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (a named UV case): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"absorbed by DNA in skin cells\" \"repeated UV exposure\" underlines and m6-uv-skin-v1.png appears small beside the card; bio-m6-b02's DimerKink plays on a short SlimStrand (label \"neighbouring bases joined: kink\"). Answer (a) builds on the cues: \"UV absorbed by skin-cell DNA, neighbouring bases join\", \"copied before repair → mutation\", \"30 years: mutations build up in genes controlling division → melanoma risk rises\" (\"30 years\" underlines in the stem); the skin plate gives way to m8-skin-melanoma-v1.png small (grey tag \"melanoma: from pigment cells\"). On \"raises the probability\" answer (b) writes \"risk, not certainty: repair, immune clearance and chance differ\" and \"similar exposure\" underlines. On \"classic mistake\" a chip \"UV always causes cancer\" writes and takes a scribble cross, small text \"it raises the chance\". Settle one second.",
+      "teachingReason": "UV is absorbed by DNA in skin cells and joins neighbouring bases, so the DNA kinks.",
+      "narrationCue": "absorbed by DNA in skin cells / raises the probability / classic mistake",
+      "motionPurpose": "the card stays. On \"absorbed by DNA in skin cells\" \"repeated UV exposure\" underlines and m6-uv-skin-v1.png appears small beside the card; bio-m6-b02's DimerKink plays on a short SlimStrand (label \"neighbouring bases joined: kink\"). Answer (a) builds on the cues: \"UV absorbed by skin-cell DNA, neighbouring bases join\", \"copied before repair → mutation\", \"30 years: mutations build up in genes controlling division → melanoma risk rises\" (\"30 years\" underlines in the stem); the skin plate gives way to m8-skin-melanoma-v1.png small (grey tag \"melanoma: from pigment cells\"). On \"raises the probability\" answer (b) writes \"risk, not certainty: repair, immune clearance and chance differ\" and \"similar exposure\" underlines. On \"classic mistake\" a chip \"UV always causes cancer\" writes and takes a scribble cross, small text \"it raises the chance\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"absorbed by DNA in skin cells\" \"repeated UV exposure\" underlines and m6-uv-skin-v1.png appears small beside the card; bio-m6-b02's DimerKink plays on a short SlimStrand (label \"neighbouring bases joined: kink\"). Answer (a) builds on the cues: \"UV absorbed by skin-cell DNA, neighbouring bases join\", \"copied before repair → mutation\", \"30 years: mutations build up in genes controlling division → melanoma risk rises\" (\"30 years\" underlines in the stem); the skin plate gives way to m8-skin-melanoma-v1.png small (grey tag \"melanoma: from pigment cells\"). On \"raises the probability\" answer (b) writes \"risk, not certainty: repair, immune clearance and chance differ\" and \"similar exposure\" underlines. On \"classic mistake\" a chip \"UV always causes cancer\" writes and takes a scribble cross, small text \"it raises the chance\". Settle one second.",
+      "motionTools": [
+        "m6-uv-skin-v1.png",
+        "DimerKink",
+        "SlimStrand",
+        "m8-skin-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the pathway strip returns full width with four step chips above it, one per cue: \"exposure and dose\", \"change in cells or tissue\", \"effect\", \"risk, not certainty\". Small thumbnails sit in the boxes (smoke wisps, the alveoli pair, the artery plaque, the dial). A \"Next\" chip slides in at the lower right: \"Next: How does nutrition change disease risk?\" with a small m8-artery-plaque-v1.png thumbnail (it returns in b08). Hold half a second before the notes.",
+      "teachingReason": "So for any environmental disease question, name the exposure and its dose, describe the change in cells or tissue, link it to the effect, then explain why it's a risk, not a certainty.",
+      "narrationCue": "So for any environmental disease question, name the exposure and its dose, describe the change in cells or tissue, link it to the effect, then explain why it's a risk, not a certainty",
+      "motionPurpose": "the pathway strip returns full width with four step chips above it, one per cue: \"exposure and dose\", \"change in cells or tissue\", \"effect\", \"risk, not certainty\". Small thumbnails sit in the boxes (smoke wisps, the alveoli pair, the artery plaque, the dial). A \"Next\" chip slides in at the lower right: \"Next: How does nutrition change disease risk?\" with a small m8-artery-plaque-v1.png thumbnail (it returns in b08). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the pathway strip returns full width with four step chips above it, one per cue: \"exposure and dose\", \"change in cells or tissue\", \"effect\", \"risk, not certainty\". Small thumbnails sit in the boxes (smoke wisps, the alveoli pair, the artery plaque, the dial). A \"Next\" chip slides in at the lower right: \"Next: How does nutrition change disease risk?\" with a small m8-artery-plaque-v1.png thumbnail (it returns in b08). Hold half a second before the notes.",
+      "motionTools": [
+        "m8-artery-plaque-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b07-learning-review.md",
+      "sha256": "5db245889c87a6d8256035eb4f6e00208368e0c7f722f12217f4c93218c4ae5f"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b07-claude-science-check.md",
+      "sha256": "28dfb89d455f176b83cc63cc2edb790d05dc9912f339bf3c21d3f571fe12823b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

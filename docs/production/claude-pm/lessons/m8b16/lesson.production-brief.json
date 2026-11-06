@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b16/lesson.json",
+    "lessonSha256": "6b87218e1c20840e35a2ac56d07854f0a6e79913b76b66670a0160b17874d80b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b15: the pathway, break and bypass frame; \"matched, not ranked\". From b01: a receptor turns a stimulus into nerve signals. Not assumed: cornea, lens, retina, optic nerve, accommodation, myopia, hyperopia, astigmatism, presbyopia, cataract, concave, convex, contact lens, LASIK, artificial lens.",
+    "startsWith": "By 2050, about half the people in the world may be short-sighted, if current trends continue. In most of those eyes, the fault is tiny: light comes to a sharp point a millimetre or so in front of where it needs to land. Other eyes focus perfectly well, but the light can't get through clearly. So how can technology assist visual disorders?",
+    "stopsAfter": "tracing light through the cornea (most of the bending, fixed) and the lens (fine focus) to the retina, whose light-sensitive cells send signals along the optic nerve; explaining accommodation (the ciliary muscle contracts, the lens rounds and bends light more for near objects); explaining myopia and hyperopia as a mismatch between the eye's bending power and its length, with which distances blur and why; astigmatism as an unevenly curved cornea; presbyopia as a stiffened lens that cannot accommodate; a cataract as a clouded lens that scatters light, a clarity fault that glasses cannot clear; how concave and convex lenses in glasses or contact lenses move the focus, and the infection risk of contacts; how LASIK flattens the cornea for myopia, and its limits (irreversible, stable prescription and corneal thickness needed, dry eye and glare, no effect on presbyopia); how lens replacement restores clarity, and its limits (no accommodation, so reading glasses; small infection risk; needs a working retina); matching each technology to the fault and the person; applying this to a changing myopic prescription and to a cataract.",
+    "nextLesson": "a different organ and a different job: what can replace lost kidney function (bio-m8-b17)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b16.md"
+  ],
+  "teaching": {
+    "task": "Half the world may be short-sighted by 2050, and many older people's lenses turn cloudy. How can technology assist visual disorders?",
+    "causalExplanation": "Light enters the eye through the cornea, its clear, curved front, which does most of the bending. The lens behind it bends the light a little more and fine-tunes the focus. The light should meet at a sharp point on the retina, a layer of light-sensitive cells at the back, which send signals along the optic nerve to the brain. For a near object, a ring of muscle around the lens contracts, the fibres holding the lens go slack, and the lens rounds up to bend light more. That's accommodation. Clear vision needs the eye's bending power to match its length. In myopia, or short-sightedness, the eyeball is usually too long, or the cornea too steeply curved. Light from a distant object comes to a point in front of the retina, then spreads out again, so distant things look blurred. Light from a near object is already spreading as it arrives, so it focuses further back, on the retina, and near things look clear. To remember it: with myopia, you see what's near \"my\" eyes. In hyperopia, or long-sightedness, it's the other way round. The eyeball is usually too short, or the cornea too flat, so light would come to a point behind the retina. Near objects blur most. In astigmatism, the cornea is curved more in one direction than another, so there's no single sharp point. And from about the mid-forties, the lens stiffens and can't round up for close work. That's presbyopia, and it's why many people need reading glasses.",
+    "conversationalApproach": "By 2050, about half the people in the world may be short-sighted, if current trends continue. Light enters the eye through the cornea, its clear, curved front, which does most of the bending. Clear vision needs the eye's bending power to match its length. In hyperopia, or long-sightedness, it's the other way round. Some faults aren't about focus at all. For a focus fault, change how light is bent before it reaches the retina. Laser surgery changes the eye itself. For a cataract, the fix is to replace the cloudy lens. So, like hearing devices, these are matched, not ranked. Two exam questions. It's myopia. Second. This is a cataract, a clarity fault, which is why new glasses didn't help. So for any vision question, ask where the light goes wrong.",
+    "openingDecision": "By 2050, about half the people in the world may be short-sighted, if current trends continue. In most of those eyes, the fault is tiny: light comes to a sharp point a millimetre or so in front of where it needs to land. Other eyes focus perfectly well, but the light can't get through clearly. So how can technology assist visual disorders?",
+    "understandingCheck": "Two exam questions. First. A nineteen-year-old can read their phone clearly, but lecture slides look blurred from the back of the room. Their prescription has become stronger each year for three years. Identify the disorder and explain its cause. Then explain why glasses or contact lenses suit them better than laser surgery, for now. Pause here to answer. Second. A seventy-four-year-old has gradually dim, cloudy vision in one eye, and glare from headlights at night. New glasses haven't helped. An eye examination finds a cloudy lens and a healthy retina. Evaluate lens replacement surgery for this person. Pause here to answer.",
+    "curriculumScope": "B8-IQ5-01: \"explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example:\" with the example \"visual disorders\" (scenes 2 to 5, attempt 1). B8-IQ5-02: \"investigate technologies that are used to assist with the effects of a disorder, including but not limited to: (ACSBL100)\" with the example \"visual disorders: spectacles, laser surgery\" (scenes 6 to 9). B8-IQ5-03: \"evaluate the effectiveness of a technology that is used to manage and assist with the effects of a disorder (ACSBL100)\" (scenes 7 to 9, both attempts). Inquiry question: \"How can technologies be used to assist people who experience disorders?\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One light pathway strip sits along the bottom of the frame from scene 2 to scene 11, reusing b15's PathwayStrip (five-box mode): \"light → cornea → lens → retina → optic nerve\", with a small brain-outline end box \"brain\" (abstract, no head). A fault is marked on the strip: a focus fault as an amber \"focus misses\" flag between the lens and retina boxes, a clarity fault as a grey fog over the lens box. Each technology draws as a coloured mark at the box it acts on: glasses and contacts as a blue lens chip before \"cornea\" (glasses) or on it (contacts), laser surgery as a violet mark on \"cornea\", lens replacement as a teal swap on \"lens\". Above the strip, the painted eye section m8-eye-cutaway-v1.png is the home plate, facing left (cornea at the left, optic nerve at the right), with coded light rays entering from the left and a small coded focal point marker (a white dot with a short bracket) that slides along the axis as the optics change. Matched painted states replace it when the eye's structure changes (long eye, short eye, cloudy lens, artificial lens). Concave and convex lenses are coded cross-sections in glass blue, because they are abstract optics, not objects. No people, heads, hands or faces. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the eye section fills the upper two thirds. a coded balance chip writes at the top: \"bending power ⇄ eye length\" (label \"must match\"). on \"too short\" the plate cross-fades to its matched state, new m8-eye-cutaway-short-v1. the plate cross-fades to its matched state, new m8-eye-cutaway-cataract-v1. the plate returns to its long state (m8-eye-cutaway-long-v1. the plate (long state) shrinks to the left. the plate shows its cataract state with scattered rays. the eye section returns at its plain state, smaller, above the strip. the board clears. the card stays. the board clears. the card stays. the light pathway strip returns full width. > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. Centre: a coded world outline (abstract, light grey) fills with a coded dot grid; on \"about half\" half the dots tint blue (label \"about half the world, 2050\"; grey tag \"Holden et al., 2016, projection\"). On \"the fault is tiny\" the world fades and m8-eye-cutaway-v1.png enters at the centre; three coded rays enter from the left and meet at a focal point marker just in front of the retina, with a small bracket \"about 1 mm short\". On \"the light can't get through clearly\" the lens region gets a soft grey fog overlay and the rays scatter into short faint lines. Then two chips write: \"focus\" and \"clarity\". The heading writes: \"How can technology assist visual disorders?\" At most three bright text items. Hold one second.",
+      "teachingReason": "By 2050, about half the people in the world may be short-sighted, if current trends continue.",
+      "narrationCue": "about half / the fault is tiny / the light can't get through clearly",
+      "motionPurpose": "no people. Centre: a coded world outline (abstract, light grey) fills with a coded dot grid; on \"about half\" half the dots tint blue (label \"about half the world, 2050\"; grey tag \"Holden et al., 2016, projection\"). On \"the fault is tiny\" the world fades and m8-eye-cutaway-v1.png enters at the centre; three coded rays enter from the left and meet at a focal point marker just in front of the retina, with a small bracket \"about 1 mm short\". On \"the light can't get through clearly\" the lens region gets a soft grey fog overlay and the rays scatter into short faint lines. Then two chips write: \"focus\" and \"clarity\". The heading writes: \"How can technology assist visual disorders?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Centre: a coded world outline (abstract, light grey) fills with a coded dot grid; on \"about half\" half the dots tint blue (label \"about half the world, 2050\"; grey tag \"Holden et al., 2016, projection\"). On \"the fault is tiny\" the world fades and m8-eye-cutaway-v1.png enters at the centre; three coded rays enter from the left and meet at a focal point marker just in front of the retina, with a small bracket \"about 1 mm short\". On \"the light can't get through clearly\" the lens region gets a soft grey fog overlay and the rays scatter into short faint lines. Then two chips write: \"focus\" and \"clarity\". The heading writes: \"How can technology assist visual disorders?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (half the world): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "how-the-eye-focuses",
+      "visualDecision": "new",
+      "visualReference": "the eye section fills the upper two thirds. The PathwayStrip draws at the bottom with its five boxes and the end box \"brain\"; grey tag \"b15: follow the pathway\". On \"cornea\" a callout to the cornea (label \"cornea: most of the bending\"; box 2 lights) and a coded ray bundle enters from the left and bends sharply at the cornea surface. On \"lens\" a callout (label \"lens: fine-tunes\"; box 3 lights) and the rays bend a little more. On \"retina\" a callout to the back layer (label \"retina: light-sensitive cells\"; box 4 lights; grey tag \"b01: receptors\") and the rays meet at the focal point marker exactly on it (grey tag \"sharpest at the fovea\"). On \"optic nerve\" a coded signal pulse runs from the retina along the nerve and along the strip to box 5 and the brain end box. On \"For a near object\" the ray bundle changes to diverging rays from a small coded dot at the left; on \"contracts\" a coded ring around the lens edge tightens (grey tag \"ciliary muscle\"); on \"go slack\" short coded fibre lines loosen (grey tag \"suspensory ligaments\"); on \"the lens rounds up\" a coded outline of the lens thickens by a small amount over the painted lens, and the focal point slides back onto the retina (label \"near: lens rounds, bends more\"). At most three bright items. Hold one second.",
+      "teachingReason": "Light enters the eye through the cornea, its clear, curved front, which does most of the bending.",
+      "narrationCue": "cornea / lens / retina / optic nerve / For a near object / contracts / go slack / the lens rounds up",
+      "motionPurpose": "the eye section fills the upper two thirds. The PathwayStrip draws at the bottom with its five boxes and the end box \"brain\"; grey tag \"b15: follow the pathway\". On \"cornea\" a callout to the cornea (label \"cornea: most of the bending\"; box 2 lights) and a coded ray bundle enters from the left and bends sharply at the cornea surface. On \"lens\" a callout (label \"lens: fine-tunes\"; box 3 lights) and the rays bend a little more. On \"retina\" a callout to the back layer (label \"retina: light-sensitive cells\"; box 4 lights; grey tag \"b01: receptors\") and the rays meet at the focal point marker exactly on it (grey tag \"sharpest at the fovea\"). On \"optic nerve\" a coded signal pulse runs from the retina along the nerve and along the strip to box 5 and the brain end box. On \"For a near object\" the ray bundle changes to diverging rays from a small coded dot at the left; on \"contracts\" a coded ring around the lens edge tightens (grey tag \"ciliary muscle\"); on \"go slack\" short coded fibre lines loosen (grey tag \"suspensory ligaments\"); on \"the lens rounds up\" a coded outline of the lens thickens by a small amount over the painted lens, and the focal point slides back onto the retina (label \"near: lens rounds, bends more\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the eye section fills the upper two thirds. The PathwayStrip draws at the bottom with its five boxes and the end box \"brain\"; grey tag \"b15: follow the pathway\". On \"cornea\" a callout to the cornea (label \"cornea: most of the bending\"; box 2 lights) and a coded ray bundle enters from the left and bends sharply at the cornea surface. On \"lens\" a callout (label \"lens: fine-tunes\"; box 3 lights) and the rays bend a little more. On \"retina\" a callout to the back layer (label \"retina: light-sensitive cells\"; box 4 lights; grey tag \"b01: receptors\") and the rays meet at the focal point marker exactly on it (grey tag \"sharpest at the fovea\"). On \"optic nerve\" a coded signal pulse runs from the retina along the nerve and along the strip to box 5 and the brain end box. On \"For a near object\" the ray bundle changes to diverging rays from a small coded dot at the left; on \"contracts\" a coded ring around the lens edge tightens (grey tag \"ciliary muscle\"); on \"go slack\" short coded fibre lines loosen (grey tag \"suspensory ligaments\"); on \"the lens rounds up\" a coded outline of the lens thickens by a small amount over the painted lens, and the focal point slides back onto the retina (label \"near: lens rounds, bends more\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "how the eye focuses: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "myopia",
+      "visualDecision": "new",
+      "visualReference": "a coded balance chip writes at the top: \"bending power ⇄ eye length\" (label \"must match\"). On \"too long\" the eye section cross-fades to its matched state, new m8-eye-cutaway-long-v1.png (same cornea and lens, the globe stretched front to back; a coded bracket shows the extra length, label \"too long\"). Grey tag: \"or cornea too curved\". On \"in front of the retina\" parallel rays (label \"distant object: parallel light\") meet at the focal point marker inside the eye, then cross and spread to a blurred patch on the retina (label \"focus in front\"); the strip gets the amber \"focus misses\" flag between boxes 3 and 4. On \"already spreading\" diverging rays from a small coded dot at the left replace them and meet on the retina (label \"one near object: clear\"; Revision 2, learning L3). On \"you see what's near 'my' eyes\" the line writes in hand lettering beside the plate. At most three bright items. Hold one second.",
+      "teachingReason": "Clear vision needs the eye's bending power to match its length.",
+      "narrationCue": "too long / in front of the retina / already spreading",
+      "motionPurpose": "a coded balance chip writes at the top: \"bending power ⇄ eye length\" (label \"must match\"). On \"too long\" the eye section cross-fades to its matched state, new m8-eye-cutaway-long-v1.png (same cornea and lens, the globe stretched front to back; a coded bracket shows the extra length, label \"too long\"). Grey tag: \"or cornea too curved\". On \"in front of the retina\" parallel rays (label \"distant object: parallel light\") meet at the focal point marker inside the eye, then cross and spread to a blurred patch on the retina (label \"focus in front\"); the strip gets the amber \"focus misses\" flag between boxes 3 and 4. On \"already spreading\" diverging rays from a small coded dot at the left replace them and meet on the retina (label \"one near object: clear\"; Revision 2, learning L3). On \"you see what's near 'my' eyes\" the line writes in hand lettering beside the plate. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "a coded balance chip writes at the top: \"bending power ⇄ eye length\" (label \"must match\"). On \"too long\" the eye section cross-fades to its matched state, new m8-eye-cutaway-long-v1.png (same cornea and lens, the globe stretched front to back; a coded bracket shows the extra length, label \"too long\"). Grey tag: \"or cornea too curved\". On \"in front of the retina\" parallel rays (label \"distant object: parallel light\") meet at the focal point marker inside the eye, then cross and spread to a blurred patch on the retina (label \"focus in front\"); the strip gets the amber \"focus misses\" flag between boxes 3 and 4. On \"already spreading\" diverging rays from a small coded dot at the left replace them and meet on the retina (label \"one near object: clear\"; Revision 2, learning L3). On \"you see what's near 'my' eyes\" the line writes in hand lettering beside the plate. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-long-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "myopia: power against length: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "hyperopia-astigmatism-presbyopia",
+      "visualDecision": "adjust",
+      "visualReference": "on \"too short\" the plate cross-fades to its matched state, new m8-eye-cutaway-short-v1.png (same cornea and lens, the globe shorter; bracket \"too short\"); grey tag \"or cornea too flat\". On \"behind the retina\" rays reach the retina before meeting, and a dashed continuation shows the focal point marker beyond it, outside the eye (label \"focus behind\"). On \"Near objects blur most\" a grey tag writes \"young eyes can partly compensate by accommodating\" (screen only). The plate returns to its normal state. On \"astigmatism\" a small coded cornea outline beside the plate shows two curves, steep and flat, and two focal marks at different depths (label \"uneven cornea: no single focus\"; grey tag \"rugby ball, not soccer ball\"). On \"the lens stiffens\" the coded lens outline on the normal plate tries to thicken and stays flat (label \"stiff lens: can't round up\"); a chip \"presbyopia: presby = old\" (Revision 2: screen only; the spoken etymology is cut to fund scene 6's toric sentence). On \"reading glasses\" a small m8-glasses-v1.png thumbnail sits by the chip. A grey tag at the side: \"hyperopia = short eyeball; presbyopia = stiff lens\". At most three bright items. Hold one second.",
+      "teachingReason": "In hyperopia, or long-sightedness, it's the other way round.",
+      "narrationCue": "too short / behind the retina / Near objects blur most / astigmatism / the lens stiffens / reading glasses",
+      "motionPurpose": "on \"too short\" the plate cross-fades to its matched state, new m8-eye-cutaway-short-v1.png (same cornea and lens, the globe shorter; bracket \"too short\"); grey tag \"or cornea too flat\". On \"behind the retina\" rays reach the retina before meeting, and a dashed continuation shows the focal point marker beyond it, outside the eye (label \"focus behind\"). On \"Near objects blur most\" a grey tag writes \"young eyes can partly compensate by accommodating\" (screen only). The plate returns to its normal state. On \"astigmatism\" a small coded cornea outline beside the plate shows two curves, steep and flat, and two focal marks at different depths (label \"uneven cornea: no single focus\"; grey tag \"rugby ball, not soccer ball\"). On \"the lens stiffens\" the coded lens outline on the normal plate tries to thicken and stays flat (label \"stiff lens: can't round up\"); a chip \"presbyopia: presby = old\" (Revision 2: screen only; the spoken etymology is cut to fund scene 6's toric sentence). On \"reading glasses\" a small m8-glasses-v1.png thumbnail sits by the chip. A grey tag at the side: \"hyperopia = short eyeball; presbyopia = stiff lens\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"too short\" the plate cross-fades to its matched state, new m8-eye-cutaway-short-v1.png (same cornea and lens, the globe shorter; bracket \"too short\"); grey tag \"or cornea too flat\". On \"behind the retina\" rays reach the retina before meeting, and a dashed continuation shows the focal point marker beyond it, outside the eye (label \"focus behind\"). On \"Near objects blur most\" a grey tag writes \"young eyes can partly compensate by accommodating\" (screen only). The plate returns to its normal state. On \"astigmatism\" a small coded cornea outline beside the plate shows two curves, steep and flat, and two focal marks at different depths (label \"uneven cornea: no single focus\"; grey tag \"rugby ball, not soccer ball\"). On \"the lens stiffens\" the coded lens outline on the normal plate tries to thicken and stays flat (label \"stiff lens: can't round up\"); a chip \"presbyopia: presby = old\" (Revision 2: screen only; the spoken etymology is cut to fund scene 6's toric sentence). On \"reading glasses\" a small m8-glasses-v1.png thumbnail sits by the chip. A grey tag at the side: \"hyperopia = short eyeball; presbyopia = stiff lens\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-short-v1.png",
+        "m8-glasses-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hyperopia, astigmatism, presbyopia: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cataract",
+      "visualDecision": "new",
+      "visualReference": "the plate cross-fades to its matched state, new m8-eye-cutaway-cataract-v1.png (same section, the lens milky and yellow-grey). Callout \"cataract: cloudy lens\". On \"Proteins in the lens clump together\" a small coded inset beside the lens: an orderly grid of tiny dots (label \"clear: proteins evenly spaced\") rearranges into clumps (label \"cloudy: clumped proteins\"). On \"light is scattered\" the coded rays enter, reach the lens and break into short faint lines spraying in different directions; only a weak, fuzzy patch reaches the retina. The strip's lens box takes the grey fog. On \"dim and blurred, colours fade, and headlights cause glare\" three small chips write, one per cue. On \"Ageing is the main cause\" a chip \"mainly ageing\" with three grey tags \"sunlight\", \"smoking\", \"diabetes\". On \"glasses can't clear a cloudy lens\" a coded concave lens profile slides in front of the cornea; the rays still scatter at the cloudy lens (label \"focus fixed, still cloudy\"). At most three bright items. Hold one second.",
+      "teachingReason": "Some faults aren't about focus at all.",
+      "narrationCue": "Proteins in the lens clump together / light is scattered / dim and blurred, colours fade, and headlights cause glare / Ageing is the main cause / glasses can't clear a cloudy lens",
+      "motionPurpose": "the plate cross-fades to its matched state, new m8-eye-cutaway-cataract-v1.png (same section, the lens milky and yellow-grey). Callout \"cataract: cloudy lens\". On \"Proteins in the lens clump together\" a small coded inset beside the lens: an orderly grid of tiny dots (label \"clear: proteins evenly spaced\") rearranges into clumps (label \"cloudy: clumped proteins\"). On \"light is scattered\" the coded rays enter, reach the lens and break into short faint lines spraying in different directions; only a weak, fuzzy patch reaches the retina. The strip's lens box takes the grey fog. On \"dim and blurred, colours fade, and headlights cause glare\" three small chips write, one per cue. On \"Ageing is the main cause\" a chip \"mainly ageing\" with three grey tags \"sunlight\", \"smoking\", \"diabetes\". On \"glasses can't clear a cloudy lens\" a coded concave lens profile slides in front of the cornea; the rays still scatter at the cloudy lens (label \"focus fixed, still cloudy\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plate cross-fades to its matched state, new m8-eye-cutaway-cataract-v1.png (same section, the lens milky and yellow-grey). Callout \"cataract: cloudy lens\". On \"Proteins in the lens clump together\" a small coded inset beside the lens: an orderly grid of tiny dots (label \"clear: proteins evenly spaced\") rearranges into clumps (label \"cloudy: clumped proteins\"). On \"light is scattered\" the coded rays enter, reach the lens and break into short faint lines spraying in different directions; only a weak, fuzzy patch reaches the retina. The strip's lens box takes the grey fog. On \"dim and blurred, colours fade, and headlights cause glare\" three small chips write, one per cue. On \"Ageing is the main cause\" a chip \"mainly ageing\" with three grey tags \"sunlight\", \"smoking\", \"diabetes\". On \"glasses can't clear a cloudy lens\" a coded concave lens profile slides in front of the cornea; the rays still scatter at the cloudy lens (label \"focus fixed, still cloudy\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-cataract-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "cataract: a clarity fault: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "glasses-contacts",
+      "visualDecision": "adjust",
+      "visualReference": "the plate returns to its long state (m8-eye-cutaway-long-v1.png) with the focus in front. m8-glasses-v1.png enters alone at the upper left. On \"concave lens\" a coded concave LensProfile draws in front of the cornea (hand lettering \"concave caves in\"; label \"spreads light\"); the rays pass through it, diverge slightly, and the focal point marker slides back onto the retina (label \"focus moved back\"); the strip's amber flag clears and a blue lens chip draws before box 2. On \"convex lens\" the plate cross-fades to its short state with the focus behind; a coded convex profile replaces the concave one (label \"bends light inward\"); the marker slides forward onto the retina. On \"toric\" (Revision 2, learning L2) the small two-curve cornea from scene 4 returns beside the plate with its two focal marks at different depths; a coded toric profile with a steeper and a flatter curve draws in front of it, and the two marks merge onto one point on the retina (label \"toric lens: different bending in different directions\"). On \"Contact lenses\" m8-contact-lenses-v1.png enters alone at the left; the coded profile moves onto the cornea surface as a thin curved shell (label \"on the cornea: moves with the eye\"); a coded view-angle wedge widens (label \"wider clear view\"). On \"an infection into the cornea\" a small red-tinted patch blooms on the cornea outline (label \"infection risk: overnight wear, poor cleaning\"). At most three bright items. Hold one second.",
+      "teachingReason": "For a focus fault, change how light is bent before it reaches the retina.",
+      "narrationCue": "concave lens / convex lens / toric / Contact lenses / an infection into the cornea",
+      "motionPurpose": "the plate returns to its long state (m8-eye-cutaway-long-v1.png) with the focus in front. m8-glasses-v1.png enters alone at the upper left. On \"concave lens\" a coded concave LensProfile draws in front of the cornea (hand lettering \"concave caves in\"; label \"spreads light\"); the rays pass through it, diverge slightly, and the focal point marker slides back onto the retina (label \"focus moved back\"); the strip's amber flag clears and a blue lens chip draws before box 2. On \"convex lens\" the plate cross-fades to its short state with the focus behind; a coded convex profile replaces the concave one (label \"bends light inward\"); the marker slides forward onto the retina. On \"toric\" (Revision 2, learning L2) the small two-curve cornea from scene 4 returns beside the plate with its two focal marks at different depths; a coded toric profile with a steeper and a flatter curve draws in front of it, and the two marks merge onto one point on the retina (label \"toric lens: different bending in different directions\"). On \"Contact lenses\" m8-contact-lenses-v1.png enters alone at the left; the coded profile moves onto the cornea surface as a thin curved shell (label \"on the cornea: moves with the eye\"); a coded view-angle wedge widens (label \"wider clear view\"). On \"an infection into the cornea\" a small red-tinted patch blooms on the cornea outline (label \"infection risk: overnight wear, poor cleaning\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plate returns to its long state (m8-eye-cutaway-long-v1.png) with the focus in front. m8-glasses-v1.png enters alone at the upper left. On \"concave lens\" a coded concave LensProfile draws in front of the cornea (hand lettering \"concave caves in\"; label \"spreads light\"); the rays pass through it, diverge slightly, and the focal point marker slides back onto the retina (label \"focus moved back\"); the strip's amber flag clears and a blue lens chip draws before box 2. On \"convex lens\" the plate cross-fades to its short state with the focus behind; a coded convex profile replaces the concave one (label \"bends light inward\"); the marker slides forward onto the retina. On \"toric\" (Revision 2, learning L2) the small two-curve cornea from scene 4 returns beside the plate with its two focal marks at different depths; a coded toric profile with a steeper and a flatter curve draws in front of it, and the two marks merge onto one point on the retina (label \"toric lens: different bending in different directions\"). On \"Contact lenses\" m8-contact-lenses-v1.png enters alone at the left; the coded profile moves onto the cornea surface as a thin curved shell (label \"on the cornea: moves with the eye\"); a coded view-angle wedge widens (label \"wider clear view\"). On \"an infection into the cornea\" a small red-tinted patch blooms on the cornea outline (label \"infection risk: overnight wear, poor cleaning\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-long-v1.png",
+        "m8-glasses-v1.png",
+        "LensProfile",
+        "m8-contact-lenses-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "glasses and contact lenses: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "laser-surgery",
+      "visualDecision": "new",
+      "visualReference": "the plate (long state) shrinks to the left. New matched close-ups of the front of the eye in section replace each other at the right on cues: m8-cornea-closeup-v1.png (cornea in section, steeply curved) on \"thin flap\"; m8-cornea-lasik-flap-v1.png (same view, a thin hinged flap folded back) on \"folded back\"; a coded violet beam pulses on the exposed centre on \"A laser then removes\" (grey tag \"excimer laser\"); on \"takes more from the centre\" a coded dashed outline of the old curve stays while the plate cross-fades to m8-cornea-flattened-v1.png (flap replaced over a flatter centre) (label \"flatter centre: bends light less\"). On the main plate the focal point marker slides back onto the retina; the strip's cornea box takes a violet mark. On \"heals without stitches\" a grey tag \"flap stays down by itself\". On \"the change is permanent\" a chip \"permanent: can't be undone\". Then limit chips, one per cue: \"needs a stable prescription and thick enough cornea\", \"dry eyes; glare at night\", \"doesn't stop presbyopia: lens unchanged\" (the lens region on the main plate pulses grey). Earlier chips dim so at most three are bright. Hold one second.",
+      "teachingReason": "Laser surgery changes the eye itself.",
+      "narrationCue": "thin flap / folded back / A laser then removes / takes more from the centre / heals without stitches / the change is permanent",
+      "motionPurpose": "the plate (long state) shrinks to the left. New matched close-ups of the front of the eye in section replace each other at the right on cues: m8-cornea-closeup-v1.png (cornea in section, steeply curved) on \"thin flap\"; m8-cornea-lasik-flap-v1.png (same view, a thin hinged flap folded back) on \"folded back\"; a coded violet beam pulses on the exposed centre on \"A laser then removes\" (grey tag \"excimer laser\"); on \"takes more from the centre\" a coded dashed outline of the old curve stays while the plate cross-fades to m8-cornea-flattened-v1.png (flap replaced over a flatter centre) (label \"flatter centre: bends light less\"). On the main plate the focal point marker slides back onto the retina; the strip's cornea box takes a violet mark. On \"heals without stitches\" a grey tag \"flap stays down by itself\". On \"the change is permanent\" a chip \"permanent: can't be undone\". Then limit chips, one per cue: \"needs a stable prescription and thick enough cornea\", \"dry eyes; glare at night\", \"doesn't stop presbyopia: lens unchanged\" (the lens region on the main plate pulses grey). Earlier chips dim so at most three are bright. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plate (long state) shrinks to the left. New matched close-ups of the front of the eye in section replace each other at the right on cues: m8-cornea-closeup-v1.png (cornea in section, steeply curved) on \"thin flap\"; m8-cornea-lasik-flap-v1.png (same view, a thin hinged flap folded back) on \"folded back\"; a coded violet beam pulses on the exposed centre on \"A laser then removes\" (grey tag \"excimer laser\"); on \"takes more from the centre\" a coded dashed outline of the old curve stays while the plate cross-fades to m8-cornea-flattened-v1.png (flap replaced over a flatter centre) (label \"flatter centre: bends light less\"). On the main plate the focal point marker slides back onto the retina; the strip's cornea box takes a violet mark. On \"heals without stitches\" a grey tag \"flap stays down by itself\". On \"the change is permanent\" a chip \"permanent: can't be undone\". Then limit chips, one per cue: \"needs a stable prescription and thick enough cornea\", \"dry eyes; glare at night\", \"doesn't stop presbyopia: lens unchanged\" (the lens region on the main plate pulses grey). Earlier chips dim so at most three are bright. Hold one second.",
+      "motionTools": [
+        "m8-cornea-closeup-v1.png",
+        "m8-cornea-lasik-flap-v1.png",
+        "m8-cornea-flattened-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "laser surgery: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "lens-replacement",
+      "visualDecision": "new",
+      "visualReference": "the plate shows its cataract state with scattered rays. On \"ultrasound breaks up the old lens\" the cloudy lens on the plate breaks into a coded fragment pattern that fades (grey tag \"ultrasound\"). On \"A folded artificial lens\" new m8-intraocular-lens-v1.png enters alone at the right (a small clear lens with two curved side arms); a coded fold-and-unfold animation of its outline plays once beside it. On \"opens into place\" the plate cross-fades to its matched state, new m8-eye-cutaway-iol-v1.png (same section, a clear artificial lens with its side arms in the lens capsule); callout \"artificial lens\". On \"Light passes through clearly\" the rays pass straight through and meet on the retina; the strip's lens box clears and takes a teal swap mark. On \"correct short- or long-sightedness\" a grey tag \"power chosen to fit the eye\". Limit chips, one per cue: \"can't change shape: reading glasses\" (grey tag \"standard fixed-focus lens\"; Revision 2), \"small infection risk\", \"needs a working retina\" (the retina on the plate brightens with a green tick, and the strip's box 4 ticks). At most three bright items. Hold one second.",
+      "teachingReason": "For a cataract, the fix is to replace the cloudy lens.",
+      "narrationCue": "ultrasound breaks up the old lens / A folded artificial lens / opens into place / Light passes through clearly / correct short- or long-sightedness",
+      "motionPurpose": "the plate shows its cataract state with scattered rays. On \"ultrasound breaks up the old lens\" the cloudy lens on the plate breaks into a coded fragment pattern that fades (grey tag \"ultrasound\"). On \"A folded artificial lens\" new m8-intraocular-lens-v1.png enters alone at the right (a small clear lens with two curved side arms); a coded fold-and-unfold animation of its outline plays once beside it. On \"opens into place\" the plate cross-fades to its matched state, new m8-eye-cutaway-iol-v1.png (same section, a clear artificial lens with its side arms in the lens capsule); callout \"artificial lens\". On \"Light passes through clearly\" the rays pass straight through and meet on the retina; the strip's lens box clears and takes a teal swap mark. On \"correct short- or long-sightedness\" a grey tag \"power chosen to fit the eye\". Limit chips, one per cue: \"can't change shape: reading glasses\" (grey tag \"standard fixed-focus lens\"; Revision 2), \"small infection risk\", \"needs a working retina\" (the retina on the plate brightens with a green tick, and the strip's box 4 ticks). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plate shows its cataract state with scattered rays. On \"ultrasound breaks up the old lens\" the cloudy lens on the plate breaks into a coded fragment pattern that fades (grey tag \"ultrasound\"). On \"A folded artificial lens\" new m8-intraocular-lens-v1.png enters alone at the right (a small clear lens with two curved side arms); a coded fold-and-unfold animation of its outline plays once beside it. On \"opens into place\" the plate cross-fades to its matched state, new m8-eye-cutaway-iol-v1.png (same section, a clear artificial lens with its side arms in the lens capsule); callout \"artificial lens\". On \"Light passes through clearly\" the rays pass straight through and meet on the retina; the strip's lens box clears and takes a teal swap mark. On \"correct short- or long-sightedness\" a grey tag \"power chosen to fit the eye\". Limit chips, one per cue: \"can't change shape: reading glasses\" (grey tag \"standard fixed-focus lens\"; Revision 2), \"small infection risk\", \"needs a working retina\" (the retina on the plate brightens with a green tick, and the strip's box 4 ticks). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-intraocular-lens-v1.png",
+        "m8-eye-cutaway-iol-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "lens replacement: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "matched-not-ranked",
+      "visualDecision": "adjust",
+      "visualReference": "the eye section returns at its plain state, smaller, above the strip. Four device thumbnails line up above it, each with a coded line to the box it acts on and a \"suits\" chip lighting on its cue: m8-glasses-v1.png → before box 2, \"almost anyone; growing eyes\"; m8-contact-lenses-v1.png → box 2, \"active, keeps them clean\"; a small m8-cornea-flattened-v1.png → box 2, \"adults, stable prescription\"; m8-intraocular-lens-v1.png → box 3, \"cloudy lens\". Grey tag \"b15: matched, not ranked\". On \"long\" the long-eye bracket from scene 3 reappears briefly on a small thumbnail with a grey tag \"long eye stays long\" beside the glasses and flattened-cornea thumbnails; on \"removes the clouded lens\" the lens replacement thumbnail takes a teal tick (tag \"cloudy lens removed\"). Hand-lettered above: \"move the focus, or clear the path\". At most three bright items. Hold one second.",
+      "teachingReason": "So, like hearing devices, these are matched, not ranked.",
+      "narrationCue": "long / removes the clouded lens",
+      "motionPurpose": "the eye section returns at its plain state, smaller, above the strip. Four device thumbnails line up above it, each with a coded line to the box it acts on and a \"suits\" chip lighting on its cue: m8-glasses-v1.png → before box 2, \"almost anyone; growing eyes\"; m8-contact-lenses-v1.png → box 2, \"active, keeps them clean\"; a small m8-cornea-flattened-v1.png → box 2, \"adults, stable prescription\"; m8-intraocular-lens-v1.png → box 3, \"cloudy lens\". Grey tag \"b15: matched, not ranked\". On \"long\" the long-eye bracket from scene 3 reappears briefly on a small thumbnail with a grey tag \"long eye stays long\" beside the glasses and flattened-cornea thumbnails; on \"removes the clouded lens\" the lens replacement thumbnail takes a teal tick (tag \"cloudy lens removed\"). Hand-lettered above: \"move the focus, or clear the path\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the eye section returns at its plain state, smaller, above the strip. Four device thumbnails line up above it, each with a coded line to the box it acts on and a \"suits\" chip lighting on its cue: m8-glasses-v1.png → before box 2, \"almost anyone; growing eyes\"; m8-contact-lenses-v1.png → box 2, \"active, keeps them clean\"; a small m8-cornea-flattened-v1.png → box 2, \"adults, stable prescription\"; m8-intraocular-lens-v1.png → box 3, \"cloudy lens\". Grey tag \"b15: matched, not ranked\". On \"long\" the long-eye bracket from scene 3 reappears briefly on a small thumbnail with a grey tag \"long eye stays long\" beside the glasses and flattened-cornea thumbnails; on \"removes the clouded lens\" the lens replacement thumbnail takes a teal tick (tag \"cloudy lens removed\"). Hand-lettered above: \"move the focus, or clear the path\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-glasses-v1.png",
+        "m8-contact-lenses-v1.png",
+        "m8-cornea-flattened-v1.png",
+        "m8-intraocular-lens-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "matched, not ranked: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 19-year-old can read their phone clearly, but lecture slides look blurred from the back of the room. Their prescription has become stronger each year for the past three years.\" Demand: \"(a) Identify the disorder and explain its cause in terms of where light is focused. (2 marks) (b) Explain why glasses or contact lenses are more suitable than laser surgery for this person at present. (3 marks)\". A small plain m8-eye-cutaway-v1.png sits beside the card with no labels. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 19-year-old can read their phone clearly, but lecture slides look blurred from the back of the room. Their prescription has become stronger each year for the past three years.\" Demand: \"(a) Identify the disorder and explain its cause in terms of where light is focused. (2 marks) (b) Explain why glasses or contact lenses are more suitable than laser surgery for this person at present. (3 marks)\". A small plain m8-eye-cutaway-v1.png sits beside the card with no labels. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 19-year-old can read their phone clearly, but lecture slides look blurred from the back of the room. Their prescription has become stronger each year for the past three years.\" Demand: \"(a) Identify the disorder and explain its cause in terms of where light is focused. (2 marks) (b) Explain why glasses or contact lenses are more suitable than laser surgery for this person at present. (3 marks)\". A small plain m8-eye-cutaway-v1.png sits beside the card with no labels. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-eye-cutaway-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (a changing prescription): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"It's myopia\" \"read their phone clearly\" and \"blurred from the back of the room\" underline; answer (a) writes \"myopia (short-sightedness)\". On \"comes to a point in front of the retina\" the small plate swaps to m8-eye-cutaway-long-v1.png with parallel rays meeting in front of the retina; answer (a) line 2: \"eye too long or too powerful: distant light focuses in front of the retina; near light focuses on it\". On \"still changing\" \"stronger each year for the past three years\" underlines; answer (b) builds on the cues: \"eyes still changing: a permanent laser correction could drift\", \"laser removes tissue: can't be undone\", \"glasses or contacts: changed as the prescription changes\". On \"classic mistake\" a chip \"choose laser surgery because it's permanent\" writes and takes a scribble cross, small text \"permanent is the problem while eyes change\". Settle one second.",
+      "teachingReason": "It's myopia.",
+      "narrationCue": "It's myopia / comes to a point in front of the retina / still changing / classic mistake",
+      "motionPurpose": "the card stays. On \"It's myopia\" \"read their phone clearly\" and \"blurred from the back of the room\" underline; answer (a) writes \"myopia (short-sightedness)\". On \"comes to a point in front of the retina\" the small plate swaps to m8-eye-cutaway-long-v1.png with parallel rays meeting in front of the retina; answer (a) line 2: \"eye too long or too powerful: distant light focuses in front of the retina; near light focuses on it\". On \"still changing\" \"stronger each year for the past three years\" underlines; answer (b) builds on the cues: \"eyes still changing: a permanent laser correction could drift\", \"laser removes tissue: can't be undone\", \"glasses or contacts: changed as the prescription changes\". On \"classic mistake\" a chip \"choose laser surgery because it's permanent\" writes and takes a scribble cross, small text \"permanent is the problem while eyes change\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"It's myopia\" \"read their phone clearly\" and \"blurred from the back of the room\" underline; answer (a) writes \"myopia (short-sightedness)\". On \"comes to a point in front of the retina\" the small plate swaps to m8-eye-cutaway-long-v1.png with parallel rays meeting in front of the retina; answer (a) line 2: \"eye too long or too powerful: distant light focuses in front of the retina; near light focuses on it\". On \"still changing\" \"stronger each year for the past three years\" underlines; answer (b) builds on the cues: \"eyes still changing: a permanent laser correction could drift\", \"laser removes tissue: can't be undone\", \"glasses or contacts: changed as the prescription changes\". On \"classic mistake\" a chip \"choose laser surgery because it's permanent\" writes and takes a scribble cross, small text \"permanent is the problem while eyes change\". Settle one second.",
+      "motionTools": [
+        "m8-eye-cutaway-long-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 74-year-old has gradually dim, cloudy vision in one eye and glare from car headlights at night. New glasses have not improved their vision. An eye examination finds a cloudy lens and a healthy retina.\" Demand: \"Evaluate the use of lens replacement surgery for this person. (5 marks)\". No plate and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 74-year-old has gradually dim, cloudy vision in one eye and glare from car headlights at night. New glasses have not improved their vision. An eye examination finds a cloudy lens and a healthy retina.\" Demand: \"Evaluate the use of lens replacement surgery for this person. (5 marks)\". No plate and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A 74-year-old has gradually dim, cloudy vision in one eye and glare from car headlights at night. New glasses have not improved their vision. An eye examination finds a cloudy lens and a healthy retina.\" Demand: \"Evaluate the use of lens replacement surgery for this person. (5 marks)\". No plate and no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (a cloudy lens): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"a cataract, a clarity fault\" \"cloudy lens\" and \"glare from car headlights\" underline and m8-eye-cutaway-cataract-v1.png appears small with scattered rays; on \"why new glasses didn't help\" \"New glasses have not improved their vision\" underlines. On \"lets light through to the healthy retina\" \"a healthy retina\" underlines and the small plate cross-fades to m8-eye-cutaway-iol-v1.png with clear rays meeting on the retina. Answer builds on the cues: \"cataract: cloudy lens scatters light; glasses can't clear it\", \"surgery: cloudy lens removed, clear artificial lens; healthy retina so vision can return\", \"limits: reading glasses still needed; small infection risk\", \"judgement: strong choice here\". On \"classic mistake\" a chip \"laser surgery on the cornea\" writes and takes a scribble cross, small text \"the cloud is in the lens, not the cornea\". Settle one second.",
+      "teachingReason": "This is a cataract, a clarity fault, which is why new glasses didn't help.",
+      "narrationCue": "a cataract, a clarity fault / why new glasses didn't help / lets light through to the healthy retina / classic mistake",
+      "motionPurpose": "the card stays. On \"a cataract, a clarity fault\" \"cloudy lens\" and \"glare from car headlights\" underline and m8-eye-cutaway-cataract-v1.png appears small with scattered rays; on \"why new glasses didn't help\" \"New glasses have not improved their vision\" underlines. On \"lets light through to the healthy retina\" \"a healthy retina\" underlines and the small plate cross-fades to m8-eye-cutaway-iol-v1.png with clear rays meeting on the retina. Answer builds on the cues: \"cataract: cloudy lens scatters light; glasses can't clear it\", \"surgery: cloudy lens removed, clear artificial lens; healthy retina so vision can return\", \"limits: reading glasses still needed; small infection risk\", \"judgement: strong choice here\". On \"classic mistake\" a chip \"laser surgery on the cornea\" writes and takes a scribble cross, small text \"the cloud is in the lens, not the cornea\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"a cataract, a clarity fault\" \"cloudy lens\" and \"glare from car headlights\" underline and m8-eye-cutaway-cataract-v1.png appears small with scattered rays; on \"why new glasses didn't help\" \"New glasses have not improved their vision\" underlines. On \"lets light through to the healthy retina\" \"a healthy retina\" underlines and the small plate cross-fades to m8-eye-cutaway-iol-v1.png with clear rays meeting on the retina. Answer builds on the cues: \"cataract: cloudy lens scatters light; glasses can't clear it\", \"surgery: cloudy lens removed, clear artificial lens; healthy retina so vision can return\", \"limits: reading glasses still needed; small infection risk\", \"judgement: strong choice here\". On \"classic mistake\" a chip \"laser surgery on the cornea\" writes and takes a scribble cross, small text \"the cloud is in the lens, not the cornea\". Settle one second.",
+      "motionTools": [
+        "m8-eye-cutaway-cataract-v1.png",
+        "m8-eye-cutaway-iol-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the light pathway strip returns full width. An amber \"focus misses\" flag appears between boxes 3 and 4, and the blue and violet marks light (glasses, contacts, laser); then a grey fog appears on box 3, and the teal swap lights (lens replacement). Two step chips above it, one per cue: \"focus misses → move the focus\", \"lens cloudy → replace the lens\". A \"Next\" chip slides in at the lower right: \"Next: What can replace lost kidney function?\" with a small m8-kidney-nephron-v1.png thumbnail (kidney half, cropped by Cam). Hold half a second before the notes.",
+      "teachingReason": "So for any vision question, ask where the light goes wrong.",
+      "narrationCue": "So for any vision question, ask where the light goes wrong",
+      "motionPurpose": "the light pathway strip returns full width. An amber \"focus misses\" flag appears between boxes 3 and 4, and the blue and violet marks light (glasses, contacts, laser); then a grey fog appears on box 3, and the teal swap lights (lens replacement). Two step chips above it, one per cue: \"focus misses → move the focus\", \"lens cloudy → replace the lens\". A \"Next\" chip slides in at the lower right: \"Next: What can replace lost kidney function?\" with a small m8-kidney-nephron-v1.png thumbnail (kidney half, cropped by Cam). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the light pathway strip returns full width. An amber \"focus misses\" flag appears between boxes 3 and 4, and the blue and violet marks light (glasses, contacts, laser); then a grey fog appears on box 3, and the teal swap lights (lens replacement). Two step chips above it, one per cue: \"focus misses → move the focus\", \"lens cloudy → replace the lens\". A \"Next\" chip slides in at the lower right: \"Next: What can replace lost kidney function?\" with a small m8-kidney-nephron-v1.png thumbnail (kidney half, cropped by Cam). Hold half a second before the notes.",
+      "motionTools": [
+        "m8-kidney-nephron-v1.png",
+        "Cam",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b16-learning-review.md",
+      "sha256": "c4b8e80765158c066559efa4da1fc75cfb4ba3ee3cdd8281f6800efa5215eb7d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b16-claude-science-check.md",
+      "sha256": "37c1e0baf68e8a6e4700f9e92f62072006df7b5aa39cefcfc84d8fbe2e1034d9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

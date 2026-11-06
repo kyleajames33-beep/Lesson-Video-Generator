@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b12/lesson.json",
+    "lessonSha256": "ba38abae6b2d1705b5d32d7e4fae7aec8bba24266f1ad920ba6176c4a00ff95c"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b03: insulin from beta cells; insulin binds receptors and moves glucose transporters into the membrane of muscle and fat cells; the liver stores and releases glucose; usual fasting range about 4 to 6 mmol/L. From b08: insulin resistance (\"insulin still binds, but fewer transporters move\"), body fat around the liver and organs, beta cells covering then falling behind, high glucose damaging vessels in the eyes, kidneys, nerves and heart; risk factor. From b10: rates (not used directly). From b11 (watched before g01 and b12 in the recommended order): randomised controlled trial, \"chance decides the groups, so other differences even out\". From Year 11: haemoglobin in red blood cells. Not assumed: management, treatment, monitoring (as defined terms), metformin, HbA1c, escalation, remission, placebo, GLP-1, future direction.",
+    "startsWith": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment simply more insulin? Early on, many people with type 2 make plenty of insulin, sometimes more than usual. Adding more of a signal the cells are already ignoring isn't the first move. So how can type 2 diabetes be managed?",
+    "stopsAfter": "distinguishing type 1 (beta cells destroyed, little or no insulin) from type 2 (insulin present, cells respond poorly, beta cells later fall behind); stating management's two jobs (glucose towards range, lower complication risk); distinguishing management, treatment and monitoring; explaining how activity (contracting muscle moves transporters without insulin) and weight loss (less fat in and around the liver and organs, better response to insulin) act on the cause, and their limit (keeping it up; cost and access); explaining metformin (less glucose released by the liver, better response; cheap, rarely causes low glucose, weight-neutral; doesn't remove resistance; gut side effects); explaining HbA1c (glucose sticks to haemoglobin over a red cell's life, so it averages two to three months; evidence, not treatment); explaining escalation and why insulin manages the consequence (replaces the signal, doesn't restore sensitivity, can add weight); explaining complication care (blood pressure, cholesterol, kidney, eye and foot checks); evaluating management evidence with DiRECT (randomised, large gap at one year; remission faded with weight regain; who was studied; trial against everyday results); evaluating GLP-1 based drugs as a future direction; applying this to a rising HbA1c and to unseen trial evidence.",
+    "nextLesson": "how prevention campaigns can reduce disease (bio-m8-b13)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b12.md"
+  ],
+  "teaching": {
+    "task": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment just more insulin? How can type 2 diabetes be managed?",
+    "causalExplanation": "Earlier, you saw how type 2 develops. In muscle and fat cells, insulin still binds, but fewer glucose transporters reach the membrane, so glucose stays in the blood. The liver also releases too much glucose. Beta cells cover by releasing more insulin, until they fall behind. Type 1 is different: immune cells destroy the beta cells, so little or no insulin is made. Think of insulin as a key. Type 1 has no key. In type 2, the key fits, but the lock is jammed. So management has two jobs. Bring blood glucose back towards its usual range, and lower the risk of damage to blood vessels, kidneys, eyes and nerves. Management is the long-term work of keeping a disease under control, without curing it. A treatment acts on the disease mechanism. And monitoring measures whether the plan is working. A good plan links every action back to the mechanism. Start with lifestyle, because it acts on the cause. When muscles contract during activity, they move glucose transporters into the membrane without needing insulin, so glucose leaves the blood. Losing weight shrinks the fat stored in and around the liver and other organs, so cells respond to insulin better again. The catch is keeping it up for years, which depends on time, money and access to healthy food.",
+    "conversationalApproach": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment simply more insulin? Early on, many people with type 2 make plenty of insulin, sometimes more than usual. Earlier, you saw how type 2 develops. So management has two jobs. Start with lifestyle, because it acts on the cause. Most people also take a tablet called metformin. How do you know the plan's working? One glucose reading only shows that moment. If HbA1c stays above target, the plan steps up: another medicine, and if beta cells keep falling behind, insulin. How strong is the evidence? Take DiRECT, a trial in Scotland and England. Now judge it. The syllabus also asks about future research. Two exam questions. HbA1c shows average glucose over two to three months, so a rise from 7. Second. It was randomised, with a placebo, so the bigger fall is most likely the drug's effect, and 1. So, for any management question.",
+    "openingDecision": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment simply more insulin? Early on, many people with type 2 make plenty of insulin, sometimes more than usual. Adding more of a signal the cells are already ignoring isn't the first move. So how can type 2 diabetes be managed?",
+    "understandingCheck": "Two exam questions. First. A person with type 2 diabetes has used metformin and an activity plan for two years. Their HbA1c has risen from 7.0 to 8.4 per cent, and their doctor suggests adding insulin. Explain what the HbA1c result shows, and assess whether insulin alone would fix the underlying problem. Pause here to answer. Second. In a trial, 600 adults with type 2 diabetes were randomly given a new weekly injection or a placebo for 26 weeks. HbA1c fell by 1.4 points with the drug and 0.3 with the placebo. One in eight stopped the drug because of nausea, and it isn't subsidised yet. Evaluate this evidence for using the drug to manage type 2 diabetes. Pause here to answer.",
+    "curriculumScope": "B8-IQ3-02: \"investigate the treatment/management, and possible future directions for further research, of a non-infectious disease using an example from one of the non-infectious diseases categories listed above\" (treatment and management: scenes 3 to 7; evidence: 8 and 9; future directions: 10; attempts 11a and 11c). Inquiry question: \"Why are epidemiological studies used?\" (not answered here; b11 answers it)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One management board. A coded mechanism strip owns the bottom fifth of the frame from scene 3 to scene 7: four slots in mechanism order, \"glucose released by liver\", \"insulin signal\", \"glucose into muscle and fat cells\", \"damage to vessels\" (b07's PathwayStrip, four-slot mode). Each action docks a small chip into the slot it acts on (lifestyle into slots 2 and 3, metformin into 1 and 2, insulin into 2 only, complication care into 4), and the monitoring meter sits beside the strip, never in a slot, which carries the point that monitoring is not treatment. Above the strip, one painted plate or matched pair at a time with callouts. From scene 8, the strip is replaced by an evidence frame: four slots, \"mechanism\", \"evidence (design, size, length, outcome)\", \"durability\", \"access and cost\" (the same component), which refills for DiRECT (9), GLP-1 drugs (10) and attempt 2 (11d). No people, hands or faces: lifestyle is shown by organs, transporter plates and plain objects (walking shoes, a vegetable bowl), trials as coded group bars and dot fields. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "no people. the board clears. the columns clear. new m8-walking-shoes-v1. the lifestyle plates shrink and dim. the board clears above the strip. on \"steps up\" a coded three-step staircase writes at the upper left: \"lifestyle + metformin\", \"add another medicine\" (grey tag \"for example SGLT2 inhibitors or GLP-1 drugs\"), \"insulin\"; gloss \"escalation: the plan steps up\". the mechanism strip slides down and away; b07's PathwayStrip writes at the bottom as the evidence frame, four slots: \"mechanism\", \"evidence: design, size, length, outcome\", \"durability\", \"access and cost\". the bars shrink to the upper left. the board clears; the evidence frame stays, emptied. the board clears. the card stays; a small HbA1cMeter sits beside it. the board clears. the card stays; the evidence frame returns small beside it, empty. the mechanism strip and the evidence frame stack full width, each lighting slot by slot on its cue, with small thumbnails (the jammed KeyLock in \"insulin signal\"; the DiRECT bars in \"evidence\"). > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. m8-insulin-pen-v1.png enters at the centre; on \"why isn't the treatment simply more insulin?\" a hand-drawn \"?\" writes beside it. On \"make plenty of insulin\" m8-pancreatic-islet-v1.png enters at the left and many teal SignalPulse dots stream out of it (grey tag \"b08: beta cells covering\"). On \"a signal the cells are already ignoring\" m8-muscle-cell-transporters-inside-v1.png enters at the right; teal dots dock on its surface but the transporters stay inside (label \"signal arrives, little response\"); the pen dims (tag \"more of the same signal?\"). On the question the heading writes: \"How can type 2 diabetes be managed?\" At most three bright text items. Hold one second.",
+      "teachingReason": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment simply more insulin? Early on, many people with type 2 make plenty of insulin, sometimes more than usual.",
+      "narrationCue": "why isn't the treatment simply more insulin? / make plenty of insulin / a signal the cells are already ignoring",
+      "motionPurpose": "no people. m8-insulin-pen-v1.png enters at the centre; on \"why isn't the treatment simply more insulin?\" a hand-drawn \"?\" writes beside it. On \"make plenty of insulin\" m8-pancreatic-islet-v1.png enters at the left and many teal SignalPulse dots stream out of it (grey tag \"b08: beta cells covering\"). On \"a signal the cells are already ignoring\" m8-muscle-cell-transporters-inside-v1.png enters at the right; teal dots dock on its surface but the transporters stay inside (label \"signal arrives, little response\"); the pen dims (tag \"more of the same signal?\"). On the question the heading writes: \"How can type 2 diabetes be managed?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. m8-insulin-pen-v1.png enters at the centre; on \"why isn't the treatment simply more insulin?\" a hand-drawn \"?\" writes beside it. On \"make plenty of insulin\" m8-pancreatic-islet-v1.png enters at the left and many teal SignalPulse dots stream out of it (grey tag \"b08: beta cells covering\"). On \"a signal the cells are already ignoring\" m8-muscle-cell-transporters-inside-v1.png enters at the right; teal dots dock on its surface but the transporters stay inside (label \"signal arrives, little response\"); the pen dims (tag \"more of the same signal?\"). On the question the heading writes: \"How can type 2 diabetes be managed?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "m8-insulin-pen-v1.png",
+        "m8-pancreatic-islet-v1.png",
+        "SignalPulse",
+        "m8-muscle-cell-transporters-inside-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (why not just more insulin?): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "type-one-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. b08's matched pair replays small at the centre (grey tag \"b08\", label \"muscle and fat cells\"): on \"insulin still binds\" a teal dot docks; on \"fewer glucose transporters reach\" the plate cross-fades only partly to m8-muscle-cell-transporters-membrane-v1.png (b08's 30 per cent mix) and most GlucoseDots drift back (label \"insulin resistance\"). On \"The liver also releases\" m8-liver-v1.png enters small at the right, separate from the cell pair, with a stream of GlucoseDots leaving it into a coded vessel (label \"liver: releases too much glucose\"); no transporters are drawn on the liver. On \"fall behind\" b08's YearsStrip appears as a thumbnail at the upper right, insulin bar falling, glucose bar rising. On \"Type 1 is different\" the board splits into two columns: left \"type 1\" with m8-pancreatic-islet-v1.png whose beta cells fade to grey (gloss \"immune cells destroy beta cells\"), right \"type 2\" with the transporter plate. On \"a key\" the coded KeyLock writes under each column: left, an empty keyhole with no key (label \"no key: little or no insulin\"); right, a key in the lock with a small jam mark (label \"key fits, lock jammed\"). A grey tag under the right column: \"the jam is inside the cell, after insulin binds\". A grey chip \"type 2 means no insulin is made\" writes and takes a scribble cross. At most three bright items. Hold one second.",
+      "teachingReason": "Earlier, you saw how type 2 develops.",
+      "narrationCue": "insulin still binds / fewer glucose transporters reach / The liver also releases / fall behind / Type 1 is different / a key",
+      "motionPurpose": "the board clears. b08's matched pair replays small at the centre (grey tag \"b08\", label \"muscle and fat cells\"): on \"insulin still binds\" a teal dot docks; on \"fewer glucose transporters reach\" the plate cross-fades only partly to m8-muscle-cell-transporters-membrane-v1.png (b08's 30 per cent mix) and most GlucoseDots drift back (label \"insulin resistance\"). On \"The liver also releases\" m8-liver-v1.png enters small at the right, separate from the cell pair, with a stream of GlucoseDots leaving it into a coded vessel (label \"liver: releases too much glucose\"); no transporters are drawn on the liver. On \"fall behind\" b08's YearsStrip appears as a thumbnail at the upper right, insulin bar falling, glucose bar rising. On \"Type 1 is different\" the board splits into two columns: left \"type 1\" with m8-pancreatic-islet-v1.png whose beta cells fade to grey (gloss \"immune cells destroy beta cells\"), right \"type 2\" with the transporter plate. On \"a key\" the coded KeyLock writes under each column: left, an empty keyhole with no key (label \"no key: little or no insulin\"); right, a key in the lock with a small jam mark (label \"key fits, lock jammed\"). A grey tag under the right column: \"the jam is inside the cell, after insulin binds\". A grey chip \"type 2 means no insulin is made\" writes and takes a scribble cross. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. b08's matched pair replays small at the centre (grey tag \"b08\", label \"muscle and fat cells\"): on \"insulin still binds\" a teal dot docks; on \"fewer glucose transporters reach\" the plate cross-fades only partly to m8-muscle-cell-transporters-membrane-v1.png (b08's 30 per cent mix) and most GlucoseDots drift back (label \"insulin resistance\"). On \"The liver also releases\" m8-liver-v1.png enters small at the right, separate from the cell pair, with a stream of GlucoseDots leaving it into a coded vessel (label \"liver: releases too much glucose\"); no transporters are drawn on the liver. On \"fall behind\" b08's YearsStrip appears as a thumbnail at the upper right, insulin bar falling, glucose bar rising. On \"Type 1 is different\" the board splits into two columns: left \"type 1\" with m8-pancreatic-islet-v1.png whose beta cells fade to grey (gloss \"immune cells destroy beta cells\"), right \"type 2\" with the transporter plate. On \"a key\" the coded KeyLock writes under each column: left, an empty keyhole with no key (label \"no key: little or no insulin\"); right, a key in the lock with a small jam mark (label \"key fits, lock jammed\"). A grey tag under the right column: \"the jam is inside the cell, after insulin binds\". A grey chip \"type 2 means no insulin is made\" writes and takes a scribble cross. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-muscle-cell-transporters-membrane-v1.png",
+        "GlucoseDots",
+        "m8-liver-v1.png",
+        "YearsStrip",
+        "m8-pancreatic-islet-v1.png",
+        "KeyLock",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "recall, and type 1 against type 2: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "two-jobs",
+      "visualDecision": "new",
+      "visualReference": "the columns clear. Two numbered chips write at the top: \"1. glucose towards its usual range\" and, on \"lower the risk of damage\", \"2. lower complication risk\" with b08's three small plates in a row (m8-eye-cutaway-v1.png, m8-kidney-nephron-v1.png, m8-heart-v1.png; grey tag \"b08: vessel damage\"; \"nerves\" as a grey tag). b07's PathwayStrip draws at the bottom as the mechanism strip, one slot per cue: \"glucose released by liver\", \"insulin signal\", \"glucose into cells\", \"damage to vessels\". On \"Management\" a gloss writes \"management: long-term control, not a cure\"; on \"treatment\" \"treatment: acts on the mechanism\"; on \"monitoring\" the coded HbA1cMeter draws small to the right of the strip, outside the slots, with gloss \"monitoring: is the plan working?\" (earlier glosses dim). On \"links every action back to the mechanism\" the four slots pulse once, left to right. At most three bright items. Hold one second.",
+      "teachingReason": "So management has two jobs.",
+      "narrationCue": "lower the risk of damage / Management / treatment / monitoring / links every action back to the mechanism",
+      "motionPurpose": "the columns clear. Two numbered chips write at the top: \"1. glucose towards its usual range\" and, on \"lower the risk of damage\", \"2. lower complication risk\" with b08's three small plates in a row (m8-eye-cutaway-v1.png, m8-kidney-nephron-v1.png, m8-heart-v1.png; grey tag \"b08: vessel damage\"; \"nerves\" as a grey tag). b07's PathwayStrip draws at the bottom as the mechanism strip, one slot per cue: \"glucose released by liver\", \"insulin signal\", \"glucose into cells\", \"damage to vessels\". On \"Management\" a gloss writes \"management: long-term control, not a cure\"; on \"treatment\" \"treatment: acts on the mechanism\"; on \"monitoring\" the coded HbA1cMeter draws small to the right of the strip, outside the slots, with gloss \"monitoring: is the plan working?\" (earlier glosses dim). On \"links every action back to the mechanism\" the four slots pulse once, left to right. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the columns clear. Two numbered chips write at the top: \"1. glucose towards its usual range\" and, on \"lower the risk of damage\", \"2. lower complication risk\" with b08's three small plates in a row (m8-eye-cutaway-v1.png, m8-kidney-nephron-v1.png, m8-heart-v1.png; grey tag \"b08: vessel damage\"; \"nerves\" as a grey tag). b07's PathwayStrip draws at the bottom as the mechanism strip, one slot per cue: \"glucose released by liver\", \"insulin signal\", \"glucose into cells\", \"damage to vessels\". On \"Management\" a gloss writes \"management: long-term control, not a cure\"; on \"treatment\" \"treatment: acts on the mechanism\"; on \"monitoring\" the coded HbA1cMeter draws small to the right of the strip, outside the slots, with gloss \"monitoring: is the plan working?\" (earlier glosses dim). On \"links every action back to the mechanism\" the four slots pulse once, left to right. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-eye-cutaway-v1.png",
+        "m8-kidney-nephron-v1.png",
+        "m8-heart-v1.png",
+        "PathwayStrip",
+        "HbA1cMeter",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "two jobs, and three words: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "lifestyle",
+      "visualDecision": "new",
+      "visualReference": "new m8-walking-shoes-v1.png and m8-vegetable-bowl-v1.png enter small at the upper left (chip \"lifestyle\"). On \"muscles contract\" m8-skeletal-muscle-v1.png enters at the centre and pulses (a coded contraction squeeze); on \"move glucose transporters into the membrane without needing insulin\" the transporter pair cross-fades fully from inside to membrane with no teal insulin dots present (label \"contraction moves transporters, no insulin needed\"; grey tag \"GLUT4\"); GlucoseDots pass in. The lifestyle chip docks into the strip's \"glucose into cells\" slot. On \"Losing weight\" m8-liver-v1.png enters at the right with b08's pale yellow fat tint, which shrinks back (label \"less fat in and around the liver\"); on \"respond to insulin better\" the lifestyle chip docks into the \"insulin signal\" slot too. On \"keeping it up\" a coded YearsStrip-style bar runs from \"month 1\" to \"year 5\" and fades towards its end (label \"hard to sustain\"); three grey chips write under it: \"time\", \"money\", \"access to healthy food\" (grey tag \"and safe places to be active\"). At most three bright items. Hold one second.",
+      "teachingReason": "Start with lifestyle, because it acts on the cause.",
+      "narrationCue": "muscles contract / move glucose transporters into the membrane without needing insulin / Losing weight / respond to insulin better / keeping it up",
+      "motionPurpose": "new m8-walking-shoes-v1.png and m8-vegetable-bowl-v1.png enter small at the upper left (chip \"lifestyle\"). On \"muscles contract\" m8-skeletal-muscle-v1.png enters at the centre and pulses (a coded contraction squeeze); on \"move glucose transporters into the membrane without needing insulin\" the transporter pair cross-fades fully from inside to membrane with no teal insulin dots present (label \"contraction moves transporters, no insulin needed\"; grey tag \"GLUT4\"); GlucoseDots pass in. The lifestyle chip docks into the strip's \"glucose into cells\" slot. On \"Losing weight\" m8-liver-v1.png enters at the right with b08's pale yellow fat tint, which shrinks back (label \"less fat in and around the liver\"); on \"respond to insulin better\" the lifestyle chip docks into the \"insulin signal\" slot too. On \"keeping it up\" a coded YearsStrip-style bar runs from \"month 1\" to \"year 5\" and fades towards its end (label \"hard to sustain\"); three grey chips write under it: \"time\", \"money\", \"access to healthy food\" (grey tag \"and safe places to be active\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "new m8-walking-shoes-v1.png and m8-vegetable-bowl-v1.png enter small at the upper left (chip \"lifestyle\"). On \"muscles contract\" m8-skeletal-muscle-v1.png enters at the centre and pulses (a coded contraction squeeze); on \"move glucose transporters into the membrane without needing insulin\" the transporter pair cross-fades fully from inside to membrane with no teal insulin dots present (label \"contraction moves transporters, no insulin needed\"; grey tag \"GLUT4\"); GlucoseDots pass in. The lifestyle chip docks into the strip's \"glucose into cells\" slot. On \"Losing weight\" m8-liver-v1.png enters at the right with b08's pale yellow fat tint, which shrinks back (label \"less fat in and around the liver\"); on \"respond to insulin better\" the lifestyle chip docks into the \"insulin signal\" slot too. On \"keeping it up\" a coded YearsStrip-style bar runs from \"month 1\" to \"year 5\" and fades towards its end (label \"hard to sustain\"); three grey chips write under it: \"time\", \"money\", \"access to healthy food\" (grey tag \"and safe places to be active\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-walking-shoes-v1.png",
+        "m8-vegetable-bowl-v1.png",
+        "m8-skeletal-muscle-v1.png",
+        "GlucoseDots",
+        "m8-liver-v1.png",
+        "YearsStrip",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "lifestyle: acting on the cause: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "metformin",
+      "visualDecision": "adjust",
+      "visualReference": "the lifestyle plates shrink and dim. m7-capsule-blister-blank-v1.png enters at the upper left (label \"metformin: a tablet\"; it is a plain blister of white tablets, no markings). On \"reduces the glucose the liver releases\" m8-liver-v1.png returns at the centre with a stream of GlucoseDots leaving it into a coded vessel; the stream thins (label \"less glucose released\"); the metformin chip docks into the \"glucose released by liver\" slot. On \"helps muscle respond\" the transporter plate's cross-fade increases from 30 to 60 per cent with teal insulin dots present; the chip also docks into \"insulin signal\". On \"without pushing tired beta cells\" a small m8-pancreatic-islet-v1.png sits at the right with a calm, slower pulse (tag \"no extra demand on beta cells\"). On \"cheap, well tested, rarely makes glucose drop too low, and doesn't add weight\" three green ticks write in a column (at most three bright; \"rarely causes low glucose\" carries the grey gloss \"hypoglycaemia\"). On \"doesn't remove the resistance\" and \"stomach upsets\" two grey chips with small minus marks. Hold one second.",
+      "teachingReason": "Most people also take a tablet called metformin.",
+      "narrationCue": "reduces the glucose the liver releases / helps muscle respond / without pushing tired beta cells / cheap, well tested, rarely makes glucose drop too low, and doesn't add weight / doesn't remove the resistance",
+      "motionPurpose": "the lifestyle plates shrink and dim. m7-capsule-blister-blank-v1.png enters at the upper left (label \"metformin: a tablet\"; it is a plain blister of white tablets, no markings). On \"reduces the glucose the liver releases\" m8-liver-v1.png returns at the centre with a stream of GlucoseDots leaving it into a coded vessel; the stream thins (label \"less glucose released\"); the metformin chip docks into the \"glucose released by liver\" slot. On \"helps muscle respond\" the transporter plate's cross-fade increases from 30 to 60 per cent with teal insulin dots present; the chip also docks into \"insulin signal\". On \"without pushing tired beta cells\" a small m8-pancreatic-islet-v1.png sits at the right with a calm, slower pulse (tag \"no extra demand on beta cells\"). On \"cheap, well tested, rarely makes glucose drop too low, and doesn't add weight\" three green ticks write in a column (at most three bright; \"rarely causes low glucose\" carries the grey gloss \"hypoglycaemia\"). On \"doesn't remove the resistance\" and \"stomach upsets\" two grey chips with small minus marks. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the lifestyle plates shrink and dim. m7-capsule-blister-blank-v1.png enters at the upper left (label \"metformin: a tablet\"; it is a plain blister of white tablets, no markings). On \"reduces the glucose the liver releases\" m8-liver-v1.png returns at the centre with a stream of GlucoseDots leaving it into a coded vessel; the stream thins (label \"less glucose released\"); the metformin chip docks into the \"glucose released by liver\" slot. On \"helps muscle respond\" the transporter plate's cross-fade increases from 30 to 60 per cent with teal insulin dots present; the chip also docks into \"insulin signal\". On \"without pushing tired beta cells\" a small m8-pancreatic-islet-v1.png sits at the right with a calm, slower pulse (tag \"no extra demand on beta cells\"). On \"cheap, well tested, rarely makes glucose drop too low, and doesn't add weight\" three green ticks write in a column (at most three bright; \"rarely causes low glucose\" carries the grey gloss \"hypoglycaemia\"). On \"doesn't remove the resistance\" and \"stomach upsets\" two grey chips with small minus marks. Hold one second.",
+      "motionTools": [
+        "m7-capsule-blister-blank-v1.png",
+        "m8-liver-v1.png",
+        "GlucoseDots",
+        "m8-pancreatic-islet-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "metformin: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "hba1c",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears above the strip. On \"One glucose reading\" m8-cgm-reader-blank-v1.png enters small at the left with a coded single number \"5.8 mmol/L\" written on its screen (tag \"one moment\"). On \"sticks to haemoglobin\" m5x-red-blood-cells-v1.png enters at the centre; small GlucoseDots drift onto the cells and stay attached, more each second (label \"glucose attaches, and stays\"). On \"last about four months\" a coded time bar under the cells runs \"0 to about 120 days\". On \"HbA1c\" the HbA1cMeter beside the strip grows to the centre: a gauge in per cent with a green \"typical target\" band (grey tag \"targets are set for each person\"); gloss \"HbA1c: share of haemoglobin with glucose attached\". On \"One good morning can't fake it\" the reader's \"5.8\" brightens while the meter pointer stays high at \"8.1%\" (label \"months of high glucose\"). On \"Monitoring doesn't lower glucose\" a chip \"HbA1c treats diabetes\" writes and takes a scribble cross; the meter returns beside the strip, still outside the slots. On \"keeping, changing or stepping up\" three small grey chips: \"keep\", \"change\", \"step up\". At most three bright items. Hold one second.",
+      "teachingReason": "How do you know the plan's working? One glucose reading only shows that moment.",
+      "narrationCue": "One glucose reading / sticks to haemoglobin / last about four months / HbA1c / One good morning can't fake it / Monitoring doesn't lower glucose / keeping, changing or stepping up",
+      "motionPurpose": "the board clears above the strip. On \"One glucose reading\" m8-cgm-reader-blank-v1.png enters small at the left with a coded single number \"5.8 mmol/L\" written on its screen (tag \"one moment\"). On \"sticks to haemoglobin\" m5x-red-blood-cells-v1.png enters at the centre; small GlucoseDots drift onto the cells and stay attached, more each second (label \"glucose attaches, and stays\"). On \"last about four months\" a coded time bar under the cells runs \"0 to about 120 days\". On \"HbA1c\" the HbA1cMeter beside the strip grows to the centre: a gauge in per cent with a green \"typical target\" band (grey tag \"targets are set for each person\"); gloss \"HbA1c: share of haemoglobin with glucose attached\". On \"One good morning can't fake it\" the reader's \"5.8\" brightens while the meter pointer stays high at \"8.1%\" (label \"months of high glucose\"). On \"Monitoring doesn't lower glucose\" a chip \"HbA1c treats diabetes\" writes and takes a scribble cross; the meter returns beside the strip, still outside the slots. On \"keeping, changing or stepping up\" three small grey chips: \"keep\", \"change\", \"step up\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the strip. On \"One glucose reading\" m8-cgm-reader-blank-v1.png enters small at the left with a coded single number \"5.8 mmol/L\" written on its screen (tag \"one moment\"). On \"sticks to haemoglobin\" m5x-red-blood-cells-v1.png enters at the centre; small GlucoseDots drift onto the cells and stay attached, more each second (label \"glucose attaches, and stays\"). On \"last about four months\" a coded time bar under the cells runs \"0 to about 120 days\". On \"HbA1c\" the HbA1cMeter beside the strip grows to the centre: a gauge in per cent with a green \"typical target\" band (grey tag \"targets are set for each person\"); gloss \"HbA1c: share of haemoglobin with glucose attached\". On \"One good morning can't fake it\" the reader's \"5.8\" brightens while the meter pointer stays high at \"8.1%\" (label \"months of high glucose\"). On \"Monitoring doesn't lower glucose\" a chip \"HbA1c treats diabetes\" writes and takes a scribble cross; the meter returns beside the strip, still outside the slots. On \"keeping, changing or stepping up\" three small grey chips: \"keep\", \"change\", \"step up\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-cgm-reader-blank-v1.png",
+        "m5x-red-blood-cells-v1.png",
+        "GlucoseDots",
+        "HbA1cMeter",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "HbA1c: is the plan working?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "step-up",
+      "visualDecision": "adjust",
+      "visualReference": "on \"steps up\" a coded three-step staircase writes at the upper left: \"lifestyle + metformin\", \"add another medicine\" (grey tag \"for example SGLT2 inhibitors or GLP-1 drugs\"), \"insulin\"; gloss \"escalation: the plan steps up\". On \"insulin\" m8-insulin-pen-v1.png enters beside the top step; its chip docks into the \"insulin signal\" slot only. On \"replaces a signal\" teal dots flood the transporter plate (thumbnail) and more transporters move; on \"doesn't unjam the lock\" the right-hand KeyLock from scene 2 returns small, the jam mark still there (label \"manages the consequence\"). On \"can add weight\" b08's liver fat tint grows slightly on a liver thumbnail, with a small curved arrow back to the lock (label \"can worsen resistance\"). On \"Care also targets the damage\" b08's three small organ plates return and a \"complication care\" chip docks into the \"damage to vessels\" slot, with three grey chips under it: \"blood pressure\", \"cholesterol\", \"kidney, eye and foot checks\". On \"prevent much of its harm\" the fourth slot brightens. At most three bright items. Hold one second.",
+      "teachingReason": "If HbA1c stays above target, the plan steps up: another medicine, and if beta cells keep falling behind, insulin.",
+      "narrationCue": "steps up / insulin / replaces a signal / doesn't unjam the lock / can add weight / Care also targets the damage / prevent much of its harm",
+      "motionPurpose": "on \"steps up\" a coded three-step staircase writes at the upper left: \"lifestyle + metformin\", \"add another medicine\" (grey tag \"for example SGLT2 inhibitors or GLP-1 drugs\"), \"insulin\"; gloss \"escalation: the plan steps up\". On \"insulin\" m8-insulin-pen-v1.png enters beside the top step; its chip docks into the \"insulin signal\" slot only. On \"replaces a signal\" teal dots flood the transporter plate (thumbnail) and more transporters move; on \"doesn't unjam the lock\" the right-hand KeyLock from scene 2 returns small, the jam mark still there (label \"manages the consequence\"). On \"can add weight\" b08's liver fat tint grows slightly on a liver thumbnail, with a small curved arrow back to the lock (label \"can worsen resistance\"). On \"Care also targets the damage\" b08's three small organ plates return and a \"complication care\" chip docks into the \"damage to vessels\" slot, with three grey chips under it: \"blood pressure\", \"cholesterol\", \"kidney, eye and foot checks\". On \"prevent much of its harm\" the fourth slot brightens. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"steps up\" a coded three-step staircase writes at the upper left: \"lifestyle + metformin\", \"add another medicine\" (grey tag \"for example SGLT2 inhibitors or GLP-1 drugs\"), \"insulin\"; gloss \"escalation: the plan steps up\". On \"insulin\" m8-insulin-pen-v1.png enters beside the top step; its chip docks into the \"insulin signal\" slot only. On \"replaces a signal\" teal dots flood the transporter plate (thumbnail) and more transporters move; on \"doesn't unjam the lock\" the right-hand KeyLock from scene 2 returns small, the jam mark still there (label \"manages the consequence\"). On \"can add weight\" b08's liver fat tint grows slightly on a liver thumbnail, with a small curved arrow back to the lock (label \"can worsen resistance\"). On \"Care also targets the damage\" b08's three small organ plates return and a \"complication care\" chip docks into the \"damage to vessels\" slot, with three grey chips under it: \"blood pressure\", \"cholesterol\", \"kidney, eye and foot checks\". On \"prevent much of its harm\" the fourth slot brightens. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-insulin-pen-v1.png",
+        "KeyLock",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "stepping up, and the insulin twist: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "direct-trial",
+      "visualDecision": "new",
+      "visualReference": "the mechanism strip slides down and away; b07's PathwayStrip writes at the bottom as the evidence frame, four slots: \"mechanism\", \"evidence: design, size, length, outcome\", \"durability\", \"access and cost\". On \"DiRECT\" a grey tag \"DiRECT trial, UK, 2014 to 2017 (Lean et al. 2018)\". On \"GP practices were randomly assigned\" a coded dot field of about 300 grey dots appears in about 50 small practice clusters (each a rounded outline); whole clusters, not single dots, move by chance into two groups, \"diet and support\" and \"usual care\" (grey tag \"b11: chance decides the groups; whole practices assigned\"); m8-vegetable-bowl-v1.png sits small over the diet group. On \"low-energy diet for several months, then support\" a short coded timeline writes over the group: \"about 3 months: low-energy diet\", \"then: food back in, support\". On \"remission\" the gloss writes \"remission: glucose below the diabetes threshold without glucose-lowering medicines\". On \"46 per cent ... against 4 per cent\" the coded GroupBars draw: \"diet and support 46%\", \"usual care 4%\" (label \"in remission at 12 months\"). The evidence slot fills \"randomised by practice; about 300 adults; 1 year; remission\". At most three bright items. Hold one second.",
+      "teachingReason": "How strong is the evidence? Take DiRECT, a trial in Scotland and England.",
+      "narrationCue": "DiRECT / GP practices were randomly assigned / low-energy diet for several months, then support / remission",
+      "motionPurpose": "the mechanism strip slides down and away; b07's PathwayStrip writes at the bottom as the evidence frame, four slots: \"mechanism\", \"evidence: design, size, length, outcome\", \"durability\", \"access and cost\". On \"DiRECT\" a grey tag \"DiRECT trial, UK, 2014 to 2017 (Lean et al. 2018)\". On \"GP practices were randomly assigned\" a coded dot field of about 300 grey dots appears in about 50 small practice clusters (each a rounded outline); whole clusters, not single dots, move by chance into two groups, \"diet and support\" and \"usual care\" (grey tag \"b11: chance decides the groups; whole practices assigned\"); m8-vegetable-bowl-v1.png sits small over the diet group. On \"low-energy diet for several months, then support\" a short coded timeline writes over the group: \"about 3 months: low-energy diet\", \"then: food back in, support\". On \"remission\" the gloss writes \"remission: glucose below the diabetes threshold without glucose-lowering medicines\". On \"46 per cent ... against 4 per cent\" the coded GroupBars draw: \"diet and support 46%\", \"usual care 4%\" (label \"in remission at 12 months\"). The evidence slot fills \"randomised by practice; about 300 adults; 1 year; remission\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the mechanism strip slides down and away; b07's PathwayStrip writes at the bottom as the evidence frame, four slots: \"mechanism\", \"evidence: design, size, length, outcome\", \"durability\", \"access and cost\". On \"DiRECT\" a grey tag \"DiRECT trial, UK, 2014 to 2017 (Lean et al. 2018)\". On \"GP practices were randomly assigned\" a coded dot field of about 300 grey dots appears in about 50 small practice clusters (each a rounded outline); whole clusters, not single dots, move by chance into two groups, \"diet and support\" and \"usual care\" (grey tag \"b11: chance decides the groups; whole practices assigned\"); m8-vegetable-bowl-v1.png sits small over the diet group. On \"low-energy diet for several months, then support\" a short coded timeline writes over the group: \"about 3 months: low-energy diet\", \"then: food back in, support\". On \"remission\" the gloss writes \"remission: glucose below the diabetes threshold without glucose-lowering medicines\". On \"46 per cent ... against 4 per cent\" the coded GroupBars draw: \"diet and support 46%\", \"usual care 4%\" (label \"in remission at 12 months\"). The evidence slot fills \"randomised by practice; about 300 adults; 1 year; remission\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "PathwayStrip",
+        "m8-vegetable-bowl-v1.png",
+        "GroupBars",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a named trial: DiRECT: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "judge-evidence",
+      "visualDecision": "adjust",
+      "visualReference": "the bars shrink to the upper left. The mechanism slot fills \"acts on the cause: less fat, better response\". On \"remission faded\" a second GroupBars bar writes beside the 12-month bar: \"diet group, 2 years: 36%\" (grey tag \"Lean et al. 2018, 2019\"), with a small coded weight arrow rising (label \"weight came back\"). On \"Among 85 people\" a separate card writes at the right, not joined to the bars: \"5-year extension: 11 of 85, 13%\" (grey tag \"a different, smaller group; Lean et al. 2024\"). The durability slot fills \"fades if weight returns\". A grey chip \"remission means cured\" writes and takes a scribble cross (small text \"the tendency remains\"). On \"recently diagnosed and not on insulin\" two grey tags write by the dot field: \"diagnosed within 6 years\", \"not on insulin\" (label \"who was studied\"). On \"Everyday results are often smaller\" the access slot fills \"needs support, time, food access\" (grey tag \"trial support is hard to match\"); no extra bars. At most three bright items. Hold one second.",
+      "teachingReason": "Now judge it.",
+      "narrationCue": "remission faded / Among 85 people / recently diagnosed and not on insulin / Everyday results are often smaller",
+      "motionPurpose": "the bars shrink to the upper left. The mechanism slot fills \"acts on the cause: less fat, better response\". On \"remission faded\" a second GroupBars bar writes beside the 12-month bar: \"diet group, 2 years: 36%\" (grey tag \"Lean et al. 2018, 2019\"), with a small coded weight arrow rising (label \"weight came back\"). On \"Among 85 people\" a separate card writes at the right, not joined to the bars: \"5-year extension: 11 of 85, 13%\" (grey tag \"a different, smaller group; Lean et al. 2024\"). The durability slot fills \"fades if weight returns\". A grey chip \"remission means cured\" writes and takes a scribble cross (small text \"the tendency remains\"). On \"recently diagnosed and not on insulin\" two grey tags write by the dot field: \"diagnosed within 6 years\", \"not on insulin\" (label \"who was studied\"). On \"Everyday results are often smaller\" the access slot fills \"needs support, time, food access\" (grey tag \"trial support is hard to match\"); no extra bars. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the bars shrink to the upper left. The mechanism slot fills \"acts on the cause: less fat, better response\". On \"remission faded\" a second GroupBars bar writes beside the 12-month bar: \"diet group, 2 years: 36%\" (grey tag \"Lean et al. 2018, 2019\"), with a small coded weight arrow rising (label \"weight came back\"). On \"Among 85 people\" a separate card writes at the right, not joined to the bars: \"5-year extension: 11 of 85, 13%\" (grey tag \"a different, smaller group; Lean et al. 2024\"). The durability slot fills \"fades if weight returns\". A grey chip \"remission means cured\" writes and takes a scribble cross (small text \"the tendency remains\"). On \"recently diagnosed and not on insulin\" two grey tags write by the dot field: \"diagnosed within 6 years\", \"not on insulin\" (label \"who was studied\"). On \"Everyday results are often smaller\" the access slot fills \"needs support, time, food access\" (grey tag \"trial support is hard to match\"); no extra bars. At most three bright items. Hold one second.",
+      "motionTools": [
+        "GroupBars",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "judging the evidence: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "future-direction",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the evidence frame stays, emptied. Heading chip \"future direction\". On \"gut hormone\" new m8-stomach-gut-v1.png enters small at the left with teal coded hormone dots leaving the gut wall (gloss \"GLP-1: a gut hormone released after eating\"). On \"release insulin only when glucose is high\" m8-pancreatic-islet-v1.png pulses only when a coded glucose gauge beside it rises above its band (label \"insulin only when glucose is high\"). On \"slow the stomach emptying\" coded food dots leave the stomach more slowly; on \"reduce appetite\" a small coded appetite dial turns down. The mechanism slot fills \"more insulin when needed; less eaten; weight loss\". On \"Large trials\" three ticks write: \"lower HbA1c\", \"weight loss\", \"fewer heart attacks and strokes (some drugs, high-risk people)\" (grey tags \"LEADER 2016, SUSTAIN-6 2016\"); the evidence slot fills \"large randomised trials; years; heart outcomes\". On \"many are injected, often costly, can cause nausea\" m8-insulin-pen-v1.png is not used (it would suggest insulin); a plain coded weekly calendar with one marked day writes (label \"many: a weekly injection\"; grey tag \"one is a daily tablet\"), and two grey chips \"cost and supply\", \"nausea\". On \"weight tends to return\" the durability slot fills \"weight returns if stopped\". Three grey chips write small at the right edge, not spoken: \"other directions: beta cell protection, better glucose monitors, earlier screening\". At most three bright items. Hold one second.",
+      "teachingReason": "The syllabus also asks about future research.",
+      "narrationCue": "gut hormone / release insulin only when glucose is high / slow the stomach emptying / reduce appetite / Large trials / many are injected, often costly, can cause nausea / weight tends to return",
+      "motionPurpose": "the board clears; the evidence frame stays, emptied. Heading chip \"future direction\". On \"gut hormone\" new m8-stomach-gut-v1.png enters small at the left with teal coded hormone dots leaving the gut wall (gloss \"GLP-1: a gut hormone released after eating\"). On \"release insulin only when glucose is high\" m8-pancreatic-islet-v1.png pulses only when a coded glucose gauge beside it rises above its band (label \"insulin only when glucose is high\"). On \"slow the stomach emptying\" coded food dots leave the stomach more slowly; on \"reduce appetite\" a small coded appetite dial turns down. The mechanism slot fills \"more insulin when needed; less eaten; weight loss\". On \"Large trials\" three ticks write: \"lower HbA1c\", \"weight loss\", \"fewer heart attacks and strokes (some drugs, high-risk people)\" (grey tags \"LEADER 2016, SUSTAIN-6 2016\"); the evidence slot fills \"large randomised trials; years; heart outcomes\". On \"many are injected, often costly, can cause nausea\" m8-insulin-pen-v1.png is not used (it would suggest insulin); a plain coded weekly calendar with one marked day writes (label \"many: a weekly injection\"; grey tag \"one is a daily tablet\"), and two grey chips \"cost and supply\", \"nausea\". On \"weight tends to return\" the durability slot fills \"weight returns if stopped\". Three grey chips write small at the right edge, not spoken: \"other directions: beta cell protection, better glucose monitors, earlier screening\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the evidence frame stays, emptied. Heading chip \"future direction\". On \"gut hormone\" new m8-stomach-gut-v1.png enters small at the left with teal coded hormone dots leaving the gut wall (gloss \"GLP-1: a gut hormone released after eating\"). On \"release insulin only when glucose is high\" m8-pancreatic-islet-v1.png pulses only when a coded glucose gauge beside it rises above its band (label \"insulin only when glucose is high\"). On \"slow the stomach emptying\" coded food dots leave the stomach more slowly; on \"reduce appetite\" a small coded appetite dial turns down. The mechanism slot fills \"more insulin when needed; less eaten; weight loss\". On \"Large trials\" three ticks write: \"lower HbA1c\", \"weight loss\", \"fewer heart attacks and strokes (some drugs, high-risk people)\" (grey tags \"LEADER 2016, SUSTAIN-6 2016\"); the evidence slot fills \"large randomised trials; years; heart outcomes\". On \"many are injected, often costly, can cause nausea\" m8-insulin-pen-v1.png is not used (it would suggest insulin); a plain coded weekly calendar with one marked day writes (label \"many: a weekly injection\"; grey tag \"one is a daily tablet\"), and two grey chips \"cost and supply\", \"nausea\". On \"weight tends to return\" the durability slot fills \"weight returns if stopped\". Three grey chips write small at the right edge, not spoken: \"other directions: beta cell protection, better glucose monitors, earlier screening\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-stomach-gut-v1.png",
+        "m8-pancreatic-islet-v1.png",
+        "m8-insulin-pen-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a future direction: GLP-1 based drugs: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A person with type 2 diabetes has used metformin and a physical activity plan for two years. Over the last 12 months, their HbA1c has risen from 7.0% to 8.4%. Their doctor suggests adding insulin.\" Demand: \"(a) Explain what the HbA1c result shows. (2 marks) (b) Assess whether insulin alone would fix the underlying problem. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A person with type 2 diabetes has used metformin and a physical activity plan for two years. Over the last 12 months, their HbA1c has risen from 7.0% to 8.4%. Their doctor suggests adding insulin.\" Demand: \"(a) Explain what the HbA1c result shows. (2 marks) (b) Assess whether insulin alone would fix the underlying problem. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A person with type 2 diabetes has used metformin and a physical activity plan for two years. Over the last 12 months, their HbA1c has risen from 7.0% to 8.4%. Their doctor suggests adding insulin.\" Demand: \"(a) Explain what the HbA1c result shows. (2 marks) (b) Assess whether insulin alone would fix the underlying problem. (3 marks)\". No plate on the card. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (a rising HbA1c): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays; a small HbA1cMeter sits beside it. On \"average glucose over two to three months\" \"HbA1c\" and \"risen from 7.0% to 8.4%\" underline; the meter pointer moves from 7.0 to 8.4 (answer line \"(a) average glucose over 2 to 3 months has risen: control worse for months\"). On \"stepping up makes sense\" \"Over the last 12 months\" underlines. On \"insulin replaces the signal\" \"adding insulin\" underlines and the right-hand KeyLock appears small, jam still marked; answer line \"(b) insulin replaces the signal; resistance remains; can add weight\". On \"keep the activity and metformin\" \"metformin and a physical activity plan\" underlines (answer line \"combine, don't replace\"). On \"classic mistake\" a chip \"HbA1c treats diabetes\" writes and takes a grey scribble cross, small text \"it's evidence for decisions\". Settle one second.",
+      "teachingReason": "HbA1c shows average glucose over two to three months, so a rise from 7.",
+      "narrationCue": "average glucose over two to three months / stepping up makes sense / insulin replaces the signal / keep the activity and metformin / classic mistake",
+      "motionPurpose": "the card stays; a small HbA1cMeter sits beside it. On \"average glucose over two to three months\" \"HbA1c\" and \"risen from 7.0% to 8.4%\" underline; the meter pointer moves from 7.0 to 8.4 (answer line \"(a) average glucose over 2 to 3 months has risen: control worse for months\"). On \"stepping up makes sense\" \"Over the last 12 months\" underlines. On \"insulin replaces the signal\" \"adding insulin\" underlines and the right-hand KeyLock appears small, jam still marked; answer line \"(b) insulin replaces the signal; resistance remains; can add weight\". On \"keep the activity and metformin\" \"metformin and a physical activity plan\" underlines (answer line \"combine, don't replace\"). On \"classic mistake\" a chip \"HbA1c treats diabetes\" writes and takes a grey scribble cross, small text \"it's evidence for decisions\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; a small HbA1cMeter sits beside it. On \"average glucose over two to three months\" \"HbA1c\" and \"risen from 7.0% to 8.4%\" underline; the meter pointer moves from 7.0 to 8.4 (answer line \"(a) average glucose over 2 to 3 months has risen: control worse for months\"). On \"stepping up makes sense\" \"Over the last 12 months\" underlines. On \"insulin replaces the signal\" \"adding insulin\" underlines and the right-hand KeyLock appears small, jam still marked; answer line \"(b) insulin replaces the signal; resistance remains; can add weight\". On \"keep the activity and metformin\" \"metformin and a physical activity plan\" underlines (answer line \"combine, don't replace\"). On \"classic mistake\" a chip \"HbA1c treats diabetes\" writes and takes a grey scribble cross, small text \"it's evidence for decisions\". Settle one second.",
+      "motionTools": [
+        "HbA1cMeter",
+        "KeyLock",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"In a trial, 600 adults with type 2 diabetes were randomly allocated to a new once-weekly injection or a placebo (a dummy injection) for 26 weeks. Mean HbA1c fell by 1.4 percentage points in the drug group and by 0.3 in the placebo group. 12% of the drug group stopped treatment because of nausea. The drug is not yet subsidised in Australia.\" Demand: \"Evaluate this evidence for using the drug to manage type 2 diabetes. (5 marks)\". A small coded two-bar chart sits on the card (\"drug 1.4\", \"placebo 0.3\", y axis \"fall in HbA1c (points)\"). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"In a trial, 600 adults with type 2 diabetes were randomly allocated to a new once-weekly injection or a placebo (a dummy injection) for 26 weeks. Mean HbA1c fell by 1.4 percentage points in the drug group and by 0.3 in the placebo group. 12% of the drug group stopped treatment because of nausea. The drug is not yet subsidised in Australia.\" Demand: \"Evaluate this evidence for using the drug to manage type 2 diabetes. (5 marks)\". A small coded two-bar chart sits on the card (\"drug 1.4\", \"placebo 0.3\", y axis \"fall in HbA1c (points)\"). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"In a trial, 600 adults with type 2 diabetes were randomly allocated to a new once-weekly injection or a placebo (a dummy injection) for 26 weeks. Mean HbA1c fell by 1.4 percentage points in the drug group and by 0.3 in the placebo group. 12% of the drug group stopped treatment because of nausea. The drug is not yet subsidised in Australia.\" Demand: \"Evaluate this evidence for using the drug to manage type 2 diabetes. (5 marks)\". A small coded two-bar chart sits on the card (\"drug 1.4\", \"placebo 0.3\", y axis \"fall in HbA1c (points)\"). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (judging trial evidence): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays; the evidence frame returns small beside it, empty. On \"randomised, with a placebo\" \"randomly allocated\" and \"placebo\" underline; the evidence slot fills \"randomised, placebo-controlled, 600\". On \"1.1 points\" \"1.4\" and \"0.3\" underline and a coded bracket writes between the bars \"difference 1.1\". On \"26 weeks is short\" \"26 weeks\" underlines; on \"HbA1c is a measure, not the outcome\" a grey tag \"surrogate outcome\" writes and the evidence slot adds \"short; HbA1c only\". On \"Side effects and cost\" \"12% ... stopped\" and \"not yet subsidised\" underline; the durability and access slots fill \"1 in 8 stopped\" and \"cost\". On \"promising, but not yet proven\" a judgement line writes under the frame. On \"classic mistake\" a chip \"trial result = real-world success\" writes and takes a grey scribble cross, small text \"check length, outcome, side effects, access\". Settle one second.",
+      "teachingReason": "It was randomised, with a placebo, so the bigger fall is most likely the drug's effect, and 1.",
+      "narrationCue": "randomised, with a placebo / 1.1 points / 26 weeks is short / HbA1c is a measure, not the outcome / Side effects and cost / promising, but not yet proven / classic mistake",
+      "motionPurpose": "the card stays; the evidence frame returns small beside it, empty. On \"randomised, with a placebo\" \"randomly allocated\" and \"placebo\" underline; the evidence slot fills \"randomised, placebo-controlled, 600\". On \"1.1 points\" \"1.4\" and \"0.3\" underline and a coded bracket writes between the bars \"difference 1.1\". On \"26 weeks is short\" \"26 weeks\" underlines; on \"HbA1c is a measure, not the outcome\" a grey tag \"surrogate outcome\" writes and the evidence slot adds \"short; HbA1c only\". On \"Side effects and cost\" \"12% ... stopped\" and \"not yet subsidised\" underline; the durability and access slots fill \"1 in 8 stopped\" and \"cost\". On \"promising, but not yet proven\" a judgement line writes under the frame. On \"classic mistake\" a chip \"trial result = real-world success\" writes and takes a grey scribble cross, small text \"check length, outcome, side effects, access\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays; the evidence frame returns small beside it, empty. On \"randomised, with a placebo\" \"randomly allocated\" and \"placebo\" underline; the evidence slot fills \"randomised, placebo-controlled, 600\". On \"1.1 points\" \"1.4\" and \"0.3\" underline and a coded bracket writes between the bars \"difference 1.1\". On \"26 weeks is short\" \"26 weeks\" underlines; on \"HbA1c is a measure, not the outcome\" a grey tag \"surrogate outcome\" writes and the evidence slot adds \"short; HbA1c only\". On \"Side effects and cost\" \"12% ... stopped\" and \"not yet subsidised\" underline; the durability and access slots fill \"1 in 8 stopped\" and \"cost\". On \"promising, but not yet proven\" a judgement line writes under the frame. On \"classic mistake\" a chip \"trial result = real-world success\" writes and takes a grey scribble cross, small text \"check length, outcome, side effects, access\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the mechanism strip and the evidence frame stack full width, each lighting slot by slot on its cue, with small thumbnails (the jammed KeyLock in \"insulin signal\"; the DiRECT bars in \"evidence\"). The hand line \"mechanism, action, evidence\" writes under them. A \"Next\" chip slides in at the lower right: \"Next: How can prevention campaigns reduce disease?\" with a small m8-sun-protection-v1.png. Hold half a second before the notes.",
+      "teachingReason": "So, for any management question.",
+      "narrationCue": "So, for any management question",
+      "motionPurpose": "the mechanism strip and the evidence frame stack full width, each lighting slot by slot on its cue, with small thumbnails (the jammed KeyLock in \"insulin signal\"; the DiRECT bars in \"evidence\"). The hand line \"mechanism, action, evidence\" writes under them. A \"Next\" chip slides in at the lower right: \"Next: How can prevention campaigns reduce disease?\" with a small m8-sun-protection-v1.png. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the mechanism strip and the evidence frame stack full width, each lighting slot by slot on its cue, with small thumbnails (the jammed KeyLock in \"insulin signal\"; the DiRECT bars in \"evidence\"). The hand line \"mechanism, action, evidence\" writes under them. A \"Next\" chip slides in at the lower right: \"Next: How can prevention campaigns reduce disease?\" with a small m8-sun-protection-v1.png. Hold half a second before the notes.",
+      "motionTools": [
+        "KeyLock",
+        "m8-sun-protection-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b12-learning-review.md",
+      "sha256": "c7de424060b4ee95f6d188ad699d0dfc48c50e79a076522281e9162a3eab5f6c"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b12-claude-science-check.md",
+      "sha256": "86103c3e45241c2acf7148bf27a2db7d309fc31ba2c13ba51b6145c68408bfb6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

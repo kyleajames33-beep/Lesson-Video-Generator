@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B11-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b11/lesson.json",
+  "lessonSha256": "dc8443b854ed4f4c508cf4ea35dd55295e6d4144755fed3df820ff505b44275a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b11/lesson.production-brief.json",
+    "sha256": "d0ee78a1d1d2b897ce5c4624c2071f5c89a1703c10696a4f893d23fdf9599635"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Between 1922 and 1947, lung cancer deaths in England and Wales rose about fifteen times. Smoking had grown, but so had tarred roads, car exhaust and factory smoke. In 1950, Richard Doll and Austin Bradford Hill published the first of their studies on smoking. So how do we judge an epidemiological study, and what it achieved?",
+      "hash": "3c6d61c62087",
+      "textSha256": "3c6d61c62087fb84653a26ef4425a438356478b7b6a3bd14149943623b0ba26b",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/hook.3c6d61c62087.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/hook.3c6d61c62087.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/hook.3c6d61c62087.generation.json",
+      "plannedRequestSha256": "d022eaaee50446ff4de877704de32bfa4895bda7c5e2d1664a71b96e50aa5dac"
+    },
+    {
+      "id": "two-designs",
+      "parentSceneId": "two-designs",
+      "text": "Earlier, you measured disease with rates. Now we judge the studies behind them. An observational study watches what people already do, such as smoking, and compares their disease rates. In an intervention study, researchers decide who gets an exposure. In a randomised controlled trial, chance decides the groups, which helps balance other differences. But nobody could ethically make people smoke for decades, so the smoking evidence had to be observational.",
+      "hash": "7f692844cd24",
+      "textSha256": "7f692844cd247940f9753f81caabe8565d06eaa6717e677e20bc18b884ecf317",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/two-designs.7f692844cd24.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/two-designs.7f692844cd24.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/two-designs.7f692844cd24.generation.json",
+      "plannedRequestSha256": "919cbc62eae2a5cb44c47a229f6d4128869b1586cabde007d97c03bac55919d7"
+    },
+    {
+      "id": "case-control",
+      "parentSceneId": "case-control",
+      "text": "Their first study was a case-control study: it starts with the disease and looks back. They interviewed about seven hundred lung cancer patients in twenty London hospitals, each matched with a control, a patient without lung cancer, of the same sex and similar age. Then they compared smoking histories. Nearly every man with lung cancer smoked, and heavy smokers were far more common among the patients than among the controls.",
+      "hash": "cd3d45cd52fc",
+      "textSha256": "cd3d45cd52fcbcd1ade511c81b2d43011bb70e1582070385cf00785627b9d4e1",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/case-control.cd3d45cd52fc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/case-control.cd3d45cd52fc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/case-control.cd3d45cd52fc.generation.json",
+      "plannedRequestSha256": "c964dfd41f31f4919ad448e69dac4d4150df42412cc8f681f4042c110ad2b49a"
+    },
+    {
+      "id": "four-steps",
+      "parentSceneId": "four-steps",
+      "text": "To judge any method, use four steps: design, strength, limitation, judgement. The design is case-control. Its strength is speed, and matching made age and sex more comparable. Its limitation is that smoking was remembered, not recorded at the time. That opens the door to bias, a flaw in the method that pushes results one way, which more data can't cancel. The judgement: a strong association, but not yet proof of cause.",
+      "hash": "327de4ceafe7",
+      "textSha256": "327de4ceafe7f8c8155cf1b55ded870e32de5ad86895deac74f41289c5605419",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/four-steps.327de4ceafe7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/four-steps.327de4ceafe7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/four-steps.327de4ceafe7.generation.json",
+      "plannedRequestSha256": "846f8b982b62e711f190394b0e28a24cf1350b67d8cbd274392681be232d5a46"
+    },
+    {
+      "id": "cohort",
+      "parentSceneId": "cohort",
+      "text": "Critics asked whether a third factor, perhaps something inherited, made people both more likely to smoke and more likely to get lung cancer. A factor linked to both the exposure and the disease is a confounder. Doll and Hill's next study was a cohort study, which follows a group forward in time. In 1951, they posted a smoking questionnaire to British doctors. About forty thousand replied, and year after year, the researchers recorded which doctors died, and from what.",
+      "hash": "f32a5a2cbc8e",
+      "textSha256": "f32a5a2cbc8e836077943c1e17e2b9190812ef78709e2c97cfbc869f49b75bd8",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cohort.f32a5a2cbc8e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cohort.f32a5a2cbc8e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cohort.f32a5a2cbc8e.generation.json",
+      "plannedRequestSha256": "f9d7a5c3e366004d5563f3d107c9bbc5ebd4890325dfebb5efd46f6ca3d2bd28"
+    },
+    {
+      "id": "dose-response",
+      "parentSceneId": "dose-response",
+      "text": "Doctors were easy to trace, and their causes of death were well recorded. By 1954, the lung cancer death rate rose steadily with the amount smoked: lowest in non-smokers, highest in heavy smokers. That climbing pattern is a dose-response relationship. And because smoking was recorded before the later deaths, the exposure came first.",
+      "hash": "3885ceca94e5",
+      "textSha256": "3885ceca94e529b2ae156f5fa93f9035d80fd8cf012f286220641c6e1c4ce6ba",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/dose-response.3885ceca94e5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/dose-response.3885ceca94e5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/dose-response.3885ceca94e5.generation.json",
+      "plannedRequestSha256": "2c6703c64bfe57e4feedfdb839adb9bcf498140ef0a3447aef0cc2b076e9d948"
+    },
+    {
+      "id": "judge-cohort",
+      "parentSceneId": "judge-cohort",
+      "text": "Now the four steps again. Design: cohort. Strengths: smoking was recorded before the deaths, not reconstructed afterwards, and tens of thousands of doctors were followed for fifty years. Limitations: doctors aren't a typical population, most were men, and smoking was self-reported. It's still observational, so an unmeasured confounder can't be fully ruled out. Judgement: the strongest design that was ethical.",
+      "hash": "920c04b774a7",
+      "textSha256": "920c04b774a7ed47d4996df9639f313c08942441723945281180d6c91b7b54e9",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/judge-cohort.920c04b774a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/judge-cohort.920c04b774a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/judge-cohort.920c04b774a7.generation.json",
+      "plannedRequestSha256": "aef65a75e8929d37c4e028902d506e4602a53952dcc2552e219883d0bf9c4305"
+    },
+    {
+      "id": "cause",
+      "parentSceneId": "cause",
+      "text": "So how did an association become a cause? Several kinds of evidence pointed the same way. The link was strong, it showed a dose-response, and exposure came first. Studies in other countries agreed. Carcinogens in smoke damage the DNA of airway cells, which gives a mechanism. The fifty-year follow-up found that quitting around thirty avoided almost all the extra risk of dying early.",
+      "hash": "92b4639beaa1",
+      "textSha256": "92b4639beaa1d826a6946bab5905082fb603346fc59b43d9ac6cd126e8a181bf",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cause.92b4639beaa1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cause.92b4639beaa1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/cause.92b4639beaa1.generation.json",
+      "plannedRequestSha256": "55681f2f369b245f2bb825a45015f18c0e545e15b88488b8b7583cbe175b62cd"
+    },
+    {
+      "id": "benefit-chain",
+      "parentSceneId": "benefit-chain",
+      "text": "Now, what did it achieve? A benefit isn't the finding itself. It's what the finding lets people do. Picture a chain: the study identifies a risk factor that can be changed, someone makes a decision, the decision reaches people, and new data check whether disease fell. In Australia, the evidence supported warning labels, advertising bans, taxes, quit programs and plain packaging. Daily smoking fell to around one adult in ten, and men's lung cancer rates have fallen since the early 1980s.",
+      "hash": "91a834620847",
+      "textSha256": "91a8346208471408c967684530480bfec40043b7d58414ffa65f0b793909a97b",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-chain.91a834620847.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-chain.91a834620847.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-chain.91a834620847.generation.json",
+      "plannedRequestSha256": "fcc30b17a96d88458c971a52d997dacc7a2bec9fce8b3594f94612f60b01862c"
+    },
+    {
+      "id": "benefit-limits",
+      "parentSceneId": "benefit-limits",
+      "text": "The benefit was large, mainly because smoking was common and could be changed. But the chain was slow: the evidence was strong by the mid-1950s, yet the biggest policies took decades. It's also unequal, because smoking is still more common in some groups. And a study asks something of its participants: time and privacy. The classic mistake is saying a study is beneficial the moment it's published.",
+      "hash": "135b9d0c3974",
+      "textSha256": "135b9d0c397435093fecf6cdf8d8a1891cd5b5892f13f090ad3605fd7c5466cd",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-limits.135b9d0c3974.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-limits.135b9d0c3974.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/benefit-limits.135b9d0c3974.generation.json",
+      "plannedRequestSha256": "15046caf85298ff67f28d2e86d23e0452184e3e64f443f64f9cf505fed56085f"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. Researchers found three hundred adults with bladder cancer and six hundred without, from the same hospitals, matched for age and sex. Each was asked how often they'd used hair dye over the past twenty years. Evaluate the method used in this study. Pause here to answer.",
+      "hash": "58fd382ef622",
+      "textSha256": "58fd382ef6227e9eb66969f3e7c0d4e8dbaeff5625881466b7cf47d7a6011065",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt.58fd382ef622.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt.58fd382ef622.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt.58fd382ef622.generation.json",
+      "plannedRequestSha256": "06e71e57d969d19a0dc0b5ab49b261deb1c95c3ed512f55073cd6aab803f780b"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "It's case-control: it starts with the disease and looks back. It's quick, and matching reduced differences in age and sex. But hair dye use was recalled over twenty years, and people with cancer may remember differently: recall bias. So it shows an association, not a cause. The classic mistake is thinking matching removes every confounder. It only controls what was matched.",
+      "hash": "3f4a6c086f40",
+      "textSha256": "3f4a6c086f40d3345586944f742744f6aaa5012e1b872da0b855910226d79313",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-one.3f4a6c086f40.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-one.3f4a6c086f40.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-one.3f4a6c086f40.generation.json",
+      "plannedRequestSha256": "01f1c269517bebdecbc5b9b1a0ffdc10d8e077cee1cddb41aeb4fabd8dfbdb72"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Studies in the 1980s and 90s linked low folate around conception with neural tube defects, where the early brain or spinal cord does not close properly. From 2009, non-organic Australian bread flour had to contain folic acid. Afterwards, neural tube defects fell, most in higher-risk groups. Evaluate the benefit of these studies. Pause here to answer.",
+      "hash": "71418198d1bb",
+      "textSha256": "71418198d1bb054a1724bfc60389a7e800226009e5c179045bc0cb82e8fd42d6",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt-two.71418198d1bb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt-two.71418198d1bb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/attempt-two.71418198d1bb.generation.json",
+      "plannedRequestSha256": "e17cc1b105b116ad9665c3bb74731fabf156104afbd9a52401390d35c5de3910"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The studies found a risk factor that could be changed. Fortified flour reached people without them having to act, which matters, because the neural tube closes before many people know they're pregnant. Follow-up data showed the fall, largest in the highest-risk groups. A large benefit, though other changes may have helped. The classic mistake is saying the studies themselves prevented the defects.",
+      "hash": "54a4d95261c5",
+      "textSha256": "54a4d95261c593f9d06cee9ade921deea50b7dd9c20c250c34dfd0f6838601a8",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-two.54a4d95261c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-two.54a4d95261c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/feedback-two.54a4d95261c5.generation.json",
+      "plannedRequestSha256": "8557b5d27157528055172452846b944a039a46187f9b4a365e534204ff0a9555"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for any study. To judge the method, give the design, a strength, a limitation, then decide: association or cause? To judge the benefit, follow the chain: finding, decision, action, outcome checked. Next, you'll practise rates, graphs and study judgements in exam questions.",
+      "hash": "debae33d992f",
+      "textSha256": "debae33d992fac22c9be2f07afdaa4fe62eaee64a25bc8f6a05f1de804e6bb55",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/decision-rule.debae33d992f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/decision-rule.debae33d992f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/decision-rule.debae33d992f.generation.json",
+      "plannedRequestSha256": "bce6d333ebfe67c7488ca32b7b140e49b686fd31f295e257cc97c22bc1308376"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B11-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

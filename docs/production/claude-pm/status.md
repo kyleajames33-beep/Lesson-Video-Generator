@@ -4684,3 +4684,161 @@ Three findings: m3-v13 newly says acid gets weaker rather than less concentrated
 CO/NO2 source found: Chang Chemistry14e, McGraw Hill, chapter13 slide56 (PDFpage28). The rendered diagram was inspected and matches the effective C-to-O and two ineffective approaches in the design. Source/hash and local page render: `work/brief219/orientation-source.json` and `chang-orientation-page28.png`. It supports the teaching orientation model, not an experimental overall rate law. The former OpenStax attribution is not reused.
 
 Plates: native unaltered `public/assets/chemistry/y11c-gold-nugget-v1.png` (1671x941) and `y11c-cuso4-beaker-silver-v1.png` (1106x1422) delivered. Brief183 manifest and per-design provenance updated; paper/dark/white300px composites and reference overlays in `assets/brief219-qa/`. Glass and beaker outlines visually register; this is not identical pixel data. Gold canvas is1px narrower than1672px reference, explicitly recorded. All PNGs retain native aspect ratio. Zinc and aluminium acid beakers share one physical scale with level rims at native factors0.15 and0.239234 in the QA view. Actual built motion and human listening remain pending.
+
+
+### Night queue progress, brief198 and220,6November2026
+
+bio-m6-b04 first render stopped at frame4050 when both font requests returned HTTP404. Font files remained intact. Failed chunks/log preserved; fixed loopback bundle server plus per-chunk font checks passed two independent frame probes. Fresh v2 retry is running, chunks through13799. Master checks and playback still pending; no render chunks deleted. Build report: work/brief198/bio-m6-b04/build-report.md.
+
+Brief220 first10 recording-stage gates pass. Starting shared tally52611/115000 billed characters. Existing194 runner adapted at work/brief220/run220.mjs; no220 paid request yet, waits for active render. Spectra work active under assets/brief220-spectra, including36 compounds queried in NMRShiftDB. Some returned records are predictions or lack solvent/field; not certified. SDBS automated collection not used under its disclaimer. Browser/native access retried and remains unavailable, so no upload action.
+
+
+### Brief198 bio-m6-b04 v2 master,6November2026
+
+Master completed at out/explainer/Explainer-bio-m6-b04/Explainer-bio-m6-b04-v2.mp4:14918frames,497.266667s,1920x1080,30fps. Asset copies match all18 pre-render references.169 captions exported from the playback snapshot to work/brief198/bio-m6-b04/captions-v2.120 samples and endpoints decode; zero automated blank/broken-icon flags. Four scan boards and16-frame sheet visually inspected and compared with the prior sheet. No missing artwork observed. Build report and limits: work/brief198/bio-m6-b04/build-report.md.
+
+Full-speed playback is pending, including transient gene zoom and moving gamete diagrams. Browser host/native pipe remain unavailable. Chunks retained; no upload-ready claim or live change. Brief220 voicing has now started on bio-m8-b06, within the shared cap.
+
+
+### Brief220 voicing tally and spectra progress,6November2026
+
+bio-m8-b06: measured; 5,669 source characters; 5,594 new billed-character tally; 2462 reported credit cost; 466.97 seconds; 15 new takes, 1 reused; 156 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b06/measured/
+
+bio-m8-b07: measured; 5,711 source characters; 5,636 new billed-character tally; 2479 reported credit cost; 467.60 seconds; 14 new takes, 1 reused; 155 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b07/measured/
+
+bio-m8-b08: measured; 5,737 source characters; 5,662 new billed-character tally; 2491 reported credit cost; 462.53 seconds; 13 new takes, 1 reused; 152 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b08/measured/
+
+bio-m8-b09: measured; 5,929 source characters; 5,854 new billed-character tally; 2576 reported credit cost; 490.87 seconds; 16 new takes, 1 reused; 170 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b09/measured/
+
+bio-m8-b10: measured; 5,655 source characters; 5,580 new billed-character tally; 2457 reported credit cost; 462.50 seconds; 14 new takes, 1 reused; 156 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b10/measured/
+
+bio-m8-b11: measured; 5,912 source characters; 5,837 new billed-character tally; 2567 reported credit cost; 475.10 seconds; 15 new takes, 1 reused; 157 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8b11/measured/
+
+bio-m8-p01: skipped-character-count-mismatch; 5,811 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Current scene strings total5811; declared5829/5831. Claude must correct the count before recording.
+
+bio-m8-p02: measured; 5,880 source characters; 5,805 new billed-character tally; 2554 reported credit cost; 476.07 seconds; 17 new takes, 1 reused; 175 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8p02b/measured/
+
+chem-m8-g02: measured; 5,794 source characters; 5,719 new billed-character tally; 2515 reported credit cost; 465.93 seconds; 15 new takes, 1 reused; 162 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8g02/measured/
+
+chem-m5-g02: measured; 5,968 source characters; 5,893 new billed-character tally; 2593 reported credit cost; 499.13 seconds; 17 new takes, 1 reused; 174 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m5g02/measured/
+
+bio-m8-b12: skipped-recording-check; 5,969 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Hook motionPurpose rejected as prohibition-only; see work/brief220/bio-m8-b12-recording-check.log.
+
+bio-m8-b13: skipped-recording-check; 5,693 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Hook motionPurpose rejected as prohibition-only; see work/brief220/bio-m8-b13-recording-check.log.
+
+bio-m8-b14: skipped-recording-check; 5,963 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Hook motionPurpose rejected as prohibition-only; see work/brief220/bio-m8-b14-recording-check.log.
+
+bio-m8-b16: skipped-recording-check; 6,010 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Hook motionPurpose rejected as prohibition-only; see work/brief220/bio-m8-b16-recording-check.log.
+
+bio-m8-g02: measured; 5,850 source characters; 5,775 new billed-character tally; 2540 reported credit cost; 467.47 seconds; 14 new takes, 1 reused; 163 captions; cue and alignment checks pass. Measured folder: docs/production/claude-pm/lessons/m8g02b/measured/
+
+chem-m8-c13: deferred-credit-reserve; 6,193 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Deferred at the cap; no further lesson started after c13 would cross it.
+
+chem-m8-c09: not reached after credit-reserve stop; 6,155 source characters; 0 new billed-character tally; 0 reported credit cost; No paid request. Deferred at the cap; no further lesson started after c13 would cross it.
+
+Cumulative billed-character tally:109,966 of115,000, including57,355 new characters in150 successful requests. There are5,034 characters left to the cap. Reported provider credit-cost headers total25,234 for these new requests; this is a separate value and does not replace the instructed character cap. No account balance read. All ten measured lessons pass independent alignment,text,hash,bold-cue and caption checks in work/brief220/validation.json. Human listening remains pending. Claude must regenerate captions from the playback timeline if a later build adds quiet frames. No full video build or export under220.
+
+Spectra retrieval remains partial:72 NMRShiftDB responses for36 compounds,35 with the required reported conditions,37 not certified because of predictions/program metadata or missing solvent/field. Six NIST JCAMP files saved before HTTP429 stopped downloads. Three recover neat-liquid transmission records already known; the ethanol/isopropanol optical constants and gas propylamine cannot validate liquid-film transmission depths. Confirmed g03 carbonyl difference: CDCl3 record10014252 gives211.4ppm versus212.6 in the design and213 on its card. Full records,source IDs,URLs,hashes and remaining gaps: assets/brief220-spectra/progress.md. SDBS automated collection was not used under its disclaimer. All seven named holds preserved. No narration or design text edited.
+
+
+Brief220 source follow-up: additional primary measured CDCl3 NMR tables for eight compounds inspected in Gottlieb1997,DOI10.1021/jo971176v, including stated fields300.1/75.5MHz and temperature24+/-1C. The combined UCSB PDF also contains Fulmer2010, so its1997 tables are identified separately. Data and exact page/column references: assets/brief220-spectra/gottlieb1997-cdcl3-measurements.json. Drawn values for these compounds stay within the stated tolerances. Remaining compound and IR holds persist. No further paid requests.
+
+## Codex brief 192: source reviews complete, plates in progress
+
+6 November 2026. No design, narration or scene edits; no speech or commits.
+
+phys-y12-m8-v01: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v01-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v01-science-check.md`. 0 blockers, 3 should fix, 0 optional. Joined narration count 6,434. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v02: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v02-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v02-science-check.md`. 0 blockers, 3 should fix, 1 optional. Joined narration count 6,462. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v03: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v03-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v03-science-check.md`. 0 blockers, 6 should fix, 0 optional. Joined narration count 6,276. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v04: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v04-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v04-science-check.md`. 0 blockers, 2 should fix, 1 optional. Joined narration count 6,083. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v05: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v05-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v05-science-check.md`. 0 blockers, 2 should fix, 0 optional. Joined narration count 6,280. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v06: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v06-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v06-science-check.md`. 0 blockers, 5 should fix, 1 optional. Joined narration count 6,305. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v07: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v07-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v07-science-check.md`. 0 blockers, 3 should fix, 0 optional. Joined narration count 6,019. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v08: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v08-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v08-science-check.md`. 0 blockers, 4 should fix, 1 optional. Joined narration count 5,695. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v09: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v09-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v09-science-check.md`. 0 blockers, 5 should fix, 0 optional. Joined narration count 6,037. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v10: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v10-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v10-science-check.md`. 0 blockers, 3 should fix, 1 optional. Joined narration count 6,037. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+phys-y12-m8-v11: independent learning and science reports at `docs/production/claude-pm/checks/p-y12-m8-v11-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m8-v11-science-check.md`. 0 blockers, 2 should fix, 0 optional. Joined narration count 6,018. Repair findings before recording; built visuals, exact voiced preview and listening pending.
+
+Module checks: `work/brief192/results.json`, `checks/brief192-pack-check.md`. Official 2017 quotations and written joins checked; practical conduct is not established. Twenty-eight current published-page notes appended to `site-corrections-phys-y12.md`; the local checkout is absent. Six of eighteen new plate files delivered in `assets/brief192-manifest.json`; apparatus and anchors remain in progress. This is a partial brief hand-in, not a finished artwork or release gate.
+
+## Codex brief 221: twelve repair checks and gas-jar layers
+
+6 November 2026. No design, narration or scene edits; no speech or commits.
+
+chem-y11-m4-v03: `docs/production/claude-pm/checks/c-y11-m4-v03-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,998 scene-sum characters; source estimate 545 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v04: `docs/production/claude-pm/checks/c-y11-m4-v04-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,081 scene-sum characters; source estimate 551 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v05: `docs/production/claude-pm/checks/c-y11-m4-v05-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,613 scene-sum characters; source estimate 517 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v06: `docs/production/claude-pm/checks/c-y11-m4-v06-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,160 scene-sum characters; source estimate 556 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v07: `docs/production/claude-pm/checks/c-y11-m4-v07-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,213 scene-sum characters; source estimate 560 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v08: `docs/production/claude-pm/checks/c-y11-m4-v08-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,426 scene-sum characters; source estimate 567 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v09: `docs/production/claude-pm/checks/c-y11-m4-v09-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,364 scene-sum characters; source estimate 562 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v10: `docs/production/claude-pm/checks/c-y11-m4-v10-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,549 scene-sum characters; source estimate 510 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v11: `docs/production/claude-pm/checks/c-y11-m4-v11-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,923 scene-sum characters; source estimate 538 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v12: `docs/production/claude-pm/checks/c-y11-m4-v12-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,600 scene-sum characters; source estimate 514 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v13: `docs/production/claude-pm/checks/c-y11-m4-v13-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,746 scene-sum characters; source estimate 525 s. Previous findings resolved or follow the later root practical decision.
+
+chem-y11-m4-v14: `docs/production/claude-pm/checks/c-y11-m4-v14-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,558 scene-sum characters; source estimate 513 s. Previous findings resolved or follow the later root practical decision.
+
+Checks: 117 baseline calculations rerun plus 45 new readout calculations in `work/brief221/changed-readouts.json`; quoted triggers and twelve written joins checked. Exact voiced preview, human listening, actual fit and motion remain pending.
+
+Plates: `public/assets/chemistry/y11c-gas-jar-open-v1.png` and `y11c-gas-jar-cover-slip-v1.png`, native935x1683 and1774x887. Three-background and rim-pair QA in `assets/brief221-qa/`; brief184 manifest updated. Body edges differ from the original by up to5 native pixels, so use two open copies and do not assume an old/new registered dissolve. The initial crop/mask candidate is held and preserved. Build playback must check the cover withdrawal.
+
+## Codex brief 222: nine repair checks complete, artwork in progress
+
+6 November 2026. No design, narration or scene edits; no speech or commits.
+
+phys-y12-m5-v01: `docs/production/claude-pm/checks/p-y12-m5-v01-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,314 scene-sum characters; source estimate 561 s. Previous findings resolved.
+
+phys-y12-m5-v02: `docs/production/claude-pm/checks/p-y12-m5-v02-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,132 scene-sum characters; source estimate 544 s. Previous findings resolved.
+
+phys-y12-m5-v03: `docs/production/claude-pm/checks/p-y12-m5-v03-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,659 scene-sum characters; source estimate 510 s. Previous findings resolved.
+
+phys-y12-m5-v05: `docs/production/claude-pm/checks/p-y12-m5-v05-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,695 scene-sum characters; source estimate 514 s. Previous findings resolved.
+
+phys-y12-m5-v06: `docs/production/claude-pm/checks/p-y12-m5-v06-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,250 scene-sum characters; source estimate 550 s. Previous findings resolved.
+
+phys-y12-m5-v07: `docs/production/claude-pm/checks/p-y12-m5-v07-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,705 scene-sum characters; source estimate 509 s. Previous findings resolved.
+
+phys-y12-m5-v08: `docs/production/claude-pm/checks/p-y12-m5-v08-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 6,376 scene-sum characters; source estimate 558 s. Previous findings resolved.
+
+phys-y12-m5-v09: `docs/production/claude-pm/checks/p-y12-m5-v09-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,706 scene-sum characters; source estimate 509 s. Previous findings resolved.
+
+phys-y12-m5-v10: `docs/production/claude-pm/checks/p-y12-m5-v10-rev2-error-check.md`, 0 blockers, 0 should fix, 0 optional. 5,657 scene-sum characters; source estimate 505 s. Previous findings resolved.
+
+Evidence: 46 baseline physics cases rerun and59 new readout cases, ten written joins including the pilot, quoted narration triggers and count checks under `work/brief222/`. Artwork repairs and new layers remain in progress. Existing 400px composites show no obvious coloured halo; native alpha analysis finds low-alpha fringe pixels, so no repair is claimed yet. Exact voiced preview, listening and playback remain pending.
+
+## Codex brief 225: Maths owner pilot rendered, local master ready
+
+6 November 2026. `out\explainer\Explainer-math-a12-d01\Explainer-math-a12-d01-v2.mp4`,9:00.57,16,217 frames,61,630,105 bytes,SHA256 `3e5128a9bc1952545cc0eb46ae56495f1cba9595e565e55badd76a4d32f77566`. Source/audio and guarded asset hashes unchanged.120 sampled defect frames plus endpoints and16-frame sheet:0 broken/blank flags,0 serif flags. All16 sheet frames match Claude's A sheet.226 caption cues from the playback timeline pass bounds/order checks. Full details and exact playback checkpoints: `work/brief225/math-a12-d01/build-report.md`.
+
+Normal-speed playback, exact voiced student review and human listening remain pending, including a as ay. Two transient numeric reveal states at155.40s and204.93s are listed for playback inspection. Browser retry failed: `failed to write kernel assets: The system cannot find the path specified. (os error 3)`. No upload or unlisted URL; local master and unlisted/no-playlist intent recorded in `work/youtube-pending.json`. Drive mirror master SHA256 verified; remote cloud completion unqueried. V1 and v2 chunks retained. No speech or scene edits, no commits.
+
+### Brief 222 artwork follow-up: seesaw delivered, demonstrator held
+
+Two native2172x724 seesaw layers delivered at `public/assets/physics/y12p-seesaw-plank-v1.png` and `y12p-seesaw-stand-v1.png`; hinge(1086,319). Three-background -8,0,+8 degree static overlays show no gap or floating stand. Generated split is not pixel-identical to the original (alpha128 silhouette overlap0.9549); original preserved. Manifest and provenance updated.
+
+The sliding-shaft base/slider pair is held: support heights and initial contact do not match, so simultaneous release is not proven. Concrete candidates and both-position overlay: `assets/brief222-candidates/`, `assets/brief222-qa/drop-launch-candidate-overlay.jpg`; findings `work/brief222/drop-launch-hold.json`. Required public paths remain absent. Initial image-output moderation rejection was resolved by a clearer school-apparatus request; it was not an approval rejection.
+
+Fringe edits produced candidates, but no original was replaced. The image editor retains exterior fringe pixels; an asynchronous question asks the owner whether deterministic alpha cleanup may be used under the tool rule. Existing400px paper/dark/white composites and native alpha counts are in `assets/brief222-qa/existing-edge-check.jpg` and `work/brief222/edge-analysis.json`. Source reports are complete; artwork is partial.
+
+Brief225 cloud follow-up: connected Google Drive confirms the v2 master exists remotely,61,630,105 bytes. https://drive.google.com/file/d/1LKWulmmvxhkhjmLJtyOC_U5Pfghi2F0B/view?usp=drivesdk. Local Drive-mirror SHA256 matches; connector did not expose the remote checksum. Evidence: `work/brief225/math-a12-d01/drive-cloud-check.json`. Playback and listening remain pending.
