@@ -8,3 +8,8 @@ export * from './curve-sim';
 export * from './anchor';
 export * from './board';
 export * from './cards';
+export * from './fn-sim';
+export * from './paired';
+export * from './rig';
+export * from './working-parts';
+export * from './extras';

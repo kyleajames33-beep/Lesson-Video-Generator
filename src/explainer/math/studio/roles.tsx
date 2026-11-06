@@ -25,6 +25,17 @@ export const MATH_ROLES: Record<RoleKey, RoleColours> = {
 	height: {ink: INK, stroke: INK, soft: '#ebe4d6'},
 	inner: {ink: '#6b6358', stroke: MATH_INNER, soft: '#efe9de'},
 };
+/** Non-role curve colour for a third named curve (d04). 5.4:1 on paper, 5.8:1 on card white. */
+export const MATH_CURVE_OLIVE = '#5d6b2a';
+/** Sign-chart and rider direction colours (d09): increasing teal, decreasing amber (role inks). */
+export const MATH_UP = MATH_TEAL;
+export const MATH_DOWN = MATH_AMBER;
+/** Excluded values, domain gaps and open circles: muted grey ring (never bridged). */
+export const MATH_EXCLUDED = '#8a8378';
+/** Tint fills for the paired derivative panel (above and below the f′ axis). */
+export const MATH_UP_SOFT = '#d6eeee';
+export const MATH_DOWN_SOFT = '#f8e8c8';
+
 export const roleInk = (r?: RoleKey, fallback = INK) => (r ? MATH_ROLES[r].ink : fallback);
 export const roleStroke = (r?: RoleKey, fallback = INK) => (r ? MATH_ROLES[r].stroke : fallback);
 

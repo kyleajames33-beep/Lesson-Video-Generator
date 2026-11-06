@@ -1,9 +1,9 @@
 // Framed memory-aid card, key-notes bullets and the maths question card with its countdown.
-import React from 'react';
+import React, {useId} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, Countdown, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, FrameSvg, MARGIN, SceneHeading, smooth} from './primitives';
-import {RoleKey, roleInk} from './roles';
+import {MATH_ROLES, RoleKey, roleInk} from './roles';
 
 export const MATH_STRAND_ACCENT = '#8a5a12';
 
@@ -64,7 +64,9 @@ export const KeyNotesScreen: React.FC<{items: {content: React.ReactNode; at: num
  * <RolesOn on={false}> until feedback so the card gives nothing away. `shrinkAt` moves the card to a
  * 30 px strip at the top for the feedback that follows.
  */
-export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold?: {startFrame: number; endFrame: number}; heading?: string; shrinkAt?: number; x?: number; y?: number; w?: number; size?: number; pauseAt?: number}> = ({at, children, hold, heading = 'Your turn', shrinkAt, x = MARGIN, y = 214, w = 1380, size = 42, pauseAt}) => {
+export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold?: {startFrame: number; endFrame: number}; heading?: string; shrinkAt?: number; x?: number; y?: number; w?: number; size?: number; pauseAt?: number;
+	/** Picture slot beside the question text (about 300 to 360 px wide), arriving with the card; `swap` cross-fades to a filled-in version. */
+	picture?: {node: React.ReactNode; w?: number; swap?: {node: React.ReactNode; at: number}}}> = ({at, children, hold, heading = 'Your turn', shrinkAt, x = MARGIN, y = 214, w = 1380, size = 42, pauseAt, picture}) => {
 	const f = useCurrentFrame();
 	const sh = shrinkAt === undefined ? 0 : smooth(prog(f, shrinkAt, 20));
 	const sc = 1 - sh * (1 - 30 / size);
@@ -72,7 +74,15 @@ export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold
 		<>
 			<SceneHeading text={heading} at={at} out={shrinkAt} />
 			<Enter at={at + 6} style={{position: 'absolute', left: x, top: y + (150 - y) * sh, width: w, transform: `scale(${sc})`, transformOrigin: '0 0'}}>
-				<div style={{background: CARD, borderRadius: 20, padding: '30px 40px', boxShadow: CARD_SHADOW, border: '2.5px solid rgba(60,45,20,0.10)', borderLeft: `10px solid ${MATH_STRAND_ACCENT}`, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: size, lineHeight: 1.45, color: INK}}>{children}</div>
+				<div style={{background: CARD, borderRadius: 20, padding: '30px 40px', boxShadow: CARD_SHADOW, border: '2.5px solid rgba(60,45,20,0.10)', borderLeft: `10px solid ${MATH_STRAND_ACCENT}`, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: size, lineHeight: 1.45, color: INK}}>{picture ? (
+					<div style={{display: 'flex', alignItems: 'center', gap: 36}}>
+						<div style={{flex: 1, minWidth: 0}}>{children}</div>
+						<div style={{position: 'relative', flex: 'none', width: picture.w ?? 340}}>
+							<div style={{opacity: picture.swap ? 1 - prog(f, picture.swap.at, 14) : 1}}>{picture.node}</div>
+							{picture.swap ? <div style={{position: 'absolute', inset: 0, opacity: prog(f, picture.swap.at, 14)}}>{picture.swap.node}</div> : null}
+						</div>
+					</div>
+				) : children}</div>
 			</Enter>
 			{hold ? (
 				<>
@@ -81,5 +91,65 @@ export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold
 				</>
 			) : null}
 		</>
+	);
+};
+
+/** Answer-side strip of supplied values (36 px chips in role colours), arriving one by one. */
+export const GivensStrip: React.FC<{x: number; y: number; items: readonly {content: React.ReactNode; role?: RoleKey; at: number}[]; title?: string; size?: number; out?: number; maxW?: number}> = ({x, y, items, title = 'Given', size = 36, out, maxW = 1728}) => {
+	const f = useCurrentFrame();
+	const o = out === undefined ? 1 : 1 - prog(f, out, 12);
+	if (!items.length || o <= 0.001) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: y, maxWidth: maxW, opacity: o * prog(f, items[0].at, 12), display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 14}}>
+			<span style={{fontFamily: FONT_DISPLAY, fontSize: 28, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: INK_SOFT, marginRight: 6}}>{title}</span>
+			{items.map((it, i) => (
+				<span key={i} style={{opacity: prog(f, it.at, 12), transform: `translateY(${(1 - prog(f, it.at, 14)) * 10}px)`, display: 'inline-block', background: CARD, borderRadius: 14, padding: '4px 18px', border: `3px solid ${it.role ? MATH_ROLES[it.role].stroke : 'rgba(60,45,20,0.14)'}`, boxShadow: '0 6px 14px rgba(60,45,20,0.08)', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: size, color: roleInk(it.role, INK), whiteSpace: 'pre'}}>{it.content}</span>
+			))}
+		</div>
+	);
+};
+
+/**
+ * Small axes picture for question cards (inline SVG, no absolute positioning): an optional curve, shaded
+ * x-intervals (domain), excluded open circles, a marked point with a violet "gradient here?" style tag,
+ * and optional x tick labels (numbers or radian labels). Text stays at 26 px or more.
+ */
+export const QuestionAxes: React.FC<{w?: number; h?: number; window: {x: readonly [number, number]; y: readonly [number, number]}; fn?: (x: number) => number; domain?: readonly [number, number]; color?: string; point?: {x: number; tag?: string}; shade?: readonly {from: number; to: number; color?: string; label?: string}[]; excluded?: readonly {x: number; y: number}[]; xTicks?: readonly {value: number; label: string}[]; xLabel?: string; yLabel?: string}> = ({w = 340, h = 260, window: win, fn, domain, color = INK, point, shade = [], excluded = [], xTicks = [], xLabel = 'x', yLabel = 'y'}) => {
+	const cid = 'qa-' + useId().replace(/:/g, '');
+	const pad = {l: 20, r: 24, t: 20, b: xTicks.length ? 46 : 20};
+	const bw = w - pad.l - pad.r, bh = h - pad.t - pad.b;
+	const X = (v: number) => pad.l + ((v - win.x[0]) / (win.x[1] - win.x[0])) * bw;
+	const Y = (v: number) => pad.t + ((win.y[1] - v) / (win.y[1] - win.y[0])) * bh;
+	const ox = X(Math.max(win.x[0], Math.min(win.x[1], 0))), oy = Y(Math.max(win.y[0], Math.min(win.y[1], 0)));
+	let d = '';
+	if (fn) {
+		const [a, b] = domain ?? win.x;
+		const lo = Math.max(a, win.x[0]), hi = Math.min(b, win.x[1]);
+		let pen = false;
+		for (let i = 0; i <= 160; i++) {
+			const xv = lo + ((hi - lo) * i) / 160 + (i === 0 && domain ? 1e-6 : 0);
+			const yv = fn(xv);
+			if (!Number.isFinite(yv) || excluded.some(e => Math.abs(e.x - xv) < 1e-9)) {pen = false; continue;}
+			const yc = Math.max(win.y[0] - 1, Math.min(win.y[1] + 1, yv));
+			d += `${pen ? 'L' : 'M'}${X(xv).toFixed(1)},${Y(yc).toFixed(1)} `;
+			pen = true;
+		}
+	}
+	const py = point && fn ? fn(point.x) : 0;
+	return (
+		<svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{display: 'block', overflow: 'visible', background: '#fbf8f1', borderRadius: 14, border: '2px solid rgba(60,45,20,0.12)'}}>
+			<defs><clipPath id={cid}><rect x={pad.l} y={pad.t} width={bw} height={bh} /></clipPath></defs>
+			{shade.map((s, i) => <g key={i}><rect x={X(s.from)} y={pad.t} width={X(s.to) - X(s.from)} height={bh} fill={s.color ?? '#f8e8c8'} opacity={0.9} />{s.label ? <text x={X(s.to) - 10} y={pad.t + bh - 12} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 26, fill: AMBER_INK}}>{s.label}</text> : null}</g>)}
+			<path d={`M${pad.l},${oy} H${pad.l + bw} M${ox},${pad.t} V${pad.t + bh}`} stroke={INK} strokeWidth={3} fill="none" />
+			<text x={pad.l + bw + 4} y={oy - 8} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 26, fill: INK_SOFT}}>{xLabel}</text>
+			<text x={ox + 8} y={pad.t + 24} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 26, fill: INK_SOFT}}>{yLabel}</text>
+			{xTicks.map(t => <g key={t.label}><line x1={X(t.value)} x2={X(t.value)} y1={oy - 7} y2={oy + 7} stroke={INK} strokeWidth={3} /><text x={X(t.value)} y={pad.t + bh + 36} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 26, fill: INK}}>{t.label}</text></g>)}
+			{d ? <path d={d} stroke={color} strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" clipPath={`url(#${cid})`} /> : null}
+			{excluded.map((e, i) => <circle key={i} cx={X(e.x)} cy={Y(e.y)} r={8} fill={CARD} stroke="#8a8378" strokeWidth={4} />)}
+			{point && fn ? <g>
+				<circle cx={X(point.x)} cy={Y(py)} r={10} fill="#6b4fa0" stroke={CARD} strokeWidth={4} />
+				{point.tag ? <text x={Math.min(X(point.x) + 16, w - 8)} y={Y(py) - 22} textAnchor={X(point.x) > w * 0.55 ? 'end' : 'start'} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36, fill: '#6b4fa0'}} stroke={CARD} strokeWidth={6} paintOrder="stroke">{point.tag}</text> : null}
+			</g> : null}
+		</svg>
 	);
 };
