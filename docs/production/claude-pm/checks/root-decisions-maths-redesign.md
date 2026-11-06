@@ -108,3 +108,23 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
 34. **i08 recall** now names the rain gauge and the bath (root edit, 6,132 characters). i05's "each piece can have its own constant" stays screen-only, per the earlier decision.
 35. **Site source.** The site repo is no longer on this machine (deleted 6 Nov; backed up on GitHub). The redesigns keep each site worked example exactly as recorded in the design. Codex's maths check confirms them against the live site.
 36. **Kit additions (next kit pass):** `PrimitiveFamily`, `IntegralNotation`, `DerivativeCheck`, a reveal mode for `ContainerFill`, masked plate rise, gradient dots against a target, a two-piece tracer, `DerivativeWheel`, `StudioRiemannStrips` (signed), `StudioAreaFill`, `RefinementTable` and a balance bar.
+
+## f01 to f08 (wave 7, not yet voiced)
+
+37. **Anchors:**
+    - f01: a cricket scoreboard;
+    - f02: stacking chairs;
+    - f03: a supermarket tin pyramid;
+    - f04: a tree-planting crew;
+    - f05: folding paper (the site's hook);
+    - f06: rice on a chessboard;
+    - f07: a bouncing tennis ball;
+    - f08: a growing country town.
+38. **Re-contexting with the site's numbers unchanged** is accepted, following the i14 precedent:
+    - f04: savings becomes seedlings, the salary becomes theme-park visitors, the car becomes a tree, and the snow becomes a woodpile;
+    - f08: the bacteria hook becomes the town, the threshold becomes a chain message, and the car becomes a camper trailer.
+    The site's worked numbers and answers are unchanged, and Codex confirms them.
+39. **Money** appears in f08 only, within f01 to f08. f09 to f15 (loans and annuities) are the money lessons.
+40. **New half-scenes:** f06 5a (`whole-board`) and f07 4a (`whole-journey`) need ids in the lesson entries.
+41. **f06's rice claim** ("hundreds of years of the world's rice harvest") goes to the maths check against a current FAO figure. f07 says "suppose half" for the rebound. f08's final frame keeps the red "−$600" arc for f09's join. f07 reuses the Biology tennis ball directly.
+42. **Kit additions (next kit pass):** `SpriteStack` (nest, pyramid, ghost), `TermPlot`, `StepCounter`, `PairingRectangle`, `PeriodTimeline`, a sprite field with slots, `FoldLayers`, `LogRuler`, `ShiftCancelRows`, `BoardGrid`, a big-number readout, `BounceRig`, `ConvergenceStrip`, two plate riders on one plot, and studio versions of `TermLadder`, `PartialSumStack` and `SigmaBuilder`.
