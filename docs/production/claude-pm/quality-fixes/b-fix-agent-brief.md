@@ -32,3 +32,7 @@ Verify:
 - write a short `work/quality-audit/fixed/<id>-notes.md`.
 
 Never ship placeholder art; list any truly needed plate. Do not commit. Do not spawn agents.
+
+## Root rule added 6 Nov (after bio-m8-b03 and b04)
+
+- Never drop or shorten the quiet key-notes hold below 40 s in all; two notes frames on a 16-frame sheet are expected for a copy hold, not a defect. A hold longer than 40 s may be cut to a 40 s minimum (`Math.max(1200, durationInFrames)`).
