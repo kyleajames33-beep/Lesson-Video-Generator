@@ -1,8 +1,8 @@
 # Year 11 Chemistry M4 V07: Hess's law. Why can we add reaction enthalpies along different paths? (design)
 
-Status: Revision 1 (6 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 6,213 characters, 19 scenes, about 558 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,213 characters, 19 scenes, about 560 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: seventh Module 4 video of Year 11 Chemistry (2017 syllabus), playlist entry 76, between `chem-y11-m4-v06` and `chem-y11-m4-v08`; a concept and calculation video. Root decision m4-1 places scaling and reversing thermochemical equations here. Templates: `chem-y11-m4-v06.md` (same designer, series layout, ladders), `chem-y11-m4-v01.md` (thermochemical equation format), `math-a12-d10.md` (calculation layout), `phys-y11-fa1-v01.md`, `bio-y11-fa1-v05.md`. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m4-v07` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Use the same start/end states, reverse and scale equations, then cancel intermediates. Include carbon to carbon dioxide via carbon monoxide."; next handoff: "How do standard formation enthalpies calculate a reaction enthalpy?"). Site lesson read in full (6 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson08.sa.html` (SHA256 `3e1cbbc975c04e3874267c6c20ff718c5d628f694ced9c43667c9b87f9625587`, recomputed, matches the route), sections `l08-why-hess-s-law-exists-title`, `l08-manipulating-thermochemical-equations-title`, `l08-worked-examples-title`. Used: the altitude analogy (Think First: valley floor to a lookout by a steep or gentle track; distance walked depends on the route); "Why Hess's Law exists" (C + ½O₂ → CO cannot be run cleanly because CO keeps burning; build the change from measurable reactions); the state-function statement and the conservation argument (drill 3: "you could cycle between pathways and create energy from nothing"); the reverse and scale rules with their table; the strategy (target first, place each species, reverse or scale, add, cancel, check the target, sum); the NESA example's values (−110.5, −283.0, −393.5); trap 1 (forgetting to flip: the site's +172.5 example) and trap 2 (scaling the equation but not ΔH); trap 3 (skip the target check); the "Hess's Law cycle" summary. Changed: the worked example calculates the unmeasurable C → CO from the two measurable combustions (site note 1). Not used: the three-equation methane formation example (m4-v09 and v08 territory), the ethene drills, the Hess 1840 story (site note 2), the blast-furnace anchor (author note d).
 
@@ -46,7 +46,10 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **carbon card** (`c4-icon-carbon-lump-v1.png` with a coded glow for burning, scenes 1, 5); **two-route diagram** (scenes 2, 4, 11, 18); **altitude panel** (scene 3: a coded side-on coastline, a beach flag and a lookout flag, a steep track and a long gentle track, a height bracket and a "distance walked" counter that differs between tracks); **energy loop** (scene 3: out by one arrow, back by the other, a "+energy?" counter crossed); **equation cards** (scenes 6 to 10, 14 to 17: each equation with its ΔH on one card; flip animation turns the card over and its sign changes; scale animation stretches the coefficients and ΔH together); **cancel board** (scene 10: the two cards stack, matching species strike through grey, the remaining species slide together into the target); **target strip** (pinned at the top of the board, ticked in scene 11); `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, `ScribbleCircle`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key (continues v04 to v06):** ΔH red when negative, blue when positive; reversed cards outlined teal; scaled cards outlined amber; cancelled species grey strike; the target strip green when matched; data values slate blue; crossed items red strike.
-- **Board layout (constant):** heading top left; the diagram or carbon card at the left; target strip pinned at the top right; equation cards and rows at the right.
+- **Board layout (Revision 2):** heading top left. Stages, each under about 56 s: m4-v06's final frame, then the painted carbon (1); the two-route diagram with the route marker (2); the altitude panel, then the loop on the diagram (3); the gloss card with the sliding arrows (4); the painted carbon with the flame sketch beside the diagram (5); the equation card (6, 7, about 41 s); the calculation layout with the pinned target (8, 9, about 56 s); the cancel board at full width (10); the diagram with the check (11); the trap stage at full width (12); the framed memory card (13); question cards (14 to 17); the final layout (18). Revision 1 held the calculation layout for scenes 8 to 12 (about 134 s).
+- **Colour roles (Revision 2, fixed for the whole video):** ΔH red when negative, blue when positive; reversed cards outlined teal; scaled cards outlined amber; cancelled species grey strike; the target strip green when matched; data values slate blue; the route marker and its running readout white with a red value; framed answers in a dark-ink box with a green tick; crossed mistakes red strike plus a red hand tag; hand-font teacher tags take the colour of the item they mark; recall and source tags grey; earlier rows dimmed.
+- **Type sizes (Revision 2, 1080p):** the current calculation row and the active equation card at least 44 px (48 px); framed results and the running ΔH readout about 52 px; givens, other cards and level labels 34 to 36 px; earlier rows 30 px; hand-font tags 34 to 40 px; nothing a student must read below 26 px (recall tags 26 px). All text above the bottom 12% of the frame.
+- **Simulation (Revision 2): the route marker (scene 2) and the altitude counters (scene 3).** A live readout on the core idea (the total depends only on start and finish): a marker travels down the two-step route while a running readout (52 px) ticks "ΔH so far: −110.5" at the middle level, then "−393.5 kJ mol⁻¹" at the bottom; a second marker takes the direct arrow and its readout lands on the same "−393.5". In scene 3 the two walkers' flags carry live counters: "height climbed" ends at the same value for both tracks while "distance walked" ends at different values, so the student sees which quantity depends on the route.
 
 Author notes (not learner copy):
 (a) Data (NBS tables, Wagman et al. 1982; ΔfH at 298 K, kJ mol⁻¹): CO −110.53, CO₂ −393.51, SO₂ −296.83, SO₃ −395.72, NO +90.25, NO₂ +33.18. Hence C + O₂ → CO₂ −393.5; 2CO + O₂ → 2CO₂ 2 × (−393.51 + 110.53) = −565.96 → −566.0; CO + ½O₂ → CO₂ −283.0; 2SO₂ + O₂ → 2SO₃ 2 × (−395.72 + 296.83) = −197.78 → −197.8; N₂ + O₂ → 2NO +180.5; 2NO₂ → 2NO + O₂ 2 × (90.25 − 33.18) = +114.14 → +114.1.
@@ -72,67 +75,67 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook and prediction (countdown, 3 seconds at the end)
 > Last time, we went the long way round. We pulled methane and oxygen apart into atoms, then built the products, and still got delta H. Here's a simpler case to test that idea. Carbon can burn straight to carbon dioxide. Or it can burn to carbon monoxide first, and then the carbon monoxide burns to carbon dioxide. So predict. Does the two-step route release more energy, less, or the **same**?
 
-Visual: opens on m4-v06's final frame; the "Next" chip fades. On "pulled methane and oxygen apart into atoms" the up and down arrows pulse; on "still got delta H" the dashed direct arrow pulses. Clear change on "a simpler case": `c4-icon-carbon-lump-v1.png` at the left with a coded red glow, label "C(s)". On "straight to carbon dioxide" one arrow "C → CO₂"; on "carbon monoxide first" a two-arrow path "C → CO → CO₂". Heading writes: "Why do different routes give the same ΔH?". Chips "more", "less", "the same". On "same" the 3 s `Countdown` ring runs.
+Visual: opens on m4-v06's final frame; the "Next" chip fades. On "pulled methane and oxygen apart into atoms" the up and down arrows pulse; on "still got delta H" the dashed direct arrow pulses. Clear change on "a simpler case": `c4-icon-carbon-lump-v1.png` at the left with a coded red glow, label "C(s)". On "straight to carbon dioxide" one arrow "C → CO₂"; on "carbon monoxide first" a two-arrow path "C → CO → CO₂". Heading writes: "Why do different routes give the same ΔH?". Chips "more", "less", "the same". On "same" the 3 s `Countdown` ring runs. Hand tags: slate "one step?" on the direct arrow and "two steps?" on the path, with a `PenArrow` between them; pen ring on "C(s)".
 
 ### 2. same start, same finish
 > The same. Burning carbon straight to carbon dioxide releases three hundred and ninety-three point five kilojoules per mole. Going via carbon monoxide, the first step releases one hundred and ten point five, and the second releases two hundred and eighty-three point zero. Add those, and you get three hundred and ninety-three point five again. Same start, same finish, same delta **H**.
 
-Visual: "the same" ticks. The two-route diagram draws: on "straight to carbon dioxide" levels "C(s) + O₂(g)" (top) and "CO₂(g)" (bottom) with the direct arrow "−393.5 kJ mol⁻¹"; on "the first step" the middle level "CO(g) + ½O₂(g)" and arrow "−110.5"; on "the second" the arrow "−283.0". On "Add those" the row "−110.5 + (−283.0) = −393.5" writes under the steps. On "Same start" the top level pulses; on "same finish" the bottom level; on "H" both routes pulse together.
+Visual: "the same" ticks. Stage: the diagram fills the right two thirds, the painted carbon a thumbnail at the left. The two-route diagram draws: on "straight to carbon dioxide" levels "C(s) + O₂(g)" (top) and "CO₂(g)" (bottom) with the direct arrow "−393.5 kJ mol⁻¹"; on "the first step" the middle level "CO(g) + ½O₂(g)" and arrow "−110.5"; on "the second" the arrow "−283.0". On "Add those" the route marker (Decisions) runs down the two steps with its readout ticking "ΔH so far: −110.5", then "−393.5", and the row "−110.5 + (−283.0) = −393.5" writes under the steps; a second marker runs the direct arrow and lands on the same "−393.5". On "Same start" the top level pulses; on "same finish" the bottom level; on "H" both routes pulse together. Red hand tag "same total" with a `ScribbleCircle` round the two readouts.
 
 ### 3. why it must be
 > Here's why it has to work. Enthalpy depends only on what the substances are and their states, not on how they got there. It's like height above sea level. Walk from the beach up to a lookout by a steep track or a gentle one, and you climb the same height, even though you walk different distances. And if two routes gave different energy changes, you could go out by one route and come back by the other, making energy from nothing. Conservation of energy rules that **out**.
 
-Visual: on "depends only on what the substances are" a grey tag "enthalpy is a state function". On "height above sea level" clear change to the altitude panel: a beach flag and a lookout flag; on "a steep track or a gentle one" two coded tracks draw; on "the same height" one height bracket covers both; on "different distances" a "distance walked" counter reads differently for each track (tag "depends on the route"). On "go out by one route" the panel returns to the carbon diagram and an arrow loop runs down the direct route and back up the two-step route with a "+energy?" counter; on "out" the counter is crossed (tag "conservation of energy").
+Visual: on "depends only on what the substances are" a grey tag "enthalpy is a state function". On "height above sea level" clear change to the altitude panel: a beach flag and a lookout flag; on "a steep track or a gentle one" two coded tracks draw; on "the same height" one height bracket covers both; on "different distances" live counters run as two markers climb: "height climbed" ends equal on both tracks, while "distance walked" ends at different values (tag "depends on the route"). On "go out by one route" the panel returns to the carbon diagram and an arrow loop runs down the direct route and back up the two-step route with a "+energy?" counter; on "out" the counter is crossed (tag "conservation of energy"). Hand tags: slate "same height" on the bracket; grey "route matters here" on the distance counters; red "energy from nothing? no" on the crossed counter.
 
 ### 4. Hess's law
 > That's Hess's law. The enthalpy change for a reaction is the same whatever route it takes, so the enthalpy changes of the steps add up to the overall enthalpy change. It's why our imaginary route through separate atoms **worked**.
 
-Visual: on "Hess's law" a gloss card writes: "Hess's law: ΔH is the same whatever route a reaction takes, so the ΔH values of the steps add to the overall ΔH". On "the steps add up" the two step arrows slide end to end beside the direct arrow, matching its length. On "worked" a small thumbnail of v06's methane ladder (tag "m4-v06") with its up and down arrows equalling the direct arrow.
+Visual: on "Hess's law" a gloss card writes: "Hess's law: ΔH is the same whatever route a reaction takes, so the ΔH values of the steps add to the overall ΔH". On "the steps add up" the two step arrows slide end to end beside the direct arrow, matching its length. On "worked" a small thumbnail of v06's methane ladder (tag "m4-v06") with its up and down arrows equalling the direct arrow. Red hand tag "steps add" with a `PenArrow` along the end-to-end arrows.
 
 ### 5. measuring what we can
 > Hess's law matters most when a reaction can't be measured. Try to burn carbon to just carbon monoxide, and some of the carbon monoxide keeps burning to carbon dioxide, so you always get a mixture. But burning carbon completely, and burning carbon monoxide, can both be measured. So we can calculate the step we can't **measure**.
 
-Visual: the carbon card returns at the left. On "burn carbon to just carbon monoxide" a coded flame sketch over the carbon with arrows "CO" and, on "keeps burning", some "CO" arrows turning into "CO₂" (tag "a mixture"). On the diagram, the step 1 arrow turns grey with a "?" (tag "can't be measured cleanly"). On "burning carbon completely" the direct arrow ticks green "measured"; on "burning carbon monoxide" step 2 ticks green "measured". On "measure" the "?" on step 1 pulses.
+Visual: the carbon card returns at the left. On "burn carbon to just carbon monoxide" a coded flame sketch over the carbon with arrows "CO" and, on "keeps burning", some "CO" arrows turning into "CO₂" (tag "a mixture"). On the diagram, the step 1 arrow turns grey with a "?" (tag "can't be measured cleanly"). On "burning carbon completely" the direct arrow ticks green "measured"; on "burning carbon monoxide" step 2 ticks green "measured". On "measure" the "?" on step 1 pulses. Stage: the painted carbon large at the left with the flame sketch (stage change). Hand tags: grey "a mixture" with a pen ring on the turning arrows; green "measured" on both ticked arrows.
 
 ### 6. reversing an equation
 > To use measured equations, we often have to turn them around or resize them. First, reversing. If a reaction gives out two hundred and eighty-three kilojoules going forwards, then going backwards it must take in exactly two hundred and eighty-three. So when you reverse an equation, delta H keeps its size, but changes **sign**.
 
-Visual: clear change to an equation card: "CO(g) + ½O₂(g) → CO₂(g)  ΔH = −283.0 kJ mol⁻¹" (red). On "going forwards" an orange arrow out of the card; on "going backwards" the card flips over (teal outline) to "CO₂(g) → CO(g) + ½O₂(g)  ΔH = +283.0 kJ mol⁻¹" (blue) with a blue arrow in. On "sign" a rule chip: "reverse → ΔH × (−1)".
+Visual: clear change to an equation card: "CO(g) + ½O₂(g) → CO₂(g)  ΔH = −283.0 kJ mol⁻¹" (red). On "going forwards" an orange arrow out of the card; on "going backwards" the card flips over (teal outline) to "CO₂(g) → CO(g) + ½O₂(g)  ΔH = +283.0 kJ mol⁻¹" (blue) with a blue arrow in. On "sign" a rule chip: "reverse → ΔH × (−1)". Stage: the equation card fills the centre (48 px). Teal hand tag "backwards: same size, opposite sign" with a `PenArrow` from the flipped sign to the rule chip.
 
 ### 7. scaling an equation
 > Second, scaling. Delta H belongs to the equation as written. Burning two moles of carbon monoxide releases twice as much energy as burning one. So if you multiply or divide an equation by a number, you do the same to delta **H**.
 
-Visual: on "belongs to the equation as written" the card "CO(g) + ½O₂(g) → CO₂(g)  ΔH = −283.0" with a grey tag "m4-v01". On "two moles of carbon monoxide" the card stretches (amber outline): "2CO(g) + O₂(g) → 2CO₂(g)  ΔH = −566.0 kJ mol⁻¹", the coefficients and ΔH changing together. On "H" a rule chip: "scale by n → ΔH × n".
+Visual: on "belongs to the equation as written" the card "CO(g) + ½O₂(g) → CO₂(g)  ΔH = −283.0" with a grey tag "m4-v01". On "two moles of carbon monoxide" the card stretches (amber outline): "2CO(g) + O₂(g) → 2CO₂(g)  ΔH = −566.0 kJ mol⁻¹", the coefficients and ΔH changing together. On "H" a rule chip: "scale by n → ΔH × n". Amber hand tag "× 2, both together" with a pen ring on the 2 and on −566.0.
 
 ### 8. the target
 > Let's find delta H for carbon burning to carbon monoxide. The target is carbon plus half a mole of oxygen, giving carbon monoxide. We're given two measured equations. Equation one, carbon plus oxygen gives carbon dioxide, minus three hundred and ninety-three point five. Equation two, two carbon monoxide plus oxygen gives two carbon dioxide, minus five hundred and sixty-six point **zero**.
 
-Visual: board settles into the calculation layout. Task strip: "Find ΔH for C(s) + ½O₂(g) → CO(g)". On "The target is" the target strip pins at the top: "target: C(s) + ½O₂(g) → CO(g)  ΔH = ?" (gloss "target equation: the equation whose ΔH we want"). On "Equation one" card (1): "C(s) + O₂(g) → CO₂(g)  ΔH = −393.5 kJ mol⁻¹"; on "Equation two" card (2): "2CO(g) + O₂(g) → 2CO₂(g)  ΔH = −566.0 kJ mol⁻¹" (tag "both measured").
+Visual: board settles into the calculation layout. Task strip: "Find ΔH for C(s) + ½O₂(g) → CO(g)". On "The target is" the target strip pins at the top: "target: C(s) + ½O₂(g) → CO(g)  ΔH = ?" (gloss "target equation: the equation whose ΔH we want"). On "Equation one" card (1): "C(s) + O₂(g) → CO₂(g)  ΔH = −393.5 kJ mol⁻¹"; on "Equation two" card (2): "2CO(g) + O₂(g) → 2CO₂(g)  ΔH = −566.0 kJ mol⁻¹" (tag "both measured"). On "zero" both cards gain a green tick "measured". Green hand tag "the one we want" with a pen ring on the target strip.
 
 ### 9. reverse and halve
 > The target has carbon on the left, and so does equation one, so keep equation one as it is. The target has carbon monoxide on the right, but equation two has it on the left, so reverse it. Now delta H is plus five hundred and sixty-six. The target needs one carbon monoxide, not two, so halve the equation, giving plus two hundred and eighty-three point **zero**.
 
-Visual: on "carbon on the left" the C in the target and in card (1) ring together; card (1) ticks "keep". On "carbon monoxide on the right" the CO in the target rings; on "equation two has it on the left" the 2CO in card (2) rings red. On "reverse it" card (2) flips (teal outline): "2CO₂(g) → 2CO(g) + O₂(g)  ΔH = +566.0". On "one carbon monoxide, not two" the coefficient 2 is ringed; on "halve the equation" the card shrinks (amber outline): "CO₂(g) → CO(g) + ½O₂(g)  ΔH = +283.0 kJ mol⁻¹" (row beside it "+566.0 ÷ 2 = +283.0"); on "zero" the ΔH pulses blue.
+Visual: on "carbon on the left" the C in the target and in card (1) ring together; card (1) ticks "keep". On "carbon monoxide on the right" the CO in the target rings; on "equation two has it on the left" the 2CO in card (2) rings red. On "reverse it" card (2) flips (teal outline): "2CO₂(g) → 2CO(g) + O₂(g)  ΔH = +566.0". On "one carbon monoxide, not two" the coefficient 2 is ringed; on "halve the equation" the card shrinks (amber outline): "CO₂(g) → CO(g) + ½O₂(g)  ΔH = +283.0 kJ mol⁻¹" (row beside it "+566.0 ÷ 2 = +283.0"); on "zero" the ΔH pulses blue. Hand tags: teal "wrong side: reverse" on card (2); amber "÷ 2" with a `PenArrow` from the 2 to +283.0.
 
 ### 10. add and cancel
 > Now add the two equations. Carbon dioxide appears on both sides, so it cancels. It's an intermediate, made in one step and used up in the next. Oxygen is one mole on the left and half a mole on the right, which leaves half on the left. What's left is carbon plus half oxygen giving carbon monoxide, exactly the target. So delta H is minus three hundred and ninety-three point five plus two hundred and eighty-three point zero, which is minus one hundred and ten point **five**.
 
-Visual: the cancel board: card (1) and the adjusted card (2) stack, and a sum line writes "C(s) + O₂(g) + CO₂(g) → CO₂(g) + CO(g) + ½O₂(g)". On "Carbon dioxide appears on both sides" both CO₂ ring and strike through grey; on "an intermediate" gloss "intermediate: made in one step, used up in the next". On "one mole on the left and half a mole on the right" O₂ and ½O₂ ring; ½O₂ strikes through and the left O₂ becomes "½O₂". On "exactly the target" the remaining species slide into "C(s) + ½O₂(g) → CO(g)" and the target strip turns green. On "minus three hundred and ninety-three point five plus two hundred and eighty-three point zero" the row "ΔH = −393.5 + (+283.0)"; on "five" "= −110.5 kJ mol⁻¹" (red, ringed).
+Visual: the cancel board: card (1) and the adjusted card (2) stack, and a sum line writes "C(s) + O₂(g) + CO₂(g) → CO₂(g) + CO(g) + ½O₂(g)". On "Carbon dioxide appears on both sides" both CO₂ ring and strike through grey; on "an intermediate" gloss "intermediate: made in one step, used up in the next". On "one mole on the left and half a mole on the right" O₂ and ½O₂ ring; ½O₂ strikes through and the left O₂ becomes "½O₂". On "exactly the target" the remaining species slide into "C(s) + ½O₂(g) → CO(g)" and the target strip turns green. On "minus three hundred and ninety-three point five plus two hundred and eighty-three point zero" the row "ΔH = −393.5 + (+283.0)"; on "five" "= −110.5 kJ mol⁻¹" (red), framed in a dark-ink box with a green tick (52 px). Stage: the cancel board fills the frame (stage change from the cards); the target strip stays pinned. Grey hand tag "made, then used" on the struck CO₂; slate hand tag "1 − ½ = ½" on the oxygen.
 
 ### 11. check it
 > That's the data value for forming carbon monoxide. On the energy diagram, it's the first step of the two-step route, found from two reactions we can actually measure. Always check the target before you add the delta H values. If something hasn't cancelled, you've solved a different **reaction**.
 
-Visual: on "the data value" a slate chip "data: −110.5 kJ mol⁻¹" beside the result. On "On the energy diagram" the two-route diagram returns at the left; the step 1 arrow loses its "?" and fills "−110.5" (red). On "check the target" the green target strip pulses with a tick "matches target"; on "reaction" a ghost sum with an uncancelled "CO₂" left over, tagged "not the target", fades in and is crossed.
+Visual: on "the data value" a slate chip "data: −110.5 kJ mol⁻¹" beside the result. On "On the energy diagram" the two-route diagram returns at the left; the step 1 arrow loses its "?" and fills "−110.5" (red). On "check the target" the green target strip pulses with a tick "matches target"; on "reaction" a ghost sum with an uncancelled "CO₂" left over, tagged "not the target", fades in and is crossed. Stage: the diagram takes the left half with the result framed at the right. Green hand tag "check first" with a pen ring on the target tick; the crossed ghost sum carries a red hand tag "not the target".
 
 ### 12. two traps
 > Two traps. Forget to flip the sign, and you get minus six hundred and seventy-six point five. Forget to halve, and you get plus one hundred and seventy-two point five, which would make burning carbon endothermic. Whatever you do to an equation, do the same to its delta **H**.
 
-Visual: on "Forget to flip the sign" a crossed row "−393.5 + (−283.0) = −676.5"; on "Forget to halve" a crossed row "−393.5 + 566.0 = +172.5" with a tag "burning carbon endothermic? impossible". On "Whatever you do to an equation" a card flips and stretches with its ΔH moving with it; on "H" the two rule chips from scenes 6 and 7 pulse.
+Visual: on "Forget to flip the sign" a crossed row "−393.5 + (−283.0) = −676.5"; on "Forget to halve" a crossed row "−393.5 + 566.0 = +172.5" with a tag "burning carbon endothermic? impossible". On "Whatever you do to an equation" a card flips and stretches with its ΔH moving with it; on "H" the two rule chips from scenes 6 and 7 pulse. Stage: the two crossed rows fill the frame at 44 px. Red hand tags "flip it!" and "halve it!" on the two rows.
 
 ### 13. the rule
 > Here's the rule. Flip it, flip the sign. Scale it, scale delta H. Then add, and check the **target**.
 
-Visual: the memory line writes large in the explainer's handwriting style: "Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target." On "Flip it" a card flips (teal); on "Scale it" a card stretches (amber); on "target" the green target strip ticks.
+Visual: the memory line writes large in the explainer's hand font as a framed card (dark ink, 44 px): "Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target." On "Flip it" a card flips (teal); on "Scale it" a card stretches (amber); on "target" the green target strip ticks.
 
 ### 14. attempt 1 (countdown, 10 seconds)
 > Your turn. Sulfur burns to sulfur dioxide, delta H minus two hundred and ninety-six point eight kilojoules per mole. Two sulfur dioxide plus oxygen gives two sulfur trioxide, delta H minus one hundred and ninety-seven point eight. Calculate delta H for sulfur plus one and a half oxygen giving sulfur trioxide. Pause here to answer.
@@ -142,7 +145,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 15. feedback 1 (brief)
 > Keep the first equation. Halve the second, so it makes one sulfur trioxide, with delta H minus ninety-eight point nine. Add them, and sulfur dioxide cancels, leaving the target. Delta H is minus two hundred and ninety-six point eight plus minus ninety-eight point nine, which is minus three hundred and ninety-five point seven kilojoules per mole. Forgetting to halve gives minus four hundred and ninety-four point **six**.
 
-Visual: card shrinks to the top. Rows on cue: "(1) keep: S(s) + O₂(g) → SO₂(g)  −296.8"; "(2) ÷ 2: SO₂(g) + ½O₂(g) → SO₃(g)  −98.9" (amber outline); "add: SO₂ cancels; O₂ + ½O₂ = 3/2 O₂ → target ✓"; "ΔH = −296.8 + (−98.9) = −395.7 kJ mol⁻¹" (red). On "six" a chip "−296.8 + (−197.8) = −494.6" fades in and is crossed, note "not halved". Hold about 1 second.
+Visual: card shrinks to the top. Rows on cue: "(1) keep: S(s) + O₂(g) → SO₂(g)  −296.8"; "(2) ÷ 2: SO₂(g) + ½O₂(g) → SO₃(g)  −98.9" (amber outline); "add: SO₂ cancels; O₂ + ½O₂ = 3/2 O₂ → target ✓"; "ΔH = −296.8 + (−98.9) = −395.7 kJ mol⁻¹" (red). On "six" a chip "−296.8 + (−197.8) = −494.6" fades in and is crossed, note "not halved". Hold about 1 second. The ΔH row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "halve it too".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Nitrogen and oxygen form two nitrogen monoxide, delta H plus one hundred and eighty point five. Two nitrogen dioxide breaks down into two nitrogen monoxide and oxygen, delta H plus one hundred and fourteen point one. Calculate delta H for half a nitrogen plus oxygen giving nitrogen dioxide. Pause here to answer.
@@ -152,7 +155,7 @@ Visual: `QuestionCard`: "Use the following thermochemical equations: N₂(g) + O
 ### 17. feedback 2 (brief)
 > Halve the first equation, plus ninety point two five. Reverse and halve the second, so nitrogen dioxide is a product, minus fifty-seven point zero five. Add them. Nitrogen monoxide cancels, and the two halves of oxygen add to one, leaving the target. Delta H is plus thirty-three point two kilojoules per mole. Keeping the second sign positive gives plus one hundred and forty-seven point **three**.
 
-Visual: card shrinks. Rows on cue: "(1) ÷ 2: ½N₂(g) + ½O₂(g) → NO(g)  +90.25" (amber); "(2) reversed, ÷ 2: NO(g) + ½O₂(g) → NO₂(g)  −57.05" (teal and amber outline); "add: NO cancels; ½O₂ + ½O₂ = O₂ → target ✓"; "ΔH = +90.25 + (−57.05) = +33.2 kJ mol⁻¹" (blue). On "three" a chip "+90.25 + 57.05 = +147.3" fades in and is crossed, note "sign not flipped". Hold about 1 second.
+Visual: card shrinks. Rows on cue: "(1) ÷ 2: ½N₂(g) + ½O₂(g) → NO(g)  +90.25" (amber); "(2) reversed, ÷ 2: NO(g) + ½O₂(g) → NO₂(g)  −57.05" (teal and amber outline); "add: NO cancels; ½O₂ + ½O₂ = O₂ → target ✓"; "ΔH = +90.25 + (−57.05) = +33.2 kJ mol⁻¹" (blue). On "three" a chip "+90.25 + 57.05 = +147.3" fades in and is crossed, note "sign not flipped". Hold about 1 second. The ΔH row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "flip the sign".
 
 ### 18. conclusion and handoff
 > So we can add reaction enthalpies along different paths because enthalpy depends only on the start and the finish. Reverse or scale each step together with its delta H, cancel what appears on both sides, and add. Now look at the two numbers we used for carbon. Each one is the enthalpy change for making one mole of a compound from its elements. Chemists list values like these for thousands of compounds. So how do they give a reaction's delta **H**?
@@ -163,12 +166,13 @@ Visual: the memory line returns small at the top. On "depends only on the start 
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Hess's law: ΔH for a reaction is the same whatever route it takes, so the ΔH values of the steps add to the overall ΔH. (Enthalpy depends only on the start and end substances; otherwise energy could be created.)
-2. Reverse an equation: ΔH changes sign. Multiply or divide an equation: ΔH is multiplied or divided by the same number.
-3. Method: write the target; place each species on the correct side; reverse or scale; add; cancel intermediates; check the target; add the ΔH values.
-4. C(s) + ½O₂(g) → CO(g): ΔH = −393.5 + 283.0 = −110.5 kJ mol⁻¹ (from two measurable combustions).
+1. Hess's law: ΔH is the same by any route, so the steps' ΔH values add.
+2. Reverse an equation: ΔH changes sign.
+3. Multiply or divide an equation: do the same to ΔH.
+4. Method: target first; reverse or scale; add; cancel; check the target; add ΔH.
+5. C(s) + ½O₂(g) → CO(g): −393.5 + 283.0 = −110.5 kJ mol⁻¹.
 
-Memory aid (large, on the notes screen): *Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target.*
+Memory aid (framed card, on the notes screen): *Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target.*
 
 At the end the notes cross-fade back to scene 18's final frame.
 
@@ -219,7 +223,7 @@ Checked with Python (6 November); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (6 November; build parser rules): **6,213 characters**, 19 scenes (per scene: 389, 382, 471, 226, 325, 324, 225, 387, 359, 473, 292, 272, 97, 332, 419, 323, 395, 447, 75). At 13.3 characters per second the speech is about 467 s; add about 10 s of settling (the two-route diagram in 2, the altitude panel in 3, the cancel board in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold: **about 558 s**.
+Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,213 characters**, 19 scenes (per scene: 389, 382, 471, 226, 325, 324, 225, 387, 359, 473, 292, 272, 97, 332, 419, 323, 395, 447, 75; Revision 1: 6,213). At 13.3 characters per second the speech is about 467 s; add about 12 s of settling (the two-route diagram and route marker in 2, the altitude counters in 3, the cancel board in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 560 s** (Revision 1: about 558 s).
 
 ## Scene list and build ids
 
@@ -237,7 +241,7 @@ Have (inspected 6 November on a dark contact sheet; uniform scaling only, never 
 - `public/assets/chemistry/c4-icon-carbon-lump-v1.png` (1600 × 1600, RGBA; a black, glassy lump of carbon, reads as charcoal or coal): scenes 1, 5, 18, final frame, with a coded glow and the label "C(s)".
 - **Inspected, not used:** `m8-graphite-furnace-v1.png` (an instrument part, not a fuel); `c6-furnace-tube-v1.png` (a different context).
 
-Need: no new plates.
+Need: no new plates (Revision 2: the carbon plate stays on screen as a thumbnail through scenes 1 to 5).
 
 Coded: two-route diagram, altitude panel, energy loop, equation cards with flip and stretch, cancel board, target strip, calculation rows, chips, cards, countdowns, key notes board.
 
@@ -280,3 +284,24 @@ Previous: How do broken and formed bonds determine an approximate enthalpy chang
 
 - Revision 1 has had no independent review. Next: student learning review (is the conservation loop in scene 3 followable; can students track the oxygen bookkeeping in scene 10), then the science check and Codex error check.
 - Checker output (6 November): see "Narration length estimate"; no em dash; every quoted cue found in its scene's narration in spoken order.
+- Brief 184 reviews (6 November): 0 blocker, 0 should fix, 0 optional.
+- Checker output (Revision 2, 6 November): narration 6,213 characters (per scene in "Narration length estimate"); no em dash; every bold cue quoted in its scene's Visual in spoken order (scene 8's "zero" cue, unquoted in Revision 1, is now quoted).
+
+## Revision 2 (6 Nov 2026)
+
+Brief 184 findings (`checks/c-y11-m4-v07-learning-review.md`, `checks/c-y11-m4-v07-science-check.md`): 0 blocker, 0 should fix, 0 optional. Nothing to resolve; the carbon comparison, the separate reverse and scale steps, the pinned target and the altitude analogy are kept as the reviewers asked.
+
+Visual upgrade (teaching logic and narration unchanged):
+- Scene 1 opens on m4-v06's final frame (unchanged) and cuts to the painted carbon in the same scene; the carbon stays as a thumbnail through scenes 2 to 4 and returns large in 5.
+- Live readouts: the route marker (scene 2) ticks "ΔH so far" −110.5 then −393.5 along the two-step route and lands on the same −393.5 by the direct route (−110.5 + (−283.0) = −393.5); the altitude panel (scene 3) runs live "height climbed" (equal) and "distance walked" (different) counters.
+- Stage list written (Board layout): the Revision 1 calculation stretch (scenes 8 to 12, about 134 s) splits into the calculation layout (8, 9), the full-width cancel board (10), the diagram check (11) and the trap stage (12), each under about 56 s.
+- Framed answers with a green tick: −110.5 kJ mol⁻¹ (10), −395.7 (feedback 1), +33.2 (feedback 2). Crossed slips carry red hand tags ("flip it!", "halve it!", "halve it too", "flip the sign", "not the target").
+- Hand tags and a pen mark in role colours in every teaching scene (1 to 12).
+- Scene 8's bold cue "zero" is now quoted in its Visual.
+- Memory line as a framed card; key notes cut to five short bullets (about 350 characters of bullet text).
+- Decisions gain "Colour roles", "Type sizes", "Simulation" and a revised "Board layout".
+- Question cards already arrive with their full text; unchanged. The opening and the final frame are unchanged, so the joins with m4-v06 and m4-v08 hold.
+
+New plate requests: none.
+
+Counts: 6,213 characters (Revision 1: 6,213, unchanged); about 558 s to about 560 s.

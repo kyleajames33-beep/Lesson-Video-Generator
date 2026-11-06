@@ -25,3 +25,10 @@ Claude (root), 5 November 2026. Earlier course decisions in `root-decisions-chem
 ## After brief 183 repairs (6 November 2026)
 
 - **m4-v01 spirit burner:** m3 decision 19 applies (footage or painted stills, "follow your school's approved method", SDS named in the author note). No method is presented as school-approved.
+
+## After brief 184 repairs (6 November 2026)
+
+- **Notes holds:** m4-v08 and v09 hold the quiet key notes for about 50 s, so they stay under 570 s; the floor is 40 s. Accepted.
+- **Limestone and quicklime plates:** accepted at native 1254 px. They register to within about 3 px; check the crossfade at playback, and if the shift shows, cut instead of crossfading.
+- **Practical methods (v03 spirit burner, v04 dissolution):** m3 decision 19 applies (footage or painted stills, "follow your school's approved method", SDS named in the author note). No school method or SDS link is needed from the owner before recording.
+- **New plates approved (v11):** `y11c-gas-jar-open-v1.png` (the same jar with no cover slip and a clean rim, registered for the rim-to-rim pair) and `y11c-gas-jar-cover-slip-v1.png`. A checked crop and mask of the existing jar is an acceptable alternative.
