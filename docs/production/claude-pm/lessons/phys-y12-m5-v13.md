@@ -1,8 +1,8 @@
 # Year 12 Physics M5 V13: The conical pendulum. How does string tension sustain a conical pendulum? (design)
 
-Status: Revision 1 (6 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,654 characters, 17 scenes, about 514 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v12's final frame.
+Narration 5,654 characters, 17 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v12's final frame.
 
 Scope: thirteenth video of Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), third video on circular motion, inquiry question "Why do objects move in circles?". Templates: `phys-y12-m5-v01.md` and `phys-y12-m5-v10.md` (this run's structure), `phys-y11-fa1-v01.md`, `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief format). No starter pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only; the same lesson as v12): card 1 "Conical Pendulum" with its free-body diagram, text description, relationships and worked example 1, the interactive, Activity 1 Q1, short-answer Q1, the "Copy into your books" box and the lesson 9 "Analyse 6 marks" answer on a mass on a string (also read in full for v15): `C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson08.sa.html`, SHA256 `9bcb63c78453091f25d5f5a84d39512bad41ec23ae411fd2555b7d28eb565a4a` (recomputed 6 Nov; matches the route), and `lesson09.sa.html`, SHA256 `437d0357bca1619358587f6775d5f70be1d243026aff5b9cea4c1a0fca07b74f`. Route entry: `phys-y12-m5-v13` in `../../programme/phys-y12-route-inputs.json`, section `l08-conical-title`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Resolve one tension vector into vertical balance and inward resultant; relate string length to horizontal radius. Stop before banked friction." Next: "phys-y12-m5-v14: How does a banked road reduce reliance on friction?"
 
@@ -41,10 +41,26 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
 - **Legacy logic ported:** none. The coded family `m5-conical-pendulum` (`src/explainer/physics/module5/rotation-details/`; ideal string, fixed 30°, side and top projections) is reused and extended to change angle and to show the bob plate (kit gaps).
 - **New explainer motion:** **conical pendulum stage** (extends `m5-conical-pendulum`: side view with the plates, string and dashed circle in perspective; a synchronised top-view inset; force arrows drawn at the right-hand extreme on one force scale; dashed components; an angle parameter that can step 30°, 45°, 60°); **road cross-section stage** (from v12) with tilt for the handoff; `AlignedAlgebra`; `Countdown` (3 s in scene 1; 10 s in scenes 12 and 14); `QuestionCard`; `Chip` with `cross`; `PenArrow`; `ScribbleCircle`; `KeyNotes`; `Heading`.
 - **Board layout:** heading top-left; the pendulum stage on the left (stand base on a bench line above the bottom 12%); the top-view inset at the top right; working below it on the right.
+- **Colour roles (Revision 2, fixed for the whole video; root decision 10):** tension F_T and weight mg amber; the vertical component F_T cos θ and every vertical balance line blue; the horizontal, inward component F_T sin θ teal; acceleration violet; velocity teal (top view only); L, r, h, θ and givens navy; framed answers in a dark-ink box; crossed mistakes and their hand tags red. Hand-font tags take the colour of the quantity they mark, and the same colours run through the pendulum stage, the triangle, the force close-up, the working, the readouts and the key notes.
+- **Type sizes (Revision 2, 1080p):** the current working line at least 44 px (scenes 7 to 9 and the feedback rows 52 px; the boxed "tan θ = v²/(rg)" and "T = 2π√(h/g)" 60 px); live readouts (scenes 5 and 6: θ, F_T, the vertical part, v, r) about 52 px; supporting lines, givens, brackets and chips 30 to 36 px; hand-font tags at least 30 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
+- **Anchor (Revision 2).** The painted retort stand, boss and crossbar and steel ball (all existing, inspected 6 Nov with the Read tool) are the first frame (v12's final frame) and the real object for scenes 1, 2, 6, 9 and 10; the steel ball plate, enlarged to about 160 px, is the bob in the force close-up (4, 5); the painted rear-view car carries the handoff.
+- **Scene-level redesign (Revision 2, high-risk list in `../checks/visual-standard-audit-chem-y11-phys-y12.md`).** Revision 1 held one pendulum stage for scenes 1 to 6 (about 2,140 characters, about 165 s) and one calculation board for scenes 7 to 9 (about 105 s). Narration, numbers and teaching order are kept; the stages change:
+  1. Scene 1: the pendulum stage (plates), as v12 left it.
+  2. Scene 2: a camera tilt to a **perspective cone stage**: the camera rises so the horizontal circle reads as a wide ellipse and the cone as a solid, the centre dot and dashed radius large; the top-view inset beside it.
+  3. Scene 3: a camera push to a **triangle stage**: the right triangle (string L, height h, radius r) lifts out of the pendulum and enlarges to fill the right two-thirds of the frame; the pendulum stays small at the left.
+  4. Scenes 4 and 5: a clear change to a **force close-up**: the steel ball plate large at the centre with the tension arrow, components replacing it, and the two equations at the right; scene 5 adds a live angle control (below).
+  5. Scene 6: a camera change back to the full pendulum with a live speed slider (below).
+  6. Scene 7: full-width working (radius and tension).
+  7. Scene 8: a camera change to a **check stage**: the force close-up returns at the left with "1.13 N" written on the teal arrow, and the mv²/r line at the right reaching the same 1.13 N.
+  8. Scene 9: a clear change to a **period stage**: the pendulum plates lapping against a large clock (1.32 s) with the h bracket glowing, the derivation at the right.
+  No set-up now runs past about 60 s.
+- **Simulation (Revision 2).** Two live controls with readouts on the core idea:
+  - Scene 5 (cause: the vertical part must stay equal to mg): on the force close-up an angle control sweeps θ from 30° towards 89° while the vertical blue part stays fixed at mg and readouts update every frame: navy "θ", blue "F_T cos θ = 1.96 N" (fixed), amber "F_T" (30°: 2.26 N; 60°: 3.92 N; 80°: 11.29 N; 85°: 22.49 N; 89°: 112.3 N) and teal "F_T sin θ" (1.13, 3.39, 11.12, 22.40, 112.3 N); the amber arrow runs off the frame edge with an arrowhead marker "→ ∞ at 90°". At 90° a ghost string shows no blue part at all.
+  - Scene 6 (effect: faster swings out): on the full pendulum a speed slider steps the steady speed while θ follows (author note b): readouts teal "v", navy "θ", navy "r", amber "F_T" (1.19 m s⁻¹: 30°, 0.25 m, 2.26 N; 1.86 m s⁻¹: 45°, 0.354 m, 2.77 N; 2.71 m s⁻¹: 60°, 0.433 m, 3.92 N); the circle widens and the cone flattens. Each stop is a steady state (the slider pauses at each value).
 - **No human figures.** No hand spins the bob; nobody holds the stand.
 - **Author notes (not learner copy):**
   (a) Side-view arrows: when the bob is at the extreme left or right of its circle, the string, tension and both components lie in the plane of the screen and show their true lengths. At other positions the projected horizontal part shortens. The family draws arrows only at the right-hand extreme (its README: "projected pendulum arrows are projections of forces, not changing true magnitudes").
-  (b) Angle steps for scene 6 (m = 0.20 kg, L = 0.50 m): 30°: v = 1.19 m s⁻¹, F_T = 2.26 N; 45°: v = 1.86 m s⁻¹, F_T = 2.77 N; 60°: v = 2.71 m s⁻¹, F_T = 3.92 N. Values are not narrated or shown; the arrows scale with them.
+  (b) Angle steps for scene 6 (m = 0.20 kg, L = 0.50 m): 30°: v = 1.19 m s⁻¹, F_T = 2.26 N; 45°: v = 1.86 m s⁻¹, F_T = 2.77 N; 60°: v = 2.71 m s⁻¹, F_T = 3.92 N. Values are not narrated; Revision 2 shows them as slider readouts and the arrows scale with them.
   (c) The string is ideal (light, inextensible) and air resistance is ignored, so the motion is uniform; a real bob slowly loses speed and needs a small push to keep going, which the video does not show.
   (d) Period: T = 2πr/v = 2π√(r/(g tan θ)) and r/tan θ = L sin θ cos θ/sin θ = L cos θ = h. Not dependent on m.
   (e) Pronunciations: "F T" for F_T; "sine thirty"; "cosine thirty"; "tan thirty"; "theta".
@@ -66,93 +82,94 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 ### 1. hook (could the string be horizontal?)
 > Here's that steel ball, going round in a horizontal circle on a string. The string slants, tracing out a cone, so this is called a conical pendulum. Now imagine the ball going faster and faster. Could it ever go fast enough for the string to be perfectly **horizontal**? Make a **prediction**.
 
-Visual: opens on v12's final frame (see "Opening frame"); the bob sets off round its circle again, the "?" and the "Next" chip fade. On "conical pendulum" the faint cone outline brightens and a chip "conical pendulum" writes. On "faster and faster" the bob speeds up a little and the string swings out (from 30° to about 40°, illustrative). On "horizontal" a dashed grey horizontal line draws from the pivot. On "prediction" two chips "Yes, if it's fast enough" and "No, never", and a 3 s `Countdown`. The bob returns to 30° during the countdown.
+Visual: opens on v12's final frame (see "Opening frame"); the bob sets off round its circle again, the "?" and the "Next" chip fade. On "conical pendulum" the faint cone outline brightens and a chip "conical pendulum" writes. On "faster and faster" the bob speeds up a little and the string swings out (from 30° to about 40°, illustrative). On "horizontal" a dashed grey horizontal line draws from the pivot. Hand tags: navy "fixed support" by the crossbar tip, amber "string slants" along the string, and a navy pen ring round the faint cone. On "prediction" two chips (36 px) "Yes, if it's fast enough" and "No, never", and a 3 s `Countdown`. The bob returns to 30° during the countdown.
 
 ### 2. two forces, one centre
 > Only two forces act on the ball. The tension pulls along the string, towards the support, and the weight pulls straight down. There's no third arrow for centripetal force, because that's a job, not a force. And notice where the centre of the circle is. It isn't the support. It's level with the ball, directly below the support. So the net force has to be horizontal, pointing at that **centre**.
 
-Visual: the bob pauses at the right-hand edge of its circle (author note a). On "The tension pulls along the string" an amber arrow "F_T" from the bob along the string towards the pivot; on "the weight pulls straight down" an amber arrow "mg". On "no third arrow" a faint dashed third arrow "centripetal force" appears and is crossed. On "It isn't the support" a navy dashed line from the pivot to the bob is crossed (caption "not the centre"); on "level with the ball" a navy dot at the circle's centre and a dashed horizontal radius from the bob to it. On "centre" a violet arrow "a" along that radius and a chip "net force: horizontal, towards the centre". The top-view inset appears at the top right: the circle from above, the bob, and the violet arrow to the centre.
+Visual: camera tilt to the perspective cone stage (Revision 2): the camera rises so the circle reads as a wide ellipse and the cone as a pale solid; the bob pauses at the right-hand edge of its circle (author note a). On "The tension pulls along the string" an amber arrow "F_T" from the bob along the string towards the pivot; on "the weight pulls straight down" an amber arrow "mg". On "no third arrow" a faint dashed third arrow "centripetal force" appears and is crossed. On "It isn't the support" a navy dashed line from the pivot to the bob is crossed (caption "not the centre"); on "level with the ball" a navy dot at the circle's centre and a dashed horizontal radius from the bob to it. On "centre" a violet arrow "a" along that radius and a chip "net force: horizontal, towards the centre". The top-view inset appears at the top right: the circle from above, the bob, and the violet arrow to the centre. Hand tags: navy "centre: level with the ball" by the centre dot, amber "only 2 forces" by the arrows, and a navy pen ring round the centre dot.
 
 ### 3. the geometry
 > Let's name the parts. The string has length L, and it makes an angle theta with the vertical. The radius of the circle is the horizontal distance from the ball to the centre, so r equals L sine **theta**. And the height of the support above the circle is h, which is L cosine **theta**. Keep those straight, because r is not L, and mixing them up is the most common slip in these questions.
 
-Visual: on "length L" a navy bracket along the string "L". On "angle theta with the vertical" a dashed vertical line from the pivot down to the circle's centre and an angle arc "θ" between it and the string. On "r equals L sine theta" the horizontal radius is bracketed "r = L sin θ". On "which is L cosine theta" the vertical dashed line is bracketed "h = L cos θ"; the right triangle (string, h, r) fills faintly. On "r is not L" the two brackets L and r flash side by side.
+Visual: camera push to the triangle stage (Revision 2): the pendulum shrinks to the left third and the right triangle (string, h, r) lifts out and enlarges to fill the right two-thirds, its sides drawn at about 500 px. On "length L" a navy bracket along the string "L". On "angle theta with the vertical" a dashed vertical line from the pivot down to the circle's centre and an angle arc "θ" between it and the string. On "r equals L sine theta" the horizontal radius is bracketed "r = L sin θ". On "which is L cosine theta" the vertical dashed line is bracketed "h = L cos θ"; the right triangle (string, h, r) fills faintly. On "r is not L" the two brackets L and r flash side by side. Hand tags: navy "sin: side opposite θ" by r, navy "cos: side next to θ" by h, and a red pen ring round "r ≠ L" written under the triangle.
 
 ### 4. resolve the tension
 > Now split the tension into two parts. Its vertical part is F T cosine theta, and its horizontal part, pointing at the centre, is F T sine theta. The ball doesn't move up or down, so the vertical part balances the weight. F T cosine theta equals m **g**. The horizontal part has nothing to balance it, so it's the net force, doing the centripetal job. F T sine theta equals m v squared over **r**. One string, doing two jobs at once.
 
-Visual: on "split the tension into two parts" dashed components draw from the bob: blue up "F_T cos θ", teal horizontal towards the centre "F_T sin θ" (the tension arrow fades to a faint outline so the parts replace it, never add to it). On "balances the weight" the blue component and the weight arrow pulse together; on "F T cosine theta equals m g" the line "vertical: F_T cos θ = mg" writes. On "nothing to balance it" the teal component pulses with the violet "a"; on "F T sine theta equals m v squared over r" the line "towards the centre: F_T sin θ = mv²/r". On "two jobs at once" chips "holds it up" (blue) and "pulls it in" (teal).
+Visual: clear change to the force close-up (Revision 2): the steel ball plate large at the centre left (about 160 px), the string running up out of frame, the amber F_T and mg arrows at full size, equations at the right. On "split the tension into two parts" dashed components draw from the bob: blue up "F_T cos θ", teal horizontal towards the centre "F_T sin θ" (the tension arrow fades to a faint outline so the parts replace it, never add to it). On "balances the weight" the blue component and the weight arrow pulse together; on "F T cosine theta equals m g" the line "vertical: F_T cos θ = mg" writes. On "nothing to balance it" the teal component pulses with the violet "a"; on "F T sine theta equals m v squared over r" the line "towards the centre: F_T sin θ = mv²/r". On "two jobs at once" chips "holds it up" (blue) and "pulls it in" (teal). Hand tags: blue "= mg" beside the blue part, teal "= net force" beside the teal part, and a teal pen arrow from the teal part to the violet "a".
 
 ### 5. why it can't be horizontal
 > That answers the question. If the string were horizontal, it would have no vertical part at all, and nothing would hold the ball up against its **weight**. So the string always slants, however fast the ball goes. It also means the tension is always bigger than the weight, because only part of it is holding the ball **up**.
 
-Visual: on "If the string were horizontal" a ghost string swings to the dashed horizontal line; its blue component shrinks to nothing; on "weight" the weight arrow pulses alone with the caption "nothing balances mg". On "always slants" the "No, never" chip from scene 1 ticks and "Yes" is crossed. On "bigger than the weight" "F_T = mg/cos θ > mg (cos θ < 1)"; on "up" the blue part is shown equal to mg beside the longer F_T.
+Visual: camera continue on the force close-up. On "If the string were horizontal" the live angle control runs (see "Simulation"): θ sweeps from 30° to 89° with the blue part held at 1.96 N, the amber F_T arrow lengthening and the readouts ticking (F_T 2.26, 3.92, 11.29, 22.49, 112.3 N); at the end a ghost string swings to the dashed horizontal line, its blue component shrinks to nothing, and on "weight" the weight arrow pulses alone with the caption "nothing balances mg". On "always slants" the "No, never" chip from scene 1 ticks and "Yes" is crossed. On "bigger than the weight" "F_T = mg/cos θ > mg (cos θ < 1)"; on "up" the blue part is shown equal to mg beside the longer F_T. "F_T > mg" sits in a dark-ink frame (52 px). Hand tags: red "no up part" by the ghost string, amber "grows without limit" by the long arrow, and a blue pen ring round the fixed "1.96 N" readout.
 
 ### 6. angle and speed
 > Divide the horizontal equation by the vertical one. The tension and the mass both cancel, and you get tan theta equals v squared over r **g**. So a faster ball swings out to a bigger angle. And as theta gets closer to ninety degrees, cosine theta shrinks, so the tension needed grows very **large**. That's why the string never quite reaches horizontal.
 
-Visual: on "Divide the horizontal equation by the vertical one" `AlignedAlgebra` stacks the two equations and divides: "F_T sin θ ÷ F_T cos θ = (mv²/r) ÷ mg"; on "both cancel" F_T and m strike through together; on "tan theta equals v squared over r g" "tan θ = v²/(rg)" boxed. On "a faster ball swings out to a bigger angle" the stage steps 30° to 45° to 60° (author note b), the bob's speed readout rising, the circle widening and the cone flattening. On "large" the tension arrow grows at each step and a small "F_T = mg/cos θ" tag pulses. On "never quite reaches horizontal" the stage returns to 30°.
+Visual: camera change back to the full pendulum (plates) with the equations at the right. On "Divide the horizontal equation by the vertical one" `AlignedAlgebra` stacks the two equations and divides: "F_T sin θ ÷ F_T cos θ = (mv²/r) ÷ mg"; on "both cancel" F_T and m strike through together; on "tan theta equals v squared over r g" "tan θ = v²/(rg)" boxed. On "a faster ball swings out to a bigger angle" the live speed slider steps 1.19, 1.86, 2.71 m s⁻¹ (see "Simulation") and the stage follows to 30°, 45° and 60° (author note b), with readouts v, θ, r and F_T, the circle widening and the cone flattening. On "large" the tension arrow grows at each step and a small "F_T = mg/cos θ" tag pulses. On "never quite reaches horizontal" the stage returns to 30°. "tan θ = v²/(rg)" is boxed in a dark-ink frame (60 px). Hand tags: teal "faster: wider" by the widening circle, amber "more pull" by the growing arrow, and a navy pen ring round θ in the boxed equation.
 
 ### 7. worked example: radius and tension
 > Let's try an example. A zero point two zero kilogram bob hangs on a zero point five zero metre string, at thirty degrees to the vertical. The bob is just the small mass on the end. First the radius. r is zero point five zero times sine thirty, which is zero point two five **metres**. Now the tension, from the vertical equation. F T equals m g over cosine theta, so zero point two zero times nine point eight, over cosine thirty. That's about two point two six **newtons**, a bit more than the weight of one point nine six newtons.
 
-Visual: clear change to the calculation layout with the pendulum stage small at the left (frozen at 30°). Task strip: "Find the radius, tension, speed and period." Givens in navy: "m = 0.20 kg", "L = 0.50 m", "θ = 30° to the vertical", "g = 9.8 m s⁻²". Equation strip: "r = L sin θ   F_T cos θ = mg". On "metres" `AlignedAlgebra` "r = 0.50 × sin 30° = 0.25 m". On "two point two six newtons" "F_T = mg/cos θ = (0.20 × 9.8) ÷ cos 30° = 1.96 ÷ 0.866 = 2.26 N". On "one point nine six newtons" a tag "mg = 1.96 N" beside it.
+Visual: clear change to the calculation layout with the pendulum stage small at the left (frozen at 30°). Task strip: "Find the radius, tension, speed and period." Givens in navy: "m = 0.20 kg", "L = 0.50 m", "θ = 30° to the vertical", "g = 9.8 m s⁻²". Equation strip: "r = L sin θ   F_T cos θ = mg". On "metres" `AlignedAlgebra` "r = 0.50 × sin 30° = 0.25 m". On "two point two six newtons" "F_T = mg/cos θ = (0.20 × 9.8) ÷ cos 30° = 1.96 ÷ 0.866 = 2.26 N". On "one point nine six newtons" a tag "mg = 1.96 N" beside it. "r = 0.25 m" and "F_T = 2.26 N" each sit in a dark-ink frame (52 px). A chip "F_T = mg = 1.96 N" fades in and is crossed (red tag "only the up part equals mg"). Hand tags: navy "sin for r" by the radius line, blue "vertical equation" by the tension line.
 
 ### 8. worked example: speed
 > Next, the speed. From tan theta equals v squared over r g, v equals the square root of r g tan theta. That's the square root of zero point two five times nine point eight times tan thirty, about one point one nine metres per **second**. As a check, the horizontal part of the tension, two point two six times sine thirty, is about one point one three newtons, and m v squared over r gives the same **value**.
 
-Visual: the radius and tension lines shrink to a "found" strip (r = 0.25 m, F_T = 2.26 N). Equation strip "v = √(rg tan θ)". On "second" "v = √(0.25 × 9.8 × tan 30°) = √1.41 = 1.19 m s⁻¹". On "two point two six times sine thirty" "F_T sin θ = 2.26 × 0.5 = 1.13 N"; on "value" "mv²/r = 0.20 × 1.19² ÷ 0.25 = 1.13 N ✓".
+Visual: camera change to the check stage (Revision 2): the force close-up returns at the left at 30°; the radius and tension lines shrink to a "found" strip (r = 0.25 m, F_T = 2.26 N) at the top right. Equation strip "v = √(rg tan θ)". On "second" "v = √(0.25 × 9.8 × tan 30°) = √1.41 = 1.19 m s⁻¹". On "two point two six times sine thirty" "F_T sin θ = 2.26 × 0.5 = 1.13 N" and the teal arrow on the close-up is labelled "1.13 N"; on "value" "mv²/r = 0.20 × 1.189² ÷ 0.25 = 1.13 N ✓" and a teal pen arrow joins the two 1.13 N values. "v = 1.19 m s⁻¹" sits in a dark-ink frame (52 px); hand tag teal "same 1.13 N: it checks".
 
 ### 9. the period
 > And the period. The ball goes once round a circle of radius zero point two five metres at one point one nine metres per second, so T equals two pi r over v, about one point three two **seconds**. Here's a surprise. If you put the speed formula into T equals two pi r over v, r over tan theta turns out to be just the height h. So T equals two pi times the square root of h over **g**. The period depends only on how far the circle sits below the support. The mass doesn't matter at **all**.
 
-Visual: equation strip "T = 2πr/v". On "seconds" "T = 2π × 0.25 ÷ 1.19 = 1.32 s"; the side view's bob laps once against a small clock reading 1.32 s. On "Here's a surprise" `AlignedAlgebra` "T = 2πr ÷ √(rg tan θ) = 2π√(r/(g tan θ))"; on "just the height h" "r/tan θ = L sin θ × cos θ/sin θ = L cos θ = h" with the h bracket on the stage glowing; on "g" "T = 2π√(h/g)" boxed, check "2π√(0.433 ÷ 9.8) = 1.32 s". On "all" a chip "no m in it".
+Visual: clear change to the period stage (Revision 2): the pendulum plates at the left, a large lap clock (about 220 px) above them, the derivation at the right. Equation strip "T = 2πr/v". On "seconds" "T = 2π × 0.25 ÷ 1.189 = 1.32 s" in a dark-ink frame (52 px); the bob laps once while the clock counts to 1.32 s. On "Here's a surprise" `AlignedAlgebra` "T = 2πr ÷ √(rg tan θ) = 2π√(r/(g tan θ))"; on "just the height h" "r/tan θ = L sin θ × cos θ/sin θ = L cos θ = h" with the h bracket on the stage glowing; on "g" "T = 2π√(h/g)" boxed, check "2π√(0.433 ÷ 9.8) = 1.32 s". On "all" a chip "no m in it"; "T = 2π√(h/g)" is boxed in a dark-ink frame (60 px). Hand tags: navy "only h matters" by the glowing h bracket, red "no m" by the chip, and a navy pen ring round h in the boxed formula.
 
 ### 10. the radius mistake
 > The classic slip is using the string length as the radius. Put r equals zero point five zero into the speed formula, and you get about one point six eight metres per second, which is far too **fast**. The ball goes round a circle of radius L sine theta, not L.
 
-Visual: the stage with the L and r brackets. On "string length as the radius" the r bracket stretches along the string, "r = L = 0.50 m". On "fast" "v = √(0.50 × 9.8 × tan 30°) = 1.68 m s⁻¹" with a chip "r = 0.50 m" crossed. On "not L" the correct "r = L sin θ = 0.25 m" bracket glows on the horizontal radius.
+Visual: the stage with the L and r brackets. On "string length as the radius" the r bracket stretches along the string, "r = L = 0.50 m". On "fast" "v = √(0.50 × 9.8 × tan 30°) = 1.68 m s⁻¹" with a chip "r = 0.50 m" crossed. On "not L" the correct "r = L sin θ = 0.25 m" bracket glows on the horizontal radius, while a red dashed ghost circle of radius 0.50 m (twice as wide, in perspective) is drawn round the real one and crossed. Hand tags: red "too big a circle" by the ghost, navy "L sin θ" by the real radius, and a navy pen ring round the r bracket.
 
 ### 11. memory aid
 > Here's a way to hold it together. One string, two jobs. The up part holds, the in part turns. That works for a light string and a ball going round a horizontal circle at a steady **speed**. If you get stuck, ask which part of the tension holds the ball up, and which part turns it.
 
-Visual: board clears to the pendulum at 30° with its blue and teal components. On "One string, two jobs" the handwritten line writes large: "One string, two jobs: the up part holds, the in part turns." On "speed" a navy condition tag "light string, horizontal circle, steady speed". Hold about 2 seconds.
+Visual: board clears to the pendulum at 30° with its blue and teal components. On "One string, two jobs" the handwritten line writes large in a framed memory card (hand lettering, blue and teal, 52 px; the card reused on the notes screen): "One string, two jobs: the up part holds, the in part turns." On "speed" a navy condition tag "light string, horizontal circle, steady speed". Hold about 2 seconds.
 
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. A zero point five zero kilogram bob on a string of length zero point eight zero metres moves in a horizontal circle, with the string at thirty-five degrees to the vertical. Calculate the radius of the circle, the tension in the string, and the speed of the bob. Pause here to answer.
 
-Visual: `QuestionCard` (subject "Physics"), worded as printed: "A conical pendulum has a bob of mass 0.50 kg on a light string of length 0.80 m. The bob moves at constant speed in a horizontal circle with the string at 35° to the vertical. Calculate: (a) the radius of the circle; (b) the tension in the string; (c) the speed of the bob. (3 marks)" A small coded HSC-style side-view diagram: a support line, a string with "0.80 m", the angle "35°" from a dashed vertical, a bob and a dashed horizontal circle. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A conical pendulum has a bob of mass 0.50 kg on a light string of length 0.80 m. The bob moves at constant speed in a horizontal circle with the string at 35° to the vertical. Calculate: (a) the radius of the circle; (b) the tension in the string; (c) the speed of the bob. (3 marks)" A small coded HSC-style side-view diagram: a support line, a string with "0.80 m", the angle "35°" from a dashed vertical, a bob and a dashed horizontal circle. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 13. feedback 1 (brief)
 > The radius is zero point eight zero times sine thirty-five, about zero point four five nine **metres**. The tension is m g over cosine thirty-five, which is four point nine zero over zero point eight one nine, about five point nine eight **newtons**. And v is the square root of r g tan thirty-five, about one point seven seven metres per **second**. The slip is using zero point eight zero as the **radius**.
 
-Visual: card shrinks to the top; "0.80 m", "35° to the vertical" and "horizontal circle" underline. On "metres" "r = 0.80 sin 35° = 0.459 m". On "newtons" "F_T = (0.50 × 9.8) ÷ cos 35° = 4.90 ÷ 0.819 = 5.98 N" (the radius line dims). On "second" "v = √(0.459 × 9.8 × tan 35°) = 1.77 m s⁻¹". On "radius" a chip "r = 0.80 m" fades in and is crossed (caption "r = L sin θ"). Hold about 1 second.
+Visual: card shrinks to the top; "0.80 m", "35° to the vertical" and "horizontal circle" underline. On "metres" "r = 0.80 sin 35° = 0.459 m". On "newtons" "F_T = (0.50 × 9.8) ÷ cos 35° = 4.90 ÷ 0.819 = 5.98 N" (the radius line dims). On "second" "v = √(0.459 × 9.8 × tan 35°) = 1.77 m s⁻¹". On "radius" a chip "r = 0.80 m" fades in and is crossed (caption "r = L sin θ"). The three results sit in a dark-ink framed box (52 px): "r = 0.459 m, F_T = 5.98 N, v = 1.77 m s⁻¹". Hold about 1 second.
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A conical pendulum has a string of length zero point four zero metres, at twenty-five degrees to the vertical. Calculate its period. Pause here to answer.
 
-Visual: `QuestionCard`, worded as printed: "The string of a conical pendulum is 0.40 m long and makes an angle of 25° with the vertical as the bob moves in a horizontal circle at constant speed. Calculate the period of the motion. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with a small coded side-view diagram (support line, string "0.40 m", angle "25°" from a dashed vertical, bob, dashed horizontal circle), worded as printed: "The string of a conical pendulum is 0.40 m long and makes an angle of 25° with the vertical as the bob moves in a horizontal circle at constant speed. Calculate the period of the motion. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
 ### 15. feedback 2 (brief)
 > The circle sits L cosine theta below the support, so h is zero point four zero times cosine twenty-five, about zero point three six three **metres**. Then T equals two pi times the square root of h over g, about one point two one **seconds**. The slip is using the whole string length instead of h, which gives one point two seven **seconds**.
 
-Visual: card shrinks to the top; "0.40 m" and "25° with the vertical" underline. On "metres" "h = 0.40 cos 25° = 0.363 m". On "one point two one seconds" "T = 2π√(0.363 ÷ 9.8) = 1.21 s" and a small grey line "(or r = 0.169 m, v = 0.879 m s⁻¹, T = 2πr/v = 1.21 s)". On "one point two seven seconds" a chip "T = 2π√(0.40 ÷ 9.8) = 1.27 s" fades in and is crossed (caption "use h, not L"). Hold about 1 second.
+Visual: card shrinks to the top; "0.40 m" and "25° with the vertical" underline. On "metres" "h = 0.40 cos 25° = 0.363 m". On "one point two one seconds" "T = 2π√(0.363 ÷ 9.8) = 1.21 s" in a dark-ink framed box (52 px), and a navy supporting line (30 px) "(or r = 0.169 m, v = 0.879 m s⁻¹, T = 2πr/v = 1.21 s)". On "one point two seven seconds" a chip "T = 2π√(0.40 ÷ 9.8) = 1.27 s" fades in and is crossed (caption "use h, not L"). Hold about 1 second.
 
 ### 16. handoff
 > So the slant of the string gives the tension a part that points inwards. A road can do the same trick. Tilt the road towards the centre of the bend, and the normal force, which is always at right angles to the road, tilts **too**. Now part of it points **inwards**. So how does a banked road cut down the friction a car needs?
 
 Visual: clear change to the road cross-section stage from v12: the flat road line with the rear-view car (`y12p-car-rear-v1.png`, from v12) and the amber normal force straight up, the "centre of the bend" pointer on the left. On "Tilt the road" the road line rotates so its left (inner) edge is lower, to 12° (no angle shown), and the car rotates with it. On "too" the normal-force arrow rotates with the road, staying at right angles to it (a right-angle mark at its base). On "inwards" a dashed teal horizontal component of N draws towards the centre pointer with a "?" beside it; the weight arrow (amber) is down from the centre of mass; chip "Next: how does a banked road reduce reliance on friction?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 50 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Conical pendulum: only tension F_T (along the string) and weight mg act. The centre of the circle is level with the bob, below the support. r = L sin θ; height of support above circle h = L cos θ.
-2. Vertical: F_T cos θ = mg. Towards the centre: F_T sin θ = mv²/r. Dividing: tan θ = v²/(rg).
-3. F_T = mg/cos θ > mg, so the string can never be horizontal. Faster bob: bigger θ and bigger tension.
-4. Period: T = 2πr/v = 2π√(h/g) (no mass in it).
+1. Two forces: tension F_T and weight mg. Centre level with the bob.
+2. r = L sin θ; h = L cos θ.
+3. F_T cos θ = mg; F_T sin θ = mv²/r.
+4. tan θ = v²/(rg): faster, wider. F_T > mg, never horizontal.
+5. T = 2πr/v = 2π√(h/g): no mass.
 
-Memory aid (large, on the notes screen): *One string, two jobs: the up part holds, the in part turns.*
+Memory aid (framed card under the notes, hand lettering, blue and teal as in scene 11): *One string, two jobs: the up part holds, the in part turns.* Notes in the role colours, 32 px; about 240 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
@@ -184,9 +201,10 @@ Model answer: h = L cos θ = 0.40 × cos 25° = 0.363 m; T = 2π√(h/g) = 2π�
 | Check | F_T sin 30° = 1.1316 N; mv²/r = 0.20 × 1.4145 ÷ 0.25 = 1.1316 N (1.13) | 8 |
 | Period | 2π × 0.25 ÷ 1.1893 = 1.3207 s; 2π√(0.4330 ÷ 9.8) = 1.3207 s (1.32) | 9 |
 | r = L slip | √(0.50 × 9.8 × tan 30°) = 1.682 m s⁻¹ (1.68) | 10 |
-| Angle steps (not shown) | 45°: 1.861 m s⁻¹, 2.772 N; 60°: 2.711 m s⁻¹, 3.920 N | 6 |
+| Angle steps (Revision 2: shown as slider readouts) | 30°: 1.189 m s⁻¹, r 0.25 m, 2.263 N; 45°: 1.861 m s⁻¹, r 0.354 m, 2.772 N; 60°: 2.711 m s⁻¹, r 0.433 m, 3.920 N | 6 |
+| Angle control (Revision 2) | F_T cos θ = 1.96 N fixed; F_T = 1.96/cos θ: 30° 2.26, 60° 3.92, 80° 11.29, 85° 22.49, 89° 112.3 N; F_T sin θ: 1.13, 3.39, 11.12, 22.40, 112.3 N | 5 |
 | A1 (site short-answer Q1) | r = 0.80 sin 35° = 0.4589 m (0.459); F_T = 4.90 ÷ 0.8192 = 5.982 N (5.98); v = √(0.4589 × 9.8 × 0.7002) = √3.149 = 1.774 m s⁻¹ (1.77) | 12, 13 |
-| A2 (site Activity 1 Q1) | h = 0.40 cos 25° = 0.3625 m (0.363); T = 2π√(0.3625 ÷ 9.8) = 1.2085 s (1.21); r = 0.1690 m, v = 0.8788 m s⁻¹; crossed 2π√(0.40 ÷ 9.8) = 1.2694 s (1.27) | 14, 15 |
+| A2 (site Activity 1 Q1) | h = 0.40 cos 25° = 0.3625 m (0.363); T = 2π√(0.3625 ÷ 9.8) = 1.2085 s (1.21); r = 0.1690 m, v = 0.8789 m s⁻¹; crossed 2π√(0.40 ÷ 9.8) = 1.2694 s (1.27) | 14, 15 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
@@ -196,9 +214,10 @@ Checked with Python (6 Nov); Codex to re-check.
 - 0.25 × 9.8 × tan 30° = 1.41451; √ = 1.18933; 2.26321 × 0.5 = 1.13161; 0.20 × 1.41451 ÷ 0.25 = 1.13161.
 - 2π × 0.25 ÷ 1.18933 = 1.32074; 2π√(0.43301 ÷ 9.8) = 1.32074.
 - √(0.50 × 9.8 × tan 30°) = 1.68197.
-- 45°: √(0.50 sin 45° × 9.8 × tan 45°) = 1.86140; 1.96 ÷ cos 45° = 2.77186. 60°: 2.71109; 3.92.
+- 45°: √(0.50 sin 45° × 9.8 × tan 45°) = 1.86140; 1.96 ÷ cos 45° = 2.77186. 60°: 2.71109; 3.92. r at 45° and 60°: 0.353553, 0.433013.
+- Revision 2 angle control: 1.96 ÷ cos θ at 80°, 85°, 89° = 11.2871, 22.4882, 112.307; × sin θ = 11.1156, 22.4026, 112.290; at 60°, 1.96 tan 60° = 3.39482.
 - A1: 0.80 sin 35° = 0.458861; 4.90 ÷ cos 35° = 5.98180; √(0.458861 × 9.8 × tan 35°) = 1.77446.
-- A2: 0.40 cos 25° = 0.362523; 2π√(0.362523 ÷ 9.8) = 1.20847; 0.40 sin 25° = 0.169047; √(0.169047 × 9.8 × tan 25°) = 0.87894; 2π × 0.169047 ÷ 0.87894 = 1.20847; 2π√(0.40 ÷ 9.8) = 1.26940.
+- A2: 0.40 cos 25° = 0.362523; 2π√(0.362523 ÷ 9.8) = 1.20847; 0.40 sin 25° = 0.169047; √(0.169047 × 9.8 × tan 25°) = 0.878928; 2π × 0.169047 ÷ 0.878928 = 1.20847; 2π√(0.40 ÷ 9.8) = 1.26940.
 
 ## Memory aid check
 
@@ -207,7 +226,7 @@ Checked with Python (6 Nov); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,654 characters**, 17 scenes. Characters per scene (1 to 17): 285, 392, 382, 424, 316, 345, 524, 400, 478, 256, 277, 294, 393, 164, 331, 318, 75. At 13.3 characters per second the speech is about 425 s; add about 3 s for the prediction countdown, about 3 s for the angle steps in scene 6, about 2 s for the lap against the clock in scene 9, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 89 s of holds and countdowns): **about 514 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's derivation sentences (open decision 1); scene 7's "The bob is just the small mass on the end" sentence; scene 6's last sentence.
+Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,654 characters**, 17 scenes. Characters per scene (1 to 17): 285, 392, 382, 424, 316, 345, 524, 400, 478, 256, 277, 294, 393, 164, 331, 318, 75. At 13.3 characters per second the speech is about 425 s; add about 3 s for the prediction countdown, about 3 s for the angle control in scene 5, about 3 s for the speed slider in scene 6, about 2 s for the lap against the clock in scene 9, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 81 s of holds and countdowns): **about 506 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's derivation sentences (open decision 1); scene 7's "The bob is just the small mass on the end" sentence; scene 6's last sentence.
 
 ## Opening frame
 
@@ -223,24 +242,25 @@ Lesson key `p-y12-m5-v13` (route phys-y12-m5-v13). Suggested explainer folder `s
 
 In order (kebab-case; 17 scene headings, all `### N.`): hook, two-forces-centre, geometry, resolve-tension, never-horizontal, angle-and-speed, worked-radius-tension, worked-speed, worked-period, radius-mistake, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
 
-Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: conical pendulum stage (extends `m5-conical-pendulum`), top-view inset, road cross-section stage (v12) with tilt, `AlignedAlgebra`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 to 3 to 4 to 5 to 6 camera continue (same pendulum); 6 to 7 clear change to the calculation layout; 7 to 8 to 9 camera continue; 9 to 10 camera change to the stage; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: conical pendulum stage (extends `m5-conical-pendulum`) with a perspective camera tilt, triangle stage, force close-up with a live angle control, speed slider with readouts, period clock, top-view inset, road cross-section stage (v12) with tilt, `AlignedAlgebra`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 camera tilt to the perspective cone stage; 2 to 3 camera push to the triangle stage; 3 to 4 clear change to the force close-up; 4 to 5 camera continue (angle control); 5 to 6 camera change to the full pendulum with the speed slider; 6 to 7 clear change to the calculation layout; 7 to 8 camera change to the check stage; 8 to 9 clear change to the period stage; 9 to 10 camera change to the pendulum with brackets; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
-Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v13-learning-review.md`, `science_check` = `checks/p-y12-m5-v13-physics-check.md`.
+Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v13-learning-review.md`, `science_check` = `checks/p-y12-m5-v13-physics-check.md`.
 
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
 - `public/assets/physics/phys-y11-retort-stand-v1.png` (600 × 2400, RGBA), `phys-y11-boss-crossbar-v1.png` (800 × 800, RGBA), `phys-y11-steel-ball-v1.png` (800 × 800, RGBA): scenes 1 to 11 (the support and bob).
-- `y12p-car-rear-v1.png` (requested in v12): scene 16.
+- `public/assets/physics/y12p-car-rear-v1.png` (1448 × 1086, RGBA; delivered in brief 188 and inspected 6 Nov with the Read tool; empty seats): scene 16.
 - **Checked, not used:** `phys-y11-mass-hanger-v1.png` and `phys-y11-slotted-masses-v1.png` (a hanger reads as a hook and stack, not a pendulum bob; the steel ball is the site's "ball"); `phys-y11-protractor-v1.png` (an angle arc is clearer than a protractor plate at this size).
 
-Need (new plates, Codex): none (the rear-view car is v12's request).
+Need (new plates, Codex): none (the rear-view car was delivered in brief 188).
 
 Coded: string, pivot dot, dashed circle and cone outline, vertical and horizontal guide lines, brackets (L, r, h), angle arc, force arrows and components, top-view inset, road line, calculation strips, crossed chips, attempt cards and their HSC-style diagram, countdowns, key notes board.
 
 Kit gaps (for the v13 build brief):
 1. **Conical pendulum stage.** Extends `m5-conical-pendulum` with the retort-stand, boss and ball plates registered to the pivot and bob; an angle parameter that can step (30°, 45°, 60°) with the circle, cone and arrows updating from the model (F_T = mg/cos θ, v = √(rg tan θ), one force scale); arrows only at the right-hand extreme (author note a); the synchronised top-view inset from the existing family.
 2. **Road tilt.** The v12 road cross-section stage rotating its road line and car together, with N redrawn at right angles to the road.
+3. **Revision 2 stages.** A perspective camera tilt on the pendulum stage (same model, raised viewpoint); a triangle stage that lifts the (L, h, r) triangle out of the pendulum and scales it; a force close-up on the bob with an angle control that holds the vertical part at mg and lengthens F_T (clipped at the frame edge with an arrowhead marker); a speed slider that steps steady states and drives θ, r and F_T from the model.
 
 ## Codex asset brief (Year 12 Physics M5 v13)
 
@@ -281,3 +301,27 @@ Previous: which force turns a car on a flat curve. Next: banked roads, and how t
 
 - Revision 1 has had no independent review. Next: student learning review (trace from v12; check that "the centre is not the support" lands, that the components visibly replace the tension, that the angle steps read as separate steady states, and that the attempt cards give nothing away), then the physics check and the Codex error check.
 - The components replacing the tension, the ghost horizontal string and the flattening cone carry the explanation; judge them at playback speed in the voiced preview.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 188 findings (`checks/p-y12-m5-v13-learning-review.md`, `checks/p-y12-m5-v13-science-check.md`): 0 blocker, 0 should fix, 1 optional.
+- **Optional, Numbers used A2 row (author-note precision).** Resolved: the author-only value is now v = 0.8789 m s⁻¹ (Python: 0.878928), and "Numbers to verify" carries 0.878928. Learner values (0.879 m s⁻¹, 1.21 s) were already correct and are unchanged.
+- The reports' keeps (the horizontal-string prediction answered by the vertical balance, the centre located before r is used, components replacing the tension, the period surprise with its h bracket, arrows at the right-hand extreme) are all kept. Open decision 1 is closed: keep the period derivation.
+
+Join checks: the opening is still v12's final frame (v12 Revision 2 leaves scene 15 unchanged). The final frame (scene 16, the tilted road with N) is unchanged, so the v14 join holds.
+
+Scene-level redesign (high-risk design; see "Scene-level redesign" in Decisions). Narration, numbers and the teaching order are unchanged. The one-stage run of scenes 1 to 6 (about 165 s) becomes five set-ups: pendulum (1), perspective cone (2), triangle (3), force close-up with a live angle control (4, 5), full pendulum with a speed slider (6). The one-board run of scenes 7 to 9 (about 105 s) becomes three: full-width working (7), check stage with the force close-up (8), period stage with a large clock (9). Scene 10 adds a crossed ghost circle of radius L.
+
+Visual upgrade (to `../maths-visual-standard.md` and the build gate):
+- Decisions gain "Colour roles", "Type sizes", "Anchor", "Scene-level redesign" and "Simulation".
+- Plate in scene 1: already present (retort stand, boss and crossbar, steel ball; inspected). The ball plate becomes the large bob in the force close-up.
+- Live simulations: scene 5's angle control holds F_T cos θ at 1.96 N while F_T grows (Python: 2.26, 3.92, 11.29, 22.49, 112.3 N at 30°, 60°, 80°, 85°, 89°), which shows why the string cannot be horizontal; scene 6's speed slider steps 1.19, 1.86, 2.71 m s⁻¹ with θ, r and F_T readouts (30°, 0.25 m, 2.26 N; 45°, 0.354 m, 2.77 N; 60°, 0.433 m, 3.92 N).
+- Hand tags and a pen mark in role colours in every teaching scene ("fixed support", "string slants", "centre: level with the ball", "only 2 forces", "sin: side opposite θ", "cos: side next to θ", "r ≠ L", "= mg", "= net force", "no up part", "grows without limit", "faster: wider", "more pull", "sin for r", "vertical equation", "same 1.13 N: it checks", "only h matters", "no m", "too big a circle", "L sin θ").
+- Framed answers: F_T > mg (5), tan θ = v²/(rg) (6), r and F_T (7), v (8), T = 1.32 s and T = 2π√(h/g) (9), feedback 1 and 2. New crossed slip: "F_T = mg = 1.96 N" (7). Working lines carry the unrounded 1.189 m s⁻¹ into the check and the period.
+- Scene 11 and the notes: the memory aid is a framed card; key notes cut from four dense items (about 520 characters) to five short bullets (about 240 characters); quiet notes hold 60 s to 50 s.
+- Question cards arrive with their full text and diagram in one move; attempt 2 gains a small coded side-view diagram.
+- Type sizes stated; colour roles fixed.
+
+New plate requests: none.
+
+Counts: 5,654 to 5,654 characters (narration unchanged); about 514 s to about 506 s.

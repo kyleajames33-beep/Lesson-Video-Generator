@@ -32,3 +32,9 @@ Claude (root), 6 November 2026. Designs written to `phys-y12-design-brief.md`.
 - **v01 demonstrator:** the sliding-rod mechanism is accepted (one movement hits ball B and slides its pin out from under ball A). Codex paints `y12p-drop-launch-base-v1` (rewritten brief) and `y12p-drop-launch-slider-v1`.
 - **Brief 187 delivered plates** (launcher, ramp, carbon paper, plumb bob, spirit level, spanner, nut and plate, crane, seesaw) are accepted at native size. Builds scale them uniformly, and the A-grade build sheet checks registration and proportion.
 - **Repairs approved:** clean the coloured edge fringe on `y12p-plumb-bob-v1` and `y12p-spirit-level-v1`; split the seesaw into `y12p-seesaw-plank-v1` and `y12p-seesaw-stand-v1` so the plank can tilt.
+
+## After brief 188 repairs, part 1 (6 November 2026)
+
+- **v16 corrected test accepted.** The drooping string is treated as a conical pendulum (inward part of the tension only, radius L cos α, which cancels), so Mg = mω²L. The investigation holds string length and plots Mg against ω² (gradient mL). This meets the route's force-against-speed-squared aim correctly; a constant radius cannot be held with a drooping string. The near-horizontal, heavy-mass alternative is not used.
+- **v17/v18 join:** v18's opening frame becomes the teal tangent arrow, matching v17's colour repair (applied in the v18 repair).
+- **Paper clip:** paint `y12p-paper-clip-v1.png` once; v15 and v16 both use it. The old backdrop plate is kept, not deleted.
