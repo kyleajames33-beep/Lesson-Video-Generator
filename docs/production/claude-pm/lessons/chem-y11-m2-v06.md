@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V06: Mole ratios. Why do reaction coefficients give mole ratios rather than mass ratios? (design)
 
-Status: Revision 2 (6 Nov 2026): visual upgrade to maths-visual-standard.md (pilot for the course). Needs independent learning review and science check before voicing.
+Status: Revision 3 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 5,769 characters, 17 scenes, about 527 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -107,7 +107,7 @@ Visual: board change. The frame plate (`y11c-bike-frame-v1.png`, new) and two wh
 ### 7. two different twos
 > One trap. In two H two O, there are two different twos. The big two in front is the coefficient, and it counts water molecules. The small two is the subscript, and it counts hydrogen atoms inside one molecule. Mole ratios come only from the **coefficients**. And when balancing, change coefficients, never subscripts, because changing a subscript makes a different **substance**.
 
-Visual: camera continue; the bike group stays small at the top left. "2H₂O" writes large at the centre (about 140 px). On "big two" a teal scribble circle rings the coefficient, hand tag "coefficient: counts molecules (moles)" (teal, 36 px); on "small two" a grey circle rings the subscript, hand tag "subscript: atoms in one molecule". On "coefficients" the teal tag glows and a teal pen arrow runs from the coefficient to the "2 : 1 : 2" chip. On "substance" "H₂O → H₂O₂?" writes, the "₂" amber, with a tag "hydrogen peroxide: a different substance", a red cross on the edit and a red hand tag "never change this one" with a pen arrow to the subscript.
+Visual: camera continue; the bike group stays small at the top left. "2H₂O" writes large at the centre (about 140 px). On "big two" a teal scribble circle rings the coefficient, hand tag "coefficient: counts particles (here, molecules)" (teal, 36 px); on "small two" a grey circle rings the subscript, hand tag "subscript: atoms in one molecule". On "coefficients" the teal tag glows and a teal pen arrow runs from the coefficient to the "2 : 1 : 2" chip. On "substance" "H₂O → H₂O₂?" writes, the "₂" amber, with a tag "hydrogen peroxide: a different substance", a red cross on the edit and a red hand tag "never change this one" with a pen arrow to the subscript.
 
 ### 8. using a mole ratio
 > Using a ratio is just scaling. In two A l plus three C l two, making two A l C l three, aluminium and chlorine react two to **three**. So zero point four zero moles of aluminium needs zero point four zero times three over two, which is zero point six zero moles of **chlorine**. Wanted equals given, times the wanted coefficient over the given **coefficient**. Flip the fraction by mistake, and you'd get zero point two seven, which is the ratio upside **down**.
@@ -147,7 +147,7 @@ Visual: `QuestionCard`: "N₂ + 3H₂ → 2NH₃. A student claims: '28.0 g of N
 ### 15. feedback 2 (brief)
 > The claim is wrong. Twenty-eight point zero grams of nitrogen is almost exactly one mole. The equation says one mole of nitrogen needs three moles of hydrogen, and three moles of H two is only about six grams. The student treated the coefficients as a mass ratio. They're a mole **ratio**.
 
-Visual: card shrinks to the top. Rows (44 px, the colour roles carried): "n(N₂) = 28.0 ÷ 28.02 = 0.999 mol" (amber mass in, teal moles out, hand tag "grams → moles first"); "n(H₂) = 0.999 × 3 = 3.00 mol" (teal "× 3"); "m(H₂) = 3.00 × 2.016 = 6.04 g", the "6.04 g" framed in a dark-ink box. On "ratio" the student's "84.0 g" fades in and is crossed in red, red hand tag "coefficients are moles, not grams". Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px, the colour roles carried): "n(N₂) = 28.0 ÷ 28.02 = 0.9993 mol" (shown with "≈ 0.999" in grey; amber mass in, teal moles out, hand tag "grams → moles first"); "n(H₂) = 0.9993 × 3 = 2.998 mol" (teal "× 3"; grey "≈ 3.00"); "m(H₂) = 2.998 × 2.016 = 6.044 g", then "6.04 g" framed in a dark-ink box with a green tick, and a grey tag (26 px) "unrounded amounts carried; 3.00 × 2.016 would give 6.05" (brief 180). On "ratio" the student's "84.0 g" fades in and is crossed in red, red hand tag "coefficients are moles, not grams". Hold about 1 second.
 
 ### 16. conclusion and handoff
 > So coefficients count particles, and that makes them mole ratios. Masses follow from moles, and the total mass is conserved. Experiments confirm the whole-number ratios. Now we have a model, moles, molar mass and ratios. Can it solve a problem we haven't seen? An old jar of copper sulfate crystals loses only thirty point two percent of its mass. How can a chemistry model solve an unfamiliar quantitative **problem**?
@@ -160,7 +160,7 @@ Heading on screen: "Key notes: what to write in your book".
 
 1. Coefficients give mole ratios: 2H₂ + O₂ → 2H₂O is 2 : 1 : 2 by moles, about 1 : 8 : 9 by mass.
 2. Total mass is conserved; masses do not react in the coefficient ratio.
-3. Coefficient counts molecules; subscript counts atoms in one molecule. Balance with coefficients only.
+3. Coefficients count particles (molecules, atoms or formula units); subscripts count atoms in one particle. Balance with coefficients only.
 4. n(wanted) = n(given) × coeff(wanted) ÷ coeff(given).
 5. Continuous variation: equal concentrations, fixed total volume; best-fit lines cross at the mole ratio.
 
@@ -185,7 +185,7 @@ At the end the notes cross-fade back to scene 16's final frame.
 Model answer: (a) The temperature rise is greatest near 10 mL of acid; lines of best fit through the rising and falling points cross at 10 mL H₂SO₄ : 20 mL NaOH (1 mark). Because the concentrations are equal, equal volumes contain equal moles, so the mole ratio H₂SO₄ : NaOH = 1 : 2 (1 mark). (b) H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O (1 mark). Classic mistake (crossed): "1 : 1 because the concentrations are equal".
 
 **Attempt 2 (scene 14; original wording, HSC style, 3 marks suggested).** As on the card.
-Model answer: n(N₂) = 28.0 ÷ 28.02 = 0.999 mol (1 mark). Mole ratio N₂ : H₂ = 1 : 3, so n(H₂) = 3.00 mol; m(H₂) = 3.00 × 2.016 = 6.04 g (1 mark). The claim is incorrect: the coefficients give a mole ratio, not a mass ratio; H₂ molecules are much lighter than N₂ molecules (1 mark). Classic mistake (crossed): the student's 84.0 g.
+Model answer: n(N₂) = 28.0 ÷ 28.02 = 0.9993 mol (1 mark). Mole ratio N₂ : H₂ = 1 : 3, so n(H₂) = 2.998 mol (≈ 3.00); m(H₂) = 2.998 × 2.016 = 6.044 = 6.04 g, carrying the unrounded amount (1 mark). The claim is incorrect: the coefficients give a mole ratio, not a mass ratio; H₂ molecules are much lighter than N₂ molecules (1 mark). Classic mistake (crossed): the student's 84.0 g.
 
 ## Numbers used (author note: every value)
 
@@ -199,7 +199,7 @@ Model answer: n(N₂) = 28.0 ÷ 28.02 = 0.999 mol (1 mark). Mole ratio N₂ : H�
 | ΔT (illustrative) | 1.7, 3.3, 5.0, 6.6, 5.0, 3.4, 1.6 °C; cross at 20 : 20 | 11 |
 | Leftover readouts | 5 mL acid: base left over 30 mL; 30 mL acid: acid left over 20 mL; 20 mL: nothing | 11 |
 | A1 | 30 mL; 1.0 mol L⁻¹; 4.4, 8.8, 6.6, 4.4, 2.2 °C; cross at 10 : 20; 1 : 2 | 12, 13 |
-| A2 | 28.0 g; 28.02; 0.999 mol; 3.00 mol; 6.04 g; claim 84.0 g | 14, 15 |
+| A2 | 28.0 g; 28.02; 0.9993 mol (≈ 0.999); 2.998 mol (≈ 3.00); 6.044 g, shown 6.04 g; claim 84.0 g | 14, 15 |
 | Handoff | 30.2%; 36.1% | 16 |
 
 ## Numbers to verify (all values, repeated for Codex)
@@ -212,7 +212,7 @@ Checked with Python (5 November); Codex to re-check.
 - Leftovers at 40 mL total: 35 − 5 = 30 mL base; 30 − 10 = 20 mL acid.
 - HCl series ideal 0.342 °C per mmol × min(x, 40 − x): 1.71, 3.42, 5.12, 6.83, 5.12, 3.42, 1.71.
 - H₂SO₄ series ideal 0.455 °C per mmol × min(2x, 30 − x): 4.55, 9.11, 6.83, 4.55, 2.28; lines 0.88x and 0.44(30 − x) cross at x = 10.
-- 28.0 ÷ 28.02 = 0.9993; × 3 = 2.998; × 2.016 = 6.044; 3 × 28.0 = 84.0.
+- 28.0 ÷ 28.02 = 0.9993; × 3 = 2.998; × 2.016 = 6.044; 3 × 28.0 = 84.0. Revision 3 (brief 180): 3.00 × 2.016 = 6.048 (6.05), so the screen carries 2.998.
 
 ## Safety facts check (self-check, 5 November; science check to confirm)
 
@@ -331,3 +331,12 @@ Against `../maths-visual-standard.md` items 2 to 9 and the audit (`../checks/vis
 - Scene 17: five shorter bullets in role colours; the framed memory-aid card on the notes screen.
 - Set-ups: no stage now runs more than about 60 s unchanged (scene 11, about 40 s of speech on the graph stage, is the longest).
 - Assets: one new plate requested (`y11c-beaker-water-36ml-v1.png`); the balance plate is reused.
+
+## Revision 3 (6 Nov 2026)
+
+Brief 180 findings (`checks/c-y11-m2-v06-learning-review.md`, `checks/c-y11-m2-v06-science-check.md`; raised against the Revision 1 hash, each re-checked against Revision 2):
+- **Should fix, scene 15 guard digits (still applied):** the feedback rows now carry 0.9993 mol and 2.998 mol (grey "≈ 0.999", "≈ 3.00") into m(H₂) = 2.998 × 2.016 = 6.044, shown 6.04 g, with a grey tag that 3.00 × 2.016 would give 6.05. Model answer and Numbers updated. No speech change (the spoken "about six grams" stands).
+- **Should fix, "coefficient counts molecules" (still applied):** key note 3 now reads "Coefficients count particles (molecules, atoms or formula units); subscripts count atoms in one particle"; scene 7's hand tag reads "coefficient: counts particles (here, molecules)". The narration already says "Coefficients count particles" (scene 3) and "it counts water molecules" for the water example, which is correct; no speech change.
+- **Count finding:** withdrawn by Codex; 5,769 is the sum of scene strings. Estimate unchanged at about 527 s.
+
+Visual upgrade: Revision 2 already met the audit's m2-v06 list (balance anchor, live count-up and mixing slider, framed answers and crossed slips, hand accents, framed memory card, five short notes now 456 characters, type sizes). No further visual change; no new plate requests.

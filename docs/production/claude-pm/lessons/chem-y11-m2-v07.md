@@ -1,8 +1,8 @@
 # Year 11 Chemistry M2 V07: Mass-to-mass stoichiometry. How do we calculate product mass from a reactant mass? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,684 characters, 16 scenes, about 517 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,684 characters, 16 scenes, about 521 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: seventh Module 2 video of Year 11 Chemistry (2017 syllabus), playlist entry 40, between `chem-y11-ws-v06` and `chem-y11-m2-v08`. Templates: `chem-y11-m2-v05.md` and `chem-y11-m1-v07.md` (Year 11 calculation videos), `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates); chemistry calculation conventions `chem-m5-g02.md`. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m2-v07` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Use mass to amount, the balanced ratio, then amount to mass, retaining units. Stop before two-reactant limitations"; next handoff: "Which reactant limits how much product can form?"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson12.sa.html` (SHA256 `6f935143648bfa77bb02577ce5881dbf61888b8ef11101a46a4728493aeb885c`, recomputed, matches the route), sections `l12-fourstep-title` and `l12-worked-title`. Used: the hook (10 g of magnesium burnt: more, less or the same oxide? about 16.6 g); the four-step method and "never go mass to mass directly"; worked example 2's data (80.0 g Fe₂O₃ → 56.0 g Fe) with trap 1 (assuming 1 : 1 halves the iron); worked example 3's data (20.0 g MgO needs 12.1 g Mg); the key term "theoretical mass"; trap 2 (O₂, not O) on screen in the conservation check. Not used: worked example 1 (C → CO₂, a 1 : 1 case already covered by the hook), the Haber example (Year 12 context), the spot-the-error item (its idea, the ratio upside down, becomes attempt 2's crossed slip).
 
@@ -44,7 +44,10 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **bridge diagram** (scene 3: two mass banks, "mass of given" and "mass of wanted", joined by three spans "÷ MM", "× ratio", "× MM" through two mole piers; each span lights as its step runs in every example); **calculation layout** (task strip, equation strip, grouped givens with units, working rows one at a time, earlier rows dimmed, the current step's span lit on a small bridge icon above the rows); **balance readouts** (scene 2); **conservation stack** (scene 6: Mg bar 10.0 g plus O₂ bar 6.58 g equals MgO bar 16.58 g, to scale); **atom tiles** (scene 8: one Fe₂O₃ unit's two Fe tiles lift out to show the 1 : 2); `Countdown`, `QuestionCard`, `Chip` with `cross`, scribble circle, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key (continues m2-v05 and m2-v06):** masses amber; moles teal; ratios and coefficients teal with an amber outline on the pair in use; givens navy; magnesium pale green, oxygen red, iron rust, aluminium grey, copper copper-brown, silver pale grey; earlier rows dimmed; crossed items red strike.
-- **Board layout (constant):** heading top left; the small bridge icon top right from scene 4; plates and equation at the left; task strip, givens and working rows at the right.
+- **Board layout (constant):** heading top left; the small bridge icon top right from scene 4; plates and equation at the left; task strip, givens and working rows at the right. Revision 2 stage cuts: 3 to 4 is a clear change to the full-width g01 calculation layout; 5 to 6 is a stage change to the full-width conservation stage (the simulation); 9 to 10 is a stage change to the condition stage. Revision 1's scenes 3 to 6 ran about 120 s on one continued board.
+- **Colour roles (Revision 2, fixed):** masses amber; moles teal; ratios and coefficients teal with an amber outline on the pair in use; givens navy; element colours as the colour key; framed answers in a dark-ink box with a green tick; mistakes red (strike plus red hand tag). Hand tags take the role colour of what they mark.
+- **Type sizes (Revision 2, at 1080p):** current working row 48 px (never below 44 px); live readouts (balance, mass slider) 52 px; the bridge diagram's span labels 40 px at full size; supporting lines 30 px; hand tags 34 to 40 px; nothing a student must read below 26 px.
+- **Anchor and simulation (Revision 2).** Painted anchor from the first frame: the magnesium ribbon and the white oxide dish (ws-v06's final frame), then the open crucible and the balance in scene 2. The genuine simulation is scene 6's mass slider: an amber handle sweeps m(Mg) from 0 to 10.0 g while live readouts n(Mg), m(O₂) used and m(MgO) formed update together and the conservation stack grows to scale, the Mg bar plus the O₂ bar always matching the MgO bar; it lands on 10.0 + 6.58 = 16.58 g.
 
 Author notes (not learner copy):
 (a) WE1: 10.0 ÷ 24.31 = 0.41135 mol; MM(MgO) = 24.31 + 16.00 = 40.31; 0.41135 × 40.31 = 16.582 g. (Site values 24.31 and 16.00 give 16.583 g.)
@@ -74,52 +77,52 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook and prediction (countdown, 3 seconds at the end)
 > Here's the question from last time. Ten point zero grams of magnesium burns in oxygen, and makes magnesium oxide. Make a quick prediction. Do you get more than ten grams of oxide, less, or exactly the **same**?
 
-Visual: opens on ws-v06's final frame; the "Next" chip fades. On "burns" the ribbon plate gains a brief coded white glare at one end (no flame plate). On "more" the three chips "more", "less", "same" light in turn. On "same" the 3 s `Countdown` ring runs. The heading writes during the countdown: "From reactant mass to product mass".
+Visual: opens on ws-v06's final frame; the "Next" chip fades. On "burns" the ribbon plate gains a brief coded white glare at one end (no flame plate). On "more" the three chips "more", "less", "same" light in turn. On "same" the 3 s `Countdown` ring runs. The heading writes during the countdown: "From reactant mass to product mass". An amber hand tag "10.0 g in → ?" writes under the dish with a pen arrow from the ribbon.
 
 ### 2. more, and why
 > More. Burning joins oxygen atoms to the magnesium atoms, so the oxide carries the magnesium's mass plus the oxygen's. You can see it in the lab. When a strip of magnesium is heated in a crucible, the reading on the balance goes **up**. That's the opposite of our copper sulfate, which lost mass as water left. Here, something joins instead. But by how much? We can't read grams from the equation, because its coefficients count moles, not **grams**.
 
-Visual: "more" ticks. A particle strip: two pale-green Mg atoms and one red O₂ pair combine into two Mg–O pairs (HSC colours). On "in a crucible" the open crucible on a lit burner (`m5-g02b-open-crucible-v1.png`, its white solid read as the oxide) sits at the left with the balance plate (`y11c-top-pan-balance-v1.png`) beside it; on "up" a coded readout steps "25.363 g → 25.523 g" with an upward arrow (grey tag "illustrative: 0.243 g ribbon"). On "copper sulfate" a small thumbnail of the white-powder crucible with a down arrow "water left: mass down" sits beside the rising readout, "something joins: mass up". On "grams" m2-v06's memory line returns small: "Coefficients count; masses weigh."
+Visual: "more" ticks. A particle strip: two pale-green Mg atoms and one red O₂ pair combine into two Mg–O pairs (HSC colours). On "in a crucible" the open crucible on a lit burner (`m5-g02b-open-crucible-v1.png`, its white solid read as the oxide) sits at the left with the balance plate (`y11c-top-pan-balance-v1.png`) beside it; on "up" a coded readout steps "25.363 g → 25.523 g" with an upward arrow (grey tag "illustrative: 0.243 g ribbon"). On "copper sulfate" a small thumbnail of the white-powder crucible with a down arrow "water left: mass down" sits beside the rising readout, "something joins: mass up". On "grams" m2-v06's memory line returns small: "Coefficients count; masses weigh."; teal hand tag "go through moles". Earlier, on "up", an amber hand tag "oxygen joined" writes beside the rising readout (52 px) with a pen ring.
 
 ### 3. the mole bridge
 > So every mass problem crosses a bridge through moles. Step one, write the balanced equation, and read the mole ratio for the two substances in the question. Step two, turn the mass of the given substance into moles, with n equals m over M M. Step three, use the ratio to get moles of the wanted substance. Step four, turn those moles back into a mass, with m equals n times M **M**. Mass to moles, moles across, moles to **mass**.
 
-Visual: board change. The bridge diagram draws: left bank "mass of given (g)", right bank "mass of wanted (g)", two piers "moles of given", "moles of wanted". Each span writes as spoken: "1. equation → ratio" (a banner over the bridge), "2. ÷ MM(given)", "3. × ratio", on "M" "4. × MM(wanted)". On "mass" (last) the memory line writes in hand lettering under the bridge: "Mass to moles, moles across, moles to mass." The bridge then shrinks to an icon at the top right.
+Visual: board change. The bridge diagram draws: left bank "mass of given (g)", right bank "mass of wanted (g)", two piers "moles of given", "moles of wanted". Each span writes as spoken: "1. equation → ratio" (a banner over the bridge), "2. ÷ MM(given)", "3. × ratio", on "M" "4. × MM(wanted)". On "mass" (last) the memory line writes in hand lettering inside a framed card under the bridge (44 px): "Mass to moles, moles across, moles to mass." The bridge then shrinks to an icon at the top right.
 
 ### 4. magnesium: equation and moles
 > Let's do the magnesium. The equation is two M g plus O two makes two M g O, so magnesium and magnesium oxide react two to two, which is one to **one**. That makes sense, because every magnesium atom ends up in one unit of the oxide. Magnesium's molar mass is about twenty-four point three, so ten point zero grams is zero point four one one **moles**.
 
-Visual: calculation layout. Task strip: "Find the mass of MgO formed from 10.0 g of Mg". Equation strip: "2Mg + O₂ → 2MgO". Givens (navy, grouped): "m(Mg) = 10.0 g"; "Mg 24.31, O 16.00 g mol⁻¹"; grey tag "oxygen in plenty". On "one" (first full) the 2s under Mg and MgO get an amber outline; row "Mg : MgO = 2 : 2 = 1 : 1" (step 1 span lights). On "every magnesium atom" two Mg tiles each pair with one O tile (tag "1 Mg → 1 MgO"). On "moles" row "n(Mg) = 10.0 ÷ 24.31 = 0.411 mol" (step 2 span lights).
+Visual: clear change to the full-width calculation layout (Chemistry g01 layout). Task strip (40 px): "Find the mass of MgO formed from 10.0 g of Mg". Equation strip: "2Mg + O₂ → 2MgO". Givens (navy, grouped): "m(Mg) = 10.0 g"; "Mg 24.31, O 16.00 g mol⁻¹"; grey tag "oxygen in plenty". On "one" (first full) the 2s under Mg and MgO get an amber outline; row "Mg : MgO = 2 : 2 = 1 : 1" (step 1 span lights). On "every magnesium atom" two Mg tiles each pair with one O tile (tag "1 Mg → 1 MgO"). On "moles" row "n(Mg) = 10.0 ÷ 24.31 = 0.4114 mol" (48 px; grey "≈ 0.411"; step 2 span lights), teal hand tag "÷ MM" over the divisor.
 
 ### 5. magnesium: across and back to mass
 > One to one means zero point four one one moles of magnesium oxide form. Its molar mass is twenty-four point three plus sixteen point zero, about forty point three. So the mass is zero point four one one times forty point three, which is sixteen point six **grams**. More than ten, just as we **predicted**. And watch the units. Grams divided by grams per mole gave moles, and moles times grams per mole gave grams **back**.
 
-Visual: the step 1 row dims. On "zero point four one one moles" row "n(MgO) = 0.411 × 1 = 0.411 mol" (step 3 span). On "molar mass" row "MM(MgO) = 24.31 + 16.00 = 40.31 g mol⁻¹". On "grams" row "m(MgO) = 0.411 × 40.31 = 16.6 g" (bright, step 4 span). On "predicted" the "? g MgO" chip on the oxide dish updates to "16.6 g MgO" and the "more" chip ticks. On "units" the units in the rows highlight in turn: "g ÷ g mol⁻¹ = mol" and, on "back", "mol × g mol⁻¹ = g".
+Visual: the step 1 row dims. On "zero point four one one moles" row "n(MgO) = 0.4114 × 1 = 0.4114 mol" (step 3 span), teal hand tag "1 : 1". On "molar mass" row "MM(MgO) = 24.31 + 16.00 = 40.31 g mol⁻¹". On "grams" row "m(MgO) = 0.4114 × 40.31 = 16.58 g", then "16.6 g" framed in a dark-ink box with a green tick (step 4 span). On "predicted" the "? g MgO" chip on the oxide dish updates to "16.6 g MgO" and the "more" chip ticks. On "units" the units in the rows highlight in turn: "g ÷ g mol⁻¹ = mol" and, on "back", "mol × g mol⁻¹ = g".
 
 ### 6. where the extra mass came from
 > So where did the extra six point six grams come from? From oxygen. Half as many moles of oxygen molecules react, zero point two zero six moles. The equation says O two, so its molar mass is thirty-two, not sixteen. That's six point five eight grams. Ten point zero plus six point five eight is sixteen point five **eight**, which matches. Mass is conserved, and the calculation tells us exactly how the solid's mass **changes**.
 
-Visual: rows (compact, grey header "check"): "n(O₂) = 0.411 ÷ 2 = 0.206 mol"; "MM(O₂) = 2 × 16.00 = 32.00 g mol⁻¹" (a small chip "O₂, not O" with a red strike through "16.00 alone"); "m(O₂) = 0.206 × 32.00 = 6.58 g". On "eight" the conservation stack builds: a pale-green "Mg 10.0 g" bar plus a red "O₂ 6.58 g" bar slide end to end and match the "MgO 16.58 g" bar (tick "conserved"). On "changes" the crucible readout from scene 2 returns small with "+ mass of oxygen".
+Visual: stage change to the conservation stage (full width). Rows at the left (48 px, grey header "check"): "n(O₂) = 0.4114 ÷ 2 = 0.2057 mol" (grey "≈ 0.206"); "MM(O₂) = 2 × 16.00 = 32.00 g mol⁻¹" (a small chip "O₂, not O" with a red strike through "16.00 alone", red hand tag "O₂ has two O"); "m(O₂) = 0.2057 × 32.00 = 6.582 g", shown "6.58 g" with a grey tag (26 px) "unrounded moles carried; 0.206 × 32.00 would give 6.59" (brief 180). On "eight" the conservation stack builds at the right: a pale-green "Mg 10.0 g" bar plus a red "O₂ 6.58 g" bar slide end to end and match the "MgO 16.58 g" bar, framed with a green tick "conserved". On "changes" the mass slider appears under the stack (the simulation): the amber handle runs m(Mg) from 0 up to 10.0 g, and live readouts (52 px) "n(Mg)", "O₂ used" and "MgO formed" update together while the three bars grow, the Mg and O₂ bars always matching the MgO bar ("2.50 g: 1.65 g O₂, 4.15 g MgO"; "5.00 g: 3.29 g, 8.29 g"; "10.0 g: 6.58 g, 16.58 g"); teal hand tag "always matches" with a pen ring round the bar ends. The crucible readout from scene 2 returns small with "+ mass of oxygen".
 
 ### 7. a ratio that isn't one to one
 > Now a ratio that isn't one to one. In a blast furnace, iron oxide reacts with carbon monoxide. F e two O three plus three C O makes two F e plus three C O two. How much iron comes from eighty point zero grams of iron **oxide**? We only need the coefficients of the two substances in the question, iron oxide and iron, as long as there's plenty of carbon monoxide. Iron oxide's molar mass is one hundred and fifty-nine point seven, so that's zero point five zero one **moles**.
 
-Visual: board resets. Task strip: "Find the mass of Fe formed from 80.0 g of Fe₂O₃". Equation strip: "Fe₂O₃ + 3CO → 2Fe + 3CO₂" (grey tag "blast furnace"). Givens: "m(Fe₂O₃) = 80.0 g"; "Fe 55.85, O 16.00 g mol⁻¹"; "CO in plenty". On "oxide" the coefficient pair (implied 1 under Fe₂O₃, 2 under Fe) gets the amber outline. On "two substances in the question" the "3CO" and "3CO₂" terms dim (tag "CO in plenty: not in the ratio"). On "molar mass" row "MM(Fe₂O₃) = 2(55.85) + 3(16.00) = 159.70 g mol⁻¹"; on "moles" row "n(Fe₂O₃) = 80.0 ÷ 159.70 = 0.501 mol".
+Visual: board resets. Task strip: "Find the mass of Fe formed from 80.0 g of Fe₂O₃". Equation strip: "Fe₂O₃ + 3CO → 2Fe + 3CO₂" (grey tag "blast furnace"). Givens: "m(Fe₂O₃) = 80.0 g"; "Fe 55.85, O 16.00 g mol⁻¹"; "CO in plenty". On "oxide" the coefficient pair (implied 1 under Fe₂O₃, 2 under Fe) gets the amber outline. On "two substances in the question" the "3CO" and "3CO₂" terms dim (tag "CO in plenty: not in the ratio"). On "molar mass" row "MM(Fe₂O₃) = 2(55.85) + 3(16.00) = 159.70 g mol⁻¹"; on "moles" row "n(Fe₂O₃) = 80.0 ÷ 159.70 = 0.5009 mol" (grey "≈ 0.501"), grey hand tag "CO not needed".
 
 ### 8. the two in the ratio
 > Iron oxide to iron is one to two, because each unit of iron oxide holds two iron atoms. So we get one point zero zero two moles of iron. Times fifty-five point eight five, that's fifty-six point zero grams of **iron**. Here's a quick check from the empirical formula video. Iron oxide is about seventy percent iron, and seventy percent of eighty grams is fifty-six. It **matches**. Skip the ratio, and you'd get twenty-eight point zero, exactly half. That's the classic slip in these **problems**.
 
-Visual: on "two iron atoms" one Fe₂O₃ unit appears as atom tiles (two rust Fe, three red O); the two Fe tiles lift out (tag "1 Fe₂O₃ → 2 Fe"). Row "Fe₂O₃ : Fe = 1 : 2"; on "one point zero zero two" row "n(Fe) = 0.501 × 2 = 1.002 mol". On "iron" row "m(Fe) = 1.002 × 55.85 = 56.0 g" (bright). On "seventy percent iron" m2-v05's mass-share bar "Fe 69.9% | O 30.1%" returns small; a check row "≈ 0.70 × 80.0 = 56 g"; on "matches" a teal tick links it to the 56.0 g row. On "problems" a chip "skip the ratio: 0.501 × 55.85 = 28.0 g" fades in and is crossed (tag "half the iron").
+Visual: on "two iron atoms" one Fe₂O₃ unit appears as atom tiles (two rust Fe, three red O); the two Fe tiles lift out (tag "1 Fe₂O₃ → 2 Fe"). Row "Fe₂O₃ : Fe = 1 : 2"; on "one point zero zero two" row "n(Fe) = 0.5009 × 2 = 1.002 mol", amber hand tag "× 2: two Fe per unit". On "iron" row "m(Fe) = 1.002 × 55.85 = 55.96", then "56.0 g" framed with a green tick. On "seventy percent iron" m2-v05's mass-share bar "Fe 69.9% | O 30.1%" returns small; a check row "≈ 0.70 × 80.0 = 56 g"; on "matches" a teal tick links it to the 56.0 g row. On "problems" a chip "skip the ratio: 0.5009 × 55.85 = 28.0 g" fades in and is crossed in red, red hand tag "half the iron".
 
 ### 9. the bridge works backwards
 > The bridge works backwards too. What mass of magnesium must burn to make twenty point zero grams of magnesium oxide? Now the given substance is the product, so we start from its molar mass. Twenty point zero over forty point three is zero point four nine six moles. One to one, so that's zero point four nine six moles of magnesium, which is twelve point one **grams**. Same four steps, just starting from the other **end**.
 
-Visual: board resets; the bridge icon enlarges and flips direction (banks now "mass of MgO (given)" and "mass of Mg (wanted)"). Task strip "Find the mass of Mg needed to make 20.0 g of MgO". On "given substance is the product" the bank labels glow. Givens: "m(MgO) = 20.0 g"; "MM(MgO) 40.31, Mg 24.31 g mol⁻¹". Rows one at a time: "n(MgO) = 20.0 ÷ 40.31 = 0.496 mol"; "Mg : MgO = 1 : 1 → n(Mg) = 0.496 mol"; on "grams" "m(Mg) = 0.496 × 24.31 = 12.1 g" (bright). On "end" the flipped bridge's spans light right to left.
+Visual: board resets; the bridge icon enlarges and flips direction (banks now "mass of MgO (given)" and "mass of Mg (wanted)"). Task strip "Find the mass of Mg needed to make 20.0 g of MgO". On "given substance is the product" the bank labels glow. Givens: "m(MgO) = 20.0 g"; "MM(MgO) 40.31, Mg 24.31 g mol⁻¹". Rows one at a time (48 px): "n(MgO) = 20.0 ÷ 40.31 = 0.4962 mol" (grey "≈ 0.496"); "Mg : MgO = 1 : 1 → n(Mg) = 0.4962 mol"; on "grams" "m(Mg) = 0.4962 × 24.31 = 12.06", then "12.1 g" framed with a green tick; teal hand tag "start from the product". On "end" the flipped bridge's spans light right to left.
 
 ### 10. the condition behind every answer
 > One condition sits behind every answer here. We assumed the other reactant, the oxygen or the carbon monoxide, was there in plenty, so all of the given substance could react. That makes our answer the most product that can form, called the theoretical **mass**. Real experiments often get a little less, because some product is lost, or some reactant doesn't **react**. In a question, words like excess or plenty tell you this method fits.
 
-Visual: the three "in plenty" givens tags from scenes 4, 7 and 9 glow and gather into one chip: "assumes: the other reactant is in plenty". Gloss chip on "mass": "theoretical mass: the most product that can form if the given substance reacts completely". On "react" a small bar pair: "theoretical 16.6 g" (amber outline) and a slightly shorter grey "real: often a little less" (tag "losses, incomplete reaction"). On "excess or plenty" the word "excess" in a ghost question line underlines in amber.
+Visual: stage change to the condition stage. The three "in plenty" givens tags from scenes 4, 7 and 9 glow and gather into one large chip (44 px): "assumes: the other reactant is in plenty", navy hand tag "check the question says so". Gloss chip on "mass": "theoretical mass: the most product that can form if the given substance reacts completely". On "react" a small bar pair: "theoretical 16.6 g" (amber outline) and a slightly shorter grey "real: often a little less" (tag "losses, incomplete reaction"). On "excess or plenty" the word "excess" in a ghost question line underlines in amber.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Eight point one zero grams of aluminium burns in plenty of oxygen. Four A l plus three O two makes two A l two O three. Using aluminium twenty-six point nine eight and oxygen sixteen point zero zero, calculate the mass of aluminium oxide formed. Pause here to answer.
@@ -129,7 +132,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 12. feedback 1 (brief)
 > Eight point one zero grams of aluminium is zero point three zero zero moles. Aluminium to aluminium oxide is four to two, so halve it, zero point one five zero moles. Times one hundred and one point nine six, that's fifteen point three grams. Skipping the ratio gives thirty point six, double the right **answer**.
 
-Visual: card shrinks to the top. Rows: "n(Al) = 8.10 ÷ 26.98 = 0.300 mol"; "Al : Al₂O₃ = 4 : 2 → n(Al₂O₃) = 0.300 × 2 ÷ 4 = 0.150 mol"; "MM(Al₂O₃) = 2(26.98) + 3(16.00) = 101.96 g mol⁻¹"; "m = 0.150 × 101.96 = 15.3 g". On "answer" a chip "30.6 g (ratio skipped)" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. Rows: "n(Al) = 8.10 ÷ 26.98 = 0.300 mol"; "Al : Al₂O₃ = 4 : 2 → n(Al₂O₃) = 0.300 × 2 ÷ 4 = 0.150 mol"; "MM(Al₂O₃) = 2(26.98) + 3(16.00) = 101.96 g mol⁻¹"; "m = 0.150 × 101.96 = 15.3 g", the "15.3 g" framed with a green tick, teal hand tag "4 : 2, so halve". On "answer" a chip "30.6 g (ratio skipped)" fades in and is crossed in red, red hand tag "double: ratio skipped". Hold about 1 second.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one, backwards. Copper reacts with silver nitrate solution: C u plus two A g N O three makes C u N O three twice, plus two A g. What mass of copper is needed to deposit ten point eight grams of silver? Use copper sixty-three point five five and silver one hundred and seven point nine. Pause here to answer.
@@ -139,24 +142,24 @@ Visual: `QuestionCard`: "Copper reacts with excess silver nitrate solution: Cu(s
 ### 14. feedback 2 (brief)
 > Ten point eight grams of silver is zero point one zero zero moles. Copper to silver is one to two, so copper is half of that, zero point zero five zero zero moles. Times sixty-three point five five, that's three point one eight grams. Doubling instead of halving gives twelve point seven, the ratio turned upside **down**.
 
-Visual: card shrinks to the top. Rows: "n(Ag) = 10.8 ÷ 107.9 = 0.100 mol"; "Cu : Ag = 1 : 2 → n(Cu) = 0.100 × 1 ÷ 2 = 0.0500 mol"; "m(Cu) = 0.0500 × 63.55 = 3.18 g". On "down" a chip "12.7 g (× 2, ratio upside down)" fades in and is crossed, with the rule chip "n(wanted) = n(given) × coeff(wanted) ÷ coeff(given)". Hold about 1 second.
+Visual: card shrinks to the top. Rows: "n(Ag) = 10.8 ÷ 107.9 = 0.100 mol"; "Cu : Ag = 1 : 2 → n(Cu) = 0.100 × 1 ÷ 2 = 0.0500 mol"; "m(Cu) = 0.0500 × 63.55 = 3.18 g", the "3.18 g" framed with a green tick, teal hand tag "1 : 2, so halve". On "down" a chip "12.7 g (× 2, ratio upside down)" fades in and is crossed in red, red hand tag "upside down", with the rule chip "n(wanted) = n(given) × coeff(wanted) ÷ coeff(given)". Hold about 1 second.
 
 ### 15. conclusion and handoff
 > So we cross through moles: mass to moles, the mole ratio, then moles to mass, keeping the units each step. And each answer assumed the other reactant came in plenty. But what if it doesn't? Ten point zero grams of magnesium, with only four point zero grams of oxygen. One of them will run out first. Which reactant limits how much product can **form**?
 
-Visual: the memory line at the top; the bridge icon lights all its spans once. On "in plenty" the "assumes: the other reactant is in plenty" chip glows, then cracks on "doesn't". On "Ten point zero grams of magnesium" the board clears to the ribbon plate "10.0 g Mg"; on "four point zero grams of oxygen" the gas jar (`y11c-gas-jar-v1.png`) slides in labelled "4.0 g O₂"; the equation "2Mg + O₂ → 2MgO" writes above and the oxide dish with "? g MgO" sits at the right. On "run out first" the amber chip "which runs out first?". On "form" the chip "Next: Which reactant limits how much product can form?" writes. Hold about 2 seconds. This is the final frame (m2-v08 opens on it).
+Visual: the memory line in its framed card at the top; the bridge icon lights all its spans once. On "in plenty" the "assumes: the other reactant is in plenty" chip glows, then cracks on "doesn't". On "Ten point zero grams of magnesium" the board clears to the ribbon plate "10.0 g Mg"; on "four point zero grams of oxygen" the gas jar (`y11c-gas-jar-v1.png`) slides in labelled "4.0 g O₂"; the equation "2Mg + O₂ → 2MgO" writes above and the oxide dish with "? g MgO" sits at the right. On "run out first" the amber chip "which runs out first?". On "form" the chip "Next: Which reactant limits how much product can form?" writes. Hold about 2 seconds. This is the final frame (m2-v08 opens on it).
 
 ### 16. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Never go straight from mass to mass: coefficients are mole ratios.
-2. Four steps: (1) balanced equation, ratio for the two substances; (2) n(given) = m ÷ MM; (3) n(wanted) = n(given) × coeff(wanted) ÷ coeff(given); (4) m(wanted) = n × MM. Keep units.
-3. Use the formula in the equation for molar mass (O₂ = 32.00, not 16.00).
-4. Check with conservation of mass: mass of reactants used = mass of products.
-5. The answer is the theoretical mass: it assumes the other reactant is in plenty.
+1. Never mass to mass: coefficients are mole ratios.
+2. n(given) = m ÷ MM; n(wanted) = n(given) × coeff(wanted) ÷ coeff(given); m = n × MM.
+3. Use the formula in the equation (O₂ = 32.00, not 16.00).
+4. Check: mass of reactants used = mass of products.
+5. Theoretical mass assumes the other reactant is in plenty.
 
-Memory aid (large, on the notes screen): *Mass to moles, moles across, moles to mass.*
+Memory aid (framed card under the notes, hand lettering, amber and teal as in scene 3): *Mass to moles, moles across, moles to mass.* Notes 32 px in the role colours; no paragraphs.
 
 At the end the notes cross-fade back to scene 15's final frame.
 
@@ -186,7 +189,8 @@ Model answer: n(Ag) = 10.8 ÷ 107.9 = 0.100 mol (1 mark). Cu : Ag = 1 : 2, so n(
 | Hook | 10.0 g Mg; 16.6 g MgO | 1, 5 |
 | Crucible (illustrative) | 0.243 g ribbon; 25.363 → 25.523 g | 2 |
 | WE1 | 24.31; 16.00; 0.411 mol; 1 : 1; 40.31; 16.6 g | 4, 5 |
-| Conservation | 0.206 mol O₂; 32.00; 6.58 g; 10.0 + 6.58 = 16.58 g | 6 |
+| Conservation | 0.2057 mol O₂ (≈ 0.206); 32.00; 6.582 g, shown 6.58 g; 10.0 + 6.58 = 16.58 g | 6 |
+| Mass slider (Revision 2) | 2.50 g Mg: 1.65 g O₂, 4.15 g MgO; 5.00 g: 3.29 g, 8.29 g; 10.0 g: 6.58 g, 16.58 g | 6 |
 | WE2 | 80.0 g; 159.70; 0.501 mol; 1 : 2; 1.002 mol; 55.85; 56.0 g; check 69.9% ≈ 70% of 80.0 = 56; slip 28.0 g | 7, 8 |
 | Reverse | 20.0 g; 0.496 mol; 12.1 g | 9 |
 | A1 | 8.10 g; 26.98; 16.00; 0.300 mol; 0.150 mol; 101.96; 15.3 g; slip 30.6 g | 11, 12 |
@@ -198,7 +202,8 @@ Model answer: n(Ag) = 10.8 ÷ 107.9 = 0.100 mol (1 mark). Cu : Ag = 1 : 2, so n(
 Checked with Python (5 November); Codex to re-check.
 
 - 10.0 ÷ 24.31 = 0.41135; 24.31 + 16.00 = 40.31; 0.41135 × 40.31 = 16.582.
-- 0.41135 ÷ 2 = 0.20568; 2 × 16.00 = 32.00; 0.20568 × 32.00 = 6.582; 10.0 + 6.582 = 16.582.
+- 0.41135 ÷ 2 = 0.20568; 2 × 16.00 = 32.00; 0.20568 × 32.00 = 6.582; 10.0 + 6.582 = 16.582. Revision 2 (brief 180): 0.206 × 32.00 = 6.592 (6.59), so the row carries 0.2057.
+- Slider (Revision 2): 2.50 ÷ 24.31 = 0.10284 mol; O₂ 0.05142 × 32.00 = 1.645 (1.65); MgO 0.10284 × 40.31 = 4.145 (4.15); 5.00 g: O₂ 3.291 (3.29), MgO 8.291 (8.29).
 - 2(55.85) + 3(16.00) = 159.70; 80.0 ÷ 159.70 = 0.50094; × 2 = 1.00188; × 55.85 = 55.955; slip 27.977.
 - 0.70 × 80.0 = 56.0 (and 2(55.85) ÷ 159.70 = 69.94% iron).
 - 20.0 ÷ 40.31 = 0.49615; × 24.31 = 12.062.
@@ -213,7 +218,7 @@ Checked with Python (5 November); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules): **5,684 characters**, 16 scenes. At 13.3 characters per second the speech is about 427 s; add about 9 s of holds and settling (the bridge drawing in 3, the conservation stack in 6, the tile lift in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 517 s (8.6 minutes)**.
+Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,684 characters**, 16 scenes, speech unchanged (the brief 180 joined-count finding was withdrawn). At 13.3 characters per second the speech is about 427 s; add about 3 s for the mass slider to settle (6), 1 s for the stage cuts, about 9 s of holds and settling (the bridge drawing in 3, the conservation stack in 6, the tile lift in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 521 s (8.7 minutes)**.
 
 ## Scene list and build ids
 
@@ -221,7 +226,7 @@ Lesson key `c-y11-m2-v07` (route chem-y11-m2-v07; root to confirm). Suggested ex
 
 In order (16 scene headings, all `### N.`): hook-prediction, why-more, mole-bridge, we1-moles, we1-mass, conservation-check, we2-moles, we2-ratio, reverse, condition, attempt-1, feedback-1, attempt-2, feedback-2, conclusion-handoff, key-notes.
 
-Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end (as ws-v06 scene 5). Transitions: ws-v06's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 clear change; 3 to 4 camera continue (bridge shrinks to an icon); 4 to 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 clear change; 9 to 10 camera continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
+Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end (as ws-v06 scene 5). Transitions: ws-v06's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 clear change; 3 to 4 clear change to the full-width calculation (bridge shrinks to an icon); 4 to 5 camera continue; 5 to 6 stage change to the conservation stage (Revision 2); 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 clear change; 9 to 10 stage change to the condition stage (Revision 2); attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v07-learning-review.md`, `checks/c-y11-m2-v07-science-check.md`.
 
@@ -237,7 +242,7 @@ Have (inspected 5 November; uniform scaling only):
 
 Need (new plates, Codex): none.
 
-Coded: particle strip, readouts, bridge diagram and icon, calculation layout, conservation stack, atom tiles, chips, attempt cards, countdowns, key notes board.
+Coded: mass slider and its live readouts, particle strip, readouts, bridge diagram and icon, calculation layout, conservation stack, atom tiles, chips, attempt cards, countdowns, key notes board.
 
 ## Codex asset brief (Year 11 Chemistry M2 v07)
 
@@ -283,3 +288,18 @@ Previous: How a chemistry model solves an unfamiliar quantitative problem. Next:
 
 - Revision 1 has had no independent review. Next: student learning review (is the bridge diagram clearer than the site's linear chain at playback speed; does the conservation check feel like a payoff or a detour; is scene 10's condition understood without "limiting"), then the science check and Codex error check.
 - Checker output (5 November): narration 5,684 characters; per scene (1 to 16): 206, 441, 422, 343, 411, 420, 468, 485, 416, 431, 278, 310, 312, 318, 348, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+- Revision 2 count (6 November): 5,684 characters (sum of scene strings; speech unchanged); per scene as Revision 1. Every bold cue checked in its Visual in spoken order; no em dash.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 180 findings (`checks/c-y11-m2-v07-learning-review.md`, `checks/c-y11-m2-v07-science-check.md`):
+- **Should fix, scene 6 guard digits:** the oxygen rows carry 0.2057 mol (grey "≈ 0.206") into m(O₂) = 0.2057 × 32.00 = 6.582 g, shown 6.58 g, with a grey tag that 0.206 × 32.00 would give 6.59; the conservation total stays 16.58 g. Earlier rows in scenes 4, 5, 7, 8 and 9 also carry their four-figure amounts (0.4114, 0.5009, 0.4962) with three-figure grey displays. No speech change (the spoken 6.58 is correct).
+- **Count finding:** withdrawn by Codex (5,684 is the sum of scene strings); no change.
+
+Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
+- Decisions: colour roles, type sizes (current row 48 px, readouts 52 px, floor 26 px), anchor and simulation lines; stage cuts recorded.
+- Simulation: scene 6 gains a mass slider that sweeps the magnesium mass from 0 to 10.0 g while live readouts (O₂ used, MgO formed) and the to-scale conservation stack update together, always matching.
+- Stage cuts: 3 to 4 (full-width g01 layout), 5 to 6 (conservation stage) and 9 to 10 (condition stage), breaking the 120 s continued board.
+- Hand tags and pen marks in role colours in every teaching scene; framed answers on 16.6 g (5), 16.58 g conserved (6), 56.0 g (8), 12.1 g (9), 15.3 g (12), 3.18 g (14); crossed slips with red hand tags (6 "16.00 alone", 8, 12, 14).
+- Memory line in a framed card from scene 3; key notes trimmed to five short bullets (294 characters) with the framed card.
+- No new plate requests (no existing blast-furnace or iron ore plate; scene 7 stays coded). Final frame unchanged (m2-v08 opens on it).

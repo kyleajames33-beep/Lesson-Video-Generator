@@ -34,3 +34,10 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`; M
 22. **m2-v18 secondary data.** Tagged illustrative fixed-volume values stand unless Codex finds a citable dataset; if one is found, use it unchanged. If the combined bath-rig plates do not layer cleanly, request one syringe-in-water-bath plate. 80 °C bath limit goes to the science check.
 23. **Units.** Pressure in kPa only; atm and mmHg are never spoken or shown. m2-v17's coded bike-pump outline and m2-v19's balloon as a weather balloon are accepted. m2-v18's first named cut (110 characters) is the reserve.
 24. **Site corrections** (Module 2 lesson 15, including trap 1's 9% error) are listed in each design's Decisions; Codex logs them.
+
+## After brief 180 repairs (6 November 2026)
+
+25. **No capped-bottle beat anywhere in Module 2.** m2-v01 now uses root decision 3's no-gas fallback (sodium carbonate into calcium chloride on the balance, reading steady at 98.42 g). Root decision 18 is amended: m2-v09's closed check recalls that no-gas precipitate reaction on the balance, not a capped bottle. The brief 181 repair applies this.
+26. **New plate approved:** `y11c-beaker-white-precipitate-v1.png` for m2-v01, painted as an edit of the existing colourless-solution beaker (same vessel, same angle, white precipitate settling). Paint after the error check.
+27. **`m6-analytical-balance-v1.png`** (ws-v04 scene 3) inspected by root: a clean painted analytical balance with draught shield and beaker of white solid. Fit.
+28. **Headline counts** are the sum of scene strings (brief 180 count correction). The repairs normalised every Module 2 headline in this wave to that method.
