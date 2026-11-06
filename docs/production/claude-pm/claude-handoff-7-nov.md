@@ -8,6 +8,7 @@ State for Claude after a compact. Memory (`MEMORY.md`) loads automatically; read
 - **Re-render published videos only for the 20 C grades.** The B-grade polish re-renders are shelved: briefs 206 to 212 and 215 are marked SHELVED, and their scene fixes are committed. No new B fixes.
 - **The site lesson is the source of truth** for numbers and examples. Example: m6-v19 keeps the site's 1500/1425 rev/min and draws a 4-pole ring instead of changing the numbers.
 - **Cultural holds wait for the owner:** bio-m8-b15 and b17.
+- **Maths anchors come from everyday life** (money, sport, travel, phones, music, cooking), not mostly science. The owner made this point on 7 Nov; it is in `maths-visual-standard.md`. Every Maths redesign brief must require it.
 
 ## How builds work now
 - **Brief.** Build agents follow `docs/production/claude-pm/build-agent-brief.md`, including its root-rules section:

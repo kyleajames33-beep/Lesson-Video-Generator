@@ -41,6 +41,20 @@ Painted plates are allowed and expected for the anchor and any real object. Use 
 - Narration may change where an anchor needs it. Re-voice only the changed scenes on the Google voice; keep unchanged takes.
 - The same bar applies to Year 11 Chemistry and Year 12 Physics designs. Those designs already use plates, but they are checked against items 2 to 9.
 
+## Maths anchors come from everyday life (owner, 7 November 2026)
+
+Most Maths Advanced students do not study Biology or the other sciences. Do not make Maths lessons science-themed by default; d01's bacteria flasks are one example, not the pattern. Pick each lesson's painted anchor from varied everyday contexts:
+- money, loans and interest;
+- sport and ball flight;
+- travel, speed and fuel;
+- phones, data and apps;
+- music and sound;
+- cooking and recipes;
+- design and architecture;
+- populations of people, followers or users.
+
+Vary the contexts across a module. Use a science context only when it is clearly the most natural fit.
+
 ## Pilot approvals (owner, 7 November 2026)
 
 - **Maths (math-a12-d01 v2): approved** by the owner after watching it.
