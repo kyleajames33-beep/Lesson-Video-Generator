@@ -50,5 +50,7 @@ Also:
 - **Fill from the first frame:** every stage shows its main picture (plate, apparatus, diagram or simulation) from its first frame, with labels and answers arriving on cue. Empty boxes or bare panels waiting for a later cue fail A.
 - **Contrast:** use full-ink text for content students must read (no pale grey). Plates that carry the idea should be at least about 300 px tall.
 - **Sheets:** no frame-number stamps on the final sheet.
+- **Faint previews are for secondary items only** (small chips, labels, later answers). Each stage's main visual (the plate, apparatus, organ, diagram or chart frame) is solid, in full ink and colour, from the first frame. A frame that is mostly faint reads as washed out and fails A.
+- **Countdown:** show the ring full from "Pause here to answer." until the timed countdown starts, so it appears in every hold frame.
 
 Never ship placeholder art. If a design-named plate is missing, stop that scene and report it.
