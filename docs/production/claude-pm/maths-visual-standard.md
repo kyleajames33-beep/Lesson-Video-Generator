@@ -41,6 +41,11 @@ Painted plates are allowed and expected for the anchor and any real object. Use 
 - Narration may change where an anchor needs it. Re-voice only the changed scenes on the Google voice; keep unchanged takes.
 - The same bar applies to Year 11 Chemistry and Year 12 Physics designs. Those designs already use plates, but they are checked against items 2 to 9.
 
+## Pilot approvals (owner, 7 November 2026)
+
+- **Maths (math-a12-d01 v2): approved** by the owner after watching it.
+- **Year 11 Chemistry (chem-y11-m2-v06 v1) and Year 12 Physics (phys-y12-m5-v04 v1): approved by extension.** The owner said Maths is good, "which means the chem and phys are probably good too, continue with them". All three courses may now build in bulk to the grade-A gate. If the owner later watches a science pilot and wants changes, apply them to that course's remaining builds.
+
 ## Build gate (every course, from 6 November)
 
 **Grade A before any render (owner, 6 November evening).** Every new or rebuilt video must grade A on its 16-frame contact sheet (`quality-fixes/rubric.md`) before its full render. B+ is not enough. The builder grades the sheet, and root signs it off. A means every one of the 16 frames passes all of these:
