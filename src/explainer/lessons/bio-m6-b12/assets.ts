@@ -43,6 +43,14 @@ export const PLATES = {
 	flower: mk('strawberry-flower-botanical-b1-v1-alpha.png', [1254, 1254], [29, 27, 1224, 1241]),
 	cell: mk('cd-interphase-empty-v1.png', N2, [51, 56, 1958, 1867]),
 	eggdish: mk('m6-egg-sperm-dish-v1.png', N2, [201, 302, 1800, 1697]),
+	// Quality fix (6 Nov 2026), measured from the real files: an early embryo (frozen embryos, scene 6) and a knapsack
+	// sprayer (the herbicide sprayed along the field edge, exam item 1; labelled "herbicide spray").
+	embryo: mk('b3a-cleavage-5-v1.png', [1800, 1800], [213, 212, 1587, 1582]),
+	sprayer: mk('m7-insecticide-sprayer-v1.png', N2, [373, 220, 1627, 1780]),
+	// One plant each from the brassica row plate (measured runs; draw with ClipPl so the neighbours stay hidden): the wild
+	// mustard (a wild relative) and the kale (the crop), for exam item 1 and its feedback.
+	mustard: mk('y11-brassica-crops-v1.png', [2172, 724], [22, 64, 541, 604]),
+	kale: mk('y11-brassica-crops-v1.png', [2172, 724], [558, 68, 1064, 588]),
 };
 /** The banana pair's gap (natural x); the field plate's split between monoculture and mixed planting. */
 export const BANANA_SPLIT = 1055;

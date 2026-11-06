@@ -53,6 +53,8 @@ export const PLATES = {
 	calf: mk('b3b-calf-side-v1.png', [2200, 1600], [782, 910, 1418, 1360]),
 	calfHorn: mk('m6-dairy-calf-horn-buds-v1.png', N2, [115, 210, 1953, 1794]),
 	rhino: mk('m6-northern-white-rhino-v1.png', N2, [160, 533, 1840, 1466]),
+	// Quality fix (6 Nov 2026), measured from the real file: a dairy cow (everyday breeding, scene 6).
+	cow: mk('b3b-dairy-cow-side-v1.png', [2200, 1600], [404, 460, 1796, 1360]),
 };
 /** Natural points on the plates. */
 export const PT = {

@@ -12,7 +12,7 @@ import {HscTag, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, EDGE, GREY_INK, INK, INK_SOFT, MarkText, PLATES, Pl, prog, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, EDGE, FrozenVial, GREYT, GREY_INK, GeneSeg, GeneStack, INK, INK_SOFT, MarkText, PLATES, PlasmidRing, Pl, lerp, prog, smooth, vis} from './parts';
 
 const PauseHold: React.FC<{id: string; at: number; cx?: number; cy?: number}> = ({id, at, cx = 1680, cy = 880}) => {
 	const h = hold(id);
@@ -30,15 +30,15 @@ const AnsBox: React.FC<{x: number; y: number; w: number; h: number; at: number}>
 	</>
 );
 /** A feedback row: label, text, lit while current. */
-const FbRow: React.FC<{y: number; label: string; text: string; at: number; lit: number; w?: number; size?: number}> = ({y, label, text, at, lit, w = 1460, size = 32}) => {
+const FbRow: React.FC<{y: number; label: string; text: string; at: number; lit: number; w?: number; size?: number; tx?: number}> = ({y, label, text, at, lit, w = 1460, size = 32, tx = 440}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 12);
 	if (o <= 0.01) return null;
 	return (
 		<g opacity={o}>
 			<rect x={120} y={y} width={w} height={74} rx={16} fill={lit > 0.5 ? '#fffaf0' : CARD} stroke={lit > 0.5 ? AMBER : EDGE} strokeWidth={lit > 0.5 ? 3.5 : 2.5} />
-			<Sx x={146} y={y + 48} text={label} size={28} color={lit > 0.5 ? INK : GREY_INK} weight={800} />
-			<Sx x={440} y={y + 49} text={text} size={size} color={lit > 0.5 ? INK : GREY_INK} hand />
+			<Sx x={146} y={y + 48} text={label} size={30} color={lit > 0.5 ? INK : GREY_INK} weight={800} />
+			<Sx x={120 + tx - 120} y={y + 49} text={text} size={size} color={lit > 0.5 ? INK : GREY_INK} hand />
 		</g>
 	);
 };
@@ -54,23 +54,27 @@ const MARKS1 = ['100 embryos', 'skin cells', 'patch patterns differed', 'prize d
 qCheck([...STEM1({a: 0, c: 0, d: 0}), ...PAT1({a: 0, c: 0, d: 0})], MARKS1.map(phrase => ({phrase, at: 0})));
 
 // ---------- 10a. Attempt one ----------
+// Quality fix (6 Nov 2026): the bull is large while the company is read, then moves up as the two calves arrive.
 const KA = cues(S('attempt'), {two: 'Two exam questions now', first: 'First', company: 'A company made', six: 'Six calves were born', four: 'four were alive', patches: 'black and white patches', assess: 'Assess the effectiveness', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
 	const t: T1 = {a: KA.company, c: KA.patches, d: KA.assess};
+	const up = smooth(prog(f, KA.six - 10, 24));
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={180} w={1720} h={840} at={KA.first - 6} />
-				<Pl p={PLATES.bull} cx={1600} cy={300} w={250} o={prog(f, KA.company + 10, 14)} />
-				<Pl p={PLATES.calf} cx={1520} cy={510} w={150} o={prog(f, KA.six, 14)} />
-				<Pl p={PLATES.calfHorn} cx={1710} cy={500} w={170} o={prog(f, KA.six + 8, 14)} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1250} size={32} card={false} />
-				<DataTable x={140} y={360} cols={COLS1} rows={ROWS1} rowAt={[KA.company + 30, KA.six, KA.four]} at={KA.company + 20} size={28} rowH={50} />
-				<QText q={qCheck(PAT1(t), [])} x={140} y={620} w={1250} size={32} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={730} w={1250} size={32} card={false} />
+				<Pl p={PLATES.bull} cx={lerp(1460, 1600, up)} cy={lerp(560, 300, up)} w={lerp(600, 280, up)} o={prog(f, KA.company + 10, 14)} />
+				<Sx x={1460} y={800} text="prize dairy bull" size={38} color={INK} hand anchor="middle" opacity={prog(f, KA.company + 20, 12) * (1 - up)} />
+				<Pl p={PLATES.calf} cx={1500} cy={540} w={190} o={prog(f, KA.six, 14)} />
+				<Pl p={PLATES.calfHorn} cx={1710} cy={530} w={210} o={prog(f, KA.six + 8, 14)} />
+				<Sx x={1605} y={660} text="patches differ" size={32} color={INK} hand anchor="middle" at={KA.patches + 10} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1120} size={32} card={false} />
+				<DataTable x={140} y={360} cols={COLS1} rows={ROWS1} rowAt={[KA.company + 30, KA.six, KA.four]} at={KA.company + 20} size={30} rowH={54} />
+				<QText q={qCheck(PAT1(t), [])} x={140} y={630} w={1250} size={32} card={false} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={740} w={1250} size={32} card={false} />
 				<AnsBox x={140} y={800} w={1320} h={200} at={KA.assess + 30} />
 				<PauseHold id="attempt" at={KA.pause} />
 			</Overlay>
@@ -79,8 +83,11 @@ export const SceneAttempt: React.FC = () => {
 };
 
 // ---------- 10b. Feedback one ----------
+// Quality fix (6 Nov 2026): the data table is drawn at full size (30 px) beside the feedback rows, instead of scaled
+// to 60% inside the question strip.
 const KB = cues(S('feedback-one'), {four: 'four live calves', two: 'two of the six', nuclear: 'nuclear DNA matches', patches: 'patches differ', worth: 'worth it only', valuable: 'very valuable bull', saying: 'Saying different patches', mistake: 'the classic mistake'});
 const ALL1: T1 = {a: -100, c: -100, d: -100};
+const COLS1B: Col[] = [{w: 430, head: 'hypothetical data'}, {w: 150, head: 'number', align: 'middle'}];
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
 	const rowsLit = 1 - prog(f, KB.worth, 12);
@@ -92,20 +99,20 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Heading text="Judge it against the purpose" at={4} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<CardBox x={100} y={160} w={1720} h={170} at={-100} />
-				<QText q={qCheck([...STEM1(ALL1), ...PAT1(ALL1)], marks)} x={140} y={212} w={2000} size={32} card={false} s={0.6} />
-				<g transform="translate(1390,176) scale(0.6) translate(-1390,-176)">
-					<DataTable x={1390} y={176} cols={COLS1} rows={ROWS1} at={-100} size={28} rowH={50} hot={hot} />
-				</g>
-				<FbRow y={370} label="reliability" text="4 in 100: low" at={KB.four} lit={lit(KB.four, KB.two)} />
-				<FbRow y={460} label="health" text="2 of 6 calves died" at={KB.two} lit={lit(KB.two, KB.nuclear)} />
-				<FbRow y={550} label="identity" text="same nuclear DNA as the bull" at={KB.nuclear} lit={lit(KB.nuclear, KB.patches)} />
-				<FbRow y={640} label="patches" text="shaped in development, not genes alone" at={KB.patches} lit={lit(KB.patches, KB.worth)} />
+				<CardBox x={100} y={160} w={1720} h={150} at={-100} />
+				<QText q={qCheck([...STEM1(ALL1), ...PAT1(ALL1)], marks)} x={140} y={212} w={2620} size={32} card={false} s={0.62} />
+				<DataTable x={1220} y={350} cols={COLS1B} rows={ROWS1} at={-100} size={30} rowH={56} hot={hot} />
+				<FbRow y={350} label="reliability" text="4 in 100: low" at={KB.four} lit={lit(KB.four, KB.two)} w={1060} tx={340} size={34} />
+				<FbRow y={440} label="health" text="2 of 6 calves died" at={KB.two} lit={lit(KB.two, KB.nuclear)} w={1060} tx={340} size={34} />
+				<FbRow y={530} label="identity" text="same nuclear DNA as the bull" at={KB.nuclear} lit={lit(KB.nuclear, KB.patches)} w={1060} tx={340} size={34} />
+				<FbRow y={620} label="patches" text="shaped in development, not genes alone" at={KB.patches} lit={lit(KB.patches, KB.worth)} w={1060} tx={340} size={32} />
+				<Pl p={PLATES.calf} cx={1420} cy={680} w={170} o={vis(f, KB.patches, KB.worth, 12)} />
+				<Pl p={PLATES.calfHorn} cx={1640} cy={670} w={190} o={vis(f, KB.patches, KB.worth, 12)} />
 				<g opacity={prog(f, KB.worth, 12)}>
-					<rect x={120} y={745} width={1460} height={90} rx={20} fill="#fff3d9" stroke={AMBER} strokeWidth={4} />
-					<MarkText x={150} y={805} size={42} at={KB.worth} parts={[{t: 'Verdict: worth it '}, {t: 'only', mark: KB.worth + 14}, {t: ' for a very valuable bull'}]} />
+					<rect x={120} y={740} width={1680} height={96} rx={20} fill="#fff3d9" stroke={AMBER} strokeWidth={4} />
+					<MarkText x={150} y={804} size={44} at={KB.worth} parts={[{t: 'Verdict: worth it '}, {t: 'only', mark: KB.worth + 14}, {t: ' for a very valuable bull'}]} />
 				</g>
-				<MistakeChip x={140} y={900} text="different patches, so the DNA wasn't copied" at={KB.saying} cross={KB.mistake} size={30} />
+				<MistakeChip x={140} y={900} text="different patches, so the DNA wasn't copied" at={KB.saying} cross={KB.mistake} size={34} />
 			</Overlay>
 		</>
 	);
@@ -123,19 +130,38 @@ const MARKS2 = ["many copies of one of the rhino's genes", 'a living rhinoceros 
 qCheck(STEM2({a: 0, b: 0, c: 0, d: 0}), MARKS2.map(phrase => ({phrase, at: 0})));
 
 // ---------- 10c. Attempt two ----------
+// Quality fix (6 Nov 2026): the rhino and its frozen cells fill the empty card while the stem is read; then the rhino
+// moves up and each project's stated product is drawn as it is read (copies of one gene; a living calf). They clear
+// when the demand arrives and the answer box opens.
 const KC = cues(S('attempt-two'), {second: 'Second', zoo: 'A zoo stores', a: 'Project A will', b: 'Project B aims', dist: 'Distinguish between', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	const t: T2 = {a: KC.zoo, b: KC.a, c: KC.b, d: KC.dist};
+	const up = smooth(prog(f, KC.a - 6, 26));
+	const iconsO = 1 - prog(f, KC.dist, 14);
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={180} w={1720} h={840} at={KC.second + 6} />
-				<Pl p={PLATES.rhino} cx={1610} cy={320} w={330} o={prog(f, KC.zoo + 10, 14)} />
+				<Pl p={PLATES.rhino} cx={lerp(760, 1610, up)} cy={lerp(760, 320, up)} w={lerp(640, 330, up)} o={prog(f, KC.zoo + 10, 14)} />
+				<g opacity={prog(f, KC.zoo + 20, 12) * (1 - up)}>
+					<FrozenVial x={1260} y={730} s={1.3} />
+					<Sx x={1260} y={900} text="frozen skin cells" size={36} color={INK} hand anchor="middle" />
+				</g>
 				<QText q={qCheck(STEM2(t), [])} x={140} y={250} w={1250} size={34} card={false} />
 				<QText q={qCheck(DEM2(t), [])} x={140} y={640} w={1300} size={34} card={false} />
+				<g opacity={iconsO}>
+					<g opacity={prog(f, KC.a + 10, 12)}>
+						<GeneStack x={330} y={790} n={4} dy={40} seg={6} />
+						<Sx x={420} y={980} text="A: many copies of one gene" size={36} color={INK} hand anchor="middle" />
+					</g>
+					<g opacity={prog(f, KC.b + 10, 12)}>
+						<Pl p={PLATES.rhino} cx={1050} cy={850} w={260} />
+						<Sx x={1050} y={980} text="B: a living calf" size={36} color={INK} hand anchor="middle" />
+					</g>
+				</g>
 				<AnsBox x={140} y={730} w={1320} h={270} at={KC.dist + 30} />
 				<PauseHold id="attempt-two" at={KC.pause} />
 			</Overlay>
@@ -149,7 +175,7 @@ const ALL2: T2 = {a: -100, b: -100, c: -100, d: -100};
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	const marks: QMark[] = [{phrase: MARKS2[0], at: KD.product1}, {phrase: MARKS2[1], at: KD.calf}];
-	const colA = 440, colB = 1100;
+	const colA = 440, colB = 1150;
 	const cell = (x: number, y: number, text: string, at: number, size = 32, grey = false) => <Sx x={x} y={y} text={text} size={size} color={grey ? GREY_INK : INK} hand at={at} />;
 	return (
 		<>
@@ -168,8 +194,8 @@ export const SceneFeedbackTwo: React.FC = () => {
 				</g>
 				{cell(colA, 540, 'gene cloning', KD.a + 6)}
 				{cell(colB, 540, 'whole-organism cloning', KD.b + 6)}
-				{cell(colA, 630, 'gene in a plasmid, copied by dividing bacteria', KD.plasmid, 24, true)}
-				{cell(colB, 630, 'skin-cell nucleus into an enucleated egg', KD.skin, 24, true)}
+				{cell(colA, 630, 'gene in a plasmid, copied by dividing bacteria', KD.plasmid, 28, true)}
+				{cell(colB, 630, 'skin-cell nucleus into an enucleated egg', KD.skin, 30, true)}
 				{cell(colA, 730, 'many copies of one gene', KD.product1 + 6, 34)}
 				{cell(colB, 730, "a calf with the rhino's nuclear DNA", KD.calf + 6, 34)}
 				<MistakeChip x={140} y={880} text="both projects make a copy of the rhino" at={KD.saying} cross={KD.mistake} size={30} />
@@ -179,7 +205,35 @@ export const SceneFeedbackTwo: React.FC = () => {
 };
 
 // ---------- 11. Decision rule and handoff ----------
+// Quality fix (6 Nov 2026): all three step cards wait at 35% from the start and light on their cues; each carries an
+// icon (the lamb or the gene; the egg or the plasmid; the criteria bars).
 const KE = cues(S('decision-rule'), {so: 'So when a question', first: 'first ask what', trace: 'Then trace how', judge: 'judge it against', next: 'Next, how scientists'});
+const StepIcon: React.FC<{i: number; x: number; y: number}> = ({i, x, y}) => {
+	if (i === 0) return (
+		<g>
+			<Pl p={PLATES.lamb} cx={x - 70} cy={y} w={100} />
+			<Sx x={x} y={y + 12} text="or" size={30} color={GREY_INK} hand anchor="middle" />
+			<GeneSeg x={x + 40} y={y - 14} n={4} pitch={22} gap={22} lineW={4} />
+		</g>
+	);
+	if (i === 1) return (
+		<g>
+			<Pl p={PLATES.egg} cx={x - 70} cy={y} w={84} />
+			<Sx x={x} y={y + 12} text="or" size={30} color={GREY_INK} hand anchor="middle" />
+			<PlasmidRing cx={x + 76} cy={y} r={34} sw={7} insert={1} />
+		</g>
+	);
+	return (
+		<g>
+			{[0.15, 0.7, 0.9].map((p, k) => (
+				<g key={k}>
+					<rect x={x - 100} y={y - 34 + k * 26} width={200} height={18} rx={9} fill={CARD} stroke={INK_SOFT} strokeWidth={2} />
+					<rect x={x - 99} y={y - 33 + k * 26} width={198 * p} height={16} rx={8} fill={k === 0 ? '#a5523a' : AMBER} />
+				</g>
+			))}
+		</g>
+	);
+};
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
 	const STEPS = [
@@ -191,18 +245,22 @@ export const SceneDecision: React.FC = () => {
 		<>
 			<Heading text="When a question says cloning" at={KE.so} size={56} />
 			<Overlay>
-				{STEPS.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
-						<rect x={140} y={230 + i * 130} width={1640} height={100} rx={24} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
-						<Sx x={190} y={296 + i * 130} text={`${i + 1}`} size={46} color={AMBER_INK} weight={800} />
-						<Sx x={250} y={296 + i * 130} text={s.t} size={40} color={INK} hand />
-					</g>
-				))}
+				{STEPS.map((s, i) => {
+					const on = prog(f, s.at, 14);
+					return (
+						<g key={i} opacity={prog(f, 6 + i * 6, 12) * (0.35 + 0.65 * on)}>
+							<rect x={120} y={220 + i * 150} width={1700} height={120} rx={26} fill={on > 0.5 ? '#fffaf0' : CARD} stroke={on > 0.5 ? AMBER : GREYT} strokeWidth={on > 0.5 ? 4 : 2.5} />
+							<Sx x={170} y={297 + i * 150} text={`${i + 1}`} size={50} color={AMBER_INK} weight={800} />
+							<Sx x={235} y={297 + i * 150} text={s.t} size={i === 2 ? 38 : 44} color={INK} hand />
+							<StepIcon i={i} x={1660} y={280 + i * 150} />
+						</g>
+					);
+				})}
 				<g opacity={prog(f, KE.next, 14)}>
-					<rect x={640} y={790} width={1180} height={160} rx={36} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
-					<Pl p={PLATES.upEnd} cx={790} cy={870} w={230} />
-					<Sx x={930} y={862} text="Next: how recombinant DNA is made" size={38} color={INK} hand />
-					<Sx x={930} y={910} text="and gets into a host" size={38} color={INK} hand />
+					<rect x={560} y={760} width={1260} height={200} rx={36} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
+					<Pl p={PLATES.upEnd} cx={760} cy={860} w={320} />
+					<Sx x={960} y={850} text="Next: how recombinant DNA is made" size={42} color={INK} hand />
+					<Sx x={960} y={906} text="and gets into a host" size={42} color={INK} hand />
 				</g>
 			</Overlay>
 		</>
@@ -210,13 +268,18 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 12. Key notes ----------
+// Quality fix (6 Nov 2026): short one-line bullets replace the five paragraphs; the framed memory aid is unchanged.
 const NOTES = [
-	'A clone is a genetically identical copy. Whole-organism cloning makes a new individual with the same nuclear DNA as an existing one; gene cloning makes many copies of one selected piece of DNA.',
-	'Somatic cell nuclear transfer: an egg\'s nucleus is removed; a body cell from the donor is fused with the empty egg (for Dolly, by an electric pulse), and the egg is stimulated to divide; the embryo is placed in a surrogate. The clone\'s nuclear DNA matches the nucleus donor; its mitochondrial DNA comes mainly from the egg.',
-	'Whole-organism cloning: low reliability (Dolly: 277 fused cells, 29 embryos, 1 lamb), because the egg often resets the body-cell nucleus\'s gene switches only partly; pregnancy losses and abnormal births are common; a clone can still differ in phenotype. It can be worth it to copy a rare or valuable animal, but many copies of one animal narrow a gene pool.',
-	'Gene cloning: a gene is put into a plasmid (the vector) and taken up by a bacterium (the host), which copies it every time it divides; PCR copies a gene without cells (heat separates the strands, then an enzyme copies each one). Very effective for its narrow aim (one host is enough; easy to check), but colonies must be checked for the gene.',
-	'To distinguish them, ask what exists at the end: a new organism, or many copies of one gene.',
+	'A clone is a genetically identical copy. Ask: a whole individual, or one gene?',
+	'Nuclear transfer: remove an egg\'s nucleus, fuse a body cell with it, embryo into a surrogate.',
+	'The clone\'s nuclear DNA matches the nucleus donor; its mitochondrial DNA comes from the egg.',
+	'Low reliability (Dolly: 277 fused cells, 29 embryos, 1 lamb): gene switches reset only partly.',
+	'Clones can still differ: development and environment shape the phenotype.',
+	'Worth it to copy a rare or valuable animal, not for everyday breeding.',
+	'Gene cloning: gene into a plasmid (vector), taken up by a bacterium (host), copied at each division.',
+	'PCR copies a gene with no cells: heat separates the strands, an enzyme copies each one.',
+	'Gene cloning is very effective for its aim, but colonies must be checked for the gene.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="The clone matches the nucleus donor. Gene cloning copies a gene; organism cloning copies an individual." tag="what exists at the end? a new organism, or many copies of one gene" size={27} aidTop={820} />
+	<NotesBoard notes={NOTES} aid="The clone matches the nucleus donor. Gene cloning copies a gene; organism cloning copies an individual." tag="what exists at the end? a new organism, or many copies of one gene" size={33} aidTop={800} />
 );

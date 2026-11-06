@@ -9,10 +9,11 @@ import {Countdown, Heading, MistakeChip, Overlay, Sx} from '../bio-m5-b13/shared
 import {HscTag, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
-import {Brace, GreyCross} from '../bio-m6-b07/parts';
+import {Brace, GreyCross, Tg} from '../bio-m6-b07/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, Balance, CARD, Cell, FieldHalf, GREYT, GREY_INK, INK, INK_SOFT, PLATES, Pill, Pl, Rg, Strip, lerp, prog, smooth} from './parts';
+import {AMBER, AMBER_INK, Balance, CARD, Cell, FieldHalf, GREYT, GREY_INK, Habitats, INK, INK_SOFT, MarkGlyph, PLATES, Pill, Pl, Rg, Strip, clamp01, lerp, prog, smooth} from './parts';
 import type {RK} from './parts';
+import {ClipPl} from './big';
 
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1680, cy = 840}) => {
 	const h = hold(id);
@@ -43,19 +44,55 @@ const MARKS1 = ['can cross-pollinate with it', 'spray the herbicide along the fi
 qCheck(STRIP1({a: 0, b: 0, c: 0, d: 0}).blocks, MARKS1.map(phrase => ({phrase, at: 0})));
 
 // ---------- 10a. Attempt one ----------
+// Quality fix (6 Nov 2026): the givens are drawn large in the card while they are read (the herbicide-tolerant crop,
+// the small wild population beside it, herbicide sprayed along the field edge). No pollen or allele change is shown:
+// that is the answer. When the demand arrives, the picture moves to the right column and the answer box narrows.
 const KA = cues(S('attempt'), {two: 'Two exam questions now', first: 'First', crop: 'A crop has been modified', grows: 'It grows beside', farmers: 'and farmers spray', explain: 'Explain how', pause: 'Pause here to answer'});
-export const SceneAttempt: React.FC = () => (
-	<>
-		<Heading text="Exam question 1" at={KA.two} size={50} />
-		<Overlay>
-			<HscTag at={KA.two} />
-			<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
-			<QText q={Q1({a: KA.crop, b: KA.grows, c: KA.farmers, d: KA.explain})} x={140} y={252} w={1640} size={38} card={false} />
-			<AnsBox x={140} y={540} w={1320} h={450} at={KA.explain + 20} label="answer" />
-			<PauseHold id="attempt" at={KA.pause} cy={800} />
-		</Overlay>
-	</>
-);
+/** The givens picture in local coordinates (1280 x 420); `lab` fades its labels. */
+const Givens1: React.FC<{f: number; lab: number}> = ({f, lab}) => {
+	const sprayT = prog(f, KA.farmers + 10, 60, x => x);
+	return (
+		<g>
+			{[100, 220, 340, 460].map((x, i) => <ClipPl key={i} p={PLATES.kale} cx={x} cy={i % 2 ? 230 : 180} w={150} id={`b12-a1-kale${i}`} />)}
+			<g opacity={lab}><Sx x={300} y={400} text="herbicide-tolerant crop" size={34} color={INK} hand anchor="middle" /></g>
+			<g opacity={prog(f, KA.grows, 14)}>
+				{[700, 820, 940].map((x, i) => <ClipPl key={i} p={PLATES.mustard} cx={x} cy={i % 2 ? 230 : 190} w={150} id={`b12-a1-wild${i}`} />)}
+				<g opacity={lab}><Sx x={780} y={400} text="small wild population" size={34} color={INK} hand anchor="middle" /></g>
+				<line x1={575} y1={20} x2={575} y2={360} stroke={GREYT} strokeWidth={3} strokeDasharray="8 8" />
+				<g opacity={lab}><Sx x={575} y={10} text="field edge" size={28} color={GREY_INK} hand anchor="middle" /></g>
+			</g>
+			<g opacity={prog(f, KA.farmers, 14)}>
+				<Pl p={PLATES.sprayer} cx={1130} cy={190} w={190} />
+				<g opacity={lab}><Sx x={1130} y={400} text="herbicide spray" size={34} color={INK} hand anchor="middle" /></g>
+				{sprayT > 0 && sprayT < 1.2 ? Array.from({length: 30}, (_, i) => {
+					const x = lerp(1010, 560, clamp01(sprayT)) + ((i * 0.618) % 1) * 260;
+					return x > 560 && x < 1010 ? <circle key={i} cx={x} cy={90 + ((i * 0.37) % 1) * 220} r={5} fill="#9db7c9" opacity={0.8 * (1 - clamp01((sprayT - 1) * 5))} /> : null;
+				}) : null}
+			</g>
+		</g>
+	);
+};
+export const SceneAttempt: React.FC = () => {
+	const f = useCurrentFrame();
+	const m = smooth(prog(f, KA.explain + 6, 26));
+	const s = lerp(1, 0.47, m);
+	const tx = lerp(170, 1190, m), ty = lerp(560, 580, m);
+	return (
+		<>
+			<Heading text="Exam question 1" at={KA.two} size={50} />
+			<Overlay>
+				<HscTag at={KA.two} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
+				<QText q={Q1({a: KA.crop, b: KA.grows, c: KA.farmers, d: KA.explain})} x={140} y={252} w={1640} size={38} card={false} />
+				<g opacity={prog(f, KA.crop, 14)} transform={`translate(${tx},${ty}) scale(${s})`}>
+					<Givens1 f={f} lab={1 - m} />
+				</g>
+				<AnsBox x={140} y={540} w={1020} h={450} at={KA.explain + 26} label="answer" />
+				<PauseHold id="attempt" at={KA.pause} cy={880} />
+			</Overlay>
+		</>
+	);
+};
 
 // ---------- 10b. Feedback one ----------
 const KB = cues(S('feedback-one'), {pollen: 'Pollen carries', flow: 'gene flow', where: 'Where the weedkiller', survive: 'survive and breed', common: 'common', replace: 'replace many local', swamp: 'swamp', dilute: 'diluting', saying: 'Saying', mistake: 'the classic mistake'});
@@ -85,7 +122,7 @@ export const SceneFeedbackOne: React.FC = () => {
 				<CardBox x={100} y={180} w={1720} h={130} at={-100} />
 				<QText q={STRIP1(ALL1, [{phrase: MARKS1[0], at: KB.flow + 6}, {phrase: MARKS1[1], at: KB.survive}, {phrase: MARKS1[2], at: KB.swamp + 6}])} x={140} y={230} w={2440} size={36} card={false} s={0.66} />
 				{/* the crop and the wild population's gene pool */}
-				<FieldHalf side="L" x={480} y={560} w={760} id="b12-fb1-crop" />
+				{[300, 420, 540, 660].map((x, i) => <ClipPl key={i} p={PLATES.kale} cx={x} cy={i % 2 ? 590 : 540} w={150} id={`b12-fb1-kale${i}`} />)}
 				<Sx x={480} y={720} text="herbicide-tolerant crop" size={28} color={GREY_INK} hand anchor="middle" />
 				<rect x={1080} y={420} width={420} height={260} rx={22} fill="#eef4f9" stroke="#8ba9c4" strokeWidth={3} />
 				<Sx x={1290} y={720} text="wild population: its alleles" size={28} color={GREY_INK} hand anchor="middle" />
@@ -134,18 +171,29 @@ const MARKS2 = ['were once common', 'killed billions', 'crossed with surviving w
 qCheck(S2({a: 0, b: 0, c: 0, d: 0, e: 0}).blocks, MARKS2.map(phrase => ({phrase, at: 0})));
 
 // ---------- 10c. Attempt two ----------
+// Quality fix (6 Nov 2026): the chestnut plate fills the empty card while the stem is read, with the givens drawn as
+// tags (billions killed by the blight; survivors as shoots from old roots); it moves to the right column when the
+// demand arrives.
 const KC = cues(S('attempt-two'), {second: 'Second', early: 'In the early twentieth', fungal: 'a fungal disease', killed: 'killed billions', sci: 'Scientists propose', crossed: 'crossed with surviving', evaluate: 'Evaluate the claim', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
 	const f = useCurrentFrame();
+	const m = smooth(prog(f, KC.evaluate + 6, 26));
+	const tagO = 1 - m;
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={180} w={1720} h={830} at={KC.early - 6} />
-				<Pl p={PLATES.chestnut} cx={1690} cy={300} w={190} o={prog(f, KC.early, 14)} />
 				<QText q={Q2({a: KC.early, b: KC.fungal, c: KC.killed + 40, d: KC.sci, e: KC.evaluate})} x={140} y={250} w={1420} size={34} card={false} />
-				<AnsBox x={140} y={650} w={1320} h={340} at={KC.evaluate + 20} label="answer" />
+				<Pl p={PLATES.chestnut} cx={lerp(560, 1690, m)} cy={lerp(820, 300, m)} w={lerp(330, 200, m)} o={prog(f, KC.early, 14)} />
+				<g opacity={tagO}>
+					<Sx x={760} y={720} text="American chestnut" size={40} color={INK} hand at={KC.early + 10} />
+					<Tg x={760} y={790} text="chestnut blight (a fungus) killed billions" at={KC.killed} size={38} />
+					<Tg x={760} y={860} text="survivors: small shoots from old roots" at={KC.killed + 40} size={38} />
+					<Tg x={760} y={930} text="proposal: a resistance gene, crossed with wild trees" at={KC.crossed} size={38} />
+				</g>
+				<AnsBox x={140} y={650} w={1320} h={340} at={KC.evaluate + 26} label="answer" />
 				<PauseHold id="attempt-two" at={KC.pause} cy={820} />
 			</Overlay>
 		</>
@@ -177,6 +225,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 					<rect x={1150} y={392} width={540} height={46} rx={23} fill="#fff6e3" stroke={AMBER} strokeWidth={2.5} />
 					<Sx x={1420} y={424} text="compared with: forests without chestnuts" size={24} color={INK} hand anchor="middle" />
 				</g>
+				<Pl p={PLATES.chestnut} cx={1660} cy={570} w={250} o={prog(f, 4, 14)} />
 				<MiniCell y0={490} kind="up" text="a once-common tree returns" at={KD.species + 30} />
 				<MiniCell y0={600} kind="up" text="keeps alleles, if crossed widely" at={KD.gen + 30} />
 				<MiniCell y0={380} kind="q" text="food tree back; other effects uncertain" at={KD.eco + 20} />
@@ -220,7 +269,27 @@ const MiniCell: React.FC<{y0: number; kind: 'up' | 'q'; text: string; at: number
 };
 
 // ---------- 11. Decision rule and handoff ----------
+// Quality fix (6 Nov 2026): all four step cards wait at 35% from the start and light on their cues; each carries its
+// level's icon (the baseline chip, the gene-pool rings, the species plates, the habitat patches).
 const KE = cues(S('decision-rule'), {so: 'So when a question', name: 'name the case and the baseline', alleles: 'alleles in the gene pool', species: 'species in the area', habitats: 'habitats across the region', which: 'which way', next: 'Next'});
+const STEP_ICON: React.FC<{i: number; x: number; y: number}> = ({i, x, y}) => {
+	if (i === 0) return (
+		<g>
+			<rect x={x - 120} y={y - 24} width={240} height={48} rx={24} fill={CARD} stroke={GREYT} strokeWidth={2.5} strokeDasharray="8 6" />
+			<Sx x={x} y={y + 9} text="compared with: ..." size={26} color={GREY_INK} hand anchor="middle" />
+		</g>
+	);
+	if (i === 1) return <g>{(['A', 'B', 'C', 'D', 'flow'] as RK[]).map((k, j) => <Rg key={j} x={x - 96 + j * 48} y={y} r={17} k={k} />)}</g>;
+	if (i === 2) return (
+		<g>
+			<Pl p={PLATES.bee} cx={x - 90} cy={y} w={62} />
+			<Pl p={PLATES.finch} cx={x - 25} cy={y} w={58} />
+			<Pl p={PLATES.snap} cx={x + 35} cy={y} w={30} />
+			<Pl p={PLATES.lizard} cx={x + 95} cy={y} w={70} />
+		</g>
+	);
+	return <Habitats x={x} y={y} s={0.78} />;
+};
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
 	const STEPS = [
@@ -233,36 +302,48 @@ export const SceneDecision: React.FC = () => {
 		<>
 			<Heading text="How does it change biodiversity?" at={KE.so} size={56} />
 			<Overlay>
-				{STEPS.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
-						<rect x={140} y={225 + i * 125} width={1180} height={98} rx={22} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
-						<Sx x={190} y={290 + i * 125} text={`${i + 1}`} size={46} color={AMBER_INK} weight={800} />
-						<Sx x={250} y={290 + i * 125} text={s.t} size={44} color={INK} hand />
-					</g>
-				))}
+				{STEPS.map((s, i) => {
+					const on = prog(f, s.at, 14);
+					return (
+						<g key={i} opacity={prog(f, 6 + i * 6, 12) * (0.35 + 0.65 * on)}>
+							<rect x={120} y={210 + i * 135} width={1300} height={110} rx={24} fill={on > 0.5 ? '#fffaf0' : CARD} stroke={on > 0.5 ? AMBER : GREYT} strokeWidth={on > 0.5 ? 4 : 2.5} />
+							<Sx x={170} y={282 + i * 135} text={`${i + 1}`} size={50} color={AMBER_INK} weight={800} />
+							<Sx x={230} y={282 + i * 135} text={s.t} size={44} color={INK} hand />
+							<STEP_ICON i={i} x={1270} y={265 + i * 135} />
+						</g>
+					);
+				})}
 				<g opacity={prog(f, KE.which, 12)}>
-					<path d="M1350,355 L1380,355 L1380,690 L1350,690" fill="none" stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
-					<Sx x={1400} y={535} text="which way, and why?" size={42} color={AMBER_INK} hand />
+					<path d="M1440,330 L1470,330 L1470,730 L1440,730" fill="none" stroke={AMBER_INK} strokeWidth={5} strokeLinejoin="round" />
+					<Sx x={1490} y={515} text="which way," size={46} color={AMBER_INK} hand />
+					<Sx x={1490} y={570} text="and why?" size={46} color={AMBER_INK} hand />
+					<MarkGlyph x={1560} y={650} kind="up" s={0.9} />
+					<MarkGlyph x={1640} y={650} kind="down" s={0.9} />
 				</g>
 				<g opacity={prog(f, KE.next, 14)}>
-					<rect x={700} y={830} width={1120} height={120} rx={36} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
-					<Balance x={780} y={890} />
-					<Sx x={860} y={905} text="Next: weighing benefits against biodiversity risks" size={36} color={INK} hand />
+					<rect x={600} y={800} width={1220} height={150} rx={36} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
+					<Balance x={700} y={880} />
+					<Sx x={790} y={895} text="Next: weighing benefits against biodiversity risks" size={40} color={INK} hand />
 				</g>
-				{void Brace}{void AMBER}
+				{void Brace}
 			</Overlay>
 		</>
 	);
 };
 
 // ---------- 12. Key notes ----------
+// Quality fix (6 Nov 2026): short one-line bullets replace the five paragraphs; the framed memory aid is unchanged.
 const NOTES = [
-	'Biodiversity has three levels: genetic (variety of alleles in a population or species), species (variety of species in an area) and ecosystem (variety of habitats and communities across a region). A technique can raise one level and lower another. Yield is not a level of biodiversity.',
-	'An effect is a change from a baseline: say what you are comparing with (for example, sprayed conventional crops, or the habitat before farming).',
-	'Relying on one variety or clone narrows a crop\'s genetic diversity, so one disease can affect every plant (Cavendish and TR4). A disease-resistant modified Cavendish (QCAV-4, approved 2024) protects the crop but is still one clone.',
-	'Crop biotechnology can raise species diversity in fields (fewer insecticide sprays with Bt cotton) or lower it (whole-field herbicide leaves fewer weeds and wildflowers for insects than fields where some weeds survive). Higher yields could spare land only if it is protected.',
-	'Conservation: northern white rhino embryos from one female\'s eggs and banked sperm could save the subspecies but start a genetic bottleneck; gametes from banked cells of more rhinos could widen the gene pool.',
+	'Genetic diversity: the variety of alleles in a population or species (its gene pool).',
+	'Species diversity: the variety of species in an area.',
+	'Ecosystem diversity: the variety of habitats and communities across a region.',
+	'One technique can raise one level and lower another. Yield is not a level.',
+	'An effect is a change from a baseline: always say what you compare with.',
+	'One clone or variety narrows the gene pool: one disease can hit every plant (TR4).',
+	'Bt cotton: fewer sprays, more insect species. Whole-field herbicide: fewer wildflowers.',
+	'Higher yields spare land only if that land is protected.',
+	'Rhino embryos from one female: could save the subspecies, but a genetic bottleneck.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="The banana problem returns. Which level? Compared with what?" tag="trace genetic, species and ecosystem effects separately, each against a named baseline" size={27} aidTop={810} />
+	<NotesBoard notes={NOTES} aid="The banana problem returns. Which level? Compared with what?" tag="trace genetic, species and ecosystem effects separately, each against a named baseline" size={34} aidTop={830} />
 );

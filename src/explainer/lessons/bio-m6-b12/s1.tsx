@@ -15,6 +15,7 @@ import {
 	PlainField, Rg, SprayCan, SprayDrift, Strip, lerp, platePt, prog, rowC, smooth, vis,
 } from './parts';
 import type {RK} from './parts';
+import {BigBoard, BigHead, CropCells2, LAY} from './big';
 
 // ---------- 1. Hook ----------
 const K1 = cues(S('hook'), {two: 'Two rescues', clone: 'is a clone', tr4: 'the fungus TR4', gene: 'resistance gene', rhino: 'northern white rhino', females: 'two females', embryos: 'rhino embryos', both: 'Both use', dying: 'dying out', bio: 'biodiversity', level: 'which level', compare: 'compare it with'});
@@ -128,52 +129,60 @@ export const CropCells: React.FC<{o: Partial<Record<CropKey, number>>; lit?: Par
 );
 
 // ---------- 4. The banana: the genetic level ----------
+// Quality fix (6 Nov 2026): the readable board ('crop' layout, 32 px cells) on the left; the banana pair, the trial
+// plot and the clone strips larger on the right.
 const K4 = cues(S('banana-genetic'), {back: 'Back to the bananas', suckers: 'grown from suckers', same: 'the same alleles', qcav: 'QCAV-4', gene: 'resistance gene from a wild banana', trials: 'resisted TR4', approved: 'approved', clone: 'still one clone', ord: 'Compared with ordinary Cavendish', many: 'Compared with growing many varieties', narrow: 'very narrow'});
-const CLONE_X = [1130, 1290, 1450, 1610];
+const CLONE_X = [1270, 1410, 1550, 1690];
 const CLONE_RINGS: RK[] = ['A', 'C'];
 export const SceneBanana: React.FC = () => {
 	const f = useCurrentFrame();
-	const bx = 1200, by = 470, bw = 300;
+	const bx = 1400, by = 420, bw = 330;
 	const wildC = platePt(PLATES.banana, bx, by, bw, 600, 1000);
 	const slide = smooth(prog(f, K4.gene + 10, 34));
 	const allIns = prog(f, K4.clone, 14);
+	const L = LAY.crop;
 	return (
 		<>
 			<Heading text="The banana: the genetic level" at={4} size={56} />
 			<Overlay>
-				<Board lit={[0, 0, 1]} x1={CROP.x1} />
-				<ColHead x0={CROP.x0} x1={CROP.x1} title="crop" base={f >= K4.many ? 'many varieties' : f >= K4.ord ? 'ordinary Cavendish' : undefined} flash={vis(f, K4.ord, K4.ord + 40, 8) + vis(f, K4.many, K4.many + 40, 8)} />
-				<CropCells o={{genA: prog(f, K4.ord + 10, 12), genB: prog(f, K4.many + 10, 12)}} lit={{genA: 1 - prog(f, K4.many, 10), genB: 1}} />
+				<BigBoard mode="crop" lit={[0, 0, 1]} />
+				<BigHead x0={L.a} x1={L.x1} title="crop" base={f >= K4.many ? 'many varieties' : f >= K4.ord ? 'ordinary Cavendish' : undefined} flash={vis(f, K4.ord, K4.ord + 40, 8) + vis(f, K4.many, K4.many + 40, 8)} />
+				<CropCells2 mode="crop" o={{genA: prog(f, K4.ord + 10, 12), genB: prog(f, K4.many + 10, 12)}} lit={{genA: 1 - prog(f, K4.many, 10), genB: 1}} />
 				{/* the banana pair: wild (seeded) and Cavendish (seedless) */}
 				<BananaHalf side="L" cx={bx} cy={by} w={bw} o={prog(f, K4.back, 14) * (0.5 + 0.5 * vis(f, K4.gene - 6, K4.trials, 12))} id="b12-s4-wild" />
 				<BananaHalf side="R" cx={bx} cy={by} w={bw} o={prog(f, K4.back, 14)} id="b12-s4-cav" />
-				<ScribbleRing cx={bx + 75} cy={by} rx={70} ry={190} at={K4.suckers} out={K4.gene} seed={5} />
-				<Pl p={PLATES.plantation} cx={1620} cy={430} w={330} o={prog(f, K4.back + 10, 14)} />
-				<g opacity={vis(f, K4.trials, K4.trials + 80, 10)}><ScribbleRing cx={1625} cy={420} rx={70} ry={66} at={K4.trials} seed={3} color="#2f8a5b" /></g>
-				<Sx x={1620} y={530} text="TR4 trial plot" size={26} color={GREY_INK} hand anchor="middle" at={K4.back + 20} />
+				<Sx x={bx - 95} y={by + 215} text="wild" size={30} color={GREY_INK} hand anchor="middle" at={K4.back + 10} />
+				<Sx x={bx + 85} y={by + 215} text="Cavendish" size={30} color={GREY_INK} hand anchor="middle" at={K4.back + 10} />
+				<ScribbleRing cx={bx + 82} cy={by} rx={78} ry={205} at={K4.suckers} out={K4.gene} seed={5} />
+				<Pl p={PLATES.plantation} cx={1720} cy={340} w={250} o={prog(f, K4.back + 10, 14)} />
+				<g opacity={vis(f, K4.trials, K4.trials + 80, 10)}><ScribbleRing cx={1724} cy={332} rx={60} ry={56} at={K4.trials} seed={3} color="#2f8a5b" /></g>
+				<Sx x={1720} y={440} text="TR4 trial plot" size={30} color={GREY_INK} hand anchor="middle" at={K4.back + 20} />
 				{/* clone strips: one ring pattern repeated; the wild gene slides in */}
 				{CLONE_X.map((x, i) => (
 					<g key={i} opacity={prog(f, K4.same - 10 + i * 6, 12)}>
-						<Strip cx={x} y={800} n={6} pitch={22} gap={26} ins={i === 0 ? prog(f, K4.gene + 40, 10) : allIns} i0={2} i1={3} />
-						{CLONE_RINGS.map((k, j) => <Rg key={j} x={x - 30 + j * 60} y={772} r={11} k={k} />)}
+						<Strip cx={x} y={790} n={5} pitch={24} gap={28} ins={i === 0 ? prog(f, K4.gene + 40, 10) : allIns} i0={2} i1={2} />
+						{CLONE_RINGS.map((k, j) => <Rg key={j} x={x - 26 + j * 52} y={758} r={14} k={k} />)}
 					</g>
 				))}
-				{slide > 0.01 && slide < 0.99 ? <rect x={lerp(wildC[0], CLONE_X[0] - 22, slide) - 22} y={lerp(wildC[1], 800, slide) - 10} width={44} height={46} rx={10} fill="#fff3d9" stroke={AMBER} strokeWidth={3} /> : null}
-				<Sx x={1370} y={880} text="every plant: the same alleles" size={28} color={GREY_INK} hand anchor="middle" at={K4.same + 10} />
-				<Tg x={1300} y={700} text="seedless: grown from suckers" at={K4.suckers + 10} out={K4.gene} size={36} />
-				<Tg x={1300} y={700} text="gene from a wild banana" at={K4.gene + 10} out={K4.trials} size={36} />
-				<Tg x={1300} y={700} text="approved 2024: a back-up" at={K4.approved} out={K4.many} size={36} />
-				<Pl p={PLATES.seedlings} cx={1450} cy={960} w={300} o={prog(f, K4.many, 14)} />
-				<Sx x={1640} y={970} text="many varieties" size={28} color={GREY_INK} hand at={K4.many + 8} />
-				{void K4.qcav}{void K4.narrow}{void CONS}
+				{slide > 0.01 && slide < 0.99 ? <rect x={lerp(wildC[0], CLONE_X[0] - 12, slide) - 22} y={lerp(wildC[1], 790, slide) - 10} width={44} height={50} rx={10} fill="#fff3d9" stroke={AMBER} strokeWidth={3} /> : null}
+				<Sx x={1480} y={880} text="every plant: the same alleles" size={32} color={GREY_INK} hand anchor="middle" at={K4.same + 10} />
+				<Tg x={1200} y={680} text="seedless: grown from suckers" at={K4.suckers + 10} out={K4.gene} size={38} />
+				<Tg x={1200} y={680} text="gene from a wild banana" at={K4.gene + 10} out={K4.trials} size={38} />
+				<Tg x={1200} y={680} text="approved 2024: a back-up" at={K4.approved} out={K4.many} size={38} />
+				<Pl p={PLATES.seedlings} cx={1420} cy={985} w={300} o={prog(f, K4.many, 14)} />
+				<Sx x={1600} y={1000} text="many varieties" size={32} color={GREY_INK} hand at={K4.many + 8} />
+				<Tg x={180} y={920} text="the crop's gene pool stays very narrow" at={K4.narrow} size={40} />
+				{void K4.qcav}{void CONS}{void CROP}
 			</Overlay>
 		</>
 	);
 };
 
 // ---------- 5. The field: species and ecosystems ----------
+// Quality fix (6 Nov 2026): the readable board ('crop' layout); the Bt cotton bars, the sprayed crop row and the land
+// blocks larger on the right, with 30 to 38 px labels.
 const K5 = cues(S('field-species-ecosystem'), {field: 'the field itself', sprays: 'far fewer insecticide sprays', bt: 'Bt cotton', species: 'species level', base1: 'on that baseline', tol: 'tolerate a weedkiller', spray: 'spray the whole crop', comp: 'compared with fields', fewer: 'fewer wildflowers', eco: 'ecosystem level', yields: 'higher yields', less: 'less bush cleared', only: 'only if that land'});
-const FLOWERS = [1150, 1250, 1350, 1450, 1550];
+const FLOWERS = [1250, 1370, 1490, 1610, 1730];
 export const SceneField: React.FC = () => {
 	const f = useCurrentFrame();
 	const cotO = vis(f, K5.sprays - 10, K5.tol, 14);
@@ -182,46 +191,48 @@ export const SceneField: React.FC = () => {
 	const grey = prog(f, K5.spray + 30, 20);
 	const fly = smooth(prog(f, K5.spray + 44, 30));
 	const landO = prog(f, K5.eco, 14);
+	const L = LAY.crop;
 	return (
 		<>
 			<Heading text="The field: species and ecosystems" at={4} size={56} />
 			<Overlay>
-				<Board lit={[vis(f, K5.eco, 2000, 10), vis(f, K5.bt, K5.eco, 10), 0]} x1={CROP.x1} />
-				<ColHead x0={CROP.x0} x1={CROP.x1} title="crop" />
-				<CropCells o={{genA: 0.5, genB: 0.5, spA: prog(f, K5.species, 12), spB: prog(f, K5.comp, 12), ecoA: prog(f, K5.only, 12)}} lit={{spA: 1 - prog(f, K5.tol, 10), spB: 1 - prog(f, K5.eco, 10), ecoA: 1}} />
+				<BigBoard mode="crop" lit={[vis(f, K5.eco, 2000, 10), vis(f, K5.bt, K5.eco, 10), 0]} />
+				<BigHead x0={L.a} x1={L.x1} title="crop" />
+				<CropCells2 mode="crop" o={{genA: 0.5, genB: 0.5, spA: prog(f, K5.species, 12), spB: prog(f, K5.comp, 12), ecoA: prog(f, K5.only, 12)}} lit={{spA: 1 - prog(f, K5.tol, 10), spB: 1 - prog(f, K5.eco, 10), ecoA: 1}} />
 				{/* Bt cotton: fewer sprays */}
 				<g opacity={cotO}>
-					<Pl p={PLATES.cotton} cx={1180} cy={480} w={230} />
-					<Sx x={1320} y={430} text="before Bt" size={26} color={GREY_INK} hand />
-					<FillBar x={1450} y={410} w={300} h={26} p={prog(f, K5.sprays, 20)} color="#9aa3ab" />
-					<Sx x={1320} y={500} text="with Bt" size={26} color={GREY_INK} hand />
-					<FillBar x={1450} y={480} w={300} h={26} p={0.15 * prog(f, K5.sprays + 10, 20)} color={AMBER} />
+					<Pl p={PLATES.cotton} cx={1520} cy={400} w={300} />
+					<Sx x={1200} y={640} text="sprays before Bt" size={30} color={GREY_INK} hand />
+					<FillBar x={1200} y={660} w={620} h={34} p={prog(f, K5.sprays, 20)} color="#9aa3ab" />
+					<Sx x={1200} y={750} text="sprays with Bt" size={30} color={GREY_INK} hand />
+					<FillBar x={1200} y={770} w={620} h={34} p={0.15 * prog(f, K5.sprays + 10, 20)} color={AMBER} />
 				</g>
-				<Tg x={1150} y={700} text="more insect species survive" at={K5.species} out={K5.tol} size={36} />
+				<Tg x={1200} y={880} text="more insect species survive" at={K5.species} out={K5.tol} size={38} />
 				{/* a herbicide-tolerant crop row, sprayed whole */}
 				<g opacity={rowO}>
-					<FieldHalf side="L" x={1350} y={500} w={760} id="b12-s5-crop" />
+					<FieldHalf side="L" x={1500} y={460} w={820} id="b12-s5-crop" />
 					{FLOWERS.map((x, i) => (
 						<g key={i} opacity={1 - 0.6 * grey}>
-							<Pl p={i % 2 ? PLATES.snap : PLATES.flower} cx={x} cy={i % 2 ? 640 : 655} w={i % 2 ? 34 : 60} dim={grey} />
+							<Pl p={i % 2 ? PLATES.snap : PLATES.flower} cx={x} cy={i % 2 ? 680 : 695} w={i % 2 ? 44 : 78} dim={grey} />
 						</g>
 					))}
-					{[1200, 1360, 1520].map((x, i) => <Pl key={i} p={PLATES.bee} cx={x + 40 * fly} cy={590 - 260 * fly} w={44} o={1 - fly} />)}
-					<SprayDrift x0={1060} x1={1650} y={560} t={sprayT} h={220} />
+					{[1300, 1480, 1660].map((x, i) => <Pl key={i} p={PLATES.bee} cx={x + 40 * fly} cy={620 - 300 * fly} w={58} o={1 - fly} />)}
+					<SprayDrift x0={1200} x1={1820} y={560} t={sprayT} h={260} />
+					<Sx x={1500} y={790} text="wildflowers at the field edge" size={30} color={GREY_INK} hand anchor="middle" at={K5.tol + 20} />
 				</g>
-				<Tg x={1100} y={760} text="herbicide-tolerant crop" at={K5.tol + 6} out={K5.spray} size={36} />
-				<Tg x={1100} y={760} text="fewer weeds and wildflowers, fewer insects" at={K5.spray + 30} out={K5.eco} size={34} />
+				<Tg x={1200} y={880} text="herbicide-tolerant crop" at={K5.tol + 6} out={K5.spray} size={38} />
+				<Tg x={1200} y={880} text="fewer wildflowers, fewer insects" at={K5.spray + 30} out={K5.eco} size={38} />
 				{/* the ecosystem: land sparing only if protected */}
 				<g opacity={landO}>
-					<LandBlock x={1080} y={430} w={300} h={170} kind="farm" />
-					<LandBlock x={1400} y={430} w={300} h={170} kind="bush" />
-					<rect x={1400} y={430} width={300} height={170} rx={12} fill="none" stroke={GREYT} strokeWidth={3.5} strokeDasharray="10 8" opacity={1 - prog(f, K5.less + 10, 30)} />
-					<Sx x={1230} y={640} text="farm" size={28} color={GREY_INK} hand anchor="middle" />
-					<Sx x={1550} y={640} text="bush" size={28} color={GREY_INK} hand anchor="middle" />
-					<Sx x={1550} y={410} text="would-be farmland" size={26} color={GREY_INK} hand anchor="middle" opacity={1 - prog(f, K5.less + 10, 30)} />
+					<LandBlock x={1200} y={360} w={300} h={220} kind="farm" />
+					<LandBlock x={1530} y={360} w={300} h={220} kind="bush" />
+					<rect x={1530} y={360} width={300} height={220} rx={12} fill="none" stroke={GREYT} strokeWidth={3.5} strokeDasharray="10 8" opacity={1 - prog(f, K5.less + 10, 30)} />
+					<Sx x={1350} y={630} text="farm" size={34} color={GREY_INK} hand anchor="middle" />
+					<Sx x={1680} y={630} text="bush" size={34} color={GREY_INK} hand anchor="middle" />
+					<Sx x={1680} y={330} text="would-be farmland" size={30} color={GREY_INK} hand anchor="middle" opacity={1 - prog(f, K5.less + 10, 30)} />
 				</g>
-				<Tg x={1100} y={760} text="could spare land" at={K5.less + 10} out={K5.only + 30} size={36} />
-				<Tg x={1100} y={760} text="only if that land is protected" at={K5.only + 30} size={36} />
+				<Tg x={1200} y={760} text="higher yields could spare land" at={K5.less + 10} out={K5.only + 30} size={38} />
+				<Tg x={1200} y={760} text="only if that land is protected" at={K5.only + 30} size={38} />
 				{void K5.field}{void K5.bt}{void K5.base1}{void K5.yields}{void K5.fewer}{void INK}
 			</Overlay>
 		</>

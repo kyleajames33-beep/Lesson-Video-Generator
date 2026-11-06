@@ -10,6 +10,7 @@ import {Heading, Overlay} from '../bio-m5-b13/shared';
 import {GTag} from '../bio-m6-b01/parts';
 import {Brace, GreyCross, ScribbleRing, Tg} from '../bio-m6-b07/parts';
 import {S} from './common';
+import {BigColumn, MiniBoard2} from './parts2';
 import {PT} from './assets';
 import {
 	AMBER, AMBER_INK, Arr, BAYS, BalanceG, Bay, COLS, ColFrame, ColHead, Colonies, DrawPath, GREYT, GREY_INK, GeneSeg, Gloss, INK, INK_SOFT, Meter, MiniBoard,
@@ -101,11 +102,13 @@ export const SceneOneWord: React.FC = () => {
 				<Sx x={qx} y={250} text="A copy of what?" size={52} color={AMBER_INK} hand at={K2.what} out={K2.whole} />
 				{f >= K2.what + 14 ? <g opacity={1 - prog(f, K2.whole, 12)}><DrawPath d={`M${ux},${266} L${ux + tw('of what?', 52, true) * 1.04},${264}`} at={K2.what + 14} dur={12} color={AMBER} width={6} /></g> : null}
 				{/* natural clones, recalled */}
-				<Pl p={PLATES.cloneRow} cx={1180} cy={460} w={520} o={vis(f, K2.natural, K2.whole, 14)} />
-				<Pl p={PLATES.bunch} cx={1620} cy={455} w={180} o={vis(f, K2.natural + 10, K2.whole, 14)} />
-				<GTag x={1180} y={560} text="same alleles as the parent" at={K2.parent} out={K2.whole} size={26} anchor="middle" />
-				<FullBoard oL={prog(f, K2.whole, 10)} oR={prog(f, K2.gene, 10)} drawL={prog(f, K2.whole, 30)} drawR={prog(f, K2.gene, 30)}
-					glossL={prog(f, K2.newi, 12)} glossR={prog(f, K2.piece, 12)} whatLit={prog(f, K2.copied, 14)} />
+				<Pl p={PLATES.cloneRow} cx={1300} cy={560} w={640} o={vis(f, K2.natural, K2.gene - 6, 14)} />
+				<Pl p={PLATES.bunch} cx={1700} cy={850} w={250} o={vis(f, K2.natural + 10, K2.gene - 6, 14)} />
+				<GTag x={1300} y={680} text="natural clones: same alleles as the parent" at={K2.parent} out={K2.gene - 6} size={30} anchor="middle" />
+				{/* quality fix (6 Nov 2026): two hero columns with large plates and a filled what-is-copied bay */}
+				<BigColumn side="L" o={prog(f, K2.whole, 14)} gloss={prog(f, K2.newi, 12)} what={prog(f, K2.newi + 30, 14)} y1={1000} />
+				<BigColumn side="R" o={prog(f, K2.gene, 14)} gloss={prog(f, K2.piece, 12)} what={prog(f, K2.piece + 30, 14)} y1={1000} />
+				<Tg x={960} y={1052} text="always ask: what is being copied?" at={K2.copied} size={40} anchor="middle" />
 			</Overlay>
 		</>
 	);
@@ -167,20 +170,20 @@ export const SceneNuclear: React.FC = () => {
 		<>
 			<Heading text="How Dolly was made" at={4} size={60} />
 			<Overlay>
-				<MiniBoard active="L" bay={0} o={prog(f, 0, 14)} />
+				<MiniBoard2 active="L" bay={0} o={prog(f, 0, 14)} />
 				<Sx x={titleX} y={250} text="somatic cell nuclear transfer" size={50} color={INK} weight={800} at={K3.name} opacity={1 - 0.6 * prog(f, K3.udder, 12)} />
 				<Sx x={wx(0)} y={300} text="somatic: a body cell" size={28} color={GREY_INK} hand at={K3.somatic} out={glossOut} />
 				<Sx x={wx(2)} y={340} text="nuclear: the nucleus" size={28} color={GREY_INK} hand at={K3.somatic + 14} out={glossOut} />
 				<Sx x={wx(3)} y={380} text="transfer: moved into an egg" size={28} color={GREY_INK} hand at={K3.somatic + 28} out={glossOut} />
 				{/* row 1: the white-faced ewe and a cell grown from her udder */}
 				<Pl p={PLATES.sheep} cx={donor.cx} cy={donor.cy} w={donor.w} o={prog(f, K3.udder - 6, 14)} dim={prog(f, K3.egg, 12) * 0.6} />
-				<g opacity={1 - 0.6 * prog(f, K3.egg, 10)}><GTag x={donor.cx} y={565} text="nucleus donor" at={K3.udder + 6} size={24} anchor="middle" /></g>
+				<g opacity={1 - 0.6 * prog(f, K3.egg, 10)}><GTag x={donor.cx} y={565} text="nucleus donor" at={K3.udder + 6} size={30} anchor="middle" /></g>
 				<Arr a={[372, 470]} b={[438, 470]} at={K3.udder + 12} o={1 - prog(f, K3.pulse, 10)} />
 				<Pl p={PLATES.cell} cx={cell.cx} cy={cell.cy} w={cell.w} o={prog(f, K3.udder + 12, 14) * (1 - prog(f, K3.fused + 30, 12))} />
 				<ScribbleRing cx={cellN[0]} cy={cellN[1]} rx={46} ry={46} at={K3.udder + 26} out={K3.egg} seed={4} />
 				{/* row 2: the black-faced ewe and her egg */}
 				<Pl p={PLATES.ewe} cx={eweR.cx} cy={eweR.cy} w={eweR.w} o={prog(f, K3.egg - 6, 14)} dim={prog(f, K3.pulse, 12) * 0.6} />
-				<g opacity={1 - 0.6 * prog(f, K3.pulse, 10)}><GTag x={eweR.cx} y={900} text="egg donor" at={K3.egg + 6} size={24} anchor="middle" /></g>
+				<g opacity={1 - 0.6 * prog(f, K3.pulse, 10)}><GTag x={eweR.cx} y={900} text="egg donor" at={K3.egg + 6} size={30} anchor="middle" /></g>
 				<Arr a={[372, 800]} b={[438, 800]} at={K3.egg + 12} o={1 - prog(f, K3.sucked, 10)} />
 				<EggAt cx={egg.cx} cy={egg.cy} w={egg.w} o={prog(f, K3.egg + 12, 14) * (1 - prog(f, K3.sucked - 6, 10))} id="b16-s3-egg0" empty={0} />
 				{/* enucleation: the needle draws the nucleus out (the plate's sperm is covered) */}
@@ -202,10 +205,10 @@ export const SceneNuclear: React.FC = () => {
 					const a = prog(f, cl[i], 12) * (i < 3 ? 1 - prog(f, cl[i + 1], 12) : 1 - go);
 					return <Pl key={i} p={p} cx={STAGE.cx} cy={STAGE.cy} w={STAGE.w} o={a} />;
 				})}
-				<GTag x={STAGE.cx + 190} y={410} text="about a week" at={K3.week} out={K3.carried + 30} size={24} />
+				<GTag x={STAGE.cx + 190} y={410} text="about a week" at={K3.week} out={K3.carried + 30} size={30} />
 				{/* the surrogate */}
 				<Pl p={PLATES.ewe} cx={sur.cx} cy={sur.cy} w={sur.w} o={prog(f, K3.another - 6, 14)} />
-				<GTag x={sur.cx} y={800} text="surrogate" at={K3.another + 6} size={24} anchor="middle" />
+				<GTag x={sur.cx} y={800} text="surrogate" at={K3.another + 6} size={30} anchor="middle" />
 				<ellipse cx={ut[0]} cy={ut[1]} rx={58} ry={34} fill="none" stroke={AMBER_INK} strokeWidth={3} strokeDasharray="7 6" opacity={0.8 * prog(f, K3.another + 14, 12)} />
 				<Pl p={PLATES.cl5} cx={lerp(STAGE.cx, ut[0], go)} cy={lerp(STAGE.cy, ut[1], go) - Math.sin(go * Math.PI) * 120} w={lerp(STAGE.w, 46, go)} o={go > 0.01 ? 1 : 0} />
 				{void INK_SOFT}
@@ -233,11 +236,11 @@ export const SceneWho: React.FC = () => {
 		<>
 			<Heading text="Who is she a copy of?" at={4} size={60} />
 			<Overlay>
-				<MiniBoard active="L" bay={1} what={f >= K4.egg2 + 20 ? 'what: nuclear DNA (not mitochondria)' : undefined} o={prog(f, 0, 14)} />
+				<MiniBoard2 active="L" bay={1} what={f >= K4.egg2 + 20 ? 'what: nuclear DNA (not mitochondria)' : undefined} o={prog(f, 0, 14)} />
 				{EWES.map((e, i) => (
 					<g key={i} opacity={prog(f, i * 8, 14)}>
 						<Pl p={e.p} cx={e.cx} cy={ey} w={ew} dim={i === 0 ? 0 : dimOthers * 0.8} glow={i === 0 ? pulse : 0} />
-						<g opacity={i === 0 ? 1 : 1 - 0.5 * dimOthers}><GTag x={e.cx} y={495} text={e.tag} at={6 + i * 8} size={24} anchor="middle" /></g>
+						<g opacity={i === 0 ? 1 : 1 - 0.5 * dimOthers}><GTag x={e.cx} y={495} text={e.tag} at={6 + i * 8} size={30} anchor="middle" /></g>
 					</g>
 				))}
 				<Pl p={PLATES.lamb} cx={lamb.cx} cy={lamb.cy} w={lamb.w} o={prog(f, K4.three, 14)} glow={pulse} />
@@ -266,7 +269,7 @@ export const SceneWho: React.FC = () => {
 				{/* development and environment */}
 				<BalanceG x={lamb.cx} y={960} left="genes" right="environment" o={prog(f, K4.develops, 14)} />
 				{['size', 'markings', 'health'].map((t, i) => (
-					<g key={t} opacity={1 - 0.6 * sizeDim}><GTag x={1130} y={700 + i * 56} text={t} at={K4.size + i * 10} size={24} /></g>
+					<g key={t} opacity={1 - 0.6 * sizeDim}><GTag x={1130} y={700 + i * 56} text={t} at={K4.size + i * 10} size={30} /></g>
 				))}
 				{void INK}
 			</Overlay>
