@@ -4842,3 +4842,85 @@ The sliding-shaft base/slider pair is held: support heights and initial contact 
 Fringe edits produced candidates, but no original was replaced. The image editor retains exterior fringe pixels; an asynchronous question asks the owner whether deterministic alpha cleanup may be used under the tool rule. Existing400px paper/dark/white composites and native alpha counts are in `assets/brief222-qa/existing-edge-check.jpg` and `work/brief222/edge-analysis.json`. Source reports are complete; artwork is partial.
 
 Brief225 cloud follow-up: connected Google Drive confirms the v2 master exists remotely,61,630,105 bytes. https://drive.google.com/file/d/1LKWulmmvxhkhjmLJtyOC_U5Pfghi2F0B/view?usp=drivesdk. Local Drive-mirror SHA256 matches; connector did not expose the remote checksum. Evidence: `work/brief225/math-a12-d01/drive-cloud-check.json`. Playback and listening remain pending.
+
+## Codex brief 224: thirteen repair checks and shared paper clip
+
+7 November 2026, continuation of the6November night queue. No design,narration,scene or speech edits;no commits.
+
+phys-y12-m5-v11: `docs/production/claude-pm/checks/p-y12-m5-v11-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 6,274 scene-sum characters;source estimate 554s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v12: `docs/production/claude-pm/checks/p-y12-m5-v12-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,878 scene-sum characters;source estimate 523s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v13: `docs/production/claude-pm/checks/p-y12-m5-v13-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,654 scene-sum characters;source estimate 506s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v14: `docs/production/claude-pm/checks/p-y12-m5-v14-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,609 scene-sum characters;source estimate 503s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v15: `docs/production/claude-pm/checks/p-y12-m5-v15-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,683 scene-sum characters;source estimate 510s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v16: `docs/production/claude-pm/checks/p-y12-m5-v16-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 6,422 scene-sum characters;source estimate 562s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v17: `docs/production/claude-pm/checks/p-y12-m5-v17-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 6,320 scene-sum characters;source estimate 554s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v18: `docs/production/claude-pm/checks/p-y12-m5-v18-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,727 scene-sum characters;source estimate 514s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v19: `docs/production/claude-pm/checks/p-y12-m5-v19-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,630 scene-sum characters;source estimate 508s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v20: `docs/production/claude-pm/checks/p-y12-m5-v20-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,664 scene-sum characters;source estimate 509s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v21: `docs/production/claude-pm/checks/p-y12-m5-v21-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,783 scene-sum characters;source estimate 518s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v22: `docs/production/claude-pm/checks/p-y12-m5-v22-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,554 scene-sum characters;source estimate 504s. Previous findings resolved or follow the later root colour decision.
+
+phys-y12-m5-v23: `docs/production/claude-pm/checks/p-y12-m5-v23-rev2-error-check.md`,0 blockers,0 should fix,0 optional. 5,570 scene-sum characters;source estimate 503s. Previous findings resolved or follow the later root colour decision.
+
+Checks:71 baseline cases rerun plus89 current readout cases,all narration deltas,quoted cues and14 written joins including the Module6 bridge. The old v16 proxy dataset is superseded,not reapproved. The corrected conical test gives slope0.0203459kg m and mass0.0254324kg;both plotted lines pass every timing error bar. Full precision must drive threshold stops before displayed rounding.
+
+Plate: `public/assets/physics/y12p-paper-clip-v1.png`,native1254x1254,clear margins and sampled loop alpha0. Anchors top(626.5,178),bottom(626,1076). Three-background QA and sidecar delivered;shared v15/v16 provenance and brief188 manifest updated. The old clip remains. Space station kept after420px painted-width QA: no visible isolated truss flecks. Mass hanger also looks clean in actual400px composites. No motion,voiced-preview,caption-fit or human-listening pass is claimed.
+
+## Codex brief 223: c04 v1 superseded by concurrent key-notes revision
+
+7 November 2026. Master `out\explainer\Explainer-chem-m8-c04\Explainer-chem-m8-c04-v1.mp4` (8:43.50,15,705frames). Technical scan:0 broken/blank flags;120-sample font probe:0 flags. 174 captions pass. All15 public asset hashes match. Source freeze found `s3.tsx` changed during render in commit8c78bb3f. Actual sheet confirms the old six notes at33px, superseded by five at44px. Master is held from upload and needs a fresh render after227. Details: `work/brief223/chem-m8-c04/build-report.md`. Full playback/listening remain pending. Chunks retained, no deletion.
+
+## Codex brief192: all twelve apparatus candidates saved, native resolution hold
+
+7 November2026. All12 apparatus/layer native candidates preserved in `assets/brief192-candidates/`; dimensions, original paths, hashes and holds in `work/brief192/apparatus-candidates.json`. All fall below2400px native long side, so none was delivered at the requested public path. Crookes clear glass, wheel registration and source disc size also require repair; detector/needle pivot registration remains pending. No upscaling or padding. Six astronomy plates remain delivered. Please review `checks/brief192-apparatus-candidate-hold.md` for the method/native-size decision. Top-pan balance true alpha/display confirmed; approximate inset corners in `work/brief192/top-pan-balance-anchors.json`. All22 source reports and28 site entries complete.
+
+## Codex brief193: v12 to v15 source reviews, partial
+
+7 November2026. Eight reports written. Source findings remain open; no design edits or speech.
+
+phys-y12-m8-v12:0 blockers,2 should fix,0 optional. Reports checks/p-y12-m8-v12-learning-review.md and -science-check.md.
+
+phys-y12-m8-v13:0 blockers,1 should fix,0 optional. Reports checks/p-y12-m8-v13-learning-review.md and -science-check.md.
+
+phys-y12-m8-v14:0 blockers,4 should fix,0 optional. Reports checks/p-y12-m8-v14-learning-review.md and -science-check.md.
+
+phys-y12-m8-v15:0 blockers,4 should fix,0 optional. Reports checks/p-y12-m8-v15-learning-review.md and -science-check.md.
+
+Independent numbers: work/brief193/calculations-v12-v13.json and calculations-v14-v15.json, with AME2020 mass hash. All11 design inventories and official2017 syllabus quotation checks prepared. Seven designs, whole-course coverage, current site checks and new art remain. Built motion, voiced review, listening and practical conduct remain pending.
+
+## Codex brief227: Chemistry owner pilot local master
+
+7 November2026. `out\explainer\Explainer-chem-y11-m2-v06\Explainer-chem-y11-m2-v06-v1.mp4`,7:57.93,14,338frames,48,994,629bytes,SHA256 `192c2ac361cb8def8579346bdc6bfdd2cb2691bd60f86fe882ea1fa3d7d52917`. All456 source/audio/tool hashes and11 public assets matched.120-sample defect/font scans:0 flags;all16 sheet frames match Claude A.175 captions from playback timeline pass. First mux omitted two frames; original preserved and same chunks remuxed without shortest, now exact. Report/checkpoints: `work/brief227/chem-y11-m2-v06/build-report.md`. Normal-speed scene10 slider/run-sheet,scene11 seven-point sweep,scene4 balance and full listening remain pending; no motion pass claimed. YouTube unavailable with kernel-assets path error. Local fallback recorded as unlisted owner pilot,no playlist in pending queue. Chunks retained.
+
+Brief227 Chemistry backup follow-up: Drive mirror SHA256 matches the checked48994629-byte master; cloud folder readback confirms file presence and size. https://drive.google.com/file/d/1C_qX97FjgwhSwgF6k1qGygg_hCN_19Cn/view?usp=drivesdk . Remote checksum unavailable. Shared renderer mux now omits shortest after the exact two-frame recovery check; prior renderer preserved. Physics pre-render active.
+
+## Codex brief193: all source reviews and whole-course map
+
+7 November 2026. All 22 source reports complete: 1 blocker, 37 should fix, 0 optional. Findings remain open. No design edits or speech. Aggregate: `work/brief193/results.json`.
+
+phys-y12-m8-v16: 0 blockers, 5 should fix, 0 optional. Reports `checks/p-y12-m8-v16-learning-review.md` and `checks/p-y12-m8-v16-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v17: 0 blockers, 2 should fix, 0 optional. Reports `checks/p-y12-m8-v17-learning-review.md` and `checks/p-y12-m8-v17-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v18: 0 blockers, 5 should fix, 0 optional. Reports `checks/p-y12-m8-v18-learning-review.md` and `checks/p-y12-m8-v18-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v19: 0 blockers, 3 should fix, 0 optional. Reports `checks/p-y12-m8-v19-learning-review.md` and `checks/p-y12-m8-v19-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v20: 1 blockers, 1 should fix, 0 optional. Reports `checks/p-y12-m8-v20-learning-review.md` and `checks/p-y12-m8-v20-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v21: 0 blockers, 4 should fix, 0 optional. Reports `checks/p-y12-m8-v21-learning-review.md` and `checks/p-y12-m8-v21-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+phys-y12-m8-v22: 0 blockers, 6 should fix, 0 optional. Reports `checks/p-y12-m8-v22-learning-review.md` and `checks/p-y12-m8-v22-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
+
+Whole-course source map: `checks/phys-y12-whole-course-coverage.md`, covering 81 designs. All 88 parent/Working Scientifically point quotations and 107 child quotations match the official 2017 DOCX. No unallocated route points, but practical conduct and several learner Working Scientifically actions remain unproven. Named gaps include quantitative banked-road friction, DC motor investigation, Balmer practical, electron-diffraction practical and real radioactive counts. Supernova time dilation and metal-plate braking are present in source. This is not a whole-course completion pass. Current site checks and plates remain active. Built playback, exact voiced review and human listening remain pending.

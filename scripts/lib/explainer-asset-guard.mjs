@@ -17,7 +17,21 @@ export async function collectExplainerAssets(id, directory, entrySource) {
     const source = entrySource ?? (await loadConfig(id)).__entrySource;
     await build({stdin: {contents: `import React from 'react'; import {renderToStaticMarkup} from 'react-dom/server'; export {React, renderToStaticMarkup}; export {${source.exportName} as config} from ${JSON.stringify(source.modulePath)};`, resolveDir: ROOT, loader: 'tsx'}, outfile: output, bundle: true, platform: 'node', format: 'cjs', packages: 'external', jsx: 'automatic', logLevel: 'silent', plugins: [{name: 'asset-scan', setup(b) {
       b.onResolve({filter: /^remotion$/}, () => ({path: 'remotion', namespace: 'asset-scan'}));
-      b.onLoad({filter: /.*/, namespace: 'asset-scan'}, () => ({contents: `export * from ${JSON.stringify(remotion)}; export const useCurrentFrame = () => globalThis.__explainerAssetScan.frame; export const useVideoConfig = () => ({id:globalThis.__explainerAssetScan.id,fps:30,width:1920,height:1080,durationInFrames:globalThis.__explainerAssetScan.duration,defaultProps:{},props:{}}); export const staticFile = p => {globalThis.__explainerAssetScan.seen.add(p); return '/'+p;};`, loader: 'js', resolveDir: ROOT}));
+      b.onLoad({filter: /.*/, namespace: 'asset-scan'}, () => ({contents: `
+        import React from 'react';
+        export * from ${JSON.stringify(remotion)};
+        const ScanFrame = React.createContext(null);
+        export const useCurrentFrame = () => React.useContext(ScanFrame) ?? globalThis.__explainerAssetScan.frame;
+        // The real Freeze reads Remotion's composition context. The static scan
+        // has no composition, so preserve its child-frame semantics here.
+        export const Freeze = ({frame, active = true, children}) => {
+          const current = useCurrentFrame();
+          const frozen = typeof active === 'function' ? active(current) : active;
+          return React.createElement(ScanFrame.Provider, {value: frozen ? frame : current}, children);
+        };
+        export const useVideoConfig = () => ({id:globalThis.__explainerAssetScan.id,fps:30,width:1920,height:1080,durationInFrames:globalThis.__explainerAssetScan.duration,defaultProps:{},props:{}});
+        export const staticFile = p => {globalThis.__explainerAssetScan.seen.add(p); return '/'+p;};
+      `, loader: 'js', resolveDir: ROOT}));
     }}]});
     const requireScan = createRequire(import.meta.url);
     delete requireScan.cache[output];

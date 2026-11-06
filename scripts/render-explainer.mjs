@@ -98,7 +98,10 @@ try {
 	normaliseLoudness(wav, normWav);
 	const list = path.join(chunkDir, 'list.txt');
 	fs.writeFileSync(list, files.map((f) => `file '${f.split(path.sep).join('/')}'`).join('\n'));
-	run(['-y', '-f', 'concat', '-safe', '0', '-i', list, '-i', normWav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', finalMp4]);
+	// The track is already trimmed to the composition length. -shortest can
+	// discard final reordered H.264 packets (two frames in the Chemistry pilot).
+	// Preserve every rendered video packet and the complete narration track.
+	run(['-y', '-f', 'concat', '-safe', '0', '-i', list, '-i', normWav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', finalMp4]);
 	console.log(`Output: ${finalMp4}`);
 	console.log(`Duration: ${secs} s (${total} frames)`);
 	if (keepChunks) {
