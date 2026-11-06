@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-P03-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8p03/lesson.json",
+  "lessonSha256": "ba981037af4d135666638f0b10e347c2399c50655fa7bdf9209cdc0077bce10b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8p03/lesson.production-brief.json",
+    "sha256": "986b3f455c770e131d7125b14ba7f97f92a88a690c68ab82ed505e0a9617e937"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's a result that nearly fooled a student. She's testing unknown C for chloride. She acidifies a few drops with nitric acid, adds silver nitrate, and a faint white cloud appears. Chloride? But in the next well, she'd put plain water and the same reagents, and that well went cloudy too. If the water does it, the cloud can't prove anything about the unknown. She'd rinsed the plate with tap water, and tap water carries a little chloride. That one extra well saved her conclusion.",
+      "hash": "404ae15c8084",
+      "textSha256": "404ae15c80840f8861836503fc97450e1e070238472d473a99fa0efdeb4f1238",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/hook.404ae15c8084.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/hook.404ae15c8084.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/hook.404ae15c8084.generation.json",
+      "plannedRequestSha256": "dc2ed6fe215f53a41860064b477719b2e94dc485754f99b72346063dd307f3e8"
+    },
+    {
+      "id": "aim-plan",
+      "parentSceneId": "aim-plan",
+      "text": "The aim: identify the cation and the anion in each of four unknown solutions, where each holds one of each from the syllabus lists. Plan before you pick up a dropper: list the tests in order, from the two flowcharts, and what each result would mean. In every row of wells, only the solution changes. That's your independent variable, and what you see is the dependent variable. Everything else stays the same.",
+      "hash": "5067c1a5d76c",
+      "textSha256": "5067c1a5d76c2ff93ae4edc78097578cb01fb1f53746f7141ba0e23887384163",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/aim-plan.5067c1a5d76c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/aim-plan.5067c1a5d76c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/aim-plan.5067c1a5d76c.generation.json",
+      "plannedRequestSha256": "15dad2f4a63a0139a4e92e50d3f6bb9f3728d58e19181fccecf241483405e8b2"
+    },
+    {
+      "id": "blank-known-unknown",
+      "parentSceneId": "blank-known-unknown",
+      "text": "Now the controls. A blank, or negative control, is distilled water with the reagent. It should show no change. If it does, the reagent or the equipment is adding something, like that tap water. A known, or positive control, is a solution you know holds the ion, with the same reagent. It shows the test works today, and what a positive looks like on your plate. So each reagent gets one row: blank, known, unknown. And rinse everything with distilled water, never tap water.",
+      "hash": "3375c84dd8ef",
+      "textSha256": "3375c84dd8ef854c098b95dc0b954f84e56c857831748cf71048de2c23571edd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/blank-known-unknown.3375c84dd8ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/blank-known-unknown.3375c84dd8ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/blank-known-unknown.3375c84dd8ef.generation.json",
+      "plannedRequestSha256": "28cb5fa425f4876a67f75d6f11413c5fc4f1505a6e590af7846aea5e3ed2cec6"
+    },
+    {
+      "id": "small-scale",
+      "parentSceneId": "small-scale",
+      "text": "Run it small. A well plate, like the one from the solubility practical in Module 5, takes three drops of solution and three of reagent. That means less silver and barium to handle, and less waste. Keep the dropper tip above the well, so it never carries one solution back into a bottle. Put a black card under the wells to see white solids, and a white tile to judge colours.",
+      "hash": "a92dc2f5cb8e",
+      "textSha256": "a92dc2f5cb8e11fc03b6a45995eb1ef5f8f39498f0088a49caa53362c959f35e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/small-scale.a92dc2f5cb8e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/small-scale.a92dc2f5cb8e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/small-scale.a92dc2f5cb8e.generation.json",
+      "plannedRequestSha256": "206d4cc4b6c7b0ce9794f9286660acc9131c9e6da546960b181e52add68c9455"
+    },
+    {
+      "id": "unknown-c-cation",
+      "parentSceneId": "unknown-c-cation",
+      "text": "Unknown C, cation first, fresh drops in each well. Dilute hydrochloric acid: no visible change, which rules out silver, and usually lead. Dilute sulfuric acid: no change, so not barium. Sodium hydroxide: a white precipitate that stays when you add more. That points to magnesium, or calcium from a concentrated sample. So, a flame test. Clean the loop in acid and heat it until the flame shows no colour. That's your blank flame. Known calcium on the same loop gives brick red. Clean again, then the sample: still no colour, so calcium isn't supported. It's magnesium, and the known magnesium well looks just the same.",
+      "hash": "ee29061bd64b",
+      "textSha256": "ee29061bd64b3d6df89674f521d0025403cf75468fdf48cfbb671e2c63fbf912",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-cation.ee29061bd64b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-cation.ee29061bd64b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-cation.ee29061bd64b.generation.json",
+      "plannedRequestSha256": "495f998b699a7c27d861e2e3d9317ddd5651f1a0d997ced2368deb2f5be61dd4"
+    },
+    {
+      "id": "unknown-c-anion",
+      "parentSceneId": "unknown-c-anion",
+      "text": "Then the anion, again with fresh drops. Dilute nitric acid: no fizz, so no carbonate. Nitric acid, then barium chloride: a white precipitate that stays in the acid, so sulfate. Nitric acid, then silver nitrate: with the plate rinsed in distilled water, the blank stays clear, and so does unknown C. No chloride after all. Each bottle holds one anion, so unknown C is magnesium sulfate.",
+      "hash": "e8b2a62b9303",
+      "textSha256": "e8b2a62b93035979d7c0393a44ad6c5d30eee0366820fc94ece895524568003f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-anion.e8b2a62b9303.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-anion.e8b2a62b9303.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/unknown-c-anion.e8b2a62b9303.generation.json",
+      "plannedRequestSha256": "13fa67cfb87f4b44546dfe73ec836b0c0f0249ab3a8ddb9a6b5a42afe80c7677"
+    },
+    {
+      "id": "record",
+      "parentSceneId": "record",
+      "text": "Record as you go, in a table you drew up before you started. One row per well: the solution, the reagent, what you saw, and only then, in its own column, what it means. Write each observation in full. No visible change, written in, never left blank. Note anything that changes with time, like a green solid that browns in air.",
+      "hash": "bae73baf869a",
+      "textSha256": "bae73baf869ad53eeb57f979b2f649779e0887554ca8ab70423aca44fa239bb6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/record.bae73baf869a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/record.bae73baf869a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/record.bae73baf869a.generation.json",
+      "plannedRequestSha256": "3ed56adf9c397aa78e2f7ec6ae02e9d96f83b37c3ff71034c43810623d5e3951"
+    },
+    {
+      "id": "justify",
+      "parentSceneId": "justify",
+      "text": "When you report an identity, give the evidence and the chemistry. For magnesium: sodium hydroxide gave a white precipitate that stayed in excess, magnesium ions and hydroxide ions form solid magnesium hydroxide, the colourless flame doesn't support calcium, and the known matched. One more honest limit: no visible change means not detected. A very dilute ion can slip past, so say what your tests can and can't rule out.",
+      "hash": "24fba2b331a4",
+      "textSha256": "24fba2b331a42c20cc2d1ccebf06506ec950f52b99cd8461862a513a7724aa69",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/justify.24fba2b331a4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/justify.24fba2b331a4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/justify.24fba2b331a4.generation.json",
+      "plannedRequestSha256": "cf3d4feaad53b4a1b928385c43b76a152843ab79e2da7c1d458ca7c7dbeffd76"
+    },
+    {
+      "id": "valid-reliable-accurate",
+      "parentSceneId": "valid-reliable-accurate",
+      "text": "Now the three words from the practical skills video. Valid? The sequence should identify the ion it's meant to. Nitric acid before silver, fresh drops, distilled water and a clear blank all protect that. Reliable? Repeat each deciding test with fresh drops, and compare with another group. Accurate? Here, the result is an identity, so accurate means it's the true one. Matching the known side by side gets you close, and the teacher's key at the end checks it.",
+      "hash": "46fd92bd193d",
+      "textSha256": "46fd92bd193d8ab27db85fc20be28ae97981adead3d5bdf52206f6f3dec566ab",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/valid-reliable-accurate.46fd92bd193d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/valid-reliable-accurate.46fd92bd193d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/valid-reliable-accurate.46fd92bd193d.generation.json",
+      "plannedRequestSha256": "e3f938c5b3d6713231a1c714ebb290e85277ea41bd9cf73039e29b01fe7a024a"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. Silver nitrate stains skin brown-black for days and can damage eyes, so wear gloves and glasses. Lead salts are toxic and may harm an unborn child, so lead results come as data, and you don't handle lead. Barium salts are toxic if swallowed, so your teacher prepares the dilute solution and you use it by the drop. Sodium hydroxide and dilute nitric acid can burn eyes and skin. Leave concentrated ammonia to the fume cupboard, and let the hot loop cool on a heatproof mat. Silver residues go into the silver waste, barium into heavy-metal waste, never the sink.",
+      "hash": "d04456f521ed",
+      "textSha256": "d04456f521ed6add754301a1a2ad76cdf4260c90f6b55b14a34f79c81ddbc4d4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/risk.d04456f521ed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/risk.d04456f521ed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/risk.d04456f521ed.generation.json",
+      "plannedRequestSha256": "79078888718f12c77c2ea979029de5ca157f99649178bd4638cfb6abd958d074"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line for every reagent: blank, known, unknown. The blank shows the reagent adds nothing. The known shows what a positive looks like. Then the unknown is judged against both.",
+      "hash": "2bbacf155c74",
+      "textSha256": "2bbacf155c74c2b32254d248dedec9339b13ba24cbd62c2f4f3d1929186dea61",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/memory-aid.2bbacf155c74.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/memory-aid.2bbacf155c74.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/memory-aid.2bbacf155c74.generation.json",
+      "plannedRequestSha256": "552ce11e6d6d2281dea2b8a51beed8c95ea03d265484fb85b905df88001f866f"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student flame-tests four unknowns with one wire loop, rinsing it in water between samples. All four flames are blue-green, and she concludes all four contain copper. Evaluate her conclusion, and propose an improvement. Pause here to answer.",
+      "hash": "3ed0874eb55f",
+      "textSha256": "3ed0874eb55f9f09ecb0679b0af30d1094402bfb615fbf23853e2b06eed34e9f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-1.3ed0874eb55f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-1.3ed0874eb55f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-1.3ed0874eb55f.generation.json",
+      "plannedRequestSha256": "1d429fbd32e187840ddf465cc20eac549fd1aa12208f7580a4ded0681a867c73"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Not valid. A water rinse may not clean copper off the loop, so copper from the first sample could colour every later flame. Before each sample, clean the loop in dilute hydrochloric acid and heat it until the flame shows no colour. Then confirm with a precipitate: pale blue with sodium hydroxide. Just repeating the flame tests is the trap: the same dirty loop gives the same result.",
+      "hash": "548e5e635daf",
+      "textSha256": "548e5e635daf245c5163dcb8a84a86a28241092214f9f4b6f2c3f88b595794af",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-1.548e5e635daf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-1.548e5e635daf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-1.548e5e635daf.generation.json",
+      "plannedRequestSha256": "3c6fd6b0652b48660676fae28602a8f401112af377474ec65783cf5f4b799803"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Unknown E's results are on the card, with the blanks and knowns. Identify both ions, justify each identity, and write one net ionic equation. Pause here to answer.",
+      "hash": "7418c354239d",
+      "textSha256": "7418c354239d5c5c6d2923922541414ad1082cf20823ea65bed6ed9730d02ac9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-2.7418c354239d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-2.7418c354239d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/attempt-2.7418c354239d.generation.json",
+      "plannedRequestSha256": "da372c45f5d61b56c69e6ffa36dcd60defaf9c94df6ca1d771f2773d1fc164ea"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Calcium chloride. The white sulfate means barium or calcium, and the brick-red flame, matching the known, decides it: calcium. For the anion, a white silver precipitate in nitric acid that dissolves in dilute ammonia, with a clear blank, supports chloride: silver ions and chloride ions form solid silver chloride. Writing only \"tested with silver nitrate\" is the slip. Say what you saw.",
+      "hash": "e9845ec0581a",
+      "textSha256": "e9845ec0581a932ca07ac9a365ad560aa6105f7d14f8ed2fcdffd127f9c5e35e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-2.e9845ec0581a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-2.e9845ec0581a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/feedback-2.e9845ec0581a.generation.json",
+      "plannedRequestSha256": "9de72e9a25f52e0e587e8574e2195ff3e3ce53a9d1339252741adacf362f43d8"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, for any unknown: plan the tests from the flowcharts, run blank, known and unknown side by side at small scale, record what you see before what it means, and justify each identity with an observation and an equation. Next: you know which ion is there. But how much? Colour and light can tell you.",
+      "hash": "51ef327412ef",
+      "textSha256": "51ef327412ef1409b5cfb0a9b7db8c41e2079e2df42f88d09c83f07ce5f838a2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/decision-handoff.51ef327412ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/decision-handoff.51ef327412ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/decision-handoff.51ef327412ef.generation.json",
+      "plannedRequestSha256": "4790b7825647f405f201edf13d4e5e30c67180f1c51ce4c04c6ba7c0027e722f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P03-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

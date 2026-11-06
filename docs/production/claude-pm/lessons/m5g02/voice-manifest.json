@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-G02-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m5g02/lesson.json",
+  "lessonSha256": "662f2f3ac67ef2456c26b7e1414b123e51179f59141d7963a8d6574015532d59",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m5g02/lesson.production-brief.json",
+    "sha256": "c28672d7e34d145b858f587940cae47d7ef6f807114f283f23a9ed55f433c82a"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. By the end you'll know what to write instead. We'll work through three types of equilibrium question in full: explain with collision theory, graphs after a change, and the no-shift traps. Then you try two. Temperature, industry and open systems come in part two.",
+      "hash": "ea6cca417eed",
+      "textSha256": "ea6cca417eed2b7754de971bd051748a066309126a2f77993f4668170345af32",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/hook.ea6cca417eed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/hook.ea6cca417eed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/hook.ea6cca417eed.generation.json",
+      "plannedRequestSha256": "7c2d4780a3ede8f3d594433a40ab7fb473b77d30b2669e5fc329b87c0c60129c"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Type one, the one that catches the most people: explain with collision theory. A rigid sealed container holds hydrogen and carbon dioxide, making water vapour and carbon monoxide, at equilibrium. A drying agent removes some of the water vapour, and the temperature does not change. Using collision theory, explain the effect on the concentration of carbon monoxide. Underline the givens: rigid, so the volume is fixed; water removed; and the species to finish on, carbon monoxide.",
+      "hash": "0a2a119ad581",
+      "textSha256": "0a2a119ad5813680d1262fb5a596911fd30a3389a7ac58a751cea9c56a054a13",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-question.0a2a119ad581.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-question.0a2a119ad581.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-question.0a2a119ad581.generation.json",
+      "plannedRequestSha256": "2926e15823c0d68c02606036dd95c667c6f614509065d7de947d8b94e03f89ec"
+    },
+    {
+      "id": "q1-chain",
+      "parentSceneId": "q1-chain",
+      "text": "Build the answer in the order things happen. One, the change. Water vapour is removed, so its concentration falls. Two, collisions. Fewer water molecules means fewer collisions per second between water and carbon monoxide, so the reverse rate falls. The reaction is the whole change; the rate is how fast it happens. Three, the other rate. The forward rate has not changed yet, so it is now bigger. Four, the net result. More carbon monoxide is made than used, so its concentration ends higher than at the first equilibrium. Five, the level. The rates move together until they are equal again.",
+      "hash": "55525636b434",
+      "textSha256": "55525636b4340716b0311b7180e33758e187e35b4f36660a655d2e8422bb666e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-chain.55525636b434.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-chain.55525636b434.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-chain.55525636b434.generation.json",
+      "plannedRequestSha256": "d1d9c1a651676235321f1880f662c04aff414817a7057860de9896c8488db554"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "Three classic slips. Writing only that Le Chatelier's principle says it shifts right. When the question asks for collision theory, or for why, that only repeats what happens. Use the principle to predict the direction, then give the rate reason. Writing that the forward reaction increases, when you mean the forward rate. And stopping at shifts right without naming carbon monoxide. Finish on the species the question asked about.",
+      "hash": "139ed1069ecb",
+      "textSha256": "139ed1069ecb0a38886df8fe915583883c25937c1fe7328245250f3418e29ca1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-mistake.139ed1069ecb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-mistake.139ed1069ecb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q1-mistake.139ed1069ecb.generation.json",
+      "plannedRequestSha256": "70e751636b43e84c83d0b269b14328e91a9b4f5ba8468033d26c86aa14aeab83"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Type two: graphs after a disturbance. N O two and N two O four are at equilibrium in a one litre cylinder, with the amounts given in the question. At time t one, the volume is halved at constant temperature. Describe the graph of concentration against time, then the graph of amount in moles against time.",
+      "hash": "511ac7536a97",
+      "textSha256": "511ac7536a97d5cd0700be54c4eb1dd1e36209bf60e3880a66db688e28bc2512",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-question.511ac7536a97.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-question.511ac7536a97.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-question.511ac7536a97.generation.json",
+      "plannedRequestSha256": "b4402a57dbf5e40df5c508e9bcd37df8f1b3597e1ce441a105da68569861afc8"
+    },
+    {
+      "id": "q2-squeeze",
+      "parentSceneId": "q2-squeeze",
+      "text": "Start with the squeeze. Concentration is amount divided by volume, so the same particles in half the space double both concentrations at once, straight up, from 0.200 to 0.400 and from 0.300 to 0.600. That vertical jump is the squeeze, not the reaction.",
+      "hash": "e0a0a763861f",
+      "textSha256": "e0a0a763861fd577d2d65b1034663bc16d46e2ce6de165e5a54dd6ba057a742b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-squeeze.e0a0a763861f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-squeeze.e0a0a763861f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-squeeze.e0a0a763861f.generation.json",
+      "plannedRequestSha256": "9071010f64054af61926d7e7615324642ba19f49a2551795c068ad1f4e2979ce"
+    },
+    {
+      "id": "q2-response",
+      "parentSceneId": "q2-response",
+      "text": "Now the response. Two gas particles become one, so the squeeze favours the forward reaction. N O two curves down and N two O four curves up, with N O two changing by twice as much, because the equation says two to one. Both level off together on ruled flat lines. N O two settles above where it started and below where the squeeze sent it.",
+      "hash": "16ff27eced22",
+      "textSha256": "16ff27eced22a00f088afe7d8d4f7664c926658cac1ec285c77e049a7f19461b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-response.16ff27eced22.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-response.16ff27eced22.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-response.16ff27eced22.generation.json",
+      "plannedRequestSha256": "a2e08140ec9c9091d634cd29652156a5af17aeb83cad2b39d0f218f13b0079ec"
+    },
+    {
+      "id": "q2-amount",
+      "parentSceneId": "q2-amount",
+      "text": "Now the amount in moles. The squeeze added and removed no particles, so there is no jump at all. N O two curves smoothly down and N two O four curves up, still two to one.",
+      "hash": "68a2fdc647d5",
+      "textSha256": "68a2fdc647d5a97f23567be7072c89df42d14208b0fdb299c517cd8f14514d15",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-amount.68a2fdc647d5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-amount.68a2fdc647d5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-amount.68a2fdc647d5.generation.json",
+      "plannedRequestSha256": "2a14521e946fafc80015ddca24bb1e245f7374c67be19546149b8f2c93743ba2"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "So read the axis label first. Three slips. On this graph, a jump, or curves that break the two to one ratio. Back on the concentration graph, levelling off at the old value, or at the jump.",
+      "hash": "7acd58eb26aa",
+      "textSha256": "7acd58eb26aad3e2e47d66c55b94b5cd9336aca778ebe91cd20b5d186e049918",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-mistake.7acd58eb26aa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-mistake.7acd58eb26aa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q2-mistake.7acd58eb26aa.generation.json",
+      "plannedRequestSha256": "185ef331fbd3b815250979f12e61b1759c96ba2f3d21ea8c3c2f64cc78e77b2a"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Type three: the no-shift traps. Argon is added to a rigid, insulated container holding brown N O two and colourless N two O four at equilibrium. The argon is at the same temperature as the mixture. What happens to the colour, and does the temperature change? Argon is an inert gas and takes no part.",
+      "hash": "b6db07f910d5",
+      "textSha256": "b6db07f910d5621f9287b7d6116245dab222d0b098241e1230fb3f6e89d2dc46",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-question.b6db07f910d5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-question.b6db07f910d5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-question.b6db07f910d5.generation.json",
+      "plannedRequestSha256": "9b674939521cbe3d1388abf97165302ae79436d474c14c5aa9f9528b3cb9cd19"
+    },
+    {
+      "id": "q3-test",
+      "parentSceneId": "q3-test",
+      "text": "The method is one question: does Q still equal K? Argon bumps into things, but the forward reaction needs two N O two molecules to meet and the reverse needs N two O four to split, and the reacting gases are no more crowded. The volume is fixed, so every concentration is unchanged, both rates stay equal, and nothing happens. The colour is the same. With no net reaction, no heat is released or absorbed, so the temperature is the same. A catalyst and an added pure solid, which K leaves out, are in the same family.",
+      "hash": "72d83e2da2a5",
+      "textSha256": "72d83e2da2a5abe59c352cd7c420789444f4411a37cebc9df29c8d0d691757bb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-test.72d83e2da2a5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-test.72d83e2da2a5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-test.72d83e2da2a5.generation.json",
+      "plannedRequestSha256": "6018ad79f5b456ecd6e8821e9ebd140cab22d9d82f7e79ba981e6bff2a69b665"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "Two slips: pressure rises, so it shifts to fewer particles, and pressure rises, so the temperature rises. Pressure alone is not a disturbance here: no net reaction, no net heat change.",
+      "hash": "82411a263395",
+      "textSha256": "82411a263395d082a678a7316356afc50a9eed8c3b6e25269f35393b3b30feea",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-mistake.82411a263395.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-mistake.82411a263395.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/q3-mistake.82411a263395.generation.json",
+      "plannedRequestSha256": "1a9c3abc37e1566aa50104d919de5bacf79935fbd0706314600cea81b1943f18"
+    },
+    {
+      "id": "try1-question",
+      "parentSceneId": "try1-question",
+      "text": "Your turn. Nitrogen and hydrogen make ammonia in a rigid sealed container, at equilibrium. Some extra nitrogen is injected, and the temperature does not change. Using collision theory, explain the effect on the concentration of hydrogen. For now, decide: which rate changes first, and does the hydrogen concentration rise or fall? Pause here to answer.",
+      "hash": "d51c07f9a3b0",
+      "textSha256": "d51c07f9a3b01d7406a19e496d31ce876a7b8aaffd41baff640c4969971e1893",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-question.d51c07f9a3b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-question.d51c07f9a3b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-question.d51c07f9a3b0.generation.json",
+      "plannedRequestSha256": "239dd75ada0937793ccf46a69be0da916ac2362daa488501944753aca13a033c"
+    },
+    {
+      "id": "try1-answer",
+      "parentSceneId": "try1-answer",
+      "text": "Then, in your own time, write the full five lines and check them against this. The species to finish on is hydrogen, not the one you added. More nitrogen means more collisions between nitrogen and hydrogen each second, so the forward rate rises while the reverse rate has not changed. Forward is now faster, so hydrogen is used up, and its concentration ends lower than at the first equilibrium. If you wrote that hydrogen increases, or that the forward reaction increases, check the species and say rate.",
+      "hash": "d621e6426454",
+      "textSha256": "d621e6426454231dea584364d5f98d5d4f7d384be5e6e08d8f64fb9c6c9f92c6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-answer.d621e6426454.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-answer.d621e6426454.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try1-answer.d621e6426454.generation.json",
+      "plannedRequestSha256": "eab7f2c8ccbc3b4466e271ff5f616871cafb71366bd0f07e7e1d1d6af2214962"
+    },
+    {
+      "id": "try2-question",
+      "parentSceneId": "try2-question",
+      "text": "One more, a graph. Nitrogen, hydrogen and ammonia are at equilibrium in a sealed cylinder at constant temperature. At time t one, something changes. Both graphs are on screen. Which disturbance was it: a substance added, the volume changed, the temperature changed, or a catalyst added? Pause here to answer.",
+      "hash": "769fad9c84f3",
+      "textSha256": "769fad9c84f3ffc3ca1b47146a30adba39521cf90502d9ab554434a232e583fd",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-question.769fad9c84f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-question.769fad9c84f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-question.769fad9c84f3.generation.json",
+      "plannedRequestSha256": "bc3011805a7ec3e162beedb7730c54e0cdcbf69dd3ac1123b8ac556120dbebbd"
+    },
+    {
+      "id": "try2-answer",
+      "parentSceneId": "try2-answer",
+      "text": "The volume changed, and it was decreased. Every gas concentration jumped up together, so it was not one substance added. Temperature would show no jump on the concentration graph. A catalyst would change nothing. The amount graph has no jump, which fits volume as well as temperature, so the concentration graph decides.",
+      "hash": "e0d108645c8f",
+      "textSha256": "e0d108645c8fce20419e00f97a105da032edf318691528cc243506d0b50163a3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-answer.e0d108645c8f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-answer.e0d108645c8f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/try2-answer.e0d108645c8f.generation.json",
+      "plannedRequestSha256": "123023289da3e66bf41a450ed1a7fe7be6a4974142a1f6f21336db6432444e45"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "Find the words that give the type away. Using collision theory, explain: the five lines, ending on the named species. Sketch or describe a graph: axis label first, then what jumps. Argon, catalyst or added solid: does Q still equal K? Part two takes on the calculations.",
+      "hash": "3cef1a4f318a",
+      "textSha256": "3cef1a4f318a3bc8b1df5e9b75ed67b09997be1f0fd8bd1f6c9a2a926f5f6d4c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/decision-board.3cef1a4f318a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/decision-board.3cef1a4f318a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/decision-board.3cef1a4f318a.generation.json",
+      "plannedRequestSha256": "460cd66a0e45bca6962d73ddf76f2b29793f1df79e6f3684fbd7ea9b9ccdf3a2"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G02-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

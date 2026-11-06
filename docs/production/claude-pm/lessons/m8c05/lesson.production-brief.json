@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c05/lesson.json",
+    "lessonSha256": "2eac06fb3e7216cd71db1375183345149a917223643033d12c40f76446b6b691"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "colourimetry against standards; matching a result to the right guideline and sample; gases are less soluble when warm; mg/L; dissolved ions conduct.",
+    "startsWith": "In late 1991, almost a thousand kilometres of the Barwon and Darling rivers turned green with cyanobacteria. In the summer of 2018 to 2019, near Menindee on the lower Darling, fish deaths were estimated at more than a million. Those deaths were linked to low flow, heat and algal blooms that left the water short of oxygen. So why would extra nutrients end in a fish kill, and what should chemists measure to see it coming?",
+    "stopsAfter": "tracing nitrate and phosphate from a source to a delayed oxygen crash; explaining why one look or one number can't judge water; choosing physical, chemical and biological parameters for a purpose and saying what each can't show; reading a nutrient and oxygen table to rank sites; stating why monitoring is needed (early warning, finding the source, judging against the right guideline, telling a treatment plant what to remove, checking a fix).",
+    "nextLesson": "what dissolved oxygen and BOD tell us (route chem-m8-c06)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c05.md"
+  ],
+  "teaching": {
+    "task": "A river turns green. A few weeks later, fish are dying in it. Why would extra fertiliser end in a fish kill, and what should chemists measure to see it coming?",
+    "causalExplanation": "(1) nutrients are needed, and the scarce one holds growth back (2); (2) sources and point against diffuse (3); (3) feed and bloom; day and night oxygen (4); (4) die, decay, suffocate: bacteria use oxygen faster than it returns; delayed; warm still water worse (5); (5) memory aid and the word eutrophication (6); (6) one look isn't enough: three kinds of evidence (7); (7) physical (8); (8) chemical, including nitrate and phosphate methods (9); (9) biological (10); (10) worked read of the site table (11); (11) why monitor: guidelines depend on use; the source decides the fix; the treatment link; check the fix (12); attempts (13 to 16); handoff (17); key notes (18).",
+    "conversationalApproach": "In late 1991, almost a thousand kilometres of the Barwon and Darling rivers turned green with cyanobacteria. Nitrogen and phosphorus aren't poisons. So where does the extra come from? After heavy rain, fertiliser washes off paddocks into creeks. With the brake off, algae multiply into a bloom, a green scum you can see from the bank. Then the bloom runs out of something, light or nutrients, and the algae die and sink. This chain is called eutrophication: nutrients enrich the water, too much grows, and the oxygen crashes. So how would you see this coming? Not by looking. Physical parameters come first. Chemical parameters include pH, dissolved oxygen and conductivity. Biological parameters look at living things. Let's read some data. So why monitor? A number only means something against a guideline for that water's use. Your turn. Nitrate, phosphate and E. Last one. One good set: water temperature, because warm, still water favours blooms. So, when you're asked why we monitor water, trace it from the source, through the bloom, to the oxygen crash, then choose evidence of all three kinds for the job.",
+    "openingDecision": "In late 1991, almost a thousand kilometres of the Barwon and Darling rivers turned green with cyanobacteria. In the summer of 2018 to 2019, near Menindee on the lower Darling, fish deaths were estimated at more than a million. Those deaths were linked to low flow, heat and algal blooms that left the water short of oxygen. So why would extra nutrients end in a fish kill, and what should chemists measure to see it coming?",
+    "understandingCheck": "- (A1) \"A creek flows past a dairy farm. Water was sampled at three sites on the same morning. Site 1 is upstream of the farm. Site 2 is just below a drain from the dairy's milking shed. Site 3 is 5 km downstream, in a slow, shallow pool with green scum on the surface.\" Table (nutrients as the ion): Site 1: nitrate 0.40 mg/L, phosphate 0.03 mg/L, dissolved oxygen 8.6 mg/L, E. coli 40 per 100 mL; Site 2: 2.60, 0.42, 7.9, 2,400; Site 3: 1.10, 0.15, 3.2, 300. \"(a) Identify the most likely source of the nutrients, using the data. (b) Explain why dissolved oxygen is lowest at Site 3, not at Site 2.\" Answer: (a) the dairy drain, between Sites 1 and 2, is the most likely source: nitrate rises about 6.5 times, phosphate 14 times, and E. coli 60 times there, and E. coli points to animal faecal waste; (b) nutrients take time to grow a bloom; the likely explanation is that at the slow, warm-looking pool the algae have grown, and as they die bacteria decompose them, using oxygen faster than the still water takes it back in; nutrients are lower at Site 3 partly because the algae took them up. Crossed mistake: \"Oxygen should be lowest where the nutrients are highest\" (the crash is delayed and happens where the bloom has grown and died). Differs from the site table in setting (a creek with a source between sites), the added E. coli column and the demand (locate the source; explain the delay). Not a copy of site Activity 2 (which asks least affected, most advanced, management).",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p57; C8-IQ1-01 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"analyse the need for monitoring the environment\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "lakes, a farm, a sewage outlet, meters, a culture plate and a microscope as painted plates listed by filename, never stretched; the lake's three states as an aligned set; the oxygen-over-a-day trace and the data table coded (lineGraph only, never an AI image of a graph); algae, bacteria and oxygen molecules in the water column as coded abstract dots over the painted lake; no people, hands or faces (no anglers, no scientists; dead fish are shown in the lake plate only, small and not graphic); at most about three bright text items, earlier lines dim; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; givens underlined in the feedback as they are used, no givens card; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions; optional key notes hold; Australian spelling (\"fertiliser\", \"colourimetry\", \"litre\", \"sulfate\", \"phosphorus\"); no em dashes; conversational narration; no absolute claims.",
+    "transitionPlan": "heading writes on: \"Why monitor water? Nutrients, blooms and the oxygen crash\". the water-column overlay opens on the clear lake: a few green algae dots drift near the surface. the lake shrinks to the right. the board clears to the lake. m8-lake-bloom-v1. the board clears. the board clears. the Physical column fills. the Physical column dims; the Chemical column fills. the Chemical column dims; the Biological column fills. the board clears. the board clears to the purpose card. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), with three empty labelled boxes \"physical\", \"chemical\", \"biological\". the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Why monitor water? Nutrients, blooms and the oxygen crash\". A coded outline map strip of the Barwon-Darling writes at the left (a single river line, no state borders); on \"thousand kilometres\" a green band spreads along it (tag \"Nov to Dec 1991: about 1,000 km\"; grey source chip \"Baker and Bowling 1996\"). On \"Menindee\" a dot lights near the lower end (tag \"Dec 2018 to Jan 2019: over 1 million fish (estimate)\"; grey source chip \"Vertessy panel 2019\"). On \"low flow\" three small coded tags write under the dot: \"low flow\", \"heat\", \"algal blooms\"; on \"short of oxygen\" a pale blue O₂ glyph fades (tag \"low oxygen\"). On \"coming\" the map shrinks to the top-left corner and the new m8-lake-clear-v1.png fills the centre, with a navy question chip \"nutrients → dead fish?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "teachingReason": "In late 1991, almost a thousand kilometres of the Barwon and Darling rivers turned green with cyanobacteria.",
+      "narrationCue": "thousand kilometres / Menindee / low flow / short of oxygen / coming",
+      "motionPurpose": "heading writes on: \"Why monitor water? Nutrients, blooms and the oxygen crash\". A coded outline map strip of the Barwon-Darling writes at the left (a single river line, no state borders); on \"thousand kilometres\" a green band spreads along it (tag \"Nov to Dec 1991: about 1,000 km\"; grey source chip \"Baker and Bowling 1996\"). On \"Menindee\" a dot lights near the lower end (tag \"Dec 2018 to Jan 2019: over 1 million fish (estimate)\"; grey source chip \"Vertessy panel 2019\"). On \"low flow\" three small coded tags write under the dot: \"low flow\", \"heat\", \"algal blooms\"; on \"short of oxygen\" a pale blue O₂ glyph fades (tag \"low oxygen\"). On \"coming\" the map shrinks to the top-left corner and the new m8-lake-clear-v1.png fills the centre, with a navy question chip \"nutrients → dead fish?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Why monitor water? Nutrients, blooms and the oxygen crash\". A coded outline map strip of the Barwon-Darling writes at the left (a single river line, no state borders); on \"thousand kilometres\" a green band spreads along it (tag \"Nov to Dec 1991: about 1,000 km\"; grey source chip \"Baker and Bowling 1996\"). On \"Menindee\" a dot lights near the lower end (tag \"Dec 2018 to Jan 2019: over 1 million fish (estimate)\"; grey source chip \"Vertessy panel 2019\"). On \"low flow\" three small coded tags write under the dot: \"low flow\", \"heat\", \"algal blooms\"; on \"short of oxygen\" a pale blue O₂ glyph fades (tag \"low oxygen\"). On \"coming\" the map shrinks to the top-left corner and the new m8-lake-clear-v1.png fills the centre, with a navy question chip \"nutrients → dead fish?\". Bright at the end: the heading and the question chip. Hold about 1 second.",
+      "motionTools": [
+        "m8-lake-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (green river, dead fish): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "nutrients-needed",
+      "visualDecision": "new",
+      "visualReference": "the water-column overlay opens on the clear lake: a few green algae dots drift near the surface. Two navy NO₃⁻ tokens and one violet PO₄³⁻ token sit in the water (tag \"nitrate\", \"phosphate\"). On \"limiting nutrient\" a gloss tag writes: \"limiting nutrient: the one in shortest supply for what the algae need, which holds growth back\". On \"phosphorus\" the brake glyph appears on the algae group, tagged \"phosphorus in short supply\" (grey tag \"often, not always\"). On \"brake\" more PO₄³⁻ tokens drop in and the brake lever releases; the algae dots begin to multiply. Bright at the end: the gloss tag and the released brake. Hold about 1 second.",
+      "teachingReason": "Nitrogen and phosphorus aren't poisons.",
+      "narrationCue": "limiting nutrient / phosphorus / brake",
+      "motionPurpose": "the water-column overlay opens on the clear lake: a few green algae dots drift near the surface. Two navy NO₃⁻ tokens and one violet PO₄³⁻ token sit in the water (tag \"nitrate\", \"phosphate\"). On \"limiting nutrient\" a gloss tag writes: \"limiting nutrient: the one in shortest supply for what the algae need, which holds growth back\". On \"phosphorus\" the brake glyph appears on the algae group, tagged \"phosphorus in short supply\" (grey tag \"often, not always\"). On \"brake\" more PO₄³⁻ tokens drop in and the brake lever releases; the algae dots begin to multiply. Bright at the end: the gloss tag and the released brake. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the water-column overlay opens on the clear lake: a few green algae dots drift near the surface. Two navy NO₃⁻ tokens and one violet PO₄³⁻ token sit in the water (tag \"nitrate\", \"phosphate\"). On \"limiting nutrient\" a gloss tag writes: \"limiting nutrient: the one in shortest supply for what the algae need, which holds growth back\". On \"phosphorus\" the brake glyph appears on the algae group, tagged \"phosphorus in short supply\" (grey tag \"often, not always\"). On \"brake\" more PO₄³⁻ tokens drop in and the brake lever releases; the algae dots begin to multiply. Bright at the end: the gloss tag and the released brake. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "nutrients: needed, until there's too much: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "sources",
+      "visualDecision": "new",
+      "visualReference": "the lake shrinks to the right. At the left the new m8-farm-runoff-v1.png (a sloping paddock running into a creek, brown runoff after rain) with m6-fertiliser-granules-v1.png small beside it; on \"paddocks\" navy and violet tokens slide downhill with the runoff (nutrient arrows, broad and spread). On \"catchment\" a dashed coded boundary traces the land around the creek, labelled \"catchment: land draining to this creek\", and tag \"diffuse source: spread over a wide area\". On \"point sources\" m6-wastewater-outlet-probe-v1.png appears below the farm and a single thick arrow runs from it toward the lake (tag \"point source: one outlet\"); on \"together\" brown organic-waste flecks join the arrow's tokens (tag \"nutrients + organic waste\"). On \"Urban stormwater\" a thin grey arrow adds from the edge (tag \"urban stormwater\"). On \"is\" two small sample-bottle outlines (coded) appear either side of the outlet, tagged \"upstream\" and \"downstream\" (bright). Bright at the end: the two bottle tags. Hold about 1 second.",
+      "teachingReason": "So where does the extra come from? After heavy rain, fertiliser washes off paddocks into creeks.",
+      "narrationCue": "paddocks / catchment / point sources / together / Urban stormwater / is",
+      "motionPurpose": "the lake shrinks to the right. At the left the new m8-farm-runoff-v1.png (a sloping paddock running into a creek, brown runoff after rain) with m6-fertiliser-granules-v1.png small beside it; on \"paddocks\" navy and violet tokens slide downhill with the runoff (nutrient arrows, broad and spread). On \"catchment\" a dashed coded boundary traces the land around the creek, labelled \"catchment: land draining to this creek\", and tag \"diffuse source: spread over a wide area\". On \"point sources\" m6-wastewater-outlet-probe-v1.png appears below the farm and a single thick arrow runs from it toward the lake (tag \"point source: one outlet\"); on \"together\" brown organic-waste flecks join the arrow's tokens (tag \"nutrients + organic waste\"). On \"Urban stormwater\" a thin grey arrow adds from the edge (tag \"urban stormwater\"). On \"is\" two small sample-bottle outlines (coded) appear either side of the outlet, tagged \"upstream\" and \"downstream\" (bright). Bright at the end: the two bottle tags. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the lake shrinks to the right. At the left the new m8-farm-runoff-v1.png (a sloping paddock running into a creek, brown runoff after rain) with m6-fertiliser-granules-v1.png small beside it; on \"paddocks\" navy and violet tokens slide downhill with the runoff (nutrient arrows, broad and spread). On \"catchment\" a dashed coded boundary traces the land around the creek, labelled \"catchment: land draining to this creek\", and tag \"diffuse source: spread over a wide area\". On \"point sources\" m6-wastewater-outlet-probe-v1.png appears below the farm and a single thick arrow runs from it toward the lake (tag \"point source: one outlet\"); on \"together\" brown organic-waste flecks join the arrow's tokens (tag \"nutrients + organic waste\"). On \"Urban stormwater\" a thin grey arrow adds from the edge (tag \"urban stormwater\"). On \"is\" two small sample-bottle outlines (coded) appear either side of the outlet, tagged \"upstream\" and \"downstream\" (bright). Bright at the end: the two bottle tags. Hold about 1 second.",
+      "motionTools": [
+        "m8-farm-runoff-v1.png",
+        "m6-fertiliser-granules-v1.png",
+        "m6-wastewater-outlet-probe-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "where the extra comes from: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "feed-bloom",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the lake. m8-lake-clear-v1.png cross-fades to the aligned m8-lake-bloom-v1.png (green surface scum); the overlay's algae dots thicken at the surface (tag \"algal bloom: a rapid build-up of algae\"). The lineGraph opens in the right third: x \"time (hours)\" 0 to 48 with sun and moon glyphs; y \"dissolved oxygen (mg/L)\" 0 to 14; grey tag \"shape illustrative\". On \"make oxygen\" pale blue O₂ glyphs rise from the algae dots and the trace climbs through the first afternoon (tag \"photosynthesis adds O₂\"); on \"use oxygen\" the glyphs fade and the trace falls through the night (tag \"respiration uses O₂\"). On \"noon\" a marker at the afternoon peak \"noon: high\"; on \"dawn\" a marker at the dawn trough \"dawn: low\" (bright). The second day's swing draws larger. Bright at the end: the two markers. Hold about 1 second.",
+      "teachingReason": "With the brake off, algae multiply into a bloom, a green scum you can see from the bank.",
+      "narrationCue": "make oxygen / use oxygen / noon / dawn",
+      "motionPurpose": "the board clears to the lake. m8-lake-clear-v1.png cross-fades to the aligned m8-lake-bloom-v1.png (green surface scum); the overlay's algae dots thicken at the surface (tag \"algal bloom: a rapid build-up of algae\"). The lineGraph opens in the right third: x \"time (hours)\" 0 to 48 with sun and moon glyphs; y \"dissolved oxygen (mg/L)\" 0 to 14; grey tag \"shape illustrative\". On \"make oxygen\" pale blue O₂ glyphs rise from the algae dots and the trace climbs through the first afternoon (tag \"photosynthesis adds O₂\"); on \"use oxygen\" the glyphs fade and the trace falls through the night (tag \"respiration uses O₂\"). On \"noon\" a marker at the afternoon peak \"noon: high\"; on \"dawn\" a marker at the dawn trough \"dawn: low\" (bright). The second day's swing draws larger. Bright at the end: the two markers. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the lake. m8-lake-clear-v1.png cross-fades to the aligned m8-lake-bloom-v1.png (green surface scum); the overlay's algae dots thicken at the surface (tag \"algal bloom: a rapid build-up of algae\"). The lineGraph opens in the right third: x \"time (hours)\" 0 to 48 with sun and moon glyphs; y \"dissolved oxygen (mg/L)\" 0 to 14; grey tag \"shape illustrative\". On \"make oxygen\" pale blue O₂ glyphs rise from the algae dots and the trace climbs through the first afternoon (tag \"photosynthesis adds O₂\"); on \"use oxygen\" the glyphs fade and the trace falls through the night (tag \"respiration uses O₂\"). On \"noon\" a marker at the afternoon peak \"noon: high\"; on \"dawn\" a marker at the dawn trough \"dawn: low\" (bright). The second day's swing draws larger. Bright at the end: the two markers. Hold about 1 second.",
+      "motionTools": [
+        "m8-lake-clear-v1.png",
+        "m8-lake-bloom-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feed and bloom: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "die-decay-suffocate",
+      "visualDecision": "new",
+      "visualReference": "m8-lake-bloom-v1.png cross-fades to the aligned m8-lake-crash-v1.png (murky brown-green water, a few small dead fish floating at the surface, dark sediment). In the overlay the algae dots turn grey-green and sink to the bottom; brown-grey bacteria dots cluster on them (tag \"bacteria decompose dead algae\"). On \"dissolved oxygen\" a gloss tag: \"dissolved oxygen: O₂ gas dissolved in the water (mg/L)\". On \"use up\" the O₂ glyphs fade one by one and the overlay's oxygen gauge falls; a small arrow from the air at the surface brings in only a few new O₂ glyphs (tag \"oxygen used faster than it dissolves back in\"). On \"warm, still water\" tag \"warm, still water: less O₂ and less mixing\". On the trace, after the day 2 swing the line slides down below the earlier troughs (tag \"after the bloom dies\"). On \"suffocate\" the gauge reaches its red band. On \"work\" a chip \"the algae kill the fish\" fades in and is crossed (caption \"here, bacteria use up most of the oxygen\"; site L09 common error); scene 6's grey toxin tag keeps the separate harm. On \"miss\" a bracket on the time axis from the bloom's peak to the fall: \"the danger can continue after the bloom dies\" (bright). Bright at the end: the crossed chip and the delay bracket. Hold about 2 seconds.",
+      "teachingReason": "Then the bloom runs out of something, light or nutrients, and the algae die and sink.",
+      "narrationCue": "dissolved oxygen / use up / warm, still water / suffocate / work / miss",
+      "motionPurpose": "m8-lake-bloom-v1.png cross-fades to the aligned m8-lake-crash-v1.png (murky brown-green water, a few small dead fish floating at the surface, dark sediment). In the overlay the algae dots turn grey-green and sink to the bottom; brown-grey bacteria dots cluster on them (tag \"bacteria decompose dead algae\"). On \"dissolved oxygen\" a gloss tag: \"dissolved oxygen: O₂ gas dissolved in the water (mg/L)\". On \"use up\" the O₂ glyphs fade one by one and the overlay's oxygen gauge falls; a small arrow from the air at the surface brings in only a few new O₂ glyphs (tag \"oxygen used faster than it dissolves back in\"). On \"warm, still water\" tag \"warm, still water: less O₂ and less mixing\". On the trace, after the day 2 swing the line slides down below the earlier troughs (tag \"after the bloom dies\"). On \"suffocate\" the gauge reaches its red band. On \"work\" a chip \"the algae kill the fish\" fades in and is crossed (caption \"here, bacteria use up most of the oxygen\"; site L09 common error); scene 6's grey toxin tag keeps the separate harm. On \"miss\" a bracket on the time axis from the bloom's peak to the fall: \"the danger can continue after the bloom dies\" (bright). Bright at the end: the crossed chip and the delay bracket. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "m8-lake-bloom-v1.png cross-fades to the aligned m8-lake-crash-v1.png (murky brown-green water, a few small dead fish floating at the surface, dark sediment). In the overlay the algae dots turn grey-green and sink to the bottom; brown-grey bacteria dots cluster on them (tag \"bacteria decompose dead algae\"). On \"dissolved oxygen\" a gloss tag: \"dissolved oxygen: O₂ gas dissolved in the water (mg/L)\". On \"use up\" the O₂ glyphs fade one by one and the overlay's oxygen gauge falls; a small arrow from the air at the surface brings in only a few new O₂ glyphs (tag \"oxygen used faster than it dissolves back in\"). On \"warm, still water\" tag \"warm, still water: less O₂ and less mixing\". On the trace, after the day 2 swing the line slides down below the earlier troughs (tag \"after the bloom dies\"). On \"suffocate\" the gauge reaches its red band. On \"work\" a chip \"the algae kill the fish\" fades in and is crossed (caption \"here, bacteria use up most of the oxygen\"; site L09 common error); scene 6's grey toxin tag keeps the separate harm. On \"miss\" a bracket on the time axis from the bloom's peak to the fall: \"the danger can continue after the bloom dies\" (bright). Bright at the end: the crossed chip and the delay bracket. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-lake-bloom-v1.png",
+        "m8-lake-crash-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "die, decay, suffocate: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "name-memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The word \"eutrophication\" writes large with its gloss under it: \"nutrient enrichment → too much growth → oxygen crash\". Handwritten, in c03a's flowchart arrows: \"Feed → bloom → die → decay → suffocate\", each word lighting on its spoken cue, with a tiny lake thumbnail under \"feed\" (clear), \"bloom\" (bloom) and \"suffocate\" (crash). A grey tag under \"decay\": \"bacteria use the O₂\". A small grey tag beside the chain: \"toxic blooms: a separate harm\". On \"flat\" a second handwritten line writes: \"Warm water holds less oxygen.\" with a small coded soft-drink bottle outline losing bubbles (grey chip \"Year 11: gases dissolve less when warm\"). Hold about 2 seconds.",
+      "teachingReason": "This chain is called eutrophication: nutrients enrich the water, too much grows, and the oxygen crashes.",
+      "narrationCue": "flat",
+      "motionPurpose": "the board clears. The word \"eutrophication\" writes large with its gloss under it: \"nutrient enrichment → too much growth → oxygen crash\". Handwritten, in c03a's flowchart arrows: \"Feed → bloom → die → decay → suffocate\", each word lighting on its spoken cue, with a tiny lake thumbnail under \"feed\" (clear), \"bloom\" (bloom) and \"suffocate\" (crash). A grey tag under \"decay\": \"bacteria use the O₂\". A small grey tag beside the chain: \"toxic blooms: a separate harm\". On \"flat\" a second handwritten line writes: \"Warm water holds less oxygen.\" with a small coded soft-drink bottle outline losing bubbles (grey chip \"Year 11: gases dissolve less when warm\"). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The word \"eutrophication\" writes large with its gloss under it: \"nutrient enrichment → too much growth → oxygen crash\". Handwritten, in c03a's flowchart arrows: \"Feed → bloom → die → decay → suffocate\", each word lighting on its spoken cue, with a tiny lake thumbnail under \"feed\" (clear), \"bloom\" (bloom) and \"suffocate\" (crash). A grey tag under \"decay\": \"bacteria use the O₂\". A small grey tag beside the chain: \"toxic blooms: a separate harm\". On \"flat\" a second handwritten line writes: \"Warm water holds less oxygen.\" with a small coded soft-drink bottle outline losing bubbles (grey chip \"Year 11: gases dissolve less when warm\"). Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a name and a memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "one-look",
+      "visualDecision": "new",
+      "visualReference": "the board clears. m8-river-sampling-bottle-v1.png at the centre (clear water). On \"Not by looking\" a chip \"clear water is clean water\" fades in and is crossed (caption \"dissolved substances are invisible\"); small navy, violet and grey ion tokens appear inside the bottle (tag \"nitrate, phosphate, salts, metals\"). On \"pH of seven\" a small coded pH chip \"pH 7\" with a tag \"says nothing about O₂\". The parameter board's three empty columns write in the right two thirds: on \"physical\" \"Physical\" (slate), on \"chemical\" \"Chemical\" (teal), on \"biological\" \"Biological\" (olive). A grey chip under the board: \"site L06: read the set together\". Bright at the end: the three column headings. Hold about 1 second.",
+      "teachingReason": "So how would you see this coming? Not by looking.",
+      "narrationCue": "Not by looking / pH of seven / physical / chemical / biological",
+      "motionPurpose": "the board clears. m8-river-sampling-bottle-v1.png at the centre (clear water). On \"Not by looking\" a chip \"clear water is clean water\" fades in and is crossed (caption \"dissolved substances are invisible\"); small navy, violet and grey ion tokens appear inside the bottle (tag \"nitrate, phosphate, salts, metals\"). On \"pH of seven\" a small coded pH chip \"pH 7\" with a tag \"says nothing about O₂\". The parameter board's three empty columns write in the right two thirds: on \"physical\" \"Physical\" (slate), on \"chemical\" \"Chemical\" (teal), on \"biological\" \"Biological\" (olive). A grey chip under the board: \"site L06: read the set together\". Bright at the end: the three column headings. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. m8-river-sampling-bottle-v1.png at the centre (clear water). On \"Not by looking\" a chip \"clear water is clean water\" fades in and is crossed (caption \"dissolved substances are invisible\"); small navy, violet and grey ion tokens appear inside the bottle (tag \"nitrate, phosphate, salts, metals\"). On \"pH of seven\" a small coded pH chip \"pH 7\" with a tag \"says nothing about O₂\". The parameter board's three empty columns write in the right two thirds: on \"physical\" \"Physical\" (slate), on \"chemical\" \"Chemical\" (teal), on \"biological\" \"Biological\" (olive). A grey chip under the board: \"site L06: read the set together\". Bright at the end: the three column headings. Hold about 1 second.",
+      "motionTools": [
+        "m8-river-sampling-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one look isn't enough: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "physical",
+      "visualDecision": "new",
+      "visualReference": "the Physical column fills. m8-thermometer-v1.png small at the top; line \"temperature: warm water holds less O₂\"; a small grey bar pair beside it: \"O₂ saturation: about 9.1 mg/L at 20 °C; about 7.6 mg/L at 30 °C\". On \"Turbidity\" the new m8-turbidity-meter-v1.png appears; line \"turbidity: cloudiness from suspended particles\". On \"blocks light\" a coded sun ray dims into a murky water strip. On \"germs\" a shows / can't show pair writes: \"shows: particles, runoff, less light\" / \"can't show: dissolved toxins or microbes\" (bright). Bright at the end: the can't-show line. Hold about 1 second.",
+      "teachingReason": "Physical parameters come first.",
+      "narrationCue": "Turbidity / blocks light / germs",
+      "motionPurpose": "the Physical column fills. m8-thermometer-v1.png small at the top; line \"temperature: warm water holds less O₂\"; a small grey bar pair beside it: \"O₂ saturation: about 9.1 mg/L at 20 °C; about 7.6 mg/L at 30 °C\". On \"Turbidity\" the new m8-turbidity-meter-v1.png appears; line \"turbidity: cloudiness from suspended particles\". On \"blocks light\" a coded sun ray dims into a murky water strip. On \"germs\" a shows / can't show pair writes: \"shows: particles, runoff, less light\" / \"can't show: dissolved toxins or microbes\" (bright). Bright at the end: the can't-show line. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the Physical column fills. m8-thermometer-v1.png small at the top; line \"temperature: warm water holds less O₂\"; a small grey bar pair beside it: \"O₂ saturation: about 9.1 mg/L at 20 °C; about 7.6 mg/L at 30 °C\". On \"Turbidity\" the new m8-turbidity-meter-v1.png appears; line \"turbidity: cloudiness from suspended particles\". On \"blocks light\" a coded sun ray dims into a murky water strip. On \"germs\" a shows / can't show pair writes: \"shows: particles, runoff, less light\" / \"can't show: dissolved toxins or microbes\" (bright). Bright at the end: the can't-show line. Hold about 1 second.",
+      "motionTools": [
+        "m8-thermometer-v1.png",
+        "m8-turbidity-meter-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "physical: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "chemical",
+      "visualDecision": "new",
+      "visualReference": "the Physical column dims; the Chemical column fills. m6-ph-meter-probe-beaker-v1.png small: line \"pH: acidity\". The new m8-do-meter-probe-v1.png small: line \"dissolved oxygen: O₂ available to aquatic life\" (grey chip \"measured next video\"). m8-water-testing-kit-v1.png small: line \"conductivity: rises with dissolved ions\"; on \"which ions\" its shows / can't show pair: \"shows: total dissolved ion load, fast\" / \"can't show: which ions\" (bright). On \"coloured compound\" m5x-colourimeter-v1.png small with a blue cuvette coded fill (grey tag \"phosphate: molybdenum blue\"); grey chip \"c04: read against standards, inside the range\". On \"ion chromatography\" a coded column outline with three ion bands separating and three small peaks drawing beside it, tagged \"Cl⁻\", \"NO₃⁻\", \"PO₄³⁻\"; gloss tag \"ion chromatography: a column separates the ions, then each is measured\". Bright at the end: the conductivity pair and the chromatography gloss. Hold about 1 second.",
+      "teachingReason": "Chemical parameters include pH, dissolved oxygen and conductivity.",
+      "narrationCue": "which ions / coloured compound / ion chromatography",
+      "motionPurpose": "the Physical column dims; the Chemical column fills. m6-ph-meter-probe-beaker-v1.png small: line \"pH: acidity\". The new m8-do-meter-probe-v1.png small: line \"dissolved oxygen: O₂ available to aquatic life\" (grey chip \"measured next video\"). m8-water-testing-kit-v1.png small: line \"conductivity: rises with dissolved ions\"; on \"which ions\" its shows / can't show pair: \"shows: total dissolved ion load, fast\" / \"can't show: which ions\" (bright). On \"coloured compound\" m5x-colourimeter-v1.png small with a blue cuvette coded fill (grey tag \"phosphate: molybdenum blue\"); grey chip \"c04: read against standards, inside the range\". On \"ion chromatography\" a coded column outline with three ion bands separating and three small peaks drawing beside it, tagged \"Cl⁻\", \"NO₃⁻\", \"PO₄³⁻\"; gloss tag \"ion chromatography: a column separates the ions, then each is measured\". Bright at the end: the conductivity pair and the chromatography gloss. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the Physical column dims; the Chemical column fills. m6-ph-meter-probe-beaker-v1.png small: line \"pH: acidity\". The new m8-do-meter-probe-v1.png small: line \"dissolved oxygen: O₂ available to aquatic life\" (grey chip \"measured next video\"). m8-water-testing-kit-v1.png small: line \"conductivity: rises with dissolved ions\"; on \"which ions\" its shows / can't show pair: \"shows: total dissolved ion load, fast\" / \"can't show: which ions\" (bright). On \"coloured compound\" m5x-colourimeter-v1.png small with a blue cuvette coded fill (grey tag \"phosphate: molybdenum blue\"); grey chip \"c04: read against standards, inside the range\". On \"ion chromatography\" a coded column outline with three ion bands separating and three small peaks drawing beside it, tagged \"Cl⁻\", \"NO₃⁻\", \"PO₄³⁻\"; gloss tag \"ion chromatography: a column separates the ions, then each is measured\". Bright at the end: the conductivity pair and the chromatography gloss. Hold about 1 second.",
+      "motionTools": [
+        "m6-ph-meter-probe-beaker-v1.png",
+        "m8-do-meter-probe-v1.png",
+        "m8-water-testing-kit-v1.png",
+        "m5x-colourimeter-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "chemical: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "biological",
+      "visualDecision": "new",
+      "visualReference": "the Chemical column dims; the Biological column fills. m7-plate-creek-v1.png small at the top: line \"E. coli: sign of faecal contamination (sewage, animal waste)\"; a small crossed chip \"total coliforms = faecal\" (caption \"E. coli is the faecal indicator\"; site correction 1). On \"microscope\" m6-microscope-v1.png small: line \"algal cell counts: a bloom starting early\" (bright), with a coded microscope-field circle of green cells beside it. On \"bank\" all three columns brighten together for a beat, then dim to equal weight. Bright at the end: the algal count line. Hold about 1 second.",
+      "teachingReason": "Biological parameters look at living things.",
+      "narrationCue": "microscope / bank",
+      "motionPurpose": "the Chemical column dims; the Biological column fills. m7-plate-creek-v1.png small at the top: line \"E. coli: sign of faecal contamination (sewage, animal waste)\"; a small crossed chip \"total coliforms = faecal\" (caption \"E. coli is the faecal indicator\"; site correction 1). On \"microscope\" m6-microscope-v1.png small: line \"algal cell counts: a bloom starting early\" (bright), with a coded microscope-field circle of green cells beside it. On \"bank\" all three columns brighten together for a beat, then dim to equal weight. Bright at the end: the algal count line. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the Chemical column dims; the Biological column fills. m7-plate-creek-v1.png small at the top: line \"E. coli: sign of faecal contamination (sewage, animal waste)\"; a small crossed chip \"total coliforms = faecal\" (caption \"E. coli is the faecal indicator\"; site correction 1). On \"microscope\" m6-microscope-v1.png small: line \"algal cell counts: a bloom starting early\" (bright), with a coded microscope-field circle of green cells beside it. On \"bank\" all three columns brighten together for a beat, then dim to equal weight. Bright at the end: the algal count line. Hold about 1 second.",
+      "motionTools": [
+        "m7-plate-creek-v1.png",
+        "m6-microscope-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "biological: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-read",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Which site shows the strongest signs of an oxygen problem?\" The site's table writes row by row (L09 DATA card), with column headers \"nitrate (mg/L, as NO₃⁻)\", \"phosphate (mg/L, as PO₄³⁻)\", \"dissolved oxygen (mg/L)\", \"observation\": A 0.35, 0.02, 8.4, \"clear water, no visible bloom\"; B 1.40, 0.18, 6.1, \"green surface scum beginning to form\"; C 1.75, 0.25, 3.9, \"dead fish observed near shore\" (grey tag \"site L09\"). On \"Nitrate and phosphate rise\" the two nutrient columns highlight with a downward trend arrow; working line \"phosphate B ÷ A = 0.18 ÷ 0.02 = 9\". The nutrient columns dim. On \"falls\" the oxygen column highlights with its arrow; working line \"8.4 → 3.9 mg/L\". On \"observations\" the observation column highlights, each cell gaining its lake thumbnail (clear, bloom, crash). On \"follow-up\" a ranking writes: \"C: strongest signs of an oxygen problem; B: needs follow-up; A: least affected\" (bright), with a grey tag \"one day, three places: a snapshot, not a history\". On \"night\" a small moon glyph and grey tag: \"one daytime sample: night-time O₂ unknown\". Bright at the end: the ranking. Hold about 2 seconds.",
+      "teachingReason": "Let's read some data.",
+      "narrationCue": "Nitrate and phosphate rise / falls / observations / follow-up / night",
+      "motionPurpose": "the board clears. Task line \"Which site shows the strongest signs of an oxygen problem?\" The site's table writes row by row (L09 DATA card), with column headers \"nitrate (mg/L, as NO₃⁻)\", \"phosphate (mg/L, as PO₄³⁻)\", \"dissolved oxygen (mg/L)\", \"observation\": A 0.35, 0.02, 8.4, \"clear water, no visible bloom\"; B 1.40, 0.18, 6.1, \"green surface scum beginning to form\"; C 1.75, 0.25, 3.9, \"dead fish observed near shore\" (grey tag \"site L09\"). On \"Nitrate and phosphate rise\" the two nutrient columns highlight with a downward trend arrow; working line \"phosphate B ÷ A = 0.18 ÷ 0.02 = 9\". The nutrient columns dim. On \"falls\" the oxygen column highlights with its arrow; working line \"8.4 → 3.9 mg/L\". On \"observations\" the observation column highlights, each cell gaining its lake thumbnail (clear, bloom, crash). On \"follow-up\" a ranking writes: \"C: strongest signs of an oxygen problem; B: needs follow-up; A: least affected\" (bright), with a grey tag \"one day, three places: a snapshot, not a history\". On \"night\" a small moon glyph and grey tag: \"one daytime sample: night-time O₂ unknown\". Bright at the end: the ranking. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Which site shows the strongest signs of an oxygen problem?\" The site's table writes row by row (L09 DATA card), with column headers \"nitrate (mg/L, as NO₃⁻)\", \"phosphate (mg/L, as PO₄³⁻)\", \"dissolved oxygen (mg/L)\", \"observation\": A 0.35, 0.02, 8.4, \"clear water, no visible bloom\"; B 1.40, 0.18, 6.1, \"green surface scum beginning to form\"; C 1.75, 0.25, 3.9, \"dead fish observed near shore\" (grey tag \"site L09\"). On \"Nitrate and phosphate rise\" the two nutrient columns highlight with a downward trend arrow; working line \"phosphate B ÷ A = 0.18 ÷ 0.02 = 9\". The nutrient columns dim. On \"falls\" the oxygen column highlights with its arrow; working line \"8.4 → 3.9 mg/L\". On \"observations\" the observation column highlights, each cell gaining its lake thumbnail (clear, bloom, crash). On \"follow-up\" a ranking writes: \"C: strongest signs of an oxygen problem; B: needs follow-up; A: least affected\" (bright), with a grey tag \"one day, three places: a snapshot, not a history\". On \"night\" a small moon glyph and grey tag: \"one daytime sample: night-time O₂ unknown\". Bright at the end: the ranking. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked read: which site shows the strongest signs?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "why-monitor",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the purpose card. Left: \"drinking water\" with a coded tap outline and a nitrate bar reaching a line \"ADWG health value: 50 mg/L as NO₃⁻ (protects bottle-fed babies)\"; right: \"river ecosystem\" with m8-lake-bloom-v1.png small and a much shorter bar labelled \"far lower levels can feed a bloom\" (grey tag \"ANZG ecosystem trigger values; check the basis: as NO₃⁻ or as N\"). On \"Sampling above and below\" the two coded bottles from scene 3 return either side of the outlet plate, with a step up in the nutrient tokens between them (tag \"find the source → choose the fix\"). On \"treatment plant\" a coded treatment-plant box outline appears at the right with two input arrows: from a dam outline \"algae and toxins at the intake\" and from the outlet \"N and P in sewage\" (tag \"what to remove\"; bright). On \"recovered\" a small coded trend line of phosphate over months steps down after a marker \"fix\" (tag \"check the response\"). Bright at the end: the treatment box tag and the trend line. Hold about 1 second.",
+      "teachingReason": "So why monitor? A number only means something against a guideline for that water's use.",
+      "narrationCue": "Sampling above and below / treatment plant / recovered",
+      "motionPurpose": "the board clears to the purpose card. Left: \"drinking water\" with a coded tap outline and a nitrate bar reaching a line \"ADWG health value: 50 mg/L as NO₃⁻ (protects bottle-fed babies)\"; right: \"river ecosystem\" with m8-lake-bloom-v1.png small and a much shorter bar labelled \"far lower levels can feed a bloom\" (grey tag \"ANZG ecosystem trigger values; check the basis: as NO₃⁻ or as N\"). On \"Sampling above and below\" the two coded bottles from scene 3 return either side of the outlet plate, with a step up in the nutrient tokens between them (tag \"find the source → choose the fix\"). On \"treatment plant\" a coded treatment-plant box outline appears at the right with two input arrows: from a dam outline \"algae and toxins at the intake\" and from the outlet \"N and P in sewage\" (tag \"what to remove\"; bright). On \"recovered\" a small coded trend line of phosphate over months steps down after a marker \"fix\" (tag \"check the response\"). Bright at the end: the treatment box tag and the trend line. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the purpose card. Left: \"drinking water\" with a coded tap outline and a nitrate bar reaching a line \"ADWG health value: 50 mg/L as NO₃⁻ (protects bottle-fed babies)\"; right: \"river ecosystem\" with m8-lake-bloom-v1.png small and a much shorter bar labelled \"far lower levels can feed a bloom\" (grey tag \"ANZG ecosystem trigger values; check the basis: as NO₃⁻ or as N\"). On \"Sampling above and below\" the two coded bottles from scene 3 return either side of the outlet plate, with a step up in the nutrient tokens between them (tag \"find the source → choose the fix\"). On \"treatment plant\" a coded treatment-plant box outline appears at the right with two input arrows: from a dam outline \"algae and toxins at the intake\" and from the outlet \"N and P in sewage\" (tag \"what to remove\"; bright). On \"recovered\" a small coded trend line of phosphate over months steps down after a marker \"fix\" (tag \"check the response\"). Bright at the end: the treatment box tag and the trend line. Hold about 1 second.",
+      "motionTools": [
+        "m8-lake-bloom-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "why monitor?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the four-column table (nitrate and phosphate \"mg/L, as the ion\", dissolved oxygen \"mg/L\", E. coli \"per 100 mL\") and a coded strip map of the creek: the farm plate small at the left, the dairy drain arrow between Site 1 and Site 2, a pool outline at Site 3 marked \"slow, shallow; green scum\". Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no arrows on the table, no lake plates).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the four-column table (nitrate and phosphate \"mg/L, as the ion\", dissolved oxygen \"mg/L\", E. coli \"per 100 mL\") and a coded strip map of the creek: the farm plate small at the left, the dairy drain arrow between Site 1 and Site 2, a pool outline at Site 3 marked \"slow, shallow; green scum\". Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no arrows on the table, no lake plates).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the four-column table (nitrate and phosphate \"mg/L, as the ion\", dissolved oxygen \"mg/L\", E. coli \"per 100 mL\") and a coded strip map of the creek: the farm plate small at the left, the dairy drain arrow between Site 1 and Site 2, a pool outline at Site 3 marked \"slow, shallow; green scum\". Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no arrows on the table, no lake plates).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"jump\" \"Site 2 is just below a drain from the dairy's milking shed\" is underlined and the Site 1 and Site 2 rows' nitrate, phosphate and E. coli cells underline; working line \"nitrate × 6.5, phosphate × 14, E. coli × 60\" writes; line \"(a) most likely source: the dairy drain (E. coli: animal faecal waste)\" (bright). On \"needs time\" \"5 km downstream, in a slow, shallow pool with green scum\" is underlined and Site 3's 3.2 underlines; the \"feed → bloom → die → decay → suffocate\" chain writes small; line \"(b) likely: the bloom grew downstream; dead algae decayed; bacteria used the O₂; still water mixes little in\" (bright). On \"trap\" a chip \"lowest O₂ where nutrients are highest\" fades in and is crossed (caption \"the crash is delayed\"). Hold about 1 second.",
+      "teachingReason": "Nitrate, phosphate and E.",
+      "narrationCue": "jump / needs time / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"jump\" \"Site 2 is just below a drain from the dairy's milking shed\" is underlined and the Site 1 and Site 2 rows' nitrate, phosphate and E. coli cells underline; working line \"nitrate × 6.5, phosphate × 14, E. coli × 60\" writes; line \"(a) most likely source: the dairy drain (E. coli: animal faecal waste)\" (bright). On \"needs time\" \"5 km downstream, in a slow, shallow pool with green scum\" is underlined and Site 3's 3.2 underlines; the \"feed → bloom → die → decay → suffocate\" chain writes small; line \"(b) likely: the bloom grew downstream; dead algae decayed; bacteria used the O₂; still water mixes little in\" (bright). On \"trap\" a chip \"lowest O₂ where nutrients are highest\" fades in and is crossed (caption \"the crash is delayed\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"jump\" \"Site 2 is just below a drain from the dairy's milking shed\" is underlined and the Site 1 and Site 2 rows' nitrate, phosphate and E. coli cells underline; working line \"nitrate × 6.5, phosphate × 14, E. coli × 60\" writes; line \"(a) most likely source: the dairy drain (E. coli: animal faecal waste)\" (bright). On \"needs time\" \"5 km downstream, in a slow, shallow pool with green scum\" is underlined and Site 3's 3.2 underlines; the \"feed → bloom → die → decay → suffocate\" chain writes small; line \"(b) likely: the bloom grew downstream; dead algae decayed; bacteria used the O₂; still water mixes little in\" (bright). On \"trap\" a chip \"lowest O₂ where nutrients are highest\" fades in and is crossed (caption \"the crash is delayed\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), with three empty labelled boxes \"physical\", \"chemical\", \"biological\". m8-lake-clear-v1.png small at the right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no instrument plates, no parameter board).",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), with three empty labelled boxes \"physical\", \"chemical\", \"biological\". m8-lake-clear-v1.png small at the right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no instrument plates, no parameter board).",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), with three empty labelled boxes \"physical\", \"chemical\", \"biological\". m8-lake-clear-v1.png small at the right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no instrument plates, no parameter board).",
+      "motionTools": [
+        "m8-lake-clear-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"temperature\" \"physical\" box: \"temperature: warm, still water favours blooms; holds less O₂\" with the thermometer thumbnail. On \"nutrients\" \"early warning\" underlines in the question; \"chemical\" box: \"phosphate: rises before the bloom\" with the colourimeter thumbnail, and a dim line under it \"nitrate also accepted\". On \"cell counts\" \"biological\" box: \"algal cell counts: the bloom starting\" (bright) with the microscope thumbnail. A grey line under the boxes: \"other justified choices: turbidity; day-night O₂ swings\". On \"warning\" a chip \"count dead fish\" fades in and is crossed (caption \"evidence, not a warning\"). Hold about 1 second.",
+      "teachingReason": "One good set: water temperature, because warm, still water favours blooms.",
+      "narrationCue": "temperature / nutrients / cell counts / warning",
+      "motionPurpose": "the card stays, shrunk to the top. On \"temperature\" \"physical\" box: \"temperature: warm, still water favours blooms; holds less O₂\" with the thermometer thumbnail. On \"nutrients\" \"early warning\" underlines in the question; \"chemical\" box: \"phosphate: rises before the bloom\" with the colourimeter thumbnail, and a dim line under it \"nitrate also accepted\". On \"cell counts\" \"biological\" box: \"algal cell counts: the bloom starting\" (bright) with the microscope thumbnail. A grey line under the boxes: \"other justified choices: turbidity; day-night O₂ swings\". On \"warning\" a chip \"count dead fish\" fades in and is crossed (caption \"evidence, not a warning\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"temperature\" \"physical\" box: \"temperature: warm, still water favours blooms; holds less O₂\" with the thermometer thumbnail. On \"nutrients\" \"early warning\" underlines in the question; \"chemical\" box: \"phosphate: rises before the bloom\" with the colourimeter thumbnail, and a dim line under it \"nitrate also accepted\". On \"cell counts\" \"biological\" box: \"algal cell counts: the bloom starting\" (bright) with the microscope thumbnail. A grey line under the boxes: \"other justified choices: turbidity; day-night O₂ swings\". On \"warning\" a chip \"count dead fish\" fades in and is crossed (caption \"evidence, not a warning\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A three-row decision card lights on cue: \"Trace: source → nutrients → bloom → decay → low O₂\"; \"Choose: physical, chemical, biological, for the purpose\"; \"Judge: against the guideline for that water's use\". On \"Next\" m8-do-meter-probe-v1.png and a coded stoppered bottle outline slide in, with a chip \"Next: dissolved oxygen and BOD\" at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, when you're asked why we monitor water, trace it from the source, through the bloom, to the oxygen crash, then choose evidence of all three kinds for the job.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A three-row decision card lights on cue: \"Trace: source → nutrients → bloom → decay → low O₂\"; \"Choose: physical, chemical, biological, for the purpose\"; \"Judge: against the guideline for that water's use\". On \"Next\" m8-do-meter-probe-v1.png and a coded stoppered bottle outline slide in, with a chip \"Next: dissolved oxygen and BOD\" at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A three-row decision card lights on cue: \"Trace: source → nutrients → bloom → decay → low O₂\"; \"Choose: physical, chemical, biological, for the purpose\"; \"Judge: against the guideline for that water's use\". On \"Next\" m8-do-meter-probe-v1.png and a coded stoppered bottle outline slide in, with a chip \"Next: dissolved oxygen and BOD\" at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-do-meter-probe-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c05-learning-review.md",
+      "sha256": "99c08755750dde4a51f027f7a83f35661905c91ee5c81729817759b5eb43b2d5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c05-claude-science-check.md",
+      "sha256": "5c679320e64e900c33cd3b3ac2a15046ad53367d43002f05e375e29ae72fa28a"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

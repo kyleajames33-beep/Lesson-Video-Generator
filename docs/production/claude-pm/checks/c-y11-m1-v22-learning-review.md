@@ -1,0 +1,15 @@
+# c-y11-m1-v22 learning review
+
+Revision 1, source review 6 November 2026. SHA-256 `71d2cb1b5a839135a292d1b98317f4ae732b329bd94998faf4758dfcd510a2b2`. Design unchanged. Independent learning/science review from the route’s entry knowledge and the previous source handoff; no recorded playback or learner trial reviewed. No separate starter pack exists.
+
+From v21’s ion picture, lattice coordination leads to attractions, melting, cleavage and mobile charge carriers. The microscope lens and circuit states teach why a solid can contain charges without conducting. The three-state task retains all conditions, and the Celsius-ratio trap is explained rather than used as a measure of bond strength. The memory line is a necessary carrier condition, with vibration explicitly distinguished from travel. The real halite object contradicts the scratch claim, and the practical needs the teacher-approved method condition below.
+
+1. **Should fix (science, scene 1 and hardness wording):** The chosen halite crystal is said to be hard and not easily scratched. Halite has Mohs hardness about 2 to 2.5 and is a soft mineral. Keep it for cleavage/brittleness, but remove the scratch-resistance claim and explain resistance to moving ions without claiming every ionic crystal is scratch-hard. The exam-trap opener can be cut to fund any short contrast. Sources: https://commonminerals.esci.umn.edu/minerals-g-m/halite and https://mineralseducationcoalition.org/minerals-database/salthalite/
+
+2. **Blocker (school-practical approval, scene 10 to 12):** The design calls the dilute NaCl/DC carbon-electrode test safe for students, but the requested chemical-specific NSW school check is not established by the public general safety page or the saved CSIS curriculum-support text. Keep that practical wording on hold until teacher/PM confirmation of the exact school method, or use an approved-demonstration/secondary-source framing. The public NSW page requires risk assessment but does not approve this exact setup. Remove the unqualified safe claim; cut the scene 5 marks opener to fund a teacher-method condition. Source: https://education.nsw.gov.au/teaching-and-learning/curriculum/science/science-safety-and-compliance
+
+Root decisions: 22 question accepted subject to halite repair; 25 textbook MgO accepted; 30 exact practical check remains open.
+
+All quoted event cues occur in spoken order (work/brief179/cues.json). Sentence-number errors are findings above. Source joins agree, including v17 to v18, root’s v22 to v23 reconciliation and v27 to m2-v01. No U+2014 or U+2061; headline counts equal the independent joined count. No new positive request for people, hands or faces; rejected tug-of-war people plates remain excluded. Attempt cards retain the stated conditions with answer working withheld until feedback. Reading and feedback duration need exact playback, not a source-only pass.
+
+Count: 1 blockers, 1 should fix, 0 optional; 5,885 joined narration characters, about 530 s by the design. Speech-only estimate 442.5 s. Measured timing and human listening pending.

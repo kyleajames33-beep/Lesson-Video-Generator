@@ -1,0 +1,176 @@
+{
+  "id": "math-a12-d03",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (is ln x its own derivative?)",
+      "voiceover": {
+        "text": "Last video, our ratio points traced this curve, y equals the natural log of x. Here's a tempting guess. E to the x is its own derivative, and the natural log undoes e to the x. So is the natural log its own derivative too? Look at x equals a half. The curve is below the axis there, so the natural log of a half is negative. But the curve is still climbing. A climbing curve has a positive gradient, so the guess fails. Then what is the gradient of this curve, and why?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "measure the gradient",
+      "voiceover": {
+        "text": "Measure it, starting at x equals one, where the curve crosses the axis. Slide a second point in from the right, and the secant's slope settles: point eight one, point nine five, point nine nine five. The tangent's slope is one. Now move along. At x equals two, the gradient is a half. At x equals four, it's a quarter. And back at x equals a half, the gradient is two. Double x, and the slope halves. Multiply the gradient by x, and you get one, every time."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the gradient dots",
+      "voiceover": {
+        "text": "Let's mark that pattern. At each x, put a dot at the height of the gradient. Near zero, the curve is steep, so the dots are high. Further out, it flattens, and the dots sink. They all land on one curve, y equals one over x. But why such a simple gradient? The answer is hiding in e to the x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the reflection",
+      "voiceover": {
+        "text": "In Year 11, you saw that the natural log curve is the reflection of e to the x in the line y equals x. Reflecting in that line swaps each point's x and y. The point zero, one on e to the x lands on one, zero. On e to the x, the point with height two sits at x equals the natural log of two, about point six nine. After the reflection, it sits at x equals two, with height point six nine. Every point swaps, and together they make the natural log curve."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "carry a tangent through the reflection",
+      "voiceover": {
+        "text": "Now carry a tangent through. On e to the x at height two, the slope is two, because the gradient equals the height. Draw its tangent triangle: across one, up two. Reflect it in y equals x. The across leg stands up, so now it's a rise of one. The up leg lies down, so now it's a run of two. Rise one over run two: the slope is a half. A reflection in y equals x swaps run and rise, so the slope at the matching point becomes its reciprocal, one over the old slope."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the whole reason",
+      "voiceover": {
+        "text": "Here's the whole reason. On e to the x, the slope at each point equals its height. The reflection turns that height into the x coordinate on the natural log curve. And it turns the slope into one over itself. So on the natural log curve, the slope at x is one over x. At height four, e to the x has slope four. After the reflection, x is four, and the slope is a quarter. At height a half, the slope a half becomes two, at x equals a half. That's why gradient times x is always one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the chain rule proof",
+      "voiceover": {
+        "text": "Now the proof the syllabus asks for, with the chain rule. For every positive x, e to the natural log of x equals x, because the natural log is the power you raise e to, to get x. Differentiate both sides. On the right, x has derivative one. On the left, the power is an inside part, the natural log of x. The chain rule says copy e to that power, then multiply by the inside part's derivative, the very gradient we're after. So e to the natural log of x, times the gradient, is one. But e to the natural log of x is just x. So x times the gradient is one, the pattern our readout showed. Divide by x, which is fine because x is positive. The derivative of the natural log of x is one over x. Not one over the natural log of x, which doesn't even exist at x equals one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "the domain stays positive",
+      "voiceover": {
+        "text": "Notice where this lives. The natural log of x only exists for positive x, because e to any power is positive. That's why the reflected curve stays to the right of the y axis, and never touches it. The expression one over x would make sense for negative x, but the natural log doesn't exist there, so this rule is for x greater than zero only."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "worked example 1: the natural log of three x",
+      "voiceover": {
+        "text": "Let's use it. Differentiate y equals the natural log of three x, for positive x. A log law helps first. The log of a product is the sum of the logs, so this is the natural log of three, plus the natural log of x. The natural log of three is just a number, so its derivative is zero. So d y by d x is one over x, just like the natural log of x. Surprised? On the graph, the natural log of three x is the natural log curve slid up by the natural log of three. A slide up keeps every slope at the same x. So three over x is wrong."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "worked example 2: three times the natural log of x",
+      "voiceover": {
+        "text": "Now compare three times the natural log of x. Find its gradient at x equals two. Two videos ago, stretching a curve upward by three made every slope three times bigger. That's the constant multiple rule. So d y by d x is three over x. At x equals two, that's three over two, one point five. On the graph, our triangle at x equals two had run two and rise one. Stretch it upward, and the rise becomes three. So a number inside the log shifts the curve vertically, but a number in front stretches every slope."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember it. Flip the graph, flip the slope. E to the x has slope equal to its height. Reflect it in y equals x, and that height becomes x, while the slope turns into one over itself. So the natural log of x has slope one over x, for positive x."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A curve has equation y equals two times the natural log of x, minus three x, for positive x. Find its gradient at x equals two. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Two times the natural log of x has derivative two over x, and three x has derivative three. So d y by d x is two over x, minus three. At x equals two, two over two is one, and one minus three is minus two. If you wrote one over x for the first term, you treated two times the natural log of x like the natural log of two x. The two in front stretches the slope, so it stays."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. For f of x equals the natural log of x cubed, with x positive, find f prime of x. Then find the value of x where the gradient is six. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Use the log law first. For positive x, the natural log of x cubed is three times the natural log of x, so f prime of x is three over x. Set three over x equal to six, and x is a half. That's positive, so it's in the domain. One over x cubed is wrong. You can't just write one over the inside. Rewrite with the log law first."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the natural log of x is e to the x reflected in y equals x, and its slope is one over x, for positive x. Next: what about log base two of x? It's the natural log curve, stretched upward. By how much, and what does that do to its slope?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-17",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/bio-y11-fa1-v03/lesson.json",
+    "lessonSha256": "f0330cfdd4403efa5e1c0b6b51110a359156cf8f978c415edbe41c5d8e36eede"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From v02: the structure and function of the cell wall, chloroplast, vacuole, mitochondria, lysosomes and the other named organelles. From v01: eukaryotic cells have a nucleus and membrane-bound organelles. Stage 5 (assumed, restated in a sentence where used): plants make their own food using light, animals eat food; photosynthesis makes glucose and respiration releases energy from it (word level). Not assumed: autotroph, heterotroph, cellulose, cell sap, turgor pressure.",
+    "startsWith": "Last time, we opened up a eukaryotic cell and gave every organelle a job. Here are two of them side by side: a cell from a leaf, and a cell from an animal. Most of the parts match. But the leaf cell is boxy and green, and the animal cell is round and soft. Is that just a quirk, or could you predict it from what each cell has to do?",
+    "stopsAfter": "naming the shared eukaryotic structures (membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body); contrasting plant and animal cells through three plant-only structures, each tied to the plant's way of life (autotroph, fixed in place, no skeleton): chloroplasts capture light to make glucose (found in photosynthetic cells, such as leaf mesophyll, not in the underground root cell shown), the rigid cellulose wall and the large central vacuole together give turgor pressure, so cells are firm rather than burst and the plant stays upright; explaining an animal cell's lack of a wall (flexible, can change shape and engulf), its small temporary vacuoles and its lysosomes; explaining that plant cells also have mitochondria because they respire the glucose they make, day and night; writing each difference for both cells with its reason.",
+    "nextLesson": "a bacterium, with no nucleus and no organelles (route entry bio-y11-fa1-v04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md"
+  ],
+  "teaching": {
+    "task": "*Could you predict a plant cell's extra structures from what the plant cell needs to do?*",
+    "causalExplanation": "Here's a clue. Forget to water a pot plant, and it droops. Water it, and often within a few hours it stands up again. A plant has no bones and no muscles, so what's holding it up? The answer is sitting inside its cells. Start with what they share. Plant and animal cells are both eukaryotic, so both have a cell membrane, cytoplasm and a nucleus. Both have mitochondria, ribosomes, endoplasmic reticulum and a Golgi body. That's the shared toolkit. The differences are a short list: the leaf cell adds a cell wall, chloroplasts and one large central vacuole. So why exactly those three? Look at how each organism lives. A plant is an autotroph, which means it makes its own food, using light energy. It's also fixed in one spot, and it has no skeleton to hold it up. An animal is a heterotroph: it gets its food by eating other living things. It moves around, and many animals are held up by a skeleton. Every difference we're about to see follows from those two ways of life.",
+    "conversationalApproach": "Last time, we opened up a eukaryotic cell and gave every organelle a job. Here's a clue. Start with what they share. Look at how each organism lives.",
+    "openingDecision": "opens on v02's handoff frame (open decision 1): m5x-cell-protein-synthesis-v1.png at the left and b6a-plant-cell-v1.png at the right, same height, no labels; v02's \"Next\" chip lifts and becomes the heading area. On \"a cell from a leaf\" a small y11-leaf-tree-cell-v1.png thumbnail (cropped by Cam to the leaf) sits above the plant cell with a grey tag \"leaf\"; on \"a cell from an animal\" a grey tag \"animal tissue\" above the animal cell (no organism drawn). On \"Most of the parts match\" a soft scribbleEllipse rings the nucleus in each plate, then the mitochondria in each. On \"boxy and green\" a coded rectangle traces the plant cell's outline and its chloroplasts glint; on \"round and soft\" a coded curve traces the animal cell's membrane. On the question the heading writes: \"Why do plant and animal cells differ?\" At most three bright text items. Hold one second.",
+    "understandingCheck": "So here's a prediction for you. This cell comes from a root, deep underground. It's still a plant cell. Does it have chloroplasts? Have a think. Two exam questions. First. A cell has a nucleus, mitochondria, a cellulose cell wall and a large central vacuole, but no chloroplasts. Identify the type of cell, and justify your answer. Then explain why this cell may have no chloroplasts, yet still needs mitochondria. Pause here to answer. Second. A student says, plant and animal cells differ only because plants are green. Assess this statement, by contrasting the two cell types based on the function of each cell. Pause here to answer.",
+    "curriculumScope": "Syllabus content (NSW Biology 11-12, 2025, Year 11):\r\n\"Contrast the cell structure and organelles of plant and animal cells based on the function of the cell\"\r\nOfficial syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c\r\n\r\nPrevious: How do eukaryotic organelles work together? Next: How does a bacterium function without membrane-bound organelles?\r\n\r\n#Year11Biology #Cells #HSCScience\"\r\n\r\n- Content point wording confirmed against `docs/production/programme/syllabus/bio-new-y11.json` (B25-FA1-G1-04, a local ledger id, so it is not printed in the description). Format follows the 2024 Maths designs' syllabus line, adapted for the 2025 Biology course; root to confirm the line format for the Year 11 Biology series.\r\n- Site link uses the live `.sa.html` form, first.\r\n\r"
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Preserve the painted plates and shared explainer ink, watercolour and paper system specified by this design. ",
+    "transitionPlan": "Follow each existing scene Visual and retain the specified opening and handoff; the notes return to the final handoff as the root decision requires."
+  },
+  "scenes": [
+    {
+      "sceneId": "two-cells",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-1: opens on v02's handoff frame (open decision 1): m5x-cell-protein-synthesis-v1.png at the left and b6a-plant-cell-v1.png at the right, same height, no labels; v02's \"Next\" chip lifts and becomes the heading area. On \"a cell from a leaf\" a small y11-leaf-tree-cell-v1.png thumbnail (cropped by Cam to the leaf) sits above the plant cell with a grey tag \"leaf\"; on \"a cell from an animal\" a grey tag \"animal tissue\" above the animal cell (no organism drawn). On \"Most of the parts match\" a soft scribbleEllipse rings the nucleus in each plate, then the mitochondria in each. On \"boxy and green\" a coded rectangle traces the plant cell's outline and its chloroplasts glint; on \"round and soft\" a coded curve traces the animal cell's membrane. On the question the heading writes: \"Why do plant and animal cells differ?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Last time, we opened up a eukaryotic cell and gave every organelle a job.",
+      "narrationCue": "Last time, we opened up a eukaryotic cell and gave every organelle a job",
+      "motionPurpose": "opens on v02's handoff frame (open decision 1): m5x-cell-protein-synthesis-v1.png at the left and b6a-plant-cell-v1.png at the right, same height, no labels; v02's \"Next\" chip lifts and becomes the heading area. On \"a cell from a leaf\" a small y11-leaf-tree-cell-v1.png thumbnail (cropped by Cam to the leaf) sits above the plant cell with a grey tag \"leaf\"; on \"a cell from an animal\" a grey tag \"animal tissue\" above the animal cell (no organism drawn). On \"Most of the parts match\" a soft scribbleEllipse rings the nucleus in each plate, then the mitochondria in each. On \"boxy and green\" a coded rectangle traces the plant cell's outline and its chloroplasts glint; on \"round and soft\" a coded curve traces the animal cell's membrane. On the question the heading writes: \"Why do plant and animal cells differ?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "opens on v02's handoff frame (open decision 1): m5x-cell-protein-synthesis-v1.png at the left and b6a-plant-cell-v1.png at the right, same height, no labels; v02's \"Next\" chip lifts and becomes the heading area. On \"a cell from a leaf\" a small y11-leaf-tree-cell-v1.png thumbnail (cropped by Cam to the leaf) sits above the plant cell with a grey tag \"leaf\"; on \"a cell from an animal\" a grey tag \"animal tissue\" above the animal cell (no organism drawn). On \"Most of the parts match\" a soft scribbleEllipse rings the nucleus in each plate, then the mitochondria in each. On \"boxy and green\" a coded rectangle traces the plant cell's outline and its chloroplasts glint; on \"round and soft\" a coded curve traces the animal cell's membrane. On the question the heading writes: \"Why do plant and animal cells differ?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "two cells, side by side (opening): retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "drooping-plant",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-2: the two cells shrink to the top corners. Matched pair at the centre: b2b-prop-new-plant-v1.png (upright) cross-fades on \"it droops\" to m8-potted-plant-wilted-v1.png (the same pot, roots and stem base, leaves hanging; built as a matched pair in bio-m8-b05), then on \"Water it\" a small coded watering arc of blue WaterDots falls into the pot and the plate cross-fades back to upright, with a grey tag \"a few hours later\". On \"no bones and no muscles\" a grey chip \"skeleton?\" writes beside the stem and takes a scribble cross. On \"inside its cells\" the Cam pushes towards a leaf and a small plant cell thumbnail (b6a-plant-cell-v1.png) appears in a callout from the leaf. As the speech ends, a silent chip writes: \"difference → reason (the cell's job)\". At most three bright items. Hold one second.",
+      "teachingReason": "Here's a clue.",
+      "narrationCue": "Here's a clue",
+      "motionPurpose": "the two cells shrink to the top corners. Matched pair at the centre: b2b-prop-new-plant-v1.png (upright) cross-fades on \"it droops\" to m8-potted-plant-wilted-v1.png (the same pot, roots and stem base, leaves hanging; built as a matched pair in bio-m8-b05), then on \"Water it\" a small coded watering arc of blue WaterDots falls into the pot and the plate cross-fades back to upright, with a grey tag \"a few hours later\". On \"no bones and no muscles\" a grey chip \"skeleton?\" writes beside the stem and takes a scribble cross. On \"inside its cells\" the Cam pushes towards a leaf and a small plant cell thumbnail (b6a-plant-cell-v1.png) appears in a callout from the leaf. As the speech ends, a silent chip writes: \"difference → reason (the cell's job)\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the two cells shrink to the top corners. Matched pair at the centre: b2b-prop-new-plant-v1.png (upright) cross-fades on \"it droops\" to m8-potted-plant-wilted-v1.png (the same pot, roots and stem base, leaves hanging; built as a matched pair in bio-m8-b05), then on \"Water it\" a small coded watering arc of blue WaterDots falls into the pot and the plate cross-fades back to upright, with a grey tag \"a few hours later\". On \"no bones and no muscles\" a grey chip \"skeleton?\" writes beside the stem and takes a scribble cross. On \"inside its cells\" the Cam pushes towards a leaf and a small plant cell thumbnail (b6a-plant-cell-v1.png) appears in a callout from the leaf. As the speech ends, a silent chip writes: \"difference → reason (the cell's job)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the drooping plant (hook): retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "shared-toolkit",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-3: the two-cell board returns: animal cell left, plant cell right, same height. On each named shared part a matching pair of small amber ticks lands on both plates where the part is visible (membrane, nucleus, mitochondria), and a grey chip column between the plates lists the full shared toolkit as it is spoken: \"cell membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body\" (grey tag \"both eukaryotic\"); parts too small to see on the plant plate (ER, Golgi, ribosomes) are ticked in the chip column only. On \"the leaf cell adds\" three callouts draw on the plant plate in turn: \"cell wall\", \"chloroplasts\", \"large central vacuole\", each in amber. The coded ContrastLedger draws under the board with three empty rows titled with those three names, columns \"plant cell\", \"animal cell\", \"because\". On \"why exactly those three?\" the three \"because\" slots pulse empty. At most three bright items. Hold one second.",
+      "teachingReason": "Start with what they share.",
+      "narrationCue": "Start with what they share",
+      "motionPurpose": "the two-cell board returns: animal cell left, plant cell right, same height. On each named shared part a matching pair of small amber ticks lands on both plates where the part is visible (membrane, nucleus, mitochondria), and a grey chip column between the plates lists the full shared toolkit as it is spoken: \"cell membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body\" (grey tag \"both eukaryotic\"); parts too small to see on the plant plate (ER, Golgi, ribosomes) are ticked in the chip column only. On \"the leaf cell adds\" three callouts draw on the plant plate in turn: \"cell wall\", \"chloroplasts\", \"large central vacuole\", each in amber. The coded ContrastLedger draws under the board with three empty rows titled with those three names, columns \"plant cell\", \"animal cell\", \"because\". On \"why exactly those three?\" the three \"because\" slots pulse empty. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the two-cell board returns: animal cell left, plant cell right, same height. On each named shared part a matching pair of small amber ticks lands on both plates where the part is visible (membrane, nucleus, mitochondria), and a grey chip column between the plates lists the full shared toolkit as it is spoken: \"cell membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body\" (grey tag \"both eukaryotic\"); parts too small to see on the plant plate (ER, Golgi, ribosomes) are ticked in the chip column only. On \"the leaf cell adds\" three callouts draw on the plant plate in turn: \"cell wall\", \"chloroplasts\", \"large central vacuole\", each in amber. The coded ContrastLedger draws under the board with three empty rows titled with those three names, columns \"plant cell\", \"animal cell\", \"because\". On \"why exactly those three?\" the three \"because\" slots pulse empty. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the shared toolkit: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "ways-of-life",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-4: the board dims. y11-leaf-tree-cell-v1.png enters at the left (sapling, leaf, leaf cell); on \"autotroph\" a gloss \"autotroph: makes its own food using light\"; on \"using light energy\" coded light rays slant onto the leaf. On \"fixed in one spot\" the roots are ringed, tag \"fixed in place\"; on \"no skeleton\" a grey chip \"no skeleton\". At the right, a coded card for the animal side (no animal or person drawn): on \"heterotroph\" a gloss \"heterotroph: eats other living things\", with three grey chips writing one per cue: \"eats food\", \"moves\", \"skeleton (many animals)\". On \"follows from those two ways of life\" the two cards slide under their cells on the board (plant card under the plant cell, animal card under the animal cell) and stay there as small headers for the rest of the video: \"makes food · fixed · no skeleton\" and \"eats · moves · often a skeleton\". At most three bright items. Hold one second.",
+      "teachingReason": "Look at how each organism lives.",
+      "narrationCue": "autotroph / heterotroph",
+      "motionPurpose": "the board dims. y11-leaf-tree-cell-v1.png enters at the left (sapling, leaf, leaf cell); on \"autotroph\" a gloss \"autotroph: makes its own food using light\"; on \"using light energy\" coded light rays slant onto the leaf. On \"fixed in one spot\" the roots are ringed, tag \"fixed in place\"; on \"no skeleton\" a grey chip \"no skeleton\". At the right, a coded card for the animal side (no animal or person drawn): on \"heterotroph\" a gloss \"heterotroph: eats other living things\", with three grey chips writing one per cue: \"eats food\", \"moves\", \"skeleton (many animals)\". On \"follows from those two ways of life\" the two cards slide under their cells on the board (plant card under the plant cell, animal card under the animal cell) and stay there as small headers for the rest of the video: \"makes food · fixed · no skeleton\" and \"eats · moves · often a skeleton\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board dims. y11-leaf-tree-cell-v1.png enters at the left (sapling, leaf, leaf cell); on \"autotroph\" a gloss \"autotroph: makes its own food using light\"; on \"using light energy\" coded light rays slant onto the leaf. On \"fixed in one spot\" the roots are ringed, tag \"fixed in place\"; on \"no skeleton\" a grey chip \"no skeleton\". At the right, a coded card for the animal side (no animal or person drawn): on \"heterotroph\" a gloss \"heterotroph: eats other living things\", with three grey chips writing one per cue: \"eats food\", \"moves\", \"skeleton (many animals)\". On \"follows from those two ways of life\" the two cards slide under their cells on the board (plant card under the plant cell, animal card under the animal cell) and stay there as small headers for the rest of the video: \"makes food · fixed · no skeleton\" and \"eats · moves · often a skeleton\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "two ways of life: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "make-food",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-5: the Cam pushes into the plant cell; a scribbleEllipse rings one chloroplast and a callout opens to b6a-chloroplast-v1.png (cut-away showing stacked membranes). On \"stacks of membranes\" a callout to one stack, label \"stacks of membranes\"; on \"chlorophyll, which absorbs the light\" coded light rays enter and the stacks brighten; gloss \"chlorophyll: green pigment, absorbs light\". On \"That's photosynthesis\" a small coded arrow leaves the chloroplast to a grey chip \"glucose made\" (grey tag \"word equation: a later video\"). On \"An animal cell has no chloroplasts\" the Cam pulls back to the board; the animal cell's interior is scanned by a soft coded sweep with no green found, and a grey chip \"food → glucose already made\" sits under it. The ledger's \"chloroplasts\" row fills: plant \"yes, in photosynthetic cells such as leaf cells\", animal \"no\", because \"makes its own food: captures light\". At most three bright items. Hold one second.",
+      "teachingReason": "First job: make food.",
+      "narrationCue": "chloroplasts",
+      "motionPurpose": "the Cam pushes into the plant cell; a scribbleEllipse rings one chloroplast and a callout opens to b6a-chloroplast-v1.png (cut-away showing stacked membranes). On \"stacks of membranes\" a callout to one stack, label \"stacks of membranes\"; on \"chlorophyll, which absorbs the light\" coded light rays enter and the stacks brighten; gloss \"chlorophyll: green pigment, absorbs light\". On \"That's photosynthesis\" a small coded arrow leaves the chloroplast to a grey chip \"glucose made\" (grey tag \"word equation: a later video\"). On \"An animal cell has no chloroplasts\" the Cam pulls back to the board; the animal cell's interior is scanned by a soft coded sweep with no green found, and a grey chip \"food → glucose already made\" sits under it. The ledger's \"chloroplasts\" row fills: plant \"yes, in photosynthetic cells such as leaf cells\", animal \"no\", because \"makes its own food: captures light\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the Cam pushes into the plant cell; a scribbleEllipse rings one chloroplast and a callout opens to b6a-chloroplast-v1.png (cut-away showing stacked membranes). On \"stacks of membranes\" a callout to one stack, label \"stacks of membranes\"; on \"chlorophyll, which absorbs the light\" coded light rays enter and the stacks brighten; gloss \"chlorophyll: green pigment, absorbs light\". On \"That's photosynthesis\" a small coded arrow leaves the chloroplast to a grey chip \"glucose made\" (grey tag \"word equation: a later video\"). On \"An animal cell has no chloroplasts\" the Cam pulls back to the board; the animal cell's interior is scanned by a soft coded sweep with no green found, and a grey chip \"food → glucose already made\" sits under it. The ledger's \"chloroplasts\" row fills: plant \"yes, in photosynthetic cells such as leaf cells\", animal \"no\", because \"makes its own food: captures light\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "job one: make food: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "root-prediction",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-6a: the board slides up. New y11-root-cell-v1.png enters at the centre with a small b2b-prop-new-plant-v1.png thumbnail beside it, its cut-away roots ringed and a leader line to the cell, grey tag \"root cell, underground\". The root cell is shown as an outline with its interior closed under a soft coded blur, unlabelled, so the answer can't be read off the picture; the cutaway interior is revealed only in 6b. On \"Does it have chloroplasts?\" a chip writes \"chloroplasts?\" beside it. A 3 s countdown ring starts after \"Have a think.\" The plate and chip stay on screen during the countdown.",
+      "teachingReason": "So here's a prediction for you.",
+      "narrationCue": "So here's a prediction for you",
+      "motionPurpose": "the board slides up. New y11-root-cell-v1.png enters at the centre with a small b2b-prop-new-plant-v1.png thumbnail beside it, its cut-away roots ringed and a leader line to the cell, grey tag \"root cell, underground\". The root cell is shown as an outline with its interior closed under a soft coded blur, unlabelled, so the answer can't be read off the picture; the cutaway interior is revealed only in 6b. On \"Does it have chloroplasts?\" a chip writes \"chloroplasts?\" beside it. A 3 s countdown ring starts after \"Have a think.\" The plate and chip stay on screen during the countdown.",
+      "motionRole": "hold",
+      "onScreenChange": "the board slides up. New y11-root-cell-v1.png enters at the centre with a small b2b-prop-new-plant-v1.png thumbnail beside it, its cut-away roots ringed and a leader line to the cell, grey tag \"root cell, underground\". The root cell is shown as an outline with its interior closed under a soft coded blur, unlabelled, so the answer can't be read off the picture; the cutaway interior is revealed only in 6b. On \"Does it have chloroplasts?\" a chip writes \"chloroplasts?\" beside it. A 3 s countdown ring starts after \"Have a think.\" The plate and chip stay on screen during the countdown.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "3 second countdown with the entire task visible, followed by 2 seconds of source scene padding."
+    },
+    {
+      "sceneId": "root-reveal",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-6b: on \"No, it doesn't\" the blur lifts to reveal the cutaway, the chip gains \"no\" and a soft coded sweep across the root cell finds no green; small grey tag \"colourless starch stores, no chloroplasts\". On \"no light down there\" the thumbnail's soil darkens and the coded light rays from scene 4 stop at the soil line. On \"still has a wall and a large vacuole\" callouts draw to the wall and the vacuole of the root cell, matching the plant cell labels. On \"structure follows function\" a handwritten line writes across the bottom: \"structure follows function\", and stays small at the lower edge for the rest of the video. At most three bright items. Hold one second.",
+      "teachingReason": "No, it doesn't.",
+      "narrationCue": "No, it doesn't",
+      "motionPurpose": "on \"No, it doesn't\" the blur lifts to reveal the cutaway, the chip gains \"no\" and a soft coded sweep across the root cell finds no green; small grey tag \"colourless starch stores, no chloroplasts\". On \"no light down there\" the thumbnail's soil darkens and the coded light rays from scene 4 stop at the soil line. On \"still has a wall and a large vacuole\" callouts draw to the wall and the vacuole of the root cell, matching the plant cell labels. On \"structure follows function\" a handwritten line writes across the bottom: \"structure follows function\", and stays small at the lower edge for the rest of the video. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"No, it doesn't\" the blur lifts to reveal the cutaway, the chip gains \"no\" and a soft coded sweep across the root cell finds no green; small grey tag \"colourless starch stores, no chloroplasts\". On \"no light down there\" the thumbnail's soil darkens and the coded light rays from scene 4 stop at the soil line. On \"still has a wall and a large vacuole\" callouts draw to the wall and the vacuole of the root cell, matching the plant cell labels. On \"structure follows function\" a handwritten line writes across the bottom: \"structure follows function\", and stays small at the lower edge for the rest of the video. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the reveal: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "stay-upright",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-7: the board returns; the Cam pushes into the plant cell. On \"cell wall\" a callout to the wall, gloss \"cellulose: tough fibres built from sugar\"; a thin coded line traces the membrane just inside it, label \"membrane (inside the wall)\". On \"central vacuole\" the vacuole is ringed, gloss \"cell sap: water, nutrients, wastes\". Then the Cam moves to y11-tonicity-cells-v1.png, framed on its left panel only (the turgid cell; the other panels stay off frame; grey tag \"a full vacuole\"). On \"presses the cell outwards\" short coded amber arrows push out from the vacuole to the wall; on \"the wall pushes back\" shorter teal arrows push inward at the wall; on \"firm instead of bursting\" a grey tag \"wall: stops bursting\". On \"turgor pressure\" a gloss \"turgor pressure: the vacuole's outward push on the wall\". On \"Millions of firm cells\" the Cam pulls back to the leaf on the upright plant thumbnail, where a coded grid of small rounded cells fills a leaf outline, each with tiny outward arrows. The ledger's \"cell wall\" row fills: plant \"yes, cellulose\", animal \"no\", because \"resists turgor: firm, not burst\"; and the \"vacuole\" row: plant \"one large, central\", animal \"small, temporary\", because \"stores sap, keeps turgor up\". At most three bright items. Hold one second.",
+      "teachingReason": "Second job: hold itself up without a skeleton.",
+      "narrationCue": "cell wall / central vacuole / turgor pressure",
+      "motionPurpose": "the board returns; the Cam pushes into the plant cell. On \"cell wall\" a callout to the wall, gloss \"cellulose: tough fibres built from sugar\"; a thin coded line traces the membrane just inside it, label \"membrane (inside the wall)\". On \"central vacuole\" the vacuole is ringed, gloss \"cell sap: water, nutrients, wastes\". Then the Cam moves to y11-tonicity-cells-v1.png, framed on its left panel only (the turgid cell; the other panels stay off frame; grey tag \"a full vacuole\"). On \"presses the cell outwards\" short coded amber arrows push out from the vacuole to the wall; on \"the wall pushes back\" shorter teal arrows push inward at the wall; on \"firm instead of bursting\" a grey tag \"wall: stops bursting\". On \"turgor pressure\" a gloss \"turgor pressure: the vacuole's outward push on the wall\". On \"Millions of firm cells\" the Cam pulls back to the leaf on the upright plant thumbnail, where a coded grid of small rounded cells fills a leaf outline, each with tiny outward arrows. The ledger's \"cell wall\" row fills: plant \"yes, cellulose\", animal \"no\", because \"resists turgor: firm, not burst\"; and the \"vacuole\" row: plant \"one large, central\", animal \"small, temporary\", because \"stores sap, keeps turgor up\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns; the Cam pushes into the plant cell. On \"cell wall\" a callout to the wall, gloss \"cellulose: tough fibres built from sugar\"; a thin coded line traces the membrane just inside it, label \"membrane (inside the wall)\". On \"central vacuole\" the vacuole is ringed, gloss \"cell sap: water, nutrients, wastes\". Then the Cam moves to y11-tonicity-cells-v1.png, framed on its left panel only (the turgid cell; the other panels stay off frame; grey tag \"a full vacuole\"). On \"presses the cell outwards\" short coded amber arrows push out from the vacuole to the wall; on \"the wall pushes back\" shorter teal arrows push inward at the wall; on \"firm instead of bursting\" a grey tag \"wall: stops bursting\". On \"turgor pressure\" a gloss \"turgor pressure: the vacuole's outward push on the wall\". On \"Millions of firm cells\" the Cam pulls back to the leaf on the upright plant thumbnail, where a coded grid of small rounded cells fills a leaf outline, each with tiny outward arrows. The ledger's \"cell wall\" row fills: plant \"yes, cellulose\", animal \"no\", because \"resists turgor: firm, not burst\"; and the \"vacuole\" row: plant \"one large, central\", animal \"small, temporary\", because \"stores sap, keeps turgor up\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "job two: stay upright: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "puzzle-answered",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-8: the plant pair returns at the left (upright); the tonicity plate at the right with the Cam framed on its left two panels (turgid, then flaccid; the plasmolysed panel stays off frame, because that state belongs to v11). On \"the vacuoles lose water\" blue WaterDots drift out of the turgid cell and the Cam slides from the turgid panel to the flaccid panel; the amber arrows shrink and fade (tag \"turgor falls\"). On \"the plant droops\" the plant cross-fades to m8-potted-plant-wilted-v1.png. On \"Water it, the vacuoles refill\" the Cam slides back to the turgid panel, the arrows return, and the plant cross-fades upright. On \"stands back up\" a silent grey chip \"animals: often held up by a skeleton instead\" writes under the animal header (screen only; said in scene 4). At most three bright items. Hold one second.",
+      "teachingReason": "Now you can answer the pot plant puzzle.",
+      "narrationCue": "Now you can answer the pot plant puzzle",
+      "motionPurpose": "the plant pair returns at the left (upright); the tonicity plate at the right with the Cam framed on its left two panels (turgid, then flaccid; the plasmolysed panel stays off frame, because that state belongs to v11). On \"the vacuoles lose water\" blue WaterDots drift out of the turgid cell and the Cam slides from the turgid panel to the flaccid panel; the amber arrows shrink and fade (tag \"turgor falls\"). On \"the plant droops\" the plant cross-fades to m8-potted-plant-wilted-v1.png. On \"Water it, the vacuoles refill\" the Cam slides back to the turgid panel, the arrows return, and the plant cross-fades upright. On \"stands back up\" a silent grey chip \"animals: often held up by a skeleton instead\" writes under the animal header (screen only; said in scene 4). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plant pair returns at the left (upright); the tonicity plate at the right with the Cam framed on its left two panels (turgid, then flaccid; the plasmolysed panel stays off frame, because that state belongs to v11). On \"the vacuoles lose water\" blue WaterDots drift out of the turgid cell and the Cam slides from the turgid panel to the flaccid panel; the amber arrows shrink and fade (tag \"turgor falls\"). On \"the plant droops\" the plant cross-fades to m8-potted-plant-wilted-v1.png. On \"Water it, the vacuoles refill\" the Cam slides back to the turgid panel, the arrows return, and the plant cross-fades upright. On \"stands back up\" a silent grey chip \"animals: often held up by a skeleton instead\" writes under the animal header (screen only; said in scene 4). At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the puzzle answered: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "animal-cell",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-9: the board returns; the Cam pushes into the animal cell. On \"flexible cell membrane\" a coded line traces the membrane, label \"membrane: the outer boundary\", and gently ripples. On \"Watch this white blood cell\" the phagocytosis set from bio-m7-b06 fills the centre: m7-macrophage-engulf-before-v1.png (grey tag \"white blood cell (macrophage); bacterium drawn larger than real\"), cross-fading on \"wraps it up\" to m7-macrophage-engulf-wrap-v1.png and on \"pulls it inside\" to m7-macrophage-engulf-after-v2.png. Transitions follow bio-m7-b06 Revision 3: each change is a short cross-fade (about 6 frames) or masked over the bacterium, and the change into the after plate is always masked, so the rod never appears twice. On \"A cell with a rigid wall couldn't do that\" a small plant cell thumbnail appears beside it with its wall ringed and a grey chip \"rigid wall: fixed shape\". On \"small, temporary vacuoles\" the animal cell's small vesicles are ringed. On \"lysosomes\" the set cross-fades to m7-macrophage-engulf-digest-v1.png and the merging lysosomes are ringed, gloss \"lysosome: sac of digestive enzymes\". Small grey screen tag under the animal header: \"many animal cells: centrioles (help organise cell division; later video)\". The ledger's \"cell wall\" row gains under the animal column: \"no: flexible, can engulf\". At most three bright items. Hold one second.",
+      "teachingReason": "Now flip to the animal cell.",
+      "narrationCue": "Now flip to the animal cell",
+      "motionPurpose": "the board returns; the Cam pushes into the animal cell. On \"flexible cell membrane\" a coded line traces the membrane, label \"membrane: the outer boundary\", and gently ripples. On \"Watch this white blood cell\" the phagocytosis set from bio-m7-b06 fills the centre: m7-macrophage-engulf-before-v1.png (grey tag \"white blood cell (macrophage); bacterium drawn larger than real\"), cross-fading on \"wraps it up\" to m7-macrophage-engulf-wrap-v1.png and on \"pulls it inside\" to m7-macrophage-engulf-after-v2.png. Transitions follow bio-m7-b06 Revision 3: each change is a short cross-fade (about 6 frames) or masked over the bacterium, and the change into the after plate is always masked, so the rod never appears twice. On \"A cell with a rigid wall couldn't do that\" a small plant cell thumbnail appears beside it with its wall ringed and a grey chip \"rigid wall: fixed shape\". On \"small, temporary vacuoles\" the animal cell's small vesicles are ringed. On \"lysosomes\" the set cross-fades to m7-macrophage-engulf-digest-v1.png and the merging lysosomes are ringed, gloss \"lysosome: sac of digestive enzymes\". Small grey screen tag under the animal header: \"many animal cells: centrioles (help organise cell division; later video)\". The ledger's \"cell wall\" row gains under the animal column: \"no: flexible, can engulf\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns; the Cam pushes into the animal cell. On \"flexible cell membrane\" a coded line traces the membrane, label \"membrane: the outer boundary\", and gently ripples. On \"Watch this white blood cell\" the phagocytosis set from bio-m7-b06 fills the centre: m7-macrophage-engulf-before-v1.png (grey tag \"white blood cell (macrophage); bacterium drawn larger than real\"), cross-fading on \"wraps it up\" to m7-macrophage-engulf-wrap-v1.png and on \"pulls it inside\" to m7-macrophage-engulf-after-v2.png. Transitions follow bio-m7-b06 Revision 3: each change is a short cross-fade (about 6 frames) or masked over the bacterium, and the change into the after plate is always masked, so the rod never appears twice. On \"A cell with a rigid wall couldn't do that\" a small plant cell thumbnail appears beside it with its wall ringed and a grey chip \"rigid wall: fixed shape\". On \"small, temporary vacuoles\" the animal cell's small vesicles are ringed. On \"lysosomes\" the set cross-fades to m7-macrophage-engulf-digest-v1.png and the merging lysosomes are ringed, gloss \"lysosome: sac of digestive enzymes\". Small grey screen tag under the animal header: \"many animal cells: centrioles (help organise cell division; later video)\". The ledger's \"cell wall\" row gains under the animal column: \"no: flexible, can engulf\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the animal cell travels light: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "mitochondria-trap",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-10: the board returns. On \"trap\" a WrongChip writes \"plant cells have no mitochondria\". On \"Yes, they do\" the chip takes a scribble cross and both plates' mitochondria are ringed in amber, with b6a-mitochondrion-v1.png opening in a callout from the plant cell. On \"Making glucose stores energy\" a coded arrow runs from a chloroplast to a small grey glucose chip; on \"respires the glucose in its mitochondria\" the glucose chip breaks down in the cytoplasm and an energy arrow from that breakdown continues into the mitochondrion, out to a chip \"energy the cell can use\". On \"day and night\" a small coded sun and moon dial sits above the plant cell: in the sun half both arrows run; as the dial turns to the moon half, the chloroplast arrow stops and the mitochondrion arrow keeps running. On the memory line two handwritten labels write: \"kitchen (chloroplast): closes at night\" and \"furnace (mitochondrion): runs day and night\", each with a leader line to its organelle. At most three bright items. Hold one second.",
+      "teachingReason": "Here's a common trap.",
+      "narrationCue": "Here's a common trap",
+      "motionPurpose": "the board returns. On \"trap\" a WrongChip writes \"plant cells have no mitochondria\". On \"Yes, they do\" the chip takes a scribble cross and both plates' mitochondria are ringed in amber, with b6a-mitochondrion-v1.png opening in a callout from the plant cell. On \"Making glucose stores energy\" a coded arrow runs from a chloroplast to a small grey glucose chip; on \"respires the glucose in its mitochondria\" the glucose chip breaks down in the cytoplasm and an energy arrow from that breakdown continues into the mitochondrion, out to a chip \"energy the cell can use\". On \"day and night\" a small coded sun and moon dial sits above the plant cell: in the sun half both arrows run; as the dial turns to the moon half, the chloroplast arrow stops and the mitochondrion arrow keeps running. On the memory line two handwritten labels write: \"kitchen (chloroplast): closes at night\" and \"furnace (mitochondrion): runs day and night\", each with a leader line to its organelle. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns. On \"trap\" a WrongChip writes \"plant cells have no mitochondria\". On \"Yes, they do\" the chip takes a scribble cross and both plates' mitochondria are ringed in amber, with b6a-mitochondrion-v1.png opening in a callout from the plant cell. On \"Making glucose stores energy\" a coded arrow runs from a chloroplast to a small grey glucose chip; on \"respires the glucose in its mitochondria\" the glucose chip breaks down in the cytoplasm and an energy arrow from that breakdown continues into the mitochondrion, out to a chip \"energy the cell can use\". On \"day and night\" a small coded sun and moon dial sits above the plant cell: in the sun half both arrows run; as the dial turns to the moon half, the chloroplast arrow stops and the mitochondrion arrow keeps running. On the memory line two handwritten labels write: \"kitchen (chloroplast): closes at night\" and \"furnace (mitochondrion): runs day and night\", each with a leader line to its organelle. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the mitochondria trap: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "write-contrast",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-11: the plates shrink to the top corners and the ContrastLedger enlarges to fill the centre. On \"contrast\" a gloss \"contrast: differences, for both cells\"; on \"based on function\" a gloss \"based on function: give the reason\", and the \"because\" column header takes an amber underline. Each sentence lights its row in turn, plant cell cell, animal cell cell, then the \"because\" cell, earlier rows dimming to grey but staying readable. A small grey tag at the side: \"shared: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi\". At most three bright items. Hold two seconds on the finished ledger (a reading hold).",
+      "teachingReason": "So what does an exam mean by contrast, based on the function of the cell? Contrast means differences, stated for both cells.",
+      "narrationCue": "So what does an exam mean by contrast, based on the function of the cell? Contrast means differences, stated for both cells",
+      "motionPurpose": "the plates shrink to the top corners and the ContrastLedger enlarges to fill the centre. On \"contrast\" a gloss \"contrast: differences, for both cells\"; on \"based on function\" a gloss \"based on function: give the reason\", and the \"because\" column header takes an amber underline. Each sentence lights its row in turn, plant cell cell, animal cell cell, then the \"because\" cell, earlier rows dimming to grey but staying readable. A small grey tag at the side: \"shared: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi\". At most three bright items. Hold two seconds on the finished ledger (a reading hold).",
+      "motionRole": "explain",
+      "onScreenChange": "the plates shrink to the top corners and the ContrastLedger enlarges to fill the centre. On \"contrast\" a gloss \"contrast: differences, for both cells\"; on \"based on function\" a gloss \"based on function: give the reason\", and the \"because\" column header takes an amber underline. Each sentence lights its row in turn, plant cell cell, animal cell cell, then the \"because\" cell, earlier rows dimming to grey but staying readable. A small grey tag at the side: \"shared: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi\". At most three bright items. Hold two seconds on the finished ledger (a reading hold).",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "how to write a contrast: retain 4 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-12a: the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cell is found to contain a nucleus, mitochondria, a cellulose cell wall and a large central vacuole. No chloroplasts are present.\" Demand: \"(a) Identify whether this is a plant cell or an animal cell. Justify your answer. (2 marks) (b) Explain why this cell may have no chloroplasts, yet still needs mitochondria. (3 marks)\". Lined answer space. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cell is found to contain a nucleus, mitochondria, a cellulose cell wall and a large central vacuole. No chloroplasts are present.\" Demand: \"(a) Identify whether this is a plant cell or an animal cell. Justify your answer. (2 marks) (b) Explain why this cell may have no chloroplasts, yet still needs mitochondria. (3 marks)\". Lined answer space. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cell is found to contain a nucleus, mitochondria, a cellulose cell wall and a large central vacuole. No chloroplasts are present.\" Demand: \"(a) Identify whether this is a plant cell or an animal cell. Justify your answer. (2 marks) (b) Explain why this cell may have no chloroplasts, yet still needs mitochondria. (3 marks)\". Lined answer space. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 2 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-12b: the card stays. On \"plant cell\" the givens \"cellulose cell wall\" and \"large central vacuole\" take amber underlines and an answer line writes \"(a) plant cell: cellulose wall + large central vacuole\". On \"gets no light, like a root\" the given \"No chloroplasts\" takes an underline; answer line \"(b) no light (e.g. root) → chloroplasts not needed\"; a small y11-root-cell-v1.png thumbnail appears beside the card. On \"still needs mitochondria\" the given \"mitochondria\" takes an underline; answer line \"respires sugars from the leaves → energy\". On \"classic mistake\" a chip \"no chloroplasts, so animal cell\" writes and takes a scribble cross. Settle one second.",
+      "teachingReason": "It's a plant cell, because only plant cells have a cellulose wall and a large central vacuole.",
+      "narrationCue": "It's a plant cell, because only plant cells have a cellulose wall and a large central vacuole",
+      "motionPurpose": "the card stays. On \"plant cell\" the givens \"cellulose cell wall\" and \"large central vacuole\" take amber underlines and an answer line writes \"(a) plant cell: cellulose wall + large central vacuole\". On \"gets no light, like a root\" the given \"No chloroplasts\" takes an underline; answer line \"(b) no light (e.g. root) → chloroplasts not needed\"; a small y11-root-cell-v1.png thumbnail appears beside the card. On \"still needs mitochondria\" the given \"mitochondria\" takes an underline; answer line \"respires sugars from the leaves → energy\". On \"classic mistake\" a chip \"no chloroplasts, so animal cell\" writes and takes a scribble cross. Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"plant cell\" the givens \"cellulose cell wall\" and \"large central vacuole\" take amber underlines and an answer line writes \"(a) plant cell: cellulose wall + large central vacuole\". On \"gets no light, like a root\" the given \"No chloroplasts\" takes an underline; answer line \"(b) no light (e.g. root) → chloroplasts not needed\"; a small y11-root-cell-v1.png thumbnail appears beside the card. On \"still needs mitochondria\" the given \"mitochondria\" takes an underline; answer line \"respires sugars from the leaves → energy\". On \"classic mistake\" a chip \"no chloroplasts, so animal cell\" writes and takes a scribble cross. Settle one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback, item one: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-12c: the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student states: 'Plant cells and animal cells differ only because plants are green.'\" Demand: \"Assess this statement by contrasting the structure of plant and animal cells, based on the function of each cell. (4 marks)\". Lined answer space. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student states: 'Plant cells and animal cells differ only because plants are green.'\" Demand: \"Assess this statement by contrasting the structure of plant and animal cells, based on the function of each cell. (4 marks)\". Lined answer space. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student states: 'Plant cells and animal cells differ only because plants are green.'\" Demand: \"Assess this statement by contrasting the structure of plant and animal cells, based on the function of each cell. (4 marks)\". Lined answer space. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 2 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-12d: the card stays. On \"too narrow\" the word \"only\" in the stem takes an amber underline and an answer line writes \"too narrow: reject\". Answer lines write one per cue, earlier lines dimming: \"chloroplasts: makes its own food\", \"cell wall + large vacuole: turgor, no skeleton\", \"animal cells: none of the three\". A mini ContrastLedger thumbnail beside the card lights all three \"because\" cells. On \"Structure follows function\" the handwritten line from 6b brightens. On \"classic mistake\" a chip \"differences listed, no reasons\" writes and takes a scribble cross. Settle one second.",
+      "teachingReason": "The statement is too narrow.",
+      "narrationCue": "The statement is too narrow",
+      "motionPurpose": "the card stays. On \"too narrow\" the word \"only\" in the stem takes an amber underline and an answer line writes \"too narrow: reject\". Answer lines write one per cue, earlier lines dimming: \"chloroplasts: makes its own food\", \"cell wall + large vacuole: turgor, no skeleton\", \"animal cells: none of the three\". A mini ContrastLedger thumbnail beside the card lights all three \"because\" cells. On \"Structure follows function\" the handwritten line from 6b brightens. On \"classic mistake\" a chip \"differences listed, no reasons\" writes and takes a scribble cross. Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"too narrow\" the word \"only\" in the stem takes an amber underline and an answer line writes \"too narrow: reject\". Answer lines write one per cue, earlier lines dimming: \"chloroplasts: makes its own food\", \"cell wall + large vacuole: turgor, no skeleton\", \"animal cells: none of the three\". A mini ContrastLedger thumbnail beside the card lights all three \"because\" cells. On \"Structure follows function\" the handwritten line from 6b brightens. On \"classic mistake\" a chip \"differences listed, no reasons\" writes and takes a scribble cross. Settle one second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback, item two: retain 3 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-13: two step chips write on, one per cue: \"what does the cell have to do?\", \"which structure does that job?\". The two-cell board returns small above them. On \"a cell with no nucleus\" a small y11-prokaryote-cutaway-v1.png thumbnail (new, requested in the v04 design; fallback m6-bacterium-plasmid-v1.png) slides in at the right of the board, about a tenth of the width of the animal cell, with a grey tag \"bacterium (enlarged; really far smaller)\". A \"Next\" chip slides in at the lower right: \"Next: How does a bacterium function without membrane-bound organelles?\". This is v04's opening frame (the board with both eukaryotic cells and the bacterium thumbnail at the right). Hold half a second before the notes.",
+      "teachingReason": "So to contrast any two cells, ask what each cell has to do, then look for the structure that does that job.",
+      "narrationCue": "So to contrast any two cells, ask what each cell has to do, then look for the structure that does that job",
+      "motionPurpose": "two step chips write on, one per cue: \"what does the cell have to do?\", \"which structure does that job?\". The two-cell board returns small above them. On \"a cell with no nucleus\" a small y11-prokaryote-cutaway-v1.png thumbnail (new, requested in the v04 design; fallback m6-bacterium-plasmid-v1.png) slides in at the right of the board, about a tenth of the width of the animal cell, with a grey tag \"bacterium (enlarged; really far smaller)\". A \"Next\" chip slides in at the lower right: \"Next: How does a bacterium function without membrane-bound organelles?\". This is v04's opening frame (the board with both eukaryotic cells and the bacterium thumbnail at the right). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "two step chips write on, one per cue: \"what does the cell have to do?\", \"which structure does that job?\". The two-cell board returns small above them. On \"a cell with no nucleus\" a small y11-prokaryote-cutaway-v1.png thumbnail (new, requested in the v04 design; fallback m6-bacterium-plasmid-v1.png) slides in at the right of the board, about a tenth of the width of the animal cell, with a grey tag \"bacterium (enlarged; really far smaller)\". A \"Next\" chip slides in at the lower right: \"Next: How does a bacterium function without membrane-bound organelles?\". This is v04's opening frame (the board with both eukaryotic cells and the bacterium thumbnail at the right). Hold half a second before the notes.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "decision rule and handoff: retain 2.5 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/bio-y11-fa1-v03.md#scene-14: Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionRole": "hold",
+      "onScreenChange": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "Keep the written notes available for copying, with 55 seconds after the standard spoken lead-in."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex: exact source and prior independent science review with repair check",
+    "evidence": {
+      "path": "work/brief165-bio-physics/bio-y11-fa1-v03-recording-source-check.json",
+      "sha256": "e4f2890b838a6f7387bef258cfed38ed57e2a526430c839f274bedf2bbac5283"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Existing independent learning review and Codex repair confirmation",
+    "evidence": {
+      "path": "work/brief165-bio-physics/bio-y11-fa1-v03-recording-source-check.json",
+      "sha256": "e4f2890b838a6f7387bef258cfed38ed57e2a526430c839f274bedf2bbac5283"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Recording-stage source pass only. No built motion, exact voiced preview, human listening or public release approval."
+}

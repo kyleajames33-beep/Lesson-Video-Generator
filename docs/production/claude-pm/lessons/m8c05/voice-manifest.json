@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C05-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c05/lesson.json",
+  "lessonSha256": "2eac06fb3e7216cd71db1375183345149a917223643033d12c40f76446b6b691",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c05/lesson.production-brief.json",
+    "sha256": "248b31fb61df5c69eb830cc75182f4bdb4e170d75216ae89457ab2c68d29e49c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In late 1991, almost a thousand kilometres of the Barwon and Darling rivers turned green with cyanobacteria. In the summer of 2018 to 2019, near Menindee on the lower Darling, fish deaths were estimated at more than a million. Those deaths were linked to low flow, heat and algal blooms that left the water short of oxygen. So why would extra nutrients end in a fish kill, and what should chemists measure to see it coming?",
+      "hash": "e4c91f4ff8d4",
+      "textSha256": "e4c91f4ff8d4811593f91e9c3fc344b0d87a773e3f6527786cd9fca9a1b612f9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/hook.e4c91f4ff8d4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/hook.e4c91f4ff8d4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/hook.e4c91f4ff8d4.generation.json",
+      "plannedRequestSha256": "0c5721cbd8153c3398decfe3e9c3085665f99f8d0002caae5ba638e5e5342626"
+    },
+    {
+      "id": "nutrients-needed",
+      "parentSceneId": "nutrients-needed",
+      "text": "Nitrogen and phosphorus aren't poisons. Algae and plants need them to grow. In a lake, growth is usually held back by whichever nutrient is in shortest supply for what the algae need, called the limiting nutrient, and in fresh water that's often phosphorus. Add more of it, and you've taken the brake off.",
+      "hash": "b3eb18b49fe3",
+      "textSha256": "b3eb18b49fe31d705a647d9d9c478c96039760cd3af9763dfd5ec1c50a3599f9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/nutrients-needed.b3eb18b49fe3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/nutrients-needed.b3eb18b49fe3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/nutrients-needed.b3eb18b49fe3.generation.json",
+      "plannedRequestSha256": "cee36f6f6f1cdb54d314861cb42cc3c367ac416225408171dbe289dd8f46fb23"
+    },
+    {
+      "id": "sources",
+      "parentSceneId": "sources",
+      "text": "So where does the extra come from? After heavy rain, fertiliser washes off paddocks into creeks. That's a diffuse source, spread over a whole catchment. Sewage effluent and drains are point sources, one outlet you can point to, and they bring nutrients and organic waste together. Urban stormwater adds more. The source matters, because it decides where you sample and what the fix is.",
+      "hash": "18759a39ccef",
+      "textSha256": "18759a39ccef3a9d44f00e1c3bd7299ffddabd8ba6d998498837fa337f28cdfc",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/sources.18759a39ccef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/sources.18759a39ccef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/sources.18759a39ccef.generation.json",
+      "plannedRequestSha256": "59121fd5709e2f4364848921863cf3c216117d54ae63e52becce859c782bb18a"
+    },
+    {
+      "id": "feed-bloom",
+      "parentSceneId": "feed-bloom",
+      "text": "With the brake off, algae multiply into a bloom, a green scum you can see from the bank. In daylight, those algae make oxygen as they photosynthesise. At night they use oxygen as they respire, like every living thing in the water. So a bloom can give a high oxygen reading at noon, and a much lower one at dawn.",
+      "hash": "63f75d48d166",
+      "textSha256": "63f75d48d16662139998717715e75bc5386b98aaf41705a3b2b70ac81f4ea92d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feed-bloom.63f75d48d166.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feed-bloom.63f75d48d166.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feed-bloom.63f75d48d166.generation.json",
+      "plannedRequestSha256": "c344343681660dbde91fb00984b11b6a7b2adf61f9bb42c24f2f258eb14b52d0"
+    },
+    {
+      "id": "die-decay-suffocate",
+      "parentSceneId": "die-decay-suffocate",
+      "text": "Then the bloom runs out of something, light or nutrients, and the algae die and sink. Bacteria decompose the dead algae, and as they respire they use up dissolved oxygen, the oxygen gas dissolved in the water. They use it faster than it can dissolve back in from the air, especially in warm, still water. Oxygen falls, and fish suffocate. In this oxygen crash, bacteria do most of the oxygen-consuming work. The danger can continue after the bloom dies, which is why it's easy to miss.",
+      "hash": "65a8a07d8ada",
+      "textSha256": "65a8a07d8adaee1166edf4699ed07a2ef5b6baa08289b26a05f36d16acb1929b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/die-decay-suffocate.65a8a07d8ada.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/die-decay-suffocate.65a8a07d8ada.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/die-decay-suffocate.65a8a07d8ada.generation.json",
+      "plannedRequestSha256": "216473452567ceb26d7d5a59957db9ade658471a7e39a14cd1ed353ebfe0b9bd"
+    },
+    {
+      "id": "name-memory-aid",
+      "parentSceneId": "name-memory-aid",
+      "text": "This chain is called eutrophication: nutrients enrich the water, too much grows, and the oxygen crashes. Five words carry it. Feed, bloom, die, decay, suffocate. And remember why the crash is worse in summer. Warm water holds less oxygen, the way a warm soft drink goes flat.",
+      "hash": "e16faa8259da",
+      "textSha256": "e16faa8259da0171ebc43a8ba8bef28d7665e3ede74b739d21f434571a7c070a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/name-memory-aid.e16faa8259da.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/name-memory-aid.e16faa8259da.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/name-memory-aid.e16faa8259da.generation.json",
+      "plannedRequestSha256": "518208cccb2f8df66e98ca267b6e03c972b0dee2eeca8ea0dbe463d90221705d"
+    },
+    {
+      "id": "one-look",
+      "parentSceneId": "one-look",
+      "text": "So how would you see this coming? Not by looking. Clear water can still carry dissolved nutrients, salts or metals, and a pH of seven says nothing about oxygen. Water quality is a set of measurements, read together. Chemists group them as physical, chemical and biological.",
+      "hash": "dd0a21dfbf62",
+      "textSha256": "dd0a21dfbf624d210397235df650cc187fba8555494d3381ddf6060d7cff7550",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/one-look.dd0a21dfbf62.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/one-look.dd0a21dfbf62.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/one-look.dd0a21dfbf62.generation.json",
+      "plannedRequestSha256": "effce59f9591dd94a335bf58ff024b8ee1eb7085e3618f70bcf4b7b20280f585"
+    },
+    {
+      "id": "physical",
+      "parentSceneId": "physical",
+      "text": "Physical parameters come first. Temperature matters because warm water holds less oxygen. Turbidity is cloudiness from suspended particles. Cloudy water blocks light and often means soil has washed in, but turbidity can't tell you about dissolved poisons or germs.",
+      "hash": "becd94614b0c",
+      "textSha256": "becd94614b0c7dc75f697b9548e1aa55061fa2bc06960d5c24fd3ef5e017e5a8",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/physical.becd94614b0c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/physical.becd94614b0c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/physical.becd94614b0c.generation.json",
+      "plannedRequestSha256": "57863b308856b2e8bfc758371895f58a5a59b361d7e315e036dce8fa089da0de"
+    },
+    {
+      "id": "chemical",
+      "parentSceneId": "chemical",
+      "text": "Chemical parameters include pH, dissolved oxygen and conductivity. Conductivity rises with dissolved ions, so it's a quick check for salts, but it can't say which ions are there. For nitrate and phosphate, a reagent turns each one into a coloured compound, read against standards just like in the last video. Or ion chromatography separates the ions in a column and measures each one as it comes out.",
+      "hash": "0f09f6f4902e",
+      "textSha256": "0f09f6f4902e8bf804e7e52e2586a3cc61f276ad084ee5085f4288bc1bfba8cd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/chemical.0f09f6f4902e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/chemical.0f09f6f4902e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/chemical.0f09f6f4902e.generation.json",
+      "plannedRequestSha256": "a7a587d01aa0e4bb7d3cde40e72e60a73bb5f3b1bc72a5b84cb7647e18ffc070"
+    },
+    {
+      "id": "biological",
+      "parentSceneId": "biological",
+      "text": "Biological parameters look at living things. E. coli are gut bacteria, so finding them in water means faecal contamination, from sewage or animals. Counting algal cells under a microscope shows a bloom starting before you can see it from the bank.",
+      "hash": "86e792eea753",
+      "textSha256": "86e792eea7537193abce8de0e5dcd3080dfce896376bbfc1aaa17a5a77fe0af7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/biological.86e792eea753.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/biological.86e792eea753.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/biological.86e792eea753.generation.json",
+      "plannedRequestSha256": "36efffb5dde414ff86c883d1b657b7ad39ae50ae237bd5e3dd3d4d1f40c2e968"
+    },
+    {
+      "id": "worked-read",
+      "parentSceneId": "worked-read",
+      "text": "Let's read some data. Three sites on a lake, measured on the same day. Read one column at a time. Nitrate and phosphate rise from A to C, and site B already has about nine times the phosphate of A. Dissolved oxygen falls from eight point four to three point nine milligrams per litre. And the observations agree: clear water, then scum, then dead fish. So C shows the strongest signs of an oxygen problem, and B also needs follow-up. What the table can't show is what the oxygen does at night.",
+      "hash": "1830f663d7d6",
+      "textSha256": "1830f663d7d6b145be2eac45d723867f32785fc3323022802c1119bee77a0334",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/worked-read.1830f663d7d6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/worked-read.1830f663d7d6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/worked-read.1830f663d7d6.generation.json",
+      "plannedRequestSha256": "27cf777b637eca777acf37d1da4f189476da2dea8933702363b9489ffd3374cf"
+    },
+    {
+      "id": "why-monitor",
+      "parentSceneId": "why-monitor",
+      "text": "So why monitor? A number only means something against a guideline for that water's use. For drinking water, the nitrate guideline is fifty milligrams per litre, set to protect babies, but far lower nutrient levels can feed a bloom in a river. Sampling above and below a source finds where the nutrients enter, and that decides the fix. Monitoring also tells a treatment plant what it has to remove, like algae at a drinking water intake, or nitrogen and phosphorus in sewage before it's released. And after any fix, only measurement shows whether the water recovered.",
+      "hash": "dc569178a297",
+      "textSha256": "dc569178a2976ec92c494354bc7f6e97a0c891a1f86b62b187dee6e38827e57d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/why-monitor.dc569178a297.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/why-monitor.dc569178a297.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/why-monitor.dc569178a297.generation.json",
+      "plannedRequestSha256": "51883e1099b09a11d6a663245524a6dd9841f2a40da0809476b303a5c7379907"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A creek flows past a dairy farm, and water is sampled at three sites. Use the data to identify the most likely source of the nutrients. Then explain why dissolved oxygen is lowest at site three, not site two. Pause here to answer.",
+      "hash": "00b82c998f92",
+      "textSha256": "00b82c998f9222b125730d2cb406b41970a0e94dd435f5a7e25c34b1dd652971",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-1.00b82c998f92.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-1.00b82c998f92.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-1.00b82c998f92.generation.json",
+      "plannedRequestSha256": "d4a2b009169634ff4c3760c504a39e58775da7da6f4bfab9db69cc908cbba5e1"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Nitrate, phosphate and E. coli all jump between sites one and two, so the dairy drain is the most likely source, and the E. coli points to animal waste. Oxygen is lowest at site three because a bloom needs time. In that slow pool, algae likely grew, died and decayed, and bacteria used the oxygen. Expecting the lowest oxygen where nutrients are highest is the trap.",
+      "hash": "a37f8ea669f3",
+      "textSha256": "a37f8ea669f358925588ef685cdd59c1977c85cc2a92aace7d1cdf8568f89e63",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-1.a37f8ea669f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-1.a37f8ea669f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-1.a37f8ea669f3.generation.json",
+      "plannedRequestSha256": "d440701fbfda0a82a707db60b41ad1ddb2ff6ab942f833b66d07e5d7ec9e1f48"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A water authority wants early warning that a drinking water dam is heading toward an algal bloom. Choose one physical, one chemical and one biological parameter, and explain what each would show. Pause here to answer.",
+      "hash": "669642595a99",
+      "textSha256": "669642595a9989c5017de18f9bb7c32790075d95a7fa412d31d3b7c17b6ef005",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-2.669642595a99.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-2.669642595a99.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/attempt-2.669642595a99.generation.json",
+      "plannedRequestSha256": "49136ca14d25da140a3f1d1cf3863d39f8aacfa44fd3d4523e164265812ad2cd"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One good set: water temperature, because warm, still water favours blooms. Phosphate, because rising nutrients come before the bloom. And algal cell counts, to catch the bloom starting. Counting dead fish isn't a warning. It shows the crash has already happened.",
+      "hash": "2defc481f115",
+      "textSha256": "2defc481f11548acbd0fdc10416039f79d9e263ed983c0f155036fc91143d1a2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-2.2defc481f115.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-2.2defc481f115.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/feedback-2.2defc481f115.generation.json",
+      "plannedRequestSha256": "552d90e86bbc505170a90aca95ff72236190e9e1ddcb23b8f78f95ebe7edf752"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So, when you're asked why we monitor water, trace it from the source, through the bloom, to the oxygen crash, then choose evidence of all three kinds for the job. Next, how chemists actually measure that oxygen, and the test that forecasts how fast it'll be used up.",
+      "hash": "b5cfd4303a6c",
+      "textSha256": "b5cfd4303a6c4952da5a2fa2f0e6e0568092179d6cfc7a398c26d1920398431f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/handoff.b5cfd4303a6c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/handoff.b5cfd4303a6c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/handoff.b5cfd4303a6c.generation.json",
+      "plannedRequestSha256": "5a7e58b739aa92964e8ae768d6063e0c12fe2408cfea5e0620c08fec855d293f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C05-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

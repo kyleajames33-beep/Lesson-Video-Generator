@@ -1,0 +1,201 @@
+{
+  "id": "phys-y11-fa1-v02",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 11,
+  "lessonIntent": "*A boat points straight across a river at 3.0 m s⁻¹, but the current carries it downstream. Where does it actually go, and how fast? And how does a diagram show a resultant, or a difference?*",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (pointed across, carried down)",
+      "voiceover": {
+        "text": "Last time, four metres and three metres made five. Here's why that matters. This boat points straight across a river and motors at three metres per second. But the water's moving too. Watch where it actually goes. It lands well downstream, travelling along a slant. So where does it really go, and how fast? A diagram can answer that, and today we'll see why it works."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "opens on v01's handoff frame: the 4 m east and 3 m north arrows floating unjoined with \"?\". On the first sentence the 3 m arrow slides tip to tail onto the 4 m arrow and the navy 5 m resultant draws (a two-second recall; no labels change). Clear change to a plan view of a coded river: two banks running left to right, blue-grey water with faint flow lines drifting right, compass; the top-view boat plate (phys-y11-boat-top-v1.png) at the bottom bank, bow pointing north. On \"second\" an orange tag at the bow \"heading: 3.0 m s⁻¹ across\". On \"goes\" the boat crosses with the bow still pointing north while the flow carries it right: an amber trail draws a slant from the start pin to a landing point well downstream; a dashed grey line shows where it was aimed (straight across). On \"diagram\" the heading writes on: \"Vector diagrams: resultant and difference\", and a chip \"where, and how fast?\" moves to the top right.",
+      "sourceHeading": "1"
+    },
+    {
+      "id": "scale",
+      "title": "drawing a vector to scale",
+      "voiceover": {
+        "text": "First, a vector diagram needs a scale. That's how much real quantity each centimetre of arrow stands for. Say one centimetre stands for one metre per second. A velocity of four metres per second east is an arrow four centimetres long, pointing east. The tail is where it starts. The tip shows the direction. The same recipe works for any vector. A displacement of four metres, an acceleration of four metres per second squared: same arrow, different label and scale."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "board clears to a squared-paper strip with the compass. On \"scale\" a coded scale bar writes at the bottom left: \"scale: 1 cm = 1 m s⁻¹\" with a 1 cm tick bracket. On \"long\" an orange arrow draws east from a tail dot, a four-segment bracket counting under it \"1, 2, 3, 4 cm\"; label \"4.0 m s⁻¹ east\". On \"tail\" a PenArrow points at the tail dot (\"tail: start\"); on \"tip\" a scribble circle rings the head (\"tip (head): direction\"). On \"squared\" two more arrows of the same length draw beneath: a navy \"4 m east\" with its own scale tag \"1 cm = 1 m\", and a rose \"4.0 m s⁻² east\" with \"1 cm = 1 m s⁻²\". A grey chip \"time taken\" fades in beside the arrows and is crossed (caption \"a vector arrow shows size and direction only\").",
+      "sourceHeading": "2"
+    },
+    {
+      "id": "tip-to-tail",
+      "title": "why tip to tail: one move after another",
+      "voiceover": {
+        "text": "Now, why do we join vectors tip to tail? Think about displacements. A drone flies four metres east, then three metres north. The second move can only start where the first one ended. Drawing both arrows from the start would mean two separate trips from the start, and that isn't what happened. So we slide the second arrow until its tail sits on the first arrow's tip. The arrow keeps its length and its direction. It just moves. Then the result is one arrow from the very first tail to the very last tip. That's the resultant: the single vector with the same effect as both together. It's the trip you'd make if you flew straight there."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "plan grid (70 px per metre), drone plate on a start pin. The two arrows sit apart at first, both with tails at the start pin (4 m east, 3 m north), the way a beginner might draw them. On the third sentence a grey tag under the common-tail layout: \"two separate trips from the start?\" On \"ended\" the drone flies the 4 m leg (route tracer) and stops; the 3 m arrow lifts and slides (kit gap 1) so its tail lands on the 4 m tip, leaving a faint ghost where it was, with a tag \"same length, same direction\". On \"tip\" the drone flies the 3 m leg along the moved arrow, and a thick navy arrow draws from the start pin to the drone. On \"resultant\" it is labelled \"resultant: 5 m\" and the right column writes \"resultant: one vector with the same effect\". On the last sentence a faint dotted drone path flies straight along the resultant.",
+      "sourceHeading": "3"
+    },
+    {
+      "id": "velocities-add",
+      "title": "velocities add the same way, second by second",
+      "voiceover": {
+        "text": "Velocities add tip to tail too, and the river shows why. In each second, the boat's own motion carries it three metres across. In that same second, the water carries it four metres downstream. The boat's motion through the water hasn't changed. The water itself is moving. Both happen, so those two moves join tip to tail, and the boat ends up five metres along the slant. Next second, the same again, and again. So the boat's actual velocity is five metres per second, along that slant. That's why it lands downstream."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "back to the river plan view, the boat at the start pin. Time-tick stepping (kit gap 2) with a coded clock chip \"t = 1 s\": on \"across\" a short orange arrow \"3.0 m\" draws north from the boat; on \"downstream\" a second orange arrow \"4.0 m\" draws east from its tip (the flow lines brighten); on \"slant\" the boat moves to the end of the pair and a thick orange arrow draws from the start to it, \"5.0 m in 1 s\". On \"Next second\" the clock chip ticks \"t = 2 s\" and \"t = 3 s\": two more identical step pairs draw, each followed by its slant, so three equal slanted steps line up along the amber trail from the hook. On \"five metres per second\" the right column writes \"resultant velocity: 5.0 m s⁻¹ along the slant\". On the last sentence the hook's landing point glows at the end of the line.",
+      "sourceHeading": "4"
+    },
+    {
+      "id": "worked-boat",
+      "title": "worked example: the boat's resultant velocity",
+      "voiceover": {
+        "text": "Let's make that exact. Find the boat's resultant velocity, three point zero metres per second across, and four point zero downstream, at right angles. On a scale diagram, the resultant measures five point zero centimetres, so it's five point zero metres per second. Because the arrows meet at a right angle, Pythagoras gives the same: the square root of nine plus sixteen, five point zero. For the direction, tan inverse of four point zero over three point zero is fifty-three degrees, measured from where the boat is pointing, toward downstream. If the arrows weren't at right angles, you'd measure the resultant with a ruler and protractor instead."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "board clears to the calculation layout. Task strip: \"Find the boat's resultant velocity\"; equation strip: \"perpendicular vectors: R = √(A² + B²), θ = tan⁻¹(B/A)\"; givens group (navy): \"across (heading): 3.0 m s⁻¹\", \"current: 4.0 m s⁻¹ downstream\", \"at right angles\", \"scale 1 cm = 1 m s⁻¹\". Left: the scaled triangle (author note a): 3.0 cm orange arrow north, 4.0 cm orange arrow east from its tip, the thick resultant from first tail to last tip, a right-angle mark. On \"second\" the ruler plate (m7-ruler-clear-v1.png, scaled uniformly, rotated to lie along the resultant) slides in and its zero sits on the tail; the tip lands on the 5th centimetre tick; chip \"measured: 5.0 cm, so 5.0 m s⁻¹\". The ruler slides away. AlignedAlgebra rows: on \"zero\" \"R = √(3.0² + 4.0²) = √(9.0 + 16) = √25 = 5.0 m s⁻¹\" (grey chip \"Pythagoras\"); on \"degrees\" an angle arc draws at the tail between the heading and the resultant, and the row \"θ = tan⁻¹(4.0 / 3.0) = 53°\" writes, with the label \"53° downstream of heading\". Boxed answer: \"5.0 m s⁻¹, 53° downstream of the heading\" (grey tag \"2 significant figures, like the data\"). On the last sentence a small grey sketch of a non-right-angled pair with a protractor arc, tag \"not at right angles: measure (or use components, next video)\".",
+      "sourceHeading": "5"
+    },
+    {
+      "id": "one-line-order",
+      "title": "along one line, and in any order",
+      "voiceover": {
+        "text": "When both arrows point the same way, the sizes simply add. Point the boat downstream, and it goes three plus four, seven metres per second. Point it upstream, and the arrows face opposite ways. The water wins by one, so the boat drifts downstream at one metre per second. So adding the sizes only works when the arrows line up. And the order never matters. Add the current first, then the boat's motion, and you get exactly the same resultant."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "the board keeps the boxed answer small at the top. Below, a strip of the river. On \"downstream\" the boat plate turns to point east; orange 3.0 and 4.0 arrows join tip to tail along one line; thick resultant \"7.0 m s⁻¹ downstream\". On \"upstream\" the boat turns to point west; the 3.0 arrow points west from the 4.0 arrow's tip, overlapping it backwards; the resultant is a short arrow \"1.0 m s⁻¹ downstream\", and the boat drifts slowly right while pointing left. On \"line up\" a chip \"add sizes only along one line\" (with the scene 5 triangle ghosted beside it: \"3.0 + 4.0 ≠ 5.0\"). On \"resultant\" the scene 5 triangle returns and a second triangle draws with the 4.0 arrow first and the 3.0 arrow second: the two resultants coincide (a parallelogram outline appears), tag \"same resultant\".",
+      "sourceHeading": "6"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Now subtraction. This car turns a corner at a steady twenty metres per second. Before, its velocity points east. After, it points north. Its speed hasn't changed. So is its change in velocity zero, less than twenty, or more than twenty? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      },
+      "postResponsePaddingSeconds": 0,
+      "sourceVisual": "board clears to a plan view of a coded road corner (grey road from the left turning up), compass. The top-view blue car plate drives in heading east, rounds the corner at constant pace and leaves heading north. Two orange arrows freeze in place: \"before: 20 m s⁻¹ east\" at the entry, \"after: 20 m s⁻¹ north\" at the exit; a readout \"speed: 20 m s⁻¹\" unchanged. The three options write as chips: \"zero\", \"less than 20\", \"more than 20\". On \"think\" the 3 s Countdown runs. No Δv arrow is shown.",
+      "sourceHeading": "7"
+    },
+    {
+      "id": "subtract-flip",
+      "title": "subtract by flipping: the change in velocity",
+      "voiceover": {
+        "text": "It's more than twenty. The change in velocity is final minus initial. It's the arrow you'd have to add to the first velocity to get the second. And subtracting a vector means adding its reverse. So flip the east arrow, to point west, same length. Then join it tip to tail with the north arrow. The change is about twenty-eight metres per second, toward the north-west. Check it: start with the east arrow, add this change, and you land exactly on the north arrow. That's bigger than either velocity. Subtracting a vector doesn't make it smaller. And during the turn, the car's acceleration, on average, points the same way as this change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "sourceVisual": "the two arrows move to the arrow board, tails together at a point, with the right column: \"change in velocity: Δv = v_final − v_initial\" (grey gloss \"Δ: change in\"). On the second sentence a dashed rose arrow draws from the tip of \"before\" to the tip of \"after\", tag \"what you add to get from before to after\". On \"west\" the \"before\" arrow flips about its midpoint (kit flip) into a dashed outline, then fills: \"−v_initial: 20 m s⁻¹ west\"; the row \"Δv = v_final + (−v_initial)\" writes. On the next sentence the flipped arrow slides so its tail sits on the tip of \"after\" (or the reverse order, tip to tail), and the thick rose resultant draws from first tail to last tip: it matches the dashed arrow exactly. On \"west\" (second) the label \"Δv ≈ 28 m s⁻¹ toward the north-west\" with a grey chip \"√(20² + 20²) ≈ 28\" and a 45° arc. On \"bigger\" a chip \"subtracting makes it smaller\" fades in and is crossed (caption \"28 > 20\"). On \"Check it\" the original east arrow is redrawn from a fresh point, the Δv arrow joins at its tip, and the chain lands on the tip of a redrawn north arrow (tick). On \"change\" a rose \"average acceleration\" arrow draws beside the car's corner pointing north-west, parallel to Δv. A small grey tag: \"v_initial − v_final would point the other way\" (author note d).",
+      "sourceHeading": "8"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the rule in one line. Tip to tail, then first tail to last tip. To subtract, flip it and add. It works for displacement, velocity and acceleration, because every vector is just an arrow with a size and a direction. Just keep one quantity and one scale in each diagram. Never chain a displacement onto a velocity."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "sourceVisual": "the scene 3 drone chain, the scene 5 triangle and the scene 8 flip return as three small views in a row, labelled as named: \"tip to tail\", \"first tail to last tip\", \"flip, then add\". The handwritten line writes large: \"Tip to tail; first tail to last tip. To subtract, flip it and add.\" On \"displacement, velocity and acceleration\" three tiny arrows (navy, orange, rose) sit under it; on \"one quantity\" a grey tag \"one quantity, one scale per diagram\", and a navy arrow chained to an orange arrow is crossed. Hold about 2 seconds.",
+      "sourceHeading": "9"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A small boat heads north at two point four metres per second across a river that flows east at zero point seven zero metres per second. Using a vector diagram, find the magnitude and direction of the boat's resultant velocity. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 0,
+      "sourceVisual": "QuestionCard (subject \"Physics\"), worded as printed: \"A small boat heads north at 2.4 m s⁻¹ across a river. The river flows east at 0.70 m s⁻¹. Using a vector diagram, determine the magnitude and direction of the boat's resultant velocity.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no diagram).",
+      "sourceHeading": "10"
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Draw the two point four north, then the zero point seven zero east from its tip. They're at right angles, so the resultant is the square root of five point seven six plus zero point four nine, which is two point five metres per second. Its angle from north is tan inverse of zero point seven zero over two point four, sixteen degrees east of north. Adding the sizes, to get three point one, is the slip. The arrows don't line up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "sourceVisual": "card shrinks to the top. A small scaled diagram draws: orange \"2.4\" north, \"0.70\" east from its tip, thick resultant, right-angle mark (\"Using a vector diagram\" underlined). Rows: on \"second\" \"R = √(2.4² + 0.70²) = √(5.76 + 0.49) = √6.25 = 2.5 m s⁻¹\"; on \"north\" the arc at the tail and \"θ = tan⁻¹(0.70 / 2.4) = 16° east of north\" (\"magnitude and direction\" underlined). Boxed answer \"2.5 m s⁻¹, 16° east of north\". On \"up\" a chip \"2.4 + 0.70 = 3.1 m s⁻¹\" fades in and is crossed (caption \"perpendicular: not along one line\"). Hold about 1 second.",
+      "sourceHeading": "11"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A tennis ball rolls east at three point zero metres per second, hits a wall, and rolls back west at two point zero metres per second. Using a vector diagram, find the ball's change in velocity. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 0,
+      "sourceVisual": "QuestionCard, worded as printed: \"A tennis ball rolls east at 3.0 m s⁻¹ towards a wall. It rebounds and rolls west at 2.0 m s⁻¹. Using a vector diagram, determine the change in velocity of the ball.\" The tennis ball plate (b6a-tennis-ball-v1.png, about 90 px) sits beside a coded wall at the right of the card; no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "sourceHeading": "12"
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The change is final minus initial. So flip the three point zero east, to three point zero west, and add it to the two point zero west. Both point west, so they add: five point zero metres per second, west. One metre per second is the classic slip. Subtracting the sizes ignores that the ball turned around."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "sourceVisual": "card shrinks to the top. Row \"Δv = v_final − v_initial = v_final + (−v_initial)\" (\"change in velocity\" underlined). Arrows on one line: orange \"2.0 west\"; on \"west\" (first) the \"3.0 east\" arrow flips into \"3.0 west\" and slides to join tip to tail; on \"west\" (second) the thick rose resultant \"Δv = 5.0 m s⁻¹ west\" (row \"2.0 + 3.0 = 5.0 m s⁻¹ west\"). Boxed answer \"5.0 m s⁻¹ west\". On \"around\" a chip \"3.0 − 2.0 = 1.0 m s⁻¹\" fades in and is crossed (caption \"the direction reversed\"). Hold about 1 second.",
+      "sourceHeading": "13"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So, a vector diagram joins arrows tip to tail, and flips one to subtract. Today, two arrows at right angles became one. Next time, we'll go the other way: take one arrow at an angle, and split it into two perpendicular parts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "sourceVisual": "board clears. The memory line from scene 9 returns small at the top. On the second sentence the scene 5 triangle returns: the 3.0 and 4.0 arrows fade, leaving the thick resultant alone. On \"parts\" a new single arrow at an angle draws on light x and y axes, with two dashed perpendicular outlines along the axes and \"?\" on each, and a chip \"Next: resolving vectors into components\". Hold about 2 seconds.",
+      "sourceHeading": "14"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 55,
+      "holdKind": "notes",
+      "sourceVisual": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "sourceHeading": "15"
+    }
+  ]
+}

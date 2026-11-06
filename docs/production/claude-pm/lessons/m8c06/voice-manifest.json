@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C06-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c06/lesson.json",
+  "lessonSha256": "0df38698ef46c022de366fc0d1be219ddbbbb861ae87cae3325d10c771dc50cf",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c06/lesson.production-brief.json",
+    "sha256": "5b344d9eb19bb12569c6ae823db6db313176b3cba7b767a2f925dff4bdae3600"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee. The New South Wales Chief Scientist's review found that low dissolved oxygen was the most likely cause, and fisheries reports noted deaths around first light. A reading at noon could have looked fine. So what do dissolved oxygen and BOD tell us, and how do chemists measure them?",
+      "hash": "d05387f3a9c3",
+      "textSha256": "d05387f3a9c3f1ea47f3ff0e6009ef4e8487f40a5c07d73c0aa27495c9bbbfb0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/hook.d05387f3a9c3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/hook.d05387f3a9c3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/hook.d05387f3a9c3.generation.json",
+      "plannedRequestSha256": "1b5611c34aabcdf53c9322902bfb7223bad6ce4725aff67da9f1908c50695df4"
+    },
+    {
+      "id": "dissolved-oxygen",
+      "parentSceneId": "dissolved-oxygen",
+      "text": "Dissolved oxygen, or DO, is the oxygen gas dissolved in the water, measured in milligrams per litre. Fish and other water animals breathe it through their gills. Air-saturated fresh water at twenty degrees contains about nine milligrams per litre, and warmer water holds less. When DO falls to just a few milligrams per litre, many fish struggle.",
+      "hash": "058706b1aae0",
+      "textSha256": "058706b1aae00944fca2df268c3531353df6936d559dbcc98ad2af4101786880",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/dissolved-oxygen.058706b1aae0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/dissolved-oxygen.058706b1aae0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/dissolved-oxygen.058706b1aae0.generation.json",
+      "plannedRequestSha256": "5d80a6e7719eec04d1691c3de258ec5554e1c2aef6a4ae94bbf061354995980c"
+    },
+    {
+      "id": "snapshot",
+      "parentSceneId": "snapshot",
+      "text": "But DO changes through the day. In a lake full of algae it can be high in the afternoon and lowest at dawn, so one reading is a snapshot. A DO meter puts a probe straight into the water, gives a reading in seconds, and can log all night. Meters are calibrated and checked against a chemical method, the Winkler titration.",
+      "hash": "d111cad16111",
+      "textSha256": "d111cad161113ea331713a09c615ee719f16998f92920c698e682b16e63868df",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/snapshot.d111cad16111.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/snapshot.d111cad16111.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/snapshot.d111cad16111.generation.json",
+      "plannedRequestSha256": "8ce11bb4ccd3e949e45f4276a9cdcf3b3ee34c41072966f5fed3a591fe03fab3"
+    },
+    {
+      "id": "sampling",
+      "parentSceneId": "sampling",
+      "text": "The Winkler method starts at the river. The bottle is filled to overflowing, with no air bubbles, and stoppered. That matters, because air contains oxygen, and a single bubble would add some. Then the oxygen is fixed straight away, so it can't escape or change.",
+      "hash": "09e47c55d0b6",
+      "textSha256": "09e47c55d0b6a84a70110e135ef2486918bb6962b6d5c5e27393486210bd583b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/sampling.09e47c55d0b6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/sampling.09e47c55d0b6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/sampling.09e47c55d0b6.generation.json",
+      "plannedRequestSha256": "ea0c974367e6e1d07de20212c73f2e0ec0384fe11277cd63524b108ee85b135b"
+    },
+    {
+      "id": "winkler-fix",
+      "parentSceneId": "winkler-fix",
+      "text": "Step one. Add manganese two sulfate, then an alkaline iodide solution. A pale manganese two hydroxide forms, and the dissolved oxygen oxidises it straight away to a brown solid. Every oxygen molecule in the bottle is now locked up in that brown solid, and nothing can get in or out.",
+      "hash": "98899b20134b",
+      "textSha256": "98899b20134bad18001bfcbda7464d3c0e4a8f13885bf9da420edca606dac420",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-fix.98899b20134b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-fix.98899b20134b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-fix.98899b20134b.generation.json",
+      "plannedRequestSha256": "3210be3bbd5e3163a3bb5c5f812f7aea36fc1efc48a4fabf3c78f4baab357a59"
+    },
+    {
+      "id": "winkler-iodine",
+      "parentSceneId": "winkler-iodine",
+      "text": "Step two. Add sulfuric acid. The brown solid dissolves, and its manganese is now strong enough to oxidise iodide ions to iodine. The solution turns yellow-brown. The more oxygen there was, the more brown solid formed, and the more iodine you get.",
+      "hash": "09ac66bce78c",
+      "textSha256": "09ac66bce78c82520d4ad78706b2d5c45657e228105d821957fe01bae63ccf36",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-iodine.09ac66bce78c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-iodine.09ac66bce78c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-iodine.09ac66bce78c.generation.json",
+      "plannedRequestSha256": "15ab6ba3ae7bd967c20222348094e7e729e4f60f937543c24b574c33b1863e30"
+    },
+    {
+      "id": "winkler-titrate",
+      "parentSceneId": "winkler-titrate",
+      "text": "Step three. A measured portion goes into a flask, and sodium thiosulfate from a burette turns the iodine back into iodide. As the yellow fades to pale straw, add a little starch. It turns blue-black with iodine, and the endpoint is the moment the blue disappears. So thiosulfate never meets the oxygen itself. It measures the iodine, and the iodine stands in for the oxygen.",
+      "hash": "53a3cb865b93",
+      "textSha256": "53a3cb865b93debef43f8d6f4bce25cacf8ab40df491ed7391a4044c120dae37",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-titrate.53a3cb865b93.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-titrate.53a3cb865b93.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/winkler-titrate.53a3cb865b93.generation.json",
+      "plannedRequestSha256": "9b1328f89ac352e700c704a1e2c68e4d8762a2bb8f3ae6581aaf5385df22c954"
+    },
+    {
+      "id": "ratio",
+      "parentSceneId": "ratio",
+      "text": "So how much thiosulfate per oxygen? Follow the equations. One oxygen molecule fixes two manganese. Each manganese frees one iodine, so that's two iodine. And each iodine takes two thiosulfates, so four thiosulfates in all. One oxygen, four thiosulfates.",
+      "hash": "cc8a8be74ed7",
+      "textSha256": "cc8a8be74ed7b3c30b5d33c0da7dfb1fc3edf095ff173c9ccf271c38ac789f5b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/ratio.cc8a8be74ed7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/ratio.cc8a8be74ed7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/ratio.cc8a8be74ed7.generation.json",
+      "plannedRequestSha256": "f3c297d3e1760df42027e2e5708edac9b65e731792e63f012e67ac61b6faf8b3"
+    },
+    {
+      "id": "worked-moles",
+      "parentSceneId": "worked-moles",
+      "text": "Let's work one. A hundred millilitre sample needs eight point zero zero millilitres of point zero one zero zero molar thiosulfate. Find the dissolved oxygen in milligrams per litre. Start with the solution you know both numbers for. Moles equals c times V: point zero one zero zero times point zero zero eight zero zero litres is eight point zero zero times ten to the minus five moles of thiosulfate.",
+      "hash": "bbdcb9b412b4",
+      "textSha256": "bbdcb9b412b4599b336345de7b9ed0ee51e7ae0852d6d21fb6bb0e7957e1be0d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-moles.bbdcb9b412b4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-moles.bbdcb9b412b4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-moles.bbdcb9b412b4.generation.json",
+      "plannedRequestSha256": "e7f99eebe17f49dfdeea9b726f3c0dd17cd8e70756fba417e9f439cf854b62dd"
+    },
+    {
+      "id": "worked-mass",
+      "parentSceneId": "worked-mass",
+      "text": "Now use the ratio. Divide by four: two point zero zero times ten to the minus five moles of oxygen. Times thirty two gives six point four zero times ten to the minus four grams, which is point six four zero milligrams, all in that hundred millilitre sample.",
+      "hash": "48c416901558",
+      "textSha256": "48c416901558ea9b35b023a4e53bc9943ca578ab469e3623ad2911ce27e21a56",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-mass.48c416901558.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-mass.48c416901558.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-mass.48c416901558.generation.json",
+      "plannedRequestSha256": "89b26061c586d03e9460eb947c039c405e8752721bdcb7316a1cd0b31a9510a0"
+    },
+    {
+      "id": "worked-per-litre",
+      "parentSceneId": "worked-per-litre",
+      "text": "We want milligrams per litre, so divide by the sample's volume in litres, not by the titre. Point six four zero over point one zero zero zero is six point four zero milligrams per litre.",
+      "hash": "74bc73f6e65d",
+      "textSha256": "74bc73f6e65daa32de62cd25c1b1720c18bdc99004ae370a6556b2e717cd31fa",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-per-litre.74bc73f6e65d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-per-litre.74bc73f6e65d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/worked-per-litre.74bc73f6e65d.generation.json",
+      "plannedRequestSha256": "be3f5ef0bda3796cc4f6f48ac10e06a3bb4f195f4ceacdec9a48c59735032ac3"
+    },
+    {
+      "id": "bod-forecast",
+      "parentSceneId": "bod-forecast",
+      "text": "DO tells you the oxygen now. Biochemical oxygen demand, or BOD, measures how much oxygen microbes use in five days, under standard conditions. Fill two bottles from the same sample. Measure the DO in one straight away. Seal the other and keep it dark at twenty degrees. Sealed, so no new oxygen gets in. Dark, so algae can't make oxygen. Twenty degrees, so every lab's results compare. Then measure it again. The oxygen that's gone was used by microbes breaking down organic matter. So a high BOD means lots of oxygen used, not lots of oxygen present.",
+      "hash": "596ead248bf5",
+      "textSha256": "596ead248bf50964ab470b65a491bd0f32fe920865d260b5d9fef3b93907828e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-forecast.596ead248bf5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-forecast.596ead248bf5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-forecast.596ead248bf5.generation.json",
+      "plannedRequestSha256": "2c368a3f99acc2a9c8f3eb2032efc3f0dfde9b7206c37a9cc2ececc7364de702"
+    },
+    {
+      "id": "bod-worked",
+      "parentSceneId": "bod-worked",
+      "text": "So BOD five is the starting DO minus the DO after five days. A sample starts at eight point four, and after five days it's down to four point nine. That's a BOD of three point five milligrams per litre. Microbes in each litre used three point five milligrams of oxygen in five days, moderate on this card's teaching guide.",
+      "hash": "05cad49a9c2f",
+      "textSha256": "05cad49a9c2f3016e52f080eaf0bb68375cd62695834298ed8a61d3c9012e719",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-worked.05cad49a9c2f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-worked.05cad49a9c2f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/bod-worked.05cad49a9c2f.generation.json",
+      "plannedRequestSha256": "3f30ac493ba0612ee48b9ecea1f1ae9595dc9be918d76307a3563ce7b98893f9"
+    },
+    {
+      "id": "together-limits",
+      "parentSceneId": "together-limits",
+      "text": "Read the two together. Low DO with a high BOD means the water is short of oxygen and still losing it, which is the pattern before a fish kill. But BOD only sees what microbes can break down. BOD doesn't identify metals, pesticides or disease-causing microbes, and a poison can even stop the microbes, so the BOD reads low. A low BOD doesn't prove water is safe. And it takes five days, so for tonight, you still need the probe.",
+      "hash": "c74070210263",
+      "textSha256": "c740702102635d60420ffb3056d6f606af5336a975003fd1368310489828ad10",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/together-limits.c74070210263.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/together-limits.c74070210263.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/together-limits.c74070210263.generation.json",
+      "plannedRequestSha256": "d98770191f3f21b1be23dec1a6e96b122c7d5261ca729aaf1f2ce556a4a5d439"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two lines to keep. DO is oxygen now. BOD is oxygen used later. And for the Winkler calculation, one oxygen, four thiosulfates.",
+      "hash": "c109e47dcacc",
+      "textSha256": "c109e47dcacc0a7fa4f8d89b56718ccdd2e3ef0a8c34e2e952b1f83893ffb065",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/memory-aid.c109e47dcacc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/memory-aid.c109e47dcacc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/memory-aid.c109e47dcacc.generation.json",
+      "plannedRequestSha256": "cc424c97d94588dbc06f8a7b081c11eaf9b93870d1989511a457b97f46ffaa77"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A fifty millilitre river sample is analysed by the Winkler method, and the iodine needs ten point four zero millilitres of point zero zero five zero zero molar thiosulfate. Calculate the dissolved oxygen in milligrams per litre. Pause here to answer.",
+      "hash": "ff578f809ea1",
+      "textSha256": "ff578f809ea198b2531410f91e28042b2682f4d17911b0ab27b99bbc3da893f0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-1.ff578f809ea1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-1.ff578f809ea1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-1.ff578f809ea1.generation.json",
+      "plannedRequestSha256": "3ad6c38051e95918d5d0ffbad9f161bb70ad2767a4e871c9a0ece766b86c5dd4"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Moles of thiosulfate, c times V, is five point two zero times ten to the minus five. Divide by four for oxygen, then times thirty two: point four one six milligrams in fifty millilitres. That's eight point three two milligrams per litre. Using one to one gives thirty three, about four times the right answer. Recheck the ratio.",
+      "hash": "871caf29e6ef",
+      "textSha256": "871caf29e6ef25e7f6c7be4a71ad7d614688b2a3f290eb3b466e161a690ce430",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-1.871caf29e6ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-1.871caf29e6ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-1.871caf29e6ef.generation.json",
+      "plannedRequestSha256": "af072da3054205d55226a0d7eb54d64fe0458885bb1f4ad7b7b6823b245f6682"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Creek water is sampled above and below a food-processing plant's outlet, and each sample's oxygen is measured before and after five days. Calculate the five-day oxygen decrease for each sample, then explain what the result below the outlet suggests about the creek downstream. Pause here to answer.",
+      "hash": "0230e8dc3426",
+      "textSha256": "0230e8dc3426ea9a690998c25e4ec3c65fbb32fb4d7958fb2075d33c2942ba2b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-2.0230e8dc3426.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-2.0230e8dc3426.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/attempt-2.0230e8dc3426.generation.json",
+      "plannedRequestSha256": "879f43573c8eba476ca7853432155bc51f40427e1981e06b1d1a2e0c04a843a6"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "P's oxygen fell by point nine, and Q's by five point eight milligrams per litre. Q carries much more organic waste, so microbes will keep using oxygen as the water flows on, and DO downstream is likely to fall, especially on warm nights. Calling Q's decrease one point eight is the trap. That's the oxygen left, not the oxygen used.",
+      "hash": "3af698ff6aad",
+      "textSha256": "3af698ff6aad63d92ca83b140f6af5d567615c75880cc931064eeaa7f9e2dd03",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-2.3af698ff6aad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-2.3af698ff6aad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/feedback-2.3af698ff6aad.generation.json",
+      "plannedRequestSha256": "8406f65d1e288e635fc181464e1fc8d251d0b8e013a598eea6ec4580bbdc0575"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So DO is the oxygen in the water right now, and BOD is the oxygen used during the five-day test. Read them together, and remember what neither can see. Next, Module 8 turns to organic compounds, and the simple tests that tell their functional groups apart.",
+      "hash": "cb9875c22f0b",
+      "textSha256": "cb9875c22f0b879e4c9d01d4da53128e9ebf6c40aada1072fc22fca8038291e3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/handoff.cb9875c22f0b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/handoff.cb9875c22f0b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/handoff.cb9875c22f0b.generation.json",
+      "plannedRequestSha256": "e255881bb7717487ea391404cc96a4220360d9aa577eeb942271587328267fef"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C06-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

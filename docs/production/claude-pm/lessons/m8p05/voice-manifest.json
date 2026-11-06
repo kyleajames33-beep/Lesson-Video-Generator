@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-P05-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8p05/lesson.json",
+  "lessonSha256": "46b9c3969f043269d6a17609b176c1340b0c1c160acac4734bea90e15ebb941d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8p05/lesson.production-brief.json",
+    "sha256": "7b327bb0736619ade894b43754aeac7fe88c2c3c92f4f53c3231855054eeaa43"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Four bottles, A to D, each hold one unknown organic liquid. Your job isn't to name them. It's to say which functional groups your results support, and which ones they can't rule out. That takes three tests, the right controls beside each one, and a safe plan for the one reagent that contains chromium six.",
+      "hash": "1097cab4ca18",
+      "textSha256": "1097cab4ca18d34ccd9450ca3b6159ea850b73060811fa2259613254c09715e5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/hook.1097cab4ca18.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/hook.1097cab4ca18.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/hook.1097cab4ca18.generation.json",
+      "plannedRequestSha256": "62db8da710e7a7abbbef07139755c7cd850bb1422d8cdaa432ac8920939bcbf4"
+    },
+    {
+      "id": "aim-plan",
+      "parentSceneId": "aim-plan",
+      "text": "The aim: to test unknown organic liquids for a carbon to carbon double bond, a hydroxyl group and a carboxylic acid group. Your teacher tells you each unknown is a hydrocarbon, an alcohol or a carboxylic acid. Each unknown gets up to three tests, each on a fresh portion. You run the fizz test and the bromine water test. The dichromate test is a teacher demonstration. The independent variable is which liquid is in the tube, and the dependent variable is what you see.",
+      "hash": "2a96390a5283",
+      "textSha256": "2a96390a528329cb30130c3f429be3c7645d96ce59cf00ccce02c26a62e70b16",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/aim-plan.2a96390a5283.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/aim-plan.2a96390a5283.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/aim-plan.2a96390a5283.generation.json",
+      "plannedRequestSha256": "3504e9c13909f3ae6d9a1f8bbc9cf156e2d2b817f5ef33c32b9be2135f8c746c"
+    },
+    {
+      "id": "blank-known",
+      "parentSceneId": "blank-known",
+      "text": "Every test needs two controls beside the unknown. A blank uses distilled water instead of a sample. It should show no change, so if the blank does change, something else caused it: the tube, the water or the reagent. A known uses a liquid that has the group, like ethanoic acid for the fizz test. It shows the reagent works today, and what a positive looks like. So every row reads blank, known, unknown.",
+      "hash": "e0ab9ad9d3f0",
+      "textSha256": "e0ab9ad9d3f03e3bb08b0bf929b9cf3bbbba5d04bcc0a310f5cbdffc3f1efcd4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/blank-known.e0ab9ad9d3f0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/blank-known.e0ab9ad9d3f0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/blank-known.e0ab9ad9d3f0.generation.json",
+      "plannedRequestSha256": "3b9ff30c81a2b981502cd02116f29b7f02ea2b18f42f3d18066c7c5d6390429a"
+    },
+    {
+      "id": "bromine-recall",
+      "parentSceneId": "bromine-recall",
+      "text": "You've already run the bromine water test, so use the same method, shown on the card. Cyclohexene is the known, and it fades within seconds. Water is the blank, diluted just as much, and it stays orange.",
+      "hash": "e158df6302b8",
+      "textSha256": "e158df6302b8aa9a6672d1021ed0173a7309c25273df49508d0502e05ca34667",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/bromine-recall.e158df6302b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/bromine-recall.e158df6302b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/bromine-recall.e158df6302b8.generation.json",
+      "plannedRequestSha256": "abbcfe4e78ebdf4bb02a731baa2bc7dbd561706f98bb0a2411fd4a0af3adcea3"
+    },
+    {
+      "id": "fizz-test",
+      "parentSceneId": "fizz-test",
+      "text": "Put two millilitres of the unknown in a test tube. With the gas-collection apparatus ready, add a small spatula of solid sodium hydrogen carbonate, the way your teacher shows. The known, ethanoic acid, fizzes straight away, and the blank doesn't. The gas bubbles through limewater, and carbon dioxide turns it milky. Judge a few bubbles against the known and the blank.",
+      "hash": "6d2feaf577ed",
+      "textSha256": "6d2feaf577edd21699473cb6858a70e97a333bdf3d93affca89088b7f0fc9ba4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/fizz-test.6d2feaf577ed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/fizz-test.6d2feaf577ed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/fizz-test.6d2feaf577ed.generation.json",
+      "plannedRequestSha256": "9e48dbc384d96192644627973fa57244b63d005312beb5eadafb55160364129f"
+    },
+    {
+      "id": "dichromate-demo",
+      "parentSceneId": "dichromate-demo",
+      "text": "Now the dichromate test. Your teacher runs it in a fume cupboard, with small volumes: two millilitres of acidified potassium dichromate in each tube, and five drops of liquid. The tubes stand in a water bath at about sixty degrees, with no flame nearby. This batch holds ethanol, the known, then unknowns B and D, and water, the blank. After about five minutes, ethanol and B have turned green. D and the blank stay orange.",
+      "hash": "2c6535dfa979",
+      "textSha256": "2c6535dfa979e68a7d69a4a99377f8f6c6dece45a282f71ac51e014fe46058bd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/dichromate-demo.2c6535dfa979.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/dichromate-demo.2c6535dfa979.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/dichromate-demo.2c6535dfa979.generation.json",
+      "plannedRequestSha256": "9bef586f7b3679251b94a007547e56df6aab4e2ce9c70731b5656857bd8817f3"
+    },
+    {
+      "id": "batch-two-claims",
+      "parentSceneId": "batch-two-claims",
+      "text": "The teacher runs A the same way, with repeats of A and D, and they stay orange. C faded bromine water, and an alkene's dichromate result hasn't been checked, so C isn't tested. Green shows something was oxidised. There are no aldehydes among the unknowns, so green supports a primary or secondary alcohol. Orange means no primary or secondary alcohol was detected. It doesn't prove there's no O H group, because a tertiary alcohol stays orange too.",
+      "hash": "d38075c73d93",
+      "textSha256": "d38075c73d9398affad66146ee96572ebb56a2c4103f77192e3d4b5411904353",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/batch-two-claims.d38075c73d93.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/batch-two-claims.d38075c73d93.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/batch-two-claims.d38075c73d93.generation.json",
+      "plannedRequestSha256": "0e3a9797fb244a1be867a2f67f64dc664a1897a04c00642031e772684badb43b"
+    },
+    {
+      "id": "record",
+      "parentSceneId": "record",
+      "text": "Record as you go, in a table drawn up beforehand. One row per tube: the liquid, the reagent, what you saw, and only then, what it means. Write no visible change in full, never a blank cell, because a negative is evidence too. Record the controls as well. If a blank changed, that row can't be trusted.",
+      "hash": "2f222f52784d",
+      "textSha256": "2f222f52784d5ab5ca9c26db72195f09e25a9603b1bf74cd0009aa8d44784454",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/record.2f222f52784d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/record.2f222f52784d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/record.2f222f52784d.generation.json",
+      "plannedRequestSha256": "f5cce29e5c3a8d1b19f8f86a15021a7f5f851951f68399e3ddd39210a5d693e2"
+    },
+    {
+      "id": "claims",
+      "parentSceneId": "claims",
+      "text": "A fizzed, and its gas turned limewater milky, so a carboxylic acid is supported. C faded the bromine water, so a double bond is supported, but we can't tell about an O H group. B turned dichromate green, so a primary or secondary alcohol is supported. D changed nothing, so nothing was detected, but D could be an alkane or a tertiary alcohol. The teacher's key says D is 2-methylpropan-2-ol. Your claim still holds, because it said only what the tests could show.",
+      "hash": "4ea6f1664e7d",
+      "textSha256": "4ea6f1664e7d7e37b07c9a223aa031b60f013fa3aeb2a5430d881cfee0c509d1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/claims.4ea6f1664e7d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/claims.4ea6f1664e7d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/claims.4ea6f1664e7d.generation.json",
+      "plannedRequestSha256": "e7d5b9837626f78109c5f20f1e77be0c98fdede21157feb9e8200a510ba0f161"
+    },
+    {
+      "id": "valid-reliable-accurate",
+      "parentSceneId": "valid-reliable-accurate",
+      "text": "Now the three words from the skills video. Valid? Do the tests support the claim for these candidates? Fresh portions and clean controls rule out other causes, and the candidate list shows which reactions could interfere. Reliable? Repeat the deciding tests, like D's dichromate tube, and compare with another group. Accurate? Here the result is a claim about groups, so it's accurate when it matches the true structure. The knowns and the teacher's key show how close you got.",
+      "hash": "7e6a86af7898",
+      "textSha256": "7e6a86af7898797cfc549a7b528a662989ecbfa722801cbb5348a9ddb0518414",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/valid-reliable-accurate.7e6a86af7898.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/valid-reliable-accurate.7e6a86af7898.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/valid-reliable-accurate.7e6a86af7898.generation.json",
+      "plannedRequestSha256": "7f3d78aecfac9fc00025801be16301e0d3e377fc100ecc633b615d323c5b3ab6"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. Potassium dichromate contains chromium six: it's toxic, can cause cancer, and can trigger allergies. That's why your teacher handles it, in small volumes in a fume cupboard, with gloves and glasses, and chromium residues go into heavy-metal waste. The organic liquids are flammable, so use a water bath, never a flame. Bromine vapour irritates the eyes and lungs, so bromine water stays in the fume cupboard. Never smell an unknown to identify it. Organic residues go into the labelled organic waste, never the sink. Pause if you want to copy the full table.",
+      "hash": "aae1e6df31f6",
+      "textSha256": "aae1e6df31f6fb1301655a39ccf86cc77dd2a21e8e34ffa0722765da61be71f6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/risk.aae1e6df31f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/risk.aae1e6df31f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/risk.aae1e6df31f6.generation.json",
+      "plannedRequestSha256": "feb110295f351908c8d81d18d1ef3362ebc95459e1c2fc95a9a9c18e1c120fcb"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line for your claims: supported, not detected, can't tell. A positive with a clean blank supports a group. A negative means not detected, not absent. And when the tests can't decide, say you can't tell.",
+      "hash": "3f4d53c61184",
+      "textSha256": "3f4d53c61184910093feac83931bcb1287d83037a9338819b353094c9d0c2c8d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/memory-aid.3f4d53c61184.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/memory-aid.3f4d53c61184.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/memory-aid.3f4d53c61184.generation.json",
+      "plannedRequestSha256": "63e9ba6669f6a1eacdacc400c59c813e1a9936942036eaee952a453379de6080"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. In a demonstration, four test tubes were rinsed with ethanol to help them dry. Acidified dichromate was warmed with water, with ethanol, and with unknowns S and T. All four turned green, and a student concluded that S and T both contain a primary or secondary alcohol. Evaluate this conclusion, and propose an improvement. Pause here to answer.",
+      "hash": "49e24e3b5dc7",
+      "textSha256": "49e24e3b5dc79e8c2e798603f6caf6c137b03a0491621c03a0e4cf228fccdd23",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-1.49e24e3b5dc7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-1.49e24e3b5dc7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-1.49e24e3b5dc7.generation.json",
+      "plannedRequestSha256": "e9462985de67596b1024a2e83b869f3ff2d5fbb9392bad7166c02aaa8e73f52f"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Not valid. The water blank turned green, so something other than the samples reduced the dichromate: ethanol left from the rinse. So S and T's results can't be trusted. Rinse clean tubes with distilled water and let them dry, then repeat with a blank that stays orange. Just repeating the test is the trap: the same ethanol turns it green again.",
+      "hash": "1990dc1105ce",
+      "textSha256": "1990dc1105cee96ce6a2a871c8a0bda9c013a06465eaa98a19be11ebdab6ae93",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-1.1990dc1105ce.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-1.1990dc1105ce.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-1.1990dc1105ce.generation.json",
+      "plannedRequestSha256": "9e1093c19c5401ed91cd117705e36cfd3841b453dff84cffe7baee3669a0c7dc"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Unknown E fizzes with sodium hydrogen carbonate, and the gas turns limewater milky. It decolourises bromine water within seconds, so it's kept out of the dichromate batch. Every blank shows no change. State which groups the results support, and what you can't tell. Pause here to answer.",
+      "hash": "4f09399f954d",
+      "textSha256": "4f09399f954dbba6121e80c6ea54f19b68117647b9f4b51fe941f6fb005edb45",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-2.4f09399f954d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-2.4f09399f954d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/attempt-2.4f09399f954d.generation.json",
+      "plannedRequestSha256": "ddc7699ee6ae596fc6e06b0a6a0b406bd940cabf39ac35d6a3c2cf6b67bb536d"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The fizz and the milky limewater support a carboxylic acid. The fading bromine water supports a double bond too, because one molecule can carry both. Without a dichromate result, you can't tell whether E has an O H group. Calling it an acid and dismissing the bromine result is the slip.",
+      "hash": "43e30e985a02",
+      "textSha256": "43e30e985a02897e0f830a53288844256ae41fdfea7cb7adccc03f5581051f44",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-2.43e30e985a02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-2.43e30e985a02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/feedback-2.43e30e985a02.generation.json",
+      "plannedRequestSha256": "006c35d401be5df68621d7a966354138beffc0d23088bcd1eb36ac72f598f2f5"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, for any unknown organic liquid: three tests on fresh portions, a blank and a known beside each, observations before inferences, and only the claims your results support. Next: mass spectrometry, which weighs the molecule itself.",
+      "hash": "234759e2e10d",
+      "textSha256": "234759e2e10d17a991de9b03d9f4c45f1846dbcc510314343556b493c6f201bd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/decision-handoff.234759e2e10d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/decision-handoff.234759e2e10d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/decision-handoff.234759e2e10d.generation.json",
+      "plannedRequestSha256": "d7584e7927accc37d0dc7b748ec20914f035724e5cc381e13e323bde3799ccb2"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P05-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

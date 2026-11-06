@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8p03/measured/lesson.json",
+    "lessonSha256": "a5ae27ff88ea77d32ea53c0d859824945613e2fa76989b8d2c03cd390b1e4c81"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m8-c03a and chem-m8-c03b (see Scope); chem-m5-p03 (the well plate, black card, dropper tip above the well); skills-s07 (aim, variables, validity, reliability, accuracy; word, feature, fix); chem-m5-c13 (net ionic equations).",
+    "startsWith": "Here's a result that nearly fooled a student. She's testing unknown C for chloride. She acidifies a few drops with nitric acid, adds silver nitrate, and a faint white cloud appears. Chloride? But in the next well, she'd put plain water and the same reagents, and that well went cloudy too. If the water does it, the cloud can't prove anything about the unknown. She'd rinsed the plate with tap water, and tap water carries a little chloride. That one extra well saved her conclusion.",
+    "stopsAfter": "stating the aim and variables of a qualitative ion investigation; setting up a blank and a known for each reagent; rinsing with distilled water; running small-scale tests on a well plate with the right backgrounds; running a blank flame; recording observations before inferences; justifying each identity with an observation, an equation, what was ruled out and a matching known; stating that no visible change means not detected; judging validity, reliability and accuracy for an identity; writing the risk rows for silver nitrate, barium salts (and why lead results come as data), acids and alkali, ammonia, the hot loop, and the waste.",
+    "nextLesson": "once you know which ion is there, how much is there? (route chem-m8-c04, colour and absorption)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-p03.md"
+  ],
+  "teaching": {
+    "task": "Every well with silver nitrate went cloudy, even the one with no unknown in it. How do you plan, run and record qualitative tests so that each identity you report would stand up, and do it safely?",
+    "causalExplanation": "(1) a cloud in the blank means the reagent, water or equipment, not the unknown, caused it; tap water carries chloride (1); (2) the aim, the plan from the two flowcharts, and the variables (2); (3) blank and known, and why each is needed; one row per reagent; distilled water (3); (4) small scale: less hazardous material and waste; dropper tip above the well; backgrounds; labelled grid (4); (5) unknown C's cation tests, the blank flame, the known magnesium match (5); (6) unknown C's anion tests; the clear blank shows no chloride (6); (7) recording: observation before inference, \"no visible change\", changes with time (7); (8) justification: observation, equation, what was ruled out, the known; no visible change means not detected (8); (9) valid, reliable, accurate for an identity (9); (10) hazards and controls, waste (10); memory aid (11); attempts (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "Here's a result that nearly fooled a student. The aim: identify the cation and the anion in each of four unknown solutions, where each holds one of each from the syllabus lists. Now the controls. Run it small. Unknown C, cation first, fresh drops in each well. Then the anion, again with fresh drops. Record as you go, in a table you drew up before you started. When you report an identity, give the evidence and the chemistry. Now the three words from the practical skills video. Now the risks. One line for every reagent: blank, known, unknown. Your turn. Not valid. Last one. Calcium chloride. So, for any unknown: plan the tests from the flowcharts, run blank, known and unknown side by side at small scale, record what you see before what it means, and justify each identity with an observation and an equation.",
+    "openingDecision": "Here's a result that nearly fooled a student. She's testing unknown C for chloride. She acidifies a few drops with nitric acid, adds silver nitrate, and a faint white cloud appears. Chloride? But in the next well, she'd put plain water and the same reagents, and that well went cloudy too. If the water does it, the cloud can't prove anything about the unknown. She'd rinsed the plate with tap water, and tap water carries a little chloride. That one extra well saved her conclusion.",
+    "understandingCheck": "Two, each 10 s with the countdown and every condition visible (12, 14): A1's single loop, the water rinse, four blue-green flames and the conclusion; A2's seven results with the blank and known entries. Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p57; C8-IQ1-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:\n- cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+)\n- anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)\"\n\n(The two dashes in the first line are en dashes as printed, not em dashes.) The tests themselves were chem-m8-c03a (cations) and chem-m8-c03b (anions). This video is the investigation: planning it, running it safely at small scale, recording it and justifying the identities."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "no people, hands or faces (drops, the wire loop, wafting and rinsing are coded motion); apparatus as painted plates listed by filename, never stretched; any test tube that appears is from the aligned m5x rack set (alpha bounds 568, 200, 1432, 1800); well contents are coded fills over the painted well plate (the chem-m5-p03 method, already published); at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card in the attempts, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; real GHS classifications, schools' own risk assessments named in the footer; Australian spelling; no em dashes; conversational narration; no absolute claims (\"usually\", \"points to\", \"supports\"); optional key notes hold.",
+    "transitionPlan": "heading writes on: \"Unknown ions practical: would your answer stand up?\". the board clears. task line \"Controls\". task line \"Small scale\". task line \"Unknown C: cation\". task line \"Unknown C: anion\". the board clears. the board clears. task line \"Valid? Reliable? Accurate?\". during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Silver nitrate\" its row (a small coded brown-black stain dot on a pale swatch, no skin or hands; p03-dropper-bottle-v1. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), set as a short results table with the blank and known entries in grey brackets. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Unknown ions practical: would your answer stand up?\". p03-well-plate-black-card-v1.png at the centre. Four copies of m5x-bottle-scn-v1.png (blank labels; coded labels \"A\", \"B\", \"C\", \"D\"; uniform scale) stand small along the top. On \"unknown C\" bottle C glows; a coded drop of C falls into one well (navy outline), then coded drops \"HNO₃\" and \"AgNO₃\" (small dropper tags); on \"faint white cloud\" a coded faint white haze blooms in the well; a \"?\" chip \"chloride?\" writes. On \"plain water\" a second well (grey outline) gets coded drops; on \"too\" it blooms with the same faint haze; the \"?\" chip is struck through softly. On \"tap water\" m6-wash-bottle-v1.png appears small at the right with a coded label \"tap water\"; on \"chloride\" a small inset shows green Cl⁻ dots in a water film and grey Ag⁺ dots locking into white tiles (c03a's ion lock); tag \"tap water: a little Cl⁻\". On \"saved\" a teal chip writes under the grey well: \"the blank\" (bright). Bright at the end: the two cloudy wells, the blank chip. Hold about 1 second.",
+      "teachingReason": "Here's a result that nearly fooled a student.",
+      "narrationCue": "unknown C / faint white cloud / plain water / too / tap water / chloride / saved",
+      "motionPurpose": "heading writes on: \"Unknown ions practical: would your answer stand up?\". p03-well-plate-black-card-v1.png at the centre. Four copies of m5x-bottle-scn-v1.png (blank labels; coded labels \"A\", \"B\", \"C\", \"D\"; uniform scale) stand small along the top. On \"unknown C\" bottle C glows; a coded drop of C falls into one well (navy outline), then coded drops \"HNO₃\" and \"AgNO₃\" (small dropper tags); on \"faint white cloud\" a coded faint white haze blooms in the well; a \"?\" chip \"chloride?\" writes. On \"plain water\" a second well (grey outline) gets coded drops; on \"too\" it blooms with the same faint haze; the \"?\" chip is struck through softly. On \"tap water\" m6-wash-bottle-v1.png appears small at the right with a coded label \"tap water\"; on \"chloride\" a small inset shows green Cl⁻ dots in a water film and grey Ag⁺ dots locking into white tiles (c03a's ion lock); tag \"tap water: a little Cl⁻\". On \"saved\" a teal chip writes under the grey well: \"the blank\" (bright). Bright at the end: the two cloudy wells, the blank chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Unknown ions practical: would your answer stand up?\". p03-well-plate-black-card-v1.png at the centre. Four copies of m5x-bottle-scn-v1.png (blank labels; coded labels \"A\", \"B\", \"C\", \"D\"; uniform scale) stand small along the top. On \"unknown C\" bottle C glows; a coded drop of C falls into one well (navy outline), then coded drops \"HNO₃\" and \"AgNO₃\" (small dropper tags); on \"faint white cloud\" a coded faint white haze blooms in the well; a \"?\" chip \"chloride?\" writes. On \"plain water\" a second well (grey outline) gets coded drops; on \"too\" it blooms with the same faint haze; the \"?\" chip is struck through softly. On \"tap water\" m6-wash-bottle-v1.png appears small at the right with a coded label \"tap water\"; on \"chloride\" a small inset shows green Cl⁻ dots in a water film and grey Ag⁺ dots locking into white tiles (c03a's ion lock); tag \"tap water: a little Cl⁻\". On \"saved\" a teal chip writes under the grey well: \"the blank\" (bright). Bright at the end: the two cloudy wells, the blank chip. Hold about 1 second.",
+      "motionTools": [
+        "p03-well-plate-black-card-v1.png",
+        "m5x-bottle-scn-v1.png",
+        "m6-wash-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (the well that shouldn't go cloudy): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "aim-plan",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Aim: identify the cation and anion in A to D (one of each)\". The c03a and c03b flowcharts appear small and dim at the right edge (grey chips \"c03a: cations\", \"c03b: anions\"); a coded plan table writes beside them, its first column filling with test names in order (\"dilute HCl\", \"dilute H₂SO₄\", \"NaOH\", \"flame\", \"dilute HNO₃\", \"HNO₃ + BaCl₂\", \"HNO₃ + AgNO₃\", ...) and a second column \"if positive, means ...\" filling in grey. The variables card writes in the right zone: on \"changes\" \"Independent: the solution in the well\"; on \"variable\" \"Dependent: what you observe\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"3 drops of solution\", \"3 drops of reagent\", \"same reagent bottle\", \"same wait (read at once, and after 1 min)\", \"same background\", \"rinse with distilled water\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "teachingReason": "The aim: identify the cation and the anion in each of four unknown solutions, where each holds one of each from the syllabus lists.",
+      "narrationCue": "changes / variable / same",
+      "motionPurpose": "the board clears. Task line \"Aim: identify the cation and anion in A to D (one of each)\". The c03a and c03b flowcharts appear small and dim at the right edge (grey chips \"c03a: cations\", \"c03b: anions\"); a coded plan table writes beside them, its first column filling with test names in order (\"dilute HCl\", \"dilute H₂SO₄\", \"NaOH\", \"flame\", \"dilute HNO₃\", \"HNO₃ + BaCl₂\", \"HNO₃ + AgNO₃\", ...) and a second column \"if positive, means ...\" filling in grey. The variables card writes in the right zone: on \"changes\" \"Independent: the solution in the well\"; on \"variable\" \"Dependent: what you observe\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"3 drops of solution\", \"3 drops of reagent\", \"same reagent bottle\", \"same wait (read at once, and after 1 min)\", \"same background\", \"rinse with distilled water\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Aim: identify the cation and anion in A to D (one of each)\". The c03a and c03b flowcharts appear small and dim at the right edge (grey chips \"c03a: cations\", \"c03b: anions\"); a coded plan table writes beside them, its first column filling with test names in order (\"dilute HCl\", \"dilute H₂SO₄\", \"NaOH\", \"flame\", \"dilute HNO₃\", \"HNO₃ + BaCl₂\", \"HNO₃ + AgNO₃\", ...) and a second column \"if positive, means ...\" filling in grey. The variables card writes in the right zone: on \"changes\" \"Independent: the solution in the well\"; on \"variable\" \"Dependent: what you observe\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"3 drops of solution\", \"3 drops of reagent\", \"same reagent bottle\", \"same wait (read at once, and after 1 min)\", \"same background\", \"rinse with distilled water\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the aim and the plan: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "blank-known-unknown",
+      "visualDecision": "adjust",
+      "visualReference": "task line \"Controls\". The well plate returns; the control row draws on one row: on \"blank\" the first well gets a grey outline and the label \"blank: distilled water + reagent\" with a small \"no change expected\" tag; on \"known\" the second well a teal outline, \"known: a solution with the ion + reagent\" (grey example tag \"e.g. NaCl(aq) for Cl⁻\"); on \"unknown\" the third well a navy outline, \"unknown\"; a coded bracket joins the three: \"compare\". Under the row a grey gloss writes: \"blank = negative control; known = positive control\". On \"tap water\" the tap-water wash bottle from scene 1 is crossed; a second m6-wash-bottle-v1.png with a coded label \"distilled water\" glows (tag \"low-ion rinse water\"). Bright at the end: the three labelled wells and the distilled-water bottle. Hold about 1 second.",
+      "teachingReason": "Now the controls.",
+      "narrationCue": "blank / known / unknown / tap water",
+      "motionPurpose": "task line \"Controls\". The well plate returns; the control row draws on one row: on \"blank\" the first well gets a grey outline and the label \"blank: distilled water + reagent\" with a small \"no change expected\" tag; on \"known\" the second well a teal outline, \"known: a solution with the ion + reagent\" (grey example tag \"e.g. NaCl(aq) for Cl⁻\"); on \"unknown\" the third well a navy outline, \"unknown\"; a coded bracket joins the three: \"compare\". Under the row a grey gloss writes: \"blank = negative control; known = positive control\". On \"tap water\" the tap-water wash bottle from scene 1 is crossed; a second m6-wash-bottle-v1.png with a coded label \"distilled water\" glows (tag \"low-ion rinse water\"). Bright at the end: the three labelled wells and the distilled-water bottle. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Controls\". The well plate returns; the control row draws on one row: on \"blank\" the first well gets a grey outline and the label \"blank: distilled water + reagent\" with a small \"no change expected\" tag; on \"known\" the second well a teal outline, \"known: a solution with the ion + reagent\" (grey example tag \"e.g. NaCl(aq) for Cl⁻\"); on \"unknown\" the third well a navy outline, \"unknown\"; a coded bracket joins the three: \"compare\". Under the row a grey gloss writes: \"blank = negative control; known = positive control\". On \"tap water\" the tap-water wash bottle from scene 1 is crossed; a second m6-wash-bottle-v1.png with a coded label \"distilled water\" glows (tag \"low-ion rinse water\"). Bright at the end: the three labelled wells and the distilled-water bottle. Hold about 1 second.",
+      "motionTools": [
+        "m6-wash-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "blank, known, unknown: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "small-scale",
+      "visualDecision": "new",
+      "visualReference": "task line \"Small scale\". The well plate fills the centre; a grey chip \"Module 5 practical: well plate\" (chem-m5-p03). On \"three drops\" a coded dropper (chem-m5-p03's drop placement) puts three drops in a well and a coded counter ticks \"3\"; then three drops of reagent. A small chip \"less hazardous material, less waste\" writes (green). On \"bottle\" chem-m5-p03's dropper-tip inset: the tip held above the well with a gap and a teal tick, then a crossed variant with the tip touching the liquid (tag \"tip touches: carries solution back\"). On \"colours\" the plate cross-fades between p03-well-plate-black-card-v1.png (tag \"black card: white solids show\") and p03-well-plate-white-tile-v1.png (tag \"white tile: colours show\"); both plates share the well grid (brief 64 provenance), so the coded fills stay put. Straight after \"colours\" (no spoken cue) coded row letters and column numbers write along the plate edges, and the plan table's rows map to them. Bright at the end: the plate with its grid labels. Hold about 1 second.",
+      "teachingReason": "Run it small.",
+      "narrationCue": "three drops / bottle / colours",
+      "motionPurpose": "task line \"Small scale\". The well plate fills the centre; a grey chip \"Module 5 practical: well plate\" (chem-m5-p03). On \"three drops\" a coded dropper (chem-m5-p03's drop placement) puts three drops in a well and a coded counter ticks \"3\"; then three drops of reagent. A small chip \"less hazardous material, less waste\" writes (green). On \"bottle\" chem-m5-p03's dropper-tip inset: the tip held above the well with a gap and a teal tick, then a crossed variant with the tip touching the liquid (tag \"tip touches: carries solution back\"). On \"colours\" the plate cross-fades between p03-well-plate-black-card-v1.png (tag \"black card: white solids show\") and p03-well-plate-white-tile-v1.png (tag \"white tile: colours show\"); both plates share the well grid (brief 64 provenance), so the coded fills stay put. Straight after \"colours\" (no spoken cue) coded row letters and column numbers write along the plate edges, and the plan table's rows map to them. Bright at the end: the plate with its grid labels. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Small scale\". The well plate fills the centre; a grey chip \"Module 5 practical: well plate\" (chem-m5-p03). On \"three drops\" a coded dropper (chem-m5-p03's drop placement) puts three drops in a well and a coded counter ticks \"3\"; then three drops of reagent. A small chip \"less hazardous material, less waste\" writes (green). On \"bottle\" chem-m5-p03's dropper-tip inset: the tip held above the well with a gap and a teal tick, then a crossed variant with the tip touching the liquid (tag \"tip touches: carries solution back\"). On \"colours\" the plate cross-fades between p03-well-plate-black-card-v1.png (tag \"black card: white solids show\") and p03-well-plate-white-tile-v1.png (tag \"white tile: colours show\"); both plates share the well grid (brief 64 provenance), so the coded fills stay put. Straight after \"colours\" (no spoken cue) coded row letters and column numbers write along the plate edges, and the plan table's rows map to them. Bright at the end: the plate with its grid labels. Hold about 1 second.",
+      "motionTools": [
+        "p03-well-plate-black-card-v1.png",
+        "p03-well-plate-white-tile-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "small scale, set up safely: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "unknown-c-cation",
+      "visualDecision": "adjust",
+      "visualReference": "task line \"Unknown C: cation\". The well plate (black card) with three control rows (green, amber, blue edge stripes for the three reagents). On \"hydrochloric\" the green row's unknown well stays clear (tag \"no visible change\"); a small c03a flowchart panel (dim) lights its chloride branch; the suspect strip from c03a appears small at the top and Ag⁺ greys; Pb²⁺ greys with a tiny grey tag \"usually: dilute Pb²⁺ may pass\" (c03a's caveat). On \"sulfuric\" the amber row's unknown well stays clear; Ba²⁺ greys. On \"sodium hydroxide\" the blue row's unknown well blooms with a coded white gelatinous solid; on \"add more\" one more drop falls and it stays (tag \"stays in excess\"). On \"sample\" Mg²⁺ and Ca²⁺ glow on the suspect strip. On \"flame test\" m8-flame-test-off-v2.png appears at the left; c03a's coded loop dips into a small beaker (m6-beaker-v1.png, small, coded tag \"dilute HCl\") and moves into the flame; the burner cross-fades to the new m8-flame-blue-v2.png (Codex asset brief; aligned to the v2 flame set); on \"flame\" tag \"blank flame: no colour\" (grey outline chip). On \"Known calcium\" the loop dips into a small coded drop in a teal-outlined well (tag \"known Ca²⁺\") and returns; the burner cross-fades to m8-flame-ca-brick-red-v2.png (tag \"known Ca²⁺: brick red; the flame test works\"). On \"Clean again\" the loop dips into the acid beaker and the burner cross-fades back to m8-flame-blue-v2.png. The loop dips into a small coded drop of C and returns: the flame stays m8-flame-blue-v2.png (tag \"unknown C: no colour\"); the brick-red flame shrinks to a dimmed thumbnail beside it, and Ca²⁺ greys with a small grey tag \"not supported at this concentration\". On \"magnesium\" Mg²⁺ glows (bright); on \"same\" the blue row's teal known well (coded white solid) pulses beside the unknown well with \"=\" between them (tag \"known Mg²⁺: same\"). Bright at the end: the unknown well, the known well and Mg²⁺. Hold about 1 second.",
+      "teachingReason": "Unknown C, cation first, fresh drops in each well.",
+      "narrationCue": "hydrochloric / sulfuric / sodium hydroxide / add more / sample / flame test / flame / Known calcium / Clean again / magnesium / same",
+      "motionPurpose": "task line \"Unknown C: cation\". The well plate (black card) with three control rows (green, amber, blue edge stripes for the three reagents). On \"hydrochloric\" the green row's unknown well stays clear (tag \"no visible change\"); a small c03a flowchart panel (dim) lights its chloride branch; the suspect strip from c03a appears small at the top and Ag⁺ greys; Pb²⁺ greys with a tiny grey tag \"usually: dilute Pb²⁺ may pass\" (c03a's caveat). On \"sulfuric\" the amber row's unknown well stays clear; Ba²⁺ greys. On \"sodium hydroxide\" the blue row's unknown well blooms with a coded white gelatinous solid; on \"add more\" one more drop falls and it stays (tag \"stays in excess\"). On \"sample\" Mg²⁺ and Ca²⁺ glow on the suspect strip. On \"flame test\" m8-flame-test-off-v2.png appears at the left; c03a's coded loop dips into a small beaker (m6-beaker-v1.png, small, coded tag \"dilute HCl\") and moves into the flame; the burner cross-fades to the new m8-flame-blue-v2.png (Codex asset brief; aligned to the v2 flame set); on \"flame\" tag \"blank flame: no colour\" (grey outline chip). On \"Known calcium\" the loop dips into a small coded drop in a teal-outlined well (tag \"known Ca²⁺\") and returns; the burner cross-fades to m8-flame-ca-brick-red-v2.png (tag \"known Ca²⁺: brick red; the flame test works\"). On \"Clean again\" the loop dips into the acid beaker and the burner cross-fades back to m8-flame-blue-v2.png. The loop dips into a small coded drop of C and returns: the flame stays m8-flame-blue-v2.png (tag \"unknown C: no colour\"); the brick-red flame shrinks to a dimmed thumbnail beside it, and Ca²⁺ greys with a small grey tag \"not supported at this concentration\". On \"magnesium\" Mg²⁺ glows (bright); on \"same\" the blue row's teal known well (coded white solid) pulses beside the unknown well with \"=\" between them (tag \"known Mg²⁺: same\"). Bright at the end: the unknown well, the known well and Mg²⁺. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Unknown C: cation\". The well plate (black card) with three control rows (green, amber, blue edge stripes for the three reagents). On \"hydrochloric\" the green row's unknown well stays clear (tag \"no visible change\"); a small c03a flowchart panel (dim) lights its chloride branch; the suspect strip from c03a appears small at the top and Ag⁺ greys; Pb²⁺ greys with a tiny grey tag \"usually: dilute Pb²⁺ may pass\" (c03a's caveat). On \"sulfuric\" the amber row's unknown well stays clear; Ba²⁺ greys. On \"sodium hydroxide\" the blue row's unknown well blooms with a coded white gelatinous solid; on \"add more\" one more drop falls and it stays (tag \"stays in excess\"). On \"sample\" Mg²⁺ and Ca²⁺ glow on the suspect strip. On \"flame test\" m8-flame-test-off-v2.png appears at the left; c03a's coded loop dips into a small beaker (m6-beaker-v1.png, small, coded tag \"dilute HCl\") and moves into the flame; the burner cross-fades to the new m8-flame-blue-v2.png (Codex asset brief; aligned to the v2 flame set); on \"flame\" tag \"blank flame: no colour\" (grey outline chip). On \"Known calcium\" the loop dips into a small coded drop in a teal-outlined well (tag \"known Ca²⁺\") and returns; the burner cross-fades to m8-flame-ca-brick-red-v2.png (tag \"known Ca²⁺: brick red; the flame test works\"). On \"Clean again\" the loop dips into the acid beaker and the burner cross-fades back to m8-flame-blue-v2.png. The loop dips into a small coded drop of C and returns: the flame stays m8-flame-blue-v2.png (tag \"unknown C: no colour\"); the brick-red flame shrinks to a dimmed thumbnail beside it, and Ca²⁺ greys with a small grey tag \"not supported at this concentration\". On \"magnesium\" Mg²⁺ glows (bright); on \"same\" the blue row's teal known well (coded white solid) pulses beside the unknown well with \"=\" between them (tag \"known Mg²⁺: same\"). Bright at the end: the unknown well, the known well and Mg²⁺. Hold about 1 second.",
+      "motionTools": [
+        "m8-flame-test-off-v2.png",
+        "m6-beaker-v1.png",
+        "m8-flame-blue-v2.png",
+        "m8-flame-ca-brick-red-v2.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "unknown C: the cation: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "unknown-c-anion",
+      "visualDecision": "new",
+      "visualReference": "task line \"Unknown C: anion\". The plate shows three new control rows (orange, amber, grey-silver stripes). On \"no fizz\" the orange row's unknown well shows no coded bubbles (tag \"no effervescence\"); the anion suspect strip (c03b) appears and CO₃²⁻ greys. On \"sulfate\" the amber row's unknown well blooms white (tag \"white, stays in acid\"); the known well (teal; tag \"known: Na₂SO₄\") matches with \"=\"; SO₄²⁻ glows. On \"all\" the grey-silver row: blank well clear (grey tick), known chloride well white (teal; tag \"known: NaCl\"), unknown well clear (navy tick); the hook's cloudy wells return small, dimmed, for a moment, with tag \"tap-water rinse\" and are struck through. On the last \"sulfate\" a navy result chip writes: \"Unknown C: Mg²⁺ and SO₄²⁻ (magnesium sulfate)\" (bright). Bright at the end: the result chip and the clear silver blank. Hold about 1 second.",
+      "teachingReason": "Then the anion, again with fresh drops.",
+      "narrationCue": "no fizz / sulfate / all",
+      "motionPurpose": "task line \"Unknown C: anion\". The plate shows three new control rows (orange, amber, grey-silver stripes). On \"no fizz\" the orange row's unknown well shows no coded bubbles (tag \"no effervescence\"); the anion suspect strip (c03b) appears and CO₃²⁻ greys. On \"sulfate\" the amber row's unknown well blooms white (tag \"white, stays in acid\"); the known well (teal; tag \"known: Na₂SO₄\") matches with \"=\"; SO₄²⁻ glows. On \"all\" the grey-silver row: blank well clear (grey tick), known chloride well white (teal; tag \"known: NaCl\"), unknown well clear (navy tick); the hook's cloudy wells return small, dimmed, for a moment, with tag \"tap-water rinse\" and are struck through. On the last \"sulfate\" a navy result chip writes: \"Unknown C: Mg²⁺ and SO₄²⁻ (magnesium sulfate)\" (bright). Bright at the end: the result chip and the clear silver blank. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Unknown C: anion\". The plate shows three new control rows (orange, amber, grey-silver stripes). On \"no fizz\" the orange row's unknown well shows no coded bubbles (tag \"no effervescence\"); the anion suspect strip (c03b) appears and CO₃²⁻ greys. On \"sulfate\" the amber row's unknown well blooms white (tag \"white, stays in acid\"); the known well (teal; tag \"known: Na₂SO₄\") matches with \"=\"; SO₄²⁻ glows. On \"all\" the grey-silver row: blank well clear (grey tick), known chloride well white (teal; tag \"known: NaCl\"), unknown well clear (navy tick); the hook's cloudy wells return small, dimmed, for a moment, with tag \"tap-water rinse\" and are struck through. On the last \"sulfate\" a navy result chip writes: \"Unknown C: Mg²⁺ and SO₄²⁻ (magnesium sulfate)\" (bright). Bright at the end: the result chip and the clear silver blank. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "unknown C: the anion: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "record",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Record\". The results table writer draws in the right two thirds: columns \"Well | Solution | Reagent | Observation | Inference\". Row 1 writes on \"saw\": \"B3 | C | NaOH | white ppt; stays in excess NaOH |\"; the greyed Inference cell unlocks with a pen tick only after the Observation cell is complete, then writes \"Mg²⁺ (or conc. Ca²⁺)\". Row 2: \"A1 | C | dilute HCl | no visible change | no Ag⁺; Pb²⁺ unlikely\". Row 3 (grey example, on \"air\"): \"B4 | (another unknown) | NaOH | green ppt; brown at top after 5 min | Fe²⁺ (oxidised in air)\" with a small m8-ppt-feoh2-browning-v1.png thumbnail (m5x rack) and a grey chip \"c03a: read it at once\". After \"air\" (no spoken cue; the Revision 1 sentence that cued them was cut) the Observation column header glows (\"observation: what you saw, the evidence\"), then the Inference header (\"inference: what it means\"). Bright at the end: the two column headers. Hold about 1 second.",
+      "teachingReason": "Record as you go, in a table you drew up before you started.",
+      "narrationCue": "saw / air",
+      "motionPurpose": "the board clears. Task line \"Record\". The results table writer draws in the right two thirds: columns \"Well | Solution | Reagent | Observation | Inference\". Row 1 writes on \"saw\": \"B3 | C | NaOH | white ppt; stays in excess NaOH |\"; the greyed Inference cell unlocks with a pen tick only after the Observation cell is complete, then writes \"Mg²⁺ (or conc. Ca²⁺)\". Row 2: \"A1 | C | dilute HCl | no visible change | no Ag⁺; Pb²⁺ unlikely\". Row 3 (grey example, on \"air\"): \"B4 | (another unknown) | NaOH | green ppt; brown at top after 5 min | Fe²⁺ (oxidised in air)\" with a small m8-ppt-feoh2-browning-v1.png thumbnail (m5x rack) and a grey chip \"c03a: read it at once\". After \"air\" (no spoken cue; the Revision 1 sentence that cued them was cut) the Observation column header glows (\"observation: what you saw, the evidence\"), then the Inference header (\"inference: what it means\"). Bright at the end: the two column headers. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Record\". The results table writer draws in the right two thirds: columns \"Well | Solution | Reagent | Observation | Inference\". Row 1 writes on \"saw\": \"B3 | C | NaOH | white ppt; stays in excess NaOH |\"; the greyed Inference cell unlocks with a pen tick only after the Observation cell is complete, then writes \"Mg²⁺ (or conc. Ca²⁺)\". Row 2: \"A1 | C | dilute HCl | no visible change | no Ag⁺; Pb²⁺ unlikely\". Row 3 (grey example, on \"air\"): \"B4 | (another unknown) | NaOH | green ppt; brown at top after 5 min | Fe²⁺ (oxidised in air)\" with a small m8-ppt-feoh2-browning-v1.png thumbnail (m5x rack) and a grey chip \"c03a: read it at once\". After \"air\" (no spoken cue; the Revision 1 sentence that cued them was cut) the Observation column header glows (\"observation: what you saw, the evidence\"), then the Inference header (\"inference: what it means\"). Bright at the end: the two column headers. Hold about 1 second.",
+      "motionTools": [
+        "m8-ppt-feoh2-browning-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "record as you go: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "justify",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Justify\". The justification card draws with four slots that fill in order: \"Observation: white ppt with NaOH, stays in excess\"; on \"hydroxide\" \"Equation: Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)\" (bright); \"Ruled out: Ag⁺, Ba²⁺ (no chloride or sulfate solid); Pb²⁺ unlikely; Ca²⁺ not supported (no brick-red flame; known Ca²⁺ was brick red)\"; \"Matches known: yes (known Mg²⁺, same row)\". A small second card, dimmer, shows the same four slots for sulfate (grey: \"white ppt with BaCl₂ in acid; Ba²⁺ + SO₄²⁻ → BaSO₄(s); no fizz: not CO₃²⁻; known Na₂SO₄ matched\") to show the pattern repeats without narrating it. Grey chip \"site: screening clue, confirmatory test, defensible conclusion\". On \"detected\" a terracotta chip writes: \"no visible change = not detected (a dilute ion can slip past)\", with the c03a tag \"dilute Pb²⁺ may pass\" small beside it. Bright at the end: the equation slot and the limit chip. Hold about 2 seconds.",
+      "teachingReason": "When you report an identity, give the evidence and the chemistry.",
+      "narrationCue": "hydroxide / detected",
+      "motionPurpose": "the board clears. Task line \"Justify\". The justification card draws with four slots that fill in order: \"Observation: white ppt with NaOH, stays in excess\"; on \"hydroxide\" \"Equation: Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)\" (bright); \"Ruled out: Ag⁺, Ba²⁺ (no chloride or sulfate solid); Pb²⁺ unlikely; Ca²⁺ not supported (no brick-red flame; known Ca²⁺ was brick red)\"; \"Matches known: yes (known Mg²⁺, same row)\". A small second card, dimmer, shows the same four slots for sulfate (grey: \"white ppt with BaCl₂ in acid; Ba²⁺ + SO₄²⁻ → BaSO₄(s); no fizz: not CO₃²⁻; known Na₂SO₄ matched\") to show the pattern repeats without narrating it. Grey chip \"site: screening clue, confirmatory test, defensible conclusion\". On \"detected\" a terracotta chip writes: \"no visible change = not detected (a dilute ion can slip past)\", with the c03a tag \"dilute Pb²⁺ may pass\" small beside it. Bright at the end: the equation slot and the limit chip. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Justify\". The justification card draws with four slots that fill in order: \"Observation: white ppt with NaOH, stays in excess\"; on \"hydroxide\" \"Equation: Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)\" (bright); \"Ruled out: Ag⁺, Ba²⁺ (no chloride or sulfate solid); Pb²⁺ unlikely; Ca²⁺ not supported (no brick-red flame; known Ca²⁺ was brick red)\"; \"Matches known: yes (known Mg²⁺, same row)\". A small second card, dimmer, shows the same four slots for sulfate (grey: \"white ppt with BaCl₂ in acid; Ba²⁺ + SO₄²⁻ → BaSO₄(s); no fizz: not CO₃²⁻; known Na₂SO₄ matched\") to show the pattern repeats without narrating it. Grey chip \"site: screening clue, confirmatory test, defensible conclusion\". On \"detected\" a terracotta chip writes: \"no visible change = not detected (a dilute ion can slip past)\", with the c03a tag \"dilute Pb²⁺ may pass\" small beside it. Bright at the end: the equation slot and the limit chip. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "justify the identity: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "valid-reliable-accurate",
+      "visualDecision": "new",
+      "visualReference": "task line \"Valid? Reliable? Accurate?\". p02's three cards write one at a time in the right zone. \"Validity: does this sequence identify the intended ion?\" with four small green chips (they control interference) writing per phrase: \"HNO₃ before Ag⁺\", \"fresh drops\", \"distilled water\", \"blank clear\" (each with a thumbnail: the acid dropper tag, a new well, the distilled-water bottle, the clear grey well). The validity card dims. On \"Reliable\" \"Reliability: repeat it the same way: same observation?\" with two coded well pairs side by side (\"repeat: white, stays in excess\" twice) and a small second plate tagged \"another group\" showing the same. The card dims. On \"Accurate\" \"Accuracy: is the identity the true one?\" with the unknown and known wells and \"=\"; on \"it\" a small coded key card \"teacher's key: C = MgSO₄\" with a green tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick. Hold about 1 second.",
+      "teachingReason": "Now the three words from the practical skills video.",
+      "narrationCue": "Reliable / Accurate / it",
+      "motionPurpose": "task line \"Valid? Reliable? Accurate?\". p02's three cards write one at a time in the right zone. \"Validity: does this sequence identify the intended ion?\" with four small green chips (they control interference) writing per phrase: \"HNO₃ before Ag⁺\", \"fresh drops\", \"distilled water\", \"blank clear\" (each with a thumbnail: the acid dropper tag, a new well, the distilled-water bottle, the clear grey well). The validity card dims. On \"Reliable\" \"Reliability: repeat it the same way: same observation?\" with two coded well pairs side by side (\"repeat: white, stays in excess\" twice) and a small second plate tagged \"another group\" showing the same. The card dims. On \"Accurate\" \"Accuracy: is the identity the true one?\" with the unknown and known wells and \"=\"; on \"it\" a small coded key card \"teacher's key: C = MgSO₄\" with a green tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Valid? Reliable? Accurate?\". p02's three cards write one at a time in the right zone. \"Validity: does this sequence identify the intended ion?\" with four small green chips (they control interference) writing per phrase: \"HNO₃ before Ag⁺\", \"fresh drops\", \"distilled water\", \"blank clear\" (each with a thumbnail: the acid dropper tag, a new well, the distilled-water bottle, the clear grey well). The validity card dims. On \"Reliable\" \"Reliability: repeat it the same way: same observation?\" with two coded well pairs side by side (\"repeat: white, stays in excess\" twice) and a small second plate tagged \"another group\" showing the same. The card dims. On \"Accurate\" \"Accuracy: is the identity the true one?\" with the unknown and known wells and \"=\"; on \"it\" a small coded key card \"teacher's key: C = MgSO₄\" with a green tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "valid, reliable, accurate?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "new",
+      "visualReference": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Silver nitrate\" its row (a small coded brown-black stain dot on a pale swatch, no skin or hands; p03-dropper-bottle-v1.png small with a coded tag \"AgNO₃(aq), 0.1 mol/L\"); on \"Lead salts\" the lead row (control \"students don't handle lead; results given as data\"); on \"Barium\" the barium row (control \"teacher prepares and dispenses; drops only; gloves, glasses\"); on \"drop\" a coded drop counter \"3\" beside the plate; on \"Sodium hydroxide\" the corrosives row; on \"fume cupboard\" m7-fume-cupboard-v1.png small with a coded tag \"conc. NH₃: teacher, fume cupboard\"; on \"mat\" the hot loop row (coded loop outline on a coded heatproof mat; no hands); on \"sink\" the waste row with two copies of m5x-waste-bottle-v1.png small, coded labels \"Silver waste\" and \"Heavy-metal waste: barium\". Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full risk table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table).",
+      "teachingReason": "Now the risks.",
+      "narrationCue": "Silver nitrate / Lead salts / Barium / drop / Sodium hydroxide / fume cupboard / mat / sink",
+      "motionPurpose": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Silver nitrate\" its row (a small coded brown-black stain dot on a pale swatch, no skin or hands; p03-dropper-bottle-v1.png small with a coded tag \"AgNO₃(aq), 0.1 mol/L\"); on \"Lead salts\" the lead row (control \"students don't handle lead; results given as data\"); on \"Barium\" the barium row (control \"teacher prepares and dispenses; drops only; gloves, glasses\"); on \"drop\" a coded drop counter \"3\" beside the plate; on \"Sodium hydroxide\" the corrosives row; on \"fume cupboard\" m7-fume-cupboard-v1.png small with a coded tag \"conc. NH₃: teacher, fume cupboard\"; on \"mat\" the hot loop row (coded loop outline on a coded heatproof mat; no hands); on \"sink\" the waste row with two copies of m5x-waste-bottle-v1.png small, coded labels \"Silver waste\" and \"Heavy-metal waste: barium\". Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full risk table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table).",
+      "motionRole": "explain",
+      "onScreenChange": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Silver nitrate\" its row (a small coded brown-black stain dot on a pale swatch, no skin or hands; p03-dropper-bottle-v1.png small with a coded tag \"AgNO₃(aq), 0.1 mol/L\"); on \"Lead salts\" the lead row (control \"students don't handle lead; results given as data\"); on \"Barium\" the barium row (control \"teacher prepares and dispenses; drops only; gloves, glasses\"); on \"drop\" a coded drop counter \"3\" beside the plate; on \"Sodium hydroxide\" the corrosives row; on \"fume cupboard\" m7-fume-cupboard-v1.png small with a coded tag \"conc. NH₃: teacher, fume cupboard\"; on \"mat\" the hot loop row (coded loop outline on a coded heatproof mat; no hands); on \"sink\" the waste row with two copies of m5x-waste-bottle-v1.png small, coded labels \"Silver waste\" and \"Heavy-metal waste: barium\". Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full risk table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 5 is a summary of it, not the table).",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "m7-fume-cupboard-v1.png",
+        "m5x-waste-bottle-v1.png",
+        "m5x-safety-glasses-v1.png",
+        "m5x-gloves-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the risk assessment: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Handwritten line: \"Blank, known, unknown.\" Under it the control row from scene 3 returns: on \"adds nothing\" the grey well pulses (tag \"nothing added\"); on \"positive\" the teal well pulses; on \"both\" two coded arrows run from the navy well to the other two. A small grey second line: \"Observe first, then infer.\" Hold about 2 seconds.",
+      "teachingReason": "One line for every reagent: blank, known, unknown.",
+      "narrationCue": "adds nothing / positive / both",
+      "motionPurpose": "the board clears. Handwritten line: \"Blank, known, unknown.\" Under it the control row from scene 3 returns: on \"adds nothing\" the grey well pulses (tag \"nothing added\"); on \"positive\" the teal well pulses; on \"both\" two coded arrows run from the navy well to the other two. A small grey second line: \"Observe first, then infer.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Blank, known, unknown.\" Under it the control row from scene 3 returns: on \"adds nothing\" the grey well pulses (tag \"nothing added\"); on \"positive\" the teal well pulses; on \"both\" two coded arrows run from the navy well to the other two. A small grey second line: \"Observe first, then infer.\" Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-flame-cu-blue-green-v2.png thumbnails in a row at the right, numbered 1 to 4 (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-flame-cu-blue-green-v2.png thumbnails in a row at the right, numbered 1 to 4 (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-flame-cu-blue-green-v2.png thumbnails in a row at the right, numbered 1 to 4 (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m8-flame-cu-blue-green-v2.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"loop\" \"one nichrome wire loop\" and \"rinses the loop in distilled water\" are underlined; a coded copper tint clings to the loop outline, and arrows carry it from flame 1 to flames 2, 3 and 4 (tag \"carry-over\"). FixRail small: \"Word: validity\"; \"Feature: one loop, rinsed only in water\". On \"flame\" \"all four ... copper(II) ions\" is underlined. On \"hydrochloric\" the FixRail's \"Fix\" lights: \"clean in dilute HCl, heat until no colour (blank flame), before each sample\"; the burner cross-fades to m8-flame-blue-v2.png (tag \"blank flame\"). On \"hydroxide\" \"propose one improvement\" is underlined and m5x-ppt-cuoh2-blue-v1.png appears small (tag \"confirm: pale blue Cu(OH)₂\"). On \"result\" a chip \"repeat the flame tests\" fades in and is crossed (caption \"same dirty loop, same result\"). Hold about 1 second.",
+      "teachingReason": "Not valid.",
+      "narrationCue": "loop / flame / hydrochloric / hydroxide / result",
+      "motionPurpose": "the card stays, shrunk to the top. On \"loop\" \"one nichrome wire loop\" and \"rinses the loop in distilled water\" are underlined; a coded copper tint clings to the loop outline, and arrows carry it from flame 1 to flames 2, 3 and 4 (tag \"carry-over\"). FixRail small: \"Word: validity\"; \"Feature: one loop, rinsed only in water\". On \"flame\" \"all four ... copper(II) ions\" is underlined. On \"hydrochloric\" the FixRail's \"Fix\" lights: \"clean in dilute HCl, heat until no colour (blank flame), before each sample\"; the burner cross-fades to m8-flame-blue-v2.png (tag \"blank flame\"). On \"hydroxide\" \"propose one improvement\" is underlined and m5x-ppt-cuoh2-blue-v1.png appears small (tag \"confirm: pale blue Cu(OH)₂\"). On \"result\" a chip \"repeat the flame tests\" fades in and is crossed (caption \"same dirty loop, same result\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"loop\" \"one nichrome wire loop\" and \"rinses the loop in distilled water\" are underlined; a coded copper tint clings to the loop outline, and arrows carry it from flame 1 to flames 2, 3 and 4 (tag \"carry-over\"). FixRail small: \"Word: validity\"; \"Feature: one loop, rinsed only in water\". On \"flame\" \"all four ... copper(II) ions\" is underlined. On \"hydrochloric\" the FixRail's \"Fix\" lights: \"clean in dilute HCl, heat until no colour (blank flame), before each sample\"; the burner cross-fades to m8-flame-blue-v2.png (tag \"blank flame\"). On \"hydroxide\" \"propose one improvement\" is underlined and m5x-ppt-cuoh2-blue-v1.png appears small (tag \"confirm: pale blue Cu(OH)₂\"). On \"result\" a chip \"repeat the flame tests\" fades in and is crossed (caption \"same dirty loop, same result\"). Hold about 1 second.",
+      "motionTools": [
+        "m8-flame-blue-v2.png",
+        "m5x-ppt-cuoh2-blue-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), set as a short results table with the blank and known entries in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flame plates, no flowcharts).",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), set as a short results table with the blank and known entries in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flame plates, no flowcharts).",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), set as a short results table with the blank and known entries in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flame plates, no flowcharts).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"calcium\" \"Dilute H₂SO₄: white precipitate\" and \"brick-red flame (... known Ca²⁺: brick-red)\" are underlined; a justification card writes small: \"Ca²⁺: white sulfate → Ba²⁺ or Ca²⁺; brick-red flame = known Ca²⁺ (Ba²⁺ pale green)\". On \"chloride\" \"white precipitate that dissolved in dilute ammonia\" and \"(blank: no visible change)\" are underlined; \"no effervescence\" and \"no visible change\" (BaCl₂) are underlined faintly (tag \"not CO₃²⁻, not SO₄²⁻\"); the line \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" writes (bright). On \"slip\" a chip \"Cl⁻: tested with silver nitrate\" fades in and is crossed (caption \"name the observation, not just the reagent\"). Hold about 1 second.",
+      "teachingReason": "Calcium chloride.",
+      "narrationCue": "calcium / chloride / slip",
+      "motionPurpose": "the card stays, shrunk to the top. On \"calcium\" \"Dilute H₂SO₄: white precipitate\" and \"brick-red flame (... known Ca²⁺: brick-red)\" are underlined; a justification card writes small: \"Ca²⁺: white sulfate → Ba²⁺ or Ca²⁺; brick-red flame = known Ca²⁺ (Ba²⁺ pale green)\". On \"chloride\" \"white precipitate that dissolved in dilute ammonia\" and \"(blank: no visible change)\" are underlined; \"no effervescence\" and \"no visible change\" (BaCl₂) are underlined faintly (tag \"not CO₃²⁻, not SO₄²⁻\"); the line \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" writes (bright). On \"slip\" a chip \"Cl⁻: tested with silver nitrate\" fades in and is crossed (caption \"name the observation, not just the reagent\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"calcium\" \"Dilute H₂SO₄: white precipitate\" and \"brick-red flame (... known Ca²⁺: brick-red)\" are underlined; a justification card writes small: \"Ca²⁺: white sulfate → Ba²⁺ or Ca²⁺; brick-red flame = known Ca²⁺ (Ba²⁺ pale green)\". On \"chloride\" \"white precipitate that dissolved in dilute ammonia\" and \"(blank: no visible change)\" are underlined; \"no effervescence\" and \"no visible change\" (BaCl₂) are underlined faintly (tag \"not CO₃²⁻, not SO₄²⁻\"); the line \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" writes (bright). On \"slip\" a chip \"Cl⁻: tested with silver nitrate\" fades in and is crossed (caption \"name the observation, not just the reagent\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. A four-row decision card lights on cue: \"Plan: tests in order from the two flowcharts\"; \"Run: blank, known, unknown; 3 drops; distilled water\"; \"Record: observation, then inference\"; \"Justify: observation + equation + ruled out + known\". On \"Next\" the unknown C bottle returns with tag \"Mg²⁺, SO₄²⁻ ... how much?\" and a chip \"Next: colour and absorption measure concentration\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, for any unknown: plan the tests from the flowcharts, run blank, known and unknown side by side at small scale, record what you see before what it means, and justify each identity with an observation and an equation.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A four-row decision card lights on cue: \"Plan: tests in order from the two flowcharts\"; \"Run: blank, known, unknown; 3 drops; distilled water\"; \"Record: observation, then inference\"; \"Justify: observation + equation + ruled out + known\". On \"Next\" the unknown C bottle returns with tag \"Mg²⁺, SO₄²⁻ ... how much?\" and a chip \"Next: colour and absorption measure concentration\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-row decision card lights on cue: \"Plan: tests in order from the two flowcharts\"; \"Run: blank, known, unknown; 3 drops; distilled water\"; \"Record: observation, then inference\"; \"Justify: observation + equation + ruled out + known\". On \"Next\" the unknown C bottle returns with tag \"Mg²⁺, SO₄²⁻ ... how much?\" and a chip \"Next: colour and absorption measure concentration\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p03-learning-review.md",
+      "sha256": "bcbaa8213b2d71abcc76bfa5b20b98b017b983df1ef29567a7d49b768cb88a05"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p03-claude-science-check.md",
+      "sha256": "2a8c115c3d3fbdaeb9d20b980840e1e40b3d2f396725e59597c32e8394fe9bbe"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

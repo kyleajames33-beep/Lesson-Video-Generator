@@ -1,0 +1,35 @@
+# m-a12d01 Revision 5 maths and anchor check
+
+Independent reviewer: Codex, 6 November 2026. Written Revision 5 including the four Root decisions after the kit pilot. Source SHA-256: `edb2b1c3d6a86fccf3bc22067b47126f33a593ff32ac1944f3c150e3e7f1e1f5`. No design, narration, lesson or maths-kit edits. Existing reference plates and placeholders inspected in `work/brief195/reference-sheet.png`. No d01 playback, new artwork, voice or render inspected. Human listening remains pending.
+
+SymPy differentiation and independent numerical calculations are in `work/brief195/calculations.json`. They confirm the general derivative, both worked examples and both attempts. f prime(-3)=10 for 5e^(2x+6); the attempt answers are 8 and -6. The matched-height values e, 2e, 3e, e/2 and -2e round to 2.72, 5.44, 8.15, 1.36 and -5.44. All tangent equations, the example-2 y=12 clipping point (-2.5623), and the doubling times 41.59 and 20.79 minutes agree. The handoff identity is 2^x=e^(x ln 2).
+
+Horizontal scaling maps a point x0 to x0/a and tangent runs to run/a while leaving rises unchanged. Reflection therefore changes the signed slope for negative a. A rigid horizontal slide preserves the slope at the corresponding moved point. Multiplying heights by k multiplies slopes by k. The chain-rule proof is complete and retains u=ax+b. The derivative identity y prime=a y is valid including k=0; division by y needs nonzero k.
+
+## Findings
+
+- **195-1, should fix: Scene 11 narration and card; scene 6 heading and repeated slide summaries.** The unqualified statements that b does not change the slopes and the slide changes nothing can mean the slope at the same x is unchanged. At x=0, exp(x) has gradient 1 and exp(x+1) has gradient e. The corresponding moved tangent keeps its slope, and b adds no extra multiplier. The earlier Revision 1 learning review already found this distinction; Revision 5 reintroduces the wording. Keep the moved-point comparison from scene 6. Use the no-extra-factor wording already present in the proof and key notes in the memory card and spoken summary.
+
+- **195-2, should fix: Scene 17 negative-a bullet; Decisions general-family claims; Memory aid check.** After introducing unrestricted k in y=k exp(ax+b), the note says negative a gives negative gradient while y stays positive. Counterexample: y=-exp(-2x) has a=-2, y(0)=-1 and y prime(0)=2. The positive exponential and positive-k flask examples are correct. The general ratio y prime/y also needs nonzero k. State the sign note for exp(ax+b), or explicitly retain positive k for that note and the count analogy. Keep the derivative formula valid for every constant k. Put the nonzero-k condition beside the author-note division, not as an unrelated learner caveat.
+
+- **195-3, should fix: Scene 5, half-rate slider to mirror transition.** The last narrated slider value is one half. The next spoken instruction is to flip the sign to minus two. The visual silently returns the slider to two before reflecting. A learner cannot get minus two by flipping the sign of the preceding one half, and the unspoken reset changes the slope before the promised same-steepness reflection. Give the return to two a short explicit cue, or make the reflection start from the value the narration has just established. Root decisions 1 and 2 already fix window clipping and the readouts during the mirror; retain those.
+
+- **195-4, should fix: Scene list and build ids, Review evidence paths.** The design still points learning_review at the old generic m-a12d01-learning-review.md (Revision 1), and science_check at a generic maths-check path. Brief 195 explicitly requires new rev5 reports. A build following those fields would not use this revision review. Point the two review fields to m-a12d01-rev5-learning-review.md and m-a12d01-rev5-maths-check.md when integrating the findings.
+
+- **195-5, optional: YouTube metadata title length annotation.** The title has 81 characters, not the stated 82. It remains below YouTube's limit. Correct the author count when next editing metadata.
+
+## Biology and scope
+
+Binary fission and proportional population growth are appropriate for a well-mixed broth culture in exponential growth. The design keeps the necessary limitation, while food lasts, in learner copy and the other idealising assumptions in author notes. With x measured in hours and y in millions, the first model's numerical count and rate agree; they still have different units, which are shown. The doubling times follow ln(2)/r and are plausible for the two chosen rates. The microscope field is a sample, not a literal census of millions. The disinfectant clause is an acceptable short picture of declining viable count; it does not claim a rate for a named disinfectant. There is no need to add more biology caveats.
+
+The source is the official [NESA differential-calculus content](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4d003480), read on 6 November, and the route's original MathML. Both quoted content actions are correctly linearised and keep the nonzero-a condition in the second action. The course is the 2024 Year 12 syllabus. The Year 11 chips identify prerequisite knowledge and do not copy a site module label. Biology was cross-checked against the exponential-growth treatment in [Bacterial growth: a statistical physicist's guide](https://pmc.ncbi.nlm.nih.gov/articles/PMC6330087/) (indexed result available; direct page presented a browser check) and the publisher's [How Microbes Grow](https://openstax.org/books/microbiology/pages/9-1-how-microbes-grow).
+
+## Mechanical checks and handoff
+
+`mechanical-audit.json` records all 17 scenes and every bold cue quoted in visual order. The stated per-scene counts match exactly and sum to 6,528. Joining the scenes with 16 spaces gives 6,544; that is a different convention, not a source-count error. No U+2014 or U+2061 found. The 562-second scene estimate is internally consistent; actual voiced timing is pending. Both tasks are original author questions rather than presented as NESA items; no external source for either task is claimed.
+
+Root decision 1 expands scene 5's graph to x=-2.5..4.5 and y=0..9, which accommodates the half-rate point and triangle. Root decision 2 dims readouts during the mirror. Root decision 3 supersedes the two conical-flask requests with the existing clear/cloudy straight-neck pair, so only three new plates remain. No new flask plates should be made. The existing cell placeholders are pale and the dividing placeholder is two separate cells; they do not satisfy the new pre-separation sprite brief.
+
+The design's asset brief says to paint after the learning review and maths check pass. These reports have unresolved should-fix findings, so the three new plates remain pending that pass. Provenance records requests only, with no generated-image or visual-QA claim. No speech, maths build or d01 render performed. Claude owns integration and the pilot.
+
+Result: 0 blockers, 4 should fix, 1 optional. No arithmetic error found. Not a recording or painting pass while the findings remain open.

@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b09/lesson.json",
+    "lessonSha256": "f92ec2f6f13914ba77d4ba1fa3f6cef516b2455e0532ac9bc53fdbfbd74ba34b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "See the Scope paragraph. Not assumed: cell cycle (as a term), checkpoint, p53, apoptosis, proto-oncogene, oncogene, tumour suppressor gene, melanocyte, tumour (b06 used the word with a short meaning; re-glossed), benign, malignant, basement membrane, metastasis, secondary tumour, lymph vessel (Year 11 knowledge is thin; glossed on screen).",
+    "startsWith": "Every day, your body makes huge numbers of new cells by mitosis, and each time DNA is copied, a few changes can slip through. So most of us carry cells with changed DNA. Yet most of those cells never become cancer. Why not? And when one does, how does it spread? That's today's question: how does cancer begin and spread?",
+    "stopsAfter": "saying that a cancer cell still divides by mitosis and that the main failure is control of when it divides; describing the cell cycle as grow, copy DNA, get ready, divide, with checkpoints that check it is safe to go on (the one before DNA copying asks about cell size, a signal to divide and DNA damage; the spindle checkpoint recalled); explaining how p53 responds to DNA damage by stopping the cycle for repair or triggering apoptosis, that many mutations don't affect the genes that control division, and why most changed cells therefore never become cancer; explaining that cancer usually needs several mutations in one cell line, each giving its cells a small advantage, so it usually takes years and becomes more common with age; explaining proto-oncogenes (normal accelerators) mutated into oncogenes that signal division with no outside signal, with one mutated copy enough; explaining tumour suppressor genes (brakes: stop division, repair DNA, trigger apoptosis) that usually need both copies lost, and why an inherited faulty copy raises risk without making cancer certain; explaining UV as a named environmental risk for melanoma (DNA damage in melanocytes, an accelerator such as BRAF stuck on, brakes lost, a tumour); distinguishing benign (stays where it started) from malignant (breaks through the basement membrane and invades); describing metastasis as detach, enter a lymph or blood vessel, survive, leave and grow a secondary tumour, usually first in a nearby lymph node for melanoma; explaining why spread causes most cancer deaths and why early removal matters; applying the gene ideas and invasion to two unseen cases.",
+    "nextLesson": "how common is a disease, and how do we measure it: incidence, prevalence and mortality (bio-m8-b10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b09.md"
+  ],
+  "teaching": {
+    "task": "Every day your body makes huge numbers of new cells, and copying DNA lets a few changes slip through, yet most changed cells never become cancer. How does cancer begin, and how does it spread?",
+    "causalExplanation": "Start with what you know. Before mitosis, a cell copies its DNA. Mitosis separates the chromosome copies into two nuclei. A cancer cell still divides by mitosis. The main problem isn't how it divides, but when. Healthy cells divide when the body needs them, like when a graze heals. A cancer cell keeps dividing when it should stop. A cell's life runs in a loop called the cell cycle. It grows, copies its DNA, gets ready, then divides. Along the loop sit checkpoints, stops where the cell checks that it's safe to go on. You've met one: before the copies separate, the cell waits until every chromosome is attached to fibres from both poles. Another comes before the DNA is copied. It asks: is the cell big enough, is there a signal to divide, and is the DNA undamaged? At that checkpoint, a protein called p53 responds to DNA damage. It stops the cycle, so repair enzymes can fix the damage. If the damage is too great, p53 triggers apoptosis: the cell destroys itself in a controlled way. And many mutations that do slip through don't affect the genes that control division. That's the first answer. Cancer usually needs several changes that defeat those controls.",
+    "conversationalApproach": "Every day, your body makes huge numbers of new cells by mitosis, and each time DNA is copied, a few changes can slip through. Start with what you know. A cell's life runs in a loop called the cell cycle. At that checkpoint, a protein called p53 responds to DNA damage. Those changes usually build up in the same line of cells. Which genes? Two kinds control division. The other kind are tumour suppressor genes, the brakes. Now a real case. Compare that with a benign mole. Spreading to a new site is called metastasis, and it takes several steps. That's why metastasis causes most cancer deaths. Two exam questions. Cell A. Second. Losing p53 weakens a key DNA-damage checkpoint. So for any cancer question, follow the chain: mutations build up, a control breaks, an accelerator stuck on or a brake lost, then division without stopping, a tumour, and, if it's malignant, invasion and spread.",
+    "openingDecision": "Every day, your body makes huge numbers of new cells by mitosis, and each time DNA is copied, a few changes can slip through. So most of us carry cells with changed DNA. Yet most of those cells never become cancer. Why not? And when one does, how does it spread? That's today's question: how does cancer begin and spread?",
+    "understandingCheck": "Two exam questions. First. Cell A has an activating mutation that keeps one copy of a proto-oncogene switched on. Cell B has a mutation that stops one copy of a tumour suppressor gene working, and one normal copy is enough for that gene's job. Every other copy is normal. Predict which cell is more likely to divide without a growth signal, and explain your prediction. Pause here to answer. Second. Some types of human papillomavirus, or HPV, infect cells lining the cervix. One viral protein, called E6, causes the cell to destroy its p53. Explain how this infection can increase the risk of cancer. Then explain why a growth that hasn't crossed the basement membrane is unlikely to have spread. Pause here to answer.",
+    "curriculumScope": "B8-IQ2-01 (p 57): \"investigate the causes and effects of non-infectious diseases in humans, including but not limited to:\" with the listed example \"cancer\". Causes: scenes 3 to 8 (control genes, mutation build-up, UV). Effects: scenes 8 to 11 (tumour, invasion, metastasis, why spread kills). Inquiry question: \"Do non-infectious diseases cause more deaths than infectious diseases?\" (not answered here; b10 and g01 use death data)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One coded cause chain owns the bottom fifth from scene 5 to scene 11: five linked boxes, \"mutations build up\" → \"control lost\" → \"divides without stopping\" → \"tumour\" → \"invades and spreads\", each lighting on its cue with a small thumbnail; the decision rule replays it. Upper area: one painted plate or matched set at a time, with callouts. The cycle ring (coded: a loop with four stations and three gate marks) sits at the upper left from scene 3 to scene 7, each station holding a small cd- plate thumbnail. Chromosomes are seen only where the cd- plates paint them; DNA damage is shown as small coded amber sparks on the nucleus envelope of cd-interphase-v1.png, never as bars or strands drawn over the cell. No people, hands or faces at any point. At most three bright text items; earlier labels dim to grey.",
+    "transitionPlan": "no people. the honeycomb clears. the CycleRing draws at the centre, large: four stations, each with a small painted thumbnail: \"grow\" (cd-interphase-v1. the ring shrinks to the upper left (it stays there to scene 7). the board clears above the bottom fifth. the tree dims. the right pedal \"brake\" lights. the pedals shrink to a small icon at the upper right. the melanoma block slides to the right and stays there. the mole leaves. the five-box chain enlarges to the middle. the board clears. the card stays. the board clears. the card stays. the CauseChain5 returns full width; the pedal icon sits above box 2 with two small labels \"accelerator stuck\" and \"brake lost\". > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no people. Centre: cd-interphase-v1.png at medium size. On \"makes huge numbers of new cells by mitosis\" it cross-fades through cd-metaphase-v1.png to cd-daughters-v1.png, and the two daughters shrink and multiply into a coded honeycomb of small cell outlines filling the frame (abstract tissue). On \"a few changes can slip through\" three scattered outlines gain a tiny amber spark (label \"changed DNA\"). On \"most of those cells never become cancer\" two sparks fade to grey with a small tick (label \"most: no cancer\"); one stays amber and pulses. On \"how does it spread\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png appear at the right edge, joined to the amber cell by a faint dashed arrow. On the question the heading writes: \"How does cancer begin and spread?\" At most three bright text items. Hold one second.",
+      "teachingReason": "Every day, your body makes huge numbers of new cells by mitosis, and each time DNA is copied, a few changes can slip through.",
+      "narrationCue": "makes huge numbers of new cells by mitosis / a few changes can slip through / most of those cells never become cancer / how does it spread",
+      "motionPurpose": "no people. Centre: cd-interphase-v1.png at medium size. On \"makes huge numbers of new cells by mitosis\" it cross-fades through cd-metaphase-v1.png to cd-daughters-v1.png, and the two daughters shrink and multiply into a coded honeycomb of small cell outlines filling the frame (abstract tissue). On \"a few changes can slip through\" three scattered outlines gain a tiny amber spark (label \"changed DNA\"). On \"most of those cells never become cancer\" two sparks fade to grey with a small tick (label \"most: no cancer\"); one stays amber and pulses. On \"how does it spread\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png appear at the right edge, joined to the amber cell by a faint dashed arrow. On the question the heading writes: \"How does cancer begin and spread?\" At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Centre: cd-interphase-v1.png at medium size. On \"makes huge numbers of new cells by mitosis\" it cross-fades through cd-metaphase-v1.png to cd-daughters-v1.png, and the two daughters shrink and multiply into a coded honeycomb of small cell outlines filling the frame (abstract tissue). On \"a few changes can slip through\" three scattered outlines gain a tiny amber spark (label \"changed DNA\"). On \"most of those cells never become cancer\" two sparks fade to grey with a small tick (label \"most: no cancer\"); one stays amber and pulses. On \"how does it spread\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png appear at the right edge, joined to the amber cell by a faint dashed arrow. On the question the heading writes: \"How does cancer begin and spread?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "cd-interphase-v1.png",
+        "cd-metaphase-v1.png",
+        "cd-daughters-v1.png",
+        "m8-lungs-healthy-v1.png",
+        "m8-liver-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (most changed cells never become cancer): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "mitosis-without-control",
+      "visualDecision": "new",
+      "visualReference": "the honeycomb clears. A row of four painted stage plates writes across the middle, one per cue: cd-interphase-v1.png (\"DNA copied first\", on \"Before mitosis\"), cd-metaphase-v1.png (\"lines up\"), cd-anaphase-v1.png (\"copies separate\"), cd-daughters-v1.png (\"two nuclei\"); grey tag \"Module 5: mitosis\". The chromosomes are the painted ones; nothing is drawn over them. On \"still divides by mitosis\" the row dims and a grey label writes under it: \"same process\". On \"when\" a large handwritten word writes: \"when?\" (bright). On \"a graze heals\" b5a-skin-graze-v1.png appears small at the left and cross-fades to b5a-skin-healed-v1.png (label \"divide, then stop\"). On \"keeps dividing when it should stop\" a small coded counter beside a cd-daughters-v1.png thumbnail keeps ticking up past a dashed \"stop\" line (label \"doesn't stop\"). At most three bright items. Hold one second.",
+      "teachingReason": "Start with what you know.",
+      "narrationCue": "Before mitosis / still divides by mitosis / when / a graze heals / keeps dividing when it should stop",
+      "motionPurpose": "the honeycomb clears. A row of four painted stage plates writes across the middle, one per cue: cd-interphase-v1.png (\"DNA copied first\", on \"Before mitosis\"), cd-metaphase-v1.png (\"lines up\"), cd-anaphase-v1.png (\"copies separate\"), cd-daughters-v1.png (\"two nuclei\"); grey tag \"Module 5: mitosis\". The chromosomes are the painted ones; nothing is drawn over them. On \"still divides by mitosis\" the row dims and a grey label writes under it: \"same process\". On \"when\" a large handwritten word writes: \"when?\" (bright). On \"a graze heals\" b5a-skin-graze-v1.png appears small at the left and cross-fades to b5a-skin-healed-v1.png (label \"divide, then stop\"). On \"keeps dividing when it should stop\" a small coded counter beside a cd-daughters-v1.png thumbnail keeps ticking up past a dashed \"stop\" line (label \"doesn't stop\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the honeycomb clears. A row of four painted stage plates writes across the middle, one per cue: cd-interphase-v1.png (\"DNA copied first\", on \"Before mitosis\"), cd-metaphase-v1.png (\"lines up\"), cd-anaphase-v1.png (\"copies separate\"), cd-daughters-v1.png (\"two nuclei\"); grey tag \"Module 5: mitosis\". The chromosomes are the painted ones; nothing is drawn over them. On \"still divides by mitosis\" the row dims and a grey label writes under it: \"same process\". On \"when\" a large handwritten word writes: \"when?\" (bright). On \"a graze heals\" b5a-skin-graze-v1.png appears small at the left and cross-fades to b5a-skin-healed-v1.png (label \"divide, then stop\"). On \"keeps dividing when it should stop\" a small coded counter beside a cd-daughters-v1.png thumbnail keeps ticking up past a dashed \"stop\" line (label \"doesn't stop\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "cd-interphase-v1.png",
+        "cd-metaphase-v1.png",
+        "cd-anaphase-v1.png",
+        "cd-daughters-v1.png",
+        "b5a-skin-graze-v1.png",
+        "b5a-skin-healed-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "cancer is mitosis without control: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cell-cycle-checkpoints",
+      "visualDecision": "new",
+      "visualReference": "the CycleRing draws at the centre, large: four stations, each with a small painted thumbnail: \"grow\" (cd-interphase-v1.png), \"copy DNA\" (cd-interphase-v1.png, grey tag \"S\"), \"get ready\" (cd-interphase-v1.png, grey tag \"G2\"), \"divide\" (cd-metaphase-v1.png, grey tag \"M\"); grey letters \"G1, S, G2, M\" sit small round the ring (screen only). A coded dot travels round the ring on \"grows, copies its DNA, gets ready, then divides\". On \"checkpoints\" three gate marks draw: one between \"grow\" and \"copy DNA\", one at the entry to \"divide\", and one inside the \"divide\" sector, before the copies separate; gloss \"checkpoint: a stop that checks it's safe to go on\". On \"You've met one\" the gate inside the \"divide\" sector lights; bio-m5-b05a's checkpoint gate icon appears beside a cd-metaphase-v1.png callout (label \"spindle checkpoint: all attached to both poles?\"; grey tag \"Module 5\"). On \"Another comes before the DNA is copied\" the gate between \"grow\" and \"copy DNA\" lights amber (grey tag \"G1 checkpoint\"); three question chips write one per cue beside it: \"big enough?\", \"signal to divide?\", \"DNA undamaged?\". The third gate (at the entry to \"divide\", G2/M) carries a grey tag only: \"another check: copying finished?\" At most three bright items. Hold one second.",
+      "teachingReason": "A cell's life runs in a loop called the cell cycle.",
+      "narrationCue": "grows, copies its DNA, gets ready, then divides / checkpoints / You've met one / Another comes before the DNA is copied",
+      "motionPurpose": "the CycleRing draws at the centre, large: four stations, each with a small painted thumbnail: \"grow\" (cd-interphase-v1.png), \"copy DNA\" (cd-interphase-v1.png, grey tag \"S\"), \"get ready\" (cd-interphase-v1.png, grey tag \"G2\"), \"divide\" (cd-metaphase-v1.png, grey tag \"M\"); grey letters \"G1, S, G2, M\" sit small round the ring (screen only). A coded dot travels round the ring on \"grows, copies its DNA, gets ready, then divides\". On \"checkpoints\" three gate marks draw: one between \"grow\" and \"copy DNA\", one at the entry to \"divide\", and one inside the \"divide\" sector, before the copies separate; gloss \"checkpoint: a stop that checks it's safe to go on\". On \"You've met one\" the gate inside the \"divide\" sector lights; bio-m5-b05a's checkpoint gate icon appears beside a cd-metaphase-v1.png callout (label \"spindle checkpoint: all attached to both poles?\"; grey tag \"Module 5\"). On \"Another comes before the DNA is copied\" the gate between \"grow\" and \"copy DNA\" lights amber (grey tag \"G1 checkpoint\"); three question chips write one per cue beside it: \"big enough?\", \"signal to divide?\", \"DNA undamaged?\". The third gate (at the entry to \"divide\", G2/M) carries a grey tag only: \"another check: copying finished?\" At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the CycleRing draws at the centre, large: four stations, each with a small painted thumbnail: \"grow\" (cd-interphase-v1.png), \"copy DNA\" (cd-interphase-v1.png, grey tag \"S\"), \"get ready\" (cd-interphase-v1.png, grey tag \"G2\"), \"divide\" (cd-metaphase-v1.png, grey tag \"M\"); grey letters \"G1, S, G2, M\" sit small round the ring (screen only). A coded dot travels round the ring on \"grows, copies its DNA, gets ready, then divides\". On \"checkpoints\" three gate marks draw: one between \"grow\" and \"copy DNA\", one at the entry to \"divide\", and one inside the \"divide\" sector, before the copies separate; gloss \"checkpoint: a stop that checks it's safe to go on\". On \"You've met one\" the gate inside the \"divide\" sector lights; bio-m5-b05a's checkpoint gate icon appears beside a cd-metaphase-v1.png callout (label \"spindle checkpoint: all attached to both poles?\"; grey tag \"Module 5\"). On \"Another comes before the DNA is copied\" the gate between \"grow\" and \"copy DNA\" lights amber (grey tag \"G1 checkpoint\"); three question chips write one per cue beside it: \"big enough?\", \"signal to divide?\", \"DNA undamaged?\". The third gate (at the entry to \"divide\", G2/M) carries a grey tag only: \"another check: copying finished?\" At most three bright items. Hold one second.",
+      "motionTools": [
+        "CycleRing",
+        "cd-interphase-v1.png",
+        "cd-metaphase-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the cell cycle and its checkpoints: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "p53-apoptosis",
+      "visualDecision": "adjust",
+      "visualReference": "the ring shrinks to the upper left (it stays there to scene 7). Centre: cd-interphase-v1.png large; two small coded amber sparks sit on the nucleus envelope (label \"DNA damage\"). On \"p53\" a small coded protein glyph (a rounded four-lobed shape, grey-blue) moves to the nucleus; gloss \"p53: a protein that responds to DNA damage\". On \"stops the cycle\" the ring's G1 gate closes (bright) and the travelling dot halts. On \"repair enzymes can fix the damage\" the sparks shrink and vanish (label \"repaired: go on\"). The plate resets with fresh sparks, more of them. On \"too great\" the sparks stay; on \"apoptosis\" the plate cross-fades to its matched new m8-cell-apoptotic-v1.png (same outline, shrunken, blebbing, nucleus in fragments); gloss \"apoptosis: controlled self-destruction\". On \"many mutations that do slip through\" the hook's honeycomb returns small: its two grey-ticked cells keep a small grey dot each (label \"harmless mutation: not in a control gene\"). On \"several changes that defeat those controls\" one chip writes: \"cancer: several changes in control genes\" (bright). At most three bright items. Hold one second.",
+      "teachingReason": "At that checkpoint, a protein called p53 responds to DNA damage.",
+      "narrationCue": "p53 / stops the cycle / repair enzymes can fix the damage / too great / apoptosis / many mutations that do slip through / several changes that defeat those controls",
+      "motionPurpose": "the ring shrinks to the upper left (it stays there to scene 7). Centre: cd-interphase-v1.png large; two small coded amber sparks sit on the nucleus envelope (label \"DNA damage\"). On \"p53\" a small coded protein glyph (a rounded four-lobed shape, grey-blue) moves to the nucleus; gloss \"p53: a protein that responds to DNA damage\". On \"stops the cycle\" the ring's G1 gate closes (bright) and the travelling dot halts. On \"repair enzymes can fix the damage\" the sparks shrink and vanish (label \"repaired: go on\"). The plate resets with fresh sparks, more of them. On \"too great\" the sparks stay; on \"apoptosis\" the plate cross-fades to its matched new m8-cell-apoptotic-v1.png (same outline, shrunken, blebbing, nucleus in fragments); gloss \"apoptosis: controlled self-destruction\". On \"many mutations that do slip through\" the hook's honeycomb returns small: its two grey-ticked cells keep a small grey dot each (label \"harmless mutation: not in a control gene\"). On \"several changes that defeat those controls\" one chip writes: \"cancer: several changes in control genes\" (bright). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the ring shrinks to the upper left (it stays there to scene 7). Centre: cd-interphase-v1.png large; two small coded amber sparks sit on the nucleus envelope (label \"DNA damage\"). On \"p53\" a small coded protein glyph (a rounded four-lobed shape, grey-blue) moves to the nucleus; gloss \"p53: a protein that responds to DNA damage\". On \"stops the cycle\" the ring's G1 gate closes (bright) and the travelling dot halts. On \"repair enzymes can fix the damage\" the sparks shrink and vanish (label \"repaired: go on\"). The plate resets with fresh sparks, more of them. On \"too great\" the sparks stay; on \"apoptosis\" the plate cross-fades to its matched new m8-cell-apoptotic-v1.png (same outline, shrunken, blebbing, nucleus in fragments); gloss \"apoptosis: controlled self-destruction\". On \"many mutations that do slip through\" the hook's honeycomb returns small: its two grey-ticked cells keep a small grey dot each (label \"harmless mutation: not in a control gene\"). On \"several changes that defeat those controls\" one chip writes: \"cancer: several changes in control genes\" (bright). At most three bright items. Hold one second.",
+      "motionTools": [
+        "cd-interphase-v1.png",
+        "m8-cell-apoptotic-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "p53: repair or self-destruct: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "several-changes",
+      "visualDecision": "new",
+      "visualReference": "the board clears above the bottom fifth. The CloneTree grows from one small cd-interphase-v1.png thumbnail at the left: on \"one change\" that cell gains an amber dot (label \"change 1\"); on \"leaves more descendants\" its branch divides into four, then eight thumbnails while neighbouring branches stay at two (bio-m6-b05's patch idea; grey tag \"Module 6: body-cell mutations\"). On \"a second change\" one cell in the clone gains a second amber dot and its own branch outgrows the rest (label \"change 2\"); a third dot follows silently (label \"change 3\"). On \"takes years\" a coded timeline under the tree writes \"years to decades\". On \"more common as people age\" a small coded bar shape (no numbers, grey tag \"shape only; real data in b10\") rises across age bands \"20s\" to \"80s\". The CauseChain5 draws at the bottom; its first box lights: \"mutations build up\". At most three bright items. Hold one second.",
+      "teachingReason": "Those changes usually build up in the same line of cells.",
+      "narrationCue": "one change / leaves more descendants / a second change / takes years / more common as people age",
+      "motionPurpose": "the board clears above the bottom fifth. The CloneTree grows from one small cd-interphase-v1.png thumbnail at the left: on \"one change\" that cell gains an amber dot (label \"change 1\"); on \"leaves more descendants\" its branch divides into four, then eight thumbnails while neighbouring branches stay at two (bio-m6-b05's patch idea; grey tag \"Module 6: body-cell mutations\"). On \"a second change\" one cell in the clone gains a second amber dot and its own branch outgrows the rest (label \"change 2\"); a third dot follows silently (label \"change 3\"). On \"takes years\" a coded timeline under the tree writes \"years to decades\". On \"more common as people age\" a small coded bar shape (no numbers, grey tag \"shape only; real data in b10\") rises across age bands \"20s\" to \"80s\". The CauseChain5 draws at the bottom; its first box lights: \"mutations build up\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears above the bottom fifth. The CloneTree grows from one small cd-interphase-v1.png thumbnail at the left: on \"one change\" that cell gains an amber dot (label \"change 1\"); on \"leaves more descendants\" its branch divides into four, then eight thumbnails while neighbouring branches stay at two (bio-m6-b05's patch idea; grey tag \"Module 6: body-cell mutations\"). On \"a second change\" one cell in the clone gains a second amber dot and its own branch outgrows the rest (label \"change 2\"); a third dot follows silently (label \"change 3\"). On \"takes years\" a coded timeline under the tree writes \"years to decades\". On \"more common as people age\" a small coded bar shape (no numbers, grey tag \"shape only; real data in b10\") rises across age bands \"20s\" to \"80s\". The CauseChain5 draws at the bottom; its first box lights: \"mutations build up\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "CloneTree",
+        "cd-interphase-v1.png",
+        "CauseChain5",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "several changes, one cell line: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "accelerator",
+      "visualDecision": "new",
+      "visualReference": "the tree dims. The PedalPair draws at the centre (two abstract pedal outlines, no car, no feet): the left pedal \"accelerator\" lights. On \"Proto-oncogenes\" a gloss writes: \"proto-oncogene: normal gene, divide when signalled\"; on \"when a growth signal arrives\" a coded signal glyph docks at a small cell outline and the pedal dips once, then rises (label \"signal: divide; no signal: stop\"). On \"jam the accelerator down\" the pedal locks down with a small amber clamp; the signal glyph disappears but the pedal stays down (label \"divides with no signal\"). On \"oncogene\" the gloss writes \"oncogene: the mutated, stuck-on version\". On \"one mutated copy is enough\" two small gene chips appear under the pedal, \"copy 1: stuck on\" (amber) and \"copy 2: normal\" (grey); a bracket reads \"one is enough\". The ring's G1 gate flickers open. The chain's second box lights: \"control lost\". At most three bright items. Hold one second.",
+      "teachingReason": "Which genes? Two kinds control division.",
+      "narrationCue": "Proto-oncogenes / when a growth signal arrives / jam the accelerator down / oncogene / one mutated copy is enough",
+      "motionPurpose": "the tree dims. The PedalPair draws at the centre (two abstract pedal outlines, no car, no feet): the left pedal \"accelerator\" lights. On \"Proto-oncogenes\" a gloss writes: \"proto-oncogene: normal gene, divide when signalled\"; on \"when a growth signal arrives\" a coded signal glyph docks at a small cell outline and the pedal dips once, then rises (label \"signal: divide; no signal: stop\"). On \"jam the accelerator down\" the pedal locks down with a small amber clamp; the signal glyph disappears but the pedal stays down (label \"divides with no signal\"). On \"oncogene\" the gloss writes \"oncogene: the mutated, stuck-on version\". On \"one mutated copy is enough\" two small gene chips appear under the pedal, \"copy 1: stuck on\" (amber) and \"copy 2: normal\" (grey); a bracket reads \"one is enough\". The ring's G1 gate flickers open. The chain's second box lights: \"control lost\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the tree dims. The PedalPair draws at the centre (two abstract pedal outlines, no car, no feet): the left pedal \"accelerator\" lights. On \"Proto-oncogenes\" a gloss writes: \"proto-oncogene: normal gene, divide when signalled\"; on \"when a growth signal arrives\" a coded signal glyph docks at a small cell outline and the pedal dips once, then rises (label \"signal: divide; no signal: stop\"). On \"jam the accelerator down\" the pedal locks down with a small amber clamp; the signal glyph disappears but the pedal stays down (label \"divides with no signal\"). On \"oncogene\" the gloss writes \"oncogene: the mutated, stuck-on version\". On \"one mutated copy is enough\" two small gene chips appear under the pedal, \"copy 1: stuck on\" (amber) and \"copy 2: normal\" (grey); a bracket reads \"one is enough\". The ring's G1 gate flickers open. The chain's second box lights: \"control lost\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "PedalPair",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the accelerator: proto-oncogenes: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "brakes",
+      "visualDecision": "new",
+      "visualReference": "the right pedal \"brake\" lights. Gloss \"tumour suppressor gene: the brake: stop, repair, or self-destruct\". On \"the gene for p53\" the p53 glyph from scene 4 docks beside the pedal (label \"p53 gene: a brake\"). On \"One working copy\" two gene chips appear: \"copy 1: lost\" (amber, with a small cross) and \"copy 2: working\" (teal); the pedal still presses (label \"one copy: still brakes\"). On \"both copies\" copy 2 also crosses and the pedal goes slack (label \"both lost: no brake\"). On \"inheriting one faulty copy\" a small row of cell outlines appears, every one already carrying an amber \"copy 1 lost\" dot (grey tag \"BRCA1: inherited in every cell\"); one cell later gains a second dot. b07's RiskDial sits small beside it, needle high but short of the end (label \"risk, not certainty\"). On \"stuck accelerator and failed brakes\" the memory aid writes large in hand lettering under the pedals; a grey tag under it reads \"where it breaks: several changes needed; genes differ between cancers\". The ring closes and fades. At most three bright items. Hold one second.",
+      "teachingReason": "The other kind are tumour suppressor genes, the brakes.",
+      "narrationCue": "the gene for p53 / One working copy / both copies / inheriting one faulty copy / stuck accelerator and failed brakes",
+      "motionPurpose": "the right pedal \"brake\" lights. Gloss \"tumour suppressor gene: the brake: stop, repair, or self-destruct\". On \"the gene for p53\" the p53 glyph from scene 4 docks beside the pedal (label \"p53 gene: a brake\"). On \"One working copy\" two gene chips appear: \"copy 1: lost\" (amber, with a small cross) and \"copy 2: working\" (teal); the pedal still presses (label \"one copy: still brakes\"). On \"both copies\" copy 2 also crosses and the pedal goes slack (label \"both lost: no brake\"). On \"inheriting one faulty copy\" a small row of cell outlines appears, every one already carrying an amber \"copy 1 lost\" dot (grey tag \"BRCA1: inherited in every cell\"); one cell later gains a second dot. b07's RiskDial sits small beside it, needle high but short of the end (label \"risk, not certainty\"). On \"stuck accelerator and failed brakes\" the memory aid writes large in hand lettering under the pedals; a grey tag under it reads \"where it breaks: several changes needed; genes differ between cancers\". The ring closes and fades. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the right pedal \"brake\" lights. Gloss \"tumour suppressor gene: the brake: stop, repair, or self-destruct\". On \"the gene for p53\" the p53 glyph from scene 4 docks beside the pedal (label \"p53 gene: a brake\"). On \"One working copy\" two gene chips appear: \"copy 1: lost\" (amber, with a small cross) and \"copy 2: working\" (teal); the pedal still presses (label \"one copy: still brakes\"). On \"both copies\" copy 2 also crosses and the pedal goes slack (label \"both lost: no brake\"). On \"inheriting one faulty copy\" a small row of cell outlines appears, every one already carrying an amber \"copy 1 lost\" dot (grey tag \"BRCA1: inherited in every cell\"); one cell later gains a second dot. b07's RiskDial sits small beside it, needle high but short of the end (label \"risk, not certainty\"). On \"stuck accelerator and failed brakes\" the memory aid writes large in hand lettering under the pedals; a grey tag under it reads \"where it breaks: several changes needed; genes differ between cancers\". The ring closes and fades. At most three bright items. Hold one second.",
+      "motionTools": [
+        "RiskDial",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the brakes: tumour suppressor genes: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "melanoma-uv",
+      "visualDecision": "new",
+      "visualReference": "the pedals shrink to a small icon at the upper right. Centre: m8-skin-normal-v1.png large; on \"UV light from the sun\" m6-uv-skin-v1.png appears small at the upper left with violet beams angled at the block (grey tags \"b06: cancer group\" and \"b07: UV and DNA\"; grey tag \"AIHW, Cancer data in Australia 2025: about 17,400 new cases projected\" for the rates; no number spoken; Numbers to verify). On \"melanocytes\" a callout opens at the base of the top skin layer onto a small coded pigment-cell outline (gloss \"melanocyte: makes pigment\"); bio-m6-b02's DimerKink plays small inside the callout (grey tag \"b07\"). On \"BRAF\" a chip \"BRAF: accelerator stuck on\" writes (amber) with the accelerator icon; on \"knock out brakes\" a second chip \"brake genes lost\" writes with the brake icon (grey tag \"e.g. CDKN2A\"). On \"divides out of control and forms a tumour\" the plate cross-fades to its matched pair m8-skin-melanoma-v1.png (the dark pigment cells of this cell line), then holds; never the mole; gloss \"tumour: a lump of cells that keep dividing\". The chain's third and fourth boxes light: \"divides without stopping\", \"tumour\". Grey tag at the lower left: \"carcinogens: chemical, physical (UV), biological (some viruses)\". At most three bright items. Hold one second.",
+      "teachingReason": "Now a real case.",
+      "narrationCue": "UV light from the sun / melanocytes / BRAF / knock out brakes / divides out of control and forms a tumour",
+      "motionPurpose": "the pedals shrink to a small icon at the upper right. Centre: m8-skin-normal-v1.png large; on \"UV light from the sun\" m6-uv-skin-v1.png appears small at the upper left with violet beams angled at the block (grey tags \"b06: cancer group\" and \"b07: UV and DNA\"; grey tag \"AIHW, Cancer data in Australia 2025: about 17,400 new cases projected\" for the rates; no number spoken; Numbers to verify). On \"melanocytes\" a callout opens at the base of the top skin layer onto a small coded pigment-cell outline (gloss \"melanocyte: makes pigment\"); bio-m6-b02's DimerKink plays small inside the callout (grey tag \"b07\"). On \"BRAF\" a chip \"BRAF: accelerator stuck on\" writes (amber) with the accelerator icon; on \"knock out brakes\" a second chip \"brake genes lost\" writes with the brake icon (grey tag \"e.g. CDKN2A\"). On \"divides out of control and forms a tumour\" the plate cross-fades to its matched pair m8-skin-melanoma-v1.png (the dark pigment cells of this cell line), then holds; never the mole; gloss \"tumour: a lump of cells that keep dividing\". The chain's third and fourth boxes light: \"divides without stopping\", \"tumour\". Grey tag at the lower left: \"carcinogens: chemical, physical (UV), biological (some viruses)\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the pedals shrink to a small icon at the upper right. Centre: m8-skin-normal-v1.png large; on \"UV light from the sun\" m6-uv-skin-v1.png appears small at the upper left with violet beams angled at the block (grey tags \"b06: cancer group\" and \"b07: UV and DNA\"; grey tag \"AIHW, Cancer data in Australia 2025: about 17,400 new cases projected\" for the rates; no number spoken; Numbers to verify). On \"melanocytes\" a callout opens at the base of the top skin layer onto a small coded pigment-cell outline (gloss \"melanocyte: makes pigment\"); bio-m6-b02's DimerKink plays small inside the callout (grey tag \"b07\"). On \"BRAF\" a chip \"BRAF: accelerator stuck on\" writes (amber) with the accelerator icon; on \"knock out brakes\" a second chip \"brake genes lost\" writes with the brake icon (grey tag \"e.g. CDKN2A\"). On \"divides out of control and forms a tumour\" the plate cross-fades to its matched pair m8-skin-melanoma-v1.png (the dark pigment cells of this cell line), then holds; never the mole; gloss \"tumour: a lump of cells that keep dividing\". The chain's third and fourth boxes light: \"divides without stopping\", \"tumour\". Grey tag at the lower left: \"carcinogens: chemical, physical (UV), biological (some viruses)\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-skin-normal-v1.png",
+        "m6-uv-skin-v1.png",
+        "DimerKink",
+        "m8-skin-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "melanoma: UV as a named environmental risk: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "benign-malignant",
+      "visualDecision": "new",
+      "visualReference": "the melanoma block slides to the right and stays there. On \"Compare that with a benign mole\" m8-skin-mole-v1.png appears at the left at the same size, as a separate block (no cross-fade between them at any point), label \"benign: stays put\"; grey tag \"most moles never become melanoma\". On \"doesn't invade\" a coded dashed outline traces round the mole's edge (label \"bound\"). On \"like our melanoma\" the melanoma block at the right brightens (the two blocks are matched in outline). On \"basement membrane\" a thin bright coded line traces the wavy junction between epidermis and dermis on both blocks; gloss \"basement membrane: thin sheet under the top layer\". On \"break through\" the line on the melanoma block breaks where the dark cells pass it (a small gap opens; label \"breaks through\"). On \"blood and lymph vessels\" the red and blue vessels in the melanoma block's dermis pulse once; a thin pale coded line marks one as \"lymph vessel\" (grey tag \"lymph: fluid that drains back to the blood\"). On \"malignant moves, benign is bound\" the mnemonic writes large in hand lettering across the top. At most three bright items. Hold one second.",
+      "teachingReason": "Compare that with a benign mole.",
+      "narrationCue": "Compare that with a benign mole / doesn't invade / like our melanoma / basement membrane / break through / blood and lymph vessels / malignant moves, benign is bound",
+      "motionPurpose": "the melanoma block slides to the right and stays there. On \"Compare that with a benign mole\" m8-skin-mole-v1.png appears at the left at the same size, as a separate block (no cross-fade between them at any point), label \"benign: stays put\"; grey tag \"most moles never become melanoma\". On \"doesn't invade\" a coded dashed outline traces round the mole's edge (label \"bound\"). On \"like our melanoma\" the melanoma block at the right brightens (the two blocks are matched in outline). On \"basement membrane\" a thin bright coded line traces the wavy junction between epidermis and dermis on both blocks; gloss \"basement membrane: thin sheet under the top layer\". On \"break through\" the line on the melanoma block breaks where the dark cells pass it (a small gap opens; label \"breaks through\"). On \"blood and lymph vessels\" the red and blue vessels in the melanoma block's dermis pulse once; a thin pale coded line marks one as \"lymph vessel\" (grey tag \"lymph: fluid that drains back to the blood\"). On \"malignant moves, benign is bound\" the mnemonic writes large in hand lettering across the top. At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the melanoma block slides to the right and stays there. On \"Compare that with a benign mole\" m8-skin-mole-v1.png appears at the left at the same size, as a separate block (no cross-fade between them at any point), label \"benign: stays put\"; grey tag \"most moles never become melanoma\". On \"doesn't invade\" a coded dashed outline traces round the mole's edge (label \"bound\"). On \"like our melanoma\" the melanoma block at the right brightens (the two blocks are matched in outline). On \"basement membrane\" a thin bright coded line traces the wavy junction between epidermis and dermis on both blocks; gloss \"basement membrane: thin sheet under the top layer\". On \"break through\" the line on the melanoma block breaks where the dark cells pass it (a small gap opens; label \"breaks through\"). On \"blood and lymph vessels\" the red and blue vessels in the melanoma block's dermis pulse once; a thin pale coded line marks one as \"lymph vessel\" (grey tag \"lymph: fluid that drains back to the blood\"). On \"malignant moves, benign is bound\" the mnemonic writes large in hand lettering across the top. At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-skin-mole-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "benign or malignant: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "metastasis",
+      "visualDecision": "new",
+      "visualReference": "the mole leaves. The melanoma block shrinks to the left. A callout from its dermis opens into the new m8-melanoma-cells-vessel-v1.png (a cut-away lymph vessel wall with pigmented cancer cells detaching from a cluster, one squeezing between wall cells, two inside the vessel). Gloss \"metastasis: spread to a new site\". Step chips write one per cue along a coded arrow: \"1 break away\" (on \"lost the proteins that stick them\", small coded links between two cells snap), \"2 enter a vessel\", \"3 survive the trip\" (on \"Most die on the way\", five coded dots travel along the arrow and four fade grey; label \"most die\"), \"4 leave the vessel\", \"5 grow a secondary tumour\". Each earlier chip dims as the next writes, so at most three are bright. On \"a nearby lymph node\" m7-lymph-node-v1.png appears at the right and cross-fades to its matched new m8-lymph-node-melanoma-v1.png (dark pigmented deposits in the node); label \"secondary tumour: still melanoma cells\". On \"lungs, liver or brain\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png and a grey word \"brain\" sit in a row with thin dashed arrows (no deposits drawn on them). A grey chip \"it spreads because it got too big\" writes and takes a scribble cross. The chain's fifth box lights: \"invades and spreads\". At most three bright items. Hold one second.",
+      "teachingReason": "Spreading to a new site is called metastasis, and it takes several steps.",
+      "narrationCue": "lost the proteins that stick them / Most die on the way / a nearby lymph node / lungs, liver or brain",
+      "motionPurpose": "the mole leaves. The melanoma block shrinks to the left. A callout from its dermis opens into the new m8-melanoma-cells-vessel-v1.png (a cut-away lymph vessel wall with pigmented cancer cells detaching from a cluster, one squeezing between wall cells, two inside the vessel). Gloss \"metastasis: spread to a new site\". Step chips write one per cue along a coded arrow: \"1 break away\" (on \"lost the proteins that stick them\", small coded links between two cells snap), \"2 enter a vessel\", \"3 survive the trip\" (on \"Most die on the way\", five coded dots travel along the arrow and four fade grey; label \"most die\"), \"4 leave the vessel\", \"5 grow a secondary tumour\". Each earlier chip dims as the next writes, so at most three are bright. On \"a nearby lymph node\" m7-lymph-node-v1.png appears at the right and cross-fades to its matched new m8-lymph-node-melanoma-v1.png (dark pigmented deposits in the node); label \"secondary tumour: still melanoma cells\". On \"lungs, liver or brain\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png and a grey word \"brain\" sit in a row with thin dashed arrows (no deposits drawn on them). A grey chip \"it spreads because it got too big\" writes and takes a scribble cross. The chain's fifth box lights: \"invades and spreads\". At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the mole leaves. The melanoma block shrinks to the left. A callout from its dermis opens into the new m8-melanoma-cells-vessel-v1.png (a cut-away lymph vessel wall with pigmented cancer cells detaching from a cluster, one squeezing between wall cells, two inside the vessel). Gloss \"metastasis: spread to a new site\". Step chips write one per cue along a coded arrow: \"1 break away\" (on \"lost the proteins that stick them\", small coded links between two cells snap), \"2 enter a vessel\", \"3 survive the trip\" (on \"Most die on the way\", five coded dots travel along the arrow and four fade grey; label \"most die\"), \"4 leave the vessel\", \"5 grow a secondary tumour\". Each earlier chip dims as the next writes, so at most three are bright. On \"a nearby lymph node\" m7-lymph-node-v1.png appears at the right and cross-fades to its matched new m8-lymph-node-melanoma-v1.png (dark pigmented deposits in the node); label \"secondary tumour: still melanoma cells\". On \"lungs, liver or brain\" small thumbnails of m8-lungs-healthy-v1.png and m8-liver-v1.png and a grey word \"brain\" sit in a row with thin dashed arrows (no deposits drawn on them). A grey chip \"it spreads because it got too big\" writes and takes a scribble cross. The chain's fifth box lights: \"invades and spreads\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-melanoma-cells-vessel-v1.png",
+        "m7-lymph-node-v1.png",
+        "m8-lymph-node-melanoma-v1.png",
+        "m8-lungs-healthy-v1.png",
+        "m8-liver-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "metastasis, step by step: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "why-spread-matters",
+      "visualDecision": "adjust",
+      "visualReference": "the five-box chain enlarges to the middle. On \"most cancer deaths\" its last box pulses (grey tag \"metastasis: the main cause of cancer deaths\"). On \"finding melanoma early\" the melanoma block returns at the left with a coded depth ruler beside it; a short bracket near the surface reads \"thin: found early\" and a deep bracket reads \"deep: reached vessels\". On \"cutting it out is often successful\" the thin bracket brightens (grey tag \"AIHW 2025: five-year relative survival 94% (2017 to 2021), all stages; not a personal cure rate\"). On \"slip, slop, slap, seek and slide\" m8-sun-protection-v1.png appears small with five small chips, each dimming as the next writes (grey tag \"b07\"). At most three bright items. Hold one second.",
+      "teachingReason": "That's why metastasis causes most cancer deaths.",
+      "narrationCue": "most cancer deaths / finding melanoma early / cutting it out is often successful / slip, slop, slap, seek and slide",
+      "motionPurpose": "the five-box chain enlarges to the middle. On \"most cancer deaths\" its last box pulses (grey tag \"metastasis: the main cause of cancer deaths\"). On \"finding melanoma early\" the melanoma block returns at the left with a coded depth ruler beside it; a short bracket near the surface reads \"thin: found early\" and a deep bracket reads \"deep: reached vessels\". On \"cutting it out is often successful\" the thin bracket brightens (grey tag \"AIHW 2025: five-year relative survival 94% (2017 to 2021), all stages; not a personal cure rate\"). On \"slip, slop, slap, seek and slide\" m8-sun-protection-v1.png appears small with five small chips, each dimming as the next writes (grey tag \"b07\"). At most three bright items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the five-box chain enlarges to the middle. On \"most cancer deaths\" its last box pulses (grey tag \"metastasis: the main cause of cancer deaths\"). On \"finding melanoma early\" the melanoma block returns at the left with a coded depth ruler beside it; a short bracket near the surface reads \"thin: found early\" and a deep bracket reads \"deep: reached vessels\". On \"cutting it out is often successful\" the thin bracket brightens (grey tag \"AIHW 2025: five-year relative survival 94% (2017 to 2021), all stages; not a personal cure rate\"). On \"slip, slop, slap, seek and slide\" m8-sun-protection-v1.png appears small with five small chips, each dimming as the next writes (grey tag \"b07\"). At most three bright items. Hold one second.",
+      "motionTools": [
+        "m8-sun-protection-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "why spread matters: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cell A has an activating mutation that keeps one copy of a proto-oncogene switched on. Cell B has a mutation that stops one copy of a tumour suppressor gene working; one normal copy is enough for that gene's function. All other copies of these genes are normal.\" Two small cd-interphase-v1.png thumbnails labelled \"Cell A\" and \"Cell B\" (no marks). Demand: \"Predict which cell is more likely to divide without a growth signal. Explain your prediction. (3 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Two exam questions.",
+      "narrationCue": "Two exam questions",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cell A has an activating mutation that keeps one copy of a proto-oncogene switched on. Cell B has a mutation that stops one copy of a tumour suppressor gene working; one normal copy is enough for that gene's function. All other copies of these genes are normal.\" Two small cd-interphase-v1.png thumbnails labelled \"Cell A\" and \"Cell B\" (no marks). Demand: \"Predict which cell is more likely to divide without a growth signal. Explain your prediction. (3 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cell A has an activating mutation that keeps one copy of a proto-oncogene switched on. Cell B has a mutation that stops one copy of a tumour suppressor gene working; one normal copy is enough for that gene's function. All other copies of these genes are normal.\" Two small cd-interphase-v1.png thumbnails labelled \"Cell A\" and \"Cell B\" (no marks). Demand: \"Predict which cell is more likely to divide without a growth signal. Explain your prediction. (3 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "cd-interphase-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt one (one copy each): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"Cell A\" the answer line writes: \"Cell A\". On \"activating mutation makes an oncogene\" \"an activating mutation that keeps one copy of a proto-oncogene switched on\" underlines amber and the accelerator icon locks down beside Cell A (line: \"oncogene: protein stuck on; one copy drives division\"). On \"In cell B\" \"one normal copy is enough for that gene's function\" and \"All other copies ... are normal\" underline teal; the brake icon presses beside Cell B (line: \"B: normal copy still brakes; control holds until it is lost too\"). On \"classic mistake\" a chip \"equally likely: one mutation each\" writes and takes a scribble cross, small text \"accelerator: one copy; brake: usually two\". Settle one second.",
+      "teachingReason": "Cell A.",
+      "narrationCue": "Cell A / activating mutation makes an oncogene / In cell B / classic mistake",
+      "motionPurpose": "the card stays. On \"Cell A\" the answer line writes: \"Cell A\". On \"activating mutation makes an oncogene\" \"an activating mutation that keeps one copy of a proto-oncogene switched on\" underlines amber and the accelerator icon locks down beside Cell A (line: \"oncogene: protein stuck on; one copy drives division\"). On \"In cell B\" \"one normal copy is enough for that gene's function\" and \"All other copies ... are normal\" underline teal; the brake icon presses beside Cell B (line: \"B: normal copy still brakes; control holds until it is lost too\"). On \"classic mistake\" a chip \"equally likely: one mutation each\" writes and takes a scribble cross, small text \"accelerator: one copy; brake: usually two\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Cell A\" the answer line writes: \"Cell A\". On \"activating mutation makes an oncogene\" \"an activating mutation that keeps one copy of a proto-oncogene switched on\" underlines amber and the accelerator icon locks down beside Cell A (line: \"oncogene: protein stuck on; one copy drives division\"). On \"In cell B\" \"one normal copy is enough for that gene's function\" and \"All other copies ... are normal\" underline teal; the brake icon presses beside Cell B (line: \"B: normal copy still brakes; control holds until it is lost too\"). On \"classic mistake\" a chip \"equally likely: one mutation each\" writes and takes a scribble cross, small text \"accelerator: one copy; brake: usually two\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item one: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Some types of human papillomavirus (HPV) infect cells lining the cervix. The viral protein E6 causes the infected cell to destroy its p53 protein. A screening test later finds a growth of abnormal cells that has not crossed the basement membrane.\" No plate and no people on the card. Demand: \"(a) Explain how this infection can increase the risk of cancer. (3 marks) (b) Explain why this growth is unlikely to have spread to other organs. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Second.",
+      "narrationCue": "Second",
+      "motionPurpose": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Some types of human papillomavirus (HPV) infect cells lining the cervix. The viral protein E6 causes the infected cell to destroy its p53 protein. A screening test later finds a growth of abnormal cells that has not crossed the basement membrane.\" No plate and no people on the card. Demand: \"(a) Explain how this infection can increase the risk of cancer. (3 marks) (b) Explain why this growth is unlikely to have spread to other organs. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Some types of human papillomavirus (HPV) infect cells lining the cervix. The viral protein E6 causes the infected cell to destroy its p53 protein. A screening test later finds a growth of abnormal cells that has not crossed the basement membrane.\" No plate and no people on the card. Demand: \"(a) Explain how this infection can increase the risk of cancer. (3 marks) (b) Explain why this growth is unlikely to have spread to other organs. (2 marks)\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt two (HPV and the cervix): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays. On \"Losing p53\" \"destroy its p53 protein\" underlines amber; answer (a) builds on the cues: \"less p53: a key DNA-damage checkpoint weakened\", \"more damaged cells survive and divide\", \"mutations build up → risk rises (not certain)\"; the brake icon goes slack beside it. On \"break through the basement membrane\" \"has not crossed the basement membrane\" underlines teal and answer (b) writes: \"not through the basement membrane: can't reach blood or lymph vessels yet\". On \"classic mistake\" a chip \"cervical cancer is caught\" writes and takes a scribble cross, small text \"the virus is caught; cancer comes from the cell's own genes\". Settle one second.",
+      "teachingReason": "Losing p53 weakens a key DNA-damage checkpoint.",
+      "narrationCue": "Losing p53 / break through the basement membrane / classic mistake",
+      "motionPurpose": "the card stays. On \"Losing p53\" \"destroy its p53 protein\" underlines amber; answer (a) builds on the cues: \"less p53: a key DNA-damage checkpoint weakened\", \"more damaged cells survive and divide\", \"mutations build up → risk rises (not certain)\"; the brake icon goes slack beside it. On \"break through the basement membrane\" \"has not crossed the basement membrane\" underlines teal and answer (b) writes: \"not through the basement membrane: can't reach blood or lymph vessels yet\". On \"classic mistake\" a chip \"cervical cancer is caught\" writes and takes a scribble cross, small text \"the virus is caught; cancer comes from the cell's own genes\". Settle one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"Losing p53\" \"destroy its p53 protein\" underlines amber; answer (a) builds on the cues: \"less p53: a key DNA-damage checkpoint weakened\", \"more damaged cells survive and divide\", \"mutations build up → risk rises (not certain)\"; the brake icon goes slack beside it. On \"break through the basement membrane\" \"has not crossed the basement membrane\" underlines teal and answer (b) writes: \"not through the basement membrane: can't reach blood or lymph vessels yet\". On \"classic mistake\" a chip \"cervical cancer is caught\" writes and takes a scribble cross, small text \"the virus is caught; cancer comes from the cell's own genes\". Settle one second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback, item two: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the CauseChain5 returns full width; the pedal icon sits above box 2 with two small labels \"accelerator stuck\" and \"brake lost\". Each box lights on its cue with its thumbnail (clone tree, pedals, cd-daughters-v1.png, m8-skin-melanoma-v1.png, m8-lymph-node-melanoma-v1.png); a bracket over box 5 reads \"malignant only\". A \"Next\" chip slides in at the lower right: \"Next: What do incidence, prevalence and mortality measure?\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "teachingReason": "So for any cancer question, follow the chain: mutations build up, a control breaks, an accelerator stuck on or a brake lost, then division without stopping, a tumour, and, if it's malignant, invasion and spread.",
+      "narrationCue": "So for any cancer question, follow the chain: mutations build up, a control breaks, an accelerator stuck on or a brake lost, then division without stopping, a tumour, and, if it's malignant, invasion and spread",
+      "motionPurpose": "the CauseChain5 returns full width; the pedal icon sits above box 2 with two small labels \"accelerator stuck\" and \"brake lost\". Each box lights on its cue with its thumbnail (clone tree, pedals, cd-daughters-v1.png, m8-skin-melanoma-v1.png, m8-lymph-node-melanoma-v1.png); a bracket over box 5 reads \"malignant only\". A \"Next\" chip slides in at the lower right: \"Next: What do incidence, prevalence and mortality measure?\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the CauseChain5 returns full width; the pedal icon sits above box 2 with two small labels \"accelerator stuck\" and \"brake lost\". Each box lights on its cue with its thumbnail (clone tree, pedals, cd-daughters-v1.png, m8-skin-melanoma-v1.png, m8-lymph-node-melanoma-v1.png); a bracket over box 5 reads \"malignant only\". A \"Next\" chip slides in at the lower right: \"Next: What do incidence, prevalence and mortality measure?\" with a small coded bar-chart icon. Hold half a second before the notes.",
+      "motionTools": [
+        "CauseChain5",
+        "cd-daughters-v1.png",
+        "m8-skin-melanoma-v1.png",
+        "m8-lymph-node-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b09-learning-review.md",
+      "sha256": "ae244f775ad1ff72612f1728ed5d6da794057360753ea7dcc2c4db180a512aea"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b09-claude-science-check.md",
+      "sha256": "7d281de34440fd070503603cb631682bc6a0f4d07d37e066a9fffa26bab6f744"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

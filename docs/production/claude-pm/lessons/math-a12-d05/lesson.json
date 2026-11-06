@@ -1,0 +1,166 @@
+{
+  "id": "math-a12-d05",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (the tangent at the origin, and a flat peak)",
+      "voiceover": {
+        "text": "Last video ended here: the sine curve, with x in radians, and a tangent at the origin. Can we read its gradient straight from the graph? Draw the line y equals x. The tangent lies right along it, so the slope there looks like exactly one. Now look at the peak. The height is one, but the curve is flat. So the gradient isn't the same as the height. What function gives the gradient of sine at every x?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "measure: the slope at zero",
+      "voiceover": {
+        "text": "Check that first slope properly. One point can't give a slope on its own, so, as in Year 11, take a second point on the curve, just to the right of zero, and find the gradient of the chord. With the point at x equals a half, it's about point nine six. At point one, about point nine nine eight. Bring it closer still, and the gradient settles on exactly one. So, with x in radians, the sine curve leaves the origin with slope one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the landmarks: flat at peaks, steepest at crossings",
+      "voiceover": {
+        "text": "Now read the slope at the other landmarks. At pi over two, the peak, the curve is flat, so the slope is zero. The curve is symmetric about that peak, so at pi it falls as steeply as it rose at zero. The slope there is minus one. At three pi over two, the trough, it's flat again: zero. And at two pi, the wave starts over, climbing with slope one. Peaks and troughs are flat, and the crossings are the steepest."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "trace the gradient graph: it's the cosine curve",
+      "voiceover": {
+        "text": "Let's plot those slopes as a new graph underneath. As the tangent slides along, its gradient draws a curve. It starts at one, falls to zero at the peak, reaches minus one at pi, and climbs back to one. Where sine is rising, the gradient graph sits above the axis, and where sine is falling, it sits below. Check a point that isn't a landmark. At pi over three, the measured slope is a half, and the cos of pi over three is exactly a half. This gradient graph is the cosine curve. So, with x in radians, the derivative of sine x is cos x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "why radians",
+      "voiceover": {
+        "text": "Why do radians matter? On a circle of radius one, an angle of x radians cuts off an arc of length x. That's what a radian means. For a small angle, the height, sine x, is almost the same as that arc. So near zero, sine x is close to x, and the slope there is one. In degrees, the same graph gets stretched sideways by about fifty seven point three. A sideways stretch divides every slope, at matching points, by that number. So the slope at zero would be only about point zero one seven five. The rule only works with x in radians."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "cosine's gradient graph",
+      "voiceover": {
+        "text": "Now the cosine curve. At zero, it's at a peak, so its slope is zero. Then it falls, steepest at pi over two, where the slope is minus one. It's flat at the trough, at pi, and climbs steepest at three pi over two, with slope one. Again, the steepest points are the crossings, and the flat points are the peak and the trough. Trace those slopes, and you get the sine curve, upside down. So the derivative of cos x is minus sine x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "why the minus sign: a slide keeps every slope",
+      "voiceover": {
+        "text": "Here's why the minus sign belongs there. The cosine curve is the sine curve, slid left by pi over two. A slide carries every tangent along with the curve, and doesn't change any slope. So the gradient graph slides left by pi over two as well. Slide the cosine curve left by pi over two, and you get the sine curve upside down. And check the sign. Just after zero, cos x is falling, so its slope is negative, but sine x is positive there. Plus sine x would give the wrong sign."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "verify with a graphing app",
+      "voiceover": {
+        "text": "It's worth checking this on a graphing app, so let's do it. Plot sine x, and measure its gradient at lots of points. Every measured dot lands on the cosine curve, not just at the landmarks. Try a value that isn't special. At x equals one, the measured slope is about point five four, and cos one is about point five four too. Do the same for cos x, and its dots land on minus sine x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "worked example: where is the gradient three root two over two?",
+      "voiceover": {
+        "text": "Let's use it. Find every x from zero to two pi where y equals three sine x has gradient three root two over two. Three sine x is the sine curve stretched upward by three, so every slope is three times as big. So d y by d x is three cos x. Set that equal to three root two over two, and divide by three. Cos x equals root two over two. Cos is positive in the first and fourth quadrants, so x is pi over four, or seven pi over four. On the graph, the curve is rising at both points, once above the axis and once below, and the two tangents are parallel."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid: the derivative cycle",
+      "voiceover": {
+        "text": "Here's a way to remember the pattern. Differentiate sine, and you get cos. Differentiate cos, and you get minus sine. Keep going: minus sine gives minus cos, and minus cos gives sine again. Four steps, and you're back where you started. That matches the graphs. Each derivative is the same wave, moved a quarter of a period to the left."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. For f of x equals sine x, find f prime of x. Then find the exact gradient of the curve at x equals two pi over three, and at x equals three pi over two. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "f prime of x is cos x. At two pi over three, cos is minus a half, so the curve is falling there. At three pi over two, cos is zero: that's the trough, and the curve is flat. Minus one is the height at the trough, not the gradient."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Let g of x equal two cos x, plus sine x. Find g prime of x, and the gradient of the tangent at x equals pi over two. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Differentiate each term. Two cos x gives minus two sine x, and sine x gives cos x. At pi over two, sine is one and cos is zero, so the gradient is minus two. If you lost the minus sign from cos, you'd get plus two. But two cos x is falling at pi over two, so the gradient must be negative."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the sine curve's slopes trace the cosine curve, and cosine's slopes trace minus sine, with x in radians. Next, what happens when there's something inside? Here's sine x, and sine two x. Sine two x leaves the origin more steeply. By how much, and why?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

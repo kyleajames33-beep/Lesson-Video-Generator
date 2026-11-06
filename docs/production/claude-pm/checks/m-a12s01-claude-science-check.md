@@ -15,3 +15,17 @@ Independent exact SymPy evidence is `work/brief162/s01.py` and `.json`: the die 
 2. **Should fix:** Scope the sum-to-one argument to exhaustive, nonoverlapping recorded outcomes with one value per trial.
 
 These are the learning-review findings. The discrete-bar area label is logged separately. Count: 0 blockers, 2 should fix, 0 optional.
+
+## Fresh official quote verification (4 November 2026)
+
+The public page wording was recovered from its embedded official CMS components, including the visible glossary-link text and complete MathML. This resolves the earlier public-rendering placeholder limitation. Mathematical typography below is linear; the unchanged original MathML is preserved with each item.
+
+`ci33ef8834`: Use the relative frequencies of discrete random variable datasets to estimate the probabilities that the random variable X takes each of its values, and explain why these estimated probabilities add to 1
+
+`ci49013884`: Denote the probability that the discrete random variable X takes the value x by P(X=x) , or by P(x) if the discrete random variable X is understood
+
+`cicc08703c`: Define a discrete probability distribution to be the set of values x taken by a discrete random variable X , together with the probabilities P(x) that x is the outcome of the experiment
+
+`cif1d51f9d`: Generate a probability distribution for a given discrete random variable and represent the probability distribution in graphical and tabular form
+
+[Official Random variables page](https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-12/fa4579cc54). Source snapshot: `work/brief162/official-random-variables.json`; item hashes: `work/brief162/official-quote-audit.json`. The sample/reference-sheet table form remains a separate unresolved check.

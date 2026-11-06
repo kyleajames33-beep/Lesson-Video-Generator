@@ -1,0 +1,571 @@
+WEBVTT
+
+00:00:00.302 --> 00:00:02.554
+Last video ended on this curve: e to
+
+00:00:02.574 --> 00:00:04.082
+the x, over x plus one.
+
+00:00:04.804 --> 00:00:06.988
+At x equals minus one, the bottom is
+
+00:00:07.009 --> 00:00:09.574
+zero, and you can't divide by zero, so
+
+00:00:09.675 --> 00:00:10.576
+there's no curve there.
+
+00:00:11.440 --> 00:00:13.367
+Now the slope at x equals zero.
+
+00:00:13.932 --> 00:00:15.945
+A quick guess: divide the derivatives.
+
+00:00:16.530 --> 00:00:18.290
+The top's derivative is e to the x,
+
+00:00:18.651 --> 00:00:20.852
+and the bottom's is one, so the guess
+
+00:00:20.893 --> 00:00:23.133
+gives a slope of one at x equals
+
+00:00:23.174 --> 00:00:23.514
+zero.
+
+00:00:24.096 --> 00:00:25.624
+But the tangent there is flat.
+
+00:00:26.328 --> 00:00:28.694
+So how do we really differentiate a quotient,
+
+00:00:29.036 --> 00:00:30.579
+and keep track of where it's defined?
+
+00:00:31.189 --> 00:00:32.722
+Think about what each part does.
+
+00:00:33.388 --> 00:00:34.693
+For this positive fraction,
+
+00:00:35.216 --> 00:00:38.328
+top growth pushes up and bottom growth pulls
+
+00:00:38.389 --> 00:00:38.669
+down.
+
+00:00:39.413 --> 00:00:41.558
+At x equals zero, the top, e to
+
+00:00:41.599 --> 00:00:43.303
+the x, is growing at a rate of
+
+00:00:43.545 --> 00:00:45.951
+one, and that pushes y up at a
+
+00:00:45.992 --> 00:00:46.413
+rate of one.
+
+00:00:47.056 --> 00:00:49.724
+The bottom, x plus one, is also growing
+
+00:00:49.786 --> 00:00:51.370
+at a rate of one, and that pulls
+
+00:00:51.592 --> 00:00:52.996
+y down at a rate of one.
+
+00:00:53.680 --> 00:00:55.686
+The push and the pull cancel, so the
+
+00:00:55.727 --> 00:00:56.488
+slope is zero.
+
+00:00:57.252 --> 00:00:59.337
+At x equals one, the push is about
+
+00:00:59.498 --> 00:01:01.603
+one point three six, and the pull is
+
+00:01:01.624 --> 00:01:02.666
+about point six eight,
+
+00:01:03.189 --> 00:01:05.174
+so the slope is about point six eight.
+
+00:01:05.757 --> 00:01:07.883
+That pull is the minus sign in the
+
+00:01:07.904 --> 00:01:08.445
+quotient rule.
+
+00:01:08.902 --> 00:01:10.698
+You met the quotient rule in Year 11.
+
+00:01:11.445 --> 00:01:12.758
+Here's why it has that shape.
+
+00:01:13.503 --> 00:01:15.771
+Dividing by g is the same as multiplying
+
+00:01:15.812 --> 00:01:18.401
+by one over g, so use last video's
+
+00:01:18.463 --> 00:01:19.024
+product rule.
+
+00:01:19.667 --> 00:01:21.974
+The top's turn is f prime, times one
+
+00:01:22.034 --> 00:01:22.415
+over g.
+
+00:01:23.097 --> 00:01:25.001
+For the bottom's turn, the chain rule says
+
+00:01:25.181 --> 00:01:28.047
+one over g has derivative minus g prime,
+
+00:01:28.167 --> 00:01:28.908
+over g squared.
+
+00:01:29.390 --> 00:01:31.556
+So that turn is minus f g prime,
+
+00:01:31.658 --> 00:01:32.359
+over g squared.
+
+00:01:33.163 --> 00:01:35.189
+Put both turns over g squared, and you
+
+00:01:35.210 --> 00:01:37.578
+get f prime g, minus f g prime,
+
+00:01:38.061 --> 00:01:39.023
+all over g squared.
+
+00:01:39.787 --> 00:01:42.195
+The top's derivative comes first, the minus is
+
+00:01:42.216 --> 00:01:44.162
+the bottom's pull, and the whole bottom is
+
+00:01:44.223 --> 00:01:44.644
+squared.
+
+00:01:45.446 --> 00:01:46.447
+Check our curve at zero:
+
+00:01:47.170 --> 00:01:48.171
+f prime g is one,
+
+00:01:48.713 --> 00:01:50.455
+f g prime is one, so the top
+
+00:01:50.556 --> 00:01:52.358
+is one minus one, which is zero.
+
+00:01:52.930 --> 00:01:54.043
+Let's use it on our curve.
+
+00:01:54.669 --> 00:01:58.156
+Before differentiating, write where it's defined: x can't
+
+00:01:58.217 --> 00:01:58.918
+be minus one.
+
+00:01:59.664 --> 00:02:00.232
+Now the parts.
+
+00:02:01.083 --> 00:02:03.176
+f is e to the x, and so
+
+00:02:03.238 --> 00:02:03.861
+is f prime.
+
+00:02:04.405 --> 00:02:07.097
+g is x plus one, so g prime
+
+00:02:07.259 --> 00:02:07.700
+is one.
+
+00:02:08.444 --> 00:02:10.307
+The top of the answer is e to
+
+00:02:10.328 --> 00:02:13.474
+the x times x plus one, minus e
+
+00:02:13.515 --> 00:02:14.596
+to the x times one.
+
+00:02:15.298 --> 00:02:16.801
+Take out e to the x, and the
+
+00:02:16.842 --> 00:02:19.827
+bracket becomes x plus one minus one, which
+
+00:02:19.908 --> 00:02:20.609
+is just x.
+
+00:02:21.312 --> 00:02:23.618
+So d y by d x is x
+
+00:02:23.819 --> 00:02:25.965
+e to the x, over x plus one
+
+00:02:26.026 --> 00:02:28.613
+squared, for x not equal to minus one.
+
+00:02:29.396 --> 00:02:31.963
+At x equals zero, that's zero, the flat
+
+00:02:32.044 --> 00:02:32.765
+tangent we saw.
+
+00:02:33.392 --> 00:02:34.204
+Now a harder one.
+
+00:02:34.568 --> 00:02:36.892
+Differentiate y equals the natural log of x,
+
+00:02:37.113 --> 00:02:39.457
+over cos x, and find the gradient at
+
+00:02:39.639 --> 00:02:40.259
+x equals one.
+
+00:02:41.204 --> 00:02:43.715
+The outside operation is division, so it's the
+
+00:02:43.776 --> 00:02:44.358
+quotient rule.
+
+00:02:45.102 --> 00:02:45.757
+Domain first.
+
+00:02:46.384 --> 00:02:48.768
+The natural log needs x positive, and the
+
+00:02:48.829 --> 00:02:51.474
+bottom can't be zero, so cos x can't
+
+00:02:51.515 --> 00:02:51.955
+be zero.
+
+00:02:52.784 --> 00:02:53.330
+Now the parts.
+
+00:02:54.018 --> 00:02:55.747
+f is the natural log of x, so
+
+00:02:55.909 --> 00:02:57.336
+f prime is one over x.
+
+00:02:58.000 --> 00:03:00.330
+g is cos x, so g prime is
+
+00:03:00.472 --> 00:03:01.396
+minus sine x.
+
+00:03:02.321 --> 00:03:04.350
+f prime g is cos x over x.
+
+00:03:04.993 --> 00:03:07.479
+Then minus f g prime is minus the
+
+00:03:07.521 --> 00:03:09.927
+natural log of x, times minus sine x,
+
+00:03:10.309 --> 00:03:11.893
+and the two minus signs make a plus.
+
+00:03:12.716 --> 00:03:14.522
+All of that sits over cos squared x.
+
+00:03:15.902 --> 00:03:17.899
+Now put x equals one.
+
+00:03:18.522 --> 00:03:20.848
+The natural log of one is zero, so
+
+00:03:20.888 --> 00:03:22.553
+the second term on top vanishes.
+
+00:03:23.174 --> 00:03:24.940
+That's the bottom's pull disappearing:
+
+00:03:25.482 --> 00:03:27.268
+when the top is zero, a change in
+
+00:03:27.309 --> 00:03:29.015
+the bottom can't move the fraction.
+
+00:03:29.837 --> 00:03:32.889
+What's left is cos one, over cos squared
+
+00:03:33.030 --> 00:03:35.038
+one, which is one over cos one.
+
+00:03:35.881 --> 00:03:38.606
+With x in radians, that's about one point
+
+00:03:38.727 --> 00:03:39.367
+eight five,
+
+00:03:39.869 --> 00:03:41.912
+and the tangent at the point one, zero
+
+00:03:42.013 --> 00:03:42.413
+agrees.
+
+00:03:43.316 --> 00:03:45.543
+Get the order backwards, and you'd get minus
+
+00:03:45.684 --> 00:03:48.333
+one point eight five, a falling tangent, but
+
+00:03:48.354 --> 00:03:49.377
+the curve is rising there.
+
+00:03:50.141 --> 00:03:52.373
+And in degrees you'd get about one, which
+
+00:03:52.414 --> 00:03:52.936
+is also wrong.
+
+00:03:53.702 --> 00:03:55.316
+One more habit, for simplifying.
+
+00:03:56.082 --> 00:03:59.862
+Differentiate y equals sine x, over x squared.
+
+00:04:00.485 --> 00:04:02.613
+The bottom can't be zero, so x can't
+
+00:04:02.633 --> 00:04:02.994
+be zero.
+
+00:04:03.856 --> 00:04:06.721
+The quotient rule gives x squared cos x,
+
+00:04:07.242 --> 00:04:08.885
+minus two x sine x,
+
+00:04:09.386 --> 00:04:10.427
+all over x to the four.
+
+00:04:11.391 --> 00:04:13.217
+Both terms on top share a factor of
+
+00:04:13.418 --> 00:04:15.646
+x, so take it out, and cancel it
+
+00:04:15.707 --> 00:04:17.011
+with one x from the bottom.
+
+00:04:17.694 --> 00:04:20.183
+That's allowed only because x isn't zero.
+
+00:04:20.904 --> 00:04:23.869
+So the answer is x cos x, minus
+
+00:04:24.009 --> 00:04:24.690
+two sine x,
+
+00:04:25.211 --> 00:04:26.053
+over x cubed,
+
+00:04:26.654 --> 00:04:28.657
+and it still comes with x not equal
+
+00:04:28.697 --> 00:04:29.078
+to zero.
+
+00:04:29.861 --> 00:04:32.011
+Cancelling a factor never gives back a point
+
+00:04:32.031 --> 00:04:33.678
+the original function didn't have.
+
+00:04:34.269 --> 00:04:35.784
+Here's the classic way to remember it.
+
+00:04:36.389 --> 00:04:38.760
+Low dee high, minus high dee low,
+
+00:04:39.344 --> 00:04:40.227
+over low squared.
+
+00:04:41.072 --> 00:04:42.820
+High is the top, and low is the
+
+00:04:42.841 --> 00:04:43.081
+bottom.
+
+00:04:43.965 --> 00:04:46.008
+Low dee high means the bottom times the
+
+00:04:46.029 --> 00:04:47.131
+derivative of the top,
+
+00:04:47.713 --> 00:04:49.636
+which is the same as f prime g.
+
+00:04:50.479 --> 00:04:53.145
+Saying low first keeps the order right, and
+
+00:04:53.166 --> 00:04:54.830
+the minus is the bottom's pull.
+
+00:04:55.532 --> 00:04:57.977
+And unlike a product, the order matters here:
+
+00:04:58.620 --> 00:05:01.005
+reversing the terms negates the derivative.
+
+00:05:03.753 --> 00:05:04.140
+Your turn.
+
+00:05:04.909 --> 00:05:07.877
+Differentiate y equals e to the x, over
+
+00:05:08.119 --> 00:05:10.264
+x plus two, and state any value of
+
+00:05:10.386 --> 00:05:11.789
+x that must be excluded.
+
+00:05:12.432 --> 00:05:13.257
+Pause here to answer.
+
+00:05:24.700 --> 00:05:25.343
+Domain first:
+
+00:05:25.905 --> 00:05:27.250
+x can't be minus two.
+
+00:05:28.074 --> 00:05:29.686
+f prime is e to the x, and
+
+00:05:29.726 --> 00:05:30.694
+g prime is one.
+
+00:05:31.075 --> 00:05:32.716
+So the top is e to the x
+
+00:05:32.796 --> 00:05:35.138
+times x plus two, minus e to the
+
+00:05:35.358 --> 00:05:35.478
+x,
+
+00:05:36.119 --> 00:05:37.880
+which factors to e to the x, times
+
+00:05:38.100 --> 00:05:38.761
+x plus one.
+
+00:05:39.481 --> 00:05:41.363
+So d y by d x is e
+
+00:05:41.383 --> 00:05:43.544
+to the x times x plus one, over
+
+00:05:43.664 --> 00:05:46.006
+x plus two squared, for x not equal
+
+00:05:46.026 --> 00:05:46.627
+to minus two.
+
+00:05:47.469 --> 00:05:48.873
+Start with high dee low instead,
+
+00:05:49.376 --> 00:05:50.499
+and you negate the derivative.
+
+00:05:52.210 --> 00:05:52.573
+Last one.
+
+00:05:53.299 --> 00:05:56.088
+Find the gradient of the curve y equals
+
+00:05:56.209 --> 00:05:58.275
+the natural log of x, over x,
+
+00:05:58.858 --> 00:06:00.062
+at x equals e.
+
+00:06:00.933 --> 00:06:01.721
+Pause here to answer.
+
+00:06:12.455 --> 00:06:14.905
+For positive x, f prime is one over
+
+00:06:15.127 --> 00:06:15.247
+x,
+
+00:06:15.790 --> 00:06:16.934
+and g prime is one.
+
+00:06:17.597 --> 00:06:19.838
+The top is one over x times x,
+
+00:06:20.299 --> 00:06:22.480
+minus the natural log of x, so it's
+
+00:06:22.681 --> 00:06:24.322
+one minus the natural log of x.
+
+00:06:24.903 --> 00:06:27.208
+So d y by d x is one
+
+00:06:27.429 --> 00:06:29.152
+minus the natural log of x, over x
+
+00:06:29.194 --> 00:06:29.513
+squared.
+
+00:06:30.357 --> 00:06:32.686
+At x equals e, the natural log of
+
+00:06:32.708 --> 00:06:35.158
+e is one, so the gradient is zero.
+
+00:06:35.801 --> 00:06:37.886
+Dividing the derivatives would give one over e,
+
+00:06:37.928 --> 00:06:39.612
+but the tangent at e is flat.
+
+00:06:41.400 --> 00:06:44.644
+A quotient combines both turns, with the minus
+
+00:06:44.724 --> 00:06:46.846
+in the bottom's term, and keeps its domain.
+
+00:06:47.832 --> 00:06:50.187
+Next, we'll use the sign of a derivative.
+
+00:06:50.989 --> 00:06:52.751
+Here's the derivative of our first curve,
+
+00:06:53.271 --> 00:06:55.333
+x e to the x, over x plus
+
+00:06:55.453 --> 00:06:56.034
+one squared.
+
+00:06:56.834 --> 00:06:58.696
+Where is it positive, where is it negative,
+
+00:06:59.117 --> 00:07:01.600
+and what happens at x equals minus one?
+
+00:07:04.268 --> 00:07:05.070
+Here are the key notes.
+
+00:07:05.714 --> 00:07:07.441
+Pause the video if you need more time
+
+00:07:07.503 --> 00:07:07.984
+to copy them.

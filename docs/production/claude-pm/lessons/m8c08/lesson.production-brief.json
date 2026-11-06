@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c08/lesson.json",
+    "lessonSha256": "da1177e56bdb88ffb6fdc64ea49e397ddb8a277406ed287122a1ab384a7511f0"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Five bottles on the prep room bench have lost their labels. The list says they hold cyclohexane, cyclohexene, ethanol, 2-methylpropan-2-ol and ethanoic acid. They're all colourless liquids, so looking won't help. You can't see a double bond or an O H group, but you can see what it does. Three quick tests, each watching for one group, can rule candidates out.",
+    "stopsAfter": "predicting the reagent and the positive and negative observations for each group; reading green and orange dichromate results with their limits; explaining fresh portions and the order; reporting each group separately; excluding candidates from a list; stating what the three tests cannot show.",
+    "nextLesson": "running the tests safely with controls (route chem-m8-p05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c08.md"
+  ],
+  "teaching": {
+    "task": "Five colourless liquids have lost their labels, and you know which five compounds they are. How can three quick tests, each watching for one group, tell you which bottle is which?",
+    "causalExplanation": "(1) you can't see a group, but you can see what it does; three tests, each watching for one group, rule candidates out (1); (2) pick a reaction only one group does fast, with a visible change: predict before testing (2); (3) bromine adds across a C=C and is used up, so the orange fades; an alkane has no C=C to open; bright light lets an alkane substitute slowly, so test in room light and read at once (3); (4) a carboxylic acid is a stronger acid than carbonic acid, so it protonates hydrogen carbonate; carbonic acid breaks up into water and CO₂, so it fizzes; CO₂ turns limewater milky; an alcohol is far too weak (4); (5) a primary or secondary alcohol is oxidised and orange dichromate is reduced to green Cr³⁺; a tertiary alcohol has no H on its C–OH carbon, so it stays orange (5); (6) green means something was oxidised, and aldehydes do it too; orange means no primary or secondary alcohol detected, not no OH (6); (7) fresh portions make the tests independent, so the order sets the hazard: mildest first, Cr(VI) last as a demonstration (7); (8) one molecule can carry two groups, so a \"yes\" does not mean \"no\" for the others: run all three and report each (8); (9) the worked exclusion, where the \"no\" results do half the work (9); (10) the limits: two candidates can give identical results; primary against secondary; position; groups, not structure (10); memory aid (11); attempts (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "Five bottles on the prep room bench have lost their labels. Each test borrows a reaction from Module 7. First, the carbon to carbon double bond. Next, the carboxylic acid. Then the hydroxyl group. Green tells you something in the tube was oxidised. Use a fresh portion of the sample for each test, so one reagent can't spoil the next result. Here's the trap. Back to the bench. Suppose another bottle had given no change in all three tests. One line for the three tests: fizz, fade, green. Your turn. No fizz rules out hexanoic acid. Last one. The conclusion isn't supported. So, when you meet an unknown, ask three questions.",
+    "openingDecision": "Five bottles on the prep room bench have lost their labels. The list says they hold cyclohexane, cyclohexene, ethanol, 2-methylpropan-2-ol and ethanoic acid. They're all colourless liquids, so looking won't help. You can't see a double bond or an O H group, but you can see what it does. Three quick tests, each watching for one group, can rule candidates out.",
+    "understandingCheck": "(A1) \"An unknown liquid is one of these four compounds: hexane, hexan-1-ol, hex-5-en-1-ol, hexanoic acid. Separate portions of the liquid were tested. Solid sodium hydrogen carbonate: no effervescence. Bromine water, in normal room light: orange to colourless within seconds. Acidified potassium dichromate, warmed: orange to green. Identify the unknown, and justify your answer with reference to each result.\" Answer: hex-5-en-1-ol. No fizz rules out hexanoic acid; the fade supports a C=C, ruling out hexane and hexan-1-ol; only hex-5-en-1-ol remains, and the green is consistent with its OH group (not the deciding result). Crossed mistake: \"hexan-1-ol: it turned dichromate green\" (using one result and ignoring another; pack trap \"one test treated as full structure\"). Revision 2: hexane replaces hex-1-ene (author note c fallback), so the identification no longer depends on an alkene staying orange. (A2) \"Liquid Q is known to be an alkane, an alkene, an alcohol or a carboxylic acid; no other reactive groups are present. Q produced no effervescence when solid sodium hydrogen carbonate was added. A student concluded that Q is an alcohol. Evaluate the student's conclusion. Outline TWO further tests, with expected results, stating what each result would support, and one limit of these tests.\" Answer: not supported; no fizz rules out only a carboxylic acid, so Q could be an alkane, an alkene or an alcohol; fresh portion with bromine water (fades within seconds: C=C supported); fresh portion warmed with acidified dichromate (if the bromine stayed orange, green supports a primary or secondary alcohol); limit: orange leaves an alkane or a tertiary alcohol, which these tests can't separate. Crossed mistake: \"no fizz, so Q is an alcohol\" (treating one \"no\" as a \"yes\" for something else; site Think First idea, original wording; pack trap \"alcohol OH assumed acidic enough for carbonate\", turned round).",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-01 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"conduct qualitative investigations to test for the presence in organic molecules of the following functional groups:\n- carbon–carbon double bonds\n- hydroxyl groups\n- carboxylic acids (ACSCH130)\"\n\n(The dash in \"carbon–carbon\" is an en dash as printed, not an em dash.) This video teaches the tests and the reasoning; the investigation (controls, method, risk) is chem-m8-p05."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "test tubes, racks, bottles and limewater as painted plates listed by filename, never stretched, never cross-faded between different rack sets; no people, hands or faces (drops, shaking and the bung are coded motion); molecules coded in the c08a style; the decision flowchart and the candidate strip coded (abstract diagrams); at most about three bright text items, earlier lines dim; one test on screen at a time until the flowchart; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"usually\", \"points to\", \"supports\", \"detected\").",
+    "transitionPlan": "heading writes on: \"Which group is in the bottle?\". the prediction grid writes in the right half: three rows, each a question with its group chip: \"adds bromine? → C=C\" (teal), \"acid enough for a carbonate? → –COOH\" (red), \"can be oxidised? → –OH\" (violet). the grid shrinks to a small stack at the right edge, its first row lit. the bromine tubes shrink and dim into the first row position. the fizz tubes shrink and dim into the second position. the board clears to the green and orange dichromate tubes side by side at centre. the three-test row returns small, all three \"before\" tubes, each fed by its own coded arrow from one bottle (tag \"fresh portion each test\"; grey \"c03a\" chip). the board clears. the board returns to the candidate strip (large, centre) with bottle X below it. the strip resets. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions). the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Which group is in the bottle?\". Five copies of p03-dropper-bottle-v1.png (clear dropper bottle, blank cream label; one plate, uniform scale) stand in a row at centre; coded letters V, W, X, Y, Z write on the labels. As each compound is named, its coded skeletal structure writes small on the candidate strip above (cyclohexane; cyclohexene with the C=C ringed teal; ethanol with OH ringed violet; 2-methylpropan-2-ol with OH ringed violet; ethanoic acid with COOH ringed red), in the order spoken, not over particular bottles (the bottle-to-name match is the unknown). On \"does\" three small coded icons write under the bottles: a fading orange drop, a green drop, a cluster of bubbles. On \"out\" the bottles slide down and shrink to the lower edge; the strip stays. Bright at the end: the heading, the strip, the three icons (one item).",
+      "teachingReason": "Five bottles on the prep room bench have lost their labels.",
+      "narrationCue": "does / out",
+      "motionPurpose": "heading writes on: \"Which group is in the bottle?\". Five copies of p03-dropper-bottle-v1.png (clear dropper bottle, blank cream label; one plate, uniform scale) stand in a row at centre; coded letters V, W, X, Y, Z write on the labels. As each compound is named, its coded skeletal structure writes small on the candidate strip above (cyclohexane; cyclohexene with the C=C ringed teal; ethanol with OH ringed violet; 2-methylpropan-2-ol with OH ringed violet; ethanoic acid with COOH ringed red), in the order spoken, not over particular bottles (the bottle-to-name match is the unknown). On \"does\" three small coded icons write under the bottles: a fading orange drop, a green drop, a cluster of bubbles. On \"out\" the bottles slide down and shrink to the lower edge; the strip stays. Bright at the end: the heading, the strip, the three icons (one item).",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Which group is in the bottle?\". Five copies of p03-dropper-bottle-v1.png (clear dropper bottle, blank cream label; one plate, uniform scale) stand in a row at centre; coded letters V, W, X, Y, Z write on the labels. As each compound is named, its coded skeletal structure writes small on the candidate strip above (cyclohexane; cyclohexene with the C=C ringed teal; ethanol with OH ringed violet; 2-methylpropan-2-ol with OH ringed violet; ethanoic acid with COOH ringed red), in the order spoken, not over particular bottles (the bottle-to-name match is the unknown). On \"does\" three small coded icons write under the bottles: a fading orange drop, a green drop, a cluster of bubbles. On \"out\" the bottles slide down and shrink to the lower edge; the strip stays. Bright at the end: the heading, the strip, the three icons (one item).",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (five bottles, no labels): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "reaction-you-can-see",
+      "visualDecision": "new",
+      "visualReference": "the prediction grid writes in the right half: three rows, each a question with its group chip: \"adds bromine? → C=C\" (teal), \"acid enough for a carbonate? → –COOH\" (red), \"can be oxidised? → –OH\" (violet). The group chips stay hidden (grey \"?\") while the questions write, then reveal one by one on \"bromine\", \"carbonate\" and \"oxidised\" (a short beat after each question, so the student can predict). Grey chips beside the rows: \"M7: addition\", \"M7: acids\", \"M7: alcohol oxidation\". Bright at the end: the three group chips.",
+      "teachingReason": "Each test borrows a reaction from Module 7.",
+      "narrationCue": "bromine",
+      "motionPurpose": "the prediction grid writes in the right half: three rows, each a question with its group chip: \"adds bromine? → C=C\" (teal), \"acid enough for a carbonate? → –COOH\" (red), \"can be oxidised? → –OH\" (violet). The group chips stay hidden (grey \"?\") while the questions write, then reveal one by one on \"bromine\", \"carbonate\" and \"oxidised\" (a short beat after each question, so the student can predict). Grey chips beside the rows: \"M7: addition\", \"M7: acids\", \"M7: alcohol oxidation\". Bright at the end: the three group chips.",
+      "motionRole": "explain",
+      "onScreenChange": "the prediction grid writes in the right half: three rows, each a question with its group chip: \"adds bromine? → C=C\" (teal), \"acid enough for a carbonate? → –COOH\" (red), \"can be oxidised? → –OH\" (violet). The group chips stay hidden (grey \"?\") while the questions write, then reveal one by one on \"bromine\", \"carbonate\" and \"oxidised\" (a short beat after each question, so the student can predict). Grey chips beside the rows: \"M7: addition\", \"M7: acids\", \"M7: alcohol oxidation\". Bright at the end: the three group chips.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a test is a reaction you can see: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cc-fade",
+      "visualDecision": "new",
+      "visualReference": "the grid shrinks to a small stack at the right edge, its first row lit. Left: m8-bromine-water-orange-v1.png in the first position of the three-test row. A reagent drop falls; the tube rocks (coded shake). On \"fades\" it cross-fades in place to m8-bromine-water-clear-v1.png, tag \"C=C: orange → colourless, within seconds\" (bright); a grey strip writes under it: \"C=C + Br₂ → addition product (Br₂ used up)\" with a \"p02\" chip. On \"orange\" a second, small m8-bromine-water-orange-v1.png appears beside it, tag \"alkane: stays orange\". On \"once\" a small coded sun icon at the edge is crossed, grey tag \"bright light: slow alkane reaction (c04b)\". On \"cyclohexene fades it\" the cyclohexene C=C ring pulses teal on the candidate strip and a small faded-tube icon docks under it; on \"cyclohexane doesn't\" a small orange-tube icon docks under cyclohexane. Bright at the end: the faded tube's tag, the alkane tag, the two strip icons.",
+      "teachingReason": "First, the carbon to carbon double bond.",
+      "narrationCue": "fades / orange / once / cyclohexene fades it / cyclohexane doesn't",
+      "motionPurpose": "the grid shrinks to a small stack at the right edge, its first row lit. Left: m8-bromine-water-orange-v1.png in the first position of the three-test row. A reagent drop falls; the tube rocks (coded shake). On \"fades\" it cross-fades in place to m8-bromine-water-clear-v1.png, tag \"C=C: orange → colourless, within seconds\" (bright); a grey strip writes under it: \"C=C + Br₂ → addition product (Br₂ used up)\" with a \"p02\" chip. On \"orange\" a second, small m8-bromine-water-orange-v1.png appears beside it, tag \"alkane: stays orange\". On \"once\" a small coded sun icon at the edge is crossed, grey tag \"bright light: slow alkane reaction (c04b)\". On \"cyclohexene fades it\" the cyclohexene C=C ring pulses teal on the candidate strip and a small faded-tube icon docks under it; on \"cyclohexane doesn't\" a small orange-tube icon docks under cyclohexane. Bright at the end: the faded tube's tag, the alkane tag, the two strip icons.",
+      "motionRole": "explain",
+      "onScreenChange": "the grid shrinks to a small stack at the right edge, its first row lit. Left: m8-bromine-water-orange-v1.png in the first position of the three-test row. A reagent drop falls; the tube rocks (coded shake). On \"fades\" it cross-fades in place to m8-bromine-water-clear-v1.png, tag \"C=C: orange → colourless, within seconds\" (bright); a grey strip writes under it: \"C=C + Br₂ → addition product (Br₂ used up)\" with a \"p02\" chip. On \"orange\" a second, small m8-bromine-water-orange-v1.png appears beside it, tag \"alkane: stays orange\". On \"once\" a small coded sun icon at the edge is crossed, grey tag \"bright light: slow alkane reaction (c04b)\". On \"cyclohexene fades it\" the cyclohexene C=C ring pulses teal on the candidate strip and a small faded-tube icon docks under it; on \"cyclohexane doesn't\" a small orange-tube icon docks under cyclohexane. Bright at the end: the faded tube's tag, the alkane tag, the two strip icons.",
+      "motionTools": [
+        "m8-bromine-water-orange-v1.png",
+        "m8-bromine-water-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "C=C: the fade: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "cooh-fizz",
+      "visualDecision": "new",
+      "visualReference": "the bromine tubes shrink and dim into the first row position. Second position: m8-carbonate-tube-before-v1.png (new, in the dichromate rack; clear liquid, small heap of white solid at the base). A coded spatula outline tips a small heap in (no hands). A small ProtonHop (chem-m6-c01, as c09 scene 10) runs between \"R–COOH\" and \"HCO₃⁻\" above the tube, grey chip \"c09: stronger acid than carbonic acid\". On \"fizzes\" the tube cross-fades to m8-carbonate-tube-fizz-v1.png; the line \"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\" writes beside it (bright). On \"milky\" m6-limewater-clear-v1.png appears to the right; the gas path's coded bubbles rise from the fizz tube to the limewater plate's delivery tube, and the plate cross-fades to m6-limewater-milky-v1.png; line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" (grey). On the last \"fizz\" a small m8-carbonate-tube-before-v1.png copy appears with tag \"alcohol: no fizz\". The ethanoic acid COOH ring pulses red on the strip. The first equation dims as the limewater line writes. Bright at the end: the fizz tube, the limewater pair, the \"no fizz\" tag.",
+      "teachingReason": "Next, the carboxylic acid.",
+      "narrationCue": "fizzes / milky",
+      "motionPurpose": "the bromine tubes shrink and dim into the first row position. Second position: m8-carbonate-tube-before-v1.png (new, in the dichromate rack; clear liquid, small heap of white solid at the base). A coded spatula outline tips a small heap in (no hands). A small ProtonHop (chem-m6-c01, as c09 scene 10) runs between \"R–COOH\" and \"HCO₃⁻\" above the tube, grey chip \"c09: stronger acid than carbonic acid\". On \"fizzes\" the tube cross-fades to m8-carbonate-tube-fizz-v1.png; the line \"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\" writes beside it (bright). On \"milky\" m6-limewater-clear-v1.png appears to the right; the gas path's coded bubbles rise from the fizz tube to the limewater plate's delivery tube, and the plate cross-fades to m6-limewater-milky-v1.png; line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" (grey). On the last \"fizz\" a small m8-carbonate-tube-before-v1.png copy appears with tag \"alcohol: no fizz\". The ethanoic acid COOH ring pulses red on the strip. The first equation dims as the limewater line writes. Bright at the end: the fizz tube, the limewater pair, the \"no fizz\" tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the bromine tubes shrink and dim into the first row position. Second position: m8-carbonate-tube-before-v1.png (new, in the dichromate rack; clear liquid, small heap of white solid at the base). A coded spatula outline tips a small heap in (no hands). A small ProtonHop (chem-m6-c01, as c09 scene 10) runs between \"R–COOH\" and \"HCO₃⁻\" above the tube, grey chip \"c09: stronger acid than carbonic acid\". On \"fizzes\" the tube cross-fades to m8-carbonate-tube-fizz-v1.png; the line \"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\" writes beside it (bright). On \"milky\" m6-limewater-clear-v1.png appears to the right; the gas path's coded bubbles rise from the fizz tube to the limewater plate's delivery tube, and the plate cross-fades to m6-limewater-milky-v1.png; line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\" (grey). On the last \"fizz\" a small m8-carbonate-tube-before-v1.png copy appears with tag \"alcohol: no fizz\". The ethanoic acid COOH ring pulses red on the strip. The first equation dims as the limewater line writes. Bright at the end: the fizz tube, the limewater pair, the \"no fizz\" tag.",
+      "motionTools": [
+        "m8-carbonate-tube-before-v1.png",
+        "ProtonHop",
+        "m8-carbonate-tube-fizz-v1.png",
+        "m6-limewater-clear-v1.png",
+        "m6-limewater-milky-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "–COOH: the fizz: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "oh-green",
+      "visualDecision": "new",
+      "visualReference": "the fizz tubes shrink and dim into the second position. Third position: m8-dichromate-orange-v1.png; a coded warm glow under the rack (no flame; grey chip \"water bath\"). On \"ions\" it cross-fades to m8-dichromate-green-v1.png; colour line \"Cr₂O₇²⁻ (orange) → Cr³⁺ (green)\" writes; ethanol's structure enlarges at the right with its C–OH carbon's H ringed (tag \"1° or 2°: H on the C–OH carbon\", grey chip \"c08a\"). On \"orange\" 2-methylpropan-2-ol draws beside it with its C–OH carbon ringed and \"no H\" (tag \"3°: stays orange\"), and a small m8-dichromate-orange-v1.png copy appears. (On \"Ethanol is a primary alcohol\" ethanol's structure carries the tag \"1°\" and a small green-tube icon docks under it on the strip; 2-methylpropan-2-ol gets an orange-tube icon on \"orange\".) On \"smell\" m7-ester-fruit-v1.png appears very small with a grey tag \"esterification (c10): fruity smell; needs conc. H₂SO₄\" and then dims. Bright at the end: the green tube, the 1° tag, the 3° tag.",
+      "teachingReason": "Then the hydroxyl group.",
+      "narrationCue": "ions / orange / Ethanol is a primary alcohol / smell",
+      "motionPurpose": "the fizz tubes shrink and dim into the second position. Third position: m8-dichromate-orange-v1.png; a coded warm glow under the rack (no flame; grey chip \"water bath\"). On \"ions\" it cross-fades to m8-dichromate-green-v1.png; colour line \"Cr₂O₇²⁻ (orange) → Cr³⁺ (green)\" writes; ethanol's structure enlarges at the right with its C–OH carbon's H ringed (tag \"1° or 2°: H on the C–OH carbon\", grey chip \"c08a\"). On \"orange\" 2-methylpropan-2-ol draws beside it with its C–OH carbon ringed and \"no H\" (tag \"3°: stays orange\"), and a small m8-dichromate-orange-v1.png copy appears. (On \"Ethanol is a primary alcohol\" ethanol's structure carries the tag \"1°\" and a small green-tube icon docks under it on the strip; 2-methylpropan-2-ol gets an orange-tube icon on \"orange\".) On \"smell\" m7-ester-fruit-v1.png appears very small with a grey tag \"esterification (c10): fruity smell; needs conc. H₂SO₄\" and then dims. Bright at the end: the green tube, the 1° tag, the 3° tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the fizz tubes shrink and dim into the second position. Third position: m8-dichromate-orange-v1.png; a coded warm glow under the rack (no flame; grey chip \"water bath\"). On \"ions\" it cross-fades to m8-dichromate-green-v1.png; colour line \"Cr₂O₇²⁻ (orange) → Cr³⁺ (green)\" writes; ethanol's structure enlarges at the right with its C–OH carbon's H ringed (tag \"1° or 2°: H on the C–OH carbon\", grey chip \"c08a\"). On \"orange\" 2-methylpropan-2-ol draws beside it with its C–OH carbon ringed and \"no H\" (tag \"3°: stays orange\"), and a small m8-dichromate-orange-v1.png copy appears. (On \"Ethanol is a primary alcohol\" ethanol's structure carries the tag \"1°\" and a small green-tube icon docks under it on the strip; 2-methylpropan-2-ol gets an orange-tube icon on \"orange\".) On \"smell\" m7-ester-fruit-v1.png appears very small with a grey tag \"esterification (c10): fruity smell; needs conc. H₂SO₄\" and then dims. Bright at the end: the green tube, the 1° tag, the 3° tag.",
+      "motionTools": [
+        "m8-dichromate-orange-v1.png",
+        "m8-dichromate-green-v1.png",
+        "m7-ester-fruit-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "–OH: the green: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "green-limits",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the green and orange dichromate tubes side by side at centre. Above the green tube a card writes: \"green = something was oxidised\"; a grey chip \"aldehydes too (c08b)\" hangs under it; on \"On our list\" the candidate strip glows briefly with a grey tag \"no aldehydes on the list\" and the card adds \"→ 1° or 2° alcohol\". On \"An alkene might also\" a second grey chip hangs under it: \"after a bromine fade: green alone isn't proof of –OH\". Above the orange tube: \"orange ≠ no OH\" (the 3° structure from scene 5 returns small, its OH ringed violet); on \"detected\" the card line becomes \"orange = no 1° or 2° alcohol detected\" (bright). Bright at the end: the two card lines.",
+      "teachingReason": "Green tells you something in the tube was oxidised.",
+      "narrationCue": "On our list / An alkene might also / detected",
+      "motionPurpose": "the board clears to the green and orange dichromate tubes side by side at centre. Above the green tube a card writes: \"green = something was oxidised\"; a grey chip \"aldehydes too (c08b)\" hangs under it; on \"On our list\" the candidate strip glows briefly with a grey tag \"no aldehydes on the list\" and the card adds \"→ 1° or 2° alcohol\". On \"An alkene might also\" a second grey chip hangs under it: \"after a bromine fade: green alone isn't proof of –OH\". Above the orange tube: \"orange ≠ no OH\" (the 3° structure from scene 5 returns small, its OH ringed violet); on \"detected\" the card line becomes \"orange = no 1° or 2° alcohol detected\" (bright). Bright at the end: the two card lines.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the green and orange dichromate tubes side by side at centre. Above the green tube a card writes: \"green = something was oxidised\"; a grey chip \"aldehydes too (c08b)\" hangs under it; on \"On our list\" the candidate strip glows briefly with a grey tag \"no aldehydes on the list\" and the card adds \"→ 1° or 2° alcohol\". On \"An alkene might also\" a second grey chip hangs under it: \"after a bromine fade: green alone isn't proof of –OH\". Above the orange tube: \"orange ≠ no OH\" (the 3° structure from scene 5 returns small, its OH ringed violet); on \"detected\" the card line becomes \"orange = no 1° or 2° alcohol detected\" (bright). Bright at the end: the two card lines.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what green can and can't say: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "order",
+      "visualDecision": "adjust",
+      "visualReference": "the three-test row returns small, all three \"before\" tubes, each fed by its own coded arrow from one bottle (tag \"fresh portion each test\"; grey \"c03a\" chip). On \"order\" the three arrows are numbered 1, 2, 3 under the tubes: \"1 NaHCO₃ (mildest)\", \"2 bromine water\", \"3 acidified K₂Cr₂O₇ (Cr(VI))\". On \"cupboard\" m7-fume-cupboard-v1.png appears small behind the third tube, tag \"teacher demonstration\" (grey chip \"p04\"). Bright at the end: the numbered order and the demonstration tag.",
+      "teachingReason": "Use a fresh portion of the sample for each test, so one reagent can't spoil the next result.",
+      "narrationCue": "order / cupboard",
+      "motionPurpose": "the three-test row returns small, all three \"before\" tubes, each fed by its own coded arrow from one bottle (tag \"fresh portion each test\"; grey \"c03a\" chip). On \"order\" the three arrows are numbered 1, 2, 3 under the tubes: \"1 NaHCO₃ (mildest)\", \"2 bromine water\", \"3 acidified K₂Cr₂O₇ (Cr(VI))\". On \"cupboard\" m7-fume-cupboard-v1.png appears small behind the third tube, tag \"teacher demonstration\" (grey chip \"p04\"). Bright at the end: the numbered order and the demonstration tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the three-test row returns small, all three \"before\" tubes, each fed by its own coded arrow from one bottle (tag \"fresh portion each test\"; grey \"c03a\" chip). On \"order\" the three arrows are numbered 1, 2, 3 under the tubes: \"1 NaHCO₃ (mildest)\", \"2 bromine water\", \"3 acidified K₂Cr₂O₇ (Cr(VI))\". On \"cupboard\" m7-fume-cupboard-v1.png appears small behind the third tube, tag \"teacher demonstration\" (grey chip \"p04\"). Bright at the end: the numbered order and the demonstration tag.",
+      "motionTools": [
+        "m7-fume-cupboard-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "fresh portions, and the order: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "two-groups",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Prop-2-en-1-ol draws large at centre (skeletal; C=C ringed teal, OH ringed violet; grey tag \"drawn only: toxic, not a class sample\"). Below, small copies of the row's plates: on \"fades\" m8-bromine-water-clear-v1.png with a teal tick; a chip \"alkene!\" writes, then on \"green\" m8-dichromate-green-v1.png appears with a violet tick, and the \"alkene!\" chip is crossed (caption \"the structure shows an alcohol too\"). On \"own\" a two-row report card writes: \"C=C: supported\" (teal) and \"–OH: in the known structure; green consistent\" (violet), with a third row \"–COOH: not detected\" (grey, after a fizz-tube thumbnail with no bubbles). On \"an acid with a double bond\" a small grey structure (but-3-enoic acid, CH₂=CHCH₂COOH, C=C teal and COOH red) writes beside the card with a fizz-tube and a faded-tube thumbnail (tag \"fizz and fade\"). Bright at the end: the report card.",
+      "teachingReason": "Here's the trap.",
+      "narrationCue": "fades / green / own / an acid with a double bond",
+      "motionPurpose": "the board clears. Prop-2-en-1-ol draws large at centre (skeletal; C=C ringed teal, OH ringed violet; grey tag \"drawn only: toxic, not a class sample\"). Below, small copies of the row's plates: on \"fades\" m8-bromine-water-clear-v1.png with a teal tick; a chip \"alkene!\" writes, then on \"green\" m8-dichromate-green-v1.png appears with a violet tick, and the \"alkene!\" chip is crossed (caption \"the structure shows an alcohol too\"). On \"own\" a two-row report card writes: \"C=C: supported\" (teal) and \"–OH: in the known structure; green consistent\" (violet), with a third row \"–COOH: not detected\" (grey, after a fizz-tube thumbnail with no bubbles). On \"an acid with a double bond\" a small grey structure (but-3-enoic acid, CH₂=CHCH₂COOH, C=C teal and COOH red) writes beside the card with a fizz-tube and a faded-tube thumbnail (tag \"fizz and fade\"). Bright at the end: the report card.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Prop-2-en-1-ol draws large at centre (skeletal; C=C ringed teal, OH ringed violet; grey tag \"drawn only: toxic, not a class sample\"). Below, small copies of the row's plates: on \"fades\" m8-bromine-water-clear-v1.png with a teal tick; a chip \"alkene!\" writes, then on \"green\" m8-dichromate-green-v1.png appears with a violet tick, and the \"alkene!\" chip is crossed (caption \"the structure shows an alcohol too\"). On \"own\" a two-row report card writes: \"C=C: supported\" (teal) and \"–OH: in the known structure; green consistent\" (violet), with a third row \"–COOH: not detected\" (grey, after a fizz-tube thumbnail with no bubbles). On \"an acid with a double bond\" a small grey structure (but-3-enoic acid, CH₂=CHCH₂COOH, C=C teal and COOH red) writes beside the card with a fizz-tube and a faded-tube thumbnail (tag \"fizz and fade\"). Bright at the end: the report card.",
+      "motionTools": [
+        "m8-bromine-water-clear-v1.png",
+        "m8-dichromate-green-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one molecule, two groups: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "excluding",
+      "visualDecision": "adjust",
+      "visualReference": "the board returns to the candidate strip (large, centre) with bottle X below it. The decision flowchart builds in the right half, one box per sentence, each with both branches continuing. On the first \"out\" the fizz box lights \"no\", and ethanoic acid greys and strikes on the strip; the fizz tube thumbnail shows no bubbles. On the second \"out\" the bromine box lights \"stays orange\" and cyclohexene strikes. On \"orange\" the dichromate box lights \"green\", and cyclohexane and 2-methylpropan-2-ol strike together (tag \"both would stay orange\"). On \"ethanol\" its structure glows and bottle X gets a coded label \"ethanol\". On \"half the work\" the two \"no\" boxes pulse; on \"write down every result\" a small results line writes under bottle X: \"fizz: none | bromine: stays orange | dichromate: green\". Bright at the end: ethanol on the strip, bottle X's label, the two \"no\" boxes.",
+      "teachingReason": "Back to the bench.",
+      "narrationCue": "orange / ethanol / half the work / write down every result",
+      "motionPurpose": "the board returns to the candidate strip (large, centre) with bottle X below it. The decision flowchart builds in the right half, one box per sentence, each with both branches continuing. On the first \"out\" the fizz box lights \"no\", and ethanoic acid greys and strikes on the strip; the fizz tube thumbnail shows no bubbles. On the second \"out\" the bromine box lights \"stays orange\" and cyclohexene strikes. On \"orange\" the dichromate box lights \"green\", and cyclohexane and 2-methylpropan-2-ol strike together (tag \"both would stay orange\"). On \"ethanol\" its structure glows and bottle X gets a coded label \"ethanol\". On \"half the work\" the two \"no\" boxes pulse; on \"write down every result\" a small results line writes under bottle X: \"fizz: none | bromine: stays orange | dichromate: green\". Bright at the end: ethanol on the strip, bottle X's label, the two \"no\" boxes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns to the candidate strip (large, centre) with bottle X below it. The decision flowchart builds in the right half, one box per sentence, each with both branches continuing. On the first \"out\" the fizz box lights \"no\", and ethanoic acid greys and strikes on the strip; the fizz tube thumbnail shows no bubbles. On the second \"out\" the bromine box lights \"stays orange\" and cyclohexene strikes. On \"orange\" the dichromate box lights \"green\", and cyclohexane and 2-methylpropan-2-ol strike together (tag \"both would stay orange\"). On \"ethanol\" its structure glows and bottle X gets a coded label \"ethanol\". On \"half the work\" the two \"no\" boxes pulse; on \"write down every result\" a small results line writes under bottle X: \"fizz: none | bromine: stays orange | dichromate: green\". Bright at the end: ethanol on the strip, bottle X's label, the two \"no\" boxes.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "excluding candidates: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "limits",
+      "visualDecision": "new",
+      "visualReference": "the strip resets. A second bottle, Y, gets three result chips: \"no fizz\", \"stays orange\", \"stays orange\". Cyclohexane and 2-methylpropan-2-ol both stay lit, with a bracket \"same results: can't tell\". On \"primary or secondary\" a small pair, propan-1-ol and propan-2-ol, writes with one shared green dichromate thumbnail (tag \"both green\"); on \"double bond sits\" but-1-ene and but-2-ene write with one shared faded-bromine thumbnail. On \"infrared spectrum\" a small coded IR trace sketch (one broad band near 3300 cm⁻¹, tag \"O–H band: coming in IR\") appears under 2-methylpropan-2-ol only. On \"structure\" a grey card writes: \"tests: which groups. Spectra (MS, IR, NMR): the structure.\" Bright at the end: the bracket and the grey card.",
+      "teachingReason": "Suppose another bottle had given no change in all three tests.",
+      "narrationCue": "primary or secondary / double bond sits / infrared spectrum / structure",
+      "motionPurpose": "the strip resets. A second bottle, Y, gets three result chips: \"no fizz\", \"stays orange\", \"stays orange\". Cyclohexane and 2-methylpropan-2-ol both stay lit, with a bracket \"same results: can't tell\". On \"primary or secondary\" a small pair, propan-1-ol and propan-2-ol, writes with one shared green dichromate thumbnail (tag \"both green\"); on \"double bond sits\" but-1-ene and but-2-ene write with one shared faded-bromine thumbnail. On \"infrared spectrum\" a small coded IR trace sketch (one broad band near 3300 cm⁻¹, tag \"O–H band: coming in IR\") appears under 2-methylpropan-2-ol only. On \"structure\" a grey card writes: \"tests: which groups. Spectra (MS, IR, NMR): the structure.\" Bright at the end: the bracket and the grey card.",
+      "motionRole": "explain",
+      "onScreenChange": "the strip resets. A second bottle, Y, gets three result chips: \"no fizz\", \"stays orange\", \"stays orange\". Cyclohexane and 2-methylpropan-2-ol both stay lit, with a bracket \"same results: can't tell\". On \"primary or secondary\" a small pair, propan-1-ol and propan-2-ol, writes with one shared green dichromate thumbnail (tag \"both green\"); on \"double bond sits\" but-1-ene and but-2-ene write with one shared faded-bromine thumbnail. On \"infrared spectrum\" a small coded IR trace sketch (one broad band near 3300 cm⁻¹, tag \"O–H band: coming in IR\") appears under 2-methylpropan-2-ol only. On \"structure\" a grey card writes: \"tests: which groups. Spectra (MS, IR, NMR): the structure.\" Bright at the end: the bracket and the grey card.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what the tests can't tell you: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Handwritten line: \"Fizz, fade, green.\" The three-test row returns under it in its positive states (m8-carbonate-tube-fizz-v1.png, m8-bromine-water-clear-v1.png, m8-dichromate-green-v1.png), each word over its tube; group chips write under each as spoken (–COOH red, C=C teal, 1° or 2° –OH violet). Small grey second line: \"Every no rules a candidate out.\" Hold about 2 seconds.",
+      "teachingReason": "One line for the three tests: fizz, fade, green.",
+      "narrationCue": "One line for the three tests: fizz, fade, green",
+      "motionPurpose": "the board clears. Handwritten line: \"Fizz, fade, green.\" The three-test row returns under it in its positive states (m8-carbonate-tube-fizz-v1.png, m8-bromine-water-clear-v1.png, m8-dichromate-green-v1.png), each word over its tube; group chips write under each as spoken (–COOH red, C=C teal, 1° or 2° –OH violet). Small grey second line: \"Every no rules a candidate out.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Fizz, fade, green.\" The three-test row returns under it in its positive states (m8-carbonate-tube-fizz-v1.png, m8-bromine-water-clear-v1.png, m8-dichromate-green-v1.png), each word over its tube; group chips write under each as spoken (–COOH red, C=C teal, 1° or 2° –OH violet). Small grey second line: \"Every no rules a candidate out.\" Hold about 2 seconds.",
+      "motionTools": [
+        "m8-carbonate-tube-fizz-v1.png",
+        "m8-bromine-water-clear-v1.png",
+        "m8-dichromate-green-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flowchart, no group chips).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flowchart, no group chips).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no flowchart, no group chips).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. The four names become a small candidate strip with structures. On \"hexanoic acid\" \"no effervescence\" is underlined and hexanoic acid strikes; on \"hexane and hexan-1-ol\" \"orange to colourless within seconds\" is underlined and hexane and hexan-1-ol strike together. On \"hex-5-en-1-ol\" its structure glows with C=C ringed teal and OH ringed violet (bright). On \"fits its O H group\" \"orange to green\" is underlined (grey tag \"consistent; the fade decided it\"). On \"slip\" a chip \"hexan-1-ol: it turned dichromate green\" fades in and is crossed (caption \"every result has to fit\"). Hold about 1 second.",
+      "teachingReason": "No fizz rules out hexanoic acid.",
+      "narrationCue": "hexanoic acid / hexane and hexan-1-ol / hex-5-en-1-ol / fits its O H group / slip / every result has to fit",
+      "motionPurpose": "the card stays, shrunk to the top. The four names become a small candidate strip with structures. On \"hexanoic acid\" \"no effervescence\" is underlined and hexanoic acid strikes; on \"hexane and hexan-1-ol\" \"orange to colourless within seconds\" is underlined and hexane and hexan-1-ol strike together. On \"hex-5-en-1-ol\" its structure glows with C=C ringed teal and OH ringed violet (bright). On \"fits its O H group\" \"orange to green\" is underlined (grey tag \"consistent; the fade decided it\"). On \"slip\" a chip \"hexan-1-ol: it turned dichromate green\" fades in and is crossed (caption \"every result has to fit\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. The four names become a small candidate strip with structures. On \"hexanoic acid\" \"no effervescence\" is underlined and hexanoic acid strikes; on \"hexane and hexan-1-ol\" \"orange to colourless within seconds\" is underlined and hexane and hexan-1-ol strike together. On \"hex-5-en-1-ol\" its structure glows with C=C ringed teal and OH ringed violet (bright). On \"fits its O H group\" \"orange to green\" is underlined (grey tag \"consistent; the fade decided it\"). On \"slip\" a chip \"hexan-1-ol: it turned dichromate green\" fades in and is crossed (caption \"every result has to fit\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"acid\" \"no effervescence\" is underlined; a three-chip row writes: \"alkane? alkene? alcohol?\" (all still lit). On \"double bond\" \"an alkane, an alkene, an alcohol or a carboxylic acid\" is underlined and a small m8-bromine-water-clear-v1.png appears (tag \"fresh portion: fades → C=C supported\"). On \"dichromate\" \"what each result would support\" is underlined and m8-dichromate-green-v1.png appears small (tag \"green, with bromine orange → 1° or 2° alcohol\"). On \"One limit\" \"one limit\" is underlined (tag \"orange: alkane or 3° alcohol; can't tell them apart\"). On \"trap\" a chip \"no fizz, so Q is an alcohol\" fades in and is crossed (caption \"no fizz rules out only –COOH\"). Hold about 1 second.",
+      "teachingReason": "The conclusion isn't supported.",
+      "narrationCue": "acid / double bond / dichromate / One limit / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"acid\" \"no effervescence\" is underlined; a three-chip row writes: \"alkane? alkene? alcohol?\" (all still lit). On \"double bond\" \"an alkane, an alkene, an alcohol or a carboxylic acid\" is underlined and a small m8-bromine-water-clear-v1.png appears (tag \"fresh portion: fades → C=C supported\"). On \"dichromate\" \"what each result would support\" is underlined and m8-dichromate-green-v1.png appears small (tag \"green, with bromine orange → 1° or 2° alcohol\"). On \"One limit\" \"one limit\" is underlined (tag \"orange: alkane or 3° alcohol; can't tell them apart\"). On \"trap\" a chip \"no fizz, so Q is an alcohol\" fades in and is crossed (caption \"no fizz rules out only –COOH\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"acid\" \"no effervescence\" is underlined; a three-chip row writes: \"alkane? alkene? alcohol?\" (all still lit). On \"double bond\" \"an alkane, an alkene, an alcohol or a carboxylic acid\" is underlined and a small m8-bromine-water-clear-v1.png appears (tag \"fresh portion: fades → C=C supported\"). On \"dichromate\" \"what each result would support\" is underlined and m8-dichromate-green-v1.png appears small (tag \"green, with bromine orange → 1° or 2° alcohol\"). On \"One limit\" \"one limit\" is underlined (tag \"orange: alkane or 3° alcohol; can't tell them apart\"). On \"trap\" a chip \"no fizz, so Q is an alcohol\" fades in and is crossed (caption \"no fizz rules out only –COOH\"). Hold about 1 second.",
+      "motionTools": [
+        "m8-bromine-water-clear-v1.png",
+        "m8-dichromate-green-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. The decision flowchart returns complete, scaled to the right two thirds at reading size: \"NaHCO₃: fizz? (limewater milky) → –COOH supported / not detected\" → \"bromine water: fades within seconds? → C=C supported / not detected\" → \"warm acidified K₂Cr₂O₇: green? → 1° or 2° –OH supported (after a bromine fade: consistent only) / not detected\" → \"Report each group. List what's still possible.\" Both branches of every box continue down (no early exit). On \"Next\" a chip \"Next: functional group tests practical\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, when you meet an unknown, ask three questions.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. The decision flowchart returns complete, scaled to the right two thirds at reading size: \"NaHCO₃: fizz? (limewater milky) → –COOH supported / not detected\" → \"bromine water: fades within seconds? → C=C supported / not detected\" → \"warm acidified K₂Cr₂O₇: green? → 1° or 2° –OH supported (after a bromine fade: consistent only) / not detected\" → \"Report each group. List what's still possible.\" Both branches of every box continue down (no early exit). On \"Next\" a chip \"Next: functional group tests practical\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The decision flowchart returns complete, scaled to the right two thirds at reading size: \"NaHCO₃: fizz? (limewater milky) → –COOH supported / not detected\" → \"bromine water: fades within seconds? → C=C supported / not detected\" → \"warm acidified K₂Cr₂O₇: green? → 1° or 2° –OH supported (after a bromine fade: consistent only) / not detected\" → \"Report each group. List what's still possible.\" Both branches of every box continue down (no early exit). On \"Next\" a chip \"Next: functional group tests practical\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c08-learning-review.md",
+      "sha256": "65a6c7de6d29c857a785e8ce20e0997de707d2dd4fe0ffa413ffbc1890f23abd"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c08-claude-science-check.md",
+      "sha256": "051f8d868843298c5e4ea5211014aeb8695bb3eb954dd944cc08984d870da0b6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,759 @@
+1
+00:00:00,362 --> 00:00:02,290
+Last video ended with this question.
+
+2
+00:00:02,954 --> 00:00:05,730
+Here's sine x, and sine two x.
+
+3
+00:00:06,415 --> 00:00:08,701
+At the origin, sine x has slope one,
+
+4
+00:00:08,943 --> 00:00:10,566
+because cos zero is one.
+
+5
+00:00:11,330 --> 00:00:13,862
+Sine two x leaves the origin twice as
+
+6
+00:00:13,903 --> 00:00:15,390
+steeply, with slope two.
+
+7
+00:00:16,074 --> 00:00:17,401
+Where does that two come from?
+
+8
+00:00:18,207 --> 00:00:20,232
+And what happens when the inside part isn't
+
+9
+00:00:20,433 --> 00:00:22,779
+two x, but something like x squared?
+
+10
+00:00:23,458 --> 00:00:24,672
+You've met the reason before.
+
+11
+00:00:25,397 --> 00:00:28,264
+Sine two x is the sine curve squashed
+
+12
+00:00:28,426 --> 00:00:29,588
+sideways by a half,
+
+13
+00:00:30,171 --> 00:00:33,058
+so every slope, at matching points, doubles.
+
+14
+00:00:33,822 --> 00:00:35,589
+The chain rule from Year 11 says the
+
+15
+00:00:35,630 --> 00:00:36,030
+same thing.
+
+16
+00:00:36,754 --> 00:00:39,402
+Two x is the inside part, the expression
+
+17
+00:00:39,543 --> 00:00:41,951
+sine is applied to, and sine is the
+
+18
+00:00:42,112 --> 00:00:42,512
+outside.
+
+19
+00:00:43,196 --> 00:00:45,541
+Differentiate the outside, and keep the inside as
+
+20
+00:00:45,842 --> 00:00:47,486
+it is: cos two x.
+
+21
+00:00:48,149 --> 00:00:51,064
+Then multiply by the inside part's derivative, which
+
+22
+00:00:51,146 --> 00:00:51,547
+is two.
+
+23
+00:00:52,192 --> 00:00:54,742
+So the derivative is two cos two x,
+
+24
+00:00:55,346 --> 00:00:56,751
+and at zero, that's two.
+
+25
+00:00:57,281 --> 00:00:58,667
+Now a harder inside:
+
+26
+00:00:59,430 --> 00:01:01,600
+y equals sine of x squared.
+
+27
+00:01:02,204 --> 00:01:03,540
+No squash makes that curve.
+
+28
+00:01:04,386 --> 00:01:07,037
+If you only differentiated the outside, you'd get
+
+29
+00:01:07,258 --> 00:01:08,624
+cos of x squared.
+
+30
+00:01:09,248 --> 00:01:10,562
+Test it against the real slopes.
+
+31
+00:01:11,488 --> 00:01:14,034
+At x equals a half, both are about
+
+32
+00:01:14,174 --> 00:01:16,259
+point nine seven, a ratio of one.
+
+33
+00:01:17,062 --> 00:01:19,087
+At x equals one, the real slope is
+
+34
+00:01:19,128 --> 00:01:20,572
+about one point zero eight,
+
+35
+00:01:21,075 --> 00:01:23,321
+but cos of one is only point five
+
+36
+00:01:23,423 --> 00:01:23,702
+four.
+
+37
+00:01:24,266 --> 00:01:25,210
+That's a ratio of two.
+
+38
+00:01:26,036 --> 00:01:27,702
+At one and a half, the ratio is
+
+39
+00:01:27,824 --> 00:01:28,104
+three.
+
+40
+00:01:28,890 --> 00:01:30,463
+The missing factor isn't fixed.
+
+41
+00:01:31,087 --> 00:01:33,954
+It's two x, the derivative of the inside
+
+42
+00:01:34,016 --> 00:01:35,218
+part, x squared.
+
+43
+00:01:35,783 --> 00:01:36,879
+Why multiply?
+
+44
+00:01:37,705 --> 00:01:40,100
+Follow a small step at x equals one.
+
+45
+00:01:40,805 --> 00:01:42,539
+Move x by point zero one.
+
+46
+00:01:43,083 --> 00:01:46,031
+The inside, x squared, moves about twice as
+
+47
+00:01:46,092 --> 00:01:48,759
+far, about point zero two, because its rate
+
+48
+00:01:48,800 --> 00:01:50,545
+there is two x, which is two.
+
+49
+00:01:51,308 --> 00:01:53,677
+Then sine reacts to its own input at
+
+50
+00:01:53,717 --> 00:01:56,226
+a rate of cos one, about point five
+
+51
+00:01:56,287 --> 00:01:56,547
+four.
+
+52
+00:01:57,271 --> 00:01:59,856
+So y moves about point five four times
+
+53
+00:01:59,957 --> 00:02:02,362
+point zero two, which is about point zero
+
+54
+00:02:02,503 --> 00:02:02,923
+one one.
+
+55
+00:02:03,626 --> 00:02:05,127
+That's why it's called a chain:
+
+56
+00:02:05,669 --> 00:02:07,772
+each link passes its change on to the
+
+57
+00:02:07,833 --> 00:02:09,756
+next, multiplied by its own rate.
+
+58
+00:02:10,538 --> 00:02:12,344
+Rates along a chain multiply:
+
+59
+00:02:12,908 --> 00:02:14,955
+d y by d u, times d u
+
+60
+00:02:15,016 --> 00:02:15,638
+by d x.
+
+61
+00:02:16,308 --> 00:02:18,476
+Now plug in the outsides from this unit.
+
+62
+00:02:19,119 --> 00:02:20,924
+For e to the power of an inside
+
+63
+00:02:20,965 --> 00:02:23,211
+part, copy e to that power,
+
+64
+00:02:23,714 --> 00:02:25,960
+then multiply by the power's derivative.
+
+65
+00:02:26,703 --> 00:02:28,725
+For the natural log of an inside part,
+
+66
+00:02:29,147 --> 00:02:31,770
+the derivative is the inside's derivative, over the
+
+67
+00:02:31,891 --> 00:02:32,751
+inside itself,
+
+68
+00:02:33,393 --> 00:02:34,795
+and the inside has to be positive.
+
+69
+00:02:35,618 --> 00:02:38,347
+For sine of an inside part, it's cos
+
+70
+00:02:38,428 --> 00:02:41,138
+of the same inside, times the inside's derivative.
+
+71
+00:02:41,821 --> 00:02:43,824
+And for cos, it's minus sine of the
+
+72
+00:02:43,845 --> 00:02:46,310
+same inside, times the inside's derivative.
+
+73
+00:02:46,993 --> 00:02:49,380
+Each time, the inside stays unchanged.
+
+74
+00:02:50,225 --> 00:02:52,332
+For instance, e to the x squared has
+
+75
+00:02:52,353 --> 00:02:54,762
+derivative two x, times e to the x
+
+76
+00:02:54,783 --> 00:02:55,164
+squared.
+
+77
+00:02:55,890 --> 00:02:56,539
+First example.
+
+78
+00:02:57,128 --> 00:03:00,116
+Differentiate y equals e to the sine x.
+
+79
+00:03:01,040 --> 00:03:03,565
+The outside is e to a power, and
+
+80
+00:03:03,606 --> 00:03:04,487
+the inside is sine x.
+
+81
+00:03:06,012 --> 00:03:08,716
+Copy e to the sine x, then multiply
+
+82
+00:03:08,817 --> 00:03:11,080
+by the derivative of sine x, which is
+
+83
+00:03:11,222 --> 00:03:11,662
+cos x.
+
+84
+00:03:12,624 --> 00:03:14,708
+So d y by d x is e
+
+85
+00:03:14,749 --> 00:03:16,933
+to the sine x, times cos x.
+
+86
+00:03:17,997 --> 00:03:19,664
+Now look at the graph at pi over
+
+87
+00:03:19,705 --> 00:03:19,905
+two.
+
+88
+00:03:20,608 --> 00:03:22,833
+Cos of pi over two is zero, so
+
+89
+00:03:22,935 --> 00:03:23,896
+the gradient is zero.
+
+90
+00:03:24,619 --> 00:03:26,983
+The inside, sine x, is at its peak
+
+91
+00:03:27,164 --> 00:03:29,448
+and stops changing, so the whole curve goes
+
+92
+00:03:29,509 --> 00:03:29,989
+flat too.
+
+93
+00:03:31,055 --> 00:03:32,687
+Swap the order, and the answer changes.
+
+94
+00:03:33,353 --> 00:03:35,596
+For sine of e to the x, the
+
+95
+00:03:35,657 --> 00:03:38,561
+outside is sine, so the derivative is cos
+
+96
+00:03:38,763 --> 00:03:40,745
+of e to the x, times e to
+
+97
+00:03:40,786 --> 00:03:41,106
+the x.
+
+98
+00:03:41,601 --> 00:03:45,397
+Second example: y equals the natural log of
+
+99
+00:03:45,517 --> 00:03:46,301
+cos x.
+
+100
+00:03:47,143 --> 00:03:49,147
+A log needs a positive input, so this
+
+101
+00:03:49,187 --> 00:03:51,771
+curve only exists where cos x is positive,
+
+102
+00:03:52,232 --> 00:03:54,736
+for example between minus pi over two and
+
+103
+00:03:54,776 --> 00:03:55,397
+pi over two.
+
+104
+00:03:56,238 --> 00:03:58,001
+The outside is the natural log,
+
+105
+00:03:58,503 --> 00:04:01,389
+so the derivative is the inside's derivative, over
+
+106
+00:04:01,430 --> 00:04:01,930
+the inside.
+
+107
+00:04:02,493 --> 00:04:05,438
+That's minus sine x, over cos x, which
+
+108
+00:04:05,499 --> 00:04:06,661
+is minus tan x,
+
+109
+00:04:07,263 --> 00:04:08,966
+but only where cos x is positive.
+
+110
+00:04:09,828 --> 00:04:11,672
+At pi over four, it's minus one,
+
+111
+00:04:12,215 --> 00:04:14,098
+and the tangent on the graph agrees.
+
+112
+00:04:14,975 --> 00:04:17,042
+Third example, with cos on the outside.
+
+113
+00:04:17,565 --> 00:04:20,915
+Differentiate y equals cos of, x squared plus
+
+114
+00:04:21,057 --> 00:04:21,196
+one.
+
+115
+00:04:21,959 --> 00:04:24,022
+The outside is cos, so its slope is
+
+116
+00:04:24,123 --> 00:04:27,288
+minus sine of the same inside: minus sine
+
+117
+00:04:27,409 --> 00:04:28,630
+of, x squared plus one.
+
+118
+00:04:29,474 --> 00:04:31,940
+The inside's derivative is two x, because the
+
+119
+00:04:32,061 --> 00:04:32,903
+one is a constant.
+
+120
+00:04:33,726 --> 00:04:35,528
+Multiply them, and d y by d x
+
+121
+00:04:35,729 --> 00:04:38,614
+is minus two x, sine of, x squared
+
+122
+00:04:38,675 --> 00:04:39,135
+plus one.
+
+123
+00:04:40,018 --> 00:04:42,523
+At x equals one, that's minus two sine
+
+124
+00:04:42,564 --> 00:04:42,784
+two,
+
+125
+00:04:43,306 --> 00:04:45,009
+about minus one point eight two.
+
+126
+00:04:45,934 --> 00:04:48,001
+Two things to keep: the minus sign from
+
+127
+00:04:48,022 --> 00:04:50,210
+the outside, and the two x from the
+
+128
+00:04:50,311 --> 00:04:50,712
+inside.
+
+129
+00:04:51,275 --> 00:04:52,663
+Here's a short way to say the whole
+
+130
+00:04:52,744 --> 00:04:52,985
+rule.
+
+131
+00:04:53,648 --> 00:04:56,697
+Outside slope at the inside, times the inside
+
+132
+00:04:56,758 --> 00:04:57,038
+slope.
+
+133
+00:04:57,603 --> 00:04:59,619
+The words "at the inside" matter.
+
+134
+00:05:00,242 --> 00:05:02,906
+For sine of x squared, the outside slope
+
+135
+00:05:02,988 --> 00:05:05,151
+is cos of x squared, not cos x,
+
+136
+00:05:05,573 --> 00:05:07,336
+and the inside slope is two x.
+
+137
+00:05:07,919 --> 00:05:10,133
+So the derivative is two x cos of
+
+138
+00:05:10,154 --> 00:05:10,697
+x squared.
+
+139
+00:05:11,441 --> 00:05:13,726
+For the natural log, keep the inside positive,
+
+140
+00:05:14,028 --> 00:05:15,751
+and use one over it for the outside
+
+141
+00:05:15,792 --> 00:05:16,052
+slope.
+
+142
+00:05:18,760 --> 00:05:19,228
+Your turn.
+
+143
+00:05:19,736 --> 00:05:22,828
+Differentiate y equals the natural log of, x
+
+144
+00:05:22,869 --> 00:05:23,933
+squared minus nine.
+
+145
+00:05:24,516 --> 00:05:26,303
+Then state the values of x for which
+
+146
+00:05:26,344 --> 00:05:27,327
+your answer is valid.
+
+147
+00:05:27,932 --> 00:05:28,764
+Pause here to answer.
+
+148
+00:05:39,655 --> 00:05:42,462
+The inside is x squared minus nine, with
+
+149
+00:05:42,483 --> 00:05:43,505
+derivative two x.
+
+150
+00:05:44,129 --> 00:05:46,299
+So d y by d x is two
+
+151
+00:05:46,441 --> 00:05:48,250
+x, over x squared minus nine.
+
+152
+00:05:49,152 --> 00:05:51,175
+The log needs x squared minus nine to
+
+153
+00:05:51,216 --> 00:05:53,639
+be positive, so x squared is more than
+
+154
+00:05:53,700 --> 00:05:53,980
+nine:
+
+155
+00:05:54,762 --> 00:05:56,864
+x is less than minus three, or more
+
+156
+00:05:56,906 --> 00:05:57,345
+than three.
+
+157
+00:05:58,028 --> 00:06:00,394
+Saying only x isn't plus or minus three
+
+158
+00:06:00,797 --> 00:06:01,337
+isn't enough.
+
+159
+00:06:01,920 --> 00:06:04,306
+Between minus three and three, the inside is
+
+160
+00:06:04,427 --> 00:06:06,252
+negative, and the log doesn't exist.
+
+161
+00:06:08,003 --> 00:06:08,386
+Last one.
+
+162
+00:06:09,091 --> 00:06:11,959
+For y equals sine of the natural log
+
+163
+00:06:12,120 --> 00:06:13,945
+of x, with x positive,
+
+164
+00:06:14,486 --> 00:06:15,930
+find d y by d x.
+
+165
+00:06:16,573 --> 00:06:19,203
+Then find the exact gradient at x equals
+
+166
+00:06:19,364 --> 00:06:19,484
+e.
+
+167
+00:06:20,148 --> 00:06:20,912
+Pause here to answer.
+
+168
+00:06:32,561 --> 00:06:35,176
+The outside is sine, and the inside is
+
+169
+00:06:35,216 --> 00:06:36,202
+the natural log of x.
+
+170
+00:06:36,744 --> 00:06:39,049
+So d y by d x is cos
+
+171
+00:06:39,290 --> 00:06:41,394
+of the natural log of x, times one
+
+172
+00:06:41,555 --> 00:06:42,016
+over x.
+
+173
+00:06:42,917 --> 00:06:45,039
+At x equals e, the natural log of
+
+174
+00:06:45,059 --> 00:06:48,042
+e is one, so the gradient is cos
+
+175
+00:06:48,262 --> 00:06:50,624
+one, over e, about point two.
+
+176
+00:06:51,366 --> 00:06:52,848
+If you left out the one over x,
+
+177
+00:06:53,130 --> 00:06:55,735
+you'd get cos one, about point five four,
+
+178
+00:06:56,116 --> 00:06:57,839
+and you'd have skipped the inside slope.
+
+179
+00:06:59,374 --> 00:07:01,295
+So for any of these functions with an
+
+180
+00:07:01,336 --> 00:07:04,398
+inside part, take the outside's slope at the
+
+181
+00:07:04,459 --> 00:07:04,878
+inside,
+
+182
+00:07:05,399 --> 00:07:07,781
+and multiply by the inside's slope.
+
+183
+00:07:08,544 --> 00:07:10,533
+And for a log, keep the inside positive.
+
+184
+00:07:11,397 --> 00:07:11,656
+Next,
+
+185
+00:07:12,259 --> 00:07:15,465
+two functions multiplied together, like e to the
+
+186
+00:07:15,607 --> 00:07:16,768
+x times sine x.
+
+187
+00:07:17,814 --> 00:07:19,650
+How do both parts set the slope?
+
+188
+00:07:22,321 --> 00:07:23,205
+Here are the key notes.
+
+189
+00:07:23,727 --> 00:07:25,496
+Pause the video if you need more time
+
+190
+00:07:25,516 --> 00:07:25,998
+to copy them.

@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md",
+  "sourceSha256": "70c55e4a39ec58b0eacd4cef278933acaef06df48f13abaefcd67685f538bc87",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, four metres and three metres made five. Here's why that matters. This boat points straight across a river and motors at three metres per second. But the water's moving too. Watch where it actually goes. It lands well downstream, travelling along a slant. So where does it really go, and how fast? A diagram can answer that, and today we'll see why it works.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/hook.wav"
+    },
+    {
+      "id": "scale",
+      "text": "First, a vector diagram needs a scale. That's how much real quantity each centimetre of arrow stands for. Say one centimetre stands for one metre per second. A velocity of four metres per second east is an arrow four centimetres long, pointing east. The tail is where it starts. The tip shows the direction. The same recipe works for any vector. A displacement of four metres, an acceleration of four metres per second squared: same arrow, different label and scale.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/scale.wav"
+    },
+    {
+      "id": "tip-to-tail",
+      "text": "Now, why do we join vectors tip to tail? Think about displacements. A drone flies four metres east, then three metres north. The second move can only start where the first one ended. Drawing both arrows from the start would mean two separate trips from the start, and that isn't what happened. So we slide the second arrow until its tail sits on the first arrow's tip. The arrow keeps its length and its direction. It just moves. Then the result is one arrow from the very first tail to the very last tip. That's the resultant: the single vector with the same effect as both together. It's the trip you'd make if you flew straight there.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/tip-to-tail.wav"
+    },
+    {
+      "id": "velocities-add",
+      "text": "Velocities add tip to tail too, and the river shows why. In each second, the boat's own motion carries it three metres across. In that same second, the water carries it four metres downstream. The boat's motion through the water hasn't changed. The water itself is moving. Both happen, so those two moves join tip to tail, and the boat ends up five metres along the slant. Next second, the same again, and again. So the boat's actual velocity is five metres per second, along that slant. That's why it lands downstream.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/velocities-add.wav"
+    },
+    {
+      "id": "worked-boat",
+      "text": "Let's make that exact. Find the boat's resultant velocity, three point zero metres per second across, and four point zero downstream, at right angles. On a scale diagram, the resultant measures five point zero centimetres, so it's five point zero metres per second. Because the arrows meet at a right angle, Pythagoras gives the same: the square root of nine plus sixteen, five point zero. For the direction, tan inverse of four point zero over three point zero is fifty-three degrees, measured from where the boat is pointing, toward downstream. If the arrows weren't at right angles, you'd measure the resultant with a ruler and protractor instead.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/worked-boat.wav"
+    },
+    {
+      "id": "one-line-order",
+      "text": "When both arrows point the same way, the sizes simply add. Point the boat downstream, and it goes three plus four, seven metres per second. Point it upstream, and the arrows face opposite ways. The water wins by one, so the boat drifts downstream at one metre per second. So adding the sizes only works when the arrows line up. And the order never matters. Add the current first, then the boat's motion, and you get exactly the same resultant.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/one-line-order.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Now subtraction. This car turns a corner at a steady twenty metres per second. Before, its velocity points east. After, it points north. Its speed hasn't changed. So is its change in velocity zero, less than twenty, or more than twenty? Have a think.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/prediction.wav"
+    },
+    {
+      "id": "subtract-flip",
+      "text": "It's more than twenty. The change in velocity is final minus initial. It's the arrow you'd have to add to the first velocity to get the second. And subtracting a vector means adding its reverse. So flip the east arrow, to point west, same length. Then join it tip to tail with the north arrow. The change is about twenty-eight metres per second, toward the north-west. Check it: start with the east arrow, add this change, and you land exactly on the north arrow. That's bigger than either velocity. Subtracting a vector doesn't make it smaller. And during the turn, the car's acceleration, on average, points the same way as this change.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/subtract-flip.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the rule in one line. Tip to tail, then first tail to last tip. To subtract, flip it and add. It works for displacement, velocity and acceleration, because every vector is just an arrow with a size and a direction. Just keep one quantity and one scale in each diagram. Never chain a displacement onto a velocity.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A small boat heads north at two point four metres per second across a river that flows east at zero point seven zero metres per second. Using a vector diagram, find the magnitude and direction of the boat's resultant velocity. Pause here to answer.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Draw the two point four north, then the zero point seven zero east from its tip. They're at right angles, so the resultant is the square root of five point seven six plus zero point four nine, which is two point five metres per second. Its angle from north is tan inverse of zero point seven zero over two point four, sixteen degrees east of north. Adding the sizes, to get three point one, is the slip. The arrows don't line up.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A tennis ball rolls east at three point zero metres per second, hits a wall, and rolls back west at two point zero metres per second. Using a vector diagram, find the ball's change in velocity. Pause here to answer.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The change is final minus initial. So flip the three point zero east, to three point zero west, and add it to the two point zero west. Both point west, so they add: five point zero metres per second, west. One metre per second is the classic slip. Subtracting the sizes ignores that the ball turned around.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So, a vector diagram joins arrows tip to tail, and flips one to subtract. Today, two arrows at right angles became one. Next time, we'll go the other way: take one arrow at an angle, and split it into two perpendicular parts.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y11-fa1-v02/key-notes.wav"
+    }
+  ]
+}

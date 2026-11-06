@@ -1,0 +1,166 @@
+{
+  "id": "math-a12-d09",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (two flat tangents, one turn)",
+      "voiceover": {
+        "text": "Last video ended with a question: where is a derivative positive, and where is it negative? We'll come back to that. First, look at this curve. Its tangent is flat in two places, at x equals zero and at x equals three. At three, the curve turns, from falling to rising. But at zero it doesn't turn. It levels off for an instant, then keeps falling. So what decides whether the curve turns?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "sign gives direction (Year 11)",
+      "voiceover": {
+        "text": "Start with what you know from Year 11. Where the derivative is positive, the tangent slopes up, and the curve is increasing: its height goes up as x increases. Where the derivative is negative, the curve is decreasing. Watch the tangent move along this curve. Its gradient is negative all the way to x equals three, except for one instant at zero, where it's exactly zero. After three it's positive. Let's record just the sign, in a strip underneath."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "stationary is not the same as turning",
+      "voiceover": {
+        "text": "Two words to keep apart. A stationary point is any point where the derivative is zero, so the tangent is horizontal. That's all it says. A turning point is where the curve changes direction. It's either a local maximum, higher than every nearby point on the curve, or a local minimum, lower than every nearby point. Local means compared only with points close by. So the point at three is stationary, and it's a turning point. The point at zero is stationary, but it's not a turning point."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the sign on each side decides",
+      "voiceover": {
+        "text": "So what decides it? The sign of the derivative on each side. If the curve rises into the point and falls after it, the sign goes from plus to minus. Nothing nearby is higher, so it's a local maximum. If it falls in and rises out, that's minus to plus, and nothing nearby is lower: a local minimum. And if the sign is the same on both sides, plus and plus, or minus and minus, the curve keeps going the same way. That's called a horizontal point of inflection. It's stationary, but it isn't a turning point."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "why the sign changes at three but not at zero",
+      "voiceover": {
+        "text": "Why does our curve turn at three but not at zero? Its derivative is four x squared, times x minus three, graphed underneath. The sign of f prime is whether this graph is above or below the axis. At three, it crosses the axis, so the sign changes from minus to plus. At zero, it only touches the axis. The factor x squared is never negative, so it doesn't change the sign there, and x minus three is negative on both sides of zero. And because this derivative graph is unbroken, its sign can only change where it equals zero. So one test value in each interval is enough."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example 1: factorise and split",
+      "voiceover": {
+        "text": "Let's turn that into a method. Find and classify the stationary points of f of x equals two x cubed, minus nine x squared, plus twelve x, minus three. First differentiate, and factorise as far as you can. f prime of x is six x squared, minus eighteen x, plus twelve, which is six, times x minus one, times x minus two. So f prime is zero at x equals one and x equals two. Those two values split the number line into three intervals."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "worked example 1: test and classify",
+      "voiceover": {
+        "text": "Now test one easy value inside each interval. Only the sign matters. At zero, f prime is twelve, positive. At one point five, it's minus one point five, negative. At three, it's twelve, positive. So f increases for x less than one and for x greater than two, and decreases in between. Plus to minus at one gives a local maximum, and minus to plus at two gives a local minimum. For the heights, use f, not f prime. f of one is two, and f of two is one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "worked example 2: the curve that doesn't turn",
+      "voiceover": {
+        "text": "Back to our first curve, f of x equals x to the fourth, minus four x cubed. Its derivative, four x squared times x minus three, is zero at x equals zero and three. Test minus one: minus sixteen. Test one: minus eight. Test four: sixty-four. Minus, then minus, around zero. The sign doesn't change, so the point zero, zero is a horizontal point of inflection. Minus to plus at three gives a local minimum, and f of three is eighty-one minus one hundred and eight, which is minus twenty-seven."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "an excluded value splits the chart too",
+      "voiceover": {
+        "text": "Now last video's quotient, y equals e to the x, over x plus one, with x not equal to minus one. Its derivative is x e to the x, over x plus one, all squared. e to the x and the squared bracket are both positive, so the derivative has the sign of x: negative, negative, then positive. So there's a local minimum at zero, one. But minus one isn't in the domain, so it's not a stationary point. It still splits the chart, because the curve breaks there. The function decreases on each side of minus one, but not across it. At minus two, y is about minus point one four, and at minus a half, it's about one point two one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to picture it. Turn the signs into arrows, and the arrows sketch the shape. Plus is an arrow up, minus is an arrow down. Up then down draws a peak. Down then up draws a valley. Two arrows the same way draw a step, the horizontal point of inflection. Just never join arrows across an excluded value. There, you lift your pen."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. For f of x equals x cubed, minus three x, find where f is increasing and where it's decreasing. Then find and classify its stationary points. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "f prime of x is three, times x minus one, times x plus one, so it's zero at minus one and one. Testing minus two, zero and two gives plus, minus, plus. So f increases for x less than minus one or greater than one, and decreases in between. There's a local maximum at minus one, two, and a local minimum at one, minus two. The heights come from f. Using f prime gives zero every time."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A function has derivative f prime of x equals x, times the bracket x minus two, squared. Find the x values of its stationary points, and classify each one, using the sign of f prime. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "f prime is zero at x equals zero and x equals two. Test minus one: minus nine, negative. Tests at one and three are both positive. So at zero it's minus to plus, a local minimum. At two it's plus on both sides. The squared bracket doesn't change the sign, so that's a horizontal point of inflection, not a turning point. Don't assume a minimum has to be followed by a maximum."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the sign of the derivative on each side tells you whether a stationary point turns. Next, a bigger question. Here's attempt one's curve again, with its local maximum of two. But on the interval from minus two to three, is two the largest value the function reaches?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

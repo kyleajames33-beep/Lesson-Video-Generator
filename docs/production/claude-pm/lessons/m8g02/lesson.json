@@ -1,0 +1,156 @@
+{
+  "title": "Calibration and water-analysis data: HSC-style practice",
+  "subtitle": "A calibration graph, a water sample and a guideline value: how do you turn an absorbance into a concentration you can defend, and decide what that concentration does and doesn't tell you about the water?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 10,
+  "lessonIntent": "plotting an AAS calibration graph with a line of best fit and read-off lines; explaining why an over-range sample is diluted rather than read from an extended line; calculating an original concentration through a dilution; explaining a non-zero intercept from a reagent blank and subtracting it before dividing by the slope; checking a quantification limit against a guideline; comparing results with a guideline; evaluating a claim that uses the wrong sample or too few samples.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist. The sample reads above the standards. The line doesn't start at zero. Or the result is right, but it's from the wrong sample for the question being asked. Here are three HSC-style questions on water samples. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Copper standards are measured by atomic absorption spectroscopy, and the readings are on screen. A sample of mine drainage water gives an absorbance of point six two zero. The student then dilutes ten millilitres of it to fifty millilitres, and the diluted solution reads point one four two. Construct the calibration graph, explain why the sample was diluted, and calculate the copper concentration in the drainage water. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-graph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part a. The standards' concentration was chosen, so it goes along the bottom, with absorbance up the side. Use even steps that fill the grid, label both axes with units, and plot each point as a small cross. Then rule one straight line of best fit through the points, including the blank, not dot to dot. These points sit almost exactly on it, and the slope is about point one absorbance for each milligram per litre."
+      }
+    },
+    {
+      "id": "q1-range",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. The top standard reads about point four. The undiluted sample, at point six two zero, is well above it, outside the standards. Nothing in this data shows the line stays straight up there, and atomic absorption calibrations often bend at high concentration. So the student diluted it, to bring the reading back inside the range the standards cover."
+      }
+    },
+    {
+      "id": "q1-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part c. Read across from point one four two to the line, then down, and show those read-off lines: one point four two milligrams per litre. That's the diluted solution. Fifty over ten is a dilution factor of five, so the drainage water holds about seven point one milligrams per litre."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is extending the line up to point six two zero. That gives about six point two, nearly one milligram per litre below the dilution-corrected result, because the real response bends below the straight line up there. Outside the standards, doubt the line. Dilute and remeasure."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Iron in bore water is measured by colourimetry. A reagent turns the iron into an orange-red complex, and the same amount of reagent goes into every standard and into the sample. The instrument was zeroed with distilled water. The calibration line and its equation are on screen, and the bore water reads point two nine zero. Explain why the zero standard has an absorbance, then calculate the iron concentration in the bore water. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-blank",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part a. The zero standard has no added iron, but it still reads point zero three two. It does contain the reagent, and the instrument was zeroed with plain water, not with the reagent. So something in the reagent absorbs a little, perhaps a trace of iron in the chemicals themselves. Every standard and the sample carry that same extra point zero three two. That's why the line starts above zero."
+      }
+    },
+    {
+      "id": "q2-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. Take the reagent's share off first. Point two nine zero minus point zero three two is point two five eight. That's the absorbance from the bore water's iron. Divide by the slope, point one nine nine, and you get about one point three zero milligrams per litre. Reading across to the line and down gives the same answer."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is dividing point two nine zero by the slope straight away. That gives about one point four six, too high, because it counts the reagent's absorbance as iron. When a line has an intercept, subtract it before you divide. Better still, zero the instrument with a reagent blank, a cuvette holding every reagent but no iron."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A school tests the lead in water from one drinking bubbler. A sample taken first thing in the morning, after the water stood in the pipes overnight, contains point zero one two milligrams per litre. A sample taken after the bubbler ran for two minutes contains point zero zero two. The school claims the water is safe to drink, because the flushed sample is under the guideline value. Evaluate this claim. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-data",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the method. Can it measure lead at this level? Its validated quantification limit, the lowest concentration this method can measure with the stated reliability, is point zero zero one, five times below the guideline, so yes. Now the morning sample. Point zero one two over point zero zero five is about two point four times the guideline. The flushed sample is under it. So lead is probably dissolving into the water while it stands in the pipes and fittings."
+      }
+    },
+    {
+      "id": "q3-claim",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the claim. The flushed result is real, but it isn't the water many students drink. The first drink of the day comes after the water has stood overnight, and that sample was over the guideline. And one bubbler on one day doesn't show what the others do. So the claim isn't supported. The school needs repeat samples from every bubbler over several days, and advice from the local public health unit to find and control the lead source."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The trap is averaging the two results. Point zero zero seven sounds like a fair middle, but the two samples answer different questions: one is the water after it stands, the other after it runs. Their average describes no water anyone actually drinks. Match the sample to the question."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for any calibration or monitoring question. Read the unknown only inside the standards, and dilute it if it's above them. Multiply back by every dilution. If the line has an intercept, subtract it before you divide. And judge a result with the sample that matches the question, which water, when and where, and not from one sample alone. Next: why monitor water and nutrient pollution?"
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

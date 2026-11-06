@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-G02-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8g02/lesson.json",
+  "lessonSha256": "8a3aefb458dc1e53b643ec87a0528ed3e1403ceed4d8cb70c368cc5a700189cc",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8g02/lesson.production-brief.json",
+    "sha256": "1910830c3b08ccb655f3ffa0e2857e673265cb5aa71e1d74f3331ea5bc21b753"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist. The sample reads above the standards. The line doesn't start at zero. Or the result is right, but it's from the wrong sample for the question being asked. Here are three HSC-style questions on water samples. Pause and try each one, then we'll work through it together.",
+      "hash": "35926e067dc3",
+      "textSha256": "35926e067dc36cad4c0aa3a02d311479bc0bddb3b3325fa6bc720ea7b0f7943a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/hook.35926e067dc3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/hook.35926e067dc3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/hook.35926e067dc3.generation.json",
+      "plannedRequestSha256": "674499e1409fe295e7a504936d53ce182b68a4c39a8c6929a9b1c1d31ffff7e5"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Copper standards are measured by atomic absorption spectroscopy, and the readings are on screen. A sample of mine drainage water gives an absorbance of point six two zero. The student then dilutes ten millilitres of it to fifty millilitres, and the diluted solution reads point one four two. Construct the calibration graph, explain why the sample was diluted, and calculate the copper concentration in the drainage water. Pause here to answer.",
+      "hash": "02a82bd729f2",
+      "textSha256": "02a82bd729f28a83955fd2f33935a8a2f2dca557f5c30abdaebf0f2140d077be",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-question.02a82bd729f2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-question.02a82bd729f2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-question.02a82bd729f2.generation.json",
+      "plannedRequestSha256": "61e5f8c28d28a5470c56c7e3784003838d8d58c0b690c43c899dd906e1c28bb3"
+    },
+    {
+      "id": "q1-graph",
+      "parentSceneId": "q1-graph",
+      "text": "Part a. The standards' concentration was chosen, so it goes along the bottom, with absorbance up the side. Use even steps that fill the grid, label both axes with units, and plot each point as a small cross. Then rule one straight line of best fit through the points, including the blank, not dot to dot. These points sit almost exactly on it, and the slope is about point one absorbance for each milligram per litre.",
+      "hash": "564e9647ddb9",
+      "textSha256": "564e9647ddb9873433bb4329c382d559a23620a527854809d3ef04520ba904c6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-graph.564e9647ddb9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-graph.564e9647ddb9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-graph.564e9647ddb9.generation.json",
+      "plannedRequestSha256": "650f35cec9d8b66e1a42d5e967e8d8cfa69a362d706960de53eeda3723731b4a"
+    },
+    {
+      "id": "q1-range",
+      "parentSceneId": "q1-range",
+      "text": "Part b. The top standard reads about point four. The undiluted sample, at point six two zero, is well above it, outside the standards. Nothing in this data shows the line stays straight up there, and atomic absorption calibrations often bend at high concentration. So the student diluted it, to bring the reading back inside the range the standards cover.",
+      "hash": "78a72f19e20e",
+      "textSha256": "78a72f19e20e8077c5fa6c3625d54125b3763a37f5bb87f0b55b4c13f9781d06",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-range.78a72f19e20e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-range.78a72f19e20e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-range.78a72f19e20e.generation.json",
+      "plannedRequestSha256": "1b1573a4b9f7f8e813d8385deebd03f8ca4a6bbde491868c91995e30f4472718"
+    },
+    {
+      "id": "q1-calc",
+      "parentSceneId": "q1-calc",
+      "text": "Part c. Read across from point one four two to the line, then down, and show those read-off lines: one point four two milligrams per litre. That's the diluted solution. Fifty over ten is a dilution factor of five, so the drainage water holds about seven point one milligrams per litre.",
+      "hash": "853e58ef07ee",
+      "textSha256": "853e58ef07eeba5f3d19fb81dcf8d68184c3407d8e44f334ad84f4f0a3a064a4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-calc.853e58ef07ee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-calc.853e58ef07ee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-calc.853e58ef07ee.generation.json",
+      "plannedRequestSha256": "0675c82c7b5643e37fdc1e66d4d77dcaf5257f2e3cdccbb1faf8602b1971aab6"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic slip is extending the line up to point six two zero. That gives about six point two, nearly one milligram per litre below the dilution-corrected result, because the real response bends below the straight line up there. Outside the standards, doubt the line. Dilute and remeasure.",
+      "hash": "8fdbe5a4f92e",
+      "textSha256": "8fdbe5a4f92e1f779ab7d8af38399abebba954f0c0b41f884b17b1a33aeb8ca9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8fdbe5a4f92e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8fdbe5a4f92e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q1-mistake.8fdbe5a4f92e.generation.json",
+      "plannedRequestSha256": "0d8f4ef637b819188637b6460f2f569cb0e8e43adf92b2a5d250d5f42048813c"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Iron in bore water is measured by colourimetry. A reagent turns the iron into an orange-red complex, and the same amount of reagent goes into every standard and into the sample. The instrument was zeroed with distilled water. The calibration line and its equation are on screen, and the bore water reads point two nine zero. Explain why the zero standard has an absorbance, then calculate the iron concentration in the bore water. Pause here to answer.",
+      "hash": "121b27a211ba",
+      "textSha256": "121b27a211bad3feb9b071fe71009ae524381dd52372a9db55aee13ffc7138e9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-question.121b27a211ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-question.121b27a211ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-question.121b27a211ba.generation.json",
+      "plannedRequestSha256": "c048e571ebc30513c1ca62a25ff0fc08a2050681c254357b9ab6a4b7ea7da444"
+    },
+    {
+      "id": "q2-blank",
+      "parentSceneId": "q2-blank",
+      "text": "Part a. The zero standard has no added iron, but it still reads point zero three two. It does contain the reagent, and the instrument was zeroed with plain water, not with the reagent. So something in the reagent absorbs a little, perhaps a trace of iron in the chemicals themselves. Every standard and the sample carry that same extra point zero three two. That's why the line starts above zero.",
+      "hash": "4934a5036ad9",
+      "textSha256": "4934a5036ad971aa4f7bd1cf4a3601c7f76fb9f1bf6610010fd2e4532fd66b55",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-blank.4934a5036ad9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-blank.4934a5036ad9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-blank.4934a5036ad9.generation.json",
+      "plannedRequestSha256": "c5c894a45463bfee2ca2f664f9c05c62529cd33e8f51525588f4217cc97f008e"
+    },
+    {
+      "id": "q2-calc",
+      "parentSceneId": "q2-calc",
+      "text": "Part b. Take the reagent's share off first. Point two nine zero minus point zero three two is point two five eight. That's the absorbance from the bore water's iron. Divide by the slope, point one nine nine, and you get about one point three zero milligrams per litre. Reading across to the line and down gives the same answer.",
+      "hash": "e21f064b3cda",
+      "textSha256": "e21f064b3cdae8b963feb41c495fea50c07e0e89815571f7b3844137b3f6996d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-calc.e21f064b3cda.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-calc.e21f064b3cda.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-calc.e21f064b3cda.generation.json",
+      "plannedRequestSha256": "c2b87588ab4897a321a7e9831ac8e7cc8ae1569f7cd479653e1ccc80d3c7ee33"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic slip is dividing point two nine zero by the slope straight away. That gives about one point four six, too high, because it counts the reagent's absorbance as iron. When a line has an intercept, subtract it before you divide. Better still, zero the instrument with a reagent blank, a cuvette holding every reagent but no iron.",
+      "hash": "fb5b31194776",
+      "textSha256": "fb5b31194776bd9d60bcd5749a89feaea87d1d81de5ee91fb7b1c2e28c187350",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.fb5b31194776.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.fb5b31194776.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q2-mistake.fb5b31194776.generation.json",
+      "plannedRequestSha256": "b630c8910bd29b10bc77da0aa86f14c3b22dbe0bb378f1442523034a7d552d53"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A school tests the lead in water from one drinking bubbler. A sample taken first thing in the morning, after the water stood in the pipes overnight, contains point zero one two milligrams per litre. A sample taken after the bubbler ran for two minutes contains point zero zero two. The school claims the water is safe to drink, because the flushed sample is under the guideline value. Evaluate this claim. Pause here to answer.",
+      "hash": "038027993f6d",
+      "textSha256": "038027993f6d0b603d085b05540583435b76918fee51b951332947cfc6e3054d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-question.038027993f6d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-question.038027993f6d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-question.038027993f6d.generation.json",
+      "plannedRequestSha256": "f425caa4518f207d103fef1fe44768e0f7c80557a21d92e226cfa6843260e1af"
+    },
+    {
+      "id": "q3-data",
+      "parentSceneId": "q3-data",
+      "text": "Start with the method. Can it measure lead at this level? Its validated quantification limit, the lowest concentration this method can measure with the stated reliability, is point zero zero one, five times below the guideline, so yes. Now the morning sample. Point zero one two over point zero zero five is about two point four times the guideline. The flushed sample is under it. So lead is probably dissolving into the water while it stands in the pipes and fittings.",
+      "hash": "2ce7fb9e4c5c",
+      "textSha256": "2ce7fb9e4c5cbbeb9a2e7aed69a978d1b3c399939a14fbed9d609e2fe0c2085d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-data.2ce7fb9e4c5c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-data.2ce7fb9e4c5c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-data.2ce7fb9e4c5c.generation.json",
+      "plannedRequestSha256": "ee9272c1fba604b96533e2694d5818b9de3d60b6a84e902c29f57c36b5dcabcd"
+    },
+    {
+      "id": "q3-claim",
+      "parentSceneId": "q3-claim",
+      "text": "Now the claim. The flushed result is real, but it isn't the water many students drink. The first drink of the day comes after the water has stood overnight, and that sample was over the guideline. And one bubbler on one day doesn't show what the others do. So the claim isn't supported. The school needs repeat samples from every bubbler over several days, and advice from the local public health unit to find and control the lead source.",
+      "hash": "b41114a96938",
+      "textSha256": "b41114a96938fff228d1da67c993c20ca64d6a2277e585af6b274dab6fdea3e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-claim.b41114a96938.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-claim.b41114a96938.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-claim.b41114a96938.generation.json",
+      "plannedRequestSha256": "050fe80ae95dab7cc85bfab16361551c2c0323af4f0cca50dd5eac273d7534df"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The trap is averaging the two results. Point zero zero seven sounds like a fair middle, but the two samples answer different questions: one is the water after it stands, the other after it runs. Their average describes no water anyone actually drinks. Match the sample to the question.",
+      "hash": "2dd81a938ef3",
+      "textSha256": "2dd81a938ef351c144ffad65f17bdf51780280efc4e0dad1e7b158a3b39a513f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.2dd81a938ef3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.2dd81a938ef3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/q3-mistake.2dd81a938ef3.generation.json",
+      "plannedRequestSha256": "93f9b398d47d20de26aa507e85d4423ccb666c065075098ab1557d8ec1c880cb"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So, for any calibration or monitoring question. Read the unknown only inside the standards, and dilute it if it's above them. Multiply back by every dilution. If the line has an intercept, subtract it before you divide. And judge a result with the sample that matches the question, which water, when and where, and not from one sample alone. Next: why monitor water and nutrient pollution?",
+      "hash": "b4b4bbb2500b",
+      "textSha256": "b4b4bbb2500bb6c4e548710e4ff1e873e218d469cb4887a0962d0bb23e79b9da",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/decision-board.b4b4bbb2500b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/decision-board.b4b4bbb2500b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/decision-board.b4b4bbb2500b.generation.json",
+      "plannedRequestSha256": "8f92498959a826ecfb83b518e069c6f1e233b3782b07c8c0c7c03e45517fb91f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-G02-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

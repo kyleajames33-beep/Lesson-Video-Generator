@@ -1,0 +1,146 @@
+{
+  "id": "math-a12-d11",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (a slope that never drops below one)",
+      "voiceover": {
+        "text": "Last video ended with this fence. We'll solve it later, once we can build a function from a situation like this. First, there's a gap in our derivative list. We know sine and cos, but not tan x. Here's its graph. It runs between vertical asymptotes, walls the curve never meets, at minus pi over two and pi over two. Watch its tangent. Coming in from the left it's steep. It eases to its flattest at zero, where the slope is one, then steepens again. It never gets flatter than that, and it never falls. So why is the slope never below one? And what is it, exactly?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "measure: one more than the height squared",
+      "voiceover": {
+        "text": "Let's measure some slopes on this middle piece. At zero, the height is zero and the slope is one. At pi over four, the height is one and the slope is two. At pi over three, the height is root three, about one point seven three, and the slope is four. Look at the pattern. Height zero, slope one. Height one, slope two. Height root three, slope four. Each slope is one more than the height squared. Hold on to that, because the algebra is about to explain it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the two turns: why the slope is one plus tan squared",
+      "voiceover": {
+        "text": "Why? Tan x is sine x over cos x, a quotient. The quotient rule video split a quotient's slope into two turns. The top's turn is the top's slope over the bottom. That's cos x over cos x, which is exactly one, everywhere. That's where the one comes from. Now the bottom's turn. Between zero and pi over two, cos x is shrinking, and a shrinking bottom makes a positive fraction grow, so this turn adds. It works out to sine squared over cos squared, which is tan squared x, the height squared. At pi over four, that's one plus one, two. At pi over three, one plus three, four. And near pi over two, cos x gets close to zero, so the bottom's turn grows without any limit. That's the steep wall."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the proof",
+      "voiceover": {
+        "text": "The syllabus asks you to show this result, so here's the proof, line by line. Tan x is sine x over cos x, and cos x can't be zero. The quotient rule gives cos x times cos x, minus sine x times minus sine x, all over cos squared x. The two minus signs make a plus, so the top is cos squared x plus sine squared x. By the Pythagorean identity, that top is one. So the derivative is one over cos squared x. One over cos x has its own name, sec x. So the derivative of tan x is sec squared x. And cos squared x is never more than one, so sec squared x is never less than one. That's why the slope never drops below one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "radians and branches",
+      "voiceover": {
+        "text": "Two conditions come with this result. It's built from the derivatives of sine and cos, so x must be in radians. And tan x only exists where cos x isn't zero, so x can't be pi over two, plus any whole number of pis. The graph breaks into branches, unbroken pieces between neighbouring walls. Sec squared is always positive, so tan increases along each branch. But not across a wall. Tan of pi over four is one, but tan of three pi over four is minus one, even though three pi over four comes later. So tan x is increasing on each branch, not on its whole domain."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "a squash moves the walls and doubles the slopes",
+      "voiceover": {
+        "text": "Now a worked example from the course. Differentiate y equals tan of, two x minus pi over three, and find its gradient at x equals zero. First, the picture. Two x minus pi over three is two lots of x minus pi over six. So this graph is tan x squashed sideways by a half, then slid right by pi over six. You've seen this with exponentials. A sideways squash by a half doubles every slope at matching points, and a slide changes none. The walls move too. The squash pulls them in, and the slide moves them along, to minus pi over twelve and five pi over twelve."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the chain rule, the exclusions and the gradient",
+      "voiceover": {
+        "text": "Now the algebra agrees with the picture. The outside is tan, and the inside is two x minus pi over three. The inside's derivative is two, because pi over three is a constant. So the outside gives sec squared of the same inside, times two. d y by d x equals two sec squared of, two x minus pi over three. Where does it hold? Wherever the inside isn't pi over two plus k pi. Solving that, x can't be five pi over twelve, plus k pi over two. Now x equals zero. The inside is minus pi over three, and cos of that is a half. So sec squared is four, and the gradient is two times four, which is eight. The tangent at zero, minus root three, agrees."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a quick check for any gradient of tan x. The slope of tan is one plus its height squared. That's just sec squared written another way, because one plus tan squared equals sec squared. At pi over three, the height is root three, so the slope is one plus three, four. It works wherever tan is defined, with x in radians. With an inside, like two x minus pi over three, multiply by the inside's derivative as well."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the exact gradient of the curve y equals tan x, at the point where x equals five pi over six. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "d y by d x is sec squared x. At five pi over six, cos x is minus root three over two, so cos squared x is three quarters, and sec squared x is four thirds. Check with the height: tan is minus one over root three, and one plus a third is four thirds. The point is below the axis, but the curve is still rising. Minus two over root three is sec x, not sec squared, and a tan slope is never negative."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Differentiate y equals tan three x, and state the values of x for which the derivative exists. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The inside is three x, with derivative three, so d y by d x is three sec squared three x. It exists wherever cos three x isn't zero, so three x can't be pi over two plus k pi. Dividing by three, x can't be pi over six, plus k pi over three, for any integer k. Copying tan's own exclusion, x not equal to pi over two plus k pi, misses x equals pi over six."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So tan x, a quotient of sine and cos, has derivative sec squared x, on each branch. Next, the other three reciprocal functions: sec x, cosec x and cot x. Here's y equals sec x, which is one over cos x. Its walls are where cos x is zero, and at x equals zero it sits at one. How does its slope change, and where does its derivative exist?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

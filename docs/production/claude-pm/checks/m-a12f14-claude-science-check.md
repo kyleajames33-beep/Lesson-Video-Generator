@@ -13,3 +13,8 @@ Independent exact-rational SymPy calculations are in `work/brief161/f14.py` and 
 3. **Should fix:** Distinguish exact proportionality before rounding from separately rounded cent values.
 
 These are the learning review findings. Confirmed lesson 18 numerical issues are recorded in the site log. Count: 0 blockers, 3 should fix, 0 optional.
+
+
+## Official2027 reference-sheet check (4 November2026)
+
+The official Mathematics Advanced2027 reference sheet, reached through the2024-syllabus assessment page, has no annuity formula. It gives FV=PV(1+r)^n and geometric-series formulae. This confirms the reference-sheet check requested by root decision51; do not imply an annuity formula is printed. Source and SHA256: `work/brief162/reference-table-verification.json`; rendered pages: `work/brief162/reference-page-1.png` and `reference-page-2.png`.

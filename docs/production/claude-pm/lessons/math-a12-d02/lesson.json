@@ -1,0 +1,166 @@
+{
+  "id": "math-a12-d02",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (same start, different slope)",
+      "voiceover": {
+        "text": "Here are two curves on the same axes, y equals e to the x, and y equals two to the x. Both cross the y axis at a height of one. E to the x leaves that point with a slope of exactly one, because it's its own derivative. But two to the x is flatter there. So the derivative of two to the x can't just be two to the x. Then what is it? Here's the strange part. The answer contains a logarithm. Why would a log turn up when you differentiate an exponential?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "recall: the measuring stick",
+      "voiceover": {
+        "text": "Last video gave us a measuring stick. Divide the gradient by the height. For e to the x, that ratio is always one. Squash the curve to e to the two x, and the ratio is always two. Whenever the power is some number times x, the gradient is that number times the height. So the ratio tells you the number in the power. Let's measure two to the x that way."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "measure two to the x",
+      "voiceover": {
+        "text": "Start at x equals zero, where the height is one. Slide a second point in towards it, and the secant's slope settles: point eight three, point seven two, point six nine six. The tangent's slope is about point six nine three. Now move along. At x equals one, the height is two, and the gradient is about one point three nine. At x equals two, the height is four, and the gradient is about two point seven seven. The gradient is always the same fraction of the height. The ratio stays at point six nine three. That's the pattern we saw for e to a number times x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "every base has its own ratio",
+      "voiceover": {
+        "text": "Try three to the x. Now the ratio settles at about one point zero nine nine, the same at every point. So each base has its own fixed ratio. Two gives about point six nine, three gives about one point one. Somewhere between two and three, there must be a base with a ratio of exactly one. Slide the base from two up to three, and watch the ratio climb. At two point seven one eight, it reads one, and the curve lands right on top of e to the x. That base is e."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "the ratios are logarithms",
+      "voiceover": {
+        "text": "So what are these numbers? Plot each ratio against its base. Two gives point six nine three. E gives one. Three gives one point zero nine nine, and four gives one point three eight six. These points sit on a curve you met in Year 11, the natural log curve. Check it on a calculator. The natural log of two is point six nine three. So the gradient of a to the x is always the natural log of a, times the height. But why would a logarithm be the answer?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "why: two to the x is e to the x, stretched sideways",
+      "voiceover": {
+        "text": "The key is to write two as a power of e. The natural log of two is the power you raise e to, to get two. So two is approximately e to the point six nine three. Exactly, two to the x is e raised to the power x times the natural log of two. So two to the x is just e to the x, stretched sideways. Watch this tangent triangle on e to the x, at height two. Stretch it sideways by a factor of one point four four, and the run grows from one to one point four four, while the rise stays two. So at every height, the slope is multiplied by point six nine three, and the gradient becomes point six nine three times the height."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the proof for any base",
+      "voiceover": {
+        "text": "Now let's prove it for any positive base a. The natural log of a is the power that turns e into a, so a equals e to the natural log of a. So a to the x is e raised to a new power, x times the natural log of a. Call that power u. The base is fixed, so the natural log of a is just a number, and d u by d x is the natural log of a. And d y by d u is e to the u. The chain rule multiplies them. Put the power back, and that e to the u is a to the x again. So the derivative of a to the x is the natural log of a, times a to the x. Try a equals e. The natural log of e is one, so you get e to the x back, the rule you already know."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "bases of one and below",
+      "voiceover": {
+        "text": "What if the base is less than two? Slide it down. At a equals one, the curve flattens into the line y equals one, with gradient zero. The rule agrees, because the natural log of one is zero. Keep going to a half. Now the curve falls. The natural log of a half is minus point six nine three, so the gradient is negative, while the height stays positive. A half to the x is two to the minus x, the mirror image of two to the x. And the base must be positive. The natural log of a negative number doesn't exist, and a negative base can't be raised to every power."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "worked example 1: gradient of two to the x",
+      "voiceover": {
+        "text": "Find the gradient of y equals two to the x at x equals three. Here the base is two. Copy two to the x, then multiply by the natural log of two. So d y by d x is the natural log of two, times two to the x. At x equals three, two cubed is eight, so the gradient is eight times the natural log of two, about five point five five. On the graph, the height is eight, and the gradient is point six nine three times that. If you wrote just two to the x, you'd get eight. That's the slope e to the x has at that height."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember it. Except when the base is one, a to the x is e to the x scaled sideways. The natural log of the base sets the scale. You can see that number on the graph. Where a to the x crosses the y axis, its height is one. So its slope there is exactly the natural log of a. Two to the x leaves with slope point six nine three, and e to the x with slope one. So copy the exponential, then multiply by the natural log of the base."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. For f of x equals five to the x, find f prime of x, then the exact value of f prime of zero. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The base is five, so f prime of x is the natural log of five, times five to the x. At zero, five to the zero is one, so f prime of zero is exactly the natural log of five, about one point six one. If you wrote x times five to the x minus one, that's the power rule, and it needs x in the base. It gives zero here, a flat tangent on a rising curve."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. For g of x equals a half to the x, find the exact value of g prime of two, and explain its sign. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "G prime of x is the natural log of a half, times a half to the x. At two, a half squared is a quarter, so g prime of two is a quarter of the natural log of a half, which is minus the natural log of two, over four. It's negative because the base is less than one, so its natural log is negative, while a half to the x is always positive. Writing the natural log of two there gives the wrong sign."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a to the x is e with x times the natural log of a in the power, and its derivative is the natural log of a, times a to the x. Next: our ratio points traced the natural log curve. What's the gradient of that curve itself?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d10.md",
+  "sourceSha256": "4634cc07ac5f5719d9104b938c2331f238aa00895ae34a4af90b1ceeffdd29e9",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here. This curve, f of x equals x cubed minus three x, has a local maximum at minus one, two. Now we only look from x equals minus two to x equals three, with both ends included. Near minus one, nothing is higher than two. But follow the curve to the right-hand end. At x equals three, f is eighteen. So a local maximum isn't always the largest value. How do we find the largest and smallest values on a whole interval, and make sure we haven't missed one?",
+      "audioFile": "public/audio/math-a12-d10/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "The largest value over the whole domain is called the global maximum. A point a, f of a, is a global maximum if f of x is less than or equal to f of a, for every x in the domain. Picture a horizontal line at that height. For a global maximum, no part of the graph pokes above it. Put the line at two, the local maximum, and the curve pokes through near the right-hand end. Put it at eighteen, and the whole graph sits on or below it. A global minimum is the same idea with a floor. No part of the graph dips below it.",
+      "audioFile": "public/audio/math-a12-d10/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So where can the highest point be? Suppose it's inside the interval, where the curve is smooth. Then its tangent must be flat. If the tangent sloped either way, you could step a little uphill and find a higher point. So inside, look at stationary points. But at an end, the curve just stops. It doesn't need to be flat, because the uphill direction leaves the domain. And at a sharp corner, there's no single tangent, so f prime doesn't exist there, and solving f prime equals zero can't find it. On a closed interval where the curve is unbroken, the highest and lowest values always exist, and each one is at one of these candidates. If the curve breaks somewhere, examine that point too.",
+      "audioFile": "public/audio/math-a12-d10/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "That gives a short method. List the candidates: stationary points inside the interval, any interior points where f prime doesn't exist, and both endpoints. Then work out f at every one, and compare. Here, f prime of x is three, times x minus one, times x plus one. So the stationary points are minus one and one, both inside. The endpoints are minus two and three, and f prime exists everywhere. The values are minus two, two, minus two and eighteen. The largest is eighteen, so the global maximum is eighteen, at x equals three. The smallest is minus two, and it happens twice, at x equals minus two and x equals one. Notice we never had to classify anything. Comparing the values settles it.",
+      "audioFile": "public/audio/math-a12-d10/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now a worked example. Find the global maximum and minimum of f of x equals x plus four over x, for x from a half to four. First, f prime of x is one minus four over x squared. Setting that to zero gives x squared equals four, so x is two or minus two. Minus two isn't in the interval, so reject it. And f isn't defined at zero, but zero isn't in the interval either, so the curve is unbroken here, with no corners. The candidates are a half, two and four.",
+      "audioFile": "public/audio/math-a12-d10/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now evaluate f at each one. f of a half is a half plus eight, which is eight and a half. f of two is two plus two, four. f of four is four plus one, five. Compare them. The global minimum is four, at the stationary point x equals two. The global maximum is eight and a half, at the endpoint x equals a half, where the tangent isn't flat at all. Solving f prime equals zero alone would have missed it completely.",
+      "audioFile": "public/audio/math-a12-d10/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The same method works for an exponential. Find the greatest and least values of g of x equals x e to the minus x, for x from zero to three. By the product rule, g prime of x is e to the minus x, times one minus x. e to the minus x is never zero, so the only stationary point is x equals one. The candidates are zero, one and three. g of zero is zero. g of one is one over e, about point three six eight. g of three is three over e cubed, about point one four nine. So the greatest value is one over e, at x equals one, and the least is zero, at the endpoint x equals zero.",
+      "audioFile": "public/audio/math-a12-d10/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Flats, ends and corners, then compare. Flats are the stationary points inside the interval. Ends are the two endpoints. Include every interior point where f prime doesn't exist, such as a corner. Then compare the values of f itself, not f prime. The list is complete on a closed interval where the curve is unbroken.",
+      "audioFile": "public/audio/math-a12-d10/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find the global maximum and minimum values of f of x equals x cubed minus twelve x, for x from zero to three, and say where they occur. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d10/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "f prime of x is three, times x minus two, times x plus two, which is zero at two and minus two. Minus two isn't in the interval, so reject it. The candidates are zero, two and three, giving zero, minus sixteen and minus nine. So the global maximum is zero, at x equals zero, and the global minimum is minus sixteen, at x equals two. Sixteen, from minus two, doesn't count. It's outside the domain.",
+      "audioFile": "public/audio/math-a12-d10/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. For h of x equals e to the x, minus two x, for x from zero to two, find the exact global maximum and minimum values. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d10/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "h prime of x is e to the x minus two, zero when x is the natural log of two, inside the interval. h of zero is one. h of the natural log of two is two, minus two times the natural log of two, about point six one. h of two is e squared minus four, about three point three nine. So the maximum is at x equals two, and the minimum is at the natural log of two. Zero is h prime there, not h.",
+      "audioFile": "public/audio/math-a12-d10/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So on a closed interval, list every candidate and compare the values of f. That completes this run of differential calculus, from the derivative of e to the x, all the way to global maxima and minima. Later in the course, the function comes from a real situation. Forty metres of fencing make three sides of a rectangle, against a wall. What shape gives the largest area?",
+      "audioFile": "public/audio/math-a12-d10/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d10/scene-14.wav"
+    }
+  ]
+}

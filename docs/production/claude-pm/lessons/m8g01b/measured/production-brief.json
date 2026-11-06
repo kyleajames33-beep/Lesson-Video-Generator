@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8g01b/measured/lesson.json",
+    "lessonSha256": "e174a8e674e3e07662221a2e908e2d2b4a98aa1acbe3f29e2c6266348e74bfd7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b10 (route level only: \"Define cases, population and time window\"; \"Calculate and compare rates without mixing denominators\"): incidence, prevalence and mortality, each a count out of a population over a time. From s05: equation, substitute, solve, sense check (\"One E and three S's\"). From b11 (settled order): observational and intervention designs, cross-sectional and cohort studies, bias, confounder, the four-step frame (design, strength, limitation, judgement). From b07: UV exposure and melanoma (Q2's context only). From Year 11 Working Scientifically: independent and dependent variables, graph conventions. s06 (graphs and data, with TAILS) sits in the Chemistry playlist only (route change 10), so TAILS is spoken once with its meaning here, as a recall for Chemistry viewers and new for Biology viewers. Not assumed: age-standardised (glossed in 2c as \"adjusted as if both regions had the same age mix\").",
+    "startsWith": "Epidemiology questions in the HSC tend to ask for three things. Calculate a rate from new data, draw a graph of rates, and judge whether a study supports its claim. Here are three HSC-style questions, one of each. Pause and try each one properly, then we'll work through it together.",
+    "stopsAfter": "calculating incidence (550 and 700 per 100,000 per year) and mortality (25 and 36 per 100,000 per year) for two regions and evaluating a raw-count claim, with age structure named as the check before inferring risk; constructing a line graph of melanoma incidence and mortality rates on one set of axes (year on the x axis to scale, rate per 100,000 per year on the y axis from 0 to 60, both series with a key and a title) and describing and explaining the two trends (incidence rising then levelling; mortality far lower and falling; early detection and removal, more skin checks, consistent with better treatment); calculating prevalence in a survey (9 and 4 per cent), naming the design (cross-sectional), and evaluating it (quick, measures prevalence; cannot show which came first, confounders, self-report, one city; association only; a cohort would be stronger).",
+    "nextLesson": "how type 2 diabetes can be managed (bio-m8-b12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-g01.md"
+  ],
+  "teaching": {
+    "task": "When an exam gives you disease counts, a table of rates or a study with a claim, how do you calculate the rate, draw the graph and judge the claim?",
+    "causalExplanation": "Why raw counts mislead (a bigger population gives more cases at the same risk; 2c, 2d); why age matters (diabetes rises with age, so an older population has a higher crude rate; 2c); why one y axis works and why it starts at zero (same unit; every value must fit; 3b, 3d); why the years are spaced to scale (time is continuous; 3b); why points are joined (each is a whole year's rate; 3b); why melanoma mortality is far below incidence (early detection and removal; 3c); why same-year deaths and diagnoses don't give survival (different people; 3c); why a snapshot can't show cause (no order in time, confounders; 4c); why sample size reduces random uncertainty but doesn't remove selection bias or fix design (4d).",
+    "conversationalApproach": "Epidemiology questions in the HSC tend to ask for three things. Question one. Rates first, laid out as equation, substitute, solve, sense check. Now the claim. The classic mistake is comparing raw counts. Question two. Set up the graph before you plot anything. Now describe and explain. The classic mistake is starting the y axis at thirty, to fit the incidence line. Question three. Prevalence is existing cases out of the group, as a percentage. Now the limitations. The classic mistake is thinking two thousand people makes the claim proven. So, here's your first move for each type.",
+    "openingDecision": "Epidemiology questions in the HSC tend to ask for three things. Calculate a rate from new data, draw a graph of rates, and judge whether a study supports its claim. Here are three HSC-style questions, one of each. Pause and try each one properly, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Q2's card adds a line inviting a longer pause for drawing. Nothing answer-bearing during the holds.",
+    "curriculumScope": "- B8-IQ2-02: \"collect and represent data to show the incidence, prevalence and mortality rates of non-infectious diseases, for example:\" with the listed examples \"nutritional diseases\" and \"diseases caused by environmental exposure\". Q1 calculates incidence and mortality rates (type 2 diabetes, a nutrition-linked disease); Q2 represents incidence and mortality rates as a graph (melanoma, a disease caused by environmental exposure); Q3 calculates prevalence from survey counts. \"Collect\": Q3's survey is the collected data, and Q2's table is secondary data."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in M7 g01's and g03's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Calculate rates\", \"Draw the graph\", \"Judge the study\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is s05's step rows (equation, substitute, solve, sense check) with M7 g01's DenominatorPair showing the population boxed under each fraction, then two small coded rate bars (P and Q side by side per 100,000) beside a pair of population blocks drawn to scale (P eight times Q). Q2's working is the coded GraphPaper (lesson-local): a faint grid on which the axes, ticks, labels, points, lines, key and title draw stage by stage on their cues, with s06's TailsRail in the side column. Q3's working is a coded two-group dot field (400 and 1,600 dots, cases tinted) beside the prevalence rows, then b11's four-slot frame strip (design, strength, limitation, judgement). Plates: m8-pancreas-v1.png (Q1 card), m8-skin-melanoma-v1.png and m6-uv-skin-v1.png (Q2 card and 3c), m5x-clipboard-sheet-v1.png and new m8-energy-drink-can-plain-v1.png (Q3 card). No people, hands or faces: residents, survey respondents and patients are words or plain coded dots only. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "heading \"Calculate it, graph it, judge it\" writes on. fresh board. the card shrinks to a strip; type badge \"Calculate rates\". the calculation rows dim; the answer table stays. a chip \"6600 > 1050, so P is worse\" writes on and, on \"the classic mistake\", takes a grey scribble cross. board clears. the card shrinks to a strip; type badge \"Draw the graph\". the TAILS rail dims. a small inset graph draws beside the finished one with its y axis from 30 to 60: the incidence line looks steep and the mortality points sit below the axis, cut off (label \"mortality missing\"). board clears. the card shrinks to a strip; type badge \"Judge the study\". the dot fields shrink and dim. a chip \"2000 people, so it's proven\" writes on and, on \"the classic mistake\", takes a grey scribble cross. the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"counts from groups of different size → rate per 100 000, same unit for all (Q1)\" with the population blocks thumbnail; \"a table of rates to graph → axes, units, even scale that fits every value, then plot (Q2)\" with the graph thumbnail; \"a study and a claim → name the design; association or cause? (Q3)\" with the frame strip thumbnail. > Here are the key notes."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Calculate it, graph it, judge it\" writes on. On \"Calculate\" a small coded fraction outline draws in the working area (\"cases ÷ population × 100,000\", no values); on \"draw\" a blank pair of axes draws beside it; on \"judge\" a blank four-slot frame strip outline draws under them. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a fraction, a graph, a dot field, all without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "teachingReason": "Epidemiology questions in the HSC tend to ask for three things.",
+      "narrationCue": "Calculate / draw / judge / three HSC-style questions",
+      "motionPurpose": "heading \"Calculate it, graph it, judge it\" writes on. On \"Calculate\" a small coded fraction outline draws in the working area (\"cases ÷ population × 100,000\", no values); on \"draw\" a blank pair of axes draws beside it; on \"judge\" a blank four-slot frame strip outline draws under them. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a fraction, a graph, a dot field, all without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Calculate it, graph it, judge it\" writes on. On \"Calculate\" a small coded fraction outline draws in the working area (\"cases ÷ population × 100,000\", no values); on \"draw\" a blank pair of axes draws beside it; on \"judge\" a blank four-slot frame strip outline draws under them. On \"three HSC-style questions\" three small numbered card thumbnails fan out (a fraction, a graph, a dot field, all without words or values) with one shared tag line \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type badge hidden. m8-pancreas-v1.png sits small at the card's upper left. The card writes on: \"Health authorities in two regions recorded type 2 diabetes for one year (2024).\" Table: \"Region | Population | New diagnoses of type 2 diabetes | Deaths from type 2 diabetes\"; \"P | 1 200 000 | 6600 | 300\"; \"Q | 150 000 | 1050 | 54\". Grey chip \"illustrative data\". Demands: \"(a) Calculate the incidence rate and the mortality rate of type 2 diabetes per 100 000 people per year for each region. (4 marks)\" \"(b) A news report states: 'Region P has a worse type 2 diabetes problem, because it had more than six times as many new cases.' Evaluate this claim. (3 marks)\". A small answer table and one lined box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "teachingReason": "Question one.",
+      "narrationCue": "Question one",
+      "motionPurpose": "fresh board. Type badge hidden. m8-pancreas-v1.png sits small at the card's upper left. The card writes on: \"Health authorities in two regions recorded type 2 diabetes for one year (2024).\" Table: \"Region | Population | New diagnoses of type 2 diabetes | Deaths from type 2 diabetes\"; \"P | 1 200 000 | 6600 | 300\"; \"Q | 150 000 | 1050 | 54\". Grey chip \"illustrative data\". Demands: \"(a) Calculate the incidence rate and the mortality rate of type 2 diabetes per 100 000 people per year for each region. (4 marks)\" \"(b) A news report states: 'Region P has a worse type 2 diabetes problem, because it had more than six times as many new cases.' Evaluate this claim. (3 marks)\". A small answer table and one lined box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type badge hidden. m8-pancreas-v1.png sits small at the card's upper left. The card writes on: \"Health authorities in two regions recorded type 2 diabetes for one year (2024).\" Table: \"Region | Population | New diagnoses of type 2 diabetes | Deaths from type 2 diabetes\"; \"P | 1 200 000 | 6600 | 300\"; \"Q | 150 000 | 1050 | 54\". Grey chip \"illustrative data\". Demands: \"(a) Calculate the incidence rate and the mortality rate of type 2 diabetes per 100 000 people per year for each region. (4 marks)\" \"(b) A news report states: 'Region P has a worse type 2 diabetes problem, because it had more than six times as many new cases.' Evaluate this claim. (3 marks)\". A small answer table and one lined box. Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "m8-pancreas-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q1-question (question 1: two regions): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q1-calc",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Calculate rates\". A grey tag at the top of the working area: \"s05: One E and three S's\". On \"Incidence is\" the equation row writes: \"incidence = new cases ÷ population × 100 000\" with \"population\" boxed (M7 g01's DenominatorPair style, label \"everyone in the region\"). On \"For P\" \"6600\" and \"1 200 000\" underline amber in the strip and the substitute row writes \"6600 ÷ 1 200 000 × 100 000\"; on \"five hundred and fifty\" the solve row writes \"= 550 per 100 000 per year\" (teal) and the answer table cell \"P incidence: 550\" fills. On \"For Q\" \"1050\" and \"150 000\" underline; \"1050 ÷ 150 000 × 100 000 = 700 per 100 000 per year\" writes on \"seven hundred\" (the P rows dim). On \"Mortality puts deaths on top\" the equation row changes its numerator to \"deaths\" (amber flash). On \"twenty-five\" \"300\" underlines and \"300 ÷ 1 200 000 × 100 000 = 25 per 100 000 per year\" writes; on \"thirty-six\" \"54\" underlines and \"54 ÷ 150 000 × 100 000 = 36 per 100 000 per year\" writes. The answer table fills cell by cell on the four result cues. On \"Sense check\" two small paired bars draw beside the table, \"incidence\" and \"mortality\", Q's bar taller in each (label \"smaller region, higher rates\"). At most three bright text items. Hold 1 second.",
+      "teachingReason": "Rates first, laid out as equation, substitute, solve, sense check.",
+      "narrationCue": "Incidence is / For P / five hundred and fifty / For Q / seven hundred / Mortality puts deaths on top / twenty-five / thirty-six / Sense check",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Calculate rates\". A grey tag at the top of the working area: \"s05: One E and three S's\". On \"Incidence is\" the equation row writes: \"incidence = new cases ÷ population × 100 000\" with \"population\" boxed (M7 g01's DenominatorPair style, label \"everyone in the region\"). On \"For P\" \"6600\" and \"1 200 000\" underline amber in the strip and the substitute row writes \"6600 ÷ 1 200 000 × 100 000\"; on \"five hundred and fifty\" the solve row writes \"= 550 per 100 000 per year\" (teal) and the answer table cell \"P incidence: 550\" fills. On \"For Q\" \"1050\" and \"150 000\" underline; \"1050 ÷ 150 000 × 100 000 = 700 per 100 000 per year\" writes on \"seven hundred\" (the P rows dim). On \"Mortality puts deaths on top\" the equation row changes its numerator to \"deaths\" (amber flash). On \"twenty-five\" \"300\" underlines and \"300 ÷ 1 200 000 × 100 000 = 25 per 100 000 per year\" writes; on \"thirty-six\" \"54\" underlines and \"54 ÷ 150 000 × 100 000 = 36 per 100 000 per year\" writes. The answer table fills cell by cell on the four result cues. On \"Sense check\" two small paired bars draw beside the table, \"incidence\" and \"mortality\", Q's bar taller in each (label \"smaller region, higher rates\"). At most three bright text items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Calculate rates\". A grey tag at the top of the working area: \"s05: One E and three S's\". On \"Incidence is\" the equation row writes: \"incidence = new cases ÷ population × 100 000\" with \"population\" boxed (M7 g01's DenominatorPair style, label \"everyone in the region\"). On \"For P\" \"6600\" and \"1 200 000\" underline amber in the strip and the substitute row writes \"6600 ÷ 1 200 000 × 100 000\"; on \"five hundred and fifty\" the solve row writes \"= 550 per 100 000 per year\" (teal) and the answer table cell \"P incidence: 550\" fills. On \"For Q\" \"1050\" and \"150 000\" underline; \"1050 ÷ 150 000 × 100 000 = 700 per 100 000 per year\" writes on \"seven hundred\" (the P rows dim). On \"Mortality puts deaths on top\" the equation row changes its numerator to \"deaths\" (amber flash). On \"twenty-five\" \"300\" underlines and \"300 ÷ 1 200 000 × 100 000 = 25 per 100 000 per year\" writes; on \"thirty-six\" \"54\" underlines and \"54 ÷ 150 000 × 100 000 = 36 per 100 000 per year\" writes. The answer table fills cell by cell on the four result cues. On \"Sense check\" two small paired bars draw beside the table, \"incidence\" and \"mortality\", Q's bar taller in each (label \"smaller region, higher rates\"). At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "DenominatorPair",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-calc (rates, one row at a time): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-claim",
+      "visualDecision": "new",
+      "visualReference": "the calculation rows dim; the answer table stays. On \"eight times as many people\" \"1 200 000\" and \"150 000\" underline and PopulationBlocks draw: a large block of dots for P and a block one eighth its size for Q (label \"P has 8 × the population\"). On \"Out of every hundred thousand\" each block shows a highlighted sub-block of the same size (label \"100 000 people\") with 550 and 700 tinted per the rates (proportional tint, not literal dots; label \"per 100 000: P 550, Q 700\"). On \"the claim isn't supported\" \"more than six times as many new cases\" underlines amber and answer box (b) writes line 1: \"P had more cases because its population is 8 times larger; per 100 000, Q's incidence (700) and mortality (36) are higher than P's (550, 25), so the claim is not supported.\" On \"check their ages\" a grey tag writes \"age structure?\" and two tiny coded age pyramids draw under the blocks, P younger and Q older (shape only; grey tag \"if Q is older\"). On \"Age-standardised\" the gloss writes \"age-standardised: adjusted as if both had the same age mix\"; answer box (b) line 2: \"Before concluding Q's residents are at higher risk, compare age-standardised rates, because diabetes rises with age.\" Hold 1 second.",
+      "teachingReason": "Now the claim.",
+      "narrationCue": "eight times as many people / Out of every hundred thousand / the claim isn't supported / check their ages / Age-standardised",
+      "motionPurpose": "the calculation rows dim; the answer table stays. On \"eight times as many people\" \"1 200 000\" and \"150 000\" underline and PopulationBlocks draw: a large block of dots for P and a block one eighth its size for Q (label \"P has 8 × the population\"). On \"Out of every hundred thousand\" each block shows a highlighted sub-block of the same size (label \"100 000 people\") with 550 and 700 tinted per the rates (proportional tint, not literal dots; label \"per 100 000: P 550, Q 700\"). On \"the claim isn't supported\" \"more than six times as many new cases\" underlines amber and answer box (b) writes line 1: \"P had more cases because its population is 8 times larger; per 100 000, Q's incidence (700) and mortality (36) are higher than P's (550, 25), so the claim is not supported.\" On \"check their ages\" a grey tag writes \"age structure?\" and two tiny coded age pyramids draw under the blocks, P younger and Q older (shape only; grey tag \"if Q is older\"). On \"Age-standardised\" the gloss writes \"age-standardised: adjusted as if both had the same age mix\"; answer box (b) line 2: \"Before concluding Q's residents are at higher risk, compare age-standardised rates, because diabetes rises with age.\" Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the calculation rows dim; the answer table stays. On \"eight times as many people\" \"1 200 000\" and \"150 000\" underline and PopulationBlocks draw: a large block of dots for P and a block one eighth its size for Q (label \"P has 8 × the population\"). On \"Out of every hundred thousand\" each block shows a highlighted sub-block of the same size (label \"100 000 people\") with 550 and 700 tinted per the rates (proportional tint, not literal dots; label \"per 100 000: P 550, Q 700\"). On \"the claim isn't supported\" \"more than six times as many new cases\" underlines amber and answer box (b) writes line 1: \"P had more cases because its population is 8 times larger; per 100 000, Q's incidence (700) and mortality (36) are higher than P's (550, 25), so the claim is not supported.\" On \"check their ages\" a grey tag writes \"age structure?\" and two tiny coded age pyramids draw under the blocks, P younger and Q older (shape only; grey tag \"if Q is older\"). On \"Age-standardised\" the gloss writes \"age-standardised: adjusted as if both had the same age mix\"; answer box (b) line 2: \"Before concluding Q's residents are at higher risk, compare age-standardised rates, because diabetes rises with age.\" Hold 1 second.",
+      "motionTools": [
+        "PopulationBlocks",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-claim (counts against rates, then age): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"6600 > 1050, so P is worse\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"A bigger population gives more cases\" the two population blocks pulse (tag \"same risk, more people, more cases\"). On \"fewer cases had the higher rates\" the answer table's Q column brightens (tag \"fewer cases, higher rates\"). On \"Turn every count into a rate\" the boxed denominator in the equation row pulses. Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is comparing raw counts.",
+      "narrationCue": "the classic mistake / A bigger population gives more cases / fewer cases had the higher rates / Turn every count into a rate",
+      "motionPurpose": "a chip \"6600 > 1050, so P is worse\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"A bigger population gives more cases\" the two population blocks pulse (tag \"same risk, more people, more cases\"). On \"fewer cases had the higher rates\" the answer table's Q column brightens (tag \"fewer cases, higher rates\"). On \"Turn every count into a rate\" the boxed denominator in the equation row pulses. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"6600 > 1050, so P is worse\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"A bigger population gives more cases\" the two population blocks pulse (tag \"same risk, more people, more cases\"). On \"fewer cases had the higher rates\" the answer table's Q column brightens (tag \"fewer cases, higher rates\"). On \"Turn every count into a rate\" the boxed denominator in the equation row pulses. Hold about 1.5 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears. Type badge hidden. m8-skin-melanoma-v1.png sits small at the card's upper left (grey tag \"melanoma: a skin cancer linked to UV exposure\"). The card writes on: \"The table shows age-standardised rates of melanoma of the skin in Australia.\" Table: \"Year | Incidence (new cases per 100 000 people per year) | Mortality (deaths per 100 000 people per year)\"; \"1985 | 38 | 5.5\"; \"1995 | 45 | 6.0\"; \"2005 | 50 | 6.1\"; \"2015 | 52 | 6.0\"; \"2020 | 50 | 4.9\". Grey chip \"illustrative data, based on the pattern of Australian statistics\". Demands: \"(a) Construct a line graph of incidence and mortality on the same set of axes. (4 marks)\" \"(b) Describe the trend in each rate, and explain why the incidence and mortality rates are so different. (3 marks)\". A blank grid (unlabelled, no axes) as the answer area. Countdown 10 seconds; the whole card stays on screen. A small grey line under the countdown: \"Drawing takes longer: pause the video if you need to.\"",
+      "teachingReason": "Question two.",
+      "narrationCue": "Question two",
+      "motionPurpose": "board clears. Type badge hidden. m8-skin-melanoma-v1.png sits small at the card's upper left (grey tag \"melanoma: a skin cancer linked to UV exposure\"). The card writes on: \"The table shows age-standardised rates of melanoma of the skin in Australia.\" Table: \"Year | Incidence (new cases per 100 000 people per year) | Mortality (deaths per 100 000 people per year)\"; \"1985 | 38 | 5.5\"; \"1995 | 45 | 6.0\"; \"2005 | 50 | 6.1\"; \"2015 | 52 | 6.0\"; \"2020 | 50 | 4.9\". Grey chip \"illustrative data, based on the pattern of Australian statistics\". Demands: \"(a) Construct a line graph of incidence and mortality on the same set of axes. (4 marks)\" \"(b) Describe the trend in each rate, and explain why the incidence and mortality rates are so different. (3 marks)\". A blank grid (unlabelled, no axes) as the answer area. Countdown 10 seconds; the whole card stays on screen. A small grey line under the countdown: \"Drawing takes longer: pause the video if you need to.\"",
+      "motionRole": "hold",
+      "onScreenChange": "board clears. Type badge hidden. m8-skin-melanoma-v1.png sits small at the card's upper left (grey tag \"melanoma: a skin cancer linked to UV exposure\"). The card writes on: \"The table shows age-standardised rates of melanoma of the skin in Australia.\" Table: \"Year | Incidence (new cases per 100 000 people per year) | Mortality (deaths per 100 000 people per year)\"; \"1985 | 38 | 5.5\"; \"1995 | 45 | 6.0\"; \"2005 | 50 | 6.1\"; \"2015 | 52 | 6.0\"; \"2020 | 50 | 4.9\". Grey chip \"illustrative data, based on the pattern of Australian statistics\". Demands: \"(a) Construct a line graph of incidence and mortality on the same set of axes. (4 marks)\" \"(b) Describe the trend in each rate, and explain why the incidence and mortality rates are so different. (3 marks)\". A blank grid (unlabelled, no axes) as the answer area. Countdown 10 seconds; the whole card stays on screen. A small grey line under the countdown: \"Drawing takes longer: pause the video if you need to.\"",
+      "motionTools": [
+        "m8-skin-melanoma-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q2-question (question 2: draw the rates): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q2-graph",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Draw the graph\". GraphPaper fills the working area (faint grid). s06's TailsRail builds in the side column, rows lighting on cue (grey tag \"s06: TAILS\"). On \"x axis\" the horizontal axis draws, label \"Year\" (violet; \"Year\" underlines amber in the table header); rail row A lights. On \"y axis\" the vertical axis draws with the label \"Rate (per 100 000 people per year)\" (amber; \"per 100 000 people per year\" underlines in both headers); rail row L lights. On \"five\" the x ticks write at their true positions: 1985, 1995, 2005, 2015, then 2020 half a step on (a small bracket \"5 years\" under the last gap); rail row I lights. On \"zero to sixty\" the y ticks write 0, 10, 20 ... 60 and \"52\" in the table underlines (label \"even steps; fits 52\"); rail row S lights. On \"Plot each point\" the incidence points drop one by one (teal crosses, each table cell underlining as its point lands), then the mortality points (amber crosses near the bottom); on \"ruled line\" each set joins with straight segments, incidence teal, mortality amber (grey tag \"each value is a whole year's rate: join point to point\"). On \"key\" a small key writes (\"incidence\", \"mortality\"); on \"title\" the title writes above the grid: \"Melanoma incidence and mortality rates in Australia, 1985 to 2020\", with the grey caption chip \"illustrative data, based on the pattern of Australian statistics\" under it (it stays on the completed graph); rail row T lights. On \"TAILS\" the rail's five letters pulse once. At most three bright text items besides the graph. Hold 1 second.",
+      "teachingReason": "Set up the graph before you plot anything.",
+      "narrationCue": "x axis / y axis / five / zero to sixty / Plot each point / ruled line / key / title / TAILS",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Draw the graph\". GraphPaper fills the working area (faint grid). s06's TailsRail builds in the side column, rows lighting on cue (grey tag \"s06: TAILS\"). On \"x axis\" the horizontal axis draws, label \"Year\" (violet; \"Year\" underlines amber in the table header); rail row A lights. On \"y axis\" the vertical axis draws with the label \"Rate (per 100 000 people per year)\" (amber; \"per 100 000 people per year\" underlines in both headers); rail row L lights. On \"five\" the x ticks write at their true positions: 1985, 1995, 2005, 2015, then 2020 half a step on (a small bracket \"5 years\" under the last gap); rail row I lights. On \"zero to sixty\" the y ticks write 0, 10, 20 ... 60 and \"52\" in the table underlines (label \"even steps; fits 52\"); rail row S lights. On \"Plot each point\" the incidence points drop one by one (teal crosses, each table cell underlining as its point lands), then the mortality points (amber crosses near the bottom); on \"ruled line\" each set joins with straight segments, incidence teal, mortality amber (grey tag \"each value is a whole year's rate: join point to point\"). On \"key\" a small key writes (\"incidence\", \"mortality\"); on \"title\" the title writes above the grid: \"Melanoma incidence and mortality rates in Australia, 1985 to 2020\", with the grey caption chip \"illustrative data, based on the pattern of Australian statistics\" under it (it stays on the completed graph); rail row T lights. On \"TAILS\" the rail's five letters pulse once. At most three bright text items besides the graph. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Draw the graph\". GraphPaper fills the working area (faint grid). s06's TailsRail builds in the side column, rows lighting on cue (grey tag \"s06: TAILS\"). On \"x axis\" the horizontal axis draws, label \"Year\" (violet; \"Year\" underlines amber in the table header); rail row A lights. On \"y axis\" the vertical axis draws with the label \"Rate (per 100 000 people per year)\" (amber; \"per 100 000 people per year\" underlines in both headers); rail row L lights. On \"five\" the x ticks write at their true positions: 1985, 1995, 2005, 2015, then 2020 half a step on (a small bracket \"5 years\" under the last gap); rail row I lights. On \"zero to sixty\" the y ticks write 0, 10, 20 ... 60 and \"52\" in the table underlines (label \"even steps; fits 52\"); rail row S lights. On \"Plot each point\" the incidence points drop one by one (teal crosses, each table cell underlining as its point lands), then the mortality points (amber crosses near the bottom); on \"ruled line\" each set joins with straight segments, incidence teal, mortality amber (grey tag \"each value is a whole year's rate: join point to point\"). On \"key\" a small key writes (\"incidence\", \"mortality\"); on \"title\" the title writes above the grid: \"Melanoma incidence and mortality rates in Australia, 1985 to 2020\", with the grey caption chip \"illustrative data, based on the pattern of Australian statistics\" under it (it stays on the completed graph); rail row T lights. On \"TAILS\" the rail's five letters pulse once. At most three bright text items besides the graph. Hold 1 second.",
+      "motionTools": [
+        "GraphPaper",
+        "TailsRail",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-graph (build the graph, one stage at a time): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-describe",
+      "visualDecision": "new",
+      "visualReference": "the TAILS rail dims. On \"rose from thirty-eight\" the incidence line from 1985 to 2015 brightens with reading guides at 38 and 52; on \"fell slightly to fifty\" the 2015 to 2020 segment brightens (tag \"falls slightly\"). Answer box (b) line 1: \"Incidence rose from 38 (1985) to 52 (2015) per 100 000, then fell slightly (50 in 2020).\" On \"Mortality stayed far lower\" the mortality line brightens with guides at 6.0 and 4.9; line 2: \"Mortality stayed far lower, about 6 per 100 000, falling to 4.9 by 2020.\" On \"found early, while they're still thin\" m8-skin-melanoma-v1.png moves beside the graph with a callout to the shallow edge of the lesion (label \"thin, found early: removed\"); m6-uv-skin-v1.png sits small behind it (grey tag \"b07: UV\"). Line 3: \"Most melanomas are detected early and surgically removed, so deaths are a small fraction of new cases.\" On \"diagnosed in earlier years\" a grey tag \"different people each year: not a survival calculation\" sits between the two lines; on \"better treatment\" a grey tag \"consistent with better treatment; not shown by the graph\". At most three bright items. Hold 1 second.",
+      "teachingReason": "Now describe and explain.",
+      "narrationCue": "rose from thirty-eight / fell slightly to fifty / Mortality stayed far lower / found early, while they're still thin / diagnosed in earlier years / better treatment",
+      "motionPurpose": "the TAILS rail dims. On \"rose from thirty-eight\" the incidence line from 1985 to 2015 brightens with reading guides at 38 and 52; on \"fell slightly to fifty\" the 2015 to 2020 segment brightens (tag \"falls slightly\"). Answer box (b) line 1: \"Incidence rose from 38 (1985) to 52 (2015) per 100 000, then fell slightly (50 in 2020).\" On \"Mortality stayed far lower\" the mortality line brightens with guides at 6.0 and 4.9; line 2: \"Mortality stayed far lower, about 6 per 100 000, falling to 4.9 by 2020.\" On \"found early, while they're still thin\" m8-skin-melanoma-v1.png moves beside the graph with a callout to the shallow edge of the lesion (label \"thin, found early: removed\"); m6-uv-skin-v1.png sits small behind it (grey tag \"b07: UV\"). Line 3: \"Most melanomas are detected early and surgically removed, so deaths are a small fraction of new cases.\" On \"diagnosed in earlier years\" a grey tag \"different people each year: not a survival calculation\" sits between the two lines; on \"better treatment\" a grey tag \"consistent with better treatment; not shown by the graph\". At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the TAILS rail dims. On \"rose from thirty-eight\" the incidence line from 1985 to 2015 brightens with reading guides at 38 and 52; on \"fell slightly to fifty\" the 2015 to 2020 segment brightens (tag \"falls slightly\"). Answer box (b) line 1: \"Incidence rose from 38 (1985) to 52 (2015) per 100 000, then fell slightly (50 in 2020).\" On \"Mortality stayed far lower\" the mortality line brightens with guides at 6.0 and 4.9; line 2: \"Mortality stayed far lower, about 6 per 100 000, falling to 4.9 by 2020.\" On \"found early, while they're still thin\" m8-skin-melanoma-v1.png moves beside the graph with a callout to the shallow edge of the lesion (label \"thin, found early: removed\"); m6-uv-skin-v1.png sits small behind it (grey tag \"b07: UV\"). Line 3: \"Most melanomas are detected early and surgically removed, so deaths are a small fraction of new cases.\" On \"diagnosed in earlier years\" a grey tag \"different people each year: not a survival calculation\" sits between the two lines; on \"better treatment\" a grey tag \"consistent with better treatment; not shown by the graph\". At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "m8-skin-melanoma-v1.png",
+        "m6-uv-skin-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-describe (describe, then explain): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a small inset graph draws beside the finished one with its y axis from 30 to 60: the incidence line looks steep and the mortality points sit below the axis, cut off (label \"mortality missing\"). On \"the classic mistake\" a chip \"y axis from 30\" writes and the inset takes a grey scribble cross. On \"fits every value\" the finished graph's 0 tick pulses. On \"space the years to scale\" a second tiny inset shows the five years evenly spaced, the last gap stretched (label \"2015 to 2020 drawn as 10 years\"), and takes a grey cross; the finished graph's \"5 years\" bracket pulses. Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is starting the y axis at thirty, to fit the incidence line.",
+      "narrationCue": "the classic mistake / fits every value / space the years to scale",
+      "motionPurpose": "a small inset graph draws beside the finished one with its y axis from 30 to 60: the incidence line looks steep and the mortality points sit below the axis, cut off (label \"mortality missing\"). On \"the classic mistake\" a chip \"y axis from 30\" writes and the inset takes a grey scribble cross. On \"fits every value\" the finished graph's 0 tick pulses. On \"space the years to scale\" a second tiny inset shows the five years evenly spaced, the last gap stretched (label \"2015 to 2020 drawn as 10 years\"), and takes a grey cross; the finished graph's \"5 years\" bracket pulses. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a small inset graph draws beside the finished one with its y axis from 30 to 60: the incidence line looks steep and the mortality points sit below the axis, cut off (label \"mortality missing\"). On \"the classic mistake\" a chip \"y axis from 30\" writes and the inset takes a grey scribble cross. On \"fits every value\" the finished graph's 0 tick pulses. On \"space the years to scale\" a second tiny inset shows the five years evenly spaced, the last gap stretched (label \"2015 to 2020 drawn as 10 years\"), and takes a grey cross; the finished graph's \"5 years\" bracket pulses. Hold about 1.5 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears. Type badge hidden. m5x-clipboard-sheet-v1.png and new m8-energy-drink-can-plain-v1.png sit small at the card's upper left. The card writes on: \"In 2025, an online survey asked 2000 adults living in one city two questions: 'Do you drink an energy drink every day?' and 'Are you currently living with diagnosed type 2 diabetes?'\" Table: \"Group | Number of adults | Number with diagnosed type 2 diabetes\"; \"Drink an energy drink every day | 400 | 36\"; \"Do not drink an energy drink every day | 1600 | 64\". \"A health website used these results to claim: 'Energy drinks cause type 2 diabetes.'\" Grey chip \"illustrative data\". Demands: \"(a) Calculate the prevalence of diagnosed type 2 diabetes in each group, as a percentage. (2 marks)\" \"(b) Evaluate the method of this study and the website's claim. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "teachingReason": "Question three.",
+      "narrationCue": "Question three",
+      "motionPurpose": "board clears. Type badge hidden. m5x-clipboard-sheet-v1.png and new m8-energy-drink-can-plain-v1.png sit small at the card's upper left. The card writes on: \"In 2025, an online survey asked 2000 adults living in one city two questions: 'Do you drink an energy drink every day?' and 'Are you currently living with diagnosed type 2 diabetes?'\" Table: \"Group | Number of adults | Number with diagnosed type 2 diabetes\"; \"Drink an energy drink every day | 400 | 36\"; \"Do not drink an energy drink every day | 1600 | 64\". \"A health website used these results to claim: 'Energy drinks cause type 2 diabetes.'\" Grey chip \"illustrative data\". Demands: \"(a) Calculate the prevalence of diagnosed type 2 diabetes in each group, as a percentage. (2 marks)\" \"(b) Evaluate the method of this study and the website's claim. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "board clears. Type badge hidden. m5x-clipboard-sheet-v1.png and new m8-energy-drink-can-plain-v1.png sit small at the card's upper left. The card writes on: \"In 2025, an online survey asked 2000 adults living in one city two questions: 'Do you drink an energy drink every day?' and 'Are you currently living with diagnosed type 2 diabetes?'\" Table: \"Group | Number of adults | Number with diagnosed type 2 diabetes\"; \"Drink an energy drink every day | 400 | 36\"; \"Do not drink an energy drink every day | 1600 | 64\". \"A health website used these results to claim: 'Energy drinks cause type 2 diabetes.'\" Grey chip \"illustrative data\". Demands: \"(a) Calculate the prevalence of diagnosed type 2 diabetes in each group, as a percentage. (2 marks)\" \"(b) Evaluate the method of this study and the website's claim. (5 marks)\". Two answer boxes. Countdown 10 seconds; the whole card stays on screen.",
+      "motionTools": [
+        "m5x-clipboard-sheet-v1.png",
+        "m8-energy-drink-can-plain-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q3-question (question 3: a survey and a claim): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q3-calc",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip; type badge \"Judge the study\". The equation row writes \"prevalence = people with the disease ÷ people in the group × 100\". On \"nine per cent\" \"400\" and \"36\" underline amber; the GroupDotField draws a block of 400 small dots with 36 tinted (label \"36 of 400\") and the row \"36 ÷ 400 × 100 = 9%\" writes (teal). On \"four per cent\" \"1600\" and \"64\" underline; a block of 1,600 dots with 64 tinted (label \"64 of 1600\") and \"64 ÷ 1600 × 100 = 4%\" writes. Answer box (a) fills both lines. On \"about twice as common\" a small bracket joins the two results (tag \"9% vs 4%\"). A grey tag writes small: \"prevalence: the pool of existing cases\". On \"at one moment\" \"Are you currently living with diagnosed\" and \"Do you drink\" underline; b11's four-slot frame strip draws at the upper right and its design slot fills \"cross-sectional: one snapshot\" (grey tag \"b11\"). On \"prevalence among the respondents\" the strength slot fills \"quick, cheap; prevalence among respondents\". At most three bright text items. Hold 1 second.",
+      "teachingReason": "Prevalence is existing cases out of the group, as a percentage.",
+      "narrationCue": "nine per cent / four per cent / about twice as common / at one moment / prevalence among the respondents",
+      "motionPurpose": "the card shrinks to a strip; type badge \"Judge the study\". The equation row writes \"prevalence = people with the disease ÷ people in the group × 100\". On \"nine per cent\" \"400\" and \"36\" underline amber; the GroupDotField draws a block of 400 small dots with 36 tinted (label \"36 of 400\") and the row \"36 ÷ 400 × 100 = 9%\" writes (teal). On \"four per cent\" \"1600\" and \"64\" underline; a block of 1,600 dots with 64 tinted (label \"64 of 1600\") and \"64 ÷ 1600 × 100 = 4%\" writes. Answer box (a) fills both lines. On \"about twice as common\" a small bracket joins the two results (tag \"9% vs 4%\"). A grey tag writes small: \"prevalence: the pool of existing cases\". On \"at one moment\" \"Are you currently living with diagnosed\" and \"Do you drink\" underline; b11's four-slot frame strip draws at the upper right and its design slot fills \"cross-sectional: one snapshot\" (grey tag \"b11\"). On \"prevalence among the respondents\" the strength slot fills \"quick, cheap; prevalence among respondents\". At most three bright text items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Judge the study\". The equation row writes \"prevalence = people with the disease ÷ people in the group × 100\". On \"nine per cent\" \"400\" and \"36\" underline amber; the GroupDotField draws a block of 400 small dots with 36 tinted (label \"36 of 400\") and the row \"36 ÷ 400 × 100 = 9%\" writes (teal). On \"four per cent\" \"1600\" and \"64\" underline; a block of 1,600 dots with 64 tinted (label \"64 of 1600\") and \"64 ÷ 1600 × 100 = 4%\" writes. Answer box (a) fills both lines. On \"about twice as common\" a small bracket joins the two results (tag \"9% vs 4%\"). A grey tag writes small: \"prevalence: the pool of existing cases\". On \"at one moment\" \"Are you currently living with diagnosed\" and \"Do you drink\" underline; b11's four-slot frame strip draws at the upper right and its design slot fills \"cross-sectional: one snapshot\" (grey tag \"b11\"). On \"prevalence among the respondents\" the strength slot fills \"quick, cheap; prevalence among respondents\". At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "GroupDotField",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-calc (prevalence, then name the design): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-evaluate",
+      "visualDecision": "new",
+      "visualReference": "the dot fields shrink and dim. On \"which came first\" a coded two-way arrow draws between a small can outline and \"diabetes\" with a \"?\" on each direction (label \"which came first?\"). On \"diet, weight, sleep or age\" a coded confounder triangle (b11's) draws: \"energy drinks\" and \"type 2 diabetes\" at the base, a grey node above that cycles \"diet\", \"weight\", \"sleep\", \"age\" (label \"possible confounders\"). On \"self-reported, online, from one city\" \"an online survey\", \"living in one city\" and \"Are you currently living with diagnosed\" underline amber. The limitation slot fills \"can't show which came first; confounders; self-report; one city, online\". On \"an association, not a cause\" \"Energy drinks cause type 2 diabetes\" underlines amber and the judgement slot fills \"association only; the claim of cause is not supported\". On \"cohort\" a small timeline arrow writes forwards (hand line \"cohort goes forward\"; label \"stronger: cohort, adjusted for confounders\"). Answer box (b) builds line by line on the same cues (design and strength; two limitations; judgement; stronger design). At most three bright items. Hold 1 second.",
+      "teachingReason": "Now the limitations.",
+      "narrationCue": "which came first / diet, weight, sleep or age / self-reported, online, from one city / an association, not a cause / cohort",
+      "motionPurpose": "the dot fields shrink and dim. On \"which came first\" a coded two-way arrow draws between a small can outline and \"diabetes\" with a \"?\" on each direction (label \"which came first?\"). On \"diet, weight, sleep or age\" a coded confounder triangle (b11's) draws: \"energy drinks\" and \"type 2 diabetes\" at the base, a grey node above that cycles \"diet\", \"weight\", \"sleep\", \"age\" (label \"possible confounders\"). On \"self-reported, online, from one city\" \"an online survey\", \"living in one city\" and \"Are you currently living with diagnosed\" underline amber. The limitation slot fills \"can't show which came first; confounders; self-report; one city, online\". On \"an association, not a cause\" \"Energy drinks cause type 2 diabetes\" underlines amber and the judgement slot fills \"association only; the claim of cause is not supported\". On \"cohort\" a small timeline arrow writes forwards (hand line \"cohort goes forward\"; label \"stronger: cohort, adjusted for confounders\"). Answer box (b) builds line by line on the same cues (design and strength; two limitations; judgement; stronger design). At most three bright items. Hold 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the dot fields shrink and dim. On \"which came first\" a coded two-way arrow draws between a small can outline and \"diabetes\" with a \"?\" on each direction (label \"which came first?\"). On \"diet, weight, sleep or age\" a coded confounder triangle (b11's) draws: \"energy drinks\" and \"type 2 diabetes\" at the base, a grey node above that cycles \"diet\", \"weight\", \"sleep\", \"age\" (label \"possible confounders\"). On \"self-reported, online, from one city\" \"an online survey\", \"living in one city\" and \"Are you currently living with diagnosed\" underline amber. The limitation slot fills \"can't show which came first; confounders; self-report; one city, online\". On \"an association, not a cause\" \"Energy drinks cause type 2 diabetes\" underlines amber and the judgement slot fills \"association only; the claim of cause is not supported\". On \"cohort\" a small timeline arrow writes forwards (hand line \"cohort goes forward\"; label \"stronger: cohort, adjusted for confounders\"). Answer box (b) builds line by line on the same cues (design and strength; two limitations; judgement; stronger design). At most three bright items. Hold 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-evaluate (limitations, then judgement): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"2000 people, so it's proven\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"random uncertainty\" the two dot fields pulse (tag \"more responses: less random uncertainty, same selection bias\"); on \"can't fix the design\" the design slot \"cross-sectional: one snapshot\" pulses (tag \"design limits the claim\"). On \"the order in time\" the cohort forward arrow from 4c pulses; on \"deal with confounders\" the confounder triangle pulses. Hold about 1.5 seconds.",
+      "teachingReason": "The classic mistake is thinking two thousand people makes the claim proven.",
+      "narrationCue": "the classic mistake / random uncertainty / the order in time / deal with confounders",
+      "motionPurpose": "a chip \"2000 people, so it's proven\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"random uncertainty\" the two dot fields pulse (tag \"more responses: less random uncertainty, same selection bias\"); on \"can't fix the design\" the design slot \"cross-sectional: one snapshot\" pulses (tag \"design limits the claim\"). On \"the order in time\" the cohort forward arrow from 4c pulses; on \"deal with confounders\" the confounder triangle pulses. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"2000 people, so it's proven\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"random uncertainty\" the two dot fields pulse (tag \"more responses: less random uncertainty, same selection bias\"); on \"can't fix the design\" the design slot \"cross-sectional: one snapshot\" pulses (tag \"design limits the claim\"). On \"the order in time\" the cohort forward arrow from 4c pulses; on \"deal with confounders\" the confounder triangle pulses. Hold about 1.5 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"counts from groups of different size → rate per 100 000, same unit for all (Q1)\" with the population blocks thumbnail; \"a table of rates to graph → axes, units, even scale that fits every value, then plot (Q2)\" with the graph thumbnail; \"a study and a claim → name the design; association or cause? (Q3)\" with the frame strip thumbnail. The memory line \"Rate before you compare. Scale before you plot. Design before you judge.\" writes small under the board. On \"Next\" a chip \"Next: How can type 2 diabetes be managed?\" slides in at the lower right with a small m8-pancreas-v1.png. Hold about 2 seconds.",
+      "teachingReason": "So, here's your first move for each type.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"counts from groups of different size → rate per 100 000, same unit for all (Q1)\" with the population blocks thumbnail; \"a table of rates to graph → axes, units, even scale that fits every value, then plot (Q2)\" with the graph thumbnail; \"a study and a claim → name the design; association or cause? (Q3)\" with the frame strip thumbnail. The memory line \"Rate before you compare. Scale before you plot. Design before you judge.\" writes small under the board. On \"Next\" a chip \"Next: How can type 2 diabetes be managed?\" slides in at the lower right with a small m8-pancreas-v1.png. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"counts from groups of different size → rate per 100 000, same unit for all (Q1)\" with the population blocks thumbnail; \"a table of rates to graph → axes, units, even scale that fits every value, then plot (Q2)\" with the graph thumbnail; \"a study and a claim → name the design; association or cause? (Q3)\" with the frame strip thumbnail. The memory line \"Rate before you compare. Scale before you plot. Design before you judge.\" writes small under the board. On \"Next\" a chip \"Next: How can type 2 diabetes be managed?\" slides in at the lower right with a small m8-pancreas-v1.png. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-pancreas-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision-board: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "> Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key-notes (reuse take: key-notes; quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g01b-learning-review.md",
+      "sha256": "51702ae8caf39ce343382e779f7e4ed81d86804c825635e36c67c907e12092b1"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g01b-claude-science-check.md",
+      "sha256": "f34a6b35dd26bf225c4e0b84fedacfcf2348efd57f437f240de97ad5c1513ca4"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

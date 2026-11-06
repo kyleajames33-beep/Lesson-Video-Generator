@@ -1,0 +1,783 @@
+1
+00:00:00,322 --> 00:00:01,668
+Last video ended here.
+
+2
+00:00:02,292 --> 00:00:04,895
+This curve is y equals cos two x,
+
+3
+00:00:05,376 --> 00:00:07,340
+and by the chain rule, its derivative is
+
+4
+00:00:07,540 --> 00:00:09,283
+minus two sin two x.
+
+5
+00:00:10,165 --> 00:00:12,595
+At x equals pi over six, that gives
+
+6
+00:00:12,636 --> 00:00:14,664
+a gradient of minus root three.
+
+7
+00:00:15,309 --> 00:00:17,262
+So is that enough to draw the tangent?
+
+8
+00:00:18,154 --> 00:00:18,643
+Not quite.
+
+9
+00:00:19,291 --> 00:00:21,519
+Here's a line with gradient minus root three.
+
+10
+00:00:22,303 --> 00:00:22,805
+Here's another,
+
+11
+00:00:23,508 --> 00:00:23,969
+and another.
+
+12
+00:00:24,573 --> 00:00:26,797
+They're all parallel, and only one of them
+
+13
+00:00:26,899 --> 00:00:28,562
+passes through the point on the curve.
+
+14
+00:00:29,445 --> 00:00:31,354
+A gradient tells you the direction of a
+
+15
+00:00:31,415 --> 00:00:33,163
+line, but not where it sits.
+
+16
+00:00:34,006 --> 00:00:36,069
+So how do a point and a derivative
+
+17
+00:00:36,230 --> 00:00:38,573
+pin down the tangent, and the line through
+
+18
+00:00:38,594 --> 00:00:40,376
+the same point at right angles to it,
+
+19
+00:00:40,677 --> 00:00:41,438
+called the normal?
+
+20
+00:00:42,716 --> 00:00:44,221
+A line needs two things:
+
+21
+00:00:44,945 --> 00:00:47,373
+one point it passes through, and its gradient.
+
+22
+00:00:48,018 --> 00:00:49,252
+You met the formula in Year 11.
+
+23
+00:00:50,380 --> 00:00:53,667
+y minus y one equals m, times x
+
+24
+00:00:53,748 --> 00:00:54,649
+minus x one.
+
+25
+00:00:55,373 --> 00:00:57,623
+For a tangent, both come from the curve,
+
+26
+00:00:57,785 --> 00:00:58,588
+at the same x.
+
+27
+00:00:59,433 --> 00:01:00,941
+The point comes from f itself.
+
+28
+00:01:01,706 --> 00:01:04,158
+Substitute x into the original function to get
+
+29
+00:01:04,200 --> 00:01:04,561
+the height.
+
+30
+00:01:05,366 --> 00:01:07,973
+The gradient comes from f prime, at that
+
+31
+00:01:08,095 --> 00:01:08,415
+same x.
+
+32
+00:01:09,600 --> 00:01:11,650
+The tangent is the line through that point
+
+33
+00:01:11,952 --> 00:01:12,796
+with that gradient.
+
+34
+00:01:13,480 --> 00:01:14,926
+It doesn't have to touch the curve only
+
+35
+00:01:15,148 --> 00:01:15,328
+once.
+
+36
+00:01:16,092 --> 00:01:18,125
+This one meets the curve again, further along,
+
+37
+00:01:18,468 --> 00:01:19,111
+and that's fine.
+
+38
+00:01:19,758 --> 00:01:20,467
+Let's write it out.
+
+39
+00:01:21,154 --> 00:01:23,518
+Find the equation of the tangent to y
+
+40
+00:01:23,639 --> 00:01:26,043
+equals cos two x, at the point where
+
+41
+00:01:26,244 --> 00:01:27,606
+x equals pi over six.
+
+42
+00:01:28,396 --> 00:01:29,085
+First the point.
+
+43
+00:01:29,849 --> 00:01:31,973
+cos of two times pi over six is
+
+44
+00:01:32,074 --> 00:01:33,737
+cos of pi over three, which is a
+
+45
+00:01:33,798 --> 00:01:34,018
+half.
+
+46
+00:01:34,520 --> 00:01:36,436
+So the point is pi over six, a
+
+47
+00:01:36,497 --> 00:01:36,718
+half.
+
+48
+00:01:37,567 --> 00:01:38,436
+Next the gradient.
+
+49
+00:01:38,982 --> 00:01:41,817
+dy by dx is minus two sin two
+
+50
+00:01:42,019 --> 00:01:42,139
+x.
+
+51
+00:01:42,864 --> 00:01:45,088
+At pi over six, that's minus two times
+
+52
+00:01:45,310 --> 00:01:46,552
+sin pi over three.
+
+53
+00:01:47,175 --> 00:01:49,540
+That's minus two times root three over two,
+
+54
+00:01:49,922 --> 00:01:51,084
+so minus root three.
+
+55
+00:01:51,909 --> 00:01:53,666
+Now substitute both into the formula.
+
+56
+00:01:54,690 --> 00:01:57,214
+y minus a half equals minus root three,
+
+57
+00:01:57,576 --> 00:01:59,499
+times x minus pi over six.
+
+58
+00:02:00,302 --> 00:02:02,865
+If the question asks, expand it to y
+
+59
+00:02:02,986 --> 00:02:05,830
+equals minus root three x, plus pi root
+
+60
+00:02:05,871 --> 00:02:07,433
+three over six, plus a half.
+
+61
+00:02:08,109 --> 00:02:10,420
+The normal goes through the same point, at
+
+62
+00:02:10,561 --> 00:02:11,827
+right angles to the tangent.
+
+63
+00:02:12,290 --> 00:02:14,815
+You know its gradient from Year 11: perpendicular
+
+64
+00:02:14,856 --> 00:02:16,920
+gradients multiply to minus one.
+
+65
+00:02:17,845 --> 00:02:19,332
+Here's why, in one picture.
+
+66
+00:02:20,015 --> 00:02:22,420
+Draw a small triangle on the tangent, with
+
+67
+00:02:22,461 --> 00:02:23,903
+a run along, and a rise.
+
+68
+00:02:24,687 --> 00:02:27,241
+Now turn the whole triangle a quarter turn,
+
+69
+00:02:27,383 --> 00:02:27,985
+about the point.
+
+70
+00:02:28,709 --> 00:02:31,054
+The run and the rise swap places, and
+
+71
+00:02:31,175 --> 00:02:32,738
+one of them now points the opposite way.
+
+72
+00:02:33,400 --> 00:02:35,224
+So the new gradient is the old one
+
+73
+00:02:35,326 --> 00:02:37,731
+flipped upside down, with its sign changed.
+
+74
+00:02:38,436 --> 00:02:40,109
+That's minus one over m.
+
+75
+00:02:40,694 --> 00:02:42,720
+And that needs m to be non-zero, because
+
+76
+00:02:42,881 --> 00:02:44,405
+one over zero doesn't exist.
+
+77
+00:02:45,188 --> 00:02:47,335
+Back to our point, pi over six, a
+
+78
+00:02:47,396 --> 00:02:47,616
+half.
+
+79
+00:02:48,219 --> 00:02:50,658
+The tangent's gradient is minus root three.
+
+80
+00:02:51,181 --> 00:02:53,104
+Flip it and change the sign, and the
+
+81
+00:02:53,166 --> 00:02:55,910
+normal's gradient is one over root three, which
+
+82
+00:02:55,991 --> 00:02:57,393
+is root three over three.
+
+83
+00:02:58,056 --> 00:03:00,869
+Quick check: minus root three, times one over
+
+84
+00:03:00,910 --> 00:03:02,336
+root three, is minus one.
+
+85
+00:03:02,980 --> 00:03:04,266
+Same point, new gradient.
+
+86
+00:03:04,830 --> 00:03:07,031
+So the normal is y minus a half
+
+87
+00:03:07,332 --> 00:03:10,373
+equals root three over three, times x minus
+
+88
+00:03:10,414 --> 00:03:11,094
+pi over six.
+
+89
+00:03:11,837 --> 00:03:13,264
+The only new work was the gradient.
+
+90
+00:03:13,508 --> 00:03:14,399
+The point didn't change.
+
+91
+00:03:15,250 --> 00:03:17,064
+Now a case where flipping fails.
+
+92
+00:03:17,789 --> 00:03:20,113
+Find the tangent and normal to y equals
+
+93
+00:03:20,354 --> 00:03:22,698
+x e to the minus x, at x
+
+94
+00:03:22,839 --> 00:03:23,379
+equals one.
+
+95
+00:03:24,042 --> 00:03:25,925
+The point is one times e to the
+
+96
+00:03:25,966 --> 00:03:28,471
+minus one, so one, one over e.
+
+97
+00:03:29,414 --> 00:03:30,255
+By the product rule,
+
+98
+00:03:30,757 --> 00:03:32,779
+y prime is e to the minus x,
+
+99
+00:03:33,101 --> 00:03:34,723
+times one minus x.
+
+100
+00:03:35,506 --> 00:03:37,292
+At x equals one, that's zero.
+
+101
+00:03:38,096 --> 00:03:40,622
+A zero gradient means the tangent is horizontal:
+
+102
+00:03:41,365 --> 00:03:42,767
+y equals one over e.
+
+103
+00:03:43,672 --> 00:03:46,082
+Turn its flat triangle a quarter turn, and
+
+104
+00:03:46,103 --> 00:03:47,628
+the run stands straight up.
+
+105
+00:03:48,052 --> 00:03:49,265
+The normal is vertical.
+
+106
+00:03:50,052 --> 00:03:52,497
+A vertical line has no gradient, so don't
+
+107
+00:03:52,538 --> 00:03:54,061
+write minus one over zero.
+
+108
+00:03:54,524 --> 00:03:56,016
+Write it as x equals one.
+
+109
+00:03:56,984 --> 00:03:58,908
+And if a question asks where this tangent
+
+110
+00:03:58,949 --> 00:03:59,991
+meets the x-axis,
+
+111
+00:04:00,654 --> 00:04:01,174
+it never does.
+
+112
+00:04:01,678 --> 00:04:02,584
+It's parallel to it.
+
+113
+00:04:03,257 --> 00:04:05,272
+The method doesn't change with the function.
+
+114
+00:04:05,859 --> 00:04:07,291
+Only the differentiating does.
+
+115
+00:04:08,057 --> 00:04:10,245
+Take y equals the natural log of x,
+
+116
+00:04:10,768 --> 00:04:12,935
+over cos x, at x equals one.
+
+117
+00:04:13,820 --> 00:04:16,009
+In the quotient video, we found its gradient
+
+118
+00:04:16,030 --> 00:04:16,230
+there,
+
+119
+00:04:16,794 --> 00:04:17,738
+one over cos one.
+
+120
+00:04:18,342 --> 00:04:20,307
+The point is easy, because the natural log
+
+121
+00:04:20,328 --> 00:04:21,371
+of one is zero.
+
+122
+00:04:21,833 --> 00:04:23,731
+So the point is one, zero.
+
+123
+00:04:24,375 --> 00:04:26,841
+The tangent is y equals x minus one,
+
+124
+00:04:27,344 --> 00:04:28,085
+over cos one.
+
+125
+00:04:28,828 --> 00:04:31,072
+Flip and change the sign, and the normal's
+
+126
+00:04:31,113 --> 00:04:32,877
+gradient is minus cos one.
+
+127
+00:04:33,560 --> 00:04:36,064
+So the normal is y equals minus cos
+
+128
+00:04:36,226 --> 00:04:38,089
+one, times x minus one.
+
+129
+00:04:38,795 --> 00:04:40,208
+Keep cos one exact.
+
+130
+00:04:40,714 --> 00:04:42,669
+It's about point five four, in radians.
+
+131
+00:04:43,566 --> 00:04:44,419
+Here's the short version.
+
+132
+00:04:44,984 --> 00:04:45,788
+Point from f,
+
+133
+00:04:46,290 --> 00:04:47,436
+slope from f prime.
+
+134
+00:04:48,098 --> 00:04:50,285
+Then for the normal, flip and change the
+
+135
+00:04:50,305 --> 00:04:50,566
+sign,
+
+136
+00:04:51,288 --> 00:04:52,492
+unless the tangent is flat.
+
+137
+00:04:53,054 --> 00:04:54,917
+A flat tangent has an upright normal,
+
+138
+00:04:55,538 --> 00:04:56,420
+x equals a number.
+
+139
+00:04:59,010 --> 00:04:59,434
+Your turn.
+
+140
+00:05:00,059 --> 00:05:02,422
+Find the equations of the tangent and the
+
+141
+00:05:02,483 --> 00:05:05,007
+normal to y equals e to the two
+
+142
+00:05:05,188 --> 00:05:07,251
+x, at the point where x equals a
+
+143
+00:05:07,332 --> 00:05:07,612
+half.
+
+144
+00:05:08,297 --> 00:05:09,183
+Pause here to answer.
+
+145
+00:05:19,815 --> 00:05:20,075
+From f,
+
+146
+00:05:21,119 --> 00:05:23,445
+e to the power two times a half
+
+147
+00:05:23,848 --> 00:05:24,248
+is e,
+
+148
+00:05:24,791 --> 00:05:26,495
+so the point is a half, e.
+
+149
+00:05:27,821 --> 00:05:29,687
+The gradient is two e to the two
+
+150
+00:05:29,829 --> 00:05:32,297
+x, which is two e at x equals
+
+151
+00:05:32,338 --> 00:05:32,699
+a half.
+
+152
+00:05:33,362 --> 00:05:35,827
+So the tangent is y minus e equals
+
+153
+00:05:35,949 --> 00:05:38,073
+two e, times x minus a half.
+
+154
+00:05:38,755 --> 00:05:41,196
+The normal's gradient is minus one over two
+
+155
+00:05:41,357 --> 00:05:41,476
+e,
+
+156
+00:05:42,037 --> 00:05:44,438
+so the normal is y minus e equals
+
+157
+00:05:44,539 --> 00:05:47,399
+minus one over two e, times x minus
+
+158
+00:05:47,420 --> 00:05:47,760
+a half.
+
+159
+00:05:48,502 --> 00:05:50,148
+The point isn't a half, two e.
+
+160
+00:05:51,114 --> 00:05:52,789
+That's the gradient, not the height.
+
+161
+00:05:54,486 --> 00:05:54,896
+Last one.
+
+162
+00:05:55,642 --> 00:05:57,685
+Find the equations of the tangent and the
+
+163
+00:05:57,785 --> 00:06:00,771
+normal to y equals sin x plus cos
+
+164
+00:06:00,831 --> 00:06:03,215
+x, at the point where x equals pi
+
+165
+00:06:03,235 --> 00:06:03,696
+over four.
+
+166
+00:06:04,300 --> 00:06:05,352
+Pause here to answer.
+
+167
+00:06:16,428 --> 00:06:17,389
+At pi over four,
+
+168
+00:06:17,952 --> 00:06:19,995
+sin and cos are both root two over
+
+169
+00:06:20,057 --> 00:06:22,060
+two, so y is root two.
+
+170
+00:06:22,825 --> 00:06:25,116
+The gradient is cos x minus sin x,
+
+171
+00:06:25,499 --> 00:06:26,443
+which is zero there.
+
+172
+00:06:27,148 --> 00:06:28,777
+So the tangent is horizontal:
+
+173
+00:06:29,442 --> 00:06:30,326
+y equals root two.
+
+174
+00:06:31,031 --> 00:06:33,180
+The normal is vertical, through the same point:
+
+175
+00:06:33,744 --> 00:06:35,009
+x equals pi over four.
+
+176
+00:06:35,653 --> 00:06:36,979
+Not x equals root two.
+
+177
+00:06:37,785 --> 00:06:40,098
+A vertical line is fixed by its x-coordinate,
+
+178
+00:06:40,502 --> 00:06:41,004
+not its height.
+
+179
+00:06:42,810 --> 00:06:44,823
+One more tangent, because we'll need it next.
+
+180
+00:06:45,488 --> 00:06:47,909
+For y equals x squared at x equals
+
+181
+00:06:48,050 --> 00:06:50,511
+one, the point is one, one, and the
+
+182
+00:06:50,552 --> 00:06:51,432
+gradient is two.
+
+183
+00:06:52,256 --> 00:06:54,769
+So the tangent is y equals two x
+
+184
+00:06:54,871 --> 00:06:55,514
+minus one.
+
+185
+00:06:56,316 --> 00:06:58,860
+Now build a curve that follows x squared
+
+186
+00:06:59,062 --> 00:07:01,305
+up to x equals one, then carries on
+
+187
+00:07:01,446 --> 00:07:02,707
+along that tangent line.
+
+188
+00:07:03,373 --> 00:07:04,568
+The join is invisible.
+
+189
+00:07:05,334 --> 00:07:07,583
+But switch the second piece to y equals
+
+190
+00:07:07,825 --> 00:07:09,130
+x, and there's a corner.
+
+191
+00:07:09,854 --> 00:07:11,121
+Both joins are unbroken.
+
+192
+00:07:11,927 --> 00:07:12,349
+So, next:
+
+193
+00:07:12,913 --> 00:07:14,904
+when does a join have a tangent?
+
+194
+00:07:17,535 --> 00:07:18,337
+Here are the key notes.
+
+195
+00:07:18,981 --> 00:07:20,708
+Pause the video if you need more time
+
+196
+00:07:20,770 --> 00:07:21,251
+to copy them.

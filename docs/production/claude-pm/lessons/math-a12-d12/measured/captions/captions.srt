@@ -1,0 +1,739 @@
+1
+00:00:00,361 --> 00:00:02,364
+Last video ended on this curve,
+
+2
+00:00:02,925 --> 00:00:05,670
+y equals sec x, which is one over
+
+3
+00:00:05,730 --> 00:00:06,392
+cos x.
+
+4
+00:00:07,174 --> 00:00:09,225
+At x equals zero it sits at one,
+
+5
+00:00:09,488 --> 00:00:10,110
+at the bottom of a U.
+
+6
+00:00:11,259 --> 00:00:13,072
+Here's a tempting guess for its derivative.
+
+7
+00:00:13,758 --> 00:00:16,846
+Cos x has derivative minus sine x, so
+
+8
+00:00:16,948 --> 00:00:19,455
+maybe one over cos x has derivative one
+
+9
+00:00:19,616 --> 00:00:20,638
+over minus sine x.
+
+10
+00:00:21,262 --> 00:00:21,927
+Just flip it.
+
+11
+00:00:22,754 --> 00:00:25,406
+At x equals zero, that's one over zero,
+
+12
+00:00:25,467 --> 00:00:26,692
+which doesn't even exist.
+
+13
+00:00:27,336 --> 00:00:29,374
+But the tangent there is plainly flat.
+
+14
+00:00:29,960 --> 00:00:31,733
+So flipping the derivative fails.
+
+15
+00:00:32,559 --> 00:00:35,553
+How do sec, cosec and cot really change
+
+16
+00:00:35,595 --> 00:00:36,498
+when x changes?
+
+17
+00:00:37,241 --> 00:00:39,547
+Let's watch sec x next to the curve
+
+18
+00:00:39,587 --> 00:00:41,232
+it comes from, cos x.
+
+19
+00:00:42,014 --> 00:00:44,442
+At zero, cos x is flat at its
+
+20
+00:00:44,502 --> 00:00:47,030
+peak, so one over cos x is flat
+
+21
+00:00:47,190 --> 00:00:48,454
+at the bottom of its U.
+
+22
+00:00:49,420 --> 00:00:51,575
+Now move x towards pi over two.
+
+23
+00:00:52,118 --> 00:00:54,844
+Cos x falls towards zero, so one over
+
+24
+00:00:54,885 --> 00:00:55,687
+it rises.
+
+25
+00:00:56,370 --> 00:00:59,356
+And it rises faster and faster, because one
+
+26
+00:00:59,417 --> 00:01:01,119
+over a tiny number is huge.
+
+27
+00:01:01,962 --> 00:01:04,265
+At pi over four, cos x has slope
+
+28
+00:01:04,326 --> 00:01:07,170
+about minus point seven one, and sec x
+
+29
+00:01:07,231 --> 00:01:09,634
+has slope about plus one point four one.
+
+30
+00:01:10,316 --> 00:01:12,747
+Nearer the wall, cos x is small, and
+
+31
+00:01:12,829 --> 00:01:13,913
+sec x is steep.
+
+32
+00:01:14,637 --> 00:01:17,547
+So the reciprocal moves the opposite way, and
+
+33
+00:01:17,708 --> 00:01:20,638
+as cos x shrinks, sec x gets steeper.
+
+34
+00:01:21,229 --> 00:01:23,723
+The quotient rule video already gave us this.
+
+35
+00:01:24,508 --> 00:01:27,515
+One over g has derivative minus g prime,
+
+36
+00:01:28,077 --> 00:01:28,898
+over g squared.
+
+37
+00:01:29,661 --> 00:01:31,127
+The minus is the opposite way.
+
+38
+00:01:31,871 --> 00:01:33,875
+The g squared on the bottom is why
+
+39
+00:01:33,896 --> 00:01:36,021
+a small g makes a steep curve.
+
+40
+00:01:36,843 --> 00:01:39,608
+For sec x, g is cos x, and
+
+41
+00:01:39,669 --> 00:01:41,853
+g prime is minus sine x.
+
+42
+00:01:42,716 --> 00:01:45,144
+So the derivative is sine x over cos
+
+43
+00:01:45,186 --> 00:01:47,755
+squared x, wherever cos x isn't zero.
+
+44
+00:01:48,619 --> 00:01:51,204
+Split that into one over cos x, times
+
+45
+00:01:51,405 --> 00:01:52,667
+sine x over cos x.
+
+46
+00:01:53,512 --> 00:01:54,946
+That's sec x tan x.
+
+47
+00:01:55,733 --> 00:01:57,903
+At zero, tan is zero, so the slope
+
+48
+00:01:58,004 --> 00:01:59,611
+is zero, the flat bottom we saw.
+
+49
+00:02:00,494 --> 00:02:02,776
+At pi over four, sec x is root
+
+50
+00:02:02,817 --> 00:02:04,478
+two and tan x is one,
+
+51
+00:02:05,000 --> 00:02:07,523
+so the slope is root two, about one
+
+52
+00:02:07,584 --> 00:02:09,806
+point four one, just as the graph showed.
+
+53
+00:02:10,455 --> 00:02:13,139
+Cosec x is one over sine x, so
+
+54
+00:02:13,160 --> 00:02:15,683
+the same rule works with g equals sine
+
+55
+00:02:15,704 --> 00:02:15,824
+x.
+
+56
+00:02:16,626 --> 00:02:18,213
+Now g prime is cos x.
+
+57
+00:02:18,857 --> 00:02:21,522
+So the derivative is minus cos x, over
+
+58
+00:02:21,603 --> 00:02:24,388
+sine squared x, wherever sine x isn't zero.
+
+59
+00:02:25,291 --> 00:02:26,194
+Split it the same way:
+
+60
+00:02:26,696 --> 00:02:29,466
+minus one over sine x, times cos x
+
+61
+00:02:29,628 --> 00:02:30,229
+over sine x.
+
+62
+00:02:30,873 --> 00:02:33,127
+That's minus cosec x cot x.
+
+63
+00:02:34,094 --> 00:02:36,047
+Look at the graph between zero and pi
+
+64
+00:02:36,088 --> 00:02:36,470
+over two.
+
+65
+00:02:37,175 --> 00:02:40,408
+Sine x rises there, so cosec x falls,
+
+66
+00:02:40,871 --> 00:02:42,054
+and that's its minus sign.
+
+67
+00:02:42,759 --> 00:02:45,072
+At pi over four, the slope is minus
+
+68
+00:02:45,113 --> 00:02:45,574
+root two.
+
+69
+00:02:46,540 --> 00:02:49,687
+Past pi over two, sine falls, so cosec
+
+70
+00:02:49,908 --> 00:02:50,529
+rises again.
+
+71
+00:02:51,392 --> 00:02:53,758
+In between, at pi over two, both are
+
+72
+00:02:53,860 --> 00:02:56,186
+flat, and cot of pi over two is
+
+73
+00:02:56,267 --> 00:02:58,212
+zero, so the formula agrees.
+
+74
+00:02:58,634 --> 00:03:01,059
+Cot x is cos x over sine x,
+
+75
+00:03:01,421 --> 00:03:02,944
+which is one over tan x.
+
+76
+00:03:03,627 --> 00:03:05,492
+It's a quotient, so use the quotient rule,
+
+77
+00:03:05,754 --> 00:03:06,616
+just as we did for tan.
+
+78
+00:03:07,599 --> 00:03:10,344
+The top's derivative is minus sine x, and
+
+79
+00:03:10,385 --> 00:03:11,567
+the bottom's is cos x.
+
+80
+00:03:12,269 --> 00:03:14,315
+So the top of the answer is minus
+
+81
+00:03:14,396 --> 00:03:17,505
+sine x times sine x, minus cos x
+
+82
+00:03:17,686 --> 00:03:18,488
+times cos x.
+
+83
+00:03:19,291 --> 00:03:21,415
+Take out the minus, and what's left is
+
+84
+00:03:21,476 --> 00:03:24,101
+sine squared plus cos squared, which is one.
+
+85
+00:03:24,984 --> 00:03:27,426
+So the derivative of cot x is minus
+
+86
+00:03:27,588 --> 00:03:30,210
+one over sine squared x, which is minus
+
+87
+00:03:30,311 --> 00:03:33,274
+cosec squared x, again wherever sine x isn't
+
+88
+00:03:33,315 --> 00:03:33,635
+zero.
+
+89
+00:03:34,700 --> 00:03:36,896
+That's tan's proof with the opposite sign.
+
+90
+00:03:37,540 --> 00:03:39,326
+Tan's slope is never below one.
+
+91
+00:03:39,849 --> 00:03:41,853
+Cot's is never above minus one,
+
+92
+00:03:42,356 --> 00:03:44,239
+so cot decreases on each branch.
+
+93
+00:03:45,122 --> 00:03:47,925
+At pi over four, cosec x is root
+
+94
+00:03:47,987 --> 00:03:50,550
+two, so the slope is minus root two
+
+95
+00:03:50,651 --> 00:03:52,252
+squared, which is minus two.
+
+96
+00:03:53,029 --> 00:03:53,893
+Notice the domains.
+
+97
+00:03:54,639 --> 00:03:57,794
+Sec x, like tan x, breaks where cos
+
+98
+00:03:57,855 --> 00:03:58,678
+x is zero.
+
+99
+00:03:59,222 --> 00:04:01,971
+Cosec x and cot x break where sine
+
+100
+00:04:02,032 --> 00:04:04,400
+x is zero, at every whole number of
+
+101
+00:04:04,441 --> 00:04:04,781
+pis.
+
+102
+00:04:05,625 --> 00:04:07,946
+On the graphs, sec x shares its walls
+
+103
+00:04:08,067 --> 00:04:10,648
+with tan x, and cosec x shares its
+
+104
+00:04:10,689 --> 00:04:11,788
+walls with cot x,
+
+105
+00:04:12,430 --> 00:04:14,610
+at the places where sine x crosses the
+
+106
+00:04:14,691 --> 00:04:14,971
+axis.
+
+107
+00:04:15,872 --> 00:04:18,577
+Each derivative lives exactly where its function does,
+
+108
+00:04:19,100 --> 00:04:21,043
+so write the condition with the answer,
+
+109
+00:04:21,585 --> 00:04:22,125
+every time.
+
+110
+00:04:22,695 --> 00:04:23,902
+Now a worked example.
+
+111
+00:04:24,445 --> 00:04:27,188
+Find where the curve y equals sec x
+
+112
+00:04:27,530 --> 00:04:30,553
+has a horizontal tangent, for x between minus
+
+113
+00:04:30,594 --> 00:04:33,117
+pi over two and three pi over two.
+
+114
+00:04:34,024 --> 00:04:34,652
+Domain first.
+
+115
+00:04:35,220 --> 00:04:37,894
+Cos x can't be zero, so x isn't
+
+116
+00:04:37,955 --> 00:04:38,658
+pi over two.
+
+117
+00:04:39,503 --> 00:04:42,211
+A horizontal tangent means the derivative is zero,
+
+118
+00:04:42,634 --> 00:04:45,282
+so sec x tan x equals zero.
+
+119
+00:04:46,086 --> 00:04:48,110
+Sec x is one over cos x, and
+
+120
+00:04:48,412 --> 00:04:50,195
+one over a number is never zero.
+
+121
+00:04:50,678 --> 00:04:52,412
+So tan x must be zero.
+
+122
+00:04:53,079 --> 00:04:55,611
+In this interval, that's x equals zero and
+
+123
+00:04:55,773 --> 00:04:56,677
+x equals pi.
+
+124
+00:04:57,360 --> 00:05:00,845
+The points are zero, one, and pi, minus
+
+125
+00:05:00,967 --> 00:05:03,009
+one: the bottom of one U, and the
+
+126
+00:05:03,070 --> 00:05:04,912
+top of the next, upside-down U.
+
+127
+00:05:05,756 --> 00:05:07,564
+Here's a pattern that halves what you memorise,
+
+128
+00:05:08,188 --> 00:05:09,614
+now you know where the results come from.
+
+129
+00:05:10,337 --> 00:05:13,062
+Pair each function with its co-partner: sine and
+
+130
+00:05:13,103 --> 00:05:16,068
+cos, tan and cot, sec and cosec.
+
+131
+00:05:16,711 --> 00:05:18,541
+Swap every name in a derivative for its
+
+132
+00:05:18,582 --> 00:05:20,150
+partner, and add a minus.
+
+133
+00:05:20,874 --> 00:05:23,441
+Sine to cos becomes cos to minus sine.
+
+134
+00:05:24,065 --> 00:05:26,798
+Tan to sec squared becomes cot to minus
+
+135
+00:05:26,839 --> 00:05:27,542
+cosec squared.
+
+136
+00:05:28,186 --> 00:05:30,853
+Sec to sec tan becomes cosec to minus
+
+137
+00:05:30,894 --> 00:05:31,575
+cosec cot.
+
+138
+00:05:32,238 --> 00:05:34,942
+It works because each co-function is its partner
+
+139
+00:05:35,103 --> 00:05:36,806
+of pi over two minus x,
+
+140
+00:05:37,327 --> 00:05:39,791
+and that inside has derivative minus one.
+
+141
+00:05:40,394 --> 00:05:42,230
+That's why the co-functions carry the minus.
+
+142
+00:05:44,870 --> 00:05:45,334
+Your turn.
+
+143
+00:05:46,079 --> 00:05:48,887
+Find the exact gradient of the curve y
+
+144
+00:05:49,089 --> 00:05:51,956
+equals cosec x, at the point where x
+
+145
+00:05:52,118 --> 00:05:53,300
+equals pi over six.
+
+146
+00:05:54,108 --> 00:05:54,940
+Pause here to answer.
+
+147
+00:06:05,642 --> 00:06:08,114
+d y by d x is minus cosec
+
+148
+00:06:08,355 --> 00:06:09,179
+x cot x.
+
+149
+00:06:10,003 --> 00:06:11,888
+At pi over six, sine is a half,
+
+150
+00:06:12,249 --> 00:06:14,635
+so cosec x is two, and cot x
+
+151
+00:06:14,775 --> 00:06:15,437
+is root three.
+
+152
+00:06:16,080 --> 00:06:18,439
+So the gradient is minus two root three.
+
+153
+00:06:19,123 --> 00:06:21,673
+Between zero and pi over two cosec x
+
+154
+00:06:21,774 --> 00:06:24,023
+is falling, so a negative slope makes sense.
+
+155
+00:06:24,686 --> 00:06:26,430
+Two over root three comes from flipping the
+
+156
+00:06:26,472 --> 00:06:28,838
+derivative of sine, which is the hook's mistake.
+
+157
+00:06:30,790 --> 00:06:31,194
+Last one.
+
+158
+00:06:31,839 --> 00:06:36,206
+Differentiate y equals cosec x plus cot x,
+
+159
+00:06:36,788 --> 00:06:38,810
+and state the values of x for which
+
+160
+00:06:38,871 --> 00:06:40,173
+the derivative exists.
+
+161
+00:06:40,778 --> 00:06:41,603
+Pause here to answer.
+
+162
+00:06:52,415 --> 00:06:55,200
+Both terms break where sine x is zero,
+
+163
+00:06:55,542 --> 00:06:57,245
+so x can't be any whole number of
+
+164
+00:06:57,346 --> 00:06:57,726
+pis.
+
+165
+00:06:58,528 --> 00:07:01,394
+Cosec x gives minus cosec x cot x,
+
+166
+00:07:01,836 --> 00:07:04,641
+and cot x gives minus cosec squared x.
+
+167
+00:07:05,183 --> 00:07:07,367
+So d y by d x is minus
+
+168
+00:07:07,428 --> 00:07:10,553
+cosec x cot x, minus cosec squared x,
+
+169
+00:07:10,995 --> 00:07:12,618
+for x not equal to k pi.
+
+170
+00:07:13,441 --> 00:07:15,685
+A plus on the cosec squared term gives
+
+171
+00:07:15,766 --> 00:07:18,110
+cot the slope sign of tan, but cot
+
+172
+00:07:18,312 --> 00:07:18,972
+always falls.
+
+173
+00:07:20,668 --> 00:07:23,473
+So each reciprocal derivative comes from one over
+
+174
+00:07:23,554 --> 00:07:26,039
+g, or from the quotient rule, and keeps
+
+175
+00:07:26,100 --> 00:07:27,162
+its function's domain.
+
+176
+00:07:28,125 --> 00:07:29,887
+Next, the composites we've left for later:
+
+177
+00:07:30,509 --> 00:07:32,392
+three to the two x, a log with
+
+178
+00:07:32,433 --> 00:07:34,697
+base three, and tan of e to the
+
+179
+00:07:34,858 --> 00:07:34,977
+x.
+
+180
+00:07:35,941 --> 00:07:38,350
+Here's y equals three to the two x.
+
+181
+00:07:39,053 --> 00:07:40,276
+What's its slope at zero,
+
+182
+00:07:40,778 --> 00:07:42,862
+and which factors must the derivative keep?
+
+183
+00:07:46,568 --> 00:07:47,370
+Here are the key notes.
+
+184
+00:07:48,014 --> 00:07:49,741
+Pause the video if you need more time
+
+185
+00:07:49,803 --> 00:07:50,284
+to copy them.

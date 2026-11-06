@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/bio-y11-fa1-v01.md",
+  "sourceSha256": "2c4949ff78596a785840477acf707638f43d460da95e9cc4374bb01b94558896",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Put a prepared, stained slide of cheek cells under a light microscope. You'll see big, flat cells, each with a dark dot near the middle. Look closely at their edges, and you might spot tiny specks stuck to them. Those specks are bacteria from your mouth. Both are alive, releasing energy and making proteins. Yet they're built in two completely different ways. So how do the two cell types differ, and how do we actually know?",
+      "audioFile": "public/audio/bio-y11-fa1-v01/hook.wav"
+    },
+    {
+      "id": "dividing-question",
+      "text": "One question splits every cell ever found into two groups: is the cell's DNA wrapped inside its own membrane? When a membrane surrounds something, we call that thing membrane-bound. In your cheek cell, the DNA sits inside a membrane-bound nucleus. That makes it a eukaryote. In the bacterium, there's no nucleus. Its DNA lies loose in the cytoplasm, in a region called the nucleoid. That makes it a prokaryote.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/dividing-question.wav"
+    },
+    {
+      "id": "shared-kit",
+      "text": "All bacteria are prokaryotes. Animals, plants, fungi like yeast, and single-celled protists are built from eukaryotic cells. But here's the important part. Every cell, of either type, has the same basic kit: a cell membrane around it, cytoplasm, the jelly-like fluid inside, ribosomes, which build proteins, and DNA, which carries the instructions. So the difference isn't what's inside. It's how it's organised.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/shared-kit.wav"
+    },
+    {
+      "id": "dna-shape",
+      "text": "Start with the DNA itself. A prokaryote usually has one circular chromosome, a single loop of DNA, lying in the nucleoid. Many also carry plasmids, small extra rings of DNA. A eukaryote has several long, straight chromosomes, and they're kept inside the nucleus, separated from the cytoplasm by the nuclear membrane, also called the nuclear envelope.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/dna-shape.wav"
+    },
+    {
+      "id": "compartments",
+      "text": "Next, compartments. A eukaryotic cell is divided up by internal membranes into organelles, small structures that each do one job, such as mitochondria, which release energy from glucose. Each membrane keeps its own contents and conditions apart, so reactions that would clash can run at the same time in separate spaces. A prokaryote like this one has no nucleus and none of those organelles. It runs its reactions in the cytoplasm and on the inside of its cell membrane. That doesn't make it primitive. Bacteria carry out every process of life.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/compartments.wav"
+    },
+    {
+      "id": "size",
+      "text": "Then size. Most prokaryotic cells are about one to five micrometres long. A micrometre is a thousandth of a millimetre. Eukaryotic cells are usually about ten to a hundred micrometres across. So a typical eukaryotic cell is around ten times wider, and because volume grows in all three directions, that's roughly a thousand times more volume. Diagrams often draw the two cells the same size. They're not even close.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/size.wav"
+    },
+    {
+      "id": "ribosomes",
+      "text": "Both cell types have ribosomes, but they're not identical. Prokaryotic ribosomes are smaller, labelled 70S, and eukaryotic ribosomes are larger, labelled 80S. The S describes how fast they settle when spun at very high speed. That small difference matters. Some antibiotics jam the 70S ribosomes of bacteria, so the bacteria can't make proteins, while your own 80S ribosomes keep working.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/ribosomes.wav"
+    },
+    {
+      "id": "how-we-know",
+      "text": "So how do we know all this? A light microscope can't separate two points closer than about two hundred nanometres. A nanometre is a thousandth of a micrometre. So it shows a cell and its nucleus, but not the thin membranes inside. Electron microscopes show far finer detail, and they revealed that typical prokaryotes have no nucleus and no membrane-bound organelles. That's why scientists use a variety of sources: micrographs, which are microscope photos, labelled diagrams, and tables of measurements. Each can mislead on its own, so they're checked against each other.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/how-we-know.wav"
+    },
+    {
+      "id": "comparing",
+      "text": "When a question says compare, give both cell types on the same feature, in the same sentence, and include what they share. So, both have a membrane, cytoplasm, ribosomes and DNA. A eukaryote's DNA is in a nucleus, whereas a prokaryote's lies free in the nucleoid. Eukaryotes have membrane-bound organelles, whereas prokaryotes have none. And prokaryotes are much smaller, with smaller ribosomes. Two separate paragraphs leave the comparing to the marker.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/comparing.wav"
+    },
+    {
+      "id": "memory",
+      "text": "Two things to remember. The names come from karyon, Greek for kernel, meaning the nucleus, so a prokaryote is the one without a nucleus. And for the primitive trap: no walls inside, meaning no nucleus or organelle membranes, doesn't mean no work. An open-plan office still gets the job done.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/memory.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. An electron micrograph shows a cell three micrometres long. It has no nuclear envelope, ribosomes throughout its cytoplasm, and a single circular DNA molecule. Identify the cell type, and justify your answer using two pieces of evidence from the micrograph. Pause here to answer.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "It's prokaryotic. No nuclear envelope means the DNA isn't enclosed in a nucleus, and that's the defining feature. The single circular DNA molecule, and a length of three micrometres, inside the one to five range, both support it. The classic mistake is using the ribosomes as evidence. Every cell has ribosomes, so they don't tell you either way.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. A textbook diagram shows a bacterium and a human cheek cell side by side, drawn the same size. A student concludes that the two cells are about the same size. Explain why this conclusion is not reliable, and name another source that could check it, saying what that source would show. Pause here to answer.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "Diagrams are drawn for clarity, not to scale, so one diagram can't tell you real size. A micrograph with a scale bar, or a table of measured sizes, would check it. It would show the bacterium at about one to five micrometres, and the cheek cell around ten times longer or more. The classic mistake is trusting the diagram because it's labelled. Labels name the parts, they don't measure them.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/feedback-two.wav"
+    },
+    {
+      "id": "decision-rule",
+      "text": "So, to classify any cell, look for the nucleus first: DNA inside its own membrane means eukaryote. Then check the supporting clues, and more than one source. Next, we'll go inside a eukaryotic cell and see what each organelle does.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/decision-rule.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/bio-y11-fa1-v01/key-notes.wav"
+    }
+  ]
+}

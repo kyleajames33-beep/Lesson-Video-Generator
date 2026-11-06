@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d12.md",
+  "sourceSha256": "319b63e72c9acae1bd0d1d0b22bc683ca6948f8cf9b3333cfaf351d6a775825f",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on this curve, y equals sec x, which is one over cos x. At x equals zero it sits at one, at the bottom of a U. Here's a tempting guess for its derivative. Cos x has derivative minus sine x, so maybe one over cos x has derivative one over minus sine x. Just flip it. At x equals zero, that's one over zero, which doesn't even exist. But the tangent there is plainly flat. So flipping the derivative fails. How do sec, cosec and cot really change when x changes?",
+      "audioFile": "public/audio/math-a12-d12/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Let's watch sec x next to the curve it comes from, cos x. At zero, cos x is flat at its peak, so one over cos x is flat at the bottom of its U. Now move x towards pi over two. Cos x falls towards zero, so one over it rises. And it rises faster and faster, because one over a tiny number is huge. At pi over four, cos x has slope about minus point seven one, and sec x has slope about plus one point four one. Nearer the wall, cos x is small, and sec x is steep. So the reciprocal moves the opposite way, and as cos x shrinks, sec x gets steeper.",
+      "audioFile": "public/audio/math-a12-d12/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "The quotient rule video already gave us this. One over g has derivative minus g prime, over g squared. The minus is the opposite way. The g squared on the bottom is why a small g makes a steep curve. For sec x, g is cos x, and g prime is minus sine x. So the derivative is sine x over cos squared x, wherever cos x isn't zero. Split that into one over cos x, times sine x over cos x. That's sec x tan x. At zero, tan is zero, so the slope is zero, the flat bottom we saw. At pi over four, sec x is root two and tan x is one, so the slope is root two, about one point four one, just as the graph showed.",
+      "audioFile": "public/audio/math-a12-d12/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Cosec x is one over sine x, so the same rule works with g equals sine x. Now g prime is cos x. So the derivative is minus cos x, over sine squared x, wherever sine x isn't zero. Split it the same way: minus one over sine x, times cos x over sine x. That's minus cosec x cot x. Look at the graph between zero and pi over two. Sine x rises there, so cosec x falls, and that's its minus sign. At pi over four, the slope is minus root two. Past pi over two, sine falls, so cosec rises again. In between, at pi over two, both are flat, and cot of pi over two is zero, so the formula agrees.",
+      "audioFile": "public/audio/math-a12-d12/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Cot x is cos x over sine x, which is one over tan x. It's a quotient, so use the quotient rule, just as we did for tan. The top's derivative is minus sine x, and the bottom's is cos x. So the top of the answer is minus sine x times sine x, minus cos x times cos x. Take out the minus, and what's left is sine squared plus cos squared, which is one. So the derivative of cot x is minus one over sine squared x, which is minus cosec squared x, again wherever sine x isn't zero. That's tan's proof with the opposite sign. Tan's slope is never below one. Cot's is never above minus one, so cot decreases on each branch. At pi over four, cosec x is root two, so the slope is minus root two squared, which is minus two.",
+      "audioFile": "public/audio/math-a12-d12/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Notice the domains. Sec x, like tan x, breaks where cos x is zero. Cosec x and cot x break where sine x is zero, at every whole number of pis. On the graphs, sec x shares its walls with tan x, and cosec x shares its walls with cot x, at the places where sine x crosses the axis. Each derivative lives exactly where its function does, so write the condition with the answer, every time.",
+      "audioFile": "public/audio/math-a12-d12/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now a worked example. Find where the curve y equals sec x has a horizontal tangent, for x between minus pi over two and three pi over two. Domain first. Cos x can't be zero, so x isn't pi over two. A horizontal tangent means the derivative is zero, so sec x tan x equals zero. Sec x is one over cos x, and one over a number is never zero. So tan x must be zero. In this interval, that's x equals zero and x equals pi. The points are zero, one, and pi, minus one: the bottom of one U, and the top of the next, upside-down U.",
+      "audioFile": "public/audio/math-a12-d12/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a pattern that halves what you memorise, now you know where the results come from. Pair each function with its co-partner: sine and cos, tan and cot, sec and cosec. Swap every name in a derivative for its partner, and add a minus. Sine to cos becomes cos to minus sine. Tan to sec squared becomes cot to minus cosec squared. Sec to sec tan becomes cosec to minus cosec cot. It works because each co-function is its partner of pi over two minus x, and that inside has derivative minus one. That's why the co-functions carry the minus.",
+      "audioFile": "public/audio/math-a12-d12/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find the exact gradient of the curve y equals cosec x, at the point where x equals pi over six. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d12/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "d y by d x is minus cosec x cot x. At pi over six, sine is a half, so cosec x is two, and cot x is root three. So the gradient is minus two root three. Between zero and pi over two cosec x is falling, so a negative slope makes sense. Two over root three comes from flipping the derivative of sine, which is the hook's mistake.",
+      "audioFile": "public/audio/math-a12-d12/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Differentiate y equals cosec x plus cot x, and state the values of x for which the derivative exists. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d12/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Both terms break where sine x is zero, so x can't be any whole number of pis. Cosec x gives minus cosec x cot x, and cot x gives minus cosec squared x. So d y by d x is minus cosec x cot x, minus cosec squared x, for x not equal to k pi. A plus on the cosec squared term gives cot the slope sign of tan, but cot always falls.",
+      "audioFile": "public/audio/math-a12-d12/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So each reciprocal derivative comes from one over g, or from the quotient rule, and keeps its function's domain. Next, the composites we've left for later: three to the two x, a log with base three, and tan of e to the x. Here's y equals three to the two x. What's its slope at zero, and which factors must the derivative keep?",
+      "audioFile": "public/audio/math-a12-d12/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d12/scene-14.wav"
+    }
+  ]
+}

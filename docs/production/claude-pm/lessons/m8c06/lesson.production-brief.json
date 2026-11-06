@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c06/lesson.json",
+    "lessonSha256": "0df38698ef46c022de366fc0d1be219ddbbbb861ae87cae3325d10c771dc50cf"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "the eutrophication chain and the delayed crash; noon against dawn; warm water holds less oxygen; titration and n = cV; redox as electron transfer; M(O₂) = 32.00 g/mol.",
+    "startsWith": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee. The New South Wales Chief Scientist's review found that low dissolved oxygen was the most likely cause, and fisheries reports noted deaths around first light. A reading at noon could have looked fine. So what do dissolved oxygen and BOD tell us, and how do chemists measure them?",
+    "stopsAfter": "explaining what DO is and why one reading is a snapshot; choosing a meter or a Winkler titration; explaining why a sample must have no bubbles and be fixed at once; following the Winkler chain and its 1 : 4 ratio; calculating DO in mg/L; explaining each BOD₅ condition; calculating and interpreting BOD₅; reading DO and BOD together; stating what BOD can't show.",
+    "nextLesson": "simple tests for organic functional groups (route chem-m8-c08)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c06.md"
+  ],
+  "teaching": {
+    "task": "Fish in a river die at first light, though a reading at noon looked fine. How much oxygen is in the water, how do chemists measure it, and how fast will it be used up?",
+    "causalExplanation": "(1) a reading at noon can hide a dawn crash (1); (2) dissolved oxygen: what it is, its temperature-set maximum, and why animals need it (2); (3) one reading is a snapshot: meter and logging, Winkler as a check (3); (4) sample without bubbles and fix at once (4); (5) fix: oxygen oxidises manganese(II) hydroxide to brown MnO(OH)₂ (5); (6) acidify: the manganese oxidises iodide to iodine (6); (7) titrate: thiosulfate reduces iodine; starch shows the end (7); (8) the 1 : 2 : 2 : 4 chain and the aid (8); (9) to (11) the worked calculation in three stages; (12) BOD: two bottles and the reason for each condition (12); (13) the worked BOD and what it means (13); (14) reading DO and BOD together, and BOD's limits (14); attempts (15 to 18); handoff (19); key notes (20).",
+    "conversationalApproach": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee. Dissolved oxygen, or DO, is the oxygen gas dissolved in the water, measured in milligrams per litre. But DO changes through the day. The Winkler method starts at the river. Step one. Step two. Step three. So how much thiosulfate per oxygen? Follow the equations. Let's work one. Now use the ratio. We want milligrams per litre, so divide by the sample's volume in litres, not by the titre. DO tells you the oxygen now. So BOD five is the starting DO minus the DO after five days. Read the two together. Two lines to keep. Your turn. Moles of thiosulfate, c times V, is five point two zero times ten to the minus five. Last one. P's oxygen fell by point nine, and Q's by five point eight milligrams per litre. So DO is the oxygen in the water right now, and BOD is the oxygen used during the five-day test.",
+    "openingDecision": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee. The New South Wales Chief Scientist's review found that low dissolved oxygen was the most likely cause, and fisheries reports noted deaths around first light. A reading at noon could have looked fine. So what do dissolved oxygen and BOD tell us, and how do chemists measure them?",
+    "understandingCheck": "- (A1) \"A 50.00 mL sample of river water was analysed for dissolved oxygen by the Winkler method. The iodine released was titrated with 0.00500 mol L⁻¹ sodium thiosulfate solution. The average titre was 10.40 mL. Overall, 1 mol of O₂ produces iodine that reacts with 4 mol of S₂O₃²⁻. Calculate the dissolved oxygen concentration of the river water in mg L⁻¹. (M(O₂) = 32.00 g mol⁻¹)\" Answer: n(S₂O₃²⁻) = 0.00500 × 0.01040 = 5.20 × 10⁻⁵ mol; n(O₂) = 1.30 × 10⁻⁵ mol; m = 4.16 × 10⁻⁴ g = 0.416 mg in 50.00 mL; 8.32 mg/L. Crossed mistake: \"33.3 mg/L\" (a 1 : 1 ratio; four times the right answer, so the ratio needs rechecking; Revision 2 no longer calls it more than water can hold, because water can be supersaturated). Differs from the site's worked example and Activity A1 (100.0 mL, 6.50 mL of 0.0200 mol/L, 10.4 mg/L) in sample volume, concentration, titre and answer. The ratio is given on the card (an exam usually gives the equations or the ratio; Open decisions).",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p57; C8-IQ1-01 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"analyse the need for monitoring the environment\"\n\nWith chem-m8-c05, this video covers the dotpoint (route review change 3): c05 analyses why water is monitored and chooses the evidence; c06 processes dissolved oxygen and BOD data, the two oxygen measurements the need rests on. The 2017 dotpoint doesn't name dissolved oxygen, BOD or the Winkler method; they are the site's applied case (site L07 labels itself an extension), and the video never says the syllabus names them."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "the sampling bottle, the three Winkler bottle states, the three titration flask states, the DO meter, burette and incubator as painted plates listed by filename, never stretched, each set aligned; the oxygen trace coded on the lineGraph (never an AI image of a graph); molecules, electrons and the ratio chain coded as abstract diagrams; no people, hands or faces (filling, adding reagents and swirling are coded motion); at most about three bright text items, earlier lines dim; the calculation as a short task, an equation strip and grouped givens with units, one stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; givens underlined in the feedback as they are used, no givens card; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions; optional key notes hold; Australian spelling (\"litre\", \"sulfate\", \"sulfuric\", \"manganese(II) sulfate\"); no em dashes; conversational narration; no absolute claims.",
+    "transitionPlan": "heading writes on: \"Oxygen now, oxygen later: dissolved oxygen and BOD\". the board clears to the lake (m8-lake-clear-v1. the board clears. the board clears. the Winkler step strip writes across the top: \"1 fix\", \"2 acidify\", \"3 titrate\"; \"1 fix\" lights. \"1 fix\" dims; \"2 acidify\" lights. \"2 acidify\" dims; \"3 titrate\" lights. the board clears. the calculation board sets up (c01 layout). stage line 1 dims (result kept). line 3 and 4 dim; 0. the board clears. the calculation board returns small. the board clears. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), with the table \"site, DO at start (mg/L), DO after 5 days in the dark at 20 °C (mg/L)\": P 8. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Oxygen now, oxygen later: dissolved oxygen and BOD\". m8-lake-crash-v1.png (from c05) at the centre-left. A tag writes: \"Darling-Baaka River, Menindee, March 2023: millions of fish died (estimate)\" with a grey source chip \"NSW Chief Scientist and Engineer review, 2023\"; on \"first light\" a second grey chip \"first-light observations: NSW DPI Fisheries submission, July 2023, p4\". On \"low dissolved oxygen\" a pale blue O₂ glyph fades (tag \"most likely cause: hypoxia, oxygen too low\"). On \"first light\" c05's 48-hour oxygen trace opens in the right third and a sunrise glyph lands on its dawn trough (bright). On \"noon\" a marker on the afternoon peak: \"noon: looked fine\". On \"them\" two chips land under the trace: \"DO: oxygen now\" and \"BOD: oxygen used later\" (navy). Bright at the end: the heading and the two chips. Hold about 1 second.",
+      "teachingReason": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee.",
+      "narrationCue": "first light / low dissolved oxygen / noon / them",
+      "motionPurpose": "heading writes on: \"Oxygen now, oxygen later: dissolved oxygen and BOD\". m8-lake-crash-v1.png (from c05) at the centre-left. A tag writes: \"Darling-Baaka River, Menindee, March 2023: millions of fish died (estimate)\" with a grey source chip \"NSW Chief Scientist and Engineer review, 2023\"; on \"first light\" a second grey chip \"first-light observations: NSW DPI Fisheries submission, July 2023, p4\". On \"low dissolved oxygen\" a pale blue O₂ glyph fades (tag \"most likely cause: hypoxia, oxygen too low\"). On \"first light\" c05's 48-hour oxygen trace opens in the right third and a sunrise glyph lands on its dawn trough (bright). On \"noon\" a marker on the afternoon peak: \"noon: looked fine\". On \"them\" two chips land under the trace: \"DO: oxygen now\" and \"BOD: oxygen used later\" (navy). Bright at the end: the heading and the two chips. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Oxygen now, oxygen later: dissolved oxygen and BOD\". m8-lake-crash-v1.png (from c05) at the centre-left. A tag writes: \"Darling-Baaka River, Menindee, March 2023: millions of fish died (estimate)\" with a grey source chip \"NSW Chief Scientist and Engineer review, 2023\"; on \"first light\" a second grey chip \"first-light observations: NSW DPI Fisheries submission, July 2023, p4\". On \"low dissolved oxygen\" a pale blue O₂ glyph fades (tag \"most likely cause: hypoxia, oxygen too low\"). On \"first light\" c05's 48-hour oxygen trace opens in the right third and a sunrise glyph lands on its dawn trough (bright). On \"noon\" a marker on the afternoon peak: \"noon: looked fine\". On \"them\" two chips land under the trace: \"DO: oxygen now\" and \"BOD: oxygen used later\" (navy). Bright at the end: the heading and the two chips. Hold about 1 second.",
+      "motionTools": [
+        "m8-lake-crash-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (first light): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "dissolved-oxygen",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the lake (m8-lake-clear-v1.png) with c05's water-column overlay: pale blue O₂ glyphs spread through the water; two small fish swim. Gloss tag: \"dissolved oxygen (DO): O₂ gas dissolved in the water (mg/L)\". On \"gills\" a coded circular inset on one fish's gill: O₂ glyphs moving in. On \"nine\" a small vertical bar \"about 9.1 mg/L at 20 °C (air-saturated)\" writes beside the lake (grey chip \"c05: warm water holds less O₂\"); on \"less\" a shorter bar \"about 7.6 mg/L at 30 °C\". On \"struggle\" a grey band at the bottom of the bars: \"low DO: many fish stressed\" with the screen-only term \"hypoxia: oxygen too low for many animals\" (bright). Bright at the end: the two bars and the low band. Hold about 1 second.",
+      "teachingReason": "Dissolved oxygen, or DO, is the oxygen gas dissolved in the water, measured in milligrams per litre.",
+      "narrationCue": "gills / nine / less / struggle",
+      "motionPurpose": "the board clears to the lake (m8-lake-clear-v1.png) with c05's water-column overlay: pale blue O₂ glyphs spread through the water; two small fish swim. Gloss tag: \"dissolved oxygen (DO): O₂ gas dissolved in the water (mg/L)\". On \"gills\" a coded circular inset on one fish's gill: O₂ glyphs moving in. On \"nine\" a small vertical bar \"about 9.1 mg/L at 20 °C (air-saturated)\" writes beside the lake (grey chip \"c05: warm water holds less O₂\"); on \"less\" a shorter bar \"about 7.6 mg/L at 30 °C\". On \"struggle\" a grey band at the bottom of the bars: \"low DO: many fish stressed\" with the screen-only term \"hypoxia: oxygen too low for many animals\" (bright). Bright at the end: the two bars and the low band. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the lake (m8-lake-clear-v1.png) with c05's water-column overlay: pale blue O₂ glyphs spread through the water; two small fish swim. Gloss tag: \"dissolved oxygen (DO): O₂ gas dissolved in the water (mg/L)\". On \"gills\" a coded circular inset on one fish's gill: O₂ glyphs moving in. On \"nine\" a small vertical bar \"about 9.1 mg/L at 20 °C (air-saturated)\" writes beside the lake (grey chip \"c05: warm water holds less O₂\"); on \"less\" a shorter bar \"about 7.6 mg/L at 30 °C\". On \"struggle\" a grey band at the bottom of the bars: \"low DO: many fish stressed\" with the screen-only term \"hypoxia: oxygen too low for many animals\" (bright). Bright at the end: the two bars and the low band. Hold about 1 second.",
+      "motionTools": [
+        "m8-lake-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "dissolved oxygen: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "snapshot",
+      "visualDecision": "new",
+      "visualReference": "the board clears. c05's 48-hour trace fills the right two thirds; on \"high in the afternoon\" and \"lowest at dawn\" its peak and trough mark in turn; on \"snapshot\" a small camera-shutter frame snaps over a single point on the trace (tag \"one reading = one moment\"). On \"DO meter\" the new m8-do-meter-probe-v1.png appears at the left, its probe lowered into a coded water strip; on \"log all night\" the trace's points light one after another through the night (tag \"logging: a reading every 15 min\"). On \"calibrated\" a grey tag: \"meters drift: calibrated before use\". On \"titration\" a small chip writes: \"check: Winkler titration\" (bright), with m6-burette-clamp-stand-v1.png small beside it. Bright at the end: the meter and the Winkler chip. Hold about 1 second.",
+      "teachingReason": "But DO changes through the day.",
+      "narrationCue": "high in the afternoon / snapshot / DO meter / log all night / calibrated / titration",
+      "motionPurpose": "the board clears. c05's 48-hour trace fills the right two thirds; on \"high in the afternoon\" and \"lowest at dawn\" its peak and trough mark in turn; on \"snapshot\" a small camera-shutter frame snaps over a single point on the trace (tag \"one reading = one moment\"). On \"DO meter\" the new m8-do-meter-probe-v1.png appears at the left, its probe lowered into a coded water strip; on \"log all night\" the trace's points light one after another through the night (tag \"logging: a reading every 15 min\"). On \"calibrated\" a grey tag: \"meters drift: calibrated before use\". On \"titration\" a small chip writes: \"check: Winkler titration\" (bright), with m6-burette-clamp-stand-v1.png small beside it. Bright at the end: the meter and the Winkler chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. c05's 48-hour trace fills the right two thirds; on \"high in the afternoon\" and \"lowest at dawn\" its peak and trough mark in turn; on \"snapshot\" a small camera-shutter frame snaps over a single point on the trace (tag \"one reading = one moment\"). On \"DO meter\" the new m8-do-meter-probe-v1.png appears at the left, its probe lowered into a coded water strip; on \"log all night\" the trace's points light one after another through the night (tag \"logging: a reading every 15 min\"). On \"calibrated\" a grey tag: \"meters drift: calibrated before use\". On \"titration\" a small chip writes: \"check: Winkler titration\" (bright), with m6-burette-clamp-stand-v1.png small beside it. Bright at the end: the meter and the Winkler chip. Hold about 1 second.",
+      "motionTools": [
+        "m8-do-meter-probe-v1.png",
+        "m6-burette-clamp-stand-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a snapshot: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "sampling",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Winkler: 0. take the sample\". m8-river-sampling-bottle-v1.png small at the left (the sampling pole). The new m8-winkler-bottle-clear-v1.png (a glass-stoppered bottle) at the centre; the bubble check runs: the bottle outline fills from the bottom; a small air bubble at the shoulder flashes and is crossed (caption \"a bubble adds O₂\"); on \"stoppered\" the stopper seats and a small overflow trickles down the side (tag \"filled to overflowing, no bubbles\"). On \"change\" a navy tag \"fix at once\" (bright). Bright at the end: the no-bubbles tag and \"fix at once\". Hold about 1 second.",
+      "teachingReason": "The Winkler method starts at the river.",
+      "narrationCue": "stoppered / change",
+      "motionPurpose": "the board clears. Task line \"Winkler: 0. take the sample\". m8-river-sampling-bottle-v1.png small at the left (the sampling pole). The new m8-winkler-bottle-clear-v1.png (a glass-stoppered bottle) at the centre; the bubble check runs: the bottle outline fills from the bottom; a small air bubble at the shoulder flashes and is crossed (caption \"a bubble adds O₂\"); on \"stoppered\" the stopper seats and a small overflow trickles down the side (tag \"filled to overflowing, no bubbles\"). On \"change\" a navy tag \"fix at once\" (bright). Bright at the end: the no-bubbles tag and \"fix at once\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Winkler: 0. take the sample\". m8-river-sampling-bottle-v1.png small at the left (the sampling pole). The new m8-winkler-bottle-clear-v1.png (a glass-stoppered bottle) at the centre; the bubble check runs: the bottle outline fills from the bottom; a small air bubble at the shoulder flashes and is crossed (caption \"a bubble adds O₂\"); on \"stoppered\" the stopper seats and a small overflow trickles down the side (tag \"filled to overflowing, no bubbles\"). On \"change\" a navy tag \"fix at once\" (bright). Bright at the end: the no-bubbles tag and \"fix at once\". Hold about 1 second.",
+      "motionTools": [
+        "m8-river-sampling-bottle-v1.png",
+        "m8-winkler-bottle-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "taking the sample: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "winkler-fix",
+      "visualDecision": "new",
+      "visualReference": "the Winkler step strip writes across the top: \"1 fix\", \"2 acidify\", \"3 titrate\"; \"1 fix\" lights. Coded dropper glyphs add two reagents into the bottle (tags \"MnSO₄\", \"alkaline KI\"). The bottle shows a pale pink-grey cloud for a beat, then cross-fades to the aligned m8-winkler-bottle-brown-v1.png (brown floc settling). In the strip under the plate: \"2Mn(OH)₂ + O₂ → 2MnO(OH)₂\" writes; on \"oxidises\" the electron hop runs: electron dots leave a Mn(II) glyph for an O₂ glyph (tag \"Mn(II) oxidised: loses electrons\"). On \"solid\" tag \"MnO(OH)₂: a brown manganese(IV) solid\" (bright). On \"out\" a small coded lock icon on the bottle (tag \"O₂ fixed\"). Bright at the end: the equation and the brown-solid tag. Hold about 1 second.",
+      "teachingReason": "Step one.",
+      "narrationCue": "oxidises / solid / out",
+      "motionPurpose": "the Winkler step strip writes across the top: \"1 fix\", \"2 acidify\", \"3 titrate\"; \"1 fix\" lights. Coded dropper glyphs add two reagents into the bottle (tags \"MnSO₄\", \"alkaline KI\"). The bottle shows a pale pink-grey cloud for a beat, then cross-fades to the aligned m8-winkler-bottle-brown-v1.png (brown floc settling). In the strip under the plate: \"2Mn(OH)₂ + O₂ → 2MnO(OH)₂\" writes; on \"oxidises\" the electron hop runs: electron dots leave a Mn(II) glyph for an O₂ glyph (tag \"Mn(II) oxidised: loses electrons\"). On \"solid\" tag \"MnO(OH)₂: a brown manganese(IV) solid\" (bright). On \"out\" a small coded lock icon on the bottle (tag \"O₂ fixed\"). Bright at the end: the equation and the brown-solid tag. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the Winkler step strip writes across the top: \"1 fix\", \"2 acidify\", \"3 titrate\"; \"1 fix\" lights. Coded dropper glyphs add two reagents into the bottle (tags \"MnSO₄\", \"alkaline KI\"). The bottle shows a pale pink-grey cloud for a beat, then cross-fades to the aligned m8-winkler-bottle-brown-v1.png (brown floc settling). In the strip under the plate: \"2Mn(OH)₂ + O₂ → 2MnO(OH)₂\" writes; on \"oxidises\" the electron hop runs: electron dots leave a Mn(II) glyph for an O₂ glyph (tag \"Mn(II) oxidised: loses electrons\"). On \"solid\" tag \"MnO(OH)₂: a brown manganese(IV) solid\" (bright). On \"out\" a small coded lock icon on the bottle (tag \"O₂ fixed\"). Bright at the end: the equation and the brown-solid tag. Hold about 1 second.",
+      "motionTools": [
+        "m8-winkler-bottle-brown-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step 1: fix the oxygen: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "winkler-iodine",
+      "visualDecision": "new",
+      "visualReference": "\"1 fix\" dims; \"2 acidify\" lights. A coded dropper adds acid (tag \"H₂SO₄\"). m8-winkler-bottle-brown-v1.png cross-fades to the aligned m8-winkler-bottle-iodine-v1.png (clear yellow-brown solution, no solid). Under the plate: \"MnO(OH)₂ + 2I⁻ + 4H⁺ → Mn²⁺ + I₂ + 3H₂O\" writes; on \"iodine\" the electron hop runs from two I⁻ glyphs to the MnO(OH)₂ glyph (tag \"iodide oxidised to iodine\"; bright). On \"get\" a small three-cell proportion bar writes: \"more O₂ → more MnO(OH)₂ → more I₂\". Bright at the end: the equation and the proportion bar. Hold about 1 second.",
+      "teachingReason": "Step two.",
+      "narrationCue": "iodine / get",
+      "motionPurpose": "\"1 fix\" dims; \"2 acidify\" lights. A coded dropper adds acid (tag \"H₂SO₄\"). m8-winkler-bottle-brown-v1.png cross-fades to the aligned m8-winkler-bottle-iodine-v1.png (clear yellow-brown solution, no solid). Under the plate: \"MnO(OH)₂ + 2I⁻ + 4H⁺ → Mn²⁺ + I₂ + 3H₂O\" writes; on \"iodine\" the electron hop runs from two I⁻ glyphs to the MnO(OH)₂ glyph (tag \"iodide oxidised to iodine\"; bright). On \"get\" a small three-cell proportion bar writes: \"more O₂ → more MnO(OH)₂ → more I₂\". Bright at the end: the equation and the proportion bar. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "\"1 fix\" dims; \"2 acidify\" lights. A coded dropper adds acid (tag \"H₂SO₄\"). m8-winkler-bottle-brown-v1.png cross-fades to the aligned m8-winkler-bottle-iodine-v1.png (clear yellow-brown solution, no solid). Under the plate: \"MnO(OH)₂ + 2I⁻ + 4H⁺ → Mn²⁺ + I₂ + 3H₂O\" writes; on \"iodine\" the electron hop runs from two I⁻ glyphs to the MnO(OH)₂ glyph (tag \"iodide oxidised to iodine\"; bright). On \"get\" a small three-cell proportion bar writes: \"more O₂ → more MnO(OH)₂ → more I₂\". Bright at the end: the equation and the proportion bar. Hold about 1 second.",
+      "motionTools": [
+        "m8-winkler-bottle-brown-v1.png",
+        "m8-winkler-bottle-iodine-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step 2: turn it into iodine: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "winkler-titrate",
+      "visualDecision": "new",
+      "visualReference": "\"2 acidify\" dims; \"3 titrate\" lights. m6-burette-clamp-stand-v1.png at the left; the new aligned flask set at the centre: m8-iodine-flask-yellow-v1.png (yellow-brown); coded drips fall from the burette tip (tag \"S₂O₃²⁻, sodium thiosulfate\"). Under the plate: \"I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻\". On \"pale straw\" the flask's fill lightens (coded tint over the yellow plate); on \"starch\" a coded dropper adds starch and the flask cross-fades to m8-iodine-flask-blue-v1.png (blue-black; tag \"starch + iodine: blue-black\"). On \"disappears\" it cross-fades to m8-iodine-flask-clear-v1.png (colourless; tag \"endpoint: the blue just disappears\"; bright). On \"itself\" a small chain writes under the strip: \"O₂ → MnO(OH)₂ → I₂ → S₂O₃²⁻\" with the O₂ end and the S₂O₃²⁻ end linked by a grey dashed arc tagged \"never react directly\". Bright at the end: the endpoint tag and the chain. Hold about 1 second.",
+      "teachingReason": "Step three.",
+      "narrationCue": "pale straw / starch / disappears / itself",
+      "motionPurpose": "\"2 acidify\" dims; \"3 titrate\" lights. m6-burette-clamp-stand-v1.png at the left; the new aligned flask set at the centre: m8-iodine-flask-yellow-v1.png (yellow-brown); coded drips fall from the burette tip (tag \"S₂O₃²⁻, sodium thiosulfate\"). Under the plate: \"I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻\". On \"pale straw\" the flask's fill lightens (coded tint over the yellow plate); on \"starch\" a coded dropper adds starch and the flask cross-fades to m8-iodine-flask-blue-v1.png (blue-black; tag \"starch + iodine: blue-black\"). On \"disappears\" it cross-fades to m8-iodine-flask-clear-v1.png (colourless; tag \"endpoint: the blue just disappears\"; bright). On \"itself\" a small chain writes under the strip: \"O₂ → MnO(OH)₂ → I₂ → S₂O₃²⁻\" with the O₂ end and the S₂O₃²⁻ end linked by a grey dashed arc tagged \"never react directly\". Bright at the end: the endpoint tag and the chain. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "\"2 acidify\" dims; \"3 titrate\" lights. m6-burette-clamp-stand-v1.png at the left; the new aligned flask set at the centre: m8-iodine-flask-yellow-v1.png (yellow-brown); coded drips fall from the burette tip (tag \"S₂O₃²⁻, sodium thiosulfate\"). Under the plate: \"I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻\". On \"pale straw\" the flask's fill lightens (coded tint over the yellow plate); on \"starch\" a coded dropper adds starch and the flask cross-fades to m8-iodine-flask-blue-v1.png (blue-black; tag \"starch + iodine: blue-black\"). On \"disappears\" it cross-fades to m8-iodine-flask-clear-v1.png (colourless; tag \"endpoint: the blue just disappears\"; bright). On \"itself\" a small chain writes under the strip: \"O₂ → MnO(OH)₂ → I₂ → S₂O₃²⁻\" with the O₂ end and the S₂O₃²⁻ end linked by a grey dashed arc tagged \"never react directly\". Bright at the end: the endpoint tag and the chain. Hold about 1 second.",
+      "motionTools": [
+        "m6-burette-clamp-stand-v1.png",
+        "m8-iodine-flask-yellow-v1.png",
+        "m8-iodine-flask-blue-v1.png",
+        "m8-iodine-flask-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step 3: titrate the iodine: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "ratio",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The ratio ladder builds one rung per clause in the right third: \"1 O₂\" (with the step 1 equation glowing small at the left), \"× 2 → 2 MnO(OH)₂\", \"× 1 → 2 I₂\" (step 2 equation glows), \"× 2 → 4 S₂O₃²⁻\" (step 3 equation glows). On \"thiosulfates\" the ladder collapses to a large handwritten line: \"1 O₂ : 4 S₂O₃²⁻\" (bright). A chip \"1 O₂ : 1 S₂O₃²⁻\" fades in and is crossed (caption \"follow all three equations\"). Bright at the end: the ratio line and the crossed chip. Hold about 2 seconds.",
+      "teachingReason": "So how much thiosulfate per oxygen? Follow the equations.",
+      "narrationCue": "thiosulfates",
+      "motionPurpose": "the board clears. The ratio ladder builds one rung per clause in the right third: \"1 O₂\" (with the step 1 equation glowing small at the left), \"× 2 → 2 MnO(OH)₂\", \"× 1 → 2 I₂\" (step 2 equation glows), \"× 2 → 4 S₂O₃²⁻\" (step 3 equation glows). On \"thiosulfates\" the ladder collapses to a large handwritten line: \"1 O₂ : 4 S₂O₃²⁻\" (bright). A chip \"1 O₂ : 1 S₂O₃²⁻\" fades in and is crossed (caption \"follow all three equations\"). Bright at the end: the ratio line and the crossed chip. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The ratio ladder builds one rung per clause in the right third: \"1 O₂\" (with the step 1 equation glowing small at the left), \"× 2 → 2 MnO(OH)₂\", \"× 1 → 2 I₂\" (step 2 equation glows), \"× 2 → 4 S₂O₃²⁻\" (step 3 equation glows). On \"thiosulfates\" the ladder collapses to a large handwritten line: \"1 O₂ : 4 S₂O₃²⁻\" (bright). A chip \"1 O₂ : 1 S₂O₃²⁻\" fades in and is crossed (caption \"follow all three equations\"). Bright at the end: the ratio line and the crossed chip. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the ratio, step by step: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-moles",
+      "visualDecision": "new",
+      "visualReference": "the calculation board sets up (c01 layout). Task strip: \"Find DO in mg/L\". Equation strip: \"1 O₂ : 4 S₂O₃²⁻ (from the three equations)\". Givens group (navy) in two short blocks: \"sample: V = 100.0 mL = 0.1000 L\" and \"Na₂S₂O₃: c = 0.0100 mol/L, V = 8.00 mL = 0.00800 L\"; \"M(O₂) = 32.00 g/mol\" sits grey at the end (site L07 Worked Example 1). m8-iodine-flask-clear-v1.png small at the left (the endpoint reached). On \"c times V\" stage line 1 writes: \"n(S₂O₃²⁻) = cV = 0.0100 × 0.00800\" and the thiosulfate block glows (grey chip \"c01: n = cV\"). On \"thiosulfate\" \"= 8.00 × 10⁻⁵ mol\" (bright). Bright at the end: the stage 1 result. Hold about 1 second.",
+      "teachingReason": "Let's work one.",
+      "narrationCue": "c times V / thiosulfate",
+      "motionPurpose": "the calculation board sets up (c01 layout). Task strip: \"Find DO in mg/L\". Equation strip: \"1 O₂ : 4 S₂O₃²⁻ (from the three equations)\". Givens group (navy) in two short blocks: \"sample: V = 100.0 mL = 0.1000 L\" and \"Na₂S₂O₃: c = 0.0100 mol/L, V = 8.00 mL = 0.00800 L\"; \"M(O₂) = 32.00 g/mol\" sits grey at the end (site L07 Worked Example 1). m8-iodine-flask-clear-v1.png small at the left (the endpoint reached). On \"c times V\" stage line 1 writes: \"n(S₂O₃²⁻) = cV = 0.0100 × 0.00800\" and the thiosulfate block glows (grey chip \"c01: n = cV\"). On \"thiosulfate\" \"= 8.00 × 10⁻⁵ mol\" (bright). Bright at the end: the stage 1 result. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the calculation board sets up (c01 layout). Task strip: \"Find DO in mg/L\". Equation strip: \"1 O₂ : 4 S₂O₃²⁻ (from the three equations)\". Givens group (navy) in two short blocks: \"sample: V = 100.0 mL = 0.1000 L\" and \"Na₂S₂O₃: c = 0.0100 mol/L, V = 8.00 mL = 0.00800 L\"; \"M(O₂) = 32.00 g/mol\" sits grey at the end (site L07 Worked Example 1). m8-iodine-flask-clear-v1.png small at the left (the endpoint reached). On \"c times V\" stage line 1 writes: \"n(S₂O₃²⁻) = cV = 0.0100 × 0.00800\" and the thiosulfate block glows (grey chip \"c01: n = cV\"). On \"thiosulfate\" \"= 8.00 × 10⁻⁵ mol\" (bright). Bright at the end: the stage 1 result. Hold about 1 second.",
+      "motionTools": [
+        "m8-iodine-flask-clear-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked example: moles of thiosulfate: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-mass",
+      "visualDecision": "new",
+      "visualReference": "stage line 1 dims (result kept). On \"Divide by four\" the equation strip's ratio glows; line 2 writes: \"n(O₂) = 8.00 × 10⁻⁵ ÷ 4\"; on \"oxygen\" \"= 2.00 × 10⁻⁵ mol\" (bright). Line 2 dims. On \"Times thirty two\" line 3: \"m(O₂) = nM = 2.00 × 10⁻⁵ × 32.00 = 6.40 × 10⁻⁴ g\", the M(O₂) given glowing. On \"milligrams\" line 4 writes on its own: \"= 0.640 mg (× 1000 mg/g)\". On \"sample\" a navy tag on 0.640 mg: \"in 100.0 mL\" (bright). Bright at the end: 0.640 mg and its tag. Hold about 1 second.",
+      "teachingReason": "Now use the ratio.",
+      "narrationCue": "Divide by four / oxygen / Times thirty two / milligrams / sample",
+      "motionPurpose": "stage line 1 dims (result kept). On \"Divide by four\" the equation strip's ratio glows; line 2 writes: \"n(O₂) = 8.00 × 10⁻⁵ ÷ 4\"; on \"oxygen\" \"= 2.00 × 10⁻⁵ mol\" (bright). Line 2 dims. On \"Times thirty two\" line 3: \"m(O₂) = nM = 2.00 × 10⁻⁵ × 32.00 = 6.40 × 10⁻⁴ g\", the M(O₂) given glowing. On \"milligrams\" line 4 writes on its own: \"= 0.640 mg (× 1000 mg/g)\". On \"sample\" a navy tag on 0.640 mg: \"in 100.0 mL\" (bright). Bright at the end: 0.640 mg and its tag. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "stage line 1 dims (result kept). On \"Divide by four\" the equation strip's ratio glows; line 2 writes: \"n(O₂) = 8.00 × 10⁻⁵ ÷ 4\"; on \"oxygen\" \"= 2.00 × 10⁻⁵ mol\" (bright). Line 2 dims. On \"Times thirty two\" line 3: \"m(O₂) = nM = 2.00 × 10⁻⁵ × 32.00 = 6.40 × 10⁻⁴ g\", the M(O₂) given glowing. On \"milligrams\" line 4 writes on its own: \"= 0.640 mg (× 1000 mg/g)\". On \"sample\" a navy tag on 0.640 mg: \"in 100.0 mL\" (bright). Bright at the end: 0.640 mg and its tag. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked example: ratio, then mass: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "worked-per-litre",
+      "visualDecision": "adjust",
+      "visualReference": "line 3 and 4 dim; 0.640 mg kept. On \"sample's volume\" the sample givens block glows and a small chip \"÷ titre\" fades in and is crossed. Line 5: \"DO = 0.640 mg ÷ 0.1000 L\"; on \"litre\" \"= 6.40 mg/L\" (bright, boxed). On \"litre\", once the result boxes, the scene 2 bar \"about 9.1 mg/L at 20 °C (air-saturated)\" returns small beside it with a coded fill gauge \"about 70% of air saturation (if at 20 °C)\" (grey, screen only; Revision 2 cut the spoken sentence for length). Bright at the end: 6.40 mg/L. Hold about 2 seconds.",
+      "teachingReason": "We want milligrams per litre, so divide by the sample's volume in litres, not by the titre.",
+      "narrationCue": "sample's volume / litre",
+      "motionPurpose": "line 3 and 4 dim; 0.640 mg kept. On \"sample's volume\" the sample givens block glows and a small chip \"÷ titre\" fades in and is crossed. Line 5: \"DO = 0.640 mg ÷ 0.1000 L\"; on \"litre\" \"= 6.40 mg/L\" (bright, boxed). On \"litre\", once the result boxes, the scene 2 bar \"about 9.1 mg/L at 20 °C (air-saturated)\" returns small beside it with a coded fill gauge \"about 70% of air saturation (if at 20 °C)\" (grey, screen only; Revision 2 cut the spoken sentence for length). Bright at the end: 6.40 mg/L. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "line 3 and 4 dim; 0.640 mg kept. On \"sample's volume\" the sample givens block glows and a small chip \"÷ titre\" fades in and is crossed. Line 5: \"DO = 0.640 mg ÷ 0.1000 L\"; on \"litre\" \"= 6.40 mg/L\" (bright, boxed). On \"litre\", once the result boxes, the scene 2 bar \"about 9.1 mg/L at 20 °C (air-saturated)\" returns small beside it with a coded fill gauge \"about 70% of air saturation (if at 20 °C)\" (grey, screen only; Revision 2 cut the spoken sentence for length). Bright at the end: 6.40 mg/L. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked example: per litre: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bod-forecast",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Task line \"BOD₅: oxygen used in 5 days\". Gloss tag: \"biochemical oxygen demand (BOD₅): oxygen microbes use in 5 days, sealed, dark, 20 °C\". The two-bottle timeline runs: two copies of m8-winkler-bottle-clear-v1.png fill from one coded sample jug outline; on \"straight away\" the first slides to the DO meter plate small (tag \"day 0: initial DO\"). On \"Seal the other\" the second slides into the new m8-bod-incubator-v1.png (door closes); a five-tick day strip runs above it. The three conditions are revealed one at a time beside the same two bottles, each on its own cue, with no added hold: on \"Sealed\" tag on the bottle \"sealed: no new O₂\"; on \"Dark\" tag on the incubator \"dark: no photosynthesis\"; on \"Twenty degrees\" tag \"20 °C: results compare\". On \"measure it again\" the bottle returns to the meter (tag \"day 5: final DO\"). Inside the bottle (coded inset) brown-grey microbe dots cluster on organic flecks while O₂ glyphs fade (tag \"microbes use O₂ to break down organic matter\"). On \"present\" a chip \"high BOD = lots of oxygen\" fades in and is crossed (caption \"lots of oxygen used\"; site L07 misconception). Bright at the end: the gloss tag and the crossed chip. Hold about 1 second.",
+      "teachingReason": "DO tells you the oxygen now.",
+      "narrationCue": "straight away / Seal the other / Sealed / Dark / Twenty degrees / measure it again / present / lots of oxygen used",
+      "motionPurpose": "the board clears. Task line \"BOD₅: oxygen used in 5 days\". Gloss tag: \"biochemical oxygen demand (BOD₅): oxygen microbes use in 5 days, sealed, dark, 20 °C\". The two-bottle timeline runs: two copies of m8-winkler-bottle-clear-v1.png fill from one coded sample jug outline; on \"straight away\" the first slides to the DO meter plate small (tag \"day 0: initial DO\"). On \"Seal the other\" the second slides into the new m8-bod-incubator-v1.png (door closes); a five-tick day strip runs above it. The three conditions are revealed one at a time beside the same two bottles, each on its own cue, with no added hold: on \"Sealed\" tag on the bottle \"sealed: no new O₂\"; on \"Dark\" tag on the incubator \"dark: no photosynthesis\"; on \"Twenty degrees\" tag \"20 °C: results compare\". On \"measure it again\" the bottle returns to the meter (tag \"day 5: final DO\"). Inside the bottle (coded inset) brown-grey microbe dots cluster on organic flecks while O₂ glyphs fade (tag \"microbes use O₂ to break down organic matter\"). On \"present\" a chip \"high BOD = lots of oxygen\" fades in and is crossed (caption \"lots of oxygen used\"; site L07 misconception). Bright at the end: the gloss tag and the crossed chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"BOD₅: oxygen used in 5 days\". Gloss tag: \"biochemical oxygen demand (BOD₅): oxygen microbes use in 5 days, sealed, dark, 20 °C\". The two-bottle timeline runs: two copies of m8-winkler-bottle-clear-v1.png fill from one coded sample jug outline; on \"straight away\" the first slides to the DO meter plate small (tag \"day 0: initial DO\"). On \"Seal the other\" the second slides into the new m8-bod-incubator-v1.png (door closes); a five-tick day strip runs above it. The three conditions are revealed one at a time beside the same two bottles, each on its own cue, with no added hold: on \"Sealed\" tag on the bottle \"sealed: no new O₂\"; on \"Dark\" tag on the incubator \"dark: no photosynthesis\"; on \"Twenty degrees\" tag \"20 °C: results compare\". On \"measure it again\" the bottle returns to the meter (tag \"day 5: final DO\"). Inside the bottle (coded inset) brown-grey microbe dots cluster on organic flecks while O₂ glyphs fade (tag \"microbes use O₂ to break down organic matter\"). On \"present\" a chip \"high BOD = lots of oxygen\" fades in and is crossed (caption \"lots of oxygen used\"; site L07 misconception). Bright at the end: the gloss tag and the crossed chip. Hold about 1 second.",
+      "motionTools": [
+        "m8-winkler-bottle-clear-v1.png",
+        "m8-bod-incubator-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "BOD: the forecast: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bod-worked",
+      "visualDecision": "adjust",
+      "visualReference": "the calculation board returns small. Equation strip: \"BOD₅ = initial DO − final DO\" (grey tag \"undiluted sample; strong samples are diluted first and scaled\"). Givens group: \"initial DO = 8.4 mg/L\", \"DO after 5 days, dark, 20 °C = 4.9 mg/L\" (site L07 Worked Example 2). Stage line: \"BOD₅ = 8.4 − 4.9\"; on \"three point five\" \"= 3.5 mg/L\" (bright). The BOD guide band draws below: 0 to 12 mg/L, grey zones \"under 2\", \"2 to under 8\", \"8 or more\" with caption \"this card's teaching guide: not a legal limit, and a low BOD doesn't mean safe\"; on \"guide\" a marker lands at 3.5 in the middle zone. Bright at the end: 3.5 mg/L and the marker. Hold about 1 second.",
+      "teachingReason": "So BOD five is the starting DO minus the DO after five days.",
+      "narrationCue": "three point five / guide",
+      "motionPurpose": "the calculation board returns small. Equation strip: \"BOD₅ = initial DO − final DO\" (grey tag \"undiluted sample; strong samples are diluted first and scaled\"). Givens group: \"initial DO = 8.4 mg/L\", \"DO after 5 days, dark, 20 °C = 4.9 mg/L\" (site L07 Worked Example 2). Stage line: \"BOD₅ = 8.4 − 4.9\"; on \"three point five\" \"= 3.5 mg/L\" (bright). The BOD guide band draws below: 0 to 12 mg/L, grey zones \"under 2\", \"2 to under 8\", \"8 or more\" with caption \"this card's teaching guide: not a legal limit, and a low BOD doesn't mean safe\"; on \"guide\" a marker lands at 3.5 in the middle zone. Bright at the end: 3.5 mg/L and the marker. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the calculation board returns small. Equation strip: \"BOD₅ = initial DO − final DO\" (grey tag \"undiluted sample; strong samples are diluted first and scaled\"). Givens group: \"initial DO = 8.4 mg/L\", \"DO after 5 days, dark, 20 °C = 4.9 mg/L\" (site L07 Worked Example 2). Stage line: \"BOD₅ = 8.4 − 4.9\"; on \"three point five\" \"= 3.5 mg/L\" (bright). The BOD guide band draws below: 0 to 12 mg/L, grey zones \"under 2\", \"2 to under 8\", \"8 or more\" with caption \"this card's teaching guide: not a legal limit, and a low BOD doesn't mean safe\"; on \"guide\" a marker lands at 3.5 in the middle zone. Bright at the end: 3.5 mg/L and the marker. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "worked BOD and what it means: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "together-limits",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A two-by-two card writes: rows \"DO high / low\", columns \"BOD low / high\"; on \"Low DO with a high BOD\" the low-DO, high-BOD cell fills (tag \"short of oxygen and still losing it: trouble ahead\"; bright) with m8-lake-crash-v1.png small. On \"only sees\" a limits card writes in the right third: \"BOD: only biodegradable organic matter\"; on \"doesn't identify metals\" \"doesn't identify: metals, pesticides, disease-causing microbes\"; on \"poison\" \"a toxic sample can stop the microbes → BOD reads low\". On \"safe\" a chip \"low BOD = safe water\" fades in and is crossed (caption \"check other parameters too\"; grey chip \"c05: physical, chemical, biological\"). On \"probe\" a small tag \"5 days: too slow for tonight → DO probe\" with the meter thumbnail. Bright at the end: the crossed chip and the \"5 days\" tag. Hold about 2 seconds.",
+      "teachingReason": "Read the two together.",
+      "narrationCue": "Low DO with a high BOD / only sees / doesn't identify metals / poison / safe / probe",
+      "motionPurpose": "the board clears. A two-by-two card writes: rows \"DO high / low\", columns \"BOD low / high\"; on \"Low DO with a high BOD\" the low-DO, high-BOD cell fills (tag \"short of oxygen and still losing it: trouble ahead\"; bright) with m8-lake-crash-v1.png small. On \"only sees\" a limits card writes in the right third: \"BOD: only biodegradable organic matter\"; on \"doesn't identify metals\" \"doesn't identify: metals, pesticides, disease-causing microbes\"; on \"poison\" \"a toxic sample can stop the microbes → BOD reads low\". On \"safe\" a chip \"low BOD = safe water\" fades in and is crossed (caption \"check other parameters too\"; grey chip \"c05: physical, chemical, biological\"). On \"probe\" a small tag \"5 days: too slow for tonight → DO probe\" with the meter thumbnail. Bright at the end: the crossed chip and the \"5 days\" tag. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A two-by-two card writes: rows \"DO high / low\", columns \"BOD low / high\"; on \"Low DO with a high BOD\" the low-DO, high-BOD cell fills (tag \"short of oxygen and still losing it: trouble ahead\"; bright) with m8-lake-crash-v1.png small. On \"only sees\" a limits card writes in the right third: \"BOD: only biodegradable organic matter\"; on \"doesn't identify metals\" \"doesn't identify: metals, pesticides, disease-causing microbes\"; on \"poison\" \"a toxic sample can stop the microbes → BOD reads low\". On \"safe\" a chip \"low BOD = safe water\" fades in and is crossed (caption \"check other parameters too\"; grey chip \"c05: physical, chemical, biological\"). On \"probe\" a small tag \"5 days: too slow for tonight → DO probe\" with the meter thumbnail. Bright at the end: the crossed chip and the \"5 days\" tag. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-lake-crash-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading DO and BOD together, and BOD's limits: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line 1: \"DO = oxygen now. BOD = oxygen used later.\" with a small camera-shutter glyph beside \"now\" and a five-day calendar strip beside \"later\". Handwritten line 2: \"Winkler: 1 O₂ : 4 S₂O₃²⁻\" with the ratio ladder small beside it. Hold about 2 seconds.",
+      "teachingReason": "Two lines to keep.",
+      "narrationCue": "Two lines to keep",
+      "motionPurpose": "the board clears. Handwritten line 1: \"DO = oxygen now. BOD = oxygen used later.\" with a small camera-shutter glyph beside \"now\" and a five-day calendar strip beside \"later\". Handwritten line 2: \"Winkler: 1 O₂ : 4 S₂O₃²⁻\" with the ratio ladder small beside it. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line 1: \"DO = oxygen now. BOD = oxygen used later.\" with a small camera-shutter glyph beside \"now\" and a five-day calendar strip beside \"later\". Handwritten line 2: \"Winkler: 1 O₂ : 4 S₂O₃²⁻\" with the ratio ladder small beside it. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), including the ratio sentence and M(O₂). Tag \"HSC-style question, written for HSCScience\". m6-burette-clamp-stand-v1.png and m8-iodine-flask-clear-v1.png small at the card's right (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no ratio ladder, no stage lines).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), including the ratio sentence and M(O₂). Tag \"HSC-style question, written for HSCScience\". m6-burette-clamp-stand-v1.png and m8-iodine-flask-clear-v1.png small at the card's right (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no ratio ladder, no stage lines).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), including the ratio sentence and M(O₂). Tag \"HSC-style question, written for HSCScience\". m6-burette-clamp-stand-v1.png and m8-iodine-flask-clear-v1.png small at the card's right (no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no ratio ladder, no stage lines).",
+      "motionTools": [
+        "m6-burette-clamp-stand-v1.png",
+        "m8-iodine-flask-clear-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"c times V\" \"0.00500 mol L⁻¹\" and \"10.40 mL\" are underlined; line \"n(S₂O₃²⁻) = 0.00500 × 0.01040 = 5.20 × 10⁻⁵ mol\". On \"Divide by four\" \"1 mol of O₂ ... 4 mol of S₂O₃²⁻\" is underlined; line \"n(O₂) = 1.30 × 10⁻⁵ mol; × 32.00 = 4.16 × 10⁻⁴ g = 0.416 mg\". On \"eight point three two\" \"50.00 mL\" is underlined; line \"DO = 0.416 mg ÷ 0.05000 L = 8.32 mg/L\" (bright). On \"ratio\" a chip \"33.3 mg/L (1 : 1)\" fades in and is crossed (caption \"four times too big: use 1 : 4\"). Hold about 1 second.",
+      "teachingReason": "Moles of thiosulfate, c times V, is five point two zero times ten to the minus five.",
+      "narrationCue": "c times V / Divide by four / eight point three two / ratio",
+      "motionPurpose": "the card stays, shrunk to the top. On \"c times V\" \"0.00500 mol L⁻¹\" and \"10.40 mL\" are underlined; line \"n(S₂O₃²⁻) = 0.00500 × 0.01040 = 5.20 × 10⁻⁵ mol\". On \"Divide by four\" \"1 mol of O₂ ... 4 mol of S₂O₃²⁻\" is underlined; line \"n(O₂) = 1.30 × 10⁻⁵ mol; × 32.00 = 4.16 × 10⁻⁴ g = 0.416 mg\". On \"eight point three two\" \"50.00 mL\" is underlined; line \"DO = 0.416 mg ÷ 0.05000 L = 8.32 mg/L\" (bright). On \"ratio\" a chip \"33.3 mg/L (1 : 1)\" fades in and is crossed (caption \"four times too big: use 1 : 4\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"c times V\" \"0.00500 mol L⁻¹\" and \"10.40 mL\" are underlined; line \"n(S₂O₃²⁻) = 0.00500 × 0.01040 = 5.20 × 10⁻⁵ mol\". On \"Divide by four\" \"1 mol of O₂ ... 4 mol of S₂O₃²⁻\" is underlined; line \"n(O₂) = 1.30 × 10⁻⁵ mol; × 32.00 = 4.16 × 10⁻⁴ g = 0.416 mg\". On \"eight point three two\" \"50.00 mL\" is underlined; line \"DO = 0.416 mg ÷ 0.05000 L = 8.32 mg/L\" (bright). On \"ratio\" a chip \"33.3 mg/L (1 : 1)\" fades in and is crossed (caption \"four times too big: use 1 : 4\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), with the table \"site, DO at start (mg/L), DO after 5 days in the dark at 20 °C (mg/L)\": P 8.8, 7.9; Q 7.6, 1.8, and a coded strip map: creek line, an outlet arrow, P above it, Q below it. m8-bod-incubator-v1.png small at the card's right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), with the table \"site, DO at start (mg/L), DO after 5 days in the dark at 20 °C (mg/L)\": P 8.8, 7.9; Q 7.6, 1.8, and a coded strip map: creek line, an outlet arrow, P above it, Q below it. m8-bod-incubator-v1.png small at the card's right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), with the table \"site, DO at start (mg/L), DO after 5 days in the dark at 20 °C (mg/L)\": P 8.8, 7.9; Q 7.6, 1.8, and a coded strip map: creek line, an outlet arrow, P above it, Q below it. m8-bod-incubator-v1.png small at the card's right (no tags). Tag \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m8-bod-incubator-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top. On \"point nine\" P's \"8.8\" and \"7.9\" underline; line \"P: 8.8 − 7.9 = 0.9 mg/L\". On \"five point eight\" Q's \"7.6\" and \"1.8\" underline; line \"Q: 7.6 − 1.8 = 5.8 mg/L\" (bright); the BOD guide band returns small with Q's marker only, and a grey tag beside P's line: \"a decrease under 2 mg/L is too small for a standard BOD result\". On \"organic waste\" \"downstream of it\" is underlined; line \"(b) high organic load → microbes keep using O₂ → DO falls downstream, worst on warm nights\" (bright), with c05's lake crash thumbnail. On \"trap\" a chip \"Q's decrease = 1.8 mg/L\" fades in and is crossed (caption \"1.8 is the O₂ left; the decrease is the O₂ used\"). Hold about 1 second.",
+      "teachingReason": "P's oxygen fell by point nine, and Q's by five point eight milligrams per litre.",
+      "narrationCue": "point nine / five point eight / organic waste / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"point nine\" P's \"8.8\" and \"7.9\" underline; line \"P: 8.8 − 7.9 = 0.9 mg/L\". On \"five point eight\" Q's \"7.6\" and \"1.8\" underline; line \"Q: 7.6 − 1.8 = 5.8 mg/L\" (bright); the BOD guide band returns small with Q's marker only, and a grey tag beside P's line: \"a decrease under 2 mg/L is too small for a standard BOD result\". On \"organic waste\" \"downstream of it\" is underlined; line \"(b) high organic load → microbes keep using O₂ → DO falls downstream, worst on warm nights\" (bright), with c05's lake crash thumbnail. On \"trap\" a chip \"Q's decrease = 1.8 mg/L\" fades in and is crossed (caption \"1.8 is the O₂ left; the decrease is the O₂ used\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"point nine\" P's \"8.8\" and \"7.9\" underline; line \"P: 8.8 − 7.9 = 0.9 mg/L\". On \"five point eight\" Q's \"7.6\" and \"1.8\" underline; line \"Q: 7.6 − 1.8 = 5.8 mg/L\" (bright); the BOD guide band returns small with Q's marker only, and a grey tag beside P's line: \"a decrease under 2 mg/L is too small for a standard BOD result\". On \"organic waste\" \"downstream of it\" is underlined; line \"(b) high organic load → microbes keep using O₂ → DO falls downstream, worst on warm nights\" (bright), with c05's lake crash thumbnail. On \"trap\" a chip \"Q's decrease = 1.8 mg/L\" fades in and is crossed (caption \"1.8 is the O₂ left; the decrease is the O₂ used\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A three-row decision card lights on cue: \"DO: oxygen now (meter or Winkler, 1 O₂ : 4 S₂O₃²⁻)\"; \"BOD₅: oxygen used in 5 days (sealed, dark, 20 °C)\"; \"Together: low DO + high BOD = trouble ahead; low BOD ≠ safe\". On \"Next\" a small chip \"Next: tests for organic functional groups\" slides in at the lower right with m8-bromine-water-orange-v1.png small beside it. Hold about 2 seconds.",
+      "teachingReason": "So DO is the oxygen in the water right now, and BOD is the oxygen used during the five-day test.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A three-row decision card lights on cue: \"DO: oxygen now (meter or Winkler, 1 O₂ : 4 S₂O₃²⁻)\"; \"BOD₅: oxygen used in 5 days (sealed, dark, 20 °C)\"; \"Together: low DO + high BOD = trouble ahead; low BOD ≠ safe\". On \"Next\" a small chip \"Next: tests for organic functional groups\" slides in at the lower right with m8-bromine-water-orange-v1.png small beside it. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A three-row decision card lights on cue: \"DO: oxygen now (meter or Winkler, 1 O₂ : 4 S₂O₃²⁻)\"; \"BOD₅: oxygen used in 5 days (sealed, dark, 20 °C)\"; \"Together: low DO + high BOD = trouble ahead; low BOD ≠ safe\". On \"Next\" a small chip \"Next: tests for organic functional groups\" slides in at the lower right with m8-bromine-water-orange-v1.png small beside it. Hold about 2 seconds.",
+      "motionTools": [
+        "m8-bromine-water-orange-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c06-learning-review.md",
+      "sha256": "c0cee38e5a80fccd43ddb83de13fb2f2f8aba384c5b823321646f5dd2a06a22a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c06-claude-science-check.md",
+      "sha256": "9a515aaa33b3bb2f4199499acd3cb26894366a2e56a41c886ae2ba3378061199"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8g02/lesson.json",
+    "lessonSha256": "8a3aefb458dc1e53b643ec87a0528ed3e1403ceed4d8cb70c368cc5a700189cc"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From p04: a blank zeroes the instrument; standards made by dilution; the linear range from the data; dilute an over-range unknown, remeasure, multiply back; read across then down; divide by the slope only when the line passes through zero; check accuracy with a standard of known value. From s06: concentration (the independent variable) along the bottom, absorbance up the side, even steps, small crosses, a line of best fit not dot to dot, read-off lines shown, \"Inside the data, read it. Outside, doubt it.\" From c04 (route level): AAS measures a metal ion's concentration with a calibration. From chem-m5-p02: absorbance comes from the absorbing species; the blank sets zero. From s07: validity, reliability, accuracy. Year 11: mg/L as a concentration unit.",
+    "startsWith": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist. The sample reads above the standards. The line doesn't start at zero. Or the result is right, but it's from the wrong sample for the question being asked. Here are three HSC-style questions on water samples. Pause and try each one, then we'll work through it together.",
+    "stopsAfter": "plotting an AAS calibration graph with a line of best fit and read-off lines; explaining why an over-range sample is diluted rather than read from an extended line; calculating an original concentration through a dilution; explaining a non-zero intercept from a reagent blank and subtracting it before dividing by the slope; checking a quantification limit against a guideline; comparing results with a guideline; evaluating a claim that uses the wrong sample or too few samples.",
+    "nextLesson": "why monitor water and nutrient pollution? (route chem-m8-c05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-g02.md"
+  ],
+  "teaching": {
+    "task": "A calibration graph, a water sample and a guideline value: how do you turn an absorbance into a concentration you can defend, and decide what that concentration does and doesn't tell you about the water?",
+    "causalExplanation": "Why concentration goes along the bottom: it was chosen (2b). Why dilute the sample: the line isn't known to be straight beyond the standards, and AAS lines can bend (2c). Why multiply by five: the instrument measured the diluted solution (2d). Why extending reads low here: the real response bends below the straight line (2e). Why the zero standard reads 0.032: it contains the reagent, and the zero was set with water (3b). Why subtract before dividing: 0.032 of every reading isn't iron (3c, 3d). Why check the quantification limit: a method must measure at the guideline's level to judge it (4b). Why the morning sample is higher: lead dissolves while water stands in the plumbing (4b). Why the claim fails: the flushed sample isn't the water drunk first, and one tap on one day isn't enough (4c). Why not average: the samples answer different questions (4d).",
+    "conversationalApproach": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist. Question one. Part a. Part b. Part c. The classic slip is extending the line up to point six two zero. Question two. Part a. Part b. The classic slip is dividing point two nine zero by the slope straight away. Question three. Start with the method. Now the claim. The trap is averaging the two results. So, for any calibration or monitoring question.",
+    "openingDecision": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist. The sample reads above the standards. The line doesn't start at zero. Or the result is right, but it's from the wrong sample for the question being asked. Here are three HSC-style questions on water samples. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): Q1's full standards table, both absorbances, both volumes and an empty grid; Q2's reagent and zeroing conditions, the plotted line and its equation, the sample's absorbance; Q3's quantification limit, both samples with their times, the guideline value and the claim. Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus dotpoints (as printed; NSW Chemistry Stage 6, 2017, pp57 and 58; C8-IQ1-04 and C8-IQ1-01 are this project's local catalogue IDs, not codes printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"conduct investigations and/or process data to determine the concentration of coloured species and/or metal ions in aqueous solution, including but not limited to, the use of:\n- colourimetry\n- ultraviolet-visible spectrophotometry\n- atomic absorption spectroscopy\"\n\n\"analyse the need for monitoring the environment\"\n\nPractice and transfer only: first coverage of C8-IQ1-04 stays with chem-m8-c04 and chem-m8-p04; first coverage of C8-IQ1-01 is chem-m8-c05 and c06, which come after this video. G02's Q3 practises one narrow part of C8-IQ1-01 that needs no new teaching (judging one result against a guideline, and whether one sample is enough evidence); it does not teach why water is monitored, eutrophication, dissolved oxygen or BOD."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G01 layout: top-left the question card (stem, data and demands as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"AAS calibration with a dilution\", \"Colourimetry: a line with an intercept\", \"Judge the monitoring evidence\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"inside the standards?\", \"every dilution?\", \"line starts at zero?\", \"right sample for the question?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key: copper blue, iron orange-red, lead slate grey; givens and units navy; the current answer bright; earlier lines dim; the linear range pale green; amber only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; completed lines dim while the current line writes.",
+    "transitionPlan": "heading \"Calibration and water-analysis practice: inside the range, minus the blank, the right sample\" writes on. fresh board. the card shrinks to a strip. answer (a) dims. answer (b) dims; the graph stays. the dashed extension of the line runs up to 0. fresh board. the card shrinks to a strip. answer (a) dims. a chip \"0. fresh board. the card shrinks to a strip. line \"2. a chip \"average = (0. the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"standards\" \"Inside the standards → above the top standard: dilute, remeasure (Q1)\"; \"Every dilution → × final volume ÷ sample volume (Q1)\"; on \"divide\" \"Line starts at zero? → c = (A − intercept) ÷ slope, or zero with a reagent blank (Q2)\"; on \"alone\" \"Right sample → quantification limit below the guideline; compare the sample that matches the question; repeat across taps and days (Q3)\". Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Calibration and water-analysis practice: inside the range, minus the blank, the right sample\" writes on. Three small context plates write side by side at the right, the same height: m8-aas-v1.png, m5x-colourimeter-empty-v1.png and m8-school-bubbler-v1.png (new). On \"standards\" a small coded calibration sketch draws under the first plate: four crosses, a line, and an unknown marker above the top cross (grey \"?\"). On \"zero\" a second sketch under the colourimeter: a line that meets the absorbance axis above the origin (a small grey bracket at the intercept). On \"asked\" two small sample-bottle outlines (coded) under the bubbler, one tagged \"morning\", one \"flushed\", with a \"?\" between them. The check strip builds on the left: \"inside the standards?\", \"every dilution?\", \"line starts at zero?\", \"right sample for the question?\". The plates become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "teachingReason": "A calibration graph turns an absorbance into a concentration, but exam questions add a twist.",
+      "narrationCue": "standards / zero / asked",
+      "motionPurpose": "heading \"Calibration and water-analysis practice: inside the range, minus the blank, the right sample\" writes on. Three small context plates write side by side at the right, the same height: m8-aas-v1.png, m5x-colourimeter-empty-v1.png and m8-school-bubbler-v1.png (new). On \"standards\" a small coded calibration sketch draws under the first plate: four crosses, a line, and an unknown marker above the top cross (grey \"?\"). On \"zero\" a second sketch under the colourimeter: a line that meets the absorbance axis above the origin (a small grey bracket at the intercept). On \"asked\" two small sample-bottle outlines (coded) under the bubbler, one tagged \"morning\", one \"flushed\", with a \"?\" between them. The check strip builds on the left: \"inside the standards?\", \"every dilution?\", \"line starts at zero?\", \"right sample for the question?\". The plates become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Calibration and water-analysis practice: inside the range, minus the blank, the right sample\" writes on. Three small context plates write side by side at the right, the same height: m8-aas-v1.png, m5x-colourimeter-empty-v1.png and m8-school-bubbler-v1.png (new). On \"standards\" a small coded calibration sketch draws under the first plate: four crosses, a line, and an unknown marker above the top cross (grey \"?\"). On \"zero\" a second sketch under the colourimeter: a line that meets the absorbance axis above the origin (a small grey bracket at the intercept). On \"asked\" two small sample-bottle outlines (coded) under the bubbler, one tagged \"morning\", one \"flushed\", with a \"?\" between them. The check strip builds on the left: \"inside the standards?\", \"every dilution?\", \"line starts at zero?\", \"right sample for the question?\". The plates become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "m8-aas-v1.png",
+        "m5x-colourimeter-empty-v1.png",
+        "m8-school-bubbler-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type badge hidden. The card writes on: \"The concentration of copper in mine drainage water was determined by atomic absorption spectroscopy (AAS). The absorbance of a set of copper standards was measured.\" A table: \"Copper (mg L⁻¹): 0.00, 1.00, 2.00, 3.00, 4.00\"; \"Absorbance: 0.000, 0.101, 0.198, 0.302, 0.399\". \"The undiluted drainage water gave an absorbance of 0.620. A 10.00 mL sample of the drainage water was then diluted to 50.00 mL in a volumetric flask. The diluted solution gave an absorbance of 0.142.\" Demands: \"(a) Construct a calibration graph from the data.\" \"(b) Explain why the sample was diluted before its concentration was determined.\" \"(c) Calculate the concentration of copper in the drainage water, in mg L⁻¹.\" An empty coded grid beside the table (axes unlabelled). Three answer boxes. m8-aas-v1.png and m8-river-sampling-bottle-v2.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "teachingReason": "Question one.",
+      "narrationCue": "Question one",
+      "motionPurpose": "fresh board. Type badge hidden. The card writes on: \"The concentration of copper in mine drainage water was determined by atomic absorption spectroscopy (AAS). The absorbance of a set of copper standards was measured.\" A table: \"Copper (mg L⁻¹): 0.00, 1.00, 2.00, 3.00, 4.00\"; \"Absorbance: 0.000, 0.101, 0.198, 0.302, 0.399\". \"The undiluted drainage water gave an absorbance of 0.620. A 10.00 mL sample of the drainage water was then diluted to 50.00 mL in a volumetric flask. The diluted solution gave an absorbance of 0.142.\" Demands: \"(a) Construct a calibration graph from the data.\" \"(b) Explain why the sample was diluted before its concentration was determined.\" \"(c) Calculate the concentration of copper in the drainage water, in mg L⁻¹.\" An empty coded grid beside the table (axes unlabelled). Three answer boxes. m8-aas-v1.png and m8-river-sampling-bottle-v2.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"The concentration of copper in mine drainage water was determined by atomic absorption spectroscopy (AAS). The absorbance of a set of copper standards was measured.\" A table: \"Copper (mg L⁻¹): 0.00, 1.00, 2.00, 3.00, 4.00\"; \"Absorbance: 0.000, 0.101, 0.198, 0.302, 0.399\". \"The undiluted drainage water gave an absorbance of 0.620. A 10.00 mL sample of the drainage water was then diluted to 50.00 mL in a volumetric flask. The diluted solution gave an absorbance of 0.142.\" Demands: \"(a) Construct a calibration graph from the data.\" \"(b) Explain why the sample was diluted before its concentration was determined.\" \"(c) Calculate the concentration of copper in the drainage water, in mg L⁻¹.\" An empty coded grid beside the table (axes unlabelled). Three answer boxes. m8-aas-v1.png and m8-river-sampling-bottle-v2.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "m8-aas-v1.png",
+        "m8-river-sampling-bottle-v2.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q1-question (question 1: AAS calibration with a dilution): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q1-graph",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip. Type badge \"AAS calibration with a dilution\". The grid enlarges in the working area. On \"along the bottom\" the \"Copper (mg L⁻¹)\" row underlines and the x-axis labels \"copper concentration (mg L⁻¹)\" with ticks 0 to 5.00; the y-axis \"absorbance\" with ticks 0 to 0.600 (grey chip \"s06: independent along the bottom\"). On \"small cross\" five crosses plot one at a time as their table pairs underline. On \"dot\" a ruled line of best fit draws through the crosses and the origin cross (grey chip \"s06: TAILS, then best fit\"); a faint dot-to-dot zigzag appears for a beat and is crossed (no narration). On \"litre\" a slope triangle draws from 1.00 to 4.00 mg L⁻¹ with \"slope ≈ 0.0999 per mg L⁻¹ (about 0.1)\" (navy). The p04 linear range band shades 0 to 4.00 mg L⁻¹ pale green (tag \"the standards' range\"). Strip: \"inside the standards?\" ticks. Answer box (a): the drawn graph thumbnail. Bright at the end: the graph and the slope.",
+      "teachingReason": "Part a.",
+      "narrationCue": "along the bottom / small cross / dot / litre",
+      "motionPurpose": "the card shrinks to a strip. Type badge \"AAS calibration with a dilution\". The grid enlarges in the working area. On \"along the bottom\" the \"Copper (mg L⁻¹)\" row underlines and the x-axis labels \"copper concentration (mg L⁻¹)\" with ticks 0 to 5.00; the y-axis \"absorbance\" with ticks 0 to 0.600 (grey chip \"s06: independent along the bottom\"). On \"small cross\" five crosses plot one at a time as their table pairs underline. On \"dot\" a ruled line of best fit draws through the crosses and the origin cross (grey chip \"s06: TAILS, then best fit\"); a faint dot-to-dot zigzag appears for a beat and is crossed (no narration). On \"litre\" a slope triangle draws from 1.00 to 4.00 mg L⁻¹ with \"slope ≈ 0.0999 per mg L⁻¹ (about 0.1)\" (navy). The p04 linear range band shades 0 to 4.00 mg L⁻¹ pale green (tag \"the standards' range\"). Strip: \"inside the standards?\" ticks. Answer box (a): the drawn graph thumbnail. Bright at the end: the graph and the slope.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"AAS calibration with a dilution\". The grid enlarges in the working area. On \"along the bottom\" the \"Copper (mg L⁻¹)\" row underlines and the x-axis labels \"copper concentration (mg L⁻¹)\" with ticks 0 to 5.00; the y-axis \"absorbance\" with ticks 0 to 0.600 (grey chip \"s06: independent along the bottom\"). On \"small cross\" five crosses plot one at a time as their table pairs underline. On \"dot\" a ruled line of best fit draws through the crosses and the origin cross (grey chip \"s06: TAILS, then best fit\"); a faint dot-to-dot zigzag appears for a beat and is crossed (no narration). On \"litre\" a slope triangle draws from 1.00 to 4.00 mg L⁻¹ with \"slope ≈ 0.0999 per mg L⁻¹ (about 0.1)\" (navy). The p04 linear range band shades 0 to 4.00 mg L⁻¹ pale green (tag \"the standards' range\"). Strip: \"inside the standards?\" ticks. Answer box (a): the drawn graph thumbnail. Bright at the end: the graph and the slope.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-graph (draw it): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-range",
+      "visualDecision": "new",
+      "visualReference": "answer (a) dims. \"0.620\" underlines; a horizontal marker at 0.620 draws on the graph, above the green band (tag \"above the top standard, 0.399\"). On \"bend\" a faint dashed curve peels below the straight line's extension above 0.4 (grey tag \"possible bend: not measured\"; grey chip \"p04: the fifth standard fell below the line\"). On \"inside\" \"diluted to 50.00 mL\" underlines and the marker drops to 0.142 inside the band (tag \"diluted: inside the range\"). Answer box (b): \"The undiluted absorbance (0.620) was above the highest standard (0.399). The line is not known to be straight beyond the standards, so the sample was diluted to bring its absorbance within the calibrated range.\" Bright at the end: answer (b) and the marker at 0.142.",
+      "teachingReason": "Part b.",
+      "narrationCue": "bend / inside",
+      "motionPurpose": "answer (a) dims. \"0.620\" underlines; a horizontal marker at 0.620 draws on the graph, above the green band (tag \"above the top standard, 0.399\"). On \"bend\" a faint dashed curve peels below the straight line's extension above 0.4 (grey tag \"possible bend: not measured\"; grey chip \"p04: the fifth standard fell below the line\"). On \"inside\" \"diluted to 50.00 mL\" underlines and the marker drops to 0.142 inside the band (tag \"diluted: inside the range\"). Answer box (b): \"The undiluted absorbance (0.620) was above the highest standard (0.399). The line is not known to be straight beyond the standards, so the sample was diluted to bring its absorbance within the calibrated range.\" Bright at the end: answer (b) and the marker at 0.142.",
+      "motionRole": "explain",
+      "onScreenChange": "answer (a) dims. \"0.620\" underlines; a horizontal marker at 0.620 draws on the graph, above the green band (tag \"above the top standard, 0.399\"). On \"bend\" a faint dashed curve peels below the straight line's extension above 0.4 (grey tag \"possible bend: not measured\"; grey chip \"p04: the fifth standard fell below the line\"). On \"inside\" \"diluted to 50.00 mL\" underlines and the marker drops to 0.142 inside the band (tag \"diluted: inside the range\"). Answer box (b): \"The undiluted absorbance (0.620) was above the highest standard (0.399). The line is not known to be straight beyond the standards, so the sample was diluted to bring its absorbance within the calibrated range.\" Bright at the end: answer (b) and the marker at 0.142.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-range (why dilute): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-calc",
+      "visualDecision": "new",
+      "visualReference": "answer (b) dims; the graph stays. On \"Read across\" \"0.142\" underlines and s06's read-off lines draw (across to the line, down to the axis; grey chip \"s06: show the read-off\"). Line 1: \"c(diluted) = 1.42 mg L⁻¹\" (bright). Line 1 dims. On \"Fifty over ten\" \"10.00 mL\" and \"50.00 mL\" underline; line 2: \"dilution factor = 50.00 ÷ 10.00 = 5.00\". On the second \"litre\" line 3: \"c(drainage water) = 1.42 × 5.00 = 7.1 mg L⁻¹\" (bright, boxed; \"in the drainage water\" underlines). Strip: \"every dilution?\" ticks. Answer box (c) writes the three lines. Bright at the end: 7.1 mg L⁻¹.",
+      "teachingReason": "Part c.",
+      "narrationCue": "Read across / Fifty over ten",
+      "motionPurpose": "answer (b) dims; the graph stays. On \"Read across\" \"0.142\" underlines and s06's read-off lines draw (across to the line, down to the axis; grey chip \"s06: show the read-off\"). Line 1: \"c(diluted) = 1.42 mg L⁻¹\" (bright). Line 1 dims. On \"Fifty over ten\" \"10.00 mL\" and \"50.00 mL\" underline; line 2: \"dilution factor = 50.00 ÷ 10.00 = 5.00\". On the second \"litre\" line 3: \"c(drainage water) = 1.42 × 5.00 = 7.1 mg L⁻¹\" (bright, boxed; \"in the drainage water\" underlines). Strip: \"every dilution?\" ticks. Answer box (c) writes the three lines. Bright at the end: 7.1 mg L⁻¹.",
+      "motionRole": "explain",
+      "onScreenChange": "answer (b) dims; the graph stays. On \"Read across\" \"0.142\" underlines and s06's read-off lines draw (across to the line, down to the axis; grey chip \"s06: show the read-off\"). Line 1: \"c(diluted) = 1.42 mg L⁻¹\" (bright). Line 1 dims. On \"Fifty over ten\" \"10.00 mL\" and \"50.00 mL\" underline; line 2: \"dilution factor = 50.00 ÷ 10.00 = 5.00\". On the second \"litre\" line 3: \"c(drainage water) = 1.42 × 5.00 = 7.1 mg L⁻¹\" (bright, boxed; \"in the drainage water\" underlines). Strip: \"every dilution?\" ticks. Answer box (c) writes the three lines. Bright at the end: 7.1 mg L⁻¹.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-calc (read it, then multiply back): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "the dashed extension of the line runs up to 0.620 and drops to \"6.2 mg L⁻¹\" as a chip; on \"remeasure\" it takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). A handwritten line writes under the board: \"Inside the data, read it. Outside, doubt it.\" (grey tag \"s06\").",
+      "teachingReason": "The classic slip is extending the line up to point six two zero.",
+      "narrationCue": "remeasure",
+      "motionPurpose": "the dashed extension of the line runs up to 0.620 and drops to \"6.2 mg L⁻¹\" as a chip; on \"remeasure\" it takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). A handwritten line writes under the board: \"Inside the data, read it. Outside, doubt it.\" (grey tag \"s06\").",
+      "motionRole": "explain",
+      "onScreenChange": "the dashed extension of the line runs up to 0.620 and drops to \"6.2 mg L⁻¹\" as a chip; on \"remeasure\" it takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). A handwritten line writes under the board: \"Inside the data, read it. Outside, doubt it.\" (grey tag \"s06\").",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type badge hidden. The card writes on: \"The concentration of iron in bore water was determined by colourimetry. A reagent that forms an orange-red complex with iron was added, in the same amount, to each standard and to the sample. The colourimeter was set to zero with distilled water.\" A coded lineGraph: iron standards 0.00, 0.50, 1.00, 1.50, 2.00 mg L⁻¹ against absorbance 0.032, 0.131, 0.231, 0.330, 0.430, with its line of best fit and the label \"A = 0.199c + 0.032 (c in mg L⁻¹)\". \"The bore water sample gave an absorbance of 0.290.\" Demands: \"(a) Explain why the 0.00 mg L⁻¹ standard has an absorbance of 0.032.\" \"(b) Calculate the concentration of iron in the bore water.\" Two answer boxes. m5x-colourimeter-empty-v1.png and m5x-cuvette-3-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "teachingReason": "Question two.",
+      "narrationCue": "Question two",
+      "motionPurpose": "fresh board. Type badge hidden. The card writes on: \"The concentration of iron in bore water was determined by colourimetry. A reagent that forms an orange-red complex with iron was added, in the same amount, to each standard and to the sample. The colourimeter was set to zero with distilled water.\" A coded lineGraph: iron standards 0.00, 0.50, 1.00, 1.50, 2.00 mg L⁻¹ against absorbance 0.032, 0.131, 0.231, 0.330, 0.430, with its line of best fit and the label \"A = 0.199c + 0.032 (c in mg L⁻¹)\". \"The bore water sample gave an absorbance of 0.290.\" Demands: \"(a) Explain why the 0.00 mg L⁻¹ standard has an absorbance of 0.032.\" \"(b) Calculate the concentration of iron in the bore water.\" Two answer boxes. m5x-colourimeter-empty-v1.png and m5x-cuvette-3-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"The concentration of iron in bore water was determined by colourimetry. A reagent that forms an orange-red complex with iron was added, in the same amount, to each standard and to the sample. The colourimeter was set to zero with distilled water.\" A coded lineGraph: iron standards 0.00, 0.50, 1.00, 1.50, 2.00 mg L⁻¹ against absorbance 0.032, 0.131, 0.231, 0.330, 0.430, with its line of best fit and the label \"A = 0.199c + 0.032 (c in mg L⁻¹)\". \"The bore water sample gave an absorbance of 0.290.\" Demands: \"(a) Explain why the 0.00 mg L⁻¹ standard has an absorbance of 0.032.\" \"(b) Calculate the concentration of iron in the bore water.\" Two answer boxes. m5x-colourimeter-empty-v1.png and m5x-cuvette-3-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "motionTools": [
+        "m5x-colourimeter-empty-v1.png",
+        "m5x-cuvette-3-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q2-question (question 2: a line with an intercept): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q2-blank",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip. Type badge \"Colourimetry: a line with an intercept\". \"0.032\" underlines at the zero standard's point, and a bracket at the intercept tags it \"intercept: 0.032\" (tag \"intercept: where the line meets the absorbance axis\"). On \"reagent\" \"was added, in the same amount, to each standard and to the sample\" underlines; on \"plain water\" \"set to zero with distilled water\" underlines (grey chip \"p04: the blank removes what isn't the analyte\"). On \"trace of iron\" a small grey tag: \"for example, trace iron in the reagents\". On \"same extra\" the blank-share split draws: a grey 0.032 segment appears under each standard's point. On \"zero\" answer box (a) writes: \"The instrument was zeroed with water, but every standard contains the reagent. The reagent absorbs slightly (for example, trace iron in it), so the 0.00 mg L⁻¹ standard reads 0.032, and the same 0.032 is added to every reading.\" Strip: \"line starts at zero?\" ticks (amber, \"no: 0.032\"). Bright at the end: answer (a) and the grey segments.",
+      "teachingReason": "Part a.",
+      "narrationCue": "reagent / plain water / trace of iron / same extra / zero",
+      "motionPurpose": "the card shrinks to a strip. Type badge \"Colourimetry: a line with an intercept\". \"0.032\" underlines at the zero standard's point, and a bracket at the intercept tags it \"intercept: 0.032\" (tag \"intercept: where the line meets the absorbance axis\"). On \"reagent\" \"was added, in the same amount, to each standard and to the sample\" underlines; on \"plain water\" \"set to zero with distilled water\" underlines (grey chip \"p04: the blank removes what isn't the analyte\"). On \"trace of iron\" a small grey tag: \"for example, trace iron in the reagents\". On \"same extra\" the blank-share split draws: a grey 0.032 segment appears under each standard's point. On \"zero\" answer box (a) writes: \"The instrument was zeroed with water, but every standard contains the reagent. The reagent absorbs slightly (for example, trace iron in it), so the 0.00 mg L⁻¹ standard reads 0.032, and the same 0.032 is added to every reading.\" Strip: \"line starts at zero?\" ticks (amber, \"no: 0.032\"). Bright at the end: answer (a) and the grey segments.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Colourimetry: a line with an intercept\". \"0.032\" underlines at the zero standard's point, and a bracket at the intercept tags it \"intercept: 0.032\" (tag \"intercept: where the line meets the absorbance axis\"). On \"reagent\" \"was added, in the same amount, to each standard and to the sample\" underlines; on \"plain water\" \"set to zero with distilled water\" underlines (grey chip \"p04: the blank removes what isn't the analyte\"). On \"trace of iron\" a small grey tag: \"for example, trace iron in the reagents\". On \"same extra\" the blank-share split draws: a grey 0.032 segment appears under each standard's point. On \"zero\" answer box (a) writes: \"The instrument was zeroed with water, but every standard contains the reagent. The reagent absorbs slightly (for example, trace iron in it), so the 0.00 mg L⁻¹ standard reads 0.032, and the same 0.032 is added to every reading.\" Strip: \"line starts at zero?\" ticks (amber, \"no: 0.032\"). Bright at the end: answer (a) and the grey segments.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-blank (why the line starts above zero): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-calc",
+      "visualDecision": "new",
+      "visualReference": "answer (a) dims. The task line \"c = (A − intercept) ÷ slope\" writes small at the top of the working area. On \"minus\" \"0.290\" and \"+ 0.032\" (in the equation) underline; the blank-share split draws for the sample: its 0.290 bar splits into grey 0.032 and orange-red 0.258. Line 1: \"A from iron = 0.290 − 0.032 = 0.258\" (bright on \"eight\"). Line 1 dims. On \"slope\" \"0.199\" underlines; line 2: \"c = 0.258 ÷ 0.199 = 1.30 mg L⁻¹\" (bright on \"litre\", boxed). On \"Reading across\" the read-off lines draw from 0.290 across to the line and down to 1.30 (tag \"same answer\"). Answer box (b) writes the two lines. Bright at the end: 1.30 mg L⁻¹ and the read-off.",
+      "teachingReason": "Part b.",
+      "narrationCue": "minus / eight / slope / litre / Reading across",
+      "motionPurpose": "answer (a) dims. The task line \"c = (A − intercept) ÷ slope\" writes small at the top of the working area. On \"minus\" \"0.290\" and \"+ 0.032\" (in the equation) underline; the blank-share split draws for the sample: its 0.290 bar splits into grey 0.032 and orange-red 0.258. Line 1: \"A from iron = 0.290 − 0.032 = 0.258\" (bright on \"eight\"). Line 1 dims. On \"slope\" \"0.199\" underlines; line 2: \"c = 0.258 ÷ 0.199 = 1.30 mg L⁻¹\" (bright on \"litre\", boxed). On \"Reading across\" the read-off lines draw from 0.290 across to the line and down to 1.30 (tag \"same answer\"). Answer box (b) writes the two lines. Bright at the end: 1.30 mg L⁻¹ and the read-off.",
+      "motionRole": "explain",
+      "onScreenChange": "answer (a) dims. The task line \"c = (A − intercept) ÷ slope\" writes small at the top of the working area. On \"minus\" \"0.290\" and \"+ 0.032\" (in the equation) underline; the blank-share split draws for the sample: its 0.290 bar splits into grey 0.032 and orange-red 0.258. Line 1: \"A from iron = 0.290 − 0.032 = 0.258\" (bright on \"eight\"). Line 1 dims. On \"slope\" \"0.199\" underlines; line 2: \"c = 0.258 ÷ 0.199 = 1.30 mg L⁻¹\" (bright on \"litre\", boxed). On \"Reading across\" the read-off lines draw from 0.290 across to the line and down to 1.30 (tag \"same answer\"). Answer box (b) writes the two lines. Bright at the end: 1.30 mg L⁻¹ and the read-off.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-calc (subtract, then divide): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"0.290 ÷ 0.199 = 1.46 mg L⁻¹\" fades in and takes a red scribble cross (caption \"the reagent's 0.032 counted as iron\"). A handwritten line writes under the board: \"Intercept? Subtract it before you divide.\" On \"reagent blank\" a small green fix chip: \"zero with a reagent blank → the line passes through zero\" and the line shifts down to the origin for a beat (grey chip \"site L08: run a reagent blank\").",
+      "teachingReason": "The classic slip is dividing point two nine zero by the slope straight away.",
+      "narrationCue": "reagent blank",
+      "motionPurpose": "a chip \"0.290 ÷ 0.199 = 1.46 mg L⁻¹\" fades in and takes a red scribble cross (caption \"the reagent's 0.032 counted as iron\"). A handwritten line writes under the board: \"Intercept? Subtract it before you divide.\" On \"reagent blank\" a small green fix chip: \"zero with a reagent blank → the line passes through zero\" and the line shifts down to the origin for a beat (grey chip \"site L08: run a reagent blank\").",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"0.290 ÷ 0.199 = 1.46 mg L⁻¹\" fades in and takes a red scribble cross (caption \"the reagent's 0.032 counted as iron\"). A handwritten line writes under the board: \"Intercept? Subtract it before you divide.\" On \"reagent blank\" a small green fix chip: \"zero with a reagent blank → the line passes through zero\" and the line shifts down to the origin for a beat (grey chip \"site L08: run a reagent blank\").",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type badge hidden. The card writes on: \"A school tested the lead concentration of water from one drinking bubbler by atomic absorption spectroscopy. The method's validated quantification limit is 0.001 mg L⁻¹.\" A results table: \"Sample 1, first draw at 8 am, after the water stood in the pipes overnight: 0.012 mg L⁻¹\"; \"Sample 2, after the bubbler had run for 2 minutes: 0.002 mg L⁻¹\". \"Australian Drinking Water Guidelines health guideline value for lead: 0.005 mg L⁻¹.\" Demand: \"The school claims that the water is safe to drink because Sample 2 is below the guideline value. Evaluate this claim.\" One answer box. m8-school-bubbler-v1.png (new) and m8-aas-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "teachingReason": "Question three.",
+      "narrationCue": "Question three",
+      "motionPurpose": "fresh board. Type badge hidden. The card writes on: \"A school tested the lead concentration of water from one drinking bubbler by atomic absorption spectroscopy. The method's validated quantification limit is 0.001 mg L⁻¹.\" A results table: \"Sample 1, first draw at 8 am, after the water stood in the pipes overnight: 0.012 mg L⁻¹\"; \"Sample 2, after the bubbler had run for 2 minutes: 0.002 mg L⁻¹\". \"Australian Drinking Water Guidelines health guideline value for lead: 0.005 mg L⁻¹.\" Demand: \"The school claims that the water is safe to drink because Sample 2 is below the guideline value. Evaluate this claim.\" One answer box. m8-school-bubbler-v1.png (new) and m8-aas-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A school tested the lead concentration of water from one drinking bubbler by atomic absorption spectroscopy. The method's validated quantification limit is 0.001 mg L⁻¹.\" A results table: \"Sample 1, first draw at 8 am, after the water stood in the pipes overnight: 0.012 mg L⁻¹\"; \"Sample 2, after the bubbler had run for 2 minutes: 0.002 mg L⁻¹\". \"Australian Drinking Water Guidelines health guideline value for lead: 0.005 mg L⁻¹.\" Demand: \"The school claims that the water is safe to drink because Sample 2 is below the guideline value. Evaluate this claim.\" One answer box. m8-school-bubbler-v1.png (new) and m8-aas-v1.png small at the card's right (no tags). Nothing answer-bearing. Countdown ring 10 seconds; check strip dims; card stays on screen.",
+      "motionTools": [
+        "m8-school-bubbler-v1.png",
+        "m8-aas-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "q3-question (question 3: judge the monitoring evidence): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "q3-data",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip. Type badge \"Judge the monitoring evidence\". The guideline bar draws: a scale 0 to 0.015 mg L⁻¹, a terracotta line at 0.005 \"guideline\", a grey tick at 0.001 \"quantification limit\". On \"quantification limit\" \"0.001 mg L⁻¹\" underlines and a gloss tag writes \"quantification limit: the lowest concentration this method can measure with the stated reliability\" (grey chip \"site L08: a method must detect at the levels that matter\"); on \"yes\" a bracket from 0.001 to 0.005 reads \"×5: the method can see the guideline level\". On \"guideline\" \"0.012 mg L⁻¹\" and \"0.005 mg L⁻¹\" underline; a slate marker \"morning 0.012\" lands right of the line; line \"0.012 ÷ 0.005 = 2.4 × the guideline\" (bright). On \"under it\" \"0.002 mg L⁻¹\" underlines and a second marker \"flushed 0.002\" lands left of the line. On \"fittings\" the time-of-day strip draws under the bar: \"overnight: water stands in the pipes\" (coded pipe outline, slate lead dots gathering) → \"8 am: first drink\" → \"after 2 minutes: flushed\" (dots flushed away). Strip: \"right sample for the question?\" lights (not yet ticked). Bright at the end: the two markers either side of the guideline and 2.4 ×.",
+      "teachingReason": "Start with the method.",
+      "narrationCue": "quantification limit / yes / guideline / under it / fittings",
+      "motionPurpose": "the card shrinks to a strip. Type badge \"Judge the monitoring evidence\". The guideline bar draws: a scale 0 to 0.015 mg L⁻¹, a terracotta line at 0.005 \"guideline\", a grey tick at 0.001 \"quantification limit\". On \"quantification limit\" \"0.001 mg L⁻¹\" underlines and a gloss tag writes \"quantification limit: the lowest concentration this method can measure with the stated reliability\" (grey chip \"site L08: a method must detect at the levels that matter\"); on \"yes\" a bracket from 0.001 to 0.005 reads \"×5: the method can see the guideline level\". On \"guideline\" \"0.012 mg L⁻¹\" and \"0.005 mg L⁻¹\" underline; a slate marker \"morning 0.012\" lands right of the line; line \"0.012 ÷ 0.005 = 2.4 × the guideline\" (bright). On \"under it\" \"0.002 mg L⁻¹\" underlines and a second marker \"flushed 0.002\" lands left of the line. On \"fittings\" the time-of-day strip draws under the bar: \"overnight: water stands in the pipes\" (coded pipe outline, slate lead dots gathering) → \"8 am: first drink\" → \"after 2 minutes: flushed\" (dots flushed away). Strip: \"right sample for the question?\" lights (not yet ticked). Bright at the end: the two markers either side of the guideline and 2.4 ×.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Judge the monitoring evidence\". The guideline bar draws: a scale 0 to 0.015 mg L⁻¹, a terracotta line at 0.005 \"guideline\", a grey tick at 0.001 \"quantification limit\". On \"quantification limit\" \"0.001 mg L⁻¹\" underlines and a gloss tag writes \"quantification limit: the lowest concentration this method can measure with the stated reliability\" (grey chip \"site L08: a method must detect at the levels that matter\"); on \"yes\" a bracket from 0.001 to 0.005 reads \"×5: the method can see the guideline level\". On \"guideline\" \"0.012 mg L⁻¹\" and \"0.005 mg L⁻¹\" underline; a slate marker \"morning 0.012\" lands right of the line; line \"0.012 ÷ 0.005 = 2.4 × the guideline\" (bright). On \"under it\" \"0.002 mg L⁻¹\" underlines and a second marker \"flushed 0.002\" lands left of the line. On \"fittings\" the time-of-day strip draws under the bar: \"overnight: water stands in the pipes\" (coded pipe outline, slate lead dots gathering) → \"8 am: first drink\" → \"after 2 minutes: flushed\" (dots flushed away). Strip: \"right sample for the question?\" lights (not yet ticked). Bright at the end: the two markers either side of the guideline and 2.4 ×.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-data (compare each result): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-claim",
+      "visualDecision": "new",
+      "visualReference": "line \"2.4 ×\" dims; the bar stays. On \"isn't the water\" \"Sample 2\" in the claim underlines and the \"flushed\" marker dims; on \"first drink\" \"first draw at 8 am\" underlines and the \"morning\" marker pulses (tag \"the water students drink first\"). On \"one bubbler\" \"one drinking bubbler\" underlines; a coded row of five bubbler outlines appears, one filled, four grey with \"?\" (tag \"one tap, one day\"). Answer box writes in three short lines: \"The claim is not supported: Sample 2 (flushed) is below the guideline, but Sample 1, the water drunk first each morning, is 2.4 times the guideline.\" / \"Lead dissolves from the plumbing while water stands, so the result depends on when the sample is taken; one bubbler on one day can't show the water is safe.\" / \"Before calling it safe: repeat sampling at every bubbler over several days, and advice from the local public health unit to find and control the lead source.\" On \"source\" the s07 FixRail flashes small (\"feature: wrong sample, too few samples; fix: matching samples, repeated\"). Strip: \"right sample for the question?\" ticks. Bright at the end: the answer box and the morning marker.",
+      "teachingReason": "Now the claim.",
+      "narrationCue": "isn't the water / first drink / one bubbler / source",
+      "motionPurpose": "line \"2.4 ×\" dims; the bar stays. On \"isn't the water\" \"Sample 2\" in the claim underlines and the \"flushed\" marker dims; on \"first drink\" \"first draw at 8 am\" underlines and the \"morning\" marker pulses (tag \"the water students drink first\"). On \"one bubbler\" \"one drinking bubbler\" underlines; a coded row of five bubbler outlines appears, one filled, four grey with \"?\" (tag \"one tap, one day\"). Answer box writes in three short lines: \"The claim is not supported: Sample 2 (flushed) is below the guideline, but Sample 1, the water drunk first each morning, is 2.4 times the guideline.\" / \"Lead dissolves from the plumbing while water stands, so the result depends on when the sample is taken; one bubbler on one day can't show the water is safe.\" / \"Before calling it safe: repeat sampling at every bubbler over several days, and advice from the local public health unit to find and control the lead source.\" On \"source\" the s07 FixRail flashes small (\"feature: wrong sample, too few samples; fix: matching samples, repeated\"). Strip: \"right sample for the question?\" ticks. Bright at the end: the answer box and the morning marker.",
+      "motionRole": "explain",
+      "onScreenChange": "line \"2.4 ×\" dims; the bar stays. On \"isn't the water\" \"Sample 2\" in the claim underlines and the \"flushed\" marker dims; on \"first drink\" \"first draw at 8 am\" underlines and the \"morning\" marker pulses (tag \"the water students drink first\"). On \"one bubbler\" \"one drinking bubbler\" underlines; a coded row of five bubbler outlines appears, one filled, four grey with \"?\" (tag \"one tap, one day\"). Answer box writes in three short lines: \"The claim is not supported: Sample 2 (flushed) is below the guideline, but Sample 1, the water drunk first each morning, is 2.4 times the guideline.\" / \"Lead dissolves from the plumbing while water stands, so the result depends on when the sample is taken; one bubbler on one day can't show the water is safe.\" / \"Before calling it safe: repeat sampling at every bubbler over several days, and advice from the local public health unit to find and control the lead source.\" On \"source\" the s07 FixRail flashes small (\"feature: wrong sample, too few samples; fix: matching samples, repeated\"). Strip: \"right sample for the question?\" ticks. Bright at the end: the answer box and the morning marker.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-claim (evaluate the claim): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"average = (0.012 + 0.002) ÷ 2 = 0.007 mg L⁻¹\" fades in, a grey marker slides between the two on the bar; on \"drinks\" the chip takes a red scribble cross (caption \"two different waters: don't average them\"). A handwritten line writes under the board: \"Match the sample to the question.\"",
+      "teachingReason": "The trap is averaging the two results.",
+      "narrationCue": "drinks",
+      "motionPurpose": "a chip \"average = (0.012 + 0.002) ÷ 2 = 0.007 mg L⁻¹\" fades in, a grey marker slides between the two on the bar; on \"drinks\" the chip takes a red scribble cross (caption \"two different waters: don't average them\"). A handwritten line writes under the board: \"Match the sample to the question.\"",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"average = (0.012 + 0.002) ÷ 2 = 0.007 mg L⁻¹\" fades in, a grey marker slides between the two on the bar; on \"drinks\" the chip takes a red scribble cross (caption \"two different waters: don't average them\"). A handwritten line writes under the board: \"Match the sample to the question.\"",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-mistake (the classic mistake): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"standards\" \"Inside the standards → above the top standard: dilute, remeasure (Q1)\"; \"Every dilution → × final volume ÷ sample volume (Q1)\"; on \"divide\" \"Line starts at zero? → c = (A − intercept) ÷ slope, or zero with a reagent blank (Q2)\"; on \"alone\" \"Right sample → quantification limit below the guideline; compare the sample that matches the question; repeat across taps and days (Q3)\". Under the board, small, the bank line: \"Read across, then down, and only inside the standards.\" On \"Next\" a chip \"Next: why monitor water and nutrient pollution?\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, for any calibration or monitoring question.",
+      "narrationCue": "standards / divide / alone / Next",
+      "motionPurpose": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"standards\" \"Inside the standards → above the top standard: dilute, remeasure (Q1)\"; \"Every dilution → × final volume ÷ sample volume (Q1)\"; on \"divide\" \"Line starts at zero? → c = (A − intercept) ÷ slope, or zero with a reagent blank (Q2)\"; on \"alone\" \"Right sample → quantification limit below the guideline; compare the sample that matches the question; repeat across taps and days (Q3)\". Under the board, small, the bank line: \"Read across, then down, and only inside the standards.\" On \"Next\" a chip \"Next: why monitor water and nutrient pollution?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"standards\" \"Inside the standards → above the top standard: dilute, remeasure (Q1)\"; \"Every dilution → × final volume ÷ sample volume (Q1)\"; on \"divide\" \"Line starts at zero? → c = (A − intercept) ÷ slope, or zero with a reagent blank (Q2)\"; on \"alone\" \"Right sample → quantification limit below the guideline; compare the sample that matches the question; repeat across taps and days (Q3)\". Under the board, small, the bank line: \"Read across, then down, and only inside the standards.\" On \"Next\" a chip \"Next: why monitor water and nutrient pollution?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision-board: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key-notes (reuse take: key-notes; quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g02-learning-review.md",
+      "sha256": "67910c2f0af0bbadefeb55ef6eae7c8581b6965213b8036436b0338d8dc04dc5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8g02-claude-science-check.md",
+      "sha256": "edc8e1529fdca604f9e6ff5553edf8081ca7a5f106762aa4f30e395f6db7444d"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

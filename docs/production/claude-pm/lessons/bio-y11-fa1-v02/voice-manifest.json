@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/bio-y11-fa1-v02.md",
+  "sourceSha256": "3333b0caa94310f88b48d8bff4441a75be4f872def8fe30a42b368e28c826e6f",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the eukaryotic cell from last time, the one with its DNA inside a nucleus. It's crowded with organelles, and some of them hold enzymes strong enough to digest the cell itself. So why doesn't it? And how does a cell build a protein and send it out? Let's meet the eleven structures you need, grouped by job, and follow one protein out of the cell.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/hook.wav"
+    },
+    {
+      "id": "boundary",
+      "text": "Start at the edge. The cell membrane is a very thin double layer of fatty molecules called phospholipids, with proteins set into it. It's partially permeable, which means it lets some substances through and blocks others, so it controls what enters and leaves. Inside is the cytoplasm, a jelly-like fluid where many reactions happen and the organelles sit. Plant cells add a cell wall outside the membrane. It's made of cellulose, a tough fibre, and it's rigid, so it gives the cell its shape and support. Animal cells don't have one.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/boundary.wav"
+    },
+    {
+      "id": "nucleus",
+      "text": "The nucleus is usually the largest organelle. It's wrapped in two membranes, called the nuclear envelope, which are dotted with pores. Inside is the cell's DNA. The nucleus controls the cell, because that DNA carries the instructions for every protein the cell makes. Copies of those instructions leave through the pores, heading to where proteins are built.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/nucleus.wav"
+    },
+    {
+      "id": "ribosomes",
+      "text": "They go to the ribosomes. These are tiny, made of two parts, with no membrane around them. Some float free in the cytoplasm, and many sit on a membrane network beside the nucleus. A ribosome reads the copied instructions and joins building blocks called amino acids into a chain, and that chain becomes a protein. So ribosomes are the site of protein synthesis, which just means making proteins.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/ribosomes.wav"
+    },
+    {
+      "id": "endoplasmic-reticulum",
+      "text": "That membrane network is the endoplasmic reticulum, or ER: a maze of flattened sacs and tubes, joined to the nuclear envelope. Where ribosomes stud its surface, it's called rough ER. Proteins made by those ribosomes pass inside the rough ER, where they fold into shape and are carried along. Where there are no ribosomes, it's smooth ER, which makes lipids, the fats and oils a cell needs, and breaks down some toxins.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/endoplasmic-reticulum.wav"
+    },
+    {
+      "id": "golgi-body",
+      "text": "Next stop is the Golgi body, a stack of curved, flattened membrane sacs. Proteins reach it from the ER in vesicles, small bubbles of membrane that pinch off and travel through the cytoplasm. The Golgi body modifies the proteins, for example by adding sugar groups, then sorts them and packages them into new vesicles, ready for use in the cell or for export.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/golgi-body.wav"
+    },
+    {
+      "id": "production-line",
+      "text": "Now follow one protein all the way. Instructions leave the nucleus. A ribosome on the rough ER builds the chain. Inside the ER, it folds. A vesicle carries it to the Golgi body, which modifies and packages it. Then a new vesicle moves to the cell membrane, joins with it, and releases the protein outside the cell. Build, fold, package, ship, and a different organelle owns each step.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/production-line.wav"
+    },
+    {
+      "id": "mitochondria",
+      "text": "All that work needs energy, and it comes from the mitochondria. Each one has two membranes. The inner membrane is folded into ridges called cristae, which give it much more surface for the reactions of aerobic respiration. Here, energy stored in glucose is transferred into ATP, a small molecule the cell can spend on jobs like building proteins. Busy cells, like muscle cells, have lots of mitochondria. So a mitochondrion doesn't make energy. It's a money changer, not a mint: it converts, it never prints.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/mitochondria.wav"
+    },
+    {
+      "id": "lysosomes",
+      "text": "Now the question from the start. Lysosomes are small sacs, each wrapped in a single membrane and filled with digestive enzymes. They break down worn-out organelles, waste, and material the cell has taken in. Their membrane keeps those enzymes shut away from the rest of the cell. That's why the cell doesn't digest itself: the dangerous job is done in a sealed compartment.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/lysosomes.wav"
+    },
+    {
+      "id": "vacuoles",
+      "text": "Vacuoles are fluid-filled sacs, also wrapped in a membrane, that store water, nutrients and wastes. Animal cells have small ones, if any. A plant cell usually has one large central vacuole. When it's full of water, it presses outwards against the cell wall, and that pressure, called turgor, helps the plant stay firm and upright.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/vacuoles.wav"
+    },
+    {
+      "id": "chloroplasts",
+      "text": "Finally, chloroplasts, found in plant cells and algae, but not in animal cells. Each has a double-membrane envelope, and inside are stacks of flattened membrane discs holding chlorophyll, the green pigment that absorbs light. Chloroplasts are the site of photosynthesis, where light energy is captured and used to build glucose. That's all eleven, and most are wrapped in membrane, so each job runs in its own space.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/chloroplasts.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. Cells in the pancreas make large amounts of a digestive enzyme, which is a protein, and release it from the cell. Predict three organelles that would be unusually well developed in these cells, and justify each choice by its function. Pause here to answer.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "Ribosomes, because they build the enzyme, and it's a protein. Rough ER, because it folds the new enzyme and carries it on. And Golgi bodies, because they package it into vesicles for release. Mitochondria also earn the mark, because the whole route needs ATP. The classic mistake is choosing lysosomes because it's a digestive enzyme. Lysosomes keep their enzymes inside the cell.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. A drug stops vesicles from leaving the Golgi body. A cell treated with the drug normally makes a protein and exports it. Predict where the protein will build up in the cell, and explain what happens to its export. Pause here to answer.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "It builds up in the Golgi body. The ribosomes still make the protein, the rough ER still folds it, and vesicles still carry it to the Golgi. But no vesicles leave, so nothing reaches the cell membrane, and export stops. The classic mistake is saying the ribosomes stop making the protein. The drug blocks a late step, not the first one.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/feedback-two.wav"
+    },
+    {
+      "id": "decision-rule",
+      "text": "So for any organelle question, give one detail of its structure, then the job that structure makes possible. Next: a plant cell and an animal cell share most of this kit, so why does the plant cell have extras?",
+      "audioFile": "public/audio/bio-y11-fa1-v02/decision-rule.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/bio-y11-fa1-v02/key-notes.wav"
+    }
+  ]
+}

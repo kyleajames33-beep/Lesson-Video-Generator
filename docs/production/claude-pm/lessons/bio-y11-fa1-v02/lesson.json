@@ -1,0 +1,221 @@
+{
+  "id": "bio-y11-fa1-v02",
+  "fps": 30,
+  "subject": "Biology",
+  "yearLevel": 11,
+  "lessonIntent": "*What does each eukaryotic organelle do, and how do they work together to make and export a protein?*",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (from v01's last frame)",
+      "voiceover": {
+        "text": "Here's the eukaryotic cell from last time, the one with its DNA inside a nucleus. It's crowded with organelles, and some of them hold enzymes strong enough to digest the cell itself. So why doesn't it? And how does a cell build a protein and send it out? Let's meet the eleven structures you need, grouped by job, and follow one protein out of the cell."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "opens on v01's handoff frame: m5x-cell-protein-synthesis-v1.png alone at the centre at about 60 per cent of frame height, the \"Next\" chip at the lower right, the camera mid-push towards the nucleus. The chip lifts and becomes the heading: \"How do eukaryotic organelles work together?\" On \"its DNA inside a nucleus\" the nucleus outline traces once (v01's cue, recalled). On \"crowded with organelles\" the camera pulls back slightly and the rough ER, Golgi stack and mitochondria pulse in turn, unlabelled. On \"enzymes strong enough to digest the cell itself\" a scribbleEllipse circles two of the small pink spheres and a grey \"?\" tag sits beside them (named in scene 9). On \"build a protein and send it out\" a short coded dashed path draws from the nucleus, past the ER and Golgi stack, to the membrane, then fades. On \"eleven structures\" the coded organelle tracker draws at the right edge, eleven names in three colour bands: \"cell membrane, cytoplasm, cell wall, nucleus\" (boundary and control); \"ribosomes, endoplasmic reticulum, Golgi body\" (production line); \"mitochondria, lysosomes, vacuoles, chloroplasts\" (energy, digestion, storage). At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "1"
+    },
+    {
+      "id": "boundary",
+      "title": "the boundary: membrane, cytoplasm and wall",
+      "voiceover": {
+        "text": "Start at the edge. The cell membrane is a very thin double layer of fatty molecules called phospholipids, with proteins set into it. It's partially permeable, which means it lets some substances through and blocks others, so it controls what enters and leaves. Inside is the cytoplasm, a jelly-like fluid where many reactions happen and the organelles sit. Plant cells add a cell wall outside the membrane. It's made of cellulose, a tough fibre, and it's rigid, so it gives the cell its shape and support. Animal cells don't have one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam pushes to the home cell's edge; a bright DrawPath traces the outer membrane. On \"double layer\" a round inset opens on the edge showing y11-membrane-cutaway-v1.png, cropped to a short stretch of bilayer with one protein; label \"cell membrane: two layers of phospholipid, with proteins\" (grey tag \"detail: video 8\"). On \"lets some substances through and blocks others\" coded small dots arrive at the inset: some pass through, a larger one bounces off; label \"partially permeable\". The inset closes. On \"cytoplasm\" the cell's interior fill tints softly around the organelles; label \"cytoplasm: jelly-like fluid, reactions happen here\". The tracker ticks \"cell membrane\" and \"cytoplasm\". On \"Plant cells\" b6a-plant-cell-v1.png slides in at the left, the home cell moving right; on \"outside the membrane\" a bright trace runs along the plant cell's membrane, then a second trace in a different colour runs along the wall just outside it; label \"cell wall: cellulose, rigid\". On \"shape and support\" coded inward arrows press on the wall and it holds its shape. On \"Animal cells don't have one\" the home cell's edge glows (membrane only) with a grey tag \"no wall\". The tracker ticks \"cell wall\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "2"
+    },
+    {
+      "id": "nucleus",
+      "title": "nucleus",
+      "voiceover": {
+        "text": "The nucleus is usually the largest organelle. It's wrapped in two membranes, called the nuclear envelope, which are dotted with pores. Inside is the cell's DNA. The nucleus controls the cell, because that DNA carries the instructions for every protein the cell makes. Copies of those instructions leave through the pores, heading to where proteins are built."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the plant cell slides out; the home cell returns to the centre and the Cam pushes into its nucleus, then cross-fades to the nucleus from y11-animal-organelles-set-v1.png (cropped by Cam to the cut-away nucleus with its pores and nucleolus). On \"two membranes\" a bright trace runs around the cut edge, showing the double line; label \"nuclear envelope: two membranes\". On \"pores\" a scribbleEllipse circles two pores; label \"nuclear pores\". On \"the cell's DNA\" a few coded threads glow over the chromatin texture (grey tag \"nucleolus\" on the dark sphere, screen only). On \"instructions for every protein\" a grey chip \"DNA: the instructions\". On \"Copies of those instructions leave through the pores\" a short coded amber strand (abstract) copies off a thread and slides out through a pore. The tracker ticks \"nucleus\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "3"
+    },
+    {
+      "id": "ribosomes",
+      "title": "ribosomes",
+      "voiceover": {
+        "text": "They go to the ribosomes. These are tiny, made of two parts, with no membrane around them. Some float free in the cytoplasm, and many sit on a membrane network beside the nucleus. A ribosome reads the copied instructions and joins building blocks called amino acids into a chain, and that chain becomes a protein. So ribosomes are the site of protein synthesis, which just means making proteins."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the camera pulls back to the home cell; the amber strand travels out to the rough ER beside the nucleus. On \"tiny, made of two parts\" an inset opens with m5x-ribosome-v1.png; label \"ribosome: two parts, no membrane\". On \"float free\" a few dots in the home cell's cytoplasm circle; label \"free ribosomes\"; on \"on a membrane network\" the dots studding the rough ER circle; label \"attached to the ER\". On \"reads the copied instructions\" the amber strand feeds between the ribosome inset's two parts; on \"amino acids into a chain\" the coded ProteinChain grows bead by bead from the ribosome (grey tag \"amino acids\"). On \"protein synthesis\" a label writes \"site of protein synthesis: making proteins\". The tracker ticks \"ribosomes\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "4"
+    },
+    {
+      "id": "endoplasmic-reticulum",
+      "title": "endoplasmic reticulum",
+      "voiceover": {
+        "text": "That membrane network is the endoplasmic reticulum, or ER: a maze of flattened sacs and tubes, joined to the nuclear envelope. Where ribosomes stud its surface, it's called rough ER. Proteins made by those ribosomes pass inside the rough ER, where they fold into shape and are carried along. Where there are no ribosomes, it's smooth ER, which makes lipids, the fats and oils a cell needs, and breaks down some toxins."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the inset closes. The camera pushes to the home cell's ER, then cross-fades to the rough ER from y11-animal-organelles-set-v1.png. On \"joined to the nuclear envelope\" a thumbnail of the home cell at the upper left shows the ER's membrane trace running continuously into the nuclear envelope. On \"rough ER\" a callout to the ribosome-studded sacs; label \"rough ER: ribosomes on its surface\". On \"pass inside the rough ER\" the amber ProteinChain threads through the membrane into a sac; on \"fold into shape\" the chain folds into a compact shape; on \"carried along\" it slides along the sac. The camera moves to the tubular smooth ER in the same plate; on \"smooth ER\" a callout, label \"smooth ER: no ribosomes\". On \"makes lipids\" a grey tag \"lipids: fats and oils\"; on \"breaks down some toxins\" a second grey tag \"breaks down some toxins\". The tracker ticks \"endoplasmic reticulum\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "5"
+    },
+    {
+      "id": "golgi-body",
+      "title": "Golgi body",
+      "voiceover": {
+        "text": "Next stop is the Golgi body, a stack of curved, flattened membrane sacs. Proteins reach it from the ER in vesicles, small bubbles of membrane that pinch off and travel through the cytoplasm. The Golgi body modifies the proteins, for example by adding sugar groups, then sorts them and packages them into new vesicles, ready for use in the cell or for export."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the camera pulls back to the home cell and pushes to the olive Golgi stack, then cross-fades to the Golgi body from y11-animal-organelles-set-v1.png with its budding vesicles. On \"a stack of curved, flattened membrane sacs\" the sacs trace one by one; label \"Golgi body: stack of flattened membrane sacs\". On \"vesicles\" a small inset of the home cell shows PathRide: new y11-vesicle-v1.png sprite buds off the ER with the folded amber chain inside and drifts to the Golgi stack; label \"vesicle: small bubble of membrane\". On \"modifies\" two small coded branched tags attach to the chain (grey tag \"sugar groups\"); on \"sorts them and packages them into new vesicles\" a fresh vesicle sprite buds off the far face of the stack, chain inside. On \"for use in the cell or for export\" two short coded arrows split from it: \"use in the cell\" and \"export\". The tracker ticks \"Golgi body\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "6"
+    },
+    {
+      "id": "production-line",
+      "title": "the production line",
+      "voiceover": {
+        "text": "Now follow one protein all the way. Instructions leave the nucleus. A ribosome on the rough ER builds the chain. Inside the ER, it folds. A vesicle carries it to the Golgi body, which modifies and packages it. Then a new vesicle moves to the cell membrane, joins with it, and releases the protein outside the cell. Build, fold, package, ship, and a different organelle owns each step."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the board returns to the full home cell. One continuous run, one step per spoken sentence, a numbered marker writing at each stop: \"1 nucleus: instructions\" (amber strand leaves a pore); \"2 ribosome on rough ER: build\" (chain grows); \"3 rough ER: fold\" (chain folds inside); \"4 vesicle to Golgi body: package\" (PathRide sprite to the stack, sugar tags attach, new vesicle buds); \"5 vesicle to membrane: ship\" (PathRide sprite to the cell edge). On \"joins with it\" the vesicle sprite merges into the membrane trace (its outline becomes part of the membrane line) and on \"releases the protein\" the folded chain slides out of the cell. On \"Build, fold, package, ship\" four handwritten words write under the cell, each linked by a thin leader to its organelle (ribosome, rough ER, Golgi body, vesicle at the membrane). The production-line band on the tracker glows. At most three bright items besides the tracker. Hold one second (a reading hold on the finished route).",
+      "sourceHeading": "7"
+    },
+    {
+      "id": "mitochondria",
+      "title": "mitochondria",
+      "voiceover": {
+        "text": "All that work needs energy, and it comes from the mitochondria. Each one has two membranes. The inner membrane is folded into ridges called cristae, which give it much more surface for the reactions of aerobic respiration. Here, energy stored in glucose is transferred into ATP, a small molecule the cell can spend on jobs like building proteins. Busy cells, like muscle cells, have lots of mitochondria. So a mitochondrion doesn't make energy. It's a money changer, not a mint: it converts, it never prints."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the camera moves to one of the home cell's mitochondria, then cross-fades to b6a-mitochondrion-v1.png (cut-away). On \"two membranes\" a bright trace runs along the outer membrane, then a second along the inner; label \"two membranes\". On \"folded into ridges called cristae\" the cristae pulse; label \"cristae: folds of the inner membrane\". On \"much more surface\" a coded pair draws below the plate: a straight line and a folded line inside two boxes of the same width, the folded line's length readout larger (labels \"flat\" and \"folded: more surface\"). On \"energy stored in glucose is transferred into ATP\" a coded \"glucose\" token splits in the cytoplasm beside the mitochondrion into two small \"breakdown product\" tokens, which enter it, and several small \"ATP\" tokens leave it (an energy flow from glucose, not a whole glucose molecule entering); grey tag \"aerobic respiration (details: video 16)\". On \"building proteins\" one ATP token drifts to a thumbnail of the scene 7 ribosome. On \"muscle cells\" a grey text tag \"muscle cells: many mitochondria\" (no person, no body part). On \"doesn't make energy\" a grey chip \"mitochondria make energy\" writes and takes a scribble cross; on \"money changer\" a handwritten line writes: \"a money changer, not a mint\", with the glucose token swapping for ATP tokens beside it. The tracker ticks \"mitochondria\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "8"
+    },
+    {
+      "id": "lysosomes",
+      "title": "lysosomes",
+      "voiceover": {
+        "text": "Now the question from the start. Lysosomes are small sacs, each wrapped in a single membrane and filled with digestive enzymes. They break down worn-out organelles, waste, and material the cell has taken in. Their membrane keeps those enzymes shut away from the rest of the cell. That's why the cell doesn't digest itself: the dangerous job is done in a sealed compartment."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "the camera returns to the home cell's pink spheres from scene 1; the \"?\" tag becomes the label \"lysosomes\". The view cross-fades to new y11-lysosome-before-v1.png (one lysosome beside a worn-out mitochondrion). On \"a single membrane\" one trace runs around the lysosome; label \"lysosome: one membrane, digestive enzymes inside\". On \"filled with digestive enzymes\" small coded enzyme dots move inside it and stay within the traced boundary. On \"break down worn-out organelles\" the plate cross-fades to new y11-lysosome-after-v1.png (the lysosome fused around the mitochondrion, now breaking down); on \"waste, and material the cell has taken in\" two grey tags \"waste\", \"taken-in material\". On \"shut away\" the membrane trace brightens; on \"sealed compartment\" the scene 1 question \"why doesn't it digest itself?\" returns as a chip and takes a tick. The tracker ticks \"lysosomes\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "9"
+    },
+    {
+      "id": "vacuoles",
+      "title": "vacuoles",
+      "voiceover": {
+        "text": "Vacuoles are fluid-filled sacs, also wrapped in a membrane, that store water, nutrients and wastes. Animal cells have small ones, if any. A plant cell usually has one large central vacuole. When it's full of water, it presses outwards against the cell wall, and that pressure, called turgor, helps the plant stay firm and upright."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "b6a-plant-cell-v1.png returns to the centre, the home cell small at the right. On \"fluid-filled sacs, also wrapped in a membrane\" a trace runs around the plant cell's large vacuole; label \"vacuole: membrane-bound sac of fluid\". On \"store water, nutrients and wastes\" three grey tags write, one per word. On \"Animal cells have small ones\" a small circle marks one tiny vesicle in the home cell; grey tag \"animal cells: small, if any\". On \"one large central vacuole\" the plant vacuole fills with soft coded blue; on \"presses outwards against the cell wall\" coded short outward arrows push from the vacuole to the wall; label \"turgor: pressure that keeps the cell firm\" (grey tag \"water movement: video 11\"). The tracker ticks \"vacuoles\". At most three bright items besides the tracker. Hold half a second.",
+      "sourceHeading": "10"
+    },
+    {
+      "id": "chloroplasts",
+      "title": "chloroplasts",
+      "voiceover": {
+        "text": "Finally, chloroplasts, found in plant cells and algae, but not in animal cells. Each has a double-membrane envelope, and inside are stacks of flattened membrane discs holding chlorophyll, the green pigment that absorbs light. Chloroplasts are the site of photosynthesis, where light energy is captured and used to build glucose. That's all eleven, and most are wrapped in membrane, so each job runs in its own space."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the camera pushes to a chloroplast in the plant cell, then cross-fades to b6a-chloroplast-v1.png (cut-away). On \"double-membrane envelope\" a double trace runs around its edge; label \"envelope: outer and inner membrane\". On \"stacks of flattened membrane discs\" the stacks pulse; label \"membrane discs with chlorophyll\" (grey tag \"grana, made of thylakoids\", screen only). On \"absorbs light\" coded light rays enter from the upper left and the stacks brighten; on \"build glucose\" a coded \"glucose\" token forms beside the chloroplast (grey tag \"photosynthesis (details: video 17)\"). The tracker ticks \"chloroplasts\". On \"That's all eleven\" the camera pulls back to the two home cells side by side and all eleven tracker names brighten at once; on \"most are wrapped in membrane\" the membrane-bound ones (nucleus, ER, Golgi body, mitochondria, lysosomes, vacuoles, chloroplasts) glow on the tracker and their outlines trace on the two cells, while ribosomes, cytoplasm and the cell wall stay unlit. At most three bright items besides the tracker. Hold one second.",
+      "sourceHeading": "11"
+    },
+    {
+      "id": "attempt",
+      "title": "attempt one (an enzyme-exporting cell)",
+      "voiceover": {
+        "text": "Two exam questions. First. Cells in the pancreas make large amounts of a digestive enzyme, which is a protein, and release it from the cell. Predict three organelles that would be unusually well developed in these cells, and justify each choice by its function. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears; the tracker leaves. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cells in the pancreas make and secrete large amounts of a digestive enzyme. The enzyme is a protein.\" Demand: \"Predict THREE organelles that would be unusually well developed in these cells. Justify each choice by referring to the organelle's function. (3 marks)\" Lined answer space in three rows. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "12a"
+    },
+    {
+      "id": "feedback-one",
+      "title": "feedback, item one",
+      "voiceover": {
+        "text": "Ribosomes, because they build the enzyme, and it's a protein. Rough ER, because it folds the new enzyme and carries it on. And Golgi bodies, because they package it into vesicles for release. Mitochondria also earn the mark, because the whole route needs ATP. The classic mistake is choosing lysosomes because it's a digestive enzyme. Lysosomes keep their enzymes inside the cell."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. On \"Ribosomes\" the given \"The enzyme is a protein\" takes an amber underline and row 1 writes \"ribosomes: build the protein (enzyme)\". On \"Rough ER\" row 2 writes \"rough ER: folds and transports it\". On \"Golgi bodies\" the given \"secrete\" takes an amber underline and row 3 writes \"Golgi bodies: package into vesicles for secretion\". A small thumbnail of the scene 7 route appears beside the card and lights each step as its row writes. On \"Mitochondria also earn the mark\" a grey line writes under the rows \"(also accepted: mitochondria, ATP for the route)\". On \"classic mistake\" the given \"digestive enzyme\" takes a thin grey underline and a chip \"lysosomes, because it's a digestive enzyme\" writes and takes a scribble cross, with small text \"lysosomes keep their enzymes inside\". Settle one second.",
+      "sourceHeading": "12b"
+    },
+    {
+      "id": "attempt-two",
+      "title": "attempt two (a blocked step)",
+      "voiceover": {
+        "text": "Second. A drug stops vesicles from leaving the Golgi body. A cell treated with the drug normally makes a protein and exports it. Predict where the protein will build up in the cell, and explain what happens to its export. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cell normally makes a protein and exports it. The cell is treated with a drug that stops vesicles leaving the Golgi body.\" Beside it, a small unlabelled outline sketch of the home cell (thumbnail of the plate, no labels) as a drawing space. Demand: \"(a) Predict where in the cell the protein will build up. (1 mark) (b) Explain the effect of the drug on the export of the protein. (2 marks)\" A small grey tag \"hypothetical drug\". The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "12c"
+    },
+    {
+      "id": "feedback-two",
+      "title": "feedback, item two",
+      "voiceover": {
+        "text": "It builds up in the Golgi body. The ribosomes still make the protein, the rough ER still folds it, and vesicles still carry it to the Golgi. But no vesicles leave, so nothing reaches the cell membrane, and export stops. The classic mistake is saying the ribosomes stop making the protein. The drug blocks a late step, not the first one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. On \"builds up in the Golgi body\" the given \"stops vesicles leaving the Golgi body\" takes an amber underline, an answer line writes \"(a) in the Golgi body\", and on the thumbnail the Golgi stack fills with several amber chains. On \"still make\", \"still folds\" and \"still carry\" the route steps 1 to 4 light in turn on the thumbnail with ticks. On \"no vesicles leave\" step 5 takes a coded block bar; a line writes \"(b) no vesicles to the membrane → no export\". On \"classic mistake\" a chip \"the ribosomes stop making the protein\" writes and takes a scribble cross. Settle one second.",
+      "sourceHeading": "12d"
+    },
+    {
+      "id": "decision-rule",
+      "title": "decision rule and handoff",
+      "voiceover": {
+        "text": "So for any organelle question, give one detail of its structure, then the job that structure makes possible. Next: a plant cell and an animal cell share most of this kit, so why does the plant cell have extras?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "a two-part chip writes: \"structure detail → the job it allows\", with one example under it (\"cristae → more surface for respiration\"). The two home cells return side by side; on \"share most of this kit\" the shared organelles glow on both; on \"extras\" the wall, large vacuole and chloroplasts of the plant cell glow. A \"Next\" chip slides in at the lower right: \"Next: Why do plant and animal cells differ?\" Hold half a second before the notes.",
+      "sourceHeading": "13"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 57,
+      "holdKind": "notes",
+      "sourceVisual": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "sourceHeading": "14"
+    }
+  ]
+}

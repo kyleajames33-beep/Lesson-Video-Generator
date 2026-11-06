@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m5g02/lesson.json",
+    "lessonSha256": "662f2f3ac67ef2456c26b7e1414b123e51179f59141d7963a8d6574015532d59"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "dynamic equilibrium means equal non-zero rates in a closed system (C1); the faster rate falls and the slower rate rises until they meet (C2); adding or removing a substance changes one rate first (C3); only collisions with at least the activation energy react, and a catalyst lowers it for both directions (C3, C4b); squeeze favours fewer gas particles and argon at fixed volume changes nothing (C4a); K expression leaves out solids (C5); Q compared with K gives the direction, \"Q chases K\" (C8). Nothing is re-derived; each is recalled in one clause.",
+    "startsWith": "Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. By the end you'll know what to write instead. We'll work through three types of equilibrium question in full: explain with collision theory, graphs after a change, and the no-shift traps. Then you try two. Temperature, industry and open systems come in part two.",
+    "stopsAfter": "recognising three question types from their wording; writing the five-step collision-theory answer and finishing on the named species; describing a concentration-time and an amount-time graph after the same disturbance, reading the axis label first; deciding that argon at fixed volume, a catalyst or an added pure solid does not shift the mixture and saying why with Q. No industrial or open-system questions (proposed part 3), no K calculations, no ICE, no temperature and K, no Ksp or Ka.",
+    "nextLesson": "part 2 of this practice series (chem-m5-g03: calculation types: writing K, ICE tables, Q against K, finding the amount added; confirm it also covers the quadratic behind the settled values in q2, and add the equal-gas-count Q case if root accepts the proposal above). Then chem-m5-c09 (temperature and K), and the proposed part 3 after it. If the playlist runs part 2 first, change the chip in the decision board."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-g02.md"
+  ],
+  "teaching": {
+    "task": "An equilibrium question gives you a change and asks you to explain or predict. How do you spot the type, what do you write, and which slips ruin the answer?",
+    "causalExplanation": "The collision-theory answer is built from the C3 mechanism (one rate changes first, the other is unchanged at that instant, the faster rate falls and the slower rises) in q1 and again in try1. The graph lines come from the squeeze (all concentrations double because concentration is amount over volume) separate from the reaction (curves), and the amount graph has no jump because nothing is added or removed. The no-shift test is \"does Q still equal K?\", linked to C8, with the argon collision question answered (the reacting gases are no more crowded).",
+    "conversationalApproach": "Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. Type one, the one that catches the most people: explain with collision theory. Build the answer in the order things happen. Three classic slips. Type two: graphs after a disturbance. Start with the squeeze. Now the response. Now the amount in moles. So read the axis label first. Type three: the no-shift traps. The method is one question: does Q still equal K? Argon bumps into things, but the forward reaction needs two N O two molecules to meet and the reverse needs N two O four to split, and the reacting gases are no more crowded. Two slips: pressure rises, so it shifts to fewer particles, and pressure rises, so the temperature rises. Your turn. Then, in your own time, write the full five lines and check them against this. One more, a graph. The volume changed, and it was decreased. Find the words that give the type away.",
+    "openingDecision": "Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right. By the end you'll know what to write instead. We'll work through three types of equilibrium question in full: explain with collision theory, graphs after a change, and the no-shift traps. Then you try two. Temperature, industry and open systems come in part two.",
+    "understandingCheck": "two unseen 10 s attempts with every condition visible, both bounded decisions; the type board dims during both. The key notes hold is a separate quiet hold of about 60 s.",
+    "curriculumScope": "Syllabus dotpoints (NSW Chemistry Stage 6, 2017, p50; C5-IQ1-04, C5-IQ2-01 and C5-IQ2-02 are this project's local catalogue IDs, not codes printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json (Revision 4 quoted none; added in Revision 5):\n\n\"investigate the relationship between collision theory and reaction rate in order to analyse chemical equilibrium reactions (ACSCH070, ACSCH094)\"\n\n\"explain the overall observations about equilibrium in terms of the collision theory (ACSCH094)\"\n\n\"investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier’s principle can be used to predict such effects, for example:\" (listed examples: heating cobalt(II) chloride hydrate; interaction between nitrogen dioxide and dinitrogen tetroxide; iron(III) thiocyanate and varying concentration of ions (ACSCH095); G02 uses the nitrogen dioxide example)\n\nPractice and transfer only: first coverage stays with chem-m5-c01 to chem-m5-c08; G02 adds practice rows. (Revision 5 drops the open and closed systems dotpoint, C5-IQ1-02, with scene 6d; it returns with that scene.)"
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout. Top-left the question card (the full worded question, as an exam prints it, with the tag \"HSC-style question, written for HSCScience\"); during each walkthrough the card shrinks to a strip and each given is underlined in amber in the question text at its cue (no givens card). The right two thirds hold the diagram or graph; the lower left holds the answer as it builds. A thin question-type board runs along the top with the current type lit; it ticks a type off when its segment ends, and it dims to an outline during both countdowns, because it names the method. Colour key: forward blue, reverse amber, equal teal; NO2 brown, N2O4 pale grey; argon pale blue dots; amber only for underlined givens; mistakes in a muted red cross-out with the correction in green ink beside it. Clutter rule: besides the question strip and the type board, at most about three bright text items in the working area at once; finished answer lines dim while the next writes; each tag fades when the next cue lands.",
+    "transitionPlan": "a ruled exam page; the line \"Le Chatelier's principle says it shifts right. type card 1 lights. the vessel stays on the right with the C3 rate bars beside it (forward blue, reverse amber, equal teal bracket at the start). three chips write on beside the finished answer, each crossed out in muted red as it is said, with a green correction next to it: \"LCP says it shifts right\" crossed, green \"predict the direction with it, then: fewer collisions, so the reverse rate falls\" and a small condition tag \"when the question asks for collisions or why\"; \"the forward reaction increases\" crossed, green \"the forward rate . earlier working clears. on \"Start with the squeeze\" amber underlines land on \"0. on \"Two gas particles become one\" the syringe particle view shows two NO2 dots joining into one N2O4 pair (looped once). the second axes fill beside the first (the concentration graph shrinks to half size, labelled \"concentration\"; the amount graph is labelled \"amount (mol)\", same time axis, vertical lines at t1 aligned). on \"axis label\" both axis titles take an amber ring (tag \"read this first\"). earlier working clears. the vessel gains argon dots on \"Argon\" (pale blue, ten dots drop in), the gauge rises from 1 to 2. two slips write on and are crossed out, with green corrections: \"shifts to fewer particles\" with \"pressure alone is not a disturbance here\"; \"pressure up so temperature up\" with \"no net reaction, no net heat change\". fresh board. the card shrinks to a strip; amber underlines land on \"rigid\", \"Extra nitrogen\", \"temperature does not change\" and \"concentration of hydrogen\" in the opening sentences. fresh board. amber underline on \"temperature is kept constant throughout\". the type board returns full size as a two-column table, \"You see\" on the left and \"You do\" on the right, one row per cue: \"using collision theory, explain\" | \"the five-line chain (change, collisions, rate, other rate, net, named species, level)\" (with the five-line chain as a small icon strip); \"sketch or describe the graph\" | \"axis label first: one line jumps (added or removed); every gas jumps (volume); amounts never jump on a squeeze\"; \"argon at fixed volume, catalyst, added solid\" | \"does Q still equal K? If yes, no shift\". Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "a ruled exam page; the line \"Le Chatelier's principle says it shifts right.\" writes on and a muted red cross-out strikes it, with the tag \"sounds right, but not enough on its own\". The heading \"Every type of HSC equilibrium question, part 1\" writes on, with a small footer tag \"question types are our grouping, not an official NESA list; all questions are written for HSCScience\". On each named type a numbered card slides into the type board row (a small icon each: a collision pair, a graph with a jump, a tick-in-a-circle for no shift). On \"try two\" two small pen icons appear on the board. On \"part two\" a greyed fourth card appears (\"temperature, industry, open systems\") with the tag \"part 2\". The board shrinks to the thin strip along the top. Hold about 1 second.",
+      "teachingReason": "Here's an answer that sounds right but on its own explains nothing: Le Chatelier's principle says it shifts right.",
+      "narrationCue": "try two / part two",
+      "motionPurpose": "a ruled exam page; the line \"Le Chatelier's principle says it shifts right.\" writes on and a muted red cross-out strikes it, with the tag \"sounds right, but not enough on its own\". The heading \"Every type of HSC equilibrium question, part 1\" writes on, with a small footer tag \"question types are our grouping, not an official NESA list; all questions are written for HSCScience\". On each named type a numbered card slides into the type board row (a small icon each: a collision pair, a graph with a jump, a tick-in-a-circle for no shift). On \"try two\" two small pen icons appear on the board. On \"part two\" a greyed fourth card appears (\"temperature, industry, open systems\") with the tag \"part 2\". The board shrinks to the thin strip along the top. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a ruled exam page; the line \"Le Chatelier's principle says it shifts right.\" writes on and a muted red cross-out strikes it, with the tag \"sounds right, but not enough on its own\". The heading \"Every type of HSC equilibrium question, part 1\" writes on, with a small footer tag \"question types are our grouping, not an official NESA list; all questions are written for HSCScience\". On each named type a numbered card slides into the type board row (a small icon each: a collision pair, a graph with a jump, a tick-in-a-circle for no shift). On \"try two\" two small pen icons appear on the board. On \"part two\" a greyed fourth card appears (\"temperature, industry, open systems\") with the tag \"part 2\". The board shrinks to the thin strip along the top. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "type card 1 lights. The question card writes on in full: \"A rigid, sealed container holds an equilibrium mixture: H2(g) + CO2(g) ⇌ H2O(g) + CO(g). A drying agent is added that removes some of the water vapour. The temperature does not change. Using collision theory, explain the effect on the concentration of carbon monoxide.\" A rigid coded vessel with a hatched wall on the right (H2 and CO2 dots left side, H2O and CO dots right, colourless). On \"Using collision theory, explain\" a pen box lands round \"explain\" and an underline under \"Using collision theory\", side tag \"command: explain; collisions and rates\". On \"rigid\" an amber underline in the text and a padlock on the vessel lid, tag \"volume fixed\". On \"water removed\" the amber underline moves to \"removes some of the water vapour\": a small sachet icon drops in and three H2O dots lift out. On \"carbon monoxide\" a final underline on \"concentration of carbon monoxide\" and a flag labelled \"finish here\". The card shrinks to a strip.",
+      "teachingReason": "Type one, the one that catches the most people: explain with collision theory.",
+      "narrationCue": "Using collision theory, explain / rigid / water removed / carbon monoxide / concentration of carbon monoxide",
+      "motionPurpose": "type card 1 lights. The question card writes on in full: \"A rigid, sealed container holds an equilibrium mixture: H2(g) + CO2(g) ⇌ H2O(g) + CO(g). A drying agent is added that removes some of the water vapour. The temperature does not change. Using collision theory, explain the effect on the concentration of carbon monoxide.\" A rigid coded vessel with a hatched wall on the right (H2 and CO2 dots left side, H2O and CO dots right, colourless). On \"Using collision theory, explain\" a pen box lands round \"explain\" and an underline under \"Using collision theory\", side tag \"command: explain; collisions and rates\". On \"rigid\" an amber underline in the text and a padlock on the vessel lid, tag \"volume fixed\". On \"water removed\" the amber underline moves to \"removes some of the water vapour\": a small sachet icon drops in and three H2O dots lift out. On \"carbon monoxide\" a final underline on \"concentration of carbon monoxide\" and a flag labelled \"finish here\". The card shrinks to a strip.",
+      "motionRole": "explain",
+      "onScreenChange": "type card 1 lights. The question card writes on in full: \"A rigid, sealed container holds an equilibrium mixture: H2(g) + CO2(g) ⇌ H2O(g) + CO(g). A drying agent is added that removes some of the water vapour. The temperature does not change. Using collision theory, explain the effect on the concentration of carbon monoxide.\" A rigid coded vessel with a hatched wall on the right (H2 and CO2 dots left side, H2O and CO dots right, colourless). On \"Using collision theory, explain\" a pen box lands round \"explain\" and an underline under \"Using collision theory\", side tag \"command: explain; collisions and rates\". On \"rigid\" an amber underline in the text and a padlock on the vessel lid, tag \"volume fixed\". On \"water removed\" the amber underline moves to \"removes some of the water vapour\": a small sachet icon drops in and three H2O dots lift out. On \"carbon monoxide\" a final underline on \"concentration of carbon monoxide\" and a flag labelled \"finish here\". The card shrinks to a strip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-question (type 1: explain with collision theory): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-chain",
+      "visualDecision": "new",
+      "visualReference": "the vessel stays on the right with the C3 rate bars beside it (forward blue, reverse amber, equal teal bracket at the start). The answer builds on the lower left as five numbered lines in handwriting, one per cue, the keyword of each ringed as it lands and the previous line dimming: (1) \"Water vapour is removed, so [H2O] falls.\" (2) \"Fewer H2O and CO molecules collide per second, so the reverse rate falls.\" (3) \"The forward rate is unchanged at that instant, so forward rate > reverse rate.\" (4) \"Net forward reaction makes more CO, so [CO] is higher than at the first equilibrium.\" (5) \"[H2] and [CO2] fall, [CO] rises, so the forward rate falls and the reverse rate rises until they are equal: new equilibrium.\" On line 1 the water dots lift out and the H2O reading drops. On line 2 the amber bar drops with a ring on \"reverse\". On line 3 the blue bar stays and a \">\" sign lights between the bars. On line 4 the CO dots rise by two and a rising arrow lands on \"CO\". On line 5 the bars move together to the teal \"equal\" bracket. A tag, \"rate: how fast; reaction: the whole change\", appears at line 2 and stays. The chain aid does not appear yet. Hold about 2 seconds.",
+      "teachingReason": "Build the answer in the order things happen.",
+      "narrationCue": "reverse / CO",
+      "motionPurpose": "the vessel stays on the right with the C3 rate bars beside it (forward blue, reverse amber, equal teal bracket at the start). The answer builds on the lower left as five numbered lines in handwriting, one per cue, the keyword of each ringed as it lands and the previous line dimming: (1) \"Water vapour is removed, so [H2O] falls.\" (2) \"Fewer H2O and CO molecules collide per second, so the reverse rate falls.\" (3) \"The forward rate is unchanged at that instant, so forward rate > reverse rate.\" (4) \"Net forward reaction makes more CO, so [CO] is higher than at the first equilibrium.\" (5) \"[H2] and [CO2] fall, [CO] rises, so the forward rate falls and the reverse rate rises until they are equal: new equilibrium.\" On line 1 the water dots lift out and the H2O reading drops. On line 2 the amber bar drops with a ring on \"reverse\". On line 3 the blue bar stays and a \">\" sign lights between the bars. On line 4 the CO dots rise by two and a rising arrow lands on \"CO\". On line 5 the bars move together to the teal \"equal\" bracket. A tag, \"rate: how fast; reaction: the whole change\", appears at line 2 and stays. The chain aid does not appear yet. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the vessel stays on the right with the C3 rate bars beside it (forward blue, reverse amber, equal teal bracket at the start). The answer builds on the lower left as five numbered lines in handwriting, one per cue, the keyword of each ringed as it lands and the previous line dimming: (1) \"Water vapour is removed, so [H2O] falls.\" (2) \"Fewer H2O and CO molecules collide per second, so the reverse rate falls.\" (3) \"The forward rate is unchanged at that instant, so forward rate > reverse rate.\" (4) \"Net forward reaction makes more CO, so [CO] is higher than at the first equilibrium.\" (5) \"[H2] and [CO2] fall, [CO] rises, so the forward rate falls and the reverse rate rises until they are equal: new equilibrium.\" On line 1 the water dots lift out and the H2O reading drops. On line 2 the amber bar drops with a ring on \"reverse\". On line 3 the blue bar stays and a \">\" sign lights between the bars. On line 4 the CO dots rise by two and a rising arrow lands on \"CO\". On line 5 the bars move together to the teal \"equal\" bracket. A tag, \"rate: how fast; reaction: the whole change\", appears at line 2 and stays. The chain aid does not appear yet. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-chain (the five-line chain, one line at a time): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "three chips write on beside the finished answer, each crossed out in muted red as it is said, with a green correction next to it: \"LCP says it shifts right\" crossed, green \"predict the direction with it, then: fewer collisions, so the reverse rate falls\" and a small condition tag \"when the question asks for collisions or why\"; \"the forward reaction increases\" crossed, green \"the forward rate ...\"; \"so it shifts right.\" crossed, green \"... so [CO] increases\". On the last, the \"finish here\" flag flies to the end of line 4. The type board ticks card 1.",
+      "teachingReason": "Three classic slips.",
+      "narrationCue": "Three classic slips",
+      "motionPurpose": "three chips write on beside the finished answer, each crossed out in muted red as it is said, with a green correction next to it: \"LCP says it shifts right\" crossed, green \"predict the direction with it, then: fewer collisions, so the reverse rate falls\" and a small condition tag \"when the question asks for collisions or why\"; \"the forward reaction increases\" crossed, green \"the forward rate ...\"; \"so it shifts right.\" crossed, green \"... so [CO] increases\". On the last, the \"finish here\" flag flies to the end of line 4. The type board ticks card 1.",
+      "motionRole": "explain",
+      "onScreenChange": "three chips write on beside the finished answer, each crossed out in muted red as it is said, with a green correction next to it: \"LCP says it shifts right\" crossed, green \"predict the direction with it, then: fewer collisions, so the reverse rate falls\" and a small condition tag \"when the question asks for collisions or why\"; \"the forward reaction increases\" crossed, green \"the forward rate ...\"; \"so it shifts right.\" crossed, green \"... so [CO] increases\". On the last, the \"finish here\" flag flies to the end of line 4. The type board ticks card 1.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q1-mistake (three slips crossed out): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "earlier working clears. Type card 2 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). An equilibrium mixture of 0.200 mol of NO2 and 0.300 mol of N2O4 is held in a 1.00 L cylinder. At time t1 the volume is halved, at constant temperature. Describe the graph of concentration against time, then the graph of amount (in moles) against time, from before t1 until a new equilibrium is reached.\" A small tag on the card: \"made-up numbers\". The C4a syringe on the right with brown NO2 and pale N2O4 dots and a plunger marked \"1.00 L\". On \"Describe\" the pen box lands on the command. On \"concentration against time\" and \"amount in moles against time\" two underlines in different pen colours land, and two empty axes appear in the lower right, one titled \"concentration (mol/L)\" and the other \"amount (mol)\", both with a dashed vertical line at t1. The plunger stays at 1.00 L (it halves in 3b). The card shrinks to a strip.",
+      "teachingReason": "Type two: graphs after a disturbance.",
+      "narrationCue": "Describe / concentration against time",
+      "motionPurpose": "earlier working clears. Type card 2 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). An equilibrium mixture of 0.200 mol of NO2 and 0.300 mol of N2O4 is held in a 1.00 L cylinder. At time t1 the volume is halved, at constant temperature. Describe the graph of concentration against time, then the graph of amount (in moles) against time, from before t1 until a new equilibrium is reached.\" A small tag on the card: \"made-up numbers\". The C4a syringe on the right with brown NO2 and pale N2O4 dots and a plunger marked \"1.00 L\". On \"Describe\" the pen box lands on the command. On \"concentration against time\" and \"amount in moles against time\" two underlines in different pen colours land, and two empty axes appear in the lower right, one titled \"concentration (mol/L)\" and the other \"amount (mol)\", both with a dashed vertical line at t1. The plunger stays at 1.00 L (it halves in 3b). The card shrinks to a strip.",
+      "motionRole": "explain",
+      "onScreenChange": "earlier working clears. Type card 2 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). An equilibrium mixture of 0.200 mol of NO2 and 0.300 mol of N2O4 is held in a 1.00 L cylinder. At time t1 the volume is halved, at constant temperature. Describe the graph of concentration against time, then the graph of amount (in moles) against time, from before t1 until a new equilibrium is reached.\" A small tag on the card: \"made-up numbers\". The C4a syringe on the right with brown NO2 and pale N2O4 dots and a plunger marked \"1.00 L\". On \"Describe\" the pen box lands on the command. On \"concentration against time\" and \"amount in moles against time\" two underlines in different pen colours land, and two empty axes appear in the lower right, one titled \"concentration (mol/L)\" and the other \"amount (mol)\", both with a dashed vertical line at t1. The plunger stays at 1.00 L (it halves in 3b). The card shrinks to a strip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-question (type 2: graphs after a disturbance): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-squeeze",
+      "visualDecision": "new",
+      "visualReference": "on \"Start with the squeeze\" amber underlines land on \"0.200 mol\", \"0.300 mol\", \"1.00 L\" and \"volume is halved\" in the question strip. The concentration axes fill. Before t1 two ruled flat lines at 0.200 (brown) and 0.300 (grey). A formula tag writes on: \"concentration = amount / volume\". On \"double both concentrations at once\" the two lines jump vertically at t1 to 0.400 and 0.600 (two upward arrows, tag \"the squeeze, not the reaction\"). The syringe halves in step. Nothing else is drawn yet.",
+      "teachingReason": "Start with the squeeze.",
+      "narrationCue": "Start with the squeeze / double both concentrations at once",
+      "motionPurpose": "on \"Start with the squeeze\" amber underlines land on \"0.200 mol\", \"0.300 mol\", \"1.00 L\" and \"volume is halved\" in the question strip. The concentration axes fill. Before t1 two ruled flat lines at 0.200 (brown) and 0.300 (grey). A formula tag writes on: \"concentration = amount / volume\". On \"double both concentrations at once\" the two lines jump vertically at t1 to 0.400 and 0.600 (two upward arrows, tag \"the squeeze, not the reaction\"). The syringe halves in step. Nothing else is drawn yet.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Start with the squeeze\" amber underlines land on \"0.200 mol\", \"0.300 mol\", \"1.00 L\" and \"volume is halved\" in the question strip. The concentration axes fill. Before t1 two ruled flat lines at 0.200 (brown) and 0.300 (grey). A formula tag writes on: \"concentration = amount / volume\". On \"double both concentrations at once\" the two lines jump vertically at t1 to 0.400 and 0.600 (two upward arrows, tag \"the squeeze, not the reaction\"). The syringe halves in step. Nothing else is drawn yet.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-squeeze (the concentration jump): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-response",
+      "visualDecision": "new",
+      "visualReference": "on \"Two gas particles become one\" the syringe particle view shows two NO2 dots joining into one N2O4 pair (looped once). On \"curves down\" the brown curve falls from 0.400 with a steepness arrow at the start; on \"curves up\" the grey curve rises from 0.600. On \"twice as much\" two vertical brackets mark the fall (about 0.105) and the rise (about 0.053) with \"2 : 1\". On \"level off together\" both curves flatten onto ruled lines at 0.295 and 0.653 (end values as small labels \"about 0.30\" and \"about 0.65\", with the tag \"exact levels come from a calculation (part 2)\"). On the ordering sentence, a ring on the new brown level sits above its original dashed 0.200 and below its jump, and a ring on the grey level sits above the jump. The model description writes in the lower left: \"Concentrations: both double at t1, then [NO2] falls and [N2O4] rises in a 2 : 1 ratio, levelling off on new flat lines.\"",
+      "teachingReason": "Now the response.",
+      "narrationCue": "Two gas particles become one / curves down / curves up / twice as much / level off together",
+      "motionPurpose": "on \"Two gas particles become one\" the syringe particle view shows two NO2 dots joining into one N2O4 pair (looped once). On \"curves down\" the brown curve falls from 0.400 with a steepness arrow at the start; on \"curves up\" the grey curve rises from 0.600. On \"twice as much\" two vertical brackets mark the fall (about 0.105) and the rise (about 0.053) with \"2 : 1\". On \"level off together\" both curves flatten onto ruled lines at 0.295 and 0.653 (end values as small labels \"about 0.30\" and \"about 0.65\", with the tag \"exact levels come from a calculation (part 2)\"). On the ordering sentence, a ring on the new brown level sits above its original dashed 0.200 and below its jump, and a ring on the grey level sits above the jump. The model description writes in the lower left: \"Concentrations: both double at t1, then [NO2] falls and [N2O4] rises in a 2 : 1 ratio, levelling off on new flat lines.\"",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Two gas particles become one\" the syringe particle view shows two NO2 dots joining into one N2O4 pair (looped once). On \"curves down\" the brown curve falls from 0.400 with a steepness arrow at the start; on \"curves up\" the grey curve rises from 0.600. On \"twice as much\" two vertical brackets mark the fall (about 0.105) and the rise (about 0.053) with \"2 : 1\". On \"level off together\" both curves flatten onto ruled lines at 0.295 and 0.653 (end values as small labels \"about 0.30\" and \"about 0.65\", with the tag \"exact levels come from a calculation (part 2)\"). On the ordering sentence, a ring on the new brown level sits above its original dashed 0.200 and below its jump, and a ring on the grey level sits above the jump. The model description writes in the lower left: \"Concentrations: both double at t1, then [NO2] falls and [N2O4] rises in a 2 : 1 ratio, levelling off on new flat lines.\"",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-response (the concentration curves): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-amount",
+      "visualDecision": "new",
+      "visualReference": "the second axes fill beside the first (the concentration graph shrinks to half size, labelled \"concentration\"; the amount graph is labelled \"amount (mol)\", same time axis, vertical lines at t1 aligned). The amount lines start flat at 0.200 and 0.300; at t1 they stay flat then curve (brown down, grey up; small end labels about 0.147 and 0.326 with the same \"calculation\" tag). A pen box on t1 reads \"no jump: nothing was added or removed\". The second description line writes in the lower left: \"Amounts: no jump at t1; n(NO2) falls and n(N2O4) rises in a 2 : 1 ratio.\" A caption: \"the vertical jump on the left is the moment of the change, not the reaction\".",
+      "teachingReason": "Now the amount in moles.",
+      "narrationCue": "Now the amount in moles",
+      "motionPurpose": "the second axes fill beside the first (the concentration graph shrinks to half size, labelled \"concentration\"; the amount graph is labelled \"amount (mol)\", same time axis, vertical lines at t1 aligned). The amount lines start flat at 0.200 and 0.300; at t1 they stay flat then curve (brown down, grey up; small end labels about 0.147 and 0.326 with the same \"calculation\" tag). A pen box on t1 reads \"no jump: nothing was added or removed\". The second description line writes in the lower left: \"Amounts: no jump at t1; n(NO2) falls and n(N2O4) rises in a 2 : 1 ratio.\" A caption: \"the vertical jump on the left is the moment of the change, not the reaction\".",
+      "motionRole": "explain",
+      "onScreenChange": "the second axes fill beside the first (the concentration graph shrinks to half size, labelled \"concentration\"; the amount graph is labelled \"amount (mol)\", same time axis, vertical lines at t1 aligned). The amount lines start flat at 0.200 and 0.300; at t1 they stay flat then curve (brown down, grey up; small end labels about 0.147 and 0.326 with the same \"calculation\" tag). A pen box on t1 reads \"no jump: nothing was added or removed\". The second description line writes in the lower left: \"Amounts: no jump at t1; n(NO2) falls and n(N2O4) rises in a 2 : 1 ratio.\" A caption: \"the vertical jump on the left is the moment of the change, not the reaction\".",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-amount (the amount graph): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "on \"axis label\" both axis titles take an amber ring (tag \"read this first\"). A fading ghost jump (dotted) on the amount axes is crossed in muted red with the caption \"jump on a mol graph: axis read as concentration\". A second chip crosses a skewed curve pair on the amount graph with \"keep the 2 : 1 ratio: NO2 changes by 0.053 mol, N2O4 by 0.026 mol\". A third chip, on the small concentration graph, crosses a flat ending at the old value or at the jump, with \"NO2 settles above its old level and below the jump; N2O4 settles above the jump\". The type board ticks card 2. Hold about 2 seconds.",
+      "teachingReason": "So read the axis label first.",
+      "narrationCue": "axis label",
+      "motionPurpose": "on \"axis label\" both axis titles take an amber ring (tag \"read this first\"). A fading ghost jump (dotted) on the amount axes is crossed in muted red with the caption \"jump on a mol graph: axis read as concentration\". A second chip crosses a skewed curve pair on the amount graph with \"keep the 2 : 1 ratio: NO2 changes by 0.053 mol, N2O4 by 0.026 mol\". A third chip, on the small concentration graph, crosses a flat ending at the old value or at the jump, with \"NO2 settles above its old level and below the jump; N2O4 settles above the jump\". The type board ticks card 2. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"axis label\" both axis titles take an amber ring (tag \"read this first\"). A fading ghost jump (dotted) on the amount axes is crossed in muted red with the caption \"jump on a mol graph: axis read as concentration\". A second chip crosses a skewed curve pair on the amount graph with \"keep the 2 : 1 ratio: NO2 changes by 0.053 mol, N2O4 by 0.026 mol\". A third chip, on the small concentration graph, crosses a flat ending at the old value or at the jump, with \"NO2 settles above its old level and below the jump; N2O4 settles above the jump\". The type board ticks card 2. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q2-mistake (three slips, each on its graph): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "earlier working clears. Type card 3 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). Argon gas is added to a rigid, insulated container holding an equilibrium mixture of brown NO2 and colourless N2O4. The argon is at the same temperature as the mixture. Predict and explain the effect on the colour of the mixture, and state whether the temperature changes.\" The rigid vessel on the right (padlock lid, insulated jacket, brown NO2 dots and pale N2O4 pairs, thin corner pressure gauge from C4a, a thermometer). On \"no-shift traps\" amber underlines on \"rigid\", \"insulated\" and \"same temperature as the mixture\". On \"colour\" a brown swatch strip appears and \"colour\" underlines; on \"temperature\" the thermometer is ringed and \"temperature changes\" underlines. On \"inert\" \"Argon\" underlines. The card shrinks to a strip.",
+      "teachingReason": "Type three: the no-shift traps.",
+      "narrationCue": "no-shift traps / rigid / colour / temperature / inert",
+      "motionPurpose": "earlier working clears. Type card 3 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). Argon gas is added to a rigid, insulated container holding an equilibrium mixture of brown NO2 and colourless N2O4. The argon is at the same temperature as the mixture. Predict and explain the effect on the colour of the mixture, and state whether the temperature changes.\" The rigid vessel on the right (padlock lid, insulated jacket, brown NO2 dots and pale N2O4 pairs, thin corner pressure gauge from C4a, a thermometer). On \"no-shift traps\" amber underlines on \"rigid\", \"insulated\" and \"same temperature as the mixture\". On \"colour\" a brown swatch strip appears and \"colour\" underlines; on \"temperature\" the thermometer is ringed and \"temperature changes\" underlines. On \"inert\" \"Argon\" underlines. The card shrinks to a strip.",
+      "motionRole": "explain",
+      "onScreenChange": "earlier working clears. Type card 3 lights. The question card writes on in full: \"2NO2(g) ⇌ N2O4(g). Argon gas is added to a rigid, insulated container holding an equilibrium mixture of brown NO2 and colourless N2O4. The argon is at the same temperature as the mixture. Predict and explain the effect on the colour of the mixture, and state whether the temperature changes.\" The rigid vessel on the right (padlock lid, insulated jacket, brown NO2 dots and pale N2O4 pairs, thin corner pressure gauge from C4a, a thermometer). On \"no-shift traps\" amber underlines on \"rigid\", \"insulated\" and \"same temperature as the mixture\". On \"colour\" a brown swatch strip appears and \"colour\" underlines; on \"temperature\" the thermometer is ringed and \"temperature changes\" underlines. On \"inert\" \"Argon\" underlines. The card shrinks to a strip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-question (type 3: the no-shift traps): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-test",
+      "visualDecision": "new",
+      "visualReference": "the vessel gains argon dots on \"Argon\" (pale blue, ten dots drop in), the gauge rises from 1 to 2. On \"bumps into things\" the argon dots bounce off the walls while the reacting dots keep the same spacing (two NO2 dots meet as often as before; N2O4 pairs split as often as before). A big test card writes on the right: \"Does Q still equal K?\" with a pen arrow to the NO2 and N2O4 dials, which stay at 8 and 4 (C4a made-up units), the gauge ringed and the tag \"pressure up, concentrations unchanged\". The rate bars stay level at 32 and 32 with a teal \"equal\" bracket. A K chip sits small at the top: \"Q = K\". The written answer builds at lower left in four short lines: \"Argon is inert and the volume is fixed, so [NO2] and [N2O4] are unchanged.\" \"The collision rates are unchanged, so both rates stay equal.\" \"No net reaction, so the colour is unchanged.\" \"No net reaction, so no heat is released or absorbed: temperature unchanged.\" On \"family\" two small chips lie under the test card: \"catalyst\" and \"added pure solid (not in K)\", each with a small \"Q = K\". Hold about 2 seconds.",
+      "teachingReason": "The method is one question: does Q still equal K? Argon bumps into things, but the forward reaction needs two N O two molecules to meet and the reverse needs N two O four to split, and the reacting gases are no more crowded.",
+      "narrationCue": "Argon / bumps into things / family",
+      "motionPurpose": "the vessel gains argon dots on \"Argon\" (pale blue, ten dots drop in), the gauge rises from 1 to 2. On \"bumps into things\" the argon dots bounce off the walls while the reacting dots keep the same spacing (two NO2 dots meet as often as before; N2O4 pairs split as often as before). A big test card writes on the right: \"Does Q still equal K?\" with a pen arrow to the NO2 and N2O4 dials, which stay at 8 and 4 (C4a made-up units), the gauge ringed and the tag \"pressure up, concentrations unchanged\". The rate bars stay level at 32 and 32 with a teal \"equal\" bracket. A K chip sits small at the top: \"Q = K\". The written answer builds at lower left in four short lines: \"Argon is inert and the volume is fixed, so [NO2] and [N2O4] are unchanged.\" \"The collision rates are unchanged, so both rates stay equal.\" \"No net reaction, so the colour is unchanged.\" \"No net reaction, so no heat is released or absorbed: temperature unchanged.\" On \"family\" two small chips lie under the test card: \"catalyst\" and \"added pure solid (not in K)\", each with a small \"Q = K\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the vessel gains argon dots on \"Argon\" (pale blue, ten dots drop in), the gauge rises from 1 to 2. On \"bumps into things\" the argon dots bounce off the walls while the reacting dots keep the same spacing (two NO2 dots meet as often as before; N2O4 pairs split as often as before). A big test card writes on the right: \"Does Q still equal K?\" with a pen arrow to the NO2 and N2O4 dials, which stay at 8 and 4 (C4a made-up units), the gauge ringed and the tag \"pressure up, concentrations unchanged\". The rate bars stay level at 32 and 32 with a teal \"equal\" bracket. A K chip sits small at the top: \"Q = K\". The written answer builds at lower left in four short lines: \"Argon is inert and the volume is fixed, so [NO2] and [N2O4] are unchanged.\" \"The collision rates are unchanged, so both rates stay equal.\" \"No net reaction, so the colour is unchanged.\" \"No net reaction, so no heat is released or absorbed: temperature unchanged.\" On \"family\" two small chips lie under the test card: \"catalyst\" and \"added pure solid (not in K)\", each with a small \"Q = K\". Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-test (one test, then the written answer): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "two slips write on and are crossed out, with green corrections: \"shifts to fewer particles\" with \"pressure alone is not a disturbance here\"; \"pressure up so temperature up\" with \"no net reaction, no net heat change\". The memory aid writes large at the end: \"Does Q still equal K? If yes, nothing shifts.\" with the condition tag \"closed system, steady temperature; Q for the equation as written; here: fixed volume, insulated, argon at the mixture's temperature\". The type board ticks card 3; all three are ticked.",
+      "teachingReason": "Two slips: pressure rises, so it shifts to fewer particles, and pressure rises, so the temperature rises.",
+      "narrationCue": "Two slips: pressure rises, so it shifts to fewer particles, and pressure rises, so the temperature rises",
+      "motionPurpose": "two slips write on and are crossed out, with green corrections: \"shifts to fewer particles\" with \"pressure alone is not a disturbance here\"; \"pressure up so temperature up\" with \"no net reaction, no net heat change\". The memory aid writes large at the end: \"Does Q still equal K? If yes, nothing shifts.\" with the condition tag \"closed system, steady temperature; Q for the equation as written; here: fixed volume, insulated, argon at the mixture's temperature\". The type board ticks card 3; all three are ticked.",
+      "motionRole": "explain",
+      "onScreenChange": "two slips write on and are crossed out, with green corrections: \"shifts to fewer particles\" with \"pressure alone is not a disturbance here\"; \"pressure up so temperature up\" with \"no net reaction, no net heat change\". The memory aid writes large at the end: \"Does Q still equal K? If yes, nothing shifts.\" with the condition tag \"closed system, steady temperature; Q for the equation as written; here: fixed volume, insulated, argon at the mixture's temperature\". The type board ticks card 3; all three are ticked.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "q3-mistake (two slips): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "try1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a rigid, sealed container. Extra nitrogen gas is injected. The temperature does not change. Using collision theory, explain the effect on the concentration of hydrogen.\" A rigid coded vessel (padlock lid) with pale N2 and H2 dots and colourless NH3; an injector icon drops in N2 dots only after the narration reads \"extra nitrogen\". A strip under the card: \"Decide now: which rate changes first? [H2] rises or falls?\". No conditions card, no underlines, no chain, no rate bars, no arrows. Countdown ring 10 seconds after \"Pause here to answer.\", with \"Pause here to answer.\" written beside it; the whole card stays on screen. Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a rigid, sealed container. Extra nitrogen gas is injected. The temperature does not change. Using collision theory, explain the effect on the concentration of hydrogen.\" A rigid coded vessel (padlock lid) with pale N2 and H2 dots and colourless NH3; an injector icon drops in N2 dots only after the narration reads \"extra nitrogen\". A strip under the card: \"Decide now: which rate changes first? [H2] rises or falls?\". No conditions card, no underlines, no chain, no rate bars, no arrows. Countdown ring 10 seconds after \"Pause here to answer.\", with \"Pause here to answer.\" written beside it; the whole card stays on screen. Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a rigid, sealed container. Extra nitrogen gas is injected. The temperature does not change. Using collision theory, explain the effect on the concentration of hydrogen.\" A rigid coded vessel (padlock lid) with pale N2 and H2 dots and colourless NH3; an injector icon drops in N2 dots only after the narration reads \"extra nitrogen\". A strip under the card: \"Decide now: which rate changes first? [H2] rises or falls?\". No conditions card, no underlines, no chain, no rate bars, no arrows. Countdown ring 10 seconds after \"Pause here to answer.\", with \"Pause here to answer.\" written beside it; the whole card stays on screen. Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "try1-question (attempt 1, countdown 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "try1-answer",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; amber underlines land on \"rigid\", \"Extra nitrogen\", \"temperature does not change\" and \"concentration of hydrogen\" in the opening sentences. The five-line chain builds in the lower left on the cues in the same hand as 2b: (1) \"More N2 injected, so [N2] rises.\" (2) \"More N2 and H2 collisions per second, so the forward rate rises.\" (3) \"The reverse rate has not changed, so forward rate > reverse rate.\" (4) \"Net forward reaction uses H2, so [H2] ends lower than at the first equilibrium.\" (5) \"[N2] falls back from its jump and [H2] falls, [NH3] rises, so the forward rate falls and the reverse rate rises until equal.\" The bars rise and fall with the lines. A flag \"finish on H2, not N2\" lands on line 4. The chain aid writes in at the end: \"Change, collisions, rate, other rate, net, named species, level.\" with pen brackets tying the words to the lines (\"Change\" to line 1; \"collisions, rate\" to line 2; \"other rate\" to line 3; \"net, named species\" to line 4; \"level\" to line 5, so seven words fill five lines), and the condition tag \"one concentration changed, temperature steady; a volume change or heating changes both rates\". Two wrong-answer chips are crossed: \"[H2] increases\" and \"the forward reaction increases\", with the green correction. A tick lands on line 4.",
+      "teachingReason": "Then, in your own time, write the full five lines and check them against this.",
+      "narrationCue": "Then, in your own time, write the full five lines and check them against this",
+      "motionPurpose": "the card shrinks to a strip; amber underlines land on \"rigid\", \"Extra nitrogen\", \"temperature does not change\" and \"concentration of hydrogen\" in the opening sentences. The five-line chain builds in the lower left on the cues in the same hand as 2b: (1) \"More N2 injected, so [N2] rises.\" (2) \"More N2 and H2 collisions per second, so the forward rate rises.\" (3) \"The reverse rate has not changed, so forward rate > reverse rate.\" (4) \"Net forward reaction uses H2, so [H2] ends lower than at the first equilibrium.\" (5) \"[N2] falls back from its jump and [H2] falls, [NH3] rises, so the forward rate falls and the reverse rate rises until equal.\" The bars rise and fall with the lines. A flag \"finish on H2, not N2\" lands on line 4. The chain aid writes in at the end: \"Change, collisions, rate, other rate, net, named species, level.\" with pen brackets tying the words to the lines (\"Change\" to line 1; \"collisions, rate\" to line 2; \"other rate\" to line 3; \"net, named species\" to line 4; \"level\" to line 5, so seven words fill five lines), and the condition tag \"one concentration changed, temperature steady; a volume change or heating changes both rates\". Two wrong-answer chips are crossed: \"[H2] increases\" and \"the forward reaction increases\", with the green correction. A tick lands on line 4.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; amber underlines land on \"rigid\", \"Extra nitrogen\", \"temperature does not change\" and \"concentration of hydrogen\" in the opening sentences. The five-line chain builds in the lower left on the cues in the same hand as 2b: (1) \"More N2 injected, so [N2] rises.\" (2) \"More N2 and H2 collisions per second, so the forward rate rises.\" (3) \"The reverse rate has not changed, so forward rate > reverse rate.\" (4) \"Net forward reaction uses H2, so [H2] ends lower than at the first equilibrium.\" (5) \"[N2] falls back from its jump and [H2] falls, [NH3] rises, so the forward rate falls and the reverse rate rises until equal.\" The bars rise and fall with the lines. A flag \"finish on H2, not N2\" lands on line 4. The chain aid writes in at the end: \"Change, collisions, rate, other rate, net, named species, level.\" with pen brackets tying the words to the lines (\"Change\" to line 1; \"collisions, rate\" to line 2; \"other rate\" to line 3; \"net, named species\" to line 4; \"level\" to line 5, so seven words fill five lines), and the condition tag \"one concentration changed, temperature steady; a volume change or heating changes both rates\". Two wrong-answer chips are crossed: \"[H2] increases\" and \"the forward reaction increases\", with the green correction. A tick lands on line 4.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "try1-answer (the five lines): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "try2-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a sealed cylinder. The temperature is kept constant throughout. At time t1 a change is made. The graphs show concentration against time and amount against time. Which disturbance was made at t1: a substance added, the volume changed, the temperature changed, or a catalyst added?\" Two coded graphs side by side with the t1 line aligned: a concentration-time graph where [N2], [H2] and [NH3] all jump up together at t1, then [N2] and [H2] curve down and [NH3] curves up in the ratio 1 : 3 : 2 and level on ruled lines; and the companion amount-time graph with no jump and the same curves. Four option chips under them. Countdown ring 10 seconds with \"Pause here to answer.\" beside it; card and graphs stay on screen. No labels naming the answer.",
+      "teachingReason": "One more, a graph.",
+      "narrationCue": "One more, a graph",
+      "motionPurpose": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a sealed cylinder. The temperature is kept constant throughout. At time t1 a change is made. The graphs show concentration against time and amount against time. Which disturbance was made at t1: a substance added, the volume changed, the temperature changed, or a catalyst added?\" Two coded graphs side by side with the t1 line aligned: a concentration-time graph where [N2], [H2] and [NH3] all jump up together at t1, then [N2] and [H2] curve down and [NH3] curves up in the ratio 1 : 3 : 2 and level on ruled lines; and the companion amount-time graph with no jump and the same curves. Four option chips under them. Countdown ring 10 seconds with \"Pause here to answer.\" beside it; card and graphs stay on screen. No labels naming the answer.",
+      "motionRole": "hold",
+      "onScreenChange": "fresh board. Type board dims to an outline. The question card writes on in full: \"N2(g) + 3H2(g) ⇌ 2NH3(g) is at equilibrium in a sealed cylinder. The temperature is kept constant throughout. At time t1 a change is made. The graphs show concentration against time and amount against time. Which disturbance was made at t1: a substance added, the volume changed, the temperature changed, or a catalyst added?\" Two coded graphs side by side with the t1 line aligned: a concentration-time graph where [N2], [H2] and [NH3] all jump up together at t1, then [N2] and [H2] curve down and [NH3] curves up in the ratio 1 : 3 : 2 and level on ruled lines; and the companion amount-time graph with no jump and the same curves. Four option chips under them. Countdown ring 10 seconds with \"Pause here to answer.\" beside it; card and graphs stay on screen. No labels naming the answer.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "try2-question (attempt 2, countdown 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "try2-answer",
+      "visualDecision": "new",
+      "visualReference": "amber underline on \"temperature is kept constant throughout\". The option chips are ruled one by one: \"a substance added\" crossed with the tag \"one line would jump, not all\"; \"temperature changed\" crossed with the tag \"no jump on the concentration graph\"; \"catalyst added\" crossed with the tag \"nothing would change\"; \"volume changed\" ticked in green with \"all jump together; amounts do not\". A ring on the amount graph's flat start with the tag \"no jump here fits volume or temperature: use the other graph\". The 1 : 3 : 2 curve steps are bracketed. Tick.",
+      "teachingReason": "The volume changed, and it was decreased.",
+      "narrationCue": "The volume changed, and it was decreased",
+      "motionPurpose": "amber underline on \"temperature is kept constant throughout\". The option chips are ruled one by one: \"a substance added\" crossed with the tag \"one line would jump, not all\"; \"temperature changed\" crossed with the tag \"no jump on the concentration graph\"; \"catalyst added\" crossed with the tag \"nothing would change\"; \"volume changed\" ticked in green with \"all jump together; amounts do not\". A ring on the amount graph's flat start with the tag \"no jump here fits volume or temperature: use the other graph\". The 1 : 3 : 2 curve steps are bracketed. Tick.",
+      "motionRole": "explain",
+      "onScreenChange": "amber underline on \"temperature is kept constant throughout\". The option chips are ruled one by one: \"a substance added\" crossed with the tag \"one line would jump, not all\"; \"temperature changed\" crossed with the tag \"no jump on the concentration graph\"; \"catalyst added\" crossed with the tag \"nothing would change\"; \"volume changed\" ticked in green with \"all jump together; amounts do not\". A ring on the amount graph's flat start with the tag \"no jump here fits volume or temperature: use the other graph\". The 1 : 3 : 2 curve steps are bracketed. Tick.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "try2-answer (which disturbance): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the type board returns full size as a two-column table, \"You see\" on the left and \"You do\" on the right, one row per cue: \"using collision theory, explain\" | \"the five-line chain (change, collisions, rate, other rate, net, named species, level)\" (with the five-line chain as a small icon strip); \"sketch or describe the graph\" | \"axis label first: one line jumps (added or removed); every gas jumps (volume); amounts never jump on a squeeze\"; \"argon at fixed volume, catalyst, added solid\" | \"does Q still equal K? If yes, no shift\". On \"calculations\" a chip appears: \"Next: part 2, the calculation types\" with a small K, table and number-line icon. Hold about 2 seconds.",
+      "teachingReason": "Find the words that give the type away.",
+      "narrationCue": "calculations",
+      "motionPurpose": "the type board returns full size as a two-column table, \"You see\" on the left and \"You do\" on the right, one row per cue: \"using collision theory, explain\" | \"the five-line chain (change, collisions, rate, other rate, net, named species, level)\" (with the five-line chain as a small icon strip); \"sketch or describe the graph\" | \"axis label first: one line jumps (added or removed); every gas jumps (volume); amounts never jump on a squeeze\"; \"argon at fixed volume, catalyst, added solid\" | \"does Q still equal K? If yes, no shift\". On \"calculations\" a chip appears: \"Next: part 2, the calculation types\" with a small K, table and number-line icon. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the type board returns full size as a two-column table, \"You see\" on the left and \"You do\" on the right, one row per cue: \"using collision theory, explain\" | \"the five-line chain (change, collisions, rate, other rate, net, named species, level)\" (with the five-line chain as a small icon strip); \"sketch or describe the graph\" | \"axis label first: one line jumps (added or removed); every gas jumps (volume); amounts never jump on a squeeze\"; \"argon at fixed volume, catalyst, added solid\" | \"does Q still equal K? If yes, no shift\". On \"calculations\" a chip appears: \"Next: part 2, the calculation types\" with a small K, table and number-line icon. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision-board (type to method, with wording cues): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key-notes (reuse take: key-notes; quiet, about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m5g02-learning-review.md",
+      "sha256": "871bdd006a7cbd8b3380f2092ddb2d8d75d2ecf9aaebc3fb20643d1bca297dfb"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m5g02-claude-science-check.md",
+      "sha256": "2dcfc74f5f7cc7ff40580997ac18ca444f599844f0760f3cd2c6017823966b8d"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

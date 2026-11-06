@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8p04/measured/lesson.json",
+    "lessonSha256": "3f32e63808b3772591fa24392e9ec745f149ea956a024fd9cae13709abd61140"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope. Students start Year 12 and have watched chem-m5-p02 (Module 5), chem-m8-p02 and chem-m8-c04 in playlist order.",
+    "startsWith": "Two blue solutions. Your eye can tell which one is darker, but not how much copper is in either. A calibration turns that colour into a number. You measure how much light some solutions of known concentration absorb, draw the line they make, then read a sample you don't know straight off that line. Today you build one for copper, and use it on rinse water from a copper plating workshop.",
+    "stopsAfter": "stating the aim and variables of a calibration investigation; making standards from a stock by dilution; choosing the wavelength from a scan and zeroing with a blank; handling cuvettes with reasons; plotting the calibration and finding its linear range from the data; diluting an over-range unknown, reading it across then down and multiplying back; judging reliability, accuracy (check standard) and validity; writing the risk rows for copper(II) sulfate, the unknown sample, glassware and the instrument.",
+    "nextLesson": "calibration and water-analysis data practice (route chem-m8-g02). The route review (change 10) places skills-s06 (graphs and data) before g02 in the Chemistry playlist, so the handoff line names g02 only and the playlist shows s06 between them."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-p04.md"
+  ],
+  "teaching": {
+    "task": "Your eye can rank two blue solutions, but it can't tell you how much copper is in either. How do you make a set of copper(II) standards, turn their absorbances into a calibration line you can trust, and use it to find the copper in a sample you don't know?",
+    "causalExplanation": "(1) a calibration turns colour into a number (1); (2) the aim, standards defined, the variables (2); (3) standards by dilution with two rinsed burettes (3); (4) the wavelength from a scan, and why the peak; the blank and what it removes (4); (5) cuvette handling, each with its reason (5); (6) plot, the line, the linear range from the bending standard, the slope (6); (7) the unknown above the range, so dilute, not extend; three readings (7); (8) read across then down, then multiply back (8); (9) reliability from repeats; accuracy from a check standard (9); (10) validity: only copper absorbs; same conditions; inside the range (10); (11) hazards and controls, waste (11); memory aid (12); attempts (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "Two blue solutions. The aim is to find the concentration of copper ions in that rinse water. Start from a stock solution of copper sulfate, point two zero zero moles per litre. Which light? A blue solution absorbs at the red end of the spectrum. Hold each cuvette by its ridged sides, and wipe the clear sides, because a fingerprint scatters light and adds absorbance. Here are the readings. Now the rinse water. Read across from point eight four five to the line, then down: point zero seven one zero moles per litre. Reliable? The three readings agree within about point zero zero six, and a second dilution gives the same answer. Valid? The method measures copper only if copper is the only thing absorbing at that wavelength. Now the risks. Two lines to keep. Your turn. Read across from point three two five, then down: point two five zero moles per litre. Last one. The fingerprint scatters some light, so less reaches the detector, and the absorbance reads high. So, to trust a calibration: make your standards by careful dilution, zero with a blank, and keep the unknown inside the linear range, diluting it if you must.",
+    "openingDecision": "Two blue solutions. Your eye can tell which one is darker, but not how much copper is in either. A calibration turns that colour into a number. You measure how much light some solutions of known concentration absorb, draw the line they make, then read a sample you don't know straight off that line. Today you build one for copper, and use it on rinse water from a copper plating workshop.",
+    "understandingCheck": "Two, each 10 s with the countdown and every condition visible (13, 15): A1's graph with gridlines, both volumes and the diluted absorbance; A2's clean standards cuvette against the fingerprinted unknown cuvette. Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ1-04 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"conduct investigations and/or process data to determine the concentration of coloured species and/or metal ions in aqueous solution, including but not limited to, the use of:\n- colourimetry\n- ultraviolet-visible spectrophotometry\n- atomic absorption spectroscopy\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "no people, hands or faces (filling burettes, pouring, wiping and moving cuvettes are coded motion); apparatus as painted plates listed by filename, never stretched; calibration curves and the wavelength scan are coded lineGraph diagrams, never AI images; at most about three bright text items, earlier lines dim; the calculation as a separate task, equation and grouped givens, one stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card in the attempts, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold.",
+    "transitionPlan": "heading writes on: \"Calibration practical: from standards to an unknown copper(II) concentration\". task line \"Aim: find [Cu²⁺] in the rinse water\". the board clears. the board clears. the board clears. the board clears. task line \"Measure the unknown\". the board clears to the calculation board. task line \"Reliable? Accurate?\". the board clears. during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Copper sulfate\" the copper(II) sulfate row; on \"sink\" the waste row with m5x-waste-bottle-v1. the board clears. the board clears. the card stays, shrunk to the top; the graph enlarges. question card, worded as printed (A2 under Decisions). the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Calibration practical: from standards to an unknown copper(II) concentration\". c5-copper-tube-pale-v1.png and c5-copper-tube-deep-v1.png stand side by side at the centre, the same height; a grey chip \"darker, but how much?\" writes between them. On \"absorb\" m8-uv-visible-spectrophotometer-v1.png slides in at the right, small, and chem-m5-p02's beam cutaway draws beside it (lamp, cuvette, detector; the beam thins through the deep tube's tint; grey chip \"c04, chem-m5-p02: absorbance\"). On \"line\" a small coded lineGraph sketch draws under the tubes: four dots and a rising line, an unknown's dashed read-across arrow (no numbers). On \"workshop\" m8-cuvette-cu-unknown-v1.png (new) appears small at the lower right with a navy tag \"rinse water: copper ions, how much?\". Bright at the end: the heading, the lineGraph sketch, the unknown tag. Hold about 1 second.",
+      "teachingReason": "Two blue solutions.",
+      "narrationCue": "absorb / line / workshop",
+      "motionPurpose": "heading writes on: \"Calibration practical: from standards to an unknown copper(II) concentration\". c5-copper-tube-pale-v1.png and c5-copper-tube-deep-v1.png stand side by side at the centre, the same height; a grey chip \"darker, but how much?\" writes between them. On \"absorb\" m8-uv-visible-spectrophotometer-v1.png slides in at the right, small, and chem-m5-p02's beam cutaway draws beside it (lamp, cuvette, detector; the beam thins through the deep tube's tint; grey chip \"c04, chem-m5-p02: absorbance\"). On \"line\" a small coded lineGraph sketch draws under the tubes: four dots and a rising line, an unknown's dashed read-across arrow (no numbers). On \"workshop\" m8-cuvette-cu-unknown-v1.png (new) appears small at the lower right with a navy tag \"rinse water: copper ions, how much?\". Bright at the end: the heading, the lineGraph sketch, the unknown tag. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Calibration practical: from standards to an unknown copper(II) concentration\". c5-copper-tube-pale-v1.png and c5-copper-tube-deep-v1.png stand side by side at the centre, the same height; a grey chip \"darker, but how much?\" writes between them. On \"absorb\" m8-uv-visible-spectrophotometer-v1.png slides in at the right, small, and chem-m5-p02's beam cutaway draws beside it (lamp, cuvette, detector; the beam thins through the deep tube's tint; grey chip \"c04, chem-m5-p02: absorbance\"). On \"line\" a small coded lineGraph sketch draws under the tubes: four dots and a rising line, an unknown's dashed read-across arrow (no numbers). On \"workshop\" m8-cuvette-cu-unknown-v1.png (new) appears small at the lower right with a navy tag \"rinse water: copper ions, how much?\". Bright at the end: the heading, the lineGraph sketch, the unknown tag. Hold about 1 second.",
+      "motionTools": [
+        "c5-copper-tube-pale-v1.png",
+        "c5-copper-tube-deep-v1.png",
+        "m8-uv-visible-spectrophotometer-v1.png",
+        "m8-cuvette-cu-unknown-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (colour into a number): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "aim-variables",
+      "visualDecision": "new",
+      "visualReference": "task line \"Aim: find [Cu²⁺] in the rinse water\". A gloss tag writes under the sketch: \"standard: a solution whose concentration you know\". The variables card writes in the right zone: on \"concentration\" \"Independent: concentration of the standards (mol/L)\"; on \"absorbance\" \"Dependent: absorbance\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"wavelength (about 800 nm)\", \"same cuvette (1.00 cm)\", \"zeroed with the same blank\", \"same distilled water\", \"room temperature, one session\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "teachingReason": "The aim is to find the concentration of copper ions in that rinse water.",
+      "narrationCue": "concentration / absorbance / same",
+      "motionPurpose": "task line \"Aim: find [Cu²⁺] in the rinse water\". A gloss tag writes under the sketch: \"standard: a solution whose concentration you know\". The variables card writes in the right zone: on \"concentration\" \"Independent: concentration of the standards (mol/L)\"; on \"absorbance\" \"Dependent: absorbance\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"wavelength (about 800 nm)\", \"same cuvette (1.00 cm)\", \"zeroed with the same blank\", \"same distilled water\", \"room temperature, one session\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Aim: find [Cu²⁺] in the rinse water\". A gloss tag writes under the sketch: \"standard: a solution whose concentration you know\". The variables card writes in the right zone: on \"concentration\" \"Independent: concentration of the standards (mol/L)\"; on \"absorbance\" \"Dependent: absorbance\"; on \"same\" \"Controlled:\" with its list writing one item at a time over the next 2 seconds: \"wavelength (about 800 nm)\", \"same cuvette (1.00 cm)\", \"zeroed with the same blank\", \"same distilled water\", \"room temperature, one session\". Bright at the end: the independent line and the controlled list. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the aim and the variables: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "make-standards",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Make the standards\". c11-cuso4-beaker-dissolved-v1.png small at the left (tag \"stock: 0.200 mol/L CuSO₄, made by the teacher\"). Two m6-burette-clamp-stand-v1.png plates stand side by side at the centre-left (coded tags \"stock\" with a blue fill line, \"distilled water\" with a clear fill line; grey chip \"chem-m6-c12: rinse with the solution it will hold\"). The dilution rack draws at the right: on \"one millilitre\" a coded stream runs from the stock burette into the first tube (fill rises to \"1.00 mL\", blue), then from the water burette (to \"10.00 mL total\"); a coded stopper rocks (inverted to mix; no hands). On \"litre\" a navy line writes beside it: \"c = 0.200 × 1.00 ÷ 10.00 = 0.0200 mol/L\" (bright), and the tube's fill matches the first tint of m8-cu-standards-rack-v1.png (new). On \"two, three\" the rack plate fades in fully, its tubes labelled by coded tags \"0.0400\", \"0.0600\", \"0.0800\" one at a time as their volumes write (\"2.00, 3.00, 4.00 mL stock + water to 10.00 mL\"); on \"topped up\" a small coded water stream tops each tube to the same \"10.00 mL\" line. On \"zero\" the fifth tube's tag \"6.00 mL → 0.120 mol/L\" writes, and the rack's blank tube gets the tag \"blank: distilled water only\". A small grey chip: \"label every dilution (site L04)\". Bright at the end: the rack and the 0.0200 line. Hold about 1 second.",
+      "teachingReason": "Start from a stock solution of copper sulfate, point two zero zero moles per litre.",
+      "narrationCue": "one millilitre / litre / two, three / topped up / zero",
+      "motionPurpose": "the board clears. Task line \"Make the standards\". c11-cuso4-beaker-dissolved-v1.png small at the left (tag \"stock: 0.200 mol/L CuSO₄, made by the teacher\"). Two m6-burette-clamp-stand-v1.png plates stand side by side at the centre-left (coded tags \"stock\" with a blue fill line, \"distilled water\" with a clear fill line; grey chip \"chem-m6-c12: rinse with the solution it will hold\"). The dilution rack draws at the right: on \"one millilitre\" a coded stream runs from the stock burette into the first tube (fill rises to \"1.00 mL\", blue), then from the water burette (to \"10.00 mL total\"); a coded stopper rocks (inverted to mix; no hands). On \"litre\" a navy line writes beside it: \"c = 0.200 × 1.00 ÷ 10.00 = 0.0200 mol/L\" (bright), and the tube's fill matches the first tint of m8-cu-standards-rack-v1.png (new). On \"two, three\" the rack plate fades in fully, its tubes labelled by coded tags \"0.0400\", \"0.0600\", \"0.0800\" one at a time as their volumes write (\"2.00, 3.00, 4.00 mL stock + water to 10.00 mL\"); on \"topped up\" a small coded water stream tops each tube to the same \"10.00 mL\" line. On \"zero\" the fifth tube's tag \"6.00 mL → 0.120 mol/L\" writes, and the rack's blank tube gets the tag \"blank: distilled water only\". A small grey chip: \"label every dilution (site L04)\". Bright at the end: the rack and the 0.0200 line. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Make the standards\". c11-cuso4-beaker-dissolved-v1.png small at the left (tag \"stock: 0.200 mol/L CuSO₄, made by the teacher\"). Two m6-burette-clamp-stand-v1.png plates stand side by side at the centre-left (coded tags \"stock\" with a blue fill line, \"distilled water\" with a clear fill line; grey chip \"chem-m6-c12: rinse with the solution it will hold\"). The dilution rack draws at the right: on \"one millilitre\" a coded stream runs from the stock burette into the first tube (fill rises to \"1.00 mL\", blue), then from the water burette (to \"10.00 mL total\"); a coded stopper rocks (inverted to mix; no hands). On \"litre\" a navy line writes beside it: \"c = 0.200 × 1.00 ÷ 10.00 = 0.0200 mol/L\" (bright), and the tube's fill matches the first tint of m8-cu-standards-rack-v1.png (new). On \"two, three\" the rack plate fades in fully, its tubes labelled by coded tags \"0.0400\", \"0.0600\", \"0.0800\" one at a time as their volumes write (\"2.00, 3.00, 4.00 mL stock + water to 10.00 mL\"); on \"topped up\" a small coded water stream tops each tube to the same \"10.00 mL\" line. On \"zero\" the fifth tube's tag \"6.00 mL → 0.120 mol/L\" writes, and the rack's blank tube gets the tag \"blank: distilled water only\". A small grey chip: \"label every dilution (site L04)\". Bright at the end: the rack and the 0.0200 line. Hold about 1 second.",
+      "motionTools": [
+        "c11-cuso4-beaker-dissolved-v1.png",
+        "m6-burette-clamp-stand-v1.png",
+        "m8-cu-standards-rack-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "make the standards: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "wavelength-blank",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Set the wavelength, then zero\". The wavelength scan draws at the centre as a coded lineGraph (x: wavelength, 400 to 900 nm; y: absorbance; tag \"example scan: the 0.0800 mol/L standard\"; small tag \"nm: nanometres, a measure of wavelength\"); the colour strip under the axis runs violet to red and fades grey past about 750 nm (tag \"near infrared: beyond red\"). The band rises from almost nothing in the blue to a broad peak; on \"eight hundred\" a pen marker slides to the peak (tag \"about 800 nm (near infrared): biggest absorbance\"; grey chip \"chem-m5-p02: measure the colour it absorbs, not the colour you see\"). On \"there\" the spectrophotometer thumbnail glows (tag \"this spectrophotometer reaches 800 nm\"). On \"biggest change\" two short vertical arrows compare the band at the peak (long) and on its shoulder near 600 nm (short), each labelled \"same copper change\". On \"red filter\" a small grey tag: \"school colourimeter: red filter (for example 635 nm), its own calibration; don't reuse this slope\". On \"blank\" m5x-cuvette-blank-v1.png slides into the spectrophotometer thumbnail's slot (coded overlay over the slot); a coded readout writes \"A = 0.000\". On \"away\" the beam cutaway shows two thin grey slivers (\"glass\", \"water\") removed from the beam (tag \"blank: zero for glass and water\"). Bright at the end: the peak marker and \"A = 0.000\". Hold about 1 second.",
+      "teachingReason": "Which light? A blue solution absorbs at the red end of the spectrum.",
+      "narrationCue": "eight hundred / there / biggest change / red filter / blank / away",
+      "motionPurpose": "the board clears. Task line \"Set the wavelength, then zero\". The wavelength scan draws at the centre as a coded lineGraph (x: wavelength, 400 to 900 nm; y: absorbance; tag \"example scan: the 0.0800 mol/L standard\"; small tag \"nm: nanometres, a measure of wavelength\"); the colour strip under the axis runs violet to red and fades grey past about 750 nm (tag \"near infrared: beyond red\"). The band rises from almost nothing in the blue to a broad peak; on \"eight hundred\" a pen marker slides to the peak (tag \"about 800 nm (near infrared): biggest absorbance\"; grey chip \"chem-m5-p02: measure the colour it absorbs, not the colour you see\"). On \"there\" the spectrophotometer thumbnail glows (tag \"this spectrophotometer reaches 800 nm\"). On \"biggest change\" two short vertical arrows compare the band at the peak (long) and on its shoulder near 600 nm (short), each labelled \"same copper change\". On \"red filter\" a small grey tag: \"school colourimeter: red filter (for example 635 nm), its own calibration; don't reuse this slope\". On \"blank\" m5x-cuvette-blank-v1.png slides into the spectrophotometer thumbnail's slot (coded overlay over the slot); a coded readout writes \"A = 0.000\". On \"away\" the beam cutaway shows two thin grey slivers (\"glass\", \"water\") removed from the beam (tag \"blank: zero for glass and water\"). Bright at the end: the peak marker and \"A = 0.000\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Set the wavelength, then zero\". The wavelength scan draws at the centre as a coded lineGraph (x: wavelength, 400 to 900 nm; y: absorbance; tag \"example scan: the 0.0800 mol/L standard\"; small tag \"nm: nanometres, a measure of wavelength\"); the colour strip under the axis runs violet to red and fades grey past about 750 nm (tag \"near infrared: beyond red\"). The band rises from almost nothing in the blue to a broad peak; on \"eight hundred\" a pen marker slides to the peak (tag \"about 800 nm (near infrared): biggest absorbance\"; grey chip \"chem-m5-p02: measure the colour it absorbs, not the colour you see\"). On \"there\" the spectrophotometer thumbnail glows (tag \"this spectrophotometer reaches 800 nm\"). On \"biggest change\" two short vertical arrows compare the band at the peak (long) and on its shoulder near 600 nm (short), each labelled \"same copper change\". On \"red filter\" a small grey tag: \"school colourimeter: red filter (for example 635 nm), its own calibration; don't reuse this slope\". On \"blank\" m5x-cuvette-blank-v1.png slides into the spectrophotometer thumbnail's slot (coded overlay over the slot); a coded readout writes \"A = 0.000\". On \"away\" the beam cutaway shows two thin grey slivers (\"glass\", \"water\") removed from the beam (tag \"blank: zero for glass and water\"). Bright at the end: the peak marker and \"A = 0.000\". Hold about 1 second.",
+      "motionTools": [
+        "m5x-cuvette-blank-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "which light, and the blank: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "measure-carefully",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Measure each standard\". m8-cuvette-cu-1-v1.png (new) large at the centre; its two ridged sides take a coded hatched outline with the tag \"hold here\" and the clear faces a light-blue outline \"light goes through here\"; a coded tissue arc wipes one clear face (no hands), and a faint coded smudge fades off it (tag \"fingerprint: scatters light, A ↑\"). On \"Rinse\" a coded swirl of pale blue rinses the cuvette and drains (tag \"rinse with the next standard\"). On \"Work\" a small coded arrow on the cuvette's top rim matches an arrow on the slot thumbnail, with a grey tag \"same way every time\" (Revision 2: the spoken sentence was cut; the screen keeps it). On \"concentrated\" the five standard cuvettes (m8-cuvette-cu-1-v1.png to m8-cuvette-cu-5-v1.png, new, aligned) line up small along the bottom, pale to deep, with an arrow \"dilute → concentrated\". Bright at the end: the cuvette row and the arrow. Hold about 1 second.",
+      "teachingReason": "Hold each cuvette by its ridged sides, and wipe the clear sides, because a fingerprint scatters light and adds absorbance.",
+      "narrationCue": "Rinse / Work / concentrated",
+      "motionPurpose": "the board clears. Task line \"Measure each standard\". m8-cuvette-cu-1-v1.png (new) large at the centre; its two ridged sides take a coded hatched outline with the tag \"hold here\" and the clear faces a light-blue outline \"light goes through here\"; a coded tissue arc wipes one clear face (no hands), and a faint coded smudge fades off it (tag \"fingerprint: scatters light, A ↑\"). On \"Rinse\" a coded swirl of pale blue rinses the cuvette and drains (tag \"rinse with the next standard\"). On \"Work\" a small coded arrow on the cuvette's top rim matches an arrow on the slot thumbnail, with a grey tag \"same way every time\" (Revision 2: the spoken sentence was cut; the screen keeps it). On \"concentrated\" the five standard cuvettes (m8-cuvette-cu-1-v1.png to m8-cuvette-cu-5-v1.png, new, aligned) line up small along the bottom, pale to deep, with an arrow \"dilute → concentrated\". Bright at the end: the cuvette row and the arrow. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Measure each standard\". m8-cuvette-cu-1-v1.png (new) large at the centre; its two ridged sides take a coded hatched outline with the tag \"hold here\" and the clear faces a light-blue outline \"light goes through here\"; a coded tissue arc wipes one clear face (no hands), and a faint coded smudge fades off it (tag \"fingerprint: scatters light, A ↑\"). On \"Rinse\" a coded swirl of pale blue rinses the cuvette and drains (tag \"rinse with the next standard\"). On \"Work\" a small coded arrow on the cuvette's top rim matches an arrow on the slot thumbnail, with a grey tag \"same way every time\" (Revision 2: the spoken sentence was cut; the screen keeps it). On \"concentrated\" the five standard cuvettes (m8-cuvette-cu-1-v1.png to m8-cuvette-cu-5-v1.png, new, aligned) line up small along the bottom, pale to deep, with an arrow \"dilute → concentrated\". Bright at the end: the cuvette row and the arrow. Hold about 1 second.",
+      "motionTools": [
+        "m8-cuvette-cu-1-v1.png",
+        "m8-cuvette-cu-5-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "measure carefully: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "plot-linear-range",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Plot, then check the range\". A results table writes in the right zone (grey tag \"example data\"): \"concentration (mol/L): 0 (blank), 0.0200, 0.0400, 0.0600, 0.0800, 0.120\"; \"absorbance: 0.000, 0.238, 0.479, 0.712, 0.957, 1.33\". The calibration lineGraph draws at the centre (chem-m5-p02's component; x: concentration 0 to 0.140 mol/L; y: absorbance 0 to 1.6; axis labels with units). Points plot one per value as the table row lights. On \"line\" the line of best fit draws through the blank and the first four points (fitted, not forced; grey tag \"line of best fit, as chem-m5-p02\"). On \"fifth falls\" the 0.120 point turns terracotta and the line's dashed extension continues above it to \"about 1.43\" (tag \"the line predicts 1.43; it reads 1.33\"). On \"less trustworthy\" a small grey chip: \"very little light reaches the detector\". On \"range\" the pale green linear range band spans 0 to 0.0800 mol/L (tag \"linear range: points on the line\") and a navy chip writes: \"slope = 11.9 L mol⁻¹ (passes through zero)\". Bright at the end: the band, the terracotta point and the slope chip. Hold about 1 second.",
+      "teachingReason": "Here are the readings.",
+      "narrationCue": "line / fifth falls / less trustworthy / range",
+      "motionPurpose": "the board clears. Task line \"Plot, then check the range\". A results table writes in the right zone (grey tag \"example data\"): \"concentration (mol/L): 0 (blank), 0.0200, 0.0400, 0.0600, 0.0800, 0.120\"; \"absorbance: 0.000, 0.238, 0.479, 0.712, 0.957, 1.33\". The calibration lineGraph draws at the centre (chem-m5-p02's component; x: concentration 0 to 0.140 mol/L; y: absorbance 0 to 1.6; axis labels with units). Points plot one per value as the table row lights. On \"line\" the line of best fit draws through the blank and the first four points (fitted, not forced; grey tag \"line of best fit, as chem-m5-p02\"). On \"fifth falls\" the 0.120 point turns terracotta and the line's dashed extension continues above it to \"about 1.43\" (tag \"the line predicts 1.43; it reads 1.33\"). On \"less trustworthy\" a small grey chip: \"very little light reaches the detector\". On \"range\" the pale green linear range band spans 0 to 0.0800 mol/L (tag \"linear range: points on the line\") and a navy chip writes: \"slope = 11.9 L mol⁻¹ (passes through zero)\". Bright at the end: the band, the terracotta point and the slope chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Plot, then check the range\". A results table writes in the right zone (grey tag \"example data\"): \"concentration (mol/L): 0 (blank), 0.0200, 0.0400, 0.0600, 0.0800, 0.120\"; \"absorbance: 0.000, 0.238, 0.479, 0.712, 0.957, 1.33\". The calibration lineGraph draws at the centre (chem-m5-p02's component; x: concentration 0 to 0.140 mol/L; y: absorbance 0 to 1.6; axis labels with units). Points plot one per value as the table row lights. On \"line\" the line of best fit draws through the blank and the first four points (fitted, not forced; grey tag \"line of best fit, as chem-m5-p02\"). On \"fifth falls\" the 0.120 point turns terracotta and the line's dashed extension continues above it to \"about 1.43\" (tag \"the line predicts 1.43; it reads 1.33\"). On \"less trustworthy\" a small grey chip: \"very little light reaches the detector\". On \"range\" the pale green linear range band spans 0 to 0.0800 mol/L (tag \"linear range: points on the line\") and a navy chip writes: \"slope = 11.9 L mol⁻¹ (passes through zero)\". Bright at the end: the band, the terracotta point and the slope chip. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "plot it, and find the linear range: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "unknown-dilute",
+      "visualDecision": "new",
+      "visualReference": "task line \"Measure the unknown\". m8-cuvette-cu-unknown-v1.png (new) at the centre-left; a coded readout \"A = 1.52\". On \"far above\" a horizontal marker at 1.52 draws on the lineGraph, well above the green band (tag \"above the linear range\"). On \"extend the line\" a dashed read-across meets the dashed extension and drops to \"0.128?\" (grey); on \"don't trust it\" the chip takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). On \"Dilute\" the dilution halving plays: the two burette thumbnails return small; \"5.00 mL rinse water + 5.00 mL distilled water\" writes as a navy line; the cuvette cross-fades to m8-cuvette-cu-unknown-diluted-v1.png (new; tint between standards 3 and 4) and the readout falls from 1.52 to 0.845. On \"five\" a three-cell readings strip writes: \"0.842, 0.848, 0.845 → mean 0.845\" (bright). Bright at the end: the diluted cuvette, the mean and the crossed chip. Hold about 1 second.",
+      "teachingReason": "Now the rinse water.",
+      "narrationCue": "far above / extend the line / don't trust it / Dilute / five",
+      "motionPurpose": "task line \"Measure the unknown\". m8-cuvette-cu-unknown-v1.png (new) at the centre-left; a coded readout \"A = 1.52\". On \"far above\" a horizontal marker at 1.52 draws on the lineGraph, well above the green band (tag \"above the linear range\"). On \"extend the line\" a dashed read-across meets the dashed extension and drops to \"0.128?\" (grey); on \"don't trust it\" the chip takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). On \"Dilute\" the dilution halving plays: the two burette thumbnails return small; \"5.00 mL rinse water + 5.00 mL distilled water\" writes as a navy line; the cuvette cross-fades to m8-cuvette-cu-unknown-diluted-v1.png (new; tint between standards 3 and 4) and the readout falls from 1.52 to 0.845. On \"five\" a three-cell readings strip writes: \"0.842, 0.848, 0.845 → mean 0.845\" (bright). Bright at the end: the diluted cuvette, the mean and the crossed chip. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Measure the unknown\". m8-cuvette-cu-unknown-v1.png (new) at the centre-left; a coded readout \"A = 1.52\". On \"far above\" a horizontal marker at 1.52 draws on the lineGraph, well above the green band (tag \"above the linear range\"). On \"extend the line\" a dashed read-across meets the dashed extension and drops to \"0.128?\" (grey); on \"don't trust it\" the chip takes a red scribble cross (caption \"outside the standards: dilute, don't extend\"). On \"Dilute\" the dilution halving plays: the two burette thumbnails return small; \"5.00 mL rinse water + 5.00 mL distilled water\" writes as a navy line; the cuvette cross-fades to m8-cuvette-cu-unknown-diluted-v1.png (new; tint between standards 3 and 4) and the readout falls from 1.52 to 0.845. On \"five\" a three-cell readings strip writes: \"0.842, 0.848, 0.845 → mean 0.845\" (bright). Bright at the end: the diluted cuvette, the mean and the crossed chip. Hold about 1 second.",
+      "motionTools": [
+        "m8-cuvette-cu-unknown-v1.png",
+        "m8-cuvette-cu-unknown-diluted-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the unknown is too strong: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "read-scale-back",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the calculation board. Task strip: \"[Cu²⁺] in the rinse water\". Givens group (navy): \"diluted reading: A = 0.845 (mean)\"; \"dilution: 5.00 mL → 10.00 mL total\"; the slope chip \"11.9 L mol⁻¹\" small from scene 6. On \"Read across\" the lineGraph returns at the left, zoomed to the green band: chem-m5-p02's read-across-then-down guide runs from 0.845 to the line and down; stage line 1 writes: \"c(diluted) = 0.845 ÷ 11.9 = 0.0710 mol/L\" (bright) with a grey tag \"same as reading the line: it passes through zero\". Line 1 dims. Stage line 2: \"dilution factor = 10.00 ÷ 5.00 = 2.00\"; on the second \"litre\" line 3: \"c(rinse water) = 0.0710 × 2.00 = 0.142 mol/L\" (bright; boxed). A grey chip: \"site L04: never forget the dilution correction\". Bright at the end: 0.142 mol/L. Hold about 1 second.",
+      "teachingReason": "Read across from point eight four five to the line, then down: point zero seven one zero moles per litre.",
+      "narrationCue": "Read across",
+      "motionPurpose": "the board clears to the calculation board. Task strip: \"[Cu²⁺] in the rinse water\". Givens group (navy): \"diluted reading: A = 0.845 (mean)\"; \"dilution: 5.00 mL → 10.00 mL total\"; the slope chip \"11.9 L mol⁻¹\" small from scene 6. On \"Read across\" the lineGraph returns at the left, zoomed to the green band: chem-m5-p02's read-across-then-down guide runs from 0.845 to the line and down; stage line 1 writes: \"c(diluted) = 0.845 ÷ 11.9 = 0.0710 mol/L\" (bright) with a grey tag \"same as reading the line: it passes through zero\". Line 1 dims. Stage line 2: \"dilution factor = 10.00 ÷ 5.00 = 2.00\"; on the second \"litre\" line 3: \"c(rinse water) = 0.0710 × 2.00 = 0.142 mol/L\" (bright; boxed). A grey chip: \"site L04: never forget the dilution correction\". Bright at the end: 0.142 mol/L. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the calculation board. Task strip: \"[Cu²⁺] in the rinse water\". Givens group (navy): \"diluted reading: A = 0.845 (mean)\"; \"dilution: 5.00 mL → 10.00 mL total\"; the slope chip \"11.9 L mol⁻¹\" small from scene 6. On \"Read across\" the lineGraph returns at the left, zoomed to the green band: chem-m5-p02's read-across-then-down guide runs from 0.845 to the line and down; stage line 1 writes: \"c(diluted) = 0.845 ÷ 11.9 = 0.0710 mol/L\" (bright) with a grey tag \"same as reading the line: it passes through zero\". Line 1 dims. Stage line 2: \"dilution factor = 10.00 ÷ 5.00 = 2.00\"; on the second \"litre\" line 3: \"c(rinse water) = 0.0710 × 2.00 = 0.142 mol/L\" (bright; boxed). A grey chip: \"site L04: never forget the dilution correction\". Bright at the end: 0.142 mol/L. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "read it, then scale back: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "reliable-accurate",
+      "visualDecision": "new",
+      "visualReference": "task line \"Reliable? Accurate?\". Reliability card header: \"Reliability: repeats agree?\"; the three readings plot as three dots on a short scale (0.835 to 0.855) with a bracket \"spread 0.006\"; a fourth line writes \"second dilution: 0.142 mol/L\" with a tick. The card dims. On \"Accurate?\" the accuracy card header: \"Accuracy: how close to the true value?\"; a cuvette thumbnail tagged \"check standard: 0.0500 mol/L (separate weighing)\"; a line writes: \"A = 0.592 → 0.592 ÷ 11.9 = 0.0497 mol/L\"; on \"value\" p02's recovery gauge appears small and fills to 99.5% beside its 100% line (\"known 0.0500\"; tag \"within about 1%\"). With it, a grey chip: \"p02: test the method on a known sample\". Bright at the end: the gauge and 0.0497. Hold about 1 second.",
+      "teachingReason": "Reliable? The three readings agree within about point zero zero six, and a second dilution gives the same answer.",
+      "narrationCue": "Accurate? / value",
+      "motionPurpose": "task line \"Reliable? Accurate?\". Reliability card header: \"Reliability: repeats agree?\"; the three readings plot as three dots on a short scale (0.835 to 0.855) with a bracket \"spread 0.006\"; a fourth line writes \"second dilution: 0.142 mol/L\" with a tick. The card dims. On \"Accurate?\" the accuracy card header: \"Accuracy: how close to the true value?\"; a cuvette thumbnail tagged \"check standard: 0.0500 mol/L (separate weighing)\"; a line writes: \"A = 0.592 → 0.592 ÷ 11.9 = 0.0497 mol/L\"; on \"value\" p02's recovery gauge appears small and fills to 99.5% beside its 100% line (\"known 0.0500\"; tag \"within about 1%\"). With it, a grey chip: \"p02: test the method on a known sample\". Bright at the end: the gauge and 0.0497. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Reliable? Accurate?\". Reliability card header: \"Reliability: repeats agree?\"; the three readings plot as three dots on a short scale (0.835 to 0.855) with a bracket \"spread 0.006\"; a fourth line writes \"second dilution: 0.142 mol/L\" with a tick. The card dims. On \"Accurate?\" the accuracy card header: \"Accuracy: how close to the true value?\"; a cuvette thumbnail tagged \"check standard: 0.0500 mol/L (separate weighing)\"; a line writes: \"A = 0.592 → 0.592 ÷ 11.9 = 0.0497 mol/L\"; on \"value\" p02's recovery gauge appears small and fills to 99.5% beside its 100% line (\"known 0.0500\"; tag \"within about 1%\"). With it, a grey chip: \"p02: test the method on a known sample\". Bright at the end: the gauge and 0.0497. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reliable, and accurate?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "valid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Valid?\". The validity card header: \"Validity: does it measure what it was meant to?\". Row 1 on \"only thing absorbing\": \"only Cu²⁺ absorbs at about 800 nm\" (green). Row 2 on \"cloudy\": m8-cuvette-cu-unknown-diluted-v1.png thumbnail with a coded haze overlay and the tag \"cloudy: scatter, A ↑ → filter first\" (green fix chip). On \"dissolved\" a grey tag under it: \"filtering removes particles, not dissolved substances; teacher-checked: no other absorbers\". Row 3 on \"same wavelength\": four small green chips write one per phrase: \"same wavelength\", \"same cuvette\", \"same blank\", \"inside the linear range\" (the green band thumbnail). On \"it\" a navy line: \"the line describes the standards; it applies to the unknown only under the same conditions\". Footer, small grey: \"Validity: right measurement. Reliability: repeats agree. Accuracy: close to the true value.\" Bright at the end: the four chips and the navy line. Hold about 1 second.",
+      "teachingReason": "Valid? The method measures copper only if copper is the only thing absorbing at that wavelength.",
+      "narrationCue": "only thing absorbing / cloudy / dissolved / same wavelength / it",
+      "motionPurpose": "the board clears. Task line \"Valid?\". The validity card header: \"Validity: does it measure what it was meant to?\". Row 1 on \"only thing absorbing\": \"only Cu²⁺ absorbs at about 800 nm\" (green). Row 2 on \"cloudy\": m8-cuvette-cu-unknown-diluted-v1.png thumbnail with a coded haze overlay and the tag \"cloudy: scatter, A ↑ → filter first\" (green fix chip). On \"dissolved\" a grey tag under it: \"filtering removes particles, not dissolved substances; teacher-checked: no other absorbers\". Row 3 on \"same wavelength\": four small green chips write one per phrase: \"same wavelength\", \"same cuvette\", \"same blank\", \"inside the linear range\" (the green band thumbnail). On \"it\" a navy line: \"the line describes the standards; it applies to the unknown only under the same conditions\". Footer, small grey: \"Validity: right measurement. Reliability: repeats agree. Accuracy: close to the true value.\" Bright at the end: the four chips and the navy line. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Valid?\". The validity card header: \"Validity: does it measure what it was meant to?\". Row 1 on \"only thing absorbing\": \"only Cu²⁺ absorbs at about 800 nm\" (green). Row 2 on \"cloudy\": m8-cuvette-cu-unknown-diluted-v1.png thumbnail with a coded haze overlay and the tag \"cloudy: scatter, A ↑ → filter first\" (green fix chip). On \"dissolved\" a grey tag under it: \"filtering removes particles, not dissolved substances; teacher-checked: no other absorbers\". Row 3 on \"same wavelength\": four small green chips write one per phrase: \"same wavelength\", \"same cuvette\", \"same blank\", \"inside the linear range\" (the green band thumbnail). On \"it\" a navy line: \"the line describes the standards; it applies to the unknown only under the same conditions\". Footer, small grey: \"Validity: right measurement. Reliability: repeats agree. Accuracy: close to the true value.\" Bright at the end: the four chips and the navy line. Hold about 1 second.",
+      "motionTools": [
+        "m8-cuvette-cu-unknown-diluted-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "is it valid?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "new",
+      "visualReference": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Copper sulfate\" the copper(II) sulfate row; on \"sink\" the waste row with m5x-waste-bottle-v1.png small and a coded label \"Heavy-metal waste: copper\"; on \"rinse water\" the unknown sample row; on \"burettes\" the glassware row (m6-burette-clamp-stand-v1.png small, a coded funnel outline at the top, a dashed \"eye level\" line above it); on \"electronics\" the instrument row (m8-uv-visible-spectrophotometer-v1.png small, a coded spill-tray outline beside it). Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full six-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table).",
+      "teachingReason": "Now the risks.",
+      "narrationCue": "Copper sulfate / sink / rinse water / burettes / electronics",
+      "motionPurpose": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Copper sulfate\" the copper(II) sulfate row; on \"sink\" the waste row with m5x-waste-bottle-v1.png small and a coded label \"Heavy-metal waste: copper\"; on \"rinse water\" the unknown sample row; on \"burettes\" the glassware row (m6-burette-clamp-stand-v1.png small, a coded funnel outline at the top, a dashed \"eye level\" line above it); on \"electronics\" the instrument row (m8-uv-visible-spectrophotometer-v1.png small, a coded spill-tray outline beside it). Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full six-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table).",
+      "motionRole": "explain",
+      "onScreenChange": "during the narration the right zone shows only the current row of the risk table, three columns \"Hazard / Harm / Control\", in short wording: on \"Copper sulfate\" the copper(II) sulfate row; on \"sink\" the waste row with m5x-waste-bottle-v1.png small and a coded label \"Heavy-metal waste: copper\"; on \"rinse water\" the unknown sample row; on \"burettes\" the glassware row (m6-burette-clamp-stand-v1.png small, a coded funnel outline at the top, a dashed \"eye level\" line above it); on \"electronics\" the instrument row (m8-uv-visible-spectrophotometer-v1.png small, a coded spill-tray outline beside it). Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full six-row table (\"Risk table\" below) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table).",
+      "motionTools": [
+        "m5x-waste-bottle-v1.png",
+        "m6-burette-clamp-stand-v1.png",
+        "m8-uv-visible-spectrophotometer-v1.png",
+        "m5x-safety-glasses-v1.png",
+        "m5x-gloves-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the risk assessment: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Handwritten line: \"Read across, then down, and only inside the standards.\" Under it the calibration lineGraph returns small with the green band; the read-across-then-down guide replays inside it. On \"factor\" a second handwritten line: \"Diluted? Multiply back by the dilution factor.\" with \"× 2.00 → 0.142 mol/L\" small beside it. Hold about 2 seconds.",
+      "teachingReason": "Two lines to keep.",
+      "narrationCue": "factor",
+      "motionPurpose": "the board clears. Handwritten line: \"Read across, then down, and only inside the standards.\" Under it the calibration lineGraph returns small with the green band; the read-across-then-down guide replays inside it. On \"factor\" a second handwritten line: \"Diluted? Multiply back by the dilution factor.\" with \"× 2.00 → 0.142 mol/L\" small beside it. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Read across, then down, and only inside the standards.\" Under it the calibration lineGraph returns small with the green band; the read-across-then-down guide replays inside it. On \"factor\" a second handwritten line: \"Diluted? Multiply back by the dilution factor.\" with \"× 2.00 → 0.142 mol/L\" small beside it. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with its coded lineGraph (standards 0.100 to 0.400 mol L⁻¹, absorbance to 0.521, line of best fit, gridlines every 0.050) and the tag \"HSC-style question, written for HSCScience\". m5x-colourimeter-v1.png small at the right (no tags; its blue cuvette suits the copper case). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with its coded lineGraph (standards 0.100 to 0.400 mol L⁻¹, absorbance to 0.521, line of best fit, gridlines every 0.050) and the tag \"HSC-style question, written for HSCScience\". m5x-colourimeter-v1.png small at the right (no tags; its blue cuvette suits the copper case). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with its coded lineGraph (standards 0.100 to 0.400 mol L⁻¹, absorbance to 0.521, line of best fit, gridlines every 0.050) and the tag \"HSC-style question, written for HSCScience\". m5x-colourimeter-v1.png small at the right (no tags; its blue cuvette suits the copper case). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m5x-colourimeter-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top; the graph enlarges. On \"Read across\" \"0.325\" is underlined and the read-across-then-down guide runs to \"0.250 mol L⁻¹\" on the gridline (line \"c(diluted) = 0.250 mol L⁻¹\"). On \"dilution factor\" \"10.00 mL\" and \"25.00 mL\" are underlined; line \"dilution factor = 25.00 ÷ 10.00 = 2.50\"; on the second \"litre\" \"c(original) = 0.250 × 2.50 = 0.625 mol L⁻¹\" writes bright and boxed, and \"in the original solution\" is underlined. On \"zero\" a chip \"0.250 mol L⁻¹\" fades in and is crossed (caption \"that's the diluted solution: multiply back\"). Hold about 1 second.",
+      "teachingReason": "Read across from point three two five, then down: point two five zero moles per litre.",
+      "narrationCue": "Read across / dilution factor / zero",
+      "motionPurpose": "the card stays, shrunk to the top; the graph enlarges. On \"Read across\" \"0.325\" is underlined and the read-across-then-down guide runs to \"0.250 mol L⁻¹\" on the gridline (line \"c(diluted) = 0.250 mol L⁻¹\"). On \"dilution factor\" \"10.00 mL\" and \"25.00 mL\" are underlined; line \"dilution factor = 25.00 ÷ 10.00 = 2.50\"; on the second \"litre\" \"c(original) = 0.250 × 2.50 = 0.625 mol L⁻¹\" writes bright and boxed, and \"in the original solution\" is underlined. On \"zero\" a chip \"0.250 mol L⁻¹\" fades in and is crossed (caption \"that's the diluted solution: multiply back\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top; the graph enlarges. On \"Read across\" \"0.325\" is underlined and the read-across-then-down guide runs to \"0.250 mol L⁻¹\" on the gridline (line \"c(diluted) = 0.250 mol L⁻¹\"). On \"dilution factor\" \"10.00 mL\" and \"25.00 mL\" are underlined; line \"dilution factor = 25.00 ÷ 10.00 = 2.50\"; on the second \"litre\" \"c(original) = 0.250 × 2.50 = 0.625 mol L⁻¹\" writes bright and boxed, and \"in the original solution\" is underlined. On \"zero\" a chip \"0.250 mol L⁻¹\" fades in and is crossed (caption \"that's the diluted solution: multiply back\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions). m8-cuvette-cu-unknown-diluted-v1.png small at the right (no smudge drawn; no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions). m8-cuvette-cu-unknown-diluted-v1.png small at the right (no smudge drawn; no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions). m8-cuvette-cu-unknown-diluted-v1.png small at the right (no smudge drawn; no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m8-cuvette-cu-unknown-diluted-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top. On \"fingerprint\" \"a fingerprint on one of its clear sides\" is underlined; the cuvette thumbnail gains a coded smudge and the beam cutaway shows a thinner beam reaching the detector; FixRail small: \"Word: accuracy\"; \"Feature: fingerprint scatters light → A ↑ → concentration ↑\". On \"high\" a small lineGraph inset shows the read-across starting higher and landing at a higher concentration (tag \"too high\"). On \"reading\" \"propose an improvement\" is underlined, the FixRail's \"Fix\" lights: \"hold by the ridged sides; wipe the clear sides before every reading; same clean cuvette for standards and unknown\" (scene 5's hold-here outline returns small). On \"together\" a chip \"take three readings and average them\" fades in and is crossed (caption \"every reading has the fingerprint: reliability, not accuracy\"). Hold about 1 second.",
+      "teachingReason": "The fingerprint scatters some light, so less reaches the detector, and the absorbance reads high.",
+      "narrationCue": "fingerprint / high / reading / together",
+      "motionPurpose": "the card stays, shrunk to the top. On \"fingerprint\" \"a fingerprint on one of its clear sides\" is underlined; the cuvette thumbnail gains a coded smudge and the beam cutaway shows a thinner beam reaching the detector; FixRail small: \"Word: accuracy\"; \"Feature: fingerprint scatters light → A ↑ → concentration ↑\". On \"high\" a small lineGraph inset shows the read-across starting higher and landing at a higher concentration (tag \"too high\"). On \"reading\" \"propose an improvement\" is underlined, the FixRail's \"Fix\" lights: \"hold by the ridged sides; wipe the clear sides before every reading; same clean cuvette for standards and unknown\" (scene 5's hold-here outline returns small). On \"together\" a chip \"take three readings and average them\" fades in and is crossed (caption \"every reading has the fingerprint: reliability, not accuracy\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"fingerprint\" \"a fingerprint on one of its clear sides\" is underlined; the cuvette thumbnail gains a coded smudge and the beam cutaway shows a thinner beam reaching the detector; FixRail small: \"Word: accuracy\"; \"Feature: fingerprint scatters light → A ↑ → concentration ↑\". On \"high\" a small lineGraph inset shows the read-across starting higher and landing at a higher concentration (tag \"too high\"). On \"reading\" \"propose an improvement\" is underlined, the FixRail's \"Fix\" lights: \"hold by the ridged sides; wipe the clear sides before every reading; same clean cuvette for standards and unknown\" (scene 5's hold-here outline returns small). On \"together\" a chip \"take three readings and average them\" fades in and is crossed (caption \"every reading has the fingerprint: reliability, not accuracy\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A four-row decision card lights on cue: \"Standards: stock × V ÷ total volume (burettes rinsed)\"; \"Blank zeroes; wavelength at the biggest absorbance\"; \"Unknown inside the linear range (dilute, then multiply back)\"; on \"know\" \"Check standard close to its known value\". On \"Next\" a chip \"Next: calibration and water-analysis data practice\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, to trust a calibration: make your standards by careful dilution, zero with a blank, and keep the unknown inside the linear range, diluting it if you must.",
+      "narrationCue": "know / Next",
+      "motionPurpose": "the board clears. A four-row decision card lights on cue: \"Standards: stock × V ÷ total volume (burettes rinsed)\"; \"Blank zeroes; wavelength at the biggest absorbance\"; \"Unknown inside the linear range (dilute, then multiply back)\"; on \"know\" \"Check standard close to its known value\". On \"Next\" a chip \"Next: calibration and water-analysis data practice\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-row decision card lights on cue: \"Standards: stock × V ÷ total volume (burettes rinsed)\"; \"Blank zeroes; wavelength at the biggest absorbance\"; \"Unknown inside the linear range (dilute, then multiply back)\"; on \"know\" \"Check standard close to its known value\". On \"Next\" a chip \"Next: calibration and water-analysis data practice\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p04-learning-review.md",
+      "sha256": "17821383315ca5c7ad913bc5f8dc707cb5f7fbd9c8827eb406b004508ad4f9cb"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p04-claude-science-check.md",
+      "sha256": "31008746bdafc6fbdffbbb4b6dc747d3078e62a42cdcdb6cfe989b0051fa2dbd"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

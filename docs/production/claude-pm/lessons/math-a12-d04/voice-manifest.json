@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d04.md",
+  "sourceSha256": "58b4f3e1eb471f524f72881423cef55417e4fe1a6d301c571571e1d62758cb02",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on this picture: the natural log curve, and log base two of x. Let's add log base ten of x as well. All three pass through the same point, one, zero, because any base to the power zero is one. But look at how they leave that point. Log base two climbs the steepest, and log base ten is the flattest. So how does the base set the slope, and by exactly how much?",
+      "audioFile": "public/audio/math-a12-d04/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Measure it, at the same x each time. At x equals one, the natural log curve has slope one, from last video. Log base two has slope about one point four four. Now move along. At x equals two, the natural log's slope is a half, and log base two's is about point seven two. At x equals four, a quarter, against about point three six. Divide one slope by the other, and you get one point four four, every time. At the same x, log base two is always one point four four times as steep.",
+      "audioFile": "public/audio/math-a12-d04/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Why one point four four? Look at the heights. At x equals four, log base two is two, because two squared is four. The natural log of four is about one point three nine, and two is one point four four times that. That's the change of base rule from Year 11. Log base two of x equals the natural log of x, divided by the natural log of two. Dividing by the natural log of two, about point six nine three, is the same as multiplying by one over it, about one point four four. That one number is the factor, and every height is multiplied by it. So log base two is the natural log curve, stretched upward.",
+      "audioFile": "public/audio/math-a12-d04/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "A vertical stretch does the same thing to slopes. Take the tangent triangle on the natural log curve at x equals two: run two, rise one, slope a half. Stretch it upward by one point four four. The run stays two, but the rise becomes one point four four. So the slope becomes about point seven two, which is one point four four times a half. Every rise at the same x is multiplied by the factor, so every slope is too.",
+      "audioFile": "public/audio/math-a12-d04/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now the proof, for any base a. The base has to be positive, and it can't be one, which we'll come back to. By the change of base rule, log base a of x equals the natural log of x, over the natural log of a. For a fixed base, the natural log of a is just a number. So this is one over the natural log of a, times the natural log of x. A constant multiple stays in front when you differentiate, and the natural log of x has derivative one over x, for positive x. So the derivative of log base a of x is one over, x times the natural log of a. Check base e. The natural log of e is one, so we get back one over x.",
+      "audioFile": "public/audio/math-a12-d04/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Try base ten. The natural log of ten is about two point three, so the factor, one over the natural log of ten, is about point four three. That squashes the curve. At x equals one, log base ten has slope about point four three, flatter than the natural log, just as the picture showed. If you put the natural log of ten on top instead, you'd get a slope of about two point three, steeper than the natural log curve. But log base ten is the flattest of the three, so the natural log of the base has to go underneath.",
+      "audioFile": "public/audio/math-a12-d04/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now turn the base, and watch the slope at x equals one. It's one over the natural log of a. At base ten, about point four three. At base e, exactly one, and the curve is the natural log itself. At base two, about one point four four. As the base gets close to one, its natural log gets close to zero, so the slope shoots up. At base one point one, it's about ten and a half. Base one itself is not allowed. One to any power is one, so no power of one gives two, and log base one doesn't exist. The formula agrees: it would divide by zero.",
+      "audioFile": "public/audio/math-a12-d04/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "What about a base below one, like a half? The natural log of a half is negative, about minus point six nine three. So the factor, one over the natural log of a half, is about minus one point four four. A negative factor stretches the natural log curve by one point four four, and also mirrors it in the x axis. So log base a half falls as x increases. Its slope at every positive x is negative. At x equals one, it's about minus one point four four. The same formula covers it: the minus sign comes from the natural log of the base.",
+      "audioFile": "public/audio/math-a12-d04/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Let's use it. Differentiate y equals log base two of x, then find the gradient at x equals four. The base is two, so d y by d x is one over, x times the natural log of two. At x equals four, that's one over, four times the natural log of two. Keep it exact like that, or round it to about point three six one. That's the slope we measured at the start.",
+      "audioFile": "public/audio/math-a12-d04/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's a way to remember it. Divide the curve, divide the slope. Log base a of x is the natural log curve divided by the natural log of a, at every x. So its slope is one over x, divided by the natural log of a too. And when the natural log of a is negative, the division also flips the curve over, so the slope turns negative.",
+      "audioFile": "public/audio/math-a12-d04/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Differentiate y equals log base five of x. Then find the exact gradient of the curve at x equals two. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d04/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The base is five, so d y by d x is one over, x times the natural log of five. At x equals two, the gradient is one over, two times the natural log of five, about point three one. Five is bigger than e, so the curve is flatter than the natural log, and point three one is less than a half. The natural log of five on top would give about point eight. That's too steep.",
+      "audioFile": "public/audio/math-a12-d04/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. For h of x equals log base a third of x, with x positive, find h prime of x. Then state whether h is increasing or decreasing, and give a reason. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d04/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "The base is a third, so h prime of x is one over, x times the natural log of a third. The natural log of a third is minus the natural log of three, which is negative. And x is positive, so h prime of x is negative for every positive x, and h is decreasing. If you used the natural log of three, you lost that minus sign, and the curve would seem to rise.",
+      "audioFile": "public/audio/math-a12-d04/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So changing the base scales the natural log curve by one over the natural log of a, and every slope at the same x scales with it. Next, we leave logs behind. Here's the sine curve. Can you read its gradient straight from the graph?",
+      "audioFile": "public/audio/math-a12-d04/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d04/scene-16.wav"
+    }
+  ]
+}

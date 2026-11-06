@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8p05/lesson.json",
+    "lessonSha256": "46b9c3969f043269d6a17609b176c1340b0c1c160acac4734bea90e15ebb941d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Four bottles, A to D, each hold one unknown organic liquid. Your job isn't to name them. It's to say which functional groups your results support, and which ones they can't rule out. That takes three tests, the right controls beside each one, and a safe plan for the one reagent that contains chromium six.",
+    "stopsAfter": "stating the aim and the candidate classes; planning three tests on fresh portions; naming the variables; choosing a blank and a known for each test and explaining what each shows; describing the fizz test with its CO₂ check and the dichromate demonstration with its quantities; recording observations before inferences; stating supported, not detected and can't-tell claims for each unknown; judging validity, reliability and accuracy; writing the risk rows and the waste routes.",
+    "nextLesson": "mass spectrometry (route chem-m8-c09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-p05.md"
+  ],
+  "teaching": {
+    "task": "Four bottles, A to D, each hold one unknown organic liquid. How do you plan and run three quick tests, with the right controls and safely around chromium(VI), so that each claim you make about a functional group would stand up?",
+    "causalExplanation": "(1) the job is supported claims, not names (1); (2) the aim, the candidate classes, the plan on fresh portions, who runs which test, and the variables (2); (3) the blank shows whether anything besides the sample caused a change; the known shows the reagent works and what a positive looks like (3); (4) bromine water by p02's method (4); (5) the carbonate test and its CO₂ check, read against the known and blank (5); (6) the dichromate demonstration: small volumes, water bath, no flame; batch 1 (6); (7) batch 2 with a repeat; green supports a 1° or 2° alcohol because there are no aldehyde candidates; orange means not detected (7); (8) record observation before inference, write in \"no visible change\", record the controls (8); (9) supported, not detected, can't tell; D (9); (10) validity, reliability, accuracy (10); (11) hazards, controls and waste (11); memory aid (12); attempts (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "Four bottles, A to D, each hold one unknown organic liquid. The aim: to test unknown organic liquids for a carbon to carbon double bond, a hydroxyl group and a carboxylic acid group. Every test needs two controls beside the unknown. You've already run the bromine water test, so use the same method, shown on the card. Put two millilitres of the unknown in a test tube. Now the dichromate test. The teacher runs A the same way, with repeats of A and D, and they stay orange. Record as you go, in a table drawn up beforehand. A fizzed, and its gas turned limewater milky, so a carboxylic acid is supported. Now the three words from the skills video. Now the risks. One line for your claims: supported, not detected, can't tell. Your turn. Not valid. Last one. The fizz and the milky limewater support a carboxylic acid. So, for any unknown organic liquid: three tests on fresh portions, a blank and a known beside each, observations before inferences, and only the claims your results support.",
+    "openingDecision": "Four bottles, A to D, each hold one unknown organic liquid. Your job isn't to name them. It's to say which functional groups your results support, and which ones they can't rule out. That takes three tests, the right controls beside each one, and a safe plan for the one reagent that contains chromium six.",
+    "understandingCheck": "Two, each 10 s with the countdown and every condition visible: A1's rinse, the four contents including the water blank, the bath, \"all four turned green\" and the conclusion; A2's candidate classes, three observations, the limewater result and the blanks. Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-01 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"conduct qualitative investigations to test for the presence in organic molecules of the following functional groups:\n- carbon–carbon double bonds\n- hydroxyl groups\n- carboxylic acids (ACSCH130)\"\n\n(The dash in \"carbon–carbon\" is an en dash as printed, not an em dash.) The tests and their reasoning were chem-m8-c08. This video is the investigation: planning it, choosing controls, running it safely, recording it and stating supported claims."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "no people, hands or faces (drops, the spatula, shaking, the bung and the dropper are coded motion); apparatus as painted plates listed by filename, never stretched, never cross-faded between different rack sets; at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card in the attempts, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; real GHS classifications, schools' own risk assessments named in the footer; Australian spelling; no em dashes; conversational narration; no absolute claims (\"supports\", \"not detected\", \"usually\"); optional key notes hold.",
+    "transitionPlan": "heading writes on: \"Unknown organics: which claims can you back?\". task line \"Aim: test unknowns for C=C, –OH, –COOH\". the board clears. task line \"Test 2: bromine water (p02 method)\". task line \"Test 1: NaHCO₃ fizz\". task line \"Test 3: acidified K₂Cr₂O₇ (teacher demonstration)\". the after plate slides left and shrinks. the board clears. the claims card fills in the right third, one row per unknown as spoken: \"A | supported: –COOH | not detected: C=C, 1° or 2° –OH\"; \"C | supported: C=C | not detected: –COOH | can't tell: –OH (no dichromate test)\"; \"B | supported: 1° or 2° –OH | not detected: C=C, –COOH\"; \"D | supported: none | not detected: C=C, –COOH, 1° or 2° –OH | can't tell: alkane or 3° alcohol\". task line \"Valid? Reliable? Accurate?\". during the speech only the current row of the risk table is on screen, large, as a single \"Hazard / Harm / Control\" line: chromium(VI) (on \"waste\"), flammable organics (on \"flame\"), bromine water (on \"Bromine vapour\"), smelling (on \"Never smell\": hazard \"vapours of unknowns\", control \"observe colour and bubbles only\"), waste (on \"sink\"). the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), set as a short results list with the blanks in grey brackets. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Unknown organics: which claims can you back?\". Four copies of p03-dropper-bottle-v1.png (blank cream labels; one plate, uniform scale) stand in a row at centre; coded letters A, B, C and D write on the labels. On \"support\" a small claims card outline writes in the right third with three empty columns \"supported | not detected | can't tell\". On \"three tests\" the c08 memory line returns small and grey above the bottles: \"fizz, fade, green\" (grey \"c08\" chip). On \"six\" a small terracotta tag \"Cr(VI)\" hangs over \"green\". Bright at the end: the heading, the four letters, the Cr(VI) tag.",
+      "teachingReason": "Four bottles, A to D, each hold one unknown organic liquid.",
+      "narrationCue": "support / three tests / six",
+      "motionPurpose": "heading writes on: \"Unknown organics: which claims can you back?\". Four copies of p03-dropper-bottle-v1.png (blank cream labels; one plate, uniform scale) stand in a row at centre; coded letters A, B, C and D write on the labels. On \"support\" a small claims card outline writes in the right third with three empty columns \"supported | not detected | can't tell\". On \"three tests\" the c08 memory line returns small and grey above the bottles: \"fizz, fade, green\" (grey \"c08\" chip). On \"six\" a small terracotta tag \"Cr(VI)\" hangs over \"green\". Bright at the end: the heading, the four letters, the Cr(VI) tag.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Unknown organics: which claims can you back?\". Four copies of p03-dropper-bottle-v1.png (blank cream labels; one plate, uniform scale) stand in a row at centre; coded letters A, B, C and D write on the labels. On \"support\" a small claims card outline writes in the right third with three empty columns \"supported | not detected | can't tell\". On \"three tests\" the c08 memory line returns small and grey above the bottles: \"fizz, fade, green\" (grey \"c08\" chip). On \"six\" a small terracotta tag \"Cr(VI)\" hangs over \"green\". Bright at the end: the heading, the four letters, the Cr(VI) tag.",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (four bottles, four claims): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "aim-plan",
+      "visualDecision": "new",
+      "visualReference": "task line \"Aim: test unknowns for C=C, –OH, –COOH\". On \"hydrocarbon\" a grey chip writes under the task line: \"candidates: hydrocarbons, alcohols, carboxylic acids (no aldehydes)\" (grey \"c08\" chip). The plan card writes in the right third, one row per phrase: \"1 NaHCO₃: fizz? (you)\", \"2 bromine water: fade? (you, p02 method)\", \"3 acidified K₂Cr₂O₇: green? (teacher demonstration)\", with a header \"fresh portion for every test\". On \"demonstration\" m7-fume-cupboard-v1.png appears small beside row 3. On \"independent\" the plan card dims and p02's variables card writes: \"Independent: which liquid is in the tube\"; \"Dependent: the observation\"; then, shown and not spoken, \"Controlled: volumes, reagent bottle, bath temperature and time, time before reading, white background\" (one item at a time, after \"see\"). Bright at the end: the variables card's three lines.",
+      "teachingReason": "The aim: to test unknown organic liquids for a carbon to carbon double bond, a hydroxyl group and a carboxylic acid group.",
+      "narrationCue": "hydrocarbon / demonstration / independent",
+      "motionPurpose": "task line \"Aim: test unknowns for C=C, –OH, –COOH\". On \"hydrocarbon\" a grey chip writes under the task line: \"candidates: hydrocarbons, alcohols, carboxylic acids (no aldehydes)\" (grey \"c08\" chip). The plan card writes in the right third, one row per phrase: \"1 NaHCO₃: fizz? (you)\", \"2 bromine water: fade? (you, p02 method)\", \"3 acidified K₂Cr₂O₇: green? (teacher demonstration)\", with a header \"fresh portion for every test\". On \"demonstration\" m7-fume-cupboard-v1.png appears small beside row 3. On \"independent\" the plan card dims and p02's variables card writes: \"Independent: which liquid is in the tube\"; \"Dependent: the observation\"; then, shown and not spoken, \"Controlled: volumes, reagent bottle, bath temperature and time, time before reading, white background\" (one item at a time, after \"see\"). Bright at the end: the variables card's three lines.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Aim: test unknowns for C=C, –OH, –COOH\". On \"hydrocarbon\" a grey chip writes under the task line: \"candidates: hydrocarbons, alcohols, carboxylic acids (no aldehydes)\" (grey \"c08\" chip). The plan card writes in the right third, one row per phrase: \"1 NaHCO₃: fizz? (you)\", \"2 bromine water: fade? (you, p02 method)\", \"3 acidified K₂Cr₂O₇: green? (teacher demonstration)\", with a header \"fresh portion for every test\". On \"demonstration\" m7-fume-cupboard-v1.png appears small beside row 3. On \"independent\" the plan card dims and p02's variables card writes: \"Independent: which liquid is in the tube\"; \"Dependent: the observation\"; then, shown and not spoken, \"Controlled: volumes, reagent bottle, bath temperature and time, time before reading, white background\" (one item at a time, after \"see\"). Bright at the end: the variables card's three lines.",
+      "motionTools": [
+        "m7-fume-cupboard-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the aim and the plan: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "blank-known",
+      "visualDecision": "new",
+      "visualReference": "the board clears. The control row draws: three tube positions in one row, labelled under them as they are named, \"blank: distilled water\" (grey), \"known: has the group\" (teal outline), \"unknown\" (navy outline), using m8-carbonate-tube-before-v1.png in all three positions. On \"something else caused it\" three small grey chips write under the blank: \"tube\", \"water\", \"reagent\". On \"ethanoic acid\" the known's label adds \"ethanoic acid (fizz test)\". On \"unknown\" a small grid writes in the right third, one row per test: \"fizz: water | ethanoic acid | unknown\", \"fade: water | cyclohexene | unknown\", \"green: water | ethanol | unknown\" (grey \"p03: blank, known, unknown\" chip). Bright at the end: the three-row grid.",
+      "teachingReason": "Every test needs two controls beside the unknown.",
+      "narrationCue": "something else caused it / ethanoic acid / unknown",
+      "motionPurpose": "the board clears. The control row draws: three tube positions in one row, labelled under them as they are named, \"blank: distilled water\" (grey), \"known: has the group\" (teal outline), \"unknown\" (navy outline), using m8-carbonate-tube-before-v1.png in all three positions. On \"something else caused it\" three small grey chips write under the blank: \"tube\", \"water\", \"reagent\". On \"ethanoic acid\" the known's label adds \"ethanoic acid (fizz test)\". On \"unknown\" a small grid writes in the right third, one row per test: \"fizz: water | ethanoic acid | unknown\", \"fade: water | cyclohexene | unknown\", \"green: water | ethanol | unknown\" (grey \"p03: blank, known, unknown\" chip). Bright at the end: the three-row grid.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The control row draws: three tube positions in one row, labelled under them as they are named, \"blank: distilled water\" (grey), \"known: has the group\" (teal outline), \"unknown\" (navy outline), using m8-carbonate-tube-before-v1.png in all three positions. On \"something else caused it\" three small grey chips write under the blank: \"tube\", \"water\", \"reagent\". On \"ethanoic acid\" the known's label adds \"ethanoic acid (fizz test)\". On \"unknown\" a small grid writes in the right third, one row per test: \"fizz: water | ethanoic acid | unknown\", \"fade: water | cyclohexene | unknown\", \"green: water | ethanol | unknown\" (grey \"p03: blank, known, unknown\" chip). Bright at the end: the three-row grid.",
+      "motionTools": [
+        "m8-carbonate-tube-before-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "blank and known: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bromine-recall",
+      "visualDecision": "new",
+      "visualReference": "task line \"Test 2: bromine water (p02 method)\". Three p02 plates on m6-white-tile-v1.png: the known m7-bromine-layers-colourless-v1.png (tag \"known: cyclohexene\"), the blank m7-bromine-water-control-v1.png (tag \"blank: water, same dilution\"), and an unknown position with m7-bromine-water-orange-v1.png (tag \"unknown\"). The method card writes small in the right third, one line at a time on \"shown on the card\" (Revision 2: the volumes are screen only): \"1.0 mL sample + 2.0 mL bromine water\", \"stopper; shake 10 s\", \"normal room light; read at once; white tile\" (grey \"p02\" chip on the card). On \"orange\" the blank's tag brightens. m7-fume-cupboard-v1.png sits faintly behind the plates (tag \"fume cupboard\"). Bright at the end: the known and blank tags.",
+      "teachingReason": "You've already run the bromine water test, so use the same method, shown on the card.",
+      "narrationCue": "shown on the card / orange",
+      "motionPurpose": "task line \"Test 2: bromine water (p02 method)\". Three p02 plates on m6-white-tile-v1.png: the known m7-bromine-layers-colourless-v1.png (tag \"known: cyclohexene\"), the blank m7-bromine-water-control-v1.png (tag \"blank: water, same dilution\"), and an unknown position with m7-bromine-water-orange-v1.png (tag \"unknown\"). The method card writes small in the right third, one line at a time on \"shown on the card\" (Revision 2: the volumes are screen only): \"1.0 mL sample + 2.0 mL bromine water\", \"stopper; shake 10 s\", \"normal room light; read at once; white tile\" (grey \"p02\" chip on the card). On \"orange\" the blank's tag brightens. m7-fume-cupboard-v1.png sits faintly behind the plates (tag \"fume cupboard\"). Bright at the end: the known and blank tags.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Test 2: bromine water (p02 method)\". Three p02 plates on m6-white-tile-v1.png: the known m7-bromine-layers-colourless-v1.png (tag \"known: cyclohexene\"), the blank m7-bromine-water-control-v1.png (tag \"blank: water, same dilution\"), and an unknown position with m7-bromine-water-orange-v1.png (tag \"unknown\"). The method card writes small in the right third, one line at a time on \"shown on the card\" (Revision 2: the volumes are screen only): \"1.0 mL sample + 2.0 mL bromine water\", \"stopper; shake 10 s\", \"normal room light; read at once; white tile\" (grey \"p02\" chip on the card). On \"orange\" the blank's tag brightens. m7-fume-cupboard-v1.png sits faintly behind the plates (tag \"fume cupboard\"). Bright at the end: the known and blank tags.",
+      "motionTools": [
+        "m6-white-tile-v1.png",
+        "m7-bromine-layers-colourless-v1.png",
+        "m7-bromine-water-control-v1.png",
+        "m7-bromine-water-orange-v1.png",
+        "m7-fume-cupboard-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "bromine water: the p02 method: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "fizz-test",
+      "visualDecision": "adjust",
+      "visualReference": "task line \"Test 1: NaHCO₃ fizz\". The control row returns with m8-carbonate-tube-before-v1.png in the three positions; on \"apparatus ready\" a coded bung and delivery-tube outline and m6-limewater-clear-v1.png are already in place beside the known's tube before anything is added (tag \"set up first; gas path open\"); on \"add\" a coded spatula outline tips a small heap into each in turn (no hands; grey tag \"addition and closure: your teacher's method\"); the method card writes: \"2 mL sample\", \"apparatus ready first\", \"small spatula of solid NaHCO₃\". On \"away\" the known cross-fades to m8-carbonate-tube-fizz-v1.png (tag \"known: fizzes\"); the blank stays (tag \"blank: no fizz\"). On \"bubbles through limewater\" the gas path's bubbles run to the limewater's delivery tube (grey tag \"lift the tube out before the fizzing stops\"); on \"milky\" it cross-fades to m6-limewater-milky-v1.png (line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\", grey). On \"Judge\" coded arrows run from the unknown tube to the known and to the blank (tag \"judge against the controls\"). Bright at the end: the two control tags and the milky limewater.",
+      "teachingReason": "Put two millilitres of the unknown in a test tube.",
+      "narrationCue": "apparatus ready / add / away / bubbles through limewater / milky / Judge",
+      "motionPurpose": "task line \"Test 1: NaHCO₃ fizz\". The control row returns with m8-carbonate-tube-before-v1.png in the three positions; on \"apparatus ready\" a coded bung and delivery-tube outline and m6-limewater-clear-v1.png are already in place beside the known's tube before anything is added (tag \"set up first; gas path open\"); on \"add\" a coded spatula outline tips a small heap into each in turn (no hands; grey tag \"addition and closure: your teacher's method\"); the method card writes: \"2 mL sample\", \"apparatus ready first\", \"small spatula of solid NaHCO₃\". On \"away\" the known cross-fades to m8-carbonate-tube-fizz-v1.png (tag \"known: fizzes\"); the blank stays (tag \"blank: no fizz\"). On \"bubbles through limewater\" the gas path's bubbles run to the limewater's delivery tube (grey tag \"lift the tube out before the fizzing stops\"); on \"milky\" it cross-fades to m6-limewater-milky-v1.png (line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\", grey). On \"Judge\" coded arrows run from the unknown tube to the known and to the blank (tag \"judge against the controls\"). Bright at the end: the two control tags and the milky limewater.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Test 1: NaHCO₃ fizz\". The control row returns with m8-carbonate-tube-before-v1.png in the three positions; on \"apparatus ready\" a coded bung and delivery-tube outline and m6-limewater-clear-v1.png are already in place beside the known's tube before anything is added (tag \"set up first; gas path open\"); on \"add\" a coded spatula outline tips a small heap into each in turn (no hands; grey tag \"addition and closure: your teacher's method\"); the method card writes: \"2 mL sample\", \"apparatus ready first\", \"small spatula of solid NaHCO₃\". On \"away\" the known cross-fades to m8-carbonate-tube-fizz-v1.png (tag \"known: fizzes\"); the blank stays (tag \"blank: no fizz\"). On \"bubbles through limewater\" the gas path's bubbles run to the limewater's delivery tube (grey tag \"lift the tube out before the fizzing stops\"); on \"milky\" it cross-fades to m6-limewater-milky-v1.png (line \"CO₂ + Ca(OH)₂ → CaCO₃(s) + H₂O\", grey). On \"Judge\" coded arrows run from the unknown tube to the known and to the blank (tag \"judge against the controls\"). Bright at the end: the two control tags and the milky limewater.",
+      "motionTools": [
+        "m8-carbonate-tube-before-v1.png",
+        "m6-limewater-clear-v1.png",
+        "m8-carbonate-tube-fizz-v1.png",
+        "m6-limewater-milky-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the fizz test, and checking the gas: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "dichromate-demo",
+      "visualDecision": "new",
+      "visualReference": "task line \"Test 3: acidified K₂Cr₂O₇ (teacher demonstration)\". m7-fume-cupboard-v1.png faint behind the centre. m7-oxidation-water-bath-before-v1.png centre; the method card writes: \"2 mL acidified K₂Cr₂O₇ per tube\", \"5 drops of liquid\", \"water bath, about 60 °C, about 5 min\" with a grey tag \"no flame: organics are flammable\" (small grey footer for teachers: \"about 0.1 mol/L K₂Cr₂O₇ in about 1 mol/L H₂SO₄, teacher-made\"). A coded dropper outline adds drops above each tube (no hands). Name chips dock above the four tubes as named: \"ethanol (known)\", \"B\", \"D\", \"water (blank)\". On \"green\" the plate cross-fades to m7-oxidation-water-bath-after-v1.png and result chips write under tubes 1 and 2: \"green\". On \"orange\" chips \"orange\" under tubes 3 and 4. Bright at the end: the four result chips (one item) and the plate.",
+      "teachingReason": "Now the dichromate test.",
+      "narrationCue": "green / orange",
+      "motionPurpose": "task line \"Test 3: acidified K₂Cr₂O₇ (teacher demonstration)\". m7-fume-cupboard-v1.png faint behind the centre. m7-oxidation-water-bath-before-v1.png centre; the method card writes: \"2 mL acidified K₂Cr₂O₇ per tube\", \"5 drops of liquid\", \"water bath, about 60 °C, about 5 min\" with a grey tag \"no flame: organics are flammable\" (small grey footer for teachers: \"about 0.1 mol/L K₂Cr₂O₇ in about 1 mol/L H₂SO₄, teacher-made\"). A coded dropper outline adds drops above each tube (no hands). Name chips dock above the four tubes as named: \"ethanol (known)\", \"B\", \"D\", \"water (blank)\". On \"green\" the plate cross-fades to m7-oxidation-water-bath-after-v1.png and result chips write under tubes 1 and 2: \"green\". On \"orange\" chips \"orange\" under tubes 3 and 4. Bright at the end: the four result chips (one item) and the plate.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Test 3: acidified K₂Cr₂O₇ (teacher demonstration)\". m7-fume-cupboard-v1.png faint behind the centre. m7-oxidation-water-bath-before-v1.png centre; the method card writes: \"2 mL acidified K₂Cr₂O₇ per tube\", \"5 drops of liquid\", \"water bath, about 60 °C, about 5 min\" with a grey tag \"no flame: organics are flammable\" (small grey footer for teachers: \"about 0.1 mol/L K₂Cr₂O₇ in about 1 mol/L H₂SO₄, teacher-made\"). A coded dropper outline adds drops above each tube (no hands). Name chips dock above the four tubes as named: \"ethanol (known)\", \"B\", \"D\", \"water (blank)\". On \"green\" the plate cross-fades to m7-oxidation-water-bath-after-v1.png and result chips write under tubes 1 and 2: \"green\". On \"orange\" chips \"orange\" under tubes 3 and 4. Bright at the end: the four result chips (one item) and the plate.",
+      "motionTools": [
+        "m7-fume-cupboard-v1.png",
+        "m7-oxidation-water-bath-before-v1.png",
+        "m7-oxidation-water-bath-after-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the dichromate demonstration: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "batch-two-claims",
+      "visualDecision": "new",
+      "visualReference": "the after plate slides left and shrinks. m7-oxidation-water-bath-before-v1.png appears at centre as batch 2, with a grey tag \"after 5 min: unchanged\" and name chips \"A\", \"A (repeat)\", \"D (repeat)\", \"water (blank)\"; result chips \"orange\" write under all four on \"stay orange\". On \"C isn't tested\" bottle C's thumbnail sits beside the bath with a grey tag \"faded bromine water: kept out of this batch\". On \"Green shows\" a card writes in the right third: \"green: something was oxidised\"; on \"no aldehydes\" the scene 2 candidate chip pulses and the card adds \"→ 1° or 2° alcohol supported\". On \"detected\" \"orange: no 1° or 2° alcohol detected\" (bright); on \"too\" a small grey \"≠ no OH\" tag with a 3° structure thumbnail (grey \"c08\" chip). Bright at the end: the two card lines.",
+      "teachingReason": "The teacher runs A the same way, with repeats of A and D, and they stay orange.",
+      "narrationCue": "stay orange / C isn't tested / Green shows / no aldehydes / detected / too",
+      "motionPurpose": "the after plate slides left and shrinks. m7-oxidation-water-bath-before-v1.png appears at centre as batch 2, with a grey tag \"after 5 min: unchanged\" and name chips \"A\", \"A (repeat)\", \"D (repeat)\", \"water (blank)\"; result chips \"orange\" write under all four on \"stay orange\". On \"C isn't tested\" bottle C's thumbnail sits beside the bath with a grey tag \"faded bromine water: kept out of this batch\". On \"Green shows\" a card writes in the right third: \"green: something was oxidised\"; on \"no aldehydes\" the scene 2 candidate chip pulses and the card adds \"→ 1° or 2° alcohol supported\". On \"detected\" \"orange: no 1° or 2° alcohol detected\" (bright); on \"too\" a small grey \"≠ no OH\" tag with a 3° structure thumbnail (grey \"c08\" chip). Bright at the end: the two card lines.",
+      "motionRole": "explain",
+      "onScreenChange": "the after plate slides left and shrinks. m7-oxidation-water-bath-before-v1.png appears at centre as batch 2, with a grey tag \"after 5 min: unchanged\" and name chips \"A\", \"A (repeat)\", \"D (repeat)\", \"water (blank)\"; result chips \"orange\" write under all four on \"stay orange\". On \"C isn't tested\" bottle C's thumbnail sits beside the bath with a grey tag \"faded bromine water: kept out of this batch\". On \"Green shows\" a card writes in the right third: \"green: something was oxidised\"; on \"no aldehydes\" the scene 2 candidate chip pulses and the card adds \"→ 1° or 2° alcohol supported\". On \"detected\" \"orange: no 1° or 2° alcohol detected\" (bright); on \"too\" a small grey \"≠ no OH\" tag with a 3° structure thumbnail (grey \"c08\" chip). Bright at the end: the two card lines.",
+      "motionTools": [
+        "m7-oxidation-water-bath-before-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "batch two, and what the colours claim: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "record",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Task line \"Record\". p03's results table writer draws in the right two thirds: columns \"Liquid | Test | Observation | Inference\". Row 1: \"A | NaHCO₃ | brisk fizz; limewater milky |\" then the inference cell unlocks with a pen tick: \"–COOH supported\". Row 2: \"D | bromine water | no visible change |\" then \"no C=C detected\". On \"negative is evidence\" the \"no visible change\" cell glows (grey chip \"site: an absence of change is also evidence\"). On \"controls\" two grey rows write: \"water (blank) | K₂Cr₂O₇ | stayed orange | blank clear\" and \"ethanol (known) | K₂Cr₂O₇ | orange → green | reagent works\". On \"trusted\" a terracotta tag hangs from the blank row: \"blank changed? → row can't be trusted\". Bright at the end: the Observation and Inference headers and the terracotta tag.",
+      "teachingReason": "Record as you go, in a table drawn up beforehand.",
+      "narrationCue": "negative is evidence / controls / trusted",
+      "motionPurpose": "the board clears. Task line \"Record\". p03's results table writer draws in the right two thirds: columns \"Liquid | Test | Observation | Inference\". Row 1: \"A | NaHCO₃ | brisk fizz; limewater milky |\" then the inference cell unlocks with a pen tick: \"–COOH supported\". Row 2: \"D | bromine water | no visible change |\" then \"no C=C detected\". On \"negative is evidence\" the \"no visible change\" cell glows (grey chip \"site: an absence of change is also evidence\"). On \"controls\" two grey rows write: \"water (blank) | K₂Cr₂O₇ | stayed orange | blank clear\" and \"ethanol (known) | K₂Cr₂O₇ | orange → green | reagent works\". On \"trusted\" a terracotta tag hangs from the blank row: \"blank changed? → row can't be trusted\". Bright at the end: the Observation and Inference headers and the terracotta tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Record\". p03's results table writer draws in the right two thirds: columns \"Liquid | Test | Observation | Inference\". Row 1: \"A | NaHCO₃ | brisk fizz; limewater milky |\" then the inference cell unlocks with a pen tick: \"–COOH supported\". Row 2: \"D | bromine water | no visible change |\" then \"no C=C detected\". On \"negative is evidence\" the \"no visible change\" cell glows (grey chip \"site: an absence of change is also evidence\"). On \"controls\" two grey rows write: \"water (blank) | K₂Cr₂O₇ | stayed orange | blank clear\" and \"ethanol (known) | K₂Cr₂O₇ | orange → green | reagent works\". On \"trusted\" a terracotta tag hangs from the blank row: \"blank changed? → row can't be trusted\". Bright at the end: the Observation and Inference headers and the terracotta tag.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "record as you go: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "claims",
+      "visualDecision": "new",
+      "visualReference": "the claims card fills in the right third, one row per unknown as spoken: \"A | supported: –COOH | not detected: C=C, 1° or 2° –OH\"; \"C | supported: C=C | not detected: –COOH | can't tell: –OH (no dichromate test)\"; \"B | supported: 1° or 2° –OH | not detected: C=C, –COOH\"; \"D | supported: none | not detected: C=C, –COOH, 1° or 2° –OH | can't tell: alkane or 3° alcohol\". Each row's three test thumbnails (fizz, fade, green states as observed) sit small at its left. On \"teacher's key\" a coded key card writes \"D = 2-methylpropan-2-ol (3° alcohol)\" with its structure, OH ringed violet. On \"holds\" a green tick lands on D's \"can't tell\" cell. Bright at the end: D's row and the tick.",
+      "teachingReason": "A fizzed, and its gas turned limewater milky, so a carboxylic acid is supported.",
+      "narrationCue": "teacher's key / holds",
+      "motionPurpose": "the claims card fills in the right third, one row per unknown as spoken: \"A | supported: –COOH | not detected: C=C, 1° or 2° –OH\"; \"C | supported: C=C | not detected: –COOH | can't tell: –OH (no dichromate test)\"; \"B | supported: 1° or 2° –OH | not detected: C=C, –COOH\"; \"D | supported: none | not detected: C=C, –COOH, 1° or 2° –OH | can't tell: alkane or 3° alcohol\". Each row's three test thumbnails (fizz, fade, green states as observed) sit small at its left. On \"teacher's key\" a coded key card writes \"D = 2-methylpropan-2-ol (3° alcohol)\" with its structure, OH ringed violet. On \"holds\" a green tick lands on D's \"can't tell\" cell. Bright at the end: D's row and the tick.",
+      "motionRole": "explain",
+      "onScreenChange": "the claims card fills in the right third, one row per unknown as spoken: \"A | supported: –COOH | not detected: C=C, 1° or 2° –OH\"; \"C | supported: C=C | not detected: –COOH | can't tell: –OH (no dichromate test)\"; \"B | supported: 1° or 2° –OH | not detected: C=C, –COOH\"; \"D | supported: none | not detected: C=C, –COOH, 1° or 2° –OH | can't tell: alkane or 3° alcohol\". Each row's three test thumbnails (fizz, fade, green states as observed) sit small at its left. On \"teacher's key\" a coded key card writes \"D = 2-methylpropan-2-ol (3° alcohol)\" with its structure, OH ringed violet. On \"holds\" a green tick lands on D's \"can't tell\" cell. Bright at the end: D's row and the tick.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "supported, not detected, can't tell: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "valid-reliable-accurate",
+      "visualDecision": "new",
+      "visualReference": "task line \"Valid? Reliable? Accurate?\". p03's three cards write one at a time in the right third. \"Validity: do the tests support the claim for these candidates?\" with three green chips per phrase: \"fresh portions\", \"clean controls\", \"candidate list: what could interfere\" (thumbnails: three arrows from one bottle, the orange blank tube, the candidate chip from scene 2). The card dims. On \"Reliable\" \"Reliability: repeat it the same way: same result?\" with D's two orange tubes from batches 1 and 2 side by side (tag \"D, twice: orange\") and a small \"another group\" plate thumbnail. The card dims. On \"Accurate\" \"Accuracy: does the claim match the true structure?\" with the key card from scene 9 small; on \"got\" a tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick.",
+      "teachingReason": "Now the three words from the skills video.",
+      "narrationCue": "Reliable / Accurate / got",
+      "motionPurpose": "task line \"Valid? Reliable? Accurate?\". p03's three cards write one at a time in the right third. \"Validity: do the tests support the claim for these candidates?\" with three green chips per phrase: \"fresh portions\", \"clean controls\", \"candidate list: what could interfere\" (thumbnails: three arrows from one bottle, the orange blank tube, the candidate chip from scene 2). The card dims. On \"Reliable\" \"Reliability: repeat it the same way: same result?\" with D's two orange tubes from batches 1 and 2 side by side (tag \"D, twice: orange\") and a small \"another group\" plate thumbnail. The card dims. On \"Accurate\" \"Accuracy: does the claim match the true structure?\" with the key card from scene 9 small; on \"got\" a tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick.",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Valid? Reliable? Accurate?\". p03's three cards write one at a time in the right third. \"Validity: do the tests support the claim for these candidates?\" with three green chips per phrase: \"fresh portions\", \"clean controls\", \"candidate list: what could interfere\" (thumbnails: three arrows from one bottle, the orange blank tube, the candidate chip from scene 2). The card dims. On \"Reliable\" \"Reliability: repeat it the same way: same result?\" with D's two orange tubes from batches 1 and 2 side by side (tag \"D, twice: orange\") and a small \"another group\" plate thumbnail. The card dims. On \"Accurate\" \"Accuracy: does the claim match the true structure?\" with the key card from scene 9 small; on \"got\" a tick. Footer, small grey: \"s07: validity, reliability, accuracy\". Bright at the end: the accuracy card and the tick.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "valid, reliable, accurate?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "new",
+      "visualReference": "during the speech only the current row of the risk table is on screen, large, as a single \"Hazard / Harm / Control\" line: chromium(VI) (on \"waste\"), flammable organics (on \"flame\"), bromine water (on \"Bromine vapour\"), smelling (on \"Never smell\": hazard \"vapours of unknowns\", control \"observe colour and bubbles only\"), waste (on \"sink\"). Each spoken row shrinks into the table as the next comes up. On \"waste\" m5x-waste-bottle-v1.png appears small with a coded label \"Heavy metal waste: chromium\"; a second copy with \"Organic waste (halogenated)\" on \"sink\". m7-fume-cupboard-v1.png small beside the bromine row. Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". On \"table\" the complete table (\"Risk table\" below) settles at a calm reading size with every row equally bright, with a small chip \"Pause to read or copy the full table\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Quiet reading hold about 5 seconds on the full table (no countdown; key note 5 summarises it).",
+      "teachingReason": "Now the risks.",
+      "narrationCue": "waste / flame / Bromine vapour / Never smell / sink / table",
+      "motionPurpose": "during the speech only the current row of the risk table is on screen, large, as a single \"Hazard / Harm / Control\" line: chromium(VI) (on \"waste\"), flammable organics (on \"flame\"), bromine water (on \"Bromine vapour\"), smelling (on \"Never smell\": hazard \"vapours of unknowns\", control \"observe colour and bubbles only\"), waste (on \"sink\"). Each spoken row shrinks into the table as the next comes up. On \"waste\" m5x-waste-bottle-v1.png appears small with a coded label \"Heavy metal waste: chromium\"; a second copy with \"Organic waste (halogenated)\" on \"sink\". m7-fume-cupboard-v1.png small beside the bromine row. Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". On \"table\" the complete table (\"Risk table\" below) settles at a calm reading size with every row equally bright, with a small chip \"Pause to read or copy the full table\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Quiet reading hold about 5 seconds on the full table (no countdown; key note 5 summarises it).",
+      "motionRole": "explain",
+      "onScreenChange": "during the speech only the current row of the risk table is on screen, large, as a single \"Hazard / Harm / Control\" line: chromium(VI) (on \"waste\"), flammable organics (on \"flame\"), bromine water (on \"Bromine vapour\"), smelling (on \"Never smell\": hazard \"vapours of unknowns\", control \"observe colour and bubbles only\"), waste (on \"sink\"). Each spoken row shrinks into the table as the next comes up. On \"waste\" m5x-waste-bottle-v1.png appears small with a coded label \"Heavy metal waste: chromium\"; a second copy with \"Organic waste (halogenated)\" on \"sink\". m7-fume-cupboard-v1.png small beside the bromine row. Glasses (m5x-safety-glasses-v1.png) and gloves (m5x-gloves-v1.png) at the table head under \"always\". On \"table\" the complete table (\"Risk table\" below) settles at a calm reading size with every row equally bright, with a small chip \"Pause to read or copy the full table\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Quiet reading hold about 5 seconds on the full table (no countdown; key note 5 summarises it).",
+      "motionTools": [
+        "m5x-waste-bottle-v1.png",
+        "m7-fume-cupboard-v1.png",
+        "m5x-safety-glasses-v1.png",
+        "m5x-gloves-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the risk assessment: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line: \"Supported, not detected, can't tell.\" Under each phrase a small thumbnail: a green tube with a clear blank beside it; an orange tube (tag \"not absent\"); D's row with the bracket \"alkane or 3° alcohol\", and C's \"–OH: no dichromate test\". A small grey second line from c08: \"Fizz, fade, green.\" Hold about 2 seconds.",
+      "teachingReason": "One line for your claims: supported, not detected, can't tell.",
+      "narrationCue": "One line for your claims: supported, not detected, can't tell",
+      "motionPurpose": "the board clears. Handwritten line: \"Supported, not detected, can't tell.\" Under each phrase a small thumbnail: a green tube with a clear blank beside it; an orange tube (tag \"not absent\"); D's row with the bracket \"alkane or 3° alcohol\", and C's \"–OH: no dichromate test\". A small grey second line from c08: \"Fizz, fade, green.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Supported, not detected, can't tell.\" Under each phrase a small thumbnail: a green tube with a clear blank beside it; an orange tube (tag \"not absent\"); D's row with the bracket \"alkane or 3° alcohol\", and C's \"–OH: no dichromate test\". A small grey second line from c08: \"Fizz, fade, green.\" Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-dichromate-green-v1.png thumbnails in a row at the right, labelled only \"1 2 3 4\" (no names, no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-dichromate-green-v1.png thumbnails in a row at the right, labelled only \"1 2 3 4\" (no names, no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Four small m8-dichromate-green-v1.png thumbnails in a row at the right, labelled only \"1 2 3 4\" (no names, no tags). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "m8-dichromate-green-v1.png",
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"green\" \"five drops of water\" and \"All four mixtures turned from orange to green\" are underlined; tube 1's thumbnail gets the tag \"blank: green ✗\"; then \"rinsed with ethanol\" is underlined (tag \"ethanol left behind → reduces Cr(VI)\"). FixRail small: \"Word: validity\"; \"Feature: ethanol-rinsed tubes; blank turned green\". On \"orange\" \"propose one improvement\" is underlined and the FixRail's \"Fix\" lights: \"distilled-water rinse, dry; blank must stay orange\"; a small m8-dichromate-orange-v1.png (tag \"blank: orange\"). On \"again\" a chip \"repeat the test\" fades in and is crossed (caption \"same residue, same green\"). Hold about 1 second.",
+      "teachingReason": "Not valid.",
+      "narrationCue": "green / orange / again",
+      "motionPurpose": "the card stays, shrunk to the top. On \"green\" \"five drops of water\" and \"All four mixtures turned from orange to green\" are underlined; tube 1's thumbnail gets the tag \"blank: green ✗\"; then \"rinsed with ethanol\" is underlined (tag \"ethanol left behind → reduces Cr(VI)\"). FixRail small: \"Word: validity\"; \"Feature: ethanol-rinsed tubes; blank turned green\". On \"orange\" \"propose one improvement\" is underlined and the FixRail's \"Fix\" lights: \"distilled-water rinse, dry; blank must stay orange\"; a small m8-dichromate-orange-v1.png (tag \"blank: orange\"). On \"again\" a chip \"repeat the test\" fades in and is crossed (caption \"same residue, same green\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"green\" \"five drops of water\" and \"All four mixtures turned from orange to green\" are underlined; tube 1's thumbnail gets the tag \"blank: green ✗\"; then \"rinsed with ethanol\" is underlined (tag \"ethanol left behind → reduces Cr(VI)\"). FixRail small: \"Word: validity\"; \"Feature: ethanol-rinsed tubes; blank turned green\". On \"orange\" \"propose one improvement\" is underlined and the FixRail's \"Fix\" lights: \"distilled-water rinse, dry; blank must stay orange\"; a small m8-dichromate-orange-v1.png (tag \"blank: orange\"). On \"again\" a chip \"repeat the test\" fades in and is crossed (caption \"same residue, same green\"). Hold about 1 second.",
+      "motionTools": [
+        "m8-dichromate-orange-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), set as a short results list with the blanks in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no claims card, no structures).",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), set as a short results list with the blanks in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no claims card, no structures).",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), set as a short results list with the blanks in grey brackets. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no claims card, no structures).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"acid\" \"brisk effervescence\" and \"turned limewater milky\" are underlined; the claims card row writes \"supported: –COOH\". On \"double bond\" \"orange to colourless within seconds\" is underlined; \"supported: C=C\" adds (bright). On \"can't tell\" \"not tested with acidified potassium dichromate\" is underlined; \"can't tell: –OH (no dichromate test)\" (grey). On \"slip\" a chip \"–COOH only: the bromine result is an error\" fades in and is crossed (caption \"one molecule, two groups\"). Hold about 1 second.",
+      "teachingReason": "The fizz and the milky limewater support a carboxylic acid.",
+      "narrationCue": "acid / double bond / can't tell / slip",
+      "motionPurpose": "the card stays, shrunk to the top. On \"acid\" \"brisk effervescence\" and \"turned limewater milky\" are underlined; the claims card row writes \"supported: –COOH\". On \"double bond\" \"orange to colourless within seconds\" is underlined; \"supported: C=C\" adds (bright). On \"can't tell\" \"not tested with acidified potassium dichromate\" is underlined; \"can't tell: –OH (no dichromate test)\" (grey). On \"slip\" a chip \"–COOH only: the bromine result is an error\" fades in and is crossed (caption \"one molecule, two groups\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"acid\" \"brisk effervescence\" and \"turned limewater milky\" are underlined; the claims card row writes \"supported: –COOH\". On \"double bond\" \"orange to colourless within seconds\" is underlined; \"supported: C=C\" adds (bright). On \"can't tell\" \"not tested with acidified potassium dichromate\" is underlined; \"can't tell: –OH (no dichromate test)\" (grey). On \"slip\" a chip \"–COOH only: the bromine result is an error\" fades in and is crossed (caption \"one molecule, two groups\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. A four-row decision card lights on cue: \"Plan: fizz, fade, green; fresh portion each\"; \"Control: blank and known beside every unknown\"; \"Safety: Cr(VI) teacher demonstration, fume cupboard, small volumes; no flames\"; \"Claim: supported, not detected, can't tell\". On \"Next\" bottle D returns with the tag \"3° alcohol ... how heavy?\" and a chip \"Next: mass spectrometry\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, for any unknown organic liquid: three tests on fresh portions, a blank and a known beside each, observations before inferences, and only the claims your results support.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A four-row decision card lights on cue: \"Plan: fizz, fade, green; fresh portion each\"; \"Control: blank and known beside every unknown\"; \"Safety: Cr(VI) teacher demonstration, fume cupboard, small volumes; no flames\"; \"Claim: supported, not detected, can't tell\". On \"Next\" bottle D returns with the tag \"3° alcohol ... how heavy?\" and a chip \"Next: mass spectrometry\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-row decision card lights on cue: \"Plan: fizz, fade, green; fresh portion each\"; \"Control: blank and known beside every unknown\"; \"Safety: Cr(VI) teacher demonstration, fume cupboard, small volumes; no flames\"; \"Claim: supported, not detected, can't tell\". On \"Next\" bottle D returns with the tag \"3° alcohol ... how heavy?\" and a chip \"Next: mass spectrometry\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p05c-learning-review.md",
+      "sha256": "855072ca544daafa2efe6eec9463e9dd57860b8f2004629ad497951114c04dbe"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8p05c-claude-science-check.md",
+      "sha256": "db77e854bfad19987188c393095b996615739aeb344ae249d58e0882e9feae9c"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

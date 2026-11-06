@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C08-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c08/lesson.json",
+  "lessonSha256": "da1177e56bdb88ffb6fdc64ea49e397ddb8a277406ed287122a1ab384a7511f0",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c08/lesson.production-brief.json",
+    "sha256": "477b19dc24cffea028bef540e45431d934d96e839bfba292de7e09c78c8efe7f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Five bottles on the prep room bench have lost their labels. The list says they hold cyclohexane, cyclohexene, ethanol, 2-methylpropan-2-ol and ethanoic acid. They're all colourless liquids, so looking won't help. You can't see a double bond or an O H group, but you can see what it does. Three quick tests, each watching for one group, can rule candidates out.",
+      "hash": "29f7e0f8c26b",
+      "textSha256": "29f7e0f8c26b21229273ca25254458a2f7be3ba699d26dbbcd4c5b770307d81c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/hook.29f7e0f8c26b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/hook.29f7e0f8c26b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/hook.29f7e0f8c26b.generation.json",
+      "plannedRequestSha256": "a0d9db84d2b52db91f6abb58ca0a08b2ec8f984ccb1da985e6277b99d17d6000"
+    },
+    {
+      "id": "reaction-you-can-see",
+      "parentSceneId": "reaction-you-can-see",
+      "text": "Each test borrows a reaction from Module 7. The trick is to pick a reaction that only one of these groups does quickly, with a change you can see: a colour that goes, a colour that changes, or a gas that fizzes. So before you test, predict. Which group adds bromine? Which group is acidic enough to react with a carbonate? And which group can be oxidised?",
+      "hash": "27b0f935089b",
+      "textSha256": "27b0f935089b53f78b8089181cadae05e514c48acae53edf9582d9fbf3adf905",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/reaction-you-can-see.27b0f935089b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/reaction-you-can-see.27b0f935089b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/reaction-you-can-see.27b0f935089b.generation.json",
+      "plannedRequestSha256": "8c1d717f813804a27bdcc9552eb602f523e98fda7938f681e919fd491f13c38a"
+    },
+    {
+      "id": "cc-fade",
+      "parentSceneId": "cc-fade",
+      "text": "First, the carbon to carbon double bond. Add a few drops of orange bromine water and shake. Bromine adds across the double bond and gets used up, so the orange colour fades within seconds. You ran this test in the bromine water practical. An alkane has no double bond to open, so it stays orange. On our list, cyclohexene fades it and cyclohexane doesn't. Bright light lets an alkane react slowly, so test in normal room light and read it at once.",
+      "hash": "367e9d469551",
+      "textSha256": "367e9d469551701491e06b75e528661928d991321a906d8cd45060724b77d46a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cc-fade.367e9d469551.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cc-fade.367e9d469551.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cc-fade.367e9d469551.generation.json",
+      "plannedRequestSha256": "14753b3c8a45aa3e6dfd4a59a5e3616c802b59800c343df475ae88b06626b421"
+    },
+    {
+      "id": "cooh-fizz",
+      "parentSceneId": "cooh-fizz",
+      "text": "Next, the carboxylic acid. Add sodium hydrogen carbonate. A carboxylic acid is a stronger acid than carbonic acid, so it gives the hydrogen carbonate a proton. The carbonic acid breaks up into water and carbon dioxide, and the tube fizzes. Bubble that gas through limewater, and it turns milky, which confirms carbon dioxide. An alcohol is far too weak an acid to do this, so it doesn't fizz.",
+      "hash": "410690af92b5",
+      "textSha256": "410690af92b58bf954d30651ec1a855c884d2ab9d8063fbd9560da7dace12f0e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cooh-fizz.410690af92b5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cooh-fizz.410690af92b5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/cooh-fizz.410690af92b5.generation.json",
+      "plannedRequestSha256": "58eb4048da1549ec987eed24a9909d12e20d7d09bd6de09b67bc8055e4f3a798"
+    },
+    {
+      "id": "oh-green",
+      "parentSceneId": "oh-green",
+      "text": "Then the hydroxyl group. Warm the sample with acidified potassium dichromate. A primary or secondary alcohol is oxidised, and the orange dichromate ions are reduced to green chromium three ions. Ethanol is a primary alcohol, so it turns green. A tertiary alcohol has no hydrogen on its O H carbon, so it stays orange. Alkanes and ethanoic acid usually leave it orange too. Esterification is a second hydroxyl test, but it relies on judging a smell, so here dichromate does the work.",
+      "hash": "f19023eb4e78",
+      "textSha256": "f19023eb4e7886b7e28c8577c17e4d2139dd8002f48851c099784e338094f969",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/oh-green.f19023eb4e78.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/oh-green.f19023eb4e78.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/oh-green.f19023eb4e78.generation.json",
+      "plannedRequestSha256": "2657967936f5cfd381d45a6e1f0be24eeebfa15ee0bdb99bf55784fb39a20f02"
+    },
+    {
+      "id": "green-limits",
+      "parentSceneId": "green-limits",
+      "text": "Green tells you something in the tube was oxidised. Aldehydes do that too, so green points to a primary or secondary alcohol only when aldehydes aren't among the candidates. On our list, they aren't. An alkene might also turn it green, so after a bromine fade, green alone can't prove an O H group. And orange doesn't prove there's no O H group. A tertiary alcohol has one, and stays orange anyway. So orange means no primary or secondary alcohol was detected.",
+      "hash": "37d7b25f9ef0",
+      "textSha256": "37d7b25f9ef07faa749551d15db8579579edc8b0a7756b405b7ad71c177a768c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/green-limits.37d7b25f9ef0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/green-limits.37d7b25f9ef0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/green-limits.37d7b25f9ef0.generation.json",
+      "plannedRequestSha256": "93dfe163a47e1653d5918b1b8dccab4362266aabd7bdef9ddd8e85cffbb10d17"
+    },
+    {
+      "id": "order",
+      "parentSceneId": "order",
+      "text": "Use a fresh portion of the sample for each test, so one reagent can't spoil the next result. Then the order doesn't change any result. It changes how much hazard you face. Start with the mildest reagent, sodium hydrogen carbonate, then bromine water. Dichromate contains chromium six, so it comes last, as a teacher demonstration in a fume cupboard.",
+      "hash": "d9b2c6e32e5f",
+      "textSha256": "d9b2c6e32e5fa7c18c713d638107801ee73eb40cc2168efc1b286e3209d22e62",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/order.d9b2c6e32e5f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/order.d9b2c6e32e5f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/order.d9b2c6e32e5f.generation.json",
+      "plannedRequestSha256": "f81f370318d90f952ba9fa91cbe150200bc4353616ed41727fca97d7b0a117b2"
+    },
+    {
+      "id": "two-groups",
+      "parentSceneId": "two-groups",
+      "text": "Here's the trap. A yes for one group doesn't mean no for the others. Prop-2-en-1-ol has a double bond and an O H group, as its structure shows. It fades bromine water, so it looks like an alkene. It also turns dichromate green, which fits its alcohol group, though the double bond might add to that. If you stopped at the first yes, you'd never look for the alcohol. In the same way, an acid with a double bond would fizz and fade. So run all three tests, and report each group on its own.",
+      "hash": "f82d1451bbea",
+      "textSha256": "f82d1451bbea772df5fb715033fc6430a5c24aa05f0ff3ec9c3c553ce0b114bb",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/two-groups.f82d1451bbea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/two-groups.f82d1451bbea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/two-groups.f82d1451bbea.generation.json",
+      "plannedRequestSha256": "d2624f9ba20cadcb91080f1a406c78ad3afa618938830e71cffd2cf3d5c2bf2a"
+    },
+    {
+      "id": "excluding",
+      "parentSceneId": "excluding",
+      "text": "Back to the bench. One bottle gives no fizz, so ethanoic acid is out. Bromine water stays orange, so cyclohexene is out. Dichromate turns green, so cyclohexane and the tertiary alcohol are out, because both would stay orange. Only ethanol fits all three results. Notice that the no results did half the work, so write down every result, even when nothing happens. Every no rules a candidate out.",
+      "hash": "48f156ad3eb4",
+      "textSha256": "48f156ad3eb469783a0cf25bdef57f64cf99f020a20febbc84c5fa26673504c3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/excluding.48f156ad3eb4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/excluding.48f156ad3eb4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/excluding.48f156ad3eb4.generation.json",
+      "plannedRequestSha256": "25aefab2ead0d90368de820b05cba11d9e76bb19344fd4d5e1b18ab92c2ebc50"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "Suppose another bottle had given no change in all three tests. That fits cyclohexane, and it fits 2-methylpropan-2-ol, so these tests can't separate them. You'd need different evidence, like an infrared spectrum, which shows an O H band. They also can't say whether an alcohol is primary or secondary, or where a double bond sits. They show which groups are present, not the whole structure. For that, you'll use the spectra coming up in this module.",
+      "hash": "09e6050ab411",
+      "textSha256": "09e6050ab411a44b96d2e118f4bc423e6edc755b6edfe74bb91639d751fa5611",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/limits.09e6050ab411.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/limits.09e6050ab411.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/limits.09e6050ab411.generation.json",
+      "plannedRequestSha256": "ac343ff17d04e7e763c5d064e8d3234a7f8e6f8175b7f71ac9b1788c673f7b26"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line for the three tests: fizz, fade, green. Fizz for a carboxylic acid, fade for a double bond, green for a primary or secondary alcohol. Run all three, each on a fresh portion.",
+      "hash": "c99d544f4851",
+      "textSha256": "c99d544f485145728c9a11259e3e295d0b5c32148fd81cc584599eac6d56e390",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/memory-aid.c99d544f4851.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/memory-aid.c99d544f4851.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/memory-aid.c99d544f4851.generation.json",
+      "plannedRequestSha256": "a6ce2c812451516b7cad4078231764b0bcd3794e228790e631e99bafab2b5be3"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. An unknown is one of the four compounds on the card. It gives no fizz with sodium hydrogen carbonate, it decolourises bromine water within seconds, and it turns acidified dichromate green. Identify the unknown, and justify your answer. Pause here to answer.",
+      "hash": "42704e0471bd",
+      "textSha256": "42704e0471bddda198a23bfc5317153ecc186ff9621ec6fd988d774f190cece2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-1.42704e0471bd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-1.42704e0471bd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-1.42704e0471bd.generation.json",
+      "plannedRequestSha256": "51bafcdde5fb99d9fcf1e8d96cc80a4e8264f88c704dc0b7afaa536174dbe1bc"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "No fizz rules out hexanoic acid. The fading bromine water points to a double bond, which rules out hexane and hexan-1-ol. Only hex-5-en-1-ol is left, and its green dichromate result fits its O H group. Picking hexan-1-ol because the dichromate went green is the slip: every result has to fit.",
+      "hash": "ff33e6e2e859",
+      "textSha256": "ff33e6e2e859ddd8989c9c86bca864b60137fb1fe45c69fdf72a51ea1c21e234",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-1.ff33e6e2e859.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-1.ff33e6e2e859.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-1.ff33e6e2e859.generation.json",
+      "plannedRequestSha256": "8cd36d6eb7fd95523d0dcef1569e15a47cee440312bed97e636888564f903705"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Liquid Q is an alkane, an alkene, an alcohol or a carboxylic acid. It gives no fizz with sodium hydrogen carbonate, and a student concludes that Q is an alcohol. Evaluate this conclusion. Then outline two further tests, saying what each result would support, and one limit. Pause here to answer.",
+      "hash": "0e12f1272d36",
+      "textSha256": "0e12f1272d36572a433c8a0d624be9e6554d9e9e396578c7433e0305af1fd1ae",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-2.0e12f1272d36.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-2.0e12f1272d36.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/attempt-2.0e12f1272d36.generation.json",
+      "plannedRequestSha256": "a4d101f2534142be4bfe8aeff73f2de8b21ab56af4ed1377d8e3731d3aaa4cf0"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The conclusion isn't supported. No fizz only rules out a carboxylic acid, so Q could still be an alkane, an alkene or an alcohol. On a fresh portion, a bromine fade supports a double bond. Warm another with dichromate: if the bromine stayed orange, green supports a primary or secondary alcohol. One limit: a tertiary alcohol would stay orange. Treating one no as a yes for something else is the trap.",
+      "hash": "d9a301dab320",
+      "textSha256": "d9a301dab320233928c980ce3d120d0f2195540264d76ed8d639b15f918786ba",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-2.d9a301dab320.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-2.d9a301dab320.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/feedback-2.d9a301dab320.generation.json",
+      "plannedRequestSha256": "3a78e084147e9c9b6f321fffbd7a8637d76720530900cf2d5fee479eefe8edab"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, when you meet an unknown, ask three questions. Does it fizz, does bromine water fade, does dichromate turn green? Answer each on a fresh portion, let every no rule candidates out, and report each group the results support. Next, the practical: running these tests safely, with the right controls.",
+      "hash": "4c28c956e550",
+      "textSha256": "4c28c956e550221a91b23c016140bed785c53db104adcb7fa0c8f94afbd81913",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/decision-handoff.4c28c956e550.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/decision-handoff.4c28c956e550.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/decision-handoff.4c28c956e550.generation.json",
+      "plannedRequestSha256": "e9c34fb644f26acde6572f6d57451a1b5c3b9305c1aa163068d9cfe584e9d0c0"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C08-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

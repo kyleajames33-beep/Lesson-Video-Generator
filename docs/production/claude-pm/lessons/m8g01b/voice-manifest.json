@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-G01-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8g01b/lesson.json",
+  "lessonSha256": "28530d9ebb10d641517e5917ac9c1cec111adc4075fb4e9293a667f0586d34f1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8g01b/lesson.production-brief.json",
+    "sha256": "0ec4313c728377f5ccf6f81d452f418174d740cb86b4440e08cf8869543cdc70"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Epidemiology questions in the HSC tend to ask for three things. Calculate a rate from new data, draw a graph of rates, and judge whether a study supports its claim. Here are three HSC-style questions, one of each. Pause and try each one properly, then we'll work through it together.",
+      "hash": "05283597a833",
+      "textSha256": "05283597a833b6febbdafcc75c0fe05a9560349664f9eb530b8b98ed60be6645",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/hook.05283597a833.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/hook.05283597a833.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/hook.05283597a833.generation.json",
+      "plannedRequestSha256": "b7c2e3bfd9fd45adf92d31f50b9a5f05656ac91ec31767021411e81e7d65ba5c"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Two regions recorded type 2 diabetes for one year. Region P has one point two million people, with six thousand six hundred new diagnoses and three hundred deaths. Region Q has a hundred and fifty thousand people, with one thousand and fifty new diagnoses and fifty-four deaths. Calculate the incidence and mortality rates per hundred thousand for each region. Then evaluate the claim that Region P has the worse diabetes problem. Pause here to answer.",
+      "hash": "7da48d433094",
+      "textSha256": "7da48d433094e62de454ad869e20ba3a57e16f4b33cbd9ff4c282340cccefc19",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-question.7da48d433094.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-question.7da48d433094.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-question.7da48d433094.generation.json",
+      "plannedRequestSha256": "7ab5b7e3eea2ce11f9e731d8fe071025786152cb18242c3b4fcc57766f7f4e61"
+    },
+    {
+      "id": "q1-calc",
+      "parentSceneId": "q1-calc",
+      "text": "Rates first, laid out as equation, substitute, solve, sense check. Incidence is new cases over the population, times a hundred thousand. For P, six thousand six hundred over one point two million, times a hundred thousand, is five hundred and fifty per hundred thousand per year. For Q, one thousand and fifty over a hundred and fifty thousand gives seven hundred. Mortality puts deaths on top. Three hundred over one point two million gives twenty-five, and fifty-four over a hundred and fifty thousand gives thirty-six. Sense check: Q is the smaller region, yet both its rates are higher.",
+      "hash": "39b4378cb205",
+      "textSha256": "39b4378cb20596a2993e8ec132ba7d9dd0ba01db256d0fce8f3c6342f67a7f32",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-calc.39b4378cb205.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-calc.39b4378cb205.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-calc.39b4378cb205.generation.json",
+      "plannedRequestSha256": "aafaaa845faa8c0b3b1188fc2549d583f6fa32c71d0e9e9ab3669eed34c5cca2"
+    },
+    {
+      "id": "q1-claim",
+      "parentSceneId": "q1-claim",
+      "text": "Now the claim. P had more cases mainly because it has eight times as many people. Out of every hundred thousand people, Q had more new cases and more deaths, so the claim isn't supported. But before saying people in Q face a higher risk, check their ages. Type 2 diabetes becomes more common with age, so an older population would have a higher rate, even if the risk at each age were the same. Age-standardised rates, adjusted as if both regions had the same age mix, would make that comparison fairer.",
+      "hash": "0be1d06df58e",
+      "textSha256": "0be1d06df58e7b54589b41be2f1b410e421492a93ad31eb192a94efbda8bd353",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-claim.0be1d06df58e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-claim.0be1d06df58e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-claim.0be1d06df58e.generation.json",
+      "plannedRequestSha256": "d034ed08bd5711d96942cf7397cdf3e658e983772e7aa8539f2c8ec7a23c177c"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is comparing raw counts. A bigger population gives more cases even when the risk is the same. Here, the region with fewer cases had the higher rates. Turn every count into a rate before you compare.",
+      "hash": "b8e5cb9da57c",
+      "textSha256": "b8e5cb9da57ccad47ad2b88db7a5e313a66f9ef1d818221f88723685005ff5da",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-mistake.b8e5cb9da57c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-mistake.b8e5cb9da57c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-mistake.b8e5cb9da57c.generation.json",
+      "plannedRequestSha256": "abf3fa5c4ac3040e4464372b7f08af0c8d769eec4002e4e71ba0802aa59e7cd0"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. The table gives melanoma incidence and mortality rates in Australia, per hundred thousand people, from 1985 to 2020. Draw a line graph of both rates on one set of axes. Then describe the trend in each rate, and explain why the two rates differ so much. Pause here to answer.",
+      "hash": "39f6c36de2e1",
+      "textSha256": "39f6c36de2e1aa390858969c60a6a7c473f8634e9fb8ce2644da7abb59c0a5aa",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-question.39f6c36de2e1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-question.39f6c36de2e1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-question.39f6c36de2e1.generation.json",
+      "plannedRequestSha256": "6e9b536cda181fe644fea503096a3a80f530093df928548e5bd1c9e16726ad07"
+    },
+    {
+      "id": "q2-graph",
+      "parentSceneId": "q2-graph",
+      "text": "Set up the graph before you plot anything. Year goes on the x axis, because it's the independent variable. The rate goes on the y axis, with its unit, per hundred thousand people per year. Both rates share that unit, so one axis works. Look at the years: they jump by ten, then by five at the end, so space them to scale. For the y axis, choose an even scale that fits the largest value, fifty-two: zero to sixty in tens. Plot each point, then join each set with its own ruled line, because each value is a whole year's rate, and add a key and a title. That's TAILS: title, axes, intervals, labels, scale.",
+      "hash": "c4777813a39b",
+      "textSha256": "c4777813a39b577ce8bbfc0df8b3cd9767a0fc687fdc4e09a457e6f0a094e757",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-graph.c4777813a39b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-graph.c4777813a39b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-graph.c4777813a39b.generation.json",
+      "plannedRequestSha256": "ca40bcbb7b01bd76cdb4f29f24185812363befd3a6b35446bfcf15bdd7109908"
+    },
+    {
+      "id": "q2-describe",
+      "parentSceneId": "q2-describe",
+      "text": "Now describe and explain. Incidence rose from thirty-eight in 1985 to fifty-two in 2015, then fell slightly to fifty. Mortality stayed far lower, around six, and fell to about five by 2020. They differ because most melanomas are found early, while they're still thin, and cut out, so far fewer people die than are diagnosed. Deaths in one year include people diagnosed in earlier years, so these lines don't directly give survival. The recent fall in deaths fits better treatment, but this graph alone can't show that.",
+      "hash": "931f9431dd49",
+      "textSha256": "931f9431dd490281fb4eb0194e199445d938442330da38c579e96a27f6b7b851",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-describe.931f9431dd49.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-describe.931f9431dd49.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-describe.931f9431dd49.generation.json",
+      "plannedRequestSha256": "3b47b76706032ce733fe85de1900ad7f0f97f11512f4e06705597f2c32b23528"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is starting the y axis at thirty, to fit the incidence line. Then the mortality points fall off the graph. Choose one scale that fits every value. And space the years to scale, or the last five years look like ten.",
+      "hash": "0fa355d9e8de",
+      "textSha256": "0fa355d9e8de1c431d4e584843986b351bebf35b07aaf065c04d1e079a21c0f8",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-mistake.0fa355d9e8de.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-mistake.0fa355d9e8de.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-mistake.0fa355d9e8de.generation.json",
+      "plannedRequestSha256": "f07f509d1eea9341c98dc43c361bbd58f847d59f4bb5fb76cca8977d86d9ecc3"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A survey asked two thousand adults in one city whether they drink an energy drink every day, and whether they're currently living with diagnosed type 2 diabetes. Of four hundred daily drinkers, thirty-six had diabetes. Of sixteen hundred other adults, sixty-four had diabetes. A website claims that energy drinks cause type 2 diabetes. Calculate the prevalence of diabetes in each group. Then evaluate the method and the claim. Pause here to answer.",
+      "hash": "96450653cbe3",
+      "textSha256": "96450653cbe349d02203bd5a49c09af3d263260e19613c16b092065a047ce014",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-question.96450653cbe3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-question.96450653cbe3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-question.96450653cbe3.generation.json",
+      "plannedRequestSha256": "a28d0f9db3be47da28d86f6eef3f108bbba206136a31b410307d67aa42c5bc42"
+    },
+    {
+      "id": "q3-calc",
+      "parentSceneId": "q3-calc",
+      "text": "Prevalence is existing cases out of the group, as a percentage. Thirty-six over four hundred is nine per cent. Sixty-four over sixteen hundred is four per cent, so diabetes was about twice as common among daily drinkers. Now name the design. Both things were measured at one moment, so it's a cross-sectional study, a snapshot. Its strength: it's quick, and it measures prevalence among the respondents.",
+      "hash": "063f72ef8181",
+      "textSha256": "063f72ef8181f32683ee9b3eb524788963515cd113618c44ebd7b56b56625a06",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-calc.063f72ef8181.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-calc.063f72ef8181.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-calc.063f72ef8181.generation.json",
+      "plannedRequestSha256": "8c510553e8d259a8f4a6109c603d4ed230b274be6fdee7479328f2a968914421"
+    },
+    {
+      "id": "q3-evaluate",
+      "parentSceneId": "q3-evaluate",
+      "text": "Now the limitations. A snapshot can't show which came first, so some people may have changed their drinking after diagnosis. Daily drinkers may also differ in diet, weight, sleep or age, and any of those could be the real cause, so they're possible confounders. The answers were self-reported, online, from one city. So the data show an association, not a cause, and the claim goes too far. A stronger test is a cohort: record drinks in adults without diabetes, follow them forward, and compare who develops it, adjusting for confounders.",
+      "hash": "6dc55b19a155",
+      "textSha256": "6dc55b19a1551c4a86a2da3e28b3e4c74709386b8afd2188a3d0d64a9f601540",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-evaluate.6dc55b19a155.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-evaluate.6dc55b19a155.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-evaluate.6dc55b19a155.generation.json",
+      "plannedRequestSha256": "7485a7575ae6480273b4ce77a04431e2e7a6627144cd1ac08da122fab330fab5"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is thinking two thousand people makes the claim proven. More responses can reduce random uncertainty, but don't remove selection bias or fix the design. A snapshot still can't show a cause. For that, you need the order in time, and a way to deal with confounders.",
+      "hash": "e8c53dcc77c5",
+      "textSha256": "e8c53dcc77c536c6c72514b4724a91d560d1420e49241a9560bc65f3c4c6b72b",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-mistake.e8c53dcc77c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-mistake.e8c53dcc77c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-mistake.e8c53dcc77c5.generation.json",
+      "plannedRequestSha256": "93ab1d185f1f296d796702765d54c3838b8b7b12a353300f84c2b03058e3b635"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So, here's your first move for each type. For a rate, divide by the right population, and use the same unit for every group. For a graph, set up the axes, units and an even scale that fits every value, before you plot. For a study, name the design, then judge what it can and can't show. Next: how type 2 diabetes can be managed.",
+      "hash": "43b7c858e683",
+      "textSha256": "43b7c858e6830ffb0d124d8ef7f8d17d3a2623c84a584b1a535f4a268b11b0c6",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/decision-board.43b7c858e683.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/decision-board.43b7c858e683.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/decision-board.43b7c858e683.generation.json",
+      "plannedRequestSha256": "3e1b4be451b20b4e1134a8a108f7d23cb0c1a1902d738fcdf5e6f5e1c3ebf7f8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

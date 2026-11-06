@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C04-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c04/lesson.json",
+  "lessonSha256": "262e480f4cb7ae30712e80ee353ffdae5630d70f935f3bf7e3d510386164d3c8",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c04/lesson.production-brief.json",
+    "sha256": "b1138d8eb2084e48d20c16067cec66a822c38d0776b1f985060f6f607acbaf1b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two beakers of tap water look exactly the same. One holds lead above the drinking water guideline, just a few millionths of a gram in every litre. You can't see that, and no precipitate test would show so little. Now a copper solution: the deeper the blue, the more copper. Both are questions about how much, and light can answer both. So how do colour and absorption measure concentration?",
+      "hash": "28de5c08c15c",
+      "textSha256": "28de5c08c15c2343ace97f7787993dfdd6592d86b9babbcb77b82ca32711896e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/hook.28de5c08c15c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/hook.28de5c08c15c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/hook.28de5c08c15c.generation.json",
+      "plannedRequestSha256": "f45aa942472f105df7a41f20dfe44e5cd5897de486ca72abd768446861a63d51"
+    },
+    {
+      "id": "which-light",
+      "parentSceneId": "which-light",
+      "text": "You met the colourimeter in Module 5. Light passes through a cuvette, the solution absorbs some of it, and the meter reports absorbance. A blank sets zero, and absorbance rises in step with concentration. So which light should you use? A copper solution looks blue because it absorbs orange and red light and lets the blue through. So you measure with the colour it absorbs, not the colour you see. In a colourimeter, that's a red or orange filter.",
+      "hash": "2de0e3db8408",
+      "textSha256": "2de0e3db8408e0ab5e8bb9123c307b2705687b3e8671418e4b39852be0b33c64",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-light.2de0e3db8408.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-light.2de0e3db8408.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-light.2de0e3db8408.generation.json",
+      "plannedRequestSha256": "6f022cfc96745ed0b118951a50e460e8181ab1c60863fd253845af71d3d3b6b6"
+    },
+    {
+      "id": "uv-visible",
+      "parentSceneId": "uv-visible",
+      "text": "A filter lets through a whole band of colours, though. A UV-visible spectrophotometer does better. Inside, a grating spreads the light into a rainbow, and a narrow slit picks out one wavelength. It reaches into ultraviolet too, so some colourless substances can be measured.",
+      "hash": "af7c2274595f",
+      "textSha256": "af7c2274595ff645cceabd39de543eb53a14d92fd29829b63adf9a2163b42b02",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/uv-visible.af7c2274595f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/uv-visible.af7c2274595f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/uv-visible.af7c2274595f.generation.json",
+      "plannedRequestSha256": "983bdbb86578213047110921f89d028480f66e68270494e6c6ec0ad1c441e330"
+    },
+    {
+      "id": "spectrum",
+      "parentSceneId": "spectrum",
+      "text": "Step through the wavelengths, measuring at each, and you get an absorption spectrum. For the deep blue copper ammonia complex, the peak sits near six hundred nanometres, in the orange. Measure there, at the peak, called lambda max. Absorbance changes most with concentration at the peak, and the top is fairly flat, so a tiny slip in wavelength barely changes the reading.",
+      "hash": "74339af1dbd3",
+      "textSha256": "74339af1dbd35c9f6306ffbaebeb9285ed4e80f0fd0435b34d1f9e0d2abdda30",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/spectrum.74339af1dbd3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/spectrum.74339af1dbd3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/spectrum.74339af1dbd3.generation.json",
+      "plannedRequestSha256": "1647854779bb434326f3a0aa1802be4f1fa39018431be6da8d018f05cab7ff84"
+    },
+    {
+      "id": "complex",
+      "parentSceneId": "complex",
+      "text": "Why use the ammonia complex at all? Copper ions in water are pale blue and absorb only weakly. Ammonia molecules bond around each copper ion, making the deep blue complex from the cation video, and it absorbs several times more strongly. So even low concentrations give a clear reading. Add the ammonia in excess, to the standards and the sample alike, so every copper ion ends up in the complex.",
+      "hash": "0fa6e9a3ae1a",
+      "textSha256": "0fa6e9a3ae1a3340df29b0c4d72200f47e4b969f5e42f221babe612d26473eff",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/complex.0fa6e9a3ae1a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/complex.0fa6e9a3ae1a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/complex.0fa6e9a3ae1a.generation.json",
+      "plannedRequestSha256": "637b2ac9f5b74aaf56636b9e1c2418f0101df4c99dd6c030ef35c843ab55c322"
+    },
+    {
+      "id": "beer-lambert",
+      "parentSceneId": "beer-lambert",
+      "text": "The law behind this is Beer-Lambert: A equals epsilon l c. Say a solution reads an absorbance of point four eight zero, epsilon is a hundred and twenty litres per mole per centimetre, and the cuvette is one centimetre wide. Rearrange for c, absorbance over epsilon times l, and that's point zero zero four zero zero moles per litre. A book value of epsilon may not suit your instrument's light, though, so chemists usually trust a calibration line made on their own instrument.",
+      "hash": "97ea78e65f6a",
+      "textSha256": "97ea78e65f6a0d07b1f411cc8b461420c99e6df6f46418bfcc4844449264fb6d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/beer-lambert.97ea78e65f6a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/beer-lambert.97ea78e65f6a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/beer-lambert.97ea78e65f6a.generation.json",
+      "plannedRequestSha256": "67bdf7c6be76636183b516c9c4c3fed8b30a843d69437fee83775e3c37e2ac64"
+    },
+    {
+      "id": "aas-atomise-absorb",
+      "parentSceneId": "aas-atomise-absorb",
+      "text": "Lead ions are colourless, and far too dilute for any colour test. So for metals at trace levels, chemists use atomic absorption spectroscopy, or AAS. The sample is sprayed into a flame. The water evaporates, and the heat breaks the lead compounds apart into free lead atoms. That's called atomising. A hollow cathode lamp, with its cathode made of lead, shines lead's own wavelengths through the flame. Lead atoms absorb those wavelengths as their electrons jump to higher energy levels, and the detector measures how much light went missing.",
+      "hash": "aaf2c6c87628",
+      "textSha256": "aaf2c6c8762818abc3d1c86a02d51801572fa301f057e500cd7758652168c1dc",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-atomise-absorb.aaf2c6c87628.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-atomise-absorb.aaf2c6c87628.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-atomise-absorb.aaf2c6c87628.generation.json",
+      "plannedRequestSha256": "cb3cd3f9767b8f96a9347027f8b3b084a79aedcfa3b5b699b44040195092dec5"
+    },
+    {
+      "id": "aas-specific",
+      "parentSceneId": "aas-specific",
+      "text": "Other atoms in the flame need different energies, so they let lead's light pass. In a flame test, heated atoms give out their own colours. In AAS, atoms in the flame take in those same wavelengths from the lamp. So AAS measures atoms in the flame, not ions in the solution. That makes it specific. For the lowest levels, like lead in drinking water, a heated graphite tube replaces the flame. The costs: one lamp means one element at a time, and other substances in the sample can change how many atoms form, so standards should resemble the sample.",
+      "hash": "081e57f557fb",
+      "textSha256": "081e57f557fba396d8efb98eeba4e2dadae8dadd4420f3cf6d0dbb2934b4e9b7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-specific.081e57f557fb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-specific.081e57f557fb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/aas-specific.081e57f557fb.generation.json",
+      "plannedRequestSha256": "ef4927b13f2ffd58b485c97b91372fb87fa5d3b427f5ea30dd4540192b1d16b7"
+    },
+    {
+      "id": "calibration",
+      "parentSceneId": "calibration",
+      "text": "Like the colourimeter, AAS gives absorbance, not concentration, so it needs a calibration. Standards first, unknown second. Run a blank, then lead standards from point five to two milligrams per litre, and plot absorbance against concentration. The points fall close to a straight line. Now an unknown can be read across, then down, as long as its reading sits inside the standards.",
+      "hash": "740bbbe2a6cc",
+      "textSha256": "740bbbe2a6cc4068a026d7e77f27563a6ba7947e09fa963e3d7892de63534374",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/calibration.740bbbe2a6cc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/calibration.740bbbe2a6cc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/calibration.740bbbe2a6cc.generation.json",
+      "plannedRequestSha256": "a34b3fd7574214cd0319a7e101721ab31c895017495967b7b1c11625e3171106"
+    },
+    {
+      "id": "worked-dilute",
+      "parentSceneId": "worked-dilute",
+      "text": "Here's a factory discharge tested for lead. Its first reading is above the top standard. Don't stretch the line past the last point, because nothing shows it stays straight out there. Dilute it instead: twenty five millilitres made up to two hundred and fifty, a tenfold dilution. Now it reads point one one three, inside the range.",
+      "hash": "b62d8730939a",
+      "textSha256": "b62d8730939a930204442d97d3706f478243b14311b1a05be098ef62c9bc4ecb",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-dilute.b62d8730939a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-dilute.b62d8730939a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-dilute.b62d8730939a.generation.json",
+      "plannedRequestSha256": "f759ba7ee3b6adabac276ac3ce579a9a5f0ea98ce2092b14bf85be617bf220eb"
+    },
+    {
+      "id": "worked-read",
+      "parentSceneId": "worked-read",
+      "text": "Now read it. The line's gradient is point one six two absorbance units per milligram per litre, so divide: point one one three over point one six two gives point six nine eight milligrams per litre. But that's the diluted solution. Multiply back by the dilution factor, ten, and the discharge holds six point nine eight milligrams of lead per litre.",
+      "hash": "1d75ecd1fbd5",
+      "textSha256": "1d75ecd1fbd5e63ad915b0ac9007f21e4c207567270b0c21ee0b9df44a3415ce",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-read.1d75ecd1fbd5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-read.1d75ecd1fbd5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/worked-read.1d75ecd1fbd5.generation.json",
+      "plannedRequestSha256": "dfc3fc7ef9317587d05038b7fbabd406c92fb00aa8e1cb3742ba9e00c3306800"
+    },
+    {
+      "id": "which-method",
+      "parentSceneId": "which-method",
+      "text": "So which method? If the species is coloured, or can be made coloured with a complex, colourimetry is quick and cheap, and UV-visible is more selective, with one chosen wavelength. For one metal at trace levels, coloured or not, choose AAS.",
+      "hash": "951be4716bed",
+      "textSha256": "951be4716bedd7123acd8f20d4141ccf82a829335b8af7c5e5bef7d1aeca9dc6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-method.951be4716bed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-method.951be4716bed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/which-method.951be4716bed.generation.json",
+      "plannedRequestSha256": "e0e0e0bad35c41a4408ec286fcc45ed94d474a5659028387fe7111816b59727c"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two lines to keep. Read across, then down, only inside the standards, then multiply back by the dilution factor. And in AAS, the lamp is made of the element you're testing.",
+      "hash": "34da302dad1b",
+      "textSha256": "34da302dad1bd818ae0f61b6adcdb0b93f8d94c9b4f36eb99c59c1712f22c89f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/memory-aid.34da302dad1b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/memory-aid.34da302dad1b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/memory-aid.34da302dad1b.generation.json",
+      "plannedRequestSha256": "4f7d259d33b0eeaf57c7a266b088765fb672d5380464aa2626943573a5447c42"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Copper in vineyard runoff is measured by AAS. Ten millilitres was diluted to one hundred, and the diluted solution reads point two two six. Use the calibration to find the copper concentration in the original runoff. Pause here to answer.",
+      "hash": "0988aa145bf5",
+      "textSha256": "0988aa145bf5e5a407e392e810705960961f7d5314176cf006bfa5b86fd43933",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-1.0988aa145bf5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-1.0988aa145bf5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-1.0988aa145bf5.generation.json",
+      "plannedRequestSha256": "aba6c3bbf0c71e3b5e5f00146fdb08096f2d6eac86f7dc04ecb5848b45f95e93"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Read point two two six across to the line and down: about two point five milligrams per litre. That's the diluted solution. The runoff was diluted tenfold, so multiply by ten: about twenty five milligrams per litre. Stopping at two point five is the classic slip, because that's the diluted value.",
+      "hash": "6278c656e4ba",
+      "textSha256": "6278c656e4ba1cf21381974308b1ae503391f99d8e7f087251781b611a444cf3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-1.6278c656e4ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-1.6278c656e4ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-1.6278c656e4ba.generation.json",
+      "plannedRequestSha256": "b79ca6091100cc99aecb0e3e67d035eb6f94639cf4eb8ee68748d1d32e5b9889"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Two samples: a deep blue copper ammonia solution, and tap water to be checked for traces of lead. Choose a technique for each, and justify your choice. Pause here to answer.",
+      "hash": "1ba9359c72ee",
+      "textSha256": "1ba9359c72ee8e0c9ede38764b531e23c2853dd911badf7d71acf2a5e7360e75",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-2.1ba9359c72ee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-2.1ba9359c72ee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/attempt-2.1ba9359c72ee.generation.json",
+      "plannedRequestSha256": "1160022f78bec304606e9c24bec8bcea53cb1b325f8b52a4d09d62a6d3f99152"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "For the copper complex, colourimetry or UV-visible: it's strongly coloured, so it absorbs visible light, best measured at lambda max. For trace lead, graphite-furnace AAS: lead is colourless, and the furnace measures far lower levels than a flame. Saying AAS detects the lead ions in the water is the trap. It measures free atoms.",
+      "hash": "6e6b9bff2372",
+      "textSha256": "6e6b9bff2372d4307fe8cd2d14ed5449e448669347a9f8fdeff2447be75c8153",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-2.6e6b9bff2372.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-2.6e6b9bff2372.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/feedback-2.6e6b9bff2372.generation.json",
+      "plannedRequestSha256": "cbd7ed0a26980c9e5d9735e424c828c1cb7c8f417eafe5f7a62c764a9c8a3d1c"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So, to measure concentration with light, pick a method your species responds to, calibrate with standards, read inside the range, and correct for any dilution. Next, you'll build a calibration yourself, from standards to an unknown.",
+      "hash": "7b921a7d5ba2",
+      "textSha256": "7b921a7d5ba257ac7168979c7714a39d8394ffb02809b9cf3a95d4b5b8cd04d7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/handoff.7b921a7d5ba2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/handoff.7b921a7d5ba2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/handoff.7b921a7d5ba2.generation.json",
+      "plannedRequestSha256": "cfac199a2264db14c4fda2b19d99e3775c76204905bd3040b06a581e8b28af1d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C04-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

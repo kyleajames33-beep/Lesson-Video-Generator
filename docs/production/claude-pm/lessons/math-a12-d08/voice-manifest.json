@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d08.md",
+  "sourceSha256": "18513079ceeeb84d7f5b0d5eaf365c6eedab3c11f669bb6516c57ee351a40e65",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on this curve: e to the x, over x plus one. At x equals minus one, the bottom is zero, and you can't divide by zero, so there's no curve there. Now the slope at x equals zero. A quick guess: divide the derivatives. The top's derivative is e to the x, and the bottom's is one, so the guess gives a slope of one at x equals zero. But the tangent there is flat. So how do we really differentiate a quotient, and keep track of where it's defined?",
+      "audioFile": "public/audio/math-a12-d08/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Think about what each part does. For this positive fraction, top growth pushes up and bottom growth pulls down. At x equals zero, the top, e to the x, is growing at a rate of one, and that pushes y up at a rate of one. The bottom, x plus one, is also growing at a rate of one, and that pulls y down at a rate of one. The push and the pull cancel, so the slope is zero. At x equals one, the push is about one point three six, and the pull is about point six eight, so the slope is about point six eight. That pull is the minus sign in the quotient rule.",
+      "audioFile": "public/audio/math-a12-d08/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "You met the quotient rule in Year 11. Here's why it has that shape. Dividing by g is the same as multiplying by one over g, so use last video's product rule. The top's turn is f prime, times one over g. For the bottom's turn, the chain rule says one over g has derivative minus g prime, over g squared. So that turn is minus f g prime, over g squared. Put both turns over g squared, and you get f prime g, minus f g prime, all over g squared. The top's derivative comes first, the minus is the bottom's pull, and the whole bottom is squared. Check our curve at zero: f prime g is one, f g prime is one, so the top is one minus one, which is zero.",
+      "audioFile": "public/audio/math-a12-d08/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Let's use it on our curve. Before differentiating, write where it's defined: x can't be minus one. Now the parts. f is e to the x, and so is f prime. g is x plus one, so g prime is one. The top of the answer is e to the x times x plus one, minus e to the x times one. Take out e to the x, and the bracket becomes x plus one minus one, which is just x. So d y by d x is x e to the x, over x plus one squared, for x not equal to minus one. At x equals zero, that's zero, the flat tangent we saw.",
+      "audioFile": "public/audio/math-a12-d08/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now a harder one. Differentiate y equals the natural log of x, over cos x, and find the gradient at x equals one. The outside operation is division, so it's the quotient rule. Domain first. The natural log needs x positive, and the bottom can't be zero, so cos x can't be zero. Now the parts. f is the natural log of x, so f prime is one over x. g is cos x, so g prime is minus sine x. f prime g is cos x over x. Then minus f g prime is minus the natural log of x, times minus sine x, and the two minus signs make a plus. All of that sits over cos squared x.",
+      "audioFile": "public/audio/math-a12-d08/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now put x equals one. The natural log of one is zero, so the second term on top vanishes. That's the bottom's pull disappearing: when the top is zero, a change in the bottom can't move the fraction. What's left is cos one, over cos squared one, which is one over cos one. With x in radians, that's about one point eight five, and the tangent at the point one, zero agrees. Get the order backwards, and you'd get minus one point eight five, a falling tangent, but the curve is rising there. And in degrees you'd get about one, which is also wrong.",
+      "audioFile": "public/audio/math-a12-d08/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "One more habit, for simplifying. Differentiate y equals sine x, over x squared. The bottom can't be zero, so x can't be zero. The quotient rule gives x squared cos x, minus two x sine x, all over x to the four. Both terms on top share a factor of x, so take it out, and cancel it with one x from the bottom. That's allowed only because x isn't zero. So the answer is x cos x, minus two sine x, over x cubed, and it still comes with x not equal to zero. Cancelling a factor never gives back a point the original function didn't have.",
+      "audioFile": "public/audio/math-a12-d08/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's the classic way to remember it. Low dee high, minus high dee low, over low squared. High is the top, and low is the bottom. Low dee high means the bottom times the derivative of the top, which is the same as f prime g. Saying low first keeps the order right, and the minus is the bottom's pull. And unlike a product, the order matters here: reversing the terms negates the derivative.",
+      "audioFile": "public/audio/math-a12-d08/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Differentiate y equals e to the x, over x plus two, and state any value of x that must be excluded. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d08/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Domain first: x can't be minus two. f prime is e to the x, and g prime is one. So the top is e to the x times x plus two, minus e to the x, which factors to e to the x, times x plus one. So d y by d x is e to the x times x plus one, over x plus two squared, for x not equal to minus two. Start with high dee low instead, and you negate the derivative.",
+      "audioFile": "public/audio/math-a12-d08/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Find the gradient of the curve y equals the natural log of x, over x, at x equals e. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d08/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "For positive x, f prime is one over x, and g prime is one. The top is one over x times x, minus the natural log of x, so it's one minus the natural log of x. So d y by d x is one minus the natural log of x, over x squared. At x equals e, the natural log of e is one, so the gradient is zero. Dividing the derivatives would give one over e, but the tangent at e is flat.",
+      "audioFile": "public/audio/math-a12-d08/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "A quotient combines both turns, with the minus in the bottom's term, and keeps its domain. Next, we'll use the sign of a derivative. Here's the derivative of our first curve, x e to the x, over x plus one squared. Where is it positive, where is it negative, and what happens at x equals minus one?",
+      "audioFile": "public/audio/math-a12-d08/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d08/scene-14.wav"
+    }
+  ]
+}

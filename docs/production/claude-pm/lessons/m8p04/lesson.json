@@ -1,0 +1,168 @@
+{
+  "title": "Constructing and using a spectroscopic calibration: copper(II) standards, a blank and an unknown",
+  "subtitle": "Your eye can rank two blue solutions, but it can't tell you how much copper is in either. How do you make a set of copper(II) standards, turn their absorbances into a calibration line you can trust, and use it to find the copper in a sample you don't know?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 9,
+  "lessonIntent": "stating the aim and variables of a calibration investigation; making standards from a stock by dilution; choosing the wavelength from a scan and zeroing with a blank; handling cuvettes with reasons; plotting the calibration and finding its linear range from the data; diluting an over-range unknown, reading it across then down and multiplying back; judging reliability, accuracy (check standard) and validity; writing the risk rows for copper(II) sulfate, the unknown sample, glassware and the instrument.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two blue solutions. Your eye can tell which one is darker, but not how much copper is in either. A calibration turns that colour into a number. You measure how much light some solutions of known concentration absorb, draw the line they make, then read a sample you don't know straight off that line. Today you build one for copper, and use it on rinse water from a copper plating workshop."
+      }
+    },
+    {
+      "id": "aim-variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The aim is to find the concentration of copper ions in that rinse water. Each solution whose concentration you know is called a standard. The independent variable is the standards' concentration. The dependent variable is their absorbance, how much light each one soaks up. Everything else stays the same."
+      }
+    },
+    {
+      "id": "make-standards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start from a stock solution of copper sulfate, point two zero zero moles per litre. Fill one burette with stock and another with distilled water, rinsing each with the liquid it will hold. Run one millilitre of stock and nine of water into a tube, and mix. That's a tenfold dilution, so point zero two zero moles per litre. Then use two, three, four and six millilitres of stock, each topped up with water to ten millilitres. The strongest is point one two zero."
+      }
+    },
+    {
+      "id": "wavelength-blank",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Which light? A blue solution absorbs at the red end of the spectrum. A scan shows its biggest absorbance near eight hundred nanometres, in the near infrared, so set this spectrophotometer there. That's where each small change in copper gives the biggest change in absorbance. A school colourimeter can't, so use its red filter, with its own calibration. Then zero it with a blank, a cuvette of the same distilled water. The glass and the water absorb a little too, and the blank takes that away, so what's left comes from copper."
+      }
+    },
+    {
+      "id": "measure-carefully",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Hold each cuvette by its ridged sides, and wipe the clear sides, because a fingerprint scatters light and adds absorbance. Rinse the cuvette with the next standard before you fill it, so the last one doesn't dilute it. Work from the most dilute to the most concentrated."
+      }
+    },
+    {
+      "id": "plot-linear-range",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the readings. Plot absorbance up the side and concentration along the bottom, with the blank as a point at zero. The blank and the first four standards sit close to one straight line. The fifth falls well below it. At high absorbance, so little light reaches the detector that the reading is less trustworthy. So this line only holds up to point zero eight zero moles per litre. That's its linear range."
+      }
+    },
+    {
+      "id": "unknown-dilute",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the rinse water. It reads one point five two, far above the top of the linear range. You could extend the line, but the fifth standard has just shown that the line bends up there, so don't trust it. Dilute it instead. Five millilitres of rinse water and five of distilled water halve its concentration. Three readings now give a mean of point eight four five, inside the range."
+      }
+    },
+    {
+      "id": "read-scale-back",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read across from point eight four five to the line, then down: point zero seven one zero moles per litre. That's the diluted solution, though. You halved it, so the rinse water is double that, point one four two moles per litre."
+      }
+    },
+    {
+      "id": "reliable-accurate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Reliable? The three readings agree within about point zero zero six, and a second dilution gives the same answer. Accurate? Your teacher made a check standard from a separate weighing, point zero five zero zero moles per litre. Read from your line, it comes out at point zero four nine seven, within about one percent of its true value."
+      }
+    },
+    {
+      "id": "valid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Valid? The method measures copper only if copper is the only thing absorbing at that wavelength. A cloudy sample scatters light and reads high, so filter it first. Filtering can't remove dissolved substances, so your teacher has checked this sample for other absorbers. Then read it at the same wavelength, in the same cuvette, with the same blank, and inside the linear range. Only then does the line apply to it."
+      }
+    },
+    {
+      "id": "risk",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the risks. Copper sulfate is harmful if swallowed, irritates eyes and skin, and is very toxic to aquatic life. Wear gloves and glasses, and every copper solution goes into heavy-metal waste, never the sink. Treat the rinse water the same way, because it may hold acid or other metals. Fill the burettes below eye level, and fill cuvettes away from the instrument, so a spill can't reach its electronics."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lines to keep. Read across, then down, and only inside the standards. And if you diluted it, multiply back by the dilution factor."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student's copper standards give the calibration line on screen. Ten millilitres of an unknown copper solution is diluted to twenty five millilitres, and the diluted solution reads point three two five. Calculate the copper ion concentration in the original solution. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read across from point three two five, then down: point two five zero moles per litre. That's the diluted solution. Twenty five over ten is a dilution factor of two point five, so the original is point six two five moles per litre. The trap is stopping at point two five zero."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A student measures the standards in a clean cuvette, then measures the unknown in a cuvette with a fingerprint on one clear side. Explain how this affects the calculated concentration, and propose an improvement. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The fingerprint scatters some light, so less reaches the detector, and the absorbance reads high. A higher absorbance, read from the line, gives a concentration that's too high. Fix it by holding cuvettes by their ridged sides and wiping the clear sides before every reading. The trap is averaging three readings. Each one still has the fingerprint, so they're all high together."
+      }
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to trust a calibration: make your standards by careful dilution, zero with a blank, and keep the unknown inside the linear range, diluting it if you must. Then check accuracy with a standard you already know. Next: calibration and water-analysis data practice."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

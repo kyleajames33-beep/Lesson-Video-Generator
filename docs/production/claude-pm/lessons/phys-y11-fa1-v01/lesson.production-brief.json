@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/phys-y11-fa1-v01/lesson.json",
+    "lessonSha256": "7ee6b4634e6b513b057a54d869212aafdfe26e6c16c366c1e206090858652feb"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Stage 5 Science (measurement, units, forces as pushes and pulls); Stage 5 Mathematics (Pythagoras; SI units; rates such as km h⁻¹). No earlier video.",
+    "startsWith": "A car drives one lap of a four hundred metre test track, and stops where it started. How far has it travelled? Four hundred metres. Now, how far is it from where it started? Zero. Both answers are right, because they answer different questions. The first one doesn't care which way the car went. The second one depends on it completely. That difference, whether direction matters, splits the quantities we use to describe motion into two kinds.",
+    "stopsAfter": "magnitude, scalar and vector defined; distance against displacement and speed against velocity explained on visible cases; acceleration shown to be a vector; time a scalar; all six classified with the \"which way?\" test. No vector addition, angles, components or sign conventions.",
+    "nextLesson": "v02, vector diagrams: how two vectors add tip to tail to give a resultant, or subtract to give a difference."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md"
+  ],
+  "teaching": {
+    "task": "*A car drives one lap of a 400 m test track and stops where it started. It has travelled 400 m, but it is no distance at all from the start. How can both be true, and which quantities in motion need a direction?*",
+    "causalExplanation": "(1) a size alone does not fix an outcome; direction completes it (1, 2); (2) distance adds every metre of path, so it only grows (1, 3); (3) displacement is the start-to-finish arrow, so bends and returns shorten it (3 to 5); (4) speed is a dial reading; velocity also says which way, so it decides where you end up (6); (5) acceleration is how velocity changes; its direction decides speeding up or slowing down (7); (6) turning changes velocity even at constant speed (8); (7) time has no direction in space (9); (8) the units don't decide, the direction does (10); (9) memory aid (11).",
+    "conversationalApproach": "A car drives one lap of a four hundred metre test track, and stops where it started. Suppose I tell you a drone is five metres from its launch pad. The first pair is distance and displacement. Quick prediction.",
+    "openingDecision": "cold open, no title card. Plan view of a coded oval test track (two grey lane lines, a chequered start line on the bottom straight, a navy start pin \"start\"), compass top right; the top-view blue car plate sits on the start line, facing right. On \"track\" the car drives one lap anticlockwise (about 6 s, constant pace) with the route tracer: the amber trail draws behind it and an amber counter in the right column \"distance travelled\" ticks 0 to 400 m; at the same time a thin navy arrow from the start pin to the car grows, swings round with the car (longest at the far straight) and shrinks back. On \"metres\" the counter settles at \"400 m\" and pulses. On \"Zero\" the car is back on the start pin; the navy arrow has shrunk to nothing; a navy readout writes \"distance from start: 0 m\". On the fourth sentence the two readouts sit side by side with tags \"ignores direction\" (amber) and \"depends on direction\" (navy) written on \"doesn't care\" and \"depends\". On \"kinds\" the heading writes on: \"Scalars and vectors: when does direction matter?\" and the two readouts slide up as two column headers in waiting (empty).",
+    "understandingCheck": "Quick prediction. Here are three drone trips. Four east, then three north. Three east, then three back west. Four east, then three more east. On which trip is the size of the displacement equal to the distance? Have a think. Your turn. A drone flies six point zero metres east, then eight point zero metres north. Calculate the distance it travels and the magnitude of its displacement, and explain why the two values are different. Pause here to answer. Last one. A ferry goes two point zero kilometres north, then returns two point zero kilometres south to the same wharf, at a steady fifteen kilometres per hour. A passenger says its velocity was the same on both legs. Find the distance and displacement, and explain whether the passenger is right. Pause here to answer.",
+    "curriculumScope": "Syllabus content point (Physics 11-12 (2025), Year 11, Fundamentals of mechanics; NESA content-system codename), quoted from the route JSON `syllabusActions`:\n\n- `ci02280876`: \"Classify distance, displacement, time, speed, velocity and acceleration as either scalar or vector quantities\"\n\nSource: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa874ba975\n"
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Preserve the painted plates and shared explainer ink, watercolour and paper system specified by this design. ",
+    "transitionPlan": "Follow each existing scene Visual and retain the specified opening and handoff; the notes return to the final handoff as the root decision requires."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-1: cold open, no title card. Plan view of a coded oval test track (two grey lane lines, a chequered start line on the bottom straight, a navy start pin \"start\"), compass top right; the top-view blue car plate sits on the start line, facing right. On \"track\" the car drives one lap anticlockwise (about 6 s, constant pace) with the route tracer: the amber trail draws behind it and an amber counter in the right column \"distance travelled\" ticks 0 to 400 m; at the same time a thin navy arrow from the start pin to the car grows, swings round with the car (longest at the far straight) and shrinks back. On \"metres\" the counter settles at \"400 m\" and pulses. On \"Zero\" the car is back on the start pin; the navy arrow has shrunk to nothing; a navy readout writes \"distance from start: 0 m\". On the fourth sentence the two readouts sit side by side with tags \"ignores direction\" (amber) and \"depends on direction\" (navy) written on \"doesn't care\" and \"depends\". On \"kinds\" the heading writes on: \"Scalars and vectors: when does direction matter?\" and the two readouts slide up as two column headers in waiting (empty).",
+      "teachingReason": "A car drives one lap of a four hundred metre test track, and stops where it started.",
+      "narrationCue": "track / metres / Zero / kinds",
+      "motionPurpose": "cold open, no title card. Plan view of a coded oval test track (two grey lane lines, a chequered start line on the bottom straight, a navy start pin \"start\"), compass top right; the top-view blue car plate sits on the start line, facing right. On \"track\" the car drives one lap anticlockwise (about 6 s, constant pace) with the route tracer: the amber trail draws behind it and an amber counter in the right column \"distance travelled\" ticks 0 to 400 m; at the same time a thin navy arrow from the start pin to the car grows, swings round with the car (longest at the far straight) and shrinks back. On \"metres\" the counter settles at \"400 m\" and pulses. On \"Zero\" the car is back on the start pin; the navy arrow has shrunk to nothing; a navy readout writes \"distance from start: 0 m\". On the fourth sentence the two readouts sit side by side with tags \"ignores direction\" (amber) and \"depends on direction\" (navy) written on \"doesn't care\" and \"depends\". On \"kinds\" the heading writes on: \"Scalars and vectors: when does direction matter?\" and the two readouts slide up as two column headers in waiting (empty).",
+      "motionRole": "explain",
+      "onScreenChange": "cold open, no title card. Plan view of a coded oval test track (two grey lane lines, a chequered start line on the bottom straight, a navy start pin \"start\"), compass top right; the top-view blue car plate sits on the start line, facing right. On \"track\" the car drives one lap anticlockwise (about 6 s, constant pace) with the route tracer: the amber trail draws behind it and an amber counter in the right column \"distance travelled\" ticks 0 to 400 m; at the same time a thin navy arrow from the start pin to the car grows, swings round with the car (longest at the far straight) and shrinks back. On \"metres\" the counter settles at \"400 m\" and pulses. On \"Zero\" the car is back on the start pin; the navy arrow has shrunk to nothing; a navy readout writes \"distance from start: 0 m\". On the fourth sentence the two readouts sit side by side with tags \"ignores direction\" (amber) and \"depends on direction\" (navy) written on \"doesn't care\" and \"depends\". On \"kinds\" the heading writes on: \"Scalars and vectors: when does direction matter?\" and the two readouts slide up as two column headers in waiting (empty).",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "hook (400 metres, and nowhere): retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "magnitude",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-2: board clears to a plan view with a 1 m grid and a compass; a small coded launch pad (navy ring) at centre, the top-view drone plate hovering on it. On \"circle\" a dashed navy circle of radius 5 m draws round the pad, and faint ghost drones fade in at six places on it, with a chip \"5 m from the pad\". On \"magnitude\" the chip \"5 m\" lifts out with the gloss \"magnitude: a size (number + unit)\". On \"point\" the circle and ghosts shrink away except the one due north; the drone glides there and the chip becomes \"5 m north\". On \"scalar\" the left column writes \"scalar: magnitude only\" with \"5 m\" under it; on \"vector\" the right column writes \"vector: magnitude and direction\" and a navy arrow draws from pad to drone with \"5 m north\". On \"direction\" a PenArrow points at the arrow's length (tag \"length = magnitude\") and a scribble circle rings the head (tag \"head = direction\").",
+      "teachingReason": "Suppose I tell you a drone is five metres from its launch pad.",
+      "narrationCue": "circle / magnitude / point / scalar",
+      "motionPurpose": "board clears to a plan view with a 1 m grid and a compass; a small coded launch pad (navy ring) at centre, the top-view drone plate hovering on it. On \"circle\" a dashed navy circle of radius 5 m draws round the pad, and faint ghost drones fade in at six places on it, with a chip \"5 m from the pad\". On \"magnitude\" the chip \"5 m\" lifts out with the gloss \"magnitude: a size (number + unit)\". On \"point\" the circle and ghosts shrink away except the one due north; the drone glides there and the chip becomes \"5 m north\". On \"scalar\" the left column writes \"scalar: magnitude only\" with \"5 m\" under it; on \"vector\" the right column writes \"vector: magnitude and direction\" and a navy arrow draws from pad to drone with \"5 m north\". On \"direction\" a PenArrow points at the arrow's length (tag \"length = magnitude\") and a scribble circle rings the head (tag \"head = direction\").",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to a plan view with a 1 m grid and a compass; a small coded launch pad (navy ring) at centre, the top-view drone plate hovering on it. On \"circle\" a dashed navy circle of radius 5 m draws round the pad, and faint ghost drones fade in at six places on it, with a chip \"5 m from the pad\". On \"magnitude\" the chip \"5 m\" lifts out with the gloss \"magnitude: a size (number + unit)\". On \"point\" the circle and ghosts shrink away except the one due north; the drone glides there and the chip becomes \"5 m north\". On \"scalar\" the left column writes \"scalar: magnitude only\" with \"5 m\" under it; on \"vector\" the right column writes \"vector: magnitude and direction\" and a navy arrow draws from pad to drone with \"5 m north\". On \"direction\" a PenArrow points at the arrow's length (tag \"length = magnitude\") and a scribble circle rings the head (tag \"head = direction\").",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "magnitude: a size alone, or a size and a direction: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "distance-displacement",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-3: camera continues on the grid (70 px per metre, author note d); the drone sits on a start pin \"start\". On \"north\" the route tracer flies it 4 m east (counter \"distance\" 0 to 4 m, amber trail) then 3 m north (counter to 7 m). On \"seven metres\" the right column writes \"distance = 4 m + 3 m = 7 m\" (amber) with a grey tag \"scalar: adds every metre of path\". On \"finished\" a navy arrow draws from the start pin to the drone, labelled \"displacement\". On \"five metres\" a right-angle mark appears at the corner, a grey chip \"Pythagoras: √(4² + 3²) = √25 = 5\" writes, and the arrow's label becomes \"5 m\". On \"full answer\" the label \"5 m\" gets a small red \"?\" beside it; on \"points\" the \"?\" is replaced by a navy direction tick at the arrowhead and a grey tag \"direction: shown by the arrow (angle: later)\". The 7 m path and the 5 m arrow stay on screen together.",
+      "teachingReason": "The first pair is distance and displacement.",
+      "narrationCue": "north / metres / finished / metres",
+      "motionPurpose": "camera continues on the grid (70 px per metre, author note d); the drone sits on a start pin \"start\". On \"north\" the route tracer flies it 4 m east (counter \"distance\" 0 to 4 m, amber trail) then 3 m north (counter to 7 m). On \"seven metres\" the right column writes \"distance = 4 m + 3 m = 7 m\" (amber) with a grey tag \"scalar: adds every metre of path\". On \"finished\" a navy arrow draws from the start pin to the drone, labelled \"displacement\". On \"five metres\" a right-angle mark appears at the corner, a grey chip \"Pythagoras: √(4² + 3²) = √25 = 5\" writes, and the arrow's label becomes \"5 m\". On \"full answer\" the label \"5 m\" gets a small red \"?\" beside it; on \"points\" the \"?\" is replaced by a navy direction tick at the arrowhead and a grey tag \"direction: shown by the arrow (angle: later)\". The 7 m path and the 5 m arrow stay on screen together.",
+      "motionRole": "explain",
+      "onScreenChange": "camera continues on the grid (70 px per metre, author note d); the drone sits on a start pin \"start\". On \"north\" the route tracer flies it 4 m east (counter \"distance\" 0 to 4 m, amber trail) then 3 m north (counter to 7 m). On \"seven metres\" the right column writes \"distance = 4 m + 3 m = 7 m\" (amber) with a grey tag \"scalar: adds every metre of path\". On \"finished\" a navy arrow draws from the start pin to the drone, labelled \"displacement\". On \"five metres\" a right-angle mark appears at the corner, a grey chip \"Pythagoras: √(4² + 3²) = √25 = 5\" writes, and the arrow's label becomes \"5 m\". On \"full answer\" the label \"5 m\" gets a small red \"?\" beside it; on \"points\" the \"?\" is replaced by a navy direction tick at the arrowhead and a grey tag \"direction: shown by the arrow (angle: later)\". The 7 m path and the 5 m arrow stay on screen together.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "distance and displacement (site we-1): retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "prediction",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-4: the scene 3 grid shrinks to the left third as trip A (\"4 m E, then 3 m N\", path only, no arrow); trips B (\"3 m E, then 3 m W\", the return drawn slightly offset so both legs show) and C (\"4 m E, then 3 m E\") draw beside it as amber paths with their drones at the ends. Each label writes as it is spoken. No displacement arrows and no distance values are shown. On \"think\" the 3 s Countdown ring runs beside the question \"Which trip: size of displacement = distance?\".",
+      "teachingReason": "Quick prediction.",
+      "narrationCue": "think",
+      "motionPurpose": "the scene 3 grid shrinks to the left third as trip A (\"4 m E, then 3 m N\", path only, no arrow); trips B (\"3 m E, then 3 m W\", the return drawn slightly offset so both legs show) and C (\"4 m E, then 3 m E\") draw beside it as amber paths with their drones at the ends. Each label writes as it is spoken. No displacement arrows and no distance values are shown. On \"think\" the 3 s Countdown ring runs beside the question \"Which trip: size of displacement = distance?\".",
+      "motionRole": "hold",
+      "onScreenChange": "the scene 3 grid shrinks to the left third as trip A (\"4 m E, then 3 m N\", path only, no arrow); trips B (\"3 m E, then 3 m W\", the return drawn slightly offset so both legs show) and C (\"4 m E, then 3 m E\") draw beside it as amber paths with their drones at the ends. Each label writes as it is spoken. No displacement arrows and no distance values are shown. On \"think\" the 3 s Countdown ring runs beside the question \"Which trip: size of displacement = distance?\".",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "3 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "prediction-answer",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-5: on \"shortcut\" trip A gets its navy 5 m arrow beside the amber \"7 m\" tag. On \"zero\" trip B's drone sits on its start pin; a navy tag \"displacement 0\" and an amber tag \"distance 6 m\"; on the next sentence a grey tag \"zero: no direction needed\". On \"seven\" trip C's navy arrow draws exactly over the amber path: \"7 m = 7 m\", and trip C is ringed. On the fifth sentence a rule writes under the three trips: \"size of displacement ≤ distance (equal only for a straight line that never turns back)\". On \"back\" a small inset of the scene 1 track returns at the right with \"400 m\" and \"0 m\".",
+      "teachingReason": "It's the third trip.",
+      "narrationCue": "shortcut / zero / seven / back",
+      "motionPurpose": "on \"shortcut\" trip A gets its navy 5 m arrow beside the amber \"7 m\" tag. On \"zero\" trip B's drone sits on its start pin; a navy tag \"displacement 0\" and an amber tag \"distance 6 m\"; on the next sentence a grey tag \"zero: no direction needed\". On \"seven\" trip C's navy arrow draws exactly over the amber path: \"7 m = 7 m\", and trip C is ringed. On the fifth sentence a rule writes under the three trips: \"size of displacement ≤ distance (equal only for a straight line that never turns back)\". On \"back\" a small inset of the scene 1 track returns at the right with \"400 m\" and \"0 m\".",
+      "motionRole": "explain",
+      "onScreenChange": "on \"shortcut\" trip A gets its navy 5 m arrow beside the amber \"7 m\" tag. On \"zero\" trip B's drone sits on its start pin; a navy tag \"displacement 0\" and an amber tag \"distance 6 m\"; on the next sentence a grey tag \"zero: no direction needed\". On \"seven\" trip C's navy arrow draws exactly over the amber path: \"7 m = 7 m\", and trip C is ringed. On the fifth sentence a rule writes under the three trips: \"size of displacement ≤ distance (equal only for a straight line that never turns back)\". On \"back\" a small inset of the scene 1 track returns at the right with \"400 m\" and \"0 m\".",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "prediction answer: never more than the distance: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "speed-velocity",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-6: board clears to a side-view road (a long grey road line, light lane dashes, compass \"W ← → E\" above), the blue car plate (facing right, existing b4-car-blue-v1.png) and the yellow car plate (mirrored to face left, b4-car-yellow-v1.png), nose to nose in the middle, each with a small coded readout box above it \"60 km h⁻¹\". On \"same\" both readouts pulse together and a grey tag \"speed: how fast distance is covered (scalar)\". On \"west\" (first) the cars drive apart, blue to the right, yellow to the left (the road scrolls under them, wheels do not need to turn), and an orange velocity arrow of equal length grows above each. On \"west\" (second) the arrows get labels \"60 km h⁻¹ east\" and \"60 km h⁻¹ west\"; the right column writes \"velocity: how fast displacement changes (vector)\". On \"After one hour\" a small clock chip \"+1 h\" and the view pulls back to a coded plan strip: a start pin with navy displacement arrows \"60 km east\" and \"60 km west\" ending at small car markers. On the last sentence the two readouts \"60 km h⁻¹\" sit together with \"speed: same\" and the two velocity labels with \"velocity: different\".",
+      "teachingReason": "The second pair is speed and velocity.",
+      "narrationCue": "same / west / west / west",
+      "motionPurpose": "board clears to a side-view road (a long grey road line, light lane dashes, compass \"W ← → E\" above), the blue car plate (facing right, existing b4-car-blue-v1.png) and the yellow car plate (mirrored to face left, b4-car-yellow-v1.png), nose to nose in the middle, each with a small coded readout box above it \"60 km h⁻¹\". On \"same\" both readouts pulse together and a grey tag \"speed: how fast distance is covered (scalar)\". On \"west\" (first) the cars drive apart, blue to the right, yellow to the left (the road scrolls under them, wheels do not need to turn), and an orange velocity arrow of equal length grows above each. On \"west\" (second) the arrows get labels \"60 km h⁻¹ east\" and \"60 km h⁻¹ west\"; the right column writes \"velocity: how fast displacement changes (vector)\". On \"After one hour\" a small clock chip \"+1 h\" and the view pulls back to a coded plan strip: a start pin with navy displacement arrows \"60 km east\" and \"60 km west\" ending at small car markers. On the last sentence the two readouts \"60 km h⁻¹\" sit together with \"speed: same\" and the two velocity labels with \"velocity: different\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to a side-view road (a long grey road line, light lane dashes, compass \"W ← → E\" above), the blue car plate (facing right, existing b4-car-blue-v1.png) and the yellow car plate (mirrored to face left, b4-car-yellow-v1.png), nose to nose in the middle, each with a small coded readout box above it \"60 km h⁻¹\". On \"same\" both readouts pulse together and a grey tag \"speed: how fast distance is covered (scalar)\". On \"west\" (first) the cars drive apart, blue to the right, yellow to the left (the road scrolls under them, wheels do not need to turn), and an orange velocity arrow of equal length grows above each. On \"west\" (second) the arrows get labels \"60 km h⁻¹ east\" and \"60 km h⁻¹ west\"; the right column writes \"velocity: how fast displacement changes (vector)\". On \"After one hour\" a small clock chip \"+1 h\" and the view pulls back to a coded plan strip: a start pin with navy displacement arrows \"60 km east\" and \"60 km west\" ending at small car markers. On the last sentence the two readouts \"60 km h⁻¹\" sit together with \"speed: same\" and the two velocity labels with \"velocity: different\".",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "speed and velocity: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "acceleration",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-7: board clears to the side-view road with the blue car moving right; the right column writes \"acceleration: how quickly velocity changes\". On \"braking\" the car slows and stops being followed; above the road a strip of four orange velocity arrows stacked at one-second ticks writes in turn, tails aligned: \"20\", \"17\", \"14\", \"11 m s⁻¹\" (author note c; values on screen only). On \"west\" a short rose arrow draws from each arrow's head back to the next head, pointing left, with a tag \"change each second: 3 m s⁻¹ west\"; a larger rose arrow \"acceleration\" points west beside the car. On \"speeds up\" the strip clears and redraws: \"20\", \"23\", \"26 m s⁻¹\" with rose change arrows pointing right; on \"east\" the acceleration arrow beside the car points east. On \"same size\" the two rose change arrows (west and east) sit side by side, equal length, ringed. On \"vector\" the word \"vector\" writes in the right column under acceleration with a navy arrow icon.",
+      "teachingReason": "What about acceleration? Acceleration tells you how quickly the velocity changes.",
+      "narrationCue": "braking / west / east / vector",
+      "motionPurpose": "board clears to the side-view road with the blue car moving right; the right column writes \"acceleration: how quickly velocity changes\". On \"braking\" the car slows and stops being followed; above the road a strip of four orange velocity arrows stacked at one-second ticks writes in turn, tails aligned: \"20\", \"17\", \"14\", \"11 m s⁻¹\" (author note c; values on screen only). On \"west\" a short rose arrow draws from each arrow's head back to the next head, pointing left, with a tag \"change each second: 3 m s⁻¹ west\"; a larger rose arrow \"acceleration\" points west beside the car. On \"speeds up\" the strip clears and redraws: \"20\", \"23\", \"26 m s⁻¹\" with rose change arrows pointing right; on \"east\" the acceleration arrow beside the car points east. On \"same size\" the two rose change arrows (west and east) sit side by side, equal length, ringed. On \"vector\" the word \"vector\" writes in the right column under acceleration with a navy arrow icon.",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to the side-view road with the blue car moving right; the right column writes \"acceleration: how quickly velocity changes\". On \"braking\" the car slows and stops being followed; above the road a strip of four orange velocity arrows stacked at one-second ticks writes in turn, tails aligned: \"20\", \"17\", \"14\", \"11 m s⁻¹\" (author note c; values on screen only). On \"west\" a short rose arrow draws from each arrow's head back to the next head, pointing left, with a tag \"change each second: 3 m s⁻¹ west\"; a larger rose arrow \"acceleration\" points west beside the car. On \"speeds up\" the strip clears and redraws: \"20\", \"23\", \"26 m s⁻¹\" with rose change arrows pointing right; on \"east\" the acceleration arrow beside the car points east. On \"same size\" the two rose change arrows (west and east) sit side by side, equal length, ringed. On \"vector\" the word \"vector\" writes in the right column under acceleration with a navy arrow icon.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "acceleration: a direction that decides: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "roundabout",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-8: camera change to a plan view of a coded roundabout (a grey ring road around a green-grey centre island, compass). The top-view blue car plate drives clockwise round the ring at constant pace (Australian roundabouts run clockwise), its heading turning with the road, and a readout box \"40 km h⁻¹\" in the right column holds perfectly still. On \"moves\" the readout gets a small tick and a tag \"speed: constant\". On \"turning\" an orange velocity arrow rides on the car, tangent to the ring, constant length (200 px, author note d); three faint snapshots of the arrow are left at earlier positions so the changing direction is visible all at once. On \"speed\" a chip \"velocity changing, so accelerating\" writes, with a tag \"direction change = velocity change\". No acceleration arrow is drawn (author note b).",
+      "teachingReason": "Here's something surprising.",
+      "narrationCue": "moves / turning / speed",
+      "motionPurpose": "camera change to a plan view of a coded roundabout (a grey ring road around a green-grey centre island, compass). The top-view blue car plate drives clockwise round the ring at constant pace (Australian roundabouts run clockwise), its heading turning with the road, and a readout box \"40 km h⁻¹\" in the right column holds perfectly still. On \"moves\" the readout gets a small tick and a tag \"speed: constant\". On \"turning\" an orange velocity arrow rides on the car, tangent to the ring, constant length (200 px, author note d); three faint snapshots of the arrow are left at earlier positions so the changing direction is visible all at once. On \"speed\" a chip \"velocity changing, so accelerating\" writes, with a tag \"direction change = velocity change\". No acceleration arrow is drawn (author note b).",
+      "motionRole": "explain",
+      "onScreenChange": "camera change to a plan view of a coded roundabout (a grey ring road around a green-grey centre island, compass). The top-view blue car plate drives clockwise round the ring at constant pace (Australian roundabouts run clockwise), its heading turning with the road, and a readout box \"40 km h⁻¹\" in the right column holds perfectly still. On \"moves\" the readout gets a small tick and a tag \"speed: constant\". On \"turning\" an orange velocity arrow rides on the car, tangent to the ring, constant length (200 px, author note d); three faint snapshots of the arrow are left at earlier positions so the changing direction is visible all at once. On \"speed\" a chip \"velocity changing, so accelerating\" writes, with a tag \"direction change = velocity change\". No acceleration arrow is drawn (author note b).",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the roundabout surprise: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "time",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-9: board clears to a plain plan view with a compass. A coded stopwatch readout \"10 s\" writes in the centre (digits only, no plate). On \"which way\" small dashed trial arrows sprout from it toward N, E and up, each fading out with a grey \"?\". On \"doesn't\" all trial arrows are gone; on \"scalar\" the readout drops into the scalar column header from scene 1 with a tag \"time: magnitude only\".",
+      "teachingReason": "That leaves time.",
+      "narrationCue": "doesn't / scalar",
+      "motionPurpose": "board clears to a plain plan view with a compass. A coded stopwatch readout \"10 s\" writes in the centre (digits only, no plate). On \"which way\" small dashed trial arrows sprout from it toward N, E and up, each fading out with a grey \"?\". On \"doesn't\" all trial arrows are gone; on \"scalar\" the readout drops into the scalar column header from scene 1 with a tag \"time: magnitude only\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to a plain plan view with a compass. A coded stopwatch readout \"10 s\" writes in the centre (digits only, no plate). On \"which way\" small dashed trial arrows sprout from it toward N, E and up, each fading out with a grey \"?\". On \"doesn't\" all trial arrows are gone; on \"scalar\" the readout drops into the scalar column header from scene 1 with a tag \"time: magnitude only\".",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "time: no direction in space: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "sort",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-10: two columns, \"scalar: magnitude only\" (grey-ink) and \"vector: magnitude and direction\" (navy), with the test written across the top: \"Which way?\". Six cards wait in a row below, each with a tiny icon from the same drone trip of scene 3 (amber path for distance, navy arrow for displacement, a readout for speed, an orange arrow for velocity, a rose arrow for acceleration, a \"10 s\" readout for time). On \"don't\" the distance, speed and time cards slide into the scalar column; on \"do\" displacement, velocity and acceleration slide into the vector column. On \"Notice the pairs\" thin connecting lines join distance to displacement and speed to velocity across the columns, each vector card gaining a small \"+ direction\" tag; on \"direction\" both lines glow. On \"one trap\" a chip \"acceleration: m s⁻², so a scalar\" fades in; on \"still a vector\" it is crossed (red strike, caption \"units don't show direction\"); on \"does\" the \"Which way?\" test glows.",
+      "teachingReason": "Here's the sort, with one test: which way? If a quantity needs an answer to that, it's a vector.",
+      "narrationCue": "don't / do / direction / does",
+      "motionPurpose": "two columns, \"scalar: magnitude only\" (grey-ink) and \"vector: magnitude and direction\" (navy), with the test written across the top: \"Which way?\". Six cards wait in a row below, each with a tiny icon from the same drone trip of scene 3 (amber path for distance, navy arrow for displacement, a readout for speed, an orange arrow for velocity, a rose arrow for acceleration, a \"10 s\" readout for time). On \"don't\" the distance, speed and time cards slide into the scalar column; on \"do\" displacement, velocity and acceleration slide into the vector column. On \"Notice the pairs\" thin connecting lines join distance to displacement and speed to velocity across the columns, each vector card gaining a small \"+ direction\" tag; on \"direction\" both lines glow. On \"one trap\" a chip \"acceleration: m s⁻², so a scalar\" fades in; on \"still a vector\" it is crossed (red strike, caption \"units don't show direction\"); on \"does\" the \"Which way?\" test glows.",
+      "motionRole": "explain",
+      "onScreenChange": "two columns, \"scalar: magnitude only\" (grey-ink) and \"vector: magnitude and direction\" (navy), with the test written across the top: \"Which way?\". Six cards wait in a row below, each with a tiny icon from the same drone trip of scene 3 (amber path for distance, navy arrow for displacement, a readout for speed, an orange arrow for velocity, a rose arrow for acceleration, a \"10 s\" readout for time). On \"don't\" the distance, speed and time cards slide into the scalar column; on \"do\" displacement, velocity and acceleration slide into the vector column. On \"Notice the pairs\" thin connecting lines join distance to displacement and speed to velocity across the columns, each vector card gaining a small \"+ direction\" tag; on \"direction\" both lines glow. On \"one trap\" a chip \"acceleration: m s⁻², so a scalar\" fades in; on \"still a vector\" it is crossed (red strike, caption \"units don't show direction\"); on \"does\" the \"Which way?\" test glows.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "the sort: ask \"which way?\": retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-11: camera push into the painted dashboard plate (phys-y11-dashboard-cluster-v1.png, new): coded needle on the speedometer resting at a reading, coded digits in the odometer window and the clock window (kit gap 2). As each dial is named, it is ringed and labelled: \"odometer: distance\", \"speedometer: speed\", \"clock: time\". On \"scalars\" the handwritten line writes large above the plate: \"Dashboard dials can't point.\" with a small line under it \"odometer, speedometer, clock = distance, speed, time\". On \"arrow\" the three vector cards from scene 10 slide in at the right with their arrow icons. Hold about 2 seconds.",
+      "teachingReason": "Here's a way to remember the scalars.",
+      "narrationCue": "scalars / arrow",
+      "motionPurpose": "camera push into the painted dashboard plate (phys-y11-dashboard-cluster-v1.png, new): coded needle on the speedometer resting at a reading, coded digits in the odometer window and the clock window (kit gap 2). As each dial is named, it is ringed and labelled: \"odometer: distance\", \"speedometer: speed\", \"clock: time\". On \"scalars\" the handwritten line writes large above the plate: \"Dashboard dials can't point.\" with a small line under it \"odometer, speedometer, clock = distance, speed, time\". On \"arrow\" the three vector cards from scene 10 slide in at the right with their arrow icons. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "camera push into the painted dashboard plate (phys-y11-dashboard-cluster-v1.png, new): coded needle on the speedometer resting at a reading, coded digits in the odometer window and the clock window (kit gap 2). As each dial is named, it is ringed and labelled: \"odometer: distance\", \"speedometer: speed\", \"clock: time\". On \"scalars\" the handwritten line writes large above the plate: \"Dashboard dials can't point.\" with a small line under it \"odometer, speedometer, clock = distance, speed, time\". On \"arrow\" the three vector cards from scene 10 slide in at the right with their arrow icons. Hold about 2 seconds.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "memory aid: dashboard dials can't point: retain 2 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-12: QuestionCard (subject \"Physics\"), worded as printed: \"A drone flies 6.0 m east and then 8.0 m north. (a) Calculate the distance travelled by the drone. (b) Calculate the magnitude of the drone's displacement. (c) Explain why the two values are different.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no path, no arrow, no grid).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "QuestionCard (subject \"Physics\"), worded as printed: \"A drone flies 6.0 m east and then 8.0 m north. (a) Calculate the distance travelled by the drone. (b) Calculate the magnitude of the drone's displacement. (c) Explain why the two values are different.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no path, no arrow, no grid).",
+      "motionRole": "hold",
+      "onScreenChange": "QuestionCard (subject \"Physics\"), worded as printed: \"A drone flies 6.0 m east and then 8.0 m north. (a) Calculate the distance travelled by the drone. (b) Calculate the magnitude of the drone's displacement. (c) Explain why the two values are different.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no path, no arrow, no grid).",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-13: card shrinks to the top. A small grid with the 6.0 m and 8.0 m amber legs draws (route tracer, fast). Row \"(a) distance = 6.0 m + 8.0 m = 14 m\" (on \"metres\"; \"distance\" in the card underlined). On \"For displacement\" the navy arrow draws start to finish; row \"(b) |displacement| = √(6.0² + 8.0²) = √100 = 10 m (1.0 × 10¹ m)\" (on \"ten metres\"; \"magnitude\" underlined). Grey tag \"2 significant figures, like 6.0 and 8.0\". On \"shortcut\" row \"(c) path turns a corner: straight line from start to finish is shorter than the path\" with the right-angle mark ringed. On \"legs\" a chip \"displacement = 14 m\" fades in and is crossed (caption \"that is the distance\"). Hold about 1 second.",
+      "teachingReason": "Distance adds the path: six plus eight, fourteen metres.",
+      "narrationCue": "metres / metres / shortcut / legs",
+      "motionPurpose": "card shrinks to the top. A small grid with the 6.0 m and 8.0 m amber legs draws (route tracer, fast). Row \"(a) distance = 6.0 m + 8.0 m = 14 m\" (on \"metres\"; \"distance\" in the card underlined). On \"For displacement\" the navy arrow draws start to finish; row \"(b) |displacement| = √(6.0² + 8.0²) = √100 = 10 m (1.0 × 10¹ m)\" (on \"ten metres\"; \"magnitude\" underlined). Grey tag \"2 significant figures, like 6.0 and 8.0\". On \"shortcut\" row \"(c) path turns a corner: straight line from start to finish is shorter than the path\" with the right-angle mark ringed. On \"legs\" a chip \"displacement = 14 m\" fades in and is crossed (caption \"that is the distance\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. A small grid with the 6.0 m and 8.0 m amber legs draws (route tracer, fast). Row \"(a) distance = 6.0 m + 8.0 m = 14 m\" (on \"metres\"; \"distance\" in the card underlined). On \"For displacement\" the navy arrow draws start to finish; row \"(b) |displacement| = √(6.0² + 8.0²) = √100 = 10 m (1.0 × 10¹ m)\" (on \"ten metres\"; \"magnitude\" underlined). Grey tag \"2 significant figures, like 6.0 and 8.0\". On \"shortcut\" row \"(c) path turns a corner: straight line from start to finish is shorter than the path\" with the right-angle mark ringed. On \"legs\" a chip \"displacement = 14 m\" fades in and is crossed (caption \"that is the distance\"). Hold about 1 second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback 1 (brief): retain 1 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-14: QuestionCard, worded as printed: \"A ferry travels 2.0 km north across a harbour, then returns 2.0 km south to the same wharf. Its speed is a constant 15 km h⁻¹ on both legs. (a) State the distance travelled and the displacement for the round trip. (b) A passenger claims that the ferry's velocity was the same on both legs. Explain whether the passenger is correct.\" A small top-view boat plate (phys-y11-boat-top-v1.png, new) sits at a coded wharf beside the card, facing north, no path drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "QuestionCard, worded as printed: \"A ferry travels 2.0 km north across a harbour, then returns 2.0 km south to the same wharf. Its speed is a constant 15 km h⁻¹ on both legs. (a) State the distance travelled and the displacement for the round trip. (b) A passenger claims that the ferry's velocity was the same on both legs. Explain whether the passenger is correct.\" A small top-view boat plate (phys-y11-boat-top-v1.png, new) sits at a coded wharf beside the card, facing north, no path drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "QuestionCard, worded as printed: \"A ferry travels 2.0 km north across a harbour, then returns 2.0 km south to the same wharf. Its speed is a constant 15 km h⁻¹ on both legs. (a) State the distance travelled and the displacement for the round trip. (b) A passenger claims that the ferry's velocity was the same on both legs. Explain whether the passenger is correct.\" A small top-view boat plate (phys-y11-boat-top-v1.png, new) sits at a coded wharf beside the card, facing north, no path drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-15: card shrinks to the top. The boat goes up 2.0 km and back on a short coded track (amber trail, offset return). Row \"(a) distance = 2.0 km + 2.0 km = 4.0 km\" (on \"kilometres\"); on \"zero\" row \"displacement = 0 (back at the wharf)\" with the grey tag \"zero: no direction needed\" (\"round trip\" underlined in the card). On \"south\" two orange arrows beside the track, equal length, opposite: \"15 km h⁻¹ north\", \"15 km h⁻¹ south\"; row \"(b) same speed, opposite directions: different velocities\" (\"velocity\" underlined). On \"avoid\" a chip \"displacement = 4.0 km\" fades in and is crossed (caption \"4.0 km is the distance\"). Hold about 1 second.",
+      "teachingReason": "The distance is four point zero kilometres, the whole path.",
+      "narrationCue": "kilometres / zero / south / avoid",
+      "motionPurpose": "card shrinks to the top. The boat goes up 2.0 km and back on a short coded track (amber trail, offset return). Row \"(a) distance = 2.0 km + 2.0 km = 4.0 km\" (on \"kilometres\"); on \"zero\" row \"displacement = 0 (back at the wharf)\" with the grey tag \"zero: no direction needed\" (\"round trip\" underlined in the card). On \"south\" two orange arrows beside the track, equal length, opposite: \"15 km h⁻¹ north\", \"15 km h⁻¹ south\"; row \"(b) same speed, opposite directions: different velocities\" (\"velocity\" underlined). On \"avoid\" a chip \"displacement = 4.0 km\" fades in and is crossed (caption \"4.0 km is the distance\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. The boat goes up 2.0 km and back on a short coded track (amber trail, offset return). Row \"(a) distance = 2.0 km + 2.0 km = 4.0 km\" (on \"kilometres\"); on \"zero\" row \"displacement = 0 (back at the wharf)\" with the grey tag \"zero: no direction needed\" (\"round trip\" underlined in the card). On \"south\" two orange arrows beside the track, equal length, opposite: \"15 km h⁻¹ north\", \"15 km h⁻¹ south\"; row \"(b) same speed, opposite directions: different velocities\" (\"velocity\" underlined). On \"avoid\" a chip \"displacement = 4.0 km\" fades in and is crossed (caption \"4.0 km is the distance\"). Hold about 1 second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback 2 (brief): retain 1 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-16: board clears. The two columns from scene 10 return small at the top. On the third sentence the scene 3 arrows return alone: an amber-outlined 4 m east arrow and 3 m north arrow, then the navy 5 m arrow, with \"4 + 3 → 5, not 7\" written beside. On \"add\" the three arrows lift apart into two loose arrows (4 m and 3 m) floating unjoined, with a \"?\" between them and a chip \"Next: vector diagrams, adding and subtracting\". Hold about 2 seconds.",
+      "teachingReason": "So whenever direction matters, you're dealing with a vector.",
+      "narrationCue": "add",
+      "motionPurpose": "board clears. The two columns from scene 10 return small at the top. On the third sentence the scene 3 arrows return alone: an amber-outlined 4 m east arrow and 3 m north arrow, then the navy 5 m arrow, with \"4 + 3 → 5, not 7\" written beside. On \"add\" the three arrows lift apart into two loose arrows (4 m and 3 m) floating unjoined, with a \"?\" between them and a chip \"Next: vector diagrams, adding and subtracting\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. The two columns from scene 10 return small at the top. On the third sentence the scene 3 arrows return alone: an amber-outlined 4 m east arrow and 3 m north arrow, then the navy 5 m arrow, with \"4 + 3 → 5, not 7\" written beside. On \"add\" the three arrows lift apart into two loose arrows (4 m and 3 m) floating unjoined, with a \"?\" between them and a chip \"Next: vector diagrams, adding and subtracting\". Hold about 2 seconds.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "handoff: retain 2 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md#scene-17: Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionRole": "hold",
+      "onScreenChange": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "Keep the written notes available for copying, with 55 seconds after the standard spoken lead-in."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex: exact source and prior independent science review with repair check",
+    "evidence": {
+      "path": "work/brief165-bio-physics/phys-y11-fa1-v01-recording-source-check.json",
+      "sha256": "83d7e60af4e540b3576ef1531460f991d3026f746526fe034c716f281eb18139"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Existing independent learning review and Codex repair confirmation",
+    "evidence": {
+      "path": "work/brief165-bio-physics/phys-y11-fa1-v01-recording-source-check.json",
+      "sha256": "83d7e60af4e540b3576ef1531460f991d3026f746526fe034c716f281eb18139"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Recording-stage source pass only. No built motion, exact voiced preview, human listening or public release approval."
+}

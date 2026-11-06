@@ -1,0 +1,237 @@
+{
+  "id": "bio-y11-fa1-v03",
+  "fps": 30,
+  "subject": "Biology",
+  "yearLevel": 11,
+  "lessonIntent": "*Could you predict a plant cell's extra structures from what the plant cell needs to do?*",
+  "scenes": [
+    {
+      "id": "two-cells",
+      "title": "two cells, side by side (opening)",
+      "voiceover": {
+        "text": "Last time, we opened up a eukaryotic cell and gave every organelle a job. Here are two of them side by side: a cell from a leaf, and a cell from an animal. Most of the parts match. But the leaf cell is boxy and green, and the animal cell is round and soft. Is that just a quirk, or could you predict it from what each cell has to do?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "opens on v02's handoff frame (open decision 1): m5x-cell-protein-synthesis-v1.png at the left and b6a-plant-cell-v1.png at the right, same height, no labels; v02's \"Next\" chip lifts and becomes the heading area. On \"a cell from a leaf\" a small y11-leaf-tree-cell-v1.png thumbnail (cropped by Cam to the leaf) sits above the plant cell with a grey tag \"leaf\"; on \"a cell from an animal\" a grey tag \"animal tissue\" above the animal cell (no organism drawn). On \"Most of the parts match\" a soft scribbleEllipse rings the nucleus in each plate, then the mitochondria in each. On \"boxy and green\" a coded rectangle traces the plant cell's outline and its chloroplasts glint; on \"round and soft\" a coded curve traces the animal cell's membrane. On the question the heading writes: \"Why do plant and animal cells differ?\" At most three bright text items. Hold one second.",
+      "sourceHeading": "1"
+    },
+    {
+      "id": "drooping-plant",
+      "title": "the drooping plant (hook)",
+      "voiceover": {
+        "text": "Here's a clue. Forget to water a pot plant, and it droops. Water it, and often within a few hours it stands up again. A plant has no bones and no muscles, so what's holding it up? The answer is sitting inside its cells."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the two cells shrink to the top corners. Matched pair at the centre: b2b-prop-new-plant-v1.png (upright) cross-fades on \"it droops\" to m8-potted-plant-wilted-v1.png (the same pot, roots and stem base, leaves hanging; built as a matched pair in bio-m8-b05), then on \"Water it\" a small coded watering arc of blue WaterDots falls into the pot and the plate cross-fades back to upright, with a grey tag \"a few hours later\". On \"no bones and no muscles\" a grey chip \"skeleton?\" writes beside the stem and takes a scribble cross. On \"inside its cells\" the Cam pushes towards a leaf and a small plant cell thumbnail (b6a-plant-cell-v1.png) appears in a callout from the leaf. As the speech ends, a silent chip writes: \"difference → reason (the cell's job)\". At most three bright items. Hold one second.",
+      "sourceHeading": "2"
+    },
+    {
+      "id": "shared-toolkit",
+      "title": "the shared toolkit",
+      "voiceover": {
+        "text": "Start with what they share. Plant and animal cells are both eukaryotic, so both have a cell membrane, cytoplasm and a nucleus. Both have mitochondria, ribosomes, endoplasmic reticulum and a Golgi body. That's the shared toolkit. The differences are a short list: the leaf cell adds a cell wall, chloroplasts and one large central vacuole. So why exactly those three?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the two-cell board returns: animal cell left, plant cell right, same height. On each named shared part a matching pair of small amber ticks lands on both plates where the part is visible (membrane, nucleus, mitochondria), and a grey chip column between the plates lists the full shared toolkit as it is spoken: \"cell membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body\" (grey tag \"both eukaryotic\"); parts too small to see on the plant plate (ER, Golgi, ribosomes) are ticked in the chip column only. On \"the leaf cell adds\" three callouts draw on the plant plate in turn: \"cell wall\", \"chloroplasts\", \"large central vacuole\", each in amber. The coded ContrastLedger draws under the board with three empty rows titled with those three names, columns \"plant cell\", \"animal cell\", \"because\". On \"why exactly those three?\" the three \"because\" slots pulse empty. At most three bright items. Hold one second.",
+      "sourceHeading": "3"
+    },
+    {
+      "id": "ways-of-life",
+      "title": "two ways of life",
+      "voiceover": {
+        "text": "Look at how each organism lives. A plant is an autotroph, which means it makes its own food, using light energy. It's also fixed in one spot, and it has no skeleton to hold it up. An animal is a heterotroph: it gets its food by eating other living things. It moves around, and many animals are held up by a skeleton. Every difference we're about to see follows from those two ways of life."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the board dims. y11-leaf-tree-cell-v1.png enters at the left (sapling, leaf, leaf cell); on \"autotroph\" a gloss \"autotroph: makes its own food using light\"; on \"using light energy\" coded light rays slant onto the leaf. On \"fixed in one spot\" the roots are ringed, tag \"fixed in place\"; on \"no skeleton\" a grey chip \"no skeleton\". At the right, a coded card for the animal side (no animal or person drawn): on \"heterotroph\" a gloss \"heterotroph: eats other living things\", with three grey chips writing one per cue: \"eats food\", \"moves\", \"skeleton (many animals)\". On \"follows from those two ways of life\" the two cards slide under their cells on the board (plant card under the plant cell, animal card under the animal cell) and stay there as small headers for the rest of the video: \"makes food · fixed · no skeleton\" and \"eats · moves · often a skeleton\". At most three bright items. Hold one second.",
+      "sourceHeading": "4"
+    },
+    {
+      "id": "make-food",
+      "title": "job one: make food",
+      "voiceover": {
+        "text": "First job: make food. To make glucose, a leaf cell has to capture light energy, and that happens in chloroplasts. Inside each one, stacks of membranes hold a green pigment, chlorophyll, which absorbs the light. That's photosynthesis, and it's why leaves are green. An animal cell has no chloroplasts, because an animal gets its glucose already made, from food."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam pushes into the plant cell; a scribbleEllipse rings one chloroplast and a callout opens to b6a-chloroplast-v1.png (cut-away showing stacked membranes). On \"stacks of membranes\" a callout to one stack, label \"stacks of membranes\"; on \"chlorophyll, which absorbs the light\" coded light rays enter and the stacks brighten; gloss \"chlorophyll: green pigment, absorbs light\". On \"That's photosynthesis\" a small coded arrow leaves the chloroplast to a grey chip \"glucose made\" (grey tag \"word equation: a later video\"). On \"An animal cell has no chloroplasts\" the Cam pulls back to the board; the animal cell's interior is scanned by a soft coded sweep with no green found, and a grey chip \"food → glucose already made\" sits under it. The ledger's \"chloroplasts\" row fills: plant \"yes, in photosynthetic cells such as leaf cells\", animal \"no\", because \"makes its own food: captures light\". At most three bright items. Hold one second.",
+      "sourceHeading": "5"
+    },
+    {
+      "id": "root-prediction",
+      "title": "a prediction: a root cell",
+      "voiceover": {
+        "text": "So here's a prediction for you. This cell comes from a root, deep underground. It's still a plant cell. Does it have chloroplasts? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 5,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board slides up. New y11-root-cell-v1.png enters at the centre with a small b2b-prop-new-plant-v1.png thumbnail beside it, its cut-away roots ringed and a leader line to the cell, grey tag \"root cell, underground\". The root cell is shown as an outline with its interior closed under a soft coded blur, unlabelled, so the answer can't be read off the picture; the cutaway interior is revealed only in 6b. On \"Does it have chloroplasts?\" a chip writes \"chloroplasts?\" beside it. A 3 s countdown ring starts after \"Have a think.\" The plate and chip stay on screen during the countdown.",
+      "sourceHeading": "6a"
+    },
+    {
+      "id": "root-reveal",
+      "title": "the reveal",
+      "voiceover": {
+        "text": "No, it doesn't. There's no light down there to capture, so chloroplasts wouldn't help. But it still has a wall and a large vacuole, because it still needs support. Even within one plant, each cell stocks the parts its own job needs. That's called structure follows function."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "on \"No, it doesn't\" the blur lifts to reveal the cutaway, the chip gains \"no\" and a soft coded sweep across the root cell finds no green; small grey tag \"colourless starch stores, no chloroplasts\". On \"no light down there\" the thumbnail's soil darkens and the coded light rays from scene 4 stop at the soil line. On \"still has a wall and a large vacuole\" callouts draw to the wall and the vacuole of the root cell, matching the plant cell labels. On \"structure follows function\" a handwritten line writes across the bottom: \"structure follows function\", and stays small at the lower edge for the rest of the video. At most three bright items. Hold one second.",
+      "sourceHeading": "6b"
+    },
+    {
+      "id": "stay-upright",
+      "title": "job two: stay upright",
+      "voiceover": {
+        "text": "Second job: hold itself up without a skeleton. This is where the cell wall and the vacuole work as a team. The cell wall is a rigid layer of cellulose, tough fibres built from sugar, outside the membrane. The large central vacuole is a sac of watery cell sap that also stores nutrients and wastes. When the vacuole is full, it presses the cell outwards against the wall, and the wall pushes back, so the cell becomes firm instead of bursting. That outward push is called turgor pressure. Millions of firm cells pressing on each other hold a leaf up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the board returns; the Cam pushes into the plant cell. On \"cell wall\" a callout to the wall, gloss \"cellulose: tough fibres built from sugar\"; a thin coded line traces the membrane just inside it, label \"membrane (inside the wall)\". On \"central vacuole\" the vacuole is ringed, gloss \"cell sap: water, nutrients, wastes\". Then the Cam moves to y11-tonicity-cells-v1.png, framed on its left panel only (the turgid cell; the other panels stay off frame; grey tag \"a full vacuole\"). On \"presses the cell outwards\" short coded amber arrows push out from the vacuole to the wall; on \"the wall pushes back\" shorter teal arrows push inward at the wall; on \"firm instead of bursting\" a grey tag \"wall: stops bursting\". On \"turgor pressure\" a gloss \"turgor pressure: the vacuole's outward push on the wall\". On \"Millions of firm cells\" the Cam pulls back to the leaf on the upright plant thumbnail, where a coded grid of small rounded cells fills a leaf outline, each with tiny outward arrows. The ledger's \"cell wall\" row fills: plant \"yes, cellulose\", animal \"no\", because \"resists turgor: firm, not burst\"; and the \"vacuole\" row: plant \"one large, central\", animal \"small, temporary\", because \"stores sap, keeps turgor up\". At most three bright items. Hold one second.",
+      "sourceHeading": "7"
+    },
+    {
+      "id": "puzzle-answered",
+      "title": "the puzzle answered",
+      "voiceover": {
+        "text": "Now you can answer the pot plant puzzle. When the soil dries out, the vacuoles lose water. They stop pressing on the walls, turgor falls, and the cells go soft. Soft cells can't hold the leaves out, so the plant droops. Water it, the vacuoles refill, turgor returns, and the plant stands back up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the plant pair returns at the left (upright); the tonicity plate at the right with the Cam framed on its left two panels (turgid, then flaccid; the plasmolysed panel stays off frame, because that state belongs to v11). On \"the vacuoles lose water\" blue WaterDots drift out of the turgid cell and the Cam slides from the turgid panel to the flaccid panel; the amber arrows shrink and fade (tag \"turgor falls\"). On \"the plant droops\" the plant cross-fades to m8-potted-plant-wilted-v1.png. On \"Water it, the vacuoles refill\" the Cam slides back to the turgid panel, the arrows return, and the plant cross-fades upright. On \"stands back up\" a silent grey chip \"animals: often held up by a skeleton instead\" writes under the animal header (screen only; said in scene 4). At most three bright items. Hold one second.",
+      "sourceHeading": "8"
+    },
+    {
+      "id": "animal-cell",
+      "title": "the animal cell travels light",
+      "voiceover": {
+        "text": "Now flip to the animal cell. With no wall, its outer boundary is the flexible cell membrane, so the cell can change shape. Watch this white blood cell. It flows around a bacterium, wraps it up and pulls it inside. A cell with a rigid wall couldn't do that. Animal cells have only small, temporary vacuoles, if any. And many animal cells have lysosomes, small sacs of digestive enzymes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the board returns; the Cam pushes into the animal cell. On \"flexible cell membrane\" a coded line traces the membrane, label \"membrane: the outer boundary\", and gently ripples. On \"Watch this white blood cell\" the phagocytosis set from bio-m7-b06 fills the centre: m7-macrophage-engulf-before-v1.png (grey tag \"white blood cell (macrophage); bacterium drawn larger than real\"), cross-fading on \"wraps it up\" to m7-macrophage-engulf-wrap-v1.png and on \"pulls it inside\" to m7-macrophage-engulf-after-v2.png. Transitions follow bio-m7-b06 Revision 3: each change is a short cross-fade (about 6 frames) or masked over the bacterium, and the change into the after plate is always masked, so the rod never appears twice. On \"A cell with a rigid wall couldn't do that\" a small plant cell thumbnail appears beside it with its wall ringed and a grey chip \"rigid wall: fixed shape\". On \"small, temporary vacuoles\" the animal cell's small vesicles are ringed. On \"lysosomes\" the set cross-fades to m7-macrophage-engulf-digest-v1.png and the merging lysosomes are ringed, gloss \"lysosome: sac of digestive enzymes\". Small grey screen tag under the animal header: \"many animal cells: centrioles (help organise cell division; later video)\". The ledger's \"cell wall\" row gains under the animal column: \"no: flexible, can engulf\". At most three bright items. Hold one second.",
+      "sourceHeading": "9"
+    },
+    {
+      "id": "mitochondria-trap",
+      "title": "the mitochondria trap",
+      "voiceover": {
+        "text": "Here's a common trap. Plants make glucose in chloroplasts, so do plant cells need mitochondria? Yes, they do. Making glucose stores energy. To use that energy, a plant cell respires the glucose in its mitochondria, just like an animal cell. And respiration runs day and night, while photosynthesis stops in the dark. One way to remember it: a plant cell runs a kitchen and a furnace, and only the kitchen closes at night."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the board returns. On \"trap\" a WrongChip writes \"plant cells have no mitochondria\". On \"Yes, they do\" the chip takes a scribble cross and both plates' mitochondria are ringed in amber, with b6a-mitochondrion-v1.png opening in a callout from the plant cell. On \"Making glucose stores energy\" a coded arrow runs from a chloroplast to a small grey glucose chip; on \"respires the glucose in its mitochondria\" the glucose chip breaks down in the cytoplasm and an energy arrow from that breakdown continues into the mitochondrion, out to a chip \"energy the cell can use\". On \"day and night\" a small coded sun and moon dial sits above the plant cell: in the sun half both arrows run; as the dial turns to the moon half, the chloroplast arrow stops and the mitochondrion arrow keeps running. On the memory line two handwritten labels write: \"kitchen (chloroplast): closes at night\" and \"furnace (mitochondrion): runs day and night\", each with a leader line to its organelle. At most three bright items. Hold one second.",
+      "sourceHeading": "10"
+    },
+    {
+      "id": "write-contrast",
+      "title": "how to write a contrast",
+      "voiceover": {
+        "text": "So what does an exam mean by contrast, based on the function of the cell? Contrast means differences, stated for both cells. And based on function means every difference needs its reason. Plant cells have a cellulose wall, animal cells don't, because the plant relies on turgor for support. Green plant cells have chloroplasts, animal cells don't, because the plant makes its own food. Plant cells have one large central vacuole, animal cells have small ones, because that vacuole stores sap and keeps turgor up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 4,
+      "holdKind": "visual",
+      "sourceVisual": "the plates shrink to the top corners and the ContrastLedger enlarges to fill the centre. On \"contrast\" a gloss \"contrast: differences, for both cells\"; on \"based on function\" a gloss \"based on function: give the reason\", and the \"because\" column header takes an amber underline. Each sentence lights its row in turn, plant cell cell, animal cell cell, then the \"because\" cell, earlier rows dimming to grey but staying readable. A small grey tag at the side: \"shared: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi\". At most three bright items. Hold two seconds on the finished ledger (a reading hold).",
+      "sourceHeading": "11"
+    },
+    {
+      "id": "attempt",
+      "title": "attempt one (a cell with no chloroplasts)",
+      "voiceover": {
+        "text": "Two exam questions. First. A cell has a nucleus, mitochondria, a cellulose cell wall and a large central vacuole, but no chloroplasts. Identify the type of cell, and justify your answer. Then explain why this cell may have no chloroplasts, yet still needs mitochondria. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cell is found to contain a nucleus, mitochondria, a cellulose cell wall and a large central vacuole. No chloroplasts are present.\" Demand: \"(a) Identify whether this is a plant cell or an animal cell. Justify your answer. (2 marks) (b) Explain why this cell may have no chloroplasts, yet still needs mitochondria. (3 marks)\". Lined answer space. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "12a"
+    },
+    {
+      "id": "feedback-one",
+      "title": "feedback, item one",
+      "voiceover": {
+        "text": "It's a plant cell, because only plant cells have a cellulose wall and a large central vacuole. It probably comes from a part of the plant that gets no light, like a root, so chloroplasts wouldn't help. It still needs mitochondria, because it must respire sugars sent from the leaves to release energy. The classic mistake is saying no chloroplasts means an animal cell."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. On \"plant cell\" the givens \"cellulose cell wall\" and \"large central vacuole\" take amber underlines and an answer line writes \"(a) plant cell: cellulose wall + large central vacuole\". On \"gets no light, like a root\" the given \"No chloroplasts\" takes an underline; answer line \"(b) no light (e.g. root) → chloroplasts not needed\"; a small y11-root-cell-v1.png thumbnail appears beside the card. On \"still needs mitochondria\" the given \"mitochondria\" takes an underline; answer line \"respires sugars from the leaves → energy\". On \"classic mistake\" a chip \"no chloroplasts, so animal cell\" writes and takes a scribble cross. Settle one second.",
+      "sourceHeading": "12b"
+    },
+    {
+      "id": "attempt-two",
+      "title": "attempt two (only because plants are green?)",
+      "voiceover": {
+        "text": "Second. A student says, plant and animal cells differ only because plants are green. Assess this statement, by contrasting the two cell types based on the function of each cell. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A student states: 'Plant cells and animal cells differ only because plants are green.'\" Demand: \"Assess this statement by contrasting the structure of plant and animal cells, based on the function of each cell. (4 marks)\". Lined answer space. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "12c"
+    },
+    {
+      "id": "feedback-two",
+      "title": "feedback, item two",
+      "voiceover": {
+        "text": "The statement is too narrow. Chloroplasts are one difference, there because the plant makes its own food. But plant cells also have a cellulose wall and a large central vacuole, because a plant has no skeleton and relies on turgor to stay upright. Animal cells have none of these three. Structure follows function. The classic mistake is listing differences with no reasons."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. On \"too narrow\" the word \"only\" in the stem takes an amber underline and an answer line writes \"too narrow: reject\". Answer lines write one per cue, earlier lines dimming: \"chloroplasts: makes its own food\", \"cell wall + large vacuole: turgor, no skeleton\", \"animal cells: none of the three\". A mini ContrastLedger thumbnail beside the card lights all three \"because\" cells. On \"Structure follows function\" the handwritten line from 6b brightens. On \"classic mistake\" a chip \"differences listed, no reasons\" writes and takes a scribble cross. Settle one second.",
+      "sourceHeading": "12d"
+    },
+    {
+      "id": "decision-rule",
+      "title": "decision rule and handoff",
+      "voiceover": {
+        "text": "So to contrast any two cells, ask what each cell has to do, then look for the structure that does that job. Next, we visit a cell with no nucleus and no membrane-bound organelles at all. How does a bacterium stay alive?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "two step chips write on, one per cue: \"what does the cell have to do?\", \"which structure does that job?\". The two-cell board returns small above them. On \"a cell with no nucleus\" a small y11-prokaryote-cutaway-v1.png thumbnail (new, requested in the v04 design; fallback m6-bacterium-plasmid-v1.png) slides in at the right of the board, about a tenth of the width of the animal cell, with a grey tag \"bacterium (enlarged; really far smaller)\". A \"Next\" chip slides in at the lower right: \"Next: How does a bacterium function without membrane-bound organelles?\". This is v04's opening frame (the board with both eukaryotic cells and the bacterium thumbnail at the right). Hold half a second before the notes.",
+      "sourceHeading": "13"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 57,
+      "holdKind": "notes",
+      "sourceVisual": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "sourceHeading": "14"
+    }
+  ]
+}

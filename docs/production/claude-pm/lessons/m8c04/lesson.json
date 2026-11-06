@@ -1,0 +1,176 @@
+{
+  "title": "How do colour and absorption measure concentration? Colourimetry, UV-visible spectrophotometry and AAS, with a calibration and a dilution factor",
+  "subtitle": "Two beakers of tap water look identical, but one holds lead above the drinking water guideline. A copper solution's blue gets deeper as the copper increases. How do colour and absorption turn a solution into a concentration, and which method suits which sample?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 8,
+  "lessonIntent": "choosing the light to measure a coloured species; explaining what a UV-visible spectrophotometer adds (one wavelength, visible or UV, a spectrum, λmax); explaining why a complex helps; calculating c from A, ε and l; explaining how AAS works and why it is specific, sensitive and limited; reading a calibration line inside its range; diluting an out-of-range sample and multiplying back by the dilution factor; choosing among colourimetry, UV-visible and AAS for a sample.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two beakers of tap water look exactly the same. One holds lead above the drinking water guideline, just a few millionths of a gram in every litre. You can't see that, and no precipitate test would show so little. Now a copper solution: the deeper the blue, the more copper. Both are questions about how much, and light can answer both. So how do colour and absorption measure concentration?"
+      }
+    },
+    {
+      "id": "which-light",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You met the colourimeter in Module 5. Light passes through a cuvette, the solution absorbs some of it, and the meter reports absorbance. A blank sets zero, and absorbance rises in step with concentration. So which light should you use? A copper solution looks blue because it absorbs orange and red light and lets the blue through. So you measure with the colour it absorbs, not the colour you see. In a colourimeter, that's a red or orange filter."
+      }
+    },
+    {
+      "id": "uv-visible",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A filter lets through a whole band of colours, though. A UV-visible spectrophotometer does better. Inside, a grating spreads the light into a rainbow, and a narrow slit picks out one wavelength. It reaches into ultraviolet too, so some colourless substances can be measured."
+      }
+    },
+    {
+      "id": "spectrum",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step through the wavelengths, measuring at each, and you get an absorption spectrum. For the deep blue copper ammonia complex, the peak sits near six hundred nanometres, in the orange. Measure there, at the peak, called lambda max. Absorbance changes most with concentration at the peak, and the top is fairly flat, so a tiny slip in wavelength barely changes the reading."
+      }
+    },
+    {
+      "id": "complex",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why use the ammonia complex at all? Copper ions in water are pale blue and absorb only weakly. Ammonia molecules bond around each copper ion, making the deep blue complex from the cation video, and it absorbs several times more strongly. So even low concentrations give a clear reading. Add the ammonia in excess, to the standards and the sample alike, so every copper ion ends up in the complex."
+      }
+    },
+    {
+      "id": "beer-lambert",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The law behind this is Beer-Lambert: A equals epsilon l c. Say a solution reads an absorbance of point four eight zero, epsilon is a hundred and twenty litres per mole per centimetre, and the cuvette is one centimetre wide. Rearrange for c, absorbance over epsilon times l, and that's point zero zero four zero zero moles per litre. A book value of epsilon may not suit your instrument's light, though, so chemists usually trust a calibration line made on their own instrument."
+      }
+    },
+    {
+      "id": "aas-atomise-absorb",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Lead ions are colourless, and far too dilute for any colour test. So for metals at trace levels, chemists use atomic absorption spectroscopy, or AAS. The sample is sprayed into a flame. The water evaporates, and the heat breaks the lead compounds apart into free lead atoms. That's called atomising. A hollow cathode lamp, with its cathode made of lead, shines lead's own wavelengths through the flame. Lead atoms absorb those wavelengths as their electrons jump to higher energy levels, and the detector measures how much light went missing."
+      }
+    },
+    {
+      "id": "aas-specific",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Other atoms in the flame need different energies, so they let lead's light pass. In a flame test, heated atoms give out their own colours. In AAS, atoms in the flame take in those same wavelengths from the lamp. So AAS measures atoms in the flame, not ions in the solution. That makes it specific. For the lowest levels, like lead in drinking water, a heated graphite tube replaces the flame. The costs: one lamp means one element at a time, and other substances in the sample can change how many atoms form, so standards should resemble the sample."
+      }
+    },
+    {
+      "id": "calibration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Like the colourimeter, AAS gives absorbance, not concentration, so it needs a calibration. Standards first, unknown second. Run a blank, then lead standards from point five to two milligrams per litre, and plot absorbance against concentration. The points fall close to a straight line. Now an unknown can be read across, then down, as long as its reading sits inside the standards."
+      }
+    },
+    {
+      "id": "worked-dilute",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a factory discharge tested for lead. Its first reading is above the top standard. Don't stretch the line past the last point, because nothing shows it stays straight out there. Dilute it instead: twenty five millilitres made up to two hundred and fifty, a tenfold dilution. Now it reads point one one three, inside the range."
+      }
+    },
+    {
+      "id": "worked-read",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now read it. The line's gradient is point one six two absorbance units per milligram per litre, so divide: point one one three over point one six two gives point six nine eight milligrams per litre. But that's the diluted solution. Multiply back by the dilution factor, ten, and the discharge holds six point nine eight milligrams of lead per litre."
+      }
+    },
+    {
+      "id": "which-method",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So which method? If the species is coloured, or can be made coloured with a complex, colourimetry is quick and cheap, and UV-visible is more selective, with one chosen wavelength. For one metal at trace levels, coloured or not, choose AAS."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lines to keep. Read across, then down, only inside the standards, then multiply back by the dilution factor. And in AAS, the lamp is made of the element you're testing."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Copper in vineyard runoff is measured by AAS. Ten millilitres was diluted to one hundred, and the diluted solution reads point two two six. Use the calibration to find the copper concentration in the original runoff. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read point two two six across to the line and down: about two point five milligrams per litre. That's the diluted solution. The runoff was diluted tenfold, so multiply by ten: about twenty five milligrams per litre. Stopping at two point five is the classic slip, because that's the diluted value."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Two samples: a deep blue copper ammonia solution, and tap water to be checked for traces of lead. Choose a technique for each, and justify your choice. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For the copper complex, colourimetry or UV-visible: it's strongly coloured, so it absorbs visible light, best measured at lambda max. For trace lead, graphite-furnace AAS: lead is colourless, and the furnace measures far lower levels than a flame. Saying AAS detects the lead ions in the water is the trap. It measures free atoms."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to measure concentration with light, pick a method your species responds to, calibrate with standards, read inside the range, and correct for any dilution. Next, you'll build a calibration yourself, from standards to an unknown."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "title": "Epidemiology calculation and interpretation practice",
+  "subtitle": "When an exam gives you disease counts, a table of rates or a study with a claim, how do you calculate the rate, draw the graph and judge the claim?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 16.5,
+  "lessonIntent": "calculating incidence (550 and 700 per 100,000 per year) and mortality (25 and 36 per 100,000 per year) for two regions and evaluating a raw-count claim, with age structure named as the check before inferring risk; constructing a line graph of melanoma incidence and mortality rates on one set of axes (year on the x axis to scale, rate per 100,000 per year on the y axis from 0 to 60, both series with a key and a title) and describing and explaining the two trends (incidence rising then levelling; mortality far lower and falling; early detection and removal, more skin checks, consistent with better treatment); calculating prevalence in a survey (9 and 4 per cent), naming the design (cross-sectional), and evaluating it (quick, measures prevalence; cannot show which came first, confounders, self-report, one city; association only; a cohort would be stronger).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Epidemiology questions in the HSC tend to ask for three things. Calculate a rate from new data, draw a graph of rates, and judge whether a study supports its claim. Here are three HSC-style questions, one of each. Pause and try each one properly, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Two regions recorded type 2 diabetes for one year. Region P has one point two million people, with six thousand six hundred new diagnoses and three hundred deaths. Region Q has a hundred and fifty thousand people, with one thousand and fifty new diagnoses and fifty-four deaths. Calculate the incidence and mortality rates per hundred thousand for each region. Then evaluate the claim that Region P has the worse diabetes problem. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Rates first, laid out as equation, substitute, solve, sense check. Incidence is new cases over the population, times a hundred thousand. For P, six thousand six hundred over one point two million, times a hundred thousand, is five hundred and fifty per hundred thousand per year. For Q, one thousand and fifty over a hundred and fifty thousand gives seven hundred. Mortality puts deaths on top. Three hundred over one point two million gives twenty-five, and fifty-four over a hundred and fifty thousand gives thirty-six. Sense check: Q is the smaller region, yet both its rates are higher."
+      }
+    },
+    {
+      "id": "q1-claim",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the claim. P had more cases mainly because it has eight times as many people. Out of every hundred thousand people, Q had more new cases and more deaths, so the claim isn't supported. But before saying people in Q face a higher risk, check their ages. Type 2 diabetes becomes more common with age, so an older population would have a higher rate, even if the risk at each age were the same. Age-standardised rates, adjusted as if both regions had the same age mix, would make that comparison fairer."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is comparing raw counts. A bigger population gives more cases even when the risk is the same. Here, the region with fewer cases had the higher rates. Turn every count into a rate before you compare."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. The table gives melanoma incidence and mortality rates in Australia, per hundred thousand people, from 1985 to 2020. Draw a line graph of both rates on one set of axes. Then describe the trend in each rate, and explain why the two rates differ so much. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-graph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Set up the graph before you plot anything. Year goes on the x axis, because it's the independent variable. The rate goes on the y axis, with its unit, per hundred thousand people per year. Both rates share that unit, so one axis works. Look at the years: they jump by ten, then by five at the end, so space them to scale. For the y axis, choose an even scale that fits the largest value, fifty-two: zero to sixty in tens. Plot each point, then join each set with its own ruled line, because each value is a whole year's rate, and add a key and a title. That's TAILS: title, axes, intervals, labels, scale."
+      }
+    },
+    {
+      "id": "q2-describe",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now describe and explain. Incidence rose from thirty-eight in 1985 to fifty-two in 2015, then fell slightly to fifty. Mortality stayed far lower, around six, and fell to about five by 2020. They differ because most melanomas are found early, while they're still thin, and cut out, so far fewer people die than are diagnosed. Deaths in one year include people diagnosed in earlier years, so these lines don't directly give survival. The recent fall in deaths fits better treatment, but this graph alone can't show that."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is starting the y axis at thirty, to fit the incidence line. Then the mortality points fall off the graph. Choose one scale that fits every value. And space the years to scale, or the last five years look like ten."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A survey asked two thousand adults in one city whether they drink an energy drink every day, and whether they're currently living with diagnosed type 2 diabetes. Of four hundred daily drinkers, thirty-six had diabetes. Of sixteen hundred other adults, sixty-four had diabetes. A website claims that energy drinks cause type 2 diabetes. Calculate the prevalence of diabetes in each group. Then evaluate the method and the claim. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Prevalence is existing cases out of the group, as a percentage. Thirty-six over four hundred is nine per cent. Sixty-four over sixteen hundred is four per cent, so diabetes was about twice as common among daily drinkers. Now name the design. Both things were measured at one moment, so it's a cross-sectional study, a snapshot. Its strength: it's quick, and it measures prevalence among the respondents."
+      }
+    },
+    {
+      "id": "q3-evaluate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the limitations. A snapshot can't show which came first, so some people may have changed their drinking after diagnosis. Daily drinkers may also differ in diet, weight, sleep or age, and any of those could be the real cause, so they're possible confounders. The answers were self-reported, online, from one city. So the data show an association, not a cause, and the claim goes too far. A stronger test is a cohort: record drinks in adults without diabetes, follow them forward, and compare who develops it, adjusting for confounders."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is thinking two thousand people makes the claim proven. More responses can reduce random uncertainty, but don't remove selection bias or fix the design. A snapshot still can't show a cause. For that, you need the order in time, and a way to deal with confounders."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, here's your first move for each type. For a rate, divide by the right population, and use the same unit for every group. For a graph, set up the axes, units and an even scale that fits every value, before you plot. For a study, name the design, then judge what it can and can't show. Next: how type 2 diabetes can be managed."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

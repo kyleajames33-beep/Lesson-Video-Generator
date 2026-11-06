@@ -1,0 +1,192 @@
+{
+  "title": "What do dissolved oxygen and BOD tell us? The oxygen snapshot, the Winkler titration and the five-day forecast",
+  "subtitle": "Fish in a river die at first light, though a reading at noon looked fine. How much oxygen is in the water, how do chemists measure it, and how fast will it be used up?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 12,
+  "lessonIntent": "explaining what DO is and why one reading is a snapshot; choosing a meter or a Winkler titration; explaining why a sample must have no bubbles and be fixed at once; following the Winkler chain and its 1 : 4 ratio; calculating DO in mg/L; explaining each BOD₅ condition; calculating and interpreting BOD₅; reading DO and BOD together; stating what BOD can't show.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In March 2023, millions of fish died in the Darling-Baaka River at Menindee. The New South Wales Chief Scientist's review found that low dissolved oxygen was the most likely cause, and fisheries reports noted deaths around first light. A reading at noon could have looked fine. So what do dissolved oxygen and BOD tell us, and how do chemists measure them?"
+      }
+    },
+    {
+      "id": "dissolved-oxygen",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Dissolved oxygen, or DO, is the oxygen gas dissolved in the water, measured in milligrams per litre. Fish and other water animals breathe it through their gills. Air-saturated fresh water at twenty degrees contains about nine milligrams per litre, and warmer water holds less. When DO falls to just a few milligrams per litre, many fish struggle."
+      }
+    },
+    {
+      "id": "snapshot",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But DO changes through the day. In a lake full of algae it can be high in the afternoon and lowest at dawn, so one reading is a snapshot. A DO meter puts a probe straight into the water, gives a reading in seconds, and can log all night. Meters are calibrated and checked against a chemical method, the Winkler titration."
+      }
+    },
+    {
+      "id": "sampling",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The Winkler method starts at the river. The bottle is filled to overflowing, with no air bubbles, and stoppered. That matters, because air contains oxygen, and a single bubble would add some. Then the oxygen is fixed straight away, so it can't escape or change."
+      }
+    },
+    {
+      "id": "winkler-fix",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step one. Add manganese two sulfate, then an alkaline iodide solution. A pale manganese two hydroxide forms, and the dissolved oxygen oxidises it straight away to a brown solid. Every oxygen molecule in the bottle is now locked up in that brown solid, and nothing can get in or out."
+      }
+    },
+    {
+      "id": "winkler-iodine",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two. Add sulfuric acid. The brown solid dissolves, and its manganese is now strong enough to oxidise iodide ions to iodine. The solution turns yellow-brown. The more oxygen there was, the more brown solid formed, and the more iodine you get."
+      }
+    },
+    {
+      "id": "winkler-titrate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three. A measured portion goes into a flask, and sodium thiosulfate from a burette turns the iodine back into iodide. As the yellow fades to pale straw, add a little starch. It turns blue-black with iodine, and the endpoint is the moment the blue disappears. So thiosulfate never meets the oxygen itself. It measures the iodine, and the iodine stands in for the oxygen."
+      }
+    },
+    {
+      "id": "ratio",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So how much thiosulfate per oxygen? Follow the equations. One oxygen molecule fixes two manganese. Each manganese frees one iodine, so that's two iodine. And each iodine takes two thiosulfates, so four thiosulfates in all. One oxygen, four thiosulfates."
+      }
+    },
+    {
+      "id": "worked-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's work one. A hundred millilitre sample needs eight point zero zero millilitres of point zero one zero zero molar thiosulfate. Find the dissolved oxygen in milligrams per litre. Start with the solution you know both numbers for. Moles equals c times V: point zero one zero zero times point zero zero eight zero zero litres is eight point zero zero times ten to the minus five moles of thiosulfate."
+      }
+    },
+    {
+      "id": "worked-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now use the ratio. Divide by four: two point zero zero times ten to the minus five moles of oxygen. Times thirty two gives six point four zero times ten to the minus four grams, which is point six four zero milligrams, all in that hundred millilitre sample."
+      }
+    },
+    {
+      "id": "worked-per-litre",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "We want milligrams per litre, so divide by the sample's volume in litres, not by the titre. Point six four zero over point one zero zero zero is six point four zero milligrams per litre."
+      }
+    },
+    {
+      "id": "bod-forecast",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "DO tells you the oxygen now. Biochemical oxygen demand, or BOD, measures how much oxygen microbes use in five days, under standard conditions. Fill two bottles from the same sample. Measure the DO in one straight away. Seal the other and keep it dark at twenty degrees. Sealed, so no new oxygen gets in. Dark, so algae can't make oxygen. Twenty degrees, so every lab's results compare. Then measure it again. The oxygen that's gone was used by microbes breaking down organic matter. So a high BOD means lots of oxygen used, not lots of oxygen present."
+      }
+    },
+    {
+      "id": "bod-worked",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So BOD five is the starting DO minus the DO after five days. A sample starts at eight point four, and after five days it's down to four point nine. That's a BOD of three point five milligrams per litre. Microbes in each litre used three point five milligrams of oxygen in five days, moderate on this card's teaching guide."
+      }
+    },
+    {
+      "id": "together-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read the two together. Low DO with a high BOD means the water is short of oxygen and still losing it, which is the pattern before a fish kill. But BOD only sees what microbes can break down. BOD doesn't identify metals, pesticides or disease-causing microbes, and a poison can even stop the microbes, so the BOD reads low. A low BOD doesn't prove water is safe. And it takes five days, so for tonight, you still need the probe."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lines to keep. DO is oxygen now. BOD is oxygen used later. And for the Winkler calculation, one oxygen, four thiosulfates."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A fifty millilitre river sample is analysed by the Winkler method, and the iodine needs ten point four zero millilitres of point zero zero five zero zero molar thiosulfate. Calculate the dissolved oxygen in milligrams per litre. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Moles of thiosulfate, c times V, is five point two zero times ten to the minus five. Divide by four for oxygen, then times thirty two: point four one six milligrams in fifty millilitres. That's eight point three two milligrams per litre. Using one to one gives thirty three, about four times the right answer. Recheck the ratio."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Creek water is sampled above and below a food-processing plant's outlet, and each sample's oxygen is measured before and after five days. Calculate the five-day oxygen decrease for each sample, then explain what the result below the outlet suggests about the creek downstream. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "P's oxygen fell by point nine, and Q's by five point eight milligrams per litre. Q carries much more organic waste, so microbes will keep using oxygen as the water flows on, and DO downstream is likely to fall, especially on warm nights. Calling Q's decrease one point eight is the trap. That's the oxygen left, not the oxygen used."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So DO is the oxygen in the water right now, and BOD is the oxygen used during the five-day test. Read them together, and remember what neither can see. Next, Module 8 turns to organic compounds, and the simple tests that tell their functional groups apart."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

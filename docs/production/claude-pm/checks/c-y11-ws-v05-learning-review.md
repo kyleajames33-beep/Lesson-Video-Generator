@@ -1,0 +1,18 @@
+# c-y11-ws-v05 learning review
+
+Revision 1, independent source review 6 November 2026. SHA-256 `c96098a68a8fddeb3b325d814aa931e4071dd09de0bc3943c641d39b6a93f77e`. No design edits, speech, render or listening check. This review traces the existing entry knowledge, previous handoff, route and official course version. It includes the missing starter-pack calculation/reference checks.
+
+The reconciled opening keeps the previous graph and its unresolved uncertainty tag. The copper-sulfate classes then distinguish scatter, bias and stated reading limits through a familiar mechanism. The small-ribbon comparison explains why relative uncertainty can be large even with a seemingly fine instrument. Both attempts retain the method conditions, reference value and uncertainty needed for a judgement. The name/size/fix aid connects each conclusion to a matched improvement. The class-2 interval and the strength of the systematic-error inference need the findings below. The source estimate is at the 570-second cap; the named reserve cut remains available.
+
+1. **Should fix (uncertainty arithmetic, scene 7, 8 and author note b):** Class 2 lost 0.860 g for a 2.50 g sample, so with the stated per-difference 0.02 g limits its conservative relative uncertainty is 0.02/0.86 + 0.02/2.50 = 3.13%, not class 1's 3.02%. Its interval is about 33.3 to 35.5%, not 33.4 to 35.4. The verdict still holds: it does not reach 36.1. Use the actual class-2 loss; about three percent narration can remain. The author range check also treats the shared initial gross reading as independent in the two differences. The summed interval may be retained as a conservative bound, but is not the attainable exact range from the three raw readings.
+
+2. **Should fix (measurement reasoning, scene 6, 8, 13 and notes):** The estimate here covers the stated balance-reading limits, not every source of measurement uncertainty. A gap beyond those limits is a reason to investigate method bias or missing uncertainty, not proof of systematic error by itself. Keep the known uncovered-cooling evidence and the one-short-heating evidence as reasons for those diagnoses. Scope the verdicts to the stated limits; the root-approved cut is the approximately 150-character add-percentage-uncertainties rule if any speech is added. Mark one-last-digit as the stated school estimate, not a universal instrument specification.
+
+Root decisions: Decisions 4 and 5: reconciled opening retained; actual count gives about 571.2 s and the named cut is recorded.
+
+Quoted event cues occur in spoken order (`work/brief180/cues.json`); any stale ordinal is reported above. All ten sources contain no U+2014. Australian spelling retained. Full attempt conditions stay visible, answers wait for feedback and the short feedback format is retained. Source joins agree in playlist order, including m1-v27 to m2-v01 and root’s ws-v04 to ws-v05 reconciliation. Exact built frames, phone fit, motion, pronunciation and listening remain pending. Scope and skill definitions agree with the route and previous course decisions; science findings below still need repair.
+
+Count: 0 blockers, 2 should fix, 0 optional; 6,433 joined narration characters; about 570.0 s with the existing holds (speech-only 483.7 s). These are estimates, not measured timing.
+
+
+Count-method correction, 6 November: the source uses 6,417 characters summed across its scene strings; 6,433 includes spaces between those strings. The count-only finding is withdrawn. The source estimate is restored to about 570 s. Both counting conventions are preserved in work/brief180/count-correction.json; earlier reports are saved in count-correction-before/.

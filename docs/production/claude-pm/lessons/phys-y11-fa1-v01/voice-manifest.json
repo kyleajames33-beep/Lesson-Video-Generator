@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y11-fa1-v01.md",
+  "sourceSha256": "ac393a5dee66fdd39d084dc3935b955efb1c3b9257e0c2e4f8cebff9ef0b17cd",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "A car drives one lap of a four hundred metre test track, and stops where it started. How far has it travelled? Four hundred metres. Now, how far is it from where it started? Zero. Both answers are right, because they answer different questions. The first one doesn't care which way the car went. The second one depends on it completely. That difference, whether direction matters, splits the quantities we use to describe motion into two kinds.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/hook.wav"
+    },
+    {
+      "id": "magnitude",
+      "text": "Suppose I tell you a drone is five metres from its launch pad. Where is it? It could be anywhere on this circle. Five metres is only a size. A size, a number with its unit, is called a magnitude. Now say the drone is five metres north of the pad. That pins it to one point. A quantity that's just a magnitude is called a scalar. A quantity that needs a magnitude and a direction is called a vector. We draw a vector as an arrow. Its length shows the magnitude, and its head shows the direction.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/magnitude.wav"
+    },
+    {
+      "id": "distance-displacement",
+      "text": "The first pair is distance and displacement. A drone flies four metres east, then three metres north. Distance is the total length of the path it actually travels. Four plus three, so seven metres. Distance ignores direction and just keeps adding up, so it's a scalar. Displacement is the change in position: one straight arrow from where it started to where it finished. These two legs make a right angle, so Pythagoras gives five metres. But five metres alone isn't the full answer. Displacement is a vector, so it needs a direction too, the way this arrow points.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/distance-displacement.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Here are three drone trips. Four east, then three north. Three east, then three back west. Four east, then three more east. On which trip is the size of the displacement equal to the distance? Have a think.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/prediction.wav"
+    },
+    {
+      "id": "prediction-answer",
+      "text": "It's the third trip. On the first, the path bends, so the straight arrow is a shortcut: five metres instead of seven. On the second, the drone comes back, so the displacement is zero, though the distance is six. Only the trip that goes in one straight line, without turning back, gives seven and seven. A straight line is the shortest way from start to finish, so the size of the displacement can never be more than the distance. That's the test track too: four hundred metres of distance, and no displacement, because the car came back.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/prediction-answer.wav"
+    },
+    {
+      "id": "speed-velocity",
+      "text": "The second pair is speed and velocity. Both speedometers read sixty kilometres per hour, exactly the same. Speed is how fast something covers distance, so it's a scalar. But one car is heading east, and the other is heading west. Velocity is how fast the displacement changes, so it carries a direction: sixty kilometres per hour east, and sixty kilometres per hour west. After one hour, one car is sixty kilometres east of where they started, and the other is sixty kilometres west. Same speed, different velocities, and very different places to end up.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/speed-velocity.wav"
+    },
+    {
+      "id": "acceleration",
+      "text": "What about acceleration? Acceleration tells you how quickly the velocity changes. This car is moving east and braking. Each second, its velocity arrow gets shorter. The change from one arrow to the next points west, so the acceleration points west. Now the same car speeds up instead. Each arrow is longer than the last, so the change, and the acceleration, point east. The changes are the same size. Only the direction tells you whether the car speeds up or slows down. So acceleration is a vector.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/acceleration.wav"
+    },
+    {
+      "id": "roundabout",
+      "text": "Here's something surprising. This car goes round a roundabout at a steady forty kilometres per hour. The speed reading never moves. But watch the velocity arrow. It keeps the same length, and it keeps turning. A turning arrow is a changing velocity. And a changing velocity means the car is accelerating, even at a constant speed.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/roundabout.wav"
+    },
+    {
+      "id": "time",
+      "text": "That leaves time. You might think time has a direction, because it only runs forward. But ask the question that matters. Ten seconds: which way does it point? North? Up? It doesn't point anywhere. Time is a magnitude only, so it's a scalar.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/time.wav"
+    },
+    {
+      "id": "sort",
+      "text": "Here's the sort, with one test: which way? If a quantity needs an answer to that, it's a vector. Distance, speed and time don't. They're scalars. Displacement, velocity and acceleration do. They're vectors. Notice the pairs: displacement is distance with a direction, and velocity is speed with a direction. And one trap. Acceleration is measured in metres per second squared, and there's no direction in that unit. It's still a vector. The unit never decides. The direction does.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/sort.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the scalars. Look at a car's dashboard. The odometer counts distance. The speedometer shows speed. And the clock shows time. None of those dials can point, so none of them knows which way you're going. They're the three scalars. Displacement, velocity and acceleration all need an arrow.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A drone flies six point zero metres east, then eight point zero metres north. Calculate the distance it travels and the magnitude of its displacement, and explain why the two values are different. Pause here to answer.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Distance adds the path: six plus eight, fourteen metres. For displacement, the legs meet at a right angle, so it's the square root of thirty-six plus sixty-four, which is ten metres. Both have two significant figures, like the data. They differ because the path turns a corner, so the straight line is a shortcut. Fourteen metres for the displacement is the classic slip: that's just adding the legs.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A ferry goes two point zero kilometres north, then returns two point zero kilometres south to the same wharf, at a steady fifteen kilometres per hour. A passenger says its velocity was the same on both legs. Find the distance and displacement, and explain whether the passenger is right. Pause here to answer.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The distance is four point zero kilometres, the whole path. The displacement is zero, because the ferry ends where it started, and a zero displacement needs no direction. The passenger is wrong. The speed stays the same, but velocity includes direction: fifteen kilometres per hour north, then fifteen kilometres per hour south. A displacement of four kilometres is the slip to avoid.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So whenever direction matters, you're dealing with a vector. And that changes how vectors combine. Four metres and three metres made five, not seven. Next time, we'll draw vectors tip to tail and see exactly how they add.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y11-fa1-v01/key-notes.wav"
+    }
+  ]
+}

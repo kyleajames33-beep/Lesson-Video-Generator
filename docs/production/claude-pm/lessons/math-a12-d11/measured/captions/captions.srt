@@ -1,0 +1,827 @@
+1
+00:00:00,261 --> 00:00:01,890
+Last video ended with this fence.
+
+2
+00:00:02,333 --> 00:00:03,956
+We'll solve it later, once we can build
+
+3
+00:00:03,976 --> 00:00:05,641
+a function from a situation like this.
+
+4
+00:00:06,504 --> 00:00:08,432
+First, there's a gap in our derivative list.
+
+5
+00:00:08,996 --> 00:00:11,350
+We know sine and cos, but not tan
+
+6
+00:00:11,411 --> 00:00:11,531
+x.
+
+7
+00:00:12,317 --> 00:00:12,983
+Here's its graph.
+
+8
+00:00:13,588 --> 00:00:16,457
+It runs between vertical asymptotes, walls the curve
+
+9
+00:00:16,478 --> 00:00:16,919
+never meets,
+
+10
+00:00:17,442 --> 00:00:19,428
+at minus pi over two and pi over
+
+11
+00:00:19,449 --> 00:00:19,648
+two.
+
+12
+00:00:20,476 --> 00:00:21,364
+Watch its tangent.
+
+13
+00:00:22,193 --> 00:00:23,700
+Coming in from the left it's steep.
+
+14
+00:00:24,364 --> 00:00:26,468
+It eases to its flattest at zero, where
+
+15
+00:00:26,509 --> 00:00:28,614
+the slope is one, then steepens again.
+
+16
+00:00:29,398 --> 00:00:31,150
+It never gets flatter than that, and it
+
+17
+00:00:31,272 --> 00:00:31,896
+never falls.
+
+18
+00:00:32,702 --> 00:00:34,816
+So why is the slope never below one?
+
+19
+00:00:35,420 --> 00:00:36,854
+And what is it, exactly?
+
+20
+00:00:37,657 --> 00:00:39,732
+Let's measure some slopes on this middle piece.
+
+21
+00:00:40,418 --> 00:00:42,190
+At zero, the height is zero and the
+
+22
+00:00:42,231 --> 00:00:43,016
+slope is one.
+
+23
+00:00:43,800 --> 00:00:45,744
+At pi over four, the height is one
+
+24
+00:00:45,885 --> 00:00:46,847
+and the slope is two.
+
+25
+00:00:47,670 --> 00:00:49,734
+At pi over three, the height is root
+
+26
+00:00:49,776 --> 00:00:52,201
+three, about one point seven three, and the
+
+27
+00:00:52,242 --> 00:00:53,183
+slope is four.
+
+28
+00:00:53,851 --> 00:00:54,419
+Look at the pattern.
+
+29
+00:00:55,007 --> 00:00:56,355
+Height zero, slope one.
+
+30
+00:00:56,861 --> 00:00:58,152
+Height one, slope two.
+
+31
+00:00:58,759 --> 00:01:00,808
+Height root three, slope four.
+
+32
+00:01:01,513 --> 00:01:03,585
+Each slope is one more than the height
+
+33
+00:01:03,646 --> 00:01:04,068
+squared.
+
+34
+00:01:04,794 --> 00:01:06,103
+Hold on to that, because the algebra is
+
+35
+00:01:06,145 --> 00:01:06,890
+about to explain it.
+
+36
+00:01:07,570 --> 00:01:07,791
+Why?
+
+37
+00:01:08,798 --> 00:01:11,024
+Tan x is sine x over cos x,
+
+38
+00:01:11,607 --> 00:01:12,027
+a quotient.
+
+39
+00:01:12,770 --> 00:01:15,356
+The quotient rule video split a quotient's slope
+
+40
+00:01:15,437 --> 00:01:16,459
+into two turns.
+
+41
+00:01:17,042 --> 00:01:19,096
+The top's turn is the top's slope over
+
+42
+00:01:19,138 --> 00:01:19,520
+the bottom.
+
+43
+00:01:20,003 --> 00:01:22,128
+That's cos x over cos x, which is
+
+44
+00:01:22,189 --> 00:01:23,792
+exactly one, everywhere.
+
+45
+00:01:24,476 --> 00:01:25,822
+That's where the one comes from.
+
+46
+00:01:26,893 --> 00:01:27,982
+Now the bottom's turn.
+
+47
+00:01:28,646 --> 00:01:31,129
+Between zero and pi over two, cos x
+
+48
+00:01:31,250 --> 00:01:31,850
+is shrinking,
+
+49
+00:01:32,352 --> 00:01:34,574
+and a shrinking bottom makes a positive fraction
+
+50
+00:01:34,696 --> 00:01:35,075
+grow,
+
+51
+00:01:35,577 --> 00:01:36,517
+so this turn adds.
+
+52
+00:01:37,340 --> 00:01:39,223
+It works out to sine squared over cos
+
+53
+00:01:39,244 --> 00:01:41,207
+squared, which is tan squared x,
+
+54
+00:01:41,829 --> 00:01:42,549
+the height squared.
+
+55
+00:01:43,473 --> 00:01:45,338
+At pi over four, that's one plus one,
+
+56
+00:01:45,921 --> 00:01:46,081
+two.
+
+57
+00:01:46,745 --> 00:01:48,595
+At pi over three, one plus three,
+
+58
+00:01:49,099 --> 00:01:49,340
+four.
+
+59
+00:01:50,044 --> 00:01:52,271
+And near pi over two, cos x gets
+
+60
+00:01:52,352 --> 00:01:53,214
+close to zero,
+
+61
+00:01:53,797 --> 00:01:56,084
+so the bottom's turn grows without any limit.
+
+62
+00:01:56,729 --> 00:01:57,761
+That's the steep wall.
+
+63
+00:01:58,428 --> 00:02:00,636
+The syllabus asks you to show this result,
+
+64
+00:02:01,038 --> 00:02:03,086
+so here's the proof, line by line.
+
+65
+00:02:03,890 --> 00:02:06,354
+Tan x is sine x over cos x,
+
+66
+00:02:06,776 --> 00:02:08,259
+and cos x can't be zero.
+
+67
+00:02:08,942 --> 00:02:11,207
+The quotient rule gives cos x times cos
+
+68
+00:02:11,268 --> 00:02:11,368
+x,
+
+69
+00:02:11,890 --> 00:02:14,457
+minus sine x times minus sine x,
+
+70
+00:02:14,959 --> 00:02:16,603
+all over cos squared x.
+
+71
+00:02:17,245 --> 00:02:19,329
+The two minus signs make a plus, so
+
+72
+00:02:19,370 --> 00:02:22,015
+the top is cos squared x plus sine
+
+73
+00:02:22,036 --> 00:02:22,557
+squared x.
+
+74
+00:02:23,221 --> 00:02:25,855
+By the Pythagorean identity, that top is one.
+
+75
+00:02:26,580 --> 00:02:28,907
+So the derivative is one over cos squared
+
+76
+00:02:29,069 --> 00:02:29,128
+x.
+
+77
+00:02:30,155 --> 00:02:31,845
+One over cos x has its own name,
+
+78
+00:02:31,966 --> 00:02:32,509
+sec x.
+
+79
+00:02:32,852 --> 00:02:35,078
+So the derivative of tan x is sec
+
+80
+00:02:35,280 --> 00:02:35,860
+squared x.
+
+81
+00:02:36,865 --> 00:02:38,511
+And cos squared x is never more than
+
+82
+00:02:38,673 --> 00:02:41,103
+one, so sec squared x is never less
+
+83
+00:02:41,144 --> 00:02:41,484
+than one.
+
+84
+00:02:42,110 --> 00:02:44,004
+That's why the slope never drops below one.
+
+85
+00:02:44,495 --> 00:02:45,881
+Two conditions come with this result.
+
+86
+00:02:46,445 --> 00:02:48,073
+It's built from the derivatives of sine and
+
+87
+00:02:48,114 --> 00:02:50,224
+cos, so x must be in radians.
+
+88
+00:02:50,968 --> 00:02:53,474
+And tan x only exists where cos x
+
+89
+00:02:53,616 --> 00:02:56,162
+isn't zero, so x can't be pi over
+
+90
+00:02:56,223 --> 00:02:58,168
+two, plus any whole number of pis.
+
+91
+00:02:59,212 --> 00:03:02,606
+The graph breaks into branches, unbroken pieces between
+
+92
+00:03:02,627 --> 00:03:03,530
+neighbouring walls.
+
+93
+00:03:04,274 --> 00:03:07,702
+Sec squared is always positive, so tan increases
+
+94
+00:03:07,804 --> 00:03:08,625
+along each branch.
+
+95
+00:03:09,087 --> 00:03:10,363
+But not across a wall.
+
+96
+00:03:11,168 --> 00:03:13,251
+Tan of pi over four is one, but
+
+97
+00:03:13,292 --> 00:03:15,314
+tan of three pi over four is minus
+
+98
+00:03:15,415 --> 00:03:17,638
+one, even though three pi over four comes
+
+99
+00:03:17,720 --> 00:03:17,999
+later.
+
+100
+00:03:18,581 --> 00:03:21,107
+So tan x is increasing on each branch,
+
+101
+00:03:21,610 --> 00:03:22,712
+not on its whole domain.
+
+102
+00:03:23,362 --> 00:03:25,237
+Now a worked example from the course.
+
+103
+00:03:25,862 --> 00:03:28,068
+Differentiate y equals tan of,
+
+104
+00:03:28,610 --> 00:03:30,315
+two x minus pi over three,
+
+105
+00:03:30,877 --> 00:03:33,104
+and find its gradient at x equals zero.
+
+106
+00:03:33,928 --> 00:03:34,873
+First, the picture.
+
+107
+00:03:35,516 --> 00:03:38,062
+Two x minus pi over three is two
+
+108
+00:03:38,122 --> 00:03:40,508
+lots of x minus pi over six.
+
+109
+00:03:41,151 --> 00:03:43,820
+So this graph is tan x squashed sideways
+
+110
+00:03:43,881 --> 00:03:46,289
+by a half, then slid right by pi
+
+111
+00:03:46,310 --> 00:03:46,630
+over six.
+
+112
+00:03:47,335 --> 00:03:48,563
+You've seen this with exponentials.
+
+113
+00:03:49,224 --> 00:03:51,769
+A sideways squash by a half doubles every
+
+114
+00:03:51,829 --> 00:03:52,951
+slope at matching points,
+
+115
+00:03:53,452 --> 00:03:54,795
+and a slide changes none.
+
+116
+00:03:55,499 --> 00:03:56,349
+The walls move too.
+
+117
+00:03:56,896 --> 00:03:58,782
+The squash pulls them in, and the slide
+
+118
+00:03:58,943 --> 00:04:01,271
+moves them along, to minus pi over twelve
+
+119
+00:04:01,653 --> 00:04:02,816
+and five pi over twelve.
+
+120
+00:04:03,829 --> 00:04:05,645
+Now the algebra agrees with the picture.
+
+121
+00:04:06,129 --> 00:04:08,753
+The outside is tan, and the inside is
+
+122
+00:04:08,835 --> 00:04:10,558
+two x minus pi over three.
+
+123
+00:04:11,321 --> 00:04:13,992
+The inside's derivative is two, because pi over
+
+124
+00:04:14,033 --> 00:04:15,097
+three is a constant.
+
+125
+00:04:15,922 --> 00:04:18,347
+So the outside gives sec squared of the
+
+126
+00:04:18,388 --> 00:04:20,031
+same inside, times two.
+
+127
+00:04:20,995 --> 00:04:23,358
+d y by d x equals two sec
+
+128
+00:04:23,399 --> 00:04:26,024
+squared of, two x minus pi over three.
+
+129
+00:04:26,787 --> 00:04:27,394
+Where does it hold?
+
+130
+00:04:27,958 --> 00:04:30,704
+Wherever the inside isn't pi over two plus
+
+131
+00:04:30,745 --> 00:04:31,386
+k pi.
+
+132
+00:04:32,249 --> 00:04:32,688
+Solving that,
+
+133
+00:04:33,251 --> 00:04:35,835
+x can't be five pi over twelve, plus
+
+134
+00:04:35,876 --> 00:04:37,017
+k pi over two.
+
+135
+00:04:38,101 --> 00:04:39,668
+Now x equals zero.
+
+136
+00:04:40,171 --> 00:04:42,644
+The inside is minus pi over three, and
+
+137
+00:04:42,725 --> 00:04:43,910
+cos of that is a half.
+
+138
+00:04:44,534 --> 00:04:46,060
+So sec squared is four,
+
+139
+00:04:46,604 --> 00:04:48,591
+and the gradient is two times four, which
+
+140
+00:04:48,653 --> 00:04:49,033
+is eight.
+
+141
+00:04:49,736 --> 00:04:52,343
+The tangent at zero, minus root three,
+
+142
+00:04:52,865 --> 00:04:53,165
+agrees.
+
+143
+00:04:53,755 --> 00:04:55,767
+Here's a quick check for any gradient of
+
+144
+00:04:55,868 --> 00:04:56,531
+tan x.
+
+145
+00:04:57,257 --> 00:04:59,249
+The slope of tan is one plus its
+
+146
+00:04:59,290 --> 00:05:00,034
+height squared.
+
+147
+00:05:00,598 --> 00:05:03,144
+That's just sec squared written another way, because
+
+148
+00:05:03,305 --> 00:05:05,550
+one plus tan squared equals sec squared.
+
+149
+00:05:06,273 --> 00:05:08,436
+At pi over three, the height is root
+
+150
+00:05:08,478 --> 00:05:10,822
+three, so the slope is one plus three,
+
+151
+00:05:11,244 --> 00:05:11,463
+four.
+
+152
+00:05:12,307 --> 00:05:14,460
+It works wherever tan is defined, with x
+
+153
+00:05:14,561 --> 00:05:15,144
+in radians.
+
+154
+00:05:15,769 --> 00:05:18,450
+With an inside, like two x minus pi
+
+155
+00:05:18,491 --> 00:05:18,950
+over three,
+
+156
+00:05:19,452 --> 00:05:22,013
+multiply by the inside's derivative as well.
+
+157
+00:05:24,692 --> 00:05:25,160
+Your turn.
+
+158
+00:05:25,668 --> 00:05:28,112
+Find the exact gradient of the curve y
+
+159
+00:05:28,194 --> 00:05:30,658
+equals tan x, at the point where x
+
+160
+00:05:30,839 --> 00:05:32,562
+equals five pi over six.
+
+161
+00:05:33,350 --> 00:05:34,180
+Pause here to answer.
+
+162
+00:05:45,015 --> 00:05:47,122
+d y by d x is sec squared
+
+163
+00:05:47,204 --> 00:05:47,323
+x.
+
+164
+00:05:47,966 --> 00:05:50,249
+At five pi over six, cos x is
+
+165
+00:05:50,411 --> 00:05:53,215
+minus root three over two, so cos squared
+
+166
+00:05:53,336 --> 00:05:55,739
+x is three quarters, and sec squared x
+
+167
+00:05:55,840 --> 00:05:56,721
+is four thirds.
+
+168
+00:05:57,584 --> 00:05:59,908
+Check with the height: tan is minus one
+
+169
+00:05:59,989 --> 00:06:02,253
+over root three, and one plus a third
+
+170
+00:06:02,354 --> 00:06:03,135
+is four thirds.
+
+171
+00:06:03,777 --> 00:06:05,482
+The point is below the axis, but the
+
+172
+00:06:05,523 --> 00:06:06,806
+curve is still rising.
+
+173
+00:06:07,569 --> 00:06:09,690
+Minus two over root three is sec x,
+
+174
+00:06:10,111 --> 00:06:12,172
+not sec squared, and a tan slope is
+
+175
+00:06:12,333 --> 00:06:12,913
+never negative.
+
+176
+00:06:14,740 --> 00:06:15,166
+Last one.
+
+177
+00:06:15,756 --> 00:06:18,581
+Differentiate y equals tan three x,
+
+178
+00:06:19,143 --> 00:06:20,926
+and state the values of x for which
+
+179
+00:06:20,987 --> 00:06:22,108
+the derivative exists.
+
+180
+00:06:22,816 --> 00:06:23,688
+Pause here to answer.
+
+181
+00:06:34,408 --> 00:06:37,432
+The inside is three x, with derivative three,
+
+182
+00:06:37,854 --> 00:06:40,077
+so d y by d x is three
+
+183
+00:06:40,278 --> 00:06:41,580
+sec squared three x.
+
+184
+00:06:42,222 --> 00:06:44,883
+It exists wherever cos three x isn't zero,
+
+185
+00:06:45,164 --> 00:06:47,265
+so three x can't be pi over two
+
+186
+00:06:47,386 --> 00:06:48,226
+plus k pi.
+
+187
+00:06:49,007 --> 00:06:49,847
+Dividing by three,
+
+188
+00:06:50,388 --> 00:06:52,669
+x can't be pi over six, plus k
+
+189
+00:06:52,690 --> 00:06:54,811
+pi over three, for any integer k.
+
+190
+00:06:55,652 --> 00:06:58,177
+Copying tan's own exclusion, x not equal to
+
+191
+00:06:58,218 --> 00:07:00,663
+pi over two plus k pi, misses x
+
+192
+00:07:00,804 --> 00:07:01,845
+equals pi over six.
+
+193
+00:07:03,508 --> 00:07:05,792
+So tan x, a quotient of sine and
+
+194
+00:07:05,853 --> 00:07:08,919
+cos, has derivative sec squared x, on each
+
+195
+00:07:09,000 --> 00:07:09,360
+branch.
+
+196
+00:07:10,224 --> 00:07:13,355
+Next, the other three reciprocal functions: sec x,
+
+197
+00:07:13,698 --> 00:07:15,323
+cosec x and cot x.
+
+198
+00:07:16,187 --> 00:07:18,755
+Here's y equals sec x, which is one
+
+199
+00:07:18,916 --> 00:07:19,578
+over cos x.
+
+200
+00:07:20,342 --> 00:07:22,290
+Its walls are where cos x is zero,
+
+201
+00:07:22,753 --> 00:07:24,521
+and at x equals zero it sits at
+
+202
+00:07:24,722 --> 00:07:24,822
+one.
+
+203
+00:07:25,607 --> 00:07:27,497
+How does its slope change, and where does
+
+204
+00:07:27,538 --> 00:07:28,483
+its derivative exist?
+
+205
+00:07:31,368 --> 00:07:32,170
+Here are the key notes.
+
+206
+00:07:32,814 --> 00:07:34,541
+Pause the video if you need more time
+
+207
+00:07:34,603 --> 00:07:35,084
+to copy them.

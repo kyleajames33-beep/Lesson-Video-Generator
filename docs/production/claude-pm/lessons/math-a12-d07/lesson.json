@@ -1,0 +1,156 @@
+{
+  "id": "math-a12-d07",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (multiply the derivatives?)",
+      "voiceover": {
+        "text": "Last video, we put one function inside another. Now let's multiply two of them. Here's e to the x, here's sine x, and here's their product, e to the x sine x. A quick guess for its derivative: just multiply the two derivatives. That gives e to the x times cos x. At pi over two, cos x is zero, so the guess says the curve is flat there. But look at the curve. At pi over two, it's climbing steeply. So how do both factors really contribute to the slope?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "the rectangle behind the rule",
+      "voiceover": {
+        "text": "Here's a way to see it. Think of the product as the area of a rectangle, with width e to the x and height sine x. At x equals one, it's about two point seven two wide, and point eight four high. Now nudge x a little. The width grows, and that adds a strip down the side: the change in width, times the height. The height grows too, adding a strip along the top: the change in height, times the width. The corner is a small change times a small change, so it vanishes as the nudge shrinks. So the area changes in two ways, one factor changing while the other stays. Divide by the nudge, and that's the product rule from Year 11: u prime v, plus u v prime."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "both turns on the graph",
+      "voiceover": {
+        "text": "Back to the curve, at x equals one. E to the x's turn is its slope times the height of sine x, about two point two nine. Sine's turn is the height of e to the x times sine's slope, about one point four seven. Together that's about three point seven six, the slope of the tangent. Now slide to pi over two. Sine x is at the top of its hump, so its slope is zero, and its turn is zero. But e to the x is still growing, and sine x is still one high, so e to the x's turn gives the whole slope, about four point eight one. The guess multiplied a slope by a slope, so it missed this."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "where the turns cancel",
+      "voiceover": {
+        "text": "Keep sliding. Past pi over two, sine x starts to fall, so its slope is negative, and its turn pulls the slope down, while e to the x's turn still pushes it up. At three pi over four, the two turns are equal and opposite, about plus and minus seven point four six. They cancel, so the tangent is flat. That's why this curve levels off at three pi over four, not at pi over two, where sine x levels off. E to the x is still growing, and it carries the product further."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "worked example: e to the x sine x",
+      "voiceover": {
+        "text": "Now the algebra. Differentiate y equals e to the x sine x. Label the factors first. u is e to the x, so u prime is e to the x. v is sine x, so v prime is cos x. Then u prime v, plus u v prime, gives e to the x sine x, plus e to the x cos x. Both terms share e to the x, so take it out as a factor: e to the x, times sine x plus cos x. Check pi over two. That's e to the pi over two, times one plus zero, about four point eight one, the slope we saw."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "a log factor keeps its domain",
+      "voiceover": {
+        "text": "The same rule works with a log. Differentiate y equals e to the x, times the natural log of x. The natural log needs x positive, so this function only exists for x greater than zero. u is e to the x, and so is u prime. v is the natural log of x, so v prime is one over x. That gives e to the x times the natural log of x, plus e to the x over x. Take out e to the x, and you get e to the x, times the natural log of x plus one over x, for positive x. Every new family works the same way: two turns, then look for a common factor."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "worked example: a factor with an inside",
+      "voiceover": {
+        "text": "Next, a factor with a function inside. Differentiate y equals x cubed, sine two x. The outside operation is multiplication, so it's the product rule. u is x cubed, so u prime is three x squared. Now check v before you write its derivative. Sine two x has an inside, two x, so by the chain rule from last video, v prime is two cos two x. Then u prime v, plus u v prime, is three x squared sine two x, plus two x cubed cos two x. Both terms share x squared, so the answer is x squared, times three sine two x, plus two x cos two x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "does the inner two matter?",
+      "voiceover": {
+        "text": "Does that two matter? Check the slope at pi over two. There, sine pi is zero, and cos pi is minus one. So the first term vanishes, and the slope is two, times pi over two cubed, times minus one. That's minus pi cubed over four, about minus seven point seven five, and the tangent agrees. Leave out the two, and you'd get half of that, a tangent that's far too shallow."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember it. Each factor takes a turn, and the other one stays. In the rectangle, the width changes while the height stays, then the height changes while the width stays. That's why there are two terms, and why each term keeps one of the original factors. Multiplying the two derivatives keeps neither factor, so it isn't the rule. And because the two turns are added, it doesn't matter which factor you call u. That won't be true for a quotient."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Differentiate f of x equals x squared e to the x, and give your answer fully factorised. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "u is x squared, so u prime is two x. v is e to the x, and so is v prime. So f prime of x is two x e to the x, plus x squared e to the x. Both terms share x e to the x, so f prime of x is x e to the x, times x plus two. Multiplying the derivatives gives just two x e to the x, which loses the second turn."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find the exact gradient of the curve y equals x e to the minus x, at x equals two. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "u is x, so u prime is one. v is e to the minus x, which has an inside, minus x, so v prime is minus e to the minus x. So d y by d x factors to e to the minus x, times one minus x. At x equals two, that's minus e to the minus two, about minus point one three. Lose the minus from the inside, and you'd get a positive slope, but the curve is falling there."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So in a product, each factor takes a turn, while the other one stays. Next, one function divided by another. Here's e to the x, over x plus one. There's a gap where the bottom is zero. So how does dividing change the slope?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 60,
+      "holdKind": "notes",
+      "durationInFrames": 1
+    }
+  ]
+}

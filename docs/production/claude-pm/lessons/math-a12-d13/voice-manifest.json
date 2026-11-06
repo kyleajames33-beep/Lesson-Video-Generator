@@ -1,0 +1,72 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d13.md",
+  "sourceSha256": "ecba24edc3caf8805a31a585e0648317c3133d90524a5955e3137304df302a9c",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on this curve, y equals three to the two x, and two other composites we haven't done yet. Here are two quick answers for its derivative. One says two times three to the two x. The other says three to the two x, times the natural log of three. At x equals zero, the first predicts a slope of two, and the second about one point one zero. Let's measure the real slope. Secants from closer and closer points give four, then about two point four six, then about two point two two. They settle at about two point two. Neither answer is right. So what is the slope, and why does a composite like this need more than one factor?",
+      "audioFile": "public/audio/math-a12-d13/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Here's where it comes from. Three to the two x is three squared, to the x, so it's nine to the x. And you know a to the x has derivative a to the x, times the natural log of a. So the slope is nine to the x, times the natural log of nine. The natural log of nine is two times the natural log of three. So the derivative is two, times the natural log of three, times three to the two x. At zero, that's about two point two, the slope we measured. Each quick answer kept one factor and lost the other. The picture shows why there are two. Three to the two x is three to the x, squashed sideways by a half. The base three gives the slope its natural log of three. The squash, from the inside two x, doubles it.",
+      "audioFile": "public/audio/math-a12-d13/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So every composite needs two separate things: the outside's slope, worked out at the inside, and the inside's own slope. Here are the three outsides we haven't used yet. A to the power of an inside: copy it, times the natural log of a, times the inside's derivative. Log base a of an inside: the inside's derivative, over the inside times the natural log of a, and the inside must be positive. Tan of an inside: sec squared of the same inside, times the inside's derivative, and it breaks wherever the inside reaches pi over two, plus k pi. The outside brings its own fixed part, the natural log of a, or sec squared. The inside's derivative is an extra factor, and the inside also decides the domain.",
+      "audioFile": "public/audio/math-a12-d13/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Worked example one, from the course. Differentiate y equals log base three of, x squared plus one, and find the gradient at x equals one. Domain first. The inside, x squared plus one, is always at least one, so it's always positive. The function exists for every real x. The inside's derivative is two x. So d y by d x is two x, over x squared plus one, times the natural log of three. At x equals one, that's two, over two times the natural log of three, which is one over the natural log of three, about point nine one. And at x equals zero the top is zero, so the curve is flat at its lowest point.",
+      "audioFile": "public/audio/math-a12-d13/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Worked example two. Differentiate y equals tan of e to the x, and say where the derivative exists. The inside is e to the x, and its derivative is e to the x as well. So d y by d x is e to the x, times sec squared of e to the x. Now the walls. Tan breaks where its inside equals pi over two, plus k pi. But e to the x is always positive, so it can only reach the positive ones: pi over two, three pi over two, and so on. So x can't be the natural log of pi over two, or the natural log of three pi over two, and so on. To the left, there are no walls at all, and the curve flattens towards zero. At x equals zero, the gradient is sec squared of one, about three point four three.",
+      "audioFile": "public/audio/math-a12-d13/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Here's how to keep the constants in the right places. Powers multiply by the natural log of a, logs divide by it, and the inside's slope always goes on top. Powers multiply, because a to the x is e to the power of, x times the natural log of a. Logs divide, because log base a of x is the natural log of x, over the natural log of a. And the inside's slope comes from the chain rule, every time. Try log base seven of, two x plus three. The two goes on top, and two x plus three, times the natural log of seven, goes underneath. Then check the domain the inside allows.",
+      "audioFile": "public/audio/math-a12-d13/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Your turn. Find the exact gradient of the curve y equals five to the x squared, at the point where x equals one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d13/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "The outside is five to the power of an inside, so copy it and multiply by the natural log of five. The inside is x squared, so multiply by two x as well. At x equals one, that's two, times the natural log of five, times five, which is ten times the natural log of five. Five times the natural log of five has dropped the inside's two x.",
+      "audioFile": "public/audio/math-a12-d13/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Last one. Differentiate y equals log base two of, four minus x, and state its domain. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d13/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Domain first: the inside must be positive, so four minus x is positive, and x is less than four. The inside's derivative is minus one. So d y by d x is minus one, over four minus x, times the natural log of two, for x less than four. Without the minus, the slope would be positive, but this log falls, because its inside shrinks as x grows.",
+      "audioFile": "public/audio/math-a12-d13/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "So for every composite, keep two factors, the outside's slope at the inside and the inside's own slope, and let the inside decide the domain. If a question mixes these with a product or a quotient, find the last operation first, as before, and use these rules for the pieces inside it. That finishes the derivatives you need for every function family in this strand.",
+      "audioFile": "public/audio/math-a12-d13/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Next, we'll use these derivatives to build lines. Here's y equals cos two x, and the point where x equals pi over six. Its derivative is minus two sine two x, so the gradient there is minus root three. What line just touches the curve there, and what line meets it at right angles?",
+      "audioFile": "public/audio/math-a12-d13/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d13/scene-13.wav"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d14.md",
+  "sourceSha256": "7a1a23f82984aa3832afa77a3a1ba28c9be9464e3bf45250e57d4c9947fcc8fa",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here. This curve is y equals cos two x, and by the chain rule, its derivative is minus two sin two x. At x equals pi over six, that gives a gradient of minus root three. So is that enough to draw the tangent? Not quite. Here's a line with gradient minus root three. Here's another, and another. They're all parallel, and only one of them passes through the point on the curve. A gradient tells you the direction of a line, but not where it sits. So how do a point and a derivative pin down the tangent, and the line through the same point at right angles to it, called the normal?",
+      "audioFile": "public/audio/math-a12-d14/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "A line needs two things: one point it passes through, and its gradient. You met the formula in Year 11. y minus y one equals m, times x minus x one. For a tangent, both come from the curve, at the same x. The point comes from f itself. Substitute x into the original function to get the height. The gradient comes from f prime, at that same x. The tangent is the line through that point with that gradient. It doesn't have to touch the curve only once. This one meets the curve again, further along, and that's fine.",
+      "audioFile": "public/audio/math-a12-d14/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Let's write it out. Find the equation of the tangent to y equals cos two x, at the point where x equals pi over six. First the point. cos of two times pi over six is cos of pi over three, which is a half. So the point is pi over six, a half. Next the gradient. dy by dx is minus two sin two x. At pi over six, that's minus two times sin pi over three. That's minus two times root three over two, so minus root three. Now substitute both into the formula. y minus a half equals minus root three, times x minus pi over six. If the question asks, expand it to y equals minus root three x, plus pi root three over six, plus a half.",
+      "audioFile": "public/audio/math-a12-d14/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "The normal goes through the same point, at right angles to the tangent. You know its gradient from Year 11: perpendicular gradients multiply to minus one. Here's why, in one picture. Draw a small triangle on the tangent, with a run along, and a rise. Now turn the whole triangle a quarter turn, about the point. The run and the rise swap places, and one of them now points the opposite way. So the new gradient is the old one flipped upside down, with its sign changed. That's minus one over m. And that needs m to be non-zero, because one over zero doesn't exist.",
+      "audioFile": "public/audio/math-a12-d14/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Back to our point, pi over six, a half. The tangent's gradient is minus root three. Flip it and change the sign, and the normal's gradient is one over root three, which is root three over three. Quick check: minus root three, times one over root three, is minus one. Same point, new gradient. So the normal is y minus a half equals root three over three, times x minus pi over six. The only new work was the gradient. The point didn't change.",
+      "audioFile": "public/audio/math-a12-d14/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now a case where flipping fails. Find the tangent and normal to y equals x e to the minus x, at x equals one. The point is one times e to the minus one, so one, one over e. By the product rule, y prime is e to the minus x, times one minus x. At x equals one, that's zero. A zero gradient means the tangent is horizontal: y equals one over e. Turn its flat triangle a quarter turn, and the run stands straight up. The normal is vertical. A vertical line has no gradient, so don't write minus one over zero. Write it as x equals one. And if a question asks where this tangent meets the x-axis, it never does. It's parallel to it.",
+      "audioFile": "public/audio/math-a12-d14/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The method doesn't change with the function. Only the differentiating does. Take y equals the natural log of x, over cos x, at x equals one. In the quotient video, we found its gradient there, one over cos one. The point is easy, because the natural log of one is zero. So the point is one, zero. The tangent is y equals x minus one, over cos one. Flip and change the sign, and the normal's gradient is minus cos one. So the normal is y equals minus cos one, times x minus one. Keep cos one exact. It's about point five four, in radians.",
+      "audioFile": "public/audio/math-a12-d14/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's the short version. Point from f, slope from f prime. Then for the normal, flip and change the sign, unless the tangent is flat. A flat tangent has an upright normal, x equals a number.",
+      "audioFile": "public/audio/math-a12-d14/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find the equations of the tangent and the normal to y equals e to the two x, at the point where x equals a half. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d14/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "From f, e to the power two times a half is e, so the point is a half, e. The gradient is two e to the two x, which is two e at x equals a half. So the tangent is y minus e equals two e, times x minus a half. The normal's gradient is minus one over two e, so the normal is y minus e equals minus one over two e, times x minus a half. The point isn't a half, two e. That's the gradient, not the height.",
+      "audioFile": "public/audio/math-a12-d14/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Find the equations of the tangent and the normal to y equals sin x plus cos x, at the point where x equals pi over four. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d14/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "At pi over four, sin and cos are both root two over two, so y is root two. The gradient is cos x minus sin x, which is zero there. So the tangent is horizontal: y equals root two. The normal is vertical, through the same point: x equals pi over four. Not x equals root two. A vertical line is fixed by its x-coordinate, not its height.",
+      "audioFile": "public/audio/math-a12-d14/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "One more tangent, because we'll need it next. For y equals x squared at x equals one, the point is one, one, and the gradient is two. So the tangent is y equals two x minus one. Now build a curve that follows x squared up to x equals one, then carries on along that tangent line. The join is invisible. But switch the second piece to y equals x, and there's a corner. Both joins are unbroken. So, next: when does a join have a tangent?",
+      "audioFile": "public/audio/math-a12-d14/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d14/scene-14.wav"
+    }
+  ]
+}

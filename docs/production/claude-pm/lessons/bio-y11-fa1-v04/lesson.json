@@ -1,0 +1,233 @@
+{
+  "id": "bio-y11-fa1-v04",
+  "fps": 30,
+  "subject": "Biology",
+  "yearLevel": 11,
+  "lessonIntent": "*How does a bacterium carry out every life process without membrane-bound organelles?*",
+  "scenes": [
+    {
+      "id": "opening",
+      "title": "a cell with nothing inside? (opening)",
+      "voiceover": {
+        "text": "Here's the bacterium from the end of the last video, enlarged. It has no nucleus, no mitochondria, no endoplasmic reticulum and no Golgi body. Yet it releases energy, builds proteins, swims, and copies its DNA, and in ideal conditions some bacteria divide about every twenty minutes. So how does a bacterium carry out every life process without membrane-bound organelles?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "opens on v03's last frame (the two-cell board, the small bacterium thumbnail at the right, the \"Next\" chip). On \"enlarged\" the \"Next\" chip fades, the two eukaryotic cells slide off to the left, and y11-prokaryote-cutaway-v1.png grows from the thumbnail to fill the centre left; a grey tag \"drawn far larger than real; a few micrometres long\". On \"no nucleus, no mitochondria, no endoplasmic reticulum and no Golgi body\" four small grey organelle chips write in a row beside it (the first two with tiny m5x-cell-protein-synthesis-v1.png crops of the nucleus and b6a-mitochondrion-v1.png), each taking a scribble cross on its word. On \"Yet it releases energy, builds proteins, swims, and copies its DNA\" the coded JobBoard writes at the upper right, one chip per verb: \"release energy ?\", \"make proteins ?\", \"move ?\", \"keep genes ?\". On \"divide about every twenty minutes\" a small coded counter beside the plate ticks 1, 2, 4, 8 with a grey tag \"ideal conditions\". On the question the heading writes: \"How does a bacterium function without membrane-bound organelles?\" At most three bright text items. Hold one second.",
+      "sourceHeading": "1"
+    },
+    {
+      "id": "tour-plan",
+      "title": "the tour plan",
+      "voiceover": {
+        "text": "There are nine parts to know, so let's tour the cell like a map: start outside and work in through the layers, look at what's inside, then come back out to the parts that stick out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the organelle chips fade; the JobBoard shrinks to the upper right corner. On \"nine parts to know\" the coded TourRail draws in the right third with its three empty groups: \"layers (outside in)\" (three slots), \"inside\" (four), \"sticking out\" (two). On \"start outside and work in\" a coded dashed arrow draws from the plate's outer edge inward to the centre; on \"come back out\" it curves out along the flagellum. At most three bright items. Hold one second.",
+      "sourceHeading": "2"
+    },
+    {
+      "id": "capsule",
+      "title": "capsule",
+      "voiceover": {
+        "text": "On the very outside, many bacteria have a capsule: a slimy layer, mostly made of sugars, wrapped around the cell wall. That slime helps the cell in three ways. It stops the cell drying out, it helps it stick to surfaces, like the film that builds up on teeth, and it can help it hide from immune cells. Not every bacterium has a capsule."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam pushes to one end of the bacterium. On \"capsule\" a scribbleEllipse traces the translucent outer halo and a callout writes \"capsule\"; grey tag \"mostly polysaccharide (sugars)\". On \"stops the cell drying out\" a few blue water dots at the capsule's inner edge stay put while dots outside drift away; on \"stick to surfaces\" a coded grey surface line slides under the plate and the capsule edge \"grips\" it (a short amber contact bracket); on \"hide from immune cells\" a small grey m7-macrophage-v1.png thumbnail at the edge of frame approaches and slides past (grey tag \"slime hides surface molecules\"). On \"Not every bacterium\" a grey tag \"optional\". The first TourRail slot writes: \"capsule: slimy layer → stops drying, sticks, hides\". At most three bright items. Hold one second.",
+      "sourceHeading": "3"
+    },
+    {
+      "id": "cell-wall",
+      "title": "cell wall",
+      "voiceover": {
+        "text": "Under the capsule is the cell wall. In bacteria it's made of peptidoglycan, a tough mesh of sugar chains joined by short chains of amino acids. You met a wall in plant cells, and here it does the same job with a different material. It gives the cell its shape, and it stops the cell bursting when water moves in. If the wall is damaged, water keeps entering until the cell splits open."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the capsule callout dims. On \"cell wall\" a callout to the wall band, label \"cell wall\"; on \"peptidoglycan\" a coded close-up inset of a small wall section writes as a cross-hatched mesh (long strands across, short links between; gloss \"peptidoglycan: sugar chains + short amino acid chains\"). On \"You met a wall in plant cells\" a small b6a-plant-cell-v1.png thumbnail appears with its wall ringed, grey tags \"plant: cellulose\" and \"bacterium: peptidoglycan\". On \"stops the cell bursting when water moves in\" short blue WaterDots arrows point inward through the wall and the wall band brightens, holding firm. On \"If the wall is damaged\" the working area switches to Module 7's aligned pair (grey tag \"another bacterium\"): m6-bacterium-plasmid-v1.png, two links fade from the mesh inset, blue dots keep entering, and on \"splits open\" it cross-fades to m7-bacterium-wall-burst-v1.png (tag \"burst\"). Then the tour plate returns. The second TourRail slot writes: \"cell wall: peptidoglycan mesh → shape, stops bursting\". At most three bright items. Hold one second.",
+      "sourceHeading": "4"
+    },
+    {
+      "id": "cell-membrane",
+      "title": "cell membrane (answer one: energy)",
+      "voiceover": {
+        "text": "Just inside the wall is the cell membrane, a thin double layer of fat-like molecules called phospholipids. It's partially permeable, which means it lets some substances through and blocks others, so it controls what enters and leaves. And here's the first part of our answer. With no mitochondria, a bacterium uses its cell membrane instead: many of the enzymes that release energy in respiration sit right in the membrane."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam moves to a section of the membrane line just inside the wall. On \"cell membrane\" a callout, label \"cell membrane\"; on \"double layer\" a coded two-row bead strip (abstract heads and tails, no detail) writes in a small inset, gloss \"phospholipids: fat-like molecules\" (grey tag \"more in a later video\"). On \"lets some substances through and blocks others\" small coded dots approach the membrane: some cross, some bounce off; gloss \"partially permeable\". On \"first part of our answer\" the JobBoard chip \"release energy ?\" lights. On \"With no mitochondria\" a small b6a-mitochondrion-v1.png thumbnail appears and takes a scribble cross; on \"sit right in the membrane\" a row of small amber coded dots (enzymes) lines the inner face of the membrane along the whole cell, and a short coded arrow writes \"glucose → energy\" beside them. The JobBoard chip becomes \"release energy ✓ membrane\". The third TourRail slot writes: \"cell membrane: phospholipid double layer → controls entry and exit; respiration enzymes\". At most three bright items. Hold one second.",
+      "sourceHeading": "5"
+    },
+    {
+      "id": "cytoplasm",
+      "title": "cytoplasm",
+      "voiceover": {
+        "text": "Inside the membrane is the cytoplasm, a jelly-like fluid that's mostly water, with nutrients, salts and enzymes dissolved in it. Most of the cell's chemical reactions happen here, and everything else inside floats in it. Because this bacterium is so tiny, substances spread through the whole cell quickly, so it can run without separate compartments."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam moves inside, framing the open cytoplasm. On \"cytoplasm\" the cytoplasm fill takes a soft highlight and a callout writes \"cytoplasm\"; on \"dissolved in it\" a scatter of small coded dots of three colours (nutrients, salts, enzymes; grey key) drifts slowly. On \"chemical reactions happen here\" two dots meet and change colour (a coded reaction flash). On \"spread through the whole cell quickly\" a small coded burst of dots released at one end spreads across the whole rod within about a second; a grey tag \"small cell: short distances\". On \"without separate compartments\" a faint coded outline of the animal cell from v03 appears at the side, many times larger, with its compartments sketched in grey (grey tag \"large cell: compartments\"). The first TourRail slot of \"inside\" writes: \"cytoplasm: watery jelly → reactions; holds everything\". At most three bright items. Hold one second.",
+      "sourceHeading": "6"
+    },
+    {
+      "id": "nucleoid",
+      "title": "nucleoid",
+      "voiceover": {
+        "text": "Now the DNA. With no nucleus, where are the genes? They're on one long, circular chromosome, folded up in a region called the nucleoid. It's a region, not a compartment: there's no membrane around it. The nucleoid holds the genes the cell needs to stay alive and to make new cells."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam pushes to the tangled DNA at the cell's centre. On \"one long, circular chromosome\" a coded overlay traces one loop through the tangle and briefly unfolds it into a large ring beside the plate (grey tag \"unfolded, it is about a thousand times longer than the cell\"), then it folds back. On \"nucleoid\" a dashed scribbleEllipse rings the tangle, label \"nucleoid: a region\"; on \"no membrane around it\" the dashed ring flickers to show it is not a wall, and a grey chip \"nuclear membrane\" takes a scribble cross. On \"the genes the cell needs\" the JobBoard chip \"keep genes ?\" becomes \"keep genes ✓ nucleoid\". The second \"inside\" slot writes: \"nucleoid: circular chromosome, no membrane → essential genes\". At most three bright items. Hold one second.",
+      "sourceHeading": "7"
+    },
+    {
+      "id": "plasmid",
+      "title": "plasmid",
+      "voiceover": {
+        "text": "Many bacteria also carry plasmids: small, separate rings of extra DNA. A plasmid isn't a mini copy of the main chromosome. It carries a few extra genes, such as one that lets the bacterium survive an antibiotic. A bacterium can usually live without its plasmids, but they're copied on their own, and they can be passed to other bacteria. So, the chromosome holds the essentials, and plasmids hold extras that can be shared."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "on \"plasmids\" the two small rings in the plate are ringed and a callout writes \"plasmid\"; the unfolded chromosome ring from scene 7 returns beside one plasmid at the same scale (grey tag \"chromosome: thousands of genes\"; \"plasmid: a few\"). On \"isn't a mini copy\" a WrongChip writes \"plasmid = small copy of the chromosome\" and takes a scribble cross. On \"a gene that lets the bacterium survive an antibiotic\" one short amber segment on a plasmid lights, tag \"resistance gene\". On \"copied on their own\" the plasmid duplicates into two rings (coded copy animation over the plate). On \"passed to other bacteria\" a coded arrow points off the plate's edge with a grey tag \"more in a moment\". On the last sentence a two-line chip writes: \"chromosome: essentials\" and \"plasmids: extras that can be shared\". The third \"inside\" slot writes: \"plasmid: small separate DNA ring → extra genes, copied and shared\". At most three bright items. Hold one second.",
+      "sourceHeading": "8"
+    },
+    {
+      "id": "ribosomes",
+      "title": "ribosomes (answer two: proteins)",
+      "voiceover": {
+        "text": "Scattered through the cytoplasm are thousands of ribosomes, the tiny structures where proteins are made, smaller than the ones in your cells. Here's the second part of our answer. Ribosomes aren't wrapped in a membrane in any cell, not even in yours. So a bacterium's ribosomes simply float in the cytoplasm and build proteins right there, with no membrane-bound organelle needed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "on \"ribosomes\" the small granules across the cytoplasm brighten in turn and a callout to one writes \"ribosome\"; m5x-ribosome-v1.png opens in a callout (grey tag \"one ribosome, hugely enlarged\"). On \"second part of our answer\" the JobBoard chip \"make proteins ?\" lights. On \"smaller than the ones in your cells\" a grey tag \"70S (ours: 80S)\". On \"not even in yours\" a small grey m5x-cell-protein-synthesis-v1.png thumbnail appears with its ribosome dots ringed (grey tag \"no membrane around ribosomes here either\"). On \"build proteins right there\" a short coded bead chain grows from one ribosome in the plate. The chip becomes \"make proteins ✓ ribosomes\". The last \"inside\" slot writes: \"ribosomes: small, no membrane → make proteins\". At most three bright items. Hold one second.",
+      "sourceHeading": "9"
+    },
+    {
+      "id": "flagella",
+      "title": "flagella (answer three: movement)",
+      "voiceover": {
+        "text": "Now back out, to the parts that stick out. A flagellum is a long, whip-like tail anchored in the cell membrane. It doesn't lash like a whip, though. A tiny motor at its base spins it, like a propeller, pushing the bacterium through liquid, towards food or away from harm. That's the third part of our answer: moving needs a motor in the membrane, not an organelle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the Cam pulls back to the whole cell, then moves to the flagellum. On \"flagellum\" a callout writes \"flagellum (plural: flagella)\"; on \"anchored in the cell membrane\" a scribbleEllipse rings the base where it passes through wall and membrane. On \"doesn't lash like a whip\" a grey chip \"whips back and forth\" takes a scribble cross. On \"spins it, like a propeller\" a coded circular arrow turns continuously at the base, and the whole plate glides slowly across the frame, the Cam following, with faint coded flow lines trailing behind; on \"towards food\" a small cluster of coded nutrient dots ahead, the cell steering towards them. On \"third part of our answer\" the JobBoard chip \"move ?\" becomes \"move ✓ flagellum\". After the speech, a silent grey tag \"optional: some have several, some none\". The first \"sticking out\" slot writes: \"flagella: long tail, spun at the base → movement\". At most three bright items. Hold one second.",
+      "sourceHeading": "10"
+    },
+    {
+      "id": "pili",
+      "title": "pili (attach and share)",
+      "voiceover": {
+        "text": "The short, hair-like threads on the surface are pili. One is a pilus. Pili let a bacterium grip surfaces and other cells, so it isn't washed away. Some pili do something more surprising. A bacterium can use a pilus to connect to a neighbour and pass it a copy of a plasmid. If that plasmid carries an antibiotic resistance gene, the neighbour becomes resistant too, without any new cells being made."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the plate stops gliding. On \"pili\" several short threads are ringed at once, callout \"pili (one: pilus)\". On \"grip surfaces\" the coded grey surface line returns under the plate, pili touch it and amber contact brackets light; coded flow arrows stream past and the cell stays put (tag \"holds on\"). On \"connect to a neighbour\" the working area switches to m7-bacteria-conjugation-v1.png (two bacteria joined by a pilus; grey tag \"two bacteria, drawn larger than real\"); the joining pilus is ringed. On \"pass it a copy of a plasmid\" a thin coded single DNA strand (not a closed ring) runs along the pilus from the donor to the recipient while the donor's plasmid stays; each cell then draws in the partner strand and both show a complete plasmid ring (tags \"one strand passes\", \"each cell completes its copy\", \"donor keeps its copy\"). On \"resistance gene\" the travelling strand's amber segment lights, then the amber segment on both finished rings; on \"becomes resistant too\" the recipient takes an amber outline, tag \"now resistant\"; on \"without any new cells being made\" a grey tag \"between existing cells, not by reproduction\". The tour plate returns. The last \"sticking out\" slot writes: \"pili: short threads → attach; transfer DNA (plasmids)\". At most three bright items. Hold one second.",
+      "sourceHeading": "11"
+    },
+    {
+      "id": "answer-assembled",
+      "title": "the answer, assembled",
+      "voiceover": {
+        "text": "Without membrane-bound organelles, this bacterium gives each job to a simple structure. The membrane controls what crosses it and carries out much of respiration. Ribosomes in the cytoplasm make proteins. The nucleoid holds the essential genes, and plasmids carry extras. Flagella move the cell, and pili hold on. To remember the nine, tour the map: three layers in, four things inside, two things out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the JobBoard enlarges at the upper right; each chip pulses as its sentence is spoken, with a leader line from the chip to its structure on the plate (membrane, ribosomes, nucleoid and plasmids, flagellum and pili). The grey tag \"small cell: short distances\" returns silently beside the board. On the memory line the TourRail group titles brighten one by one with handwritten counts: \"3 layers in\", \"4 inside\", \"2 out\", and the nine slots light in tour order along the dashed tour arrow on the plate. Hold one second.",
+      "sourceHeading": "12"
+    },
+    {
+      "id": "attempt",
+      "title": "attempt one (a mountain stream)",
+      "voiceover": {
+        "text": "Two exam questions. First. A bacterium lives attached to rocks in a fast-flowing mountain stream, where the rocks sometimes dry out in summer. Identify two structures that would help it survive there, and describe the function of each. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A species of bacterium lives attached to the surface of rocks in a fast-flowing mountain stream. In summer, the water level often drops and the rocks are exposed to air for several days.\" Demand: \"Identify TWO prokaryotic structures that would help this bacterium survive in this habitat, and describe the function of each. (4 marks)\". Lined answer space. No plates, no people. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "13a"
+    },
+    {
+      "id": "feedback-one",
+      "title": "feedback, item one",
+      "voiceover": {
+        "text": "Pili are a strong answer: they grip the rock, so the current can't wash the cell away. A capsule works too: its slime helps the cell stick, and it stops the cell drying out when the rocks are exposed. Each time, name the structure, then link its job to the habitat. The classic mistake is saying flagella hold the cell in place."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. On \"grip the rock\" the givens \"attached to the surface of rocks\" and \"fast-flowing\" take amber underlines; an answer line writes \"pili: attach to the rock → not washed away\"; a small tour plate thumbnail beside the card has its pili ringed. On \"stops the cell drying out\" the given \"exposed to air for several days\" takes an underline; answer line \"capsule: sticky, resists drying out\"; the thumbnail's capsule is ringed. On \"link its job to the habitat\" a small grey tag \"structure → function → habitat\". On \"classic mistake\" a chip \"flagella anchor the cell\" writes and takes a scribble cross, with small text \"flagella move a cell; they don't anchor it\". Settle one second.",
+      "sourceHeading": "13b"
+    },
+    {
+      "id": "attempt-two",
+      "title": "attempt two (resistance passed on)",
+      "voiceover": {
+        "text": "Second. Bacterium A carries a plasmid with a gene for resistance to an antibiotic. Bacterium B, of the same species, has no plasmid. After the two are grown together, some B cells survive the antibiotic. Describe a plasmid and a pilus, and explain how plasmid transfer could account for this result. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 12,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      },
+      "postResponsePaddingSeconds": 2,
+      "sourceVisual": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"Strain A of a bacterium has a plasmid carrying a gene for resistance to the antibiotic tetracycline. Strain B, of the same species, has no plasmids and is killed by tetracycline. The two strains are grown together for several hours, then tetracycline is added. Some strain B cells survive.\" Demand: \"(a) Describe the structure and function of a plasmid and of a pilus. (2 marks) (b) Explain how plasmid transfer could account for the survival of some strain B cells. (2 marks)\". Lined answer space. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "sourceHeading": "13c"
+    },
+    {
+      "id": "feedback-two",
+      "title": "feedback, item two",
+      "voiceover": {
+        "text": "A plasmid is a small ring of DNA, separate from the main chromosome, carrying extra genes. A pilus is a short, hair-like projection that attaches to other cells and can transfer DNA. An A cell could have used a pilus to pass a copy of its resistance plasmid to a B cell, so the gene would spread between existing cells. The classic mistake is calling the plasmid a small copy of the main chromosome."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "sourceVisual": "the card stays. Answer lines write one per cue, earlier lines dimming: \"(a) plasmid: small separate DNA ring → extra genes\", \"pilus: short projection → attaches, transfers DNA\". On \"pass a copy of its resistance plasmid\" the givens \"plasmid carrying a gene for resistance\" and \"grown together\" take amber underlines, answer line \"(b) could be: A → B through a pilus, copy of the resistance plasmid\"; a small m7-bacteria-conjugation-v1.png thumbnail beside the card shows the single strand travelling, then complete rings in both cells. On \"between existing cells\" the given \"Some strain B cells survive\" takes an underline. On \"classic mistake\" a chip \"plasmid = small copy of the chromosome\" writes and takes a scribble cross. Settle one second.",
+      "sourceHeading": "13d"
+    },
+    {
+      "id": "decision-rule",
+      "title": "decision rule and handoff",
+      "voiceover": {
+        "text": "So for any prokaryote question, name the structure, say what it's like, then say what it lets the cell do. Next, we go to the bench: preparing a real specimen, and finding cells under a light microscope."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2.5,
+      "holdKind": "visual",
+      "sourceVisual": "three step chips write on, one per cue: \"name it\", \"what is it like?\", \"what does it let the cell do?\". The tour plate returns small above them with its finished rail. A \"Next\" chip slides in at the lower right: \"Next: How do we prepare and identify cells in a wet mount?\" with a small y11-onion-wet-mount-v1.png thumbnail beside it. Hold half a second before the notes.",
+      "sourceHeading": "14"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 57,
+      "holdKind": "notes",
+      "sourceVisual": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "sourceHeading": "15"
+    }
+  ]
+}

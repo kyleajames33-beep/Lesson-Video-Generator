@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/phys-y11-fa1-v02/lesson.json",
+    "lessonSha256": "6e47e007c80903d3ffd9042f5048debded3a78f3bcb9c1e2c3848def1deefbe6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Stage 5 Mathematics (Pythagoras; tan and tan⁻¹ in right triangles; scale drawing); v01 (magnitude, scalar, vector; displacement, velocity, acceleration as vectors; an arrow's length shows magnitude and its head shows direction).",
+    "startsWith": "Last time, four metres and three metres made five. Here's why that matters. This boat points straight across a river and motors at three metres per second. But the water's moving too. Watch where it actually goes. It lands well downstream, travelling along a slant. So where does it really go, and how fast? A diagram can answer that, and today we'll see why it works.",
+    "stopsAfter": "scaled arrows for all three vector quantities; tip-to-tail addition with its cause; perpendicular resultants by measurement and calculation; same-line cases; subtraction by flipping, used for a change in velocity and the direction of the average acceleration. No components, sign conventions, multi-leg problems or relative velocity.",
+    "nextLesson": "v03, components: the same vector described by two perpendicular parts."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md"
+  ],
+  "teaching": {
+    "task": "*A boat points straight across a river at 3.0 m s⁻¹, but the current carries it downstream. Where does it actually go, and how fast? And how does a diagram show a resultant, or a difference?*",
+    "causalExplanation": "(1) a scaled arrow carries magnitude and direction for any vector quantity (2); (2) consecutive displacements chain, so arrows join tip to tail; the resultant joins first tail to last tip (3); (3) simultaneous velocities each produce a displacement every second, so they chain the same way (4); (4) perpendicular chains make a right triangle: Pythagoras and tan⁻¹ (5); (5) on one line, sizes add or subtract (6); (6) a change is what you add to get from the first to the second, so subtracting means flipping and adding; the change can be larger than either (7, 8); (7) the average acceleration points along the change (8); (8) memory aid (9).",
+    "conversationalApproach": "Last time, four metres and three metres made five. First, a vector diagram needs a scale. Now, why do we join vectors tip to tail? Think about displacements. Velocities add tip to tail too, and the river shows why.",
+    "openingDecision": "opens on v01's handoff frame: the 4 m east and 3 m north arrows floating unjoined with \"?\". On the first sentence the 3 m arrow slides tip to tail onto the 4 m arrow and the navy 5 m resultant draws (a two-second recall; no labels change). Clear change to a plan view of a coded river: two banks running left to right, blue-grey water with faint flow lines drifting right, compass; the top-view boat plate (phys-y11-boat-top-v1.png) at the bottom bank, bow pointing north. On \"second\" an orange tag at the bow \"heading: 3.0 m s⁻¹ across\". On \"goes\" the boat crosses with the bow still pointing north while the flow carries it right: an amber trail draws a slant from the start pin to a landing point well downstream; a dashed grey line shows where it was aimed (straight across). On \"diagram\" the heading writes on: \"Vector diagrams: resultant and difference\", and a chip \"where, and how fast?\" moves to the top right.",
+    "understandingCheck": "Now subtraction. This car turns a corner at a steady twenty metres per second. Before, its velocity points east. After, it points north. Its speed hasn't changed. So is its change in velocity zero, less than twenty, or more than twenty? Have a think. Your turn. A small boat heads north at two point four metres per second across a river that flows east at zero point seven zero metres per second. Using a vector diagram, find the magnitude and direction of the boat's resultant velocity. Pause here to answer. Last one. A tennis ball rolls east at three point zero metres per second, hits a wall, and rolls back west at two point zero metres per second. Using a vector diagram, find the ball's change in velocity. Pause here to answer.",
+    "curriculumScope": "Syllabus content point (Physics 11-12 (2025), Year 11, Fundamentals of mechanics; NESA content-system codename), quoted from the route JSON `syllabusActions`:\n\n- `cib3157911`: \"Use vector diagrams to represent the displacement, velocity and acceleration of an object\"\n\nSource: https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-11/fa874ba975\n"
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Preserve the painted plates and shared explainer ink, watercolour and paper system specified by this design. ",
+    "transitionPlan": "Follow each existing scene Visual and retain the specified opening and handoff; the notes return to the final handoff as the root decision requires."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-1: opens on v01's handoff frame: the 4 m east and 3 m north arrows floating unjoined with \"?\". On the first sentence the 3 m arrow slides tip to tail onto the 4 m arrow and the navy 5 m resultant draws (a two-second recall; no labels change). Clear change to a plan view of a coded river: two banks running left to right, blue-grey water with faint flow lines drifting right, compass; the top-view boat plate (phys-y11-boat-top-v1.png) at the bottom bank, bow pointing north. On \"second\" an orange tag at the bow \"heading: 3.0 m s⁻¹ across\". On \"goes\" the boat crosses with the bow still pointing north while the flow carries it right: an amber trail draws a slant from the start pin to a landing point well downstream; a dashed grey line shows where it was aimed (straight across). On \"diagram\" the heading writes on: \"Vector diagrams: resultant and difference\", and a chip \"where, and how fast?\" moves to the top right.",
+      "teachingReason": "Last time, four metres and three metres made five.",
+      "narrationCue": "second / goes / diagram",
+      "motionPurpose": "opens on v01's handoff frame: the 4 m east and 3 m north arrows floating unjoined with \"?\". On the first sentence the 3 m arrow slides tip to tail onto the 4 m arrow and the navy 5 m resultant draws (a two-second recall; no labels change). Clear change to a plan view of a coded river: two banks running left to right, blue-grey water with faint flow lines drifting right, compass; the top-view boat plate (phys-y11-boat-top-v1.png) at the bottom bank, bow pointing north. On \"second\" an orange tag at the bow \"heading: 3.0 m s⁻¹ across\". On \"goes\" the boat crosses with the bow still pointing north while the flow carries it right: an amber trail draws a slant from the start pin to a landing point well downstream; a dashed grey line shows where it was aimed (straight across). On \"diagram\" the heading writes on: \"Vector diagrams: resultant and difference\", and a chip \"where, and how fast?\" moves to the top right.",
+      "motionRole": "explain",
+      "onScreenChange": "opens on v01's handoff frame: the 4 m east and 3 m north arrows floating unjoined with \"?\". On the first sentence the 3 m arrow slides tip to tail onto the 4 m arrow and the navy 5 m resultant draws (a two-second recall; no labels change). Clear change to a plan view of a coded river: two banks running left to right, blue-grey water with faint flow lines drifting right, compass; the top-view boat plate (phys-y11-boat-top-v1.png) at the bottom bank, bow pointing north. On \"second\" an orange tag at the bow \"heading: 3.0 m s⁻¹ across\". On \"goes\" the boat crosses with the bow still pointing north while the flow carries it right: an amber trail draws a slant from the start pin to a landing point well downstream; a dashed grey line shows where it was aimed (straight across). On \"diagram\" the heading writes on: \"Vector diagrams: resultant and difference\", and a chip \"where, and how fast?\" moves to the top right.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "hook (pointed across, carried down): retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "scale",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-2: board clears to a squared-paper strip with the compass. On \"scale\" a coded scale bar writes at the bottom left: \"scale: 1 cm = 1 m s⁻¹\" with a 1 cm tick bracket. On \"long\" an orange arrow draws east from a tail dot, a four-segment bracket counting under it \"1, 2, 3, 4 cm\"; label \"4.0 m s⁻¹ east\". On \"tail\" a PenArrow points at the tail dot (\"tail: start\"); on \"tip\" a scribble circle rings the head (\"tip (head): direction\"). On \"squared\" two more arrows of the same length draw beneath: a navy \"4 m east\" with its own scale tag \"1 cm = 1 m\", and a rose \"4.0 m s⁻² east\" with \"1 cm = 1 m s⁻²\". A grey chip \"time taken\" fades in beside the arrows and is crossed (caption \"a vector arrow shows size and direction only\").",
+      "teachingReason": "First, a vector diagram needs a scale.",
+      "narrationCue": "scale / long / squared",
+      "motionPurpose": "board clears to a squared-paper strip with the compass. On \"scale\" a coded scale bar writes at the bottom left: \"scale: 1 cm = 1 m s⁻¹\" with a 1 cm tick bracket. On \"long\" an orange arrow draws east from a tail dot, a four-segment bracket counting under it \"1, 2, 3, 4 cm\"; label \"4.0 m s⁻¹ east\". On \"tail\" a PenArrow points at the tail dot (\"tail: start\"); on \"tip\" a scribble circle rings the head (\"tip (head): direction\"). On \"squared\" two more arrows of the same length draw beneath: a navy \"4 m east\" with its own scale tag \"1 cm = 1 m\", and a rose \"4.0 m s⁻² east\" with \"1 cm = 1 m s⁻²\". A grey chip \"time taken\" fades in beside the arrows and is crossed (caption \"a vector arrow shows size and direction only\").",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to a squared-paper strip with the compass. On \"scale\" a coded scale bar writes at the bottom left: \"scale: 1 cm = 1 m s⁻¹\" with a 1 cm tick bracket. On \"long\" an orange arrow draws east from a tail dot, a four-segment bracket counting under it \"1, 2, 3, 4 cm\"; label \"4.0 m s⁻¹ east\". On \"tail\" a PenArrow points at the tail dot (\"tail: start\"); on \"tip\" a scribble circle rings the head (\"tip (head): direction\"). On \"squared\" two more arrows of the same length draw beneath: a navy \"4 m east\" with its own scale tag \"1 cm = 1 m\", and a rose \"4.0 m s⁻² east\" with \"1 cm = 1 m s⁻²\". A grey chip \"time taken\" fades in beside the arrows and is crossed (caption \"a vector arrow shows size and direction only\").",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "drawing a vector to scale: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "tip-to-tail",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-3: plan grid (70 px per metre), drone plate on a start pin. The two arrows sit apart at first, both with tails at the start pin (4 m east, 3 m north), the way a beginner might draw them. On the third sentence a grey tag under the common-tail layout: \"two separate trips from the start?\" On \"ended\" the drone flies the 4 m leg (route tracer) and stops; the 3 m arrow lifts and slides (kit gap 1) so its tail lands on the 4 m tip, leaving a faint ghost where it was, with a tag \"same length, same direction\". On \"tip\" the drone flies the 3 m leg along the moved arrow, and a thick navy arrow draws from the start pin to the drone. On \"resultant\" it is labelled \"resultant: 5 m\" and the right column writes \"resultant: one vector with the same effect\". On the last sentence a faint dotted drone path flies straight along the resultant.",
+      "teachingReason": "Now, why do we join vectors tip to tail? Think about displacements.",
+      "narrationCue": "ended / tip / resultant",
+      "motionPurpose": "plan grid (70 px per metre), drone plate on a start pin. The two arrows sit apart at first, both with tails at the start pin (4 m east, 3 m north), the way a beginner might draw them. On the third sentence a grey tag under the common-tail layout: \"two separate trips from the start?\" On \"ended\" the drone flies the 4 m leg (route tracer) and stops; the 3 m arrow lifts and slides (kit gap 1) so its tail lands on the 4 m tip, leaving a faint ghost where it was, with a tag \"same length, same direction\". On \"tip\" the drone flies the 3 m leg along the moved arrow, and a thick navy arrow draws from the start pin to the drone. On \"resultant\" it is labelled \"resultant: 5 m\" and the right column writes \"resultant: one vector with the same effect\". On the last sentence a faint dotted drone path flies straight along the resultant.",
+      "motionRole": "explain",
+      "onScreenChange": "plan grid (70 px per metre), drone plate on a start pin. The two arrows sit apart at first, both with tails at the start pin (4 m east, 3 m north), the way a beginner might draw them. On the third sentence a grey tag under the common-tail layout: \"two separate trips from the start?\" On \"ended\" the drone flies the 4 m leg (route tracer) and stops; the 3 m arrow lifts and slides (kit gap 1) so its tail lands on the 4 m tip, leaving a faint ghost where it was, with a tag \"same length, same direction\". On \"tip\" the drone flies the 3 m leg along the moved arrow, and a thick navy arrow draws from the start pin to the drone. On \"resultant\" it is labelled \"resultant: 5 m\" and the right column writes \"resultant: one vector with the same effect\". On the last sentence a faint dotted drone path flies straight along the resultant.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "why tip to tail: one move after another: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "velocities-add",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-4: back to the river plan view, the boat at the start pin. Time-tick stepping (kit gap 2) with a coded clock chip \"t = 1 s\": on \"across\" a short orange arrow \"3.0 m\" draws north from the boat; on \"downstream\" a second orange arrow \"4.0 m\" draws east from its tip (the flow lines brighten); on \"slant\" the boat moves to the end of the pair and a thick orange arrow draws from the start to it, \"5.0 m in 1 s\". On \"Next second\" the clock chip ticks \"t = 2 s\" and \"t = 3 s\": two more identical step pairs draw, each followed by its slant, so three equal slanted steps line up along the amber trail from the hook. On \"five metres per second\" the right column writes \"resultant velocity: 5.0 m s⁻¹ along the slant\". On the last sentence the hook's landing point glows at the end of the line.",
+      "teachingReason": "Velocities add tip to tail too, and the river shows why.",
+      "narrationCue": "across / downstream / slant",
+      "motionPurpose": "back to the river plan view, the boat at the start pin. Time-tick stepping (kit gap 2) with a coded clock chip \"t = 1 s\": on \"across\" a short orange arrow \"3.0 m\" draws north from the boat; on \"downstream\" a second orange arrow \"4.0 m\" draws east from its tip (the flow lines brighten); on \"slant\" the boat moves to the end of the pair and a thick orange arrow draws from the start to it, \"5.0 m in 1 s\". On \"Next second\" the clock chip ticks \"t = 2 s\" and \"t = 3 s\": two more identical step pairs draw, each followed by its slant, so three equal slanted steps line up along the amber trail from the hook. On \"five metres per second\" the right column writes \"resultant velocity: 5.0 m s⁻¹ along the slant\". On the last sentence the hook's landing point glows at the end of the line.",
+      "motionRole": "explain",
+      "onScreenChange": "back to the river plan view, the boat at the start pin. Time-tick stepping (kit gap 2) with a coded clock chip \"t = 1 s\": on \"across\" a short orange arrow \"3.0 m\" draws north from the boat; on \"downstream\" a second orange arrow \"4.0 m\" draws east from its tip (the flow lines brighten); on \"slant\" the boat moves to the end of the pair and a thick orange arrow draws from the start to it, \"5.0 m in 1 s\". On \"Next second\" the clock chip ticks \"t = 2 s\" and \"t = 3 s\": two more identical step pairs draw, each followed by its slant, so three equal slanted steps line up along the amber trail from the hook. On \"five metres per second\" the right column writes \"resultant velocity: 5.0 m s⁻¹ along the slant\". On the last sentence the hook's landing point glows at the end of the line.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "velocities add the same way, second by second: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "worked-boat",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-5: board clears to the calculation layout. Task strip: \"Find the boat's resultant velocity\"; equation strip: \"perpendicular vectors: R = √(A² + B²), θ = tan⁻¹(B/A)\"; givens group (navy): \"across (heading): 3.0 m s⁻¹\", \"current: 4.0 m s⁻¹ downstream\", \"at right angles\", \"scale 1 cm = 1 m s⁻¹\". Left: the scaled triangle (author note a): 3.0 cm orange arrow north, 4.0 cm orange arrow east from its tip, the thick resultant from first tail to last tip, a right-angle mark. On \"second\" the ruler plate (m7-ruler-clear-v1.png, scaled uniformly, rotated to lie along the resultant) slides in and its zero sits on the tail; the tip lands on the 5th centimetre tick; chip \"measured: 5.0 cm, so 5.0 m s⁻¹\". The ruler slides away. AlignedAlgebra rows: on \"zero\" \"R = √(3.0² + 4.0²) = √(9.0 + 16) = √25 = 5.0 m s⁻¹\" (grey chip \"Pythagoras\"); on \"degrees\" an angle arc draws at the tail between the heading and the resultant, and the row \"θ = tan⁻¹(4.0 / 3.0) = 53°\" writes, with the label \"53° downstream of heading\". Boxed answer: \"5.0 m s⁻¹, 53° downstream of the heading\" (grey tag \"2 significant figures, like the data\"). On the last sentence a small grey sketch of a non-right-angled pair with a protractor arc, tag \"not at right angles: measure (or use components, next video)\".",
+      "teachingReason": "Let's make that exact.",
+      "narrationCue": "second / zero / degrees",
+      "motionPurpose": "board clears to the calculation layout. Task strip: \"Find the boat's resultant velocity\"; equation strip: \"perpendicular vectors: R = √(A² + B²), θ = tan⁻¹(B/A)\"; givens group (navy): \"across (heading): 3.0 m s⁻¹\", \"current: 4.0 m s⁻¹ downstream\", \"at right angles\", \"scale 1 cm = 1 m s⁻¹\". Left: the scaled triangle (author note a): 3.0 cm orange arrow north, 4.0 cm orange arrow east from its tip, the thick resultant from first tail to last tip, a right-angle mark. On \"second\" the ruler plate (m7-ruler-clear-v1.png, scaled uniformly, rotated to lie along the resultant) slides in and its zero sits on the tail; the tip lands on the 5th centimetre tick; chip \"measured: 5.0 cm, so 5.0 m s⁻¹\". The ruler slides away. AlignedAlgebra rows: on \"zero\" \"R = √(3.0² + 4.0²) = √(9.0 + 16) = √25 = 5.0 m s⁻¹\" (grey chip \"Pythagoras\"); on \"degrees\" an angle arc draws at the tail between the heading and the resultant, and the row \"θ = tan⁻¹(4.0 / 3.0) = 53°\" writes, with the label \"53° downstream of heading\". Boxed answer: \"5.0 m s⁻¹, 53° downstream of the heading\" (grey tag \"2 significant figures, like the data\"). On the last sentence a small grey sketch of a non-right-angled pair with a protractor arc, tag \"not at right angles: measure (or use components, next video)\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to the calculation layout. Task strip: \"Find the boat's resultant velocity\"; equation strip: \"perpendicular vectors: R = √(A² + B²), θ = tan⁻¹(B/A)\"; givens group (navy): \"across (heading): 3.0 m s⁻¹\", \"current: 4.0 m s⁻¹ downstream\", \"at right angles\", \"scale 1 cm = 1 m s⁻¹\". Left: the scaled triangle (author note a): 3.0 cm orange arrow north, 4.0 cm orange arrow east from its tip, the thick resultant from first tail to last tip, a right-angle mark. On \"second\" the ruler plate (m7-ruler-clear-v1.png, scaled uniformly, rotated to lie along the resultant) slides in and its zero sits on the tail; the tip lands on the 5th centimetre tick; chip \"measured: 5.0 cm, so 5.0 m s⁻¹\". The ruler slides away. AlignedAlgebra rows: on \"zero\" \"R = √(3.0² + 4.0²) = √(9.0 + 16) = √25 = 5.0 m s⁻¹\" (grey chip \"Pythagoras\"); on \"degrees\" an angle arc draws at the tail between the heading and the resultant, and the row \"θ = tan⁻¹(4.0 / 3.0) = 53°\" writes, with the label \"53° downstream of heading\". Boxed answer: \"5.0 m s⁻¹, 53° downstream of the heading\" (grey tag \"2 significant figures, like the data\"). On the last sentence a small grey sketch of a non-right-angled pair with a protractor arc, tag \"not at right angles: measure (or use components, next video)\".",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "worked example: the boat's resultant velocity: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "one-line-order",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-6: the board keeps the boxed answer small at the top. Below, a strip of the river. On \"downstream\" the boat plate turns to point east; orange 3.0 and 4.0 arrows join tip to tail along one line; thick resultant \"7.0 m s⁻¹ downstream\". On \"upstream\" the boat turns to point west; the 3.0 arrow points west from the 4.0 arrow's tip, overlapping it backwards; the resultant is a short arrow \"1.0 m s⁻¹ downstream\", and the boat drifts slowly right while pointing left. On \"line up\" a chip \"add sizes only along one line\" (with the scene 5 triangle ghosted beside it: \"3.0 + 4.0 ≠ 5.0\"). On \"resultant\" the scene 5 triangle returns and a second triangle draws with the 4.0 arrow first and the 3.0 arrow second: the two resultants coincide (a parallelogram outline appears), tag \"same resultant\".",
+      "teachingReason": "When both arrows point the same way, the sizes simply add.",
+      "narrationCue": "downstream / upstream / resultant",
+      "motionPurpose": "the board keeps the boxed answer small at the top. Below, a strip of the river. On \"downstream\" the boat plate turns to point east; orange 3.0 and 4.0 arrows join tip to tail along one line; thick resultant \"7.0 m s⁻¹ downstream\". On \"upstream\" the boat turns to point west; the 3.0 arrow points west from the 4.0 arrow's tip, overlapping it backwards; the resultant is a short arrow \"1.0 m s⁻¹ downstream\", and the boat drifts slowly right while pointing left. On \"line up\" a chip \"add sizes only along one line\" (with the scene 5 triangle ghosted beside it: \"3.0 + 4.0 ≠ 5.0\"). On \"resultant\" the scene 5 triangle returns and a second triangle draws with the 4.0 arrow first and the 3.0 arrow second: the two resultants coincide (a parallelogram outline appears), tag \"same resultant\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board keeps the boxed answer small at the top. Below, a strip of the river. On \"downstream\" the boat plate turns to point east; orange 3.0 and 4.0 arrows join tip to tail along one line; thick resultant \"7.0 m s⁻¹ downstream\". On \"upstream\" the boat turns to point west; the 3.0 arrow points west from the 4.0 arrow's tip, overlapping it backwards; the resultant is a short arrow \"1.0 m s⁻¹ downstream\", and the boat drifts slowly right while pointing left. On \"line up\" a chip \"add sizes only along one line\" (with the scene 5 triangle ghosted beside it: \"3.0 + 4.0 ≠ 5.0\"). On \"resultant\" the scene 5 triangle returns and a second triangle draws with the 4.0 arrow first and the 3.0 arrow second: the two resultants coincide (a parallelogram outline appears), tag \"same resultant\".",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "along one line, and in any order: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "prediction",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-7: board clears to a plan view of a coded road corner (grey road from the left turning up), compass. The top-view blue car plate drives in heading east, rounds the corner at constant pace and leaves heading north. Two orange arrows freeze in place: \"before: 20 m s⁻¹ east\" at the entry, \"after: 20 m s⁻¹ north\" at the exit; a readout \"speed: 20 m s⁻¹\" unchanged. The three options write as chips: \"zero\", \"less than 20\", \"more than 20\". On \"think\" the 3 s Countdown runs. No Δv arrow is shown.",
+      "teachingReason": "Now subtraction.",
+      "narrationCue": "think",
+      "motionPurpose": "board clears to a plan view of a coded road corner (grey road from the left turning up), compass. The top-view blue car plate drives in heading east, rounds the corner at constant pace and leaves heading north. Two orange arrows freeze in place: \"before: 20 m s⁻¹ east\" at the entry, \"after: 20 m s⁻¹ north\" at the exit; a readout \"speed: 20 m s⁻¹\" unchanged. The three options write as chips: \"zero\", \"less than 20\", \"more than 20\". On \"think\" the 3 s Countdown runs. No Δv arrow is shown.",
+      "motionRole": "hold",
+      "onScreenChange": "board clears to a plan view of a coded road corner (grey road from the left turning up), compass. The top-view blue car plate drives in heading east, rounds the corner at constant pace and leaves heading north. Two orange arrows freeze in place: \"before: 20 m s⁻¹ east\" at the entry, \"after: 20 m s⁻¹ north\" at the exit; a readout \"speed: 20 m s⁻¹\" unchanged. The three options write as chips: \"zero\", \"less than 20\", \"more than 20\". On \"think\" the 3 s Countdown runs. No Δv arrow is shown.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "3 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "subtract-flip",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-8: the two arrows move to the arrow board, tails together at a point, with the right column: \"change in velocity: Δv = v_final − v_initial\" (grey gloss \"Δ: change in\"). On the second sentence a dashed rose arrow draws from the tip of \"before\" to the tip of \"after\", tag \"what you add to get from before to after\". On \"west\" the \"before\" arrow flips about its midpoint (kit flip) into a dashed outline, then fills: \"−v_initial: 20 m s⁻¹ west\"; the row \"Δv = v_final + (−v_initial)\" writes. On the next sentence the flipped arrow slides so its tail sits on the tip of \"after\" (or the reverse order, tip to tail), and the thick rose resultant draws from first tail to last tip: it matches the dashed arrow exactly. On \"west\" (second) the label \"Δv ≈ 28 m s⁻¹ toward the north-west\" with a grey chip \"√(20² + 20²) ≈ 28\" and a 45° arc. On \"bigger\" a chip \"subtracting makes it smaller\" fades in and is crossed (caption \"28 > 20\"). On \"Check it\" the original east arrow is redrawn from a fresh point, the Δv arrow joins at its tip, and the chain lands on the tip of a redrawn north arrow (tick). On \"change\" a rose \"average acceleration\" arrow draws beside the car's corner pointing north-west, parallel to Δv. A small grey tag: \"v_initial − v_final would point the other way\" (author note d).",
+      "teachingReason": "It's more than twenty.",
+      "narrationCue": "west / west / change",
+      "motionPurpose": "the two arrows move to the arrow board, tails together at a point, with the right column: \"change in velocity: Δv = v_final − v_initial\" (grey gloss \"Δ: change in\"). On the second sentence a dashed rose arrow draws from the tip of \"before\" to the tip of \"after\", tag \"what you add to get from before to after\". On \"west\" the \"before\" arrow flips about its midpoint (kit flip) into a dashed outline, then fills: \"−v_initial: 20 m s⁻¹ west\"; the row \"Δv = v_final + (−v_initial)\" writes. On the next sentence the flipped arrow slides so its tail sits on the tip of \"after\" (or the reverse order, tip to tail), and the thick rose resultant draws from first tail to last tip: it matches the dashed arrow exactly. On \"west\" (second) the label \"Δv ≈ 28 m s⁻¹ toward the north-west\" with a grey chip \"√(20² + 20²) ≈ 28\" and a 45° arc. On \"bigger\" a chip \"subtracting makes it smaller\" fades in and is crossed (caption \"28 > 20\"). On \"Check it\" the original east arrow is redrawn from a fresh point, the Δv arrow joins at its tip, and the chain lands on the tip of a redrawn north arrow (tick). On \"change\" a rose \"average acceleration\" arrow draws beside the car's corner pointing north-west, parallel to Δv. A small grey tag: \"v_initial − v_final would point the other way\" (author note d).",
+      "motionRole": "explain",
+      "onScreenChange": "the two arrows move to the arrow board, tails together at a point, with the right column: \"change in velocity: Δv = v_final − v_initial\" (grey gloss \"Δ: change in\"). On the second sentence a dashed rose arrow draws from the tip of \"before\" to the tip of \"after\", tag \"what you add to get from before to after\". On \"west\" the \"before\" arrow flips about its midpoint (kit flip) into a dashed outline, then fills: \"−v_initial: 20 m s⁻¹ west\"; the row \"Δv = v_final + (−v_initial)\" writes. On the next sentence the flipped arrow slides so its tail sits on the tip of \"after\" (or the reverse order, tip to tail), and the thick rose resultant draws from first tail to last tip: it matches the dashed arrow exactly. On \"west\" (second) the label \"Δv ≈ 28 m s⁻¹ toward the north-west\" with a grey chip \"√(20² + 20²) ≈ 28\" and a 45° arc. On \"bigger\" a chip \"subtracting makes it smaller\" fades in and is crossed (caption \"28 > 20\"). On \"Check it\" the original east arrow is redrawn from a fresh point, the Δv arrow joins at its tip, and the chain lands on the tip of a redrawn north arrow (tick). On \"change\" a rose \"average acceleration\" arrow draws beside the car's corner pointing north-west, parallel to Δv. A small grey tag: \"v_initial − v_final would point the other way\" (author note d).",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "subtract by flipping: the change in velocity: retain 0 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-9: the scene 3 drone chain, the scene 5 triangle and the scene 8 flip return as three small views in a row, labelled as named: \"tip to tail\", \"first tail to last tip\", \"flip, then add\". The handwritten line writes large: \"Tip to tail; first tail to last tip. To subtract, flip it and add.\" On \"displacement, velocity and acceleration\" three tiny arrows (navy, orange, rose) sit under it; on \"one quantity\" a grey tag \"one quantity, one scale per diagram\", and a navy arrow chained to an orange arrow is crossed. Hold about 2 seconds.",
+      "teachingReason": "Here's the rule in one line.",
+      "narrationCue": "add",
+      "motionPurpose": "the scene 3 drone chain, the scene 5 triangle and the scene 8 flip return as three small views in a row, labelled as named: \"tip to tail\", \"first tail to last tip\", \"flip, then add\". The handwritten line writes large: \"Tip to tail; first tail to last tip. To subtract, flip it and add.\" On \"displacement, velocity and acceleration\" three tiny arrows (navy, orange, rose) sit under it; on \"one quantity\" a grey tag \"one quantity, one scale per diagram\", and a navy arrow chained to an orange arrow is crossed. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the scene 3 drone chain, the scene 5 triangle and the scene 8 flip return as three small views in a row, labelled as named: \"tip to tail\", \"first tail to last tip\", \"flip, then add\". The handwritten line writes large: \"Tip to tail; first tail to last tip. To subtract, flip it and add.\" On \"displacement, velocity and acceleration\" three tiny arrows (navy, orange, rose) sit under it; on \"one quantity\" a grey tag \"one quantity, one scale per diagram\", and a navy arrow chained to an orange arrow is crossed. Hold about 2 seconds.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "memory aid: retain 2 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-10: QuestionCard (subject \"Physics\"), worded as printed: \"A small boat heads north at 2.4 m s⁻¹ across a river. The river flows east at 0.70 m s⁻¹. Using a vector diagram, determine the magnitude and direction of the boat's resultant velocity.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no diagram).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "QuestionCard (subject \"Physics\"), worded as printed: \"A small boat heads north at 2.4 m s⁻¹ across a river. The river flows east at 0.70 m s⁻¹. Using a vector diagram, determine the magnitude and direction of the boat's resultant velocity.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no diagram).",
+      "motionRole": "hold",
+      "onScreenChange": "QuestionCard (subject \"Physics\"), worded as printed: \"A small boat heads north at 2.4 m s⁻¹ across a river. The river flows east at 0.70 m s⁻¹. Using a vector diagram, determine the magnitude and direction of the boat's resultant velocity.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no diagram).",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-11: card shrinks to the top. A small scaled diagram draws: orange \"2.4\" north, \"0.70\" east from its tip, thick resultant, right-angle mark (\"Using a vector diagram\" underlined). Rows: on \"second\" \"R = √(2.4² + 0.70²) = √(5.76 + 0.49) = √6.25 = 2.5 m s⁻¹\"; on \"north\" the arc at the tail and \"θ = tan⁻¹(0.70 / 2.4) = 16° east of north\" (\"magnitude and direction\" underlined). Boxed answer \"2.5 m s⁻¹, 16° east of north\". On \"up\" a chip \"2.4 + 0.70 = 3.1 m s⁻¹\" fades in and is crossed (caption \"perpendicular: not along one line\"). Hold about 1 second.",
+      "teachingReason": "Draw the two point four north, then the zero point seven zero east from its tip.",
+      "narrationCue": "second / north / up",
+      "motionPurpose": "card shrinks to the top. A small scaled diagram draws: orange \"2.4\" north, \"0.70\" east from its tip, thick resultant, right-angle mark (\"Using a vector diagram\" underlined). Rows: on \"second\" \"R = √(2.4² + 0.70²) = √(5.76 + 0.49) = √6.25 = 2.5 m s⁻¹\"; on \"north\" the arc at the tail and \"θ = tan⁻¹(0.70 / 2.4) = 16° east of north\" (\"magnitude and direction\" underlined). Boxed answer \"2.5 m s⁻¹, 16° east of north\". On \"up\" a chip \"2.4 + 0.70 = 3.1 m s⁻¹\" fades in and is crossed (caption \"perpendicular: not along one line\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. A small scaled diagram draws: orange \"2.4\" north, \"0.70\" east from its tip, thick resultant, right-angle mark (\"Using a vector diagram\" underlined). Rows: on \"second\" \"R = √(2.4² + 0.70²) = √(5.76 + 0.49) = √6.25 = 2.5 m s⁻¹\"; on \"north\" the arc at the tail and \"θ = tan⁻¹(0.70 / 2.4) = 16° east of north\" (\"magnitude and direction\" underlined). Boxed answer \"2.5 m s⁻¹, 16° east of north\". On \"up\" a chip \"2.4 + 0.70 = 3.1 m s⁻¹\" fades in and is crossed (caption \"perpendicular: not along one line\"). Hold about 1 second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback 1 (brief): retain 1 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-12: QuestionCard, worded as printed: \"A tennis ball rolls east at 3.0 m s⁻¹ towards a wall. It rebounds and rolls west at 2.0 m s⁻¹. Using a vector diagram, determine the change in velocity of the ball.\" The tennis ball plate (b6a-tennis-ball-v1.png, about 90 px) sits beside a coded wall at the right of the card; no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "QuestionCard, worded as printed: \"A tennis ball rolls east at 3.0 m s⁻¹ towards a wall. It rebounds and rolls west at 2.0 m s⁻¹. Using a vector diagram, determine the change in velocity of the ball.\" The tennis ball plate (b6a-tennis-ball-v1.png, about 90 px) sits beside a coded wall at the right of the card; no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "QuestionCard, worded as printed: \"A tennis ball rolls east at 3.0 m s⁻¹ towards a wall. It rebounds and rolls west at 2.0 m s⁻¹. Using a vector diagram, determine the change in velocity of the ball.\" The tennis ball plate (b6a-tennis-ball-v1.png, about 90 px) sits beside a coded wall at the right of the card; no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown",
+        "QuestionCard"
+      ],
+      "holdPurpose": "10 second countdown with the entire task visible, followed by 0 seconds of source scene padding."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-13: card shrinks to the top. Row \"Δv = v_final − v_initial = v_final + (−v_initial)\" (\"change in velocity\" underlined). Arrows on one line: orange \"2.0 west\"; on \"west\" (first) the \"3.0 east\" arrow flips into \"3.0 west\" and slides to join tip to tail; on \"west\" (second) the thick rose resultant \"Δv = 5.0 m s⁻¹ west\" (row \"2.0 + 3.0 = 5.0 m s⁻¹ west\"). Boxed answer \"5.0 m s⁻¹ west\". On \"around\" a chip \"3.0 − 2.0 = 1.0 m s⁻¹\" fades in and is crossed (caption \"the direction reversed\"). Hold about 1 second.",
+      "teachingReason": "The change is final minus initial.",
+      "narrationCue": "west / west / around",
+      "motionPurpose": "card shrinks to the top. Row \"Δv = v_final − v_initial = v_final + (−v_initial)\" (\"change in velocity\" underlined). Arrows on one line: orange \"2.0 west\"; on \"west\" (first) the \"3.0 east\" arrow flips into \"3.0 west\" and slides to join tip to tail; on \"west\" (second) the thick rose resultant \"Δv = 5.0 m s⁻¹ west\" (row \"2.0 + 3.0 = 5.0 m s⁻¹ west\"). Boxed answer \"5.0 m s⁻¹ west\". On \"around\" a chip \"3.0 − 2.0 = 1.0 m s⁻¹\" fades in and is crossed (caption \"the direction reversed\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. Row \"Δv = v_final − v_initial = v_final + (−v_initial)\" (\"change in velocity\" underlined). Arrows on one line: orange \"2.0 west\"; on \"west\" (first) the \"3.0 east\" arrow flips into \"3.0 west\" and slides to join tip to tail; on \"west\" (second) the thick rose resultant \"Δv = 5.0 m s⁻¹ west\" (row \"2.0 + 3.0 = 5.0 m s⁻¹ west\"). Boxed answer \"5.0 m s⁻¹ west\". On \"around\" a chip \"3.0 − 2.0 = 1.0 m s⁻¹\" fades in and is crossed (caption \"the direction reversed\"). Hold about 1 second.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "feedback 2 (brief): retain 1 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-14: board clears. The memory line from scene 9 returns small at the top. On the second sentence the scene 5 triangle returns: the 3.0 and 4.0 arrows fade, leaving the thick resultant alone. On \"parts\" a new single arrow at an angle draws on light x and y axes, with two dashed perpendicular outlines along the axes and \"?\" on each, and a chip \"Next: resolving vectors into components\". Hold about 2 seconds.",
+      "teachingReason": "So, a vector diagram joins arrows tip to tail, and flips one to subtract.",
+      "narrationCue": "parts",
+      "motionPurpose": "board clears. The memory line from scene 9 returns small at the top. On the second sentence the scene 5 triangle returns: the 3.0 and 4.0 arrows fade, leaving the thick resultant alone. On \"parts\" a new single arrow at an angle draws on light x and y axes, with two dashed perpendicular outlines along the axes and \"?\" on each, and a chip \"Next: resolving vectors into components\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. The memory line from scene 9 returns small at the top. On the second sentence the scene 5 triangle returns: the 3.0 and 4.0 arrows fade, leaving the thick resultant alone. On \"parts\" a new single arrow at an angle draws on light x and y axes, with two dashed perpendicular outlines along the axes and \"?\" on each, and a chip \"Next: resolving vectors into components\". Hold about 2 seconds.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "handoff: retain 2 seconds of the stated settle/padding after speech; animate the source changes during speech."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/claude-pm/lessons/phys-y11-fa1-v02.md#scene-15: Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionRole": "hold",
+      "onScreenChange": "Display the existing key notes and memory aid from the design; keep them visible for copying and restore the specified handoff after notes.",
+      "motionTools": [
+        "Plate",
+        "HandText",
+        "DrawPath",
+        "on-cue highlights from source"
+      ],
+      "holdPurpose": "Keep the written notes available for copying, with 55 seconds after the standard spoken lead-in."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex: exact source and prior independent science review with repair check",
+    "evidence": {
+      "path": "work/brief165-bio-physics/phys-y11-fa1-v02-recording-source-check.json",
+      "sha256": "722bcae521fb813c3cb9096d9baf647933fc8c106a45e3e740c778b983012a53"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Existing independent learning review and Codex repair confirmation",
+    "evidence": {
+      "path": "work/brief165-bio-physics/phys-y11-fa1-v02-recording-source-check.json",
+      "sha256": "722bcae521fb813c3cb9096d9baf647933fc8c106a45e3e740c778b983012a53"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Recording-stage source pass only. No built motion, exact voiced preview, human listening or public release approval."
+}

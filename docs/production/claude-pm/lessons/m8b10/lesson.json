@@ -1,0 +1,144 @@
+{
+  "title": "What do incidence, prevalence and mortality measure? Cases, population and time window, rates per 100,000, crude against age-standardised, and representing the data",
+  "subtitle": "More Australians die of cancer each year than thirty years ago, yet after allowing for the changing age mix, the cancer death rate has fallen. How can both be true, and what do incidence, prevalence and mortality each measure?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 13,
+  "lessonIntent": "matching incidence (new cases in a set time), prevalence (everyone living with the disease at one moment) and mortality (deaths from the disease in a set time) to the questions they answer; defining a case, the population at risk and the time window for each; calculating incidence and mortality as counts ÷ population × 100,000 per year, and prevalence as existing cases ÷ population, as a percentage and per 100,000; explaining that mortality divides by the whole population, not by the people with the disease; explaining why a long-lasting disease has prevalence far above incidence, why a rapidly fatal one does not, and why better treatment can raise prevalence while incidence holds steady; explaining why counts and crude rates mislead when populations differ in size or age, and what an age-standardised rate fixes; converting values to one denominator before comparing; choosing a line graph for change over time and a bar graph for comparing groups, with units on the axis; applying this to two unseen data items.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "More Australians die of cancer each year now than thirty years ago. Yet after allowing for the changing age mix, the cancer death rate is lower. Both statements are true. To see how, you need to know exactly what each disease number measures. So today's question: what do incidence, prevalence and mortality measure?"
+      }
+    },
+    {
+      "id": "three-measures",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You've met two of these with dengue. Incidence counts new cases in a set time, and prevalence counts everyone who has the disease at one moment. Incidence is the tap, prevalence is the tank. Now add a third. Mortality counts deaths from the disease in a set time, mort as in mortuary. So it's how many new cases, how many people living with it, and how many deaths."
+      }
+    },
+    {
+      "id": "case-population-time",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Every rate needs three things defined. First, what counts as a case, for example a diagnosis confirmed by a doctor. Second, the population at risk: the people who could get the disease. For cervical cancer, that's people with a cervix. Third, the time window: usually a year for incidence and mortality, but a single date for prevalence, because it's a snapshot. Leave any of these vague, and two rates that look alike may not be comparable."
+      }
+    },
+    {
+      "id": "worked-incidence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's work all three for type 2 diabetes in one city of eighty thousand people. In 2025, a hundred and sixty people were newly diagnosed. For incidence, new cases go on top and the population goes underneath, then we multiply by a hundred thousand. A hundred and sixty divided by eighty thousand is zero point zero zero two. Times a hundred thousand, that's two hundred per hundred thousand per year. Sense check: that's two in every thousand people, which fits."
+      }
+    },
+    {
+      "id": "worked-prevalence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now prevalence. On the thirtieth of June 2025, four thousand four hundred people in the city were living with type 2 diabetes. These are all existing cases, counted on one day, so there's no \"per year\". Four thousand four hundred over eighty thousand is zero point zero five five. As a percentage, that's five point five per cent. Per hundred thousand, it's five thousand five hundred. Use whichever form the question asks for, but don't mix them."
+      }
+    },
+    {
+      "id": "worked-mortality",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Third, mortality. In 2025, sixteen people in the city died from type 2 diabetes. Sixteen over eighty thousand, times a hundred thousand, is twenty per hundred thousand per year. Notice the whole population goes underneath, not just the people who had the disease. That's what makes it a mortality rate. The share of patients who die is a different measure."
+      }
+    },
+    {
+      "id": "why-they-differ",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Side by side: two hundred new cases, five thousand five hundred living with it, and twenty deaths, all per hundred thousand. Prevalence is far bigger because type 2 diabetes usually lasts for life, so the tank keeps filling and little drains out. Pancreatic cancer is the opposite. Few people get it, but most die within a few years, so prevalence stays low. And better treatment that keeps people alive longer raises prevalence, even when incidence doesn't change."
+      }
+    },
+    {
+      "id": "crude-age-standardised",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the hook. If a town doubles in size and its cancer cases double too, the rate hasn't changed. But a rate fixes size, not age, and most cancers are far more common in older people. Australia's population is bigger and older than thirty years ago. So the count of cancer deaths has risen, and the unadjusted, or crude, rate has barely moved. An age-standardised rate works out what the rate would be if both years had the same age mix. On that measure, deaths have fallen."
+      }
+    },
+    {
+      "id": "collect-represent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To collect these data, use a trusted source such as the Australian Institute of Health and Welfare, and check each figure's denominator. If one value's a percentage and another's per hundred thousand, convert before you compare. Then graph them: a line graph for change over time, a bar graph for comparing groups, with the units on the axis, and the source and year in the caption. And remember, a rise in incidence can come from better screening, not only more disease."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two exam questions. First. In 2024, Region X, with one point two million people, recorded five hundred and forty new lung cancer cases. Region Y, with three hundred thousand people, recorded one hundred and eighty. Calculate the incidence in each region per hundred thousand. Region Y's population is much older. Explain why these rates can't show which region's people are at greater risk. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Region X is five hundred and forty over one point two million, times a hundred thousand: forty-five per hundred thousand per year. Region Y is sixty. But lung cancer is much more common in older people, so Y's older population could explain its higher crude rate. To compare risk fairly, you'd need age-standardised rates. The classic mistake is saying X is worse because it had more cases."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. The table shows incidence, mortality and prevalence for a non-infectious disease in Australia in 2005, 2015 and 2025, each per hundred thousand people. Describe the trend in each measure. Then suggest an explanation for the rise in prevalence that fits the table. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Incidence stayed steady at about sixty new cases per hundred thousand. Mortality halved, from thirty to fifteen. Prevalence rose from three hundred to five hundred and forty. The pattern is consistent with people living longer with the disease, so existing cases build up while new-case rates stay similar. The classic mistake is saying more people are getting the disease."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any disease data, ask three things. Is it new cases, people living with it, or deaths? Over what population and time? And is it a count, a crude rate or an age-standardised rate? Put everything on one denominator before you compare. Next, practice with new data: calculating rates and judging what they show."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

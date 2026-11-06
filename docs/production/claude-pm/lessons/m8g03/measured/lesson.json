@@ -1,0 +1,6814 @@
+{
+  "title": "Feedback Loop Practice: Loops, Glucose Graphs, Positive Feedback",
+  "subtitle": "When an exam gives you an unfamiliar system, a glucose graph or a list of processes, how do you build the loop, read it off the data, and tell negative feedback from positive?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 6.5,
+  "lessonIntent": "constructing the blood pressure loop from a description (stimulus: blood pressure falls; receptors: baroreceptors in the aorta and carotid arteries; control centre: cardiovascular centre in the medulla oblongata; effectors: heart and arterioles; response: a faster, stronger heartbeat and narrower arterioles raise blood pressure back towards normal; a minus on the return arrow) and predicting that damaged baroreceptor nerves leave pressure low after standing; reading a glucose and insulin graph after a meal (glucose peaks first at 30 minutes, insulin at 45 minutes because the rise in glucose is the stimulus for insulin release; from 45 to 120 minutes insulin makes liver, muscle and fat cells take up glucose and store glycogen, glucose falls to about its fasting value and insulin falls with it; after the dip below fasting at 150 minutes, alpha cells release glucagon and the liver releases glucose from glycogen); identifying ethylene ripening as positive feedback and explaining that glucagon raising a fallen glucose level is negative feedback because the response opposes the change.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 704,
+      "voiceover": {
+        "text": "Feedback loop questions turn up in HSC Biology again and again, in different disguises. Most of them come down to three moves. Build the loop in order, read it off a graph, and tell negative feedback from positive. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/hook.10fa69abc413.mp3",
+        "startFrame": 0,
+        "endFrame": 644
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Feedback",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 800,
+          "endMs": 1280,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " turn",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 1600,
+          "endMs": 1680,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1720,
+          "endMs": 1760,
+          "timestampMs": 1740,
+          "confidence": null
+        },
+        {
+          "text": " HSC",
+          "startMs": 1920,
+          "endMs": 2400,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " Biology",
+          "startMs": 2480,
+          "endMs": 3040,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " again",
+          "startMs": 3320,
+          "endMs": 3600,
+          "timestampMs": 3460,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " again,",
+          "startMs": 3840,
+          "endMs": 4560,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 4840,
+          "endMs": 4960,
+          "timestampMs": 4900,
+          "confidence": null
+        },
+        {
+          "text": " disguises.",
+          "startMs": 5040,
+          "endMs": 6400,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " Most",
+          "startMs": 6520,
+          "endMs": 6640,
+          "timestampMs": 6580,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 6920,
+          "endMs": 7040,
+          "timestampMs": 6980,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 7160,
+          "endMs": 7280,
+          "timestampMs": 7220,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 7400,
+          "endMs": 7520,
+          "timestampMs": 7460,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 7760,
+          "endMs": 7920,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " moves.",
+          "startMs": 8080,
+          "endMs": 9040,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " Build",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9360,
+          "endMs": 9400,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 9440,
+          "endMs": 9680,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " order,",
+          "startMs": 9840,
+          "endMs": 10640,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 10720,
+          "endMs": 10880,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 11080,
+          "endMs": 11120,
+          "timestampMs": 11100,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11200,
+          "endMs": 11240,
+          "timestampMs": 11220,
+          "confidence": null
+        },
+        {
+          "text": " graph,",
+          "startMs": 11280,
+          "endMs": 12080,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 12640,
+          "endMs": 13040,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " feedback",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " positive.",
+          "startMs": 13920,
+          "endMs": 15120,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 15360,
+          "endMs": 15520,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 15680,
+          "endMs": 15840,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " HSC-style",
+          "startMs": 16000,
+          "endMs": 16960,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " questions.",
+          "startMs": 17040,
+          "endMs": 18080,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 18160,
+          "endMs": 18560,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18720,
+          "endMs": 18880,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " try",
+          "startMs": 19000,
+          "endMs": 19120,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 19200,
+          "endMs": 19360,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 19440,
+          "endMs": 20000,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 20080,
+          "endMs": 20160,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 20200,
+          "endMs": 20320,
+          "timestampMs": 20260,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 20560,
+          "endMs": 20720,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 20760,
+          "endMs": 20800,
+          "timestampMs": 20780,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 20880,
+          "endMs": 21440,
+          "timestampMs": 21160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 1412,
+      "voiceover": {
+        "text": "Question one. When a person stands up quickly, blood pools in the legs, and blood pressure in the upper body falls. Baroreceptors, stretch receptors in the walls of the aorta and carotid arteries, detect the fall. The cardiovascular centre in the medulla oblongata sends nerve impulses to the heart, which beats faster and more strongly, and to arterioles, which narrow. Construct a negative feedback loop for this response. Then predict what would happen on standing if the nerves from the baroreceptors were damaged. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-question.ad0aa1132033.mp3",
+        "startFrame": 0,
+        "endFrame": 1076
+      },
+      "responseHold": {
+        "startFrame": 1088,
+        "endFrame": 1388
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 560,
+          "endMs": 880,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1600,
+          "endMs": 1680,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " person",
+          "startMs": 1840,
+          "endMs": 2000,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " stands",
+          "startMs": 2080,
+          "endMs": 2400,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " quickly,",
+          "startMs": 2720,
+          "endMs": 3440,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " pools",
+          "startMs": 3920,
+          "endMs": 4320,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4360,
+          "endMs": 4400,
+          "timestampMs": 4380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " legs,",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 5360,
+          "endMs": 5600,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 5680,
+          "endMs": 6000,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 6040,
+          "endMs": 6080,
+          "timestampMs": 6060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " upper",
+          "startMs": 6320,
+          "endMs": 6480,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 6560,
+          "endMs": 6880,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " falls.",
+          "startMs": 6960,
+          "endMs": 8080,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " Baroreceptors,",
+          "startMs": 8160,
+          "endMs": 9520,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " stretch",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " receptors",
+          "startMs": 9920,
+          "endMs": 10400,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 10440,
+          "endMs": 10480,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " walls",
+          "startMs": 10760,
+          "endMs": 10880,
+          "timestampMs": 10820,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11080,
+          "endMs": 11120,
+          "timestampMs": 11100,
+          "confidence": null
+        },
+        {
+          "text": " aorta",
+          "startMs": 11200,
+          "endMs": 11680,
+          "timestampMs": 11440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11720,
+          "endMs": 11760,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " carotid",
+          "startMs": 11920,
+          "endMs": 12320,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " arteries,",
+          "startMs": 12480,
+          "endMs": 13120,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " detect",
+          "startMs": 13360,
+          "endMs": 13600,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13680,
+          "endMs": 13760,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " fall.",
+          "startMs": 13920,
+          "endMs": 14720,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " cardiovascular",
+          "startMs": 15000,
+          "endMs": 15760,
+          "timestampMs": 15380,
+          "confidence": null
+        },
+        {
+          "text": " centre",
+          "startMs": 15840,
+          "endMs": 16160,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16239.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " medulla",
+          "startMs": 16520,
+          "endMs": 16800,
+          "timestampMs": 16660,
+          "confidence": null
+        },
+        {
+          "text": " oblongata",
+          "startMs": 16880,
+          "endMs": 17920,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " sends",
+          "startMs": 18000,
+          "endMs": 18240,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " nerve",
+          "startMs": 18320,
+          "endMs": 18560,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " impulses",
+          "startMs": 18640,
+          "endMs": 19200,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19240,
+          "endMs": 19280,
+          "timestampMs": 19260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " heart,",
+          "startMs": 19640,
+          "endMs": 20080,
+          "timestampMs": 19860,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " beats",
+          "startMs": 20320,
+          "endMs": 20560,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " faster",
+          "startMs": 20640,
+          "endMs": 21120,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21200,
+          "endMs": 21280,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " strongly,",
+          "startMs": 21520,
+          "endMs": 22400,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22480,
+          "endMs": 22640,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22720,
+          "endMs": 22800,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " arterioles,",
+          "startMs": 23000,
+          "endMs": 23760,
+          "timestampMs": 23380,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 23880,
+          "endMs": 24000,
+          "timestampMs": 23940,
+          "confidence": null
+        },
+        {
+          "text": " narrow.",
+          "startMs": 24080,
+          "endMs": 24840,
+          "timestampMs": 24460,
+          "confidence": null
+        },
+        {
+          "text": " Construct",
+          "startMs": 25200,
+          "endMs": 25680,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25840,
+          "endMs": 25920,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 26000,
+          "endMs": 26400,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " feedback",
+          "startMs": 26480,
+          "endMs": 26880,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 26960,
+          "endMs": 27200,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 27240,
+          "endMs": 27280,
+          "timestampMs": 27260,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 27360,
+          "endMs": 27520,
+          "timestampMs": 27440,
+          "confidence": null
+        },
+        {
+          "text": " response.",
+          "startMs": 27840,
+          "endMs": 28720,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 28800,
+          "endMs": 29040,
+          "timestampMs": 28920,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 29360,
+          "endMs": 29760,
+          "timestampMs": 29560,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 29840,
+          "endMs": 29920,
+          "timestampMs": 29880,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 30000,
+          "endMs": 30080,
+          "timestampMs": 30040,
+          "confidence": null
+        },
+        {
+          "text": " happen",
+          "startMs": 30120,
+          "endMs": 30400,
+          "timestampMs": 30260,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 30440,
+          "endMs": 30480,
+          "timestampMs": 30460,
+          "confidence": null
+        },
+        {
+          "text": " standing",
+          "startMs": 30640,
+          "endMs": 31200,
+          "timestampMs": 30920,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 31280,
+          "endMs": 31440,
+          "timestampMs": 31360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31480,
+          "endMs": 31520,
+          "timestampMs": 31500,
+          "confidence": null
+        },
+        {
+          "text": " nerves",
+          "startMs": 31600,
+          "endMs": 31920,
+          "timestampMs": 31760,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 32000,
+          "endMs": 32080,
+          "timestampMs": 32040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 32119.999999999996,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32139.999999999996,
+          "confidence": null
+        },
+        {
+          "text": " baroreceptors",
+          "startMs": 32240.000000000004,
+          "endMs": 33120,
+          "timestampMs": 32680,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 33240,
+          "endMs": 33360,
+          "timestampMs": 33300,
+          "confidence": null
+        },
+        {
+          "text": " damaged.",
+          "startMs": 33480,
+          "endMs": 34480,
+          "timestampMs": 33980,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 34640,
+          "endMs": 34800,
+          "timestampMs": 34720,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 34920,
+          "endMs": 35040,
+          "timestampMs": 34980,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 35120,
+          "endMs": 35200,
+          "timestampMs": 35160,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 35280,
+          "endMs": 35840,
+          "timestampMs": 35560,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1388,
+        "responseHoldStart": 1088,
+        "pausePrompt": 1088
+      }
+    },
+    {
+      "id": "q1-build",
+      "type": "concept",
+      "durationInFrames": 1215,
+      "voiceover": {
+        "text": "Build it in order, and take each part from the stem. The stimulus is the change in the variable: blood pressure falls. The receptors are the baroreceptors. The control centre is the cardiovascular centre in the medulla. The effectors are the heart and the arterioles. Now the response, which is where answers often fall short. A faster, stronger heartbeat pumps more blood each minute, and narrower arterioles hold the pressure up, so blood pressure rises back towards normal. Then close the loop with an arrow back to the stimulus, marked minus, because the response opposes the fall.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-build.6c975ea79ca4.mp3",
+        "startFrame": 0,
+        "endFrame": 1155
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Build",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " order,",
+          "startMs": 720,
+          "endMs": 1360,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 1640,
+          "endMs": 1760,
+          "timestampMs": 1700,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 1840,
+          "endMs": 2080,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 2160,
+          "endMs": 2480,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2680,
+          "endMs": 2720,
+          "timestampMs": 2700,
+          "confidence": null
+        },
+        {
+          "text": " stem.",
+          "startMs": 2800,
+          "endMs": 3280,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " stimulus",
+          "startMs": 3920,
+          "endMs": 4560,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4800,
+          "endMs": 4880,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 4960,
+          "endMs": 5280,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 5360,
+          "endMs": 5440,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5480,
+          "endMs": 5520,
+          "timestampMs": 5500,
+          "confidence": null
+        },
+        {
+          "text": " variable:",
+          "startMs": 5600,
+          "endMs": 6480,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 6600,
+          "endMs": 6720,
+          "timestampMs": 6660,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " falls.",
+          "startMs": 7280,
+          "endMs": 7840,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8240,
+          "endMs": 8280,
+          "timestampMs": 8260,
+          "confidence": null
+        },
+        {
+          "text": " receptors",
+          "startMs": 8320,
+          "endMs": 9040,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 9080,
+          "endMs": 9120,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " baroreceptors.",
+          "startMs": 9360,
+          "endMs": 10480,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " control",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " centre",
+          "startMs": 11520,
+          "endMs": 11920,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12000,
+          "endMs": 12080,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " cardiovascular",
+          "startMs": 12320,
+          "endMs": 13200,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " centre",
+          "startMs": 13280,
+          "endMs": 13600,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13680,
+          "endMs": 13720,
+          "timestampMs": 13700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13760,
+          "endMs": 13800,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " medulla.",
+          "startMs": 13840,
+          "endMs": 14520,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " effectors",
+          "startMs": 15000,
+          "endMs": 15520,
+          "timestampMs": 15260,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 15560,
+          "endMs": 15600,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " heart",
+          "startMs": 15840,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16480,
+          "endMs": 16520,
+          "timestampMs": 16500,
+          "confidence": null
+        },
+        {
+          "text": " arterioles.",
+          "startMs": 16560,
+          "endMs": 17440,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18320,
+          "endMs": 18360,
+          "timestampMs": 18340,
+          "confidence": null
+        },
+        {
+          "text": " response,",
+          "startMs": 18400,
+          "endMs": 19280,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " answers",
+          "startMs": 19840,
+          "endMs": 20320,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " often",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " fall",
+          "startMs": 20720,
+          "endMs": 20880,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " short.",
+          "startMs": 21040,
+          "endMs": 21640,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 21920,
+          "endMs": 22000,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " faster,",
+          "startMs": 22080,
+          "endMs": 22720,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " stronger",
+          "startMs": 22920,
+          "endMs": 23200,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " heartbeat",
+          "startMs": 23280,
+          "endMs": 23760,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " pumps",
+          "startMs": 23840,
+          "endMs": 24160,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 24240,
+          "endMs": 24400,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 24480,
+          "endMs": 24720,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 24880,
+          "endMs": 25040,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " minute,",
+          "startMs": 25120,
+          "endMs": 25760,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25840,
+          "endMs": 25920,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " narrower",
+          "startMs": 26000,
+          "endMs": 26480,
+          "timestampMs": 26240,
+          "confidence": null
+        },
+        {
+          "text": " arterioles",
+          "startMs": 26680,
+          "endMs": 27280,
+          "timestampMs": 26980,
+          "confidence": null
+        },
+        {
+          "text": " hold",
+          "startMs": 27360,
+          "endMs": 27520,
+          "timestampMs": 27440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 27840,
+          "endMs": 28000,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " up,",
+          "startMs": 28080,
+          "endMs": 28640,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 28720,
+          "endMs": 28800,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 28880,
+          "endMs": 29120,
+          "timestampMs": 29000,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 29280,
+          "endMs": 29440,
+          "timestampMs": 29360,
+          "confidence": null
+        },
+        {
+          "text": " rises",
+          "startMs": 29600,
+          "endMs": 30080,
+          "timestampMs": 29840,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 30200,
+          "endMs": 30320,
+          "timestampMs": 30260,
+          "confidence": null
+        },
+        {
+          "text": " towards",
+          "startMs": 30427,
+          "endMs": 30640,
+          "timestampMs": 30533.5,
+          "confidence": null
+        },
+        {
+          "text": " normal.",
+          "startMs": 30720,
+          "endMs": 31680,
+          "timestampMs": 31200,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 31840,
+          "endMs": 32000,
+          "timestampMs": 31920,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 32159.999999999996,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32319.999999999996,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 32560.000000000004,
+          "endMs": 32600,
+          "timestampMs": 32580,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 32640,
+          "endMs": 32880,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 32920,
+          "endMs": 32960,
+          "timestampMs": 32940,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 33040,
+          "endMs": 33200,
+          "timestampMs": 33120,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 33280,
+          "endMs": 33600,
+          "timestampMs": 33440,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 33720,
+          "endMs": 33840,
+          "timestampMs": 33780,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 33880,
+          "endMs": 33920,
+          "timestampMs": 33900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 34000,
+          "endMs": 34040,
+          "timestampMs": 34020,
+          "confidence": null
+        },
+        {
+          "text": " stimulus,",
+          "startMs": 34080,
+          "endMs": 34800,
+          "timestampMs": 34440,
+          "confidence": null
+        },
+        {
+          "text": " marked",
+          "startMs": 34880,
+          "endMs": 35200,
+          "timestampMs": 35040,
+          "confidence": null
+        },
+        {
+          "text": " minus,",
+          "startMs": 35360,
+          "endMs": 36080,
+          "timestampMs": 35720,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 36160,
+          "endMs": 36320,
+          "timestampMs": 36240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 36400,
+          "endMs": 36480,
+          "timestampMs": 36440,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 36800,
+          "endMs": 37120,
+          "timestampMs": 36960,
+          "confidence": null
+        },
+        {
+          "text": " opposes",
+          "startMs": 37200,
+          "endMs": 37760,
+          "timestampMs": 37480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37840,
+          "endMs": 37920,
+          "timestampMs": 37880,
+          "confidence": null
+        },
+        {
+          "text": " fall.",
+          "startMs": 38080,
+          "endMs": 38480,
+          "timestampMs": 38280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-predict",
+      "type": "concept",
+      "durationInFrames": 680,
+      "voiceover": {
+        "text": "Now the prediction. If the baroreceptor nerves are damaged, the medulla gets no signal that pressure has fallen. So the heart and arterioles don't respond, and blood pressure stays low after standing. Less blood reaches the brain, so the person may feel dizzy or faint. Break any link, and the loop can't correct.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-predict.a2b8f3321f2d.mp3",
+        "startFrame": 0,
+        "endFrame": 620
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " prediction.",
+          "startMs": 480,
+          "endMs": 1320,
+          "timestampMs": 900,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1800,
+          "endMs": 1840,
+          "timestampMs": 1820,
+          "confidence": null
+        },
+        {
+          "text": " baroreceptor",
+          "startMs": 1920,
+          "endMs": 2640,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " nerves",
+          "startMs": 2720,
+          "endMs": 3040,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " damaged,",
+          "startMs": 3320,
+          "endMs": 4000,
+          "timestampMs": 3660,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4040,
+          "endMs": 4080,
+          "timestampMs": 4060,
+          "confidence": null
+        },
+        {
+          "text": " medulla",
+          "startMs": 4160,
+          "endMs": 4560,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 4680,
+          "endMs": 4800,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 4960,
+          "endMs": 5200,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " signal",
+          "startMs": 5280,
+          "endMs": 5680,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 5920,
+          "endMs": 6240,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " fallen.",
+          "startMs": 6480,
+          "endMs": 6960,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " heart",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8039.999999999999,
+          "endMs": 8080,
+          "timestampMs": 8060,
+          "confidence": null
+        },
+        {
+          "text": " arterioles",
+          "startMs": 8160,
+          "endMs": 8960,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 9040,
+          "endMs": 9200,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " respond,",
+          "startMs": 9480,
+          "endMs": 10080,
+          "timestampMs": 9780,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 10560,
+          "endMs": 10880,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 10960,
+          "endMs": 11280,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " low",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 11760,
+          "endMs": 12000,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " standing.",
+          "startMs": 12080,
+          "endMs": 12720,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " Less",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 13880,
+          "endMs": 14160,
+          "timestampMs": 14020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14240,
+          "endMs": 14280,
+          "timestampMs": 14260,
+          "confidence": null
+        },
+        {
+          "text": " brain,",
+          "startMs": 14320,
+          "endMs": 14960,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15160,
+          "endMs": 15200,
+          "timestampMs": 15180,
+          "confidence": null
+        },
+        {
+          "text": " person",
+          "startMs": 15280,
+          "endMs": 15520,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 15600,
+          "endMs": 15760,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " feel",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " dizzy",
+          "startMs": 16160,
+          "endMs": 16480,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " faint.",
+          "startMs": 16720,
+          "endMs": 17200,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " Break",
+          "startMs": 17760,
+          "endMs": 18080,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 18160,
+          "endMs": 18400,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " link,",
+          "startMs": 18480,
+          "endMs": 18960,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19160,
+          "endMs": 19200,
+          "timestampMs": 19180,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 19280,
+          "endMs": 19520,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 19680,
+          "endMs": 19920,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " correct.",
+          "startMs": 20000,
+          "endMs": 20640,
+          "timestampMs": 20320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 461,
+      "voiceover": {
+        "text": "The classic mistake is ending at the effector, with \"response: the heart beats faster\". That's what the effector does. The response is the change in the regulated variable: blood pressure rising back.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q1-mistake.2e89868331c8.mp3",
+        "startFrame": 0,
+        "endFrame": 401
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " ending",
+          "startMs": 1440,
+          "endMs": 1760,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " effector,",
+          "startMs": 2080,
+          "endMs": 2960,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 3080,
+          "endMs": 3200,
+          "timestampMs": 3140,
+          "confidence": null
+        },
+        {
+          "text": " \"response:",
+          "startMs": 3440,
+          "endMs": 4480,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4520,
+          "endMs": 4560,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " heart",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " beats",
+          "startMs": 5040,
+          "endMs": 5280,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " faster\".",
+          "startMs": 5360,
+          "endMs": 6400,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6840,
+          "endMs": 6880,
+          "timestampMs": 6860,
+          "confidence": null
+        },
+        {
+          "text": " effector",
+          "startMs": 7000,
+          "endMs": 7360,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": " does.",
+          "startMs": 7440,
+          "endMs": 8080,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 8760,
+          "endMs": 9120,
+          "timestampMs": 8940,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 9520,
+          "endMs": 9840,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9880,
+          "endMs": 9920,
+          "timestampMs": 9900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10000,
+          "endMs": 10040,
+          "timestampMs": 10020,
+          "confidence": null
+        },
+        {
+          "text": " regulated",
+          "startMs": 10080,
+          "endMs": 10560,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " variable:",
+          "startMs": 10640,
+          "endMs": 11600,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 11720,
+          "endMs": 11840,
+          "timestampMs": 11780,
+          "confidence": null
+        },
+        {
+          "text": " pressure",
+          "startMs": 11920,
+          "endMs": 12240,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " rising",
+          "startMs": 12400,
+          "endMs": 12800,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 12880,
+          "endMs": 13360,
+          "timestampMs": 13120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 1208,
+      "voiceover": {
+        "text": "Question two. A healthy adult ate a meal at time zero, after an overnight fast. The graph shows their blood glucose and blood insulin over the next three hours. Identify when each one peaked, and account for the difference. Explain the change in blood glucose from forty-five to one hundred and twenty minutes, with reference to negative feedback. Then explain the rise in glucose after one hundred and fifty minutes. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-question.5e680a2e2994.mp3",
+        "startFrame": 0,
+        "endFrame": 872
+      },
+      "responseHold": {
+        "startFrame": 884,
+        "endFrame": 1184
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1520,
+          "endMs": 1600,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " healthy",
+          "startMs": 1680,
+          "endMs": 2000,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " adult",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " ate",
+          "startMs": 2560,
+          "endMs": 2720,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2800,
+          "endMs": 2840,
+          "timestampMs": 2820,
+          "confidence": null
+        },
+        {
+          "text": " meal",
+          "startMs": 2880,
+          "endMs": 3120,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 3200,
+          "endMs": 3360,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3520,
+          "endMs": 3680,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " zero,",
+          "startMs": 3840,
+          "endMs": 4480,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 4640,
+          "endMs": 4800,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " overnight",
+          "startMs": 5040,
+          "endMs": 5440,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " fast.",
+          "startMs": 5520,
+          "endMs": 6320,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 7240,
+          "endMs": 7360,
+          "timestampMs": 7300,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 7600,
+          "endMs": 7760,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 7840,
+          "endMs": 8400,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 8960,
+          "endMs": 9520,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " next",
+          "startMs": 10040,
+          "endMs": 10160,
+          "timestampMs": 10100,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " hours.",
+          "startMs": 10760,
+          "endMs": 11600,
+          "timestampMs": 11180,
+          "confidence": null
+        },
+        {
+          "text": " Identify",
+          "startMs": 11800,
+          "endMs": 12240,
+          "timestampMs": 12020,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 12880,
+          "endMs": 13120,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " peaked,",
+          "startMs": 13200,
+          "endMs": 13787,
+          "timestampMs": 13493.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13813,
+          "endMs": 13840,
+          "timestampMs": 13826.5,
+          "confidence": null
+        },
+        {
+          "text": " account",
+          "startMs": 13920,
+          "endMs": 14320,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 14360,
+          "endMs": 14400,
+          "timestampMs": 14380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " difference.",
+          "startMs": 14800,
+          "endMs": 15760,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 15840,
+          "endMs": 16320,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 16640,
+          "endMs": 16800,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 17080,
+          "endMs": 17200,
+          "timestampMs": 17140,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 17280,
+          "endMs": 17760,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 17840,
+          "endMs": 18080,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " forty-five",
+          "startMs": 18200,
+          "endMs": 18800,
+          "timestampMs": 18500,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18880,
+          "endMs": 18960,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 19200,
+          "endMs": 19440,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " twenty",
+          "startMs": 19720,
+          "endMs": 19840,
+          "timestampMs": 19780,
+          "confidence": null
+        },
+        {
+          "text": " minutes,",
+          "startMs": 20000,
+          "endMs": 20640,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " reference",
+          "startMs": 20880,
+          "endMs": 21280,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " feedback.",
+          "startMs": 21920,
+          "endMs": 23040,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 23320,
+          "endMs": 23600,
+          "timestampMs": 23460,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 23680,
+          "endMs": 24080,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24160,
+          "endMs": 24240,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " rise",
+          "startMs": 24360,
+          "endMs": 24480,
+          "timestampMs": 24420,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 24560,
+          "endMs": 24640,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 24720,
+          "endMs": 25200,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 25280,
+          "endMs": 25520,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 25600,
+          "endMs": 25760,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 25800,
+          "endMs": 26080,
+          "timestampMs": 25940,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26160,
+          "endMs": 26240,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 26280,
+          "endMs": 26560,
+          "timestampMs": 26420,
+          "confidence": null
+        },
+        {
+          "text": " minutes.",
+          "startMs": 26760,
+          "endMs": 27600,
+          "timestampMs": 27180,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 27760,
+          "endMs": 27920,
+          "timestampMs": 27840,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 28000,
+          "endMs": 28240,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 28320,
+          "endMs": 28400,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 28640,
+          "endMs": 29040,
+          "timestampMs": 28840,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1184,
+        "responseHoldStart": 884,
+        "pausePrompt": 884
+      }
+    },
+    {
+      "id": "q2-peaks",
+      "type": "concept",
+      "durationInFrames": 740,
+      "voiceover": {
+        "text": "Start with the peaks, and read them off the axes. Glucose peaks at thirty minutes, at seven point six millimoles per litre. Insulin peaks later, at forty-five minutes. That order is the loop at work. The rise in glucose is the stimulus. Beta cells in the pancreas detect it and release insulin, so insulin climbs after glucose does.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-peaks.3421baea93aa.mp3",
+        "startFrame": 0,
+        "endFrame": 680
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Start",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 520,
+          "endMs": 560,
+          "timestampMs": 540,
+          "confidence": null
+        },
+        {
+          "text": " peaks,",
+          "startMs": 720,
+          "endMs": 1360,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2120,
+          "endMs": 2160,
+          "timestampMs": 2140,
+          "confidence": null
+        },
+        {
+          "text": " axes.",
+          "startMs": 2240,
+          "endMs": 3080,
+          "timestampMs": 2660,
+          "confidence": null
+        },
+        {
+          "text": " Glucose",
+          "startMs": 3360,
+          "endMs": 3840,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " peaks",
+          "startMs": 3920,
+          "endMs": 4160,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 4280,
+          "endMs": 4400,
+          "timestampMs": 4340,
+          "confidence": null
+        },
+        {
+          "text": " thirty",
+          "startMs": 4480,
+          "endMs": 4640,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " minutes,",
+          "startMs": 4720,
+          "endMs": 5280,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 5360,
+          "endMs": 5440,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 6160,
+          "endMs": 6320,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " millimoles",
+          "startMs": 6480,
+          "endMs": 6880,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 7120,
+          "endMs": 8080,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " Insulin",
+          "startMs": 8160,
+          "endMs": 8560,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " peaks",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " later,",
+          "startMs": 8960,
+          "endMs": 9440,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " forty-five",
+          "startMs": 9680,
+          "endMs": 10160,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " minutes.",
+          "startMs": 10240,
+          "endMs": 11280,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 11400,
+          "endMs": 11520,
+          "timestampMs": 11460,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 11600,
+          "endMs": 12000,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12200,
+          "endMs": 12240,
+          "timestampMs": 12220,
+          "confidence": null
+        },
+        {
+          "text": " loop",
+          "startMs": 12400,
+          "endMs": 12640,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 12680,
+          "endMs": 12720,
+          "timestampMs": 12700,
+          "confidence": null
+        },
+        {
+          "text": " work.",
+          "startMs": 12880,
+          "endMs": 13680,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 13720,
+          "endMs": 13760,
+          "timestampMs": 13740,
+          "confidence": null
+        },
+        {
+          "text": " rise",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 14320,
+          "endMs": 14800,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14880,
+          "endMs": 14960,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15040,
+          "endMs": 15080,
+          "timestampMs": 15060,
+          "confidence": null
+        },
+        {
+          "text": " stimulus.",
+          "startMs": 15120,
+          "endMs": 16239.999999999998,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " Beta",
+          "startMs": 16320,
+          "endMs": 16560,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 16640,
+          "endMs": 16880,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16920,
+          "endMs": 16960,
+          "timestampMs": 16940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " pancreas",
+          "startMs": 17240,
+          "endMs": 17680,
+          "timestampMs": 17460,
+          "confidence": null
+        },
+        {
+          "text": " detect",
+          "startMs": 17760,
+          "endMs": 18160,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18280,
+          "endMs": 18400,
+          "timestampMs": 18340,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 18760,
+          "endMs": 18960,
+          "timestampMs": 18860,
+          "confidence": null
+        },
+        {
+          "text": " insulin,",
+          "startMs": 19040,
+          "endMs": 19920,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 20040,
+          "endMs": 20160,
+          "timestampMs": 20100,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 20280,
+          "endMs": 20640,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " climbs",
+          "startMs": 20720,
+          "endMs": 21200,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 21280,
+          "endMs": 21600,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 21680,
+          "endMs": 22080,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " does.",
+          "startMs": 22160,
+          "endMs": 22640,
+          "timestampMs": 22400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-explain",
+      "type": "concept",
+      "durationInFrames": 1421,
+      "voiceover": {
+        "text": "Now forty-five to one hundred and twenty minutes. Insulin is high, so liver, muscle and fat cells take up more glucose from the blood, and the liver and muscles store it as glycogen. Blood glucose falls back to about five. As it falls, the beta cells detect less of a rise and release less insulin, so insulin falls too. The response opposed the rise: negative feedback. After one hundred and fifty minutes, glucose has dipped just below its starting value. The graph doesn't show glucagon, so this part comes from what you know. Alpha cells detect the fall and release glucagon, and the liver breaks down glycogen and releases glucose, so blood glucose rises back.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-explain.e3b92ff826c5.mp3",
+        "startFrame": 0,
+        "endFrame": 1361
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " forty-five",
+          "startMs": 400,
+          "endMs": 1120,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1920,
+          "endMs": 2000,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " twenty",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " minutes.",
+          "startMs": 2400,
+          "endMs": 3160,
+          "timestampMs": 2780,
+          "confidence": null
+        },
+        {
+          "text": " Insulin",
+          "startMs": 3440,
+          "endMs": 3920,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " high,",
+          "startMs": 4160,
+          "endMs": 4800,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " liver,",
+          "startMs": 5120,
+          "endMs": 5680,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " muscle",
+          "startMs": 5800,
+          "endMs": 6000,
+          "timestampMs": 5900,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " fat",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 6640,
+          "endMs": 6960,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 7840,
+          "endMs": 8320,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8520,
+          "endMs": 8560,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " blood,",
+          "startMs": 8640,
+          "endMs": 9360,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9560,
+          "endMs": 9600,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " liver",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " muscles",
+          "startMs": 10200,
+          "endMs": 10560,
+          "timestampMs": 10380,
+          "confidence": null
+        },
+        {
+          "text": " store",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " glycogen.",
+          "startMs": 11360,
+          "endMs": 12000,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " Blood",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 12960,
+          "endMs": 13440,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " falls",
+          "startMs": 13520,
+          "endMs": 13760,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 13840,
+          "endMs": 14000,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " five.",
+          "startMs": 14640,
+          "endMs": 15440,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " As",
+          "startMs": 15760,
+          "endMs": 15920,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15960,
+          "endMs": 16000,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " falls,",
+          "startMs": 16160,
+          "endMs": 16800,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16840,
+          "endMs": 16880,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " beta",
+          "startMs": 16960,
+          "endMs": 17200,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 17280,
+          "endMs": 17600,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " detect",
+          "startMs": 17800,
+          "endMs": 18000,
+          "timestampMs": 17900,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 18320,
+          "endMs": 18400,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18440,
+          "endMs": 18480,
+          "timestampMs": 18460,
+          "confidence": null
+        },
+        {
+          "text": " rise",
+          "startMs": 18560,
+          "endMs": 18960,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 19200,
+          "endMs": 19600,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 19680,
+          "endMs": 19920,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " insulin,",
+          "startMs": 20000,
+          "endMs": 20880,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 20960,
+          "endMs": 21040,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 21120,
+          "endMs": 21520,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " falls",
+          "startMs": 21600,
+          "endMs": 21920,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 22000,
+          "endMs": 22320,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 22960,
+          "endMs": 23000,
+          "timestampMs": 22980,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 23040,
+          "endMs": 23600,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " opposed",
+          "startMs": 23680,
+          "endMs": 24240,
+          "timestampMs": 23960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24280,
+          "endMs": 24320,
+          "timestampMs": 24300,
+          "confidence": null
+        },
+        {
+          "text": " rise:",
+          "startMs": 24400,
+          "endMs": 25360,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 25440,
+          "endMs": 25760,
+          "timestampMs": 25600,
+          "confidence": null
+        },
+        {
+          "text": " feedback.",
+          "startMs": 25920,
+          "endMs": 26480,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 27200,
+          "endMs": 27440,
+          "timestampMs": 27320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27520,
+          "endMs": 27600,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28000,
+          "endMs": 28080,
+          "timestampMs": 28040,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 28160,
+          "endMs": 28400,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " minutes,",
+          "startMs": 28480,
+          "endMs": 29040,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 29120,
+          "endMs": 29600,
+          "timestampMs": 29360,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 29680,
+          "endMs": 29760,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " dipped",
+          "startMs": 29840,
+          "endMs": 30080,
+          "timestampMs": 29960,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 30240,
+          "endMs": 30400,
+          "timestampMs": 30320,
+          "confidence": null
+        },
+        {
+          "text": " below",
+          "startMs": 30480,
+          "endMs": 30720,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 30800,
+          "endMs": 30960,
+          "timestampMs": 30880,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 31160,
+          "endMs": 31360,
+          "timestampMs": 31260,
+          "confidence": null
+        },
+        {
+          "text": " value.",
+          "startMs": 31440,
+          "endMs": 31840,
+          "timestampMs": 31640,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 32400,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32440,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 32640,
+          "endMs": 32800,
+          "timestampMs": 32720,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 32880,
+          "endMs": 33120,
+          "timestampMs": 33000,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 33200,
+          "endMs": 33360,
+          "timestampMs": 33280,
+          "confidence": null
+        },
+        {
+          "text": " glucagon,",
+          "startMs": 33440,
+          "endMs": 34240,
+          "timestampMs": 33840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 34320,
+          "endMs": 34400,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 34520,
+          "endMs": 34640,
+          "timestampMs": 34580,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 34720,
+          "endMs": 34960,
+          "timestampMs": 34840,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 35080,
+          "endMs": 35200,
+          "timestampMs": 35140,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 35280,
+          "endMs": 35360,
+          "timestampMs": 35320,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 35440,
+          "endMs": 35520,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 35600,
+          "endMs": 35680,
+          "timestampMs": 35640,
+          "confidence": null
+        },
+        {
+          "text": " know.",
+          "startMs": 35760,
+          "endMs": 36080,
+          "timestampMs": 35920,
+          "confidence": null
+        },
+        {
+          "text": " Alpha",
+          "startMs": 36720,
+          "endMs": 37040,
+          "timestampMs": 36880,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 37120,
+          "endMs": 37360,
+          "timestampMs": 37240,
+          "confidence": null
+        },
+        {
+          "text": " detect",
+          "startMs": 37440,
+          "endMs": 37760,
+          "timestampMs": 37600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37840,
+          "endMs": 37920,
+          "timestampMs": 37880,
+          "confidence": null
+        },
+        {
+          "text": " fall",
+          "startMs": 38000,
+          "endMs": 38320,
+          "timestampMs": 38160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 38400,
+          "endMs": 38480,
+          "timestampMs": 38440,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 38680,
+          "endMs": 38880,
+          "timestampMs": 38780,
+          "confidence": null
+        },
+        {
+          "text": " glucagon,",
+          "startMs": 38960,
+          "endMs": 39840,
+          "timestampMs": 39400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 39880,
+          "endMs": 39920,
+          "timestampMs": 39900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 40000,
+          "endMs": 40080,
+          "timestampMs": 40040,
+          "confidence": null
+        },
+        {
+          "text": " liver",
+          "startMs": 40160,
+          "endMs": 40400,
+          "timestampMs": 40280,
+          "confidence": null
+        },
+        {
+          "text": " breaks",
+          "startMs": 40480,
+          "endMs": 40800,
+          "timestampMs": 40640,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 40920,
+          "endMs": 41040,
+          "timestampMs": 40980,
+          "confidence": null
+        },
+        {
+          "text": " glycogen",
+          "startMs": 41160,
+          "endMs": 41680,
+          "timestampMs": 41420,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 41720,
+          "endMs": 41760,
+          "timestampMs": 41740,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 41840,
+          "endMs": 42320,
+          "timestampMs": 42080,
+          "confidence": null
+        },
+        {
+          "text": " glucose,",
+          "startMs": 42400,
+          "endMs": 43280,
+          "timestampMs": 42840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 43360,
+          "endMs": 43440,
+          "timestampMs": 43400,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 43520,
+          "endMs": 43760,
+          "timestampMs": 43640,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 43840,
+          "endMs": 44320,
+          "timestampMs": 44080,
+          "confidence": null
+        },
+        {
+          "text": " rises",
+          "startMs": 44400,
+          "endMs": 44800,
+          "timestampMs": 44600,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 44880,
+          "endMs": 45360,
+          "timestampMs": 45120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 490,
+      "voiceover": {
+        "text": "The classic mistake is writing that insulin breaks down glucose. Insulin is the signal. The liver, muscle and fat cells are the effectors that take glucose in. Link each hormone to the cells it acts on.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q2-mistake.91ef19378aec.mp3",
+        "startFrame": 0,
+        "endFrame": 430
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 160,
+          "endMs": 560,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " writing",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 1760,
+          "endMs": 1920,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " insulin",
+          "startMs": 2000,
+          "endMs": 2480,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " breaks",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 3000,
+          "endMs": 3120,
+          "timestampMs": 3060,
+          "confidence": null
+        },
+        {
+          "text": " glucose.",
+          "startMs": 3200,
+          "endMs": 4200,
+          "timestampMs": 3700,
+          "confidence": null
+        },
+        {
+          "text": " Insulin",
+          "startMs": 4480,
+          "endMs": 5040,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 5120,
+          "endMs": 5280,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5320,
+          "endMs": 5360,
+          "timestampMs": 5340,
+          "confidence": null
+        },
+        {
+          "text": " signal.",
+          "startMs": 5520,
+          "endMs": 6240,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " liver,",
+          "startMs": 6640,
+          "endMs": 7200,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " muscle",
+          "startMs": 7280,
+          "endMs": 7680,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " fat",
+          "startMs": 7920,
+          "endMs": 8160,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 8240,
+          "endMs": 8560,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 8640,
+          "endMs": 8720,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8800,
+          "endMs": 8840,
+          "timestampMs": 8820,
+          "confidence": null
+        },
+        {
+          "text": " effectors",
+          "startMs": 8880,
+          "endMs": 9600,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 10080,
+          "endMs": 10560,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " in.",
+          "startMs": 10640,
+          "endMs": 11280,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " Link",
+          "startMs": 11600,
+          "endMs": 11920,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 12040,
+          "endMs": 12160,
+          "timestampMs": 12100,
+          "confidence": null
+        },
+        {
+          "text": " hormone",
+          "startMs": 12240,
+          "endMs": 12720,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12760,
+          "endMs": 12800,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12880,
+          "endMs": 12960,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 13440,
+          "endMs": 13520,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " acts",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " on.",
+          "startMs": 13920,
+          "endMs": 14320,
+          "timestampMs": 14120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 1676,
+      "voiceover": {
+        "text": "Question three. Three processes are described. In P, soil dries, root and leaf cells make more ABA, the stomata close, and water loss falls. In Q, during a long run, blood glucose falls, the pancreas releases glucagon, the liver releases glucose, and blood glucose rises back. In R, a ripening banana gives off a gas called ethylene, which makes it and nearby bananas ripen faster and give off more ethylene. Identify the process that shows positive feedback. Then explain why a student who calls Q positive feedback, because glucose increases, is wrong. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-question.587f2c9c3d9b.mp3",
+        "startFrame": 0,
+        "endFrame": 1340
+      },
+      "responseHold": {
+        "startFrame": 1352,
+        "endFrame": 1652
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 480,
+          "endMs": 960,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " Three",
+          "startMs": 1520,
+          "endMs": 1680,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " processes",
+          "startMs": 1840,
+          "endMs": 2400,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 2440,
+          "endMs": 2480,
+          "timestampMs": 2460,
+          "confidence": null
+        },
+        {
+          "text": " described.",
+          "startMs": 2600,
+          "endMs": 3200,
+          "timestampMs": 2900,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " P,",
+          "startMs": 3920,
+          "endMs": 4400,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " soil",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " dries,",
+          "startMs": 5200,
+          "endMs": 6080,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " root",
+          "startMs": 6160,
+          "endMs": 6400,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " leaf",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 6880,
+          "endMs": 7200,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 7600,
+          "endMs": 7840,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " ABA,",
+          "startMs": 8000,
+          "endMs": 9120,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9200,
+          "endMs": 9240,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " stomata",
+          "startMs": 9280,
+          "endMs": 9760,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " close,",
+          "startMs": 10040,
+          "endMs": 10640,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 10880,
+          "endMs": 11120,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " loss",
+          "startMs": 11200,
+          "endMs": 11440,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " falls.",
+          "startMs": 11520,
+          "endMs": 12400,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " Q,",
+          "startMs": 12960,
+          "endMs": 13840,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " during",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14200,
+          "endMs": 14240,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " long",
+          "startMs": 14320,
+          "endMs": 14560,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " run,",
+          "startMs": 14640,
+          "endMs": 15120,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 15240,
+          "endMs": 15360,
+          "timestampMs": 15300,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 15440,
+          "endMs": 15920,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " falls,",
+          "startMs": 16000,
+          "endMs": 16720,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " pancreas",
+          "startMs": 17000,
+          "endMs": 17440,
+          "timestampMs": 17220,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 17480,
+          "endMs": 17840,
+          "timestampMs": 17660,
+          "confidence": null
+        },
+        {
+          "text": " glucagon,",
+          "startMs": 17920,
+          "endMs": 18880,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18960,
+          "endMs": 19040,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " liver",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 19440,
+          "endMs": 19760,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " glucose,",
+          "startMs": 19840,
+          "endMs": 20640,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 20880,
+          "endMs": 21120,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 21200,
+          "endMs": 21680,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " rises",
+          "startMs": 21760,
+          "endMs": 22160,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 22240,
+          "endMs": 22640,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " R,",
+          "startMs": 23520,
+          "endMs": 24240,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " ripening",
+          "startMs": 24480,
+          "endMs": 24880,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " banana",
+          "startMs": 24960,
+          "endMs": 25360,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 25440,
+          "endMs": 25600,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 25680,
+          "endMs": 25760,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25840,
+          "endMs": 25880,
+          "timestampMs": 25860,
+          "confidence": null
+        },
+        {
+          "text": " gas",
+          "startMs": 25920,
+          "endMs": 26240,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 26320,
+          "endMs": 26480,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " ethylene,",
+          "startMs": 26640,
+          "endMs": 27440,
+          "timestampMs": 27040,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 27520,
+          "endMs": 27600,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 28000,
+          "endMs": 28240,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28400,
+          "endMs": 28560,
+          "timestampMs": 28480,
+          "confidence": null
+        },
+        {
+          "text": " nearby",
+          "startMs": 28640,
+          "endMs": 28960,
+          "timestampMs": 28800,
+          "confidence": null
+        },
+        {
+          "text": " bananas",
+          "startMs": 29040,
+          "endMs": 29520,
+          "timestampMs": 29280,
+          "confidence": null
+        },
+        {
+          "text": " ripen",
+          "startMs": 29600,
+          "endMs": 30000,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " faster",
+          "startMs": 30080,
+          "endMs": 30480,
+          "timestampMs": 30280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 30800,
+          "endMs": 30880,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 30960,
+          "endMs": 31120,
+          "timestampMs": 31040,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 31200,
+          "endMs": 31280,
+          "timestampMs": 31240,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 31440,
+          "endMs": 31600,
+          "timestampMs": 31520,
+          "confidence": null
+        },
+        {
+          "text": " ethylene.",
+          "startMs": 31680,
+          "endMs": 32320,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " Identify",
+          "startMs": 32800,
+          "endMs": 33360,
+          "timestampMs": 33080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33440,
+          "endMs": 33520,
+          "timestampMs": 33480,
+          "confidence": null
+        },
+        {
+          "text": " process",
+          "startMs": 33760,
+          "endMs": 34000,
+          "timestampMs": 33880,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 34080,
+          "endMs": 34160,
+          "timestampMs": 34120,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 34240,
+          "endMs": 34480,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " positive",
+          "startMs": 34640,
+          "endMs": 35120,
+          "timestampMs": 34880,
+          "confidence": null
+        },
+        {
+          "text": " feedback.",
+          "startMs": 35200,
+          "endMs": 35760,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 36320,
+          "endMs": 36560,
+          "timestampMs": 36440,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 36880,
+          "endMs": 37360,
+          "timestampMs": 37120,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 37440,
+          "endMs": 37520,
+          "timestampMs": 37480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 37560,
+          "endMs": 37600,
+          "timestampMs": 37580,
+          "confidence": null
+        },
+        {
+          "text": " student",
+          "startMs": 37680,
+          "endMs": 38080,
+          "timestampMs": 37880,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 38160,
+          "endMs": 38240,
+          "timestampMs": 38200,
+          "confidence": null
+        },
+        {
+          "text": " calls",
+          "startMs": 38400,
+          "endMs": 38560,
+          "timestampMs": 38480,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 38720,
+          "endMs": 39040,
+          "timestampMs": 38880,
+          "confidence": null
+        },
+        {
+          "text": " positive",
+          "startMs": 39200,
+          "endMs": 39600,
+          "timestampMs": 39400,
+          "confidence": null
+        },
+        {
+          "text": " feedback,",
+          "startMs": 39680,
+          "endMs": 40320,
+          "timestampMs": 40000,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 40440,
+          "endMs": 40560,
+          "timestampMs": 40500,
+          "confidence": null
+        },
+        {
+          "text": " glucose",
+          "startMs": 40640,
+          "endMs": 41040,
+          "timestampMs": 40840,
+          "confidence": null
+        },
+        {
+          "text": " increases,",
+          "startMs": 41120,
+          "endMs": 42080,
+          "timestampMs": 41600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 42160,
+          "endMs": 42240,
+          "timestampMs": 42200,
+          "confidence": null
+        },
+        {
+          "text": " wrong.",
+          "startMs": 42320,
+          "endMs": 42720,
+          "timestampMs": 42520,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 43280,
+          "endMs": 43600,
+          "timestampMs": 43440,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 43720,
+          "endMs": 43840,
+          "timestampMs": 43780,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 43920,
+          "endMs": 44000,
+          "timestampMs": 43960,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 44080,
+          "endMs": 44640,
+          "timestampMs": 44360,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1652,
+        "responseHoldStart": 1352,
+        "pausePrompt": 1352
+      }
+    },
+    {
+      "id": "q3-identify",
+      "type": "concept",
+      "durationInFrames": 920,
+      "voiceover": {
+        "text": "Test each process with one question: does the response oppose the change, or strengthen it? In P, water content was falling, and closing the stomata slows the loss. That opposes the change. In R, ethylene speeds ripening, ripening releases more ethylene, and that speeds ripening further. The response strengthens the change, so R is positive feedback. It keeps building until the fruit is ripe.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-identify.dd9c133340cc.mp3",
+        "startFrame": 0,
+        "endFrame": 860
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Test",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 320,
+          "endMs": 600,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " process",
+          "startMs": 640,
+          "endMs": 1280,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 1400,
+          "endMs": 1520,
+          "timestampMs": 1460,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " question:",
+          "startMs": 1920,
+          "endMs": 2880,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 3000,
+          "endMs": 3120,
+          "timestampMs": 3060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3160,
+          "endMs": 3200,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 3480,
+          "endMs": 3760,
+          "timestampMs": 3620,
+          "confidence": null
+        },
+        {
+          "text": " oppose",
+          "startMs": 3840,
+          "endMs": 4320,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4400,
+          "endMs": 4440,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " change,",
+          "startMs": 4480,
+          "endMs": 5200,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 5240,
+          "endMs": 5280,
+          "timestampMs": 5260,
+          "confidence": null
+        },
+        {
+          "text": " strengthen",
+          "startMs": 5360,
+          "endMs": 5840,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " it?",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " P,",
+          "startMs": 6880,
+          "endMs": 7680,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 7760,
+          "endMs": 8000,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " content",
+          "startMs": 8080,
+          "endMs": 8480,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " falling,",
+          "startMs": 8800,
+          "endMs": 9440,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " closing",
+          "startMs": 9680,
+          "endMs": 10000,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10080,
+          "endMs": 10120,
+          "timestampMs": 10100,
+          "confidence": null
+        },
+        {
+          "text": " stomata",
+          "startMs": 10160,
+          "endMs": 10720,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " slows",
+          "startMs": 10800,
+          "endMs": 11120,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11160,
+          "endMs": 11200,
+          "timestampMs": 11180,
+          "confidence": null
+        },
+        {
+          "text": " loss.",
+          "startMs": 11280,
+          "endMs": 11920,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 12160,
+          "endMs": 12400,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " opposes",
+          "startMs": 12480,
+          "endMs": 13120,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " change.",
+          "startMs": 13520,
+          "endMs": 14040,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 14320,
+          "endMs": 14560,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " R,",
+          "startMs": 14640,
+          "endMs": 15360,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " ethylene",
+          "startMs": 15440,
+          "endMs": 15920,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " speeds",
+          "startMs": 16000,
+          "endMs": 16440,
+          "timestampMs": 16220,
+          "confidence": null
+        },
+        {
+          "text": " ripening,",
+          "startMs": 16480,
+          "endMs": 17360,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " ripening",
+          "startMs": 17440,
+          "endMs": 17920,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 18000,
+          "endMs": 18400,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 18520,
+          "endMs": 18640,
+          "timestampMs": 18580,
+          "confidence": null
+        },
+        {
+          "text": " ethylene,",
+          "startMs": 18920,
+          "endMs": 19440,
+          "timestampMs": 19180,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 19680,
+          "endMs": 19920,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " speeds",
+          "startMs": 20000,
+          "endMs": 20320,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " ripening",
+          "startMs": 20400,
+          "endMs": 20800,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " further.",
+          "startMs": 20880,
+          "endMs": 21760,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 21800,
+          "endMs": 21840,
+          "timestampMs": 21820,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 22160,
+          "endMs": 22480,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " strengthens",
+          "startMs": 22560,
+          "endMs": 23200,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23280,
+          "endMs": 23360,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " change,",
+          "startMs": 23560,
+          "endMs": 24000,
+          "timestampMs": 23780,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 24080,
+          "endMs": 24240,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " R",
+          "startMs": 24320,
+          "endMs": 24640,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 24720,
+          "endMs": 24880,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " positive",
+          "startMs": 24960,
+          "endMs": 25360,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " feedback.",
+          "startMs": 25440,
+          "endMs": 26320,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 26560,
+          "endMs": 26800,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " building",
+          "startMs": 26880,
+          "endMs": 27280,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 27440,
+          "endMs": 27600,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27680,
+          "endMs": 27760,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " fruit",
+          "startMs": 27880,
+          "endMs": 28000,
+          "timestampMs": 27940,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 28040,
+          "endMs": 28080,
+          "timestampMs": 28060,
+          "confidence": null
+        },
+        {
+          "text": " ripe.",
+          "startMs": 28240,
+          "endMs": 28640,
+          "timestampMs": 28440,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-explain",
+      "type": "concept",
+      "durationInFrames": 752,
+      "voiceover": {
+        "text": "Now Q. The student has looked only at which way the variable moved, up, instead of comparing the response with the stimulus. The stimulus was a fall in blood glucose. The response, glucagon making the liver release glucose, raises it back. A response that undoes the change is negative feedback, whichever direction the variable moves.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-explain.d91e463f025f.mp3",
+        "startFrame": 0,
+        "endFrame": 692
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " Q.",
+          "startMs": 480,
+          "endMs": 960,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1440,
+          "endMs": 1480,
+          "timestampMs": 1460,
+          "confidence": null
+        },
+        {
+          "text": " student",
+          "startMs": 1520,
+          "endMs": 1920,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " looked",
+          "startMs": 2160,
+          "endMs": 2480,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 2560,
+          "endMs": 2800,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 3040,
+          "endMs": 3200,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 3280,
+          "endMs": 3440,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3480,
+          "endMs": 3520,
+          "timestampMs": 3500,
+          "confidence": null
+        },
+        {
+          "text": " variable",
+          "startMs": 3600,
+          "endMs": 4000,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " moved,",
+          "startMs": 4160,
+          "endMs": 4960,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " up,",
+          "startMs": 5120,
+          "endMs": 5600,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " instead",
+          "startMs": 5680,
+          "endMs": 6000,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6040,
+          "endMs": 6080,
+          "timestampMs": 6060,
+          "confidence": null
+        },
+        {
+          "text": " comparing",
+          "startMs": 6160,
+          "endMs": 6640,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6680,
+          "endMs": 6720,
+          "timestampMs": 6700,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7560,
+          "endMs": 7600,
+          "timestampMs": 7580,
+          "confidence": null
+        },
+        {
+          "text": " stimulus.",
+          "startMs": 7680,
+          "endMs": 8640,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " stimulus",
+          "startMs": 9160,
+          "endMs": 9600,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " fall",
+          "startMs": 10080,
+          "endMs": 10400,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 10440,
+          "endMs": 10480,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " glucose.",
+          "startMs": 10800,
+          "endMs": 11680,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11920,
+          "endMs": 12000,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " response,",
+          "startMs": 12280,
+          "endMs": 12960,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " glucagon",
+          "startMs": 13040,
+          "endMs": 13600,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " making",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14000,
+          "endMs": 14040,
+          "timestampMs": 14020,
+          "confidence": null
+        },
+        {
+          "text": " liver",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 14400,
+          "endMs": 14800,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " glucose,",
+          "startMs": 14880,
+          "endMs": 15600,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " raises",
+          "startMs": 15800,
+          "endMs": 16000,
+          "timestampMs": 15900,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 16239.999999999998,
+          "endMs": 16640,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 17280,
+          "endMs": 17320,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 17360,
+          "endMs": 17840,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17960,
+          "endMs": 18080,
+          "timestampMs": 18020,
+          "confidence": null
+        },
+        {
+          "text": " undoes",
+          "startMs": 18160,
+          "endMs": 18560,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 18800,
+          "endMs": 19200,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 19600,
+          "endMs": 20000,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " feedback,",
+          "startMs": 20080,
+          "endMs": 20880,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " whichever",
+          "startMs": 20920,
+          "endMs": 21280,
+          "timestampMs": 21100,
+          "confidence": null
+        },
+        {
+          "text": " direction",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21800,
+          "endMs": 21840,
+          "timestampMs": 21820,
+          "confidence": null
+        },
+        {
+          "text": " variable",
+          "startMs": 21920,
+          "endMs": 22320,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " moves.",
+          "startMs": 22400,
+          "endMs": 23040,
+          "timestampMs": 22720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 425,
+      "voiceover": {
+        "text": "So the classic mistake is reading positive as \"goes up\" and negative as \"goes down\". Negative means the response opposes the change. Positive means it adds to it.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/q3-mistake.0312f7d3d20e.mp3",
+        "startFrame": 0,
+        "endFrame": 365
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 320,
+          "endMs": 720,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 800,
+          "endMs": 1280,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " reading",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " positive",
+          "startMs": 2000,
+          "endMs": 2560,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " \"goes",
+          "startMs": 3120,
+          "endMs": 3440,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " up\"",
+          "startMs": 3600,
+          "endMs": 4160,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " negative",
+          "startMs": 4480,
+          "endMs": 5040,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " \"goes",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " down\".",
+          "startMs": 5840,
+          "endMs": 6960,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " Negative",
+          "startMs": 7040,
+          "endMs": 7440,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 7560,
+          "endMs": 7680,
+          "timestampMs": 7620,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7760,
+          "endMs": 7800,
+          "timestampMs": 7780,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 7840,
+          "endMs": 8320,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " opposes",
+          "startMs": 8400,
+          "endMs": 9040,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " change.",
+          "startMs": 9280,
+          "endMs": 10000,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " Positive",
+          "startMs": 10240,
+          "endMs": 10720,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 10880,
+          "endMs": 11040,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " adds",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 11880,
+          "endMs": 12160,
+          "timestampMs": 12020,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 884,
+      "voiceover": {
+        "text": "So here's how to start each type. To build a loop, take the five parts in order from the stem, and make the response a change in the variable. To read a graph, find the stimulus first, then the response that follows it. To spot positive feedback, compare the response with the original change. Opposes is negative, adds to it is positive. Next, you'll investigate how plants lose water, in a practical.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/decision-board.8fba7c7134d0.mp3",
+        "startFrame": 0,
+        "endFrame": 824
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " here's",
+          "startMs": 240,
+          "endMs": 480,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 800,
+          "endMs": 1120,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " type.",
+          "startMs": 1440,
+          "endMs": 1920,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " build",
+          "startMs": 2560,
+          "endMs": 2720,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " loop,",
+          "startMs": 2960,
+          "endMs": 3600,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 3720,
+          "endMs": 3840,
+          "timestampMs": 3780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3880,
+          "endMs": 3920,
+          "timestampMs": 3900,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " parts",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 4960,
+          "endMs": 5200,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5280,
+          "endMs": 5360,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5400,
+          "endMs": 5440,
+          "timestampMs": 5420,
+          "confidence": null
+        },
+        {
+          "text": " stem,",
+          "startMs": 5600,
+          "endMs": 6240,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6680,
+          "endMs": 6720,
+          "timestampMs": 6700,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 7000,
+          "endMs": 7280,
+          "timestampMs": 7140,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 7600,
+          "endMs": 8000,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8039.999999999999,
+          "endMs": 8080,
+          "timestampMs": 8060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " variable.",
+          "startMs": 8240,
+          "endMs": 8800,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 9520,
+          "endMs": 9680,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " graph,",
+          "startMs": 9840,
+          "endMs": 10640,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 10720,
+          "endMs": 10960,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11000,
+          "endMs": 11040,
+          "timestampMs": 11020,
+          "confidence": null
+        },
+        {
+          "text": " stimulus",
+          "startMs": 11120,
+          "endMs": 11600,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " first,",
+          "startMs": 11680,
+          "endMs": 12480,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 12560,
+          "endMs": 12720,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12760,
+          "endMs": 12800,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 13080,
+          "endMs": 13360,
+          "timestampMs": 13220,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " follows",
+          "startMs": 13600,
+          "endMs": 13920,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " spot",
+          "startMs": 14880,
+          "endMs": 15040,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " positive",
+          "startMs": 15120,
+          "endMs": 15520,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " feedback,",
+          "startMs": 15600,
+          "endMs": 16400,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 16600,
+          "endMs": 16800,
+          "timestampMs": 16700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16840,
+          "endMs": 16880,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 16960,
+          "endMs": 17440,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17680,
+          "endMs": 17760,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " original",
+          "startMs": 17840,
+          "endMs": 18240,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " change.",
+          "startMs": 18320,
+          "endMs": 19080,
+          "timestampMs": 18700,
+          "confidence": null
+        },
+        {
+          "text": " Opposes",
+          "startMs": 19280,
+          "endMs": 19920,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20000,
+          "endMs": 20080,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " negative,",
+          "startMs": 20240,
+          "endMs": 21040,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " adds",
+          "startMs": 21120,
+          "endMs": 21360,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " positive.",
+          "startMs": 22000,
+          "endMs": 22640,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 23360,
+          "endMs": 23920,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " you'll",
+          "startMs": 23960,
+          "endMs": 24080,
+          "timestampMs": 24020,
+          "confidence": null
+        },
+        {
+          "text": " investigate",
+          "startMs": 24280,
+          "endMs": 24720,
+          "timestampMs": 24500,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 25040,
+          "endMs": 25360,
+          "timestampMs": 25200,
+          "confidence": null
+        },
+        {
+          "text": " lose",
+          "startMs": 25520,
+          "endMs": 25760,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " water,",
+          "startMs": 25840,
+          "endMs": 26480,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 26520,
+          "endMs": 26560,
+          "timestampMs": 26540,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26640,
+          "endMs": 26680,
+          "timestampMs": 26660,
+          "confidence": null
+        },
+        {
+          "text": " practical.",
+          "startMs": 26720,
+          "endMs": 27440,
+          "timestampMs": 27080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M8-G03-claude-2026-10-31-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

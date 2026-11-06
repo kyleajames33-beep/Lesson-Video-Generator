@@ -1,0 +1,385 @@
+{
+  "brief": 178,
+  "checked": "2026-11-05",
+  "status": "awaiting-order-clarification",
+  "instruction": "Run after brief 177.",
+  "prerequisiteEvidence": [
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v01-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v01-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v02-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v02-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v03-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v03-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v04-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v04-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v05-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v05-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v06-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v06-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v07-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v07-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v08-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v08-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v09-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v09-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v10-learning-review.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/checks/c-y11-m1-v10-science-check.md",
+      "exists": false
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief177-manifest.json",
+      "exists": false
+    }
+  ],
+  "designs": [
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-ws-v01.md",
+      "sha256": "d18c64f4358b2991553a979fd46353d14659c96ff4b51c8c8214875a64c17cc1",
+      "assetReferences": [
+        {
+          "path": "public/assets/biology/m5x-clipboard-sheet-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m5-g02b-open-crucible-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-cuso4-crucible-black-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-blue-lit-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-blue-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-patchy-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-top-pan-balance-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-ws-v02.md",
+      "sha256": "80e1baa03a20bf35a16e26b361b3a8c6da99451bc0e0f7e5ab86f570155c669e",
+      "assetReferences": [
+        {
+          "path": "public/assets/biology/m5x-clipboard-sheet-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m5-g02b-open-crucible-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m5x-waste-bottle-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m8-desiccator-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-crucible-empty-lid-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-crucible-tongs-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-black-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-blue-lit-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-blue-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-lid-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-lid-white-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-heatproof-mat-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-top-pan-balance-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-ws-v03.md",
+      "sha256": "981f599a695f4cf9b7caf91184f639a28a780ea4200c09d9dc855cba2170e662",
+      "assetReferences": [
+        {
+          "path": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m5x-waste-bottle-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m8-desiccator-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-check-mass-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-crucible-tongs-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-lid-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-cuso4-crucible-lid-white-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-heatproof-mat-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-top-pan-balance-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v11.md",
+      "sha256": "8f44ab196291fda276dc553994b91eddd47e60e5fafc7b7ef954c03f75fc04f7",
+      "assetReferences": []
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v12.md",
+      "sha256": "5757ac5dbe7d8bb07559642bcbed85747810507756e7ecc8e8fd46ea9baf353d",
+      "assetReferences": [
+        {
+          "path": "public/assets/chemistry/c1-sealed-flask-iodine-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-gas-jar-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-aluminium-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-magnesium-ribbon-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-red-phosphorus-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-silicon-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-sodium-oil-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sample-sulfur-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v13.md",
+      "sha256": "fe813360d94c322eafa8732e1aec9b9d63662c9623c091670c4d37dc0b9e8389",
+      "assetReferences": []
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v14.md",
+      "sha256": "eebb5facaa59adaeff2f33b4e3d3bf7116c68c73cb7cfda33bd412b72d76ba00",
+      "assetReferences": [
+        {
+          "path": "y11c-trough-water-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v15.md",
+      "sha256": "44f0d0344c5f6b98af7f0edb1044fc74635ab97936807f14e1173c3c52d95bbd",
+      "assetReferences": [
+        {
+          "path": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m6-clip-phenolphthalein-pink-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/chemistry/m8-flame-k-lilac-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-alkali-oil-jar-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-safety-screen-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sodium-cut-fresh-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-sodium-cut-tarnished-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-trough-k-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-trough-li-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-trough-na-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-trough-water-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v16.md",
+      "sha256": "d87e5f29d02f7918f24f541639eff2196c1975569591e05fa8ee2c5047e66db3",
+      "assetReferences": [
+        {
+          "path": "y11c-flame-li-crimson-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-hand-spectroscope-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-trough-k-v1.png",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "design": "docs/production/claude-pm/lessons/chem-y11-m1-v17.md",
+      "sha256": "1992810ad0fe084325ee6128002490e30c6bbed5b28fad4b5696ce2528d24425",
+      "assetReferences": [
+        {
+          "path": "public/assets/chemistry/g1-tree-v1.png",
+          "exists": true
+        },
+        {
+          "path": "public/assets/physics/phys-y11-gamma-source-v1.png",
+          "exists": true
+        },
+        {
+          "path": "y11c-lead-shielded-vial-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-smoke-alarm-v1.png",
+          "exists": false
+        },
+        {
+          "path": "y11c-uranium-ore-v1.png",
+          "exists": false
+        }
+      ]
+    }
+  ],
+  "scope": "Input and path inventory only. No learning, science, visual or plate approval."
+}

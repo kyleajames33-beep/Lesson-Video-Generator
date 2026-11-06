@@ -1,0 +1,891 @@
+1
+00:00:00,261 --> 00:00:02,248
+Here are two curves on the same axes,
+
+2
+00:00:02,830 --> 00:00:04,878
+y equals e to the x, and y
+
+3
+00:00:04,999 --> 00:00:05,922
+equals two to the x.
+
+4
+00:00:06,504 --> 00:00:08,239
+Both cross the y axis at a height
+
+5
+00:00:08,260 --> 00:00:08,400
+of one.
+
+6
+00:00:09,487 --> 00:00:10,931
+E to the x leaves that point with
+
+7
+00:00:10,992 --> 00:00:13,077
+a slope of exactly one, because it's its
+
+8
+00:00:13,178 --> 00:00:13,759
+own derivative.
+
+9
+00:00:14,465 --> 00:00:16,119
+But two to the x is flatter there.
+
+10
+00:00:16,603 --> 00:00:18,151
+So the derivative of two to the x
+
+11
+00:00:18,253 --> 00:00:19,660
+can't just be two to the x.
+
+12
+00:00:20,428 --> 00:00:20,981
+Then what is it?
+
+13
+00:00:21,769 --> 00:00:22,693
+Here's the strange part.
+
+14
+00:00:23,197 --> 00:00:25,045
+The answer contains a logarithm.
+
+15
+00:00:25,749 --> 00:00:27,153
+Why would a log turn up when you
+
+16
+00:00:27,195 --> 00:00:28,559
+differentiate an exponential?
+
+17
+00:00:29,297 --> 00:00:31,414
+Last video gave us a measuring stick.
+
+18
+00:00:31,899 --> 00:00:33,572
+Divide the gradient by the height.
+
+19
+00:00:34,399 --> 00:00:36,405
+For e to the x, that ratio is
+
+20
+00:00:36,567 --> 00:00:36,987
+always one.
+
+21
+00:00:37,973 --> 00:00:39,701
+Squash the curve to e to the two
+
+22
+00:00:39,862 --> 00:00:41,992
+x, and the ratio is always two.
+
+23
+00:00:43,036 --> 00:00:45,701
+Whenever the power is some number times x,
+
+24
+00:00:46,143 --> 00:00:48,487
+the gradient is that number times the height.
+
+25
+00:00:49,091 --> 00:00:51,045
+So the ratio tells you the number in
+
+26
+00:00:51,086 --> 00:00:51,549
+the power.
+
+27
+00:00:52,375 --> 00:00:54,246
+Let's measure two to the x that way.
+
+28
+00:00:55,636 --> 00:00:58,071
+Start at x equals zero, where the height
+
+29
+00:00:58,193 --> 00:00:58,574
+is one.
+
+30
+00:00:59,297 --> 00:01:01,800
+Slide a second point in towards it, and
+
+31
+00:01:01,821 --> 00:01:03,422
+the secant's slope settles:
+
+32
+00:01:04,064 --> 00:01:06,246
+point eight three, point seven two,
+
+33
+00:01:06,768 --> 00:01:07,869
+point six nine six.
+
+34
+00:01:08,672 --> 00:01:10,998
+The tangent's slope is about point six nine
+
+35
+00:01:11,080 --> 00:01:11,299
+three.
+
+36
+00:01:12,188 --> 00:01:12,959
+Now move along.
+
+37
+00:01:13,564 --> 00:01:16,048
+At x equals one, the height is two,
+
+38
+00:01:16,570 --> 00:01:18,553
+and the gradient is about one point three
+
+39
+00:01:18,614 --> 00:01:18,894
+nine.
+
+40
+00:01:19,677 --> 00:01:21,865
+At x equals two, the height is four,
+
+41
+00:01:22,228 --> 00:01:24,175
+and the gradient is about two point seven
+
+42
+00:01:24,236 --> 00:01:24,496
+seven.
+
+43
+00:01:25,220 --> 00:01:27,607
+The gradient is always the same fraction of
+
+44
+00:01:27,649 --> 00:01:28,029
+the height.
+
+45
+00:01:28,593 --> 00:01:31,048
+The ratio stays at point six nine three.
+
+46
+00:01:31,673 --> 00:01:33,683
+That's the pattern we saw for e to
+
+47
+00:01:33,704 --> 00:01:34,970
+a number times x.
+
+48
+00:01:35,728 --> 00:01:36,894
+Try three to the x.
+
+49
+00:01:37,618 --> 00:01:39,822
+Now the ratio settles at about one point
+
+50
+00:01:39,883 --> 00:01:42,689
+zero nine nine, the same at every point.
+
+51
+00:01:43,513 --> 00:01:46,010
+So each base has its own fixed ratio.
+
+52
+00:01:46,694 --> 00:01:49,181
+Two gives about point six nine, three gives
+
+53
+00:01:49,222 --> 00:01:50,204
+about one point one.
+
+54
+00:01:51,127 --> 00:01:53,471
+Somewhere between two and three, there must be
+
+55
+00:01:53,512 --> 00:01:55,736
+a base with a ratio of exactly one.
+
+56
+00:01:56,680 --> 00:01:58,610
+Slide the base from two up to three,
+
+57
+00:01:59,033 --> 00:02:00,259
+and watch the ratio climb.
+
+58
+00:02:00,963 --> 00:02:03,130
+At two point seven one eight, it reads
+
+59
+00:02:03,452 --> 00:02:03,592
+one,
+
+60
+00:02:04,134 --> 00:02:06,040
+and the curve lands right on top of
+
+61
+00:02:06,061 --> 00:02:06,863
+e to the x.
+
+62
+00:02:07,488 --> 00:02:08,780
+That base is e.
+
+63
+00:02:09,811 --> 00:02:10,881
+So what are these numbers?
+
+64
+00:02:11,609 --> 00:02:13,537
+Plot each ratio against its base.
+
+65
+00:02:14,081 --> 00:02:15,848
+Two gives point six nine three.
+
+66
+00:02:16,553 --> 00:02:17,285
+E gives one.
+
+67
+00:02:17,813 --> 00:02:20,583
+Three gives one point zero nine nine, and
+
+68
+00:02:20,705 --> 00:02:22,732
+four gives one point three eight six.
+
+69
+00:02:23,456 --> 00:02:25,179
+These points sit on a curve you met
+
+70
+00:02:25,240 --> 00:02:27,526
+in Year 11, the natural log curve.
+
+71
+00:02:28,231 --> 00:02:29,164
+Check it on a calculator.
+
+72
+00:02:29,510 --> 00:02:31,765
+The natural log of two is point six
+
+73
+00:02:31,806 --> 00:02:32,308
+nine three.
+
+74
+00:02:32,893 --> 00:02:34,719
+So the gradient of a to the x
+
+75
+00:02:35,102 --> 00:02:37,511
+is always the natural log of a, times
+
+76
+00:02:37,552 --> 00:02:37,912
+the height.
+
+77
+00:02:38,516 --> 00:02:40,424
+But why would a logarithm be the answer?
+
+78
+00:02:41,088 --> 00:02:42,432
+The key is to write two as a
+
+79
+00:02:42,494 --> 00:02:42,995
+power of e.
+
+80
+00:02:44,019 --> 00:02:45,683
+The natural log of two is the power
+
+81
+00:02:45,704 --> 00:02:47,308
+you raise e to, to get two.
+
+82
+00:02:47,870 --> 00:02:50,417
+So two is approximately e to the point
+
+83
+00:02:50,459 --> 00:02:51,140
+six nine three.
+
+84
+00:02:52,004 --> 00:02:54,573
+Exactly, two to the x is e raised
+
+85
+00:02:54,614 --> 00:02:56,560
+to the power x times the natural log
+
+86
+00:02:56,581 --> 00:02:56,922
+of two.
+
+87
+00:02:57,625 --> 00:02:59,209
+So two to the x is just e
+
+88
+00:02:59,551 --> 00:03:01,214
+to the x, stretched sideways.
+
+89
+00:03:02,198 --> 00:03:04,103
+Watch this tangent triangle on e to the
+
+90
+00:03:04,224 --> 00:03:05,326
+x, at height two.
+
+91
+00:03:06,170 --> 00:03:08,074
+Stretch it sideways by a factor of one
+
+92
+00:03:08,115 --> 00:03:10,440
+point four four, and the run grows from
+
+93
+00:03:10,702 --> 00:03:12,867
+one to one point four four, while the
+
+94
+00:03:12,948 --> 00:03:14,150
+rise stays two.
+
+95
+00:03:14,893 --> 00:03:17,597
+So at every height, the slope is multiplied
+
+96
+00:03:17,638 --> 00:03:19,019
+by point six nine three,
+
+97
+00:03:19,621 --> 00:03:21,724
+and the gradient becomes point six nine three
+
+98
+00:03:21,845 --> 00:03:22,565
+times the height.
+
+99
+00:03:23,542 --> 00:03:25,897
+Now let's prove it for any positive base
+
+100
+00:03:26,118 --> 00:03:26,219
+a.
+
+101
+00:03:26,862 --> 00:03:28,828
+The natural log of a is the power
+
+102
+00:03:28,868 --> 00:03:32,258
+that turns e into a, so a equals
+
+103
+00:03:32,479 --> 00:03:33,803
+e to the natural log of a.
+
+104
+00:03:34,545 --> 00:03:36,614
+So a to the x is e raised
+
+105
+00:03:36,654 --> 00:03:37,477
+to a new power,
+
+106
+00:03:37,979 --> 00:03:39,545
+x times the natural log of a.
+
+107
+00:03:40,269 --> 00:03:41,032
+Call that power u.
+
+108
+00:03:42,138 --> 00:03:44,101
+The base is fixed, so the natural log
+
+109
+00:03:44,142 --> 00:03:45,303
+of a is just a number,
+
+110
+00:03:45,845 --> 00:03:47,667
+and d u by d x is the
+
+111
+00:03:47,708 --> 00:03:48,549
+natural log of a.
+
+112
+00:03:49,312 --> 00:03:51,498
+And d y by d u is e
+
+113
+00:03:51,540 --> 00:03:51,900
+to the u.
+
+114
+00:03:52,765 --> 00:03:54,112
+The chain rule multiplies them.
+
+115
+00:03:54,756 --> 00:03:56,624
+Put the power back, and that e to
+
+116
+00:03:56,644 --> 00:03:58,332
+the u is a to the x again.
+
+117
+00:03:59,215 --> 00:04:01,062
+So the derivative of a to the x
+
+118
+00:04:01,484 --> 00:04:03,752
+is the natural log of a, times a
+
+119
+00:04:03,773 --> 00:04:04,234
+to the x.
+
+120
+00:04:05,039 --> 00:04:06,284
+Try a equals e.
+
+121
+00:04:06,968 --> 00:04:08,992
+The natural log of e is one, so
+
+122
+00:04:09,033 --> 00:04:10,716
+you get e to the x back, the
+
+123
+00:04:10,757 --> 00:04:11,638
+rule you already know.
+
+124
+00:04:12,368 --> 00:04:14,316
+What if the base is less than two?
+
+125
+00:04:15,021 --> 00:04:15,706
+Slide it down.
+
+126
+00:04:16,350 --> 00:04:18,718
+At a equals one, the curve flattens into
+
+127
+00:04:18,759 --> 00:04:21,669
+the line y equals one, with gradient zero.
+
+128
+00:04:22,313 --> 00:04:24,118
+The rule agrees, because the natural log of
+
+129
+00:04:24,320 --> 00:04:25,142
+one is zero.
+
+130
+00:04:25,886 --> 00:04:27,432
+Keep going to a half.
+
+131
+00:04:28,137 --> 00:04:29,028
+Now the curve falls.
+
+132
+00:04:29,616 --> 00:04:31,419
+The natural log of a half is minus
+
+133
+00:04:31,460 --> 00:04:33,964
+point six nine three, so the gradient is
+
+134
+00:04:34,125 --> 00:04:36,208
+negative, while the height stays positive.
+
+135
+00:04:36,851 --> 00:04:38,654
+A half to the x is two to
+
+136
+00:04:38,675 --> 00:04:40,919
+the minus x, the mirror image of two
+
+137
+00:04:40,960 --> 00:04:41,420
+to the x.
+
+138
+00:04:42,184 --> 00:04:43,671
+And the base must be positive.
+
+139
+00:04:44,295 --> 00:04:46,578
+The natural log of a negative number doesn't
+
+140
+00:04:46,619 --> 00:04:46,919
+exist,
+
+141
+00:04:47,461 --> 00:04:49,404
+and a negative base can't be raised to
+
+142
+00:04:49,505 --> 00:04:50,025
+every power.
+
+143
+00:04:50,821 --> 00:04:53,167
+Find the gradient of y equals two to
+
+144
+00:04:53,207 --> 00:04:55,111
+the x at x equals three.
+
+145
+00:04:55,998 --> 00:04:57,131
+Here the base is two.
+
+146
+00:04:57,736 --> 00:05:00,048
+Copy two to the x, then multiply by
+
+147
+00:05:00,088 --> 00:05:01,214
+the natural log of two.
+
+148
+00:05:01,917 --> 00:05:04,142
+So d y by d x is the
+
+149
+00:05:04,202 --> 00:05:06,527
+natural log of two, times two to the
+
+150
+00:05:06,687 --> 00:05:06,807
+x.
+
+151
+00:05:07,830 --> 00:05:10,256
+At x equals three, two cubed is eight,
+
+152
+00:05:10,618 --> 00:05:12,823
+so the gradient is eight times the natural
+
+153
+00:05:12,864 --> 00:05:13,565
+log of two,
+
+154
+00:05:14,308 --> 00:05:15,731
+about five point five five.
+
+155
+00:05:16,774 --> 00:05:18,658
+On the graph, the height is eight, and
+
+156
+00:05:18,679 --> 00:05:21,344
+the gradient is point six nine three times
+
+157
+00:05:21,385 --> 00:05:21,565
+that.
+
+158
+00:05:22,348 --> 00:05:23,959
+If you wrote just two to the x,
+
+159
+00:05:24,242 --> 00:05:24,905
+you'd get eight.
+
+160
+00:05:25,629 --> 00:05:27,355
+That's the slope e to the x has
+
+161
+00:05:27,476 --> 00:05:28,017
+at that height.
+
+162
+00:05:28,784 --> 00:05:29,736
+Here's a way to remember it.
+
+163
+00:05:30,382 --> 00:05:31,745
+Except when the base is one, a
+
+164
+00:05:32,467 --> 00:05:34,111
+to the x is e to the x
+
+165
+00:05:34,292 --> 00:05:35,394
+scaled sideways.
+
+166
+00:05:36,077 --> 00:05:37,804
+The natural log of the base sets the
+
+167
+00:05:37,824 --> 00:05:38,126
+scale.
+
+168
+00:05:38,832 --> 00:05:40,166
+You can see that number on the graph.
+
+169
+00:05:40,750 --> 00:05:42,559
+Where a to the x crosses the y
+
+170
+00:05:42,659 --> 00:05:44,428
+axis, its height is one.
+
+171
+00:05:45,152 --> 00:05:47,244
+So its slope there is exactly the natural
+
+172
+00:05:47,304 --> 00:05:47,787
+log of a.
+
+173
+00:05:48,854 --> 00:05:50,758
+Two to the x leaves with slope point
+
+174
+00:05:50,819 --> 00:05:51,600
+six nine three,
+
+175
+00:05:52,363 --> 00:05:54,046
+and e to the x with slope one.
+
+176
+00:05:54,829 --> 00:05:57,375
+So copy the exponential, then multiply by the
+
+177
+00:05:57,457 --> 00:05:58,679
+natural log of the base.
+
+178
+00:06:01,391 --> 00:06:01,855
+Your turn.
+
+179
+00:06:02,318 --> 00:06:04,281
+For f of x equals five to the
+
+180
+00:06:04,463 --> 00:06:07,247
+x, find f prime of x, then the
+
+181
+00:06:07,328 --> 00:06:09,752
+exact value of f prime of zero.
+
+182
+00:06:10,316 --> 00:06:11,223
+Pause here to answer.
+
+183
+00:06:21,968 --> 00:06:24,557
+The base is five, so f prime of
+
+184
+00:06:24,618 --> 00:06:26,966
+x is the natural log of five, times
+
+185
+00:06:27,028 --> 00:06:27,770
+five to the x.
+
+186
+00:06:28,553 --> 00:06:29,073
+At zero,
+
+187
+00:06:29,615 --> 00:06:31,879
+five to the zero is one, so f
+
+188
+00:06:31,920 --> 00:06:34,444
+prime of zero is exactly the natural log
+
+189
+00:06:34,485 --> 00:06:36,408
+of five, about one point six one.
+
+190
+00:06:37,271 --> 00:06:39,013
+If you wrote x times five to the
+
+191
+00:06:39,115 --> 00:06:41,860
+x minus one, that's the power rule, and
+
+192
+00:06:41,921 --> 00:06:42,962
+it needs x in the base.
+
+193
+00:06:43,585 --> 00:06:45,759
+It gives zero here, a flat tangent on
+
+194
+00:06:45,780 --> 00:06:46,524
+a rising curve.
+
+195
+00:06:48,016 --> 00:06:48,399
+Last one.
+
+196
+00:06:48,945 --> 00:06:51,126
+For g of x equals a half to
+
+197
+00:06:51,147 --> 00:06:54,048
+the x, find the exact value of g
+
+198
+00:06:54,109 --> 00:06:56,830
+prime of two, and explain its sign.
+
+199
+00:06:57,515 --> 00:06:58,407
+Pause here to answer.
+
+200
+00:07:09,061 --> 00:07:11,166
+G prime of x is the natural log
+
+201
+00:07:11,206 --> 00:07:13,311
+of a half, times a half to the
+
+202
+00:07:13,532 --> 00:07:13,672
+x.
+
+203
+00:07:14,594 --> 00:07:16,596
+At two, a half squared is a quarter,
+
+204
+00:07:17,016 --> 00:07:19,238
+so g prime of two is a quarter
+
+205
+00:07:19,438 --> 00:07:21,540
+of the natural log of a half, which
+
+206
+00:07:21,600 --> 00:07:23,901
+is minus the natural log of two, over
+
+207
+00:07:23,961 --> 00:07:24,222
+four.
+
+208
+00:07:24,942 --> 00:07:26,964
+It's negative because the base is less than
+
+209
+00:07:27,184 --> 00:07:29,866
+one, so its natural log is negative, while
+
+210
+00:07:29,906 --> 00:07:31,647
+a half to the x is always positive.
+
+211
+00:07:32,349 --> 00:07:34,175
+Writing the natural log of two there gives
+
+212
+00:07:34,217 --> 00:07:34,959
+the wrong sign.
+
+213
+00:07:36,680 --> 00:07:38,403
+So a to the x is e with
+
+214
+00:07:38,663 --> 00:07:40,425
+x times the natural log of a in
+
+215
+00:07:40,445 --> 00:07:40,886
+the power,
+
+216
+00:07:41,406 --> 00:07:43,088
+and its derivative is the natural log of
+
+217
+00:07:43,108 --> 00:07:44,830
+a, times a to the x.
+
+218
+00:07:45,873 --> 00:07:46,114
+Next:
+
+219
+00:07:46,716 --> 00:07:49,024
+our ratio points traced the natural log curve.
+
+220
+00:07:49,747 --> 00:07:51,598
+What's the gradient of that curve itself?
+
+221
+00:07:54,295 --> 00:07:55,158
+Here are the key notes.
+
+222
+00:07:55,561 --> 00:07:57,108
+Pause the video if you need more time
+
+223
+00:07:57,150 --> 00:07:57,611
+to copy them.

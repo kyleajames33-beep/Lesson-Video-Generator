@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-P04-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8p04/lesson.json",
+  "lessonSha256": "1736924af390b412c2fde4ff8ee06fa6f714ff9a760e8bb222f1bfc01ea489f8",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8p04/lesson.production-brief.json",
+    "sha256": "2992a38e605ba2deb3825e342995e11ae487379a9927a9bbb0970663c68d4aac"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two blue solutions. Your eye can tell which one is darker, but not how much copper is in either. A calibration turns that colour into a number. You measure how much light some solutions of known concentration absorb, draw the line they make, then read a sample you don't know straight off that line. Today you build one for copper, and use it on rinse water from a copper plating workshop.",
+      "hash": "a84d6d37e59c",
+      "textSha256": "a84d6d37e59c9439c016b3f45f95e07ffd4a91b14e6d40617a3ab087c4a5fa8b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/hook.a84d6d37e59c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/hook.a84d6d37e59c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/hook.a84d6d37e59c.generation.json",
+      "plannedRequestSha256": "40e7e823e409e541309465f76975b25967ec5bad25e78d5c13451d3f56c806c4"
+    },
+    {
+      "id": "aim-variables",
+      "parentSceneId": "aim-variables",
+      "text": "The aim is to find the concentration of copper ions in that rinse water. Each solution whose concentration you know is called a standard. The independent variable is the standards' concentration. The dependent variable is their absorbance, how much light each one soaks up. Everything else stays the same.",
+      "hash": "52fadd175f44",
+      "textSha256": "52fadd175f449f5277006e817038736f315fbe4c132d6327567d96a81397a541",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/aim-variables.52fadd175f44.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/aim-variables.52fadd175f44.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/aim-variables.52fadd175f44.generation.json",
+      "plannedRequestSha256": "8c67241cde17653ef53a61d548ac65664a47400ebaee2878c4082b243e4c0fa9"
+    },
+    {
+      "id": "make-standards",
+      "parentSceneId": "make-standards",
+      "text": "Start from a stock solution of copper sulfate, point two zero zero moles per litre. Fill one burette with stock and another with distilled water, rinsing each with the liquid it will hold. Run one millilitre of stock and nine of water into a tube, and mix. That's a tenfold dilution, so point zero two zero moles per litre. Then use two, three, four and six millilitres of stock, each topped up with water to ten millilitres. The strongest is point one two zero.",
+      "hash": "caad18653572",
+      "textSha256": "caad186535723611c73ee07f5f3c96965f23f9a24d747da861b7d0940de89443",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/make-standards.caad18653572.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/make-standards.caad18653572.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/make-standards.caad18653572.generation.json",
+      "plannedRequestSha256": "12dc0e84137010a2eb927a63e32f179ff67697c2ca58d43baa344a16b922693e"
+    },
+    {
+      "id": "wavelength-blank",
+      "parentSceneId": "wavelength-blank",
+      "text": "Which light? A blue solution absorbs at the red end of the spectrum. A scan shows its biggest absorbance near eight hundred nanometres, in the near infrared, so set this spectrophotometer there. That's where each small change in copper gives the biggest change in absorbance. A school colourimeter can't, so use its red filter, with its own calibration. Then zero it with a blank, a cuvette of the same distilled water. The glass and the water absorb a little too, and the blank takes that away, so what's left comes from copper.",
+      "hash": "4bfa055c2feb",
+      "textSha256": "4bfa055c2febe3d2141e3fd03f1ded6ec3a3d2b22dc863d6e82c56c4f9ddcaa7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/wavelength-blank.4bfa055c2feb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/wavelength-blank.4bfa055c2feb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/wavelength-blank.4bfa055c2feb.generation.json",
+      "plannedRequestSha256": "0b5f4c5e8aa64f71a232a5ce7f9fc537604c98fddb08bccfca3ad01e4ef53d9c"
+    },
+    {
+      "id": "measure-carefully",
+      "parentSceneId": "measure-carefully",
+      "text": "Hold each cuvette by its ridged sides, and wipe the clear sides, because a fingerprint scatters light and adds absorbance. Rinse the cuvette with the next standard before you fill it, so the last one doesn't dilute it. Work from the most dilute to the most concentrated.",
+      "hash": "a27e99697b1d",
+      "textSha256": "a27e99697b1df1d6782caee76ab8c334a8c75426f085f5e962b6a0074a6091a0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/measure-carefully.a27e99697b1d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/measure-carefully.a27e99697b1d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/measure-carefully.a27e99697b1d.generation.json",
+      "plannedRequestSha256": "421569472c1d300fcfcfdebd898a26ba79fc56ca1c4b4d65bbef231c5bd876f1"
+    },
+    {
+      "id": "plot-linear-range",
+      "parentSceneId": "plot-linear-range",
+      "text": "Here are the readings. Plot absorbance up the side and concentration along the bottom, with the blank as a point at zero. The blank and the first four standards sit close to one straight line. The fifth falls well below it. At high absorbance, so little light reaches the detector that the reading is less trustworthy. So this line only holds up to point zero eight zero moles per litre. That's its linear range.",
+      "hash": "919bf4a4ce07",
+      "textSha256": "919bf4a4ce07c7b02b917eeee160bac27bf23e526ecc8e6e27f2efd765a228ce",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/plot-linear-range.919bf4a4ce07.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/plot-linear-range.919bf4a4ce07.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/plot-linear-range.919bf4a4ce07.generation.json",
+      "plannedRequestSha256": "622f6d3eae36026b8d10a677cef97202eea662735a849be6502bba314ee30c0c"
+    },
+    {
+      "id": "unknown-dilute",
+      "parentSceneId": "unknown-dilute",
+      "text": "Now the rinse water. It reads one point five two, far above the top of the linear range. You could extend the line, but the fifth standard has just shown that the line bends up there, so don't trust it. Dilute it instead. Five millilitres of rinse water and five of distilled water halve its concentration. Three readings now give a mean of point eight four five, inside the range.",
+      "hash": "a75c34fc3abb",
+      "textSha256": "a75c34fc3abbae0fb821e19a8e4a43f78194a9336121c3004ae5e44ced07051a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/unknown-dilute.a75c34fc3abb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/unknown-dilute.a75c34fc3abb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/unknown-dilute.a75c34fc3abb.generation.json",
+      "plannedRequestSha256": "e3872c0737ab14d04955ff95a688f4abdeca7b8771ffaec06a16d4eba87b05a2"
+    },
+    {
+      "id": "read-scale-back",
+      "parentSceneId": "read-scale-back",
+      "text": "Read across from point eight four five to the line, then down: point zero seven one zero moles per litre. That's the diluted solution, though. You halved it, so the rinse water is double that, point one four two moles per litre.",
+      "hash": "50f0aac4702a",
+      "textSha256": "50f0aac4702a81b7a3d7500a070668f19f64b588f832d96609a5598f47f45913",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/read-scale-back.50f0aac4702a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/read-scale-back.50f0aac4702a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/read-scale-back.50f0aac4702a.generation.json",
+      "plannedRequestSha256": "33b22e211f3962ecc65a3e681ffa57557f3dd0660b4a4afbf50122caa8eb814b"
+    },
+    {
+      "id": "reliable-accurate",
+      "parentSceneId": "reliable-accurate",
+      "text": "Reliable? The three readings agree within about point zero zero six, and a second dilution gives the same answer. Accurate? Your teacher made a check standard from a separate weighing, point zero five zero zero moles per litre. Read from your line, it comes out at point zero four nine seven, within about one percent of its true value.",
+      "hash": "1e6df145cf1f",
+      "textSha256": "1e6df145cf1f89357a62bdec77922e9e9ffa188bb62f50a0a59b0b0c8b2841aa",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/reliable-accurate.1e6df145cf1f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/reliable-accurate.1e6df145cf1f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/reliable-accurate.1e6df145cf1f.generation.json",
+      "plannedRequestSha256": "e874349a1b6316549cc5fdffdcd0c07645036aa3304b647679f6fb517f2ccf84"
+    },
+    {
+      "id": "valid",
+      "parentSceneId": "valid",
+      "text": "Valid? The method measures copper only if copper is the only thing absorbing at that wavelength. A cloudy sample scatters light and reads high, so filter it first. Filtering can't remove dissolved substances, so your teacher has checked this sample for other absorbers. Then read it at the same wavelength, in the same cuvette, with the same blank, and inside the linear range. Only then does the line apply to it.",
+      "hash": "cc60075b9232",
+      "textSha256": "cc60075b92320597c0337938b5fe8c492d0d4b9228580b7c91ac930ab6208bcf",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/valid.cc60075b9232.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/valid.cc60075b9232.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/valid.cc60075b9232.generation.json",
+      "plannedRequestSha256": "91a923350bd5e321373923617925e7242ca8498b0ca30f6d296032b890dd1fac"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. Copper sulfate is harmful if swallowed, irritates eyes and skin, and is very toxic to aquatic life. Wear gloves and glasses, and every copper solution goes into heavy-metal waste, never the sink. Treat the rinse water the same way, because it may hold acid or other metals. Fill the burettes below eye level, and fill cuvettes away from the instrument, so a spill can't reach its electronics.",
+      "hash": "146c50c3b034",
+      "textSha256": "146c50c3b034943c3bb220b7821fa0ec8581628c236b7fe45bdf8e7670e99015",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/risk.146c50c3b034.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/risk.146c50c3b034.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/risk.146c50c3b034.generation.json",
+      "plannedRequestSha256": "f9c916c2af47b95dcc89a4f2d217aa39bfc740dce3b175fea5c885f4b2646e19"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two lines to keep. Read across, then down, and only inside the standards. And if you diluted it, multiply back by the dilution factor.",
+      "hash": "efd833b06c3a",
+      "textSha256": "efd833b06c3acfdba3216bd2e28bc8abe5a63958f97e3e50fe698c6c08cb6bf2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/memory-aid.efd833b06c3a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/memory-aid.efd833b06c3a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/memory-aid.efd833b06c3a.generation.json",
+      "plannedRequestSha256": "577fe3f6c37457d9514e7244f40a04261f260e6617a962cafb46f371d39654c9"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student's copper standards give the calibration line on screen. Ten millilitres of an unknown copper solution is diluted to twenty five millilitres, and the diluted solution reads point three two five. Calculate the copper ion concentration in the original solution. Pause here to answer.",
+      "hash": "bba655579349",
+      "textSha256": "bba6555793496045f4c41511e769b58e06b2a09883ba760712064dd30023b846",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-1.bba655579349.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-1.bba655579349.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-1.bba655579349.generation.json",
+      "plannedRequestSha256": "805deee88952e1cf7d80ce6deeb92e7672aacd4e9ade954cd7b74852104cd24f"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Read across from point three two five, then down: point two five zero moles per litre. That's the diluted solution. Twenty five over ten is a dilution factor of two point five, so the original is point six two five moles per litre. The trap is stopping at point two five zero.",
+      "hash": "720844d4e5ea",
+      "textSha256": "720844d4e5ea60ad01d86ee78531cdb3a09372019b897bd7d9a1ec80c7c7f0e3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-1.720844d4e5ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-1.720844d4e5ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-1.720844d4e5ea.generation.json",
+      "plannedRequestSha256": "d2eef6eece5a33e6e9670d69b079f6ab679b192f6e51fd92fdcbf00b2fbb5cc0"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student measures the standards in a clean cuvette, then measures the unknown in a cuvette with a fingerprint on one clear side. Explain how this affects the calculated concentration, and propose an improvement. Pause here to answer.",
+      "hash": "9652f92e3cf9",
+      "textSha256": "9652f92e3cf9bed709ed01feb1a7704dcee5f96d3e3d52c1c157a0ed75caefc9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-2.9652f92e3cf9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-2.9652f92e3cf9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-2.9652f92e3cf9.generation.json",
+      "plannedRequestSha256": "d8a0b81edafb118f60e73d99b0b6e12028d0d733ed548201a2d85e41662ed68a"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The fingerprint scatters some light, so less reaches the detector, and the absorbance reads high. A higher absorbance, read from the line, gives a concentration that's too high. Fix it by holding cuvettes by their ridged sides and wiping the clear sides before every reading. The trap is averaging three readings. Each one still has the fingerprint, so they're all high together.",
+      "hash": "acb03ac554b9",
+      "textSha256": "acb03ac554b9c955ce7b7d54794c7d7e902ad1874fd09fd3c472bf86436a51d5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-2.acb03ac554b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-2.acb03ac554b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-2.acb03ac554b9.generation.json",
+      "plannedRequestSha256": "4080c3c63f8ed042bbb4b04080ba7eeaa751e0594dbe82b4f8d00014ac3e6617"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, to trust a calibration: make your standards by careful dilution, zero with a blank, and keep the unknown inside the linear range, diluting it if you must. Then check accuracy with a standard you already know. Next: calibration and water-analysis data practice.",
+      "hash": "60722ba6936d",
+      "textSha256": "60722ba6936d619ada4044788903384b2caaf6a8aad7f0478aeb6c6fc8273ee6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/decision-handoff.60722ba6936d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/decision-handoff.60722ba6936d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/decision-handoff.60722ba6936d.generation.json",
+      "plannedRequestSha256": "4c17356e847807553ece0891a471d4b6245c662e000a21d6dbd66bd761c7646f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

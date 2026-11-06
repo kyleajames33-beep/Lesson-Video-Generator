@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-a12-d06.md",
+  "sourceSha256": "50a5cfcb9c5c6d8eeac4756dd38c73fd9bd9d4fe39ed7091dbd627a537276b26",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this question. Here's sine x, and sine two x. At the origin, sine x has slope one, because cos zero is one. Sine two x leaves the origin twice as steeply, with slope two. Where does that two come from? And what happens when the inside part isn't two x, but something like x squared?",
+      "audioFile": "public/audio/math-a12-d06/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "You've met the reason before. Sine two x is the sine curve squashed sideways by a half, so every slope, at matching points, doubles. The chain rule from Year 11 says the same thing. Two x is the inside part, the expression sine is applied to, and sine is the outside. Differentiate the outside, and keep the inside as it is: cos two x. Then multiply by the inside part's derivative, which is two. So the derivative is two cos two x, and at zero, that's two.",
+      "audioFile": "public/audio/math-a12-d06/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now a harder inside: y equals sine of x squared. No squash makes that curve. If you only differentiated the outside, you'd get cos of x squared. Test it against the real slopes. At x equals a half, both are about point nine seven, a ratio of one. At x equals one, the real slope is about one point zero eight, but cos of one is only point five four. That's a ratio of two. At one and a half, the ratio is three. The missing factor isn't fixed. It's two x, the derivative of the inside part, x squared.",
+      "audioFile": "public/audio/math-a12-d06/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Why multiply? Follow a small step at x equals one. Move x by point zero one. The inside, x squared, moves about twice as far, about point zero two, because its rate there is two x, which is two. Then sine reacts to its own input at a rate of cos one, about point five four. So y moves about point five four times point zero two, which is about point zero one one. That's why it's called a chain: each link passes its change on to the next, multiplied by its own rate. Rates along a chain multiply: d y by d u, times d u by d x.",
+      "audioFile": "public/audio/math-a12-d06/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now plug in the outsides from this unit. For e to the power of an inside part, copy e to that power, then multiply by the power's derivative. For the natural log of an inside part, the derivative is the inside's derivative, over the inside itself, and the inside has to be positive. For sine of an inside part, it's cos of the same inside, times the inside's derivative. And for cos, it's minus sine of the same inside, times the inside's derivative. Each time, the inside stays unchanged. For instance, e to the x squared has derivative two x, times e to the x squared.",
+      "audioFile": "public/audio/math-a12-d06/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "First example. Differentiate y equals e to the sine x. The outside is e to a power, and the inside is sine x. Copy e to the sine x, then multiply by the derivative of sine x, which is cos x. So d y by d x is e to the sine x, times cos x. Now look at the graph at pi over two. Cos of pi over two is zero, so the gradient is zero. The inside, sine x, is at its peak and stops changing, so the whole curve goes flat too. Swap the order, and the answer changes. For sine of e to the x, the outside is sine, so the derivative is cos of e to the x, times e to the x.",
+      "audioFile": "public/audio/math-a12-d06/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Second example: y equals the natural log of cos x. A log needs a positive input, so this curve only exists where cos x is positive, for example between minus pi over two and pi over two. The outside is the natural log, so the derivative is the inside's derivative, over the inside. That's minus sine x, over cos x, which is minus tan x, but only where cos x is positive. At pi over four, it's minus one, and the tangent on the graph agrees.",
+      "audioFile": "public/audio/math-a12-d06/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Third example, with cos on the outside. Differentiate y equals cos of, x squared plus one. The outside is cos, so its slope is minus sine of the same inside: minus sine of, x squared plus one. The inside's derivative is two x, because the one is a constant. Multiply them, and d y by d x is minus two x, sine of, x squared plus one. At x equals one, that's minus two sine two, about minus one point eight two. Two things to keep: the minus sign from the outside, and the two x from the inside.",
+      "audioFile": "public/audio/math-a12-d06/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's a short way to say the whole rule. Outside slope at the inside, times the inside slope. The words \"at the inside\" matter. For sine of x squared, the outside slope is cos of x squared, not cos x, and the inside slope is two x. So the derivative is two x cos of x squared. For the natural log, keep the inside positive, and use one over it for the outside slope.",
+      "audioFile": "public/audio/math-a12-d06/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Differentiate y equals the natural log of, x squared minus nine. Then state the values of x for which your answer is valid. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d06/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The inside is x squared minus nine, with derivative two x. So d y by d x is two x, over x squared minus nine. The log needs x squared minus nine to be positive, so x squared is more than nine: x is less than minus three, or more than three. Saying only x isn't plus or minus three isn't enough. Between minus three and three, the inside is negative, and the log doesn't exist.",
+      "audioFile": "public/audio/math-a12-d06/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. For y equals sine of the natural log of x, with x positive, find d y by d x. Then find the exact gradient at x equals e. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d06/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "The outside is sine, and the inside is the natural log of x. So d y by d x is cos of the natural log of x, times one over x. At x equals e, the natural log of e is one, so the gradient is cos one, over e, about point two. If you left out the one over x, you'd get cos one, about point five four, and you'd have skipped the inside slope.",
+      "audioFile": "public/audio/math-a12-d06/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So for any of these functions with an inside part, take the outside's slope at the inside, and multiply by the inside's slope. And for a log, keep the inside positive. Next, two functions multiplied together, like e to the x times sine x. How do both parts set the slope?",
+      "audioFile": "public/audio/math-a12-d06/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d06/scene-15.wav"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# c-y11-m3-v04 science check
+
+Independent source review, 6 November 2026. Reviewed SHA-256 `966ca9950c9ed653daea6fea401bb2f27f2311dbdc7527c8fbc67e305440a8c6`. Entry knowledge, start/stop boundaries and the route handoff were checked against this exact design. No design edits, narration generation or listening approval.
+
+C3-IQ1-03 (local ledger ID), official Chemistry Stage 6 2017 wording:
+
+> conduct investigations to predict and identify the products of a range of reactions, for example:
+
+C3-IQ1-05 (local ledger ID), official Chemistry Stage 6 2017 wording:
+
+> construct balanced equations to represent chemical reactions
+
+The combustion equations and fractional coefficients balance. A balanced complete-combustion equation can still be the wrong answer to an incomplete-combustion question. The source supplies water vapour but not pentane phase, so the state-symbol task needs that missing condition or must accept a liquid-fuel answer. Blue flame alone does not guarantee absence of CO, particularly near a cold surface.
+
+[ASHRAE combustion discussion](https://handbook.ashrae.org/Handbooks/F17/SI/F17_Ch28/f17_ch28_si.aspx), [HSE carbon monoxide](https://www.hse.gov.uk/gas/domestic/co.htm).
+
+1. **Should fix (universal oxide rule, scene 2,10,16, key notes1/4 and rule-line author note):** Every element in the fuel ends up as its oxide contradicts this lesson soot product, which is elemental carbon. Restrict the rule to complete combustion of the hydrocarbons shown, and to the named metal reactions in oxygen. Do not claim all metal combustion in air gives only the oxide, or that any nitrogen-containing fuel must give nitrogen oxides. The useful carbon2/1/0 ladder can stay, as possible product formulas under the stated oxygen supply. Replace the existing rule rather than adding a caveat paragraph.
+
+2. **Should fix (unprovided fuel state, scene 12/13 and A1 model answer):** The card specifies only water as a gas but then requires all states and awards a model answer with C5H12(g). Pentane is a liquid at ordinary room conditions; gas-phase burning is plausible but not stated. Call it pentane vapour on the card/narration if the intended answer is(g), or accept/use(l) for the liquid-fuel equation. The8O2,5CO2,6H2O balancing is correct. Do not mark an otherwise valid liquid-state answer wrong.
+
+3. **Should fix (route boundary, scene 9, key notes3 and open decision2):** The route says keep carbon monoxide toxicity in the teacher risk assessment, while scene9, cards and notes teach poisonous/no colour/no smell and a lung-health claim. These facts are broadly correct (HSE gas-safety guidance supports the CO description), but root must reconcile the explicit boundary with the written minimal-toxicity exception before recording. This is a scope finding, not a claim that the factual CO wording is wrong. Keep the existing lab controls; no medical mechanism or exposure numbers are needed. https://www.hse.gov.uk/gas/domestic/co.htm
+
+4. **Should fix (cold-dish method evidence, scene 1 and author note a):** The visual contrast between soot deposition and brief condensation is plausible, but the exact clamp-held cold ceramic-basin method has not been established as a current school-approved NSW procedure by the public sources checked. Link the approved demonstration or use checked footage/illustrative observations rather than claiming this review approves it. Secure supports, safe hot-ceramic handling and ventilation belong in that method record. Do not infer a blue flame guarantees absence of CO, especially when a cold surface can quench combustion. ASHRAE identifies cold-surface impingement as one cause of incomplete combustion: https://handbook.ashrae.org/Handbooks/F17/SI/F17_Ch28/f17_ch28_si.aspx
+
+5. **Should fix (metadata length, scene draft YouTube title):** The title has 111 characters; shorten to at most 100 before upload. No narration change.
+
+Reference atomic masses and constants use the current-linked official HSC data sheet, visually inspected in work/brief180 and work/brief182. The 66-case equation audit checks atoms and explicit charge, not phase or method approval. Public NSW guidance does not clear an exact school practical.
+
+Site source identity:
+
+- `C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson04.sa.html`: SHA-256 `1b3fbecf2e19c7599253c8a9adcef66c3fa5fd2ab52ae4f7231b7c2306d10591`; route identity True.
+
+0 blockers, 5 should fix, 0 optional. Scene-sum narration count 5,574; joined count 5,590. Headline counts match the scene-sum convention. Estimated duration 503 seconds is planning, not measured timing. No U+2014 or U+2061. Bold and quoted cues match the spoken order in the saved cue audits. Required repairs fit existing scenes through replacement wording or author/display tags. Exact built layout, caption/phone fit, apparatus assembly, motion at playback speed and human listening remain pending. Reuse contact sheets were inspected; assembly QA and new plates are separate deliverables.
