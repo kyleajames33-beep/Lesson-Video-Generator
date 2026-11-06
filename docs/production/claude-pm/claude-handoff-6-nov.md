@@ -17,7 +17,13 @@ State in one place for a fresh Claude session. Memory (`MEMORY.md`) is loaded au
 - Pilot designs chem-y11-m2-v06 and phys-y12-m5-v04 at Revision 2; chem-y11-m3-v10 redesigned.
 - All C-grade fixes except chem-m7-p06, which waits on brief 199.
 - B-grade fixes: all of Biology M5 and M6, plus Biology M7 b02 to b13 and g01. Re-render briefs 198 and 200 to 211 written.
-- Bio M7 p01, p02 and p05 were in progress at handoff: check `work/quality-audit/fixed/` for their sheets and notes, review them, then commit and add them to brief 212.
+- Bio M7 p01, p02 and p05 fixed and committed (ee596579); they go in brief 212 with the next three.
+
+## Done after the compaction (6 Nov, late afternoon)
+
+- d01 Revision 6: brief 195 findings resolved (4d5d8784). Delivered ma12 field and rod plates swapped into the studio kit; the dividing sprite is drawn at the rod's body height (43a7c7bd). Brief 213 asks Codex to voice d01 Rev 6 (608f9aa6); build the full lesson once the measured data lands.
+- Brief 186 cue fixes done (99fd8275).
+- Agents in flight: B-wave Bio M8 b02, b03, b04 (then brief 212 with p01, p02, p05); brief 180 design repairs plus visual upgrade for Y11 Chem m2-v01 to v07 and ws-v04 to v06 (then an error-check brief).
 
 ## Next for Claude, in order
 
@@ -25,9 +31,8 @@ State in one place for a fresh Claude session. Memory (`MEMORY.md`) is loaded au
    - Remaining B ids are those with status `queued` in `fix-plan.md`: Biology M8 b02 to b04, Chemistry M5, M6, M7 and M8, and Skills s01 to s08.
    - Review each sheet before committing; reject hands, thumbs and faces, thin elements and small text.
    - Write a re-render brief for every six fixed videos (same pattern as 206 to 211).
-2. **d01:** resolve brief 195's 4 should-fix findings (`checks/m-a12d01-rev5-*.md`), swap the three delivered plates into `src/explainer/math/studio/plates.ts`, build the full d01 lesson with the kit, then render a pilot for owner viewing.
+2. **d01:** when brief 213 hands in the measured data, build the full lesson with the studio kit (src/explainer/lessons/math-a12-d01), run the contact-sheet gate, then render the pilot for owner viewing.
 3. **Repair review findings** for Year 11 Chemistry (briefs 180 to 184) and Year 12 Physics (187 and 188), folding in each design's visual upgrade per `checks/visual-standard-audit-chem-y11-phys-y12.md`. Then write the error-check briefs.
-4. **Brief 186:** 2 should-fix cue findings.
 5. **Brief 194:** several Bio M8 lessons failed the recording-stage check, and chem-m5-g02 and chem-m8-g02 have count-declaration mismatches. See `work/brief174/`. Fix them, then re-queue.
 6. **Pilots:** build chem-y11-m2-v06 and phys-y12-m5-v04 (plates are delivered) for owner viewing.
 
