@@ -11,7 +11,19 @@ import {HscTag, NextChip, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, CTag, CardBox, EDGE, GREY_INK, GTag, Gate, INK, PLATES, Pl, SideWash, Sx, TEAL, WText, prog, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, CTag, CardBox, Crop, CurveArrow, DoorBar, DrawPath, EDGE, FEAT, GREY_INK, GTag, Gate, INK, PLATES, Pl, SideWash, SporeDrift, Sx, TEAL, WText, WaterFilm, prog, ptOf, tw, vis} from './parts';
+
+/** Quality fix (6 Nov): a small herd of plain dots (cols x rows), popping in from `at`; `hollow` empties them (culled). */
+const Herd: React.FC<{x: number; y: number; cols: number; rows: number; sp?: number; r?: number; at: number; color?: string; hollow?: number}> = ({x, y, cols, rows, sp = 26, r = 9, at, color = '#7d6646', hollow = 0}) => {
+	const f = useCurrentFrame();
+	if (f < at) return null;
+	const h = prog(f, hollow || 1e9, 12);
+	return (
+		<g>
+			{Array.from({length: cols * rows}, (_, i) => <circle key={i} cx={x + (i % cols) * sp} cy={y + Math.floor(i / cols) * sp} r={r} fill={color} fillOpacity={1 - 0.85 * h} stroke={color} strokeWidth={2} opacity={prog(f, at + Math.floor(i / 2), 6)} />)}
+		</g>
+	);
+};
 
 // ---------- item 1: an FMD outbreak in Country P ----------
 type T1 = {a: number; b: number; c: number; d: number; q: number};
@@ -28,17 +40,36 @@ qCheck(STEM1({a: 0, b: 0, c: 0, d: 0, q: 0}), MARKS1.map(phrase => ({phrase, at:
 // ---------- 12a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', country: 'A country that exports', confirmed: 'The disease is confirmed', all: 'All 40', three: 'three trading partners', dist: 'Distinguish between', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {a: KA.country, b: KA.confirmed, c: KA.all, d: KA.three, q: KA.dist};
+	// Quality fix (6 Nov): the first stem sentence now lands with the card on "First" (it was keyed 1.3 s later to
+	// "A country that exports", so the card sat empty), and the givens are drawn beside the stem as they are read:
+	// the beef going to export, one herd of 40, 2000 healthy cattle nearby, both culled, and the barred container.
+	// Nothing is labelled direct or indirect; that is the answer.
+	const f = useCurrentFrame();
+	const t: T1 = {a: KA.first, b: KA.confirmed, c: KA.all, d: KA.three, q: KA.dist};
 	const h = hold('attempt');
+	const ct = {cx: 1690, cy: 320, w: 200};
+	const d0 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[0]);
+	const d1 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[1]);
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={500} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={650} w={1340} h={350} at={KA.dist + 30} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1110} size={36} card={false} />
+				<Pl p={PLATES.cattle} cx={1400} cy={320} w={210} o={prog(f, KA.first + 8, 14)} />
+				<Pl p={PLATES.container} cx={ct.cx} cy={ct.cy} w={ct.w} o={prog(f, KA.country + 14, 14)} />
+				<CurveArrow a={[1510, 300]} b={[1585, 300]} at={KA.country + 24} bow={-20} color={INK} width={4} />
+				<Sx x={1545} y={440} text="most beef exported" size={30} color={INK} hand weight={700} anchor="middle" at={KA.country + 30} />
+				<Herd x={1320} y={500} cols={8} rows={5} sp={24} r={8} at={KA.confirmed} hollow={KA.all} />
+				<Sx x={1404} y={650} text="one herd: 40" size={30} color={INK} hand weight={700} anchor="middle" at={KA.confirmed + 10} />
+				<Herd x={1540} y={500} cols={10} rows={5} sp={24} r={8} at={KA.all + 30} color="#8e9399" hollow={KA.all + 60} />
+				<Sx x={1648} y={650} text="2000 healthy nearby" size={30} color={INK} hand weight={700} anchor="middle" at={KA.all + 34} />
+				<Sx x={1540} y={692} text="all culled" size={30} color={GREY_INK} hand weight={700} anchor="middle" at={KA.all + 60} />
+				<DoorBar a={d0} b={d1} at={KA.three + 10} />
+				<Sx x={1690} y={232} text="imports suspended" size={28} color={GREY_INK} hand weight={700} anchor="middle" at={KA.three + 14} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={590} w={1110} size={34} card={false} />
+				<AnsBox x={140} y={735} w={1340} h={270} at={KA.dist + 30} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -49,6 +80,9 @@ export const SceneAttempt: React.FC = () => {
 const KB = cues(S('feedback-one'), {direct: 'Direct effects are', sick: 'the 40 sick cattle', indirect: 'Indirect effects come', healthy: 'the 2,000 healthy', lost: 'lost beef exports', far: 'cost far more', exports: 'the country exports most', counting: 'Counting the healthy', mistake: 'classic mistake'});
 const ALL1: T1 = {a: -100, b: -100, c: -100, d: -100, q: -100};
 export const SceneFeedbackOne: React.FC = () => {
+	// Quality fix (6 Nov): each answer line now has its picture. Direct: the red cattle and the 40 sick animals (teal),
+	// emptied on "culled". Indirect: 2000 healthy cattle (grey dots, each 50), the container barred on "lost beef
+	// exports", then a larger framed verdict.
 	const f = useCurrentFrame();
 	const marks: QMark[] = [
 		{phrase: 'one herd of 40 cattle', at: KB.sick, color: TEAL},
@@ -57,6 +91,10 @@ export const SceneFeedbackOne: React.FC = () => {
 		{phrase: 'exports most of the beef it produces', at: KB.exports, color: AMBER},
 	];
 	const mw = tw('healthy culled cattle = direct', 30) + 48;
+	const ct = {cx: 1600, cy: 520, w: 280};
+	const d0 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[0]);
+	const d1 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[1]);
+	const ldim = vis(f, KB.indirect, undefined, 10);
 	return (
 		<>
 			<Heading text="Direct or indirect?" at={4} size={50} />
@@ -64,15 +102,24 @@ export const SceneFeedbackOne: React.FC = () => {
 				<HscTag at={-100} />
 				<CardBox x={100} y={150} w={1720} h={176} at={-100} />
 				<QText q={qCheck(STEM1(ALL1), marks)} x={140} y={198} w={2200} size={34} card={false} s={0.74} />
-				<SideWash x0={975} x1={1800} y0={360} y1={780} o={prog(f, KB.exports, 16)} />
-				<Gate at={0} x={960} y0={390} y1={760} labelAt={6} sidesAt={10} sideY={790} />
-				<CTag x={130} y={420} text="direct: 40 infected cattle, lost production, then culled" at={KB.sick + 6} color={TEAL} size={32} maxW={780} dim={vis(f, KB.indirect, undefined, 10)} />
-				<CTag x={990} y={420} text="indirect: 2000 healthy cattle culled" at={KB.healthy + 6} color={AMBER_INK} size={32} maxW={790} dim={prog(f, KB.lost, 10)} />
-				<CTag x={990} y={510} text="indirect: lost exports" at={KB.lost + 6} color={AMBER_INK} size={32} maxW={790} dim={prog(f, KB.exports, 10)} />
-				<CTag x={990} y={620} text="indirect larger: export dependent" at={KB.exports + 8} color={AMBER_INK} size={34} maxW={790} />
-				<MistakeChip x={130} y={850} text="healthy culled cattle = direct" at={KB.counting} cross={KB.mistake + 6} size={30} />
-				<GTag x={130 + mw + 40} y={856} text="never infected: a cost of control" at={KB.mistake + 16} size={26} />
-				{void KB.direct}{void KB.far}
+				<SideWash x0={975} x1={1800} y0={360} y1={810} o={prog(f, KB.exports, 16)} />
+				<Gate at={0} x={960} y0={370} y1={800} labelAt={6} sidesAt={10} sideY={836} />
+				<CTag x={130} y={380} text="direct: 40 infected cattle, lost production, then culled" at={KB.sick + 6} color={TEAL} size={32} maxW={780} dim={ldim} />
+				<g opacity={1 - 0.45 * ldim}>
+					<Pl p={PLATES.cattle} cx={320} cy={640} w={320} o={prog(f, KB.direct + 10, 14)} />
+					<Herd x={560} y={565} cols={8} rows={5} sp={30} r={10} at={KB.sick} color={TEAL} hollow={KB.sick + 70} />
+					<Sx x={665} y={740} text="40 sick, then culled" size={32} color={TEAL} hand weight={700} anchor="middle" at={KB.sick + 12} />
+				</g>
+				<CTag x={990} y={380} text="indirect: 2000 healthy cattle culled" at={KB.healthy + 6} color={AMBER_INK} size={32} maxW={790} dim={prog(f, KB.lost, 10)} />
+				<Herd x={1010} y={480} cols={10} rows={4} sp={28} r={9} at={KB.healthy + 10} color="#8e9399" hollow={KB.healthy + 40} />
+				<Sx x={1010} y={612} text="each dot: 50 healthy cattle" size={26} color={GREY_INK} weight={600} at={KB.healthy + 16} />
+				<Pl p={PLATES.container} cx={ct.cx} cy={ct.cy} w={ct.w} o={prog(f, KB.lost, 14)} />
+				<DoorBar a={d0} b={d1} at={KB.lost + 12} />
+				<CTag x={1600} y={630} text="indirect: lost exports" at={KB.lost + 6} color={AMBER_INK} size={32} anchor="middle" dim={prog(f, KB.exports, 10)} />
+				<CTag x={1385} y={712} text="indirect larger: export dependent" at={KB.exports + 8} color={AMBER_INK} size={40} anchor="middle" fill="#fff3d9" />
+				<MistakeChip x={130} y={880} text="healthy culled cattle = direct" at={KB.counting} cross={KB.mistake + 6} size={30} />
+				<GTag x={130 + mw + 40} y={886} text="never infected: a cost of control" at={KB.mistake + 16} size={28} />
+				{void KB.far}
 			</Overlay>
 		</>
 	);
@@ -91,18 +138,33 @@ qCheck(STEM2({a: 0, b: 0, c: 0, d: 0, q: 0}), ['able to infect this variety', 'c
 
 // ---------- 12c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', nearly: 'Nearly every farm', strain: 'A new strain', spores: 'Its spores travel', yields: 'Yields fall', explain: 'Explain one biological', pause: 'Pause here to answer'});
+const MONO = {...PLATES.field, box: [200, 709, 1000, 1291] as [number, number, number, number]};
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.nearly, b: KC.strain, c: KC.spores, d: KC.yields, q: KC.explain};
+	// Quality fix (6 Nov): the first stem sentence lands with the card (it waited about a second for "Nearly every
+	// farm"), and the givens are drawn beside the stem as read: one variety on every farm (the uniform rows), the new
+	// rust strain on a leaf, wind-borne spores and wet weather, and the fall in yield. No cause is labelled.
+	const f = useCurrentFrame();
+	const t: T2 = {a: KC.second + 6, b: KC.strain, c: KC.spores, d: KC.yields, q: KC.explain};
 	const h = hold('attempt-two');
+	const sk = PLATES.wheatSick;
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
-				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={450} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={580} w={1340} h={420} at={KC.explain + 30} />
+				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1110} size={36} card={false} />
+				<Crop p={MONO} cx={1545} cy={345} w={420} id="b04-a2-mono" o={prog(f, KC.nearly, 14)} />
+				<Sx x={1545} y={540} text="one variety, every farm" size={30} color={INK} hand weight={700} anchor="middle" at={KC.nearly + 12} />
+				<Crop p={sk} cx={1430} cy={620} w={(sk.box[2] - sk.box[0]) * (280 / (sk.box[3] - sk.box[1]))} rot={-90} id="b04-a2-leaf" o={prog(f, KC.strain, 14)} />
+				<Sx x={1430} y={712} text="new rust strain" size={30} color={INK} hand weight={700} anchor="middle" at={KC.strain + 12} />
+				<SporeDrift sx={1560} sy={600} x1={1800} band={26} at={KC.spores} n={12} period={90} />
+				<WaterFilm x0={1620} x1={1780} y={662} at={KC.spores + 70} />
+				<Sx x={1700} y={712} text="wind; warm, wet" size={30} color={INK} hand weight={700} anchor="middle" at={KC.spores + 20} />
+				{f >= KC.yields ? <DrawPath d="M1380,742 L1380,800 M1362,782 L1380,802 L1398,782" at={KC.yields} dur={12} color={INK} width={5} /> : null}
+				<Sx x={1410} y={790} text="yields fall district-wide" size={30} color={INK} hand weight={700} at={KC.yields + 6} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={520} w={1110} size={34} card={false} />
+				<AnsBox x={140} y={640} w={1100} h={365} at={KC.explain + 30} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -184,13 +246,18 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 14. Key notes ----------
+// Quality fix (6 Nov): nine one-line bullets at 33 px replace five paragraphs at 29 px. Same content, split.
 const NOTES = [
-	'Disease needs a pathogen, a host it can infect and the right conditions (for example, rust spores need water to germinate). Farming adds risk: one variety over large areas (monoculture) and moving plants, soil and machinery.',
-	'Direct effects fall on the infected crop or animals: lower yield (rust takes sugars and leaf area; nematode galls squeeze the xylem), lower quality, control costs.',
-	'Myrtle rust (Austropuccinia psidii, a fungus native to the Americas; Australia 2010): Australian myrtles had little resistance; spread by wind and nursery plants; fungicide costs and losses for lemon myrtle and tea tree; native guava now critically endangered; cannot be eradicated.',
-	'Foot-and-mouth disease (virus; cattle, sheep, pigs, goats): blisters, lameness, less milk and meat. Direct effects: losses in the infected animals, including their death or culling. Indirect effects, beyond the sick animals (culling healthy animals, movement bans, closed export markets, tourism), usually cost more, especially for an exporter like Australia (FMD-free since 1872).',
-	'Assess an effect by how big, how long and how far it reaches.',
+	'Disease needs a pathogen, a host it can infect and the right conditions (rust spores need water).',
+	'Farming adds risk: one variety over a large area (monoculture), and moving plants, soil and machinery.',
+	'Direct effects hit the infected crop or animals: lower yield, lower quality, control costs.',
+	'Rust takes sugars and leaf area; root-knot nematode galls squeeze the xylem.',
+	'Myrtle rust (fungus, Australia 2010): little resistance; spread by wind and nursery plants; here to stay.',
+	'Myrtle rust effects: fungicide, lost lemon myrtle and tea tree crops, native guava critically endangered.',
+	'Foot-and-mouth disease (virus; cloven-hoofed animals): blisters, lameness, less milk and meat.',
+	'Indirect FMD effects (healthy animals culled, movement bans, closed exports) usually cost more for an exporter.',
+	'Assess an effect: how big, how long, how far it reaches.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Count past the farm gate." tag="the sick plant or animal is only the first cost" size={29} aidTop={790} />
+	<NotesBoard notes={NOTES} aid="Count past the farm gate." tag="the sick plant or animal is only the first cost" size={33} aidTop={820} />
 );

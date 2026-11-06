@@ -13,14 +13,19 @@ import {
 } from './parts';
 import type {DotK, MiniCell, TestK} from './parts';
 import {LABEL_X, TestLabel, labelY} from './s1';
+import {ColumnCard2, MiniBoard2} from './parts2';
+import {RED_GREY} from './parts';
 
 // ---------- 5. Growth hormone ----------
 const K5 = cues(S('growth-hormone'), {gh: 'growth hormone,', children: 'given to children', until: 'Until 1985,', pit: 'pituitary glands', died: 'who had died', scarce: 'scarce,', fatal: 'fatal brain disease', withdrawn: 'withdrawn,', made: 'made by bacteria', replaced: 'replaced it', old: 'The old source', bigger: 'far bigger', btw: 'Better than what sets'});
 export const SceneGrowth: React.FC = () => {
+	// Quality fix (6 Nov): the dashed "old source" circle (a text box in a diagram slot) is replaced by three greyed
+	// hormone vials (the scarce pituitary extract), one ringed red on "fatal brain disease"; the bacterium replaces them
+	// on "made by bacteria". The card enters on "Until 1985" and its rows fill on the narration (it was empty to 15 s).
 	const f = useCurrentFrame();
-	const SRC: [number, number] = [260, 540], DST: [number, number] = [990, 540];
+	const SRC: [number, number] = [260, 540], DST: [number, number] = [990, 520];
 	const bact = prog(f, K5.made, 16);
-	const audioY = 680;
+	const oldO = vis(f, K5.until, K5.made, 14);
 	const mini: MiniCell[] = [...DONE.farm, ...DONE.medicine].map(c => ({...c, at: -100})).concat([
 		{c: 2, r: 0, k: 'full', at: K5.fatal + 40},
 		{c: 2, r: 1, k: 'full', at: K5.replaced},
@@ -29,24 +34,28 @@ export const SceneGrowth: React.FC = () => {
 		<>
 			<Heading text="Medicine: growth hormone" at={4} size={56} />
 			<Overlay>
-				<MiniBoard cells={mini} active={2} o={prog(f, 0, 14)} />
-				<ColumnCard title="growth hormone" sub="medicine" plate={PLATES.hormone} plateW={34} at={0} pulseRow={{r: 0, at: K5.btw}}
-					cells={[{text: 'scarce, and some batches unsafe', k: 'full', at: K5.fatal + 40}, {text: 'harm from old source documented; replaced 1985', k: 'full', at: K5.replaced}, undefined]} />
-				<Pl p={PLATES.hormone} cx={1060} cy={520} w={110} o={prog(f, K5.gh, 14)} />
-				<Sx x={1060} y={audioY} text="growth hormone" size={30} color={GREY_INK} weight={700} anchor="middle" at={K5.gh + 6} />
-				<Sx x={1060} y={audioY + 34} text="for children who don't make enough" size={22} color={GREY_INK} weight={600} anchor="middle" at={K5.children + 10} out={K5.until + 40} />
-				{/* the old source: text only (no body, no person) */}
-				<g opacity={vis(f, K5.until, K5.made, 14)}>
-					<circle cx={SRC[0]} cy={SRC[1]} r={90} fill="#f3f2ee" stroke={GREYT} strokeWidth={3} strokeDasharray="8 7" />
-					<Sx x={SRC[0]} y={SRC[1] + 10} text="old source" size={30} color={GREY_INK} weight={700} anchor="middle" />
+				<MiniBoard2 cells={mini} active={2} o={prog(f, 0, 14)} />
+				<ColumnCard2 title="growth hormone" sub="medicine" plate={PLATES.hormone} plateW={50} at={K5.until - 6} pulseRow={{r: 0, at: K5.btw}}
+					emptyNote={{r: 2, text: 'not compared in this case', at: K5.replaced + 30}}
+					cells={[{text: 'old source: glands of donors who had died;', more: {text: 'scarce, some batches unsafe', at: K5.fatal + 20}, k: 'full', at: K5.died}, {text: 'harm documented; replaced in 1985', k: 'full', at: K5.replaced}, undefined]} />
+				<Pl p={PLATES.hormone} cx={DST[0]} cy={DST[1]} w={150} o={prog(f, K5.gh, 14)} />
+				<Sx x={DST[0]} y={760} text="growth hormone" size={36} color={INK} hand weight={700} anchor="middle" at={K5.gh + 6} />
+				<Sx x={DST[0]} y={806} text="for children who don't make enough" size={30} color={GREY_INK} hand weight={700} anchor="middle" at={K5.children + 10} out={K5.until + 60} />
+				{/* the old source: greyed vials of pituitary extract (no body, no person) */}
+				<g opacity={oldO}>
+					{[0, 1, 2].map(i => <Pl key={i} p={PLATES.hormone} cx={SRC[0] - 90 + i * 90} cy={SRC[1]} w={64} dim={0.85} o={prog(f, K5.until + i * 8, 10)} />)}
+					<Sx x={SRC[0]} y={SRC[1] + 140} text="pituitary extract" size={34} color={GREY_INK} hand weight={700} anchor="middle" />
+					{f >= K5.fatal ? <circle cx={SRC[0] + 90} cy={SRC[1]} r={78} fill="none" stroke={RED_GREY} strokeWidth={5} opacity={prog(f, K5.fatal, 10)} /> : null}
 				</g>
-				<GTag x={110} y={260} text="pituitary gland: a small gland under the brain" at={K5.pit} out={K5.died + 20} size={26} />
-				<GTag x={110} y={260} text="until 1985: from donors who had died" at={K5.died + 22} out={K5.made} size={26} />
-				<SupplyLine a={[SRC[0] + 110, SRC[1]]} b={[DST[0] - 30, DST[1]]} draw={prog(f, K5.scarce, 24)} gaps={prog(f, K5.scarce, 1)} warn={prog(f, K5.fatal, 12)} thick={prog(f, K5.made + 6, 26)} amber={prog(f, K5.made + 6, 2)} />
-				<GTag x={560} y={600} text="Creutzfeldt-Jakob disease" at={K5.fatal + 6} out={K5.made} size={24} />
-				<Pl p={PLATES.bactP} cx={SRC[0]} cy={SRC[1]} w={300} o={bact} />
-				<Tg x={SRC[0] - 140} y={740} text="1985: made by bacteria" at={K5.made + 14} out={K5.bigger + 20} size={38} />
-				{void K5.withdrawn}{void K5.old}
+				<GTag x={100} y={250} text="pituitary gland: a small gland under the brain" at={K5.pit} out={K5.died + 20} size={30} />
+				<GTag x={100} y={250} text="until 1985: from donors who had died" at={K5.died + 22} out={K5.made} size={30} />
+				<SupplyLine a={[SRC[0] + 150, SRC[1]]} b={[DST[0] - 90, DST[1]]} draw={prog(f, K5.scarce, 24)} gaps={prog(f, K5.scarce, 1)} warn={prog(f, K5.fatal, 12)} thick={prog(f, K5.made + 6, 26)} amber={prog(f, K5.made + 6, 2)} />
+				<Sx x={630} y={470} text="scarce" size={36} color={GREY_INK} hand weight={700} anchor="middle" at={K5.scarce + 6} out={K5.made} />
+				<GTag x={420} y={620} text="Creutzfeldt-Jakob disease (fatal)" at={K5.fatal + 6} out={K5.made} size={30} />
+				<Pl p={PLATES.bactP} cx={SRC[0]} cy={SRC[1]} w={340} o={bact} />
+				<Tg x={110} y={790} text="1985: made by bacteria" at={K5.made + 14} size={40} />
+				<Sx x={110} y={930} text="old source scarce and dangerous: benefit far bigger" size={40} color={AMBER_INK} hand weight={700} at={K5.old} />
+				{void K5.withdrawn}{void K5.bigger}{void ColumnCard}{void MiniBoard}
 			</Overlay>
 		</>
 	);
@@ -55,8 +64,11 @@ export const SceneGrowth: React.FC = () => {
 // ---------- 6. Industry: chymosin ----------
 const K6 = cues(S('factory'), {industry: 'Industry follows', factory: 'factory scale', chym: 'Take chymosin', calves: "calves' stomachs", b1: 'Better than what?', sameEnz: 'the same enzyme', same: 'the same,', calves2: 'depend on calves', shown: 'Shown how?', since: 'Since about', who: 'Who gets it?', cheese: 'Cheesemakers,'});
 export const SceneFactory: React.FC = () => {
+	// Quality fix (6 Nov): the bacterium and the fermenter fill the right third while "a microbe ... at factory scale" is
+	// said; the card slides in on "Better than what?" and the fermenter moves to the middle. Labels 28 to 50 px.
 	const f = useCurrentFrame();
 	const slide = smooth(prog(f, K6.sameEnz + 4, 30));
+	const mv = smooth(prog(f, K6.b1 - 12, 30));
 	const mini: MiniCell[] = [...DONE.farm, ...DONE.medicine, ...DONE.hormone].map(c => ({...c, at: -100})).concat([
 		{c: 3, r: 0, k: 'full', at: K6.same},
 		{c: 3, r: 1, k: 'full', at: K6.since},
@@ -67,28 +79,30 @@ export const SceneFactory: React.FC = () => {
 		<>
 			<Heading text="Industry: chymosin for cheese" at={4} size={56} />
 			<Overlay>
-				<MiniBoard cells={mini} active={3} o={prog(f, 0, 14)} />
-				<ColumnCard title="industry" sub="chymosin" plate={PLATES.cheese} plateW={84} at={K6.industry}
-					cells={[{text: 'same enzyme, no calves needed', k: 'full', at: K6.same}, {text: "used since about 1990, much of world's cheese", k: 'full', at: K6.since}, {text: 'cheesemakers: steady, cheaper supply', k: 'full', at: K6.cheese}]} />
-				<Pl p={PLATES.fermenter} cx={1050} cy={460} w={150} o={prog(f, K6.factory, 14)} />
-				<GTag x={1050} y={680} text="same logic as medicine" at={K6.factory + 10} out={K6.calves} size={24} anchor="middle" />
-				<Pl p={PLATES.cheese} cx={640} cy={400} w={300} o={prog(f, K6.chym, 14)} />
+				<MiniBoard2 cells={mini} active={3} o={prog(f, 0, 14)} />
+				<ColumnCard2 title="industry" sub="chymosin" plate={PLATES.cheese} plateW={96} at={K6.b1 - 6}
+					cells={[{text: 'same enzyme, no calves needed', k: 'full', at: K6.same}, {text: "used since about 1990 for much of the world's cheese", k: 'full', at: K6.since}, {text: 'cheesemakers: steady, cheaper supply', k: 'full', at: K6.cheese}]} />
+				<Pl p={PLATES.bactP} cx={1340} cy={520} w={340} o={vis(f, 70, K6.b1 - 12, 14)} />
+				<Sx x={1340} y={700} text="a microbe makes the protein" size={34} color={INK} hand weight={700} anchor="middle" at={80} out={K6.b1 - 12} />
+				<Pl p={PLATES.fermenter} cx={lerp(1700, 1050, mv)} cy={lerp(520, 460, mv)} w={lerp(240, 160, mv)} o={prog(f, K6.factory, 14)} />
+				<Sx x={1700} y={830} text="factory scale" size={36} color={AMBER_INK} hand weight={700} anchor="middle" at={K6.factory + 8} out={K6.b1 - 12} />
+				<Pl p={PLATES.cheese} cx={640} cy={400} w={320} o={prog(f, K6.chym, 14)} />
 				<g opacity={1 - 0.55 * prog(f, K6.b1, 14)}>
-					<Sx x={640} y={580} text="chymosin" size={50} color={INK} weight={800} anchor="middle" at={K6.chym} />
-					<Sx x={640} y={624} text="the enzyme that curdles milk" size={32} color={GREY_INK} hand anchor="middle" at={K6.chym + 10} />
+					<Sx x={640} y={590} text="chymosin" size={54} color={INK} weight={800} anchor="middle" at={K6.chym} />
+					<Sx x={640} y={640} text="the enzyme that curdles milk" size={36} color={GREY_INK} hand anchor="middle" at={K6.chym + 10} />
 				</g>
-				<Pl p={PLATES.calf} cx={220} cy={440} w={220} o={prog(f, K6.calves - 6, 14)} dim={calfDim} />
-				<GTag x={220} y={580} text="calf rennet" at={K6.calves + 6} size={26} anchor="middle" />
+				<Pl p={PLATES.calf} cx={220} cy={440} w={240} o={prog(f, K6.calves - 6, 14)} dim={calfDim} />
+				<GTag x={220} y={600} text="calf rennet" at={K6.calves + 6} size={30} anchor="middle" />
 				{/* the same enzyme from both sources */}
-				<EnzymeG x={lerp(220, 600, slide)} y={780} s={1.3} o={prog(f, K6.sameEnz - 6, 10)} />
-				<EnzymeG x={lerp(1050, 600, slide)} y={780} s={1.3} o={prog(f, K6.sameEnz - 6, 10) * (slide < 0.98 ? 1 : 0.85)} />
-				{slide > 0.98 ? <circle cx={600} cy={780} r={70} fill="none" stroke={AMBER} strokeWidth={4} opacity={vis(f, K6.sameEnz + 34, K6.calves2 + 10, 8)} /> : null}
-				<Tg x={600} y={900} text="identical enzyme" at={K6.sameEnz + 36} out={K6.calves2 + 20} size={38} anchor="middle" />
+				<EnzymeG x={lerp(220, 600, slide)} y={790} s={1.5} o={prog(f, K6.sameEnz - 6, 10)} />
+				<EnzymeG x={lerp(1050, 600, slide)} y={790} s={1.5} o={prog(f, K6.sameEnz - 6, 10) * (slide < 0.98 ? 1 : 0.85)} />
+				{slide > 0.98 ? <circle cx={600} cy={790} r={80} fill="none" stroke={AMBER} strokeWidth={4} opacity={vis(f, K6.sameEnz + 34, K6.calves2 + 10, 8)} /> : null}
+				<Tg x={600} y={920} text="identical enzyme" at={K6.sameEnz + 36} out={K6.calves2 + 20} size={40} anchor="middle" />
 				<g opacity={vis(f, K6.calves2 + 26) * (1 - 0.5 * prog(f, K6.since + 30, 14))}>
-					<EnzymeG x={860} y={790} s={1.1} alt grey />
+					<EnzymeG x={880} y={800} s={1.3} alt grey />
 				</g>
-				<GTag x={600} y={880} text="fungal enzymes: can taste bitter in aged cheese" at={K6.calves2 + 30} out={K6.who} size={24} anchor="middle" />
-				{void K6.shown}
+				<GTag x={600} y={900} text="fungal enzymes: can taste bitter in aged cheese" at={K6.calves2 + 30} out={K6.who} size={28} anchor="middle" />
+				{void K6.shown}{void K6.industry}
 			</Overlay>
 		</>
 	);
@@ -117,7 +131,7 @@ export const SceneTankField: React.FC = () => {
 		<>
 			<Heading text="Sealed tank or open field" at={4} size={56} />
 			<Overlay>
-				<MiniBoard cells={[...DONE.farm, ...DONE.medicine, ...DONE.hormone, ...DONE.industry].map(c => ({...c, at: -100}))} o={prog(f, 0, 14)} />
+				<MiniBoard2 cells={[...DONE.farm, ...DONE.medicine, ...DONE.hormone, ...DONE.industry].map(c => ({...c, at: -100}))} o={prog(f, 0, 14)} />
 				<Sx x={110} y={232} text="Why is farming the most argued over?" size={32} color={GREY_INK} hand at={6} out={K7.released} />
 				{/* the sealed tank */}
 				<Pl p={PLATES.fermenter} cx={330} cy={480} w={210} o={prog(f, K7.med, 14)} />
@@ -133,7 +147,7 @@ export const SceneTankField: React.FC = () => {
 					})}
 				</g>
 				{vialT > 0.01 ? <VialG x={lerp(330, 560, vialT)} y={lerp(690, 760, vialT)} s={1.2} o={1 - prog(f, K7.farm + 40, 14)} /> : null}
-				<GTag x={330} y={770} text="contained" at={K7.leaves} out={K7.released} size={26} anchor="middle" />
+				<GTag x={330} y={770} text="contained" at={K7.leaves} out={K7.released} size={30} anchor="middle" />
 				{/* the open field: monoculture half stays, mixed half dims */}
 				<Pl p={PLATES.field} cx={FIELD.cx} cy={FIELD.cy} w={FIELD.w} o={prog(f, K7.farm - 6, 14)} />
 				<rect x={splitX} y={fy0 - 4} width={fx0 + FIELD.w - splitX + 6} height={fh + 8} fill="#faf6ec" opacity={0.7 * prog(f, K7.farm, 14)} />
@@ -149,21 +163,21 @@ export const SceneTankField: React.FC = () => {
 				<Tg x={1150} y={672} text="resistance evolves" at={K7.pests + 8} out={K7.narrows} size={36} />
 				{/* crop genetic diversity narrows */}
 				<MiniLevels x={840} y={740} w={240} h={150} labels marks={[{r: 2, kind: 'down', o: prog(f, K7.narrows + 10, 10)}]} o={vis(f, K7.narrows - 6, undefined, 12)} lit={[0, 0, prog(f, K7.narrows + 10, 1)]} />
-				<GTag x={1100} y={790} text="b12: the banana problem returns" at={K7.narrows + 14} out={K7.bt} size={24} />
+				<GTag x={1100} y={790} text="b12: the banana problem returns" at={K7.narrows + 14} out={K7.bt} size={28} />
 				{/* Bt cotton: far fewer sprays, held by refuges */}
 				<g opacity={btO}>
 					<Pl p={PLATES.cotton} cx={190} cy={870} w={150} />
-					<Sx x={290} y={826} text="ordinary cotton" size={22} color={GREY_INK} weight={700} />
+					<Sx x={290} y={826} text="ordinary cotton" size={26} color={GREY_INK} weight={700} />
 					<rect x={290} y={836} width={300 * smooth(prog(f, K7.fewer, 18))} height={24} rx={6} fill="#c9c4bb" />
-					<Sx x={290} y={892} text="Bt cotton" size={22} color={GREY_INK} weight={700} />
+					<Sx x={290} y={892} text="Bt cotton" size={26} color={GREY_INK} weight={700} />
 					<rect x={290} y={902} width={45 * smooth(prog(f, K7.fewer + 10, 18))} height={24} rx={6} fill={AMBER} />
 					<RefugeStrip x={640} y={836} w={150} h={70} o={prog(f, K7.refuges, 12)} />
 				</g>
-				<GTag x={290} y={950} text="about 85% less insecticide" at={K7.fewer + 20} out={K7.gain - 10} size={24} />
-				<GTag x={620} y={950} text="holds while refuges work" at={K7.refuges + 10} out={K7.gain - 10} size={24} />
+				<GTag x={290} y={950} text="about 85% less insecticide" at={K7.fewer + 20} out={K7.gain - 10} size={28} />
+				<GTag x={700} y={950} text="holds while refuges work" at={K7.refuges + 10} out={K7.gain - 10} size={28} />
 				{/* the trade-off */}
 				<Sx x={FIELD.cx} y={fy0 + fh + 64} text="biodiversity trade-off" size={32} color={GREY_INK} weight={700} anchor="middle" at={K7.gain} />
-				<GTag x={1100} y={790} text="b12: yield isn't a level" at={K7.gain + 16} size={24} />
+				<GTag x={1100} y={790} text="b12: yield isn't a level" at={K7.gain + 16} size={28} />
 				{void K7.grows}{void K7.one}{void EDGE}{void DrawPath}{void clamp01}
 			</Overlay>
 		</>
@@ -179,7 +193,7 @@ const BOARD: {title: string; sub: string; plate: keyof typeof PLATES; pw: number
 	{title: 'growth hormone', sub: 'medicine', plate: 'hormone', pw: 28, cells: [{t: 'scarce, and some batches unsafe', k: 'full'}, {t: 'harm from old source documented; replaced 1985', k: 'full'}, undefined]},
 	{title: 'chymosin', sub: 'industry', plate: 'cheese', pw: 64, cells: [{t: 'same enzyme, no calves needed', k: 'full'}, {t: "used since about 1990, much of world's cheese", k: 'full'}, {t: 'cheesemakers: steady, cheaper supply', k: 'full'}]},
 ];
-const BX0 = 590, BCW = 310, BY0 = 215, BHEAD = 110, BRH = 196;
+const BX0 = 400, BCW = 360, BY0 = 190, BHEAD = 120, BRH = 215;
 const bcx = (c: number) => BX0 + c * BCW;
 const bry = (r: number) => BY0 + BHEAD + r * BRH;
 const wrapW = (text: string, w: number, size: number) => {
@@ -193,44 +207,60 @@ const wrapW = (text: string, w: number, size: number) => {
 	return out;
 };
 export const SceneRanking: React.FC = () => {
+	// Quality fix (6 Nov): the board is rebuilt full width (four 344 px columns from x 400), with 30 px hand cells
+	// (were 26 px in 270 px columns), 34 to 40 px titles, compact row labels (icon over a 32 px question), the empty
+	// growth hormone cell written as "depends on cost" (no dashed box), and the bottom chips at 28 to 30 px.
 	const f = useCurrentFrame();
 	const grow = smooth(prog(f, 0, 26));
 	const rowLit = (r: number) => (r === 0 ? vis(f, K8.did, K8.meas, 10) : r === 1 ? vis(f, K8.meas, K8.reaches, 10) : vis(f, K8.reaches, K8.gh - 6, 10));
 	const strong = (c: number, r: number) => (c === 0 || c === 2) && r < 2 ? prog(f, K8.gh, 12) : 0;
 	const pulse2 = (r: number) => (r === 1 ? Math.max(0, Math.sin(clamp01((f - K8.clear) / 30) * Math.PI)) : 0);
 	const thinCol = (c: number) => (c === 1 || c === 3 ? prog(f, K8.ins, 12) : 0);
+	const CS = 30, CL = 36;
 	return (
 		<>
 			<Heading text="Which benefits hold up best?" at={4} size={56} />
 			<Overlay>
 				<g opacity={grow} transform={`translate(${1800 * (1 - lerp(0.7, 1, grow))},${200 * (1 - lerp(0.7, 1, grow))}) scale(${lerp(0.7, 1, grow)})`}>
-					{[0, 1, 2].map(r => <TestLabel key={r} r={r as TestK} x={LABEL_X - 10} y={bry(r) + 40} lit={rowLit(r)} size={34} />)}
+					{[0, 1, 2].map(r => {
+						const l = rowLit(r);
+						const y = bry(r) + 22;
+						return (
+							<g key={r}>
+								<rect x={96} y={y} width={290} height={160} rx={20} fill={l > 0.5 ? '#fff3d9' : '#fffdf8'} stroke={l > 0.5 ? AMBER : EDGE} strokeWidth={l > 0.5 ? 4 : 2.5} />
+								<TestIcon k={r as TestK} x={241} y={y + 52} s={1.2} color={l > 0.5 ? AMBER_INK : INK_SOFT} />
+								<Sx x={241} y={y + 128} text={TESTS[r]} size={32} color={INK} hand weight={700} anchor="middle" />
+							</g>
+						);
+					})}
 					{BOARD.map((col, c) => {
 						const x = bcx(c);
 						const thin = thinCol(c);
+						const pw = col.pw * 1.45;
 						return (
 							<g key={c}>
-								<rect x={x} y={BY0} width={BCW - 16} height={BHEAD + 3 * BRH} rx={20} fill={CARD} stroke={thin > 0.5 ? AMBER : EDGE} strokeWidth={thin > 0.5 ? 2.5 : 2} />
-								<Pl p={PLATES[col.plate]} cx={x + 20 + col.pw / 2} cy={BY0 + 54} w={col.pw} />
-								<Sx x={x + 34 + col.pw} y={BY0 + 50} text={col.title} size={col.title.length > 10 ? 30 : 36} color={INK} hand weight={700} />
-								<Sx x={x + 34 + col.pw} y={BY0 + 82} text={col.sub} size={20} color={GREY_INK} weight={600} />
+								<rect x={x} y={BY0} width={BCW - 16} height={BHEAD + 3 * BRH} rx={20} fill={CARD} stroke={thin > 0.5 ? AMBER : EDGE} strokeWidth={thin > 0.5 ? 3 : 2} />
+								<Pl p={PLATES[col.plate]} cx={x + 22 + pw / 2} cy={BY0 + 60} w={pw} />
+								<Sx x={x + 38 + pw} y={BY0 + 58} text={col.title} size={col.title.length > 10 ? 32 : 40} color={INK} hand weight={700} />
+								<Sx x={x + 38 + pw} y={BY0 + 92} text={col.sub} size={24} color={GREY_INK} weight={600} />
 								{col.cells.map((cell, r) => {
 									const y = bry(r);
 									const st = strong(c, r);
 									const lit = Math.max(rowLit(r), st);
-									const lines = cell ? wrapW(cell.t, BCW - 90, 26) : [];
-									const hh = lines.length * 32 + 22;
-									const pz = 1 + 0.35 * rowLit(r) + 0.3 * pulse2(r) * st + (c === 1 && r === 2 ? 0.4 * Math.max(0, Math.sin(clamp01((f - K8.reach) / 30) * Math.PI)) : 0);
+									const lines = cell ? wrapW(cell.t, BCW - 100, CS) : [];
+									const hh = lines.length * CL + 22;
+									const pz = 1 + 0.35 * rowLit(r) + 0.3 * pulse2(r) * st + (c === 1 && r === 2 ? 0.45 * Math.max(0, Math.sin(clamp01((f - K8.reach) / 30) * Math.PI)) : 0);
+									const dx = x + BCW - 50, dy = y + 14 + hh / 2;
 									return (
 										<g key={r}>
 											<line x1={x + 14} x2={x + BCW - 30} y1={y - 6} y2={y - 6} stroke={EDGE} strokeWidth={2} />
 											{cell ? (
 												<g>
-													<rect x={x + 12} y={y + 14} width={BCW - 40} height={hh} rx={14} fill={st > 0.5 ? '#fff8e6' : '#f6f5f1'} stroke={st > 0.5 ? AMBER : EDGE} strokeWidth={st > 0.5 ? 3 + 2 * pulse2(r) : 2} />
-													{lines.map((t, i) => <Sx key={i} x={x + 28} y={y + 46 + i * 32} text={t} size={26} color={lit > 0.5 ? INK : GREY_INK} hand weight={700} at={-100} />)}
-													<g transform={`translate(${x + BCW - 52},${y + 14 + hh / 2}) scale(${pz}) translate(${-(x + BCW - 52)},${-(y + 14 + hh / 2)})`}><Dot x={x + BCW - 52} y={y + 14 + hh / 2} k={cell.k} r={13} grey={lit > 0.5 ? 0 : 1} /></g>
+													<rect x={x + 10} y={y + 14} width={BCW - 36} height={hh} rx={14} fill={st > 0.5 ? '#fff8e6' : '#f6f5f1'} stroke={st > 0.5 ? AMBER : EDGE} strokeWidth={st > 0.5 ? 3 + 2 * pulse2(r) : 2} />
+													{lines.map((t, i) => <Sx key={i} x={x + 24} y={y + 14 + 11 + CS * 0.95 + i * CL} text={t} size={CS} color={lit > 0.5 ? INK : GREY_INK} hand weight={700} at={-100} />)}
+													<g transform={`translate(${dx},${dy}) scale(${pz}) translate(${-dx},${-dy})`}><Dot x={dx} y={dy} k={cell.k} r={15} grey={lit > 0.5 ? 0 : 1} /></g>
 												</g>
-											) : <rect x={x + 12} y={y + 14} width={BCW - 40} height={70} rx={14} fill="none" stroke={GREYT} strokeWidth={2} strokeDasharray="6 6" />}
+											) : <Sx x={x + 24} y={y + 56} text="depends on cost" size={CS} color={GREY_INK} hand weight={700} at={K8.gh + 30} />}
 										</g>
 									);
 								})}
@@ -238,15 +268,13 @@ export const SceneRanking: React.FC = () => {
 						);
 					})}
 				</g>
-				<GTag x={bcx(2) + 20} y={bry(2) + 100} text="depends on cost" at={K8.gh + 30} out={K8.reach} size={24} />
-				<GTag x={bcx(1) + 20} y={bry(2) + 120} text="reach depends on price" at={K8.reach + 6} out={K8.other} size={24} />
 				<g opacity={vis(f, K8.other, undefined, 14)}>
-					<Pl p={PLATES.cotton} cx={bcx(0) + 50} cy={980} w={80} />
-					<RefugeStrip x={bcx(0) + 100} y={950} w={120} h={50} />
+					<Pl p={PLATES.cotton} cx={460} cy={1000} w={90} />
+					<RefugeStrip x={520} y={970} w={130} h={56} />
 				</g>
-				<GTag x={bcx(0) + 240} y={958} text="depends on management" at={K8.managed} size={24} />
-				<MistakeChip x={1220} y={960} text="most advanced = most beneficial" at={K8.advanced - 10} cross={K8.advanced + 20} size={30} />
-				{void K8.so}{void K8.gains}{void AMBER_INK}{void INK_SOFT}{void TESTS}{void TestIcon}{void labelY}
+				<GTag x={670} y={972} text="depends on management" at={K8.managed} size={28} />
+				<MistakeChip x={1180} y={970} text="most advanced = most beneficial" at={K8.advanced - 10} cross={K8.advanced + 20} size={30} />
+				{void K8.so}{void K8.gains}{void labelY}{void LABEL_X}{void TestLabel}{void GREYT}
 			</Overlay>
 		</>
 	);

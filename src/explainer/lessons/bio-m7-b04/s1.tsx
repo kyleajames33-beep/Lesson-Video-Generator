@@ -22,13 +22,18 @@ export const HEAD = 'How does disease damage farm production?';
 const OK = PLATES.wheatOk, SICK = PLATES.wheatSick;
 
 // ---------- 1. Hook ----------
-const K1 = cues(S('hook'), {nursery: 'one nursery', length: 'the length of the east coast', euc: 'on eucalypts', how: 'So how does disease', far: 'far past the sick'});
+// Quality fix (6 Nov): the map no longer shrinks to a thumbnail on "So how". It settles at half size in the top left,
+// the rust leaf and the lemon myrtle rows fill the farm side, and on "the bill ... far past" the gate draws with the
+// container and the closed gate past it, so the question is drawn: the sick plant and animal, then the bill beyond.
+const K1 = cues(S('hook'), {nursery: 'one nursery', length: 'the length of the east coast', euc: 'on eucalypts', how: 'So how does disease', farm: 'farm production', bill: 'the bill', reach: 'reach far', far: 'far past the sick', sick: 'sick plants', animals: 'and animals'});
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
 	const sh = smooth(prog(f, K1.how, 30));
-	const m = {cx: lerp(700, 250, sh), cy: lerp(570, 340, sh), s: lerp(1.1, 0.34, sh)};
+	const m = {cx: lerp(700, 290, sh), cy: lerp(570, 420, sh), s: lerp(1.1, 0.5, sh)};
 	const leafIn = prog(f, K1.euc, 16);
-	const lw = lerp(620, 200, sh);
+	const lw = lerp(620, 420, sh);
+	const lcx = lerp(1450, 800, sh), lcy = lerp(560, 380, sh) + (1 - smooth(leafIn)) * 40;
+	const cIn = smooth(prog(f, K1.reach, 22));
 	return (
 		<>
 			<Heading text={HEAD} at={K1.how + 10} size={58} />
@@ -39,9 +44,18 @@ export const SceneHook: React.FC = () => {
 				<MapDot ll={LL.centralCoast} {...m} at={K1.nursery} pulseAt={K1.nursery} r={13} />
 				<GTag x={1030} y={740} text="Central Coast NSW, April 2010" at={K1.nursery + 10} out={K1.how} anchor="end" />
 				<GTag x={980} y={290} text="east coast within a few years" at={K1.length + 40} out={K1.how} />
-				<Pl p={PLATES.leafRust} cx={lerp(1450, 520, sh)} cy={lerp(560, 340, sh) + (1 - smooth(leafIn)) * 40} w={lw} o={leafIn} />
+				<Pl p={PLATES.rows} cx={700} cy={800} w={640} o={prog(f, K1.farm, 18)} />
+				<CTag x={700} y={1004} text="lemon myrtle farm" at={K1.farm + 10} color={GREY_INK} size={30} anchor="middle" />
+				<Pl p={PLATES.leafRust} cx={lcx} cy={lcy} w={lw} o={leafIn} />
 				<CTag x={1450} y={790} text="myrtle rust" at={K1.euc + 10} out={K1.how} color={AMBER_INK} size={36} anchor="middle" />
-				<Gate at={K1.far} y0={230} />
+				<CTag x={800} y={528} text="myrtle rust" at={K1.how + 20} color={AMBER_INK} size={36} anchor="middle" dim={prog(f, K1.sick, 10) * 0.6} />
+				<Ring cx={lcx + 60} cy={lcy} rx={150} ry={95} at={K1.sick} />
+				<Pl p={PLATES.hoofSick} cx={1130} cy={720} w={170} o={prog(f, K1.animals, 14)} />
+				<Gate at={K1.far} y0={200} y1={1000} labelAt={K1.far + 6} sidesAt={K1.far + 12} />
+				<Pl p={PLATES.container} cx={lerp(1980, 1610, cIn)} cy={430} w={400} o={prog(f, K1.reach, 12)} />
+				<Pl p={PLATES.gate} cx={1610} cy={760} w={340} o={prog(f, K1.far + 10, 16)} />
+				<CTag x={1610} y={250} text="the bill" at={K1.bill} color={AMBER_INK} size={44} anchor="middle" />
+				<CurveArrow a={[960, 300]} b={[1390, 330]} at={K1.far + 4} bow={-60} color={AMBER} width={5} />
 			</Overlay>
 		</>
 	);

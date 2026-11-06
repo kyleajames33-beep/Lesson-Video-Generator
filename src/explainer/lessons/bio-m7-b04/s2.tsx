@@ -11,7 +11,7 @@ import {Overlay} from '../bio-m5-b13/shared';
 import {Drift} from '../bio-m7-b03/parts';
 import {S} from './common';
 import {
-	AMBER, AMBER_INK, AusMap, CTag, CardBox, Crop, CurveArrow, DotGrid, DoorBar, DrawPath, FEAT, GREEN, GREYT, GREY_INK, GTag, GX, Gate, GrowBar, INK, PLATES, Pl,
+	AMBER, AMBER_INK, AusMap, CTag, CardBox, ClockMark, Crop, CurveArrow, DotGrid, DoorBar, DrawPath, FEAT, GREEN, GREYT, GREY_INK, GTag, GX, Gate, GrowBar, INK, PLATES, Pl,
 	Ring, SideWash, Sx, TEAL, XFade, fitW, lerp, plH, prog, ptOf, smooth, vis,
 } from './parts';
 
@@ -122,28 +122,67 @@ export const SceneExporters: React.FC = () => {
 };
 
 // ---------- 10. How to assess an effect ----------
-const K10 = cues(S('assess'), {big: 'how big', long: 'how long', far: 'how far', rust: 'Rust in one wheat', settles: 'settles in for good', closes: 'closes markets'});
+// Quality fix (6 Nov): three large panels, one per question, each drawn from its cue so the frame is never three tags
+// alone. How big: a paddock grid filling with the lost share, then the rust leaf ("that harvest"). How long: a clock and
+// a time line; one season (teal) against years (amber, the myrtle rust leaf). How far: the farm gate, the cattle and the
+// barred container, and an arrow running past the gate.
+const K10 = cues(S('assess'), {big: 'how big', long: 'how long', far: 'how far', rust: 'Rust in one wheat', harvest: 'costs that harvest', settles: 'settles in for good', closes: 'closes markets', reaches: 'reaches far beyond'});
+const PAN = [110, 695, 1280], PW = 530;
 export const SceneAssess: React.FC = () => {
 	const f = useCurrentFrame();
-	const sh = smooth(prog(f, 0, 26));
-	const qs = [{at: K10.big, x: 360, t: 'how big?'}, {at: K10.long, x: 960, t: 'how long?'}, {at: K10.far, x: 1560, t: 'how far?'}];
+	const qs = [{at: K10.big, t: 'how big?'}, {at: K10.long, t: 'how long?'}, {at: K10.far, t: 'how far?'}];
 	const sk = PLATES.wheatSick;
+	const c1 = PAN[0] + PW / 2, c2 = PAN[1] + PW / 2, c3 = PAN[2] + PW / 2;
+	const lost = [7, 8, 13, 14, 15, 19, 20, 21, 9];
+	const ct = {cx: 1690, cy: 470, w: 210};
+	const d0 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[0]);
+	const d1 = ptOf(PLATES.container, ct.cx, ct.cy, ct.w, FEAT.doors[1]);
+	const ax0 = c2 - 220, axW = 440;
 	return (
 		<Overlay>
-			<Gate at={-100} y0={lerp(200, 660, sh)} labelAt={-100} sidesAt={-100} />
-			{qs.map(q => <CTag key={q.t} x={q.x} y={190} text={q.t} at={q.at} color={AMBER_INK} size={46} anchor="middle" />)}
-			<Crop p={sk} cx={800} cy={420} w={(sk.box[2] - sk.box[0]) * (190 / (sk.box[3] - sk.box[1]))} id="b04-s10-wheat" o={prog(f, K10.rust, 14)} />
-			<GrowBar x={870} y={408} w={110} h={24} at={K10.rust + 10} color={TEAL} />
-			<GTag x={1000} y={398} text="one season" at={K10.rust + 22} />
-			<Pl p={PLATES.leafRust} cx={780} cy={580} w={220} o={prog(f, K10.settles, 14)} />
-			<GrowBar x={910} y={568} w={1040} h={24} at={K10.settles + 10} color={AMBER} dur={40} />
-			<GTag x={1300} y={510} text="years" at={K10.settles + 30} />
-			<Pl p={PLATES.container} cx={1090} cy={850} w={240} o={prog(f, K10.closes, 14)} />
-			{f >= K10.closes + 12 ? <DrawPath d="M1225,850 L1915,850" at={K10.closes + 12} dur={30} color={AMBER} width={6} dash="4 10" /> : null}
-			<GTag x={1340} y={872} text="past the farm gate" at={K10.closes + 30} />
+			{qs.map((q, i) => {
+				const o = prog(f, q.at, 14);
+				return o > 0.01 ? (
+					<g key={q.t} opacity={o} transform={`translate(0,${(1 - smooth(o)) * 24})`}>
+						<rect x={PAN[i]} y={170} width={PW} height={840} rx={26} fill="#fffdf8" stroke={EDGE2} strokeWidth={2.5} />
+					</g>
+				) : null;
+			})}
+			{qs.map((q, i) => <CTag key={q.t} x={PAN[i] + PW / 2} y={200} text={q.t} at={q.at} color={AMBER_INK} size={48} anchor="middle" />)}
+			{/* how big */}
+			{f >= K10.big + 6 ? Array.from({length: 24}, (_, i) => {
+				const x = c1 - 211 + (i % 6) * 72, y = 320 + Math.floor(i / 6) * 72;
+				const li = lost.indexOf(i);
+				const am = li >= 0 ? prog(f, K10.big + 16 + li * 4, 8) : 0;
+				return <rect key={i} x={x} y={y} width={62} height={62} rx={8} fill={am > 0.5 ? '#e9a640' : '#b7c99a'} stroke={am > 0.5 ? AMBER_INK : '#6f8a4a'} strokeWidth={2} opacity={prog(f, K10.big + 6 + i, 6)} />;
+			}) : null}
+			<Sx x={c1} y={650} text="share of the crop lost" size={34} color={INK} hand anchor="middle" at={K10.big + 30} />
+			<Crop p={sk} cx={c1} cy={770} w={(sk.box[2] - sk.box[0]) * (400 / (sk.box[3] - sk.box[1]))} rot={-90} id="b04-s10-wheat2" o={prog(f, K10.rust, 14)} />
+			<CTag x={c1} y={880} text="rust: that harvest" at={K10.harvest} color={TEAL} size={36} anchor="middle" />
+			{/* how long */}
+			<ClockMark x={c2} y={362} r={62} at={K10.long} />
+			{f >= K10.long + 8 ? <DrawPath d={`M${ax0},500 L${ax0 + axW},500`} at={K10.long + 8} dur={16} color={INK_SOFT2} width={3} /> : null}
+			{[0, 1, 2, 3, 4, 5].map(i => <line key={i} x1={ax0 + (i * axW) / 5} x2={ax0 + (i * axW) / 5} y1={490} y2={510} stroke={INK_SOFT2} strokeWidth={3} opacity={prog(f, K10.long + 14 + i * 2, 6)} />)}
+			<Sx x={ax0 + axW} y={545} text="years" size={28} color={GREY_INK} weight={700} anchor="end" at={K10.long + 20} />
+			<GrowBar x={ax0} y={420} w={70} h={34} at={K10.rust + 10} color={TEAL} />
+			<Sx x={ax0 + 90} y={448} text="one season" size={34} color={TEAL} hand weight={700} at={K10.rust + 18} />
+			<Pl p={PLATES.leafRust} cx={c2} cy={720} w={330} o={prog(f, K10.settles, 14)} />
+			<GrowBar x={ax0} y={570} w={axW} h={34} at={K10.settles + 10} color={AMBER} dur={40} />
+			<CTag x={c2} y={880} text="settles in: for years" at={K10.settles + 30} color={AMBER_INK} size={36} anchor="middle" />
+			{/* how far */}
+			{f >= K10.far ? <DrawPath d={`M${c3},345 L${c3},830`} at={K10.far} dur={18} color={GREYT} width={4} dash="16 12" /> : null}
+			<Sx x={c3} y={330} text="farm gate" size={28} color={GREY_INK} weight={600} anchor="middle" at={K10.far + 6} />
+			<Pl p={PLATES.cattle} cx={1410} cy={470} w={200} o={prog(f, K10.closes, 14)} />
+			<Pl p={PLATES.container} cx={ct.cx} cy={ct.cy} w={ct.w} o={prog(f, K10.closes + 6, 14)} />
+			<DoorBar a={d0} b={d1} at={K10.closes + 16} />
+			<Sx x={1690} y={590} text="markets closed" size={32} color={AMBER_INK} hand weight={700} anchor="middle" at={K10.closes + 20} />
+			{f >= K10.reaches ? <DrawPath d={`M1330,700 L1800,700`} at={K10.reaches} dur={30} color={AMBER} width={7} dash="4 12" /> : null}
+			{f >= K10.reaches + 28 ? <DrawPath d="M1774,682 L1802,700 L1774,718" at={K10.reaches + 28} dur={6} color={AMBER} width={7} /> : null}
+			<CTag x={c3} y={880} text="far beyond the farm" at={K10.reaches + 10} color={AMBER_INK} size={36} anchor="middle" />
 		</Overlay>
 	);
 };
+const EDGE2 = '#d9cfbb', INK_SOFT2 = '#6b6253';
 
 // ---------- 11. Memory ----------
 const K11 = cues(S('memory'), {count: 'count past the farm gate', first: 'the first cost', control: 'Control', markets: 'markets and ecosystems', eco: 'ecosystems'});
