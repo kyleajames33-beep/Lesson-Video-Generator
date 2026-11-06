@@ -128,3 +128,22 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
 40. **New half-scenes:** f06 5a (`whole-board`) and f07 4a (`whole-journey`) need ids in the lesson entries.
 41. **f06's rice claim** ("hundreds of years of the world's rice harvest") goes to the maths check against a current FAO figure. f07 says "suppose half" for the rebound. f08's final frame keeps the red "−$600" arc for f09's join. f07 reuses the Biology tennis ball directly.
 42. **Kit additions (next kit pass):** `SpriteStack` (nest, pyramid, ghost), `TermPlot`, `StepCounter`, `PairingRectangle`, `PeriodTimeline`, a sprite field with slots, `FoldLayers`, `LogRuler`, `ShiftCancelRows`, `BoardGrid`, a big-number readout, `BounceRig`, `ConvergenceStrip`, two plate riders on one plot, and studio versions of `TermLadder`, `PartialSumStack` and `SigmaBuilder`.
+
+## s01 to s06 (wave 8, not yet voiced)
+
+43. **Anchors:**
+    - s01: a board-game die rolled 200 times. It is kept because f15's handoff and the site's data use it.
+    - s02: a tear-off desk calendar (pages are equally likely, dates are not);
+    - s03: a cat's vet visits and a pet insurer (the site's numbers), chosen over a carnival game to avoid gambling;
+    - s04: sprinters' reaction times at a school athletics carnival;
+    - s05: a parcel delivery window;
+    - s06: choc chips on a cookie (the site's x/8 on [0, 4]).
+    The s02 STATISTICS-letters example moves to the strand practice video, if wanted. s04's feedback 1 (about 32 s) is accepted.
+44. **Colours.** The CDF is violet from s04 to s06. s01's A2 uses yellow counters.
+45. **Kit additions (next kit pass): a probability set.**
+    - `ProbabilityBars`, `RollSimulator`, `DistributionTable`, `StackedTotalBar`, `OutcomeDrop` and `OutcomeSort`, and spinner sectors;
+    - `CalendarFlip`, `YearStrip`, `OutcomeGrid`;
+    - `BalanceBeam` (with a linked slider), `RunningMeanTrace`, `DeviationArms`, `SpreadBrackets`;
+    - `ClassHistogram`, `HeatsToHistogram`, `ShrinkingWindow`, `CdfTracer`, `CdfSubtraction`;
+    - `StripRiseRatio`, `ArrivalDots`, `TrackerFill`;
+    - `ChipScatter`, `SlidingWindow`, `QuantileReader`.
