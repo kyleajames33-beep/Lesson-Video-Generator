@@ -25,3 +25,20 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
    - a question-card axes picture.
    Root builds these as one kit pass before the d02 to d05 builds.
 8. **New plates** for Codex: `ma12-coin-jar-v1`, `ma12-coin-jar-full-v1`, `ma12-coin-v1`, `ma12-phone-v1`, `ma12-stopwatch-v1`, and `ma12-ferris-wheel-rim-v1`, `-stand-v1`, `-gondola-v1` and `-gondola-marked-v1`.
+
+## d06 to d09 (wave 2)
+
+9. **Anchors:**
+   - d06: a bike crank (height sin x; pedalling faster gives the inner rate);
+   - d07: a timber deck growing both ways;
+   - d08: a road trip's average speed;
+   - d09: a hike's elevation profile, with a flat ledge that is not a turning point.
+10. **d09 and d10 function colour.** x³ − 3x stays blue in d09 and d10 to keep the join; this pair is the exception to the ink function role.
+11. **d08 to d09 excluded value.** Accepted: it turns grey as d08's frame shrinks, because d09 uses amber for "decreasing".
+12. **Plates commissioned:** `ma12-bike-crankset-v1`, `ma12-bike-pedal-v1`, `ma12-timber-deck-v1`, `ma12-timber-deck-top-v1` (exactly 2:1), `ma12-country-road-v1` (tileable) and `ma12-hiking-valley-v1`. Reused: `y11c-bike-frame-v1`, `y11c-bike-wheel-v1`, `b4-car-blue-v1` and `phys-y11-dashboard-cluster-v1`.
+13. **Notes hold.** The voiced notes takes were measured with a 60 s hold. Builds fix every Maths key-notes scene at 1,350 frames (45 s); re-measuring is not needed.
+14. **Re-voice lists:** d06 scenes 1 and 3; d07 scenes 1 and new 1a; d08 scenes 1 and new 1a; d09 scene 1. New takes are named `scene-01a`. d07 1a (728 characters) has a trim reserve.
+15. **Kit additions** join decision 7:
+    - `FunctionRider` (merge with `FunctionSimulator`), `RotatingPlate`, `RateChainStrips`, `AreaStrips` with growth bars, and `TripSim`;
+    - a moving domain strip, and studio-sized `Cancellation`, `SignStrip`, `PairedDerivativePanel` and `TangentTriangle`;
+    - a `QuestionCard` picture slot with a `GivensStrip`.
