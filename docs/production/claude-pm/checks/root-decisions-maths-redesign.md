@@ -94,3 +94,17 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - new parts: `NetFlowArrow`, `ThermoColumn`, a level fill against a plate, a plate meter readout and a constant-family slider;
     - studio versions of `AccumulationTracer`, `LowerLimitDial`, `LimitSubstitution`, `AreaFlip`, `HorizontalStrips`, `SwapReflection`, `SymmetryPairs`, `CoefficientLedger`, `ToolPanel` and `UnitProduct`;
     - extensions: backwards and trapezium modes on `AreaStrips`, reverse and odometer on `TripSim`, and plate sprites on `ParticleTrack`.
+
+## i01 to i07 (wave 6, not yet voiced)
+
+33. **Anchors:**
+    - i01: bean shoots on bookcase shelves (+ C is the soil level). This is a kitchen-garden context, not biology teaching. Accepted.
+    - i02: a sourdough starter rising in a jar;
+    - i03: a phone charging (the site's drug example stays alongside);
+    - i04: fundraiser donations (1000/t);
+    - i05: solar panels over a day;
+    - i06: a rain gauge in an easing storm;
+    - i07: a bath filling with the plug out.
+34. **i08 recall** now names the rain gauge and the bath (root edit, 6,132 characters). i05's "each piece can have its own constant" stays screen-only, per the earlier decision.
+35. **Site source.** The site repo is no longer on this machine (deleted 6 Nov; backed up on GitHub). The redesigns keep each site worked example exactly as recorded in the design. Codex's maths check confirms them against the live site.
+36. **Kit additions (next kit pass):** `PrimitiveFamily`, `IntegralNotation`, `DerivativeCheck`, a reveal mode for `ContainerFill`, masked plate rise, gradient dots against a target, a two-piece tracer, `DerivativeWheel`, `StudioRiemannStrips` (signed), `StudioAreaFill`, `RefinementTable` and a balance bar.
