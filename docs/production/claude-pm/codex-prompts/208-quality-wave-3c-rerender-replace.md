@@ -1,5 +1,7 @@
 # Brief 208: quality fix wave 3c (B grades), re-render and replace six Biology Module 5 videos
 
+**SHELVED (owner, 6 Nov evening): do not run until root re-queues it.** B-grade polish re-renders wait until render time is free; the scene fixes stay committed.
+
 Read `00-standing-rules.md` and brief 198 (its method). Do not spawn sub-agents. No design, narration or scene-code edits, no new speech, no commits. One render at a time. Run after brief 207.
 
 Claude fixed the scene code of these B-graded videos on their existing narration and measured timing (see the git log for their lesson folders). Notes and fixed contact sheets are in `quality-fixes/<id>-notes.md` and `-sheet.jpg`. The six videos: `bio-m5-b10`, `bio-m5-b11`, `bio-m5-b12`, `bio-m5-p01`, `bio-m5-p02` and `bio-m5-p03`.

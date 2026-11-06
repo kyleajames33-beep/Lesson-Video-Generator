@@ -43,6 +43,17 @@ Painted plates are allowed and expected for the anchor and any real object. Use 
 
 ## Build gate (every course, from 6 November)
 
+**Grade A before any render (owner, 6 November evening).** Every new or rebuilt video must grade A on its 16-frame contact sheet (`quality-fixes/rubric.md`) before its full render. B+ is not enough. The builder grades the sheet, and root signs it off. A means every one of the 16 frames passes all of these:
+- **No thin frame.** No title-only frame and no frame with only one line or one small object. An exam or question card arrives with its full text. Scene openings already hold the scene's main visual.
+- **The picture carries the idea.** A painted plate, or a live simulation with readouts, is on screen in most teaching frames, and no frame is text only where an organism, apparatus or process could be shown.
+- **Change.** A new visual idea at least every 60 to 90 s; no two consecutive frames show the same unchanged set-up during teaching.
+- **Worked examples** use the g01 layout, with a framed answer and a crossed classic slip.
+- **Type** meets the sizes below. No faint or ghosted text that a student must read.
+- **Key notes** are about five short bullets, with the framed memory card. The quiet notes hold is at least 40 s in all.
+- **Fill.** Nothing pushed into a corner; no frame more than about 40% empty during teaching.
+
+A sheet that fails any frame goes back for a fix and a new sheet before the render. This applies to the course pilots too.
+
 - **One pilot per course.** The first build in each new course (Maths, Year 11 Chemistry, Year 12 Physics, Year 11 Biology and Physics) is rendered alone and shown to the owner. No further builds in that course start until the owner accepts it.
 - **Contact-sheet check before every full render.** Make a 16-frame contact sheet (evenly spaced) from the short pilot or stills. Place it beside `assets/maths-std-ref-chem-m5-g01.jpg` and record the result in the build report.
 - **Any of these blocks the render:**

@@ -27,6 +27,9 @@ Claude committed your previous outputs on 6 November (reports, measured data, th
 
 ## Queue, in this order
 
+Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course work come before polish re-renders. Every new video must grade A on its contact sheet before render (`maths-visual-standard.md`, build gate).
+
+
 1. **Fix YouTube access first.**
    - Diagnose the browser or Windows tool initialisation error.
    - If you can't fix it, write the exact error plainly in `status.md` so the owner can upload by hand, and carry on with step 2 onwards without uploading.
@@ -35,9 +38,9 @@ Claude committed your previous outputs on 6 November (reports, measured data, th
 3. **213:** voice d01 Revision 6, the Maths owner pilot. It is short and uses the Google voice; run it before or after the 19:00 scheduled task, not alongside.
 3b. **217:** check and voice the two science pilots (chem-y11-m2-v06 and phys-y12-m5-v04), straight after 213.
 4. **199:** re-render the four Chemistry videos with render defects, check chem-m7-p06, and resolve the c10/c05 link record. g03 was already found in 196; reuse that work.
-5. **Re-render-and-replace briefs, in number order:** 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212. Claude has already fixed each video's scene code. You render v2, scan it, compare its sheet with Claude's, do a playback check, and replace it on YouTube (or add it to `work/youtube-pending.json` if access is still broken).
+5. **Re-render-and-replace, C grades only (owner, 6 Nov evening):** 198, 200, 201, 202, 203, 204 and 205. Claude has already fixed each video's scene code. You render v2, scan it, compare its sheet with Claude's, do a playback check, and replace it on YouTube (or add it to `work/youtube-pending.json` if access is still broken). **Shelved, do not run:** 206 to 212 and 215 (B-grade polish). Their scene fixes are committed and will be rendered later, when render time is free.
 6. **214:** error check of Claude's brief 180 repairs, then one plate. It is light work and may run alongside a render.
 7. **Production reviews and plates:** 191, 192 and 193 (Year 12 Physics Modules 7 and 8).
-8. Any brief numbered above 214 (check the folder): 215 (re-render wave 4b) goes after 212; 216 (error check, light) goes after 214.
+8. Any brief numbered above 214 (check the folder), except the shelved 215: 216 (error check, light) goes after 214.
 
 Hand in to `status.md` after each brief, as before.

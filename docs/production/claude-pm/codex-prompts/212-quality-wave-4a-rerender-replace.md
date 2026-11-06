@@ -1,5 +1,7 @@
 # Brief 212: quality fix wave 4a (B grades), re-render and replace three Biology Module 7 practicals and three Biology Module 8 videos
 
+**SHELVED (owner, 6 Nov evening): do not run until root re-queues it.** B-grade polish re-renders wait until render time is free; the scene fixes stay committed.
+
 Read `00-standing-rules.md` and brief 198 (its method). Do not spawn sub-agents. No design, narration or scene-code edits, no new speech, no commits. One render at a time. Run after brief 211.
 
 Claude fixed the scene code of these B-graded videos on their existing narration and measured timing (commits ee596579 and 821dd335). Notes and fixed contact sheets are in `quality-fixes/<id>-notes.md` and `-sheet.jpg`. The six videos are:

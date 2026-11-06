@@ -1,5 +1,7 @@
 # Brief 215: quality fix wave 4b (B grades), re-render and replace six Chemistry Module 5 videos
 
+**SHELVED (owner, 6 Nov evening): do not run until root re-queues it.** B-grade polish re-renders wait until render time is free; the scene fixes stay committed.
+
 Read `00-standing-rules.md` and brief 198 (its method). Do not spawn sub-agents. No design, narration or scene-code edits, no new speech, no commits. One render at a time. Run after brief 212.
 
 Claude fixed the scene code of these B-graded videos on their existing narration and measured timing. Notes and fixed contact sheets are in `quality-fixes/<id>-notes.md` and `-sheet.jpg`. The six videos, all in the Chemistry Module 5 playlist, are `chem-m5-c05`, `chem-m5-c07`, `chem-m5-c11`, `chem-m5-c13`, `chem-m5-p01` and `chem-m5-p03`.
