@@ -31,6 +31,7 @@ Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course w
 
 
 0. **225 (top priority, added late on 6 Nov):** render the d01 Maths pilot (now built and graded A) and hand the owner an unlisted link. Run it next.
+0b. **227 (top priority, straight after 225):** render the Year 11 Chemistry and Year 12 Physics pilots (built and graded A) and hand the owner unlisted links.
 1. **Fix YouTube access first.**
    - Diagnose the browser or Windows tool initialisation error.
    - If you can't fix it, write the exact error plainly in `status.md` so the owner can upload by hand, and carry on with step 2 onwards without uploading.
