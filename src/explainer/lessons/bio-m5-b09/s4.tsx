@@ -7,7 +7,7 @@ import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, AaAa_D, AlleleChip, AnswerBox, Chip, Coin, Countdown, CPLUM, EDGE, Enter, FONT_DISPLAY, FONT_HAND, Fade, GameteDisc, GenoTag, GreyTag,
 	HandText, Heading, INK, INK_SOFT, MistakeChip, ModelLine, Overlay, P3, PL9, PSym, Pedigree, PlateB, Punnett, RRrr, Rrrr, S, Sx, TEALC, Trio, fadeV, hold,
-	notesCheck, prog, rng, wrap,
+	notesCheck, prog, rng, wrap, INSET, PlainArrow, SERIF, chipW,
 } from './shared';
 import type {PLay} from './shared';
 
@@ -89,24 +89,25 @@ export const SceneAttemptTwoB9: React.FC = () => {
 		<>
 			<Heading text="Round and wrinkled pea seeds" at={K13.second} size={52} />
 			<Overlay>
-				<PlateB p={PL9.round} cx={260} cy={330} w={130} o={prog(f, K13.plant, 12)} />
-				<Sx x={260} y={440} text="round parent (seed)" size={30} color={INK} hand anchor="middle" at={K13.plant + 4} />
-				<Sx x={430} y={346} text="×" size={56} color={INK} weight={800} anchor="middle" at={K13.wr} />
-				<PlateB p={PL9.wrinkled} cx={600} cy={330} w={130} o={prog(f, K13.wr, 12)} />
-				<Sx x={600} y={440} text="wrinkled parent (seed)" size={30} color={INK} hand anchor="middle" at={K13.wr + 4} />
-				<Sx x={130} y={520} text="round (R) is dominant to wrinkled (r)" size={34} color={INK} weight={700} at={K13.round} />
+				{/* the two seed kinds arrive with the dominance statement, then become the parents */}
+				<PlateB p={PL9.round} cx={250} cy={350} w={200} o={prog(f, K13.round - 30, 12)} />
+				<Sx x={250} y={510} text="round parent (seed)" size={34} color={INK} hand anchor="middle" at={K13.plant + 4} />
+				<Sx x={450} y={370} text="×" size={64} color={INK} weight={800} anchor="middle" at={K13.wr} />
+				<PlateB p={PL9.wrinkled} cx={650} cy={350} w={200} o={prog(f, K13.round - 20, 12)} />
+				<Sx x={650} y={510} text="wrinkled parent (seed)" size={34} color={INK} hand anchor="middle" at={K13.wr + 4} />
+				<Sx x={450} y={226} text="round (R) is dominant to wrinkled (r)" size={36} color={INK} weight={700} anchor="middle" at={K13.round} />
 				<Fade at={K13.prod}>
-					<rect x={900} y={240} width={760} height={250} rx={22} fill="#fffdf8" stroke="rgba(60,45,20,0.25)" strokeWidth={3} />
-					<Sx x={930} y={290} text="offspring seeds" size={34} color={INK_SOFT} hand />
+					<rect x={900} y={240} width={900} height={290} rx={22} fill="#fffdf8" stroke="rgba(60,45,20,0.25)" strokeWidth={3} />
+					<Sx x={930} y={292} text="offspring seeds" size={38} color={INK_SOFT} hand />
 				</Fade>
-				<PlateB p={PL9.round} cx={980} cy={385} w={90} o={prog(f, K13.n52, 12)} />
-				<Sx x={1040} y={404} text="52 round" size={44} color={INK} weight={800} at={K13.n52} />
-				<PlateB p={PL9.wrinkled} cx={1320} cy={385} w={90} o={prog(f, K13.n48, 12)} />
-				<Sx x={1380} y={404} text="48 wrinkled" size={44} color={INK} weight={800} at={K13.n48} />
-				<Sx x={96} y={640} text={D2A} size={30} color={INK} weight={700} at={K13.use} />
-				<AnswerBox x={96} y={656} w={1180} h={70} at={K13.use + 8} lines={1} />
-				<Sx x={96} y={800} text={D2B} size={30} color={INK} weight={700} at={K13.then} />
-				<AnswerBox x={96} y={816} w={1180} h={70} at={K13.then + 8} lines={1} />
+				<PlateB p={PL9.round} cx={1000} cy={410} w={120} o={prog(f, K13.n52, 12)} />
+				<Sx x={1076} y={430} text="52 round" size={52} color={INK} weight={800} at={K13.n52} />
+				<PlateB p={PL9.wrinkled} cx={1400} cy={410} w={120} o={prog(f, K13.n48, 12)} />
+				<Sx x={1476} y={430} text="48 wrinkled" size={52} color={INK} weight={800} at={K13.n48} />
+				<Sx x={96} y={650} text={D2A} size={32} color={INK} weight={700} at={K13.use} />
+				<AnswerBox x={96} y={668} w={1180} h={70} at={K13.use + 8} lines={1} />
+				<Sx x={96} y={808} text={D2B} size={32} color={INK} weight={700} at={K13.then} />
+				<AnswerBox x={96} y={826} w={1180} h={70} at={K13.then + 8} lines={1} />
 				<Fade at={K13.use + 6}>
 					<rect x={1400} y={600} width={240} height={240} rx={10} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={3} strokeDasharray="10 7" />
 					<line x1={1520} y1={600} x2={1520} y2={840} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="10 7" />
@@ -168,28 +169,56 @@ export const SceneFeedbackTwoB9: React.FC = () => {
 
 // ---------- 12. Decision rule and handoff ----------
 const K15 = cues(S('decision-rule'), {write: "write the parents' genotypes", split: 'split each into its gametes', fill: 'fill the square', read: 'read the ratios as chances', ped: 'For a pedigree', give: 'look for the giveaway', test: 'test it against named people', then: 'and then use the square', next: 'Next genes on the X', alleles: "alleles that aren't simply"});
+const SC = {y: 190, h: 330, w: 400};
+const scX = (i: number) => 290 + i * 440;
 export const SceneDecisionB9: React.FC = () => {
 	const f = useCurrentFrame();
-	const steps: {at: number; text: string; icon: React.ReactNode}[] = [
-		{at: K15.write, text: '1  genotypes', icon: <><AlleleChip x={190} y={272} t="T" r={20} /><AlleleChip x={236} y={272} t="t" r={20} /></>},
-		{at: K15.split, text: '2  gametes', icon: <GameteDisc x={212} y={392} t="T" r={30} edge={CPLUM} />},
-		{at: K15.fill, text: '3  square', icon: <g><rect x={186} y={486} width={56} height={56} rx={4} fill="#fffdf8" stroke={INK} strokeWidth={3} /><line x1={214} y1={486} x2={214} y2={542} stroke={INK} strokeWidth={2} /><line x1={186} y1={514} x2={242} y2={514} stroke={INK} strokeWidth={2} /></g>},
-		{at: K15.read, text: '4  ratios = chances for each offspring', icon: <Coin x={214} y={636} r={22} from={K15.read} to={K15.read + 20} face="T" />},
-	];
+	const ats = [K15.write, K15.split, K15.fill, K15.read];
+	const names = ['genotypes', 'gametes', 'fill the square', 'ratios = chances'];
+	const icy = SC.y + 150;
+	const pedL: PLay = {x0: 150, y0: 640, gap: 130, row: 150, sz: 64};
 	return (
 		<>
 			<Heading text="For any cross" at={4} size={56} />
 			<Overlay>
-				{steps.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 12)}>
-						{s.icon}
-						<Chip x={290} y={238 + i * 120} text={s.text} at={s.at} size={42} color={INK} stroke={AMBER} />
+				{/* four numbered steps; the frames stand ready, each fills on its cue */}
+				{ats.map((at, i) => (
+					<g key={i}>
+						<Fade at={4 + i * 4}>
+							<rect x={scX(i) - SC.w / 2} y={SC.y} width={SC.w} height={SC.h} rx={24} fill="#fffdf8" stroke={prog(f, at, 1) > 0 ? AMBER : 'rgba(60,45,20,0.22)'} strokeWidth={prog(f, at, 1) > 0 ? 4 : 3} />
+							<circle cx={scX(i) - SC.w / 2 + 44} cy={SC.y + 44} r={28} fill={AMBER} />
+							<text x={scX(i) - SC.w / 2 + 44} y={SC.y + 57} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36}} fill="#fffdf8">{i + 1}</text>
+						</Fade>
+						{i < 3 ? <path d={`M${scX(i) + SC.w / 2 + 8},${SC.y + SC.h / 2 - 14} L${scX(i) + SC.w / 2 + 30},${SC.y + SC.h / 2} L${scX(i) + SC.w / 2 + 8},${SC.y + SC.h / 2 + 14}`} fill="none" stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" opacity={prog(f, ats[i + 1], 10)} /> : null}
+						<Sx x={scX(i)} y={SC.y + 290} text={names[i]} size={40} color={INK} hand anchor="middle" at={at} />
 					</g>
 				))}
-				<Trio x={214} y={762} sz={26} parentsAff={false} childAff o={prog(f, K15.ped, 12)} />
-				<Chip x={290} y={742} text="pedigree: giveaway" at={K15.give} size={40} color={INK} stroke={TEALC} />
-				<Chip x={730} y={742} text="then named people" at={K15.test} size={40} color={INK} stroke={TEALC} />
-				<Chip x={1150} y={742} text="then the square" at={K15.then} size={40} color={INK} stroke={TEALC} />
+				<g opacity={prog(f, K15.write, 12)}><AlleleChip x={scX(0) - 36} y={icy} t="T" r={38} /><AlleleChip x={scX(0) + 36} y={icy} t="t" r={38} /></g>
+				<g opacity={prog(f, K15.split, 12)}><GameteDisc x={scX(1) - 64} y={icy} t="T" r={48} edge={CPLUM} /><GameteDisc x={scX(1) + 64} y={icy} t="t" r={48} edge={CPLUM} /></g>
+				<g opacity={prog(f, K15.fill, 12)}>
+					<rect x={scX(2) - 80} y={icy - 80} width={160} height={160} rx={6} fill="#fffdf8" stroke={INK} strokeWidth={4} />
+					<line x1={scX(2)} y1={icy - 80} x2={scX(2)} y2={icy + 80} stroke={INK} strokeWidth={3} />
+					<line x1={scX(2) - 80} y1={icy} x2={scX(2) + 80} y2={icy} stroke={INK} strokeWidth={3} />
+					{['TT', 'Tt', 'Tt', 'tt'].map((g, k) => <text key={k} x={scX(2) - 40 + (k % 2) * 80} y={icy - 40 + Math.floor(k / 2) * 80 + 12} textAnchor="middle" style={{fontFamily: SERIF, fontWeight: 700, fontSize: 34}} fill={INK} opacity={prog(f, K15.fill + 6 + k * 4, 8)}>{g}</text>)}
+				</g>
+				<g opacity={prog(f, K15.read, 12)}><Coin x={scX(3)} y={icy} r={56} from={K15.read} to={K15.read + 20} face="T" /></g>
+				<Sx x={scX(3)} y={SC.y + 322} text="for each offspring" size={28} color={INK_SOFT} hand anchor="middle" at={K15.read + 10} />
+				{/* pedigrees: giveaway, named people, then the square */}
+				<g opacity={prog(f, K15.ped, 12)}><Pedigree ped={INSET} L={pedL} nums={0} numerals={0} /></g>
+				{(() => {
+					const items: [string, number][] = [['pedigree: giveaway', K15.give], ['test it on named people', K15.test], ['then the square', K15.then]];
+					let x = 380;
+					return items.map(([t, at], k) => {
+						const x0 = x;
+						x += chipW(t, 40) + 70;
+						return (
+							<g key={t}>
+								{k > 0 ? <PlainArrow x1={x0 - 60} y1={670} x2={x0 - 12} y2={670} at={at} color={INK_SOFT} /> : null}
+								<Chip x={x0} y={640} text={t} at={at} size={40} color={INK} stroke={TEALC} />
+							</g>
+						);
+					});
+				})()}
 				<Fade at={K15.next}>
 					<rect x={1060} y={860} width={760} height={86} rx={24} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
 					<PlateB p={PL9.fly} cx={1120} cy={903} w={70} />
@@ -207,28 +236,46 @@ export const SceneDecisionB9: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = notesCheck([
-	'Dominant allele: shows with one copy. Recessive allele: shows only with two copies. Homozygous: two of the same allele (TT, tt). Heterozygous: one of each (Tt).',
-	'Each gamete gets one allele of each gene. Tt × Tt gives genotypes 1 TT : 2 Tt : 1 tt and phenotypes 3 tall : 1 short.',
-	'A ratio is a chance for each offspring, not a guaranteed count. Large samples come closer to it.',
-	'Test cross: cross with the homozygous recessive. Any recessive offspring means the parent is heterozygous (Tt × tt gives 1 : 1).',
-	'Pedigrees: unaffected parents with an affected child: recessive. Affected parents with an unaffected child: dominant. Cite numbered individuals.',
+	'Dominant: shows with one copy. Recessive: shows only with two.',
+	'Homozygous: TT or tt. Heterozygous: Tt.',
+	'Each gamete gets one allele of each gene.',
+	'Tt × Tt: 1 TT : 2 Tt : 1 tt, so 3 tall : 1 short.',
+	'A ratio is a chance for each offspring, not a fixed count.',
+	'Test cross: cross with tt. Any short offspring: the parent is Tt.',
+	'In pedigree answers, cite numbered individuals.',
 ]);
+const NoteTrio: React.FC<{parentsAff: boolean; childAff: boolean}> = ({parentsAff, childAff}) => (
+	<svg width={150} height={120} viewBox="0 0 150 120" style={{flex: 'none'}}>
+		<Trio x={75} y={30} sz={36} parentsAff={parentsAff} childAff={childAff} />
+	</svg>
+);
 export const SceneNotesB9: React.FC = () => (
 	<>
-		<div style={{position: 'absolute', left: 96, top: 70}}><HandText text="Key notes: what to write in your book" at={2} size={56} cps={40} /></div>
-		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
-		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 175, width: 1700}}>
+		<div style={{position: 'absolute', left: 96, top: 70}}><HandText text="Key notes: what to write in your book" at={2} size={60} cps={40} /></div>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1120}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 22}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 34, fontWeight: 500, color: INK, lineHeight: 1.28}}>{n}</div>
+				<Enter key={i} at={14 + i * 8} style={{display: 'flex', gap: 20, marginBottom: 22}}>
+					<div style={{flex: 'none', width: 16, height: 16, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 36, fontWeight: 500, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 930}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 48, fontWeight: 700, color: AMBER_INK}}>Memory: Hidden in the parents: recessive. Hidden in the child: dominant.</div>
+		<Enter at={80} style={{position: 'absolute', left: 1300, top: 200, width: 520, boxSizing: 'border-box', padding: '26px 30px', borderRadius: 24, border: `4px solid ${AMBER}`, background: '#fffdf8', boxShadow: '0 14px 34px rgba(60,45,20,0.10)'}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1}}>Remember: pedigrees</div>
+			{([[false, true, 'Hidden in the parents:', 'recessive', INK], [true, false, 'Hidden in the child:', 'dominant', AMBER_INK]] as [boolean, boolean, string, string, string][]).map(([pa, ca, l1, l2, col]) => (
+				<div key={l2} style={{display: 'flex', alignItems: 'center', gap: 12, marginTop: 18}}>
+					<NoteTrio parentsAff={pa} childAff={ca} />
+					<div>
+						<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: INK, lineHeight: 1.05}}>{l1}</div>
+						<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: col, lineHeight: 1.05}}>{l2}</div>
+					</div>
+				</div>
+			))}
+			<div style={{height: 3, background: '#eadfc8', margin: '20px 0 16px'}} />
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 28, color: INK, lineHeight: 1.25}}>Then write genotypes and use a Punnett square for any probability.</div>
+		</Enter>
+		<Enter at={150} style={{position: 'absolute', left: 110, top: 960}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 40, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
 	</>
 );

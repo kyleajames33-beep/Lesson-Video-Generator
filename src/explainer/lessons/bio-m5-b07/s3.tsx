@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, AlDot, Chip, DrawPath, FONT_DISPLAY, FONT_HAND, Fade, GREYT, GREY_INK, GeneCard, GreyTag, Hb, Heading, INK, INK_SOFT, Keratin, MiniFold, Overlay,
-	PLT, PigmentRing, PlainArrow, PlateB, RangeBar, S, Soil, Sx, Tick, TraitStrip, ChainView, CHAIN12, clamp01, lerp, prog, pulse, rangeY, scalePts, rng, stX,
+	PLT, PigmentRing, PlainArrow, EnzymePlate, Receptor, Antibody, DnaIcon, AABead, PepLink, MRNA_INK, PlateB, RangeBar, S, Soil, Sx, Tick, TraitStrip, ChainView, CHAIN12, clamp01, lerp, prog, pulse, rangeY, scalePts, rng, stX,
 } from './shared';
 import {FOLD_A} from './s1';
 import {StripSummaries} from './s2';
@@ -88,14 +88,27 @@ export const SceneGenesEnvB7: React.FC = () => {
 	const cut = prog(f, K9.grow, 36);
 	const pinkT = prog(f, K9.pinkk, 18);
 	const LY = 800;
+	// the clone pair from scene 7 carries the opening question; it clears before the spectrum markers arrive
+	const pairO = prog(f, 4, 14) * (1 - prog(f, K9.both - 24, 16));
+	const pairY = 395;
 	return (
 		<>
 			<Heading text="Genes and environment together" at={4} size={56} />
 			<Overlay>
+				<g opacity={pairO}>
+					<PlateB p={PLT.hydBlue} cx={1060} cy={pairY} w={300} />
+					<PlateB p={PLT.hydPink} cx={1500} cy={pairY} w={300} />
+					<Soil x={1060} y={pairY + 160} w={340} h={52} />
+					<Soil x={1500} y={pairY + 160} w={340} h={52} />
+					<GeneCard x={1280} y={176} text="same genes" at={4} w={250} />
+					<Sx x={1060} y={pairY + 236} text="acidic soil" size={36} color={INK_SOFT} hand anchor="middle" at={K9.affects} />
+					<Sx x={1500} y={pairY + 236} text="less acidic soil" size={36} color={INK_SOFT} hand anchor="middle" at={K9.affects + 6} />
+					<Sx x={1280} y={pairY + 10} text="?" size={90} color={AMBER_INK} hand anchor="middle" at={K9.how} out={K9.possible} />
+				</g>
 				{/* the range bar: genes set the range, the environment sets where in it */}
-				<RangeBar x={190} y0={220} y1={560} b0={0.15} b1={0.95} p={0.7} o={prog(f, K9.possible - 4, 14)} w={48} pointerO={prog(f, K9.affects, 12)} />
-				<Sx x={250} y={262} text="genes: the possible range" size={34} color={AMBER_INK} hand at={K9.possible} />
-				<Sx x={250} y={rangeY(220, 560, 0.15, 0.95, 0.7) + 60} text="environment: where in it" size={34} color={INK} hand at={K9.affects + 6} />
+				<RangeBar x={190} y0={220} y1={560} b0={0.15} b1={0.95} p={lerp(0.25, 0.7, prog(f, K9.affects + 10, 30))} o={prog(f, K9.possible - 4, 14)} w={52} pointerO={prog(f, K9.affects, 12)} />
+				<Sx x={260} y={262} text="genes: the possible range" size={38} color={AMBER_INK} hand at={K9.possible} />
+				<Sx x={260} y={rangeY(220, 560, 0.15, 0.95, 0.7) + 60} text="environment: where in it" size={38} color={INK} hand at={K9.affects + 6} />
 				{/* the spectrum */}
 				<Fade at={K9.balance}>
 					<DrawPath d={`M200,${LY} L1720,${LY}`} at={K9.balance} dur={20} color={INK} width={5} />
@@ -138,43 +151,78 @@ export const SceneGenesEnvB7: React.FC = () => {
 const K10 = cues(S('why-synthesis'), {matters: 'matters so much', almost: 'Almost everything', every: 'every protein is made', trans: 'transcription and translation', same: 'all carry the same genes', own: 'its own set of proteins', red: 'a red blood cell', muscle: 'a muscle cell', wrong: 'the sequence is wrong', made: "the protein isn't made", job: "the job doesn't get done"});
 const JOBS = ['enzymes', 'transport', 'structure', 'receptors', 'antibodies'];
 const HB_IN: [number, number][] = [[-70, -40], [10, -60], [70, -10], [-40, 30], [40, 50], [-90, 30], [90, 40]];
+const FLOW_Y = 285;
+const FLOW_AA = ['Met', 'Glu', 'Pro', 'Lys', 'Cys'];
+/** One job card with its own visual (the same objects as scene 2). */
+const JobVisual: React.FC<{i: number; x: number; y: number}> = ({i, x, y}) => {
+	if (i === 0) return <EnzymePlate id="b7w-enz" cx={x} cy={y} w={170} sub={1} />;
+	if (i === 1) return <PlateB p={PLT.rbc} cx={x} cy={y} w={140} />;
+	if (i === 2) return <Keratin x={x} y={y} h={130} />;
+	if (i === 3) return <Receptor x={x} y={y + 30} w={210} sig={1} />;
+	return <g transform={`translate(${x},${y}) scale(0.62)`}><Antibody x={0} y={40} grab={1} /></g>;
+};
 export const SceneWhySynthesisB7: React.FC = () => {
 	const f = useCurrentFrame();
-	const Y = 170, Hh = 200;
 	const grey = prog(f, K10.made + 4, 16);
-	const rbc = {x: 560, y: 860, w: 290};
+	const wrong = prog(f, K10.wrong + 6, 12);
+	const rbc = {x: 560, y: 890, w: 250};
+	const fold = scalePts(FOLD_A.s3, [960, 560], 0.32, [1730, FLOW_Y]);
+	const tHot = pulse(f, K10.trans, 30), lHot = pulse(f, K10.trans + 24, 30);
 	return (
 		<>
+			<Heading text="Why making polypeptides matters" at={4} size={56} />
 			<Overlay>
-				<TraitStrip y={Y} h={Hh} at={0} lit={[vis(f, K10.trans, K10.same), vis(f, K10.trans + 10, K10.same), 0, 0, 0].map((v, i) => (i === 1 ? Math.max(v, vis(f, K10.wrong, K10.made)) : v))} />
-				<StripSummaries y={Y - 12} upto={4} at={4} />
-				<Chip x={stX(0)} y={Y + Hh + 16} anchor="middle" text="transcription" at={K10.trans} size={32} color={INK} stroke={AMBER} />
-				<Chip x={stX(1)} y={Y + Hh + 16} anchor="middle" text="translation" at={K10.trans + 10} size={32} color={INK} stroke={AMBER} />
-				<Sx x={stX(3)} y={Y + Hh + 50} text="every protein is made this way" size={32} color={AMBER_INK} hand anchor="middle" at={K10.every} />
+				{/* gene to mRNA to polypeptide to folded protein: every protein is made this way */}
+				<g opacity={prog(f, 6, 14)}>
+					<DnaIcon x={230} y={FLOW_Y} s={2.4} />
+					<Sx x={230} y={FLOW_Y + 100} text="gene (DNA)" size={34} color={INK_SOFT} hand anchor="middle" at={6} />
+				</g>
+				<PlainArrow x1={330} y1={FLOW_Y} x2={520} y2={FLOW_Y} at={14} color={INK_SOFT} />
+				<Chip x={425} y={FLOW_Y - 92} anchor="middle" text="transcription" at={K10.trans} size={32} color={INK} stroke={AMBER} hot={tHot} />
+				<g opacity={prog(f, 18, 14)}>
+					<rect x={548} y={FLOW_Y - 34} width={330} height={68} rx={14} fill="#fbf1ea" stroke={MRNA_INK} strokeWidth={3} />
+					<text x={713} y={FLOW_Y + 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, letterSpacing: 2}} fill={MRNA_INK}>AUG GAA CCU</text>
+					<Sx x={713} y={FLOW_Y + 100} text="mRNA" size={34} color={INK_SOFT} hand anchor="middle" at={18} />
+				</g>
+				<PlainArrow x1={900} y1={FLOW_Y} x2={1070} y2={FLOW_Y} at={26} color={INK_SOFT} />
+				<Chip x={985} y={FLOW_Y - 92} anchor="middle" text="translation" at={K10.trans + 24} size={32} color={INK} stroke={AMBER} hot={lHot} />
+				{FLOW_AA.map((aa, i) => (
+					<g key={aa}>
+						{i > 0 ? <PepLink a={[1120 + (i - 1) * 74, FLOW_Y]} b={[1120 + i * 74, FLOW_Y]} o={prog(f, 30 + i * 3, 8)} r={30} /> : null}
+						<AABead x={1120 + i * 74} y={FLOW_Y} aa={i === 2 && wrong > 0.5 ? 'Leu' : aa} r={30} o={prog(f, 30 + i * 3, 8)} />
+					</g>
+				))}
+				{wrong > 0.01 ? <circle cx={1268} cy={FLOW_Y} r={44} fill="none" stroke="#c0392b" strokeWidth={6} opacity={wrong} /> : null}
+				<Sx x={1268} y={FLOW_Y + 100} text="polypeptide" size={34} color={INK_SOFT} hand anchor="middle" at={30} />
+				<PlainArrow x1={1440} y1={FLOW_Y} x2={1580} y2={FLOW_Y} at={44} color={INK_SOFT} />
+				<g opacity={prog(f, 48, 14) * (1 - 0.7 * grey)}><ChainView seq={CHAIN12} pts={fold} r={11} ss={1} hull={0.6} /></g>
+				<Sx x={1730} y={FLOW_Y + 100} text="protein" size={34} color={grey > 0.5 ? GREY_INK : INK_SOFT} hand anchor="middle" at={48} />
+				{grey > 0.01 ? <path d={`M1660,${FLOW_Y - 70} L1800,${FLOW_Y + 70} M1800,${FLOW_Y - 70} L1660,${FLOW_Y + 70}`} stroke="#c0392b" strokeWidth={7} strokeLinecap="round" opacity={grey} /> : null}
+				{/* almost everything a cell does depends on its proteins */}
 				{JOBS.map((j, i) => {
 					const x = 260 + i * 350;
-					const g = i === 4 ? grey : 0;
+					const g = i === 4 ? prog(f, K10.job, 16) : 0;
 					return (
-						<Fade key={j} at={K10.every + i * 4}>
-							<rect x={x - 130} y={470} width={260} height={120} rx={18} fill={g > 0.5 ? '#eceeef' : '#fffdf8'} stroke={g > 0.5 ? GREYT : 'rgba(60,45,20,0.25)'} strokeWidth={3} />
-							<Sx x={x} y={512} text={j} size={36} color={g > 0.5 ? GREY_INK : AMBER_INK} hand anchor="middle" at={K10.every + i * 4} />
-							<MiniFold x={x} y={556} fold={g > 0.5 ? 0 : 1} o={1 - g * 0.7} />
+						<Fade key={j} at={K10.almost + i * 6}>
+							<rect x={x - 150} y={430} width={300} height={250} rx={20} fill={g > 0.5 ? '#eceeef' : '#fffdf8'} stroke={g > 0.5 ? GREYT : 'rgba(60,45,20,0.25)'} strokeWidth={3} />
+							<Sx x={x} y={476} text={j} size={38} color={g > 0.5 ? GREY_INK : AMBER_INK} hand anchor="middle" at={K10.almost + i * 6} />
+							<g opacity={1 - 0.75 * g}><JobVisual i={i} x={x} y={580} /></g>
 						</Fade>
 					);
 				})}
-				<GreyTag x={1660} y={600} text="no protein: no job" at={K10.made + 10} size={26} anchor="middle" />
+				<GreyTag x={1660} y={712} text="no protein: no job" at={K10.job} size={28} anchor="middle" />
 				{/* same genes, different sets of proteins */}
-				<GeneCard x={960} y={650} text="same genes" at={K10.same} w={260} />
-				<PlainArrow x1={860} y1={716} x2={680} y2={770} at={K10.own} color={INK_SOFT} />
-				<PlainArrow x1={1060} y1={716} x2={1240} y2={770} at={K10.own + 4} color={INK_SOFT} />
+				<GeneCard x={960} y={712} text="same genes" at={K10.same} w={260} />
+				<PlainArrow x1={860} y1={778} x2={700} y2={826} at={K10.own} color={INK_SOFT} />
+				<PlainArrow x1={1060} y1={778} x2={1220} y2={826} at={K10.own + 4} color={INK_SOFT} />
 				<PlateB p={PLT.rbc} cx={rbc.x} cy={rbc.y} w={rbc.w} o={prog(f, K10.red - 10, 12)} />
-				{HB_IN.map(([dx, dy], i) => <Hb key={i} x={rbc.x + dx} y={rbc.y + dy} s={0.32} labels={false} o={prog(f, K10.red + i * 3, 8)} />)}
-				<Sx x={rbc.x} y={1040} text="developing red cell: makes haemoglobin" size={34} color={INK} hand anchor="middle" at={K10.red + 10} />
-				<PlateB p={PLT.muscleR} cx={1360} cy={870} w={460} o={prog(f, K10.muscle - 10, 12)} />
+				{HB_IN.map(([dx, dy], i) => <Hb key={i} x={rbc.x + dx * 0.85} y={rbc.y + dy * 0.85} s={0.3} labels={false} o={prog(f, K10.red + i * 3, 8)} />)}
+				<Sx x={rbc.x} y={1050} text="developing red cell: makes haemoglobin" size={34} color={INK} hand anchor="middle" at={K10.red + 10} />
+				<PlateB p={PLT.muscleR} cx={1380} cy={900} w={460} o={prog(f, K10.muscle - 10, 12)} />
 				<Fade at={K10.muscle + 4}>
-					{[-12, 0, 12].map((dy, i) => <line key={i} x1={1200} y1={870 + dy} x2={1520} y2={870 + dy} stroke="#7d2a22" strokeWidth={3} strokeDasharray="22 10" opacity={0.75} />)}
+					{[-12, 0, 12].map((dy, i) => <line key={i} x1={1220} y1={900 + dy} x2={1540} y2={900 + dy} stroke="#7d2a22" strokeWidth={3} strokeDasharray="22 10" opacity={0.75} />)}
 				</Fade>
-				<Sx x={1360} y={1040} text="makes contractile proteins" size={34} color={INK} hand anchor="middle" at={K10.muscle + 10} />
+				<Sx x={1380} y={1050} text="makes contractile proteins, no haemoglobin" size={34} color={INK} hand anchor="middle" at={K10.muscle + 10} />
 			</Overlay>
 		</>
 	);
@@ -222,10 +270,19 @@ export const SceneMemoryB7: React.FC = () => {
 				{/* 4 more than one chain */}
 				<Hb x={pX(3)} y={440} s={1.45} o={prog(f, K11.four, 12)} />
 				<GreyTag x={pX(3)} y={624} text="only when there is more than one" at={K11.hb + 6} size={24} anchor="middle" />
-				{/* the trait aid */}
-				<RangeBar x={210} y0={720} y1={960} b0={0.15} b1={0.95} p={0.6} o={prog(f, K11.traits, 14)} w={40} />
-				<Sx x={300} y={820} text="genes set what's possible;" size={54} color={AMBER_INK} hand at={K11.possible} />
-				<Sx x={300} y={900} text="environment affects what develops" size={54} color={AMBER_INK} hand at={K11.develops - 30} />
+				{/* the trait aid, framed, with the clone pair as its example */}
+				<Fade at={K11.traits - 6}>
+					<rect x={110} y={672} width={1710} height={340} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={4} />
+					<Sx x={300} y={728} text="for traits" size={36} color={INK_SOFT} hand at={K11.traits - 6} />
+				</Fade>
+				<RangeBar x={210} y0={720} y1={970} b0={0.15} b1={0.95} p={lerp(0.3, 0.75, prog(f, K11.develops, 30))} o={prog(f, K11.traits, 14)} w={44} pointerO={prog(f, K11.develops - 10, 12)} />
+				<Sx x={300} y={834} text="genes set what's possible;" size={56} color={AMBER_INK} hand at={K11.possible} />
+				<Sx x={300} y={920} text="environment affects what develops" size={56} color={AMBER_INK} hand at={K11.develops - 30} />
+				<PlateB p={PLT.hydBlue} cx={1490} cy={830} w={200} o={prog(f, K11.develops - 20, 14)} />
+				<PlateB p={PLT.hydPink} cx={1710} cy={830} w={200} o={prog(f, K11.develops - 14, 14)} />
+				<Soil x={1490} y={935} w={220} h={36} o={prog(f, K11.develops - 20, 14)} />
+				<Soil x={1710} y={935} w={220} h={36} o={prog(f, K11.develops - 14, 14)} />
+				<Sx x={1600} y={994} text="same genes, two soils" size={30} color={INK_SOFT} hand anchor="middle" at={K11.develops} />
 			</Overlay>
 		</>
 	);

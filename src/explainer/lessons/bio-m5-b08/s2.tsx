@@ -15,11 +15,12 @@ const K5 = cues(S('fertilisation'), {now: 'Now fertilisation', ovule: 'each ovul
 const GRID = {x0: 1170, y0: 330, cw: 158, rh: 82};
 export const SceneFertB8: React.FC = () => {
 	const f = useCurrentFrame();
-	const O = {x: 520, y: 480, w: 820};
+	const phaseA = 1 - prog(f, K5.people, 16);
+	const pod = prog(f, K5.seed - 26, 24);
+	// the pod grows to fill the left half once each seed is the subject
+	const O = {x: lerp(520, 575, pod), y: lerp(480, 470, pod), w: lerp(820, 1010, pod)};
 	const pt = pbPt(PL8.ovary, O.x, O.y, O.w);
 	const tip = pt(...TIP);
-	const phaseA = 1 - prog(f, K5.people, 16);
-	const pod = prog(f, K5.seed, 22);
 	const tubePath = (k: number, part = 1) => {
 		const ov = OVULES[k];
 		const pts = [pt(TIP[0] - 10, TIP[1] - 4), pt(1170, 716), pt(ov[0] + 40, 712), pt(ov[0], 752)];
@@ -55,9 +56,28 @@ export const SceneFertB8: React.FC = () => {
 						<DrawPath d={tubePath(2, 0.45)} at={K5.grain + 14} dur={30} color={GREYT} width={4} />
 					</g>
 					<Sx x={tip[0] + 200} y={tip[1] - 120} text="chance" size={40} color={AMBER_INK} hand at={K5.chance + 10} out={K5.seed} />
-					{seeds.map(([x, y], i) => <Sx key={i} x={x} y={y + 150} text={seedTags[i]} size={24} color={INK} weight={800} anchor="middle" at={K5.pair + i * 6} />)}
-					<Sx x={O.x} y={O.y + 230} text="each seed: pollen gamete + egg gamete" size={32} color={INK_SOFT} hand anchor="middle" at={K5.pair + 20} />
+					{seeds.map(([x, y], i) => (
+						<g key={i} opacity={prog(f, K5.pair + i * 6, 10)}>
+							<line x1={x} y1={y + 40} x2={x} y2={y + (i % 2 ? 222 : 178)} stroke={INK_SOFT} strokeWidth={2.5} />
+							<Sx x={x} y={y + (i % 2 ? 258 : 214)} text={seedTags[i]} size={32} color={INK} weight={800} anchor="middle" at={K5.pair + i * 6} />
+						</g>
+					))}
+					<Sx x={O.x} y={O.y + 330} text="each seed: one pollen gamete + one egg gamete" size={38} color={INK_SOFT} hand anchor="middle" at={K5.pair + 20} />
 					{/* the 4 by 4 pairings (counts only) */}
+					{/* each seed: one pollen gamete + one egg gamete (clears for the pairing grid) */}
+					<Fade at={K5.seed - 10} out={K5.four - 8}>
+						<Pollen x={1240} y={430} r={30} />
+						<Sx x={1240} y={520} text="pollen gamete" size={32} color={INK} hand anchor="middle" />
+						<Sx x={1350} y={448} text="+" size={64} color={INK} weight={800} anchor="middle" />
+						<Cell8 cx={1460} cy={430} rx={46} ry={40} />
+						<Sx x={1460} y={520} text="egg gamete" size={32} color={INK} hand anchor="middle" />
+						<PlainArrow x1={1530} y1={430} x2={1610} y2={430} at={K5.seed} color={INK_SOFT} />
+					</Fade>
+					<PlateB p={PL8.peaYR} cx={1690} cy={430} w={110} o={prog(f, K5.seed + 10, 12) * (1 - prog(f, K5.four - 8, 12))} />
+					<Sx x={1690} y={520} text="one seed" size={32} color={AMBER_INK} hand anchor="middle" at={K5.seed + 10} out={K5.four - 8} />
+					<Fade at={K5.four - 4}>
+						{GAM_YR.map((e, r) => GAM_YR.map((q, c) => <rect key={q + e} x={GRID.x0 + c * GRID.cw + 4} y={GRID.y0 + r * GRID.rh + 4} width={GRID.cw - 8} height={GRID.rh - 8} rx={10} fill="none" stroke="rgba(60,45,20,0.22)" strokeWidth={2} strokeDasharray="7 7" />))}
+					</Fade>
 					<Fade at={K5.four}>
 						<Sx x={GRID.x0 + 2 * GRID.cw} y={250} text="pollen" size={34} color={INK_SOFT} hand anchor="middle" at={K5.four} />
 						<Sx x={GRID.x0 - 20} y={GRID.y0 - 20} text="egg" size={34} color={INK_SOFT} hand anchor="end" at={K5.four} />

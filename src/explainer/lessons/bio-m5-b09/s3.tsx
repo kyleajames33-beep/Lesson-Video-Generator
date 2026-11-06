@@ -8,7 +8,7 @@ import {
 	AMBER, AMBER_INK, AaAa_R, Aaaa_D, AlleleChip, DrawPath, Fade, GREY_INK, GreyTag, HandText, Heading, INK, INK_SOFT, INSET, MistakeChip, ModelLine, Overlay,
 	P1, P2, Pedigree, Punnett, S, SpanBracket, Sx, Tick, Trio, clamp01, fadeV, lerp, pedXY, prog,
 } from './shared';
-import type {PLay} from './shared';
+import type {PLay, Ped} from './shared';
 
 export const ASSUME = 'assume: one gene; the trait always shows with its allele pattern; no new mutation';
 
@@ -114,36 +114,71 @@ export const SceneDominantB9: React.FC = () => {
 // ---------- 10. The giveaways, and how to use them ----------
 const K10 = cues(S('giveaways'), {rem: 'how to remember them', hp: 'Hidden in the parents', hc: 'Hidden in the child', name: 'name the people', ex: 'For example', i34: 'individuals 3 and 4', unaff: 'are unaffected', dau: 'their daughter', i1: 'individual 1 in generation three', isaff: 'is affected', so: 'so the condition is recessive', geno: 'write their genotypes', ps: 'use a Punnett square'});
 const L10: PLay = {x0: 230, y0: 560, gap: 140, row: 170, sz: 56};
+/** The two giveaway fragments, drawn with the standard pedigree symbols at full size. */
+const REC_TRIO: Ped = {
+	inds: [{id: 'I-1', sex: 'M', aff: false, col: 0}, {id: 'I-2', sex: 'F', aff: false, col: 1}, {id: 'II-1', sex: 'F', aff: true, col: 0.5}],
+	fams: [{a: 'I-1', b: 'I-2', kids: ['II-1']}],
+};
+const GW = {w: 840, h: 700, y: 190};
+const gwX = (i: number) => 96 + i * (GW.w + 48);
+/** One big giveaway card: the rule in hand lettering over its pedigree fragment, with genotype chips. */
+const GiveawayCard: React.FC<{i: number; ped: Ped; at: number; lines: [string, string]; color: string; chips: [string, string, string]}> = ({i, ped, at, lines, color, chips}) => {
+	const f = useCurrentFrame();
+	const cx = gwX(i) + GW.w / 2;
+	const L: PLay = {x0: cx - 150, y0: 440, gap: 300, row: 230, sz: 120};
+	return (
+		<g>
+			<rect x={gwX(i)} y={GW.y} width={GW.w} height={GW.h} rx={28} fill="#fffdf8" stroke={AMBER} strokeWidth={4} opacity={prog(f, i === 0 ? 6 : at - 12, 12)} />
+			<Sx x={cx} y={GW.y + 80} text={lines[0]} size={60} color={INK} hand anchor="middle" at={at} />
+			<Sx x={cx} y={GW.y + 150} text={lines[1]} size={66} color={color} hand anchor="middle" at={at + 26} />
+			<g opacity={prog(f, at - 4, 12)}>
+				<Pedigree ped={ped} L={L} nums={0} numerals={0} chipSize={40}
+					chips={{'I-1': [chips[0], at + 40], 'I-2': [chips[1], at + 46], 'II-1': [chips[2], at + 52]}} />
+			</g>
+		</g>
+	);
+};
 export const SceneGiveawaysB9: React.FC = () => {
 	const f = useCurrentFrame();
 	const xy = pedXY(P1, L10);
+	// the two big cards hand over to a compact recap row when the narration turns to naming the people
+	const big = 1 - prog(f, K10.name - 14, 18);
 	const lab = (id: string, at: number, left = false) => (left
 		? <Sx x={xy(id)[0] - 50} y={xy(id)[1] + 10} text={id} size={30} color={AMBER_INK} weight={800} anchor="end" at={at} />
 		: <Sx x={xy(id)[0] + 40} y={xy(id)[1] - 36} text={id} size={30} color={AMBER_INK} weight={800} at={at} />);
 	return (
 		<>
-			<Heading text="The two giveaways" at={K10.rem} size={56} />
+			<Heading text="The two giveaways" at={4} size={56} />
 			<Overlay>
-				<Trio x={180} y={226} sz={30} parentsAff={false} childAff o={prog(f, K10.hp - 4, 12)} />
-				<Trio x={180} y={346} sz={30} parentsAff childAff={false} o={prog(f, K10.hc - 4, 12)} />
+				{big > 0.01 ? (
+					<g opacity={big} transform={`translate(${lerp(96, 0, big)},${lerp(170, 0, big)}) scale(${lerp(0.3, 1, big)}) translate(${lerp(-96, 0, big)},${lerp(-190, 0, big)})`}>
+						<GiveawayCard i={0} ped={REC_TRIO} at={K10.hp} lines={['Hidden in the parents:', 'recessive']} color={INK} chips={['Aa', 'Aa', 'aa']} />
+						<GiveawayCard i={1} ped={INSET} at={K10.hc} lines={['Hidden in the child:', 'dominant']} color={AMBER_INK} chips={['Aa', 'Aa', 'aa']} />
+					</g>
+				) : null}
+				{/* compact recap row */}
+				<g opacity={1 - big}>
+					<Trio x={180} y={226} sz={40} parentsAff={false} childAff />
+					<Trio x={180} y={356} sz={40} parentsAff childAff={false} />
+					<Sx x={300} y={262} text="Hidden in the parents: recessive." size={56} color={INK} hand />
+					<Sx x={300} y={392} text="Hidden in the child: dominant." size={56} color={AMBER_INK} hand />
+				</g>
 				{/* name the people */}
 				<g opacity={prog(f, K10.name - 6, 12)}>
 					<Pedigree ped={P1} L={L10} rings={{'II-3': K10.i34 + 2, 'II-4': K10.i34 + 10, 'III-1': K10.i1 + 2}}
-						chips={{'II-3': ['Aa', K10.geno + 4], 'II-4': ['Aa', K10.geno + 10], 'III-1': ['aa', K10.geno + 16]}} chipSize={22} />
+						chips={{'II-3': ['Aa', K10.geno + 4], 'II-4': ['Aa', K10.geno + 10], 'III-1': ['aa', K10.geno + 16]}} chipSize={24} />
 				</g>
 				{lab('II-3', K10.i34 + 6)}
 				{lab('II-4', K10.i34 + 14)}
 				{lab('III-1', K10.i1 + 6, true)}
-				<Sx x={780} y={530} text="In an answer, name the people:" size={36} color={INK_SOFT} hand at={K10.name} />
-				<ModelLine x={810} y={600} text="II-3 and II-4: unaffected" at={K10.unaff} size={36} />
-				<ModelLine x={810} y={660} text="their daughter III-1: affected" at={K10.isaff} size={36} />
-				<ModelLine x={810} y={720} text="so the condition is recessive" at={K10.so} size={36} color={AMBER_INK} />
-				<ModelLine x={810} y={800} text="II-3 Aa, II-4 Aa, III-1 aa" at={K10.geno + 4} size={36} />
-				<Punnett x={930} y={870} cell={80} res={AaAa_R} top={['A', 'a']} side={['A', 'a']} gridAt={K10.ps - 4} topAt={K10.ps - 2} sideAt={K10.ps} fillAt={i => K10.ps + 4 + i * 4} discR={20} plain ring={i => (AaAa_R.cells[i].ph === 'affected' ? prog(f, K10.ps + 26, 10) : 0)} />
-				<Sx x={1140} y={960} text={`Aa × Aa: next child ${AaAa_R.frac(c => c.ph === 'affected')} affected`} size={36} color={AMBER_INK} hand at={K10.ps + 20} />
+				<Sx x={780} y={530} text="In an answer, name the people:" size={38} color={INK_SOFT} hand at={K10.name} />
+				<ModelLine x={810} y={600} text="II-3 and II-4: unaffected" at={K10.unaff} size={38} />
+				<ModelLine x={810} y={660} text="their daughter III-1: affected" at={K10.isaff} size={38} />
+				<ModelLine x={810} y={720} text="so the condition is recessive" at={K10.so} size={38} color={AMBER_INK} />
+				<ModelLine x={810} y={800} text="II-3 Aa, II-4 Aa, III-1 aa" at={K10.geno + 4} size={38} />
+				<Punnett x={930} y={880} cell={84} res={AaAa_R} top={['A', 'a']} side={['A', 'a']} gridAt={K10.ps - 4} topAt={K10.ps - 2} sideAt={K10.ps} fillAt={i => K10.ps + 4 + i * 4} discR={20} plain ring={i => (AaAa_R.cells[i].ph === 'affected' ? prog(f, K10.ps + 26, 10) : 0)} />
+				<Sx x={1140} y={975} text={`Aa × Aa: next child ${AaAa_R.frac(c => c.ph === 'affected')} affected`} size={38} color={AMBER_INK} hand at={K10.ps + 20} />
 			</Overlay>
-			<div style={{position: 'absolute', left: 300, top: 192}}><HandText text="Hidden in the parents: recessive." at={K10.hp} size={64} cps={30} /></div>
-			<div style={{position: 'absolute', left: 300, top: 312}}><HandText text="Hidden in the child: dominant." at={K10.hc} size={64} cps={30} color={AMBER_INK} /></div>
 		</>
 	);
 };

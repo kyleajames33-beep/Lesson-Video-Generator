@@ -100,6 +100,10 @@ export const SceneMemoryB8: React.FC = () => {
 		<>
 			<Heading text="To remember the four" at={4} size={60} />
 			<Overlay>
+				<Fade at={6}>
+					<rect x={120} y={196} width={1700} height={740} rx={30} fill="#fffdf8" stroke={AMBER} strokeWidth={4} />
+					<line x1={170} y1={712} x2={1770} y2={712} stroke="#eadfc8" strokeWidth={3} />
+				</Fade>
 				<Word x={180} y={330} w="Cross" at={K10.cross} />
 				<Word x={180} y={480} w="Independently" at={K10.ind} />
 				<Word x={180} y={630} w="Randomly" at={K10.rand} />
