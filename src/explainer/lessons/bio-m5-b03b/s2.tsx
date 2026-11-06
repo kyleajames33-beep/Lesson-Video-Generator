@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {Easing, interpolate, useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, AnimalIcon, Arrow, Balance, balancePans, BarnIcon, BeadDot, CoinIcon, Cross, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, GAIN, Germ, HARM, HeartIcon, HerdGrid, Heading, INK, INK_SOFT, MiniLine, NoteCard, Overlay, ORANGE, ORDER, PoolLegend, poolColor, prog, S, Scorecard, SlideIn, Straw, Tag, VAR, WELF_INK, along, COST_INK, BASE, Bracket, Pill,
@@ -105,6 +105,9 @@ export const SceneFertility: React.FC = () => {
 		</SlideIn>
 	);
 	const pans = balancePans(1560, 650, 380, 10 * prog(f, c.farm - 20, 40));
+	// the scorecard opens large (the stage is otherwise empty), then settles into the lower left as the studies arrive
+	const zk = interpolate(f, [c.milk - 26, c.milk - 2], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+	const scS = 1.15 + (0.8 - 1.15) * zk, scY = 250 + (570 - 250) * zk;
 	const coinY = 560 + (790 - 560) * Math.min(1, prog(f, c.semen + 10, 18) ) + (f > c.semen + 28 ? -Math.abs(Math.sin((f - c.semen - 28) / 5)) * 18 * Math.max(0, 1 - (f - c.semen - 28) / 24) : 0);
 	return (
 		<>
@@ -135,8 +138,14 @@ export const SceneFertility: React.FC = () => {
 				<Arrow x1={BX[1] + BW + 6} y1={BY + BH / 2} x2={BX[2] - 6} y2={BY + BH / 2} at={c.side - 14} color={INK_SOFT} dur={14} />
 			</Overlay>
 			{/* the scorecard stays filled in its first column */}
-			<Scorecard x={96} y={570} s={0.62} at={4} colW={480} titles={[{text: 'artificial insemination'}]} cells={{gain: [{at: 0, text: 'proven bull, many farms, faster progress'}], variety: [{at: 0, text: 'narrower gene pool: shared weakness'}], cost: [{at: c.less + 30, text: 'usually less than a bull on every farm'}], welfare: [{at: c.harder + 30, text: 'chasing one trait can harm another'}]}} lit={{welfare: c.harder, cost: c.semen}} />
-			<NoteCard x={720} y={590} w={470} at={c.harder} color={WELF_INK} glyph="welfare" title="welfare" size={30}>A cow that struggles to get pregnant can have a harder life on the farm</NoteCard>
+			<Overlay>
+				<g opacity={prog(f, c.source + 6, 16) * (1 - prog(f, c.milk - 26, 16))}>
+					<AnimalIcon x={1390} y={700} s={3} kind="cow" />
+					<text x={1390} y={890} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={INK}>Holstein dairy cow</text>
+				</g>
+			</Overlay>
+			<Scorecard x={96} y={scY} s={scS} at={4} colW={480} titles={[{text: 'artificial insemination'}]} cells={{gain: [{at: 0, text: 'proven bull, many farms, faster progress'}], variety: [{at: 0, text: 'narrower gene pool: shared weakness'}], cost: [{at: c.less + 30, text: 'usually less than a bull on every farm'}], welfare: [{at: c.harder + 30, text: 'chasing one trait can harm another'}]}} lit={{welfare: c.harder, cost: c.semen}} />
+			<NoteCard x={690} y={590} w={480} at={c.harder} color={WELF_INK} glyph="welfare" title="welfare" size={30}>A cow that struggles to get pregnant can have a harder life on the farm</NoteCard>
 			<Overlay>
 				<HeartIcon x={1210} y={660} s={1.3} o={prog(f, c.harder + 10, 14)} />
 				<CoinIcon x={300} y={coinY} r={26} o={prog(f, c.semen + 6, 10) * (1 - prog(f, c.less + 24, 10))} />

@@ -188,6 +188,43 @@ const Pn: React.FC<{at: number; x: number; y: number; w: number; text: string; c
 		<div style={{height: 56, borderRadius: 999, background: '#fffdf8', border: `4px solid ${grey > 0.5 ? '#b9b3a8' : color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32, color: grey > 0.5 ? '#9a948a' : INK, whiteSpace: 'nowrap'}}>{text}</div>
 	</Enter>
 );
+/** Two jobs, drawn with the plates: embryo -> hCG -> corpus luteum (ovary) -> progesterone -> lining (uterus). */
+const TwoJobs: React.FC<{at: number; hjob: number; pjob: number}> = ({at, hjob, pjob}) => {
+	const f = useCurrentFrame();
+	const OV = {x: 730, y: 360, w: 470};
+	const ovH = (OV.w * 222) / 444;
+	const UT = {x: 1500, y: 290, w: 300};
+	const utH = (UT.w * 563) / 503;
+	const cl: [number, number] = [OV.x + 0.358 * OV.w, OV.y + 0.635 * ovH];
+	const glow = prog(f, hjob + 8, 16);
+	const lining = prog(f, pjob + 8, 16);
+	const pulse = 0.5 + 0.5 * Math.sin(f / 7);
+	return (
+		<>
+			<Enter at={at} style={{position: 'absolute', left: 110, top: 330}}><RoundPlate a={PL.cl5} x={0} y={0} d={290} ring={TEAL} /></Enter>
+			<Enter at={at + 8} style={{position: 'absolute', left: OV.x, top: OV.y}}>
+				<div style={{width: OV.w, height: ovH, borderRadius: 26, overflow: 'hidden', position: 'relative', border: `6px solid ${YELLOW}`, boxSizing: 'border-box'}}><PArt a={PL.ovary} x={0} y={0} w={OV.w} /></div>
+			</Enter>
+			<Enter at={at + 16} style={{position: 'absolute', left: UT.x, top: UT.y}}>
+				<div style={{width: UT.w, height: utH, borderRadius: 26, overflow: 'hidden', position: 'relative', border: `6px solid ${AMBER}`, boxSizing: 'border-box', boxShadow: `0 0 ${40 * lining}px rgba(240,168,48,${0.7 * lining})`}}><PArt a={PL.uterus} x={0} y={0} w={UT.w} /></div>
+			</Enter>
+			<Overlay>
+				<circle cx={cl[0]} cy={cl[1]} r={34 + 4 * pulse} fill="#f2c81f" opacity={0.55 * glow} />
+				<circle cx={cl[0]} cy={cl[1]} r={38 + 4 * pulse} fill="none" stroke={YELLOW} strokeWidth={8} opacity={glow} />
+				<Arrow x1={410} y1={475} x2={716} y2={475} at={hjob} color={TEAL} width={11} dur={22} head={26} />
+				<Arrow x1={1214} y1={475} x2={1486} y2={475} at={pjob} color={AMBER} width={11} dur={22} head={26} />
+				<Label x={563} y={440} at={hjob + 8} text="hCG" size={70} color={TEAL_INK} />
+				<Label x={1350} y={440} at={pjob + 8} text="progesterone" size={52} color={AMBER_INK} />
+				<Label x={255} y={676} at={at + 6} text="embryo" size={48} color={TEAL_INK} />
+				<Label x={965} y={660} at={at + 14} text="corpus luteum" size={48} color="#a9760a" />
+				<Label x={1650} y={680} at={at + 22} text="lining" size={48} color={INK} />
+			</Overlay>
+			<Say at={hjob + 20} x={110} y={740} w={820} size={40} weight={700}>hCG keeps the corpus luteum going.</Say>
+			<Say at={pjob + 20} x={1010} y={740} w={820} size={40} weight={700}>Progesterone keeps the lining thick.</Say>
+			<Hand at={pjob + 50} x={110} y={850} size={70}>hCG: corpus luteum. progesterone: lining.</Hand>
+		</>
+	);
+};
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('feedback-two'), {
@@ -236,19 +273,8 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<Say at={c.plac} x={1150} y={720} w={640} size={34} weight={600}>The placenta now makes the progesterone, so the lining stays thick.</Say>
 			</div>
 			<div style={{position: 'absolute', inset: 0, opacity: p3}}>
-				<WrongChip at={c.ifsaid} x={96} y={250} text="hCG keeps the lining" size={46} />
-				<Pn at={c.sep} x={96} y={470} w={220} text="embryo" color={TEAL} />
-				<Pn at={c.sep} x={600} y={470} w={380} text="corpus luteum" color={YELLOW} />
-				<Pn at={c.sep} x={1260} y={470} w={220} text="lining" color={AMBER} />
-				<Overlay>
-					<Arrow x1={330} y1={498} x2={590} y2={498} at={c.hjob} color={TEAL} width={10} dur={22} head={24} />
-					<Arrow x1={990} y1={498} x2={1250} y2={498} at={c.pjob} color={AMBER} width={10} dur={22} head={24} />
-					<Label x={460} y={456} at={c.hjob + 10} text="hCG" size={64} color={TEAL_INK} />
-					<Label x={1120} y={456} at={c.pjob + 10} text="progesterone" size={56} color={AMBER_INK} />
-				</Overlay>
-				<Say at={c.hjob + 20} x={96} y={570} w={800} size={38} weight={700}>hCG keeps the corpus luteum going.</Say>
-				<Say at={c.pjob + 20} x={1000} y={570} w={800} size={38} weight={700}>Progesterone keeps the lining thick.</Say>
-				<Hand at={c.pjob + 60} x={96} y={730} size={72}>hCG: corpus luteum. progesterone: lining.</Hand>
+				<WrongChip at={c.ifsaid} x={96} y={200} text="hCG keeps the lining" size={46} />
+				<TwoJobs at={c.ifsaid + 8} hjob={c.hjob} pjob={c.pjob} />
 			</div>
 		</>
 	);
@@ -307,6 +333,33 @@ const BigChip: React.FC<{i: number; at: number; text: string}> = ({i, at, text})
 		</div>
 	);
 };
+/** Under each chip, the painted stage it names, on the narrated cue; the row clears before the memory lines. */
+const STORY: {a: keyof typeof PL; w: number; label: string}[] = [
+	{a: 'egg', w: 270, label: 'egg released'},
+	{a: 'uterus', w: 250, label: 'lining ready'},
+	{a: 'im3', w: 325, label: 'blastocyst implants'},
+	{a: 'ovary', w: 325, label: 'hCG: corpus luteum on'},
+	{a: 'fetus', w: 235, label: 'placenta takes over'},
+];
+const StoryRow: React.FC<{at: number[]; out: number}> = ({at, out}) => {
+	const f = useCurrentFrame();
+	const o = 1 - prog(f, out, 14);
+	return (
+		<div style={{position: 'absolute', inset: 0, opacity: o}}>
+			{STORY.map((s, i) => {
+				const cx = 256 + i * 340;
+				const h = (s.w * PL[s.a].box[3]) / PL[s.a].box[2];
+				const p = prog(f, at[i] + 6, 16);
+				return (
+					<div key={i} style={{position: 'absolute', left: 0, top: 0, opacity: p, transform: `translateY(${(1 - p) * 16}px)`}}>
+						<PArt a={PL[s.a]} x={cx - s.w / 2} y={490 + (300 - h) / 2} w={s.w} style={{borderRadius: s.a === 'uterus' || s.a === 'ovary' ? 18 : 0}} />
+						<div style={{position: 'absolute', left: cx - 160, top: 806, width: 320, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, color: INK, lineHeight: 1.05}}>{s.label}</div>
+					</div>
+				);
+			})}
+		</div>
+	);
+};
 export const SceneMemory: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('memory'), {
@@ -316,6 +369,7 @@ export const SceneMemory: React.FC = () => {
 		<>
 			<Heading items={[[0, 'The whole story in five words']]} size={72} />
 			<BigChip i={0} at={c.egg} text="1 meet" /><BigChip i={1} at={c.ready} text="2 divide" /><BigChip i={2} at={c.impl} text="3 attach" /><BigChip i={3} at={c.hcg} text="4 signal" /><BigChip i={4} at={c.placenta} text="5 hand over" />
+			<StoryRow at={[c.egg, c.ready, c.impl, c.hcg, c.placenta]} out={c.pg - 14} />
 			<Hand at={c.pg} x={96} y={500} size={58}>pro-gest-erone = pro-gestation: it holds the lining</Hand>
 			<Hand at={c.msg} x={96} y={590} size={58} color={TEAL_INK}>hCG = the embryo's message to the corpus luteum</Hand>
 			<Pn at={c.msg + 30} x={96} y={706} w={170} text="embryo" color={TEAL} />
@@ -346,30 +400,29 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const NOTES = [
-	'A sperm has a tail to swim, mitochondria for energy and an acrosome with enzymes to get into the egg.',
-	'The egg is large because it carries a food store for the early embryo.',
-	'Fertilisation (a sperm joins an egg to make a zygote) usually happens in the oviduct.',
-	'The zygote divides by cleavage as it moves toward the uterus and becomes a blastocyst. The blastocyst implants in the uterine lining about a week after fertilisation.',
-	'Fertilisation and implantation are different events. A pregnancy begins at implantation.',
-	'After the egg is released, the corpus luteum makes progesterone, which keeps the uterine lining thick and ready. With no pregnancy the corpus luteum breaks down about two weeks after ovulation and the lining is shed.',
-	'Once the embryo is implanting, its outer cells make hCG. hCG acts on the corpus luteum, so it keeps making progesterone. Progesterone acts on the lining.',
-	'Over the first two to three months after fertilisation, the placenta takes over making progesterone.',
-	"Later in pregnancy, the placenta passes oxygen and nutrients from the mother's blood to the baby and carbon dioxide and wastes back, without the bloods mixing.",
+	'Fertilisation: a sperm joins an egg in the oviduct to make a zygote.',
+	'The zygote divides into a blastocyst, which implants in the lining about a week later.',
+	'A pregnancy begins at implantation, not at fertilisation.',
+	'Progesterone keeps the lining thick. hCG from the embryo keeps the corpus luteum making it.',
+	'By 2 to 3 months, the placenta makes the progesterone.',
+	'In the placenta, oxygen crosses a thin barrier. The two bloods do not mix.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={72} cps={40} /></div>
-		<div style={{position: 'absolute', left: 120, top: 200, width: 1680}}>
+		<Enter at={50} style={{position: 'absolute', right: 96, top: 112}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK}}>Pause the video if you need more time.</span></Enter>
+		<div style={{position: 'absolute', left: 120, top: 220, width: 1680}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 22, marginBottom: 12}}>
-					<div style={{flex: 'none', width: 16, height: 16, marginTop: 12, borderRadius: 999, background: AMBER}} />
-					<Body size={30}>{n}</Body>
+				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 24, marginBottom: 22}}>
+					<div style={{flex: 'none', width: 18, height: 18, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<Body size={40} weight={600}>{n}</Body>
 				</Enter>
 			))}
-			<Enter at={110} style={{marginTop: 14, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
-				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK, lineHeight: 1.1}}>Progesterone is pro-gestation. hCG is the embryo's message to the corpus luteum.</div>
-				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#1f6fb2', lineHeight: 1.1, marginTop: 4}}>meet, divide, attach, signal, hand over</div>
-			</Enter>
 		</div>
+		<Enter at={90} style={{position: 'absolute', left: 120, top: 780, width: 1680, background: '#fffdf8', border: `5px solid #1f6fb2`, borderRadius: 26, padding: '14px 34px 18px', boxSizing: 'border-box'}}>
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 26, color: INK_SOFT}}>Memory aid</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: AMBER_INK, lineHeight: 1.1}}>Progesterone is pro-gestation. hCG is the embryo's message to the corpus luteum.</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: '#1f6fb2', lineHeight: 1.1, marginTop: 6}}>meet, divide, attach, signal, hand over</div>
+		</Enter>
 	</>
 );

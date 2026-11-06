@@ -22,15 +22,15 @@ export const SceneEvaluate: React.FC = () => {
 	});
 	const angle = (f < c.four ? 12 * Math.sin((f - c.ev) / 10) * Math.max(0, 1 - (f - c.ev) / 120) : 0);
 	const bal = prog(f, c.ev + 30, 14) * (1 - prog(f, c.four - 8, 14));
-	const glossX = 1290;
+	const glossX = 1270;
 	const rowY = (i: number) => 260 + 67 + i * 87 + 8;
 	const chip = (text: string, at: number, color: string) => (
 		<Enter at={at} dy={14}><div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, color, background: '#fffdf8', border: `3px solid ${color}`, borderRadius: 999, padding: '0 26px 6px', whiteSpace: 'nowrap', boxShadow: '0 8px 18px rgba(60,45,20,0.08)'}}>{text}</div></Enter>
 	);
 	const gloss = (i: number, at: number, k: RowKey, label: string, text: string) => (
-		<Enter at={at + 10} style={{position: 'absolute', left: glossX, top: rowY(i) - 6, width: 540, borderLeft: `6px solid ${k === 'gain' ? GAIN : k === 'variety' ? VAR : k === 'cost' ? COST_INK : WELF_INK}`, paddingLeft: 14}}>
+		<Enter at={at + 10} style={{position: 'absolute', left: glossX, top: rowY(i) - 10, width: 580, borderLeft: `6px solid ${k === 'gain' ? GAIN : k === 'variety' ? VAR : k === 'cost' ? COST_INK : WELF_INK}`, paddingLeft: 14}}>
 			<div style={{display: 'flex', gap: 10, alignItems: 'flex-start'}}>
-				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25, lineHeight: 1.18, color: INK}}>{text}</div>
+				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30, lineHeight: 1.12, color: INK}}>{text}</div>
 			</div>
 		</Enter>
 	);
@@ -73,18 +73,18 @@ const CARDS: {key: RowKey | 'judge' | 'weigh'; title: string; color: string; bod
 	{key: 'cost', title: 'Cost and welfare', color: COST_INK, body: <>semen and workers cost money; selecting for milk yield links to lower fertility, a welfare cost</>},
 	{key: 'weigh', title: 'Weigh, then verdict: when', color: INK, body: <>the benefit is real, and it lasts if many unrelated bulls are used, each on only a share of the cows, and health traits count</>},
 ];
-const CY = [182, 300, 418, 536, 654];
+const CY = [176, 298, 420, 542, 664];
 const RowCard: React.FC<{i: number; at: number; hi?: number; lastsAt?: number}> = ({i, at}) => {
 	const card = CARDS[i];
 	const f = useCurrentFrame();
 	const p = prog(f, at, 16);
 	return (
-		<div style={{position: 'absolute', left: 96, top: CY[i], width: 960, height: 106, opacity: p, transform: `translateY(${(1 - p) * 18}px)`, background: '#fffdf8', borderRadius: 20, border: `3px solid ${card.color}`, boxShadow: '0 10px 24px rgba(60,45,20,0.08)', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 20, padding: '0 22px'}}>
-			<div style={{width: 210, flex: 'none', display: 'flex', alignItems: 'center', gap: 10}}>
-				{card.key === 'judge' || card.key === 'weigh' ? null : <RowGlyph k={card.key} size={36} />}
-				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: card.color, lineHeight: 1}}>{card.title}</span>
+		<div style={{position: 'absolute', left: 96, top: CY[i], width: 1000, height: 116, opacity: p, transform: `translateY(${(1 - p) * 18}px)`, background: '#fffdf8', borderRadius: 20, border: `3px solid ${card.color}`, boxShadow: '0 10px 24px rgba(60,45,20,0.08)', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 20, padding: '0 22px'}}>
+			<div style={{width: 200, flex: 'none', display: 'flex', alignItems: 'center', gap: 10}}>
+				{card.key === 'judge' || card.key === 'weigh' ? null : <RowGlyph k={card.key} size={38} />}
+				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, color: card.color, lineHeight: 1}}>{card.title}</span>
 			</div>
-			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25, lineHeight: 1.2, color: INK}}>{card.body}</div>
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30, lineHeight: 1.15, color: INK}}>{card.body}</div>
 		</div>
 	);
 };
@@ -92,10 +92,44 @@ const QUESTION = 'Evaluate the use of artificial insemination in dairy farming.'
 const Question: React.FC = () => <Heading items={[[-80, QUESTION]]} size={50} />;
 
 // ---------- 6a. Judgement and gain ----------
+const JBULL = [ORANGE, POOL[1], POOL[5]];
+/** The judgement drawn: three unrelated bulls (different allele colours), each fathering calves in only a share of the herd. */
+const JudgePanel: React.FC<{many: number; share: number; health: number; out: number}> = ({many, share, health, out}) => {
+	const f = useCurrentFrame();
+	const o = 1 - prog(f, out, 14);
+	return (
+		<Overlay>
+			<g opacity={o}>
+				<rect x={1150} y={190} width={700} height={540} rx={26} fill="#fffdf8" fillOpacity={0.55} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="2 12" strokeLinecap="round" opacity={prog(f, many - 10, 14)} />
+				{JBULL.map((col, i) => {
+					const bx = 1270 + i * 230;
+					return (
+						<g key={i}>
+							<g opacity={prog(f, many - 6 + i * 8, 12)}>
+								<AnimalIcon x={bx} y={330} s={0.95} kind="bull" ring={col} />
+								<BeadDot cx={bx} cy={236} r={15} color={col} />
+							</g>
+							<Arrow x1={bx} y1={372} x2={bx} y2={434} at={share - 4 + i * 6} color={col} width={7} dur={14} head={18} />
+							{[-52, 52].map((dx, k) => (
+								<g key={k} opacity={prog(f, many + 10 + i * 8, 12)}>
+									<AnimalIcon x={bx + dx} y={548} s={0.66} kind="cow" />
+									<BeadDot cx={bx + dx} cy={462} r={10} color={col} o={prog(f, share + 6 + i * 6 + k * 3, 10)} />
+								</g>
+							))}
+						</g>
+					);
+				})}
+				<text x={1500} y={612} textAnchor="middle" opacity={prog(f, share + 20, 12)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK}>each bull: only a share of the cows</text>
+				<g opacity={prog(f, health, 12)}><HeartIcon x={1240} y={672} s={1.2} /></g>
+				<text x={1290} y={686} opacity={prog(f, health, 12)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={WELF_INK}>chosen for health too, not only milk</text>
+			</g>
+		</Overlay>
+	);
+};
 export const SceneModelGain: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('model-judgement-gain'), {
-		here: 'Here is a model answer', first: 'First, the judgement', worth: 'worthwhile', second: 'Second, the gain', cmp: 'compare herds using proven bulls', natural: 'mate naturally', faster: 'show faster gains',
+		here: 'Here is a model answer', first: 'First, the judgement', worth: 'worthwhile', share: 'only a share', health: 'health traits', second: 'Second, the gain', cmp: 'compare herds using proven bulls', natural: 'mate naturally', faster: 'show faster gains',
 	});
 	const PX = 1120;
 	return (
@@ -103,6 +137,7 @@ export const SceneModelGain: React.FC = () => {
 			<Heading items={[[c.here - 6, QUESTION]]} size={50} />
 			<RowCard i={0} at={c.first} />
 			<RowCard i={1} at={c.second} />
+			<JudgePanel many={c.worth} share={c.share} health={c.health} out={c.second - 10} />
 			<Overlay>
 				{/* two herds face each other */}
 				<g opacity={prog(f, c.cmp, 14)}>
@@ -202,21 +237,21 @@ export const SceneModelVerdict: React.FC = () => {
 			<Tag at={c.outcross} x={1130} y={606} text="outcrossing: breeding with unrelated animals" color={GAIN} size={36} />
 			<SlideIn at={c.frozen}>
 				<Overlay>
-					<rect x={96} y={790} width={470} height={150} rx={20} fill="#fffdf8" stroke="#7fb0d6" strokeWidth={3} />
-					<Straw x={150} y={862} w={80} rot={-30} frost={1} />
-					<text x={210} y={846} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25}} fill={INK}>frozen semen from older,</text>
-					<text x={210} y={880} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25}} fill={INK}>different bulls</text>
+					<rect x={96} y={806} width={490} height={150} rx={20} fill="#fffdf8" stroke="#7fb0d6" strokeWidth={3} />
+					<Straw x={150} y={880} w={80} rot={-30} frost={1} />
+					<text x={210} y={866} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30}} fill={INK}>frozen semen from older,</text>
+					<text x={210} y={906} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30}} fill={INK}>different bulls</text>
 				</Overlay>
 			</SlideIn>
 			<SlideIn at={c.heritage}>
 				<Overlay>
-					<rect x={590} y={790} width={470} height={150} rx={20} fill="#fffdf8" stroke={GREYC} strokeWidth={3} />
-					<AnimalIcon x={650} y={866} s={0.6} kind="cow" />
-					<text x={720} y={846} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25}} fill={INK}>heritage breeds:</text>
-					<text x={720} y={880} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 25}} fill={INK}>older breeds still bred</text>
+					<rect x={606} y={806} width={490} height={150} rx={20} fill="#fffdf8" stroke={GREYC} strokeWidth={3} />
+					<AnimalIcon x={666} y={884} s={0.6} kind="cow" />
+					<text x={730} y={866} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30}} fill={INK}>heritage breeds:</text>
+					<text x={730} y={906} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 30}} fill={INK}>older breeds still bred</text>
 				</Overlay>
 			</SlideIn>
-			<Tag at={c.protect} x={96} y={742} text="keep variety safe" color={VAR} size={44} />
+			<Tag at={c.protect} x={96} y={966} text="keep variety safe" color={VAR} size={44} />
 		</>
 	);
 };

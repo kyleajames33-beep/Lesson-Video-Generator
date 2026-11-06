@@ -1,5 +1,6 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
+import {BRAIN as BRAIN_IMG, PIT_PART as PIT_IMG} from './assets';
 import {Countdown, HandText} from '../../kit';
 import {cues, speechEnd} from '../../cues';
 import {
@@ -15,11 +16,12 @@ const TITLES = ['A daily tablet', 'A breastfeeding mother', "A student's sentenc
 const Badge: React.FC<{n: number}> = ({n}) => (
 	<div style={{width: 54, height: 54, borderRadius: 999, background: AMBER, color: '#fff', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none'}}>{n}</div>
 );
-const Frame: React.FC<{i: number; at: number}> = ({i, at}) => {
+const Frame: React.FC<{i: number; at: number; wait: number}> = ({i, at, wait}) => {
 	const f = useCurrentFrame();
+	const w = prog(f, wait + i * 6, 16);
 	const p = prog(f, at, 16);
 	return (
-		<div style={{position: 'absolute', left: CX[i], top: FY, width: CWD, height: FH, opacity: p, transform: `translateY(${(1 - p) * 18}px)`, background: '#fffdf8', borderRadius: 24, boxShadow: '0 18px 40px rgba(60,45,20,0.10), 0 2px 6px rgba(60,45,20,0.06)', border: '1.5px solid rgba(60,45,20,0.08)', boxSizing: 'border-box'}}>
+		<div style={{position: 'absolute', left: CX[i], top: FY, width: CWD, height: FH, opacity: 0.5 * w + 0.5 * p, transform: `translateY(${(1 - w) * 18}px)`, background: '#fffdf8', borderRadius: 24, boxShadow: '0 18px 40px rgba(60,45,20,0.10), 0 2px 6px rgba(60,45,20,0.06)', border: '1.5px solid rgba(60,45,20,0.08)', boxSizing: 'border-box'}}>
 			<div style={{display: 'flex', alignItems: 'center', gap: 16, padding: '14px 22px 0'}}>
 				<Badge n={i + 1} />
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, color: INK, lineHeight: 1}}>{TITLES[i]}</div>
@@ -40,6 +42,16 @@ const Chip2: React.FC<{x: number; y: number; at: number; text: string}> = ({x, y
 		<span style={{display: 'inline-block', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, color: INK, background: '#f1eadb', border: `3px solid ${INK_SOFT}`, borderRadius: 999, padding: '2px 22px'}}>{text}</span>
 	</Enter>
 );
+/** The painted brain at card size, centred on its pituitary. */
+const MiniBrain: React.FC<{x: number; y: number}> = ({x, y}) => {
+	const K = 0.1;
+	return (
+		<>
+			<image href={staticFile(BRAIN_IMG)} x={x - 717.5 * K} y={y - 1014.5 * K + 30} width={1800 * K} height={1600 * K} />
+			<image href={staticFile(PIT_IMG)} x={x - 717.5 * K} y={y - 1014.5 * K + 30} width={1800 * K} height={1600 * K} />
+		</>
+	);
+};
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
 	const scene = S('attempt');
@@ -52,17 +64,17 @@ export const SceneAttempt: React.FC = () => {
 	return (
 		<>
 			<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Your turn: three situations" at={c.turn} size={76} cps={30} /></div>
-			<Frame i={0} at={c.one} /><Frame i={1} at={c.two} /><Frame i={2} at={c.three} />
+			<Frame i={0} at={c.one} wait={c.turn + 4} /><Frame i={1} at={c.two} wait={c.turn + 4} /><Frame i={2} at={c.three} wait={c.turn + 4} />
 			{/* 1: tablet, pituitary, ovary (no hormone dots, no follicle detail) */}
 			<Overlay>
 				<g opacity={prog(f, c.tablet, 16)}>
-					<Tablet x={CX[0] + 100} y={FY + 150} s={0.8} />
-					<ellipse cx={CX[0] + 300} cy={FY + 150} rx={52} ry={36} fill="#fffdf8" stroke={SLATE_INK} strokeWidth={5} />
-					<text x={CX[0] + 300} y={FY + 214} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 26}} fill={INK_SOFT}>pituitary</text>
-					<circle cx={CX[0] + 480} cy={FY + 150} r={40} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={5} />
-					<text x={CX[0] + 480} y={FY + 214} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 26}} fill={INK_SOFT}>ovary</text>
+					<Tablet x={CX[0] + 90} y={FY + 150} s={0.8} />
+					<MiniBrain x={CX[0] + 300} y={FY + 150} />
+					<text x={CX[0] + 300} y={FY + 222} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT}>pituitary</text>
+					<text x={CX[0] + 476} y={FY + 222} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT}>ovary</text>
 				</g>
 			</Overlay>
+			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.tablet, 16)}}><OvaryRound x={CX[0] + 411} y={FY + 85} d={130} /></div>
 			<Hand at={c.notpreg} x={CX[0] + 28} y={FY + 236} size={40} color={AMBER_INK}>not pregnant</Hand>
 			<Hand at={c.copies} x={CX[0] + 28} y={FY + 276} w={500} size={34} color={AMBER_INK}>hormone copies progesterone's action on the pituitary</Hand>
 			<Col i={0} y={360}>
@@ -72,11 +84,6 @@ export const SceneAttempt: React.FC = () => {
 			{/* 2: the milk gland with full sacs, a baby at the duct end */}
 			<Overlay>
 				<g opacity={prog(f, c.plenty, 16)}><MilkGland x={CX[1] + 30} y={FY + 80} s={0.34} fill={0.95} draw={1} idp="at" /></g>
-				<g opacity={prog(f, c.suck, 14)}>
-					<circle cx={CX[1] + 330} cy={FY + 168} r={34} fill="#f3d9b8" stroke="#b5845a" strokeWidth={5} />
-					<circle cx={CX[1] + 318} cy={FY + 162} r={4} fill={INK} /><circle cx={CX[1] + 342} cy={FY + 162} r={4} fill={INK} />
-					<path d="M318,0 q12,10 24,0" transform={`translate(${CX[1]},${FY + 178})`} fill="none" stroke={INK} strokeWidth={3} strokeLinecap="round" />
-				</g>
 			</Overlay>
 			<Hand at={c.suck} x={CX[1] + 28} y={FY + 264} size={36} color={AMBER_INK}>baby suckles well</Hand>
 			<Hand at={c.little} x={CX[1] + 28} y={FY + 302} size={36} color={AMBER_INK}>very little milk comes out</Hand>
@@ -157,10 +164,6 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<Heading items={[[0, 'Two: make it, then move it']]} size={72} />
 			<Overlay>
 				<MilkGland x={GXX} y={GYY} s={1} fill={0.95} crescent={prog(f, c.oxyp, 14)} squeeze={sqz} draw={1} idp="f2" />
-				<g opacity={prog(f, c.plenty, 14)}>
-					<circle cx={nip[0] + 90} cy={nip[1]} r={36} fill="#f3d9b8" stroke="#b5845a" strokeWidth={5} />
-					<circle cx={nip[0] + 78} cy={nip[1] - 6} r={4} fill={INK} /><circle cx={nip[0] + 102} cy={nip[1] - 6} r={4} fill={INK} />
-				</g>
 				<Cross x={GXX + 470} y={GYY + 260} s={1.6} at={c.notsq} />
 				<Dots pts={duct} at={c.os + 6} n={6} period={50} color="#e8c66a" r={8} end={c.os + 80} />
 			</Overlay>
@@ -294,27 +297,30 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 10. Key notes ----------
 const NOTES = [
-	'FSH (from the pituitary) makes a follicle grow, and a surge of LH makes it release its egg.',
-	'Progesterone returning in the blood turns FSH and LH down. This is negative feedback: progesterone acts back on the pituitary and turns the process down. In pregnancy the corpus luteum (kept going by hCG) and then the placenta keep progesterone high, so no egg is released.',
-	'Progesterone helps keep the uterus muscle calm. Late in pregnancy the placenta makes more oestrogen, which makes the muscle react more strongly to oxytocin.',
-	"At birth, the baby's head stretches the cervix, nerve signals reach the brain, and the pituitary releases oxytocin, so the muscle contracts harder and stretches the cervix more. This is positive feedback: the stronger contractions add to the stretch that caused them. It ends when the baby is born and the stretch stops.",
-	'Prolactin makes the breast produce milk, and oxytocin squeezes the milk out. Both are released when the baby suckles. High progesterone and oestrogen from the placenta hold milk production back in pregnancy.',
-	'Negative feedback opposes a change (here it turns the process down). Positive feedback adds to a change (here it pushes the process further). Neither word means good or bad.',
+	'FSH makes a follicle grow. A surge of LH makes it release its egg.',
+	'Negative feedback: high progesterone turns FSH and LH down, so no egg is released.',
+	'In pregnancy, the corpus luteum (kept going by hCG) and then the placenta keep progesterone high.',
+	'Late in pregnancy, oestrogen makes the uterus muscle react more strongly to oxytocin.',
+	'Positive feedback at birth: stretch, oxytocin, stronger squeeze, more stretch, until the baby is born.',
+	'Prolactin makes milk. Oxytocin squeezes it out.',
+	'Negative opposes a change. Positive adds to it. Neither word means good or bad.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={72} cps={40} /></div>
-		<div style={{position: 'absolute', left: 120, top: 196, width: 1690}}>
+		<Enter at={50} style={{position: 'absolute', right: 96, top: 112}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK}}>Pause the video if you need more time.</span></Enter>
+		<div style={{position: 'absolute', left: 120, top: 210, width: 1680}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 22, marginBottom: 10}}>
-					<div style={{flex: 'none', width: 16, height: 16, marginTop: 11, borderRadius: 999, background: AMBER}} />
-					<Body size={30}>{n}</Body>
+				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 24, marginBottom: 18}}>
+					<div style={{flex: 'none', width: 18, height: 18, marginTop: 15, borderRadius: 999, background: AMBER}} />
+					<Body size={38} weight={600}>{n}</Body>
 				</Enter>
 			))}
-			<Enter at={90} style={{marginTop: 12, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
-				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK, lineHeight: 1.1}}>Oxytocin squeezes (uterus and breast). Prolactin is pro-lactation.</div>
-				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#1f6fb2', lineHeight: 1.1, marginTop: 4}}>stretch, oxytocin, squeeze, more stretch</div>
-			</Enter>
 		</div>
+		<Enter at={90} style={{position: 'absolute', left: 120, top: 800, width: 1680, background: '#fffdf8', border: '5px solid #1f6fb2', borderRadius: 26, padding: '14px 34px 18px', boxSizing: 'border-box'}}>
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 26, color: INK_SOFT}}>Memory aid</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: AMBER_INK, lineHeight: 1.1}}>Oxytocin squeezes (uterus and breast). Prolactin is pro-lactation.</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: '#1f6fb2', lineHeight: 1.1, marginTop: 6}}>stretch, oxytocin, squeeze, more stretch</div>
+		</Enter>
 	</>
 );

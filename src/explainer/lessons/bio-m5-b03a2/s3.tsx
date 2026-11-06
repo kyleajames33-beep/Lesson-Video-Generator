@@ -278,16 +278,36 @@ export const SceneLoopCloses: React.FC = () => {
 };
 
 // ---------- 4c. Two kinds of feedback ----------
-const Thumb: React.FC<{x: number; y: number; down?: boolean; at: number; out: number; crossAt: number}> = ({x, y, down, at, out, crossAt}) => {
+/** Non-hand symbols. Negative: a level knocked off its dashed set point, with an arrow bringing it back. Positive: a staircase of arrows, each step bigger than the last. Box about 380 x 260 from (x, y). */
+const FeedbackSymbol: React.FC<{k: 'neg' | 'pos'; x: number; y: number; at: number; out: number}> = ({k, x, y, at, out}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 12) * (1 - prog(f, out, 10));
-	return (
-		<g opacity={o} transform={`translate(${x},${y})`}>
-			<g transform={down ? 'scale(1,-1)' : undefined}>
-				<rect x={0} y={20} width={26} height={52} rx={5} fill="#cfc6b4" stroke={INK} strokeWidth={5} />
-				<path d="M34,24 L54,-22 C58,-34 74,-30 72,-14 L66,12 L96,12 C108,12 112,24 106,32 L100,62 C96,74 88,76 80,76 L34,76Z" fill="#f3d9b8" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+	if (k === 'neg') {
+		const back = prog(f, at + 24, 30);
+		const dy = -100 * (1 - back);
+		return (
+			<g transform={`translate(${x},${y})`} opacity={o}>
+				<line x1={0} y1={160} x2={380} y2={160} stroke={INK_SOFT} strokeWidth={5} strokeDasharray="16 12" />
+				<text x={380} y={204} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 32}} fill={INK_SOFT}>set point</text>
+				<circle cx={200} cy={160 + dy} r={26} fill={SLATE_INK} stroke="#fff" strokeWidth={4} />
+				<path d="M250,50 C320,60 330,120 260,150" fill="none" stroke={SLATE_INK} strokeWidth={8} strokeLinecap="round" opacity={prog(f, at + 14, 10)} />
+				<path d="M246,128 L258,154 L282,140" fill="none" stroke={SLATE_INK} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" opacity={prog(f, at + 14, 10)} />
 			</g>
-			<Cross x={50} y={26} s={2.4} at={crossAt} />
+		);
+	}
+	const steps = [[0, 230, 60], [70, 190, 90], [170, 130, 120], [300, 50, 150]];
+	return (
+		<g transform={`translate(${x},${y})`} opacity={o}>
+			{steps.map(([sx, sy, len], i) => {
+				const p = prog(f, at + 8 + i * 10, 10);
+				const ex = sx + len * 0.6, ey = sy - len * 0.8;
+				return (
+					<g key={i} opacity={p}>
+						<line x1={sx} y1={sy} x2={ex} y2={ey} stroke={MAGENTA} strokeWidth={6 + i * 2} strokeLinecap="round" />
+						<path d={`M${ex - 22},${ey + 6} L${ex},${ey} L${ex + 2},${ey + 22}`} fill="none" stroke={MAGENTA} strokeWidth={6 + i * 2} strokeLinecap="round" strokeLinejoin="round" />
+					</g>
+				);
+			})}
 		</g>
 	);
 };
@@ -297,6 +317,24 @@ const Row: React.FC<{x: number; y: number; w: number; at: number; big: string; s
 		{small ? <div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32, color: INK_SOFT, lineHeight: 1.2, marginTop: 4}}>{small}</div> : null}
 	</Enter>
 );
+/** A small level-against-time trace: negative wobbles back to its set level, positive climbs faster and faster. */
+const MiniTrend: React.FC<{k: 'neg' | 'pos'; x: number; y: number; at: number; lit: number}> = ({k, x, y, at, lit}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 14);
+	const col = k === 'neg' ? SLATE_INK : MAGENTA;
+	const d = k === 'neg'
+		? 'M0,70 C60,70 90,14 140,14 C190,14 210,96 260,96 C310,96 330,52 380,52 C430,52 450,80 500,80 C560,80 600,70 700,70'
+		: 'M0,112 C200,110 350,102 450,84 C560,62 640,26 700,2';
+	return (
+		<g transform={`translate(${x},${y})`} opacity={o}>
+			<line x1={0} y1={0} x2={0} y2={120} stroke={INK_SOFT} strokeWidth={4} />
+			<line x1={0} y1={120} x2={700} y2={120} stroke={INK_SOFT} strokeWidth={4} />
+			{k === 'neg' ? <line x1={0} y1={70} x2={700} y2={70} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="12 10" /> : null}
+			<DrawPath d={d} at={at + 4} dur={36} color={col} width={8} />
+			<text x={k === 'neg' ? 700 : 20} y={k === 'neg' ? 40 : 40} textAnchor={k === 'neg' ? 'end' : 'start'} opacity={prog(f, lit, 12)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={col}>{k === 'neg' ? 'pushed back to steady' : 'bigger and bigger'}</text>
+		</g>
+	);
+};
 export const SceneTwoKinds: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('two-kinds'), {
@@ -318,9 +356,13 @@ export const SceneTwoKinds: React.FC = () => {
 			{col(96, 'negative feedback', 'neg')}
 			{col(994, 'positive feedback', 'pos')}
 			<Overlay>
-				<Thumb x={400} y={486} down at={c.neg} out={c.describe - 6} crossAt={c.neg + 40} />
-				<Thumb x={1300} y={440} at={c.pos} out={c.describe - 6} crossAt={c.pos + 40} />
+				<FeedbackSymbol k="neg" x={140} y={370} at={4} out={c.describe - 6} />
+				<FeedbackSymbol k="pos" x={1040} y={450} at={10} out={c.describe - 6} />
+				<MiniTrend k="neg" x={156} y={330} at={c.describe} lit={c.negF} />
+				<MiniTrend k="pos" x={1054} y={330} at={c.describe} lit={c.posF} />
 			</Overlay>
+			<Hand at={c.neg + 30} out={c.describe - 6} x={540} y={420} w={360} size={66} color={SLATE_INK}>does not mean bad</Hand>
+			<Hand at={c.pos + 30} out={c.describe - 6} x={1440} y={420} w={360} size={66} color={MAGENTA_INK}>does not mean good</Hand>
 			<Row x={126} y={460} w={770} at={c.negF} big="opposes the change" small="(here, turns the process down)" color={SLATE_INK} />
 			<Row x={1024} y={460} w={770} at={c.posF} big="adds to the change" small="(here, pushes the process further)" color={MAGENTA_INK} />
 			<Row x={126} y={620} w={770} at={c.steady} big="keeps things steady" />
