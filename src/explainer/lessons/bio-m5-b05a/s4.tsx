@@ -6,7 +6,9 @@ import {
 	AMBER, AMBER_INK, anaOffsets, Arrow, CH, CX, CY, DrawPath, FONT_DISPLAY, FONT_HAND, Hand, Heading,
 	INK, INK_SOFT, lerp, META_Y, Overlay, PenTap, Pill, prog, RX, RY, S, vis, clamp01, CREAM, ANA_X,
 } from './shared';
-import {AN, CD, camAt, Dissolve, HCell, HChrom, Morph, Panel, PL, Ring, Stage, toS} from './cd';
+import {AN, CD, camAt, Dissolve, HCell, HChrom, Morph, PL, Ring, Stage, toS, usePlates, xf} from './cd';
+import {Chrom, PLUM} from './shared';
+import {PNuc, usePNuc} from './pnuc';
 import type {Cam, HCol} from './cd';
 import {hcol} from './s1';
 import {REACH, SPLIT} from './s3';
@@ -244,13 +246,18 @@ const Mark: React.FC<{x: number; y: number; o?: number}> = ({x, y, o = 1}) => (
 	<g opacity={o}><circle cx={x} cy={y} r={11} fill={AMBER} stroke={AMBER_INK} strokeWidth={3.5} /></g>
 );
 /** A small coded cell with one long plum chromosome (copied or not); the mark sits beside the changed chromatid. */
-const SmallCell: React.FC<{x: number; y: number; r?: number; o?: number; marked?: boolean; dup?: number}> = ({x, y, r = 90, o = 1, marked, dup = 0}) => (
-	<g opacity={o}>
-		<HCell cx={x} cy={y} rx={r} ry={r * 0.86} sw={3.5} nuc={1} nucR={r * 0.6} />
-		<HChrom x={x} y={y} len={r * 0.95} w={r * 0.15} col="P" dup={dup} />
-		{marked ? <Mark x={x + (dup > 0 ? r * 0.16 : 0) + r * 0.2} y={y - r * 0.24} /> : null}
-	</g>
-);
+const SmallCell: React.FC<{x: number; y: number; r?: number; o?: number; marked?: boolean; dup?: number}> = ({x, y, r = 90, o = 1, marked, dup = 0}) => {
+	// quality fix (6 Nov): the painted nucleus close-up with one painted long plum chromosome (was a coded oval and bar)
+	const k = (r * 1.0) / 119;
+	const cx = x - 0.22 * r, cy = y - 0.12 * r;
+	return (
+		<g opacity={o}>
+			<PNuc cx={x} cy={y} r={r * 0.76} />
+			<Chrom x={cx} y={cy} kind="L" color={PLUM} dup={dup} coil={1} s={k} />
+			{marked ? <Mark x={cx + (dup > 0 ? r * 0.14 : 0) + r * 0.2} y={cy - r * 0.26} /> : null}
+		</g>
+	);
+};
 const Letters: React.FC<{x: number; y: number; letters: string[]; flip?: number; at: number}> = ({x, y, letters, flip, at}) => {
 	const f = useCurrentFrame();
 	return (
@@ -280,27 +287,32 @@ export const SceneNotPerfect: React.FC = () => {
 	const sC = prog(f, c.rarely - 4, 20);
 	// stage C: metaphase and the mistake, on the clean coded model
 	const travel = prog(f, c.both, 90);
+	const RCH = 175;
 	const e = 0.05 * prog(f, c.two, 16) + 0.95 * travel;
 	const my = (i: number) => CY + META_Y[i];
 	const offs = (i: number) => {
-		if (i !== 0) return anaOffsets(i, e);
+		// quality fix (6 Nov): the chromatids stop at +-RCH, inside the clear spindle zone of the painted anaphase cell
+		if (i !== 0) return anaOffsets(i, e, RCH);
 		const y0 = META_Y[0];
-		return {xa: lerp(0, ANA_X - 40, e), ya: lerp(0, 95 - y0, e), xb: lerp(0, ANA_X, e), yb: lerp(0, -y0, e), sep: Math.min(1, e * 25)};
+		return {xa: lerp(0, RCH - 40, e), ya: lerp(0, 95 - y0, e), xb: lerp(0, RCH, e), yb: lerp(0, -y0, e), sep: Math.min(1, e * 25)};
 	};
 	const glow = vis(f, c.two, c.both, 10);
-	const R = ANA_X;
+	const R = RCH;
 	const rightPts: [number, number][] = [[CX + R - 40, CY - 95], [CX + R + 40, CY - 95], [CX + R, CY], [CX + R - 40, CY + 95], [CX + R + 40, CY + 95]];
 	const leftPts: [number, number][] = [[CX - R - 40, CY - 95], [CX - R + 40, CY - 95], [CX - R + 40, CY + 95]];
 	const mag = prog(f, c.checks, 70);
 	const flagO = prog(f, c.checks + 54, 10) * (1 - 0.5 * prog(f, c.notall, 14));
 	const PLp = CX - (RX + 40) * 0.62, PRp = CX + (RX + 40) * 0.62;
+	const cellW = xf(prog(f, c.both + 10, 50));
+	usePNuc();
+	usePlates([CD('metaphase', true), CD('anaphase', true)]);
 	return (
 		<>
 			<Heading items={[[0, 'Mitosis is accurate, not perfect']]} size={64} />
 			{/* A: a copying mistake */}
 			<div style={{opacity: sA, position: 'absolute', inset: 0}}>
 				<Overlay>
-					<HChrom x={400} y={540} len={300} w={40} col="P" dup={1} />
+					<Chrom x={400} y={540} kind="L" color={PLUM} dup={1} coil={1} s={2.6} />
 					<Mark x={400 + 52} y={540 - 90} o={prog(f, c.copying + 30, 10)} />
 					<DrawPath d="M480,500 Q620,500 790,500" at={c.mistake} dur={20} color={INK_SOFT} width={4} />
 					<circle cx={1010} cy={500} r={225} fill="rgba(255,253,248,0.9)" stroke={AMBER_INK} strokeWidth={8} opacity={prog(f, c.mistake, 14)} />
@@ -333,13 +345,14 @@ export const SceneNotPerfect: React.FC = () => {
 				<Cen at={c.ends + 20} x={780} y={470} w={300} size={44} color={AMBER_INK}>the mistake</Cen>
 				<Hand at={c.divides + 6} x={560} y={850} size={54} color={AMBER_INK}>one new cell, then its descendants</Hand>
 			</div>
-			{/* C: both chromatids to the same end (the clean coded model in its own panel) */}
+			{/* C: both chromatids to the same end (painted cell, enlarged 1.2 x about the cell centre) */}
 			<div style={{opacity: sC, position: 'absolute', inset: 0}}>
 				<Overlay>
-					<Panel x={440} y={196} w={1040} h={700} />
-					<HCell cx={CX} cy={CY} rx={RX + 40} ry={RY} sw={4} />
-					<circle cx={PLp} cy={CY} r={8} fill="#9a8a6a" />
-					<circle cx={PRp} cy={CY} r={8} fill="#9a8a6a" />
+					<g transform={`translate(${CX},${CY}) scale(1.2) translate(${-CX},${-CY})`}>
+					{/* quality fix (6 Nov): the painted metaphase cell becomes the painted anaphase cell as the chromatids travel;
+					    both plates are scaled (uniformly) so their centrosomes sit on the model poles PLp and PRp */}
+					{cellW.a > 0.004 ? <PL src={CD('metaphase', true)} at={[958.8, CY + 19.8, 0.4957]} o={cellW.a} /> : null}
+					{cellW.b > 0.004 ? <PL src={CD('anaphase', true)} at={[964.5, CY + 2.3, 0.4514]} o={cellW.b} /> : null}
 					{CH.map((ch, i) => {
 						const o = offs(i);
 						const ax = CX + o.xa, ay = my(i) + o.ya, bx = CX + o.xb, by = my(i) + o.yb;
@@ -354,30 +367,24 @@ export const SceneNotPerfect: React.FC = () => {
 					})}
 					{CH.map((ch, i) => {
 						const o = offs(i);
-						const col: HCol = hcol(ch.color);
-						const len = CL[ch.kind as 'L' | 'S'];
-						if (o.sep < 0.05) return <HChrom key={i} x={CX} y={my(i)} len={len} w={CW} col={col} dup={1} hi={i === 0 ? glow : 0} />;
-						return (
-							<g key={i}>
-								<HChrom x={CX + o.xa} y={my(i) + o.ya} len={len} w={CW} col={col} hi={i === 0 ? glow : 0} />
-								<HChrom x={CX + o.xb} y={my(i) + o.yb} len={len} w={CW} col={col} hi={i === 0 ? glow : 0} />
-							</g>
-						);
+						const hi = i === 0 ? glow : 0;
+						return <Chrom key={i} x={CX} y={my(i)} kind={ch.kind} color={ch.color} dup={1} coil={1} s={1} xa={o.xa} ya={o.ya} xb={o.xb} yb={o.yb} sep={o.sep} hiA={hi} hiB={hi} />;
 					})}
 					<PenTap pts={rightPts} at={[0, 1, 2, 3, 4].map(k => c.extra + 16 + k * 14)} badge={[46, -30]} out={c.short} showPen={false} />
 					<PenTap pts={leftPts} at={[0, 1, 2].map(k => c.short + 16 + k * 14)} badge={[-46, -30]} showPen={false} />
+					</g>
 					{/* the caution mark: a flat grey triangle */}
-					<g opacity={prog(f, c.extra, 14)} transform={`translate(${CX},${CY - 268})`}>
+					<g opacity={prog(f, c.extra, 14)} transform={`translate(${CX},${CY - 312})`}>
 						<path d="M0,-34 L36,28 L-36,28 Z" fill="#e8eaec" stroke={GREY} strokeWidth={6} strokeLinejoin="round" />
 						<line x1={0} y1={-12} x2={0} y2={8} stroke={GREY} strokeWidth={7} strokeLinecap="round" />
 						<circle cx={0} cy={19} r={3.6} fill={GREY} />
 					</g>
 					{/* the check: a magnifier sweeps across and flags the problem */}
-					<g opacity={vis(f, c.checks, c.notall + 30, 8)} transform={`translate(${lerp(CX - 360, CX + 330, mag)},${CY + 300})`}>
+					<g opacity={vis(f, c.checks, c.notall + 30, 8)} transform={`translate(${lerp(CX - 400, CX + 380, mag)},${CY + 335})`}>
 						<circle r={34} fill="rgba(255,253,248,0.8)" stroke={AMBER_INK} strokeWidth={7} />
 						<line x1={24} y1={24} x2={58} y2={58} stroke={AMBER_INK} strokeWidth={10} strokeLinecap="round" />
 					</g>
-					<g opacity={flagO} transform={`translate(${CX + 440},${CY + 140})`}>
+					<g opacity={flagO} transform={`translate(${CX + 530},${CY + 150})`}>
 						<line x1={0} y1={0} x2={0} y2={-80} stroke={INK} strokeWidth={6} strokeLinecap="round" />
 						<path d="M0,-80 L56,-62 L0,-44 Z" fill={AMBER} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
 					</g>
@@ -388,7 +395,7 @@ export const SceneNotPerfect: React.FC = () => {
 				<Hand at={c.extra + 70} out={c.checks} x={1510} y={420} size={44} w={320} color={INK_SOFT}>one centromere, one chromosome</Hand>
 				<Hand at={c.extra + 6} x={1510} y={190} size={44} w={320} color={INK_SOFT}>an extra chromosome</Hand>
 				<Hand at={c.short + 4} x={96} y={200} size={44} w={330} color={INK_SOFT}>one short</Hand>
-				<Hand at={c.checks + 50} x={CX + 410} y={CY + 250} size={44} color={GREY}>flagged</Hand>
+				<Hand at={c.checks + 50} x={CX + 500} y={CY + 170} size={44} color={GREY}>flagged</Hand>
 			</div>
 		</>
 	);

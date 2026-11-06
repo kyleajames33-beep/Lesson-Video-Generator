@@ -92,25 +92,36 @@ export const SceneMemory: React.FC = () => {
 };
 
 // ---------- 10. Key notes ----------
+// Quality fix (6 Nov): short notes (8 short lines) beside a framed memory aid, instead of five dense paragraphs.
 export const NOTES = [
-	'DNA is copied in interphase, before mitosis. A copied chromosome has two sister chromatids joined at a centromere. Count centromeres, not chromatids.',
-	'A set is one of each kind. Diploid: two sets (human body cell: 46). Haploid: one set (gamete: 23).',
-	'Mitosis: prophase (chromosomes coil, the nuclear envelope breaks down, the spindle forms), metaphase (chromosomes line up in the middle), anaphase (centromeres split, chromatids are pulled apart), telophase (new nuclei form). Then cytokinesis: the cytoplasm splits.',
-	'Each new cell gets a copy of every chromosome, so the number is not halved. Human: 46, 92 chromatids, 92 chromosomes in anaphase, 46 in each new cell.',
-	'Order: IPMAT. Interphase comes first and is not part of mitosis.',
+	'DNA is copied in interphase (S phase), before mitosis.',
+	'Copied chromosome: two sister chromatids joined at a centromere.',
+	'Diploid: two sets (human body cell 46). Haploid: one set (23).',
+	'Prophase: chromosomes coil, envelope breaks down, spindle forms.',
+	'Metaphase: chromosomes line up across the middle.',
+	'Anaphase: sister chromatids pulled to opposite ends.',
+	'Telophase: two new nuclei. Cytokinesis splits the cytoplasm.',
+	'Each new cell keeps the full number (human: 46 in each).',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={68} cps={40} /></div>
-		<div style={{position: 'absolute', left: 110, top: 190, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 200, width: 1180}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 20, marginBottom: 26}}>
-					<div style={{flex: 'none', width: 18, height: 18, marginTop: 17, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 40, color: INK, lineHeight: 1.25}}>{n}</div>
+				<Enter key={i} at={14 + i * 8} style={{display: 'flex', gap: 20, marginBottom: 22}}>
+					<div style={{flex: 'none', width: 16, height: 16, marginTop: 17, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 38, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={150} style={{position: 'absolute', left: 110, top: 868}}>
+		<Enter at={90} style={{position: 'absolute', left: 1350, top: 230, width: 470, boxSizing: 'border-box', padding: '26px 30px', borderRadius: 24, border: `4px solid ${AMBER}`, background: '#fffdf8', boxShadow: '0 14px 34px rgba(60,45,20,0.10)'}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 104, color: INK, letterSpacing: 10, lineHeight: 1.1, marginTop: 10}}>IPMAT</div>
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 32, color: INK, lineHeight: 1.25, marginTop: 6}}>I comes first and is not part of mitosis.</div>
+			<div style={{height: 3, background: '#eadfc8', margin: '22px 0 18px'}} />
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: AMBER_INK, lineHeight: 1.1}}>Count centromeres, not chromatids.</div>
+		</Enter>
+		<Enter at={150} style={{position: 'absolute', left: 110, top: 900}}>
 			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
 	</>

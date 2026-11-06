@@ -11,6 +11,12 @@
 const B = 'assets/biology/';
 export const AMOEBA = B + 'b2c-amoeba-fission-1-v1.png';
 
-const ALL = [AMOEBA];
+// Quality fix (6 Nov): painted helix for the hook question, the B1 binary fission series for the bacterium beat and the
+// B3a early embryo for "reaches offspring" (replacing a coded child figure: no people in videos).
+export const HELIX = B + 'b5x-zoom-helix-v1.png';
+export const FISSION = [1, 2, 3].map(n => B + `b1-fission-${n}-v1.png`);
+export const EMBRYO = B + 'b3a-cleavage-4-v1.png';
+
+const ALL = [AMOEBA, HELIX, ...FISSION, EMBRYO];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

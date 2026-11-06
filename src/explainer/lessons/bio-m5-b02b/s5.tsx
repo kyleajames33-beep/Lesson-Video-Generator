@@ -34,7 +34,7 @@ const Col: React.FC<{i: number; y: number; children: React.ReactNode}> = ({i, y,
 );
 const Para: React.FC<{at: number; q?: boolean; children: React.ReactNode}> = ({at, q, children}) => (
 	<Enter at={at}>
-		<Body size={q ? 30 : 28} weight={q ? 800 : 600} color={q ? AMBER_INK : INK} style={{lineHeight: 1.2}}>{children}</Body>
+		<Body size={q ? 31 : 30} weight={q ? 800 : 600} color={q ? AMBER_INK : INK} style={{lineHeight: 1.2}}>{children}</Body>
 	</Enter>
 );
 
@@ -76,7 +76,7 @@ export const SceneAttempt: React.FC = () => {
 	const scene = S('attempt');
 	const c = cues(scene, {
 		turn: 'Your turn', one: 'One', c1: 'a grower covers', c1b: 'The grower also removes', q1: 'Which step failed', two: 'Two', c2: 'a gardener brushes', c2b: 'Two days later', q2: 'Has fertilisation happened',
-		three: 'Three', c3: 'a farmer grows', c3b: 'a new disease', q3: 'Why is that field', pause: 'Pause the video',
+		three: ['Three', 2], c3: 'a farmer grows', c3b: 'a new disease', q3: 'Why is that field', pause: 'Pause the video',
 	});
 	const hold = scene.responseHold ?? {startFrame: 1510, endFrame: 2710};
 	const bw = 176;
@@ -218,9 +218,11 @@ export const SceneMemory: React.FC = () => {
 			<div style={{position: 'absolute', left: 110, top: 270}}><HandText text="Fertilisation = the sperm joining the egg" at={c.join} size={70} cps={26} color={FEMALE} /></div>
 			<div style={{position: 'absolute', left: 110, top: 350}}><HandText text="In between, the pollen tube does the carrying" at={c.between} size={52} cps={26} color={GOLD} /></div>
 			{kinds.map(([k, at, sub], i) => {
+				// quality fix (6 Nov): the four step cards are on screen (dimmed) from the start and light up on their cues
+				const p0 = prog(f, 4 + i * 5, 14);
 				const p = prog(f, at, 16);
 				return (
-					<div key={k} style={{position: 'absolute', left: 140 + i * 420, top: 470, width: 380, height: 300, borderRadius: 30, background: '#fffdf8', border: `5px solid ${AMBER}`, boxShadow: '0 18px 40px rgba(60,45,20,0.10)', opacity: p, transform: `translateY(${(1 - p) * 30}px)`, boxSizing: 'border-box'}}>
+					<div key={k} style={{position: 'absolute', left: 140 + i * 420, top: 470, width: 380, height: 300, borderRadius: 30, background: '#fffdf8', border: `5px solid ${p > 0.5 ? AMBER : '#d9cdb5'}`, boxShadow: '0 18px 40px rgba(60,45,20,0.10)', opacity: p0 * (0.42 + 0.58 * p), transform: `translateY(${(1 - p0) * 30}px) scale(${1 + 0.05 * Math.sin(Math.PI * p)})`, boxSizing: 'border-box'}}>
 						<svg width={380} height={200} viewBox="-190 -100 380 200"><SeqIcon k={k} x={0} y={0} s={3.2} /></svg>
 						<div style={{textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 96, color: AMBER_INK, lineHeight: 0.9}}>{k}</div>
 					</div>

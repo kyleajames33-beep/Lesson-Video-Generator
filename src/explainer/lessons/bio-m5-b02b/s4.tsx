@@ -150,6 +150,17 @@ export const SceneSeedsBetter: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[c.when, 'When are seeds the better route?']]} size={72} />
+			{/* quality fix (6 Nov): the question opens on the two routes side by side (runner plant and bean seed), which
+			    clear just before the paddock panel comes in */}
+			<div style={{opacity: prog(f, 0, 14) * (1 - prog(f, c.paddock - 22, 12))}}>
+				<Art a={ART.runner} x={170} y={300} w={640} />
+				<Art a={ART.bean} x={1190} y={250} w={380} />
+				<Overlay>
+					<Label x={490} y={300 + artH(ART.runner, 640) + 70} at={6} text="runners: asexual, so clones" size={46} color={GREEN} />
+					<Label x={1380} y={250 + artH(ART.bean, 380) + 70} at={14} text="seeds: sexual, so varied" size={46} color={AMBER_INK} />
+					<Label x={985} y={590} at={20} text="or" size={110} color={INK_SOFT} />
+				</Overlay>
+			</div>
 			<Panel x={96} y={190} w={840} h={556} at={c.paddock - 10} title="Steady paddock" color={GREEN} />
 			<Panel x={984} y={190} w={840} h={556} at={c.disease - 10} title="New disease arrives" color={FEMALE} />
 			<Panel x={96} y={762} w={1728} h={190} at={c.far - 12} title="Need to reach new places" color={TEAL} />

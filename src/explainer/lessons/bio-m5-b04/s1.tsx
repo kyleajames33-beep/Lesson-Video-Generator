@@ -7,6 +7,8 @@ import {
 	Nucleotide, Overlay, prog, pulse, S, Scribble, Tick, TileSpec, TwistHelix, Underline, ORIG, ladderGeom,
 } from './shared';
 import {Tile} from './dna';
+import {Plate} from '../../kit';
+import {HELIX} from './assets';
 
 // ---------- 1. Hook: the size of the copying job ----------
 export const SceneHook: React.FC = () => {
@@ -57,6 +59,13 @@ export const SceneHook: React.FC = () => {
 		<>
 			<div style={{position: 'absolute', left: 96, top: 92, display: 'flex', opacity: f >= c.how ? 1 : 0}}><HandText text="How does DNA copy itself so accurately?" at={c.how} size={66} cps={30} /></div>
 			<Hand at={c.what} x={96} y={178} size={56}>and what happens to the original?</Hand>
+			{/* quality fix (6 Nov): the question opens on a painted double helix, which settles in as the book fades */}
+			{(() => {
+				const hp = prog(f, c.how - 14, 26);
+				return hp > 0.004 ? (
+					<Plate src={HELIX} natural={[2000, 2000]} crop={[619, 154, 861, 1691]} width={500} style={{left: 960 - 250, top: 640 - 491, opacity: hp, transform: `rotate(${90 - 8 * (1 - hp)}deg) scale(${0.9 + 0.1 * hp + 0.02 * Math.sin((f - c.how) / 40)})`}} />
+				) : null;
+			})()}
 			<div style={{opacity: plateO}}>
 				<Cam keys={[[0, 1, 960, 540], [c.packed - 6, 1, 960, 540], [c.packed + 22, 2.6, nx, ny], [c.pin, 2.6, nx, ny], [c.pin + 34, 1, 960, 540]]}>
 					<Enter at={c.cell - 18} dy={30} style={{position: 'absolute', inset: 0}}><AmoebaArt x={PX} y={PY} w={PW} /></Enter>

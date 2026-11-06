@@ -7,8 +7,8 @@ import {
 	INK, INK_SOFT, Kind, lerp, onCircle, Overlay, PenTap, PlateArt, PLATES, prog, PLUM, S, StageStrip, TEALC, Tick, vis, Arrow,
 } from './shared';
 import {HAVE} from './assets';
-import {SvgPlate} from './shared';
-import {CD, Dissolve, HCell, HChrom, HSplit, Panel, PL, Stage} from './cd';
+import {Chrom, P_DUP, SvgPlate} from './shared';
+import {CD, Dissolve, HCell, HChrom, HSplit, Panel, PL, Stage, usePlates} from './cd';
 import type {HCol} from './cd';
 
 const GREY = '#7a8088';
@@ -150,6 +150,24 @@ const HSixX: React.FC<{cx: number; cy: number; six: {kind: Kind; color: string}[
 	);
 };
 const hcol = (c: string): HCol => (c === PLUM ? 'P' : 'T');
+/** Quality fix (6 Nov): the question cell is the painted metaphase cell (uniform scale, centrosomes on cx +- pole) with
+ *  six painted copied chromosomes on the equator (was a coded outline cell with bars). Coded fibres stay on top. */
+const PSixX: React.FC<{cx: number; cy: number; six: {kind: Kind; color: string}[]; yAt: (i: number) => number; s: number; pole: number; disc?: number; fibreColor?: string; fibreW?: number; hi?: (i: number) => number; discAt?: number[]}> = ({cx, cy, six, yAt, s, pole, disc = 1, fibreColor = '#9a8a6a', fibreW = 2.6, hi, discAt}) => {
+	const f = useCurrentFrame();
+	usePlates([CD('metaphase', true), ...Object.values(P_DUP).map(p => p.src)]);
+	const k = (2 * pole) / 1275;
+	return (
+		<g>
+			<PL src={CD('metaphase', true)} at={[cx - 2.5 * k, cy + 40 * k, k]} />
+			{six.map((q, i) => <g key={'f' + i}>{[-1, 1].map(sd => <line key={sd} x1={cx + sd * pole} y1={cy} x2={cx + sd * 4} y2={yAt(i)} stroke={fibreColor} strokeWidth={fibreW} strokeLinecap="round" opacity={0.85} />)}</g>)}
+			{six.map((q, i) => {
+				const h = hi ? hi(i) : 0;
+				return <Chrom key={i} x={cx} y={yAt(i)} kind={q.kind} color={q.color} dup={1} coil={1} s={s} hiA={h} hiB={h} disc={discAt ? prog(f, discAt[i], 8) : disc} />;
+			})}
+		</g>
+	);
+};
+
 const FLEN: Record<Kind, number> = {L: 104, M: 86, S: 68};
 
 export const SceneAttempt: React.FC = () => {
@@ -161,7 +179,7 @@ export const SceneAttempt: React.FC = () => {
 	const hold = scene.responseHold!;
 	const X1 = FR.x[0], X2 = FR.x[1], Y = FR.y;
 	const six: {kind: Kind; color: string}[] = [{kind: 'L', color: PLUM}, {kind: 'S', color: TEALC}, {kind: 'M', color: PLUM}, {kind: 'L', color: TEALC}, {kind: 'S', color: PLUM}, {kind: 'M', color: TEALC}];
-	const cc: [number, number] = [X2 + 400, Y + 290];
+	const cc: [number, number] = [X2 + 400, Y + 300];
 	const sp = 62;
 	const yAt = (i: number) => cc[1] + (i - 2.5) * sp;
 	return (
@@ -169,11 +187,12 @@ export const SceneAttempt: React.FC = () => {
 			<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Your turn: two questions" at={c.two} size={76} cps={30} /></div>
 			<Enter at={c.pause} style={{position: 'absolute', left: 96, top: 176}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, color: AMBER_INK, lineHeight: 1}}>Pause here to answer.</span></Enter>
 			<Overlay><Countdown start={hold.startFrame} end={hold.endFrame} x={1560} y={130} r={44} /></Overlay>
-			<Frame i={0} at={c.one - 6} title="A fruit fly body cell" badge="1" />
-			<Frame i={1} at={c.q2 - 6} title="A body cell in mitosis" badge="2" />
+			{/* quality fix (6 Nov): both cards and their pictures arrive with the title; the text still fills as it is read */}
+			<Frame i={0} at={4} title="A fruit fly body cell" badge="1" />
+			<Frame i={1} at={12} title="A body cell in mitosis" badge="2" />
 			{/* 1: the fruit fly cell, counted in the answer */}
 			<Overlay>
-				<g opacity={prog(f, c.fly, 14)}>
+				<g opacity={prog(f, 10, 14)}>
 					{/* revision 7: the painted interphase cell, small (no chromosomes are counted on it) */}
 					<Stage cam={{zoom: 1, fx: 1000, fy: 960}} base={{cx: X1 + 680, cy: Y + 180, size: 170}} win={null} srcs={[CD('interphase')]}>
 						<PL src={CD('interphase')} />
@@ -189,11 +208,10 @@ export const SceneAttempt: React.FC = () => {
 			<AnswerBox x={X1 + 30} y={Y + 590} w={420} at={c.each + 10} label="in each new cell" />
 			{/* 2: six X-shaped chromosomes lined up */}
 			<Overlay>
-				<g opacity={prog(f, c.q2, 14)}>
+				<g opacity={prog(f, 18, 14)}>
 					{/* revision 7: the clean coded model inside the question card (no painted cell under coded chromosomes);
 					    no centromere discs here, so the waist is the only centromere cue */}
-					<HCell cx={cc[0]} cy={cc[1]} rx={300} ry={205} sw={3.5} />
-					<HSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} k={0.6} pole={190} disc={0} />
+					<PSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} s={0.5} pole={160} disc={0} />
 				</g>
 			</Overlay>
 			<Note x={X2 + 30} y={Y + 500} w={860} at={c.q2} size={28}>This body cell is part-way through mitosis. Assume no mistakes.</Note>
@@ -321,10 +339,9 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<Heading items={[[0, 'Question 2: the cell']]} size={64} />
 			<Overlay>
 				<Panel x={130} y={196} w={860} h={700} />
-				<HCell cx={cc[0]} cy={cc[1]} rx={330} ry={272} sw={4} />
 				{/* the middle line the chromosomes sit on */}
 				<line x1={cc[0]} x2={cc[0]} y1={yAt(0) - 60} y2={yAt(5) + 60} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="3 12" strokeLinecap="round" opacity={lineGlow} />
-				<HSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} k={0.82} pole={210} fibreColor={fibreGlow > 0.05 ? AMBER_INK : undefined} fibreW={2.6 + 1.8 * fibreGlow} hi={hiAt} discAt={taps} />
+				<PSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} s={0.68} pole={210} fibreColor={fibreGlow > 0.05 ? AMBER_INK : undefined} fibreW={2.6 + 1.8 * fibreGlow} hi={hiAt} discAt={taps} />
 				<PenTap pts={pts} at={taps} badge={[56, 0]} out={c.w1 - 10} />
 			</Overlay>
 			<Hand at={c.count + 14} x={96} y={850} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>

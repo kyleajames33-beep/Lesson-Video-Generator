@@ -41,7 +41,8 @@ export const ScenePollination: React.FC = () => {
 			<div style={{opacity: cOut}}>
 				<Enter at={c.carriers} style={{position: 'absolute', left: 900, top: 96}}><Note size={40}>plants can't walk: they use carriers</Note></Enter>
 				<Art a={ART.bee} x={BEE.x} y={BEE.y} w={BEE.w} style={{opacity: prog(f, c.bee, 18)}} />
-				<Art a={ART.flower} x={FS.x} y={FS.y} w={FS.w} style={{opacity: prog(f, c.moves, 18)}} />
+				{/* quality fix (6 Nov): the flower is on screen from the first word, so the title never stands alone */}
+				<Art a={ART.flower} x={FS.x} y={FS.y} w={FS.w} style={{opacity: prog(f, 0, 14)}} />
 				<Art a={ART.grass} x={GR.x} y={GR.y} w={GR.w} style={{opacity: prog(f, c.wind, 18)}} />
 				<Overlay>
 					<Arrow x1={fsm(600, 310)[0]} y1={fsm(600, 310)[1] - 30} x2={stigmaS[0] + 24} y2={stigmaS[1] + 4} at={c.moves + 14} color={AMBER_INK} width={6} />

@@ -204,7 +204,11 @@ export const SceneMemory: React.FC = () => {
 			<Bar x={x} y={y + dm} w={W} heavy={bot.heavy} first={bot.first} ring={bot.ring} grey={bot.grey} />
 		</g>
 	);
-	const o0 = prog(f, c.every - 6, 14), o1 = prog(f, c.every + 40, 14), o2 = prog(f, c.earlier - 20, 14);
+	// quality fix (6 Nov): the starting molecule is on the board from the first word, and on "half old" it is copied
+	// (semi-conservative replication shown happening): its two strands come apart and each daughter slides out with one
+	// old (heavy) strand and one new strand.
+	const o0 = prog(f, 2, 14), rep = prog(f, c.half + 4, 34), o1 = Math.max(rep, prog(f, c.every + 40, 14)), o2 = prog(f, c.earlier - 20, 14);
+	const dx = (k: number) => xs0 + (xs1[k] - xs0) * rep, dy = rows.y0 + (rows.y1 - rows.y0) * rep;
 	const hotOld = pulse(f, c.oldS, 36), hotNew = pulse(f, c.newS, 36), hotFirst = pulse(f, c.first, 50);
 	const afterP = prog(f, c.after, 16);
 	return (
@@ -213,13 +217,15 @@ export const SceneMemory: React.FC = () => {
 				<svg width={110} height={110} viewBox="-55 -55 110 110"><HalfIcon x={0} y={0} r={46} /></svg>
 				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 104, color: AMBER_INK, lineHeight: 1}}>Half old, half new.</span>
 			</Enter>
+			<Hand at={c.half + 30} out={c.copiedFrom - 6} x={96} y={226} size={44} color={INK}>each copy: one old strand and one new strand</Hand>
 			<Hand at={c.copiedFrom} x={96} y={226} size={44} color={INK}>old = the strand it was copied from, in every round</Hand>
 			<Overlay>
+				<g transform="translate(540,560) scale(1.12) translate(-540,-560)">
 				{/* board: the starting molecule, its two daughters, and the four after two rounds */}
 				{mol(xs0, rows.y0, {heavy: true, first: true, ring: hotFirst}, {heavy: true, first: true, ring: hotFirst}, o0)}
 				<g opacity={o1}>
-					{mol(xs1[0], rows.y1, {heavy: true, first: true, ring: hotOld * 0 + hotFirst}, {heavy: false, ring: hotNew}, 1)}
-					{mol(xs1[1], rows.y1, {heavy: false, ring: hotNew}, {heavy: true, first: true, ring: hotFirst}, 1)}
+					{mol(dx(0), dy, {heavy: true, first: true, ring: hotOld * 0 + hotFirst}, {heavy: false, ring: hotNew}, 1)}
+					{mol(dx(1), dy, {heavy: false, ring: hotNew}, {heavy: true, first: true, ring: hotFirst}, 1)}
 				</g>
 				<g opacity={o2}>
 					{mol(xs2[0], rows.y2, {heavy: true, first: true}, {heavy: false}, 1)}
@@ -230,6 +236,7 @@ export const SceneMemory: React.FC = () => {
 				<g opacity={afterP}>
 					<Scribble cx={xs2[0]} cy={rows.y2} rx={128} ry={62} at={c.after + 8} color={AMBER} seed={2} />
 					<Scribble cx={xs2[2]} cy={rows.y2} rx={128} ry={62} at={c.after + 14} color={AMBER} seed={6} />
+				</g>
 				</g>
 			</Overlay>
 			<Hand at={c.onlyTwo} x={96} y={rows.y2 + 84} size={40} color={AMBER_INK}>hold a first strand</Hand>
@@ -263,24 +270,39 @@ export const SceneMemory: React.FC = () => {
 };
 
 // ---------- 18. Key notes ----------
+// Quality fix (6 Nov): short notes (7 short lines) and a framed memory aid, instead of six dense paragraphs.
 const NOTES = [
-	'A DNA nucleotide has three parts: a deoxyribose sugar, a phosphate group and a nitrogenous base (A, T, C or G). Strong covalent bonds join the sugars and phosphates into each backbone, and the bases point inward.',
-	"In DNA, A pairs with T (two hydrogen bonds) and C pairs with G (three). This is complementary base pairing. The two strands are antiparallel: one runs 5' to 3' and its partner runs 3' to 5'.",
-	'Replication: helicase separates the strands by breaking the hydrogen bonds. Each original strand is a template. Loose nucleotides pair with the exposed bases, and DNA polymerase joins them into a new strand with covalent bonds.',
-	'Semi-conservative replication: each new DNA molecule has one strand it was copied from and one new strand. The original strands are kept and used again as templates, but their number never increases. To explain accurate copying: weak hydrogen bonds let the strands separate and act as templates, the pairing rule decides each new base, and each daughter keeps an old strand.',
-	'Accuracy comes from the pairing rule. Proofreading and repair fix most mistakes. A mistake that survives can become a mutation: when the DNA is copied again, the changed base gets its own partner, so one new copy has a changed base pair and the other is normal. The changed pair passes to every cell that divides from the cell that receives it, and in an organism that reproduces sexually it reaches offspring only through a cell that makes gametes.',
-	"To trace a copy: pair A with T and C with G, label old and new, and run the new strand opposite its template. Aids: Apple in the Tree, Car in the Garage (in DNA). Half old, half new (old = the strand it was copied from).",
+	'Nucleotide: deoxyribose sugar + phosphate + base (A, T, C or G).',
+	'Base pairing: A with T (2 hydrogen bonds), C with G (3).',
+	"Antiparallel strands: one runs 5' to 3', its partner 3' to 5'.",
+	'Helicase breaks the hydrogen bonds and separates the strands.',
+	'Free nucleotides pair with each template; DNA polymerase joins them.',
+	'Semi-conservative: each new molecule keeps one old strand.',
+	'Proofreading fixes most errors; a surviving error is a mutation.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={68} cps={40} /></div>
-		<div style={{position: 'absolute', left: 110, top: 190, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 205, width: 1160}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 20, marginBottom: 14}}>
-					<div style={{flex: 'none', width: 16, height: 16, marginTop: 11, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 30, color: INK, lineHeight: 1.22}}>{n}</div>
+				<Enter key={i} at={14 + i * 9} style={{display: 'flex', gap: 20, marginBottom: 24}}>
+					<div style={{flex: 'none', width: 16, height: 16, marginTop: 17, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 38, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
 		</div>
+		<Enter at={90} style={{position: 'absolute', left: 1330, top: 225, width: 490, boxSizing: 'border-box', padding: '26px 30px', borderRadius: 24, border: `4px solid ${AMBER}`, background: '#fffdf8', boxShadow: '0 14px 34px rgba(60,45,20,0.10)'}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: INK, lineHeight: 1.08, marginTop: 12}}>Apple in the Tree,<br />Car in the Garage</div>
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 30, color: INK_SOFT, marginTop: 6}}>(A with T, C with G, in DNA)</div>
+			<div style={{height: 3, background: '#eadfc8', margin: '22px 0 18px'}} />
+			<div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+				<svg width={64} height={64} viewBox="-32 -32 64 64"><HalfIcon x={0} y={0} r={28} /></svg>
+				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: AMBER_INK, lineHeight: 1}}>Half old, half new</div>
+			</div>
+		</Enter>
+		<Enter at={150} style={{position: 'absolute', left: 110, top: 900}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 50, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
+		</Enter>
 	</>
 );

@@ -34,7 +34,9 @@ export const CD88 = [
 	'cd-interphase', 'cd-nucleus-zoom', 'cd-nucleus-zoom-breaking', 'cd-prophase', 'cd-prophase-empty', 'cd-metaphase', 'cd-metaphase-empty',
 	'cd-anaphase', 'cd-anaphase-empty', 'cd-telophase', 'cd-telophase-empty', 'cd-cytokinesis', 'cd-daughters',
 ].map(n => B + `${n}-v1.png`).concat([B + 'm6-metaphase-spread-v1.png']);
+// Quality fix (6 Nov): the empty nucleus close-up carries the painted chromosomes in the model scenes (pnuc.tsx).
+export const NZE = B + 'cd-nucleus-zoom-empty-v1.png';
 
-const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM, EPI, PLANT, ...B5X, ...CD88];
+const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM, EPI, PLANT, ...B5X, ...CD88, NZE];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

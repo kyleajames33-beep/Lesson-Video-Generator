@@ -1,6 +1,7 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
-import {Countdown, HandText} from '../../kit';
+import {Img, staticFile, useCurrentFrame} from 'remotion';
+import {Countdown, HandText, Plate} from '../../kit';
+import {EMBRYO, FISSION} from './assets';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, bondN, EndTag, Enter, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, HBonds, INK, INK_SOFT, ladderGeom, Ladder, NEUT, NEWC, Overlay,
@@ -72,13 +73,28 @@ export const SceneErrorsEffects: React.FC = () => {
 	const bactO = vis(f, c.bact - 4, c.person - 22);
 	const persO = vis(f, c.person - 4);
 	const split = prog(f, c.splits, 30);
-	const BC: [number, number] = [920, 440];
+	const fiss = prog(f, c.splits - 6, 40);
+	const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+	const BC: [number, number] = [960, 430];
+	const BK = 1.15;
+	const BDL = BC[0] + (560 - 900) * BK, BDR = BC[0] + (1238 - 900) * BK, BMY = BC[1] + 255;
 	return (
 		<>
 			<Heading items={[[2, 'What happens to a mutation?']]} size={64} />
 			{chip('no effect', c.none, 300)}
 			{chip('harmful', c.harm, 380)}
 			{chip('useful', c.useful, 460)}
+			<Img src={staticFile(EMBRYO)} style={{position: 'absolute', width: 2, height: 2, opacity: 0}} />
+			{bactO > 0.004 ? (
+				<div style={{position: 'absolute', inset: 0, opacity: bactO}}>
+					{[0, 1, 2].map(k => {
+						const cl = (v: number) => Math.max(0, Math.min(1, v));
+						const t1 = cl(2 * fiss), t2 = cl(2 * fiss - 1);
+						const w = k === 0 ? cl(2 - 2 * t1) : k === 1 ? cl(2 * t1) * cl(2 - 2 * t2) : cl(2 * t2);
+						return w > 0.004 ? <Plate key={k} src={FISSION[k]} natural={[1800, 1200]} crop={[0, 0, 1800, 1200]} width={1800 * BK} style={{left: BC[0] - 900 * BK, top: BC[1] - 610 * BK, opacity: w}} /> : null;
+					})}
+				</div>
+			) : null}
 			<Overlay>
 				{/* stage 1: the surviving mismatch */}
 				<g opacity={stage1}>
@@ -116,12 +132,12 @@ export const SceneErrorsEffects: React.FC = () => {
 						</g>
 					))}
 				</g>
-				{/* stage 4: a bacterium splits */}
+				{/* stage 4: a bacterium splits (painted B1 fission plates behind; the two copies ride below each cell) */}
 				<g opacity={bactO}>
-					<rect x={BC[0] - split * 330 - (640 - split * 330) / 2} y={BC[1] - 105} width={640 - split * 330} height={210} rx={105} fill="#e1ecf3" stroke="#3b6fa8" strokeWidth={5} />
-					<rect x={BC[0] + split * 330 - (split * 310) / 2} y={BC[1] - 105} width={Math.max(1, split * 310)} height={210} rx={105} fill="#e1ecf3" stroke="#3b6fa8" strokeWidth={5} opacity={split} />
-					<Mini kind="changed" cx={BC[0] - split * 330 - 170 * (1 - split)} cy={BC[1]} s={0.34} />
-					<Mini kind="normal" cx={BC[0] + split * 330 + 170 * (1 - split)} cy={BC[1]} s={0.34} />
+					<Mini kind="changed" cx={lerp(BC[0] - 250, BDL, split)} cy={BMY} s={0.6} />
+					<Mini kind="normal" cx={lerp(BC[0] + 250, BDR, split)} cy={BMY} s={0.6} />
+					<text x={BDL} y={BMY + 115} textAnchor="middle" opacity={prog(f, c.onlyone, 14)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42}} fill={AMBER_INK}>changed pair</text>
+					<text x={BDR} y={BMY + 115} textAnchor="middle" opacity={prog(f, c.onlyone + 8, 14)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42}} fill={INK_SOFT}>normal</text>
 				</g>
 				{/* stage 5: a person */}
 				<g opacity={persO}>
@@ -137,7 +153,8 @@ export const SceneErrorsEffects: React.FC = () => {
 						))}
 					</g>
 					<g opacity={prog(f, c.child - 4, 14)}>
-						<Person x={1720} y={510} s={1.6} child o={0.3 + 0.7 * prog(f, c.gam + 28, 12)} />
+						{/* quality fix (6 Nov): a painted early embryo stands for the offspring (no people in videos) */}
+						<image href={staticFile(EMBRYO)} x={1720 - 95} y={510 - 95} width={190} height={190} opacity={0.3 + 0.7 * prog(f, c.gam + 28, 12)} />
 						<text x={1720} y={440} textAnchor="middle" opacity={1 - prog(f, c.gam + 28, 10)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK_SOFT}>children?</text>
 					</g>
 					<g opacity={prog(f, c.gam - 4, 14)}>
@@ -154,8 +171,8 @@ export const SceneErrorsEffects: React.FC = () => {
 			<Hand at={c.copy + 30} out={c.every - 8} x={lx - 60} y={ly + H + 60} size={46} w={700} color={AMBER_INK}>changed base pair</Hand>
 			<Hand at={c.copy + 58} out={c.every - 8} x={lx - 60} y={ly + H + 118} size={48} w={760} color={AMBER_INK}>mutation: a change in the base order</Hand>
 			<Hand at={c.every + 50} out={c.bact - 14} x={420} y={720} size={52} w={1200} color={AMBER_INK}>every cell that divides from it</Hand>
-			<Hand at={c.bact + 6} out={c.splits + 24} x={BC[0] - 320} y={BC[1] + 200} size={44} w={700} color={INK_SOFT}>a bacterium holds both copies</Hand>
-			<Hand at={c.onlyone} out={c.person - 22} x={BC[0] - 560} y={BC[1] + 200} size={48} w={1100} color={AMBER_INK}>passes to one new cell, which starts a new line of cells</Hand>
+			<Hand at={c.bact + 6} out={c.splits + 24} x={BC[0] - 320} y={BC[1] - 250} size={44} w={700} color={INK_SOFT}>a bacterium holds both copies</Hand>
+			<Hand at={c.onlyone} out={c.person - 22} x={BC[0] - 560} y={BC[1] + 440} size={48} w={1100} color={AMBER_INK}>passes to one new cell, which starts a new line of cells</Hand>
 			<Hand at={c.body + 50} x={140} y={680} size={44} w={900} color={INK_SOFT}>a body cell: passes only to the cells made from it</Hand>
 			<GreyTag at={c.child} x={980} y={680} text="sexual reproduction: only through gametes" size={36} />
 			<Hand at={c.gam + 36} x={1560} y={620} size={46} w={330} color={AMBER_INK}>reaches offspring</Hand>
