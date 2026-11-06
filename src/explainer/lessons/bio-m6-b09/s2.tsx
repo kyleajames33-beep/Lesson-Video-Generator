@@ -10,9 +10,10 @@ import {GTag} from '../bio-m6-b01/parts';
 import {Tg} from '../bio-m6-b07/parts';
 import {S} from './common';
 import {
-	AMBER, AMBER_INK, AdvChip, AlleleRing, BactIns, BIO_INK, Caterpillar, Cheese, DrawPath, Enzyme, GREY_INK, INK, INK_SOFT, LCX, LX, LW, LaneCard, LaneTerm,
-	Lane1, Lane2, Lane3, Lane4, PLATES, Pl, Strip, StripRings, clamp01, lerp, prog, ringPt, smooth, vis, TimeTick,
+	AMBER, AMBER_INK, AlleleRing, BactIns, BIO_INK, Caterpillar, Cheese, DrawPath, Enzyme, GREY_INK, INK, INK_SOFT, LCX, LX, LW,
+	PLATES, Pl, Strip, clamp01, lerp, prog, ringPt, smooth, vis,
 } from './parts';
+import {AdvChip, LaneCard, LaneTerm, Lane1, Lane2, Lane3, Lane4, StripRings, TimeTick} from './big';
 
 // ---------- 5. Changing the DNA: insulin from bacteria ----------
 const K5 = cues(S('insulin'), {then: 'Then the insulin', pancreas: 'pancreases', early: 'early nineteen-eighties', sale: 'went on sale', ins: ['human insulin', 2], made: 'made human insulin', here: "Here the organism's", really: 'really was changed', recomb: 'recombinant DNA'});
@@ -37,10 +38,10 @@ export const SceneInsulin: React.FC = () => {
 				{/* workspace in the empty lane 3 slot */}
 				<g opacity={ws}>
 					<Pl p={PLATES.pancreas} cx={WSX} cy={410} w={360} o={prog(f, K5.pancreas - 6, 16)} dim={0.85 * prog(f, K5.early, 14)} />
-					<GTag x={WSX} y={510} text="1922: cattle and pig pancreases" at={K5.pancreas + 6} out={K5.early} size={22} anchor="middle" />
+					<GTag x={WSX} y={510} text="1922: cattle and pig pancreases" at={K5.pancreas + 6} out={K5.early} size={30} anchor="middle" />
 					{f >= K5.ins ? <Strip cx={lerp(WSX, rx, mv)} y={lerp(650, ry - 6, mv)} n={3} pitch={lerp(22, 9, mv)} gap={lerp(20, 12, mv)} ins={1} i0={0} i1={2} o={prog(f, K5.ins, 8) * (1 - prog(f, K5.ins + 38, 8))} /> : null}
 					<Tg x={WSX} y={760} text="DNA coding for human insulin" at={K5.ins + 4} out={K5.made} anchor="middle" size={36} />
-					<GTag x={WSX} y={820} text="1982: insulin from bacteria" at={K5.made + 6} size={24} anchor="middle" />
+					<GTag x={WSX} y={820} text="1982: insulin from bacteria" at={K5.made + 6} size={30} anchor="middle" />
 				</g>
 				{/* insulin streams out of the bacterium into the vial */}
 				{Array.from({length: 6}, (_, k) => {
@@ -54,8 +55,8 @@ export const SceneInsulin: React.FC = () => {
 					) : null;
 				})}
 				<LaneTerm i={3} lines={['recombinant DNA']} bright={1} o={prog(f, K5.recomb, 12)} />
-				<Tg x={cx4} y={800} text="DNA joined from" at={K5.recomb + 12} anchor="middle" size={34} color={BIO_INK} />
-				<Tg x={cx4} y={842} text="different sources" at={K5.recomb + 12} anchor="middle" size={34} color={BIO_INK} />
+				<Tg x={cx4} y={806} text="DNA joined from" at={K5.recomb + 12} anchor="middle" size={38} color={BIO_INK} />
+				<Tg x={cx4} y={852} text="different sources" at={K5.recomb + 12} anchor="middle" size={38} color={BIO_INK} />
 				{void K5.then}
 			</Overlay>
 		</>
@@ -115,7 +116,7 @@ export const SceneAdvantages: React.FC = () => {
 				<AdvChip cx={LCX(2)} y={835} lines={['keeps the allele', 'combination']} o={prog(f, K7.together, 14)} lit={1 - prog(f, K7.never, 10)} />
 				<AdvChip cx={LCX(3)} y={835} lines={['new trait in', 'one generation']} o={prog(f, K7.never, 14)} lit={1} />
 				<Caterpillar x={cx4 + 26} y={480} s={0.9} o={prog(f, K7.cat + 6, 12)} />
-				<GTag x={cx4} y={760} text="gene from Bacillus thuringiensis" at={K7.cat + 10} out={end + 10} size={22} anchor="middle" />
+				<GTag x={cx4} y={760} text="gene from Bacillus thuringiensis" at={K7.cat + 10} out={end + 10} size={30} anchor="middle" />
 				{void K7.each}{void K7.soil}
 			</Overlay>
 		</>
@@ -123,9 +124,10 @@ export const SceneAdvantages: React.FC = () => {
 };
 
 // ---------- 8. Past, present and future ----------
+// 6 Nov: the timeline fills the frame (plates two to three times larger, 36 px ticks, larger cheese and sectors).
 const K8 = cues(S('timeline'), {put: 'Put it on a timeline', didnt: "didn't disappear", yeast: 'Yeast still raises', breeders: 'breeders still select', tests: 'DNA tests', rennet: 'rennet', chym: 'chymosin', agri: 'agriculture', med: 'medicine', ind: 'industry', edit: 'gene editing', heading: 'heading'});
-const TX = [260, 760, 1160, 1620];
-const TY = 560;
+const TX = [280, 760, 1160, 1620];
+const TY = 590;
 export const SceneTimeline: React.FC = () => {
 	const f = useCurrentFrame();
 	const boardO = 1 - prog(f, 0, 18);
@@ -133,7 +135,8 @@ export const SceneTimeline: React.FC = () => {
 	const slide = smooth(prog(f, K8.didnt + 6, 40, x => x));
 	const cheese = smooth(prog(f, K8.chym, 40, x => x));
 	const secDim = prog(f, K8.edit, 12);
-	const SEC = [{at: K8.agri, x: 1110, word: 'agriculture'}, {at: K8.med, x: 1400, word: 'medicine'}, {at: K8.ind, x: 1650, word: 'industry'}];
+	const SEC = [{at: K8.agri, x: 1000, word: 'agriculture'}, {at: K8.med, x: 1340, word: 'medicine'}, {at: K8.ind, x: 1640, word: 'industry'}];
+	const moved = f >= K8.didnt + 6;
 	return (
 		<>
 			<Heading text="Past, present and future" at={4} size={60} />
@@ -141,50 +144,51 @@ export const SceneTimeline: React.FC = () => {
 				<g opacity={boardO} transform={`translate(${960 * (1 - boardO) * 0.2},${-200 * (1 - boardO)}) scale(${1 - 0.2 * (1 - boardO)})`}>
 					<Board lit={[0, 0, 0, 0]} dim={[0, 0, 0, 0]} repro={1} lane3={1} copy={1} cotton={1} tick2={1} />
 				</g>
-				<line x1={150} y1={TY} x2={150 + 1620 * line} y2={TY} stroke={INK_SOFT} strokeWidth={5} strokeLinecap="round" />
+				<line x1={120} y1={TY} x2={120 + 1680 * line} y2={TY} stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" />
 				{['thousands of years ago', '1922', '1982', 'today'].map((t, i) => <TimeTick key={i} x={TX[i]} y={TY} text={t} o={prog(f, K8.put + 10 + i * 8, 12)} />)}
 				{/* thumbnails */}
-				<Pl p={PLATES.bread} cx={200} cy={470} w={110} o={prog(f, K8.put + 14, 12)} />
-				<Pl p={PLATES.sheep} cx={325} cy={472} w={112} o={prog(f, K8.put + 18, 12)} />
-				<Pl p={PLATES.pancreas} cx={TX[1]} cy={485} w={170} o={prog(f, K8.put + 22, 12)} />
-				<Pl p={PLATES.vial} cx={TX[2]} cy={470} w={44} o={prog(f, K8.put + 26, 12)} />
-				<Pl p={PLATES.yeast} cx={1500} cy={488} w={72} o={prog(f, K8.put + 30, 12)} />
-				<Pl p={PLATES.straw} cx={1575} cy={484} w={52} o={prog(f, K8.put + 32, 12)} />
-				<Pl p={PLATES.jars} cx={1660} cy={498} w={96} o={prog(f, K8.put + 34, 12)} />
-				<BactIns cx={1755} cy={498} w={92} arc={1} o={prog(f, K8.put + 36, 12)} />
-				{/* old methods are still used */}
-				{f >= K8.didnt + 6 ? (
+				<Pl p={PLATES.bread} cx={185} cy={480} w={180} o={prog(f, K8.put + 14, 12) * (moved ? 0 : 1)} />
+				<Pl p={PLATES.sheep} cx={375} cy={482} w={180} o={prog(f, K8.put + 18, 12) * (moved ? 0 : 1)} />
+				<Pl p={PLATES.pancreas} cx={TX[1]} cy={500} w={280} o={prog(f, K8.put + 22, 12)} />
+				<Pl p={PLATES.vial} cx={TX[2]} cy={480} w={74} o={prog(f, K8.put + 26, 12)} />
+				<Pl p={PLATES.yeast} cx={1430} cy={500} w={120} o={prog(f, K8.put + 30, 12)} />
+				<Pl p={PLATES.straw} cx={1540} cy={490} w={84} o={prog(f, K8.put + 32, 12)} />
+				<Pl p={PLATES.jars} cx={1665} cy={505} w={150} o={prog(f, K8.put + 34, 12)} />
+				<BactIns cx={1810} cy={505} w={150} arc={1} o={prog(f, K8.put + 36, 12)} />
+				{/* old methods are still used: bread and sheep slide to today */}
+				{moved ? (
 					<g>
-						<Pl p={PLATES.bread} cx={lerp(200, 1550, slide)} cy={lerp(470, 380, slide)} w={100} />
-						<Pl p={PLATES.sheep} cx={lerp(325, 1680, slide)} cy={lerp(472, 382, slide)} w={104} />
+						<Pl p={PLATES.bread} cx={lerp(185, 1480, slide)} cy={lerp(480, 340, slide)} w={lerp(180, 150, slide)} />
+						<Pl p={PLATES.sheep} cx={lerp(375, 1660, slide)} cy={lerp(482, 342, slide)} w={lerp(180, 150, slide)} />
 					</g>
 				) : null}
-				<Tg x={1620} y={300} text="still used" at={K8.didnt + 30} out={K8.rennet} anchor="middle" size={40} />
+				<Tg x={1570} y={250} text="still used" at={K8.didnt + 30} out={K8.rennet} anchor="middle" size={44} />
 				<g opacity={prog(f, K8.tests + 4, 12)}>
-					<Strip cx={1790} y={372} n={5} pitch={15} gap={16} />
-					<AlleleRing x={1790 - 37.5 + 2 * 15 + 7.5} y={358} r={8} kind="b" glow={vis(f, K8.tests + 4, K8.rennet, 12)} />
+					<Strip cx={1820} y={330} n={5} pitch={20} gap={20} />
+					<AlleleRing x={1820 - 50 + 2 * 20 + 10} y={312} r={11} kind="b" glow={vis(f, K8.tests + 4, K8.rennet, 12)} />
 				</g>
+				<Tg x={1820} y={410} text="DNA tests" at={K8.tests + 8} out={K8.rennet} anchor="middle" size={34} />
 				{/* rennet, then chymosin from microbes */}
-				<Cheese x={lerp(260, 1590, cheese)} y={lerp(700, 690, cheese)} s={0.9} o={prog(f, K8.rennet, 12)} />
-				<GTag x={300} y={760} text="rennet from calves' stomachs" at={K8.rennet + 6} out={K8.chym} size={26} anchor="middle" />
-				<BactIns cx={1720} cy={690} w={110} arc={1} o={prog(f, K8.chym + 30, 12)} />
-				<GTag x={1600} y={760} text="chymosin from modified microbes" at={K8.chym + 30} out={K8.agri} size={26} anchor="middle" />
+				<Cheese x={lerp(280, 1500, cheese)} y={760} s={1.5} o={prog(f, K8.rennet, 12)} />
+				<GTag x={300} y={860} text="rennet from calves' stomachs" at={K8.rennet + 6} out={K8.chym} size={34} anchor="middle" />
+				<BactIns cx={1720} cy={750} w={190} arc={1} o={prog(f, K8.chym + 30, 12)} />
+				<GTag x={1600} y={860} text="chymosin from modified microbes" at={K8.chym + 30} out={K8.agri} size={34} anchor="middle" />
 				{/* three sectors */}
 				{SEC.map((s, i) => (
 					<g key={i} opacity={prog(f, s.at, 12) * (1 - 0.55 * secDim)}>
-						{i === 0 ? <Pl p={PLATES.cotton} cx={s.x - 30} cy={890} w={62} /> : null}
-						{i === 1 ? <Pl p={PLATES.vial} cx={s.x - 24} cy={890} w={30} /> : null}
-						{i === 2 ? <Enzyme x={s.x - 30} y={892} s={0.7} /> : null}
-						<Sx x={s.x + 8} y={904} text={s.word} size={38} color={secDim > 0.5 ? GREY_INK : INK} hand />
+						{i === 0 ? <Pl p={PLATES.cotton} cx={s.x - 50} cy={940} w={88} /> : null}
+						{i === 1 ? <Pl p={PLATES.vial} cx={s.x - 34} cy={940} w={42} /> : null}
+						{i === 2 ? <Enzyme x={s.x - 40} y={944} s={1} /> : null}
+						<Sx x={s.x + 6} y={958} text={s.word} size={46} color={secDim > 0.5 ? GREY_INK : INK} hand />
 					</g>
 				))}
 				{/* next: gene editing */}
 				<g opacity={prog(f, K8.edit, 12)}>
-					<DrawPath d={`M1775,${TY} L1860,${TY}`} at={K8.edit} dur={12} color={INK_SOFT} width={5} dash="10 8" />
-					<path d={`M1846,${TY - 12} L1862,${TY} L1846,${TY + 12}`} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeLinecap="round" />
-					<Strip cx={1270} y={212} n={6} pitch={22} gap={22} ins={prog(f, K8.edit + 30, 12)} i0={3} i1={3} />
+					<DrawPath d={`M1800,${TY} L1880,${TY}`} at={K8.edit} dur={12} color={INK_SOFT} width={6} dash="10 8" />
+					<path d={`M1864,${TY - 14} L1882,${TY} L1864,${TY + 14}`} fill="none" stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" />
+					<Strip cx={1100} y={222} n={6} pitch={30} gap={28} ins={prog(f, K8.edit + 30, 12)} i0={3} i1={3} />
 				</g>
-				<GTag x={1830} y={202} text="next: future directions" at={K8.edit + 6} size={26} anchor="end" />
+				<GTag x={1830} y={212} text="next: future directions" at={K8.edit + 6} size={32} anchor="end" />
 				{void K8.yeast}{void K8.breeders}{void K8.heading}{void LX}{void LW}{void clamp01}{void AMBER}
 			</Overlay>
 		</>
@@ -192,25 +196,32 @@ export const SceneTimeline: React.FC = () => {
 };
 
 // ---------- 9. Memory ----------
-const K9 = cues(S('memory'), {two: 'Two things', older: 'Biotechnology is older than GMOs', bread: 'bread, cheese', repro: 'reproductive technologies', dont: "they don't change genes", none: 'they make no new ones', judge: 'So judge'});
+// 6 Nov: line one gets its timeline (old methods at the far left, the first GMO medicine at 1982); line two its strip.
+const K9 = cues(S('memory'), {two: 'Two things', older: 'Biotechnology is older than GMOs', gmo: 'GMOs', bread: 'bread, cheese', sel: 'selective breeding', repro: 'reproductive technologies', dont: "they don't change genes", none: 'they make no new ones', judge: 'So judge'});
 export const SceneMemory: React.FC = () => {
 	const f = useCurrentFrame();
+	const TL = 520;
 	return (
 		<>
 			<Heading text="Two things to hold on to" at={4} size={60} />
 			<Overlay>
-				<Sx x={140} y={360} text="Biotechnology is older than GMOs." size={70} color={INK} hand at={K9.older} />
-				<Pl p={PLATES.bread} cx={1260} cy={330} w={130} o={prog(f, K9.bread, 12)} />
-				<Cheese x={1420} y={340} s={0.9} o={prog(f, K9.bread + 12, 12)} />
-				<Pl p={PLATES.sheep} cx={1590} cy={332} w={130} o={prog(f, K9.bread + 24, 12)} />
-				<Sx x={140} y={560} text="Reproductive technologies choose the parents;" size={62} color={BIO_INK} hand at={K9.repro} />
-				<Sx x={140} y={645} text="they don't change genes." size={62} color={BIO_INK} hand at={K9.dont} />
+				<Sx x={140} y={290} text="Biotechnology is older than GMOs." size={70} color={INK} hand at={K9.older} />
+				<line x1={160} y1={TL} x2={160 + 1600 * prog(f, K9.older + 10, 24, x => x)} y2={TL} stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" />
+				<TimeTick x={420} y={TL} text="thousands of years ago" o={prog(f, K9.bread - 10, 12)} />
+				<TimeTick x={1500} y={TL} text="1982: first GMO medicine" o={prog(f, K9.gmo, 12)} />
+				<BactIns cx={1430} cy={438} w={170} arc={1} o={prog(f, K9.gmo, 12)} />
+				<Pl p={PLATES.vial} cx={1590} cy={440} w={64} o={prog(f, K9.gmo + 6, 12)} />
+				<Pl p={PLATES.bread} cx={250} cy={440} w={170} o={prog(f, K9.bread, 12)} />
+				<Cheese x={430} y={452} s={1.3} o={prog(f, K9.bread + 16, 12)} />
+				<Pl p={PLATES.sheep} cx={610} cy={440} w={170} o={prog(f, K9.sel, 12)} />
+				<Sx x={140} y={700} text="Reproductive technologies choose the parents;" size={62} color={BIO_INK} hand at={K9.repro} />
+				<Sx x={140} y={785} text="they don't change genes." size={62} color={BIO_INK} hand at={K9.dont} />
 				<g opacity={prog(f, K9.dont + 10, 12)}>
-					<Strip cx={1560} y={620} />
-					<StripRings cx={1560} y={620} kinds={['a', 'b']} />
+					<Strip cx={1520} y={790} pitch={38} gap={34} />
+					<StripRings cx={1520} y={790} kinds={['a', 'b']} pitch={38} r={16} />
 				</g>
-				<GTag x={140} y={700} text="changes allele frequencies, not DNA" at={K9.none + 6} out={K9.judge + 20} size={28} />
-				<Tg x={960} y={880} text="judge it by what it changes, not how modern it looks" at={K9.judge + 6} anchor="middle" size={46} />
+				<GTag x={140} y={860} text="changes allele frequencies, not DNA" at={K9.none + 6} out={K9.judge + 20} size={34} />
+				<Tg x={960} y={990} text="judge it by what it changes, not how modern it looks" at={K9.judge + 6} anchor="middle" size={50} />
 				{void K9.two}
 			</Overlay>
 		</>

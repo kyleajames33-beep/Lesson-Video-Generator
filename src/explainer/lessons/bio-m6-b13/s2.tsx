@@ -29,20 +29,21 @@ export const SceneUndone: React.FC = () => {
 	const stopBar = prog(f, K5.drive + 40, 14);
 	const balO = prog(f, K5.compare - 10, 14);
 	const tilt = -10 * smooth(prog(f, K5.compare + 6, 20));
+	const cardM = smooth(prog(f, K5.won - 26, 22));
 	return (
 		<>
 			<Heading text="Can it be undone?" at={4} size={60} />
 			<Overlay>
-				{/* the undo row of both cases, at the left */}
-				<g opacity={prog(f, 4, 14)}>
+				{/* the undo row of both cases: large in the centre first, then at the left when the lanes arrive (6 Nov) */}
+				<g opacity={prog(f, 4, 14)} transform={`translate(${lerp(960, 350, cardM)},${lerp(560, 490, cardM)}) scale(${lerp(1.45, 1, cardM)}) translate(-350,-490)`}>
 					<rect x={LBL.x0} y={210} width={520} height={560} rx={20} fill={CARD} stroke={vis(f, K5.undone, K5.won, 10) > 0.5 ? AMBER : EDGE} strokeWidth={3} />
 					<Sx x={LBL.x0 + 30} y={268} text={ROW_LABELS[2].key} size={38} color={INK} weight={800} />
 					<Pl p={PLATES.cotton} cx={LBL.x0 + 110} cy={400} w={100} />
 					<ReturnArrow x={LBL.x0 + 330} y={420} w={150} kind="solid" />
-					<Sx x={LBL.x0 + 330} y={470} text="can be stopped" size={26} color={GREY_INK} hand anchor="middle" />
+					<Sx x={LBL.x0 + 330} y={474} text="can be stopped" size={32} color={GREY_INK} hand anchor="middle" />
 					<Pl p={PLATES.mosquito} cx={LBL.x0 + 110} cy={630} w={130} />
 					<ReturnArrow x={LBL.x0 + 330} y={650} w={150} kind="broken" />
-					<Sx x={LBL.x0 + 330} y={700} text="may not be recallable" size={26} color={GREY_INK} hand anchor="middle" />
+					<Sx x={LBL.x0 + 330} y={704} text="may not be recallable" size={32} color={GREY_INK} hand anchor="middle" />
 				</g>
 				{/* top lane: a crop can switch and switch back */}
 				<g opacity={prog(f, K5.won - 10, 12)}>
@@ -50,14 +51,14 @@ export const SceneUndone: React.FC = () => {
 					{['Bt cotton', 'other crop', 'Bt cotton'].map((t, i) => (
 						<g key={i} opacity={prog(f, fields[i], 12)}>
 							<SeasonField x={LANE.x0 + 60 + i * 300} y={300} w={210} phase={i === 1 ? 1 : 0} labels={i === 1 ? ['', 'other'] : ['Bt', '']} />
-							<Sx x={LANE.x0 + 165 + i * 300} y={420} text={`season ${i + 1}`} size={22} color={GREY_INK} hand anchor="middle" />
+							<Sx x={LANE.x0 + 165 + i * 300} y={420} text={`season ${i + 1}`} size={28} color={GREY_INK} hand anchor="middle" />
 							{void t}
 						</g>
 					))}
 					<g opacity={prog(f, fields[2], 8)}>
 						<path d={`M${LANE.x0 + 480},292 Q${LANE.x0 + 615},236 ${LANE.x0 + 750},292`} fill="none" stroke={GREEN} strokeWidth={4} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - prog(f, fields[2], 22)} />
 						<path d={`M${LANE.x0 + 736},280 L${LANE.x0 + 752},294 L${LANE.x0 + 734},300`} fill="none" stroke={GREEN} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" opacity={prog(f, fields[2] + 18, 6)} />
-						<Sx x={LANE.x0 + 615} y={248} text="switch back" size={24} color={GREY_INK} hand anchor="middle" />
+						<Sx x={LANE.x0 + 615} y={248} text="switch back" size={30} color={GREY_INK} hand anchor="middle" />
 					</g>
 				</g>
 				<Tg x={LANE.x1 - 20} y={262} text="reversible: can be won back" at={K5.next + 20} out={K5.extinct} anchor="end" size={34} />
@@ -67,7 +68,7 @@ export const SceneUndone: React.FC = () => {
 					{gens.map((g, k) => (
 						<g key={k} opacity={prog(f, g, 10)}>
 							{k < 3 ? <InsectG x={LANE.x0 + 120 + k * 190} y={590} s={1.5} o={1 - k * 0.32} /> : <g opacity={0.6}><InsectG x={LANE.x0 + 120 + k * 190} y={590} s={1.5} color={GREYT} o={0.35} /></g>}
-							<Sx x={LANE.x0 + 120 + k * 190} y={680} text={`generation ${k + 1}`} size={22} color={GREY_INK} hand anchor="middle" />
+							<Sx x={LANE.x0 + 120 + k * 190} y={680} text={`generation ${k + 1}`} size={28} color={GREY_INK} hand anchor="middle" />
 						</g>
 					))}
 					<g opacity={prog(f, gens[3] + 10, 8)}>
@@ -81,7 +82,7 @@ export const SceneUndone: React.FC = () => {
 					<RingCluster x={1640} y={585} kinds={POOL} cols={5} gap={38} r={12} kindOf={i => (AMB.includes(i) && f >= K5.drive + 10 + AMB.indexOf(i) * 6 ? 'new' : POOL[i])} />
 					<g opacity={stopBar}>
 						<rect x={1520} y={lerp(470, 500, stopBar)} width={240} height={14} rx={7} fill={GREYT} />
-						<Sx x={1640} y={lerp(462, 492, stopBar)} text="releases stop" size={22} color={GREY_INK} hand anchor="middle" />
+						<Sx x={1640} y={lerp(462, 492, stopBar)} text="releases stop" size={28} color={GREY_INK} hand anchor="middle" />
 					</g>
 				</g>
 				{/* sizes alone don't settle it */}
@@ -106,8 +107,8 @@ export const SceneUndone: React.FC = () => {
 };
 
 // ---------- the compact board (scene 6) ----------
-const CY = [300, 386, 472, 558];
-const CH = 78;
+const CY = [290, 396, 502, 608];
+const CH = 96;
 const CLABEL = ['benefit', 'biodiversity', 'can it be undone?', 'who gains, who risks?'];
 const SUM = [
 	['85% less insecticide: measured', 'huge need; lab cages only'],
@@ -122,8 +123,8 @@ const CompactBoard: React.FC<{o?: number}> = ({o = 1}) => {
 			{CY.map((y, r) => (
 				<g key={r}>
 					<rect x={LBL.x0} y={y} width={1820 - LBL.x0} height={CH} rx={14} fill={CARD} stroke={EDGE} strokeWidth={2.5} />
-					<Sx x={LBL.x0 + 24} y={y + 50} text={CLABEL[r]} size={28} color={GREY_INK} weight={800} />
-					{cols.map((c, i) => <Sx key={i} x={c.x0 + 20} y={y + 50} text={SUM[r][i]} size={27} color={GREY_INK} hand />)}
+					<Sx x={LBL.x0 + 24} y={y + 61} text={CLABEL[r]} size={36} color={INK} weight={800} />
+					{cols.map((c, i) => <Sx key={i} x={c.x0 + 20} y={y + 62} text={SUM[r][i]} size={40} color={INK_SOFT} hand />)}
 				</g>
 			))}
 			<ColHead c={cols[0]} kind="bt" />
@@ -158,11 +159,11 @@ export const SceneVerdicts: React.FC = () => {
 			<Heading text="Two verdicts" at={4} size={60} />
 			<Overlay>
 				<CompactBoard o={prog(f, 0, 12)} />
-				<Balance x={(cols[0].x0 + cols[0].x1) / 2} y={768} s={1} tilt={btTilt} weight={1} glow={glow} />
-				<Balance x={(cols[1].x0 + cols[1].x1) / 2} y={768} s={1} tilt={gdTilt} weight={1} glow={glow} />
+				<Balance x={(cols[0].x0 + cols[0].x1) / 2} y={790} s={0.9} tilt={btTilt} weight={1} glow={glow} />
+				<Balance x={(cols[1].x0 + cols[1].x1) / 2} y={790} s={0.9} tilt={gdTilt} weight={1} glow={glow} />
 				<VerdictBar x={cols[0].x0} y={800} w={cols[0].w} h={180} at={K6.bt} size={34} lines={BT_VERDICT({large: K6.large, provided: K6.provided})} lit={1 - prog(f, K6.gd, 10) + prog(f, K6.two, 10)} pulse={pulse} />
 				<VerdictBar x={cols[1].x0} y={800} w={cols[1].w} h={180} at={K6.gd} size={32} lines={GD_VERDICT({notyet: K6.notyet, iff: K6.iff})} pulse={pulse} />
-				<GTag x={cols[1].x1} y={990} text="a model verdict" at={K6.gd + 20} size={24} anchor="end" />
+				<GTag x={cols[1].x1} y={1000} text="a model verdict" at={K6.gd + 20} size={30} anchor="end" />
 				<g transform={`translate(${lerp(700, 0, slide)},0)`} opacity={prog(f, K6.one, 8)}>
 					<MistakeChip x={480} y={96} text="biotechnology is good" at={K6.one} cross={K6.one + 24} size={30} />
 				</g>
@@ -191,21 +192,21 @@ export const SceneChecks: React.FC = () => {
 			<Overlay>
 				{/* the two verdicts, small */}
 				<g opacity={0.5 + 0.5 * Math.max(btLit, 1 - gdLit)}>
-					<VerdictBar x={100} y={180} w={830} h={110} at={-100} size={27} lit={btLit} lines={[[{t: 'Bt cotton: to a large extent justified,'}], [{t: 'provided that refuges keep resistance rare.'}]]} />
+					<VerdictBar x={100} y={180} w={830} h={116} at={-100} size={30} lit={btLit} lines={[[{t: 'Bt cotton: to a large extent justified,'}], [{t: 'provided that refuges keep resistance rare.'}]]} />
 				</g>
 				<g opacity={0.5 + 0.5 * gdLit}>
-					<VerdictBar x={990} y={180} w={830} h={110} at={-100} size={27} lit={gdLit} lines={[[{t: 'Gene drive: not yet for release; staged trials,'}], [{t: 'if each stage shows no serious harm and communities agree.'}]]} />
+					<VerdictBar x={990} y={180} w={830} h={116} at={-100} size={30} lit={gdLit} lines={[[{t: 'Gene drive: not yet for release; staged trials,'}], [{t: 'if each stage shows no serious harm and communities agree.'}]]} />
 				</g>
 				<Balance x={515} y={440} s={0.9} tilt={btTilt} weight={1} glow={btLit * 0.6} />
 				<Balance x={1405} y={440} s={0.9} tilt={gdTilt} weight={1} glow={gdLit * 0.6} />
 				{/* Bt cotton: resistance monitoring each season */}
 				<g opacity={prog(f, K7.monitor, 14) * (0.45 + 0.55 * btLit)}>
 					<Pl p={PLATES.larva} cx={210} cy={640} w={170} />
-					<Sx x={330} y={580} text="resistance alleles in caterpillars" size={28} color={GREY_INK} hand />
+					<Sx x={330} y={580} text="resistance alleles in caterpillars" size={32} color={GREY_INK} hand />
 					<rect x={330 + 520 * 0.5} y={604} width={520 * 0.5} height={34} rx={8} fill="#fde7c4" opacity={0.8} />
 					<FillBar x={330} y={606} w={520} h={30} p={res} color={hi > 0.5 ? AMBER : '#9aa3ab'} />
 					{[0, 1, 2, 3, 4].map(k => <line key={k} x1={330 + k * 130} y1={650} x2={330 + k * 130} y2={664} stroke={GREYT} strokeWidth={3} />)}
-					<Sx x={590} y={698} text="seasons" size={24} color={GREY_INK} hand anchor="middle" />
+					<Sx x={590} y={698} text="seasons" size={30} color={GREY_INK} hand anchor="middle" />
 				</g>
 				<Tg x={330} y={780} text="checked every season" at={K7.season + 10} out={K7.common} size={38} />
 				<Tg x={330} y={780} text="verdict weakens" at={K7.weaken} out={K7.stage} size={38} />

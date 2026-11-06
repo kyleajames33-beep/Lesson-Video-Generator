@@ -28,14 +28,15 @@ export type ColG = {x0: number; x1: number; w: number; wide: number};
 /** Column geometry: `t` -1 = Bt cotton wide, 0 = equal, 1 = gene drive wide. */
 export const colsAt = (t: number): [ColG, ColG] => {
 	const eq = (BOARD.x0 + BOARD.x1) / 2;
-	const split = t < 0 ? lerp(eq, 1510, smooth(-t)) : lerp(eq, 870, smooth(t));
+	const split = t < 0 ? lerp(eq, 1600, smooth(-t)) : lerp(eq, 780, smooth(t)); // 6 Nov: wide column 1030 px (was 940)
 	const a = {x0: BOARD.x0, x1: split - BOARD.gap / 2};
 	const b = {x0: split + BOARD.gap / 2, x1: BOARD.x1};
 	const mk = (c: {x0: number; x1: number}): ColG => ({...c, w: c.x1 - c.x0, wide: clamp01((c.x1 - c.x0 - 640) / 280)});
 	return [mk(a), mk(b)];
 };
-export const ROWY = [310, 455, 600, 745];
-export const ROW_H = 136;
+// 6 Nov: rows 156 tall (were 136) so the cell text can be 36 to 38 px
+export const ROWY = [286, 450, 614, 778];
+export const ROW_H = 156;
 export const ROW_LABELS: {key: string; q: string}[] = [
 	{key: 'benefit', q: 'how big, how proven?'},
 	{key: 'biodiversity', q: 'which level, compared with what?'},
@@ -43,7 +44,7 @@ export const ROW_LABELS: {key: string; q: string}[] = [
 	{key: 'who gains,', q: 'who carries the risk?'},
 ];
 /** Thumbnail box inside a wide cell (right part). */
-export const thumbBox = (c: ColG, r: number) => ({x0: c.x1 - 320, x1: c.x1 - 14, y0: ROWY[r] + 8, y1: ROWY[r] + ROW_H - 8, cx: c.x1 - 167, cy: ROWY[r] + ROW_H / 2});
+export const thumbBox = (c: ColG, r: number) => ({x0: c.x1 - 310, x1: c.x1 - 14, y0: ROWY[r] + 8, y1: ROWY[r] + ROW_H - 8, cx: c.x1 - 162, cy: ROWY[r] + ROW_H / 2});
 
 /** The row frames and labels. `rows[r]` 0..1 draws row r; `lit[r]` brightens its label; `x1` is the board's right edge. */
 export const RowFrames: React.FC<{rows?: number[]; lit?: number[]; x1?: number; o?: number; icons?: number; labels?: number[]}> = ({rows = [1, 1, 1, 1], lit = [0, 0, 0, 0], x1 = BOARD.x1, o = 1, icons = 1, labels = [1, 1, 1, 1]}) => {
@@ -59,8 +60,8 @@ export const RowFrames: React.FC<{rows?: number[]; lit?: number[]; x1?: number; 
 					<g key={r} opacity={a}>
 						<rect x={LBL.x0} y={y0} width={x1 - LBL.x0} height={ROW_H} rx={18} fill={L > 0.5 ? '#fffaf0' : CARD} stroke={L > 0.5 ? AMBER : EDGE} strokeWidth={L > 0.5 ? 3.5 : 2.5} />
 						<g opacity={icons * labels[r]}><RowIcon r={r} x={LBL.x0 + 42} y={y0 + ROW_H / 2} lit={L} /></g>
-						<g opacity={labels[r]}><Sx x={LBL.x0 + 84} y={y0 + (lab.q ? 58 : 78)} text={lab.key} size={lerp(30, 36, L)} color={L > 0.5 ? INK : GREY_INK} weight={800} />
-						{lab.q ? <Sx x={LBL.x0 + 84} y={y0 + 98} text={lab.q} size={lerp(26, 27, L)} color={L > 0.5 ? INK : GREY_INK} hand /> : null}</g>
+						<g opacity={labels[r]}><Sx x={LBL.x0 + 84} y={y0 + (lab.q ? 62 : 86)} text={lab.key} size={lerp(34, 40, L)} color={L > 0.5 ? INK : GREY_INK} weight={800} />
+						{lab.q ? <Sx x={LBL.x0 + 84} y={y0 + 108} text={lab.q} size={30} color={L > 0.5 ? INK : GREY_INK} hand /> : null}</g>
 					</g>
 				);
 			})}
@@ -254,7 +255,7 @@ export const RefugeStrip: React.FC<{x: number; y: number; w: number; h: number; 
 		<rect x={x} y={y} width={w} height={h} rx={8} fill="#eef3e2" stroke="#7c9a5a" strokeWidth={2.5} />
 		{Array.from({length: 5}, (_, k) => <line key={k} x1={x + 10 + (k * (w * 0.62 - 14)) / 4} y1={y + 6} x2={x + 10 + (k * (w * 0.62 - 14)) / 4} y2={y + h - 6} stroke={GREEN} strokeWidth={3} strokeDasharray="6 5" />)}
 		<rect x={x + w * 0.68} y={y + 3} width={w * 0.3} height={h - 6} rx={6} fill="#f7f0dc" stroke="#b7a65f" strokeWidth={2} strokeDasharray="5 4" />
-		<Sx x={x + w * 0.83} y={y + h + 22} text="refuge" size={20} color={GREY_INK} hand anchor="middle" />
+		<Sx x={x + w * 0.83} y={y + h + 26} text="refuge" size={26} color={GREY_INK} hand anchor="middle" />
 	</g>
 ));
 /** A field icon whose label switches across season ticks: `phase` 0..1 Bt -> plain (and `back` 0..1 returns). */
@@ -266,8 +267,8 @@ export const SeasonField: React.FC<{x: number; y: number; w: number; phase: numb
 		<g opacity={o}>
 			<path d={`M${x + 14},${y} L${x + w - 14},${y} L${x + w},${y + h} L${x},${y + h} Z`} fill={p > 0.5 ? '#f3ecd6' : '#e6efd8'} stroke="#8a9a5a" strokeWidth={2.5} strokeLinejoin="round" />
 			{[0.2, 0.4, 0.6, 0.8].map(t => <line key={t} x1={x + 14 + t * (w - 28)} y1={y + 4} x2={x + t * w} y2={y + h - 4} stroke={p > 0.5 ? '#b49a5a' : GREEN} strokeWidth={2.5} strokeDasharray="5 4" />)}
-			<rect x={x + w / 2 - 32} y={y + h / 2 - 14} width={64} height={28} rx={14} fill={CARD} stroke={GREYT} strokeWidth={2} />
-			<Sx x={x + w / 2} y={y + h / 2 + 8} text={p > 0.5 ? labels[1] : labels[0]} size={20} color={GREY_INK} hand anchor="middle" />
+			<rect x={x + w / 2 - 38} y={y + h / 2 - 16} width={76} height={32} rx={16} fill={CARD} stroke={GREYT} strokeWidth={2} />
+			<Sx x={x + w / 2} y={y + h / 2 + 9} text={p > 0.5 ? labels[1] : labels[0]} size={26} color={GREY_INK} hand anchor="middle" />
 			{[0, 1, 2].map(k => <line key={k} x1={x + 10 + k * (w - 20) / 2} y1={y + h + 8} x2={x + 10 + k * (w - 20) / 2} y2={y + h + 18} stroke={GREYT} strokeWidth={2.5} />)}
 			<line x1={x + 10} y1={y + h + 13} x2={x + w - 10} y2={y + h + 13} stroke={GREYT} strokeWidth={2} />
 		</g>

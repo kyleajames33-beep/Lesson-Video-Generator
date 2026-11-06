@@ -13,9 +13,10 @@ import {DrawPath} from '../../kit';
 import {Term} from '../bio-m6-b03/parts';
 import {S} from './common';
 import {
-	AMBER, AMBER_INK, AlleleRing, BIO_INK, Box, Bubble, Enzyme, FillBar, GREYT, GREY_INK, GreyTick, INK, INK_SOFT, LCX, LaneCard, Lane1, Lane2, PLATES, Pl, Strip, StripRings,
+	AMBER, AMBER_INK, AlleleRing, BIO_INK, Box, Bubble, Enzyme, FillBar, GREYT, GREY_INK, INK, INK_SOFT, LCX, PLATES, Pl, SN, Strip,
 	Sugar, clamp01, crumbPt, lerp, prog, smooth, stripX, vis,
 } from './parts';
+import {GreyTick, LaneCard, Lane1, Lane2, StripRings} from './big';
 import {rungX} from '../bio-m6-b01/parts';
 
 // ---------- 1. Hook ----------
@@ -39,7 +40,7 @@ export const SceneHook: React.FC = () => {
 						{i < 2 ? <GreyTick x={h.x + 150} y={748} o={prog(f, K1.change + 30 + i * 8, 12)} /> : null}
 					</g>
 				))}
-				<GTag x={H[0].x} y={815} text="thousands of years ago" at={K1.thousands + 6} out={K1.so} size={28} anchor="middle" />
+				<GTag x={H[0].x} y={815} text="thousands of years ago" at={K1.thousands + 6} out={K1.so} size={32} anchor="middle" />
 			</Overlay>
 		</>
 	);
@@ -84,7 +85,7 @@ export const SceneYeast: React.FC = () => {
 					<Pl p={PLATES.bread} cx={BR.x} cy={BR.y} w={BR.w} o={prog(f, K2.rise - 6, 16)} />
 					<ScribbleRing cx={hx} cy={hy} rx={100} ry={86} at={K2.rise + 8} out={K2.making} seed={4} />
 					<Tg x={BR.x} y={780} text="carbon dioxide bubbles make the holes" at={K2.rise + 20} out={K2.making} anchor="middle" size={38} />
-					<GTag x={Y.x} y={740} text="1850s and 60s: living yeast does it" at={K2.pasteur} out={K2.making} size={28} anchor="middle" />
+					<GTag x={Y.x} y={740} text="1850s and 60s: living yeast does it" at={K2.pasteur} out={K2.making} size={32} anchor="middle" />
 				</g>
 				<Term x={570} y={640} term="fermentation" gloss="using a microbe's process" at={K2.use} size={50} />
 				{void K2.ethanol}{void K2.people}
@@ -135,12 +136,13 @@ const GEN = [0.3];
 for (let g = 1; g < 3; g++) GEN.push((2 * GEN[g - 1]) / (1 + GEN[g - 1]));
 if (!(GEN[0] < GEN[1] && GEN[1] < GEN[2] && GEN[2] < 1)) throw new Error('B09 breeding bars must rise');
 const WX = 1400;
+const BP = 36, BG = 34, RR = 15; // strip pitch, gap and ring radius on the right (6 Nov: larger)
 const PY = [340, 455], OY = 610;
 export const SceneBreeding: React.FC = () => {
 	const f = useCurrentFrame();
 	const flockO = vis(f, K4.wool, K4.touched, 14);
 	const strips = prog(f, K4.touched + 6, 14);
-	const x0 = stripX(WX);
+	const x0 = stripX(WX, SN, BP);
 	const fly = smooth(prog(f, K4.mix + 6, 26, x => x));
 	return (
 		<>
@@ -159,20 +161,20 @@ export const SceneBreeding: React.FC = () => {
 				<Sx x={1000} y={720} text="choosing which animals or plants breed" size={40} color={BIO_INK} hand at={K4.sb + 10} out={K4.touched} />
 				{/* parents and a lamb: one ring from each parent */}
 				<g opacity={strips}>
-					{PY.map(y => <Strip key={y} cx={WX} y={y} />)}
-					<StripRings cx={WX} y={PY[0]} kinds={['a', 'b']} />
-					<StripRings cx={WX} y={PY[1]} kinds={['b', 'b']} />
-					<Sx x={1225} y={PY[0] + 26} text="parent" size={30} color={GREY_INK} hand anchor="end" />
-					<Sx x={1225} y={PY[1] + 26} text="parent" size={30} color={GREY_INK} hand anchor="end" />
+					{PY.map(y => <Strip key={y} cx={WX} y={y} pitch={BP} gap={BG} />)}
+					<StripRings cx={WX} y={PY[0]} kinds={['a', 'b']} pitch={BP} r={RR} />
+					<StripRings cx={WX} y={PY[1]} kinds={['b', 'b']} pitch={BP} r={RR} />
+					<Sx x={1200} y={PY[0] + 12} text="parent" size={34} color={GREY_INK} hand anchor="end" />
+					<Sx x={1200} y={PY[1] + 12} text="parent" size={34} color={GREY_INK} hand anchor="end" />
 				</g>
 				<g opacity={prog(f, K4.mix - 4, 12)}>
-					<Strip cx={WX} y={OY} />
-					<Sx x={1225} y={OY + 26} text="lamb" size={30} color={GREY_INK} hand anchor="end" />
+					<Strip cx={WX} y={OY} pitch={BP} gap={BG} />
+					<Sx x={1200} y={OY + 12} text="lamb" size={34} color={GREY_INK} hand anchor="end" />
 				</g>
 				{f >= K4.mix + 6 ? (
 					<g>
-						<AlleleRing x={rungX(x0, 2)} y={lerp(PY[0], OY, fly) - 22} r={11} kind="a" glow={1 - fly} />
-						<AlleleRing x={rungX(x0, 7)} y={lerp(PY[1], OY, fly) - 22} r={11} kind="b" glow={1 - fly} />
+						<AlleleRing x={rungX(x0, 2, BP)} y={lerp(PY[0], OY, fly) - RR - 12} r={RR} kind="a" glow={1 - fly} />
+						<AlleleRing x={rungX(x0, 7, BP)} y={lerp(PY[1], OY, fly) - RR - 12} r={RR} kind="b" glow={1 - fly} />
 					</g>
 				) : null}
 				<g opacity={vis(f, K4.mix + 34, K4.which, 12)}><GreyTick x={1270} y={690} text="no DNA changed" /></g>
@@ -182,17 +184,17 @@ export const SceneBreeding: React.FC = () => {
 					const at = K4.which + 14 + g * 40;
 					return (
 						<g key={g} opacity={prog(f, at, 12)}>
-							<Sx x={1225} y={796 + g * 52} text={`generation ${g + 1}`} size={26} color={GREY_INK} hand anchor="end" />
+							<Sx x={1225} y={796 + g * 52} text={`generation ${g + 1}`} size={30} color={GREY_INK} hand anchor="end" />
 							<FillBar x={1250} y={774 + g * 52} w={420} h={28} p={p * prog(f, at, 24)} />
 						</g>
 					);
 				})}
 				{/* no new alleles: an empty ring slot */}
 				<g opacity={prog(f, K4.exists, 12)}>
-					<circle cx={1600} cy={OY - 22} r={13} fill="none" stroke={GREYT} strokeWidth={3} strokeDasharray="5 5" />
-					<Sx x={1600} y={OY - 48} text="?" size={34} color={GREY_INK} weight={800} anchor="middle" />
+					<circle cx={1625} cy={OY - 27} r={16} fill="none" stroke={GREYT} strokeWidth={3} strokeDasharray="5 5" />
+					<Sx x={1625} y={OY - 56} text="?" size={36} color={GREY_INK} weight={800} anchor="middle" />
 				</g>
-				<Tg x={1630} y={612} text="no new alleles" at={K4.exists + 6} size={36} />
+				<Tg x={1655} y={612} text="no new alleles" at={K4.exists + 6} size={36} />
 				{void K4.common}{void LCX}{void clamp01}{void INK_SOFT}{void AMBER}
 			</Overlay>
 		</>

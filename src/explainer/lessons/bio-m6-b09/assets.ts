@@ -30,6 +30,10 @@ export const PLATES = {
 	jars: mk('m6-tissue-culture-jars-v1.png', N2, [200, 627, 1798, 1373]),
 	runner: mk('strawberry-runner-botanical-v1-alpha.png', [1672, 941], [0, 71, 1672, 913]),
 	bull: mk('b3b-dairy-bull-side-v1.png', [2200, 1600], [401, 460, 1798, 1360]),
+	// exam cards (6 Nov quality fix): the seedless Cavendish half of the banana pair (box clipped at the gap, natural x
+	// 1055, as B12 measured) and the Helicoverpa larva boring into a cotton boll (B10's box)
+	cavendish: mk('m6-banana-wild-vs-cavendish-v1.png', N2, [1055, 23, 1916, 1964]),
+	larva: mk('m6-helicoverpa-larva-boll-v1.png', N2, [76, 95, 1921, 1935]),
 };
 /** Natural pixel of the slice's holey cut face (bread) and the plasmid ring centre (bacterium). */
 export const CRUMB: [number, number] = [409, 1068];

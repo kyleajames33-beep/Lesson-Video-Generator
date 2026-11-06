@@ -34,18 +34,18 @@ export const btLines = (T: BtT): CL[][] => [
 	[{t: 'growers and nearby wildlife gain;', at: T.gain + 6, vs: true}, {t: 'resistance risk shared by growers', at: T.gain + 16, vs: true}],
 ];
 /** Bt resistance note (row 1, line 3 after the native-cotton note). */
-export const btResist = (T: BtT): CL => ({t: 'resistance: a genetic change, slowed by refuges', at: T.cater + 10, dimAt: T.stop});
+export const btResist = (T: BtT): CL => ({t: 'resistance: genetic change, slowed by refuges', at: T.cater + 10, dimAt: T.stop});
 export const gdLines = (T: GdT): CL[][] => [
 	[{t: 'need: hundreds of thousands of deaths', at: T.enormous + 8, dimAt: T.cages}, {t: 'a year (WHO)', at: T.enormous + 14, dimAt: T.cages}, {t: 'evidence: lab cages only', at: T.cages + 8, dimAt: T.kind}],
 	[
-		{t: 'target mosquito population: down if the drive works;', at: T.kind + 6, dimAt: T.spread, glyph: 'down'},
+		{t: 'target mosquito: down if the drive works;', at: T.kind + 6, dimAt: T.spread, glyph: 'down'},
 		{t: 'local species loss: uncertain', at: T.kind + 22, dimAt: T.spread, glyph: 'q'},
 		{t: 'ecosystem effect: uncertain', at: T.animals + 6, dimAt: T.spread, glyph: 'q'},
 	],
 	[{t: 'spreads by itself:', at: T.spread + 8, dimAt: T.gain}, {t: 'may not be recallable', at: T.recall, dimAt: T.gain}],
-	[{t: 'risk shared across borders: who agrees?', at: T.borders + 10, dimAt: 1e9}, {t: '2025: a national government halted related trials', at: T.many + 10, vs: true, size: 24}],
+	[{t: 'risk shared across borders: who agrees?', at: T.borders + 10, dimAt: 1e9}, {t: '2025: a national government halted related trials', at: T.many + 10, vs: true, size: 30}],
 ];
-const BT_SIZE = 30, GD_SIZE = 28;
+const BT_SIZE = 38, GD_SIZE = 36;
 
 /** Bt cotton cells (text and, when wide, thumbnails). */
 export const BtCells: React.FC<{c: ColG; T: BtT; o?: number}> = ({c, T, o = 1}) => {
@@ -62,10 +62,10 @@ export const BtCells: React.FC<{c: ColG; T: BtT; o?: number}> = ({c, T, o = 1}) 
 				<g opacity={th}>
 					{/* benefit: spray bars and the ladder's top rung */}
 					<g opacity={prog(f, T.large, 12)}>
-						<Sx x={b0.x0} y={b0.y0 + 30} text="before Bt" size={20} color={GREY_INK} hand />
-						<FillBar x={b0.x0 + 90} y={b0.y0 + 14} w={130} h={18} p={prog(f, T.large, 20)} color="#9aa3ab" />
-						<Sx x={b0.x0} y={b0.y0 + 70} text="with Bt" size={20} color={GREY_INK} hand />
-						<FillBar x={b0.x0 + 90} y={b0.y0 + 54} w={130} h={18} p={0.15 * prog(f, T.eighty, 20)} color={AMBER} />
+						<Sx x={b0.x0} y={b0.y0 + 36} text="before Bt" size={26} color={GREY_INK} hand />
+						<FillBar x={b0.x0 + 106} y={b0.y0 + 18} w={110} h={20} p={prog(f, T.large, 20)} color="#9aa3ab" />
+						<Sx x={b0.x0} y={b0.y0 + 84} text="with Bt" size={26} color={GREY_INK} hand />
+						<FillBar x={b0.x0 + 106} y={b0.y0 + 66} w={110} h={20} p={0.15 * prog(f, T.eighty, 20)} color={AMBER} />
 						<MiniLadder x={b0.x1 - 60} y={b0.cy} h={96} w={30} lit={f >= T.large + 30 ? 4 : -1} color={GREYT} />
 						<Pl p={PLATES.cotton} cx={b0.x1 - 22} cy={ladderRungY(b0.cy, 96, 4) + 4} w={34} o={prog(f, T.large + 30, 10)} />
 					</g>
@@ -105,10 +105,10 @@ export const GdCells: React.FC<{c: ColG; T: GdT; o?: number}> = ({c, T, o = 1}) 
 	const mp = platePt(PLATES.map, b3.x0 + 120, b3.cy, 230, 1010, 1180);
 	return (
 		<g>
-			<CellLines c={c} r={0} lines={L[0]} size={GD_SIZE} o={tO} lineH={32} />
-			<CellLines c={c} r={1} lines={L1} size={GD_SIZE} o={tO} lineH={33} />
-			<CellLines c={c} r={2} lines={L[2]} size={30} o={tO} />
-			<CellLines c={c} r={3} lines={L[3]} size={GD_SIZE} o={tO} lineH={36} />
+			<CellLines c={c} r={0} lines={L[0]} size={GD_SIZE} o={tO} lineH={42} />
+			<CellLines c={c} r={1} lines={L1} size={GD_SIZE} o={tO} lineH={42} />
+			<CellLines c={c} r={2} lines={L[2]} size={38} o={tO} />
+			<CellLines c={c} r={3} lines={L[3]} size={GD_SIZE} o={tO} lineH={46} />
 			{th > 0.01 ? (
 				<g opacity={th}>
 					{/* benefit: a long need bar, then the ladder's "works in animals" rung and the cage */}
@@ -152,7 +152,7 @@ export const GdCells: React.FC<{c: ColG; T: GdT; o?: number}> = ({c, T, o = 1}) 
 	);
 };
 /** The balances at the foot of the board (one per column). */
-export const FootBalances: React.FC<{cols: [ColG, ColG]; o?: number; tilt?: [number, number]; glow?: [number, number]; lit?: [number, number]; y?: number; s?: number; label?: boolean}> = ({cols, o = 1, tilt = [0, 0], glow = [0, 0], lit = [1, 1], y = 1010, s = 1.15, label = true}) => (
+export const FootBalances: React.FC<{cols: [ColG, ColG]; o?: number; tilt?: [number, number]; glow?: [number, number]; lit?: [number, number]; y?: number; s?: number; label?: boolean}> = ({cols, o = 1, tilt = [0, 0], glow = [0, 0], lit = [1, 1], y = 1032, s = 1.05, label = true}) => (
 	<g opacity={o}>
 		{cols.map((c, i) => (
 			<g key={i} opacity={0.45 + 0.55 * lit[i]}>
@@ -237,7 +237,7 @@ export const SceneFour: React.FC = () => {
 				<Tg x={960} y={970} text="a list doesn't decide" at={K2.isnt} out={K2.same4} anchor="middle" size={40} />
 				{/* the four rows */}
 				<RowFrames rows={at.map((a, r) => prog(f, K2.same4 + 6 + r * 8, 14))} labels={at.map(a => prog(f, a - 6, 12))} lit={at.map((a, r) => vis(f, a, nxt[r], 10))} />
-				<GTag x={LBL.x0} y={892} text="builds on the ethics checklist" at={K2.big} size={24} />
+				<GTag x={LBL.x0} y={950} text="builds on the ethics checklist" at={K2.big} size={30} />
 				<g opacity={yieldO}><Pill x={yieldX} y={ROWY[1] + 38} text="more yield" size={32} lit={1} /></g>
 				<FootBalances cols={C0} o={prog(f, K2.cond, 14)} />
 				{void K2.worth}{void BOARD}{void ROW_H}{void INK}{void AMBER_INK}

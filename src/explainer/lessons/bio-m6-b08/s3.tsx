@@ -11,7 +11,8 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {Brace, GreyCross, TickG} from '../bio-m6-b07/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, BIO_INK, FreqBar, INK, INK_SOFT, PoolBasin, Rg, fmt, prog, slotsOf, vis} from './parts';
+import {AMBER, AMBER_INK, BIO_INK, FreqBar, INK, INK_SOFT, PoolBasin, Rg, fmt, lerp, prog, slotsOf, smooth, vis} from './parts';
+import {PossumPlan, SkinkIsland} from './exam';
 import type {RK} from './parts';
 
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1660, cy = 800}) => {
@@ -52,7 +53,10 @@ if (COPIES !== 20 || PB !== 0.2) throw new Error('B08 item 1 must be 4 / 20 = 0.
 // ---------- 9a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions now', island: 'An island population', cyclone: 'A cyclone kills', ten: 'The ten survivors carry', calc: 'Calculate the frequency', then: 'Then identify the process', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
+	const f = useCurrentFrame();
 	const t: T1 = {a: KA.island, b: KA.cyclone, c: KA.ten, d: KA.calc, e: KA.then};
+	// the givens picture fills the lower card while the stem is read, then moves right when the demands arrive
+	const m = smooth(prog(f, KA.calc - 4, 22));
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
@@ -61,9 +65,12 @@ export const SceneAttempt: React.FC = () => {
 				<CardBox x={100} y={180} w={1720} h={830} at={KA.island - 6} />
 				<QText q={STEM1(t)} x={140} y={244} w={1640} size={36} card={false} />
 				<QText q={DEM1(t)} x={140} y={440} w={1640} size={34} card={false} />
-				<AnsBox x={140} y={600} w={1300} h={110} at={KA.calc + 16} label="(a)" />
-				<AnsBox x={140} y={730} w={1300} h={250} at={KA.then + 20} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} />
+				<g transform={`translate(${lerp(960, 1488, m)},${lerp(810, 700, m)}) scale(${lerp(1, 0.58, m)})`}>
+					<SkinkIsland island={KA.island} cyclone={KA.cyclone} ten={KA.ten} />
+				</g>
+				<AnsBox x={140} y={600} w={1020} h={110} at={KA.calc + 16} label="(a)" />
+				<AnsBox x={140} y={730} w={1020} h={250} at={KA.then + 20} label="(b)" />
+				<PauseHold id="attempt" at={KA.pause} cx={1660} cy={900} />
 			</Overlay>
 		</>
 	);
@@ -118,18 +125,25 @@ qCheck(Q2({a: 0, b: 0, c: 0}).blocks, MARKS2.map(phrase => ({phrase, at: 0})));
 
 // ---------- 9c. Attempt two ----------
 const KC = cues(S('attempt-two'), {second: 'Second', small: 'A small isolated population', team: 'A conservation team', evaluate: 'Evaluate this plan', pause: 'Pause here to answer'});
-export const SceneAttemptTwo: React.FC = () => (
-	<>
-		<Heading text="Exam question 2" at={KC.second} size={50} />
-		<Overlay>
-			<HscTag at={KC.second} />
-			<CardBox x={100} y={180} w={1720} h={830} at={KC.small - 6} />
-			<QText q={Q2({a: KC.small, b: KC.team, c: KC.evaluate})} x={140} y={252} w={1640} size={38} card={false} />
-			<AnsBox x={140} y={560} w={1320} h={420} at={KC.evaluate + 20} label="answer" />
-			<PauseHold id="attempt-two" at={KC.pause} cy={760} />
-		</Overlay>
-	</>
-);
+export const SceneAttemptTwo: React.FC = () => {
+	const f = useCurrentFrame();
+	const m = smooth(prog(f, KC.evaluate + 4, 22));
+	return (
+		<>
+			<Heading text="Exam question 2" at={KC.second} size={50} />
+			<Overlay>
+				<HscTag at={KC.second} />
+				<CardBox x={100} y={180} w={1720} h={830} at={KC.small - 6} />
+				<QText q={Q2({a: KC.small, b: KC.team, c: KC.evaluate})} x={140} y={252} w={1640} size={38} card={false} />
+				<g transform={`translate(${lerp(980, 1445, m)},${lerp(790, 700, m)}) scale(${lerp(1, 0.52, m)})`}>
+					<PossumPlan small={KC.small} team={KC.team} bring={KC.team + 44} />
+				</g>
+				<AnsBox x={140} y={560} w={900} h={420} at={KC.evaluate + 20} label="answer" />
+				<PauseHold id="attempt-two" at={KC.pause} cx={1660} cy={900} />
+			</Overlay>
+		</>
+	);
+};
 
 // ---------- 9d. Feedback two ----------
 const KD = cues(S('feedback-two'), {bringing: 'Bringing in possums', flow: 'is gene flow', adds: 'It adds many existing alleles', rises: 'variation rises', mutation: 'Mutation adds new alleles', one: 'one copy at a time', thirty: 'in only thirty possums', far: 'far better', although: 'although the added alleles', thinking: 'Thinking gene flow creates', mistake: 'the classic mistake'});
@@ -205,12 +219,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const NOTES = [
-	'Gene pool: all the alleles in a population. Allele frequency = copies of that allele ÷ total copies of the gene (two per individual for an autosomal gene).',
-	'Genetic drift: a random change in allele frequency, because each generation\'s alleles are a chance sample. Strongest in small populations; it can lose or fix an allele whatever its effect. Bottleneck (a crash to a few survivors) and founder effect (a few individuals start a new population) are drift.',
-	'Mutation: the only source of new alleles. Each starts as one copy (1 in 2N), so mutation alone changes a gene pool slowly, and drift often loses new alleles in small populations.',
-	'Gene flow: alleles move between populations with migrants that breed. It can add alleles a population lacked and makes populations more alike, but creates no new alleles.',
-	'Which matters most depends on the population: drift in small, isolated ones; gene flow where migration is high; mutation over long times. Selection is non-random; drift is random.',
+	'Gene pool: all the alleles in a population.',
+	'Allele frequency = copies of the allele ÷ all copies of the gene (2 per individual).',
+	'Genetic drift: frequencies change by chance. Strongest in small populations.',
+	'Bottleneck and founder effect: a few individuals carry a random sample of alleles.',
+	'Mutation: the only source of new alleles, one copy at a time, so it is slow.',
+	'Gene flow: migrants that breed move existing alleles. Pools become more alike.',
+	'Selection is non-random (for a reason). Drift is random.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Drift is luck, and luck matters more in small groups." tag="gene flow tends to make populations alike; drift can pull them apart, and so can selection when environments favour different alleles" size={29} aidTop={720} />
+	<NotesBoard notes={NOTES} aid="Drift is luck, and luck matters more in small groups." tag="gene flow tends to make populations alike; drift can pull them apart, and so can selection when environments favour different alleles" size={34} aidTop={660} />
 );

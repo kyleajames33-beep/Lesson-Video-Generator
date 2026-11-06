@@ -82,29 +82,30 @@ export const SceneGenePools: React.FC = () => {
 				<g opacity={basins}>
 					<Cat x={480} y={330} w={210} texas o={prog(f, 4, 14)} />
 					<Cat x={1420} y={370} w={170} o={prog(f, 8, 14)} />
-					<RingBasin x={110} y={430} w={740} h={340} kinds={TEX} cols={9} label="Texas" o={prog(f, K2.pool, 14)} glow={i => ((TEX[i] === 'C' || TEX[i] === 'D') ? pulse : 0)} />
-					<RingBasin x={1160} y={470} w={520} h={250} kinds={FLA} cols={7} label="Florida" o={prog(f, K2.pool + 10, 14)} ringO={i => (FLA[i] === 'ghost' ? lostO : 1)} />
+					<RingBasin x={110} y={430} w={740} h={340} kinds={TEX} cols={9} r={18} label="Texas" o={prog(f, K2.pool, 14)} glow={i => ((TEX[i] === 'C' || TEX[i] === 'D') ? pulse : 0)} />
+					 <RingBasin x={1160} y={470} w={520} h={250} kinds={FLA} cols={7} r={18} label="Florida" o={prog(f, K2.pool + 10, 14)} ringO={i => (FLA[i] === 'ghost' ? lostO : 1)} />
 				</g>
 				{/* one gene, counted */}
 				<g opacity={grid}>
 					{Array.from({length: 25}, (_, k) => {
-						const cx = 200 + (k % 5) * 130, cy = 290 + Math.floor(k / 5) * 128;
+						const cx = 150 + (k % 5) * 196, cy = 262 + Math.floor(k / 5) * 152;
 						return (
 							<g key={k}>
-								<Cat x={cx} y={cy} w={84} o={prog(f, K2.share + k, 8)} />
+								<Cat x={cx} y={cy} w={134} o={prog(f, K2.share + k, 8)} />
 								{[0, 1].map(j => {
 									const i = k * 2 + j;
 									const hot = COUNT[i] === 'B' ? prog(f, K2.ten + 6, 10) : 0;
-									return <Rg key={j} x={cx - 16 + j * 32} y={cy + 46} r={13} k={COUNT[i]} o={prog(f, K2.each + 6 + k * 0.6, 8)} glow={hot} />;
+									return <Rg key={j} x={cx - 24 + j * 48} y={cy + 64} r={19} k={COUNT[i]} o={prog(f, K2.each + 6 + k * 0.6, 8)} glow={hot} />;
 								})}
 							</g>
 						);
 					})}
 				</g>
-				<Sx x={1000} y={450} text="25 × 2 = 50 copies" size={56} color={INK} weight={800} at={K2.fifty} out={K2.florida} opacity={1 - 0.55 * prog(f, K2.point, 12)} />
-				<Sx x={1000} y={570} text={`10 / 50 = ${fmt(P_COUNT)}`} size={56} color={AMBER_INK} weight={800} at={K2.point - 8} out={K2.florida} />
-				<FreqBar x={1000} y={620} w={360} p={P_COUNT * prog(f, K2.point, 20)} o={vis(f, K2.point, K2.florida, 12)} />
-				<Rg x={1000 - 30} y={548 - 12} r={13} k="B" o={vis(f, K2.point - 8, K2.florida, 12)} />
+				<Tg x={1200} y={330} text="25 panthers, one gene" at={K2.share + 10} out={K2.florida} size={44} color={INK_SOFT} />
+				<Sx x={1200} y={460} text="25 × 2 = 50 copies" size={64} color={INK} weight={800} at={K2.fifty} out={K2.florida} opacity={1 - 0.55 * prog(f, K2.point, 12)} />
+				<Sx x={1200} y={600} text={`10 / 50 = ${fmt(P_COUNT)}`} size={64} color={AMBER_INK} weight={800} at={K2.point - 8} out={K2.florida} />
+				<FreqBar x={1200} y={660} w={440} p={P_COUNT * prog(f, K2.point, 20)} o={vis(f, K2.point, K2.florida, 12)} />
+				<Rg x={1200 - 36} y={578 - 14} r={19} k="B" o={vis(f, K2.point - 8, K2.florida, 12)} />
 				{/* cut off, and lost */}
 				<g opacity={vis(f, K2.cut, K2.so + 40, 12)}>
 					{[930, 1000, 1070].map(x => <line key={x} x1={x} y1={420} x2={x} y2={760} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="10 10" opacity={0.5} />)}

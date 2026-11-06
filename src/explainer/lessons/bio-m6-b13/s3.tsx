@@ -281,12 +281,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const NOTES = [
-	'To weigh a biotechnology, ask of each case: How big is the benefit, and how strong is the evidence? Which level of biodiversity changes, compared with what? Can the change be undone? Who gains, and who carries the risk?',
-	'Reversibility matters: a benefit given up can usually be regained, but an extinction cannot, and alleles that spread into a wild population can be very hard to remove. A possibly permanent risk needs stronger evidence.',
-	'Bt cotton (Australia): insecticide use down about 85% (with better pest management); can leave more insect species than sprayed cotton; resistance (a genetic change in the pest) slowed by refuges; growers can stop planting it. Model verdict: to a large extent justified, provided refuges keep resistance rare.',
-	'Malaria gene drive: huge need, but lab-cage evidence only; target mosquito population down if the drive works, but local species loss and ecosystem effects uncertain; spreads by itself, so may not be recallable; risk crosses borders. Model verdict: not yet justified for release; staged trials could be, if each stage shows no serious harm and communities agree.',
-	'End an evaluation with a verdict and its condition ("to a large extent", "provided that"), not "there are pros and cons". Make the condition something evidence could check (for example, yearly resistance monitoring in Bt cotton).',
+	'Ask four questions of each case: benefit (and evidence), biodiversity level, can it be undone, who gains and who risks.',
+	'A benefit given up can be regained; an extinction cannot. A possibly permanent risk needs stronger evidence.',
+	'Bt cotton: about 85% less insecticide; more insect species than sprayed cotton; can stop next season.',
+	'Bt cotton verdict: to a large extent justified, provided refuges keep resistance rare.',
+	'Gene drive: huge need, lab-cage evidence only; spreads by itself, so may not be recallable.',
+	'Gene drive verdict: not yet for release; staged trials if each stage shows no serious harm and communities agree.',
+	'End with a verdict and a checkable condition, not "there are pros and cons".',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="A benefit can be paused; an extinction can't be undone. Verdict, provided that ..." tag="ask the same four questions of each case, then give a verdict with a checkable condition" size={29} aidTop={850} />
+	<NotesBoard notes={NOTES} aid="A benefit can be paused; an extinction can't be undone. Verdict, provided that ..." tag="ask the same four questions of each case, then give a verdict with a checkable condition" size={33} aidTop={720} />
 );

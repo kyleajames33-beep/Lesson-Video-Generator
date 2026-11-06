@@ -16,6 +16,10 @@ const mk = (name: string, box: [number, number, number, number]): PB => ({src: B
 export const PLATES = {
 	panther: mk('m6-florida-panther-v1.png', [200, 526, 1798, 1472]),
 	puma: mk('m6-texas-puma-v1.png', [200, 526, 1799, 1473]),
+	// exam givens (6 Nov quality fix; alpha boxes measured from the real files, alpha > 20)
+	skink: {src: B + 'y11-blue-tongue-lizard-v1.png', nat: [1774, 887], box: [167, 294, 1646, 649]} as PB,
+	possum: {src: B + 'y11-brushtail-possum-v1.png', nat: [1516, 1037], box: [299, 148, 1212, 924]} as PB,
+	island: {src: B + 'y11-grassy-island-v1.png', nat: [1663, 946], box: [52, 286, 1612, 729]} as PB,
 };
 /** Natural pixel of the panther's kinked tail tip. */
 export const TAIL: [number, number] = [1720, 1330];

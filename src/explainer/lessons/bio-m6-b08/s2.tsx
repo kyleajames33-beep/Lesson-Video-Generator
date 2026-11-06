@@ -122,10 +122,20 @@ const P_MIL = 1 / (2 * 1000000);
 if (P_NEW !== 0.02 || P_MIL !== 0.0000005) throw new Error('B08 scene 5: 1/50 = 0.02 and 1/2,000,000 = 0.0000005');
 // a new allele at 1 / 50 in 25 animals: five seeded replicates, most lost within a few generations
 const RUNNEW = findSet(3, 25, 20, 0.02, 5, s => s.filter(r => { const g = lostAt(r); return g > 0 && g <= 6; }).length >= 4 && s.some(r => !r.includes(0)) && s.every(r => Math.max(...r) <= 0.2));
+// the Florida pool opens large in the centre (r 24 rings), then moves left at its old size when the million pool arrives
+const BIGP = {x: 300, y: 300, w: 1320, h: 420};
+const bigSlots = (n: number, cols: number): [number, number][] => {
+	const dx = (BIGP.w - 150) / (cols - 1), dy = 82;
+	return Array.from({length: n}, (_, i) => { const c = i % cols, r = Math.floor(i / cols); return [BIGP.x + 66 + c * dx + (r % 2 ? dx * 0.3 : 0) - 14, BIGP.y + 60 + r * dy]; });
+};
 export const SceneMutation: React.FC = () => {
 	const f = useCurrentFrame();
-	const B = {x: 140, y: 380, w: 620, h: 300};
-	const slots = slotsOf(B.x, B.y, B.w, B.h, 52, 10);
+	const SB = {x: 140, y: 380, w: 620, h: 300};
+	const m = smooth(prog(f, K5.million - 16, 24));
+	const B = {x: lerp(BIGP.x, SB.x, m), y: lerp(BIGP.y, SB.y, m), w: lerp(BIGP.w, SB.w, m), h: lerp(BIGP.h, SB.h, m)};
+	const sSmall = slotsOf(SB.x, SB.y, SB.w, SB.h, 52, 10), sBig = bigSlots(52, 13);
+	const slots = sSmall.map(([x, y], i) => [lerp(sBig[i][0], x, m), lerp(sBig[i][1], y, m)] as [number, number]);
+	const rr = lerp(24, 13, m);
 	const dropT = smooth(prog(f, K5.single - 6, 18));
 	const lineO = prog(f, K5.loses - 8, 12);
 	const big = vis(f, K5.million - 6, K5.loses - 8, 14);
@@ -137,13 +147,13 @@ export const SceneMutation: React.FC = () => {
 				<PoolBasin x={B.x} y={B.y} w={B.w} h={B.h} label="Florida (25 panthers)" o={prog(f, 2, 14)} />
 				{FL5.map((k, i) => {
 					const [x, y] = slots[i];
-					if (k === 'new') return <Rg key={i} x={x} y={lerp(y - 160, y, dropT)} r={13} k="new" o={dropT} glow={vis(f, K5.single, K5.single + 40, 8)} />;
-					return <Rg key={i} x={x} y={y} r={13} k={k} o={prog(f, 4 + i * 0.4, 8)} />;
+					if (k === 'new') return <Rg key={i} x={x} y={lerp(y - 200, y, dropT)} r={rr} k="new" o={dropT} glow={vis(f, K5.single, K5.single + 40, 8)} />;
+					return <Rg key={i} x={x} y={y} r={rr} k={k} o={prog(f, 4 + i * 0.4, 8)} />;
 				})}
-				{[50, 51].map(i => <Rg key={i} x={slots[i][0]} y={slots[i][1]} r={13} k="ghost" o={prog(f, 20, 12)} />)}
-				<Tg x={B.x + B.w / 2} y={B.y - 40} text="new allele" at={K5.single + 6} out={K5.fifty} anchor="middle" size={38} />
-				<FreqBar x={B.x + 100} y={B.y + B.h + 70} w={300} p={P_NEW * prog(f, K5.fifty, 12)} o={prog(f, K5.fifty - 6, 12) * (1 - prog(f, K5.long, 12))} color={AMBER} />
-				<Sx x={B.x + B.w / 2} y={B.y + B.h + 150} text={`1 / 50 = ${fmt(P_NEW)}`} size={50} color={AMBER_INK} weight={800} anchor="middle" at={K5.fifty} out={K5.long} opacity={1 - 0.5 * prog(f, K5.million, 12)} />
+				{[50, 51].map(i => <Rg key={i} x={slots[i][0]} y={slots[i][1]} r={rr} k="ghost" o={prog(f, 20, 12)} />)}
+				<Tg x={sBig[23][0]} y={BIGP.y - 30} text="one new allele: a single copy" at={K5.single + 6} out={K5.fifty} anchor="middle" size={44} />
+				<FreqBar x={lerp(560, SB.x + 100, m)} y={lerp(830, SB.y + SB.h + 70, m)} w={lerp(560, 300, m)} p={P_NEW * prog(f, K5.fifty, 12)} o={prog(f, K5.fifty - 6, 12) * (1 - prog(f, K5.long, 12))} color={AMBER} />
+				<Sx x={lerp(960, SB.x + SB.w / 2, m)} y={lerp(950, SB.y + SB.h + 150, m)} text={`1 / 50 = ${fmt(P_NEW)}`} size={lerp(64, 50, m)} color={AMBER_INK} weight={800} anchor="middle" at={K5.fifty} out={K5.long} opacity={1 - 0.5 * prog(f, K5.million, 12)} />
 				{/* a population of a million: an outline only */}
 				<g opacity={big}>
 					<PoolBasin x={900} y={330} w={880} h={340} label="a million animals" />
@@ -151,7 +161,7 @@ export const SceneMutation: React.FC = () => {
 					<Sx x={1340} y={780} text={`1 / 2,000,000 = ${P_MIL.toFixed(7)}`} size={50} color={AMBER_INK} weight={800} anchor="middle" at={K5.two} out={K5.long} />
 					<Ticker x={1340} y={880} from={0} to={100000} a={K5.long - 10} b={K5.small} size={46} anchor="middle" suffix=" generations" at={K5.long - 10} />
 				</g>
-				<Tg x={B.x + B.w / 2} y={B.y - 40} text="lost alleles: rarely remade" at={K5.long} out={K5.loses} anchor="middle" size={38} />
+				<Tg x={SB.x + SB.w / 2} y={SB.y - 40} text="lost alleles: rarely remade" at={K5.long} out={K5.loses} anchor="middle" size={38} />
 				{/* most new alleles are lost by chance */}
 				<g opacity={lineO}>
 					<DriftLines x={980} y={330} w={780} h={440} runs={RUNNEW.map(r => r.map(p => p * 5))} draw={prog(f, K5.loses, 60, x => x)} label="new allele in 25 panthers (5 runs)" axis={false} />

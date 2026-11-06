@@ -11,7 +11,8 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsTable, CardBox} from '../bio-m6-b01/parts';
 import {Brace, Tg} from '../bio-m6-b07/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, BactIns, CARD, EDGE, GREY_INK, INK, INK_SOFT, PLATES, Pl, StepCard, Strip, prog, vis} from './parts';
+import {AMBER, AMBER_INK, BactIns, CARD, EDGE, GREY_INK, INK, INK_SOFT, PLATES, Pl, StepCard, Strip, lerp, prog, smooth, vis} from './parts';
+import {CottonPest, UseTiles} from './exam';
 
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1680, cy = 840}) => {
 	const h = hold(id);
@@ -50,17 +51,18 @@ qCheck(ITEMS1({s: 0, a: 0, b: 0, c: 0, d: 0, qa: 0, qb: 0}), MARKS1.map(phrase =
 // ---------- 10a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions now', first: 'First', identify: 'identify what is being changed', bacteria: 'Bacteria turning', semen: 'Semen from one', banana: 'Banana plants', cotton: 'And cotton', state: 'Then state', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {s: KA.first, a: KA.bacteria, b: KA.semen, c: KA.banana, d: KA.cotton, qa: KA.identify, qb: KA.state};
+	const t: T1 = {s: KA.first, a: KA.first + 8, b: KA.first + 14, c: KA.first + 20, d: KA.first + 26, qa: KA.identify, qb: KA.state};
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
-				<QText q={Q1(t)} x={140} y={240} w={1640} size={32} card={false} />
-				<AnsTable x={140} y={712} cols={[{w: 110, head: ''}, {w: 880, head: 'what is being changed'}]} rows={[['A', ''], ['B', ''], ['C', ''], ['D', '']]} at={KA.identify + 20} size={28} rowH={46} />
-				<AnsBox x={1170} y={712} w={330} h={110} at={KA.state + 10} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} />
+				<QText q={Q1(t)} x={140} y={240} w={1330} size={32} card={false} />
+				<UseTiles show={KA.first + 8} lit={[KA.bacteria, KA.semen, KA.banana, KA.cotton]} />
+				<AnsTable x={140} y={732} cols={[{w: 110, head: ''}, {w: 880, head: 'what is being changed'}]} rows={[['A', ''], ['B', ''], ['C', ''], ['D', '']]} at={KA.identify + 20} size={30} rowH={46} />
+				<AnsBox x={1170} y={732} w={300} h={110} at={KA.state + 10} label="(b)" />
+				<PauseHold id="attempt" at={KA.pause} cx={1680} cy={880} />
 			</Overlay>
 		</>
 	);
@@ -105,6 +107,7 @@ qCheck(Q2({a: 0, b: 0}).blocks, [{phrase: 'caterpillar pests', at: 0}, {phrase: 
 const KC = cues(S('attempt-two'), {second: 'Second', plant: 'Plant breeders', compare: 'Compare selective', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
 	const f = useCurrentFrame();
+	const m = smooth(prog(f, KC.compare + 4, 22));
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
@@ -113,8 +116,11 @@ export const SceneAttemptTwo: React.FC = () => {
 				<CardBox x={100} y={180} w={1720} h={830} at={KC.plant - 6} />
 				<Pl p={PLATES.cotton} cx={240} cy={330} w={170} o={prog(f, KC.plant, 14)} />
 				<QText q={Q2({a: KC.plant, b: KC.compare})} x={380} y={276} w={1400} size={38} card={false} />
-				<AnsBox x={140} y={480} w={1320} h={500} at={KC.compare + 20} label="answer" />
-				<PauseHold id="attempt-two" at={KC.pause} cy={760} />
+				<g transform={`translate(${lerp(960, 1500, m)},${lerp(740, 660, m)}) scale(${lerp(0.9, 0.56, m)})`}>
+					<CottonPest plant={KC.plant} pest={KC.plant + 70} />
+				</g>
+				<AnsBox x={140} y={480} w={1080} h={500} at={KC.compare + 20} label="answer" />
+				<PauseHold id="attempt-two" at={KC.pause} cx={1680} cy={890} />
 			</Overlay>
 		</>
 	);
@@ -198,12 +204,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const NOTES = [
-	'Biotechnology: deliberately using living organisms, cells or biological processes to make a product or solve a problem, in agriculture, medicine and industry. It includes old methods (fermentation, selective breeding) and new ones.',
-	'Fermentation uses an organism\'s process: yeast turns sugar into carbon dioxide (which raises bread) and ethanol. The yeast\'s DNA is not changed.',
-	'Selective breeding and reproductive technologies (artificial insemination, artificial pollination) choose the parents. They change which alleles are passed on and how common they become, but make no new alleles.',
-	'Cloning copies existing DNA (a whole organism or one gene). Recombinant DNA technology inserts DNA, which can come from another species (bacteria making human insulin, since 1982; Bt cotton). Gene editing changes a chosen stretch of DNA.',
-	'Advantages: choosing parents suits traits controlled by many genes; copying keeps a valuable allele combination together; inserting DNA can add a new trait in one generation.',
+	'Biotechnology: using living things, cells or their processes on purpose to make a product or solve a problem.',
+	'It includes old methods (fermentation, selective breeding) as well as new ones.',
+	'Fermentation uses a process: yeast turns sugar into carbon dioxide and ethanol. DNA unchanged.',
+	'Selective breeding, artificial insemination and pollination choose the parents: no new alleles.',
+	'Cloning copies existing DNA (a whole organism or one gene).',
+	'Recombinant DNA inserts DNA, even from another species (insulin from bacteria, 1982; Bt cotton).',
+	'Choosing parents suits many-gene traits; inserting DNA adds a new trait in one generation.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Biotechnology is older than GMOs. Reproductive technologies choose the parents; they don't change genes." tag="judge a technology by what it changes, not by how modern it looks" size={29} aidTop={720} />
+	<NotesBoard notes={NOTES} aid="Biotechnology is older than GMOs. Reproductive technologies choose the parents; they don't change genes." tag="judge a technology by what it changes, not by how modern it looks" size={34} aidTop={660} />
 );
