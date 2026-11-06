@@ -12,7 +12,36 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, GREY_INK, GTag, INK, PLATES, Pl, StepStrip, Sx, prog, stripX} from './parts';
+import {AMBER, AMBER_INK, CARD, DrawPath, EDGE, Flask, GREY_INK, GTag, GreyCross, INK, INK_SOFT, PLATES, Pl, Ring, StepStrip, Sx, prog, stripX, tubeW, vis} from './parts';
+import type {PB} from './parts';
+
+/** Small coded bacteria (amber rods) appearing one by one inside a cell plate drawn at (cx, cy) with width s. */
+const Inside: React.FC<{cx: number; cy: number; s: number; at: number}> = ({cx, cy, s, at}) => {
+	const f = useCurrentFrame();
+	const pts: [number, number, number][] = [[-0.18, -0.12, 20], [0.12, -0.2, 120], [0.2, 0.08, 60], [-0.1, 0.16, 150], [-0.26, 0.04, 90], [0.04, 0.02, 30]];
+	return (
+		<g>
+			{pts.map(([dx, dy, a], i) => {
+				const o = prog(f, at + i * 5, 8);
+				const x = cx + dx * s, y = cy + dy * s;
+				return o > 0.01 ? <ellipse key={i} cx={x} cy={y} rx={s * 0.045} ry={s * 0.022} transform={`rotate(${a} ${x} ${y})`} fill={AMBER} stroke={AMBER_INK} strokeWidth={1.5} opacity={o} /> : null;
+			})}
+		</g>
+	);
+};
+/** One givens row in the right-hand panel: a plate thumbnail and a short label. */
+const GivenRow: React.FC<{p: PB; y: number; text: string; at: number; pw?: number; tube?: boolean}> = ({p, y, text, at, pw = 74, tube}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12);
+	if (o <= 0.01) return null;
+	return (
+		<g opacity={o}>
+			<Pl p={p} cx={1552} cy={y} w={tube ? tubeW(96) : pw} />
+			<Sx x={1600} y={y + 13} text={text} size={34} color={INK} hand weight={700} />
+		</g>
+	);
+};
+const PANEL = {x: 1500, y: 196, w: 304, h: 588};
 
 const STRIP = {x: 140, w: 380};
 /** The verdict bar (amber outline). */
@@ -45,7 +74,7 @@ qCheck(STEM1({s: 0, a: 0, b: 0, c: 0, d: 0, q: 0}), ['20 out of 20', '0 out of 2
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', sheep: 'Sheep on a farm', found: 'A scientist found', none: 'none of twenty', grew: 'She grew X', gave: 'gave it to five', assess: 'Assess whether', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
-	const t: T1 = {s: KA.sheep, a: KA.found, b: KA.none, c: KA.grew, d: KA.gave, q: KA.assess};
+	const t: T1 = {s: KA.first, a: KA.found, b: KA.none, c: KA.grew, d: KA.gave, q: KA.assess};
 	const h = hold('attempt');
 	return (
 		<>
@@ -53,9 +82,16 @@ export const SceneAttempt: React.FC = () => {
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={180} w={1720} h={840} at={KA.first - 6} />
-				<Pl p={PLATES.sheep} cx={1640} cy={320} w={260} o={prog(f, KA.sheep, 14)} />
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KA.first} fill="#fbf8f1" />
+				<Pl p={PLATES.sheep} cx={1652} cy={292} w={250} o={prog(f, KA.sheep, 14)} />
+				<GivenRow p={PLATES.tbField} y={430} text="sick: 20/20" at={KA.found + 8} />
+				<GivenRow p={PLATES.healthyField} y={526} text="healthy: 0/20" at={KA.none + 4} />
+				<GivenRow p={PLATES.serum} y={628} text="pure culture" at={KA.grew + 8} tube />
+				{[0, 1, 2, 3, 4].map(i => <Pl key={i} p={PLATES.sheep} cx={1540 + i * 56} cy={728} w={54} o={prog(f, KA.gave + 6 + i * 3, 10)} />)}
+				{[0, 1, 2, 3].map(i => <Ring key={i} cx={1540 + i * 56} cy={730} rx={30} ry={24} at={KA.gave + 68 + i * 4} color={AMBER} seed={i + 3} width={3} />)}
+				<Sx x={1652} y={776} text="given to 5: 4 ill" size={30} color={INK} hand weight={700} anchor="middle" at={KA.gave + 70} />
 				<QText q={qCheck(STEM1(t), [])} x={140} y={256} w={1340} size={36} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={690} w={1600} size={36} card={false} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={690} w={1340} size={36} card={false} />
 				<AnsBox x={140} y={740} w={1340} h={260} at={KA.assess + 20} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
@@ -110,7 +146,13 @@ export const SceneAttemptTwo: React.FC = () => {
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={180} w={1720} h={840} at={KC.second + 6} />
-				<Pl p={PLATES.koala} cx={1640} cy={350} w={250} o={prog(f, KC.chlamydia, 14)} />
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KC.second + 6} fill="#fbf8f1" />
+				<Pl p={PLATES.koala} cx={1652} cy={356} w={220} o={prog(f, KC.second + 6, 14)} />
+				<Sx x={1652} y={506} text="eye, urinary disease" size={30} color={INK} hand weight={700} anchor="middle" at={KC.chlamydia + 20} />
+				<Pl p={PLATES.cell} cx={1652} cy={626} w={170} o={prog(f, KC.grows, 14)} />
+				<Inside cx={1652} cy={626} s={170} at={KC.grows + 10} />
+				<Sx x={1652} y={758} text="only in living cells" size={30} color={INK} hand weight={700} anchor="middle" at={KC.grows + 20} />
+				<GTag x={1652} y={206} text="endangered (NSW)" at={KC.koalas + 10} size={30} anchor="middle" />
 				<QText q={qCheck(STEM2(t), [])} x={140} y={262} w={1300} size={38} card={false} />
 				<QText q={qCheck(DEM2(t), [])} x={140} y={520} w={1300} size={38} card={false} />
 				<AnsBox x={140} y={640} w={1340} h={360} at={KC.explain + 30} />
@@ -121,9 +163,10 @@ export const SceneAttemptTwo: React.FC = () => {
 };
 
 // ---------- 11d. Feedback two ----------
-const KD = cues(S('feedback-two'), {grows: 'grows only inside', steptwo: 'step two needs', deliberately: 'deliberately infecting', endangered: 'endangered species', saying: 'Saying the postulates', mistake: 'classic mistake', bact: 'a bacterium that needs'});
+const KD = cues(S('feedback-two'), {cant: "can't be grown", justify: 'hard to justify', grows: 'grows only inside', steptwo: 'step two needs', deliberately: 'deliberately infecting', endangered: 'endangered species', saying: 'Saying the postulates', mistake: 'classic mistake', bact: 'a bacterium that needs'});
 const ALL2: T2 = {a: -100, b: -100, c: -100, q: -100};
 export const SceneFeedbackTwo: React.FC = () => {
+	const f = useCurrentFrame();
 	const marks: QMark[] = [{phrase: 'only inside living host cells', at: KD.grows}, {phrase: 'endangered species', at: KD.endangered}];
 	const sy = 360;
 	return (
@@ -137,7 +180,26 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<Sx x={stripX(1, STRIP.x, STRIP.w)} y={sy + 130} text="reason 1: no pure culture on its own" size={40} color={INK} hand at={KD.steptwo - 20} />
 				<Sx x={stripX(1, STRIP.x, STRIP.w)} y={sy + 190} text="reason 2: ethics, endangered host" size={40} color={INK} hand at={KD.endangered} />
 				<MistakeChip x={140} y={660} text="Chlamydia is a virus" at={KD.saying} cross={KD.mistake} size={32} />
-				<GTag x={560} y={666} text="a bacterium that needs host cells" at={KD.bact} size={28} />
+				<GTag x={560} y={662} text="a bacterium that needs host cells" at={KD.bact} size={32} />
+				{/* step 2: no pure culture, because it lives only inside living cells */}
+				<g opacity={prog(f, KD.grows - 10, 14)}>
+					<CardBox x={140} y={750} w={780} h={290} at={-100} fill="#fbf8f1" />
+					<Pl p={PLATES.cell} cx={310} cy={872} w={210} />
+					<Inside cx={310} cy={872} s={210} at={KD.grows} />
+					<Pl p={PLATES.agar} cx={700} cy={872} w={190} o={prog(f, KD.cant, 12)} />
+					<GreyCross x={700} y={872} at={KD.cant + 10} s={56} />
+					<Sx x={530} y={1014} text="step 2: no pure culture" size={36} color={INK} hand weight={700} anchor="middle" at={KD.steptwo - 20} />
+				</g>
+				{/* step 3: infecting healthy koalas, an endangered species */}
+				<g opacity={prog(f, KD.deliberately - 10, 14)}>
+					<CardBox x={1000} y={750} w={780} h={290} at={-100} fill="#fbf8f1" />
+					<Pl p={PLATES.serum} cx={1110} cy={866} w={tubeW(170)} />
+					{f >= KD.deliberately + 4 ? <DrawPath d="M1150,824 Q1260,770 1380,830" at={KD.deliberately + 4} dur={14} color={INK_SOFT} width={4} dash="10 8" /> : null}
+					<Pl p={PLATES.koala} cx={1500} cy={872} w={200} />
+					<GreyCross x={1265} y={806} at={KD.justify} s={28} />
+					<GTag x={1612} y={800} text="endangered" at={KD.endangered} size={30} />
+					<Sx x={1390} y={1014} text="step 3: infect healthy koalas?" size={36} color={INK} hand weight={700} anchor="middle" at={KD.deliberately + 10} />
+				</g>
 			</Overlay>
 		</>
 	);
@@ -145,6 +207,12 @@ export const SceneFeedbackTwo: React.FC = () => {
 
 // ---------- 12. Decision rule and handoff ----------
 const KE = cues(S('decision-rule'), {so: 'So for a germ', match: 'match each scientist', flasks: 'flasks show', four: 'four steps link', when: 'when a step', next: 'Next, how'});
+const KOCH_ROW = [
+	{p: PLATES.tbField, w: 120, t: 'find it'},
+	{p: PLATES.serum, w: tubeW(150), t: 'grow it'},
+	{p: PLATES.gpSick, w: 170, t: 'give it'},
+	{p: PLATES.tbField, w: 120, t: 'find again'},
+];
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
 	const steps = [
@@ -152,13 +220,15 @@ export const SceneDecision: React.FC = () => {
 		{at: KE.four, text: 'Koch: four steps link one microbe to one disease'},
 		{at: KE.when, text: "a step can't be done? name it and say why"},
 	];
+	const litP = vis(f, KE.flasks, KE.four, 10);
+	const litK = prog(f, KE.four, 10);
 	return (
 		<>
 			<Heading text="Match each scientist to his question" at={KE.so} size={56} />
 			<Overlay>
 				{steps.map((s, i) => {
 					const o = prog(f, s.at, 14);
-					const y = 250 + i * 150;
+					const y = 220 + i * 130;
 					const dim = 1 - 0.35 * prog(f, steps[i + 1]?.at ?? KE.next, 12);
 					return o > 0.01 ? (
 						<g key={i} opacity={o * dim} transform={`translate(0,${(1 - o) * 18})`}>
@@ -168,10 +238,29 @@ export const SceneDecision: React.FC = () => {
 						</g>
 					) : null;
 				})}
-				<NextChip x={820} y={820} w={1000} text="Next: how a pathogen moves between hosts" at={KE.next}>
-					<Pl p={PLATES.mosquito} cx={886} cy={862} w={96} />
+				{/* the evidence each scientist used, lit with his row */}
+				<g opacity={prog(f, KE.match, 14) * (0.5 + 0.5 * litP)}>
+					<rect x={140} y={620} width={700} height={300} rx={22} fill="#fbf8f1" stroke={litP > 0.5 ? AMBER : EDGE} strokeWidth={litP > 0.5 ? 4 : 2.5} />
+					<Sx x={170} y={676} text="Pasteur" size={42} color={AMBER_INK} hand weight={700} />
+					<Flask p={PLATES.swan} bx={400} by={828} k={0.14} />
+					<Flask p={PLATES.brokenCloudy} bx={650} by={828} k={0.14} />
+					<Sx x={430} y={904} text="clear" size={32} color={INK} hand anchor="middle" />
+					<Sx x={660} y={904} text="cloudy" size={32} color={INK} hand anchor="middle" />
+				</g>
+				<g opacity={prog(f, KE.match + 8, 14) * (0.5 + 0.5 * litK)}>
+					<rect x={900} y={620} width={880} height={300} rx={22} fill="#fbf8f1" stroke={litK > 0.5 ? AMBER : EDGE} strokeWidth={litK > 0.5 ? 4 : 2.5} />
+					<Sx x={930} y={676} text="Koch" size={42} color={AMBER_INK} hand weight={700} />
+					{KOCH_ROW.map((it, i) => (
+						<g key={i}>
+							<Pl p={it.p} cx={1040 + i * 200} cy={786} w={it.w} />
+							{i < 3 ? <Sx x={1140 + i * 200} y={798} text=">" size={34} color={INK_SOFT} weight={700} anchor="middle" /> : null}
+							<Sx x={1040 + i * 200} y={900} text={it.t} size={32} color={INK} hand anchor="middle" />
+						</g>
+					))}
+				</g>
+				<NextChip x={820} y={950} w={1000} text="Next: how a pathogen moves between hosts" at={KE.next}>
+					<Pl p={PLATES.mosquito} cx={886} cy={992} w={96} />
 				</NextChip>
-				{void KE.match}
 			</Overlay>
 		</>
 	);
@@ -179,12 +268,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'Germ theory: infectious diseases are caused by pathogens, and microbes come from other microbes. It replaced spontaneous generation (life from non-living matter) and miasma (disease from bad air).',
-	"Pasteur's swan-neck flasks (around 1860): boiled broth, open S-shaped neck; air reached the broth, but dust and microbes settled in the bend, so the broth stayed clear. Breaking the neck let particles in and the broth went cloudy. IV: whether particles could reach the broth; DV: growth (cloudiness); controlled: broth, boiling, air.",
-	"Koch's postulates (from his 1882 tuberculosis work): 1. the microbe is found in every case of the disease (not in healthy hosts); 2. it is grown in pure culture; 3. the pure culture causes the disease in a healthy host; 4. the same microbe is recovered from that host.",
-	'Step 1 shows association only; step 3 shows cause; step 4 confirms it is the same microbe.',
-	'Limits: viruses need living cells; some bacteria cannot be cultured (leprosy); healthy carriers; deliberately infecting healthy people is rarely ethical. DNA evidence is often used instead.',
+	'Germ theory: pathogens cause infectious disease; microbes come from microbes.',
+	'It replaced spontaneous generation (life from non-living matter) and miasma (bad air).',
+	'Pasteur (about 1860): boiled broth in a swan-neck flask stayed clear. Air got in; dust settled in the bend.',
+	'Neck broken: particles fell in and the same broth went cloudy.',
+	'IV: can particles reach the broth? DV: cloudiness. Controlled: broth, boiling, air.',
+	"Koch's postulates (1882, TB): find it in every case, grow it pure, give it to a healthy host, find it again.",
+	'Step 1 shows association; step 3 shows cause; step 4 confirms the same microbe.',
+	'Limits: viruses need living cells, some bacteria will not culture (leprosy), healthy carriers, ethics. DNA evidence helps.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Find it, grow it, give it, find it again." tag="Pasteur: where microbes come from. Koch: which microbe causes which disease." size={30} aidTop={830} />
+	<NotesBoard notes={NOTES} aid="Find it, grow it, give it, find it again." tag="Pasteur: where microbes come from. Koch: which microbe causes which disease." size={34} aidTop={830} />
 );

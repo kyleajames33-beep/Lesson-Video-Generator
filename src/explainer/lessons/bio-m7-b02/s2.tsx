@@ -50,17 +50,17 @@ export const SceneShowed: React.FC = () => {
 				<Flask p={PLATES.swan} bx={A} by={by} k={k} />
 				<Flask p={PLATES.straightCloudy} bx={B} by={by} k={k} />
 				<Flask p={PLATES.brokenCloudy} bx={C} by={by} k={k} />
-				<GTag x={A + 100} y={720} text="intact neck" at={-100} size={22} anchor="middle" />
-				<GTag x={B} y={720} text="straight neck" at={-100} size={22} anchor="middle" />
-				<GTag x={C} y={720} text="neck broken" at={-100} size={22} anchor="middle" />
+				<GTag x={A + 100} y={720} text="intact neck" at={-100} size={34} anchor="middle" />
+				<GTag x={B} y={720} text="straight neck" at={-100} size={34} anchor="middle" />
+				<GTag x={C} y={720} text="neck broken" at={-100} size={34} anchor="middle" />
 				<g opacity={vis(f, K6.iv, K6.dv, 10)}>{open.map(([x, y], i) => <Ring key={i} cx={x} cy={y} rx={34} ry={34} at={K6.iv + 6 + i * 6} color={AMBER} seed={i + 1} />)}</g>
 				<g opacity={vis(f, K6.dv, K6.kept, 10)}>{[A, B, C].map((x, i) => <Ring key={i} cx={x} cy={by + 20} rx={96} ry={70} at={K6.dv + 6 + i * 6} color={AMBER} seed={i + 4} />)}</g>
 				<Step x={130} y={815} text="IV: can particles reach the broth?" at={K6.iv} next={K6.dv} />
 				<Step x={130} y={875} text="DV: growth (cloudiness)" at={K6.dv} next={K6.kept} />
 				<Step x={130} y={935} text="controlled: broth, boiling, air" at={K6.kept} next={K6.microbes} />
-				<GTag x={980} y={800} text="boil" at={K6.boiling} size={22} />
-				<GTag x={1100} y={800} text="sterilise" at={K6.boiling + 14} size={22} />
-				<GTag x={1290} y={800} text="cover" at={K6.boiling + 30} size={22} />
+				<GTag x={960} y={796} text="boil" at={K6.boiling} size={32} />
+				<GTag x={1076} y={796} text="sterilise" at={K6.boiling + 14} size={32} />
+				<GTag x={1280} y={796} text="cover" at={K6.boiling + 30} size={32} />
 			</g>
 			<MistakeChip x={960} y={900} text="Pasteur proved germs cause disease?" at={K6.link} cross={K6.link + 30} size={28} />
 			{void INK}{void GREYT}
@@ -79,11 +79,11 @@ export const SceneFindGrow: React.FC = () => {
 			<PasteurCard />
 			<KochBay />
 			<KochBays t={t} lit={[vis(f, K7.looked, K7.second, 10), prog(f, K7.second, 10), 0, 0]} />
-			<GTag x={400} y={740} text="Koch, 1882: tuberculosis" at={K7.y1882 + 4} out={K7.first} size={28} />
-			{Array.from({length: 7}, (_, i) => <circle key={i} cx={830 + i * 38} cy={762} r={13} fill={i === 3 ? AMBER : '#e4e1da'} stroke={i === 3 ? AMBER_INK : GREYT} strokeWidth={2} opacity={vis(f, K7.seven + i * 2, K7.first, 10)} />)}
-			<GTag x={1110} y={740} text="Koch: about 1 in 7 of all deaths" at={K7.seven + 10} out={K7.first} size={28} />
-			<GTag x={392} y={712} text="TB cases" at={K7.looked + 30} size={22} />
-			<GTag x={540} y={712} text="healthy tissue: none" at={K7.healthy + 6} size={22} />
+			<GTag x={400} y={740} text="Koch, 1882: tuberculosis" at={K7.y1882 + 4} out={K7.first} size={36} />
+			{Array.from({length: 7}, (_, i) => <circle key={i} cx={910 + i * 40} cy={768} r={13} fill={i === 3 ? AMBER : '#e4e1da'} stroke={i === 3 ? AMBER_INK : GREYT} strokeWidth={2} opacity={vis(f, K7.seven + i * 2, K7.first, 10)} />)}
+			<GTag x={1196} y={740} text="Koch: about 1 in 7 of all deaths" at={K7.seven + 10} out={K7.first} size={36} />
+			<GTag x={392} y={678} text="TB cases" at={K7.looked + 30} size={32} />
+			<GTag x={718} y={738} text="healthy tissue: none" at={K7.healthy + 6} size={32} anchor="end" />
 			<Tg x={400} y={850} text="same rod in every case" at={K7.same + 10} out={K7.pure} size={44} />
 			<Tg x={400} y={850} text="pure culture: only one kind of microbe" at={K7.pure + 6} size={44} />
 			<ClockTag x={820} y={940} text="weeks" at={K7.weeks} />
@@ -109,14 +109,14 @@ export const SceneGiveAgain: React.FC = () => {
 			<KochBay />
 			<KochBays t={t} s={s} ringO={1 - 0.6 * sh} showCases={1 - sh}
 				lit={[vis(f, K8.only, K8.giving, 10), 0, Math.max(vis(f, K8.third, K8.fourth, 10), vis(f, K8.causes, K8.rules, 10)), Math.max(vis(f, K8.fourth, K8.why, 10), prog(f, K8.rules, 10))]} />
-			<GTag x={1110} y={740} text="healthy host: now has TB" at={K8.developed + 10} out={K8.fourth} size={28} />
-			<GTag x={1470} y={740} text="same bacterium" at={K8.same + 16} out={K8.why} size={28} />
+			<GTag x={1110} y={740} text="healthy host: now has TB" at={K8.developed + 10} out={K8.fourth} size={36} />
+			<GTag x={1470} y={740} text="same bacterium" at={K8.same + 16} out={K8.why} size={38} />
 			<Step x={bayCx(0, SHRINK)} y={ly} text="association only" at={K8.only} next={K8.giving} anchor="middle" size={40} />
-			<Sx x={bayCx(0, SHRINK)} y={ly + 44} text="(correlation)" size={26} color={GREY_INK} weight={600} anchor="middle" at={K8.only + 20} />
+			<Sx x={bayCx(0, SHRINK)} y={ly + 44} text="(correlation)" size={34} color={GREY_INK} weight={600} anchor="middle" at={K8.only + 20} />
 			<g opacity={vis(f, K8.might, K8.giving, 12)}>
 				<HostCircle x={hc.x} y={hc.y} r={60} ill={prog(f, K8.might + 4, 14)} />
 				{f >= K8.after + 6 ? <Pl p={PLATES.tb} cx={lerp(hc.x + 200, hc.x, inT)} cy={lerp(hc.y - 80, hc.y, inT)} w={56} /> : null}
-				<GTag x={hc.x + 80} y={hc.y + 40} text="came in later?" at={K8.after + 14} size={26} />
+				<GTag x={hc.x + 80} y={hc.y + 40} text="came in later?" at={K8.after + 14} size={36} />
 			</g>
 			<Step x={bayCx(2, SHRINK)} y={ly} text="causation" at={K8.causes} next={K8.rules} anchor="middle" size={44} />
 			<Step x={bayCx(3, SHRINK)} y={ly} text="confirmation" at={K8.rules} anchor="middle" size={40} />
@@ -128,8 +128,9 @@ export const SceneGiveAgain: React.FC = () => {
 // ---------- 9. Where the postulates struggle ----------
 const K9 = cues(S('limits'), {postulates: 'postulates', viruses: 'Viruses', leprosy: 'leprosy', carry: 'carry a pathogen', breaks: 'breaks the first', deliberately: 'deliberately infecting', today: 'Today, scientists', dna: 'DNA instead'});
 const TOP9 = 236;
+const S9 = 0.86;
 /** A grey gap over bay i of the shrunk strip (StepCheck). */
-const Gap: React.FC<{i: number; at: number; s?: number; top?: number}> = ({i, at, s = SHRINK, top = TOP9}) => {
+const Gap: React.FC<{i: number; at: number; s: number; top?: number}> = ({i, at, s, top = TOP9}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 12);
 	if (o <= 0.01) return null;
@@ -143,47 +144,49 @@ const Gap: React.FC<{i: number; at: number; s?: number; top?: number}> = ({i, at
 };
 export const SceneLimits: React.FC = () => {
 	const f = useCurrentFrame();
-	const fx = bayCx(0, SHRINK), gx = bayCx(1, SHRINK), vx = bayCx(2, SHRINK);
-	const y0 = 700;
+	// the bench grows from the scene 8 size to fill the bay, so the step labels read at full size
+	const s9 = lerp(SHRINK, S9, smooth(prog(f, 0, 24)));
+	const fx = bayCx(0, s9), gx = bayCx(1, s9), vx = bayCx(2, s9);
+	const y0 = 790;
 	return (
 		<Overlay>
 			<Banner lit={[0, 1]} />
 			<PasteurCard />
 			<KochBay />
-			<Sx x={bayCx(0, SHRINK) - (STEP_W * SHRINK) / 2} y={TOP9 - 10} text="Koch's postulates" size={32} color={INK} hand at={K9.postulates} />
-			<KochBays t={KOCH_ALL} s={SHRINK} top={TOP9} dim={0.4} showCases={0} />
+			<Sx x={bayCx(0, s9) - (STEP_W * s9) / 2} y={TOP9 - 10} text="Koch's postulates" size={46} color={INK} hand at={K9.postulates} />
+			<KochBays t={KOCH_ALL} s={s9} top={TOP9} dim={0.4} showCases={0} />
 			{/* grow it: viruses, then the leprosy bacterium */}
-			<Gap i={1} at={K9.viruses + 6} />
+			<Gap i={1} at={K9.viruses + 6} s={s9} />
 			<g opacity={vis(f, K9.viruses, K9.leprosy, 12)}>
 				<Pl p={PLATES.cell} cx={gx} cy={y0} w={170} />
 				<Pl p={PLATES.virus} cx={gx + 50} cy={y0 - 40} w={56} />
 			</g>
-			<GTag x={gx} y={y0 + 110} text="viruses: need living cells" at={K9.viruses + 10} out={K9.leprosy} size={26} anchor="middle" />
+			<GTag x={gx} y={y0 + 110} text="viruses: need living cells" at={K9.viruses + 10} out={K9.leprosy} size={36} anchor="middle" />
 			<Pl p={PLATES.agar} cx={gx} cy={y0} w={160} o={vis(f, K9.leprosy, K9.today, 12)} />
-			<GTag x={gx} y={y0 + 110} text="leprosy bacterium: no culture on its own" at={K9.leprosy + 6} out={K9.carry} size={26} anchor="middle" />
+			<GTag x={gx} y={y0 + 110} text="leprosy bacterium: no culture on its own" at={K9.leprosy + 6} out={K9.carry} size={36} anchor="middle" />
 			{/* find it: healthy carriers */}
-			<Gap i={0} at={K9.breaks} />
+			<Gap i={0} at={K9.breaks} s={s9} />
 			<g opacity={vis(f, K9.carry, K9.today, 12)}>
 				<HostCircle x={fx} y={y0} r={62} />
 				<Pl p={PLATES.tb} cx={fx} cy={y0} w={60} />
 			</g>
-			<GTag x={fx} y={y0 + 110} text="healthy carriers" at={K9.carry + 6} out={K9.deliberately} size={26} anchor="middle" />
+			<GTag x={fx} y={y0 + 110} text="healthy carriers" at={K9.carry + 6} out={K9.deliberately} size={36} anchor="middle" />
 			{/* give it: ethics */}
-			<Gap i={2} at={K9.deliberately + 6} />
+			<Gap i={2} at={K9.deliberately + 6} s={s9} />
 			<g opacity={vis(f, K9.deliberately, K9.today, 12)}>
 				<HostCircle x={vx} y={y0} r={62} label="healthy person" />
 				<GreyCross x={vx} y={y0} at={K9.deliberately + 16} s={40} />
 			</g>
-			<GTag x={vx} y={y0 + 140} text="ethics: human-only diseases" at={K9.deliberately + 10} out={K9.today} size={26} anchor="middle" />
+			<GTag x={vx} y={y0 + 140} text="ethics: human-only diseases" at={K9.deliberately + 10} out={K9.today} size={36} anchor="middle" />
 			{/* DNA evidence */}
 			<g opacity={prog(f, K9.today, 12)}>
-				<HostCircle x={fx - 20} y={y0 + 10} r={56} ill={1} />
-				<Pl p={PLATES.tb} cx={fx - 20} cy={y0 + 10} w={52} />
-				<DnaStrip x={fx + 60} y={y0 - 5} w={170} draw={prog(f, K9.dna - 10, 20)} />
-				<DnaStrip x={fx + 260} y={y0 - 5} w={170} draw={prog(f, K9.dna + 4, 20)} />
-				{f >= K9.dna + 26 ? <DrawPath d={`M${fx + 450},${y0 + 10} l14,16 l28,-32`} at={K9.dna + 26} dur={12} color={AMBER_INK} width={7} /> : null}
+				<HostCircle x={fx - 20} y={y0 + 10} r={72} ill={1} />
+				<Pl p={PLATES.tb} cx={fx - 20} cy={y0 + 10} w={70} />
+				<DnaStrip x={fx + 90} y={y0 - 5} w={250} draw={prog(f, K9.dna - 10, 20)} />
+				<DnaStrip x={fx + 380} y={y0 - 5} w={250} draw={prog(f, K9.dna + 4, 20)} />
+				{f >= K9.dna + 26 ? <DrawPath d={`M${fx + 660},${y0 + 10} l14,16 l28,-32`} at={K9.dna + 26} dur={12} color={AMBER_INK} width={7} /> : null}
 			</g>
-			<GTag x={fx + 60} y={y0 + 60} text="DNA evidence instead of culture" at={K9.dna + 10} size={28} />
+			<GTag x={fx + 90} y={y0 + 70} text="DNA evidence instead of culture" at={K9.dna + 10} size={40} />
 			{void clamp01}{void fitW}
 		</Overlay>
 	);

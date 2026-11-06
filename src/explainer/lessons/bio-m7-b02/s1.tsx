@@ -111,15 +111,15 @@ export const SceneSetup: React.FC = () => {
 			<PasteurBay />
 			<KochCard />
 			<Flask p={PLATES.swan} bx={bx} by={by} k={k} o={prog(f, K3.filled, 14)} />
-			<GTag x={bx} y={900} text="nutrient broth" at={K3.filled + 10} out={K3.bent} size={28} anchor="middle" />
+			<GTag x={bx} y={900} text="nutrient broth" at={K3.filled + 10} out={K3.bent} size={38} anchor="middle" />
 			<NeckTrace bx={bx} by={by} k={k} at={K3.bent} out={K3.boiled + 20} />
-			<GTag x={990} y={640} text="swan neck: open at the end" at={K3.bent + 20} out={K3.boiled} size={28} />
+			<GTag x={990} y={640} text="swan neck: open at the end" at={K3.bent + 20} out={K3.boiled} size={38} />
 			{bIn > 0.01 ? <Pl p={PLATES.bunsen} cx={bx} cy={lerp(1320, by + 85 + bh / 2 - 6, bIn)} w={bw} /> : null}
 			<SteamWisps x={tx + 10} y={ty - 10} at={K3.boiled + 14} out={K3.boiled + 100} />
-			<GTag x={990} y={640} text="boiled: microbes killed" at={K3.kill} out={K3.air} size={28} />
+			<GTag x={990} y={640} text="boiled: microbes killed" at={K3.kill} out={K3.air} size={38} />
 			<AirFlow bx={bx} by={by} k={k} at={K3.air} o={1 - 0.5 * prog(f, K3.heavier, 14)} />
 			<HChip x={1000} y={400} text="air in," at={K3.air + 6} size={40} />
-			<GTag x={990} y={640} text="dust and microbes: heavier than air" at={K3.heavier} out={K3.settled + 30} size={28} />
+			<GTag x={990} y={640} text="dust and microbes: heavier than air" at={K3.heavier} out={K3.settled + 30} size={38} />
 			<DustPath bx={bx} by={by} k={k} at={K3.heavier + 6} />
 			<Ring cx={lx} cy={ly + 6} rx={62} ry={46} at={K3.settled + 22} color={AMBER} />
 			<HChip x={1160} y={400} text="microbes trapped" at={K3.settled + 10} size={40} />
@@ -168,7 +168,7 @@ export const SceneClearBroth: React.FC = () => {
 			<SteamWisps x={sx} y={sy - 10} at={K4.boiledS + 4} out={K4.boiledS + 46} s={0.8} />
 			<DustFall x={sx} y0={430} y1={surfY(SB.by, SB.k)} at={K4.falling - 10} />
 			<GrowthCounter x={1350} y={640} w={190} h={120} p={prog(f, K4.cloudy, 40)} o={prog(f, K4.boiledS + 10, 12)} />
-			<GTag x={SB.bx} y={905} text="open to dust: cloudy in days" at={K4.cloudy + 8} size={28} anchor="middle" />
+			<GTag x={SB.bx} y={905} text="open to dust: cloudy in days" at={K4.cloudy + 8} size={38} anchor="middle" />
 			{void AMBER}{void AMBER_INK}
 		</Overlay>
 	);
@@ -199,12 +199,12 @@ export const SceneBreak: React.FC = () => {
 			<Flask p={PLATES.brokenCloudy} bx={bx} by={by} k={k} o={cloud} />
 			{flash > 0.01 ? <path d={`M${stx - 34},${sty - 4} l12,-10 l10,12 l12,-12 l10,12 l12,-10 l10,10`} fill="none" stroke={AMBER} strokeWidth={5} opacity={flash} /> : null}
 			<DustFall x={stx} y0={250} y1={surfY(by, k)} at={K5.dust} out={K5.within + 50} />
-			<GTag x={stx + 50} y={sty - 30} text="neck broken" at={K5.broke + 8} out={K5.within} size={28} />
-			<GTag x={stx + 50} y={sty - 30} text="same broth: cloudy" at={K5.within + 10} out={K5.samesame} size={28} />
+			<GTag x={stx + 50} y={sty - 30} text="neck broken" at={K5.broke + 8} out={K5.within} size={38} />
+			<GTag x={stx + 50} y={sty - 30} text="same broth: cloudy" at={K5.within + 10} out={K5.samesame} size={38} />
 			<GrowthCounter x={100} y={905} w={200} h={110} p={prog(f, K5.within, 50)} />
 			<Flask p={PLATES.swan} bx={IB.bx} by={IB.by} k={IB.k} o={prog(f, K5.samesame, 14)} />
-			<GTag x={735} y={890} text="same broth" at={K5.samesame + 2} size={28} anchor="middle" />
-			<GTag x={735} y={940} text="same air" at={K5.samesame + 22} size={28} anchor="middle" />
+			<GTag x={735} y={858} text="same broth" at={K5.samesame + 2} size={38} anchor="middle" />
+			<GTag x={735} y={922} text="same air" at={K5.samesame + 22} size={38} anchor="middle" />
 			{f >= K5.only ? <DrawPath d={`M${stx},${sty - 20} L${stx},${410} L${itx},${410} L${itx},${ity - 24}`} at={K5.only} dur={22} color={AMBER} width={5} /> : null}
 			<Tg x={720} y={392} text="can particles reach the broth?" at={K5.only + 14} size={40} anchor="middle" />
 			<Tg x={820} y={1030} text="Microbes come from microbes." at={K5.fromair} size={58} anchor="middle" />

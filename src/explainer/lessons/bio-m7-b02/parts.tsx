@@ -152,7 +152,7 @@ export const GrowthCounter: React.FC<{x: number; y: number; w?: number; h?: numb
 	return (
 		<g opacity={o}>
 			<rect x={x} y={y} width={w} height={h} rx={14} fill={CARD} stroke={GREYT} strokeWidth={2.2} />
-			<Sx x={x + 12} y={y + 22} text={label} size={18} color={GREY_INK} weight={600} />
+			<Sx x={x + 12} y={y + 22} text={label} size={26} color={GREY_INK} weight={600} />
 			{pts.slice(0, Math.min(max, n)).map(([px, py, a], i) => <ellipse key={i} cx={px} cy={py} rx={7} ry={3.5} transform={`rotate(${a} ${px} ${py})`} fill="#c9a98a" stroke="#8a6a4a" strokeWidth={1.2} />)}
 		</g>
 	);
@@ -167,7 +167,7 @@ export const ClockTag: React.FC<{x: number; y: number; text: string; at: number;
 		<g opacity={o}>
 			<circle cx={x} cy={y} r={22} fill={CARD} stroke={GREYT} strokeWidth={3} />
 			<line x1={x} y1={y} x2={x + Math.cos(a) * 15} y2={y + Math.sin(a) * 15} stroke={GREY_INK} strokeWidth={3} strokeLinecap="round" />
-			<Sx x={x + 34} y={y + 10} text={text} size={28} color={GREY_INK} weight={600} />
+			<Sx x={x + 34} y={y + 12} text={text} size={36} color={GREY_INK} weight={600} />
 		</g>
 	);
 };
@@ -229,11 +229,11 @@ export const BAY_Y = 205;
 export const KochCard: React.FC<{o?: number}> = ({o = 1}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
 		<rect x={1590} y={BAY_Y} width={250} height={360} rx={20} fill="#f3f1ec" stroke={EDGE} strokeWidth={2.5} />
-		<Sx x={1715} y={BAY_Y + 48} text="Koch" size={34} color={GREY_INK} hand anchor="middle" />
+		<Sx x={1715} y={BAY_Y + 48} text="Koch" size={40} color={GREY_INK} hand anchor="middle" />
 		{['find it', 'grow it', 'give it', 'find it again'].map((t, i) => (
 			<g key={i}>
 				<rect x={1612} y={BAY_Y + 72 + i * 68} width={206} height={52} rx={12} fill={CARD} stroke={EDGE} strokeWidth={2} />
-				<Sx x={1715} y={BAY_Y + 106 + i * 68} text={t} size={26} color={GREY_INK} hand anchor="middle" />
+				<Sx x={1715} y={BAY_Y + 108 + i * 68} text={t} size={32} color={GREY_INK} hand anchor="middle" />
 			</g>
 		))}
 	</g>
@@ -242,7 +242,7 @@ export const KochCard: React.FC<{o?: number}> = ({o = 1}) => (o <= 0.01 ? null :
 export const PasteurCard: React.FC<{o?: number}> = ({o = 1}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
 		<rect x={80} y={BAY_Y} width={250} height={360} rx={20} fill="#f3f1ec" stroke={EDGE} strokeWidth={2.5} />
-		<Sx x={205} y={BAY_Y + 48} text="Pasteur" size={34} color={GREY_INK} hand anchor="middle" />
+		<Sx x={205} y={BAY_Y + 48} text="Pasteur" size={40} color={GREY_INK} hand anchor="middle" />
 		<Flask p={PLATES.brokenCloudy} bx={180} by={BAY_Y + 260} k={0.14} dim={0.5} />
 		<Flask p={PLATES.swan} bx={250} by={BAY_Y + 260} k={0.08} dim={0.5} />
 	</g>
@@ -281,7 +281,7 @@ export const KochBays: React.FC<{t: KochT; s?: number; cx?: number; top?: number
 				return v > 0.01 ? (
 					<g key={i} opacity={v * (1 - 0.35 * d * (1 - l))}>
 						<rect x={STEP_X(i)} y={BAY_Y} width={STEP_W} height={495} rx={20} fill={CARD} stroke={l > 0.5 ? AMBER : EDGE} strokeWidth={l > 0.5 ? 4 : 2.5} />
-						<Sx x={STEP_X(i) + STEP_W / 2} y={BAY_Y + 50} text={lab} size={40} color={l > 0.5 ? AMBER_INK : GREY_INK} hand weight={700} anchor="middle" />
+						<Sx x={STEP_X(i) + STEP_W / 2} y={BAY_Y + 50} text={lab} size={Math.min(40 / s, 54)} color={l > 0.5 ? AMBER_INK : GREY_INK} hand weight={700} anchor="middle" />
 					</g>
 				) : null;
 			})}

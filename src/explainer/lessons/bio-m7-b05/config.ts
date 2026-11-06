@@ -2,6 +2,7 @@ import lesson from '../../../../docs/production/claude-pm/lessons/m7b05/measured
 import type {ExplainerConfig} from '../../types';
 import {SCENES} from './scenes';
 import {ASSETS_M7B05} from './assets';
+import {ASSETS_M7B05_FIX} from './plates2';
 
 const l = lesson as unknown as ExplainerConfig['lesson'];
 const missing = l.scenes.filter(s => !SCENES[s.id]).map(s => s.id);
@@ -13,5 +14,5 @@ export const config_m7b05: ExplainerConfig = {
 	subjectLabel: 'BIOLOGY',
 	topicLabel: 'HOW A PLANT DEFENDS ITSELF',
 	accent: undefined,
-	assets: ASSETS_M7B05,
+	assets: [...ASSETS_M7B05, ...ASSETS_M7B05_FIX],
 };

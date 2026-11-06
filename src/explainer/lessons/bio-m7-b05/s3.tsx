@@ -12,7 +12,26 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {WText} from '../bio-m6-p01/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, CTag, CardBox, DrawPath, EDGE, GREY_INK, GTag, INK, INK_SOFT, PLATES, PlateB, Sx, TEAL, prog, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, CTag, CardBox, ClockMark, DrawPath, EDGE, GREY_INK, GTag, INK, INK_SOFT, PLATES, Pl, PlateB, Sx, TEAL, TERRA, fitW, prog, smooth, tw, vis} from './parts';
+import {PLATES2} from './plates2';
+
+/** The givens panel on the right of an exam card (the stem column ends at x 1390). */
+const PANEL = {x: 1420, y: 186, w: 380, h: 600, cx: 1610};
+/** A root drawn as a bar 300 px long (50 mm), its dead length (mm) darkening from the inoculated end. */
+const RootDead: React.FC<{y: number; label: string; mm: number; at: number}> = ({y, label, mm, at}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12);
+	if (o <= 0.01) return null;
+	const x0 = PANEL.x + 40, L = 300, d = (L * mm) / 50 * smooth(prog(f, at + 14, 30));
+	return (
+		<g opacity={o}>
+			<Sx x={x0} y={y - 24} text={label} size={30} color={INK} hand weight={700} />
+			<rect x={x0} y={y} width={L} height={26} rx={13} fill="#e8d6b4" stroke="#a88b5c" strokeWidth={2.5} />
+			{d > 1 ? <rect x={x0} y={y} width={Math.max(26, d)} height={26} rx={13} fill="#6e4a2e" /> : null}
+			<Sx x={mm > 30 ? x0 + (L * mm) / 50 : x0 + (L * mm) / 50 + 12} y={y + 58} text={`${mm} mm dead`} size={30} color={INK} hand weight={700} anchor={mm > 30 ? 'end' : 'start'} at={at + 40} />
+		</g>
+	);
+};
 
 // ---------- item 1: species X and Y ----------
 type T1 = {s: number; x: number; y: number; d: number};
@@ -42,18 +61,25 @@ const Table1: React.FC<{y: number; t: T1; marksX?: QMark[]; marksY?: QMark[]; s?
 // ---------- 12a. Attempt one ----------
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', roots: 'Roots of two', x: 'In species X', y: 'In species Y', identify: 'Identify the more', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {s: KA.roots, x: KA.x, y: KA.y, d: KA.identify};
+	const t: T1 = {s: KA.first, x: KA.x, y: KA.y, d: KA.identify};
 	const h = hold('attempt');
+	const f = useCurrentFrame();
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<Table1 y={330} t={t} split />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={660} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={770} w={1340} h={230} at={KA.identify + 30} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1240} size={36} card={false} />
+				<Table1 y={340} t={t} split w={1260} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={672} w={1240} size={36} card={false} />
+				<AnsBox x={140} y={780} w={1240} h={224} at={KA.identify + 30} />
+				{/* givens drawn as read: the inoculated roots, then each species' callose time and dead length */}
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KA.first} fill="#fbf8f1" />
+				<Pl p={PLATES.rootTip} cx={PANEL.cx} cy={300} w={fitW(PLATES.rootTip, 220, 190)} o={prog(f, KA.roots + 20, 14)} />
+				<Sx x={PANEL.cx} y={434} text="inoculated roots" size={30} color={INK} hand weight={700} anchor="middle" at={KA.roots + 30} />
+				<RootDead y={532} label="X: callose by 6 h" mm={8} at={KA.x + 10} />
+				<RootDead y={680} label="Y: callose at 48 h" mm={45} at={KA.y + 10} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -112,7 +138,7 @@ const MARKS2 = ['can feed only on living cells', 'Within hours of infection', 's
 qCheck(STEM2({a: 0, b: 0, c: 0, claim: 0, d: 0}), MARKS2.map(phrase => ({phrase, at: 0})));
 
 // ---------- 12c. Attempt two ----------
-const KC = cues(S('attempt-two'), {second: 'Second', leaf: 'A leaf is infected', within: 'Within hours', over: 'Over the next', student: 'A student says', evaluate: 'Evaluate the', pause: 'Pause here to answer'});
+const KC = cues(S('attempt-two'), {die: 'site die', second: 'Second', leaf: 'A leaf is infected', within: 'Within hours', over: 'Over the next', student: 'A student says', evaluate: 'Evaluate the', pause: 'Pause here to answer'});
 const ClaimBox: React.FC<{x: number; y: number; w: number; at: number; s?: number}> = ({x, y, w, at, s = 1}) => {
 	const f = useCurrentFrame();
 	return (
@@ -128,16 +154,28 @@ const ClaimBox: React.FC<{x: number; y: number; w: number; at: number; s?: numbe
 export const SceneAttemptTwo: React.FC = () => {
 	const t: T2 = {a: KC.leaf, b: KC.within, c: KC.over, claim: KC.student, d: KC.evaluate};
 	const h = hold('attempt-two');
+	const f = useCurrentFrame();
+	const LF = {cx: PANEL.cx, cy: 300, w: 320};
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
-				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<ClaimBox x={140} y={420} w={1200} at={t.claim} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={600} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={660} w={1340} h={340} at={KC.evaluate + 30} />
+				<QText q={qCheck(STEM2(t), [])} x={140} y={240} w={1240} size={34} card={false} />
+				<ClaimBox x={140} y={470} w={1240} at={t.claim} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={634} w={1240} size={36} card={false} />
+				<AnsBox x={140} y={680} w={1240} h={324} at={KC.evaluate + 30} />
+				{/* givens drawn as read: the leaf, the small dead spot, the dead cells at the site, three weeks unchanged */}
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KC.second + 6} fill="#fbf8f1" />
+				<Pl p={PLATES2.leaf} cx={LF.cx} cy={LF.cy} w={LF.w} o={prog(f, KC.leaf, 14)} />
+				<circle cx={LF.cx + 10} cy={LF.cy - 4} r={15} fill="#6e4a2e" stroke="#4a2f1c" strokeWidth={2} opacity={prog(f, KC.die, 12)} />
+				<circle cx={LF.cx + 10} cy={LF.cy - 4} r={26} fill="none" stroke={TERRA} strokeWidth={4} opacity={prog(f, KC.die + 6, 12)} />
+				<Sx x={PANEL.cx} y={436} text="small brown spot" size={30} color={INK} hand weight={700} anchor="middle" at={KC.die + 10} />
+				<PlateB p={PLATES.deadRing} cx={PANEL.cx} cy={560} w={170} o={prog(f, KC.within + 20, 14)} id="b05-a2-ring" />
+				<Sx x={PANEL.cx} y={680} text="cells at the site die" size={30} color={INK} hand weight={700} anchor="middle" at={KC.within + 30} />
+				<ClockMark x={PANEL.x + 52} y={740} r={24} at={KC.over} />
+				<Sx x={PANEL.x + 88} y={752} text="3 weeks: same size" size={30} color={INK} hand weight={700} at={KC.over + 8} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -221,12 +259,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = [
-	'Phytophthora cinnamomi is a water mould (oomycete), not a fungus. Swimming spores (zoospores) in wet soil reach roots; hyphae kill root tissue, so leaves yellow and wilt. Spread in water and soil on boots and tyres.',
-	'Plants have no circulating immune cells, so each cell defends itself. Always there: lignin and suberin in older root cell walls, bark (the young root behind the tip is the weak point). Hyphae usually enter where two cells meet. Switched on after detection: callose plugs where hyphae push in, extra lignin, antimicrobial chemicals (phytoalexins).',
-	'Hypersensitive response: cells at and around the infection die on purpose, so a pathogen that needs living cells is fenced in. A signal can prepare the rest of the plant.',
-	'Evidence (Tynan, Scott and Sedgley, 1998, seedlings): scarlet banksia root tips dead in 1 day, stem by day 5, callose late; old man banksia damage from day 3, under halfway up the root by day 9. Timing differed. Limits: seedlings, laboratory, one study; tolerant is not immune.',
-	'Control: hygiene (clean boots and tyres, close wet tracks); phosphite helps plants wall it off, but doesn\'t remove it from soil.',
+	'Phytophthora cinnamomi: a water mould (oomycete), not a fungus. Swimming spores reach roots in wet soil.',
+	'Hyphae kill root tissue, so leaves yellow and wilt. It spreads in soil on boots and tyres.',
+	'No circulating immune cells: each plant cell defends itself.',
+	'Always there: lignin and suberin in older walls, bark. The young root behind the tip is the weak point.',
+	'Switched on after detection: callose plugs, extra lignin, antimicrobial phytoalexins.',
+	'Hypersensitive response: cells at the infection die on purpose, fencing in a pathogen that needs living cells.',
+	'Evidence (1998, seedlings): old man banksia held damage low; scarlet banksia lost its stem by day 5. Timing differed.',
+	'Control: hygiene and closed wet tracks; phosphite helps plants wall it off but does not remove it.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="The hypersensitive response is a firebreak." tag="speed decides whether the break holds" size={28} aidTop={800} />
+	<NotesBoard notes={NOTES} aid="The hypersensitive response is a firebreak." tag="speed decides whether the break holds" size={32} aidTop={820} />
 );

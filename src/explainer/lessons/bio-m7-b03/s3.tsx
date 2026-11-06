@@ -12,7 +12,12 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {AnsBox, FbRow, PauseHold} from '../bio-m7-b01/s3';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, BreakMark, CARD, Chain, EDGE, GREYT, GREY_INK, GTag, HostCircle, INK, PLATES, Pl, Sx, TEAL, WText, fitW, prog, tw, vis} from './parts';
+import {AMBER, AMBER_INK, BreakMark, CARD, Chain, DrawPath, EDGE, GREYT, GREY_INK, GTag, HostCircle, INK, INK_SOFT, PLATES, Pl, Sx, TEAL, WText, fitW, prog, tw, vis} from './parts';
+import {GreyCross} from '../bio-m6-b07/parts';
+import {PLATES2} from './plates2';
+
+/** The givens panel on the right of an exam card (left of it the stem column ends at x 1380). */
+const PANEL = {x: 1420, y: 186, w: 380, h: 600, cx: 1610};
 
 // ---------- item 1: Ross River virus ----------
 type T1 = {s: number; v: number; n: number; a: number; b: number; d: number};
@@ -30,21 +35,40 @@ const MARKS1 = ['carried by mosquitoes', 'breed in standing water', 'not passed 
 qCheck(STEM1({s: 0, v: 0, n: 0, a: 0, b: 0, d: 0}), MARKS1.map(phrase => ({phrase, at: 0})));
 
 // ---------- 12a. Attempt one ----------
-const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', after: 'After heavy rain', virus: 'The virus is carried', isnt: "isn't passed", a: 'Measure A', b: 'Measure B', identify: 'Identify the mode', pause: 'Pause here to answer'});
+const KA = cues(S('attempt'), {breed: 'breed in standing', two: 'Two exam questions', first: 'First', after: 'After heavy rain', virus: 'The virus is carried', isnt: "isn't passed", a: 'Measure A', b: 'Measure B', identify: 'Identify the mode', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {s: KA.after, v: KA.virus, n: KA.isnt, a: KA.a, b: KA.b, d: KA.identify};
+	const t: T1 = {s: KA.first, v: KA.virus, n: KA.isnt, a: KA.a, b: KA.b, d: KA.identify};
 	const h = hold('attempt');
+	const f = useCurrentFrame();
+	const wy = 548;
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1640} size={36} card={false} />
-				<CardBox x={140} y={400} w={1640} h={196} at={KA.a - 6} dash="8 6" fill="#fffaf0" />
-				<QText q={qCheck(OPT1(t), [])} x={170} y={460} w={1580} size={34} card={false} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={650} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={760} w={1340} h={240} at={KA.identify + 30} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={240} w={1240} size={36} card={false} />
+				<CardBox x={140} y={400} w={1240} h={210} at={KA.a - 6} dash="8 6" fill="#fffaf0" />
+				<QText q={qCheck(OPT1(t), [])} x={170} y={460} w={1180} size={34} card={false} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={664} w={1240} size={36} card={false} />
+				<AnsBox x={140} y={776} w={1240} h={230} at={KA.identify + 30} />
+				{/* givens, drawn as they are read: the mosquito, its larvae in standing water, no person-to-person link */}
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KA.first} fill="#fbf8f1" />
+				<Pl p={PLATES.mosq} cx={PANEL.cx} cy={290} w={fitW(PLATES.mosq, 330, 190)} o={prog(f, KA.virus + 14, 14)} />
+				<Sx x={PANEL.cx} y={414} text="carried by mosquitoes" size={30} color={INK} hand weight={700} anchor="middle" at={KA.virus + 20} />
+				<g opacity={prog(f, KA.breed, 14)}>
+					<rect x={PANEL.x + 24} y={wy - 50} width={PANEL.w - 48} height={110} rx={14} fill="#d9e9f2" opacity={0.8} />
+					<path d={`M${PANEL.x + 24},${wy - 50} q30,-10 60,0 t60,0 t60,0 t60,0 t60,0 t60,0`} fill="none" stroke="#7fb2d6" strokeWidth={3} />
+				</g>
+				<Pl p={PLATES2.larva} cx={PANEL.cx} cy={wy} w={300} o={prog(f, KA.breed + 6, 14)} />
+				<Sx x={PANEL.cx} y={wy + 92} text="larvae in standing water" size={30} color={INK} hand weight={700} anchor="middle" at={KA.breed + 12} />
+				<g opacity={prog(f, KA.isnt, 12)}>
+					<HostCircle x={PANEL.x + 80} y={712} r={34} />
+					<HostCircle x={PANEL.x + PANEL.w - 80} y={712} r={34} />
+					{f >= KA.isnt + 4 ? <DrawPath d={`M${PANEL.x + 124},712 L${PANEL.x + PANEL.w - 124},712`} at={KA.isnt + 4} dur={12} color={INK_SOFT} width={4} /> : null}
+				</g>
+				<GreyCross x={PANEL.cx} y={712} at={KA.isnt + 18} s={22} />
+				<Sx x={PANEL.cx} y={772} text="not person to person" size={30} color={INK} hand weight={700} anchor="middle" at={KA.isnt + 12} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -94,7 +118,7 @@ qCheck(ROW_C(0), [{phrase: 'cling together in clumps on the lining of the small 
 qCheck(ROW_I(0), [{phrase: 'binds receptor molecules on cells lining the airways', at: 0}, {phrase: 'triggers coughing', at: 0}]);
 
 // ---------- 12c. Attempt two ----------
-const KC = cues(S('attempt-two'), {second: 'Second', cholera: "The cholera bacterium's", influenza: 'Influenza virus has', compare: 'Compare how', pause: 'Pause here to answer'});
+const KC = cues(S('attempt-two'), {lining: 'the small', cling: 'cling in clumps', binds: 'binds receptors', second: 'Second', cholera: "The cholera bacterium's", influenza: 'Influenza virus has', compare: 'Compare how', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
 	const t: T2 = {c: KC.cholera, i: KC.influenza, d: KC.compare};
 	const h = hold('attempt-two');
@@ -105,14 +129,23 @@ export const SceneAttemptTwo: React.FC = () => {
 			<Overlay>
 				<HscTag at={KC.second} />
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
-				<g opacity={prog(f, KC.cholera - 6, 12)}>
-					<rect x={130} y={200} width={1660} height={360} rx={14} fill="#fffaf0" stroke={EDGE} strokeWidth={2.5} />
-					<line x1={130} x2={1790} y1={410} y2={410} stroke={EDGE} strokeWidth={2.5} />
+				<g opacity={prog(f, KC.second + 6, 12)}>
+					<rect x={130} y={196} width={1260} height={400} rx={14} fill="#fffaf0" stroke={EDGE} strokeWidth={2.5} />
+					<line x1={130} x2={1390} y1={432} y2={432} stroke={EDGE} strokeWidth={2.5} />
 				</g>
-				<QText q={qCheck(ROW_C(t.c), [])} x={160} y={256} w={1600} size={36} card={false} />
-				<QText q={qCheck(ROW_I(t.i), [])} x={160} y={466} w={1600} size={36} card={false} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={624} w={1640} size={36} card={false} />
-				<AnsBox x={140} y={720} w={1340} h={280} at={KC.compare + 30} />
+				<QText q={qCheck(ROW_C(t.c), [])} x={160} y={248} w={1200} size={34} card={false} />
+				<QText q={qCheck(ROW_I(t.i), [])} x={160} y={484} w={1200} size={34} card={false} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={650} w={1240} size={36} card={false} />
+				<AnsBox x={140} y={760} w={1240} h={246} at={KC.compare + 30} />
+				{/* givens, drawn as they are read: Vibrio clinging to the gut lining; influenza binding an airway cell */}
+				<CardBox x={PANEL.x} y={PANEL.y} w={PANEL.w} h={PANEL.h} at={KC.second + 6} fill="#fbf8f1" />
+				<Pl p={PLATES2.intestine} cx={PANEL.x + 110} cy={318} w={170} o={prog(f, KC.lining - 6, 14)} />
+				<Pl p={PLATES2.vibrio} cx={PANEL.cx + 90} cy={300} w={190} o={prog(f, KC.cholera, 14)} />
+				<Sx x={PANEL.cx} y={448} text="Vibrio: clings to gut lining" size={30} color={INK} hand weight={700} anchor="middle" at={KC.cling} />
+				<Pl p={PLATES2.airwayCell} cx={PANEL.x + 120} cy={612} w={86} o={prog(f, KC.influenza, 14)} />
+				<Pl p={PLATES.flu} cx={PANEL.x + 286 - 154 * prog(f, KC.binds, 20)} cy={560 - 52 * prog(f, KC.binds, 20)} w={72} o={prog(f, KC.influenza + 6, 14)} />
+				<Sx x={PANEL.cx + 70} y={640} text="binds airway" size={30} color={INK} hand weight={700} anchor="middle" at={KC.binds + 10} />
+				<Sx x={PANEL.cx + 70} y={676} text="cells" size={30} color={INK} hand weight={700} anchor="middle" at={KC.binds + 10} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -200,12 +233,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = [
-	'To spread, a pathogen must leave a host, travel and enter a new host. The way it travels is its mode of transmission.',
-	'Direct contact: host to host with nothing between (skin, body fluids, close-range droplets; tinea, HIV, influenza). Indirect contact: a non-living carrier, such as a fomite (contaminated object), water, food or air (norovirus, cholera, Salmonella, tuberculosis). Vector: a living carrier, usually an insect or tick (Anopheles mosquitoes carry Plasmodium). A fomite is not a vector.',
-	'Entry adaptations get a pathogen in and hold it at the entry site: fimbriae grip host cells; viral surface proteins bind specific receptors; tapeworm hooks and suckers anchor to the gut wall.',
-	'Transmission adaptations get it out and across: influenza triggers coughing; Plasmodium is injected into the skin in mosquito saliva; tapeworm eggs and cysts in undercooked pork; tobacco mosaic virus survives on tools.',
-	'Control must match the route: barriers for direct contact, treat the carrier for indirect contact, break it at the vector for vectors.',
+	'To spread, a pathogen must leave a host, travel and enter a new host: its mode of transmission.',
+	'Direct contact: nothing between hosts (skin, body fluids, close droplets; tinea, HIV, influenza).',
+	'Indirect contact: a non-living carrier, such as a fomite, water, food or air (cholera, tuberculosis).',
+	'Vector: a living carrier, usually an insect or tick (Anopheles mosquitoes carry Plasmodium). A fomite is not a vector.',
+	'Entry adaptations hold it at the entry site: fimbriae grip cells; viral proteins bind receptors; tapeworm hooks anchor.',
+	'Transmission adaptations get it out and across: coughing (influenza), mosquito saliva (Plasmodium), pork cysts, tough TMV coat.',
+	'Control matches the route: barriers (direct), treat the carrier (indirect), break it at the vector.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Every control measure breaks a link." tag="name the route first, then the control follows" size={30} aidTop={700} />
+	<NotesBoard notes={NOTES} aid="Every control measure breaks a link." tag="name the route first, then the control follows" size={33} aidTop={800} />
 );

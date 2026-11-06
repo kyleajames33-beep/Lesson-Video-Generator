@@ -18,6 +18,7 @@ import {
 	tw, vis,
 } from './parts';
 import type {RKind} from './parts';
+import {PLATES2} from './plates2';
 
 /** The route chain as a small grey strip along the top, one station lit. */
 const Strip: React.FC<{lit: 0 | 2; o?: number}> = ({lit, o = 1}) => (
@@ -140,6 +141,7 @@ export const SceneCompare: React.FC = () => {
 const K8 = cues(S('transmission-adaptations'), {out: 'getting out', flu: 'Influenza multiplies', lining: 'airway lining', cough: 'triggers coughing', plas: 'Plasmodium ends', sal: 'salivary glands', skin: 'into the skin', tape: "The tapeworm's eggs", faeces: 'leave in faeces', cysts: 'cysts in pig muscle', under: 'undercooked pork', tmv: 'tobacco mosaic virus', coat: 'a coat so tough', tools: 'pruning tools', plant: 'from plant to plant'});
 const Q = [{x: 60, y: 200, w: 880, h: 420}, {x: 980, y: 200, w: 880, h: 420}, {x: 60, y: 645, w: 880, h: 415}, {x: 980, y: 645, w: 880, h: 415}];
 const LU = {cx: 230, cy: 420, w: 300};
+const AC = {cx: 820, cy: 392, w: 104};
 const FD = {cx: 1240, cy: 412, w: fitW(PLATES.feeding, 430, 400)};
 export const SceneTransmission: React.FC = () => {
 	const f = useCurrentFrame();
@@ -159,19 +161,24 @@ export const SceneTransmission: React.FC = () => {
 	return (
 		<Overlay>
 			<Strip lit={0} o={prog(f, 0, 14)} />
-			<GTag x={960} y={168} text="leave" at={K8.out} size={24} anchor="middle" />
+			<GTag x={960} y={150} text="leave" at={K8.out} size={34} anchor="middle" />
 			{Q.map((q, i) => <CardBox key={i} x={q.x} y={q.y} w={q.w} h={q.h} at={starts[i] - 8} fill="#fffdf8" />)}
 			{/* 1. influenza */}
 			<g opacity={qo(0) * (1 - 0.55 * dimOf(0))}>
 				<Pl p={PLATES.lungs} cx={LU.cx} cy={LU.cy} w={fitW(PLATES.lungs, LU.w, 360)} />
 				<Pl p={PLATES.flu} cx={air[0]} cy={air[1]} w={56} o={prog(f, K8.flu + 10, 12)} />
 				<Ring cx={air[0]} cy={air[1]} rx={52} ry={66} at={K8.lining} color={AMBER} />
+				{/* zoom to one airway lining cell: healthy, then filling with new virus particles */}
+				{f >= K8.flu + 14 ? <DrawPath d={`M${air[0] + 40},${air[1] - 10} L${AC.cx - AC.w / 2 - 14},${AC.cy - 40}`} at={K8.flu + 14} dur={14} color={GREYT} width={3} dash="8 7" /> : null}
+				<Pl p={PLATES2.airwayCell} cx={AC.cx} cy={AC.cy} w={AC.w} o={prog(f, K8.flu + 18, 12) * (1 - prog(f, K8.flu + 30, 30))} />
+				<Pl p={PLATES2.airwayInfected} cx={AC.cx} cy={AC.cy} w={AC.w} o={prog(f, K8.flu + 30, 30)} />
+				<Sx x={AC.cx} y={AC.cy + 170} text="airway cell" size={30} color={INK} hand weight={700} anchor="middle" at={K8.flu + 24} />
 				<HostCircle x={520} y={440} r={56} o={prog(f, K8.cough - 6, 12)} />
 				<Droplets sx={560} sy={428} ground={560} range={170} at={K8.cough + 4} bursts={3} gap={50} s={0.85} />
 				<line x1={500} x2={740} y1={562} y2={562} stroke={INK_SOFT} strokeWidth={2.5} opacity={prog(f, K8.cough, 12)} />
 			</g>
-			<Tg x={420} y={262} text="multiplies in the airway lining" at={K8.lining} out={K8.cough + 20} size={34} />
-			<Tg x={420} y={262} text="triggers coughing: droplets out" at={K8.cough + 20} size={34} color={dimOf(0) > 0.5 ? GREY_INK : AMBER_INK} />
+			<Tg x={400} y={254} text="multiplies in the airway lining" at={K8.flu + 24} out={K8.cough + 20} size={34} />
+			<Tg x={400} y={254} text="triggers coughing: droplets out" at={K8.cough + 20} size={34} color={dimOf(0) > 0.5 ? GREY_INK : AMBER_INK} />
 			<KindTag x={740} y={575 - 50} kind="transmission" at={K8.cough + 30} dim={dimOf(0)} />
 			{/* 2. Plasmodium in the mosquito's saliva */}
 			<defs><clipPath id="m7b03-q2"><rect x={Q[1].x + 4} y={Q[1].y + 4} width={474} height={Q[1].h - 8} rx={18} /></clipPath></defs>
@@ -188,8 +195,8 @@ export const SceneTransmission: React.FC = () => {
 				) : null}
 				</g>
 			</g>
-			<GTag x={1000} y={580} text="zoom: skin section" at={K8.skin} out={K8.tape} size={20} />
-			<GTag x={1470} y={262} text="salivary glands" at={K8.sal + 6} out={K8.skin - 16} size={24} />
+			<GTag x={1000} y={580} text="zoom: skin section" at={K8.skin} out={K8.tape} size={30} />
+			<GTag x={1470} y={262} text="salivary glands" at={K8.sal + 6} out={K8.skin - 16} size={32} />
 			{f >= K8.sal + 6 && f < K8.skin - 16 ? <line x1={1470} y1={280} x2={gl[0] + 30} y2={gl[1] - 10} stroke={GREYT} strokeWidth={2} /> : null}
 			<CTag x={1470} y={420} text="injected under the skin's surface" at={K8.skin + 20} color={AMBER_INK} size={30} maxW={360} dim={dimOf(1)} />
 			<KindTag x={1660} y={575 - 50} kind="transmission" at={K8.skin + 30} dim={dimOf(1)} />
@@ -203,7 +210,7 @@ export const SceneTransmission: React.FC = () => {
 				<CurveArrow a={[560, 910]} b={[290, 870]} at={K8.under} bow={70} color={AMBER_INK} width={4} />
 				<Sx x={424} y={968} text="undercooked pork eaten" size={28} color={AMBER_INK} hand anchor="middle" at={K8.under + 8} />
 			</g>
-			<GTag x={680} y={950} text="cysts in pork" at={K8.cysts + 10} out={K8.under} size={24} anchor="middle" />
+			<GTag x={680} y={950} text="cysts in pork" at={K8.cysts + 10} out={K8.under} size={32} anchor="middle" />
 			<CTag x={80} y={995} text="eggs and cysts: carried to a new host" at={K8.under + 24} color={AMBER_INK} size={28} maxW={600} dim={dimOf(2)} />
 			<KindTag x={740} y={995} kind="transmission" at={K8.under + 34} dim={dimOf(2)} />
 			{/* 4. tobacco mosaic virus on tools */}

@@ -14,6 +14,7 @@ import {
 	PlateB, RS, Ring, SEED_H, Seedling, SoilBand, Sx, TEAL, TERRA, dayX, fitW, lerp, plH, prog, ptOf, pulse, rungY, seedW, smooth, vis,
 } from './parts';
 import type {Pt, Rung} from './parts';
+import {Defended} from './s1';
 
 // ---------- the race rows ----------
 export const TOP_Y = 330, BOT_Y = 650;
@@ -43,8 +44,8 @@ export const RaceRows: React.FC<{t: RaceT; topDim?: number; botDim?: number; o?:
 			<Glow x={250} y={BOT_Y} r={120} o={speciesGlow} color={TEAL} />
 			<Pl p={PLATES.coccinea} cx={250} cy={TOP_Y - 10} w={fitW(PLATES.coccinea, 210, 200)} o={prog(f, t.top, 14)} dim={topDim * 0.6} />
 			<Pl p={PLATES.serrata} cx={250} cy={BOT_Y - 10} w={fitW(PLATES.serrata, 210, 200)} o={prog(f, t.bot, 14)} dim={botDim * 0.6} />
-			<GTag x={250} y={TOP_Y + 104} text="scarlet banksia, WA" at={t.top + 6} anchor="middle" />
-			<GTag x={250} y={BOT_Y + 104} text="old man banksia, NSW" at={t.bot + 6} anchor="middle" />
+			<GTag x={250} y={TOP_Y + 100} text="scarlet banksia, WA" at={t.top + 6} size={30} anchor="middle" />
+			<GTag x={250} y={BOT_Y + 100} text="old man banksia, NSW" at={t.bot + 6} size={30} anchor="middle" />
 			{/* ghosts at the ticks already passed */}
 			<Seedling id="b05-g-t0" cx={dayX(0)} cy={TOP_Y} o={ghost(t.d1)} dim={1} />
 			<Seedling id="b05-g-t1" cx={dayX(1)} cy={TOP_Y} o={ghost(t.d5)} tip={1} dim={1} />
@@ -58,22 +59,35 @@ export const RaceRows: React.FC<{t: RaceT; topDim?: number; botDim?: number; o?:
 };
 
 // ---------- 7. The evidence: two banksias ----------
-const K7 = cues(S('evidence'), {study: 'In a 1998 study', seedlings: 'banksia seedlings', scarlet: 'In scarlet banksia', tips: 'root tips were dead', stem: "reached the seedling's stem", callose: 'Callose was laid', oldman: 'In old man banksia', three: 'started on day three', nine: 'by day nine'});
+const K7 = cues(S('evidence'), {does: 'does timing matter', study: 'In a 1998 study', seedlings: 'banksia seedlings', scarlet: 'In scarlet banksia', tips: 'root tips were dead', stem: "reached the seedling's stem", callose: 'Callose was laid', oldman: 'In old man banksia', three: 'started on day three', nine: 'by day nine'});
 export const RACE7: RaceT = {rows: K7.seedlings, top: K7.seedlings + 6, bot: K7.seedlings + 14, d1: K7.tips, d5: K7.stem, d3: K7.three, d9: K7.nine};
 export const SceneEvidence: React.FC = () => {
 	const f = useCurrentFrame();
 	const topOn = vis(f, K7.scarlet, K7.oldman, 12), botOn = prog(f, K7.oldman, 12);
 	const band = (y: number, o: number) => (o > 0.01 ? <rect x={110} y={y - 160} width={1730} height={320} rx={26} fill="#fff3d9" opacity={0.6 * o} /> : null);
+	// opening question: the two species large, then each settles into its race row as the rows draw on
+	const mv = smooth(prog(f, K7.seedlings - 16, 22));
+	const introO = prog(f, 2, 14) * (1 - prog(f, RACE7.top + 10, 8));
+	const big = {wc: fitW(PLATES.coccinea, 430, 420), ws: fitW(PLATES.serrata, 430, 420)};
+	const row = {wc: fitW(PLATES.coccinea, 210, 200), ws: fitW(PLATES.serrata, 210, 200)};
 	return (
 		<Overlay>
+			<g opacity={introO}>
+				<Pl p={PLATES.coccinea} cx={lerp(680, 250, mv)} cy={lerp(500, TOP_Y - 10, mv)} w={lerp(big.wc, row.wc, mv)} />
+				<Pl p={PLATES.serrata} cx={lerp(1240, 250, mv)} cy={lerp(500, BOT_Y - 10, mv)} w={lerp(big.ws, row.ws, mv)} />
+			</g>
+			<GTag x={680} y={736} text="scarlet banksia, WA" at={10} out={K7.seedlings - 20} size={36} anchor="middle" />
+			<GTag x={1240} y={736} text="old man banksia, NSW" at={18} out={K7.seedlings - 20} size={36} anchor="middle" />
+			<ClockMark x={700} y={866} at={K7.does} o={1 - prog(f, K7.seedlings - 20, 10)} />
+			<Sx x={760} y={884} text="does timing matter?" size={56} color={AMBER_INK} hand at={K7.does} opacity={1 - prog(f, K7.seedlings - 20, 10)} />
 			{band(TOP_Y, topOn)}
 			{band(BOT_Y, botOn)}
 			<DayLine at={K7.study} />
-			<GTag x={1840} y={170} text="Tynan, Scott and Sedgley, 1998" at={K7.study + 10} anchor="end" />
+			<GTag x={1840} y={170} text="Tynan, Scott and Sedgley, 1998" at={K7.study + 10} size={30} anchor="end" />
 			<RaceRows t={RACE7} topDim={prog(f, K7.oldman, 12)} botDim={vis(f, K7.scarlet, K7.oldman, 12)} />
-			<GTag x={dayX(5) + 90} y={TOP_Y - 40} text="day 5: stem reached" at={K7.stem + 30} />
+			<GTag x={dayX(5) + 90} y={TOP_Y - 40} text="day 5: stem reached" at={K7.stem + 30} size={32} />
 			<CTag x={1660} y={TOP_Y - 30} text="callose late" at={K7.callose} color={AMBER_INK} size={30} dim={prog(f, K7.oldman, 10)} />
-			<GTag x={dayX(9) - 90} y={BOT_Y + 150} text="day 9: under halfway up" at={K7.nine + 34} anchor="end" />
+			<GTag x={dayX(9) - 90} y={BOT_Y + 150} text="day 9: under halfway up" at={K7.nine + 34} size={32} anchor="end" />
 		</Overlay>
 	);
 };
@@ -112,16 +126,16 @@ export const SceneLimits: React.FC = () => {
 	const chips = [{at: K9.seedlings, t: 'seedlings, a few weeks old'}, {at: K9.lab, t: 'lab, one study'}, {at: K9.adult, t: 'field adults may differ'}];
 	return (
 		<Overlay>
-			<g opacity={1 - 0.55 * dimAll}>
+			<g opacity={1 - 0.3 * dimAll}>
 				<DayLine at={-100} />
 			</g>
-			<RaceRows t={ALL} topDim={dimAll * 0.8} botDim={dimAll * 0.8 * (1 - vis(f, K9.tolerant, K9.adult, 12))} botGlow={pulse(f, K9.tolerant + 6, 60)} speciesGlow={pulse(f, K9.overseas, 60)} />
-			{chips.map((c, i) => <GTag key={c.t} x={1380} y={150 + i * 60} text={c.t} at={c.at} size={28} />)}
+			<RaceRows t={ALL} topDim={dimAll * 0.5} botDim={dimAll * 0.5 * (1 - vis(f, K9.tolerant, K9.adult, 12))} botGlow={pulse(f, K9.tolerant + 6, 60)} speciesGlow={pulse(f, K9.overseas, 60)} />
+			{chips.map((c, i) => <GTag key={c.t} x={1360} y={146 + i * 62} text={c.t} at={c.at} size={30} />)}
 			<CTag x={RS.x0} y={BOT_Y + 160} text="tolerant: survives infection with limited damage" at={K9.tolerant + 10} color={TEAL} size={32} maxW={900} dim={prog(f, K9.overseas, 10)} />
-			<GTag x={1380} y={336} text="introduced: probably from overseas" at={K9.overseas + 10} size={26} />
+			<GTag x={1380} y={336} text="introduced: probably from overseas" at={K9.overseas + 10} size={30} />
 			<CrossChip x={1380} y={400} text="never met it, so no defence" at={K9.yet} cross={K9.held + 6} caption="old man banksia held it" size={28} />
 			<Pl p={PLATES.myrtle} cx={1780} cy={770} w={170} o={prog(f, K9.overseas + 20, 14)} />
-			<GTag x={1880} y={830} text="myrtle rust: little resistance in many species" at={K9.overseas + 26} size={22} anchor="end" />
+			<GTag x={1880} y={830} text="myrtle rust: little resistance in many species" at={K9.overseas + 26} size={28} anchor="end" />
 		</Overlay>
 	);
 };
@@ -169,15 +183,26 @@ export const SceneControl: React.FC = () => {
 const K11 = cues(S('memory'), {hr: 'the hypersensitive response', dead: 'Dead cells around', feed: 'nothing to feed', speed: 'speed decides'});
 export const SceneMemory: React.FC = () => {
 	const f = useCurrentFrame();
-	const DR = {cx: 960, cy: 640, w: 400};
+	const MC = {cx: 680, cy: 690, w: 900};
+	const rc = ptOf(PLATES.cellsDef, MC.cx, MC.cy, MC.w, FEAT.ring);
+	const mk = MC.w / (PLATES.cellsDef.box[2] - PLATES.cellsDef.box[0]);
+	const fire = pulse(f, K11.hr + 50, 60);
 	return (
 		<Overlay>
-			<CardBox x={240} y={190} w={1440} h={150} at={K11.hr - 6} />
-			<Sx x={960} y={290} text="The hypersensitive response is a firebreak." size={70} color={INK} hand anchor="middle" at={K11.hr} />
-			<PlateB p={PLATES.deadRing} cx={DR.cx} cy={DR.cy} w={DR.w} o={prog(f, K11.dead, 16)} id="b05-s11-ring" />
-			<GTag x={DR.cx + DR.w / 2 + 40} y={600} text="nothing living to feed on" at={K11.feed} />
-			<ClockMark x={DR.cx + DR.w / 2 + 80} y={740} at={K11.speed} />
-			<Sx x={DR.cx + DR.w / 2 + 130} y={752} text="speed decides" size={36} color={AMBER_INK} hand at={K11.speed + 6} />
+			<CardBox x={240} y={170} w={1440} h={150} at={K11.hr - 6} />
+			<Sx x={960} y={270} text="The hypersensitive response is a firebreak." size={70} color={INK} hand anchor="middle" at={K11.hr} />
+			{/* the root cells at the infection site: the cells around it die and wall the pathogen in */}
+			<Pl p={PLATES.cellsEntry} cx={MC.cx} cy={MC.cy} w={MC.w} o={prog(f, K11.hr - 4, 14)} />
+			<Defended cx={MC.cx} cy={MC.cy} w={MC.w} plug={prog(f, K11.hr - 4, 14)} walls={prog(f, K11.hr - 4, 14)} ring={prog(f, K11.hr + 14, 30)} id="b05-s11" />
+			<Ring cx={rc[0]} cy={rc[1] - 10 * mk} rx={190 * mk} ry={184 * mk} at={K11.hr + 44} color={TERRA} width={6} />
+			{fire > 0.01 ? <ellipse cx={rc[0]} cy={rc[1] - 10 * mk} rx={200 * mk} ry={194 * mk} fill="none" stroke={TERRA} strokeWidth={14} opacity={0.25 * fire} /> : null}
+			<CTag x={1200} y={420} text="infected cells and their neighbours die" at={K11.hr + 24} color={TERRA} size={32} maxW={560} />
+			<CTag x={1200} y={540} text="a dead ring walls the pathogen in" at={K11.dead} color={TERRA} size={32} maxW={560} />
+			{[[600, 1080], [1500, 1080], [1560, 820]].map((uv, i) => { const q = ptOf(PLATES.cellsDef, MC.cx, MC.cy, MC.w, uv as Pt); return <ellipse key={i} cx={q[0]} cy={q[1]} rx={64} ry={46} fill={GREEN} opacity={0.18 * prog(f, K11.feed, 14)} />; })}
+			<CTag x={1200} y={660} text="nothing living to feed on" at={K11.feed} color={GREEN} size={32} maxW={560} />
+			<ClockMark x={1236} y={808} at={K11.speed} />
+			<Sx x={1290} y={822} text="speed decides if the break holds" size={38} color={AMBER_INK} hand at={K11.speed + 6} />
+			{void PlateB}{void GTag}
 			{void GREEN}{void AMBER}{void Ring}{void TEAL}
 		</Overlay>
 	);
