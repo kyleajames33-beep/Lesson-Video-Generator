@@ -32,6 +32,12 @@ export const PLATES = {
 	thermo: P1.thermo,
 	brain: P1.brain,
 	muscle: P1.muscle,
+	/** Quality fix (6 Nov): trend plates (hot climate, large thin ears; cold climate, compact with thick fur; the dolphin's
+	 *  flipper) and the sun for exam question 1. Alpha boxes measured 6 Nov (PIL, alpha > 20). */
+	elephant: mk(B + 'y11-elephant-tusked-v1.png', [81, 93, 1315, 1001], [1422, 1106]),
+	lynx: mk(B + 'y11-canada-lynx-v1.png', [127, 40, 1312, 1018], [1448, 1086]),
+	dolphin: mk(B + 'y11-dolphin-v1.png', [125, 107, 1797, 716], [1920, 819]),
+	sun: mk(B + 'm8-sun-v1.png', [160, 172, 1840, 1828]),
 };
 /** Natural-pixel anchors read from gridded views (30 Oct). */
 export const FEAT = {
@@ -49,5 +55,8 @@ export const FEAT = {
 	koalaBody: [1080, 1060] as [number, number],
 	trunk: [1390, 1000] as [number, number],
 	hypo: [800, 860] as [number, number],
+	/** Elephant: the ear. Dolphin: the flipper. */
+	ear: [600, 300] as [number, number],
+	flipper: [689, 600] as [number, number],
 };
 export const ASSETS_M8B02: string[] = Array.from(new Set(Object.values(PLATES).map(p => p.src)));

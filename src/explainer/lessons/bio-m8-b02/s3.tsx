@@ -10,7 +10,9 @@ import {HscTag, NextChip, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {NB, S, hold} from './common';
-import {AMBER, AMBER_INK, Balance, CardBox, DLbl, DrawPath, FEAT, GREYT, GREY_INK, GTag, INK, INK_SOFT, MistakeChip, PLATES, Pl, StepChip, Sx, TEAL, WARM, pbPt, prog, vis} from './parts';
+import {AMBER, AMBER_INK, Balance, CardBox, DLbl, DrawPath, FEAT, GREYT, GREY_INK, GTag, INK, INK_SOFT, MistakeChip, PLATES, Pl, PlateB, StepChip, Sx, TEAL, WARM, pbPt, prog, scribbleEllipse, skinPt, vis} from './parts';
+import {EvapDots, HeatArrows, Pointer, SignalPulse, TAxes, TLine} from '../m8-shared/parts';
+import type {TG} from '../m8-shared/parts';
 
 // ---------- item 1: the cyclist ----------
 type T1 = {a: number; b: number; qa: number; qb: number};
@@ -23,30 +25,42 @@ const Q1 = (t: T1): QBlock[] => [
 const ALL1: T1 = {a: -100, b: -100, qa: -100, qb: -100};
 const M1 = [`rises from 37.0${NB}°C to 37.8${NB}°C`, `30${NB}°C.`, 'dry day', `then stays near 37.8${NB}°C`, 'humid day'];
 qCheck(Q1(ALL1), M1.map(phrase => ({phrase, at: 0})));
+// Quality fix (6 Nov): the question text narrows to 1100 px so the right side can carry the givens (attempt) and the
+// brain and skin (feedback). The whole question and the answer box arrive with the card.
 const Card1: React.FC<{t: T1; marks?: QMark[]}> = ({t, marks = []}) => (
 	<>
 		<HscTag at={-100} />
 		<CardBox x={100} y={170} w={1720} h={850} at={-100} />
-		<QText q={qCheck(Q1(t), marks)} x={140} y={240} w={1640} size={29} card={false} />
+		<QText q={qCheck(Q1(t), marks)} x={140} y={240} w={1100} size={29} card={false} />
 	</>
 );
-const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', cyclist: 'A cyclist rides', her: 'Her core temperature', explain: 'Explain how the', predict: 'and predict', pause: 'Pause here'});
+const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', cyclist: 'A cyclist rides', dry: 'dry day', her: 'Her core temperature', explain: 'Explain how the', predict: 'and predict', humid: 'humid day', pause: 'Pause here'});
+const G1: TG = {x: 1420, y: 250, w: 340, h: 250, x0: 0, x1: 40, y0: 36.8, y1: 38.2};
 export const SceneAttempt: React.FC = () => {
+	const f = useCurrentFrame();
 	const h = hold('attempt');
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
-				<Card1 t={{a: KA.cyclist, b: KA.her, qa: KA.explain, qb: KA.predict}} />
-				<AnsBox x={140} y={600} w={1380} h={380} at={KA.predict + 30} />
+				<Card1 t={ALL1} />
+				<AnsBox x={140} y={650} w={1120} h={330} at={0} />
+				<Pl p={PLATES.sun} cx={1450} cy={700} w={170} o={vis(f, KA.dry, undefined, 14)} />
+				<Sx x={1450} y={830} text={`air 30${NB}°C, dry`} size={30} color={WARM} anchor="middle" hand weight={700} at={KA.dry + 6} />
+				<TAxes g={G1} at={KA.her - 10} xLabel="time riding (min)" yLabel="core (°C)" yTicks={[37, 37.5, 38]} xTicks={[0, 15, 40]} size={24} fmt={n => n.toFixed(1)} />
+				<TLine g={G1} pts={[[0, 37], [5, 37.4], [10, 37.68], [15, 37.8], [40, 37.8]]} at={KA.her} dur={70} color={WARM} width={6} />
+				<GTag x={1300} y={880} text="(b) humid day?" at={KA.humid} size={26} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
-				{void KA.first}
+				{void KA.first}{void KA.cyclist}{void KA.explain}{void KA.predict}
 			</Overlay>
 		</>
 	);
 };
-const KB = cues(S('feedback-one'), {hypo: 'The hypothalamus detects', rise: 'the rise', wider: 'Wider arterioles', cooler: 'the cooler air', evap: 'Evaporating sweat', heat: 'Heat loss now', levels: 'levels off', humid: 'Humid air', wet: 'Wet skin alone'});
+const KB = cues(S('feedback-one'), {hypo: 'The hypothalamus detects', rise: 'the rise', sends: 'sends nerve impulses', skin: 'skin arterioles', wider: 'Wider arterioles', cooler: 'the cooler air', evap: 'Evaporating sweat', heat: 'Heat loss now', levels: 'levels off', humid: 'Humid air', wet: 'Wet skin alone'});
+const BRF = {cx: 1560, cy: 330, w: 330};
+const SKF = {cx: 1560, cy: 740, w: 400};
 export const SceneFeedbackOne: React.FC = () => {
+	const f = useCurrentFrame();
 	const at = [KB.rise, KB.cooler, KB.evap, KB.levels, KB.humid];
 	const marks: QMark[] = M1.map((phrase, i) => ({phrase, at: at[i], color: i === 3 ? TEAL : AMBER}));
 	const rows = [
@@ -56,13 +70,26 @@ export const SceneFeedbackOne: React.FC = () => {
 		{t: 'heat loss = heat production → temperature levels off', at: KB.levels - 4, dim: KB.humid},
 		{t: '(b) humid: less evaporation, core temperature rises higher', at: KB.humid + 10, dim: undefined},
 	];
+	const [hx, hy] = pbPt(PLATES.brain, BRF.cx, BRF.cy, BRF.w)(...FEAT.hypo);
+	const P = skinPt(SKF.cx, SKF.cy, SKF.w);
+	const [ax, ay] = P(...FEAT.arteriole), [gx, gy] = P(...FEAT.gland);
+	const top = SKF.cy + (FEAT.top - 1000.5) * (SKF.w / 1467);
 	return (
 		<>
 			<Heading text="Heat loss catches up" at={4} size={50} />
 			<Overlay>
 				<Card1 t={ALL1} marks={marks} />
-				{rows.map((r, i) => <DLbl key={i} x={160} y={630 + i * 58} text={r.t} at={r.at} dimAt={r.dim} size={30} maxW={1600} color={i === 3 ? TEAL : AMBER_INK} />)}
-				<GTag x={780} y={944} text="air cooler than skin" at={KB.cooler + 6} size={22} />
+				<PlateB p={PLATES.brain} cx={BRF.cx} cy={BRF.cy} w={BRF.w} o={prog(f, KB.hypo, 14)} />
+				{f >= KB.hypo + 6 ? <DrawPath d={scribbleEllipse(hx, hy, 34, 26, 3)} at={KB.hypo + 6} dur={14} color={AMBER} width={5} /> : null}
+				<Sx x={hx - 50} y={hy + 120} text="hypothalamus" size={28} color={AMBER_INK} anchor="middle" hand weight={700} at={KB.hypo + 12} />
+				<PlateB p={PLATES.warm} cx={SKF.cx} cy={SKF.cy} w={SKF.w} o={prog(f, KB.hypo + 20, 14)} />
+				<SignalPulse a={[hx + 10, hy + 20]} b={[gx - 30, gy - 40]} bow={-90} at={KB.sends} until={KB.evap} every={16} dur={22} color={AMBER} track trackColor={AMBER_INK} trackWidth={4} dash="none" r={8} />
+				<Pointer from={[1330, 620]} to={[ax, ay]} at={KB.wider} out={KB.evap} color={WARM} />
+				<Sx x={1330} y={606} text="wider" size={30} color={WARM} anchor="middle" hand weight={700} at={KB.wider + 6} out={KB.evap} />
+				<HeatArrows x={SKF.cx - 150} y={top + 4} w={300} at={KB.cooler} n={4} len={70} />
+				<EvapDots pts={FEAT.beads.map(b => P(b[0], b[1]))} at={KB.evap} humid={KB.humid + 10} r={10} />
+				<GTag x={SKF.cx} y={962} text="air cooler than skin" at={KB.cooler + 6} size={26} anchor="middle" />
+				{rows.map((r, i) => <DLbl key={i} x={160} y={630 + i * 62} text={r.t} at={r.at} dimAt={r.dim} size={34} maxW={1120} color={i === 3 ? TEAL : AMBER_INK} />)}
 				<MistakeChip x={140} y={930} text="sweat cools because the skin is wet" at={KB.wet - 10} cross={KB.wet + 6} size={28} />
 				{void KB.heat}
 			</Overlay>
@@ -116,9 +143,10 @@ export const SceneAttemptTwo: React.FC = () => {
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
-				<Card2 t={{a: KC.hot, b: KC.press - 30, c: KC.pant, d: KC.back, qa: KC.classify, qb: KC.explain}} />
-				<Table at={KC.classify + 20} />
-				<AnsBox x={960} y={760} w={600} h={230} at={KC.explain + 20} />
+				<Card2 t={ALL2} />
+				<Table at={0} />
+				<AnsBox x={960} y={760} w={600} h={230} at={0} />
+				{void KC.hot}{void KC.press}{void KC.pant}{void KC.back}{void KC.classify}{void KC.explain}
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -138,9 +166,9 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<Table at={-100} fill={[['behavioural', KD.moving + 10], ['physiological', KD.panting + 6], ['structural', KD.fur + 6]]} />
 				{f >= KD.conduction ? <g><DrawPath d={`M${ax},${ay} L${bx},${by}`} at={KD.conduction} dur={14} color={WARM} width={6} /><path d={`M${bx - 16},${by - 10} L${bx},${by} L${bx - 14},${by + 14}`} fill="none" stroke={WARM} strokeWidth={6} strokeLinecap="round" opacity={prog(f, KD.conduction + 10, 6)} /></g> : null}
 				<DLbl x={960} y={810} text="heat: koala → trunk (conduction)" at={KD.conduction + 6} size={32} maxW={820} color={WARM} />
-				<GTag x={960} y={850} text="panting uses water" at={KD.without + 6} size={22} />
+				<GTag x={960} y={850} text="panting uses water" at={KD.without + 6} size={26} />
 				<MistakeChip x={960} y={900} text="hugging the tree keeps it cool" at={KD.writing} cross={KD.classic + 6} size={28} />
-				<GTag x={960} y={975} text="name the direction of heat flow" at={KD.say} size={22} />
+				<GTag x={960} y={975} text="name the direction of heat flow" at={KD.say} size={26} />
 				{void vis}{void INK_SOFT}{void GREY_INK}
 			</Overlay>
 		</>
@@ -168,13 +196,17 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 14. Key notes ----------
+// Quality fix: eight one-line bullets at 34 px replace five paragraphs at 27 px. The memory aid is unchanged.
 const NOTES = [
-	'Endotherm: most body heat from its own metabolism; can regulate core temperature using metabolic heat (mammals, birds). Ectotherm: most heat from surroundings; still regulates, mainly by behaviour.',
-	'Coordination: thermoreceptors (skin, hypothalamus) → hypothalamus → effectors. Neural pathway: nerve impulses, fast and targeted. Hormonal pathway: hormones in blood, slower and longer-lasting (thyroxine raises metabolic rate in a long cold spell).',
-	"Too hot: vasodilation (arterioles widen, more warm blood near surface, more heat lost; vessels don't move) and sweating (cools by evaporation; less effective in humid air). Too cold: vasoconstriction, shivering, hairs raised, higher metabolic rate.",
-	'Adaptations: physiological (body processes), behavioural (actions), structural (body features). Red kangaroo: rests in shade, pants and sweats, licks forearms over a dense vessel network. Trends: large extremities in hot climates, compact insulated bodies in cold, countercurrent exchange.',
-	'Feedback has limits: hot air can add heat. Evaporation becomes crucial when dry heat loss is limited; it needs water.',
+	'Endotherm: most body heat from its own metabolism. Ectotherm: most heat from its surroundings.',
+	'Thermoreceptors (skin, hypothalamus) → hypothalamus → effectors.',
+	'Neural pathway: nerve impulses, fast and targeted. Hormonal (thyroxine): slower, longer-lasting.',
+	'Too hot: arterioles widen (vasodilation) and sweat evaporates. Vessels do not move.',
+	'Too cold: arterioles narrow, muscles shiver, hairs stand up.',
+	'Adaptations: physiological (a process), behavioural (an action), structural (a feature).',
+	'Trends: large ears in hot climates; compact, furry bodies in cold; countercurrent exchange.',
+	'Feedback has limits: hot air adds heat, and sweating needs water.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Hot: widen and wet. Cold: narrow and shiver." tag="For any adaptation: a body process, a behaviour or a body feature?" size={27} aidTop={820} />
+	<NotesBoard notes={NOTES} aid="Hot: widen and wet. Cold: narrow and shiver." tag="For any adaptation: a body process, a behaviour or a body feature?" size={34} aidTop={820} />
 );

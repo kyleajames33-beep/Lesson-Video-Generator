@@ -11,7 +11,7 @@ import {Heading, Overlay} from '../bio-m5-b13/shared';
 import {NB, S} from './common';
 import {
 	AMBER, AMBER_INK, Balance, COOL, CTag, DLbl, DrawPath, FEAT, GREY_INK, GTag, HeadOutline, INK, INK_SOFT, MistakeChip, PLATES, Pl, PlateB, RingThumb, Shade, SkinPair, Sx, TEAL, Thermo,
-	WARM, pbPt, prog, skinPt, smooth, tiltOf, vis,
+	WARM, lerp, pbPt, prog, scribbleEllipse, skinPt, smooth, tiltOf, vis,
 } from './parts';
 import {SK} from './s1';
 import {Countercurrent, EvapDots, HeatArrows, Pointer, SignalPulse, tremor} from '../m8-shared/parts';
@@ -86,21 +86,26 @@ export const TreeShade: React.FC<{x: number; y: number; at: number; s?: number}>
 const COLS = [{x: 120, key: 'phys'}, {x: 720, key: 'beh'}, {x: 1320, key: 'struct'}];
 export const SceneTypes: React.FC = () => {
 	const f = useCurrentFrame();
+	const st = smooth(prog(f, K7.phys - 30, 30));
+	const colsAt = K7.phys - 24;
 	return (
 		<>
 			<Heading text="Three types of adaptation" at={4} size={52} />
 			<Overlay>
 				<Balance tilt={tiltOf([[0, -14], [10, 0]])} />
+				{/* Quality fix: the three columns frame the stage and the warm skin (the responses just shown) is there from frame 0. */}
+				{COLS.map((c, i) => <rect key={c.key} x={c.x - 20} y={400} width={520} height={620} rx={22} fill="#fffdf8" stroke="rgba(60,45,20,0.18)" strokeWidth={2.5} opacity={0.9 * prog(f, colsAt + i * 6, 16)} />)}
+				<Sx x={960} y={1010} text="the responses you just saw" size={34} color={INK_SOFT} anchor="middle" hand weight={700} at={6} out={K7.phys - 30} />
 				<CTag x={COLS[0].x} y={420} text="physiological: body processes that switch on and off" at={K7.phys} color={TEAL} size={32} maxW={470} dim={prog(f, K7.beh, 10)} />
 				<CTag x={COLS[1].x} y={420} text="behavioural: actions the animal takes" at={K7.beh} color={AMBER_INK} size={32} maxW={470} dim={prog(f, K7.struct, 10)} />
 				<CTag x={COLS[2].x} y={420} text="structural: body features, there all the time" at={K7.struct} color={WARM} size={32} maxW={470} />
-				<Pl p={PLATES.warm} cx={360} cy={760} w={320} o={vis(f, K7.phys + 10, undefined, 14)} />
-				<Sx x={360} y={950} text="sweating, vasodilation" size={26} color={INK_SOFT} anchor="middle" hand weight={700} at={K7.phys + 20} />
+				<Pl p={PLATES.warm} cx={lerp(960, 360, st)} cy={lerp(640, 770, st)} w={lerp(640, 330, st)} o={prog(f, 0, 10)} />
+				<Sx x={360} y={980} text="sweating, vasodilation" size={30} color={INK_SOFT} anchor="middle" hand weight={700} at={K7.phys + 20} />
 				<TreeShade x={960} y={740} at={K7.beh + 10} />
-				<Sx x={960} y={950} text="moving into shade" size={26} color={INK_SOFT} anchor="middle" hand weight={700} at={K7.beh + 20} />
-				<Pl p={PLATES.seal} cx={1560} cy={760} w={420} o={vis(f, K7.struct + 10, undefined, 14)} />
-				<GTag x={1400} y={920} text="blubber under the skin" at={K7.fur + 10} size={22} />
-				{void K7.these}{void K7.there}{void COLS}
+				<Sx x={960} y={980} text="moving into shade" size={30} color={INK_SOFT} anchor="middle" hand weight={700} at={K7.beh + 20} />
+				<Pl p={PLATES.seal} cx={1560} cy={760} w={440} o={vis(f, K7.struct + 10, undefined, 14)} />
+				<GTag x={1560} y={930} text="blubber under the skin" at={K7.fur + 10} size={26} anchor="middle" />
+				{void K7.these}{void K7.there}
 			</Overlay>
 		</>
 	);
@@ -148,35 +153,47 @@ export const SceneRoo: React.FC = () => {
 };
 
 // ---------- 9. Trends across endotherms ----------
-const K9 = cues(S('trends'), {across: 'Across endotherms', hot: 'Mammals in hot', large: 'large, thin ears', shed: 'shed heat', cold: 'Mammals in cold', compact: 'more compact', fur: 'thick fur', slows: 'slows heat loss', penguin: "In a penguin's", arteries: 'arteries carrying', veins: 'veins bringing', passes: 'Heat passes across', returns: 'returns to the', cc: "That's countercurrent"});
+const K9 = cues(S('trends'), {across: 'Across endotherms', hot: 'Mammals in hot', large: 'large, thin ears', shed: 'shed heat', cold: 'Mammals in cold', compact: 'more compact', fur: 'thick fur', slows: 'slows heat loss', penguin: "In a penguin's", arteries: 'arteries carrying', veins: 'veins bringing', passes: 'Heat passes across', returns: 'returns to the', cc: "That's countercurrent", dolphin: "a dolphin's"});
 export const SceneTrends: React.FC = () => {
 	const f = useCurrentFrame();
-	const dim = 1 - 0.7 * prog(f, K9.penguin, 14);
-	const out = prog(f, K9.penguin + 10, 20);
+	// Quality fix: painted animals replace the faint head outlines and stay solid; on "In a penguin's" they shrink into a
+	// left column so the countercurrent pair can take the stage, and the dolphin shows where the exchange happens.
+	const m = smooth(prog(f, K9.penguin, 30));
+	const E = {cx: lerp(560, 240, m), cy: lerp(600, 400, m), w: lerp(560, 340, m)};
+	const L = {cx: lerp(1290, 240, m), cy: lerp(610, 690, m), w: lerp(440, 290, m)};
+	const SE = {cx: lerp(1690, 240, m), cy: lerp(740, 910, m), w: lerp(260, 250, m)};
+	const eo = vis(f, K9.hot + 10, undefined, 14);
+	const [ex, ey] = pbPt(PLATES.elephant, E.cx, E.cy, E.w)(...FEAT.ear);
+	const D = {cx: 760, cy: 790, w: 520};
+	const [fx, fy] = pbPt(PLATES.dolphin, D.cx, D.cy, D.w)(...FEAT.flipper);
 	return (
 		<>
 			<Heading text="Trends across endotherms" at={4} size={52} />
 			<Overlay>
 				<Balance tilt={() => 0} />
-				<Pl p={PLATES.roo} cx={180} cy={300} w={200} dim={0.6} o={0.7} />
-				<g opacity={dim} transform={`translate(${-260 * out},0)`}>
-					<HeadOutline cx={600} cy={620} big at={K9.large} />
-					<HeatArrows x={380} y={470} w={440} at={K9.shed} n={4} len={110} />
-					<Sx x={600} y={840} text="hot climate: large extremities" size={30} color={WARM} anchor="middle" hand weight={700} at={K9.large + 10} />
-					<HeadOutline cx={1120} cy={640} big={false} at={K9.compact} />
-					<HeatArrows x={1020} y={530} w={200} at={K9.compact + 10} n={3} len={45} color={WARM} />
-					<Sx x={1120} y={840} text="cold climate: compact" size={30} color={COOL} anchor="middle" hand weight={700} at={K9.compact + 10} />
-					<Pl p={PLATES.seal} cx={1120} cy={950} w={230} o={vis(f, K9.fur, undefined, 12)} />
-					<GTag x={1260} y={930} text="blubber" at={K9.fur + 6} size={22} />
-				</g>
-				<GTag x={96} y={1010} text="p01 tests this with a model" at={K9.slows} size={22} />
+				<Pl p={PLATES.elephant} cx={E.cx} cy={E.cy} w={E.w} o={eo} />
+				<HeatArrows x={ex - 90} y={ey - 130} w={180} at={K9.shed} out={K9.penguin} n={3} len={90} />
+				{f >= K9.large && f < K9.penguin + 12 ? <g opacity={1 - prog(f, K9.penguin, 12)}><DrawPath d={scribbleEllipse(ex, ey + 10, 85, 120, 5)} at={K9.large} dur={16} color={WARM} width={5} /></g> : null}
+				<Sx x={560} y={880} text="hot climate: large, thin ears" size={34} color={WARM} anchor="middle" hand weight={700} at={K9.large + 10} out={K9.penguin} />
+				<Pl p={PLATES.lynx} cx={L.cx} cy={L.cy} w={L.w} o={vis(f, K9.compact - 10, undefined, 14)} />
+				<Sx x={1290} y={880} text="cold climate: compact, thick fur" size={34} color={COOL} anchor="middle" hand weight={700} at={K9.compact + 10} out={K9.penguin} />
+				<Pl p={PLATES.seal} cx={SE.cx} cy={SE.cy} w={SE.w} o={vis(f, K9.fur + 10, undefined, 12)} />
+				<GTag x={1690} y={810} text="blubber" at={K9.fur + 16} out={K9.penguin} size={26} anchor="middle" />
+				<Sx x={430} y={410} text="hot: big ears" size={30} color={WARM} hand weight={700} at={K9.penguin + 30} />
+				<Sx x={410} y={700} text="cold: compact" size={30} color={COOL} hand weight={700} at={K9.penguin + 30} />
+				<Sx x={390} y={925} text="blubber" size={30} color={COOL} hand weight={700} at={K9.penguin + 30} />
+				<GTag x={1120} y={1010} text="p01 tests this with a model" at={K9.slows} out={K9.penguin} size={26} />
+				<Pl p={PLATES.dolphin} cx={D.cx} cy={D.cy} w={D.w} o={vis(f, K9.dolphin, undefined, 14)} />
+				{f >= K9.arteries ? <DrawPath d={scribbleEllipse(fx, fy, 50, 40, 7)} at={K9.arteries} dur={14} color={AMBER} width={5} /> : null}
+				{f >= K9.arteries + 8 ? <DrawPath d={`M${fx + 50},${fy - 20} L1110,640`} at={K9.arteries + 8} dur={14} color={INK_SOFT} width={3} dash="8 8" /> : null}
+				<GTag x={D.cx} y={D.cy + 110} text="dolphin flipper" at={K9.dolphin + 10} size={26} anchor="middle" />
 				<Countercurrent x={1160} y={380} h={500} gap={130} at={K9.arteries - 10} crossAt={K9.passes} />
 				<Sx x={1120} y={420} text="warm blood out" size={30} color="#c8372d" anchor="end" hand weight={700} at={K9.arteries} />
 				<Sx x={1330} y={860} text="cool blood back" size={30} color="#3a63b8" hand weight={700} at={K9.veins} />
-				<GTag x={1330} y={520} text="penguin legs, dolphin flippers" at={K9.arteries + 10} size={22} />
-				<Sx x={1330} y={660} text="heat crosses to the vein" size={28} color={AMBER_INK} hand weight={700} at={K9.passes + 6} />
+				<GTag x={1330} y={510} text="penguin legs, dolphin flippers" at={K9.arteries + 10} size={26} />
+				<Sx x={1330} y={660} text="heat crosses to the vein" size={30} color={AMBER_INK} hand weight={700} at={K9.passes + 6} />
 				<CTag x={1330} y={950} text="countercurrent exchange" at={K9.cc} color={AMBER_INK} size={36} />
-				{void K9.across}{void K9.hot}{void K9.cold}{void K9.returns}{void INK}
+				{void K9.across}{void K9.cold}{void K9.returns}{void INK}{void HeadOutline}
 			</Overlay>
 		</>
 	);
