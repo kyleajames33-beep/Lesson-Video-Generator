@@ -42,3 +42,18 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - `FunctionRider` (merge with `FunctionSimulator`), `RotatingPlate`, `RateChainStrips`, `AreaStrips` with growth bars, and `TripSim`;
     - a moving domain strip, and studio-sized `Cancellation`, `SignStrip`, `PairedDerivativePanel` and `TangentTriangle`;
     - a `QuestionCard` picture slot with a `GivensStrip`.
+
+## d10 to d14 (wave 3)
+
+16. **Anchors:**
+    - d10: a roller coaster height profile. The top of the climb is the global maximum and the start and dip tie for the minimum. It is kept although d09 is a hike, because d10's fixed hook curve reads most naturally as a track.
+    - d11: a lighthouse beam on a straight beach, where the spot is at tan x.
+    - d12: sun, tower and shadow (tan and sec, and the co-partner minus).
+    - d13: a drone camera tilting, where speed = sec²(tilt) × tilt rate. Accepted: no everyday context gives 3^(2x) a fresh meaning without repeating money.
+    - d14: headlights on a curving road (the tangent and the normal).
+    d11 to d13 share trig geometry but are different contexts. Accepted.
+17. **Colours at joins.** The d14 to d15 join curves stay blue until d15 is redesigned; then both move to ink together. Other join colours changed inside d10 to d14, and each next opening describes the new frame.
+18. **d12** runs about 551 s, under the cap. Its reserve trims apply only if the voiced takes run long.
+19. **Plates commissioned:** `ma12-coaster-track-v1` (painted to the 11-point rail guide), `ma12-coaster-car-v1`, `ma12-lighthouse-v1`, `ma12-lighthouse-islet-top-v1`, `ma12-beach-strip-top-v1` and `ma12-tower-block-v1`. Reused: `phys-y11-sun-v1`, `phys-y11-drone-side-v1`, `phys-y11-ground-strip-v1` and `phys-y11-car-top-v1`.
+20. **Re-voice lists:** d10 scenes 1 and 4; d11 scenes 1 and 2; d12 scenes 1 and 8; d13 scenes 1 and 3; d14 scenes 1 and 5.
+21. **Kit.** Generic parts join the studio kit: `CandidateValueTable`, a branch-safe rider, linked riders, `normalLine` and `QuarterTurnNormal`, name-swap chips, and an interval picture for question cards. The anchor simulations (`CoasterRide`, `BeamSweep`, `SunShadow`, `DroneTilt` and `HeadlightDrive`) are built in each lesson's own folder on top of `FunctionSimulator` and `RotatingPlate`.
