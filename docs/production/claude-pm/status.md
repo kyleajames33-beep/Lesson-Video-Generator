@@ -4450,3 +4450,237 @@ phys-y12-m6-v20 (Revision 1): 6389 narration characters, about 564 seconds. chec
 Plates:15new native PNGs with transparent margins, sidecars, per-design provenance and assets/brief190-manifest.json. Coded plastic tube per root15. Paired contours and textures are approximate; no seamless-swap or playback pass. Static motor geometry, flywheel, tube/magnet fit and fan/switch registration inspected in QA. Coaster fin extends below wheels and channel ends are open, but integrated car/rail fit remains held for coded scale/depth/mask review.
 
 Coverage: all15official Module6points traced across20designs through33analytic facets with one primary owner each. Wire investigation conduct and motor practical remain gaps; motor energy-proof blocker remains.16reports,31numerical cases,5direction checks and24site-log records, including checked-acceptable dispositions. One blocker,nine should-fix,four optional. No design,narration,speech,render,HTML,commit or release edit.
+
+
+## Codex night takeover: brief 196 YouTube access, 6 November 2026
+
+The previous kernel-assets error no longer occurs. The cua runtime starts and @oai/sky imports. Two inventories and a direct Chrome selection still fail: "The browser access host is unavailable". Windows inventory returns "Computer Use native pipe is unavailable: failed to connect native pipe: The system cannot find the file specified. (os error 2)". This is a missing tool connection, not evidence that Chrome is closed. No unlisting, upload, publication, playlist change or link replacement occurred.
+
+Preserved the completed b06 and b10 v2 checks. Added both checked masters, old links, copied metadata, captions and saved playlist information to work/youtube-pending.json. b06 has historical position 7; b10 has no saved position and needs live readback. Exact access evidence: work/brief196/youtube-access-night.json. The owner can upload by hand from the pending file.
+
+Brief 213 pre-voice check passes: 17 scenes, 6,563 characters, all bold cues quoted in visual order, no em dashes. Revision 6 resolves 195-1 through 195-5. Preserved v1 state and audio in work/brief213/v1-backup/. Five unchanged scenes are reusable, so twelve new scene requests are needed. Current local quota ledger has 94 requests; the complete lesson cannot fit before the 19:00 reset under the 99-request cap. No speech requested. The scheduled brief 165 task is Ready for 19:00 Sydney and has not run. Run d01 after that task, subject to remaining quota. Pre-voice evidence and prepared inputs: work/brief213/prevoice-check.json, voice-manifest.json and lesson.json.
+
+
+## Codex hand-in: brief 214, 6 November 2026
+
+Ten repaired designs checked: zero blockers, six should-fix findings, no source or speech edits. The former capped-vessel blocker is resolved by the no-gas fallback. Guard-digit repairs and all new slider values were recalculated.
+
+- chem-y11-m2-v01: 5975 characters, about 530 s; clean. Report: docs/production/claude-pm/checks/c-y11-m2-v01-rev2-error-check.md.
+- chem-y11-m2-v02: 5578 characters, about 502 s; 2 should fix. Report: docs/production/claude-pm/checks/c-y11-m2-v02-rev2-error-check.md.
+- chem-y11-m2-v03: 5683 characters, about 508 s; 1 should fix. Report: docs/production/claude-pm/checks/c-y11-m2-v03-rev2-error-check.md.
+- chem-y11-m2-v04: 6331 characters, about 556 s; 1 should fix. Report: docs/production/claude-pm/checks/c-y11-m2-v04-rev2-error-check.md.
+- chem-y11-m2-v05: 5754 characters, about 527 s; clean. Report: docs/production/claude-pm/checks/c-y11-m2-v05-rev2-error-check.md.
+- chem-y11-m2-v06: 5769 characters, about 527 s; clean. Report: docs/production/claude-pm/checks/c-y11-m2-v06-rev3-error-check.md.
+- chem-y11-m2-v07: 5684 characters, about 521 s; clean. Report: docs/production/claude-pm/checks/c-y11-m2-v07-rev2-error-check.md.
+- chem-y11-ws-v04: 5847 characters, about 524 s; 1 should fix. Report: docs/production/claude-pm/checks/c-y11-ws-v04-rev2-error-check.md.
+- chem-y11-ws-v05: 6405 characters, about 567 s; 1 should fix. Report: docs/production/claude-pm/checks/c-y11-ws-v05-rev2-error-check.md.
+- chem-y11-ws-v06: 5596 characters, about 513 s; clean. Report: docs/production/claude-pm/checks/c-y11-ws-v06-rev2-error-check.md.
+
+Findings: v02 has a stale scene-11 sentence number and an early missing-two cross in scene 17; v03 has early grams occurrences in scene 2; v04 shows 247 where the new simulation gives 247.9; ws-v04 has two stale stage-cut ordinals; ws-v05 retains the withdrawn independent-extremes range clause in author calculations. Each repair needs no new speech.
+
+Plate delivered: public/assets/chemistry/y11c-beaker-white-precipitate-v1.png, native 1254 by 1254 RGBA, generated with built-in image_gen as an edit of the existing beaker. Paper/dark/white 300 px and 600 px QA and the overlay inspected. Vessel geometry is visually aligned; exact pixel-identical edges are not claimed. Alpha difference from the reference averages 0.457/255. Original assets and earlier evidence preserved. Updated assets/brief180-manifest.json and assets/chem-y11-m2-v01-provenance.json; bottle requests marked withdrawn. Prompt: work/brief214/plate-prompt.txt. Evidence: work/brief214/audit.json, calculations.json, results.json and plate-qa.json. No integrated build, motion, voiced-preview or human-listening pass.
+
+## Codex hand-in: brief 199 partial checks, 6 November 2026
+
+chem-m6-g03 and chem-m7-c10 pass fresh asset/font decoding and have inspected 16-frame pre-render sheets beside the g01 reference. Full renders are held by the new build gate: g03 has 34 to 38 px current working and 24 px bridge values; c10 has 23 px key notes and 24 px feedback reading. Reports and comparison sheets: work/brief199/chem-m6-g03/ and work/brief199/chem-m7-c10/. The brief 196 g03 session scan was reused.
+
+chem-m7-p05 passes asset/font decoding but its still bundle failed with ENOSPC. chem-m8-c01 has not started. C: has about 14 MB free. Automatic approval review rejected cleanup of this session's generated copies, including the narrower hash-verified file-only attempt, returning blocked by policy. No files were removed. Later full render briefs 198 and 200 to 212, plus new brief 215, remain queued behind disk space and the per-video build gate. No new checked master was added to the upload queue.
+
+chem-m7-p06's flagged title-only and partial-table samples match source reveal delays, not missing image dependencies. Exact sample-frame markup and scene positions are in work/brief199/p06-source-probe.json and p06-source-05.html to -08.html. No re-render requested from these samples; playback judgement belongs to Claude.
+
+Historical records map NJjEgjilgAE to c05 (The Equilibrium Constant, K: Writing Expressions), position 7, and PL415_P6F6w to c10 (Ka, Kb and Ksp), position 15. Live watch-page and oEmbed reads were throttled, so current titles remain unverified. No link correction, unlisting or upload occurred. Full report: work/brief199/p06-and-link-check.md. Brief 213 waits for the scheduled task and sufficient quota and disk; the 19:00 task remains unchanged.
+
+
+## Codex continuation: disk and pilot preparation, 6 November 2026
+
+Owner freed C: and authorised normal C: render scratch, one render at a time, with each chunk folder removed only after its v2 master passes checks. Added optional --keep-chunks to scripts/render-explainer.mjs so chunks can survive until those checks; default behaviour is unchanged. Syntax check passes. No chunks removed yet.
+
+Brief 199: chem-m7-p05 still retry now completes and passes asset/font decoding. Its 16-frame sheet fails the build gate: thin frames 4 and 5, empty feedback box in frame 14, 36 px current working, 24/22 px feedback reading and paragraph notes. Full render held. Evidence: work/brief199/chem-m7-p05/pre-render-sheet.jpg, pre-render-comparison.jpg and build-report.md. chem-m8-c01 remains to check. Updated handoff shelves 206 to 212 and 215; those will not run.
+
+Brief 217: phys-y12-m5-v04 Revision 2 error check is clean. Fifteen scenes, 5,859 characters, all bold cues quoted in order, launcher plates inspected. Recalculated all slider stops and changed examples in work/brief217/calculations.json. At 37 degrees the range is correctly 22.1 m in the current source. Report: docs/production/claude-pm/checks/p-y12-m5-v04-rev2-error-check.md. Chemistry Revision 3 remains covered by the clean brief 214 check.
+
+Briefs 213 and 217: prepared exact-source voice inputs and recording gates for all three pilots, each ready. Paths and source hashes: work/brief217/pilot-queue.json. Five unchanged maths takes are reused. Added the central pronunciation rule for mathematical constant a to say ay; targeted checks pass without changing ordinary a. No new speech request yet. The unchanged 19:00 brief 165 task has first use of the reset quota; recheck its result before starting any pilot generation. Human listening and exact voiced preview remain pending.
+
+
+## Codex hand-in: brief 216, 6 November 2026
+
+Ten repaired designs checked. Zero blockers, two visual-only should-fix findings. No source, narration or speech edits. All repaired working and new slider stops recalculated in work/brief216/calculations.json. Reused brief 181 plate records; no new plate requested.
+
+chem-y11-m2-v08: 6,311 characters, about 563 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v08-rev2-error-check.md.
+
+chem-y11-m2-v09: 6,295 characters, about 564 s; 0 blockers, 1 should fix. docs\production\claude-pm\checks\c-y11-m2-v09-rev2-error-check.md.
+
+chem-y11-m2-v10: 5,672 characters, about 519 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v10-rev2-error-check.md.
+
+chem-y11-m2-v11: 5,705 characters, about 521 s; 0 blockers, 1 should fix. docs\production\claude-pm\checks\c-y11-m2-v11-rev2-error-check.md.
+
+chem-y11-m2-v12: 6,291 characters, about 562 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v12-rev2-error-check.md.
+
+chem-y11-m2-v13: 5,665 characters, about 513 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v13-rev2-error-check.md.
+
+chem-y11-m2-v14: 5,659 characters, about 512 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v14-rev2-error-check.md.
+
+chem-y11-m2-v15: 5,567 characters, about 506 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v15-rev2-error-check.md.
+
+chem-y11-m2-v16: 5,573 characters, about 506 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-m2-v16-rev2-error-check.md.
+
+chem-y11-ws-v07: 6,342 characters, about 567 s; 0 blockers, 0 should fix. docs\production\claude-pm\checks\c-y11-ws-v07-rev2-error-check.md.
+
+New findings: v09 scene 3 has stale first/second grams ordinals, which should be second/third or full result phrases. v11 scene 6 gives 4.5 g/L and 4500 mg/L at 0.5%; correct to 5.0 g/L and 5000 mg/L. Its 0.0856 mol/L is already right. All original brief 181 findings are resolved. Human listening and built playback remain pending.
+
+
+Brief 199 final pre-render check: chem-m8-c01 now completes 16 stills and asset/font decoding, including burette and flask. Its sheet fails the current gate: thin frames 7 and 11, 42 px worked lines, 38 px feedback working and 25.2 px retained question, plus paragraph notes. Report and comparison: work/brief199/chem-m8-c01/. All four brief 199 full renders are held for Claude scene repairs under the current Grade A gate. The original missing dependencies are restored in the guarded stills; no new v2 master or pending upload added.
+
+
+Brief 198: bio-m6-b04, bio-m6-b05 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief198\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 200: bio-m6-b07, bio-m6-b10 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief200\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 201: bio-m5-g03, bio-m7-b11 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief201\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 202: chem-m6-c06, chem-m6-c07 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief202\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 203: bio-m6-b11, chem-m6-c10 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief203\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 204: bio-m6-b12, bio-m6-b16 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief204\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief 205: bio-m6-b19, bio-m7-b04 held before render. Both current builder notes explicitly grade the fixed stills B+, below the newer Grade A gate in maths-visual-standard.md. Evidence and note hashes: work\brief205\pre-render-gate.json. No v2 render, scan, playback or upload claimed. Scene edits belong to Claude.
+
+
+Brief165 after-reset worker stopped: bio-y11-fa1-v01: generation/alignment failed; no retry; saved takes retained. Saved takes retained; later lessons not attempted.
+
+
+Owner override, 6 November 2026: Render the B+ replacements. The 14 entries in briefs 198 and 200 to 205 are authorised at their recorded B+ grade; work/replacement-A-gate-queue.json and each brief gate file are updated. One render at a time on normal C: scratch, keep chunks until v2 checks pass, then delete that render chunk folder. Owner also chose continued cached recording and light reviews while memory is tight. The four brief 199 findings remain separately reported.
+
+
+Brief 165 scheduled result: stopped on bio-y11-fa1-v01 after 9 requests ($0.0610515 estimated from billed tokens). Alignment failed loading model weights with DefaultCPUAllocator not enough memory (9,437,184-byte allocation). The task stopped without retry and retained its takes. Later lessons were not attempted. Results and spend: work/brief165-bio-physics/results.json and spend.json.
+
+Briefs 213 and 217: all three pilot recordings are now captured in cache, never revoicing unchanged takes. Maths: 12 new, 5 reused, $0.09038 new estimated cost. Chemistry: 16 new, 1 reused, $0.08880 new estimated cost. Physics: 14 new, 1 reused, $0.08740 new estimated cost. Per-scene paths, hashes, tokens and represented take costs are in work/brief213/math-a12-d01-capture-stats.json and work/brief217/*-capture-stats.json. Alignment, measured output, cues and captions are pending memory availability. No measured pass or human listening is claimed.
+
+The lower-memory experiment loaded the same weights but still exhausted memory during inference; one diagnostic PowerShell process also exited out of memory. The original working scripts/align-google-scene.py was restored, and the unsuccessful experiment is isolated in work/brief217/align-google-low-memory-probe.py with logs. Owner selected continued cached recording and light reviews rather than closing apps. Do not re-request these saved takes.
+
+### Brief 213: math-a12-d01 cached voicing and measured data, 6 November 2026
+
+Recording-stage check passed on the exact source SHA256 `64ade7ba77e32f3a01d7d06036f710b819bfcbe2a8a86af206d0c3cdf1d75f2c`. 6,563 characters, 17 scenes, 12 new takes and 5 reused. Measured duration 539.47 s including the design holds. New billed usage: 1345 input and 9968 audio output tokens, USD 0.090384. All represented takes including reuse: 1620 input and 11957 output tokens, USD 0.108423; this is not new spend. Cache-only alignment made zero new speech requests.
+
+Measured data: `docs/production/claude-pm/lessons/math-a12-d01/measured/lesson.json`. All display-text alignments, scene ids, holds and bold-cue timings checked. Worst word gap: 1.168 s in `worked-2`. Captions: `docs/production/claude-pm/lessons/math-a12-d01/measured/captions-rev6/captions.srt` and `.vtt`, 226 cues, monotonic and within the measured timeline. Claude must regenerate from any later playback timeline with added holds.
+
+Machine flags: three-flasks (1 full-scale samples), dial-a (2 full-scale samples), attempt-1 (1 full-scale samples). No quiet blocks of 1.5 s or longer in these speech WAVs. Isolated full-scale samples and low alignment scores are listening flags, not a clipping diagnosis. See `work/brief213/math-a12-d01-validation.json` and `work/brief213/math-a12-d01-hand-in.json` for each scene, pronunciation text, usage and timings. Human listening is pending, including the mathematical letter pronunciation where applicable. No scenes were built or rendered.
+
+### Brief 191: Module7 source reviews, coverage, site log and plates
+
+phys-y12-m7-v01: Revision1 source checked, 6,087 scene-sum characters; 0 blockers, 1 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v01-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v01-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v02: Revision1 source checked, 6,121 scene-sum characters; 0 blockers, 3 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v02-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v02-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v03: Revision1 source checked, 6,181 scene-sum characters; 0 blockers, 3 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v03-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v03-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v04: Revision1 source checked, 6,070 scene-sum characters; 0 blockers, 1 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v04-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v04-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v05: Revision1 source checked, 6,267 scene-sum characters; 0 blockers, 1 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v05-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v05-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v06: Revision1 source checked, 6,253 scene-sum characters; 0 blockers, 1 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v06-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v06-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v07: Revision1 source checked, 6,140 scene-sum characters; 0 blockers, 1 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v07-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v07-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v08: Revision1 source checked, 6,283 scene-sum characters; 0 blockers, 2 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v08-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v08-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v09: Revision1 source checked, 6,430 scene-sum characters; 0 blockers, 2 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v09-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v09-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v10: Revision1 source checked, 6,277 scene-sum characters; 0 blockers, 3 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v10-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v10-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v11: Revision1 source checked, 6,158 scene-sum characters; 0 blockers, 3 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v11-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v11-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v12: Revision1 source checked, 6,218 scene-sum characters; 0 blockers, 3 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v12-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v12-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v13: Revision1 source checked, 6,395 scene-sum characters; 0 blockers, 1 should fix, 0 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v13-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v13-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v14: Revision1 source checked, 6,338 scene-sum characters; 0 blockers, 2 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v14-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v14-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v15: Revision1 source checked, 5,962 scene-sum characters; 0 blockers, 2 should fix, 1 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v15-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v15-science-check.md`. Resolve findings before recording.
+
+phys-y12-m7-v16: Revision1 source checked, 5,678 scene-sum characters; 0 blockers, 3 should fix, 2 optional. Reports: `docs/production/claude-pm/checks/p-y12-m7-v16-learning-review.md` and `docs/production/claude-pm/checks/p-y12-m7-v16-science-check.md`. Resolve findings before recording.
+
+Coverage: `checks/phys-y12-m7-coverage-check.md`, with exact official-ledger matching and independent arithmetic under `work/brief191/`. Cosmological time-dilation evidence remains a deferred Module7 gap under root decision7. Written joins match through the current m8-v01 opening; source-only evidence is `work/brief191/joins.json`.
+
+Site:44 deduplicated current-source findings and checked-acceptable dispositions appended to `site-corrections-phys-y12.md`; SHA256 and full paragraph context in `work/brief191/site-log-result.json`. No HTML edited. In particular, the impossible100m/60m observer setup and the flown-clock sign contradiction are confirmed. Several proposed historical/rounding repairs needed qualification; the log distinguishes these.
+
+Plates:18 native unaltered PNGs delivered under `public/assets/physics/`, actual dimensions, approximate pixel anchors, originals and hashes in `assets/brief191-manifest.json`;16 per-design provenance files and paper/dark/white400px QA in `assets/brief191-qa/`. No people, hands, faces, readable text or logos observed. The60 painted wheel teeth were measured. The spacecraft/exhaust same-canvas composite fits the nozzle. One hot-heater candidate is held: image edits did not preserve exact canvas/outline registration for a crossfade. Star variants preserve the existing Sun size and position, including its less-than8% left margin; literal8% on every side cannot also be claimed. Nominal requested canvas sizes differ from native outputs.
+
+Bench fit: uniform base-width scales and common foot baseline recorded in `assets/brief191-qa/bench-fit.json`. This exposes a lower laser aperture than the slide window/screen. Adjust post or raiser geometry before the straight-beam build; do not stretch the artwork. A100px coded filter fits the reported clear window. Existing filament-lamp-v1 has true alpha, so no conditional replacement; optional filter mount was not selected. Static QA supplies no playback, listening, practical-conduct or recording approval. No design, narration or scene code changed.
+
+### Brief 217: chem-y11-m2-v06 cached voicing and measured data, 6 November 2026
+
+Recording-stage check passed on the exact source SHA256 `faed58f0ff934cd6cb0140210182c0f61aa934286e812c3c9863350e913908dd`. 5,769 characters, 17 scenes, 16 new takes and 1 reused. Measured duration 477.93 s including the design holds. New billed usage: 1231 input and 9798 audio output tokens, USD 0.088798. All represented takes including reuse: 1250 input and 9895 output tokens, USD 0.089680; this is not new spend. Cache-only alignment made zero new speech requests.
+
+Measured data: `docs/production/claude-pm/lessons/c-y11-m2-v06/measured/lesson.json`. All display-text alignments, scene ids, holds and bold-cue timings checked. Worst word gap: 1.025 s in `particles-to-moles`. Captions: `docs/production/claude-pm/lessons/c-y11-m2-v06/measured/captions-pilot/captions.srt` and `.vtt`, 175 cues, monotonic and within the measured timeline. Claude must regenerate from any later playback timeline with added holds.
+
+Machine flags: none. No quiet blocks of 1.5 s or longer in these speech WAVs. Isolated full-scale samples and low alignment scores are listening flags, not a clipping diagnosis. See `work/brief217/chem-y11-m2-v06-validation.json` and `work/brief217/chem-y11-m2-v06-hand-in.json` for each scene, pronunciation text, usage and timings. Human listening is pending, including the mathematical letter pronunciation where applicable. No scenes were built or rendered.
+
+### Brief 217: phys-y12-m5-v04 cached voicing and measured data, 6 November 2026
+
+Recording-stage check passed on the exact source SHA256 `5a3d43fdc71e17cee0569047a053a58642b1c8db9c8415a48be0d5fcfce6f6d4`. 5,859 characters, 15 scenes, 14 new takes and 1 reused. Measured duration 473.60 s including the design holds. New billed usage: 1275 input and 9640 audio output tokens, USD 0.087398. All represented takes including reuse: 1294 input and 9737 output tokens, USD 0.088280; this is not new spend. Cache-only alignment made zero new speech requests.
+
+Measured data: `docs/production/claude-pm/lessons/p-y12-m5-v04/measured/lesson.json`. All display-text alignments, scene ids, holds and bold-cue timings checked. Worst word gap: 1.106 s in `attempt-1`. Captions: `docs/production/claude-pm/lessons/p-y12-m5-v04/measured/captions-pilot/captions.srt` and `.vtt`, 174 cues, monotonic and within the measured timeline. Claude must regenerate from any later playback timeline with added holds.
+
+Machine flags: two-traps (2 full-scale samples). No quiet blocks of 1.5 s or longer in these speech WAVs. Isolated full-scale samples and low alignment scores are listening flags, not a clipping diagnosis. See `work/brief217/phys-y12-m5-v04-validation.json` and `work/brief217/phys-y12-m5-v04-hand-in.json` for each scene, pronunciation text, usage and timings. Human listening is pending, including the mathematical letter pronunciation where applicable. No scenes were built or rendered.
+
+### Brief 218: repaired Year11 Chemistry source checks and yellow-flame attempt
+
+chem-y11-m2-v17: Revision2 checked, 5,759 characters, source estimate 522s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m2-v17-rev2-error-check.md`.
+
+chem-y11-m2-v18: Revision2 checked, 6,380 characters, source estimate 570s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m2-v18-rev2-error-check.md`.
+
+chem-y11-m2-v19: Revision2 checked, 5,841 characters, source estimate 529s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m2-v19-rev2-error-check.md`.
+
+chem-y11-m2-v20: Revision2 checked, 5,913 characters, source estimate 537s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m2-v20-rev2-error-check.md`.
+
+chem-y11-m3-v01: Revision2 checked, 5,588 characters, source estimate 510s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v01-rev2-error-check.md`.
+
+chem-y11-m3-v02: Revision2 checked, 5,627 characters, source estimate 508s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v02-rev2-error-check.md`.
+
+chem-y11-m3-v03: Revision2 checked, 6,280 characters, source estimate 562s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m3-v03-rev2-error-check.md`.
+
+chem-y11-m3-v04: Revision2 checked, 5,582 characters, source estimate 506s;0 blockers,2 should fix. `docs/production/claude-pm/checks/c-y11-m3-v04-rev2-error-check.md`.
+
+chem-y11-m3-v05: Revision2 checked, 5,621 characters, source estimate 508s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m3-v05-rev2-error-check.md`.
+
+chem-y11-m3-v07: Revision2 checked, 5,760 characters, source estimate 520s;0 blockers,2 should fix. `docs/production/claude-pm/checks/c-y11-m3-v07-rev2-error-check.md`.
+
+The previous secondary-data blocker is resolved: the six Celsius/pressure pairs exactly match inspected OpenStax Atoms First2e figure8.11. New findings: correct its citation title and identify the two-column subset or include the publisher kelvin column; retie m3-v03 scene4 to sodium rather than potassium; carry the scoped combustion chip through v04/v05/v07; implement root decision19 on screen for the cold dish and calcium demonstrations. All are source/display repairs. Arithmetic, slider stops and66 atom/charge checks are in `work/brief218/`. No source, scene, narration or method was changed or approved.
+
+Plate: revised yellow-flame spec is geometrically possible, but two generated candidates failed exact canvas/outline registration. Held at their original generated-image paths, with paper/dark/white300px QA and overlay in `assets/brief218-qa/`; result `work/brief218/yellow-flame-result.json`. Brief182 manifest and m3-v03 provenance updated without replacing earlier evidence. The production asset path remains absent and the written fallback stands. No stretched or cropped production PNG was created. No other new plate request was confirmed.
+
+### Brief 219: repaired Year11 Chemistry source checks and two plates
+
+chem-y11-m3-v08: Revision2 checked, 6,319 scene-sum characters, source estimate 560s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v08-rev2-error-check.md`.
+
+chem-y11-m3-v09: Revision2 checked, 5,594 scene-sum characters, source estimate 507s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v09-rev2-error-check.md`.
+
+chem-y11-m3-v10: Revision3 checked, 6,400 scene-sum characters, source estimate 566s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v10-rev3-error-check.md`.
+
+chem-y11-m3-v11: Revision2 checked, 6,258 scene-sum characters, source estimate 560s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v11-rev2-error-check.md`.
+
+chem-y11-m3-v12: Revision2 checked, 6,193 scene-sum characters, source estimate 552s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v12-rev2-error-check.md`.
+
+chem-y11-m3-v13: Revision2 checked, 6,140 scene-sum characters, source estimate 552s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m3-v13-rev2-error-check.md`.
+
+chem-y11-m3-v14: Revision2 checked, 6,303 scene-sum characters, source estimate 566s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m3-v14-rev2-error-check.md`.
+
+chem-y11-m3-v15: Revision2 checked, 6,153 scene-sum characters, source estimate 555s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m3-v15-rev2-error-check.md`.
+
+chem-y11-m4-v01: Revision2 checked, 6,372 scene-sum characters, source estimate 570s;0 blockers,1 should fix. `docs/production/claude-pm/checks/c-y11-m4-v01-rev2-error-check.md`.
+
+chem-y11-m4-v02: Revision2 checked, 6,345 scene-sum characters, source estimate 568s;0 blockers,0 should fix. `docs/production/claude-pm/checks/c-y11-m4-v02-rev2-error-check.md`.
+
+Three findings: m3-v13 newly says acid gets weaker rather than less concentrated (repair before voicing); m3-v14 temperature-control practical and m4-v01 spirit-burner view still need the full root decision19 on-screen method condition and presentation limit. Other original repairs are present. Slider rates0.53,0.40,0.27,0.15,0.067, cell values-0.46,+0.78,+1.10,+2.70V, calorimetry results2.76,9.20,1.66kJ and water-mass stops all recalculate.47 atom/charge cases pass with the4 intentional mistakes correctly unbalanced. Evidence: `work/brief219/`. No design, narration or scene code edits.
+
+CO/NO2 source found: Chang Chemistry14e, McGraw Hill, chapter13 slide56 (PDFpage28). The rendered diagram was inspected and matches the effective C-to-O and two ineffective approaches in the design. Source/hash and local page render: `work/brief219/orientation-source.json` and `chang-orientation-page28.png`. It supports the teaching orientation model, not an experimental overall rate law. The former OpenStax attribution is not reused.
+
+Plates: native unaltered `public/assets/chemistry/y11c-gold-nugget-v1.png` (1671x941) and `y11c-cuso4-beaker-silver-v1.png` (1106x1422) delivered. Brief183 manifest and per-design provenance updated; paper/dark/white300px composites and reference overlays in `assets/brief219-qa/`. Glass and beaker outlines visually register; this is not identical pixel data. Gold canvas is1px narrower than1672px reference, explicitly recorded. All PNGs retain native aspect ratio. Zinc and aluminium acid beakers share one physical scale with level rims at native factors0.15 and0.239234 in the QA view. Actual built motion and human listening remain pending.

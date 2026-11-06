@@ -1,0 +1,167 @@
+{
+  "id": "phys-y12-m5-v04",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (longer in the air, same landing)",
+      "voiceover": {
+        "text": "Last time, a ball launched at twenty-five metres per second, at fifty degrees, landed sixty-two point eight metres away. At forty degrees, it landed in exactly the same spot. Forty and fifty add up to ninety, and two angles that add to ninety degrees are called complementary angles. But the fifty degree ball was in the air for about three point nine one seconds, and the forty degree ball for only three point two eight. So how can they possibly land in the same place? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "range-from-columns",
+      "title": "range from the two columns",
+      "voiceover": {
+        "text": "Let's build the range from the two columns. The flight time comes from the vertical column: two u sin theta over g, from last time. The horizontal column turns that time into a distance, so the range, R, is u x times T. That's u cos theta, times two u sin theta over g, which is two u squared sin theta cos theta over g. So the range depends on both components multiplied together: how fast the ball crosses, and how long it stays up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "swap",
+      "title": "the swap",
+      "voiceover": {
+        "text": "Now look at the components for fifty and forty degrees. At fifty degrees, the ball crosses at sixteen point one metres per second and goes up at nineteen point two. At forty degrees, it's the other way round: nineteen point two across, and sixteen point one up. Complementary angles swap the two components, because cos fifty is sin forty. The steeper launch stays up longer, but crosses more slowly. The flatter launch crosses faster, for a shorter time. Swapping two numbers doesn't change their product, so the ranges match exactly."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "shortcut-conditions",
+      "title": "the shortcut and its conditions",
+      "voiceover": {
+        "text": "There's a neater way to write the range. Two sin theta cos theta is the same as sin of two theta. That's a trig identity, called the double angle formula, and you can check it. Two times sin thirty times cos thirty is zero point eight six six, and so is sin sixty. So R equals u squared sin two theta over g. But this shortcut only works when the ball lands at the same level it was launched from, with no air resistance, because it was built from the level-ground flight time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "forty-five",
+      "title": "why forty-five degrees goes furthest",
+      "voiceover": {
+        "text": "This form also shows which angle goes furthest. Sin two theta can never be bigger than one, and it equals one when two theta is ninety degrees, so when theta is forty-five degrees. Then the two components are equal, and the range is u squared over g. On this graph of range against angle, the curve rises to its peak at forty-five, then falls away symmetrically. So every angle below forty-five has a partner above it, at the same height. That's the complementary pair."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-fifteen",
+      "title": "worked example: fifteen metres per second",
+      "voiceover": {
+        "text": "Let's check with numbers. A ball is launched from level ground at fifteen metres per second. First, the conditions: same launch and landing level, and no air resistance, so the shortcut is allowed. At thirty degrees, R is fifteen squared times sin sixty, over nine point eight, about nineteen point nine metres. At forty-five degrees, sin ninety is one, so R is two hundred and twenty-five over nine point eight, about twenty-three point zero metres. At sixty degrees, sin one hundred and twenty equals sin sixty, so it's nineteen point nine metres again."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "same-range-different-flights",
+      "title": "same range, different flights",
+      "voiceover": {
+        "text": "Now twenty-five metres per second, at twenty-five and sixty-five degrees, another complementary pair. Both ranges come out at about forty-eight point nine metres. But the flights are very different. The flight time is two u sin theta over g, so the sixty-five degree ball stays up for about four point six two seconds, more than twice the twenty-five degree ball's two point one six seconds. It also climbs much higher. The same range doesn't mean the same motion. It means the extra time is exactly cancelled by the slower crossing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-traps",
+      "title": "two traps",
+      "voiceover": {
+        "text": "Two traps to avoid. First, the forty-five degree rule and the complementary pairs are level-ground results. If the ball lands lower than it started, from a cliff for example, they fail, and that's next time. Second, a steeper launch doesn't always go shorter, or always go further. The range rises up to forty-five degrees and then falls, and that's exactly why the pairs exist."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid: complements swap the components",
+      "voiceover": {
+        "text": "Here's a way to remember it: complements swap the components. Ninety minus theta swaps u x and u y, and on level ground the range depends on their product, so it stays the same."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A ball is launched from level ground at fourteen point zero metres per second. Calculate its range when it's launched at forty-five degrees, and when it's launched at twenty degrees. Then state another launch angle that gives the same range as twenty degrees. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "It's level ground, so the shortcut works. At forty-five degrees, R is fourteen squared over nine point eight, twenty point zero metres. At twenty degrees, it's fourteen squared times sin forty, over nine point eight, about twelve point nine metres. The matching angle is the complement, seventy degrees. Using sin twenty instead of sin forty is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Two projectiles are launched from level ground at the same speed, one at thirty degrees and one at sixty degrees. Compare their ranges, their times of flight and their maximum heights, and explain why the ranges are equal even though the flight times are not. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Thirty and sixty are complementary, so the ranges are equal. Flight time depends on sin theta, so the sixty degree one stays up about one point seven three times as long. Height depends on sin squared theta, so it climbs three times as high. The ranges still match because its horizontal component is smaller by exactly the same factor. Saying equal ranges mean equal flight times is the classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So on level ground, the range depends on u x times u y, which is why complementary angles tie and forty-five degrees wins. But all of that came from the level-ground flight time. Now put the launcher on top of a thirty metre cliff, firing at twenty metres per second. The ball falls below its launch level. Do thirty and sixty degrees still land together, and does forty-five still go furthest?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 55,
+      "holdKind": "notes"
+    }
+  ]
+}

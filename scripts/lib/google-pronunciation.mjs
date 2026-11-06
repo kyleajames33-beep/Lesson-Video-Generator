@@ -1,5 +1,6 @@
 // Context-sensitive pronunciation replacements. Never rewrite the article in "a half".
 export const pronunciationRules = [
+  {name: 'math-a-after-constant', pattern: /(?<=\bconstant\s)a\b/gi, replacement: 'ay'},
   {name: 'math-a-base-power', pattern: /\ba(?=\s+to\s+the\s+(?:x|power)\b)/gi, replacement: 'ay'},
   {name: 'math-a-log-or-base', pattern: /(?<=\b(?:log of|base))\s+a\b(?!\s+half\b)/gi, replacement: ' ay'},
   {name: 'math-a-sentence-end', pattern: /(?<=\b(?:of|into))\s+a(?=[,.!?;]|\s*$)/gi, replacement: ' ay'},
