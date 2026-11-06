@@ -25,6 +25,10 @@ Hard rules:
 
 Claude committed your previous outputs on 6 November (reports, measured data, the render guard and the voicing fixes). The asset QA images and manifests under `docs/production/claude-pm/assets/` are still uncommitted; leave them where they are.
 
+## Done since this file was first written (as of 7 Nov, 6:10am)
+
+All three owner pilots are rendered and backed up to Drive: 225 (d01 v2) and 227 (Chemistry v1, Physics v1). 213, 217, 214, 216, 218, 219, 221, 222, 224, 191, 192 and 193 are done, as is 223's c04 v2 render. 198 is partly done (bio-m6-b04 v2), as is 220 (Biology b06 to b11 voiced), and 199 is partial. Read the last 500 lines of `status.md` to find exactly where each brief stopped, and resume from there. Do not redo finished work.
+
 ## Queue, in this order
 
 Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course work come before polish re-renders. Every new video must grade A on its contact sheet before render (`maths-visual-standard.md`, build gate).

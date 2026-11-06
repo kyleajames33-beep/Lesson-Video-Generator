@@ -4924,3 +4924,31 @@ phys-y12-m8-v21: 0 blockers, 4 should fix, 0 optional. Reports `checks/p-y12-m8-
 phys-y12-m8-v22: 0 blockers, 6 should fix, 0 optional. Reports `checks/p-y12-m8-v22-learning-review.md` and `checks/p-y12-m8-v22-science-check.md`. Independent numbers are in the corresponding `work/brief193/calculations-vNN-vNN.json` files.
 
 Whole-course source map: `checks/phys-y12-whole-course-coverage.md`, covering 81 designs. All 88 parent/Working Scientifically point quotations and 107 child quotations match the official 2017 DOCX. No unallocated route points, but practical conduct and several learner Working Scientifically actions remain unproven. Named gaps include quantitative banked-road friction, DC motor investigation, Balmer practical, electron-diffraction practical and real radioactive counts. Supernova time dilation and metal-plate braking are present in source. This is not a whole-course completion pass. Current site checks and plates remain active. Built playback, exact voiced review and human listening remain pending.
+
+## Codex brief193: current site verification complete
+
+7 November 2026. Seven current Module8 HTML pages checked.22 corrections/clarifications appended to site-corrections-phys-y12.md; exact paragraphs,hashes and dispositions in work/brief193/site-log-193.json. Already-correct Ni62/Fe56 and uncertainty statements are not reopened. Primary history follow-up: checks/brief193-history-follow-up.md;muon1936 remains valid. No site or design edits. Plates active.
+
+## Codex brief193: plates delivered with native-size holds
+
+7 November 2026. Eight native plates delivered: red/yellow counters,OPAL pool,tokamak,linac tunnel,Wilson expansion chamber,LHC dipole and CMS cutaway. Actual cream/navy/white composites inspected;native dimensions,hashes,approximate anchors and primary references in `assets/brief193-manifest.json`. Counters share1254-square canvas,alpha128 silhouette IoU0.991912;not pixel-identical. Six apparatus candidates held below strict2400px native long side;diffraction-tube glass also needs repair. No upsampling,padding or deterministic cleanup. All14 originals preserved. Existing guitar anchors and reusable apparatus inspected;both smoking power-station plates omitted as allowed. Actual scene fit and playback remain pending. All22 source reports,22 site entries and81-design course map complete;1 blocker and37 should-fix source findings remain open.
+
+## Codex brief227: Physics owner pilot local master
+
+7 November 2026. `out\explainer\Explainer-phys-y12-m5-v04\Explainer-phys-y12-m5-v04-v1.mp4`,7:53.60,14,208frames,49,128,371bytes,SHA256 `187f5311dbeaa3a1d1787dd688307d77fd0b8b6926fb11262e9b2dee107032c8`. All45 frozen source/audio/tool files and6 public assets match.120-sample defect/font scans:0 flags;all16 rendered sheet frames match Claude A.174 captions from actual playback timeline pass. Local Drive mirror hash matches. Report and pending playback timestamps: `work/brief227/phys-y12-m5-v04/build-report.md`. Browser kernel-assets path error persists;normal-speed playback,listening,owner approval and unlisted upload pending. Local fallback added to pending queue,no playlist. Chunks retained.
+
+Brief227 Physics cloud follow-up: folder readback confirms49,128,371bytes. https://drive.google.com/file/d/1rxW04wdf530prm-fnVE5z8QjGHpuRDU9/view?usp=drivesdk . Local Drive mirror SHA256 matches;remote checksum unavailable. Playback/listening and unlisted YouTube upload remain pending.
+
+## Codex queued builds: light media and metadata inventory
+
+7 November 2026. All16 new builds in223,226,228,229 and230 have their measured audio files and Claude sheets/notes. All16 titles fit100 characters. All33 quoted syllabus fragments match the retained official Chemistry/Biology2017 DOCX text after typography and whitespace normalisation,including DOCX nonbreaking hyphens. Evidence: work/new-build-queue-inventory.json and work/new-build-queue/metadata-check.json. This is a source inventory,not a fresh guard,contact-sheet,playback or release pass. Current c04v2 remains the only render.
+
+Queued-build inventory follow-up: brief231 added after230. All18 builds now have audio and Claude sheets/notes;all39 quoted syllabus fragments match official2017 text and all18 titles fit100 characters. No extra render started.
+
+Browser recovery recheck,7 November2026: both browser kernel-assets path error3 and native pipe missing error2 persist. TEMP/TMP exist. Chrome remains open;no helper launch or live UI action. Details: work/browser-control-nov07-recheck.json. Continue local checks and Drive backups.
+
+## Codex brief223: chem-m8-c04 v2 current master
+
+7 November2026. `out\explainer\Explainer-chem-m8-c04\Explainer-chem-m8-c04-v2.mp4`,8:43.50,15,705frames,56,417,562bytes,SHA256 `623f36c0fb5005ce64addac853c2d7eed1efa96797da7573fe3bb1c83967ac7a`. All435 frozen inputs and15 public assets match.120-sample defect/font scans:0 flags;rendered sheet and four boards inspected. Frames1-15 match Claude A. Frame16 matches the authorised five44px notes and current fresh pre-render sheet;stale Claude reference still has six smaller notes. No new below-A still finding. 174 captions from playback timeline pass;local Drive mirror hash matches. Playback timestamps and report: `work/brief223/chem-m8-c04/v2/build-report.md`. Normal-speed playback,listening and full release review pending. Added to pending upload queue,route order8;no live publication. Chunks and older master preserved.
+
+Brief223 c04v2 cloud follow-up: https://drive.google.com/file/d/16lYDK_dhWPrKytP3Jd9dsFSC9s-w3Ifx/view?usp=drivesdk .56,417,562bytes read back;local mirror hash matches;remote checksum unavailable. Oldv1 remains preserved and superseded.
