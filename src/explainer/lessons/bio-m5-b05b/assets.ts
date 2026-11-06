@@ -31,6 +31,9 @@ export const CD88 = [
 	'cd-pair-metaphase', 'cd-pair-metaphase-empty', 'cd-pair-anaphase', 'cd-pair-anaphase-empty', 'cd-four-cells', 'cd-interphase',
 ].map(n => B + `${n}-v1.png`).concat([B + 'm6-metaphase-spread-v1.png']);
 
-const ALL = [BROTHERS, POD, PARENTS, SPERM, EGG, ...B5X, ...CD88];
+// Quality fix (6 Nov 2026): the painted nucleus close-up for the model cell and pair-up scenes (B5a pnuc.tsx).
+export const NUC_ZOOM = B + 'cd-nucleus-zoom-empty-v1.png';
+
+const ALL = [BROTHERS, POD, PARENTS, SPERM, EGG, ...B5X, ...CD88, NUC_ZOOM];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

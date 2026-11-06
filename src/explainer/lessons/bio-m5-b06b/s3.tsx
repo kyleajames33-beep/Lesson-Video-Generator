@@ -252,6 +252,19 @@ const MiniRow: React.FC<{x: number; y: number; letters: string; color: string; o
 		<Strand x={0} y={0} letters={letters} pitch={BD.pitch} face="down" color={color} />
 	</g>
 );
+// Quality fix (6 Nov 2026): the two aids sit in framed cards and the strips are larger (0.8 and 0.7, were 0.5).
+const MemCard: React.FC<{x: number; y: number; w: number; h: number; at: number; title: string}> = ({x, y, w, h, at, title}) => {
+	const f = useCurrentFrame();
+	const p = prog(f, at, 14);
+	if (p <= 0.01) return null;
+	return (
+		<g opacity={p}>
+			<rect x={x + 3} y={y + 10} width={w} height={h} rx={26} fill="rgba(60,45,20,0.07)" />
+			<rect x={x} y={y} width={w} height={h} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={4} />
+			<text x={x + 34} y={y + 50} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={AMBER_INK}>{title}</text>
+		</g>
+	);
+};
 export const SceneMemoryB6b: React.FC = () => {
 	const f = useCurrentFrame();
 	const m1 = prog(f, K13.bases, 20), m2 = prog(f, K13.amino, 20);
@@ -259,37 +272,39 @@ export const SceneMemoryB6b: React.FC = () => {
 		<>
 			<Heading text="Two things to remember" at={4} size={60} />
 			<Overlay>
+				<MemCard x={70} y={172} w={1780} h={420} at={K13.keeps - 6} title="Memory aid: C before L" />
 				{/* line 1: transcription keeps the language */}
-				<MiniRow x={130} y={250} letters="ATG" color={PLUM} o={prog(f, K13.keeps, 12) * (1 - m1)} />
-				<MiniRow x={130} y={250} letters="AUG" color={MRNA} o={m1} />
-				<text x={470} y={300} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 60}} fill={AMBER_INK} opacity={prog(f, K13.keeps, 12)}>
+				<MiniRow x={150} y={262} letters="ATG" color={PLUM} s={0.8} o={prog(f, K13.keeps, 12) * (1 - m1)} />
+				<MiniRow x={150} y={262} letters="AUG" color={MRNA} s={0.8} o={m1} />
+				<text x={520} y={322} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 66}} fill={AMBER_INK} opacity={prog(f, K13.keeps, 12)}>
 					trans<tspan fill={INK} textDecoration="underline">C</tspan>ription keeps the language
 				</text>
-				<Sx x={472} y={354} text="bases to bases: like copying notes in the same language" size={36} color={INK_SOFT} hand at={K13.bases} />
+				<Sx x={522} y={378} text="bases to bases: like copying notes in the same language" size={38} color={INK_SOFT} hand at={K13.bases} />
 				{/* translation changes it (next video, greyed) */}
-				<MiniRow x={130} y={430} letters="AUG" color={MRNA} o={prog(f, K13.trl, 12) * (1 - m2) * 0.8} />
-				<g opacity={m2 * 0.8}>{[0, 1, 2].map(i => <Bead key={i} x={150 + i * 62} y={470} r={24} fill={['#e8b48a', '#d9c27a', '#c9a0c9'][i]} />)}</g>
-				<text x={470} y={480} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56}} fill={GREY_INK} opacity={prog(f, K13.trl, 12)}>
+				<MiniRow x={150} y={440} letters="AUG" color={MRNA} s={0.8} o={prog(f, K13.trl, 12) * (1 - m2) * 0.8} />
+				<g opacity={m2 * 0.8}>{[0, 1, 2].map(i => <Bead key={i} x={160 + i * 96} y={486} r={34} fill={['#e8b48a', '#d9c27a', '#c9a0c9'][i]} />)}</g>
+				<text x={520} y={500} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58}} fill={GREY_INK} opacity={prog(f, K13.trl, 12)}>
 					trans<tspan fill={INK} textDecoration="underline">L</tspan>ation changes it (bases to amino acids)
 				</text>
-				<GreyTag x={472} y={500} text="next video" at={K13.amino} size={26} />
-				<Chip x={1500} y={390} text="C before L" at={K13.amino + 20} size={40} color={INK} stroke={AMBER} />
+				<GreyTag x={522} y={525} text="next video" at={K13.amino} size={28} />
+				<Chip x={1540} y={196} text="C before L" at={K13.amino + 20} size={46} color={INK} stroke={AMBER} />
 				{/* line 2: the trap */}
-				<text x={96} y={690} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58}} fill={AMBER_INK} opacity={prog(f, K13.second, 12)}>
+				<MemCard x={70} y={616} w={1780} h={420} at={K13.second - 6} title="The trap" />
+				<text x={110} y={770} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 60}} fill={AMBER_INK} opacity={prog(f, K13.second, 12)}>
 					mRNA matches the coding strand,
 				</text>
-				<Sx x={96} y={770} text="built on the template" size={58} color={AMBER_INK} hand at={K13.built} />
+				<Sx x={110} y={850} text="built on the template" size={60} color={AMBER_INK} hand at={K13.built} />
 				<g opacity={prog(f, K13.matches, 14)}>
-					<MiniRow x={1180} y={600} letters="ATGGC" color={PLUM} s={0.55} />
-					<Sx x={1180 + 5 * 66 + 30} y={640} text="coding" size={34} color={PLUM} hand at={-100} />
-					<Sx x={1250} y={710} text="=  (T to U)" size={40} color={AMBER_INK} hand at={K13.matches + 6} />
-					<MiniRow x={1180} y={740} letters="AUGGC" color={MRNA} s={0.55} />
-					<Sx x={1180 + 5 * 66 + 30} y={780} text="mRNA" size={34} color={MRNA_INK} hand at={-100} />
+					<MiniRow x={1150} y={660} letters="ATGGC" color={PLUM} s={0.7} />
+					<Sx x={1150 + 5 * 84 + 10} y={706} text="coding" size={38} color={PLUM} hand at={-100} />
+					<Sx x={1210} y={772} text="=  (T to U)" size={40} color={AMBER_INK} hand at={K13.matches + 6} />
+					<MiniRow x={1150} y={800} letters="AUGGC" color={MRNA} s={0.7} />
+					<Sx x={1150 + 5 * 84 + 10} y={846} text="mRNA" size={38} color={MRNA_INK} hand at={-100} />
 				</g>
 				<g opacity={prog(f, K13.built, 14)}>
-					<g transform={`translate(1180,${880}) scale(0.55)`}><Strand x={0} y={0} letters="TACCG" pitch={BD.pitch} face="up" color={PLUM} /></g>
-					{[0, 1, 2, 3, 4].map(i => <line key={i} x1={1180 + i * 66} y1={794} x2={1180 + i * 66} y2={830} stroke={AMBER} strokeWidth={4} strokeDasharray="3 4" />)}
-					<Sx x={1180 + 5 * 66 + 30} y={900} text="template: pairs" size={34} color={PLUM} hand at={-100} />
+					<g transform={`translate(1150,${1000}) scale(0.7)`}><Strand x={0} y={0} letters="TACCG" pitch={BD.pitch} face="up" color={PLUM} /></g>
+					{[0, 1, 2, 3, 4].map(i => <line key={i} x1={1150 + i * 84} y1={862} x2={1150 + i * 84} y2={938} stroke={AMBER} strokeWidth={4} strokeDasharray="3 4" />)}
+					<Sx x={1150 + 5 * 84 + 10} y={986} text="template: pairs" size={38} color={PLUM} hand at={-100} />
 				</g>
 			</Overlay>
 		</>

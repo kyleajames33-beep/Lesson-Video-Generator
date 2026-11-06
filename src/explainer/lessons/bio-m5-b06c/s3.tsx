@@ -202,47 +202,48 @@ export const ScenePolyProtein: React.FC = () => {
 	const back = prog(f, K10.gene, 40);
 	const fold = prog(f, K10.fold, 40);
 	const join = prog(f, K10.more, 26);
+	// Quality fix (6 Nov 2026): the gene, mRNA and amino acid stations and the chain are larger (were 0.42 and 0.62).
 	const n = 14;
 	const beads = Array.from({length: n}, (_, j) => {
-		const lx = 200 + j * 62, ly = 700;
-		const a = j * 0.9, rr = 22 + j * 5.5;
-		const cx = 560 + Math.cos(a) * rr, cy = 720 + Math.sin(a) * rr * 0.8;
+		const lx = 210 + j * 80, ly = 730;
+		const a = j * 0.9, rr = 28 + j * 7;
+		const cx = 600 + Math.cos(a) * rr, cy = 770 + Math.sin(a) * rr * 0.8;
 		return [lx + (cx - lx) * fold, ly + (cy - ly) * fold] as [number, number];
 	});
-	const dot = kf(f, [[K10.gene, 1570], [K10.gene + 40, 300]]);
+	const dot = kf(f, [[K10.gene, 1540], [K10.gene + 40, 320]]);
 	return (
 		<>
 			<Heading text="A polypeptide is not yet a protein" at={4} size={56} />
 			<Overlay>
 				{/* the three stations */}
-				<Sx x={330} y={250} text="gene (DNA)" size={40} color={PLUM} hand anchor="middle" at={K10.order - 20} />
-				<g opacity={prog(f, K10.order - 20, 12)} transform="translate(160,300) scale(0.42)">
+				<Sx x={320} y={250} text="gene (DNA)" size={46} color={PLUM} hand anchor="middle" at={K10.order - 20} />
+				<g opacity={prog(f, K10.order - 20, 12)} transform="translate(140,300) scale(0.62)">
 					<Strand x={0} y={0} letters="TACCTT" pitch={120} face="down" color={PLUM} />
 					<Strand x={0} y={204} letters="ATGGAA" pitch={120} face="up" color={PLUM} />
 				</g>
-				<PlainArrow x1={560} y1={345} x2={720} y2={345} at={K10.order - 10} color={INK_SOFT} width={4} />
-				<Sx x={640} y={320} text="transcription" size={30} color={INK_SOFT} hand anchor="middle" at={K10.order - 10} />
-				<Sx x={960} y={250} text="mRNA codons" size={40} color={MRNA_INK} hand anchor="middle" at={K10.order} />
-				<g opacity={prog(f, K10.order, 12)} transform="translate(770,385) scale(0.62)"><MrnaC x={0} y={0} letters="AUGGAA" /></g>
-				<PlainArrow x1={1200} y1={345} x2={1360} y2={345} at={K10.set - 6} color={INK_SOFT} width={4} />
-				<Sx x={1280} y={320} text="translation" size={30} color={INK_SOFT} hand anchor="middle" at={K10.set - 6} />
-				<Sx x={1570} y={250} text="amino acid order" size={40} color={INK} hand anchor="middle" at={K10.set} />
-				{['Met', 'Glu'].map((aa, j) => <AABead key={aa} x={1520 + j * 100} y={345} aa={aa} r={34} o={prog(f, K10.set + j * 6, 10)} />)}
-				<Fade at={K10.set + 10}><line x1={1554} y1={345} x2={1586} y2={345} stroke={INK} strokeWidth={6} /></Fade>
-				{back > 0.01 && back < 0.999 ? <circle cx={dot} cy={410} r={14} fill={AMBER} /> : null}
-				<Fade at={K10.gene}><DrawPath d="M1570,410 L300,410" at={K10.gene} dur={40} color={AMBER} width={4} dash="6 10" /></Fade>
-				<Sx x={960} y={470} text="the order came from the gene" size={36} color={AMBER_INK} hand anchor="middle" at={K10.gene + 30} />
+				<PlainArrow x1={560} y1={365} x2={710} y2={365} at={K10.order - 10} color={INK_SOFT} width={5} />
+				<Sx x={635} y={336} text="transcription" size={34} color={INK_SOFT} hand anchor="middle" at={K10.order - 10} />
+				<Sx x={955} y={250} text="mRNA codons" size={46} color={MRNA_INK} hand anchor="middle" at={K10.order} />
+				<g opacity={prog(f, K10.order, 12)} transform="translate(780,400) scale(1)"><MrnaC x={0} y={0} letters="AUGGAA" /></g>
+				<PlainArrow x1={1210} y1={365} x2={1360} y2={365} at={K10.set - 6} color={INK_SOFT} width={5} />
+				<Sx x={1285} y={336} text="translation" size={34} color={INK_SOFT} hand anchor="middle" at={K10.set - 6} />
+				<Sx x={1540} y={250} text="amino acid order" size={46} color={INK} hand anchor="middle" at={K10.set} />
+				{['Met', 'Glu'].map((aa, j) => <AABead key={aa} x={1470 + j * 130} y={365} aa={aa} r={48} o={prog(f, K10.set + j * 6, 10)} />)}
+				<Fade at={K10.set + 10}><line x1={1518} y1={365} x2={1552} y2={365} stroke={INK} strokeWidth={7} /></Fade>
+				{back > 0.01 && back < 0.999 ? <circle cx={dot} cy={460} r={14} fill={AMBER} /> : null}
+				<Fade at={K10.gene}><DrawPath d="M1540,460 L320,460" at={K10.gene} dur={40} color={AMBER} width={5} dash="6 10" /></Fade>
+				<Sx x={930} y={520} text="the order came from the gene" size={42} color={AMBER_INK} hand anchor="middle" at={K10.gene + 30} />
 				{/* the chain folds */}
-				<Sx x={200} y={620} text="a polypeptide" size={38} color={INK} hand at={K10.isnt - 10} />
+				<Sx x={210} y={650} text="a polypeptide" size={44} color={INK} hand at={K10.isnt - 10} />
 				{beads.slice(1).map((p, j) => <line key={j} x1={beads[j][0]} y1={beads[j][1]} x2={p[0]} y2={p[1]} stroke={INK} strokeWidth={5} opacity={prog(f, K10.isnt - 10, 10)} />)}
-				{beads.map((p, j) => <AABead key={j} x={p[0]} y={p[1]} aa={['Met', 'Glu', 'Ala', 'Lys', 'Gly', 'Pro', 'Thr'][j % 7]} r={24} o={prog(f, K10.isnt - 10 + j, 8)} />)}
-				<Sx x={820} y={760} text="folds into a shape" size={40} color={AMBER_INK} hand at={K10.fold + 30} />
+				{beads.map((p, j) => <AABead key={j} x={p[0]} y={p[1]} aa={['Met', 'Glu', 'Ala', 'Lys', 'Gly', 'Pro', 'Thr'][j % 7]} r={30} o={prog(f, K10.isnt - 10 + j, 8)} />)}
+				<Sx x={880} y={790} text="folds into a shape" size={46} color={AMBER_INK} hand at={K10.fold + 30} />
 				<g transform={`translate(${(1 - join) * 300},0)`} opacity={join}>
-					<Blob x={760} y={880} r={70} fill="#c9a0c9" seed={4} />
+					<Blob x={860} y={920} r={84} fill="#c9a0c9" seed={4} />
 				</g>
-				<Fade at={K10.fold + 34}><Blob x={560} y={720} r={140} fill={AMBER} seed={2} s={1} o={0.25} /></Fade>
-				<Sx x={880} y={900} text="some proteins: more than one chain" size={36} color={INK} hand at={K10.more + 20} />
-				<GreyTag x={1300} y={980} text="shape and job: next video" at={K10.next} size={30} />
+				<Fade at={K10.fold + 34}><Blob x={600} y={770} r={170} fill={AMBER} seed={2} s={1} o={0.25} /></Fade>
+				<Sx x={980} y={940} text="some proteins: more than one chain" size={42} color={INK} hand at={K10.more + 20} />
+				<GreyTag x={1380} y={1000} text="shape and job: next video" at={K10.next} size={30} />
 			</Overlay>
 		</>
 	);

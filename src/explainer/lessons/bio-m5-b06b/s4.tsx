@@ -233,7 +233,8 @@ export const SceneFeedbackTwoB6b: React.FC = () => {
 // ---------- 11. Decision rule and handoff ----------
 const H18 = 'decision-rule';
 const K18 = cues(S(H18), {ask: 'ask first', which: 'template or the coding strand', pair: 'Pair the template', copy: 'Copy the coding strand', ends: 'check the ends', runs: "mRNA runs 5' to 3'", next: 'Next the mRNA reaches a ribosome', how: 'How does a ribosome turn'});
-const Mini: React.FC<{x: number; y: number; letters: string; color: string; face?: 'down' | 'up'; s?: number; glow?: number}> = ({x, y, letters, color, face = 'down', s = 0.42, glow = 0}) => (
+// Quality fix (6 Nov 2026): the strips are 0.8 (were 0.42), so each step's strand is readable beside its rule.
+const Mini: React.FC<{x: number; y: number; letters: string; color: string; face?: 'down' | 'up'; s?: number; glow?: number}> = ({x, y, letters, color, face = 'down', s = 0.8, glow = 0}) => (
 	<g transform={`translate(${x},${y}) scale(${s})`}><Strand x={0} y={0} letters={letters} pitch={BD.pitch} face={face} color={color} bbGlow={glow} /></g>
 );
 export const SceneDecisionB6b: React.FC = () => {
@@ -243,17 +244,17 @@ export const SceneDecisionB6b: React.FC = () => {
 			<Heading text="Given a DNA strand? Ask first" at={4} size={56} />
 			<Overlay>
 				{/* 1 */}
-				<Mini x={130} y={250} letters="ATGC" color={PLUM} />
-				<Mini x={130} y={350} letters="TACG" color={PLUM} face="up" glow={pulse(f, K18.which, 40) + prog(f, K18.which + 30, 10) * 0.6} />
-				<Chip x={420} y={262} text="template or coding?" at={K18.ask} size={46} color={INK} stroke={AMBER} />
+				<Mini x={150} y={200} letters="ATGC" color={PLUM} />
+				<Mini x={150} y={360} letters="TACG" color={PLUM} face="up" glow={pulse(f, K18.which, 40) + prog(f, K18.which + 30, 10) * 0.6} />
+				<Chip x={600} y={250} text="template or coding?" at={K18.ask} size={50} color={INK} stroke={AMBER} />
 				{/* 2 */}
-				<Mini x={130} y={470} letters="TAC" color={PLUM} face="up" />
-				<Chip x={420} y={442} text="template: pair it (A to U)" at={K18.pair} size={44} color={AMBER_INK} stroke={AMBER} />
-				<Chip x={1060} y={442} text="coding: copy it (T to U)" at={K18.copy} size={44} color={AMBER_INK} stroke={AMBER} />
+				<Mini x={150} y={580} letters="TAC" color={PLUM} face="up" />
+				<Chip x={600} y={518} text="template: pair it (A to U)" at={K18.pair} size={46} color={AMBER_INK} stroke={AMBER} />
+				<Chip x={1230} y={518} text="coding: copy it (T to U)" at={K18.copy} size={46} color={AMBER_INK} stroke={AMBER} />
 				{/* 3 */}
-				<Mini x={130} y={610} letters="AUG" color={MRNA} />
-				<Chip x={420} y={612} text="mRNA: 5' to 3'" at={K18.ends} size={46} color={MRNA_INK} stroke={MRNA} />
-				<BigArrow x1={820} x2={1060} y={643} at={K18.runs} label="" color={MRNA_INK} />
+				<Mini x={150} y={680} letters="AUG" color={MRNA} />
+				<Chip x={600} y={690} text="mRNA: 5' to 3'" at={K18.ends} size={50} color={MRNA_INK} stroke={MRNA} />
+				<BigArrow x1={1010} x2={1270} y={724} at={K18.runs} label="" color={MRNA_INK} />
 				{/* next */}
 				<Fade at={K18.next}>
 					<rect x={1000} y={850} width={824} height={150} rx={26} fill="#fffdf8" stroke={MRNA} strokeWidth={3.5} />
@@ -267,29 +268,38 @@ export const SceneDecisionB6b: React.FC = () => {
 };
 
 // ---------- 12. Key notes ----------
+// Quality fix (6 Nov 2026): five dense paragraphs became eight short lines at 36 px, plus a framed memory aid.
 const NOTES = [
-	'A gene is a section of DNA that codes for a product, usually a polypeptide. Transcription copies one gene into mRNA.',
-	'RNA polymerase binds the promoter, separates the DNA strands and builds mRNA by pairing with the template strand: A with U, T with A, C with G, G with C.',
-	"The template is read 3' to 5'; the mRNA is built 5' to 3'. The mRNA has the same sequence as the coding strand, with U in place of T.",
-	'DNA stays in the nucleus. mRNA leaves through nuclear pores to the ribosomes. Many temporary mRNA copies let one gene make a lot of protein.',
-	'Replication: both strands, all the DNA, makes DNA. Transcription: one strand, one gene, makes RNA.',
+	'A gene is a section of DNA that codes for a polypeptide.',
+	'Transcription copies one gene into mRNA, in the nucleus.',
+	'RNA polymerase binds the promoter and separates the strands.',
+	'RNA nucleotides pair with the template: A with U, T with A, C with G, G with C.',
+	"Template read 3' to 5'; mRNA built 5' to 3'.",
+	'mRNA has the coding strand sequence, with U in place of T.',
+	'mRNA leaves through nuclear pores to the ribosomes.',
+	'Replication copies all the DNA. Transcription copies one gene into RNA.',
 ];
 export const SceneNotesB6b: React.FC = () => (
 	<>
-		<div style={{position: 'absolute', left: 96, top: 70}}><HandText text="Key notes: what to write in your book" at={2} size={56} cps={40} /></div>
-		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
-		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 175, width: 1700}}>
+		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={68} cps={40} /></div>
+		<div style={{position: 'absolute', left: 110, top: 200, width: 1180}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 22}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 34, fontWeight: 500, color: INK, lineHeight: 1.28}}>{n}</div>
+				<Enter key={i} at={14 + i * 8} style={{display: 'flex', gap: 20, marginBottom: 20}}>
+					<div style={{flex: 'none', width: 16, height: 16, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 36, fontWeight: 500, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 920}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: MRNA_INK}}>Memory: transcription keeps the language; translation changes it (C before L).</div>
+		<Enter at={90} style={{position: 'absolute', left: 1350, top: 230, width: 470, boxSizing: 'border-box', padding: '26px 30px', borderRadius: 24, border: `4px solid ${AMBER}`, background: '#fffdf8', boxShadow: '0 14px 34px rgba(60,45,20,0.10)'}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: INK, lineHeight: 1.1, marginTop: 14}}>trans<u>C</u>ription keeps the language.</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: INK, lineHeight: 1.1, marginTop: 10}}>trans<u>L</u>ation changes it.</div>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1.1, marginTop: 10}}>C before L</div>
+			<div style={{height: 3, background: '#eadfc8', margin: '22px 0 18px'}} />
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 30, color: INK, lineHeight: 1.25}}>The trap: mRNA matches the coding strand, but is built on the template.</div>
+		</Enter>
+		<Enter at={150} style={{position: 'absolute', left: 110, top: 930}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
 	</>
 );

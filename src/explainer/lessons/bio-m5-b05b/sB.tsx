@@ -2,31 +2,30 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Arrow, Bracket, CX, CY, DrawPath, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, MStrip, Overlay, Pill, prog,
-	S, Scribble, vis, RX, RY, FONT_HAND,
+	AMBER, AMBER_INK, Arrow, Bracket, DrawPath, GreyTag, Hand, Heading, INK, INK_SOFT, MStrip, Overlay, Pill, prog,
+	S, Scribble, vis, FONT_HAND, MC, beadAt, lerp,
 } from './shared';
-import {AN, BandTick, CD, cbox, Dissolve, HCell, HChrom, Letter, Morph, Panel, PL, Stage, toS} from '../bio-m5-b05a/cd';
-import type {Cam, HCol} from '../bio-m5-b05a/cd';
+import type {MK, Strand} from './shared';
+import {AN, CD, cbox, Dissolve, Letter, Morph, PL, Stage, toS} from '../bio-m5-b05a/cd';
+import type {Cam} from '../bio-m5-b05a/cd';
+import {PNuc, usePNuc} from '../bio-m5-b05a/pnuc';
 
-// Revision 7 (owner, 20 Oct): the model cell is a clean coded diagram with large chromosomes whose gene loci sit at the
-// same height on both homologues (the previous loci sat at different heights: a science error). The pairing, "gene against
-// gene" and crossing over use the brief 88 painted close-ups (homologous pair with three matching bands, then the crossing
-// over trio); letters sit beside the painted bands. Narration unchanged: the long pair carries A/a (upper) and B/b (lower,
-// distal, the band carried by the exchanged segment); the short pair carries D/d.
+// Quality fix (6 Nov 2026): the audit rejected the coded oval cell with coded bars (model cell and "copied once, then
+// pair up"). The 2n = 4 model now sits in the painted nucleus close-up (cd-nucleus-zoom-empty, uniform scale) and the
+// chromosomes are the painted plates (MC: single, then the X once copied). Allele beads sit ON the painted chromatids at
+// the same height on both homologues (same kind, same centromere row), so matching loci line up. The pairing, "gene
+// against gene" and crossing over still use the brief 88 painted close-ups. Narration unchanged: the long pair carries
+// A/a (upper) and B/b (lower), the short pair carries D/d.
 
-/** Coded model: long and short chromosomes, centromere fraction, locus fractions (A, B on the long; D on the short). */
-export const ML = {L: 250, S: 160};
-export const MCEN = {L: 0.47, S: 0.42};
-export const LOCI = {L: [0.175, 0.86], S: [0.78]};
-export const MW = 24;
-const KIND = ['L', 'L', 'S', 'S'] as const;
-const COLS: HCol[] = ['P', 'T', 'P', 'T'];
-const lettersOf = (i: number) => (KIND[i] === 'L' ? (COLS[i] === 'P' ? ['A', 'B'] : ['a', 'b']) : COLS[i] === 'P' ? ['D'] : ['d']);
-/** Model positions: apart (t = 0), paired (t = 1); all centromeres on one line, so matching loci share a height. */
-const APART: number[] = [-300, -40, 130, 330];
-const PAIRED: number[] = [-260, -110, 120, 260];
-const mx = (i: number, t: number) => CX + lerp(APART[i], PAIRED[i], t);
-const locusY = (i: number, k: number) => CY - ML[KIND[i]] * MCEN[KIND[i]] + ML[KIND[i]] * LOCI[KIND[i]][k];
+/** The painted nucleus: envelope centre and radius. The nucleolus sits right of and below the centre. */
+const NUC = {cx: 980, cy: 610, r: 340};
+const KIND: MK[] = ['L', 'L', 'S', 'S'];
+const STR: Strand[] = [['P', 'P'], ['T', 'T'], ['P', 'P'], ['T', 'T']];
+/** Chromosome centre (x, y): apart (t = 0), paired (t = 1). Each pair shares one centre row, so its loci share a height. */
+const APART = [770, 900, 1060, 1180];
+const PAIRED = [790, 885, 1075, 1165];
+const ROW = [620, 620, 440, 440];
+const mx = (i: number, t: number) => lerp(APART[i], PAIRED[i], t);
 
 const Bubble: React.FC<{x: number; y: number; at: number; r?: number}> = ({x, y, at, r = 26}) => {
 	const f = useCurrentFrame();
@@ -39,42 +38,41 @@ const Bubble: React.FC<{x: number; y: number; at: number; r?: number}> = ({x, y,
 // ---------- 3. The model cell with alleles ----------
 export const SceneModelAlleles: React.FC = () => {
 	const f = useCurrentFrame();
+	usePNuc();
 	const c = cues(S('model-alleles'), {
 		here: 'Here is our model', genes: 'three genes', pairs: 'two pairs', upper: 'the upper gene', plum1: ['plum version', 1], teal1: ['teal version', 1], lower: 'the lower gene', short: 'The short pair', plum2: ['plum version', 2], teal2: ['teal version', 2], label: 'We label', cap: 'a capital', again: 'again',
 	});
-	const lo = (i: number): number[] => {
+	const lo = (i: number): [number, number] => {
 		const top = [prog(f, c.plum1 + 8, 12), prog(f, c.teal1 + 8, 12), prog(f, c.plum2 + 8, 12), prog(f, c.teal2 + 8, 12)][i];
 		const bot = i === 0 ? prog(f, c.lower + 16, 12) : i === 1 ? prog(f, c.lower + 24, 12) : 0;
-		return KIND[i] === 'L' ? [top, bot] : [top];
+		return [top, bot];
 	};
-	// letter bead centres (single chromatid: letters on the right)
-	const bx = (i: number) => mx(i, 0) + MW / 2 + 24;
-	const link = (a: number, b: number, k: number, at: number) => <line x1={bx(a) + 18} y1={locusY(a, k)} x2={mx(b, 0) - MW / 2 - 4} y2={locusY(b, k)} stroke={INK_SOFT} strokeWidth={3.5} strokeDasharray="2 9" strokeLinecap="round" opacity={prog(f, at, 14)} />;
-	const beads: [number, number][] = [[bx(0), locusY(0, 0)], [bx(1), locusY(1, 0)], [bx(0), locusY(0, 1)], [bx(1), locusY(1, 1)], [bx(2), locusY(2, 0)], [bx(3), locusY(3, 0)]];
+	const bead = (i: number, level: 'top' | 'bot') => beadAt(mx(i, 0), ROW[i], KIND[i], 1, level, 'A', 0);
+	const link = (a: number, b: number, level: 'top' | 'bot', at: number) => {
+		const [x1, y1] = bead(a, level), [x2, y2] = bead(b, level);
+		return <line x1={x1 + 20} y1={y1} x2={x2 - 20} y2={y2} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="2 10" strokeLinecap="round" opacity={prog(f, at, 14)} />;
+	};
+	const beads: [number, number][] = [bead(0, 'top'), bead(1, 'top'), bead(0, 'bot'), bead(1, 'bot'), bead(2, 'top'), bead(3, 'top')];
 	return (
 		<>
 			<Heading items={[[0, 'The model cell, with three genes marked']]} size={60} />
 			<Overlay>
-				<Panel x={110} y={196} w={1700} h={790} o={prog(f, 0, 14)} />
-				<HCell cx={CX} cy={CY + 20} rx={RX + 40} ry={RY + 20} nuc={1} nucR={290} o={prog(f, 0, 14)} />
-				{link(0, 1, 0, c.teal1 + 14)}
-				{link(0, 1, 1, c.lower + 24)}
-				{link(2, 3, 0, c.teal2 + 14)}
-				{[0, 1, 2, 3].map(i => (
-					<g key={i} opacity={prog(f, 4 + i * 4, 16)}>
-						<HChrom x={mx(i, 0)} y={CY} len={ML[KIND[i]]} cen={MCEN[KIND[i]]} w={MW} col={COLS[i]} bands={LOCI[KIND[i]]} />
-						{lettersOf(i).map((t, k) => <Letter key={k} x={bx(i)} y={locusY(i, k)} t={t} r={18} o={lo(i)[k]} />)}
-					</g>
-				))}
+				<PNuc cx={NUC.cx} cy={NUC.cy} r={NUC.r} o={prog(f, 0, 14)} />
+				{link(0, 1, 'top', c.teal1 + 14)}
+				{link(0, 1, 'bot', c.lower + 24)}
+				{link(2, 3, 'top', c.teal2 + 14)}
+				{[0, 1, 2, 3].map(i => <MC key={i} x={mx(i, 0)} y={ROW[i]} kind={KIND[i]} a={STR[i]} dup={0} beads={lo(i)} o={prog(f, 4 + i * 4, 16)} />)}
 				{beads.map(([x, y], i) => <Bubble key={i} x={x} y={y} at={c.cap + (i % 2) * 6 + Math.floor(i / 2) * 3} />)}
-				<Scribble cx={bx(0)} cy={locusY(0, 0)} rx={30} ry={30} at={c.plum1 + 16} color={AMBER_INK} seed={4} />
-				<Scribble cx={bx(1)} cy={locusY(1, 0)} rx={30} ry={30} at={c.teal1 + 16} color={AMBER_INK} seed={9} />
-				<g opacity={vis(f, c.short + 10, c.label - 8, 10)}><Scribble cx={bx(2)} cy={locusY(2, 0)} rx={30} ry={30} at={c.short + 10} color={AMBER_INK} seed={2} /></g>
+				<Scribble cx={beads[0][0]} cy={beads[0][1]} rx={30} ry={30} at={c.plum1 + 16} color={AMBER_INK} seed={4} />
+				<Scribble cx={beads[1][0]} cy={beads[1][1]} rx={30} ry={30} at={c.teal1 + 16} color={AMBER_INK} seed={9} />
+				<g opacity={vis(f, c.short + 10, c.label - 8, 10)}><Scribble cx={beads[4][0]} cy={beads[4][1]} rx={30} ry={30} at={c.short + 10} color={AMBER_INK} seed={2} /></g>
 			</Overlay>
-			<Pill at={c.pairs} out={c.upper - 10} x={CX - 345} y={214} size={40}>model cell: 4 chromosomes (2 sets of 2)</Pill>
-			<Pill at={c.upper + 24} x={CX - 330} y={214} size={40}>same gene, same place, two versions</Pill>
-			<GreyTag at={c.genes} out={c.upper + 60} x={150} y={900} text="gene: a section of DNA with one instruction" size={30} />
-			<GreyTag at={c.label} x={820} y={906} text="letters are labels only, no dominance" size={30} />
+			<Pill at={c.pairs} out={c.upper - 10} x={96} y={196} size={40}>model cell: 4 chromosomes (2 sets of 2)</Pill>
+			<Pill at={c.upper + 24} x={96} y={196} size={40}>same gene, same place, two versions</Pill>
+			<Hand at={c.pairs + 10} x={190} y={560} size={40} w={330} color={INK}><span style={{display: 'block', textAlign: 'right'}}>long pair</span></Hand>
+			<Hand at={c.short} x={1250} y={330} size={40} w={330} color={INK}>short pair</Hand>
+			<GreyTag at={c.genes} out={c.upper + 60} x={96} y={860} text="gene: a section of DNA with one instruction" size={28} />
+			<GreyTag at={c.label} x={96} y={920} text="letters are labels only, no dominance" size={28} />
 		</>
 	);
 };
@@ -113,20 +111,17 @@ export const ScenePairUp: React.FC = () => {
 	const tL = prog(f, c.finds + 6, 44), tS = prog(f, c.lie + 6, 40);
 	const tt = (i: number) => (i < 2 ? tL : tS);
 	const toPlate = prog(f, c.gene - 14, 22);
+	usePNuc();
 	// letters beside both sister chromatids: left chromatid letters on the left, right chromatid letters on the right
 	return (
 		<>
 			<Heading items={[[0, 'Copied once, then pair up']]} size={64} />
 			<Overlay>
 				<g opacity={1 - toPlate}>
-					<Panel x={110} y={196} w={1700} h={680} />
-					<HCell cx={CX} cy={CY} rx={RX + 40} ry={RY} nuc={1} nucR={290} />
-					{[0, 1, 2, 3].map(i => (
-						<HChrom key={i} x={mx(i, tt(i))} y={CY} len={ML[KIND[i]]} cen={MCEN[KIND[i]]} w={MW} col={COLS[i]} bands={LOCI[KIND[i]]} dup={dup}
-							lettersA={lettersOf(i)} lettersB={dup > 0.5 ? lettersOf(i) : undefined} />
-					))}
-					<Bracket x1={mx(0, 1) - 60} x2={mx(1, 1) + 60} y={CY + 170} at={c.side} color={AMBER_INK} />
-					<Bracket x1={mx(2, 1) - 60} x2={mx(3, 1) + 60} y={CY + 170} at={c.side + 8} color={AMBER_INK} />
+					<PNuc cx={NUC.cx} cy={NUC.cy} r={NUC.r} />
+					{[0, 1, 2, 3].map(i => <MC key={i} x={mx(i, tt(i))} y={ROW[i]} kind={KIND[i]} a={STR[i]} dup={dup} />)}
+					<Bracket x1={mx(0, 1) - 70} x2={mx(1, 1) + 70} y={ROW[0] + 150} at={c.side} color={AMBER_INK} />
+					<Bracket x1={mx(2, 1) - 60} x2={mx(3, 1) + 60} y={ROW[2] - 112} at={c.side + 8} color={AMBER_INK} down={false} />
 				</g>
 				{/* gene against gene: the painted homologous pair, letters at the matching bands of all four chromatids */}
 				<Stage cam={PAIR_CAM} base={PB} o={toPlate} srcs={[CD('homologous-pair-loci')]}>
@@ -138,9 +133,9 @@ export const ScenePairUp: React.FC = () => {
 					<Arrow x1={P(1440, 990)[0]} y1={P(1440, 990)[1]} x2={P(1670, 990)[0]} y2={P(1670, 990)[1]} at={c.end} color={AMBER_INK} width={6} />
 				</g>
 			</Overlay>
-			<Pill at={c.sister} out={c.pro - 6} x={CX - 400} y={214} size={40}>copied once: each chromosome has 2 sister chromatids</Pill>
-			<Hand at={c.side + 14} out={c.gene - 14} x={mx(0, 1) - 150} y={CY + 186} size={34} w={300} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pair, side by side</span></Hand>
-			<Hand at={c.side + 22} out={c.gene - 14} x={mx(2, 1) - 150} y={CY + 186} size={34} w={300} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>another pair</span></Hand>
+			<Pill at={c.sister} out={c.pro - 6} x={96} y={196} size={40}>copied once: each chromosome has 2 sister chromatids</Pill>
+			<Hand at={c.side + 14} out={c.gene - 14} x={mx(0, 1) + 47 - 170} y={ROW[0] + 166} size={38} w={340} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pair, side by side</span></Hand>
+			<Hand at={c.side + 22} out={c.gene - 14} x={mx(2, 1) + 45 - 150} y={ROW[2] - 182} size={38} w={300} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>another pair</span></Hand>
 			<GreyTag at={c.first} out={c.gene - 14} x={1450} y={300} text="mitosis: no pairing" size={32} />
 			<Hand at={c.gene} x={96} y={300} size={46} w={330}>gene against gene: the same loci line up</Hand>
 			<GreyTag at={c.gene + 20} x={1480} y={300} text="the long pair, close up" size={28} />

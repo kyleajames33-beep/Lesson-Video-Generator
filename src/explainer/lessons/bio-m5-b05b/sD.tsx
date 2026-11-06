@@ -3,8 +3,12 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {Enter} from '../../kit';
 import {
-	AMBER_INK, CELL_FILL, CELL_LINE, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, Overlay, PLUM, prog, S, TEALC, Num, Cen, Scribble,
+	AMBER, AMBER_INK, CELL_FILL, CELL_LINE, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, Overlay, PLUM, prog, S, TEALC, Num, Cen, Scribble,
+	MC, discY, PP, TT, LP_Ab, LT_aB, PImg, P_CELL,
 } from './shared';
+import {usePNuc} from '../bio-m5-b05a/pnuc';
+import {usePlates} from '../bio-m5-b05a/cd';
+import type {MK, Strand} from './shared';
 import {AN, CD, HCell, HChrom, PL, Recombs, Stage, toS} from '../bio-m5-b05a/cd';
 import type {Base, HCol, Segs} from '../bio-m5-b05a/cd';
 
@@ -92,64 +96,78 @@ export const SceneFourCells: React.FC = () => {
 
 // ---------- 10. Tracking the numbers (revision 7: mini cells are the clean coded model) ----------
 const BX = [800, 1090, 1380, 1670];
-const ICY = 305;
-const MLEN = {L: 64, S: 42};
-const MW = 9;
-const RECP: Segs = [['P', 0], ['T', 0.66]];
-const RECT: Segs = [['T', 0], ['P', 0.66]];
-/** A mini chromosome: kind, colour, copied or not; seg pieces for the crossed-over chromatid. */
-const Mini: React.FC<{x: number; y: number; kind: 'L' | 'S'; col: HCol; dup?: number; s?: number; segB?: Segs; segA?: Segs}> = ({x, y, kind, col, dup = 0, s = 1, segA, segB}) => (
-	<HChrom x={x} y={y} len={MLEN[kind] * s} w={MW * s} col={col} dup={dup} segA={segA} segB={segB} />
+const ICY = 300;
+/** Quality fix (6 Nov 2026): the mini cells are the painted cell plate at its own aspect (uniform scale) and the
+ *  chromosomes are the painted plates (MC), scaled with the cell. The crossed-over chromatids keep their swapped piece. */
+const CELL_AR = 1438 / 1477;
+const UCell: React.FC<{cx: number; cy: number; r: number; o?: number}> = ({cx, cy, r, o = 1}) => <PImg p={P_CELL} x={cx - r} y={cy - r * CELL_AR} w={2 * r} h={2 * r * CELL_AR} o={o} />;
+const K0 = 0.32 / 118;
+/** One chromosome in a mini cell of radius r: kind, chromatid strands, copied or not. */
+const Mini: React.FC<{x: number; y: number; r: number; kind: MK; a: Strand; b?: Strand; dup?: number}> = ({x, y, r, kind, a, b, dup = 0}) => (
+	<MC x={x} y={y} kind={kind} a={a} b={b} dup={dup} s={K0 * r} beads={0} />
 );
 export const SceneTracking: React.FC = () => {
 	const f = useCurrentFrame();
+	usePNuc();
+	usePlates([P_CELL.src]);
 	const c = cues(S('tracking'), {
 		track: "Let's track", model: 'our model cell', four: 'starts with four', still: 'still has four', centro: 'count centromeres', eight: 'eight chromatids', copying: 'After copying', first: 'the first division', two1: 'holds two chromosomes', four2: 'four chromatids', second: 'After the second', two2: ['holds two chromosomes', 2], none: 'none has a sister', apart: 'pulled apart', human: 'A human cell', h46: '46 chromosomes', h23: ['23', 1], fourCells: ['four cells', 2],
 	});
 	const op = (a: number, d = 12) => prog(f, a, d);
 	const hu2 = c.h46 + 14, hu3 = c.h23 - 6, hu4 = c.fourCells - 4;
 	const dupAt = prog(f, c.copying + 6, 24);
+	const R0 = 140;
 	const four = (x0: number, dup: number) => (
 		<>
-			<Mini x={x0 - 42} y={ICY} kind="L" col="P" dup={dup} />
-			<Mini x={x0 - 14} y={ICY} kind="L" col="T" dup={dup} />
-			<Mini x={x0 + 14} y={ICY} kind="S" col="P" dup={dup} />
-			<Mini x={x0 + 42} y={ICY} kind="S" col="T" dup={dup} />
+			<Mini x={x0 - 68} y={ICY} r={R0} kind="L" a={PP} dup={dup} />
+			<Mini x={x0 - 23} y={ICY} r={R0} kind="L" a={TT} dup={dup} />
+			<Mini x={x0 + 23} y={ICY + 7} r={R0} kind="S" a={PP} dup={dup} />
+			<Mini x={x0 + 68} y={ICY + 7} r={R0} kind="S" a={TT} dup={dup} />
 		</>
 	);
+	const R1 = 68, R2 = 50;
+	const cen = prog(f, c.centro, 12) * (1 - prog(f, c.eight + 30, 12));
 	return (
 		<>
 			<Heading items={[[0, 'Tracking the numbers']]} size={60} />
 			{/* headers */}
-			<Cen at={c.track + 24} x={BX[0]} y={150} size={44} color={INK_SOFT}>start</Cen>
-			<Cen at={c.copying} x={BX[1]} y={150} size={44} color={INK_SOFT}>after copying</Cen>
-			<Cen at={c.first - 18} x={BX[2]} y={140} size={44} color={INK_SOFT} w={290}>after division 1<br /><span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>(each cell)</span></Cen>
-			<Cen at={c.second} x={BX[3]} y={140} size={44} color={INK_SOFT} w={290}>after division 2<br /><span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>(each cell)</span></Cen>
+			<Cen at={c.track + 24} x={BX[0]} y={100} size={44} color={INK_SOFT}>start</Cen>
+			<Cen at={c.copying} x={BX[1]} y={100} size={44} color={INK_SOFT}>after copying</Cen>
+			<Cen at={c.first - 18} x={BX[2]} y={92} size={44} color={INK_SOFT} w={290}>after division 1<br /><span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>(each cell)</span></Cen>
+			<Cen at={c.second} x={BX[3]} y={92} size={44} color={INK_SOFT} w={290}>after division 2<br /><span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>(each cell)</span></Cen>
 			{/* row labels */}
-			<Cen at={c.four - 20} x={330} y={428} size={44} w={460} color={INK_SOFT}><span style={{display: 'block', textAlign: 'right'}}>chromosomes in the cell</span></Cen>
-			<Cen at={c.four - 10} x={330} y={528} size={40} w={460} color={INK_SOFT}><span style={{display: 'block', textAlign: 'right'}}>chromatids (joined copies only)</span></Cen>
+			<Cen at={c.four - 20} x={330} y={458} size={44} w={460} color={INK_SOFT}><span style={{display: 'block', textAlign: 'right'}}>chromosomes in the cell</span></Cen>
+			<Cen at={c.four - 10} x={330} y={558} size={40} w={460} color={INK_SOFT}><span style={{display: 'block', textAlign: 'right'}}>chromatids (joined copies only)</span></Cen>
 			<Cen at={c.human} x={330} y={748} size={44} w={460} color={AMBER_INK}><span style={{display: 'block', textAlign: 'right'}}>human cell: chromosomes</span></Cen>
 			<Cen at={c.human + 6} x={330} y={848} size={40} w={460} color={AMBER_INK}><span style={{display: 'block', textAlign: 'right'}}>chromatids</span></Cen>
 			<Overlay>
-				{/* mini cells: start, after copying, two cells after division 1, four cells after division 2 */}
-				<g opacity={op(c.model)}><HCell cx={BX[0]} cy={ICY} rx={96} ry={66} sw={3} />{four(BX[0], 0)}</g>
-				<g opacity={op(c.copying + 4)}><HCell cx={BX[1]} cy={ICY} rx={96} ry={66} sw={3} />{four(BX[1], dupAt)}</g>
+				{/* painted cells: start, after copying, two cells after division 1, four cells after division 2 */}
+				<g opacity={op(c.model)}><UCell cx={BX[0]} cy={ICY} r={R0} />{four(BX[0], 0)}</g>
+				<g opacity={op(c.copying + 4)}>
+					<UCell cx={BX[1]} cy={ICY} r={R0} />{four(BX[1], dupAt)}
+					{/* one disc = one chromosome: the centromeres ring as they are counted */}
+					{[[-68, 0], [-23, 0], [23, 7], [68, 7]].map(([dx, dy], k) => {
+						const kind: MK = k < 2 ? 'L' : 'S';
+						return <circle key={k} cx={BX[1] + dx} cy={discY(ICY + dy, kind, K0 * R0)} r={11 + 3 * cen} fill="none" stroke={AMBER} strokeWidth={4} opacity={cen} />;
+					})}
+				</g>
 				<g opacity={op(c.first)}>
-					<HCell cx={BX[2] - 70} cy={ICY} rx={62} ry={56} sw={3} />
-					<Mini x={BX[2] - 84} y={ICY} kind="L" col="P" dup={1} s={0.85} segB={RECP} />
-					<Mini x={BX[2] - 52} y={ICY + 6} kind="S" col="T" dup={1} s={0.85} />
-					<HCell cx={BX[2] + 70} cy={ICY} rx={62} ry={56} sw={3} />
-					<Mini x={BX[2] + 56} y={ICY} kind="L" col="T" dup={1} s={0.85} segA={RECT} />
-					<Mini x={BX[2] + 88} y={ICY + 6} kind="S" col="P" dup={1} s={0.85} />
+					<UCell cx={BX[2] - 72} cy={ICY} r={R1} />
+					<Mini x={BX[2] - 86} y={ICY} r={R1} kind="L" a={PP} b={LP_Ab} dup={1} />
+					<Mini x={BX[2] - 58} y={ICY + 4} r={R1} kind="S" a={TT} dup={1} />
+					<UCell cx={BX[2] + 72} cy={ICY} r={R1} />
+					<Mini x={BX[2] + 58} y={ICY} r={R1} kind="L" a={LT_aB} b={TT} dup={1} />
+					<Mini x={BX[2] + 86} y={ICY + 4} r={R1} kind="S" a={PP} dup={1} />
 				</g>
 				<g opacity={op(c.second)}>
-					{[{l: 'P', s: 'T', seg: undefined}, {l: 'P', s: 'T', seg: RECP}, {l: 'T', s: 'P', seg: RECT}, {l: 'T', s: 'P', seg: undefined}].map((m, i) => {
-						const x = BX[3] + (i - 1.5) * 74;
+					{[{l: PP, s: TT}, {l: LP_Ab, s: TT}, {l: LT_aB, s: PP}, {l: TT, s: PP}].map((m, i) => {
+						const x = BX[3] + (i % 2 === 0 ? -58 : 58);
+						const y = ICY + (i < 2 ? -54 : 54);
 						return (
 							<g key={i}>
-								<HCell cx={x} cy={ICY} rx={34} ry={42} sw={2.5} />
-								<Mini x={x - 9} y={ICY} kind="L" col={m.l as HCol} s={0.62} segA={m.seg as Segs | undefined} />
-								<Mini x={x + 10} y={ICY + 5} kind="S" col={m.s as HCol} s={0.62} />
+								<UCell cx={x} cy={y} r={R2} />
+								<Mini x={x - 9} y={y} r={R2} kind="L" a={m.l} />
+								<Mini x={x + 10} y={y + 3} r={R2} kind="S" a={m.s} />
 							</g>
 						);
 					})}
@@ -160,21 +178,23 @@ export const SceneTracking: React.FC = () => {
 				{Array.from({length: 8}, (_, k) => {
 					const p = prog(f, c.eight + k * 3, 10);
 					const x = BX[1] - 98 + k * 28 + Math.floor(k / 2) * 4;
-					return <g key={k} opacity={p} transform={`translate(0,${(1 - p) * -24})`}><rect x={x - 6} y={602} width={12} height={46} rx={6} fill={Math.floor(k / 2) % 2 === 0 ? PLUM : TEALC} stroke={INK} strokeWidth={2.5} /></g>;
+					return <g key={k} opacity={p} transform={`translate(0,${(1 - p) * -24})`}><rect x={x - 6} y={634} width={12} height={46} rx={6} fill={Math.floor(k / 2) % 2 === 0 ? PLUM : TEALC} stroke={INK} strokeWidth={2.5} /></g>;
 				})}
 			</Overlay>
+			<Enter at={c.centro} style={{position: 'absolute', left: BX[1] - 140, top: 412, width: 280, textAlign: 'center'}}>
+				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34, color: AMBER_INK, background: '#fffdf8', border: `3px solid ${AMBER_INK}`, borderRadius: 999, padding: '0 14px 3px'}}>count centromeres</span>
+			</Enter>
 			{/* model numbers */}
-			<Num at={c.four + 12} x={BX[0]} y={420} text="4" size={92} />
-			<Num at={c.four + 40} x={BX[0]} y={522} text="0" size={72} color={INK_SOFT} />
-			<Num at={c.still + 8} x={BX[1]} y={420} text="4" size={92} />
-			<Cen at={c.centro} x={BX[1]} y={364} size={38} w={280} color={AMBER_INK}>count centromeres</Cen>
-			<Num at={c.eight + 10} x={BX[1]} y={522} text="8" size={72} color={INK} />
-			<Num at={c.two1 + 8} x={BX[2]} y={420} text="2" size={92} />
-			<Num at={c.four2 + 10} x={BX[2]} y={522} text="4" size={72} />
-			<Num at={c.two2 + 6} x={BX[3]} y={420} text="2" size={92} />
-			<Num at={c.none + 6} x={BX[3]} y={522} text="0" size={72} color={INK_SOFT} />
-			<Cen at={c.four + 52} x={BX[0]} y={606} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none to count: one DNA molecule each</Cen>
-			<Cen at={c.apart} x={BX[3]} y={606} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none: one DNA molecule each</Cen>
+			<Num at={c.four + 12} x={BX[0]} y={450} text="4" size={92} />
+			<Num at={c.four + 40} x={BX[0]} y={552} text="0" size={72} color={INK_SOFT} />
+			<Num at={c.still + 8} x={BX[1]} y={450} text="4" size={92} />
+			<Num at={c.eight + 10} x={BX[1]} y={552} text="8" size={72} color={INK} />
+			<Num at={c.two1 + 8} x={BX[2]} y={450} text="2" size={92} />
+			<Num at={c.four2 + 10} x={BX[2]} y={552} text="4" size={72} />
+			<Num at={c.two2 + 6} x={BX[3]} y={450} text="2" size={92} />
+			<Num at={c.none + 6} x={BX[3]} y={552} text="0" size={72} color={INK_SOFT} />
+			<Cen at={c.four + 52} x={BX[0]} y={636} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none to count: one DNA molecule each</Cen>
+			<Cen at={c.apart} x={BX[3]} y={636} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none: one DNA molecule each</Cen>
 			{/* human row */}
 			<Num at={c.h46} x={BX[0]} y={740} text="46" size={88} color={AMBER_INK} />
 			<Num at={c.h46 + 6} x={BX[0]} y={844} text="0" size={68} color={INK_SOFT} />

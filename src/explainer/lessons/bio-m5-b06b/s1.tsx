@@ -112,7 +112,8 @@ export const SceneGene: React.FC = () => {
 	const plateO = 1 - prog(f, 10, 22);
 	const boardO = prog(f, 14, 20);
 	const toLeft = prog(f, K2.book, 26);
-	const bs = 1 - 0.5 * toLeft, bx = 30 * toLeft, by = 250 * toLeft;
+	// Quality fix (6 Nov 2026): the board shrinks to 0.64 (was 0.5) beside the book, so the gene and its mRNA stay readable.
+	const bs = 1 - 0.36 * toLeft, bx = -20 * toLeft, by = 180 * toLeft;
 	const gene0 = colX(GENE0) - 50, gene1 = colX(GENE1) + 50;
 	const mrnaY = 790;
 	const geneTop = LONG_TOP.slice(GENE0, GENE1 + 1);

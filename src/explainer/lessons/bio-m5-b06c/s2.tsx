@@ -8,7 +8,9 @@ import {
 	AMBER, AMBER_INK, BbArrow, Chip, Cross, DrawPath, FONT_HAND, Fade, GREYT, GREY_INK, GreyTag, Heading, INK, INK_SOFT, MRNA, MRNA_INK, Overlay, PlainArrow,
 	SpanBracket, Strand, Sx, cw, kf, prog,
 } from '../bio-m5-b06b/shared';
-import {AABead, CHART, CodonChart, PB, ProteinBlob, S, SOC, THC, TRNA_INK, TRna, TWC, anticodonOf, beadPos, chartLine, codonToAA, reverse} from './shared';
+import {AABead, CHART, CodonChart, NB, PB, ProteinBlob, S, SOC, THC, TRNA_INK, TRna, TWC, anticodonOf, beadPos, chartLine, codonToAA, reverse} from './shared';
+import type {ChartGeom} from './shared';
+import {FONT_DISPLAY} from '../bio-m5-b06b/shared';
 
 /** A short codon piece (tiles up) centred at local x 0, backbone at local y, inside a scaled group. */
 export const CodonPiece: React.FC<{y: number; codon: string; glow?: (i: number) => number; ends?: boolean; arrow?: boolean}> = ({y, codon, glow, ends = true, arrow = false}) => (
@@ -132,6 +134,60 @@ export const SceneCodonAnticodon: React.FC = () => {
 	);
 };
 
+
+// Quality fix (6 Nov 2026): the audit found an empty stage before the chart and small chart text (25 px). This lesson
+// draws a larger copy of the shared chart (shared.tsx CodonChart is imported by other lessons, so it is not edited):
+// codon and amino acid text 32 px, base letters 46 px, axis labels 40 px. The chart arrives with the title.
+const G2: ChartGeom = {x0: 190, y0: 225, cw: 300, ch: 196};
+const L0 = 42, LS = 46;
+const line2 = (codon: string) => {
+	const r = NB.indexOf(codon[0]), c = NB.indexOf(codon[1]), t = NB.indexOf(codon[2]);
+	return {x: G2.x0 + c * G2.cw, y: G2.y0 + r * G2.ch + L0 + t * LS};
+};
+const BigChart: React.FC<{at: number; rowHi?: number; colHi?: number; row?: number; col?: number; lineHi?: Record<string, number>}> = ({at, rowHi = 0, colHi = 0, row = -1, col = -1, lineHi = {}}) => {
+	const f = useCurrentFrame();
+	const p = prog(f, at, 20);
+	if (p <= 0.01) return null;
+	const g = G2;
+	return (
+		<g opacity={p}>
+			<text x={g.x0 + 2 * g.cw} y={g.y0 - 58} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK_SOFT}>second base</text>
+			<text x={g.x0 - 100} y={g.y0 + 2 * g.ch} textAnchor="middle" transform={`rotate(-90 ${g.x0 - 100} ${g.y0 + 2 * g.ch})`} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK_SOFT}>first base</text>
+			<text x={g.x0 + 4 * g.cw + 48} y={g.y0 - 18} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={INK_SOFT}>third</text>
+			{row >= 0 && rowHi > 0.01 ? <rect x={g.x0} y={g.y0 + row * g.ch} width={4 * g.cw} height={g.ch} fill={AMBER} opacity={0.16 * rowHi} /> : null}
+			{col >= 0 && colHi > 0.01 ? <rect x={g.x0 + col * g.cw} y={g.y0} width={g.cw} height={4 * g.ch} fill={AMBER} opacity={0.16 * colHi} /> : null}
+			{row >= 0 && col >= 0 && rowHi * colHi > 0.01 ? <rect x={g.x0 + col * g.cw} y={g.y0 + row * g.ch} width={g.cw} height={g.ch} fill="none" stroke={AMBER} strokeWidth={6} opacity={rowHi * colHi} /> : null}
+			{NB.map((b, i) => (
+				<g key={b}>
+					<text x={g.x0 + i * g.cw + g.cw / 2} y={g.y0 - 12} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46}} fill={INK}>{b}</text>
+					<text x={g.x0 - 40} y={g.y0 + i * g.ch + g.ch / 2 + 16} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46}} fill={INK}>{b}</text>
+				</g>
+			))}
+			{NB.map((a, r) => NB.map((b, c) => (
+				<g key={a + b}>
+					<rect x={g.x0 + c * g.cw} y={g.y0 + r * g.ch} width={g.cw} height={g.ch} fill="#fffdf8" fillOpacity={0.6} stroke="rgba(60,45,20,0.3)" strokeWidth={2} />
+					{NB.map((t, k) => {
+						const cod = a + b + t;
+						const aa = codonToAA(cod);
+						const hi = lineHi[cod] ?? 0;
+						const y = g.y0 + r * g.ch + L0 + k * LS;
+						const stop = aa === 'stop';
+						return (
+							<g key={t}>
+								{stop ? <rect x={g.x0 + c * g.cw + 8} y={y - 32} width={g.cw - 16} height={42} rx={8} fill="#dfe2e5" /> : null}
+								{hi > 0.01 ? <rect x={g.x0 + c * g.cw + 6} y={y - 33} width={g.cw - 12} height={44} rx={8} fill={AMBER} opacity={0.45 * hi} /> : null}
+								<text x={g.x0 + c * g.cw + 16} y={y} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32}} fill={stop ? GREY_INK : INK}>{cod}</text>
+								<text x={g.x0 + c * g.cw + 100} y={y} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32}} fill={stop ? GREY_INK : INK}>{aa}</text>
+								{cod === 'AUG' ? <text x={g.x0 + c * g.cw + 172} y={y} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={AMBER_INK}>start</text> : null}
+								{c === 3 ? <text x={g.x0 + 4 * g.cw + 48} y={y} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30}} fill={INK_SOFT}>{t}</text> : null}
+							</g>
+						);
+					})}
+				</g>
+			)))}
+		</g>
+	);
+};
 // ---------- 6. Reading the codon chart ----------
 const H6 = 'codon-chart';
 const S6 = S(H6);
@@ -143,13 +199,13 @@ export const SceneCodonChart: React.FC = () => {
 	const rowHi = isAug ? prog(f, K6.aug, 10) : prog(f, K6.first, 12);
 	const colHi = isAug ? prog(f, K6.aug + 10, 10) : prog(f, K6.second, 12);
 	const lineHi: Record<string, number> = isAug ? {AUG: prog(f, K6.aug + 20, 10)} : {GAA: prog(f, K6.third, 10)};
-	const gaa = chartLine(CHART, 'GAA'), aug = chartLine(CHART, 'AUG');
+	const gaa = line2('GAA'), aug = line2('AUG');
 	const glides = (at: number) => kf(f, [[at, 0], [at + 24, 1]]);
 	return (
 		<>
 			<Heading text="Reading the codon chart" at={4} size={58} />
 			<Overlay>
-				<CodonChart at={K6.chart - 10} row={row} col={col} rowHi={rowHi} colHi={colHi} lineHi={lineHi} />
+				<BigChart at={4} row={row} col={col} rowHi={rowHi} colHi={colHi} lineHi={lineHi} />
 				<GreyTag x={1500} y={240} text="worked out in the 1960s" at={K6.s1960} size={26} />
 				<Chip x={1500} y={300} text="mRNA codons only" at={K6.look} size={36} color={MRNA_INK} stroke={MRNA} />
 				{/* two wrong lookups stopped */}
@@ -163,14 +219,14 @@ export const SceneCodonChart: React.FC = () => {
 					);
 				})}
 				<Sx x={1500} y={650} text="G A A" size={56} color={MRNA_INK} weight={800} at={K6.take} out={K6.aug - 4} />
-				<Sx x={1500} y={710} text="1st G: row" size={34} color={INK} hand at={K6.first} out={K6.aug - 4} />
-				<Sx x={1500} y={755} text="2nd A: column" size={34} color={INK} hand at={K6.second} out={K6.aug - 4} />
-				<Sx x={1500} y={800} text="3rd A: line" size={34} color={INK} hand at={K6.third} out={K6.aug - 4} />
-				<PlainArrow x1={1490} y1={790} x2={1405} y2={gaa.y - 8} at={K6.third + 4} color={AMBER_INK} width={5} out={K6.aug - 4} />
+				<Sx x={1500} y={712} text="1st G: row" size={38} color={INK} hand at={K6.first} out={K6.aug - 4} />
+				<Sx x={1500} y={758} text="2nd A: column" size={38} color={INK} hand at={K6.second} out={K6.aug - 4} />
+				<Sx x={1500} y={804} text="3rd A: line" size={38} color={INK} hand at={K6.third} out={K6.aug - 4} />
+				<PlainArrow x1={1500} y1={790} x2={1420} y2={gaa.y - 10} at={K6.third + 4} color={AMBER_INK} width={5} out={K6.aug - 4} />
 				<AABead x={1560} y={880} aa="Glu" r={44} o={prog(f, K6.glu, 10) * (1 - prog(f, K6.aug - 4, 10))} />
 				<Sx x={1615} y={892} text="glutamate" size={36} color={INK} hand at={K6.written} out={K6.aug - 4} />
 				<Sx x={1500} y={650} text="A U G" size={56} color={MRNA_INK} weight={800} at={K6.aug} />
-				<PlainArrow x1={1490} y1={700} x2={1405} y2={aug.y - 8} at={K6.aug + 24} color={AMBER_INK} width={5} />
+				<PlainArrow x1={1500} y1={700} x2={1420} y2={aug.y - 10} at={K6.aug + 24} color={AMBER_INK} width={5} />
 				<AABead x={1560} y={880} aa="Met" r={44} o={prog(f, K6.met, 10)} />
 				<Sx x={1615} y={892} text="methionine (start)" size={34} color={INK} hand at={K6.met + 4} />
 			</Overlay>

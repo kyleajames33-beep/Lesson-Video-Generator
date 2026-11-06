@@ -35,22 +35,36 @@ const StopLine: React.FC<{y: number; codon: string; words: string[]; at: number}
 		</g>
 	);
 };
+// Quality fix (6 Nov 2026): each aid sits in a framed card.
+const AidCard: React.FC<{x: number; y: number; w: number; h: number; at: number}> = ({x, y, w, h, at}) => {
+	const f = useCurrentFrame();
+	const p = prog(f, at, 14);
+	if (p <= 0.01) return null;
+	return (
+		<g opacity={p}>
+			<rect x={x + 3} y={y + 10} width={w} height={h} rx={26} fill="rgba(60,45,20,0.07)" />
+			<rect x={x} y={y} width={w} height={h} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={4} />
+		</g>
+	);
+};
 export const SceneMemoryB6c: React.FC = () => {
 	const f = useCurrentFrame();
 	return (
 		<>
 			<Heading text="Two aids" at={4} size={60} />
 			<Overlay>
+				<AidCard x={90} y={175} w={1000} h={450} at={K12.stops - 6} />
+				<AidCard x={90} y={655} w={1740} h={370} at={K12.kept - 6} />
 				<Sx x={150} y={240} text="the stop codons" size={40} color={INK_SOFT} hand at={K12.stops} />
 				<StopLine y={340} codon="UAA" words={['U', 'Are', 'Away']} at={K12.away} />
 				<StopLine y={450} codon="UAG" words={['U', 'Are', 'Gone']} at={K12.gone} />
 				<StopLine y={560} codon="UGA" words={['U', 'Go', 'Away']} at={K12.go} />
-				<Sx x={150} y={720} text="transcription keeps the language (bases to bases)" size={40} color={GREY_INK} hand at={K12.kept} />
-				<Sx x={150} y={810} text="translation changes it: bases to amino acids" size={58} color={AMBER_INK} hand at={K12.changes} />
+				<Sx x={150} y={740} text="transcription keeps the language (bases to bases)" size={42} color={GREY_INK} hand at={K12.kept} />
+				<Sx x={150} y={840} text="translation changes it: bases to amino acids" size={60} color={AMBER_INK} hand at={K12.changes} />
 				<g opacity={prog(f, K12.translator - 6, 12)}>
 					<TRna x={1560} ya={800} s={0.75} anti="CUU" aa="Glu" />
 				</g>
-				<Sx x={1560} y={930} text="the translator" size={44} color={TRNA_INK} hand anchor="middle" at={K12.translator} />
+				<Sx x={1560} y={990} text="the translator" size={44} color={TRNA_INK} hand anchor="middle" at={K12.translator} />
 			</Overlay>
 		</>
 	);
@@ -354,29 +368,41 @@ export const SceneDecisionB6c: React.FC = () => {
 };
 
 // ---------- 13. Key notes ----------
+// Quality fix (6 Nov 2026): five dense paragraphs became eight short lines at 36 px, plus a framed memory aid.
 const NOTES = [
-	"Translation happens at ribosomes in the cytoplasm. The ribosome (small and large subunits, protein and rRNA) reads the mRNA one codon (three bases) at a time from its 5' end.",
-	"Each tRNA carries one specific amino acid. Its anticodon pairs antiparallel with the codon: codon 5' GAA 3', anticodon 3' CUU 5'.",
-	'Start at AUG (methionine). Each round: a matching tRNA arrives, rRNA forms a peptide bond, the ribosome moves one codon. A stop codon adds no amino acid; the polypeptide is released, then folds.',
-	'mRNA carries the sequence and sets the order; tRNA links each codon to its amino acid. Both are essential.',
+	'Translation happens at ribosomes in the cytoplasm.',
+	"The ribosome reads mRNA one codon (three bases) at a time, from the 5' end.",
+	'Each tRNA carries one amino acid; its anticodon pairs with the codon.',
+	"Codon 5' GAA 3' pairs with anticodon 3' CUU 5' (antiparallel).",
+	'Start at AUG (Met). rRNA joins amino acids with peptide bonds.',
+	'A stop codon adds no amino acid: the polypeptide is released, then folds.',
+	'mRNA sets the order; tRNA links each codon to its amino acid.',
 	'Use the codon chart with mRNA codons only.',
 ];
 export const SceneNotesB6c: React.FC = () => (
 	<>
-		<div style={{position: 'absolute', left: 96, top: 70}}><HandText text="Key notes: what to write in your book" at={2} size={56} cps={40} /></div>
-		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
-		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 175, width: 1700}}>
+		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={68} cps={40} /></div>
+		<div style={{position: 'absolute', left: 110, top: 200, width: 1180}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 20}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 33, fontWeight: 500, color: INK, lineHeight: 1.28}}>{n}</div>
+				<Enter key={i} at={14 + i * 8} style={{display: 'flex', gap: 20, marginBottom: 20}}>
+					<div style={{flex: 'none', width: 16, height: 16, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 36, fontWeight: 500, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 930}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: MRNA_INK}}>Memory: stop codons UAA, UAG, UGA: U Are Away, U Are Gone, U Go Away.</div>
+		<Enter at={90} style={{position: 'absolute', left: 1350, top: 230, width: 470, boxSizing: 'border-box', padding: '26px 30px', borderRadius: 24, border: `4px solid ${AMBER}`, background: '#fffdf8', boxShadow: '0 14px 34px rgba(60,45,20,0.10)'}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER_INK, lineHeight: 1}}>Remember: stop codons</div>
+			{[['UAA', 'U Are Away'], ['UAG', 'U Are Gone'], ['UGA', 'U Go Away']].map(([c, w]) => (
+				<div key={c} style={{display: 'flex', alignItems: 'baseline', gap: 16, marginTop: 14}}>
+					<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, color: GREY_INK}}>{c}</span>
+					<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: INK}}>{w}</span>
+				</div>
+			))}
+			<div style={{height: 3, background: '#eadfc8', margin: '22px 0 18px'}} />
+			<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 30, color: INK, lineHeight: 1.25}}>Transcription keeps the language; translation changes it.</div>
+		</Enter>
+		<Enter at={150} style={{position: 'absolute', left: 110, top: 930}}>
+			<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
 	</>
 );
