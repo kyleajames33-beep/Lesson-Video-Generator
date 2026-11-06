@@ -25,3 +25,10 @@ Claude (root), 6 November 2026. Designs written to `phys-y12-design-brief.md`.
 16. **Orbits.** v18 uses the existing launcher plates on Newton's mountain (no cannon). v19 uses Himawari-9 if its details verify, otherwise the written generic wording. v22's transfer speeds (8.73 and 4.37 km s⁻¹) become "faster" and "slower" tags unless the learning review finds the numbers help. Total energy for non-circular orbits sits in v22, after v21's zero at infinity. v23's uniform-field bridge is checked against m6-v01 when designed.
 17. **Plates.** New: rear-view car (empty seats), tube in lab clamp, Moon (one plate shared by v16 to v18), satellite, roof dish, comet, Mars. Check the paper-clip plate's edges and the rocket plate rotated upright.
 18. **Site corrections** (lessons 8, 10, 11, 12, 14, 15, 16, 17) are listed in each design's notes; Codex logs them.
+
+## After brief 187 repairs (6 November 2026)
+
+- **v07 launchers:** two painted launchers side by side (bases aligned, barrels at 25.8° and 64.2°), replacing the coded launch point now that the launcher plates exist.
+- **v01 demonstrator:** the sliding-rod mechanism is accepted (one movement hits ball B and slides its pin out from under ball A). Codex paints `y12p-drop-launch-base-v1` (rewritten brief) and `y12p-drop-launch-slider-v1`.
+- **Brief 187 delivered plates** (launcher, ramp, carbon paper, plumb bob, spirit level, spanner, nut and plate, crane, seesaw) are accepted at native size. Builds scale them uniformly, and the A-grade build sheet checks registration and proportion.
+- **Repairs approved:** clean the coloured edge fringe on `y12p-plumb-bob-v1` and `y12p-spirit-level-v1`; split the seesaw into `y12p-seesaw-plank-v1` and `y12p-seesaw-stand-v1` so the plank can tilt.
