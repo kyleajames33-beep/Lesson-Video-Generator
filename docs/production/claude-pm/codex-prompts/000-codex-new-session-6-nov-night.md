@@ -42,6 +42,6 @@ Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course w
 5. **Re-render-and-replace, C grades only (owner, 6 Nov evening):** 198, 200, 201, 202, 203, 204 and 205. Claude has already fixed each video's scene code. You render v2, scan it, compare its sheet with Claude's, do a playback check, and replace it on YouTube (or add it to `work/youtube-pending.json` if access is still broken). **Shelved, do not run:** 206 to 212 and 215 (B-grade polish). Their scene fixes are committed and will be rendered later, when render time is free.
 6. **214:** error check of Claude's brief 180 repairs, then one plate. It is light work and may run alongside a render.
 7. **Production reviews and plates:** 191, 192 and 193 (Year 12 Physics Modules 7 and 8).
-8. Any brief numbered above 214 (check the folder), except the shelved 215: 216, 218 then 219 (error checks, light) go after 214.
+8. Any brief numbered above 214 (check the folder), except the shelved 215: 216, 218, 219 then 221 (error checks, light) go after 214.
 
 Hand in to `status.md` after each brief, as before.
