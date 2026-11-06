@@ -4,22 +4,43 @@ import {execFileSync, spawnSync} from 'node:child_process';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, selectComposition} from '@remotion/renderer';
 import {FFMPEG, ROOT, buildSlimPublic, loadConfig, totalFrames, writeEntry} from './lib/explainer-common.mjs';
+import {collectExplainerAssets, assertSlimAssets, verifyBrowserAssets} from './lib/explainer-asset-guard.mjs';
 
 const id = process.argv[2];
 if (!id || id.startsWith('--')) throw new Error('Usage: node scripts/render-explainer.mjs <explainerId> --confirm [--revision=vN]');
 if (!process.argv.includes('--confirm')) throw new Error('Refusing to render without --confirm (full renders are heavy).');
 const revision = process.argv.find((a) => a.startsWith('--revision='))?.slice(11) || 'v1';
+async function waitForRenderMemory() {
+	if (process.platform !== 'win32') return;
+	for (let attempt = 0; attempt < 40; attempt++) {
+		const sample = spawnSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', '[Console]::Write((Get-CimInstance Win32_OperatingSystem).FreeVirtualMemory)'], {encoding: 'utf8', windowsHide: true, maxBuffer: 8192});
+		const availableKB = Number(sample.stdout?.trim());
+		if (sample.status === 0 && availableKB >= 1.5 * 1024 * 1024) return;
+		console.log(`Waiting for render memory: ${Number.isFinite(availableKB) ? Math.round(availableKB / 1024) : 'unknown'} MiB committed-memory headroom; need 1536 MiB.`);
+		await new Promise(resolve => setTimeout(resolve, 30000));
+	}
+	throw new Error('Insufficient render memory after 20 minutes. Preserve completed chunks and retry when memory is available.');
+}
+await waitForRenderMemory();
 const config = await loadConfig(id);
 const base = path.join(ROOT, 'out/explainer', id);
 const pub = path.join(base, 'public-slim');
-const chunkDir = path.join(base, 'chunks');
+const chunkDir = path.join(base, `chunks-${revision}`);
 const finalMp4 = path.join(base, `${id}-${revision}.mp4`);
 if (fs.existsSync(finalMp4)) throw new Error(`${finalMp4} exists. Choose a new revision.`);
+fs.mkdirSync(base, {recursive: true});
+const references = await collectExplainerAssets(id, base, config.__entrySource);
 fs.rmSync(pub, {recursive: true, force: true});
 buildSlimPublic(config, pub);
+assertSlimAssets(references.assets, pub);
+const decoded = await verifyBrowserAssets(references.assets, pub);
+fs.writeFileSync(path.join(base, `asset-guard-${revision}.json`), JSON.stringify({references, decoded}, null, 2));
+console.log(`Asset guard passed: ${references.assets.length} paths, ${references.scenes.length} scenes scanned frame by frame.`);
+// Never resume chunks from a different input set or an earlier failed render.
+if (fs.existsSync(chunkDir)) throw new Error(`${chunkDir} exists. Preserve or remove it explicitly before retrying.`);
 fs.mkdirSync(chunkDir, {recursive: true});
 const entry = path.join(base, 'entry.tsx');
-writeEntry(config, entry);
+writeEntry(config, entry, references.assets);
 const serveUrl = await bundle({entryPoint: entry, publicDir: pub});
 const run = (args) => execFileSync(FFMPEG, args, {stdio: 'inherit'});
 export const LOUDNESS = {I: -14, TP: -1.5, LRA: 11};
@@ -34,18 +55,19 @@ try {
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 60000});
 	const total = composition.durationInFrames, size = 150, files = [];
 	for (let start = 0; start < total; start += size) {
+		await waitForRenderMemory();
 		const end = Math.min(total - 1, start + size - 1);
 		const out = path.join(chunkDir, `v-${String(start).padStart(5, '0')}.mp4`);
 		files.push(out);
 		if (fs.existsSync(out)) continue;
 		for (let attempt = 1; attempt <= 4; attempt++) {
 			try {
-				await renderMedia({composition, serveUrl, codec: 'h264', crf: 20, concurrency: Number(process.env.RENDER_CONCURRENCY || 2), muted: true, timeoutInMilliseconds: 45000, frameRange: [start, end], outputLocation: out});
+				await renderMedia({composition, serveUrl, codec: 'h264', crf: 20, concurrency: Number(process.env.RENDER_CONCURRENCY || 2), muted: true, timeoutInMilliseconds: 45000, frameRange: [start, end], outputLocation: out, onBrowserLog: log => {if (log.type === 'error' || log.type === 'warning') console.warn('Browser:', log.text);}});
 				console.log('chunk', start, end, 'ok');
 				break;
 			} catch (e) {
 				fs.rmSync(out, {force: true});
-				console.log('chunk', start, 'attempt', attempt, 'failed:', String(e.message).slice(0, 90));
+				console.log('chunk', start, 'attempt', attempt, 'failed:', String(e.message));
 				if (attempt === 4) throw e;
 			}
 		}

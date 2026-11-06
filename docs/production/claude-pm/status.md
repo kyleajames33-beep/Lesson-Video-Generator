@@ -1884,7 +1884,7 @@ Briefs133,134,135 are finished in the requested order. No lesson designs,speech,
 
 ### Brief136: complete hand-in (1 November2026)
 
-1. Whole-course outline: `programme/maths-a12-course-outline.json` and `.md` propose67 videos including d01-d10 and optional practice; all158 fresh official Year12 content points have an owner,none unowned. Strand-order reasons and source gaps are explicit. This is Claude's route input,not a canonical route or teaching approval.
+1. Whole-course outline: `programme/maths-a12-course-outline.json` and `.md` propose67 videos including d01-d10 and optional practice; all 158 fresh official Year12 content points have an owner,none unowned. Strand-order reasons and source gaps are explicit. This is Claude's route input,not a canonical route or teaching approval.
 2. Next preparation: `programme/maths-a12-route-inputs-2.json` and14 packs `pre-design/maths-a12/math-a12-d11.md` throughd19 andi01 throughi05,with exact syllabus HTML/IDs,actual source data-step/example IDs and hashes,entry knowledge,boundaries,handoffs,recalculated original site numbers and28 original candidate questions/answers. SymPy derivative checks and numeric/substitution checks pass. Source gaps are explicit. Site log48-50 adds two confirmed source issues and corrects the earlier reciprocal-trig coverage overstatement without changing the historical crosswalk.
 3. Kit needs: `checks/maths-kit-needs-next-strands.md` maps every prepared video to existing parts and new needs; later signed-area,accumulation,probability and cash-flow requirements named. Validation in `work/brief136/validation.json` confirms67 unique IDs,158 point owners,14 packs,28 questions and source hashes. No designs,product code,speech,renders or commits. Brief136 complete before137 starts.
 
@@ -2096,7 +2096,7 @@ Route inputs: `docs/production/programme/maths-a12-route-inputs-3.json`. Nine in
 
 Six physics packs complete in `claude-pm/pre-design/phys-y11/`, v26 to v31. v26 starts after v24 and does not require held v25. v31 includes a full method,18 repeated illustrative trials, conservative uncertainty intervals, graphs, risks and partial FA0 proposals; total-KE interpretation is conditional on rotation/external-work bounds. All14 fresh Physics actions, source hashes, actual sections/examples and numeric checks pass. Confirmed site findings added without duplicating existing entries.
 
-The maths section was completed first:13 route entries,9 integral packs, no trig packs,13 kit-needs rows and source corrections. Combined validation: `work/brief151/validation.json`. Independent audits cover all15 packs and all19 video inputs. No designs, site files, speech, renders or commits changed. Next: brief147.
+The maths section was completed first:13 route entries,9 integral packs, no trig packs,13 kit-needs rows and source corrections. Combined validation: `work/brief151/validation.json`. Independent audits cover all 15 packs and all19 video inputs. No designs, site files, speech, renders or commits changed. Next: brief147.
 
 
 ### Brief 147: Year 11 Biology FA1 v07 to v12
@@ -2518,3 +2518,1935 @@ Learning reviews and maths checks for f01 to f15 and g01 to g03 are under `check
 ### Brief 165 handover voicing progress (4 November 2026)
 
 For handover, the remaining four sentences of d01 scene 14 were saved as one Google request in the scene 14 cache, preserving its two earlier aligned sentence takes. Whole-scene Google takes for scenes 15 and 16 were also saved in their respective `work/google-tts-cache/scene-15-*` and `scene-16-*` folders, one request each. These three new takes have not yet been segmented or aligned, and no measured lesson, complete captions, cue-timing check, human listening or render has been produced. The production generator still needs the 4 November request-budget changes before use on additional lessons. No key was printed or logged.
+
+### Brief 165 local continuation (4 November 2026)
+
+All 16 d01 scenes are now assembled from the preserved takes, with no new Google requests and no regeneration. Scene 14 retains its first two sentence takes and appends the saved suffix; scenes 15 and 16 use the saved whole recordings. `work/brief165-align-saved.py` locates sentence gaps using forced alignment of these short clips, chooses minimum-energy cuts in those gaps, and force-aligns each sentence separately. The sentence boundaries and word scores are preserved alongside the raw cache takes. `work/brief165-assemble-saved.mjs` checks cached pronunciation text before assembling the missing scene files and measured lesson.
+
+Outputs: `lessons/math-a12-d01/measured/lesson.json`, `measured/validation.json`, and `measured/captions/` (222 cues). `node work/brief165-validate.mjs` passes all 16 scenes for display identity, ordered finite timings, audio bounds, frame durations, two 10-second countdowns and the 60-second notes hold. Speech totals 482.72 seconds; generation metadata totals an estimated US$0.10947 in historical saved usage. This continuation spent US$0 on speech.
+
+Alignment quality remains open: the scene 14 suffix gives the mathematical word `e` a zero forced-alignment score at 2.527 to 2.547 seconds into that suffix. Other low-score words are recorded in its cached alignment. This is not proof that `e` is missing or wrong, but the exact recording needs listening before accepting its timing. Do not call this a passed pronunciation or exact-cue check. The production generator still uses sentence requests and must be repaired before Part 3; no additional lessons were voiced. No render, commit or push was made.
+
+### Brief 162 source-review continuation (4 November 2026)
+
+Source learning reviews and maths checks now exist for all twelve available s01 to s12 designs, in `checks/m-a12sNN-learning-review.md` and `checks/m-a12sNN-claude-science-check.md`. s01 is the earlier hand-in; this continuation added s02 to s12. Exact SymPy, enumeration, seeded-simulation and inverse-normal evidence is under `work/brief162/`. Confirmed local-site findings were added as items 102 to 105, without editing the site or designs. The official random-variables page was refreshed, but its public glossary placeholders and the unverified new reference-table provenance remain open; the reports do not claim those checks are complete. Additional proposed site findings in the designs still need a dedicated source reconciliation. No speech or renders were made for this brief.
+
+s02: 0 blockers, 3 should fix; 5,359 joined characters. Clarify equal-chance selection and independent dice, and apply the accepted feedback trim. About 506 s by the design.
+
+s03: 0 blockers, 2 should fix; 5,677 characters. Correct the author-only direction of 1.7 relative to 1.5, and state the averaging condition for the policy example. The stored 2,000-roll checkpoints reproduce. About 529 s by the design.
+
+s04: 0 blockers, 3 should fix; 6,430 characters. Separate exact continuous times from rounded repeated readings, scope the CDF reaching 1 to bounded support, and identify example data. About 567 s by the design.
+
+s05: 0 blockers, 2 should fix; 5,707 characters. Remove the invisible metadata character and reconcile the official interval form in the CDF quote. Probability and density calculations agree. About 520 s by the design.
+
+s06: 0 blockers, 2 should fix; 5,599 characters. Scope the fixed-window argument to its symmetric hump and replace the universal right-end claim about F. Retaining s04's CDF in the new quartile task is justified.
+
+s07: 0 blockers, 2 should fix; 5,604 characters. State uniform arrival phase for the bus model and keep moving windows wholly inside the support. Preserve the accepted rounding-error example and character floor.
+
+s08: 0 blockers, 1 should fix; 5,586 characters. Replace the unsupported exam-marking assertion. The half-sine and cosine application calculations agree; preserve decision 58 and the character floor.
+
+s09: 0 blockers, 2 should fix; 5,641 characters. Identify simulated fills and avoid treating the shape checklist as sufficient evidence of normal fit. Seeded histogram and peg-board counts reproduce, including 924 of 4,096 central paths.
+
+s10: 0 blockers, 2 should fix; 6,048 characters. Distinguish the 194 cm threshold from the smaller tail above 196 cm, and apply the accepted feedback trim. PDF derivatives and empirical areas agree.
+
+s11: 0 blockers, 1 should fix; 5,568 characters. The displayed positive-z cumulative table is mathematically consistent, but its official new-syllabus reference-sheet provenance is not yet established. Keep exact and rounded bolt probabilities distinct.
+
+s12: 1 blocker, 3 should fix; 5,366 characters. At sigma=2, mean 380.15 gives an underweight tail about 0.005012, exceeding the stated 0.5% limit; a cent-based setting requires 380.16. Also correct the universal 508.64 threshold statement, distinguish the table-based 1006.15 from the two-decimal inverse-normal answer 1006.16, and apply the named feedback trim. Preserve the accepted short length.
+
+### Brief 163 first source review (4 November 2026; brief remains in progress)
+
+FA2 v13 learning and science reports are `checks/y11b-fa2-v13-learning-review.md` and `checks/y11b-fa2-v13-science-check.md`: 0 blockers, 3 should fix. They retain the two-control explanation and water-stress response, and ask for the usual-plant scope, the water-supply condition on summary chips, and a conditional wind comparison in feedback. The official syllabus page and direct wind/stomatal research were consulted. Asset provenance, alpha, registration, near-match exam search and further site reconciliation remain open. No plate was painted and no narration changed. The expanded brief covers FA2 v13 to v33 plus 30 existing FA3 designs (v05 and v16 held), rather than only the three FA3 designs in its title.
+
+### Brief 165 generator update (4 November 2026; listening and further lessons remain open)
+
+`scripts/generate-google-audio.mjs` now sends a whole scene in one Google request, caches the returned whole take, preserves completed unchanged scenes and refuses to replace an incomplete legacy sentence cache. It counts required scene requests before a lesson, uses `GOOGLE_TTS_REQUEST_BUDGET` (0 to 90; default 0 permits cache-only work), and enforces a 90-attempt rolling local cap from `work/google-tts-requests.jsonl`. That ledger covers this updated generator only, not historical calls or requests from another client. Do not treat it as an authoritative account quota reading. A 429 is not retried in a request loop. Historical cached usage is kept separate from new run cost. No new Google request was made while implementing or verifying this change.
+
+`scripts/align-google-scene.py` bounds Wav2Vec2 transformer inference to overlapping blocks on its exact 20 ms frame grid. A forced-alignment guide locates inter-sentence gaps; minimum-energy cuts are then used for separate sentence alignments. It writes word scores and keeps human listening pending. The 45.56-second saved d01 scene 03 completed: 116 word starts differed from its prior independent-sentence assembly by median 4 ms, 95th percentile 14 ms and maximum 19 ms. This measures agreement with earlier alignment, not human ground truth; several low-score mathematical letters remain listening flags.
+
+Verification: syntax passes; all 16 d01 takes reused with zero requests and an unchanged measured lesson; a saved whole-scene fixture assembled into a new output with zero requests; an insufficient whole-lesson budget was rejected before any speech or output. Evidence: `work/brief165/generator-verification.json`, `long-alignment-check.json`, the fixture files, and `work/brief165-check-generator.mjs`. The 18-word pronunciation mapping check still reports 0 ms mapping differences. Part 3 has not started: pronunciation and alignment quality for the exact d01 recording remain unapproved, and each later lesson still needs its per-lesson pronunciation check. Brief 166 now has its measured input but its build and preview are outstanding. No commit, push or full export.
+
+
+### Brief 163 FA2 v14 source review (4 November 2026)
+
+Reports: `checks/y11b-fa2-v14-learning-review.md` and `checks/y11b-fa2-v14-science-check.md`. 1 blockers, 2 should fix; 5,585 joined characters. Scene 8 assumes the uptake-minus-loss bias is equal with and without the fan. No storage or metabolism measurements establish that. Keep the measured uptake conclusion and describe transpiration as an inference; replace the equal-bias assertion. Quote, route, image and practical clearances remain open. No design or speech changed.
+
+
+### Brief 163 FA2 v15 source review (4 November 2026)
+
+Reports: `checks/y11b-fa2-v15-learning-review.md` and `checks/y11b-fa2-v15-science-check.md`. 0 blockers, 2 should fix; 5,777 joined characters. Scene 6 infers sugar transport because phloem is unstained. That dye result does not establish what phloem carries. Recall the earlier established phloem function instead of calling this a necessary inference. Quote, route, image and practical clearances remain open. No design or speech changed.
+
+
+### Brief 163 FA2 v16 source review (4 November 2026)
+
+Reports: `checks/y11b-fa2-v16-learning-review.md` and `checks/y11b-fa2-v16-science-check.md`. 1 blockers, 1 should fix; 5,954 joined characters. Scene 2 says an amoeba meets all four needs by diffusion. Food is engulfed by phagocytosis and excess water is handled by a contractile vacuole. Replace with the explicit gas/waste diffusion and food-engulfment distinction; cut the repeated surface-distance phrase to fund it. Quote, route, image and practical clearances remain open. No design or speech changed.
+
+
+### Brief 163 FA2 v17 source review (4 November 2026)
+
+Reports: `checks/y11b-fa2-v17-learning-review.md` and `checks/y11b-fa2-v17-science-check.md`. 0 blockers, 2 should fix; 5,957 joined characters. Scene 8 calls all products soluble after naming fatty acids. Long-chain fatty acids have low water solubility. Replace the final phrase with "small enough for the next absorption steps". Quote, route, image and practical clearances remain open. No design or speech changed.
+
+
+### Brief 163 FA2 v18 source review (4 November 2026)
+
+Reports: `checks/y11b-fa2-v18-learning-review.md` and `checks/y11b-fa2-v18-science-check.md`. 1 blockers, 2 should fix; 5,567 joined characters. Feedback 10b says digestion is intact in untreated coeliac disease. The source facts acknowledge loss of brush-border enzymes. Replace the absolute statement with "Even when nutrients have been digested, damaged villi absorb less"; retain surface area as the central reason. Quote, route, image and practical clearances remain open. No design or speech changed.
+
+
+### Brief 163 y11b-fa2-v19 source review (4 November 2026)
+
+`checks/y11b-fa2-v19-learning-review.md` and `checks/y11b-fa2-v19-science-check.md`: 0 blockers, 2 should fix; 6,004 joined characters. Calculate the capillary enlargement tag from the final drawn size and biological dimensions. The source notes its own proposed 50-fold tag is inconsistent with 4 mm versus 8 micrometres. Keep this as an artwork hold until measured, rather than reproducing the draft label. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v20 source review (4 November 2026)
+
+`checks/y11b-fa2-v20-learning-review.md` and `checks/y11b-fa2-v20-science-check.md`: 0 blockers, 2 should fix; 5,846 joined characters. Specify mature mammalian red cells before the nucleus and mitochondria claims. Many other vertebrate red cells retain nuclei. Add 'mature mammalian' by shortening the repeated haemoglobin-space sentence, retaining the cause. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v21 source review (4 November 2026)
+
+`checks/y11b-fa2-v21-learning-review.md` and `checks/y11b-fa2-v21-science-check.md`: 0 blockers, 3 should fix; 5,537 joined characters. Replace 'four hours later, your last meal is long absorbed' in teaching and attempt 1 with 'between meals, after absorption has ended'. Mixed-meal absorption does not necessarily end at four hours. The replacement states the actual condition and is shorter. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v22 source review (4 November 2026)
+
+`checks/y11b-fa2-v22-learning-review.md` and `checks/y11b-fa2-v22-science-check.md`: 0 blockers, 3 should fix; 5,889 joined characters. Scene 6 equates blood holding as much oxygen as air with equilibrium. Total oxygen content includes haemoglobin binding and is not the diffusion driver. Replace with 'the oxygen partial pressures would approach equilibrium', briefly glossed as the oxygen pressure on each side. Fund it by cutting the repeated no-difference sentence. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v23 source review (4 November 2026)
+
+`checks/y11b-fa2-v23-learning-review.md` and `checks/y11b-fa2-v23-science-check.md`: 0 blockers, 2 should fix; 5,713 joined characters. Scope the outlet-narrowing prediction to modest efferent constriction with maintained incoming flow. Strong constriction can lower renal flow enough to reduce filtration. Replace 'even more' with 'a little more' and state the maintained-flow condition on the model. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v24 source review (4 November 2026)
+
+`checks/y11b-fa2-v24-learning-review.md` and `checks/y11b-fa2-v24-science-check.md`: 1 blockers, 1 should fix; 5,879 joined characters. Scene 6 says the tubule has no carriers taking urea back and that the same urea remains while water leaves. Urea is substantially reabsorbed and recycled, including by transporters. Replace with 'Some urea is reabsorbed, but proportionally more water returns, so the remaining urea becomes concentrated'. Apply the repair to feedback 12b and the notes; cut the etymology sentence to fund it. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v25 source review (4 November 2026)
+
+`checks/y11b-fa2-v25-learning-review.md` and `checks/y11b-fa2-v25-science-check.md`: 0 blockers, 2 should fix; 5,874 joined characters. Scene 6 says the machine never lets glucose go because there is no gradient. Individual molecules can cross both ways; only net transfer is zero in the ideal matched case. Replace with 'has no net glucose loss in this matched example'. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v26 source review (4 November 2026)
+
+`checks/y11b-fa2-v26-learning-review.md` and `checks/y11b-fa2-v26-science-check.md`: 0 blockers, 2 should fix; 5,355 joined characters. Scene 9 says 'the brain detects the cold' mixes up two parts, although scene 3 correctly places temperature receptors in the brain. The defect is lack of specific roles, not that the brain cannot detect temperature. Replace with 'Name the temperature receptors and the integrating hypothalamic cells, even when they occupy the same region'. Fund it by cutting the repeated final detect/decide line. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v27 source review (4 November 2026)
+
+`checks/y11b-fa2-v27-learning-review.md` and `checks/y11b-fa2-v27-science-check.md`: 0 blockers, 3 should fix; 5,426 joined characters. Scene 7 says the loop only acts after a change, but the preceding skin-cooling example includes anticipatory peripheral input before core temperature falls. Say 'Feedback corrections take time, so small departures can occur' rather than claiming every response waits for the controlled variable to change. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v28 source review (4 November 2026)
+
+`checks/y11b-fa2-v28-learning-review.md` and `checks/y11b-fa2-v28-science-check.md`: 0 blockers, 3 should fix; 5,746 joined characters. Apply root decision 27: replace the last handoff's 'takes no orders at all' with 'isn't run by the pituitary'. The source still contains the rejected absolute wording. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v29 source review (4 November 2026)
+
+`checks/y11b-fa2-v29-learning-review.md` and `checks/y11b-fa2-v29-science-check.md`: 0 blockers, 3 should fix; 5,659 joined characters. Apply the upstream pancreatic handoff repair consistently: 'takes no orders from the pituitary' should become 'isn't run by the pituitary'. The gland still receives neural and hormonal influences. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v30 source review (4 November 2026)
+
+`checks/y11b-fa2-v30-learning-review.md` and `checks/y11b-fa2-v30-science-check.md`: 0 blockers, 3 should fix; 5,675 joined characters. Apply root decision 27's hook fallback 'and your blood glucose climbs' rather than guaranteeing it climbs above the usual range. This is shorter. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v31 source review (4 November 2026)
+
+`checks/y11b-fa2-v31-learning-review.md` and `checks/y11b-fa2-v31-science-check.md`: 1 blockers, 1 should fix; 5,539 joined characters. Hold the named Leone dataset and its plotted 'real measured mean' labels until the paper's tables, plotted values, sample size and insulin units can be checked against accessible full text. Preserve the cached references and do not substitute invented measurements. Record the access failures as the blocker and move on. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v32 source review (4 November 2026)
+
+`checks/y11b-fa2-v32-learning-review.md` and `checks/y11b-fa2-v32-science-check.md`: 0 blockers, 3 should fix; 5,934 joined characters. The general statement that cells cannot get glucose despite high blood glucose should be scoped to impaired insulin-dependent uptake in muscle and fat. Many cells, including brain cells, have insulin-independent transport. Replace 'cells' with the named tissues and cut the repeated fuel-shortage phrase. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa2-v33 source review (4 November 2026)
+
+`checks/y11b-fa2-v33-learning-review.md` and `checks/y11b-fa2-v33-science-check.md`: 0 blockers, 2 should fix; 5,742 joined characters. The last adaptation sentence follows heat acclimatisation with 'some of those differences are inherited'. Separate acquired acclimatisation from inherited variation explicitly, so the viewer does not infer inherited sweating changes from exercise. Replace with 'Acclimatisation is acquired; some other differences in tolerance are inherited'. Fund it by cutting the repeated individual-differences list. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v01 source review (4 November 2026)
+
+`checks/y11b-fa3-v01-learning-review.md` and `checks/y11b-fa3-v01-science-check.md`: 0 blockers, 3 should fix; 5,905 joined characters. Scene 6 turns pale-beetle counts directly into pale-allele frequencies without defining dominance or genotypes. Say 'the inherited pale form becomes more common' instead. This is shorter and keeps the intended evolution claim. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v02 source review (4 November 2026)
+
+`checks/y11b-fa3-v02-learning-review.md` and `checks/y11b-fa3-v02-science-check.md`: 0 blockers, 2 should fix; 5,377 joined characters. The drought/root-depth attempt assumes deeper soil still contains accessible water. Add that condition to the stem or make the conclusion conditional on it; otherwise greater root depth is not guaranteed to be favoured. Replace the generic grassland opening phrase to keep the length neutral. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v03 source review (4 November 2026)
+
+`checks/y11b-fa3-v03-learning-review.md` and `checks/y11b-fa3-v03-science-check.md`: 0 blockers, 3 should fix; 5,514 joined characters. The 'today in most of Britain' moth statement and below-one-in-ten tag require current representative surveys; the cited 1990s/2000s studies do not establish 2026 prevalence. Use a dated decline statement and remove the unsupported current tag, or retain it as a verification hold. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v04 source review (4 November 2026)
+
+`checks/y11b-fa3-v04-learning-review.md` and `checks/y11b-fa3-v04-science-check.md`: 0 blockers, 4 should fix; 5,701 joined characters. Replace 'around fifteen' with the approved 'more than a dozen' until the current classification and geographical scope are sourced. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v06 source review (4 November 2026)
+
+`checks/y11b-fa3-v06-learning-review.md` and `checks/y11b-fa3-v06-science-check.md`: 0 blockers, 3 should fix; 5,681 joined characters. Scope the opening 'marsupials fill most roles' to the native terrestrial examples and historical period being discussed. Native placental bats and rodents are diverse, and modern introductions change the present-day comparison. Replace the general clause with a specific contrast. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v07 source review (4 November 2026)
+
+`checks/y11b-fa3-v07-learning-review.md` and `checks/y11b-fa3-v07-science-check.md`: 0 blockers, 2 should fix; 5,650 joined characters. The white-sheet control is treated as proving the predator did not prefer red and that camouflage caused the shift. Comparable visibility and a small number of trials cannot prove that. Replace 'shows' with 'supports' and say the control makes a simple colour preference less likely. Replace the existing certainty clause without adding a scene. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v08 source review (4 November 2026)
+
+`checks/y11b-fa3-v08-learning-review.md` and `checks/y11b-fa3-v08-science-check.md`: 0 blockers, 3 should fix; 5,547 joined characters. Do not present missing mutation as a wrong reason for the observed standing-variation shift. It limits claims about the origin of new variation, not the selection mechanism already modelled. Replace the scene 3 contrast with this claim-specific distinction. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v09 source review (4 November 2026)
+
+`checks/y11b-fa3-v09-learning-review.md` and `checks/y11b-fa3-v09-science-check.md`: 0 blockers, 2 should fix; 5,607 joined characters. Replace the claim that both wolf and thylacine hunted large prey with the approved 'hunted other animals'. Preserve convergence in feeding morphology without making the disputed prey-size claim. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v10 source review (4 November 2026)
+
+`checks/y11b-fa3-v10-learning-review.md` and `checks/y11b-fa3-v10-science-check.md`: 0 blockers, 2 should fix; 5,299 joined characters. The generic rule 'Name it and you get half ... so that ... get the mark' asserts a marking scheme for every question. Replace with 'Name the feature, explain its mechanism, then link it to survival'. This is shorter and preserves the useful answer structure. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v11 source review (4 November 2026)
+
+`checks/y11b-fa3-v11-learning-review.md` and `checks/y11b-fa3-v11-science-check.md`: 0 blockers, 3 should fix; 5,673 joined characters. Use decision 20's fallback 'costs little gas exchange' rather than 'costs the least'. The latter compares unspecified costs across traits without supporting measurements. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v12 source review (4 November 2026)
+
+`checks/y11b-fa3-v12-learning-review.md` and `checks/y11b-fa3-v12-science-check.md`: 0 blockers, 3 should fix; 5,841 joined characters. Attempt 1 and its feedback conclude the Banksia has more effective structures from percentage mass loss alone, contradicting scene 11's limit. Conclude only that it lost a smaller fraction of fresh mass under these conditions; keep observed structures as a consistent explanation, not proof. Replace the categorical conclusion. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v13 source review (4 November 2026)
+
+`checks/y11b-fa3-v13-learning-review.md` and `checks/y11b-fa3-v13-science-check.md`: 0 blockers, 2 should fix; 5,523 joined characters. The dunnart feedback says an ectotherm cannot make internal heat. All metabolising animals make heat, and some primarily ectothermic animals use episodic thermogenesis. Say the dunnart uses substantial regulated metabolic heat to rewarm; replace the absolute comparison. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v14 source review (4 November 2026)
+
+`checks/y11b-fa3-v14-learning-review.md` and `checks/y11b-fa3-v14-science-check.md`: 0 blockers, 2 should fix; 5,605 joined characters. Scene 8 says an endotherm reading of five degrees must be an error. Some hibernating endotherms reach such low temperatures. Replace with 'would need checking against its state and conditions', retaining the lesson's own torpor exception. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v15 source review (4 November 2026)
+
+`checks/y11b-fa3-v15-learning-review.md` and `checks/y11b-fa3-v15-science-check.md`: 0 blockers, 2 should fix; 5,310 joined characters. Use all relevant dissolved particles, rather than salt alone, in the osmosis definition. Otherwise the shark's retained urea cannot explain its later osmotic comparison. Replace the repeated more-water/fewer-salts phrasing with the existing FA1 water-potential meaning at this level. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v17 source review (4 November 2026)
+
+`checks/y11b-fa3-v17-learning-review.md` and `checks/y11b-fa3-v17-science-check.md`: 0 blockers, 2 should fix; 5,650 joined characters. The description says both tempo models run on natural selection as though that is the sole evolutionary process. Both are compatible with selection and drift; tempo alone does not identify the mechanism. Replace with 'Both describe evolutionary tempo; neither requires a different inheritance mechanism'. Cut the repeated ramp/staircase sentence if needed. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v18 source review (4 November 2026)
+
+`checks/y11b-fa3-v18-learning-review.md` and `checks/y11b-fa3-v18-science-check.md`: 1 blockers, 2 should fix; 5,896 joined characters. Hold the four named dataset charts until their original reports, sample denominators, resistance definitions and Table 3 district values are inspected. The design records inaccessible and inconsistent evidence. Do not turn its summaries into a passed independent check. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v19 source review (4 November 2026)
+
+`checks/y11b-fa3-v19-learning-review.md` and `checks/y11b-fa3-v19-science-check.md`: 0 blockers, 2 should fix; 5,774 joined characters. Scope 'a fossil ... takes that layer's age' to an unreworked fossil deposited with its layer. A reworked fossil is older than its containing bed. Replace the absolute sentence with the condition, cutting the repeated reading-up-the-cliff phrase to fund it. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v20 source review (4 November 2026)
+
+`checks/y11b-fa3-v20-learning-review.md` and `checks/y11b-fa3-v20-science-check.md`: 0 blockers, 3 should fix; 5,366 joined characters. Do not infer from the younger known Tiktaalik fossils alone that the species or lineage cannot include ancestors of earlier tetrapods. Say the tracks show tetrapods existed earlier than the known Tiktaalik fossils and reinforce that transitional form does not prove direct ancestry. Replace the categorical ancestry sentence. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v21 source review (4 November 2026)
+
+`checks/y11b-fa3-v21-learning-review.md` and `checks/y11b-fa3-v21-science-check.md`: 0 blockers, 3 should fix; 5,875 joined characters. Replace 'both new lineages start with the same copy' with 'both inherit homologous copies from their ancestral population'. This avoids teaching that ancestral variation vanishes at speciation. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v22 source review (4 November 2026)
+
+`checks/y11b-fa3-v22-learning-review.md` and `checks/y11b-fa3-v22-science-check.md`: 0 blockers, 2 should fix; 5,664 joined characters. The theory description says natural selection caused the changes along each branch as though all change is selective. Replace with 'natural selection explains adaptive changes, alongside other evolutionary processes'. Cut the repeated two-parts label to fund it. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v23 source review (4 November 2026)
+
+`checks/y11b-fa3-v23-learning-review.md` and `checks/y11b-fa3-v23-science-check.md`: 0 blockers, 3 should fix; 5,843 joined characters. Scene 7 rules pH out because its zone means are nearly equal. Say 'the measured pH difference does not explain this contrast' rather than 'pH can't explain'. This is a shorter, evidence-matched conclusion. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v24 source review (4 November 2026)
+
+`checks/y11b-fa3-v24-learning-review.md` and `checks/y11b-fa3-v24-science-check.md`: 0 blockers, 2 should fix; 5,965 joined characters. Apply decision 24 in speech, sorter and notes: salinity is measured mainly in water; salty soils use different methods. The current 'only in water' statement is not repaired by leaving the land cell blank. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v25 source review (4 November 2026)
+
+`checks/y11b-fa3-v25-learning-review.md` and `checks/y11b-fa3-v25-science-check.md`: 0 blockers, 2 should fix; 5,698 joined characters. Call the count of species 'species richness, one measure of diversity'. Then the disease example can correctly say richness stays unchanged, rather than claiming every measure of diversity is unchanged. Replace the existing definition and repeated no-species-lost line. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v26 source review (4 November 2026)
+
+`checks/y11b-fa3-v26-learning-review.md` and `checks/y11b-fa3-v26-science-check.md`: 0 blockers, 2 should fix; 5,861 joined characters. Feedback explains why quadrupling quadrat area does not multiply the expected abundance estimate, but that is not the same as precision staying unchanged. Larger quadrats can improve precision under some spatial patterns. Replace the quality verdict with 'It does not guarantee four times the precision; size, placement, number and patchiness matter'. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v27 source review (4 November 2026)
+
+`checks/y11b-fa3-v27-learning-review.md` and `checks/y11b-fa3-v27-science-check.md`: 0 blockers, 3 should fix; 5,563 joined characters. Apply root decision 30 to the line-transect speech and visual: dandelions occur through twelve metres. Current speech says never past ten metres. Replace ten with twelve without adding a scene. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v28 source review (4 November 2026)
+
+`checks/y11b-fa3-v28-learning-review.md` and `checks/y11b-fa3-v28-science-check.md`: 0 blockers, 4 should fix; 5,575 joined characters. For mark loss in the bead model, replace red beads with unmarked beads one for one. Taking marked beads out changes the population as well as recognition and confounds the intended test. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v29 source review (4 November 2026)
+
+`checks/y11b-fa3-v29-learning-review.md` and `checks/y11b-fa3-v29-science-check.md`: 0 blockers, 2 should fix; 5,009 joined characters. A bare patch beneath a eucalypt does not establish allelopathy: shade, water and litter effects also fit. Replace the causal verdict with the controlled germination comparison already proposed; retain slow or stop rather than universal prevention. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v30 source review (4 November 2026)
+
+`checks/y11b-fa3-v30-learning-review.md` and `checks/y11b-fa3-v30-science-check.md`: 0 blockers, 3 should fix; 5,352 joined characters. Eleven versus six suggests an interaction but does not by itself establish that hungry hares are easier to catch. Replace that mechanistic certainty with the supported conclusion that food and predation jointly affect density. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v31 source review (4 November 2026)
+
+`checks/y11b-fa3-v31-learning-review.md` and `checks/y11b-fa3-v31-science-check.md`: 0 blockers, 4 should fix; 5,134 joined characters. Correct the 24 percent provenance and geographic/time scope. Use the design fallback fell heavily for western NSW unless a matching regional source is produced; do not label the Australia-wide estimate as western NSW evidence. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 y11b-fa3-v32 source review (4 November 2026)
+
+`checks/y11b-fa3-v32-learning-review.md` and `checks/y11b-fa3-v32-science-check.md`: 0 blockers, 3 should fix; 5,596 joined characters. Non-overlapping ranges from three repeats do not prove that a change is real; sample ranges are not confidence intervals. Replace real with evidence supporting a change, while retaining the same-method and season requirements. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v13 source review (4 November 2026)
+
+`checks/p-y11-fa2-v13-learning-review.md` and `checks/p-y11-fa2-v13-science-check.md`: 0 blockers, 2 should fix; 6,101 joined characters. The repeated no particles claim conflicts with the photon account in v14. Replace it with no material medium or no electrons cross between aerials. Retain the classical field diagram. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v14 source review (4 November 2026)
+
+`checks/p-y11-fa2-v14-learning-review.md` and `checks/p-y11-fa2-v14-science-check.md`: 0 blockers, 2 should fix; 6,098 joined characters. Only ultraviolet and higher photons can damage living molecules is false: visible light can drive photochemical damage and lower-frequency radiation can heat. Replace that sentence with the specific ionisation or UV DNA-damage comparison intended, without declaring lower bands harmless. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v15 source review (4 November 2026)
+
+`checks/p-y11-fa2-v15-learning-review.md` and `checks/p-y11-fa2-v15-science-check.md`: 0 blockers, 4 should fix; 6,168 joined characters. Radio photons are too weak to damage anything and therefore city-wide exposure is safe is an invalid inference. Replace with non-ionising at these frequencies; do not infer exposure safety from photon energy alone. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v16 source review (4 November 2026)
+
+`checks/p-y11-fa2-v16-learning-review.md` and `checks/p-y11-fa2-v16-science-check.md`: 0 blockers, 1 should fix; 5,939 joined characters. Clear air does absorb and scatter some light. Replace none is lost with negligible loss over this modelled path, using the already stated unobstructed-source condition. No new caveat scene is needed. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v17 source review (4 November 2026)
+
+`checks/p-y11-fa2-v17-learning-review.md` and `checks/p-y11-fa2-v17-science-check.md`: 0 blockers, 2 should fix; 6,227 joined characters. A fitted intercept of 0.4 lux is not literally a line through the origin. Replace passes through the origin with consistent with the origin within the stated uncertainty. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v18 source review (4 November 2026)
+
+`checks/p-y11-fa2-v18-learning-review.md` and `checks/p-y11-fa2-v18-science-check.md`: 0 blockers, 1 should fix; 6,044 joined characters. Wet-road reflection is not generally a perfectly level, smooth mirror. Replace normals all point the same way with water smooths some small surface irregularities; retain the specular-versus-diffuse comparison. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v19 source review (4 November 2026)
+
+`checks/p-y11-fa2-v19-learning-review.md` and `checks/p-y11-fa2-v19-science-check.md`: 0 blockers, 1 should fix; 6,287 joined characters. The universal n never less than one claim is not valid for every frequency and medium. State the scope as the ordinary transparent materials and visible-light model being used, replacing the universal sentence rather than adding an advanced exception. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v20 source review (4 November 2026)
+
+`checks/p-y11-fa2-v20-learning-review.md` and `checks/p-y11-fa2-v20-science-check.md`: 0 blockers, 2 should fix; 6,284 joined characters. At zero incidence the refracted angle equals zero, so the table does not show an angle that is always smaller. Replace always smaller with smaller at oblique incidence. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v21 source review (4 November 2026)
+
+`checks/p-y11-fa2-v21-learning-review.md` and `checks/p-y11-fa2-v21-science-check.md`: 0 blockers, 1 should fix; 6,250 joined characters. A little light always reflects is not universal, for example index matching or a suitable polarisation at Brewster angle. Replace always with some light also reflects in this demonstration. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v22 source review (4 November 2026)
+
+`checks/p-y11-fa2-v22-learning-review.md` and `checks/p-y11-fa2-v22-science-check.md`: 0 blockers, 1 should fix; 6,297 joined characters. The opening puzzle is a45-degree internal ray with sine1.06, but the later explanation switches to50 degrees without distinguishing the example. Refer to the original45-degree ray in the answer, or explicitly identify50 as a second case; no added scene. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v23 source review (4 November 2026)
+
+`checks/p-y11-fa2-v23-learning-review.md` and `checks/p-y11-fa2-v23-science-check.md`: 0 blockers, 2 should fix; 5,711 joined characters. Do not round n to1.53 before calculating percentage error. Use the unrounded1.532089 to obtain2.14 percent, about2.1 percent at two significant figures, instead of2.0 percent. Replace the working and feedback line. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v24 source review (4 November 2026)
+
+`checks/p-y11-fa2-v24-learning-review.md` and `checks/p-y11-fa2-v24-science-check.md`: 0 blockers, 3 should fix; 6,211 joined characters. A narrow slit does not keep light the same colour; it changes beam width. Replace that control with the same lamp and colour filter, if a filter is specified, or the same source spectrum. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v25 source review (4 November 2026)
+
+`checks/p-y11-fa2-v25-learning-review.md` and `checks/p-y11-fa2-v25-science-check.md`: 0 blockers, 2 should fix; 6,218 joined characters. Distant clarity with near blur does not uniquely identify hyperopia; presbyopia can do the same. Specify the intended model has insufficient relaxed optical power or a short eyeball in the attempt, replacing an equal-length part of its description. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v26 source review (4 November 2026)
+
+`checks/p-y11-fa2-v26-learning-review.md` and `checks/p-y11-fa2-v26-science-check.md`: 0 blockers, 2 should fix; 6,241 joined characters. A target inside the range of three readings supports correction within the observed resolution; it does not prove exact focus on the mark. Replace corrects the model with consistent with correction within the measured spread. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v27 source review (4 November 2026)
+
+`checks/p-y11-fa2-v27-learning-review.md` and `checks/p-y11-fa2-v27-science-check.md`: 0 blockers, 2 should fix; 5,803 joined characters. Ripple-tank wave speed can depend on frequency as well as depth. State the shallow-water constant-speed assumption for the frequency-doubling calculation; replace the blanket depth-only rule. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v28 source review (4 November 2026)
+
+`checks/p-y11-fa2-v28-learning-review.md` and `checks/p-y11-fa2-v28-science-check.md`: 0 blockers, 3 should fix; 6,319 joined characters. Five crests contain four crest-to-crest intervals. Divide the first-to-fifth distance by four, or measure six crests and divide by five. Repair the ruler illustration, normal method and anomalous-photo calculation together. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v29 source review (4 November 2026)
+
+`checks/p-y11-fa2-v29-learning-review.md` and `checks/p-y11-fa2-v29-science-check.md`: 0 blockers, 2 should fix; 5,855 joined characters. Real headphones do not reduce all noise almost to silence. Replace with reduce some noise, especially steady low-frequency noise; retain the local opposite-phase mechanism. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v30 source review (4 November 2026)
+
+`checks/p-y11-fa2-v30-learning-review.md` and `checks/p-y11-fa2-v30-science-check.md`: 0 blockers, 2 should fix; 5,462 joined characters. The strong-line/calm-line binary cannot justify the claimed spatial average by simply averaging four and zero. Keep the conclusion that interference redistributes intensity but remove that averaging step unless the actual continuous pattern is integrated. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v31 source review (4 November 2026)
+
+`checks/p-y11-fa2-v31-learning-review.md` and `checks/p-y11-fa2-v31-science-check.md`: 0 blockers, 2 should fix; 5,666 joined characters. The closing summary says nodes and antinodes are half a wavelength apart. Adjacent node to antinode is a quarter wavelength; neighbouring nodes or neighbouring antinodes are half. Replace the summary with those correct pairings. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v32 source review (4 November 2026)
+
+`checks/p-y11-fa2-v32-learning-review.md` and `checks/p-y11-fa2-v32-science-check.md`: 0 blockers, 1 should fix; 5,639 joined characters. A forced string can respond at frequencies between resonances. Replace only frequencies the string can make and nothing steady in between with the natural resonance frequencies of the ideal fixed string; retain the harmonic calculation. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v33 source review (4 November 2026)
+
+`checks/p-y11-fa2-v33-learning-review.md` and `checks/p-y11-fa2-v33-science-check.md`: 0 blockers, 3 should fix; 5,784 joined characters. A car passing beside a microphone has a changing radial velocity, so the pitch generally changes continuously around closest approach. High and low constant plateaux apply to ideal directly towards/away motion. Make the model geometry explicit and remove the universal steady-pitch pass-by claim. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v01 source review (4 November 2026)
+
+`checks/p-y11-fa3-v01-learning-review.md` and `checks/p-y11-fa3-v01-science-check.md`: 0 blockers, 0 should fix; 5,653 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v02 source review (4 November 2026)
+
+`checks/p-y11-fa3-v02-learning-review.md` and `checks/p-y11-fa3-v02-science-check.md`: 0 blockers, 1 should fix; 6,211 joined characters. Friction needs rubbing is too restrictive: contact and separation can charge the same materials without sliding. Replace needs rubbing with the rubbing method transfers electrons through repeated contact. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v03 source review (4 November 2026)
+
+`checks/p-y11-fa3-v03-learning-review.md` and `checks/p-y11-fa3-v03-science-check.md`: 0 blockers, 2 should fix; 6,042 joined characters. The halfway neutral point requires equal like charges. State equal on the pair diagram and in its givens if not already explicit; unequal positive charges cancel at a different point between them. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v04 source review (4 November 2026)
+
+`checks/p-y11-fa3-v04-learning-review.md` and `checks/p-y11-fa3-v04-science-check.md`: 0 blockers, 0 should fix; 5,942 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v05 source review (4 November 2026)
+
+`checks/p-y11-fa3-v05-learning-review.md` and `checks/p-y11-fa3-v05-science-check.md`: 0 blockers, 1 should fix; 5,406 joined characters. Final feedback says mg is upward. Weight mg points downward; the balancing electric force is upward. Replace the direction attached to mg and retain the positive charge and four-electrons-lost result. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v06 source review (4 November 2026)
+
+`checks/p-y11-fa3-v06-learning-review.md` and `checks/p-y11-fa3-v06-science-check.md`: 0 blockers, 0 should fix; 5,492 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v07 source review (4 November 2026)
+
+`checks/p-y11-fa3-v07-learning-review.md` and `checks/p-y11-fa3-v07-science-check.md`: 0 blockers, 2 should fix; 6,270 joined characters. The1.7mm breakdown estimate is not a safe working clearance for a5kV supply: breakdown depends on edges and conditions. Replace the how-close safety instruction with a theoretical order-of-magnitude example; require approved insulated/current-limited apparatus for the teacher demonstration. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v08 source review (4 November 2026)
+
+`checks/p-y11-fa3-v08-learning-review.md` and `checks/p-y11-fa3-v08-science-check.md`: 0 blockers, 0 should fix; 6,222 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v09 source review (4 November 2026)
+
+`checks/p-y11-fa3-v09-learning-review.md` and `checks/p-y11-fa3-v09-science-check.md`: 0 blockers, 1 should fix; 6,153 joined characters. Distinguish work done by the field from external work. Across a potential drop the field work is -q deltaV and deltaU=q deltaV. The current qV magnitude shortcut for electrons must explicitly use charge magnitude and voltage drop; otherwise a negative electron produces the wrong energy sign. Replace the existing equation explanation rather than adding a new section. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v10 source review (4 November 2026)
+
+`checks/p-y11-fa3-v10-learning-review.md` and `checks/p-y11-fa3-v10-science-check.md`: 0 blockers, 1 should fix; 5,644 joined characters. Make the signed potential difference explicit as destination minus start in deltaU=q deltaV. Root decision16 defines W as external work here, whereas v09 used field work; retain distinct labels so the two W=qV statements are not contradictory. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v11 source review (4 November 2026)
+
+`checks/p-y11-fa3-v11-learning-review.md` and `checks/p-y11-fa3-v11-science-check.md`: 0 blockers, 0 should fix; 5,583 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v12 source review (4 November 2026)
+
+`checks/p-y11-fa3-v12-learning-review.md` and `checks/p-y11-fa3-v12-science-check.md`: 0 blockers, 3 should fix; 5,579 joined characters. DC need not have a steady magnitude; it is unidirectional and may vary. Replace with steady DC is flat and remove steady size from the general DC definition. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v13 source review (4 November 2026)
+
+`checks/p-y11-fa3-v13-learning-review.md` and `checks/p-y11-fa3-v13-science-check.md`: 0 blockers, 1 should fix; 6,221 joined characters. A sixty-fold nichrome/copper ratio depends on alloy and temperature. Attach a named material-grade reference to the fixed number or replace it with much larger resistance, leaving the qualitative alloy-scattering explanation unchanged. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v14 source review (4 November 2026)
+
+`checks/p-y11-fa3-v14-learning-review.md` and `checks/p-y11-fa3-v14-science-check.md`: 0 blockers, 1 should fix; 5,464 joined characters. That is how a dimmer works implies common mains dimmers operate as rheostats. Replace with a simple resistance control changes this circuit current; retain the stated low-voltage example. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v15 source review (4 November 2026)
+
+`checks/p-y11-fa3-v15-learning-review.md` and `checks/p-y11-fa3-v15-science-check.md`: 0 blockers, 3 should fix; 6,225 joined characters. V/I is not exactly five at every point in the illustrative table. Replace with approximately five within the measurement uncertainty, and draw a fitted line rather than asserting every noisy point has the same exact ratio. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v16 source review (4 November 2026)
+
+`checks/p-y11-fa3-v16-learning-review.md` and `checks/p-y11-fa3-v16-science-check.md`: 0 blockers, 0 should fix; 6,225 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v17 source review (4 November 2026)
+
+`checks/p-y11-fa3-v17-learning-review.md` and `checks/p-y11-fa3-v17-science-check.md`: 0 blockers, 1 should fix; 5,510 joined characters. The final question says fifty megawatts supplied to the city but treats50MW as sending-end input. Replace with power station sends50MW into the lines so the specified current and loss calculation match the givens. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v18 source review (4 November 2026)
+
+`checks/p-y11-fa3-v18-learning-review.md` and `checks/p-y11-fa3-v18-science-check.md`: 0 blockers, 1 should fix; 5,379 joined characters. Charge cannot pile up anywhere and stops at once are too absolute: brief surface-charge changes establish a new steady state. Replace with no continuing accumulation in steady state and current rapidly stops after opening. The circuit rules remain unchanged. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v19 source review (4 November 2026)
+
+`checks/p-y11-fa3-v19-learning-review.md` and `checks/p-y11-fa3-v19-science-check.md`: 0 blockers, 1 should fix; 5,405 joined characters. Apply root decision30: use a resistor for the quantitative12ohm example in scenes3to7. The current design still calls it a lit lamp with fixed resistance. Retain the lamp only in lighting/darkness demonstrations. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v20 source review (4 November 2026)
+
+`checks/p-y11-fa3-v20-learning-review.md` and `checks/p-y11-fa3-v20-science-check.md`: 0 blockers, 1 should fix; 5,150 joined characters. The zero-leftover-energy analogy should compare potential differences around the closed loop, not imply a coulomb has an absolute energy of zero at the battery return. Replace with net energy change around a complete loop is zero. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v21 source review (4 November 2026)
+
+`checks/p-y11-fa3-v21-learning-review.md` and `checks/p-y11-fa3-v21-science-check.md`: 0 blockers, 1 should fix; 5,126 joined characters. Remove the spoken production phrase and the next scene shows why. Replace it with the actual causal transition about an added path, without adding learner text. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v22 source review (4 November 2026)
+
+`checks/p-y11-fa3-v22-learning-review.md` and `checks/p-y11-fa3-v22-science-check.md`: 0 blockers, 1 should fix; 5,899 joined characters. Any mix of series and parallel can be reduced by this method only when the network is actually series-parallel reducible. Replace any mix with these series-parallel networks; do not imply the method covers a bridge network. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v23 source review (4 November 2026)
+
+`checks/p-y11-fa3-v23-learning-review.md` and `checks/p-y11-fa3-v23-science-check.md`: 0 blockers, 3 should fix; 6,243 joined characters. The first attempt measures in a30ohm branch, whose ideal current is.10A, but compares.19A against the.20A main current and calls it5percent low. Either move the meter to the main15ohm resistor or use a.095A branch reading compared with.10A. Repair card and feedback together. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v24 source review (4 November 2026)
+
+`checks/p-y11-fa3-v24-learning-review.md` and `checks/p-y11-fa3-v24-science-check.md`: 0 blockers, 1 should fix; 5,860 joined characters. The field of a single loop is approximately uniform only near its centre, not throughout its entire inside. Replace inside strong and nearly uniform with near the centre, fields add and vary slowly. Do not imply the centre is stronger than positions arbitrarily near the wire. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v25 source review (4 November 2026)
+
+`checks/p-y11-fa3-v25-learning-review.md` and `checks/p-y11-fa3-v25-science-check.md`: 0 blockers, 1 should fix; 5,954 joined characters. Mu0 is measured in the current SI, so4pi*1e-7 is an excellent approximation, not exact. Replace exactly with approximately in the shortcut; retain the syllabus numerical value and all rounded answers. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v26 source review (4 November 2026)
+
+`checks/p-y11-fa3-v26-learning-review.md` and `checks/p-y11-fa3-v26-science-check.md`: 0 blockers, 0 should fix; 5,659 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v27 source review (4 November 2026)
+
+`checks/p-y11-fa3-v27-learning-review.md` and `checks/p-y11-fa3-v27-science-check.md`: 0 blockers, 1 should fix; 6,164 joined characters. Width independence is the long-solenoid approximation away from ends. Keep that condition next to the opening wider-coil verdict and final rule, replacing the absolute width makes no difference wording rather than adding an advanced exception. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v28 source review (4 November 2026)
+
+`checks/p-y11-fa3-v28-learning-review.md` and `checks/p-y11-fa3-v28-science-check.md`: 0 blockers, 2 should fix; 5,620 joined characters. Steel is not always ferromagnetic; some stainless grades are not. Replace their alloys like steel with ferromagnetic alloys such as ordinary carbon steel, consistent with v29 material distinctions. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v29 source review (4 November 2026)
+
+`checks/p-y11-fa3-v29-learning-review.md` and `checks/p-y11-fa3-v29-science-check.md`: 0 blockers, 3 should fix; 5,722 joined characters. Low coercivity does not itself mean low remanent magnetism. Coercivity is the reverse field needed to erase magnetisation; remanence is what remains at zero applied field. Correct the repeated inference and use actual release/remanence evidence for the switchable-core recommendation. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v30 source review (4 November 2026)
+
+`checks/p-y11-fa3-v30-learning-review.md` and `checks/p-y11-fa3-v30-science-check.md`: 0 blockers, 3 should fix; 6,191 joined characters. Removing retained clips does not demagnetise the nail. Keep magnetic history consistent by using an appropriate soft core and a defined reset procedure; clearing clips alone does not remove the cause of the high reading. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v13 source review (4 November 2026)
+
+`checks/p-y11-fa2-v13-learning-review.md` and `checks/p-y11-fa2-v13-science-check.md`: 0 blockers, 0 should fix; 6,101 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v14 source review (4 November 2026)
+
+`checks/p-y11-fa2-v14-learning-review.md` and `checks/p-y11-fa2-v14-science-check.md`: 0 blockers, 2 should fix; 6,098 joined characters. Only ultraviolet and higher photons can damage living molecules is false: visible light can drive photochemical damage and lower-frequency radiation can heat. Replace that sentence with the specific ionisation or UV DNA-damage comparison intended, without declaring lower bands harmless. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v15 source review (4 November 2026)
+
+`checks/p-y11-fa2-v15-learning-review.md` and `checks/p-y11-fa2-v15-science-check.md`: 0 blockers, 4 should fix; 6,168 joined characters. Radio photons are too weak to damage anything and therefore city-wide exposure is safe is an invalid inference. Replace with non-ionising at these frequencies; do not infer exposure safety from photon energy alone. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v16 source review (4 November 2026)
+
+`checks/p-y11-fa2-v16-learning-review.md` and `checks/p-y11-fa2-v16-science-check.md`: 0 blockers, 1 should fix; 5,939 joined characters. Clear air does absorb and scatter some light. Replace none is lost with negligible loss over this modelled path, using the already stated unobstructed-source condition. No new caveat scene is needed. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v17 source review (4 November 2026)
+
+`checks/p-y11-fa2-v17-learning-review.md` and `checks/p-y11-fa2-v17-science-check.md`: 0 blockers, 2 should fix; 6,227 joined characters. A fitted intercept of 0.4 lux is not literally a line through the origin. Replace passes through the origin with consistent with the origin within the stated uncertainty. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v18 source review (4 November 2026)
+
+`checks/p-y11-fa2-v18-learning-review.md` and `checks/p-y11-fa2-v18-science-check.md`: 0 blockers, 0 should fix; 6,044 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v19 source review (4 November 2026)
+
+`checks/p-y11-fa2-v19-learning-review.md` and `checks/p-y11-fa2-v19-science-check.md`: 0 blockers, 0 should fix; 6,287 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v20 source review (4 November 2026)
+
+`checks/p-y11-fa2-v20-learning-review.md` and `checks/p-y11-fa2-v20-science-check.md`: 0 blockers, 2 should fix; 6,284 joined characters. At zero incidence the refracted angle equals zero, so the table does not show an angle that is always smaller. Replace always smaller with smaller at oblique incidence. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v21 source review (4 November 2026)
+
+`checks/p-y11-fa2-v21-learning-review.md` and `checks/p-y11-fa2-v21-science-check.md`: 0 blockers, 0 should fix; 6,250 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v22 source review (4 November 2026)
+
+`checks/p-y11-fa2-v22-learning-review.md` and `checks/p-y11-fa2-v22-science-check.md`: 0 blockers, 0 should fix; 6,297 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v23 source review (4 November 2026)
+
+`checks/p-y11-fa2-v23-learning-review.md` and `checks/p-y11-fa2-v23-science-check.md`: 0 blockers, 2 should fix; 5,711 joined characters. Do not round n to1.53 before calculating percentage error. Use the unrounded1.532089 to obtain2.14 percent, about2.1 percent at two significant figures, instead of2.0 percent. Replace the working and feedback line. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v24 source review (4 November 2026)
+
+`checks/p-y11-fa2-v24-learning-review.md` and `checks/p-y11-fa2-v24-science-check.md`: 0 blockers, 2 should fix; 6,211 joined characters. A narrow slit does not keep light the same colour; it changes beam width. Replace that control with the same lamp and colour filter, if a filter is specified, or the same source spectrum. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v25 source review (4 November 2026)
+
+`checks/p-y11-fa2-v25-learning-review.md` and `checks/p-y11-fa2-v25-science-check.md`: 0 blockers, 2 should fix; 6,218 joined characters. Distant clarity with near blur does not uniquely identify hyperopia; presbyopia can do the same. Specify the intended model has insufficient relaxed optical power or a short eyeball in the attempt, replacing an equal-length part of its description. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v26 source review (4 November 2026)
+
+`checks/p-y11-fa2-v26-learning-review.md` and `checks/p-y11-fa2-v26-science-check.md`: 0 blockers, 1 should fix; 6,241 joined characters. A target inside the range of three readings supports correction within the observed resolution; it does not prove exact focus on the mark. Replace corrects the model with consistent with correction within the measured spread. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v27 source review (4 November 2026)
+
+`checks/p-y11-fa2-v27-learning-review.md` and `checks/p-y11-fa2-v27-science-check.md`: 0 blockers, 2 should fix; 5,803 joined characters. Ripple-tank wave speed can depend on frequency as well as depth. State the shallow-water constant-speed assumption for the frequency-doubling calculation; replace the blanket depth-only rule. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v28 source review (4 November 2026)
+
+`checks/p-y11-fa2-v28-learning-review.md` and `checks/p-y11-fa2-v28-science-check.md`: 1 blockers, 2 should fix; 6,319 joined characters. Five crests contain four crest-to-crest intervals. Divide the first-to-fifth distance by four, or measure six crests and divide by five. Repair the ruler illustration, normal method and anomalous-photo calculation together. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v29 source review (4 November 2026)
+
+`checks/p-y11-fa2-v29-learning-review.md` and `checks/p-y11-fa2-v29-science-check.md`: 0 blockers, 2 should fix; 5,855 joined characters. Real headphones do not reduce all noise almost to silence. Replace with reduce some noise, especially steady low-frequency noise; retain the local opposite-phase mechanism. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v30 source review (4 November 2026)
+
+`checks/p-y11-fa2-v30-learning-review.md` and `checks/p-y11-fa2-v30-science-check.md`: 0 blockers, 2 should fix; 5,462 joined characters. The strong-line/calm-line binary cannot justify the claimed spatial average by simply averaging four and zero. Keep the conclusion that interference redistributes intensity but remove that averaging step unless the actual continuous pattern is integrated. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v31 source review (4 November 2026)
+
+`checks/p-y11-fa2-v31-learning-review.md` and `checks/p-y11-fa2-v31-science-check.md`: 0 blockers, 2 should fix; 5,666 joined characters. The closing summary says nodes and antinodes are half a wavelength apart. Adjacent node to antinode is a quarter wavelength; neighbouring nodes or neighbouring antinodes are half. Replace the summary with those correct pairings. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v32 source review (4 November 2026)
+
+`checks/p-y11-fa2-v32-learning-review.md` and `checks/p-y11-fa2-v32-science-check.md`: 0 blockers, 1 should fix; 5,639 joined characters. A forced string can respond at frequencies between resonances. Replace only frequencies the string can make and nothing steady in between with the natural resonance frequencies of the ideal fixed string; retain the harmonic calculation. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa2-v33 source review (4 November 2026)
+
+`checks/p-y11-fa2-v33-learning-review.md` and `checks/p-y11-fa2-v33-science-check.md`: 0 blockers, 3 should fix; 5,784 joined characters. A car passing beside a microphone has a changing radial velocity, so the pitch generally changes continuously around closest approach. High and low constant plateaux apply to ideal directly towards/away motion. Make the model geometry explicit and remove the universal steady-pitch pass-by claim. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v01 source review (4 November 2026)
+
+`checks/p-y11-fa3-v01-learning-review.md` and `checks/p-y11-fa3-v01-science-check.md`: 0 blockers, 0 should fix; 5,653 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v02 source review (4 November 2026)
+
+`checks/p-y11-fa3-v02-learning-review.md` and `checks/p-y11-fa3-v02-science-check.md`: 0 blockers, 1 should fix; 6,211 joined characters. Friction needs rubbing is too restrictive: contact and separation can charge the same materials without sliding. Replace needs rubbing with the rubbing method transfers electrons through repeated contact. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v03 source review (4 November 2026)
+
+`checks/p-y11-fa3-v03-learning-review.md` and `checks/p-y11-fa3-v03-science-check.md`: 0 blockers, 2 should fix; 6,042 joined characters. The halfway neutral point requires equal like charges. State equal on the pair diagram and in its givens if not already explicit; unequal positive charges cancel at a different point between them. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v04 source review (4 November 2026)
+
+`checks/p-y11-fa3-v04-learning-review.md` and `checks/p-y11-fa3-v04-science-check.md`: 0 blockers, 0 should fix; 5,942 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v05 source review (4 November 2026)
+
+`checks/p-y11-fa3-v05-learning-review.md` and `checks/p-y11-fa3-v05-science-check.md`: 0 blockers, 1 should fix; 5,406 joined characters. Final feedback says mg is upward. Weight mg points downward; the balancing electric force is upward. Replace the direction attached to mg and retain the positive charge and four-electrons-lost result. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v06 source review (4 November 2026)
+
+`checks/p-y11-fa3-v06-learning-review.md` and `checks/p-y11-fa3-v06-science-check.md`: 0 blockers, 0 should fix; 5,492 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v07 source review (4 November 2026)
+
+`checks/p-y11-fa3-v07-learning-review.md` and `checks/p-y11-fa3-v07-science-check.md`: 0 blockers, 2 should fix; 6,270 joined characters. The1.7mm breakdown estimate is not a safe working clearance for a5kV supply: breakdown depends on edges and conditions. Replace the how-close safety instruction with a theoretical order-of-magnitude example; require approved insulated/current-limited apparatus for the teacher demonstration. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v08 source review (4 November 2026)
+
+`checks/p-y11-fa3-v08-learning-review.md` and `checks/p-y11-fa3-v08-science-check.md`: 0 blockers, 0 should fix; 6,222 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v09 source review (4 November 2026)
+
+`checks/p-y11-fa3-v09-learning-review.md` and `checks/p-y11-fa3-v09-science-check.md`: 0 blockers, 1 should fix; 6,153 joined characters. Distinguish work done by the field from external work. Across a potential drop the field work is -q deltaV and deltaU=q deltaV. The current qV magnitude shortcut for electrons must explicitly use charge magnitude and voltage drop; otherwise a negative electron produces the wrong energy sign. Replace the existing equation explanation rather than adding a new section. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v10 source review (4 November 2026)
+
+`checks/p-y11-fa3-v10-learning-review.md` and `checks/p-y11-fa3-v10-science-check.md`: 0 blockers, 1 should fix; 5,644 joined characters. Make the signed potential difference explicit as destination minus start in deltaU=q deltaV. Root decision16 defines W as external work here, whereas v09 used field work; retain distinct labels so the two W=qV statements are not contradictory. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v11 source review (4 November 2026)
+
+`checks/p-y11-fa3-v11-learning-review.md` and `checks/p-y11-fa3-v11-science-check.md`: 0 blockers, 0 should fix; 5,583 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v12 source review (4 November 2026)
+
+`checks/p-y11-fa3-v12-learning-review.md` and `checks/p-y11-fa3-v12-science-check.md`: 0 blockers, 3 should fix; 5,579 joined characters. DC need not have a steady magnitude; it is unidirectional and may vary. Replace with steady DC is flat and remove steady size from the general DC definition. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v13 source review (4 November 2026)
+
+`checks/p-y11-fa3-v13-learning-review.md` and `checks/p-y11-fa3-v13-science-check.md`: 0 blockers, 1 should fix; 6,221 joined characters. A sixty-fold nichrome/copper ratio depends on alloy and temperature. Attach a named material-grade reference to the fixed number or replace it with much larger resistance, leaving the qualitative alloy-scattering explanation unchanged. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v14 source review (4 November 2026)
+
+`checks/p-y11-fa3-v14-learning-review.md` and `checks/p-y11-fa3-v14-science-check.md`: 0 blockers, 1 should fix; 5,464 joined characters. That is how a dimmer works implies common mains dimmers operate as rheostats. Replace with a simple resistance control changes this circuit current; retain the stated low-voltage example. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v15 source review (4 November 2026)
+
+`checks/p-y11-fa3-v15-learning-review.md` and `checks/p-y11-fa3-v15-science-check.md`: 0 blockers, 3 should fix; 6,225 joined characters. V/I is not exactly five at every point in the illustrative table. Replace with approximately five within the measurement uncertainty, and draw a fitted line rather than asserting every noisy point has the same exact ratio. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v16 source review (4 November 2026)
+
+`checks/p-y11-fa3-v16-learning-review.md` and `checks/p-y11-fa3-v16-science-check.md`: 0 blockers, 0 should fix; 6,225 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v17 source review (4 November 2026)
+
+`checks/p-y11-fa3-v17-learning-review.md` and `checks/p-y11-fa3-v17-science-check.md`: 0 blockers, 1 should fix; 5,510 joined characters. The final question says fifty megawatts supplied to the city but treats50MW as sending-end input. Replace with power station sends50MW into the lines so the specified current and loss calculation match the givens. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v18 source review (4 November 2026)
+
+`checks/p-y11-fa3-v18-learning-review.md` and `checks/p-y11-fa3-v18-science-check.md`: 0 blockers, 1 should fix; 5,379 joined characters. Charge cannot pile up anywhere and stops at once are too absolute: brief surface-charge changes establish a new steady state. Replace with no continuing accumulation in steady state and current rapidly stops after opening. The circuit rules remain unchanged. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v19 source review (4 November 2026)
+
+`checks/p-y11-fa3-v19-learning-review.md` and `checks/p-y11-fa3-v19-science-check.md`: 0 blockers, 1 should fix; 5,405 joined characters. Apply root decision30: use a resistor for the quantitative12ohm example in scenes3to7. The current design still calls it a lit lamp with fixed resistance. Retain the lamp only in lighting/darkness demonstrations. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v20 source review (4 November 2026)
+
+`checks/p-y11-fa3-v20-learning-review.md` and `checks/p-y11-fa3-v20-science-check.md`: 0 blockers, 1 should fix; 5,150 joined characters. The zero-leftover-energy analogy should compare potential differences around the closed loop, not imply a coulomb has an absolute energy of zero at the battery return. Replace with net energy change around a complete loop is zero. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v21 source review (4 November 2026)
+
+`checks/p-y11-fa3-v21-learning-review.md` and `checks/p-y11-fa3-v21-science-check.md`: 0 blockers, 1 should fix; 5,126 joined characters. Remove the spoken production phrase and the next scene shows why. Replace it with the actual causal transition about an added path, without adding learner text. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v22 source review (4 November 2026)
+
+`checks/p-y11-fa3-v22-learning-review.md` and `checks/p-y11-fa3-v22-science-check.md`: 0 blockers, 1 should fix; 5,899 joined characters. Any mix of series and parallel can be reduced by this method only when the network is actually series-parallel reducible. Replace any mix with these series-parallel networks; do not imply the method covers a bridge network. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v23 source review (4 November 2026)
+
+`checks/p-y11-fa3-v23-learning-review.md` and `checks/p-y11-fa3-v23-science-check.md`: 1 blockers, 2 should fix; 6,243 joined characters. The first attempt measures in a30ohm branch, whose ideal current is.10A, but compares.19A against the.20A main current and calls it5percent low. Either move the meter to the main15ohm resistor or use a.095A branch reading compared with.10A. Repair card and feedback together. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v24 source review (4 November 2026)
+
+`checks/p-y11-fa3-v24-learning-review.md` and `checks/p-y11-fa3-v24-science-check.md`: 0 blockers, 1 should fix; 5,860 joined characters. The field of a single loop is approximately uniform only near its centre, not throughout its entire inside. Replace inside strong and nearly uniform with near the centre, fields add and vary slowly. Do not imply the centre is stronger than positions arbitrarily near the wire. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v25 source review (4 November 2026)
+
+`checks/p-y11-fa3-v25-learning-review.md` and `checks/p-y11-fa3-v25-science-check.md`: 0 blockers, 1 should fix; 5,954 joined characters. Mu0 is measured in the current SI, so4pi*1e-7 is an excellent approximation, not exact. Replace exactly with approximately in the shortcut; retain the syllabus numerical value and all rounded answers. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v26 source review (4 November 2026)
+
+`checks/p-y11-fa3-v26-learning-review.md` and `checks/p-y11-fa3-v26-science-check.md`: 0 blockers, 0 should fix; 5,659 joined characters. No new source finding. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v27 source review (4 November 2026)
+
+`checks/p-y11-fa3-v27-learning-review.md` and `checks/p-y11-fa3-v27-science-check.md`: 0 blockers, 1 should fix; 6,164 joined characters. Width independence is the long-solenoid approximation away from ends. Keep that condition next to the opening wider-coil verdict and final rule, replacing the absolute width makes no difference wording rather than adding an advanced exception. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v28 source review (4 November 2026)
+
+`checks/p-y11-fa3-v28-learning-review.md` and `checks/p-y11-fa3-v28-science-check.md`: 0 blockers, 2 should fix; 5,620 joined characters. Steel is not always ferromagnetic; some stainless grades are not. Replace their alloys like steel with ferromagnetic alloys such as ordinary carbon steel, consistent with v29 material distinctions. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v29 source review (4 November 2026)
+
+`checks/p-y11-fa3-v29-learning-review.md` and `checks/p-y11-fa3-v29-science-check.md`: 2 blockers, 1 should fix; 5,722 joined characters. Low coercivity does not itself mean low remanent magnetism. Coercivity is the reverse field needed to erase magnetisation; remanence is what remains at zero applied field. Correct the repeated inference and use actual release/remanence evidence for the switchable-core recommendation. Quote, route, image and practical checks remain open.
+
+
+### Brief 164 p-y11-fa3-v30 source review (4 November 2026)
+
+`checks/p-y11-fa3-v30-learning-review.md` and `checks/p-y11-fa3-v30-science-check.md`: 0 blockers, 3 should fix; 6,191 joined characters. Removing retained clips does not demagnetise the nail. Keep magnetic history consistent by using an appropriate soft core and a defined reset procedure; clearing clips alone does not remove the cause of the high reading. Quote, route, image and practical checks remain open.
+
+
+### Brief 163 FA2 v31 source access update (4 November 2026)
+
+The full-text access blocker is resolved through Europe PMC XML. All nine reconstructed points recalculate correctly. Figure 1 and Table 4 print U/l while the design labels the same values mU/L; that factor1000 discrepancy remains a blocker. Model-estimate and individual-peak labels need the recorded repairs. Evidence: `work/brief163/leone-verification.json`.
+
+
+### Briefs161/162 official reference checks resolved (4 November2026)
+
+All39 syllabus citations across the12 probability reviews now have fresh official CMS text and MathML evidence. The official sample exam printed page33 confirms the positive-z four-decimal cumulative normal table; all 330 entries recalculate correctly. The current2027 reference sheet has neither that table nor an annuity formula, resolving the f14 reference question too. `work/brief162/official-quote-audit.json` and `reference-table-verification.json`. s11 table-form finding is closed; s12 numerical blocker remains.
+
+
+### Brief 166 local review build (4 November 2026)
+
+All 16 d01 scenes are registered; typecheck and preview v3 build passed. The 60-second pilot includes scene 10 and the scene 11 countdown, with original measured audio, and decoded successfully. Contact sheets (118 frames), 84 cue-anchor timings and source hashes are in checks/math-a12-d01-build166/. Full report: checks/codex-build-166.md. Human listening and Claude motion/design approval remain pending. The report explicitly records the remaining fine emphasis details; no exact-design pass or full export is claimed.
+
+
+
+### Briefs 163, 164 and 166 follow-up (4 November 2026)
+
+All 102 Biology/Physics handoff pairs were compared at source level. Physics FA3 v14 adds unprovided ghost readings; v25 retains a superseded assumed frame. Both need the recorded visual repairs. The two-window house reuse conflict in FA3 v17/v18 is also recorded. Biology cultural holds are preserved using root decisions 7 and 14. No rendered science-frame pass is claimed. Maths d01 now has preview v4, final pilot v3, 118 inspected stills and 86 cue anchors. The readout behaviour during an edge-on reflection is held for the designer decision recorded in checks/codex-build-166.md, alongside human listening and motion approval. Artwork continues independently.
+
+
+### Brief 165 continuation (5 November 2026)
+
+math-a12-d02 Revision 3 repairs now checked clean in checks/m-a12d02-error-check.md. Lesson request preflight: 16 new whole-scene requests, 0 local requests today, conservative limit 90. Matching takes will be reused. New pronunciation contexts cover the base a and natural log of a while preserving a half. One alignment process at a time.
+
+Brief 165 serial continuation: resuming saved d02 takes; request ceiling 99 of the owner-stated daily 100. No automatic request retry.
+
+math-a12-d02: request preflight 4 already used in the last 24 hours; 95 requests available before the reserved final request. Clean review: checks/m-a12d02-error-check.md.
+
+math-a12-d02: blocked, generator exited 1; 1 new requests. Saved takes preserved; no alignment or caption pass claimed.
+
+math-a12-d03: request preflight 5 already used in the last 24 hours; 94 requests available before the reserved final request. Clean review: checks/codex-check-133.md.
+
+math-a12-d03: blocked, generator exited 1; 1 new requests. Saved takes preserved; no alignment or caption pass claimed.
+
+math-a12-d04: request preflight 6 already used in the last 24 hours; 93 requests available before the reserved final request. Clean review: checks/m-a12d04-claude-science-check.md.
+
+math-a12-d04: blocked, generator exited 1; 1 new requests. Saved takes preserved; no alignment or caption pass claimed.
+
+math-a12-d05: request preflight 7 already used in the last 24 hours; 92 requests available before the reserved final request. Clean review: checks/m-a12d05-claude-science-check.md.
+
+Brief 165 continuation: persistent worker reverted after memory/native failures. Isolated alignment now uses 200-frame inference windows. All saved takes remain reusable. Speech capture and alignment are separate phases, each serial.
+
+math-a12-d02: capture preflight 9 requests used in last 24 hours; maximum 90 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d02: speech capture complete, 10 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+math-a12-d03: capture preflight 19 requests used in last 24 hours; maximum 80 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d03: speech capture complete, 16 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+math-a12-d04: capture preflight 35 requests used in last 24 hours; maximum 64 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d04: speech capture complete, 14 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+math-a12-d05: capture preflight 49 requests used in last 24 hours; maximum 50 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d05: speech capture complete, 13 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+math-a12-d06: capture preflight 62 requests used in last 24 hours; maximum 37 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d06: speech capture complete, 15 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+math-a12-d07: capture preflight 77 requests used in last 24 hours; maximum 22 additional requests, with complete-lesson reservation checked by the generator.
+
+math-a12-d07: speech capture complete, 14 new requests. No unchanged saved take was requested again. Alignment and measured data next.
+
+Speech capture wave finished with 91 requests recorded. The later d08 to d17, i01 to i05 and Biology FA1 v01 to v06 queue remains open. No more requests will be sent in this wave.
+
+math-a12-d02: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+math-a12-d02: measured/lesson.json and captions complete. 6328 characters; 451.76 speech seconds; 537.93 lesson seconds; $0.10244 estimated cost represented by the takes. Alignment bounds, captions and quiet holds pass. Built cue timing, pronunciation and voice/volume consistency at joins require human listening.
+
+math-a12-d03: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+math-a12-d03: measured/lesson.json and captions complete. 6355 characters; 457.56 speech seconds; 543.80 lesson seconds; $0.10375 estimated cost represented by the takes. Alignment bounds, captions and quiet holds pass. Built cue timing, pronunciation and voice/volume consistency at joins require human listening.
+
+math-a12-d04: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+Brief 165 allowance stop: 91 of 100 daily requests recorded, all with saved usage metadata. d08 requires 14 new requests; only 9 remain (8 before the 99-request ceiling), so it was not started. d08 to d17, i01 to i05 and Biology FA1 v01 to v06 are deferred until the next allowance, 7 pm Sydney on 5 November. No scene was left half-requested. Full request/count inventory: work/brief165-batch/preflight.json.
+
+math-a12-d02: 15 new whole-scene requests; estimated speech cost $0.10156. Alignment and measured results are recorded separately below.
+
+math-a12-d03: 17 new whole-scene requests; estimated speech cost $0.10375. Alignment and measured results are recorded separately below.
+
+math-a12-d04: 15 new whole-scene requests; estimated speech cost $0.09646. Alignment and measured results are recorded separately below.
+
+math-a12-d05: 15 new whole-scene requests; estimated speech cost $0.09292. Alignment and measured results are recorded separately below.
+
+math-a12-d06: 15 new whole-scene requests; estimated speech cost $0.09524. Alignment and measured results are recorded separately below.
+
+math-a12-d07: 14 new whole-scene requests; estimated speech cost $0.09263. Alignment and measured results are recorded separately below.
+
+Total estimated cost of this wave: $0.58257, from 8940 input and 64233 audio output tokens. All 91 request usage records exist. See work/brief165-batch/request-and-cost-summary.json. Human listening, including pronunciation and scene-join voice/volume changes, remains pending.
+
+math-a12-d04: measured/lesson.json and captions complete. 6086 characters; 429.24 speech seconds; 515.47 lesson seconds; $0.09734 estimated cost represented by the takes. Alignment bounds, captions and quiet holds pass. Built cue timing, pronunciation and voice/volume consistency at joins require human listening.
+
+math-a12-d05: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+math-a12-d05: measured/lesson.json and captions complete. 5664 characters; 413.76 speech seconds; 499.97 lesson seconds; $0.09381 estimated cost represented by the takes. Alignment bounds, captions and quiet holds pass. Built cue timing, pronunciation and voice/volume consistency at joins require human listening.
+
+math-a12-d06: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+math-a12-d06: alignment or caption export blocked (exit 1). Takes preserved. No complete measured lesson pass. Continue to the next captured lesson.
+
+math-a12-d07: aligning saved takes, request budget zero. One isolated alignment process at a time.
+
+Brief 165 d06 caption blocker repaired: the last interpolated character of First ended at 0.44700000000000006 while the following space used 0.447. google-pronunciation.mjs now uses each word's exact start/end at its endpoints. The strict caption regression passes. scene-06.alignment.json was rebuilt from its saved word timings; the original is in work/brief165-batch/floatingpoint-scene06.original-alignment.json. Audio unchanged. Reassemble d06 from cache after the current serial alignment pass.
+
+
+Brief 165 d06 blocker closed: cache-only reassembly, strict alignment validation and caption export all pass. 5,585 characters, 420.16 speech seconds, 506.33 lesson seconds, 190 caption cues, estimated new speech cost USD 0.0952445, 15 original requests and zero retry requests. measured/lesson.json and measured/captions are saved. Human listening and built cue timing remain pending.
+
+
+math-a12-d07: measured/lesson.json and captions complete. 5679 characters; 412.68 speech seconds; 498.87 lesson seconds; $0.09361 estimated cost represented by the takes. Alignment bounds, captions and quiet holds pass. Built cue timing, pronunciation and voice/volume consistency at joins require human listening.
+
+Brief 165 wave finished. Continue to brief 172. Remaining voice queue and any alignment blockers remain open; no listening approval claimed.
+
+### Brief 165 final wave hand-in (5 November 2026)
+
+All six lessons d02 to d07 now pass alignment bounds, explicit hold validation and caption export. Earlier memory and floating-point blockers are resolved. There are no outstanding alignment blockers for this wave. All measured lesson.json files and captions are under each lesson folder. Full figures and exact paths: work/brief165-batch/request-and-cost-summary.json.
+
+math-a12-d02: 6328 characters; 451.76 speech seconds; 537.93 lesson seconds; 15 requests; USD 0.10156 new estimated cost; 223 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+math-a12-d03: 6355 characters; 457.56 speech seconds; 543.80 lesson seconds; 17 requests; USD 0.10375 new estimated cost; 225 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+math-a12-d04: 6086 characters; 429.24 speech seconds; 515.47 lesson seconds; 15 requests; USD 0.09646 new estimated cost; 204 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+math-a12-d05: 5664 characters; 413.76 speech seconds; 499.97 lesson seconds; 15 requests; USD 0.09292 new estimated cost; 190 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+math-a12-d06: 5585 characters; 420.16 speech seconds; 506.33 lesson seconds; 15 requests; USD 0.09524 new estimated cost; 190 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+math-a12-d07: 5679 characters; 412.68 speech seconds; 498.87 lesson seconds; 14 requests; USD 0.09263 new estimated cost; 196 caption cues. Measured cue data is ready for a build, with no rendered cue-timing pass claimed.
+
+91 new whole-scene requests, estimated USD 0.582567 in total. No unchanged take re-voiced. d08 needs 14 requests and only 9 of 100 remain, so d08 to d17, i01 to i05 and Biology FA1 v01 to v06 are deferred to the next allowance at 7 pm Sydney. All lessons still require human listening for pronunciation and scene-join voice/volume consistency.
+
+### Brief 172 hand-in (5 November 2026)
+
+All requested source fixes are implemented. Scoped TypeScript passes. Preview v5 rebuilt; all 13 replacement stills inspected. Exact before/after index: work/brief172/stills.json. Static observations only; no playback-speed or listening approval.
+
+Fold: numeric readout and tangent hidden during reflection, restored to gradient -5.44 at height 2.72. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v5\scene-04-543.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-04-543.png.
+
+Earlier AlignedAlgebra rows now retain 65 percent opacity. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v4\scene-09-1392.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-09-1392.png.
+
+Strike stays level and inside crossed text. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v3\scene-12-698.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-12-698.png.
+
+Emphasis rings fit the marked words. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v3\scene-06-847.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-06-847.png.
+
+Scene 12 substitutes into the power before stating the result, on the same cue. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v3\scene-12-698.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-12-698.png.
+
+Scene 5 readouts are side by side and clear the bottom 12 percent. Before: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\stills-v3\scene-05-1222.png. After: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\brief172-stills\scene-05-1222.png.
+
+Measured lesson and narration unchanged (deep comparison with the saved d01 cache check passes). Lesson duration is 568.93 seconds.
+
+Full render attempted through scripts/render-release.mjs using work/brief172/full-render-config.json. Blocked before bundling: the script accepts only the legacy Lesson-release entry, not the Explainer composition. The separate export-stage gate also fails because the d01 production-brief.json is missing (BRIEF_INPUT_INVALID). No full MP4 exists, and no gate was bypassed. The initial all-registry still bundle was stopped for excessive memory; the direct d01 entry produced all 13 stills. Partial first-bundle diagnostics remain preserved. Moving to brief 170 as instructed.
+
+### Continuation checkpoint after interruption and status request
+
+Brief 172 still inspection and both full-render blockers are now recorded above. Brief 170 has a mechanical narration-count and Revision 1/2 change inventory in work/brief170/; no completed error-check reports or clean passes are claimed. Briefs 171, 169, 167 and 168 have not started. No alignment or rendering process remains active.
+
+### Brief 170 hand-in (5 November 2026)
+
+Twelve Revision 2 error checks saved at checks/y11b-fa2-vNN-error-check.md. Narration counts, source comparisons and recalculations are in work/brief170/. All estimates remain below about 570 seconds. No designs, speech or commits changed.
+
+y11b-fa2-v01: clean.
+
+y11b-fa2-v02: 1 should fix: Scene 6 still triggers the unit cube on "uses supplies and makes waste", absent from the revised narration. Scene 10b triggers the comparison on "three times as much membrane", but now says "three times the membrane". Point these two visual cues at the existing phrases "If demand per cubic centimetre stays the same" and "three times the membrane". No narration or duration change is needed.
+
+y11b-fa2-v03: clean.
+
+y11b-fa2-v04: clean.
+
+y11b-fa2-v05: clean.
+
+y11b-fa2-v06: clean.
+
+y11b-fa2-v07: 1 should fix: The scene 10 handoff card still says "Measure: oxygen in a set time (bubbles or gas volume)". Scene 3 and key note 2 correctly say neither counts nor unanalysed gas volume measure oxygen itself. Change this screen line to bubbles or gas volume in a set time, and preserve the same corrected card in v08's opening. No added speech.
+
+y11b-fa2-v08: 2 should fix: Scene 8 cues the extra distances on "more distances near the bend", which is absent from its revised narration ("add distances near the bend"). Use the existing "add distances near the bend" cue. No extra speech. Feedback 9b says the readings are ten degrees apart, but the question includes 40 and 45 degrees. The ten-degree spacing applies around the observed 30-degree peak. Scope the sentence to those neighbouring readings; cutting "real" and "somewhere" in the following sentence pays for the replacement.
+
+y11b-fa2-v09: 1 should fix: Scene 10 still uses the cue "when they agree" after narration changed to "when real sources agree". Trigger the bracket on that existing revised phrase. No narration or timing addition.
+
+y11b-fa2-v10: 1 should fix: The potato/active-loader tag is specified for scenes 3 and 7, but the unqualified "Phloem's load costs fuel" returns in scenes 8 and 13. Keep the existing active-loading example tag with those memory and handoff lines too. This preserves the approved wording while preventing a new universal claim after the passive-loader counterexample. No added narration.
+
+y11b-fa2-v11: 1 should fix: Scene 10 still cues the tracer chip on "radioactive form of carbon", which was removed. The current narration says "carbon dioxide containing radioactive carbon". Use its existing "radioactive carbon" phrase. No added narration.
+
+y11b-fa2-v12: 1 should fix: Feedback 10b explicitly predicts flow falls sharply, not to zero, and retains a faint transpiration wisp. Its animation then says the beads stop. Slow the beads substantially instead of stopping them, so the visual agrees with the repaired prediction. No narration change.
+
+New v09/v10 reference pages checked; the JIC PDF is locally retrieved and read. Primary-source pages support the referenced anatomy and potato active-loading example. No rendered or listening pass claimed. Moving to brief 171.
+
+## Brief 171 hand-in, 5 November 2026
+
+- math-a12-s01: clean in this source error check. Report: checks/m-a12s01-error-check.md.
+
+- math-a12-s02: clean in this source error check. Report: checks/m-a12s02-error-check.md.
+
+- math-a12-s03: clean in this source error check. Report: checks/m-a12s03-error-check.md.
+
+- math-a12-s04: 3 should fix: Scene 2 still says enough decimal places guarantee no two recorded times are the same. Scene 9 still says F reaches one beyond every possible value as a general rule. Scene 2 still presents reaction times of two hundred students with no study source or illustrative label. Report: checks/m-a12s04-error-check.md.
+
+- math-a12-s05: clean in this source error check. Report: checks/m-a12s05-error-check.md.
+
+- math-a12-s06: clean in this source error check. Report: checks/m-a12s06-error-check.md.
+
+- math-a12-s07: clean in this source error check. Report: checks/m-a12s07-error-check.md.
+
+- math-a12-s08: 2 should fix: Scene 7 still displays "the marks are in the set-up" after that unsupported marking claim was removed from speech. The scene 13 handoff presents "a thousand bottle fills from one filling machine" and its histogram without the simulated label that s09 adds at its opening. Report: checks/m-a12s08-error-check.md.
+
+- math-a12-s09: 1 should fix: Scene 14 again says a normal model fits data that bunch symmetrically around one peak. Report: checks/m-a12s09-error-check.md.
+
+- math-a12-s10: 2 should fix: The Numbers used heights row still groups 194 and 196 under approximately 0.15%. Scene 9 changes graphs on "Now the underfilled", absent from its narration, which says "Now underfilled bottles". Report: checks/m-a12s10-error-check.md.
+
+- math-a12-s11: clean in this source error check. Report: checks/m-a12s11-error-check.md.
+
+- math-a12-s12: 1 should fix: Scene 5 and the Numbers used table call the rounded app value 508.61 the exact boundary, and the tailTarget check uses that endpoint for a target of 0.01. Report: checks/m-a12s12-error-check.md.
+
+- math-a12-i06: clean in this source error check. Report: checks/m-a12i06-error-check.md.
+
+- math-a12-i07: clean in this source error check. Report: checks/m-a12i07-error-check.md.
+
+- math-a12-i08: 1 should fix: Scene 9 pulses all ticks on "agree", which no longer occurs in the shortened narration. Report: checks/m-a12i08-error-check.md.
+
+## Brief 169 reviews, 5 November 2026
+
+phys-y11-fa0-v01: 0 blocker, 3 should fix, 0 optional; 5,733 characters, estimated 532.0 s. Both reports at checks/p-y11-fa0-v01-learning-review.md and -science-check.md. Scene 7 teaches that "Gravity pulls on everything" cannot be contradicted by any observation. Feedback 1 says "The trolley will go faster" names nothing measurable. Author note c assigns the feather a mass of about 0.03 g.
+
+phys-y11-fa0-v02: 0 blocker, 2 should fix, 0 optional; 6,245 characters, estimated 566.0 s. Both reports at checks/p-y11-fa0-v02-learning-review.md and -science-check.md. Scene 4 defines reliable as readings agreeing when repeated, while v05 reserves that wording for precision and defines reliability through repeating the whole experiment. Scenes 3 and 7 imply that changing cone width isolates facing area alone.
+
+phys-y11-fa0-v03: 0 blocker, 1 should fix, 0 optional; 5,863 characters, estimated 541.0 s. Both reports at checks/p-y11-fa0-v03-learning-review.md and -science-check.md. Scene 5 counts "240 frames" between a timer at 0.000 and 1.000 s.
+
+phys-y11-fa0-v04: 0 blocker, 2 should fix, 0 optional; 5,614 characters, estimated 526.2 s. Both reports at checks/p-y11-fa0-v04-learning-review.md and -science-check.md. Scene 1 and the Opening frame paragraph still assume a data-logger screen from v03. The coverage request cannot be marked complete: ciabfb4d1f remains on cultural hold, and the design itself marks ci6364656f and cief805888 partial.
+
+phys-y11-fa0-v05: 1 blocker, 1 should fix, 0 optional; 6,207 characters, estimated 566.5 s. Both reports at checks/p-y11-fa0-v05-learning-review.md and -science-check.md. Scenes 7 and 8 call set A the times before subtracting the release delay, and set B the corrected times, but their standard deviations are 0.707 ms and 2.915 ms. Feedback 2 says more repeats "bring its mean closer" to the accepted value.
+
+phys-y11-fa0-v06: 0 blocker, 1 should fix, 0 optional; 6,069 characters, estimated 556.0 s. Both reports at checks/p-y11-fa0-v06-learning-review.md and -science-check.md. Scene 8 rules out a faulty light gate because the same card at the same launcher setting again gives 20.0 ms.
+
+phys-y11-fa0-v07: 0 blocker, 1 should fix, 0 optional; 5,924 characters, estimated 546.0 s. Both reports at checks/p-y11-fa0-v07-learning-review.md and -science-check.md. The Numbers used gradient row labels 0.93 to 1.1 kg as steepest and shallowest values.
+
+Brief 169 plates: 12 painted PNG layers with sidecars, prompts, hashes and black/white and phone QA in assets/brief169-manifest.json and assets/brief169-qa/. Seven paper/Moon/scissors layers pass object and alpha QA. Five cone layers are held: the 10 cm cone still fails constant-slant geometry after a targeted image-tool edit; set registration is provisional. Cricket ball, air track, air glider, flag and glider mass are missing at requested paths. Recorded blockers and moved to brief 167. No speech or renders run.
+
+## Brief 167 hand-in, 5 November 2026
+
+- Ledger/crosswalk: programme/syllabus/chem-2017-y11.json and chem-2017-y11-crosswalk.json; 52 parent actions with nested requirements, seven WS outcomes/19 actions, and exact depth/practical requirements. Fresh official DOCX retained and hashed. Summary: programme/chem-y11-crosswalk.md. Site teaching coverage: 43 covered, nine partial; cultural provenance remains held.
+- Route inputs: programme/chem-y11-route-inputs.json; 83 proposed videos, comprising 76 core/practical/cultural entries and seven integrated WS support entries. All parent actions have a proposed home; one cultural video remains held. Exact source lesson/section IDs, boundaries, prerequisites, practicals and next handoffs recorded. This is research for Claude, not designs or approved coverage.
+- Starter packs: ten files in pre-design/chem-y11/, with unchanged source givens, independent arithmetic, twenty original questions/answers, inspected asset reuse proposals and memory-bank notes. No source mixture-mass dataset was invented; its absence is explicit.
+- Corrections: site-corrections-chem-y11.md contains twelve exact old-text/correction/reason records. Read-only site hashes are unchanged. Evidence: work/brief167/validation.json and first-ten-calculations.json. No speech, source-code changes, renders or commits. Continuing to brief 168.
+
+## Brief 168 hand-in, 5 November 2026
+
+- Ledger/crosswalk: programme/syllabus/phys-2017-y12.json and phys-2017-y12-crosswalk.json contain 69 exact parent actions with nested requirements, seven WS outcomes/19 actions and depth/practical requirements. Fresh official 2017 DOCX, mathematical XML, hashes and source evidence retained. Summary: programme/phys-y12-crosswalk.md. Site teaching source: 61 covered, eight partial (seven practical evidence gaps and one constituent/scattering evidence gap). This does not certify science or student practical completion.
+- Route inputs: programme/phys-y12-route-inputs.json proposes 81 videos: Module 5 has 23, Module 6 has 20, Module 7 has 16 and Module 8 has 22. Every action has a proposed home, with exact selected source sections, boundaries, prerequisites, practicals and next handoffs. Research for Claude, not designs or a final route.
+- Starter packs: ten files in pre-design/phys-y12/, with unchanged source givens, independent arithmetic, twenty original questions/answers and inspected visual reuse proposals. The 54-family kit and all 70 physics-plan.json entries are compared in work/brief168/kit-comparison.json; all planned/current source hashes match. CircuitDiagram and LoopFlow were not found under src, so no exports were invented.
+- Corrections: site-corrections-phys-y12.md has four exact old-text records for three errors: speed scaling, premature wall-clearance rounding and a torque-angle label. Evidence: work/brief168/validation.json and first-ten-calculations.json. All 70 site files remain unchanged. No app-code changes, speech, renders or commits for this brief.
+
+## Ordered queue state after brief 168
+
+Completed the requested sequence through brief 168, moving past recorded blockers. Brief 165 has math-a12-d02 to d07 voiced, aligned and measured; d08 needs 14 new requests and cannot fit the remaining allowance. Resume preflight after 19:00 Sydney on 5 November 2026, reusing unchanged cached takes. The i01 to i05 and Biology FA1 v01 to v06 queue remains behind d08 to d17. Human listening is pending.
+
+Brief 172's five d01 fixes are implemented and checked in stills; full rendering remains blocked by the missing d01 production brief and the legacy-only release-render entry gate. No full d01 MP4 was produced. Briefs 170 and 171 reports and briefs 167 and 168 research hand-ins are complete. Brief 169's review reports are complete, but cone geometry and the missing requested plates remain recorded art blockers. Source findings need designer resolution before recording. Only one heavy job ran at a time; no alignment or render job is running now.
+
+## Ordered continuation, 5 November 2026, 08:58 Sydney
+
+Brief 165: quota preflight confirms 91 requests used; d08 needs 14 new requests, so no speech request was made. Next quota preflight is after 19:00 Sydney. Existing d02 to d07 takes and measured data retained. Brief 172: d01 production-brief.json is still missing; full export remains blocked. Claude is running, so no render was started. Briefs 170 and 171 hand-ins retained; brief 169 review/art blockers retained. Moving to brief 173 Revision 2 error checks, then revisiting 167 and 168 hand-ins.
+
+## Brief 173 hand-in, 5 November 2026
+
+95 Revision 2 error-check reports: 67 clean, one blocker and 29 should-fix findings across 28 designs. Checked current source against brief 163/164 findings and root decisions, recalculated changed quantities, checked cues and their order, and compared 95 source opening/final-frame pairs. Reports are checks/y11b-fa2-vNN-error-check.md, y11b-fa3-vNN-error-check.md, p-y11-fa2-vNN-error-check.md and p-y11-fa3-vNN-error-check.md. Source hashes were rechecked before hand-in. Evidence: work/brief173/validation.json, audit.json, opening-pairs.json, recalculation.json and source-checks.md. No design edits, painting, speech, alignment or renders.
+
+- bio-y11-fa2-v13: clean at error check Report: checks/y11b-fa2-v13-error-check.md.
+- bio-y11-fa2-v14: clean at error check Report: checks/y11b-fa2-v14-error-check.md.
+- bio-y11-fa2-v15: clean at error check Report: checks/y11b-fa2-v15-error-check.md.
+- bio-y11-fa2-v16: 0 blocker, 1 should fix: The written event order differs from the speech at 6. gases: the respiratory system: "Fish do the same job". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa2-v16-error-check.md.
+- bio-y11-fa2-v17: clean at error check Report: checks/y11b-fa2-v17-error-check.md.
+- bio-y11-fa2-v18: clean at error check Report: checks/y11b-fa2-v18-error-check.md.
+- bio-y11-fa2-v19: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 5. capillaries: one cell thick, and a prediction: "the answer to the opening question"; 7. veins: wide, thin, and valves: "little resistance"; 9b. feedback, item one: "The hose is an artery". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. The written event order differs from the speech at 2. direction defines the vessel, and a prediction: "Quick prediction". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa2-v19-error-check.md.
+- bio-y11-fa2-v20: clean at error check Report: checks/y11b-fa2-v20-error-check.md.
+- bio-y11-fa2-v21: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 6. the liver between meals, and urea: "urea always rises". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/y11b-fa2-v21-error-check.md.
+- bio-y11-fa2-v22: clean at error check Report: checks/y11b-fa2-v22-error-check.md.
+- bio-y11-fa2-v23: clean at error check Report: checks/y11b-fa2-v23-error-check.md.
+- bio-y11-fa2-v24: clean at error check Report: checks/y11b-fa2-v24-error-check.md.
+- bio-y11-fa2-v25: 0 blocker, 1 should fix: The full NEJM review now confirms diffusion, ultrafiltration and dialysate composition. Its Table 1 lists erythropoietin and vitamin D analogues as additional medication, but an explicit statement that dialysis does not replace endocrine functions was not found. The source notes still attribute that exact statement to S3. Give it a checked direct source or describe the table inference accurately. The written fallback has not been substituted. See work/brief173/source-checks.md. Report: checks/y11b-fa2-v25-error-check.md.
+- bio-y11-fa2-v26: clean at error check Report: checks/y11b-fa2-v26-error-check.md.
+- bio-y11-fa2-v27: clean at error check Report: checks/y11b-fa2-v27-error-check.md.
+- bio-y11-fa2-v28: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 1. who controls the master gland (opening): "who controls the pituitary". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/y11b-fa2-v28-error-check.md.
+- bio-y11-fa2-v29: 0 blocker, 1 should fix: The written event order differs from the speech at 12b. feedback, item one: "classic mistake". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa2-v29-error-check.md.
+- bio-y11-fa2-v30: 0 blocker, 1 should fix: The written event order differs from the speech at 3. one gland, two glands inside: "look inside". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa2-v30-error-check.md.
+- bio-y11-fa2-v31: clean at error check Report: checks/y11b-fa2-v31-error-check.md.
+- bio-y11-fa2-v32: clean at error check Report: checks/y11b-fa2-v32-error-check.md.
+- bio-y11-fa2-v33: clean at error check Report: checks/y11b-fa2-v33-error-check.md.
+- bio-y11-fa3-v01: clean at error check Report: checks/y11b-fa3-v01-error-check.md.
+- bio-y11-fa3-v02: 0 blocker, 1 should fix: The written event order differs from the speech at 7. a wet year, and a prediction: "Prediction"; 11. a pressure is not a punch: "doesn't have to kill". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa3-v02-error-check.md.
+- bio-y11-fa3-v03: clean at error check Report: checks/y11b-fa3-v03-error-check.md.
+- bio-y11-fa3-v04: clean at error check Report: checks/y11b-fa3-v04-error-check.md.
+- bio-y11-fa3-v06: clean at error check Report: checks/y11b-fa3-v06-error-check.md.
+- bio-y11-fa3-v07: clean at error check Report: checks/y11b-fa3-v07-error-check.md.
+- bio-y11-fa3-v08: clean at error check Report: checks/y11b-fa3-v08-error-check.md.
+- bio-y11-fa3-v09: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 3. convergent evolution: "some individuals had a little more loose skin". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/y11b-fa3-v09-error-check.md.
+- bio-y11-fa3-v10: clean at error check Report: checks/y11b-fa3-v10-error-check.md.
+- bio-y11-fa3-v11: clean at error check Report: checks/y11b-fa3-v11-error-check.md.
+- bio-y11-fa3-v12: clean at error check Report: checks/y11b-fa3-v12-error-check.md.
+- bio-y11-fa3-v13: clean at error check Report: checks/y11b-fa3-v13-error-check.md.
+- bio-y11-fa3-v14: clean at error check Report: checks/y11b-fa3-v14-error-check.md.
+- bio-y11-fa3-v15: clean at error check Report: checks/y11b-fa3-v15-error-check.md.
+- bio-y11-fa3-v17: clean at error check Report: checks/y11b-fa3-v17-error-check.md.
+- bio-y11-fa3-v18: 1 blocker, 0 should fix: The community-onset AGAR comparison still lacks the requested community-subset denominators and participating hospitals for 2013 and 2016. The February 2018 PDF returned a browser-verification page. The readable June 2017 report has different figures: its page 18 lists 4,025 total E. coli ceftriaxone tests and 11.1% community resistance. Do not substitute those totals, rounded onset shares or that cohort for the 7.0% to11.4% chart. Apply the written fallback or verify the exact source quantities. The existing voicing hold remains. Report: checks/y11b-fa3-v18-error-check.md.
+- bio-y11-fa3-v19: clean at error check Report: checks/y11b-fa3-v19-error-check.md.
+- bio-y11-fa3-v20: 0 blocker, 2 should fix: Feedback 11b still says fossils need hard parts and quick burial. Hard parts increase preservation probability but are not required, as the lesson itself shows with soft-bodied fossils. Replace the necessary-condition wording with a preservation-favours-hard-parts statement, retaining the brief answer and the corrected gap inference. The written event order differs from the speech at 12. decision rule and handoff: "a mix of old and new features". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa3-v20-error-check.md.
+- bio-y11-fa3-v21: clean at error check Report: checks/y11b-fa3-v21-error-check.md.
+- bio-y11-fa3-v22: clean at error check Report: checks/y11b-fa3-v22-error-check.md.
+- bio-y11-fa3-v23: clean at error check Report: checks/y11b-fa3-v23-error-check.md.
+- bio-y11-fa3-v24: 0 blocker, 1 should fix: The written event order differs from the speech at 5. oxygen, a water-only problem, and a prediction: "Prediction". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa3-v24-error-check.md.
+- bio-y11-fa3-v25: 0 blocker, 1 should fix: The written event order differs from the speech at 6. living interactions: "just as strongly". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa3-v25-error-check.md.
+- bio-y11-fa3-v26: 0 blocker, 1 should fix: Feedback 12b still concludes that a larger quadrat will not be four times as precise. The preceding cancellation of area in the abundance estimate does not establish a precision ratio. Use the accepted lack-of-guarantee conclusion: size, placement, number and patchiness affect precision. The new wording still makes a categorical denial where the original finding asked for no guaranteed ratio. Report: checks/y11b-fa3-v26-error-check.md.
+- bio-y11-fa3-v27: clean at error check Report: checks/y11b-fa3-v27-error-check.md.
+- bio-y11-fa3-v28: clean at error check Report: checks/y11b-fa3-v28-error-check.md.
+- bio-y11-fa3-v29: clean at error check Report: checks/y11b-fa3-v29-error-check.md.
+- bio-y11-fa3-v30: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 6. the fence-and-food experiment: "they work together". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/y11b-fa3-v30-error-check.md.
+- bio-y11-fa3-v31: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 4. the ceiling moves, and a prediction: "whatever is limiting the population right now". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. The written event order differs from the speech at 10d. feedback, item two: "cut the population to about six hundred". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/y11b-fa3-v31-error-check.md.
+- bio-y11-fa3-v32: clean at error check Report: checks/y11b-fa3-v32-error-check.md.
+- phys-y11-fa2-v13: clean at error check Report: checks/p-y11-fa2-v13-error-check.md.
+- phys-y11-fa2-v14: clean at error check Report: checks/p-y11-fa2-v14-error-check.md.
+- phys-y11-fa2-v15: clean at error check Report: checks/p-y11-fa2-v15-error-check.md.
+- phys-y11-fa2-v16: clean at error check Report: checks/p-y11-fa2-v16-error-check.md.
+- phys-y11-fa2-v17: clean at error check Report: checks/p-y11-fa2-v17-error-check.md.
+- phys-y11-fa2-v18: clean at error check Report: checks/p-y11-fa2-v18-error-check.md.
+- phys-y11-fa2-v19: clean at error check Report: checks/p-y11-fa2-v19-error-check.md.
+- phys-y11-fa2-v20: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 11. frequency stays, wavelength shortens: "every crest". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa2-v20-error-check.md.
+- phys-y11-fa2-v21: clean at error check Report: checks/p-y11-fa2-v21-error-check.md.
+- phys-y11-fa2-v22: clean at error check Report: checks/p-y11-fa2-v22-error-check.md.
+- phys-y11-fa2-v23: clean at error check Report: checks/p-y11-fa2-v23-error-check.md.
+- phys-y11-fa2-v24: 0 blocker, 1 should fix: The written event order differs from the speech at 4. a better method, and repeats: "three times". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/p-y11-fa2-v24-error-check.md.
+- phys-y11-fa2-v25: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 3. converging lens: focal point and focal length: "bend down"; 3. converging lens: focal point and focal length: "bend up"; 4. diverging lens: a virtual focal point: "spread apart"; 17. handoff: "test it". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa2-v25-error-check.md.
+- phys-y11-fa2-v26: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 2. the model eye: "diverging lens instead"; 11. how spectacles assist, and where the model differs: "never makes the image". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa2-v26-error-check.md.
+- phys-y11-fa2-v27: clean at error check Report: checks/p-y11-fa2-v27-error-check.md.
+- phys-y11-fa2-v28: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 3. measuring the spread: "photographs"; 7. run two: lengthening the wave: "frequency drops"; 10. why level matters: "slow down"; 11. one graph for both runs: "same curve"; 11. one graph for both runs: "agree within their spread"; 12. obstacles: "long block". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa2-v28-error-check.md.
+- phys-y11-fa2-v29: clean at error check Report: checks/p-y11-fa2-v29-error-check.md.
+- phys-y11-fa2-v30: 0 blocker, 1 should fix: The written event order differs from the speech at 7. both arrive, and the energy moves: "four times". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/p-y11-fa2-v30-error-check.md.
+- phys-y11-fa2-v31: clean at error check Report: checks/p-y11-fa2-v31-error-check.md.
+- phys-y11-fa2-v32: clean at error check Report: checks/p-y11-fa2-v32-error-check.md.
+- phys-y11-fa2-v33: clean at error check Report: checks/p-y11-fa2-v33-error-check.md.
+- phys-y11-fa3-v02: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 9. induction with earthing: a lasting charge: "Get the order wrong". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa3-v02-error-check.md.
+- phys-y11-fa3-v03: clean at error check Report: checks/p-y11-fa3-v03-error-check.md.
+- phys-y11-fa3-v05: clean at error check Report: checks/p-y11-fa3-v05-error-check.md.
+- phys-y11-fa3-v07: 0 blocker, 1 should fix: The written event order differs from the speech at 3. drawing the field lines: "from plus to minus". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/p-y11-fa3-v07-error-check.md.
+- phys-y11-fa3-v09: clean at error check Report: checks/p-y11-fa3-v09-error-check.md.
+- phys-y11-fa3-v10: clean at error check Report: checks/p-y11-fa3-v10-error-check.md.
+- phys-y11-fa3-v12: clean at error check Report: checks/p-y11-fa3-v12-error-check.md.
+- phys-y11-fa3-v13: clean at error check Report: checks/p-y11-fa3-v13-error-check.md.
+- phys-y11-fa3-v14: clean at error check Report: checks/p-y11-fa3-v14-error-check.md.
+- phys-y11-fa3-v15: clean at error check Report: checks/p-y11-fa3-v15-error-check.md.
+- phys-y11-fa3-v17: clean at error check Report: checks/p-y11-fa3-v17-error-check.md.
+- phys-y11-fa3-v18: clean at error check Report: checks/p-y11-fa3-v18-error-check.md.
+- phys-y11-fa3-v19: 0 blocker, 1 should fix: These written cue phrases do not occur verbatim in their scene narration: 8. swap 1: the ammeter across the lamp: "across the lamp". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa3-v19-error-check.md.
+- phys-y11-fa3-v20: clean at error check Report: checks/p-y11-fa3-v20-error-check.md.
+- phys-y11-fa3-v21: clean at error check Report: checks/p-y11-fa3-v21-error-check.md.
+- phys-y11-fa3-v22: clean at error check Report: checks/p-y11-fa3-v22-error-check.md.
+- phys-y11-fa3-v23: clean at error check Report: checks/p-y11-fa3-v23-error-check.md.
+- phys-y11-fa3-v24: 0 blocker, 1 should fix: The written event order differs from the speech at 8. a current's field: circles: "switch on". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/p-y11-fa3-v24-error-check.md.
+- phys-y11-fa3-v25: clean at error check Report: checks/p-y11-fa3-v25-error-check.md.
+- phys-y11-fa3-v27: 0 blocker, 1 should fix: The written event order differs from the speech at 2. measure it: "slides into the middle". Reorder the event instructions to follow the spoken sequence. The saved audit includes the complete cue list and speech for comparison. Report: checks/p-y11-fa3-v27-error-check.md.
+- phys-y11-fa3-v28: clean at error check Report: checks/p-y11-fa3-v28-error-check.md.
+- phys-y11-fa3-v29: 0 blocker, 2 should fix: Feedback 1 still infers that material P releases when power is cut from its low coercivity alone. The question supplies permeability and coercivity, not remanence, core geometry or a release measurement. Low coercivity means a small reverse field can erase magnetisation; it does not alone establish the remaining field at zero current or instant release. Add the needed release/remanence evidence to the existing table or limit the conclusion to what these two properties support. The feedback row repeats the inference. This part of the original finding remains unresolved. These written cue phrases do not occur verbatim in their scene narration: 1. the question, and a secondary-source investigation: "published data". Retie each event to existing speech; do not add narration just to preserve an obsolete cue. Report: checks/p-y11-fa3-v29-error-check.md.
+- phys-y11-fa3-v30: clean at error check Report: checks/p-y11-fa3-v30-error-check.md.
+
+Biology FA3 v05 and v16 remain on cultural hold and were skipped. Physics FA3 v01, v04, v06, v08, v11, v16 and v26 remain Revision 1 with no earlier findings and required no new error check. No repaired design was left at Revision 1. The requested house-front plate is recorded for the next plate brief, not painted here.
+
+Source follow-ups: the full Himmelfarb/Ikizler review was read; transport/composition claims are verified, while the exact endocrine attribution needs a direct source. Leone still prints U/l and no correction was verified; the approved printed-unit fallback is used. AGAR community-subset denominators and hospitals are unresolved, so Biology FA3 v18 must not be voiced. Knapp2005 dispersal was confirmed. Holden and Mutze2002 supplies the named Flinders Ranges rabbit-disease case. The western NSW drought fallback is used without the unsupported percentage. Physics FA3 v29 steel numbers are explicitly illustrative, but its release inference remains a should-fix finding.
+
+After brief 173: briefs 167 and 168 hand-in artifact hashes were rechecked against their validation records and remain unchanged. Their research is complete. Brief 165 still waits for the 19:00 Sydney reset: 91 requests used, d08 needs 14. Brief 172 full d01 render remains blocked by its missing production brief and the release-render gate; no render was started while Claude was running. Brief 169 art blockers remain recorded. No heavy job is running.
+
+Brief 165 next-lesson approval preflight: math-a12-d08.md says Revision 2 repairs are applied and ready after the pilot, but no dedicated checks/m-a12d08-error-check.md was found (the learning review and Claude science-check files exist). Before any d08 speech, confirm the independent repair/error-check evidence for this exact revision. A ready-to-voice status alone is not being counted as a passed error check. No request was made.
+
+
+## Codex hand-in: brief 175 step 1, 5 November 2026
+
+Pulled first: already up to date. Eight repair confirmations written to checks/m-a12d08-error-check.md, checks/m-a12d09-error-check.md and checks/y11b-fa1-v01-error-check.md to v06. Biology v01 skipped for remaining compartment wording and a stale cue. Whole-scene capture only; no retry, no unchanged re-voicing.
+
+math-a12-d08: captured, 14 new requests, 5517 characters, about 201.99 speech seconds, US$0.09123 estimated cost.
+
+math-a12-d09: captured, 15 new requests, 6222 characters, about 223.23 speech seconds, US$0.10075 estimated cost.
+
+math-a12-d10: captured, 13 new requests, 5672 characters, about 205.89 speech seconds, US$0.09294 estimated cost.
+
+math-a12-d11: captured, 13 new requests, 5928 characters, about 215.53 speech seconds, US$0.09734 estimated cost.
+
+math-a12-d12: captured, 13 new requests, 5684 characters, about 223.11 speech seconds, US$0.10076 estimated cost.
+
+math-a12-d13: captured, 13 new requests, 5534 characters, about 195.96 speech seconds, US$0.08849 estimated cost.
+
+math-a12-d14: captured, 13 new requests, 5643 characters, about 208.59 speech seconds, US$0.09419 estimated cost.
+
+math-a12-d15: deferred-budget.
+
+math-a12-d16: deferred.
+
+math-a12-d17: deferred.
+
+math-a12-i01: deferred.
+
+math-a12-i02: deferred.
+
+math-a12-i03: deferred.
+
+math-a12-i04: deferred.
+
+math-a12-i05: deferred.
+
+bio-y11-fa1-v01: skipped-unresolved-repair.
+
+bio-y11-fa1-v02: deferred.
+
+bio-y11-fa1-v03: deferred.
+
+bio-y11-fa1-v04: deferred.
+
+bio-y11-fa1-v05: deferred.
+
+bio-y11-fa1-v06: deferred.
+
+Details: work/brief175/google-capture.json. Alignment and human listening pending.
+
+
+## Codex hand-in: brief 175 step 2 / brief 174, 5 November 2026
+
+Initial balance: unavailable credits. Final checked balance: unavailable. Balance check HTTP 401
+
+Wave: stopped.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+Brief 175 step 1 billed-usage total: 94 new requests, US$0.66078 estimated new speech cost, 0 requests missing usage metadata. Per-lesson capture figures above include reusable takes; this total counts only requests made in this run. work/brief175/google-usage.json records tokens and new cost per lesson.
+
+Brief 174 balance failure saved without credentials to work/brief174/balance.json (HTTP 401). No ElevenLabs generation was attempted. The configured key needs to be corrected before resuming Cycle 1.
+
+Brief 175 step 1 duration correction: the earlier capture-only estimates assumed 48 kHz, but Google saved the source WAVs at 24 kHz. Corrected durations now use each WAV header. The alignment generator independently decodes to 48 kHz before measuring, so its lesson timing is unaffected. Correct capture speech seconds: math-a12-d08 402.20; math-a12-d09 444.44; math-a12-d10 410.00; math-a12-d11 429.28; math-a12-d12 444.44; math-a12-d13 390.28; math-a12-d14 415.40.
+
+
+## Codex hand-in: brief 175 step 3, 5 November 2026
+
+Google alignment ran serially with a zero-request budget, preserving every take.
+
+math-a12-d08: measured-and-captioned, 5517 characters, 402.20 speech seconds, 488.37 lesson seconds, US$0.09123 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d08/measured/validation.json.
+
+math-a12-d09: measured-and-captioned, 6222 characters, 444.44 speech seconds, 530.73 lesson seconds, US$0.10075 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d09/measured/validation.json.
+
+math-a12-d10: measured-and-captioned, 5672 characters, 410.00 speech seconds, 496.13 lesson seconds, US$0.09294 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d10/measured/validation.json.
+
+math-a12-d11: measured-and-captioned, 5928 characters, 429.28 speech seconds, 515.47 lesson seconds, US$0.09734 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d11/measured/validation.json.
+
+math-a12-d12: measured-and-captioned, 5684 characters, 444.44 speech seconds, 530.67 lesson seconds, US$0.10076 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d12/measured/validation.json.
+
+math-a12-d13: measured-and-captioned, 5534 characters, 390.28 speech seconds, 476.40 lesson seconds, US$0.08849 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d13/measured/validation.json.
+
+math-a12-d14: measured-and-captioned, 5643 characters, 415.40 speech seconds, 501.63 lesson seconds, US$0.09419 estimated cost. Alignment bounds, text, quiet holds and caption export passed. Report: docs/production/claude-pm/lessons/math-a12-d14/measured/validation.json.
+
+Exact built cue timing, pronunciation, scene joins and human listening remain pending.
+
+Brief 175 step 3 verification: all 7 design hashes still match their manifests; all 99 scene text hashes, model and voice records match; each caption export is bound to its measured lesson. Explicit terminal holds checked against the designs in work/brief175/hold-audit.json. Summary: work/brief175/google-final-verification.json. This is source and timing verification, not built playback or human listening.
+
+
+## Codex hand-in: brief 175 step 4, 5 November 2026
+
+Ran scripts/render-explainer.mjs Explainer-math-a12-d01 --confirm --revision=v1 with RENDER_CONCURRENCY=2 after alignment ended. Exit 0.
+
+Output: C:\lesson-video-generator\out\explainer\Explainer-math-a12-d01\Explainer-math-a12-d01-v1.mp4
+
+Duration: 568.933 s (17068 frames)
+
+Loudness: input -17.56 LUFS, normalised to -14 LUFS
+
+Failed chunks: none recorded. Caption exporter exit: 0. Captions use the exact playback snapshot docs/production/claude-pm/lessons/math-a12-d01/measured/lesson.playback.json. Playback unchanged through render: true. Details: work/brief175/d01-render-report.json and d01-render.log. Human listening and release approval remain pending. No publication or commits.
+
+Brief 175 final media verification: d01 is 1920 x 1080, 30 fps, 17065 frames, 568.933000 seconds, with aac audio. The video stream has 17065 frames against 17068 planned (-3 frames); video duration is 568.833333 seconds while audio and container run 568.933000 seconds. This timing difference is recorded for review. SHA256 8b253589d6260ab0804d3672b25a6fc1cfda6414a93e285012afcc1d6826dc30. 222 caption cues exported to out/explainer/Explainer-math-a12-d01/captions-v1; SRT/VTT hashes and the playback source binding pass. Source/timing and media metadata checks only. Human listening and release approval remain pending. Report: work/brief175/d01-media-verification.json.
+
+
+## Codex hand-in: brief 176, 5 November 2026
+
+Error-only check of all 48 requested revisions. 45 clean, 0 blockers, 3 should-fix findings. No source edits, speech, sub-agents or commits. Previous reports are unchanged.
+
+- bio-y11-fa2-v02: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v02-rev3-error-check.md.
+- bio-y11-fa2-v07: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v07-rev3-error-check.md.
+- bio-y11-fa2-v08: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v08-rev3-error-check.md.
+- bio-y11-fa2-v09: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v09-rev3-error-check.md.
+- bio-y11-fa2-v10: Should fix: Scene 7 writes the tiny-channels event before the micrograph ring on "joined to the sieve tube", but the narration says "joined to the sieve tube" before "tiny channels". Put the ring event before the channel event, using the same speech. The active-loader tag repair itself passes.. Report: docs/production/claude-pm/checks/y11b-fa2-v10-rev3-error-check.md.
+- bio-y11-fa2-v11: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v11-rev3-error-check.md.
+- bio-y11-fa2-v12: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v12-rev3-error-check.md.
+- bio-y11-fa2-v16: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v16-rev3-error-check.md.
+- bio-y11-fa2-v19: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v19-rev3-error-check.md.
+- bio-y11-fa2-v21: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v21-rev3-error-check.md.
+- bio-y11-fa2-v25: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v25-rev3-error-check.md.
+- bio-y11-fa2-v28: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v28-rev3-error-check.md.
+- bio-y11-fa2-v29: Should fix: Scene 6 writes the return-arrow event on "negative feedback" before the thinning-stream event on "release less insulin". The narration releases less insulin first, then names negative feedback. Reorder these two event instructions to follow the speech. The feedback 12b repair itself passes.. Report: docs/production/claude-pm/checks/y11b-fa2-v29-rev3-error-check.md.
+- bio-y11-fa2-v30: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa2-v30-rev3-error-check.md.
+- bio-y11-fa3-v02: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v02-rev3-error-check.md.
+- bio-y11-fa3-v09: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v09-rev3-error-check.md.
+- bio-y11-fa3-v18: clean at error check; voicing hold retained under brief 176. Report: docs/production/claude-pm/checks/y11b-fa3-v18-rev3-error-check.md.
+- bio-y11-fa3-v20: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v20-rev3-error-check.md.
+- bio-y11-fa3-v24: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v24-rev3-error-check.md.
+- bio-y11-fa3-v25: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v25-rev3-error-check.md.
+- bio-y11-fa3-v26: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v26-rev3-error-check.md.
+- bio-y11-fa3-v30: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v30-rev3-error-check.md.
+- bio-y11-fa3-v31: clean at error check. Report: docs/production/claude-pm/checks/y11b-fa3-v31-rev3-error-check.md.
+- phys-y11-fa2-v20: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v20-rev3-error-check.md.
+- phys-y11-fa2-v24: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v24-rev3-error-check.md.
+- phys-y11-fa2-v25: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v25-rev3-error-check.md.
+- phys-y11-fa2-v26: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v26-rev3-error-check.md.
+- phys-y11-fa2-v28: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v28-rev3-error-check.md.
+- phys-y11-fa2-v30: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa2-v30-rev3-error-check.md.
+- phys-y11-fa3-v02: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v02-rev3-error-check.md.
+- phys-y11-fa3-v07: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v07-rev3-error-check.md.
+- phys-y11-fa3-v19: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v19-rev3-error-check.md.
+- phys-y11-fa3-v24: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v24-rev3-error-check.md.
+- phys-y11-fa3-v27: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v27-rev3-error-check.md.
+- phys-y11-fa3-v29: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa3-v29-rev3-error-check.md.
+- phys-y11-fa0-v01: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v01-error-check.md.
+- phys-y11-fa0-v02: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v02-error-check.md.
+- phys-y11-fa0-v03: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v03-error-check.md.
+- phys-y11-fa0-v04: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v04-error-check.md.
+- phys-y11-fa0-v05: Should fix: Scene 4 triggers the two end-dot glow on "only two readings", which is absent from the narration. It says "only the highest and lowest readings". Retie that event to the existing phrase, with no added speech. The separate-run and repeat-uncertainty repairs pass.. Report: docs/production/claude-pm/checks/p-y11-fa0-v05-error-check.md.
+- phys-y11-fa0-v06: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v06-error-check.md.
+- phys-y11-fa0-v07: clean at error check. Report: docs/production/claude-pm/checks/p-y11-fa0-v07-error-check.md.
+- math-a12-s04: clean at error check. Report: docs/production/claude-pm/checks/m-a12s04-rev3-error-check.md.
+- math-a12-s08: clean at error check. Report: docs/production/claude-pm/checks/m-a12s08-rev3-error-check.md.
+- math-a12-s09: clean at error check. Report: docs/production/claude-pm/checks/m-a12s09-rev3-error-check.md.
+- math-a12-s10: clean at error check. Report: docs/production/claude-pm/checks/m-a12s10-rev3-error-check.md.
+- math-a12-s12: clean at error check. Report: docs/production/claude-pm/checks/m-a12s12-rev3-error-check.md.
+- math-a12-i08: clean at error check. Report: docs/production/claude-pm/checks/m-a12i08-rev3-error-check.md.
+
+All narration recounts match; s08 is 5,526 characters. FA0 v02 is about 569.5 seconds and v05 about 569.9 seconds using the original headline and repair delta, with unchanged holds. Named handoffs pass at source level. No U+2014 or U+2061 found. Calculations, cue audit, handoff pairs and validation: work/brief176/.
+
+AGAR follow-up: the full primary publisher report text opened through its indexed PDF entry and confirms 7.0% (2013) and 11.4% (2016) on printed pages v and 57. Direct PDF/page screenshots still returned access errors, so no visual page inspection is claimed. The comparison-year denominators and hospitals remain unverified, and v18 stays on voicing hold regardless of this result. See work/brief176/source-checks.md and agar-primary-check.json. Clean designs may proceed to plates and then Google voicing, except the held v18. Listening, built cue timing and image/apparatus review remain pending.
+
+
+## Codex hand-in: brief 178 prerequisite check, 5 November 2026
+
+Brief 178 has not started its reviews or plates. It says "Run after brief 177", but this checkout has none of the twenty c-y11-m1-v01 to v10 learning/science reports, no assets/brief177-manifest.json and no brief 177 hand-in. All ten brief 178 designs exist. Input hashes and asset path checks are in checks/brief178-prerequisite-check.json. Missing asset references include the earlier crucible and balance requests; no artwork has been inspected or approved by this inventory. The owner has been asked whether to complete 177 first or proceed directly with 178. No design edits, speech, sub-agents or commits. The ten design reviews, site corrections, build-item list and plates remain pending.
+
+
+## Codex hand-in: brief 177, 5 November 2026
+
+**c-y11-m1-v01:** 0 blockers, 1 should fix, 0 optional; 6,302 characters, about 564 s. Scene 5 moves coded iron filings away from a painted iron-and-sulfur heap, but the requested mixed plate already contains the iron. Specify a removable iron layer or a matched sulfur-only residue state so painted iron does not remain after the magnet lifts it. This needs no speech addition; retain the existing magnet demonstration. Reports: `checks/c-y11-m1-v01-learning-review.md` and `checks/c-y11-m1-v01-science-check.md`.
+
+**c-y11-m1-v02:** 0 blockers, 1 should fix, 0 optional; 6,356 characters, about 565 s. Scene 10 says "it takes two properties to be sure" after scene 7 correctly says the identification is not certain. A beginner will remember the mnemonic as a guarantee. Replace that phrase with "check another property" in the speech and matching handwriting. This is shorter and preserves the intended evidence test. Reports: `checks/c-y11-m1-v02-learning-review.md` and `checks/c-y11-m1-v02-science-check.md`.
+
+**c-y11-m1-v03:** 0 blockers, 1 should fix, 0 optional; 5,897 characters, about 531 s. Scenes 11 and 15 say "no filter can catch it" and "no filter catches dissolved ions". The lesson establishes ordinary filter paper, while selective membranes can remove dissolved species. Use "filter paper cannot catch it" and "filter paper misses dissolved ions". Fund any extra characters by dropping "Here’s the rule" in scene 11; no new scene or caveat needed. Reports: `checks/c-y11-m1-v03-learning-review.md` and `checks/c-y11-m1-v03-science-check.md`.
+
+**c-y11-m1-v04:** 0 blockers, 2 should fix, 0 optional; 6,216 characters, about 556 s. Attempt 2/feedback 2 infers that vapour is only slightly richer in P from 68 and 72 degrees C alone. The same answer correctly says pure boiling points do not establish azeotrope behaviour. State in the question that the first vapour is only slightly richer in P, or replace this pair with the already quantified ethanol-water case. Fund the added condition by cutting "Then state whether these boiling points guarantee that pure P can be collected" from speech and retaining that demand on the full card. The reused fallback m7-school-distillation-setup-v1.png has a stoppered receiver and its thermometer bulb is below the side-arm opening in the inspected image. It cannot serve as the safety diagram in scenes 2 and 3 without repair. Use the requested new open-receiver plate and verify the bulb position. No speech addition. Reports: `checks/c-y11-m1-v04-learning-review.md` and `checks/c-y11-m1-v04-science-check.md`.
+
+**c-y11-m1-v05:** 0 blockers, 1 should fix, 0 optional; 5,970 characters, about 539 s. Scene 5 writes 0 < Rf < 1 and scene 10 says always less than one. A component that remains on the baseline has Rf = 0; an unresolved component can move with the front. Change the limit tag to 0 ≤ Rf ≤ 1 and "always less than 1" to "cannot exceed 1". Replace the corresponding sentence with "The spot cannot pass the front". These repairs are shorter. Reports: `checks/c-y11-m1-v05-learning-review.md` and `checks/c-y11-m1-v05-science-check.md`.
+
+**c-y11-m1-v06:** 0 blockers, 0 should fix, 0 optional; 6,056 characters, about 542 s. No material source finding. Reports: `checks/c-y11-m1-v06-learning-review.md` and `checks/c-y11-m1-v06-science-check.md`.
+
+**c-y11-m1-v07:** 0 blockers, 1 should fix, 0 optional; 6,108 characters, about 547 s. Scene 8 has 749 narration characters and introduces hydrate notation, water group mass, whole formula mass and division. Keep only H2O/5H2O while computing 90.0, then clear that working except 90.0 when building 249.6, then dim the formula-mass expansion when dividing. Split its visual directions at those existing cues; no extra speech or duration. Do not leave all four rows bright together. Reports: `checks/c-y11-m1-v07-learning-review.md` and `checks/c-y11-m1-v07-science-check.md`.
+
+**c-y11-m1-v08:** 0 blockers, 1 should fix, 0 optional; 5,900 characters, about 530 s. Scene 10 has 759 characters after a lesson about reading nuclide labels. Keep the three carbon examples, then replace them with the enlarged nucleus, then replace it with the N/Z sketch. Do not retain three mechanisms simultaneously. If the build cannot stage this at the existing cues, cut the spoken lead example, which is already a reserve cut, and keep its labelled point silent. Reports: `checks/c-y11-m1-v08-learning-review.md` and `checks/c-y11-m1-v08-science-check.md`.
+
+**c-y11-m1-v09:** 0 blockers, 1 should fix, 0 optional; 6,202 characters, about 552 s. Scene 4 rounds the contributions before adding: 35 × 0.7577 = 26.5195 and 37 × 0.2423 = 8.9651, total 35.4846, which rounds to 35.48, not 35.49. Keep guard digits in working and change the spoken result to thirty-five point four eight. The spoken replacement is length-neutral. Update the matching row and Numbers used, retaining 35.5 at three significant figures. Reports: `checks/c-y11-m1-v09-learning-review.md` and `checks/c-y11-m1-v09-science-check.md`.
+
+**c-y11-m1-v10:** 0 blockers, 1 should fix, 0 optional; 5,645 characters, about 511 s. Scene 1 says lines draw left to right by wavelength, scene 2 points from red towards violet for increasing energy, and scene 6 fixes ultraviolet to the left edge. Lock one orientation explicitly: either wavelength increases left to right with violet at left and red at right, or energy increases left to right with red at left and violet at right. Put ultraviolet beyond violet in that orientation. No speech addition. This prevents opposite interpretations when the strip is built. Reports: `checks/c-y11-m1-v10-learning-review.md` and `checks/c-y11-m1-v10-science-check.md`.
+
+Plates: 22 requested candidates and 2 corrective candidates painted; manifest `assets/brief177-manifest.json`, native/phone composites, overlays and strip test in `assets/brief177-qa/`. All remain on margin/edge QA hold; three-way crucible canvas match fails and exact registration is not passed. All reused plate filenames exist; the two remaining inventory references are the coded glass rod. Per-design provenance saved. No plate approval. No design edits, speech, sub-agents or commits.
+
+
+
+## Codex hand-in: brief 178, 5 November 2026
+
+**c-y11-ws-v01:** 0 blockers, 3 should fix, 0 optional; 6,333 characters, about 568.1 s. Scenes 5 and 6 define specific as "which way, or by how much", then reject "lose some mass" because it gives no amount. That statement already gives a direction. Make the criterion "specific enough to answer the inquiry question", which asks for a percentage, and judge it against that question. Fund added words by deleting "With four checks" and "So almost any result would fit it"; keep the no-reason finding separate. Scene 8 relies on Group C having reached steady mass, but scene 7 only says roaring flame, black powder and 47.2% loss before the prediction. Put "heated to steady mass" on Group C’s EvidenceCard before its countdown. No extra speech needed. Otherwise the student cannot distinguish the stated condition from the method fault. The headline count 6,319 omits the 14 spaces joining scenes. The same parser convention used in brief 177 gives 6,333. Update the count and estimate, without changing speech. With the same holds, add 1.05 s to the headline estimate. Reports: `checks/c-y11-ws-v01-learning-review.md` and `checks/c-y11-ws-v01-science-check.md`.
+
+**c-y11-ws-v02:** 0 blockers, 2 should fix, 0 optional; 6,360 characters, about 569.1 s. Scene 2 is 726 narration characters and adds four controls, a validity definition and decomposition. Show the current control beside the apparatus, dim it as the next is named, then assemble the short PlanBoard recap after the causes. Keep the current case and mass visible. No speech or duration added. The headline count 6,345 omits the 15 spaces joining scenes. The same parser convention used in brief 177 gives 6,360. Update the count and estimate, without changing speech. With the same holds, add 1.13 s to the headline estimate. Reports: `checks/c-y11-ws-v02-learning-review.md` and `checks/c-y11-ws-v02-science-check.md`.
+
+**c-y11-ws-v03:** 0 blockers, 4 should fix, 0 optional; 6,331 characters, about 565.1 s. Scene 3 says turn the flame down after powder darkens. Darkening means decomposition has already contaminated the water-loss measurement. Stop heating and do not use that run to measure water content; restart with gentle heating after teacher review. Fund this by cutting "Managing risk isn’t a form you fill in once" and keeping its positive check-and-fix sentence. Scene 10 links an in-text data-sheet citation to a copper-sulfate SDS reference. Match the in-text claim and the reference entry to the same document, then show a separate SDS example if wanted. Do this on screen without extra speech. Feedback 1 says Q is "about four percent too high", while the graphic correctly says percentage points. Change speech to "about four percentage points high". Fund it by removing "Only" and "every time" from that feedback; do not change the data. The headline count 6,316 omits the 15 spaces joining scenes. The same parser convention used in brief 177 gives 6,331. Update the count and estimate, without changing speech. With the same holds, add 1.13 s to the headline estimate. Reports: `checks/c-y11-ws-v03-learning-review.md` and `checks/c-y11-ws-v03-science-check.md`.
+
+**c-y11-m1-v11:** 0 blockers, 1 should fix, 0 optional; 5,830 characters, about 529.4 s. The headline count 5,812 omits the 18 spaces joining scenes. The same parser convention used in brief 177 gives 5,830. Update the count and estimate, without changing speech. With the same holds, add 1.35 s to the headline estimate. Reports: `checks/c-y11-m1-v11-learning-review.md` and `checks/c-y11-m1-v11-science-check.md`.
+
+**c-y11-m1-v12:** 0 blockers, 2 should fix, 0 optional; 6,271 characters, about 562.2 s. Scenes 4 and 7 apply group 18 minus 10 and full outer s and p subshells to helium, despite showing He 1s2. Add the spoken exception "Helium has two" and use "full outer shell" for noble gases. Fund it by cutting the hook’s "So the table was sorting electrons all along" sentence. The main-group rule should not produce eight electrons for the displayed helium atom. The headline count 6,255 omits the 16 spaces joining scenes. The same parser convention used in brief 177 gives 6,271. Update the count and estimate, without changing speech. With the same holds, add 1.20 s to the headline estimate. Reports: `checks/c-y11-m1-v12-learning-review.md` and `checks/c-y11-m1-v12-science-check.md`.
+
+**c-y11-m1-v13:** 0 blockers, 2 should fix, 0 optional; 5,621 characters, about 510.0 s. Scene 2 defines radius by halving the distance between any two bonded atoms. Specify two identical bonded atoms for this introductory construction, and label 204 pm as the model distance from 2 × 102, not a measured Cl2 bond. Replace "two bonded atoms" with "two identical atoms bonded together" and cut "First, what are we measuring?" to fund it. Scene 3 replaces the nucleus label 11+ with +1, making sodium appear to lose protons, and then names that estimate effective nuclear charge. Keep 11+ on the nucleus; put +1 beside the screened outer-electron arrow labelled "core-charge estimate". In scene 7 replace "same net pull" with "same core charge". This is length-neutral and keeps root decision 15’s countable estimate without equating it to exact effective charge. Reports: `checks/c-y11-m1-v13-learning-review.md` and `checks/c-y11-m1-v13-science-check.md`.
+
+**c-y11-m1-v14:** 1 blockers, 0 should fix, 0 optional; 5,612 characters, about 509.0 s. Scene 2 introduces a mole and kJ/mol before the course has explained that term. Give a short plain meaning, for example a mole is a fixed large number of atoms, while retaining gaseous atoms and energy per mole. Fund this by cutting the second sentence of scene 10, which repeats the top-right/bottom-left examples. A learner should be able to say what the quoted energy is for. Reports: `checks/c-y11-m1-v14-learning-review.md` and `checks/c-y11-m1-v14-science-check.md`.
+
+**c-y11-m1-v15:** 2 blockers, 0 should fix, 0 optional; 5,608 characters, about 512.0 s. Scene 7 animates one Li atom and one water molecule producing Li+, OH- and H2. That creates a third hydrogen atom. Animate two metal atoms and two waters producing two metal ions, two hydroxides and one hydrogen molecule; use the same counts for Na and K. No extra speech. The written equations already use the correct counts. Root decision 17 requires current NSW school chemical-safety verification. The public NSW page links the chemical-specific rules to a staff login. Exact permissions, metal size, distances, screen requirements and indicator conditions could not be verified. Keep this demonstration wording on hold until the teacher/PM checks the current CSIS entries, or use the already offered approved-video route. No outside-school demonstration establishes NSW clearance. Reports: `checks/c-y11-m1-v15-learning-review.md` and `checks/c-y11-m1-v15-science-check.md`.
+
+**c-y11-m1-v16:** 1 blockers, 1 should fix, 0 optional; 5,625 characters, about 513.0 s. The required current NSW check of approved chloride solutions and dilute HCl loop cleaning could not be completed because the chemical-specific CSIS page requires staff access. The general public guidance supports risk assessment, but does not establish the named chemical concentrations or approval. Keep the practical wording on hold until the teacher/PM checks those exact entries. The blank-first method and no-flame-colour loop check are useful and should remain. Scene 1 says "Nothing is burning" while a Bunsen flame is burning fuel. Replace it with "The sample isn’t burning" and change the matching tag to "sample colours the flame". Fund the extra characters by removing "that same" before lilac. Reports: `checks/c-y11-m1-v16-learning-review.md` and `checks/c-y11-m1-v16-science-check.md`.
+
+**c-y11-m1-v17:** 0 blockers, 3 should fix, 0 optional; 6,249 characters, about 559.0 s. Scene 1 says the smoke alarm on the learner’s ceiling contains americium. That applies to ionisation alarms, not every smoke alarm. Replace "The smoke alarm on your ceiling" with "An ionisation smoke alarm" and label the painted alarm accordingly. This is shorter and preserves the alpha application. Scene 9 says technetium-99 M without explaining M, then scene 10 implies proton/neutron balance alone decides the radiation. Briefly explain that M marks a nucleus holding extra energy, and include nuclear energy in the origin comparison. Fund it by cutting scene 9’s generic first two sentences on human-made production; keep the explicit Co-59 neutron example and Lucas Heights link. Scene 11 says a six-hour half-life means Tc-99m is "soon gone". Replace that clause with "its activity falls quickly" and retain the stated definition that half the nuclei decay. This is shorter and avoids suggesting that one half-life removes the isotope. Reports: `checks/c-y11-m1-v17-learning-review.md` and `checks/c-y11-m1-v17-science-check.md`.
+
+Plates: 27 painted candidates (including the optional empty lidded crucible) and 2 translation-only K/Sr flame copies saved. Manifest `assets/brief178-manifest.json`, per-design provenance and native/phone composites, state overlays, colour/sample contacts and placement studies in `assets/brief178-qa/`. All new paintings remain on edge/margin QA hold; crucible, sample and trough canvases do not match the requested common canvases, lithium does not register with the shared burner, and the screen is too hazy. Translation pixels are unchanged, but existing burner outline differences remain. Every reused painted filename resolves; the suffix-only inventory hit resolves to the existing blue-lit crucible. Shared components are in `assets/brief178-build-items.md`. No plate approval. Exact voiced playback, listening and v15/v16 NSW staff-only safety checks remain pending. No design edits, speech, sub-agents or commits.
+
+
+
+## Codex hand-in: brief 194 / brief 174, 6 November 2026
+
+Plan allowance: 120000 credits. Plan allowance less cumulative billed characters: 120000. bio-m8-g03: generation stopped on q1-question. No retry.
+
+Wave: stopped.
+
+bio-m8-g03: partial-stopped.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+
+## Codex hand-in: brief 194 / brief 174, 6 November 2026
+
+Plan allowance: 120000 credits. Plan allowance less cumulative billed characters: 117945. chem-m5-g02: dry-run character count differs from the design
+
+bio-m8-g03: measured, 5532 characters, 2055 credits used, 11 scenes generated, 4 reused, 458.23 seconds. Report: docs/production/claude-pm/lessons/m8g03/measured/measured-report.json.
+
+bio-m8-p01: skipped-recording-check.
+
+Wave: stopped.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+
+## Owner queue change, 6 November 2026
+
+194, then 185 (axis-label fix only, no render), 186, 180 to 184, then 187 to 193 after 179. Brief 194 is running serially. No d01 v2 render has started. Further Maths Google requests under brief 165 are paused; preserve existing takes and measured data. Use the post-19:00 Sydney Google allowance for ready Year 11 Biology and Physics designs instead. Exact lesson eligibility and request counts must pass before speech.
+
+
+## Codex hand-in: brief 194 / brief 174, 6 November 2026
+
+Plan allowance: 117945 credits. Plan allowance less cumulative billed characters: 73549. Cycle complete.
+
+bio-m8-g03: already-measured.
+
+bio-m8-p01: skipped-recording-check.
+
+chem-m5-g02: skipped-character-count-mismatch.
+
+bio-m8-p02: skipped-recording-check.
+
+chem-m8-p03: measured, 6277 characters, 8818 credits used, 16 scenes generated, 1 reused, 510.80 seconds. Report: docs/production/claude-pm/lessons/m8p03/measured/measured-report.json.
+
+bio-m8-b06: skipped-recording-check.
+
+chem-m8-c04: measured, 6288 characters, 6213 credits used, 18 scenes generated, 1 reused, 508.80 seconds. Report: docs/production/claude-pm/lessons/m8c04/measured/measured-report.json.
+
+bio-m8-b07: skipped-recording-check.
+
+chem-m8-p04: measured, 5806 characters, 5731 credits used, 17 scenes generated, 1 reused, 457.77 seconds. Report: docs/production/claude-pm/lessons/m8p04/measured/measured-report.json.
+
+bio-m8-b08: skipped-recording-check.
+
+chem-m8-g02: skipped-character-count-mismatch.
+
+bio-m8-b09: skipped-recording-check.
+
+chem-m8-c05: measured, 5865 characters, 5790 credits used, 17 scenes generated, 1 reused, 475.20 seconds. Report: docs/production/claude-pm/lessons/m8c05/measured/measured-report.json.
+
+bio-m8-b10: skipped-recording-check.
+
+chem-m8-c06: measured, 6269 characters, 6194 credits used, 20 scenes generated, 1 reused, 531.20 seconds. Report: docs/production/claude-pm/lessons/m8c06/measured/measured-report.json.
+
+bio-m8-b11: skipped-recording-check.
+
+chem-m8-c08: measured, 6002 characters, 5927 credits used, 16 scenes generated, 1 reused, 490.67 seconds. Report: docs/production/claude-pm/lessons/m8c08/measured/measured-report.json.
+
+bio-m8-g01: measured, 5798 characters, 5723 credits used, 14 scenes generated, 1 reused, 485.20 seconds. Report: docs/production/claude-pm/lessons/m8g01b/measured/measured-report.json.
+
+chem-m8-p05: skipped-build-error.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+
+## Codex hand-in: brief 194 / brief 174, 6 November 2026
+
+Plan allowance: 73549 credits. Plan allowance less cumulative billed characters: 67389. Cycle complete.
+
+chem-m8-p05: measured, 6235 characters, 6160 credits used, 17 scenes generated, 1 reused, 502.63 seconds. Report: docs/production/claude-pm/lessons/m8p05/measured/measured-report.json.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+
+## Codex hand-in: brief 194 final tally, 6 November 2026
+
+bio-m8-g03: measured; 5532 narration characters; 4671 billed-character tally; 2055 reported credit cost; 11 scenes generated, 4 reused; 458.23 seconds; report: docs/production/claude-pm/lessons/m8g03/measured/measured-report.json.
+
+bio-m8-p01: skipped-recording-check; 5811 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m5-g02: skipped-character-count-mismatch; 5968 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Narration recount 5968; declared 5960, 5950..
+
+bio-m8-p02: skipped-recording-check; 5880 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-p03: measured; 6277 narration characters; 6202 billed-character tally; 2729 reported credit cost; 16 scenes generated, 1 reused; 510.80 seconds; report: docs/production/claude-pm/lessons/m8p03/measured/measured-report.json.
+
+bio-m8-b06: skipped-recording-check; 5669 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-c04: measured; 6288 narration characters; 6213 billed-character tally; 2736 reported credit cost; 18 scenes generated, 1 reused; 508.80 seconds; report: docs/production/claude-pm/lessons/m8c04/measured/measured-report.json.
+
+bio-m8-b07: skipped-recording-check; 5711 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-p04: measured; 5806 narration characters; 5731 billed-character tally; 2520 reported credit cost; 17 scenes generated, 1 reused; 457.77 seconds; report: docs/production/claude-pm/lessons/m8p04/measured/measured-report.json.
+
+bio-m8-b08: skipped-recording-check; 5737 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-g02: skipped-character-count-mismatch; 5794 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Narration recount 5794; declared 5785..
+
+bio-m8-b09: skipped-recording-check; 5929 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-c05: measured; 5865 narration characters; 5790 billed-character tally; 2546 reported credit cost; 17 scenes generated, 1 reused; 475.20 seconds; report: docs/production/claude-pm/lessons/m8c05/measured/measured-report.json.
+
+bio-m8-b10: skipped-recording-check; 5655 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-c06: measured; 6269 narration characters; 6194 billed-character tally; 2725 reported credit cost; 20 scenes generated, 1 reused; 531.20 seconds; report: docs/production/claude-pm/lessons/m8c06/measured/measured-report.json.
+
+bio-m8-b11: skipped-recording-check; 5912 narration characters; 0 billed-character tally; 0 reported credit cost; 0 scenes generated; Recording-stage check failed. See the per-lesson recording-check.log..
+
+chem-m8-c08: measured; 6002 narration characters; 5927 billed-character tally; 2606 reported credit cost; 16 scenes generated, 1 reused; 490.67 seconds; report: docs/production/claude-pm/lessons/m8c08/measured/measured-report.json.
+
+bio-m8-g01: measured; 5798 narration characters; 5723 billed-character tally; 2520 reported credit cost; 14 scenes generated, 1 reused; 485.20 seconds; report: docs/production/claude-pm/lessons/m8g01b/measured/measured-report.json.
+
+chem-m8-p05: measured; 6235 narration characters; 6160 billed-character tally; 2710 reported credit cost; 17 scenes generated, 1 reused; 502.63 seconds; report: docs/production/claude-pm/lessons/m8p05/measured/measured-report.json.
+
+Cumulative billed-character tally: 52611 of the 115,000 cap. No balance read. The earlier 2,055 G03 figure was the character-cost header, not the character count. G03 has 4,671 newly sent characters. The corrected tally uses character-count headers or sent characters; provider credit cost is kept separately. Cycle 1 checked through the last listed lesson. Human listening pending. Details: work/brief174/final194.json and spend.json. No design edits, full exports, sub-agents or commits.
+
+
+## Codex hand-in: brief 185, 6 November 2026
+
+Axis tick fix only, following the owner's no-render change. src/explainer/math/graphs.tsx now chooses round steps from 1, 2, 2.5 or 5 times powers of ten, starts at a step multiple, includes zero in range and removes floating-point label noise. Explicit xTicks/yTicks are unchanged. All 17,068 frames in the 16 scenes of the one registered maths lesson were checked for graph windows. Only d01 scenes 08 and 09 change: scene 08 x labels are -1.5, -1, -0.5, 0, 0.5; scene 09 labels run -4.5 to -2 by 0.5. Before/after sets: work/brief185/ticks-before-after.json. Six regression ranges, 1,000 random windows and four invalid-range checks pass: work/brief185/tick-checks.json.
+
+No stills, v2 render or new captions exported. The measured lesson and v1 MP4 hashes are unchanged. The saved v1 media check records 17,065 video frames against 17,068 planned, a 3-frame (0.1 s) difference; video 568.833333 s, audio 568.933 s. Whether v2 repeats it is untested because rendering was cancelled. Review: work/brief185/review.json. No narration or design edits, sub-agents or commits.
+
+Brief 185 type check: d01 and its shared imports pass with work/brief166/tsconfig.json. The full-project TypeScript attempt reached the default Node heap limit; no full-project pass is claimed.
+
+
+## Codex hand-in: brief 186, 6 November 2026
+
+23 revisions checked: 21 clean, 0 blockers, 2 should-fix cue findings. No source edits, speech, sub-agents or commits. Earlier reports are unchanged.
+
+- chem-y11-m1-v01: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v01-rev2-error-check.md.
+- chem-y11-m1-v02: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v02-rev2-error-check.md.
+- chem-y11-m1-v03: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v03-rev2-error-check.md.
+- chem-y11-m1-v04: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v04-rev2-error-check.md.
+- chem-y11-m1-v05: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v05-rev2-error-check.md.
+- chem-y11-m1-v07: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v07-rev2-error-check.md.
+- chem-y11-m1-v08: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v08-rev2-error-check.md.
+- chem-y11-m1-v09: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v09-rev2-error-check.md.
+- chem-y11-m1-v10: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v10-rev2-error-check.md.
+- chem-y11-m1-v11: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v11-rev2-error-check.md.
+- chem-y11-m1-v12: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v12-rev2-error-check.md.
+- chem-y11-m1-v13: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v13-rev2-error-check.md.
+- chem-y11-m1-v14: Scene 2 still says the sodium equation and departing electron appear on the third sentence. The added mole explanation makes the third sentence the gaseous-atoms definition; the sodium example is now the fourth. Retie this change to the existing phrase "For sodium". No added speech or time.. Report: docs/production/claude-pm/checks/c-y11-m1-v14-rev2-error-check.md.
+- chem-y11-m1-v15: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v15-rev2-error-check.md.
+- chem-y11-m1-v16: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v16-rev2-error-check.md.
+- chem-y11-m1-v17: clean. Report: docs/production/claude-pm/checks/c-y11-m1-v17-rev2-error-check.md.
+- chem-y11-ws-v01: Scene 6 lists the crosses on "specific" and "reasoned" before the number-line action on "gives no amount", but the amount phrase comes first in the speech. "Reasoned" is no longer spoken there. Shade the number line on "gives no amount", cross the specific check on "isn't specific enough", then cross the reasoned check on "no reason". Keep the ticks and final hypothesis test. No added speech or time.. Report: docs/production/claude-pm/checks/c-y11-ws-v01-rev2-error-check.md.
+- chem-y11-ws-v02: clean. Report: docs/production/claude-pm/checks/c-y11-ws-v02-rev2-error-check.md.
+- chem-y11-ws-v03: clean. Report: docs/production/claude-pm/checks/c-y11-ws-v03-rev2-error-check.md.
+- bio-y11-fa2-v10: clean. Report: docs/production/claude-pm/checks/y11b-fa2-v10-rev4-error-check.md.
+- bio-y11-fa2-v29: clean. Report: docs/production/claude-pm/checks/y11b-fa2-v29-rev4-error-check.md.
+- phys-y11-fa0-v05: clean. Report: docs/production/claude-pm/checks/p-y11-fa0-v05-rev3-error-check.md.
+- bio-y11-fa1-v01: clean. Report: docs/production/claude-pm/checks/y11b-fa1-v01-rev3-error-check.md.
+
+The chlorine result recalculates to 35.4846, then 35.48. Counts and estimates agree; all estimates stay below 570 seconds. Root decision 33's safety fallbacks are present; no new chemical-specific school approval is claimed. The phloem micrograph entry and ring order pass at source, with its short measured interval still to check in the voiced build. Biology FA1 v01 joins the Google queue after reset. Source-clean Biology FA2 and Physics FA0 may proceed to plates and Google voicing. Source-clean Chemistry proceeds to plates; course reviews precede voicing. Existing art QA holds and human listening remain. Evidence: work/brief186/audit.json, recalculation.json, opening-pairs.json and validation.json.
+
+
+## Brief 179: source reviews (6 November 2026)
+
+**c-y11-m1-v18:** 0 blockers, 3 should fix, 0 optional; 5,976 characters, about 536 s. One trap costs marks every year is an unsupported recurring exam-outcome claim. Replace that opener with Here is the trap. This is shorter and keeps the actual contrast. The balance-check sentence cues are stale. In scene 4 the sixth sentence asks which element has ninety protons, before thorium is identified; the spoken check starts on Check both rows. In scene 14 the third sentence identifies neptunium; the spoken check is the next sentence. Retie the band checks to Check both rows and Check, with no speech change. Root decision 26 chooses gamma as gamma alone, but the source still prints 0/0 gamma and leaves the choice open. Apply the accepted notation throughout. Keep zeros in the balance rows if useful; no speech change. Reports: `checks/c-y11-m1-v18-learning-review.md` and `checks/c-y11-m1-v18-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v19:** 0 blockers, 3 should fix, 0 optional; 6,377 characters, about 566 s. The real rusted nail is labelled rust: Fe2O3 and scene 9 asks for the formula of rust. Rust is hydrated iron oxide/oxyhydroxide, not a pure anhydrous Fe2O3 sample with one fixed formula. Retain the nail as context but make Fe2O3 the iron(III) oxide example, not the formula of rust. Scope the task and spoken labels consistently, funded by shortening the hook transition. Noble gases do not form ions at all contradicts v14's ionisation-energy teaching and known noble-gas ions. Use noble gases usually stay neutral and the same screen tag. This is shorter and does not add a new objective. On the fifth sentence writes Al2O3 while that sentence is still finding the common charge of six. The two-Al/three-oxide count comes in sentence six and the formula in sentence seven. Reveal the formula on The formula is, after the ion counts, with no speech change. Reports: `checks/c-y11-m1-v19-learning-review.md` and `checks/c-y11-m1-v19-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v20:** 1 blockers, 1 should fix, 0 optional; 5,649 characters, about 512 s. The lesson calls compositional prefixes on ionic compounds incorrect IUPAC names and asks students to correct copper dichloride. IUPAC explicitly accepts iron dichloride/iron trichloride alongside the Stock names; the blanket rule and this error task reject a valid naming system. Frame the taught route as Stock naming for these ionic examples. Change the copper mistake to copper(I) chloride for CuCl2, so the correction tests the actual +2 charge. Remove the blanket crosses on valid alternative names and match the memory aid. Cut scene 11's unsupported most-common-mistake sentence to fund the framing. Source: https://iupac.qmul.ac.uk/BriefGuide/inorganic.html The rust nail is again equated with Fe2O3. Apply v19's correction here: name the iron(III) oxide example without giving real rust one pure anhydrous formula. Reports: `checks/c-y11-m1-v20-learning-review.md` and `checks/c-y11-m1-v20-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v21:** 0 blockers, 0 should fix, 0 optional; 6,330 characters, about 563 s. No material source finding. Reports: `checks/c-y11-m1-v21-learning-review.md` and `checks/c-y11-m1-v21-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v22:** 1 blockers, 1 should fix, 0 optional; 5,885 characters, about 530 s. The chosen halite crystal is said to be hard and not easily scratched. Halite has Mohs hardness about 2 to 2.5 and is a soft mineral. Keep it for cleavage/brittleness, but remove the scratch-resistance claim and explain resistance to moving ions without claiming every ionic crystal is scratch-hard. The exam-trap opener can be cut to fund any short contrast. Sources: https://commonminerals.esci.umn.edu/minerals-g-m/halite and https://mineralseducationcoalition.org/minerals-database/salthalite/ The design calls the dilute NaCl/DC carbon-electrode test safe for students, but the requested chemical-specific NSW school check is not established by the public general safety page or the saved CSIS curriculum-support text. Keep that practical wording on hold until teacher/PM confirmation of the exact school method, or use an approved-demonstration/secondary-source framing. The public NSW page requires risk assessment but does not approve this exact setup. Remove the unqualified safe claim; cut the scene 5 marks opener to fund a teacher-method condition. Source: https://education.nsw.gov.au/teaching-and-learning/curriculum/science/science-safety-and-compliance Reports: `checks/c-y11-m1-v22-learning-review.md` and `checks/c-y11-m1-v22-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v23:** 0 blockers, 2 should fix, 0 optional; 5,951 characters, about 529 s. Four groups cannot fit flat gives the wrong reason for tetrahedral geometry: four directions can lie in a plane, but spreading them in three dimensions reduces repulsion further. Say Four groups get furthest apart in three dimensions. This is shorter and matches the repulsion cause taught in scene 4. Every electron is held in a bond or lone pair omits core electrons. H2O has ten total electrons but eight valence electrons in its two bonds/two lone pairs. Scope the sentence and the matching handoff tag to outer electrons, and carry that tag into v24. Cut That is one reason to fund the short wording change. Reports: `checks/c-y11-m1-v23-learning-review.md` and `checks/c-y11-m1-v23-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v24:** 0 blockers, 2 should fix, 0 optional; 5,614 characters, about 502 s. The opening already contains the bent wire from v23, and only connects its leads; it does not show the narrated bending action. Say This copper wire has been bent into a loop, treating it as the current case. This is shorter and preserves the handoff and plate; the later layer slide still explains bending. Carry v23's outer-electron wording into the opening tag and the molecular comparison. Core electrons are not bonding or lone-pair valence electrons. The source should not call every molecular electron a bond/lone-pair electron; use outer electrons without adding a caveat or a new scene. Reports: `checks/c-y11-m1-v24-learning-review.md` and `checks/c-y11-m1-v24-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v25:** 0 blockers, 4 should fix, 0 optional; 5,770 characters, about 515 s. The general network definition and scratch rule require a 3D network through the whole crystal, then graphite is taught as a layered covalent network whose sheets slide without breaking the in-sheet bonds. Define networks as extended bonding in layers or in 3D, and scope the scratch-hardness explanation to 3D networks. The shorter definition funds the qualifier. Every outer electron in SiO2 is said to be held in a bond. Each two-bonded oxygen also has two lone pairs. Say the outer electrons are not free to move through the crystal; this is shorter and gives the required conduction reason without a false bonding count. The table is headed melting and gives diamond/graphite very high (above 3500 C), despite the author note that they do not melt at normal pressure. Follow root decision 29 without calling this a melting point: label the carbon cells does not melt at normal pressure; carbon network survives to extreme heat, and keep any above-3500 figure explicitly about graphite sublimation/heating behaviour. Fund the short condition by cutting the scene 5 trap opener and like diamond. Do not imply that diamond itself remains diamond to that temperature. The SiC practice treats its ordinary thermal behaviour as melting, but SiC sublimes/decomposes near 2700 C at normal pressure. Ask why it is very hard and heat-resistant, and explain the strong network bonds, rather than inventing a normal-pressure melting point. This wording is shorter. Source: https://www.inchem.org/documents/icsc/icsc/eics1061.htm Reports: `checks/c-y11-m1-v25-learning-review.md` and `checks/c-y11-m1-v25-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v26:** 0 blockers, 3 should fix, 0 optional; 5,799 characters, about 516 s. Methane has no polar bonds at all contradicts v23's slightly polar C-H bonds. The molecule is non-polar because the bond dipoles cancel. Use methane is non-polar; this is shorter and retains dispersion-only intermolecular forces. Equal electron counts do not establish that dispersion forces are matched: atom identity, cloud polarizability and shape also differ. Keep the three 18-electron examples and the 26-electron task, but call them comparisons rather than a fair test that isolates each extra force. Remove the therefore-similar-dispersion causal claim and With the same electrons, the extra forces decide. The existing total-attraction explanation still answers the question; the edits are shorter. One of the most common exam mistakes is an unsupported prevalence claim. State the actual correction, for example The O-H bonds stay intact, and retie the crossed-chip cue to intact. This is shorter. Reports: `checks/c-y11-m1-v26-learning-review.md` and `checks/c-y11-m1-v26-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**c-y11-m1-v27:** 0 blockers, 2 should fix, 0 optional; 5,576 characters, about 500 s. The energy trade is used as a general test for whether a substance dissolves, while mixing itself is only a little grey tag. Dissolution can be driven by mixing even when it absorbs energy. Present the attraction comparison as a first prediction rather than the deciding test; remove little from the mixing tag. Keep the energy/entropy terms in author notes and cut the repeated scene 10 trade sentence to fund a short statement that mixing also helps particles spread. Source: https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process An ion can polarise a non-polar hexane molecule; the attraction is not only dispersion. Show its charge distorting the nearby cloud and say these attractions are too weak to pull NaCl ions apart. No extra force name is needed. Cut the final conductivity recall to fund the short explanation; it was already taught in v22. Reports: `checks/c-y11-m1-v27-learning-review.md` and `checks/c-y11-m1-v27-science-check.md`. Physical-reference access gaps are stated in the science report; no recorded approval claimed.
+
+**Plates:** 13 new plate requests remain pending the designs’ stated review-pass condition. `assets/brief179-manifest.json`, `assets/brief179-qa/README.md` and per-design provenance record every request and reuse finding. No new image, speech, design edit, render or commit. Coverage: `checks/brief179-module1-coverage.md`; arithmetic, cue/order, source hashes and site evidence under `work/brief179/`. Fourteen confirmed, deduplicated local-HTML corrections appended to `site-corrections-chem-y11.md`.
+
+
+## Brief 180: source reviews (6 November 2026)
+
+**c-y11-m2-v01:** 1 blockers, 1 should fix, 0 optional; 5,993 characters, about 530.0 s. Root decision 3 requires a verified safe small-quantity method for the capped vessel. No exact quantities, headspace or current NSW approval are established by this design; small quantities alone does not establish a safe pressure rise. Use the root-approved no-gas-reaction fallback unless the teacher/PM verifies the exact method. Do not paint the pressurised bottle pair as an approved school method. Replace this beat within its present length. The visual says on O, the last word of the fourth sentence, but sentence four ends match; the spoken balanced equation ending O is sentence five. Retie the balanced-equation glow to the end of Two magnesium plus O two makes two M g O. No speech change. Reports: `checks/c-y11-m2-v01-learning-review.md` and `checks/c-y11-m2-v01-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v02:** 0 blockers, 1 should fix, 0 optional; 5,596 characters, about 500.0 s. The numbers table indexes A1 to scenes 13/14 and A2 to 15/16, but the actual question/feedback pairs are 14/15 and 16/17. It also places the opening ribbon in 17 rather than handoff 18. Update the scene references; no speech or timing change. The memory-aid check describes its line as scene 13 correctly. Reports: `checks/c-y11-m2-v02-learning-review.md` and `checks/c-y11-m2-v02-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v03:** 0 blockers, 1 should fix, 0 optional; 5,699 characters, about 506.0 s. The rule one mole of any element has mass equal to its relative atomic mass must specify atoms. One mole of O2 is 32.00 g, as scene 5 correctly teaches, not oxygen Ar = 16.00 g. Say one mole of atoms of an element and match the rule card. Fund the few added words by cutting Here is the key fact. Keep the molecular-element example. Reports: `checks/c-y11-m2-v03-learning-review.md` and `checks/c-y11-m2-v03-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v04:** 0 blockers, 3 should fix, 0 optional; 6,349 characters, about 555.0 s. The burette contains hydrogen plus water vapour, but 42.2 mL is presented as pure hydrogen at the room pressure. The author note knows the uncorrected wet gas biases MM low by about 3%. Make the approximation visible beside the result (uncorrected gas collected over water), or provide consistently corrected hydrogen data. Do not silently move measured wet-gas readings into a dry-H2 calculation. No partial-pressure derivation is needed here and an on-screen tag adds no speech. The liquid-column pressure also means room pressure alone is not automatically the collected gas pressure; equalise levels or identify that approximation in the method. 0.272 divided by the printed rounded 4.58e-3 is 59.39, which rounds to 59.4, while the unrounded n = 0.140/30.6 gives 59.4514, hence 59.5. Carry the unrounded value and make that explicit, as v03 already does, or retain sufficient guard digits in the divisor. No speech change. On the third sentence pulses the n tag while sentence three still says the mass is easy. Pulse it on The hard part is the moles (sentence four), with no speech change. Reports: `checks/c-y11-m2-v04-learning-review.md` and `checks/c-y11-m2-v04-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-ws-v04:** 0 blockers, 3 should fix, 0 optional; 5,863 characters, about 520.0 s. The stated first three columns are mass, start and end. With A=mass, B=start, C=end, volume must be D=B2-C2, moles E=D2/24790 and molar mass F=A2/E2. The printed C2-D2, E2/24790 and A2/F2 use a different, unexplained column map and would reference the wrong cells (including a self-reference). Lock one explicit map and correct the three formula bars. No speech change. The origin is called a real point, but no zero-mass blank was measured in the five-run table. Call it the model-predicted origin, and state that the line is constrained through zero on that physical assumption. Do not invent an observed blank. No extra speech needed. 40.4 divided by 0.040 is 1010, not the displayed 1009. The spreadsheet gradient is 1009.1 from all four good runs; distinguish that fit from the rounded reading-off triangle, or show sufficient guard digits (40.364 at 0.040). Both give MM about 24.6, so no speech change. Reports: `checks/c-y11-ws-v04-learning-review.md` and `checks/c-y11-ws-v04-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-ws-v05:** 0 blockers, 3 should fix, 0 optional; 6,433 characters, about 571.2 s. Class 2 lost 0.860 g for a 2.50 g sample, so with the stated per-difference 0.02 g limits its conservative relative uncertainty is 0.02/0.86 + 0.02/2.50 = 3.13%, not class 1's 3.02%. Its interval is about 33.3 to 35.5%, not 33.4 to 35.4. The verdict still holds: it does not reach 36.1. Use the actual class-2 loss; about three percent narration can remain. The author range check also treats the shared initial gross reading as independent in the two differences. The summed interval may be retained as a conservative bound, but is not the attainable exact range from the three raw readings. The estimate here covers the stated balance-reading limits, not every source of measurement uncertainty. A gap beyond those limits is a reason to investigate method bias or missing uncertainty, not proof of systematic error by itself. Keep the known uncovered-cooling evidence and the one-short-heating evidence as reasons for those diagnoses. Scope the verdicts to the stated limits; the root-approved cut is the approximately 150-character add-percentage-uncertainties rule if any speech is added. Mark one-last-digit as the stated school estimate, not a universal instrument specification. The joined-scene narration count is 6,433, not the headline 6,417; the difference is 16 inter-scene spaces. Update the count and add 1.20 s to the same-holds estimate. No speech change. This puts the same-holds estimate near 571.2 s. Use root decision 5's named cut (the add-percentage-uncertainties rule, about 150 characters) if measured timing or another repair would exceed the cap. Reports: `checks/c-y11-ws-v05-learning-review.md` and `checks/c-y11-ws-v05-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v05:** 0 blockers, 2 should fix, 0 optional; 5,769 characters, about 524.1 s. The printed 0.0500 divided by 0.0100 equals 5.00, not 4.99. The unrounded copper-sulfate amount 1.60/159.6 gives 4.9875, which correctly rounds to the spoken 4.99. Carry that value and show enough guard digits or explicitly mark the displayed amounts as rounded. No speech change. The joined-scene narration count is 5,769, not the headline 5,754; the difference is 15 inter-scene spaces. Update the count and add 1.13 s to the same-holds estimate. No speech change. Reports: `checks/c-y11-m2-v05-learning-review.md` and `checks/c-y11-m2-v05-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v06:** 0 blockers, 3 should fix, 0 optional; 5,687 characters, about 517.2 s. The printed 3.00 times 2.016 equals 6.048, hence 6.05 g to three significant figures, while the unrounded route gives the intended 6.044 g, hence 6.04. Keep the unrounded amount through the final multiplication and identify rounded display values, without changing speech. Coefficient counts molecules is too narrow for the general rule: aluminium coefficients count atoms and ionic products count formula units. Use particles (molecules, atoms or formula units), consistent with m2-v01 and the other examples. No speech addition. The joined-scene narration count is 5,687, not the headline 5,671; the difference is 16 inter-scene spaces. Update the count and add 1.20 s to the same-holds estimate. No speech change. Reports: `checks/c-y11-m2-v06-learning-review.md` and `checks/c-y11-m2-v06-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-ws-v06:** 0 blockers, 4 should fix, 0 optional; 5,640 characters, about 513.1 s. Constant mass plus white colour supports dehydration under the chosen conditions; it does not prove that all water left or uniquely identify copper sulfate. White copper-sulfate monohydrate is also reported by the cited primary database. Replace ruled-out crosses and categorical identity/completion conclusions with evidence supporting or weakening each explanation. A non-integer average alone also does not prove a mixture. Keep the known hydrate/source evidence, crust and fresh-sample prediction as the support for the proposed mixture; do not teach a generic non-integer-means-mixture rule. Replace the existing assertions within their current length. The printed 0.0499 divided by 0.0100 equals 4.99, not 4.97. The correct fresh calculation carries 0.8975 g water and 1.6025 g residue, giving 4.96583. Show those guard digits or state that later rows use the unrounded amounts. Rounding both masses upward to 0.898 and 1.603 also makes the displayed total 2.501 g. The spoken 4.97 is correct and can stay. These class results are an illustrative story in the author notes, not a cited set of measurements by an identified class. Mark the old/fresh data as illustrative on screen so primary-versus-secondary evidence teaching does not pass invented results off as collected primary data. No speech addition. The joined-scene narration count is 5,640, not the headline 5,625; the difference is 15 inter-scene spaces. Update the count and add 1.13 s to the same-holds estimate. No speech change. Reports: `checks/c-y11-ws-v06-learning-review.md` and `checks/c-y11-ws-v06-science-check.md`. Exact voiced review and human listening remain pending.
+
+**c-y11-m2-v07:** 0 blockers, 2 should fix, 0 optional; 5,699 characters, about 518.1 s. 0.206 times 32.00 equals 6.592, which rounds to 6.59 g, not the printed 6.58. The unrounded 0.20568 mol gives the intended 6.582 g and conservation total 16.582 g. Keep the unrounded amount through the multiplication, with guard digits or a rounded-display tag. No speech change; the spoken 6.58 is correct. The joined-scene narration count is 5,699, not the headline 5,684; the difference is 15 inter-scene spaces. Update the count and add 1.13 s to the same-holds estimate. No speech change. Reports: `checks/c-y11-m2-v07-learning-review.md` and `checks/c-y11-m2-v07-science-check.md`. Exact voiced review and human listening remain pending.
+
+**Plates:** 15 new request records pending the exact designs’ review-pass condition. `assets/brief180-manifest.json`, `assets/brief180-qa/README.md` and per-design provenance preserve requests and reuse paths. New painting, speech, design edits, renders and commits: none. Independent arithmetic and official data-sheet screenshots are in `work/brief180/`. Site corrections added: 7; exact-text checks that did not match are explicitly not logged.
+
+## Codex hand-in: brief 195 Revision 5 review, 6 November 2026
+
+Reports: `checks/m-a12d01-rev5-learning-review.md` and `checks/m-a12d01-rev5-maths-check.md`. Independent SymPy and numerical checks: `work/brief195/calculations.json`; source, counts and cue checks: `work/brief195/audit.json` and `mechanical-audit.json`. Result: 0 blockers, 4 should fix, 1 optional. The memory summary must distinguish the moved tangent from the slope at the same x; the negative-a key note needs its positive-k scope; scene 5 silently resets one half to two before the mirror; review fields still point to old generic reports. The title annotation is 82 characters but the title is 81. All derivatives, numerical answers and bold-cue ordering pass. Source remains unchanged. Root's wider scene-5 window and dimmed mirror readouts were applied in the review, so those are not reported as open faults.
+
+Plates: root dropped both new flasks. Reuse the existing Biology straight-neck clear/cloudy pair. Only the field and two rod-cell sprites remain requested. `assets/ma12-d01-provenance.json` records those three as pending, with no generated-image or QA pass claim: the design's asset brief requires the learning and maths reviews to pass before painting, and these findings remain open. References and existing placeholders were inspected in `work/brief195/reference-sheet.png`. No design edits, new speech, maths-kit build, d01 render, sub-agents or commits.
+
+
+## Brief 180 count-method correction, 6 November 2026
+
+I withdrew the five count-only findings: the headlines use the sum of scene strings, while I had added inter-scene spaces. That was a review error. No extra timing is required for those separators. The corrected total is 1 blocker and 18 should fix, replacing the earlier total of 23 should fix. Other science and cue findings stand. The reports and results are corrected, with before-copies in `work/brief180/count-correction-before/` and the correction record in `work/brief180/count-correction.json`. The ws-v05 source estimate is 570 s, not 571.2 s. Measured timing is still pending.
+
+- c-y11-ws-v05: 6,417 scene-sum characters; 6,433 joined characters; about 570 s; 2 should fix remain.
+- c-y11-m2-v05: 5,754 scene-sum characters; 5,769 joined characters; about 523 s; 1 should fix remain.
+- c-y11-m2-v06: 5,671 scene-sum characters; 5,687 joined characters; about 516 s; 2 should fix remain.
+- c-y11-ws-v06: 5,625 scene-sum characters; 5,640 joined characters; about 512 s; 3 should fix remain.
+- c-y11-m2-v07: 5,684 scene-sum characters; 5,699 joined characters; about 517 s; 1 should fix remain.
+
+The m2-v06 design has changed since its original review; the corrected report retains the original reviewed hash and does not approve the changed source.
+
+
+## Brief 196: b06 local repair checked, expanded work in progress (6 November 2026)
+
+B06 v2: `out/explainer/Explainer-bio-m7-b06/Explainer-bio-m7-b06-v2.mp4`, 471.033 s container/audio, 14,129 encoded video frames versus 14,131 planned. The video stream ends 67 ms before the audio during static notes; exact packet-length cause is untraced, and no narration/caption is cut. Sheet: `work/brief196/v2-sheet.jpg`; 120 encoded samples have zero icon/blank flags and all four boards show house fonts and complete images. All 30 frozen inputs, including v1, match. Captions exported (157 cues). Zero missing disk paths; the old font loader allowed errors/timeouts to release rendering. New asset/font preflight and per-frame decoding fail on load errors; direct lesson bundles and a memory gate resolved reproduced memory pressure. See `work/brief196/repair-notes.md` for cause limits and tests. B06b: verified actual uploaded v3 has no black ending, no re-render.
+
+The updated brief adds b10 and both original sessions. B10 has zero missing paths, 16 decoded resources, frozen original inputs, 162 exported caption cues, and v2 is rendering with concurrency 2. Other-session scans remain. Browser/Windows initialization both fail with the kernel-assets path error, including after reset, so authorized YouTube unlisting, upload, publishing and playlist readback are pending access. No live change claimed.
+
+
+## Brief 181: source reviews and asset inspection (6 November 2026)
+
+**c-y11-m2-v08:** 0 blockers, 1 should fix, 1 optional; 6,307 characters, about 563 s. The v07 excess-oxygen result becomes a useful question: which reagent runs out when both are limited? The recipe analogy explains complete reaction runs before the moles-over-coefficient rule is named. The magnesium case retains both initial masses, separates used and leftover magnesium, and closes with a mass-conservation check. Sodium/chlorine makes raw mole comparison fail; aluminium/sulfur and methane test two different wrong shortcuts. Retaining the equation and atomic masses on each question card supports transfer. The runs meter should represent stoichiometric capacity, not a literal count of microscopic batches. The memory aid follows its explanation. Keep the root-approved 4.0 g oxygen handoff and its display precision convention. Reports: `checks/c-y11-m2-v08-learning-review.md`, `checks/c-y11-m2-v08-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v09:** 1 blockers, 5 should fix, 0 optional; 6,174 characters, about 555 s. The opening is the previous flask and unresolved escaping-gas question. A boundary around the balance gives the mass-loss measurement meaning before prediction and observation are compared. Repeated readouts and a mass-time graph show why the class waits before recording. The headspace lens can explain a plausible shortfall, but must distinguish a possible mechanism from a measured cause. The spray example tests an opposite bias and the acid-limited example transfers the earlier limiting-reagent rule. All supplied conditions stay available in the attempts. The existing capped-reaction fallback is required, and the plug must not be taught as a vapour trap. Reports: `checks/c-y11-m2-v09-learning-review.md`, `checks/c-y11-m2-v09-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-ws-v07:** 0 blockers, 4 should fix, 0 optional; 6,266 characters, about 560 s. The preceding mass table and unfinished conclusion supply a concrete communication task. Claim, evidence and reasoning acquire meanings through the worked comparison rather than a detached writing acronym. Method limits are linked to improvements, and a second dataset makes students choose evidence rather than copy the first conclusion. Validity, reliability, accuracy and precision retain the established course definitions. The prediction/observation contrast and two brief feedback sequences support application. The water-loss case should retain probably, not make the size of a discrepancy alone prove a cause. Reports: `checks/c-y11-ws-v07-learning-review.md`, `checks/c-y11-ws-v07-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v10:** 0 blockers, 0 should fix, 0 optional; 5,672 characters, about 517 s. The roughly 50 mL calcium-chloride solution from the previous handoff motivates how much solute a portion carries. Identical sample windows explain concentration before c=n/V. Changing portion size at fixed concentration is explicitly contrasted with dilution, and the beaker-to-volumetric-flask comparison explains final solution volume. The three worked directions use units and retained intermediate quantities; both practice tasks include the needed masses or volumes. Formula-unit dots are explicitly counting representations. No source learning blocker or required copy change found. Keep the approximate-volume tag and build the new clear-liquid plate at native aspect. Reports: `checks/c-y11-m2-v10-learning-review.md`, `checks/c-y11-m2-v10-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v11:** 0 blockers, 3 should fix, 1 optional; 5,710 characters, about 520 s. The same concentration is expressed in units students will meet on labels, with each conversion explained through its numerator and denominator. The percent w/v example states its 100 mL basis, and the copper/nitrate examples apply mass concentration to ions using the correct molar masses. The evaporation case explains why a dissolved-solids residue measures total dissolved material rather than one ion. Practice changes the species and direction. The concluding generalisation must leave room for the separately defined mass-based ppm. A dry final residue needs an actually dry visual state. Reports: `checks/c-y11-m2-v11-learning-review.md`, `checks/c-y11-m2-v11-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v12:** 0 blockers, 3 should fix, 0 optional; 6,230 characters, about 555 s. The reconciled 250 mL flask with unknown mass turns c=n/V backwards into a preparation task. Choosing a stable known solid precedes the calculated mass, then actual 2.657 g and actual concentration replace a fictitious perfect target. Transfer, rinsing, meniscus and mixing each receive a reason. The error board is earned as its cards accumulate, and the wet-solid practice traces water mass to fewer carbonate moles. The long quantitative-transfer scene stays one causal operation, with narration cues for rinses and a film lens; exact playback still has to confirm reading load. Keep the approved v11 to v12 opening and root decision 16 actual-mass calculation. Reports: `checks/c-y11-m2-v12-learning-review.md`, `checks/c-y11-m2-v12-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v13:** 0 blockers, 5 should fix, 0 optional; 5,616 characters, about 507 s. The fixed number of representative solute dots explains dilution before algebra. Two equivalent routes, preserved amount and c1V1=c2V2, make the rearrangement intelligible. Stock rinse and a wet receiving flask are contrasted by whether they change transferred solute. The acid example stays a calculation with a technician/teacher strip and acid-to-water reason, not an instruction for a student to pour strong acid into a volumetric flask. Practice tests final volume and an unknown stock aliquot. Correct the crossed example and the dot label; preserve the aid and the condition that solute is unchanged. Reports: `checks/c-y11-m2-v13-learning-review.md`, `checks/c-y11-m2-v13-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v14:** 0 blockers, 0 should fix, 0 optional; 5,659 characters, about 510 s. The prepared carbonate solution now determines an unknown acid through a measured reaction volume. Methyl-orange states, a nearly finished reaction and a final drop explain the observable endpoint without importing Year 12 pH curves. Rough versus concordant runs have distinct jobs. The carbonate-to-acid 1:2 bridge is staged before the mean titre quotient. The rinse-error comparison keeps actual unknown-bottle concentration distinct from the diluted burette contents, while water in the receiving flask changes no reacting moles. The sulfuric-acid practice tests a fresh 1:2 direction. Net ionic symbols in the handoff are read as named ions in the next lesson. No required source correction found. Reports: `checks/c-y11-m2-v14-learning-review.md`, `checks/c-y11-m2-v14-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v15:** 0 blockers, 4 should fix, 0 optional; 5,571 characters, about 504 s. The bore-water question makes weighing a precipitate useful. One silver ion and one chloride ion forming each solid unit supplies enough meaning for the ionic equation before Module 3; formal spectator-ion cancellation is not required. The leftover-ion prediction explains excess, and transfer, washing and drying each protect the measured amount for a different reason. Constant-mass readings precede the calculation. Scene 8 changes from amount concentration to mass concentration in consecutive stages with one case retained, using v11 knowledge; build must reveal one result at a time. The MgCl2 attempt requires the taught ratio rather than a new method. Preserve the illustrative numbers, but repair method conditions below. Reports: `checks/c-y11-m2-v15-learning-review.md`, `checks/c-y11-m2-v15-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**c-y11-m2-v16:** 0 blockers, 1 should fix, 0 optional; 5,573 characters, about 504 s. The three equal-volume jars make mass independence surprising. The liquid/gas cube comparison removes particle size as the main cause, then wall hits introduce pressure. For the same volume, temperature fixes the average kinetic contribution per particle, so equal pressure requires equal count. The quarter-push/four-times-hit comparison is followable when separate per-hit and time-average meters remain visible; it is not an assertion of unequal average kinetic energy. Keep the source grey same-energy tag and pause between comparisons. Use push per hit rather than energy per hit, and do not require students to derive the square-root ratio. The numerical fallback is unnecessary at source stage, subject to exact playback. Conditions remain visible through molar-volume selection and gases-only practice. Repair the rigid-boundary explanation below. Reports: `checks/c-y11-m2-v16-learning-review.md`, `checks/c-y11-m2-v16-science-check.md`. Source findings are in those reports; listening remains pending.
+
+**Plates:** six new assets queued after urgent 196; none generated yet. V10 and v14 pass source review. The remaining art requests are geometrically unaffected by reported copy/calculation findings; use the loose-plug fallback. Manifest: `assets/brief181-manifest.json`; reuse/assembly inspection: `assets/brief181-qa/README.md`. Site log: 12 confirmed additions, two duplicates preserved. No design edits, speech, renders or commits for this brief.
+
+
+## Brief 165: 7 pm Biology/Physics continuation scheduled (6 November 2026)
+
+Windows task `LessonVideo-Brief165-BioPhysics-20261106-1900` is Ready for 19:00 Sydney, 6 November (`2026-11-06T19:00:00+11:00`), hidden and with start-when-available. It runs `work/brief165-bio-physics/worker.mjs`: Bio FA1 v01, Physics FA1 v01, Bio v02, Physics v02, Bio v03, then Bio v04 if the complete lesson fits. All six exact-source recording gates pass. There are 101 scenes but 96 unique uncached requests after the shared notes take is reused. The worker rechecks the current quota and reserves each full lesson below the 99-request cap, waits for other production work and memory, stops at the first generation/alignment/caption failure, and never retries a request. Preparation sent zero requests.
+
+Maths is paused. No prior maths worker or scheduled task was running; the old maths runners now stop on the pause marker. Saved maths takes are untouched. The shared Google timing adapter now separates a 10-second response countdown from the Biology design's additional two-second scene padding; local contract checks pass, with the old countdown behaviour retained. Physics reveals do not acquire a prediction countdown. Evidence: `work/brief165-bio-physics/worker-preflight.json`, `timing-check.json`, `schedule-readback.json` and the six source-check files. No source narration was edited. Actual generated timing, caption export, pronunciation, scene joins, built cue playback and human listening remain pending. The task uses the current logged-in Windows account and cannot run while the machine is off; its window expires before the next quota reset.
+
+
+## Brief 195: three painted assets delivered (6 November 2026)
+
+`public/assets/maths/ma12-microscope-field-v1.png`, `ma12-rod-cell-v1.png` and `ma12-rod-cell-dividing-v1.png` are generated. The field is empty; warm darker rods read against it at small size, and division has a connected central pinch. QA: `assets/ma12-d01-qa/`; provenance: `assets/ma12-d01-provenance.json`. Native canvases are 1254x1254, 1774x887 and 1983x793; no PNG was stretched or resampled. Sidecars give visible bounds and division scaling. Minor near-transparent alpha noise remains, so absolute zero-alpha margins are not claimed. The visible artwork has at least 14 percent margin, and no visible halo in inspected composites. The earlier blanket painting hold is superseded by the asset-specific clearance, `work/brief195/asset-clearance.md`: the four graph/copy/cue/evidence findings do not alter these sprites and remain open for Claude. Two new flasks remain dropped. No kit/scene edits, d01 render, speech or commits.
+
+
+## Brief 196: both local repairs checked (6 November 2026)
+
+B10 v2 is complete: `out/explainer/Explainer-bio-m7-b10/Explainer-bio-m7-b10-v2.mp4`, 480.766667 seconds, all 14,423 planned video frames. Sheet: `work/brief196/b10-v2-sheet.jpg`. All 120 samples and four boards inspected, no broken images or fallback serif seen; the 120-frame font probe reports zero flags. One sparse-frame flag is the existing header-only lead-in before its 3.040-second body cue. Source is preserved. All 29 frozen inputs match, and its 162-cue SRT matches the prior upload SHA. B06 remains checked with all 30 inputs unchanged. The old b10-rendering entry above is superseded.
+
+The other 33 videos from the two original queues are being scanned serially; no further re-renders. `work/brief196/replacement-package.json` contains both checked masters, matching captions and historical v1 metadata/settings for the authorized replacements. Browser/Windows tool initialization still blocks live access. Neither v1 has been unlisted, neither v2 uploaded/published, no playlist has changed, and no replacement link/readback exists. Full local details and limitations: `work/brief196/repair-notes.md`.
+
+
+## Brief 196: additional session defect found, chem-m6-g03 (6 November 2026)
+
+The queue-hash-matched v1 master of Titration Calculation Practice has broken-image icons and fallback serif text in its third-question section. The 120-frame scan flags 37 samples for serif fallback, including 28 with broken-image candidates, from 307.97 to 452.90 seconds. The 16-frame sheet and frame 9480 were visually inspected and confirm the fault. Evidence and full master SHA: `work/brief196/additional-defects.json`; sheet: `work/brief196/session-scans/chem-m6-g03/sheet16.jpg`. Report only, as directed by brief 196. No additional re-render or live change. The remaining session audit continues.
+
+
+## Brief 181: first three assets delivered (6 November 2026)
+
+The colourless-solution beaker, dry-salt basin and clear sample-bottle crop are saved in `public/assets/chemistry/` under their requested y11c names. Light/dark composites were inspected in `assets/brief181-qa/`. The bottle is an exact RGBA crop, no repaint or resampling: no dipper/pole connected pixels remain and all bottle pixels with alpha above 16 are retained. The dry basin retains its 1402x1122 native canvas, with the wet contents replaced by dry white residue. The beaker edit is native 1254x1254 rather than the requested 2048x2048; its appearance matches at uniform display scale, but pixel-identical outlines are not claimed. Original images are preserved. Provenance and sidecars record these qualifications. Three loose-plug flask states remain. Source findings, playback and listening gates remain as reported.
+
+
+## Brief 181: six assets handed in (6 November 2026)
+
+The three loose-cotton-plug flask states are now saved under the requested y11c names in `public/assets/chemistry/`, completing all six brief181 assets. The flask trio was inspected on paper/dark/white at 300 px, at600px, in midpoint overlays and on the actual balance. All share a1106x1422 native canvas; visible bounds differ by up to2native pixels, with no visible jump/double outline in the checked300px overlays. Pixel identity and absolute zero-alpha margins are not claimed. Fine fizz is visible at600px and subtle at 300 px; the planned coded motion remains necessary. Manifest/provenance/sidecars and `assets/brief181-qa/` record dimensions, hashes, reuse and qualifications. The first flask candidate was rejected for framing. Earlier beaker, dry-basin and bottle-crop deliveries stand. The20 source reports are complete, with1blocker,26should-fix and2optional findings still for Claude; no narration/design/scene edits, speech, render or commit.
+
+
+## Brief 182 source reviews, 6 November 2026
+
+**c-y11-m2-v17:** 0 blockers, 3 should fix, 0 optional. The unresolved syringe prediction leads to a particle-wall explanation before inverse proportion and its equation. The data logger gives the investigation a purpose: distinguish an ideal relationship from an illustrative dead-volume model. Worked volume changes retain the fixed conditions, and the final bath rig hands temperature change to v18. The model must stay illustrative rather than diagnosing a real apparatus from one drift pattern. Reports: checks/c-y11-m2-v17-learning-review.md and checks/c-y11-m2-v17-science-check.md.
+
+**c-y11-m2-v18:** 1 blockers, 3 should fix, 0 optional. The same syringe and bath make the changed variable concrete. Kelvin is justified by proportional reasoning, then a rigid vessel contrasts fixed volume with a movable boundary. The published-table substitution is a recording blocker, not a reason to remove secondary-data teaching. Preserve the existing sequence, question holds and final Kelvin application. Its estimated 566 seconds leaves little room for added speech; replace words within the existing scene budget. Reports: checks/c-y11-m2-v18-learning-review.md and checks/c-y11-m2-v18-science-check.md.
+
+**c-y11-m2-v19:** 0 blockers, 1 should fix, 0 optional. The four familiar relationships are recovered from one equation before students select compatible pressure, volume and temperature units. The oxygen and balloon examples stage amount and volume separately; the cooling comparison retains its initial result. Nitrogen then tests solving for amount and mass, while the final pressure task tests rearrangement. All calculations independently agree. No forced cut or additional caveat is needed for the rounded data-sheet molar-volume convention. Reports: checks/c-y11-m2-v19-learning-review.md and checks/c-y11-m2-v19-science-check.md.
+
+**c-y11-m2-v20:** 0 blockers, 5 should fix, 0 optional. Collecting gas answers the earlier mass-loss limitation. Prediction, measured volume-time readings and the final reacted-mass calculation connect observation with a balanced ratio. The supplied acid amount makes excess testable. The progress inset must describe collected gas rather than claim a uniquely measured chemical extent. Plateau, no chips left and excess acid work together as completion evidence. The doubled-charge drawing needs adequate syringe capacity. Reports: checks/c-y11-m2-v20-learning-review.md and checks/c-y11-m2-v20-science-check.md.
+
+**c-y11-m3-v01:** 0 blockers, 3 should fix, 0 optional. Observations motivate the question of whether substances have changed. Atom regrouping and next-scene tallies build conservation rather than treating balancing as a guessing rule. Five element chips are bookkeeping, not a literal aqueous mechanism. Existing staged products and tally cues support the reading load. Feedback must retain the evidential limit of temperature change for an unidentified dissolving solid. Reports: checks/c-y11-m3-v01-learning-review.md and checks/c-y11-m3-v01-science-check.md.
+
+**c-y11-m3-v02:** 0 blockers, 4 should fix, 0 optional. The common-multiple comparison explains why two and three require six before equation practice. Observation, word equation, formulas and coefficients have distinct jobs. The carbonate example needs its family scope, but no extra unrelated example is required. Actual scene 9 correctly treats a catalyst as changing the pathway; repair the contradictory author cue instead of rewriting that narration. Reports: checks/c-y11-m3-v02-learning-review.md and checks/c-y11-m3-v02-science-check.md.
+
+**c-y11-m3-v03:** 0 blockers, 4 should fix, 1 optional. A visible precipitate leads to dissolved ions, spectators and a net ionic equation. The grid asks students to predict and compare rather than merely watch labels. NAGSAG follows its purpose and has a dedicated hold plus later return. The shared card must retain the course exceptions while Year 11 narration can introduce a smaller usable set. The lead-water application needs a valid context; do not claim a trace drinking-water treatment from a concentrated classroom mixture. Reports: checks/c-y11-m3-v03-learning-review.md and checks/c-y11-m3-v03-science-check.md.
+
+**c-y11-m3-v04:** 0 blockers, 5 should fix, 0 optional. Observation comes before the combustion equations. The complete/incomplete contrast and equation ladder establish the product question before pentane practice. A half-molecule drawing is an explicit coefficient-ratio picture and retains 6.5; it need not be removed. Preserve the source scope and task conditions. The cold-dish demonstration still needs an exact approved method or checked footage. Reports: checks/c-y11-m3-v04-learning-review.md and checks/c-y11-m3-v04-science-check.md.
+
+**c-y11-m3-v05:** 0 blockers, 5 should fix, 1 optional. The acid-base comparison introduces the reaction before spectators and the symbolic summary. Scene 3 stages molecule, salt tag and spectator ions rather than showing all at once. Phenolphthalein supplies a qualitative visible endpoint, not an exact titration equivalence claim. The carbonate comparison explains the gas test and does not import held cultural content. Distinguish the insoluble carbonate reaction from an aqueous carbonate-ion equation. Reports: checks/c-y11-m3-v05-learning-review.md and checks/c-y11-m3-v05-science-check.md.
+
+**c-y11-m3-v07:** 0 blockers, 7 should fix, 2 optional. Four observations and rank strips answer one question about relative reactivity. Displacement is independent evidence, and merging strips makes the final order earned. The next lesson owns the deeper mechanism, so passivation and reference conditions belong in concise existing tags/author notes. Preserve the self-contained opening while v06 is held. The common school activity order is useful; do not describe it as an exact ordering of standard reduction potentials. Reports: checks/c-y11-m3-v07-learning-review.md and checks/c-y11-m3-v07-science-check.md.
+
+Module 2 coverage: all nine official stems have concrete draft teaching traces across 24 sources, with 22 example facets and one primary owner each. This is not a release/practical-completion pass. Current m2-v06 Revision 2 differs from the earlier reviewed source. Evidence: work/brief182/module2-coverage.json.
+
+Plates: new assets and detailed reuse-assembly QA remain in progress. No brief 182 plate is handed in yet. The source review is complete with one blocker, 40 should fix and four optional findings.
+
+
+### Brief 196 session audit complete, 6 November 2026
+
+Both b06/b10 v2 local repairs are checked. The 33 other queue-hash-matched session masters received 3,960 automated samples and 33 inspected sixteen-frame sheets. Confirmed extra defect: chem-m6-g03 Question 3 broken images and serif fallback, report only. All 15 b05 icon candidates are leaf false positives. All 25 sparse candidates were inspected; authored delays/transitions are distinct from asset failures. Full playback/listening is not claimed. Evidence: work/brief196/session-audit-handin.json. YouTube changes remain blocked by the kernel-assets computer-control error; this run has not unlisted or uploaded a video.
+
+
+### Brief 180 crucible set delivered, 6 November 2026
+
+Three matched copper-carbonate/crucible states saved to public/assets/chemistry: green unlit, green lit and black lit. Native 1024x1536, same portrait aspect as the 1280x1920 reference, no resampling. Paper/dark 300px and 600 px composites and overlays inspected; apparatus visually aligns, not pixel-identical. Faint low-alpha noise beyond the painted bounds is documented. Initial raw-preview halo finding was withdrawn after proper alpha compositing. Evidence: assets/brief180-qa/crucible-trio-metrics.json and assets/chem-y11-m2-v01-provenance.json. Eight other cleared unique plates remain pending; the two capped-bottle plates remain held for the method/fallback decision.
+
+
+### Brief 179 first four plates, 6 November 2026
+
+Rusty nail, red/black copper-oxide watch glasses and halite crystal delivered to public/assets/chemistry. Native sizes and alpha qualifications are in assets/brief179-manifest.json. Paper/dark/white composites at 400 px and the oxide-pair overlay were inspected. The first nail candidate was replaced because its margin was only 4.1%; the delivered version has 14.6% minimum painted margin. Nine plates remain in progress. Source findings, including practical wording, remain open.
+
+
+### Brief 179 plates complete, 6 November 2026
+
+All13 requested PNGs are in public/assets/chemistry with sidecars, per-design provenance and assets/brief179-manifest.json. Paper/dark/white400px QA inspected, plus oxide overlay and three-tube comparison. Native dimensions are retained. Conductivity pair is visually close but has up to6px native top variation, so exact-overlay acceptance is not claimed. Source findings remain open; no new speech, source edits or renders. Full qualifications: assets/brief179-qa/README.md.
+
+
+### Brief 182 burner geometry addendum
+
+The yellow-flame request cannot meet its doubled-height, fixed-burner and square-canvas conditions together. The inspected source leaves about600px usable flame height, while doubling needs about1162px. Reported in work/brief182/burner-canvas-constraint.json and the updated m3-v03 reports. New total: one blocker,41 should fix and four optional findings. Yellow plate remains pending a corrected specification; other plates continue.
+
+
+### Brief 180 cleared plates delivered, 6 November 2026
+
+All 12 cleared unique PNGs are saved in public/assets/chemistry, including the new Revision 2 water beaker. Native dimensions, alpha and pair-alignment qualifications are in assets/brief180-manifest.json, per-design provenance and assets/brief180-qa/. Burette/bath overlays, bicycle assembly and beaker-on-balance placement were inspected. The two capped gas-producing bottle plates remain held for the method or no-gas fallback. M2-v06 Revision 2 has artwork but still needs its own exact learning/visual review. No lesson source, narration or scene was edited.
+
+
+### Brief 182 first 11 new plates, 6 November 2026
+
+Eleven new PNG paths are delivered to public/assets/chemistry: sensor, four bung-flask states, two oxygen-test splints, two basin states and two copper-foil states. The acid-only and spent flask are byte-identical as requested. Hashes, native sizes, alpha and alignment qualifications and attachment coordinates are in work/brief182/assets-delivered.json and PNG sidecars. Paper/dark/white composites and matched-state overlays were inspected in assets/brief182-qa/. Prompt specifications are in work/brief182/plates-prompt-set.md. The earlier brief180 burette is now linked in assets/brief182-manifest.json. Eight v07 anchor plates await the coordinated v07/v08/v10 batch required by Module3 root decision16; the yellow burner is held for incompatible canvas/height constraints. No lesson source, narration or scene was edited.
+
+
+### Brief 183 source reviews, 6 November 2026
+
+chem-y11-m3-v08 (Revision 1): 6160 narration characters, about 548 seconds; two source reports in checks/c-y11-m3-v08-learning-review.md and -science-check.md; 0 blocker, 5 should fix, 0 optional. The measured series poses a cause question before radius and core charge are recalled. The first-ionisation dip is a useful surprise: students must consider the full usual ion, and stacked bars make successive removals visible. Preserve that accepted explanation while keeping its limit consistent. Passivation is explained as a barrier to contact, then the two questions apply a trend and critique an inference from a slow start.
+
+chem-y11-m3-v09 (Revision 1): 5585 narration characters, about 504 seconds; two source reports in checks/c-y11-m3-v09-learning-review.md and -science-check.md; 0 blocker, 2 should fix, 1 optional. The earlier electron-transfer picture earns the agent names before oxidation numbers solve a covalent case. Sulfate is worked before permanganate is predicted. Number badges and the non-redox precipitation contrast help students distinguish bookkeeping from real ionic charge. The two original questions require agent identification and a non-obvious chlorine oxidation number, with brief feedback.
+
+chem-y11-m3-v10 (Revision 2): 6400 narration characters, about 566 seconds; two source reports in checks/c-y11-m3-v10-learning-review.md and -science-check.md; 0 blocker, 1 should fix, 1 optional. Revision 2 starts from the actual aluminium observation and an ion lens. The bank makes the common multiple necessary before its counts become written multipliers. Atom and charge checks are staged, and the vanishing-electron trap explains why atom balance alone fails. Keep the real plates, bank, beam and purposeful stage changes. The demand-versus-received counter label is the main learning repair. Feedback stays short and the notes are separate from new reasoning.
+
+chem-y11-m3-v11 (Revision 1): 6210 narration characters, about 553 seconds; two source reports in checks/c-y11-m3-v11-learning-review.md and -science-check.md; 0 blocker, 2 should fix, 0 optional. The missing ion path motivates the explanation before electrode names are memorised. Electron and ion streams have distinct paths. A relative ladder and sea-level analogy make the reference requirement useful, then a new ranking question tests it. Keep the circuit, charge build-up and reference sequence. Distinguish voltage measurement from a loaded interval before showing visible electrode changes.
+
+chem-y11-m3-v12 (Revision 1): 6096 narration characters, about 542 seconds; two source reports in checks/c-y11-m3-v12-learning-review.md and -science-check.md; 0 blocker, 6 should fix, 0 optional. The empty reference ladder from v11 fills with actual course data. Grouped givens and separate substitution/result lines preserve the calculation stages. Positive and negative as-written cases precede acid and multiplier traps. The final aluminium/zinc comparison separates spontaneity from speed and matches v13 opening. Keep the selected examples and short feedback; repair the overbroad table/acid claims without adding a new objective.
+
+chem-y11-m3-v13 (Revision 1): 6011 narration characters, about 541 seconds; two source reports in checks/c-y11-m3-v13-learning-review.md and -science-check.md; 0 blocker, 3 should fix, 0 optional. The prediction creates a reason to ask why collisions fail. Rate is calculated from two graph intervals before the particle explanation, energy threshold and orientation are introduced separately, and a funnel combines them. The memory line is useful in later factor videos. The excess-acid magnesium application should retain the changing solid surface when explaining the slower rate. Scope the falling-rate note to these curves.
+
+chem-y11-m3-v14 (Revision 1): 6180 narration characters, about 556 seconds; two source reports in checks/c-y11-m3-v14-learning-review.md and -science-check.md; 0 blocker, 6 should fix, 1 optional. The limiting-chip prediction separates rate from yield before a controlled plan and digital logging. Equal thirty-second intervals make comparisons meaningful. Concentration and temperature each have evidence followed by a particle cause, with the shared control reused. The final question reverses which reactant limits, so it tests conditions rather than a slogan. Make the long-time endpoints visible and distinguish a possible cooling bias from the isothermal illustration.
+
+chem-y11-m3-v15 (Revision 1): 6103 narration characters, about 550 seconds; two source reports in checks/c-y11-m3-v15-learning-review.md and -science-check.md; 0 blocker, 2 should fix, 1 optional. The cube model explains exposed area before the powder curve. The catalyst comparison then gives observation, recovery/reuse and an alternative lower-barrier route. Keeping the curve fixed while its threshold moves contrasts directly with the preceding temperature video. The two applications transfer to zinc and a converter surface. Keep the warm-flask handoff, but temperature logging alone cannot isolate its rate contribution.
+
+chem-y11-m4-v01 (Revision 1): 6372 narration characters, about 570 seconds; two source reports in checks/c-y11-m4-v01-learning-review.md and -science-check.md; 0 blocker, 2 should fix, 0 optional. A temperature observation leads to system/surroundings and energy direction before the profile is built. The hill answers why an exothermic fuel needs ignition. The two arrow rules and the enthalpy-versus-temperature trap are purposeful, and a new relative-scale profile tests both differences. The short cold-pack feedback applies the system sign. Preserve this sequence and the named reserve cuts at the duration cap.
+
+chem-y11-m4-v02 (Revision 1): 6336 narration characters, about 567 seconds; two source reports in checks/c-y11-m4-v02-learning-review.md and -science-check.md; 0 blocker, 3 should fix, 0 optional. A doubled-water prediction earns the mass term before specific heat and the formula. Scaling one gram and one degree builds q=mcDeltaT, then two calorimeters distinguish water mass from whole-solution mass. The sign card separates a sample heat from molar enthalpy without teaching the next calculation. Keep the original attempts, grouped quantities and brief feedback. Apply the already chosen rounding convention consistently.
+
+Twenty reports: zero blockers, 32 should fix and four optional findings. Calculations, 47 atom/charge checks, current source hashes and exact cues are saved in work/brief183/. Module3 coverage traces 15 official stems across 14 designs and 28 facets. The remaining official stem is v06 on cultural hold, not completed coverage. Source fixes and exact practical methods remain open. No narration, design or scene was edited. All requested brief 183 plates are now delivered for inspection; the shared v07/v08/v10 batch follows Module 3 root decision 16, with native-size and margin qualifications.
+
+Briefs 182 and 183 plates (6 November): brief 182 has 23 unique requested paths delivered, zero pending and one yellow-flame canvas conflict held. Brief 183 has all 19 new plates delivered, plus shared dependency references, in assets/brief183-manifest.json. All eight galvanic combinations were inspected on paper and dark boards; strip-top and display coordinates are recorded. Native dimensions, up to two pixels of galvanic canvas-width difference, shorter exposed strips and inherited trough side margins are explicitly qualified for designer acceptance. No recording or playback approval is implied.
+
+
+### Brief 184, 6 November 2026
+
+chem-y11-m4-v03 (Revision 1): 5999 narration characters, about 542 seconds; checks/c-y11-m4-v03-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The carried9.78 kJ result makes the missing-energy question concrete. Moles, sign and reference comparison precede one energy-split bar, and each physical loss attaches to that bar. The cause-to-q-or-n answer frame is useful for the unseen evaporation question. Preserve the heat-loss, incomplete-burning and evaporation sequence and brief feedback. The original and sooty/shielded apparatus visually register in the inspected300px overlays; actual playback still needs review.
+
+chem-y11-m4-v04 (Revision 1): 5968 narration characters, about 540 seconds; checks/c-y11-m4-v04-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The prediction challenges the breaking-releases-energy misconception. An ion/water model earns separation and hydration before the two large bars explain the small net result. The cup calculation keeps solution mass and solid moles distinct, then applies the sign rule and uncertainty comparison. The corrected19.3-degree example is numerically consistent. Repair the confidence wording without adding a second lesson about metrology.
+
+chem-y11-m4-v05 (Revision 1): 5609 narration characters, about 515 seconds; checks/c-y11-m4-v05-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 1 optional. The equal-total-energy prediction and warmer-flask contrast make the unchanged-endpoints claim useful. The surface sequence and lower-pass analogy connect the route to the profile, then the unchanged distribution with a moved threshold explains rate. Original profile-reading and catalyst-classification tasks apply the idea. Keep forward activation arrows and the endothermic comparison; reverse-barrier arithmetic remains outside this boundary.
+
+chem-y11-m4-v06 (Revision 1): 6160 narration characters, about 554 seconds; checks/c-y11-m4-v06-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 1 optional. The strong-nitrogen-bond prediction leads to a conservation argument, then the simple HCl case precedes the more crowded ammonia and methane counts. Structures show each bond before grouped totals are calculated. The average/gas limitations explain the methane comparison and transfer question. The break/make memory line is scientifically sound for reversing the same bond process. Preserve the causal explanation and staged counting.
+
+chem-y11-m4-v07 (Revision 1): 6213 narration characters, about 558 seconds; checks/c-y11-m4-v07-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The carbon direct/two-step comparison makes Hess law necessary before the state-function name. Reversal and scaling are earned separately, then a pinned target guides cancellation. Sulfur and nitrogen attempts require new equation combinations and short feedback. The altitude analogy correctly separates height change from distance travelled. No new learner blocker was found in the current source.
+
+chem-y11-m4-v08 (Revision 1): 6364 narration characters, about 569 seconds; checks/c-y11-m4-v08-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. Reference heights earn products-minus-reactants before the ethanol example. Coefficients and physical states remain visible, and the bond/formation contrast explains the different subtraction orders. The propane and liquid-peroxide tasks carry their needed data. The final ethanol question matches the actual v09 opening, which uses methane to demonstrate the method and returns to ethanol in its first attempt. Keep this accepted join.
+
+chem-y11-m4-v09 (Revision 1): 6367 narration characters, about 570 seconds; checks/c-y11-m4-v09-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. Two routes to the same products explain the unknown methane formation value before any shortcut. The wrong-state case shows why the shared finish matters. Per-mole and per-gram bars then support the original fuel comparison. Ethanol in attempt1 answers the preceding lesson handoff. Keep the matched-state cycle and brief feedback; at 570 seconds use the named hydrogen-sentence reserve if extra wording is essential.
+
+chem-y11-m4-v10 (Revision 1): 5555 narration characters, about 509 seconds; checks/c-y11-m4-v10-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 1 optional. The reversed glucose cycle directly earns the photosynthesis sign and same-size enthalpy before scaling to 10g. The formation check and cellular/flame contrast explain why pathways can differ while overall enthalpy agrees. The light-input evaluation is useful, but the solar-efficiency and ATP quantities need the reported repairs. This5555-character source needs length-neutral replacements rather than deleting both paragraphs below the course floor.
+
+chem-y11-m4-v11 (Revision 1): 5923 narration characters, about 536 seconds; checks/c-y11-m4-v11-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The jar allocations make microstate counting accessible before entropy is named. Energy packets extend the idea to heat flow; enthalpy/entropy and system/surroundings comparisons then explain endothermic spontaneity. The two applications test particle arrangements and melting signs. Keep the tally and packet models; the painted jar covers are a real implementation obstacle to the intended opening demonstration.
+
+chem-y11-m4-v12 (Revision 1): 5665 narration characters, about 517 seconds; checks/c-y11-m4-v12-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 0 optional. States and gas counts give a practical first prediction before tabulated values resolve ties. The third-law contrast prevents confusing zero elemental formation enthalpy with zero entropy. Products-minus-reactants and a new sulfur calculation apply the procedure. Keep Count the gas first. A tie? Look it up; repair boiling/reference-temperature language and the inference that a tie itself establishes a small change.
+
+chem-y11-m4-v13 (Revision 1): 5746 narration characters, about 523 seconds; checks/c-y11-m4-v13-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The ammonia heat/arrangement conflict earns Gibbs energy rather than presenting an unmotivated formula. The temperature intuition precedes conversion and substitution, and the slow-ammonia contrast separates direction from rate. Limestone and original water/peroxide questions transfer the method. Preserve the on-screen-only derivation chosen by root; refine the definition so spontaneous endothermic heat transfer is not excluded.
+
+chem-y11-m4-v14 (Revision 1): 5558 narration characters, about 511 seconds; checks/c-y11-m4-v14-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The descending limestone line turns temperature into a visible competition before the crossover is solved. Checking both sides and using melting/freezing explain the four sign cases without memorising an arbitrary table. The threshold estimate assumption is spoken and shown, and the mnemonic is valid within that model for positive kelvin temperatures. The final four tiles name the correct2017 modules, retain the depth-study handoff and introduce no Year 12 content.
+
+Plates: both new paths delivered with native-size and registration qualifications in assets/brief184-manifest.json; all37 reference images and matched-state QA inspected. Gas-jar cover repair remains open.
+
+Course coverage:82 existing designs (75 module and7 skills) trace51 of52 module stems and all19 Working Scientifically content points across seven outcomes. C3-IQ1-04, m3-v06, remains on cultural hold. One primary owner per facet is recorded in work/brief184/course-coverage.json (107 module facets and19 skills points). This is draft teaching coverage; it does not certify35 practical hours or15 depth-study hours. Current m2-v06 differs from its earlier facet-review hash and still needs its Revision2 visual/learning follow-up. Other source findings, actual methods, recording and listening gates remain open.
+
+Evidence:24 reports,117 calculations,30 balanced-equation checks and11 site calculations in work/brief184/. Zero blockers,13 should fix and four optional findings.34 site log entries and dispositions of all48 numbered design notes are recorded; no website edit. Prioritise the CO2 bond table, cooling-example heat direction and methane entropy-sign fixes. Preserve already-correct ATP/Gibbs and NH4NO3 drill repairs.
+
+
+### Brief 187, 6 November 2026
+
+phys-y12-m5-v01 (Revision 1): 6323 narration characters (joined speech with one space between scenes), about 569 seconds; checks/p-y12-m5-v01-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The simultaneous drop-and-launch prediction makes independence visible before equations appear. Equal-height strobes and two shadows earn the shared clock, then force reasoning builds each column. The worked drop time carries into horizontal range, and the faster-launch comparison tests the cause. Preserve the speeding/turning resultant and the sideways-slowing diagnosis. The Moon comparison is useful but remains the named optional cut if the voiced revision exceeds the cap.
+
+phys-y12-m5-v02 (Revision 1): 6147 narration characters (joined speech with one space between scenes), about 555 seconds; checks/p-y12-m5-v02-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The third-of-an-angle prediction exposes a useful misconception. A right triangle earns sine/cosine before the angle sweep; the Pythagoras check prevents treating components as scalar shares. The frozen-peak prediction distinguishes zero vertical velocity from nonzero horizontal velocity and acceleration. The vertical-reference-angle trap applies the adjacent/opposite reasoning. The final frame explicitly uses25 m/s at 50 degrees, so the next design actual opening is consistent.
+
+phys-y12-m5-v03 (Revision 1): 5674 narration characters (joined speech with one space between scenes), about 519 seconds; checks/p-y12-m5-v03-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. An equation chosen for its missing time earns maximum height, then factoring the vertical displacement equation explains both time roots. The mirror comparison explains equal-level time and landing velocity rather than asking for memorisation. The height/time scaling contrast is correct, and the two tasks apply it. Preserve the equal-level warning; the last complementary-angle overlay motivates the next question without teaching its whole derivation.
+
+phys-y12-m5-v04 (Revision 1): 5859 narration characters (scene sum), about 538 seconds; checks/p-y12-m5-v04-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. Range is built from the two columns before complementary angles swap the factors. This meets root decision5: the physical product explanation precedes the single-sentence double-angle identity. The live graph shows the 45 degree optimum and equal partners, then new tasks compare ranges, times and heights. The cliff handoff makes the shortcut condition necessary. No source learner blocker was found.
+
+phys-y12-m5-v05 (Revision 1): 5711 narration characters (joined speech with one space between scenes), about 522 seconds; checks/p-y12-m5-v05-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The cliff comparison first shows why the equal-level shortcut fails. Grouped givens lead to a vertical quadratic, explicit rejection of the negative root and a horizontal range. The return-to-launch-level check and optimum scan avoid claiming that the best of three tested angles is the exact optimum. Original horizontal/angled applications transfer the method. Keep the down-negative/time-positive aid within the stated lower-landing boundary.
+
+phys-y12-m5-v06 (Revision 1): 6233 narration characters (joined speech with one space between scenes), about 557 seconds; checks/p-y12-m5-v06-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The obstacle prediction makes the horizontal clock and common height datum useful. The scene order gives one calculation stage at a time, and the sideways contrast shows that an earlier arrival alone does not guarantee clearance. The rounding-trap repair should preserve this strong method. The opening explicitly morphs the real v05 cliff/wall frame into the new15 m case, so the differing numbers are an intentional case change, not a broken join.
+
+phys-y12-m5-v07 (Revision 1): 5719 narration characters (joined speech with one space between scenes), about 520 seconds; checks/p-y12-m5-v07-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The simultaneous low/high flights create a reason to seek the second inverse-sine answer. The sine graph explains the calculator branch before the component swap explains its physics. The maximum-range case joins algebra to an unreachable target and the minimum-speed task. Keep the same-speed/same-level conditions and both original attempts. The ramp handoff is a new practical question, not a claim of measured data.
+
+phys-y12-m5-v08 (Revision 1): 6392 narration characters (joined speech with one space between scenes), about 568 seconds; checks/p-y12-m5-v08-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. The four-height prediction leads to a controlled test, first-contact measurements and sample processing. The whole ramp translates up the stand in the visual, retaining its geometry and release drop; preserve that operation. Linearisation earns the gradient-speed link, then an independent light-gate check prevents a straight line becoming proof. Sample data, illustrative repeats and possible errors are separated well. Repair the option mismatch and preserve the pending actual-practical status.
+
+phys-y12-m5-v09 (Revision 1): 5693 narration characters (joined speech with one space between scenes), about 517 seconds; checks/p-y12-m5-v09-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The same-force/angle comparison motivates torque before the formula. Perpendicular force and moment arm give two explanations of the same factor, and the inward 180 degree case prevents an angle-definition shortcut. The moment-arm label and N m convention are appropriate. Use the listed repair for the rotation reveal while retaining the correct torque comparison; original questions apply both the calculation and line-of-action test.
+
+phys-y12-m5-v10 (Revision 1): 5671 narration characters (joined speech with one space between scenes), about 514 seconds; checks/p-y12-m5-v10-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The crane comparison earns a signed torque balance before the seesaw. The beam weight and support vanish from torque only because their lines pass through the chosen pivot, and the later force balance makes that distinction explicit. The lighter-child distance check is useful, and the metre-rule question distinguishes position from moment arm. Keep the optional equal/opposite couple if time permits; the final top-view crane gives a coherent circular-motion handoff.
+
+Plates:10 of 12 new paths delivered in assets/brief187-manifest.json. Launcher layers register and were checked at 0, 30, 50 and 90 degrees; ramp tab and exit repaired; spanner/nut checked at one scale; crane corrected to 5:1 from rounded inspected anchors. Two drop-and-launch layers remain held because the painted mechanism does not show simultaneous release. Native sizes, carbon registration/margin, spanner margin, nut-plate proportion and seesaw moving-layer differences need designer acceptance. No design or narration edit.
+
+Evidence: 20 source reports, 46 independent numerical cases, seven additional site-calculation cases and 11 new site log entries in work/brief187. Existing brief168 corrections preserved. Zero source blockers, three should fix and one optional finding; the apparatus hold is separate. All 23 existing reference images inspected. Source hashes unchanged. Exact voiced-preview, human listening, motion and release gates remain open.
+
+
+### Brief 188, 6 November 2026
+
+phys-y12-m5-v11 (Revision 1): 6266 narration characters (scene sum), about 561 seconds. checks/p-y12-m5-v11-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The crane prediction makes direction matter before any circular-motion equation appears. Copying equal velocity arrows earns acceleration, and the shrinking interval prepares the velocity-circle derivation. Keep that derivation: the synchronised tip supplies a visual cause rather than another formula to memorise. Period, frequency and radians have plain meanings and one car example. The tangent exit tests the force explanation. Keep the uniform-speed condition in the net-force conclusion. Actual shrinking-vector playback and reading load remain preview checks.
+
+phys-y12-m5-v12 (Revision 1): 5795 narration characters (scene sum), about 523 seconds. checks/p-y12-m5-v12-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The rear view makes the vertical balance and inward grip visible. The tangent-path contrast explains why static friction points inwards, then required force is separated from maximum available grip before the speed limit is derived. Both attempts apply that distinction. Repair the force-count/viewing-plane wording, preserving the simple diagram. The wet-road values are clearly illustrative and root-approved; they do not claim a measured tyre coefficient.
+
+phys-y12-m5-v13 (Revision 1): 5654 narration characters (scene sum), about 514 seconds. checks/p-y12-m5-v13-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 1 optional. The horizontal-string prediction is answered by the vertical force balance. The centre is located before the radius is used, and the tension components replace the original arrow rather than becoming extra forces. Keep the period surprise: its height bracket and short derivation explain the second task. Force arrows at the right-hand extreme avoid confusing projection with a changing true force. The one minor numerical note is author-only; learner answers are correct.
+
+phys-y12-m5-v14 (Revision 1): 5582 narration characters (scene sum), about 506 seconds. checks/p-y12-m5-v14-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 0 optional. The icy-road prediction earns design speed, and the comparison with the same car on a flat bend answers how banking saves friction. Separate steady-speed panels correctly avoid teaching an acceleration sequence. Keep the ramp contrast, but repair the crossed-out valid coordinate axes. The signed friction plot must distinguish direction from required grip, and the conversion lines must retain enough digits. The maximum-speed-with-friction derivation remains the root-recorded later-practice gap.
+
+phys-y12-m5-v15 (Revision 1): 5672 narration characters (scene sum), about 517 seconds. checks/p-y12-m5-v15-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 0 optional. The deliberately wrong force-times-lap product is useful here: the per-step perpendicular construction answers it, then kinetic energy gives a second check. The vertical-circle contrast earns why the work condition matters; its short energy calculation and second task can remain at the present length. Preserve the difference between zero net work and constant total mechanical energy on this level circle. The handoff apparatus uses a paper clip whose backdrop needs replacement approval.
+
+phys-y12-m5-v16 (Revision 1): 6213 narration characters (scene sum), about 557 seconds. checks/p-y12-m5-v16-learning-review.md and -science-check.md. 1 blocker, 3 should fix, 0 optional. The sequence from controlled variables through timing, linearisation, gradient, uncertainty and systematic errors is well organised. The illustrative label is clear. However, the physical quantities being tested are misidentified: marker length is not the horizontal circle radius, and total tension is not the inward force when the string droops. The first mass ratio makes that a material error. Resolve the method before voicing. Cut the alternative-test scene if a correct geometry explanation needs room. Keep illustrative processing separate from independent experimental validation.
+
+phys-y12-m5-v17 (Revision 1): 6337 narration characters (joined speech with one space between scenes), about 566 seconds. checks/p-y12-m5-v17-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The two-sphere comparison creates a useful surprise: distance works against Earth, so its mass must explain the much larger force. The force law leads to field strength by dividing out the test mass, and the altitude example earns the centre-to-centre rule. Keep the area-spreading picture explicitly labelled as a picture. Repair the directions of the individual Earth-patch arrows. The reconciled opening is the actual Earth/Moon frame, and the worked constants match the HSC sheet.
+
+phys-y12-m5-v18 (Revision 1): 5606 narration characters (joined speech with one space between scenes), about 514 seconds. checks/p-y12-m5-v18-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 1 optional. The mountain thought experiment connects projectile fall to a turning surface before the force equality is used. Mass cancellation then explains shared free fall, which makes weightlessness purposeful rather than a detour. The period and Moon comparison give a useful second application of the same model. Keep the first-step/local-tangent condition in the falling comparison. Treat the Hubble altitude as an assumed exercise value. The numeric transfer of ideas is sound once those statements and the course colour key are repaired.
+
+phys-y12-m5-v19 (Revision 1): 5628 narration characters (joined speech with one space between scenes), about 515 seconds. checks/p-y12-m5-v19-learning-review.md and -science-check.md. 0 blocker, 4 should fix, 0 optional. The fixed rooftop dish is a strong observation to explain. Matching Earth's period comes first, then plane, direction and circular shape explain why period alone is insufficient. Keep the sidereal sentence: it distinguishes the real condition from the question approximation. Replace the claim that every orbit is a circle with the plane condition. The LEO table needs a period range, while the few-hundred-kilometre spoken example is valid. Himawari and GPS facts are verified from primary agency sources.
+
+phys-y12-m5-v20 (Revision 1): 5679 narration characters (joined speech with one space between scenes), about 519 seconds. checks/p-y12-m5-v20-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. Halley earns the contrast between fast near and slow far. Shape, equal swept areas and size/period are taught separately, with a teaching ellipse distinguished from the real comet shape. Thin endpoint triangles earn the inverse speed ratio before the Earth check and original Mars task. The torque sentence links back to v09 without naming an unintroduced angular-momentum formula. Keep energy for v21 and v22. The historic Halley dates are verified values from different passages; the eventual year counter must stay chronological.
+
+phys-y12-m5-v21 (Revision 1): 5681 narration characters (joined speech with one space between scenes), about 518 seconds. checks/p-y12-m5-v21-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. The large-height mgh prediction makes the changing gravitational pull necessary. Refining work strips gives a visual reason for a finite separation energy, then the negative well and outward increase support both tasks. Keep the well beside its labelled energy graph so it reads as an energy picture. Name the lifting force in the positive-work area; the later slow-lift line already has the right sign. The h/R estimate uses the model surface g, as its derivation and author note state.
+
+phys-y12-m5-v22 (Revision 1): 5569 narration characters (joined speech with one space between scenes), about 512 seconds. checks/p-y12-m5-v22-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 1 optional. Building kinetic, potential and total energy one at a time resolves the higher-but-slower paradox. The energy-flow strip answers where the supplied energy goes, and the explicit burn-versus-final-circle distinction prevents an instantaneous speed-change misconception. Take root's intermediate-number cut: faster/slower tags explain the transfer without another unearned calculation. Keep the comet energy trade because it completes the non-circular energy facet deferred from v20. The drag question applies the same circular-state relationship.
+
+phys-y12-m5-v23 (Revision 1): 5585 narration characters (joined speech with one space between scenes), about 513 seconds. checks/p-y12-m5-v23-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The finite-versus-infinite prediction follows naturally from the finite energy well. Energy conservation earns the zero threshold, mass cancellation and root-two comparison; assumptions and the collision condition are learner-visible where needed. Repair the 5 km/s hook height before any voicing or trajectory build. The 10 km/s case and escape derivation are correct. The current Module6 opening matches the actual outgoing plate/particle frame. The upright rocket and its nozzle anchor are checked separately as artwork.
+
+Plates: seven new PNGs delivered, with native-coordinate sidecars, per-design provenance, assets/brief188-manifest.json and paper/dark/white QA. Car tilt, clamp/stand and dish/house assemblies inspected. Old paper-clip backdrop reported, use held pending replacement decision. v16 practical method blocker remains independent of empty clamp artwork. No design or narration edits.
+
+Evidence: 26 source reports, 71 independent main calculation cases plus site calculations and1.4842h transfer-coast check, 22 new site-log entries. All14official Module5 stems and38child examples compare verbatim with the cached2017syllabus. Coverage has46explicit/derived facets with one primary owner each, but banked-friction worked coverage, v08 practical evidence and v16 method remain open. One blocker,26should-fix records (six repeat the velocity colour issue and two repeat the paper-clip backdrop), five optional findings. Source hashes unchanged; no preview, listening or release pass.
+
+
+### Brief 189, 6 November 2026
+
+phys-y12-m6-v01 (Revision 1): 6138 narration characters, about 549 seconds. checks/p-y12-m6-v01-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The three prediction changes give a clear purpose to the voltage-to-field-to-force-to-acceleration chain. The one-coulomb work strip earns E=V/d, then the sign contrast is tested before the electron calculation. Keep the oil drop as a useful case where gravity matters. Name acceleration in the final mass comparison and use charge magnitude in the oil-drop balance. The questions retain all needed constants and plate signs are held back until feedback.
+
+phys-y12-m6-v02 (Revision 1): 6067 narration characters, about 544 seconds. checks/p-y12-m6-v02-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 0 optional. The upside-down projectile comparison builds directly on the previous plate stage. Equal horizontal steps and growing vertical steps show why one clock gives a parabola. Keep the small true-scale main deflection and the labelled rescaled ghost projectile. The collision test is useful and makes the finite gap consequential. Fix the doubled-length visual, approximate-angle caption and unqualified acceleration comparison in the qualitative answer. The energy increase is correctly reserved for the next lesson.
+
+phys-y12-m6-v03 (Revision 1): 5977 narration characters, about 535 seconds. checks/p-y12-m6-v03-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 1 optional. The double-voltage prediction earns the square-root speed law. Keep the signed energy ladder and the return to the previous exit-speed result, which pays off an existing question rather than adding an unrelated calculation. Repair the magnitude/signed convention, the electron displacement direction and the absolute-versus-change U bars. The retarding case explains why initial kinetic energy matters. The short electronvolt conversion and alpha comparison support transfer without extending into relativity.
+
+phys-y12-m6-v04 (Revision 1): 5568 narration characters, about 508 seconds. checks/p-y12-m6-v04-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The still/along/across prediction distinguishes magnetic force from electric force before the sine rule. The rotating 3D box can explain dots and crosses if the camera turn remains readable at playback speed. Keep the axis triad as the authority for direction and the named palm rule as one equivalent memory method. The aurora example needs a targeted causal repair, preserving the useful along-field velocity contrast. Zero work is correctly handed to v05.
+
+phys-y12-m6-v05 (Revision 1): 5640 narration characters, about 512 seconds. checks/p-y12-m6-v05-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The unchanged speed counter and perpendicular steps earn zero work, then the inward force earns the circular path and radius equation. Keep the period derivation: cancellation explains the surprising equal lap times and meets the route. The three-system comparison is manageable as one panel at a time. Repair the shared-start/concentric-circle contradiction. Opposite orbit senses and separate electron/proton scale bars are correct.
+
+phys-y12-m6-v06 (Revision 1): 5597 narration characters, about 507 seconds. checks/p-y12-m6-v06-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. Opposing electric and magnetic arrows make E/B a consequence of balance. The same-speed proton replay explains why sign and mass cancel from the selected speed. Root has approved schematic initial deflections, so do not present the rejected paths as quantitative full trajectories. Keep the short analyser application, but require equal ion charge before saying heavier bends wider. The actual outgoing wire/electron frame matches v07 after reconciliation.
+
+phys-y12-m6-v07 (Revision 1): 6005 narration characters, about 540 seconds. checks/p-y12-m6-v07-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The neutral-wire puzzle has a clear cause chain from individual moving charges to total force. Fixed ions, drifting electrons and slight side accumulation support the plain-language force-transfer explanation. The camera tilt and end-on crosses need exact playback review. Keep the loudspeaker as an application of total active wire length, but correct its end-on current symbols. The demonstrated swing is illustrative and does not establish completion of a measured investigation.
+
+phys-y12-m6-v08 (Revision 1): 6322 narration characters, about 563 seconds. checks/p-y12-m6-v08-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 1 optional. Each wire first makes a field and then sits in the other field, so the attraction is earned with the earlier motor rule. Equal force arrows make the third-law argument visible even when currents differ. Keep the historical/current ampere contrast, verified against BIPM. Keep the illustrative practical at its present scope because it gives the graph quantities physical meaning. Method notes should specify centre separation and account for lead forces; no experimental pass is claimed.
+
+phys-y12-m6-v09 (Revision 1): 5609 narration characters, about 510 seconds. checks/p-y12-m6-v09-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The rain analogy helps explain projected area before the normal and cosine appear. Keep it, with the explicit rain-to-field transition. Keep the short negative-flux sentence because the next graph has a negative segment and the chosen normal carries the sign. The plane-versus-normal angle task is well prepared and both attempts apply it. The count of drawn lines remains a picture of flux, not its definition.
+
+phys-y12-m6-v10 (Revision 1): 6202 narration characters, about 555 seconds. checks/p-y12-m6-v10-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 0 optional. The slow/fast/still/out sequence makes rate of change, rather than field presence, the explanation. Flux linkage is separated from per-turn flux before the graph, preventing an extra N in the calculation. Keep the graph and sliding rod because they apply the same law to different triggers. Repair the unconditional doubled galvanometer swing. The meter response must be labelled illustrative and the emf result kept distinct from the current it drives.
+
+phys-y12-m6-v11 (Revision 1): 5699 narration characters, about 516 seconds. checks/p-y12-m6-v11-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. The counterfactual attraction explains why the direction is constrained by energy conservation. The four-step rail then turns the argument into an answer method, with a stated viewing side. Keep the open-versus-closed push contrast. Keep the dropped-magnet lag only as a clearly labelled illustration, without measured times or a claimed observed effect size. The incoming/leaving upward forces are correct. Repair the handoff claim that all earlier flux changes used moving magnets.
+
+phys-y12-m6-v12 (Revision 1): 5673 narration characters, about 515 seconds. checks/p-y12-m6-v12-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. The switch-on/steady/switch-off prediction makes mutual induction causal. The current-to-field-to-flux chain, aligned graphs and one short numerical case reinforce the same relationship. Keep the phase surprise only with its ideal unloaded assumption on the graph; separate it from physical galvanometer motion. Core insertion then explains why a transformer shares flux. The actual outgoing core/source/lamp frame agrees with v13. Turns ratios remain for that next lesson.
+
+Plates: three of four new paths delivered with native-coordinate sidecars, per-design provenance, assets/brief189-manifest.json and background/assembly QA. Meter and needle share a canvas and fit the window at both end ticks. Magnet fits the copper rod. CRT held after three attempts failed native resolution and exact geometry; coded-outline fallback is permitted by the brief. Existing speaker cone requires the documented uniform transform.
+
+Evidence: 24 source reports, 46 numerical cases and 12 direction checks, 15 site-log entries with the two priority transformer repairs first. All 15 official Module 6 parent points and example quotations checked; coverage part 1 traces the current 12 designs and records practical gaps and later-source checks for brief 190. Zero blockers, 15 should fix, four optional. No design, narration, speech, render, HTML or release change. Source hashes unchanged.
+
+
+### Brief 190, 6 November 2026
+
+phys-y12-m6-v13 (Revision 1): 6041 narration characters, about 541 seconds. checks/p-y12-m6-v13-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 1 optional. The double-turn hook creates a useful power question before the two ratios. Per-turn emf earns the voltage rule and the equal power bars earn the inverse current rule. Keep the load-sets-current scene, as root requests: the added lamp answers how the primary responds, and it is more useful than another ratio drill. Keep AC field-arrow phase consistent. The 230V worked answer repairs the source-site mismatch without altering the design. The response opportunities retain the needed turns and load current.
+
+phys-y12-m6-v14 (Revision 1): 5760 narration characters, about 517 seconds. checks/p-y12-m6-v14-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The missing-watts hook gives each ideal assumption a physical consequence. Keep copper, core and coupling, with each loss paired to its fix. Keep the short hysteresis scene: the flipping domains distinguish it from eddy-current heating, and there is room at the present length. The thin-sheet squared-loss estimate is correctly identified as a simple model at fixed volume, field and frequency. Repair the source scope of 98 percent efficiency and the universal high-current-winding ranking. Cooling is correctly described as carrying heat away.
+
+phys-y12-m6-v15 (Revision 1): 5842 narration characters, about 526 seconds. checks/p-y12-m6-v15-learning-review.md and -science-check.md. 0 blocker, 3 should fix, 1 optional. Keep the two voltages and two powers, which directly answer the classic V squared/R misconception. The inverse-square scaling follows from current, rather than appearing as a memorised rule. Keep the25kV thought experiment because its line-drop contradiction shows why the huge loss is impossible. Repair the simple-circuit voltage definition versus the real three-phase grid labels, use a supported generator range, and remove safe from the domestic-voltage description. The sent/received power ledger must keep P at the sending end.
+
+phys-y12-m6-v16 (Revision 1): 6413 narration characters, about 566 seconds. checks/p-y12-m6-v16-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The rock-versus-spin prediction gives the split ring a job before naming its parts. The end-on coil makes the force couple and area-normal angle visible, then the dead point gives inertia a purpose. Keep the smoothing scene as root directs, and preserve the plane-angle warning as one alternative-convention sentence. The numeric example and question use the syllabus sine convention consistently. This source explanation is not a learner-conducted motor investigation.
+
+phys-y12-m6-v17 (Revision 1): 6339 narration characters, about 563 seconds. checks/p-y12-m6-v17-learning-review.md and -science-check.md. 1 blocker, 1 should fix, 1 optional. The ammeter observation leads to the generator effect and a voltage-share diagram. The full-speed, half-speed and stall calculations form one useful causal chain; keep them and the no-spin memory aid. The energy proof has a blocker: a connected battery cannot be represented by an empty input bar. The later full power ledger and distinction between converted power and shaft output are correct. Repair the universal larger-mechanical-output claim in the final answer. Exact startup timing is a wording check under the stated resistance-only model.
+
+phys-y12-m6-v18 (Revision 1): 6315 narration characters, about 559 seconds. checks/p-y12-m6-v18-learning-review.md and -science-check.md. 0 blocker, 0 should fix, 0 optional. The hook explicitly changes from the real can motor to the one-coil generator before drawing ideal humps. Keep that distinction. The flux graph, tangent and linked emf graph explain the phase shift before rings are compared. Slip rings preserve the coil connection; split-ring switching at zero emf makes the outside output unidirectional. Keep the power-station comparison, which explains fixed output windings and avoids a literal giant rotating output coil. No extension peak-emf formula is needed under root decision13.
+
+phys-y12-m6-v19 (Revision 1): 6300 narration characters, about 560 seconds. checks/p-y12-m6-v19-learning-review.md and -science-check.md. 0 blocker, 2 should fix, 0 optional. The chasing-light analogy explains how stationary coils make a turning field, and the closed cage loops then connect it to induction. Keep the short tagged slip calculation, because it gives the lag a useful scale. Keep the downwind-boat analogy after repairing the zero-load ideal-limit claim. The diagram must match its four-pole speed case or explicitly separate them. More-load response is correctly limited in author notes to normal small-slip operation. No source-approved motor practical is supplied here.
+
+phys-y12-m6-v20 (Revision 1): 6389 narration characters, about 564 seconds. checks/p-y12-m6-v20-learning-review.md and -science-check.md. 0 blocker, 1 should fix, 1 optional. The solid/slotted contrast gives closed current paths a clear job. Entry and exit swirls both produce a backwards force, then the tube shows how the same energy change gives terminal motion. Keep the coaster calculation as a brief energy application and the regenerative-braking sentence as a useful contrast in where the energy goes. Repair the pendulum energy-bar meaning so it does not erase the gravitational store on each swing. The tube times and damping are illustrative, not measured. Root specifies a coded plastic tube; no separate raster is needed.
+
+Plates:15new native PNGs with transparent margins, sidecars, per-design provenance and assets/brief190-manifest.json. Coded plastic tube per root15. Paired contours and textures are approximate; no seamless-swap or playback pass. Static motor geometry, flywheel, tube/magnet fit and fan/switch registration inspected in QA. Coaster fin extends below wheels and channel ends are open, but integrated car/rail fit remains held for coded scale/depth/mask review.
+
+Coverage: all15official Module6points traced across20designs through33analytic facets with one primary owner each. Wire investigation conduct and motor practical remain gaps; motor energy-proof blocker remains.16reports,31numerical cases,5direction checks and24site-log records, including checked-acceptable dispositions. One blocker,nine should-fix,four optional. No design,narration,speech,render,HTML,commit or release edit.

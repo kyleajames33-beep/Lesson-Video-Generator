@@ -851,3 +851,19 @@ Evidence: `work/brief153/t02-calculations.py`.
 ### 101. Financial mathematics lesson 13: maximum borrowing rounding
 
 **Location:** `financial-mathematics/lesson13.sa.html`, worked problem 2. The unrounded maximum principal is $488,658.786235..., so the displayed approximately $488,659 is a nearest-dollar estimate and exceeds the mathematical budget by about 21 cents. If the answer is intended as an achievable maximum, state the rounding convention and round down to $488,658.78 in whole cents, or $488,658 in whole dollars. Confirmed by brief 161, 4 November 2026.
+
+### 102. Random variables lesson 6: size-based probability example
+
+**Location:** `random-variables/lesson06.sa.html`, Trap 02 (line 563 at this review). It says p(15) is 1/5, not 15/75, but these fractions are equal. The size-based reasoning is wrong; use p(25), where 25/75=1/3 differs from the correct 1/5. Confirmed against the local site source and exact enumeration in brief 162, 4 November 2026.
+
+### 103. Random variables lesson 7: unweighted deviations
+
+**Location:** `random-variables/lesson07.sa.html`, card 03 (line 350). The listed values 0,1,2,3 and mean 1.7 give unweighted deviations summing to -0.8. It is the probability-weighted deviations that sum to zero. State that weighting explicitly. Confirmed by exact SymPy calculations, brief 162, 4 November 2026.
+
+### 104. Random variables lesson 7: variance compared with mean
+
+**Location:** `random-variables/lesson07.sa.html`, problem 2 explanatory note (line 508). A variance greater than the mean does not signal a mistake; the quantities also have different units. Replace this test with checking for a negative variance or checking the calculation against its definition. Confirmed by the same page's insurance distribution, with mean 210 and variance 1,285,900, brief 162, 4 November 2026.
+
+### 105. Random variables lesson 7: acceptance ranking without a shape assumption
+
+**Location:** `random-variables/lesson07.sa.html`, short-answer Q3(b), answer at line 760. Equal means and standard deviations 0.2 and 2 do not establish which distribution places more probability within 0.5 of 50. A concrete counterexample is saved in `work/brief162/s03.json`: line A can have 85% at 50 with the remainder split at offsets sqrt(4/15); line B can have 90% at 50 with the remainder split at offsets sqrt(40). The standard deviations match, but B has more acceptable components. State an appropriate shared-shape assumption or change the question. Confirmed in brief 162, 4 November 2026.

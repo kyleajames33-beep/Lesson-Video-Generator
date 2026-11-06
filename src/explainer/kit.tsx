@@ -1,10 +1,9 @@
 // Shared helpers for the explainer engine (paper, hand-drawn editorial style).
 import React, {useMemo} from 'react';
-import {continueRender, delayRender, Easing, Freeze, Img, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {cancelRender, continueRender, delayRender, Easing, Freeze, Img, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, TOK} from '../styles/tokens';
 
-// Lean font loader for the explainer engine: only the two latin faces used, with a
-// safety release so one slow request cannot stall a render tab.
+// A failed font load must stop the render rather than silently export fallback text.
 if (typeof document !== 'undefined' && !(window as unknown as {__explainerFonts?: boolean}).__explainerFonts) {
 	(window as unknown as {__explainerFonts?: boolean}).__explainerFonts = true;
 	const handle = delayRender('Loading explainer fonts', {timeoutInMilliseconds: 60000});
@@ -14,8 +13,7 @@ if (typeof document !== 'undefined' && !(window as unknown as {__explainerFonts?
 		new FontFace('Caveat', `url(${staticFile('fonts/caveat-latin-wght-normal.woff2')}) format('woff2')`, {weight: '400 700'}),
 		new FontFace('Inter Tight', `url(${staticFile('fonts/inter-tight-latin-wght-normal.woff2')}) format('woff2')`, {weight: '100 900'}),
 	];
-	Promise.all(faces.map(face => face.load().then(f => { document.fonts.add(f); }))).then(release, release);
-	setTimeout(release, 20000);
+	Promise.all(faces.map(face => face.load().then(f => { document.fonts.add(f); }))).then(release, error => cancelRender(new Error(`Explainer font load failed: ${String(error)}`)));
 }
 
 export const PAPER = '#f6f1e7';

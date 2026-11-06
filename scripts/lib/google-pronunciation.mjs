@@ -1,5 +1,8 @@
 // Context-sensitive pronunciation replacements. Never rewrite the article in "a half".
 export const pronunciationRules = [
+  {name: 'math-a-base-power', pattern: /\ba(?=\s+to\s+the\s+(?:x|power)\b)/gi, replacement: 'ay'},
+  {name: 'math-a-log-or-base', pattern: /(?<=\b(?:log of|base))\s+a\b(?!\s+half\b)/gi, replacement: ' ay'},
+  {name: 'math-a-sentence-end', pattern: /(?<=\b(?:of|into))\s+a(?=[,.!?;]|\s*$)/gi, replacement: ' ay'},
   {name: 'math-a-before-exponential', pattern: /\ba(?=\s+e\s+to\s+the\s+a\s+x\b)/gi, replacement: 'ay'},
   {name: 'math-a-before-x', pattern: /\ba(?=\s+x\b)/gi, replacement: 'ay'},
   {name: 'math-a-after-times', pattern: /(?<=\btimes\s)a\b/gi, replacement: 'ay'},
@@ -28,7 +31,7 @@ export function mapWordTimings(displayText, spokenText, words) {
     while (cursor < display[i].index) { characters.push(displayText[cursor++]); character_start_times_seconds.push(previous); character_end_times_seconds.push(previous); }
     const token = display[i][0];
     for (let k = 0; k < token.length; k++) {
-      characters.push(token[k]); character_start_times_seconds.push(word.start + (word.end-word.start)*k/token.length); character_end_times_seconds.push(word.start + (word.end-word.start)*(k+1)/token.length); cursor++;
+      characters.push(token[k]); character_start_times_seconds.push(k===0?word.start:word.start + (word.end-word.start)*k/token.length); character_end_times_seconds.push(k===token.length-1?word.end:word.start + (word.end-word.start)*(k+1)/token.length); cursor++;
     }
     previous = word.end;
   }

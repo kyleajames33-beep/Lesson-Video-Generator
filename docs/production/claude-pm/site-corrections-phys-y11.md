@@ -237,3 +237,8 @@ The existing brief 151 L28 row already records the unconditional momentum-conser
 **Source:** `fa2-waves/lesson09.sa.html`, hook, oscilloscope key term and worked example. **Exact old text:** “The double bass and piccolo can share the same loudness (amplitude)” and “An instrument that displays a sound wave as a displacement–time trace”.
 
 **Correction:** A microphone and oscilloscope display a voltage related to local pressure, not particle displacement; state calibration when converting it to pressure. Equal perceived loudness at different frequencies does not require equal amplitude, and a taller trace at another frequency alone does not determine perceived loudness. Compare equal-frequency tones or measure loudness appropriately. The fixed-amplitude energy condition is already logged in `concept-three`.
+
+
+## Brief164: FA3 L12 current definitions (4 November2026)
+
+Source: `subjects/physics/year11/fa3-electricity-and-magnetism/lesson12.sa.html`. Exact old hook: "The mains current in your wall reverses direction 50 times a second". At 50 Hz, a sinusoidal current reverses twice per cycle, giving 100 reversals/s. Also the vocabulary says DC "flows steadily in one direction only"; distinguish steady DC from all unidirectional DC, which can vary in magnitude. These are confirmed source findings only; the site was not edited. Evidence: `work/source-correction-peek.py` and `work/brief164/calculations.json`.

@@ -79,7 +79,21 @@ export const radianTicks = (from: number, to: number, denominator = 2): Tick[] =
 		return {value: k * Math.PI / denominator, label: k === 0 ? '0' : `${k < 0 ? '−' : ''}${n === 1 ? '' : n}π${d === 1 ? '' : `/${d}`}`};
 	});
 };
-const ticks = (r: Range): Tick[] => Array.from({length: 5}, (_, i) => {const value = r[0] + (r[1] - r[0]) * i / 4; return {value, label: String(Number(value.toFixed(2)))};});
+export const ticks = (r: Range): Tick[] => {
+	if (!r.every(Number.isFinite) || !(r[1] > r[0])) throw new RangeError('Finite increasing tick range required');
+	const span = r[1] - r[0], power = Math.floor(Math.log10(span / 4));
+	const candidates = [-1, 0, 1].flatMap(offset => [1, 2, 2.5, 5].map(factor => factor * 10 ** (power + offset)));
+	const bounds = (step: number) => [Math.ceil(r[0] / step - 1e-10), Math.floor(r[1] / step + 1e-10)];
+	const score = (step: number) => {
+		const [first, last] = bounds(step), count = last - first + 1;
+		return (count < 4 ? 4 - count : count > 6 ? count - 6 : 0) * 100 + Math.abs(count - 5) + Math.abs(Math.log(step / (span / 4))) * .01;
+	};
+	const step = candidates.reduce((best, next) => score(next) < score(best) ? next : best), [first, last] = bounds(step);
+	return Array.from({length: last - first + 1}, (_, i) => {
+		const value = Number(((first + i) * step).toPrecision(14));
+		return {value: Object.is(value, -0) ? 0 : value, label: String(value)};
+	}).filter(tick => tick.value >= r[0] && tick.value <= r[1]);
+};
 const Text: React.FC<{x: number; y: number; children: React.ReactNode; color?: string; size?: number; anchor?: 'start' | 'middle' | 'end'}> = ({x, y, children, color = INK, size = 27, anchor = 'start'}) => <text x={x} y={y} fill={color} textAnchor={anchor} style={{fontFamily: FONT_DISPLAY, fontSize: size, fontWeight: 600}}>{children}</text>;
 const dPath = (points: Sample[], t: ReturnType<typeof graphTransform>) => points.map((p, i) => {const q = t.point(p.x, p.y); return `${i ? 'L' : 'M'}${q.x.toFixed(3)},${q.y.toFixed(3)}`;}).join(' ');
 const GraphAxes: React.FC<{spec: GraphSpec}> = ({spec: s}) => {
@@ -245,12 +259,12 @@ export const DerivativeTracer: React.FC<DerivativeTracerProps> = ({graph:rawGrap
 	</div>;
 };
 
-export type TangentTriangleProps = {graph: GraphSpec; x: number; slope: number; run: number; transform?: AttachedTransform; runLabel?: string; riseLabel?: string; readouts?: boolean; ratio?: boolean; panelX?: number; panelY?: number};
+export type TangentTriangleProps = {graph: GraphSpec; x: number; slope: number; run: number; transform?: AttachedTransform; runLabel?: string; riseLabel?: string; runCircle?: boolean; riseTag?: string; readouts?: boolean; ratio?: boolean; panelX?: number; panelY?: number};
 /** Place inside FunctionGraph. Transform the whole triangle in mathematical units. */
-export const TangentTriangle: React.FC<TangentTriangleProps> = ({graph, x, slope, run, transform, runLabel, riseLabel, readouts = true, ratio, panelX, panelY}) => {
+export const TangentTriangle: React.FC<TangentTriangleProps> = ({graph, x, slope, run, transform, runLabel, riseLabel, runCircle, riseTag, readouts = true, ratio, panelX, panelY}) => {
 	const t = graphTransform(graph), height = graph.fn(x), m = carriedSlope(slope, transform), start = carriedPoint(x, height, transform), corner = carriedPoint(x+run, height, transform), end = carriedPoint(x+run, height+slope*run, transform);
 	const a=t.point(start.x,start.y), b=t.point(corner.x,corner.y), c=t.point(end.x,end.y);
-	return <g><path d={`M${a.x},${a.y} H${b.x} V${c.y}`} fill="none" stroke={ACCENT} strokeWidth={3} strokeDasharray="7 5" /><Text x={(a.x+b.x)/2} y={a.y+30} anchor="middle" size={24}>{runLabel ?? `run ${Number((corner.x-start.x).toFixed(3))}`}</Text><Text x={b.x+12} y={(b.y+c.y)/2} size={24}>{riseLabel ?? `rise ${Number((end.y-corner.y).toFixed(3))}`}</Text>{readouts && <ReadoutPanel graph={graph} x={start.x} y={start.y} gradient={m} ratio={ratio} panelX={panelX} panelY={panelY} />}</g>;
+	return <g><path d={`M${a.x},${a.y} H${b.x} V${c.y}`} fill="none" stroke={ACCENT} strokeWidth={3} strokeDasharray="7 5" /><Text x={(a.x+b.x)/2} y={a.y+30} anchor="middle" size={24}>{runLabel ?? `run ${Number((corner.x-start.x).toFixed(3))}`}</Text><Text x={b.x+12} y={(b.y+c.y)/2} size={24}>{riseLabel ?? `rise ${Number((end.y-corner.y).toFixed(3))}`}</Text>{runCircle && <ellipse cx={(a.x+b.x)/2} cy={a.y+22} rx={60} ry={21} stroke={ACCENT} strokeWidth={2} fill="none"/>}{riseTag && <Text x={b.x+12} y={(b.y+c.y)/2+28} size={21}>{riseTag}</Text>}{readouts && <ReadoutPanel graph={graph} x={start.x} y={start.y} gradient={m} ratio={ratio} panelX={panelX} panelY={panelY} />}</g>;
 };
 
 export type SignBoundary = {x: number; kind: 'zero' | 'excluded' | 'undefined'; label?: string};

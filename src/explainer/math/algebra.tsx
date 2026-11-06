@@ -4,17 +4,17 @@ import {BLUE, BLUE_SOFT, FONT_DISPLAY, INK, INK_SOFT, PAPER_DEEP, prog} from '..
 
 const ACCENT = '#8a5a12';
 export type AlgebraStep = {id: string; left: React.ReactNode; right: React.ReactNode; at: number; until?: number; relation?: React.ReactNode};
-export type AlignedAlgebraProps = {steps: AlgebraStep[]; givens?: React.ReactNode; domainExclusions?: readonly React.ReactNode[]; fontSize?: number; style?: React.CSSProperties};
+export type AlignedAlgebraProps = {steps: AlgebraStep[]; givens?: React.ReactNode; domainExclusions?: readonly React.ReactNode[]; fontSize?: number; style?: React.CSSProperties; dimBefore?: number};
 /** Existing string steps remain valid. Givens and original exclusions outlive working. */
-export const AlignedAlgebra: React.FC<AlignedAlgebraProps> = ({steps, givens, domainExclusions, fontSize = 44, style}) => {
+export const AlignedAlgebra: React.FC<AlignedAlgebraProps> = ({steps, givens, domainExclusions, fontSize = 44, style, dimBefore}) => {
  const frame = useCurrentFrame();
  return <div style={{fontFamily: FONT_DISPLAY, fontSize, color: INK, ...style}}>
   {givens != null && <div style={{fontSize: '0.76em', marginBottom: 22, paddingBottom: 14, borderBottom: '2px solid ' + PAPER_DEEP}}>{givens}</div>}
   <div style={{display: 'grid', gridTemplateColumns: 'auto 45px 1fr', columnGap: 12, rowGap: 20, alignItems: 'baseline'}}>
    {steps.filter(s => frame >= s.at && (s.until === undefined || frame < s.until)).map(s => <React.Fragment key={s.id}>
-    <div style={{textAlign: 'right', color: s.id === 'answer' ? ACCENT : INK}}>{s.left}</div>
-    <div style={{textAlign: 'center', opacity: prog(frame, s.at, 12)}}>{s.relation ?? '='}</div>
-    <div style={{opacity: prog(frame, s.at, 12), color: s.id === 'answer' ? ACCENT : INK}}>{s.right}</div>
+    <div style={{textAlign: 'right', opacity: dimBefore !== undefined && s.at < dimBefore ? .65 : 1, color: s.id === 'answer' ? ACCENT : INK}}>{s.left}</div>
+    <div style={{textAlign: 'center', opacity: prog(frame, s.at, 12) * (dimBefore !== undefined && s.at < dimBefore ? .65 : 1)}}>{s.relation ?? '='}</div>
+    <div style={{opacity: prog(frame, s.at, 12) * (dimBefore !== undefined && s.at < dimBefore ? .65 : 1), color: s.id === 'answer' ? ACCENT : INK}}>{s.right}</div>
    </React.Fragment>)}
   </div>
   {domainExclusions && <DomainExclusions exclusions={domainExclusions} />}
@@ -23,8 +23,8 @@ export const AlignedAlgebra: React.FC<AlignedAlgebraProps> = ({steps, givens, do
 export const DomainExclusions: React.FC<{exclusions: readonly React.ReactNode[]}> = ({exclusions}) => <div style={{fontSize: '0.72em', marginTop: 18, color: INK_SOFT}}>Original domain: {exclusions.map((x, i) => <React.Fragment key={i}>{i > 0 ? ', ' : ''}{x}</React.Fragment>)}</div>;
 
 /** Compose recursively: an inner slot may itself contain an outer slot. */
-export const ExpressionSlot: React.FC<{children: React.ReactNode; role: 'inner' | 'outer'; label?: React.ReactNode; active?: boolean}> = ({children, role, label, active = true}) => <span style={{display: 'inline-flex', flexDirection: 'column', alignItems: 'center', verticalAlign: 'middle', margin: '0 0.08em'}}>
- <span style={{padding: '0.07em 0.16em', borderRadius: 6, border: '2px solid ' + (active ? (role === 'inner' ? BLUE : ACCENT) : PAPER_DEEP), background: active && role === 'inner' ? BLUE_SOFT : undefined}}>{children}</span>
+export const ExpressionSlot: React.FC<{children: React.ReactNode; role: 'inner' | 'outer'; label?: React.ReactNode; active?: boolean; accent?: string}> = ({children, role, label, active = true, accent}) => <span style={{display: 'inline-flex', flexDirection: 'column', alignItems: 'center', verticalAlign: 'middle', margin: '0 0.08em'}}>
+ <span style={{padding: '0.07em 0.16em', borderRadius: 6, border: '2px solid ' + (active ? (accent ?? (role === 'inner' ? BLUE : ACCENT)) : PAPER_DEEP), background: active && role === 'inner' ? (accent ? '#f4e8ce' : BLUE_SOFT) : undefined}}>{children}</span>
  {label != null && <span style={{fontSize: '0.48em', color: role === 'inner' ? BLUE : ACCENT, lineHeight: 1.35}}>{label}</span>}
 </span>;
 export const DerivativeFactor: React.FC<{children: React.ReactNode; at?: number; label?: React.ReactNode}> = ({children, at = 0, label}) => {
