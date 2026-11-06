@@ -2,7 +2,7 @@
 
 Status: Revision 8 (1 Nov): "part two" now names chem-m5-g02b's actual content (temperature, industry and open systems), not calculations, in the scene 1 narration, its card and the metadata; ready to voice. Previously Revision 7 (1 Nov): Codex error check 130 resolved (one author-note error: moved-out destination now chem-m5-g02b; no learner-copy errors); ready to voice.
 
-Earlier status, Revision 6 (1 Nov): brief 127 reviews resolved (0 blockers; 2 should fix fixed: "no net reaction, no net heat change", and the equal-gas-count clause removed from learner tags). Narration 5,960 characters, about 567 s. Needs a Codex error check before voicing.
+Earlier status, Revision 6 (1 Nov): brief 127 reviews resolved (0 blockers; 2 should fix fixed: "no net reaction, no net heat change", and the equal-gas-count clause removed from learner tags). Narration 5,968 characters, about 567 s. Needs a Codex error check before voicing.
 
 Earlier status, Revision 5 (31 Oct): cut to length and moved to the current practice-video format; needs a Codex error check before voicing.
 
@@ -10,7 +10,7 @@ Earlier status, Revision 4 (14 Oct): Codex fact check resolved; ready for owner 
 
 Earlier revisions, in one paragraph: Revision 1 (14 Oct) drafted six question types from "Video A" of `../research/hsc-equilibrium-question-types.md`, with three worked examples, four quick "spot the type" scenes and two attempts. Revision 2 applied `../checks/g02-learning-review.md` (fingerprints split by axis, argon stem made rigid and insulated, attempt 1 made a bounded 10 s decision, 3b split into squeeze, response and amount graph, memory aids given condition tags, decision board made "You see" against "You do", g02 placed after c08). Revision 3 applied `../checks/g02-claude-science-check.md` (the 5b collision wording, 4a and 4b fingerprint panels, constant temperature in 7c, 7b line 5, aid brackets, the 6d solid condition, the 6c "as given here" tag, illustrative Ea tags, the "made-up numbers" tag and the "HSC-style question, written for HSCScience" label on every card). Revision 4 applied `../checks/g02-check.md` (key-note jump rule, "air is readily available and cheaper than sulfur dioxide", "At time t one, something changes."). The full Revision 1 to 4 text is in git history (commit ef0ef77).
 
-Narration 5,950 characters, 18 scenes, about 9.45 minutes (567 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Narration 5,968 characters, 18 scenes, about 9.45 minutes (567 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
 Revision 5 changes (31 Oct; root request: Revision 4 narration counted 8,737 characters, about 13.3 minutes with holds):
 - Length: cut by selecting question types, not by compressing sentences. Six Revision 4 scenes are moved out whole: 4a and 4b (the fingerprint board), 6a (temperature with an energy profile), 6b (the equal gas count), 6c (industrial conditions) and 6d (open against closed). The video now teaches three types in full plus two attempts. Every kept scene keeps its verified Revision 4 wording, except the joins listed below. See Decisions, "Moved out, and where it could go".
@@ -230,7 +230,7 @@ Counted by script (18 scenes; `### N.` headings with letter suffixes, "> " lines
 | 6b. try2-answer | 320 |
 | 7. decision-board | 270 |
 | 8. key-notes | 75 |
-| **Total** | **5,950** |
+| **Total** | **5,968** |
 
 Revision 4 counted 8,737 characters by the same rule; Revision 5 removes 2,787 (the six moved-out scenes and their hook, board and key-note lines), with about 100 characters of joins added.
 
@@ -261,7 +261,7 @@ None required. No artwork requested.
 ## Codex error-check brief
 
 Error-only check, with a short learning trace (`docs/production/student-learning-review.md`). Report errors; do not restyle or rewrite:
-1. Re-check the narration character count by script with the build parser rules (target 5,700 to 6,100; this file counts 5,950) and the timing sum (at most about 570 s).
+1. Re-check the narration character count by script with the build parser rules (target 5,700 to 6,100; this file counts 5,968) and the timing sum (at most about 570 s).
 2. Confirm every kept sentence matches the verified Revision 4 wording (git commit ef0ef77), except the joins listed under "Revision 5 changes"; flag any science change in those joins.
 3. Check the new full question stems on the cards (q1, q2, q3, try1, try2): each must contain every given the walkthrough underlines and every condition the model answer needs (in particular q2's amounts, "1.00 L" and "constant temperature", q3's "rigid, insulated" and "same temperature as the mixture", try1's "rigid" and "temperature does not change", try2's "temperature is kept constant throughout"). No givens card or conditions card remains.
 4. Confirm the three syllabus dotpoints are verbatim against `programme/syllabus/chem-2017-y12.json` (C5-IQ1-04, C5-IQ2-02, and C5-IQ2-01 as the stem ending "for example:"), including the curly apostrophe in "Le Chatelier’s".
@@ -306,3 +306,8 @@ Error-only check, with a short learning trace (`docs/production/student-learning
 - **Owner rule of 18 Oct.** The Revision 4 givens card (3a) and conditions card (7a) are gone; the full worded stems carry the givens, underlined in amber at their cues.
 - **Doubts.** (a) try2-answer's "Temperature would show no jump on the concentration graph" now rests on C2 to C4 recall rather than a fingerprint panel; flagged for the learning trace. (b) q3's family sentence names the catalyst and added pure solid without a worked case; they rest on C4b and C5 recall ("which K leaves out" is spoken). (c) The owner steer of 14 Oct stresses industrial and open against closed; Revision 5 moves them to a proposed part 3 rather than squeezing them, and root should confirm this reading of the steer.
 - **No em dashes** in this file (to be searched by script).
+
+
+## Root fix (6 Nov 2026)
+
+- Stated narration total corrected to 5,968 characters (sum of scene strings, matching the brief 194 recount). No narration change.

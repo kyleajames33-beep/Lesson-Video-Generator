@@ -6,13 +6,13 @@ Earlier status, Revision 2 (31 Oct): learning review and science check resolved;
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
-Narration 5,785 characters (Revision 2, summed per scene), 16 scenes, about 9.3 minutes (555 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Narration 5,794 characters (Revision 2, summed per scene), 16 scenes, about 9.3 minutes (555 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
 Revision 2 changes (31 Oct; resolving `../checks/m8g02-learning-review.md` (learning L1 to L3) and `../checks/m8g02-claude-science-check.md` (science S1 to S3); the two reviews describe the same three issues, counted once):
 - Quantification limit, not detection limit (learning L1 and science S1, blocker, as proposed): Q3's card now gives "The method's validated quantification limit is 0.001 mg L⁻¹." Scene 4b says "Its validated quantification limit, the lowest concentration this method can measure with the stated reliability, is point zero zero one". The gloss tag, guideline-bar tick, decision board row, key note 4, model answer, vocabulary, Boundary, teaching checks, Numbers to verify and metadata match. A detection limit only shows lead is present; it does not make a result near the guideline reliable. The ratio 0.005 ÷ 0.001 = 5 is unchanged.
 - Q1 mistake comparison (learning L2 and science S2, as proposed): scene 2e now says "nearly one milligram per litre below the dilution-corrected result" (6.2 against 7.1 mg L⁻¹, not the diluted 1.42).
 - Q3 remedy (learning L3 and science S3, as proposed, merged): scene 4c's last sentence is now "The school needs repeat samples from every bubbler over several days, and advice from its water authority to find and control the lead source." The cue word moves from "from" to "source". Morning flushing and replacing named fittings are no longer presented as a proven fix in the answer box, model answer or author note (d); the first-draw and flushed comparison stays.
-- Length: 5,785 characters (Revision 1: 5,724), about 555 s, inside the band and under 570 s. No cut needed.
+- Length: 5,794 characters (Revision 1: 5,724), about 555 s, inside the band and under 570 s. No cut needed.
 - Declined: none. Open owner questions: none. Codex asset brief unchanged.
 
 Working title: "Calibration and water-analysis data: HSC-style practice". Video type 3 in the teaching playbook (practice walkthrough), authored questions only. Every question is written for HSCScience and is never presented, said or implied to be an official NESA question; every question card carries the tag "HSC-style question, written for HSCScience". This is a hard-practice video: the worked walkthroughs are the content, so each walkthrough may run longer than the brief end-of-video feedback rule (AGENTS.md exception, owner 16 Oct). Each question is shown as an exam would word it (stem, data, demands); it ends "Pause here to answer." with a 10 s countdown and keeps the full question on screen during the attempt; the walkthrough underlines each given in the question text at the cue where it is used (owner rule, 18 Oct: no givens card); it reasons one stage per scene and ends with one crossed-out classic mistake. Learner copy never mentions marks. **Route id:** `chem-m8-g02` (playlist order 10, after chem-m8-p04 and, per the route review's change 10, after skills-s06; before chem-m8-c05). Production label G02 (Chemistry, Module 8). Lesson key `m8g02`.
@@ -221,9 +221,9 @@ Counted by script (16 scenes; `### N.` headings with letter suffixes, "> " lines
 | 4d. q3-mistake (the classic mistake) | 285 |
 | 5. decision-board | 389 |
 | 6. key-notes (reuse take: key-notes; quiet, about 60 seconds) | 75 |
-| **Total** | **5,785** |
+| **Total** | **5,794** |
 
-**5,785 characters, 16 scenes** (inside 5,500 to 6,800).
+**5,794 characters, 16 scenes** (inside 5,500 to 6,800).
 
 Timing: speech about 435 s; padding about 32 s (16 scenes at 2 s); stated holds about 3 s (hook 1 s, decision board 2 s); countdowns 30 s (three); the quiet notes hold beyond its speech about 55 s: **about 555 s, 9.3 minutes**. Revision 2 added 61 characters (about 5 s): the quantification-limit gloss in 4b (+43), "dilution-corrected" in 2e (+11) and the water-authority sentence in 4c (+7).
 
@@ -317,3 +317,8 @@ L04 and L08 findings for this route (L04's lead guideline, L04's "linear through
 - **No repeated examples.** See the near-match check.
 - **Doubts.** (a) Q1's undiluted reading is set below the straight line on purpose (author note a); the narration says "about six point two" and "nearly one milligram per litre below", never a percentage. (b) Q2 describes the reagent without naming it (author note b). (c) Q3's numbers are illustrative and the narration hedges "many students", and the fix refers to repeat sampling and the water authority rather than a remedy.
 - **No em dashes** in this file (to be searched by script).
+
+
+## Root fix (6 Nov 2026)
+
+- Stated narration total corrected to 5,794 characters (sum of scene strings, matching the brief 194 recount). No narration change.
