@@ -41,3 +41,9 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`; M
 26. **New plate approved:** `y11c-beaker-white-precipitate-v1.png` for m2-v01, painted as an edit of the existing colourless-solution beaker (same vessel, same angle, white precipitate settling). Paint after the error check.
 27. **`m6-analytical-balance-v1.png`** (ws-v04 scene 3) inspected by root: a clean painted analytical balance with draught shield and beaker of white solid. Fit.
 28. **Headline counts** are the sum of scene strings (brief 180 count correction). The repairs normalised every Module 2 headline in this wave to that method.
+
+## After brief 181 repairs (6 November 2026)
+
+29. **m2-v12's cue word is "accurately"** (was "precisely" in decision 11). m2-v11 scene 13 now also says "known accurately"; its "exactly?" chip stays as the question m2-v12 answers.
+30. **m2-v11's ppm unit-basis caveat** is a grey on-screen tag, not speech. Accepted: the spoken claim ("volume-based unit") is correct as said.
+31. **ws-v07 at about 567 s** is accepted under the 570 s cap; its named 58-character trim in scene 7 is the first reserve.

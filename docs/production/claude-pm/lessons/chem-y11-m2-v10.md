@@ -1,8 +1,8 @@
 # Year 11 Chemistry M2 V10: Concentration and c = n/V. How does concentration link solution volume with moles? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,672 characters, 15 scenes, about 517 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,672 characters, 15 scenes, about 519 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: tenth Module 2 video of Year 11 Chemistry (2017 syllabus), playlist entry 44, between `chem-y11-ws-v07` and `chem-y11-m2-v11`. First video of inquiry question 3, "How are chemicals in solutions measured?". Templates: `chem-y11-m2-v07.md` and `chem-y11-m2-v08.md` (same series and board), `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates); chemistry calculation conventions `chem-m5-g02.md`. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m2-v10` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Use c=n/V with litres and distinguish chemical amount from concentration; solve for each variable"; next handoff: "How do we compare molarity with mass concentration and percentage units?"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson06.sa.html` (SHA256 `82c1b29a678a1e32e66b23320f6b12d16e7a6d2449b00e7ec8435946f73f187b`, recomputed, matches the route), sections `l06-formula-title`, `l06-concept-title`, `l06-explorer-title`, `l06-worked-title`. Used: the definition (amount of solute per volume of solution, mol L⁻¹, "also written M"); solute, solvent, solution; the particle picture of equal volumes with different counts (here 8 against 4 in equal sample windows); the three forms of the formula and the "V must be in litres" habit with its 1000-times trap; worked examples 2 (2.00 mol L⁻¹ HCl, 0.300 mol → 150 mL) and 3 (5.85 g NaCl, 500 mL → 0.200 mol L⁻¹); trap 2 (volume of solution, not of solvent). Not used: worked example 1 (the flask example does its job), the g L⁻¹ conversion card and trap 3 (m2-v11 owns unit comparisons), the sugar-in-a-pool hook (needs object plates; the flask and beaker contrast does the same job with apparatus students have just seen), the formula triangle as a teaching device (shown only in the key notes as a recall aid; the units carry the explanation).
 
@@ -38,7 +38,10 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **container pair** (flask plate and beaker plate side by side with coded mol and volume chips); **sample windows** (scene 2: a small square "1 mL" window lifts out of each container and enlarges, showing formula units on a pale blue field); **unit bar** (scene 3: "mol L⁻¹" splits into "mol" over "L", which become n over V); **litre converter** (scene 4: "50 mL ÷ 1000 = 0.0500 L", with a ruler-like bar of 1000 mL equal to 1 L); **calculation layout** (task strip, equation strip "c = n ÷ V" with the solved-for letter in amber, grouped givens with units, rows one at a time); **pipette sample** (scene 5: the pipette plate draws 25.0 mL from the flask; its window shows the same crowding); `Countdown`, `QuestionCard`, `Chip` with `cross`, scribble circle, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key (continues m2-v07):** masses amber; moles teal; volumes navy; concentrations violet; givens navy; earlier rows dimmed; crossed items red strike.
-- **Board layout (constant):** heading top left; containers at the left; equation strip, givens and rows at the right.
+- **Board layout (Revision 2):** heading top left; containers at the left; equation strip, givens and rows at the right. Stages change at 3 (calculation side), 5 (pipette stage with the sample slider), 7 (volume calculation), 8 (mass calculation) and 9 (volumetric flask); no stage runs longer than about 76 s (scenes 3 and 4, which add a new row or converter every few seconds).
+- **Colour roles (Revision 2, fixed for the whole video):** masses amber; moles teal; volumes navy; concentrations violet; the solved-for letter amber in the equation strip; givens navy; framed answers in a dark-ink box with a green tick; crossed mistakes red strike plus a red hand tag; hand-font teacher tags take the colour of the quantity they mark (violet on concentrations, teal on moles, navy on volumes, red on slips).
+- **Type sizes (Revision 2, 1080p):** the current working row at least 44 px (rows 48 px; the equation strip "c = n ÷ V" 56 px); live readouts (sample slider volume, moles, concentration) about 52 px; givens and supporting rows 30 to 36 px; window counts 44 px; hand-font tags 34 to 40 px; nothing a student must read below 26 px (grey tags 26 px). All text above the bottom 12% of the frame.
+- **Simulation (Revision 2): the sample slider (scene 5).** A live control on the core idea (amount is not concentration): a coded volume slider on the pipette sweeps the sample from 10.0 to 25.0 to 50.0 mL while two readouts update: teal "n = c × V" climbs 0.00400 → 0.0100 → 0.0200 mol, and violet "c = 0.400 mol L⁻¹" stays locked (it pulses "same" at each stop). The pipette's "1 mL" window keeps showing 8 formula units throughout.
 
 Author notes (not learner copy):
 (a) Flask: 2.00 g CaCO₃ → 0.019982 mol CaCl₂ (ws-v07 note b), said "about zero point zero two zero zero"; volume taken as 50.0 mL; 0.0200 ÷ 0.0500 = 0.400 mol L⁻¹ (0.39964 unrounded). The leftover hydrochloric acid in the flask is not mentioned; the question is about calcium chloride only.
@@ -69,47 +72,47 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. which is more concentrated? (countdown, 3 seconds at the end)
 > Here's our flask from last time, with about zero point zero two zero zero moles of calcium chloride in about fifty millilitres of solution. Now compare a big beaker, with zero point one zero zero moles of calcium chloride in five hundred millilitres. The beaker holds five times as many moles. So which solution is more **concentrated**?
 
-Visual: opens on ws-v07's final frame; the "Next" chip fades, the balance and conclusion card fade, and the flask (`y11c-flask-acid-plug-spent-v1.png`) stands alone at the left with its two chips. On "big beaker" the new beaker plate `y11c-beaker-colourless-solution-v1.png` slides in at the right with chips "CaCl₂: 0.100 mol" and "volume: 500 mL". On "five times as many moles" a teal bar pair compares 0.0200 and 0.100 mol (beaker's bar five times longer). On "concentrated" two chips "flask" and "beaker" write; the 3 s `Countdown` ring runs. The heading writes during the countdown: "Concentration: c = n ÷ V".
+Visual: opens on ws-v07's final frame; the "Next" chip fades, the balance and conclusion card fade, and the flask (`y11c-flask-acid-plug-spent-v1.png`) stands alone at the left with its two chips, at large uniform scale. On "big beaker" the beaker plate `y11c-beaker-colourless-solution-v1.png` slides in at the right with chips "CaCl₂: 0.100 mol" and "volume: 500 mL" (36 px). On "five times as many moles" a teal bar pair compares 0.0200 and 0.100 mol (beaker's bar five times longer), with a teal hand tag "× 5 moles" and a pen arrow to the beaker. On "concentrated" two chips "flask" and "beaker" write (44 px); the 3 s `Countdown` ring runs. The heading writes in the hand font during the countdown: "Concentration: c = n ÷ V".
 
 ### 2. amount isn't concentration
 > It's the flask. Concentration isn't how much solute there is altogether. It's how much is packed into each part of the solution. Take the same small sample, one millilitre, from each. The flask's millilitre holds twice as many calcium chloride units as the beaker's. So the beaker has more solute in total, but the flask is more **concentrated**. A quick reminder of the words. The solute is what dissolves, the solvent is the water it dissolves in, and the solution is the **mixture**.
 
-Visual: "flask" ticks. On "each part of the solution" a faint grid overlays both containers. On "one millilitre" a square window labelled "1 mL" lifts out of each and enlarges side by side: the flask's shows 8 formula units, the beaker's 4 (grey tag "drawn as formula units"). On "twice as many" a counter writes "8" and "4" and a chip "2 ×". On "concentrated" the teal moles bars from scene 1 slide aside and a violet "crowding" bar pair appears, the flask's twice the beaker's. On "solute" a gloss row writes: "solute: what dissolves (CaCl₂)"; on "solvent" "solvent: what it dissolves in (water)"; on "mixture" "solution: the mixture".
+Visual: "flask" ticks. On "each part of the solution" a faint grid overlays both containers. On "one millilitre" a square window labelled "1 mL" lifts out of each and enlarges side by side: the flask's shows 8 formula units, the beaker's 4 (grey tag "drawn as formula units"). On "twice as many" a counter writes "8" and "4" (44 px) and a violet hand tag "2 × as crowded" with a violet pen ring round the flask's window. On "concentrated" the teal moles bars from scene 1 slide aside and a violet "crowding" bar pair appears, the flask's twice the beaker's; the scene 1 "beaker" chip is crossed in red, with a red hand tag "more moles ≠ more concentrated". On "solute" a gloss row writes: "solute: what dissolves (CaCl₂)"; on "solvent" "solvent: what it dissolves in (water)"; on "mixture" "solution: the mixture".
 
 ### 3. moles per litre
 > In chemistry, we measure concentration as the number of moles of solute in each litre of solution. So the formula is c equals n over V. The concentration in moles per litre equals the chemical amount in moles, divided by the volume of the solution in **litres**. The unit tells you the formula. Moles per litre means moles **divided** by litres. You'll also see moles per litre written as a capital M, short for molar.
 
-Visual: board change to the calculation side. On "each litre" a 1 L box outline draws around a cluster of formula units, tag "1 L of solution". On "c equals n over V" the equation strip writes "c = n ÷ V" in violet, teal and navy. On "litres" three unit chips attach: "c (mol L⁻¹)", "n (mol)", "V (L)". On "unit tells you" the unit "mol L⁻¹" enlarges; on "divided" it splits into "mol" over a fraction bar over "L", and these slide onto n and V. On "capital M" a grey chip "mol L⁻¹ = M (molar)".
+Visual: board change to the calculation side. On "each litre" a 1 L box outline draws around a cluster of formula units, tag "1 L of solution". On "c equals n over V" the equation strip writes "c = n ÷ V" in violet, teal and navy. On "litres" three unit chips attach: "c (mol L⁻¹)", "n (mol)", "V (L)". On "unit tells you" the unit "mol L⁻¹" enlarges to about 120 px; on "divided" it splits into "mol" over a fraction bar over "L", and these slide onto n and V, with a violet hand tag "per = divided by" and pen arrows from each part to its letter. On "capital M" a grey chip "mol L⁻¹ = M (molar)".
 
 ### 4. litres first
 > Lab volumes are usually in millilitres, so convert first. There are a thousand millilitres in a litre, so divide by a **thousand**. Fifty millilitres is zero point zero five zero zero litres. So our flask is zero point zero two zero zero moles over zero point zero five zero zero litres, which is zero point four zero zero moles per **litre**. The beaker is zero point one zero zero over zero point five zero zero, which is zero point two zero zero. The flask is twice as concentrated, just like the **picture**. Put in fifty instead of zero point zero five, and your answer comes out a thousand times too small.
 
-Visual: the litre converter: a bar "1000 mL = 1 L". On "thousand" a row "V = 50.0 mL ÷ 1000 = 0.0500 L" (grey tag "taking the volume as 50.0 mL"). Task strip "Find the concentration of CaCl₂ in each container". Givens (navy): flask "n = 0.0200 mol, V = 50.0 mL"; beaker "n = 0.100 mol, V = 500 mL". On "litre" (first full) row "c(flask) = 0.0200 ÷ 0.0500 = 0.400 mol L⁻¹" (bright). On "zero point two zero zero" row "c(beaker) = 0.100 ÷ 0.500 = 0.200 mol L⁻¹". On "picture" the scene 2 windows return small beside the two results, "8 : 4 = 0.400 : 0.200". On "fifty instead of" a chip "0.0200 ÷ 50 = 0.000400 mol L⁻¹" fades in and is crossed, tag "used mL: 1000 × too small".
+Visual: the litre converter: a bar "1000 mL = 1 L". On "thousand" a row "V = 50.0 mL ÷ 1000 = 0.0500 L" (grey tag "taking the volume as 50.0 mL"). Task strip "Find the concentration of CaCl₂ in each container". Givens (navy): flask "n = 0.0200 mol, V = 50.0 mL"; beaker "n = 0.100 mol, V = 500 mL". On "litre" (first full) row "c(flask) = 0.0200 ÷ 0.0500 = 0.400 mol L⁻¹" (bright, 48 px), framed in a dark-ink box with a green tick. On "zero point two zero zero" row "c(beaker) = 0.100 ÷ 0.500 = 0.200 mol L⁻¹", framed with a green tick. A navy hand tag "litres!" with a navy pen ring round "0.0500". On "picture" the scene 2 windows return small beside the two results, "8 : 4 = 0.400 : 0.200", violet hand tag "same 2 : 1". On "fifty instead of" a chip "0.0200 ÷ 50 = 0.000400 mol L⁻¹" fades in and is crossed in red, red hand tag "used mL: 1000 × too small".
 
 ### 5. moles in a sample
 > The formula rearranges, so you can find any of the three. To find moles, multiply: n equals c times V. Say we pipette twenty-five point zero millilitres out of the flask. Its concentration is still zero point four zero zero moles per litre, because every part of a solution is the same. But it holds only zero point four zero zero times zero point zero two five zero, which is zero point zero one zero zero **moles**. Taking a sample changes the amount, but not the **concentration**.
 
-Visual: equation strip "n = c × V" (n amber). On "pipette" the pipette plate (`m6-volumetric-pipette-filler-v1.png`) dips into the flask by code and lifts out with a coded liquid column; a chip "25.0 mL". On "still zero point four zero zero" the pipette's own "1 mL" window shows 8 formula units, matching the flask's. On "zero point four zero zero times" row "V = 25.0 ÷ 1000 = 0.0250 L"; on "moles" row "n = 0.400 × 0.0250 = 0.0100 mol" (bright). On "concentration" two chips write under the pipette: "amount: 0.0100 mol (less)" and "concentration: 0.400 mol L⁻¹ (same)".
+Visual: stage change to the pipette stage: the flask plate at the left, large; equation strip "n = c × V" (n amber) at the top right. On "pipette" the pipette plate (`m6-volumetric-pipette-filler-v1.png`) dips into the flask by code and lifts out with a coded liquid column; a chip "25.0 mL". On "still zero point four zero zero" the pipette's own "1 mL" window shows 8 formula units, matching the flask's, with a violet hand tag "same crowding". On "zero point four zero zero times" row "V = 25.0 ÷ 1000 = 0.0250 L"; on "moles" row "n = 0.400 × 0.0250 = 0.0100 mol" (bright, 48 px), framed in a dark-ink box with a green tick. On "Taking a sample" the sample slider runs (simulation): the pipette's volume readout sweeps 10.0 → 25.0 → 50.0 mL (52 px), the teal readout "n" climbs 0.00400 → 0.0100 → 0.0200 mol, and the violet readout "c = 0.400 mol L⁻¹" stays locked, pulsing at each stop. On "concentration" two hand tags write under the pipette: teal "amount changes" and violet "concentration doesn't". The slider returns to 25.0 mL.
 
 ### 6. why chemists use concentration
 > This is why chemists use concentration. Once a solution's concentration is known, measuring out a volume measures out moles. Need zero point zero one zero zero moles of calcium chloride for a reaction? Just pipette twenty-five millilitres of the flask's solution. There's no weighing, and the reactant is already dissolved and ready to **react**.
 
-Visual: the pipette from scene 5 holds its "0.0100 mol" chip. On "measuring out a volume measures out moles" a two-way arrow writes between chips "volume (L)" and "moles", labelled "× c". On "Need zero point zero one zero zero moles" a navy request chip "need: 0.0100 mol CaCl₂"; on "pipette twenty-five millilitres" the pipette tilts by code over a small coded reaction beaker outline and its liquid column empties into it; on "react" the request chip ticks, tag "no weighing: volume × concentration".
+Visual: the pipette from scene 5 holds its "0.0100 mol" chip. On "measuring out a volume measures out moles" a two-way arrow writes between chips "volume (L)" and "moles", labelled "× c". On "Need zero point zero one zero zero moles" a navy request chip "need: 0.0100 mol CaCl₂"; on "pipette twenty-five millilitres" the pipette tilts by code over a small coded reaction beaker outline and its liquid column empties into it; on "react" the request chip ticks, with a navy hand tag "no weighing: volume × concentration" and a pen ring round the "× c" arrow.
 
 ### 7. finding a volume
 > To find a volume, divide: V equals n over c. What volume of two point zero zero mole per litre hydrochloric acid holds zero point three zero zero moles? Zero point three zero zero over two point zero zero is zero point one five zero litres, which is one hundred and fifty **millilitres**. Quick check. This acid holds two moles in every litre, so a third of a mole needs well under a litre. And it **does**.
 
-Visual: board resets. Equation strip "V = n ÷ c" (V amber). Task strip "Find the volume of 2.00 mol L⁻¹ HCl that contains 0.300 mol". Givens: "c = 2.00 mol L⁻¹"; "n = 0.300 mol". On "zero point one five zero litres" row "V = 0.300 ÷ 2.00 = 0.150 L"; on "millilitres" "= 150 mL" (bright). On "two moles in every litre" a 1 L bar with "2.00 mol" marked; on "does" a 150 mL segment of it lights, tag "0.300 mol".
+Visual: board resets. Equation strip "V = n ÷ c" (V amber). Task strip "Find the volume of 2.00 mol L⁻¹ HCl that contains 0.300 mol". Givens: "c = 2.00 mol L⁻¹"; "n = 0.300 mol". On "zero point one five zero litres" row "V = 0.300 ÷ 2.00 = 0.150 L" (48 px); on "millilitres" "= 150 mL", framed in a dark-ink box with a green tick. On "two moles in every litre" a 1 L bar with "2.00 mol" marked; on "does" a 150 mL segment of it lights, tag "0.300 mol", and a navy hand tag "well under 1 L: sensible" with a pen tick.
 
 ### 8. starting from a mass
 > Often you start from a mass. Five point eight five grams of sodium chloride is dissolved and made up to five hundred millilitres of solution. First, mass to moles, as in the molar mass video. Five point eight five over fifty-eight point four four is zero point one zero zero moles. Then c equals n over V: zero point one zero zero over zero point five zero zero is zero point two zero zero moles per **litre**. Two steps, and the rule is the same as always: get to moles **first**.
 
-Visual: board resets. Task strip "Find the concentration of NaCl: 5.85 g made up to 500 mL". Givens: "m(NaCl) = 5.85 g"; "V = 500 mL"; "Na 22.99, Cl 35.45 g mol⁻¹". On "mass to moles" row "MM(NaCl) = 22.99 + 35.45 = 58.44 g mol⁻¹"; on "zero point one zero zero moles" row "n = 5.85 ÷ 58.44 = 0.100 mol"; on "litre" rows "V = 0.500 L" and "c = 0.100 ÷ 0.500 = 0.200 mol L⁻¹" (bright). On "first" a small chain writes: "mass → (÷ MM) → moles → (÷ V) → concentration".
+Visual: board resets. Task strip "Find the concentration of NaCl: 5.85 g made up to 500 mL". Givens: "m(NaCl) = 5.85 g"; "V = 500 mL"; "Na 22.99, Cl 35.45 g mol⁻¹". On "mass to moles" row "MM(NaCl) = 22.99 + 35.45 = 58.44 g mol⁻¹"; on "zero point one zero zero moles" row "n = 5.85 ÷ 58.44 = 0.100 mol"; on "litre" rows "V = 0.500 L" and "c = 0.100 ÷ 0.500 = 0.200 mol L⁻¹" (bright, 48 px), the answer framed in a dark-ink box with a green tick. On "first" a small chain writes: "mass → (÷ MM) → moles → (÷ V) → concentration", with a teal pen ring round "moles" and a teal hand tag "moles first".
 
 ### 9. the volume of the solution
 > Notice the words "made up to". V is the volume of the whole solution, not the water you started with. So you dissolve the salt in a little water, then add water until the solution reaches the line on a volumetric **flask**. Dissolving the salt in five hundred millilitres of water would give slightly more than five hundred millilitres of solution, so the real concentration would be a little **lower**. A later video shows how to do this accurately.
 
-Visual: the words "made up to" underline in the task strip. On "not the water you started with" two chips "V = volume of solution" (tick) and "V = volume of water added" (crossed). On "flask" the volumetric flask plate (`m6-volumetric-flask-v1.png`) appears with a coded liquid line rising to its etched mark, tag "500 mL of solution". On "slightly more" a ghost beaker shows "500 mL water + salt → about 501 to 502 mL" (grey tag "the salt takes up a little space"); on "lower" an amber down-arrow beside "c". A grey chip "standard solutions: later video" sits at the foot.
+Visual: stage change: the words "made up to" underline in amber pen in the task strip, which moves to the top; the volumetric flask stage fills the frame. On "not the water you started with" two chips "V = volume of solution" (tick) and "V = volume of water added" (crossed in red, red hand tag "not the water"). On "flask" the volumetric flask plate (`m6-volumetric-flask-v1.png`, large, uniform scale) appears with a coded liquid line rising to its etched mark, a navy pen ring round the mark and a navy hand tag "500 mL of solution". On "slightly more" a ghost beaker shows "500 mL water + salt → about 501 to 502 mL" (grey tag "the salt takes up a little space"); on "lower" an amber down-arrow beside "c". A grey chip "standard solutions: later video" sits at the foot.
 
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. Three point seven zero grams of calcium chloride is dissolved in water and made up to two hundred and fifty point zero millilitres of solution. Calculate the concentration in moles per litre. Pause here to answer.
@@ -119,7 +122,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 11. feedback 1 (brief)
 > Calcium chloride's molar mass is one hundred and ten point nine eight, so that's zero point zero three three three moles. The volume is zero point two five zero zero litres. Zero point zero three three three over zero point two five zero zero is zero point one three three moles per litre. Using two hundred and fifty instead of litres gives an answer a thousand times too **small**.
 
-Visual: card shrinks to the top. Rows: "MM(CaCl₂) = 40.08 + 2(35.45) = 110.98 g mol⁻¹"; "n = 3.70 ÷ 110.98 = 0.0333 mol"; "V = 250.0 ÷ 1000 = 0.2500 L"; "c = 0.0333 ÷ 0.2500 = 0.133 mol L⁻¹" (bright). On "small" a chip "1.33 × 10⁻⁴ mol L⁻¹ (used 250 mL)" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px): "MM(CaCl₂) = 40.08 + 2(35.45) = 110.98 g mol⁻¹"; "n = 3.70 ÷ 110.98 = 0.03334 mol"; "V = 250.0 ÷ 1000 = 0.2500 L"; "c = 0.03334 ÷ 0.2500 = 0.133 mol L⁻¹", framed in a dark-ink box with a green tick (grey tag "spoken rounded; 0.03334 carried"). On "small" a chip "1.33 × 10⁻⁴ mol L⁻¹ (used 250 mL)" fades in and is crossed in red, red hand tag "mL, not L". Hold about 1 second.
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A bottle holds sodium hydroxide solution at zero point one five zero moles per litre. What volume of it contains zero point zero one two zero moles? And what is the concentration of a twenty point zero millilitre portion poured from the bottle? Pause here to answer.
@@ -129,24 +132,24 @@ Visual: `QuestionCard`: "A bottle contains sodium hydroxide solution with a conc
 ### 13. feedback 2 (brief)
 > V equals n over c. Zero point zero one two zero over zero point one five zero is zero point zero eight zero zero litres, or eighty point zero millilitres. The portion is still zero point one five zero moles per litre, because pouring some out doesn't change how much is in each litre. Multiplying instead of dividing is the classic **slip**.
 
-Visual: card shrinks to the top. Rows: "V = n ÷ c = 0.0120 ÷ 0.150 = 0.0800 L = 80.0 mL" (bright); "(b) c = 0.150 mol L⁻¹: a portion of a solution has the same concentration". On "slip" a chip "V = 0.0120 × 0.150 = 0.0018 L" fades in and is crossed. Hold about 1 second.
+Visual: card shrinks to the top. Rows (44 px): "V = n ÷ c = 0.0120 ÷ 0.150 = 0.0800 L = 80.0 mL", framed in a dark-ink box with a green tick; "(b) c = 0.150 mol L⁻¹: a portion of a solution has the same concentration", framed with a green tick. On "slip" a chip "V = 0.0120 × 0.150 = 0.0018 L" fades in and is crossed in red, red hand tag "divide, don't multiply". Hold about 1 second.
 
 ### 14. conclusion and handoff
 > So concentration links them: c equals n over V, with V in litres. Multiply by the volume to get moles, or divide moles by concentration to get a volume. But labels don't always use moles. A bag of saline from a hospital says zero point nine percent sodium chloride. Is that more concentrated, less, or the same as zero point one five four moles per litre? How do we compare molarity with mass concentration and percentage **units**?
 
-Visual: the memory line writes at the top: "Moles per litre: n over V, with V in litres." The three forms write in a column: "c = n ÷ V", "n = c × V", "V = n ÷ c". On "labels don't always use moles" the board clears to the beaker plate at the left; on "zero point nine percent" a label card "saline: sodium chloride 0.9% (w/v)" writes beside it; on "zero point one five four moles per litre" a second card at the right "sodium chloride solution: 0.154 mol L⁻¹"; amber chip "more, less or the same?". On "units" the chip "Next: How do we compare molarity with mass concentration and percentage units?" writes. Hold about 2 seconds. This is the final frame (m2-v11 opens on it).
+Visual: the memory line writes at the top as a framed card (dark-ink frame, violet "Moles per litre", navy "with V in litres", 48 px): "Moles per litre: n over V, with V in litres." The three forms write in a column: "c = n ÷ V", "n = c × V", "V = n ÷ c". On "labels don't always use moles" the board clears to the beaker plate at the left; on "zero point nine percent" a label card "saline: sodium chloride 0.9% (w/v)" writes beside it; on "zero point one five four moles per litre" a second card at the right "sodium chloride solution: 0.154 mol L⁻¹"; amber chip "more, less or the same?". On "units" the chip "Next: How do we compare molarity with mass concentration and percentage units?" writes. Hold about 2 seconds. This is the final frame (m2-v11 opens on it).
 
 ### 15. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Concentration: the amount of solute in each litre of solution. c = n ÷ V; units mol L⁻¹ (also M).
-2. V must be in litres: mL ÷ 1000 = L. V is the volume of the final solution, not the water added.
-3. n = c × V and V = n ÷ c (triangle: n on top, c × V below).
-4. Amount is not concentration: a sample has the same c but fewer moles.
+1. Concentration: moles of solute in each litre of solution. c = n ÷ V, in mol L⁻¹ (M).
+2. V in litres (mL ÷ 1000). V is the final solution's volume, not the water added.
+3. n = c × V and V = n ÷ c.
+4. A sample has the same c but fewer moles.
 5. From a mass: n = m ÷ MM first, then c = n ÷ V.
 
-Memory aid (large, on the notes screen): *Moles per litre: n over V, with V in litres.*
+Memory aid (framed card on the notes screen, as in scene 14): *Moles per litre: n over V, with V in litres.* Notes in role colours at 36 px (concentration violet, moles teal, volume navy).
 
 At the end the notes cross-fade back to scene 14's final frame.
 
@@ -203,7 +206,7 @@ Checked with Python (5 November); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules): **5,672 characters**, 15 scenes. At 13.3 characters per second the speech is about 426 s; add about 12 s of holds and settling (the sample windows in 2, the pipette in 5 and 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 517 s (8.6 minutes)**.
+Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,672 characters**, 15 scenes (unchanged; no speech edits). At 13.3 characters per second the speech is about 426 s; add about 14 s of holds and settling (the sample windows in 2, the pipette in 5 and 6, plus about 2 s for the sample slider to settle at 25.0 mL), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 519 s (8.7 minutes)**.
 
 ## Scene list and build ids
 
@@ -211,22 +214,23 @@ Lesson key `c-y11-m2-v10` (route chem-y11-m2-v10; root to confirm). Suggested ex
 
 In order (15 scene headings, all `### N.`): which-concentrated, amount-not-concentration, moles-per-litre, litres-first, sample-moles, why-useful, find-volume, from-mass, solution-volume, attempt-1, feedback-1, attempt-2, feedback-2, conclusion-handoff, key-notes.
 
-Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: ws-v07's final frame into scene 1 by camera continue (balance and card fade); 1 to 2 camera push to the windows; 2 to 3 clear change; 3 to 4 to 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
+Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): ws-v07's final frame into scene 1 by camera continue (balance and card fade); 1 to 2 camera push to the windows; 2 to 3 clear change; 3 to 4 camera continue; 4 to 5 stage change to the pipette stage (sample slider); 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 stage change to the volumetric flask stage; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: prediction countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v10-learning-review.md`, `checks/c-y11-m2-v10-science-check.md`.
 
 ## Assets
 
-Have (inspected 5 November; uniform scaling only):
-- `y11c-flask-acid-plug-spent-v1.png` (requested in `chem-y11-m2-v09.md`): opening and scenes 1, 2, 4, 5, 6.
+Have (inspected 5 November; re-inspected 6 November with the Read tool; uniform scaling only):
+- `y11c-flask-acid-plug-spent-v1.png` (delivered by brief 181: clear conical flask, still liquid, loose cotton plug): opening and scenes 1, 2, 4, 5, 6.
+- `y11c-beaker-colourless-solution-v1.png` (delivered by brief 181: clear beaker of colourless solution, native 1254 × 1254, displayed at uniform scale): scene 1, final frame.
 - `public/assets/chemistry/m6-volumetric-pipette-filler-v1.png` (bulb pipette with a red filler, diagonal): scenes 5 and 6 (rotated by code; no hand).
 - `public/assets/chemistry/m6-volumetric-flask-v1.png` (stoppered volumetric flask with an etched mark): scene 9.
 - **Inspected, not used:** `m6-beaker-v1.png` (empty beaker; the hook needs a visible solution, so the new plate below is an edit of it); `c11-cuso4-beaker-dissolved-v1.png` (blue: reads as copper sulfate, not calcium chloride); `m5x-graduated-pipette-v1.png` (a bulb pipette fits "pipette 25.0 mL").
 
 Need (new plates, Codex):
-1. `y11c-beaker-colourless-solution-v1.png`: essential (scene 1, final frame; m2-v11 reuses it).
+1. `y11c-beaker-colourless-solution-v1.png`: essential (scene 1, final frame; m2-v11 reuses it). Delivered (brief 181). Revision 2 adds no new plate request.
 
-Coded: container chips, sample windows, unit bar, litre converter, calculation layout, pipette liquid column, label cards, chips, cards, countdowns, key notes board.
+Coded: container chips, sample windows, unit bar, litre converter, calculation layout, pipette liquid column, sample slider and readouts, framed answers, hand tags and pen marks, label cards, chips, cards, countdowns, key notes board and memory card.
 
 ## Codex asset brief (Year 11 Chemistry M2 v10)
 
@@ -270,3 +274,20 @@ Previous: How do we communicate a chemistry conclusion that evidence supports? N
 
 - Revision 1 has had no independent review. Next: student learning review (does the hook's surprise land; are the windows read as samples of equal size; is the "made up to" point clear without the technique), then the science check and Codex error check.
 - Checker output (5 November): narration 5,672 characters; per scene (1 to 15): 333, 478, 410, 600, 476, 342, 399, 473, 442, 224, 379, 276, 337, 428, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+- Checker output (Revision 2, 6 November): unchanged narration, 5,672 characters (sum of scene strings); no em dash; every bold cue quoted in its scene's Visual in spoken order.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 181 findings (`checks/c-y11-m2-v10-learning-review.md`, `checks/c-y11-m2-v10-science-check.md`): none required (0 blockers, 0 should fix, 0 optional). Kept as the reviews ask: the grey "taking the volume as 50.0 mL" tag, and the clear-liquid beaker at native aspect (delivered by brief 181; displayed at uniform scale).
+
+Visual upgrade (light pass):
+- Scene 1: the existing painted flask and beaker plates carry the first 20 s at large scale, with a teal "× 5 moles" hand tag and pen arrow.
+- Live control: the sample slider (scene 5) sweeps the pipetted volume 10.0 → 25.0 → 50.0 mL while "n" climbs (0.00400 → 0.0100 → 0.0200 mol) and "c = 0.400 mol L⁻¹" stays locked ("amount changes", "concentration doesn't").
+- Framed answers with a green tick: 0.400 and 0.200 mol L⁻¹ (4), 0.0100 mol (5), 150 mL (7), 0.200 mol L⁻¹ (8), 0.133 mol L⁻¹ (11, 0.03334 carried), 80.0 mL and the same 0.150 mol L⁻¹ (13). Crossed slips carry red hand tags ("used mL: 1000 × too small", "not the water", "mL, not L", "divide, don't multiply").
+- Hand tags and pen marks in role colours in every teaching scene (1 to 9), for example "2 × as crowded", "per = divided by", "litres!", "same crowding", "well under 1 L: sensible", "moles first", "500 mL of solution".
+- Stage changes at 5 (pipette stage) and 9 (volumetric flask stage); no stage longer than about 76 s.
+- Memory line as a framed card (scene 14 and the notes screen); key notes trimmed to five short bullets (about 330 characters).
+- Decisions gain "Colour roles", "Type sizes" (current row 48 px, readouts 52 px, floor 26 px), "Simulation" and a revised "Board layout".
+- No new plate requests.
+
+Counts: 5,672 characters, unchanged (no speech edits); about 517 to about 519 s (slider settling).
