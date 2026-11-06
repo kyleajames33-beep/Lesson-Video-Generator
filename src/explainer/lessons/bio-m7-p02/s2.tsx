@@ -90,14 +90,17 @@ export const SceneControls: React.FC = () => {
 				<Rail lit={1} at={4} />
 				<RowBox x={100} y={255} w={1740} h={335} at={K7.neg - 6} />
 				<RowBox x={100} y={608} w={1740} h={335} at={K7.pos - 6} />
-				<Dish p={PLATES.clear} cx={R1.cx} cy={R1.cy} w={R1.w} o={prog(f, K7.neg, 14) * (1 - swap + back)} />
-				<Dish p={PLATES.few} cx={R1.cx} cy={R1.cy} w={R1.w} rot={180} o={swap * (1 - back)} />
-				<WText x={470} y={330} text="negative control: sterile water, same handling → expect no growth" size={36} maxW={1330} color={GREEN} hand weight={700} at={K7.sterile} />
-				<CTag x={470} y={440} text="growth here → contamination: results invalid" at={K7.added} color={TERRA} size={34} dim={prog(f, K7.pos, 12)} />
+				<Dish p={PLATES.clear} cx={R1.cx} cy={R1.cy} w={R1.w} o={prog(f, K7.neg, 14)} />
+				<Sx x={R1.cx} y={R1.cy + 152} text="expected: clear" size={28} color={GREEN} hand weight={700} anchor="middle" at={K7.nothing} />
+				<Dish p={PLATES.few} cx={R1.cx + 330} cy={R1.cy} w={R1.w} rot={180} o={swap} dim={back * 0.5} />
+				<Sx x={R1.cx + 330} y={R1.cy + 152} text="if colonies grow" size={28} color={TERRA} hand weight={700} anchor="middle" at={K7.ifgrows + 4} />
+				<WText x={800} y={330} text="negative control: sterile water, same handling → expect no growth" size={36} maxW={1000} color={GREEN} hand weight={700} at={K7.sterile} />
+				<CTag x={800} y={450} text="growth here → contamination: results invalid" at={K7.added} color={TERRA} size={34} maxW={1000} dim={prog(f, K7.pos, 12)} />
 				<Dish p={PLATES.posCtl} cx={R2.cx} cy={R2.cy} w={R2.w} o={prog(f, K7.pos, 14)} />
 				<TapeStrips x={pg.x} y={pg.y} r={pg.r} at={K7.pos + 8} />
-				<GTag x={470} y={650} text="known harmless culture (supplied, risk group 1)" at={K7.harmless} size={26} />
-				<WText x={470} y={760} text="positive control: expect growth → agar and conditions work" size={36} maxW={1330} color={GREEN} hand weight={700} at={K7.grow} />
+				<Pl p={PLATES.pipette} cx={R2.cx + 340} cy={R2.cy} w={fitW(PLATES.pipette, 330, 230)} o={prog(f, K7.harmless - 6, 14)} />
+				<GTag x={800} y={650} text="known harmless culture (supplied, risk group 1)" at={K7.harmless} size={26} />
+				<WText x={800} y={760} text="positive control: expect growth → agar and conditions work" size={36} maxW={1000} color={GREEN} hand weight={700} at={K7.grow} />
 				<CrossChip x={1840 - crossChipW(both, 30) - 20} y={860} text={both} at={K7.shows + 30} cross={K7.shows + 62} size={30} />
 				{void K7.nothing}{void INK}
 			</Overlay>

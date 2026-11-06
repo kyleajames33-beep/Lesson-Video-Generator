@@ -251,9 +251,9 @@ export const ScenePatient: React.FC = () => {
 	const f = useCurrentFrame();
 	const nd = prog(f, K10.narrow, 14);
 	const rows = [
-		{t: 'reaches the infection?', at: K10.tissue},
-		{t: 'safe at that dose?', at: K10.harming},
-		{t: 'works on the real pathogen?', at: K10.pathogen},
+		{t: 'reach the infected tissue', at: K10.tissue},
+		{t: 'be safe at that dose', at: K10.harming},
+		{t: 'work on the real pathogen', at: K10.pathogen},
 	];
 	const th = [
 		{p: PLATES.tissue, x: 400, w: fitW(PLATES.tissue, 210, 200), tag: 'tissue, not agar', at: K10.tissue},
@@ -261,6 +261,8 @@ export const ScenePatient: React.FC = () => {
 		{p: PLATES.rodCoccus, x: 960, w: fitW(PLATES.rodCoccus, 270, 200), tag: 'teaching strain ≠ pathogen', at: K10.pathogen},
 	];
 	const Z = {cx: 250, cy: 760, w: 260};
+	// The card grows with its rows (and the clinical-trials line), so it is never an empty red box.
+	const medH = 70 + rows.reduce((a, r) => a + 66 * smooth(prog(f, r.at - 6, 12)), 0) + 130 * smooth(prog(f, K10.trials - 6, 12));
 	return (
 		<>
 			<Heading text={QUESTION} at={-200} size={54} />
@@ -269,11 +271,11 @@ export const ScenePatient: React.FC = () => {
 				<Bench />
 				<ClaimTeal text={TEAL_LINE} at={-100} swapText={CONCL} swapAt={K10.narrow + 10} />
 				<g opacity={prog(f, K10.patient, 12) * (1 - 0.45 * nd)}>
-					<rect x={RZ.x} y={470} width={RZ.w} height={420} rx={20} fill={TERRA_SOFT} stroke={nd > 0.5 ? GREYT : TERRA} strokeWidth={3} />
-					<Sx x={RZ.x + 22} y={512} text="as a medicine" size={30} color={nd > 0.5 ? GREY_INK : TERRA} weight={800} at={-100} />
-					{rows.map((r, i) => <Sx key={i} x={RZ.x + 30} y={572 + i * 66} text={'• ' + r.t} size={32} color={nd > 0.5 ? GREY_INK : TERRA} hand weight={700} at={r.at} />)}
+					<rect x={RZ.x} y={470} width={RZ.w} height={medH} rx={20} fill={TERRA_SOFT} stroke={nd > 0.5 ? GREYT : TERRA} strokeWidth={3} />
+					<Sx x={RZ.x + 22} y={516} text="as a medicine, a drug must:" size={32} color={nd > 0.5 ? GREY_INK : TERRA} weight={800} at={-100} />
+					{rows.map((r, i) => <Sx key={i} x={RZ.x + 30} y={580 + i * 66} text={'• ' + r.t} size={34} color={nd > 0.5 ? GREY_INK : TERRA} hand weight={700} at={r.at} />)}
 				</g>
-				<g opacity={1 - 0.45 * nd}><CTag x={RZ.x + 24} y={790} text="shown by clinical trials (antibiotics video)" at={K10.trials} color={GREY_INK} size={26} maxW={RZ.w - 48} dim={nd} /></g>
+				<g opacity={1 - 0.45 * nd}><CTag x={RZ.x + 24} y={752} text="shown by clinical trials (antibiotics video)" at={K10.trials} color={GREY_INK} size={28} maxW={RZ.w - 48} dim={nd} /></g>
 				{th.map((t, i) => (
 					<g key={i} opacity={prog(f, t.at, 12) * (1 - 0.5 * nd)}>
 						<Pl p={t.p} cx={t.x} cy={430} w={t.w} />

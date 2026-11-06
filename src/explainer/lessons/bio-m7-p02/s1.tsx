@@ -214,9 +214,11 @@ export const SceneDilution: React.FC = () => {
 			<Overlay>
 				<Rail lit={2} at={-100} />
 				<Bench />
-				<Dish p={PLATES.lawn} cx={lerp(300, 170, m)} cy={lerp(520, 320, m)} w={lerp(300, 110, m)} o={prog(f, K5.film - 6, 14)} dim={m * 0.7} />
-				<CTag x={300} y={690} text="undiluted: a solid film, can't count" at={K5.film + 6} out={K5.steps} color={TERRA} size={30} anchor="middle" />
-				<Pl p={PLATES.rack} cx={RK.cx} cy={RK.cy} w={RK.w} o={prog(f, K5.steps, 16)} />
+				<Pl p={PLATES.rack} cx={RK.cx} cy={RK.cy} w={RK.w} o={prog(f, 0, 14)} />
+				<GTag x={bottle[0]} y={bottle[1] - 150} text="creek sample: millions of microbes per mL" at={K5.millions} out={K5.one} size={26} anchor="middle" />
+				<Dish p={PLATES.lawn} cx={lerp(1570, 1720, m)} cy={lerp(620, 860, m)} w={lerp(380, 150, m)} o={prog(f, K5.plated, 14)} dim={m * 0.7} />
+				<Sx x={1570} y={480} text="plated straight" size={34} color={TERRA} hand weight={700} anchor="middle" at={K5.plated + 4} out={K5.steps} />
+				<CTag x={1570} y={840} text="undiluted: a solid film, can't count" at={K5.film + 6} out={K5.steps} color={TERRA} size={30} anchor="middle" />
 				<CTag x={RZ.x} y={260} text="serial dilution: diluting in repeated tenfold steps" at={K5.steps + 8} color={AMBER_INK} size={32} maxW={RZ.w} />
 				<Pl p={PLATES.gradPip} cx={1160} cy={420} w={fitW(PLATES.gradPip, 200, 200)} o={prog(f, K5.one, 14)} />
 				<MovingDrop a={[bottle[0], bottle[1] - 20]} b={[tops[0][0], tops[0][1] - 10]} at={K5.one + 6} dur={34} label="1 mL" />

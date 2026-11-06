@@ -150,50 +150,58 @@ export const SceneLimits: React.FC = () => {
 };
 
 // ---------- 11. Risk assessment ----------
-const K11 = cues(S('risk-assessment'), {risk: 'The risk assessment', eyes: 'irritate eyes', cancer: 'may cause cancer', glasses: 'wear safety glasses', taste: 'Never taste or', uv: 'ultraviolet torch', wipe: 'Wipe up spills', dispose: 'dispose of liquids'});
-const RC = [{x: 100, w: 600}, {x: 710, w: 400}, {x: 1120, w: 740}];
-const RS = 22, RL = 28;
-type RRow = {cells: [string, string, string]; at: number; thumb?: boolean};
-const rowH = (r: RRow) => Math.max(...r.cells.map((c, i) => wrapT(c, RS, RC[i].w - (i === 2 && r.thumb ? 110 : 36)).length)) * RL + 20;
+const K11 = cues(S('risk-assessment'), {risk: 'The risk assessment', sodium: 'Sodium carbonate', phenol: 'phenolphthalein indicator', eyes: 'irritate eyes', cancer: 'may cause cancer', glasses: 'wear safety glasses', taste: 'Never taste or', uv: 'ultraviolet torch', wipe: 'Wipe up spills', dispose: 'dispose of liquids'});
+const RC = [{x: 100, w: 560}, {x: 670, w: 380}, {x: 1060, w: 800}];
+const RS = 30, RL = 36, TH = 170;
+type RRow = {cells: [string, string, string]; at: number; thumb: 'cups' | 'dropper' | 'cup' | 'uv' | 'handle'};
+const rowH = (r: RRow) => Math.max(116, Math.max(...r.cells.map((c, i) => wrapT(c, RS, RC[i].w - (i === 2 ? TH : 36), true).length)) * RL + 28);
+// Each row arrives on its hazard cue and the table frame grows with it (no empty frame waiting for rows); the
+// painted apparatus that carries the hazard sits at the right of its Control cell.
 export const SceneRisk: React.FC = () => {
 	const f = useCurrentFrame();
 	const rows: RRow[] = [
-		{cells: ['dilute sodium carbonate solution (about 0.1 mol/L)', 'eye irritation', 'safety glasses; rinse eyes with water if splashed'], at: K11.eyes},
-		{cells: ['phenolphthalein indicator (0.5% in ethanol): highly flammable; causes serious eye irritation; may cause cancer (H225, H319, H350)', 'fire; eye irritation; long-term health hazard', "teacher adds the drops; gloves; no flames nearby; small dropper bottle; check the bottle's SDS"], at: K11.cancer, thumb: true},
-		{cells: ['all liquids', 'swallowing', "never taste; label cups 'not for drinking'; no food or drink in the lab"], at: K11.taste},
-		{cells: ['UV torch', 'eye damage', "never point it at anyone's eyes"], at: K11.uv},
-		{cells: ['fluorescent powder', 'eye irritation; breathing the dust', "small amount; avoid breathing the dust: don't shake or blow it; wash hands (or use a fluorescent gel)"], at: K11.wipe},
+		{cells: ['dilute sodium carbonate solution (about 0.1 mol/L)', 'eye irritation', 'safety glasses; rinse eyes with water if splashed'], at: K11.sodium, thumb: 'cups'},
+		{cells: ['phenolphthalein indicator (0.5% in ethanol): flammable; eye irritant; may cause cancer', 'fire; eye irritation; long-term harm', 'teacher adds the drops; gloves; no flames nearby; check the SDS'], at: K11.phenol, thumb: 'dropper'},
+		{cells: ['all liquids', 'swallowing', "never taste; label cups 'not for drinking'; no food or drink"], at: K11.taste, thumb: 'cup'},
+		{cells: ['UV torch', 'eye damage', "never point it at anyone's eyes"], at: K11.uv, thumb: 'uv'},
+		{cells: ['fluorescent powder', 'eye irritation; breathing the dust', "a small amount; don't shake or blow it; wash hands"], at: K11.wipe, thumb: 'handle'},
 	];
-	const Y0 = 260, HH = 46;
+	const Y0 = 250, HH = 48;
 	let y = Y0 + HH;
 	const ys = rows.map(r => { const y0 = y; y += rowH(r); return y0; });
 	const yEnd = y;
+	const grow = rows.reduce((a, r) => a + rowH(r) * smooth(prog(f, r.at - 6, 14)), 0);
+	const yNow = Y0 + HH + grow;
 	return (
 		<>
 			<Heading text={QUESTION} at={-200} size={54} />
 			<Overlay>
 				<Rail lit={6} at={4} />
 				<g opacity={prog(f, K11.risk, 12)}>
-					<rect x={90} y={Y0} width={1770} height={yEnd - Y0 + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
+					<rect x={90} y={Y0} width={1770} height={yNow - Y0 + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
 					<rect x={90} y={Y0} width={1770} height={HH} rx={18} fill="#efe6d4" />
-					{['Hazard', 'Harm', 'Control'].map((t, i) => <Sx key={t} x={RC[i].x + 18} y={Y0 + 33} text={t} size={26} color={i === 0 ? TERRA : INK} weight={800} at={-100} />)}
-					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={yEnd} stroke={EDGE} strokeWidth={2} />)}
+					{['Hazard', 'Harm', 'Control'].map((t, i) => <Sx key={t} x={RC[i].x + 18} y={Y0 + 35} text={t} size={30} color={i === 0 ? TERRA : INK} weight={800} at={-100} />)}
+					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={yNow} stroke={EDGE} strokeWidth={2} />)}
 				</g>
 				{rows.map((r, ri) => {
 					const o = prog(f, r.at, 12);
 					if (o <= 0.01) return null;
 					const dm = prog(f, rows[ri + 1]?.at ?? 1e9, 12);
+					const cy = ys[ri] + rowH(r) / 2, th = Math.min(rowH(r) - 14, 130);
 					return (
-						<g key={ri} opacity={o * (1 - 0.35 * dm)}>
+						<g key={ri} opacity={o * (1 - 0.3 * dm)}>
 							<line x1={100} y1={ys[ri]} x2={1850} y2={ys[ri]} stroke={EDGE} strokeWidth={2} />
-							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 && r.thumb ? 110 : 36)).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={ys[ri] + 30 + k * RL} text={t} size={RS} color={dm > 0.5 ? GREY_INK : ci === 0 ? TERRA : INK} weight={600} at={r.at + ci * 8} />))}
-							{r.thumb ? <Dropper cx={1810} cy={ys[ri] + rowH(r) / 2} h={rowH(r) - 14} label={false} /> : null}
+							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 ? TH : 36), true).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={ys[ri] + 34 + k * RL} text={t} size={RS} color={dm > 0.5 ? GREY_INK : ci === 0 ? TERRA : INK} hand weight={700} at={r.at + ci * 8} />))}
+							{r.thumb === 'cups' ? <><Cup cx={1730} cy={cy} w={th * 0.8} /><Cup cx={1815} cy={cy} w={th * 0.8} pink={1} /></> : null}
+							{r.thumb === 'dropper' ? <Dropper cx={1790} cy={cy} h={th} label={false} /> : null}
+							{r.thumb === 'cup' ? <Cup cx={1790} cy={cy} w={th * 0.85} /> : null}
+							{r.thumb === 'uv' ? <PlateB p={PLATES.handleUV} cx={1790} cy={cy} w={fitW(PLATES.handleUV, 130, th)} /> : null}
+							{r.thumb === 'handle' ? <PlateB p={PLATES.handle} cx={1790} cy={cy} w={fitW(PLATES.handle, 130, th)} /> : null}
 						</g>
 					);
 				})}
-				<GTag x={100} y={yEnd + 30} text="small volumes of dilute solutions: to the sink with plenty of water, or the waste container, as your school's procedure says" at={K11.dispose} size={19} />
-				<CTag x={100} y={yEnd + 96} text="follow your school's risk assessment and each safety data sheet" at={K11.dispose + 20} color={AMBER_INK} size={28} />
-				{void K11.glasses}{void GREYT}{void TEAL}{void VIOLET}{void PINK}{void clamp01}
+				<CTag x={100} y={yEnd + 22} text="dispose of liquids as your teacher directs; follow your school's risk assessment and each SDS" at={K11.dispose} color={AMBER_INK} size={28} maxW={1700} />
+				{void K11.glasses}{void GREYT}{void TEAL}{void VIOLET}{void PINK}{void clamp01}{void GTag}
 			</Overlay>
 		</>
 	);

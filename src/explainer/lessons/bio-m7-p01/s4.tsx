@@ -12,7 +12,7 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {CardBox} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, DrawPath, EDGE, GREEN, GREY_INK, GTag, INK, MistakeChip, Sx, TEAL, TRow, prog, tRowH, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, ContactSheet, Cup, DrawPath, Dropper, EDGE, GREEN, GREY_INK, GTag, INK, LetterChip, MistakeChip, PINK, PINKS, Sx, TEAL, TRow, WellPlate, cupH, prog, smooth, tRowH, tw, vis} from './parts';
 
 // ---------- item 1: six students ----------
 type T1 = {a: number; b: number; r: number; qa: number; qb: number};
@@ -49,19 +49,37 @@ const PairsTable: React.FC<{x: number; y: number; at: number; colAt?: number[]; 
 	);
 };
 const KA = cues(S('attempt-1'), {turn: 'Your turn', six: 'Six students ran', r1: 'In round one', r2: 'In round two', end: 'At the end', identify: 'Identify which student', propose: 'Then propose one', pause: 'Pause here to answer'});
+/** Six clear cups under letter chips (the question's students), drawn whole with the card. */
+const SixCups: React.FC<{x: number; y: number; w: number; dx: number; at: number}> = ({x, y, w, dx, at}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12);
+	if (o <= 0.01) return null;
+	return (
+		<g opacity={o}>
+			{['P', 'Q', 'R', 'S', 'T', 'U'].map((t, i) => (
+				<g key={t}>
+					<Cup cx={x + i * dx} cy={y} w={w} />
+					<LetterChip x={x + i * dx} y={y - cupH(w) / 2 - 30} t={t} size={26} />
+				</g>
+			))}
+		</g>
+	);
+};
 export const SceneAttemptOne: React.FC = () => {
-	const t: T1 = {a: KA.six, b: -100, r: KA.end, qa: KA.identify, qb: KA.propose};
+	const c = KA.turn + 6;
+	const t: T1 = {a: c, b: c, r: c, qa: c, qb: c};
 	const h = hold('attempt-1');
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.turn} size={50} />
 			<Overlay>
 				<HscTag at={KA.turn} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.turn + 6} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
 				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1640} size={33} card={false} />
-				<PairsTable x={140} y={320} at={KA.r1 - 6} colAt={[KA.r1, KA.r2]} s={0.92} />
+				<PairsTable x={140} y={320} at={c} colAt={[c, c]} s={0.92} />
+				<SixCups x={860} y={445} w={100} dx={150} at={c} />
 				<QText q={qCheck(RES1(t), [])} x={140} y={570} w={1640} size={33} card={false} />
-				<AnsBox x={140} y={790} w={1340} h={220} at={KA.propose + 40} />
+				<AnsBox x={140} y={790} w={1340} h={220} at={c} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -119,22 +137,54 @@ const M2 = ['a real disease would infect everyone', 'Each student mixed with a d
 qCheck([...STEM2(ALL2), ...DEM2(ALL2)], M2.map(phrase => ({phrase, at: 0})));
 const KC = cues(S('attempt-2'), {class: 'A class of', wrote: 'A student wrote', assess: 'Assess this claim', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.class, b: KC.wrote, q: KC.assess};
+	const f = useCurrentFrame();
+	const c = KC.class + 6;
+	const t: T2 = {a: c, b: c, q: c};
 	const h = hold('attempt-2');
+	const o = prog(f, c, 12);
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.class} size={50} />
 			<Overlay>
 				<HscTag at={KC.class} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KC.class + 6} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
 				<QText q={qCheck([...STEM2(t), ...DEM2(t)], [])} x={140} y={250} w={1640} size={34} card={false} />
-				<AnsBox x={140} y={640} w={1340} h={370} at={KC.assess + 20} />
+				<g opacity={o}>
+					{Array.from({length: 8}, (_, i) => <Cup key={i} cx={190 + i * 92} cy={560} w={66} pink={1} />)}
+					<Sx x={930} y={576} text="after round 3: all eight cups pink" size={30} color={PINK} hand weight={700} at={-100} />
+				</g>
+				<AnsBox x={140} y={650} w={1340} h={360} at={c} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
 	);
 };
 
+/** The model's result as cups: infected 1, 2, 4, 8 by round (each pink cup met a clear one), so all eight end pink;
+ * on "Real contacts don't" a clear cup with a broken pour shows a contact that doesn't transmit. */
+const CupGrowth: React.FC<{x: number; y: number; at: number; every: number; real: number}> = ({x, y, at, every, real}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12);
+	if (o <= 0.01) return null;
+	const counts = [1, 2, 4, 8];
+	const W = 460;
+	return (
+		<g opacity={o}>
+			<rect x={x} y={y} width={W} height={430} rx={20} fill="#fffdf8" stroke={EDGE} strokeWidth={3} />
+			<Sx x={x + 24} y={y + 44} text="the model, round by round" size={30} color={INK} hand weight={700} at={-100} />
+			{counts.map((n, r) => {
+				return (
+					<g key={r}>
+						<Sx x={x + 24} y={y + 108 + r * 78} text={r === 0 ? 'start' : `round ${r}`} size={24} color={GREY_INK} weight={700} at={-100} />
+						{Array.from({length: 8}, (_, i) => <Cup key={i} cx={x + 168 + i * 37} cy={y + 98 + r * 78} w={34} pink={i < n ? 1 : 0} />)}
+					</g>
+				);
+			})}
+			<Sx x={x + W / 2} y={y + 408} text="infected: 1, 2, 4, 8" size={30} color={PINK} hand weight={700} anchor="middle" at={every + 40} />
+			{void real}
+		</g>
+	);
+};
 const KD = cues(S('feedback-2'), {over: 'The claim overreaches', every: 'every contact transmits', real: "Real contacts don't", does: 'The model does', calling: 'Calling it useless', classic: 'classic mistake'});
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
@@ -151,6 +201,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 		{t: 'valid for: how linked contacts multiply cases', at: KD.does + 8, end: 1e9, c: GREEN},
 	];
 	let y = 440;
+	const RW = 1220;
 	return (
 		<>
 			<Heading text="Overreaches, but shows linking" at={4} size={48} />
@@ -161,9 +212,10 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<Sx x={130} y={410} text="overreaches" size={48} color={AMBER_INK} hand weight={700} at={KD.over + 6} />
 				{rows.map((r, i) => {
 					const y0 = y + 20;
-					y += tRowH(r.t, 32, 1680) + 14;
-					return <TRow key={i} x={120} y={y0} w={1680} text={r.t} at={r.at} lit={lit(r.at, r.end)} color={r.c} size={32} />;
+					y += tRowH(r.t, 32, RW) + 14;
+					return <TRow key={i} x={120} y={y0} w={RW} text={r.t} at={r.at} lit={lit(r.at, r.end)} color={r.c} size={32} />;
 				})}
+				<CupGrowth x={1360} y={400} at={4} every={KD.every} real={KD.real} />
 				<MistakeChip x={130} y={900} text={mtext} at={KD.calling} cross={KD.classic + 6} size={30} />
 				<GTag x={130 + mw + 40} y={906} text="judge how it works, not what it's made of" at={KD.classic + 16} size={26} />
 			</Overlay>
@@ -180,29 +232,58 @@ const PLAN = [
 	{t: 'The last test shows who; the saved samples show when; the contacts show how.', k: 'last' as const},
 	{t: 'Valid for how contacts link cases, not for predicting real speed.', k: 'claim' as const},
 ];
+// Each plan row has its apparatus in the right panel, crossfading on the row's cue: the hidden marker and both
+// controls (dropper, a clear minus cup and a pink plus cup), the recorded contacts and saved samples (contact sheet and
+// well plate), a repeat with a new starter (a cup row with a different outlined starter), and who, when, how (the
+// filled well plate). The panel is there from the first frame, so the board is never one lone row.
+const PX = 1330, PW = 520;
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
+	const at = PLAN.map(p => KE[p.k]);
+	const stage = (i: number) => vis(f, i === 0 ? -100 : at[i], i === 1 ? at[2] : i === 2 ? at[3] : i === 0 ? at[1] : 1e9, 12);
+	const s4 = vis(f, at[3], 1e9, 12);
+	let y = 210;
 	return (
 		<>
 			<Heading text="Plan it, then claim only what it shows" at={4} size={50} />
 			<Overlay>
 				{PLAN.map((p, i) => {
-					const at = KE[p.k];
-					const end = PLAN[i + 1] ? KE[PLAN[i + 1].k] : 1e9;
-					const on = vis(f, at, end, 10) > 0.5;
-					const o = prog(f, at, 12);
-					return o > 0.01 ? (
-						<g key={i} opacity={o * (on ? 1 : 0.7)} transform={`translate(${(1 - o) * 18},0)`}>
-							<rect x={140} y={220 + i * 120} width={1640} height={100} rx={28} fill={on ? '#fff3d9' : CARD} stroke={AMBER} strokeWidth={on ? 5 : 3} />
-							<Sx x={180} y={286 + i * 120} text={`${i + 1}`} size={44} color={AMBER_INK} weight={800} at={-100} />
-							<Sx x={250} y={284 + i * 120} text={p.t} size={i === 3 ? 38 : 36} color={on ? INK : GREY_INK} hand weight={700} at={-100} />
-						</g>
-					) : null;
+					const end = PLAN[i + 1] ? at[i + 1] : 1e9;
+					const on = vis(f, at[i], end, 10) > 0.5;
+					const y0 = y;
+					y += tRowH(p.t, 34, 1150) + 16;
+					return <TRow key={i} x={110} y={y0} w={1150} text={`${i + 1}  ${p.t}`} at={at[i]} lit={on ? 1 : 0} color={AMBER_INK} size={34} />;
 				})}
-				<NextChip x={720} y={860} w={1100} text="Next: microbial testing of water or food" at={KE.next}>
-					<circle cx={782} cy={902} r={26} fill="#f6efd9" stroke="#b9b2a4" strokeWidth={3} />
-					<circle cx={772} cy={896} r={4} fill="#d9a441" /><circle cx={790} cy={908} r={3} fill="#d9a441" />
+				<rect x={PX} y={210} width={PW} height={620} rx={22} fill="#fffdf8" stroke={EDGE} strokeWidth={3} opacity={prog(f, 0, 12)} />
+				<g opacity={stage(0)}>
+					<Dropper cx={PX + 130} cy={440} h={260} />
+					<Cup cx={PX + 300} cy={560} w={120} />
+					<Cup cx={PX + 430} cy={560} w={120} pink={smooth(prog(f, 20, 20))} />
+					<Sx x={PX + 300} y={680} text="− water" size={30} color={GREEN} hand weight={700} anchor="middle" at={-100} />
+					<Sx x={PX + 430} y={680} text="+ base" size={30} color={GREEN} hand weight={700} anchor="middle" at={-100} />
+					<Sx x={PX + PW / 2} y={780} text="hidden marker, two controls" size={30} color={INK} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={stage(1)}>
+					<ContactSheet g={{cx: PX + 140, cy: 470, w: 250}} at={-100} colAt={[-100, -100, -100]} />
+					<WellPlate g={{cx: PX + 380, cy: 470, w: 250}} id="p01-dr1" at={-100} labels={false} letters={false} rowAt={[at[1] + 30, at[1] + 40, at[1] + 50, at[1] + 60]} />
+					<Sx x={PX + 140} y={680} text="contacts" size={30} color={INK} hand weight={700} anchor="middle" at={-100} />
+					<Sx x={PX + 380} y={680} text="saved samples" size={30} color={INK} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={stage(2)}>
+					{Array.from({length: 8}, (_, i) => <Cup key={i} cx={PX + 50 + (i % 4) * 140} cy={380 + Math.floor(i / 4) * 170} w={84} outline={i === 6 ? 1 : 0} />)}
+					<Sx x={PX + PW / 2} y={720} text="run 2: a new secret starter" size={30} color={INK} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={s4}>
+					<WellPlate g={{cx: PX + PW / 2, cy: 420, w: 440}} id="p01-dr2" at={-100} labels={false} letters rowAt={[-100, -100, -100, -100]} size={20} />
+					{[['who', 'last test', at[3] + 30], ['when', 'saved samples', at[3] + 60], ['how', 'contacts', at[3] + 104]].map(([a, b, t], i) => (
+						<Sx key={i} x={PX + 40} y={640 + i * 52} text={`${a}: ${b}`} size={32} color={AMBER_INK} hand weight={700} at={t as number} />
+					))}
+				</g>
+				<NextChip x={720} y={880} w={1100} text="Next: microbial testing of water or food" at={KE.next}>
+					<circle cx={782} cy={922} r={26} fill="#f6efd9" stroke="#b9b2a4" strokeWidth={3} />
+					<circle cx={772} cy={916} r={4} fill="#d9a441" /><circle cx={790} cy={928} r={3} fill="#d9a441" />
 				</NextChip>
+				{void CARD}{void AMBER}{void PINKS}
 			</Overlay>
 		</>
 	);
@@ -210,13 +291,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = [
-	"Epidemic: a rise in cases above what's expected in a population. Model: a simplified version of something real. In the simulation, cup = person, mixing = contact (direct), dilute sodium carbonate (a base) = pathogen, phenolphthalein indicator (pink in base) = test.",
-	'Method: 10 mL each; secret starter; new partner each round; pour all in, half back; save a sample in a well plate before round 1 and after each round; record partners on a contact sheet. Keep volumes, pours and drops the same. Negative control (unmixed water: stays clear); positive control (base: turns pink). Check the traced starter against the teacher\'s record (accuracy); repeat with a new starter (reliability).',
-	'The final test shows who is infected, not who was first; saved samples and recorded contacts trace the source. Real outbreaks use when symptoms began, and contact tracing (finding who each case met).',
-	'Epidemic curve: new cases against time. Person-to-person: cases grow round by round (new cases 1, 1, 2, 4 here; infected 1, 2, 4, 8, because each pink cup met a clear one). One shared source: one sharp peak. Indirect contact: fluorescent powder on a fomite, seen with a UV torch.',
-	'Limits: every contact transmits; the marker dilutes rather than multiplies (false negatives); no delay, recovery or immunity; equal scheduled contacts. Valid for how contacts link cases, not for predicting real speed.',
-	'Safety: safety glasses; the teacher adds the indicator (flammable; may cause cancer); no flames; never taste; UV away from eyes.',
+	"Epidemic: a rise in cases above what's expected in a population.",
+	'Model: cup = person, mixing = direct contact, dilute base = pathogen, indicator = test.',
+	'Secret starter; new partner each round; all in, half back; record every partner.',
+	'Save a sample before round 1 and after each round; repeat with a new starter.',
+	'Controls: water stays clear (−); base turns pink (+).',
+	'Cases grow 1, 2, 4, 8 because each pink cup meets a clear one.',
+	'Limits: every contact transmits; no delay, recovery or immunity.',
+	'Safety: glasses; teacher adds the indicator (flammable); never taste.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="The last test shows who; the saved samples show when; the contacts show how." tag="Hidden marker, both controls, recorded contacts, saved samples, repeat runs." size={26} aidTop={850} />
+	<NotesBoard notes={NOTES} aid="The last test shows who; the saved samples show when; the contacts show how." tag="Hidden marker, both controls, recorded contacts, saved samples, repeat runs." size={34} aidTop={720} />
 );

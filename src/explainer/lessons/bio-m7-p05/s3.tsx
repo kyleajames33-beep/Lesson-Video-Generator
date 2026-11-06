@@ -96,7 +96,7 @@ export const SceneVRA: React.FC = () => {
 };
 
 // ---------- 12. Risk assessment ----------
-const K12 = cues(S('risk-assessment'), {risk: 'The risk assessment', approved: 'approved school procedure', contam: 'contaminating microbe', mult: 'multiplies it', closed: 'keep cultured plates closed', wash: 'wash your hands', forceps: 'Handle discs with forceps', allergic: 'allergic', pen: 'penicillin', autoclave: 'autoclave', disposal: 'before disposal'});
+const K12 = cues(S('risk-assessment'), {risk: 'The risk assessment', harmless: 'a harmless culture', approved: 'approved school procedure', contam: 'contaminating microbe', mult: 'multiplies it', closed: 'keep cultured plates closed', wash: 'wash your hands', forceps: 'Handle discs with forceps', allergic: 'allergic', pen: 'penicillin', autoclave: 'autoclave', disposal: 'before disposal'});
 const RC = [{x: 100, w: 500}, {x: 610, w: 450}, {x: 1070, w: 790}];
 const RS = 30, RL = 38;
 type RRow = {cells: [string, string, string]; at: [number, number, number]; thumb: 'zones' | 'forceps' | 'bag'; chip: string};
@@ -107,46 +107,52 @@ export const SceneRisk: React.FC = () => {
 		{cells: ['antibiotic discs', 'allergic reaction', 'forceps, not fingers; tell your teacher about any allergy'], at: [K12.forceps, K12.allergic, K12.forceps + 12], thumb: 'forceps', chip: 'allergy'},
 		{cells: ['used plates', 'spreading live microbes', 'teacher autoclaves before disposal'], at: [K12.autoclave, K12.autoclave + 8, K12.disposal], thumb: 'bag', chip: 'disposal'},
 	];
-	const Y0 = 400, HH = 52, RowY = Y0 + HH;
-	const rowH = 4 * RL + 30;
+	// Rows stay once said (earlier ones dim a little) and the frame grows with them; before the table, the approved
+	// culture and a grown plate show why the rows are needed.
+	const Y0 = 330, HH = 52;
+	const rowH = (r: RRow) => Math.max(116, Math.max(...r.cells.map((c, i) => wrapT(c, RS, RC[i].w - (i === 2 ? 170 : 36), true).length)) * RL + 30);
+	let y = Y0 + HH;
+	const ys = rows.map(r => { const y0 = y; y += rowH(r); return y0; });
+	const yEnd = y;
+	const yNow = Y0 + HH + rows.reduce((a, r) => a + rowH(r) * smooth(prog(f, r.at[0] - 6, 14)), 0);
+	const intro = 1 - prog(f, K12.contam - 16, 12);
 	return (
 		<>
 			<Heading text={QUESTION} at={-200} size={54} />
 			<Overlay>
 				<Rail lit={6} at={4} />
 				<WText x={100} y={272} text="Use only the teaching culture approved in the school's risk assessment. Treat grown plates as potentially contaminated." size={26} maxW={1760} color={GREY_INK} weight={600} at={K12.approved} />
-				{/* earlier rows collapse to grey chips */}
-				{rows.slice(0, 2).map((r, i) => {
-					const o = prog(f, rows[i + 1].at[0], 12);
-					if (o <= 0.01) return null;
-					return (
-						<g key={i} opacity={o}>
-							<rect x={100 + i * 250} y={322} width={230} height={44} rx={22} fill="#eceeef" stroke={GREYT} strokeWidth={2} />
-							<Sx x={100 + i * 250 + 115} y={352} text={r.chip} size={24} color={GREY_INK} weight={700} anchor="middle" at={-100} />
-						</g>
-					);
-				})}
+				{intro > 0.01 ? (
+					<g opacity={intro}>
+						<Pl p={PLATES.pipette} cx={560} cy={620} w={fitW(PLATES.pipette, 520, 340)} o={prog(f, K12.approved, 14)} />
+						<CTag x={560} y={830} text="the approved harmless culture" at={K12.approved + 10} color={GREEN} size={30} anchor="middle" />
+						<DPlate p={PLATES.zones} cx={1360} cy={620} w={330} o={prog(f, K12.harmless, 14)} />
+						<CTag x={1360} y={830} text="a grown plate: can pick up a contaminant" at={K12.harmless + 10} color={TERRA} size={30} anchor="middle" />
+					</g>
+				) : null}
 				<g opacity={prog(f, K12.contam - 10, 12)}>
-					<rect x={90} y={Y0} width={1770} height={HH + rowH + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
+					<rect x={90} y={Y0} width={1770} height={yNow - Y0 + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
 					<rect x={90} y={Y0} width={1770} height={HH} rx={18} fill="#efe6d4" />
 					{['Hazard', 'Harm', 'Control'].map((t, i) => <Sx key={t} x={RC[i].x + 18} y={Y0 + 36} text={t} size={30} color={i === 0 ? TERRA : INK} weight={800} at={-100} />)}
-					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={Y0 + HH + rowH} stroke={EDGE} strokeWidth={2} />)}
+					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={yNow} stroke={EDGE} strokeWidth={2} />)}
 				</g>
 				{rows.map((r, ri) => {
-					const o = vis(f, r.at[0], rows[ri + 1]?.at[0], 12);
+					const o = prog(f, r.at[0], 12);
 					if (o <= 0.01) return null;
-					const cy = RowY + rowH / 2;
+					const dm = prog(f, rows[ri + 1]?.at[0] ?? 1e9, 12);
+					const cy = ys[ri] + rowH(r) / 2;
 					return (
-						<g key={ri} opacity={o}>
-							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 ? 170 : 36), true).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={RowY + 44 + k * RL} text={t} size={RS} color={ci === 0 ? TERRA : INK} hand weight={700} at={r.at[ci]} />))}
-							{r.thumb === 'zones' ? <DPlate p={PLATES.zones} cx={1790} cy={cy} w={120} o={prog(f, r.at[2], 12)} /> : null}
-							{r.thumb === 'forceps' ? <g opacity={prog(f, r.at[2], 12)}><PlateB p={PLATES.forceps} cx={1790} cy={cy} w={30} rot={30} /></g> : null}
-							{r.thumb === 'bag' ? <Pl p={PLATES.bag} cx={1790} cy={cy} w={fitW(PLATES.bag, 110, rowH - 20)} o={prog(f, r.at[2], 12)} /> : null}
+						<g key={ri} opacity={o * (1 - 0.3 * dm)}>
+							<line x1={100} y1={ys[ri]} x2={1850} y2={ys[ri]} stroke={EDGE} strokeWidth={2} />
+							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 ? 170 : 36), true).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={ys[ri] + 44 + k * RL} text={t} size={RS} color={dm > 0.5 ? GREY_INK : ci === 0 ? TERRA : INK} hand weight={700} at={r.at[ci]} />))}
+							{r.thumb === 'zones' ? <DPlate p={PLATES.zones} cx={1785} cy={cy} w={Math.min(130, rowH(r) - 16)} o={prog(f, r.at[2], 12)} /> : null}
+							{r.thumb === 'forceps' ? <g opacity={prog(f, r.at[2], 12)}><PlateB p={PLATES.forceps} cx={1785} cy={cy} w={30} rot={30} /></g> : null}
+							{r.thumb === 'bag' ? <Pl p={PLATES.bag} cx={1785} cy={cy} w={fitW(PLATES.bag, 120, rowH(r) - 16)} o={prog(f, r.at[2], 12)} /> : null}
 						</g>
 					);
 				})}
-				<CTag x={100} y={RowY + rowH + 40} text="autoclave: steam under pressure kills microbes" at={K12.autoclave + 14} color={AMBER_INK} size={30} />
-				<GTag x={100} y={RowY + rowH + 130} text="follow your school's risk assessment and microbiology procedure" at={K12.closed + 30} size={24} />
+				<CTag x={100} y={yEnd + 28} text="autoclave: steam under pressure kills microbes" at={K12.autoclave + 14} color={AMBER_INK} size={30} />
+				<GTag x={110} y={yEnd + 110} text="follow your school's risk assessment and microbiology procedure" at={K12.closed + 30} size={24} />
 				{void K12.risk}{void K12.wash}{void K12.pen}{void GREEN}{void AMBER}
 			</Overlay>
 		</>

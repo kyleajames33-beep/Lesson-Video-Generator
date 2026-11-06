@@ -10,7 +10,7 @@ import {Heading, Overlay} from '../bio-m5-b13/shared';
 import {S} from './common';
 import {
 	AMBER_INK, Bench, CARD, CTag, CountGrid, Dish, EDGE, FEAT, GREEN, GREY_INK, GTag, INK, PLATES, Pl, QUESTION, Rail, RowBox, Sx, TERRA, TapeStrips, WText, dishGeo, fitW,
-	prog, wrapT,
+	prog, smooth, wrapT,
 } from './parts';
 
 // ---------- 11. Validity, reliability and accuracy ----------
@@ -68,33 +68,46 @@ export const SceneVRA: React.FC = () => {
 // ---------- 12. Risk assessment ----------
 const K12 = cues(S('risk-assessment'), {risk: 'The risk assessment', rg1: 'risk group one', lowest: 'lowest risk group', sample: 'a sample could hold', incub: 'incubating multiplies', treat: 'treat every grown', taped: 'taped shut', count: 'count through the lid', wash: 'wash your hands', autoclave: 'autoclave', disposal: 'before disposal'});
 const RC = [{x: 100, w: 520}, {x: 630, w: 470}, {x: 1110, w: 750}];
-const RS = 24, RL = 30;
+const RS = 28, RL = 34;
 type RRow = {cells: [string, string, string]; at: [number, number, number]; thumb?: 'creek' | 'bag' | 'bunsen'; grey?: boolean};
-const rowH = (r: RRow) => Math.max(...r.cells.map((c, i) => wrapT(c, RS, RC[i].w - (i === 2 && r.thumb ? 150 : 36)).length)) * RL + 26;
+const rowH = (r: RRow) => Math.max(...r.cells.map((c, i) => wrapT(c, RS, RC[i].w - (i === 2 && r.thumb ? 150 : 36), true).length)) * RL + 24;
 export const SceneRisk: React.FC = () => {
 	const f = useCurrentFrame();
 	const s3 = K12.autoclave + 30;
 	const rows: RRow[] = [
-		{cells: ['unknown microbes multiplied on incubated plates (treat as potentially pathogenic)', 'infection by swallowing, through cuts, or breathing in spores if a plate is opened', 'plates taped, never opened after incubation, counted through the lid; 25 to 30 °C; wash hands; no eating or drinking'], at: [K12.incub, K12.treat, K12.taped], thumb: 'creek'},
-		{cells: ['used cultures at disposal', 'spreading live microbes', 'sterilised in an autoclave (steam under pressure, 121 °C) by the teacher before disposal'], at: [K12.autoclave, K12.autoclave + 10, K12.disposal], thumb: 'bag'},
-		{cells: ['70 % ethanol for wiping benches (H225, highly flammable)', 'fire near the Bunsen', 'no flame nearby when wiping; small squeeze bottle'], at: [s3, s3 + 8, s3 + 16], thumb: 'bunsen'},
-		{cells: ['Bunsen flame', 'burns', 'tie back hair, safety mat, turn off when not in use'], at: [s3 + 30, s3 + 36, s3 + 42], grey: true},
+		{cells: ['unknown microbes multiplied on incubated plates (treat as possible pathogens)', 'infection by swallowing, cuts, or breathing in spores if a plate is opened', 'plates taped, never opened, counted through the lid; 25 to 30 °C; wash hands'], at: [K12.incub, K12.treat, K12.taped], thumb: 'creek'},
+		{cells: ['used cultures at disposal', 'spreading live microbes', 'the teacher autoclaves them (steam under pressure, 121 °C) before disposal'], at: [K12.autoclave, K12.autoclave + 10, K12.disposal], thumb: 'bag'},
+		{cells: ['70 % ethanol for wiping benches (highly flammable)', 'fire near the Bunsen', 'no flame nearby when wiping; small squeeze bottle'], at: [s3, s3 + 8, s3 + 16], thumb: 'bunsen'},
+		{cells: ['Bunsen flame', 'burns', 'tie back hair; safety mat; turn off when not in use'], at: [s3 + 30, s3 + 36, s3 + 42], grey: true},
 	];
-	const Y0 = 330, HH = 50;
+	const Y0 = 310, HH = 50;
 	let y = Y0 + HH;
 	const ys = rows.map(r => { const y0 = y; y += rowH(r); return y0; });
 	const yEnd = y;
+	const grow = rows.reduce((a, r) => a + rowH(r) * smooth(prog(f, r.at[0] - 6, 14)), 0);
+	const yNow = Y0 + HH + grow;
+	const intro = 1 - prog(f, K12.incub - 16, 12);
+	const pg = dishGeo(PLATES.posCtl, 560, 640, 300, FEAT.pos.c, FEAT.pos.rim);
 	return (
 		<>
 			<Heading text={QUESTION} at={-200} size={54} />
 			<Overlay>
 				<Rail lit={6} at={4} />
 				<WText x={100} y={272} text="AS/NZS 2243.3:2022: school cultures are risk group 1 (low risk); unknown samples are handled as possibly higher" size={26} maxW={1760} color={GREY_INK} weight={600} at={K12.rg1} />
+				{intro > 0.01 ? (
+					<g opacity={intro}>
+						<Dish p={PLATES.posCtl} cx={560} cy={640} w={300} o={prog(f, K12.rg1 - 10, 14)} />
+						<TapeStrips x={pg.x} y={pg.y} r={pg.r} at={K12.rg1} />
+						<CTag x={560} y={830} text="school culture: risk group 1, the lowest" at={K12.lowest} color={GREEN} size={30} anchor="middle" />
+						<Dish p={PLATES.creek} cx={1360} cy={640} w={300} o={prog(f, K12.sample - 6, 14)} />
+						<CTag x={1360} y={830} text="a water sample: could hold anything" at={K12.sample + 6} color={TERRA} size={30} anchor="middle" />
+					</g>
+				) : null}
 				<g opacity={prog(f, K12.incub - 10, 12)}>
-					<rect x={90} y={Y0} width={1770} height={yEnd - Y0 + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
+					<rect x={90} y={Y0} width={1770} height={yNow - Y0 + 8} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
 					<rect x={90} y={Y0} width={1770} height={HH} rx={18} fill="#efe6d4" />
-					{['Hazard', 'Harm', 'Control'].map((t, i) => <Sx key={t} x={RC[i].x + 18} y={Y0 + 35} text={t} size={28} color={i === 0 ? TERRA : INK} weight={800} at={-100} />)}
-					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={yEnd} stroke={EDGE} strokeWidth={2} />)}
+					{['Hazard', 'Harm', 'Control'].map((t, i) => <Sx key={t} x={RC[i].x + 18} y={Y0 + 35} text={t} size={30} color={i === 0 ? TERRA : INK} weight={800} at={-100} />)}
+					{[1, 2].map(i => <line key={i} x1={RC[i].x - 5} y1={Y0 + 8} x2={RC[i].x - 5} y2={yNow} stroke={EDGE} strokeWidth={2} />)}
 				</g>
 				{rows.map((r, ri) => {
 					const next = ri === 0 ? rows[1].at[0] : 1e9;
@@ -104,8 +117,8 @@ export const SceneRisk: React.FC = () => {
 					return (
 						<g key={ri} opacity={o * (1 - 0.4 * dm)}>
 							<line x1={100} y1={ys[ri]} x2={1850} y2={ys[ri]} stroke={EDGE} strokeWidth={2} />
-							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 && r.thumb ? 150 : 36)).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={ys[ri] + 34 + k * RL} text={t} size={RS} color={dm > 0.5 ? GREY_INK : ci === 0 ? TERRA : INK} weight={600} at={r.at[ci]} />))}
-							{r.thumb === 'creek' ? <Dish p={PLATES.creek} cx={1790} cy={ys[ri] + rowH(r) / 2} w={96} o={prog(f, r.at[2], 12)} dim={dm} /> : null}
+							{r.cells.map((c, ci) => wrapT(c, RS, RC[ci].w - (ci === 2 && r.thumb ? 150 : 36), true).map((t, k) => <Sx key={ci + '-' + k} x={RC[ci].x + 18} y={ys[ri] + 34 + k * RL} text={t} size={RS} color={dm > 0.5 ? GREY_INK : ci === 0 ? TERRA : INK} hand weight={700} at={r.at[ci]} />))}
+							{r.thumb === 'creek' ? <Dish p={PLATES.creek} cx={1790} cy={ys[ri] + rowH(r) / 2} w={110} o={prog(f, r.at[2], 12)} dim={dm} /> : null}
 							{r.thumb === 'bag' ? <Pl p={PLATES.bag} cx={1790} cy={ys[ri] + rowH(r) / 2} w={fitW(PLATES.bag, 90, rowH(r) - 16)} o={prog(f, r.at[2], 12)} dim={dm} /> : null}
 							{r.thumb === 'bunsen' ? <Pl p={PLATES.bunsen} cx={1790} cy={ys[ri] + rowH(r) / 2} w={fitW(PLATES.bunsen, 60, rowH(r) - 16)} o={prog(f, r.at[2], 12)} dim={dm} /> : null}
 						</g>
@@ -113,7 +126,7 @@ export const SceneRisk: React.FC = () => {
 				})}
 				<CTag x={100} y={yEnd + 30} text="autoclave: steam under pressure kills microbes" at={K12.autoclave + 14} color={AMBER_INK} size={30} />
 				<GTag x={100} y={yEnd + 110} text="follow your school's risk assessment, its microbiology procedure and each safety data sheet" at={K12.autoclave + 20} size={24} />
-				{void K12.risk}{void K12.lowest}{void K12.sample}{void K12.count}{void K12.wash}{void GREEN}
+				{void K12.risk}{void K12.count}{void K12.wash}{void GREEN}
 			</Overlay>
 		</>
 	);

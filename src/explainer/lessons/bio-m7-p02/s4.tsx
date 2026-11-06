@@ -12,7 +12,8 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, CrossChip, Dish, EDGE, GREY_INK, INK, PLATES, Pl, Sx, WText, crossChipW, fitW, prog, vis} from './parts';
+import type {PB} from './parts';
+import {AMBER, AMBER_INK, CARD, CrossChip, Dish, EDGE, FEAT, GREEN, GREY_INK, INK, PLATES, Pl, PlateB, Sx, TERRA, VIOLET, WText, crossChipW, fitW, prog, ptOf, vis, wrapT} from './parts';
 
 // ---------- item 1: CFU per mL ----------
 type T1 = {s: number; p: number; a: number; d: number};
@@ -26,18 +27,43 @@ qCheck([...Q1({s: 0, p: 0, a: 0, d: 0}), ...D1({s: 0, p: 0, a: 0, d: 0})], [{phr
 
 // ---------- 13a. Attempt 1 ----------
 const KA = cues(S('attempt-1'), {turn: 'Your turn', student: 'A student diluted', spread: 'she spread', after: 'After two days', calc: 'Calculate the number', pause: 'Pause here to answer'});
+// The whole question arrives with its card. The givens sit beside it as apparatus: the dilution rack with the 10⁻²
+// tube marked, and three sealed plates with their counts (data only, nothing answer-bearing).
+const RQ = {cx: 1510, cy: 360, w: 430};
+const GivensOne: React.FC<{at: number}> = ({at}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 14);
+	if (o <= 0.01) return null;
+	const t2 = ptOf(PLATES.rack, RQ.cx, RQ.cy, RQ.w, [FEAT.tubeX[1], FEAT.tubeLiquid + 60]);
+	return (
+		<g opacity={o}>
+			<Pl p={PLATES.rack} cx={RQ.cx} cy={RQ.cy} w={RQ.w} />
+			<rect x={t2[0] - 46} y={t2[1] - 23} width={92} height={46} rx={12} fill="#fff3d9" stroke={AMBER_INK} strokeWidth={3} />
+			<Sx x={t2[0]} y={t2[1] + 11} text="10⁻²" size={30} color={AMBER_INK} weight={800} anchor="middle" at={-100} />
+			{['41', '47', '53'].map((n, i) => (
+				<g key={n}>
+					<Dish p={PLATES.countable} cx={1345 + i * 170} cy={640} w={150} rot={i * 120} />
+					<Sx x={1345 + i * 170} y={752} text={n} size={36} color={AMBER_INK} hand weight={700} anchor="middle" at={-100} />
+				</g>
+			))}
+			<Sx x={1515} y={545} text="0.1 mL on each plate" size={28} color={GREY_INK} hand weight={700} anchor="middle" at={-100} />
+		</g>
+	);
+};
 export const SceneAttemptOne: React.FC = () => {
-	const t: T1 = {s: KA.student, p: KA.spread, a: KA.after, d: KA.calc};
+	const c = KA.turn + 6;
+	const t: T1 = {s: c, p: c, a: c, d: c};
 	const h = hold('attempt-1');
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.turn} size={50} />
 			<Overlay>
 				<HscTag at={KA.turn} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.turn + 6} />
-				<QText q={qCheck(Q1(t), [])} x={140} y={250} w={1640} size={38} card={false} />
-				<QText q={qCheck(D1(t), [])} x={140} y={470} w={1640} size={38} card={false} />
-				<AnsBox x={140} y={600} w={1340} h={400} at={KA.calc + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
+				<QText q={qCheck(Q1(t), [])} x={140} y={250} w={1080} size={38} card={false} />
+				<QText q={qCheck(D1(t), [])} x={140} y={560} w={1080} size={38} card={false} />
+				<GivensOne at={c} />
+				<AnsBox x={140} y={720} w={1080} h={290} at={c} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -90,18 +116,39 @@ qCheck(Q2({s: 0, i: 0, d: 0}), [{phrase: '1 mL of undiluted creek water', at: 0}
 
 // ---------- 13c. Attempt 2 ----------
 const KC = cues(S('attempt-2'), {student: 'A student spread', incub: 'incubated it', identify: 'Identify two problems', pause: 'Pause here to answer'});
+// The whole question arrives with its card; beside it the givens as apparatus: the creek bottle, 1 mL undiluted onto
+// one plate (the lawn: "too many to count", as the question says), and 37 °C for 48 h. Nothing answer-bearing.
+const CREEK: PB = {...PLATES.bottles, box: [770, 575, 1232, 1407]};
+const GivensTwo: React.FC<{at: number}> = ({at}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 14);
+	if (o <= 0.01) return null;
+	return (
+		<g opacity={o}>
+			<PlateB p={CREEK} cx={1340} cy={310} w={fitW(CREEK, 150, 210)} id="p02-a2-creek" />
+			<Sx x={1340} y={450} text="creek water" size={28} color={VIOLET} hand weight={700} anchor="middle" at={-100} />
+			<path d="M1420,310 Q1490,280 1550,320" fill="none" stroke={GREY_INK} strokeWidth={4} strokeLinecap="round" />
+			<path d="M1536,306 L1552,322 L1530,328" fill="none" stroke={GREY_INK} strokeWidth={4} strokeLinecap="round" />
+			<Dish p={PLATES.lawn} cx={1660} cy={320} w={200} />
+			<Sx x={1660} y={450} text="1 mL, undiluted" size={28} color={AMBER_INK} hand weight={700} anchor="middle" at={-100} />
+			<Sx x={1660} y={488} text="37 °C, 48 h" size={28} color={TERRA} hand weight={700} anchor="middle" at={-100} />
+		</g>
+	);
+};
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {s: KC.student, i: KC.incub, d: KC.identify};
+	const c = KC.student + 6;
+	const t: T2 = {s: c, i: c, d: c};
 	const h = hold('attempt-2');
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.student} size={50} />
 			<Overlay>
 				<HscTag at={KC.student} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KC.student + 6} />
-				<QText q={qCheck(Q2(t), [])} x={140} y={250} w={1640} size={38} card={false} />
-				<QText q={qCheck(D2(t), [])} x={140} y={470} w={1640} size={38} card={false} />
-				<AnsBox x={140} y={600} w={1340} h={400} at={KC.identify + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
+				<QText q={qCheck(Q2(t), [])} x={140} y={250} w={1080} size={38} card={false} />
+				<QText q={qCheck(D2(t), [])} x={140} y={580} w={1600} size={38} card={false} />
+				<GivensTwo at={c} />
+				<AnsBox x={140} y={720} w={1340} h={290} at={c} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -164,6 +211,9 @@ export const SceneFeedbackTwo: React.FC = () => {
 
 // ---------- 14. Decision rule and handoff ----------
 const KE = cues(S('decision-rule'), {sterile: 'sterile samples', three: 'three plates each', taped: 'taped plates', count: 'Count the plate', claim: 'claim culturable', next: 'Next'});
+// Each plan row has its apparatus in the right panel, on the row's cue: the dilution rack, the three plates and both
+// controls, the incubator, then the countable plate. The panel is there from the first frame.
+const PX = 1310, PW = 540;
 export const SceneDecision: React.FC = () => {
 	const f = useCurrentFrame();
 	const lines = [
@@ -173,24 +223,52 @@ export const SceneDecision: React.FC = () => {
 		{at: KE.count, t: '4 Count the plate with about 30 to 300; CFU per mL = colonies ÷ (volume × dilution).'},
 		{at: KE.claim, t: '5 Claim culturable microbes, not pathogens.'},
 	];
+	const at = lines.map(l => l.at);
+	const st = (i: number) => vis(f, i === 0 ? -100 : at[i], i === 3 ? 1e9 : at[i + 1], 12);
+	let y = 200;
 	return (
 		<>
 			<Heading text="The plan, start to finish" at={4} size={56} />
 			<Overlay>
 				{lines.map((l, i) => {
 					const o = prog(f, l.at, 14);
-					if (o <= 0.01) return null;
 					const lit = vis(f, l.at, lines[i + 1]?.at ?? KE.next, 10);
-					const y = 200 + i * 118;
+					const n = wrapT(l.t, 36, 1100, true).length;
+					const h = n * 46 + 44;
+					const y0 = y;
+					y += h + 16;
+					if (o <= 0.01) return null;
 					return (
 						<g key={i} opacity={o * (lit > 0.5 ? 1 : 0.7)} transform={`translate(0,${(1 - o) * 16})`}>
-							<rect x={120} y={y} width={1680} height={100} rx={26} fill={lit > 0.5 ? '#fff3d9' : CARD} stroke={lit > 0.5 ? AMBER : EDGE} strokeWidth={3.5} />
-							<Sx x={160} y={y + 66} text={l.t} size={l.t.length > 70 ? 38 : 42} color={INK} hand />
+							<rect x={110} y={y0} width={1160} height={h} rx={24} fill={lit > 0.5 ? '#fff3d9' : CARD} stroke={lit > 0.5 ? AMBER : EDGE} strokeWidth={3.5} />
+							<WText x={140} y={y0 + 50} text={l.t} size={36} maxW={1100} color={INK} hand weight={700} lh={46} at={-100} />
 						</g>
 					);
 				})}
-				<NextChip x={820} y={820} w={1000} text="Next: disease in agriculture" at={KE.next}>
-					<Pl p={PLATES.leaf} cx={886} cy={862} w={fitW(PLATES.leaf, 90, 60)} />
+				<rect x={PX} y={200} width={PW} height={600} rx={22} fill="#fffdf8" stroke={EDGE} strokeWidth={3} opacity={prog(f, 0, 12)} />
+				<g opacity={st(0)}>
+					<Pl p={PLATES.rack} cx={PX + PW / 2} cy={470} w={480} />
+					<Sx x={PX + PW / 2} y={740} text="10⁻¹, 10⁻², 10⁻³, 10⁻⁴" size={34} color={AMBER_INK} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={st(1)}>
+					{[0, 1, 2].map(i => <Dish key={i} p={PLATES.countable} cx={PX + 105 + i * 165} cy={350} w={150} rot={i * 120} />)}
+					<Sx x={PX + PW / 2} y={470} text="three plates per dilution" size={30} color={AMBER_INK} hand weight={700} anchor="middle" at={-100} />
+					<Dish p={PLATES.clear} cx={PX + 150} cy={600} w={150} />
+					<Dish p={PLATES.posCtl} cx={PX + 390} cy={600} w={150} />
+					<Sx x={PX + 150} y={720} text="− sterile water" size={28} color={GREEN} hand weight={700} anchor="middle" at={-100} />
+					<Sx x={PX + 390} y={720} text="+ known culture" size={28} color={GREEN} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={st(2)}>
+					<Pl p={PLATES.incubator} cx={PX + PW / 2} cy={470} w={420} />
+					<Sx x={PX + PW / 2} y={740} text="25 to 30 °C, 48 h" size={34} color={TERRA} hand weight={700} anchor="middle" at={-100} />
+				</g>
+				<g opacity={st(3)}>
+					<Dish p={PLATES.countable} cx={PX + PW / 2} cy={440} w={300} />
+					<Sx x={PX + PW / 2} y={650} text="about 30 to 300 colonies" size={32} color={AMBER_INK} hand weight={700} anchor="middle" at={-100} />
+					<Sx x={PX + PW / 2} y={720} text="culturable, not pathogens" size={32} color={GREEN} hand weight={700} anchor="middle" at={KE.claim + 6} />
+				</g>
+				<NextChip x={820} y={860} w={1000} text="Next: disease in agriculture" at={KE.next}>
+					<Pl p={PLATES.leaf} cx={886} cy={902} w={fitW(PLATES.leaf, 90, 60)} />
 				</NextChip>
 			</Overlay>
 		</>
@@ -199,13 +277,16 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 15. Key notes ----------
 const NOTES = [
-	'Authorities test drinking water for E. coli, an indicator of faecal contamination (Australian guideline: not detected in a minimum 100 mL sample). A school test counts all culturable microbes on nutrient agar: it compares samples but cannot show water is safe.',
-	'Variables: independent = water source; dependent = CFU per mL; controlled = agar, 0.1 mL plated, dilution method, 25 to 30 °C, 48 h. Three plates per dilution. Negative control: sterile water (no growth expected). Positive control: known harmless culture (growth expected).',
-	'Serial dilution: 1 mL into 9 mL sterile water = 10⁻¹, repeat. Count the plate with about 30 to 300 colonies. CFU per mL = colonies ÷ (volume plated × dilution); 156 ÷ (0.1 × 10⁻³) = 1.56 × 10⁶ CFU per mL.',
-	'Colonies show culturable microbes, not pathogens; viruses do not grow on agar; no colonies does not prove safety (only 0.1 mL was tested).',
-	'Safety: risk group 1 cultures only (AS/NZS 2243.3:2022); unknown samples treated as possibly pathogenic; plates taped, inverted, 25 to 30 °C (never 37 °C), never opened after incubation; autoclaved before disposal; wash hands; ethanol away from flames.',
+	'Authorities test water for E. coli; a school test counts all culturable microbes.',
+	'Independent: water source. Dependent: CFU per mL. Three plates per dilution.',
+	'Controls: sterile water (no growth); known harmless culture (growth).',
+	'Serial dilution: 1 mL into 9 mL sterile water = 10⁻¹, then repeat.',
+	'Count the plate with about 30 to 300 colonies.',
+	'CFU per mL = colonies ÷ (volume plated × dilution).',
+	'Colonies are culturable microbes, not proven pathogens; no colonies ≠ safe.',
+	'Plates taped, inverted, 25 to 30 °C, never opened; autoclaved before disposal.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Label the base, tape don't seal, upside down, 25 to 30 °C." tag="lids get swapped; air gets in; drips stay off the agar; not body temperature" size={28} aidTop={820} />
+	<NotesBoard notes={NOTES} aid="Label the base, tape don't seal, upside down, 25 to 30 °C." tag="lids get swapped; air gets in; drips stay off the agar; not body temperature" size={34} aidTop={720} />
 );
 void WText;
