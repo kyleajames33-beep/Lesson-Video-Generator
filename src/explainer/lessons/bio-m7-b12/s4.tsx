@@ -13,7 +13,7 @@ import {ARow} from '../bio-m7-b06/s3';
 import {S, hold} from './common';
 import {PLATES} from './assets';
 import {
-	AMBER, AMBER_INK, CARD, CardBox, DrawPath, EDGE, GREY_INK, GTag, INK, MistakeChip, Pl, PopRow, StepChip, Sx, TEAL, WText, Wheel, between, clamp01, prog, tw, vis, BITE,
+	AMBER, AMBER_INK, CARD, CTag, CardBox, DrawPath, EDGE, GREY_INK, GTag, INK, MistakeChip, Pl, PopRow, StepChip, Sx, TEAL, WText, Wheel, between, clamp01, prog, tw, vis, BITE, fitW,
 } from './parts';
 import type {WG} from './parts';
 
@@ -47,19 +47,29 @@ const SurvTable: React.FC<{x: number; y: number; vAt: number[]; at: number; s?: 
 	);
 };
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', town: 'A town sprayed', each: 'Each year, mosquitoes', v2: 'Two per cent', v9: 'nine per cent', v38: 'thirty-eight per', v75: 'seventy-five per', explain: 'Explain this trend', pause: 'Pause here to answer'});
+// Quality fix (6 Nov 2026): the whole question (text and table) arrives with the card; the text narrows to 1100 px and
+// the right column carries the givens as painted plates (sprayer on "A town sprayed", the caught Aedes on "Each year").
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {a: KA.town, b: KA.each, q: KA.explain};
+	const f = useCurrentFrame();
+	const c = KA.first - 6;
+	const t: T1 = {a: c, b: c, q: c};
 	const h = hold('attempt');
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1640} size={34} card={false} />
-				<SurvTable x={140} y={360} vAt={[KA.v2, KA.v9, KA.v38, KA.v75]} at={KA.v2 - 20} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={560} w={1640} size={34} card={false} />
-				<AnsBox x={140} y={660} w={1340} h={340} at={KA.explain + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1100} size={34} card={false} />
+				<SurvTable x={140} y={420} vAt={[c, c, c, c]} at={c} s={0.94} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={600} w={1100} size={34} card={false} />
+				<AnsBox x={140} y={720} w={1100} h={280} at={KA.explain + 30} />
+				<CardBox x={1290} y={210} w={490} h={560} at={c} fill="#fffdf8" />
+				<Pl p={PLATES.sprayer} cx={1400} cy={390} w={fitW(PLATES.sprayer, 200, 250)} o={prog(f, KA.town, 14)} />
+				<Pl p={PLATES.aedes} cx={1640} cy={360} w={240} o={prog(f, KA.each, 14)} />
+				<CTag x={1310} y={540} text="insecticide X, once a year" at={KA.town + 8} color={AMBER_INK} size={30} maxW={440} />
+				<CTag x={1310} y={620} text="Aedes aegypti: carries dengue" at={KA.each + 8} color={INK} size={28} maxW={440} />
+				<GTag x={1310} y={700} text="lab: standard dose" at={KA.each + 16} size={24} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 			</Overlay>
 		</>
@@ -115,19 +125,37 @@ const DEM2 = (t: T2, para = false): QBlock[] => [{text: 'Explain the difference 
 const ALL2: T2 = {a: -100, b: -100, c: -100, d: -100, q: -100};
 qCheck([...STEM2(ALL2), ...DEM2(ALL2)], ['sterile male', 'then stops', 'carrying Wolbachia', 'about 90%', 'local dengue cases remain rare'].map(phrase => ({phrase, at: 0})));
 const KC = cues(S('attempt-two'), {second: 'Second', p: 'Town P releases', q: 'Town Q releases', later: 'Two years later', explain: 'Explain the difference', pause: 'Pause here to answer'});
+// Quality fix (6 Nov 2026): the whole question arrives with the card; the right column shows each town's release as
+// painted plates on its cue (sterile males for town P, Wolbachia-carrying Aedes for town Q).
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.second + 10, b: KC.p, c: KC.q, d: KC.later, q: KC.explain};
+	const f = useCurrentFrame();
+	const c = KC.second + 6;
+	const t: T2 = {a: c, b: c, c: c, d: c, q: c};
 	const h = hold('attempt-two');
+	const panel = (y: number, at: number, title: string, color: string) => (
+		<g opacity={prog(f, at, 12)}>
+			<rect x={1290} y={y} width={490} height={270} rx={18} fill="#fffdf8" stroke={color} strokeWidth={3} />
+			<Sx x={1312} y={y + 46} text={title} size={36} color={color} hand weight={700} at={-100} />
+		</g>
+	);
 	return (
 		<>
 			<Heading text="Exam question 2" at={KC.second} size={50} />
 			<Overlay>
 				<HscTag at={KC.second} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
-				<QText q={qCheck(STEM2(t), [])} x={140} y={250} w={1640} size={34} card={false} />
-				<QText q={qCheck(DEM2(t), [])} x={140} y={620} w={1640} size={34} card={false} />
-				<AnsBox x={140} y={680} w={1340} h={320} at={KC.explain + 30} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
+				<QText q={qCheck(STEM2(t), [])} x={140} y={250} w={1100} size={32} card={false} />
+				<QText q={qCheck(DEM2(t), [])} x={140} y={650} w={1100} size={32} card={false} />
+				<AnsBox x={140} y={750} w={1100} h={250} at={KC.explain + 30} />
+				{panel(210, KC.p, 'town P', AMBER_INK)}
+				<Pl p={PLATES.aedes} cx={1650} cy={300} w={230} o={prog(f, KC.p, 14)} />
+				<CTag x={1310} y={380} text="sterile males, weekly for 2 years" at={KC.p + 8} color={AMBER_INK} size={26} maxW={440} />
+				{panel(500, KC.q, 'town Q', TEAL)}
+				<Pl p={PLATES.aedes} cx={1590} cy={590} w={230} o={prog(f, KC.q, 14)} />
+				<Pl p={PLATES.wolb} cx={1725} cy={580} w={90} o={prog(f, KC.q + 10, 14)} />
+				<CTag x={1310} y={670} text="Wolbachia, males and females, 4 months" at={KC.q + 8} color={TEAL} size={26} maxW={440} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
+				{void KC.later}
 			</Overlay>
 		</>
 	);
@@ -204,13 +232,16 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 14. Key notes ----------
+// Quality fix (6 Nov 2026): seven short bullets at 34 px replace the five dense paragraphs.
 const NOTES = [
-	'Vector: a living carrier. Dengue (a virus) is carried by Aedes aegypti; malaria (Plasmodium) by Anopheles. A mosquito transmits only if it bites an infected person, survives while the pathogen multiplies, then bites again. Cut infection with fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.',
-	'Aedes life cycle: eggs on container walls above the water (survive months dry); rain floods them; larvae and pupae in water; adult in about a week; only females bite. Environmental management: remove breeding water (tip out containers, screen tanks, clear gutters); cheap, no chemicals, needs nearly every household (public health campaigns).',
-	'Pesticides: larvicides in water; adult sprays; insecticides attack insect nerves. Bed nets for night-biting Anopheles; indoor spraying of resting sites against both (in Queensland, against day-biting Aedes in dengue outbreaks). Limits: resistance by natural selection (DDT; pyrethroids today); harm to other insects; DDT builds up in food chains (thin raptor eggshells).',
-	'Sterile insect technique: release radiation-sterilised males; eggs don\'t hatch; species-specific; releases must continue. Genetic engineering: males with an inserted gene that kills their daughters; releases must continue. Gene drives: spread by themselves, hard to reverse, not yet released.',
-	"Wolbachia (not genetic engineering): a natural bacterium that blocks dengue in Aedes; passed through eggs; an infected female's eggs hatch whichever male she mates with, but eggs of uninfected females mated by infected males don't hatch, so it spreads and persists after releases stop (Townsville, from 2014: local dengue rare, though not zero). Evaluate by transmission cut, how long, cost and harm; combine methods.",
+	'Vector: a living carrier. Aedes aegypti carries dengue; Anopheles carries malaria.',
+	'Only females bite. Aedes lays eggs on container walls; larvae and pupae live in water.',
+	'Remove breeding water (tip out containers, screen tanks): cheap, but needs every household.',
+	'Insecticides and bed nets cut bites, but spraying selects resistance and harms other insects.',
+	"Sterile males: the eggs don't hatch, so releases must continue.",
+	'Wolbachia (a natural bacterium) blocks dengue and passes through eggs, so it persists.',
+	'Judge a method by transmission cut, how long it lasts, cost and harm. Combine methods.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on." tag="Follow the life cycle; find the step a method attacks." size={22} aidTop={860} />
+	<NotesBoard notes={NOTES} aid="Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on." tag="Follow the life cycle; find the step a method attacks." size={34} aidTop={700} />
 );

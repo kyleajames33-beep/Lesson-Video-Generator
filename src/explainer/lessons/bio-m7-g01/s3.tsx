@@ -35,7 +35,8 @@ const GQ: WG3 = {x: 200, y: 570, w: 780, h: 190};
 export const SceneQ3Question: React.FC = () => {
 	const f = useCurrentFrame();
 	const h = hold('q3-question');
-	const t: T3 = {s1: KQ.flood, s2: KQ.w3, a: KQ.identify, b: KQ.justify};
+	const c = KQ.q + 4; // quality fix (6 Nov 2026): the whole question and graph arrive with the card
+	const t: T3 = {s1: c, s2: c, a: c, b: c};
 	return (
 		<>
 			<Heading text="Question 3" at={KQ.q} size={50} />
@@ -46,8 +47,8 @@ export const SceneQ3Question: React.FC = () => {
 				<Pl p={PLATES.tank} cx={370} cy={232} w={60} o={prog(f, KQ.flood + 8, 14)} />
 				<GTag x={420} y={214} text="Vibrio cholerae, drawn far larger than real" at={KQ.flood + 14} size={18} />
 				<QText q={qCheck(Q3B(t), [])} x={140} y={330} w={1640} size={25} card={false} />
-				<CholGraph g={GQ} at={KQ.graph} size={16} />
-				<GTag x={760} y={540} text="illustrative data" at={KQ.graph + 10} size={18} />
+				<CholGraph g={GQ} at={c} size={16} />
+				<GTag x={760} y={540} text="illustrative data" at={c} size={18} />
 				<QText q={qCheck(Q3D(t), [])} x={1080} y={600} w={700} size={25} card={false} />
 				<AnsBox x={1080} y={790} w={500} h={90} at={KQ.identify + 30} />
 				<AnsBox x={1080} y={890} w={500} h={120} at={KQ.justify + 40} />
@@ -186,21 +187,24 @@ export const SceneDecision: React.FC = () => {
 				<Sx x={260} y={300} text="What you see" size={30} color={GREY_INK} weight={800} at={KB.start} />
 				<Sx x={840} y={300} text="What you do first" size={30} color={GREY_INK} weight={800} at={KB.start} />
 				{ROWS.map((r, i) => {
+					// Quality fix (6 Nov 2026): all three rows and their painted question plates stand from "how to start";
+					// each "what you do first" writes on its cue and the current row lights.
 					const at = KB[r.k];
-					const o = prog(f, at, 12);
+					const o = prog(f, KB.start + i * 8, 12);
 					if (o <= 0.01) return null;
+					const done = prog(f, at, 12);
 					const on = vis(f, at, ROWS[i + 1] ? KB[ROWS[i + 1].k] : KB.next, 10) > 0.5;
 					const y = 330 + i * 170;
+					const pl = [[PLATES.sandw, PLATES.pasta], [PLATES.anoph, PLATES.net], [PLATES.vibrio, PLATES.tank]][i];
 					return (
-						<g key={i} opacity={o * (on ? 1 : 0.75)}>
+						<g key={i} opacity={o * (on ? 1 : done > 0.5 ? 0.8 : 0.6)}>
 							<rect x={120} y={y} width={1680} height={140} rx={24} fill={on ? '#fff3d9' : CARD} stroke={AMBER} strokeWidth={on ? 4 : 2.5} />
 							<circle cx={170} cy={y + 70} r={28} fill="#fffdf8" stroke={AMBER} strokeWidth={3} />
 							<Sx x={170} y={y + 79} text={r.q} size={22} color={AMBER_INK} weight={800} anchor="middle" at={-100} />
 							<Sx x={260} y={y + 82} text={r.see} size={34} color={INK} hand weight={700} at={-100} />
-							<Sx x={840} y={y + 82} text={r.doo} size={32} color={on ? AMBER_INK : INK} hand weight={700} at={-100} />
-							{i === 1 ? <Tank x={1700} y={y + 30} w={60} h={80} at={-100} level={0.5} /> : null}
-							{i === 2 ? <polyline points={`${1690},${y + 110} ${1710},${y + 80} ${1730},${y + 40} ${1750},${y + 70} ${1770},${y + 108}`} fill="none" stroke={INK_SOFT} strokeWidth={3} /> : null}
-							{i === 0 ? <g>{[0, 1, 2].map(k => <rect key={k} x={1690} y={y + 34 + k * 26} width={90} height={22} fill="none" stroke={GREYT} strokeWidth={2} />)}</g> : null}
+							<Sx x={840} y={y + 82} text={r.doo} size={32} color={on ? AMBER_INK : INK} hand weight={700} at={at} />
+							<Pl p={pl[0]} cx={1640} cy={y + 70} w={i === 2 ? 110 : 130} />
+							<Pl p={pl[1]} cx={1745} cy={y + 70} w={i === 2 ? 50 : 80} />
 						</g>
 					);
 				})}
@@ -215,13 +219,17 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 6. Key notes ----------
+// Quality fix (6 Nov 2026): eight short bullets at 32 px replace the five dense paragraphs.
 const NOTES = [
-	'Before you compare, find the denominator: divide by the people who could have caught it (each exposure group, or the whole population at risk), or by the people tested in a survey.',
-	'Food outbreak: compare the percentage ill among people who ate a food with those who did not. Most ill people eating a food is not enough.',
-	'Epidemic curve, three shapes: one sharp peak a set time after a shared meal = point source (Q1 had two, one per meal); a curve that keeps rising or stays high while its source lasts = continuing common source, such as water (Q3); repeated waves about one incubation period apart = person-to-person spread. Check the timing against the incubation period.',
-	'Incidence = new cases in a set time ÷ population at risk (× 1000 or × 100 000). Prevalence = people infected at one time ÷ the population, or ÷ the people tested in a survey (× 100). Fewer new infections lower incidence, and so prevalence too; shorter infections lower prevalence further.',
-	'Justify a control: name the route, the link the measure breaks, and why other measures miss it (for example, people with no symptoms who still spread it).',
+	'Before you compare, find the denominator: who could have caught it, or who was tested?',
+	'Food outbreak: the percentage ill in each food group, out of the people who ate that food.',
+	'One sharp peak a set time after a shared meal: a point source.',
+	'Cases rising while a source lasts, such as water: a continuing common source.',
+	'Waves about one incubation period apart: person-to-person spread.',
+	'Incidence = new cases in a year ÷ population at risk × 1000 (or × 100 000).',
+	'Prevalence = people infected at one time ÷ people tested × 100.',
+	'Justify a control: name the route, the link it breaks, and why other measures miss it.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Before you compare, find the denominator. Then the cause, then the control." tag="Who could have caught it, or who was tested? Tap or tank? Route, then link." size={27} aidTop={790} />
+	<NotesBoard notes={NOTES} aid="Before you compare, find the denominator. Then the cause, then the control." tag="Who could have caught it, or who was tested? Tap or tank? Route, then link." size={32} aidTop={720} />
 );

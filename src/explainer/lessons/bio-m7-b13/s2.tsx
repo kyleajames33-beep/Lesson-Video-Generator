@@ -168,6 +168,42 @@ export const SceneMobility: React.FC = () => {
 
 // ---------- 8. Four conditions, shaped by people ----------
 const K8 = cues(S('four-conditions'), {four: 'four things meet', cut: 'Cut one far', how: 'how people live', piped: 'piped water is', dry: 'even in dry', crowded: 'Crowded', money: 'money and support', year: 'year after year'});
+const K8b = cues(S('four-conditions'), {virus: 'the virus', aedes: 'Aedes mosquitoes', warm: 'warmth and water', people: 'people who', breaks: 'the chain breaks'});
+/** Quality fix (6 Nov 2026): "all four at once" as a chain of the four painted conditions, each arriving on its word;
+ * on "Cut one far enough" the Aedes link dims, takes a cross and its links pull apart; the chain clears on "how people live". */
+const FourChain: React.FC = () => {
+	const f = useCurrentFrame();
+	const o = prog(f, K8.four, 12) * (1 - prog(f, K8.how - 6, 14));
+	if (o <= 0.01) return null;
+	const y = 700, xs = [290, 760, 1210, 1630];
+	const cut = smooth(prog(f, K8.cut, 12));
+	const brk = smooth(prog(f, K8b.breaks, 14));
+	const items = [K8b.virus, K8b.aedes, K8b.warm, K8b.people];
+	const labels = ['virus', 'Aedes mosquitoes', 'warmth and water', "people who aren't immune"];
+	return (
+		<g opacity={o}>
+			{[0, 1, 2].map(i => {
+				const cx = (xs[i] + xs[i + 1]) / 2, near = i === 0 || i === 1;
+				const sep = near ? 22 * brk : 0;
+				const col = near && brk > 0.5 ? GREYT : INK_SOFT;
+				return (
+					<g key={'k' + i} opacity={prog(f, items[i + 1], 10)}>
+						<ellipse cx={cx - 14 - sep} cy={y} rx={26} ry={16} fill="none" stroke={col} strokeWidth={5} />
+						<ellipse cx={cx + 14 + sep} cy={y} rx={26} ry={16} fill="none" stroke={col} strokeWidth={5} />
+					</g>
+				);
+			})}
+			<Pl p={PLATES.virus} cx={xs[0]} cy={y} w={250} o={prog(f, items[0], 12)} />
+			<Pl p={PLATES.aedes} cx={xs[1]} cy={y} w={400} o={prog(f, items[1], 12) * (1 - 0.65 * cut)} />
+			<Pl p={PLATES.flooded} cx={xs[2]} cy={y} w={240} o={prog(f, items[2], 12)} />
+			<g opacity={prog(f, items[3], 12)}>
+				{Array.from({length: 16}, (_, i) => <circle key={i} cx={xs[3] - 81 + (i % 4) * 54} cy={y - 81 + Math.floor(i / 4) * 54} r={20} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={3} />)}
+			</g>
+			{labels.map((t, i) => <Sx key={t} x={xs[i]} y={900} text={t} size={32} color={i === 1 && cut > 0.5 ? GREY_INK : INK} hand weight={700} anchor="middle" at={items[i] + 4} />)}
+			{f >= K8.cut ? <DrawPath d={`M${xs[1] - 110},${y - 110} L${xs[1] + 110},${y + 110} M${xs[1] + 110},${y - 110} L${xs[1] - 110},${y + 110}`} at={K8.cut} dur={12} color={TERRA} width={8} /> : null}
+		</g>
+	);
+};
 export const SceneFour: React.FC = () => {
 	const f = useCurrentFrame();
 	const mv = smooth(prog(f, 0, 24));
@@ -182,6 +218,7 @@ export const SceneFour: React.FC = () => {
 			<Heading text={HEAD} at={-100} size={52} />
 			<Overlay>
 				<FourBar g={g} fill={[1, 1, 1, 1]} faint={[0, cutV, 0, 0]} broken={cutV} rain={1 - 0.8 * prog(f, K8.dry, 12)} lit={[0, 0, vis(f, K8.piped, K8.crowded, 10), vis(f, K8.crowded, K8.money, 10)]} />
+				<FourChain />
 				<CTag x={110} y={420} text="all four at once" at={K8.four + 30} color={AMBER_INK} size={32} dim={prog(f, K8.cut, 10)} out={K8.how + 10} />
 				<CTag x={460} y={420} text="cut one far enough: spread stops" at={K8.cut + 8} color={TERRA} size={32} dim={prog(f, K8.how, 10)} out={K8.how + 10} />
 				<Sx x={110} y={470} text="social causes" size={30} color={GREY_INK} weight={700} at={K8.how + 6} />

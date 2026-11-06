@@ -33,7 +33,8 @@ const KQ = cues(S('q2-question'), {q: 'Question two', province: 'A province in',
 export const SceneQ2Question: React.FC = () => {
 	const f = useCurrentFrame();
 	const h = hold('q2-question');
-	const t: T2 = {s: KQ.province, a: KQ.calc, b: KQ.calc + 40, c: KQ.explain};
+	const c = KQ.q + 4; // quality fix (6 Nov 2026): the whole question and table arrive with the card
+	const t: T2 = {s: c, a: c, b: c, c};
 	return (
 		<>
 			<Heading text="Question 2" at={KQ.q} size={50} />
@@ -43,8 +44,8 @@ export const SceneQ2Question: React.FC = () => {
 				<Pl p={PLATES.anoph} cx={220} cy={240} w={150} o={prog(f, KQ.province, 14)} />
 				<Pl p={PLATES.net} cx={370} cy={238} w={70} o={prog(f, KQ.province + 10, 14)} />
 				<QText q={qCheck(Q2B(t), [])} x={140} y={350} w={1640} size={28} card={false} />
-				<ProvTable x={140} y={450} s={0.95} at={KQ.table} />
-				<GTag x={1400} y={460} text="illustrative data" at={KQ.table + 10} size={20} />
+				<ProvTable x={140} y={450} s={0.95} at={c} />
+				<GTag x={1400} y={460} text="illustrative data" at={c} size={20} />
 				<QText q={qCheck(Q2D(t), [])} x={140} y={710} w={1440} size={27} card={false} />
 				<AnsBox x={140} y={850} w={1340} h={160} at={KQ.explain + 40} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KQ.pause} />
@@ -150,8 +151,14 @@ export const SceneQ2Explain: React.FC = () => {
 
 // ---------- 3d. The classic mistake ----------
 const KM = cues(S('q2-mistake'), {classic: 'The classic mistake', only: 'Only two thousand', two: 'two hundred times'});
+// Quality fix (6 Nov 2026): the sampling picture is on screen from the start. The province is 200 squares (each 2000
+// people), all lit as the wrong denominator; on "Only two thousand" the rest grey out, one square stays (the survey) and
+// its 2000 people open in an inset with the 50 carriers. "Two hundred times" lands on the ratio tag.
+const POS = new Set(Array.from({length: 50}, (_, i) => (i * 739 + 113) % 2000));
 export const SceneQ2Mistake: React.FC = () => {
 	const f = useCurrentFrame();
+	const only = smooth(prog(f, KM.only, 16));
+	const inset = prog(f, KM.only + 10, 14);
 	return (
 		<>
 			<Heading text="The survey is the sample" at={4} size={48} />
@@ -159,16 +166,31 @@ export const SceneQ2Mistake: React.FC = () => {
 				<Badge text="Incidence and prevalence" at={-100} />
 				<QStrip blocks={Q2ALL} marks={[]} h={130} />
 				<MistakeChip x={130} y={330} text="50 ÷ 400 000 × 100 = 0.0125%" at={2} cross={KM.classic + 30} size={36} />
-				<g opacity={prog(f, KM.only, 12)}>
-					<rect x={130} y={460} width={900} height={480} rx={20} fill="#f3f2ee" stroke={GREYT} strokeWidth={3} />
-					<Sx x={150} y={500} text="province: 400 000 people" size={26} color={GREY_INK} weight={700} at={-100} />
-					<rect x={160} y={530} width={62} height={56} fill="#fffdf8" stroke={AMBER} strokeWidth={2} />
-					{Array.from({length: 330}, (_, i) => <circle key={i} cx={164 + (i % 30) * 2} cy={534 + Math.floor(i / 30) * 5} r={0.9} fill={AMBER_INK} />)}
-					<Sx x={240} y={570} text="2000 tested" size={24} color={AMBER_INK} hand weight={700} at={-100} />
+				<BoxedFormula x={1000} y={378} pre="carrying parasite ÷ " boxed="people tested" post=" × 100" at={KM.only - 10} label="the sample" pulseAt={KM.only + 4} size={30} />
+				<Sx x={130} y={940} text="the province: 400 000 people" size={32} color={INK} weight={700} at={2} />
+				<g opacity={prog(f, 2, 12)}>
+					{Array.from({length: 200}, (_, i) => {
+						const x = 130 + (i % 20) * 44, y = 492 + Math.floor(i / 20) * 40;
+						const keep = i === 0;
+						const fill = keep ? (only > 0.5 ? TEAL : '#fff3d9') : only > 0.5 ? '#ecebe6' : '#fff3d9';
+						const stroke = keep && only > 0.5 ? TEAL : only > 0.5 ? GREYT : AMBER;
+						return <rect key={i} x={x} y={y} width={38} height={34} rx={5} fill={fill} stroke={stroke} strokeWidth={keep && only > 0.5 ? 3.5 : 1.8} />;
+					})}
 				</g>
-				<BoxedFormula x={1100} y={560} pre="carrying parasite ÷ " boxed="people tested" post=" × 100" at={KM.only - 10} label="the sample" pulseAt={KM.only + 4} size={28} />
-				<CTag x={1100} y={680} text="the survey is the sample: 50 ÷ 2000 = 2.5%" at={KM.only + 20} color={TEAL} size={30} maxW={700} />
-				<GTag x={1100} y={820} text="2.5% ÷ 0.0125% = 200" at={KM.two} size={28} />
+				<GTag x={640} y={908} text="each square: 2000 people" at={8} size={26} />
+				{only > 0.01 ? <DrawPath d="M170,490 C260,380 960,400 1078,470" at={KM.only + 6} dur={16} color={TEAL} width={4} dash="10 7" /> : null}
+				<CTag x={1080} y={470} text="dividing by everyone in the province" at={8} out={KM.only + 4} color={AMBER_INK} size={32} maxW={720} />
+				<g opacity={inset}>
+					<rect x={1080} y={450} width={730} height={300} rx={20} fill="#fffdf8" stroke={TEAL} strokeWidth={3.5} />
+					<Sx x={1104} y={494} text="the 2000 people tested" size={34} color={TEAL} hand weight={700} at={-100} />
+					{Array.from({length: 2000}, (_, i) => {
+						const pos = POS.has(i);
+						return <circle key={i} cx={1114 + (i % 80) * 8.4} cy={522 + Math.floor(i / 80) * 8.4} r={pos ? 4 : 2.2} fill={pos ? AMBER_INK : '#cfc8b8'} opacity={pos ? prog(f, KM.only + 24, 12) : 1} />;
+					})}
+					<Sx x={1104} y={780} text="50 carrying the parasite" size={30} color={AMBER_INK} hand weight={700} at={KM.only + 24} />
+				</g>
+				<CTag x={1080} y={810} text="the survey is the sample: 50 ÷ 2000 = 2.5%" at={KM.only + 34} color={TEAL} size={32} maxW={730} />
+				<GTag x={1080} y={900} text="2.5% ÷ 0.0125% = 200 times" at={KM.two} size={30} />
 				{void INK}
 			</Overlay>
 		</>

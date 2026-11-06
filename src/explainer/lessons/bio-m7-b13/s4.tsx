@@ -10,7 +10,7 @@ import {HscTag, NextChip, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {AnsBox, PauseHold} from '../bio-m7-b01/s3';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, CardBox, DrawPath, EDGE, FRow, FourBar, GREY_INK, GTag, INK, INK_SOFT, MistakeChip, StepChip, Sx, TEAL, fRowH, tw, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, CTag, CardBox, DrawPath, EDGE, FRow, FourBar, GREY_INK, GTag, INK, INK_SOFT, MistakeChip, StepChip, Sx, TEAL, fRowH, tw, vis, Pl, PLATES, prog} from './parts';
 
 // ---------- item 1: two districts ----------
 type T1 = {a: number; qa: number; qb: number};
@@ -45,19 +45,27 @@ const DTable: React.FC<{x: number; y: number; at: number; vAt?: number[]; s?: nu
 	);
 };
 const KA = cues(S('attempt'), {two: 'Two exam questions', first: 'First', p: 'District P', q: 'District Q', calc: 'Calculate the incidence', identify: 'identify which district', pause: 'Pause here to answer'});
+// Quality fix (6 Nov 2026): the whole question arrives with the card; the text narrows to 1100 px and the right column
+// shows the disease and its vector as painted plates (nothing answer-bearing).
 export const SceneAttempt: React.FC = () => {
-	const t: T1 = {a: KA.first + 6, qa: KA.calc, qb: KA.identify};
+	const f = useCurrentFrame();
+	const c = KA.first - 6;
+	const t: T1 = {a: c, qa: c, qb: c};
 	const h = hold('attempt');
 	return (
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
 				<HscTag at={KA.two} />
-				<CardBox x={100} y={170} w={1720} h={850} at={KA.first - 6} />
-				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1640} size={34} card={false} />
-				<DTable x={140} y={290} at={KA.p - 10} vAt={[KA.p - 10, KA.p, KA.p + 20]} />
-				<QText q={qCheck(DEM1(t), [])} x={140} y={530} w={1640} size={34} card={false} />
-				<AnsBox x={140} y={720} w={1340} h={290} at={KA.calc + 40} />
+				<CardBox x={100} y={170} w={1720} h={850} at={c} />
+				<QText q={qCheck(STEM1(t), [])} x={140} y={250} w={1100} size={34} card={false} />
+				<DTable x={140} y={340} at={c} vAt={[c, c, c]} />
+				<QText q={qCheck(DEM1(t), [])} x={140} y={570} w={1100} size={34} card={false} />
+				<AnsBox x={140} y={830} w={1100} h={170} at={KA.calc + 40} />
+				<CardBox x={1290} y={210} w={490} h={560} at={c} fill="#fffdf8" />
+				<Pl p={PLATES.virus} cx={1420} cy={340} w={190} o={prog(f, KA.p, 14)} />
+				<Pl p={PLATES.aedes} cx={1610} cy={500} w={300} o={prog(f, KA.p + 12, 14)} />
+				<CTag x={1310} y={630} text="dengue: a virus carried by Aedes aegypti" at={KA.p + 20} color={INK} size={28} maxW={440} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KA.pause} />
 				{void KA.q}
 			</Overlay>
@@ -118,7 +126,8 @@ const M2 = ['80% of adults had antibodies', 'DENV-1', 'detected in travellers', 
 qCheck([...STEM2(ALL2), ...DEM2(ALL2)], M2.map(phrase => ({phrase, at: 0})));
 const KC = cues(S('attempt-two'), {second: 'Second', city: 'In City R', piped: 'Piped water is', travellers: 'travellers brought in', explain: 'Explain this outbreak', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => {
-	const t: T2 = {a: KC.city, b: KC.piped, c: KC.travellers - 20, d: -100, q: KC.explain};
+	const f = useCurrentFrame();
+	const t: T2 = {a: KC.second + 6, b: KC.second + 6, c: KC.second + 6, d: -100, q: KC.second + 6}; // quality fix: whole question with the card
 	const h = hold('attempt-two');
 	return (
 		<>
@@ -128,6 +137,14 @@ export const SceneAttemptTwo: React.FC = () => {
 				<CardBox x={100} y={170} w={1720} h={850} at={KC.second + 6} />
 				<QText q={qCheck([...STEM2(t), ...DEM2(t)], [])} x={140} y={250} w={1640} size={33} card={false} />
 				<AnsBox x={140} y={720} w={1340} h={290} at={KC.explain + 30} />
+				{/* quality fix (6 Nov 2026): the givens as painted plates on their cues, in the strip under the text */}
+				<Pl p={PLATES.virus} cx={230} cy={610} w={110} o={prog(f, KC.city, 14)} />
+				<Sx x={300} y={622} text="DENV-1 antibodies (2022)" size={30} color={INK} hand weight={700} at={KC.city + 6} />
+				<Pl p={PLATES.jar} cx={760} cy={610} w={110} o={prog(f, KC.piped, 14)} />
+				<Sx x={830} y={622} text="open jars" size={30} color={INK} hand weight={700} at={KC.piped + 6} />
+				<Pl p={PLATES.aedes} cx={1060} cy={610} w={150} o={prog(f, KC.piped + 10, 14)} />
+				<Pl p={PLATES.virus} cx={1240} cy={610} w={110} o={prog(f, KC.travellers, 14)} />
+				<Sx x={1310} y={622} text="DENV-3 (2025, travellers)" size={30} color={AMBER_INK} hand weight={700} at={KC.travellers + 6} />
 				<PauseHold start={h.startFrame} end={h.endFrame} at={KC.pause} />
 			</Overlay>
 		</>
@@ -195,13 +212,16 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 14. Key notes ----------
+// Quality fix (6 Nov 2026): seven short bullets at 34 px replace the five dense paragraphs.
 const NOTES = [
-	'Named disease: dengue in South East Asia, caused by a virus with four serotypes, spread mainly by Aedes aegypti, which breeds in water containers around homes. (Alternative: malaria, caused by Plasmodium, a protozoan, spread by Anopheles.)',
-	'Incidence: new cases in a set time per set number of people (cases ÷ population × 100,000, per year). Prevalence: share of a population with the disease at one time. Past infection is measured by antibodies (seroprevalence): about 7 in 10 urban Indonesian children, 2014. Compare places by rates, not counts. Dengue is a short illness, so current prevalence stays low.',
-	'Transmission needs virus, Aedes, warmth and water for breeding (rain or stored water) and non-immune people in contact; cut one far enough and spread stops. Cases peak a month or two after the rains (breeding, then the virus multiplies in the mosquito).',
-	'Immunity is serotype-specific: a mostly immune city can have an outbreak when a new serotype arrives, and a second infection with a different serotype is more likely to be severe; vaccines must cover all four, or a missed type could later cause severe dengue. Mobility carries serotypes between cities and starts north Queensland outbreaks.',
-	'Wolbachia evidence: Yogyakarta randomised trial (2.3% against 9.4% of febrile clinic patients had dengue; 77% lower); Cairns about 96% lower (no untreated areas compared at the same time, so weaker). Limits: cost and time to roll out, community support, water storage, crowded cities, serotypes, insecticide resistance, climate, travel.',
+	'Dengue: a virus with four serotypes, carried mainly by Aedes aegypti.',
+	'Incidence: new cases in a set time per 100 000 people. Compare rates, not counts.',
+	'Prevalence: the share of people with a disease at one time. Antibodies show past infection.',
+	'Spread needs virus, Aedes, warmth and water, and non-immune people. Cut one far enough.',
+	'Stored water, crowded cities and travel shape these conditions.',
+	'Immunity is serotype-specific; a second infection with a new serotype is more often severe.',
+	'Wolbachia: 77% fewer cases in the Yogyakarta trial. Limits: cost, support, water, travel.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Incidence is the tap, prevalence is the tank. Dengue needs virus, vector, warmth and water, and people, all at once." tag="Check the measure and its population; link each change to a biological or social cause." size={26} aidTop={830} />
+	<NotesBoard notes={NOTES} aid="Incidence is the tap, prevalence is the tank. Dengue needs virus, vector, warmth and water, and people, all at once." tag="Check the measure and its population; link each change to a biological or social cause." size={34} aidTop={690} />
 );

@@ -81,7 +81,8 @@ const CQ: CG = {x: 1000, y: 620, w: 760, h: 130};
 export const SceneQ1Question: React.FC = () => {
 	const f = useCurrentFrame();
 	const h = hold('q1-question');
-	const t: T1 = {s1: KQ.sixty, s2: KQ.tuesday, s3: KQ.night + 20, a: KQ.calc, b: KQ.evalc};
+	const c = KQ.q + 4; // quality fix (6 Nov 2026): the whole question, table and curve arrive with the card
+	const t: T1 = {s1: c, s2: c, s3: c, a: c, b: c};
 	return (
 		<>
 			<Heading text="Question 1" at={KQ.q} size={50} />
@@ -92,8 +93,8 @@ export const SceneQ1Question: React.FC = () => {
 				<Pl p={PLATES.sandw} cx={390} cy={232} w={130} o={prog(f, KQ.tuesday, 14)} />
 				<GTag x={480} y={214} text="based on the HSCScience Camp Wollemi activity, with corrected data" at={KQ.sixty + 10} size={18} />
 				<QText q={qCheck(Q1B(t), [])} x={140} y={320} w={1640} size={25} card={false} />
-				<LunchTable x={140} y={610} s={0.82} at={KQ.night} />
-				<EpiCurve g={CQ} at={KQ.night + 10} size={16} />
+				<LunchTable x={140} y={610} s={0.82} at={c} />
+				<EpiCurve g={CQ} at={c} size={16} />
 				<QText q={qCheck(Q1D(t), [])} x={140} y={830} w={1000} size={25} card={false} />
 				<AnsBox x={1180} y={818} w={400} h={86} at={KQ.calc + 30} />
 				<AnsBox x={1180} y={914} w={400} h={96} at={KQ.evalc + 40} />

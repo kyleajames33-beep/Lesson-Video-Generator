@@ -1,0 +1,9 @@
+# Brief 211: quality fix wave 3f (B grades), re-render and replace six Biology Module 7 videos
+
+Read `00-standing-rules.md` and brief 198 (its method). Do not spawn sub-agents. No design, narration or scene-code edits, no new speech, no commits. One render at a time. Run after brief 210.
+
+Claude fixed the scene code of these B-graded videos on their existing narration and measured timing (see the git log for their lesson folders). Notes and fixed contact sheets are in `quality-fixes/<id>-notes.md` and `-sheet.jpg`. The six videos: `bio-m7-b07`, `bio-m7-b08`, `bio-m7-b09`, `bio-m7-b12`, `bio-m7-b13` and `bio-m7-g01`.
+
+For each, follow brief 198 steps 1 to 4: render v2, run the defect scan, compare the 16-frame sheet with Claude's, do a normal-speed playback check of the changed scenes, then replace on YouTube (owner approved). Use the Biology Module 7 playlist, unlist v1, never delete it, and read the playlist back.
+
+**Hand-in:** to `status.md`, one line per video: the v2 path, the scan result, the playback notes and the new link. Then the playlist readback.
