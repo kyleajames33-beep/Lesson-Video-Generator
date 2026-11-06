@@ -10,6 +10,7 @@ import {Heading, Overlay, Sx} from '../bio-m5-b13/shared';
 import {GTag} from '../bio-m6-b01/parts';
 import {Brace, GreyCross, ScribbleRing, Tg} from '../bio-m6-b07/parts';
 import {S} from './common';
+import {Rail2} from './parts2';
 import {ANTHERS, STIGMA, TRACT} from './assets';
 import {
 	AMBER, AMBER_INK, CARD, ClockRing, ColHead, Divider, EDGE, FemaleSym, GREYT, GREY_INK, GreyTick, INK, INK_SOFT, MaleSym, PLATES, Pill, Pl, PlC, PollenDot,
@@ -24,7 +25,7 @@ export const BoardTop: React.FC<{cols?: [ColG2, ColG2]; n: number; last?: number
 		<ColHead c={cols[0]} kind="ai" lit={lit[0]} />
 		<ColHead c={cols[1]} kind="ap" lit={lit[1]} />
 		{divider ? <Divider cols={cols} /> : null}
-		<Rail n={n} last={last} active={active} />
+		<Rail2 n={n} last={last} active={active} />
 	</g>
 );
 type ColG2 = ReturnType<typeof colsAt>[0];
@@ -62,9 +63,9 @@ const SLIP = 7;
 export const SceneBoth: React.FC = () => {
 	const f = useCurrentFrame();
 	const cellsO = vis(f, K2.meiosis - 6, K2.sorted, 12);
-	const cx = 640, cy = 650, cw = 330;
+	const cx = 640, cy = 640, cw = 400;
 	const q = (i: number): [number, number] => [cx + (i % 2 ? 1 : -1) * cw * 0.245, cy + (i < 2 ? -1 : 1) * cw * 0.245];
-	const offX = (i: number) => 1060 + i * 190;
+	const offX = (i: number) => 1080 + i * 200;
 	const sortO = prog(f, K2.sorted, 12);
 	const gateX = 760;
 	const spermPos = (i: number): [number, number, number] => {
@@ -79,7 +80,7 @@ export const SceneBoth: React.FC = () => {
 		<>
 			<Heading text="What both do" at={4} size={60} />
 			<Overlay>
-				<BoardTop n={1} last={prog(f, K2.share, 14)} active={0} o={prog(f, 0, 14)} />
+				<BoardTop n={1} last={prog(f, K2.share, 14)} active={0} o={prog(f, 0, 14)} divider={false} />
 				<Pill x={430} y={TOP + 10} text="choose the parents" size={32} o={prog(f, K2.choose, 12)} lit={1 - prog(f, K2.dna, 10)} />
 				<Pill x={1150} y={TOP + 10} text="more likely, not certain" size={32} o={prog(f, K2.likely, 12)} />
 				{/* DNA unchanged under each column */}
@@ -94,30 +95,30 @@ export const SceneBoth: React.FC = () => {
 				{/* meiosis: four different gametes, each sends its own ring set */}
 				<g opacity={cellsO}>
 					<Pl p={PLATES.cells4} cx={cx} cy={cy} w={cw} />
-					<Sx x={cx} y={cy + cw / 2 + 40} text="meiosis: four different gametes" size={28} color={GREY_INK} hand anchor="middle" opacity={1 - 0.6 * prog(f, K2.mix + 30, 10)} />
+					<Sx x={cx} y={cy + cw / 2 + 52} text="meiosis: four different gametes" size={40} color={INK} hand anchor="middle" opacity={1 - 0.5 * prog(f, K2.mix + 30, 10)} />
 					{GAMETE.map((pair, i) => {
 						const t = smooth(prog(f, K2.mix + i * 8, 34));
 						const [sx, sy] = q(i);
-						const x = lerp(sx, offX(i), t), y = lerp(sy, 740, t);
+						const x = lerp(sx, offX(i), t), y = lerp(sy, 770, t);
 						return (
 							<g key={i} opacity={prog(f, K2.mix + i * 8, 6)}>
-								<Rg x={x - 14} y={y} r={11} k={pair[0]} />
-								<Rg x={x + 14} y={y} r={11} k={pair[1]} />
+								<Rg x={x - 21} y={y} r={17} k={pair[0]} />
+								<Rg x={x + 21} y={y} r={17} k={pair[1]} />
 							</g>
 						);
 					})}
-					{GAMETE.map((_, i) => <Pl key={i} p={PLATES.calf} cx={offX(i)} cy={650} w={130} o={prog(f, K2.mix + 30 + i * 8, 10)} />)}
+					{GAMETE.map((_, i) => <Pl key={i} p={PLATES.calf} cx={offX(i)} cy={650} w={180} o={prog(f, K2.mix + 30 + i * 8, 10)} />)}
 				</g>
-				<Tg x={1340} y={850} text="each gamete, its own mix" at={K2.mix + 40} out={K2.sorted} anchor="middle" size={38} />
+				<Tg x={1380} y={880} text="each gamete, its own mix: each calf differs" at={K2.mix + 40} out={K2.sorted} anchor="middle" size={42} />
 				{/* sex-sorted semen: sorted by DNA content, not perfectly */}
-				<g opacity={sortO}>
+				<g opacity={sortO} transform="translate(250,0)">
 					<rect x={gateX - 20} y={540} width={40} height={74} rx={8} fill="#e9e2d4" stroke={INK_SOFT} strokeWidth={3} />
 					<rect x={gateX - 20} y={668} width={40} height={74} rx={6} fill="#e9e2d4" stroke={INK_SOFT} strokeWidth={3} />
-					<Sx x={gateX} y={526} text="sorter" size={24} color={GREY_INK} hand anchor="middle" />
+					<Sx x={gateX} y={522} text="sorter" size={36} color={INK} hand anchor="middle" />
 					<StrawG x={880} y={530} w={200} fill={0.6} />
 					<StrawG x={880} y={750} w={200} fill={0.4} />
-					<Sx x={980} y={508} text="X straw" size={24} color={GREY_INK} hand anchor="middle" />
-					<Sx x={980} y={790} text="Y straw" size={24} color={GREY_INK} hand anchor="middle" />
+					<Sx x={980} y={506} text="X straw" size={36} color={INK} hand anchor="middle" />
+					<Sx x={980} y={804} text="Y straw" size={36} color={INK} hand anchor="middle" />
 					{SPERM.map((l, i) => {
 						const [x, y, o] = spermPos(i);
 						return <Sperm key={i} x={x} y={y} l={l} o={o} s={1.5} glow={l === 'X' ? vis(f, K2.more, K2.machine + 30, 10) : 0} />;
@@ -129,7 +130,7 @@ export const SceneBoth: React.FC = () => {
 						</g>
 					))}
 				</g>
-				<Tg x={440} y={1000} text="about 9 in 10 female" at={K2.nine + 30} out={K2.likely} size={38} />
+				<Tg x={690} y={1000} text="about 9 in 10 female" at={K2.nine + 30} out={K2.likely} size={42} />
 				{void K2.differ}{void CARD}{void EDGE}{void AMBER}{void INK}{void GREYT}
 			</Overlay>
 		</>
@@ -165,16 +166,20 @@ export const SceneCollect: React.FC = () => {
 						<rect x={460} y={600} width={440} height={120} rx={20} fill="#dcebf5" opacity={0.35 * (1 - prog(f, K3.stored, 20))} />
 					</g>
 				</g>
-				<Pill x={440} y={900} text="frozen: keeps for decades" size={32} o={vis(f, K3.decades, K3.survives, 10)} />
+				<Pill x={440} y={900} text="frozen: keeps for decades" size={36} o={vis(f, K3.decades, K3.survives, 10)} />
+				<Sx x={430} y={570} text="semen collected" size={36} color={INK} hand at={K3.semen + 6} />
+				<Sx x={1080} y={556} text="diluted: many doses" size={36} color={INK} hand anchor="end" at={K3.diluted + 10} />
+				<Sx x={470} y={720} text="frozen in thin straws" size={34} color={INK_SOFT} hand at={K3.frozen + 6} opacity={1 - 0.6 * leftDim} />
 				{/* pollen from the anthers: lasts hours, used fresh close by */}
-				<PlC p={PLATES.floret} cx={fl.cx} cy={fl.cy} w={fl.w} id="b15-s3-floret" o={prog(f, K3.pollen - 10, 14)} />
+				<PlC p={PLATES.floret} cx={fl.cx} cy={fl.cy} w={fl.w} id="b15-s3-floret" o={0.45 + 0.55 * prog(f, K3.pollen - 10, 14)} dim={1 - prog(f, K3.pollen - 10, 14)} />
+				<Sx x={fl.cx} y={fl.cy + 300} text="next: pollen" size={34} color={GREY_INK} hand anchor="middle" opacity={(1 - prog(f, K3.pollen - 10, 10)) * prog(f, 10, 12)} />
 				{A.map((a, i) => <ScribbleRing key={i} cx={a[0]} cy={a[1]} rx={30} ry={60} at={K3.anthers + i * 6} out={K3.survives + 40} seed={2 + i} />)}
-				<Sx x={fl.cx} y={fl.cy - 250} text="anthers: make pollen" size={28} color={GREY_INK} hand anchor="middle" at={K3.anthers + 10} out={K3.fresh + 40} />
-				<ClockRing x={1700} y={420} t={clock} o={vis(f, K3.survives, K3.fresh + 30, 10)} />
+				<Sx x={fl.cx} y={fl.cy - 252} text="anthers: make pollen" size={38} color={INK} hand anchor="middle" at={K3.anthers + 10} out={K3.fresh + 40} />
+				<ClockRing x={1700} y={420} r={46} t={clock} o={vis(f, K3.survives, K3.fresh + 30, 10)} />
 				{[[1660, 500], [1690, 516], [1720, 500], [1700, 486], [1745, 515]].map(([x, y], i) => <PollenDot key={i} x={x} y={y} o={prog(f, K3.survives, 10) * (1 - prog(f, K3.survives + 60, 14))} />)}
 				<PlC p={PLATES.ear} cx={ear2.cx} cy={ear2.cy} w={110} id="b15-s3-ear2" o={prog(f, K3.fresh, 12)} />
 				{f >= K3.fresh + 6 ? <path d={`M${A[2][0] + 20},${A[2][1]} Q${(A[2][0] + ear2.cx) / 2},${A[2][1] - 60} ${ear2.cx - 20},${ear2.cy - 120}`} fill="none" stroke={AMBER_INK} strokeWidth={3} strokeDasharray="6 7" opacity={prog(f, K3.fresh + 6, 12)} /> : null}
-				<Pill x={1150} y={900} text="many crops: lasts hours" size={32} o={prog(f, K3.survives + 10, 10)} />
+				<Pill x={1150} y={900} text="many crops: lasts hours" size={36} o={prog(f, K3.survives + 10, 10)} />
 				{void K3.compare}{void INK}
 			</Overlay>
 		</>
@@ -230,7 +235,7 @@ export const SceneDeliver: React.FC = () => {
 				<BoardTop n={3} last={prog(f, K4.step2, 14)} active={2} lit={[1 - 0.7 * leftDim, 0.3 + 0.7 * prog(f, K4.flower - 6, 12)]} />
 				{/* the cow: timing is the control (anatomy diagram, a thin tube, no animal body) */}
 				<g opacity={1 - 0.6 * leftDim}>
-					<Pl p={PLATES.tract} cx={tr.cx} cy={tr.cy} w={tr.w} o={prog(f, K4.cow - 6, 14)} />
+					<Pl p={PLATES.tract} cx={tr.cx} cy={tr.cy} w={tr.w} o={(0.45 + 0.55 * prog(f, K4.cow - 6, 14)) * prog(f, 0, 12)} />
 					<g opacity={vis(f, K4.thaws - 6, K4.places + 20, 10)}>
 						<Pl p={PLATES.strawFrost} cx={tr.cx + 60} cy={790} w={300} />
 						<rect x={tr.cx - 100} y={772} width={320} height={36} rx={14} fill="#dcebf5" opacity={0.5 * (1 - prog(f, K4.thaws + 6, 24))} />
@@ -238,13 +243,14 @@ export const SceneDeliver: React.FC = () => {
 					{tube > 0.01 ? <line x1={vag[0] + 18} y1={vag[1]} x2={tipX} y2={tipY} stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" /> : null}
 					{tube > 0.98 ? [0, 1, 2, 3, 4].map(i => <circle key={i} cx={ut[0] + 30 - prog(f, K4.places + 40 + i * 4, 20) * (30 + i * 14)} cy={ut[1] + (i % 2 ? -1 : 1) * 8 * prog(f, K4.places + 40 + i * 4, 20)} r={5} fill="#f1e2a8" stroke={AMBER_INK} strokeWidth={1.5} opacity={prog(f, K4.places + 40 + i * 4, 6)} />) : null}
 					<ScribbleRing cx={ut[0] - 10} cy={ut[1]} rx={70} ry={42} at={K4.places + 30} out={K4.heat + 30} seed={4} />
-					<Sx x={ut[0] - 10} y={ut[1] - 60} text="uterus" size={26} color={GREY_INK} hand anchor="middle" at={K4.places + 30} />
-					<Sx x={cer[0] + 10} y={cer[1] + 70} text="cervix" size={24} color={GREY_INK} hand anchor="middle" at={K4.places + 10} />
+					<Sx x={ut[0] - 10} y={ut[1] - 64} text="uterus" size={38} color={INK} hand anchor="middle" at={K4.places + 30} />
+					<Sx x={cer[0] + 10} y={cer[1] + 76} text="cervix" size={36} color={INK} hand anchor="middle" at={K4.places + 10} />
+					<Sx x={tr.cx + 60} y={760} text="thawed dose" size={34} color={INK_SOFT} hand anchor="middle" at={K4.thaws + 6} out={K4.places + 20} />
 					{/* the heat strip with the dose on it */}
 					<g opacity={prog(f, K4.heat, 12)}>
 						<rect x={480} y={800} width={520} height={34} rx={17} fill={CARD} stroke={EDGE} strokeWidth={2.5} />
 						<rect x={700} y={800} width={110} height={34} rx={17} fill="#fde7c4" stroke={AMBER} strokeWidth={2.5} />
-						<Sx x={755} y={864} text="on heat" size={26} color={AMBER_INK} hand anchor="middle" />
+						<Sx x={755} y={876} text="on heat" size={36} color={AMBER_INK} hand anchor="middle" />
 						<circle cx={755} cy={817} r={8} fill="#f1e2a8" stroke={AMBER_INK} strokeWidth={2} />
 					</g>
 					<g opacity={prog(f, K4.nobull, 12)}>
@@ -252,9 +258,10 @@ export const SceneDeliver: React.FC = () => {
 					</g>
 					<GreyCross x={990} y={420} at={K4.nobull + 8} s={34} />
 				</g>
-				<Pill x={440} y={910} text="timing + no bull: no other sperm" size={30} o={vis(f, K4.nobull + 16, K4.wind, 10)} />
+				<Pill x={440} y={910} text="timing + no bull: no other sperm" size={34} o={vis(f, K4.nobull + 16, K4.wind, 10)} />
 				{/* the flower: two other sources, anthers out, isolated, chosen pollen on */}
-				<PlC p={PLATES.floret} cx={fl.cx} cy={fl.cy} w={fl.w} id="b15-s4-floret" o={prog(f, K4.flower - 10, 14)} />
+				<PlC p={PLATES.floret} cx={fl.cx} cy={fl.cy} w={fl.w} id="b15-s4-floret" o={0.45 + 0.55 * prog(f, K4.flower - 10, 14)} dim={1 - prog(f, K4.flower - 10, 14)} />
+				<Sx x={fl.cx} y={fl.cy + 290} text="next: the flower" size={34} color={GREY_INK} hand anchor="middle" opacity={(1 - prog(f, K4.flower - 10, 10)) * prog(f, 10, 12)} />
 				<defs><filter id="b15-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" /></filter></defs>
 				{A.map((a, i) => (
 					<g key={i} opacity={gone(i)} filter="url(#b15-soft)">
@@ -265,7 +272,7 @@ export const SceneDeliver: React.FC = () => {
 				<PollenDot x={lerp(A[2][0], st[0] + 8, ownT)} y={lerp(A[2][1] + 30, st[1], ownT)} o={vis(f, K4.own + 6, K4.remove, 8)} />
 				<Wisp x={lerp(1880, st[0] + 30, Math.min(1, windT * 1.6))} y={st[1] - 70} o={vis(f, K4.wind, K4.wind + 50, 8)} />
 				<PollenDot x={lerp(1900, st[0] + 18, Math.min(1, windT * 1.4))} y={lerp(st[1] - 60, st[1] + 6, Math.min(1, windT * 1.4))} grey o={vis(f, K4.wind + 4, K4.remove, 8)} />
-				<Tg x={1150} y={960} text="two other sources: own anthers, wind or insects" at={K4.wind + 20} out={K4.remove + 10} size={30} />
+				<Tg x={1150} y={960} text="other pollen: own anthers, wind, insects" at={K4.wind + 20} out={K4.remove + 10} size={36} />
 				{fpos ? (
 					<g>
 						<Pl p={PLATES.forceps} cx={fpos[0]} cy={fpos[1] - fH / 2 + 8} w={fH * (184 / 1216)} />
@@ -276,7 +283,7 @@ export const SceneDeliver: React.FC = () => {
 				{iso > 0.01 ? (
 					<ellipse cx={fl.cx} cy={fl.cy - 10} rx={262} ry={300} fill="none" stroke={BLUE_LINE} strokeWidth={4} pathLength={100} strokeDasharray={`${100 - gap} ${gap}`} strokeDashoffset={-8} opacity={iso * (1 - 0.6 * bag)} />
 				) : null}
-				<Sx x={fl.cx} y={fl.cy + 330} text="stigma exposed: protect it now" size={26} color={GREY_INK} hand anchor="middle" at={K4.protect + 8} out={K4.applied} />
+				<Sx x={fl.cx} y={fl.cy + 336} text="stigma exposed: protect it now" size={36} color={INK} hand anchor="middle" at={K4.protect + 8} out={K4.applied} />
 				<Wisp x={strayT < 0.6 ? lerp(1900, fl.cx + 280, strayT / 0.6) : lerp(fl.cx + 280, 1900, (strayT - 0.6) / 0.4)} y={fl.cy - 160 + (strayT < 0.6 ? 0 : -120 * (strayT - 0.6))} o={vis(f, K4.protect + 6, K4.protect + 50, 8)} />
 				<Pl p={PLATES.brush} cx={1800} cy={360} w={190} o={vis(f, K4.applied - 6, K4.keep + 20, 10)} />
 				{[0, 1, 2, 3, 4].map(i => {
@@ -284,11 +291,11 @@ export const SceneDeliver: React.FC = () => {
 					return <PollenDot key={i} x={lerp(1735, st[0] + (i - 2) * 6, t)} y={lerp(325, st[1] - 4 + (i % 2) * 6, t) - Math.sin(t * Math.PI) * 30} r={6} o={prog(f, K4.applied + 6 + i * 5, 6)} />;
 				})}
 				<Wisp x={keepT < 0.5 ? lerp(1900, fl.cx + 270, keepT / 0.5) : lerp(fl.cx + 270, 1900, (keepT - 0.5) / 0.5)} y={fl.cy + 40 - (keepT < 0.5 ? 0 : 140 * (keepT - 0.5))} o={vis(f, K4.keep + 4, K4.keep + 48, 8)} />
-				<Pill x={1150} y={960} text="anthers out + isolated: no other pollen" size={30} o={vis(f, K4.keep + 20, K4.bag + 50, 10)} lit={1} />
+				<Pill x={1150} y={950} text="anthers out + isolated: no other pollen" size={34} o={vis(f, K4.keep + 20, K4.bag + 50, 10)} lit={1} />
 				<g opacity={bag * 0.82} transform={`translate(0,${lerp(-200, 0, bag)})`}>
 					<Pl p={PLATES.bag} cx={fl.cx} cy={fl.cy - 30} w={bW} />
 				</g>
-				<GTag x={1150} y={1000} text="one way to isolate the flower" at={K4.bag + 20} size={26} />
+				<GTag x={1150} y={1010} text="a bag: one way to isolate it" at={K4.bag + 20} size={30} />
 				{void K4.timing}{void bH}{void Rg}{void INK}{void AMBER}{void GREYT}
 			</Overlay>
 		</>

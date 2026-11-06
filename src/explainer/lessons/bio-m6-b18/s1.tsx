@@ -132,6 +132,10 @@ export const SceneRightDna: React.FC = () => {
 // ---------- 3. Cut ----------
 const K3 = cues(S('cut'), {re: 'restriction enzyme is', only: 'only at one particular', bact: 'Bacteria make these', viruses: 'invading viruses', many: 'Many of them cut', points: 'slightly different points', sticky: 'sticky ends, because', pair: 'pair with matching', open: 'open the plasmid', same: 'same enzyme, or', fit: "fit the gene's"});
 export const DX0 = 200, DY0 = 500;
+/** Quality fix (6 Nov): the cut-and-paste strands are drawn 1.45 times larger, from x 110. */
+const SC = 1.45, DXN = 110;
+const STRAND_T = `translate(${DXN - DX0 * SC},${DY0 - DY0 * SC}) scale(${SC})`;
+const sx = (x: number) => DXN + (x - DX0) * SC, sy = (y: number) => DY0 + (y - DY0) * SC;
 const GREYB = '#9a8f80';
 const geneCol = (i: number) => (i >= 8 && i < 16 ? AMBER_INK : GREYB);
 export const SceneCut: React.FC = () => {
@@ -139,10 +143,10 @@ export const SceneCut: React.FC = () => {
 	const cL = smooth(prog(f, K3.points + 6, 22)), cR = smooth(prog(f, K3.points + 30, 22));
 	const flankO = 1 - prog(f, K3.open, 16);
 	const pieces: DPiece[] = cL <= 0.001 ? [{top: [0, 24], bot: [0, 24], color: geneCol}] : [
-		{top: [0, 4], bot: [0, 8], dx: -70 * cL, color: geneCol, o: flankO},
+		{top: [0, 4], bot: [0, 8], dx: -40 * cL, color: geneCol, o: flankO},
 		...(cR <= 0.001 ? [{top: [4, 24], bot: [8, 24], color: geneCol} as DPiece] : [
 			{top: [4, 16], bot: [8, 20], color: geneCol} as DPiece,
-			{top: [16, 24], bot: [20, 24], dx: 70 * cR, color: geneCol, o: flankO} as DPiece,
+			{top: [16, 24], bot: [20, 24], dx: 40 * cR, color: geneCol, o: flankO} as DPiece,
 		]),
 	];
 	const stick = vis(f, K3.sticky, K3.open, 10) * (0.5 + 0.5 * Math.sin((f - K3.sticky) / 4)) + vis(f, K3.fit, K3.fit + 60, 10);
@@ -156,7 +160,7 @@ export const SceneCut: React.FC = () => {
 	const reOpen = f < K3.points ? 0.6 : Math.min(snap(K3.points + 4), snap(K3.points + 28));
 	const reO = prog(f, K3.re, 10) * (1 - prog(f, K3.points + 54, 12));
 	// the plasmid ring
-	const R = {cx: 1500, cy: 560, r: 150};
+	const R = {cx: 1620, cy: 560, r: 150};
 	const top = ringPt(R.cx, R.cy, R.r, -90);
 	const re2 = smooth(prog(f, K3.open + 2, 18));
 	const ringGap = prog(f, K3.open + 22, 14);
@@ -166,11 +170,13 @@ export const SceneCut: React.FC = () => {
 			<Heading text="Cut" at={4} size={56} />
 			<Overlay>
 				<Track n={5} active={1} o={prog(f, 0, 12)} />
-				<Term x={DX0} y={330} term="restriction enzyme" gloss="cuts DNA at one short sequence" at={K3.re} dim={prog(f, K3.sticky, 12)} />
-				<rect x={DX0 + 3 * DP} y={DY0 - 14} width={6 * DP} height={84} rx={14} fill="#fff3d9" stroke={AMBER} strokeWidth={2.5} opacity={vis(f, K3.only + 6, K3.points + 6, 10)} />
-				<Sx x={DX0 + 6 * DP} y={DY0 + 104} text="recognition sequence" size={24} color={GREY_INK} hand anchor="middle" at={K3.only + 10} out={K3.points + 6} />
-				<Duplex x={DX0} y={DY0} pieces={pieces} glow={glow} o={prog(f, 4, 14)} />
-				<REBlob x={reX} y={mid} s={0.9} open={reOpen} o={reO} />
+				<Term x={DXN} y={320} term="restriction enzyme" gloss="cuts DNA at one short sequence" at={K3.re} dim={prog(f, K3.sticky, 12)} />
+				<g transform={STRAND_T}>
+					<rect x={DX0 + 3 * DP} y={DY0 - 14} width={6 * DP} height={84} rx={14} fill="#fff3d9" stroke={AMBER} strokeWidth={2.5} opacity={vis(f, K3.only + 6, K3.points + 6, 10)} />
+					<Sx x={DX0 + 6 * DP} y={DY0 + 104} text="recognition sequence" size={26} color={INK} hand anchor="middle" at={K3.only + 10} out={K3.points + 6} />
+					<Duplex x={DX0} y={DY0} pieces={pieces} glow={glow} o={prog(f, 4, 14)} />
+					<REBlob x={reX} y={mid} s={0.9} open={reOpen} o={reO} />
+				</g>
 				{/* its natural job: chop up virus DNA */}
 				<g opacity={vis(f, K3.bact, K3.many, 12)}>
 					<rect x={1340} y={280} width={460} height={380} rx={20} fill="#fffdf8" stroke="rgba(60,45,20,0.22)" strokeWidth={2.5} />
@@ -182,15 +188,16 @@ export const SceneCut: React.FC = () => {
 					})}
 					<REBlob x={lerp(1500, 1660, prog(f, K3.viruses, 24))} y={520} s={0.4} open={(f - K3.viruses) % 10 < 5 ? 0.1 : 0.6} o={vis(f, K3.viruses - 4, K3.viruses + 30, 6)} />
 				</g>
-				<GTag x={1350} y={690} text="its natural job: chop up virus DNA" at={K3.viruses + 10} out={K3.many} size={24} />
-				<Tg x={DX0} y={700} text="staggered cut" at={K3.points + 40} out={K3.sticky} size={36} />
-				<Term x={DX0} y={780} term="sticky ends" gloss="unpaired bases that can pair" at={K3.sticky} />
+				<GTag x={1340} y={690} text="its natural job: chop up virus DNA" at={K3.viruses + 10} out={K3.many} size={30} />
+				<Tg x={DXN} y={700} text="staggered cut" at={K3.points + 40} out={K3.sticky} size={42} />
+				<Term x={DXN} y={790} term="sticky ends" gloss="unpaired bases that can pair" at={K3.sticky} />
 				{/* the plasmid opened with the same enzyme */}
-				<RecRing cx={R.cx} cy={R.cy} r={R.r} gap={ringGap} marker={0} o={prog(f, K3.open - 6, 14)} />
+				<RecRing cx={R.cx} cy={R.cy} r={R.r} gap={ringGap} marker={0} o={Math.max(prog(f, K3.open - 6, 14), 0.4 * prog(f, K3.many + 10, 14))} />
+				<Sx x={R.cx} y={R.cy + 12} text="plasmid" size={38} color={GREY_INK} hand anchor="middle" opacity={prog(f, K3.many + 16, 12)} />
 				<REBlob x={top[0] + 40} y={lerp(top[1] - 140, top[1], re2)} s={0.6} open={f >= K3.open + 20 && f < K3.open + 28 ? 0 : 0.6} o={vis(f, K3.open + 2, K3.open + 40, 8)} />
 				<Overhang x={top[0] - 4 * DP * 0.7 - 34} y={top[1] - 40} start={4} comp o={prog(f, K3.open + 30, 12)} glow={ringStick} s={0.7} />
 				<Overhang x={top[0] + 34} y={top[1] - 40} start={16} o={prog(f, K3.open + 30, 12)} glow={ringStick} s={0.7} />
-				<GTag x={R.cx} y={760} text="same enzyme, or matching ends" at={K3.same} size={26} anchor="middle" />
+				<GTag x={R.cx} y={770} text="same enzyme, or matching ends" at={K3.same} size={32} anchor="middle" />
 				{void K3.pair}{void TEAL}
 			</Overlay>
 		</>
@@ -220,7 +227,7 @@ export const ScenePaste: React.FC = () => {
 				{top: [16, 24], bot: [20, 24], dx: 80 * (1 - drop), color: () => TEAL},
 			];
 	const fl = (a: number) => Math.max(0, Math.sin(clamp01((f - a) / 16) * Math.PI));
-	const R = {cx: 1480, cy: 580, r: 170};
+	const R = {cx: 1620, cy: 590, r: 160};
 	const close = prog(f, K4.good, 14);
 	const rot = 360 * smooth(prog(f, K4.recomb, 50));
 	const nickGlow = vis(f, K4.weak + 10, K4.seals + 50, 8) * (0.5 + 0.5 * Math.sin((f - K4.weak) / 4));
@@ -229,25 +236,27 @@ export const ScenePaste: React.FC = () => {
 			<Heading text="Paste" at={4} size={56} />
 			<Overlay>
 				<Track n={5} active={2} o={prog(f, 0, 12)} />
-				<Sx x={DX0} y={DY0 - 40} text="the join, close up" size={24} color={GREY_INK} hand at={K4.mix} />
-				<Duplex x={DX0} y={DY0} pieces={pieces} pairO={pairO} nicks={joined ? nicks : []} o={prog(f, 4, 14)} />
-				{joined ? nicks.map((n, k) => (n.o > 0.05 ? <circle key={k} cx={lx(n.i)} cy={DY0 + (n.s === 't' ? 0 : 56)} r={11} fill="none" stroke={AMBER} strokeWidth={3} opacity={nickGlow * n.o} /> : null)) : null}
-				{[lx(6), lx(18)].map((x, k) => {
-					const v = fl(K4.seals + 2 + k * 42);
-					return v > 0.01 ? <circle key={k} cx={x} cy={DY0 + 28} r={40 + 30 * v} fill={AMBER} opacity={0.35 * v} /> : null;
-				})}
-				<LigBlob x={ligX} y={DY0 + 28} s={1} squeeze={Math.max(fl(K4.seals + 2), fl(K4.seals + 44))} o={prog(f, K4.ligase, 10) * (1 - prog(f, K4.recomb, 12))} />
-				<Tg x={DX0} y={700} text="ends pair" at={K4.pair + 10} out={K4.weak} size={36} />
-				<Tg x={DX0} y={700} text="backbone still open" at={K4.weak + 10} out={K4.seals + 10} size={36} />
-				<Term x={DX0} y={330} term="DNA ligase" gloss="seals the backbone" at={K4.ligase} dim={prog(f, K4.recomb, 12)} />
-				<Term x={DX0} y={790} term="recombinant DNA" gloss="DNA joined from two sources" at={K4.recomb} />
+				<g transform={STRAND_T}>
+					<Sx x={DX0} y={DY0 - 40} text="the join, close up" size={26} color={INK} hand at={K4.mix} />
+					<Duplex x={DX0} y={DY0} pieces={pieces} pairO={pairO} nicks={joined ? nicks : []} o={prog(f, 4, 14)} />
+					{joined ? nicks.map((n, k) => (n.o > 0.05 ? <circle key={k} cx={lx(n.i)} cy={DY0 + (n.s === 't' ? 0 : 56)} r={11} fill="none" stroke={AMBER} strokeWidth={3} opacity={nickGlow * n.o} /> : null)) : null}
+					{[lx(6), lx(18)].map((x, k) => {
+						const v = fl(K4.seals + 2 + k * 42);
+						return v > 0.01 ? <circle key={k} cx={x} cy={DY0 + 28} r={40 + 30 * v} fill={AMBER} opacity={0.35 * v} /> : null;
+					})}
+					<LigBlob x={ligX} y={DY0 + 28} s={1} squeeze={Math.max(fl(K4.seals + 2), fl(K4.seals + 44))} o={prog(f, K4.ligase, 10) * (1 - prog(f, K4.recomb, 12))} />
+				</g>
+				<Tg x={DXN} y={712} text="ends pair" at={K4.pair + 10} out={K4.weak} size={42} />
+				<Tg x={DXN} y={712} text="backbone still open" at={K4.weak + 10} out={K4.seals + 10} size={42} />
+				<Term x={DXN} y={320} term="DNA ligase" gloss="seals the backbone" at={K4.ligase} dim={prog(f, K4.recomb, 12)} />
+				<Term x={DXN} y={800} term="recombinant DNA" gloss="DNA joined from two sources" at={K4.recomb} />
 				{/* the whole plasmid */}
 				<RecRing cx={R.cx} cy={R.cy} r={R.r} gap={1 - close} insert={close} marker={prog(f, 4, 14)} markerLit={vis(f, K4.marker, K4.marker + 80, 10)} rot={rot} o={prog(f, K4.mix, 14)} />
 				{f >= K4.mix + 20 ? <g opacity={0.6 * (1 - prog(f, K4.recomb, 12))}>
-					<DrawPath d={`M${lx(24) + 10},${DY0 - 6} L${R.cx - 40},${R.cy - R.r - 10}`} at={K4.mix + 20} dur={14} color={GREYT} width={2} dash="5 6" />
-					<DrawPath d={`M${lx(24) + 10},${DY0 + 62} L${R.cx + 40},${R.cy - R.r - 10}`} at={K4.mix + 24} dur={14} color={GREYT} width={2} dash="5 6" />
+					<DrawPath d={`M${sx(lx(24)) + 10},${sy(DY0 - 6)} L${R.cx - 40},${R.cy - R.r - 10}`} at={K4.mix + 20} dur={14} color={GREYT} width={2.5} dash="5 6" />
+					<DrawPath d={`M${sx(lx(24)) + 10},${sy(DY0 + 62)} L${R.cx + 40},${R.cy - R.r - 10}`} at={K4.mix + 24} dur={14} color={GREYT} width={2.5} dash="5 6" />
 				</g> : null}
-				<Sx x={R.cx - R.r - 30} y={R.cy + R.r + 64} text="marker: antibiotic resistance" size={26} color={GREY_INK} hand at={K4.marker + 6} />
+				<Sx x={R.cx} y={R.cy + R.r + 70} text="marker: antibiotic resistance" size={36} color={INK} hand anchor="middle" at={K4.marker + 6} />
 				{void AMBER}{void INK_SOFT}
 			</Overlay>
 		</>

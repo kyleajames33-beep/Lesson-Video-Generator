@@ -52,22 +52,22 @@ export const fadeIn = (f: number, at: number, d = 12) => prog(f, at, d);
 
 // ---------- the three question cards ----------
 export const q1Spec = (t: number[] = [-100, -100, -100], marksAt?: number): CardSpec => ({
-	x: ZONE.card.x, y: ZONE.card.y, w: ZONE.card.w, subject: 'Biology', size: 24, note: 'data are illustrative',
+	x: 60, y: ZONE.card.y, w: 1800, subject: 'Biology', size: 32, note: 'data are illustrative',
 	items: [
 		{text: 'A farming district replaced conventional maize, sprayed with insecticide against caterpillar pests, with an insect-resistant maize. The insect-resistant maize produces a protein that kills caterpillars that feed on it. The table shows data for the district before the change and ten years after it.', at: t[0]},
-		{table: {head: ['Measure', 'Before (sprayed maize)', 'Ten years after (resistant maize)'], rows: [
+		{table: {head: ['Measure', 'Before', 'Ten years after'], rows: [
 			['Insecticide sprays per season', '6', '1'],
 			['Insect species recorded in maize fields', '17', '25'],
 			['Maize varieties grown in the district', '15', '4'],
 			['Farms planting refuge strips of non-resistant maize', 'not applicable', '3 in 10'],
 			['Caterpillars surviving on resistant maize (lab tests)', 'not applicable', 'none until year 7, rising since year 8'],
-		], colW: [610, 300, 470]}, at: t[1]},
+		], colW: [830, 250, 610]}, at: t[1]},
 		{text: 'Assess the effect of this change on biodiversity in the district.', marks: '6 marks', at: t[2], marksAt},
 	],
 });
 export const Q1 = q1Spec();
 export const q2Spec = (t: number[] = [-100, -100, -100], marksAt?: number): CardSpec => ({
-	x: ZONE.card.x, y: ZONE.card.y, w: ZONE.card.w, subject: 'Biology', size: 26, slotW: 250, note: 'constructed example',
+	x: 60, y: ZONE.card.y, w: 1800, subject: 'Biology', size: 32, slotW: 320, note: 'constructed example',
 	items: [
 		{text: 'A rare wild sheep species survives as one population of about 300 animals, all descended from 8 founders. A cell bank holds frozen skin cells taken from 10 wild sheep of this species that died 30 years ago. These 10 animals carried alleles that are no longer found in the living population.', at: t[0]},
 		{text: 'Scientists plan to use somatic cell nuclear transfer, with eggs and surrogate mothers from domestic sheep. In past cloning of this kind, about 2 of every 100 embryos transferred to surrogates produced a live lamb.', at: t[1]},
@@ -76,7 +76,7 @@ export const q2Spec = (t: number[] = [-100, -100, -100], marksAt?: number): Card
 });
 export const Q2 = q2Spec();
 export const q3Spec = (t: number[] = [-100, -100, -100, -100], marksAt?: number): CardSpec => ({
-	x: ZONE.card.x, y: ZONE.card.y, w: ZONE.card.w, subject: 'Biology', size: 24, slotW: 230,
+	x: 60, y: ZONE.card.y, w: 1800, subject: 'Biology', size: 32, slotW: 270,
 	items: [
 		{text: 'Many thousands of people with kidney failure wait years for a kidney from a human donor, and some die while waiting.', at: t[0]},
 		{text: 'Scientists have gene-edited pigs so that their kidneys are more suitable for transplant into humans: three pig genes whose products trigger rapid rejection by the human immune system were inactivated, seven human genes that help control immune and clotting reactions were added, and copies of a virus built into the pig genome were inactivated. The pigs are raised in sealed, disease-controlled facilities.', at: t[1]},

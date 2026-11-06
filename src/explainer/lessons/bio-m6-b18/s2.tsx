@@ -93,15 +93,16 @@ export const ScenePick: React.FC = () => {
 			<Heading text="Pick" at={4} size={56} />
 			<Overlay>
 				<Track n={5} active={4} o={prog(f, 0, 12)} />
-				<Tube x={960} y={340} s={0.75} o={prog(f, 4, 12) * (1 - prog(f, K6.but - 14, 14))} />
+				<Tube x={960} y={350} s={1.05} o={prog(f, 4, 12) * (1 - prog(f, K6.but - 14, 14))} />
+				<Sx x={1020} y={392} text="transformed bacteria" size={36} color={INK} hand at={6} out={K6.grow} />
 				<Arr a={[920, 400]} b={[700, 450]} at={K6.spread + 6} o={1 - prog(f, K6.grow, 14)} />
 				<Arr a={[1000, 400]} b={[1220, 450]} at={K6.spread + 10} o={1 - prog(f, K6.grow, 14)} />
-				<g opacity={leftO * prog(f, K6.spread + 10, 14)}>
+				<g opacity={leftO * (0.5 + 0.5 * prog(f, K6.spread + 10, 14)) * prog(f, 0, 12)}>
 					<Pl p={PLATES.plateEmpty} cx={L.cx} cy={L.cy} w={L.w} dim={prog(f, K6.grow + 64, 14)} />
 					<Pl p={PLATES.plateCrowd} cx={L.cx} cy={L.cy} w={L.w} o={g} dim={prog(f, K6.grow + 64, 14)} />
 				</g>
-				<GTag x={L.cx} y={880} text="no antibiotic" at={K6.spread + 14} out={K6.but - 14} size={26} anchor="middle" />
-				<g opacity={prog(f, K6.spread + 14, 14)}>
+				<GTag x={L.cx} y={880} text="no antibiotic" at={K6.spread + 14} out={K6.but - 14} size={32} anchor="middle" />
+				<g opacity={(0.5 + 0.5 * prog(f, K6.spread + 14, 14)) * prog(f, 0, 12)}>
 					<Pl p={PLATES.plateEmpty} cx={R.cx} cy={R.cy} w={R.w} />
 					<Pl p={PLATES.plateFew} cx={R.cx} cy={R.cy} w={R.w} o={g} />
 				</g>
@@ -127,7 +128,7 @@ export const ScenePick: React.FC = () => {
 					const at = K6.second + 10 + i * 3;
 					return HAS_INSERT.includes(i) ? <TickG key={i} x={x + 2} y={y - 2} at={at} s={30} /> : <GreyCross key={i} x={x} y={y} at={at} s={14} />;
 				})}
-				<Sx x={960} y={970} text="second marker, or read the DNA" size={28} color={GREY_INK} hand anchor="middle" at={K6.second + 14} out={K6.clone} />
+				<Sx x={960} y={970} text="second marker, or read the DNA" size={36} color={INK} hand anchor="middle" at={K6.second + 14} out={K6.clone} />
 				{/* each is a clone */}
 				<circle cx={pc[0]} cy={pc[1]} r={30} fill={AMBER} opacity={0.4 * pulse} />
 				<line x1={pc[0] - 20} y1={pc[1]} x2={420} y2={650} stroke={GREYT} strokeWidth={2} strokeDasharray="5 5" opacity={prog(f, K6.clone + 10, 10)} />

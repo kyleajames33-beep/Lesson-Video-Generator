@@ -12,6 +12,7 @@ import {GTag} from '../bio-m6-b01/parts';
 import {GreyCross, ScribbleRing, Tg} from '../bio-m6-b07/parts';
 import {S} from './common';
 import {BoardTop} from './s1';
+import {ROWS2} from './parts2';
 import {
 	AMBER, AMBER_INK, CARD, EDGE, Embryos, FlowerG, GREYT, GREY_INK, INK, INK_SOFT, MarkText, PLATES, Pill, Pl, PlC, PollenDot, RAIL, ROWS, ReachMap, Rg, RingCluster,
 	StrawG, TOP, Wisp, clamp01, clusterPt, colsAt, lerp, platePt, prog, railY, smooth, vis,
@@ -276,9 +277,9 @@ export const SceneWriting: React.FC = () => {
 					return (
 						<g key={r}>
 							<rect x={RAIL.x0} y={ty(r)} width={1830 - RAIL.x0} height={64} rx={14} fill={L > 0.5 ? '#fff3d9' : CARD} stroke={L > 0.5 ? AMBER : EDGE} strokeWidth={L > 0.5 ? 3.5 : 2.5} />
-							<Sx x={RAIL.x0 + 18} y={ty(r) + 41} text={ROWS[r]} size={24} color={L > 0.5 ? INK : GREY_INK} weight={800} />
-							<Sx x={C0[0].x0 + 14} y={ty(r) + 42} text={row[0]} size={26} color={L > 0.5 ? INK : GREY_INK} hand />
-							<Sx x={C0[1].x0 + 14} y={ty(r) + 42} text={row[1]} size={26} color={L > 0.5 ? INK : GREY_INK} hand />
+							<Sx x={RAIL.x0 + 12} y={ty(r) + 43} text={ROWS2[r]} size={28} color={L > 0.5 ? INK : GREY_INK} weight={800} />
+							<Sx x={C0[0].x0 + 14} y={ty(r) + 44} text={row[0]} size={34} color={L > 0.5 ? INK : GREY_INK} hand />
+							<Sx x={C0[1].x0 + 14} y={ty(r) + 44} text={row[1]} size={34} color={L > 0.5 ? INK : GREY_INK} hand />
 							{L > 0.01 ? <g opacity={L}><path d={`M${C0[0].x1 - 60},${ty(r) + 32} L${C0[1].x0 - 4},${ty(r) + 32}`} stroke={AMBER_INK} strokeWidth={3} /><path d={`M${C0[1].x0 - 14},${ty(r) + 24} L${C0[1].x0 - 4},${ty(r) + 32} L${C0[1].x0 - 14},${ty(r) + 40}`} fill="none" stroke={AMBER_INK} strokeWidth={3} /></g> : null}
 						</g>
 					);
@@ -298,7 +299,7 @@ export const SceneWriting: React.FC = () => {
 						<MarkText x={140} y={740 + i * 72} size={34} at={l.at} parts={l.parts} color={f >= (i < 3 ? lines[i + 1].at : 1e9) ? GREY_INK : INK} />
 					</g>
 				))}
-				{void K8.compare}{void K8.same}{void railY}{void TOP}
+				{void K8.compare}{void K8.same}{void railY}{void TOP}{void ROWS}
 			</Overlay>
 		</>
 	);

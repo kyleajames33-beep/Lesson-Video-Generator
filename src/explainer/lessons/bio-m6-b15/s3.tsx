@@ -14,6 +14,7 @@ import {CardBox, GTag} from '../bio-m6-b01/parts';
 import {GreyCross} from '../bio-m6-b07/parts';
 import {S, hold} from './common';
 import {ANTHERS} from './assets';
+import {DotPair, SelfLoop} from './parts2';
 import {AMBER, AMBER_INK, CARD, EDGE, GREYT, GREY_INK, INK, INK_SOFT, PLATES, Pill, Pl, PlC, Rg, lerp, platePt, prog, smooth, vis} from './parts';
 import type {RK} from './parts';
 
@@ -58,6 +59,14 @@ export const SceneAttempt: React.FC = () => {
 				<Pl p={PLATES.tomato} cx={1600} cy={300} w={170} o={prog(f, KA.tomato, 14)} />
 				<Pl p={PLATES.bull} cx={1720} cy={470} w={180} o={prog(f, KA.cattle, 14)} />
 				<QText q={Q1({a: KA.tomato, b: KA.flowers, c: KA.cattle, d: KA.compare})} x={140} y={250} w={1360} size={36} card={false} />
+				{/* the givens drawn as they are read; they clear when the answer box opens */}
+				<g opacity={1 - prog(f, KA.compare + 16, 14)}>
+					<Pl p={PLATES.tomato} cx={330} cy={740} w={250} o={prog(f, KA.tomato + 6, 14)} />
+					<Sx x={330} y={930} text="one chosen father plant" size={34} color={INK} hand anchor="middle" at={KA.tomato + 16} />
+					{f < KA.compare + 30 ? <SelfLoop x={420} y={700} r={80} at={KA.flowers + 6} /> : null}
+					<Pl p={PLATES.bull} cx={900} cy={640} w={220} o={prog(f, KA.cattle, 14)} />
+					<DotPair a={[900, 760]} b={[1340, 760]} la="WA farm" lb="NSW calves" t={prog(f, KA.cattle + 24, 40)} o={prog(f, KA.cattle + 10, 12)} />
+				</g>
 				<AnsBox x={140} y={520} w={1320} h={470} at={KA.compare + 30} label="answer" />
 				<PauseHold id="attempt" at={KA.pause} cy={840} />
 			</Overlay>
@@ -75,7 +84,7 @@ export const SceneFeedbackOne: React.FC = () => {
 		{at: KB.frozen, label: 'store', ai: ['frozen, sent interstate'], ap: ['from a plant close by'], w: KB.w1},
 		{at: KB.cow, label: 'keep others out', ai: ['on heat, no bull'], ap: ['anthers removed, stray pollen kept off,', 'chosen pollen on (bag optional)'], w: KB.w2},
 	];
-	const ry = (i: number) => 400 + i * 120;
+	const ry = (i: number) => 432 + i * 122;
 	const fl = {cx: 1710, cy: 760, w: 240};
 	const A = ANTHERS.map(a => platePt(PLATES.floret, fl.cx, fl.cy, fl.w, a[0], a[1]));
 	const lift = smooth(prog(f, KB.anthers + 10, 30));
@@ -85,19 +94,19 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Heading text="Same feature, both sides" at={4} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<CardBox x={100} y={180} w={1720} h={150} at={-100} />
-				<QText q={STRIP1(ALL1, [{phrase: MARKS1[2], at: KB.both + 10}, {phrase: MARKS1[0], at: KB.frozen}, {phrase: MARKS1[1], at: KB.anthers}])} x={140} y={226} w={2620} size={36} card={false} s={0.62} />
-				<Sx x={440} y={380} text="cattle" size={28} color={GREY_INK} weight={800} opacity={prog(f, KB.both, 10)} />
-				<Sx x={1090} y={380} text="tomato" size={28} color={GREY_INK} weight={800} opacity={prog(f, KB.both, 10)} />
+				<CardBox x={100} y={180} w={1720} h={184} at={-100} />
+				<QText q={STRIP1(ALL1, [{phrase: MARKS1[2], at: KB.both + 10}, {phrase: MARKS1[0], at: KB.frozen}, {phrase: MARKS1[1], at: KB.anthers}])} x={140} y={222} w={2040} size={36} card={false} s={0.8} />
+				<Sx x={440} y={412} text="cattle" size={34} color={GREY_INK} weight={800} opacity={prog(f, KB.both, 10)} />
+				<Sx x={1080} y={412} text="tomato" size={34} color={GREY_INK} weight={800} opacity={prog(f, KB.both, 10)} />
 				{rows.map((r, i) => {
 					const lit = vis(f, r.at, i < 2 ? rows[i + 1].at : KB.describing, 10);
 					return (
 						<g key={i} opacity={prog(f, r.at, 12)}>
 							<rect x={120} y={ry(i)} width={1460} height={r.ap.length > 1 ? 104 : 80} rx={16} fill={lit > 0.5 ? '#fffaf0' : CARD} stroke={lit > 0.5 ? AMBER : EDGE} strokeWidth={lit > 0.5 ? 3.5 : 2.5} />
-							<Sx x={140} y={ry(i) + 50} text={r.label} size={28} color={lit > 0.5 ? INK : GREY_INK} weight={800} />
-							{r.ai.map((t, k) => <Sx key={k} x={440} y={ry(i) + 50 + k * 36} text={t} size={30} color={lit > 0.5 ? INK : GREY_INK} hand />)}
-							<Sx x={930} y={ry(i) + 50} text="whereas" size={28} color={AMBER_INK} hand opacity={prog(f, r.w, 8)} />
-							{r.ap.map((t, k) => <Sx key={k} x={1090} y={ry(i) + 50 + k * 36} text={t} size={k ? 26 : 30} color={lit > 0.5 ? INK : GREY_INK} hand />)}
+							<Sx x={140} y={ry(i) + 50} text={r.label} size={30} color={lit > 0.5 ? INK : GREY_INK} weight={800} />
+							{r.ai.map((t, k) => <Sx key={k} x={440} y={ry(i) + 52 + k * 38} text={t} size={36} color={lit > 0.5 ? INK : GREY_INK} hand />)}
+							<Sx x={920} y={ry(i) + 52} text="whereas" size={34} color={AMBER_INK} hand opacity={prog(f, r.w, 8)} />
+							{r.ap.map((t, k) => <Sx key={k} x={1080} y={ry(i) + 52 + k * 38} text={t} size={k ? 32 : 36} color={lit > 0.5 ? INK : GREY_INK} hand />)}
 						</g>
 					);
 				})}
@@ -117,7 +126,7 @@ export const SceneFeedbackOne: React.FC = () => {
 						</g>
 					))}
 				</g>
-				<MistakeChip x={140} y={930} text="a paragraph on each breeder, no 'whereas'" at={KB.describing} cross={KB.mistake} size={30} />
+				<MistakeChip x={140} y={930} text="a paragraph on each breeder, no 'whereas'" at={KB.describing} cross={KB.mistake} size={34} />
 				{void KB.stray}{void KB.bag}{void GTag}{void AMBER}
 			</Overlay>
 		</>
@@ -145,12 +154,48 @@ export const SceneAttemptTwo: React.FC = () => (
 			<CardBox x={100} y={180} w={1720} h={830} at={KC.dairy - 6} />
 			<QText q={qCheck(STEM2({a: KC.dairy, d: 0}), [])} x={140} y={250} w={1640} size={34} card={false} />
 			<DataTable x={140} y={300} cols={COLS} rows={ROWS2} rowAt={[KC.forty - 20, KC.fell - 20, KC.disorder]} at={KC.dairy + 10} size={30} rowH={58} />
-			<QText q={qCheck(DEM2({a: 0, d: KC.analyse}), [])} x={140} y={580} w={1640} size={34} card={false} />
-			<AnsBox x={140} y={680} w={1320} h={310} at={KC.analyse + 30} label="answer" />
+			<QText q={qCheck(DEM2({a: 0, d: KC.analyse}), [])} x={140} y={580} w={1150} size={34} card={false} />
+			<GivensTwo />
+			<AnsBox x={140} y={748} w={1150} h={244} at={KC.analyse + 30} label="answer" />
 			<PauseHold id="attempt-two" at={KC.pause} cy={850} />
 		</Overlay>
 	</>
 );
+
+/** Item 2's data drawn row by row as they are read (right of the table): cows the same, fathers 1200 to 150,
+ * affected calves 1 to 6 per 10 000. Nothing in it bears on the answer. */
+const GivensTwo: React.FC = () => {
+	const f = useCurrentFrame();
+	const bar = (y: number, w: number, at: number, label: string, year: string) => (
+		<g opacity={prog(f, at, 10)}>
+			<Sx x={1480} y={y + 24} text={year} size={26} color={GREY_INK} weight={700} />
+			<rect x={1556} y={y} width={w * smooth(prog(f, at, 20))} height={30} rx={8} fill="#8fa7b8" />
+			<Sx x={w > 150 ? 1556 + w - 10 : 1556 + w + 12} y={y + 25} text={label} size={28} color={w > 150 ? '#fffdf8' : INK} weight={800} anchor={w > 150 ? 'end' : 'start'} />
+		</g>
+	);
+	return (
+		<g>
+			<g opacity={prog(f, KC.forty - 14, 14)}>
+				<Pl p={PLATES.cow} cx={1420} cy={340} w={150} />
+				<Sx x={1510} y={334} text="cows: the same" size={34} color={INK} hand />
+				<Sx x={1510} y={374} text="both years" size={30} color={GREY_INK} hand />
+			</g>
+			<g opacity={prog(f, KC.fell - 14, 14)}>
+				<Pl p={PLATES.bull} cx={1400} cy={496} w={120} />
+				<Sx x={1350} y={436} text="fathers" size={34} color={INK} hand />
+			</g>
+			{bar(452, 230, KC.fell - 4, '1200', '1985')}
+			{bar(500, 29, KC.fell + 10, '150', '2025')}
+			<g opacity={prog(f, KC.disorder, 14)}>
+				<Sx x={1350} y={596} text="calves with the disorder, per 10 000" size={30} color={INK} hand />
+				<Sx x={1350} y={646} text="1985" size={26} color={GREY_INK} weight={700} />
+				<circle cx={1450} cy={637} r={12} fill="#c4632e" />
+				<Sx x={1350} y={692} text="2025" size={26} color={GREY_INK} weight={700} />
+				{Array.from({length: 6}, (_, i) => <circle key={i} cx={1450 + i * 34} cy={683} r={12} fill="#c4632e" opacity={prog(f, KC.disorder + 10 + i * 4, 8)} />)}
+			</g>
+		</g>
+	);
+};
 
 // ---------- 10d. Feedback two ----------
 const KD = cues(S('feedback-two'), {fewer: 'With fewer bulls', small: 'like a small population', though: 'though cow numbers', related: 'more related', pair: 'pair up more often', rises: 'the disorder rises', change: 'Change', test: 'DNA-test them', thinking: 'Thinking the same', mistake: 'the classic mistake'});
@@ -167,10 +212,10 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<Heading text="Count the fathers" at={4} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<g transform="translate(140,190) scale(0.85) translate(-140,-300)">
+				<g transform="translate(0,-110)">
 					<DataTable x={140} y={300} cols={COLS} rows={ROWS2} at={-100} size={30} rowH={58} hot={hot} />
 				</g>
-				<Sx x={1150} y={282} text="not the cows" size={28} color={GREY_INK} hand at={KD.though + 10} />
+				<Sx x={1320} y={290} text="not the cows" size={36} color={AMBER_INK} hand at={KD.though + 10} />
 				{/* a mini sire fan: few fathers, many calves */}
 				<g opacity={prog(f, KD.fewer, 12)}>
 					{FEW_K.map((k, i) => {
@@ -200,10 +245,10 @@ export const SceneFeedbackTwo: React.FC = () => {
 					<circle cx={lerp(calf(4)[0], calf(13)[0] - 10, pass)} cy={lerp(calf(4)[1] + 20, calf(13)[1] + 24, pass)} r={8} fill="#9aa3ab" stroke={GREY_INK} strokeWidth={2} />
 					<circle cx={lerp(calf(7)[0], calf(13)[0] + 10, pass)} cy={lerp(calf(7)[1] + 20, calf(13)[1] + 24, pass)} r={8} fill="#9aa3ab" stroke={GREY_INK} strokeWidth={2} />
 				</g>
-				<Pill x={1000} y={520} text="fewer fathers: like a small population" size={30} o={prog(f, KD.small, 12)} lit={1 - prog(f, KD.related, 10)} />
-				<Pill x={1000} y={610} text="relatedness: recessive alleles pair up" size={30} o={prog(f, KD.pair + 10, 12)} lit={1 - prog(f, KD.change, 10)} />
-				<Pill x={1000} y={700} text="more unrelated bulls, or avoid carrier x carrier matings" size={26} o={prog(f, KD.change + 10, 12)} lit={1 - prog(f, KD.thinking, 10)} />
-				<MistakeChip x={1000} y={890} text="just as many cows, so diversity can't fall" at={KD.thinking} cross={KD.mistake} size={28} />
+				<Pill x={1000} y={500} text="fewer fathers: like a small population" size={34} o={prog(f, KD.small, 12)} lit={1 - prog(f, KD.related, 10)} />
+				<Pill x={1000} y={596} text="relatedness: recessive alleles pair up" size={34} o={prog(f, KD.pair + 10, 12)} lit={1 - prog(f, KD.change, 10)} />
+				<Pill x={1000} y={692} text="more unrelated bulls, or avoid carrier x carrier matings" size={30} o={prog(f, KD.change + 10, 12)} lit={1 - prog(f, KD.thinking, 10)} />
+				<MistakeChip x={1000} y={890} text="just as many cows, so diversity can't fall" at={KD.thinking} cross={KD.mistake} size={32} />
 				{void KD.rises}{void KD.test}{void GreyCross}{void CARD}{void EDGE}{void AMBER}{void INK}
 			</Overlay>
 		</>
@@ -225,8 +270,8 @@ export const SceneDecision: React.FC = () => {
 			<Heading text="Comparing reproductive technologies" at={KE.so} size={56} />
 			<Overlay>
 				{STEPS.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
-						<rect x={140} y={215 + i * 118} width={900} height={94} rx={22} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
+					<g key={i} opacity={(0.3 + 0.7 * prog(f, s.at, 14)) * prog(f, 0, 12)}>
+						<rect x={140} y={215 + i * 118} width={900} height={94} rx={22} fill={CARD} stroke={prog(f, s.at, 14) > 0.5 ? AMBER : EDGE} strokeWidth={3.5} />
 						<Sx x={190} y={278 + i * 118} text={`${i + 1}`} size={44} color={AMBER_INK} weight={800} />
 						<Sx x={250} y={278 + i * 118} text={s.t} size={42} color={INK} hand />
 					</g>
@@ -251,12 +296,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const NOTES = [
-	'Artificial insemination and artificial pollination are reproductive technologies: they choose which parents\' gametes meet, but change no DNA. Meiosis still gives each gamete its own mix of alleles, so they make a trait combination more likely, not certain.',
-	'Process, artificial insemination: semen from a chosen male is collected, diluted into many doses and frozen (it keeps for decades and can be sent anywhere), then placed in the female\'s uterus during heat, with no other male present.',
-	'Process, artificial pollination: pollen is collected from the chosen plant (for many crops it lasts only hours); other pollen can come from the flower\'s own anthers, wind or insects, so the seed flower\'s anthers are removed before they shed pollen, the flower is protected from stray pollen until the chosen pollen is applied, and other pollen is kept out while the cross is made (a bag is one way to isolate the flower).',
-	'Outcomes: both give offspring of the chosen parents. Frozen semen gives one male far greater reach; hybrid seed fields control pollination across whole fields. Heavy use of a few sires makes a large herd behave like a small population (alleles lost by chance, more relatedness, recessive disorders more common). The cause is the breeding choice: many unrelated or imported sires keep or add alleles.',
-	'To compare, take one feature at a time and cover both sides ("whereas").',
+	"Both methods choose which parents' gametes meet; neither changes any DNA.",
+	'Meiosis still mixes alleles, so a trait becomes more likely, not certain.',
+	'Insemination: semen collected, diluted into doses, frozen; it keeps for decades.',
+	'The cow is inseminated on heat, with no bull present.',
+	'Pollination: pollen from the chosen plant, often used fresh (it lasts hours).',
+	"Remove the seed flower's anthers, keep stray pollen off, apply the chosen pollen.",
+	'One bull reaches thousands; a few sires make a herd act like a small population.',
+	'Compare one feature at a time, both sides ("whereas").',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Same aim, different reach. Count the fathers, not the cows." tag="compare one feature at a time: collect and store, deliver and keep others out, outcomes" size={28} aidTop={850} />
+	<NotesBoard notes={NOTES} aid="Same aim, different reach. Count the fathers, not the cows." tag="compare one feature at a time: collect and store, deliver and keep others out, outcomes" size={34} aidTop={850} />
 );

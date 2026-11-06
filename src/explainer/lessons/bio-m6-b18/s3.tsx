@@ -10,7 +10,7 @@ import {HscTag, NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
-import {AMBER, AMBER_INK, CARD, EDGE, GREY_INK, INK, INK_SOFT, MiniStrip, PLATES, Pl, StationIcon, prog, vis} from './parts';
+import {AMBER, AMBER_INK, CARD, Chain, EDGE, GREY_INK, INK, INK_SOFT, MiniStrip, PLATES, Pl, StationIcon, prog, vis} from './parts';
 
 const PauseHold: React.FC<{id: string; at: number}> = ({id, at}) => {
 	const h = hold(id);
@@ -86,12 +86,12 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Heading text="Name each tool, in order" at={4} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<CardBox x={100} y={160} w={1720} h={150} at={-100} />
-				<QText q={qCheck(STEM1(ALL1), marks)} x={140} y={214} w={2600} size={34} card={false} s={0.6} />
-				<FbRow y={360} icon={1} label="cut" text="same enzyme, matching sticky ends" at={KB.same} lit={lit(KB.same, KB.ligase)} />
-				<FbRow y={460} icon={2} label="paste" text="ligase seals the joins" at={KB.ligase} lit={lit(KB.ligase, KB.heat)} />
-				<FbRow y={560} icon={3} label="put in" text="heat shock, some take it up" at={KB.heat} lit={lit(KB.heat, KB.grow)} />
-				<FbRow y={660} icon={4} label="pick" text={f >= KB.check ? 'ampicillin plate, then check for the gene' : 'ampicillin plate'} at={KB.grow} lit={lit(KB.grow, KB.saying)} />
+				<CardBox x={100} y={160} w={1720} h={170} at={-100} />
+				<QText q={qCheck(STEM1(ALL1), marks)} x={140} y={210} w={2060} size={34} card={false} s={0.8} />
+				<FbRow y={380} icon={1} label="cut" text="same enzyme, matching sticky ends" at={KB.same} lit={lit(KB.same, KB.ligase)} />
+				<FbRow y={480} icon={2} label="paste" text="ligase seals the joins" at={KB.ligase} lit={lit(KB.ligase, KB.heat)} />
+				<FbRow y={580} icon={3} label="put in" text="heat shock, some take it up" at={KB.heat} lit={lit(KB.heat, KB.grow)} />
+				<FbRow y={680} icon={4} label="pick" text={f >= KB.check ? 'ampicillin plate, then check for the gene' : 'ampicillin plate'} at={KB.grow} lit={lit(KB.grow, KB.saying)} />
 				<MistakeChip x={140} y={830} text="every surviving colony carries the gene" at={KB.saying} cross={KB.mistake} size={30} />
 			</Overlay>
 		</>
@@ -125,10 +125,47 @@ export const SceneAttemptTwo: React.FC = () => {
 				<Pl p={PLATES.bact} cx={1600} cy={300} w={300} o={prog(f, KC.student, 14)} />
 				<QText q={qCheck(STEM2(t), [])} x={140} y={260} w={1300} size={34} card={false} />
 				<QText q={qCheck(DEM2(t), [])} x={140} y={560} w={1300} size={34} card={false} />
+				<Givens2 />
 				<AnsBox x={140} y={640} w={1320} h={360} at={KC.explain + 30} />
 				<PauseHold id="attempt-two" at={KC.pause} />
 			</Overlay>
 		</>
+	);
+};
+
+/** Item 2's givens drawn as they are read, in the space the answer box will take: the two copies (drawn alike, as
+ * the stem gives no detail about them) and the two results. They clear as the answer box opens. */
+const Givens2: React.FC = () => {
+	const f = useCurrentFrame();
+	const strip = (x: number, y: number, o: number) => (
+		<g opacity={o}>
+			<rect x={x} y={y - 9} width={360} height={18} rx={9} fill={AMBER} />
+			<rect x={x} y={y + 21} width={360} height={18} rx={9} fill="#e3c37a" />
+		</g>
+	);
+	const out = 1 - prog(f, KC.explain + 14, 14);
+	if (out <= 0.01) return null;
+	return (
+		<g opacity={out}>
+			<g opacity={prog(f, KC.directly, 12)}>
+				<Sx x={160} y={700} text="Copy 1: from chromosomal DNA" size={36} color={INK} hand />
+				{strip(170, 740, 1)}
+			</g>
+			<g opacity={prog(f, KC.faulty, 12)}>
+				<path d="M570,750 L650,750 M636,738 L650,750 L636,762" fill="none" stroke={GREY_INK} strokeWidth={4} strokeLinecap="round" />
+				<Chain x={690} y={752} n={8} r={14} wrong={[2, 3, 6]} kink={0.6} />
+				<Sx x={1000} y={764} text="faulty protein" size={36} color={INK} hand />
+			</g>
+			<g opacity={prog(f, KC.copy, 12)}>
+				<Sx x={160} y={862} text="Copy 2: made from mRNA" size={36} color={INK} hand />
+				{strip(170, 902, 1)}
+			</g>
+			<g opacity={prog(f, KC.gives, 12)}>
+				<path d="M570,912 L650,912 M636,900 L650,912 L636,924" fill="none" stroke={GREY_INK} strokeWidth={4} strokeLinecap="round" />
+				<Chain x={690} y={914} n={8} r={14} />
+				<Sx x={1000} y={926} text="working protein" size={36} color={INK} hand />
+			</g>
+		</g>
 	);
 };
 
@@ -143,10 +180,10 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<Heading text="Introns, not a different code" at={4} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<CardBox x={100} y={160} w={1720} h={170} at={-100} />
-				<QText q={qCheck(STEM2(ALL2), marks)} x={140} y={214} w={2600} size={34} card={false} s={0.6} />
-				<FbRow y={400} label="Copy 1" text="introns kept, read as code, faulty protein" at={KD.still} lit={vis(f, KD.still, KD.already, 10)} extra={<MiniStrip x={1440} y={431} introns />} />
-				<FbRow y={510} label="Copy 2" text="introns removed, correct coding sequence, working protein" at={KD.already} lit={vis(f, KD.already, KD.saying, 10)} extra={<MiniStrip x={1500} y={541} introns={false} />} />
+				<CardBox x={100} y={160} w={1720} h={210} at={-100} />
+				<QText q={qCheck(STEM2(ALL2), marks)} x={140} y={210} w={2060} size={34} card={false} s={0.8} />
+				<FbRow y={420} label="Copy 1" text="introns kept, read as code, faulty protein" at={KD.still} lit={vis(f, KD.still, KD.already, 10)} extra={<MiniStrip x={1440} y={431} introns />} />
+				<FbRow y={530} label="Copy 2" text="introns removed, correct coding sequence, working protein" at={KD.already} lit={vis(f, KD.already, KD.saying, 10)} extra={<MiniStrip x={1500} y={541} introns={false} />} />
 				<Sx x={146} y={650} text="promoter and code both fine in each" size={30} color={GREY_INK} hand at={KD.same + 10} />
 				<MistakeChip x={140} y={760} text="bacteria use a different genetic code" at={KD.saying} cross={KD.mistake} size={30} />
 				{void KD.wrong}
@@ -174,8 +211,8 @@ export const SceneDecision: React.FC = () => {
 				{CH.map((c, i) => {
 					const x = 120 + (i % 3) * 570, y = 240 + Math.floor(i / 3) * 150;
 					return (
-						<g key={i} opacity={prog(f, c.at, 14)}>
-							<rect x={x} y={y} width={540} height={110} rx={24} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
+						<g key={i} opacity={(0.3 + 0.7 * prog(f, c.at, 14)) * prog(f, 0, 12)}>
+							<rect x={x} y={y} width={540} height={110} rx={24} fill={CARD} stroke={prog(f, c.at, 14) > 0.5 ? AMBER : EDGE} strokeWidth={3.5} />
 							<Sx x={x + 26} y={y + 68} text={`${i + 1}`} size={40} color={AMBER_INK} weight={800} />
 							<StationIcon k={c.k} x={x + 100} y={y + 55} s={1.2} />
 							<Sx x={x + 150} y={y + 68} text={c.t} size={34} color={INK} hand />
@@ -199,12 +236,16 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const NOTES = [
-	'Recombinant DNA is DNA joined from two sources. For bacteria, use an intron-free copy of a human gene (made from mRNA or built from scratch), because bacteria cannot remove introns.',
-	'Cut: a restriction enzyme cuts DNA at one specific sequence, often leaving sticky ends. The plasmid (vector) is opened with the same enzyme, or one that leaves matching ends. Paste: the ends pair and DNA ligase seals the backbones.',
-	'Put in: bacteria take up the plasmid by transformation (calcium chloride helps DNA stick to the cells, then a heat shock lets it in); only a few do. Pick: the plasmid\'s antibiotic-resistance marker means only bacteria with a plasmid grow on antibiotic; a second check finds those carrying the gene.',
-	'Use: the gene needs a promoter the host recognises; the genetic code is shared, so the host makes the same protein. Medicine: the first insulin bacteria made the two chains, which were purified and joined; today engineered microbes in fermenters make insulin. Agriculture: Agrobacterium carries the Bt gene into cotton cells\' chromosomes; the cells are grown into whole plants.',
-	'A transgenic organism carries DNA from another species, inserted directly; selective breeding can only combine alleles from parents that can interbreed.',
+	'Recombinant DNA: DNA joined from two sources.',
+	'For bacteria, use an intron-free gene (copied from mRNA): bacteria cannot remove introns.',
+	'Cut: a restriction enzyme cuts at one sequence, leaving sticky ends.',
+	'Open the plasmid with the same enzyme, so the sticky ends match.',
+	'Paste: the ends pair, then DNA ligase seals the backbones.',
+	'Put in: transformation (cold calcium chloride, then a heat shock); only a few take it up.',
+	'Pick: grow on antibiotic (the marker gene), then check for the inserted gene.',
+	'Use: a promoter the host recognises; the shared code gives the same protein.',
+	"Plants: Agrobacterium carries the gene into the plant cell's chromosomes.",
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Cut, paste, put in, pick. Same enzyme, matching sticky ends." tag="name each tool and its job, in order, then link the method to its product" size={27} aidTop={830} />
+	<NotesBoard notes={NOTES} aid="Cut, paste, put in, pick. Same enzyme, matching sticky ends." tag="name each tool and its job, in order, then link the method to its product" size={33} aidTop={840} />
 );
