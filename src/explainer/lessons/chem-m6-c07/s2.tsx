@@ -8,7 +8,9 @@ import {Heading, sc} from './common';
 import {
 	AChip, AMBER, BASE_INK, CondChip, DimG, EqLine, Fade, FlaskFill, FullMeter, GCard, INK, INK_SOFT, IonBars, KeptChip, LabelBeaker, LadderRows, LensFrame, MeetPair, MistakeX, Note, OHg, OpGlow,
 	Overlay, P, PHTrack, PROTON_INK, PipettePlate, Ring, ShrinkAt, StepAfter, Sx, TEAL, TaskLine, Tick, VolBox, WLine, clamp01, eSpan, eq, flaskPt, fullMeterW, keys, lerp, mw, smooth, subX, vis,
+	WaterT, countRead, meterBeaker, PHChip, Ripples,
 } from './parts';
+import {ProtonSwap, SP} from '../chem-m6-c06/particles';
 import type {Piece} from './parts';
 import {Tray} from '../chem-m5-c10/parts';
 import {FLASK_G} from './assets';
@@ -28,33 +30,47 @@ export const SceneKw: React.FC = () => {
 	const w0 = eSpan(items, 0, WS, SX), w2 = eSpan(items, 2, WS, SX);
 	const shrink = smooth(prog(f, K5.every, 22));
 	const hT = keys([[0, 190], [K5.using, 190], [K5.again + 16, 12]]);
-	const hV = keys([[0, 190], [K5.add, 190], [K5.add + 40, 400]]);
-	const meets: [number, number][] = [[K5.shifts, 0], [K5.shifts + 26, 1], [K5.using + 10, 2]];
+	const hV = keys([[0, 190], [K5.add, 190], [K5.add + 40, 330]]);
+	const L = {cx: 420, cy: 760, r: 235};
+	const bg: [number, number][] = [[-150, -110], [-40, -170], [90, -150], [170, -60], [-180, 40], [160, 90], [-120, 150], [30, 175], [120, 160]];
+	const inT = smooth(prog(f, K5.add, 40));
+	const added: [number, number][] = [[130, -40], [60, 110], [-60, 120]];
+	const MX = 1320, MY = 480, MH = 430;
+	const read = (fr: number) => (fr < K5.ph7 - 10 ? '' : fr < K5.add ? '7.00' : countRead([{t0: K5.add, t1: K5.again, a: 7.0, b: 13.0}], 2, K5.add)(fr));
 	return (
-		<Overlay>
-			<DimG at={K5.val + 30} to={0.35} undim={K5.every}>
-				<DimG at={K5.again + 20} to={0.45}>
-					<OpGlow items={items} i={3} size={WS} x={SX} y={SY} at={K5.shifts} len={70} color="#8e6bbf" />
-					<EqLine items={items} x={SX} y={SY} size={WS} />
+		<>
+			<Heading text="Kw: water's own equilibrium" at={4} size={58} />
+			<Overlay>
+				<DimG at={K5.val + 30} to={0.35} undim={K5.every}>
+					<DimG at={K5.again + 20} to={0.45}>
+						<OpGlow items={items} i={3} size={WS} x={SX} y={SY} at={K5.shifts} len={70} color="#8e6bbf" />
+						<EqLine items={items} x={SX} y={SY} size={WS} />
+					</DimG>
 				</DimG>
-			</DimG>
-			<g transform={`translate(${SX},${420}) scale(${1 - 0.36 * shrink}) translate(${-SX},${-420})`}>
-				<Sx x={SX} y={420} text="Kw = [H_3O^{+}][OH^{-}]" size={58} color={INK} weight={800} at={K5.kw} />
-				<Sx x={SX + mw('Kw = [H_3O^{+}][OH^{-}]', 58, false, 800) + 24} y={420} text="= 1.0 × 10^{−14} at 25 °C" size={50} color={TEAL} weight={800} at={K5.val} />
-			</g>
-			<Fade at={K5.kw - 4} out={K5.val + 24}>
-				<Tray x={SX} y={460} w={360} at={K5.kw - 4} label="left out of Kw" items={[{t: 'H_2O', at: K5.kw + 4, from: [w0.cx, SY - 16]}, {t: 'H_2O', at: K5.kw + 12, from: [w2.cx, SY - 16]}]} size={40} />
-			</Fade>
-			<LabelBeaker x={150} y={680} h={240} at={K5.last} lines={[{t: 'pure water, 25 °C', at: K5.pure, out: K5.every}, {t: 'sodium hydroxide solution', at: K5.every + 6}]} size={30} tint={'#cfe1f0'} />
-			<IonBars x={1310} base={870} gap={210} bw={100} hT={hT} hV={hV} at={K5.seven} valT={{t: '1.0 × 10^{−7}', at: K5.seven + 10, out: K5.every}} valV={{t: '1.0 × 10^{−7}', at: K5.seven + 10, out: K5.every}} />
-			<Note x={1460} y={600} text="neutral: equal; pH 7.00" size={38} color={TEAL} anchor="middle" at={K5.ph7} out={K5.every} />
-			<Fade at={K5.add} out={K5.again + 40}>
-				{meets.map(([t, i]) => <MeetPair key={i} a={[900 + i * 40, 560 + i * 90]} b={[1060 + i * 40, 560 + i * 90]} at={t} s={1.3} />)}
-			</Fade>
-			<Note x={980} y={500} text="H_3O^{+} + OH^{-} → H_2O" size={30} color={INK_SOFT} anchor="middle" at={K5.shifts} out={K5.again + 40} />
-			<AChip x={1110} y={950} text="[H_3O^{+}] × [OH^{-}] = 1.0 × 10^{−14}" size={34} color={TEAL} hand={false} at={K5.again + 10} />
-			{void K5.base}{void K5.equal}{void K5.leaves}{void lerp}{void clamp01}
-		</Overlay>
+				<g transform={`translate(${SX},${400}) scale(${1 - 0.36 * shrink}) translate(${-SX},${-400})`}>
+					<Sx x={SX} y={400} text="Kw = [H_3O^{+}][OH^{-}]" size={60} color={INK} weight={800} at={K5.kw} />
+					<Sx x={SX + mw('Kw = [H_3O^{+}][OH^{-}]', 60, false, 800) + 24} y={400} text="= 1.0 × 10^{−14} at 25 °C" size={52} color={TEAL} weight={800} at={K5.val} />
+				</g>
+				<Fade at={K5.kw - 4} out={K5.val + 24}>
+					<Tray x={SX} y={440} w={360} at={K5.kw - 4} label="left out of Kw" items={[{t: 'H_2O', at: K5.kw + 4, from: [w0.cx, SY - 16]}, {t: 'H_2O', at: K5.kw + 12, from: [w2.cx, SY - 16]}]} size={40} />
+				</Fade>
+				<LensFrame cx={L.cx} cy={L.cy} r={L.r} at={K5.last}>
+					<rect x={L.cx - L.r} y={L.cy - L.r} width={2 * L.r} height={2 * L.r} fill="#eef6fb" />
+					{bg.map(([dx, dy], i) => <WaterT key={i} x={L.cx + dx + Math.sin(f * 0.04 + i) * 3} y={L.cy + dy + Math.cos(f * 0.035 + i) * 3} s={1.2} />)}
+					<ProtonSwap a={[L.cx + 85, L.cy + 5]} b={[L.cx - 95, L.cy + 5]} da={SP.H2O} ac={SP.H2O} s={1.3} events={[K5.equal, K5.shifts + 20]} bow={-70} />
+					{added.map(([dx, dy], i) => <OHg key={i} x={L.cx + 260 - (260 - dx) * inT} y={L.cy + dy} s={1.5} o={inT * (1 - prog(f, K5.again + 20, 20) * (i === 0 ? 0 : 0))} />)}
+				</LensFrame>
+				<Note x={L.cx} y={L.cy + L.r + 46} text="equal H_3O^{+} and OH^{-}" size={38} color={TEAL} anchor="middle" at={K5.equal + 30} out={K5.add} />
+				<Note x={L.cx} y={L.cy + L.r + 46} text="H_3O^{+} + OH^{-} → 2H_2O" size={38} color={BASE_INK} anchor="middle" at={K5.shifts + 20} />
+				<IonBars x={790} base={930} gap={190} bw={100} hT={hT} hV={hV} at={K5.equal + 20} valT={{t: '1.0 × 10^{−7}', at: K5.seven + 10, out: K5.every}} valV={{t: '1.0 × 10^{−7}', at: K5.seven + 10, out: K5.every}} />
+				<Note x={930} y={660} text="neutral: equal" size={40} color={TEAL} anchor="middle" at={K5.ph7} out={K5.every} />
+				<FullMeter x={MX} y={MY} h={MH} at={K5.last + 20} read={read} pulse={K5.ph7} />
+				<Sx x={MX + fullMeterW(MH) / 2} y={MY + MH + 46} text="pure water, 25 °C" size={36} color={INK} anchor="middle" weight={600} at={K5.last + 26} out={K5.add} />
+				<Sx x={MX + fullMeterW(MH) / 2} y={MY + MH + 46} text="hydroxide added" size={34} color={BASE_INK} anchor="middle" weight={700} at={K5.add + 6} />
+				<AChip x={SX} y={450} text="[H_3O^{+}] × [OH^{-}] = 1.0 × 10^{−14} again" size={36} color={TEAL} hand={false} at={K5.again + 10} />
+				{void K5.base}{void K5.leaves}{void lerp}{void clamp01}{void MeetPair}{void LabelBeaker}
+			</Overlay>
+		</>
 	);
 };
 
@@ -62,30 +78,43 @@ export const SceneKw: React.FC = () => {
 const S6 = 'kw-temperature';
 const K6 = cues(sc(S6), {only: 'That value is only', absorbs: 'absorbs heat', warming: 'so warming pushes', right: 'equilibrium right', grows: 'K w grows', t37: 'At thirty seven', r681: 'six point eight one', t60: 'at sixty', r651: 'six point five one', neutral: "It's still neutral", because: 'because its hydronium', so: 'So pH seven means'});
 export const SceneKwTemp: React.FC = () => {
+	const f = useCurrentFrame();
 	const SX = 96 + 190, SY = 250;
 	const {items} = wItems(-100, SX);
-	const lit = (i: number, f: number) => i === 1 ? vis(f, 8, K6.grows, 12) : i === 2 ? vis(f, K6.r681 - 6, K6.t60, 12) : i === 3 ? vis(f, K6.r651 - 6, K6.neutral, 12) : 0;
+	const lit = (i: number, fr: number) => i === 1 ? vis(fr, 8, K6.grows, 12) : i === 2 ? vis(fr, K6.r681 - 6, K6.t60, 12) : i === 3 ? vis(fr, K6.r651 - 6, K6.neutral, 12) : 0;
 	const rows = [
 		{temp: '10 °C', kw: '2.9 × 10^{−15}', ph: '7.27', at: K6.grows + 4},
 		{temp: '25 °C', kw: '1.0 × 10^{−14}', ph: '7.00', at: 6},
 		{temp: '37 °C', kw: '2.4 × 10^{−14}', ph: '6.81', at: K6.grows + 12},
 		{temp: '60 °C', kw: '9.6 × 10^{−14}', ph: '6.51', at: K6.grows + 20},
 	];
-	const LX = 160, LY = 430;
+	const LX = 130, LY = 440;
+	const MX = 1290, MY = 330, MH = 470;
+	const t = (fr: number) => (fr >= K6.r651 - 6 ? 2 : fr >= K6.r681 - 6 ? 1 : 0);
+	const read = (fr: number) => ['7.00', '6.81', '6.51'][t(fr)];
+	const temp = ['25 °C', '37 °C', '60 °C'][t(f)];
+	const mb = meterBeaker(MX, MY, MH);
 	return (
-		<Overlay>
-			<DimG at={K6.neutral} to={0.3}>
-				<Sx x={96} y={SY} text="heat +" size={WS} color="#b5561a" weight={800} at={K6.absorbs} />
-				<OpGlow items={items} i={3} size={WS} x={SX} y={SY} at={K6.warming} len={60} color={AMBER} />
-				<EqLine items={items} x={SX} y={SY} size={WS} />
-			</DimG>
-			<Note x={SX + 300} y={SY + 74} text="warmer: shifts right, Kw bigger" size={38} color="#b5561a" at={K6.warming + 10} out={K6.neutral} />
-			<LadderRows x={LX} y={LY} rows={rows} lit={lit} dimAll={K6.neutral} keep={3} head={4} />
-			<IonBars x={1250} base={760} gap={270} bw={90} hT={() => 140} hV={() => 140} at={K6.neutral + 6} valT={{t: '3.1 × 10^{−7}', at: K6.neutral + 14}} valV={{t: '3.1 × 10^{−7}', at: K6.neutral + 14}} eq={{at: K6.neutral + 24}} size={30} />
-			<Sx x={1250 + 225} y={560} text="pure water, 60 °C" size={30} color={INK_SOFT} anchor="middle" hand at={K6.neutral + 10} />
-			<MistakeX x={LX} y={820} text="pH below 7, so acidic" at={K6.neutral + 30} cross={K6.because + 20} note="neutral means equal, not pH 7" size={36} />
-			{void K6.only}{void K6.right}{void K6.t37}{void K6.so}
-		</Overlay>
+		<>
+			<Heading text="Kw grows with temperature" at={4} size={58} />
+			<Overlay>
+				<DimG at={K6.neutral} to={0.3}>
+					<Sx x={96} y={SY} text="heat +" size={WS} color="#b5561a" weight={800} at={K6.absorbs} />
+					<OpGlow items={items} i={3} size={WS} x={SX} y={SY} at={K6.warming} len={60} color={AMBER} />
+					<EqLine items={items} x={SX} y={SY} size={WS} />
+				</DimG>
+				<Note x={SX + 300} y={SY + 78} text="warmer: shifts right, Kw bigger" size={42} color="#b5561a" at={K6.warming + 10} out={K6.neutral} />
+				<LadderRows x={LX} y={LY} rows={rows} lit={(i, fr) => Math.max(0.45, lit(i, fr))} dimAll={K6.neutral} keep={3} head={4} lh={86} size={44} cols={[0, 250, 700]} />
+				<FullMeter x={MX} y={MY} h={MH} at={-100} read={read} pulse={K6.r681} />
+				<Ripples x={mb.cx} y={mb.bottom + 8} at={K6.warming} r={70} n={3} />
+				<PHChip x={MX + fullMeterW(MH) / 2} y={MY - 90} text={temp} anchor="middle" size={44} at={6} />
+				<Sx x={MX + fullMeterW(MH) / 2} y={MY + MH + 50} text="pure water" size={36} color={INK} anchor="middle" weight={700} at={6} />
+				<IonBars x={990} base={940} gap={150} bw={80} hT={() => 140} hV={() => 140} at={K6.neutral + 6} valT={{t: '3.1 × 10^{−7}', at: K6.neutral + 14}} valV={{t: '3.1 × 10^{−7}', at: K6.neutral + 14}} eq={{at: K6.neutral + 24}} size={30} />
+				<Sx x={1105} y={725} text="pure water, 60 °C" size={34} color={INK_SOFT} anchor="middle" hand at={K6.neutral + 10} />
+				<MistakeX x={LX} y={850} text="pH below 7, so acidic" at={K6.neutral + 30} cross={K6.because + 20} note="neutral means equal, not pH 7" size={38} />
+				{void K6.only}{void K6.right}{void K6.t37}{void K6.so}
+			</Overlay>
+		</>
 	);
 };
 /** Row 4 (60 °C) stays bright after the others dim. */
@@ -95,18 +124,22 @@ void LadderRows;
 const S7 = 'base-poh';
 const K7 = cues(sc(S7), {back: 'Back to sodium', strong: "It's strong, so", hyd: 'the hydroxide is zero', z010: 'zero point one zero', h3o: 'the hydronium is ten', thirteen: 'minus thirteen', ph13: 'pH thirteen', quick: 'For a quicker', use: 'use pOH', taking: 'Taking the negative', plus: 'pH plus pOH', so: 'So for a base', subtract: 'subtract from fourteen'});
 export const SceneBasePoh: React.FC = () => {
-	const X = 96, S = 44;
-	const MX = 1380, MY = 240, MH = 330;
+	const X = 96, S = 46;
+	const MX = 1360, MY = 200, MH = 360;
 	const mw0 = fullMeterW(MH);
 	const lab = 'sodium hydroxide, 0.10 mol/L';
 	const u = subX(lab, '0.10 mol/L', 30, 600);
 	const lx = MX + mw0 / 2 - mw(lab, 30, false, 600) / 2;
 	return (
+		<>
+		<Heading text="A base's pH, and pOH" at={4} size={58} />
 		<Overlay>
-			<DimG at={K7.quick} to={0.3}>
+			<DimG at={K7.quick} to={0.55}>
 				<WLine x={X} y={300} size={S} items={P('[OH^{-}] =', K7.hyd, '0.10 mol/L', K7.z010)} />
 				<WLine x={X} y={390} size={S} items={P('[H_3O^{+}] = 1.0 × 10^{−14} ÷ 0.10', K7.h3o, '= 1.0 × 10^{−13} mol/L', K7.thirteen)} />
 				<WLine x={X} y={480} size={S} items={P({t: 'pH = 13.00', color: TEAL}, K7.ph13)} />
+			</DimG>
+			<DimG at={K7.subtract} to={0.7}>
 				<FullMeter x={MX} y={MY} h={MH} at={-100} read={() => '13.00'} pulse={K7.ph13} />
 				<Sx x={lx} y={MY + MH + 44} text={lab} size={30} color={INK} weight={600} at={4} />
 				<Under2 x1={lx + u.x1} x2={lx + u.x2} y={MY + MH + 54} at={K7.z010} />
@@ -121,9 +154,10 @@ export const SceneBasePoh: React.FC = () => {
 			</DimG>
 			<Sx x={X} y={850} text="−log of both sides:" size={34} color={INK_SOFT} weight={600} at={K7.taking + 24} />
 			<Sx x={X + mw('−log of both sides:', 34, false, 600) + 24} y={850} text="pH + pOH = 14.00 (25 °C)" size={60} color={TEAL} weight={800} at={K7.plus} />
-			<AChip x={1120} y={700} text="[OH^{-}] → pOH → pH = 14.00 − pOH" size={36} color={INK} hand={false} at={K7.subtract} />
+			<AChip x={1060} y={700} text="[OH^{-}] → pOH → pH = 14.00 − pOH" size={40} color={INK} hand={false} at={K7.subtract} />
 			{void K7.back}{void K7.strong}{void K7.so}
 		</Overlay>
+		</>
 	);
 };
 const Under2: React.FC<{x1: number; x2: number; y: number; at: number}> = ({x1, x2, y, at}) => (
@@ -199,6 +233,8 @@ export const SceneDilution: React.FC = () => {
 	const fig = K9.fig + 20;
 	const mval = keys([[0, 0.699], [fig + 20, 0.699], [fig + 56, 2.0], [K9.toward, 2.0], [K9.toward + 20, 3], [K9.toward + 40, 4], [K9.toward + 58, 5], [K9.toward + 74, 6], [K9.toward + 88, 6.45], [K9.toward + 100, 6.62], [K9.toward + 112, 6.72]]);
 	return (
+		<>
+		<Heading text="Dilution: same moles, more water" at={4} size={58} out={K9.tf - 12} />
 		<Overlay>
 			<TaskLine text="Find the pH after dilution" at={K9.tf} size={BW.task.s} />
 			<g opacity={1 - 0.55 * thumbs} transform={`translate(${1150 * thumbs},${-170 * thumbs}) translate(500,600) scale(${1 - 0.55 * thumbs}) translate(-500,-600)`}>
@@ -222,9 +258,10 @@ export const SceneDilution: React.FC = () => {
 			<WLine x={X} y={390} size={S} dim={fig} items={P('c = 0.00500 mol ÷ 0.5000 L', K9.made, '= 0.0100 mol/L', K9.z0100 + 12)} />
 			<WLine x={X} y={480} size={S} items={P('pH = −log(0.0100)', K9.r2000 - 24, {t: '= 2.000', color: TEAL}, K9.r2000)} />
 			<PHTrack x={200} y={700} w={1100} at={fig} ghost={{v: 0.699, label: 'before 0.699', at: fig + 6}} mark={{v: mval, at: fig + 10, label: fr => (fr < K9.toward ? '2.000' : '')}} wall={K9.toward + 70} bracket={{a: 0.699, b: 2.0, text: '× 20 dilution: +1.301 (= log 20)', at: fig + 60, out: K9.toward}} />
-			<MistakeX x={200} y={850} text="dilute enough and it passes 7" at={K9.toward + 40} cross={K9.never + 12} note="water's own H_3O^{+}" size={36} />
+			<MistakeX x={200} y={850} text="dilute enough and it passes 7" at={K9.toward + 40} cross={K9.never + 12} note="water's own H_3O^{+}" size={38} />
 			{void K9.adding}{void K9.three}{void K9.keep}{void K9.water}{void clamp01}
 		</Overlay>
+		</>
 	);
 };
-void Heading; void KeptChip; void IonBars;
+void KeptChip; void IonBars;

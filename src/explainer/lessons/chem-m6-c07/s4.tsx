@@ -11,6 +11,8 @@ import {
 	WLine, qCheck, smooth,
 } from './parts';
 import type {BarSpec, QBlock, QMark} from './parts';
+import {PauseHoldKeep} from '../chem-m6-c06/particles';
+void PauseHold;
 
 const QX = 140, QW = 1640;
 export const CardBox: React.FC<{y: number; h: number; at: number}> = ({y, h, at}) => (
@@ -41,7 +43,7 @@ export const SceneAttempt1: React.FC = () => (
 	<Overlay>
 		<TaskLine text="Your turn" at={K14.turn} />
 		<Question1 t={[K14.tf, K14.calc]} />
-		<PauseHold h={hold(A1)} at={K14.pause} x={140} y={680} cx={1560} cy={680} />
+		<PauseHoldKeep h={hold(A1)} at={K14.pause} x={140} y={680} cx={1560} cy={680} />
 	</Overlay>
 );
 
@@ -50,21 +52,21 @@ const K15 = cues(sc(F1), {acid: 'The acid gives', z300: 'zero point zero zero th
 const FA: BarSpec = {label: 'H^{+} 0.00300 mol', n: 0.003, color: PROTON, ink: PROTON_INK};
 const FB: BarSpec = {label: 'OH^{-} 0.00175 mol', n: 0.00175, color: BASE, ink: BASE_INK};
 export const SceneFeedback1: React.FC = () => {
-	const X = 140, S = 38, RX = 1110;
+	const X = 120, S = 44, RX = 1130;
 	return (
 		<Overlay>
 			<Shrink k={0.66}>
 				<Question1 t={[-100, -100]} marks={[{phrase: '25.0 mL of 0.120 mol/L nitric acid', at: K15.z300 - 10}, {phrase: '35.0 mL of 0.0500 mol/L potassium hydroxide', at: K15.z175 - 10}, {phrase: '25.0 mL', at: K15.sixty, color: TEAL}, {phrase: '35.0 mL', at: K15.sixty + 8, color: TEAL}]} />
 			</Shrink>
-			<WLine x={X} y={470} size={S} dim={K15.left} items={P('n(H^{+}) = 0.120 × 0.0250', K15.z300 - 6, {t: '= 0.00300 mol', color: PROTON_INK}, K15.z300 + 40)} />
-			<WLine x={X} y={540} size={S} dim={K15.left} items={P('n(OH^{-}) = 0.0500 × 0.0350', K15.z175 - 10, {t: '= 0.00175 mol', color: BASE_INK}, K15.z175 + 40)} />
-			<LimitBars x={RX} y={440} k={200000} a={FA} b={FB} at={K15.left - 24} use={K15.left} useDur={36} out={K15.sixty + 30} size={30} />
-			<g opacity={1 - 0.6 * prog(useCurrentFrame(), K15.r1681, 14)}><AChip x={RX} y={600} text="excess H^{+} = 0.00125 mol" size={36} color={PROTON_INK} hand={false} at={K15.z125 + 20} /></g>
-			<WLine x={X} y={630} size={S} dim={K15.r1681} items={P('V(total) = 0.0250 + 0.0350 = 0.0600 L', K15.sixty)} />
-			<WLine x={X} y={710} size={S} dim={K15.r1681} items={P('[H_3O^{+}] = 0.00125 ÷ 0.0600', K15.sixty + 24, '= 0.02083 mol/L', K15.so)} />
-			<WLine x={X} y={790} size={S} items={P('pH = −log(0.02083)', K15.so + 14, {t: '= 1.681', color: TEAL}, K15.r1681)} />
-			<AChip x={RX} y={700} text="pH = 1.681 (3 s.f. → 3 d.p.)" size={40} color={TEAL} hand={false} at={K15.r1681 + 20} />
-			<MistakeX x={RX} y={820} text="÷ 0.0250 L: pH 1.301" at={K15.using} cross={K15.using + 40} note="use the total volume" size={34} />
+			<WLine x={X} y={480} size={S} dim={K15.left} items={P('n(H^{+}) = 0.120 × 0.0250', K15.z300 - 6, {t: '= 0.00300 mol', color: PROTON_INK}, K15.z300 + 40)} />
+			<WLine x={X} y={562} size={S} dim={K15.left} items={P('n(OH^{-}) = 0.0500 × 0.0350', K15.z175 - 10, {t: '= 0.00175 mol', color: BASE_INK}, K15.z175 + 40)} />
+			<LimitBars x={RX} y={450} k={150000} a={FA} b={FB} at={K15.base} use={K15.left} useDur={36} out={K15.sixty + 30} size={32} />
+			<g opacity={1 - 0.6 * prog(useCurrentFrame(), K15.r1681, 14)}><AChip x={RX} y={620} text="excess H^{+} = 0.00125 mol" size={40} color={PROTON_INK} hand={false} at={K15.z125 + 20} /></g>
+			<WLine x={X} y={660} size={S} dim={K15.r1681} items={P('V(total) = 0.0250 + 0.0350 = 0.0600 L', K15.sixty)} />
+			<WLine x={X} y={742} size={S} dim={K15.r1681} items={P('[H_3O^{+}] = 0.00125 ÷ 0.0600', K15.sixty + 24, '= 0.02083 mol/L', K15.so)} />
+			<WLine x={X} y={824} size={S} items={P('pH = −log(0.02083)', K15.so + 14, {t: '= 1.681', color: TEAL}, K15.r1681)} />
+			<AChip x={RX} y={720} text="pH = 1.681 (3 s.f. → 3 d.p.)" size={44} color={TEAL} hand={false} at={K15.r1681 + 20} />
+			<MistakeX x={RX} y={870} text="÷ 0.0250 L: pH 1.301" at={K15.using} cross={K15.using + 40} note="use the total volume" size={34} />
 			{void K15.acid}{void K15.base}
 		</Overlay>
 	);
@@ -88,7 +90,7 @@ export const SceneAttempt2: React.FC = () => (
 	<Overlay>
 		<TaskLine text="Last one" at={K16.last} />
 		<Question2 t={[K16.a, K16.calc]} />
-		<PauseHold h={hold(A2)} at={K16.pause} x={140} y={640} cx={1560} cy={660} />
+		<PauseHoldKeep h={hold(A2)} at={K16.pause} x={140} y={640} cx={1560} cy={660} />
 	</Overlay>
 );
 
@@ -122,13 +124,13 @@ export const SceneDecision: React.FC = () => (
 				<path d={`M520,262 L640,262`} stroke={GREY_INK} strokeWidth={4} strokeDasharray="8 6" />
 				<Sx x={660} y={274} text="weak: [H_3O^{+}] ≠ c, later video" size={34} color={GREY_INK} weight={600} at={K18.weak} />
 			</Fade>
-			<RuleCard x={96} y={330} w={1728} at={K18.any - 6} lh={88} lines={[
-				{t: '1  Strong? Then [H_3O^{+}] = c (HCl, HNO_3), or count OH^{-} per formula unit.', at: K18.any, lit: [K18.any, K18.work], size: 38, hand: false},
-				{t: '2  Diluted or mixed? Work in moles; neutralise first; ÷ total volume.', at: K18.work, lit: [K18.work, K18.take], size: 38, hand: false},
-				{t: '3  pH = −log[H_3O^{+}]; for a base pOH first, pH = 14.00 − pOH (25 °C).', at: K18.take, lit: [K18.take, K18.check], size: 38, hand: false},
+			<RuleCard x={96} y={330} w={1728} at={0} lh={88} lines={[
+				{t: '1  Strong? Then [H_3O^{+}] = c (HCl, HNO_3), or count OH^{-} per formula unit.', at: -20, lit: [K18.any, K18.work], size: 38, hand: false},
+				{t: '2  Diluted or mixed? Work in moles; neutralise first; ÷ total volume.', at: -20, lit: [K18.work, K18.take], size: 38, hand: false},
+				{t: '3  pH = −log[H_3O^{+}]; for a base pOH first, pH = 14.00 − pOH (25 °C).', at: -20, lit: [K18.take, K18.check], size: 38, hand: false},
 			]} />
 			<AChip x={96} y={720} text="Next: strong acid and base pH practice, then weak acids and ICE tables" size={36} color={TEAL} hand={false} at={K18.next} />
-			<PlateAt p={PHMETER} x={1500} y={690} h={300} at={K18.next + 6} />
+			<PlateAt p={PHMETER} x={1480} y={700} h={330} at={0} />
 			{void K18.divide}{void INK}{void INK_SOFT}{void Note}
 		</Overlay>
 	</>
@@ -136,12 +138,16 @@ export const SceneDecision: React.FC = () => (
 
 // ---------- 19. Key notes ----------
 const NOTES = [
-	'pH = −log_10[H_3O^{+}] and [H_3O^{+}] = 10^{−pH}. One pH unit is a factor of 10. Decimal places in pH = significant figures in [H_3O^{+}].',
-	'Kw = [H_3O^{+}][OH^{-}] = 1.0 × 10^{−14} at 25 °C, in every aqueous solution. Kw rises with temperature, so neutral (equal H_3O^{+} and OH^{-}) is pH 7.00 only at 25 °C.',
-	'Strong acid: [H_3O^{+}] = c (HCl, HNO_3). Strong base: [OH^{-}] = c × number of OH^{-} per formula unit (2 for Ca(OH)_2, Ba(OH)_2). pOH = −log_10[OH^{-}]; pH = 14.00 − pOH at 25 °C. H_2SO_4: [H^{+}] = 2c only if told to assume both H^{+} are released completely.',
-	'Dilution: moles stay the same, c = n ÷ new volume; pH moves toward 7 but never past it.',
-	'Mixing a strong acid and strong base: n(H^{+}) and n(OH^{-}), subtract to find the excess, divide by the total volume, then pH (or pOH). Example: 40.0 mL of 0.150 mol/L HCl + 60.0 mL of 0.0800 mol/L Ba(OH)_2 → excess OH^{-} 0.00360 mol in 0.1000 L → pH 12.556.',
+	'pH = −log_10[H_3O^{+}]; [H_3O^{+}] = 10^{−pH}. One pH unit = a factor of 10.',
+	'Decimal places in pH = significant figures in [H_3O^{+}].',
+	'Kw = [H_3O^{+}][OH^{-}] = 1.0 × 10^{−14} at 25 °C. Kw rises with temperature.',
+	'Neutral means [H_3O^{+}] = [OH^{-}]; that is pH 7.00 only at 25 °C.',
+	'Strong acid: [H_3O^{+}] = c. Strong base: [OH^{-}] = c × OH^{-} per formula unit.',
+	'Base: [OH^{-}] → pOH → pH = 14.00 − pOH (25 °C).',
+	'H_2SO_4: [H^{+}] = 2c only if told both H^{+} ionise completely.',
+	'Dilution: same moles, c = n ÷ new volume; pH moves toward 7, never past it.',
+	'Mixing: moles of H^{+} and OH^{-}, subtract, ÷ total volume, then pH.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={31} aidTop={800} aids={['Mixtures: neutralise first, then dilute.', 'One pH unit is ten times.']} tag="pH + pOH = 14 only at 25 °C" />
+	<KeyNotesBoard notes={NOTES} size={33} aidTop={820} aids={['Mixtures: neutralise first, then dilute.', 'One pH unit is ten times.']} tag="pH + pOH = 14 only at 25 °C" />
 );

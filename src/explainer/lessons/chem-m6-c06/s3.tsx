@@ -10,6 +10,8 @@ import {
 	qCheck, smooth,
 } from './parts';
 import type {ChainItem, EItem, QBlock, QMark} from './parts';
+import {PauseHoldKeep} from './particles';
+void PauseHold;
 
 const QX = 140, QW = 1640;
 const CardBox: React.FC<{y: number; h: number; at: number}> = ({y, h, at}) => (
@@ -40,14 +42,14 @@ export const SceneAttempt1: React.FC = () => (
 	<Overlay>
 		<TaskLine text="Your turn" at={K11.turn} />
 		<Question1 t={[K11.pot, K11.write, K11.then]} />
-		<PauseHold h={hold(A1)} at={K11.pause} x={140} y={720} cx={1560} cy={700} />
+		<PauseHoldKeep h={hold(A1)} at={K11.pause} x={140} y={720} cx={1560} cy={700} />
 	</Overlay>
 );
 
 const F1 = 'feedback-1';
 const K12 = cues(sc(F1), {k: 'potassium ions', acid: 'As an acid', hp: 'making hydrogen phosphate', base: 'As a base', pa: 'making phosphoric acid', wrote: 'If you wrote', moved: 'you moved two', move: 'Move just one'});
 export const SceneFeedback1: React.FC = () => {
-	const S = 44, X = 140, Y1 = 590, Y2 = 690, Y3 = 790;
+	const S = 46, X = 120, Y1 = 590, Y2 = 700, Y3 = 810;
 	const l1 = eq(['KH_2PO_4(s)', '->', {t: 'K^{+}(aq)', color: '#a39c91'}, '+', 'H_2PO_4^{-}(aq)'], [0, 1, 2, 3, 4].map(i => K12.k + i * 5));
 	const l2 = eq(['H_2PO_4^{-}(aq)', '+', 'H_2O(l)', '<=>', 'HPO_4^{2-}(aq)', '+', 'H_3O^{+}(aq)'], [0, 1, 2, 3, 4, 5, 6].map(i => K12.hp - 10 + i * 5));
 	const l3 = eq(['H_2PO_4^{-}(aq)', '+', 'H_2O(l)', '<=>', 'H_3PO_4(aq)', '+', 'OH^{-}(aq)'], [0, 1, 2, 3, 4, 5, 6].map(i => K12.pa - 10 + i * 5));
@@ -62,8 +64,8 @@ export const SceneFeedback1: React.FC = () => {
 			<EqLine items={l2} x={X} y={Y2} size={S} />
 			<EqBox items={l3} i={0} size={S} x={X} y={Y3} at={K12.pa} color={BASE} />
 			<EqLine items={l3} x={X} y={Y3} size={S} />
-			<Chain items={chain} x={1260} y={Y1 + 10} size={28} gap={46} lit={[{step: 1, dir: 'r', at: K12.hp}, {step: 0, dir: 'l', at: K12.pa}]} />
-			<MistakeX x={X} y={850} text="H_2PO_4^{-} + H_2O ⇌ PO_4^{3-} + ..." at={K12.wrote} cross={K12.move} note="one H^{+} per step" size={36} />
+			<Chain items={chain} x={1000} y={Y1} size={38} gap={58} lit={[{step: 1, dir: 'r', at: K12.hp}, {step: 0, dir: 'l', at: K12.pa}]} />
+			<MistakeX x={X} y={880} text="H_2PO_4^{-} + H_2O ⇌ PO_4^{3-} + ..." at={K12.wrote} cross={K12.move} note="one H^{+} per step" size={40} />
 			{void K12.acid}{void K12.base}{void K12.moved}
 		</Overlay>
 	);
@@ -93,7 +95,7 @@ export const SceneAttempt2: React.FC = () => (
 	<Overlay>
 		<TaskLine text="Last one" at={K13.last} />
 		<Question2 t={[K13.ident, K13.state]} eqAt={K13.eqs} />
-		<PauseHold h={hold(A2)} at={K13.pause} x={140} y={790} cx={1560} cy={780} />
+		<PauseHoldKeep h={hold(A2)} at={K13.pause} x={140} y={790} cx={1560} cy={780} />
 	</Overlay>
 );
 
@@ -145,12 +147,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 16. Key notes ----------
 const NOTES = [
-	'Conjugate pair: two species on opposite sides of an equation that differ by exactly one H^{+}. Acid − H^{+} = conjugate base; base + H^{+} = conjugate acid (charge changes by 1). NH_3 + H_2O ⇌ NH_4^{+} + OH^{-}: pairs NH_4^{+}/NH_3 and H_2O/OH^{-}. One H^{+} at a time: H_2SO_4/HSO_4^{-}, not H_2SO_4/SO_4^{2-}.',
-	'The stronger the acid, the weaker its conjugate base: Cl^{-} does not take H^{+} back (→); CH_3COO^{-} does (⇌).',
-	'Amphiprotic: can donate or accept a proton, depending on its partner (the middle of a proton chain): H_2O, HCO_3^{-}, H_2PO_4^{-}, HPO_4^{2-}.',
-	'NaHCO_3(s) → Na^{+}(aq) + HCO_3^{-}(aq). As an acid: HCO_3^{-} + H_2O ⇌ CO_3^{2-} + H_3O^{+}. As a base: HCO_3^{-} + H_2O ⇌ H_2CO_3 + OH^{-}.',
-	'Water self-ionises to a tiny extent: H_2O + H_2O ⇌ H_3O^{+} + OH^{-}. Neutral means equal amounts of H_3O^{+} and OH^{-}.',
+	'Conjugate pair: opposite sides of the equation, exactly one H^{+} apart.',
+	'Acid − H^{+} → conjugate base. Base + H^{+} → conjugate acid. The charge changes by 1.',
+	'NH_3 + H_2O ⇌ NH_4^{+} + OH^{-}: pairs NH_4^{+}/NH_3 and H_2O/OH^{-}.',
+	'One H^{+} at a time: H_2SO_4/HSO_4^{-}, not H_2SO_4/SO_4^{2-}.',
+	'Stronger acid, weaker conjugate base: HCl goes →; CH_3COOH goes ⇌.',
+	'Amphiprotic: can give or take H^{+} (the middle of a chain): H_2O, HCO_3^{-}, H_2PO_4^{-}, HPO_4^{2-}.',
+	'Show it with water: HCO_3^{-} + H_2O ⇌ CO_3^{2-} + H_3O^{+} and HCO_3^{-} + H_2O ⇌ H_2CO_3 + OH^{-}.',
+	'Water self-ionises a tiny amount. Neutral means equal H_3O^{+} and OH^{-}.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={32} aidTop={790} aids={['A conjugate pair differs by exactly one proton.', 'Amphi means both: the middle of the chain goes either way.']} tag="one proton, one charge, opposite sides" />
+	<KeyNotesBoard notes={NOTES} size={34} aidTop={800} aids={['A conjugate pair differs by exactly one proton.', 'Amphi means both: the middle of the chain goes either way.']} tag="one proton, one charge, opposite sides" />
 );

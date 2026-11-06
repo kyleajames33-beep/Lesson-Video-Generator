@@ -7,7 +7,7 @@ import {cues} from '../../cues';
 import {Heading, sc} from './common';
 import {
 	AChip, BASE_INK, DimG, EqLine, Fade, GCard, H3O, INK, INK_SOFT, KeptChip, LabelBeaker, LensFrame, LogRuler, Meter, Mol, Note, OHg, Overlay, P, PHChip, PROTON, PROTON_INK, ProtonHop,
-	Ring, RuleCard, Sx, TEAL, TaskLine, Tick, Tie, WLine, beakerW, clamp01, countRead, eq, giveAt, hopState, lerp, mw, pieceX, slotAt, smooth, subX, vis,
+	Ring, RuleCard, Sx, TEAL, TaskLine, Tick, Tie, WLine, beakerW, clamp01, countRead, eq, giveAt, hopState, lerp, mw, pieceX, slotAt, smooth, subX, vis, FullMeter, fullMeterW,
 } from './parts';
 import type {Piece} from './parts';
 
@@ -72,6 +72,7 @@ export const ScenePhMeaning: React.FC = () => {
 	const pw = subX(logA, '−1', LS, 700, 2);
 	return (
 		<>
+			<Heading text="What pH means" at={4} size={58} />
 			<Overlay>
 				{glow > 0.01 ? <rect x={DX + m.x1 - 6} y={DY - DS * 0.62} width={m.x2 - m.x1 + 12} height={DS * 0.5} rx={10} fill={TEAL} opacity={0.4 * glow} /> : null}
 				<Sx x={DX} y={DY} text={DEF} size={DS} color={INK} weight={800} at={4} />
@@ -154,30 +155,44 @@ const S4 = 'ph-backwards';
 const K4 = cues(sc(S4), {back: 'run it backwards', tenpH: 'ten to the minus pH', ph340: 'pH of three', gives: 'gives ten to', four: 'four point zero times', twodp: 'Two decimal places', twosf: 'two significant figures'});
 export const ScenePhBack: React.FC = () => {
 	const f = useCurrentFrame();
-	const X = 96, LY = 620, LS = 50;
+	const X = 96, LY = 620, LS = 52;
 	const a = '[H_3O^{+}] = 10^{−3.40}';
 	const xb = X + mw(a, LS) + LS * 0.35;
 	const res = '= 4.0 × 10^{−4} mol/L';
 	const r40 = subX(res, '4.0', LS);
-	const CS = 40, cx0 = X + CS * 0.7;
+	const CS = 44, cx0 = X + CS * 0.7;
 	const c40 = subX('pH = 3.40', '.40', CS);
-	const ruleO = 1 - 0.6 * prog(f, K4.twosf + 70, 14);
+	const MX = 1300, MY = 170, MH = 450;
+	const read = countRead([{t0: K4.ph340 - 16, t1: K4.ph340 + 8, a: 7.0, b: 3.4}], 2, K4.ph340 - 16);
+	const RX = 300, RW = 1400, RY = 900;
+	const mk = phXr(RX, RW, 3.4);
+	const mo = prog(f, K4.four, 14);
 	return (
 		<>
 			<Heading text="Going backwards: pH to concentration" at={4} size={58} />
 			<Overlay>
-				<g opacity={ruleO}><KeptChip x={1240} y={96} text="d.p. in pH = s.f. in [H_3O^{+}]" at={6} pulse={K4.twosf} color={TEAL} size={30} /></g>
-				<Sx x={X} y={330} text="[H_3O^{+}] = 10^{−pH}" size={68} color={INK} weight={800} at={K4.tenpH} />
+				<FullMeter x={MX} y={MY} h={MH} at={-100} read={read} pulse={K4.ph340} />
+				<Sx x={MX + fullMeterW(MH) / 2} y={MY + MH + 46} text="measured pH" size={34} color={INK_SOFT} anchor="middle" hand at={6} />
+				<Sx x={X} y={330} text="[H_3O^{+}] = 10^{−pH}" size={72} color={INK} weight={800} at={K4.tenpH} />
 				<AChip x={X} y={420} text="pH = 3.40" size={CS} color={INK} hand={false} at={K4.ph340} />
+				<Tie a={[MX + 60, MY + MH * 0.42]} b={[X + 260, 446]} at={K4.ph340 + 6} out={K4.twosf} color={PROTON_INK} />
 				<Sx x={X} y={LY} text={a} size={LS} color={INK} weight={700} at={K4.gives} />
 				<Sx x={xb} y={LY} text="= 3.98 × 10^{−4}" size={LS} color={INK_SOFT} weight={700} at={K4.gives + 24} out={K4.four} />
 				<Sx x={xb} y={LY} text={res} size={LS} color={TEAL} weight={800} at={K4.four} />
 				<Ring cx={cx0 + (c40.x1 + c40.x2) / 2} cy={420 + CS * 0.8} rx={(c40.x2 - c40.x1) / 2 + 14} ry={CS * 0.62} at={K4.twosf - 30} color={TEAL} seed={3} />
 				<Ring cx={xb + (r40.x1 + r40.x2) / 2} cy={LY - LS * 0.34} rx={(r40.x2 - r40.x1) / 2 + 6} ry={LS * 0.6} at={K4.twosf} color={TEAL} seed={6} />
 				<Tie a={[cx0 + (c40.x1 + c40.x2) / 2, 420 + CS * 1.5]} b={[xb + (r40.x1 + r40.x2) / 2, LY - LS * 1.0]} at={K4.twosf + 10} />
-				<Note x={xb + mw(res, LS) + 40} y={LY - 70} text="2 d.p. → 2 s.f." size={36} color={TEAL} at={K4.twosf + 16} />
-				{void K4.back}{void K4.twodp}{void H3O}{void Fade}
+				<Note x={xb} y={LY + 80} text="2 d.p. in pH → 2 s.f. in [H_3O^{+}]" size={40} color={TEAL} at={K4.twosf + 16} />
+				<LogRuler x={RX} y={RY} w={RW} at={10} hi={[{i: 3, at: K4.gives + 10}, {i: 4, at: K4.gives + 10}]} />
+				<g opacity={prog(f, K4.gives + 20, 12)}>
+					<path d={`M${mk - 14},${RY - 16} L${mk + 14},${RY - 16} L${mk},${RY + 8} Z`} fill={PROTON} stroke={PROTON_INK} strokeWidth={2} />
+				</g>
+				<g opacity={mo}>
+					<Sx x={mk} y={RY - 112} text="4.0 × 10^{−4}" size={36} color={TEAL} anchor="middle" weight={800} at={-1000} />
+				</g>
+				{void K4.back}{void K4.twodp}{void H3O}{void Fade}{void KeptChip}
 			</Overlay>
 		</>
 	);
 };
+const phXr = (x: number, w: number, q: number) => x + (q / 14) * w;
