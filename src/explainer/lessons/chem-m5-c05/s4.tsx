@@ -14,7 +14,10 @@ const BY = 520, BH = 80;
 const mark = (f: number, at: number) => prog(f, at, 14);
 export const SceneSizeK: React.FC = () => {
 	const f = useCurrentFrame();
-	const bandsAt = K8.rough - 10;
+	// Quality fix (6 Nov): the K scale and the three example cards (plate, equation, "K = ?") are on stage from the start;
+	// band labels, markers and K values still arrive on their spoken cues.
+	const bandsAt = 16;
+	const cardAt = 40;
 	const P49 = X(Math.log10(49));
 	const eqNO: EqItem[] = [{k: 'sp', t: 'N_2', color: INK}, {k: 'plus'}, {k: 'sp', t: 'O_2', color: INK}, {k: 'arrow'}, {k: 'sp', coef: '2', t: 'NO', color: INK}];
 	const eqHI: EqItem[] = [{k: 'sp', t: 'H_2', color: INK}, {k: 'plus'}, {k: 'sp', t: 'I_2', color: INK}, {k: 'arrow'}, {k: 'sp', coef: '2', t: 'HI', color: INK}];
@@ -54,12 +57,13 @@ export const SceneSizeK: React.FC = () => {
 				<g>
 					<Arrow x1={190} y1={690} x2={X(-30) + 6} y2={612} at={K8.n30} color={AMBER_INK} width={6} />
 					<circle cx={X(-30) + 6} cy={BY + BH / 2} r={16 * mark(f, K8.n30 + 10)} fill={AMBER_INK} stroke={INK} strokeWidth={3} />
-					<Fade at={K8.n30 - 6}>
+					<Fade at={cardAt}>
 						<rect x={70} y={690} width={490} height={262} rx={22} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={3.5} />
 					</Fade>
-					<Flask x={96} y={740} w={110} h={150} color="#f0e6d6" at={K8.n30} />
-					{[0, 1, 2, 3].map(k => { const p = wob(f, k + 8, 138 + (k % 2) * 36, 850 + (k > 1 ? 40 : 0), 14, 14); return <circle key={k} cx={p.x} cy={p.y} r={7} fill={k < 3 ? '#2f4b7c' : '#c4582f'} stroke={INK} strokeWidth={2} opacity={mark(f, K8.n30)} />; })}
-					<EqStrip items={eqNO} x={226} y={760} size={34} at={K8.n30} />
+					<Flask x={96} y={740} w={110} h={150} color="#f0e6d6" at={cardAt} />
+					{[0, 1, 2, 3].map(k => { const p = wob(f, k + 8, 138 + (k % 2) * 36, 850 + (k > 1 ? 40 : 0), 14, 14); return <circle key={k} cx={p.x} cy={p.y} r={7} fill={k < 3 ? '#2f4b7c' : '#c4582f'} stroke={INK} strokeWidth={2} opacity={mark(f, cardAt)} />; })}
+					<EqStrip items={eqNO} x={226} y={760} size={34} at={cardAt} />
+						<Sx x={226} y={818} text="K = ?" size={46} color={INK_SOFT} hand at={cardAt + 6} out={K8.n30} />
 					<Sx x={226} y={818} text="K near 10^{−30}" size={46} color={AMBER_INK} hand at={K8.n30 + 6} />
 					<Sx x={226} y={866} text="very little NO" size={36} color={INK_SOFT} hand at={K8.n30 + 12} />
 					<Sx x={226} y={908} text="at equilibrium" size={36} color={INK_SOFT} hand at={K8.n30 + 16} />
@@ -67,11 +71,12 @@ export const SceneSizeK: React.FC = () => {
 				<g>
 					<Arrow x1={1130} y1={690} x2={P49} y2={612} at={K8.k49} color={TEAL} width={6} />
 					<circle cx={P49} cy={BY + BH / 2} r={16 * mark(f, K8.k49 + 10)} fill={TEAL} stroke={INK} strokeWidth={3} />
-					<Fade at={K8.k49 - 6}>
+					<Fade at={cardAt + 8}>
 						<rect x={720} y={690} width={680} height={262} rx={22} fill="#fffdf8" stroke={TEAL} strokeWidth={3.5} />
 					</Fade>
-					<GasTube x={750} y={730} w={80} h={220} counts={{h: 2, i: 2, hi: 14}} seed={5} reveal={mark(f, K8.k49)} clamps={false} />
-					<EqStrip items={eqHI} x={870} y={760} size={34} at={K8.k49} />
+					<GasTube x={750} y={730} w={80} h={220} counts={{h: 2, i: 2, hi: 14}} seed={5} reveal={mark(f, cardAt + 8)} clamps={false} />
+					<EqStrip items={eqHI} x={870} y={760} size={34} at={cardAt + 8} />
+						<Sx x={870} y={818} text="K = ?" size={46} color={INK_SOFT} hand at={cardAt + 14} out={K8.k49} />
 					<Sx x={870} y={818} text="K = 49 at 450 °C" size={46} color={TEAL} hand at={K8.k49 + 6} />
 					<Sx x={870} y={866} text="lots of HI, some H_2" size={36} color={INK_SOFT} hand at={K8.k49 + 12} />
 					<Sx x={870} y={908} text="and I_2 left" size={36} color={INK_SOFT} hand at={K8.k49 + 16} />
@@ -79,10 +84,12 @@ export const SceneSizeK: React.FC = () => {
 				<g>
 					<Arrow x1={1640} y1={690} x2={X(13) - 6} y2={612} at={K8.n13} color={FWD} width={6} />
 					<circle cx={X(13) - 6} cy={BY + BH / 2} r={16 * mark(f, K8.n13 + 10)} fill={FWD} stroke={INK} strokeWidth={3} />
-					<Fade at={K8.n13 - 6}>
+					<Fade at={cardAt + 16}>
 						<rect x={1440} y={690} width={430} height={272} rx={22} fill="#fffdf8" stroke={FWD} strokeWidth={3.5} />
 					</Fade>
-					<Sx x={1566} y={772} text="K near 10^{13}" size={42} color={FWD} hand at={K8.n13 + 6} />
+					<Sx x={1566} y={730} text="Cu^{2+} + NH_3" size={34} color={INK} at={cardAt + 16} />
+						<Sx x={1566} y={784} text="K = ?" size={42} color={INK_SOFT} hand at={cardAt + 22} out={K8.n13} />
+						<Sx x={1566} y={784} text="K near 10^{13}" size={42} color={FWD} hand at={K8.n13 + 6} />
 					<Sx x={1566} y={826} text="plenty of NH_3:" size={34} color={INK_SOFT} hand at={K8.n13 + 12} />
 					<Sx x={1566} y={866} text="almost all the" size={34} color={INK_SOFT} hand at={K8.n13 + 16} />
 					<Sx x={1566} y={906} text="copper is in the" size={34} color={INK_SOFT} hand at={K8.n13 + 18} />
@@ -96,7 +103,7 @@ export const SceneSizeK: React.FC = () => {
 					<Sx x={1130} y={282} text="K says where, not how fast" size={56} color={TEAL} hand at={K8.fast + 16} />
 				</Fade>
 			</Overlay>
-			<CuTube x={1480} y={730} h={220} deep={mark(f, K8.n13 + 14)} at={K8.n13} />
+			<CuTube x={1480} y={730} h={220} deep={mark(f, K8.n13 + 14)} at={cardAt + 16} />
 		</>
 	);
 };

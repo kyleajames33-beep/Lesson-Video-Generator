@@ -123,6 +123,7 @@ export const SceneThreeTemps: React.FC = () => {
 	const tc = TL * 1; void tc;
 	const up = (start: number, dur: number) => 10 * lin(f, start, dur);
 	const uCool = up(K4.cool, 130), uHot = up(K4.hot, 130), uMid = up(K4.mid, 130);
+	const pre = (start: number) => up(start, 90);
 	const dot = (u: number, fn: (t: number) => number, color: string) => (u >= TL ? <circle cx={PG.px(TL)} cy={PG.py(fn(TL))} r={13} fill={color} stroke={INK} strokeWidth={3.5} /> : null);
 	return (
 		<>
@@ -136,6 +137,15 @@ export const SceneThreeTemps: React.FC = () => {
 					<Sx x={PG.px(TL) + 16} y={PG.y + 40} text="time the gas spends over the catalyst" size={30} color={INK_SOFT} hand at={K4.three + 14} />
 					<Sx x={CEIL_X} y={262} text="every curve: with iron catalyst" size={30} color={IRON_DARK} hand at={K4.three + 20} />
 				</Fade>
+				{/* Quality fix (6 Nov): the three curves draw in with the axes as grey dashed previews, each tagged with its
+				    temperature; each is then redrawn in colour on its spoken cue. */}
+				<Curve g={PG} fn={COOLF} upTo={pre(K4.three + 24)} color={INK_SOFT} width={4} dash="12 9" />
+				<Curve g={PG} fn={MIDF} upTo={pre(K4.three + 40)} color={INK_SOFT} width={4} dash="12 9" />
+				<Curve g={PG} fn={HOTF} upTo={pre(K4.three + 56)} color={INK_SOFT} width={4} dash="12 9" />
+				<Sx x={PG.px(9.7)} y={PG.py(COOLF(9.7)) - 18} text="300 C" size={34} color={INK_SOFT} anchor="end" hand at={K4.three + 100} out={K4.c60} />
+				<Sx x={PG.px(9.7)} y={PG.py(MIDF(9.7)) - 18} text="450 C" size={34} color={INK_SOFT} anchor="end" hand at={K4.three + 116} out={K4.c25} />
+				<Sx x={PG.px(9.7)} y={PG.py(HOTF(9.7)) - 18} text="600 C" size={34} color={INK_SOFT} anchor="end" hand at={K4.three + 132} out={K4.nine} />
+				<Sx x={PG.px(5)} y={PG.y + 130} text="same pressure, three temperatures" size={36} color={INK_SOFT} anchor="middle" hand at={K4.three + 60} out={K4.cool} />
 				<Curve g={PG} fn={COOLF} upTo={uCool} color={RATE} width={7} />
 				<Curve g={PG} fn={HOTF} upTo={uHot} color={RATE} width={7} />
 				<Curve g={PG} fn={MIDF} upTo={uMid} color={RATE} width={7} />

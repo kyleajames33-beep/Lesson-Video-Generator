@@ -29,25 +29,27 @@ const AB_EQ: EqItem[] = [{k: 'sp', t: 'A(aq)', color: '#3d6fd6'}, {k: 'plus'}, {
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
 	const hold = sc(A).responseHold as {startFrame: number; endFrame: number};
+	// Quality fix (6 Nov): the whole question (both items and their givens) arrives with the card, as in the accepted examples.
+	const T0 = KA.turn + 8;
 	return (
 		<>
 			<Heading text="Your turn: two systems" at={KA.turn} size={62} />
 			<Overlay>
-				<Badge x={120} y={260} n="1" at={KA.one} />
-				<Sx x={300} y={300} text="copper ions + ammonia" size={42} color={CU_INK} hand at={KA.cu + 6} />
-				<EqStrip items={CU_EQ} x={96} y={470} size={36} at={KA.w1 - 20} />
-				<Sx x={96} y={520} text="dilute aqueous solution, steady temperature" size={30} color={INK_SOFT} at={KA.w1 - 10} />
-				<Badge x={120} y={650} n="2" at={KA.two} />
-				<Flask x={200} y={590} w={130} h={170} color="#d9eaf3" at={KA.made} />
-				<Sx x={370} y={690} text="a made-up reaction" size={42} color={TEAL} hand at={KA.made + 6} />
-				<EqStrip items={AB_EQ} x={96} y={830} size={36} at={KA.ab} />
-				<Sx x={96} y={884} text="made-up reaction, dilute aqueous solution, steady temperature" size={30} color={INK_SOFT} at={KA.ab + 10} />
-				<Sx x={96} y={926} text="start with equal A and B, and no C or D" size={30} color={INK_SOFT} at={KA.equal} />
+				<Badge x={120} y={260} n="1" at={T0} />
+				<Sx x={300} y={300} text="copper ions + ammonia" size={42} color={CU_INK} hand at={T0 + 6} />
+				<EqStrip items={CU_EQ} x={96} y={470} size={36} at={T0 + 10} />
+				<Sx x={96} y={520} text="dilute aqueous solution, steady temperature" size={30} color={INK_SOFT} at={T0 + 14} />
+				<Badge x={120} y={650} n="2" at={T0 + 20} />
+				<Flask x={200} y={590} w={130} h={170} color="#d9eaf3" at={T0 + 20} />
+				<Sx x={370} y={690} text="a made-up reaction" size={42} color={TEAL} hand at={T0 + 26} />
+				<EqStrip items={AB_EQ} x={96} y={830} size={36} at={T0 + 30} />
+				<Sx x={96} y={884} text="made-up reaction, dilute aqueous solution, steady temperature" size={30} color={INK_SOFT} at={T0 + 34} />
+				<Sx x={96} y={926} text="start with equal A and B, and no C or D" size={30} color={INK_SOFT} at={T0 + 38} />
 				<Countdown start={hold.startFrame} end={hold.endFrame} x={1740} y={900} r={48} />
 			</Overlay>
-			<CuTube x={196} y={186} h={240} at={KA.cu} />
-			<Q n="1" at={KA.w1} top={230}>Write the equilibrium expression.</Q>
-			<Q n="2" at={KA.w2} top={380}>Write the equilibrium expression. Start with equal concentrations of A and B and no C or D. In this question K is 4. What does that tell you about the settled mixture?</Q>
+			<CuTube x={196} y={186} h={240} at={T0 + 4} />
+			<Q n="1" at={T0 + 12} top={230}>Write the equilibrium expression.</Q>
+			<Q n="2" at={T0 + 32} top={380}>Write the equilibrium expression. Start with equal concentrations of A and B and no C or D. In this question K is 4. What does that tell you about the settled mixture?</Q>
 			<Enter at={KA.pause} style={{position: 'absolute', left: 980, top: 640}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, color: AMBER_INK}}>Pause here to answer.</div>
 			</Enter>
@@ -218,20 +220,25 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const rich = (text: string) => toks(text).map((t, i) => t.k === 1 ? <sub key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sub> : t.k === 2 ? <sup key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sup> : <span key={i}>{t.s}</span>);
+// Quality fix (6 Nov): short one-line bullets replace four paragraphs.
 const NOTES = [
-	'At a given temperature, the ratio of products to reactants, with each concentration raised to the power of its coefficient, stays constant for a settled mixture. That value is the equilibrium constant, K (Keq).',
-	'For aA + bB ⇌ cC + dD: K = [C]^{c}[D]^{d} / ([A]^{a}[B]^{b}), written for the equation as given. Products on top, reactants underneath. Square brackets go round the whole ion.',
-	'Pure solids, a pure liquid and the solvent do not appear: their concentration does not change, so it is already part of K. Gases and aqueous species do appear.',
-	'Rough guide: K above about 10^{3}, mostly products; below about 10^{−3}, mostly reactants; in between, both present. K says where the mixture settles, not how fast.',
+	'K: products over reactants, each concentration to the power of its coefficient.',
+	'At a given temperature, K is constant for any settled mixture of that reaction.',
+	'aA + bB ⇌ cC + dD:  K = [C]^{c}[D]^{d} / ([A]^{a}[B]^{b}), for the equation as written.',
+	'Square brackets go round the whole ion, charge included.',
+	'Leave out pure solids, a pure liquid and the solvent. Gases and (aq) species stay in.',
+	'K above about 10^{3}: mostly products. Below about 10^{−3}: mostly reactants.',
+	'In between: all species present in measurable amounts.',
+	'K says where the mixture settles, not how fast.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 84}}><HandText text="Key notes: what to write in your book" at={2} size={64} cps={40} /></div>
 		<div style={{position: 'absolute', left: 120, top: 190, width: 1690}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={34 + i * 12} style={{display: 'flex', gap: 22, marginBottom: 20}}>
+				<Enter key={i} at={34 + i * 10} style={{display: 'flex', gap: 22, marginBottom: 13}}>
 					<div style={{flex: 'none', width: 16, height: 16, marginTop: 12, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 36, fontWeight: 500, color: INK, lineHeight: 1.25}}>{rich(n.replace(/\^\{c\}/g, '^{c}'))}</div>
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 40, fontWeight: 500, color: INK, lineHeight: 1.2}}>{rich(n)}</div>
 				</Enter>
 			))}
 		</div>

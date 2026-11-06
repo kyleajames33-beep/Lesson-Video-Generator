@@ -6,9 +6,11 @@
  *   tube triple (from-scratch scene). They are listed through the C3 HAVE set.
  * - Copper ammonia tube: aligned painted pair (pale blue and deep blue, same alpha box 410,183,790,1617 in a 1200 x 1800
  *   plate), drawn by CuTube in parts.tsx with a crossfade. No coded tube stand-in remains.
+ * - Quality fix (6 Nov): the G03 painted carbon vessel (g03-carbon-vessel-v1) carries the carbon scene in left-out.
  * - Everything else (rate bars, expression builder, number line, beaker, carbon block, tubes of H2, I2 and HI) is coded.
  */
 import {HAVE as HAVE4B, SEALED_TUBE} from '../chem-m5-c04b/assets';
+import {CARBON_PLATE} from '../chem-m5-g03a/assets';
 import {CO_BLUE, CO_PINK, CO_PURPLE, HAVE as HAVE3, IRON_DEEP, IRON_START} from '../chem-m5-c03/assets';
 
 const A = 'assets/chemistry/';
@@ -18,4 +20,4 @@ export const CU_DEEP_PLATE = A + 'c5-copper-tube-deep-v1.png';
 export const FLASK_PLATE = A + 'c5-flask-clear-v1.png';
 export const LUMP_PLATE = A + 'c5-solid-lump-v1.png';
 export const HAVE5 = new Set<string>([CU_PALE_PLATE, CU_DEEP_PLATE, FLASK_PLATE, LUMP_PLATE]);
-export const ASSETS: string[] = [IRON_START, IRON_DEEP, CO_PINK, CO_PURPLE, CO_BLUE].filter(a => HAVE3.has(a)).concat([CU_PALE_PLATE, CU_DEEP_PLATE, FLASK_PLATE, LUMP_PLATE].filter(a => HAVE5.has(a))).concat([SEALED_TUBE].filter(a => HAVE4B.has(a))); // C05 reuses the C4b GasTube (painted sealed tube)
+export const ASSETS: string[] = [IRON_START, IRON_DEEP, CO_PINK, CO_PURPLE, CO_BLUE].filter(a => HAVE3.has(a)).concat([CU_PALE_PLATE, CU_DEEP_PLATE, FLASK_PLATE, LUMP_PLATE].filter(a => HAVE5.has(a))).concat([SEALED_TUBE].filter(a => HAVE4B.has(a))).concat([CARBON_PLATE]); // C05 reuses the C4b GasTube (painted sealed tube)

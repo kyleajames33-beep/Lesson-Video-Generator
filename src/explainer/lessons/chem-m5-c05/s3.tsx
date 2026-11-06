@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
 import {CobaltTube} from '../chem-m5-c03/parts';
-import {Co2} from '../chem-m5-c01/parts';
+import {CarbonVessel, GasKey} from '../chem-m5-g03a/board';
 import {Arrow, Chip, EqStrip, FWD, Fade, Frac, Line, Overlay, Ring, Sx, TEAL, Tick, eqLayout, eqWidth, fracGeom, tw, wob} from './parts';
 import type {EqItem, Term} from './parts';
 import {CLC_INK, COBLUE_INK, GREEN, Heading, PINK_INK, cw, kf, sc} from './common';
@@ -37,9 +37,11 @@ export const SceneScratch: React.FC = () => {
 	return (
 		<>
 			<Heading text="Writing an expression from scratch" at={4} size={62} />
-			<CobaltTube x={110} y={400} h={470} s={colour} opacity={prog(f, K6.pink - 20, 18)} />
+			{/* Quality fix (6 Nov): the cobalt tube and its equation arrive with the title, so the first seconds are not a blank stage. */}
+			<CobaltTube x={110} y={400} h={470} s={colour} opacity={prog(f, 10, 18)} />
 			<Overlay>
-				<EqStrip items={EQ} x={960} y={EY} size={ES} anchor="middle" at={K6.pink - 4} />
+				<EqStrip items={EQ} x={960} y={EY} size={ES} anchor="middle" at={22} />
+				<Sx x={120} y={950} text="the cobalt tube" size={38} color={INK_SOFT} hand at={40} out={K6.first} />
 				{/* stage 1: the states */}
 				<Ring cx={stateCx(0)} cy={EY - 14} rx={40} ry={30} at={K6.states} color={GREEN} seed={2} />
 				<Ring cx={stateCx(2)} cy={EY - 14} rx={40} ry={30} at={K6.states + 14} color={GREEN} seed={3} />
@@ -73,6 +75,7 @@ export const SceneScratch: React.FC = () => {
 const L = 'left-out';
 const K7 = cues(sc(L), {nochg: 'Their concentration does not change', never: 'can never make the ratio move', incl: 'K already includes them', carbon: 'We met this with carbon', carb2: 'So for carbon plus carbon dioxide', nev2: 'the carbon never appears', steam: 'as steam', counts: 'its concentration changes'});
 const solv = cw(L, 'Why leave out the solvent', 4);
+const sqz = cw(L, 'which squeezing could not', 1);
 const kk = (k: number) => cw(L, 'the carbon monoxide squared over the carbon dioxide', k);
 const CEQ: EqItem[] = [{k: 'sp', t: 'C(s)', color: INK}, {k: 'plus'}, {k: 'sp', t: 'CO_2(g)', color: INK}, {k: 'arrow'}, {k: 'sp', coef: '2', t: 'CO(g)', color: INK}];
 export const SceneLeftOut: React.FC = () => {
@@ -122,14 +125,16 @@ export const SceneLeftOut: React.FC = () => {
 				</g>
 				{/* carbon */}
 				<Heading0 />
-				<Fade at={K7.carbon}>
-					<rect x={130} y={500} width={340} height={150} rx={22} fill="#3a3733" stroke={INK} strokeWidth={5} />
-					<Sx x={300} y={594} text="carbon" size={50} color="#f6f1e7" anchor="middle" hand at={K7.carbon + 4} />
-					{[0, 1, 2].map(k => { const p = wob(f, k + 3, 230 + k * 90, 380, 22, 24); return <Co2 key={k} x={p.x} y={p.y} s={0.9} rot={k * 40} />; })}
-					{[0, 1, 2, 3].map(k => { const p = wob(f, k + 30, 190 + k * 70, 440, 18, 14); return <g key={'c' + k}><circle cx={p.x - 9} cy={p.y} r={9} fill="#3a3733" stroke={INK} strokeWidth={2} /><circle cx={p.x + 9} cy={p.y} r={9} fill="#d6523c" stroke="#8c2f20" strokeWidth={2} /></g>; })}
-					<path d="M130,690 L470,690" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" />
-					<Sx x={300} y={746} text="pure solid: concentration does not change" size={36} color={INK_SOFT} anchor="middle" hand at={K7.carbon + 20} />
-				</Fade>
+				{/* Quality fix (6 Nov): the painted sealed vessel from the squeeze video (G03) fills the left side, with CO2 and CO
+				    moving in the gas above the carbon lump; the lump greys out on "the carbon never appears". */}
+				<CarbonVessel x={80} y={190} h={800} at={K7.carbon} grey={prog(f, K7.nev2 + 6, 16) * 0.85} counts={() => [7, 6]} />
+				<GasKey x={150} y={1040} at={K7.carbon + 16} />
+				<Sx x={570} y={560} text="pure solid:" size={42} color={INK_SOFT} hand at={K7.carbon + 20} />
+				<Sx x={570} y={610} text="concentration" size={42} color={INK_SOFT} hand at={K7.carbon + 24} />
+				<Sx x={570} y={660} text="does not change" size={42} color={INK_SOFT} hand at={K7.carbon + 28} />
+				<Arrow x1={600} y1={690} x2={440} y2={750} at={K7.carbon + 30} color={INK_SOFT} width={5} />
+				<Sx x={570} y={430} text="squeezing could not" size={38} color={FWD} hand at={sqz} />
+				<Sx x={570} y={476} text="crowd it any more" size={38} color={FWD} hand at={sqz + 6} />
 				<EqStrip items={CEQ} x={CX} y={CY} size={CS} anchor="middle" at={K7.carbon + 10} />
 				<Fade at={K7.carb2 - 6}>
 					<Sx x={CX} y={CY - 76} text="the equation from the squeeze video" size={38} color={INK_SOFT} anchor="middle" hand at={K7.carb2 - 6} />

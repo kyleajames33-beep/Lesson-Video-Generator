@@ -32,8 +32,10 @@ export const ScenePressure: React.FC = () => {
 					<rect x={168} y={196} width={46} height={rt * 0.9} rx={5} fill="#d99a2b" stroke={INK} strokeWidth={3} transform={`translate(0,${100 - rt * 0.9})`} />
 					<Sx x={236} y={262} text="both rates rise" size={38} color={RATE} hand at={K1.rise} />
 				</Fade>
-				<CrowdBox x={350} y={385} w={480} h={230} at={K1.crowd} out={K1.why + 20} squeezeAt={K1.crowd + 14} squeezeDur={60} labelAt={K1.crowd + 20} />
-				<Fade at={K1.crowd + 90} out={K1.why + 20}>
+				{/* Quality fix (6 Nov): the squeezed box stays solid through "So why not a thousand atmospheres?" and leaves just
+				    before the bars grow into its space (it was fading out over that question). */}
+				<CrowdBox x={350} y={385} w={480} h={230} at={K1.crowd} out={K1.less - 16} squeezeAt={K1.crowd + 14} squeezeDur={60} labelAt={K1.crowd + 20} />
+				<Fade at={K1.crowd + 90} out={K1.less - 16}>
 					<Sx x={590} y={706} text="more collisions each second" size={32} color={RATE} anchor="middle" hand at={K1.crowd + 90} />
 				</Fade>
 				<Chip x={620} y={214} w={250} text="4 gas particles" size={32} at={K1.shift} color={N2C} />

@@ -20,10 +20,14 @@ export const SceneEnergySteps: React.FC = () => {
 		<>
 			<Heading text="Two energy steps" at={4} size={60} />
 			<Overlay>
-				<CodeThermo x={300} y={300} h={520} level={level} at={K5.count} label="the water" />
+				{/* Quality fix (6 Nov): the water thermometer, the energy ledger (axis and start line) and the two step icons arrive with
+				    the title; bars, labels and sums still follow their spoken cues. */}
+				<CodeThermo x={300} y={300} h={520} level={level} at={8} label="the water" />
 				<Sx x={300} y={930} text="warms" size={40} color={COOL} anchor="middle" hand at={K5.heats + 20} out={K5.moreIn} />
 				<Sx x={300} y={930} text="cools" size={40} color={HOT} anchor="middle" hand at={K5.from + 20} />
-				<Fade at={K5.count}>
+				<Fade at={10}>
+					<path d={`M${LG.x - 60},${LG.base} L${LG.x - 60},${LG.base - LG.h1 - 40} M${LG.x - 72},${LG.base - LG.h1 - 24} L${LG.x - 60},${LG.base - LG.h1 - 42} L${LG.x - 48},${LG.base - LG.h1 - 24}`} fill="none" stroke={INK} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
+					<Sx x={LG.x - 60} y={LG.base - LG.h1 - 58} text="energy" size={32} color={INK_SOFT} anchor="middle" hand at={10} />
 					<Ledger x={LG.x} base={LG.base} h1={LG.h1} h2={h2} bw={LG.bw} gap={LG.gap} p1={prog(f, K5.away, 40)} p2={prog(f, K5.cling, 40)} pn={prog(f, K5.enth, 30)} startLabel="start" />
 				</Fade>
 				<Sx x={X.b1 + LG.bw / 2} y={LG.base + 130} text="step 1" size={34} color={HOT} anchor="middle" hand at={K5.one} />
@@ -33,11 +37,13 @@ export const SceneEnergySteps: React.FC = () => {
 				<HBracket x1={X.b1} x2={X.b2 + LG.bw} y={LG.base - LG.h1 - 44} at={K5.together} color={INK_SOFT} />
 				<Sx x={X.b1} y={LG.base - LG.h1 - 62} text="counted separately, happen together" size={34} color={INK_SOFT} hand at={K5.together + 6} />
 				{/* the step labels */}
-				<StepIcon x={LX - 70} y={292} step={1} at={K5.one} s={0.9} />
+				<StepIcon x={LX - 70} y={292} step={1} at={18} s={1.2} />
+				<Sx x={LX} y={302} text="1. Separate the ions" size={40} color={INK} hand at={22} out={K5.costs - 6} />
 				<Sx x={LX} y={302} text="1. Separate the ions: energy in, +" size={38} color={HOT} hand at={K5.costs} />
 				<Sx x={LX} y={346} text="because opposite charges attract" size={30} color={INK_SOFT} hand at={K5.attract} />
 				<Sx x={LX} y={388} text="(lattice energy, counted as energy in)" size={26} color={INK_SOFT} weight={600} at={K5.in} />
-				<StepIcon x={LX - 70} y={470} step={2} at={K5.two} s={0.9} />
+				<StepIcon x={LX - 70} y={470} step={2} at={26} s={1.2} />
+				<Sx x={LX} y={480} text="2. Hydrate the ions" size={40} color={INK} hand at={30} out={K5.released - 6} />
 				<Sx x={LX} y={480} text="2. Hydrate the ions: energy out, −" size={38} color={COOL} hand at={K5.released} />
 				<Sx x={LX} y={522} text="(hydration energy)" size={26} color={INK_SOFT} weight={600} at={K5.outc} />
 				<Sx x={LX} y={630} text="ΔH(solution) = step 1 + step 2" size={42} color={INK} weight={700} at={K5.enth} />
@@ -173,14 +179,15 @@ export const SceneEntropy: React.FC = () => {
 					left={<g><Fade at={K8.heat}><HeatIcon cx={0} cy={18} s={0.8} at={K8.heat} /></Fade><Sx x={0} y={110} text="energy: +25.7" size={32} color={HOT} anchor="middle" weight={700} at={K8.heat} /><Sx x={0} y={148} text="(against)" size={30} color={HOT} anchor="middle" hand at={K8.heat + 8} /></g>}
 					right={<g><Fade at={K8.spread}><DotBlock cx={0} cy={20} cols={3} rows={2} gap={18} p={0.6 + 0.4 * Math.sin(f * 0.04) ** 2} spread={50} r={7} color={TEAL} /></Fade><Sx x={0} y={110} text="spreading out" size={32} color={TEAL} anchor="middle" weight={700} at={K8.spread} /><Sx x={0} y={148} text="(entropy): for" size={30} color={TEAL} anchor="middle" hand at={K8.spread + 8} /></g>} />
 				<Sx x={980} y={300} text="a change is favoured by:" size={36} color={INK_SOFT} anchor="middle" hand at={K8.remember + 6} />
-				{/* the entropy inset: ordered lattice ions spread through water */}
-				<Fade at={K8.locked}>
-					<rect x={1440} y={640} width={380} height={300} rx={22} fill="#eef6fb" stroke="rgba(60,45,20,0.2)" strokeWidth={3} />
-					<DotBlock cx={1612} cy={782} cols={3} rows={3} gap={34} p={sp} spread={150} r={11} color={CAT} seed={3} />
-					<DotBlock cx={1629} cy={799} cols={3} rows={3} gap={34} p={sp} spread={150} r={12} color={AN} seed={8} />
-					<Sx x={1630} y={985} text="locked in a lattice, then spread out" size={28} color={INK_SOFT} anchor="middle" hand at={K8.locked} />
+				{/* the entropy inset (quality fix, 6 Nov): on stage from the start, larger; the ions sit locked in the lattice until
+				    "spread out through", then spread through the water. */}
+				<Fade at={10}>
+					<rect x={1380} y={600} width={460} height={360} rx={22} fill="#eef6fb" stroke="rgba(60,45,20,0.2)" strokeWidth={3} />
+					<DotBlock cx={1596} cy={766} cols={4} rows={3} gap={50} p={sp} spread={190} r={16} color={CAT} seed={3} />
+					<DotBlock cx={1621} cy={791} cols={4} rows={3} gap={50} p={sp} spread={190} r={18} color={AN} seed={8} />
+					<Sx x={1610} y={1004} text={sp < 0.5 ? 'ions locked in the lattice' : 'ions spread through the water'} size={34} color={INK_SOFT} anchor="middle" hand at={10} />
 				</Fade>
-				<Sx x={1630} y={610} text="entropy increases" size={40} color={TEAL} anchor="middle" hand at={K8.inc} />
+				<Sx x={1610} y={580} text="entropy increases" size={44} color={TEAL} anchor="middle" hand at={K8.inc} />
 				<Sx x={1280} y={330} text="NH_4NO_3 dissolves anyway" size={38} color={TEAL} weight={700} at={K8.wins + 16} />
 				<MistakeChip x={520} y={900} text="big ΔH cost = won't dissolve" size={32} at={K8.cant} note="energy alone does not decide" />
 				{void K8.puzzle}{void K8.alone}{void FONT_DISPLAY}{void INK}

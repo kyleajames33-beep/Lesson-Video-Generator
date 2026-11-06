@@ -135,16 +135,18 @@ export const SceneDecision: React.FC = () => {
 		<>
 			<Heading text="When an ionic solid dissolves" at={4} size={60} />
 			<Overlay>
-				<Fade at={K18.dissolves}><rect x={96} y={220} width={1300} height={470} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
+				{/* Quality fix (6 Nov): the whole summary (three rows and their icons) fills the box from the start; each row
+				    glows and its icon animates on its spoken cue. */}
+				<Fade at={4}><rect x={96} y={220} width={1300} height={470} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
 				<RowGlow y={320} at={K18.pull} out={K18.explain} />
 				<RowGlow y={460} at={K18.compare} out={K18.solid} />
 				<RowGlow y={600} at={K18.eqm} out={K18.next} />
-				<Sx x={130} y={320} text="Dissolving: water pulls the ions out and hydrates them." size={42} color={INK} hand at={K18.pull} />
-				<Sx x={130} y={460} text="Temperature: compare separating (in) with hydrating (out)." size={42} color={INK} hand at={K18.compare} />
-				<Sx x={130} y={600} text="Solid on the bottom: equilibrium, so use K and Q." size={42} color={INK} hand at={K18.eqm} />
-				<Fade at={K18.pull}><HydratedIon x={1610} y={300} kind="+" shell={1} ws={1} n={6} rot={f * 0.004} /></Fade>
-				<Fade at={K18.compare}><Ledger x={1520} base={500} h1={110} h2={80} bw={44} gap={30} p1={prog(f, K18.compare, 16)} p2={prog(f, K18.payback, 16)} pn={prog(f, K18.payback + 16, 16)} s={0.5} /></Fade>
-				<Fade at={K18.solid}><PicH p={SAT} x={1530} y={540} h={170} /></Fade>
+				<Sx x={130} y={320} text="Dissolving: water pulls the ions out and hydrates them." size={42} color={INK} hand at={10} />
+				<Sx x={130} y={460} text="Temperature: compare separating (in) with hydrating (out)." size={42} color={INK} hand at={18} />
+				<Sx x={130} y={600} text="Solid on the bottom: equilibrium, so use K and Q." size={42} color={INK} hand at={26} />
+				<Fade at={12}><HydratedIon x={1610} y={300} kind="+" shell={1} ws={1} n={6} rot={f * 0.004} /></Fade>
+				<Fade at={20}><Ledger x={1520} base={500} h1={110} h2={80} bw={44} gap={30} p1={prog(f, K18.compare, 16)} p2={prog(f, K18.payback, 16)} pn={prog(f, K18.payback + 16, 16)} s={0.5} /></Fade>
+				<Fade at={28}><PicH p={SAT} x={1530} y={540} h={170} /></Fade>
 				<Chip x={96} y={800} w={1060} text="Next: solubility and food detoxification knowledge" size={40} color={TEAL} at={K18.next + 6} />
 				{void K18.hydrate}{void K18.explain}{void K18.kq}{void K18.food}{void DrawPath}{void AMBER_INK}{void INK_SOFT}
 			</Overlay>
@@ -153,14 +155,17 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 17. Key notes ----------
+// Quality fix (6 Nov): short one-line bullets replace five paragraphs.
 const NOTES = [
-	'Dissolving an ionic solid: polar water molecules turn their oppositely charged ends to the ions (ion-dipole attraction), pull ions off the lattice and surround them (hydrated ions). NaCl(s) → Na^{+}(aq) + Cl^{-}(aq). The ions already existed; dissolving separates them.',
-	'Two energy steps: separating the ions from the lattice takes in energy (+); hydrating the ions releases energy (−). ΔH(solution) = the sum. Hydration bigger: exothermic, the water warms (CaCl_2, −81 kJ/mol). Separation bigger: endothermic, the water cools (NH_4NO_3, +25.7 kJ/mol).',
-	'An endothermic salt can still dissolve because spreading out (an increase in entropy) also favours dissolving. Energy alone does not predict solubility.',
-	'Saturated solution with solid present: dynamic equilibrium, NaCl(s) ⇌ Na^{+}(aq) + Cl^{-}(aq). Dissolving rate = crystallising rate, so the concentration and the mass of solid stay constant. Evidence: radioactive ions added in a crystal spread into the solution.',
-	'Changes: adding solid, no shift (solid left out of K). Adding water, more dissolves until saturated again (same concentration). Temperature changes K: for endothermic dissolving, heating dissolves more.',
+	'Polar water turns its charged ends to the ions (ion-dipole attraction), pulls them off the lattice and hydrates them.',
+	'NaCl(s) → Na^{+}(aq) + Cl^{-}(aq): the ions already existed; dissolving separates them.',
+	'Separating the ions takes energy in (+). Hydrating them releases energy (−). ΔH(solution) = the sum.',
+	'Hydration bigger: the water warms (CaCl_2, −81 kJ/mol). Separation bigger: it cools (NH_4NO_3, +25.7 kJ/mol).',
+	'Spreading out (entropy increase) also favours dissolving, so energy alone does not predict solubility.',
+	'Saturated, solid present: dynamic equilibrium. Dissolving rate = crystallising rate (tracer evidence).',
+	'Add solid: no shift. Add water: more dissolves to the same concentration. Temperature changes K.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={30} aidTop={800} aids={['Lattice costs, hydration pays.', 'Saturated means equal rates, not stopped.']} tag="same temperature; solid still present" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={790} aids={['Lattice costs, hydration pays.', 'Saturated means equal rates, not stopped.']} tag="same temperature; solid still present" />
 );
 void PicFit;

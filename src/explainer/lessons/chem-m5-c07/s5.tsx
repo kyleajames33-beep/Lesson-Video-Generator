@@ -46,6 +46,17 @@ export const SceneFeedbackTemp: React.FC = () => {
 			<Overlay>
 				<EqRow items={MEOH_EQ} x={640} y={140} size={42} at={-100} />
 				<AnswerTable x={TB.x} y={TB.y} labelW={TB.labelW} colW={TB.colW} rowH={TB.rowH} size={TB.size} headSize={TB.headSize} rows={rows} headAt={[-100, -100, -100]} placeholders={-100} />
+				{/* Quality fix (6 Nov): the question's two settings stay on the right until the 25 C inset replaces them. */}
+				<Fade at={6} out={K1.at25 - 14}>
+					<rect x={RC} y={236} width={480} height={150} rx={20} fill="#fffdf8" stroke={GREEN} strokeWidth={4} />
+					<Sx x={RC + 24} y={282} text="the plant" size={32} color={GREEN} hand at={6} />
+					<Sx x={RC + 24} y={340} text="about 250 C, 50 to 100 atm" size={34} color={INK} at={10} />
+					<Sx x={RC + 24} y={376} text="copper-based catalyst" size={30} color={INK_SOFT} at={14} />
+					<rect x={RC} y={420} width={480} height={130} rx={20} fill="#fffdf8" stroke={COST} strokeWidth={4} />
+					<Sx x={RC + 24} y={466} text="the student's claim" size={32} color={COST} hand at={18} />
+					<Sx x={RC + 24} y={522} text="25 C and 500 atm" size={36} color={INK} at={22} />
+					<Snowflake x={RC + 400} y={505} s={0.8} />
+				</Fade>
 				<Fade at={K1.at25}>
 					<path d={`M${ox},${oy - Hh - 14} L${ox},${oy} L${ox + W + 10},${oy}`} fill="none" stroke={INK} strokeWidth={4} strokeLinecap="round" />
 					<Sx x={ox} y={oy - Hh - 28} text="methanol in the gas" size={26} color={INK_SOFT} at={K1.at25} />
@@ -156,16 +167,21 @@ export const SceneDecision: React.FC = () => {
 						<Sx x={140} y={730} text="If it takes in heat, heat helps both." size={44} color={grey > 0.5 ? INK_SOFT : INK} hand at={KD.takes} />
 					</g>
 				</Fade>
-				{/* a thermometer split into cold and hot */}
-				<Fade at={KD.heat}>
-					<Snowflake x={1560} y={560} s={1.6} />
-					<Flame x={1740} y={560} s={1.5} />
-					<path d="M1630,560 L1670,560" stroke={INK} strokeWidth={5} strokeDasharray="4 8" />
-					<Sx x={1560} y={650} text="yield" size={36} color={COLD} anchor="middle" hand at={KD.heat} />
-					<Sx x={1740} y={650} text="speed" size={36} color={HEAT} anchor="middle" hand at={KD.heat} />
+				{/* Quality fix (6 Nov): the memory-aid graph, small, fills the card: yield falls and speed rises with temperature,
+				    drawn on "gives out heat" and "too slow when cold"; the crossing is marked on "compromises". */}
+				<Fade at={KD.fwd}>
+					<path d="M1390,470 L1390,736 L1800,736" fill="none" stroke={INK} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
+					<Snowflake x={1420} y={762} s={0.55} />
+					<Sx x={1595} y={772} text="temperature" size={28} color={INK_SOFT} anchor="middle" at={KD.fwd} />
+					<Flame x={1770} y={756} s={0.55} />
 				</Fade>
-				<Fade at={KD.both}>
-					<Sx x={1650} y={724} text="heat helps both" size={36} color={INK_SOFT} anchor="middle" hand at={KD.both} />
+				<DrawPath d="M1400,500 C1520,510 1650,640 1790,712" at={KD.heat} dur={26} color={COLD} width={7} />
+				<Sx x={1410} y={492} text="yield" size={38} color={COLD} hand at={KD.heat + 8} />
+				<DrawPath d="M1400,712 C1540,706 1660,620 1790,500" at={KD.cold} dur={26} color={HEAT} width={7} />
+				<Sx x={1790} y={492} text="speed" size={38} color={HEAT} anchor="end" hand at={KD.cold + 8} />
+				<Fade at={KD.comp}>
+					<circle cx={1596} cy={608} r={16} fill="#f5c542" stroke={AMBER_INK} strokeWidth={4} />
+					<path d="M1596,626 L1596,736" stroke={AMBER_INK} strokeWidth={4} strokeDasharray="10 8" />
 				</Fade>
 				<Fade at={KD.later}>
 					<rect x={118} y={822} width={16} height={46} rx={8} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={4} />
@@ -183,22 +199,24 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const rich = (text: string) => text.split(/(_\d)/).map((p, i) => p.startsWith('_') ? <sub key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{p.slice(1)}</sub> : <span key={i}>{p}</span>);
+// Quality fix (6 Nov): short one-line bullets replace six paragraphs.
 export const NOTES = [
-	'Equilibrium yield: how much of the reactants have become product once settled. The rate decides how soon. A plant needs both.',
-	'If the forward reaction gives out heat, cooling raises the yield but lowers both rates. Industry uses a moderate temperature and a catalyst (Haber: about 450 degrees Celsius, iron).',
+	'Yield: how much product the settled mixture holds. Rate: how soon it gets there.',
+	'Forward reaction gives out heat: cooling raises the yield but slows both rates.',
+	'So a middle temperature plus a catalyst (Haber: about 450 °C, iron).',
 	'A catalyst makes the mixture settle sooner. It does not change the settled mixture.',
-	'More pressure raises the yield (fewer gas particles) and the rate. Cost and safety limit it (Haber: about 200 atmospheres).',
-	'Condensing out the product and recycling the rest raises the overall conversion (Haber: above 95 percent).',
-	'To justify a condition: yield and why, rate and why, what limits it.',
+	'More pressure: higher yield (fewer gas particles) and faster. Cost and safety limit it (Haber: about 200 atm).',
+	'Condense the product out and recycle the rest (Haber: over 95% overall).',
+	'Justify a condition: yield and why, rate and why, what limits it.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 84}}><HandText text="Key notes: what to write in your book" at={2} size={64} cps={40} /></div>
 		<div style={{position: 'absolute', left: 120, top: 180, width: 1690}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={34 + i * 12} style={{display: 'flex', gap: 22, marginBottom: 18}}>
+				<Enter key={i} at={34 + i * 10} style={{display: 'flex', gap: 22, marginBottom: 14}}>
 					<div style={{flex: 'none', width: 16, height: 16, marginTop: 11, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 33, fontWeight: 500, color: INK, lineHeight: 1.25}}>{rich(n)}</div>
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.2}}>{rich(n)}</div>
 				</Enter>
 			))}
 		</div>
