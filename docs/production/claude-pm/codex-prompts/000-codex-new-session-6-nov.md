@@ -28,6 +28,6 @@ Hard rules: do not spawn sub-agents. Make no commits. Never print or log keys. R
 4. **199:** chem-m6-g03, chem-m7-c10, chem-m7-p05 and chem-m8-c01 render defects, plus the chem-m7-p06 check and the c10/c05 link record. g03 was already found in 196; reuse that work.
 5. **Quality re-render-and-replace briefs, in number order:** 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211. Each video's scene code is already fixed by Claude; you render v2, scan it, compare the sheet, do a playback check and replace it on YouTube.
 6. **Production reviews and plates:** 189, 190, 191, 192 and 193 (Year 12 Physics M6 to M8).
-7. Any new brief Claude adds after 211 or 213 (check the folder for higher numbers).
+7. Any new brief Claude adds after 211 or 213: 212 (re-render wave 4a) goes after 211; 214 (error check, light) can run alongside any render (check the folder for higher numbers).
 
 Hand in to `status.md` after each brief, as before.
