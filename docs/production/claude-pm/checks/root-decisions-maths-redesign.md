@@ -57,3 +57,22 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
 19. **Plates commissioned:** `ma12-coaster-track-v1` (painted to the 11-point rail guide), `ma12-coaster-car-v1`, `ma12-lighthouse-v1`, `ma12-lighthouse-islet-top-v1`, `ma12-beach-strip-top-v1` and `ma12-tower-block-v1`. Reused: `phys-y11-sun-v1`, `phys-y11-drone-side-v1`, `phys-y11-ground-strip-v1` and `phys-y11-car-top-v1`.
 20. **Re-voice lists:** d10 scenes 1 and 4; d11 scenes 1 and 2; d12 scenes 1 and 8; d13 scenes 1 and 3; d14 scenes 1 and 5.
 21. **Kit.** Generic parts join the studio kit: `CandidateValueTable`, a branch-safe rider, linked riders, `normalLine` and `QuarterTurnNormal`, name-swap chips, and an interval picture for question cards. The anchor simulations (`CoasterRide`, `BeamSweep`, `SunShadow`, `DroneTilt` and `HeadlightDrive`) are built in each lesson's own folder on top of `FunctionSimulator` and `RotatingPlate`.
+
+## d15 to d19 (wave 4, not yet voiced)
+
+22. **Anchors:**
+    - d15: a skateboard on skate tracks (smooth join, a corner jolt, a step);
+    - d16: a barrel vase filling at a steady rate (the inflection is at the widest part);
+    - d17: a new video's total views on a laptop (the busiest day is the inflection);
+    - d18: a sheep pen against a stone wall;
+    - d19: a car depreciating 15% a year. The site's $5000-at-6% growth example is kept in scene 3a.
+    The cars in d08, d14 and d19 carry different meanings, and d17's video views are distinct from d03's app users. Accepted.
+23. **d14 to d15 join.** d15 holds d14's blue frame for three sentences, then turns the curves to ink on "tracks". d14 is not edited. Accepted.
+24. **d15 voice files.** `math-a12-d15/lesson.json` and `voice-manifest.json` are from Revision 3; regenerate them before voicing.
+25. **Timing.** d15 (561 s) and d17 (565 s) are near the cap. If their voiced takes run long, apply the reserve trims in the order listed in each file.
+26. **Plates commissioned:**
+    - `ma12-skateboard-side-v1`;
+    - `ma12-barrel-vase-v1` (to its profile table, within 2% of the widest radius) and `ma12-kitchen-tap-v1`;
+    - `ma12-pen-wall-v1` (needed for d17's handoff and for d18), `ma12-stone-wall-top-v1` and `ma12-card-texture-v1`.
+    Reused: the Biology laptop, sheep and yellow car.
+27. **Kit additions (next kit pass):** `OneSidedSecants`, an animated zoom factor, a piecewise helper, a profile interior for `ContainerFill`, `MATH_CUP` and `MATH_CAP` with a concavity mode for `SignStrip`, `StackedDerivativePanels`, `ScreenChart`, `FencePen`, `BoxNetFold`, limit rows in the candidate table, and money and unit readouts.
