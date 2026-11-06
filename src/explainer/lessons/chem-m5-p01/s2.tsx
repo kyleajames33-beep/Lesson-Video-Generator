@@ -19,12 +19,15 @@ export const RES_X = 990;
 export const RESULT_ROWS = (ats: number[], lit?: ([number, number] | undefined)[]): TRow[] => [
 	{at: ats[0], cells: ['2', 'Fe(NO_3)_3 crystals', 'deeper red', 'right', 'reactant added'], colors: [INK, INK, '#a31f2a', '#1f6fb2', INK_SOFT], lit: lit?.[0]},
 	{at: ats[1], cells: ['3', 'KSCN crystals', 'deeper red', 'right', 'reactant added'], colors: [INK, INK, '#a31f2a', '#1f6fb2', INK_SOFT], lit: lit?.[1]},
-	{at: ats[2], cells: ['4', '0.1 mol/L NaOH, drops', ['paler, faint', 'rust-brown solid'], 'left', 'Fe^{3+} removed'], colors: [INK, INK, AMBER_INK, AMBER_INK, INK_SOFT], lit: lit?.[2]},
+	{at: ats[2], cells: ['4', ['0.1 mol/L NaOH,', 'drops'], ['paler, faint', 'rust-brown solid'], 'left', 'Fe^{3+} removed'], colors: [INK, INK, AMBER_INK, AMBER_INK, INK_SOFT], lit: lit?.[2]},
 	...(ats[3] !== undefined ? [{at: ats[3], cells: ['5', 'same drops of water', 'very slightly paler', ['slightly', 'left'], 'dilution'], colors: [TEAL, TEAL, TEAL, TEAL, TEAL], lit: lit?.[3]} as TRow] : []),
 ];
-export const ResultsTable: React.FC<{y: number; ats: number[]; at: number; lit?: ([number, number] | undefined)[]}> = ({y, ats, at, lit}) => (
-	<Table x={RES_X} y={y} cols={[50, 260, 215, 112, 189]} head={['', 'added', 'colour vs tube 1', 'shift', 'reason']} rows={RESULT_ROWS(ats, lit)} at={at} rowH={62} size={24} headSize={28} />
-);
+/** Quality fix (6 Nov): 26 px text (was 24). With `plan`, the tube and "added" cells of the first three rows are on the
+ *  table from `plan` (the planned changes) and the result cells write on at `ats`. */
+export const ResultsTable: React.FC<{y: number; ats: number[]; at: number; lit?: ([number, number] | undefined)[]; plan?: number}> = ({y, ats, at, lit, plan}) => {
+	const rows = RESULT_ROWS(ats, lit).map((r, j) => (plan !== undefined && j < 3 ? {...r, at: plan + j * 8, cellAt: [undefined, undefined, ats[j], ats[j], ats[j]]} : r));
+	return <Table x={RES_X} y={y} cols={[54, 282, 233, 121, 205]} head={['', 'added', 'colour vs tube 1', 'shift', 'reason']} rows={rows} at={at} rowH={62} size={26} headSize={30} />;
+};
 const EQ = {x: RES_X, y: 250, s: 42};
 
 // ---------- 5. The disturbance set-up ----------
@@ -154,20 +157,20 @@ export const SceneExpected: React.FC = () => {
 				<EqStrip items={IRON_EQ} x={EQ.x} y={EQ.y} size={EQ.s} at={K7.here} />
 				<ShiftArrow x={EQ.x + 380} y={300} dir="right" at={K7.right} out={K7.naoh} />
 				<ShiftArrow x={EQ.x + 380} y={300} dir="left" at={K7.left} />
-				<ResultsTable y={390} at={K7.here + 10} ats={[K7.deep + 10, K7.deep + 20, K7.fades + 6]} />
-				<Sx x={RES_X} y={680} text="tube 2: the added iron also adds a little yellow-brown tint" size={24} color={INK_SOFT} weight={600} at={K7.deep + 30} />
+				<ResultsTable y={390} at={0} plan={8} ats={[K7.deep + 10, K7.deep + 20, K7.fades + 6]} lit={[[K7.two, K7.three], [K7.three, K7.adding], [K7.naoh, K7.removes]]} />
+				<Sx x={RES_X} y={680} text="tube 2: the added iron also adds a little yellow-brown tint" size={28} color={INK_SOFT} weight={600} at={K7.deep + 30} />
 				{/* crystals into tubes 2 and 3 */}
 				<Drops x={c2x} y0={c2y - 80} y1={ly} at={K7.two} n={2} every={8} kind="crystal" color="#cdb6d6" r={8} />
 				<Drops x={c3x} y0={c2y - 80} y1={ly} at={K7.three} n={2} every={8} kind="crystal" color="#f4f2ee" r={8} />
-				<Sx x={c2x} y={ROW.y + ROW.h + 90} text="Fe(NO_3)_3" size={24} anchor="middle" weight={700} at={K7.two} />
-				<Sx x={c3x} y={ROW.y + ROW.h + 90} text="KSCN" size={24} anchor="middle" weight={700} at={K7.three} />
-				<Sx x={(c2x + c3x) / 2} y={ROW.y + ROW.h + 122} text="crystals" size={24} anchor="middle" weight={600} at={K7.three} />
+				<Sx x={c2x} y={ROW.y + ROW.h + 90} text="Fe(NO_3)_3" size={28} anchor="middle" weight={700} at={K7.two} />
+				<Sx x={c3x} y={ROW.y + ROW.h + 90} text="KSCN" size={28} anchor="middle" weight={700} at={K7.three} />
+				<Sx x={(c2x + c3x) / 2} y={ROW.y + ROW.h + 122} text="crystals" size={28} anchor="middle" weight={600} at={K7.three} />
 				<Sx x={(c2x + c3x) / 2} y={ROW.y - 24} text="deeper red" size={36} color="#a31f2a" anchor="middle" hand at={K7.deep + 6} />
 				{/* NaOH drop by drop into tube 4 */}
 				<TubeDropper g={ROW} i={3} at={K7.naoh} out={K7.rust + 30} />
 				<Drops x={c4x} y0={c2y - 20} y1={ly} at={K7.four} n={5} every={12} />
-				<Sx x={c4x} y={ROW.y + ROW.h + 90} text="NaOH" size={24} anchor="middle" weight={700} at={K7.four} />
-				<Sx x={c4x} y={ROW.y + ROW.h + 122} text="0.1 mol/L" size={24} anchor="middle" weight={600} at={K7.four} />
+				<Sx x={c4x} y={ROW.y + ROW.h + 90} text="NaOH" size={28} anchor="middle" weight={700} at={K7.four} />
+				<Sx x={c4x} y={ROW.y + ROW.h + 122} text="0.1 mol/L" size={28} anchor="middle" weight={600} at={K7.four} />
 				<Arrow x1={720} y1={925} x2={c4x + 40} y2={ROW.y + ROW.h * 0.84} at={K7.rust + 10} color={AMBER_INK} width={4} />
 				<Sx x={560} y={970} text="Fe^{3+} removed as Fe(OH)_3(s)" size={38} color={AMBER_INK} hand at={K7.rust + 14} />
 				{/* why, in a clause each (taught in the shift video) */}

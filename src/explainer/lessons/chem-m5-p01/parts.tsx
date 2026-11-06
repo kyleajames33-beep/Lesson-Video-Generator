@@ -310,7 +310,7 @@ export const Card: React.FC<{x: number; y: number; w: number; h: number; at: num
 	</Fade>
 );
 export type Cell = string | string[];
-export type TRow = {at: number; cells: Cell[]; colors?: (string | undefined)[]; icon?: React.ReactNode; lit?: [number, number]};
+export type TRow = {at: number; cells: Cell[]; colors?: (string | undefined)[]; icon?: React.ReactNode; lit?: [number, number]; cellAt?: (number | undefined)[]};
 /** A coded table: header, then rows that write on at their cues. Cells may be several lines. */
 export const Table: React.FC<{x: number; y: number; cols: number[]; head: string[]; rows: TRow[]; at: number; out?: number; rowH?: number; size?: number; headSize?: number; headColors?: string[]; iconW?: number}> = ({x, y, cols, head, rows, at, out, rowH = 60, size = 28, headSize = 30, headColors = [], iconW = 0}) => {
 	const f = useCurrentFrame();
@@ -336,7 +336,11 @@ export const Table: React.FC<{x: number; y: number; cols: number[]; head: string
 							const lines = Array.isArray(c) ? c : [c];
 							const lh = size * 1.18;
 							const top = ry + rowH / 2 - ((lines.length - 1) * lh) / 2 + size * 0.34;
-							return lines.map((ln, k) => <Sx key={i + '-' + k} x={xs[i] + 16 + (i === 0 ? iconW : 0)} y={top + k * lh} text={ln} size={size} color={r.colors?.[i] ?? INK} weight={i === 0 ? 700 : 600} at={-100} />);
+							// optional per-cell cue (quality fix, 6 Nov): a cell with its own time writes on after its row; rows without cellAt are unchanged
+							const ca = r.cellAt?.[i];
+							const co = ca === undefined ? 1 : prog(f, ca, 12);
+							if (co <= 0.01) return null;
+							return <g key={i} opacity={co}>{lines.map((ln, k) => <Sx key={i + '-' + k} x={xs[i] + 16 + (i === 0 ? iconW : 0)} y={top + k * lh} text={ln} size={size} color={r.colors?.[i] ?? INK} weight={i === 0 ? 700 : 600} at={-100} />)}</g>;
 						})}
 					</g>
 				);

@@ -160,18 +160,20 @@ export const SceneDecision: React.FC = () => {
 		<>
 			<Heading text="Planning an equilibrium investigation" at={4} size={60} />
 			<Overlay>
-				<Fade at={K17.plan}><rect x={96} y={200} width={1180} height={560} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
+				<Fade at={0}><rect x={96} y={200} width={1180} height={560} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
+				{/* quality fix: the seven steps sit faintly on the board from the start, then write in on their cues */}
 				{lines.map((l, i) => {
 					const g = glow(l.at, lines[i + 1]?.at ?? K17.next);
 					return (
 						<g key={i}>
 							{g > 0.01 ? <rect x={110} y={232 + i * 74} width={1150} height={62} rx={12} fill="#f6d77a" opacity={0.35 * g} /> : null}
+							<g opacity={0.22}><Sx x={130} y={276 + i * 74} text={l.t} size={44} color={INK} hand at={-1000} /></g>
 							<Sx x={130} y={276 + i * 74} text={l.t} size={44} color={INK} hand at={l.at} />
 						</g>
 					);
 				})}
-				<PushLoop x={1340} y={300} w={480} at={K17.push} changeAt={K17.push} backAt={K17.back} s={0.55} labels={false} tickAt={K17.back + 8} />
-				<TubeRow g={ROW17} at={K17.ref - 10} numSize={24} tilePulse={K17.judge} tubes={[{pulse: K17.ref}, {pulse: K17.one}, {pulse: K17.one + 4}, {pulse: K17.one + 8}, {s: {dil: 1}, pulse: K17.dil}, {pulse: K17.one + 12}]} />
+				<PushLoop x={1340} y={300} w={480} at={0} changeAt={K17.push} backAt={K17.back} s={0.55} labels={false} tickAt={K17.back + 8} />
+				<TubeRow g={ROW17} at={6} numSize={30} tilePulse={K17.judge} tubes={[{pulse: K17.ref}, {pulse: K17.one}, {pulse: K17.one + 4}, {pulse: K17.one + 8}, {s: {dil: 1}, pulse: K17.dil}, {pulse: K17.one + 12}]} />
 				<Chip x={96} y={860} w={900} h={66} text="Next: a number for where an equilibrium sits" size={38} color={TEAL} at={K17.next + 6} />
 				<Fade at={K17.number}><ITube x={1040} y={790} h={220} /></Fade>
 				{void rowC}
@@ -181,15 +183,18 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 18. Key notes ----------
+// quality fix: short one-line bullets instead of six paragraphs; the memory aids are unchanged
 const NOTES = [
-	'Reversibility test: change the conditions, then reverse the change. A return to the start is the evidence; one change is not. Cobalt chloride crystals: heat, pink to blue (water driven off); add water, blue to pink (warms). Burning magnesium: no school condition brings magnesium back, so it is treated as irreversible.',
-	'An equilibrium investigation keeps every reacting substance in: dissolved ions stay in solution (an open tube only loses a little water); a gas needs a sealed tube or syringe. State what is sealed. The heated open crystal tube shows reversibility, not an equilibrium.',
-	'Disturbance method: pale Fe^{3+}/SCN^{-} stock in six identical tubes; tube 1 is the untouched reference; one change per tube; judge side by side on a white tile. Independent variable: what is added, or temperature. Dependent: colour compared with tube 1. Controlled: stock volume, tube size, background and lighting, time before judging.',
-	'Expected: + Fe^{3+} or + SCN^{-} (as solids): deeper red (shift right). + NaOH: paler, rust-brown Fe(OH)_3 (Fe^{3+} removed, shift left). Dilution control (same drops of water): only slightly paler, so tube 4\'s fading is a real shift. Cobalt solution (stoppered): hot blue, ice pink, room purple again. Sealed NO_2: hot browner, ice paler.',
-	'Validity: tests what it claims (one change, reference, dilution control). Reliability: repeats agree (repeat tubes, other groups, two observers). Accuracy: close to the true value (eye judgement is rough; a colourimeter gives numbers).',
-	'Risks: cobalt chloride harmful if swallowed, may cause cancer if dust inhaled, allergies (small amounts, no dust, gloves); thiocyanate plus acid releases a very toxic gas (never mix); NaOH harms eyes (glasses); hot bath scalds (holder); burning magnesium (never look at the flame); waste into the labelled residues container.',
+	'Reversible: change the conditions, then reverse the change. A return is the evidence.',
+	'An equilibrium needs a closed system: nothing that reacts can escape.',
+	'Six identical tubes of pale Fe^{3+}/SCN^{-} stock; tube 1 is the untouched reference.',
+	'One change per tube; judge colour side by side on a white tile.',
+	'Add Fe^{3+} or SCN^{-}: deeper red (right). Add NaOH: paler (left).',
+	'Dilution control: same drops of water, so the fading is a real shift.',
+	'Valid: tests what it claims. Reliable: repeats agree. Accurate: near the true value.',
+	'Risks first: cobalt chloride (gloves, no dust); never mix thiocyanate with acid.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={26} aidTop={818} aids={['Push it, then bring it back.', 'Pink in the rain, blue in the desert.']} tag="a return is the evidence; compare with the reference; control the dilution" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={780} aids={['Push it, then bring it back.', 'Pink in the rain, blue in the desert.']} tag="a return is the evidence; compare with the reference; control the dilution" />
 );
 void RefTag; void AMBER_INK;

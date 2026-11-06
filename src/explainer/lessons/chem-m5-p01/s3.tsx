@@ -58,8 +58,8 @@ export const SceneTemperature: React.FC = () => {
 				<Sx x={1530 + no2w / 2} y={720} text="hot: browner" size={28} color="#7a4416" anchor="middle" hand at={K9.purple + 36} />
 				<Sx x={1680 + no2w / 2} y={760} text="ice: paler" size={28} color={INK_SOFT} anchor="middle" hand at={K9.purple + 40} />
 				<Sx x={1530} y={330} text="sealed NO_2 tube" size={28} color={INK_SOFT} hand at={K9.purple + 30} />
-				<Sx x={720} y={1000} text="volume and pressure: sealed NO_2 syringe, usually a teacher demonstration (see the squeezing video)" size={24} color={INK_SOFT} weight={600} at={K9.purple + 44} />
-				<Sx x={720} y={1036} text="keep the cobalt solution (made with concentrated HCl) well away from thiocyanate" size={24} color={HAZ} weight={600} at={K9.purple + 50} />
+				<Sx x={720} y={1000} text="volume and pressure: sealed NO_2 syringe, a teacher demo (see the squeezing video)" size={26} color={INK_SOFT} weight={600} at={K9.purple + 44} />
+				<Sx x={720} y={1036} text="keep the cobalt solution (made with concentrated HCl) away from thiocyanate" size={26} color={HAZ} weight={600} at={K9.purple + 50} />
 				{void K9.temp}{void K9.chloride}{void K9.escape}{void K9.room}
 			</Overlay>
 		</>
@@ -128,7 +128,8 @@ export const SceneRisk: React.FC = () => {
 		const k = Math.min(1, (iconBox - 16) / w);
 		return <PicH p={p} x={RT.x + 10 + (iconBox - w * k) / 2} y={ry(j) + (RT.rowH - h * k) / 2} h={h * k} />;
 	};
-	const rows: TRow[] = [
+	// quality fix: the six hazards (icon and name) are listed when "each hazard" is said; harm and control write on as each is narrated, and the row being narrated glows
+	const raw: TRow[] = [
 		{at: K11.cobalt, cells: ['cobalt chloride', ['harmful if swallowed; may cause cancer', 'if dust is inhaled; skin and breathing allergies'], ['small amounts, no dust, gloves;', 'teacher demo in many schools']], colors: [HAZ, INK, GREEN], icon: icon(0, ic(CRYS.pink, 0, 92))},
 		{at: K11.thio, cells: ['thiocyanate', 'with acid, releases a very toxic gas', ['never mix with acid;', 'keep the cobalt solution apart']], colors: [HAZ, INK, GREEN], icon: icon(1, ic(BOTTLE_SCN, 1, 88))},
 		{at: K11.naoh, cells: ['sodium hydroxide', 'can irritate eyes', 'wear safety glasses'], colors: [HAZ, INK, GREEN], icon: icon(2, ic(DROPPER, 2, 92))},
@@ -136,6 +137,7 @@ export const SceneRisk: React.FC = () => {
 		{at: K11.mg, cells: ['burning magnesium', 'intense light; fire', ['never look at the flame; heatproof mat;', 'teacher demo; never water on a Mg fire']], colors: [HAZ, INK, GREEN], icon: icon(4, ic(MG.ribbon, 4, 70))},
 		{at: K11.waste, cells: ['waste', 'cobalt is toxic to water life', 'labelled residues container, never the sink'], colors: [HAZ, INK, GREEN], icon: icon(5, ic(WASTE, 5, 88))},
 	];
+	const rows: TRow[] = raw.map((r, j) => ({...r, at: K11.each + 6 + j * 8, cellAt: [undefined, r.at, r.at + 14], lit: [r.at, raw[j + 1]?.at ?? K11.sink + 20]}));
 	return (
 		<>
 			<Heading text="The risk assessment" at={4} size={62} />

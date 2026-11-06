@@ -4,30 +4,36 @@ import {AMBER_INK, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
 import {AN_INK, CAT_INK, Heading, PPT_Y_INK, sc} from './common';
 import {AGCL, PBI2} from './assets';
-import {Arrow, ArcLink, Chip, EqLine, Fade, Ion, LineLabel, MistakeChip, Overlay, PicH, Pieces, RulesMini, Sx, SwapCross, TEAL, eCentre, eWidth, fitSize} from './parts';
+import {Arrow, ArcLink, Bottle, Chip, EqLine, Fade, Ion, LineLabel, MistakeChip, Overlay, PicH, Pieces, RulesMini, Sx, SwapCross, TEAL, eCentre, eWidth, fitSize} from './parts';
 import type {EItem, Pair} from './parts';
 
 export const SX = {x: 320, xr: 850, y1: 340, y2: 520, size: 44};
-export const RM = {x: 1290, y: 240, size: 22};
+export const RM = {x: 1250, y: 240, size: 26};
 export const WHITE_INK = '#5b626b';
 const c = (items: EItem[], i: number, size: number, x: number, y: number) => eCentre(items, i, size, x, y);
 
 // ---------- 6. The method: swap partners, check both ----------
 const SM = 'swap-method';
 const K6 = cues(sc(SM), {method: "here's the method", list: 'List the four ions', swap: 'swap partners', each: 'each positive ion', two: 'two possible products', check: 'check both', insol: 'If one is insoluble', both: 'If both are soluble', nothing: 'nothing forms'});
+// quality fix: a larger cross with the two solutions as large painted bottles; the rules card (26 px) is on screen throughout
+const SW = {x: 300, xr: 830, y1: 430, y2: 790, size: 62, bh: 350};
 export const SceneSwapMethod: React.FC = () => (
 	<>
 		<Heading text="The method: swap partners, check both" at={4} size={56} />
 		<Overlay>
-			<SwapCross x={SX.x} xr={SX.xr} y1={SX.y1} y2={SX.y2} size={SX.size} left={[['A^{+}', 'B^{-}'], ['C^{+}', 'D^{-}']]} leftAt={[K6.list, K6.list + 10]} swap={K6.swap} resAt={[K6.each, K6.each + 14]}
-				verdicts={[{kind: 'ppt', at: K6.insol, label: 'insoluble: the precipitate'}, {kind: 'ok', at: K6.check + 20, label: 'soluble: stays dissolved'}]} />
-			<Sx x={SX.x} y={250} text="each positive ion pairs with the other solution's negative ion" size={34} color={CAT_INK} hand at={K6.each} />
-			<Sx x={SX.x} y={300 - 34 + 400 - 60} text="list the four ions" size={34} color={INK_SOFT} hand at={K6.list} />
-			<Sx x={SX.xr} y={650} text="two possible products" size={36} color={INK_SOFT} hand at={K6.two} />
-			<RulesMini x={RM.x} y={RM.y} size={RM.size} at={K6.check} />
-			<Sx x={SX.x} y={760} text="one insoluble: that's the precipitate" size={40} color={AMBER_INK} hand at={K6.insol} />
-			<Sx x={SX.x} y={820} text="both soluble: nothing forms" size={40} color={TEAL} hand at={K6.both} />
-			<MistakeChip x={SX.x} y={880} text="checked one product only" size={32} at={K6.check + 24} note="check both" />
+			<Bottle x={96} y={SW.y1 - 200} h={SW.bh} formula="AB(aq)" at={0} />
+			<Bottle x={96} y={SW.y2 - 200} h={SW.bh} formula="CD(aq)" at={6} />
+			<SwapCross x={SW.x} xr={SW.xr} y1={SW.y1} y2={SW.y2} size={SW.size} left={[['A^{+}', 'B^{-}'], ['C^{+}', 'D^{-}']]} leftAt={[2, 8]} swap={K6.swap} resAt={[K6.each, K6.each + 14]}
+				verdicts={[{kind: 'ppt', at: K6.insol, label: 'insoluble: precipitate'}, {kind: 'ok', at: K6.check + 20, label: 'soluble: dissolved'}]} />
+			<Sx x={SW.x} y={250} text="each positive ion pairs with the other solution's negative ion" size={36} color={CAT_INK} hand at={K6.each} />
+			<Sx x={SW.x} y={SW.y1 - 82} text="list the four ions" size={38} color={INK_SOFT} hand at={K6.list} />
+			<Sx x={SW.xr} y={SW.y1 - 82} text="two possible products" size={38} color={INK_SOFT} hand at={K6.two} />
+			<Sx x={SW.x + 110} y={SW.y1 + 150} text="solution 1" size={32} color={INK_SOFT} hand at={10} />
+			<Sx x={SW.x + 110} y={SW.y2 + 150} text="solution 2" size={32} color={INK_SOFT} hand at={14} />
+			<RulesMini x={RM.x} y={RM.y} size={RM.size} at={0} />
+			<Sx x={RM.x} y={700} text="one insoluble: that's the precipitate" size={40} color={AMBER_INK} hand at={K6.insol} />
+			<Sx x={RM.x} y={760} text="both soluble: nothing forms" size={40} color={TEAL} hand at={K6.both} />
+			<MistakeChip x={RM.x} y={800} text="checked one product only" size={32} at={K6.check + 24} note="check both" />
 			{void K6.method}{void K6.nothing}
 		</Overlay>
 	</>

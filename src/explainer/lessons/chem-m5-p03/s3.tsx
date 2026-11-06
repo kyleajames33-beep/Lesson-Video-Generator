@@ -70,13 +70,15 @@ export const SceneRisk: React.FC = () => {
 		const h = 92, w = dbW(h);
 		return <DBottle x={RT.x + 10 + (iconW - w) / 2} y={ry(j) + (RT.rowH - h) / 2} h={h} at={-100} band={band} />;
 	};
-	const rows: TRow[] = [
+	const raw: TRow[] = [
 		{at: K10.lead, cells: ['lead nitrate', ['toxic; builds up in the body;', 'may harm an unborn baby; eye damage'], ['drops only, gloves, glasses, wash hands;', 'follow school rules (some use a teacher', 'demo or supplied results)']], colors: [HAZ, INK, GREEN], icon: bottle(0, '#e2a63b')},
 		{at: K10.silver, cells: ['silver nitrate', 'stains skin; damages eyes', 'gloves, glasses'], colors: [HAZ, INK, GREEN], icon: bottle(1, '#e2a63b')},
 		{at: K10.barium, cells: ['barium nitrate', 'harmful if swallowed', 'never pipette by mouth; wash hands'], colors: [HAZ, INK, GREEN], icon: bottle(2, '#e2a63b')},
 		{at: K10.naoh, cells: [['sodium hydroxide', '(and carbonate)'], 'eye damage or irritation', 'safety glasses'], colors: [HAZ, INK, GREEN], icon: bottle(3, '#8a5cc2')},
 		{at: K10.waste, cells: ['Pb, Ag, Ba waste', 'heavy metals harm water life', ['labelled heavy-metal waste container,', 'never the sink']], colors: [HAZ, INK, GREEN], icon: <PicH key="w" p={WASTE} x={RT.x + 30} y={ry(4) + 10} h={92} />},
 	];
+	// quality fix: the five hazards (icon and name) are listed with the table; harm and control write on as each is narrated, and the row being narrated glows
+	const rows: TRow[] = raw.map((r, j) => ({...r, at: K10.risk + 6 + j * 8, cellAt: [undefined, r.at, r.at + 14], lit: [r.at, raw[j + 1]?.at ?? K10.itself]}));
 	const sinkX = 1700, sinkY = ry(4) + 30;
 	const pk = 0.13;
 	return (

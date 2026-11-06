@@ -35,7 +35,7 @@ export const SceneExpected: React.FC = () => {
 			<Overlay>
 				<Plate0 />
 				<Fills g={G} cells={matrixCells(at)} />
-				<RulesMini x={RZ} y={210} size={24} at={K5.nagsag} hi={[
+				<RulesMini x={RZ} y={210} size={26} at={K5.nagsag} hi={[
 					{id: 'G', at: K5.sodium, out: K5.carbonate}, {id: 'Ins', at: K5.carbonate, out: K5.silver},
 					{id: 'Hal', at: K5.silver, out: K5.bariumS}, {id: 'S', at: K5.bariumS, out: K5.hydroxide}, {id: 'Ins', at: K5.hydroxide},
 				]} />
@@ -45,7 +45,7 @@ export const SceneExpected: React.FC = () => {
 				<Sx x={RZ + 60 + pw / 2} y={910} text="AgCl(s), white" size={28} anchor="middle" weight={700} at={K5.agcl} />
 				<Fade at={K5.lead}><Pic p={PBI2} x={RZ + 340} y={620} h={250} /></Fade>
 				<Sx x={RZ + 340 + pw / 2} y={910} text="PbI_2(s), bright yellow" size={28} color={PPT_Y_INK} anchor="middle" weight={700} at={K5.lead} />
-				<Sx x={300} y={900} text="PbCl_2, CaSO_4, Ag_2SO_4: slightly soluble, still solid here" size={24} color={INK_SOFT} weight={600} at={K5.calcium + 30} />
+				<Sx x={300} y={900} text="PbCl_2, CaSO_4, Ag_2SO_4: slightly soluble, still solid here" size={26} color={INK_SOFT} weight={600} at={K5.calcium + 30} />
 				<Chip x={300} y={930} w={800} h={58} text="expected at 0.1 mol/L; your results are the test" size={32} color={TEAL} at={K5.barium + 10} />
 				{void K5.here}
 			</Overlay>
@@ -177,14 +177,16 @@ export const SceneLiquid: React.FC = () => {
 	const tw = picW(PBI2, TB.h);
 	const pk = 240 / PIPETTE.box[3];
 	const tip: [number, number] = [TB.x + tw / 2 + 4, TB.y + TB.h * 0.27];
-	const A = {x: 820, y: 660}, Bw = {x: 1180, y: 660};
+	const A = {x: 740, y: 660}, Bw = {x: 1250, y: 660}; // quality fix: wells spaced so the two result notes no longer overlap
 	const bh = 210, bw = dbW(bh);
 	return (
 		<>
 			<Heading text="What's left in the mixture? Test the liquid." at={4} size={58} />
 			<Overlay>
 				<OneWayLine x={600} y={250} left="Pb^{2+}(aq) + 2I^{-}(aq)" right="PbI_2(s)" size={42} at={K8.mix} />
-				<Fade at={K8.mix - 6}><Pic p={PBI2} x={TB.x} y={TB.y} h={TB.h} /></Fade>
+				{/* quality fix: the settled tube, the two clean test wells and both reagent bottles are on the bench with the title */}
+				<Fade at={0}><Pic p={PBI2} x={TB.x} y={TB.y} h={TB.h} /></Fade>
+				<Sx x={TB.x + tw + 16} y={TB.y + TB.h * 0.2} text="what is still dissolved here?" size={34} color={AMBER_INK} hand at={K8.syllabus + 30} out={K8.take - 6} />
 				<Sx x={TB.x + tw / 2} y={TB.y + TB.h + 44} text="Pb(NO_3)_2 + KI, settled" size={28} anchor="middle" weight={700} at={K8.settle} />
 				<Sx x={TB.x + tw + 16} y={TB.y + TB.h * 0.2} text="clear liquid" size={30} color="#2f6f9e" hand at={K8.take} />
 				<Fade at={K8.take} out={K8.addKI + 40}>
@@ -195,18 +197,18 @@ export const SceneLiquid: React.FC = () => {
 				{/* into two clean test wells */}
 				<Arrow x1={TB.x + tw + 30} y1={TB.y + TB.h * 0.38} x2={A.x - 80} y2={A.y - 30} at={K8.take + 20} color="#2f6f9e" width={4} />
 				<Arrow x1={TB.x + tw + 30} y1={TB.y + TB.h * 0.34} x2={Bw.x - 100} y2={Bw.y - 96} at={K8.take + 26} color="#2f6f9e" width={4} />
-				<BigWell cx={A.x} cy={A.y} r={70} kind="yellow" p={prog(f, K8.more, 30)} at={K8.take + 20} label="test A" />
-				<g opacity={1 - 0.4 * prog(f, K8.iodide, 12)}><BigWell cx={Bw.x} cy={Bw.y} r={70} kind="yellow" p={prog(f, K8.iodide, 30)} at={K8.take + 26} label="test B" /></g>
+				<BigWell cx={A.x} cy={A.y} r={70} kind="yellow" p={prog(f, K8.more, 30)} at={6} label="test A" />
+				<g opacity={1 - 0.4 * prog(f, K8.iodide, 12)}><BigWell cx={Bw.x} cy={Bw.y} r={70} kind="yellow" p={prog(f, K8.iodide, 30)} at={12} label="test B" /></g>
 				<Fade at={K8.iodide}><rect x={Bw.x - 112} y={Bw.y - 112} width={224} height={224} rx={26} fill="none" stroke="#6a3fa3" strokeWidth={3} strokeDasharray="10 8" /></Fade>
-				<DBottle x={A.x - bw / 2} y={A.y - 370} h={bh} formula="KI" at={K8.addKI - 6} out={K8.addPb} band="#8a5cc2" />
+				<DBottle x={A.x - bw / 2} y={A.y - 370} h={bh} formula="KI" at={18} out={K8.addPb} band="#8a5cc2" />
 				<Drop x={A.x} y0={A.y - 140} y1={A.y} at={K8.addKI + 6} />
-				<DBottle x={Bw.x - bw / 2} y={Bw.y - 370} h={bh} formula="Pb(NO_3)_2" at={K8.addPb - 6} band="#e2a63b" />
+				<DBottle x={Bw.x - bw / 2} y={Bw.y - 370} h={bh} formula="Pb(NO_3)_2" at={24} band="#e2a63b" />
 				<Drop x={Bw.x} y0={Bw.y - 140} y1={Bw.y} at={K8.addPb + 6} />
 				<Sx x={A.x - 130} y={A.y + 176} text="much more PbI_2: plenty of Pb^{2+} left," size={28} color={CAT_INK} weight={700} at={K8.lead} />
 				<Sx x={A.x - 130} y={A.y + 212} text="so Pb(NO_3)_2 in excess" size={28} color={CAT_INK} weight={700} at={K8.excess} />
 				<Sx x={Bw.x - 60} y={Bw.y + 176} text="or much more here: I^{-} left over," size={28} color="#6a3fa3" weight={700} at={K8.iodide} />
 				<Sx x={Bw.x - 60} y={Bw.y + 212} text="so KI in excess" size={28} color="#6a3fa3" weight={700} at={K8.iodide + 6} />
-				<Chip x={1300} y={420} w={560} h={56} text="faint in both: neither in big excess" size={28} color={TEAL} at={K8.iodide + 20} />
+				<Chip x={1350} y={420} w={520} h={56} text="faint in both: neither in big excess" size={28} color={TEAL} at={K8.iodide + 20} />
 				<Card x={1380} y={510} w={440} h={210} at={K8.spect} stroke={TEAL} />
 				<Sx x={1404} y={560} text="dissolved:" size={32} color={TEAL} hand at={K8.spect} />
 				<Sx x={1404} y={610} text="K^{+}, NO_3^{-} (spectators)" size={28} color={INK} weight={700} at={K8.spect + 6} />

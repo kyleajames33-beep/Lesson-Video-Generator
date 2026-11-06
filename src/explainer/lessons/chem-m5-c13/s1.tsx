@@ -166,11 +166,18 @@ export const SceneRulesOrigin: React.FC = () => {
 		<>
 			<Heading text="Where the rules come from" at={4} size={58} />
 			<Overlay>
-				<Fade at={K4.mixed - 10}><PicH p={NOPPT} x={110} y={330} h={300} /></Fade>
-				<Fade at={K4.mixed}><PicH p={AGCL} x={300} y={330} h={300} /></Fade>
-				<Sx x={110} y={690} text="mix pairs, look for a solid" size={32} color={INK_SOFT} hand at={K4.mixed + 6} />
-				{ANS.map((a, j) => <Sx key={a} x={G4.x + j * G4.c + G4.c / 2} y={G4.y - 22} text={a} size={30} color={AN_INK} anchor="middle" weight={800} at={K4.mixed - 6} />)}
-				{CATS.map((c, i) => <Sx key={c} x={G4.x - 18} y={G4.y + i * G4.c + G4.c / 2 + 10} text={c} size={30} color={CAT_INK} anchor="end" weight={800} at={K4.mixed - 6} />)}
+				{/* quality fix: the bottles, tubes and the empty results grid are on stage from the first frame */}
+				<Bottle x={110} y={210} h={270} formula="AgNO_3(aq)" at={0} />
+				<Bottle x={300} y={210} h={270} formula="NaCl(aq)" at={4} />
+				<Sx x={110 + BOTTLE_W(270) / 2} y={518} text="silver nitrate" size={28} color={INK} anchor="middle" hand at={0} />
+				<Sx x={300 + BOTTLE_W(270) / 2} y={518} text="sodium chloride" size={28} color={INK} anchor="middle" hand at={4} />
+				<Sx x={96} y={580} text="which pair locks together?" size={38} color={AMBER_INK} hand at={K4.how} />
+				<Fade at={0}><PicH p={NOPPT} x={110} y={610} h={300} /></Fade>
+				<Fade at={6}><PicH p={AGCL} x={300} y={610} h={300} /></Fade>
+				<Sx x={110} y={965} text="mix pairs, look for a solid" size={34} color={INK_SOFT} hand at={K4.mixed + 6} />
+				{ANS.map((a, j) => <Sx key={a} x={G4.x + j * G4.c + G4.c / 2} y={G4.y - 22} text={a} size={30} color={AN_INK} anchor="middle" weight={800} at={2} />)}
+				{CATS.map((c, i) => <Sx key={c} x={G4.x - 18} y={G4.y + i * G4.c + G4.c / 2 + 10} text={c} size={30} color={CAT_INK} anchor="end" weight={800} at={2} />)}
+				<Fade at={0}>{GRID.map((row, i) => row.map((_, j) => <circle key={`w${i}-${j}`} cx={G4.x + j * G4.c + G4.c / 2} cy={G4.y + i * G4.c + G4.c / 2} r={44} fill="#e4eef5" stroke={INK_SOFT} strokeWidth={3} />))}</Fade>
 				{GRID.map((row, i) => row.map((cell, j) => {
 					const at = K4.mixed + (i * 5 + j) * 5;
 					const p = prog(f, at, 10);
@@ -178,7 +185,6 @@ export const SceneRulesOrigin: React.FC = () => {
 					const cx = G4.x + j * G4.c + G4.c / 2, cy = G4.y + i * G4.c + G4.c / 2;
 					return (
 						<g key={`${i}-${j}`} opacity={p}>
-							<circle cx={cx} cy={cy} r={44} fill="#e4eef5" stroke={INK_SOFT} strokeWidth={3} />
 							{cell === 'slight' ? [[-10, -6], [10, -4], [0, 10]].map(([dx, dy], k) => <circle key={k} cx={cx + dx} cy={cy + dy} r={14} fill="#ffffff" opacity={0.75} />) : null}
 							{cell !== 'clear' && cell !== 'slight' ? <circle cx={cx} cy={cy} r={28 * p} fill={cell} stroke={INK} strokeWidth={2.5} /> : null}
 						</g>
@@ -195,7 +201,7 @@ export const SceneRulesOrigin: React.FC = () => {
 				</Fade>
 				<Chip x={660} y={948} w={760} text="Practical video: find the rules by experiment" size={34} color={TEAL} at={K4.practical} />
 				<Chip x={1440} y={948} w={150} text="later" size={34} color={AMBER_INK} at={K4.practical + 10} />
-				{void K4.how}{void K4.recorded}{void K4.yourself}{void DrawPath}
+				{void K4.recorded}{void K4.yourself}{void DrawPath}
 			</Overlay>
 		</>
 	);

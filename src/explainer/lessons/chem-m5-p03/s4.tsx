@@ -87,7 +87,7 @@ const Strip: React.FC<{x: number; y: number; label: string; kinds: WellKind[]; a
 			})}
 			<Ring cx={x + 235} cy={y + 60} rx={58} ry={58} at={ringAt} color={AMBER} seed={5} />
 			<Sx x={x} y={y - 20} text={label} size={32} color={INK} hand at={at} />
-			{['Cl^{-}', 'I^{-}', 'SO_4^{2-}', 'CO_3^{2-}', 'OH^{-}'].map((t, i) => <Sx key={'l' + i} x={x + 55 + i * 90} y={y + 150} text={t} size={22} color="#6a3fa3" anchor="middle" weight={700} at={-100} />)}
+			{['Cl^{-}', 'I^{-}', 'SO_4^{2-}', 'CO_3^{2-}', 'OH^{-}'].map((t, i) => <Sx key={'l' + i} x={x + 55 + i * 90} y={y + 150} text={t} size={26} color="#6a3fa3" anchor="middle" weight={700} at={-100} />)}
 		</Fade>
 	);
 };
@@ -139,7 +139,7 @@ export const SceneFeedback2: React.FC = () => {
 						<Fade key={i} at={K15.repeat + i * 8}>
 							<circle cx={cx} cy={cy} r={46} fill="#141416" stroke="#c9d3da" strokeWidth={4} />
 							<Well cx={cx} cy={cy} r={43} kind="white" p={prog(f, K15.repeat + 10 + i * 8, 24)} seed={i + 9} />
-							<Sx x={cx} y={660} text="3 + 3 drops" size={24} color={INK_SOFT} anchor="middle" weight={600} at={K15.repeat + i * 8} />
+							<Sx x={cx} y={660} text="3 + 3 drops" size={26} color={INK_SOFT} anchor="middle" weight={600} at={K15.repeat + i * 8} />
 						</Fade>
 					);
 				})}
@@ -172,12 +172,14 @@ export const SceneDecision: React.FC = () => {
 		<>
 			<Heading text="Investigating solubility rules" at={4} size={62} />
 			<Overlay>
-				<Fade at={K16.inv}><rect x={96} y={200} width={1728} height={570} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
+				{/* quality fix: the seven steps sit faintly on the board from the start, then write in on their cues */}
+				<Fade at={0}><rect x={96} y={200} width={1728} height={570} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={3} /></Fade>
 				{lines.map((l, i) => {
 					const g = glow(l.at, lines[i + 1]?.at ?? K16.next);
 					return (
 						<g key={i}>
 							{g > 0.01 ? <rect x={110} y={228 + i * 76} width={1700} height={64} rx={12} fill="#f6d77a" opacity={0.35 * g} /> : null}
+							<g opacity={0.22}><Sx x={130} y={274 + i * 76} text={l.t} size={42} color={INK} hand at={-1000} /></g>
 							<Sx x={130} y={274 + i * 76} text={l.t} size={42} color={INK} hand at={l.at} />
 						</g>
 					);
@@ -191,15 +193,17 @@ export const SceneDecision: React.FC = () => {
 };
 
 // ---------- 17. Key notes ----------
+// quality fix: short one-line bullets instead of seven paragraphs; the memory aids are unchanged
 const NOTES = [
-	'Design: cations as nitrates, anions as sodium salts (all 0.1 mol/L). Nitrates and sodium compounds always dissolve, so a solid can only be the pair being tested. Check each stock alone first.',
-	'Method: predict all 25 cells first; 3 drops + 3 drops in a clean well plate; dropper tip out of the well; view over black and white; record ppt or no ppt, colour, heavy or faint. Write "no precipitate", not "no reaction".',
-	'Variables: independent, the ion pair; dependent, precipitate, colour and amount; controlled, concentration, drops, temperature, time before recording.',
-	'Expected (about 0.05 mol/L of each ion): Na^{+} row all clear. Carbonates solid except Na^{+} (Ag_2CO_3 pale yellow). AgCl white, AgI pale yellow, PbCl_2 white, PbI_2 bright yellow. Sulfates of Ba^{2+}, Pb^{2+}, Ca^{2+}, Ag^{+} white (CaSO_4, Ag_2SO_4 slightly soluble, still solid here). Hydroxides: Ag^{+} brown, Pb^{2+} and Ca^{2+} white, Ba^{2+} clear.',
-	'Rules: general statement + evidence + exceptions. Untested ions come from the reference table. Each mismatch: rule wrong or technique? Slightly soluble is a real third category; repeat doubtful cells.',
-	'Composition: test the clear liquid above a precipitate with a drop of each reagent; much more solid with one of them shows which ion was in excess (a faint cloud with both: neither in big excess). The liquid holds the spectators plus that ion.',
-	'Risks: lead nitrate (toxic, cumulative, may harm an unborn baby), silver nitrate (stains, eyes), barium nitrate (harmful if swallowed), NaOH (eyes). Glasses, gloves, drops only, no mouth pipetting, wash hands, heavy-metal waste container.',
+	'Cations as nitrates, anions as sodium salts: those partners always dissolve.',
+	'So any solid is the pair being tested; check each stock alone first.',
+	'Predict all 25 cells first; 3 drops + 3 drops in a clean well plate.',
+	'View over black and white; record solid or none, colour, heavy or faint.',
+	'Write "no precipitate", not "no reaction"; repeat doubtful cells.',
+	'Rule = general statement + evidence + exceptions; explain each mismatch.',
+	'Test the clear liquid with a drop of each reagent: more solid shows the excess ion.',
+	'Risks: lead nitrate is toxic; glasses, gloves, drops only, heavy-metal waste.',
 ];
 export const SceneNotes: React.FC = () => (
-	<KeyNotesBoard notes={NOTES} size={25} aidTop={826} aids={["Partners that always dissolve: any solid is the pair you're testing.", 'Predict first. Test. Explain every mismatch.']} tag="same concentration and drops in every well; view over black" />
+	<KeyNotesBoard notes={NOTES} size={36} aidTop={780} aids={["Partners that always dissolve: any solid is the pair you're testing.", 'Predict first. Test. Explain every mismatch.']} tag="same concentration and drops in every well; view over black" />
 );

@@ -3,7 +3,9 @@ import type {ExplainerConfig} from '../../types';
 import {SCENES} from './scenes';
 import {ASSETS} from './assets';
 
-const l = lesson as unknown as ExplainerConfig['lesson'];
+// Quality fix (6 Nov, root rule): the quiet key-notes hold is at least 40 s in all (1,200 frames). The measured scene was 759 frames.
+const source = lesson as unknown as ExplainerConfig['lesson'];
+const l = {...source, scenes: source.scenes.map(s => (s.id === 'key-notes' ? {...s, durationInFrames: Math.max(1200, s.durationInFrames)} : s))};
 export const config_c13: ExplainerConfig = {
 	id: 'Explainer-chem-m5-c13',
 	lesson: l,

@@ -29,7 +29,7 @@ export const SceneHook: React.FC = () => {
 				<Fills g={G1} cells={cells} />
 				<Sx x={1260} y={360} text="clear" size={40} color={INK_SOFT} hand at={K1.clear} />
 				<Sx x={1260} y={420} text="cloudy: white, yellow, brown" size={40} color={INK} hand at={K1.cloudy} />
-				<Fade at={K1.rules - 30}><RulesMini x={1250} y={520} size={22} at={K1.rules - 30} title="solubility rules" /></Fade>
+				<Fade at={K1.rules - 30}><RulesMini x={1250} y={520} size={26} at={K1.rules - 30} title="solubility rules" /></Fade>
 				<Arrow x1={b.x + b.w + 10} y1={620} x2={1240} y2={640} at={K1.evidence} color={TEAL} width={5} />
 				<Sx x={1250} y={500} text="evidence → rules" size={36} color={TEAL} hand at={K1.evidence + 6} />
 				<Sx x={b.x} y={1040} text="How do you set it up so the results can be trusted?" size={44} color={AMBER_INK} hand at={K1.trusted - 20} />
@@ -95,7 +95,7 @@ export const SceneAlways: React.FC = () => {
 				}))}
 				<Sx x={BX0} y={1030} text="stock check: each solution alone is clear" size={34} color={TEAL} hand at={K2.clearC} />
 				{/* right: why this works */}
-				<RulesMini x={1010} y={210} size={24} at={K2.always - 20} hi={[{id: 'N', at: K2.always}, {id: 'G', at: K2.always + 6}]} />
+				<RulesMini x={1010} y={210} size={26} at={K2.always - 20} hi={[{id: 'N', at: K2.always}, {id: 'G', at: K2.always + 6}]} />
 				<Sx x={1010} y={600} text="N and G of NAGSAG: always soluble" size={34} color={TEAL} hand at={K2.always + 4} />
 				<SwapCross x={1010} xr={1400} y1={720} y2={830} size={36} left={[['Pb^{2+}', 'NO_3^{-}'], ['Na^{+}', 'I^{-}']]} leftAt={[K2.meet, K2.meet + 6]} swap={K2.meet + 20}
 					verdicts={[{kind: 'ok', at: K2.pair - 6, label: 'NaNO_3: soluble (spectators)'}, {kind: 'ppt', at: K2.pair, label: 'the only possible solid'}]} />
@@ -211,7 +211,7 @@ export const SceneVariables: React.FC = () => {
 				<Sx x={CX} y={840} text="concentration matters most" size={34} color={AMBER_INK} hand at={K4.matters} />
 				<BigWell cx={1300} cy={940} r={42} kind="clear" p={1} at={K4.just} label="0.01 mol/L stocks" />
 				<BigWell cx={1560} cy={940} r={42} kind="white" p={1} at={K4.just + 10} label="0.1 mol/L stocks" />
-				<Sx x={1650} y={900} text="Ca^{2+} + SO_4^{2-}" size={24} color={INK_SOFT} weight={700} at={K4.just + 10} />
+				<Sx x={1650} y={900} text="Ca^{2+} + SO_4^{2-}" size={26} color={INK_SOFT} weight={700} at={K4.just + 10} />
 				<Sx x={1650} y={940} text="same pair, same drops," size={26} color={INK_SOFT} hand at={K4.much} />
 				<Sx x={1650} y={976} text="different concentration" size={26} color={INK_SOFT} hand at={K4.much} />
 				{void K4.see}{void K4.colour}{void K4.conc}{void K4.faint}{void INK}
