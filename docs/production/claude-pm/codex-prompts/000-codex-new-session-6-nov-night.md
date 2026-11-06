@@ -30,6 +30,7 @@ Claude committed your previous outputs on 6 November (reports, measured data, th
 Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course work come before polish re-renders. Every new video must grade A on its contact sheet before render (`maths-visual-standard.md`, build gate).
 
 
+0. **225 (top priority, added late on 6 Nov):** render the d01 Maths pilot (now built and graded A) and hand the owner an unlisted link. Run it next.
 1. **Fix YouTube access first.**
    - Diagnose the browser or Windows tool initialisation error.
    - If you can't fix it, write the exact error plainly in `status.md` so the owner can upload by hand, and carry on with step 2 onwards without uploading.
