@@ -24,9 +24,10 @@ Hard rules: do not spawn sub-agents. Make no commits. Never print or log keys. R
 
 1. **Fix YouTube access first.** Diagnose the browser or Windows tool initialisation error. If you can't fix it, say so plainly in `status.md` with the exact error, so the owner can upload by hand from `work/brief196/replacement-package.json`, and carry on with renders (step 2 onwards) without uploading. Keep a running list of every checked v2 master waiting for upload, with its metadata, in `work/youtube-pending.json`.
 2. **196:** finish the YouTube steps for bio-m7-b06 and b10 (owner approved).
-3. **199:** chem-m6-g03, chem-m7-c10, chem-m7-p05 and chem-m8-c01 render defects, plus the chem-m7-p06 check and the c10/c05 link record. g03 was already found in 196; reuse that work.
-4. **Quality re-render-and-replace briefs, in number order:** 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211. Each video's scene code is already fixed by Claude; you render v2, scan it, compare the sheet, do a playback check and replace it on YouTube.
-5. **Production reviews and plates:** 189, 190, 191, 192 and 193 (Year 12 Physics M6 to M8).
-6. Any new brief Claude adds after 211 (check the folder for higher numbers).
+3. **213 (added 6 Nov, 16:50):** voice d01 Revision 6, the Maths owner pilot. It is short and uses the Google voice; run it before or after the 19:00 scheduled task, not alongside.
+4. **199:** chem-m6-g03, chem-m7-c10, chem-m7-p05 and chem-m8-c01 render defects, plus the chem-m7-p06 check and the c10/c05 link record. g03 was already found in 196; reuse that work.
+5. **Quality re-render-and-replace briefs, in number order:** 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211. Each video's scene code is already fixed by Claude; you render v2, scan it, compare the sheet, do a playback check and replace it on YouTube.
+6. **Production reviews and plates:** 189, 190, 191, 192 and 193 (Year 12 Physics M6 to M8).
+7. Any new brief Claude adds after 211 or 213 (check the folder for higher numbers).
 
 Hand in to `status.md` after each brief, as before.
