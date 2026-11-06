@@ -1,8 +1,8 @@
 # Year 11 Chemistry M3 V09: Redox and oxidation numbers. How do electron transfer and oxidation number identify redox? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
-Narration 5,585 characters, 18 scenes, about 504 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,594 characters, 18 scenes, about 507 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: ninth Module 3 video of Year 11 Chemistry (2017 syllabus), playlist entry 63, between `chem-y11-m3-v08` (reactivity and electron removal) and `chem-y11-m3-v10` (half-equations). Templates: `chem-y11-m3-v07.md` and `chem-y11-m3-v08.md` (same designer; series conventions), `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (one reasoning stage at a time for the oxidation-number working). Refers back to `chem-y11-m3-v04.md` (combustion of magnesium), `chem-y11-m3-v03.md` (precipitation, spectators), `chem-y11-m1-v19.md` (ions and their charges) and `chem-y11-m1-v21.md` (covalent bonds, electronegativity) instead of re-teaching them. No starter pack exists; the pack work is done here. Route entry: `chem-y11-m3-v09` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Define oxidation/reduction both ways and identify species oxidised/reduced and agents without oxygen as a requirement."; next handoff: "How do half-equations combine into a balanced redox equation?"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson08.sa.html` (SHA256 `30f5bcf0d786c10b2ef782bfd58b6bdf6e434d6059e8fa0bb5bd0c33657c40cd`, recomputed, matches the route), section `l08-redefining-oxidation-and-reduction-the-elect-title`, with `l08-oxidation-numbers-tracking-electron-shift-title` (the syllabus action names oxidation numbers), `l08-bleach-chemistry-oxidation-without-oxygen-title`, the worked example (2Fe + 3Cl₂ → 2FeCl₃), the misconception cards and the drill. Used: the zinc and copper sulfate opener ("No oxygen is involved, yet something has clearly reacted"); OIL RIG; "These two processes always occur simultaneously"; oxidant and reductant definitions and the Common Error ("Students confuse oxidant/reductant with oxidised/reduced"); "Insight: The original definition, oxidation as reaction with oxygen, is still correct ... a subset"; the oxidation-number rules in priority order and the table (SO₄²⁻ S +6, MnO₄⁻ Mn +7); "if any atom's oxidation number changes, a redox reaction has occurred. An increase ... = oxidation. A decrease = reduction."; the worked example (Fe 0 → +3, Cl 0 → −1); the bleach half-equation and Cl +1 → −1 (A2, new wording); "not every hazardous reaction is redox" (the idea, applied to precipitation). Not used: writing and combining half-equations (`l08-writing-half-equations-title`, `l08-combining-...`: m3-v10), the MnO₄⁻ half-equation in acid (beyond the route), sodium cyanide. Site corrections file checked: no logged item touches lesson 8.
 
@@ -24,12 +24,12 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **OIL RIG (site mnemonic).** Spoken as "oil rig", then expanded. Assumptions checked in "Memory aid check".
 - **Agents (site Common Error).** "Oxidising agent" and "reducing agent" are the spoken terms; the site's "oxidant" and "reductant" appear on screen as "also called". The explanation "an agent does something to its partner" carries the backwards-sounding link.
 - **Why oxidation numbers (route: electron transfer and oxidation number).** H₂ + Cl₂ → 2HCl: no ions form, yet H goes 0 → +1 and Cl 0 → −1. Definition: "the charge an atom would have if all its bonds were ionic"; "bookkeeping, not a real charge". The m1-v21 electronegativity link (chlorine pulls the shared pair) is one grey tag.
-- **Rules (site order).** Uncombined element 0; simple ion = charge; F −1 always; O usually −2 (−1 in peroxides, tag); H usually +1 (−1 in metal hydrides, tag); sum = 0 or the ion's charge. The site's halogen rule ("usually −1, except when combined with oxygen or fluorine") is a grey tag used in A2's feedback. "Uncombined element" replaces the site's "elements in their standard form" (site note 1).
+- **Rules (site order).** Uncombined element 0; simple ion = charge; F −1 always; O usually −2 (−1 in peroxides, tag); H usually +1 (−1 in metal hydrides, tag); sum = 0 or the ion's charge. The site's halogen rule ("usually −1, except when combined with oxygen or fluorine") is a grey tag (Revision 2: the tag names both oxygen and fluorine) used in A2's feedback. "Uncombined element" replaces the site's "elements in their standard form" (site note 1).
 - **Worked examples (one reasoning stage at a time).** Sulfate S +6 (site table), hydrogen chloride Cl −1; prediction (3 s): permanganate Mn +7 (site table); iron with chlorine (site worked example): Fe 0 → +3 oxidised, reducing agent; Cl 0 → −1 reduced, oxidising agent.
 - **Not redox (route: identify redox).** AgNO₃ + NaCl → AgCl + NaNO₃ (m3-v03's precipitate): no oxidation number changes.
 - **Attempts (original wording, HSC style).** A1: magnesium with hydrochloric acid (m3-v07's reaction): Mg 0 → +2 oxidised, reducing agent; H +1 → 0 reduced, H⁺ the oxidising agent; Cl unchanged (3 marks). Crossed: "magnesium is the oxidising agent". A2: bleach (site anchor, new wording): Cl +1 in OCl⁻ → −1 in Cl⁻, reduced; hypochlorite is the oxidising agent with no O₂ (3 marks). Crossed: "Cl is −1 in both".
 - **Mistake scene:** none separate. "Oxidation needs oxygen" (1, 11; site misconception 1); "oxidising agent = the substance oxidised" (5, A1 crossed); "oxidation numbers are real charges" (6); "every reaction is redox" (12); "halogens are always −1" (A2 crossed).
-- **Handoff (route next: `chem-y11-m3-v10`, "How do half-equations combine into a balanced redox equation?").** Scene 18 shows the zinc reaction's two halves with electrons, then aluminium with copper ions, where 3e⁻ and 2e⁻ do not match (the m3-v08 demonstration, continuity). Final frame: see "Opening frame and final frame".
+- **Handoff (route next: `chem-y11-m3-v10`, "How do half-equations combine into a balanced redox equation?").** Scene 17 shows the zinc reaction's two halves with electrons, then aluminium with copper ions, where 3e⁻ and 2e⁻ do not match (the m3-v08 demonstration, continuity). Final frame: see "Opening frame and final frame".
 - **Site notes (read 5 November; for root to log if accepted):**
   1. `l08-oxidation-numbers-...`, rule 1: "Elements in their standard form have oxidation number 0". Any uncombined element is 0 (for example O₃, or white phosphorus), whatever its form. Suggest "An uncombined element has oxidation number 0".
   2. `l08-bleach-...`, Insight: "Mixing bleach with acidic cleaners produces toxic chlorine gas (Cl₂) or chloramine gases." Chloramines come from ammonia, not acids (the safety box earlier says this correctly). Suggest "acidic cleaners release chlorine; ammonia-based cleaners release chloramines".
@@ -41,7 +41,10 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded unless a plate is named):** **electron arrow** (scenes 1 to 3, 11, 14, 16: amber curved arrow with "e⁻" count from the substance losing to the substance gaining); **ion lens** (2: m3-v07's lens on the magnesium oxide lattice, grey Mg atoms become amber Mg²⁺, red O atoms become O²⁻); **OIL RIG card** (3: two columns "Oxidation Is Loss" and "Reduction Is Gain", each with a small electron glyph leaving or arriving); **agent tags** (5: each species carries two stacked tags, "what happens to it" and "what it does to its partner"); **number badges** (6 to 16: a small circled oxidation number above each atom symbol in an equation, before and after; rising badges teal with an up arrow, falling badges violet with a down arrow, unchanged grey); **rule card** (7: five lines writing in order, grey exception tags); **working strip** (8 to 10: m3-v02-style one-line algebra under the formula, one stage at a time); `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, `HandText`, `KeyNotes`, `Heading`.
 - **Colour key (continues m3-v07, v08):** metal atoms in metal tones; metal ions amber; copper ions blue; oxide ions red; chloride green; electrons orange with an amber arrow; oxidation teal (up), reduction violet (down), unchanged grey; crossed items red strike.
-- **Board layout (constant):** heading top left; the current equation across the upper centre with badges; working strip under it; tags and agents at the right; plates small at the right where shown.
+- **Board layout (Revision 2, high-risk redesign):** heading top left; the current equation strip at the top. Revision 1 kept the zinc line on one board for scenes 1 to 5 (about 130 s) and the rule card beside the working for scenes 6 to 10 (about 105 s). Revision 2 stages, each under about 32 s: the zinc beaker, burnt magnesium and rusty nail plates filling the frame (1); the magnesium oxide ion lens at full width (2); the zinc beaker with its surface lens beside the large OIL RIG card (3); the electron counters at full width (4); the two-species partner diagram (5); the hydrogen chloride molecule at full width (6); the rule card at full width (7); the sulfate working at full width with the rule card as a thumbnail (8, 9); the oxidation-number meter (10); the chlorine jar, equation and meter (11); the silver chloride plate with grey badges and the meter (12); question cards (13 to 16); the half-equation stack (17).
+- **Colour roles (Revision 2, fixed for the whole video):** metal atoms in metal tones; metal ions amber; copper ions blue; oxide ions red; chloride green; electrons orange with an amber arrow; oxidation, rising badges, "lost" counters and meter pointers going up teal; reduction, falling badges, "gained" counters and pointers going down violet; unchanged badges and pointers grey; framed answers in a dark-ink box with a green tick; crossed mistakes red strike plus a red hand tag; hand-font teacher tags take the colour of the item they mark; method, source and safety tags grey.
+- **Type sizes (Revision 2, 1080p):** the current equation or working line at least 44 px (48 px; the single formula being worked, such as SO₄²⁻, 64 px); live readouts (electron counters, meter readouts) about 52 px; number badges 36 px; supporting lines and the rule card's earlier lines 30 to 36 px; hand-font tags 34 to 40 px; nothing a student must read below 26 px (source and safety tags 26 px). All text above the bottom 12% of the frame.
+- **Simulation (Revision 2): electron counters (scene 4) and the oxidation-number meter (10, 11, 12, 14, 16).** The counters: in the zinc lens, zinc atoms leave as Zn²⁺ one after another; each pair of orange electrons travels to a Cu²⁺, and two live counters (52 px), teal "e⁻ lost by Zn" and violet "e⁻ gained by Cu²⁺", tick up together (2, 4, 6, 8), so the student sees that every loss is a gain. The meter: a tall vertical number line from −3 to +7 with one pointer per element; when an equation's badges are compared, each pointer slides from its before value to its after value and a live readout writes the change and its meaning ("+3: lost 3 e⁻ each, oxidised"; "−1: gained 1 e⁻ each, reduced"; "0: no change"). In scene 11 a total readout adds the electrons (2 × 3 = 6 lost; 6 × 1 = 6 gained), which previews m3-v10.
 
 Author notes (not learner copy):
 (a) Oxidation numbers are written with the sign first ("+3", "−1") on screen; charges on ions with the sign last ("Fe³⁺"). One grey tag in scene 8 notes the difference.
@@ -64,65 +67,65 @@ Handoff: chem-y11-m3-v10, combining half-equations.
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 
-### 1. hook: no oxygen anywhere
-> Here's zinc in copper sulfate again. Zinc atoms lose two electrons each, and copper ions gain them. For centuries, chemists used the word oxidation to mean reacting with oxygen, like magnesium burning, or iron rusting. There's no oxygen in this beaker at **all**. Yet zinc is doing exactly what burning magnesium does. Let's see **why**.
+### 1. hook: no oxygen gas
+> Here's zinc in copper sulfate again. Zinc atoms lose two electrons each, and copper ions gain them. For centuries, chemists used the word oxidation to mean reacting with oxygen, like magnesium burning, or iron rusting. No oxygen gas takes part in this reaction at **all**. Yet zinc is doing exactly what burning magnesium does. Let's see **why**.
 
-Visual: opens on m3-v08's final frame; the Next chip clears. `y11c-cuso4-beaker-zinc-after-v1.png` (from m3-v07) small at the right. On "magnesium burning" `c1-burned-magnesium-v1.png` small beside it with the coded glare; on "iron rusting" a grey tag "rust". On "at all" a chip "oxidation = reacting with oxygen" writes over the burning plate and a grey "no O₂" tag sits on the beaker. On "why" the magnesium plate moves to the centre.
+Visual: (stage: the anchor plates; about 25 s) opens on m3-v08's final frame; the Next chip clears and the zinc line shrinks to an equation strip at the top (48 px) with its "name?" chips. `y11c-cuso4-beaker-zinc-after-v1.png` (from m3-v07) slides in large at the left, filling about two thirds of the frame height; a pen ring circles the brown coat on the strip (amber hand tag "copper forming"). On "magnesium burning" `c1-burned-magnesium-v1.png` at the right at matching height, with one coded white glare flash; on "iron rusting" `y11c-rusty-nail-v1.png` beneath it. A grey hand tag "old meaning: reacts with oxygen" brackets the two right-hand plates. On "all" a grey "no O₂(g)" tag sits on the beaker with a grey hand tag "O is in the water and sulfate, but no O₂ gas reacts", and the chip "oxidation = reacting with oxygen" writes over the bracket. On "why" the beaker and nail shrink to thumbnails at the top right and the magnesium plate moves to the centre.
 
 ### 2. what burning magnesium really does
 > When magnesium burns, magnesium plus oxygen gives magnesium oxide. Magnesium oxide is ionic, so each magnesium atom has become a magnesium ion by losing two **electrons**, and each oxygen atom has gained two, becoming an oxide **ion**. So the real change in burning isn't the oxygen itself. It's electrons moving from one atom to **another**.
 
-Visual: line "2Mg(s) + O₂(g) → 2MgO(s)" with atom tiles and a green tally (m3-v02 style). The ion lens opens on the white ash: on "electrons" grey Mg atoms turn amber "Mg²⁺" and two orange electrons leave each; on "ion" red O atoms take them and become "O²⁻". On "another" an amber arrow "2e⁻" curves from Mg to O on the line.
+Visual: (stage change: the ion lens at full width; about 25 s) line "2Mg(s) + O₂(g) → 2MgO(s)" (48 px) across the top with atom tiles and a green tally (m3-v02 style); the magnesium plate shrinks to the left edge. The ion lens opens from the white ash and fills the centre: on "electrons" grey Mg atoms turn amber "Mg²⁺" and two orange electrons leave each (teal hand tag "lost 2e⁻"); on "ion" red O atoms take them and become "O²⁻" (violet hand tag "gained 2e⁻"). On "another" an amber arrow "2e⁻" curves from Mg to O on the line, and a pen arrow traces one electron's path in the lens.
 
 ### 3. the new definitions
 > So chemists widened the words. Oxidation is the loss of electrons. Reduction is the gain of electrons. To remember it, think oil rig. Oxidation Is Loss, Reduction Is **Gain**. In our beaker, zinc loses electrons, so zinc is oxidised. Copper ions gain electrons, so copper ions are **reduced**. And the old meaning still fits, because magnesium loses electrons to oxygen, so it's oxidised **too**.
 
-Visual: the OIL RIG card writes at the right: "Oxidation Is Loss (of electrons)", "Reduction Is Gain (of electrons)"; on "Gain" the initials O, I, L, R, I, G light. The zinc line returns to the centre; on "zinc is oxidised" the left "name?" chip becomes teal "oxidised"; on "reduced" the right chip becomes violet "reduced". On "too" the magnesium line slides under it with "oxidised" over Mg and "reduced" over O₂.
+Visual: (stage change: the zinc beaker and the OIL RIG card; about 29 s) the lens closes. Left half: `y11c-cuso4-beaker-zinc-v1.png` with a lens on the strip's surface: a grey Zn atom leaves as an amber Zn²⁺, and two orange electrons cross to a blue Cu²⁺, which becomes a brown Cu atom (teal hand tag "loses e⁻", violet "gains e⁻"). Right half: the OIL RIG card writes large (48 px): "Oxidation Is Loss (of electrons)", "Reduction Is Gain (of electrons)"; on "Gain" the initials O, I, L, R, I, G light and a pen ring circles "of electrons". On "zinc is oxidised" the strip's left "name?" chip becomes teal "oxidised"; on "reduced" the right chip becomes violet "reduced". On "too" the magnesium line slides under the strip with "oxidised" over Mg and "reduced" over O₂ (ink hand tag "old meaning fits").
 
 ### 4. always together
 > Electrons can't just vanish. So whenever one substance loses electrons, another has to gain them. Oxidation and reduction always happen together, and a reaction with both is called a redox reaction, short for reduction and **oxidation**. So whenever you spot an oxidation, look for the reduction that goes with it.
 
-Visual: on "can't just vanish" the electron arrow pulses from Zn to Cu²⁺; a small balance glyph tips level with "2e⁻ lost" on one pan and "2e⁻ gained" on the other. On "oxidation" gloss chip "redox reaction: oxidation and reduction together"; the word "redox" writes with "red" violet and "ox" teal.
+Visual: (stage change: the electron counters at full width; about 23 s) the surface lens enlarges to fill the frame with several Zn atoms and Cu²⁺ ions. On "can't just vanish" the counters run (see Simulation): atoms leave one after another, electrons cross in pairs, and the teal "e⁻ lost by Zn" and violet "e⁻ gained by Cu²⁺" readouts tick together, 2, 4, 6, 8 (ink hand tag "lost = gained, always"; a pen ring around the two equal readouts). On "oxidation" gloss chip "redox reaction: oxidation and reduction together"; the word "redox" writes large with "red" violet and "ox" teal.
 
 ### 5. the agents
 > Exam questions also ask for the oxidising agent and the reducing agent. The oxidising agent causes oxidation, by taking electrons away, so it's the substance that gets **reduced**. Here, that's the copper ions. The reducing agent gives electrons away, so it gets oxidised. Here, that's **zinc**. It sounds backwards, so think of an agent as doing something to its partner. The oxidising agent oxidises its **partner**.
 
-Visual: agent tags stack on the zinc line. Over Cu²⁺: "reduced" (violet) and on "reduced" a second tag "oxidising agent: takes e⁻ from zinc"; over Zn: "oxidised" (teal) and on "zinc" "reducing agent: gives e⁻ to Cu²⁺". Grey chip "also called oxidant and reductant". On "partner" pen arrows point from each agent tag to the other species, and a chip "oxidising agent = the one oxidised" fades in and is crossed.
+Visual: (stage change: the partner diagram; about 31 s) board clears to two large coded species, a grey Zn atom at the left and a blue Cu²⁺ ion at the right, with an orange electron arrow "2e⁻" between them. Agent tags stack (40 px). Over Cu²⁺: "reduced" (violet) and on "reduced" a second tag "oxidising agent: takes e⁻ from zinc"; over Zn: "oxidised" (teal) and on "zinc" "reducing agent: gives e⁻ to Cu²⁺". Grey chip "also called oxidant and reductant". On "partner" pen arrows point from each agent tag to the other species; the line "The oxidising agent oxidises its partner" frames in a dark-ink box, and a chip "oxidising agent = the one oxidised" fades in and is crossed in red (red hand tag "it acts on its partner").
 
 ### 6. when no ions form
 > Electron transfer is easy to see when ions form. But hydrogen burns in chlorine to make hydrogen chloride, a covalent molecule. No ions form, yet it's still redox. To track electrons in any substance, chemists use oxidation numbers. An oxidation number is the charge an atom would have if all its bonds were ionic. It's bookkeeping, not a real **charge**.
 
-Visual: board clears to "H₂(g) + Cl₂(g) → 2HCl(g)" with a coded H–Cl molecule (the shared pair drawn nearer Cl; grey tag "chlorine pulls the shared pair, as in the bonding videos"). On "No ions form" a grey tag "covalent: no ions". Gloss chip "oxidation number: the charge an atom would have if all its bonds were ionic". On "charge" badges appear: "0" over H₂ and Cl₂, "+1" over H and "−1" over Cl in HCl, and a tag "bookkeeping, not a real charge".
+Visual: (stage change: the molecule at full width; about 26 s) board clears to "H₂(g) + Cl₂(g) → 2HCl(g)" (48 px) with a large coded H–Cl molecule (the shared pair drawn nearer Cl; grey tag "chlorine pulls the shared pair, as in the bonding videos"; green hand tag "Cl pulls harder" with a pen arrow to the pair). On "No ions form" a grey tag "covalent: no ions". Gloss chip "oxidation number: the charge an atom would have if all its bonds were ionic". On "charge" badges appear: "0" over H₂ and Cl₂, "+1" over H and "−1" over Cl in HCl, and a tag "bookkeeping, not a real charge" with a pen ring.
 
 ### 7. the rules
 > There are a few rules, used in this order. An uncombined element is zero. A simple ion is its own charge. In compounds, fluorine is always minus one, oxygen is usually minus two, and hydrogen is usually plus **one**. Finally, the numbers add up to zero in a neutral compound, or to the charge of an **ion**.
 
-Visual: the rule card writes line by line: "1. uncombined element: 0", "2. simple ion: its charge (Na⁺ +1, Cl⁻ −1)", "3. in compounds: F −1; O usually −2; H usually +1"; on "one" grey tags "O is −1 in peroxides such as H₂O₂", "H is −1 in metal hydrides such as NaH"; on "ion" "4. sum = 0 (neutral) or the ion's charge". Grey tag "halogens other than F: usually −1, not when bonded to O".
+Visual: (stage change: the rule card at full width; about 22 s) the rule card writes line by line at 44 px, each new line bright and the earlier ones dimming to 32 px: "1. uncombined element: 0", "2. simple ion: its charge (Na⁺ +1, Cl⁻ −1)", "3. in compounds: F −1; O usually −2; H usually +1"; on "one" grey tags "O is −1 in peroxides such as H₂O₂", "H is −1 in metal hydrides such as NaH"; on "ion" "4. sum = 0 (neutral) or the ion's charge". Grey tag "halogens other than F: usually −1, not when bonded to O or F". Ink hand tag "use them in this order" with a pen arrow down the numbers.
 
 ### 8. working one out
 > Try sulfur in the sulfate ion, S O four two minus. Four oxygens at minus two make minus eight. The whole ion has to add up to minus two, so sulfur must be plus **six**. In hydrogen chloride, hydrogen is plus one, and the molecule is neutral, so chlorine is minus **one**.
 
-Visual: the rule card shrinks to the right. "SO₄²⁻" large; the working strip, one stage at a time: "O: 4 × (−2) = −8" then "S + (−8) = −2" then on "six" "S = +6" (badge "+6" over S). Grey tag "sign first for oxidation numbers: +6; sign last for charges: 2−". On "minus one" "HCl: (+1) + Cl = 0, Cl = −1".
+Visual: (stage change: the working at full width; about 20 s) the rule card shrinks to a thumbnail at the top right. "SO₄²⁻" large (64 px) at the left; the working, one stage at a time at 48 px: "O: 4 × (−2) = −8" then "S + (−8) = −2" (ink hand tag "sum = the ion's charge") then on "six" "S = +6" in a dark-ink box with a green tick (badge "+6" over S). Grey tag "sign first for oxidation numbers: +6; sign last for charges: 2−". On "minus one" "HCl: (+1) + Cl = 0, Cl = −1" writes beneath, framed, as the sulfate lines dim.
 
 ### 9. prediction: permanganate (countdown, 3 seconds)
 > Quick prediction. What's the oxidation number of manganese in the permanganate ion, M n O four minus? **Think**.
 
-Visual: "MnO₄⁻" large with an empty badge "?" over Mn; the rule card stays at the right. On "Think" the 3 s `Countdown` ring runs.
+Visual: "MnO₄⁻" large (64 px) with an empty badge "?" over Mn; the rule card thumbnail stays at the top right. On "Think" the 3 s `Countdown` ring runs.
 
 ### 10. reading the numbers
 > Plus seven. Four oxygens make minus eight, and the ion is minus one overall. Now here's the payoff. Compare each atom's oxidation number before and after a reaction. If it goes up, that atom has lost electrons, so it's oxidised. If it goes down, it has gained electrons, so it's **reduced**. It's the same idea as oil rig, just tracked with numbers.
 
-Visual: the strip "4 × (−2) = −8; Mn + (−8) = −1; Mn = +7" and badge "+7". Board shifts: a number line from −3 to +7 draws vertically at the right; on "goes up" a teal arrow climbs (tag "up: lost e⁻, oxidised"); on "reduced" a violet arrow falls (tag "down: gained e⁻, reduced").
+Visual: the strip "4 × (−2) = −8; Mn + (−8) = −1" and "Mn = +7" framed in a dark-ink box with a green tick; badge "+7". (stage change: the oxidation-number meter; about 26 s) the working shrinks to the top left and the meter draws at full height on the right (see Simulation). On "goes up" a teal pointer climbs from 0 to +2 and the readout writes "+2: lost 2 e⁻, oxidised" (teal hand tag "up = oxidised"); on "reduced" a violet pointer falls from 0 to −1 with "−1: gained 1 e⁻, reduced" (violet hand tag "down = reduced"). A pen line links the meter to the OIL RIG card thumbnail.
 
 ### 11. iron and chlorine: redox with no oxygen
 > Here's iron reacting with chlorine gas to make iron three chloride. Iron starts as an element, at zero. In iron three chloride, each chloride is minus one, so iron is plus **three**. Iron's number went up, so iron is oxidised, and it's the reducing agent. Chlorine went from zero down to minus one, so chlorine is reduced, and it's the oxidising **agent**. No oxygen anywhere, and it's still **redox**.
 
-Visual: "2Fe(s) + 3Cl₂(g) → 2FeCl₃(s)" (green tally). Badges, one stage at a time: "0" over Fe and Cl₂; on "minus one" "−1" over Cl in FeCl₃; strip "Fe + 3(−1) = 0"; on "three" "+3" over Fe. On "went up" a teal up arrow from Fe's "0" to "+3" with tags "oxidised", "reducing agent"; on "agent" a violet down arrow from Cl's "0" to "−1" with "reduced", "oxidising agent". On "redox" a chip "oxidation needs oxygen" fades in and is crossed.
+Visual: (stage change: the chlorine jar, equation and meter; about 29 s) `y11c-gas-jar-chlorine-v1.png` (from m3-v10) at the left (grey tag "equation only: no demonstration"); "2Fe(s) + 3Cl₂(g) → 2FeCl₃(s)" (48 px, green tally) across the centre; the meter at the right. Badges, one stage at a time: "0" over Fe and Cl₂; on "minus one" "−1" over Cl in FeCl₃; strip "Fe + 3(−1) = 0"; on "three" "Fe = +3" framed in a dark-ink box with a green tick. On "went up" the Fe pointer climbs from 0 to +3 (readout "+3: lost 3 e⁻ each, oxidised") with tags "oxidised", "reducing agent"; on "agent" the Cl pointer falls from 0 to −1 (readout "−1: gained 1 e⁻ each, reduced") with "reduced", "oxidising agent"; the total readout writes "2 × 3 = 6 lost; 6 × 1 = 6 gained" (ink hand tag "same 6"). On "redox" a chip "oxidation needs oxygen" fades in and is crossed in red (red hand tag "electrons, not oxygen").
 
 ### 12. not every reaction is redox
 > But don't call everything redox. When silver nitrate solution meets sodium chloride solution, white silver chloride forms. Check the numbers. Silver stays plus one, chlorine stays minus one, sodium stays plus one, and nitrogen and oxygen don't change **either**. Nothing goes up or down, so it isn't **redox**. The ions just swap partners.
 
-Visual: `m5x-ppt-agcl-white-v1.png` small at the right. "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)"; badges grey and unchanged on both sides: Ag +1, N +5, O −2, Na +1, Cl −1; on "either" every badge pair links with a grey "=". On "redox" a tag "precipitation: ions swap partners, no electrons move" and a chip "every reaction is redox" crossed.
+Visual: (stage change: the precipitate plate and grey badges; about 25 s) `m5x-ppt-agcl-white-v1.png` large at the left, filling about two thirds of the frame height (white hand tag "white AgCl" with a pen ring on the precipitate). "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)" (44 px) across the right; badges grey and unchanged on both sides: Ag +1, N +5, O −2, Na +1, Cl −1; the meter's five pointers stay still, each readout "0: no change". On "either" every badge pair links with a grey "=". On "redox" a tag "precipitation: ions swap partners, no electrons move" and a chip "every reaction is redox" crossed in red (red hand tag "no number changes: not redox").
 
 ### 13. attempt 1 (countdown, 10 seconds)
 > Your turn. Magnesium reacts with hydrochloric acid to give magnesium chloride and hydrogen. Use oxidation numbers to identify what is oxidised and what is reduced, and name the oxidising agent and the reducing agent. Pause here to answer.
@@ -132,7 +135,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 14. feedback 1 (brief)
 > Magnesium goes from zero to plus two, so it's oxidised, and it's the reducing agent. Hydrogen goes from plus one in the acid to zero in hydrogen gas, so it's reduced, and the hydrogen ions are the oxidising agent. Chlorine stays at minus one. Calling magnesium the oxidising agent, because it's oxidised, is the classic **swap**.
 
-Visual: card shrinks to the top. The equation with badges: Mg 0 → +2 (teal up), H +1 → 0 (violet down), Cl −1 → −1 (grey "="); tags "Mg: oxidised, reducing agent", "H⁺: reduced, oxidising agent", "Cl⁻: unchanged". On "swap" a chip "Mg is the oxidising agent" fades in and is crossed (tag "the oxidising agent is reduced"). Hold about 1 second.
+Visual: card shrinks to the top. `m5x-strong-acid-mg-v1.png` small at the left (the fizzing ribbon). The equation with badges: Mg 0 → +2 (teal up), H +1 → 0 (violet down), Cl −1 → −1 (grey "="), with the meter pointers moving to match; the answer "Mg: oxidised, reducing agent. H⁺: reduced, oxidising agent. Cl⁻: unchanged." in a dark-ink box with a green tick. On "swap" a chip "Mg is the oxidising agent" fades in and is crossed in red (red hand tag "the oxidising agent is reduced"). Hold about 1 second.
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Household bleach contains the hypochlorite ion, O C L minus. When bleach removes a stain, hypochlorite ions become chloride ions. Find chlorine's oxidation number in each, and decide whether hypochlorite acts as an oxidising agent. Pause here to answer.
@@ -142,7 +145,7 @@ Visual: `QuestionCard`: "Household bleach contains the hypochlorite ion, OCl⁻.
 ### 16. feedback 2 (brief)
 > In hypochlorite, oxygen is minus two and the ion is minus one, so chlorine is plus one. In chloride, it's minus one. Chlorine's number goes down, so it gains electrons and is reduced, which makes hypochlorite the oxidising agent, with no oxygen gas involved. Saying chlorine is minus one in both misses the **exception**. Bonded to oxygen, chlorine isn't minus **one**.
 
-Visual: card shrinks. Strip "O = −2; Cl + (−2) = −1; Cl = +1"; badges "+1" in OCl⁻ and "−1" in Cl⁻ with a violet down arrow (tag "reduced: oxidising agent"). On "exception" a chip "Cl is −1 in both" fades in; on "one" it is crossed (tag "rule order: O first"). Hold about 1 second.
+Visual: card shrinks. Strip "O = −2; Cl + (−2) = −1; Cl = +1"; badges "+1" in OCl⁻ and "−1" in Cl⁻; the Cl pointer falls from +1 to −1 (readout "−2: gained 2 e⁻, reduced"). The answer "Cl: +1 → −1, reduced, so OCl⁻ is the oxidising agent" in a dark-ink box with a green tick. On "exception" a chip "Cl is −1 in both" fades in; on "one" it is crossed in red (red hand tag "rule order: O first"). Hold about 1 second.
 
 ### 17. conclusion and handoff
 > So oxidation is loss of electrons, reduction is gain, and oxidation numbers show which is which. Each half of a redox reaction can also be written on its own, with the electrons showing. Zinc gives zinc ions plus two electrons. Copper ions plus two electrons give copper. Now try aluminium with copper ions, from the salt demonstration. Each aluminium atom loses three electrons, but each copper ion takes only **two**. How do half-equations combine into a balanced redox **equation**?
@@ -153,12 +156,13 @@ Visual: board clears. On "Zinc gives" the line "Zn(s) → Zn²⁺(aq) + 2e⁻" w
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Oxidation is loss of electrons; reduction is gain of electrons (OIL RIG). They always happen together: a redox reaction.
-2. The oxidising agent takes electrons and is reduced. The reducing agent gives electrons and is oxidised.
-3. Oxidation number rules, in order: uncombined element 0; simple ion = its charge; F −1; O −2 (peroxides −1); H +1 (metal hydrides −1); sum = 0 or the ion's charge.
-4. Oxidation number up: oxidised. Down: reduced. No change anywhere: not redox. Example: 2Fe + 3Cl₂ → 2FeCl₃ (Fe 0 → +3, Cl 0 → −1).
+1. Oxidation: loss of electrons. Reduction: gain of electrons.
+2. Redox: both happen together.
+3. Oxidising agent: takes electrons, is reduced. Reducing agent: gives electrons, is oxidised.
+4. Rules, in order: element 0; simple ion = charge; F −1; O −2; H +1; sum = 0 or the ion's charge.
+5. Oxidation number up: oxidised. Down: reduced. No change: not redox.
 
-Memory aid (large, on the notes screen): *OIL RIG: Oxidation Is Loss, Reduction Is Gain.*
+Memory aid (framed card, on the notes screen): *OIL RIG: Oxidation Is Loss, Reduction Is Gain.*
 
 At the end the notes cross-fade back to scene 17's final frame.
 
@@ -211,7 +215,7 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 1 count (5 November; build parser rules): **5,585 characters**, 18 scenes. At 13.3 characters per second the speech is about 420 s; add about 5 s of settling (the lens in 2, the rule card in 7, the badges in 11 and 12), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 504 s**.
+Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,594 characters**, 18 scenes (Revision 1: 5,585). At 13.3 characters per second the speech is about 421 s; add about 7 s of settling (the plates in 1, the lens in 2, the counters in 4, the rule card in 7, the meter in 10 to 12), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 58 s in all): **about 507 s** (Revision 1: about 504 s).
 
 ## Scene list and build ids
 
@@ -228,16 +232,17 @@ Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Re
 Have (inspected 5 November on a paper-background contact sheet at about 250 px; scaled uniformly only, never stretched):
 - `public/assets/chemistry/c1-burned-magnesium-v1.png`: scenes 1, 2.
 - `public/assets/chemistry/m5x-ppt-agcl-white-v1.png`: scene 12.
-- Requested in `chem-y11-m3-v07.md`: `y11c-cuso4-beaker-zinc-after-v1.png`: scene 1.
-- **Inspected, not used:** `m5x-strong-acid-mg-v1.png` (A1 is an equation task; a plate would not add a needed observation); `c13-pbi2-tube-precipitate-v1.png` (yellow; the silver chloride plate matches the equation).
+- Delivered for m3-v07 (brief 182): `y11c-cuso4-beaker-zinc-after-v1.png` (scene 1), `y11c-cuso4-beaker-zinc-v1.png` (scene 3, Revision 2).
+- Revision 2 additions (inspected 6 November on a paper contact sheet at about 300 px): `public/assets/chemistry/y11c-rusty-nail-v1.png` (scene 1, replaces the grey "rust" tag); `public/assets/chemistry/y11c-gas-jar-chlorine-v1.png` (delivered for m3-v10 by brief 183; scene 11, tagged "equation only: no demonstration"); `public/assets/chemistry/m5x-strong-acid-mg-v1.png` (feedback 1, small).
+- **Inspected, not used:** `c13-pbi2-tube-precipitate-v1.png` (yellow; the silver chloride plate matches the equation).
 
-Need (new plates): none. Scene 1's rust is a grey tag, not a plate (no rusty-iron plate in `public/`; not needed for the reasoning).
+Need (new plates): none. Revision 2 uses the existing `y11c-rusty-nail-v1.png` for scene 1's rust.
 
-Coded: electron arrows, ion lens, OIL RIG card, agent tags, number badges and arrows, rule card, working strips, number line, balance glyph, molecule glyph, chips, attempt cards, countdowns, key notes board.
+Coded: electron arrows, ion lens, surface lens, electron counters, OIL RIG card, partner diagram, agent tags, number badges, rule card, working strips, oxidation-number meter, molecule glyph, chips, attempt cards, countdowns, key notes board.
 
 ## Codex asset brief (Year 11 Chemistry M3 v09)
 
-No new plates. Codex confirms that `c1-burned-magnesium-v1.png` and `m5x-ppt-agcl-white-v1.png` sit together at one scale beside the m3-v07 copper sulfate set without clashing, and reports in `status.md`.
+No new plates. Codex confirms that `c1-burned-magnesium-v1.png`, `y11c-rusty-nail-v1.png` and `y11c-cuso4-beaker-zinc-after-v1.png` sit together at one scale in scene 1 without clashing, and that `y11c-gas-jar-chlorine-v1.png` and `m5x-ppt-agcl-white-v1.png` read clearly at about two thirds of the frame height, and reports in `status.md`.
 
 ## Codex error-check brief
 
@@ -268,7 +273,7 @@ Previous: Why do metal-reactivity trends follow electron removal? Next: How do h
 
 ## Open decisions
 
-- **1. Exceptions (learning review).** Peroxide and hydride exceptions are grey on-screen tags and in the notes, not spoken; the halogen-with-oxygen exception is spoken once (A2 feedback). Keep, or speak all three.
+- **1. Exceptions (learning review).** Peroxide and hydride exceptions are grey on-screen tags, not spoken; the halogen exception tag names oxygen and fluorine (Revision 2, brief 183), and the oxygen case is spoken once (A2 feedback). The trimmed key notes keep the main rules only.
 - **2. Hydrogen chloride example (learning review).** Scene 6 uses H₂ + Cl₂ as the "no ions" case (equation only). Fallback: methane burning (C −4 → +4), which is more familiar but has larger numbers.
 - **3. Scene count (learning review).** 18 scenes, several short; if the review finds scenes 8 to 10 rushed, merge 9 into 10 and drop the prediction (saves about 3 s).
 
@@ -276,3 +281,27 @@ Previous: Why do metal-reactivity trends follow electron removal? Next: How do h
 
 - Revision 1 has had no independent review. Next: student learning review (is the agents scene clear; is the rule card too dense at once), then the science check and Codex error check.
 - Checker output (5 November): narration 5,585 characters; per scene (1 to 18): 329, 330, 384, 310, 406, 351, 299, 263, 108, 345, 390, 331, 238, 325, 263, 361, 477, 75; no em dash; every quoted cue found in its scene's narration in spoken order.
+- Brief 183 reviews (6 November): 0 blocker, 2 should fix, 1 optional; all resolved in Revision 2.
+- Checker output (Revision 2, 6 November): narration 5,594 characters; per scene (1 to 18): 338, 330, 384, 310, 406, 351, 299, 263, 108, 345, 390, 331, 238, 325, 263, 361, 477, 75; no em dash; every bold cue quoted in its scene's Visual in spoken order.
+
+## Revision 2 (6 Nov 2026)
+
+Brief 183 findings (`checks/c-y11-m3-v09-learning-review.md`, `checks/c-y11-m3-v09-science-check.md`; both list the same three):
+1. Oxygen against oxygen gas (should fix): scene 1 now says "No oxygen gas takes part in this reaction at all"; the heading is "hook: no oxygen gas"; the screen keeps the "no O₂(g)" tag and adds a grey hand tag "O is in the water and sulfate, but no O₂ gas reacts".
+2. Halogen exception tag (should fix): scene 7's tag now reads "halogens other than F: usually −1, not when bonded to O or F"; the Decisions rule entry says so.
+3. Handoff scene reference (optional, applied): Decisions now call the handoff scene 17.
+
+High-risk redesign (scene level; narration, numbers and teaching logic kept):
+- Revision 1 held the zinc line for scenes 1 to 5 (about 130 s) and the rule card beside the working for 6 to 10 (about 105 s). Revision 2 changes the stage in every teaching scene (Board layout); no set-up runs past about 32 s.
+- Scene 1: three painted plates (zinc beaker after, burnt magnesium, rusty nail) fill the frame in the first 20 s; the rusty nail replaces a grey tag.
+- Scene 3: the zinc beaker with a surface lens beside a large OIL RIG card; scene 5: a two-species partner diagram; scene 11: the chlorine gas jar plate beside the equation; scene 12: the silver chloride plate at two thirds of the frame height.
+- Live readouts: electron counters in scene 4 (lost and gained tick together) and the oxidation-number meter in scenes 10, 11, 12 and both feedback scenes (pointers slide from before to after values, with a readout of the change and its meaning; scene 11 adds 2 × 3 = 6 lost, 6 × 1 = 6 gained).
+- Framed answers with a green tick: the agent line (5), S = +6 and Cl = −1 (8), Mn = +7 (10), Fe = +3 (11), both feedback answers. Crossed slips carry red hand tags ("it acts on its partner", "electrons, not oxygen", "no number changes: not redox", "the oxidising agent is reduced", "rule order: O first").
+- Hand tags and a pen mark in role colours in every teaching scene (1 to 12).
+- Memory aid as a framed card; key notes cut to five short bullets (about 340 characters of bullet text).
+- Decisions gain "Colour roles", "Type sizes", "Simulation" and a revised "Board layout".
+- Question cards already arrive with their full text; unchanged.
+
+New plate requests: none (existing `y11c-rusty-nail-v1.png`, `y11c-gas-jar-chlorine-v1.png`, `y11c-cuso4-beaker-zinc-v1.png` and `m5x-strong-acid-mg-v1.png` added, each inspected).
+
+Counts: 5,594 characters (Revision 1: 5,585); about 504 s to about 507 s.

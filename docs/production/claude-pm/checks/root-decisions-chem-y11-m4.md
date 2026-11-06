@@ -21,3 +21,7 @@ Claude (root), 5 November 2026. Earlier course decisions in `root-decisions-chem
 14. **Lengths.** m4-v08 and v09 sit at the cap; v10, v12 and v14 near the 5,500 floor. Repairs must use named cuts or stay length-neutral.
 15. **Plates.** The peroxide and plugged flasks (requested by m3-v15 and m2-v08) are needed by m4-v04 and v05; coded fallbacks written. New: the limestone and quicklime pair.
 16. **Site corrections** (Module 4 lessons 2, 4 to 13) are listed in each design's Decisions; Codex logs them, first lesson 6's C=O value, lesson 4's impossible temperature falls and lesson 11's methane ΔS sign.
+
+## After brief 183 repairs (6 November 2026)
+
+- **m4-v01 spirit burner:** m3 decision 19 applies (footage or painted stills, "follow your school's approved method", SDS named in the author note). No method is presented as school-approved.
