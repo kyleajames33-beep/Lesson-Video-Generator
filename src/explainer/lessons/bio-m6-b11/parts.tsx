@@ -223,7 +223,7 @@ export const Ladder: React.FC<{rungs?: number[]; o?: number; lit?: number; label
 				return (
 					<g key={k} opacity={r}>
 						<rect x={LAD.x0} y={y - 9} width={LAD.x1 - LAD.x0} height={18} rx={9} fill={k === lit ? '#fff3d9' : '#f3ead6'} stroke={k === lit ? AMBER : '#b9a98f'} strokeWidth={k === lit ? 4 : 3} />
-						<Sx x={LAD.x0 + 22} y={y - 22} text={RUNGS[k]} size={28} color={k === lit ? AMBER_INK : GREY_INK} hand opacity={labelO} />
+						<Sx x={LAD.x0 + 22} y={y - 22} text={RUNGS[k]} size={34} color={k === lit ? AMBER_INK : GREY_INK} hand opacity={labelO} />
 					</g>
 				);
 			})}

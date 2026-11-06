@@ -34,6 +34,9 @@ export const PLATES = {
 	leaf: mk('m7-healthy-leaf-v1.png', N2, [201, 611, 1799, 1390]),
 	rhino: mk('m6-northern-white-rhino-v1.png', N2, [160, 533, 1840, 1466]),
 	banana: mk('m6-banana-wild-vs-cavendish-v1.png', N2, [211, 23, 1916, 1964]),
+	// Quality fix (6 Nov 2026): the painted DNA helix (scene 2 anchor) and the liver (exam question 1 givens).
+	helix: mk('b5x-zoom-helix-v1.png', N2, [619, 154, 1481, 1846]),
+	liver: mk('m8-liver-v1.png', N2, [200, 449, 1800, 1550]),
 };
 /** Natural x of the gap between normal and sickle cells; the banana pair's gap. */
 export const SICKLE_SPLIT = 1000;

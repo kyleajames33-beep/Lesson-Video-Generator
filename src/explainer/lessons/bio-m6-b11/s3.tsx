@@ -11,7 +11,7 @@ import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {CardBox} from '../bio-m6-b01/parts';
 import {S, hold} from './common';
 import {TopThumb} from './s1';
-import {AMBER, AMBER_INK, BIO_INK, CARD, Cavendish, GREY_INK, INK, INK_SOFT, Ladder, MarkText, Pill, PLATES, Pl, prog} from './parts';
+import {AMBER, AMBER_INK, BIO_INK, CARD, Cavendish, EDGE, GREY_INK, INK, INK_SOFT, Ladder, MarkText, Pill, PLATES, Pl, prog, smooth, vis} from './parts';
 
 const PauseHold: React.FC<{id: string; at: number; x?: number; y?: number; cx?: number; cy?: number}> = ({id, at, x = 140, y = 1048, cx = 1680, cy = 840}) => {
 	const h = hold(id);
@@ -48,6 +48,12 @@ const MARKS1 = ['no longer codes for a working protein', "reduces the liver's ab
 qCheck(STRIP1({a: 0, b: 0, c: 0, d: 0, qa: 0, qb: 0}).blocks, MARKS1.map(phrase => ({phrase, at: 0})));
 
 // ---------- 11a. Attempt one ----------
+/** The liver fills the empty card on "First", then moves aside as the question text arrives. */
+const LiverIn: React.FC<{t: number; move: number}> = ({t, move}) => {
+	const f = useCurrentFrame();
+	const m = smooth(prog(f, move, 30));
+	return <Pl p={PLATES.liver} cx={960 + (1640 - 960) * m} cy={560 + (690 - 560) * m} w={640 + (330 - 640) * m} o={prog(f, t - 4, 14)} />;
+};
 const KA = cues(S('attempt'), {two: 'Two exam questions now', first: 'First', gene: 'A gene-editing treatment', taken: "It's taken up", changes: 'changes one base', protein: 'That protein reduces', explain: 'Explain how the edit', identify: 'Then identify', pause: 'Pause here to answer'});
 export const SceneAttempt: React.FC = () => {
 	const t: T1 = {a: KA.gene, b: KA.taken, c: KA.changes, d: KA.protein, qa: KA.explain, qb: KA.identify};
@@ -55,12 +61,14 @@ export const SceneAttempt: React.FC = () => {
 		<>
 			<Heading text="Exam question 1" at={KA.two} size={50} />
 			<Overlay>
-				<HscTag at={KA.two} />
-				<CardBox x={100} y={180} w={1720} h={830} at={KA.first - 6} />
+				<HscTag at={0} />
+				<CardBox x={100} y={180} w={1720} h={830} at={0} />
 				<QText q={Q1(t)} x={140} y={250} w={1640} size={35} card={false} />
 				<AnsBox x={140} y={610} w={1300} h={170} at={KA.explain + 20} label="(a)" />
 				<AnsBox x={140} y={800} w={1300} h={190} at={KA.identify + 20} label="(b)" />
-				<PauseHold id="attempt" at={KA.pause} cy={845} />
+				<LiverIn t={8} move={KA.taken - 10} />
+				<Sx x={1640} y={830} text="liver: takes up the particles" size={30} color={GREY_INK} hand anchor="middle" at={KA.taken + 10} />
+				<PauseHold id="attempt" at={KA.pause} cx={1640} cy={930} />
 			</Overlay>
 		</>
 	);
@@ -80,6 +88,7 @@ export const SceneFeedbackOne: React.FC = () => (
 			<Line x={200} y={440} text="no working PCSK9 protein in liver cells" at={KB.stops + 14} />
 			<Line x={200} y={500} text="→  liver keeps its ability to remove LDL" at={KB.remove + 6} />
 			<Line x={200} y={560} text="→  less LDL in the blood" at={KB.falls} />
+			<Pl p={PLATES.liver} cx={1620} cy={500} w={300} />
 			<AnsBox x={100} y={630} w={1720} h={210} at={-100} label="(b)" />
 			<Line x={200} y={690} text="off-target edits elsewhere in the genome" at={KB.anywhere + 6} />
 			<Line x={200} y={750} text="long-term safety (the edit is permanent)" at={KB.safe + 6} />
@@ -117,15 +126,19 @@ export const SceneAttemptTwo: React.FC = () => (
 // ---------- 11d. Feedback two ----------
 const KD = cues(S('feedback-two'), {part: 'Part of it holds', sickle: 'already treat sickle cell', many: 'many genes', reach: 'hard to reach', cost: 'cost limits', over: 'overstated', could: 'could treat', saying: "Saying it's approved", mistake: 'the classic mistake'});
 const ALL2: T2 = {a: -100, d: -100};
+const ALL2D: T2 = {a: -100, d: -100};
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	return (
 		<>
-			<Heading text="Evaluate the headline" at={4} size={50} />
+			<Heading text="Evaluate the headline" at={24} size={50} />
 			<Overlay>
 				<HscTag at={-100} />
-				<CardBox x={100} y={180} w={1720} h={110} at={-100} />
-				<QText q={S2(ALL2, [{phrase: MARKS2[0], at: KD.part + 10}, {phrase: MARKS2[1], at: KD.part + 22}])} x={140} y={250} w={1640} size={38} card={false} />
+				{/* frame 0 matches attempt two (card, question, answer box) so the crossfade does not ghost; then the card closes up */}
+				<rect x={100} y={180} width={1720} height={830 - 690 * smooth(prog(f, 16, 24))} rx={22} fill={CARD} stroke={EDGE} strokeWidth={3} />
+				<g opacity={1 - prog(f, 6, 12)}><CardBox x={140} y={420} w={1320} h={570} at={-100} dash="10 7" /></g>
+				<g opacity={vis(f, -100, 6, 10)}><QText q={Q2(ALL2D)} x={140} y={262} w={1640} size={40} card={false} /></g>
+				<g opacity={prog(f, 6, 10)}><QText q={S2(ALL2, [{phrase: MARKS2[0], at: KD.part + 10}, {phrase: MARKS2[1], at: KD.part + 22}])} x={140} y={262} w={1640} size={40} card={false} /></g>
 				<g transform="translate(70,330) scale(0.62) translate(-130,-300)">
 					<Ladder lit={4} labelO={0.9} />
 					<TopThumb s={1} />
@@ -161,12 +174,16 @@ export const SceneDecision: React.FC = () => {
 			<Heading text="For any future biotechnology" at={KE.any} size={56} />
 			<Overlay>
 				{STEPS.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
+					<g key={i} opacity={0.4 + 0.6 * prog(f, s.at, 14)}>
 						<rect x={140} y={225 + i * 130} width={1180} height={100} rx={22} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
 						<Sx x={190} y={290 + i * 130} text={`${i + 1}`} size={46} color={AMBER_INK} weight={800} />
 						<Sx x={250} y={290 + i * 130} text={s.t} size={46} color={INK} hand />
 					</g>
 				))}
+				<g transform="translate(1430,240) scale(0.62) translate(-130,-300)" opacity={0.45 + 0.55 * vis(f, KE.ladder, KE.judge, 12)}>
+					<Ladder lit={f >= KE.ladder ? 4 : -1} labelO={0.95} />
+					<TopThumb s={1} />
+				</g>
 				<g opacity={prog(f, KE.next, 14)}>
 					<rect x={700} y={830} width={1120} height={130} rx={36} fill={CARD} stroke={AMBER} strokeWidth={3.5} />
 					<Cavendish cx={735} cy={895} w={100} id="b11-next-banana" />
@@ -180,12 +197,16 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'CRISPR gene editing: a guide RNA pairs with a chosen DNA sequence and leads the Cas9 enzyme there to cut both strands. Repair often adds or loses bases. The guide can sometimes cut similar sequences elsewhere (off-target edits).',
-	'Approved use (2023): sickle cell disease. Blood stem cells are edited outside the body so less BCL11A is made; foetal haemoglobin is made again and prevents most sickling. The sickle allele remains. It needs chemotherapy, weeks in a specialist hospital and over US$2 million (US price), so most patients cannot get it yet.',
-	'Future directions include editing cells inside the body, edited crops and DNA screening. Editing suits conditions caused by one gene; most common diseases involve many genes and the environment.',
-	'Gene drive: an allele that copies itself to the other chromosome, so nearly all offspring inherit it. It could suppress malaria mosquitoes; it has worked in lab cages but not been released in the wild. Uncertainties: resistance, ecological effects, consent across borders, reversal.',
-	'Judge a future use by need, feasibility and fairness, and write "could ... if ...".',
+	'CRISPR: a guide RNA pairs with a chosen DNA stretch and leads Cas9 there.',
+	'Cas9 cuts both strands. Repair often adds or loses bases, switching the stretch off.',
+	'Off-target: the guide can pair with a similar stretch and cut there too.',
+	'Sickle cell (approved 2023): stem cells edited in the lab make foetal haemoglobin again.',
+	'The sickle allele remains. Chemotherapy, weeks in hospital, over US$2 million.',
+	'Editing suits one-gene conditions; common diseases involve many genes + environment.',
+	'Gene drive: copies itself to the other chromosome, so nearly all offspring inherit it.',
+	'Drives crashed caged mosquitoes; none released. Unknowns: resistance, ecology, borders.',
+	'Judge by need, feasibility, fairness; write "could ... if ...".',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Advanced isn't the same as proven. Need, feasibility, fairness." tag="place each claim on the evidence ladder: idea, lab, animals, human trials, approved" size={28} aidTop={800} />
+	<NotesBoard notes={NOTES} aid="Advanced isn't the same as proven. Need, feasibility, fairness." tag="place each claim on the evidence ladder: idea, lab, animals, human trials, approved" size={33} aidTop={830} />
 );

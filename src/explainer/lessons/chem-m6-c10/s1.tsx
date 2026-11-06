@@ -12,6 +12,7 @@ import {
 } from './parts';
 import type {EItem, IceR} from './parts';
 import {Tray} from '../chem-m5-c10/parts';
+import {AcidLens} from './lens';
 
 // ---------- shared ----------
 export const HX_EQ = (at: number): EItem[] => eq(['HX(aq)', '+', 'H_2O(l)', '<=>', 'H_3O^{+}(aq)', '+', 'X^{-}(aq)'], at, at);
@@ -42,7 +43,7 @@ export const SceneHook: React.FC = () => {
 	const mw2 = fullMeterW(h);
 	return (
 		<>
-			<Heading text="Which acid is stronger?" at={K1.not} size={60} />
+			<Heading text="Two acids: which is stronger?" at={4} size={60} />
 			<Overlay>
 				<LabMeter x={x1} y={y} h={h} read={r1} name="HX" c="0.0500 mol/L" at={K1.hx} pulse={K1.r278 + 10} />
 				<LabMeter x={x2} y={y} h={h} read={r2} name="ethanoic acid" c="0.500 mol/L" at={K1.eth} pulse={K1.r252 + 10} />
@@ -64,35 +65,37 @@ export const SmallMeters: React.FC<{at?: number; o?: number}> = ({at = -100, o =
 	const h = 150;
 	return (
 		<g opacity={o}>
-			<LabMeter x={1310} y={50} h={h} read={() => '2.78'} name="HX" c="0.0500 mol/L" at={at} size={22} />
-			<LabMeter x={1600} y={50} h={h} read={() => '2.52'} name="ethanoic acid" c="0.500 mol/L" at={at} size={22} />
+			<LabMeter x={1310} y={50} h={h} read={() => '2.78'} name="HX" c="0.0500 mol/L" at={at} size={26} />
+			<LabMeter x={1600} y={50} h={h} read={() => '2.52'} name="ethanoic acid" c="0.500 mol/L" at={at} size={26} />
 		</g>
 	);
 };
 export const SceneKaNumber: React.FC = () => {
 	const items = HX_EQ(K2.met + 10);
-	const es = 44, SX = 96, SY = 330;
+	const es = 44, SX = 96, SY = 300;
 	const w2 = eSpan(items, 2, es, SX);
 	const vh = 220;
 	return (
-		<Overlay>
-			<SmallMeters />
-			<DimG at={K2.e18} to={0.4}><EqLine items={items} x={SX} y={SY} size={es} /></DimG>
-			<KaFrac x={SX} y={480} prefix="Ka =" num="[H_3O^{+}][X^{-}]" den="[HX]" size={52} at={K2.ka} numAt={K2.hyd} denAt={K2.over} />
-			<Tray x={760} y={440} w={220} at={K2.over + 6} label="left out" items={[{t: 'H_2O', at: K2.over + 16, from: [w2.cx, SY - 14]}]} size={38} />
-			<Note x={SX} y={250} text="Module 5" size={30} color={INK_SOFT} at={K2.met} out={K2.same} />
-			<DimG at={K2.e18} to={0.45}><Note x={SX} y={655} text="Ka: same at any concentration (fixed temperature)" size={36} color={TEAL} at={K2.same} /></DimG>
-			<PicH p={VINEGAR} x={SX} y={700} h={vh} o={prog(useCurrentFrame(), K2.e18, 14)} />
-			<AChip x={SX + picW(VINEGAR, vh) + 30} y={790} text="ethanoic acid: Ka = 1.8 × 10^{−5} (25 °C)" size={36} color={TEAL} hand={false} at={K2.e18} />
-			<AChip x={1160} y={460} text="HX: Ka = ?" size={44} color={INK} hand={false} at={K2.from} />
-			<Arrow x1={1330} y1={450} x2={1390} y2={300} at={K2.from + 10} color={INK_SOFT} width={5} />
-			{void K2.change}{void K2.dont}{void K2.ice}
-		</Overlay>
+		<>
+			<Heading text="Ka: a number for the acid itself" at={4} size={58} />
+			<Overlay>
+				<SmallMeters />
+				<DimG at={K2.e18} to={0.55}><EqLine items={items} x={SX} y={SY} size={es} /></DimG>
+				<KaFrac x={SX} y={455} prefix="Ka =" num="[H_3O^{+}][X^{-}]" den="[HX]" size={60} at={K2.ka} numAt={K2.hyd} denAt={K2.over} />
+				<Tray x={720} y={410} w={220} at={K2.over + 6} label="left out" items={[{t: 'H_2O', at: K2.over + 16, from: [w2.cx, SY - 14]}]} size={38} />
+				<AcidLens cx={1450} cy={560} r={200} at={K2.ka - 6} ions={[3, 11]} ionRing={[K2.hyd, K2.over]} molRing={[K2.over, K2.change]} title="weak acid at equilibrium: mostly molecules" titleAt={K2.ka} />
+				<DimG at={K2.e18} to={0.55}><Note x={SX} y={640} text="Ka: same at any concentration (fixed temperature)" size={38} color={TEAL} at={K2.same} /></DimG>
+				<PicH p={VINEGAR} x={SX} y={700} h={vh} o={prog(useCurrentFrame(), K2.e18, 14)} />
+				<AChip x={SX + picW(VINEGAR, vh) + 30} y={780} text="ethanoic acid: Ka = 1.8 × 10^{−5} (25 °C)" size={38} color={TEAL} hand={false} at={K2.e18} />
+				<AChip x={1250} y={870} text="HX: Ka = ?" size={52} color={INK} hand={false} at={K2.from} />
+				{void K2.dont}{void K2.ice}
+			</Overlay>
+		</>
 	);
 };
 
 // ---------- worked example board ----------
-export const WB = {card: {x: 1290, y: 84, w: 534, lh: 56, s: 31}, strip: {x: 330, y: 330}, ice: {x: 96, y: 390, rh: 76}};
+export const WB = {card: {x: 1290, y: 84, w: 534, lh: 56, s: 31}, strip: {x: 330, y: 330}, ice: {x: 96, y: 390, rh: 84}};
 export const TASK = 'Find Ka for HX';
 export const stripG = (items: EItem[]) => {
 	const s = Math.min(48, fitSize(items, 1300, 48));
@@ -116,7 +119,7 @@ export const SceneWeHyd: React.FC = () => {
 	const f = useCurrentFrame();
 	const items = HX_EQ(K3.find + 10);
 	const g = stripG(items);
-	const BX = 230, BYY = 640, BW = 1000, BH = 34;
+	const BX = 160, BYY = 680, BW = 1000, BH = 40;
 	const chunk = 0.0332 * BW;
 	const over = smooth(prog(f, K3.equal, 18)) * (1 - prog(f, K3.equal + 50, 14));
 	const gone = K3.equal + 66;
@@ -126,8 +129,8 @@ export const SceneWeHyd: React.FC = () => {
 			<HXCard at={[K3.find + 20, K3.find + 30]} markAt={K3.ten - 4} />
 			<StepAfter task={TASK} text="Step 1 of 2: [H_3O^{+}]" at={K3.first} />
 			<DimG at={K3.ten} to={0.35}><EqLine items={items} x={WB.strip.x} y={WB.strip.y} size={g.s} /></DimG>
-			<WLine x={96} y={470} size={46} dim={gone} items={P('[H_3O^{+}] = 10^{−2.78}', K3.ten, {t: '= 1.66 × 10^{−3} mol/L', color: TEAL}, K3.r166)} />
-			<Note x={96} y={540} text="keep the digits; round at the end" size={34} color={INK_SOFT} at={K3.keep} out={K3.three} />
+			<WLine x={96} y={480} size={56} dim={gone} items={P('[H_3O^{+}] = 10^{−2.78}', K3.ten, {t: '= 1.66 × 10^{−3} mol/L', color: TEAL}, K3.r166)} />
+			<Note x={96} y={556} text="keep the digits; round at the end" size={38} color={INK_SOFT} at={K3.keep} out={K3.three} />
 			<Fade at={K3.three - 4} out={gone}>
 				<rect x={BX} y={BYY} width={BW} height={BH} rx={BH / 2} fill="#efe6d4" stroke={INK_SOFT} strokeWidth={3} />
 				<Sx x={BX + BW} y={BYY - 16} text="c = 0.0500" size={32} color={INK} anchor="end" weight={700} at={-1000} />
@@ -141,7 +144,10 @@ export const SceneWeHyd: React.FC = () => {
 					</g>
 				) : null}
 			</Fade>
-			<KeptChip x={1380} y={650} text="[H_3O^{+}] = 1.66 × 10^{−3} mol/L" at={gone} color={TEAL} size={34} />
+			<LabMeter x={1330} y={270} h={290} read={() => '2.78'} name="HX" c="0.0500 mol/L" at={K3.first - 6} pulse={K3.ten - 4} size={30} />
+			<AcidLens cx={1580} cy={850} r={150} at={K3.three - 6} out={gone} n={30} s={0.85} ions={[]} split={{i: 13, at: K3.three + 10}} ionRing={[K3.three + 30, gone]} />
+			<Note x={1400} y={1040} text="about 1 in 30 ionises" size={36} color={PROTON_INK} at={K3.three + 30} out={gone} />
+			<KeptChip x={1240} y={760} text="[H_3O^{+}] = 1.66 × 10^{−3} mol/L" at={gone} color={TEAL} size={38} />
 			{void K3.neg}{void K3.weak}{void K3.strong}
 		</Overlay>
 	);
@@ -158,8 +164,8 @@ export const SceneWeIce: React.FC = () => {
 	const back = K4.xm + 36;
 	const rows: IceR[] = [
 		{cells: [{t: '0.0500', at: K4.now + 10}, {t: '0', at: K4.now + 10}, {t: '0', at: K4.now + 10}], dim: [K4.now + 12, 0.35]},
-		{cells: [{t: '−' + h, at: back + 6, color: '#c4432f', size: 30}, {t: '+' + h, at: back, color: '#1f8a5b', size: 30}, {t: '+' + h, at: back + 3, color: '#1f8a5b', size: 30}], dim: [K4.r0483, 0.35]},
-		{cells: [{t: '0.0500 − 0.00166', at: K4.left + 10, size: 32, swap: {t: '0.0483', at: K4.r0483}}, {t: h, at: K4.bottom + 20, size: 34}, {t: h, at: K4.xm + 16, size: 34}], lit: [K4.bottom, K4.measured + 60]},
+		{cells: [{t: '−' + h, at: back + 6, color: '#c4432f', size: 36}, {t: '+' + h, at: back, color: '#1f8a5b', size: 36}, {t: '+' + h, at: back + 3, color: '#1f8a5b', size: 36}], dim: [K4.r0483, 0.35]},
+		{cells: [{t: '0.0500 − 0.00166', at: K4.left + 10, size: 38, swap: {t: '0.0483', at: K4.r0483}}, {t: h, at: K4.bottom + 20, size: 40}, {t: h, at: K4.xm + 16, size: 40}], lit: [K4.bottom, K4.measured + 60]},
 	];
 	const yE = I.y + 2.5 * I.rh, yC = I.y + 1.5 * I.rh;
 	return (
@@ -171,15 +177,17 @@ export const SceneWeIce: React.FC = () => {
 			<OpGlow items={items} i={6} size={g.s} x={WB.strip.x} y={WB.strip.y} at={K4.one + 6} len={36} color={PROTON} />
 			<DimG at={10} to={0.4} undim={K4.one - 6}><DimG at={K4.xm + 10} to={0.4}><EqLine items={items} x={WB.strip.x} y={WB.strip.y} size={g.s} /></DimG></DimG>
 			<IceRows x={I.x} xR={g.xR} y={I.y} rh={I.rh} cols={g.cols} rows={rows} at={K4.now} unit={{at: K4.now + 10}} />
-			<KeptChip x={1380} y={650} text="[H_3O^{+}] = 1.66 × 10^{−3} mol/L" at={-100} out={K4.bottom + 20} color={TEAL} size={34} />
+			<KeptChip x={1240} y={760} text="[H_3O^{+}] = 1.66 × 10^{−3} mol/L" at={-100} out={K4.bottom + 20} color={TEAL} size={38} />
+			<AcidLens cx={1600} cy={820} r={170} at={K4.each - 6} out={K4.so} n={14} s={1.25} ions={[]} split={{i: 6, at: K4.one}} ionRing={[K4.one + 20, K4.so]} title="one HX → one H₃O⁺ + one X⁻" titleAt={K4.one + 10} />
 			<Fade at={back - 10} out={K4.r0483}>
 				{[1, 2].map(j => <Arrow key={j} x1={g.cols[j] + 130} y1={yE - 14} x2={g.cols[j] + 130} y2={yC + 10} at={back - 10} color={TEAL} width={4} />)}
 				<Note x={g.cols[2] + 160} y={(yE + yC) / 2 + 6} text="work backwards" size={30} color={TEAL} at={-1000} />
 			</Fade>
-			<WLine x={96} y={720} size={44} items={P('Ka = (1.66 × 10^{−3})^{2} / 0.0483', K4.so + 10, {t: '= 5.70 × 10^{−5} → 5.7 × 10^{−5}', color: TEAL}, K4.r57)} />
-			<Note x={96} y={800} text="pH 2 d.p. → [H_3O^{+}] 2 s.f. → Ka 2 s.f." size={34} color={INK_SOFT} hand={false} at={K4.dp} out={K4.measured} />
-			<Note x={96} y={800} text="measured [H_3O^{+}]: exact c − x, no 5% check" size={34} color={INK_SOFT} hand={false} at={K4.nothing} out={K4.nothing + 70} />
-			<AChip x={1240} y={850} text="HX: Ka = 5.7 × 10^{−5}" size={44} color={TEAL} hand={false} at={K4.r57 + 40} />
+			<WLine x={96} y={750} size={56} dim={K4.r57 + 10} dimTo={0.6} items={P('Ka = (1.66 × 10^{−3})^{2} / 0.0483', K4.so + 10)} />
+			<WLine x={200} y={840} size={56} items={P({t: '= 5.70 × 10^{−5} → 5.7 × 10^{−5}', color: TEAL}, K4.r57)} />
+			<Note x={96} y={940} text="pH 2 d.p. → [H_3O^{+}] 2 s.f. → Ka 2 s.f." size={38} color={INK_SOFT} hand={false} at={K4.dp} out={K4.measured} />
+			<Note x={96} y={940} text="measured [H_3O^{+}]: exact c − x, no 5% check" size={38} color={INK_SOFT} hand={false} at={K4.nothing} out={K4.nothing + 70} />
+			<AChip x={1220} y={790} text="HX: Ka = 5.7 × 10^{−5}" size={52} color={TEAL} hand={false} at={K4.r57 + 40} />
 			{void K4.each}{void K4.two}{void kaFracW}
 		</Overlay>
 	);
@@ -189,11 +197,13 @@ export const SceneWeIce: React.FC = () => {
 const S5 = 'hook-answer';
 const K5 = cues(sc(S5), {so: 'So H X has', three: 'three times bigger', stronger: 'the stronger acid', dilute: 'more dilute', ph: 'pH describes one', ka: 'K a describes'});
 export const SceneHookAnswer: React.FC = () => {
-	const h = 200, x1 = 560, x2 = 1060, y = 120;
+	const h = 230, x1 = 520, x2 = 1060, y = 170;
 	const b1 = meterBeaker(x1, y, h);
 	const c1 = mw('HX: Ka = 5.7 × 10^{−5}', 40, false, 700) + 56;
-	const AX = 300, BX = 1000, CY = 520;
+	const AX = 300, BX = 1000, CY = 560;
 	return (
+		<>
+		<Heading text="Back to the two acids" at={4} size={58} />
 		<Overlay>
 			<LabMeter x={x1} y={y} h={h} read={() => '2.78'} name="HX" c="0.0500 mol/L" at={-100} size={26} />
 			<LabMeter x={x2} y={y} h={h} read={() => '2.52'} name="ethanoic acid" c="0.500 mol/L" at={-100} size={26} />
@@ -207,5 +217,6 @@ export const SceneHookAnswer: React.FC = () => {
 			<Sx x={340} y={845} text="Ka: the acid itself." size={44} color={TEAL} weight={800} at={K5.ka} />
 			{void K5.so}
 		</Overlay>
+		</>
 	);
 };
