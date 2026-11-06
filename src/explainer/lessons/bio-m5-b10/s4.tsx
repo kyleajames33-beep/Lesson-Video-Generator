@@ -47,6 +47,15 @@ export const SceneAttemptB10: React.FC = () => {
 		<>
 			<Heading text="Red-green colour blindness: recessive allele on the X" at={K12.first} size={46} />
 			<Overlay>
+				{/* the stem's gene, shown as it is named; it gives way to the question lines */}
+				<g opacity={fadeV(f, K12.first + 8, K12.p1 - 14)}>
+					<rect x={900} y={250} width={920} height={500} rx={24} fill="#fffdf8" stroke="rgba(60,45,20,0.2)" strokeWidth={3} />
+					<SexChrom x={1030} y={420} kind="X" tag="b" s={2.2} tagO={prog(f, K12.first + 16, 12)} />
+					<Sx x={1170} y={410} text="X^{b}: the colour-blind allele" size={42} color={INK} weight={800} at={K12.first + 16} />
+					<Sx x={1170} y={466} text="recessive, on the X" size={40} color={AMBER_INK} hand at={K12.rec + 8} />
+					<SexChrom x={1030} y={640} kind="Y" slot={1} s={2.2} o={prog(f, K12.rec + 14, 12)} />
+					<Sx x={1170} y={650} text="the Y carries no copy" size={40} color={INK} hand at={K12.rec + 14} />
+				</g>
 				<Pedigree ped={PCB} L={L12} o={id => prog(f, appear[id], 12)} />
 				<Sx x={xy('I-1')[0]} y={xy('I-1')[1] - 56} text="her father" size={28} color={INK_SOFT} hand anchor="middle" at={K12.father + 4} />
 				<Sx x={wx - 60} y={wy + 10} text="woman" size={28} color={INK_SOFT} hand anchor="end" at={K12.woman + 4} />
@@ -83,7 +92,7 @@ export const SceneFeedbackOneB10: React.FC = () => {
 		<>
 			<Heading text="Question one: feedback" at={4} size={50} />
 			<Overlay>
-				<Sx x={96} y={196} text="(a) first child a colour-blind son?   (b) a son colour-blind?   (c) could a daughter be colour-blind?" size={26} color={INK_SOFT} weight={600} at={0} />
+				<Sx x={96} y={196} text="(a) first child a colour-blind son?   (b) a son colour-blind?   (c) could a daughter be colour-blind?" size={30} color={INK_SOFT} weight={600} at={0} />
 				<Pedigree ped={PCB} L={L13} />
 				{/* the woman is a carrier (dot drawn on her circle) */}
 				<g opacity={prog(f, K13.carrier, 10)}><circle cx={bx} cy={by} r={L13.sz * 0.14} fill={INK} /></g>
@@ -168,16 +177,16 @@ export const SceneFeedbackTwoB10: React.FC = () => {
 	const G = {x: 1100, y: 330, cell: 150, dr: 34};
 	const up = (to: [number, number], at: number) => {
 		const t = prog(f, at, 22);
-		return <AlleleChip x={lerp(460, to[0], t)} y={lerp(560, to[1], t)} t="i" r={18} o={fadeV(f, at - 4, at + 40)} />;
+		return <AlleleChip x={lerp(460, to[0], t)} y={lerp(606, to[1], t)} t="i" r={22} o={fadeV(f, at - 4, at + 40)} />;
 	};
 	return (
 		<>
 			<Heading text="Question two: feedback" at={4} size={50} />
 			<Overlay>
-				<Sx x={96} y={196} text="(a) genotypes of mother, father and child   (b) chance the next child is type AB" size={26} color={INK_SOFT} weight={600} at={0} />
-				<Family x={460} y={330} s={0.85} at={[-30, -30, -30]} geno={['I^{A} i', 'I^{B} i', 'i i']} genoAt={[K15.mother, K15.father, K15.twoi + 4]} />
-				{up([316, 330], K15.fromeach)}
-				{up([604, 330], K15.fromeach + 6)}
+				<Sx x={96} y={196} text="(a) genotypes of mother, father and child   (b) chance the next child is type AB" size={30} color={INK_SOFT} weight={600} at={0} />
+				<Family x={460} y={330} s={1.2} at={[-30, -30, -30]} geno={['I^{A} i', 'I^{B} i', 'i i']} genoAt={[K15.mother, K15.father, K15.twoi + 4]} />
+				{up([256, 330], K15.fromeach)}
+				{up([664, 330], K15.fromeach + 6)}
 				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K15.sq - 4} topAt={K15.sq - 2} sideAt={K15.sq} fillAt={i => K15.sq + 4 + i * 5} discR={G.dr} chipR={18}
 					phen={i => prog(f, K15.sq + 14 + i * 5, 12)} phenText={i => `type ${ABO.cells[i].ph}`} phenSize={26}
 					ring={i => (ABO.cells[i].ph === 'AB' ? prog(f, K15.chance, 10) : 0)} />
@@ -192,29 +201,51 @@ export const SceneFeedbackTwoB10: React.FC = () => {
 
 // ---------- 13. Decision rule and handoff ----------
 const K16 = cues(S('decision-rule'), {when: "So when a cross doesn't give 3 to 1", read: 'read the heterozygote first', between: 'In between means incomplete dominance', both: 'Both showing means co-dominance', more: 'More than two alleles', sons: 'if sons and daughters show different ratios', next: "Next, you'll use all of these"});
+/** One decision card: it stands ready with its question, then fills with its visual and rule on its words. */
+const RuleCard: React.FC<{x: number; y: number; q: string; rule: string; sub: string; ready: number; at: number; children: React.ReactNode}> = ({x, y, q, rule, sub, ready, at, children}) => {
+	const f = useCurrentFrame();
+	const r = prog(f, ready, 12), p = prog(f, at, 14);
+	if (r <= 0.01) return null;
+	return (
+		<g opacity={r}>
+			<rect x={x} y={y} width={830} height={280} rx={24} fill="#fffdf8" stroke={p > 0.5 ? AMBER : 'rgba(60,45,20,0.25)'} strokeWidth={p > 0.5 ? 4 : 3} strokeDasharray={p > 0.5 ? undefined : '12 9'} />
+			<Sx x={x + 260} y={y + 74} text={q} size={42} color={INK_SOFT} hand />
+			<g opacity={p}>
+				{children}
+				<Sx x={x + 260} y={y + 160} text={rule} size={48} color={INK} weight={800} />
+				<Sx x={x + 260} y={y + 226} text={sub} size={34} color={AMBER_INK} hand />
+			</g>
+		</g>
+	);
+};
 export const SceneDecisionB10: React.FC = () => {
 	const f = useCurrentFrame();
+	const C = [[110, 250], [980, 250], [110, 560], [980, 560]];
+	const ready = K16.read + 6;
 	return (
 		<>
 			<Heading text="When a cross doesn't give 3 : 1" at={K16.when} size={56} />
 			<Overlay>
-				<Chip x={150} y={210} text="read the heterozygote first" at={K16.read} size={40} color={AMBER_INK} stroke={AMBER} />
-				<PlateB p={PL10.snapPink} cx={200} cy={346} w={60} o={prog(f, K16.between, 12)} />
-				<Chip x={260} y={312} text="heterozygote in between: incomplete dominance" at={K16.between} size={40} color={INK} stroke={AMBER} />
-				<HairZoom x={200} y={462} r={34} o={prog(f, K16.both, 12)} />
-				<Chip x={260} y={428} text="heterozygote shows both: co-dominance" at={K16.both} size={40} color={INK} stroke={AMBER} />
-				<g opacity={prog(f, K16.more, 12)}>
-					{['I^{A}', 'I^{B}', 'i'].map((a, i) => <AlleleChip key={a} x={140 + i * 48} y={578} t={a} r={18} />)}
-				</g>
-				<Chip x={260} y={544} text="more than two alleles in the population: multiple alleles" at={K16.more} size={40} color={INK} stroke={AMBER} />
-				<SexChrom x={200} y={694} kind="X" s={0.8} o={prog(f, K16.sons, 12)} />
-				<Chip x={260} y={660} text="sons and daughters differ: look for a gene on the X" at={K16.sons} size={40} color={INK} stroke={AMBER} />
+				<Chip x={1060} y={110} text="read the heterozygote first" at={K16.read} size={42} color={AMBER_INK} stroke={AMBER} />
+				<RuleCard x={C[0][0]} y={C[0][1]} q="heterozygote in between?" rule="incomplete dominance" sub="pink snapdragon" ready={ready} at={K16.between}>
+					<PlateB p={PL10.snapPink} cx={C[0][0] + 130} cy={C[0][1] + 140} w={150} />
+				</RuleCard>
+				<RuleCard x={C[1][0]} y={C[1][1]} q="heterozygote shows both?" rule="co-dominance" sub="roan: red and white hairs" ready={ready + 4} at={K16.both}>
+					<HairZoom x={C[1][0] + 130} y={C[1][1] + 140} r={96} />
+				</RuleCard>
+				<RuleCard x={C[2][0]} y={C[2][1]} q="more than two alleles?" rule="multiple alleles" sub="in the population; two per person" ready={ready + 8} at={K16.more}>
+					{['I^{A}', 'I^{B}', 'i'].map((a, i) => <AlleleChip key={a} x={C[2][0] + 60 + (i % 2) * 140 - (i === 2 ? -70 : 0)} y={C[2][1] + 90 + Math.floor(i / 2) * 110} t={a} r={40} />)}
+				</RuleCard>
+				<RuleCard x={C[3][0]} y={C[3][1]} q="sons and daughters differ?" rule="a gene on the X" sub="sex linkage" ready={ready + 12} at={K16.sons}>
+					<SexChrom x={C[3][0] + 80} y={C[3][1] + 145} kind="X" tag="h" s={2} />
+					<SexChrom x={C[3][0] + 190} y={C[3][1] + 150} kind="Y" s={2} />
+				</RuleCard>
 				<Fade at={K16.next}>
-					<rect x={1040} y={860} width={780} height={110} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
-					<PSym x={1100} y={900} sex="M" aff sz={30} />
-					<PSym x={1150} y={900} sex="F" aff={false} sz={30} />
-					<Sx x={1125} y={958} text="?" size={36} color={AMBER_INK} weight={800} anchor="middle" />
-					<Sx x={1200} y={930} text="Next: unfamiliar crosses and pedigrees" size={38} color={INK} hand />
+					<rect x={560} y={890} width={800} height={110} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
+					<PSym x={620} y={930} sex="M" aff sz={30} />
+					<PSym x={670} y={930} sex="F" aff={false} sz={30} />
+					<Sx x={645} y={988} text="?" size={36} color={AMBER_INK} weight={800} anchor="middle" />
+					<Sx x={720} y={960} text="Next: unfamiliar crosses and pedigrees" size={38} color={INK} hand />
 				</Fade>
 			</Overlay>
 		</>
@@ -223,11 +254,13 @@ export const SceneDecisionB10: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = notesCheck([
-	'Sex-linked (X-linked) genes: females XX, males XY; the Y has no copy. One recessive allele shows in a male. Write X^{H} X^{h}, X^{h} Y.',
-	'A father gives his X to every daughter and his Y to every son. X^{H} X^{h} × X^{H} Y: 1/4 of all children an affected son, 1/2 of sons; no affected daughters.',
-	'X-linked recessive pedigrees: mostly males; through carrier mothers; never father to son. An affected daughter of an unaffected father rules it out.',
-	'Incomplete dominance: heterozygote in between (pink snapdragon). Co-dominance: both expressed (roan; AB). Two heterozygotes give 1 : 2 : 1 in both.',
-	'ABO: three alleles (I^{A}, I^{B}, i), two per person. I^{A} and I^{B} co-dominant, both dominant over i. Type O = ii.',
+	'X-linked genes: females XX, males XY; the Y has no copy.',
+	'One recessive allele shows in a male (X^{h} Y).',
+	'Dad gives his X to every daughter and his Y to every son.',
+	'X^{H} X^{h} × X^{H} Y: 1/2 of sons affected, 1/4 of all children.',
+	'X-linked recessive: mostly males, through carrier mothers, never father to son.',
+	'Incomplete dominance: heterozygote in between. Co-dominance: both show.',
+	'ABO: I^{A} and I^{B} co-dominant, both dominant over i. Type O = ii.',
 ]);
 /** Notes text with ^{x} superscripts as HTML sup. */
 const supText = (t: string) => t.split(/(\^\{[^}]*\})/g).map((part, i) => (part.startsWith('^{') ? <sup key={i} style={{fontSize: '0.62em'}}>{part.slice(2, -1)}</sup> : <React.Fragment key={i}>{part}</React.Fragment>));
@@ -237,16 +270,17 @@ export const SceneNotesB10: React.FC = () => (
 		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 175, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 22}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 34, fontWeight: 500, color: INK, lineHeight: 1.28}}>{supText(n)}</div>
+				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 16}}>
+					<div style={{flex: 'none', width: 14, height: 14, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.25}}>{supText(n)}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 900}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: AMBER_INK, lineHeight: 1.2}}>Memory: Incomplete is in-between; co shows both.<br />Dad gives his X to daughters and his Y to sons.</div>
+		<Enter at={100} style={{position: 'absolute', left: 110, top: 800, width: 1700, boxSizing: 'border-box', padding: '22px 34px', background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 26}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 34, fontWeight: 700, color: AMBER_INK}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 48, fontWeight: 700, color: INK, lineHeight: 1.25}}>Incomplete is in-between; co shows both.<br />Dad gives his X to daughters and his Y to sons.</div>
 		</Enter>
 	</>
 );

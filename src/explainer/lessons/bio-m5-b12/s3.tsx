@@ -24,10 +24,19 @@ const Board: React.FC<{at: {heads: number; l1: number; l2: number; block: number
 					<Sx x={x + 30} y={250} text={i ? 'profiling: selected markers' : 'sequencing: base order'} size={46} color={i ? TEALC : CPLUM} hand />
 				</g>
 			))}
-			<QCard x={130} y={290} w={780} text="is this disease allele present?" o={prog(f, at.l1, 12)} dim={dim} icon={<TinyRow x={166} y={335} />} />
-			<QCard x={130} y={400} w={780} text="how common is this SNP in each population?" o={prog(f, at.l2, 12)} dim={dim} icon={<TinyRow x={166} y={445} />} />
-			<QCard x={1010} y={290} w={780} text="is this man the father?" o={prog(f, at.r1, 12)} dim={dim} icon={<MiniGel x={1030} y={300} s={0.7} />} />
-			<QCard x={1010} y={400} w={780} text="how related are these captive animals?" o={prog(f, at.r2, 12)} dim={dim} icon={<MiniGel x={1030} y={410} s={0.7} />} />
+			{/* each card's tool, drawn as the card appears */}
+			<g opacity={prog(f, at.heads + 8, 12) * (1 - 0.55 * dim)}>
+				<TileRow x={176} y={572} seq="CCTGTGGAG" pitch={74} w={64} h={56} tile={i => ({glow: i === 4 ? 1 : 0})} />
+				<Sx x={140} y={650} text="reads every base, in order" size={34} color={INK_SOFT} hand />
+			</g>
+			<g opacity={prog(f, at.heads + 14, 12) * (1 - 0.55 * dim)}>
+				<MiniGel x={1030} y={530} s={1.25} />
+				<Sx x={1190} y={588} text="compares repeat lengths" size={34} color={INK_SOFT} hand />
+			</g>
+			<QCard x={130} y={290} w={780} text="is this disease allele present?" size={36} o={prog(f, at.l1, 12)} dim={dim} icon={<TinyRow x={166} y={335} />} />
+			<QCard x={130} y={400} w={780} text="how common is this SNP in each population?" size={34} o={prog(f, at.l2, 12)} dim={dim} icon={<TinyRow x={166} y={445} />} />
+			<QCard x={1010} y={290} w={780} text="is this man the father?" size={36} o={prog(f, at.r1, 12)} dim={dim} icon={<MiniGel x={1030} y={300} s={0.7} />} />
+			<QCard x={1010} y={400} w={780} text="how related are these captive animals?" size={36} o={prog(f, at.r2, 12)} dim={dim} icon={<MiniGel x={1030} y={410} s={0.7} />} />
 			<g opacity={1 - 0.55 * dim}>
 				<Fade at={at.block}>
 					<DrawPath d="M700,720 L1220,720" at={at.block} dur={16} color={INK_SOFT} width={4} dash="12 9" />
@@ -35,7 +44,7 @@ const Board: React.FC<{at: {heads: number; l1: number; l2: number; block: number
 				<Cross x={960} y={720} at={at.block + 14} s={26} />
 				<GreyTag x={960} y={750} text="STR profiling: repeat lengths only" at={at.block + 18} size={24} anchor="middle" />
 				<GreyTag x={1010} y={506} text="breeding programs: avoid pairing close relatives" at={at.cons} size={22} />
-				<Sx x={1030} y={640} text="quick and cheap across many individuals" size={30} color={INK_SOFT} hand at={at.quick} />
+				<Sx x={1030} y={652} text="quick and cheap across many individuals" size={32} color={INK} hand at={at.quick} />
 			</g>
 		</g>
 	);

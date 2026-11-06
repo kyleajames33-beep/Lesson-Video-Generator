@@ -171,30 +171,35 @@ export const SceneFeedbackTwoB12: React.FC = () => (
 const K13 = cues(S('decision-rule'), {start: 'start with the question', base: 'Need a particular base', seqit: 'Sequence it', who: "Need to know who's related", compare: 'Compare profiles', mismatch: 'one mismatch can exclude', match: 'a match needs many markers', next: "Next, we'll see"});
 export const SceneDecisionB12: React.FC = () => {
 	const f = useCurrentFrame();
+	const ready = K13.start + 6;
+	const card = (x: number, at: number) => {
+		const r = prog(f, ready, 12), p = prog(f, at, 12);
+		return r > 0.01 ? <rect x={x} y={200} width={830} height={560} rx={26} fill="#fffdf8" stroke={p > 0.5 ? AMBER : EDGE} strokeWidth={p > 0.5 ? 4 : 3} strokeDasharray={p > 0.5 ? undefined : '12 9'} opacity={r} /> : null;
+	};
 	return (
 		<>
 			<Heading text="Start with the question" at={K13.start} size={56} />
 			<Overlay>
-				<g opacity={prog(f, K13.base, 12)}>
-					<Panel x={330} y={240} w={1000} h={120} stroke={AMBER} sw={3.5} />
-					<Sx x={370} y={318} text="a particular base: sequence" size={52} color={CPLUM} hand />
-					<TileRow x={150} y={300} seq="GTG" pitch={46} w={40} h={36} tile={i => ({glow: i === 1 ? 1 : 0})} />
+				{card(110, K13.base)}
+				{card(980, K13.who)}
+				<Sx x={150} y={280} text="need a particular base?" size={46} color={f >= K13.base ? INK : INK_SOFT} hand at={ready} />
+				<Sx x={1020} y={280} text="need to know who's related?" size={46} color={f >= K13.who ? INK : INK_SOFT} hand at={ready + 4} />
+				<g opacity={prog(f, K13.seqit, 12)}>
+					<TileRow x={190} y={420} seq="CCTGTGGAG" pitch={82} w={72} h={62} tile={i => ({glow: i === 4 ? 1 : 0})} />
+					<Sx x={150} y={580} text="sequence it" size={66} color={CPLUM} hand />
+					<Sx x={150} y={650} text="a disease allele or a SNP" size={36} color={INK_SOFT} hand />
 				</g>
-				<g opacity={prog(f, K13.who, 12)}>
-					<Panel x={330} y={420} w={1000} h={120} stroke={AMBER} sw={3.5} />
-					<Sx x={370} y={498} text="who's related: profile" size={52} color={TEALC} hand />
-					<MiniGel x={150} y={440} s={0.9} />
+				<g opacity={prog(f, K13.compare, 12)}>
+					<MiniGel x={1020} y={330} s={1.9} />
+					<Sx x={1250} y={420} text="compare profiles" size={60} color={TEALC} hand />
 				</g>
-				<g opacity={prog(f, K13.mismatch, 12)}>
-					<Panel x={420} y={580} w={910} h={100} fill="#fff6e3" stroke={AMBER_INK} sw={3} />
-					<Sx x={450} y={644} text="one mismatch excludes;" size={42} color={INK} hand />
-					<Sx x={790} y={644} text="a match needs many markers" size={42} color={INK} hand at={K13.match} />
-				</g>
+				<Sx x={1020} y={600} text="one mismatch can exclude" size={44} color={INK} weight={700} at={K13.mismatch} />
+				<Sx x={1020} y={670} text="a match needs many markers" size={44} color={AMBER_INK} weight={700} at={K13.match} />
 				<Fade at={K13.next}>
-					<Panel x={1060} y={790} w={770} h={200} stroke={AMBER} sw={3.5} />
-					{Array.from({length: 18}, (_, i) => <rect key={i} x={1090 + (i % 6) * 26} y={830 + Math.floor(i / 6) * 34} width={20} height={26} rx={4} fill={CARD} stroke={INK_SOFT} strokeWidth={2} />)}
-					<Sx x={1270} y={866} text="Next: what collaborative" size={40} color={INK} hand />
-					<Sx x={1270} y={914} text="population data can show" size={40} color={INK} hand />
+					<Panel x={560} y={800} w={800} h={190} stroke={AMBER} sw={3.5} />
+					{Array.from({length: 18}, (_, i) => <rect key={i} x={590 + (i % 6) * 26} y={836 + Math.floor(i / 6) * 34} width={20} height={26} rx={4} fill={CARD} stroke={INK_SOFT} strokeWidth={2} />)}
+					<Sx x={770} y={880} text="Next: what collaborative" size={40} color={INK} hand />
+					<Sx x={770} y={930} text="population data can show" size={40} color={INK} hand />
 				</Fade>
 			</Overlay>
 		</>
@@ -203,11 +208,13 @@ export const SceneDecisionB12: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = notesCheck([
-	'DNA sequencing: reads the exact base order of a stretch of DNA (short copied fragments, read base by base, assembled by overlap). Finds SNPs and disease alleles directly; carriers show two bases at one position.',
-	'DNA profiling: compares selected markers (short tandem repeats: a short sequence repeated side by side; repeat number varies). Two copies per marker, one from each parent. Not a whole genome.',
+	'Sequencing reads the exact base order of a stretch of DNA.',
+	'It finds SNPs and disease alleles directly.',
+	'Profiling compares selected markers: short tandem repeats (STRs).',
+	'STR: a short sequence repeated side by side; repeat number varies. One copy from each parent.',
 	'Gel: DNA is negative, so it moves to + (red); shorter fragments travel further.',
-	'Every band in a child comes from the mother or the father. A child band in neither the mother nor a man excludes him (no mutation). A match needs many markers: chances multiply. A match is strong evidence, not proof.',
-	'Particular base: sequence. Relatedness or identity: profile.',
+	'Every child band comes from the mother or the father; one mismatch can exclude.',
+	'A match needs many markers: strong evidence, not proof.',
 ]);
 export const SceneNotesB12: React.FC = () => (
 	<>
@@ -215,16 +222,17 @@ export const SceneNotesB12: React.FC = () => (
 		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 170, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 28}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 13, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 35, fontWeight: 500, color: INK, lineHeight: 1.3}}>{n}</div>
+				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 16}}>
+					<div style={{flex: 'none', width: 14, height: 14, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.25}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 925}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 42, fontWeight: 700, color: AMBER_INK, lineHeight: 1.15}}>Memory: Sequence = bases; profile = selected markers. DNA runs to red.<br />Every child band from Mum or Dad.</div>
+		<Enter at={100} style={{position: 'absolute', left: 110, top: 800, width: 1700, boxSizing: 'border-box', padding: '22px 34px', background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 26}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 34, fontWeight: 700, color: AMBER_INK}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: INK, lineHeight: 1.25}}>Sequence = bases; profile = selected markers.<br />DNA runs to red. Every child band from Mum or Dad.</div>
 		</Enter>
 	</>
 );

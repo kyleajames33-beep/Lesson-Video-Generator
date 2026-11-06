@@ -47,25 +47,26 @@ const CloverTable: React.FC<{x: number; y: number; s?: number; rowAt?: number[];
 // ---------- 12a. Attempt one ----------
 const K12 = cues(S('attempt'), {two: 'Two harder questions now', first: 'a class samples white clover', some: 'Some plants have a pale V mark', siteA: 'At site A', siteB: 'At site B', state: 'State the frequency', compare: 'compare the sites', identify: 'identify one limitation', pause: 'Pause here to answer'});
 export const SceneAttemptB11: React.FC = () => {
+	const f = useCurrentFrame();
 	const h = hold('attempt');
 	return (
 		<>
 			<Heading text="White clover at two sites" at={K12.first} size={56} />
 			<Overlay>
 				<Sx x={110} y={232} text="A class counts plants at two sites on the school grounds." size={32} color={INK} weight={600} at={K12.first + 10} />
-				<CloverTable x={110} y={270} at={K12.some} rowAt={[K12.siteA, K12.siteB]} />
-				<Leaf x={1080} y={360} s={1.3} mark={1} o={1} />
-				<Sx x={1170} y={350} text="pale V mark" size={36} color={INK} hand at={K12.some} />
-				<Leaf x={1080} y={520} s={1.3} mark={0} o={1} />
-				<Sx x={1170} y={510} text="no mark" size={36} color={INK} hand at={K12.some + 8} />
-				<Sx x={110} y={600} text={D1[0]} size={34} color={INK} weight={700} at={K12.state} />
-				<AnswerBox x={110} y={616} w={1150} h={64} at={K12.state + 8} />
-				<Sx x={110} y={740} text={D1[1]} size={34} color={INK} weight={700} at={K12.compare} />
-				<AnswerBox x={110} y={756} w={1150} h={64} at={K12.compare + 8} />
-				<Sx x={110} y={880} text={D1[2]} size={34} color={INK} weight={700} at={K12.identify} />
-				<AnswerBox x={110} y={896} w={1150} h={64} at={K12.identify + 8} />
+				<CloverTable x={110} y={262} s={1.2} at={K12.some} rowAt={[K12.siteA, K12.siteB]} />
+				<Leaf x={1250} y={330} s={2} mark={1} o={prog(f, K12.some, 12)} />
+				<Sx x={1390} y={330} text="pale V mark" size={46} color={INK} hand at={K12.some} />
+				<Leaf x={1250} y={540} s={2} mark={0} o={prog(f, K12.some + 8, 12)} />
+				<Sx x={1390} y={540} text="no mark" size={46} color={INK} hand at={K12.some + 8} />
+				<Sx x={110} y={654} text={D1[0]} size={36} color={INK} weight={700} at={K12.state} />
+				<AnswerBox x={110} y={670} w={1150} h={56} at={K12.state + 8} />
+				<Sx x={110} y={784} text={D1[1]} size={36} color={INK} weight={700} at={K12.compare} />
+				<AnswerBox x={110} y={800} w={1150} h={56} at={K12.compare + 8} />
+				<Sx x={110} y={914} text={D1[2]} size={36} color={INK} weight={700} at={K12.identify} />
+				<AnswerBox x={110} y={930} w={1150} h={56} at={K12.identify + 8} />
 				<Sx x={96} y={1040} text="Pause here to answer." size={44} color={AMBER_INK} hand at={K12.pause} />
-				<Countdown start={h.startFrame} end={h.endFrame} x={1600} y={800} r={60} />
+				<Countdown start={h.startFrame} end={h.endFrame} x={1600} y={850} r={60} />
 			</Overlay>
 		</>
 	);
@@ -80,8 +81,8 @@ export const SceneFeedbackOneB11: React.FC = () => {
 		<>
 			<Heading text="Question one: feedback" at={4} size={50} />
 			<Overlay>
-				<CloverTable x={110} y={180} s={0.62} at={-30} total={prog(f, K12b.each, 14)} />
-				{D1.map((d, i) => <Sx key={i} x={1000} y={226 + i * 40} text={d} size={26} color={INK_SOFT} weight={600} at={-30} />)}
+				<CloverTable x={110} y={160} s={0.92} at={-30} total={prog(f, K12b.each, 14)} />
+				{D1.map((d, i) => <Sx key={i} x={1000} y={214 + i * 48} text={d} size={32} color={INK_SOFT} weight={600} at={-30} />)}
 				<ModelLine x={140} y={460} text={`(a) A: ${A.mark} / ${nA} = ${pc(A.mark, nA)}%`} at={K12b.a - 20} size={40} />
 				<Sx x={140} y={520} text={`B: ${B.mark} / ${nB} = ${pc(B.mark, nB)}%`} size={40} color={INK} weight={600} at={K12b.b - 20} />
 				{[{v: pc(A.mark, nA), at: K12b.a, y: 432, l: 'A'}, {v: pc(B.mark, nB), at: K12b.b, y: 494, l: 'B'}].map((b, i) => (
@@ -122,16 +123,25 @@ export const SceneAttemptTwoB11: React.FC = () => {
 		<>
 			<Heading text="A SNP with bases G or A" at={K12c.forty} size={56} />
 			<Overlay>
-				<Sx x={110} y={232} text="40 people are tested at one SNP." size={32} color={INK} weight={600} at={K12c.forty} />
-				<DataTable x={110} y={262} cols={[{w: 220, head: 'genotype'}, {w: 200, head: 'people', align: 'middle'}]} rows={ROWS2} rowAt={rowAt} at={K12c.forty} size={34} rowH={62} />
-				{['GG', 'GA', 'AA'].map((g, i) => <TileRow key={g} x={620} y={262 + 62 * (i + 1) + 31} seq={g} pitch={52} w={44} h={38} o={prog(f, rowAt[i], 12)} />)}
-				<Sx x={110} y={640} text={STIM} size={34} color={INK} weight={700} at={K12c.then} />
-				<Sx x={110} y={730} text={D2A} size={34} color={INK} weight={700} at={K12c.calc} />
-				<AnswerBox x={110} y={746} w={1150} h={64} at={K12c.calc + 8} />
-				<Sx x={110} y={870} text={D2B} size={34} color={INK} weight={700} at={K12c.does} />
-				<AnswerBox x={110} y={886} w={1150} h={64} at={K12c.does + 8} />
+				<Sx x={110} y={226} text="40 people are tested at one SNP." size={34} color={INK} weight={600} at={K12c.forty} />
+				<DataTable x={110} y={258} cols={[{w: 260, head: 'genotype'}, {w: 260, head: 'people', align: 'middle'}]} rows={ROWS2} rowAt={rowAt} at={K12c.forty} size={40} rowH={68} />
+				{['GG', 'GA', 'AA'].map((g, i) => <TileRow key={g} x={690} y={258 + 68 * (i + 1) + 34} seq={g} pitch={62} w={52} h={46} o={prog(f, rowAt[i], 12)} />)}
+				{/* one SNP position: the same stretch of DNA, with G on one copy and A on another */}
+				<g opacity={prog(f, K12c.forty + 10, 14)}>
+					<rect x={960} y={250} width={860} height={330} rx={24} fill={CARD} stroke={EDGE} strokeWidth={3} />
+					<Sx x={1000} y={310} text="one position, two versions" size={40} color={INK} hand />
+					<TileRow x={1060} y={400} seq="CTGAC" pitch={92} w={78} h={66} tile={i => ({glow: i === 2 ? 1 : 0, dim: i === 2 ? 0 : 0.4})} />
+					<Sx x={1530} y={414} text="base G" size={42} color={INK} weight={800} />
+					<TileRow x={1060} y={510} seq="CTAAC" pitch={92} w={78} h={66} tile={i => ({glow: i === 2 ? 1 : 0, dim: i === 2 ? 0 : 0.4})} />
+					<Sx x={1530} y={524} text="base A" size={42} color={INK} weight={800} />
+				</g>
+				<Sx x={110} y={682} text={STIM} size={36} color={INK} weight={700} at={K12c.then} />
+				<Sx x={110} y={770} text={D2A} size={36} color={INK} weight={700} at={K12c.calc} />
+				<AnswerBox x={110} y={786} w={1150} h={56} at={K12c.calc + 8} />
+				<Sx x={110} y={900} text={D2B} size={36} color={INK} weight={700} at={K12c.does} />
+				<AnswerBox x={110} y={916} w={1150} h={56} at={K12c.does + 8} />
 				<Sx x={96} y={1040} text="Pause here to answer." size={44} color={AMBER_INK} hand at={K12c.pause} />
-				<Countdown start={h.startFrame} end={h.endFrame} x={1600} y={800} r={60} />
+				<Countdown start={h.startFrame} end={h.endFrame} x={1600} y={850} r={60} />
 			</Overlay>
 		</>
 	);
@@ -177,6 +187,12 @@ export const SceneDecisionB11: React.FC = () => {
 			<Heading text="With frequency data" at={K13.so} size={56} />
 			<Overlay>
 				{steps.map((c, i) => (
+					<g key={'r' + i} opacity={prog(f, K13.so + 8 + i * 5, 12) * (1 - prog(f, c.at, 10))}>
+						<Panel x={330} y={Y(i)} w={820} h={100} stroke={EDGE} sw={3} dash="12 9" />
+						<Sx x={366} y={Y(i) + 66} text={i < 4 ? `${i + 1}.` : '?'} size={46} color={INK_SOFT} hand />
+					</g>
+				))}
+				{steps.map((c, i) => (
 					<g key={i} opacity={prog(f, c.at, 12)}>
 						<Panel x={330} y={Y(i)} w={820} h={100} stroke={i === 4 ? AMBER_INK : AMBER} sw={3.5} fill={i === 4 ? '#fff6e3' : CARD} />
 						<Sx x={366} y={Y(i) + 66} text={c.t} size={46} color={INK} hand />
@@ -206,11 +222,13 @@ export const SceneDecisionB11: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = notesCheck([
-	'Frequency of a characteristic = count / total counted. State the denominator. Present as a table and a bar chart.',
-	'Allele frequency = copies of that allele / all copies. Autosomal gene: 2 copies per individual (100 individuals = 200 copies).',
-	'Complete dominance: recessive phenotype frequency = homozygous recessive genotype frequency (9% short = 0.09 tt). Carriers can\'t be seen.',
-	'SNP: a one-base difference at a known DNA position; each version is an allele. Reading both copies gives the genotype. Most change nothing; some matter (sickle cell).',
-	'An allele more common in one group = association, not proof of cause. One SNP is one marker. Limits: sample size, representation, consistent categories.',
+	'Frequency = count / total counted. State the denominator.',
+	'Present frequencies as a table and a bar chart.',
+	'Allele frequency = copies of that allele / all copies (2 per individual).',
+	"Recessive phenotype frequency = tt frequency (9% short = 0.09). Carriers can't be seen.",
+	'SNP: a one-base difference at a known DNA position; each version is an allele.',
+	'More common in one group = association, not proof of cause.',
+	'Limits: sample size, representation, consistent categories.',
 ]);
 export const SceneNotesB11: React.FC = () => (
 	<>
@@ -218,16 +236,18 @@ export const SceneNotesB11: React.FC = () => (
 		<Enter at={110} style={{position: 'absolute', left: 1130, top: 84}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 32, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
-		<div style={{position: 'absolute', left: 110, top: 175, width: 1700}}>
+		<div style={{position: 'absolute', left: 110, top: 180, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 30}}>
-					<div style={{flex: 'none', width: 14, height: 14, marginTop: 14, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 36, fontWeight: 500, color: INK, lineHeight: 1.3}}>{n}</div>
+				<Enter key={i} at={30 + i * 10} style={{display: 'flex', gap: 18, marginBottom: 16}}>
+					<div style={{flex: 'none', width: 14, height: 14, marginTop: 16, borderRadius: 999, background: AMBER}} />
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, color: INK, lineHeight: 1.25}}>{n}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={90} style={{position: 'absolute', left: 110, top: 930}}>
-			<div style={{fontFamily: FONT_HAND, fontSize: 46, fontWeight: 700, color: AMBER_INK, lineHeight: 1.15}}>Memory: Count alleles, not people. Frequency, SNP, limits.</div>
+		<Enter at={100} style={{position: 'absolute', left: 110, top: 800, width: 1700, boxSizing: 'border-box', padding: '22px 34px', background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 26}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 34, fontWeight: 700, color: AMBER_INK}}>Remember</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 52, fontWeight: 700, color: INK, lineHeight: 1.25}}>Count alleles, not people.</div>
+			<div style={{fontFamily: FONT_HAND, fontSize: 40, fontWeight: 700, color: INK, lineHeight: 1.25}}>Three words: frequency, SNP, limits.</div>
 		</Enter>
 	</>
 );

@@ -79,23 +79,36 @@ const RowFrame: React.FC<{y: number; at: number; label?: string; labelAt?: numbe
 const K6 = cues(S('heterozygote-first'), {sofar: 'So far, one allele has always', three: 'gave 3 to 1', notonly: "that's not the only possibility", fast: 'The fastest way', read: 'read the heterozygote first', like: 'Does it look like one of the homozygotes', between: 'does it look in between', both: 'or does it show both at once'});
 export const SceneHetFirstB10: React.FC = () => {
 	const f = useCurrentFrame();
+	// Row 1 opens large (the plants fill the frame while the 3 : 1 recap is narrated), then settles into the
+	// three-row board as the two new questions arrive.
+	const m = prog(f, K6.between - 22, 20);
+	const L = (a: number, b: number) => lerp(a, b, m);
+	const BIG = {cols: [520, 880, 1240], ground: 840, k: 0.34};
+	const SM = {cols: HB.cols, ground: HB.rows[0] + 70, k: 0.12};
+	const col = (i: number) => L(BIG.cols[i], SM.cols[i]);
+	const frameO = prog(f, K6.sofar, 12);
 	return (
 		<>
 			<Heading text="Read the heterozygote first" at={K6.fast} size={56} />
 			<Overlay>
-				{['homozygote', 'heterozygote', 'homozygote'].map((t, i) => <Sx key={i} x={HB.cols[i]} y={196} text={t} size={30} color={INK_SOFT} hand anchor="middle" at={K6.sofar + i * 4} />)}
-				<RowFrame y={HB.rows[0]} at={K6.sofar} label="complete dominance" labelAt={K6.sofar + 4} />
+				{frameO > 0.01 ? (
+					<g opacity={frameO}>
+						<rect x={L(90, HB.labelX - 20)} y={L(160, HB.rows[0] - 115)} width={L(1740, 1720)} height={L(860, 230)} rx={22} fill="#fffdf8" stroke="rgba(60,45,20,0.18)" strokeWidth={3} />
+					</g>
+				) : null}
+				<Sx x={L(130, HB.labelX)} y={L(240, HB.rows[0] + 12)} text="complete dominance" size={L(46, 36)} color={INK} hand at={K6.sofar + 4} />
+				{['homozygote', 'heterozygote', 'homozygote'].map((t, i) => <Sx key={i} x={col(i)} y={L(330, 196)} text={t} size={L(38, 30)} color={INK_SOFT} hand anchor="middle" at={K6.sofar + i * 4} />)}
 				{([['TT', true], ['Tt', true], ['tt', false]] as [string, boolean][]).map(([g, tall], i) => (
 					<g key={g} opacity={prog(f, K6.sofar + 6 + i * 5, 12)}>
-						<PeaPlant tall={tall} x={HB.cols[i]} ground={HB.rows[0] + 70} k={0.12} />
-						<GenoTag x={HB.cols[i] + 90} y={HB.rows[0] + 60} text={g} size={28} />
+						<PeaPlant tall={tall} x={col(i)} ground={L(BIG.ground, SM.ground)} k={L(BIG.k, SM.k)} />
+						<GenoTag x={col(i) + L(0, 90)} y={L(966, HB.rows[0] + 60)} text={g} size={L(46, 28)} />
 					</g>
 				))}
-				<PunnettHSC x={1530} y={HB.rows[0] - 62} cell={62} res={TtTt} top={['T', 't']} side={['T', 't']} gridAt={K6.three - 6} topAt={K6.three - 4} sideAt={K6.three - 2} fillAt={() => K6.three} discR={14} chipR={11.5} />
-				<Sx x={1720} y={HB.rows[0] + 14} text="3 : 1" size={40} color={INK} weight={800} at={K6.three + 6} />
-				<GreyTag x={1700} y={HB.rows[0] + 34} text="B9" at={K6.three + 6} size={22} />
-				<Ring cx={HB.cols[1]} cy={HB.rows[0] - 10} rx={66} ry={100} at={K6.read} />
-				<Sx x={HB.cols[1] + 140} y={HB.rows[0] + 6} text="looks like TT" size={28} color={AMBER_INK} hand at={K6.like} />
+				<PunnettHSC x={L(1460, 1530)} y={L(400, HB.rows[0] - 62)} cell={L(130, 62)} res={TtTt} top={['T', 't']} side={['T', 't']} gridAt={K6.three - 6} topAt={K6.three - 4} sideAt={K6.three - 2} fillAt={() => K6.three} discR={L(30, 14)} chipR={L(24, 11.5)} />
+				<Sx x={L(1590, 1720)} y={L(780, HB.rows[0] + 14)} text="3 : 1" size={L(72, 40)} color={INK} weight={800} anchor={m > 0.5 ? 'start' : 'middle'} at={K6.three + 6} />
+				<GreyTag x={L(1660, 1700)} y={L(820, HB.rows[0] + 34)} text="B9" at={K6.three + 6} size={L(28, 22)} />
+				<Ring cx={col(1)} cy={L(BIG.ground - 230, HB.rows[0] - 10)} rx={L(150, 66)} ry={L(300, 100)} at={K6.read} />
+				<Sx x={L(1010, HB.cols[1] + 140)} y={L(470, HB.rows[0] + 6)} text="looks like TT" size={L(44, 28)} color={AMBER_INK} hand at={K6.like} />
 				<RowFrame y={HB.rows[1]} at={K6.between} label="in between?" labelAt={K6.between + 4} q />
 				<RowFrame y={HB.rows[2]} at={K6.both} label="both at once?" labelAt={K6.both + 4} q />
 			</Overlay>

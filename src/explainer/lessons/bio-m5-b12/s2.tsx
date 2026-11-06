@@ -24,12 +24,21 @@ export const SceneStrB12: React.FC = () => {
 		<>
 			<Heading text="Short tandem repeats" at={K5.called} size={56} />
 			<Overlay>
-				<TileRow x={180} y={290} seq="CTTGATA" pitch={64} w={56} h={46} tile={i => ({o: prog(f, K5.run + i * 4, 8), glow: i >= 3 ? vis(f, K5.gata + i * 10 - 20, K5.rep + 20) : 0})} />
-				{box > 0.01 ? <rect x={180 + 3 * 64 - 34} y={258} width={4 * 64 + 4} height={74} rx={14} fill="none" stroke={AMBER_INK} strokeWidth={4} opacity={box} /> : null}
-				<Sx x={180 + 4.5 * 64} y={240} text="one repeat unit" size={30} color={AMBER_INK} hand anchor="middle" at={K5.gata + 46} />
+				{/* where the marker sits: a chromosome with one STR site, shown as profiling is introduced */}
+				<g opacity={prog(f, K5.today, 14)}>
+					<ChromBar x={1120} y={480} w={680} h={52} />
+					<rect x={1120 + 0.62 * 680 - 12} y={444} width={24} height={72} rx={6} fill={AMBER} stroke={AMBER_INK} strokeWidth={3} />
+					<Sx x={1120 + 0.62 * 680} y={560} text="one marker on a chromosome" size={34} color={AMBER_INK} hand anchor="middle" />
+				</g>
+				<g opacity={prog(f, K5.run + 10, 14)}>
+					<DrawPath d={`M${1120 + 0.62 * 680 - 12},${450} L${880},${350}`} at={K5.run + 10} dur={16} color={INK_SOFT} width={2.5} dash="8 8" />
+				</g>
+				<TileRow x={200} y={300} seq="CTTGATA" pitch={110} w={96} h={80} tile={i => ({o: prog(f, K5.run + i * 4, 8), glow: i >= 3 ? vis(f, K5.gata + i * 10 - 20, K5.rep + 20) : 0})} />
+				{box > 0.01 ? <rect x={200 + 3 * 110 - 58} y={244} width={4 * 110 + 6} height={116} rx={18} fill="none" stroke={AMBER_INK} strokeWidth={5} opacity={box} /> : null}
+				<Sx x={200 + 4.5 * 110} y={226} text="one repeat unit" size={40} color={AMBER_INK} hand anchor="middle" at={K5.gata + 46} />
 				<RepeatStrip x={140} y={420} n={9} grow={prog(f, K5.rep, 60)} o={prog(f, K5.rep - 6, 10)} />
-				<Sx x={1120} y={300} text="short tandem repeat (STR)" size={50} color={INK} hand at={K5.side} />
-				<Sx x={1120} y={350} text="tandem: side by side" size={34} color={INK_SOFT} weight={700} at={K5.side + 14} />
+				<Sx x={1120} y={300} text="short tandem repeat (STR)" size={54} color={INK} hand at={K5.called} />
+				<Sx x={1120} y={356} text="tandem: side by side" size={38} color={INK_SOFT} weight={700} at={K5.side + 14} />
 				{/* repeat numbers vary */}
 				{[7, 9, 12].map((n, i) => (
 					<RepeatStrip key={n} x={140} y={530 + i * 56} n={n} bw={44} bh={30} o={prog(f, K5.varies + i * 8, 12)} label={false} />
@@ -179,43 +188,67 @@ const K8 = cues(S('many-markers'), {
 });
 export const SceneManyMarkersB12: React.FC = () => {
 	const f = useCurrentFrame();
-	const RY = [300, 410, 520, 650];
+	const RY = [340, 440, 540, 660];
+	const CX = (i: number) => 220 + i * 72;
+	const lanes = (i: number) => {
+		const r = [0.23, 0.71, 0.37, 0.58, 0.18, 0.66, 0.3, 0.49, 0.82, 0.12];
+		return i === 6 ? [0.3, 0.7] : [r[i], r[(i + 3) % 10]];
+	};
 	const rungs = [{n: 1, at: K8.matching}, {n: 2, at: K8.mult + 10}, {n: 3, at: K8.three}, {n: 10, at: K8.tenb}];
 	return (
 		<>
 			<Heading text="Why a match needs many markers" at={K8.match} size={56} />
 			<Overlay>
 				{/* a crowd of ten, one shares the pattern */}
-				{Array.from({length: 10}, (_, i) => (
-					<g key={i} opacity={prog(f, K8.lots + i * 2, 10)}>
-						{i === 6 && f >= K8.ten ? <circle cx={150 + i * 52} cy={270} r={30} fill={AMBER} opacity={0.6 * prog(f, K8.ten, 10)} /> : null}
-						<PSym x={150 + i * 52} y={270} sex={i % 2 ? 'F' : 'M'} aff={false} sz={36} />
-					</g>
-				))}
-				<Sx x={130} y={348} text="1 in 10 share this pattern" size={36} color={AMBER_INK} hand at={K8.ten} />
-				<GreyTag x={560} y={316} text="example number" at={K8.ten + 10} size={22} />
+				{/* the evidence pattern, and ten unrelated individuals, each with their own bands at this marker */}
+				<g opacity={prog(f, K8.match, 12)}>
+					<rect x={100} y={250} width={62} height={140} rx={8} fill="#dceaf1" stroke={AMBER_INK} strokeWidth={3} />
+					{[0.3, 0.7].map((t, j) => <rect key={j} x={110} y={258 + t * 124 - 5} width={42} height={10} rx={2} fill="#3e6a86" />)}
+					<Sx x={131} y={226} text="evidence" size={28} color={AMBER_INK} hand anchor="middle" />
+				</g>
+				{Array.from({length: 10}, (_, i) => {
+					const x = CX(i);
+					return (
+						<g key={i} opacity={prog(f, K8.lots + i * 2, 10)}>
+							{i === 6 && f >= K8.ten ? <rect x={x - 34} y={174} width={68} height={228} rx={14} fill={AMBER} opacity={0.45 * prog(f, K8.ten, 10)} /> : null}
+							<PSym x={x} y={212} sex={i % 2 ? 'F' : 'M'} aff={false} sz={52} />
+							<rect x={x - 26} y={250} width={52} height={140} rx={6} fill="#dceaf1" stroke="#7d9aa8" strokeWidth={2} />
+							{lanes(i).map((t, j) => <rect key={j} x={x - 19} y={258 + t * 124 - 5} width={38} height={10} rx={2} fill="#3e6a86" />)}
+						</g>
+					);
+				})}
+				<Sx x={100} y={456} text="1 in 10 share this pattern" size={40} color={AMBER_INK} hand at={K8.ten} />
+				<GreyTag x={620} y={428} text="example number" at={K8.ten + 10} size={24} />
 				{/* three markers on three chromosomes */}
 				{[0, 1, 2].map(i => (
 					<g key={i} opacity={prog(f, i === 0 ? K8.matching : K8.sep + i * 6, 12)}>
-						<ChromBar x={140} y={470 + i * 96} w={380} h={30} />
-						<Sx x={540} y={480 + i * 96} text={`chromosome ${[3, 7, 12][i]}`} size={24} color={INK_SOFT} weight={600} />
-						<rect x={250 + i * 60} y={470 + i * 96 - 22} width={18} height={44} rx={5} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} />
+						<ChromBar x={130} y={548 + i * 88} w={440} h={36} />
+						<Sx x={590} y={560 + i * 88} text={`chromosome ${[3, 7, 12][i]}`} size={32} color={INK_SOFT} weight={600} />
+						<rect x={250 + i * 70} y={548 + i * 88 - 26} width={20} height={52} rx={5} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} />
 					</g>
 				))}
-				<GreyTag x={140} y={760} text="different chromosomes: inherited independently" at={K8.sep + 14} size={24} />
+				<GreyTag x={130} y={816} text="different chromosomes: inherited independently" at={K8.sep + 14} size={26} />
 				{/* the ladder */}
-				<Panel x={900} y={220} w={920} h={560} o={prog(f, K8.matching, 12)} />
+				<Panel x={960} y={220} w={860} h={560} o={prog(f, K8.match + 10, 12)} />
+				<Sx x={1000} y={276} text="chance a random person matches" size={36} color={INK_SOFT} hand at={K8.match + 16} />
+				{/* the ladder stands ready: each rung's value fills on its words */}
+				{rungs.map((r, i) => (
+					<g key={'g' + r.n} opacity={prog(f, K8.match + 20 + i * 4, 12) * (1 - prog(f, r.at, 10))}>
+						<Sx x={1000} y={RY[i]} text={`${r.n} marker${r.n > 1 ? 's' : ''}:`} size={44} color={INK_SOFT} weight={800} />
+						<Sx x={1250} y={RY[i]} text="?" size={44} color={INK_SOFT} weight={800} />
+					</g>
+				))}
 				{rungs.map((r, i) => (
 					<g key={r.n} opacity={prog(f, r.at, 12)}>
-						<Sx x={940} y={RY[i]} text={`${r.n} marker${r.n > 1 ? 's' : ''}:`} size={44} color={INK} weight={800} />
-						<Sx x={1190} y={RY[i]} text={ladderText(r.n)} size={44} color={r.n === 10 ? AMBER_INK : INK} weight={800} />
-						{i > 0 && r.n !== 10 ? <Sx x={1600} y={RY[i]} text="x 1/10" size={30} color={INK_SOFT} weight={700} /> : null}
+						<Sx x={1000} y={RY[i]} text={`${r.n} marker${r.n > 1 ? 's' : ''}:`} size={44} color={INK} weight={800} />
+						<Sx x={1250} y={RY[i]} text={ladderText(r.n)} size={44} color={r.n === 10 ? AMBER_INK : INK} weight={800} />
+						{i > 0 && r.n !== 10 ? <Sx x={1640} y={RY[i]} text="x 1/10" size={32} color={INK_SOFT} weight={700} /> : null}
 					</g>
 				))}
-				<Sx x={1190} y={730} text="one in ten billion" size={38} color={AMBER_INK} hand at={K8.tenb + 16} />
-				<Sx x={940} y={585} text="..." size={44} color={INK_SOFT} weight={800} at={K8.tenb} />
-				<GreyTag x={900} y={810} text="real profiles: often 16 or more markers" at={K8.real} size={26} />
-				<Sx x={900} y={910} text="a match is strong evidence, not proof" size={46} color={INK} hand at={K8.proof} />
+				<Sx x={1250} y={736} text="one in ten billion" size={40} color={AMBER_INK} hand at={K8.tenb + 16} />
+				<Sx x={1000} y={600} text="..." size={44} color={INK_SOFT} weight={800} at={K8.tenb} />
+				<GreyTag x={960} y={810} text="real profiles: often 16 or more markers" at={K8.real} size={26} />
+				<Sx x={960} y={910} text="a match is strong evidence, not proof" size={48} color={INK} hand at={K8.proof} />
 				<GreyTag x={140} y={970} text="close relatives share more bands, so the chances are not this small for a brother" at={K8.proof + 10} size={22} />
 			</Overlay>
 		</>

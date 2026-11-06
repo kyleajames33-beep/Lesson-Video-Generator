@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	ABO, ABO_TABLE, AMBER, AMBER_INK, AlleleChip, AntigenCell, Fade, GenoTag, HairZoom, HandText, Heading, INK, INK_SOFT, Overlay, PL10, PSym, PlateB, Punnett, S, SexChrom,
-	Sx, cw, fadeV, groupMarks, lerp, pgeom, prog,
+	Sx, cw, fadeV, groupMarks, lerp, pgeom, prog, FONT_DISPLAY,
 } from './shared';
 import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 
@@ -66,27 +66,47 @@ export const SceneAboSurpriseB10: React.FC = () => {
 	const word = (k: number) => cw(SA, 'AB A B and O', k);
 	/** Fill each box on the word that names its group. */
 	const fillOf = (i: number) => ({AB: word(0), A: word(1), B: word(2), O: word(4)} as Record<string, number>)[ABO.cells[i].ph];
-	const G = {x: 780, y: 360, cell: 200, dr: 42};
-	const pg = pgeom(G.x, G.y, G.cell, G.dr);
+	const G = {x: 760, y: 330, cell: 220, dr: 46};
+	const hid = prog(f, K10.hidden, 1) > 0;
+	const qO = fadeV(f, K10.parents + 14, K10.hidden);
+	const kids = ['AB', 'A', 'B', 'O'];
 	return (
 		<>
 			<Heading text="The ABO surprise" at={K10.surp} size={56} />
 			<Overlay>
-				<AntigenCell id="pa" x={200} y={400} w={110} a={1} o={prog(f, K10.parents, 12)} labels={false} />
-				<GenoTag x={420} y={400} text={prog(f, K10.hidden, 1) > 0 ? 'type A: I^{A} i' : 'type A'} size={32} o={prog(f, K10.parents, 12)} stroke={prog(f, K10.hidden, 1) > 0 ? AMBER : INK_SOFT} />
-				<AntigenCell id="pb" x={200} y={700} w={110} b={1} o={prog(f, K10.parents + 8, 12)} labels={false} />
-				<GenoTag x={420} y={700} text={prog(f, K10.hidden, 1) > 0 ? 'type B: I^{B} i' : 'type B'} size={32} o={prog(f, K10.parents + 8, 12)} stroke={prog(f, K10.hidden, 1) > 0 ? AMBER : INK_SOFT} />
-				<Sx x={300} y={550} text="×" size={56} color={INK} weight={800} anchor="middle" at={K10.parents + 4} />
-				<Sx x={300} y={830} text="each hides an i" size={32} color={AMBER_INK} hand anchor="middle" at={K10.hidden + 6} />
-				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K10.hidden} topAt={K10.hidden + 4} sideAt={K10.hidden + 8} fillAt={fillOf} discR={G.dr}
-					phen={i => prog(f, fillOf(i) + 10, 12)} phenText={i => `type ${ABO.cells[i].ph}`} phenSize={30} />
+				{/* the two parents, large, as soon as they are named */}
+				<AntigenCell id="pa" x={220} y={380} w={190} a={1} o={prog(f, K10.parents, 12)} labels={false} />
+				<GenoTag x={220} y={530} text={hid ? 'type A: I^{A} i' : 'type A'} size={38} o={prog(f, K10.parents, 12)} stroke={hid ? AMBER : INK_SOFT} />
+				<Sx x={220} y={640} text="×" size={64} color={INK} weight={800} anchor="middle" at={K10.parents + 4} />
+				<AntigenCell id="pb" x={220} y={760} w={190} b={1} o={prog(f, K10.parents + 8, 12)} labels={false} />
+				<GenoTag x={220} y={910} text={hid ? 'type B: I^{B} i' : 'type B'} size={38} o={prog(f, K10.parents + 8, 12)} stroke={hid ? AMBER : INK_SOFT} />
+				<Sx x={220} y={990} text="each hides an i" size={36} color={AMBER_INK} hand anchor="middle" at={K10.hidden + 6} />
+				{/* the square stands ready with unknown gametes until the hidden i is named */}
+				{qO > 0.01 ? (
+					<g opacity={qO}>
+						{[0, 1].map(c => <text key={'t' + c} x={G.x + G.cell * (c + 0.5)} y={G.y - 18} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44}} fill={INK_SOFT}>?</text>)}
+						{[0, 1].map(r => <text key={'s' + r} x={G.x - 30} y={G.y + G.cell * (r + 0.5) + 15} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44}} fill={INK_SOFT}>?</text>)}
+					</g>
+				) : null}
+				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K10.parents + 14} topAt={K10.hidden + 4} sideAt={K10.hidden + 8} fillAt={fillOf} discR={G.dr}
+					phen={i => prog(f, fillOf(i) + 10, 12)} phenText={i => `type ${ABO.cells[i].ph}`} phenSize={32} />
+				{/* any blood group: four possible children */}
+				<Sx x={1560} y={250} text="any blood group" size={44} color={AMBER_INK} hand anchor="middle" at={K10.any} />
+				{kids.map((t, i) => {
+					const m = groupMarks(t);
+					return (
+						<g key={t} opacity={prog(f, K10.any + 6 + i * 5, 12)}>
+							<AntigenCell id={'kid' + t} x={1335 + i * 150} y={340} w={86} a={m.a} b={m.b} labels={false} />
+							<Sx x={1335 + i * 150} y={430} text={t} size={36} color={INK} weight={800} anchor="middle" />
+						</g>
+					);
+				})}
 				<Fade at={K10.each}>
-					<rect x={1270} y={400} width={560} height={260} rx={20} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
-					<Sx x={1300} y={470} text={ABO.phen.map(p => p.ph).join(' : ')} size={40} color={INK} weight={800} />
-					<Sx x={1300} y={540} text={`= ${ABO.phen.map(p => p.n).join(' : ')}`} size={40} color={INK} weight={800} />
-					<Sx x={1300} y={616} text={`each ${ABO.frac(c => c.ph === 'O')}`} size={40} color={AMBER_INK} hand />
+					<rect x={1260} y={490} width={600} height={280} rx={20} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
+					<Sx x={1290} y={566} text={ABO.phen.map(p => p.ph).join(' : ')} size={46} color={INK} weight={800} />
+					<Sx x={1290} y={646} text={`= ${ABO.phen.map(p => p.n).join(' : ')}`} size={46} color={INK} weight={800} />
+					<Sx x={1290} y={730} text={`each ${ABO.frac(c => c.ph === 'O')}`} size={48} color={AMBER_INK} hand />
 				</Fade>
-				<Sx x={1300} y={330} text="any blood group" size={40} color={AMBER_INK} hand at={K10.any} />
 			</Overlay>
 		</>
 	);

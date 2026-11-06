@@ -51,13 +51,34 @@ export const SceneLimitsB11: React.FC = () => {
 		<>
 			<Heading text="The limits of a sample" at={K10.every} size={56} />
 			<Overlay>
-				{/* a whole breed */}
-				<g opacity={0.9 * prog(f, K10.imagine, 16)}>
-					{BREED.map((k, i) => <Cow key={i} k={k} cx={130 + i * 50} cy={250} w={46} o={0.55} />)}
-				</g>
-				<GreyTag x={110} y={290} text="a whole breed: white allele 20%" at={K10.imagine + 10} size={24} />
-				<line x1={SX(20)} y1={420} x2={SX(20)} y2={ST.y200} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="10 8" opacity={prog(f, K10.imagine + 20, 12)} />
-				<Sx x={SX(20)} y={404} text="true white allele frequency: 20%" size={32} color={INK} hand anchor="middle" at={K10.imagine + 20} />
+				{/* a whole breed: it opens large with the heading (population and a sample from it), then settles into a
+				    reference row at the top as the sample strips arrive */}
+				{(() => {
+					const m = prog(f, K10.s20 - 26, 22);
+					const big = 1 - m;
+					return (
+						<g>
+							<g opacity={prog(f, K10.every + 4, 16)}>
+								{BREED.map((k, i) => (
+									<Cow key={i} k={k} cx={lerp(160 + (i % 17) * 100, 130 + i * 50, m)} cy={lerp(450 + Math.floor(i / 17) * 165, 250, m)} w={lerp(96, 46, m)} o={lerp(1, 0.55 * 0.9, m)} />
+								))}
+							</g>
+							{big > 0.01 ? (
+								<g opacity={big}>
+									<Sx x={960} y={330} text="population: every animal in the breed" size={50} color={INK} hand anchor="middle" at={K10.every + 10} />
+									<g opacity={prog(f, K10.every + 24, 14)}>
+										<rect x={100} y={540} width={510} height={155} rx={30} fill="none" stroke={AMBER} strokeWidth={6} strokeDasharray="16 10" />
+										<Sx x={355} y={770} text="sample: the ones you count" size={44} color={AMBER_INK} hand anchor="middle" />
+									</g>
+									<Sx x={1250} y={790} text="white allele really 20%" size={52} color={INK} weight={800} anchor="middle" at={K10.imagine + 10} />
+								</g>
+							) : null}
+						</g>
+					);
+				})()}
+				<GreyTag x={110} y={290} text="a whole breed: white allele 20%" at={K10.s20 - 4} size={24} />
+				<line x1={SX(20)} y1={420} x2={SX(20)} y2={ST.y200} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="10 8" opacity={prog(f, K10.s20, 12)} />
+				<Sx x={SX(20)} y={404} text="true white allele frequency: 20%" size={32} color={INK} hand anchor="middle" at={K10.s20} />
 				{/* sample grids: 20 plates, 200 tiny chips */}
 				<g opacity={(1 - rep) * prog(f, K10.s20, 12)}>
 					<Sx x={140} y={400} text="sample of 20" size={28} color={INK} weight={800} />
