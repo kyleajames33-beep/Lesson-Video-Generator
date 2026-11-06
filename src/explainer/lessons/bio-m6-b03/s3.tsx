@@ -7,6 +7,7 @@ import {Chip, Heading, Overlay, SpanBracket, Sx, prog} from '../bio-m5-b13/share
 import {chipW, cw} from '../bio-m5-b06b/shared';
 import {AMBER, AMBER_INK, BIO_INK, BLUE_SOFT, GREY_INK, GTag, INK, INK_SOFT, Lbl} from '../bio-m6-b01/parts';
 import {S} from './common';
+import {kf} from '../chem-m5-c03/common';
 import {CHIPS, DropChip, chipXs} from './s1';
 import {M6, X6} from './s2';
 import {AABead, Beads, Brk, CG, Codons, LP, Let, MRNA_INK, PepLink, StopBar, TickS, aas, brkSpan, cX, clamp01, lerp, lx, vis} from './parts';
@@ -64,7 +65,8 @@ export const SceneReadingFrame: React.FC = () => {
 				<Lbl x={960} y={600} text="wrong amino acids, not nothing" size={42} color={AMBER_INK} anchor="middle" at={K7.wrongOnes} out={K7.wrongOnes + 44} />
 				<GTag x={960} y={570} text="real DNA has no spaces: the start codon sets the frame" at={K7.wrongOnes + 50} out={K7.del3} size={28} anchor="middle" />
 				{/* three bases: the frame lines up again */}
-				<g opacity={mo}>
+				{/* 6 Nov: drawn at 1.5x about the stage centre so the strip fills the frame. */}
+				<g opacity={mo} transform="translate(960,520) scale(1.5) translate(-960,-520)">
 					<Beads xs={beadXs} y={470} aa={aas(['AUG', 'AAA', 'CCU', 'GGA', 'UUU'])} bo={k => (k === 1 ? 1 - lift : 1)} lo={k => (k === 0 ? 1 - lift : k === 1 ? 1 - lift : 1)} />
 					{close > 0.5 ? <PepLink a={[beadXs[0], 470]} b={[beadXs[2], 470]} /> : null}
 					<circle cx={(beadXs[0] + beadXs[2]) / 2} cy={470} r={13} fill="#fff3d9" stroke={AMBER} strokeWidth={4} strokeDasharray="5 4" opacity={prog(f, K7.loses, 10)} />
@@ -74,7 +76,7 @@ export const SceneReadingFrame: React.FC = () => {
 						<Codons x0={X6} y={600} codons={['AUG', 'AAA', 'CCU', 'GGA', 'UUU']} letterO={i => (Math.floor(i / 3) === 1 ? 1 : 0)} brkO={kk => (kk === 1 ? 1 : 0)} letterColor={() => (f >= K7.worth ? AMBER_INK : undefined)} />
 					</g>
 				</g>
-				<Lbl x={960} y={700} text="multiple of three: no frameshift, one amino acid lost" size={40} color={AMBER_INK} anchor="middle" at={K7.loses + 10} out={K7.ins3} />
+				<Lbl x={960} y={755} text="multiple of three: no frameshift, one amino acid lost" size={42} color={AMBER_INK} anchor="middle" at={K7.loses + 10} out={K7.ins3} />
 				<InsertThree at={K7.ins3} beadAt={K7.adding} />
 				{void BIO_INK}{void INK_SOFT}{void lx}{void M6}{void MRNA_INK}
 			</Overlay>
@@ -117,21 +119,21 @@ const BEADC = ['#e7b98f', '#cfc58e', '#b7c79f', '#a8c6d0', '#cbb3d8', '#dba6a0',
 /** A long gene: codon brackets only, with a small bead per codon above (no letters). */
 const LongGene: React.FC<{y: number; o: number; brk: (k: number) => number; bead: (k: number) => number; mark?: {x: number; o: number}}> = ({y, o, brk, bead, mark}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
-		<rect x={GX - 10} y={y - 40} width={NC * GW + 20} height={120} rx={18} fill={BLUE_SOFT} opacity={0.55} />
+		<rect x={GX - 10} y={y - 50} width={NC * GW + 20} height={150} rx={20} fill={BLUE_SOFT} opacity={0.55} />
 		{Array.from({length: NC}, (_, k) => {
 			const b = brk(k), d = bead(k);
 			return (
 				<g key={k}>
-					{k > 0 ? <line x1={gcx(k - 1) + 15} y1={y} x2={gcx(k) - 15} y2={y} stroke={INK} strokeWidth={3} /> : null}
-					<circle cx={gcx(k)} cy={y} r={15} fill={d > 0.5 ? '#fff3d9' : BEADC[k % BEADC.length]} stroke={d > 0.5 ? AMBER : 'rgba(38,35,31,0.55)'} strokeWidth={d > 0.5 ? 5 : 2} />
-					<Brk x1={gcx(k) - GW / 2 + 8} x2={gcx(k) + GW / 2 - 8} y={y + 62} color={b > 0.5 ? AMBER : '#c9a58f'} w={b > 0.5 ? 5 : 3} />
+					{k > 0 ? <line x1={gcx(k - 1) + 26} y1={y} x2={gcx(k) - 26} y2={y} stroke={INK} strokeWidth={4} /> : null}
+					<circle cx={gcx(k)} cy={y} r={26} fill={d > 0.5 ? '#fff3d9' : BEADC[k % BEADC.length]} stroke={d > 0.5 ? AMBER : 'rgba(38,35,31,0.55)'} strokeWidth={d > 0.5 ? 6 : 2.5} />
+					<Brk x1={gcx(k) - GW / 2 + 8} x2={gcx(k) + GW / 2 - 8} y={y + 72} color={b > 0.5 ? AMBER : '#c9a58f'} w={b > 0.5 ? 6 : 4} />
 				</g>
 			);
 		})}
 		{mark && mark.o > 0.01 ? (
 			<g opacity={mark.o} transform={`translate(0,${-30 * (1 - mark.o)})`}>
-				<path d={`M${mark.x - 16},${y - 70} L${mark.x + 16},${y - 70} L${mark.x},${y - 46} Z`} fill={AMBER} />
-				<text x={mark.x} y={y - 80} textAnchor="middle" style={{fontFamily: 'Inter Tight', fontWeight: 800, fontSize: 26}} fill={AMBER_INK}>−1 base</text>
+				<path d={`M${mark.x - 20},${y - 80} L${mark.x + 20},${y - 80} L${mark.x},${y - 52} Z`} fill={AMBER} />
+				<text x={mark.x} y={y - 92} textAnchor="middle" style={{fontFamily: 'Inter Tight', fontWeight: 800, fontSize: 36}} fill={AMBER_INK}>−1 base</text>
 			</g>
 		) : null}
 	</g>
@@ -146,22 +148,24 @@ export const SceneWhatDecides: React.FC = () => {
 	const r2O = prog(f, K8.end - 16, 14) * rowO;
 	const fan = [K8.silent, K8.swaps, K8.adds];
 	const fanT = ['same', 'one swapped', 'early stop'];
-	const fws = fanT.map(t => chipW(t, 34));
+	const fws = fanT.map(t => chipW(t, 40));
 	let fx = gcx(5) - (fws.reduce((a, b) => a + b, 0) + 40) / 2;
 	const fxs = fws.map(w => { const x = fx; fx += w + 20; return x; });
 	const cxs = chipXs();
 	const lastR = cxs[2] + chipW(CHIPS[2], 34);
+	// 6 Nov: during "type" the gene sits mid-stage with its chips and labels below; on "position" it rises to make room for row 2.
+	const y1 = kf(f, [[K8.pos - 12, 450], [K8.pos + 12, 330]]);
 	return (
 		<>
 			<Heading text="What decides the effect?" at={K8.q} size={56} />
 			<Overlay>
-				<LongGene y={330} o={rowO * prog(f, K8.q, 16)} brk={r1brk} bead={r1bead} mark={r1mark} />
+				<LongGene y={y1} o={rowO * prog(f, K8.q, 16)} brk={r1brk} bead={r1bead} mark={r1mark} />
 				{fan.map((t, i) => (
 					<g key={i} opacity={1 - prog(f, K8.one, 10)}>
-						<Chip x={fxs[i]} y={470 + 0 * i} text={fanT[i]} at={t} size={34} />
+						<Chip x={fxs[i]} y={600} text={fanT[i]} at={t} size={40} />
 					</g>
 				))}
-				<Lbl x={1230} y={500} text="everything downstream" size={40} color={AMBER_INK} at={K8.every + 24} out={K8.pos} />
+				<Lbl x={1230} y={640} text="everything downstream" size={46} color={AMBER_INK} at={K8.every + 24} out={K8.pos - 12} />
 				<Lbl x={GX} y={500} text="early: most of the protein" size={40} color={AMBER_INK} at={K8.start + 30} out={K8.size - 10} />
 				<LongGene y={680} o={r2O} brk={() => 0} bead={k => (k >= 11 ? prog(f, K8.end + 16 + (k - 11) * 4, 6) : 0)} mark={{x: GX + 11 * GW, o: prog(f, K8.end, 12)}} />
 				<Lbl x={GX} y={850} text="late: last few" size={40} color={AMBER_INK} at={K8.last} out={K8.size - 10} />

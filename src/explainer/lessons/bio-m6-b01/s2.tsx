@@ -158,25 +158,30 @@ const Colony: React.FC<{x: number; y: number; r?: number; o?: number; ghost?: bo
 export const SceneReplica: React.FC = () => {
 	const f = useCurrentFrame();
 	const vh = (360 * (PLATES.velvet.box[3] - PLATES.velvet.box[1])) / (PLATES.velvet.box[2] - PLATES.velvet.box[0]);
-	const up = 250, down = D1.cy - vh / 2 + 70;
-	const vx = kf(f, [[K7.then - 4, D1.cx], [K7.then + 18, D2.cx]]);
-	const vy = kf(f, [[K7.velvet, up], [K7.onto - 2, down], [K7.onto + 10, down], [K7.then - 4, up], [K7.then + 18, up], [K7.strep - 10, down], [K7.strep + 6, down], [K7.print + 6, up]]);
-	const vo = vis(f, K7.velvet - 8, K7.print + 24, 12);
+	const up = 290, down = D1.cy - vh / 2 + 70;
+	// The pad rests at the top right until "velvet pad", then lifts over dish 1.
+	const vx = kf(f, [[K7.velvet - 16, 1600], [K7.velvet + 6, D1.cx], [K7.then - 4, D1.cx], [K7.then + 18, D2.cx]]);
+	const vy = kf(f, [[K7.velvet - 16, 560], [K7.velvet + 6, up], [K7.onto - 2, down], [K7.onto + 10, down], [K7.then - 4, up], [K7.then + 18, up], [K7.strep - 10, down], [K7.strep + 6, down], [K7.print + 6, up]]);
+	// The apparatus (two agar dishes and the velvet pad) is on screen from the first word; dish 2 waits at 35%.
+	const vo = vis(f, -12, K7.print + 24, 12);
 	const ghost = vis(f, K7.print, K7.few + 30, 14);
 	return (
 		<>
 			<Heading text="The replica plates" at={K7.how} size={56} />
 			<Overlay>
-				<Lbl x={96} y={240} text="1952: Joshua and Esther Lederberg" size={32} color={INK_SOFT} at={K7.y1952} />
+				<Lbl x={1290} y={225} text="1952: Joshua and Esther Lederberg" size={32} color={INK_SOFT} at={K7.y1952} />
 				{/* dish 1 */}
-				<PlateAt p={PLATES.dish} cx={D1.cx} cy={D1.cy} w={D1.w} at={K7.grew - 10} />
+				<PlateAt p={PLATES.dish} cx={D1.cx} cy={D1.cy} w={D1.w} at={-14} />
 				<Lbl x={D1.cx} y={350} text="dish 1: no antibiotic" size={34} color={INK} anchor="middle" at={K7.noab} />
 				{COLS.map((_, i) => {
 					const [x, y] = colPt(D1, i);
 					return <Colony key={i} x={x} y={y} o={prog(f, K7.grew + 4 + i, 10)} />;
 				})}
 				{/* dish 2: streptomycin */}
-				<PlateAt p={PLATES.dish} cx={D2.cx} cy={D2.cy} w={D2.w} at={K7.then} />
+				<PlateAt p={PLATES.dish} cx={D2.cx} cy={D2.cy} w={D2.w} at={-14} o={lerp(0.35, 1, prog(f, K7.then, 14))} />
+				<Lbl x={D1.cx} y={930} text="agar dish" size={34} color={INK_SOFT} anchor="middle" at={-12} out={K7.never - 14} />
+				<Lbl x={D2.cx} y={930} text="agar dish" size={34} color={INK_SOFT} anchor="middle" at={-12} out={K7.few + 16} />
+				<Lbl x={1600} y={770} text="velvet pad" size={34} color={INK_SOFT} anchor="middle" at={-12} out={K7.velvet - 16} />
 				<Lbl x={D2.cx} y={350} text="dish 2: streptomycin" size={34} color={INK} anchor="middle" at={K7.strep} />
 				{COLS.map((_, i) => {
 					const [x, y] = colPt(D2, i);

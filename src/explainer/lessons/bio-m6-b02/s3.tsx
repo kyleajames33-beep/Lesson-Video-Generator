@@ -63,15 +63,20 @@ export const SceneMemory: React.FC = () => {
 		<>
 			<Heading text="Two things to keep" at={K10.two} size={56} />
 			<Overlay>
-				<Sx x={140} y={330} text="Mutagen = cause." size={80} color={INK} hand at={K10.cause} />
-				<Sx x={1000} y={330} text="Mutation = change." size={80} color={AMBER_INK} hand at={K10.change} />
-				<Sx x={140} y={570} text="UV kinks," size={96} color="#5c3f8a" hand at={K10.uvk} />
-				<Sx x={720} y={570} text="X-rays snap" size={96} color="#2d5584" hand at={K10.xs} />
-				<g opacity={prog(f, K10.uvk, 12)}><SlimStrand x={150} y={640} n={11} pitch={30} gap={40} lineW={5} kink={{i: 5, amt: kinkA}} rung={i => (i === 5 || i === 6 ? {color: AMBER, w: 5} : undefined)} /></g>
-				<g opacity={prog(f, K10.xs, 12)}><SlimStrand x={730} y={640} n={14} pitch={30} gap={40} lineW={5} breaks={[{i: 6, line: 'top', amt: brk}, {i: 6, line: 'bot', amt: brk}]} /></g>
-				<Sx x={140} y={790} text="UV can't knock electrons off, so it bonds neighbouring bases" size={32} color={INK} weight={600} at={K10.cant} />
-				<Sx x={140} y={840} text="X-rays are ionising, so they break the strands" size={32} color={INK} weight={600} at={K10.ionis} />
-				<SpectrumBar x={300} y={930} w={1320} h={44} size={19} o={prog(f, K10.rad, 12)} arrow={0} ion={0.35 + 0.65 * flash} />
+				<Sx x={140} y={300} text="Mutagen = cause." size={80} color={INK} hand at={K10.cause} />
+				<Sx x={1000} y={300} text="Mutation = change." size={80} color={AMBER_INK} hand at={K10.change} />
+				{/* The two radiation mutagens arrive as examples of causes, then light on their memory words. */}
+				<PlateB p={PLATES.uvSkin} cx={250} cy={625} w={260} o={0.4 * prog(f, K10.cause + 10, 14) + 0.6 * prog(f, K10.uvk, 12)} />
+				<PlateB p={PLATES.xray} cx={1110} cy={625} w={260} o={0.4 * prog(f, K10.cause + 18, 14) + 0.6 * prog(f, K10.xs, 12)} />
+				<Sx x={400} y={600} text="UV kinks," size={88} color="#5c3f8a" hand at={K10.uvk} />
+				<Sx x={1260} y={600} text="X-rays snap" size={88} color="#2d5584" hand at={K10.xs} />
+				<g opacity={prog(f, K10.uvk, 12)}><SlimStrand x={410} y={660} n={11} pitch={30} gap={40} lineW={5} kink={{i: 5, amt: kinkA}} rung={i => (i === 5 || i === 6 ? {color: AMBER, w: 5} : undefined)} /></g>
+				<g opacity={prog(f, K10.xs, 12)}><SlimStrand x={1270} y={660} n={14} pitch={30} gap={40} lineW={5} breaks={[{i: 6, line: 'top', amt: brk}, {i: 6, line: 'bot', amt: brk}]} /></g>
+				<Sx x={140} y={810} text="not ionising: can't knock electrons off," size={34} color={INK} weight={600} at={K10.cant} />
+				<Sx x={140} y={854} text="so it bonds neighbouring bases" size={34} color={INK} weight={600} at={K10.cant + 8} />
+				<Sx x={1000} y={810} text="ionising: knocks electrons off," size={34} color={INK} weight={600} at={K10.ionis} />
+				<Sx x={1000} y={854} text="so it breaks the strands" size={34} color={INK} weight={600} at={K10.ionis + 8} />
+				<SpectrumBar x={220} y={920} w={1480} h={54} size={25} o={prog(f, K10.rad, 12)} arrow={0} ion={0.35 + 0.65 * flash} />
 				{void INK_SOFT}
 			</Overlay>
 		</>

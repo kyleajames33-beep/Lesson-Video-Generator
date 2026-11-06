@@ -5,11 +5,12 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
-import {Countdown, DrawPath, Heading, MistakeChip, Overlay, Sx, prog} from '../bio-m5-b13/shared';
+import {Countdown, DrawPath, Heading, MistakeChip, Overlay, PlateB, Sx, prog} from '../bio-m5-b13/shared';
 import {NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {translate} from '../bio-m5-b06c/shared';
-import {AMBER, AMBER_INK, AnsTable, BLUE_SOFT, CardBox, CurveArrow, INK, INK_SOFT, Lbl, SlimStrand} from '../bio-m6-b01/parts';
+import {AMBER, AMBER_INK, AnsTable, BLUE_SOFT, CardBox, CurveArrow, INK, INK_SOFT, Lbl, SlimStrand, wForH} from '../bio-m6-b01/parts';
+import {CFTR_CELL} from './assets';
 import {S, hold} from './common';
 import {Brk, ChartCard, Codons, Let, MRNA_INK, MiniChrom, SplitStrand, StopBar, brkSpan, cX, codonToAA, lerp, lx, vis} from './parts';
 
@@ -139,6 +140,18 @@ const Q2 = (t: T2, marks: QMark[] = []) => qCheck([
 ] as QBlock[], marks);
 
 // ---------- 10c. Attempt two ----------
+/** The CFTR protein in place: an airway cell with its CFTR channels in the top membrane (the gene's product, a given). */
+const CftrCell: React.FC = () => {
+	const f = useCurrentFrame();
+	const o = prog(f, KC.cf + 140, 14);
+	return (
+		<>
+			<PlateB p={CFTR_CELL} cx={1650} cy={790} w={wForH(CFTR_CELL, 390)} o={o} />
+			<Sx x={1650} y={1022} text="airway cell" size={32} color={INK} anchor="middle" hand at={KC.cf + 146} />
+			<Sx x={1650} y={1060} text="CFTR channels (teal)" size={30} color={INK_SOFT} anchor="middle" hand at={KC.cf + 150} />
+		</>
+	);
+};
 const KC = cues(S('attempt-two'), {second: 'Second', cf: 'The most common cystic fibrosis', tay: 'A common Tay-Sachs allele', explain: 'Explain why', pause: 'Pause here to answer'});
 export const SceneAttemptTwo: React.FC = () => (
 	<>
@@ -146,9 +159,10 @@ export const SceneAttemptTwo: React.FC = () => (
 		<Overlay>
 			<CardBox x={100} y={190} w={1720} h={380} at={KC.cf - 6} />
 			<QText q={Q2({a: KC.cf, b: KC.tay, c: KC.explain})} x={140} y={262} w={1640} size={40} card={false} />
-			<CardBox x={100} y={610} w={1360} h={300} at={KC.explain + 20} dash="10 7" />
+			<CftrCell />
+			<CardBox x={100} y={610} w={1160} h={320} at={KC.explain + 20} dash="10 7" />
 			<Sx x={130} y={656} text="answer" size={26} color={INK_SOFT} weight={700} at={KC.explain + 20} />
-			<PauseHold id="attempt-two" at={KC.pause} cy={760} />
+			<PauseHold id="attempt-two" at={KC.pause} cx={1380} cy={770} />
 		</Overlay>
 	</>
 );
@@ -278,11 +292,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 12. Key notes ----------
 const NOTES = [
-	'Point mutation: a change to one or a few bases in DNA, by substitution (one base swapped), insertion (bases added) or deletion (bases removed).',
-	'A substitution within a coding codon changes that codon; read the new codon. Silent: the same amino acid (the code is degenerate). Missense: a different amino acid (sickle cell, GAG to GUG). Nonsense: a stop codon, so the chain is cut short (beta thalassaemia, CAG to UAG).',
-	'An insertion or deletion that is not a multiple of three causes a frameshift: every codon after it is regrouped, most later amino acids change and an early stop often appears. A multiple of three keeps the frame and adds or removes amino acids.',
-	'The effect depends on type and position (near the start of a gene, or in an active site, matters more). "Point" describes the scale of the change, not the size of the effect.',
+	'Point mutation: a change to one or a few bases (substitution, insertion or deletion).',
+	'Substitution: read the new codon. Silent: same amino acid (the code is degenerate).',
+	'Missense: a different amino acid (sickle cell, GAG to GUG).',
+	'Nonsense: a stop codon, chain cut short (beta thalassaemia, CAG to UAG).',
+	'Insertion or deletion, not a multiple of 3: frameshift; every later codon regrouped.',
+	'A multiple of 3 keeps the frame: amino acids added or lost (CFTR: one lost).',
+	'Effect depends on type and position (early in the gene, or the active site, matters more).',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Silent same, missense misses, nonsense stops. THE FAT CAT: lose one letter, everything after it shifts." tag="point mutations: what changes in the codon, and what that does to the protein" size={30} aidTop={790} />
+	<NotesBoard notes={NOTES} aid="Silent same, missense misses, nonsense stops. THE FAT CAT: lose one letter, everything after it shifts." tag="point mutations: what changes in the codon, and what that does to the protein" size={34} aidTop={790} />
 );

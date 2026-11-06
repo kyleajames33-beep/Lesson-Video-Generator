@@ -11,4 +11,6 @@ import {PLATES} from '../bio-m6-b01/assets';
 import {RIBO} from '../bio-m5-b06c/assets';
 
 export const SICKLE_HALF: PB = {...PLATES.sickle, box: [1080, 597, 1800, 1403]};
-export const ASSETS_B03: string[] = [PLATES.sickle.src, RIBO];
+// 6 Nov quality fix: airway cell with CFTR channels (M8 plate; alpha box measured 6 Nov, alpha > 20) for exam question 2.
+export const CFTR_CELL: PB = {src: 'assets/biology/m8-airway-cell-cftr-v1.png', nat: [2000, 2000], box: [666, 231, 1333, 1743]};
+export const ASSETS_B03: string[] = [PLATES.sickle.src, RIBO, CFTR_CELL.src];

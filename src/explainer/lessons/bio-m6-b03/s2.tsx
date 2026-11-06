@@ -71,11 +71,15 @@ export const SceneNonsense: React.FC = () => {
 	const rx = cX(X5, rk);
 	const ribO = vis(f, K5.ribo - 40, K5.nonsense, 12);
 	const fo = vis(f, K5.fold - 6, K5.nonsense, 14);
+	const zt: [number, number] = [K5.change - 18, K5.change + 4];
+	const zs = kf(f, [[zt[0], 1.35], [zt[1], 1]]), zx = kf(f, [[zt[0], 20], [zt[1], 0]]), zy = kf(f, [[zt[0], -100], [zt[1], 0]]);
 	return (
 		<>
 			<Heading text="Codon thirty-nine" at={4} size={56} />
 			<Overlay>
-				<g transform={`translate(${slideIn},0)`}>
+				{/* 6 Nov: the strip opens at 1.35x and zooms back to 1x as the codon chart arrives, so the right third is free for the chart and protein. */}
+				<g transform={`translate(${zx + slideIn},${zy}) scale(${zs})`}>
+					<Lbl x={(beadXs[1] + beadXs[2]) / 2} y={268} text="38 amino acids, then stop" size={36} color={INK_SOFT} anchor="middle" at={K5.cut} out={K5.fold + 10} />
 					<Beads xs={beadXs} aa={aas(M5)} bo={k => (k < 2 ? 1 : 1 - gone)} lo={k => (k < 1 ? 1 : 1 - gone)} ring={k => (k === 2 ? vis(f, K5.cag, K5.ribo, 10) : 0)} />
 					{[2, 3, 4].map(k => <GhostBead key={k} x={beadXs[k]} o={gone} />)}
 					<StopBar x={(beadXs[1] + beadXs[2]) / 2} o={prog(f, K5.ribo + 34, 10)} />
@@ -87,7 +91,6 @@ export const SceneNonsense: React.FC = () => {
 					<BaseSwap x={rungAt(X5, 6)} y={DNA_CALL_Y} from="C" to="T" show={K5.change + 10} at={sw} below len={16} size={28} />
 				</g>
 				<ChartCard x={1230} y={300} w={460} rows={['CAG', 'UAG']} at={K5.change} out={K5.ribo} hi={{UAG: prog(f, K5.stopc, 10)}} note={{codon: 'UAG', text: 'U Are Gone', at: K5.gone}} />
-				<Lbl x={(beadXs[1] + beadXs[2]) / 2} y={268} text="38 amino acids, then stop" size={36} color={INK_SOFT} anchor="middle" at={K5.cut} out={K5.fold + 10} />
 				{/* too short to fold */}
 				<g opacity={fo}>
 					<MiniFold x={1330} y={420} fold={0.35 * prog(f, K5.fold, 20)} n={4} />

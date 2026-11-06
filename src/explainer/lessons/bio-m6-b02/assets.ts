@@ -6,7 +6,8 @@
  *   Biology; a coded flask would break the painted-objects rule). The sun thumbnail is the UV-on-skin plate clipped to
  *   the sun's own box (never stretched).
  */
-import {ASSETS_B02} from '../bio-m6-b01/assets';
+import {ASSETS_B02, PLATES} from '../bio-m6-b01/assets';
 import {BEAKER} from './parts';
 
-export const ASSETS: string[] = [...ASSETS_B02, BEAKER.src];
+// 6 Nov quality fix: the agar dish (B01's plate) for the yeast plates in exam question 2.
+export const ASSETS: string[] = [...ASSETS_B02, BEAKER.src, PLATES.dish.src];

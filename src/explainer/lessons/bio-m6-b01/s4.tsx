@@ -9,7 +9,9 @@ import {NotesBoard, QText, qCheck} from '../bio-m5-g01/board';
 import type {QBlock, QMark} from '../bio-m5-g01/board';
 import {S, hold} from './common';
 import {PLATES} from './assets';
-import {AMBER, AMBER_INK, AlleleRing, AnsTable, Bact, BaseTag, CardBox, CurveArrow, INK, INK_SOFT, Lbl, PoolBasin, SlimStrand, rungX, wForH} from './parts';
+import {LOCAL} from './local-assets';
+import {kf} from '../chem-m5-c03/common';
+import {AMBER, AMBER_INK, AlleleRing, AnsTable, Bact, BaseTag, CardBox, CellIcon, CurveArrow, INK, INK_SOFT, Lbl, PoolBasin, SlimStrand, rungX, vis, wForH} from './parts';
 
 const QX = 140, QW = 1640;
 /** "Pause here to answer." with the 10 s countdown ring. */
@@ -39,12 +41,29 @@ const Question1: React.FC<{t: T1; marks?: QMark[]}> = ({t, marks = []}) => (
 		<QText q={Q1(t, marks)} x={QX} y={250} w={QW} size={38} card={false} />
 	</>
 );
+/** The givens drawn as they are read: a crowd of painted bacteria, one carrying the resistance allele (amber ring). */
+const BUG_X = [1140, 1300, 1460], BUG_Y = [705, 772, 839, 906];
+const BugCrowd: React.FC<{at: number; ringAt: number; o?: number}> = ({at, ringAt, o = 1}) => {
+	const f = useCurrentFrame();
+	return (
+		<g opacity={o}>
+			{BUG_Y.map((y, r) => BUG_X.map((x, c) => {
+				const i = r * 3 + c;
+				const res = i === 7;
+				return <Bact key={i} cx={x + (r % 2 ? 26 : 0)} cy={y} w={136} o={prog(f, at + i * 2, 12)} ring={res ? 'new' : undefined} ringO={prog(f, ringAt, 12)} ringGlow={res ? prog(f, ringAt, 12) : 0} glow={res ? 0.8 * prog(f, ringAt, 12) : 0} />;
+			}))}
+		</g>
+	);
+};
 export const SceneAttempt: React.FC = () => (
 	<>
 		<Heading text="Exam question 1" at={KA.two} size={50} />
 		<Overlay>
 			<Question1 t={{a: KA.first, b: KA.before, c: KA.after, d: KA.claims, e: KA.evaluate}} />
-			<CardBox x={100} y={630} w={1420} h={230} at={KA.evaluate + 8} dash="10 7" />
+			<Lbl x={1080} y={656} text="about 10¹⁰ bacteria" size={34} color={INK} at={KA.first + 10} />
+			<BugCrowd at={KA.first + 14} ringAt={KA.before + 20} />
+			<Lbl x={1080} y={985} text="1 in 10⁸ resistant (amber)" size={34} color={AMBER_INK} at={KA.before + 24} />
+			<CardBox x={100} y={630} w={940} h={250} at={KA.evaluate + 8} dash="10 7" />
 			<Sx x={130} y={674} text="answer" size={26} color={INK_SOFT} weight={700} at={KA.evaluate + 8} />
 			<PauseHold id="attempt" at={KA.pause} />
 		</Overlay>
@@ -102,11 +121,45 @@ const Question2: React.FC<{t: T2; marks?: QMark[]}> = ({t, marks = []}) => (
 		<QText q={Q2(t, marks)} x={QX} y={232} w={QW} size={33} card={false} />
 	</>
 );
+/** The island lizard, then each event drawn as it is read; the events clear for the answer table and the lizard parks top right. */
+const LizardEvents: React.FC = () => {
+	const f = useCurrentFrame();
+	const park = KC.each + 6, done = KC.each + 22;
+	const lx = kf(f, [[park, 330], [done, 1690]]), ly = kf(f, [[park, 800], [done, 672]]), lw = kf(f, [[park, 440], [done, 240]]);
+	const ev = (at: number) => vis(f, at, KC.each + 4, 12);
+	return (
+		<>
+			<PlateB p={LOCAL.lizard} cx={lx} cy={ly} w={lw} o={prog(f, KC.pop + 6, 14)} />
+			<Lbl x={330} y={900} text="island lizards" size={36} color={INK} anchor="middle" at={KC.pop + 12} out={KC.each + 2} />
+			<g opacity={ev(KC.one + 6)}>
+				<PlateB p={LOCAL.sperm} cx={860} cy={770} w={300} />
+				<AlleleRing x={1010} y={730} r={18} kind="new" glow={0.8} />
+				<Sx x={860} y={870} text="(i) sperm-making cell" size={34} color={INK} anchor="middle" hand />
+				<Sx x={860} y={912} text="new base change" size={30} color={AMBER_INK} anchor="middle" hand />
+			</g>
+			<g opacity={ev(KC.two + 6)}>
+				<AlleleRing x={1170} y={760} r={20} kind="a" />
+				<AlleleRing x={1230} y={760} r={20} kind="b" />
+				<CurveArrow a={[1262, 760]} b={[1312, 760]} at={KC.two + 10} bow={0} color={INK_SOFT} width={4} />
+				<AlleleRing x={1345} y={760} r={20} kind="b" />
+				<AlleleRing x={1395} y={760} r={20} kind="a" />
+				<Sx x={1280} y={870} text="(ii) offspring" size={34} color={INK} anchor="middle" hand />
+				<Sx x={1280} y={912} text="new mix, old alleles" size={30} color={INK_SOFT} anchor="middle" hand />
+			</g>
+			<g opacity={ev(KC.threeE + 6)}>
+				<CellIcon x={1640} y={765} r={50} />
+				<Sx x={1640} y={870} text="(iii) skin cell" size={34} color={INK} anchor="middle" hand />
+				<Sx x={1640} y={912} text="same base change" size={30} color={INK_SOFT} anchor="middle" hand />
+			</g>
+		</>
+	);
+};
 export const SceneAttemptTwo: React.FC = () => (
 	<>
 		<Heading text="Exam question 2" at={KC.second} size={50} />
 		<Overlay>
 			<Question2 t={{a: KC.pop, b: KC.one, c: KC.two, d: KC.threeE, e: KC.each}} />
+			<LizardEvents />
 			<AnsTable x={140} y={650} cols={COLS2} rows={ROWS2} at={KC.each + 20} size={32} rowH={60} />
 			<PauseHold id="attempt-two" at={KC.pause} y={1010} cy={790} />
 			{void KC.three}
@@ -153,26 +206,28 @@ export const SceneDecision: React.FC = () => {
 		{at: KE.passed, t: '2. passed on', l: ['division (bacteria)', 'eggs and sperm (animals)']},
 		{at: KE.then, t: '3. frequency changes', l: ['selection, chance,', 'gene flow']},
 	];
-	const flyW = 110;
+	const flyW = 160;
+	// All three step cards wait at 32% from the opening words and light on their cues.
+	const lit = (at: number) => 0.32 * prog(f, 0, 14) + 0.68 * prog(f, at, 14);
 	return (
 		<>
 			<Heading text="Trace a new allele in order" at={KE.so} size={56} />
 			<Overlay>
 				{steps.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
+					<g key={i} opacity={lit(s.at)}>
 						<CardBox x={PX[i]} y={PY} w={PW} h={PH} at={-100} stroke={AMBER} sw={3.5} />
 						<Sx x={PX[i] + 34} y={PY + 70} text={s.t} size={52} color={INK} hand />
 						{s.l.map((l, k) => <Sx key={k} x={PX[i] + 34} y={PY + 330 + k * 40} text={l} size={30} color={INK} weight={600} />)}
 						{i < 2 ? <CurveArrow a={[PX[i] + PW + 10, PY + PH / 2]} b={[PX[i + 1] - 10, PY + PH / 2]} at={steps[i + 1].at - 4} bow={0} color={AMBER_INK} width={6} /> : null}
 					</g>
 				))}
-				<g opacity={prog(f, KE.mut, 14)}>
+				<g opacity={lit(KE.mut)}>
 					<SlimStrand x={PX[0] + 50} y={PY + 170} n={14} pitch={31} gap={44} band={{i0: 3, i1: 11, o: 0.8}} rung={i => (i === 8 ? {color: AMBER, w: 6} : undefined)} />
 					<BaseTag x={rungX(PX[0] + 50, 8, 31)} y={PY + 166} text="T" len={8} size={24} />
 				</g>
-				<g opacity={prog(f, KE.division, 14)}><Bact cx={PX[1] + 150} cy={PY + 200} w={170} ring="new" r={13} /></g>
-				<g opacity={prog(f, KE.eggs, 14)}><PlateB p={PLATES.flyWhite} cx={PX[1] + 400} cy={PY + 200} w={flyW} /></g>
-				<g opacity={prog(f, KE.then, 14)}>
+				<g opacity={lit(KE.division)}><Bact cx={PX[1] + 150} cy={PY + 200} w={170} ring="new" r={13} /></g>
+				<g opacity={lit(KE.eggs)}><PlateB p={PLATES.flyWhite} cx={PX[1] + 400} cy={PY + 200} w={flyW} /></g>
+				<g opacity={lit(KE.then)}>
 					<PoolBasin x={PX[2] + 50} y={PY + 160} w={260} h={110} />
 					<AlleleRing x={PX[2] + 130} y={PY + 200} r={14} kind="new" />
 					<AlleleRing x={PX[2] + 190} y={PY + 200} r={14} kind="a" />
@@ -194,12 +249,15 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 14. Key notes ----------
 const NOTES = [
-	'Gene: a section of DNA that codes for a product. Allele: one version of a gene. Gene pool: all the alleles in a population.',
-	'Mutation: a change in DNA base sequence. Inside a gene it makes a new allele (e.g. sickle cell). It starts as one copy in one individual; many have no visible effect.',
-	'Passed on: bacteria give it to both daughter cells; animals pass it on only from cells that make eggs or sperm.',
-	'Mutation is random with respect to need (replica plating, 1952). An antibiotic selects existing resistance alleles, so their frequency rises.',
-	'Mutation makes alleles (the original source). Meiosis and fertilisation mix them. Gene flow moves them, so it can add an allele new to a population.',
+	'Gene: a DNA section that codes for a product. Allele: one version of a gene.',
+	'Gene pool: all the alleles in a population.',
+	'Mutation: a change in DNA base sequence. Inside a gene it makes a new allele.',
+	'A new allele starts as one copy in one individual (e.g. sickle cell).',
+	'Bacteria pass it to both daughter cells; animals only from egg or sperm cells.',
+	'Mutation is random, not caused by need (replica plates, 1952).',
+	'An antibiotic selects resistance alleles that already exist; their frequency rises.',
+	'Meiosis and fertilisation only reshuffle existing alleles; gene flow brings them in.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Mutation makes, meiosis and fertilisation mix, gene flow moves, selection and chance change how common." tag="where new alleles come from, and what happens to them next" size={32} aidTop={760} />
+	<NotesBoard notes={NOTES} aid="Mutation makes, meiosis and fertilisation mix, gene flow moves, selection and chance change how common." tag="where new alleles come from, and what happens to them next" size={34} aidTop={800} />
 );

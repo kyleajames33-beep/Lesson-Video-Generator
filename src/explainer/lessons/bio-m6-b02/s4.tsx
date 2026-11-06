@@ -37,14 +37,27 @@ const Question1: React.FC<{t: T1; marks?: QMark[]}> = ({t, marks = []}) => (
 		<QText q={Q1(t, marks)} x={QX} y={260} w={1640} size={40} card={false} />
 	</>
 );
+/** The two radiations named in the stem, drawn on their words (sources only; what each does to DNA is the answer). */
+const UvXray: React.FC = () => {
+	const f = useCurrentFrame();
+	return (
+		<>
+			<PlateB p={PLATES.uvSkin} cx={1340} cy={640} w={280} o={prog(f, KA.first + 4, 14)} />
+			<Sx x={1340} y={850} text="UV" size={40} color="#5c3f8a" anchor="middle" hand at={KA.first + 8} />
+			<PlateB p={PLATES.xray} cx={1660} cy={640} w={280} o={prog(f, KA.first + 50, 14)} />
+			<Sx x={1660} y={850} text="X-rays" size={40} color="#2d5584" anchor="middle" hand at={KA.first + 54} />
+		</>
+	);
+};
 export const SceneAttempt: React.FC = () => (
 	<>
 		<Heading text="Exam question 1" at={KA.two} size={50} />
 		<Overlay>
 			<Question1 t={{a: KA.first, b: KA.compare, c: KA.which}} />
-			<CardBox x={100} y={480} w={1420} h={360} at={KA.which + 10} dash="10 7" />
+			<UvXray />
+			<CardBox x={100} y={480} w={1060} h={380} at={KA.which + 10} dash="10 7" />
 			<Sx x={130} y={524} text="answer" size={26} color={INK_SOFT} weight={700} at={KA.which + 10} />
-			<PauseHold id="attempt" at={KA.pause} />
+			<PauseHold id="attempt" at={KA.pause} cy={950} />
 		</Overlay>
 	</>
 );
@@ -116,6 +129,14 @@ export const SceneAttemptTwo: React.FC = () => {
 			<Overlay>
 				<Question2 t={{a: KC.student, b: KC.exposed, c: KC.incub, d: KC.describe, e: KC.assess}} rowAt={KC.table} />
 				<g opacity={prog(f, KC.exposed, 14)}><PlateB p={PLATES.cabinet} cx={1535} cy={330} w={320} /></g>
+				{/* The setup drawn as it is read: equal yeast plates, one per exposure time; cleared for the answer boxes. */}
+				{YEAST.map(([t], i) => (
+					<g key={t} opacity={prog(f, KC.student + 30 + i * 4, 12) * (1 - prog(f, KC.describe + 6, 12))}>
+						<PlateB p={PLATES.dish} cx={240 + i * 205} cy={680} w={160} />
+						<Sx x={240 + i * 205} y={800} text={t + ' s'} size={34} color={INK} anchor="middle" hand at={KC.exposed + 20 + i * 4} />
+					</g>
+				))}
+				<Sx x={140} y={598} text="equal volumes of the same yeast" size={32} color={INK_SOFT} hand at={KC.student + 34} out={KC.describe + 6} />
 				<CardBox x={140} y={620} w={1080} h={86} at={KC.describe + 20} dash="10 7" />
 				<Sx x={160} y={656} text="(a)" size={24} color={INK_SOFT} weight={700} at={KC.describe + 20} />
 				<CardBox x={140} y={720} w={1080} h={90} at={KC.assess + 20} dash="10 7" />
@@ -181,24 +202,26 @@ export const SceneDecision: React.FC = () => {
 		{at: KE.finish, t: '3. how it lasts', l: []},
 	];
 	const lasts = [{t: 'copied before repair', at: KE.damage}, {t: 'break rejoined wrongly', at: KE.brk}, {t: 'viral DNA inserted', at: KE.virus}];
+	// The three step chips wait at 32% from the opening words and light on their cues.
+	const lit = (at: number) => 0.32 * prog(f, 0, 14) + 0.68 * prog(f, at, 14);
 	return (
 		<>
 			<Heading text="Explain any mutagen in three steps" at={KE.so} size={56} />
 			<Overlay>
 				{steps.map((s, i) => (
-					<g key={i} opacity={prog(f, s.at, 14)}>
+					<g key={i} opacity={lit(s.at)}>
 						<CardBox x={PX[i]} y={PY} w={PW} h={PH} at={-100} stroke={AMBER} sw={3.5} />
 						<Sx x={PX[i] + 30} y={PY + 66} text={s.t} size={46} color={INK} hand />
 						{s.l.map((l, k) => <Sx key={k} x={PX[i] + 30} y={PY + 380 + k * 40} text={l} size={30} color={INK} weight={600} />)}
 						{i < 2 ? <CurveArrow a={[PX[i] + PW + 10, PY + PH / 2]} b={[PX[i + 1] - 10, PY + PH / 2]} at={steps[i + 1].at - 4} bow={0} color={AMBER_INK} width={6} /> : null}
 					</g>
 				))}
-				<g opacity={prog(f, KE.name + 10, 14)}>
+				<g opacity={lit(KE.name + 10)}>
 					<PlateB p={SUN} cx={PX[0] + 100} cy={PY + 220} w={130} id="dr-sun" />
 					<PlateB p={BEAKER} cx={PX[0] + 260} cy={PY + 220} w={wForH(BEAKER, 140)} />
 					<PlateB p={PLATES.granite} cx={PX[0] + 410} cy={PY + 220} w={150} />
 				</g>
-				<g opacity={prog(f, KE.say + 10, 14)}>
+				<g opacity={lit(KE.say + 10)}>
 					{(['kink', 'gap', 'base', 'insert'] as const).map((k, j) => <MechIcon key={k} kind={k} x={PX[1] + 50 + (j % 2) * 230} y={PY + 150 + Math.floor(j / 2) * 110} s={1.5} />)}
 				</g>
 				{lasts.map((l, k) => <Sx key={k} x={PX[2] + 40} y={PY + 160 + k * 90} text={'• ' + l.t} size={38} color={k === 0 ? AMBER_INK : INK} hand at={l.at} />)}
@@ -214,12 +237,14 @@ export const SceneDecision: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'Mutagen: an agent that increases the chance of a DNA change. Mutation: the change in base sequence itself.',
-	'Some base damage becomes a mutation when DNA is copied before repair; a wrongly repaired break or an inserted viral sequence can also make a lasting DNA change. Most damage is repaired, so exposure raises risk; it does not guarantee a mutation.',
-	'Electromagnetic radiation: UV is not ionising; it bonds neighbouring thymines (thymine dimer), kinking DNA (mainly skin cells). X-rays and gamma rays are ionising; they break DNA strands directly and through free radicals, and reach deep cells.',
-	'Chemicals: base analogues (mimic a base, then mispair); base-modifying chemicals (e.g. in tobacco smoke); chemicals that slide between bases (add or skip a base).',
-	'Naturally occurring: background radiation (rocks and soil, radon, cosmic rays), aflatoxin from mould, viruses that insert DNA into a gene or its switch region (breaking it or switching it on). Natural does not mean harmless.',
+	'Mutagen: an agent that raises the chance of a DNA change. Mutation: the change itself.',
+	'Most damage is repaired, so exposure raises the risk; it does not guarantee a mutation.',
+	'Damage becomes a mutation if DNA is copied before repair, or a break rejoins wrongly.',
+	'UV: not ionising; bonds neighbouring T bases (thymine dimer); mainly skin cells.',
+	'X-rays, gamma rays: ionising; break DNA strands, directly and via free radicals; reach deep cells.',
+	'Chemicals: base analogues, base-modifying chemicals (tobacco smoke), slide-in chemicals.',
+	'Natural: radon and rocks, cosmic rays, aflatoxin, viruses that insert DNA. Natural is not harmless.',
 ];
 export const SceneNotes: React.FC = () => (
-	<NotesBoard notes={NOTES} aid="Mutagen = cause, mutation = change. UV kinks, X-rays snap." tag="name the group, say what it does to DNA, say how the change lasts" size={30} aidTop={790} />
+	<NotesBoard notes={NOTES} aid="Mutagen = cause, mutation = change. UV kinks, X-rays snap." tag="name the group, say what it does to DNA, say how the change lasts" size={34} aidTop={790} />
 );

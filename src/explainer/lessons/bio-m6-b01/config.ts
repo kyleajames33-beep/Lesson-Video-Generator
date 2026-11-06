@@ -2,6 +2,7 @@ import lesson from '../../../../docs/production/claude-pm/lessons/m6b01/measured
 import type {ExplainerConfig} from '../../types';
 import {SCENES} from './scenes';
 import {ASSETS_B01} from './assets';
+import {ASSETS_B01_LOCAL} from './local-assets';
 
 const l = lesson as unknown as ExplainerConfig['lesson'];
 const missing = l.scenes.filter(s => !SCENES[s.id]).map(s => s.id);
@@ -13,5 +14,5 @@ export const config_m6b01: ExplainerConfig = {
 	subjectLabel: 'BIOLOGY',
 	topicLabel: 'MUTATION AND NEW ALLELES',
 	accent: undefined,
-	assets: ASSETS_B01,
+	assets: [...ASSETS_B01, ...ASSETS_B01_LOCAL],
 };
