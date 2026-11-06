@@ -40,7 +40,7 @@ Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course w
 3. **213:** voice d01 Revision 6, the Maths owner pilot. It is short and uses the Google voice; run it before or after the 19:00 scheduled task, not alongside.
 3b. **217:** check and voice the two science pilots (chem-y11-m2-v06 and phys-y12-m5-v04), straight after 213.
 3c. **220:** voice the remaining Module 8 lessons (ElevenLabs, within the cap), then fetch measured spectra for the spectroscopy lessons.
-3d. **223, 226, 228 (and later build-render briefs):** render and publish new Module 8 builds as Claude grades them A. These are new videos, so they come before the C-grade re-renders.
+3d. **223, 226, 228, 229 (and later build-render briefs):** render and publish new Module 8 builds as Claude grades them A. These are new videos, so they come before the C-grade re-renders.
 4. **199:** re-render the four Chemistry videos with render defects, check chem-m7-p06, and resolve the c10/c05 link record. g03 was already found in 196; reuse that work.
 5. **Re-render-and-replace, C grades only (owner, 6 Nov evening):** 198, 200, 201, 202, 203, 204 and 205. Claude has already fixed each video's scene code. You render v2, scan it, compare its sheet with Claude's, do a playback check, and replace it on YouTube (or add it to `work/youtube-pending.json` if access is still broken). **Shelved, do not run:** 206 to 212 and 215 (B-grade polish). Their scene fixes are committed and will be rendered later, when render time is free.
 6. **214:** error check of Claude's brief 180 repairs, then one plate. It is light work and may run alongside a render.
