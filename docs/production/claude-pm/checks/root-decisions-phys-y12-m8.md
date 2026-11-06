@@ -33,3 +33,12 @@ Claude (root), 6 November 2026. Module 5 to 7 decisions still apply where releva
     - Builders register the paddle wheel, the alpha detector arm and the ionisation-chamber needle by their actual hubs and axles, not by the requested targets.
     - The Millikan plate gap is read from the plate as painted.
     - Codex updates the 192 and 193 manifests to "delivered by root decision 17" at its next plates brief.
+
+## After brief 193 repairs, v12 to v22 (7 November 2026)
+
+19. **v20 blocker resolved.** Neutron decay is no longer offered as evidence for the neutrino on its own (the muon decay case shows the same test failing). It is A2's crossed slip. The escaping particle is ν̄. The site's "Analyse 7 marks" step 4 claim goes to the site log as a new correction.
+20. **v14 demonstration data.** The scene 9 demonstration uses a mixed α, β, γ source (940, 622, 88, 27), not A2's own counts, so the attempt stays a real attempt. Accepted.
+21. **No scene 1 plate in v16, v17 and v21.** Accepted: a live coded simulation opens each (a balance would mislead in v16, decision 11 keeps v17's chamber coded, and v21's particle kit is coded).
+22. **v12 ring radii** come from a model tube (13.5 cm to the screen), tagged "model tube". Accepted.
+23. **v18 power station.** If no clean painted power-station plate exists at build time, scene 12 drops it and keeps the text contrast. No new plate request.
+24. **Speech changed** in all of v12 to v22 except v17. Final frames changed only in v15 (tag and balance label) and in v16 and v18 (fission arrow up and to the left); the next openings match.
