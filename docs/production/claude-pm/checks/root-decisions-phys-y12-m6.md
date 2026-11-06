@@ -23,3 +23,12 @@ Claude (root), 6 November 2026. Module 5 decisions still apply where relevant.
 14. **Coverage.** P6-IQ4-03 counts across v11, v17 and v20; v20 covers the metal-plates example of P6-IQ3-02. P6-IQ4-01 is an "investigate" action with no practical in the route: recorded as a coverage gap for a later practical video.
 15. **Plates.** New: demonstration transformer, lamination sheets, substation, pole transformer, DC motor model, hobby motor and flywheel, squirrel-cage rotor, v20's eight braking plates (copper pendulums, magnet, tubes, roller-coaster car with empty seats, brake rail). The plastic tube is coded. The image-bank copper tubes may be used as sources once cut out cleanly to transparent PNG; otherwise paint them.
 16. **Site corrections** (lessons 9, 10, 11, 15, 16, 17, 19, 20) are listed in each design's Decisions; Codex logs them, first lesson 9's sin θ / cos θ model answers and lesson 16's Q2 rotor-speed answer.
+
+## After brief 189 and 190 repairs (7 November 2026)
+
+- **CRT plate (v02, v03):** Codex retries the painted CRT once more at native resolution and exact geometry. If that attempt also fails, the brief 189 coded-outline CRT becomes the recorded design for v02 and v03 (it then does not count as a missing plate at the build gate).
+- **v09 opening:** opens on v08's final frame, with the real bench shown as an inset ("every turn is a loop like this"). Accepted.
+- **v11 live control:** relative readouts (×1, ×2, ×3; ×1, ×4, ×9) instead of invented measurements. Accepted.
+- **v18/v19 join:** side-view cage plate beside a coded end-on rotor. Accepted.
+- **v19 hook speeds:** keep the site's 1500 / 1425 rev/min. The hook's stator ring is drawn with 4 poles so the numbers are consistent (site is the source of truth).
+- **v17 energy proof:** the corrected argument (a helping emf would drive more heat than the supply provides) is accepted.
