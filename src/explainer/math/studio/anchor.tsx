@@ -72,8 +72,10 @@ export const GrowthField: React.FC<{cx: number; cy: number; d: number; countAt: 
 		return 1e9;
 	};
 	const cellW = L, cellH = (L * (cell.box[3] - cell.box[1])) / (cell.box[2] - cell.box[0]);
-	const divW = (L * (dividing.box[2] - dividing.box[0])) / (cell.box[2] - cell.box[0]);
-	const divH = (divW * (dividing.box[3] - dividing.box[1])) / (dividing.box[2] - dividing.box[0]);
+	// The dividing sprite is drawn at the single cell's body height (its own aspect kept), so it reads as the same
+	// cell stretched to about twice its length (ma12 sidecar: displayScaleAtSameBodyHeightAsSingle).
+	const divH = cellH;
+	const divW = (divH * (dividing.box[2] - dividing.box[0])) / (dividing.box[3] - dividing.box[1]);
 	const sprite = (key: string, plate: PlateSpec, x: number, y: number, ang: number, w: number, h: number, op: number, sx = 1) => op > 0.01 ? (
 		<g key={key} transform={`translate(${x},${y}) rotate(${ang}) scale(${sx},1)`} opacity={op}><SvgPlate plate={plate} x={-w / 2} y={-h / 2} w={w} /></g>
 	) : null;

@@ -141,7 +141,7 @@ export const PilotAid: React.FC = () => (
 		<MemoryAidCard x={230} y={196} w={1460} at={14} iconSize={124} subtitle="think of the flasks"
 			keys={[
 				{icon: <FlaskIcon tag={<Role r="a">×2</Role>} />, text: <>a: growth per cell → sets gradient ÷ height</>, role: 'a', at: 40},
-				{icon: <FlaskIcon tag={<Role r="b">early</Role>} />, text: <>b: start time → no change to the slopes</>, role: 'b', at: 110},
+				{icon: <FlaskIcon tag={<Role r="b">early</Role>} />, text: <>b: start time → slides, no new factor</>, role: 'b', at: 110},
 				{icon: <FlaskIcon n={3} />, text: <>k: how many flasks → heights and slopes × k</>, role: 'k', at: 180},
 			]}
 			main={{content: <>Copy the exponential, then multiply by <Role r="k">k</Role> and <Role r="a">a</Role>.</>, at: 270}}
@@ -166,7 +166,7 @@ export const PilotNotes: React.FC = () => (
 		{content: <>d/dx(e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow>) = <Role r="a">a</Role>e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow> and d/dx(<Role r="k">k</Role>e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow>) = <Role r="k">k</Role>·<Role r="a">a</Role>·e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow></>, at: 14},
 		{content: <>For y = <Role r="k">k</Role>e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow>: gradient = <Role r="a">a</Role> × height.</>, at: 24},
 		{content: <>Proof: u = ax + b, du/dx = a, so dy/dx = e<Pow>u</Pow> × a.</>, at: 34},
-		{content: <>Negative a: gradient negative, but y stays positive.</>, at: 44},
+		{content: <>For e<Pow><Role r="a">a</Role>x+<Role r="b">b</Role></Pow> with negative <Role r="a">a</Role>: gradient negative, y stays positive.</>, at: 44},
 		{content: <>Trap: not 3x·e<Pow>3x − 1</Pow>. The power rule needs x in the base.</>, at: 54},
 	]} aside={
 		<MemoryAidCard x={1150} y={214} w={700} at={70} scale={0.8} iconSize={0}

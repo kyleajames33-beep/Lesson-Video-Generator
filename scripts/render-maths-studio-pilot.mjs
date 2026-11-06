@@ -14,7 +14,7 @@ const lock = path.join(ROOT, 'out/explainer/.stills-lock');
 const publicDir = path.join(base, 'public');
 const bundleDir = path.join(base, 'bundle');
 fs.mkdirSync(base, {recursive: true});
-const ASSETS = ['_placeholder-broth-flask.png', '_placeholder-broth-flask-cloudy.png', '_placeholder-microscope-field.png', '_placeholder-rod-cell.png', '_placeholder-rod-cell-dividing.png'].map(f => 'assets/maths/' + f);
+const ASSETS = ['_placeholder-broth-flask.png', '_placeholder-broth-flask-cloudy.png', 'ma12-microscope-field-v1.png', 'ma12-rod-cell-v1.png', 'ma12-rod-cell-dividing-v1.png'].map(f => 'assets/maths/' + f);
 
 try {fs.mkdirSync(lock);} catch (e) {if (e.code === 'EEXIST') throw new Error('Shared stills lock is occupied. Retry after the current render finishes.'); throw e;}
 fs.writeFileSync(path.join(lock, 'owner.json'), JSON.stringify({job: 'maths-studio-pilot', pid: process.pid, started: new Date().toISOString()}));
