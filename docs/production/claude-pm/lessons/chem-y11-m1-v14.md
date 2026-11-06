@@ -67,7 +67,7 @@ Visual: opens on v13's final frame (Decisions). On the second sentence the orang
 ### 2. first ionisation energy
 > First ionisation energy is the energy needed to remove the outermost electron from each atom in a mole of gaseous atoms. A mole is a fixed, very large number of atoms. Gaseous just means the atoms are separate, with nothing else attached. For sodium, each atom loses one electron and becomes a sodium ion. That takes four hundred and ninety-six kilojoules for a mole of sodium **atoms**. It's called first, because it removes only the first, most loosely held **electron**.
 
-Visual: board clears to a single sodium shell model (2,8,1), drifting alone, tag "gaseous: separate atoms". On "A mole is" a grey gloss writes beside it: "mole: a fixed, very large number of atoms" (Revision 2). On the third sentence the equation writes under it: "Na(g) → Na⁺(g) + e⁻", the outer electron leaving along an orange arrow. On "atoms" the energy meter fills to "496 kJ/mol" (small grey gloss "kJ/mol: kilojoules for each mole of atoms"), tag "first ionisation energy: energy to remove the outermost electron (per mole of gaseous atoms)". On "electron" the departing electron glows and a grey tag writes "first = the outermost electron only".
+Visual: board clears to a single sodium shell model (2,8,1), drifting alone, tag "gaseous: separate atoms". On "A mole is" a grey gloss writes beside it: "mole: a fixed, very large number of atoms" (Revision 2). On "For sodium" the equation writes under it: "Na(g) → Na⁺(g) + e⁻", the outer electron leaving along an orange arrow. On "atoms" the energy meter fills to "496 kJ/mol" (small grey gloss "kJ/mol: kilojoules for each mole of atoms"), tag "first ionisation energy: energy to remove the outermost electron (per mole of gaseous atoms)". On "electron" the departing electron glows and a grey tag writes "first = the outermost electron only".
 
 ### 3. across Period 3: a tighter grip
 > Now go across Period three. From sodium to argon, the first ionisation energy generally rises, from four hundred and ninety-six, to fifteen hundred and twenty-one kilojoules per **mole**. That's the same cause as last time. The core charge climbs while the electrons stay in the same shell, so the atoms get smaller, and the outer electrons are held more **tightly**. It takes more energy to pull one **off**. Removing chlorine's outer electron takes about two and a half times the energy needed for sodium's.
@@ -266,3 +266,7 @@ Findings from `../checks/c-y11-m1-v14-learning-review.md` and `../checks/c-y11-m
 2. Funding: scene 10's second sentence (the fluorine and caesium examples) cut; the corner glows stay silently with tags, cue moved to "go".
 
 Narration: 5,542 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; -70 against Revision 1's 5,612), about 503.7 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Root fix after brief 186 (6 Nov 2026)
+
+- Scene 2: the sodium equation and departing electron now cue on "For sodium" (the added mole sentences moved the example to the fourth sentence). No speech or time change.

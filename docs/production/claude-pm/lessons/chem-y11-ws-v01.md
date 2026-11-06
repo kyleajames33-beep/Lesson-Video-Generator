@@ -99,7 +99,7 @@ Visual: board clears to the right half. `CheckList` writes at the left as spoken
 ### 6. reading the checks
 > It's testable, and it could even be shown wrong, if the mass didn't change. But it gives no amount, so it isn't specific enough for our question. It also gives no reason. Our hypothesis passes all four checks, because a result of twenty-five percent would clearly show it's **wrong**.
 
-Visual: the check list runs against the weak card: ticks on "testable" and "could be shown wrong" (tag "only if the mass didn't change"), crosses on "specific" and "reasoned". On "gives no amount" a small coded number line 0 to 100% shades from just above 0 all the way along (tag "no percentage: almost any loss fits"); on "no reason" the "reasoned" cross pulses. On the last sentence the hypothesis card from scene 3 slides in and ticks all four; on "wrong" a small line writes under it: "a result that would show it wrong: 25% lost", and the number line now shades only a narrow band at 36.1%.
+Visual: the check list runs against the weak card: ticks on "testable" and "could be shown wrong" (tag "only if the mass didn't change"). On "gives no amount" a small coded number line 0 to 100% shades from just above 0 all the way along (tag "no percentage: almost any loss fits"); on "isn't specific enough" the "specific" check is crossed; on "no reason" the "reasoned" check is crossed. On the last sentence the hypothesis card from scene 3 slides in and ticks all four; on "wrong" a small line writes under it: "a result that would show it wrong: 25% lost", and the number line now shades only a narrow band at 36.1%.
 
 ### 7. new evidence from three groups (countdown, 3 seconds)
 > Now the new evidence. Three groups each heated two point five zero grams of crystals. Group A heated gently until the mass stopped changing, and lost thirty-six point zero percent. That fits. Group B stopped after four minutes, with blue patches still showing, and lost only twenty-seven point six **percent**. Group C used a roaring flame. Their powder turned black at the bottom, and they lost forty-seven point two **percent**. Which one should change our hypothesis, and which one just points to a problem with the **method**?
@@ -295,3 +295,7 @@ Findings from `../checks/c-y11-ws-v01-learning-review.md` and `../checks/c-y11-w
 3. Count (should fix): headline corrected to the brief 177 parser convention (joins included): Revision 1 was 6,333, not 6,319.
 
 Narration: 6,328 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; -5 against Revision 1's 6,333), about 567.7 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Root fix after brief 186 (6 Nov 2026)
+
+- Scene 6: actions now follow the speech order: number line on "gives no amount", "specific" crossed on "isn't specific enough", "reasoned" crossed on "no reason". Ticks and the final hypothesis test unchanged. No speech or time change.
