@@ -44,3 +44,14 @@ Claude (root), 5 November 2026. Designs written to `chem-y11-design-brief.md`.
 ## Brief 177 and 178 repairs (6 November 2026)
 
 33. All brief 177 and 178 findings are repaired at Revision 2. Calls accepted: **v09** speaks rounded intermediates (26.52, 8.97) while the screen keeps guard digits and a tag notes that rounding first gives 35.49; result 35.48. **v10** spectrum runs energy increasing left to right (red left, violet right, ultraviolet beyond violet). **v15** uses the approved-video route: "short video clips" spoken, painted troughs in a coded clip frame tagged "illustrated clip", no sizes, distances or screen; safety-screen plate dropped. **v16** method follows the school's risk assessment and the teacher's approved solutions; bottle labels stay, tagged "examples: your teacher chooses the approved solutions". ws-v03 (+28) and v17 (+24) grew slightly and stay within band and cap. If the owner has CSIS staff access, v15 and v16 may later name the verified method.
+
+## Voicing readiness (7 November 2026)
+
+34. **Readiness.** `checks/chem-y11-voicing-readiness.md` is the voicing evidence for Year 11 Chemistry. 73 designs are ready; m2-v06 is already voiced. The recording gate hashes the current source; older check hashes are superseded where root fixed counts or findings.
+35. **m3-v13** speech change ("becomes less concentrated") is accepted by root; no separate Codex confirmation is needed before recording.
+36. **m3-v07 safety screen** stays. Decision 33's drop applied to m1-v15's approved-video route only.
+37. **m1-v18 to v20 and v22 to v27** were never repaired after brief 179. Root's calls for the repair:
+    - **v20:** Stock naming (copper(II) chloride) is the taught route. Compositional names such as copper dichloride are valid IUPAC names and are never called wrong; the video says students will see them elsewhere. The error task and memory aid switch to a genuine slip, such as "copper chloride" with no charge, which is ambiguous.
+    - **v22:** halite is brittle, not hard. The conductivity comparison is framed as a teacher demonstration or an approved video, not a student method.
+    - **v18:** gamma is γ alone (decision 26).
+    - **v25 to v27:** decision 29's framing choices stand (carbon "above 3500 °C", the 18-electron fair test, entropy as one grey tag) unless a finding shows a factual error. Factual errors are fixed and reported.

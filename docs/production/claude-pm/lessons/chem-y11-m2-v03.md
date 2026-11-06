@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V03: Molar mass and n = m/MM. How does molar mass turn a measured mass into moles? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 5,683 characters, 18 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,7 +70,7 @@ Visual: opens on m2-v02's final frame (Decisions); the "Next" chip fades. On "at
 ### 2. one mole of atoms of an element
 > One mole of atoms of any element has a mass in grams equal to its relative atomic mass. Carbon's relative atomic mass is twelve point zero one, so one mole of carbon atoms has a mass of twelve point zero one **grams**. Magnesium's is twenty-four point three one, so one mole of magnesium atoms is twenty-four point three one **grams**. Each pile holds the same number of atoms, six point zero two two times ten to the twenty-three.
 
-Visual: stage change (stage B). A teal rule card writes at the top (44 px): "1 mol of atoms of an element = Ar in grams", the words "of atoms" in a teal pen ring. Two coded heaps sit on the pans of a coded abstract beam at the right: dark grey "1 mol C atoms" and pale green "1 mol Mg atoms". Small periodic table cells write above each: "C 12.01", "Mg 24.31" (grey tag "HSC data sheet"). On "grams" (first) the carbon heap's tag reads "12.01 g". On "grams" (second) the magnesium heap's tag reads "24.31 g" and the beam tips toward it; at the left the painted balance returns large with a bigger coil of `p01-mg-ribbon-v1.png` (uniform scale) on the pan, its display ticking up to "24.31 g" (52 px), navy hand tag "a real mole of Mg" with a pen arrow from the display to the heap. On the last sentence both heaps gain the violet label "6.022 × 10²³ atoms", violet hand tag "same count".
+Visual: stage change (stage B). A teal rule card writes at the top (44 px): "1 mol of atoms of an element = Ar in grams", the words "of atoms" in a teal pen ring. Two coded heaps sit on the pans of a coded abstract beam at the right: dark grey "1 mol C atoms" and pale green "1 mol Mg atoms". Small periodic table cells write above each: "C 12.01", "Mg 24.31" (grey tag "HSC data sheet"). On "twelve point zero one grams" (second sentence) the carbon heap's tag reads "12.01 g". On "twenty-four point three one grams" (third sentence) the magnesium heap's tag reads "24.31 g" and the beam tips toward it; at the left the painted balance returns large with a bigger coil of `p01-mg-ribbon-v1.png` (uniform scale) on the pan, its display ticking up to "24.31 g" (52 px), navy hand tag "a real mole of Mg" with a pen arrow from the display to the heap. On the last sentence both heaps gain the violet label "6.022 × 10²³ atoms", violet hand tag "same count".
 
 ### 3. why the numbers match
 > Why does that work? Relative atomic masses compare atoms. A magnesium atom is about twice as heavy as a carbon **atom**. So if two piles hold the same number of atoms, the magnesium pile must be about twice as heavy **too**. The mole's number was chosen so the carbon pile comes out at about twelve grams, and then every other element follows on the same **scale**.
@@ -307,3 +307,9 @@ Visual upgrade and scene-level redesign (high-risk list; narration, numbers and 
 - Hand tags and pen marks in role colours in every teaching scene; framed answers on 18.02 and 32.00 (5), 3.0 mol (7), 29 g (10), 9.9 × 10⁻³ mol (11), 0.250 mol (14), 11.1 g (16); crossed slips with red hand tags (5, 9, 10 new "0.50 ÷ 58.44", 14, 16).
 - Memory line in a framed card (12); key notes cut to five short bullets (303 characters) with the framed card.
 - No new plate requests; `y11c-gas-jar-v2.png` and `y11c-halite-crystal-v1.png` added (inspected).
+
+## Revision 3 (7 Nov 2026)
+
+Brief 214 error check (`checks/c-y11-m2-v03-rev2-error-check.md`), should-fix finding resolved (root):
+- Scene 2: the carbon tag now reveals on "twelve point zero one grams" (second sentence) and the magnesium tag on "twenty-four point three one grams" (third sentence), the two bold "grams" cues. The rule card's earlier "in grams" no longer triggers anything.
+- No speech change. Narration 5,683 characters (sum of 18 scene strings), about 508 s. Bold cues quoted in spoken order; no em dashes.

@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V14: First ionisation energy and electronegativity. How do first ionisation energy and electronegativity follow atomic structure? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: mole given a plain meaning; scene 10 repeat cut. Narration 5,542 characters (joined parser count), about 503.7 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: mole given a plain meaning; scene 10 repeat cut. Narration 5,542 characters (joined parser count), about 503.7 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 5,542 characters (Revision 2; Revision 1 was 5,612 by the joined parser count), 16 scenes, about 503.7 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,527 characters (sum of scene strings; 5,542 with joining spaces; Revision 1 was 5,612 by the joined parser count), 16 scenes, about 503.7 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: fourteenth video of Year 11 Chemistry (2017 syllabus), Module 1; second periodic-trend video, after `chem-y11-m1-v13.md` (atomic radius, core charge, shielding) and before v15 (Group 1 metals with water). Templates: `phys-y11-fa1-v01.md` (structure), `chem-y11-m1-v10.md` and `chem-y11-m1-v13.md` (series conventions). No starter pack exists; the pack work is done here. Route entry: `chem-y11-m1-v14` in `../../programme/chem-y11-route-inputs.json`. Site lessons read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson17.sa.html` (SHA256 `f5255f5050cd01fd277fb04e8830faf13d54b88bc8fc9efd1eaeed42a5715665`, recomputed, matches; used: `l17-how-to-explain-the-trend-in-exam-language-title`, its ionisation-energy bridge and the Mg/Al and P/S dips, drill 3) and `.../module1/lesson18.sa.html` (SHA256 `018b9247bc9bec32c086f50e45e791b0226ac4ef0dd4dab569d67bdb4b2aac36`, recomputed, matches; used: `l18-electronegativity-trends-and-explanation-title` with its value table and noble-gas note, the electronegativity against electron affinity misconception, the metal/non-metal reactivity bridge; `l18-using-electronegativity-difference-to-classi-title` and its `-b` twin are named only as later bonding work, v21). Site corrections file checked: no logged item touches lessons 17 or 18.
 
@@ -270,3 +270,9 @@ Narration: 5,542 characters (joined parser count: `### N.` headings, lines start
 ## Root fix after brief 186 (6 Nov 2026)
 
 - Scene 2: the sodium equation and departing electron now cue on "For sodium" (the added mole sentences moved the example to the fourth sentence). No speech or time change.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-m1-v14-rev2-error-check.md`), one should-fix cue finding, resolved: Scene 2: the sodium equation and departing electron cue on "For sodium" (root fix after brief 186, already in the Visual; confirmed in this pass).
+- Headline count restated as the sum of scene strings: 5,527 characters over 16 scenes (the earlier 5,542 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

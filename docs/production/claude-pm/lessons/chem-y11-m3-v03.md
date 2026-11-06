@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V03: Precipitation reactions. How do solubility rules predict a precipitation reaction? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 6,280 characters, 18 scenes, about 562 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -98,7 +98,7 @@ Visual: stage change: the merged lens fills the frame with the four live ion cou
 ### 4. finding the pattern by experiment
 > Which pairs lock together was found by experiment, and you can see the pattern on a small scale. Put one drop of each of two solutions into a well of a spotting plate, and record which pairs go cloudy. Wear safety glasses, use tiny volumes, and put the waste in the container your teacher labels. Silver nitrate stains skin, and lead and barium salts are toxic, so those are teacher demonstrations. Now look down the **results**. None of the solids contain sodium or **nitrate**.
 
-Visual: stage change: `p03-well-plate-white-tile-v1.png` fills the frame; a coded 3 × 3 block of wells fills drop by drop (rows "AgNO₃", "CuSO₄", "CaCl₂"; columns "NaCl", "Na₂CO₃", "NaOH"): white, pale yellow, brown; clear, blue-green, pale blue; clear, white, faint white (author note b). A safety strip: `m5x-safety-glasses-v1.png` small, "tiny volumes; waste to the labelled container; AgNO₃ stains skin; Pb²⁺ and Ba²⁺ salts: teacher demonstration". On "results" a results grid writes beside the plate with "cloudy" and "clear". On "potassium or nitrate" a pen ring circles the grid's formulas: every Na⁺ and NO₃⁻ stays in solution (tag "never in the solid").
+Visual: stage change: `p03-well-plate-white-tile-v1.png` fills the frame; a coded 3 × 3 block of wells fills drop by drop (rows "AgNO₃", "CuSO₄", "CaCl₂"; columns "NaCl", "Na₂CO₃", "NaOH"): white, pale yellow, brown; clear, blue-green, pale blue; clear, white, faint white (author note b). A safety strip: `m5x-safety-glasses-v1.png` small, "tiny volumes; waste to the labelled container; AgNO₃ stains skin; Pb²⁺ and Ba²⁺ salts: teacher demonstration". On "results" a results grid writes beside the plate with "cloudy" and "clear". On "sodium or nitrate" a pen ring circles the grid's formulas: every Na⁺ and NO₃⁻ stays in solution (tag "never in the solid").
 
 ### 5. the solubility rules (NAGSAG)
 > Patterns like that are summed up as the solubility rules. A handy way to remember the soluble groups is **NAGSAG**. Nitrates, ammonium and Group 1 compounds are almost always soluble. Sulfates are soluble, except with barium, lead and **calcium**. Acetates are soluble. And Group 17, the halides chloride, bromide and iodide, are soluble except with **silver and lead**. Everything else, like carbonates and hydroxides, is mostly insoluble, unless it's paired with Group 1 or **ammonium**.
@@ -326,3 +326,10 @@ Visual upgrade (scene-level visual changes; teaching logic unchanged):
 - Plate request changed: `y11c-bunsen-yellow-flame-v1.png` canvas revised (finding 6); no other new plates.
 
 Counts: 6,280 characters (Revision 1: 6,263); about 559 to about 562 s.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 218 error check (`checks/c-y11-m3-v03-rev2-error-check.md`), should-fix finding resolved (root):
+- Scene 4: the pen ring now triggers on "sodium or nitrate" (the spoken words), not the stale "potassium or nitrate". Its Na⁺ and NO₃⁻ targets are unchanged.
+- No speech change. Narration 6,280 characters (sum of 18 scene strings), about 562 s. Bold cues quoted in spoken order; no em dashes.
+- Unchanged hold from brief 218: the yellow-flame plate candidates failed registration, so the written fallback stands until a registered plate is delivered (build item, not a voicing blocker).

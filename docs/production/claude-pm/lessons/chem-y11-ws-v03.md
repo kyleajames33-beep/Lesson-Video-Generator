@@ -1,8 +1,8 @@
 # Year 11 Chemistry WS V03: Conducting investigations. How do we collect and source chemistry data safely and accurately? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: darkening now means stop and restart; citation matches its reference; "percentage points" in feedback 1; count corrected. Narration 6,359 characters (joined parser count), about 567.2 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: darkening now means stop and restart; citation matches its reference; "percentage points" in feedback 1; count corrected. Narration 6,359 characters (joined parser count), about 567.2 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 6,359 characters (Revision 2; Revision 1 was 6,331 by the joined parser count), 16 scenes, about 567.2 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,344 characters (sum of scene strings; 6,359 with joining spaces; Revision 1 was 6,331 by the joined parser count), 16 scenes, about 567.2 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: third Year 11 Chemistry (2017 syllabus) Working Scientifically skills video, playlist entry 13, between `chem-y11-ws-v02` and `chem-y11-m1-v11`. Templates as `chem-y11-ws-v01.md`; skills-video format precedent `phys-y11-fa0-v03.md` and `v04.md` (format only; no physics content). Running case: the copper sulfate heating investigation planned in ws-v02. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-ws-v03` in `../../programme/chem-y11-route-inputs.json` (start: "Use the current separation or quantitative investigation as one concrete case"; stop: "Apply conducting investigations to that case and a new question; do not re-teach the subject mechanism"; next handoff: "How does spdf notation locate the electrons in an atom?"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html` (SHA256 `ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499`, recomputed, matches). Used: the equipment-accuracy table's principle and its four-target picture of precision against accuracy ("A tight cluster away from the centre shows a systematic error"), redrawn as a number line; the predict card's point ("More precise, not necessarily more accurate ... repeating won't reduce that bias"). Not used: the site's validity and reliability definitions (`chem-y11-ws-v01.md` site note 1); titration and gravimetric error scenarios (ws-v05).
 
@@ -293,3 +293,9 @@ Findings from `../checks/c-y11-ws-v03-learning-review.md` and `../checks/c-y11-w
 4. Count (should fix): Revision 1 headline 6,316 corrected to the joined count 6,331.
 
 Narration: 6,359 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; +28 against Revision 1's 6,331), about 567.2 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-ws-v03-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 6,344 characters over 16 scenes (the earlier 6,359 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

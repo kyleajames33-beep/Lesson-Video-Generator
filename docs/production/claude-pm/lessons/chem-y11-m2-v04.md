@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V04: Measuring molar mass in a practical. How can measuring a mass and a gas volume reveal a molar mass? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 6,331 characters, 19 scenes, about 556 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -88,7 +88,7 @@ Visual: board clears. "Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)" writes. On "m
 ### 4. collecting the hydrogen
 > The ribbon sits at the mouth of a burette, turned upside down and full of liquid. As the acid reaches it, hydrogen bubbles up and collects at the top, pushing the liquid **down**. When the ribbon has gone, the gas takes up forty-two point two **millilitres**. The room is at twenty-five degrees and a hundred kilopascals.
 
-Visual: camera push to the burette stage: the plate `y11c-burette-upturned-start-v1.png` (upturned 50 mL burette clamped with its open end in a beaker of water, a small coil of ribbon just inside the mouth) large at the left; at the right three live readouts (the simulation, 52 px): "gas collected: 0.0 mL" (slate blue), "n(H₂) so far: 0" (amber) and "MM if you stopped now: ?" (teal). On "down" coded bubbles rise from the ribbon and a coded gas space grows at the top while the readouts update together: the volume climbs, n climbs, and the MM readout falls from hundreds ("247 g mol⁻¹" at 4.2 mL) towards the final value; teal hand tag "more gas, smaller MM" with a pen arrow down the MM readout. The plate cross-fades to `y11c-burette-upturned-end-v1.png` (ribbon gone, gas space at the top). Readout tags write beside the scale: "start 48.50 mL", "end 6.30 mL". On "millilitres" the clamp lowers the burette by code until the liquid level inside matches the beaker's (grey tag "levels matched: gas at room pressure"), and the readouts settle at "42.2 mL", "1.702 × 10⁻³ mol", "24.7 g mol⁻¹"; slate-blue tag "gas collected over water: 42.2 mL" with a grey tag beneath "uncorrected (includes some water vapour)" and "illustrative data" (26 px). The conditions strip fills: "25 °C, 100 kPa ✓".
+Visual: camera push to the burette stage: the plate `y11c-burette-upturned-start-v1.png` (upturned 50 mL burette clamped with its open end in a beaker of water, a small coil of ribbon just inside the mouth) large at the left; at the right three live readouts (the simulation, 52 px): "gas collected: 0.0 mL" (slate blue), "n(H₂) so far: 0" (amber) and "MM if you stopped now: ?" (teal). On "down" coded bubbles rise from the ribbon and a coded gas space grows at the top while the readouts update together: the volume climbs, n climbs, and the MM readout falls from hundreds ("247.9 g mol⁻¹" at 4.2 mL) towards the final value; teal hand tag "more gas, smaller MM" with a pen arrow down the MM readout. The plate cross-fades to `y11c-burette-upturned-end-v1.png` (ribbon gone, gas space at the top). Readout tags write beside the scale: "start 48.50 mL", "end 6.30 mL". On "millilitres" the clamp lowers the burette by code until the liquid level inside matches the beaker's (grey tag "levels matched: gas at room pressure"), and the readouts settle at "42.2 mL", "1.702 × 10⁻³ mol", "24.7 g mol⁻¹"; slate-blue tag "gas collected over water: 42.2 mL" with a grey tag beneath "uncorrected (includes some water vapour)" and "illustrative data" (26 px). The conditions strip fills: "25 °C, 100 kPa ✓".
 
 ### 5. calculating the molar mass
 > Now the calculation. Change forty-two point two millilitres to litres, then divide by twenty-four point seven nine. That's one point seven zero times ten to the minus three moles of hydrogen, so the same amount of **magnesium**. Molar mass equals mass divided by moles. Zero point zero four two grams, divided by one point seven zero times ten to the minus three, is twenty-four point seven grams per **mole**. The accepted value is twenty-four point three one. That's close, but a little **high**.
@@ -199,7 +199,7 @@ Model answer: the water on the outside is included in the final mass, so the cal
 | --- | --- | --- |
 | Molar volume (data sheet) | 24.79 L mol⁻¹ at 25 °C, 100 kPa | 2, 5, 14, 15, key notes |
 | Element run (illustrative) | 0.042 g; burette 48.50 → 6.30 mL; 42.2 mL (gas over water, uncorrected); n 1.702 × 10⁻³ mol (shown 1.70); MM 24.7 g mol⁻¹; accepted 24.31 | 3 to 5, 18 |
-| Collection simulation (Revision 2) | at 4.2 mL: n 1.694 × 10⁻⁴ mol, MM 247.9 (shown "247"); end 42.2 mL, 1.702 × 10⁻³ mol, 24.7; escape replay 38.0 mL, 1.533 × 10⁻³ mol, 27.4 | 4, 7 |
+| Collection simulation (Revision 2) | at 4.2 mL: n 1.694 × 10⁻⁴ mol, MM 247.9 (shown "247.9"); end 42.2 mL, 1.702 × 10⁻³ mol, 24.7; escape replay 38.0 mL, 1.533 × 10⁻³ mol, 27.4 | 4, 7 |
 | Mass window | 0.035 to 0.045 g → about 21 to 26 g mol⁻¹ | 8 |
 | Compound run (illustrative) | m 0.272 g; V 140 mL; 30.6 L mol⁻¹ at 100.0 °C, 101.3 kPa; n 4.575 × 10⁻³ mol (≈ 4.58); MM 59.45, shown 59.5 g mol⁻¹ | 9 to 11 |
 | Candidates | ethanol 46.07; propanone 58.08; hexane 86.17 | 11 |
@@ -335,3 +335,9 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Hand tags and pen marks in role colours in every teaching scene; framed answers on 24.7 (5), 59.5 (11), 65.4 (15) and "too high" (17); crossed slips with red hand tags (7 new "any loss makes it too low", 15, 17); live candidate marker in 11.
 - Memory line in a framed card (13); key notes cut to five short bullets (385 characters) with the framed card.
 - No new plate requests (the five Revision 1 requests stand; the burette and bath plates are now on disk and should be inspected at build).
+
+## Revision 3 (7 Nov 2026)
+
+Brief 214 error check (`checks/c-y11-m2-v04-rev2-error-check.md`), should-fix finding resolved (root):
+- Scene 4: the live MM readout at 4.2 mL now shows "247.9 g mol⁻¹" (0.042 g ÷ (0.0042 L ÷ 24.79 L mol⁻¹) = 247.9, rechecked in Python). The Numbers used row now says shown "247.9". The final 24.7 and the escaped-gas 27.4 are unchanged and correct.
+- No speech change. Narration 6,331 characters (sum of 19 scene strings), about 556 s. Bold cues quoted in spoken order; no em dashes.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V05: Analysing data and information. How do we judge uncertainty and the limits of a chemistry result? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 6,405 characters, 17 scenes, about 567 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -210,7 +210,7 @@ Model answer: (a) |23.9 − 24.31| ÷ 24.31 × 100 ≈ 1.7% (1 mark). (b) System
 
 Checked with Python (5 November); Codex to re-check.
 
-- 0.02 ÷ 0.90 × 100 = 2.22%; 0.02 ÷ 2.50 × 100 = 0.80%; sum 3.02%; 3.02% of 36.0 = 1.09; range method 0.92 ÷ 2.48 = 37.10%, 0.88 ÷ 2.52 = 34.92%.
+- 0.02 ÷ 0.90 × 100 = 2.22%; 0.02 ÷ 2.50 × 100 = 0.80%; sum 3.02%; 3.02% of 36.0 = 1.09 (34.9 to 37.1, the conservative summed bound shown on screen). Revision 3: the withdrawn independent-extremes clause (0.92 ÷ 2.48, 0.88 ÷ 2.52) is removed; it treated the shared gross reading as independent (author note b). With the three raw readings each ±0.01 g, the attainable class 1 endpoints are 35.2% and 36.8% (Python, 7 November); the on-screen bars and both verdicts keep the conservative bound.
 - Revision 2 (brief 180): class 2 loss 0.860 g: 0.02 ÷ 0.860 = 2.33%; + 0.80% = 3.13%; 3.13% of 34.4 = 1.075 (33.32 to 35.48, shown 33.3 to 35.5). The Revision 1 line (3.02% of 34.4 = 1.04; 33.36 to 35.44) used class 1's percentage and is withdrawn.
 - Sample slider: 0.01 ÷ 0.04 = 25%; 0.01 ÷ 0.20 = 5%; 0.01 ÷ 0.40 = 2.5%.
 - |36.0 − 36.1| ÷ 36.1 × 100 = 0.28%; 1.7 ÷ 36.1 × 100 = 4.71%.
@@ -315,3 +315,9 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Hand tags and pen marks in role colours in every teaching scene; framed results on 3.0% (7), 0.3% < 3.0% (8), the A1 and A2 answers (13, 15); crossed slips with red hand tags (5, 13, 15).
 - Memory line in a framed card (11); key notes cut to five short bullets (379 characters) with the framed card, and the notes hold shortened to about 53 s to keep the video under the cap.
 - No new plate requests. Final frame unchanged (m2-v05 opens on it); the opening still matches ws-v04's final frame.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 214 error check (`checks/c-y11-ws-v05-rev2-error-check.md`), should-fix finding resolved (root):
+- Numbers to verify: the stale "range method" clause (independent numerator and denominator extremes) is removed and labelled as withdrawn, consistent with author note b. The attainable class 1 endpoints from the three shared raw readings (each ±0.01 g) are recorded as 35.2% and 36.8%, recalculated in Python. The conservative 34.9 to 37.1 bar on screen and both learner verdicts stay.
+- No speech or screen change. Narration 6,405 characters (sum of 17 scene strings), about 567 s. Bold cues quoted in spoken order; no em dashes.

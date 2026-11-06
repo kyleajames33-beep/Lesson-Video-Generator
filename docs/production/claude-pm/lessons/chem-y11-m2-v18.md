@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V18: Charles's law, Gay-Lussac's law and kelvin. Why do gas volume and pressure laws require kelvin? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved (including the secondary-data blocker) and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved (including the secondary-data blocker) and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 6,380 characters, 17 scenes, about 570 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -125,7 +125,7 @@ Visual: board clears to the flask rig, filling the frame: `m6-conical-flask-v1.p
 ### 10. secondary data: the same zero
 > Here's some secondary data, meaning data someone else collected, for air at a fixed volume, from the OpenStax Chemistry textbook. From minus a hundred to a hundred and fifty degrees, the pressure climbs from thirty-six to eighty-eight kilopascals, in a straight line. Extended backwards, it reaches zero pressure at about minus two hundred and seventy-three degrees, the same point as the volume line. So both point to the same absolute **zero**.
 
-Visual: stage change: the P–T graph at full width (axis "T (°C)" from −300 to 200), with the table at the right (40 px): "T (°C) | P (kPa)": "−100 | 36.0", "−50 | 46.4", "0 | 56.7", "50 | 67.1", "100 | 77.5", "150 | 88.0"; slate citation tag "secondary data: OpenStax Chemistry 2e, Fig. 8.11". On "secondary data" gloss chip "secondary data: collected by someone else". On "straight line" the six points plot with their line of best fit (red hand tag "straight"). On "Extended backwards" a dashed line to the axis; on "the same point as the volume line" the V–T graph (tag "illustrative data") slides in above it, both dashed lines meeting the axis at the same navy ring "−273 °C" (navy pen ring). On "zero" label "0 K", framed.
+Visual: stage change: the P–T graph at full width (axis "T (°C)" from −300 to 200), with the table at the right (40 px): "T (°C) | P (kPa)": "−100 | 36.0", "−50 | 46.4", "0 | 56.7", "50 | 67.1", "100 | 77.5", "150 | 88.0"; slate citation tag "secondary data: OpenStax, Chemistry: Atoms First 2e, Fig. 8.11 (°C and kPa columns, unchanged)". On "secondary data" gloss chip "secondary data: collected by someone else". On "straight line" the six points plot with their line of best fit (red hand tag "straight"). On "Extended backwards" a dashed line to the axis; on "the same point as the volume line" the V–T graph (tag "illustrative data") slides in above it, both dashed lines meeting the axis at the same navy ring "−273 °C" (navy pen ring). On "zero" label "0 K", framed.
 
 ### 11. partners, and the memory line
 > So the two laws are partners. Charles's law fixes the pressure and lets the volume change, like the free plunger. Gay-Lussac's law fixes the volume and lets the pressure change, like the rigid flask. Both fix the amount of gas, and both need kelvin. Remember: ratios need a true zero, so always use **kelvin**.
@@ -201,7 +201,7 @@ Model answer: the claim is incorrect; at constant pressure V is proportional to 
 | Kelvin | + 273.15; 0 °C = 273.15 K; 25 °C = 298.15 K | 4 |
 | Ratio check | 283.15 K, 293.15 K; 1.035 ≈ 51.8 ÷ 50.0 = 1.036 (rounded volume); °C ratio 2 (crossed) | 6 |
 | Charles calculation | 45.0 mL, 20 °C → 60 °C; 293.15 K, 333.15 K; 51.1 mL; slip 135 mL | 8 |
-| Secondary data (published, OpenStax Fig. 8.11) | −100, −50, 0, 50, 100, 150 °C: 36.0, 46.4, 56.7, 67.1, 77.5, 88.0 kPa; zero at about −273 °C (fit −273.08) | 10 |
+| Secondary data (published, OpenStax Chemistry: Atoms First 2e Fig. 8.11, °C and kPa columns; kelvin column not shown) | −100, −50, 0, 50, 100, 150 °C: 36.0, 46.4, 56.7, 67.1, 77.5, 88.0 kPa; zero at about −273 °C (fit −273.08) | 10 |
 | A1 | 150 kPa, 20 °C → 50 °C; 293.15 K, 323.15 K; 165 kPa; slip 375 kPa | 12, 13 |
 | A2 | 20 °C → 40 °C; 293.15 K → 313.15 K; 1.07; about 7% | 14, 15 |
 
@@ -317,3 +317,9 @@ Visual upgrade (high-risk design: scene-level redesign of the long stretches; te
 - No new plate requests (the gas pressure sensor was delivered by brief 182; the other plates are reused).
 
 Counts: 6,380 characters (Revision 1: 6,367); about 566 to about 570 s.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 218 error check (`checks/c-y11-m2-v18-rev2-error-check.md`), should-fix finding resolved (root):
+- Scene 10: the on-screen citation now names the inspected source, "OpenStax, Chemistry: Atoms First 2e, Fig. 8.11", and identifies the table as the unchanged °C and kPa columns (the publisher's rounded kelvin column, 173 to 423 K, is not shown). The Numbers used row says the same. The six row pairs are unchanged. The spoken "the OpenStax Chemistry textbook" stays (true of the Atoms First edition).
+- No speech change. Narration 6,380 characters (sum of 17 scene strings), about 570 s. Bold cues quoted in spoken order; no em dashes.

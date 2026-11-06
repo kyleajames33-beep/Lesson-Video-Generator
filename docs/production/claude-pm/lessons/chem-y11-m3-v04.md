@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V04: Combustion. How do oxygen supply and fuel affect combustion products? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 5,582 characters, 17 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,7 +73,7 @@ Handoff: chem-y11-m3-v05, acid-base and acid-carbonate products.
 ## Opening frame and final frame
 
 - **Opening frame:** m3-v03's final frame exactly (Decisions).
-- **Final frame (m3-v05 opens on it):** left, `c1-burned-magnesium-v1.png` (white magnesium oxide on the tile, tongs resting) tagged "MgO, a metal oxide"; centre, `m5x-unsaturated-beaker-v1.png` tagged "dilute hydrochloric acid, HCl(aq)" with a coded faint white cloud of powder dissolving, tag "dissolves, no fizz"; right, `m6-marble-chips-acid-v1.png` tagged "marble chips (CaCO₃) in the same acid", tag "fizzes"; an amber chip spanning both beakers "both use up the acid: what forms?"; the four ticked pattern strips small at the top right ("A + B → AB", "AB → A + B", "AB + CD → precipitate", "fuel + O₂ → oxides"); the chip "Next: How can we predict acid-base and acid-carbonate products?".
+- **Final frame (m3-v05 opens on it):** left, `c1-burned-magnesium-v1.png` (white magnesium oxide on the tile, tongs resting) tagged "MgO, a metal oxide"; centre, `m5x-unsaturated-beaker-v1.png` tagged "dilute hydrochloric acid, HCl(aq)" with a coded faint white cloud of powder dissolving, tag "dissolves, no fizz"; right, `m6-marble-chips-acid-v1.png` tagged "marble chips (CaCO₃) in the same acid", tag "fizzes"; an amber chip spanning both beakers "both use up the acid: what forms?"; the four ticked pattern strips small at the top right ("A + B → AB", "AB → A + B", "AB + CD → precipitate", "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide"); the chip "Next: How can we predict acid-base and acid-carbonate products?".
 
 ## Script and shots
 
@@ -82,7 +82,7 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook: two flames, two dishes
 > Here's the same burner gas, burning two ways. With the air hole open, the flame is blue and hard to see. Close the air hole, and you get a tall yellow flame. Now hold a cold white dish over each one for a few seconds. Over the blue flame, the dish just mists up with a little water. Over the yellow flame, its underside turns **black**. That black is soot, which is carbon. Same fuel, different **products**. So what changed?
 
-Visual: opens on m3-v03's final frame; the "Next" chip fades; the two burner plates grow to fill the frame at the same scale, aligned by their bottom edges. On "air hole open" the collar on the blue burner pulses (teal pen ring); on "Close the air hole" the collar on the yellow burner pulses (amber pen ring). On "hold a cold white dish" a clamp glyph lowers a coded outline of a basin over each flame (grey tag "illustrative observation: checked footage or approved demonstration"). On "mists up" `y11c-basin-underside-clean-v1.png` appears under the blue burner with coded mist droplets (teal hand tag "water"). On "underside turns black" `y11c-basin-underside-sooty-v1.png` appears under the yellow burner (black hand tag "soot = carbon"). On "products" the amber chip "same fuel, different products?" brightens.
+Visual: opens on m3-v03's final frame; the "Next" chip fades; the two burner plates grow to fill the frame at the same scale, aligned by their bottom edges. On "air hole open" the collar on the blue burner pulses (teal pen ring); on "Close the air hole" the collar on the yellow burner pulses (amber pen ring). On "hold a cold white dish" a grey method strip writes along the bottom: "teacher demonstration or checked footage: follow your school's approved method" (root decision 19; Revision 3: no animated lowering or clamp action, the observation is shown only as the two painted basin stills). On "mists up" `y11c-basin-underside-clean-v1.png` appears under the blue burner with coded mist droplets (teal hand tag "water"). On "underside turns black" `y11c-basin-underside-sooty-v1.png` appears under the yellow burner (black hand tag "soot = carbon"). On "products" the amber chip "same fuel, different products?" brightens.
 
 ### 2. combustion: what the carbon and hydrogen become
 > Burning has a chemistry name, combustion. It's a reaction between a fuel and oxygen that releases energy as heat and light. Burner gas is natural gas, which is mostly methane, C H four, a hydrocarbon, made of only carbon and hydrogen. Here's the key to predicting the products. When a hydrocarbon burns, its carbon takes oxygen from the air, as much as the supply allows, and its hydrogen becomes water, an oxide of **hydrogen**.
@@ -157,7 +157,7 @@ Visual: card shrinks. Line builds: "C₃H₈ + 3.5O₂ → 3CO + 4H₂O" then th
 ### 16. conclusion and handoff
 > So when a hydrocarbon burns, its hydrogen becomes water, and the oxygen supply decides how far the carbon gets. Metals burn to metal oxides, like this magnesium oxide. Drop it into dilute hydrochloric acid, and it **dissolves**, with no fizzing. Put marble chips, calcium carbonate, into the same acid, and they **fizz**. Both use up the acid, but they can't be making the same products. How can we predict acid-base and acid-carbonate **products**?
 
-Visual: the flame pair and ladder shrink into a strip "fuel + O₂ → oxides", which ticks beside the earlier three strips at the top right. On "magnesium oxide" `c1-burned-magnesium-v1.png` moves to the left; `m5x-unsaturated-beaker-v1.png` slides in (tag "dilute hydrochloric acid, HCl(aq)"). On "dissolves" coded white powder drops in and fades away (tag "dissolves, no fizz"). On "they fizz" `m6-marble-chips-acid-v1.png` slides in at the right (tag "marble chips, CaCO₃: fizzes"). On "Both use up the acid" the amber chip "both use up the acid: what forms?" spans both beakers. On "acid-carbonate products" the chip "Next: How can we predict acid-base and acid-carbonate products?" writes. Hold about 2 seconds. This is the final frame (m3-v05 opens on it).
+Visual: the flame pair and ladder shrink into a strip "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide" (Revision 3: soot is carbon, not an oxide), which ticks beside the earlier three strips at the top right. On "magnesium oxide" `c1-burned-magnesium-v1.png` moves to the left; `m5x-unsaturated-beaker-v1.png` slides in (tag "dilute hydrochloric acid, HCl(aq)"). On "dissolves" coded white powder drops in and fades away (tag "dissolves, no fizz"). On "they fizz" `m6-marble-chips-acid-v1.png` slides in at the right (tag "marble chips, CaCO₃: fizzes"). On "Both use up the acid" the amber chip "both use up the acid: what forms?" spans both beakers. On "acid-carbonate products" the chip "Next: How can we predict acid-base and acid-carbonate products?" writes. Hold about 2 seconds. This is the final frame (m3-v05 opens on it).
 
 ### 17. key notes (quiet, hold about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -321,3 +321,10 @@ Visual upgrade (scene-level visual changes; teaching logic unchanged):
 - No new plate requests (the yellow-flame canvas follows m3-v03 Revision 2).
 
 Counts: 5,582 characters (Revision 1: 5,574); about 503 to about 506 s.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 218 error check (`checks/c-y11-m3-v04-rev2-error-check.md`), both should-fix findings resolved (root):
+- Combustion strip (scene 16 and the final frame): "fuel + O₂ → oxides" becomes "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", matching the repaired narration (soot is carbon, not an oxide). The same wording is carried into m3-v05's toolkit and m3-v07's dimmed copy.
+- Scene 1 (root decision 19): the animated clamp lowering a coded basin is removed. The observation is shown only as the two painted basin stills, and a grey method strip writes on "hold a cold white dish": "teacher demonstration or checked footage: follow your school's approved method". No method is presented as school-approved.
+- No speech change. Narration 5,582 characters (sum of 17 scene strings), about 506 s. Bold cues quoted in spoken order; no em dashes.

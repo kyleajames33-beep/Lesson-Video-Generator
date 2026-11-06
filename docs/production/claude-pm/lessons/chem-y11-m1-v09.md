@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V09: Relative atomic mass. Why is relative atomic mass a weighted average? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: chlorine Ar now 35.48 with guard digits kept in the working. Narration 6,203 characters (joined parser count), about 552.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: chlorine Ar now 35.48 with guard digits kept in the working. Narration 6,203 characters (joined parser count), about 552.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 6,203 characters (Revision 2; Revision 1 was 6,202 by the joined parser count), 16 scenes, about 552.1 s (9.2 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,188 characters (sum of scene strings; 6,203 with joining spaces; Revision 1 was 6,202 by the joined parser count), 16 scenes, about 552.1 s (9.2 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: ninth video of Year 11 Chemistry (2017 syllabus), Module 1. Templates: `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (asset brief format). Pre-design pack: `../pre-design/chem-y11/chem-y11-m1-v09.md`. Route entry: `chem-y11-m1-v09` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson14.sa.html` (SHA256 `ba2cf87ee8ad7f4ea07c89e48b2928a7f0c907507573bee7c25e307678b8c5cf`, recomputed, matches the route); used: warm-up (chlorine 35.45 hook), `l14-isotopes-same-element-different-mass-title` (chlorine weighted average and the exact-mass note), `l14-calculating-relative-atomic-mass-title`, `l14-worked-examples-title` (boron and silicon, and the simple-average misconception), drill 3 and 5. Site corrections: none logged for this page; three new site notes below.
 
@@ -269,3 +269,9 @@ Findings from `../checks/c-y11-m1-v09-learning-review.md` and `../checks/c-y11-m
 1. Scene 4 (should fix): recalculated in Python: 35 × 0.7577 = 26.5195, 37 × 0.2423 = 8.9651, sum 35.4846, rounding to 35.48 (rounding each product first gives 35.49). Spoken result now "thirty-five point four eight" (one character longer: "eight" for "nine"). Rows show the unrounded products with the rounded spoken values in brackets and "Ar = 26.5195 + 8.9651 = 35.4846 ≈ 35.48 ≈ 35.5", with a small tag explaining that rounding first gives 35.49. Decisions, the checked list, Numbers used and the verification list match; 35.5 at three significant figures retained.
 
 Narration: 6,203 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; +1 against Revision 1's 6,202), about 552.1 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-m1-v09-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 6,188 characters over 16 scenes (the earlier 6,203 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V01: Energy profiles. How does an energy profile distinguish endothermic from exothermic change? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 219 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 6,372 characters, 19 scenes, about 570 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -60,7 +60,7 @@ Author notes (not learner copy):
 (e) ΔfH (kJ mol⁻¹): CaCO₃(s, calcite) −1207.6 (CRC) or −1206.9 (older NBS); CaO(s) −635.1; CO₂(g) −393.5. ΔH = −635.1 − 393.5 + 1207.6 = +179.0, or +178.3 with −1206.9. "About +178" (the site's value) is kept. CH₄ + 2O₂ → CO₂ + 2H₂O(l): −393.5 + 2(−285.8) − (−74.8) = −890.3 kJ mol⁻¹.
 (f) A2's profile values are on a relative enthalpy scale (the axis shows numbers only for reading the question; a note on the card says "values relative to an arbitrary zero").
 (g) Pronunciations: "delta H"; "C H four plus two O two"; "C a C O three"; "kilojoules per mole".
-(h) Fuel method (Revision 2, brief 183): the ethanol spirit burner and ammonium chloride observations are plausible, but the safety chip does not establish approval of the exact apparatus and fuel procedure. Before any practical recording, root links the school-approved spirit-burner method and the product SDS (ethanol, ammonium chloride), including filling only a cold burner, cooling before refilling, keeping fuel stock away from flames, and extinguishing by capping. The video shows the painted burner plate with the chip; no learner wording beyond the chip changes (the design is at the duration cap).
+(h) Fuel method (Revision 2, brief 183): the ethanol spirit burner and ammonium chloride observations are plausible, but the safety chip does not establish approval of the exact apparatus and fuel procedure. Before any practical recording, root links the school-approved spirit-burner method and the product SDS (ethanol, ammonium chloride), including filling only a cold burner, cooling before refilling, keeping fuel stock away from flames, and extinguishing by capping. The video shows the painted burner plate with the chip; no learner wording beyond the chip changes (the design is at the duration cap). Revision 3: root decision 19 applies (Module 4 after-183 note): painted stills or checked footage with "follow your school's approved method" on screen; the SDS for ethanol and ammonium chloride are named here as the author-side references. No school method or SDS link is needed from the owner before voicing; no method is presented as school-approved.
 (i) Methane state (Revision 2, brief 183): CH₄ + 2O₂ → CO₂ + 2H₂O(g): −393.5 + 2(−241.8) + 74.8 = −802.3 kJ mol⁻¹, against −890.3 with H₂O(l). The −890 value is kept with the tag "products cooled to 25 °C: water as H₂O(l)"; the steam value appears only as a grey tag in scene 12.
 
 Main question: *How does an energy profile distinguish endothermic from exothermic change?*
@@ -85,7 +85,7 @@ Visual: opens on m3-v15's final frame; the "Next" chip fades. On "nothing was he
 ### 2. measuring temperature changes
 > Down, from twenty-one degrees to about fifteen. Record the starting temperature, start the change, then record the highest or lowest temperature reached. Burning ethanol under a can of water warms the water, from nineteen point five to thirty-one point two degrees. Dissolving ammonium chloride cools it. So which way is the energy **flowing**?
 
-Visual: the powder tips in by code (the watch glass tilts on a coded arc; no hand) and a coded stir swirl; the readout falls "21.0 → 15.2 °C" (tag "illustrative"); "down" ticks. On "Record the starting temperature" a three-step method card at the top right: "1. record the starting temperature", on "start the change" "2. start the change", on "highest or lowest" "3. record the highest or lowest temperature". On "Burning ethanol" `m7-spirit-burner-calorimeter-v1.png` slides in at the left of the cup; its coded thermometer readout climbs "19.5 → 31.2 °C" (tag "data: HSCScience worked example"). Safety chip: "eye protection · approved fuel, capped when out, cool before refilling · NH₄Cl: harmful if swallowed, eye irritant". A grey tag under the cup "why does dissolving cool? later in Module 4". On "flowing" both readouts pulse: "+11.7 °C" (orange) and "−5.8 °C" (blue), with hand tags orange "warmer" and blue "colder" and a pen ring around each readout.
+Visual: the powder tips in by code (the watch glass tilts on a coded arc; no hand) and a coded stir swirl; the readout falls "21.0 → 15.2 °C" (tag "illustrative"); "down" ticks. On "Record the starting temperature" a three-step method card at the top right: "1. record the starting temperature", on "start the change" "2. start the change", on "highest or lowest" "3. record the highest or lowest temperature". On "Burning ethanol" `m7-spirit-burner-calorimeter-v1.png` slides in at the left of the cup; its coded thermometer readout climbs "19.5 → 31.2 °C" (tag "data: HSCScience worked example"). Safety chip: "eye protection · approved fuel, capped when out, cool before refilling · NH₄Cl: harmful if swallowed, eye irritant", with a grey method strip under it: "teacher demonstration or checked footage: follow your school's approved method" (root decision 19 via the Module 4 after-183 note; Revision 3). The burner stays the painted still; no fuel procedure is animated. A grey tag under the cup "why does dissolving cool? later in Module 4". On "flowing" both readouts pulse: "+11.7 °C" (orange) and "−5.8 °C" (blue), with hand tags orange "warmer" and blue "colder" and a pen ring around each readout.
 
 ### 3. system and surroundings
 > To answer that, split the world in two. The system is the chemicals that are changing. In the cup, that's the ammonium chloride breaking up into ions. The surroundings are everything else, the water, the cup, the thermometer, and the air. And notice where the thermometer is. It sits in the surroundings, so it tells us what's happening to the surroundings, not directly to the **system**.
@@ -140,7 +140,7 @@ Visual: the equation strip writes large: "CH₄(g) + 2O₂(g) → CO₂(g) + 2H�
 ### 13. energy exits, energy enters
 > Here's a way to keep the words straight. Exothermic, energy exits. Endothermic, energy **enters**.
 
-Visual: the memory line writes large in the explainer's handwriting style: "Exothermic: energy exits." (orange, with outward arrows and the "Ex" letters underlined) and on "Endothermic" "Endothermic: energy enters." (blue, inward arrows, "En" underlined). Under each, the matching small profile.
+Visual: the memory line writes large in the explainer's handwriting style: "Exothermic: energy exits." (orange, with outward arrows and the "Ex" letters underlined) and on "Endothermic, energy enters" "Endothermic: energy enters." (blue, inward arrows, "En" underlined). Under each, the matching small profile.
 
 ### 14. attempt 1 (countdown, 10 seconds)
 > Your turn. In an instant cold pack, solid ammonium nitrate dissolves in water, and the pack's temperature falls from twenty-two degrees to four degrees. Classify the change as exothermic or endothermic, and justify your answer using the system and surroundings. Then state the sign of delta H, and where the products sit on an energy profile. Pause here to answer.
@@ -150,7 +150,7 @@ Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style questi
 ### 15. feedback 1 (brief)
 > Endothermic. The temperature of the surroundings fell, so energy flowed from the surroundings, the water and the pack, into the system, the dissolving ammonium nitrate. So delta H is positive, and the products sit higher than the reactants. A temperature fall doesn't mean a negative delta H. Delta H describes the **system**.
 
-Visual: card shrinks to the top. Rows: "endothermic" (blue); "surroundings (water, pack) cooled → energy flowed into the system (dissolving NH₄NO₃)" with inward blue arrows on a small dashed outline; "ΔH > 0: products higher than reactants" with a mini profile. The answer "endothermic: ΔH > 0, products higher" sits in a dark-ink box with a green tick. On "doesn't mean a negative delta H" a chip "ΔH is negative because the temperature decreased" fades in and is crossed in red (red hand tag "ΔH is the system's"). Hold about 1 second.
+Visual: card shrinks to the top. Rows: "endothermic" (blue); "surroundings (water, pack) cooled → energy flowed into the system (dissolving NH₄NO₃)" with inward blue arrows on a small dashed outline; "ΔH > 0: products higher than reactants" with a mini profile. The answer "endothermic: ΔH > 0, products higher" sits in a dark-ink box with a green tick. On "doesn't mean a negative delta H" a chip "ΔH is negative because the temperature decreased" fades in and is crossed in red; on "Delta H describes the system" a red hand tag "ΔH is the system's" writes beside it. Hold about 1 second.
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Use the energy profile to determine the activation energy and the enthalpy change for this reaction, and state whether it's exothermic or endothermic. Pause here to answer.
@@ -294,7 +294,7 @@ Previous: How do surface area and catalysts change reaction rate differently? Ne
 - **1. Length (learning review).** 19 scenes and about 570 s, at the cap (two sentences were already cut in Revision 1). Revision 2 resolved both brief 183 findings with no narration change, so neither reserve cut was used. Any later repair that adds length must be paid for: reserve cuts are scene 12's last sentence (states; about 85 characters; the key notes keep "every state shown") and scene 9's "which is why a lime kiln must be heated the whole time" clause (about 55 characters).
 - **2. Thermochemical-equation scope (root).** Format only; scaling and reversing are left to v07, where Hess's law uses them. The route listed the site's thermochemical-equations section; if root wants the scaling rule here, add one sentence to scene 12 (about 100 characters) and drop reserve cut 1.
 - **3. Ammonium chloride readings (science check).** 5.0 g in 50.0 mL, 21.0 → 15.2 °C, illustrative from ΔsolH ≈ +14.8 kJ mol⁻¹. v04 may reuse or replace them.
-- **4. Safety (science check).** Ethanol spirit burner under a copper can (teacher-approved fuel, burner capped when out, cooled before refilling) and ammonium chloride in a foam cup. Revision 2: the school-approved method and SDS must be linked before practical recording (author note h); root owns that link.
+- **4. Safety (science check).** Ethanol spirit burner under a copper can (teacher-approved fuel, burner capped when out, cooled before refilling) and ammonium chloride in a foam cup. Revision 2: the school-approved method and SDS must be linked before practical recording (author note h); root owns that link. Revision 3: resolved by root decision 19 (method strip on screen, painted still, SDS named in author note h); nothing further needed before voicing.
 
 ## Review notes
 
@@ -322,3 +322,9 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none (existing `y11c-limestone-lumps-v1.png` and `y11c-quicklime-lumps-v1.png` added, inspected).
 
 Counts: 6,372 characters (unchanged); about 570 s (unchanged, at the cap).
+
+## Revision 3 (7 Nov 2026)
+
+Brief 219 error check (`checks/c-y11-m4-v01-rev2-error-check.md`), should-fix finding resolved (root decision 19 via the Module 4 after-183 note):
+- Scene 2: a grey method strip "teacher demonstration or checked footage: follow your school's approved method" sits under the existing safety chip on the practical view. The spirit burner stays the painted still; no fuel procedure is animated. Author note (h) names the ethanol and ammonium chloride SDS as the author-side references; open decision 4 is marked resolved.
+- Display and author-plan change only, as required at the 570 s cap. No speech change. Narration 6,372 characters (sum of 19 scene strings), about 570 s. Bold cues quoted in spoken order (Revision 3 also ties scene 13's "enters" to the spoken "Endothermic, energy enters" and scene 15's "system" to "Delta H describes the system"; no timing change); no em dashes.

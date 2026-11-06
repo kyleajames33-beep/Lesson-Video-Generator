@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V13: Atomic radius trends. Why does atomic radius change across a period and down a group? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: radius uses two identical bonded atoms; 11+ kept on the nucleus; "same core charge". Narration 5,613 characters (joined parser count), about 509.4 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: radius uses two identical bonded atoms; 11+ kept on the nucleus; "same core charge". Narration 5,613 characters (joined parser count), about 509.4 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 5,613 characters (Revision 2; Revision 1 was 5,621 by the joined parser count), 17 scenes, about 509.4 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,597 characters (sum of scene strings; 5,613 with joining spaces; Revision 1 was 5,621 by the joined parser count), 17 scenes, about 509.4 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: thirteenth video of Year 11 Chemistry (2017 syllabus), Module 1; first of the periodic-trend videos (v13 radius, v14 ionisation energy and electronegativity, v15 reactivity with water). Templates: `phys-y11-fa1-v01.md` (structure), `chem-y11-m1-v10.md` (series conventions), `bio-y11-fa1-v05.md` (asset brief format). No starter pack exists for this video; the pack work (exact syllabus wording, site read, independent data and arithmetic, original questions, asset check) is done here. Route entry: `chem-y11-m1-v13` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson17.sa.html` (SHA256 `f5255f5050cd01fd277fb04e8830faf13d54b88bc8fc9efd1eaeed42a5715665`, recomputed, matches the route; used: the hook, `l17-the-main-atomic-radius-trend-title`, `l17-how-to-explain-the-trend-in-exam-language-title`, `l17-atoms-compared-with-ions-title`, the misconception card, the Na, Mg, Al worked example and drills 1, 4 and 5). Site corrections file checked: no logged item touches lesson 17.
 
@@ -271,3 +271,9 @@ Findings from `../checks/c-y11-m1-v13-learning-review.md` and `../checks/c-y11-m
 3. Scene 7 (should fix): "same net pull" now "same core charge" (length-neutral).
 
 Narration: 5,613 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; -8 against Revision 1's 5,621), about 509.4 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-m1-v13-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 5,597 characters over 17 scenes (the earlier 5,613 included the 16 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V05: Acid-base and acid-carbonate reactions. How can we predict acid-base and acid-carbonate products? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 5,621 characters, 19 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -72,7 +72,7 @@ Handoff: chem-y11-m3-v06 (cultural hold), then chem-y11-m3-v07.
 ## Opening frame and final frame
 
 - **Opening frame:** m3-v04's final frame exactly (Decisions).
-- **Final frame (for root to reconcile with `chem-y11-m3-v06` when it is designed):** the reaction toolkit board: six ticked strips in two rows, "synthesis: A + B → AB", "decomposition: AB → A + B", "precipitation: swap partners, one insoluble", "combustion: fuel + O₂ → oxides", "acid + base: salt + water", "acid + carbonate: salt + water + CO₂", each with one small plate from its video (`c1-burned-magnesium-v1.png`, `m6-limewater-milky-v1.png`, `m5x-ppt-agcl-white-v1.png`, `m8-flame-blue-v2.png`, `m6-clip-phenolphthalein-colourless-v1.png`, `m6-marble-chips-acid-v1.png`); the heading "Predicting products"; the chip "Next: How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?". No image, icon or text about the practices themselves.
+- **Final frame (for root to reconcile with `chem-y11-m3-v06` when it is designed):** the reaction toolkit board: six ticked strips in two rows, "synthesis: A + B → AB", "decomposition: AB → A + B", "precipitation: swap partners, one insoluble", "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", "acid + base: salt + water", "acid + carbonate: salt + water + CO₂", each with one small plate from its video (`c1-burned-magnesium-v1.png`, `m6-limewater-milky-v1.png`, `m5x-ppt-agcl-white-v1.png`, `m8-flame-blue-v2.png`, `m6-clip-phenolphthalein-colourless-v1.png`, `m6-marble-chips-acid-v1.png`); the heading "Predicting products"; the chip "Next: How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?". No image, icon or text about the practices themselves.
 
 ## Script and shots
 
@@ -323,3 +323,9 @@ Visual upgrade (scene-level visual changes; teaching logic unchanged):
 - No new plate requests.
 
 Counts: 5,621 characters (Revision 1: 5,578); about 503 to about 508 s.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 218 error check (`checks/c-y11-m3-v05-rev2-error-check.md`), should-fix finding resolved (root):
+- Final-frame toolkit: the combustion strip now reads "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", the scoped wording from repaired m3-v04, so soot is not called an oxide. The opening frame still equals m3-v04's final frame (which carries the same strip).
+- No speech change. Narration 5,621 characters (sum of 19 scene strings), about 508 s. Bold cues quoted in spoken order; no em dashes.

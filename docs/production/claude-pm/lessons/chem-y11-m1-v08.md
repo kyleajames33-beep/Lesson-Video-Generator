@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V08: Nuclide notation and isotopes. How does nuclide notation tell us the particles in an atom or ion? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 10 stages carbon strip, enlarged nucleus and N/Z sketch one at a time. Narration 5,900 characters (joined parser count), about 530 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 10 stages carbon strip, enlarged nucleus and N/Z sketch one at a time. Narration 5,900 characters (joined parser count), about 530 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 5,900 characters (Revision 2; Revision 1 was 5,900 by the joined parser count), 16 scenes, about 530 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,885 characters (sum of scene strings; 5,900 with joining spaces; Revision 1 was 5,900 by the joined parser count), 16 scenes, about 530 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: eighth video of Year 11 Chemistry (2017 syllabus), Module 1. Templates: `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (asset brief format). Pre-design pack: `../pre-design/chem-y11/chem-y11-m1-v08.md`. Route entry: `chem-y11-m1-v08` in `../../programme/chem-y11-route-inputs.json`. Site lessons read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson13.sa.html` (SHA256 `a9c61816c6508eedc88f5fc90ab38adcb03462dfb255883bbd817f098c0dd3aa`, recomputed, matches the route; used: `l13-subatomic-particles-reference-table-title`, `l13-worked-examples-title` iron example, drill 4, activity 2) and `.../module1/lesson14.sa.html` (SHA256 `ba2cf87ee8ad7f4ea07c89e48b2928a7f0c907507573bee7c25e307678b8c5cf`, recomputed, matches; used: `l14-isotopes-same-element-different-mass-title`, `l14-structural-basis-of-isotope-instability-title`, `l14-worked-examples-title` misconception card, drill 1 and 2). Site corrections: none of the logged items touches these sections.
 
@@ -277,3 +277,9 @@ Findings from `../checks/c-y11-m1-v08-learning-review.md` and `../checks/c-y11-m
 1. Scene 10 (should fix): the carbon strip shrinks to a dim row on "Why?", the enlarged carbon-12 nucleus carries "together" and "Neutrons add", then fades on "Small nuclei are stable" (kept tag) and the N against Z sketch replaces it on "a hundred and twenty-six neutrons". At most one mechanism full size at a time; if the build cannot stage this, cut the spoken lead example (existing reserve cut) and keep its point silent. No speech change.
 
 Narration: 5,900 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; 0 against Revision 1's 5,900), about 530 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-m1-v08-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 5,885 characters over 16 scenes (the earlier 5,900 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

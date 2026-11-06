@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V06: Percentage composition of a separated mixture. After a separation, what fraction of the mixture's mass came from each component, and what does missing mass mean? (design)
 
-Status: Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 2 (7 Nov 2026): brief 177 learning review and science check clean at Revision 1, so no repair or repair check was needed (root); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 6,056 characters, 16 scenes, about 542 s (9.0 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,041 characters (sum of scene strings; 6,056 with joining spaces), 16 scenes, about 542 s (9.0 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: sixth video of Year 11 Chemistry (2017 syllabus), Module 1 (Properties and Structure of Matter). Templates: `phys-y11-fa1-v01.md` (structure, voice, Decisions, Numbers used, length estimate, opening and final frames), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief). Chemistry conventions: `chem-m8-p02.md`, `chem-m5-g02.md`. Pre-design pack: `../pre-design/chem-y11/chem-y11-m1-v06.md` (every number recalculated below). Route entry: `chem-y11-m1-v06` in `../../programme/chem-y11-route-inputs.json`. Site lessons read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson03.sa.html` (SHA256 `b9de2bcc1ecf2856b4635cbad03877b4dd6218dd51d5b0b5d7bb38a1e55e423f`, recomputed, matches the route) and `.../module1/lesson05.sa.html` (SHA256 `c8b8b3adf2bc76e424505bb6e88bafecc0cd7fa9784e57dd9400175521a4222d`, recomputed, matches). Site corrections applied: `../site-corrections-chem-y11.md` items 6 and 8 (neither sentence is repeated here; see Decisions).
 
@@ -278,3 +278,9 @@ Next: Percentage composition from a chemical formula.
 - Revision 1 has had no independent review. Next: student learning review (trace from Stage 5 entry knowledge and v03: does the fast-forward strip recall enough for a student who skipped v03; is weighing by difference followable at speaking pace; does the bar make loss and extra visible before the numbers; are the attempt cards free of answer-bearing visuals), then the science check and Codex error check.
 - Every bar segment, gap and overhang must be computed from the same values as the rows (no hand-typed widths).
 - Checker output (5 November): narration 6,056 characters; no em dash; every quoted cue found in its scene's narration in spoken order.
+
+## Revision 2 (7 Nov 2026)
+
+- Brief 177 reviews (`checks/c-y11-m1-v06-learning-review.md`, `checks/c-y11-m1-v06-science-check.md`): 0 blockers, 0 should fix, 0 optional. No repair was made, so there is no Revision 2 and no repair error check; the reviewed Revision 1 narration and visuals are unchanged.
+- Headline count restated as the sum of scene strings: 6,041 characters over 16 scenes (the earlier 6,056 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

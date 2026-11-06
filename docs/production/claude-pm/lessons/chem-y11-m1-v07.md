@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V07: Percentage composition from a formula. Why does a chemical formula fix the percentage by mass of each element? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 8 hydrate working staged one reasoning stage at a time. Narration 6,108 characters (joined parser count), about 547 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 8 hydrate working staged one reasoning stage at a time. Narration 6,108 characters (joined parser count), about 547 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 6,108 characters (Revision 2; Revision 1 was 6,108 by the joined parser count), 16 scenes, about 547 s (9.1 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,093 characters (sum of scene strings; 6,108 with joining spaces; Revision 1 was 6,108 by the joined parser count), 16 scenes, about 547 s (9.1 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: seventh video of Year 11 Chemistry (2017 syllabus), Module 1. Templates: `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief); chemistry conventions `chem-m5-g02.md`. Pre-design pack: `../pre-design/chem-y11/chem-y11-m1-v07.md` (every number recalculated below). Route entry: `chem-y11-m1-v07` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson05.sa.html` (SHA256 `c8b8b3adf2bc76e424505bb6e88bafecc0cd7fa9784e57dd9400175521a4222d`, recomputed, matches the route), section `l05-percentage-composition-by-mass-title` and its quick check, short answer Q9 and drill; the rest of the page (gravimetric analysis, technique choice) belongs to v06 and Module 2. Site corrections: none of the logged items touches this section; one new precision note below.
 
@@ -283,3 +283,9 @@ Findings from `../checks/c-y11-m1-v07-learning-review.md` and `../checks/c-y11-m
 1. Scene 8 (should fix): visual directions split at the existing cues: only "5H₂O" bright while 90.0 is computed ("Treat the five waters as one group", "zero"); that working clears except a kept "5 H₂O = 90.0" chip on "The whole formula" while 249.6 builds ("six"); the formula-mass expansion dims to "Mr = 249.6" on "So water is" before the division ("percent"). Never all four rows bright together. No speech change.
 
 Narration: 6,108 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; 0 against Revision 1's 6,108), about 547 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-m1-v07-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 6,093 characters over 16 scenes (the earlier 6,108 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

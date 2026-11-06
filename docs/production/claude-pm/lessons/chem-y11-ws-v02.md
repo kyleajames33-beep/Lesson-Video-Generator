@@ -1,8 +1,8 @@
 # Year 11 Chemistry WS V02: Planning investigations. How does a chemistry plan produce valid, useful data? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: scene 2 controls staged one at a time; recap after the causes; count corrected. Narration 6,360 characters (joined parser count), about 569.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: scene 2 controls staged one at a time; recap after the causes; count corrected. Narration 6,360 characters (joined parser count), about 569.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
 
-Narration 6,360 characters (Revision 2; Revision 1 was 6,360 by the joined parser count), 16 scenes, about 569.1 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,345 characters (sum of scene strings; 6,360 with joining spaces; Revision 1 was 6,360 by the joined parser count), 16 scenes, about 569.1 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: second Year 11 Chemistry (2017 syllabus) Working Scientifically skills video, playlist entry 12, between `chem-y11-ws-v01` and `chem-y11-ws-v03`. Templates as `chem-y11-ws-v01.md` (structure from `phys-y11-fa1-v01.md`; plates from `bio-y11-fa1-v05.md`); skills-video format precedent `phys-y11-fa0-v02.md` (format only: its shared kit components `PlanBoard` and `RiskMatrix` are reused; no physics content). Running case: ws-v01's modified question on copper sulfate pentahydrate (v07). No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-ws-v02` in `../../programme/chem-y11-route-inputs.json` (start: "Use the current separation or quantitative investigation as one concrete case"; stop: "Apply planning investigations to that case and a new question; do not re-teach the subject mechanism"). Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html` (SHA256 `ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499`, recomputed, matches). Used: the key terms (independent, dependent and controlled variable, with the site's wording), the equipment table's principle (choose equipment by the precision the measurement needs; "Top-pan balance ±0.01 g") and the "Incomplete drying ... dry to constant mass" framing. Not used: the validity and reliability definitions (site note 1 in `chem-y11-ws-v01.md`), titration and gravimetric error scenarios (ws-v05).
 
@@ -305,3 +305,9 @@ Findings from `../checks/c-y11-ws-v02-learning-review.md` and `../checks/c-y11-w
 2. Count (should fix): headline corrected to the joined parser count: 6,360 (was stated as 6,345), about 569.1 s.
 
 Narration: 6,360 characters (joined parser count: `### N.` headings, lines starting "> " joined with a space, `**` removed; 0 against Revision 1's 6,360), about 569.1 s at 13.3 characters per second with the Revision 1 holds unchanged. Inside 5,500 to 6,800 and under 570 s. No em dashes.
+
+## Revision 3 (7 Nov 2026)
+
+- Brief 186 error check (`checks/c-y11-ws-v02-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
+- Headline count restated as the sum of scene strings: 6,345 characters over 16 scenes (the earlier 6,360 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
+- Bold cues quoted in spoken order; no em dashes (rechecked 7 November).

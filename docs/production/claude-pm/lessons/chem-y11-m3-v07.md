@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V07: The metal activity series. How can observations order metals by reactivity? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
 
 Narration 5,760 characters, 19 scenes, about 520 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -69,7 +69,7 @@ Handoff: chem-y11-m3-v08, why reactivity follows electron removal.
 
 ## Opening frame and final frame
 
-- **Opening frame (self-contained):** heading "How is the reactivity of various metals predicted?"; three `m5x-unsaturated-beaker-v1.png` copies at one scale, each tagged "dilute HCl", with metal tags "Mg", "Zn", "Cu" above; the six ticked reaction-type strips from m3-v05's final frame small and dimmed at the top right. Root may reconcile with m3-v06's final frame when it is designed; no narration depends on m3-v06.
+- **Opening frame (self-contained):** heading "How is the reactivity of various metals predicted?"; three `m5x-unsaturated-beaker-v1.png` copies at one scale, each tagged "dilute HCl", with metal tags "Mg", "Zn", "Cu" above; the six ticked reaction-type strips from m3-v05's final frame small and dimmed at the top right (Revision 3: the combustion strip carries the scoped wording "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide"). Root may reconcile with m3-v06's final frame when it is designed; no narration depends on m3-v06.
 - **Final frame (m3-v08 opens on it):** left, our series as a vertical strip (K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Ag, Au; teal outline for tested metals, grey for reference-only, dashed H line), with an arrow "more reactive" pointing up; right, a mini periodic table outline with the same metals' cells shaded by rank (darkest for K), a pen arrow "down a group" on Group 1 and "to the left" across period 3; under it the tag "every metal here formed positive ions: M → Mⁿ⁺ + electrons"; an amber chip "easier to remove electrons?"; the chip "Next: Why do metal-reactivity trends follow electron removal?".
 
 ## Script and shots
@@ -99,7 +99,7 @@ Visual: two more beakers join the row: `y11c-iron-acid-v1.png` (bubble meter low
 ### 5. water
 > Water is a gentler test. Potassium and sodium react so violently with cold water that your teacher shows them behind a safety screen, or on video, like in the alkali metals video. Calcium sinks and bubbles steadily. Magnesium barely reacts with cold water, though it does react with steam. With cold water, these make the metal hydroxide and hydrogen. So from water, it's potassium, sodium, calcium, then **magnesium**.
 
-Visual: the acid beakers shrink to a row at the top. The trough set from m1-v15 at one scale: `y11c-trough-k-v1.png` and `y11c-trough-na-v1.png` behind `y11c-safety-screen-v1.png` (grey tag "K, Na and Ca: teacher demonstration or checked footage"); `y11c-trough-ca-v1.png` (new; a grey granule on the bottom with a steady bubble stream); `y11c-trough-mg-v1.png` (new; a ribbon on the bottom with a few tiny bubbles; tag "faster with hot water or steam"). Lines small: "2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)", "Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g)"; tag "metal + cold water → metal hydroxide + hydrogen"; beside the Mg trough a grey tag "steam: Mg + H₂O(g) → MgO + H₂ (the oxide)". On "magnesium" the strip writes: "water: K > Na > Ca > Mg".
+Visual: the acid beakers shrink to a row at the top. The trough set from m1-v15 at one scale: `y11c-trough-k-v1.png` and `y11c-trough-na-v1.png` behind `y11c-safety-screen-v1.png` (grey tag "K, Na and Ca: teacher demonstration or checked footage; follow your school's approved method", root decision 19; the troughs stay painted stills); `y11c-trough-ca-v1.png` (new; a grey granule on the bottom with a steady bubble stream); `y11c-trough-mg-v1.png` (new; a ribbon on the bottom with a few tiny bubbles; tag "faster with hot water or steam"). Lines small: "2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)", "Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g)"; tag "metal + cold water → metal hydroxide + hydrogen"; beside the Mg trough a grey tag "steam: Mg + H₂O(g) → MgO + H₂ (the oxide)". On "magnesium" the strip writes: "water: K > Na > Ca > Mg".
 
 ### 6. oxygen
 > Oxygen gives a third ranking. Magnesium burns with a brilliant white light. Iron filings sprinkled into a flame burn as bright **sparks**. Copper shows no flame. It just turns black on the surface, as you saw with combustion. So from oxygen, it's magnesium, iron, then **copper**.
@@ -345,3 +345,10 @@ Visual upgrade (scene-level visual changes; teaching logic unchanged):
 - No new plate requests (the v07 anchor plates follow root decision 16's batch).
 
 Counts: 5,760 characters (Revision 1: 5,669); about 511 to about 520 s.
+
+## Revision 3 (7 Nov 2026)
+
+Brief 218 error check (`checks/c-y11-m3-v07-rev2-error-check.md`), both should-fix findings resolved (root):
+- Scene 5 (root decision 19): the existing tag now reads "K, Na and Ca: teacher demonstration or checked footage; follow your school's approved method". The troughs stay painted stills; no procedure is presented as approved.
+- Opening frame: the dimmed toolkit copy carries the scoped combustion strip from m3-v05 ("combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide").
+- No speech change. Narration 5,760 characters (sum of 19 scene strings), about 520 s. Bold cues quoted in spoken order; no em dashes.
