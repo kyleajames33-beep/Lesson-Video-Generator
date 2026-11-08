@@ -1,8 +1,8 @@
 # Maths A12 F11: How do we find repayments, balances, term and total paid? Set the balance to zero, solve for the repayment, count the total, find what is still owing, and solve for the term with logarithms (design)
 
-Status: Revision 1 (2 Nov). No independent review yet. Needs a student learning review, a Codex maths check and an error check. Voicing gated by the brief 124 Google voice pilot. Build uses the explainer kit, the maths kit (briefs 129, 131, 133, 135 and 143), the sequence parts from f01 to f08, the finance parts specified in `math-a12-f09.md` (`BalanceTable`, `LoanBalanceGraph`, `RepaymentSplit`, `PeriodTimeline` `loanMode`) and `math-a12-f10.md` (`LoanTermCurve`, `ToolPanel` table mode), plus one new part specified below (`SolveForPanel`) and a deposit mode for `PeriodTimeline`. Nothing recorded; human listening pending.
+Status: Revision 2 (7 Nov 2026): redesign to maths-visual-standard.md (d01 Revision 6 pattern, everyday anchor). Needs Codex learning review and maths check before voicing. Previously Revision 1 (2 Nov). Not voiced (no `math-a12-f11/` folder and no `measured/lesson.json`), so narration is rewritten freely where the anchor needs it. Nothing recorded; human listening pending.
 
-Narration 6,040 characters, 15 scenes, about 555 s (9.3 minutes), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,636 characters (sum of the 14 scene strings), 14 scene headings, about 506 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
 
 Scope: third video of the Year 12 Mathematics Advanced financial mathematics strand (course outline playlist order 48), after f10 (rate and repayment effects on the term) and before f12 (what cash flows define an annuity). Templates: `math-a12-i05.md` and `math-a12-d10.md` (via `math-a12-f04.md`): same section structure, voice, paper style and coded maths visuals; no painted plates, no people, no bank names or logos. No brief 151 pack and no route-inputs-3 entry exist for f11 (checked 2 Nov); pack work done here. Site lessons read (2 Nov, read-only): `financial-mathematics/lesson13.sa.html`, SHA256 `827aaa5b52f4c4ea8ba4e775b82d6cc65c1527e46206f23721a396dbfca7a479` (hook, cards 04 and 05, Problems 1 to 3, traps 01 to 03, SA Q1 to Q3); `lesson12.sa.html`, SHA256 `3421ed0f7375f5753005a8531ddf98df46232122ee5381f7af4ae11bd48deffa` (the recurrence and its closed form, from f09). Every number recalculated in Python with exact fractions and a row-by-row recurrence. Course outline entry: `math-a12-f11` (one content point, site sources lessons 12 and 13).
 
@@ -17,6 +17,27 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 **Boundary:** starts from f10's last frame (scene 13 of `math-a12-f10.md`: a `LoanBalanceGraph` with givens chip "$250,000; 6% p.a., compounded monthly; 20 years", a dashed curve from $250,000 to "$0 after 20 years", chips "M = ?", "Next: find the repayment exactly" and "?"); states "repaid" as Aₙ = 0; rearranges f09's closed form for M; finds the repayment for site Problem 3; finds the total amount paid and the interest; finds the amount still owing after 10 years; rearranges Aₙ = 0 for n with logarithms (site card 05 example) and explains rounding the term up, with the final smaller repayment and the exact total paid. Stops at the four calculations for a single loan. Not taught: present value of an annuity and the site's PV form of the formula (f12 to f15; shown once as a grey equivalent only); maximum borrowing from a budget (site Problem 2; same rearrangement, later practice video); affordability rules and offset accounts (not 2024 points); changes of rate during a loan (outside the point).
 
 ## Decisions
+
+### Revision 2 redesign (7 Nov 2026; these bullets override older bullets below where they conflict)
+
+- **Anchor: a personal loan for a used motorbike (painted plates, live).** Site lesson 13 card 05's loan ($20,000 at 7.2% p.a. compounded monthly, $400 a month) is the size of a personal loan for a used motorbike, so it becomes the anchor and the spine of the lesson: a painted motorbike and a painted swing tag with coded lines. One loan now carries all four calculations in the point: the time taken (scenes 2 to 4, the site's numbers unchanged), the total paid and the interest (4), the equal repayment for a 4-year term (5, 6; original), and the amount still owing after 2 years (7; original). The site's $250,000 example (Problem 3, numbers unchanged: $1,791.08, $429,859.20) moves to A1, with its trap (P ÷ n) as the crossed slip. Distinct from every context in `checks/root-decisions-maths-redesign.md` and from f09 (a car loan), f10 (a home loan), f12 (an apartment deposit).
+- **Order changed: the term first.** The hook asks the question a buyer asks ("how many repayments until the bike is mine?"), and the site's own card 05 answers it. Setting Aₙ = 0 and collecting the powers gives (M − Pr)(1 + r)ⁿ = M before any logarithm, so the rearrangement is no harder than for M; the logarithm is one row. Solving for M follows as "turn it around" on the same loan.
+- **Hook surprise, made visual (standard item 9).** 20,000 ÷ 400 = 50 is the natural guess. A `LoanBalanceBar` (f09 part) races two runs side by side: an interest-free ghost bar that empties at 50, and the real bar, whose amber interest caps keep it above zero until the 60th repayment, which is a short $249.87. Ten extra repayments come from the interest.
+- **Idealising assumptions (author notes, not learner copy).** Fixed rate; no fees; repayments at each month's end; the 4-year repayment rounded to the nearest cent ($480.78, exact 480.7829…), so its 48th repayment would be $480.94 (author note only; "total = 48 × M" is the course convention and is stated as such).
+- **Simulations (standard item 3).**
+  1. **The bike's balance bar** (scenes 1 to 4; main simulation): `LoanBalanceBar` with the interest-free ghost, live readouts (52 px) "repayments", "interest so far" and "balance owing", run to 60; the swing tag's coded "Paid off after" line fills on the answer.
+  2. **The repayment dial** (scenes 5, 6): a teal `ParameterSlider` for M on the swing tag sweeps from $400 upward while the balance curve's end point moves in from 60 months; it settles where the curve lands on $0 at 48 months ($480.78), with readouts "repayment", "paid off after" and "total paid".
+  3. **The halfway marker** (scene 7): a marker rides the $400 balance curve to 24 months with readouts "balance owing" and "paid off so far".
+- **Colour roles (fixed for f09 to f15).** Balance ink; interest amber; repayment teal; the unknown's slot outlined in grey ink with a "?" (not amber, which is interest); deposits blue (handoff only); targets dashed ink; answer green; mistake red, crossed slips only.
+- **Join with f10 (both designs edited together).** Scene 1 opens on f10 Revision 2's final frame exactly (motorbike, swing tag with "Loan $20,000", "7.2% p.a., monthly", "$400 a month", the dashed curve from $20,000 ending in "?", chips "n = ?", "Next: find the term exactly" and "?").
+- **Join with f12 (both designs edited together).** The handoff turns the money around into f12's anchor, saving towards a first apartment: the painted wall calendar `ma12-wall-calendar-v1.png` and apartment building `ma12-apartment-building-v1.png` (briefed in f12), with the deposit strip ("t = 0: $0 saved", blue "+$200" arrows at the ends of months 1 to 4, amber "×(1 + r)" arcs between, "?" tabs to "after 5 years: ?"), chips "Next: saving with regular deposits" and "?".
+- **Large type, hand tags, stage changes.** Type as listed under "Script and shots". `HandTag`: "only $280 pays the bike", "interest-free: 50", "real: 60", "120 = Pr: first month's interest", "n comes down from the power", "needs M > Pr", "59 leaves $248.38", "round up", "less time, less interest", "40% of the time, 36% paid off". At most two live. Stages, each change within 30 to 75 s: the bike and the racing bars (1); the solve-for board (2, 3); the round-up strip and total (4); the repayment dial (5); the M board (6); the halfway marker (7); the framed memory card (8); question cards with pictures (9 to 12); the apartment handoff (13); key notes (14).
+- **Worked examples and feedback (g01 layout).** Scenes 2 to 7: task strip, givens card ("P = $20,000", "r = 0.006 a month", "M = $400" or "n = 48"), `SolveForPanel` rows at 52 px with the unknown's slot, green framed answers ("60 repayments", "$23,849.87", "$480.78", "$12,795.26"). Scene 1 crosses the guess "50 repayments" in red; scene 4 crosses "59". Feedback scenes carry a `GivensStrip`, rows at 52 px, a green framed answer and one red crossed slip.
+- **Question cards.** Full text at 40 px plus a picture: A1 a coded sketch of a 20-year balance curve from $250,000 to $0 with "M = ?" (no rate per month); A2 the swing tag plate small with only the question's givens ("Loan $18,000", "6% p.a., monthly", "$500 a month", "Paid off after: ?").
+- **Memory aid (standard item 8).** Framed `MemoryAidCard`: "Paid off means Aₙ = 0. Set it to zero, then solve for what's missing." with four keyed slots (n, M, A_k, total) and the motorbike icon. Key notes are five short one-line bullets beside the card; the notes scene is 45 s (1,350 frames).
+- **Narration (not voiced).** Rewritten throughout for the new order and anchor; the site's card 05 sentences (log step, round up, last repayment) keep their Revision 1 wording; A2 and its feedback keep their Revision 1 text.
+
+### Revision 1 decisions (kept where not overridden above)
 
 - **Learner question kept (outline).** "How do we find repayments, balances, term and total paid?" The answer, built in order: a loan is repaid when the balance is zero, so every calculation starts from f09's Aₙ = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r (2); setting Aₙ = 0 at the planned n and rearranging gives M (3, 4); the total paid is the number of repayments times M, and the interest is the total minus the principal (5); the amount still owing after k repayments is A_k with the actual M (6); setting Aₙ = 0 with n unknown gives (1 + r)ⁿ = M/(M − Pr), solved with logarithms, which needs M > Pr (f10) (7); the term rounds up, because the whole number below still leaves money owing, and the last repayment is smaller (8).
 - **The hook (site lesson 13 Problem 3, numbers unchanged; the guess is original).** $250,000 at 6% p.a. compounded monthly over 20 years. The tempting guess "250,000 ÷ 240 = $1,041.67" (site trap 01 "simple average", in its plainest form) is stated and crossed in scene 1 by f10's rule: the first month's interest alone is $1,250, so $1,041.67 would not even cover it. The 3 s prediction is "more or less than $1,500?" (no answer given), answered in scene 4 ($1,791.08).
@@ -61,90 +82,88 @@ Handoff: math-a12-f12: a savings timeline with regular deposits (a question only
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key (as f09, f10): balances blue; interest amber; repayments red; debt paid off teal; the unknown slot outlined in amber; reference lines red dashed; crossed chips red; current algebra line bright, earlier lines dim; deposits (handoff only) green.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
 
-### 1. hook (more or less than $1,500?)
-> Here's a loan of two hundred and fifty thousand dollars at six per cent a year, compounded monthly, to be repaid in equal monthly repayments over twenty years. That's two hundred and forty repayments. A quick guess is two hundred and fifty thousand divided by two hundred and forty, about one thousand and forty-two dollars. But the first month's interest alone is one thousand two hundred and fifty dollars. So that guess wouldn't even cover the interest. Is the real repayment more or less than fifteen hundred dollars? Make a **guess**.
+Colour roles (Revision 2, fixed for f09 to f15): balance owed **ink**; interest **amber**; repayments **teal**; deposits **blue** (handoff only); the unknown's slot outlined grey ink with "?"; targets and reference lines **dashed ink**; time grey ink; answer **green**; mistake **red**, crossed slips only. Type (standard item 5): current line and live readouts 52 px; task strip, equation strip and givens 44 px; earlier lines 30 to 32 px and dimmed; table cells and axis numbers at least 30 px; hand tags at least 34 px; question cards 40 px; key-note bullets 40 px; nothing below 26 px; all text above y = 950. Every stage's main visual (bike and tag, bar, board, curve or card) is solid from its first frame. Header strip "MATHEMATICS ADVANCED · FINANCIAL MATHEMATICS"; scene headings in the hand font, 44 px.
 
-Visual: opens on f10's last frame exactly (f10 scene 13: the `LoanBalanceGraph`, givens chip "$250,000; 6% p.a., compounded monthly; 20 years", the dashed curve from $250,000 to "$0 after 20 years", chips "M = ?", "Next: find the repayment exactly" and "?"). Heading writes on: "How do we find repayments, balances, term and total paid?" as the "Next" chips fade; "M = ?" stays. On "two hundred and forty repayments" a grey tag "n = 20 × 12 = 240". On "A quick guess" a grey chip "250 000 ÷ 240 ≈ $1,041.67". On "interest alone" a `RepaymentSplit` bar: the amber interest "$1,250" overflows a "$1,041.67" bar, the overflow red; on "wouldn't even cover" the guess chip is crossed (caption "less than the first month's interest"). On "guess" (bold) a chip "more or less than $1,500?" and a 3 s prediction ring (no number); the chip stays to scene 4.
+### 1. hook (fifty repayments?)
+> Last video ended here. A used motorbike is bought with a twenty thousand dollar loan, at seven point two per cent a year, compounded monthly, repaid at four hundred dollars a month. A quick guess is twenty thousand divided by four hundred, which is fifty repayments. But the first month's interest is a hundred and twenty dollars, so only two hundred and eighty dollars of that repayment pays off the bike. Is it fifty repayments, about sixty, or more than seventy? Make a **guess**. Here's the race. Without interest, the loan would be gone at fifty. With interest, it takes **sixty**.
+
+Visual: opens on f10's last frame exactly (f10 Revision 2 scene 13: the painted motorbike `ma12-motorbike-v1.png` at the left, the swing tag `ma12-swing-tag-v1.png` with "Loan $20,000", "7.2% p.a., monthly", "$400 a month", the `LoanBalanceGraph` frame with the dashed curve from $20,000 ending in "?", chips "n = ?", "Next: find the term exactly" and "?"). Heading writes on: "How do we find the term, repayment, balance and total paid?" as the "Next" chips fade; "n = ?" stays. On "A quick guess" a grey chip "20 000 ÷ 400 = 50 repayments?". On "a hundred and twenty dollars" a `RepaymentSplit` bar for month 1: amber "$120.00" and teal "$280.00", hand tag "only $280 pays the bike". On "guess" (bold) a three-way chip "50 / about 60 / more than 70" and a 3 s prediction ring (no number). On "the race" the graph frame gives way to two `LoanBalanceBar`s side by side (about 640 px tall, solid): a dashed grey ghost bar "no interest" and the ink bar "with interest", with a shared counter (52 px) "repayments". Both run at speed: the ghost loses a teal $400 each month and empties at 50 (hand tag "interest-free: 50"); the ink bar gains an amber cap and loses the same teal bite each month and is still about $3,700 high at 50 (readout "$3,729.70"). On "sixty" (bold) the ink bar empties on a short final bite "$249.87" at 60 (hand tag "real: 60"); the guess chip "50 repayments?" is crossed in red, and "about 60" is ringed green. Readout under the bars: "interest so far: $3,849.87" (grey).
 
 ### 2. paid off means zero
-> So how do we find it exactly? Start with what repaid means. After the last repayment, the balance is zero. And we already have a formula for the balance after n repayments. A sub n equals P times one plus r to the n, minus M times one plus r to the n, minus one, all over r. Here P is two hundred and fifty thousand, r is half a per cent a month, and n is two hundred and forty. So we set A two hundred and forty equal to **zero**, and the only unknown left is M.
+> So how do we find that exactly? Start with what repaid means. After the last repayment, the balance is zero. And we already have a formula for the balance after n repayments. A sub n equals P times one plus r to the n, minus M times one plus r to the n, minus one, all over r. Here P is twenty thousand, r is zero point zero zero six, and M is four hundred. So we set A sub n equal to **zero**, and this time the unknown is n.
 
-Visual: camera continue. The dashed curve's end point pins to the time axis with a tag "A₂₄₀ = 0". A `SolveForPanel` writes in the right column: "Aₙ = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r" (grey tag "from reducing-balance loans"). Givens chip above it: "P = $250,000; r = 0.06 ÷ 12 = 0.005; n = 240". On each given the matching slot fills (P, r, n in blue); M's slot outlines in amber. On "zero" (bold) the left side becomes "0 = 250 000(1.005)²⁴⁰ − M(1.005²⁴⁰ − 1)/0.005".
+Visual: stage change to the g01 board; the bike and tag shrink to a 300 px thumbnail at the top left. Task strip (44 px): "How many monthly repayments are needed to repay the loan?" (site card 05). Givens card (44 px): "P = $20,000" (ink), "7.2% p.a., monthly: r = 0.006" (amber), "M = $400" (teal). `SolveForPanel` (52 px): "Aₙ = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r" (grey tag "balance formula, two videos ago"); the P, r and M slots fill from the givens as each is said; the n slot is outlined grey ink with "?". On "zero" (bold) the left side becomes "0 = 20 000(1.006)ⁿ − 400(1.006ⁿ − 1)/0.006".
 
-### 3. rearranging for the repayment
-> Now get M on its own, one move at a time. Add the repayment term to both sides, so the loan's growth equals the repayments' growth. That says the repayments, with their interest, exactly cancel what the loan would have grown to. Then multiply both sides by r, and divide by the bracket. That gives M equals P r times one plus r to the n, all over one plus r to the n, minus **one**.
+### 3. solving for the term
+> Multiply both sides by r, and the first month's interest, one hundred and twenty dollars, appears. Gather the powers, and you get two hundred and eighty times one point zero zero six to the n equals four hundred. So one point zero zero six to the n is ten sevenths. Take logs of both sides, and n comes down from the power. n is log of ten sevenths over log one point zero zero six, about fifty-nine point six **two**. This only works because four hundred is more than the interest. Otherwise the right side would be negative, and no power could equal it.
 
-Visual: camera continue (general form, in the `SolveForPanel`). Rows, each move animated: "0 = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r"; on "Add the repayment term" the red term slides across the equals sign: "P(1 + r)ⁿ = M[(1 + r)ⁿ − 1]/r"; on "exactly cancel" a small balance-beam icon (blue left pan, red right pan, level); on "multiply both sides by r" "Pr(1 + r)ⁿ = M[(1 + r)ⁿ − 1]"; on "divide by the bracket" the bracket drops under; on "one" (bold) boxed "M = Pr(1 + r)ⁿ / [(1 + r)ⁿ − 1]". A grey line beneath: "same as M = Pr / [1 − (1 + r)⁻ⁿ] (divide top and bottom by (1 + r)ⁿ)".
+Visual: camera continue (one row at a time, current row 52 px, earlier rows 32 px and dim). On "Multiply both sides by r" "120(1.006)ⁿ = 400(1.006)ⁿ − 400" with hand tag "120 = Pr: first month's interest" (amber). On "Gather the powers" "280(1.006)ⁿ = 400", the 280 tagged teal "the part of M that pays the debt in month 1"; "(1.006)ⁿ = 10/7". On "Take logs" "n log 1.006 = log(10/7)", the n sliding down from the power (hand tag "n comes down from the power"). On "two" (bold) "n = log(10/7) / log 1.006" with grey "≈ 59.62". On "more than the interest" a grey general row: "(1 + r)ⁿ = M / (M − Pr)", with hand tag "needs M > Pr" and f10's rule chip "repays only if M > Pr" pulsing once.
 
-### 4. the repayment
-> For our loan, P r is two hundred and fifty thousand times zero point zero zero five, which is one thousand two hundred and fifty, the first month's interest. One point zero zero five to the power two hundred and forty is about three point three one. So M is one thousand two hundred and fifty, times that power, over the power minus one. That's one thousand seven hundred and ninety-one dollars eight **cents**, to the nearest cent. It's more than fifteen hundred, because each repayment covers that month's interest and pays down some of the debt as well.
+### 4. rounding up and the total
+> Fifty-nine point six two repayments isn't possible, so which whole number? After fifty-nine repayments, there's still two hundred and forty-eight dollars thirty-eight owing. So the loan needs sixty repayments, and the last one is smaller, just two hundred and forty-nine dollars eighty-seven, once a month's interest is added. Always round the term up. The total actually paid is fifty-nine lots of four hundred, plus that last repayment, which is twenty-three thousand, eight hundred and forty-nine dollars eighty-seven **cents**. Take away the twenty thousand borrowed, and the bike cost three thousand, eight hundred and forty-nine dollars eighty-seven in **interest**.
 
-Visual: camera continue. Rows: "Pr = 250 000 × 0.005 = 1250" (tag "first month's interest"); grey readout "1.005²⁴⁰ ≈ 3.3102"; "M = 1250 × 1.005²⁴⁰ / (1.005²⁴⁰ − 1)"; on "cents" (bold) "= $1,791.08 (to the nearest cent)" boxed; the "M = ?" chip on the graph becomes "M = $1,791.08". On "more than fifteen hundred" the hook's chip returns with "more" ringed; a `RepaymentSplit` bar for month 1: amber "$1,250.00", teal "$541.08".
+Visual: stage change to the round-up strip: a number line (about 1,100 px) with 59, 59.62 (dashed marker) and 60; under it a `BalanceTable` (32 px) in `ellipsisRows` mode: row 1 ($20,000.00, interest $120.00, $400.00, $19,720.00), "⋮", row 59 closing "$248.38" (glows; hand tag "59 leaves $248.38"), row 60: "owed at start $248.38, interest $1.49, final repayment $249.87, owed at end $0.00" (author note d). On "round the term up" "60 repayments" in a green frame (52 px), hand tag "round up", and the bike thumbnail's tag gains "Paid off after: 60 repayments". On "total actually paid" row "59 × 400 + 249.87"; on "cents" (bold) "= $23,849.87" in a green frame. On "interest" (bold) a `RepaymentSplit`-style total bar splits into ink "borrowed $20,000.00" and amber "interest $3,849.87" (grey "if all 60 were $400: $24,000").
 
-### 5. the total paid
-> How much is paid altogether? There are two hundred and forty equal repayments, so the total is two hundred and forty times one thousand seven hundred and ninety-one dollars eight. That's four hundred and twenty-nine thousand, eight hundred and fifty-nine dollars twenty. The interest is the total minus the two hundred and fifty thousand borrowed, so one hundred and seventy-nine thousand, eight hundred and fifty-nine dollars twenty **cents**. That's more than seventy per cent of the amount you borrowed, on top of paying it back.
+### 5. turning it around: the repayment
+> Now turn it around. Say you want the bike paid off in exactly four years, which is forty-eight repayments. What should each repayment be? Set A forty-eight equal to zero, and now M is the unknown. Add the repayment term to both sides, so the loan's growth equals the repayments' growth. Then multiply both sides by r, and divide by the bracket. That gives M equals P r times one plus r to the n, all over one plus r to the n, minus **one**.
 
-Visual: clear change (graph shrinks to a small chip). A row of 240 thin red repayment bars (compact, grouped in years) compresses into one tall total bar; rows: "total = 240 × $1,791.08"; "= $429,859.20". On "total minus" the tall bar splits: a blue "principal $250,000" part and an amber "interest" part; row "interest = 429 859.20 − 250 000"; on "cents" (bold) "= $179,859.20" boxed. Grey readout "179 859.20 ÷ 250 000 ≈ 0.72" with tag "more than 70% of the loan".
+Visual: stage change to the repayment dial (simulation 2): the motorbike (about 560 px) and swing tag at the left, the tag's repayment line now a teal `ParameterSlider` "M"; at the right a `LoanBalanceGraph` (about 900 × 520 px, months 0 to 64) with the ink $400 curve ending at 60 and a dashed ink target mark "$0 at 48 months". On "What should each repayment be" the slider sweeps up from $400; the curve's end point slides in from 60 towards 48, with live readouts (52 px) "repayment", "paid off after" and "total paid"; the dial slows near the target and stops short with a "?" (the value waits for scene 6). Then the board writes in the right column, current row 52 px: "0 = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r" with the M slot outlined "?"; on "Add the repayment term" the teal term slides across: "P(1 + r)ⁿ = M[(1 + r)ⁿ − 1]/r"; on "multiply both sides by r" "Pr(1 + r)ⁿ = M[(1 + r)ⁿ − 1]"; on "divide by the bracket" the bracket drops under; on "one" (bold) boxed "M = Pr(1 + r)ⁿ / [(1 + r)ⁿ − 1]". A grey line beneath: "same as M = Pr / [1 − (1 + r)⁻ⁿ]".
 
-### 6. the amount still owing
-> Now, how much is still owed after ten years? That's after one hundred and twenty repayments, so use the same formula with n equal to one hundred and twenty, and the actual repayment. Two hundred and fifty thousand times one point zero zero five to the one hundred and twenty, minus one thousand seven hundred and ninety-one dollars eight times the bracket, over zero point zero zero five, gives one hundred and sixty-one thousand, three hundred and twenty-eight dollars sixteen **cents**. Halfway through the time, about two thirds of the loan is still owed. That's because the early repayments were mostly interest.
+### 6. the repayment and the total
+> Here P r is the same one hundred and twenty, and one point zero zero six to the forty-eight is about one point three three. So M is one hundred and twenty times that power, over the power minus one, which is four hundred and eighty dollars seventy-eight **cents**, to the nearest cent. That's about eighty dollars more each month. But forty-eight of them add to about twenty-three thousand and seventy-seven dollars, about seven hundred and seventy dollars less than before. The debt is gone sooner, so there's less interest **altogether**.
 
-Visual: clear change back to the `LoanBalanceGraph` (now solid, M = $1,791.08). Task strip: "How much is still owed after 10 years?" Givens chip: "P = $250,000; r = 0.005; M = $1,791.08; n = 120". Rows: "A₁₂₀ = 250 000(1.005)¹²⁰ − 1791.08(1.005¹²⁰ − 1)/0.005" with grey readouts "1.005¹²⁰ ≈ 1.8194", "454 849.18" and "293 521.02"; on "cents" (bold) "= $161,328.16" boxed (tag "using the rounded repayment"). A marker runs to 10 years with the readout; a red dashed half line at $125,000 sits below it. On "about two thirds" grey "161 328.16 ÷ 250 000 ≈ 0.65". On "mostly interest" the month-1 split bar from scene 4 reappears beside the start of the curve.
+Visual: camera continue. Rows: "Pr = 20 000 × 0.006 = 120" (amber tag "first month's interest"); grey readout "1.006⁴⁸ ≈ 1.3326"; "M = 120 × 1.006⁴⁸ / (1.006⁴⁸ − 1)"; on "cents" (bold) "= $480.78 (to the nearest cent)" in a green frame, and the dial on the tag settles at "$480.78" with the curve landing on $0 at 48 months. On "eighty dollars more" a teal chip "+$80.78 a month". On "forty-eight of them" two total bars side by side (about 700 px each): "$400 a month: $23,849.87" (ink and amber $3,849.87) and "$480.78 a month: 48 × 480.78 = $23,077.44" (ink and amber $3,077.44); a bracket "≈ $772 less". On "altogether" (bold) the amber parts are circled, hand tag "less time, less interest".
 
-### 7. solving for the term
-> The last unknown is the term. Here's a different loan: twenty thousand dollars at seven point two per cent, compounded monthly, repaid at four hundred dollars a month. Set A sub n equal to zero again, but now n is the unknown. Multiply by r, and the first month's interest, one hundred and twenty dollars, appears. Gather the powers, and you get two hundred and eighty times one point zero zero six to the n equals four hundred. So one point zero zero six to the n is ten sevenths. Take logs of both sides, and n comes down from the power. n is log of ten sevenths over log one point zero zero six, about fifty-nine point six **two**. This only works because four hundred is more than the interest. Otherwise the right side would be negative, and no power could equal it.
+### 7. the amount still owing
+> One more question. At four hundred dollars a month, how much is still owed on the bike after two years? That's after twenty-four repayments, so use the same formula with n equal to twenty-four. Twenty thousand times one point zero zero six to the twenty-four, minus four hundred times the bracket, over zero point zero zero six, gives twelve thousand, seven hundred and ninety-five dollars twenty-six **cents**. That's forty per cent of the time, but only about thirty-six per cent of the loan is paid off, because the early repayments carried the most interest.
 
-Visual: clear change (new case). Task strip: "How many monthly repayments are needed to repay the loan?" (site card 05). Givens chip: "P = $20,000; 7.2% p.a., compounded monthly: r = 0.006; M = $400". `SolveForPanel` with n's slot outlined in amber. Rows: "0 = 20 000(1.006)ⁿ − 400(1.006ⁿ − 1)/0.006"; on "Multiply by r" "120(1.006)ⁿ = 400(1.006)ⁿ − 400" (tag "120 = Pr: first month's interest"); on "Gather the powers" "280(1.006)ⁿ = 400"; "(1.006)ⁿ = 10/7"; on "Take logs" "n log 1.006 = log(10/7)" with the n sliding down from the power; on "two" (bold) "n = log(10/7) / log 1.006" with grey "≈ 59.62". On "more than the interest" a general row in grey: "(1 + r)ⁿ = M / (M − Pr): needs M > Pr", and the f10 rule chip "repays only if M > Pr" pulses.
+Visual: stage change to the halfway marker (simulation 3): the $400 balance curve (ink, about 1,100 × 600 px, months 0 to 60) with the bike thumbnail at the top left. Task strip: "How much is still owed after 2 years?" Givens card: "P = $20,000", "r = 0.006", "M = $400", "n = 24". A marker rides the curve from 0 to 24 months with live readouts (52 px) "balance owing" and "paid off so far". Rows: "A₂₄ = 20 000(1.006)²⁴ − 400(1.006²⁴ − 1)/0.006" with grey readouts "1.006²⁴ ≈ 1.1544", "23 087.75" and "10 292.49"; on "cents" (bold) "= $12,795.26" in a green frame, the marker readouts settling at "$12,795.26" and "$7,204.74". On "forty per cent of the time" two short bars under the graph: grey "time: 24 of 60 = 40%" and teal "paid off: 36%", hand tag "40% of the time, 36% paid off". On "most interest" the month-1 split bar (amber $120.00, teal $280.00) reappears beside the start of the curve.
 
-### 8. rounding the term up
-> Fifty-nine point six two repayments isn't possible, so which whole number? Check fifty-nine. After fifty-nine repayments, there's still two hundred and forty-eight dollars thirty-eight owing. So the loan needs sixty repayments, and the last one is smaller, just two hundred and forty-nine dollars eighty-seven, once a month's interest is added. Always round the term up. The total actually paid is fifty-nine lots of four hundred, plus that last repayment, which is twenty-three thousand, eight hundred and forty-nine dollars eighty-seven **cents**.
-
-Visual: camera continue (the n row stays bright). A number line with 59, 59.62 (dashed marker), 60. A `BalanceTable` in `ellipsisRows` mode: row 1 ($20,000.00 → $19,720.00), "⋮", row 59 closing "$248.38" (glows), row 60: "owed at start $248.38, interest $1.49, final repayment $249.87, owed at end $0.00" (author note d). On "round the term up" "60 repayments" boxed, with a tag "59 leaves $248.38 owing". On "total actually paid" rows "59 × 400 + 249.87"; on "cents" (bold) "= $23,849.87" boxed, with a grey tag "if every repayment were $400: 60 × 400 = $24,000".
-
-### 9. memory aid
+### 8. memory aid
 > Here's the one idea behind all four calculations. Paid off means A sub n equals zero. Set it to zero, then solve for what's **missing**.
 
-Visual: the handwritten line writes large: "Paid off means Aₙ = 0. Set it to zero, then solve for what's missing." Under it, four small slots, "M", "n", "A_k", "total", each with a tiny tag: "M: solve Aₙ = 0", "n: logs, round up", "owing: A_k with the real M", "total: repayments added". On "missing" (bold) the four slots pulse in turn. Hold about 2 seconds.
+Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 600 px, double ink frame, hand-font heading "Memory aid"), the motorbike icon at its left edge. The main line writes large, 56 px: "Paid off means Aₙ = 0. Set it to zero, then solve for what's missing." Four keyed slots under it (36 px): "n: logs, then round up", "M: solve Aₙ = 0 for M", "still owing: A_k with the real M", "total: add the repayments". On "missing" (bold) the four slots pulse in turn. Hold about 2 s.
 
-### 10. attempt 1 (countdown, 10 seconds)
-> Your turn. A car loan of twenty-four thousand dollars has interest at six per cent a year, compounded monthly. It's repaid in equal monthly repayments over five years. Find the monthly repayment, to the nearest cent. Pause here to answer.
+### 9. attempt 1 (countdown, 10 seconds)
+> Your turn. A loan of two hundred and fifty thousand dollars has interest at six per cent a year, compounded monthly. It's repaid in equal monthly repayments over twenty years. Find the monthly repayment, to the nearest cent, and the total amount paid. Pause here to answer.
 
-Visual: `QuestionCard`, worded as printed: "A car loan of $24,000 has interest at 6% p.a., compounded monthly. It is repaid in equal monthly repayments over 5 years. Find the monthly repayment, to the nearest cent." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no formula, no r, no n).
+Visual: `QuestionCard`, 40 px, worded as printed: "A loan of $250,000 has interest at 6% p.a., compounded monthly. It is repaid in equal monthly repayments over 20 years. (a) Find the monthly repayment, to the nearest cent. (b) Find the total amount paid." The full question stays on screen. Picture slot (about 420 × 260 px): a coded sketch of a balance curve from "$250,000" to "$0" at "20 years", with "M = ?" on it (no rate per month, no n). Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
-### 11. feedback 1 (brief)
-> Here r is half a per cent a month and n is sixty, so P r is one hundred and twenty. One point zero zero five to the sixty is about one point three four nine. So M is one hundred and twenty times that, over that minus one, which is four hundred and sixty-three dollars ninety-nine **cents**. Four hundred dollars is wrong. Dividing by sixty ignores the **interest**.
+### 10. feedback 1 (brief)
+> Here r is half a per cent a month and n is two hundred and forty, so P r is one thousand two hundred and fifty. So M is one thousand two hundred and fifty, times one point zero zero five to the two hundred and forty, over that power minus one. That's one thousand seven hundred and ninety-one dollars eight **cents**, and the total paid is four hundred and twenty-nine thousand, eight hundred and fifty-nine dollars **twenty**. Two hundred and fifty thousand over two hundred and forty is wrong. It doesn't even cover the first month's **interest**.
 
-Visual: card shrinks to the top; "$24,000", "6% p.a., compounded monthly", "over 5 years" and "to the nearest cent" underlined as used. Givens chip "P = 24 000, r = 0.005, n = 60; Pr = 120". Grey readout "1.005⁶⁰ ≈ 1.3489". Row "M = 120 × 1.005⁶⁰ / (1.005⁶⁰ − 1)"; on "cents" (bold) "= $463.99" boxed. On "interest" (bold) a chip "$400" fades in and is crossed (caption "24 000 ÷ 60: interest ignored"). Hold about 1 second.
+Visual: the card shrinks to the top (30 px). `GivensStrip` (44 px): "P = $250,000", "r = 0.06 ÷ 12 = 0.005", "n = 20 × 12 = 240", "Pr = 1250" ("$250,000", "6% p.a., compounded monthly", "over 20 years", "to the nearest cent" underlined as used). Grey readout "1.005²⁴⁰ ≈ 3.3102". Row (52 px) "M = 1250 × 1.005²⁴⁰ / (1.005²⁴⁰ − 1)"; on "cents" (bold) "= $1,791.08" in a green frame. On "twenty" (bold) "(b) 240 × 1,791.08 = $429,859.20" in a green frame ("total amount paid" underlined). On "interest" (bold) a red slip "250 000 ÷ 240 ≈ $1,041.67" writes and is crossed, red hand caption "less than the first month's interest, $1,250". Hold about 1 s.
 
-### 12. attempt 2 (countdown, 10 seconds)
+### 11. attempt 2 (countdown, 10 seconds)
 > Last one. A loan of eighteen thousand dollars has interest at six per cent a year, compounded monthly. It's repaid at five hundred dollars a month. How many monthly repayments are needed to repay the loan? Pause here to answer.
 
-Visual: `QuestionCard`, worded as printed: "A loan of $18,000 has interest at 6% p.a., compounded monthly. It is repaid at $500 per month. How many monthly repayments are needed to repay the loan?" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard`, 40 px, worded as printed: "A loan of $18,000 has interest at 6% p.a., compounded monthly. It is repaid at $500 per month. How many monthly repayments are needed to repay the loan?" The full question stays on screen. Picture slot: the swing tag plate (about 320 px tall) with only the question's givens on it ("Loan $18,000", "6% p.a., monthly", "$500 a month", "Paid off after: ?"). Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
-### 13. feedback 2 (brief)
+### 12. feedback 2 (brief)
 > The first month's interest is ninety dollars, so one point zero zero five to the n is five hundred over four hundred and ten, which is fifty over forty-one. Taking logs, n is about thirty-nine point seven **nine**. Round up, so it's forty repayments. Thirty-nine is wrong. After thirty-nine repayments, there's still about three hundred and ninety-three dollars **owing**.
 
-Visual: card shrinks to the top; "$18,000", "6% p.a., compounded monthly", "$500 per month" and "How many monthly repayments" underlined as used. Rows: "Pr = 18 000 × 0.005 = 90"; "(1.005)ⁿ = 500 / (500 − 90) = 50/41"; on "nine" (bold) "n = log(50/41) / log 1.005" with grey "≈ 39.79"; "40 repayments" boxed. On "owing" (bold) a chip "39" fades in and is crossed (caption "A₃₉ ≈ $392.91 still owed"). Hold about 1 second.
+Visual: the card shrinks to the top. `GivensStrip`: "P = $18,000", "r = 0.005", "M = $500" ("$18,000", "6% p.a., compounded monthly", "$500 per month" and "How many monthly repayments" underlined as used). Rows (52 px): "Pr = 18 000 × 0.005 = 90"; "(1.005)ⁿ = 500 / (500 − 90) = 50/41"; on "nine" (bold) "n = log(50/41) / log 1.005" with grey "≈ 39.79"; "40 repayments" in a green frame. On "owing" (bold) a red slip "39 repayments" writes and is crossed, red hand caption "A₃₉ ≈ $392.91 still owed". Hold about 1 s.
 
-### 14. handoff
-> So one formula answers all four questions, once you set the balance to zero. Now turn the money around. Instead of borrowing, you save two hundred dollars at the end of every month, in an account that earns interest. How much will you have after five **years**?
+### 13. handoff
+> So one formula answers all four questions, once you set the balance to zero. Now turn the money around. Instead of borrowing, you save towards your first apartment: two hundred dollars at the end of every month, in an account that earns interest. How much will you have after five **years**?
 
-Visual: the memory-aid line shows small at the top, then fades on "Now turn the money around". Board clears to a `PeriodTimeline` in `depositMode`: "t = 0: $0 saved"; green "+$200" arcs at the ends of months 1 to 4, with amber "×(1 + r)" arcs growing the balance between them (bars grow a little faster than the deposits alone); then "?" tabs to "after 5 years: ?". On "years" (bold) chips "Next: saving with regular deposits" and "?". No formula, no rate value and no "annuity" word. Hold about 2 seconds. This is f12's assumed opening frame; scene 15 returns to it silently after the notes.
+Visual: the memory card shows small at the top, then fades on "Now turn the money around". Board clears to f12's anchor: the painted wall calendar `ma12-wall-calendar-v1.png` (about 520 px tall, solid) at the left, the painted apartment building `ma12-apartment-building-v1.png` (about 480 px tall) at the right with a small dashed ink "goal" tag, and between them a `PeriodTimeline` in `depositMode`: "t = 0: $0 saved"; blue "+$200" arrows at the ends of months 1 to 4, with amber "×(1 + r)" arcs between them (bars grow a little faster than the deposits alone); "?" tabs to "after 5 years: ?". On "years" (bold) chips "Next: saving with regular deposits" and "?". No formula, no rate value and no "annuity" word. Hold about 2 s. This is f12's opening frame; scene 14 returns to it silently after the notes.
 
-### 15. key notes (quiet, hold about 60 seconds)
-Heading on screen: "Key notes: what to write in your book".
+### 14. key notes (quiet, 45 seconds)
+Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 40 px, colour roles kept, each one line.
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Balance after n repayments: Aₙ = P(1 + r)ⁿ − M[(1 + r)ⁿ − 1]/r. Repaid means Aₙ = 0.
-2. Repayment: M = Pr(1 + r)ⁿ / [(1 + r)ⁿ − 1] (round to the nearest cent). Total paid = number of repayments × M; interest = total paid − P.
-3. Amount still owing after k repayments: A_k, using the actual repayment.
-4. Term: (1 + r)ⁿ = M / (M − Pr), so n = log(M / (M − Pr)) / log(1 + r), which needs M > Pr. Round n up; the last repayment is smaller.
+- Repaid means Aₙ = 0.
+- Term: (1 + r)ⁿ = M ÷ (M − Pr); round n up.
+- Repayment: M = Pr(1 + r)ⁿ ÷ [(1 + r)ⁿ − 1].
+- Still owing after k repayments: A_k with the real M.
+- Total paid = all repayments; interest = total − P.
 
-Memory aid (large, on the notes screen): *Paid off means Aₙ = 0. Set it to zero, then solve for what's missing.*
+Memory aid (framed card, right half of the notes screen, as in scene 8): *Paid off means Aₙ = 0. Set it to zero, then solve for what's missing.* The notes scene is 1,350 frames (45 s).
 
-Visual (end of the hold, silent, no added speech): after the notes hold the board cross-fades back (shared key-notes component, 1 s; root decision 20) to scene 14's frame exactly (the deposit timeline from "t = 0: $0 saved" with "+$200" and "×(1 + r)" arcs, "after 5 years: ?", the chips "Next: saving with regular deposits" and "?"). This is the final frame and f12's assumed opening frame.
+Visual (end of the hold, silent, no added speech): after the notes hold the board cross-fades back (1 s) to scene 13's frame exactly (the calendar, the apartment building with its "goal" tag, the deposit strip from "t = 0: $0 saved" with blue "+$200" arrows and amber "×(1 + r)" arcs, "after 5 years: ?", the chips "Next: saving with regular deposits" and "?"). This is the final frame and f12's opening frame.
 
 ## Teaching checks
 
@@ -159,11 +178,11 @@ Visual (end of the hold, silent, no added speech): after the notes hold the boar
 
 ## Practice questions and model answers
 
-**Attempt 1 (scene 10; original wording, HSC style, 2 marks suggested, not an official marking scheme).** "A car loan of $24,000 has interest at 6% p.a., compounded monthly. It is repaid in equal monthly repayments over 5 years. Find the monthly repayment, to the nearest cent."
-Model answer: r = 0.005, n = 60; A₆₀ = 0 gives 24 000(1.005)⁶⁰ = M(1.005⁶⁰ − 1)/0.005, so M = 24 000 × 0.005 × 1.005⁶⁰/(1.005⁶⁰ − 1) = 120 × 1.348850…/0.348850… = $463.99. Classic mistake (crossed): "$400" (24 000 ÷ 60).
+**Attempt 1 (scene 9; site lesson 13 Problem 3 numbers, original wording, HSC style, 3 marks suggested, not an official marking scheme).** "A loan of $250,000 has interest at 6% p.a., compounded monthly. It is repaid in equal monthly repayments over 20 years. (a) Find the monthly repayment, to the nearest cent. (b) Find the total amount paid."
+Model answer: r = 0.005, n = 240, Pr = 1250; setting A₂₄₀ = 0 gives M = Pr(1 + r)ⁿ/[(1 + r)ⁿ − 1] = 1250 × 1.005²⁴⁰/(1.005²⁴⁰ − 1) = 1,791.0776… = $1,791.08. Total paid = 240 × $1,791.08 = $429,859.20. Classic mistake (crossed): "$1,041.67" (250 000 ÷ 240; less than the first month's interest of $1,250).
 
-**Attempt 2 (scene 12; original wording, HSC style, 2 marks suggested).** "A loan of $18,000 has interest at 6% p.a., compounded monthly. It is repaid at $500 per month. How many monthly repayments are needed to repay the loan?"
-Model answer: r = 0.005, Pr = 90; Aₙ = 0 gives (1.005)ⁿ(500 − 90) = 500, so (1.005)ⁿ = 50/41 and n = log(50/41)/log 1.005 ≈ 39.79; round up: 40 repayments (after 39, about $392.91 is still owed). Classic mistake (crossed): "39".
+**Attempt 2 (scene 11; original wording, HSC style, 2 marks suggested).** "A loan of $18,000 has interest at 6% p.a., compounded monthly. It is repaid at $500 per month. How many monthly repayments are needed to repay the loan?"
+Model answer: Pr = 90; setting Aₙ = 0 gives (1.005)ⁿ = 500/410 = 50/41; n = log(50/41)/log 1.005 ≈ 39.79, so 40 repayments (after 39, $392.91 is still owed). Classic mistake (crossed): "39" (rounded down).
 
 ## Numbers used (author note: every value)
 
@@ -179,6 +198,16 @@ Model answer: r = 0.005, Pr = 90; Aₙ = 0 gives (1.005)ⁿ(500 − 90) = 500, s
 | A2 | Pr = 90; 50/41; n ≈ 39.79; 40 repayments; crossed 39 (A₃₉ ≈ $392.91) | 12, 13 |
 | Handoff | +$200 at the end of each month; ×(1 + r); after 5 years: ? | 14 |
 
+**Revision 2 additions (recalculated in Python with exact fractions, 7 Nov):**
+
+| Item | Value or result | Where it appears |
+| --- | --- | --- |
+| Hook race | no interest: 50 repayments; with interest: 60 (A₅₀ = $3,729.70 still owed after 50; final $249.87) | 1 |
+| Card 05 totals | total $23,849.87; interest $3,849.87 | 1, 4 |
+| 4-year repayment | Pr = 120; 1.006⁴⁸ = 1.3326100…; M = 480.7829… = $480.78; 48 × 480.78 = $23,077.44; interest $3,077.44; difference from $23,849.87: $772.43 ("about seven hundred and seventy dollars"); +$80.78 a month (author note: with $480.78 the 48th repayment is $480.94, total $23,077.60) | 5, 6 |
+| Owing after 2 years at $400 | 1.006²⁴ = 1.1543873…; 20 000 × 1.006²⁴ = 23 087.75; 400(1.006²⁴ − 1)/0.006 = 10 292.49; A₂₄ = $12,795.26; paid off $7,204.74 = 36.0%; time 24/60 = 40% | 7 |
+| A1 (site Problem 3) | M = $1,791.08; total $429,859.20; crossed $1,041.67 | 9, 10 |
+
 ## Numbers to verify (all values, repeated for Codex)
 
 Checked in Python with exact fractions and a row-by-row recurrence (2 Nov, isolated run); Codex to re-check.
@@ -191,32 +220,65 @@ Checked in Python with exact fractions and a row-by-row recurrence (2 Nov, isola
 - A1: 1.005⁶⁰ = 1.348850; 120 × 1.348850/0.348850 = 463.99.
 - A2: 18 000 × 0.005 = 90; 500/410 = 50/41; ln(50/41)/ln(1.005) = 39.79; A₃₉ = 392.91.
 
+- Revision 2: A₅₀ for $20,000, r = 0.006, M = 400 (the hook race readout at 50): 3 729.70 (Codex to confirm).
+- M for n = 48: 20 000 × 0.006 × 1.006⁴⁸/(1.006⁴⁸ − 1) = 480.7829 → 480.78; balance after 47 repayments of 480.78 is 478.07, so the 48th is 478.07 × 1.006 = 480.94.
+- A₂₄ = 20 000(1.006)²⁴ − 400(1.006²⁴ − 1)/0.006 = 12 795.26; 7 204.74/20 000 = 0.3602.
+- 48 × 480.78 = 23 077.44; 23 849.87 − 23 077.44 = 772.43.
+
 ## Memory aid check
 
 - **"Paid off means Aₙ = 0. Set it to zero, then solve for what's missing."** Original. Meaning, as said in scene 9: every loan calculation in this video starts from the closed form with the end balance zero, then isolates the unknown. Assumptions checked: equal repayments at the end of each period, interest compounding once per period at r (f09's model); the "amount still owing" calculation does not set Aₙ = 0 but evaluates A_k at the actual M, which the aid's slots make explicit ("owing: A_k with the real M"; key note 3); solving for n needs M > Pr (key note 4). It helps a new case: the maximum amount borrowable for a fixed M and n is the same equation solved for P. Introduced after the four calculations (2 to 8).
 - **Considered, not used:** a "formula triangle" for M, P and n (hides the cause); "round n up, always" alone (kept inside key note 4 with its reason).
 
+- **Revision 2 note.** The aid is unchanged; the card now lists the four slots in the lesson's new order (n first, then M, still owing and total).
+
 ## Narration length estimate
 
-Revision 1 (2 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,040 characters**, 15 scenes. Characters per scene (1 to 15): 535, 459, 378, 552, 528, 612, 767, 545, 132, 238, 357, 227, 364, 257, 75 (the total includes the 14 joining spaces). At 13.3 characters per second the speech is about 454 s; add 3 s for the hook's prediction, about 12 s of settling time for the rearranging moves (3, 7), the total stack (5) and the final-row table (8), 20 s for two countdowns, 5 s of short holds (scenes 9, 11, 13, 14) and about 60 s more of the quiet notes hold (about 100 s of holds): **about 555 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 5's last sentence (keep the grey tag); scene 7's "Otherwise the right side would be negative, and no power could equal it." (keep the grey row; the condition stays spoken). More than about 540 characters of trims would drop below the 5,500 floor.
+Revision 2 (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " inside the scene, joined with a space, bold markers removed; the total is the sum of the scene strings): **5,636 characters**, 14 scenes. Characters per scene (1 to 14): 578, 422, 551, 664, 436, 532, 558, 132, 273, 537, 227, 364, 287, 75.
+
+At 13.3 characters per second the speech outside the notes scene is about 418 s. Holds and settling: the hook's 3 s prediction; two 10 s countdowns (20 s); the memory-aid hold (2 s); two feedback holds (2 s); the handoff hold (2 s); settling for the hook race (about 6 s beyond its speech), the round-up strip (4), the dial (5) and the marker (7), about 14 s in all; the key-notes scene fixed at 45 s. Total **about 506 s**, under the 570 s cap with about 64 s spare.
+
+Reserve trims if the voiced take runs long: scene 7's last sentence after "cents" (keep the bars silent; about 9 s); scene 6's "That's about eighty dollars more each month." (keep the chip; about 3 s). Do not cut below 5,500 characters without replacing content.
 
 ## Scene list and build ids
 
 Lesson key `m-a12f11` (route math-a12-f11). Suggested explainer folder `src/explainer/lessons/math-a12-f11` and build folder `docs/production/claude-pm/lessons/m-a12f11` (root to confirm when adding the LESSONS entry).
 
-In order (kebab-case; 15 scene headings, all `### N.`): hook, paid-off-zero, rearrange-repayment, the-repayment, total-paid, still-owing, solve-term, round-up, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
+In order (Revision 2; kebab-case; 14 scene headings, all `### N.`): hook-race, paid-off-zero, solve-term, round-up-total, turn-around-repayment, repayment-total, still-owing, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
 
-Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Transitions (`pickTransition`): f10's last frame continues into scene 1 (camera continue, same graph); 1 to 2 to 3 to 4 camera continue; 4 to 5 clear change (bars); 5 to 6 clear change (graph); 6 to 7 clear change (new case); 7 to 8 camera continue; 8 to 9 camera pull back to the aid; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board.
+Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`: the learner reads the worded question and works during the countdown) and key-notes (`hold`: the learner copies five bullets and the card). Transitions (`pickTransition`): f10's last frame continues into scene 1 (camera continue; the graph frame gives way to the racing bars on "the race"); 1 to 2 clear change to the board (bike thumbnail kept); 2 to 3 camera continue; 3 to 4 clear change (round-up strip); 4 to 5 clear change (the dial on the tag); 5 to 6 camera continue; 6 to 7 clear change (marker on the curve); 7 to 8 clear change to the card; attempts and feedback card shrink to the top; 12 to 13 board clear; 13 to 14 fade to the notes board.
 
-Holds: hook prediction (3 s); attempt-1, attempt-2 (10 s countdown after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/m-a12f11-learning-review.md`, `science_check` = `checks/m-a12f11-maths-check.md`.
+Holds: hook prediction (3 s); attempt-1, attempt-2 (10 s countdown after the speech, ring full from "Pause here to answer."). key-notes is the quiet notes hold, fixed at 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a12f11-learning-review.md`, `science_check` = `checks/m-a12f11-maths-check.md`.
 
 ## Assets
 
-Have: no plates. Existing kit used: `AlignedAlgebra`, `ReadoutPanel`, `Chip` with `cross`, `Callout`, `PenArrow`, scribble circle, `Countdown`, `QuestionCard` (subject "Mathematics Advanced"), `KeyNotes`, `Heading`. Finance parts from f09 and f10: `LoanBalanceGraph` (end pin, marker, half line), `RepaymentSplit` (overflow), `BalanceTable` (`ellipsisRows`, `finalRow`), `PeriodTimeline` (`loanMode` base).
+Inspected before choosing (7 Nov, actual appearance): `public/assets/biology/y11-banknote-v1.png` and `y11-coins-v1.png` (decorative money, no loan or vehicle), `y11-laptop-blank-v1.png` (f10's calculator), the Physics bike plates `y11c-bike-frame-v1.png` and `y11c-bike-wheel-v1.png` (a bicycle in d06; not a motorbike). No motorbike or price-tag plate exists.
 
-New parts: `SolveForPanel` and `PeriodTimeline` `depositMode` (below); a `TotalStack` behaviour for scene 5 (below).
+Need (painted, new; see the Codex asset brief): `ma12-motorbike-v1.png`, `ma12-swing-tag-v1.png` (also f10's handoff frame).
 
-## Codex asset brief
+Uses f12's plates in the handoff frame: `ma12-wall-calendar-v1.png`, `ma12-apartment-building-v1.png` (briefed in `math-a12-f12.md`).
+
+Coded (studio kit): `LoanBalanceBar` (with an interest-free ghost), `SolveForPanel`, `BalanceTable`, `RepaymentSplit`, `LoanBalanceGraph` with a riding marker, `ParameterSlider` on the tag, `PlateFields` for the tag's lines, `WorkingBoard` parts, `LiveReadoutBoard`, `HandTag`, `MemoryAidCard`, `QuestionCard` with `GivensStrip`, countdown, `KeyNotesScreen`. No coded cartoon of a motorbike or tag.
+
+### Studio kit use and additions
+
+From f09 and f10: `moneyEngine`, `LoanBalanceBar`, `BalanceTable`, `RepaymentSplit`, `LoanBalanceGraph`, `PlateFields`, `ScreenApp`.
+
+New in f11:
+1. **`LoanBalanceBar` ghost mode**: a second, dashed bar that runs the same repayments with r = 0, on the same counter (the hook race).
+2. **`SolveForPanel`** at studio sizes (Revision 1 part below): the unknown's slot outlined grey with "?"; terms slide across the equals sign; the power n slides down in front of the log.
+3. **`TargetDial`**: a `ParameterSlider` bound to a target (here "$0 at 48 months") that sweeps, slows and settles on the engine's solution, with the curve's end point following it.
+
+## Codex asset brief (Maths A12 F11, a used motorbike on a personal loan)
+
+Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/math-a12-f11.md`. Paint after the learning review and maths check pass and root gives the go-ahead. Save to `public/assets/maths/`. Every plate: **transparent PNG with a true alpha channel** and clean edges with no coloured fringe or halo (check on black and on white); ink and watercolour in the house style of the Module 5 Biology plates and the f09 plates; at least 8 per cent clear margin; no text, labels, letters, numbers, logos, brand names, number plates, people, hands, faces, backdrop, glow or ground shadow. Never stretch to fit; keep the native aspect ratio.
+
+1. `ma12-motorbike-v1.png` (2400 × 1500 px): one ordinary used road motorbike (a commuter or learner-approved size), side view facing right, on its side stand, muted dark green or grey paint with light wear, plain spoked or cast wheels, no rider, helmet or luggage. No badge or brand shapes on the tank; blank number plate.
+2. `ma12-swing-tag-v1.png` (1000 × 1600 px): one plain card swing tag, the kind tied to a vehicle or product for sale, upright, with a punched hole and a short loop of string at the top, off-white card with a thin printed border. Its face is **blank** apart from four evenly spaced faint ruled lines for code to fill; report the face's rectangle and each line's position in pixels in the hand-in. No price, text, logo or barcode.
+
+Report inspection on the paper background (`#f6f1e7`) at 300 px and 600 px wide, plus the alpha check and the tag's measured rectangles. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/ma12-f11-provenance.json`.
+
+### Revision 1 coded part specification (kept; colours now follow the Revision 2 roles, and every part is built as a studio kit part)
 
 No painted plate is needed (programme decision 5; no people, no bank branding). Coded kit parts for the finance-parts kit brief (with f09's four and f10's three), in `src/explainer/math/`, exported through `kit.tsx`, with a pilot from this design's numbers, numerical checks, desktop and phone-landscape stills and a silent motion sample. All values come from f09's shared loan engine; the repayment solver (M from P, r, n) and the term solver (n from P, r, M, plus whole repayments and final payment) are added to the engine and checked against the row-by-row recurrence.
 
@@ -238,6 +300,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no people, bank names or logos appear in any visual.
 9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+11. Revision 2: confirm the new order (term, total, repayment, still owing) keeps every site value from card 05 and Problem 3 unchanged; confirm the hook race values (50 without interest; A₅₀ = $3,729.70; 60 with interest) and every Revision 2 addition; confirm the "total = 48 × M" convention is stated as such and the 48th-repayment adjustment stays in the author notes; confirm the colour roles (the unknown's slot is grey, not amber; mistake red only on crossed slips); confirm question-card pictures give nothing away; confirm the five one-line key notes and the 1,350-frame notes scene; confirm the opening matches f10 Revision 2 scene 13 and the handoff frame matches f12 Revision 2 scene 1.
 
 ## YouTube metadata (draft)
 
@@ -266,8 +330,23 @@ Builds on: Reducing-balance loans month by month, and how rate and repayment cha
 - **4. Present value form (root).** The grey equivalent M = Pr/[1 − (1 + r)⁻ⁿ] (the site's form) is shown once and not spoken. Confirm, or drop it until the annuity videos.
 - **5. Site link form.** `.sa.html` form (root decision 15).
 
+- **Revision 2 (root).** (a) Order changed to term first, on the site's own card 05 loan, so one anchor carries all four calculations; the site's Problem 3 moves to A1 with its numbers unchanged. (b) The original A1 ($24,000 "car loan", $463.99) is dropped, since f09's anchor is a car loan and the M skill is now in scenes 5 and 6. (c) f12's plates appear in this lesson's final frame, so they must be painted before the f11 build.
+
 ## Review notes
 
 - Revision 1 has had no independent review. Next: student learning review (trace from f09's closed form and f10's M > Pr; check that "repaid means zero" is said before any rearranging; that each rearranging move has its reason; that the hook's guess is crossed by the visible interest; that the amount owing uses the actual repayment; that the log step and the M > Pr condition are clear for a student starting Year 12; that rounding up is proven by the 59-repayment balance; and that the attempt cards give nothing away), then the Codex maths check and error check.
 - The overflowing guess bar, the sliding repayment term, the total stack, the halfway marker, the falling power and the final row carry the explanation; judge them at playback speed in the voiced preview. Every bar, row and readout must come from the same loan engine.
 - The opening frame is f10's scene 13 (same designer). Scene 14 must match f12's opening when f12 is designed.
+
+## Revision 2 (7 Nov 2026)
+
+Redesign to `../maths-visual-standard.md` on the d01 Revision 6 pattern, with an everyday anchor (owner rule, 7 Nov).
+
+- **Anchor:** a used motorbike bought with a personal loan (site lesson 13 card 05's $20,000 at 7.2% p.a. monthly, $400 a month), shown as a painted motorbike and a painted swing tag with coded lines. One loan carries the four calculations in the point: the term (60 repayments, the last $249.87), the total paid and interest ($23,849.87, $3,849.87), the repayment for 4 years ($480.78) and the amount owing after 2 years ($12,795.26).
+- **Simulations:** (1) the hook race: an interest-free ghost bar empties at 50 while the real bar, gaining interest each month, lasts to 60; (2) the repayment dial on the tag sweeping until the balance curve lands on $0 at 48 months; (3) a marker riding the balance curve to 24 months with live readouts.
+- **Colour roles:** as f09 (balance ink, interest amber, repayment teal, deposits blue in the handoff, answer green, mistake red on crossed slips only); the unknown's slot is grey ink with "?".
+- **Plates:** new `ma12-motorbike-v1`, `ma12-swing-tag-v1`; f12's `ma12-wall-calendar-v1` and `ma12-apartment-building-v1` in the handoff.
+- **Narration changes:** all scenes except attempt 2, feedback 2 and the notes are new or reordered (term first; the motorbike throughout; A1 now site Problem 3; the handoff names the apartment). The card 05 sentences keep their Revision 1 wording. Scene count 15 → 14 (the separate "rounding up" and "total" scenes merge into scene 4).
+- **Counts:** 6,026 (sum of Revision 1 scene strings; stated as 6,040 joined) → **5,636** characters; about 555 s (60 s notes hold) → **about 506 s** (45 s notes scene).
+- **Kit additions:** `LoanBalanceBar` ghost mode, studio `SolveForPanel`, `TargetDial`.
+- **Joins:** opens on f10 Revision 2's motorbike frame; ends on f12's apartment-savings frame.

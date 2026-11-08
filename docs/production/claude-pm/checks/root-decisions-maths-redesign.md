@@ -147,3 +147,23 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - `ClassHistogram`, `HeatsToHistogram`, `ShrinkingWindow`, `CdfTracer`, `CdfSubtraction`;
     - `StripRiseRatio`, `ArrivalDots`, `TrackerFill`;
     - `ChipScatter`, `SlidingWindow`, `QuantileReader`.
+
+## f09 to f15 (wave 9, not yet voiced)
+
+46. **Anchors:**
+    - f09: a first car loan with its statement;
+    - f10: a home-loan calculator;
+    - f11: a used motorbike on a personal loan;
+    - f12: saving for an apartment deposit on a wall calendar;
+    - f13: a super statement;
+    - f14: a savings app;
+    - f15: a holiday fund with a goal.
+    These are maths models with stated rates, not financial advice.
+47. **Finance colours:** balance ink, interest amber, repayments and withdrawals teal, deposits blue, goals dashed ink, a starting balance violet (f14). Red and green stay reserved for slips and answers. Accepted.
+48. **Re-ordering and re-contexting with site numbers unchanged** is accepted:
+    - f11 teaches the term first on site card 05; Problem 3 becomes attempt 1, and the $24,000 car loan is dropped.
+    - The f10, f12 and f14 handoffs change as described.
+    - f15's site examples are framed as holiday saving.
+    - f14 keeps the site's "retirement fund" inside the app, with no plate.
+49. **Plate order.** f12's plates, f13's statement and f15's suitcase appear in the previous lesson's final frame, so they must be painted before that build. Measure the screen rectangles of the reused phone and laptop.
+50. **Kit additions (next kit pass):** a money engine with finance roles, `LoanBalanceBar` (ghost and deposit modes), `PlateFields`, `ScreenApp` (explorer and goal modes), `TargetDial`, `CalendarDeposits`, `DepositTower` and `GoalMeter`.
