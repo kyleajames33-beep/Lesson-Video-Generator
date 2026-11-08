@@ -167,3 +167,22 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - f14 keeps the site's "retirement fund" inside the app, with no plate.
 49. **Plate order.** f12's plates, f13's statement and f15's suitcase appear in the previous lesson's final frame, so they must be painted before that build. Measure the screen rectangles of the reused phone and laptop.
 50. **Kit additions (next kit pass):** a money engine with finance roles, `LoanBalanceBar` (ghost and deposit modes), `PlateFields`, `ScreenApp` (explorer and goal modes), `TargetDial`, `CalendarDeposits`, `DepositTower` and `GoalMeter`.
+
+## s07 to s12 (wave 10, not yet voiced)
+
+51. **Anchors:**
+    - s07: a bus every 10 minutes (the site's card 05);
+    - s08: a shuffled running playlist, distinct from d04's guitar octaves;
+    - s09: bags of chips;
+    - s10: apples graded by mass on a graphing calculator;
+    - s11: a snapper against a golden perch;
+    - s12: a bottle-filling machine. This is forced, because g01 opens on s12's bottle frame.
+52. **Accepted:**
+    - s11 works the bottle numbers before s12 anchors on them.
+    - s08 keeps its one-sentence callback to s06's cookie. It pays off s06's chip and is a callback, not a reused anchor.
+    - s10 bounds a new apple threshold (130 g); the site's 490 mL / 10.6% example moves to s11.
+    - s11 leaves out the site's exam-marks example.
+    - Reused plates: `chemistry/m7-pet-bottle-v1`, the Biology fish and the Physics platform scale.
+    - s12 sits just inside the 5,500 floor.
+53. **Colour roles (s01 to s12):** density teal; the CDF, μ and σ marks violet; probability areas amber; data blue; answer green; mistake red.
+54. **Kit additions (next kit pass):** `ArrivalDots` wait mode, `BagFill`, `BandSlider`, `ZSlider`, `FillDial`, `ToolPanel` inside the calculator plate, `PegBoard`, `NormalCurve` (sliders, morph, tail target), `TailLadder`, `SigmaRuler`, `ZTable` with a reverse scan, `ScoreCompare`, `FormulaCrosswalk`, and `RiemannStrips` turning into bars.
