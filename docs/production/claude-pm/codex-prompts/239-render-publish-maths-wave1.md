@@ -6,6 +6,7 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 
 **Ready to render:**
 1. `math-a12-d02`: the derivative of aˣ (savings coin jar). Graded A on 10 Nov.
+2. `math-a12-d03`: the derivative of ln x (app users, "how long until?"). Graded A on 10 Nov.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
