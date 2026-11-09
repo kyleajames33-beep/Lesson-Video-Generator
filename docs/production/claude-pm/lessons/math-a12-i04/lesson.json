@@ -1,0 +1,184 @@
+{
+  "id": "math-a12-i04",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "7d13199f09f46b3f06fc17b5e92ddc10d2a7c5a68e9808fe6d15a91d99c08543",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: the term the power rule can't do",
+      "voiceover": {
+        "text": "Last video stopped at one over x, where the power rule would divide by zero. Here's a rate like that. A fundraiser's donations slow down. On day t, they come in at a thousand over t dollars a day. So the total raised has gradient a thousand over t. The same term sits in this question: two e to the three x, plus four over x. The first term is done: two thirds e to the three x. The second is still waiting. So which curve has a gradient of one over x? And why will the answer need the absolute value of x, often read as mod x?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "a curve whose gradient is 1/x (the right-hand piece)",
+      "voiceover": {
+        "text": "Think about what a primitive means here. We want a curve whose gradient, at each x, equals the height of one over x. For positive x, we already know one. The derivative of the natural log of x is one over x. At x equals two, the log curve has gradient one half, the same as the height of one over x at two. But one over x has a second piece on the left, where x is negative. The natural log of x doesn't exist there, so it can't be the whole answer."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the mirror (the left-hand piece)",
+      "voiceover": {
+        "text": "On the left, one over x is negative, so the curve we want must go downhill as x increases. Near zero it must be steep, and further left it must flatten out. That's the log curve, mirrored in the y axis. Mirroring left to right reverses every slope. At x equals minus two, the mirrored curve has gradient minus one half, and one over minus two is minus a half. This mirrored curve is the natural log of minus x. The chain rule confirms it. Its derivative is one over minus x, times the inner derivative, minus one. That's one over x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "both pieces: ln|x|",
+      "voiceover": {
+        "text": "Put the two pieces together. For positive x we have the natural log of x, and for negative x, the natural log of minus x. Both are the natural log of mod x. Mod x is the size of x without its sign. Now watch the gradient as a point moves along each piece. On both sides, it traces one over x exactly. So the integral of one over x is the natural log of mod x, plus C, for x not equal to zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "two pieces, a constant each",
+      "voiceover": {
+        "text": "Notice the gap at zero. One over x isn't defined there, and mod x doesn't fill the gap. So this primitive is two separate pieces. Slide the right piece up, and its gradients don't change. Slide the left piece down, and the same is true. Nothing joins the pieces across zero, so each one can have its own constant. Differentiate any of these curves, and you get one over x on each piece. In a question, you work on one piece at a time, so you write the natural log of mod x, plus C."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "finishing the waiting term",
+      "voiceover": {
+        "text": "Back to the waiting term. Four over x is four times one over x, so its integral is four times the natural log of mod x. Add the first term, and one constant for the whole answer. That's two thirds e to the three x, plus four times the natural log of mod x, plus C, for x not equal to zero. Differentiate back to check. Two thirds times three gives two e to the three x, and four over x comes back."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06a",
+      "title": "the fundraiser's total",
+      "voiceover": {
+        "text": "Back to the fundraiser. Its total is a thousand times the natural log of t, plus C. Here t is positive, so no absolute value is needed. After day one, two thousand dollars is in, and the natural log of one is zero, so C is two thousand. Each time the number of days doubles, it grows by the same amount, about six hundred and ninety-three dollars. It never stops growing, but it keeps slowing down."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a linear inside: 1/(2x − 3)",
+      "voiceover": {
+        "text": "Now a reciprocal with an inside. Find the integral of one over two x minus three. Try the natural log of mod two x minus three. By the chain rule, its derivative is two over two x minus three, twice what we want. On the graph, the log curve is squashed sideways by a factor of two, then slid along. The slide changes no slopes, but the squash doubles every one. It's the same cause as before, so divide by the inner rate. The answer is a half, times the natural log of mod two x minus three, plus C. The gap moves too. Two x minus three is zero at x equals three over two, so the answer works on either side of three over two, but not across it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "the top is the bottom's derivative: f′/f",
+      "voiceover": {
+        "text": "What if the top isn't just a number? Find the integral of two x over x squared plus four. Look at the bottom. Its derivative is two x, which is exactly the top. By the chain rule, the natural log of mod f has derivative f prime over f. So this integral is the natural log of mod x squared plus four, plus C. Here, x squared plus four is at least four, so it's always positive. The absolute value can go, and the answer works for every x. But if the bottom were x squared minus four, it would change sign, so you'd keep the absolute value, with gaps at x equals two and minus two."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "finishing the second mixed task",
+      "voiceover": {
+        "text": "One more from last video. Find the integral of e to the minus x, plus three over x, plus x squared. Last video gave minus e to the minus x. Three over x gives three times the natural log of mod x. And x squared gives x cubed over three. One plus C covers the lot, and x can't be zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the pattern to remember. When the top is the derivative of the bottom, the answer is the natural log of mod bottom. If the top is a constant multiple of that derivative, fix the number in front. And keep the absolute value, unless the bottom is always positive."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the integral of six over three x plus one, and state the values of x for which your answer is valid. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The bottom, three x plus one, has derivative three, and six is two times three. So the answer is two times the natural log of mod three x plus one, plus C. Differentiate back: two times three, over three x plus one, gives six over three x plus one. It's valid for x not equal to minus one third, on either side of it. Six times the log is wrong. It forgets to divide by the inner three."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find the integral of x squared over x cubed minus eight, and state the values of x for which your answer is valid. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The bottom's derivative is three x squared, and the top is a third of that. So the answer is a third of the natural log of mod x cubed minus eight, plus C. The bottom is zero when x is two, so the answer works for x less than two, or for x greater than two. Dropping the absolute value is wrong. For x less than two, x cubed minus eight is negative, and its log doesn't exist."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So one over x integrates to the natural log of mod x, because the mirrored log covers the negative side. Next, the trig functions. Here's y equals sine x. Which curve has a gradient equal to sine x at every point? Is it cos x, or something else?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "chem-y11-m2-v01",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "f4a5259a16eeb039c129c029a6cf96fce6fd589c2e5ac987e0841f85af42e79a",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: a reaction that loses mass",
+      "voiceover": {
+        "text": "Last time, a hundred grams of water and ten grams of salt made a hundred and ten grams of solution, because every particle was still there. Dissolving is a physical change. So what happens to mass in a chemical reaction? Here's green copper carbonate in a crucible. Heat it, and it turns black. And the balance reading falls, by zero point eight eight of a gram. Did some mass just get destroyed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "boundary",
+      "title": "where it went: the system boundary",
+      "voiceover": {
+        "text": "No. Heating breaks the copper carbonate down into two new substances: black copper oxide, and carbon dioxide gas. The copper oxide stays in the crucible, but the gas drifts out into the air. Draw a line around what's on the balance. We'll call everything inside that line the system. The carbon dioxide crossed that line, so the balance stopped weighing it. It has a mass of zero point eight eight of a gram, exactly the mass that vanished."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Now a quick prediction. Burn a strip of magnesium ribbon in a crucible, and it flares into white powder. Will the mass go up, go down, or stay the same?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "magnesium-gain",
+      "title": "magnesium gains mass",
+      "voiceover": {
+        "text": "It goes up. Zero point two four of a gram of magnesium becomes zero point four zero of a gram of white magnesium oxide. The extra zero point one six of a gram is oxygen. It came from the air, crossed into the system, and joined the magnesium. Burning things often seems to make them lighter, like a log turning to ash, but that's because the gases it makes float away."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "closed-system",
+      "title": "a closed system",
+      "voiceover": {
+        "text": "So what if nothing crosses the line? Here, two clear solutions, sodium carbonate and calcium chloride, sit in beakers on the balance. Pour one into the other, and a cloudy white solid forms, but no gas is made. Nothing crosses the line, so the reading doesn't change. That's the law of conservation of mass. In a closed system, where nothing crosses, the total mass after a reaction equals the total mass before."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "atoms-rearranged",
+      "title": "why: atoms are rearranged",
+      "voiceover": {
+        "text": "Why must mass be conserved? Because a reaction only rearranges atoms. Bonds break and new bonds form, but no atom is created or destroyed, and each atom keeps its own mass. Look at hydrogen burning in oxygen to make water. The same four hydrogen atoms and two oxygen atoms are there before and after. They're just joined up differently. Same atoms, so the same mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "unbalanced",
+      "title": "an equation must keep every atom",
+      "voiceover": {
+        "text": "So a chemical equation has to count the same atoms on each side. Here's the reaction written quickly: H two, plus O two, makes H two O. Count the oxygen. Two on the left, but only one on the right. Read literally, this equation says an oxygen atom vanished, and atoms can't do that. It isn't balanced yet."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "subscript-coefficient",
+      "title": "two kinds of number",
+      "voiceover": {
+        "text": "There are two kinds of number in an equation. The small number inside a formula is a subscript. It says how many atoms are in one particle, so it fixes what the substance is. Change H two O to H two O two, and you've written hydrogen peroxide, a different chemical. The big number in front of a formula is a coefficient. It says how many of those particles there are. To balance an equation, you only change coefficients."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "balance-water",
+      "title": "balancing hydrogen and oxygen",
+      "voiceover": {
+        "text": "Let's balance it. To get two oxygen atoms on the right, we need two water molecules, so write a two in front of H two O. Now the right has four hydrogen atoms, but the left has two. So write a two in front of H two as well. Count again. Four hydrogen and two oxygen on each side. Two hydrogen molecules and one oxygen molecule make two water molecules."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "balance-magnesium",
+      "title": "magnesium and oxygen",
+      "voiceover": {
+        "text": "Now magnesium. Magnesium plus oxygen makes magnesium oxide, M g O. Oxygen gas is made of O two molecules, so there are two oxygen atoms on the left, and one on the right. Put a two in front of M g O, then a two in front of magnesium to match. Two magnesium plus O two makes two M g O. The letter g in brackets after O two marks a gas, and that's the oxygen that crossed into the crucible."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "copper-carbonate",
+      "title": "copper carbonate: already balanced",
+      "voiceover": {
+        "text": "And copper carbonate? C u C O three makes C u O plus C O two. Count it: one copper, one carbon and three oxygens on each side. It's already balanced. Here, the g marks the carbon dioxide as a gas, the one that crossed out of the system."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mass-changes",
+      "title": "solving mass changes",
+      "voiceover": {
+        "text": "Conservation of mass also lets you calculate mass changes. The masses of the reactants add up to the masses of the products. For magnesium, zero point two four of a gram, plus the oxygen, equals zero point four zero of a gram, so the oxygen was zero point one six of a gram. For copper carbonate, two point four seven grams makes one point five nine grams of copper oxide, so the carbon dioxide must be zero point eight eight of a gram. The equation tells you which substance crossed the boundary. The balance tells you how much."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "one line to remember",
+      "voiceover": {
+        "text": "Here's a line to remember. Atoms in, atoms out. Change the big number in front, never the small number inside."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Aluminium reacts with oxygen gas to form aluminium oxide, A l two O three. Balance the equation. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Aluminium oxide has three oxygen atoms, and oxygen gas comes in pairs. Six is the smallest number both fit, so use three O two and two A l two O three. That's four aluminium atoms on the right, so write a four in front of aluminium. Four A l plus three O two makes two A l two O three. Writing O three to fix the oxygen is the classic slip. O three is ozone, a different substance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student heats five point zero zero grams of calcium carbonate in an open crucible until the mass stops changing. Two point eight zero grams of calcium oxide is left. Calculate the mass of carbon dioxide released, and explain why the mass decreased. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Five point zero zero minus two point eight zero is two point two zero grams of carbon dioxide. The mass of the reactant still equals the mass of the products, but carbon dioxide is a gas that left the open crucible, so the balance no longer weighed it. Saying the mass was destroyed is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: too many to count",
+      "voiceover": {
+        "text": "One more thing. A balanced equation counts particles. Two magnesium atoms react with one oxygen molecule. But that zero point two four of a gram of magnesium holds an enormous number of atoms, far too many to count one by one. Next time, we'll see how a mole connects that particle count with an amount chemists can actually use."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 50 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

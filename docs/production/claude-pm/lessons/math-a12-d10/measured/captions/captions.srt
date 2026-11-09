@@ -1,743 +1,771 @@
 1
-00:00:00,202 --> 00:00:01,436
+00:00:00,344 --> 00:00:01,536
 Last video ended here.
 
 2
-00:00:02,123 --> 00:00:04,330
+00:00:02,362 --> 00:00:04,966
 This curve, f of x equals x cubed
 
 3
-00:00:04,391 --> 00:00:07,159
+00:00:05,026 --> 00:00:07,691
 minus three x, has a local maximum at
 
 4
-00:00:07,240 --> 00:00:08,083
+00:00:07,871 --> 00:00:08,893
 minus one, two.
 
 5
-00:00:08,966 --> 00:00:11,313
-Now we only look from x equals minus
+00:00:09,855 --> 00:00:11,822
+Picture it as a stretch of roller coaster
 
 6
-00:00:11,375 --> 00:00:14,084
-two to x equals three, with both ends
+00:00:11,863 --> 00:00:14,472
+track, with f the height in metres above
 
 7
-00:00:14,145 --> 00:00:14,525
-included.
+00:00:14,494 --> 00:00:15,015
+the platform.
 
 8
-00:00:15,350 --> 00:00:17,638
-Near minus one, nothing is higher than two.
+00:00:15,738 --> 00:00:18,046
+The stretch runs from x equals minus two
 
 9
-00:00:18,223 --> 00:00:20,430
-But follow the curve to the right-hand end.
+00:00:18,128 --> 00:00:20,717
+to x equals three, with both ends included.
 
 10
-00:00:21,134 --> 00:00:23,490
-At x equals three, f is eighteen.
+00:00:21,622 --> 00:00:23,946
+Near minus one there's a small hump, and
 
 11
-00:00:24,055 --> 00:00:26,803
-So a local maximum isn't always the largest
+00:00:24,027 --> 00:00:25,711
+nothing nearby is higher than two.
 
 12
-00:00:26,864 --> 00:00:27,204
-value.
+00:00:26,353 --> 00:00:27,541
+But ride on to the end of the
 
 13
-00:00:27,947 --> 00:00:29,912
-How do we find the largest and smallest
+00:00:27,582 --> 00:00:29,072
+stretch, up the big climb.
 
 14
-00:00:29,973 --> 00:00:32,077
-values on a whole interval, and make sure
+00:00:29,456 --> 00:00:30,502
+At x equals three,
 
 15
-00:00:32,118 --> 00:00:32,899
-we haven't missed one?
+00:00:31,088 --> 00:00:32,033
+f is eighteen.
 
 16
-00:00:33,529 --> 00:00:36,059
-The largest value over the whole domain is
+00:00:32,617 --> 00:00:35,231
+So a local maximum isn't always the largest
 
 17
-00:00:36,120 --> 00:00:37,686
-called the global maximum.
+00:00:35,293 --> 00:00:35,593
+value.
 
 18
-00:00:38,410 --> 00:00:38,769
-A point
+00:00:36,338 --> 00:00:38,305
+How do we find the largest and smallest
 
 19
-00:00:39,371 --> 00:00:41,851
-a, f of a, is a global maximum
+00:00:38,347 --> 00:00:39,550
+values on a whole interval,
 
 20
-00:00:42,172 --> 00:00:43,852
-if f of x is less than or
+00:00:40,094 --> 00:00:41,358
+and make sure we haven't missed one?
 
 21
-00:00:43,993 --> 00:00:46,273
-equal to f of a, for every x
+00:00:42,029 --> 00:00:44,559
+The largest value over the whole domain is
 
 22
-00:00:46,455 --> 00:00:47,014
-in the domain.
+00:00:44,620 --> 00:00:46,186
+called the global maximum.
 
 23
-00:00:47,980 --> 00:00:50,052
-Picture a horizontal line at that height.
+00:00:46,910 --> 00:00:47,269
+A point
 
 24
-00:00:50,656 --> 00:00:52,623
-For a global maximum, no part of the
+00:00:47,871 --> 00:00:50,351
+a, f of a, is a global maximum
 
 25
-00:00:52,664 --> 00:00:53,607
-graph pokes above it.
+00:00:50,672 --> 00:00:52,352
+if f of x is less than or
 
 26
-00:00:54,310 --> 00:00:56,317
-Put the line at two, the local maximum,
+00:00:52,493 --> 00:00:54,773
+equal to f of a, for every x
 
 27
-00:00:56,740 --> 00:00:58,827
-and the curve pokes through near the right-hand
+00:00:54,955 --> 00:00:55,514
+in the domain.
 
 28
-00:00:58,928 --> 00:00:59,068
-end.
+00:00:56,480 --> 00:00:58,552
+Picture a horizontal line at that height.
 
 29
-00:00:59,711 --> 00:01:01,797
-Put it at eighteen, and the whole graph
+00:00:59,156 --> 00:01:01,123
+For a global maximum, no part of the
 
 30
-00:01:01,938 --> 00:01:03,201
-sits on or below it.
+00:01:01,164 --> 00:01:02,107
+graph pokes above it.
 
 31
-00:01:03,945 --> 00:01:06,012
-A global minimum is the same idea with
+00:01:02,810 --> 00:01:04,817
+Put the line at two, the local maximum,
 
 32
-00:01:06,053 --> 00:01:06,534
-a floor.
+00:01:05,240 --> 00:01:07,327
+and the curve pokes through near the right-hand
 
 33
-00:01:07,037 --> 00:01:08,644
-No part of the graph dips below it.
+00:01:07,428 --> 00:01:07,568
+end.
 
 34
-00:01:09,289 --> 00:01:10,836
-So where can the highest point be?
+00:01:08,211 --> 00:01:10,297
+Put it at eighteen, and the whole graph
 
 35
-00:01:11,560 --> 00:01:14,065
-Suppose it's inside the interval, where the curve
+00:01:10,438 --> 00:01:11,701
+sits on or below it.
 
 36
-00:01:14,106 --> 00:01:14,507
-is smooth.
+00:01:12,445 --> 00:01:14,512
+A global minimum is the same idea with
 
 37
-00:01:15,170 --> 00:01:17,104
-Then its tangent must be flat.
+00:01:14,553 --> 00:01:15,034
+a floor.
 
 38
-00:01:17,991 --> 00:01:20,216
-If the tangent sloped either way, you could
+00:01:15,537 --> 00:01:17,144
+No part of the graph dips below it.
 
 39
-00:01:20,337 --> 00:01:22,200
-step a little uphill and find a higher
+00:01:17,789 --> 00:01:19,336
+So where can the highest point be?
 
 40
-00:01:22,261 --> 00:01:22,501
-point.
+00:01:20,060 --> 00:01:22,565
+Suppose it's inside the interval, where the curve
 
 41
-00:01:23,185 --> 00:01:25,561
-So inside, look at stationary points.
+00:01:22,606 --> 00:01:23,007
+is smooth.
 
 42
-00:01:26,326 --> 00:01:28,414
-But at an end, the curve just stops.
+00:01:23,670 --> 00:01:25,604
+Then its tangent must be flat.
 
 43
-00:01:29,098 --> 00:01:30,905
-It doesn't need to be flat, because the
+00:01:26,491 --> 00:01:28,716
+If the tangent sloped either way, you could
 
 44
-00:01:31,107 --> 00:01:32,875
-uphill direction leaves the domain.
+00:01:28,837 --> 00:01:30,700
+step a little uphill and find a higher
 
 45
-00:01:33,599 --> 00:01:35,884
-And at a sharp corner, there's no single
+00:01:30,761 --> 00:01:31,001
+point.
 
 46
-00:01:35,965 --> 00:01:39,553
-tangent, so f prime doesn't exist there, and
+00:01:31,685 --> 00:01:34,061
+So inside, look at stationary points.
 
 47
-00:01:39,614 --> 00:01:41,939
-solving f prime equals zero can't find it.
+00:01:34,826 --> 00:01:36,914
+But at an end, the curve just stops.
 
 48
-00:01:42,822 --> 00:01:44,364
-On a closed interval where the curve is
+00:01:37,598 --> 00:01:39,405
+It doesn't need to be flat, because the
 
 49
-00:01:44,505 --> 00:01:48,190
-unbroken, the highest and lowest values always exist,
+00:01:39,607 --> 00:01:41,375
+uphill direction leaves the domain.
 
 50
-00:01:48,651 --> 00:01:50,012
-and each one is at one of these
+00:01:42,099 --> 00:01:44,384
+And at a sharp corner, there's no single
 
 51
-00:01:50,073 --> 00:01:50,533
-candidates.
+00:01:44,465 --> 00:01:48,053
+tangent, so f prime doesn't exist there, and
 
 52
-00:01:51,276 --> 00:01:53,603
-If the curve breaks somewhere, examine that point
+00:01:48,114 --> 00:01:50,439
+solving f prime equals zero can't find it.
 
 53
-00:01:53,645 --> 00:01:53,844
-too.
+00:01:51,322 --> 00:01:52,864
+On a closed interval where the curve is
 
 54
-00:01:54,543 --> 00:01:55,918
-That gives a short method.
+00:01:53,005 --> 00:01:56,690
+unbroken, the highest and lowest values always exist,
 
 55
-00:01:56,482 --> 00:01:57,264
-List the candidates:
+00:01:57,151 --> 00:01:58,512
+and each one is at one of these
 
 56
-00:01:57,825 --> 00:02:01,254
-stationary points inside the interval, any interior points
+00:01:58,573 --> 00:01:59,033
+candidates.
 
 57
-00:02:01,314 --> 00:02:02,778
-where f prime doesn't exist,
+00:01:59,776 --> 00:02:02,103
+If the curve breaks somewhere, examine that point
 
 58
-00:02:03,400 --> 00:02:04,383
-and both endpoints.
+00:02:02,145 --> 00:02:02,344
+too.
 
 59
-00:02:05,005 --> 00:02:07,321
-Then work out f at every one, and
+00:02:03,103 --> 00:02:04,337
+That gives a short method.
 
 60
-00:02:07,362 --> 00:02:07,703
-compare.
+00:02:04,962 --> 00:02:08,050
+List the candidates: stationary points inside the interval,
 
 61
-00:02:08,648 --> 00:02:11,438
-Here, f prime of x is three, times
+00:02:08,551 --> 00:02:11,318
+any interior points where f prime doesn't exist,
 
 62
-00:02:11,619 --> 00:02:13,907
-x minus one, times x plus one.
+00:02:11,739 --> 00:02:12,722
+and both endpoints.
 
 63
-00:02:14,389 --> 00:02:16,961
-So the stationary points are minus one and
+00:02:13,303 --> 00:02:15,632
+Then work out f at every one, and
 
 64
-00:02:17,163 --> 00:02:18,308
-one, both inside.
+00:02:15,672 --> 00:02:16,053
+compare.
 
 65
-00:02:19,072 --> 00:02:21,040
-The endpoints are minus two and three,
+00:02:16,795 --> 00:02:19,180
+Here, f prime of x is three, times
 
 66
-00:02:21,563 --> 00:02:23,310
-and f prime exists everywhere.
+00:02:19,401 --> 00:02:21,606
+x minus one, times x plus one.
 
 67
-00:02:24,213 --> 00:02:27,300
-The values are minus two, two, minus two
+00:02:22,088 --> 00:02:24,293
+So the stationary points are minus one and
 
 68
-00:02:27,321 --> 00:02:28,442
-and eighteen.
+00:02:24,514 --> 00:02:25,656
+one, both inside.
 
 69
-00:02:29,085 --> 00:02:31,834
-The largest is eighteen, so the global maximum
+00:02:26,399 --> 00:02:28,985
+The endpoints are minus two and three, and
 
 70
-00:02:31,956 --> 00:02:34,103
-is eighteen, at x equals three.
+00:02:29,146 --> 00:02:30,689
+f prime exists everywhere.
 
 71
-00:02:34,846 --> 00:02:37,153
-The smallest is minus two, and it happens
+00:02:31,352 --> 00:02:34,278
+The values are minus two, two, minus two
 
 72
-00:02:37,234 --> 00:02:37,594
-twice,
+00:02:34,299 --> 00:02:35,220
+and eighteen.
 
 73
-00:02:38,117 --> 00:02:39,380
-at x equals minus two
+00:02:35,941 --> 00:02:38,707
+The largest is eighteen, so the global maximum
 
 74
-00:02:39,883 --> 00:02:40,945
-and x equals one.
+00:02:38,828 --> 00:02:40,771
+is eighteen, at x equals three.
 
 75
-00:02:41,829 --> 00:02:43,816
-Notice we never had to classify anything.
+00:02:41,453 --> 00:02:43,757
+The smallest is minus two, and it happens
 
 76
-00:02:44,280 --> 00:02:45,596
-Comparing the values settles it.
+00:02:43,838 --> 00:02:46,582
+twice, at x equals minus two and x
 
 77
-00:02:46,130 --> 00:02:47,243
-Now a worked example.
+00:02:46,723 --> 00:02:47,343
+equals one.
 
 78
-00:02:47,829 --> 00:02:50,236
-Find the global maximum and minimum of f
+00:02:48,045 --> 00:02:49,987
+On the coaster, the highest point of this
 
 79
-00:02:50,257 --> 00:02:52,663
-of x equals x plus four over x,
+00:02:50,028 --> 00:02:51,870
+stretch is the top of the climb, not
 
 80
-00:02:53,025 --> 00:02:54,609
-for x from a half to four.
+00:02:51,911 --> 00:02:54,374
+the hump, and the lowest point comes twice,
 
 81
-00:02:55,353 --> 00:02:55,632
-First,
+00:02:54,755 --> 00:02:56,317
+at the start and in the dip.
 
 82
-00:02:56,275 --> 00:02:58,520
-f prime of x is one minus four
+00:02:57,042 --> 00:02:59,035
+Notice we never had to classify anything.
 
 83
-00:02:58,682 --> 00:02:59,463
-over x squared.
+00:02:59,459 --> 00:03:00,955
+Comparing the values settles it.
 
 84
-00:03:00,146 --> 00:03:02,374
-Setting that to zero gives x squared equals
+00:03:01,563 --> 00:03:02,677
+Now a worked example.
 
 85
-00:03:02,495 --> 00:03:05,386
-four, so x is two or minus two.
+00:03:03,262 --> 00:03:05,670
+Find the global maximum and minimum of f
 
 86
-00:03:06,091 --> 00:03:08,024
-Minus two isn't in the interval, so reject
+00:03:05,690 --> 00:03:08,097
+of x equals x plus four over x,
 
 87
-00:03:08,045 --> 00:03:08,144
-it.
+00:03:08,458 --> 00:03:10,043
+for x from a half to four.
 
 88
-00:03:08,870 --> 00:03:11,531
-And f isn't defined at zero, but zero
+00:03:10,786 --> 00:03:11,066
+First,
 
 89
-00:03:11,652 --> 00:03:12,772
-isn't in the interval either,
+00:03:11,708 --> 00:03:13,954
+f prime of x is one minus four
 
 90
-00:03:13,293 --> 00:03:15,293
-so the curve is unbroken here, with no
+00:03:14,115 --> 00:03:14,897
+over x squared.
 
 91
-00:03:15,354 --> 00:03:15,714
-corners.
+00:03:15,579 --> 00:03:17,808
+Setting that to zero gives x squared equals
 
 92
-00:03:16,496 --> 00:03:19,004
-The candidates are a half, two and four.
+00:03:17,928 --> 00:03:20,820
+four, so x is two or minus two.
 
 93
-00:03:19,989 --> 00:03:21,716
-Now evaluate f at each one.
-
-94
-00:03:22,600 --> 00:03:24,844
-f of a half is a half plus
-
-95
-00:03:24,926 --> 00:03:26,509
-eight, which is eight and a half.
-
-96
-00:03:27,412 --> 00:03:29,519
-f of two is two plus two,
-
-97
-00:03:30,021 --> 00:03:30,241
-four.
-
-98
-00:03:31,106 --> 00:03:33,218
-f of four is four plus one,
-
-99
-00:03:33,742 --> 00:03:34,063
-five.
-
-100
-00:03:34,936 --> 00:03:35,385
-Compare them.
-
-101
-00:03:35,988 --> 00:03:38,594
-The global minimum is four, at the stationary
-
-102
-00:03:38,635 --> 00:03:40,138
-point x equals two.
-
-103
-00:03:40,840 --> 00:03:43,164
-The global maximum is eight and a half,
-
-104
-00:03:43,505 --> 00:03:46,069
-at the endpoint x equals a half, where
-
-105
-00:03:46,090 --> 00:03:47,512
-the tangent isn't flat at all.
-
-106
-00:03:48,174 --> 00:03:50,922
-Solving f prime equals zero alone would have
-
-107
-00:03:51,003 --> 00:03:51,804
-missed it completely.
-
-108
-00:03:52,637 --> 00:03:54,252
-The same method works for an exponential.
-
-109
-00:03:54,896 --> 00:03:56,921
-Find the greatest and least values of g
-
-110
-00:03:57,203 --> 00:03:59,770
-of x equals x e to the minus
-
-111
-00:03:59,971 --> 00:04:02,116
-x, for x from zero to three.
-
-112
-00:04:02,819 --> 00:04:04,502
-By the product rule, g prime of x
-
-113
-00:04:04,704 --> 00:04:06,827
-is e to the minus x, times one
-
-114
-00:04:06,868 --> 00:04:07,429
-minus x.
-
-115
-00:04:08,172 --> 00:04:09,899
-e to the minus x is never zero,
-
-116
-00:04:10,101 --> 00:04:12,451
-so the only stationary point is x equals
-
-117
-00:04:12,673 --> 00:04:12,772
-one.
-
-118
-00:04:13,417 --> 00:04:15,813
-The candidates are zero, one and three.
-
-119
-00:04:16,561 --> 00:04:17,671
-g of zero is zero.
-
-120
-00:04:18,116 --> 00:04:20,302
-g of one is one over e, about
-
-121
-00:04:20,543 --> 00:04:21,485
-point three six eight.
-
-122
-00:04:22,068 --> 00:04:24,799
-g of three is three over e cubed,
-
-123
-00:04:25,162 --> 00:04:26,628
-about point one four nine.
-
-124
-00:04:27,331 --> 00:04:29,156
-So the greatest value is one over e,
-
-125
-00:04:29,398 --> 00:04:31,444
-at x equals one, and the least is
-
-126
-00:04:31,485 --> 00:04:33,992
-zero, at the endpoint x equals zero.
-
-127
-00:04:34,775 --> 00:04:37,604
-Flats, ends and corners, then compare.
-
-128
-00:04:38,349 --> 00:04:41,085
-Flats are the stationary points inside the interval.
-
-129
-00:04:41,932 --> 00:04:43,487
-Ends are the two endpoints.
-
-130
-00:04:44,193 --> 00:04:47,039
-Include every interior point where f prime doesn't
-
-131
-00:04:47,080 --> 00:04:48,423
-exist, such as a corner.
-
-132
-00:04:49,387 --> 00:04:52,355
-Then compare the values of f itself, not
-
-133
-00:04:52,597 --> 00:04:53,017
-f prime.
-
-134
-00:04:53,700 --> 00:04:55,666
-The list is complete on a closed interval
-
-135
-00:04:55,728 --> 00:04:57,212
-where the curve is unbroken.
-
-136
-00:04:59,861 --> 00:05:00,350
-Your turn.
-
-137
-00:05:00,755 --> 00:05:03,476
-Find the global maximum and minimum values of
-
-138
-00:05:03,757 --> 00:05:06,757
-f of x equals x cubed minus twelve
-
-139
-00:05:06,878 --> 00:05:09,179
-x, for x from zero to three,
-
-140
-00:05:09,700 --> 00:05:10,680
-and say where they occur.
-
-141
-00:05:11,523 --> 00:05:12,409
-Pause here to answer.
-
-142
-00:05:23,181 --> 00:05:25,465
-f prime of x is three, times x
-
-143
-00:05:25,505 --> 00:05:27,809
-minus two, times x plus two,
-
-144
-00:05:28,350 --> 00:05:30,674
-which is zero at two and minus two.
-
-145
-00:05:31,378 --> 00:05:33,431
+00:03:21,525 --> 00:03:23,458
 Minus two isn't in the interval, so reject
 
-146
-00:05:33,492 --> 00:05:33,572
+94
+00:03:23,479 --> 00:03:23,578
 it.
 
+95
+00:03:24,304 --> 00:03:26,965
+And f isn't defined at zero, but zero
+
+96
+00:03:27,086 --> 00:03:28,206
+isn't in the interval either,
+
+97
+00:03:28,727 --> 00:03:30,727
+so the curve is unbroken here, with no
+
+98
+00:03:30,788 --> 00:03:31,148
+corners.
+
+99
+00:03:31,930 --> 00:03:34,438
+The candidates are a half, two and four.
+
+100
+00:03:35,422 --> 00:03:37,150
+Now evaluate f at each one.
+
+101
+00:03:38,033 --> 00:03:40,278
+f of a half is a half plus
+
+102
+00:03:40,359 --> 00:03:41,943
+eight, which is eight and a half.
+
+103
+00:03:42,845 --> 00:03:44,953
+f of two is two plus two,
+
+104
+00:03:45,454 --> 00:03:45,675
+four.
+
+105
+00:03:46,539 --> 00:03:48,652
+f of four is four plus one,
+
+106
+00:03:49,175 --> 00:03:49,497
+five.
+
+107
+00:03:50,369 --> 00:03:50,819
+Compare them.
+
+108
+00:03:51,421 --> 00:03:54,028
+The global minimum is four, at the stationary
+
+109
+00:03:54,068 --> 00:03:55,572
+point x equals two.
+
+110
+00:03:56,274 --> 00:03:58,598
+The global maximum is eight and a half,
+
+111
+00:03:58,939 --> 00:04:01,503
+at the endpoint x equals a half, where
+
+112
+00:04:01,524 --> 00:04:02,946
+the tangent isn't flat at all.
+
+113
+00:04:03,608 --> 00:04:06,356
+Solving f prime equals zero alone would have
+
+114
+00:04:06,437 --> 00:04:07,238
+missed it completely.
+
+115
+00:04:08,070 --> 00:04:09,685
+The same method works for an exponential.
+
+116
+00:04:10,329 --> 00:04:12,354
+Find the greatest and least values of g
+
+117
+00:04:12,636 --> 00:04:15,203
+of x equals x e to the minus
+
+118
+00:04:15,404 --> 00:04:17,549
+x, for x from zero to three.
+
+119
+00:04:18,252 --> 00:04:19,935
+By the product rule, g prime of x
+
+120
+00:04:20,137 --> 00:04:22,260
+is e to the minus x, times one
+
+121
+00:04:22,301 --> 00:04:22,862
+minus x.
+
+122
+00:04:23,605 --> 00:04:25,332
+e to the minus x is never zero,
+
+123
+00:04:25,534 --> 00:04:27,884
+so the only stationary point is x equals
+
+124
+00:04:28,106 --> 00:04:28,205
+one.
+
+125
+00:04:28,850 --> 00:04:31,246
+The candidates are zero, one and three.
+
+126
+00:04:31,994 --> 00:04:33,104
+g of zero is zero.
+
+127
+00:04:33,549 --> 00:04:35,735
+g of one is one over e, about
+
+128
+00:04:35,976 --> 00:04:36,918
+point three six eight.
+
+129
+00:04:37,501 --> 00:04:40,232
+g of three is three over e cubed,
+
+130
+00:04:40,595 --> 00:04:42,061
+about point one four nine.
+
+131
+00:04:42,764 --> 00:04:44,589
+So the greatest value is one over e,
+
+132
+00:04:44,831 --> 00:04:46,877
+at x equals one, and the least is
+
+133
+00:04:46,918 --> 00:04:49,425
+zero, at the endpoint x equals zero.
+
+134
+00:04:50,208 --> 00:04:53,037
+Flats, ends and corners, then compare.
+
+135
+00:04:53,782 --> 00:04:56,518
+Flats are the stationary points inside the interval.
+
+136
+00:04:57,365 --> 00:04:58,920
+Ends are the two endpoints.
+
+137
+00:04:59,626 --> 00:05:02,472
+Include every interior point where f prime doesn't
+
+138
+00:05:02,513 --> 00:05:03,856
+exist, such as a corner.
+
+139
+00:05:04,820 --> 00:05:07,788
+Then compare the values of f itself, not
+
+140
+00:05:08,030 --> 00:05:08,450
+f prime.
+
+141
+00:05:09,133 --> 00:05:11,099
+The list is complete on a closed interval
+
+142
+00:05:11,161 --> 00:05:12,645
+where the curve is unbroken.
+
+143
+00:05:15,294 --> 00:05:15,783
+Your turn.
+
+144
+00:05:16,188 --> 00:05:18,909
+Find the global maximum and minimum values of
+
+145
+00:05:19,190 --> 00:05:22,190
+f of x equals x cubed minus twelve
+
+146
+00:05:22,311 --> 00:05:24,612
+x, for x from zero to three,
+
 147
-00:05:34,417 --> 00:05:37,380
-The candidates are zero, two and three, giving
+00:05:25,133 --> 00:05:26,113
+and say where they occur.
 
 148
-00:05:37,440 --> 00:05:39,862
-zero, minus sixteen and minus nine.
-
-149
-00:05:40,603 --> 00:05:43,007
-So the global maximum is zero, at x
-
-150
-00:05:43,048 --> 00:05:45,553
-equals zero, and the global minimum is minus
-
-151
-00:05:45,594 --> 00:05:47,316
-sixteen, at x equals two.
-
-152
-00:05:48,041 --> 00:05:49,998
-Sixteen, from minus two, doesn't count.
-
-153
-00:05:50,240 --> 00:05:51,175
-It's outside the domain.
-
-154
-00:05:52,763 --> 00:05:53,148
-Last one.
-
-155
-00:05:53,892 --> 00:05:55,695
-For h of x equals e to the
-
-156
-00:05:55,875 --> 00:05:58,719
-x, minus two x, for x from zero
-
-157
-00:05:58,779 --> 00:05:59,360
-to two,
-
-158
-00:05:59,941 --> 00:06:02,966
-find the exact global maximum and minimum values.
-
-159
-00:06:03,749 --> 00:06:04,677
+00:05:26,956 --> 00:05:27,842
 Pause here to answer.
 
+149
+00:05:38,615 --> 00:05:40,898
+f prime of x is three, times x
+
+150
+00:05:40,939 --> 00:05:43,242
+minus two, times x plus two,
+
+151
+00:05:43,784 --> 00:05:46,107
+which is zero at two and minus two.
+
+152
+00:05:46,812 --> 00:05:48,864
+Minus two isn't in the interval, so reject
+
+153
+00:05:48,926 --> 00:05:49,005
+it.
+
+154
+00:05:49,851 --> 00:05:52,813
+The candidates are zero, two and three, giving
+
+155
+00:05:52,874 --> 00:05:55,295
+zero, minus sixteen and minus nine.
+
+156
+00:05:56,036 --> 00:05:58,440
+So the global maximum is zero, at x
+
+157
+00:05:58,481 --> 00:06:00,986
+equals zero, and the global minimum is minus
+
+158
+00:06:01,027 --> 00:06:02,749
+sixteen, at x equals two.
+
+159
+00:06:03,474 --> 00:06:05,431
+Sixteen, from minus two, doesn't count.
+
 160
-00:06:15,508 --> 00:06:17,130
-h prime of x is e to the
+00:06:05,674 --> 00:06:06,608
+It's outside the domain.
 
 161
-00:06:17,271 --> 00:06:18,092
-x minus two,
+00:06:08,197 --> 00:06:08,581
+Last one.
 
 162
-00:06:18,734 --> 00:06:20,657
-zero when x is the natural log of
+00:06:09,326 --> 00:06:11,128
+For h of x equals e to the
 
 163
-00:06:20,718 --> 00:06:22,039
-two, inside the interval.
+00:06:11,309 --> 00:06:14,152
+x, minus two x, for x from zero
 
 164
-00:06:23,144 --> 00:06:24,072
-h of zero is one.
+00:06:14,213 --> 00:06:14,793
+to two,
 
 165
-00:06:25,135 --> 00:06:26,718
-h of the natural log of two is
+00:06:15,375 --> 00:06:18,399
+find the exact global maximum and minimum values.
 
 166
-00:06:26,879 --> 00:06:28,883
-two, minus two times the natural log of
+00:06:19,183 --> 00:06:20,110
+Pause here to answer.
 
 167
-00:06:28,944 --> 00:06:30,587
-two, about point six one.
+00:06:30,941 --> 00:06:32,564
+h prime of x is e to the
 
 168
-00:06:31,712 --> 00:06:34,101
-h of two is e squared minus four,
+00:06:32,704 --> 00:06:33,526
+x minus two,
 
 169
-00:06:34,544 --> 00:06:35,728
-about three point three nine.
+00:06:34,167 --> 00:06:36,091
+zero when x is the natural log of
 
 170
-00:06:36,431 --> 00:06:38,601
-So the maximum is at x equals two,
+00:06:36,151 --> 00:06:37,473
+two, inside the interval.
 
 171
-00:06:39,044 --> 00:06:40,631
-and the minimum is at the natural log
+00:06:38,577 --> 00:06:39,506
+h of zero is one.
 
 172
-00:06:40,652 --> 00:06:40,952
-of two.
+00:06:40,568 --> 00:06:42,152
+h of the natural log of two is
 
 173
-00:06:41,676 --> 00:06:43,764
-Zero is h prime there, not h.
+00:06:42,312 --> 00:06:44,317
+two, minus two times the natural log of
 
 174
-00:06:45,508 --> 00:06:48,435
-So on a closed interval, list every candidate
+00:06:44,377 --> 00:06:46,021
+two, about point six one.
 
 175
-00:06:48,676 --> 00:06:50,039
-and compare the values of f.
+00:06:47,145 --> 00:06:49,535
+h of two is e squared minus four,
 
 176
-00:06:50,661 --> 00:06:52,982
-That completes this run of differential calculus,
+00:06:49,977 --> 00:06:51,162
+about three point three nine.
 
 177
-00:06:53,523 --> 00:06:55,244
-from the derivative of e to the x,
+00:06:51,865 --> 00:06:54,035
+So the maximum is at x equals two,
 
 178
-00:06:55,705 --> 00:06:57,826
-all the way to global maxima and minima.
+00:06:54,478 --> 00:06:56,065
+and the minimum is at the natural log
 
 179
-00:06:58,609 --> 00:07:00,741
-Later in the course, the function comes from
+00:06:56,086 --> 00:06:56,386
+of two.
 
 180
-00:07:00,782 --> 00:07:01,807
-a real situation.
+00:06:57,110 --> 00:06:59,198
+Zero is h prime there, not h.
 
 181
-00:07:02,512 --> 00:07:04,963
-Forty metres of fencing make three sides of
+00:07:00,941 --> 00:07:03,869
+So on a closed interval, list every candidate
 
 182
-00:07:05,004 --> 00:07:06,550
-a rectangle, against a wall.
+00:07:04,109 --> 00:07:05,473
+and compare the values of f.
 
 183
-00:07:07,215 --> 00:07:09,123
-What shape gives the largest area?
+00:07:06,094 --> 00:07:08,416
+That completes this run of differential calculus,
 
 184
-00:07:12,035 --> 00:07:12,837
-Here are the key notes.
+00:07:08,956 --> 00:07:10,678
+from the derivative of e to the x,
 
 185
-00:07:13,481 --> 00:07:15,208
-Pause the video if you need more time
+00:07:11,138 --> 00:07:13,260
+all the way to global maxima and minima.
 
 186
-00:07:15,270 --> 00:07:15,751
+00:07:14,042 --> 00:07:16,175
+Later in the course, the function comes from
+
+187
+00:07:16,215 --> 00:07:17,241
+a real situation.
+
+188
+00:07:17,946 --> 00:07:20,397
+Forty metres of fencing make three sides of
+
+189
+00:07:20,438 --> 00:07:21,984
+a rectangle, against a wall.
+
+190
+00:07:22,649 --> 00:07:24,557
+What shape gives the largest area?
+
+191
+00:07:27,468 --> 00:07:28,270
+Here are the key notes.
+
+192
+00:07:28,914 --> 00:07:30,641
+Pause the video if you need more time
+
+193
+00:07:30,703 --> 00:07:31,184
 to copy them.

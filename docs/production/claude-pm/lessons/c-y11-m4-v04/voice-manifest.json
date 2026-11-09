@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v04.md",
+  "sourceSha256": "cab7501901012ac1978fe68922bd7788917aa7eaac3a95cbd797e8e641420593",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's a foam cup of water at twenty-one degrees. Dissolve ammonium nitrate, the solid in a cold pack, and the water cools. Dissolve calcium chloride, from a hot pack, and it warms. Table salt barely changes it at all. Dissolving pulls a solid apart into its ions. So here's a prediction. Does pulling the ions apart release energy, or take energy in?",
+      "audioFile": "public/audio/chem-y11-m4-v04/hook-prediction.wav"
+    },
+    {
+      "id": "separating-ions",
+      "text": "It takes energy in. In an ionic solid, every ion is attracted to the oppositely charged ions around it. Pulling them apart works against those attractions, so energy has to go in. The energy needed to separate one mole of an ionic solid into separate ions is called the lattice energy. If that were the whole story, every salt would cool the water as it dissolved.",
+      "audioFile": "public/audio/chem-y11-m4-v04/separating-ions.wav"
+    },
+    {
+      "id": "hydration",
+      "text": "But there's a second step. Water molecules are polar. Their slightly negative oxygen ends turn toward positive ions, and their slightly positive hydrogen ends turn toward negative ions. Forming those new attractions releases energy. That's hydration, and the energy it releases is the hydration energy. It's the same trade of attractions we saw when we looked at why things dissolve.",
+      "audioFile": "public/audio/chem-y11-m4-v04/hydration.wav"
+    },
+    {
+      "id": "two-big-numbers",
+      "text": "So dissolving is a contest between two big numbers. For table salt, separating a mole of ions takes about seven hundred and eighty-seven kilojoules, and hydrating them gives back about seven hundred and eighty-three. The difference is only about four kilojoules, which is why salt water barely changes temperature. Both steps are huge, but the overall change is the small difference between them. Shrink the hydration step, and the net turns positive. Grow it, and the net turns negative.",
+      "audioFile": "public/audio/chem-y11-m4-v04/two-big-numbers.wav"
+    },
+    {
+      "id": "bigger-step-wins",
+      "text": "For ammonium nitrate, separating the ions takes more energy than hydration gives back. The extra energy comes from the water, so the water cools. That's endothermic, so delta H is positive. For calcium chloride, hydration gives back more than separating takes, so the extra energy warms the water. That's exothermic, with delta H negative.",
+      "audioFile": "public/audio/chem-y11-m4-v04/bigger-step-wins.wav"
+    },
+    {
+      "id": "measuring",
+      "text": "Here's how to measure it. Weigh about a hundred grams of water into a foam cup and record its temperature. Weigh the solid, tip it in, and stir until it has all dissolved. Then record the lowest temperature for a solid that cools the water, or the highest for one that warms it. Wear safety glasses, use only the small amounts you're given, and follow your teacher's instructions for disposal.",
+      "audioFile": "public/audio/chem-y11-m4-v04/measuring.wav"
+    },
+    {
+      "id": "worked-result",
+      "text": "Here's a result for ammonium chloride. We want its enthalpy of solution, the enthalpy change when one mole dissolves. Five point three five grams dissolves in a hundred grams of water, and the temperature falls from twenty-two point five to nineteen point three degrees. The solid is now part of the solution, so m is the water plus the solid, one hundred and five point three five grams. Delta T is minus three point two, so q is minus one thousand four hundred and nine joules.",
+      "audioFile": "public/audio/chem-y11-m4-v04/worked-result.wav"
+    },
+    {
+      "id": "enthalpy-of-solution",
+      "text": "Negative q means the solution lost heat to the dissolving. Next, the moles. The molar mass of ammonium chloride is fifty-three point four nine, so we dissolved zero point one zero zero zero moles. Delta H is minus q over n, so that's plus one point four zero nine kilojoules divided by zero point one, which is plus fourteen point one kilojoules per mole. The water cooled, so delta H is positive.",
+      "audioFile": "public/audio/chem-y11-m4-v04/enthalpy-of-solution.wav"
+    },
+    {
+      "id": "sign-and-moles",
+      "text": "Careful with the sign. A falling temperature tempts you to write a negative answer, but the water's loss is the system's gain, so an endothermic change has a positive delta H. And n is the moles of solid that dissolved, never the moles of water.",
+      "audioFile": "public/audio/chem-y11-m4-v04/sign-and-moles.wav"
+    },
+    {
+      "id": "uncertainty",
+      "text": "How sure is this result? Say the probe is accurate to zero point one of a degree. Then each reading could be out by zero point one, and the difference by zero point two. That's zero point two in three point two, about six per cent. The masses are far more precise. Because the answer comes from multiplying and dividing, it carries that same six per cent, so it's plus fourteen point one, plus or minus zero point nine.",
+      "audioFile": "public/audio/chem-y11-m4-v04/uncertainty.wav"
+    },
+    {
+      "id": "compare-data",
+      "text": "So allowing for the readings, the result lies between thirteen point two and fifteen point zero. The data value is plus fourteen point eight, which sits inside that range. The percentage error, about five per cent, is smaller than the uncertainty, so the readings alone could explain the gap. Heat leaking in from the room would make it a little low, which fits. The foam cup does far better than the spirit burner, because the change happens inside insulated water.",
+      "audioFile": "public/audio/chem-y11-m4-v04/compare-data.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the rule to remember. Separate the ions, energy goes in. Hydrate the ions, energy comes out. The bigger step sets the sign.",
+      "audioFile": "public/audio/chem-y11-m4-v04/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two point zero zero grams of sodium hydroxide is dissolved in a hundred grams of water in a foam cup, and the temperature rises from twenty-one point two to twenty-six point two degrees. Calculate the molar enthalpy of solution of sodium hydroxide. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v04/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The solution's mass is one hundred and two grams, and delta T is five point zero. So q is one hundred and two times four point one eight times five point zero, about two point one three kilojoules. The moles are two point zero zero over forty point zero zero, which is zero point zero five. So delta H is minus forty-two point six kilojoules per mole, negative because the water warmed. Using a hundred grams leaves out the solid.",
+      "audioFile": "public/audio/chem-y11-m4-v04/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. When potassium nitrate dissolves in water, the temperature falls. Explain this using the energy needed to separate the ions and the energy released by hydration, and state the sign of delta H. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v04/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Separating the potassium and nitrate ions takes more energy than hydrating them releases. The extra energy is taken from the water, so the solution cools. The process is endothermic, and delta H is positive. A temperature fall doesn't mean a negative delta H.",
+      "audioFile": "public/audio/chem-y11-m4-v04/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So dissolving can warm or cool water because it happens in two steps. Separating the ions takes energy in, hydrating them gives energy out, and the bigger step wins. Notice that delta H only depended on where the route started and where it finished. In Module Three, a catalyst gave hydrogen peroxide a different route. Does a different route change delta H?",
+      "audioFile": "public/audio/chem-y11-m4-v04/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v04/key-notes.wav"
+    }
+  ]
+}

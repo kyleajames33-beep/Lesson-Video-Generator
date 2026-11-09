@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v08.md",
+  "sourceSha256": "cbf3344c0a475fba0f2a152d702e2a1eaa20bdd268145da5aef1b5fbe3d59da4",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's where we left off. Ten point zero grams of magnesium, but only four point zero grams of oxygen. Last time, there was always plenty of the other reactant. Now one of them will run out first, and the reaction stops when it does. Make a prediction. Which runs out first, the magnesium or the oxygen?",
+      "audioFile": "public/audio/chem-y11-m2-v08/hook-prediction.wav"
+    },
+    {
+      "id": "counting-runs",
+      "text": "Let's count molecules. Hydrogen burns in oxygen. Two H two plus O two makes two H two O. So each time the equation runs, it uses two hydrogen molecules and one oxygen molecule. Here are six hydrogen molecules and four oxygen molecules. The hydrogen is enough for three runs, because six divided by two is three. The oxygen is enough for four runs. So after three runs, the hydrogen is all gone. Six water molecules have formed, and one oxygen molecule is left over.",
+      "audioFile": "public/audio/chem-y11-m2-v08/counting-runs.wav"
+    },
+    {
+      "id": "limiting-excess",
+      "text": "The reactant that runs out first is called the limiting reagent, because it limits how much product can form. The one with some left over is the excess reagent. And here's the surprise. There were fewer oxygen molecules, four against six, but oxygen didn't run out. Fewer particles doesn't mean limiting. What matters is how many runs each reactant can supply, and that's its amount divided by its coefficient.",
+      "audioFile": "public/audio/chem-y11-m2-v08/limiting-excess.wav"
+    },
+    {
+      "id": "method",
+      "text": "In real problems we count in moles, and the steps are last video's, plus one new step. Write the balanced equation. Turn each reactant's mass into moles. Divide each by its coefficient, and the smaller result belongs to the limiting reagent. Then calculate the product from the limiting reagent's moles only, across the bridge as before. And if you're asked, find how much of the excess reagent is left over.",
+      "audioFile": "public/audio/chem-y11-m2-v08/method.wav"
+    },
+    {
+      "id": "mg-compare",
+      "text": "Back to the magnesium. Ten point zero grams over twenty-four point three is zero point four one one moles of magnesium. Four point zero grams of oxygen, over thirty-two point zero, is zero point one two five moles. Now divide by the coefficients. Magnesium's is two, so that's zero point two zero six. Oxygen's is one, so it stays at zero point one two five. Oxygen's number is smaller, so oxygen is the limiting reagent. If you predicted oxygen because it had fewer grams, you were right, but only by luck.",
+      "audioFile": "public/audio/chem-y11-m2-v08/mg-compare.wav"
+    },
+    {
+      "id": "mg-product",
+      "text": "So the oxygen sets the product. Oxygen to magnesium oxide is one to two, so zero point one two five moles of oxygen makes zero point two five zero moles of magnesium oxide. Times forty point three, that's ten point one grams. This most product we can make, set by the limiting reagent, is called the theoretical yield. It's last video's theoretical mass. Start from the magnesium instead, and you'd claim sixteen point six grams. That needs six point five eight grams of oxygen, and we only have four.",
+      "audioFile": "public/audio/chem-y11-m2-v08/mg-product.wav"
+    },
+    {
+      "id": "mg-left",
+      "text": "How much magnesium is left over? The equation uses two magnesium for each oxygen, so zero point two five zero moles of magnesium reacted. That's six point zero eight grams. Ten point zero minus six point zero eight leaves three point nine two grams of magnesium unreacted. Check it with conservation of mass. Fourteen point zero grams went in. Out come ten point zero eight grams of oxide, before rounding, and three point nine two grams of magnesium, which is fourteen point zero.",
+      "audioFile": "public/audio/chem-y11-m2-v08/mg-left.wav"
+    },
+    {
+      "id": "more-moles-limits",
+      "text": "Now a case where moles alone would fool you. Ten point zero grams of sodium reacts with twenty point zero grams of chlorine. Two N a plus C l two makes two N a C l. Sodium is zero point four three five moles. Chlorine, with a molar mass of seventy point nine, is zero point two eight two moles. Sodium has more moles and fewer grams. So is chlorine limiting? Divide by the coefficients. Sodium gives zero point two one seven five, and chlorine stays at zero point two eight two. Sodium is the limiting reagent, even though it had more moles.",
+      "audioFile": "public/audio/chem-y11-m2-v08/more-moles-limits.wav"
+    },
+    {
+      "id": "nacl-left",
+      "text": "Sodium to sodium chloride is one to one, so zero point four three five moles of sodium chloride form. Times fifty-eight point four four, that's twenty-five point four grams. The chlorine used is half the sodium's moles, zero point two one seven five. Zero point two eight two one minus zero point two one seven five leaves zero point zero six four six moles, which is four point five eight grams of chlorine left over. Don't say all twenty grams are left. Only the part that didn't react remains.",
+      "audioFile": "public/audio/chem-y11-m2-v08/nacl-left.wav"
+    },
+    {
+      "id": "why-excess",
+      "text": "So why add an excess on purpose? Because the limiting reagent decides the yield. Adding plenty of the cheaper or easier reactant makes sure the valuable one reacts completely. That's what words like excess and in plenty meant in the last video's questions. They tell you which reactant isn't limiting, so you calculate from the other one.",
+      "audioFile": "public/audio/chem-y11-m2-v08/why-excess.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Five point zero zero grams of aluminium is heated with five point zero zero grams of sulfur. Two A l plus three S makes A l two S three. Identify the limiting reagent, and calculate the theoretical yield of aluminium sulfide. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v08/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Aluminium is zero point one eight five moles, over two is zero point zero nine two seven. Sulfur is zero point one five six moles, over three is zero point zero five two zero. So sulfur is limiting. That makes zero point zero five two zero moles of aluminium sulfide, or seven point eight zero grams. Working from aluminium gives thirteen point nine grams, more than the ten grams that went in.",
+      "audioFile": "public/audio/chem-y11-m2-v08/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Eight point zero zero grams of methane burns with twenty-four point zero grams of oxygen. C H four plus two O two makes C O two plus two H two O. Identify the limiting reagent, and calculate the mass of the excess reagent left over. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v08/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Methane is zero point four nine nine moles. Oxygen is zero point seven five zero moles, over two is zero point three seven five. So oxygen is limiting, even though it has more moles. Zero point three seven five moles of methane react, six point zero two grams, leaving one point nine eight grams of methane. Calling methane limiting because it has fewer moles is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v08/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So compare moles divided by coefficients. The smaller one is the limiting reagent. It sets the theoretical yield, and the rest of the excess reagent stays behind. Now take this to the lab. Marble chips are calcium carbonate. Put two point zero zero grams of them into an excess of dilute hydrochloric acid, and the chips are limiting, so we can predict the carbon dioxide they make. But that gas bubbles out of the flask. How can we measure mass changes while keeping track of escaping gas?",
+      "audioFile": "public/audio/chem-y11-m2-v08/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v08/key-notes.wav"
+    }
+  ]
+}

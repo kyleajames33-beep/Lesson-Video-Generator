@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v06.md",
+  "sourceSha256": "cca42abea5b85e0b7e122482ea8614b1ea2cfd9e39b3d1996fcbd74d1c3e1b08",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's the ammonia profile from last time, minus ninety-two kilojoules, catalyst or not. To make ammonia, the triple bond in each nitrogen molecule has to break, and it's one of the strongest bonds there is. Three hydrogen to hydrogen bonds break too, and then six new nitrogen to hydrogen bonds form. So predict. With such a strong bond to break, does making ammonia take energy in, or give energy out?",
+      "audioFile": "public/audio/chem-y11-m4-v06/hook-prediction.wav"
+    },
+    {
+      "id": "breaking-and-making",
+      "text": "Energy out, and to see why, think about what a bond is. A covalent bond is a shared pair of electrons, attracted to both nuclei. Pulling the two atoms apart works against that attraction, so breaking a bond always takes energy in. When two atoms come together and bond, the attraction pulls them in, so forming a bond always gives energy out. And forming a bond gives out exactly the energy it takes to break that bond. If it didn't, you could break and remake a bond over and over, and create energy from nothing. The law of conservation of energy says that's impossible.",
+      "audioFile": "public/audio/chem-y11-m4-v06/breaking-and-making.wav"
+    },
+    {
+      "id": "bond-enthalpy",
+      "text": "The energy needed to break one mole of a particular bond, in gas molecules, is its bond enthalpy. A hydrogen to hydrogen bond takes four hundred and thirty-six kilojoules per mole. Tables list these values, but the HSC data sheet doesn't, so exam questions give you the ones you need. Most values are averages, because the same bond is a little stronger or weaker in different molecules.",
+      "audioFile": "public/audio/chem-y11-m4-v06/bond-enthalpy.wav"
+    },
+    {
+      "id": "two-stages",
+      "text": "Start simple, with hydrogen and chlorine making hydrogen chloride. Picture it in two stages. First, break every bond in the reactants, one hydrogen to hydrogen bond and one chlorine to chlorine bond. That takes four hundred and thirty-six plus two hundred and forty-two, six hundred and seventy-eight kilojoules in. Then form the new bonds, two hydrogen to chlorine bonds, giving two times four hundred and thirty-one, eight hundred and sixty-two kilojoules out.",
+      "audioFile": "public/audio/chem-y11-m4-v06/two-stages.wav"
+    },
+    {
+      "id": "in-minus-out",
+      "text": "So delta H is the energy in minus the energy out. Six hundred and seventy-eight minus eight hundred and sixty-two is minus one hundred and eighty-four kilojoules per mole. More energy came out forming bonds than went in breaking them, so the reaction is exothermic. The data value is minus one hundred and eighty-five, so this method gets very close.",
+      "audioFile": "public/audio/chem-y11-m4-v06/in-minus-out.wav"
+    },
+    {
+      "id": "ammonia",
+      "text": "Now ammonia. Break one nitrogen triple bond, nine hundred and forty-five, and three hydrogen to hydrogen bonds, three times four hundred and thirty-six. That's two thousand two hundred and fifty-three in. Each ammonia molecule has three nitrogen to hydrogen bonds, and two molecules form, so that's six bonds, six times three hundred and ninety-one, two thousand three hundred and forty-six out. Delta H is minus ninety-three, close to the data value of minus ninety-two.",
+      "audioFile": "public/audio/chem-y11-m4-v06/ammonia.wav"
+    },
+    {
+      "id": "totals",
+      "text": "So the strong triple bond doesn't make the reaction endothermic. It costs a lot, but forming six bonds pays back slightly more. What decides the sign isn't one strong bond. It's the total energy in compared with the total energy out.",
+      "audioFile": "public/audio/chem-y11-m4-v06/totals.wav"
+    },
+    {
+      "id": "counting",
+      "text": "For bigger molecules, draw the structures and count every bond. When methane burns, each methane molecule has four carbon to hydrogen bonds, and each of the two oxygen molecules has one double bond. In the products, carbon dioxide has two carbon to oxygen double bonds, and each water molecule has two oxygen to hydrogen bonds, so two waters have four.",
+      "audioFile": "public/audio/chem-y11-m4-v06/counting.wav"
+    },
+    {
+      "id": "methane-calculation",
+      "text": "Energy in is four times four hundred and fourteen, plus two times four hundred and ninety-eight, which is two thousand six hundred and fifty-two. Energy out is two times eight hundred and four, plus four times four hundred and sixty-three, three thousand four hundred and sixty. So delta H is two thousand six hundred and fifty-two minus three thousand four hundred and sixty, minus eight hundred and eight.",
+      "audioFile": "public/audio/chem-y11-m4-v06/methane-calculation.wav"
+    },
+    {
+      "id": "approximate",
+      "text": "How good is that? Bond enthalpies are for gases, so this calculation makes steam, and the data value for that is minus eight hundred and two. That's close, but not exact, because the table uses averages, and the bonds in these molecules aren't exactly average. If the water ends up as a liquid, more energy comes out as the steam condenses, about forty-four kilojoules for each mole of water. That gives the minus eight hundred and ninety we met at the start of this module.",
+      "audioFile": "public/audio/chem-y11-m4-v06/approximate.wav"
+    },
+    {
+      "id": "traps",
+      "text": "Two traps. Carbon dioxide has two double bonds, not one, so count from the structure, never from the formula. And the order matters. It's bonds broken minus bonds formed. Doing it the other way round flips the sign.",
+      "audioFile": "public/audio/chem-y11-m4-v06/traps.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the line to remember. Break, energy in. Make, energy out. Delta H is in minus out.",
+      "audioFile": "public/audio/chem-y11-m4-v06/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Use bond enthalpies to calculate delta H when ethene reacts with hydrogen to form ethane. The values are, carbon to carbon double bond, six hundred and fourteen, carbon to carbon single bond, three hundred and forty-six, carbon to hydrogen, four hundred and fourteen, and hydrogen to hydrogen, four hundred and thirty-six kilojoules per mole. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Broken: one carbon double bond, four carbon to hydrogen bonds and one hydrogen to hydrogen bond, two thousand seven hundred and six. Formed: one carbon single bond and six carbon to hydrogen bonds, two thousand eight hundred and thirty. So delta H is minus one hundred and twenty-four kilojoules per mole. Formed minus broken would give plus one hundred and twenty-four, the wrong sign.",
+      "audioFile": "public/audio/chem-y11-m4-v06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A bond enthalpy calculation gives minus eight hundred and eight kilojoules per mole for burning methane, but the data value, which forms liquid water, is minus eight hundred and ninety. Give two reasons for the difference. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "First, bond enthalpies are averages, so they don't exactly match the bonds in these molecules. Second, bond enthalpies apply to gases, but the data value forms liquid water, which releases extra energy as it condenses. Heat loss isn't a reason, because nothing was measured in a calorimeter.",
+      "audioFile": "public/audio/chem-y11-m4-v06/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So broken and formed bonds give an approximate delta H. It's the energy in to break every bond, minus the energy out to form the new ones. But notice what we did. We never followed the real reaction. We imagined pulling everything apart into atoms, then building the products, and still got about the right answer. Why can we add enthalpies along a different path?",
+      "audioFile": "public/audio/chem-y11-m4-v06/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v06/key-notes.wav"
+    }
+  ]
+}

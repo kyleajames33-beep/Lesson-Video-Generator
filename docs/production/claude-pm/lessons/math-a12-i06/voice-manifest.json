@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i06.md",
+  "sourceSha256": "b6e67c5a7c0c6a5ae9b5081bf98431a33425ae211bdb38c214cc60e7f7b4dc3e",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's cos x, from zero to pi over two, with eight thin rectangles standing against it. Let's give the curve a meaning. A storm is easing off. cos x is the rain rate, in centimetres per hour, x hours after it starts to ease. At the start, it's one centimetre an hour. By pi over two hours, about an hour and a half, the rain has stopped. So how much rain fell into the gauge? The rate keeps changing, so we can't just multiply rate by time. But adding up thin rectangles gives an estimate, and refining them makes it better.",
+      "audioFile": "public/audio/math-a12-i06/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Take one thin strip of time, with width delta x. Delta x just means a small change in x, here a short stretch of time. Over that short time, the rate hardly changes. Call the rate f of x. So the rain that falls is about rate times time. On the graph, that's the rectangle's height times its width, its area. Centimetres per hour, times hours, gives centimetres. So each rectangle's area estimates the rain that fell during its strip. That's the change in the quantity over one small step.",
+      "audioFile": "public/audio/math-a12-i06/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now add up all the strips. This sign, a capital sigma, means add them all up. The sum of f of x times delta x, from a to b, estimates the total change from a to b. With four strips, using the heights at their left ends, the total is about one point one eight centimetres. The rate falls across every strip, and each rectangle uses the rate at its start, so each one reaches above the curve. That's an overestimate. The height can come from any x in the strip's base. Use the right ends, and every rectangle sits under the curve. That gives about zero point seven nine, an underestimate. The true amount is somewhere in between.",
+      "audioFile": "public/audio/math-a12-i06/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "So make the strips thinner. Delta x is the whole interval, b minus a, split into n equal strips. So delta x equals b minus a, over n. Double n to eight, and the left sum drops to about one point one. Sixteen strips gives about one point zero five, and thirty-two gives about one point zero two. Meanwhile, the right sums climb towards the same place. Here's why. In a thinner strip, the rate changes less, so the gap between each rectangle and the curve shrinks. Both estimates close in on one centimetre. A later video shows why it's exactly one.",
+      "audioFile": "public/audio/math-a12-i06/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Every estimate so far is an area. So the total change is the area of this region, between the curve and the x-axis, from a to b. That works when the curve stays on or above the axis, like this one. This curve is also continuous on the interval. Informally, that means you can draw it from one end to the other without taking the pen off the paper. If the rain stopped dead halfway, the graph would jump, and the pen would have to lift. In this topic, the curves we add up are continuous.",
+      "audioFile": "public/audio/math-a12-i06/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Rectangles have flat tops, but the curve slopes. So join the top points with straight lines instead. Each strip becomes a trapezium, a shape with two parallel sides. Its area is the average of the two heights, times the width. That's the average of the left rectangle and the right rectangle. With just four trapezia, the estimate is about zero point nine eight seven. That's closer than thirty-two rectangles. Here the curve bends downwards, so each straight top sits just under it, and the trapezia slightly underestimate.",
+      "audioFile": "public/audio/math-a12-i06/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Let's compare the methods on one example. A trolley's speed is x squared metres per second, x seconds after it starts. Estimate how far it goes in the first two seconds, using four strips. Speed times time is distance, so each strip's area is a distance. Delta x is two minus zero, over four, which is a half. The heights at zero, a half, one, one and a half and two are zero, a quarter, one, two and a quarter, and four. Left rectangles use the first four heights, which gives a half times three and a half, or one point seven five metres. Right rectangles use the last four, which gives three point seven five. The trapezia take the average, two point seven five.",
+      "audioFile": "public/audio/math-a12-i06/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Now refine all three in a graphing app. At eight strips, the left rectangles give about two point one nine, the right about three point one nine, and the trapezia about two point six nine. At sixteen strips, the trapezia give about two point six seven two. All three settle near two point six six seven metres. Now look at the errors. Each time n doubles, the rectangle errors roughly halve. But the trapezium error drops to about a quarter. This curve bends upwards, so the trapezia sit just above it, and slightly overestimate. Here the trapezia improve fastest. Try it yourself in a graphing app: change n and compare.",
+      "audioFile": "public/audio/math-a12-i06/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's one line to keep. Strip equals rate times width. Add the strips, then thin them. Each strip is a small piece of change, the sum estimates the whole change, and thinner strips make the estimate better.",
+      "audioFile": "public/audio/math-a12-i06/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Water flows into a tank at eight minus x squared litres per minute, for the first two minutes. Use four rectangles with left-end heights to estimate the volume. Is it an overestimate or an underestimate? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i06/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Delta x is a half. The left heights are eight, seven point seven five, seven, and five point seven five, which add to twenty-eight point five. Times the width, that's fourteen point two five litres. The rate falls across every strip, so each left height is the biggest in its strip. That's an overestimate. Twenty-eight point five is wrong. It forgot to multiply by the width.",
+      "audioFile": "public/audio/math-a12-i06/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. A cyclist's speed is recorded every two seconds. At zero, two and four seconds, it's zero, six and ten metres per second. Use two trapezia to estimate the distance travelled. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i06/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Each trapezium is two seconds wide. The first is two times the average of zero and six, which is six metres. The second is two times the average of six and ten, which is sixteen. So the estimate is twenty-two metres. Twenty metres is wrong. It uses one wide trapezium, and skips the reading at two seconds.",
+      "audioFile": "public/audio/math-a12-i06/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So thin strips turn a changing rate into an estimate of the total change. But every rate so far stayed positive. Here's a bath filling with the plug out. Its net flow is twelve minus two t litres per minute, over eight minutes. After six minutes, it's negative, and a rectangle hangs below the axis. What does a strip below the axis mean?",
+      "audioFile": "public/audio/math-a12-i06/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i06/scene-15.wav"
+    }
+  ]
+}

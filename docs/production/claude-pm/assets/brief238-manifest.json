@@ -1,0 +1,1999 @@
+{
+  "brief": 238,
+  "state": "art-in-progress",
+  "generatedWith": "built-in image_gen planned",
+  "namedNewPlateCount": 27,
+  "roughCountInBrief": 35,
+  "countNote": "The19asset briefs name27distinct new numbered plates. Reused objects and previous235coaster are not new commissions. No extra plates invented.",
+  "blockedDesigns": [
+    "i01",
+    "i07",
+    "i11",
+    "i13"
+  ],
+  "assets": [
+    {
+      "name": "ma12-skateboard-side-v1.png",
+      "designs": [
+        "d15"
+      ],
+      "description": " (2400 × 800 px): one ordinary street skateboard seen exactly side-on (orthographic, no perspective), deck horizontal and centred, nose to the left and tail to the right, both ends gently kicked up. Natural maple deck edge with a thin black grip-tape top edge; two metal trucks; two visible wheels (the near wheel of each truck), off-white, the same size. No rider, no feet, no shoes, no text or graphics on the deck. **Both wheel bottoms touch one horizontal line**, and the plate's midpoint between the two wheel contact points is the board's contact point: Codex reports the two wheel contact points and the deck's top-edge line in file pixels, so the build can sit the wheels on the track's centre line and turn the board about that point.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-skateboard-side-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2400,
+        800
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "wheelContacts": [
+          [
+            677,
+            601
+          ],
+          [
+            1721.5,
+            601
+          ]
+        ],
+        "rotationContactMidpoint": [
+          1199.25,
+          601
+        ],
+        "deckStraightTopEdge": [
+          [
+            800,
+            334
+          ],
+          [
+            1600,
+            334
+          ]
+        ],
+        "topEdgeSamplingNote": "Central grip edge y334;shoulders rise into kicked ends;handdrawn shoulder variation1-2px."
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-185af793-5c7d-4f6b-a0ce-3557a6d1975d.png",
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "nativeSize": [
+        2400,
+        800
+      ],
+      "sha256": "7192c705aed64072974fa6e7aaba5b8896a0149783d2e6c08d401757eb78164e",
+      "alphaBox": [
+        310,
+        275,
+        2090,
+        602
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed isolated alpha below8",
+        "Added transparent padding114pxleft/right,38pxtop/bottom;no resizing or stretching"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d15-provenance.json",
+      "qa": "work\\brief238\\d15-skateboard-qa.jpg"
+    },
+    {
+      "name": "ma12-barrel-vase-v1.png",
+      "designs": [
+        "d16"
+      ],
+      "description": " (1400 × 2000 px): one empty, clear glass vase seen exactly side-on (no perspective tilt of the rim beyond a thin ellipse), standing upright and centred, a smooth barrel shape: narrow at the base, widest at mid-height, narrow again at the open mouth, symmetric top to bottom, on a short flat glass foot. Clear glass with light edge highlights only; the inside must read as empty and see-through so that a coded water fill can show inside it. **Paint the inner wall to this profile** (inner height 1600 px from the inside of the base to the mouth; inner radius given at 11 equally spaced heights from the base, as a fraction of the widest inner radius, which is 511 px): 0.447, 0.486, 0.541, 0.629, 0.790, 1.000, 0.790, 0.629, 0.541, 0.486, 0.447. So the inner base and the mouth are each about 457 px across and the widest inner width is about 1022 px, at exactly mid-height. The curve between the guide points is smooth (no corners). The glass wall sits outside this profile and is thin (about 10 to 14 px). Codex reports, in file pixels, the vase's vertical axis, the inside of the base, the mouth's inner rim and the measured inner half-width at the 11 guide heights.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-barrel-vase-v1.png",
+      "state": "delivered-profile-tolerance-miss-reported",
+      "nativeSizeTarget": [
+        1400,
+        2000
+      ],
+      "profileNeverWarp": true,
+      "actualMeasurements": {
+        "axisX": 699.5,
+        "insideBaseYApprox": 1590,
+        "innerMouthYApprox": 400,
+        "innerHeightApprox": 1190,
+        "profile": [
+          {
+            "heightFraction": 0.0,
+            "guideYFromMeasuredBase": 1590,
+            "scanY": 1580,
+            "leftInnerEdge": 541,
+            "rightInnerEdge": 855,
+            "innerHalfWidthPx": 157.0,
+            "targetHalfWidthPx": 228.417,
+            "errorPx": -71.417,
+            "endpointNote": "near-rim/near-floor scan avoids opaque rim/base reflection"
+          },
+          {
+            "heightFraction": 0.1,
+            "guideYFromMeasuredBase": 1471,
+            "scanY": 1471,
+            "leftInnerEdge": 521,
+            "rightInnerEdge": 874,
+            "innerHalfWidthPx": 176.5,
+            "targetHalfWidthPx": 248.346,
+            "errorPx": -71.846,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.2,
+            "guideYFromMeasuredBase": 1352,
+            "scanY": 1352,
+            "leftInnerEdge": 497,
+            "rightInnerEdge": 897,
+            "innerHalfWidthPx": 200.0,
+            "targetHalfWidthPx": 276.451,
+            "errorPx": -76.45100000000002,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.3,
+            "guideYFromMeasuredBase": 1233,
+            "scanY": 1233,
+            "leftInnerEdge": 458,
+            "rightInnerEdge": 938,
+            "innerHalfWidthPx": 240.0,
+            "targetHalfWidthPx": 321.419,
+            "errorPx": -81.41899999999998,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.4,
+            "guideYFromMeasuredBase": 1114,
+            "scanY": 1114,
+            "leftInnerEdge": 395,
+            "rightInnerEdge": 999,
+            "innerHalfWidthPx": 302.0,
+            "targetHalfWidthPx": 403.69,
+            "errorPx": -101.69,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.5,
+            "guideYFromMeasuredBase": 995,
+            "scanY": 995,
+            "leftInnerEdge": 346,
+            "rightInnerEdge": 1050,
+            "innerHalfWidthPx": 352.0,
+            "targetHalfWidthPx": 511,
+            "errorPx": -159.0,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.6,
+            "guideYFromMeasuredBase": 876,
+            "scanY": 876,
+            "leftInnerEdge": 409,
+            "rightInnerEdge": 989,
+            "innerHalfWidthPx": 290.0,
+            "targetHalfWidthPx": 403.69,
+            "errorPx": -113.69,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.7,
+            "guideYFromMeasuredBase": 757,
+            "scanY": 757,
+            "leftInnerEdge": 469,
+            "rightInnerEdge": 929,
+            "innerHalfWidthPx": 230.0,
+            "targetHalfWidthPx": 321.419,
+            "errorPx": -91.41899999999998,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.8,
+            "guideYFromMeasuredBase": 638,
+            "scanY": 638,
+            "leftInnerEdge": 505,
+            "rightInnerEdge": 893,
+            "innerHalfWidthPx": 194.0,
+            "targetHalfWidthPx": 276.451,
+            "errorPx": -82.45100000000002,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 0.9,
+            "guideYFromMeasuredBase": 519,
+            "scanY": 519,
+            "leftInnerEdge": 528,
+            "rightInnerEdge": 870,
+            "innerHalfWidthPx": 171.0,
+            "targetHalfWidthPx": 248.346,
+            "errorPx": -77.346,
+            "endpointNote": null
+          },
+          {
+            "heightFraction": 1.0,
+            "guideYFromMeasuredBase": 400,
+            "scanY": 415,
+            "leftInnerEdge": 543,
+            "rightInnerEdge": 856,
+            "innerHalfWidthPx": 156.5,
+            "targetHalfWidthPx": 228.417,
+            "errorPx": -71.917,
+            "endpointNote": "near-rim/near-floor scan avoids opaque rim/base reflection"
+          }
+        ],
+        "measurementUncertaintyPx": 3
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-6fc12cbd-c5b1-492a-b612-831c49970995.png",
+      "generatorNativeSize": [
+        1049,
+        1500
+      ],
+      "nativeSize": [
+        1400,
+        2000
+      ],
+      "sha256": "f6051b8e0ff32e56e8e3de790232689258bd751cd9ea8ac140038d2fa8c1f9fe",
+      "alphaBox": [
+        320,
+        388,
+        1079,
+        1623
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed isolated alpha below8",
+        "Transparent padding175pxleft,176pxright,250pxtop/bottom only;no resampling or stretching"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d16-provenance.json",
+      "qa": [
+        "work\\brief238\\d16-vase-qa.jpg",
+        "work/brief238/d16-vase-profile-and-fill-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-D16-PLATE-PROFILE",
+          "severity": "builder-fit-required",
+          "detail": "Actual inner heightabout1190px versus1600target;mid inner radius352px versus511target,error159px exceeds10.22pxtolerance. End scans approximate. Geometry is preserved;builder fits coded curve/fill to measured plate perroot30. No warp/rescale."
+        }
+      ]
+    },
+    {
+      "name": "ma12-kitchen-tap-v1.png",
+      "designs": [
+        "d16"
+      ],
+      "description": " (1600 × 1200 px): one chrome gooseneck kitchen tap seen exactly side-on: a short round base at the lower left, a tall curved neck rising and arching to the right, ending in a spout that points straight down. No water, no sink, no bench, no handle being touched, no hands. Codex reports the centre of the spout's mouth in file pixels (the coded stream starts there).",
+      "exists": false,
+      "path": "public/assets/maths/ma12-kitchen-tap-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1600,
+        1200
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "spoutMouthCentre": [
+          1135,
+          526
+        ],
+        "measurementUncertaintyPx": 2
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-7f982c3c-0bda-44a8-865d-a523fedab67a.png",
+      "generatorNativeSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        1600,
+        1200
+      ],
+      "sha256": "83f316fb6c377b04f5c4e16487bc8b467b5cbcaba370a4000aba208c3f466a76",
+      "alphaBox": [
+        440,
+        137,
+        1182,
+        1064
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed isolated alpha below8",
+        "Transparent padding76pxleft/right,57pxtop/bottom only;no resizing/stretching"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d16-provenance.json",
+      "qa": [
+        "work\\brief238\\d16-tap-qa.jpg",
+        "work/brief238/d16-tap-white-qa.png"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-pen-wall-v1.png",
+      "designs": [
+        "d17",
+        "d18"
+      ],
+      "description": " (2400 × 1400 px): an old dry-stone wall of grey-brown fieldstones, about chest height, running straight across the back of the picture from left to right; against it, a rectangular pen of plain timber post-and-rail fencing (two rails, posts evenly spaced) on three sides: two sides run from the wall towards the viewer and one side runs parallel to the wall at the front. Low three-quarter view from the front left, so all three fence sides and the wall face are visible. The pen is about twice as long along the wall as it is deep. Short green grass inside the pen and on a narrow strip around it, the ground patch ending in a soft, irregular transparent edge (no sky, no horizon, no buildings, no trees). **Empty: no animals** (a separate sheep plate is placed inside) and no gate. Codex reports, in file pixels: the midpoints of the left side, the front side and the right side of the fence, the midpoint of the wall's length inside the pen, and a ground point near the centre of the pen where a sheep can stand.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-pen-wall-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2400,
+        1400
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "leftFenceMidpoint": [
+          702,
+          736
+        ],
+        "frontFenceMidpoint": [
+          1394,
+          773
+        ],
+        "rightFenceMidpoint": [
+          1747,
+          577
+        ],
+        "wallInsideLengthMidpoint": [
+          1065.5,
+          650
+        ],
+        "sheepGroundPoint": [
+          1200,
+          700
+        ],
+        "manualAnchorUncertaintyPx": 8
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-702921c0-62a3-4b29-9956-0fa9621f2bae.png",
+      "generatorNativeSize": [
+        1642,
+        958
+      ],
+      "nativeSize": [
+        2400,
+        1400
+      ],
+      "sha256": "f860642e054cd94a4dd9b45b9881648d599e58b0248475bc960b4f5c6e4f7e55",
+      "alphaBox": [
+        416,
+        377,
+        1985,
+        1069
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Transparentpadding379pxleft/right,221pxtop/bottom;noresize/stretch"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d18-provenance.json",
+      "qa": [
+        "work/brief238/d18-pen-qa.jpg",
+        "work/brief238/d18-anchors-qa.jpg",
+        "work/brief238/d18-tile-qa.jpg",
+        "work/brief238/d18-card-2x2-final-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-stone-wall-top-v1.png",
+      "designs": [
+        "d18"
+      ],
+      "description": " (2400 × 360 px): the same kind of dry-stone wall seen from directly above: a straight strip of irregular grey-brown fieldstones with dark gaps between them, running left to right across the whole width. **Tileable horizontally**: the left and right edges must join seamlessly when two copies sit side by side, so the strip runs to both side edges (this plate is exempt from the side margins); transparent above and below the strip, with at least 8 per cent clear margin at the top and bottom. The strip is about 200 px deep.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-stone-wall-top-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2400,
+        360
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "horizontalEdgeMaxDifference": 0,
+        "edgeMaxDifferences": null
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-6564f044-f47a-4405-bcc1-fd82d8762962.png",
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "nativeSize": [
+        2400,
+        360
+      ],
+      "sha256": "1597297ae2d83e65dbc47117b91b9d667e18d9165b8384ba23bf863e703c8167",
+      "alphaBox": [
+        0,
+        89,
+        2400,
+        268
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Croppedtransparentverticalmarginsy182..542",
+        "Repeated228nativecolumns toextend2172to2400withoutstretching",
+        "Featheredinternalrepeat48pxandoppositeedges48px;exactedgeRGBAequality"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d18-provenance.json",
+      "qa": [
+        "work/brief238/d18-pen-qa.jpg",
+        "work/brief238/d18-anchors-qa.jpg",
+        "work/brief238/d18-tile-qa.jpg",
+        "work/brief238/d18-card-2x2-final-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-card-texture-v1.png",
+      "designs": [
+        "d18"
+      ],
+      "description": " (1200 × 1200 px): a flat square of plain brown cardboard surface seen face-on, with faint fibres and slight tone variation, no fold lines, creases, corrugation edges, print or tape. **A seamless tile on all four edges and fully opaque** (it fills coded faces as a pattern, so it is exempt from the transparent margin; save as PNG with an alpha channel that is opaque everywhere).",
+      "exists": false,
+      "path": "public/assets/maths/ma12-card-texture-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1200,
+        1200
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "horizontalEdgeMaxDifference": null,
+        "edgeMaxDifferences": {
+          "horizontal": 0,
+          "vertical": 0
+        }
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-aaf8e69c-394e-4ccc-b95e-5ea5d12c061e.png",
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "nativeSize": [
+        1200,
+        1200
+      ],
+      "sha256": "3290b53c7e3cfe5e296d67de291624995294cd487ddf1356f83fe15acb50c9ff",
+      "alphaBox": [
+        0,
+        0,
+        1200,
+        1200
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Selectednative600x600centrepatchfromgeneratedcardtexture",
+        "Mirrorednativepixelpatchin2x2arrangementto1200tile;noresampling/stretching",
+        "RGBAalpha255throughout;oppositeedgesexactlyequal",
+        "Replacedpreviousedgefeathercandidateafter2x2QAshowedafaintband"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-d18-provenance.json",
+      "qa": [
+        "work/brief238/d18-pen-qa.jpg",
+        "work/brief238/d18-anchors-qa.jpg",
+        "work/brief238/d18-tile-qa.jpg",
+        "work/brief238/d18-card-2x2-final-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-bookcase-pots-v1.png",
+      "designs": [
+        "i01"
+      ],
+      "description": " (1400 × 2000 px): one plain timber bookcase seen straight on, standing upright and centred, with three open shelves and a few books lying at the far ends of each shelf only (the middle of each shelf is clear). On each shelf, centred, sits one identical small terracotta pot filled with dark soil, with **no plant** (the build adds the shoots). **Paint to this guide:** the three soil surfaces at exactly y = 1640, 1220 and 800 px (420 px apart, which the build reads as 30 cm, so 14 px per cm), each soil surface a flat strip about 240 px wide centred on x = 700; the floor line (the bookcase's base) at y = 1920 px (280 px below the bottom soil, read as 20 cm). Clear space above each pot up to the shelf above: at least 300 px above the top pot to the bookcase's top board. Codex reports, in file pixels, the three soil lines (left and right ends), the pot centres and the floor line.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-bookcase-pots-v1.png",
+      "state": "delivered-build-clearance-blocker",
+      "nativeSizeTarget": [
+        1400,
+        2000
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "soilLines": [
+          {
+            "soilCentreY": 800,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              800,
+              820,
+              800
+            ]
+          },
+          {
+            "soilCentreY": 1220,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              1220,
+              820,
+              1220
+            ]
+          },
+          {
+            "soilCentreY": 1640,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              1640,
+              820,
+              1640
+            ]
+          }
+        ],
+        "floorLineYApprox": 1920,
+        "floorMeasurementUncertaintyPx": 2,
+        "topBoardUndersideApprox": 399,
+        "clearanceAboveTopSoil": 401
+      },
+      "generatorSource": "C:/Users/kygs/.codex/generated_images/01a1b24b-b35d-73a2-91c3-6120d9aa4344/exec-346f64e0-53e9-40a9-b585-c27ad261c2ba.png",
+      "generatorNativeSize": [
+        1049,
+        1499
+      ],
+      "nativeSize": [
+        1400,
+        2000
+      ],
+      "sha256": "aa465d65335f0346c5240c9c47deec117995a9fb3ccbafe185309b1247e9c559",
+      "alphaBox": [
+        120,
+        307,
+        1282,
+        1923
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Uniformscale1.38withnearestintegerdimensions1448x2069;preservedaspect",
+        "Centredcroptransparentcanvas to1400x2000at(-24,-8)",
+        "Movedintactshelfinteriorpatches-12/+22/+49px tosoil800/1220/1640",
+        "Raisedtopboard110pxandextendedsidepostsusingunoccupiedwoodpixelstrip;nopeople/design/narration edits",
+        "Removedduplicateupperapron/straysfrompatchjoins",
+        "Filledtwoinnerpostgapswithnativewoodpixels",
+        "Translatedwholebookcase4pxright tocentre soil~699.5",
+        "Cleanedlasttwoinnerpostjoinstripsandprotrudingcaplinewithnativewoodpixels"
+      ],
+      "uniformResampling": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i01-provenance.json",
+      "qa": [
+        "work/brief238/i01-final-growth-qa.jpg",
+        "work/brief238/i01-bookcase-white-final-qa.png",
+        "work/brief238/i01-bookcase-black-final-qa.png",
+        "work/brief238/i01-composite-final-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I01-ASSET-MARGINS",
+          "severity": "should fix/source constraint conflict",
+          "detail": "Exactfloor1920leaves80pxbottom,less than160px8%margin;sourcecontradiction238-I01-ASSET-MARGINS. Exactguideprioritised."
+        },
+        {
+          "id": "238-I01-GROWTH-CLEARANCE",
+          "severity": "learning/build blocker",
+          "detail": "Observed native350pxgrowth composite at t5:middle/bottom shoots cross the shelf boards and project into the pot above.420px soil spacing minus the pot/shelf height leaves insufficient350pxclearance. Exact guide soilpositions are preserved. Root needs a physical staging/geometry decision before a full visual or recording pass;do not silently change C offsets or14px/cm."
+        }
+      ]
+    },
+    {
+      "name": "ma12-bean-shoot-v1.png",
+      "designs": [
+        "i01"
+      ],
+      "description": " (600 × 800 px): one young climbing bean shoot, upright and centred: a green stem with four to six leaves and a curling tip, as it looks above the soil (no roots, no soil, no pot). The stem's base is cut straight across at the bottom edge of the painted area, at y = 760 px, centred on x = 300; the tip at about y = 60 px (700 px tall, read as 50 cm at 14 px per cm). It must read well when only its top part shows above a pot. Codex reports the stem base point and the tip point in file pixels.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-bean-shoot-v1.png",
+      "state": "delivered-build-clearance-blocker",
+      "nativeSizeTarget": [
+        600,
+        800
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "stemBase": [
+          300,
+          760
+        ],
+        "topmostTipY": 60,
+        "heightBaseToTip": 700,
+        "expectedHeight": 700,
+        "measurementUncertaintyPx": 1
+      },
+      "generatorSource": "C:/Users/kygs/.codex/generated_images/01a1b24b-b35d-73a2-91c3-6120d9aa4344/exec-89b765a5-395e-468d-b209-4ad6866ef99c.png",
+      "generatorNativeSize": [
+        1086,
+        1448
+      ],
+      "nativeSize": [
+        600,
+        800
+      ],
+      "sha256": "c417fdf2582e6617c9329b5917a6f991a2578af46a993f7b44852ec5dcab2552",
+      "alphaBox": [
+        123,
+        60,
+        477,
+        762
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Uniformscaleabout.54475to592x789,preservedaspect",
+        "Padded/translatedto600x800at(14,3),base~(300,760),tip~y60"
+      ],
+      "uniformResampling": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i01-provenance.json",
+      "qa": [
+        "work/brief238/i01-final-growth-qa.jpg",
+        "work/brief238/i01-bookcase-white-final-qa.png",
+        "work/brief238/i01-bookcase-black-final-qa.png",
+        "work/brief238/i01-composite-final-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I01-ASSET-MARGINS",
+          "severity": "should fix/source constraint conflict",
+          "detail": "Base760leaves40pxbottom,less than64px8%margin;tip60also4pxshortof64. Sourcecontradictionalreadyreported."
+        },
+        {
+          "id": "238-I01-GROWTH-CLEARANCE",
+          "severity": "learning/build blocker",
+          "detail": "Observed native350pxgrowth composite at t5:middle/bottom shoots cross the shelf boards and project into the pot above.420px soil spacing minus the pot/shelf height leaves insufficient350pxclearance. Exact guide soilpositions are preserved. Root needs a physical staging/geometry decision before a full visual or recording pass;do not silently change C offsets or14px/cm."
+        }
+      ]
+    },
+    {
+      "name": "ma12-starter-jar-v1.png",
+      "designs": [
+        "i02"
+      ],
+      "description": " (1200 × 1800 px): one empty, clear, straight-sided glass jar seen exactly side-on, standing upright and centred, open at the top with no lid, a thick glass base and a plain rim; clear glass with light edge highlights only, so a painted fill can show inside it. **Paint the inside to this guide:** the inner floor at y = 1560 px and the inner rim at y = 300 px (1260 px of inner height, which the build reads as 14 cm, 90 px per cm); the inner walls vertical at x = 260 and x = 940 px (680 px wide) from floor to rim. Codex reports, in file pixels, the inner floor, the inner rim and both inner walls.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-starter-jar-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1200,
+        1800
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "innerLeft": 260,
+        "innerRight": 940,
+        "innerRim": 300,
+        "insideFloor": 1560,
+        "innerHeight": 1260,
+        "pixelsPerCm": 90,
+        "definition": "Exactclearedinteriorboundary;glassreflectionedgeistranslucent,notanopaqueinkline."
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f7a41670-4b2f-4f12-9e56-b07e12358c66.png",
+      "generatorNativeSize": [
+        1024,
+        1536
+      ],
+      "nativeSize": [
+        1200,
+        1800
+      ],
+      "sha256": "c09463bcf703a76d2bf047139fecfb9d9883073716d6e287a2070243643d0a0f",
+      "alphaBox": [
+        186,
+        244,
+        1013,
+        1656
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "aperturePixelChecks": {
+        "leftWall259y900": 224,
+        "inside260y900": 0,
+        "inside939y900": 0,
+        "rightWall940y900": 249,
+        "floorCentre1560": 249
+      },
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Uniformaspect-preservingscale1.13to1157x1736,translated(20,127)",
+        "Removed21nativecompositeemptybodyrowsand83flatglassbaserows;intactrim/basecurvesretained,nopixelstretching",
+        "Clearedinteriorrectangle260/940/300/1560toexactguide,includingunwantedgeneratedmeniscus;transparentwater-freeinterior",
+        "Replacedresidualside-meniscushooksat420..465withsame-widthstraightglasspixelsfrom500..545"
+      ],
+      "uniformResampling": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i02-provenance.json",
+      "qa": "work/brief238/i02-final-overlay-qa.jpg",
+      "findings": []
+    },
+    {
+      "name": "ma12-starter-fill-v1.png",
+      "designs": [
+        "i02"
+      ],
+      "description": " (1200 × 1800 px, the same canvas and framing as plate 1): the jar's contents only, as if the jar were full to the rim: a creamy, pale beige sourdough starter with small bubbles throughout and a few larger bubbles against the glass, painted exactly inside the jar's inner walls (x = 260 to 940) from the inner floor (y = 1560) up to the inner rim (y = 300), with a flat top edge at y = 300 (the build cuts it lower with a domed edge). No jar painted on this plate; transparent everywhere outside the contents. Placed over plate 1 at the same position, its edges must sit exactly on the inner walls and floor.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-starter-fill-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1200,
+        1800
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "contentsBox": [
+          260,
+          300,
+          940,
+          1560
+        ],
+        "reveal5cmTop": 1110,
+        "reveal11cmTop": 570
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-ee1283ec-4114-4c4b-92c5-e2fef06874a6.png",
+      "generatorNativeSize": [
+        1024,
+        1536
+      ],
+      "nativeSize": [
+        1200,
+        1800
+      ],
+      "sha256": "3379481aeb0fa1b8d5ddc22d0467ff5f27f638cc454ad34e41f47801b9324992",
+      "alphaBox": [
+        260,
+        300,
+        940,
+        1560
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "aperturePixelChecks": null,
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Croppednativegeneratedbubbledstartertexture680x1260withoutresizing",
+        "Placedonlycontentsat(260,300)on1200x1800RGBAcanvas;outsidealpha0"
+      ],
+      "uniformResampling": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i02-provenance.json",
+      "qa": "work/brief238/i02-final-overlay-qa.jpg",
+      "findings": []
+    },
+    {
+      "name": "ma12-phone-dock-v1.png",
+      "designs": [
+        "i03"
+      ],
+      "description": " (1200 × 2000 px): one modern smartphone standing upright in portrait in a plain, low charging dock, seen straight on and centred; a thin charging cable leaves the back of the dock and curves away to the lower right, ending off the dock (no plug or wall shown). **The screen is blank and evenly dark** (a coded display is drawn on it), a flat rectangle with slightly rounded corners: paint it from x = 330 to x = 870 and from y = 330 to y = 1390 px (540 × 1060 px), with the phone's frame around it. Codex reports, in file pixels, the screen's four edges and the dock's base line.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-phone-dock-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1200,
+        2000
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "screenBox": [
+          330,
+          330,
+          870,
+          1390
+        ],
+        "screenCornerRadius": 32,
+        "dockBaseLineApprox": 1540,
+        "dockUncertaintyPx": 2
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-1efd84a3-ab02-41e1-81e1-91697f92fa9f.png",
+      "generatorNativeSize": [
+        971,
+        1619
+      ],
+      "nativeSize": [
+        1200,
+        2000
+      ],
+      "sha256": "bafc8cee74563a8bbed55bf5ba0ea42b757ccb9d9308a862a36443ce8cba3ff2",
+      "alphaBox": [
+        272,
+        302,
+        1021,
+        1543
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Removed57rowsfromblankmiddlescreen/devicebody;retainedothernativepixels",
+        "Transparentpadding/translation(117,139)to1200x2000",
+        "Matchedblankdarkrounded-screenexactlyto330/870/330/1390guidesusingauthorisedpixeloutlines"
+      ],
+      "wholePlateResized": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i03-provenance.json",
+      "qa": [
+        "work/brief238/i03-phone-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-fundraiser-board-v1.png",
+      "designs": [
+        "i04"
+      ],
+      "description": " (900 × 2400 px): one hand-made school fundraising sign, standing upright and centred on two short timber legs: a tall painted plywood board cut in the shape of a big thermometer (a long rounded-top column and a round bulb at the bottom), painted white with a soft colourful border, and a long, empty, clear tube running up its middle into the empty bulb (the build fills it with coded red from the bulb up). **Paint the empty tube to this guide:** the tube's inside straight and vertical from x = 390 to x = 510 px (120 px wide), its inner top at y = 260 px and its inner bottom where it meets the bulb at y = 1900 px (1640 px of tube, which the build reads as $0 at the bottom to $7000 at the top); the bulb's inside a circle centred at (450, 2040) with radius 120 px. No numbers, tick marks or words anywhere on the board (the build adds a coded scale beside it). Codex reports, in file pixels, the tube's inner edges, top and bottom, and the bulb's centre and radius.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-fundraiser-board-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        900,
+        2400
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "tubeInsideBox": [
+          390,
+          260,
+          510,
+          1900
+        ],
+        "bulbCentre": [
+          450,
+          2040
+        ],
+        "bulbInnerRadius": 120,
+        "neckBox": [
+          438,
+          1900,
+          462,
+          1923
+        ],
+        "halfHeightFillY": 1080,
+        "tubeSpan": 1640
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-31452984-b832-4c07-ae6c-8bb52e39643f.png",
+      "generatorNativeSize": [
+        819,
+        1920
+      ],
+      "nativeSize": [
+        900,
+        2400
+      ],
+      "sha256": "f773f04fc6c53764aab08a144b25a70c77badfc34fe7bdb377c22f6c87e2bb7b",
+      "alphaBox": [
+        271,
+        193,
+        621,
+        2207
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Uniformaspect-preservingreductionto541x1267",
+        "Extendedstraightplywoodbody801pxwithgeneratedwhitewood/borderpixels;noexistingprofiledeformed",
+        "Matchedinteriorstencilwithgeneratedwhiteplywoodtextureandpaintedtealedge;exactalphaopeningguides",
+        "Addedshortempty24pxwideneckacrossspecified20pxgap;noendpoints shifted"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i04-provenance.json",
+      "qa": [
+        "work/brief238/i04-fill-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I04-TUBE-BULB-CONNECTION",
+          "severity": "build follow-up",
+          "detail": "Artwork has neck438..462,y1900..1923. Coded fill must include it;no endpoint guide moved."
+        }
+      ]
+    },
+    {
+      "name": "ma12-solar-panels-v1.png",
+      "designs": [
+        "i05"
+      ],
+      "description": " (2000 × 1200 px): one free-standing array of six dark blue solar panels (two rows of three) on a simple galvanised steel frame, seen from the front and slightly above so the panels' faces and their thin silver grid lines show, tilted back towards the sky, standing on short legs on a thin strip of grass. The panels' face must read as glass-covered cells (a soft sky reflection is fine), and the whole array must read clearly at 560 px wide. Codex reports, in file pixels, the array's outer corners and the grass line.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-solar-panels-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2000,
+        1200
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "arrayOuterCornersClockwise": [
+          [
+            408,
+            244
+          ],
+          [
+            1584,
+            244
+          ],
+          [
+            1763,
+            854
+          ],
+          [
+            235,
+            854
+          ]
+        ],
+        "grassLineYApprox": 1034,
+        "measurementUncertaintyPx": 4,
+        "panelCount": 6,
+        "arrangement": [
+          2,
+          3
+        ]
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-603bb899-ea31-43f6-a682-9d1465989fa9.png",
+      "generatorNativeSize": [
+        1619,
+        971
+      ],
+      "nativeSize": [
+        2000,
+        1200
+      ],
+      "sha256": "5e11a3da39b82489a92affab38817887fe6f12707f630ba1260785034900f8ac",
+      "alphaBox": [
+        221,
+        244,
+        1776,
+        1039
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Transparentpadding190pxleft/191right,114top/115bottomonly;noresizing/stretching"
+      ],
+      "wholePlateResized": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i05-provenance.json",
+      "qa": [
+        "work/brief238/i05-solar-sun-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-rain-gauge-v1.png",
+      "designs": [
+        "i06"
+      ],
+      "description": " (800 × 2000 px): one backyard rain gauge, standing upright and centred: a clear plastic cylinder with a wide funnel top, clipped to the top of a short timber post that stands in a small tuft of grass. The cylinder is empty and see-through so a coded water level can show inside it, and its face carries no printed scale (the build draws one beside it). **Paint the inside of the cylinder to this guide:** the inner floor at y = 1500 px and the inner top (just under the funnel) at y = 420 px (1080 px of inner height); the inner walls vertical at x = 300 and x = 500 px (200 px wide). Codex reports, in file pixels, the inner floor, the inner top and both inner walls.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-rain-gauge-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        800,
+        2000
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "innerLeft": 300,
+        "innerRight": 500,
+        "innerTop": 420,
+        "insideFloor": 1500,
+        "innerHeight": 1080,
+        "halfHeightFillY": 960
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-2fe6ae6e-4f27-4622-86eb-00a215353eef.png",
+      "generatorNativeSize": [
+        793,
+        1983
+      ],
+      "nativeSize": [
+        800,
+        2000
+      ],
+      "sha256": "f53f2beb3257063a2e3af9bf7186e080798c5938d8bf88c266ad32e3889663ca",
+      "alphaBox": [
+        85,
+        169,
+        713,
+        1840
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Transparentpadding(3,8)to800x2000;retainednativepixels",
+        "Removed18rowsfromstraightcylinderand54rowsfromlowerpost,withoutresizing/stretching",
+        "Clearedexactcylinderinterior300/500/420/1500toalpha0forcodedwater;noalteredmathprofile"
+      ],
+      "wholePlateResized": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i06-provenance.json",
+      "qa": [
+        "work/brief238/i06-rain-cloud-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-bathtub-v1.png",
+      "designs": [
+        "i07"
+      ],
+      "description": " (2400 × 1200 px): one white freestanding bath with straight, upright inner walls, seen exactly side-on and empty, with its near side drawn as a clean cut-away section so the inside of the bath shows (the build draws the water inside it); a chrome mixer tap and spout standing at the left end with the spout's mouth above the rim, pointing down into the bath; a plug hole at the bottom near the right end with its plug lying beside it on a short chain (so the plug is out). **Paint the inside to this guide:** the inner floor flat at y = 900 px and the inner rim at y = 420 px (480 px of inner depth); the inner walls vertical at x = 420 and x = 2000 px (1580 px long). Codex reports, in file pixels, the inner floor, the inner rim, both inner walls, the centre of the spout's mouth and the centre of the plug hole.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-bathtub-v1.png",
+      "state": "held-design-blocker",
+      "nativeSizeTarget": [
+        2400,
+        1200
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": null
+    },
+    {
+      "name": "ma12-car-park-entry-v1.png",
+      "designs": [
+        "i08"
+      ],
+      "description": " (2400 × 1500 px): the entrance of a four-level concrete multi-storey car park at a suburban shopping centre, seen from a low three-quarter front view. Open concrete decks with a low parapet on each level, a few parked cars of different colours visible on the decks (side and rear views, small, no people, no drivers), one entry lane at ground level with a raised red-and-white boom gate and a small ticket pillar (no screen text), and above the entry lane **a blank, dark, rectangular sign panel** (about 520 × 180 px in the file, face-on enough to hold a coded counter; no text or digits). A narrow strip of footpath and kerb at the base ending in a soft, irregular transparent edge; no sky, trees or other buildings. Codex reports, in file pixels: the four corners of the sign panel's face, the centre of the entry lane at ground level, and the direction (in degrees from the horizontal) along which a car would drive in.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-car-park-entry-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2400,
+        1500
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "signFaceCornersClockwise": [
+          [
+            881,
+            834
+          ],
+          [
+            1401,
+            834
+          ],
+          [
+            1401,
+            1014
+          ],
+          [
+            881,
+            1014
+          ]
+        ],
+        "signFaceSize": [
+          520,
+          180
+        ],
+        "entryLaneGroundCentre": [
+          1182,
+          1260
+        ],
+        "driveInScreenAngleDegrees": -90,
+        "screenAngleConvention": "degreesfromrightwardhorizontal,+y down,soforwardintobuildingisupward",
+        "groundAndAngleUncertainty": "about10px/5degrees",
+        "levels": 4
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-c1f3f97f-a114-4732-a501-ce7988760adf.png",
+      "generatorNativeSize": [
+        1586,
+        992
+      ],
+      "nativeSize": [
+        2400,
+        1500
+      ],
+      "sha256": "b7c03126f1a8e8144e73b108675a04ee5476cd6a34967ab89c898a1cf7a3bb4c",
+      "alphaBox": [
+        224,
+        142,
+        2169,
+        1377
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise",
+        "Uniformaspect-preservingscale1.33to2109x1319,paddedat(145,90)to2400x1500",
+        "Matchedblankface-onsign520x180withsimpledarkpaintedpanelandthinframe,coveringonlypriorblankpanel/parapet;gate remainsclear"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i08-provenance.json",
+      "qa": [
+        "work/brief238/i08-carpark-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-frost-thermometer-v1.png",
+      "designs": [
+        "i09"
+      ],
+      "description": " (1000 × 2400 px, portrait): a long outdoor garden thermometer fixed upright to the top of a weathered timber fence post on a frosty morning, seen straight on. The thermometer is a white enamel backing board (about 160 px wide in the file) with **evenly spaced plain tick marks only (eleven major ticks with four minor ticks between each pair; no numbers, letters or degree signs)** and a clear glass tube with a round bulb at the bottom; **the tube and bulb are painted empty and clear** (no coloured liquid: a coded column is drawn inside). White frost crystals on the top of the post and the board's upper edge, a few frosted grass tufts at the base, the ground patch ending in a soft, irregular transparent edge; no sky, fence rails beyond the post, buildings or people. Codex reports, in file pixels: the centre of the bulb, the tube's inner centre line top and bottom points, and the y-coordinates of the eleven major ticks (they must be evenly spaced to within 2 px).",
+      "exists": false,
+      "path": "public/assets/maths/ma12-frost-thermometer-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1000,
+        2400
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "backingBox": [
+          418,
+          430,
+          578,
+          1670
+        ],
+        "bulbCentre": [
+          498,
+          1577
+        ],
+        "bulbInnerRadius": 22,
+        "tubeCentreTop": [
+          498.5,
+          505
+        ],
+        "tubeCentreBottom": [
+          498.5,
+          1560
+        ],
+        "majorTickYs": [
+          532,
+          629,
+          726,
+          823,
+          920,
+          1017,
+          1114,
+          1211,
+          1308,
+          1405,
+          1502
+        ],
+        "majorSpacingPx": 97,
+        "minorTickYs": [
+          551,
+          571,
+          590,
+          610,
+          648,
+          668,
+          687,
+          707,
+          745,
+          765,
+          784,
+          804,
+          842,
+          862,
+          881,
+          901,
+          939,
+          959,
+          978,
+          998,
+          1036,
+          1056,
+          1075,
+          1095,
+          1133,
+          1153,
+          1172,
+          1192,
+          1230,
+          1250,
+          1269,
+          1289,
+          1327,
+          1347,
+          1366,
+          1386,
+          1424,
+          1444,
+          1463,
+          1483
+        ],
+        "minorTicksPerInterval": 4,
+        "codedTemperatureMapping": "y=1017-97*T;top+5,bottom-5",
+        "testColumnTops": {
+          "minus2": 1211,
+          "plus1": 920
+        }
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-ededa9de-e3ae-4d8b-a59d-65217b164fcc.png",
+      "generatorNativeSize": [
+        819,
+        1920
+      ],
+      "nativeSize": [
+        1000,
+        2400
+      ],
+      "sha256": "698614605bd02577fda5aa3fed1918bffdb1650ee88423eeef652899582cc818",
+      "alphaBox": [
+        155,
+        259,
+        843,
+        2130
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removedalpha<8noise;nativepadding(90,240)to1000x2400",
+        "Narrowedenamelbackingto160pxbyreplacingouterwhitebandswithgeneratedtimbertexture;preservedfrost/post/tube/bulbart",
+        "Replacedgeneratedtickswith11majorsat97pxspacingand4minorsperintervalusingauthorisedlocalpixelmarks",
+        "Clearedconnectedtubebulbinteriorforcodedredcolumn;deliveredimagehasnoredfill/numbers"
+      ],
+      "wholePlateResized": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i09-provenance.json",
+      "qa": [
+        "work/brief238/i09-thermometer-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-lift-shaft-v1.png",
+      "designs": [
+        "i10"
+      ],
+      "description": " (1200 × 2800 px, portrait): a cutaway of a lift shaft inside a building, seen straight on, as if the front wall were removed: two plain concrete side walls with steel guide rails running the full height, a counterweight rail on one side, and **four evenly spaced floor landings** (ground and three floors above), each a thin concrete slab edge with a closed steel landing door frame at the back (doors closed, no numbers, no buttons with symbols, no signs). The shaft's inside is empty (no lift car: the reused `physics/phys-y11-lift-car-v1.png` rides in it) and wide enough for that car at 380 px wide; the spacing between landings is about 560 px. A short base slab at the bottom ending in a soft transparent edge; no sky, roof or outside walls. Codex reports, in file pixels: the y-coordinate of each landing's floor line (they must be evenly spaced to within 3 px), the x-coordinates of the shaft's inner walls, and the scale at which the reused lift car fits one floor.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-lift-shaft-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1200,
+        2800
+      ],
+      "profileNeverWarp": true,
+      "actualMeasurements": {
+        "landingFloorYsTopToBottom": [
+          1056,
+          1399,
+          1737,
+          2092
+        ],
+        "measurementUncertaintyPx": 2,
+        "landingPitchPx": [
+          343,
+          338,
+          355
+        ],
+        "targetPitchPx": 560,
+        "spacingTolerancePx": 3,
+        "profileTolerancePass": false,
+        "shaftInnerWallXs": [
+          374,
+          827
+        ],
+        "carFit": {
+          "sourceNativeSize": [
+            1400,
+            2000
+          ],
+          "scale": 0.19,
+          "canvasSize": [
+            266,
+            380
+          ],
+          "visibleBodyHeightPx": 311.6,
+          "placementX": 470,
+          "canvasTopYFormula": "landingFloorY-345.8",
+          "at380pxCanvasWidth": "visible car body exceeds shortest landing pitch;use0.19scale or builder fit"
+        }
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-bc577a8b-55ad-4696-91fe-711cbd065198.png",
+      "generatorNativeSize": [
+        821,
+        1915
+      ],
+      "nativeSize": [
+        1200,
+        2800
+      ],
+      "sha256": "c49c66e7a2db852d6ce44dd6fda42a3b0d2bf0d8666962e1c4f1539d69464397",
+      "alphaBox": [
+        321,
+        593,
+        880,
+        2197
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Padded native821x1915 at(190,440) to1200x2800;no scaling,warping or moving landings"
+      ],
+      "wholePlateResized": false,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i10-provenance.json",
+      "qa": [
+        "work/brief238/i10-lift-car-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I10-PLATE-LANDINGS",
+          "severity": "profile-tolerance-miss",
+          "detail": "Measured landing floor Ys1056,1399,1737,2092;pitch343,338,355px,not560px and not equal within3px. No warp applied. Builder fit required."
+        }
+      ]
+    },
+    {
+      "name": "ma12-beach-entry-pool-v1.png",
+      "designs": [
+        "i11"
+      ],
+      "description": " (2400 × 1500 px): a small rectangular backyard pool seen from a high three-quarter view, filled with clear blue water, with pale stone coping and a narrow timber deck strip on two sides. At one end a vertical tiled wall drops to a short flat deep section; from there the floor rises in a smooth, gently curving slope (concave down: steep at first, flattening as it nears the surface) up to a shallow \"beach\" edge where the water meets the floor at the far end. The slope must be visible through the water. No people, toys, ladders, signs or furniture; the ground patch ends in a soft transparent edge; no sky, fences or houses.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-beach-entry-pool-v1.png",
+      "state": "held-design-blocker",
+      "nativeSizeTarget": [
+        2400,
+        1500
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": null
+    },
+    {
+      "name": "ma12-pool-cutaway-v1.png",
+      "designs": [
+        "i11"
+      ],
+      "description": " (1600 × 760 px): the same pool cut straight across lengthwise and seen exactly side-on, as a clean cutaway: the vertical deep-end wall on the left, a flat deep-end floor, then the rising ramp, then the deck. **No water** (the water is drawn by code). The concrete shell is shown in section (grey concrete with a thin pale tile line on the inner surface), with soil texture beyond it. **Paint the inner surface to the profile table in the design's Decisions (Revision 2) at 400 px per metre**: wall x = 0 from y = 0 up to the coping at y = 1.15 m; floor y = 0 from x = 0 to x = 1 m; ramp y = ln x through (1, 0), (1.25, 0.223), (1.5, 0.405), (2, 0.693), (2.5, 0.916), (e ≈ 2.718, 1); deck at y = 1.15 m from x = e to x = 3.2 m. Each table point within 4 px. Codex reports, in file pixels: the origin (the inside corner where the wall meets the floor), the measured pixel position of each table point, and the coping and deck lines.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-pool-cutaway-v1.png",
+      "state": "held-design-blocker",
+      "nativeSizeTarget": [
+        1600,
+        760
+      ],
+      "profileNeverWarp": true,
+      "actualMeasurements": null
+    },
+    {
+      "name": "ma12-garden-cut-fill-v1.png",
+      "designs": [
+        "i12"
+      ],
+      "description": " (1600 × 1000 px): a side cross-section of garden ground along a path, as if cut straight down: dark brown soil in section with small stones and fine roots, a thin layer of short grass along the top surface, and a straight taut string line between two timber pegs marking the planned level, running across the full 2 m. **The ground surface is painted to the profile table in the design's Decisions (Revision 2) at 600 px per metre, equal units**: a hollow at the left reaching 0.540 m below the string at the left peg, rising through the string line at the centre, to a matching mound 0.540 m above the string at the right peg (y = x³ cos x). Soil continues below to a soft, irregular transparent lower edge; no sky, tools, wheelbarrows or people. Codex reports, in file pixels: the string line's left and right ends and the measured surface point at each table x.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-garden-cut-fill-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1600,
+        1000
+      ],
+      "profileNeverWarp": true,
+      "actualMeasurements": {
+        "stringEnds": [
+          [
+            250,
+            467
+          ],
+          [
+            1346,
+            467
+          ]
+        ],
+        "stringUncertaintyPx": 3,
+        "surfaceSamples": [
+          {
+            "mathX": -1.0,
+            "samplePixel": [
+              280,
+              661
+            ],
+            "endpointOccluded": true,
+            "targetPixel": [
+              200,
+              824
+            ]
+          },
+          {
+            "mathX": -0.75,
+            "samplePixel": [
+              387,
+              623
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              350,
+              685.4
+            ]
+          },
+          {
+            "mathX": -0.5,
+            "samplePixel": [
+              524,
+              532
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              500,
+              566
+            ]
+          },
+          {
+            "mathX": -0.25,
+            "samplePixel": [
+              661,
+              479
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              650,
+              509
+            ]
+          },
+          {
+            "mathX": 0.0,
+            "samplePixel": [
+              798,
+              465
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              800,
+              500
+            ]
+          },
+          {
+            "mathX": 0.25,
+            "samplePixel": [
+              935,
+              457
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              950,
+              491
+            ]
+          },
+          {
+            "mathX": 0.5,
+            "samplePixel": [
+              1072,
+              417
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              1100,
+              434
+            ]
+          },
+          {
+            "mathX": 0.75,
+            "samplePixel": [
+              1209,
+              324
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              1250,
+              314.6
+            ]
+          },
+          {
+            "mathX": 1.0,
+            "samplePixel": [
+              1316,
+              243
+            ],
+            "endpointOccluded": true,
+            "targetPixel": [
+              1400,
+              176
+            ]
+          }
+        ],
+        "surfaceMeasurementUncertaintyPx": 6,
+        "endpointNote": "Timber pegs obscure endpoints;surface samples are30px inside either peg,not exact endpoint claims. Centre surface overlaps string and is approximate.",
+        "originApprox": [
+          798,
+          467
+        ],
+        "actualHorizontalPxPerMetre": 548,
+        "targetPxPerMetre": 600,
+        "profileTolerancePass": false,
+        "builderFitRequired": true
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f0442bbf-b45f-437a-8b25-4bd73ff6c4c5.png",
+      "generatorNativeSize": [
+        1568,
+        1003
+      ],
+      "nativeSize": [
+        1600,
+        1000
+      ],
+      "sha256": "4e5440126169b9151f061dee2571294ad1420515d6e1f155db893dabf5dc74c7",
+      "alphaBox": [
+        162,
+        189,
+        1438,
+        867
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Uniform aspect-preserving reduction (1568, 1003) to(1411, 903),padding(94, 48);no profile deformation"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i12-provenance.json",
+      "qa": [
+        "work/brief238/i12-profiles-qa.jpg",
+        "work/brief238/i12-edge-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I12-PLATE-PROFILES",
+          "severity": "profile-tolerance-miss",
+          "detail": "Garden does not meet600px/m table;bridge opening750px versus942 and rise270px versus300. Actual samples in manifest. Builder fit required;no warp."
+        }
+      ]
+    },
+    {
+      "name": "ma12-stone-footbridge-v1.png",
+      "designs": [
+        "i12"
+      ],
+      "description": " (1400 × 900 px): a small stone garden footbridge seen exactly side-on (front elevation), one arch over a dry creek bed: fitted sandstone blocks with a flat deck and low parapet above. **The arch's opening is painted to y = cos x at 300 px per metre**: springing points 942 px apart (π m) on the creek-bed line, crown 300 px (1 m) above it, passing within 4 px of the heights 0.707 m at x = ±π/4. The opening is transparent (the coded fill sits behind it). No water, plants on the deck, signs or people. Codex reports, in file pixels: both springing points and the crown point.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-stone-footbridge-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        1400,
+        900
+      ],
+      "profileNeverWarp": true,
+      "actualMeasurements": {
+        "springingPointsApprox": [
+          [
+            326,
+            658
+          ],
+          [
+            1076,
+            658
+          ]
+        ],
+        "crownPoint": [
+          700,
+          388
+        ],
+        "quarterSamples": [
+          [
+            477,
+            444
+          ],
+          [
+            923,
+            448
+          ]
+        ],
+        "measurementUncertaintyPx": 4,
+        "targetSpringingPoints": [
+          [
+            229,
+            700
+          ],
+          [
+            1171,
+            700
+          ]
+        ],
+        "targetCrown": [
+          700,
+          400
+        ],
+        "targetQuarterPoints": [
+          [
+            464.4,
+            487.9
+          ],
+          [
+            935.6,
+            487.9
+          ]
+        ],
+        "actualOpeningWidthApprox": 750,
+        "actualCrownRiseApprox": 270,
+        "targetOpeningWidth": 942,
+        "targetCrownRise": 300,
+        "profileTolerancePx": 4,
+        "profileTolerancePass": false,
+        "builderFitRequired": true,
+        "openingAlphaInteriorSample": 0
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-66b0169c-1d14-42ce-a81f-4c6238358c3f.png",
+      "generatorNativeSize": [
+        1466,
+        1073
+      ],
+      "nativeSize": [
+        1400,
+        900
+      ],
+      "sha256": "2cd0e6fe4012b10aebedd422b3950e0b5f6a4b96b7b23a82ff07368a33d8f777",
+      "alphaBox": [
+        138,
+        197,
+        1261,
+        756
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Uniform aspect-preserving reduction (1466, 1073) to(1173, 858),padding(113, 21);no profile deformation"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i12-provenance.json",
+      "qa": [
+        "work/brief238/i12-profiles-qa.jpg",
+        "work/brief238/i12-edge-qa.jpg"
+      ],
+      "findings": [
+        {
+          "id": "238-I12-PLATE-PROFILES",
+          "severity": "profile-tolerance-miss",
+          "detail": "Garden does not meet600px/m table;bridge opening750px versus942 and rise270px versus300. Actual samples in manifest. Builder fit required;no warp."
+        }
+      ]
+    },
+    {
+      "name": "ma12-air-conditioner-v1.png",
+      "designs": [
+        "i13"
+      ],
+      "description": " (2000 × 900 px): an indoor wall-mounted split-system air conditioner (the long white indoor unit) seen from a slight angle below and to the front, mounted on a short patch of pale painted wall, its louvre flap slightly open with a few faint cool-air lines below it. **No display digits, logos, brand names or remote control**; a small blank indicator strip only. The wall patch ends in a soft, irregular transparent edge. Codex reports, in file pixels: the unit's bounding box and a clear area on the wall patch beside it (about 400 × 160 px) for a coded readout.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-air-conditioner-v1.png",
+      "state": "held-design-blocker",
+      "nativeSizeTarget": [
+        2000,
+        900
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": null
+    },
+    {
+      "name": "ma12-drainage-channel-v1.png",
+      "designs": [
+        "i13"
+      ],
+      "description": " (2000 × 1200 px): a long concrete drainage channel with a smooth, curved U-shaped (parabolic) cross-section, seen from a low three-quarter view looking along its length, so the curved end section is visible in front and the channel recedes into the distance; dry, with a thin line of damp at the bottom; short grass on both banks ending in a soft transparent edge. No water flowing, fences, signs or people. Codex reports, in file pixels: the channel's centre line at the near end and at the far end, and the near end's rim points.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-drainage-channel-v1.png",
+      "state": "held-design-blocker",
+      "nativeSizeTarget": [
+        2000,
+        1200
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": null
+    },
+    {
+      "name": "ma12-robot-vacuum-top-v1.png",
+      "designs": [
+        "i14"
+      ],
+      "description": " (800 × 800 px): a round robot vacuum cleaner seen from directly above: matt dark grey top with a lighter rim bumper, a small raised round sensor turret, one side brush visible at the front edge, and a faint shadow ring only within the plate. **No logo, brand name, buttons with symbols or text.** Its front direction is to the right (the side brush and bumper face right). Codex reports the centre point and the radius in file pixels.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-robot-vacuum-top-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        800,
+        800
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "centreApprox": [
+          379,
+          404
+        ],
+        "bodyRadiusPxApprox": 249,
+        "radiusUncertaintyPx": 5,
+        "frontDirectionDegrees": 0,
+        "sideBrushAt": "upperright;front points right"
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-c0cc653f-a5ad-4e81-9b60-3adb48686d1c.png",
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "nativeSize": [
+        800,
+        800
+      ],
+      "sha256": "e8fbb395f6d016024c0031489bad42169eea52a285878f3d0d2aba9e2c4a11bd",
+      "alphaBox": [
+        135,
+        153,
+        675,
+        656
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Uniform0.5reduction1254to627square,pad86,86"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i14-provenance.json",
+      "qa": [
+        "work/brief238/i14-art-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-hallway-floor-v1.png",
+      "designs": [
+        "i14"
+      ],
+      "description": " (2400 × 400 px): a strip of hallway floor seen from directly above: warm timber floorboards running left to right, with a white skirting board along the top edge. **Tileable horizontally** (the left and right edges join seamlessly; exempt from the side margins); transparent below the boards with at least 8 per cent clear margin there. No rugs, furniture, shoes or people.",
+      "exists": false,
+      "path": "public/assets/maths/ma12-hallway-floor-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        2400,
+        400
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "horizontalEdgeMaxRgbaDifference": 0,
+        "centralJoinMaxRgbaDifference": 0,
+        "transparentLowerMarginPx": 62,
+        "skirtingEdge": "top",
+        "boardsDirection": "horizontal"
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-5921868f-e2f0-4b89-9125-2283d2877673.png",
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "nativeSize": [
+        2400,
+        400
+      ],
+      "sha256": "5478f721eaf0c8a4dffc2432db9da47cbb53252eab6b30532021f291e9f905c7",
+      "alphaBox": [
+        0,
+        0,
+        2400,
+        338
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Uniform2172x724to1200x400;mirrorsecondcopyatx1200 to make2400x400periodicstrip"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i14-provenance.json",
+      "qa": [
+        "work/brief238/i14-art-qa.jpg"
+      ],
+      "findings": []
+    },
+    {
+      "name": "ma12-snow-post-v1.png",
+      "designs": [
+        "i14"
+      ],
+      "description": " (900 × 2000 px, portrait): a tall timber snow-depth marker post standing upright on a gentle alpine slope, seen straight on, with **evenly spaced painted tick marks and bands only (major ticks every 50 cm of a 0 to 250 cm scale; no numbers or letters)**, a small snow-gum branch in the background at one side, the ground at the post's base shown as bare, damp alpine ground (the snow is drawn by code), ending in a soft transparent edge; no sky, skiers, lifts or signs. Codex reports, in file pixels: the ground point at the post's base and the y-coordinate of each major tick (evenly spaced to within 2 px).",
+      "exists": false,
+      "path": "public/assets/maths/ma12-snow-post-v1.png",
+      "state": "delivered",
+      "nativeSizeTarget": [
+        900,
+        2000
+      ],
+      "profileNeverWarp": false,
+      "actualMeasurements": {
+        "groundPointAtPostBaseApprox": [
+          446,
+          1686
+        ],
+        "majorTickYsTopToBottom": [
+          516,
+          750,
+          984,
+          1218,
+          1452,
+          1686
+        ],
+        "majorValuesCmTopToBottom": [
+          250,
+          200,
+          150,
+          100,
+          50,
+          0
+        ],
+        "majorPitchPx": 234,
+        "tickSpacingMaxErrorPx": 0,
+        "postCentreX": 446,
+        "cmToYMapping": "y=1686-4.68*depthCm",
+        "groundMeasurementUncertaintyPx": 4
+      },
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-0f64912a-1f06-4332-811a-94cbc81b722a.png",
+      "generatorNativeSize": [
+        897,
+        1752
+      ],
+      "nativeSize": [
+        900,
+        2000
+      ],
+      "sha256": "42a801e8c3b32a49d61b7beee84ba9ae355d49c6607a2193c4d8d27165c84844",
+      "alphaBox": [
+        93,
+        266,
+        805,
+        1757
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visualQAInspected": true,
+      "localFinishing": [
+        "Removed alpha<8 noise",
+        "Clonegeneratedwoodtextureover6unevenblackmarks",
+        "Uniform0.9reduction897x1752to807x1577,pad46,210",
+        "Paint6evenlyspacedmajorbandswith234pxpitch;no text or snow"
+      ],
+      "wholePlateResized": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i14-provenance.json",
+      "qa": [
+        "work/brief238/i14-art-qa.jpg"
+      ],
+      "findings": []
+    }
+  ],
+  "authorisedLocalFinishing": "User explicitly approved local pixel edits,including outlines,ratios,transparent padding and tile seams. Profiles never warped.",
+  "sourceInventory": "work/brief238/asset-brief-inventory.json",
+  "anchorComparison": "docs\\production\\claude-pm\\checks\\brief238-anchor-comparison.md",
+  "counts": {
+    "delivered": 22,
+    "held": 5,
+    "pending": 0
+  }
+}

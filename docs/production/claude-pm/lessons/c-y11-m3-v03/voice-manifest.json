@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m3-v03.md",
+  "sourceSha256": "c3e38b11839b1a1a42b70c2249b5d63665327e40a5147b6fb08dfc3e78a1349a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-lead",
+      "text": "Last time, two clear solutions, silver nitrate and sodium chloride, made a white solid. The same trick solves a real lab problem. After an experiment, the waste beaker can hold dissolved lead ions. They're poisonous, and the solution still looks perfectly clear. Add the right solution, and the lead comes out as a solid you can filter off. But not every pair of clear solutions makes a solid. So how could you know which ones will?",
+      "audioFile": "public/audio/chem-y11-m3-v03/hook-lead.wav"
+    },
+    {
+      "id": "ions-in-bottles",
+      "text": "Start with what's in each bottle. A dissolved ionic compound isn't whole units floating around. It's separate ions, each surrounded by water. Silver nitrate solution is silver ions and nitrate ions. Sodium chloride solution is sodium ions and chloride ions. Mix them, and you have four kinds of ions in one tube. With salts like these, the only new thing that can happen is that ions find new partners.",
+      "audioFile": "public/audio/chem-y11-m3-v03/ions-in-bottles.wav"
+    },
+    {
+      "id": "precipitate-spectators",
+      "text": "Silver ions and chloride ions attract each other more strongly than the water can keep them apart, so they lock together into solid silver chloride. A solid that forms when two solutions are mixed is a precipitate, and this is a precipitation reaction. Sodium and nitrate ions stay dissolved, exactly as they were. They take no part, so they're called spectator ions. They're in the tube, but they're not in the reaction.",
+      "audioFile": "public/audio/chem-y11-m3-v03/precipitate-spectators.wav"
+    },
+    {
+      "id": "spotting-plate",
+      "text": "Which pairs lock together was found by experiment, and you can see the pattern on a small scale. Put one drop of each of two solutions into a well of a spotting plate, and record which pairs go cloudy. Wear safety glasses, use tiny volumes, and put the waste in the container your teacher labels. Silver nitrate stains skin, and lead and barium salts are toxic, so those are teacher demonstrations. Now look down the results. None of the solids contain sodium or nitrate.",
+      "audioFile": "public/audio/chem-y11-m3-v03/spotting-plate.wav"
+    },
+    {
+      "id": "nagsag",
+      "text": "Patterns like that are summed up as the solubility rules. A handy way to remember the soluble groups is NAGSAG. Nitrates, ammonium and Group 1 compounds are almost always soluble. Sulfates are soluble, except with barium, lead and calcium. Acetates are soluble. And Group 17, the halides chloride, bromide and iodide, are soluble except with silver and lead. Everything else, like carbonates and hydroxides, is mostly insoluble, unless it's paired with Group 1 or ammonium.",
+      "audioFile": "public/audio/chem-y11-m3-v03/nagsag.wav"
+    },
+    {
+      "id": "method-baso4",
+      "text": "So here's the method. List the ions, swap partners, and check both new pairs against the rules. Try barium chloride and sodium sulfate. Swapping gives barium sulfate and sodium chloride. Sodium chloride is Group 1, so it's soluble. Barium sulfate is a sulfate with barium, one of the exceptions, so it's the white precipitate. Balanced, barium chloride plus sodium sulfate gives barium sulfate solid, plus two sodium chloride, aqueous.",
+      "audioFile": "public/audio/chem-y11-m3-v03/method-baso4.wav"
+    },
+    {
+      "id": "full-ionic",
+      "text": "That equation hides what's really in the tube. So write every aqueous ionic compound as its separate ions. On the left, a barium ion, two chloride ions, two sodium ions and a sulfate ion. On the right, sodium chloride splits too, but barium sulfate is a solid, so it stays whole. That's the full ionic equation. Never split the precipitate, because in a solid the ions aren't free.",
+      "audioFile": "public/audio/chem-y11-m3-v03/full-ionic.wav"
+    },
+    {
+      "id": "net-ionic",
+      "text": "Now find the ions that are exactly the same on both sides: two sodium ions and two chloride ions. They're the spectators, so cross them out. What's left is the net ionic equation: barium ion plus sulfate ion gives barium sulfate solid. Check the charges. Plus two and minus two make zero, matching the neutral solid. That one line is the only change that actually happened.",
+      "audioFile": "public/audio/chem-y11-m3-v03/net-ionic.wav"
+    },
+    {
+      "id": "lead-iodide",
+      "text": "Here's one where the charges matter. Mix lead nitrate and potassium iodide. Potassium nitrate is soluble, but lead with a halide is an exception, so lead iodide is a bright yellow precipitate. A lead ion is plus two and iodide is minus one, so the formula is P b I two. That's why the equation needs two potassium iodides, and why the net ionic equation is lead ion plus two iodide ions gives lead iodide solid.",
+      "audioFile": "public/audio/chem-y11-m3-v03/lead-iodide.wav"
+    },
+    {
+      "id": "prediction-no-ppt",
+      "text": "Quick prediction. Sodium sulfate and potassium nitrate. Will a solid form? Swapping gives sodium nitrate and potassium sulfate, and both are Group 1 compounds, so both are soluble. Nothing forms. Every ion is a spectator, so there's no net ionic equation. Write no precipitate.",
+      "audioFile": "public/audio/chem-y11-m3-v03/prediction-no-ppt.wav"
+    },
+    {
+      "id": "lead-removal",
+      "text": "Now back to the lead waste. You want a solution whose negative ion makes an insoluble compound with lead, while everything else stays dissolved. Sodium sulfate works. Sodium stays in solution, and lead sulfate precipitates, so it can be filtered off. Lead ion plus sulfate ion gives lead sulfate solid. One catch, though. Too much sodium sulfate leaves extra ions in the water, so the amount has to be controlled.",
+      "audioFile": "public/audio/chem-y11-m3-v03/lead-removal.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's the line to remember. Swap partners, check both. Then for the equation, split only the aqueous, and cross out what's the same on both sides.",
+      "audioFile": "public/audio/chem-y11-m3-v03/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Iron three chloride solution is mixed with sodium hydroxide solution. Name the precipitate, and write the net ionic equation. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Swap partners: iron three hydroxide and sodium chloride. Sodium chloride is soluble. Hydroxides are mostly insoluble, and iron isn't an exception, so iron three hydroxide forms, a rust-brown solid. Iron is plus three, so it needs three hydroxides: iron three ion plus three hydroxide ions gives iron three hydroxide solid. Writing the product as separate ions again is wrong, because the precipitate is never split.",
+      "audioFile": "public/audio/chem-y11-m3-v03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A water sample contains dissolved copper ions, along with sodium and nitrate ions. Which solution would remove the copper as a precipitate: sodium nitrate, sodium hydroxide or potassium chloride? Justify your choice. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Sodium hydroxide. Hydroxides are mostly insoluble and copper isn't an exception, so pale blue copper hydroxide forms, while sodium stays dissolved. Sodium nitrate only adds soluble ions. Potassium chloride is the trap: chlorides are soluble except with silver and lead, so copper chloride stays dissolved.",
+      "audioFile": "public/audio/chem-y11-m3-v03/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So when two salt solutions like these mix, the ions swap partners, and the rules tell you whether a new pair stays dissolved or comes out as a solid. So far, our products have stayed in the tube. When a fuel burns, the products leave as gases you can't see. Here's the same burner gas burning two ways: a blue flame, and a yellow, smoky one. Same fuel, so are the products the same? How do oxygen supply and fuel affect combustion products?",
+      "audioFile": "public/audio/chem-y11-m3-v03/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m3-v03/key-notes.wav"
+    }
+  ]
+}

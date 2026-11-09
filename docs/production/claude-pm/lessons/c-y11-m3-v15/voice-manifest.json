@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m3-v15.md",
+  "sourceSha256": "8a86cb0020544c22143e859f3706e13039738e8a2bab0f525d1205ca389c00c4",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Two more ways to speed up a reaction. First, crush the chips. Here's one gram of marble chips, and one gram of the same marble ground into powder. So, quick prediction. Using the memory line from last time, which lever does crushing push? Hit often, hit hard, or hit right?",
+      "audioFile": "public/audio/chem-y11-m3-v15/hook-prediction.wav"
+    },
+    {
+      "id": "surface-only",
+      "text": "Hit often. In a solid, only the particles on the surface can be hit by the acid. The ones inside have to wait until the layers above them have reacted. So the key quantity is surface area, the total area of the solid that's exposed. Picture a one centimetre cube. It has six faces, six square centimetres of surface. Cut it into one millimetre cubes, and you get a thousand of them, with sixty square centimetres of surface altogether. Same mass, ten times the surface for the acid to hit.",
+      "audioFile": "public/audio/chem-y11-m3-v15/surface-only.wav"
+    },
+    {
+      "id": "powder-evidence",
+      "text": "Here's the evidence, on the same logging balance, with the same one mole per litre acid at twenty degrees. The chips curve is the control run from last time. The powder froths hard, so the plug really matters, and its curve shoots up and flattens in about forty seconds. The chips take about six and a half minutes. But both level off at zero point four four grams, because it's the same mass of calcium carbonate, just more of it exposed at once.",
+      "audioFile": "public/audio/chem-y11-m3-v15/powder-evidence.wav"
+    },
+    {
+      "id": "why-surface",
+      "text": "So more surface means more acid particles hit the solid each second. That's collision frequency again. The temperature is the same, so the fraction of collisions with enough energy hasn't changed, and neither has the activation energy. More collisions each second, at the same success rate, means a faster reaction. And surface area only matters when the reaction happens at a surface, like a solid reacting with a liquid or a gas.",
+      "audioFile": "public/audio/chem-y11-m3-v15/why-surface.wav"
+    },
+    {
+      "id": "catalyst-evidence",
+      "text": "Now the second way. Hydrogen peroxide slowly breaks down into water and oxygen, so slowly that on the balance, nothing seems to happen. Add half a gram of black manganese dioxide powder, and it froths straight away, and the mass falls as the oxygen escapes. Manganese dioxide is a catalyst, a substance that speeds up a reaction without being used up.",
+      "audioFile": "public/audio/chem-y11-m3-v15/catalyst-evidence.wav"
+    },
+    {
+      "id": "not-used-up",
+      "text": "How do we know it isn't used up? After the reaction, filter out the black powder, dry it, and weigh it. There's still zero point five zero grams. And if you add it to fresh hydrogen peroxide, it works just as well. It takes part in the reaction, but it's given back at the end.",
+      "audioFile": "public/audio/chem-y11-m3-v15/not-used-up.wav"
+    },
+    {
+      "id": "lower-bar",
+      "text": "So which lever does a catalyst push? It doesn't speed the particles up, and it doesn't make them collide more often. Instead, it gives the reaction a different route, through steps on the surface of the manganese dioxide, and that route has a lower activation energy. Think of it as lowering the bar. At the same temperature, many more collisions can now clear it.",
+      "audioFile": "public/audio/chem-y11-m3-v15/lower-bar.wav"
+    },
+    {
+      "id": "curve-and-line",
+      "text": "Here's the spread of energies again. A catalyst doesn't touch the curve, because the temperature hasn't changed. It moves the activation energy line to the left. Now a much bigger tail lies beyond it, so a much larger fraction of collisions are effective. Compare that with heating, from last time, which moved the curve. Temperature moves the curve. A catalyst moves the line.",
+      "audioFile": "public/audio/chem-y11-m3-v15/curve-and-line.wav"
+    },
+    {
+      "id": "different-levers",
+      "text": "So the two work differently. More surface area gives more collisions each second, with the same activation energy. A catalyst gives the same collisions, but a lower activation energy, so more of them succeed. And neither one changes how much product you get. Manganese dioxide makes the oxygen come off faster, but it doesn't make more of it.",
+      "audioFile": "public/audio/chem-y11-m3-v15/different-levers.wav"
+    },
+    {
+      "id": "catalyst-surfaces",
+      "text": "The two ideas also work together. Manganese dioxide is a solid, and the reaction happens on its surface. So a fine powder of catalyst works faster than one lump of the same mass, because more of its surface is exposed. That's why many industrial catalysts are spread thinly over a very large surface.",
+      "audioFile": "public/audio/chem-y11-m3-v15/catalyst-surfaces.wav"
+    },
+    {
+      "id": "fair-catalyst-test",
+      "text": "One thing to watch in the catalyst run. Breaking down hydrogen peroxide releases heat, so the frothing flask warms up, and that speeds it up even more. Logging the temperature shows the warming, but it can't separate the two effects. For that, compare runs held at the same temperature. And a warm flask loses a little water vapour, so not all the lost mass is oxygen.",
+      "audioFile": "public/audio/chem-y11-m3-v15/fair-catalyst-test.wav"
+    },
+    {
+      "id": "full-set",
+      "text": "So here's the full set. Concentration and surface area, hit often. Temperature, hit hard. A catalyst, lower the bar.",
+      "audioFile": "public/audio/chem-y11-m3-v15/full-set.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Zero point five zero grams of zinc granules and zero point five zero grams of zinc powder each react with excess hydrochloric acid at the same temperature. The graph shows the hydrogen collected. Which curve shows the powder? Justify your answer using collision theory. Then explain why both curves reach the same final volume. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v15/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Curve P. It's steeper at the start. Powder has a larger surface area, so more zinc particles are exposed and more acid particles hit them each second, at the same activation energy. Both end at a hundred and ninety millilitres because the same mass of zinc reacts, with acid in excess. The powder doesn't have a lower activation energy.",
+      "audioFile": "public/audio/chem-y11-m3-v15/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A car's catalytic converter has a thin coating of platinum spread over a ceramic honeycomb. The platinum speeds up the reaction of carbon monoxide with oxygen. Explain, using a Maxwell-Boltzmann distribution, how the platinum increases the rate. Then explain why it's spread as a thin coating over a honeycomb, instead of being used as a solid block. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v15/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Platinum gives a different route with a lower activation energy. On the distribution, the curve stays the same, but the activation energy line moves left, so a larger fraction of collisions have enough energy, and the rate rises. The reaction happens on the platinum's surface, so a thin coating over a honeycomb exposes far more surface, for less platinum. Shifting the curve to the right would be wrong.",
+      "audioFile": "public/audio/chem-y11-m3-v15/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So surface area and catalysts both speed reactions up, but in different ways. More surface means more collisions each second. A catalyst opens a route with a lower activation energy, so more of the collisions succeed. That's the end of Module 3. Now look back at the catalyst run. The flask warmed up by more than eleven degrees, and that energy came from the reaction itself. Where does it come from, and why do some reactions cool their surroundings instead?",
+      "audioFile": "public/audio/chem-y11-m3-v15/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m3-v15/key-notes.wav"
+    }
+  ]
+}

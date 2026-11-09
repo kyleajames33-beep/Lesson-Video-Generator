@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-ws-v06.md",
+  "sourceSha256": "529b97a18c7348c28ba630c1566e748aa000e0275f24de0ac6eb7c53e28b4004",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's a problem nobody has shown us how to solve. Crystals from an old jar of copper sulfate are heated gently to constant mass, and they lose only thirty point two percent of their mass. Fresh crystals lose about thirty-six. Same method, same balance, and the gap is far bigger than our three percent uncertainty. So what's going on, and how do we even start?",
+      "audioFile": "public/audio/chem-y11-ws-v06/hook.wav"
+    },
+    {
+      "id": "what-is-a-model",
+      "text": "We start with a model. A model is a simplified picture of how something works, which lets us explain and predict. Some models are drawings, like a particle diagram. Others are mathematical, like n equals m over M M, or a formula with a number we don't know yet. A model works on evidence: primary evidence that we collect ourselves, and secondary evidence from published sources. And every model rests on assumptions, so part of solving a problem is checking them.",
+      "audioFile": "public/audio/chem-y11-ws-v06/what-is-a-model.wav"
+    },
+    {
+      "id": "ask-it",
+      "text": "Step one is to ask exactly what's unknown. Not just what went wrong, but something we can calculate. How many water molecules are there for each copper sulfate in these crystals? Call it x, so the formula is C u S O four, dot x H two O. In fresh crystals, x is five.",
+      "audioFile": "public/audio/chem-y11-ws-v06/ask-it.wav"
+    },
+    {
+      "id": "model-it",
+      "text": "Step two is to apply the model to the evidence. From two point five zero grams, losing thirty point two percent means zero point seven five five grams of water left, and one point seven four five grams of copper sulfate remained. In moles, that's zero point zero four one nine of water, and zero point zero one zero nine of copper sulfate. Divide, and x is three point eight four.",
+      "audioFile": "public/audio/chem-y11-ws-v06/model-it.wav"
+    },
+    {
+      "id": "rival-explanations",
+      "text": "Three point eight four isn't a whole number. It's tempting to round it to four, and announce a new formula. A good problem solver treats the odd number as information, and lists the possible causes. Maybe the heating didn't finish. Maybe it isn't copper sulfate at all. Or maybe the crystals had already lost some water in the jar. Before we test them, is C u S O four, dot four H two O the answer?",
+      "audioFile": "public/audio/chem-y11-ws-v06/rival-explanations.wav"
+    },
+    {
+      "id": "test-it",
+      "text": "Let's weigh each cause against the evidence. The mass stopped changing and the powder turned white, which counts against unfinished heating. Blue crystals turning white fits copper sulfate, though it doesn't prove it. The jar has the strongest support. These crystals have a pale, powdery crust. And published sources say copper sulfate crystals slowly lose water in warm, dry air, forming that kind of crust.",
+      "audioFile": "public/audio/chem-y11-ws-v06/test-it.wav"
+    },
+    {
+      "id": "explain",
+      "text": "So the model offers an explanation. Suppose most crystals still hold five waters, but some have lost water from their surfaces. Heating the whole sample would give an average, somewhere between. The crust supports that picture, a mixture rather than a new compound. If we'd rounded to four, we'd have claimed a compound that none of our evidence supports.",
+      "audioFile": "public/audio/chem-y11-ws-v06/explain.wav"
+    },
+    {
+      "id": "predict-test",
+      "text": "A good model also predicts something new. If the jar is the cause, crystals from a fresh, sealed jar should give x equal to five. So the class tests it. The fresh crystals lose thirty-five point nine percent, and the same steps give x equal to four point nine seven. That's five within our uncertainty, so the prediction is supported.",
+      "audioFile": "public/audio/chem-y11-ws-v06/predict-test.wav"
+    },
+    {
+      "id": "check-it",
+      "text": "The last step is to check the answer makes sense. Is x between zero and five? Yes, because old crystals can't hold more water than fresh ones. Is the water lost smaller than the starting mass? Yes. And do the units work, grams divided by grams per mole giving moles? Yes. Checks like these catch slips before they turn into wrong conclusions. Ask it, model it, test it, check it.",
+      "audioFile": "public/audio/chem-y11-ws-v06/check-it.wav"
+    },
+    {
+      "id": "limits",
+      "text": "Every model has limits too. Ours assumes the white powder is pure copper sulfate, and that only water leaves. If the flame were too strong, some copper sulfate would break down, extra mass would be lost, and the model would give the wrong x. So a conclusion is only as good as the evidence behind each assumption. And when new evidence doesn't fit, we improve the model, just as the models of the atom improved with new evidence.",
+      "audioFile": "public/audio/chem-y11-ws-v06/limits.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn, using the continuous variation model. Solutions X and Y have the same concentration. They're mixed in changing proportions with sixty millilitres in total, and the lines of best fit cross at twenty millilitres of X and forty of Y. Find the mole ratio, then predict the volume of Y that reacts exactly with fifteen millilitres of X. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Twenty to forty is one to two, and equal concentrations make that a mole ratio. So fifteen millilitres of X needs twice as much Y, thirty millilitres. Halving instead, and getting seven point five, is the classic slip. Check it: Y is the bigger share, so its volume should be bigger.",
+      "audioFile": "public/audio/chem-y11-ws-v06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Washing soda crystals are N a two C O three, dot ten H two O. A student heats some from an old open packet, with a white powdery crust, to constant mass. They lose forty-eight point five percent. Calculate x for this sample, then explain the result using evidence, and propose a test. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "In one hundred grams, forty-eight point five grams of water is two point six nine moles, and fifty-one point five grams of sodium carbonate is zero point four eight six. So x is about five and a half. That's below ten, and the crust is evidence the crystals lost water before heating. Test a fresh sealed packet, predicting x equals ten. Rounding to six and claiming a new formula is the classic slip.",
+      "audioFile": "public/audio/chem-y11-ws-v06/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So, ask it as a quantity, model it with the evidence, test the explanations and a prediction, and check the answer. Our model turned a mass of crystals into a number of waters. Can it predict how much product a reaction makes? Burn ten grams of magnesium in oxygen. Will you get more than ten grams of oxide, less, or the same? How do we calculate product mass from a reactant mass?",
+      "audioFile": "public/audio/chem-y11-ws-v06/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-ws-v06/key-notes.wav"
+    }
+  ]
+}

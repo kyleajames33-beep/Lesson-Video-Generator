@@ -1,338 +1,645 @@
 {
-  "key": "math-a12-d11",
-  "characters": 5928,
-  "speechSeconds": 429.28000000000003,
-  "lessonSeconds": 515.4666666666667,
-  "costUsd": 0.09734350000000001,
-  "findings": [
+  "lesson": "math-a12-d11",
+  "sourceSha256": "4b885f1ce40829c8dd37a505b9c64ad4f9d57c370512d1745b2de1ac9388ff94",
+  "measuredPath": "work\\brief235\\voice-results\\d11\\lesson.json",
+  "measuredSha256": "159b2b152c8c792d57fc7d83f50f751081f12b28114e5d124067f45a6a87d95c",
+  "changedTakes": 2,
+  "reusedTakes": 12,
+  "voicedCharacters": 1426,
+  "inputTokens": 344,
+  "outputTokens": 2319,
+  "costUsd": 0.021043,
+  "totalSeconds": 521.6,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-07",
+    "seconds": 1.0829999999997426,
+    "after": "two.",
+    "before": "Now"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
     {
-      "id": "scene-01",
-      "seconds": 37.32,
-      "characters": 565,
-      "holdSeconds": 0,
-      "costUsd": 0.008468,
-      "lowScoreWords": [],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-02",
-      "seconds": 29.92,
-      "characters": 458,
-      "holdSeconds": 0,
-      "costUsd": 0.0067875,
+      "scene": "scene-01",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
         {
+          "word": "a",
+          "start": 4.643000000000001,
+          "end": 4.683,
+          "score": 0.499
+        },
+        {
+          "word": "a",
+          "start": 16.297999999999988,
+          "end": 16.337999999999987,
+          "score": 0.496
+        },
+        {
+          "word": "straight",
+          "start": 16.86099999999999,
+          "end": 17.20299999999999,
+          "score": 0.403
+        },
+        {
+          "word": "one?",
+          "start": 49.245999999999924,
+          "end": 49.32599999999993,
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "scene": "scene-02",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 3.833999999999991,
+          "end": 3.894999999999991,
+          "score": 0
+        },
+        {
           "word": "height",
-          "start": 7.708999999999996,
-          "end": 7.909999999999996,
+          "start": 4.074999999999991,
+          "end": 4.3759999999999915,
+          "score": 0.34
+        },
+        {
+          "word": "height",
+          "start": 8.273999999999996,
+          "end": 8.454999999999995,
           "score": 0.497
         },
         {
           "word": "pattern.",
-          "start": 16.84199999999999,
-          "end": 17.08599999999999,
-          "score": 0.494
+          "start": 17.178000000000065,
+          "end": 17.422000000000065,
+          "score": 0.499
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-d11/scene-01-31386288859a.wav",
+      "durationInFrames": 1556,
+      "worstWordGap": {
+        "seconds": 0.903999999999983,
+        "after": "this.",
+        "before": "First,"
+      },
+      "cues": [
+        {
+          "text": "x",
+          "start": 11.270999999999995,
+          "end": 11.341499999999996
         },
         {
-          "word": "Height",
-          "start": 17.673000000000044,
-          "end": 17.914000000000044,
-          "score": 0.435
+          "text": "one",
+          "start": 15.251999999999988,
+          "end": 15.372999999999989
         },
         {
-          "word": "Height",
-          "start": 19.52700000000002,
-          "end": 19.729000000000017,
-          "score": 0.493
+          "text": "falls",
+          "start": 46.3349999999999,
+          "end": 46.56916666666657
         }
       ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-03",
-      "seconds": 50.88,
-      "characters": 690,
-      "holdSeconds": 0,
-      "costUsd": 0.0115375,
+      "seconds": 51.84,
+      "peakFraction": 0.8311767578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
-        {
-          "word": "x",
-          "start": 13.397999999999994,
-          "end": 13.517999999999995,
-          "score": 0.453
-        },
-        {
-          "word": "height",
-          "start": 34.70200000000005,
-          "end": 34.94300000000005,
-          "score": 0.486
-        },
-        {
-          "word": "over",
-          "start": 36.52699999999996,
-          "end": 36.68799999999995,
-          "score": 0.293
-        },
-        {
-          "word": "over",
-          "start": 39.79999999999998,
-          "end": 39.90099999999998,
-          "score": 0.135
-        },
-        {
-          "word": "x",
-          "start": 44.6439999999999,
-          "end": 44.6839999999999,
-          "score": 0.202
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-04",
-      "seconds": 46.16,
-      "characters": 615,
-      "holdSeconds": 0,
-      "costUsd": 0.0104645,
-      "lowScoreWords": [
-        {
-          "word": "x",
-          "start": 9.069999999999988,
-          "end": 9.190999999999988,
-          "score": 0.273
-        },
         {
           "word": "a",
-          "start": 20.301000000000073,
-          "end": 20.341000000000076,
-          "score": 0.498
-        },
-        {
-          "word": "x",
-          "start": 32.67200000000005,
-          "end": 32.773000000000046,
-          "score": 0.391
-        },
-        {
-          "word": "squared",
-          "start": 39.0599999999999,
-          "end": 39.3409999999999,
-          "score": 0.491
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-05",
-      "seconds": 38.76,
-      "characters": 561,
-      "holdSeconds": 0,
-      "costUsd": 0.0087865,
-      "lowScoreWords": [
-        {
-          "word": "x",
-          "start": 9.020999999999994,
-          "end": 9.140999999999993,
-          "score": 0.463
-        },
-        {
-          "word": "isn't",
-          "start": 9.281999999999993,
-          "end": 9.461999999999993,
-          "score": 0.26
-        },
-        {
-          "word": "each",
-          "start": 23.71000000000009,
-          "end": 23.87100000000009,
-          "score": 0.375
-        },
-        {
-          "word": "a",
-          "start": 25.60400000000007,
-          "end": 25.64500000000007,
+          "start": 4.643000000000001,
+          "end": 4.683,
           "score": 0.499
         },
         {
-          "word": "over",
-          "start": 27.455000000000034,
-          "end": 27.575000000000035,
-          "score": 0.439
+          "word": "a",
+          "start": 16.297999999999988,
+          "end": 16.337999999999987,
+          "score": 0.496
         },
         {
-          "word": "but",
-          "start": 28.817000000000036,
-          "end": 28.918000000000035,
-          "score": 0.456
+          "word": "straight",
+          "start": 16.86099999999999,
+          "end": 17.20299999999999,
+          "score": 0.403
         },
         {
-          "word": "over",
-          "start": 29.879000000000033,
-          "end": 30.000000000000036,
-          "score": 0.331
-        },
-        {
-          "word": "over",
-          "start": 32.564000000000036,
-          "end": 32.704000000000036,
-          "score": 0.364
+          "word": "one?",
+          "start": 49.245999999999924,
+          "end": 49.32599999999993,
+          "score": 0.25
         }
       ],
-      "humanListening": "pending"
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 195,
+      "outputTokens": 1296,
+      "costUsd": 0.011761500000000001,
+      "pronunciationText": "Last video ended with this fence. We'll solve it later, once we can build a function from a situation like this. First, there's a gap in our derivative list. We know sine and cos, but not tan x. Here's where tan turns up. A lighthouse stands one kilometre out from a long, straight beach. Turn its beam x radians from pointing straight in, and the lit spot lands tan x kilometres along the sand. Here's its graph. It runs between vertical asymptotes, walls the curve never meets, at minus pi over two and pi over two. There, the beam runs parallel to the beach. Watch its tangent. Coming in from the left it's steep. It eases to its flattest at zero, where the slope is one, then steepens again. It never gets flatter than that, and it never falls. So why is the slope never below one? And what is it, exactly?"
     },
     {
-      "id": "scene-06",
-      "seconds": 40.44,
-      "characters": 558,
-      "holdSeconds": 0,
-      "costUsd": 0.009164499999999999,
-      "lowScoreWords": [
+      "id": "scene-02",
+      "changed": true,
+      "audio": "public/audio/math-a12-d11/scene-02-02b21ea72659.wav",
+      "durationInFrames": 1228,
+      "worstWordGap": {
+        "seconds": 0.8650000000000269,
+        "after": "squared.",
+        "before": "On"
+      },
+      "cues": [
         {
-          "word": "over",
-          "start": 13.678999999999986,
-          "end": 13.758999999999986,
-          "score": 0.003
+          "text": "two",
+          "start": 9.741999999999996,
+          "end": 9.907749999999997
         },
         {
-          "word": "a",
-          "start": 20.961000000000077,
-          "end": 21.001000000000076,
+          "text": "four",
+          "start": 15.864999999999993,
+          "end": 16.106599999999993
+        },
+        {
+          "text": "squared",
+          "start": 26.948000000000036,
+          "end": 27.282250000000033
+        },
+        {
+          "text": "races",
+          "start": 36.75400000000006,
+          "end": 37.05483333333339
+        }
+      ],
+      "seconds": 40.92,
+      "peakFraction": 0.8701171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 3.833999999999991,
+          "end": 3.894999999999991,
+          "score": 0
+        },
+        {
+          "word": "height",
+          "start": 4.074999999999991,
+          "end": 4.3759999999999915,
+          "score": 0.34
+        },
+        {
+          "word": "height",
+          "start": 8.273999999999996,
+          "end": 8.454999999999995,
           "score": 0.497
         },
         {
-          "word": "over",
-          "start": 37.709999999999894,
-          "end": 37.8309999999999,
-          "score": 0.117
-        },
-        {
-          "word": "over",
-          "start": 39.2759999999999,
-          "end": 39.4159999999999,
-          "score": 0.17
+          "word": "pattern.",
+          "start": 17.178000000000065,
+          "end": 17.422000000000065,
+          "score": 0.499
         }
       ],
-      "humanListening": "pending"
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 149,
+      "outputTokens": 1023,
+      "costUsd": 0.0092815,
+      "pronunciationText": "Let's measure some slopes on this middle piece. At zero, the height is zero and the slope is one. At pi over four, the height is one and the slope is two. At pi over three, the height is root three, about one point seven three, and the slope is four. Look at the pattern. Height zero, slope one. Height one, slope two. Height root three, slope four. Each slope is one more than the height squared. On the beach, the slope is how fast the spot moves as the beam turns. It's slowest straight in front, and the further along the spot is, the faster it races. Hold on to that, because the algebra is about to explain it."
+    },
+    {
+      "id": "scene-03",
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-03.wav",
+      "durationInFrames": 1527,
+      "worstWordGap": {
+        "seconds": 1.069999999999979,
+        "after": "from.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "everywhere",
+          "start": 16.184999999999995,
+          "end": 16.494999999999997
+        },
+        {
+          "text": "squared",
+          "start": 31.075000000000045,
+          "end": 31.436000000000046
+        },
+        {
+          "text": "four",
+          "start": 36.707999999999956,
+          "end": 36.91679999999996
+        },
+        {
+          "text": "wall",
+          "start": 50.25199999999992,
+          "end": 50.44639999999991
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-04.wav",
+      "durationInFrames": 1385,
+      "worstWordGap": {
+        "seconds": 1.0259999999999643,
+        "after": "x.",
+        "before": "One"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 9.751999999999988,
+          "end": 10.024799999999988
+        },
+        {
+          "text": "x",
+          "start": 12.17899999999999,
+          "end": 12.27899999999999
+        },
+        {
+          "text": "one",
+          "start": 27.568000000000023,
+          "end": 27.658750000000023
+        },
+        {
+          "text": "x",
+          "start": 30.90200000000008,
+          "end": 30.93200000000008
+        },
+        {
+          "text": "one",
+          "start": 40.5059999999999,
+          "end": 40.5967499999999
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-05.wav",
+      "durationInFrames": 1163,
+      "worstWordGap": {
+        "seconds": 1.0429999999999922,
+        "after": "pis.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "radians",
+          "start": 5.469000000000001,
+          "end": 5.83825
+        },
+        {
+          "text": "pis",
+          "start": 13.513999999999992,
+          "end": 13.754749999999994
+        },
+        {
+          "text": "branch",
+          "start": 15.962999999999987,
+          "end": 16.297666666666654
+        },
+        {
+          "text": "later",
+          "start": 33.38600000000004,
+          "end": 33.619333333333365
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-06.wav",
+      "durationInFrames": 1214,
+      "worstWordGap": {
+        "seconds": 0.824000000000007,
+        "after": "zero.",
+        "before": "First,"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 9.68299999999999,
+          "end": 9.93979999999999
+        },
+        {
+          "text": "six",
+          "start": 17.166999999999987,
+          "end": 17.347749999999987
+        },
+        {
+          "text": "points",
+          "start": 29.571000000000005,
+          "end": 29.811000000000007
+        },
+        {
+          "text": "twelve",
+          "start": 37.870999999999896,
+          "end": 38.1719999999999
+        }
+      ]
     },
     {
       "id": "scene-07",
-      "seconds": 49.96,
-      "characters": 642,
-      "holdSeconds": 0,
-      "costUsd": 0.011321,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-07.wav",
+      "durationInFrames": 1499,
+      "worstWordGap": {
+        "seconds": 1.0829999999997426,
+        "after": "two.",
+        "before": "Now"
+      },
+      "cues": [
         {
-          "word": "So",
-          "start": 12.355,
-          "end": 12.395,
-          "score": 0.002
+          "text": "two",
+          "start": 5.2679999999999945,
+          "end": 5.447999999999994
+        },
+        {
+          "text": "two",
+          "start": 9.079999999999988,
+          "end": 9.290749999999987
+        },
+        {
+          "text": "four",
+          "start": 42.212999999999944,
+          "end": 42.437799999999946
+        },
+        {
+          "text": "eight",
+          "start": 45.32699999999994,
+          "end": 45.44366666666661
+        },
+        {
+          "text": "agrees",
+          "start": 49.297999999999966,
+          "end": 49.55599999999997
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-08",
-      "seconds": 28.92,
-      "characters": 418,
-      "holdSeconds": 2,
-      "costUsd": 0.0065565,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-08.wav",
+      "durationInFrames": 928,
+      "worstWordGap": {
+        "seconds": 0.8430000000001314,
+        "after": "four.",
+        "before": "It"
+      },
+      "cues": [
         {
-          "word": "Here's",
-          "start": 0.221,
-          "end": 0.423,
-          "score": 0.486
+          "text": "radians",
+          "start": 21.16800000000012,
+          "end": 21.55562500000012
+        },
+        {
+          "text": "well",
+          "start": 28.300000000000086,
+          "end": 28.444000000000084
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-09",
-      "seconds": 10.24,
-      "characters": 131,
-      "holdSeconds": 10,
-      "costUsd": 0.00232,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-09.wav",
+      "durationInFrames": 608,
+      "worstWordGap": {
+        "seconds": 0.7869999999999955,
+        "after": "six.",
+        "before": "Pause"
+      },
+      "cues": []
     },
     {
       "id": "scene-10",
-      "seconds": 28.6,
-      "characters": 397,
-      "holdSeconds": 1,
-      "costUsd": 0.0064845,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-10.wav",
+      "durationInFrames": 888,
+      "worstWordGap": {
+        "seconds": 0.8620000000000054,
+        "after": "thirds.",
+        "before": "Check"
+      },
+      "cues": [
         {
-          "word": "x",
-          "start": 5.21599999999999,
-          "end": 5.3359999999999905,
-          "score": 0.331
+          "text": "thirds",
+          "start": 11.606999999999992,
+          "end": 11.93357142857142
+        },
+        {
+          "text": "rising",
+          "start": 21.712000000000085,
+          "end": 22.021428571428658
+        },
+        {
+          "text": "negative",
+          "start": 27.859000000000066,
+          "end": 28.1443333333334
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-11",
-      "seconds": 9.72,
-      "characters": 126,
-      "holdSeconds": 10,
-      "costUsd": 0.0022105000000000002,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-11.wav",
+      "durationInFrames": 592,
+      "worstWordGap": {
+        "seconds": 0.7069999999999936,
+        "after": "exists.",
+        "before": "Pause"
+      },
+      "cues": []
     },
     {
       "id": "scene-12",
-      "seconds": 28.08,
-      "characters": 355,
-      "holdSeconds": 1,
-      "costUsd": 0.0063675,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-12.wav",
+      "durationInFrames": 873,
+      "worstWordGap": {
+        "seconds": 0.84000000000011,
+        "after": "k.",
+        "before": "Copying"
+      },
+      "cues": [
+        {
+          "text": "x",
+          "start": 1.803,
+          "end": 1.8635
+        },
+        {
+          "text": "three",
+          "start": 3.066,
+          "end": 3.316
+        },
+        {
+          "text": "six",
+          "start": 17.541999999999987,
+          "end": 17.75199999999999
+        }
+      ]
     },
     {
       "id": "scene-13",
-      "seconds": 25.88,
-      "characters": 337,
-      "holdSeconds": 2,
-      "costUsd": 0.0058665,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-13.wav",
+      "durationInFrames": 837,
+      "worstWordGap": {
+        "seconds": 0.8630000000000013,
+        "after": "x.",
+        "before": "Here's"
+      },
+      "cues": [
         {
-          "word": "one",
-          "start": 15.42799999999999,
-          "end": 15.588999999999992,
-          "score": 0.477
+          "text": "Next",
+          "start": 7.056999999999989,
+          "end": 7.249799999999989
         },
         {
-          "word": "equals",
-          "start": 20.16900000000006,
-          "end": 20.390000000000057,
-          "score": 0.439
+          "text": "exist",
+          "start": 25.01500000000003,
+          "end": 25.266666666666698
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-14",
-      "seconds": 4.4,
-      "characters": 75,
-      "holdSeconds": 60,
-      "costUsd": 0.0010085,
-      "lowScoreWords": [
-        {
-          "word": "are",
-          "start": 0.422,
-          "end": 0.502,
-          "score": 0.267
-        },
-        {
-          "word": "key",
-          "start": 0.642,
-          "end": 0.823,
-          "score": 0.479
-        }
-      ],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d11/scene-14.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.6430000000000002,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": []
     }
   ],
-  "scope": "Alignment structure and timing bounds pass. Human accuracy, pronunciation and scene-join consistency require listening. No rendered cue approval."
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-d11/measured/lesson.json",
+  "canonicalMeasuredSha256": "24e22bb63566758c9ea81869d439b224d3e655698a57204dc490456bb71c7d00",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-d11/measured/lesson.json",
+    "lessonSha256": "24e22bb63566758c9ea81869d439b224d3e655698a57204dc490456bb71c7d00",
+    "srtSha256": "3e8c912faa204639548cc0c89db29d30022851569efbbacbb175d46bc3484203",
+    "vttSha256": "366cc2aefcdf0709b9c19b7ed71a604c4550b4f591120f21cc9583cf165eceb3",
+    "cueCount": 217,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 15648,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 1556
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 1556,
+          "endFrame": 2784
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 2784,
+          "endFrame": 4311
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 4311,
+          "endFrame": 5696
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 5696,
+          "endFrame": 6859
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 6859,
+          "endFrame": 8073
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 8073,
+          "endFrame": 9572
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 9572,
+          "endFrame": 10500
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 10500,
+          "endFrame": 11108
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 11108,
+          "endFrame": 11996
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 11996,
+          "endFrame": 12588
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 12588,
+          "endFrame": 13461
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 13461,
+          "endFrame": 14298
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 14298,
+          "endFrame": 15648
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/maths/ma12-lighthouse-v1.png",
+    "public/assets/maths/ma12-lighthouse-islet-top-v1.png",
+    "public/assets/maths/ma12-beach-strip-top-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/ma12-d11-provenance.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d11-redesign-learning-review.md",
+      "result": "0 blockers, 1 shared should fix, 0 optional. **235-D11-1** is the 1.3-radian screen rounding error detailed in the maths report; count it once."
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d11-redesign-maths-check.md",
+      "result": "0 blockers, 1 should fix, 0 optional."
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
 }

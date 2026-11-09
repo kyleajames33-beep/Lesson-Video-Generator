@@ -1,0 +1,13 @@
+# Physics Year 12 Module 7 v14 Revision 2 error check
+
+Codex, 9 November 2026. Error-only repair check. Original reviews retained. Source hash, independent calculations, plate hashes and written joins: `work/brief233/v14-calculations.json`. No design, narration, scene or speech edits.
+
+Result: 0 blockers, 1 should fix, 0 optional.
+
+Should fix, stale author instructions: Boundary still says "never apply both effects in one frame"; scene 10's heading and the teaching-check misconception shorthand also retain the old rule. This is the overbroad rule explicitly rejected in the Revision 2 Decisions and author note. A frame may describe both a moving object's contracted length and its moving clock's dilated time. Align those remaining instructions with the corrected rule: combine distance and time from the same frame. The actual scene 10 narration, crossed mixed-frame chip and key note 5 are corrected. No narration change is required.
+
+The prior muon lifetime/trip finding is resolved: mean lifetime 22 microseconds is distinct from the 50 microsecond flight, and only some survive. The optional ideal constant-speed/no-energy-loss counter label is present. All 17 narration and visual specifications read, including attempts, new slider and notes. Beacon proper-time event pair, simultaneous endpoint measurement, reciprocal contraction, unchanged transverse dimensions and proper-time/proper-length memory-aid assumptions are consistent. Cards retain conditions without answer disclosure; cues are verbatim and ordered, including repeated metres cues.
+
+Independent calculations: the five 100 m slider lengths are 100, 86.602540, 60, 31.224990 and 14.106736 m; gamma values 1, 1.154701, 1.666667, 3.202563 and 7.088812. Reverse 100 to 80 m gives 0.6c; 300 to 180 m gives 0.8c. Attempt 1 gives gamma 2.294157, length 65.383484 m and unchanged width 20 m; the crossed product is 344.123601 m. At 0.995c the Earth trip is 50.251256 microseconds, mean lifetime 22.027552 microseconds, muon-frame atmosphere 1498.123827 m and crossing 5.018840 microseconds: the same 2.281291 lifetimes. Attempt 2 at 0.998c gives gamma 15.819300, 632.139225 m, 2.111353 microseconds and ideal survival 0.383005. Rounded/given-gamma working is consistent.
+
+6423 characters matches the declared count; estimated 557 s is below 570. Written v13/v14/v15 joins match. Four used plates visually inspected on cream in `work/brief233/v14-used-plates.jpg`; transparent assets present, uniform scaling specified, contraction assigned to a coded outline. No new plate request, drawn person/hand/face or em dash. Resolve the stale author rule before build. Integrated frame swaps, simultaneous marks, outline registration, voiced timing, captions and human listening remain build checks.

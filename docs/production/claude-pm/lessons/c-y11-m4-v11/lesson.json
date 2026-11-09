@@ -1,0 +1,175 @@
+{
+  "id": "chem-y11-m4-v11",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "f9e45cfe0e820f84c4cc3cdaeb56e80161d200a4d2007cd3e1de0dfc1d925b5d",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Ice melts on a warm bench, and a cold pack gets cold. Both absorb heat, yet both happen by themselves. So something besides energy must decide the direction. To find it, start with something simpler. Here are two gas jars joined mouth to mouth, with four gas particles, all starting in the top jar. Slide the cover out, and let them move at random. After a while, which is more likely: all four still in the top jar, or two in each jar?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "counting-arrangements",
+      "title": "counting arrangements",
+      "voiceover": {
+        "text": "Two in each, by a long way. Here's why. Each particle can be in the top jar or the bottom jar, so four particles have two times two times two times two, sixteen possible arrangements. Each one, a particular way the particles are arranged, is called a microstate. And because the particles move at random, every microstate is equally likely. Only one of the sixteen has all four at the top. But six of them have two in each jar. So two and two turns up six times as often."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-spreading-wins",
+      "title": "why spreading wins",
+      "voiceover": {
+        "text": "With more particles, the numbers get enormous. For a hundred particles, the chance of finding them all in one jar is about one in a million million million million million. A real sample has far more particles than that, so it never happens. No force pushes the gas to spread out. Spread-out arrangements are just so much more numerous that spreading is what we always see. That's why perfume spreads through a room, and never gathers back into the bottle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-spreads",
+      "title": "energy spreads too",
+      "voiceover": {
+        "text": "Energy spreads in the same way. Imagine energy shared out in small, equal packets. Three packets shared among three particles can be arranged in ten different ways. Let those particles touch three cold ones, and the same three packets can be shared among six particles, in fifty-six ways. So the energy spreads into the cold particles, simply because there are more ways for it to be shared. That's why heat flows from a hot object into a cold one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "entropy-defined",
+      "title": "what entropy is",
+      "voiceover": {
+        "text": "Now we can name the idea. Entropy, written S, is a measure of how many ways the particles of a substance, and their energy, can be arranged. More ways means more entropy. People sometimes call it disorder, but counting the ways is more accurate. Entropy is measured in joules per kelvin per mole. Notice that's joules, not kilojoules."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "states-and-temperature",
+      "title": "solids, liquids and gases",
+      "voiceover": {
+        "text": "This explains why gases have so much entropy. In a solid, particles vibrate in fixed places. In a liquid, they can slide past each other, so there are more arrangements. In a gas, each particle can be almost anywhere in the container, so there are vastly more. For water, liquid has an entropy of seventy joules per kelvin per mole, and steam has a hundred and eighty-nine. Heating anything adds energy packets too, so entropy also rises with temperature."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "enthalpy-vs-entropy",
+      "title": "enthalpy and entropy are different",
+      "voiceover": {
+        "text": "So how is entropy different from enthalpy? The enthalpy change is about heat: the energy taken in or given out as bonds and attractions change, in kilojoules per mole. The entropy change is about arrangements: how the number of ways changes, in joules per kelvin per mole. They're judged separately. When ice melts, delta H is positive, because heat is needed to loosen the attractions between water molecules. And delta S is positive too, because liquid water has more ways. When two gases mix, delta H is about zero, but delta S is positive, so enthalpy can't explain mixing at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "surroundings-second-law",
+      "title": "the surroundings count too",
+      "voiceover": {
+        "text": "There's one more piece. When a change releases heat, that energy spreads into the surroundings, and gives their particles more ways to share it, so the surroundings' entropy goes up. When a change absorbs heat, the surroundings' entropy goes down. The second law of thermodynamics says that in any change that happens by itself, the total entropy of the system and its surroundings goes up. So an exothermic change helps itself, while an endothermic change has to gain enough entropy of its own."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ice-coldpack-freezing",
+      "title": "ice, the cold pack, and freezing",
+      "voiceover": {
+        "text": "That solves the puzzle. Ice melting on a warm bench takes heat from the room, so the room loses a little entropy, but the water gains more, as its molecules break free to move. The cold pack is the same: the ions spreading through the water gain a lot of entropy. And a system's own entropy can go down. Water freezing in a freezer loses entropy, but the heat it releases raises the entropy of its surroundings by more. Whether the gain beats the loss depends on temperature, and we'll come back to that."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "counting the ways",
+      "voiceover": {
+        "text": "Here's the line to remember. Entropy counts the ways."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A box is divided by a partition, with one gas on the left and a different gas on the right. The gases don't react. The partition is removed. Explain, in terms of particle arrangements, why the gases mix, and why they never unmix by themselves. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Once the partition is gone, each particle can be anywhere in the box, so there are far more possible arrangements, and almost all of them are mixed. The particles move at random, so the system ends up in mixed arrangements, and its entropy rises. Unmixing would need one of the very rare separated arrangements, so it never happens. Mixing doesn't release energy. It happens because it's far more likely."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Distinguish between the enthalpy change and the entropy change when ice melts at twenty-five degrees. Give the sign of each, and say what each one describes. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Delta H is positive. Melting absorbs heat, to loosen the attractions between water molecules. Delta S is also positive, because molecules that can move past each other have more possible arrangements. One describes heat, the other describes arrangements. Saying delta S is negative because melting absorbs energy mixes the two up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So entropy describes spreading by counting the ways particles and their energy can be arranged, and gases have by far the most. That gives chemists a shortcut. If a reaction makes gas from a solid, or changes the number of gas molecules, the equation itself might tell us which way entropy changes. Dry ice turning to gas, or nitrogen and hydrogen making ammonia: can you read the sign straight from the equation?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

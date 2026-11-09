@@ -1,0 +1,178 @@
+{
+  "id": "chem-y11-m1-v09",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "2eb1d6dab4793b8648e7c7ac773a12434c9db17a03b4ef969989cae20d1d17d6",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: 35.45 belongs to no atom",
+      "voiceover": {
+        "text": "Here's chlorine on the periodic table: thirty-five point four five. But we just saw that chlorine atoms come as chlorine-thirty-five and chlorine-thirty-seven. Not one of them has a mass of thirty-five point four five. And it isn't the simple average either. Halfway between thirty-five and thirty-seven is thirty-six. So where does thirty-five point four five come from?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hundred-atoms",
+      "title": "a sample of a hundred atoms",
+      "voiceover": {
+        "text": "Think about a real sample of chlorine. It's a mixture of both isotopes, and they're not equally common. Out of every hundred chlorine atoms, about seventy-six are chlorine-thirty-five, and only about twenty-four are chlorine-thirty-seven. So to find the average mass of one atom, add up the masses of all hundred, then share the total among them. Seventy-six atoms at thirty-five, plus twenty-four atoms at thirty-seven, gives three thousand five hundred and forty-eight. Divide by a hundred atoms, and that's thirty-five point four eight. It's much closer to thirty-five, because most of the atoms are chlorine-thirty-five."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "weighted-average",
+      "title": "weighted average, and what Ar means",
+      "voiceover": {
+        "text": "That's a weighted average. Each isotope's mass counts as many times as that isotope occurs, so the common isotope counts more. Relative atomic mass, written A r, is this weighted average for the atoms in a natural sample of an element, on the scale where carbon-twelve is exactly twelve. Like any relative mass, it has no units. The percentages, called abundances, are measured with an instrument called a mass spectrometer, which sorts atoms by mass. How it works is a story for later. Here, the abundances are simply given."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fractions",
+      "title": "the shortcut with fractions",
+      "voiceover": {
+        "text": "In questions, you'll use a shortcut. Turn each percentage into a fraction by dividing by a hundred, multiply each isotope's mass by its fraction, then add them up. For chlorine, the abundances are seventy-five point seven seven percent, and twenty-four point two three percent. Thirty-five times zero point seven five seven seven is twenty-six point five two. Thirty-seven times zero point two four two three is eight point nine seven. Add them, and you get thirty-five point four eight, about thirty-five point five. The periodic table says thirty-five point four five because it uses each isotope's exact mass, which is slightly less than thirty-five or thirty-seven."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "balance",
+      "title": "picture it as a balance",
+      "voiceover": {
+        "text": "Here's a way to picture it. Put the isotopes on a beam, at their masses, and stack each one by how common it is. The relative atomic mass is where the beam would balance. With three quarters of the weight at thirty-five, the balance point sits close to it. The average leans toward the crowd."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Boron has two isotopes: boron-ten, at nineteen point nine percent, and boron-eleven, at eighty point one percent. Will its relative atomic mass be closer to ten, or closer to eleven? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "boron",
+      "title": "boron, worked",
+      "voiceover": {
+        "text": "Closer to eleven, because boron-eleven is the crowd. Let's check. As fractions, the abundances are zero point one nine nine, and zero point eight zero one, and they add to exactly one, which is a good first check. Ten times zero point one nine nine is one point nine nine. Eleven times zero point eight zero one is eight point eight one one. Add them, and A r is ten point eight zero one, or ten point eight to three significant figures."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sense-check",
+      "title": "the sense check, and no atom weighs 10.8",
+      "voiceover": {
+        "text": "Always sense check your answer. It must land between the lightest and heaviest isotopes, and nearer the more common one. Ten point eight passes both tests. And notice that no single boron atom has a mass of ten point eight. Every atom is boron-ten or boron-eleven. Ten point eight is the average of the sample, not the mass number of any atom."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "silicon-setup",
+      "title": "the reverse question: silicon",
+      "voiceover": {
+        "text": "Now the question in reverse. Suppose you know the relative atomic mass, and you want the abundances. In this question, silicon has a relative atomic mass of twenty-eight point two two, and we assume it has only two isotopes, silicon-twenty-eight and silicon-twenty-nine. Real silicon also has some silicon-thirty, so this is a simplified model. Let x be the fraction of silicon-twenty-eight. With only two isotopes, the fractions add to one, so silicon-twenty-nine is one minus x."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "silicon-solve",
+      "title": "solve and check",
+      "voiceover": {
+        "text": "Now write the weighted average with x in it. Twenty-eight x, plus twenty-nine times one minus x, equals twenty-eight point two two. Expand the bracket, and the x terms combine to minus x, so twenty-nine minus x equals twenty-eight point two two. That makes x zero point seven eight. So silicon-twenty-eight is seventy-eight percent, and silicon-twenty-nine is twenty-two percent. Check it: twenty-one point eight four plus six point three eight gives back twenty-eight point two two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A model element has two isotopes, with masses twenty-two and twenty-four, and abundances of seventy point zero percent and thirty point zero percent. Calculate its relative atomic mass. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "As fractions, the abundances are zero point seven zero zero, and zero point three zero zero. Twenty-two times zero point seven zero zero is fifteen point four, and twenty-four times zero point three zero zero is seven point two. Together that's twenty-two point six. It's between twenty-two and twenty-four, and nearer twenty-two, the more common isotope. Twenty-three, the simple average, is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Assume an element has only two isotopes, with masses sixty-three and sixty-five, and a relative atomic mass of sixty-three point six zero. Calculate the percentage abundance of each isotope. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Let x be the fraction of the mass sixty-three isotope. Sixty-three x, plus sixty-five times one minus x, equals sixty-three point six zero, which simplifies to sixty-five minus two x equals sixty-three point six zero. So x is zero point seven zero: seventy percent mass sixty-three, and thirty percent mass sixty-five. Don't swap them. Sixty-three point six is near sixty-three, so sixty-three is the crowd."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: what are the electrons doing?",
+      "voiceover": {
+        "text": "So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole rainbow. Next time, we'll see what those colours reveal about the energy of electrons in an atom."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

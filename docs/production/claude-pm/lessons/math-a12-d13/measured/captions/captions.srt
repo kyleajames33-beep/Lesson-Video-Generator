@@ -1,707 +1,767 @@
 1
-00:00:00,301 --> 00:00:03,086
-Last video ended on this curve, y equals
+00:00:00,240 --> 00:00:02,284
+Last video ended on this curve,
 
 2
-00:00:03,206 --> 00:00:05,271
-three to the two x, and two other
+00:00:02,865 --> 00:00:04,908
+y equals three to the two x, and
 
 3
-00:00:05,291 --> 00:00:06,353
-composites we haven't done yet.
+00:00:04,948 --> 00:00:06,630
+two other composites we haven't done yet.
 
 4
-00:00:07,055 --> 00:00:09,101
-Here are two quick answers for its derivative.
+00:00:07,632 --> 00:00:09,788
+Composites hide in everyday things.
 
 5
-00:00:09,785 --> 00:00:11,792
-One says two times three to the two
+00:00:10,353 --> 00:00:12,986
+A drone hovers, and its camera tilts forward
 
 6
-00:00:11,934 --> 00:00:11,973
-x.
+00:00:13,027 --> 00:00:13,770
+at a steady rate.
 
 7
-00:00:12,596 --> 00:00:14,285
-The other says three to the two x,
+00:00:14,334 --> 00:00:16,398
+The spot it films races ahead along the
 
 8
-00:00:14,447 --> 00:00:15,854
-times the natural log of three.
+00:00:16,439 --> 00:00:16,738
+ground,
 
 9
-00:00:16,719 --> 00:00:18,986
-At x equals zero, the first predicts a
+00:00:17,401 --> 00:00:19,224
+and its speed comes from two places:
 
 10
-00:00:19,027 --> 00:00:19,808
-slope of two,
+00:00:19,826 --> 00:00:21,348
+how fast the camera tilts,
 
 11
-00:00:20,412 --> 00:00:22,578
-and the second about one point one zero.
+00:00:21,891 --> 00:00:23,854
+and how far the spot moves for each
 
 12
-00:00:23,283 --> 00:00:24,530
-Let's measure the real slope.
+00:00:23,975 --> 00:00:24,616
+bit of tilt.
 
 13
-00:00:25,234 --> 00:00:28,162
-Secants from closer and closer points give four,
+00:00:25,319 --> 00:00:25,964
+Keep that picture.
 
 14
-00:00:28,504 --> 00:00:30,751
-then about two point four six, then about
+00:00:26,771 --> 00:00:28,639
+Here are two quick answers for the derivative
 
 15
-00:00:30,852 --> 00:00:31,794
-two point two two.
+00:00:28,761 --> 00:00:30,006
+of three to the two x.
 
 16
-00:00:32,477 --> 00:00:34,283
-They settle at about two point two.
+00:00:30,771 --> 00:00:32,965
+One says two times three to the two
 
 17
-00:00:35,149 --> 00:00:36,019
-Neither answer is right.
+00:00:33,107 --> 00:00:33,227
+x.
 
 18
-00:00:36,707 --> 00:00:39,072
-So what is the slope, and why does
+00:00:33,730 --> 00:00:35,499
+The other says three to the two x,
 
 19
-00:00:39,113 --> 00:00:40,936
-a composite like this need more than one
+00:00:35,681 --> 00:00:37,149
+times the natural log of three.
 
 20
-00:00:41,018 --> 00:00:41,378
-factor?
+00:00:38,113 --> 00:00:40,476
+At x equals zero, the first predicts a
 
 21
-00:00:42,142 --> 00:00:42,974
-Here's where it comes from.
+00:00:40,517 --> 00:00:42,920
+slope of two, and the second about one
 
 22
-00:00:43,681 --> 00:00:46,086
-Three to the two x is three squared,
+00:00:42,981 --> 00:00:43,822
+point one zero.
 
 23
-00:00:46,327 --> 00:00:48,191
-to the x, so it's nine to the
+00:00:44,625 --> 00:00:45,912
+Let's measure the real slope.
 
 24
-00:00:48,351 --> 00:00:48,472
-x.
+00:00:46,736 --> 00:00:49,844
+Secants from closer and closer points give four,
 
 25
-00:00:49,153 --> 00:00:51,177
-And you know a to the x has
+00:00:50,286 --> 00:00:52,451
+then about two point four six, then about
 
 26
-00:00:51,198 --> 00:00:53,642
-derivative a to the x, times the natural
+00:00:52,593 --> 00:00:53,474
+two point two two.
 
 27
-00:00:53,703 --> 00:00:54,223
-log of a.
+00:00:54,097 --> 00:00:56,025
+They settle at about two point two.
 
 28
-00:00:54,987 --> 00:00:56,675
-So the slope is nine to the x,
+00:00:56,931 --> 00:00:58,075
+Neither answer is right.
 
 29
-00:00:57,017 --> 00:00:58,363
-times the natural log of nine.
+00:00:58,619 --> 00:01:00,808
+So what is the slope, and why does
 
 30
-00:00:59,109 --> 00:01:01,195
-The natural log of nine is two times
+00:01:00,829 --> 00:01:02,576
+a composite like this need more than one
 
 31
-00:01:01,236 --> 00:01:02,179
-the natural log of three.
+00:01:02,637 --> 00:01:02,958
+factor?
 
 32
-00:01:02,802 --> 00:01:05,110
-So the derivative is two, times the natural
+00:01:03,442 --> 00:01:04,274
+Here's where it comes from.
 
 33
-00:01:05,151 --> 00:01:07,418
-log of three, times three to the two
+00:01:04,981 --> 00:01:07,386
+Three to the two x is three squared,
 
 34
-00:01:07,540 --> 00:01:07,579
-x.
+00:01:07,627 --> 00:01:09,491
+to the x, so it's nine to the
 
 35
-00:01:08,404 --> 00:01:11,036
-At zero, that's about two point two, the
+00:01:09,651 --> 00:01:09,772
+x.
 
 36
-00:01:11,057 --> 00:01:11,719
-slope we measured.
+00:01:10,453 --> 00:01:12,477
+And you know a to the x has
 
 37
-00:01:12,625 --> 00:01:14,898
-Each quick answer kept one factor and lost
+00:01:12,498 --> 00:01:14,942
+derivative a to the x, times the natural
 
 38
-00:01:14,940 --> 00:01:15,261
-the other.
+00:01:15,003 --> 00:01:15,523
+log of a.
 
 39
-00:01:15,845 --> 00:01:17,103
-The picture shows why there are two.
+00:01:16,287 --> 00:01:17,975
+So the slope is nine to the x,
 
 40
-00:01:17,848 --> 00:01:19,955
-Three to the two x is three to
+00:01:18,317 --> 00:01:19,663
+times the natural log of nine.
 
 41
-00:01:19,995 --> 00:01:22,565
-the x, squashed sideways by a half.
+00:01:20,409 --> 00:01:22,495
+The natural log of nine is two times
 
 42
-00:01:23,247 --> 00:01:25,295
-The base three gives the slope its natural
+00:01:22,536 --> 00:01:23,479
+the natural log of three.
 
 43
-00:01:25,336 --> 00:01:25,957
-log of three.
+00:01:24,102 --> 00:01:26,410
+So the derivative is two, times the natural
 
 44
-00:01:26,642 --> 00:01:29,117
-The squash, from the inside two x, doubles
+00:01:26,451 --> 00:01:28,718
+log of three, times three to the two
 
 45
-00:01:29,158 --> 00:01:29,218
-it.
+00:01:28,840 --> 00:01:28,879
+x.
 
 46
-00:01:29,761 --> 00:01:32,488
-So every composite needs two separate things:
+00:01:29,704 --> 00:01:32,336
+At zero, that's about two point two, the
 
 47
-00:01:33,090 --> 00:01:35,577
-the outside's slope, worked out at the inside,
+00:01:32,357 --> 00:01:33,019
+slope we measured.
 
 48
-00:01:35,998 --> 00:01:37,482
-and the inside's own slope.
+00:01:33,925 --> 00:01:36,198
+Each quick answer kept one factor and lost
 
 49
-00:01:38,245 --> 00:01:40,379
-Here are the three outsides we haven't used
+00:01:36,240 --> 00:01:36,561
+the other.
 
 50
-00:01:40,420 --> 00:01:40,580
-yet.
+00:01:37,145 --> 00:01:38,403
+The picture shows why there are two.
 
 51
-00:01:41,385 --> 00:01:42,967
-A to the power of an inside:
+00:01:39,148 --> 00:01:41,255
+Three to the two x is three to
 
 52
-00:01:43,549 --> 00:01:45,652
-copy it, times the natural log of a,
+00:01:41,295 --> 00:01:43,865
+the x, squashed sideways by a half.
 
 53
-00:01:46,093 --> 00:01:47,616
-times the inside's derivative.
+00:01:44,547 --> 00:01:46,595
+The base three gives the slope its natural
 
 54
-00:01:48,479 --> 00:01:50,080
-Log base a of an inside:
+00:01:46,636 --> 00:01:47,257
+log of three.
 
 55
-00:01:50,622 --> 00:01:53,466
-the inside's derivative, over the inside times the
+00:01:47,942 --> 00:01:50,417
+The squash, from the inside two x, doubles
 
 56
-00:01:53,487 --> 00:01:54,367
-natural log of a,
+00:01:50,458 --> 00:01:50,518
+it.
 
 57
-00:01:54,889 --> 00:01:56,270
-and the inside must be positive.
+00:01:51,080 --> 00:01:53,644
+So every composite needs two separate things:
 
 58
-00:01:57,073 --> 00:01:58,034
-Tan of an inside:
+00:01:54,265 --> 00:01:56,949
+the outside's slope, worked out at the inside,
 
 59
-00:01:58,777 --> 00:02:01,542
-sec squared of the same inside, times the
+00:01:57,370 --> 00:01:58,952
+and the inside's own slope.
 
 60
-00:02:01,643 --> 00:02:02,624
-inside's derivative,
+00:01:59,635 --> 00:02:01,503
+Here are the three outsides we haven't used
 
 61
-00:02:03,287 --> 00:02:05,711
-and it breaks wherever the inside reaches pi
+00:02:01,543 --> 00:02:01,704
+yet.
 
 62
-00:02:05,752 --> 00:02:07,014
-over two, plus k pi.
+00:02:02,545 --> 00:02:03,948
+A to the power of an inside:
 
 63
-00:02:07,856 --> 00:02:10,641
-The outside brings its own fixed part, the
+00:02:04,609 --> 00:02:06,632
+copy it, times the natural log of a,
 
 64
-00:02:10,682 --> 00:02:13,006
-natural log of a, or sec squared.
+00:02:06,933 --> 00:02:08,435
+times the inside's derivative.
 
 65
-00:02:13,768 --> 00:02:16,113
-The inside's derivative is an extra factor,
+00:02:09,218 --> 00:02:11,680
+Log base a of an inside: the inside's
 
 66
-00:02:16,615 --> 00:02:18,598
-and the inside also decides the domain.
+00:02:11,742 --> 00:02:14,185
+derivative, over the inside times the natural log
 
 67
-00:02:19,295 --> 00:02:21,141
-Worked example one, from the course.
+00:02:14,206 --> 00:02:16,428
+of a, and the inside must be positive.
 
 68
-00:02:21,825 --> 00:02:25,291
-Differentiate y equals log base three of, x
+00:02:17,270 --> 00:02:18,291
+Tan of an inside:
 
 69
-00:02:25,332 --> 00:02:27,715
-squared plus one, and find the gradient at
+00:02:18,812 --> 00:02:20,934
+sec squared of the same inside, times the
 
 70
-00:02:27,997 --> 00:02:28,697
-x equals one.
+00:02:21,055 --> 00:02:23,998
+inside's derivative, and it breaks wherever the inside
 
 71
-00:02:29,420 --> 00:02:30,064
-Domain first.
+00:02:24,059 --> 00:02:26,241
+reaches pi over two, plus k pi.
 
 72
-00:02:30,549 --> 00:02:33,015
-The inside, x squared plus one, is always
+00:02:26,943 --> 00:02:29,449
+For the drone, the spot's distance is tan
 
 73
-00:02:33,116 --> 00:02:35,121
-at least one, so it's always positive.
+00:02:29,470 --> 00:02:31,556
+of the tilt, so its speed is sec
 
 74
-00:02:35,605 --> 00:02:37,601
-The function exists for every real x.
+00:02:31,597 --> 00:02:33,702
+squared of the tilt, times the tilt's own
 
 75
-00:02:38,348 --> 00:02:40,181
-The inside's derivative is two x.
+00:02:33,783 --> 00:02:34,023
+rate.
 
 76
-00:02:40,624 --> 00:02:42,607
-So d y by d x is two
+00:02:34,526 --> 00:02:36,213
+And once the tilt reaches pi over two,
 
 77
-00:02:42,749 --> 00:02:45,413
-x, over x squared plus one, times the
+00:02:36,515 --> 00:02:38,323
+the camera sees only the horizon.
 
 78
-00:02:45,454 --> 00:02:46,475
-natural log of three.
+00:02:39,067 --> 00:02:41,531
+The outside brings its own fixed part, the
 
 79
-00:02:47,318 --> 00:02:50,005
-At x equals one, that's two, over two
+00:02:41,553 --> 00:02:43,496
+natural log of a, or sec squared.
 
 80
-00:02:50,066 --> 00:02:52,010
-times the natural log of three, which is
+00:02:44,079 --> 00:02:46,709
+The inside's derivative is an extra factor, and
 
 81
-00:02:52,312 --> 00:02:54,197
-one over the natural log of three, about
+00:02:46,730 --> 00:02:48,698
+the inside also decides the domain.
 
 82
-00:02:54,298 --> 00:02:55,019
-point nine one.
+00:02:49,328 --> 00:02:51,174
+Worked example one, from the course.
 
 83
-00:02:55,722 --> 00:02:57,686
-And at x equals zero the top is
+00:02:51,858 --> 00:02:55,324
+Differentiate y equals log base three of, x
 
 84
-00:02:57,707 --> 00:02:59,690
-zero, so the curve is flat at its
+00:02:55,365 --> 00:02:57,748
+squared plus one, and find the gradient at
 
 85
-00:02:59,792 --> 00:03:00,372
-lowest point.
+00:02:58,030 --> 00:02:58,730
+x equals one.
 
 86
-00:03:01,116 --> 00:03:02,142
-Worked example two.
+00:02:59,453 --> 00:03:00,097
+Domain first.
 
 87
-00:03:02,786 --> 00:03:05,630
-Differentiate y equals tan of e to the
+00:03:00,582 --> 00:03:03,048
+The inside, x squared plus one, is always
 
 88
-00:03:05,852 --> 00:03:08,275
-x, and say where the derivative exists.
+00:03:03,149 --> 00:03:05,154
+at least one, so it's always positive.
 
 89
-00:03:09,038 --> 00:03:11,262
-The inside is e to the x, and
+00:03:05,638 --> 00:03:07,634
+The function exists for every real x.
 
 90
-00:03:11,383 --> 00:03:13,187
-its derivative is e to the x as
+00:03:08,381 --> 00:03:10,214
+The inside's derivative is two x.
 
 91
-00:03:13,248 --> 00:03:13,407
-well.
+00:03:10,657 --> 00:03:12,640
+So d y by d x is two
 
 92
-00:03:13,990 --> 00:03:16,117
-So d y by d x is e
+00:03:12,782 --> 00:03:15,446
+x, over x squared plus one, times the
 
 93
-00:03:16,139 --> 00:03:18,286
-to the x, times sec squared of e
+00:03:15,487 --> 00:03:16,508
+natural log of three.
 
 94
-00:03:18,508 --> 00:03:18,989
-to the x.
+00:03:17,351 --> 00:03:20,038
+At x equals one, that's two, over two
 
 95
-00:03:19,778 --> 00:03:20,424
-Now the walls.
+00:03:20,099 --> 00:03:22,043
+times the natural log of three, which is
 
 96
-00:03:21,132 --> 00:03:23,918
-Tan breaks where its inside equals pi over
+00:03:22,345 --> 00:03:24,230
+one over the natural log of three, about
 
 97
-00:03:23,999 --> 00:03:25,342
-two, plus k pi.
+00:03:24,331 --> 00:03:25,052
+point nine one.
 
 98
-00:03:25,904 --> 00:03:27,969
-But e to the x is always positive,
+00:03:25,755 --> 00:03:27,719
+And at x equals zero the top is
 
 99
-00:03:28,332 --> 00:03:30,076
-so it can only reach the positive ones:
+00:03:27,740 --> 00:03:29,723
+zero, so the curve is flat at its
 
 100
-00:03:30,458 --> 00:03:32,383
-pi over two, three pi over two, and
+00:03:29,825 --> 00:03:30,405
+lowest point.
 
 101
-00:03:32,424 --> 00:03:32,704
-so on.
+00:03:31,149 --> 00:03:32,175
+Worked example two.
 
 102
-00:03:33,407 --> 00:03:35,373
-So x can't be the natural log of
+00:03:32,819 --> 00:03:35,663
+Differentiate y equals tan of e to the
 
 103
-00:03:35,475 --> 00:03:37,561
-pi over two, or the natural log of
+00:03:35,885 --> 00:03:38,308
+x, and say where the derivative exists.
 
 104
-00:03:37,582 --> 00:03:39,087
-three pi over two, and so on.
+00:03:39,071 --> 00:03:41,295
+The inside is e to the x, and
 
 105
-00:03:39,771 --> 00:03:41,398
-To the left, there are no walls at
+00:03:41,416 --> 00:03:43,220
+its derivative is e to the x as
 
 106
-00:03:41,500 --> 00:03:43,549
-all, and the curve flattens towards zero.
+00:03:43,281 --> 00:03:43,440
+well.
 
 107
-00:03:44,213 --> 00:03:46,621
-At x equals zero, the gradient is sec
+00:03:44,023 --> 00:03:46,150
+So d y by d x is e
 
 108
-00:03:46,662 --> 00:03:49,432
-squared of one, about three point four three.
+00:03:46,172 --> 00:03:48,319
+to the x, times sec squared of e
 
 109
-00:03:49,948 --> 00:03:51,638
-Here's how to keep the constants in the
+00:03:48,541 --> 00:03:49,022
+to the x.
 
 110
-00:03:51,699 --> 00:03:52,342
-right places.
+00:03:49,811 --> 00:03:50,457
+Now the walls.
 
 111
-00:03:53,288 --> 00:03:55,911
-Powers multiply by the natural log of a,
+00:03:51,165 --> 00:03:53,951
+Tan breaks where its inside equals pi over
 
 112
-00:03:56,754 --> 00:03:58,055
-logs divide by it,
+00:03:54,032 --> 00:03:55,375
+two, plus k pi.
 
 113
-00:03:58,637 --> 00:04:01,560
-and the inside's slope always goes on top.
+00:03:55,937 --> 00:03:58,002
+But e to the x is always positive,
 
 114
-00:04:02,664 --> 00:04:05,352
-Powers multiply, because a to the x is
+00:03:58,365 --> 00:04:00,109
+so it can only reach the positive ones:
 
 115
-00:04:05,554 --> 00:04:07,660
-e to the power of, x times the
+00:04:00,491 --> 00:04:02,416
+pi over two, three pi over two, and
 
 116
-00:04:07,701 --> 00:04:08,603
-natural log of a.
+00:04:02,457 --> 00:04:02,737
+so on.
 
 117
-00:04:09,688 --> 00:04:12,496
-Logs divide, because log base a of x
+00:04:03,440 --> 00:04:05,406
+So x can't be the natural log of
 
 118
-00:04:12,939 --> 00:04:15,044
-is the natural log of x, over the
+00:04:05,508 --> 00:04:07,594
+pi over two, or the natural log of
 
 119
-00:04:15,085 --> 00:04:15,807
-natural log of a.
+00:04:07,615 --> 00:04:09,120
+three pi over two, and so on.
 
 120
-00:04:16,971 --> 00:04:19,737
-And the inside's slope comes from the chain
+00:04:09,804 --> 00:04:11,431
+To the left, there are no walls at
 
 121
-00:04:19,778 --> 00:04:20,900
-rule, every time.
+00:04:11,533 --> 00:04:13,582
+all, and the curve flattens towards zero.
 
 122
-00:04:21,866 --> 00:04:24,480
-Try log base seven of, two x plus
+00:04:14,246 --> 00:04:16,654
+At x equals zero, the gradient is sec
 
 123
-00:04:24,521 --> 00:04:24,761
-three.
+00:04:16,695 --> 00:04:19,465
+squared of one, about three point four three.
 
 124
-00:04:25,405 --> 00:04:26,427
-The two goes on top,
+00:04:19,981 --> 00:04:21,672
+Here's how to keep the constants in the
 
 125
-00:04:26,950 --> 00:04:29,217
-and two x plus three, times the natural
+00:04:21,732 --> 00:04:22,376
+right places.
 
 126
-00:04:29,239 --> 00:04:30,944
-log of seven, goes underneath.
+00:04:23,321 --> 00:04:25,945
+Powers multiply by the natural log of a,
 
 127
-00:04:31,589 --> 00:04:33,923
-Then check the domain the inside allows.
+00:04:26,787 --> 00:04:28,089
+logs divide by it,
 
 128
-00:04:36,650 --> 00:04:37,053
-Your turn.
+00:04:28,670 --> 00:04:31,594
+and the inside's slope always goes on top.
 
 129
-00:04:37,738 --> 00:04:40,499
-Find the exact gradient of the curve y
+00:04:32,697 --> 00:04:35,386
+Powers multiply, because a to the x is
 
 130
-00:04:40,640 --> 00:04:42,941
-equals five to the x squared, at the
+00:04:35,587 --> 00:04:37,694
+e to the power of, x times the
 
 131
-00:04:42,982 --> 00:04:44,883
-point where x equals one.
+00:04:37,734 --> 00:04:38,637
+natural log of a.
 
 132
-00:04:45,547 --> 00:04:46,380
-Pause here to answer.
+00:04:39,721 --> 00:04:42,530
+Logs divide, because log base a of x
 
 133
-00:04:57,048 --> 00:04:59,071
-The outside is five to the power of
+00:04:42,972 --> 00:04:45,078
+is the natural log of x, over the
 
 134
-00:04:59,112 --> 00:05:01,817
-an inside, so copy it and multiply by
+00:04:45,118 --> 00:04:45,841
+natural log of a.
 
 135
-00:05:01,858 --> 00:05:03,200
-the natural log of five.
+00:04:47,004 --> 00:04:49,771
+And the inside's slope comes from the chain
 
 136
-00:05:03,903 --> 00:05:06,797
-The inside is x squared, so multiply by
+00:04:49,811 --> 00:04:50,934
+rule, every time.
 
 137
-00:05:06,919 --> 00:05:07,943
-two x as well.
+00:04:51,899 --> 00:04:54,514
+Try log base seven of, two x plus
 
 138
-00:05:08,706 --> 00:05:11,248
-At x equals one, that's two, times the
+00:04:54,554 --> 00:04:54,795
+three.
 
 139
-00:05:11,289 --> 00:05:13,870
-natural log of five, times five, which is
+00:04:55,438 --> 00:04:56,461
+The two goes on top,
 
 140
-00:05:13,951 --> 00:05:15,852
-ten times the natural log of five.
+00:04:56,983 --> 00:04:59,251
+and two x plus three, times the natural
 
 141
-00:05:16,554 --> 00:05:18,719
-Five times the natural log of five has
+00:04:59,272 --> 00:05:00,978
+log of seven, goes underneath.
 
 142
-00:05:18,821 --> 00:05:20,425
-dropped the inside's two x.
+00:05:01,622 --> 00:05:03,957
+Then check the domain the inside allows.
 
 143
-00:05:22,132 --> 00:05:22,477
-Last one.
+00:05:06,683 --> 00:05:07,087
+Your turn.
 
 144
-00:05:23,088 --> 00:05:26,816
-Differentiate y equals log base two of, four
+00:05:07,771 --> 00:05:10,533
+Find the exact gradient of the curve y
 
 145
-00:05:26,858 --> 00:05:28,861
-minus x, and state its domain.
+00:05:10,673 --> 00:05:12,975
+equals five to the x squared, at the
 
 146
-00:05:29,490 --> 00:05:30,282
-Pause here to answer.
+00:05:13,015 --> 00:05:14,917
+point where x equals one.
 
 147
-00:05:40,834 --> 00:05:41,634
-Domain first:
+00:05:15,580 --> 00:05:16,414
+Pause here to answer.
 
 148
-00:05:42,215 --> 00:05:45,317
-the inside must be positive, so four minus
+00:05:27,081 --> 00:05:29,105
+The outside is five to the power of
 
 149
-00:05:45,478 --> 00:05:47,599
-x is positive, and x is less than
+00:05:29,145 --> 00:05:31,851
+an inside, so copy it and multiply by
 
 150
-00:05:47,660 --> 00:05:47,859
-four.
+00:05:31,891 --> 00:05:33,234
+the natural log of five.
 
 151
-00:05:48,662 --> 00:05:50,709
-The inside's derivative is minus one.
+00:05:33,936 --> 00:05:36,831
+The inside is x squared, so multiply by
 
 152
-00:05:51,372 --> 00:05:53,613
-So d y by d x is minus
+00:05:36,952 --> 00:05:37,977
+two x as well.
 
 153
-00:05:53,714 --> 00:05:56,755
-one, over four minus x, times the natural
+00:05:38,739 --> 00:05:41,282
+At x equals one, that's two, times the
 
 154
-00:05:56,816 --> 00:05:58,917
-log of two, for x less than four.
+00:05:41,322 --> 00:05:43,904
+natural log of five, times five, which is
 
 155
-00:05:59,819 --> 00:06:01,923
-Without the minus, the slope would be positive,
+00:05:43,984 --> 00:05:45,886
+ten times the natural log of five.
 
 156
-00:06:02,345 --> 00:06:05,050
-but this log falls, because its inside shrinks
+00:05:46,588 --> 00:05:48,753
+Five times the natural log of five has
 
 157
-00:06:05,351 --> 00:06:06,052
-as x grows.
+00:05:48,855 --> 00:05:50,459
+dropped the inside's two x.
 
 158
-00:06:07,720 --> 00:06:10,445
-So for every composite, keep two factors, the
+00:05:52,165 --> 00:05:52,511
+Last one.
 
 159
-00:06:10,526 --> 00:06:13,391
-outside's slope at the inside and the inside's
+00:05:53,121 --> 00:05:56,850
+Differentiate y equals log base two of, four
 
 160
-00:06:13,671 --> 00:06:16,356
-own slope, and let the inside decide the
+00:05:56,891 --> 00:05:58,895
+minus x, and state its domain.
 
 161
-00:06:16,377 --> 00:06:16,637
-domain.
+00:05:59,523 --> 00:06:00,316
+Pause here to answer.
 
 162
-00:06:17,518 --> 00:06:19,440
-If a question mixes these with a product
+00:06:10,867 --> 00:06:11,667
+Domain first:
 
 163
-00:06:19,520 --> 00:06:22,283
-or a quotient, find the last operation first,
+00:06:12,248 --> 00:06:15,350
+the inside must be positive, so four minus
 
 164
-00:06:22,443 --> 00:06:24,565
-as before, and use these rules for the
+00:06:15,511 --> 00:06:17,632
+x is positive, and x is less than
 
 165
-00:06:24,605 --> 00:06:25,566
-pieces inside it.
+00:06:17,693 --> 00:06:17,892
+four.
 
 166
-00:06:26,188 --> 00:06:28,375
-That finishes the derivatives you need for every
+00:06:18,695 --> 00:06:20,742
+The inside's derivative is minus one.
 
 167
-00:06:28,415 --> 00:06:29,759
-function family in this strand.
+00:06:21,405 --> 00:06:23,646
+So d y by d x is minus
 
 168
-00:06:30,462 --> 00:06:33,219
-Next, we'll use these derivatives to build lines.
+00:06:23,747 --> 00:06:26,788
+one, over four minus x, times the natural
 
 169
-00:06:34,064 --> 00:06:37,012
-Here's y equals cos two x, and the
+00:06:26,849 --> 00:06:28,950
+log of two, for x less than four.
 
 170
-00:06:37,052 --> 00:06:38,957
-point where x equals pi over six.
+00:06:29,852 --> 00:06:31,956
+Without the minus, the slope would be positive,
 
 171
-00:06:39,639 --> 00:06:41,941
-Its derivative is minus two sine two x,
+00:06:32,378 --> 00:06:35,083
+but this log falls, because its inside shrinks
 
 172
-00:06:42,281 --> 00:06:44,483
-so the gradient there is minus root three.
+00:06:35,384 --> 00:06:36,085
+as x grows.
 
 173
-00:06:45,365 --> 00:06:47,933
-What line just touches the curve there, and
+00:06:37,754 --> 00:06:40,478
+So for every composite, keep two factors, the
 
 174
-00:06:47,973 --> 00:06:49,739
-what line meets it at right angles?
+00:06:40,560 --> 00:06:43,424
+outside's slope at the inside and the inside's
 
 175
-00:06:52,421 --> 00:06:53,264
-Here are the key notes.
+00:06:43,705 --> 00:06:46,389
+own slope, and let the inside decide the
 
 176
-00:06:53,886 --> 00:06:55,435
-Pause the video if you need more time
+00:06:46,411 --> 00:06:46,670
+domain.
 
 177
-00:06:55,475 --> 00:06:55,917
+00:06:47,552 --> 00:06:49,473
+If a question mixes these with a product
+
+178
+00:06:49,554 --> 00:06:52,316
+or a quotient, find the last operation first,
+
+179
+00:06:52,477 --> 00:06:54,598
+as before, and use these rules for the
+
+180
+00:06:54,639 --> 00:06:55,599
+pieces inside it.
+
+181
+00:06:56,222 --> 00:06:58,408
+That finishes the derivatives you need for every
+
+182
+00:06:58,449 --> 00:06:59,792
+function family in this strand.
+
+183
+00:07:00,496 --> 00:07:03,252
+Next, we'll use these derivatives to build lines.
+
+184
+00:07:04,098 --> 00:07:07,045
+Here's y equals cos two x, and the
+
+185
+00:07:07,086 --> 00:07:08,990
+point where x equals pi over six.
+
+186
+00:07:09,673 --> 00:07:11,974
+Its derivative is minus two sine two x,
+
+187
+00:07:12,315 --> 00:07:14,516
+so the gradient there is minus root three.
+
+188
+00:07:15,399 --> 00:07:17,966
+What line just touches the curve there, and
+
+189
+00:07:18,007 --> 00:07:19,772
+what line meets it at right angles?
+
+190
+00:07:22,455 --> 00:07:23,297
+Here are the key notes.
+
+191
+00:07:23,920 --> 00:07:25,468
+Pause the video if you need more time
+
+192
+00:07:25,509 --> 00:07:25,950
 to copy them.

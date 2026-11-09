@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v15.md",
+  "sourceSha256": "2c5b85035e9b564cc0c3b7a2c75775eb02f63bce515538f7a15525b92381ac9d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-ions",
+      "text": "Here's some bore water, pumped from underground on a farm. Too much chloride makes water taste salty, and it can harm crops and stock. But chloride ions are invisible in solution, and you can't weigh them while they're dissolved. Add silver nitrate, though, and a white solid forms. Every chloride ion that meets a silver ion gets locked into that solid. So if we collect the solid and weigh it, we can count the chloride.",
+      "audioFile": "public/audio/chem-y11-m2-v15/hook-ions.wav"
+    },
+    {
+      "id": "precipitate-ratio",
+      "text": "A solid that forms when two solutions react, and doesn't dissolve, is called a precipitate. This one is silver chloride, and it barely dissolves at all. That matters, because any that dissolved would slip through the filter and never be weighed. One silver ion and one chloride ion make each unit of it, a one to one ratio. The other ions, like sodium and nitrate, don't join in. They stay dissolved. Finding an amount by turning it into a solid and weighing it is called gravimetric analysis.",
+      "audioFile": "public/audio/chem-y11-m2-v15/precipitate-ratio.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Suppose some chloride ions are still dissolved when you filter the solid off. Think about where they end up. Will your answer come out too high, or too low?",
+      "audioFile": "public/audio/chem-y11-m2-v15/prediction.wav"
+    },
+    {
+      "id": "excess-test",
+      "text": "Too low. Chloride left in the solution never reaches the balance. So you add silver nitrate in excess, which means more than enough, to pull out every chloride ion. To check, let the solid settle, then add one more drop to the clear liquid on top. If no new cloudiness appears, the chloride is all out. Silver nitrate is corrosive and stains skin, so wear gloves and glasses, and collect all the silver waste for recovery.",
+      "audioFile": "public/audio/chem-y11-m2-v15/excess-test.wav"
+    },
+    {
+      "id": "filter-wash",
+      "text": "Next, filter it through a filter paper you've already weighed. Rinse every speck of solid out of the beaker, because any left behind makes the answer too low. Then wash the solid on the paper with the wash liquid your method specifies. The liquid soaked into it still holds dissolved silver nitrate and sodium nitrate. Leave them there, and they'd dry onto the solid, add mass, and make the answer too high.",
+      "audioFile": "public/audio/chem-y11-m2-v15/filter-wash.wav"
+    },
+    {
+      "id": "constant-mass",
+      "text": "Now dry it. The paper and solid go into an oven, then cool in a desiccator, a sealed container with a drying agent, so they can't pick up water from the air as they cool. Then weigh. But one weighing doesn't prove it's dry. So you heat, cool and weigh again, until two readings in a row agree. That's called drying to constant mass. Here the readings fall, then settle at two point three four seven five grams.",
+      "audioFile": "public/audio/chem-y11-m2-v15/constant-mass.wav"
+    },
+    {
+      "id": "mass-to-moles",
+      "text": "Now the calculation. The paper alone weighed zero point nine one two five grams, so the silver chloride is one point four three five zero grams. Turn that into moles using the molar mass of silver chloride, because that's what's on the balance, not chloride alone. One hundred and seven point nine plus thirty-five point four five is one hundred and forty-three point three five. So that's one point zero zero one times ten to the minus two moles of silver chloride.",
+      "audioFile": "public/audio/chem-y11-m2-v15/mass-to-moles.wav"
+    },
+    {
+      "id": "ratio-concentration",
+      "text": "One to one, so the sample held one point zero zero one times ten to the minus two moles of chloride ions. That was in five hundred millilitres, so the concentration is zero point zero two zero zero two moles per litre. As a mass, that chloride is zero point three five four nine grams, and dividing by half a litre gives about seven hundred and ten milligrams per litre. Same pattern as the titration: mass to moles, ratio, unknown.",
+      "audioFile": "public/audio/chem-y11-m2-v15/ratio-concentration.wav"
+    },
+    {
+      "id": "error-pattern",
+      "text": "So every step protects one of two things. First, catch every chloride ion: excess silver nitrate, every speck transferred, careful filtering. Anything lost makes the answer too low. Second, weigh nothing else: wash out the dissolved salts, dry to constant mass, and subtract the paper. Anything extra makes it too high. Every ion caught, nothing else weighed.",
+      "audioFile": "public/audio/chem-y11-m2-v15/error-pattern.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Excess silver nitrate is added to twenty-five point zero zero millilitres of magnesium chloride solution. The dry silver chloride weighs zero point seven one six eight grams. Using silver one hundred and seven point nine and chlorine thirty-five point four five, calculate the concentration of the magnesium chloride solution. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v15/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Zero point seven one six eight over one hundred and forty-three point three five is five point zero zero zero times ten to the minus three moles of silver chloride, so the same moles of chloride ions. But each magnesium chloride gives two chloride ions, so halve it: two point five zero zero times ten to the minus three moles. Divided by zero point zero two five zero zero litres, that's zero point one zero zero zero moles per litre. Skip the ratio, and you'd get zero point two zero zero zero, double.",
+      "audioFile": "public/audio/chem-y11-m2-v15/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student filtered the silver chloride but didn't wash it before drying and weighing. Explain the effect on the calculated chloride concentration. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v15/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Too high. Without washing, the liquid soaked into the solid still holds dissolved silver nitrate and sodium nitrate. When it dries, those salts stay behind, so the mass is more than the silver chloride alone. More mass means more calculated moles, and a higher concentration. No effect is wrong, because the balance can't tell which solid is which.",
+      "audioFile": "public/audio/chem-y11-m2-v15/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So a precipitate turns dissolved ions into a mass, and the formula of the solid links that mass back to the ions. We can now get moles from a mass, from a solution, and through a precipitate. Gases are harder. They're light, and they spread to fill any container. Here are three jars of hydrogen, oxygen and carbon dioxide, each one litre at the same temperature and pressure, with very different masses. Do they hold the same number of particles? Why do equal gas volumes contain equal amounts at the same conditions?",
+      "audioFile": "public/audio/chem-y11-m2-v15/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v15/key-notes.wav"
+    }
+  ]
+}

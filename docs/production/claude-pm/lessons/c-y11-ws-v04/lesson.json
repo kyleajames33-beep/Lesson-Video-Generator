@@ -1,0 +1,188 @@
+{
+  "id": "chem-y11-ws-v04",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "e9f5bbcea118b1ad857123fb07927ac1c267881852c9b02b1754bd7ed5f95d4a",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: five runs, one mess",
+      "voiceover": {
+        "text": "Last time, one run of the magnesium method gave a molar mass of twenty-four point seven. Then the class did five runs, with five different masses of ribbon, and this is what they wrote down. These are raw readings, exactly what the instruments showed, in whatever form someone scribbled them. Milligrams in one line, grams in another, a missing unit, and no gas volumes at all. So how do we turn this into a result we can trust?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "select",
+      "title": "select the data that matter",
+      "voiceover": {
+        "text": "First, select what bears on the question. The question needs numbers, the mass of each ribbon and the burette readings. That's quantitative data, numbers with units. But one line also has a description, ribbon floated, some bubbles escaped. That's qualitative data, a description without numbers, and it matters too, because it tells us something went wrong in that run. Keep both."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "table",
+      "title": "a table with headed units",
+      "voiceover": {
+        "text": "Now build a table. The independent variable, the mass of magnesium, goes in the first column. Each heading names the quantity and its unit, so the cells hold plain numbers. Twelve milligrams becomes zero point zero one two grams, so every mass is in the same unit. And every value in a column gets the same number of decimal places, set by the instrument. The balance reads to a thousandth of a gram, so masses get three places."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "decimal-places",
+      "title": "the burette's decimal places",
+      "voiceover": {
+        "text": "A burette reads to about five hundredths of a millilitre, so its readings get two decimal places. Run two's forty-nine point two should be written forty-nine point two zero. That final zero isn't decoration. It tells a reader the burette was read that finely."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. In run one, the burette went from forty-eight point five zero to thirty-six point four zero. Is the volume of hydrogen thirty-six point four zero millilitres?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "processed-column",
+      "title": "a processed column, and a spreadsheet",
+      "voiceover": {
+        "text": "No. The burette is upside down, so its readings fall as gas collects. The gas volume is the change, start minus end, twelve point one zero millilitres. That's processed data, calculated from the raw readings. A spreadsheet can do it for every row, then turn each volume into moles of hydrogen, and each mass and amount into a molar mass. But a spreadsheet repeats a formula exactly, mistakes included, so check one row by hand. Run five gives twenty-four point seven, just like last time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "anomaly",
+      "title": "one result doesn't fit",
+      "voiceover": {
+        "text": "Now the processing shows something the raw readings hid. Four runs give molar masses between twenty-four point one and twenty-four point seven. Run three gives thirty-one. That's an anomalous result, one that doesn't fit the pattern of the others. And the qualitative note explains it. Some bubbles escaped, so less hydrogen was counted, which pushes the molar mass up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "exclude-repeat",
+      "title": "leave it out, with a reason, then repeat it",
+      "voiceover": {
+        "text": "So leave run three out of the average, but don't delete it. Keep it in the table, marked, with the reason written underneath. The mean of the other four is twenty-four point five. With run three in, it would be twenty-five point eight, dragged away by one faulty run. The best fix is to repeat run three. The other four already agree closely, so they're precise, and a consistent repeat would make the whole set more reliable."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "format",
+      "title": "choosing a format",
+      "voiceover": {
+        "text": "A table keeps every value. But to see the pattern, draw a graph. Which kind? Both the mass and the volume are measured numbers that can take any value in between, so plot them as points on a scatter graph. A column graph is for separate categories, like comparing different metals, so it's the wrong choice here."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "graph-rules",
+      "title": "graph rules and the line of best fit",
+      "voiceover": {
+        "text": "Mass, the independent variable, goes across. Volume goes up. Each axis title names the quantity and its unit, and each scale goes up in even steps. Plot each run as a small cross. Then draw a line of best fit, a line that follows the trend, with the points scattered evenly about it. Don't join the dots. This line goes through zero, because no magnesium makes no hydrogen, and it ignores the ringed point."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "gradient",
+      "title": "the gradient is the result",
+      "voiceover": {
+        "text": "Now the graph does the processing. The gradient, how steeply the line rises, is the rise divided by the run, about one thousand and nine millilitres for every gram of magnesium. One mole of hydrogen takes twenty-four thousand seven hundred and ninety millilitres. So divide that by the gradient, and the units cancel to grams per mole. The molar mass is twenty-four point six grams per mole. That's close to the mean, but it uses every good run at once, and shows the pattern really is a straight line. Here's a line to remember. Units in the headings, the pattern in the graph, and a reason for every point you leave out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn, with the copper sulfate crystals from earlier. A student heats two point five zero grams of crystals in a crucible, and weighs the crucible and contents every two minutes. Draw up a table with suitable headings, including one processed column for the mass of water lost. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Time goes first, because it's the independent variable. Then the mass of the crucible and contents, in grams. The processed column is the mass of water lost, the first reading minus each reading, so zero, zero point five two, up to zero point nine zero. Units belong in the headings. Writing grams in every cell, with no quantity in the heading, is the classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. What type of graph should the student draw for these results, and how should the points be joined? Justify your answer. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "A line graph, with time across and mass of water lost up, because both are continuous measurements. Draw a smooth curve of best fit that levels off at zero point nine zero grams, because the loss slows as the water runs out. It isn't a straight line, and it isn't dot to dot. A column for each reading is the classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: is the gap real?",
+      "voiceover": {
+        "text": "So the class's raw readings became one result, twenty-four point six grams per mole, from a graph that uses every good run. The accepted value is twenty-four point three one. Is that gap a real difference, or is it within the limits of the measurements we made? Next time, we'll judge uncertainty, and the limits of a chemistry result."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 50 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

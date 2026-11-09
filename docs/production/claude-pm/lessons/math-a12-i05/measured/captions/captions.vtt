@@ -1,0 +1,655 @@
+WEBVTT
+
+00:00:00.341 --> 00:00:02.667
+Last video ended here, with the sine curve,
+
+00:00:03.108 --> 00:00:04.010
+x in radians.
+
+00:00:04.893 --> 00:00:06.509
+Here's where a sine hump turns up.
+
+00:00:07.134 --> 00:00:09.181
+A home's solar panels make no power at
+
+00:00:09.222 --> 00:00:11.870
+sunrise, the most at noon, and none again
+
+00:00:11.951 --> 00:00:12.613
+at sunset.
+
+00:00:13.396 --> 00:00:15.702
+The energy they've collected keeps building all day,
+
+00:00:16.064 --> 00:00:16.945
+fastest at noon.
+
+00:00:17.769 --> 00:00:19.214
+Its gradient is the power,
+
+00:00:19.717 --> 00:00:21.804
+so the energy curve is a primitive of
+
+00:00:21.906 --> 00:00:22.547
+a sine curve.
+
+00:00:23.653 --> 00:00:25.780
+So which curve has gradient sine x?
+
+00:00:26.627 --> 00:00:27.918
+Cos x is the obvious guess.
+
+00:00:28.747 --> 00:00:30.121
+Test it at pi over two.
+
+00:00:30.907 --> 00:00:33.015
+Sine x is one there, so our curve
+
+00:00:33.036 --> 00:00:34.823
+should be climbing, with gradient one.
+
+00:00:35.466 --> 00:00:38.039
+But cos x is falling there, with gradient
+
+00:00:38.181 --> 00:00:38.764
+minus one.
+
+00:00:39.408 --> 00:00:40.696
+The guess has the wrong sign.
+
+00:00:41.705 --> 00:00:43.276
+So where does the minus sign go?
+
+00:00:43.931 --> 00:00:44.561
+Check another point.
+
+00:00:45.108 --> 00:00:47.976
+At three pi over two, sine x is
+
+00:00:48.137 --> 00:00:50.865
+minus one, but cos x is climbing there,
+
+00:00:51.067 --> 00:00:51.929
+with gradient one.
+
+00:00:53.052 --> 00:00:55.436
+Everywhere, the gradient of cos x is minus
+
+00:00:55.578 --> 00:00:57.641
+sine x, the exact opposite of what we
+
+00:00:57.682 --> 00:00:57.842
+need.
+
+00:00:58.628 --> 00:01:00.601
+So turn cos x upside down.
+
+00:01:01.145 --> 00:01:03.610
+Flipping a curve upside down reverses every slope,
+
+00:01:03.852 --> 00:01:04.573
+at the same x.
+
+00:01:05.656 --> 00:01:08.299
+Now minus cos x climbs from zero to
+
+00:01:08.360 --> 00:01:08.760
+pi,
+
+00:01:09.402 --> 00:01:12.165
+exactly where sine x is positive, and falls
+
+00:01:12.306 --> 00:01:14.288
+from pi to two pi, where sine x
+
+00:01:14.409 --> 00:01:14.909
+is negative.
+
+00:01:16.054 --> 00:01:18.264
+Watch the gradient of minus cos x as
+
+00:01:18.285 --> 00:01:19.409
+a point moves along.
+
+00:01:20.053 --> 00:01:21.741
+It traces sine x exactly.
+
+00:01:22.604 --> 00:01:26.029
+Differentiate back: minus cos x has derivative minus,
+
+00:01:26.351 --> 00:01:28.333
+minus sine x, which is sine x.
+
+00:01:28.936 --> 00:01:30.881
+So the integral of sine x is minus
+
+00:01:30.922 --> 00:01:32.225
+cos x, plus C.
+
+00:01:32.861 --> 00:01:34.390
+Cos x is the easier one.
+
+00:01:34.933 --> 00:01:37.345
+From the derivative rules, the gradient of sine
+
+00:01:37.405 --> 00:01:38.491
+x is cos x.
+
+00:01:39.295 --> 00:01:41.841
+At zero, sine x climbs with gradient one,
+
+00:01:42.263 --> 00:01:43.605
+and cos of zero is one.
+
+00:01:44.329 --> 00:01:47.040
+At pi over two it's flat, and cos
+
+00:01:47.062 --> 00:01:48.427
+of pi over two is zero.
+
+00:01:49.211 --> 00:01:51.456
+So the integral of cos x is sine
+
+00:01:51.497 --> 00:01:52.719
+x, plus C,
+
+00:01:53.221 --> 00:01:54.282
+with no minus sign.
+
+00:01:55.206 --> 00:01:57.651
+Both rules come from derivatives that only work
+
+00:01:57.712 --> 00:02:00.678
+with x in radians, so these primitives need
+
+00:02:00.739 --> 00:02:01.399
+radians too.
+
+00:02:02.021 --> 00:02:04.068
+The third rule comes from tan x.
+
+00:02:04.992 --> 00:02:07.118
+In an earlier video, the derivative of tan
+
+00:02:07.160 --> 00:02:09.527
+x was sec squared x, which means one
+
+00:02:09.569 --> 00:02:10.471
+over cos squared x.
+
+00:02:11.114 --> 00:02:13.345
+So the integral of sec squared x is
+
+00:02:13.425 --> 00:02:14.631
+tan x, plus C.
+
+00:02:15.757 --> 00:02:16.321
+Look at the graphs.
+
+00:02:17.007 --> 00:02:19.153
+Cos squared x is at most one,
+
+00:02:19.735 --> 00:02:21.801
+so sec squared x is never less than
+
+00:02:21.921 --> 00:02:22.021
+one,
+
+00:02:22.663 --> 00:02:24.950
+and tan x climbs all along each piece.
+
+00:02:26.154 --> 00:02:28.622
+At pi over four, its gradient is two,
+
+00:02:29.265 --> 00:02:31.452
+and sec squared of pi over four is
+
+00:02:31.694 --> 00:02:31.914
+two.
+
+00:02:32.818 --> 00:02:35.308
+But tan x has asymptotes, wherever cos x
+
+00:02:35.409 --> 00:02:37.376
+is zero, such as at pi over two.
+
+00:02:38.119 --> 00:02:40.466
+So, like the natural log of mod x
+
+00:02:40.568 --> 00:02:43.216
+last video, the answer works on one piece
+
+00:02:43.277 --> 00:02:43.718
+at a time.
+
+00:02:44.529 --> 00:02:45.755
+Now put an inside in.
+
+00:02:46.500 --> 00:02:49.395
+Find the integral of fifteen cos five x.
+
+00:02:50.100 --> 00:02:51.172
+Try sine five x.
+
+00:02:52.021 --> 00:02:55.009
+On the graph, that's sine x squashed sideways
+
+00:02:55.070 --> 00:02:57.678
+by a factor of five, so every slope
+
+00:02:57.819 --> 00:02:58.901
+is multiplied by five.
+
+00:02:59.785 --> 00:03:02.354
+Its derivative is five cos five x.
+
+00:03:03.017 --> 00:03:05.542
+We need fifteen cos five x, which is
+
+00:03:05.644 --> 00:03:06.645
+three times as much.
+
+00:03:07.529 --> 00:03:10.075
+So the answer is three sine five x,
+
+00:03:10.618 --> 00:03:10.938
+plus C.
+
+00:03:11.922 --> 00:03:12.684
+Differentiate back:
+
+00:03:13.227 --> 00:03:16.397
+three times five cos five x is fifteen
+
+00:03:16.518 --> 00:03:17.320
+cos five x.
+
+00:03:18.164 --> 00:03:19.709
+It's the same cause as the last two
+
+00:03:19.771 --> 00:03:20.131
+videos.
+
+00:03:20.774 --> 00:03:23.479
+A linear inside multiplies the gradient by its
+
+00:03:23.580 --> 00:03:23.820
+rate,
+
+00:03:24.342 --> 00:03:26.205
+so the primitive divides by it.
+
+00:03:27.135 --> 00:03:28.060
+Back to the solar panels.
+
+00:03:28.645 --> 00:03:31.750
+With t in hours after sunrise, their power
+
+00:03:31.871 --> 00:03:34.616
+is five sine of pi t over twelve
+
+00:03:34.677 --> 00:03:35.177
+kilowatts.
+
+00:03:35.879 --> 00:03:38.166
+The inner rate is pi over twelve, so
+
+00:03:38.227 --> 00:03:38.828
+divide by it.
+
+00:03:39.411 --> 00:03:42.482
+The energy is minus sixty over pi, times
+
+00:03:42.563 --> 00:03:44.651
+cos of pi t over twelve, plus C.
+
+00:03:45.716 --> 00:03:48.064
+At sunrise the energy is zero, and cos
+
+00:03:48.085 --> 00:03:49.569
+of zero is one, so C
+
+00:03:50.092 --> 00:03:51.055
+is sixty over pi.
+
+00:03:51.719 --> 00:03:54.396
+By noon, that's about nineteen kilowatt hours.
+
+00:03:54.920 --> 00:03:57.269
+By sunset, double that, about thirty-eight.
+
+00:03:57.914 --> 00:04:00.089
+Half the day's energy comes before noon.
+
+00:04:00.881 --> 00:04:03.634
+Next, the integral of two sec squared, of
+
+00:04:03.754 --> 00:04:05.622
+two x minus pi over three.
+
+00:04:06.405 --> 00:04:08.551
+The inside has rate two, and the two
+
+00:04:08.611 --> 00:04:09.594
+in front matches it.
+
+00:04:10.075 --> 00:04:12.161
+So the answer is just tan of two
+
+00:04:12.301 --> 00:04:14.487
+x minus pi over three, plus C.
+
+00:04:15.350 --> 00:04:15.611
+Check:
+
+00:04:16.154 --> 00:04:18.263
+its derivative is two sec squared of two
+
+00:04:18.383 --> 00:04:19.488
+x minus pi over three.
+
+00:04:20.332 --> 00:04:22.257
+The minus pi over three is a slide,
+
+00:04:22.579 --> 00:04:24.042
+and a slide changes no slopes.
+
+00:04:24.748 --> 00:04:25.578
+Keep the asymptotes.
+
+00:04:26.025 --> 00:04:27.893
+They're where two x minus pi over three
+
+00:04:28.014 --> 00:04:30.565
+equals pi over two, plus any multiple of
+
+00:04:30.626 --> 00:04:30.906
+pi.
+
+00:04:31.408 --> 00:04:33.594
+That's at x equals five pi over twelve,
+
+00:04:33.955 --> 00:04:35.699
+and every pi over two from there.
+
+00:04:36.309 --> 00:04:38.323
+What if the inside isn't linear?
+
+00:04:39.008 --> 00:04:41.734
+Find the integral of minus two x, times
+
+00:04:41.836 --> 00:04:43.539
+sine of x squared plus one.
+
+00:04:44.323 --> 00:04:46.230
+The inside is x squared plus one,
+
+00:04:46.733 --> 00:04:49.021
+and its derivative, two x, is out the
+
+00:04:49.062 --> 00:04:49.242
+front.
+
+00:04:50.066 --> 00:04:52.412
+And minus sine is the derivative of cos.
+
+00:04:52.995 --> 00:04:55.102
+So this is the chain rule in reverse,
+
+00:04:55.645 --> 00:04:57.833
+and the answer is cos of x squared
+
+00:04:57.854 --> 00:04:59.017
+plus one, plus C.
+
+00:04:59.842 --> 00:05:00.644
+Differentiate back:
+
+00:05:01.207 --> 00:05:03.776
+minus sine of x squared plus one, times
+
+00:05:03.878 --> 00:05:04.278
+two x.
+
+00:05:05.004 --> 00:05:05.893
+That's what we started with.
+
+00:05:06.683 --> 00:05:08.700
+The inner derivative has to be there.
+
+00:05:09.385 --> 00:05:11.392
+Cos of x squared, on its own, has
+
+00:05:11.513 --> 00:05:13.720
+no two x out the front, so these
+
+00:05:13.802 --> 00:05:14.865
+rules can't integrate it.
+
+00:05:15.495 --> 00:05:17.988
+The same reverse chain rule works for cos
+
+00:05:18.170 --> 00:05:19.174
+and sec squared.
+
+00:05:19.999 --> 00:05:22.609
+Find the integral of three x squared, times
+
+00:05:22.730 --> 00:05:23.914
+cos of x cubed.
+
+00:05:24.618 --> 00:05:27.103
+The inside is x cubed, and three x
+
+00:05:27.144 --> 00:05:29.188
+squared is its derivative, out the front.
+
+00:05:29.790 --> 00:05:31.856
+So the answer is sine of x cubed,
+
+00:05:32.017 --> 00:05:32.438
+plus C.
+
+00:05:33.421 --> 00:05:34.543
+Now a harder-looking one:
+
+00:05:35.146 --> 00:05:37.871
+cos x, times sec squared of sine x.
+
+00:05:38.654 --> 00:05:41.321
+The inside is sine x, and its derivative,
+
+00:05:41.442 --> 00:05:42.665
+cos x, is out the front,
+
+00:05:43.188 --> 00:05:45.253
+so the answer is tan of sine x,
+
+00:05:45.394 --> 00:05:45.794
+plus C.
+
+00:05:46.701 --> 00:05:47.733
+What about the asymptotes?
+
+00:05:48.521 --> 00:05:51.134
+Tan needs its inside to avoid pi over
+
+00:05:51.195 --> 00:05:51.435
+two.
+
+00:05:52.100 --> 00:05:54.403
+But sine x stays between minus one and
+
+00:05:54.584 --> 00:05:54.704
+one,
+
+00:05:55.326 --> 00:05:57.148
+and pi over two is about one point
+
+00:05:57.209 --> 00:05:57.749
+five seven,
+
+00:05:58.271 --> 00:05:59.031
+so it never gets there.
+
+00:05:59.676 --> 00:06:01.310
+This answer works for every x.
+
+00:06:01.882 --> 00:06:03.391
+Here's a way to remember the signs.
+
+00:06:04.132 --> 00:06:07.235
+Differentiating moves one step forward around this wheel:
+
+00:06:07.795 --> 00:06:11.718
+sine, cos, minus sine, minus cos, and back
+
+00:06:11.738 --> 00:06:12.099
+to sine.
+
+00:06:13.042 --> 00:06:14.931
+Integrating moves one step back.
+
+00:06:15.634 --> 00:06:17.863
+One step back from sine is minus cos.
+
+00:06:18.527 --> 00:06:20.326
+One step back from cos is sine.
+
+00:06:21.131 --> 00:06:22.558
+Sec squared isn't on the wheel.
+
+00:06:22.820 --> 00:06:23.593
+It comes from tan.
+
+00:06:26.303 --> 00:06:26.708
+Your turn.
+
+00:06:27.253 --> 00:06:29.983
+Find the integral of six cos three x.
+
+00:06:30.667 --> 00:06:31.496
+Pause here to answer.
+
+00:06:42.248 --> 00:06:45.237
+Sine three x has derivative three cos three
+
+00:06:45.378 --> 00:06:45.518
+x.
+
+00:06:46.141 --> 00:06:48.188
+We need six cos three x, which is
+
+00:06:48.269 --> 00:06:48.730
+twice that.
+
+00:06:49.354 --> 00:06:51.708
+So the answer is two sine three x,
+
+00:06:52.071 --> 00:06:52.432
+plus C.
+
+00:06:53.337 --> 00:06:54.198
+Differentiate back:
+
+00:06:54.701 --> 00:06:57.246
+two times three cos three x is six
+
+00:06:57.327 --> 00:06:58.088
+cos three x.
+
+00:06:58.912 --> 00:07:00.802
+Eighteen sine three x is wrong.
+
+00:07:01.265 --> 00:07:03.500
+It multiplies by the inner three, when it
+
+00:07:03.541 --> 00:07:04.084
+should divide.
+
+00:07:05.747 --> 00:07:06.135
+Last one.
+
+00:07:07.025 --> 00:07:10.240
+Find the integral of four x, times sine
+
+00:07:10.381 --> 00:07:11.205
+of x squared.
+
+00:07:12.092 --> 00:07:12.837
+Pause here to answer.
+
+00:07:23.521 --> 00:07:26.213
+The inside is x squared, with derivative two
+
+00:07:26.393 --> 00:07:26.514
+x,
+
+00:07:27.016 --> 00:07:28.462
+and four x is twice that.
+
+00:07:29.266 --> 00:07:31.602
+One step back from sine is minus cos.
+
+00:07:32.126 --> 00:07:34.354
+So the answer is minus two cos of
+
+00:07:34.474 --> 00:07:35.638
+x squared, plus C.
+
+00:07:36.501 --> 00:07:37.322
+Differentiate back:
+
+00:07:37.883 --> 00:07:40.528
+minus two, times minus sine of x squared,
+
+00:07:40.868 --> 00:07:43.754
+times two x, gives four x sine of
+
+00:07:43.994 --> 00:07:44.495
+x squared.
+
+00:07:45.259 --> 00:07:46.897
+Two cos of x squared is wrong.
+
+00:07:47.382 --> 00:07:48.997
+Its derivative has a minus sign.
+
+00:07:50.600 --> 00:07:54.103
+So each trig primitive undoes a derivative rule,
+
+00:07:54.323 --> 00:07:56.825
+with its sign, its inner rate and its
+
+00:07:56.885 --> 00:07:57.286
+plus C.
+
+00:07:58.149 --> 00:07:59.301
+That's the last of the primitives.
+
+00:08:00.130 --> 00:08:01.544
+Next, a new question.
+
+00:08:02.250 --> 00:08:03.012
+Here's cos x,
+
+00:08:03.553 --> 00:08:05.318
+from zero to pi over two,
+
+00:08:05.839 --> 00:08:08.085
+with thin rectangles standing against it.
+
+00:08:08.847 --> 00:08:10.311
+What happens when we add them up,
+
+00:08:10.814 --> 00:08:12.439
+and make them thinner and thinner?
+
+00:08:15.155 --> 00:08:16.038
+Here are the key notes.
+
+00:08:16.561 --> 00:08:18.329
+Pause the video if you need more time
+
+00:08:18.350 --> 00:08:18.831
+to copy them.

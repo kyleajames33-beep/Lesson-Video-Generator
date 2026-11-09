@@ -1,0 +1,15 @@
+# Physics Year 12 Module 8 v04 Revision 2 error check
+
+Codex, 9 November 2026. Error-only repair check. Original reviews retained. Source hash, independent calculations, plate hashes and written joins: `work/brief234/v04-calculations.json`. No design, narration, scene or speech edits.
+
+Result: 0 blockers, 1 should fix, 0 optional.
+
+Should fix, scene 5 new area-tiles stage: one Sun plate starts about 160 px wide and the other grows to ten times its radius, while the same instruction requires the larger plate to stay below its 1254 px native width. Literal tenfold scaling gives 1600 px. Set the starting plate at most 125.4 px, for example 100 px with a 1000 px larger copy, or specify a schematic size comparison without claiming a literal tenfold drawn radius. Preserve uniform scaling and the native-size limit. No narration change is required.
+
+Both prior should-fix findings and the optional Sirius B finding are repaired: increasing main-sequence mass points up-left; increasing radius remains distinct up-right; the opening matches v03's same class/peak wording; dated Bond 2017 values are used for Sirius B's temperature, luminosity and measured radius. The new marker's 0.0084 solar radii is a calculation from rounded 25000 K/0.025 solar-luminosity coordinates, not the precise Bond radius; these two uses are separately stated in Numbers used.
+
+All 17 narration and visual specifications read. The previous long diagram is broken into plot build, full-width tiles, orbit stage, Earth/Sirius stage, live diagram and working stage, with written durations no longer exceeding about 80 s. Cues are verbatim and ordered. Cards retain conditions without answers. Luminosity versus apparent brightness, reversed temperature axis, equal-temperature area reasoning, giant/dwarf regions and conceptual Sun-like stage path remain correct. The T4 formula computes radius lines/readouts but is not an unexplained student calculation.
+
+Independent calculations: marker radii 0.990368/9.903681/45.946218/0.271967/271.967216/0.00842835 solar radii agree with the rounded readouts. Equal-temperature ratios are 10, 1000, 31.622777 and 30. Betelgeuse 764 solar radii is 3.552957 AU, beyond Mars. Sirius Bond radius 0.008098 times 695700 is 5633.7786 km, 0.884285 Earth radii; the plotted rounded 5600/6371 is 0.878983, consistent with 0.88 drawn width. Bond temperature/luminosity imply 0.00809938 solar radii, consistent with the dated radius. Cool-surface factor 0.132605, site radius comparisons 66.4869 and 27.4612, and log check 0.00316228 agree. Prior named-star primary-source checks remain applicable.
+
+6067 characters matches; estimated 525 s is below 570. Written v03/v04/v05 joins match, including the rose energy tag/core ring. Five used plates visually inspected on cream in `work/brief234/v04-used-plates.jpg`; all present. Resolve scene 5 size instructions before build. No new plate request, em dash or drawn person/hand/face. Existing site notes remain for root; no site edits. Integrated HR marker, plate scaling, voiced cues, captions and human listening remain pending.

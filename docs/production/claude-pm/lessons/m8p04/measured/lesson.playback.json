@@ -1,0 +1,7379 @@
+{
+  "title": "Constructing and using a spectroscopic calibration: copper(II) standards, a blank and an unknown",
+  "subtitle": "Your eye can rank two blue solutions, but it can't tell you how much copper is in either. How do you make a set of copper(II) standards, turn their absorbances into a calibration line you can trust, and use it to find the copper in a sample you don't know?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 9,
+  "lessonIntent": "stating the aim and variables of a calibration investigation; making standards from a stock by dilution; choosing the wavelength from a scan and zeroing with a blank; handling cuvettes with reasons; plotting the calibration and finding its linear range from the data; diluting an over-range unknown, reading it across then down and multiplying back; judging reliability, accuracy (check standard) and validity; writing the risk rows for copper(II) sulfate, the unknown sample, glassware and the instrument.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 800,
+      "voiceover": {
+        "text": "Two blue solutions. Your eye can tell which one is darker, but not how much copper is in either. A calibration turns that colour into a number. You measure how much light some solutions of known concentration absorb, draw the line they make, then read a sample you don't know straight off that line. Today you build one for copper, and use it on rinse water from a copper plating workshop.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/hook.a84d6d37e59c.mp3",
+        "startFrame": 0,
+        "endFrame": 740
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 240,
+          "endMs": 580,
+          "timestampMs": 410,
+          "confidence": null
+        },
+        {
+          "text": " solutions.",
+          "startMs": 640,
+          "endMs": 1440,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " Your",
+          "startMs": 1720,
+          "endMs": 2160,
+          "timestampMs": 1940,
+          "confidence": null
+        },
+        {
+          "text": " eye",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 2640,
+          "endMs": 2800,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3320,
+          "endMs": 3440,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " darker,",
+          "startMs": 3480,
+          "endMs": 4240,
+          "timestampMs": 3860,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 4360,
+          "endMs": 4480,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 4560,
+          "endMs": 4800,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 5040,
+          "endMs": 5200,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 5280,
+          "endMs": 5680,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " either.",
+          "startMs": 6160,
+          "endMs": 6800,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " calibration",
+          "startMs": 7280,
+          "endMs": 8000,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " turns",
+          "startMs": 8119.999999999999,
+          "endMs": 8320,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " colour",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 9080,
+          "endMs": 9200,
+          "timestampMs": 9140,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9240,
+          "endMs": 9280,
+          "timestampMs": 9260,
+          "confidence": null
+        },
+        {
+          "text": " number.",
+          "startMs": 9440,
+          "endMs": 10400,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " You",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " measure",
+          "startMs": 10720,
+          "endMs": 10880,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " solutions",
+          "startMs": 12000,
+          "endMs": 12480,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " known",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 13040,
+          "endMs": 13680,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " absorb,",
+          "startMs": 13800,
+          "endMs": 14720,
+          "timestampMs": 14260,
+          "confidence": null
+        },
+        {
+          "text": " draw",
+          "startMs": 14840,
+          "endMs": 14960,
+          "timestampMs": 14900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15000,
+          "endMs": 15040,
+          "timestampMs": 15020,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 15120,
+          "endMs": 15280,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 15360,
+          "endMs": 15520,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " make,",
+          "startMs": 15640,
+          "endMs": 16160,
+          "timestampMs": 15900,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 16280.000000000002,
+          "endMs": 16400,
+          "timestampMs": 16340,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16640,
+          "endMs": 16720,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 16920,
+          "endMs": 17120,
+          "timestampMs": 17020,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 17240,
+          "endMs": 17360,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 17440,
+          "endMs": 17600,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 17680,
+          "endMs": 18000,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 18200,
+          "endMs": 18400,
+          "timestampMs": 18300,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " line.",
+          "startMs": 18800,
+          "endMs": 19760,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " Today",
+          "startMs": 19960,
+          "endMs": 20160,
+          "timestampMs": 20060,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " build",
+          "startMs": 20440,
+          "endMs": 20560,
+          "timestampMs": 20500,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " copper,",
+          "startMs": 20960,
+          "endMs": 21600,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 22080,
+          "endMs": 22160,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 22240,
+          "endMs": 22320,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 22400,
+          "endMs": 22640,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 22720,
+          "endMs": 22960,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 23320,
+          "endMs": 23520,
+          "timestampMs": 23420,
+          "confidence": null
+        },
+        {
+          "text": " plating",
+          "startMs": 23600,
+          "endMs": 24000,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " workshop.",
+          "startMs": 24120,
+          "endMs": 24640,
+          "timestampMs": 24380,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "aim-variables",
+      "type": "concept",
+      "durationInFrames": 648,
+      "voiceover": {
+        "text": "The aim is to find the concentration of copper ions in that rinse water. Each solution whose concentration you know is called a standard. The independent variable is the standards' concentration. The dependent variable is their absorbance, how much light each one soaks up. Everything else stays the same.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/aim-variables.52fadd175f44.mp3",
+        "startFrame": 0,
+        "endFrame": 588
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " aim",
+          "startMs": 240,
+          "endMs": 560,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 800,
+          "endMs": 880,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 960,
+          "endMs": 1120,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1200,
+          "endMs": 1240,
+          "timestampMs": 1220,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 1280,
+          "endMs": 2000,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 2040,
+          "endMs": 2080,
+          "timestampMs": 2060,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 2240,
+          "endMs": 2480,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 2560,
+          "endMs": 2960,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 3360,
+          "endMs": 3440,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 3840,
+          "endMs": 4480,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 5040,
+          "endMs": 5520,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " whose",
+          "startMs": 5640,
+          "endMs": 5760,
+          "timestampMs": 5700,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 5840,
+          "endMs": 6480,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 6560,
+          "endMs": 6720,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 6920,
+          "endMs": 7120,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7840,
+          "endMs": 7920,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " standard.",
+          "startMs": 8000,
+          "endMs": 8840,
+          "timestampMs": 8420,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " independent",
+          "startMs": 9280,
+          "endMs": 9760,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " variable",
+          "startMs": 9840,
+          "endMs": 10400,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10480,
+          "endMs": 10640,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10680,
+          "endMs": 10720,
+          "timestampMs": 10700,
+          "confidence": null
+        },
+        {
+          "text": " standards'",
+          "startMs": 10800,
+          "endMs": 11360,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " concentration.",
+          "startMs": 11440,
+          "endMs": 12240,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " dependent",
+          "startMs": 13080,
+          "endMs": 13360,
+          "timestampMs": 13220,
+          "confidence": null
+        },
+        {
+          "text": " variable",
+          "startMs": 13440,
+          "endMs": 13920,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 14240,
+          "endMs": 14320,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " absorbance,",
+          "startMs": 14400,
+          "endMs": 15440,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 15680,
+          "endMs": 15840,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 15920,
+          "endMs": 16160,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 16480,
+          "endMs": 16640,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " soaks",
+          "startMs": 16720,
+          "endMs": 16960,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " up.",
+          "startMs": 17040,
+          "endMs": 17360,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " Everything",
+          "startMs": 17840,
+          "endMs": 18160,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " else",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 18640,
+          "endMs": 18880,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18960,
+          "endMs": 19040,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " same.",
+          "startMs": 19120,
+          "endMs": 19600,
+          "timestampMs": 19360,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "make-standards",
+      "type": "concept",
+      "durationInFrames": 1032,
+      "voiceover": {
+        "text": "Start from a stock solution of copper sulfate, point two zero zero moles per litre. Fill one burette with stock and another with distilled water, rinsing each with the liquid it will hold. Run one millilitre of stock and nine of water into a tube, and mix. That's a tenfold dilution, so point zero two zero moles per litre. Then use two, three, four and six millilitres of stock, each topped up with water to ten millilitres. The strongest is point one two zero.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/make-standards.caad18653572.mp3",
+        "startFrame": 0,
+        "endFrame": 972
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Start",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 560,
+          "endMs": 600,
+          "timestampMs": 580,
+          "confidence": null
+        },
+        {
+          "text": " stock",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 960,
+          "endMs": 1360,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " sulfate,",
+          "startMs": 1920,
+          "endMs": 2720,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 3600,
+          "endMs": 3920,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 4040,
+          "endMs": 4160,
+          "timestampMs": 4100,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 4320,
+          "endMs": 4640,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 4880,
+          "endMs": 5280,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " Fill",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 6160,
+          "endMs": 6320,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " burette",
+          "startMs": 6400,
+          "endMs": 6720,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " stock",
+          "startMs": 6960,
+          "endMs": 7360,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 7680,
+          "endMs": 8080,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8160,
+          "endMs": 8320,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " distilled",
+          "startMs": 8480,
+          "endMs": 8800,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " water,",
+          "startMs": 8880,
+          "endMs": 9680,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " rinsing",
+          "startMs": 9720,
+          "endMs": 10160,
+          "timestampMs": 9940,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 10280,
+          "endMs": 10400,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10640,
+          "endMs": 10680,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " liquid",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11080,
+          "endMs": 11120,
+          "timestampMs": 11100,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " hold.",
+          "startMs": 11360,
+          "endMs": 12120,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " Run",
+          "startMs": 12480,
+          "endMs": 12720,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 12800,
+          "endMs": 12960,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " millilitre",
+          "startMs": 13040,
+          "endMs": 13520,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 13560,
+          "endMs": 13600,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " stock",
+          "startMs": 13760,
+          "endMs": 14080,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14240,
+          "endMs": 14400,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 14480,
+          "endMs": 14720,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 14960,
+          "endMs": 15280,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15640,
+          "endMs": 15680,
+          "timestampMs": 15660,
+          "confidence": null
+        },
+        {
+          "text": " tube,",
+          "startMs": 15760,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " mix.",
+          "startMs": 16480,
+          "endMs": 16960,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 17440,
+          "endMs": 17653,
+          "timestampMs": 17546.5,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17707,
+          "endMs": 17760,
+          "timestampMs": 17733.5,
+          "confidence": null
+        },
+        {
+          "text": " tenfold",
+          "startMs": 17920,
+          "endMs": 18320,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " dilution,",
+          "startMs": 18360,
+          "endMs": 19280,
+          "timestampMs": 18820,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 19600,
+          "endMs": 19840,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 20000,
+          "endMs": 20240,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 20720,
+          "endMs": 20960,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 21040,
+          "endMs": 21360,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 21640,
+          "endMs": 22000,
+          "timestampMs": 21820,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 22640,
+          "endMs": 22800,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 22880,
+          "endMs": 23120,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 23200,
+          "endMs": 23840,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " three,",
+          "startMs": 24000,
+          "endMs": 24480,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 24600,
+          "endMs": 24720,
+          "timestampMs": 24660,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24880,
+          "endMs": 25120,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 25200,
+          "endMs": 25360,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 25440,
+          "endMs": 25920,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 26000,
+          "endMs": 26080,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " stock,",
+          "startMs": 26160,
+          "endMs": 26880,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 27000,
+          "endMs": 27120,
+          "timestampMs": 27060,
+          "confidence": null
+        },
+        {
+          "text": " topped",
+          "startMs": 27200,
+          "endMs": 27360,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 27760,
+          "endMs": 28080,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 28160,
+          "endMs": 28320,
+          "timestampMs": 28240,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 28400,
+          "endMs": 28560,
+          "timestampMs": 28480,
+          "confidence": null
+        },
+        {
+          "text": " millilitres.",
+          "startMs": 28640,
+          "endMs": 29360,
+          "timestampMs": 29000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 29840,
+          "endMs": 29880,
+          "timestampMs": 29860,
+          "confidence": null
+        },
+        {
+          "text": " strongest",
+          "startMs": 29920,
+          "endMs": 30480,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 30640,
+          "endMs": 30720,
+          "timestampMs": 30680,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 30880,
+          "endMs": 31040,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 31280,
+          "endMs": 31360,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 31520,
+          "endMs": 31760,
+          "timestampMs": 31640,
+          "confidence": null
+        },
+        {
+          "text": " zero.",
+          "startMs": 31840,
+          "endMs": 32400,
+          "timestampMs": 32120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "wavelength-blank",
+      "type": "concept",
+      "durationInFrames": 1052,
+      "voiceover": {
+        "text": "Which light? A blue solution absorbs at the red end of the spectrum. A scan shows its biggest absorbance near eight hundred nanometres, in the near infrared, so set this spectrophotometer there. That's where each small change in copper gives the biggest change in absorbance. A school colourimeter can't, so use its red filter, with its own calibration. Then zero it with a blank, a cuvette of the same distilled water. The glass and the water absorb a little too, and the blank takes that away, so what's left comes from copper.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/wavelength-blank.4bfa055c2feb.mp3",
+        "startFrame": 0,
+        "endFrame": 992
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Which",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " light?",
+          "startMs": 320,
+          "endMs": 720,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 1520,
+          "endMs": 2000,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " absorbs",
+          "startMs": 2120,
+          "endMs": 2480,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 2520,
+          "endMs": 2560,
+          "timestampMs": 2540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " red",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " end",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 3280,
+          "endMs": 3320,
+          "timestampMs": 3300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3360,
+          "endMs": 3400,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " spectrum.",
+          "startMs": 3440,
+          "endMs": 4000,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " scan",
+          "startMs": 4560,
+          "endMs": 4880,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 4960,
+          "endMs": 5200,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 5320,
+          "endMs": 5440,
+          "timestampMs": 5380,
+          "confidence": null
+        },
+        {
+          "text": " biggest",
+          "startMs": 5520,
+          "endMs": 5760,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " absorbance",
+          "startMs": 5880,
+          "endMs": 6400,
+          "timestampMs": 6140,
+          "confidence": null
+        },
+        {
+          "text": " near",
+          "startMs": 6520,
+          "endMs": 6640,
+          "timestampMs": 6580,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " nanometres,",
+          "startMs": 7280,
+          "endMs": 8160,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8200,
+          "endMs": 8240,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " near",
+          "startMs": 8480,
+          "endMs": 8720,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " infrared,",
+          "startMs": 8800,
+          "endMs": 9680,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9760,
+          "endMs": 10000,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " spectrophotometer",
+          "startMs": 10840,
+          "endMs": 11600,
+          "timestampMs": 11220,
+          "confidence": null
+        },
+        {
+          "text": " there.",
+          "startMs": 11680,
+          "endMs": 12080,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 12480,
+          "endMs": 12680,
+          "timestampMs": 12580,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 13600,
+          "endMs": 13840,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 14080,
+          "endMs": 14480,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 14640,
+          "endMs": 14800,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14880,
+          "endMs": 14960,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " biggest",
+          "startMs": 15040,
+          "endMs": 15360,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 15440,
+          "endMs": 15760,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15800,
+          "endMs": 15840,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " absorbance.",
+          "startMs": 15960,
+          "endMs": 16800,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " school",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " colourimeter",
+          "startMs": 17520,
+          "endMs": 18080,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " can't,",
+          "startMs": 18160,
+          "endMs": 18800,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 19200,
+          "endMs": 19360,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " red",
+          "startMs": 19680,
+          "endMs": 19840,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " filter,",
+          "startMs": 19920,
+          "endMs": 20480,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 20520,
+          "endMs": 20560,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 20800,
+          "endMs": 20960,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " calibration.",
+          "startMs": 21040,
+          "endMs": 21880,
+          "timestampMs": 21460,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 22080,
+          "endMs": 22320,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 22560,
+          "endMs": 22880,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 23080,
+          "endMs": 23120,
+          "timestampMs": 23100,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23200,
+          "endMs": 23240,
+          "timestampMs": 23220,
+          "confidence": null
+        },
+        {
+          "text": " blank,",
+          "startMs": 23280,
+          "endMs": 23920,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23960,
+          "endMs": 24000,
+          "timestampMs": 23980,
+          "confidence": null
+        },
+        {
+          "text": " cuvette",
+          "startMs": 24080,
+          "endMs": 24480,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 24520,
+          "endMs": 24560,
+          "timestampMs": 24540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24640,
+          "endMs": 24720,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 24800,
+          "endMs": 25040,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " distilled",
+          "startMs": 25160,
+          "endMs": 25440,
+          "timestampMs": 25300,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 25520,
+          "endMs": 26120,
+          "timestampMs": 25820,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 26320,
+          "endMs": 26400,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " glass",
+          "startMs": 26600,
+          "endMs": 26800,
+          "timestampMs": 26700,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26840,
+          "endMs": 26880,
+          "timestampMs": 26860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26960,
+          "endMs": 27040,
+          "timestampMs": 27000,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 27120,
+          "endMs": 27440,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " absorb",
+          "startMs": 27520,
+          "endMs": 27840,
+          "timestampMs": 27680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27880,
+          "endMs": 27920,
+          "timestampMs": 27900,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 28040,
+          "endMs": 28160,
+          "timestampMs": 28100,
+          "confidence": null
+        },
+        {
+          "text": " too,",
+          "startMs": 28240,
+          "endMs": 28800,
+          "timestampMs": 28520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28840,
+          "endMs": 28880,
+          "timestampMs": 28860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28960,
+          "endMs": 29000,
+          "timestampMs": 28980,
+          "confidence": null
+        },
+        {
+          "text": " blank",
+          "startMs": 29040,
+          "endMs": 29440,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 29560,
+          "endMs": 29680,
+          "timestampMs": 29620,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 29760,
+          "endMs": 29840,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " away,",
+          "startMs": 29920,
+          "endMs": 30640,
+          "timestampMs": 30280,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 30720,
+          "endMs": 30960,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " what's",
+          "startMs": 31200,
+          "endMs": 31440,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 31520,
+          "endMs": 31840,
+          "timestampMs": 31680,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 32000,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32080,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 32240.000000000004,
+          "endMs": 32320,
+          "timestampMs": 32280,
+          "confidence": null
+        },
+        {
+          "text": " copper.",
+          "startMs": 32479.999999999996,
+          "endMs": 33040,
+          "timestampMs": 32760,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "measure-carefully",
+      "type": "concept",
+      "durationInFrames": 555,
+      "voiceover": {
+        "text": "Hold each cuvette by its ridged sides, and wipe the clear sides, because a fingerprint scatters light and adds absorbance. Rinse the cuvette with the next standard before you fill it, so the last one doesn't dilute it. Work from the most dilute to the most concentrated.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/measure-carefully.a27e99697b1d.mp3",
+        "startFrame": 0,
+        "endFrame": 495
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Hold",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " cuvette",
+          "startMs": 640,
+          "endMs": 1040,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 1320,
+          "endMs": 1440,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " ridged",
+          "startMs": 1520,
+          "endMs": 1840,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " sides,",
+          "startMs": 1920,
+          "endMs": 2560,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " wipe",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " clear",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " sides,",
+          "startMs": 3600,
+          "endMs": 4320,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 4440,
+          "endMs": 4560,
+          "timestampMs": 4500,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4600,
+          "endMs": 4640,
+          "timestampMs": 4620,
+          "confidence": null
+        },
+        {
+          "text": " fingerprint",
+          "startMs": 4720,
+          "endMs": 5200,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " scatters",
+          "startMs": 5280,
+          "endMs": 5760,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6160,
+          "endMs": 6320,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " adds",
+          "startMs": 6440,
+          "endMs": 6560,
+          "timestampMs": 6500,
+          "confidence": null
+        },
+        {
+          "text": " absorbance.",
+          "startMs": 6680,
+          "endMs": 7600,
+          "timestampMs": 7140,
+          "confidence": null
+        },
+        {
+          "text": " Rinse",
+          "startMs": 7920,
+          "endMs": 8160,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8240,
+          "endMs": 8280,
+          "timestampMs": 8260,
+          "confidence": null
+        },
+        {
+          "text": " cuvette",
+          "startMs": 8320,
+          "endMs": 8720,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8920,
+          "endMs": 8960,
+          "timestampMs": 8940,
+          "confidence": null
+        },
+        {
+          "text": " next",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " standard",
+          "startMs": 9360,
+          "endMs": 9760,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 9960,
+          "endMs": 10160,
+          "timestampMs": 10060,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10240,
+          "endMs": 10400,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " fill",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " last",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11680,
+          "endMs": 11840,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 11920,
+          "endMs": 12160,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " dilute",
+          "startMs": 12200,
+          "endMs": 12560,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 12640,
+          "endMs": 13120,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " Work",
+          "startMs": 13440,
+          "endMs": 13680,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 13760,
+          "endMs": 13840,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 14120,
+          "endMs": 14240,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " dilute",
+          "startMs": 14320,
+          "endMs": 14880,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14920,
+          "endMs": 14960,
+          "timestampMs": 14940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " concentrated.",
+          "startMs": 15520,
+          "endMs": 16480,
+          "timestampMs": 16000,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "plot-linear-range",
+      "type": "concept",
+      "durationInFrames": 860,
+      "voiceover": {
+        "text": "Here are the readings. Plot absorbance up the side and concentration along the bottom, with the blank as a point at zero. The blank and the first four standards sit close to one straight line. The fifth falls well below it. At high absorbance, so little light reaches the detector that the reading is less trustworthy. So this line only holds up to point zero eight zero moles per litre. That's its linear range.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/plot-linear-range.919bf4a4ce07.mp3",
+        "startFrame": 0,
+        "endFrame": 800
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 210,
+          "timestampMs": 105,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 240,
+          "endMs": 307,
+          "timestampMs": 273.5,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 387,
+          "timestampMs": 353.5,
+          "confidence": null
+        },
+        {
+          "text": " readings.",
+          "startMs": 400,
+          "endMs": 1040,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " Plot",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " absorbance",
+          "startMs": 1960,
+          "endMs": 2480,
+          "timestampMs": 2220,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 2560,
+          "endMs": 2720,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2760,
+          "endMs": 2800,
+          "timestampMs": 2780,
+          "confidence": null
+        },
+        {
+          "text": " side",
+          "startMs": 2880,
+          "endMs": 3360,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3480,
+          "endMs": 3600,
+          "timestampMs": 3540,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 3680,
+          "endMs": 4480,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " along",
+          "startMs": 4560,
+          "endMs": 4800,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4840,
+          "endMs": 4880,
+          "timestampMs": 4860,
+          "confidence": null
+        },
+        {
+          "text": " bottom,",
+          "startMs": 4960,
+          "endMs": 5680,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5880,
+          "endMs": 5920,
+          "timestampMs": 5900,
+          "confidence": null
+        },
+        {
+          "text": " blank",
+          "startMs": 6000,
+          "endMs": 6400,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 6840,
+          "endMs": 6960,
+          "timestampMs": 6900,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " zero.",
+          "startMs": 7200,
+          "endMs": 8080,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " blank",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8600,
+          "endMs": 8640,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " standards",
+          "startMs": 9440,
+          "endMs": 9920,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " sit",
+          "startMs": 10040,
+          "endMs": 10160,
+          "timestampMs": 10100,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 10240,
+          "endMs": 10560,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10680,
+          "endMs": 10800,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 10920,
+          "endMs": 11040,
+          "timestampMs": 10980,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 11120,
+          "endMs": 11440,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " line.",
+          "startMs": 11520,
+          "endMs": 12453,
+          "timestampMs": 11986.5,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 12507,
+          "endMs": 12560,
+          "timestampMs": 12533.5,
+          "confidence": null
+        },
+        {
+          "text": " fifth",
+          "startMs": 12600,
+          "endMs": 13040,
+          "timestampMs": 12820,
+          "confidence": null
+        },
+        {
+          "text": " falls",
+          "startMs": 13120,
+          "endMs": 13440,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " well",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " below",
+          "startMs": 13760,
+          "endMs": 14000,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 14080,
+          "endMs": 14720,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " At",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 14960,
+          "endMs": 15120,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " absorbance,",
+          "startMs": 15200,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 16320,
+          "endMs": 16560,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 16680,
+          "endMs": 16800,
+          "timestampMs": 16740,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17280,
+          "endMs": 17320,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " detector",
+          "startMs": 17360,
+          "endMs": 17920,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18160,
+          "endMs": 18200,
+          "timestampMs": 18180,
+          "confidence": null
+        },
+        {
+          "text": " reading",
+          "startMs": 18240,
+          "endMs": 18640,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18720,
+          "endMs": 18880,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 19000,
+          "endMs": 19120,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " trustworthy.",
+          "startMs": 19200,
+          "endMs": 20320,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 20600,
+          "endMs": 20720,
+          "timestampMs": 20660,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 20920,
+          "endMs": 21120,
+          "timestampMs": 21020,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 21200,
+          "endMs": 21440,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " holds",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 22480,
+          "endMs": 22880,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 22960,
+          "endMs": 23200,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 24160,
+          "endMs": 24960,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 25040,
+          "endMs": 25280,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 25360,
+          "endMs": 25520,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " linear",
+          "startMs": 25680,
+          "endMs": 26000,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " range.",
+          "startMs": 26240,
+          "endMs": 26640,
+          "timestampMs": 26440,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "unknown-dilute",
+      "type": "concept",
+      "durationInFrames": 812,
+      "voiceover": {
+        "text": "Now the rinse water. It reads one point five two, far above the top of the linear range. You could extend the line, but the fifth standard has just shown that the line bends up there, so don't trust it. Dilute it instead. Five millilitres of rinse water and five of distilled water halve its concentration. Three readings now give a mean of point eight four five, inside the range.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/unknown-dilute.a75c34fc3abb.mp3",
+        "startFrame": 0,
+        "endFrame": 752
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 400,
+          "endMs": 640,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 720,
+          "endMs": 1320,
+          "timestampMs": 1020,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 1520,
+          "endMs": 1680,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " reads",
+          "startMs": 1880,
+          "endMs": 2080,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 3080,
+          "endMs": 3280,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 3440,
+          "endMs": 4000,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 4080,
+          "endMs": 4400,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " above",
+          "startMs": 4480,
+          "endMs": 4720,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " top",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5080,
+          "endMs": 5120,
+          "timestampMs": 5100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5200,
+          "endMs": 5240,
+          "timestampMs": 5220,
+          "confidence": null
+        },
+        {
+          "text": " linear",
+          "startMs": 5280,
+          "endMs": 5600,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " range.",
+          "startMs": 5840,
+          "endMs": 6360,
+          "timestampMs": 6100,
+          "confidence": null
+        },
+        {
+          "text": " You",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " extend",
+          "startMs": 6960,
+          "endMs": 7280,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7320,
+          "endMs": 7360,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 7440,
+          "endMs": 8000,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 8119.999999999999,
+          "endMs": 8240,
+          "timestampMs": 8180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " fifth",
+          "startMs": 8453,
+          "endMs": 8560,
+          "timestampMs": 8506.5,
+          "confidence": null
+        },
+        {
+          "text": " standard",
+          "startMs": 8640,
+          "endMs": 9040,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 9160,
+          "endMs": 9280,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 9360,
+          "endMs": 9520,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " shown",
+          "startMs": 9600,
+          "endMs": 9840,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10040,
+          "endMs": 10080,
+          "timestampMs": 10060,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 10240,
+          "endMs": 10400,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " bends",
+          "startMs": 10480,
+          "endMs": 10800,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " there,",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11600,
+          "endMs": 11760,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 12000,
+          "endMs": 12160,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " trust",
+          "startMs": 12320,
+          "endMs": 12480,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 12560,
+          "endMs": 12720,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " Dilute",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 13640,
+          "endMs": 13680,
+          "timestampMs": 13660,
+          "confidence": null
+        },
+        {
+          "text": " instead.",
+          "startMs": 13760,
+          "endMs": 14600,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " Five",
+          "startMs": 14960,
+          "endMs": 15120,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 15280,
+          "endMs": 15760,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 15800,
+          "endMs": 15840,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 16160,
+          "endMs": 16480,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16720,
+          "endMs": 16880,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 17040,
+          "endMs": 17280,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 17320,
+          "endMs": 17360,
+          "timestampMs": 17340,
+          "confidence": null
+        },
+        {
+          "text": " distilled",
+          "startMs": 17440,
+          "endMs": 17840,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 17920,
+          "endMs": 18240,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " halve",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " concentration.",
+          "startMs": 18960,
+          "endMs": 20080,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " Three",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " readings",
+          "startMs": 20760,
+          "endMs": 21120,
+          "timestampMs": 20940,
+          "confidence": null
+        },
+        {
+          "text": " now",
+          "startMs": 21200,
+          "endMs": 21360,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21600,
+          "endMs": 21640,
+          "timestampMs": 21620,
+          "confidence": null
+        },
+        {
+          "text": " mean",
+          "startMs": 21680,
+          "endMs": 21920,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 22640,
+          "endMs": 22880,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 23000,
+          "endMs": 23120,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " five,",
+          "startMs": 23360,
+          "endMs": 23840,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 24040,
+          "endMs": 24240,
+          "timestampMs": 24140,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24320,
+          "endMs": 24360,
+          "timestampMs": 24340,
+          "confidence": null
+        },
+        {
+          "text": " range.",
+          "startMs": 24400,
+          "endMs": 25040,
+          "timestampMs": 24720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "read-scale-back",
+      "type": "concept",
+      "durationInFrames": 526,
+      "voiceover": {
+        "text": "Read across from point eight four five to the line, then down: point zero seven one zero moles per litre. That's the diluted solution, though. You halved it, so the rinse water is double that, point one four two moles per litre.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/read-scale-back.50f0aac4702a.mp3",
+        "startFrame": 0,
+        "endFrame": 466
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Read",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 720,
+          "endMs": 800,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 1920,
+          "endMs": 2080,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2280,
+          "endMs": 2320,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 2400,
+          "endMs": 2960,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 3080,
+          "endMs": 3200,
+          "timestampMs": 3140,
+          "confidence": null
+        },
+        {
+          "text": " down:",
+          "startMs": 3280,
+          "endMs": 4160,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 4240,
+          "endMs": 4480,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 5160,
+          "endMs": 5360,
+          "timestampMs": 5260,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 6240,
+          "endMs": 6560,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 6800,
+          "endMs": 7520,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 7840,
+          "endMs": 8039.999999999999,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " diluted",
+          "startMs": 8200,
+          "endMs": 8720,
+          "timestampMs": 8460,
+          "confidence": null
+        },
+        {
+          "text": " solution,",
+          "startMs": 8800,
+          "endMs": 9240,
+          "timestampMs": 9020,
+          "confidence": null
+        },
+        {
+          "text": " though.",
+          "startMs": 9280,
+          "endMs": 9600,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " You",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " halved",
+          "startMs": 10080,
+          "endMs": 10400,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 10480,
+          "endMs": 10800,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11000,
+          "endMs": 11040,
+          "timestampMs": 11020,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 11120,
+          "endMs": 11360,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 11440,
+          "endMs": 11760,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " double",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " that,",
+          "startMs": 12400,
+          "endMs": 13040,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 13120,
+          "endMs": 13360,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 14160,
+          "endMs": 14320,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 14480,
+          "endMs": 14720,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 14960,
+          "endMs": 15520,
+          "timestampMs": 15240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "reliable-accurate",
+      "type": "concept",
+      "durationInFrames": 728,
+      "voiceover": {
+        "text": "Reliable? The three readings agree within about point zero zero six, and a second dilution gives the same answer. Accurate? Your teacher made a check standard from a separate weighing, point zero five zero zero moles per litre. Read from your line, it comes out at point zero four nine seven, within about one percent of its true value.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/reliable-accurate.1e6df145cf1f.mp3",
+        "startFrame": 0,
+        "endFrame": 668
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Reliable?",
+          "startMs": 0,
+          "endMs": 720,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 1400,
+          "endMs": 1520,
+          "timestampMs": 1460,
+          "confidence": null
+        },
+        {
+          "text": " readings",
+          "startMs": 1600,
+          "endMs": 1920,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " agree",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " within",
+          "startMs": 2440,
+          "endMs": 2560,
+          "timestampMs": 2500,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 2640,
+          "endMs": 2880,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 3040,
+          "endMs": 3280,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 3840,
+          "endMs": 4080,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " six,",
+          "startMs": 4320,
+          "endMs": 5040,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5080,
+          "endMs": 5120,
+          "timestampMs": 5100,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 5360,
+          "endMs": 5600,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " dilution",
+          "startMs": 5680,
+          "endMs": 6160,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 6240,
+          "endMs": 6400,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6440,
+          "endMs": 6480,
+          "timestampMs": 6460,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 6640,
+          "endMs": 6880,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 7080,
+          "endMs": 7360,
+          "timestampMs": 7220,
+          "confidence": null
+        },
+        {
+          "text": " Accurate?",
+          "startMs": 7920,
+          "endMs": 8680,
+          "timestampMs": 8300,
+          "confidence": null
+        },
+        {
+          "text": " Your",
+          "startMs": 8880,
+          "endMs": 9040,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " teacher",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9600,
+          "endMs": 9680,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " standard",
+          "startMs": 10000,
+          "endMs": 10400,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10600,
+          "endMs": 10640,
+          "timestampMs": 10620,
+          "confidence": null
+        },
+        {
+          "text": " separate",
+          "startMs": 10800,
+          "endMs": 11120,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " weighing,",
+          "startMs": 11200,
+          "endMs": 11920,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 12000,
+          "endMs": 12160,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 12400,
+          "endMs": 12640,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 12800,
+          "endMs": 13120,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 13200,
+          "endMs": 13520,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 13920,
+          "endMs": 14240,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 14480,
+          "endMs": 15200,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " Read",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 15760,
+          "endMs": 15920,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 15960,
+          "endMs": 16000,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 16079.999999999998,
+          "endMs": 16640,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 16880,
+          "endMs": 17120,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 17240,
+          "endMs": 17360,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 17480,
+          "endMs": 17600,
+          "timestampMs": 17540,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 17720,
+          "endMs": 17840,
+          "timestampMs": 17780,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 18000,
+          "endMs": 18320,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " seven,",
+          "startMs": 19120,
+          "endMs": 19760,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " within",
+          "startMs": 19840,
+          "endMs": 20000,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 20080,
+          "endMs": 20320,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 20480,
+          "endMs": 20560,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 20720,
+          "endMs": 21120,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21160,
+          "endMs": 21200,
+          "timestampMs": 21180,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " true",
+          "startMs": 21440,
+          "endMs": 21600,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " value.",
+          "startMs": 21680,
+          "endMs": 22240,
+          "timestampMs": 21960,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "valid",
+      "type": "concept",
+      "durationInFrames": 872,
+      "voiceover": {
+        "text": "Valid? The method measures copper only if copper is the only thing absorbing at that wavelength. A cloudy sample scatters light and reads high, so filter it first. Filtering can't remove dissolved substances, so your teacher has checked this sample for other absorbers. Then read it at the same wavelength, in the same cuvette, with the same blank, and inside the linear range. Only then does the line apply to it.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/valid.cc60075b9232.mp3",
+        "startFrame": 0,
+        "endFrame": 812
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Valid?",
+          "startMs": 0,
+          "endMs": 720,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " method",
+          "startMs": 1120,
+          "endMs": 1440,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " measures",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 1840,
+          "endMs": 2240,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 2400,
+          "endMs": 2720,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3640,
+          "endMs": 3760,
+          "timestampMs": 3700,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 3840,
+          "endMs": 4160,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " thing",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " absorbing",
+          "startMs": 4520,
+          "endMs": 4960,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " wavelength.",
+          "startMs": 5440,
+          "endMs": 6160,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " cloudy",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 7200,
+          "endMs": 7520,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " scatters",
+          "startMs": 7680,
+          "endMs": 8080,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 8160,
+          "endMs": 8400,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " reads",
+          "startMs": 8720,
+          "endMs": 8880,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " high,",
+          "startMs": 8960,
+          "endMs": 9520,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " filter",
+          "startMs": 9840,
+          "endMs": 10160,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " first.",
+          "startMs": 10400,
+          "endMs": 10880,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " Filtering",
+          "startMs": 11520,
+          "endMs": 12000,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 12080,
+          "endMs": 12400,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 12560,
+          "endMs": 12720,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " dissolved",
+          "startMs": 12800,
+          "endMs": 13200,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " substances,",
+          "startMs": 13280,
+          "endMs": 14240,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " teacher",
+          "startMs": 14640,
+          "endMs": 14880,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 14960,
+          "endMs": 15120,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " checked",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 15680,
+          "endMs": 16000,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 16079.999999999998,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16159.999999999998,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " absorbers.",
+          "startMs": 16560,
+          "endMs": 17520,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 17840,
+          "endMs": 18080,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 18400,
+          "endMs": 18560,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 18760,
+          "endMs": 18800,
+          "timestampMs": 18780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 19160,
+          "endMs": 19280,
+          "timestampMs": 19220,
+          "confidence": null
+        },
+        {
+          "text": " wavelength,",
+          "startMs": 19360,
+          "endMs": 20080,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20120,
+          "endMs": 20160,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 20400,
+          "endMs": 20560,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " cuvette,",
+          "startMs": 20640,
+          "endMs": 21280,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21520,
+          "endMs": 21600,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 21680,
+          "endMs": 21920,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " blank,",
+          "startMs": 22120,
+          "endMs": 22560,
+          "timestampMs": 22340,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 22880,
+          "endMs": 23280,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23360,
+          "endMs": 23400,
+          "timestampMs": 23380,
+          "confidence": null
+        },
+        {
+          "text": " linear",
+          "startMs": 23440,
+          "endMs": 23760,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " range.",
+          "startMs": 23840,
+          "endMs": 24720,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " Only",
+          "startMs": 24920,
+          "endMs": 25120,
+          "timestampMs": 25020,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 25280,
+          "endMs": 25600,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 25680,
+          "endMs": 25760,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25840,
+          "endMs": 25880,
+          "timestampMs": 25860,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 25920,
+          "endMs": 26160,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " apply",
+          "startMs": 26320,
+          "endMs": 26480,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26560,
+          "endMs": 26640,
+          "timestampMs": 26600,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 26760,
+          "endMs": 27040,
+          "timestampMs": 26900,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "risk",
+      "type": "concept",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "Now the risks. Copper sulfate is harmful if swallowed, irritates eyes and skin, and is very toxic to aquatic life. Wear gloves and glasses, and every copper solution goes into heavy-metal waste, never the sink. Treat the rinse water the same way, because it may hold acid or other metals. Fill the burettes below eye level, and fill cuvettes away from the instrument, so a spill can't reach its electronics.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/risk.146c50c3b034.mp3",
+        "startFrame": 0,
+        "endFrame": 833
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " risks.",
+          "startMs": 480,
+          "endMs": 1320,
+          "timestampMs": 900,
+          "confidence": null
+        },
+        {
+          "text": " Copper",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 1920,
+          "endMs": 2400,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2520,
+          "endMs": 2640,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " harmful",
+          "startMs": 2680,
+          "endMs": 3120,
+          "timestampMs": 2900,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 3200,
+          "endMs": 3280,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " swallowed,",
+          "startMs": 3360,
+          "endMs": 4160,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " irritates",
+          "startMs": 4240,
+          "endMs": 4720,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " eyes",
+          "startMs": 4800,
+          "endMs": 5040,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " skin,",
+          "startMs": 5280,
+          "endMs": 5920,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5960,
+          "endMs": 6000,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6080,
+          "endMs": 6240,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " very",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " toxic",
+          "startMs": 6720,
+          "endMs": 7120,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " aquatic",
+          "startMs": 7400,
+          "endMs": 7760,
+          "timestampMs": 7580,
+          "confidence": null
+        },
+        {
+          "text": " life.",
+          "startMs": 7960,
+          "endMs": 8240,
+          "timestampMs": 8100,
+          "confidence": null
+        },
+        {
+          "text": " Wear",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " gloves",
+          "startMs": 9080,
+          "endMs": 9440,
+          "timestampMs": 9260,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9480,
+          "endMs": 9520,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " glasses,",
+          "startMs": 9600,
+          "endMs": 10480,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 10880,
+          "endMs": 11200,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 11240,
+          "endMs": 11520,
+          "timestampMs": 11380,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 11760,
+          "endMs": 12000,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 12320,
+          "endMs": 12480,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " heavy-metal",
+          "startMs": 12560,
+          "endMs": 13120,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " waste,",
+          "startMs": 13280,
+          "endMs": 13920,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " never",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " sink.",
+          "startMs": 14560,
+          "endMs": 14960,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " Treat",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " rinse",
+          "startMs": 15920,
+          "endMs": 16160,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " way,",
+          "startMs": 17120,
+          "endMs": 17360,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 17600,
+          "endMs": 17760,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " hold",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 18560,
+          "endMs": 18960,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 19200,
+          "endMs": 19360,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " metals.",
+          "startMs": 19440,
+          "endMs": 20000,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " Fill",
+          "startMs": 20720,
+          "endMs": 20880,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20920,
+          "endMs": 20960,
+          "timestampMs": 20940,
+          "confidence": null
+        },
+        {
+          "text": " burettes",
+          "startMs": 21040,
+          "endMs": 21440,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " below",
+          "startMs": 21520,
+          "endMs": 21920,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " eye",
+          "startMs": 22080,
+          "endMs": 22240,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " level,",
+          "startMs": 22320,
+          "endMs": 22880,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22920,
+          "endMs": 22960,
+          "timestampMs": 22940,
+          "confidence": null
+        },
+        {
+          "text": " fill",
+          "startMs": 23040,
+          "endMs": 23200,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " cuvettes",
+          "startMs": 23280,
+          "endMs": 23840,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " away",
+          "startMs": 23920,
+          "endMs": 24320,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24560,
+          "endMs": 24640,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " instrument,",
+          "startMs": 24880,
+          "endMs": 25360,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25560,
+          "endMs": 25600,
+          "timestampMs": 25580,
+          "confidence": null
+        },
+        {
+          "text": " spill",
+          "startMs": 25680,
+          "endMs": 26080,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 26160,
+          "endMs": 26400,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 26480,
+          "endMs": 26640,
+          "timestampMs": 26560,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 26720,
+          "endMs": 26800,
+          "timestampMs": 26760,
+          "confidence": null
+        },
+        {
+          "text": " electronics.",
+          "startMs": 27160,
+          "endMs": 27760,
+          "timestampMs": 27460,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 351,
+      "voiceover": {
+        "text": "Two lines to keep. Read across, then down, and only inside the standards. And if you diluted it, multiply back by the dilution factor.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/memory-aid.efd833b06c3a.mp3",
+        "startFrame": 0,
+        "endFrame": 291
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " lines",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " keep.",
+          "startMs": 800,
+          "endMs": 1200,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " Read",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " across,",
+          "startMs": 1840,
+          "endMs": 2560,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 2680,
+          "endMs": 2800,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " down,",
+          "startMs": 2880,
+          "endMs": 3360,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 3760,
+          "endMs": 4080,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 4240,
+          "endMs": 4720,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " standards.",
+          "startMs": 4880,
+          "endMs": 5520,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 6200,
+          "endMs": 6240,
+          "timestampMs": 6220,
+          "confidence": null
+        },
+        {
+          "text": " diluted",
+          "startMs": 6320,
+          "endMs": 6800,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 6880,
+          "endMs": 7280,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " multiply",
+          "startMs": 7360,
+          "endMs": 7840,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 8000,
+          "endMs": 8240,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " dilution",
+          "startMs": 8600,
+          "endMs": 9040,
+          "timestampMs": 8820,
+          "confidence": null
+        },
+        {
+          "text": " factor.",
+          "startMs": 9120,
+          "endMs": 9680,
+          "timestampMs": 9400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 941,
+      "voiceover": {
+        "text": "Your turn. A student's copper standards give the calibration line on screen. Ten millilitres of an unknown copper solution is diluted to twenty five millilitres, and the diluted solution reads point three two five. Calculate the copper ion concentration in the original solution. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-1.bba655579349.mp3",
+        "startFrame": 0,
+        "endFrame": 605
+      },
+      "responseHold": {
+        "startFrame": 617,
+        "endFrame": 917
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Your",
+          "startMs": 0,
+          "endMs": 210,
+          "timestampMs": 105,
+          "confidence": null
+        },
+        {
+          "text": " turn.",
+          "startMs": 240,
+          "endMs": 640,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1280,
+          "endMs": 1360,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " student's",
+          "startMs": 1440,
+          "endMs": 1840,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " standards",
+          "startMs": 2240,
+          "endMs": 2800,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3040,
+          "endMs": 3080,
+          "timestampMs": 3060,
+          "confidence": null
+        },
+        {
+          "text": " calibration",
+          "startMs": 3120,
+          "endMs": 3760,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 3840,
+          "endMs": 4080,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " screen.",
+          "startMs": 4320,
+          "endMs": 4800,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " Ten",
+          "startMs": 5360,
+          "endMs": 5520,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 5600,
+          "endMs": 6240,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " unknown",
+          "startMs": 6640,
+          "endMs": 7040,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 7120,
+          "endMs": 7360,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 7440,
+          "endMs": 8000,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8080,
+          "endMs": 8240,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " diluted",
+          "startMs": 8280,
+          "endMs": 8720,
+          "timestampMs": 8500,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " twenty",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 9344,
+          "endMs": 9600,
+          "timestampMs": 9472,
+          "confidence": null
+        },
+        {
+          "text": " millilitres,",
+          "startMs": 9760,
+          "endMs": 10800,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10840,
+          "endMs": 10880,
+          "timestampMs": 10860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10960,
+          "endMs": 11000,
+          "timestampMs": 10980,
+          "confidence": null
+        },
+        {
+          "text": " diluted",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 11520,
+          "endMs": 12000,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " reads",
+          "startMs": 12080,
+          "endMs": 12400,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 12560,
+          "endMs": 12800,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 13480,
+          "endMs": 13600,
+          "timestampMs": 13540,
+          "confidence": null
+        },
+        {
+          "text": " five.",
+          "startMs": 13680,
+          "endMs": 14640,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " Calculate",
+          "startMs": 14720,
+          "endMs": 15200,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " copper",
+          "startMs": 15400,
+          "endMs": 15680,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " ion",
+          "startMs": 15760,
+          "endMs": 16000,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 16079.999999999998,
+          "endMs": 16800,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17040,
+          "endMs": 17080,
+          "timestampMs": 17060,
+          "confidence": null
+        },
+        {
+          "text": " original",
+          "startMs": 17120,
+          "endMs": 17600,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " solution.",
+          "startMs": 17680,
+          "endMs": 18520,
+          "timestampMs": 18100,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 18800,
+          "endMs": 19040,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 19120,
+          "endMs": 19280,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 19520,
+          "endMs": 20160,
+          "timestampMs": 19840,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 917,
+        "responseHoldStart": 617,
+        "pausePrompt": 617
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 656,
+      "voiceover": {
+        "text": "Read across from point three two five, then down: point two five zero moles per litre. That's the diluted solution. Twenty five over ten is a dilution factor of two point five, so the original is point six two five moles per litre. The trap is stopping at point two five zero.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-1.720844d4e5ea.mp3",
+        "startFrame": 0,
+        "endFrame": 596
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Read",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 720,
+          "endMs": 800,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 1640,
+          "endMs": 1760,
+          "timestampMs": 1700,
+          "confidence": null
+        },
+        {
+          "text": " five,",
+          "startMs": 1840,
+          "endMs": 2400,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " down:",
+          "startMs": 2720,
+          "endMs": 3600,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 3680,
+          "endMs": 4000,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 5280,
+          "endMs": 5600,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 5680,
+          "endMs": 5840,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 5920,
+          "endMs": 6560,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 6800,
+          "endMs": 7040,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7080,
+          "endMs": 7120,
+          "timestampMs": 7100,
+          "confidence": null
+        },
+        {
+          "text": " diluted",
+          "startMs": 7200,
+          "endMs": 7680,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " solution.",
+          "startMs": 7760,
+          "endMs": 8320,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " Twenty",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 9024,
+          "endMs": 9280,
+          "timestampMs": 9152,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10280,
+          "endMs": 10320,
+          "timestampMs": 10300,
+          "confidence": null
+        },
+        {
+          "text": " dilution",
+          "startMs": 10360,
+          "endMs": 10800,
+          "timestampMs": 10580,
+          "confidence": null
+        },
+        {
+          "text": " factor",
+          "startMs": 10960,
+          "endMs": 11280,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 11600,
+          "endMs": 11680,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 11840,
+          "endMs": 12080,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " five,",
+          "startMs": 12160,
+          "endMs": 12960,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13200,
+          "endMs": 13240,
+          "timestampMs": 13220,
+          "confidence": null
+        },
+        {
+          "text": " original",
+          "startMs": 13280,
+          "endMs": 13840,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 14240,
+          "endMs": 14480,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 14560,
+          "endMs": 14880,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 15000,
+          "endMs": 15120,
+          "timestampMs": 15060,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 15520,
+          "endMs": 15760,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 16000,
+          "endMs": 16680,
+          "timestampMs": 16340,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16960,
+          "endMs": 17040,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " trap",
+          "startMs": 17240,
+          "endMs": 17440,
+          "timestampMs": 17340,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " stopping",
+          "startMs": 17680,
+          "endMs": 18000,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 18240,
+          "endMs": 18560,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 18640,
+          "endMs": 18880,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " zero.",
+          "startMs": 19280,
+          "endMs": 19840,
+          "timestampMs": 19560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 819,
+      "voiceover": {
+        "text": "Last one. A student measures the standards in a clean cuvette, then measures the unknown in a cuvette with a fingerprint on one clear side. Explain how this affects the calculated concentration, and propose an improvement. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/attempt-2.9652f92e3cf9.mp3",
+        "startFrame": 0,
+        "endFrame": 483
+      },
+      "responseHold": {
+        "startFrame": 495,
+        "endFrame": 795
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Last",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " student",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " measures",
+          "startMs": 1760,
+          "endMs": 2080,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " standards",
+          "startMs": 2320,
+          "endMs": 2800,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3013,
+          "endMs": 3067,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " clean",
+          "startMs": 3120,
+          "endMs": 3360,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " cuvette,",
+          "startMs": 3440,
+          "endMs": 4320,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " measures",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5080,
+          "endMs": 5120,
+          "timestampMs": 5100,
+          "confidence": null
+        },
+        {
+          "text": " unknown",
+          "startMs": 5280,
+          "endMs": 5840,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 5880,
+          "endMs": 5920,
+          "timestampMs": 5900,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6000,
+          "endMs": 6080,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " cuvette",
+          "startMs": 6120,
+          "endMs": 6560,
+          "timestampMs": 6340,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " fingerprint",
+          "startMs": 6920,
+          "endMs": 7440,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 7760,
+          "endMs": 7920,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " clear",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " side.",
+          "startMs": 8400,
+          "endMs": 9200,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 9520,
+          "endMs": 10000,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " affects",
+          "startMs": 10400,
+          "endMs": 10720,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " calculated",
+          "startMs": 10960,
+          "endMs": 11520,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " concentration,",
+          "startMs": 11600,
+          "endMs": 12720,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12800,
+          "endMs": 12880,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " propose",
+          "startMs": 13000,
+          "endMs": 13360,
+          "timestampMs": 13180,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " improvement.",
+          "startMs": 13520,
+          "endMs": 14480,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 15120,
+          "endMs": 15280,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 15520,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15800,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 795,
+        "responseHoldStart": 495,
+        "pausePrompt": 495
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 785,
+      "voiceover": {
+        "text": "The fingerprint scatters some light, so less reaches the detector, and the absorbance reads high. A higher absorbance, read from the line, gives a concentration that's too high. Fix it by holding cuvettes by their ridged sides and wiping the clear sides before every reading. The trap is averaging three readings. Each one still has the fingerprint, so they're all high together.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/feedback-2.acb03ac554b9.mp3",
+        "startFrame": 0,
+        "endFrame": 725
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " fingerprint",
+          "startMs": 200,
+          "endMs": 720,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " scatters",
+          "startMs": 800,
+          "endMs": 1200,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 1320,
+          "endMs": 1440,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " light,",
+          "startMs": 1520,
+          "endMs": 2080,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 2200,
+          "endMs": 2320,
+          "timestampMs": 2260,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 2480,
+          "endMs": 2720,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 2760,
+          "endMs": 3120,
+          "timestampMs": 2940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3160,
+          "endMs": 3200,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " detector,",
+          "startMs": 3480,
+          "endMs": 4080,
+          "timestampMs": 3780,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4280,
+          "endMs": 4320,
+          "timestampMs": 4300,
+          "confidence": null
+        },
+        {
+          "text": " absorbance",
+          "startMs": 4440,
+          "endMs": 5040,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " reads",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " high.",
+          "startMs": 5440,
+          "endMs": 6120,
+          "timestampMs": 5780,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " higher",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " absorbance,",
+          "startMs": 6880,
+          "endMs": 7680,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 7800,
+          "endMs": 7920,
+          "timestampMs": 7860,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 8000,
+          "endMs": 8080,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 8240,
+          "endMs": 8880,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 9280,
+          "endMs": 9920,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " that's",
+          "startMs": 10000,
+          "endMs": 10320,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " too",
+          "startMs": 10440,
+          "endMs": 10560,
+          "timestampMs": 10500,
+          "confidence": null
+        },
+        {
+          "text": " high.",
+          "startMs": 10640,
+          "endMs": 11520,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " Fix",
+          "startMs": 11600,
+          "endMs": 11840,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11960,
+          "endMs": 12080,
+          "timestampMs": 12020,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " holding",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " cuvettes",
+          "startMs": 12640,
+          "endMs": 13120,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 13400,
+          "endMs": 13520,
+          "timestampMs": 13460,
+          "confidence": null
+        },
+        {
+          "text": " ridged",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " sides",
+          "startMs": 13920,
+          "endMs": 14560,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " wiping",
+          "startMs": 14800,
+          "endMs": 15120,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " clear",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " sides",
+          "startMs": 15680,
+          "endMs": 16000,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 16239.999999999998,
+          "endMs": 16480,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 16640,
+          "endMs": 16800,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " reading.",
+          "startMs": 16880,
+          "endMs": 17920,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 17960,
+          "endMs": 18000,
+          "timestampMs": 17980,
+          "confidence": null
+        },
+        {
+          "text": " trap",
+          "startMs": 18080,
+          "endMs": 18320,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " averaging",
+          "startMs": 18560,
+          "endMs": 19040,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " readings.",
+          "startMs": 19440,
+          "endMs": 20400,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 20520,
+          "endMs": 20640,
+          "timestampMs": 20580,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 20720,
+          "endMs": 20960,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 21080,
+          "endMs": 21200,
+          "timestampMs": 21140,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 21280,
+          "endMs": 21440,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21520,
+          "endMs": 21600,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " fingerprint,",
+          "startMs": 21640,
+          "endMs": 22400,
+          "timestampMs": 22020,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 22480,
+          "endMs": 22560,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 22600,
+          "endMs": 22880,
+          "timestampMs": 22740,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 23000,
+          "endMs": 23120,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 23200,
+          "endMs": 23440,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 23520,
+          "endMs": 24160,
+          "timestampMs": 23840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 644,
+      "voiceover": {
+        "text": "So, to trust a calibration: make your standards by careful dilution, zero with a blank, and keep the unknown inside the linear range, diluting it if you must. Then check accuracy with a standard you already know. Next: calibration and water-analysis data practice.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/decision-handoff.60722ba6936d.mp3",
+        "startFrame": 0,
+        "endFrame": 584
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 640,
+          "endMs": 760,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " trust",
+          "startMs": 800,
+          "endMs": 1072,
+          "timestampMs": 936,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " calibration:",
+          "startMs": 1240,
+          "endMs": 2000,
+          "timestampMs": 1620,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 2680,
+          "endMs": 2800,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " standards",
+          "startMs": 3040,
+          "endMs": 3520,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " careful",
+          "startMs": 3760,
+          "endMs": 4160,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " dilution,",
+          "startMs": 4240,
+          "endMs": 5200,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 5360,
+          "endMs": 5680,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5867,
+          "endMs": 5893,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " blank,",
+          "startMs": 5920,
+          "endMs": 6640,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " unknown",
+          "startMs": 7280,
+          "endMs": 7760,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 7840,
+          "endMs": 8400,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8440,
+          "endMs": 8480,
+          "timestampMs": 8460,
+          "confidence": null
+        },
+        {
+          "text": " linear",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " range,",
+          "startMs": 8880,
+          "endMs": 9600,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " diluting",
+          "startMs": 9640,
+          "endMs": 10080,
+          "timestampMs": 9860,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10120,
+          "endMs": 10160,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " must.",
+          "startMs": 10680,
+          "endMs": 11440,
+          "timestampMs": 11060,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " accuracy",
+          "startMs": 12560,
+          "endMs": 12880,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13093,
+          "endMs": 13147,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " standard",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 13920,
+          "endMs": 14320,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " know.",
+          "startMs": 14480,
+          "endMs": 15120,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " Next:",
+          "startMs": 15600,
+          "endMs": 16400,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " calibration",
+          "startMs": 16520,
+          "endMs": 17200,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " water-analysis",
+          "startMs": 17440,
+          "endMs": 18240,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 18320,
+          "endMs": 18640,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " practice.",
+          "startMs": 18720,
+          "endMs": 19440,
+          "timestampMs": 19080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 1200,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-P04-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

@@ -1,0 +1,18 @@
+# Physics Year12 Module6 v05 Revision2 error check
+
+Codex,9 November2026. Source SHA256 `da3ed88a7ee33647baa45298f890613d30fd917daccf743d0fec30a1cff8e4de`. Error-only repair check. No design,narration,scene or speech changes.
+
+Result:0 blockers,2 should fix,0 optional.
+
+- **Should fix,scene7 shared-launch direction.** The revised visual launches two protons up the page in the existing into-page magnetic field,but places both circle centres to the right. For positive q,v=+y and B=-z give q(v cross B)=-x:the force and centres must be to the left. Centres to the right would turn these protons clockwise,contradicting the stated field and correct anticlockwise sense elsewhere. Keep the repaired internally tangent circles,but reconcile launch velocity,field and centre side. Scene15 inherits the same orbit-stage picture,so check it too.
+- **Should fix,Assets kit gap5.** The Revision2 claim that the kit specification was updated is incomplete:the Assets section still requests "concentric orbits at v and 2v in step". Decisions,New explainer motion and scenes7/15 require a shared launch point and separate centres. Different-radius concentric circles cannot share that point. Replace the stale kit instruction with the accepted internally tangent geometry so a builder cannot recreate the original brief189 error.
+
+The original finding is substantially repaired in Decisions,scene7,scene15 and New explainer motion,but remains inconsistent in the Assets kit line. The new direction error above arises in the explicit revised scene7 geometry. No source was edited to repair either finding.
+
+Independent calculations in `work/brief232/v05-calculations.json` cover the worked values and all slider stops. At4.0e6m/s and0.020T,electron r=0.001137203496m,T=1.786315074e-9s,a=1.406960149e16m/s²;proton r=2.088639201m,T=3.280826785e-6s. Radius/mass ratio1836.645 rounds1837. At2/4/8e6m/s,the proton radii are1.044319600/2.088639201/4.177278402m and T is unchanged. Decisions explicitly reset speed to4e6 when B doubles to0.040T:radius1.044319600m,period1.640413392e-6s. Attempt1 r=0.1253183521m,T=2.624661428e-7s;the wrong electron mass gives6.823220974e-5m. Doubled speed gives0.2506367041m and the same period. All numerical rounding agrees. Each acceleration independently equals v²/r.
+
+The magnetic force does zero instantaneous work;constant K and speed support the circular-motion argument for uniform B and perpendicular entry. Period independence is explicitly non-relativistic;the satellite comparison is scoped to circular orbits with r=GM/v². Opposite charge signs reverse the turning sense. The momentum memory card preserves the lesson's classical regime. Correcting the shared-launch direction will preserve equal lap times and the tangent-circle construction.
+
+All17 narration strings and visual specifications were read. Bold and quoted reveal cues match their scene narration and order. Question cards retain givens without answer-bearing additions. The scene sum is5624characters,matching the repaired headline;estimated514s stays under570. No em dash,drawn person/hand,or school-approved practical claim. The listed ball,Earth,satellite and horseshoe plates exist;uniform scaling is specified. No new plate request.
+
+Written v04/v05 and v05/v06 joins match. The incoming proton right/force up/dashed question path is retained. The outgoing electron right in E down/B into page has electric force up and magnetic force down,matching the next opening;excerpts and hashes are recorded. Existing shared CRT retry remains pending. Integrated motion,plate fit,voiced cue timing,captions and human listening remain pending.

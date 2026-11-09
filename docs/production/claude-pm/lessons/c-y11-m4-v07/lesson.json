@@ -1,0 +1,205 @@
+{
+  "id": "chem-y11-m4-v07",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ffa00c71905958eeb5a918c52f17959c710f8f02860f7350854e278c09500a8e",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Last time, we went the long way round. We pulled methane and oxygen apart into atoms, then built the products, and still got delta H. Here's a simpler case to test that idea. Carbon can burn straight to carbon dioxide. Or it can burn to carbon monoxide first, and then the carbon monoxide burns to carbon dioxide. So predict. Does the two-step route release more energy, less, or the same?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "same-start-finish",
+      "title": "same start, same finish",
+      "voiceover": {
+        "text": "The same. Burning carbon straight to carbon dioxide releases three hundred and ninety-three point five kilojoules per mole. Going via carbon monoxide, the first step releases one hundred and ten point five, and the second releases two hundred and eighty-three point zero. Add those, and you get three hundred and ninety-three point five again. Same start, same finish, same delta H."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-it-must-be",
+      "title": "why it must be",
+      "voiceover": {
+        "text": "Here's why it has to work. Enthalpy depends only on what the substances are and their states, not on how they got there. It's like height above sea level. Walk from the beach up to a lookout by a steep track or a gentle one, and you climb the same height, even though you walk different distances. And if two routes gave different energy changes, you could go out by one route and come back by the other, making energy from nothing. Conservation of energy rules that out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hess-law",
+      "title": "Hess's law",
+      "voiceover": {
+        "text": "That's Hess's law. The enthalpy change for a reaction is the same whatever route it takes, so the enthalpy changes of the steps add up to the overall enthalpy change. It's why our imaginary route through separate atoms worked."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measuring-what-we-can",
+      "title": "measuring what we can",
+      "voiceover": {
+        "text": "Hess's law matters most when a reaction can't be measured. Try to burn carbon to just carbon monoxide, and some of the carbon monoxide keeps burning to carbon dioxide, so you always get a mixture. But burning carbon completely, and burning carbon monoxide, can both be measured. So we can calculate the step we can't measure."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "reversing",
+      "title": "reversing an equation",
+      "voiceover": {
+        "text": "To use measured equations, we often have to turn them around or resize them. First, reversing. If a reaction gives out two hundred and eighty-three kilojoules going forwards, then going backwards it must take in exactly two hundred and eighty-three. So when you reverse an equation, delta H keeps its size, but changes sign."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "scaling",
+      "title": "scaling an equation",
+      "voiceover": {
+        "text": "Second, scaling. Delta H belongs to the equation as written. Burning two moles of carbon monoxide releases twice as much energy as burning one. So if you multiply or divide an equation by a number, you do the same to delta H."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "target",
+      "title": "the target",
+      "voiceover": {
+        "text": "Let's find delta H for carbon burning to carbon monoxide. The target is carbon plus half a mole of oxygen, giving carbon monoxide. We're given two measured equations. Equation one, carbon plus oxygen gives carbon dioxide, minus three hundred and ninety-three point five. Equation two, two carbon monoxide plus oxygen gives two carbon dioxide, minus five hundred and sixty-six point zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "reverse-and-halve",
+      "title": "reverse and halve",
+      "voiceover": {
+        "text": "The target has carbon on the left, and so does equation one, so keep equation one as it is. The target has carbon monoxide on the right, but equation two has it on the left, so reverse it. Now delta H is plus five hundred and sixty-six. The target needs one carbon monoxide, not two, so halve the equation, giving plus two hundred and eighty-three point zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "add-and-cancel",
+      "title": "add and cancel",
+      "voiceover": {
+        "text": "Now add the two equations. Carbon dioxide appears on both sides, so it cancels. It's an intermediate, made in one step and used up in the next. Oxygen is one mole on the left and half a mole on the right, which leaves half on the left. What's left is carbon plus half oxygen giving carbon monoxide, exactly the target. So delta H is minus three hundred and ninety-three point five plus two hundred and eighty-three point zero, which is minus one hundred and ten point five."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "check-it",
+      "title": "check it",
+      "voiceover": {
+        "text": "That's the data value for forming carbon monoxide. On the energy diagram, it's the first step of the two-step route, found from two reactions we can actually measure. Always check the target before you add the delta H values. If something hasn't cancelled, you've solved a different reaction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "traps",
+      "title": "two traps",
+      "voiceover": {
+        "text": "Two traps. Forget to flip the sign, and you get minus six hundred and seventy-six point five. Forget to halve, and you get plus one hundred and seventy-two point five, which would make burning carbon endothermic. Whatever you do to an equation, do the same to its delta H."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "the rule",
+      "voiceover": {
+        "text": "Here's the rule. Flip it, flip the sign. Scale it, scale delta H. Then add, and check the target."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Sulfur burns to sulfur dioxide, delta H minus two hundred and ninety-six point eight kilojoules per mole. Two sulfur dioxide plus oxygen gives two sulfur trioxide, delta H minus one hundred and ninety-seven point eight. Calculate delta H for sulfur plus one and a half oxygen giving sulfur trioxide. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Keep the first equation. Halve the second, so it makes one sulfur trioxide, with delta H minus ninety-eight point nine. Add them, and sulfur dioxide cancels, leaving the target. Delta H is minus two hundred and ninety-six point eight plus minus ninety-eight point nine, which is minus three hundred and ninety-five point seven kilojoules per mole. Forgetting to halve gives minus four hundred and ninety-four point six."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Nitrogen and oxygen form two nitrogen monoxide, delta H plus one hundred and eighty point five. Two nitrogen dioxide breaks down into two nitrogen monoxide and oxygen, delta H plus one hundred and fourteen point one. Calculate delta H for half a nitrogen plus oxygen giving nitrogen dioxide. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Halve the first equation, plus ninety point two five. Reverse and halve the second, so nitrogen dioxide is a product, minus fifty-seven point zero five. Add them. Nitrogen monoxide cancels, and the two halves of oxygen add to one, leaving the target. Delta H is plus thirty-three point two kilojoules per mole. Keeping the second sign positive gives plus one hundred and forty-seven point three."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So we can add reaction enthalpies along different paths because enthalpy depends only on the start and the finish. Reverse or scale each step together with its delta H, cancel what appears on both sides, and add. Now look at the two numbers we used for carbon. Each one is the enthalpy change for making one mole of a compound from its elements. Chemists list values like these for thousands of compounds. So how do they give a reaction's delta H?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

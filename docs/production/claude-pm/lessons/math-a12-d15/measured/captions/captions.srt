@@ -1,0 +1,867 @@
+1
+00:00:00,262 --> 00:00:02,318
+Last video ended with two curves.
+
+2
+00:00:02,681 --> 00:00:05,036
+Both follow x squared, up to x equals
+
+3
+00:00:05,198 --> 00:00:05,338
+one.
+
+4
+00:00:05,883 --> 00:00:08,230
+The first carries on along its tangent, y
+
+5
+00:00:08,332 --> 00:00:10,619
+equals two x minus one, and the second
+
+6
+00:00:10,720 --> 00:00:12,124
+along y equals x.
+
+7
+00:00:12,912 --> 00:00:14,102
+Let's turn them into skate tracks.
+
+8
+00:00:14,647 --> 00:00:16,672
+Roll a skateboard down the first, and it
+
+9
+00:00:16,713 --> 00:00:18,256
+passes the join without a bump.
+
+10
+00:00:18,940 --> 00:00:21,391
+On the second, it jolts, because the track's
+
+11
+00:00:21,533 --> 00:00:22,999
+angle changes all at once.
+
+12
+00:00:23,683 --> 00:00:25,751
+Both tracks are unbroken, with no gaps.
+
+13
+00:00:26,394 --> 00:00:28,162
+Now zoom in on each join.
+
+14
+00:00:28,746 --> 00:00:31,224
+The first straightens out into a single line.
+
+15
+00:00:31,748 --> 00:00:34,255
+The second stays a corner, however far you
+
+16
+00:00:34,276 --> 00:00:34,516
+zoom.
+
+17
+00:00:35,258 --> 00:00:37,389
+So what does a join need, for the
+
+18
+00:00:37,450 --> 00:00:38,816
+curve to have a gradient there?
+
+19
+00:00:39,692 --> 00:00:40,382
+Here's the test.
+
+20
+00:00:40,949 --> 00:00:43,476
+Take the point P, at x equals a,
+
+21
+00:00:44,039 --> 00:00:46,446
+and a nearby point Q, a small step
+
+22
+00:00:46,768 --> 00:00:47,289
+h along.
+
+23
+00:00:47,952 --> 00:00:49,717
+The gradient of the line through them
+
+24
+00:00:50,220 --> 00:00:52,688
+is f of a plus h, minus f
+
+25
+00:00:52,709 --> 00:00:53,892
+of a, all over h.
+
+26
+00:00:54,478 --> 00:00:55,250
+You met that in Year 11.
+
+27
+00:00:56,096 --> 00:00:59,281
+Now shrink h towards zero, from the right,
+
+28
+00:00:59,643 --> 00:01:01,906
+and also from the left, because h can
+
+29
+00:01:01,927 --> 00:01:02,367
+be negative.
+
+30
+00:01:03,010 --> 00:01:06,159
+If those gradients settle on one finite number,
+
+31
+00:01:06,461 --> 00:01:07,283
+from both sides,
+
+32
+00:01:07,886 --> 00:01:09,550
+f is differentiable at a.
+
+33
+00:01:10,113 --> 00:01:12,581
+That number is f prime of a, and
+
+34
+00:01:12,602 --> 00:01:14,949
+the curve has a single tangent there that
+
+35
+00:01:15,111 --> 00:01:15,752
+isn't vertical.
+
+36
+00:01:16,496 --> 00:01:18,624
+If they don't settle, there's no derivative at
+
+37
+00:01:18,645 --> 00:01:18,685
+a.
+
+38
+00:01:19,296 --> 00:01:21,348
+Try it on the first join, at x
+
+39
+00:01:21,390 --> 00:01:21,932
+equals one.
+
+40
+00:01:22,576 --> 00:01:24,499
+From the right, Q is on the line
+
+41
+00:01:24,520 --> 00:01:24,539
+y
+
+42
+00:01:25,302 --> 00:01:28,066
+equals two x minus one, so every secant
+
+43
+00:01:28,087 --> 00:01:29,588
+gradient is exactly two.
+
+44
+00:01:30,431 --> 00:01:32,856
+From the left, Q is on x squared,
+
+45
+00:01:33,218 --> 00:01:34,901
+and the gradient is two plus h.
+
+46
+00:01:35,403 --> 00:01:37,948
+So, one point five, one point nine, one
+
+47
+00:01:37,990 --> 00:01:39,773
+point nine nine, heading to two.
+
+48
+00:01:40,516 --> 00:01:42,203
+Both sides settle on two.
+
+49
+00:01:42,928 --> 00:01:45,458
+So this function is differentiable at one, with
+
+50
+00:01:45,700 --> 00:01:47,226
+f prime of one equal to two.
+
+51
+00:01:47,949 --> 00:01:50,154
+The line is the tangent to x squared,
+
+52
+00:01:50,636 --> 00:01:52,519
+so both pieces leave the join in the
+
+53
+00:01:52,580 --> 00:01:53,281
+same direction.
+
+54
+00:01:53,843 --> 00:01:55,451
+That's why the board doesn't jolt.
+
+55
+00:01:56,048 --> 00:01:58,118
+Now the second join, where the right piece
+
+56
+00:01:58,260 --> 00:01:59,224
+is y equals x.
+
+57
+00:02:00,150 --> 00:02:01,465
+From the left, nothing changes.
+
+58
+00:02:01,851 --> 00:02:03,300
+The gradients still head to two.
+
+59
+00:02:03,905 --> 00:02:06,255
+But from the right, every secant gradient is
+
+60
+00:02:06,377 --> 00:02:06,919
+exactly one.
+
+61
+00:02:08,167 --> 00:02:10,001
+Two from one side, one from the other.
+
+62
+00:02:10,587 --> 00:02:11,731
+There's no single number,
+
+63
+00:02:12,355 --> 00:02:14,564
+so there's no derivative at x equals one.
+
+64
+00:02:15,449 --> 00:02:18,285
+The curve is unbroken, but it isn't differentiable
+
+65
+00:02:18,327 --> 00:02:18,507
+there.
+
+66
+00:02:19,413 --> 00:02:20,216
+That's what a corner is:
+
+67
+00:02:20,780 --> 00:02:22,809
+two different one-sided gradients.
+
+68
+00:02:23,613 --> 00:02:24,916
+On the track, that's the jolt,
+
+69
+00:02:25,438 --> 00:02:28,104
+from forty-five degrees to about sixty-three, in an
+
+70
+00:02:28,245 --> 00:02:28,585
+instant.
+
+71
+00:02:29,281 --> 00:02:31,487
+What if the gradients match, but the pieces
+
+72
+00:02:31,588 --> 00:02:32,270
+don't meet?
+
+73
+00:02:33,074 --> 00:02:35,207
+Here, x squared runs up to one, one.
+
+74
+00:02:36,374 --> 00:02:38,483
+Then the right piece is y equals two
+
+75
+00:02:38,664 --> 00:02:40,391
+x, which starts at height two.
+
+76
+00:02:41,196 --> 00:02:42,609
+On a track, that's a step.
+
+77
+00:02:43,436 --> 00:02:45,487
+Its gradient is two, the same as x
+
+78
+00:02:45,507 --> 00:02:46,332
+squared at the join.
+
+79
+00:02:47,297 --> 00:02:50,121
+A function is continuous at a when, from
+
+80
+00:02:50,202 --> 00:02:52,486
+both sides, the curve heads to the value
+
+81
+00:02:52,727 --> 00:02:53,728
+f of a itself.
+
+82
+00:02:54,672 --> 00:02:56,760
+Here, from the right it heads to two,
+
+83
+00:02:57,263 --> 00:02:58,427
+but f of one is one.
+
+84
+00:02:59,493 --> 00:03:00,657
+So it isn't continuous.
+
+85
+00:03:01,742 --> 00:03:03,707
+Now look at the secant from P, to
+
+86
+00:03:03,748 --> 00:03:04,850
+a point on the right piece.
+
+87
+00:03:05,613 --> 00:03:08,086
+The rise never drops below one, while the
+
+88
+00:03:08,127 --> 00:03:09,071
+run shrinks to zero.
+
+89
+00:03:09,834 --> 00:03:12,419
+So the gradient blows up, to twelve, then
+
+90
+00:03:12,440 --> 00:03:13,843
+a hundred and two, and beyond.
+
+91
+00:03:14,647 --> 00:03:15,271
+No derivative.
+
+92
+00:03:16,096 --> 00:03:18,220
+This is why a function that's differentiable at
+
+93
+00:03:18,241 --> 00:03:20,165
+a point must be continuous there.
+
+94
+00:03:20,968 --> 00:03:22,935
+If the gradients settle on a finite number,
+
+95
+00:03:23,337 --> 00:03:25,646
+the rise is that gradient times the run.
+
+96
+00:03:26,349 --> 00:03:28,213
+So the rise shrinks to zero with the
+
+97
+00:03:28,274 --> 00:03:29,918
+run, and the curve can't jump.
+
+98
+00:03:30,788 --> 00:03:32,974
+There's one more way to fail, even with
+
+99
+00:03:33,115 --> 00:03:33,836
+no join at all.
+
+100
+00:03:34,479 --> 00:03:36,946
+Take y equals the cube root of x,
+
+101
+00:03:37,649 --> 00:03:38,190
+at zero.
+
+102
+00:03:38,432 --> 00:03:40,447
+It's unbroken, and it looks smooth.
+
+103
+00:03:41,012 --> 00:03:42,956
+But the secant gradients are h to the
+
+104
+00:03:42,997 --> 00:03:44,721
+power minus two thirds.
+
+105
+00:03:45,524 --> 00:03:47,909
+They grow without limit from both sides, because
+
+106
+00:03:47,950 --> 00:03:50,194
+the tangent at the origin is vertical.
+
+107
+00:03:50,857 --> 00:03:52,763
+A board there would point straight up.
+
+108
+00:03:53,667 --> 00:03:56,472
+A vertical tangent has no gradient, so the
+
+109
+00:03:56,513 --> 00:03:59,519
+cube root of x isn't differentiable at zero.
+
+110
+00:04:00,382 --> 00:04:02,586
+That's why the definition says a tangent that
+
+111
+00:04:02,788 --> 00:04:03,529
+isn't vertical.
+
+112
+00:04:04,593 --> 00:04:06,679
+At a cusp, a sharp point where both
+
+113
+00:04:06,720 --> 00:04:09,690
+sides arrive steeply, the gradients blow up in
+
+114
+00:04:09,852 --> 00:04:10,654
+opposite directions.
+
+115
+00:04:11,217 --> 00:04:12,904
+So there's no derivative there either.
+
+116
+00:04:13,576 --> 00:04:16,312
+So at a join, check two things, in
+
+117
+00:04:16,393 --> 00:04:16,573
+order.
+
+118
+00:04:17,218 --> 00:04:19,005
+First, do the pieces meet?
+
+119
+00:04:19,568 --> 00:04:21,518
+Compare the value at the join with the
+
+120
+00:04:21,599 --> 00:04:23,026
+height the other piece heads to.
+
+121
+00:04:23,670 --> 00:04:24,334
+If they don't meet,
+
+122
+00:04:24,838 --> 00:04:25,099
+stop.
+
+123
+00:04:25,463 --> 00:04:26,649
+It's not differentiable.
+
+124
+00:04:27,434 --> 00:04:29,161
+Second, do the gradients match?
+
+125
+00:04:29,865 --> 00:04:31,668
+Each piece here is smooth on its own
+
+126
+00:04:31,769 --> 00:04:35,256
+side, so differentiate each one, and evaluate both
+
+127
+00:04:35,377 --> 00:04:35,917
+at the join.
+
+128
+00:04:36,682 --> 00:04:38,476
+Equal gradients mean differentiable.
+
+129
+00:04:39,001 --> 00:04:40,718
+Different gradients mean a corner.
+
+130
+00:04:41,384 --> 00:04:43,111
+Continuity on its own isn't enough.
+
+131
+00:04:43,743 --> 00:04:44,999
+Now a worked example.
+
+132
+00:04:45,783 --> 00:04:47,810
+h of x is x squared for x
+
+133
+00:04:47,930 --> 00:04:48,713
+up to two,
+
+134
+00:04:49,235 --> 00:04:51,241
+and a x plus b for x greater
+
+135
+00:04:51,281 --> 00:04:51,562
+than two.
+
+136
+00:04:52,284 --> 00:04:54,149
+Find a and b so that h is
+
+137
+00:04:54,270 --> 00:04:55,753
+differentiable at two.
+
+138
+00:04:56,739 --> 00:04:57,771
+Match the gradients first.
+
+139
+00:04:58,538 --> 00:05:00,768
+x squared has gradient two x, which is
+
+140
+00:05:00,889 --> 00:05:02,295
+four at x equals two.
+
+141
+00:05:03,060 --> 00:05:04,428
+The line's gradient is a.
+
+142
+00:05:04,911 --> 00:05:06,158
+So a equals four.
+
+143
+00:05:07,126 --> 00:05:08,375
+Now make the pieces meet.
+
+144
+00:05:09,222 --> 00:05:10,225
+At x equals two, x
+
+145
+00:05:10,809 --> 00:05:12,997
+squared is four, and the line gives two
+
+146
+00:05:13,099 --> 00:05:13,740
+a plus b.
+
+147
+00:05:14,223 --> 00:05:16,188
+So four equals eight plus b,
+
+148
+00:05:16,710 --> 00:05:18,093
+and b is minus four.
+
+149
+00:05:18,995 --> 00:05:21,338
+The line is y equals four x minus
+
+150
+00:05:21,399 --> 00:05:23,842
+four, the tangent to x squared at two,
+
+151
+00:05:24,243 --> 00:05:26,206
+so a board rolls through without a jolt.
+
+152
+00:05:27,012 --> 00:05:28,163
+You need both equations.
+
+153
+00:05:28,648 --> 00:05:31,095
+The gradient alone leaves b free, and the
+
+154
+00:05:31,136 --> 00:05:32,258
+join could still jump.
+
+155
+00:05:32,935 --> 00:05:33,938
+A short way to hold it:
+
+156
+00:05:34,562 --> 00:05:35,706
+meet, then match.
+
+157
+00:05:36,288 --> 00:05:38,811
+The pieces meet, so there's no step, and
+
+158
+00:05:38,832 --> 00:05:39,912
+the function is continuous.
+
+159
+00:05:40,434 --> 00:05:43,504
+The gradients match, so there's no kink, and
+
+160
+00:05:43,666 --> 00:05:44,468
+it's differentiable.
+
+161
+00:05:45,154 --> 00:05:46,728
+Meeting alone isn't enough.
+
+162
+00:05:49,506 --> 00:05:50,016
+Your turn.
+
+163
+00:05:50,581 --> 00:05:53,384
+g of x is three minus x squared,
+
+164
+00:05:53,604 --> 00:05:55,606
+for x up to and including one,
+
+165
+00:05:56,267 --> 00:05:58,909
+and x plus one, for x greater than
+
+166
+00:05:59,049 --> 00:05:59,150
+one.
+
+167
+00:05:59,933 --> 00:06:02,173
+Is g continuous at x equals one?
+
+168
+00:06:02,817 --> 00:06:03,863
+Is it differentiable there?
+
+169
+00:06:04,447 --> 00:06:05,653
+Justify both answers.
+
+170
+00:06:06,460 --> 00:06:07,309
+Pause here to answer.
+
+171
+00:06:18,581 --> 00:06:20,465
+x equals one belongs to the first piece,
+
+172
+00:06:20,866 --> 00:06:22,931
+so g of one is three minus one,
+
+173
+00:06:22,951 --> 00:06:23,552
+which is two.
+
+174
+00:06:24,435 --> 00:06:26,589
+The second piece heads to one plus one,
+
+175
+00:06:26,870 --> 00:06:27,373
+also two.
+
+176
+00:06:28,078 --> 00:06:29,986
+They meet, so g is continuous.
+
+177
+00:06:30,870 --> 00:06:33,583
+The gradients are minus two x, which is
+
+178
+00:06:33,764 --> 00:06:34,910
+minus two, and one.
+
+179
+00:06:35,634 --> 00:06:39,211
+Minus two isn't one, so g isn't differentiable
+
+180
+00:06:39,373 --> 00:06:39,774
+at one.
+
+181
+00:06:40,519 --> 00:06:41,990
+There's a corner, at one, two.
+
+182
+00:06:43,080 --> 00:06:45,297
+Being continuous doesn't make it differentiable.
+
+183
+00:06:46,881 --> 00:06:47,324
+Last one.
+
+184
+00:06:48,391 --> 00:06:50,095
+f of x is e to the two
+
+185
+00:06:50,276 --> 00:06:52,962
+x, for x up to and including zero,
+
+186
+00:06:53,583 --> 00:06:56,169
+and a x plus b, for x greater
+
+187
+00:06:56,210 --> 00:06:56,691
+than zero.
+
+188
+00:06:57,453 --> 00:06:59,739
+Find the values of a and b that
+
+189
+00:06:59,779 --> 00:07:02,447
+make f differentiable at x equals zero.
+
+190
+00:07:03,210 --> 00:07:03,977
+Pause here to answer.
+
+191
+00:07:14,703 --> 00:07:15,709
+Match the gradients.
+
+192
+00:07:16,373 --> 00:07:18,120
+The derivative of e to the two x
+
+193
+00:07:18,321 --> 00:07:20,390
+is two e to the two x, which
+
+194
+00:07:20,450 --> 00:07:21,454
+is two at zero.
+
+195
+00:07:21,956 --> 00:07:23,664
+So a equals two.
+
+196
+00:07:24,510 --> 00:07:25,077
+Now meet.
+
+197
+00:07:25,820 --> 00:07:27,083
+e to the zero is one,
+
+198
+00:07:27,644 --> 00:07:30,070
+and the line gives b at zero, so
+
+199
+00:07:30,150 --> 00:07:31,032
+b equals one.
+
+200
+00:07:31,755 --> 00:07:33,973
+The line is y equals two x plus
+
+201
+00:07:34,095 --> 00:07:34,235
+one.
+
+202
+00:07:34,920 --> 00:07:36,086
+Not b equals zero.
+
+203
+00:07:36,608 --> 00:07:38,415
+Then the pieces would miss by one, and
+
+204
+00:07:38,435 --> 00:07:39,339
+the curve would jump.
+
+205
+00:07:41,042 --> 00:07:42,128
+Back to the smooth join.
+
+206
+00:07:42,772 --> 00:07:45,389
+At x equals one, both sides have gradient
+
+207
+00:07:45,470 --> 00:07:45,732
+two.
+
+208
+00:07:46,235 --> 00:07:48,091
+But look at how the gradient changes.
+
+209
+00:07:48,716 --> 00:07:51,178
+On the left, it's minus one, then zero,
+
+210
+00:07:51,198 --> 00:07:53,820
+then one, still rising as we move right.
+
+211
+00:07:54,622 --> 00:07:56,452
+On the right, it stays at two.
+
+212
+00:07:57,055 --> 00:07:59,163
+The curve bends, and the line doesn't.
+
+213
+00:08:00,048 --> 00:08:02,695
+Next: what the changing gradient tells us about
+
+214
+00:08:02,716 --> 00:08:03,718
+the shape of a curve.
+
+215
+00:08:06,555 --> 00:08:07,438
+Here are the key notes.
+
+216
+00:08:07,961 --> 00:08:09,729
+Pause the video if you need more time
+
+217
+00:08:09,750 --> 00:08:10,231
+to copy them.

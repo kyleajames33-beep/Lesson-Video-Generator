@@ -1,0 +1,13 @@
+# Physics Year 12 Module 8 v03 Revision 2 error check
+
+Codex, 9 November 2026. Error-only repair check. Original reviews retained. Source hash, independent calculations, plate hashes and written joins: `work/brief234/v03-calculations.json`. No design, narration, scene or speech edits.
+
+Result: 0 blockers, 0 should fix, 0 optional.
+
+All six prior findings are resolved: usable existing filament-lamp path; cool ground-state sodium rather than unexplained excited hydrogen absorber; approximate K/M boundary about 3500 K consistently in learner copy; composition 73% H, 25% He, 2% others totals 100%; handoff specifies same continuum peak/class rather than identical resolved spectra; full scientific-notation denominators grouped. The prior cue-order repair in scene 11 also holds.
+
+All 17 narration and visual specifications read. Emission/absorption photon account, re-emission directions, Balmer n=2 population versus ionisation, He/Ca/TiO temperature features, approximate classification conventions, composition comparison and pressure-broadening-compatible handoff remain consistent. Middle-temperature panels explicitly show a few electrons excited rather than most. The sodium 589 nm/ground-state example matches the primary atomic-level check already completed for m7-v03. Cues are verbatim and ordered, including repeated temperature and hydrogen cues. Full question cards preserve conditions without answers; class ranges are provided as reference, not the calculated answer.
+
+Independent calculations: H-alpha energy 3.028798e-19 J or 1.890635 eV; sodium 589 nm 2.106662 eV. Thermometer peaks at 3000/4000/5800/7000/10000/30000 K are 966/724.5/499.655/414/289.8/96.6 nm, matching displayed rounding. 500 nm gives 5796 K; 414 nm gives 7000 K/class F; 725 nm gives 3997.241 K/class K. The crossed unit error gives 3.997241e-6 K; crossed multiplication 1.449e-9. Nominal 5772 K gives 502.079 nm. Site-motion check gives z=0.002742648, 822.794 km/s. Composition totals 100%; hydrogen level gap 13.6(1-1/4)=10.2 eV agrees. Prior stellar-spectrum/history checks remain applicable; no new source-sensitive claim introduced.
+
+6303 characters matches; estimated 543 s is below 570. Written v02/v03/v04 joins match, including same peak/same class and the first-beat hand-tag fade. Six used plates visually inspected on cream in `work/brief234/v03-used-plates.jpg`; uniform scaling and native-size limits specified. No new plate request, em dash or drawn person/hand/face. Existing site notes remain for root; no site edits. Integrated line/thermometer motion, voiced cues, captions and human listening remain pending.

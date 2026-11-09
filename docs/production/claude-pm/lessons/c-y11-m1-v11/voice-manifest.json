@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v11.md",
+  "sourceSha256": "8321a7315d46a87d671e97a1372de9d9a85186d9941742090c30f00d55b39397",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "On the data sheet, chlorine is element seventeen, so a chlorine atom has seventeen electrons. In Stage 5, you'd write them as two, eight, seven, one number for each shell. But in the energy level video, we saw that inside each level, electrons occupy orbitals of different types, s, p, d and f. So where exactly is each of chlorine's seventeen electrons? Spdf notation answers that. It's like an address for every electron.",
+      "audioFile": "public/audio/chem-y11-m1-v11/hook.wav"
+    },
+    {
+      "id": "subshells",
+      "text": "Start with the energy levels, numbered one, two, three and four, going up in energy. Each level is split into subshells. A subshell is a group of orbitals of the same type and energy. Level one has just an s subshell. Level two has s and p. Level three has s, p and d. And level four has all four types, s, p, d and f. So the level number tells you how many subshell types it has.",
+      "audioFile": "public/audio/chem-y11-m1-v11/subshells.wav"
+    },
+    {
+      "id": "orbitals-capacity",
+      "text": "Each subshell is made of orbitals, the regions where an electron is likely to be found. An s subshell has one orbital, a p subshell has three, a d has five, and an f has seven. Here's the key rule. Each orbital holds at most two electrons, and those two must spin in opposite directions. We draw each orbital as a box, and its electrons as an up arrow and a down arrow. So an s subshell holds two electrons, p holds six, d holds ten, and f holds fourteen.",
+      "audioFile": "public/audio/chem-y11-m1-v11/orbitals-capacity.wav"
+    },
+    {
+      "id": "notation",
+      "text": "Now the notation itself. Take three p five. The three is the energy level. The p is the type of subshell. And the small raised five is the number of electrons in it. So it's an address. Level three, the p subshell, five electrons live there. A full configuration lists every occupied subshell like this, and the raised numbers always add up to the number of electrons in the atom.",
+      "audioFile": "public/audio/chem-y11-m1-v11/notation.wav"
+    },
+    {
+      "id": "filling-order",
+      "text": "So which subshells fill first? Electrons fill the lowest energy subshells first, just as a ball settles on the lowest step of a staircase. Mostly, that means level by level. One s, two s, two p, three s, three p. But there's a surprise at level four. The four s subshell is lower in energy than three d, so four s fills first, and three d fills after it.",
+      "audioFile": "public/audio/chem-y11-m1-v11/filling-order.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Potassium has nineteen electrons. Once three p is full, the atom holds eighteen. Where does electron nineteen go?",
+      "audioFile": "public/audio/chem-y11-m1-v11/prediction.wav"
+    },
+    {
+      "id": "potassium",
+      "text": "Into four s, not three d. Four s is the lower energy subshell, so it fills first, and potassium ends in four s one. That's also why potassium starts a new row of the periodic table. Its outermost electron is the first one in level four. Calcium, with twenty electrons, fills four s with a second one. Only then, from scandium on, does three d start to fill.",
+      "audioFile": "public/audio/chem-y11-m1-v11/potassium.wav"
+    },
+    {
+      "id": "phosphorus",
+      "text": "Let's build phosphorus, with fifteen electrons. One s two, that's two. Two s two, four. Two p six, ten. Three s two, twelve. And three p takes the last three, making fifteen. So phosphorus is one s two, two s two, two p six, three s two, three p three. Group the levels, and you get two, eight, five, the Stage 5 version.",
+      "audioFile": "public/audio/chem-y11-m1-v11/phosphorus.wav"
+    },
+    {
+      "id": "pairing",
+      "text": "But how do those three p electrons sit in their three orbitals? Electrons repel each other. So in orbitals of equal energy, they spread out, one per orbital, before any of them pair up. Phosphorus's three p electrons each get their own box. That gives phosphorus three unpaired electrons, electrons alone in their orbital.",
+      "audioFile": "public/audio/chem-y11-m1-v11/pairing.wav"
+    },
+    {
+      "id": "chlorine",
+      "text": "Chlorine has seventeen, so its three p subshell holds five. The first three go one per box, and the next two pair up. That leaves two pairs and one single, so chlorine has one unpaired electron. We can shorten it, too. Everything up to two p six matches the noble gas neon, so we write neon in square brackets, then three s two, three p five.",
+      "audioFile": "public/audio/chem-y11-m1-v11/chlorine.wav"
+    },
+    {
+      "id": "iron",
+      "text": "Now iron, with twenty-six. After three p six, eighteen electrons are placed, the same as argon. Four s fills next with two, making twenty. The last six go into three d. When we write it, we list the subshells in level order, so three d comes before four s. Argon, three d six, four s two. In the five d boxes, six electrons means five singles, then one pair. So iron has four unpaired electrons.",
+      "audioFile": "public/audio/chem-y11-m1-v11/iron.wav"
+    },
+    {
+      "id": "order-check",
+      "text": "One warning. A configuration can add up and still be wrong. One s two, two s two, two p five, three s two, three p six also adds to seventeen. But two p isn't full. An electron won't go into a higher subshell while a lower one still has room, so this atom isn't in its lowest energy arrangement. Check the order, as well as the total.",
+      "audioFile": "public/audio/chem-y11-m1-v11/order-check.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "So here's the method in one line. Lowest first, one per box, then pair, and check the total. Fill from the lowest energy, remembering four s before three d. Spread out before pairing. And make sure the raised numbers add up to the electron count.",
+      "audioFile": "public/audio/chem-y11-m1-v11/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Sulfur has atomic number sixteen. Write the full electron configuration of a sulfur atom, using s p d f notation, and state how many unpaired electrons it has. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Sulfur is one s two, two s two, two p six, three s two, three p four, adding to sixteen. In three p, the first three go one per box, and the fourth pairs up. That's one pair and two singles, so two unpaired electrons. Pairing them up first, to get zero unpaired, is the classic slip. One per box comes first.",
+      "audioFile": "public/audio/chem-y11-m1-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Vanadium has atomic number twenty-three. Write its electron configuration using noble gas shorthand, and state how many unpaired electrons a vanadium atom has. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Argon takes eighteen. Four s fills next with two, making twenty, and the last three go into three d. So vanadium is argon, three d three, four s two. The three d electrons go one per box, so there are three unpaired electrons. Writing argon, three d five, is the classic slip. It fills three d before four s, and four s comes first.",
+      "audioFile": "public/audio/chem-y11-m1-v11/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Now look where our atoms sit. Phosphorus and chlorine both end in three p, and they share a row. Potassium's four s one begins the next row, and iron is filling three d, in the middle block. That's no accident. Next, how do electron arrangements organise groups and periods?",
+      "audioFile": "public/audio/chem-y11-m1-v11/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v11/key-notes.wav"
+    }
+  ]
+}

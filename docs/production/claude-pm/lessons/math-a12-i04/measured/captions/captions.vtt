@@ -1,0 +1,640 @@
+WEBVTT
+
+00:00:00.281 --> 00:00:02.746
+Last video stopped at one over x, where
+
+00:00:02.766 --> 00:00:04.370
+the power rule would divide by zero.
+
+00:00:05.193 --> 00:00:06.078
+Here's a rate like that.
+
+00:00:06.743 --> 00:00:08.513
+A fundraiser's donations slow down.
+
+00:00:09.196 --> 00:00:11.060
+On day t, they come in at a
+
+00:00:11.202 --> 00:00:12.845
+thousand over t dollars a day.
+
+00:00:13.488 --> 00:00:15.841
+So the total raised has gradient a thousand
+
+00:00:15.902 --> 00:00:16.163
+over t.
+
+00:00:17.150 --> 00:00:18.696
+The same term sits in this question:
+
+00:00:19.280 --> 00:00:21.629
+two e to the three x, plus four
+
+00:00:21.770 --> 00:00:22.171
+over x.
+
+00:00:22.836 --> 00:00:24.666
+The first term is done: two thirds e
+
+00:00:24.949 --> 00:00:25.612
+to the three x.
+
+00:00:26.238 --> 00:00:27.328
+The second is still waiting.
+
+00:00:28.037 --> 00:00:30.150
+So which curve has a gradient of one
+
+00:00:30.292 --> 00:00:30.794
+over x?
+
+00:00:31.539 --> 00:00:33.447
+And why will the answer need the absolute
+
+00:00:33.528 --> 00:00:36.179
+value of x, often read as mod x?
+
+00:00:36.795 --> 00:00:38.442
+Think about what a primitive means here.
+
+00:00:39.065 --> 00:00:41.410
+We want a curve whose gradient, at each
+
+00:00:41.752 --> 00:00:41.871
+x,
+
+00:00:42.413 --> 00:00:44.337
+equals the height of one over x.
+
+00:00:45.081 --> 00:00:46.868
+For positive x, we already know one.
+
+00:00:47.331 --> 00:00:49.036
+The derivative of the natural log of x
+
+00:00:49.258 --> 00:00:50.100
+is one over x.
+
+00:00:50.804 --> 00:00:53.208
+At x equals two, the log curve has
+
+00:00:53.249 --> 00:00:55.633
+gradient one half, the same as the height
+
+00:00:55.714 --> 00:00:56.916
+of one over x at two.
+
+00:00:57.679 --> 00:00:59.944
+But one over x has a second piece
+
+00:01:00.085 --> 00:01:01.809
+on the left, where x is negative.
+
+00:01:02.452 --> 00:01:04.181
+The natural log of x doesn't exist there,
+
+00:01:04.363 --> 00:01:05.991
+so it can't be the whole answer.
+
+00:01:06.655 --> 00:01:08.778
+On the left, one over x is negative,
+
+00:01:09.219 --> 00:01:11.343
+so the curve we want must go downhill
+
+00:01:11.524 --> 00:01:12.505
+as x increases.
+
+00:01:13.228 --> 00:01:15.700
+Near zero it must be steep, and further
+
+00:01:15.722 --> 00:01:17.169
+left it must flatten out.
+
+00:01:17.894 --> 00:01:19.846
+That's the log curve, mirrored in the y
+
+00:01:19.928 --> 00:01:20.209
+axis.
+
+00:01:21.214 --> 00:01:23.721
+Mirroring left to right reverses every slope.
+
+00:01:24.323 --> 00:01:26.569
+At x equals minus two, the mirrored curve
+
+00:01:26.611 --> 00:01:29.338
+has gradient minus one half, and one over
+
+00:01:29.379 --> 00:01:31.123
+minus two is minus a half.
+
+00:01:32.027 --> 00:01:34.073
+This mirrored curve is the natural log of
+
+00:01:34.215 --> 00:01:34.916
+minus x.
+
+00:01:35.763 --> 00:01:36.894
+The chain rule confirms it.
+
+00:01:37.400 --> 00:01:40.167
+Its derivative is one over minus x, times
+
+00:01:40.208 --> 00:01:41.931
+the inner derivative, minus one.
+
+00:01:42.598 --> 00:01:43.367
+That's one over x.
+
+00:01:44.204 --> 00:01:45.299
+Put the two pieces together.
+
+00:01:45.702 --> 00:01:47.829
+For positive x we have the natural log
+
+00:01:47.850 --> 00:01:48.251
+of x,
+
+00:01:48.753 --> 00:01:50.840
+and for negative x, the natural log of
+
+00:01:51.001 --> 00:01:51.603
+minus x.
+
+00:01:52.366 --> 00:01:54.674
+Both are the natural log of mod x.
+
+00:01:55.379 --> 00:01:56.970
+Mod x is the size of x without
+
+00:01:57.011 --> 00:01:57.393
+its sign.
+
+00:01:58.300 --> 00:02:00.506
+Now watch the gradient as a point moves
+
+00:02:00.567 --> 00:02:01.449
+along each piece.
+
+00:02:02.114 --> 00:02:04.447
+On both sides, it traces one over x
+
+00:02:04.630 --> 00:02:05.212
+exactly.
+
+00:02:05.696 --> 00:02:07.716
+So the integral of one over x is
+
+00:02:07.758 --> 00:02:10.438
+the natural log of mod x, plus C,
+
+00:02:10.800 --> 00:02:12.280
+for x not equal to zero.
+
+00:02:12.998 --> 00:02:14.371
+Notice the gap at zero.
+
+00:02:14.936 --> 00:02:17.261
+One over x isn't defined there, and mod
+
+00:02:17.403 --> 00:02:18.565
+x doesn't fill the gap.
+
+00:02:19.410 --> 00:02:21.608
+So this primitive is two separate pieces.
+
+00:02:22.352 --> 00:02:23.614
+Slide the right piece up,
+
+00:02:24.116 --> 00:02:25.439
+and its gradients don't change.
+
+00:02:26.222 --> 00:02:28.070
+Slide the left piece down, and the same
+
+00:02:28.091 --> 00:02:28.411
+is true.
+
+00:02:29.215 --> 00:02:32.001
+Nothing joins the pieces across zero, so each
+
+00:02:32.122 --> 00:02:33.645
+one can have its own constant.
+
+00:02:34.509 --> 00:02:36.820
+Differentiate any of these curves, and you get
+
+00:02:36.982 --> 00:02:38.328
+one over x on each piece.
+
+00:02:39.092 --> 00:02:41.179
+In a question, you work on one piece
+
+00:02:41.200 --> 00:02:43.046
+at a time, so you write the natural
+
+00:02:43.067 --> 00:02:44.531
+log of mod x, plus C.
+
+00:02:45.302 --> 00:02:46.549
+Back to the waiting term.
+
+00:02:47.192 --> 00:02:49.901
+Four over x is four times one over
+
+00:02:50.061 --> 00:02:50.182
+x,
+
+00:02:50.683 --> 00:02:52.991
+so its integral is four times the natural
+
+00:02:53.071 --> 00:02:54.255
+log of mod x.
+
+00:02:55.179 --> 00:02:57.452
+Add the first term, and one constant for
+
+00:02:57.472 --> 00:02:58.156
+the whole answer.
+
+00:02:58.699 --> 00:03:01.201
+That's two thirds e to the three x,
+
+00:03:01.621 --> 00:03:04.103
+plus four times the natural log of mod
+
+00:03:04.183 --> 00:03:05.423
+x, plus C,
+
+00:03:05.984 --> 00:03:07.385
+for x not equal to zero.
+
+00:03:08.087 --> 00:03:09.193
+Differentiate back to check.
+
+00:03:09.777 --> 00:03:12.607
+Two thirds times three gives two e to
+
+00:03:12.628 --> 00:03:13.230
+the three x,
+
+00:03:13.733 --> 00:03:15.459
+and four over x comes back.
+
+00:03:16.125 --> 00:03:16.999
+Back to the fundraiser.
+
+00:03:17.764 --> 00:03:20.196
+Its total is a thousand times the natural
+
+00:03:20.236 --> 00:03:21.723
+log of t, plus C.
+
+00:03:22.427 --> 00:03:25.101
+Here t is positive, so no absolute value
+
+00:03:25.161 --> 00:03:25.503
+is needed.
+
+00:03:26.467 --> 00:03:29.032
+After day one, two thousand dollars is in,
+
+00:03:29.494 --> 00:03:31.558
+and the natural log of one is zero,
+
+00:03:32.019 --> 00:03:33.482
+so C is two thousand.
+
+00:03:34.525 --> 00:03:36.469
+Each time the number of days doubles, it
+
+00:03:36.530 --> 00:03:38.954
+grows by the same amount, about six hundred
+
+00:03:38.975 --> 00:03:39.856
+and ninety-three dollars.
+
+00:03:40.559 --> 00:03:42.995
+It never stops growing, but it keeps slowing
+
+00:03:43.037 --> 00:03:43.257
+down.
+
+00:03:44.009 --> 00:03:45.736
+Now a reciprocal with an inside.
+
+00:03:46.520 --> 00:03:48.925
+Find the integral of one over two x
+
+00:03:49.127 --> 00:03:49.768
+minus three.
+
+00:03:50.651 --> 00:03:52.598
+Try the natural log of mod two x
+
+00:03:52.639 --> 00:03:53.160
+minus three.
+
+00:03:53.843 --> 00:03:56.071
+By the chain rule, its derivative is two
+
+00:03:56.273 --> 00:03:57.376
+over two x minus three,
+
+00:03:57.939 --> 00:03:58.762
+twice what we want.
+
+00:03:59.545 --> 00:04:01.608
+On the graph, the log curve is squashed
+
+00:04:01.750 --> 00:04:04.294
+sideways by a factor of two, then slid
+
+00:04:04.335 --> 00:04:04.535
+along.
+
+00:04:05.277 --> 00:04:07.603
+The slide changes no slopes, but the squash
+
+00:04:07.765 --> 00:04:08.666
+doubles every one.
+
+00:04:09.430 --> 00:04:11.755
+It's the same cause as before, so divide
+
+00:04:11.816 --> 00:04:12.598
+by the inner rate.
+
+00:04:13.281 --> 00:04:15.068
+The answer is a half, times the natural
+
+00:04:15.129 --> 00:04:17.620
+log of mod two x minus three, plus
+
+00:04:17.761 --> 00:04:17.881
+C.
+
+00:04:18.729 --> 00:04:19.456
+The gap moves too.
+
+00:04:20.063 --> 00:04:21.968
+Two x minus three is zero at x
+
+00:04:22.090 --> 00:04:23.333
+equals three over two,
+
+00:04:23.915 --> 00:04:25.520
+so the answer works on either side of
+
+00:04:25.561 --> 00:04:27.185
+three over two, but not across it.
+
+00:04:27.796 --> 00:04:29.830
+What if the top isn't just a number?
+
+00:04:30.575 --> 00:04:32.761
+Find the integral of two x over x
+
+00:04:32.782 --> 00:04:33.845
+squared plus four.
+
+00:04:34.592 --> 00:04:35.180
+Look at the bottom.
+
+00:04:35.809 --> 00:04:38.723
+Its derivative is two x, which is exactly
+
+00:04:38.765 --> 00:04:39.126
+the top.
+
+00:04:39.850 --> 00:04:41.753
+By the chain rule, the natural log of
+
+00:04:41.855 --> 00:04:44.580
+mod f has derivative f prime over f.
+
+00:04:45.222 --> 00:04:47.471
+So this integral is the natural log of
+
+00:04:47.552 --> 00:04:49.922
+mod x squared plus four, plus C.
+
+00:04:50.686 --> 00:04:52.955
+Here, x squared plus four is at least
+
+00:04:53.157 --> 00:04:54.884
+four, so it's always positive.
+
+00:04:55.407 --> 00:04:57.633
+The absolute value can go, and the answer
+
+00:04:57.654 --> 00:04:58.636
+works for every x.
+
+00:04:59.399 --> 00:05:01.422
+But if the bottom were x squared minus
+
+00:05:01.483 --> 00:05:04.066
+four, it would change sign, so you'd keep
+
+00:05:04.087 --> 00:05:06.550
+the absolute value, with gaps at x equals
+
+00:05:06.611 --> 00:05:07.832
+two and minus two.
+
+00:05:08.636 --> 00:05:09.661
+One more from last video.
+
+00:05:10.405 --> 00:05:12.466
+Find the integral of e to the minus
+
+00:05:12.667 --> 00:05:15.970
+x, plus three over x, plus x squared.
+
+00:05:16.713 --> 00:05:19.228
+Last video gave minus e to the minus
+
+00:05:19.450 --> 00:05:19.570
+x.
+
+00:05:20.335 --> 00:05:22.801
+Three over x gives three times the natural
+
+00:05:22.863 --> 00:05:23.985
+log of mod x.
+
+00:05:24.689 --> 00:05:27.146
+And x squared gives x cubed over three.
+
+00:05:27.892 --> 00:05:30.186
+One plus C covers the lot, and x
+
+00:05:30.248 --> 00:05:30.911
+can't be zero.
+
+00:05:31.536 --> 00:05:32.602
+Here's the pattern to remember.
+
+00:05:33.226 --> 00:05:34.827
+When the top is the derivative of the
+
+00:05:34.868 --> 00:05:37.471
+bottom, the answer is the natural log of
+
+00:05:37.632 --> 00:05:38.372
+mod bottom.
+
+00:05:39.034 --> 00:05:40.735
+If the top is a constant multiple of
+
+00:05:40.776 --> 00:05:42.697
+that derivative, fix the number in front.
+
+00:05:43.420 --> 00:05:45.908
+And keep the absolute value, unless the bottom
+
+00:05:45.949 --> 00:05:46.872
+is always positive.
+
+00:05:49.558 --> 00:05:50.024
+Your turn.
+
+00:05:50.487 --> 00:05:52.870
+Find the integral of six over three x
+
+00:05:52.912 --> 00:05:55.476
+plus one, and state the values of x
+
+00:05:55.597 --> 00:05:56.979
+for which your answer is valid.
+
+00:05:57.704 --> 00:05:58.611
+Pause here to answer.
+
+00:06:09.255 --> 00:06:11.844
+The bottom, three x plus one, has derivative
+
+00:06:11.986 --> 00:06:12.266
+three,
+
+00:06:12.809 --> 00:06:14.595
+and six is two times three.
+
+00:06:15.198 --> 00:06:17.388
+So the answer is two times the natural
+
+00:06:17.429 --> 00:06:19.819
+log of mod three x plus one, plus
+
+00:06:19.840 --> 00:06:19.980
+C.
+
+00:06:21.063 --> 00:06:23.804
+Differentiate back: two times three, over three x
+
+00:06:23.825 --> 00:06:26.326
+plus one, gives six over three x plus
+
+00:06:26.447 --> 00:06:26.566
+one.
+
+00:06:27.328 --> 00:06:29.152
+It's valid for x not equal to minus
+
+00:06:29.214 --> 00:06:30.837
+one third, on either side of it.
+
+00:06:31.701 --> 00:06:33.430
+Six times the log is wrong.
+
+00:06:33.875 --> 00:06:35.711
+It forgets to divide by the inner three.
+
+00:06:37.388 --> 00:06:37.816
+Last one.
+
+00:06:38.422 --> 00:06:41.147
+Find the integral of x squared over x
+
+00:06:41.247 --> 00:06:42.449
+cubed minus eight,
+
+00:06:42.970 --> 00:06:44.953
+and state the values of x for which
+
+00:06:45.014 --> 00:06:46.276
+your answer is valid.
+
+00:06:46.918 --> 00:06:47.854
+Pause here to answer.
+
+00:06:58.562 --> 00:07:01.214
+The bottom's derivative is three x squared, and
+
+00:07:01.234 --> 00:07:02.520
+the top is a third of that.
+
+00:07:03.183 --> 00:07:04.908
+So the answer is a third of the
+
+00:07:04.948 --> 00:07:07.635
+natural log of mod x cubed minus eight,
+
+00:07:07.996 --> 00:07:08.437
+plus C.
+
+00:07:09.279 --> 00:07:11.243
+The bottom is zero when x is two,
+
+00:07:11.684 --> 00:07:13.708
+so the answer works for x less than
+
+00:07:13.769 --> 00:07:15.773
+two, or for x greater than two.
+
+00:07:16.637 --> 00:07:18.424
+Dropping the absolute value is wrong.
+
+00:07:18.847 --> 00:07:20.190
+For x less than two, x
+
+00:07:20.792 --> 00:07:23.157
+cubed minus eight is negative, and its log
+
+00:07:23.239 --> 00:07:23.839
+doesn't exist.
+
+00:07:25.441 --> 00:07:27.887
+So one over x integrates to the natural
+
+00:07:27.927 --> 00:07:30.373
+log of mod x, because the mirrored log
+
+00:07:30.494 --> 00:07:31.576
+covers the negative side.
+
+00:07:32.380 --> 00:07:33.507
+Next, the trig functions.
+
+00:07:34.030 --> 00:07:35.458
+Here's y equals sine x.
+
+00:07:36.402 --> 00:07:39.025
+Which curve has a gradient equal to sine
+
+00:07:39.045 --> 00:07:39.986
+x at every point?
+
+00:07:40.808 --> 00:07:42.578
+Is it cos x, or something else?
+
+00:07:45.195 --> 00:07:46.058
+Here are the key notes.
+
+00:07:46.461 --> 00:07:48.008
+Pause the video if you need more time
+
+00:07:48.050 --> 00:07:48.511
+to copy them.

@@ -1,0 +1,97 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-d17.md",
+  "sourceSha256": "0adac3c82703994f162cfa04410cc036a8c5beb6ff3e0b35e7c927315020919b",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here, with a cubic and its two derivative graphs. Now let's put them to work. This laptop shows a new video's total views, day by day. They climb slowly at launch, then fast, then level off. From this graph alone, which day brought the most new views? By the end, you'll read it straight off the shape.",
+      "audioFile": "public/audio/math-a12-d17/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "First, take a cubic you've met before, y equals x cubed minus three x. It has a local maximum at minus one, two, a local minimum at one, minus two, and an inflection at the origin. Are those points enough? This wiggly curve goes through all three points. So does this one, made of straight lines. Both are wrong. What rules them out is what the derivatives say between the points: constraints, rules the curve has to obey.",
+      "audioFile": "public/audio/math-a12-d17/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Start with f prime. f prime of x is three, times x minus one, times x plus one. It's positive when x is less than minus one, negative between minus one and one, and positive again after one. So the curve must rise, then fall, then rise. Now look at the wiggly curve. Near zero it climbs, where f prime says it must fall. So it's out. Each sign of f prime is a rule for a whole interval, not just a point.",
+      "audioFile": "public/audio/math-a12-d17/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "f prime can't rule out the straight join. Now use f double prime, which is six x. For x less than zero it's negative, so the curve is concave down, bending like a cap. For x greater than zero it's positive, concave up, like a cup. Straight lines don't bend, and they make sharp corners at minus one and one, where the curve has to be smooth and flat. At the origin the bend changes, so that's the inflection. The gradient there is minus three, not zero, so it's a non-horizontal inflection.",
+      "audioFile": "public/audio/math-a12-d17/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now pin it down. Symmetry. f of minus x is minus f of x, so the function is odd. Give the right half a half turn about the origin, and it lands exactly on the left half. Intercepts. x times x squared minus three is zero at zero, and at plus or minus root three, about one point seven three. And the ends. For large x, the x cubed term wins, so the curve heads up on the right, and down on the left. Label every feature, and only one shape fits.",
+      "audioFile": "public/audio/math-a12-d17/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "That's the whole checklist: domain, symmetry, intercepts, stationary points, concavity and inflections, asymptotes and other breaks, and what happens as x heads off to infinity. For a polynomial, the domain and asymptote checks take one line. The next curve needs all seven.",
+      "audioFile": "public/audio/math-a12-d17/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Sketch y equals x plus one over x. Domain first. x can't be zero, so the graph has a gap there, and comes in two separate pieces. It's odd, since f of minus x is minus f of x. There are no intercepts, because x plus one over x equals zero would need x squared equals minus one. f prime of x is x squared minus one, over x squared, which is zero at one and minus one. f double prime is two over x cubed. At one it's positive, so one, two is a local minimum. At minus one it's negative, so minus one, minus two is a local maximum.",
+      "audioFile": "public/audio/math-a12-d17/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Two over x cubed is negative on the left and positive on the right, so the concavity does change across zero. But zero isn't in the domain, so there's no point there, and no inflection. As x gets close to zero from the right, one over x grows without limit, so f heads up. From the left, it heads down. So x equals zero is a vertical asymptote. And as x gets large, one over x shrinks towards zero, so the curve gets closer to the line y equals x.",
+      "audioFile": "public/audio/math-a12-d17/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Now go the other way, from a graph of f with no formula. f prime is the gradient of f. Line the graphs up, one under the other. Where f turns, the tangent is flat, so f prime is zero. Where f rises, f prime is above the axis. Where f falls, it's below. And f is falling most steeply at the origin, so that's the lowest point on f prime. Now do it again. f double prime is the gradient of f prime. f prime falls until x equals zero, then rises, so f double prime is negative, then positive, crossing zero right under the inflection.",
+      "audioFile": "public/audio/math-a12-d17/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Back to the video. Daily views are the gradient of the total. At launch the total is nearly flat, so daily views start near zero. The total is steepest on day three, so that's the busiest day for new views. After that it still rises, but less steeply, so daily views fall away in a long tail. And day three is where the total switches from concave up to concave down. The busiest day is the inflection.",
+      "audioFile": "public/audio/math-a12-d17/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Here's a new graph. At x equals three it turns, so f prime crosses the axis there, from negative to positive. But at the origin, the curve flattens and keeps falling. The tangent is flat, so f prime is zero, but its sign doesn't change. The graph of f prime touches the axis and goes back down. That's a horizontal point of inflection. The curve also changes its bend at x equals two, while it's still falling. There, f prime has a turning point. It also turns at zero, where it touches. So f double prime crosses zero at both points.",
+      "audioFile": "public/audio/math-a12-d17/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Turns drop to zeros. Every turning point on one graph sits directly above a zero on the next graph down. A zero that crosses means a turn above it. A zero that only touches means a flat point that doesn't turn. This works on any smooth piece of curve.",
+      "audioFile": "public/audio/math-a12-d17/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Your turn. For f of x equals x minus four over x, state the domain and the symmetry, show that there are no stationary points, and decide whether the curve has a point of inflection. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d17/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "The domain is x not equal to zero, and f is odd. f prime of x is one plus four over x squared, which is always positive, so the curve rises on each piece and never turns. f double prime is minus eight over x cubed. It changes sign across zero, but zero isn't in the domain. No point, so no inflection.",
+      "audioFile": "public/audio/math-a12-d17/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Last one. The graph of y equals f of x is shown. Where is f prime of x equal to zero, and does the graph of f prime cross or touch the axis at each one? Then, where does the graph of f prime have its turning points? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d17/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "f is flat at minus one and at two, so f prime is zero there. At minus one, f turns from falling to rising, so f prime crosses. At two, f flattens but keeps rising, so f prime only touches. f prime turns where f changes its bend, at zero and at two. And f crossing the axis at zero doesn't make f prime zero there.",
+      "audioFile": "public/audio/math-a12-d17/scene-16.wav"
+    },
+    {
+      "id": "scene-17",
+      "text": "So a sketch is a set of constraints, and the derivatives supply most of them. Next, you build the function yourself, from a real situation. Forty metres of fencing make three sides of a sheep pen, against a stone wall. Which shape gives the largest area?",
+      "audioFile": "public/audio/math-a12-d17/scene-17.wav"
+    },
+    {
+      "id": "scene-18",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d17/scene-18.wav"
+    }
+  ]
+}

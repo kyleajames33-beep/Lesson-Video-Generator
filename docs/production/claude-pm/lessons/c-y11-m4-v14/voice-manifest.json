@@ -1,0 +1,81 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v14.md",
+  "sourceSha256": "62c888329421ce3599a8fb9815773619a62268284be8da50ac3879a77eb7ac8d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "At twenty-five degrees, limestone doesn't break down by itself. Delta G is plus one hundred and thirty point four. But its delta S is positive, so as the temperature rises, minus T delta S gets bigger and more negative. Here's the question for this last video of the course. A lime kiln runs at about nine hundred degrees, which is eleven hundred and seventy-three kelvin. There, is delta G positive, or negative?",
+      "audioFile": "public/audio/chem-y11-m4-v14/hook-prediction.wav"
+    },
+    {
+      "id": "straight-line",
+      "text": "Negative, and here's how to see it. Delta G equals delta H minus T delta S, so each extra kelvin changes delta G by the same amount, delta S. That makes a straight line. For limestone it would start at delta H, plus one hundred and seventy-eight point three, at zero kelvin, and fall by zero point one six zero six kilojoules for every kelvin. At six hundred kelvin, delta G is plus eighty-one point nine. At nine hundred, it's plus thirty-three point eight. The line is heading for zero. This assumes delta H and delta S stay roughly the same as the temperature changes, so it's an estimate.",
+      "audioFile": "public/audio/chem-y11-m4-v14/straight-line.wav"
+    },
+    {
+      "id": "threshold",
+      "text": "Where does it cross zero? At that temperature, delta G is zero, so delta H equals T delta S, and T equals delta H divided by delta S. This is called the threshold temperature, or the crossover temperature. Keep the units consistent. Delta S must be in kilojoules, so T is one hundred and seventy-eight point three divided by zero point one six zero six. That's one thousand one hundred and ten kelvin, about eight hundred and thirty-seven degrees. Divide by one hundred and sixty point six instead, and you'd get one point one one kelvin, which is absurd.",
+      "audioFile": "public/audio/chem-y11-m4-v14/threshold.wav"
+    },
+    {
+      "id": "either-side",
+      "text": "Now check each side. At eleven hundred and seventy-three kelvin, delta G is one hundred and seventy-eight point three minus eleven seventy-three times zero point one six zero six, which is minus ten point one kilojoules. Negative, so in the kiln, limestone breaking down into lime and carbon dioxide is spontaneous. At twenty-five degrees it's plus one hundred and thirty point four, non-spontaneous. Above the threshold, the entropy term wins, and below it, the heat term wins. But the threshold only tells us which direction is favoured. It says nothing about how fast the change goes.",
+      "audioFile": "public/audio/chem-y11-m4-v14/either-side.wav"
+    },
+    {
+      "id": "ice-and-water",
+      "text": "You see a threshold every winter. When ice melts, delta H is plus six point zero one kilojoules, and delta S is plus twenty-two point zero joules per kelvin. So the threshold is six point zero one divided by zero point zero two two zero, two hundred and seventy-three kelvin. That's zero degrees. Above it, melting is spontaneous. Freezing is the reverse, so both signs flip, and freezing is spontaneous below zero degrees. Right at zero, neither is favoured, so ice and water sit together. Changing the temperature reverses the direction.",
+      "audioFile": "public/audio/chem-y11-m4-v14/ice-and-water.wav"
+    },
+    {
+      "id": "four-combinations",
+      "text": "So when does temperature matter? Look at the signs. If delta H is negative and delta S is positive, both terms help, and the reaction is spontaneous at every temperature, like hydrogen peroxide decomposing. Its reverse has delta H positive and delta S negative, so both terms hurt, and it's never spontaneous. But when the signs are the same, the two terms pull against each other, and temperature decides. Both positive, like limestone or melting, it's spontaneous above the threshold. Both negative, like freezing, it's spontaneous below.",
+      "audioFile": "public/audio/chem-y11-m4-v14/four-combinations.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the rule in one line. Same signs, temperature decides. Opposite signs, it never switches. So if the signs agree, find the threshold. If they don't, the answer is the same at every temperature.",
+      "audioFile": "public/audio/chem-y11-m4-v14/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. For the formation of ammonia, delta H is minus ninety-one point eight kilojoules, and delta S is minus one hundred and ninety-eight point one joules per kelvin. Identify the sign combination. Then calculate the temperature above which the reaction is non-spontaneous under standard conditions. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v14/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Both signs are negative, so temperature decides: it's spontaneous below the threshold. T is ninety-one point eight divided by zero point one nine eight one, which is four hundred and sixty-three kelvin, about one hundred and ninety degrees. Above that, it's non-spontaneous. Forgetting to convert gives zero point four six three kelvin, which makes no sense.",
+      "audioFile": "public/audio/chem-y11-m4-v14/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. For water freezing, delta H is minus six point zero one kilojoules, and delta S is minus twenty-two point zero joules per kelvin. Show by calculation that freezing is spontaneous at minus five degrees, but not at plus five degrees. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v14/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "At minus five degrees, two hundred and sixty-eight kelvin, delta G is minus six point zero one plus five point nine zero, about minus zero point one one, so freezing is spontaneous. At plus five degrees, two hundred and seventy-eight kelvin, it's about plus zero point one one, so it isn't. Calling freezing always spontaneous because it's exothermic ignores the entropy term.",
+      "audioFile": "public/audio/chem-y11-m4-v14/feedback-2.wav"
+    },
+    {
+      "id": "module-recap",
+      "text": "So temperature can reverse spontaneity when delta H and delta S have the same sign, and the switch happens at the threshold, delta H divided by delta S, in kelvin. That finishes Module 4. It asked what drives reactions. First, enthalpy, the energy taken in or given out. Then entropy, counting the ways. And finally Gibbs free energy, which weighs the two, with temperature setting the balance. Every reaction you meet can be read with those three ideas.",
+      "audioFile": "public/audio/chem-y11-m4-v14/module-recap.wav"
+    },
+    {
+      "id": "course-end",
+      "text": "And that's the end of Year 11 Chemistry. You've built up the particles and bonds that make up matter, learned to count them in moles, explored how and why substances react, and found what drives a reaction to go. Next, plan and finish your depth study with your teacher. Well done.",
+      "audioFile": "public/audio/chem-y11-m4-v14/course-end.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v14/key-notes.wav"
+    }
+  ]
+}

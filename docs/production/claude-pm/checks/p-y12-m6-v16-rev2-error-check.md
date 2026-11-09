@@ -1,0 +1,15 @@
+# Physics Year 12 Module 6 v16 Revision 2 error check
+
+Codex, 9 November 2026. Source SHA256 `6a923109f8674036dd8ed08a0639e29165d09419518118e40c40f9d47a1120a8`. Error-only check; original reviews retained. No design, narration, scene or speech edits.
+
+Result: 0 blockers, 0 should fix, 0 optional.
+
+Brief190 had no source findings. Its keep decisions remain: the several-coil/radial-field smoothing scene stays,and the plane-angle alternative remains one warning sentence. The revised graph and angle drag consistently use root's area-normal sine convention. The outstanding learner-investigation coverage gap remains recorded separately;this explanation is not proof a student conducted a practical.
+
+Independent results in `work/brief232/v16-calculations.json`:the worked area is0.0012m²,maximum torque0.036N m,normal-angle60 torque0.03117691454N m,identical to cosine of the30degree plane angle. Each long-side force is1.2N and the two0.015m lever arms give0.036N m. The new cm-area slip gives360N m,10000times too large. At normal angles90/60/30/0degrees,sine and relative torque are1/0.866025404/0.5/0,matching the new readouts and graph. Attempt1 area0.001m²,maximum0.045N m and normal-angle30 torque0.0225N m,rounding0.023;wrong sin60 gives0.03897114317,rounding0.039. Site torque checks give0.024,0.016970563,0.010,0.12 and1.5e-13N m. Recalled motor arithmetic gives1A,6A,1A,5A,12V,9V and6V. All numerical rounding agrees.
+
+Force directions checked with x right,y up,z out:current out of page with B right gives force up;current into page gives force down. Equal opposite side forces form the turning pair. Area-normal90 is edge-on/full torque;normal0 is face-on/zero torque. Without reversal the torque changes sense beyond the stable face-on point;inertia and damping account for rocking. The split ring swaps connections each half-turn at the dead point,retaining torque sense while its contact gap briefly removes current. Three coil lines60degrees apart with six segments support the smoothing illustration. The radial field keeps the active conductors across the local field.
+
+All16 narration strings and visual specifications were read,including the new derivation stage,live angle readouts and crossed units slip. Bold and quoted cues occur in spoken order. Both question cards preserve givens through countdown and feedback. Scene sum6398characters matches the headline;estimated550s is under570. No em dash,drawn person/hand or school-approved practical claim. The two used plates exist and uniform scaling is specified;no new request. Commutator-gap readability remains a build check.
+
+Written v15/v16 and v16/v17 joins match,including the power-pack,coded motor and two-needle ammeter at exit. The later real hobby motor is intentionally a different plate after that opening,per root. Excerpts and hashes are recorded. Integrated rotation/commutator synchronisation,force/angle arcs,torque plots,plate fit,voiced timing,captions and human listening remain pending. Shared CRT retry is separate.

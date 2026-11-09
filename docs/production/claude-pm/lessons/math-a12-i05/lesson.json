@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-i05",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "c1e394c184b2eedc7622401cb4c86433759b6c350eb1efce1536467a2ef3b1bf",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: the panels' day, and is it cos x?",
+      "voiceover": {
+        "text": "Last video ended here, with the sine curve, x in radians. Here's where a sine hump turns up. A home's solar panels make no power at sunrise, the most at noon, and none again at sunset. The energy they've collected keeps building all day, fastest at noon. Its gradient is the power, so the energy curve is a primitive of a sine curve. So which curve has gradient sine x? Cos x is the obvious guess. Test it at pi over two. Sine x is one there, so our curve should be climbing, with gradient one. But cos x is falling there, with gradient minus one. The guess has the wrong sign. So where does the minus sign go?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "turn it upside down: −cos x",
+      "voiceover": {
+        "text": "Check another point. At three pi over two, sine x is minus one, but cos x is climbing there, with gradient one. Everywhere, the gradient of cos x is minus sine x, the exact opposite of what we need. So turn cos x upside down. Flipping a curve upside down reverses every slope, at the same x. Now minus cos x climbs from zero to pi, exactly where sine x is positive, and falls from pi to two pi, where sine x is negative. Watch the gradient of minus cos x as a point moves along. It traces sine x exactly. Differentiate back: minus cos x has derivative minus, minus sine x, which is sine x. So the integral of sine x is minus cos x, plus C."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "cos x and radians",
+      "voiceover": {
+        "text": "Cos x is the easier one. From the derivative rules, the gradient of sine x is cos x. At zero, sine x climbs with gradient one, and cos of zero is one. At pi over two it's flat, and cos of pi over two is zero. So the integral of cos x is sine x, plus C, with no minus sign. Both rules come from derivatives that only work with x in radians, so these primitives need radians too."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "sec squared x and tan x",
+      "voiceover": {
+        "text": "The third rule comes from tan x. In an earlier video, the derivative of tan x was sec squared x, which means one over cos squared x. So the integral of sec squared x is tan x, plus C. Look at the graphs. Cos squared x is at most one, so sec squared x is never less than one, and tan x climbs all along each piece. At pi over four, its gradient is two, and sec squared of pi over four is two. But tan x has asymptotes, wherever cos x is zero, such as at pi over two. So, like the natural log of mod x last video, the answer works on one piece at a time."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "a linear inside: 15 cos 5x",
+      "voiceover": {
+        "text": "Now put an inside in. Find the integral of fifteen cos five x. Try sine five x. On the graph, that's sine x squashed sideways by a factor of five, so every slope is multiplied by five. Its derivative is five cos five x. We need fifteen cos five x, which is three times as much. So the answer is three sine five x, plus C. Differentiate back: three times five cos five x is fifteen cos five x. It's the same cause as the last two videos. A linear inside multiplies the gradient by its rate, so the primitive divides by it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05a",
+      "title": "the panels' day",
+      "voiceover": {
+        "text": "Back to the solar panels. With t in hours after sunrise, their power is five sine of pi t over twelve kilowatts. The inner rate is pi over twelve, so divide by it. The energy is minus sixty over pi, times cos of pi t over twelve, plus C. At sunrise the energy is zero, and cos of zero is one, so C is sixty over pi. By noon, that's about nineteen kilowatt hours. By sunset, double that, about thirty-eight. Half the day's energy comes before noon."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "sec squared with a linear inside, and its asymptotes",
+      "voiceover": {
+        "text": "Next, the integral of two sec squared, of two x minus pi over three. The inside has rate two, and the two in front matches it. So the answer is just tan of two x minus pi over three, plus C. Check: its derivative is two sec squared of two x minus pi over three. The minus pi over three is a slide, and a slide changes no slopes. Keep the asymptotes. They're where two x minus pi over three equals pi over two, plus any multiple of pi. That's at x equals five pi over twelve, and every pi over two from there."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a matched inside: −2x sin(x² + 1)",
+      "voiceover": {
+        "text": "What if the inside isn't linear? Find the integral of minus two x, times sine of x squared plus one. The inside is x squared plus one, and its derivative, two x, is out the front. And minus sine is the derivative of cos. So this is the chain rule in reverse, and the answer is cos of x squared plus one, plus C. Differentiate back: minus sine of x squared plus one, times two x. That's what we started with. The inner derivative has to be there. Cos of x squared, on its own, has no two x out the front, so these rules can't integrate it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "the matched cos and sec squared forms",
+      "voiceover": {
+        "text": "The same reverse chain rule works for cos and sec squared. Find the integral of three x squared, times cos of x cubed. The inside is x cubed, and three x squared is its derivative, out the front. So the answer is sine of x cubed, plus C. Now a harder-looking one: cos x, times sec squared of sine x. The inside is sine x, and its derivative, cos x, is out the front, so the answer is tan of sine x, plus C. What about the asymptotes? Tan needs its inside to avoid pi over two. But sine x stays between minus one and one, and pi over two is about one point five seven, so it never gets there. This answer works for every x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the signs. Differentiating moves one step forward around this wheel: sine, cos, minus sine, minus cos, and back to sine. Integrating moves one step back. One step back from sine is minus cos. One step back from cos is sine. Sec squared isn't on the wheel. It comes from tan."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the integral of six cos three x. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Sine three x has derivative three cos three x. We need six cos three x, which is twice that. So the answer is two sine three x, plus C. Differentiate back: two times three cos three x is six cos three x. Eighteen sine three x is wrong. It multiplies by the inner three, when it should divide."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find the integral of four x, times sine of x squared. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The inside is x squared, with derivative two x, and four x is twice that. One step back from sine is minus cos. So the answer is minus two cos of x squared, plus C. Differentiate back: minus two, times minus sine of x squared, times two x, gives four x sine of x squared. Two cos of x squared is wrong. Its derivative has a minus sign."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So each trig primitive undoes a derivative rule, with its sign, its inner rate and its plus C. That's the last of the primitives. Next, a new question. Here's cos x, from zero to pi over two, with thin rectangles standing against it. What happens when we add them up, and make them thinner and thinner?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

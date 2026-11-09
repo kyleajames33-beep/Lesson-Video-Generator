@@ -1,759 +1,803 @@
 1
-00:00:00,361 --> 00:00:03,447
-Last video ended here: the sine curve, with
+00:00:00,281 --> 00:00:01,606
+Last video ended here:
 
 2
-00:00:03,648 --> 00:00:05,732
-x in radians, and a tangent at the
+00:00:02,147 --> 00:00:04,255
+the sine curve, with x in radians,
 
 3
-00:00:05,792 --> 00:00:06,093
-origin.
+00:00:04,817 --> 00:00:06,101
+and a tangent at the origin.
 
 4
-00:00:06,855 --> 00:00:08,891
-Can we read its gradient straight from the
+00:00:07,087 --> 00:00:08,257
+Here's where that curve lives.
 
 5
-00:00:08,912 --> 00:00:09,214
-graph?
+00:00:09,004 --> 00:00:11,374
+A Ferris wheel turns steadily, and we measure
 
 6
-00:00:09,940 --> 00:00:11,168
-Draw the line y equals x.
+00:00:11,415 --> 00:00:12,921
+heights in units of its radius.
 
 7
-00:00:12,498 --> 00:00:14,684
-The tangent lies right along it, so the
+00:00:13,807 --> 00:00:15,521
+Start a seat level with the hub.
 
 8
-00:00:14,725 --> 00:00:16,711
-slope there looks like exactly one.
+00:00:16,308 --> 00:00:18,571
+After the wheel turns x radians, the seat's
 
 9
-00:00:17,476 --> 00:00:18,300
-Now look at the peak.
+00:00:18,653 --> 00:00:20,836
+height above the hub is sine x.
 
 10
-00:00:18,904 --> 00:00:20,731
-The height is one, but the curve is
+00:00:21,841 --> 00:00:23,874
+Can we read how fast it's climbing straight
 
 11
-00:00:20,852 --> 00:00:21,173
-flat.
+00:00:23,895 --> 00:00:24,458
+from the graph?
 
 12
-00:00:21,837 --> 00:00:23,823
-So the gradient isn't the same as the
+00:00:25,346 --> 00:00:26,857
+Draw the line y equals x.
 
 13
-00:00:23,885 --> 00:00:24,105
-height.
+00:00:27,744 --> 00:00:29,668
+The tangent lies right along it, so the
 
 14
-00:00:24,949 --> 00:00:27,116
-What function gives the gradient of sine at
+00:00:29,729 --> 00:00:31,753
+slope there looks like exactly one.
 
 15
-00:00:27,297 --> 00:00:27,919
-every x?
+00:00:32,782 --> 00:00:33,489
+Now look at the peak.
 
 16
-00:00:28,657 --> 00:00:30,430
-Check that first slope properly.
+00:00:34,095 --> 00:00:35,199
+The seat is at the top,
 
 17
-00:00:31,296 --> 00:00:32,837
-One point can't give a slope on its
+00:00:35,723 --> 00:00:36,325
+height one,
 
 18
-00:00:32,958 --> 00:00:35,542
-own, so, as in Year 11, take a
+00:00:36,848 --> 00:00:38,093
+but the curve is flat.
 
 19
-00:00:35,643 --> 00:00:37,726
-second point on the curve, just to the
+00:00:38,737 --> 00:00:40,412
+So the gradient isn't the same as the
 
 20
-00:00:37,787 --> 00:00:40,070
-right of zero, and find the gradient of
+00:00:40,453 --> 00:00:40,654
+height.
 
 21
-00:00:40,091 --> 00:00:40,551
-the chord.
+00:00:41,521 --> 00:00:43,633
+What function gives the gradient of sine at
 
 22
-00:00:41,313 --> 00:00:43,117
-With the point at x equals a half,
+00:00:43,754 --> 00:00:44,276
+every x?
 
 23
-00:00:43,579 --> 00:00:45,562
-it's about point nine six.
+00:00:45,057 --> 00:00:46,830
+Check that first slope properly.
 
 24
-00:00:46,366 --> 00:00:48,922
-At point one, about point nine nine eight.
+00:00:47,696 --> 00:00:49,237
+One point can't give a slope on its
 
 25
-00:00:49,688 --> 00:00:51,878
-Bring it closer still, and the gradient settles
+00:00:49,358 --> 00:00:51,942
+own, so, as in Year 11, take a
 
 26
-00:00:52,080 --> 00:00:53,346
-on exactly one.
+00:00:52,043 --> 00:00:54,126
+second point on the curve, just to the
 
 27
-00:00:54,332 --> 00:00:56,902
-So, with x in radians, the sine curve
+00:00:54,187 --> 00:00:56,470
+right of zero, and find the gradient of
 
 28
-00:00:57,064 --> 00:00:59,152
-leaves the origin with slope one.
+00:00:56,491 --> 00:00:56,951
+the chord.
 
 29
-00:00:59,821 --> 00:01:02,170
-Now read the slope at the other landmarks.
+00:00:57,713 --> 00:00:59,517
+With the point at x equals a half,
 
 30
-00:01:02,793 --> 00:01:05,178
-At pi over two, the peak, the curve
+00:00:59,979 --> 00:01:01,962
+it's about point nine six.
 
 31
-00:01:05,259 --> 00:01:07,123
-is flat, so the slope is zero.
+00:01:02,766 --> 00:01:05,322
+At point one, about point nine nine eight.
 
 32
-00:01:07,846 --> 00:01:10,312
-The curve is symmetric about that peak, so
+00:01:06,088 --> 00:01:08,278
+Bring it closer still, and the gradient settles
 
 33
-00:01:10,412 --> 00:01:12,477
-at pi it falls as steeply as it
+00:01:08,480 --> 00:01:09,746
+on exactly one.
 
 34
-00:01:12,577 --> 00:01:13,519
-rose at zero.
+00:01:10,732 --> 00:01:13,302
+So, with x in radians, the sine curve
 
 35
-00:01:14,103 --> 00:01:15,477
-The slope there is minus one.
+00:01:13,464 --> 00:01:15,552
+leaves the origin with slope one.
 
 36
-00:01:16,184 --> 00:01:18,295
-At three pi over two, the trough, it's
+00:01:16,201 --> 00:01:18,389
+Now read the slope at the other landmarks.
 
 37
-00:01:18,336 --> 00:01:18,778
-flat again:
+00:01:19,092 --> 00:01:21,637
+At pi over two, the peak, the curve
 
 38
-00:01:19,342 --> 00:01:19,603
-zero.
+00:01:21,738 --> 00:01:23,602
+is flat, so the slope is zero.
 
 39
-00:01:20,507 --> 00:01:22,812
-And at two pi, the wave starts over,
+00:01:24,184 --> 00:01:26,913
+The curve is symmetric about that peak, so
 
 40
-00:01:23,254 --> 00:01:24,716
-climbing with slope one.
+00:01:27,055 --> 00:01:29,382
+at pi it falls as steeply as it
 
 41
-00:01:25,702 --> 00:01:27,833
-Peaks and troughs are flat, and the crossings
+00:01:29,443 --> 00:01:30,265
+rose at zero.
 
 42
-00:01:27,935 --> 00:01:28,577
-are the steepest.
+00:01:30,748 --> 00:01:32,294
+The slope there is minus one.
 
 43
-00:01:29,256 --> 00:01:31,430
-Let's plot those slopes as a new graph
+00:01:33,379 --> 00:01:36,066
+At three pi over two, the trough, it's
 
 44
-00:01:31,511 --> 00:01:31,853
-underneath.
+00:01:36,127 --> 00:01:36,628
+flat again:
 
 45
-00:01:32,476 --> 00:01:35,184
-As the tangent slides along, its gradient draws
+00:01:37,130 --> 00:01:37,470
+zero.
 
 46
-00:01:35,205 --> 00:01:35,866
-a curve.
+00:01:38,093 --> 00:01:40,458
+And at two pi, the wave starts over,
 
 47
-00:01:36,489 --> 00:01:38,812
-It starts at one, falls to zero at
+00:01:40,739 --> 00:01:42,122
+climbing with slope one.
 
 48
-00:01:38,853 --> 00:01:41,858
-the peak, reaches minus one at pi, and
+00:01:42,865 --> 00:01:45,358
+Peaks and troughs are flat, and the crossings
 
 49
-00:01:41,939 --> 00:01:42,940
-climbs back to one.
+00:01:45,499 --> 00:01:46,162
+are the steepest.
 
 50
-00:01:43,663 --> 00:01:46,271
-Where sine is rising, the gradient graph sits
+00:01:47,006 --> 00:01:48,949
+On the wheel, the seat moves up or
 
 51
-00:01:46,412 --> 00:01:48,960
-above the axis, and where sine is falling,
+00:01:49,010 --> 00:01:51,673
+down fastest as it passes the hub's height,
 
 52
-00:01:49,302 --> 00:01:50,063
-it sits below.
+00:01:52,215 --> 00:01:53,997
+and for an instant it isn't climbing at
 
 53
-00:01:50,991 --> 00:01:52,643
-Check a point that isn't a landmark.
+00:01:54,198 --> 00:01:55,680
+all, at the top and the bottom.
 
 54
-00:01:53,367 --> 00:01:55,735
-At pi over three, the measured slope is
+00:01:56,222 --> 00:01:58,397
+Let's plot those slopes as a new graph
 
 55
-00:01:55,776 --> 00:01:57,742
-a half, and the cos of pi over
+00:01:58,477 --> 00:01:58,820
+underneath.
 
 56
-00:01:57,783 --> 00:01:59,348
-three is exactly a half.
+00:01:59,442 --> 00:02:02,151
+As the tangent slides along, its gradient draws
 
 57
-00:02:00,051 --> 00:02:02,379
-This gradient graph is the cosine curve.
+00:02:02,171 --> 00:02:02,833
+a curve.
 
 58
-00:02:02,942 --> 00:02:05,188
-So, with x in radians, the derivative of
+00:02:03,455 --> 00:02:05,779
+It starts at one, falls to zero at
 
 59
-00:02:05,269 --> 00:02:06,532
-sine x is cos x.
+00:02:05,819 --> 00:02:08,825
+the peak, reaches minus one at pi, and
 
 60
-00:02:07,261 --> 00:02:08,729
-Why do radians matter?
+00:02:08,905 --> 00:02:09,907
+climbs back to one.
 
 61
-00:02:09,613 --> 00:02:11,941
-On a circle of radius one, an angle
+00:02:10,629 --> 00:02:13,238
+Where sine is rising, the gradient graph sits
 
 62
-00:02:11,981 --> 00:02:14,310
-of x radians cuts off an arc of
+00:02:13,378 --> 00:02:15,927
+above the axis, and where sine is falling,
 
 63
-00:02:14,410 --> 00:02:15,173
-length x.
+00:02:16,268 --> 00:02:17,030
+it sits below.
 
 64
-00:02:15,896 --> 00:02:16,981
-That's what a radian means.
+00:02:17,958 --> 00:02:19,610
+Check a point that isn't a landmark.
 
 65
-00:02:17,806 --> 00:02:19,976
-For a small angle, the height, sine x,
+00:02:20,334 --> 00:02:22,702
+At pi over three, the measured slope is
 
 66
-00:02:20,117 --> 00:02:21,785
-is almost the same as that arc.
+00:02:22,743 --> 00:02:24,709
+a half, and the cos of pi over
 
 67
-00:02:22,549 --> 00:02:24,978
-So near zero, sine x is close to
+00:02:24,750 --> 00:02:26,315
+three is exactly a half.
 
 68
-00:02:25,260 --> 00:02:25,380
-x,
+00:02:27,018 --> 00:02:29,346
+This gradient graph is the cosine curve.
 
 69
-00:02:25,962 --> 00:02:27,067
-and the slope there is one.
+00:02:29,908 --> 00:02:32,154
+So, with x in radians, the derivative of
 
 70
-00:02:28,454 --> 00:02:31,506
-In degrees, the same graph gets stretched sideways
+00:02:32,235 --> 00:02:33,498
+sine x is cos x.
 
 71
-00:02:31,567 --> 00:02:33,133
-by about fifty seven point three.
+00:02:34,228 --> 00:02:35,695
+Why do radians matter?
 
 72
-00:02:33,815 --> 00:02:36,621
-A sideways stretch divides every slope, at matching
+00:02:36,580 --> 00:02:38,907
+On a circle of radius one, an angle
 
 73
-00:02:36,661 --> 00:02:38,125
-points, by that number.
+00:02:38,948 --> 00:02:41,276
+of x radians cuts off an arc of
 
 74
-00:02:38,928 --> 00:02:40,912
-So the slope at zero would be only
+00:02:41,377 --> 00:02:42,139
+length x.
 
 75
-00:02:40,973 --> 00:02:42,817
-about point zero one seven five.
+00:02:42,863 --> 00:02:43,947
+That's what a radian means.
 
 76
-00:02:43,500 --> 00:02:45,956
-The rule only works with x in radians.
+00:02:44,773 --> 00:02:46,942
+For a small angle, the height, sine x,
 
 77
-00:02:46,704 --> 00:02:47,899
-Now the cosine curve.
+00:02:47,084 --> 00:02:48,751
+is almost the same as that arc.
 
 78
-00:02:48,564 --> 00:02:50,435
-At zero, it's at a peak, so its
+00:02:49,516 --> 00:02:51,944
+So near zero, sine x is close to
 
 79
-00:02:50,476 --> 00:02:51,321
-slope is zero.
+00:02:52,227 --> 00:02:52,346
+x,
 
 80
-00:02:51,924 --> 00:02:52,628
-Then it falls,
+00:02:52,929 --> 00:02:54,033
+and the slope there is one.
 
 81
-00:02:53,190 --> 00:02:55,401
-steepest at pi over two, where the slope
+00:02:55,420 --> 00:02:58,472
+In degrees, the same graph gets stretched sideways
 
 82
-00:02:55,522 --> 00:02:56,346
-is minus one.
+00:02:58,533 --> 00:03:00,099
+by about fifty seven point three.
 
 83
-00:02:57,088 --> 00:02:58,812
-It's flat at the trough, at pi,
+00:03:00,782 --> 00:03:03,587
+A sideways stretch divides every slope, at matching
 
 84
-00:02:59,313 --> 00:03:01,758
-and climbs steepest at three pi over two,
+00:03:03,628 --> 00:03:05,091
+points, by that number.
 
 85
-00:03:01,878 --> 00:03:02,720
-with slope one.
+00:03:05,894 --> 00:03:07,878
+So the slope at zero would be only
 
 86
-00:03:03,663 --> 00:03:06,188
-Again, the steepest points are the crossings, and
+00:03:07,939 --> 00:03:09,783
+about point zero one seven five.
 
 87
-00:03:06,209 --> 00:03:07,772
-the flat points are the peak and the
+00:03:10,467 --> 00:03:12,923
+The rule only works with x in radians.
 
 88
-00:03:07,834 --> 00:03:08,073
-trough.
+00:03:13,671 --> 00:03:14,865
+Now the cosine curve.
 
 89
-00:03:08,917 --> 00:03:11,148
-Trace those slopes, and you get the sine
+00:03:15,531 --> 00:03:17,401
+At zero, it's at a peak, so its
 
 90
-00:03:11,189 --> 00:03:12,274
-curve, upside down.
+00:03:17,443 --> 00:03:18,287
+slope is zero.
 
 91
-00:03:12,978 --> 00:03:15,293
-So the derivative of cos x is minus
+00:03:18,891 --> 00:03:19,594
+Then it falls,
 
 92
-00:03:15,455 --> 00:03:15,918
-sine x.
+00:03:20,157 --> 00:03:22,367
+steepest at pi over two, where the slope
 
 93
-00:03:16,502 --> 00:03:18,437
-Here's why the minus sign belongs there.
+00:03:22,489 --> 00:03:23,312
+is minus one.
 
 94
-00:03:19,323 --> 00:03:21,977
-The cosine curve is the sine curve, slid
+00:03:24,055 --> 00:03:25,778
+It's flat at the trough, at pi,
 
 95
-00:03:22,077 --> 00:03:23,444
-left by pi over two.
+00:03:26,280 --> 00:03:28,724
+and climbs steepest at three pi over two,
 
 96
-00:03:24,227 --> 00:03:26,497
-A slide carries every tangent along with the
+00:03:28,845 --> 00:03:29,686
+with slope one.
 
 97
-00:03:26,537 --> 00:03:28,485
-curve, and doesn't change any slope.
+00:03:30,629 --> 00:03:33,154
+Again, the steepest points are the crossings, and
 
 98
-00:03:29,228 --> 00:03:31,775
-So the gradient graph slides left by pi
+00:03:33,175 --> 00:03:34,738
+the flat points are the peak and the
 
 99
-00:03:31,815 --> 00:03:32,738
-over two as well.
+00:03:34,800 --> 00:03:35,039
+trough.
 
 100
-00:03:33,842 --> 00:03:36,031
-Slide the cosine curve left by pi over
+00:03:35,883 --> 00:03:38,114
+Trace those slopes, and you get the sine
 
 101
-00:03:36,072 --> 00:03:38,341
-two, and you get the sine curve upside
+00:03:38,155 --> 00:03:39,240
+curve, upside down.
 
 102
-00:03:38,382 --> 00:03:38,602
-down.
+00:03:39,944 --> 00:03:42,259
+So the derivative of cos x is minus
 
 103
-00:03:39,549 --> 00:03:40,353
-And check the sign.
+00:03:42,421 --> 00:03:42,884
+sine x.
 
 104
-00:03:40,976 --> 00:03:43,801
-Just after zero, cos x is falling, so
+00:03:43,469 --> 00:03:45,403
+Here's why the minus sign belongs there.
 
 105
-00:03:43,842 --> 00:03:46,166
-its slope is negative, but sine x is
+00:03:46,290 --> 00:03:48,943
+The cosine curve is the sine curve, slid
 
 106
-00:03:46,267 --> 00:03:46,908
-positive there.
+00:03:49,044 --> 00:03:50,410
+left by pi over two.
 
 107
-00:03:47,591 --> 00:03:49,699
-Plus sine x would give the wrong sign.
+00:03:51,194 --> 00:03:53,463
+A slide carries every tangent along with the
 
 108
-00:03:50,316 --> 00:03:52,105
-It's worth checking this on a graphing app,
+00:03:53,504 --> 00:03:55,451
+curve, and doesn't change any slope.
 
 109
-00:03:52,649 --> 00:03:53,392
-so let's do it.
+00:03:56,195 --> 00:03:58,741
+So the gradient graph slides left by pi
 
 110
-00:03:54,037 --> 00:03:56,605
-Plot sine x, and measure its gradient at
+00:03:58,782 --> 00:03:59,704
+over two as well.
 
 111
-00:03:56,787 --> 00:03:57,448
-lots of points.
+00:04:00,808 --> 00:04:02,997
+Slide the cosine curve left by pi over
 
 112
-00:03:58,151 --> 00:04:00,657
-Every measured dot lands on the cosine curve,
+00:04:03,038 --> 00:04:05,307
+two, and you get the sine curve upside
 
 113
-00:04:01,140 --> 00:04:02,201
-not just at the landmarks.
+00:04:05,348 --> 00:04:05,568
+down.
 
 114
-00:04:02,807 --> 00:04:04,340
-Try a value that isn't special.
+00:04:06,515 --> 00:04:07,319
+And check the sign.
 
 115
-00:04:04,965 --> 00:04:07,206
-At x equals one, the measured slope is
+00:04:07,942 --> 00:04:10,767
+Just after zero, cos x is falling, so
 
 116
-00:04:07,267 --> 00:04:10,108
-about point five four, and cos one is
+00:04:10,808 --> 00:04:13,132
+its slope is negative, but sine x is
 
 117
-00:04:10,149 --> 00:04:11,269
-about point five four too.
+00:04:13,233 --> 00:04:13,874
+positive there.
 
 118
-00:04:12,053 --> 00:04:13,681
-Do the same for cos x, and its
+00:04:14,557 --> 00:04:16,665
+Plus sine x would give the wrong sign.
 
 119
-00:04:13,742 --> 00:04:15,691
-dots land on minus sine x.
+00:04:17,282 --> 00:04:19,072
+It's worth checking this on a graphing app,
 
 120
-00:04:16,323 --> 00:04:16,846
-Let's use it.
+00:04:19,615 --> 00:04:20,359
+so let's do it.
 
 121
-00:04:17,551 --> 00:04:20,015
-Find every x from zero to two pi
+00:04:21,003 --> 00:04:23,572
+Plot sine x, and measure its gradient at
 
 122
-00:04:20,396 --> 00:04:23,321
-where y equals three sine x has gradient
+00:04:23,753 --> 00:04:24,415
+lots of points.
 
 123
-00:04:23,522 --> 00:04:24,924
-three root two over two.
+00:04:25,117 --> 00:04:27,624
+Every measured dot lands on the cosine curve,
 
 124
-00:04:26,066 --> 00:04:28,411
-Three sine x is the sine curve stretched
+00:04:28,106 --> 00:04:29,168
+not just at the landmarks.
 
 125
-00:04:28,571 --> 00:04:30,996
-upward by three, so every slope is three
+00:04:29,773 --> 00:04:31,307
+Try a value that isn't special.
 
 126
-00:04:31,037 --> 00:04:31,658
-times as big.
+00:04:31,931 --> 00:04:34,173
+At x equals one, the measured slope is
 
 127
-00:04:32,280 --> 00:04:34,706
-So d y by d x is three
+00:04:34,233 --> 00:04:37,075
+about point five four, and cos one is
 
 128
-00:04:34,787 --> 00:04:35,368
-cos x.
+00:04:37,115 --> 00:04:38,236
+about point five four too.
 
 129
-00:04:36,232 --> 00:04:37,996
-Set that equal to three root two over
+00:04:39,019 --> 00:04:40,648
+Do the same for cos x, and its
 
 130
-00:04:38,017 --> 00:04:39,400
-two, and divide by three.
+00:04:40,708 --> 00:04:42,658
+dots land on minus sine x.
 
 131
-00:04:40,384 --> 00:04:42,390
-Cos x equals root two over two.
+00:04:43,289 --> 00:04:43,812
+Let's use it.
 
 132
-00:04:43,254 --> 00:04:45,237
-Cos is positive in the first and fourth
+00:04:44,517 --> 00:04:46,981
+Find every x from zero to two pi
 
 133
-00:04:45,298 --> 00:04:48,143
-quadrants, so x is pi over four, or
+00:04:47,362 --> 00:04:50,287
+where y equals three sine x has gradient
 
 134
-00:04:48,304 --> 00:04:49,265
-seven pi over four.
+00:04:50,488 --> 00:04:51,890
+three root two over two.
 
 135
-00:04:50,066 --> 00:04:51,708
-On the graph, the curve is rising at
+00:04:53,033 --> 00:04:55,377
+Three sine x is the sine curve stretched
 
 136
-00:04:51,810 --> 00:04:54,314
-both points, once above the axis and once
+00:04:55,538 --> 00:04:57,962
+upward by three, so every slope is three
 
 137
-00:04:54,355 --> 00:04:56,558
-below, and the two tangents are parallel.
+00:04:58,004 --> 00:04:58,624
+times as big.
 
 138
-00:04:57,522 --> 00:04:59,010
-Here's a way to remember the pattern.
+00:04:59,247 --> 00:05:01,672
+So d y by d x is three
 
 139
-00:04:59,714 --> 00:05:02,171
-Differentiate sine, and you get cos.
+00:05:01,754 --> 00:05:02,334
+cos x.
 
 140
-00:05:02,875 --> 00:05:05,505
-Differentiate cos, and you get minus sine.
+00:05:03,198 --> 00:05:04,962
+Set that equal to three root two over
 
 141
-00:05:06,147 --> 00:05:09,150
-Keep going: minus sine gives minus cos, and
+00:05:04,983 --> 00:05:06,366
+two, and divide by three.
 
 142
-00:05:09,290 --> 00:05:11,252
-minus cos gives sine again.
+00:05:07,350 --> 00:05:09,356
+Cos x equals root two over two.
 
 143
-00:05:12,115 --> 00:05:13,929
-Four steps, and you're back where you started.
+00:05:10,220 --> 00:05:12,203
+Cos is positive in the first and fourth
 
 144
-00:05:14,636 --> 00:05:15,623
-That matches the graphs.
+00:05:12,264 --> 00:05:15,109
+quadrants, so x is pi over four, or
 
 145
-00:05:16,127 --> 00:05:18,473
-Each derivative is the same wave, moved a
+00:05:15,270 --> 00:05:16,231
+seven pi over four.
 
 146
-00:05:18,595 --> 00:05:20,299
-quarter of a period to the left.
+00:05:17,033 --> 00:05:18,675
+On the graph, the curve is rising at
 
 147
-00:05:23,105 --> 00:05:23,511
-Your turn.
+00:05:18,777 --> 00:05:21,281
+both points, once above the axis and once
 
 148
-00:05:24,181 --> 00:05:27,025
-For f of x equals sine x, find
+00:05:21,322 --> 00:05:23,525
+below, and the two tangents are parallel.
 
 149
-00:05:27,245 --> 00:05:28,027
-f prime of x.
+00:05:24,489 --> 00:05:25,976
+Here's a way to remember the pattern.
 
 150
-00:05:28,988 --> 00:05:31,110
-Then find the exact gradient of the curve
+00:05:26,681 --> 00:05:29,137
+Differentiate sine, and you get cos.
 
 151
-00:05:31,291 --> 00:05:33,393
-at x equals two pi over three,
+00:05:29,842 --> 00:05:32,471
+Differentiate cos, and you get minus sine.
 
 152
-00:05:34,033 --> 00:05:36,496
-and at x equals three pi over two.
+00:05:33,114 --> 00:05:36,116
+Keep going: minus sine gives minus cos, and
 
 153
-00:05:37,441 --> 00:05:38,335
-Pause here to answer.
+00:05:36,257 --> 00:05:38,218
+minus cos gives sine again.
 
 154
-00:05:49,124 --> 00:05:50,616
-f prime of x is cos x.
+00:05:39,082 --> 00:05:40,895
+Four steps, and you're back where you started.
 
 155
-00:05:51,543 --> 00:05:53,810
-At two pi over three, cos is minus
+00:05:41,602 --> 00:05:42,589
+That matches the graphs.
 
 156
-00:05:53,830 --> 00:05:56,138
-a half, so the curve is falling there.
+00:05:43,093 --> 00:05:45,439
+Each derivative is the same wave, moved a
 
 157
-00:05:56,900 --> 00:05:59,322
-At three pi over two, cos is zero:
+00:05:45,561 --> 00:05:47,265
+quarter of a period to the left.
 
 158
-00:05:59,963 --> 00:06:01,825
-that's the trough, and the curve is flat.
+00:05:50,072 --> 00:05:50,477
+Your turn.
 
 159
-00:06:02,768 --> 00:06:04,716
-Minus one is the height at the trough,
+00:05:51,148 --> 00:05:53,991
+For f of x equals sine x, find
 
 160
-00:06:04,876 --> 00:06:05,499
-not the gradient.
+00:05:54,212 --> 00:05:54,993
+f prime of x.
 
 161
-00:06:07,154 --> 00:06:07,562
-Last one.
+00:05:55,955 --> 00:05:58,076
+Then find the exact gradient of the curve
 
 162
-00:06:08,230 --> 00:06:10,437
-Let g of x equal two cos x,
+00:05:58,258 --> 00:06:00,359
+at x equals two pi over three,
 
 163
-00:06:10,559 --> 00:06:11,481
-plus sine x.
+00:06:01,000 --> 00:06:03,462
+and at x equals three pi over two.
 
 164
-00:06:12,245 --> 00:06:14,613
-Find g prime of x, and the gradient
-
-165
-00:06:14,715 --> 00:06:16,721
-of the tangent at x equals pi over
-
-166
-00:06:16,763 --> 00:06:16,942
-two.
-
-167
-00:06:17,691 --> 00:06:18,459
+00:06:04,408 --> 00:06:05,301
 Pause here to answer.
 
+165
+00:06:16,091 --> 00:06:17,582
+f prime of x is cos x.
+
+166
+00:06:18,510 --> 00:06:20,776
+At two pi over three, cos is minus
+
+167
+00:06:20,797 --> 00:06:23,104
+a half, so the curve is falling there.
+
 168
-00:06:29,255 --> 00:06:30,643
-Differentiate each term.
+00:06:23,867 --> 00:06:26,288
+At three pi over two, cos is zero:
 
 169
-00:06:31,327 --> 00:06:33,716
-Two cos x gives minus two sine x,
+00:06:26,930 --> 00:06:28,791
+that's the trough, and the curve is flat.
 
 170
-00:06:34,240 --> 00:06:36,087
-and sine x gives cos x.
+00:06:29,735 --> 00:06:31,682
+Minus one is the height at the trough,
 
 171
-00:06:36,930 --> 00:06:39,471
-At pi over two, sine is one and
+00:06:31,843 --> 00:06:32,465
+not the gradient.
 
 172
-00:06:39,532 --> 00:06:42,213
-cos is zero, so the gradient is minus
+00:06:34,121 --> 00:06:34,529
+Last one.
 
 173
-00:06:42,275 --> 00:06:42,514
-two.
+00:06:35,197 --> 00:06:37,404
+Let g of x equal two cos x,
 
 174
-00:06:43,418 --> 00:06:45,248
-If you lost the minus sign from cos,
+00:06:37,526 --> 00:06:38,448
+plus sine x.
 
 175
-00:06:45,631 --> 00:06:46,716
-you'd get plus two.
+00:06:39,212 --> 00:06:41,580
+Find g prime of x, and the gradient
 
 176
-00:06:47,320 --> 00:06:49,886
-But two cos x is falling at pi
+00:06:41,682 --> 00:06:43,688
+of the tangent at x equals pi over
 
 177
-00:06:49,907 --> 00:06:52,232
-over two, so the gradient must be negative.
+00:06:43,730 --> 00:06:43,909
+two.
 
 178
-00:06:53,920 --> 00:06:56,483
-So the sine curve's slopes trace the cosine
+00:06:44,658 --> 00:06:45,426
+Pause here to answer.
 
 179
-00:06:56,503 --> 00:06:56,783
-curve,
+00:06:56,221 --> 00:06:57,610
+Differentiate each term.
 
 180
-00:06:57,323 --> 00:07:00,807
-and cosine's slopes trace minus sine, with x
+00:06:58,293 --> 00:07:00,683
+Two cos x gives minus two sine x,
 
 181
-00:07:00,867 --> 00:07:01,427
-in radians.
+00:07:01,206 --> 00:07:03,054
+and sine x gives cos x.
 
 182
-00:07:02,449 --> 00:07:04,838
-Next, what happens when there's something inside?
+00:07:03,896 --> 00:07:06,438
+At pi over two, sine is one and
 
 183
-00:07:05,763 --> 00:07:06,689
-Here's sine x,
+00:07:06,498 --> 00:07:09,180
+cos is zero, so the gradient is minus
 
 184
-00:07:07,253 --> 00:07:08,320
-and sine two x.
+00:07:09,241 --> 00:07:09,481
+two.
 
 185
-00:07:09,045 --> 00:07:11,343
-Sine two x leaves the origin more steeply.
+00:07:10,384 --> 00:07:12,215
+If you lost the minus sign from cos,
 
 186
-00:07:12,070 --> 00:07:12,612
-By how much,
+00:07:12,597 --> 00:07:13,683
+you'd get plus two.
 
 187
-00:07:13,277 --> 00:07:13,698
-and why?
+00:07:14,287 --> 00:07:16,853
+But two cos x is falling at pi
 
 188
-00:07:16,328 --> 00:07:17,191
-Here are the key notes.
+00:07:16,874 --> 00:07:19,199
+over two, so the gradient must be negative.
 
 189
-00:07:17,594 --> 00:07:19,141
-Pause the video if you need more time
+00:07:20,887 --> 00:07:23,449
+So the sine curve's slopes trace the cosine
 
 190
-00:07:19,183 --> 00:07:19,644
+00:07:23,470 --> 00:07:23,749
+curve,
+
+191
+00:07:24,290 --> 00:07:27,773
+and cosine's slopes trace minus sine, with x
+
+192
+00:07:27,834 --> 00:07:28,393
+in radians.
+
+193
+00:07:29,416 --> 00:07:31,804
+Next, what happens when there's something inside?
+
+194
+00:07:32,730 --> 00:07:33,655
+Here's sine x,
+
+195
+00:07:34,220 --> 00:07:35,286
+and sine two x.
+
+196
+00:07:36,012 --> 00:07:38,309
+Sine two x leaves the origin more steeply.
+
+197
+00:07:39,036 --> 00:07:39,578
+By how much,
+
+198
+00:07:40,243 --> 00:07:40,664
+and why?
+
+199
+00:07:43,295 --> 00:07:44,158
+Here are the key notes.
+
+200
+00:07:44,561 --> 00:07:46,108
+Pause the video if you need more time
+
+201
+00:07:46,150 --> 00:07:46,611
 to copy them.

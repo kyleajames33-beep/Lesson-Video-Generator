@@ -1,12 +1,14 @@
 {
   "id": "math-a12-d15",
   "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "e3cea34041b7cd07f64d5632ca81ca368f2989311566c8daec517bde3aafd9dd",
   "scenes": [
     {
       "id": "scene-01",
-      "title": "hook (two unbroken joins)",
+      "title": "hook: two unbroken tracks, one jolt",
       "voiceover": {
-        "text": "Last video ended with two curves. Both follow x squared, up to x equals one. Then the first carries on along its tangent, y equals two x minus one. The second carries on along y equals x. You can draw both without lifting your pen, so both are unbroken at the join. Now zoom in on the join. The first one straightens out into a single line. The second one stays a corner, however far you zoom. So an unbroken join can still fail to have a tangent. What exactly does a join need, for the curve to have a gradient there?"
+        "text": "Last video ended with two curves. Both follow x squared, up to x equals one. The first carries on along its tangent, y equals two x minus one, and the second along y equals x. Let's turn them into skate tracks. Roll a skateboard down the first, and it passes the join without a bump. On the second, it jolts, because the track's angle changes all at once. Both tracks are unbroken, with no gaps. Now zoom in on each join. The first straightens out into a single line. The second stays a corner, however far you zoom. So what does a join need, for the curve to have a gradient there?"
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -26,7 +28,7 @@
       "id": "scene-03",
       "title": "the smooth join",
       "voiceover": {
-        "text": "Try it on the first join, at x equals one. From the right, Q is on the line y equals two x minus one, so every secant gradient is exactly two. From the left, Q is on x squared, and the gradient is two plus h. So, one point five, one point nine, one point nine nine, heading to two. Both sides settle on two. So this function is differentiable at one, with f prime of one equal to two. That's why the join is invisible. The line is the tangent to x squared, so the two pieces leave the join in the same direction."
+        "text": "Try it on the first join, at x equals one. From the right, Q is on the line y equals two x minus one, so every secant gradient is exactly two. From the left, Q is on x squared, and the gradient is two plus h. So, one point five, one point nine, one point nine nine, heading to two. Both sides settle on two. So this function is differentiable at one, with f prime of one equal to two. The line is the tangent to x squared, so both pieces leave the join in the same direction. That's why the board doesn't jolt."
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -36,7 +38,7 @@
       "id": "scene-04",
       "title": "the corner",
       "voiceover": {
-        "text": "Now the second join, where the right piece is y equals x. From the left, nothing changes. The gradients still head to two. But from the right, every secant gradient is exactly one. Two from one side, one from the other. There's no single number, so there's no derivative at x equals one. The curve is unbroken, but it isn't differentiable there. That's what a corner is: two different one-sided gradients."
+        "text": "Now the second join, where the right piece is y equals x. From the left, nothing changes. The gradients still head to two. But from the right, every secant gradient is exactly one. Two from one side, one from the other. There's no single number, so there's no derivative at x equals one. The curve is unbroken, but it isn't differentiable there. That's what a corner is: two different one-sided gradients. On the track, that's the jolt, from forty-five degrees to about sixty-three, in an instant."
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -46,7 +48,7 @@
       "id": "scene-05",
       "title": "a join that doesn't meet",
       "voiceover": {
-        "text": "What if the gradients match, but the pieces don't meet? Here, x squared runs up to one, one. Then the right piece is y equals two x, which starts at height two. Its gradient is two, the same as x squared at the join. A function is continuous at a when, from both sides, the curve heads to the value f of a itself. Here, from the right it heads to two, but f of one is one. So it isn't continuous. Now look at the secant from P, to a point on the right piece. The rise never drops below one, while the run shrinks to zero. So the gradient blows up, to twelve, then a hundred and two, and beyond. No derivative. This is why a function that's differentiable at a point must be continuous there. If the gradients settle on a finite number, the rise is that gradient times the run. So the rise shrinks to zero with the run, and the curve can't jump."
+        "text": "What if the gradients match, but the pieces don't meet? Here, x squared runs up to one, one. Then the right piece is y equals two x, which starts at height two. On a track, that's a step. Its gradient is two, the same as x squared at the join. A function is continuous at a when, from both sides, the curve heads to the value f of a itself. Here, from the right it heads to two, but f of one is one. So it isn't continuous. Now look at the secant from P, to a point on the right piece. The rise never drops below one, while the run shrinks to zero. So the gradient blows up, to twelve, then a hundred and two, and beyond. No derivative. This is why a function that's differentiable at a point must be continuous there. If the gradients settle on a finite number, the rise is that gradient times the run. So the rise shrinks to zero with the run, and the curve can't jump."
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -56,7 +58,7 @@
       "id": "scene-06",
       "title": "a vertical tangent",
       "voiceover": {
-        "text": "There's one more way to fail, even with no join at all. Take y equals the cube root of x, at zero. It's unbroken, and it looks smooth. But the secant gradients are h to the power minus two thirds. They grow without limit from both sides, because the tangent at the origin is vertical. A vertical tangent has no gradient, so the cube root of x isn't differentiable at zero. That's why the definition says a tangent that isn't vertical. At a cusp, a sharp point where both sides arrive steeply, the gradients blow up in opposite directions. So there's no derivative there either."
+        "text": "There's one more way to fail, even with no join at all. Take y equals the cube root of x, at zero. It's unbroken, and it looks smooth. But the secant gradients are h to the power minus two thirds. They grow without limit from both sides, because the tangent at the origin is vertical. A board there would point straight up. A vertical tangent has no gradient, so the cube root of x isn't differentiable at zero. That's why the definition says a tangent that isn't vertical. At a cusp, a sharp point where both sides arrive steeply, the gradients blow up in opposite directions. So there's no derivative there either."
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -76,7 +78,7 @@
       "id": "scene-08",
       "title": "worked example: choosing the constants",
       "voiceover": {
-        "text": "Now a worked example. h of x is x squared for x up to two, and a x plus b for x greater than two. Find a and b so that h is differentiable at two. Match the gradients first. x squared has gradient two x, which is four at x equals two. The line's gradient is a. So a equals four. Now make the pieces meet. At x equals two, x squared is four, and the line gives two a plus b. So four equals eight plus b, and b is minus four. The line is y equals four x minus four, which is the tangent to x squared at two. You need both equations. The gradient alone leaves b free, and the join could still jump."
+        "text": "Now a worked example. h of x is x squared for x up to two, and a x plus b for x greater than two. Find a and b so that h is differentiable at two. Match the gradients first. x squared has gradient two x, which is four at x equals two. The line's gradient is a. So a equals four. Now make the pieces meet. At x equals two, x squared is four, and the line gives two a plus b. So four equals eight plus b, and b is minus four. The line is y equals four x minus four, the tangent to x squared at two, so a board rolls through without a jolt. You need both equations. The gradient alone leaves b free, and the join could still jump."
       },
       "holdSeconds": 0,
       "holdKind": "visual",
@@ -86,7 +88,7 @@
       "id": "scene-09",
       "title": "memory aid",
       "voiceover": {
-        "text": "A short way to hold it: meet, then match. The pieces meet, so the function is continuous. The gradients match, so it's differentiable. Meeting alone isn't enough."
+        "text": "A short way to hold it: meet, then match. The pieces meet, so there's no step, and the function is continuous. The gradients match, so there's no kink, and it's differentiable. Meeting alone isn't enough."
       },
       "holdSeconds": 2,
       "holdKind": "visual",
@@ -100,7 +102,10 @@
       },
       "holdSeconds": 10,
       "holdKind": "countdown",
-      "durationInFrames": 1
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
     },
     {
       "id": "scene-11",
@@ -120,7 +125,10 @@
       },
       "holdSeconds": 10,
       "holdKind": "countdown",
-      "durationInFrames": 1
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
     },
     {
       "id": "scene-13",
@@ -144,13 +152,13 @@
     },
     {
       "id": "scene-15",
-      "title": "key notes (quiet, hold about 60 seconds)",
+      "title": "key notes (quiet, 45 seconds)",
       "voiceover": {
         "text": "Here are the key notes. Pause the video if you need more time to copy them."
       },
-      "holdSeconds": 60,
+      "holdSeconds": 0,
       "holdKind": "notes",
-      "durationInFrames": 1
+      "durationInFrames": 1350
     }
   ]
 }

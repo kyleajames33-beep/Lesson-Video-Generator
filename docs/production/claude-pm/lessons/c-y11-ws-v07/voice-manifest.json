@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-ws-v07.md",
+  "sourceSha256": "449d5330f00c3735756b42e7eaf7b49b1cba33818c641c5f7a3d673dd6b8ea47",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "three-drafts",
+      "text": "Here are our results from last time: a mean loss of zero point eight two grams, against zero point eight eight grams predicted. Now, three drafts of the conclusion. Draft A says, the experiment worked and mass was conserved. Draft B says, this proves mass is always conserved. Draft C says, the mass lost, a mean of zero point eight two grams over three runs, was close to the zero point eight eight grams of carbon dioxide predicted, which supports conservation of mass. Which one would a scientist trust?",
+      "audioFile": "public/audio/chem-y11-ws-v07/three-drafts.wav"
+    },
+    {
+      "id": "conclusion-parts",
+      "text": "Draft C. A conclusion answers the investigation's question, and a reader should be able to check every part of it. Draft A gives no numbers, so there's nothing to check. Draft B claims far more than three runs could show. So build a conclusion in four parts. A claim that answers the question. The evidence, as data with units. The reasoning, the chemistry that links the evidence to the claim. And the limits, what makes the result less certain. Claim, evidence, reasoning, then the limits.",
+      "audioFile": "public/audio/chem-y11-ws-v07/conclusion-parts.wav"
+    },
+    {
+      "id": "claim-evidence",
+      "text": "Let's fill it in. Our question was, does the mass lost equal the carbon dioxide the equation predicts? Claim: the mass lost closely matched the predicted mass of carbon dioxide. Evidence: a mean loss of zero point eight two grams from three runs, ranging from zero point eight one to zero point eight three, against zero point eight eight grams predicted. Notice what makes this checkable. It quotes measured values, with units, and it gives the spread, so a reader can judge the data, not just take our word.",
+      "audioFile": "public/audio/chem-y11-ws-v07/claim-evidence.wav"
+    },
+    {
+      "id": "reasoning-limits",
+      "text": "Reasoning: carbon dioxide gas crossed the system's boundary, so the balance lost its mass. Atoms aren't destroyed, so if all the gas escaped and nothing else left, the loss should equal the gas made. Limits: the mean was about seven percent below the prediction in every run, which points to a systematic error. Probably some carbon dioxide stayed in the flask, dissolved or in the air space, so it wasn't counted as lost. A good limit isn't an excuse like human error. It names a likely cause, its direction, and a fix.",
+      "audioFile": "public/audio/chem-y11-ws-v07/reasoning-limits.wav"
+    },
+    {
+      "id": "supports-not-proves",
+      "text": "Now the words. Why does \"proves\" fail? Three runs of one reaction can't prove a law for every reaction, and our results weren't even exact. Scientists say evidence supports a claim, or is consistent with it, because new evidence could always change the picture. And use the course terms precisely. Our runs agree closely, so they're precise. The whole experiment repeated consistently, so it's reliable. But the results sit below the prediction, so they're not fully accurate, and calling them accurate would claim more than we showed.",
+      "audioFile": "public/audio/chem-y11-ws-v07/supports-not-proves.wav"
+    },
+    {
+      "id": "notation",
+      "text": "Scientific language also means correct notation. Write formulae, balanced, with state symbols, so a reader knows which substance is the gas: calcium carbonate solid, plus hydrochloric acid, makes calcium chloride, water and carbon dioxide gas. Use systematic names, calcium carbonate, not just marble chips. Put a unit on every value. And report only the precision your data have. The calculator says six point eight one eight percent below, but the balance read to hundredths of a gram, so write about seven percent.",
+      "audioFile": "public/audio/chem-y11-ws-v07/notation.wav"
+    },
+    {
+      "id": "forms",
+      "text": "Then choose the form that suits the job and the reader. A table gives the exact readings. A graph shows a trend, like the mass levelling off once the chips were used up. A labelled diagram shows the setup faster than a paragraph. In a written report, the conclusion goes in full sentences. But for a talk, or a digital slide for your class, cut it to the claim, one graph and the main limit, because listeners can't go back and reread. Pick the form by what your audience needs to see.",
+      "audioFile": "public/audio/chem-y11-ws-v07/forms.wav"
+    },
+    {
+      "id": "peer-feedback",
+      "text": "The last skill is peer feedback, judging a classmate's argument fairly. Use the same parts as a checklist. Does the claim answer the question? Is there evidence, with numbers and units? Does the reasoning use chemistry? Are the limits named, with a cause and a direction? Does the language match the evidence? Then make your feedback specific and useful. Saying \"good job\" doesn't help anyone. \"Add your mean mass lost, with units\" does.",
+      "audioFile": "public/audio/chem-y11-ws-v07/peer-feedback.wav"
+    },
+    {
+      "id": "feedback-draft-b",
+      "text": "Let's try it on draft B: this proves mass is always conserved. Its claim does answer the question, so keep its direction. But it gives no evidence, no reasoning and no limits, and \"proves\" and \"always\" claim more than three runs can show. So the feedback is: change proves to supports, quote your mean loss and the prediction, and explain the seven percent gap. That comments on the argument, not on the person.",
+      "audioFile": "public/audio/chem-y11-ws-v07/feedback-draft-b.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn, with our copper sulfate investigation. Class two got thirty-four point three, thirty-four point five and thirty-four point four percent water, against thirty-six point one percent from the formula, and they cooled their powder uncovered. Their conclusion says, our results prove that copper sulfate crystals are thirty-six point one percent water, and they were accurate because they were close together. Identify two problems, and rewrite the conclusion. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v07/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "First, close together means precise, not accurate. The mean, thirty-four point four percent, is one point seven below the formula value. Second, \"prove\" overclaims, when the results don't even match. A better conclusion says the results were precise but not accurate, probably because the powder took water back while cooling uncovered. Calling close results accurate is the classic slip.",
+      "audioFile": "public/audio/chem-y11-ws-v07/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Find three errors in this line from a student's report. C a C O three plus H C l makes C a C l plus H two O plus C O two. Mass lost was zero point eight two three three. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v07/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Calcium chloride is C a C l two, because a calcium ion carries a two plus charge. Then the equation needs two H C l to balance, and state symbols to show which substance is the gas. And the mass has no unit and too many digits. Write zero point eight two grams. Fixing only the number and leaving the formula wrong is the classic slip.",
+      "audioFile": "public/audio/chem-y11-ws-v07/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So, communicate a conclusion as a claim, evidence, reasoning and limits, in careful scientific language, in the form your reader needs. And when you judge someone else's, check the same parts. One more look at our flask. The chips have gone, and the solution now holds about zero point zero two zero zero moles of calcium chloride, in about fifty millilitres. How strong is that solution? How does concentration link solution volume with moles?",
+      "audioFile": "public/audio/chem-y11-ws-v07/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-ws-v07/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-ws-v05.md",
+  "sourceSha256": "20b62a6a55f33455ac6cd7102dbbc8495f1d67b2a196bbcc99a8c5fe22311c8e",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, the magnesium runs became a graph, with the points close to a straight line, but not exactly on it. And in our copper sulfate investigation, class one got thirty-six point zero percent, class two got thirty-four point four, and the formula says thirty-six point one. No measurement is perfect, so how far off can a result be before something has really gone wrong? Let's judge the limits of a chemistry result.",
+      "audioFile": "public/audio/chem-y11-ws-v05/hook.wav"
+    },
+    {
+      "id": "trend",
+      "text": "First, the graph. A trend describes how one variable changes as another changes. Here, the volume of hydrogen rises in step with the mass of magnesium, so doubling the mass doubles the volume. That has a chemical cause: each magnesium atom gives one hydrogen molecule. One point sits well below the line, and that's the run where bubbles escaped. A point off the trend needs a reason, and a trend only holds in the range we tested.",
+      "audioFile": "public/audio/chem-y11-ws-v05/trend.wav"
+    },
+    {
+      "id": "error-types",
+      "text": "An error is any difference between a measured value and the true value, and there are two kinds. A random error changes unpredictably, sometimes high, sometimes low. A draught on the balance makes the last digit flicker. Random errors spread results out, reducing precision, and averaging more repeats reduces their effect. A systematic error pushes every result the same way, because something in the method is the same every time. It reduces accuracy, and repeats can't fix it, because every repeat carries the same shift.",
+      "audioFile": "public/audio/chem-y11-ws-v05/error-types.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Try these. Class two's powder cooled uncovered on the bench every run. Another group's flame was so strong that some powder turned black every run. Random or systematic, and which way does each push the result?",
+      "audioFile": "public/audio/chem-y11-ws-v05/prediction.wav"
+    },
+    {
+      "id": "naming-errors",
+      "text": "Both are systematic, because the cause is there every run. Uncovered powder takes water back from the air, so the mass lost looks too small, and the percentage is too low. A strong flame breaks down some copper sulfate too, so extra mass is lost, and the percentage is too high. A good error answer names the cause, says which way it pushes the result, and gives a fix. Human error earns nothing, because it names no cause and no fix.",
+      "audioFile": "public/audio/chem-y11-ws-v05/naming-errors.wav"
+    },
+    {
+      "id": "reading-uncertainty",
+      "text": "Even with a perfect method, there's still uncertainty: the range either side of a reading where the true value probably lies. Our balance reads to zero point zero one of a gram, so each reading is plus or minus zero point zero one grams. On a scale you read by eye, like a measuring cylinder, it's usually half the smallest division. Uncertainty isn't a mistake. Every reading has one.",
+      "audioFile": "public/audio/chem-y11-ws-v05/reading-uncertainty.wav"
+    },
+    {
+      "id": "result-uncertainty",
+      "text": "How uncertain is our thirty-six point zero percent? The mass lost comes from subtracting two readings, and each could be out by zero point zero one, so the loss is plus or minus zero point zero two. Divide by zero point nine zero, times a hundred, and that's about two point two percent. The starting mass is also a difference of two readings, which adds about zero point eight percent. When we divide one measured mass by another, we add their percentage uncertainties. So our result is uncertain by about three percent.",
+      "audioFile": "public/audio/chem-y11-ws-v05/result-uncertainty.wav"
+    },
+    {
+      "id": "judge-gap",
+      "text": "Now we can judge. Percentage error compares a result with the accepted value: the difference, divided by the accepted value, times a hundred. Class one is about zero point three percent off. That's well inside our three percent uncertainty, so the balance's limits could explain it. Class two is about four point seven percent off. That's more than the balance's limits can explain, so we look for a cause in the method, and we already found one: the uncovered cooling.",
+      "audioFile": "public/audio/chem-y11-ws-v05/judge-gap.wav"
+    },
+    {
+      "id": "sample-size",
+      "text": "Remember the magnesium ribbon? On our balance it read zero point zero four grams. Plus or minus zero point zero one is twenty-five percent of that, so the molar mass could be out by about a quarter, a result we could barely trust. A balance reading to zero point zero zero one grams cuts that to about two percent. So a bigger sample, or a more precise balance, shrinks the percentage uncertainty.",
+      "audioFile": "public/audio/chem-y11-ws-v05/sample-size.wav"
+    },
+    {
+      "id": "assumptions",
+      "text": "Every result also has limits that come from its assumptions. Our copper sulfate percentage is valid only if all the water left, nothing else was lost, and no water came back before weighing. Constant mass, the white powder and the desiccator are our evidence. The accepted value is secondary data, and it's relevant only if our crystals really were pure copper sulfate pentahydrate. And three full runs per class let us check the result is reliable.",
+      "audioFile": "public/audio/chem-y11-ws-v05/assumptions.wav"
+    },
+    {
+      "id": "fixes",
+      "text": "So match each improvement to its problem. For a systematic error, change the method, like cooling in a desiccator or using a gentler flame. For random error, do more repeats and average. For a large uncertainty, use a bigger sample or a more precise instrument. Error, uncertainty and limits. Name it, size it, fix it.",
+      "audioFile": "public/audio/chem-y11-ws-v05/fixes.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student heats three point zero zero grams of magnesium sulfate heptahydrate once, for five minutes, and it loses one point three eight grams. The accepted water content is fifty-one point one percent. Calculate the percentage of water and the percentage error, decide whether uncertainty explains the difference, and suggest an improvement. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v05/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Forty-six point zero percent water, and a percentage error of about ten percent. That's far beyond the two percent uncertainty, so look for a cause that pushed it low. One short heating probably left water behind, so heat to constant mass. More repeats of the same method is the classic slip. They'd all be low in the same way.",
+      "audioFile": "public/audio/chem-y11-ws-v05/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one, from the magnesium method. A class collects hydrogen in a room at thirty degrees, but in every run uses the molar volume for twenty-five degrees. They get twenty-three point nine grams per mole, against an accepted twenty-four point three one. Calculate the percentage error, then identify the type of error and explain its effect. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v05/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "About one point seven percent. It's systematic, because the same molar volume was used every run. Warmer gas takes up more room, so dividing by the twenty-five degree molar volume counted too many moles, and mass over moles came out too low. Use the molar volume for the actual temperature. Calling it random is the classic slip. It pushed every run the same way.",
+      "audioFile": "public/audio/chem-y11-ws-v05/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So, read the trend, name the error, size the uncertainty, and check the assumptions. Our masses can tell us even more. The white powder is one point six zero grams of copper sulfate, and the water lost is zero point nine zero grams. Could those masses alone tell us the five in the formula? How do mass percentages reveal an empirical formula?",
+      "audioFile": "public/audio/chem-y11-ws-v05/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-ws-v05/key-notes.wav"
+    }
+  ]
+}

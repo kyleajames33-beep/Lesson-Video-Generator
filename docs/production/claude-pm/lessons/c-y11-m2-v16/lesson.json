@@ -1,0 +1,165 @@
+{
+  "id": "chem-y11-m2-v16",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "992557a4c37114264d66901faaa0bac6e82e3bd5e94779f9c58d95aae0d4d0d6",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Here are those three jars, each holding one litre of gas at twenty-five degrees and a hundred kilopascals. The hydrogen has a mass of less than a tenth of a gram. The carbon dioxide is more than twenty times heavier. Back in the molar mass practical, we used a rule that equal volumes of gases hold equal numbers of particles, and promised to explain it. So, quick prediction. Does the heavy carbon dioxide jar hold fewer particles than the hydrogen jar, more, or the same?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "empty-space",
+      "title": "the same, and mostly empty space",
+      "voiceover": {
+        "text": "The same, about two point four times ten to the twenty-two particles in each. To see why, think about how much room the particles themselves take up. A mole of liquid nitrogen fills about thirty-five millilitres. Let it boil, and at room conditions the same particles fill about twenty-five litres, around seven hundred times the space. So a gas is almost all empty space, and the particles take up well under one percent of the jar. That's why their size hardly matters."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-sets-volume",
+      "title": "what sets a gas's volume",
+      "voiceover": {
+        "text": "So what does set the volume? Gas particles never stop moving, and every time one hits a wall, it pushes on it. All those pushes add up to the gas's pressure, the push on each square metre of wall. A gas spreads out until its push on the walls matches the push from outside, here a hundred kilopascals. So the volume depends on how often the particles hit the walls, and how hard each hit is."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mass-cancels",
+      "title": "lighter particles move faster",
+      "voiceover": {
+        "text": "Now the surprise. Hydrogen molecules are sixteen times lighter than oxygen molecules, so you might expect them to push less. But at the same temperature, lighter molecules move faster, about four times faster here. Each hit is only a quarter as hard, but there are four times as many hits each second. The two effects cancel. So at the same temperature, every gas particle, heavy or light, pushes on the walls just as hard on average."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "avogadro-law",
+      "title": "Avogadro's law",
+      "voiceover": {
+        "text": "Put it together. Same temperature, same pressure and same volume means the same total push, and since every particle pushes equally, the same number of particles. That's Avogadro's law. Equal volumes of gases, at the same temperature and pressure, contain equal numbers of particles. Real gases follow it very closely at everyday conditions. It works the other way too. Double the moles at the same conditions, and you double the volume."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "molar-volume",
+      "title": "molar volume, and why it changes with temperature",
+      "voiceover": {
+        "text": "So one mole of any gas takes up the same volume at the same conditions. That's its molar volume. The data sheet gives two values, both at a hundred kilopascals. At zero degrees Celsius, it's twenty-two point seven one litres per mole. At twenty-five degrees, it's twenty-four point seven nine. The warmer gas is bigger because its particles move faster and hit harder, so the gas expands until its push matches the hundred kilopascals again."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conditions-decide",
+      "title": "the conditions decide",
+      "voiceover": {
+        "text": "So the conditions decide which number you use. n equals V over the molar volume, with V in litres. Take four point nine six litres of carbon dioxide. At twenty-five degrees, that's four point nine six over twenty-four point seven nine, zero point two zero zero moles. At zero degrees, it's over twenty-two point seven one, which is zero point two one eight moles. Same volume, more moles, because colder particles push less, so more of them fit. Always check the conditions first."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "volume-ratios",
+      "title": "volume ratios for gas reactions",
+      "voiceover": {
+        "text": "Avogadro's law gives a shortcut for reactions between gases. In N two plus three H two makes two N H three, the coefficients are mole ratios. And since equal volumes hold equal moles, they're volume ratios too. Ten litres of nitrogen reacts with thirty litres of hydrogen to make twenty litres of ammonia. But only for gases at the same temperature and pressure. A solid or a liquid doesn't follow the molar volume, so it can't join a volume ratio."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "particles-not-atoms",
+      "title": "particles, not atoms, and the memory line",
+      "voiceover": {
+        "text": "So remember: same T, same P, same V, same number. Just be careful what you're counting. It's particles, which means molecules, or single atoms for gases like helium. A litre of oxygen holds as many molecules as a litre of helium holds atoms, but each oxygen molecule has two atoms, so it holds twice as many atoms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Calculate the volume occupied by zero point six four zero grams of oxygen gas at zero degrees Celsius and one hundred kilopascals. Use oxygen sixteen point zero zero. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The molar mass of O two is thirty-two point zero zero, so that's zero point zero two zero zero moles. At zero degrees, the molar volume is twenty-two point seven one, so the volume is zero point four five four litres. Using twenty-four point seven nine gives zero point four nine six, the right method at the wrong temperature."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Methane burns completely in oxygen. C H four gas plus two O two gas makes C O two gas plus two H two O liquid. At twenty-five degrees and a hundred kilopascals, forty millilitres of methane burns. What volume of oxygen reacts, and what volume of carbon dioxide forms, at the same conditions? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Methane, oxygen and carbon dioxide are all gases at the same conditions, so their volumes follow the coefficients, one to two to one. Eighty millilitres of oxygen react, and forty millilitres of carbon dioxide form. The water is a liquid here, so it doesn't add eighty millilitres of gas. Counting a liquid in a volume ratio is the classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So equal volumes of gases hold equal numbers of particles, because size hardly matters, and at one temperature every particle pushes equally. That's why one mole has one molar volume, as long as the temperature and pressure are stated. But what if we change them? Seal some gas in a syringe, keep the temperature steady, and push the plunger in. How does changing gas volume change pressure at constant temperature?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

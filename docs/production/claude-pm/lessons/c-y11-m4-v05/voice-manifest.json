@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v05.md",
+  "sourceSha256": "0e900f07981eaaa3c0b6fdb0be88b9e23be3bf83c86fd9541294063ab349d028",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's the flask from Module Three, hydrogen peroxide breaking down, with manganese dioxide as the catalyst. Two moles of hydrogen peroxide release about one hundred and eighty-nine kilojoules as they break down into water and oxygen. Now picture a second flask with no catalyst, left for weeks until all of its peroxide has broken down too. Which flask releases more energy in total?",
+      "audioFile": "public/audio/chem-y11-m4-v05/hook-prediction.wav"
+    },
+    {
+      "id": "only-the-ends",
+      "text": "The same. Both flasks start with the same substances, and both finish with the same substances, water and oxygen. Delta H is the enthalpy of the products minus the enthalpy of the reactants, so it depends only on where the reaction starts and where it finishes. The catalyst changes how quickly the reaction gets there, not how far down it goes.",
+      "audioFile": "public/audio/chem-y11-m4-v05/only-the-ends.wav"
+    },
+    {
+      "id": "uncatalysed-hill",
+      "text": "Let's draw the full energy profile. The reactants sit on the left, and the products sit lower on the right, because energy is released. Between them is a hill. Its height above the reactants is the activation energy, the minimum energy a collision needs before old bonds can start to break. Without a catalyst, that hill is high, so very few collisions have enough energy to get over.",
+      "audioFile": "public/audio/chem-y11-m4-v05/uncatalysed-hill.wav"
+    },
+    {
+      "id": "different-route",
+      "text": "A catalyst gives the reaction a different route. With manganese dioxide, peroxide molecules attach to the solid's surface, where their bonds are weakened. The products form and then leave the surface. This route's highest barrier is lower than the old one, so the peak is lower. The catalyst takes part, but it comes out unchanged at the end. That's why a small amount of catalyst can be used again and again.",
+      "audioFile": "public/audio/chem-y11-m4-v05/different-route.wav"
+    },
+    {
+      "id": "same-ends-lower-pass",
+      "text": "Put the two routes on one diagram. Both start at the same reactant level, and both finish at the same product level. Only the peak is lower. So the activation energy changes, but delta H, the drop from reactants to products, is exactly the same. It's like crossing a mountain range by a lower pass. You start and finish in the same towns, so the overall drop is the same. You just have less to climb.",
+      "audioFile": "public/audio/chem-y11-m4-v05/same-ends-lower-pass.wav"
+    },
+    {
+      "id": "why-faster",
+      "text": "So why is it faster? At any temperature, particles have a spread of energies, and only collisions with at least the activation energy can react. Lowering the activation energy moves that line to the left, so a much bigger fraction of collisions have enough energy. More successful collisions each second means a faster rate.",
+      "audioFile": "public/audio/chem-y11-m4-v05/why-faster.wav"
+    },
+    {
+      "id": "warm-flask",
+      "text": "So why did the catalysed flask get warm, when the slow one hardly warms at all? Not because the catalyst adds energy. The reaction releases the same energy, just much faster, so heat builds up quicker than it can escape. The slow flask releases the same total, but so slowly that the heat leaks away as it goes.",
+      "audioFile": "public/audio/chem-y11-m4-v05/warm-flask.wav"
+    },
+    {
+      "id": "drawing-rules",
+      "text": "When you draw this in an exam, follow three rules. Start both curves at the same reactant level, and end them at the same product level. Measure each activation energy from the reactant level up to its own peak. And draw just one delta H arrow, from reactants to products, because it belongs to both routes.",
+      "audioFile": "public/audio/chem-y11-m4-v05/drawing-rules.wav"
+    },
+    {
+      "id": "endothermic-too",
+      "text": "The same rules work for an endothermic reaction, where the products sit higher than the reactants. A catalyst still lowers the peak, but it can't move the products. An endothermic reaction stays endothermic, with the same positive delta H, catalyst or not. A catalyst never turns energy taken in into energy given out.",
+      "audioFile": "public/audio/chem-y11-m4-v05/endothermic-too.wav"
+    },
+    {
+      "id": "two-kinds",
+      "text": "Catalysts come in two kinds, sorted by phase, meaning solid, liquid, gas or solution. Manganese dioxide is a solid working in a solution, so it's a heterogeneous catalyst, a different phase from the reactants. Iodide ions, dissolved in the peroxide solution, also speed it up, and they're in the same phase, so iodide is a homogeneous catalyst.",
+      "audioFile": "public/audio/chem-y11-m4-v05/two-kinds.wav"
+    },
+    {
+      "id": "industrial-catalyst",
+      "text": "The same rules hold in industry. Ammonia is made from nitrogen and hydrogen gases passed over solid iron, a heterogeneous catalyst. The iron makes the reaction fast enough to be useful. Without it, the reaction would need far higher temperatures to go at a useful rate. But delta H stays at minus ninety-two kilojoules per mole, with or without it.",
+      "audioFile": "public/audio/chem-y11-m4-v05/industrial-catalyst.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the line to remember. A catalyst finds a lower pass. Same start, same finish, less climb.",
+      "audioFile": "public/audio/chem-y11-m4-v05/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. On an energy profile, the reactants are at twenty kilojoules per mole, the uncatalysed peak is at one hundred and seventy, the catalysed peak is at one hundred and ten, and the products are at sixty. Find the activation energy with and without the catalyst, and delta H for each route. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v05/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Without the catalyst, the activation energy is one hundred and seventy minus twenty, one hundred and fifty. With it, one hundred and ten minus twenty, ninety. Delta H is sixty minus twenty, plus forty kilojoules per mole for both routes, because the ends don't move. Saying the catalyst changes delta H misses the whole point.",
+      "audioFile": "public/audio/chem-y11-m4-v05/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Iron is used as a catalyst when ammonia is made from nitrogen and hydrogen gases. Classify iron as a homogeneous or heterogeneous catalyst, explain why it increases the rate, and state its effect on delta H. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v05/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Iron is a solid and the reactants are gases, so it's heterogeneous. It provides a route with a lower activation energy, so a bigger fraction of collisions have enough energy, and the rate increases. Delta H is unchanged at minus ninety-two, because the reactants and products are the same. The catalyst doesn't supply the energy.",
+      "audioFile": "public/audio/chem-y11-m4-v05/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So a catalyst lowers the activation energy by offering a different route, but delta H depends only on the reactants and products, so it stays the same. That raises a deeper question. Ammonia's minus ninety-two kilojoules is fixed by the substances themselves. So where does that number come from? It comes from the bonds that break and the bonds that form.",
+      "audioFile": "public/audio/chem-y11-m4-v05/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v05/key-notes.wav"
+    }
+  ]
+}

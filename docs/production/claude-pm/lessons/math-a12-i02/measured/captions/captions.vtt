@@ -1,0 +1,613 @@
+WEBVTT
+
+00:00:00.361 --> 00:00:03.293
+Last video ended here: the integral of two
+
+00:00:03.434 --> 00:00:05.100
+x plus one, all squared.
+
+00:00:05.785 --> 00:00:06.535
+Expanding works.
+
+00:00:07.063 --> 00:00:09.103
+It's four x squared, plus four x, plus
+
+00:00:09.224 --> 00:00:11.905
+one, which integrates term by term to four
+
+00:00:12.006 --> 00:00:14.566
+x cubed over three, plus two x squared,
+
+00:00:14.807 --> 00:00:16.107
+plus x, plus C.
+
+00:00:17.170 --> 00:00:19.438
+But look at this jar of sourdough starter.
+
+00:00:20.121 --> 00:00:22.548
+t hours after it's fed, it rises at
+
+00:00:22.670 --> 00:00:24.896
+three, over the square root of four t
+
+00:00:24.917 --> 00:00:26.621
+plus one, centimetres per hour.
+
+00:00:27.204 --> 00:00:29.452
+Fast at first, then slower and slower.
+
+00:00:30.296 --> 00:00:32.104
+That rate has nothing to expand.
+
+00:00:32.867 --> 00:00:34.773
+So how far does it rise in six
+
+00:00:34.814 --> 00:00:35.114
+hours?
+
+00:00:35.858 --> 00:00:38.468
+And how can algebra, and the chain rule
+
+00:00:38.529 --> 00:00:40.697
+run backwards, find primitives like these?
+
+00:00:41.471 --> 00:00:42.503
+First, the algebra.
+
+00:00:43.149 --> 00:00:45.356
+The power rule works on powers of x,
+
+00:00:45.879 --> 00:00:48.608
+so rewrite the function as powers before integrating.
+
+00:00:49.816 --> 00:00:51.586
+One over x cubed is x to the
+
+00:00:51.607 --> 00:00:52.209
+minus three.
+
+00:00:52.933 --> 00:00:55.519
+Raise the power to minus two, and divide
+
+00:00:55.560 --> 00:00:56.241
+by minus two.
+
+00:00:56.944 --> 00:01:00.093
+That's minus one over two x squared, plus
+
+00:01:00.134 --> 00:01:02.581
+C on each side of zero, since x
+
+00:01:02.662 --> 00:01:03.504
+can't be zero.
+
+00:01:04.888 --> 00:01:06.811
+x to the three on two becomes x
+
+00:01:06.832 --> 00:01:07.874
+to the five on two,
+
+00:01:08.416 --> 00:01:09.758
+divided by five on two.
+
+00:01:10.541 --> 00:01:12.708
+That's two fifths of x to the five
+
+00:01:12.749 --> 00:01:14.896
+on two, which needs x to be zero
+
+00:01:15.058 --> 00:01:15.539
+or positive.
+
+00:01:16.704 --> 00:01:19.431
+And a fraction like x cubed plus two
+
+00:01:19.592 --> 00:01:22.300
+x, all over x, splits into x squared
+
+00:01:22.421 --> 00:01:23.022
+plus two.
+
+00:01:23.745 --> 00:01:26.615
+Its primitive is x cubed over three, plus
+
+00:01:26.657 --> 00:01:28.784
+two x, plus C on each side of
+
+00:01:28.825 --> 00:01:29.145
+zero.
+
+00:01:29.717 --> 00:01:30.584
+Now the bracket.
+
+00:01:31.086 --> 00:01:33.390
+Treat it like x, and guess two x
+
+00:01:33.431 --> 00:01:35.395
+plus one, cubed, over three.
+
+00:01:36.377 --> 00:01:38.177
+Check by differentiating with the chain rule:
+
+00:01:39.019 --> 00:01:42.799
+differentiate the outside, keep the inside, then multiply
+
+00:01:42.901 --> 00:01:44.901
+by the derivative of the inside, which is
+
+00:01:44.942 --> 00:01:45.141
+two.
+
+00:01:45.983 --> 00:01:48.535
+So the guess differentiates to two times the
+
+00:01:48.556 --> 00:01:49.580
+bracket squared.
+
+00:01:50.667 --> 00:01:51.372
+Watch its gradient.
+
+00:01:52.017 --> 00:01:54.570
+It traces a curve exactly twice as high
+
+00:01:54.671 --> 00:01:55.394
+as the one we want.
+
+00:01:56.099 --> 00:01:57.085
+So halve the guess.
+
+00:01:57.930 --> 00:02:00.959
+Two x plus one, cubed, over six, differentiates
+
+00:02:01.020 --> 00:02:03.548
+to exactly two x plus one, squared.
+
+00:02:04.554 --> 00:02:07.129
+Dividing by the inside's rate is the reverse
+
+00:02:07.170 --> 00:02:07.612
+chain rule.
+
+00:02:08.115 --> 00:02:10.544
+But expanding gave a different-looking answer.
+
+00:02:11.231 --> 00:02:11.940
+Which one is right?
+
+00:02:12.732 --> 00:02:13.805
+Expand the bracket answer.
+
+00:02:14.410 --> 00:02:17.376
+It's four x cubed over three, plus two
+
+00:02:17.477 --> 00:02:20.263
+x squared, plus x, plus one sixth.
+
+00:02:20.865 --> 00:02:23.262
+That's the expanded answer, plus one sixth.
+
+00:02:24.108 --> 00:02:26.194
+On the graph, they're the same shape, a
+
+00:02:26.296 --> 00:02:27.339
+constant gap apart.
+
+00:02:27.942 --> 00:02:30.510
+So both are primitives, and the C absorbs
+
+00:02:30.531 --> 00:02:30.951
+the difference.
+
+00:02:31.501 --> 00:02:33.538
+This works for any bracket a x plus
+
+00:02:33.558 --> 00:02:33.659
+b.
+
+00:02:34.422 --> 00:02:36.684
+Differentiating a x plus b, to the n
+
+00:02:36.704 --> 00:02:39.927
+plus one, multiplies by n plus one, and
+
+00:02:40.007 --> 00:02:41.208
+by the inner rate, a.
+
+00:02:41.850 --> 00:02:43.605
+So the primitive divides by both.
+
+00:02:44.190 --> 00:02:46.292
+The integral of a x plus b, to
+
+00:02:46.332 --> 00:02:48.434
+the n, is a x plus b to
+
+00:02:48.454 --> 00:02:49.214
+the n plus one,
+
+00:02:49.715 --> 00:02:52.497
+over a times n plus one, plus C,
+
+00:02:52.837 --> 00:02:55.700
+for a not zero and n not minus
+
+00:02:55.800 --> 00:02:55.900
+one.
+
+00:02:56.504 --> 00:02:57.294
+Now the starter.
+
+00:02:58.302 --> 00:03:00.269
+Three over the root of four t plus
+
+00:03:00.389 --> 00:03:00.550
+one
+
+00:03:01.071 --> 00:03:03.720
+is three, times four t plus one to
+
+00:03:03.740 --> 00:03:04.763
+the minus a half.
+
+00:03:05.630 --> 00:03:06.861
+Raise the power to a half.
+
+00:03:07.385 --> 00:03:09.575
+Then divide by the new power, a half,
+
+00:03:10.118 --> 00:03:11.685
+and by the inner rate, four.
+
+00:03:12.588 --> 00:03:14.111
+Three over two is one and a half,
+
+00:03:14.592 --> 00:03:16.155
+so the rise is one and a half
+
+00:03:16.235 --> 00:03:18.479
+times the root of four t plus one,
+
+00:03:18.860 --> 00:03:19.261
+plus C.
+
+00:03:20.384 --> 00:03:22.068
+At t equals zero it hasn't risen yet,
+
+00:03:22.490 --> 00:03:24.195
+so one and a half, plus C, is
+
+00:03:24.236 --> 00:03:26.502
+zero, and C is minus one and a
+
+00:03:26.563 --> 00:03:26.803
+half.
+
+00:03:27.787 --> 00:03:30.014
+After six hours, the root of twenty-five is
+
+00:03:30.175 --> 00:03:30.515
+five.
+
+00:03:31.158 --> 00:03:32.684
+So it has risen seven and a half,
+
+00:03:32.866 --> 00:03:34.674
+minus one and a half, which is six
+
+00:03:34.816 --> 00:03:35.357
+centimetres.
+
+00:03:35.895 --> 00:03:38.163
+The same idea works when the inside isn't
+
+00:03:38.244 --> 00:03:40.713
+linear, as long as the inside's derivative is
+
+00:03:40.734 --> 00:03:40.914
+there.
+
+00:03:41.778 --> 00:03:44.083
+Find the integral of two x, times x
+
+00:03:44.124 --> 00:03:45.626
+squared plus one, cubed.
+
+00:03:46.451 --> 00:03:48.427
+The inside is x squared plus one.
+
+00:03:48.992 --> 00:03:52.048
+Its derivative, two x, is already sitting outside.
+
+00:03:52.813 --> 00:03:54.723
+So guess x squared plus one, to the
+
+00:03:54.805 --> 00:03:55.910
+four, over four.
+
+00:03:56.716 --> 00:04:00.010
+Differentiating gives four times the bracket cubed, times
+
+00:04:00.111 --> 00:04:01.216
+two x, over four.
+
+00:04:01.880 --> 00:04:05.033
+That's two x, times the bracket cubed, exactly
+
+00:04:05.074 --> 00:04:05.636
+the integrand.
+
+00:04:06.400 --> 00:04:08.161
+In general, the integral of u to the
+
+00:04:08.362 --> 00:04:10.645
+n, times d u by d x, is
+
+00:04:10.846 --> 00:04:12.708
+u to the n plus one, over n
+
+00:04:12.729 --> 00:04:15.632
+plus one, plus C, for n not minus
+
+00:04:15.733 --> 00:04:15.832
+one.
+
+00:04:16.516 --> 00:04:19.012
+What if the outside factor is just x?
+
+00:04:19.676 --> 00:04:22.142
+The integral of x, times x squared plus
+
+00:04:22.183 --> 00:04:23.004
+one, cubed.
+
+00:04:23.887 --> 00:04:26.528
+Here x is half of two x, so
+
+00:04:26.569 --> 00:04:28.109
+the answer is half the last one:
+
+00:04:28.770 --> 00:04:30.751
+x squared plus one, to the four, over
+
+00:04:30.912 --> 00:04:31.091
+eight.
+
+00:04:32.176 --> 00:04:34.343
+A missing number can be fixed, because a
+
+00:04:34.404 --> 00:04:36.291
+constant moves through the integral sign.
+
+00:04:36.974 --> 00:04:39.182
+But with no x outside at all, the
+
+00:04:39.223 --> 00:04:41.932
+integral of x squared plus one, cubed, can't
+
+00:04:41.973 --> 00:04:42.675
+be done this way.
+
+00:04:43.358 --> 00:04:45.823
+Two x isn't a constant, so dividing by
+
+00:04:45.884 --> 00:04:47.347
+it doesn't undo the chain rule.
+
+00:04:48.210 --> 00:04:48.510
+Check it:
+
+00:04:49.173 --> 00:04:51.176
+at x equals one, the derivative of that
+
+00:04:51.238 --> 00:04:52.961
+guess is six, not eight.
+
+00:04:53.824 --> 00:04:54.045
+Here,
+
+00:04:54.588 --> 00:04:55.432
+expand instead.
+
+00:04:56.177 --> 00:04:58.311
+One more worked example, with a root.
+
+00:04:58.936 --> 00:05:00.200
+Find the integral of
+
+00:05:00.843 --> 00:05:03.131
+x, over the square root of x squared
+
+00:05:03.193 --> 00:05:03.794
+plus four.
+
+00:05:04.478 --> 00:05:07.389
+First, rewrite it as x, times x squared
+
+00:05:07.410 --> 00:05:09.056
+plus four, to the minus a half.
+
+00:05:09.940 --> 00:05:12.753
+The inside is x squared plus four, with
+
+00:05:12.795 --> 00:05:13.839
+derivative two x.
+
+00:05:14.482 --> 00:05:16.266
+We have x, which is half of that,
+
+00:05:16.628 --> 00:05:17.730
+so it's a missing number.
+
+00:05:18.634 --> 00:05:21.261
+Raising the power to a half and dividing
+
+00:05:21.302 --> 00:05:22.545
+by a half doubles it:
+
+00:05:23.228 --> 00:05:25.273
+two times the square root of x squared
+
+00:05:25.415 --> 00:05:25.996
+plus four.
+
+00:05:26.703 --> 00:05:27.711
+Then take half of that.
+
+00:05:28.739 --> 00:05:30.746
+The answer is the square root of x
+
+00:05:31.109 --> 00:05:32.955
+squared plus four, plus C.
+
+00:05:33.760 --> 00:05:33.839
+And
+
+00:05:34.362 --> 00:05:36.792
+x squared plus four is always positive, so
+
+00:05:36.914 --> 00:05:38.480
+this works for every real x.
+
+00:05:39.363 --> 00:05:42.650
+Differentiating back gives x over the root, the
+
+00:05:42.711 --> 00:05:43.732
+integrand exactly.
+
+00:05:44.389 --> 00:05:45.995
+Here's a rule of thumb for the reverse
+
+00:05:46.036 --> 00:05:46.457
+chain rule.
+
+00:05:47.080 --> 00:05:50.263
+Fix a missing number, never a missing x.
+
+00:05:51.005 --> 00:05:52.907
+If the inside's derivative is out by a
+
+00:05:52.968 --> 00:05:54.649
+constant, adjust the constant.
+
+00:05:55.211 --> 00:05:56.797
+If it needs an x that isn't there,
+
+00:05:57.481 --> 00:05:58.505
+use algebra instead.
+
+00:06:01.296 --> 00:06:01.785
+Your turn.
+
+00:06:02.431 --> 00:06:05.078
+Find the integral of six, over two x
+
+00:06:05.139 --> 00:06:07.827
+plus one, to the four, for x not
+
+00:06:07.908 --> 00:06:08.970
+equal to minus a half.
+
+00:06:09.615 --> 00:06:10.460
+Pause here to answer.
+
+00:06:21.635 --> 00:06:23.845
+Rewrite it as six times two x plus
+
+00:06:24.027 --> 00:06:25.213
+one, to the minus four.
+
+00:06:25.957 --> 00:06:28.258
+Raise the power to minus three, then divide
+
+00:06:28.299 --> 00:06:29.039
+by minus three,
+
+00:06:29.580 --> 00:06:31.220
+and by the inner rate, two.
+
+00:06:32.104 --> 00:06:34.182
+Six over minus six is minus one.
+
+00:06:34.945 --> 00:06:37.326
+So the answer is minus one over two
+
+00:06:37.467 --> 00:06:39.328
+x plus one, cubed, plus C.
+
+00:06:40.229 --> 00:06:42.450
+Forgetting the two gives minus two over the
+
+00:06:42.491 --> 00:06:45.613
+bracket cubed, which differentiates to twice the integrand.
+
+00:06:47.039 --> 00:06:47.468
+Last one.
+
+00:06:48.076 --> 00:06:51.403
+Find the integral of x squared, times x
+
+00:06:51.484 --> 00:06:53.708
+cubed plus one, to the four.
+
+00:06:54.436 --> 00:06:55.268
+Pause here to answer.
+
+00:07:05.881 --> 00:07:08.051
+The inside is x cubed plus one,
+
+00:07:08.633 --> 00:07:10.581
+and its derivative is three x squared.
+
+00:07:11.244 --> 00:07:13.457
+We have x squared, which is a third
+
+00:07:13.477 --> 00:07:14.865
+of that: a missing number.
+
+00:07:15.568 --> 00:07:17.196
+So the answer is a third of x
+
+00:07:17.537 --> 00:07:19.988
+cubed plus one, to the five, over five.
+
+00:07:20.771 --> 00:07:22.737
+That's x cubed plus one, to the five,
+
+00:07:22.918 --> 00:07:24.683
+over fifteen, plus C.
+
+00:07:25.808 --> 00:07:28.816
+Integrating the two factors separately and multiplying doesn't
+
+00:07:28.937 --> 00:07:29.217
+work.
+
+00:07:29.740 --> 00:07:31.977
+A product doesn't integrate factor by factor.
+
+00:07:33.614 --> 00:07:35.856
+So algebra turns a function into powers,
+
+00:07:36.378 --> 00:07:38.459
+and the reverse chain rule divides by the
+
+00:07:38.540 --> 00:07:40.121
+rate of a linear inside.
+
+00:07:40.984 --> 00:07:43.432
+Next, an exponential: the integral of e
+
+00:07:43.975 --> 00:07:44.777
+to the three x.
+
+00:07:45.461 --> 00:07:47.431
+Does the same division by three appear?
+
+00:07:50.121 --> 00:07:51.005
+Here are the key notes.
+
+00:07:51.527 --> 00:07:53.296
+Pause the video if you need more time
+
+00:07:53.316 --> 00:07:53.798
+to copy them.

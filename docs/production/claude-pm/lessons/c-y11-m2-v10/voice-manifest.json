@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v10.md",
+  "sourceSha256": "c9c5edcb0795f1d37a095d324d8c4a3e56641dedfdfe1ae16229b690202aa7ea",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "which-concentrated",
+      "text": "Here's our flask from last time, with about zero point zero two zero zero moles of calcium chloride in about fifty millilitres of solution. Now compare a big beaker, with zero point one zero zero moles of calcium chloride in five hundred millilitres. The beaker holds five times as many moles. So which solution is more concentrated?",
+      "audioFile": "public/audio/chem-y11-m2-v10/which-concentrated.wav"
+    },
+    {
+      "id": "amount-not-concentration",
+      "text": "It's the flask. Concentration isn't how much solute there is altogether. It's how much is packed into each part of the solution. Take the same small sample, one millilitre, from each. The flask's millilitre holds twice as many calcium chloride units as the beaker's. So the beaker has more solute in total, but the flask is more concentrated. A quick reminder of the words. The solute is what dissolves, the solvent is the water it dissolves in, and the solution is the mixture.",
+      "audioFile": "public/audio/chem-y11-m2-v10/amount-not-concentration.wav"
+    },
+    {
+      "id": "moles-per-litre",
+      "text": "In chemistry, we measure concentration as the number of moles of solute in each litre of solution. So the formula is c equals n over V. The concentration in moles per litre equals the chemical amount in moles, divided by the volume of the solution in litres. The unit tells you the formula. Moles per litre means moles divided by litres. You'll also see moles per litre written as a capital M, short for molar.",
+      "audioFile": "public/audio/chem-y11-m2-v10/moles-per-litre.wav"
+    },
+    {
+      "id": "litres-first",
+      "text": "Lab volumes are usually in millilitres, so convert first. There are a thousand millilitres in a litre, so divide by a thousand. Fifty millilitres is zero point zero five zero zero litres. So our flask is zero point zero two zero zero moles over zero point zero five zero zero litres, which is zero point four zero zero moles per litre. The beaker is zero point one zero zero over zero point five zero zero, which is zero point two zero zero. The flask is twice as concentrated, just like the picture. Put in fifty instead of zero point zero five, and your answer comes out a thousand times too small.",
+      "audioFile": "public/audio/chem-y11-m2-v10/litres-first.wav"
+    },
+    {
+      "id": "sample-moles",
+      "text": "The formula rearranges, so you can find any of the three. To find moles, multiply: n equals c times V. Say we pipette twenty-five point zero millilitres out of the flask. Its concentration is still zero point four zero zero moles per litre, because every part of a solution is the same. But it holds only zero point four zero zero times zero point zero two five zero, which is zero point zero one zero zero moles. Taking a sample changes the amount, but not the concentration.",
+      "audioFile": "public/audio/chem-y11-m2-v10/sample-moles.wav"
+    },
+    {
+      "id": "why-useful",
+      "text": "This is why chemists use concentration. Once a solution's concentration is known, measuring out a volume measures out moles. Need zero point zero one zero zero moles of calcium chloride for a reaction? Just pipette twenty-five millilitres of the flask's solution. There's no weighing, and the reactant is already dissolved and ready to react.",
+      "audioFile": "public/audio/chem-y11-m2-v10/why-useful.wav"
+    },
+    {
+      "id": "find-volume",
+      "text": "To find a volume, divide: V equals n over c. What volume of two point zero zero mole per litre hydrochloric acid holds zero point three zero zero moles? Zero point three zero zero over two point zero zero is zero point one five zero litres, which is one hundred and fifty millilitres. Quick check. This acid holds two moles in every litre, so a third of a mole needs well under a litre. And it does.",
+      "audioFile": "public/audio/chem-y11-m2-v10/find-volume.wav"
+    },
+    {
+      "id": "from-mass",
+      "text": "Often you start from a mass. Five point eight five grams of sodium chloride is dissolved and made up to five hundred millilitres of solution. First, mass to moles, as in the molar mass video. Five point eight five over fifty-eight point four four is zero point one zero zero moles. Then c equals n over V: zero point one zero zero over zero point five zero zero is zero point two zero zero moles per litre. Two steps, and the rule is the same as always: get to moles first.",
+      "audioFile": "public/audio/chem-y11-m2-v10/from-mass.wav"
+    },
+    {
+      "id": "solution-volume",
+      "text": "Notice the words \"made up to\". V is the volume of the whole solution, not the water you started with. So you dissolve the salt in a little water, then add water until the solution reaches the line on a volumetric flask. Dissolving the salt in five hundred millilitres of water would give slightly more than five hundred millilitres of solution, so the real concentration would be a little lower. A later video shows how to do this accurately.",
+      "audioFile": "public/audio/chem-y11-m2-v10/solution-volume.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Three point seven zero grams of calcium chloride is dissolved in water and made up to two hundred and fifty point zero millilitres of solution. Calculate the concentration in moles per litre. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v10/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Calcium chloride's molar mass is one hundred and ten point nine eight, so that's zero point zero three three three moles. The volume is zero point two five zero zero litres. Zero point zero three three three over zero point two five zero zero is zero point one three three moles per litre. Using two hundred and fifty instead of litres gives an answer a thousand times too small.",
+      "audioFile": "public/audio/chem-y11-m2-v10/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A bottle holds sodium hydroxide solution at zero point one five zero moles per litre. What volume of it contains zero point zero one two zero moles? And what is the concentration of a twenty point zero millilitre portion poured from the bottle? Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v10/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "V equals n over c. Zero point zero one two zero over zero point one five zero is zero point zero eight zero zero litres, or eighty point zero millilitres. The portion is still zero point one five zero moles per litre, because pouring some out doesn't change how much is in each litre. Multiplying instead of dividing is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v10/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So concentration links them: c equals n over V, with V in litres. Multiply by the volume to get moles, or divide moles by concentration to get a volume. But labels don't always use moles. A bag of saline from a hospital says zero point nine percent sodium chloride. Is that more concentrated, less, or the same as zero point one five four moles per litre? How do we compare molarity with mass concentration and percentage units?",
+      "audioFile": "public/audio/chem-y11-m2-v10/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v10/key-notes.wav"
+    }
+  ]
+}

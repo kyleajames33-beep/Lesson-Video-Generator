@@ -1,0 +1,751 @@
+1
+00:00:00,261 --> 00:00:03,086
+Here's cos x, from zero to pi over
+
+2
+00:00:03,126 --> 00:00:05,932
+two, with eight thin rectangles standing against it.
+
+3
+00:00:06,678 --> 00:00:07,710
+Let's give the curve a meaning.
+
+4
+00:00:08,217 --> 00:00:09,451
+A storm is easing off.
+
+5
+00:00:10,076 --> 00:00:12,365
+cos x is the rain rate, in centimetres
+
+6
+00:00:12,406 --> 00:00:14,855
+per hour, x hours after it starts to
+
+7
+00:00:14,956 --> 00:00:15,136
+ease.
+
+8
+00:00:15,840 --> 00:00:17,807
+At the start, it's one centimetre an hour.
+
+9
+00:00:18,432 --> 00:00:20,317
+By pi over two hours, about an hour
+
+10
+00:00:20,338 --> 00:00:21,942
+and a half, the rain has stopped.
+
+11
+00:00:22,746 --> 00:00:24,900
+So how much rain fell into the gauge?
+
+12
+00:00:25,665 --> 00:00:27,470
+The rate keeps changing, so we can't just
+
+13
+00:00:27,592 --> 00:00:28,855
+multiply rate by time.
+
+14
+00:00:29,579 --> 00:00:31,948
+But adding up thin rectangles gives an estimate,
+
+15
+00:00:32,652 --> 00:00:34,178
+and refining them makes it better.
+
+16
+00:00:34,829 --> 00:00:37,020
+Take one thin strip of time, with width
+
+17
+00:00:37,162 --> 00:00:37,805
+delta x.
+
+18
+00:00:38,329 --> 00:00:40,634
+Delta x just means a small change in
+
+19
+00:00:40,856 --> 00:00:43,001
+x, here a short stretch of time.
+
+20
+00:00:44,005 --> 00:00:46,231
+Over that short time, the rate hardly changes.
+
+21
+00:00:46,815 --> 00:00:48,068
+Call the rate f of x.
+
+22
+00:00:48,896 --> 00:00:50,842
+So the rain that falls is about rate
+
+23
+00:00:50,923 --> 00:00:51,644
+times time.
+
+24
+00:00:52,227 --> 00:00:54,513
+On the graph, that's the rectangle's height times
+
+25
+00:00:54,614 --> 00:00:55,837
+its width, its area.
+
+26
+00:00:56,601 --> 00:01:00,199
+Centimetres per hour, times hours, gives centimetres.
+
+27
+00:01:01,024 --> 00:01:03,495
+So each rectangle's area estimates the rain that
+
+28
+00:01:03,577 --> 00:01:04,842
+fell during its strip.
+
+29
+00:01:05,285 --> 00:01:07,258
+That's the change in the quantity over one
+
+30
+00:01:07,360 --> 00:01:07,983
+small step.
+
+31
+00:01:08,730 --> 00:01:10,243
+Now add up all the strips.
+
+32
+00:01:10,909 --> 00:01:13,396
+This sign, a capital sigma, means add them
+
+33
+00:01:13,618 --> 00:01:13,998
+all up.
+
+34
+00:01:14,762 --> 00:01:16,707
+The sum of f of x times delta
+
+35
+00:01:16,869 --> 00:01:17,891
+x, from a to b,
+
+36
+00:01:18,394 --> 00:01:20,762
+estimates the total change from a to b.
+
+37
+00:01:21,604 --> 00:01:23,647
+With four strips, using the heights at their
+
+38
+00:01:23,688 --> 00:01:26,292
+left ends, the total is about one point
+
+39
+00:01:26,414 --> 00:01:27,194
+one eight centimetres.
+
+40
+00:01:28,117 --> 00:01:30,279
+The rate falls across every strip, and each
+
+41
+00:01:30,381 --> 00:01:32,924
+rectangle uses the rate at its start, so
+
+42
+00:01:33,085 --> 00:01:34,887
+each one reaches above the curve.
+
+43
+00:01:35,532 --> 00:01:36,703
+That's an overestimate.
+
+44
+00:01:37,492 --> 00:01:39,363
+The height can come from any x in
+
+45
+00:01:39,384 --> 00:01:40,088
+the strip's base.
+
+46
+00:01:40,793 --> 00:01:43,079
+Use the right ends, and every rectangle sits
+
+47
+00:01:43,341 --> 00:01:43,921
+under the curve.
+
+48
+00:01:44,484 --> 00:01:47,291
+That gives about zero point seven nine, an
+
+49
+00:01:47,513 --> 00:01:48,133
+underestimate.
+
+50
+00:01:48,837 --> 00:01:50,684
+The true amount is somewhere in between.
+
+51
+00:01:51,538 --> 00:01:52,990
+So make the strips thinner.
+
+52
+00:01:53,756 --> 00:01:56,381
+Delta x is the whole interval, b minus
+
+53
+00:01:56,522 --> 00:01:58,906
+a, split into n equal strips.
+
+54
+00:01:59,429 --> 00:02:02,437
+So delta x equals b minus a, over
+
+55
+00:02:02,599 --> 00:02:02,638
+n.
+
+56
+00:02:03,603 --> 00:02:04,748
+Double n to eight,
+
+57
+00:02:05,311 --> 00:02:07,038
+and the left sum drops to about one
+
+58
+00:02:07,099 --> 00:02:07,561
+point one.
+
+59
+00:02:08,323 --> 00:02:10,907
+Sixteen strips gives about one point zero five,
+
+60
+00:02:11,349 --> 00:02:13,773
+and thirty-two gives about one point zero two.
+
+61
+00:02:14,597 --> 00:02:17,091
+Meanwhile, the right sums climb towards the same
+
+62
+00:02:17,153 --> 00:02:17,413
+place.
+
+63
+00:02:18,040 --> 00:02:18,466
+Here's why.
+
+64
+00:02:19,378 --> 00:02:21,822
+In a thinner strip, the rate changes less,
+
+65
+00:02:22,204 --> 00:02:24,227
+so the gap between each rectangle and the
+
+66
+00:02:24,288 --> 00:02:25,189
+curve shrinks.
+
+67
+00:02:26,013 --> 00:02:28,321
+Both estimates close in on one centimetre.
+
+68
+00:02:28,824 --> 00:02:30,932
+A later video shows why it's exactly one.
+
+69
+00:02:31,697 --> 00:02:33,891
+Every estimate so far is an area.
+
+70
+00:02:34,656 --> 00:02:37,083
+So the total change is the area of
+
+71
+00:02:37,124 --> 00:02:40,393
+this region, between the curve and the x-axis,
+
+72
+00:02:40,955 --> 00:02:41,937
+from a to b.
+
+73
+00:02:42,902 --> 00:02:45,072
+That works when the curve stays on or
+
+74
+00:02:45,154 --> 00:02:46,841
+above the axis, like this one.
+
+75
+00:02:47,868 --> 00:02:50,262
+This curve is also continuous on the interval.
+
+76
+00:02:50,966 --> 00:02:52,769
+Informally, that means you can draw it from
+
+77
+00:02:52,990 --> 00:02:54,994
+one end to the other without taking the
+
+78
+00:02:55,035 --> 00:02:55,916
+pen off the paper.
+
+79
+00:02:56,539 --> 00:02:58,983
+If the rain stopped dead halfway, the graph
+
+80
+00:02:59,104 --> 00:03:01,228
+would jump, and the pen would have to
+
+81
+00:03:01,269 --> 00:03:01,509
+lift.
+
+82
+00:03:02,373 --> 00:03:04,142
+In this topic, the curves we add up
+
+83
+00:03:04,686 --> 00:03:05,630
+are continuous.
+
+84
+00:03:06,636 --> 00:03:09,672
+Rectangles have flat tops, but the curve slopes.
+
+85
+00:03:10,316 --> 00:03:12,564
+So join the top points with straight lines
+
+86
+00:03:12,625 --> 00:03:13,046
+instead.
+
+87
+00:03:13,629 --> 00:03:16,180
+Each strip becomes a trapezium, a shape with
+
+88
+00:03:16,262 --> 00:03:17,446
+two parallel sides.
+
+89
+00:03:18,150 --> 00:03:20,000
+Its area is the average of the two
+
+90
+00:03:20,061 --> 00:03:21,388
+heights, times the width.
+
+91
+00:03:22,133 --> 00:03:24,279
+That's the average of the left rectangle and
+
+92
+00:03:24,321 --> 00:03:25,343
+the right rectangle.
+
+93
+00:03:26,147 --> 00:03:28,718
+With just four trapezia, the estimate is about
+
+94
+00:03:28,879 --> 00:03:30,586
+zero point nine eight seven.
+
+95
+00:03:31,109 --> 00:03:33,356
+That's closer than thirty-two rectangles.
+
+96
+00:03:34,280 --> 00:03:37,344
+Here the curve bends downwards, so each straight
+
+97
+00:03:37,405 --> 00:03:40,089
+top sits just under it, and the trapezia
+
+98
+00:03:40,551 --> 00:03:41,692
+slightly underestimate.
+
+99
+00:03:42,302 --> 00:03:44,298
+Let's compare the methods on one example.
+
+100
+00:03:44,921 --> 00:03:47,126
+A trolley's speed is x squared metres per
+
+101
+00:03:47,167 --> 00:03:49,311
+second, x seconds after it starts.
+
+102
+00:03:50,073 --> 00:03:52,077
+Estimate how far it goes in the first
+
+103
+00:03:52,198 --> 00:03:54,162
+two seconds, using four strips.
+
+104
+00:03:55,005 --> 00:03:57,698
+Speed times time is distance, so each strip's
+
+105
+00:03:57,900 --> 00:03:59,185
+area is a distance.
+
+106
+00:03:59,930 --> 00:04:02,756
+Delta x is two minus zero, over four,
+
+107
+00:04:02,917 --> 00:04:03,738
+which is a half.
+
+108
+00:04:04,481 --> 00:04:07,505
+The heights at zero, a half, one, one
+
+109
+00:04:07,526 --> 00:04:09,708
+and a half and two are zero, a
+
+110
+00:04:09,749 --> 00:04:12,573
+quarter, one, two and a quarter, and four.
+
+111
+00:04:13,274 --> 00:04:15,819
+Left rectangles use the first four heights, which
+
+112
+00:04:15,859 --> 00:04:17,662
+gives a half times three and a half,
+
+113
+00:04:18,083 --> 00:04:19,425
+or one point seven five metres.
+
+114
+00:04:20,167 --> 00:04:22,532
+Right rectangles use the last four, which gives
+
+115
+00:04:22,594 --> 00:04:23,575
+three point seven five.
+
+116
+00:04:24,179 --> 00:04:26,754
+The trapezia take the average, two point seven
+
+117
+00:04:26,795 --> 00:04:27,015
+five.
+
+118
+00:04:27,822 --> 00:04:29,998
+Now refine all three in a graphing app.
+
+119
+00:04:30,661 --> 00:04:32,925
+At eight strips, the left rectangles give about
+
+120
+00:04:33,025 --> 00:04:34,047
+two point one nine,
+
+121
+00:04:34,668 --> 00:04:36,952
+the right about three point one nine, and
+
+122
+00:04:36,992 --> 00:04:39,075
+the trapezia about two point six nine.
+
+123
+00:04:39,876 --> 00:04:42,323
+At sixteen strips, the trapezia give about two
+
+124
+00:04:42,383 --> 00:04:43,526
+point six seven two.
+
+125
+00:04:44,389 --> 00:04:46,443
+All three settle near two point six six
+
+126
+00:04:46,483 --> 00:04:47,107
+seven metres.
+
+127
+00:04:47,993 --> 00:04:49,018
+Now look at the errors.
+
+128
+00:04:49,863 --> 00:04:52,798
+Each time n doubles, the rectangle errors roughly
+
+129
+00:04:52,879 --> 00:04:53,261
+halve.
+
+130
+00:04:53,724 --> 00:04:55,816
+But the trapezium error drops to about a
+
+131
+00:04:55,918 --> 00:04:56,300
+quarter.
+
+132
+00:04:57,005 --> 00:04:59,695
+This curve bends upwards, so the trapezia sit
+
+133
+00:04:59,776 --> 00:05:02,285
+just above it, and slightly overestimate.
+
+134
+00:05:02,968 --> 00:05:04,996
+Here the trapezia improve fastest.
+
+135
+00:05:05,640 --> 00:05:07,271
+Try it yourself in a graphing app: change
+
+136
+00:05:07,393 --> 00:05:08,057
+n and compare.
+
+137
+00:05:08,649 --> 00:05:09,796
+Here's one line to keep.
+
+138
+00:05:10,481 --> 00:05:12,690
+Strip equals rate times width.
+
+139
+00:05:13,434 --> 00:05:14,942
+Add the strips, then thin them.
+
+140
+00:05:15,927 --> 00:05:17,731
+Each strip is a small piece of change,
+
+141
+00:05:18,234 --> 00:05:20,158
+the sum estimates the whole change,
+
+142
+00:05:20,720 --> 00:05:22,985
+and thinner strips make the estimate better.
+
+143
+00:05:25,576 --> 00:05:25,939
+Your turn.
+
+144
+00:05:26,825 --> 00:05:29,267
+Water flows into a tank at eight minus
+
+145
+00:05:29,508 --> 00:05:31,870
+x squared litres per minute, for the first
+
+146
+00:05:31,991 --> 00:05:32,470
+two minutes.
+
+147
+00:05:33,312 --> 00:05:37,065
+Use four rectangles with left-end heights to estimate
+
+148
+00:05:37,106 --> 00:05:37,587
+the volume.
+
+149
+00:05:38,290 --> 00:05:40,959
+Is it an overestimate or an underestimate?
+
+150
+00:05:41,684 --> 00:05:42,509
+Pause here to answer.
+
+151
+00:05:53,318 --> 00:05:54,652
+Delta x is a half.
+
+152
+00:05:54,995 --> 00:05:57,116
+The left heights are eight, seven point seven
+
+153
+00:05:57,157 --> 00:06:00,258
+five, seven, and five point seven five, which
+
+154
+00:06:00,419 --> 00:06:01,840
+add to twenty-eight point five.
+
+155
+00:06:02,502 --> 00:06:04,969
+Times the width, that's fourteen point two five
+
+156
+00:06:05,030 --> 00:06:05,330
+litres.
+
+157
+00:06:06,174 --> 00:06:08,841
+The rate falls across every strip, so each
+
+158
+00:06:08,982 --> 00:06:11,127
+left height is the biggest in its strip.
+
+159
+00:06:11,549 --> 00:06:12,516
+That's an overestimate.
+
+160
+00:06:13,244 --> 00:06:14,639
+Twenty-eight point five is wrong.
+
+161
+00:06:14,983 --> 00:06:16,411
+It forgot to multiply by the width.
+
+162
+00:06:18,016 --> 00:06:18,479
+Last one.
+
+163
+00:06:19,245 --> 00:06:22,037
+A cyclist's speed is recorded every two seconds.
+
+164
+00:06:22,600 --> 00:06:25,243
+At zero, two and four seconds, it's zero,
+
+165
+00:06:25,444 --> 00:06:27,466
+six and ten metres per second.
+
+166
+00:06:28,131 --> 00:06:30,828
+Use two trapezia to estimate the distance travelled.
+
+167
+00:06:31,455 --> 00:06:32,327
+Pause here to answer.
+
+168
+00:06:43,036 --> 00:06:45,212
+Each trapezium is two seconds wide.
+
+169
+00:06:45,756 --> 00:06:47,561
+The first is two times the average of
+
+170
+00:06:47,663 --> 00:06:49,668
+zero and six, which is six metres.
+
+171
+00:06:50,251 --> 00:06:51,861
+The second is two times the average of
+
+172
+00:06:51,942 --> 00:06:53,793
+six and ten, which is sixteen.
+
+173
+00:06:54,297 --> 00:06:56,406
+So the estimate is twenty-two metres.
+
+174
+00:06:57,336 --> 00:06:58,407
+Twenty metres is wrong.
+
+175
+00:06:58,831 --> 00:07:01,425
+It uses one wide trapezium, and skips the
+
+176
+00:07:01,527 --> 00:07:02,531
+reading at two seconds.
+
+177
+00:07:04,349 --> 00:07:07,320
+So thin strips turn a changing rate into
+
+178
+00:07:07,341 --> 00:07:09,047
+an estimate of the total change.
+
+179
+00:07:09,711 --> 00:07:11,981
+But every rate so far stayed positive.
+
+180
+00:07:12,786 --> 00:07:14,934
+Here's a bath filling with the plug out.
+
+181
+00:07:15,517 --> 00:07:17,742
+Its net flow is twelve minus two t
+
+182
+00:07:17,883 --> 00:07:19,667
+litres per minute, over eight minutes.
+
+183
+00:07:20,651 --> 00:07:23,424
+After six minutes, it's negative, and a rectangle
+
+184
+00:07:23,545 --> 00:07:24,590
+hangs below the axis.
+
+185
+00:07:25,555 --> 00:07:27,524
+What does a strip below the axis mean?
+
+186
+00:07:30,355 --> 00:07:31,238
+Here are the key notes.
+
+187
+00:07:31,761 --> 00:07:33,529
+Pause the video if you need more time
+
+188
+00:07:33,550 --> 00:07:34,031
+to copy them.

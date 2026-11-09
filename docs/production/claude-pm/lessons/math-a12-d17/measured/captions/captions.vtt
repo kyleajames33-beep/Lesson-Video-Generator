@@ -1,0 +1,655 @@
+WEBVTT
+
+00:00:00.281 --> 00:00:03.074
+Last video ended here, with a cubic and
+
+00:00:03.115 --> 00:00:04.461
+its two derivative graphs.
+
+00:00:05.428 --> 00:00:06.400
+Now let's put them to work.
+
+00:00:07.289 --> 00:00:09.963
+This laptop shows a new video's total views,
+
+00:00:10.205 --> 00:00:10.787
+day by day.
+
+00:00:11.271 --> 00:00:14.186
+They climb slowly at launch, then fast, then
+
+00:00:14.468 --> 00:00:14.869
+level off.
+
+00:00:15.694 --> 00:00:18.001
+From this graph alone, which day brought the
+
+00:00:18.122 --> 00:00:19.325
+most new views?
+
+00:00:20.070 --> 00:00:21.977
+By the end, you'll read it straight off
+
+00:00:21.998 --> 00:00:22.299
+the shape.
+
+00:00:22.968 --> 00:00:24.856
+First, take a cubic you've met before,
+
+00:00:25.640 --> 00:00:27.949
+y equals x cubed minus three x.
+
+00:00:28.591 --> 00:00:30.552
+It has a local maximum at minus one,
+
+00:00:30.633 --> 00:00:30.892
+two,
+
+00:00:31.433 --> 00:00:33.393
+a local minimum at one, minus two,
+
+00:00:34.035 --> 00:00:35.575
+and an inflection at the origin.
+
+00:00:36.262 --> 00:00:37.250
+Are those points enough?
+
+00:00:38.038 --> 00:00:40.326
+This wiggly curve goes through all three points.
+
+00:00:41.070 --> 00:00:42.837
+So does this one, made of straight lines.
+
+00:00:43.583 --> 00:00:44.389
+Both are wrong.
+
+00:00:45.153 --> 00:00:46.856
+What rules them out is what the derivatives
+
+00:00:46.897 --> 00:00:48.018
+say between the points:
+
+00:00:48.681 --> 00:00:49.161
+constraints,
+
+00:00:49.783 --> 00:00:51.205
+rules the curve has to obey.
+
+00:00:51.768 --> 00:00:53.054
+Start with f prime.
+
+00:00:54.080 --> 00:00:56.871
+f prime of x is three, times x
+
+00:00:56.932 --> 00:00:59.180
+minus one, times x plus one.
+
+00:00:59.963 --> 00:01:02.226
+It's positive when x is less than minus
+
+00:01:02.328 --> 00:01:02.467
+one,
+
+00:01:03.029 --> 00:01:05.953
+negative between minus one and one, and positive
+
+00:01:05.995 --> 00:01:07.016
+again after one.
+
+00:01:07.759 --> 00:01:10.566
+So the curve must rise, then fall, then
+
+00:01:10.648 --> 00:01:10.927
+rise.
+
+00:01:11.872 --> 00:01:13.217
+Now look at the wiggly curve.
+
+00:01:13.941 --> 00:01:16.628
+Near zero it climbs, where f prime says
+
+00:01:16.669 --> 00:01:17.331
+it must fall.
+
+00:01:17.895 --> 00:01:18.647
+So it's out.
+
+00:01:19.475 --> 00:01:21.319
+Each sign of f prime is a rule
+
+00:01:21.360 --> 00:01:23.465
+for a whole interval, not just a point.
+
+00:01:24.429 --> 00:01:26.336
+f prime can't rule out the straight join.
+
+00:01:27.082 --> 00:01:29.194
+Now use f double prime, which is six
+
+00:01:29.336 --> 00:01:29.396
+x.
+
+00:01:30.041 --> 00:01:32.350
+For x less than zero it's negative, so
+
+00:01:32.371 --> 00:01:34.559
+the curve is concave down, bending like a
+
+00:01:34.620 --> 00:01:34.901
+cap.
+
+00:01:35.504 --> 00:01:38.338
+For x greater than zero it's positive, concave
+
+00:01:38.419 --> 00:01:39.223
+up, like a cup.
+
+00:01:39.987 --> 00:01:42.435
+Straight lines don't bend, and they make sharp
+
+00:01:42.496 --> 00:01:44.562
+corners at minus one and one, where the
+
+00:01:44.603 --> 00:01:46.268
+curve has to be smooth and flat.
+
+00:01:47.213 --> 00:01:48.781
+At the origin the bend changes,
+
+00:01:49.305 --> 00:01:50.410
+so that's the inflection.
+
+00:01:50.993 --> 00:01:53.359
+The gradient there is minus three, not zero,
+
+00:01:53.721 --> 00:01:55.645
+so it's a non-horizontal inflection.
+
+00:01:56.330 --> 00:01:57.440
+Now pin it down.
+
+00:01:58.250 --> 00:01:58.696
+Symmetry.
+
+00:01:59.569 --> 00:02:02.180
+f of minus x is minus f of
+
+00:02:02.341 --> 00:02:03.787
+x, so the function is odd.
+
+00:02:04.471 --> 00:02:06.600
+Give the right half a half turn about
+
+00:02:06.621 --> 00:02:08.749
+the origin, and it lands exactly on the
+
+00:02:08.790 --> 00:02:09.231
+left half.
+
+00:02:10.201 --> 00:02:10.666
+Intercepts.
+
+00:02:11.596 --> 00:02:14.580
+x times x squared minus three is zero
+
+00:02:14.761 --> 00:02:15.301
+at zero,
+
+00:02:15.803 --> 00:02:18.366
+and at plus or minus root three, about
+
+00:02:18.548 --> 00:02:19.428
+one point seven three.
+
+00:02:20.437 --> 00:02:21.063
+And the ends.
+
+00:02:21.731 --> 00:02:24.356
+For large x, the x cubed term wins,
+
+00:02:24.758 --> 00:02:26.440
+so the curve heads up on the right,
+
+00:02:26.762 --> 00:02:27.783
+and down on the left.
+
+00:02:28.548 --> 00:02:31.264
+Label every feature, and only one shape fits.
+
+00:02:31.927 --> 00:02:32.847
+That's the whole checklist:
+
+00:02:33.549 --> 00:02:33.948
+domain,
+
+00:02:34.490 --> 00:02:34.929
+symmetry,
+
+00:02:35.551 --> 00:02:37.332
+intercepts, stationary points,
+
+00:02:37.913 --> 00:02:39.274
+concavity and inflections,
+
+00:02:39.976 --> 00:02:42.417
+asymptotes and other breaks, and what happens as
+
+00:02:42.678 --> 00:02:43.779
+x heads off to infinity.
+
+00:02:44.642 --> 00:02:47.310
+For a polynomial, the domain and asymptote checks
+
+00:02:47.351 --> 00:02:47.972
+take one line.
+
+00:02:48.657 --> 00:02:49.964
+The next curve needs all seven.
+
+00:02:50.649 --> 00:02:53.424
+Sketch y equals x plus one over x.
+
+00:02:54.314 --> 00:02:54.923
+Domain first.
+
+00:02:55.550 --> 00:02:57.437
+x can't be zero, so the graph has
+
+00:02:57.478 --> 00:02:59.485
+a gap there, and comes in two separate
+
+00:02:59.506 --> 00:02:59.807
+pieces.
+
+00:03:00.671 --> 00:03:01.111
+It's odd,
+
+00:03:01.654 --> 00:03:04.241
+since f of minus x is minus f
+
+00:03:04.282 --> 00:03:04.562
+of x.
+
+00:03:05.486 --> 00:03:07.953
+There are no intercepts, because x plus one
+
+00:03:08.114 --> 00:03:10.682
+over x equals zero would need x squared
+
+00:03:10.803 --> 00:03:11.665
+equals minus one.
+
+00:03:12.910 --> 00:03:15.797
+f prime of x is x squared minus
+
+00:03:15.918 --> 00:03:17.181
+one, over x squared,
+
+00:03:17.804 --> 00:03:19.989
+which is zero at one and minus one.
+
+00:03:21.215 --> 00:03:23.808
+f double prime is two over x cubed.
+
+00:03:24.613 --> 00:03:27.301
+At one it's positive, so one, two is
+
+00:03:27.322 --> 00:03:27.903
+a local minimum.
+
+00:03:28.526 --> 00:03:31.035
+At minus one it's negative, so minus one,
+
+00:03:31.357 --> 00:03:33.163
+minus two is a local maximum.
+
+00:03:34.415 --> 00:03:36.858
+Two over x cubed is negative on the
+
+00:03:36.919 --> 00:03:39.423
+left and positive on the right, so the
+
+00:03:39.464 --> 00:03:41.887
+concavity does change across zero.
+
+00:03:42.429 --> 00:03:44.738
+But zero isn't in the domain, so there's
+
+00:03:44.760 --> 00:03:47.109
+no point there, and no inflection.
+
+00:03:48.233 --> 00:03:50.437
+As x gets close to zero from the
+
+00:03:50.538 --> 00:03:53.763
+right, one over x grows without limit, so
+
+00:03:53.784 --> 00:03:54.565
+f heads up.
+
+00:03:55.150 --> 00:03:56.723
+From the left, it heads down.
+
+00:03:57.187 --> 00:04:00.176
+So x equals zero is a vertical asymptote.
+
+00:04:00.919 --> 00:04:03.343
+And as x gets large, one over x
+
+00:04:03.444 --> 00:04:06.129
+shrinks towards zero, so the curve gets closer
+
+00:04:06.170 --> 00:04:07.972
+to the line y equals x.
+
+00:04:08.596 --> 00:04:10.386
+Now go the other way, from a graph
+
+00:04:10.408 --> 00:04:11.614
+of f with no formula.
+
+00:04:12.338 --> 00:04:13.903
+f prime is the gradient of f.
+
+00:04:14.749 --> 00:04:16.386
+Line the graphs up, one under the other.
+
+00:04:16.990 --> 00:04:19.662
+Where f turns, the tangent is flat, so
+
+00:04:19.783 --> 00:04:21.008
+f prime is zero.
+
+00:04:21.551 --> 00:04:22.473
+Where f rises,
+
+00:04:22.976 --> 00:04:24.461
+f prime is above the axis.
+
+00:04:25.005 --> 00:04:26.401
+Where f falls, it's below.
+
+00:04:27.026 --> 00:04:28.772
+And f is falling most steeply at the
+
+00:04:28.833 --> 00:04:30.981
+origin, so that's the lowest point on f
+
+00:04:31.283 --> 00:04:31.563
+prime.
+
+00:04:32.429 --> 00:04:33.059
+Now do it again.
+
+00:04:33.748 --> 00:04:35.374
+f double prime is the gradient of f
+
+00:04:35.736 --> 00:04:36.037
+prime.
+
+00:04:36.700 --> 00:04:39.303
+f prime falls until x equals zero, then
+
+00:04:39.364 --> 00:04:42.067
+rises, so f double prime is negative, then
+
+00:04:42.169 --> 00:04:45.072
+positive, crossing zero right under the inflection.
+
+00:04:45.656 --> 00:04:46.322
+Back to the video.
+
+00:04:46.986 --> 00:04:49.454
+Daily views are the gradient of the total.
+
+00:04:50.258 --> 00:04:52.443
+At launch the total is nearly flat, so
+
+00:04:52.544 --> 00:04:54.007
+daily views start near zero.
+
+00:04:54.750 --> 00:04:57.221
+The total is steepest on day three, so
+
+00:04:57.262 --> 00:04:59.070
+that's the busiest day for new views.
+
+00:04:59.975 --> 00:05:02.644
+After that it still rises, but less steeply,
+
+00:05:02.906 --> 00:05:05.033
+so daily views fall away in a long
+
+00:05:05.095 --> 00:05:05.355
+tail.
+
+00:05:06.119 --> 00:05:08.169
+And day three is where the total switches
+
+00:05:08.270 --> 00:05:10.340
+from concave up to concave down.
+
+00:05:11.165 --> 00:05:12.931
+The busiest day is the inflection.
+
+00:05:13.737 --> 00:05:14.441
+Here's a new graph.
+
+00:05:15.106 --> 00:05:17.734
+At x equals three it turns, so f
+
+00:05:17.835 --> 00:05:20.243
+prime crosses the axis there, from negative to
+
+00:05:20.284 --> 00:05:20.644
+positive.
+
+00:05:21.368 --> 00:05:24.095
+But at the origin, the curve flattens and
+
+00:05:24.157 --> 00:05:24.898
+keeps falling.
+
+00:05:25.400 --> 00:05:27.525
+The tangent is flat, so f prime is
+
+00:05:27.566 --> 00:05:29.811
+zero, but its sign doesn't change.
+
+00:05:30.415 --> 00:05:32.325
+The graph of f prime touches the axis
+
+00:05:32.547 --> 00:05:33.491
+and goes back down.
+
+00:05:33.995 --> 00:05:35.753
+That's a horizontal point of inflection.
+
+00:05:36.660 --> 00:05:38.607
+The curve also changes its bend at x
+
+00:05:38.648 --> 00:05:40.556
+equals two, while it's still falling.
+
+00:05:41.140 --> 00:05:43.119
+There, f prime has a turning point.
+
+00:05:43.644 --> 00:05:45.417
+It also turns at zero, where it touches.
+
+00:05:45.962 --> 00:05:48.330
+So f double prime crosses zero at both
+
+00:05:48.392 --> 00:05:48.652
+points.
+
+00:05:49.370 --> 00:05:51.024
+Turns drop to zeros.
+
+00:05:51.809 --> 00:05:54.491
+Every turning point on one graph sits directly
+
+00:05:54.572 --> 00:05:56.553
+above a zero on the next graph down.
+
+00:05:57.296 --> 00:05:59.545
+A zero that crosses means a turn above
+
+00:05:59.566 --> 00:05:59.625
+it.
+
+00:06:00.309 --> 00:06:02.751
+A zero that only touches means a flat
+
+00:06:02.812 --> 00:06:03.952
+point that doesn't turn.
+
+00:06:04.615 --> 00:06:06.704
+This works on any smooth piece of curve.
+
+00:06:09.339 --> 00:06:09.784
+Your turn.
+
+00:06:10.475 --> 00:06:12.835
+For f of x equals x minus four
+
+00:06:12.876 --> 00:06:13.356
+over x,
+
+00:06:13.957 --> 00:06:15.617
+state the domain and the symmetry,
+
+00:06:16.298 --> 00:06:18.058
+show that there are no stationary points,
+
+00:06:18.699 --> 00:06:20.499
+and decide whether the curve has a point
+
+00:06:20.580 --> 00:06:21.220
+of inflection.
+
+00:06:21.884 --> 00:06:22.709
+Pause here to answer.
+
+00:06:33.615 --> 00:06:35.886
+The domain is x not equal to zero,
+
+00:06:36.470 --> 00:06:37.333
+and f is odd.
+
+00:06:38.258 --> 00:06:40.659
+f prime of x is one plus four
+
+00:06:40.820 --> 00:06:43.582
+over x squared, which is always positive, so
+
+00:06:43.623 --> 00:06:45.904
+the curve rises on each piece and never
+
+00:06:45.945 --> 00:06:46.264
+turns.
+
+00:06:47.109 --> 00:06:49.382
+f double prime is minus eight over x
+
+00:06:49.483 --> 00:06:49.885
+cubed.
+
+00:06:50.469 --> 00:06:52.857
+It changes sign across zero, but zero isn't
+
+00:06:52.938 --> 00:06:53.499
+in the domain.
+
+00:06:54.083 --> 00:06:55.732
+No point, so no inflection.
+
+00:06:57.389 --> 00:06:57.798
+Last one.
+
+00:06:58.586 --> 00:07:00.540
+The graph of y equals f of x
+
+00:07:00.761 --> 00:07:01.124
+is shown.
+
+00:07:02.286 --> 00:07:04.128
+Where is f prime of x equal to
+
+00:07:04.168 --> 00:07:04.508
+zero,
+
+00:07:05.309 --> 00:07:07.111
+and does the graph of f prime cross
+
+00:07:07.251 --> 00:07:08.873
+or touch the axis at each one?
+
+00:07:09.896 --> 00:07:12.022
+Then, where does the graph of f prime
+
+00:07:12.102 --> 00:07:13.206
+have its turning points?
+
+00:07:14.110 --> 00:07:14.978
+Pause here to answer.
+
+00:07:25.648 --> 00:07:28.133
+f is flat at minus one and at
+
+00:07:28.215 --> 00:07:30.660
+two, so f prime is zero there.
+
+00:07:31.463 --> 00:07:33.787
+At minus one, f turns from falling to
+
+00:07:33.869 --> 00:07:35.912
+rising, so f prime crosses.
+
+00:07:36.836 --> 00:07:39.983
+At two, f flattens but keeps rising, so
+
+00:07:40.124 --> 00:07:41.246
+f prime only touches.
+
+00:07:42.350 --> 00:07:44.575
+f prime turns where f changes its bend,
+
+00:07:44.997 --> 00:07:46.320
+at zero and at two.
+
+00:07:47.124 --> 00:07:49.657
+And f crossing the axis at zero doesn't
+
+00:07:49.698 --> 00:07:51.044
+make f prime zero there.
+
+00:07:52.727 --> 00:07:54.869
+So a sketch is a set of constraints,
+
+00:07:55.290 --> 00:07:57.112
+and the derivatives supply most of them.
+
+00:07:57.876 --> 00:07:59.867
+Next, you build the function yourself, from a
+
+00:07:59.929 --> 00:08:00.753
+real situation.
+
+00:08:01.578 --> 00:08:03.825
+Forty metres of fencing make three sides of
+
+00:08:03.866 --> 00:08:05.751
+a sheep pen, against a stone wall.
+
+00:08:06.294 --> 00:08:08.224
+Which shape gives the largest area?
+
+00:08:10.917 --> 00:08:11.785
+Here are the key notes.
+
+00:08:12.352 --> 00:08:13.785
+Pause the video if you need more time
+
+00:08:13.826 --> 00:08:14.290
+to copy them.

@@ -1,0 +1,205 @@
+{
+  "id": "chem-y11-m4-v02",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "173b6ac3baa22fe6428f0eb42c821d36c16760e085504315b4e7c6507838754b",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Here's the can of water from last time. It warmed by eleven point seven degrees. To turn that into joules, start with a prediction. Suppose the can held twice as much water, four hundred grams, and it received exactly the same heat. Would it warm by eleven point seven degrees, by about twice as much, or by about half?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "heat-vs-temperature",
+      "title": "heat is not temperature",
+      "voiceover": {
+        "text": "About half. The same energy, shared among twice as many particles, gives each one only about half as much extra. That's the difference between heat and temperature. Heat is energy transferred because of a temperature difference. Temperature is how hot something is, and it depends on the average energy of the particles. So the rise depends on how much heat went in, and on how much stuff it had to warm."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "specific-heat",
+      "title": "specific heat capacity",
+      "voiceover": {
+        "text": "It also depends on what the stuff is. Specific heat capacity, c, is the energy needed to warm one gram of a substance by one degree. For water it's four point one eight joules per gram per degree. Copper needs only about zero point three nine joules. The data sheet writes water's value per kilogram, four point one eight times ten to the three joules per kilogram per kelvin. That's the same value, written per gram."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "build-formula",
+      "title": "building q = mcΔT",
+      "voiceover": {
+        "text": "Now build the formula. One gram of water, warmed by one degree, takes four point one eight joules. Two hundred grams takes two hundred times as much. And warming it by eleven point seven degrees takes eleven point seven times that again. So the heat is the mass, times the specific heat capacity, times the temperature change. q equals m c delta T."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "temperature-change",
+      "title": "the temperature change",
+      "voiceover": {
+        "text": "Delta T is the final temperature minus the starting temperature. A change of one degree Celsius is the same size as a change of one kelvin, so you don't convert a temperature change. Here it's thirty-one point two minus nineteen point five, which is eleven point seven. And if the temperature falls, delta T comes out negative."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "burner-calculation",
+      "title": "the burner calculation",
+      "voiceover": {
+        "text": "So here's the calculation. This can is a simple calorimeter, a container for measuring the heat of a reaction from the temperature change of a liquid. The water's mass is two hundred point zero grams, c is four point one eight, and delta T is eleven point seven. Two hundred times four point one eight times eleven point seven gives nine thousand seven hundred and eighty-one joules. Divide by a thousand, and that's nine point seven eight kilojoules."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "whose-mass",
+      "title": "whose mass?",
+      "voiceover": {
+        "text": "Which mass goes in the formula? It's the mass of whatever warmed up and was measured, here the water. Not the fuel. The ethanol is the energy source, and it burned away. Put in the fuel's mass, zero point seven two grams, and you'd get about thirty-five joules, which is nowhere near right. And use c for the same material that you weighed, here water."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "foam-cup",
+      "title": "a foam cup calorimeter",
+      "voiceover": {
+        "text": "Now a different calorimeter, a foam cup. Fifty millilitres of hydrochloric acid and fifty millilitres of sodium hydroxide solution are mixed, and the temperature rises from twenty-one point four to twenty-eight point zero degrees. Both solutions warm up, so m is the whole mixture, a hundred millilitres, taken as a hundred grams. That's two assumptions. The solution has the density of water, and it has the specific heat capacity of water."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "foam-cup-calculation",
+      "title": "the foam cup calculation",
+      "voiceover": {
+        "text": "Delta T is six point six degrees. So q is a hundred times four point one eight times six point six, which is two thousand seven hundred and fifty-nine joules, or two point seven six kilojoules. Using only fifty grams, the acid on its own, would halve the answer, because the base warmed up too."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "containers",
+      "title": "why these containers",
+      "voiceover": {
+        "text": "The copper can sits over a flame, and copper conducts heat well, so heat passes quickly from the flame into the water. The foam cup holds a reaction that happens in the liquid itself, and foam insulates, so less heat escapes through its walls. Each one is trying to get as much of the heat as possible into the liquid we're measuring."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "surroundings-sign",
+      "title": "q is the surroundings' heat",
+      "voiceover": {
+        "text": "So what does q actually measure? It's the heat gained by the water, the surroundings. It's positive, because the water warmed up. The reaction lost that energy, so from the system's point of view, the heat change is the same size with the opposite sign, minus nine point seven eight kilojoules for the burner. That's why delta H will come out negative. To get delta H, we'll also need to divide by the moles that reacted, and that's the next step."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "assumptions",
+      "title": "the big assumption",
+      "voiceover": {
+        "text": "All of this rests on one big assumption. All the heat from the reaction went into the liquid. None went into the can or the cup, and none escaped into the air. For the foam cup, we also assumed the mixture behaves like water. Whenever heat escapes, the water warms less, so q comes out too small."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "the stuff that warmed",
+      "voiceover": {
+        "text": "Here's the rule to remember. Mass, c and delta T, all from the stuff that warmed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A spirit burner heats two hundred and fifty grams of water in a copper can from eighteen point six to twenty-seven point four degrees. During the experiment, the burner's mass falls by zero point six zero grams. Calculate the heat absorbed by the water, in kilojoules. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Delta T is twenty-seven point four minus eighteen point six, eight point eight. Then q is two hundred and fifty times four point one eight times eight point eight, nine thousand one hundred and ninety-six joules, or nine point two zero kilojoules. The zero point six zero grams is the fuel, so it doesn't go in the formula."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Thirty millilitres of one mole per litre hydrochloric acid is mixed with thirty millilitres of one mole per litre sodium hydroxide solution in a foam cup, and the temperature rises from twenty point eight to twenty-seven point four degrees. Calculate the heat absorbed by the solution, then state the heat change of the reaction, with its sign. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The sixty millilitre mixture has a mass of sixty grams. Delta T is six point six. So q is sixty times four point one eight times six point six, about one thousand six hundred and fifty-five joules, or one point six six kilojoules. The reaction released that heat, so its heat change is minus one point six six kilojoules. Using thirty grams would leave out half the mixture."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So a calorimeter turns a temperature rise into heat with q equals m c delta T, using the mass, specific heat capacity and temperature change of the material that warmed. But here's a puzzle. The burner lost zero point seven two grams of ethanol. Burning that much ethanol can release about twenty-one kilojoules, yet the water gained only nine point seven eight. Where did the rest go?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

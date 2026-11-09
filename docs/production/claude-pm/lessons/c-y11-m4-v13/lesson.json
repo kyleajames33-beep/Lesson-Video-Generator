@@ -1,0 +1,165 @@
+{
+  "id": "chem-y11-m4-v13",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ec9a01d8f86cd6485125b258cd89147651b7b26838ba3d89a1f7c0edc77e7494",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Here's the ammonia reaction again. Its heat release helps, by raising the entropy of the surroundings. Its own entropy loss hurts. At twenty-five degrees, under standard conditions, which one wins? Does this reaction tend to go by itself, yes or no?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "spontaneous-defined",
+      "title": "what spontaneous means",
+      "voiceover": {
+        "text": "First, let's name what we're asking. A spontaneous change is one that, under the stated conditions, tends to happen by itself, without being forced by something like electricity. It may need a start, and it may be slow. Ice melting at twenty-five degrees is spontaneous. Water splitting into hydrogen and oxygen is non-spontaneous. It only happens while electricity keeps flowing, and it stops when you switch off."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-t-delta-s",
+      "title": "why temperature multiplies entropy",
+      "voiceover": {
+        "text": "Last time we saw that a change goes by itself only if the total entropy, of the system plus the surroundings, goes up. The system's part is delta S. The surroundings' part comes from the heat. And here's where temperature matters. The same heat makes a bigger difference to cold surroundings, which have little energy to share, than to hot surroundings, which already have plenty. Put the two parts together, write them in energy units, and you get the Gibbs free energy change: delta G equals delta H minus T delta S."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "signs-and-units",
+      "title": "reading delta G and the units",
+      "voiceover": {
+        "text": "The sign tells you the answer. If delta G is negative, the total entropy rises, and the change is spontaneous. If it's positive, the change is non-spontaneous, and the reverse is spontaneous instead. At zero, neither direction is favoured. The little circle means standard conditions, at the stated temperature. Watch the units. Delta H is in kilojoules per mole. Delta S is in joules, so divide it by a thousand. And T must be in kelvin, so add two hundred and seventy-three."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ammonia-298",
+      "title": "ammonia at twenty-five degrees",
+      "voiceover": {
+        "text": "Now ammonia at twenty-five degrees. Delta H is minus ninety-one point eight kilojoules. Delta S is minus one hundred and ninety-eight point one joules, which is minus zero point one nine eight one kilojoules per kelvin. T is two hundred and ninety-eight kelvin. T delta S is two hundred and ninety-eight times minus zero point one nine eight one, minus fifty-nine point zero. So delta G is minus ninety-one point eight, minus minus fifty-nine point zero, which is minus thirty-two point eight kilojoules per mole. Negative, so yes, it's spontaneous. At this temperature, the heat release wins."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "unit-traps",
+      "title": "the two unit traps",
+      "voiceover": {
+        "text": "Two traps. Forget to divide delta S by a thousand, and you'd get plus fifty-eight thousand nine hundred and forty-two, which says non-spontaneous and is completely wrong. Use twenty-five degrees instead of two hundred and ninety-eight kelvin, and you'd get minus eighty-six point eight, the right sign but the wrong number. Convert both before you substitute."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "not-fast",
+      "title": "spontaneous is not fast",
+      "voiceover": {
+        "text": "So here's the surprise. Mix nitrogen and hydrogen at twenty-five degrees, and you can wait for years without making any ammonia you could measure. Spontaneous doesn't mean fast. Breaking nitrogen's strong triple bond gives this reaction a very high activation energy, so almost no collisions succeed. Methane and air are the same. Burning is spontaneous, but a Bunsen burner still needs a spark. Delta G tells you whether a reaction can go. Activation energy tells you how fast."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "limestone-298",
+      "title": "limestone at twenty-five degrees",
+      "voiceover": {
+        "text": "Now a reaction that absorbs heat. Limestone, calcium carbonate, can break down into lime and carbon dioxide gas. Delta H is plus one hundred and seventy-eight point three kilojoules, and delta S is plus one hundred and sixty point six joules per kelvin, which is plus zero point one six zero six kilojoules. At two hundred and ninety-eight kelvin, T delta S is forty-seven point nine. So delta G is plus one hundred and seventy-eight point three minus forty-seven point nine, plus one hundred and thirty point four kilojoules. Positive, so it's non-spontaneous. The entropy gain helps, but at this temperature it's far too small."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "can go, how fast",
+      "voiceover": {
+        "text": "Here's the pair to remember. Negative delta G says it can go. Activation energy says how fast."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Water splits into hydrogen and oxygen gases. Delta H is plus five hundred and seventy-one point seven kilojoules, and delta S is plus three hundred and twenty-six point six joules per kelvin. Calculate delta G at twenty-five degrees, and classify the reaction. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Delta S is zero point three two six six kilojoules, and T is two hundred and ninety-eight kelvin. T delta S is ninety-seven point three. So delta G is five hundred and seventy-one point seven minus ninety-seven point three, about plus four hundred and seventy-four kilojoules per mole. Positive, so non-spontaneous. Forgetting to divide by a thousand gives about minus ninety-seven thousand, which wrongly says spontaneous."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Hydrogen peroxide decomposes into water and oxygen. Delta H is minus one hundred and ninety-six point one kilojoules, and delta S is plus one hundred and twenty-six point zero joules per kelvin. Calculate delta G at twenty-five degrees. Then explain why a bottle of hydrogen peroxide can still be stored for months. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "T delta S is two hundred and ninety-eight times zero point one two six, thirty-seven point five. So delta G is minus one hundred and ninety-six point one minus thirty-seven point five, about minus two hundred and thirty-four kilojoules. It's spontaneous, but the activation energy is high, so it's very slow, until a catalyst speeds it up. Saying it must decompose quickly confuses spontaneous with fast."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So enthalpy, entropy and temperature combine in delta G equals delta H minus T delta S, and its sign at the stated temperature decides whether a change is spontaneous. Limestone is non-spontaneous at twenty-five degrees. But lime kilns turn limestone into lime every day. Its delta S is positive, so as T gets bigger, minus T delta S gets more negative. Hot enough, could delta G turn negative?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

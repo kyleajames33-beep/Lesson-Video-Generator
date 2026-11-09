@@ -1,0 +1,154 @@
+{
+  "id": "math-a12-d16",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "2f41d64567e8faab63d4e8512a90f0f3af061ddc48bb08f272affdec329ea6f8",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: same gradient, different bend; a vase that fills",
+      "voiceover": {
+        "text": "Last video ended here. On the left of the join, the gradient goes minus one, zero, one, and keeps rising, so the curve bends upward. On the right, it stays at two, and the line doesn't bend at all. So the bend comes from how the gradient changes. Now fill this vase from a tap, at a steady rate. The water level rises fast in the narrow base, slowly through the wide middle, then fast again in the narrow neck. So its graph bends down, then up. Where does the bend switch, and how do we measure it?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "the gradient of the gradient",
+      "voiceover": {
+        "text": "Here's a formula that bends both ways too: y equals x cubed, minus six x squared, plus nine x. Its derivative, f prime, is a function in its own right. It gives the gradient at every x, so we can differentiate it again. The result is called the second derivative. It's written f double prime of x, or d two y by d x squared, or y double prime. Here, f prime of x is three x squared, minus twelve x, plus nine. Differentiate again, and f double prime of x is six x minus twelve. It tells us how fast the gradient is changing, and in which direction."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "how the gradient changes the bend",
+      "voiceover": {
+        "text": "Watch the tangent ride along the curve, with the gradient graph underneath. On the left, the gradient is falling, so the tangent keeps turning clockwise, and the curve bends down. That's called concave down. The curve sits below its tangents, like a cap. And concave down isn't the same as decreasing. This part rises, then falls, and it bends down the whole time. On the right, the gradient is rising, so the tangent turns anticlockwise, and the curve bends up. That's concave up. The curve sits above its tangents, like a cup. Now, f double prime is the gradient of this gradient graph. Where f prime is falling, f double prime is negative. Where f prime is rising, it's positive. So f double prime greater than zero means concave up, and less than zero means concave down."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "where the bend switches",
+      "voiceover": {
+        "text": "At x equals two, the gradient stops falling and starts rising. Its lowest value is minus three, right here. So the curve switches from concave down to concave up. A point where the concavity changes is called a point of inflection. It's at two, and f of two is two, so the point is two, two. Notice the tangent there crosses the curve. And it isn't flat. The gradient is minus three, so this inflection isn't a stationary point. The vase works the same way. Its level rises slowest at the widest part, and that's exactly where its graph switches bend."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "zero isn't enough",
+      "voiceover": {
+        "text": "Inflection candidates are where f double prime is zero, or undefined. Here, six x minus twelve is zero at x equals two, so check that the sign really changes. f double prime of one is minus six, and f double prime of three is plus six. Minus to plus, so the concavity changes, and two, two is an inflection. So the cubic is concave down for x less than two, and concave up for x greater than two. Now compare y equals x to the fourth. f double prime is twelve x squared, which is zero at x equals zero. But it's positive on both sides. The curve is concave up all the way through, so there's no inflection at zero, even though f double prime is zero there."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the second derivative test",
+      "voiceover": {
+        "text": "The concavity also classifies stationary points. Back on our cubic, f prime is three, times x minus one, times x minus three, so the tangent is flat at one and at three. At x equals one, f double prime is minus six. The curve is concave down there, so it sits below its flat tangent, and every nearby point is lower. That's a hilltop: a local maximum, at one, four. At x equals three, f double prime is six. Concave up, so the curve sits above its flat tangent: a local minimum, at three, zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "when the test can't decide",
+      "voiceover": {
+        "text": "But if f double prime is zero at a stationary point, the test can't decide. Look at these three curves: x to the fourth, minus x to the fourth, and x cubed. All three have a flat tangent at zero, and f double prime equals zero there. Yet one is a minimum, one is a maximum, and one is neither. So fall back on the signs either side. For x to the fourth, f prime goes minus, then plus: a local minimum. For minus x to the fourth, it's plus, then minus: a local maximum. For x cubed, f double prime is six x, which changes sign at zero. So the concavity changes at a flat point. That's a horizontal point of inflection."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the signs. Positive bends up, like a cup. Negative bends down, like a cap. A cup's flat point is its bottom, a minimum. A cap's flat point is its top, a maximum. And zero means look again."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the stationary points of y equals x cubed, plus three x squared, minus nine x, and use the second derivative to determine their nature. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "y prime is three, times x plus three, times x minus one, so the stationary points are at minus three and one. y double prime is six x plus six. At minus three, it's minus twelve, so concave down: a local maximum, at minus three, twenty-seven. At one, it's twelve, so concave up: a local minimum, at one, minus five. Positive at one means a minimum, not a maximum."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find any points of inflection on the curve y equals x to the fifth, minus five x to the fourth. Justify your answer. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "y double prime is twenty x squared, times x minus three, so it's zero at zero and at three. Test the signs. At minus one, it's negative. At one, still negative. At four, positive. So the concavity changes only at three, and the only point of inflection is three, minus one hundred and sixty-two. Zero isn't one, because the sign doesn't change there."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So now we have three graphs that work together: the curve itself, its gradient f prime, and the second derivative, f double prime. Their signs tell you where the curve rises, where it falls, and which way it bends. For our cubic, f prime is zero at one and three, the turning points, and f double prime changes sign at two, the inflection. Next: put all three together, to sketch a whole curve."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

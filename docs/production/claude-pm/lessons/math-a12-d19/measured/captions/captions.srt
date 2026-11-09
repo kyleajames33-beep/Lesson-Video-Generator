@@ -1,0 +1,807 @@
+1
+00:00:00,282 --> 00:00:01,529
+Last video ended here.
+
+2
+00:00:02,212 --> 00:00:04,256
+A thirty thousand dollar car loses value at
+
+3
+00:00:04,357 --> 00:00:06,802
+fifteen percent of its current value each year.
+
+4
+00:00:07,504 --> 00:00:09,728
+Right now, fifteen percent of thirty thousand is
+
+5
+00:00:09,889 --> 00:00:12,353
+four thousand five hundred, so it's losing four
+
+6
+00:00:12,394 --> 00:00:13,756
+thousand five hundred dollars a year.
+
+7
+00:00:14,440 --> 00:00:15,545
+But the rate doesn't stay put.
+
+8
+00:00:16,230 --> 00:00:18,634
+When the car is worth fifteen thousand, fifteen
+
+9
+00:00:18,675 --> 00:00:20,597
+percent of that is two thousand two hundred
+
+10
+00:00:20,618 --> 00:00:22,962
+and fifty, so it's losing value half as
+
+11
+00:00:23,003 --> 00:00:23,322
+fast.
+
+12
+00:00:24,088 --> 00:00:25,620
+Half the value, half the rate.
+
+13
+00:00:26,508 --> 00:00:29,162
+So what curve flattens exactly in step with
+
+14
+00:00:29,203 --> 00:00:29,604
+its height?
+
+15
+00:00:30,369 --> 00:00:32,338
+And what's the car worth after eight years?
+
+16
+00:00:33,015 --> 00:00:34,720
+When a rate of change is always the
+
+17
+00:00:34,761 --> 00:00:36,987
+same multiple of the amount, we say the
+
+18
+00:00:37,028 --> 00:00:38,994
+rate is proportional to the amount.
+
+19
+00:00:39,798 --> 00:00:40,505
+Watch what that does.
+
+20
+00:00:41,350 --> 00:00:43,900
+A lower point gets a gentler tangent, so
+
+21
+00:00:43,941 --> 00:00:45,587
+the curve flattens as it falls.
+
+22
+00:00:46,491 --> 00:00:49,138
+For a quantity Q changing over time t,
+
+23
+00:00:49,581 --> 00:00:52,188
+the rule is d Q d t equals
+
+24
+00:00:52,329 --> 00:00:52,850
+k Q.
+
+25
+00:00:53,693 --> 00:00:56,462
+The number k is the constant of proportionality.
+
+26
+00:00:57,246 --> 00:00:59,851
+For the car, k is minus point one
+
+27
+00:00:59,932 --> 00:01:00,232
+five,
+
+28
+00:01:00,774 --> 00:01:03,520
+and its unit is per year, because dollars
+
+29
+00:01:03,541 --> 00:01:06,527
+per year divided by dollars leaves per year.
+
+30
+00:01:07,350 --> 00:01:10,195
+If k is negative, a positive quantity shrinks,
+
+31
+00:01:10,677 --> 00:01:12,420
+and more slowly as it gets smaller.
+
+32
+00:01:13,223 --> 00:01:16,230
+If k is positive, it grows, and faster
+
+33
+00:01:16,492 --> 00:01:17,092
+as it gets bigger.
+
+34
+00:01:17,798 --> 00:01:18,829
+Here's a curve that fits.
+
+35
+00:01:19,436 --> 00:01:21,992
+Q equals A, times e to the k
+
+36
+00:01:22,053 --> 00:01:22,314
+t.
+
+37
+00:01:22,960 --> 00:01:24,271
+Let's check it by substitution.
+
+38
+00:01:25,017 --> 00:01:27,201
+From earlier, the derivative of e to the
+
+39
+00:01:27,242 --> 00:01:29,866
+k t is k, times e to the
+
+40
+00:01:29,887 --> 00:01:30,407
+k t.
+
+41
+00:01:31,009 --> 00:01:33,452
+So d Q d t is A times
+
+42
+00:01:33,554 --> 00:01:35,837
+k, e to the k t, which is
+
+43
+00:01:35,918 --> 00:01:37,940
+k, times A e to the k t.
+
+44
+00:01:38,583 --> 00:01:40,289
+And A e to the k t is
+
+45
+00:01:40,410 --> 00:01:43,100
+Q itself, so d Q d t equals
+
+46
+00:01:43,242 --> 00:01:43,783
+k Q.
+
+47
+00:01:44,489 --> 00:01:45,979
+That works for any A.
+
+48
+00:01:46,907 --> 00:01:49,031
+At t equals zero, e to the zero
+
+49
+00:01:49,172 --> 00:01:50,835
+is one, so Q is A.
+
+50
+00:01:52,040 --> 00:01:53,445
+A is the starting value.
+
+51
+00:01:54,209 --> 00:01:56,774
+For the car, A is thirty thousand and
+
+52
+00:01:56,835 --> 00:01:59,039
+k is minus point one five.
+
+53
+00:01:59,862 --> 00:02:02,085
+After eight years, it's worth thirty thousand e
+
+54
+00:02:02,446 --> 00:02:04,810
+to the minus one point two, about nine
+
+55
+00:02:04,831 --> 00:02:06,112
+thousand and thirty-six dollars.
+
+56
+00:02:06,921 --> 00:02:09,711
+Savings follow the same rule, with k positive.
+
+57
+00:02:10,473 --> 00:02:12,438
+Five thousand dollars earning six percent of its
+
+58
+00:02:12,498 --> 00:02:14,883
+current value a year, added continuously,
+
+59
+00:02:15,404 --> 00:02:17,749
+is five thousand e to the point zero
+
+60
+00:02:17,829 --> 00:02:18,291
+six t.
+
+61
+00:02:19,352 --> 00:02:22,176
+After eight years, that's five thousand e to
+
+62
+00:02:22,196 --> 00:02:23,137
+the point four eight,
+
+63
+00:02:23,797 --> 00:02:25,660
+about eight thousand and eighty dollars.
+
+64
+00:02:26,429 --> 00:02:27,293
+Now the shapes.
+
+65
+00:02:27,938 --> 00:02:30,414
+Take A equals two, and change k.
+
+66
+00:02:31,240 --> 00:02:34,035
+With k positive, the curve climbs ever more
+
+67
+00:02:34,097 --> 00:02:34,498
+steeply.
+
+68
+00:02:35,202 --> 00:02:37,749
+Turn k down through zero, and it becomes
+
+69
+00:02:37,770 --> 00:02:40,859
+a flat line, then falls, flattening out as
+
+70
+00:02:40,920 --> 00:02:41,320
+it drops.
+
+71
+00:02:41,963 --> 00:02:44,347
+That decay curve gets closer and closer to
+
+72
+00:02:44,388 --> 00:02:46,992
+the t axis, but never reaches it, because
+
+73
+00:02:47,013 --> 00:02:48,795
+e to any power is positive.
+
+74
+00:02:49,297 --> 00:02:52,375
+So Q equals zero is a horizontal asymptote.
+
+75
+00:02:52,999 --> 00:02:55,345
+For growth, the same thing happens going back
+
+76
+00:02:55,406 --> 00:02:55,827
+in time.
+
+77
+00:02:56,911 --> 00:02:58,277
+Now make A negative.
+
+78
+00:02:59,062 --> 00:03:01,627
+Every value changes sign, so the graph reflects
+
+79
+00:03:01,769 --> 00:03:02,570
+in the t axis.
+
+80
+00:03:03,132 --> 00:03:05,117
+It still obeys d Q d t equals
+
+81
+00:03:05,178 --> 00:03:07,162
+k Q, with the same asymptote.
+
+82
+00:03:07,564 --> 00:03:10,053
+But money or mass can't be negative, so
+
+83
+00:03:10,195 --> 00:03:12,564
+models use a positive A, and t from
+
+84
+00:03:12,625 --> 00:03:13,086
+zero on.
+
+85
+00:03:13,548 --> 00:03:16,015
+Often k isn't given, so we find it
+
+86
+00:03:16,056 --> 00:03:16,597
+from data.
+
+87
+00:03:17,140 --> 00:03:19,107
+A town had ten thousand people in twenty
+
+88
+00:03:19,149 --> 00:03:21,538
+ten, and twelve thousand in twenty fifteen.
+
+89
+00:03:22,221 --> 00:03:24,627
+Assuming the growth is proportional, when will it
+
+90
+00:03:24,668 --> 00:03:25,871
+reach twenty thousand?
+
+91
+00:03:26,614 --> 00:03:28,683
+Let t be the years after twenty ten,
+
+92
+00:03:29,006 --> 00:03:30,552
+so A is ten thousand.
+
+93
+00:03:31,276 --> 00:03:34,202
+At t equals five, twelve thousand equals ten
+
+94
+00:03:34,243 --> 00:03:35,826
+thousand e to the five k.
+
+95
+00:03:36,509 --> 00:03:38,598
+Divide by ten thousand, so e to the
+
+96
+00:03:38,639 --> 00:03:40,266
+five k is one point two.
+
+97
+00:03:40,991 --> 00:03:42,708
+Take the natural log of both sides.
+
+98
+00:03:43,392 --> 00:03:45,454
+Five k is the natural log of one
+
+99
+00:03:45,495 --> 00:03:46,075
+point two,
+
+100
+00:03:46,617 --> 00:03:48,619
+so k is the natural log of one
+
+101
+00:03:48,660 --> 00:03:50,021
+point two, over five,
+
+102
+00:03:50,563 --> 00:03:53,145
+about point zero three six five per year.
+
+103
+00:03:53,856 --> 00:03:55,890
+Now set P to twenty thousand.
+
+104
+00:03:56,515 --> 00:03:58,942
+Dividing by ten thousand gives e to the
+
+105
+00:03:58,983 --> 00:04:00,246
+k t equals two.
+
+106
+00:04:01,030 --> 00:04:02,756
+So k t is the natural log of
+
+107
+00:04:02,797 --> 00:04:02,997
+two,
+
+108
+00:04:03,620 --> 00:04:05,587
+and t is the natural log of two,
+
+109
+00:04:05,889 --> 00:04:06,270
+over k.
+
+110
+00:04:07,093 --> 00:04:09,136
+That's five times the natural log of two,
+
+111
+00:04:09,618 --> 00:04:11,400
+over the natural log of one point two,
+
+112
+00:04:12,002 --> 00:04:13,664
+about nineteen point zero years.
+
+113
+00:04:14,607 --> 00:04:14,766
+So,
+
+114
+00:04:15,309 --> 00:04:18,214
+if the growth stays proportional, the population reaches
+
+115
+00:04:18,275 --> 00:04:20,520
+twenty thousand during twenty twenty-nine.
+
+116
+00:04:21,343 --> 00:04:24,190
+Keep k exact until the end, so rounding
+
+117
+00:04:24,231 --> 00:04:24,772
+doesn't creep in.
+
+118
+00:04:25,481 --> 00:04:27,889
+Decay works the same way, with k negative.
+
+119
+00:04:28,612 --> 00:04:31,141
+A substance has a half-life of twelve years.
+
+120
+00:04:31,704 --> 00:04:33,952
+That means every twelve years, the amount halves.
+
+121
+00:04:34,615 --> 00:04:35,884
+Start with two hundred grams.
+
+122
+00:04:36,386 --> 00:04:38,450
+After twelve years there are a hundred grams,
+
+123
+00:04:38,790 --> 00:04:41,195
+so a hundred equals two hundred e to
+
+124
+00:04:41,215 --> 00:04:41,857
+the twelve k.
+
+125
+00:04:42,619 --> 00:04:44,483
+That gives e to the twelve k equals
+
+126
+00:04:44,525 --> 00:04:44,965
+a half,
+
+127
+00:04:45,467 --> 00:04:47,713
+so twelve k is the natural log of
+
+128
+00:04:47,754 --> 00:04:49,979
+a half, which is minus the natural log
+
+129
+00:04:50,000 --> 00:04:50,340
+of two.
+
+130
+00:04:51,104 --> 00:04:52,947
+So k is minus the natural log of
+
+131
+00:04:53,048 --> 00:04:54,089
+two, over twelve,
+
+132
+00:04:54,672 --> 00:04:56,315
+and that minus sign is the decay.
+
+133
+00:04:57,255 --> 00:04:59,577
+After thirty years, Q is two hundred e
+
+134
+00:04:59,917 --> 00:05:02,058
+to the thirty k, which is two hundred
+
+135
+00:05:02,118 --> 00:05:03,579
+times two to the minus two and a
+
+136
+00:05:03,619 --> 00:05:06,000
+half, about thirty-five point four grams.
+
+137
+00:05:06,635 --> 00:05:08,763
+Here's a pattern that checks answers like these.
+
+138
+00:05:09,469 --> 00:05:10,073
+Equal times,
+
+139
+00:05:10,618 --> 00:05:11,242
+equal factors.
+
+140
+00:05:11,987 --> 00:05:14,511
+In any five years, the town multiplies by
+
+141
+00:05:14,612 --> 00:05:17,357
+one point two, wherever it starts, because e
+
+142
+00:05:17,398 --> 00:05:19,401
+to the five k is one point two.
+
+143
+00:05:20,062 --> 00:05:23,543
+So ten thousand becomes twelve thousand, then fourteen
+
+144
+00:05:23,584 --> 00:05:26,345
+thousand four hundred, and so on, passing twenty
+
+145
+00:05:26,366 --> 00:05:28,126
+thousand just before twenty thirty.
+
+146
+00:05:28,868 --> 00:05:31,436
+And every twelve years, the substance halves.
+
+147
+00:05:32,139 --> 00:05:34,266
+Thirty years is two and a half half-lives,
+
+148
+00:05:34,609 --> 00:05:37,338
+so the answer sits between fifty and twenty-five
+
+149
+00:05:37,379 --> 00:05:37,699
+grams.
+
+150
+00:05:38,504 --> 00:05:40,832
+This only works while k stays constant.
+
+151
+00:05:43,462 --> 00:05:43,846
+Your turn.
+
+152
+00:05:44,531 --> 00:05:46,798
+A population of eight hundred grows at a
+
+153
+00:05:46,878 --> 00:05:49,506
+rate proportional to its size, and doubles in
+
+154
+00:05:49,586 --> 00:05:50,167
+ten years.
+
+155
+00:05:50,809 --> 00:05:53,397
+Find the exact value of k, and the
+
+156
+00:05:53,437 --> 00:05:56,345
+population after fifteen years, to the nearest whole
+
+157
+00:05:56,405 --> 00:05:56,666
+number.
+
+158
+00:05:57,187 --> 00:05:58,156
+Pause here to answer.
+
+159
+00:06:09,040 --> 00:06:12,122
+Doubling means sixteen hundred equals eight hundred e
+
+160
+00:06:12,182 --> 00:06:13,263
+to the ten k,
+
+161
+00:06:13,764 --> 00:06:15,765
+so e to the ten k is two,
+
+162
+00:06:16,285 --> 00:06:18,407
+and k is the natural log of two,
+
+163
+00:06:18,787 --> 00:06:19,287
+over ten.
+
+164
+00:06:20,288 --> 00:06:23,035
+After fifteen years, P is eight hundred times
+
+165
+00:06:23,175 --> 00:06:25,079
+two to the one and a half, about
+
+166
+00:06:25,220 --> 00:06:27,064
+two thousand two hundred and sixty-three.
+
+167
+00:06:27,686 --> 00:06:30,674
+It's not twenty-four hundred, halfway between sixteen hundred
+
+168
+00:06:30,735 --> 00:06:31,657
+and thirty-two hundred.
+
+169
+00:06:32,281 --> 00:06:33,475
+Growth isn't a straight line.
+
+170
+00:06:35,231 --> 00:06:35,634
+Last one.
+
+171
+00:06:36,519 --> 00:06:38,840
+A one hundred gram sample decays at a
+
+172
+00:06:38,941 --> 00:06:41,883
+rate proportional to its mass, with a half-life
+
+173
+00:06:41,984 --> 00:06:42,864
+of five years.
+
+174
+00:06:43,586 --> 00:06:45,327
+Find the mass after ten years,
+
+175
+00:06:45,869 --> 00:06:47,550
+and the rate of change of the mass
+
+176
+00:06:47,751 --> 00:06:49,653
+at that time, with units.
+
+177
+00:06:50,397 --> 00:06:51,724
+Pause here to answer.
+
+178
+00:07:02,355 --> 00:07:05,322
+Ten years is two half-lives, so a quarter
+
+179
+00:07:05,384 --> 00:07:06,787
+is left, twenty-five grams.
+
+180
+00:07:07,509 --> 00:07:09,773
+With k equal to minus the natural log
+
+181
+00:07:09,814 --> 00:07:12,518
+of two, over five, the rate is k
+
+182
+00:07:12,580 --> 00:07:13,561
+times the mass now.
+
+183
+00:07:14,242 --> 00:07:16,984
+So d Q d t is minus five
+
+184
+00:07:17,045 --> 00:07:18,445
+times the natural log of two,
+
+185
+00:07:19,126 --> 00:07:21,527
+about minus three point four seven grams per
+
+186
+00:07:21,588 --> 00:07:21,867
+year.
+
+187
+00:07:22,689 --> 00:07:25,197
+Using the starting hundred grams gives minus thirteen
+
+188
+00:07:25,238 --> 00:07:25,879
+point nine.
+
+189
+00:07:26,463 --> 00:07:28,309
+That's the rate at the start, not at
+
+190
+00:07:28,350 --> 00:07:28,811
+ten years.
+
+191
+00:07:30,501 --> 00:07:32,985
+So a rate that's proportional to the amount
+
+192
+00:07:33,146 --> 00:07:35,410
+gives exponential growth or decay,
+
+193
+00:07:35,991 --> 00:07:38,576
+and the starting value picks one curve out
+
+194
+00:07:38,596 --> 00:07:39,137
+of the family.
+
+195
+00:07:40,180 --> 00:07:42,389
+Next, we run differentiation backwards.
+
+196
+00:07:43,192 --> 00:07:45,274
+If f prime of x is two x,
+
+197
+00:07:45,755 --> 00:07:47,356
+which functions could f be,
+
+198
+00:07:47,917 --> 00:07:50,059
+and how does one condition pick out just
+
+199
+00:07:50,179 --> 00:07:50,540
+one of them?
+
+200
+00:07:53,268 --> 00:07:54,070
+Here are the key notes.
+
+201
+00:07:54,714 --> 00:07:56,441
+Pause the video if you need more time
+
+202
+00:07:56,503 --> 00:07:56,984
+to copy them.

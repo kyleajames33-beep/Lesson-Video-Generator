@@ -1,0 +1,178 @@
+{
+  "id": "chem-y11-m1-v05",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "451f152a3506e40e303b8423fc6b6fc736b3814aa689d13c3267f2ea5d67117d",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (one dot, three spots)",
+      "voiceover": {
+        "text": "Here's the black ink dot from last time, sitting on a pencil line near the bottom of a paper strip. Stand the strip in a jar with a little water, below the line, and put on the lid. The water slowly soaks up the paper, and as it passes the ink, the black dot comes apart. A blue dye, a pink dye and a yellow dye end up at three different heights. They all started on the same line, and they all had the same time. So why do mixture components travel different distances in chromatography?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-phases",
+      "title": "two phases",
+      "voiceover": {
+        "text": "Chromatography always has two parts. The paper is the stationary phase, the part that stays still. The water is the mobile phase, the part that moves. It climbs the paper the way a spill soaks into a paper towel, drawn up into the tiny gaps between the paper's fibres. As it climbs, it carries the dissolved dyes with it, but not all at the same speed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-distances-differ",
+      "title": "why the distances differ",
+      "voiceover": {
+        "text": "Here's the key. Each dye particle keeps switching between two places. It can stick to the paper and stay put, or it can dissolve in the moving water and get carried up. A dye that's attracted more strongly to the paper spends more of its time stuck, so it falls behind and travels a shorter distance. A dye that dissolves well in the water, and sticks only weakly to the paper, spends more of its time moving, so it travels further. Every dye had the same time, so different attractions spread them apart. That's why one black dot becomes three spots."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Of these three dyes, which one is attracted most strongly to the paper? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "rf-value",
+      "title": "the Rf value",
+      "voiceover": {
+        "text": "It's the blue one, lowest on the strip, because it spent the most time stuck. To compare spots fairly, chemists use a ratio called the R F value. It's the distance the spot moved, divided by the distance the solvent moved. Both are measured from the baseline, the pencil line where the sample started. For the spot, measure to its centre. For the solvent, measure to the solvent front, the highest point the solvent reached. A spot can never get ahead of the solvent, so R F is always between zero and one, and it has no units."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-example",
+      "title": "worked example: P and Q",
+      "voiceover": {
+        "text": "Let's try one. A green food colouring separates into two spots, P and Q. The solvent front is eight point zero centimetres above the baseline. Spot P moved two point four centimetres, and spot Q moved six point four. For P, two point four divided by eight point zero gives zero point three zero. For Q, six point four divided by eight point zero gives zero point eight zero. Both answers have two significant figures, like the measurements."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-a-ratio",
+      "title": "why a ratio, and why the conditions matter",
+      "voiceover": {
+        "text": "Why a ratio? If you'd stopped this run halfway, the front would be at four point zero centimetres, P at one point two and Q at three point two. Every distance halves, but the ratios stay at zero point three zero and zero point eight zero. Each spot moves a fixed fraction of the solvent's distance. But that fraction depends on the conditions, the type of paper, the solvent and the temperature. Change any of them, and the R F values change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "standards",
+      "title": "comparing with standards",
+      "voiceover": {
+        "text": "That's how chromatography helps identify substances. Run known substances, called standards, on the same paper, in the same solvent, at the same time. Here, standard X has an R F of zero point three zero, and standard Y has zero point eight zero. So spot P matches X, and spot Q matches Y. But a match supports the identity, it doesn't prove it, because two different substances can share an R F value. To be more confident, run them again in a different solvent, and check they still match."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "practical-details",
+      "title": "details that protect the measurement",
+      "voiceover": {
+        "text": "A few details make the results trustworthy. Draw the baseline in pencil, because pencil doesn't dissolve, but ink would run up the paper too. Keep the solvent below the baseline, or the spots just dissolve into the pool. Keep the lid on, so the solvent doesn't evaporate off the paper as it climbs. And mark the solvent front as soon as you take the strip out, because it dries and disappears."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "traps-and-memory-aid",
+      "title": "traps, and a way to remember",
+      "voiceover": {
+        "text": "Two classic traps. Measure from the baseline, not from the bottom edge of the paper, and to the centre of each spot. And put the spot's distance on top. If you ever get an R F bigger than one, you've flipped it. Here's a way to remember the whole idea. Spot over front, and stickier stays lower. The spot cannot pass the front. And the dye that sticks to the paper most has the smallest R F."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. An unknown food dye is run alongside a tartrazine standard, on the same paper in the same solvent. The solvent front travels ten point zero centimetres, and the unknown's spot travels four point zero centimetres. Tartrazine's R F under these conditions is zero point four zero. Calculate the unknown's R F, and evaluate the claim that it must be tartrazine. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "R F is four point zero divided by ten point zero, which is zero point four zero. That matches tartrazine under the same conditions, so it supports the conclusion. But it doesn't prove it, because another dye could have the same R F. Running both in a second solvent would make the case stronger. Ten divided by four, two point five, is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. In a paper chromatogram, the solvent front travels twelve point zero centimetres. Spot A travels three point zero centimetres, and spot B travels nine point zero. Calculate the R F of each spot, and identify which component is more strongly attracted to the stationary phase. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "For A, three point zero over twelve point zero is zero point two five. For B, nine point zero over twelve point zero is zero point seven five. A is more strongly attracted to the stationary phase. It spent more time stuck to the paper, so it travelled a smaller fraction of the solvent's distance. Choosing B because it went further is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So chromatography tells you which substances are in a mixture. It doesn't tell you how much of each there is. For that, we go back to the sand and salt we separated, and we weigh them. Next time, we'll work out what fraction of a separated mixture came from each component."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

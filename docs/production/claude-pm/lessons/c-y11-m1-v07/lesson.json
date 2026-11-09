@@ -1,0 +1,178 @@
+{
+  "id": "chem-y11-m1-v07",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "3d6c7e8646bb8a907458272d1d5469fa89499da3de2eb3afaffc83a639dadd5a",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: you can't filter a compound",
+      "voiceover": {
+        "text": "Last time, we found our mixture was seventy percent salt, by separating it and weighing the parts. But salt itself is a compound. Its sodium and chlorine are bonded in a fixed ratio, one sodium for every chlorine, so no filter can split them. Here's the surprise. Because that ratio is fixed, you don't need to split it. The formula alone tells you what percentage of the mass comes from each element. We'll build the method on carbon dioxide, and then you'll use it on salt yourself."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fixed-ratio",
+      "title": "why the formula is enough",
+      "voiceover": {
+        "text": "Here's why the formula is enough. Every carbon dioxide molecule is the same: one carbon atom and two oxygen atoms. So whatever fraction of one molecule's mass is oxygen, a billion molecules have exactly the same fraction. One molecule is a fair sample of the whole substance. It's like a carton of identical snack packs. Find what fraction of one pack is nuts, and you know the fraction for the whole carton."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "relative-atomic-mass",
+      "title": "relative atomic mass, in one sentence",
+      "voiceover": {
+        "text": "To find those fractions, we need to know how heavy each kind of atom is. Atoms are far too light to weigh one at a time, so chemists compare them on one scale, called relative atomic mass. On that scale, a carbon atom is twelve point zero and an oxygen atom is sixteen point zero. They're just comparison numbers, with no units, and you'll find them on the periodic table or in the question. A later video explains why many of them aren't whole numbers."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Two of the three atoms in carbon dioxide are oxygen. So is carbon dioxide two thirds oxygen by mass, about sixty-seven percent? Or more, or less? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "carbon-dioxide",
+      "title": "carbon dioxide, worked",
+      "voiceover": {
+        "text": "It's more, and here's why. Add up the whole molecule: one carbon at twelve point zero, plus two oxygens at sixteen point zero each. That's forty-four point zero, the relative formula mass. The oxygen's share is two times sixteen point zero, which is thirty-two point zero. So oxygen is thirty-two point zero over forty-four point zero, times a hundred, which is seventy-two point seven percent. That's more than two thirds, because each oxygen atom is heavier than the carbon atom. Counting atoms isn't the same as weighing them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "method",
+      "title": "the method",
+      "voiceover": {
+        "text": "So here's the method. Count how many atoms of the element are in the formula. Multiply by its relative atomic mass, to get that element's share of the mass. Add up every atom in the formula, to get the relative formula mass. Then divide the share by the total, and multiply by a hundred. It's part over whole, just like last time, except now the whole is the formula itself."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ammonium-nitrate",
+      "title": "ammonium nitrate: count every nitrogen",
+      "voiceover": {
+        "text": "Now a formula with a trap. Ammonium nitrate is N H four N O three. It's made of two parts, ammonium and nitrate, and each part contains a nitrogen atom. So there are two nitrogens, not one. The relative formula mass is fourteen point zero, plus four times one point zero, plus fourteen point zero, plus three times sixteen point zero, which is eighty point zero. Nitrogen's share is two times fourteen point zero, twenty-eight point zero. So nitrogen is twenty-eight point zero over eighty point zero, which is thirty-five point zero percent. Count only one nitrogen, and you'd get half that, seventeen point five percent, which is a classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hydrate",
+      "title": "hydrates: water inside the crystal",
+      "voiceover": {
+        "text": "Some crystals hold water inside them. These blue copper sulfate crystals have water molecules built into the crystal itself, called water of crystallisation. Their formula is written C u S O four, dot, five H two O. The dot means that for every copper sulfate unit, there are five water molecules in the crystal. Treat the five waters as one group. Each water is two times one point zero plus sixteen point zero, eighteen point zero, so the five waters are ninety point zero. The whole formula is sixty-three point five, plus thirty-two point one, plus sixty-four point zero, plus ninety point zero, which is two hundred and forty-nine point six. So water is ninety point zero over two hundred and forty-nine point six, thirty-six point one percent."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hydrate-heating",
+      "title": "you can see that percentage",
+      "voiceover": {
+        "text": "And that number is something you can measure. Heat the blue crystals gently, and the water is driven off as steam. The crystals crumble to a white powder. If all the water leaves, the mass falls by thirty-six point one percent. So two point five zero grams of crystals would lose about zero point nine zero grams, leaving about one point six zero grams. Last time, lost mass was an error. Here, it's the measurement."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "one line to remember",
+      "voiceover": {
+        "text": "Here's the line to remember. Count every atom, then it's part over whole. Count every atom of the element, including the ones hiding in a second group or in a hydrate's waters, then divide its share by the whole formula mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn, and it's the salt from the start. Using sodium, twenty-three point zero, and chlorine, thirty-five point five, calculate the percentage by mass of chlorine in sodium chloride. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The relative formula mass is twenty-three point zero plus thirty-five point five, which is fifty-eight point five. Chlorine is thirty-five point five over fifty-eight point five, times a hundred, sixty point seven percent. One of the two atoms is chlorine, but fifty percent is the classic slip. A chlorine atom is heavier than a sodium atom, so it carries more of the mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Using magnesium twenty-four point three, sulfur thirty-two point one, oxygen sixteen point zero and hydrogen one point zero, calculate the percentage by mass of water in magnesium sulfate heptahydrate, M g S O four, dot, seven H two O. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The magnesium sulfate part adds up to one hundred and twenty point four. Seven waters at eighteen point zero each make one hundred and twenty-six point zero. So the total is two hundred and forty-six point four, and water is one hundred and twenty-six point zero over that, fifty-one point one percent. Counting only one water gives thirteen point zero percent, and that's the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: what's inside an atom?",
+      "voiceover": {
+        "text": "We've been using relative atomic masses as numbers handed to us. But each one comes from what's inside the atom. Chemists can write chlorine like this, with a thirty-five above and a seventeen below the symbol. Next time, we'll see how those two numbers tell us exactly which particles are inside an atom, or an ion."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

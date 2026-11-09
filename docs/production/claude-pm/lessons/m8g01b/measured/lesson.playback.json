@@ -1,0 +1,7360 @@
+{
+  "title": "Epidemiology calculation and interpretation practice",
+  "subtitle": "When an exam gives you disease counts, a table of rates or a study with a claim, how do you calculate the rate, draw the graph and judge the claim?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 16.5,
+  "lessonIntent": "calculating incidence (550 and 700 per 100,000 per year) and mortality (25 and 36 per 100,000 per year) for two regions and evaluating a raw-count claim, with age structure named as the check before inferring risk; constructing a line graph of melanoma incidence and mortality rates on one set of axes (year on the x axis to scale, rate per 100,000 per year on the y axis from 0 to 60, both series with a key and a title) and describing and explaining the two trends (incidence rising then levelling; mortality far lower and falling; early detection and removal, more skin checks, consistent with better treatment); calculating prevalence in a survey (9 and 4 per cent), naming the design (cross-sectional), and evaluating it (quick, measures prevalence; cannot show which came first, confounders, self-report, one city; association only; a cohort would be stronger).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 646,
+      "voiceover": {
+        "text": "Epidemiology questions in the HSC tend to ask for three things. Calculate a rate from new data, draw a graph of rates, and judge whether a study supports its claim. Here are three HSC-style questions, one of each. Pause and try each one properly, then we'll work through it together.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/hook.05283597a833.mp3",
+        "startFrame": 0,
+        "endFrame": 586
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Epidemiology",
+          "startMs": 0,
+          "endMs": 800,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 880,
+          "endMs": 1360,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1400,
+          "endMs": 1440,
+          "timestampMs": 1420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1480,
+          "endMs": 1520,
+          "timestampMs": 1500,
+          "confidence": null
+        },
+        {
+          "text": " HSC",
+          "startMs": 1600,
+          "endMs": 2240,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " tend",
+          "startMs": 2400,
+          "endMs": 2560,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 3160,
+          "endMs": 3280,
+          "timestampMs": 3220,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 3400,
+          "endMs": 3520,
+          "timestampMs": 3460,
+          "confidence": null
+        },
+        {
+          "text": " things.",
+          "startMs": 3600,
+          "endMs": 4360,
+          "timestampMs": 3980,
+          "confidence": null
+        },
+        {
+          "text": " Calculate",
+          "startMs": 4640,
+          "endMs": 5120,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5200,
+          "endMs": 5240,
+          "timestampMs": 5220,
+          "confidence": null
+        },
+        {
+          "text": " rate",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5600,
+          "endMs": 5760,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " data,",
+          "startMs": 6080,
+          "endMs": 6880,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " draw",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 7440,
+          "endMs": 7760,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7800,
+          "endMs": 7840,
+          "timestampMs": 7820,
+          "confidence": null
+        },
+        {
+          "text": " rates,",
+          "startMs": 7920,
+          "endMs": 8640,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8760,
+          "endMs": 8880,
+          "timestampMs": 8820,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 8960,
+          "endMs": 9200,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 9320,
+          "endMs": 9440,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9480,
+          "endMs": 9520,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " study",
+          "startMs": 9600,
+          "endMs": 10000,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " supports",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " claim.",
+          "startMs": 10720,
+          "endMs": 11200,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 11840,
+          "endMs": 12000,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 12240,
+          "endMs": 12560,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " HSC-style",
+          "startMs": 12640,
+          "endMs": 13520,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " questions,",
+          "startMs": 13600,
+          "endMs": 14400,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14600,
+          "endMs": 14640,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " each.",
+          "startMs": 14720,
+          "endMs": 15040,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 15600,
+          "endMs": 16000,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " try",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 16560,
+          "endMs": 16720,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " properly,",
+          "startMs": 17040,
+          "endMs": 17760,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 17880,
+          "endMs": 18000,
+          "timestampMs": 17940,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 18160,
+          "endMs": 18320,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 18400,
+          "endMs": 18560,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18760,
+          "endMs": 18800,
+          "timestampMs": 18780,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 18880,
+          "endMs": 19520,
+          "timestampMs": 19200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 1330,
+      "voiceover": {
+        "text": "Question one. Two regions recorded type 2 diabetes for one year. Region P has one point two million people, with six thousand six hundred new diagnoses and three hundred deaths. Region Q has a hundred and fifty thousand people, with one thousand and fifty new diagnoses and fifty-four deaths. Calculate the incidence and mortality rates per hundred thousand for each region. Then evaluate the claim that Region P has the worse diabetes problem. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-question.7da48d433094.mp3",
+        "startFrame": 0,
+        "endFrame": 994
+      },
+      "responseHold": {
+        "startFrame": 1006,
+        "endFrame": 1306
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 560,
+          "endMs": 880,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 1440,
+          "endMs": 1600,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " regions",
+          "startMs": 1680,
+          "endMs": 2160,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " recorded",
+          "startMs": 2360,
+          "endMs": 2640,
+          "timestampMs": 2500,
+          "confidence": null
+        },
+        {
+          "text": " type",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 3280,
+          "endMs": 4000,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " year.",
+          "startMs": 4480,
+          "endMs": 5120,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " Region",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 5920,
+          "endMs": 6240,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 6400,
+          "endMs": 6560,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 6880,
+          "endMs": 7120,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " million",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " people,",
+          "startMs": 7840,
+          "endMs": 8480,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8560,
+          "endMs": 8720,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 9040,
+          "endMs": 9440,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 9840,
+          "endMs": 10080,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 10160,
+          "endMs": 10320,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " diagnoses",
+          "startMs": 10400,
+          "endMs": 11200,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " deaths.",
+          "startMs": 12320,
+          "endMs": 13160,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " Region",
+          "startMs": 13520,
+          "endMs": 13840,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 14000,
+          "endMs": 14320,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 14640,
+          "endMs": 14800,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14840,
+          "endMs": 14880,
+          "timestampMs": 14860,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 14960,
+          "endMs": 15120,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15200,
+          "endMs": 15360,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 15400,
+          "endMs": 15600,
+          "timestampMs": 15500,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " people,",
+          "startMs": 16160,
+          "endMs": 16800,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 17280,
+          "endMs": 17680,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17800,
+          "endMs": 17920,
+          "timestampMs": 17860,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 18240,
+          "endMs": 18400,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " diagnoses",
+          "startMs": 18480,
+          "endMs": 19280,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " fifty-four",
+          "startMs": 19760,
+          "endMs": 20320,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " deaths.",
+          "startMs": 20400,
+          "endMs": 20880,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " Calculate",
+          "startMs": 21600,
+          "endMs": 22080,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22120,
+          "endMs": 22160,
+          "timestampMs": 22140,
+          "confidence": null
+        },
+        {
+          "text": " incidence",
+          "startMs": 22320,
+          "endMs": 22800,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " mortality",
+          "startMs": 23040,
+          "endMs": 23600,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 24000,
+          "endMs": 24160,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 24240,
+          "endMs": 24480,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 24640,
+          "endMs": 25040,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 25120,
+          "endMs": 25200,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 25280,
+          "endMs": 25440,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " region.",
+          "startMs": 25520,
+          "endMs": 26000,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 26560,
+          "endMs": 26880,
+          "timestampMs": 26720,
+          "confidence": null
+        },
+        {
+          "text": " evaluate",
+          "startMs": 27200,
+          "endMs": 27760,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27800,
+          "endMs": 27840,
+          "timestampMs": 27820,
+          "confidence": null
+        },
+        {
+          "text": " claim",
+          "startMs": 27920,
+          "endMs": 28240,
+          "timestampMs": 28080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 28320,
+          "endMs": 28400,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " Region",
+          "startMs": 28480,
+          "endMs": 28800,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 28960,
+          "endMs": 29280,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 29360,
+          "endMs": 29520,
+          "timestampMs": 29440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29600,
+          "endMs": 29680,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " worse",
+          "startMs": 29760,
+          "endMs": 30080,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 30160,
+          "endMs": 30640,
+          "timestampMs": 30400,
+          "confidence": null
+        },
+        {
+          "text": " problem.",
+          "startMs": 30720,
+          "endMs": 31440,
+          "timestampMs": 31080,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 31760,
+          "endMs": 32000,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 32080,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 32320,
+          "endMs": 32400,
+          "timestampMs": 32360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 32479.999999999996,
+          "endMs": 33120,
+          "timestampMs": 32800,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1306,
+        "responseHoldStart": 1006,
+        "pausePrompt": 1006
+      }
+    },
+    {
+      "id": "q1-calc",
+      "type": "concept",
+      "durationInFrames": 1306,
+      "voiceover": {
+        "text": "Rates first, laid out as equation, substitute, solve, sense check. Incidence is new cases over the population, times a hundred thousand. For P, six thousand six hundred over one point two million, times a hundred thousand, is five hundred and fifty per hundred thousand per year. For Q, one thousand and fifty over a hundred and fifty thousand gives seven hundred. Mortality puts deaths on top. Three hundred over one point two million gives twenty-five, and fifty-four over a hundred and fifty thousand gives thirty-six. Sense check: Q is the smaller region, yet both its rates are higher.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-calc.39b4378cb205.mp3",
+        "startFrame": 0,
+        "endFrame": 1246
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Rates",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " first,",
+          "startMs": 400,
+          "endMs": 1200,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " laid",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 1640,
+          "endMs": 1760,
+          "timestampMs": 1700,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " equation,",
+          "startMs": 2000,
+          "endMs": 2960,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " substitute,",
+          "startMs": 3040,
+          "endMs": 4000,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " solve,",
+          "startMs": 4240,
+          "endMs": 4720,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " sense",
+          "startMs": 4800,
+          "endMs": 5040,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " check.",
+          "startMs": 5120,
+          "endMs": 5760,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " Incidence",
+          "startMs": 6080,
+          "endMs": 6640,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6800,
+          "endMs": 6960,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 7040,
+          "endMs": 7200,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 7280,
+          "endMs": 7760,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " population,",
+          "startMs": 8240,
+          "endMs": 9200,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 9400,
+          "endMs": 9600,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9680,
+          "endMs": 9720,
+          "timestampMs": 9700,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " thousand.",
+          "startMs": 10080,
+          "endMs": 11040,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " P,",
+          "startMs": 11280,
+          "endMs": 12000,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 13000,
+          "endMs": 13360,
+          "timestampMs": 13180,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 13600,
+          "endMs": 13840,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " million,",
+          "startMs": 14640,
+          "endMs": 15280,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 15400,
+          "endMs": 15520,
+          "timestampMs": 15460,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15560,
+          "endMs": 15600,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 15640,
+          "endMs": 15840,
+          "timestampMs": 15740,
+          "confidence": null
+        },
+        {
+          "text": " thousand,",
+          "startMs": 15920,
+          "endMs": 16720,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16840,
+          "endMs": 16960,
+          "timestampMs": 16900,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 17080,
+          "endMs": 17200,
+          "timestampMs": 17140,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 17787,
+          "endMs": 18000,
+          "timestampMs": 17893.5,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 18160,
+          "endMs": 18400,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 18800,
+          "endMs": 19200,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " year.",
+          "startMs": 19680,
+          "endMs": 20560,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " Q,",
+          "startMs": 20800,
+          "endMs": 21520,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 21760,
+          "endMs": 22080,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 22427,
+          "endMs": 22640,
+          "timestampMs": 22533.5,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 22800,
+          "endMs": 23040,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23080,
+          "endMs": 23120,
+          "timestampMs": 23100,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23440,
+          "endMs": 23520,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 23600,
+          "endMs": 23760,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 23920,
+          "endMs": 24240,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 24480,
+          "endMs": 24720,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " hundred.",
+          "startMs": 25040,
+          "endMs": 26080,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " Mortality",
+          "startMs": 26293,
+          "endMs": 26720,
+          "timestampMs": 26506.5,
+          "confidence": null
+        },
+        {
+          "text": " puts",
+          "startMs": 26800,
+          "endMs": 27040,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " deaths",
+          "startMs": 27120,
+          "endMs": 27440,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 27520,
+          "endMs": 27600,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " top.",
+          "startMs": 27680,
+          "endMs": 28560,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " Three",
+          "startMs": 28680,
+          "endMs": 28800,
+          "timestampMs": 28740,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 28880,
+          "endMs": 29200,
+          "timestampMs": 29040,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 29360,
+          "endMs": 29600,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 29680,
+          "endMs": 29760,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 29840,
+          "endMs": 30080,
+          "timestampMs": 29960,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 30160,
+          "endMs": 30240,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " million",
+          "startMs": 30400,
+          "endMs": 30800,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 30880,
+          "endMs": 31120,
+          "timestampMs": 31000,
+          "confidence": null
+        },
+        {
+          "text": " twenty-five,",
+          "startMs": 31240,
+          "endMs": 32240.000000000004,
+          "timestampMs": 31740,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32320,
+          "endMs": 32400,
+          "timestampMs": 32360,
+          "confidence": null
+        },
+        {
+          "text": " fifty-four",
+          "startMs": 32479.999999999996,
+          "endMs": 33120,
+          "timestampMs": 32800,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 33280,
+          "endMs": 33440,
+          "timestampMs": 33360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 33520,
+          "endMs": 33560,
+          "timestampMs": 33540,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 33600,
+          "endMs": 33760,
+          "timestampMs": 33680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 33840,
+          "endMs": 34000,
+          "timestampMs": 33920,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 34080,
+          "endMs": 34240,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 34320,
+          "endMs": 34720,
+          "timestampMs": 34520,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 34880,
+          "endMs": 35120,
+          "timestampMs": 35000,
+          "confidence": null
+        },
+        {
+          "text": " thirty-six.",
+          "startMs": 35200,
+          "endMs": 36280,
+          "timestampMs": 35740,
+          "confidence": null
+        },
+        {
+          "text": " Sense",
+          "startMs": 36640,
+          "endMs": 36880,
+          "timestampMs": 36760,
+          "confidence": null
+        },
+        {
+          "text": " check:",
+          "startMs": 36960,
+          "endMs": 37760,
+          "timestampMs": 37360,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 37920,
+          "endMs": 38080,
+          "timestampMs": 38000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 38160,
+          "endMs": 38240,
+          "timestampMs": 38200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 38320,
+          "endMs": 38400,
+          "timestampMs": 38360,
+          "confidence": null
+        },
+        {
+          "text": " smaller",
+          "startMs": 38480,
+          "endMs": 38880,
+          "timestampMs": 38680,
+          "confidence": null
+        },
+        {
+          "text": " region,",
+          "startMs": 38960,
+          "endMs": 39600,
+          "timestampMs": 39280,
+          "confidence": null
+        },
+        {
+          "text": " yet",
+          "startMs": 39720,
+          "endMs": 39840,
+          "timestampMs": 39780,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 39920,
+          "endMs": 40160,
+          "timestampMs": 40040,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 40240,
+          "endMs": 40320,
+          "timestampMs": 40280,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 40400,
+          "endMs": 40720,
+          "timestampMs": 40560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 40800,
+          "endMs": 40880,
+          "timestampMs": 40840,
+          "confidence": null
+        },
+        {
+          "text": " higher.",
+          "startMs": 41080,
+          "endMs": 41520,
+          "timestampMs": 41300,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-claim",
+      "type": "concept",
+      "durationInFrames": 1085,
+      "voiceover": {
+        "text": "Now the claim. P had more cases mainly because it has eight times as many people. Out of every hundred thousand people, Q had more new cases and more deaths, so the claim isn't supported. But before saying people in Q face a higher risk, check their ages. Type 2 diabetes becomes more common with age, so an older population would have a higher rate, even if the risk at each age were the same. Age-standardised rates, adjusted as if both regions had the same age mix, would make that comparison fairer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-claim.0be1d06df58e.mp3",
+        "startFrame": 0,
+        "endFrame": 1025
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 240,
+          "endMs": 373,
+          "timestampMs": 306.5,
+          "confidence": null
+        },
+        {
+          "text": " claim.",
+          "startMs": 400,
+          "endMs": 800,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 880,
+          "endMs": 1440,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 1680,
+          "endMs": 1867,
+          "timestampMs": 1773.5,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 1920,
+          "endMs": 2120,
+          "timestampMs": 2020,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 2160,
+          "endMs": 2688,
+          "timestampMs": 2424,
+          "confidence": null
+        },
+        {
+          "text": " mainly",
+          "startMs": 2800,
+          "endMs": 3240,
+          "timestampMs": 3020,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 3280,
+          "endMs": 3600,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 3840,
+          "endMs": 4080,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " eight",
+          "startMs": 4200,
+          "endMs": 4320,
+          "timestampMs": 4260,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 4800,
+          "endMs": 4880,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 5000,
+          "endMs": 5120,
+          "timestampMs": 5060,
+          "confidence": null
+        },
+        {
+          "text": " people.",
+          "startMs": 5200,
+          "endMs": 5920,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " Out",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6400,
+          "endMs": 6560,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 7440,
+          "endMs": 7680,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " people,",
+          "startMs": 7840,
+          "endMs": 8560,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 9000,
+          "endMs": 9120,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 9680,
+          "endMs": 10160,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10320,
+          "endMs": 10560,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 10640,
+          "endMs": 10800,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " deaths,",
+          "startMs": 10880,
+          "endMs": 11600,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " claim",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 12400,
+          "endMs": 12640,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " supported.",
+          "startMs": 12720,
+          "endMs": 13560,
+          "timestampMs": 13140,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 13840,
+          "endMs": 13920,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 14080,
+          "endMs": 14240,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " saying",
+          "startMs": 14320,
+          "endMs": 14560,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 14640,
+          "endMs": 14960,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15000,
+          "endMs": 15040,
+          "timestampMs": 15020,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " face",
+          "startMs": 15520,
+          "endMs": 15760,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15800,
+          "endMs": 15840,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " higher",
+          "startMs": 15920,
+          "endMs": 16160,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " risk,",
+          "startMs": 16239.999999999998,
+          "endMs": 16960,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " ages.",
+          "startMs": 17520,
+          "endMs": 18080,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " Type",
+          "startMs": 18560,
+          "endMs": 18720,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 19040,
+          "endMs": 19600,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " becomes",
+          "startMs": 19680,
+          "endMs": 20000,
+          "timestampMs": 19840,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 20160,
+          "endMs": 20320,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " age,",
+          "startMs": 20880,
+          "endMs": 21600,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 21880,
+          "endMs": 22000,
+          "timestampMs": 21940,
+          "confidence": null
+        },
+        {
+          "text": " older",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 22680,
+          "endMs": 23040,
+          "timestampMs": 22860,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 23120,
+          "endMs": 23360,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 23440,
+          "endMs": 23520,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23600,
+          "endMs": 23640,
+          "timestampMs": 23620,
+          "confidence": null
+        },
+        {
+          "text": " higher",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " rate,",
+          "startMs": 24000,
+          "endMs": 24640,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 24720,
+          "endMs": 24960,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 25000,
+          "endMs": 25040,
+          "timestampMs": 25020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25120,
+          "endMs": 25200,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " risk",
+          "startMs": 25320,
+          "endMs": 25440,
+          "timestampMs": 25380,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 25520,
+          "endMs": 25600,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 25680,
+          "endMs": 25920,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " age",
+          "startMs": 26040,
+          "endMs": 26160,
+          "timestampMs": 26100,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 26200,
+          "endMs": 26240,
+          "timestampMs": 26220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26320,
+          "endMs": 26400,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " same.",
+          "startMs": 26480,
+          "endMs": 26880,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " Age-standardised",
+          "startMs": 27520,
+          "endMs": 28480,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " rates,",
+          "startMs": 28560,
+          "endMs": 29120,
+          "timestampMs": 28840,
+          "confidence": null
+        },
+        {
+          "text": " adjusted",
+          "startMs": 29360,
+          "endMs": 29600,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 29640,
+          "endMs": 29680,
+          "timestampMs": 29660,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 29760,
+          "endMs": 29920,
+          "timestampMs": 29840,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 30040,
+          "endMs": 30160,
+          "timestampMs": 30100,
+          "confidence": null
+        },
+        {
+          "text": " regions",
+          "startMs": 30240,
+          "endMs": 30640,
+          "timestampMs": 30440,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 30720,
+          "endMs": 30800,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30880,
+          "endMs": 30960,
+          "timestampMs": 30920,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 31040,
+          "endMs": 31280,
+          "timestampMs": 31160,
+          "confidence": null
+        },
+        {
+          "text": " age",
+          "startMs": 31360,
+          "endMs": 31600,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " mix,",
+          "startMs": 31680,
+          "endMs": 32240.000000000004,
+          "timestampMs": 31960,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 32320,
+          "endMs": 32400,
+          "timestampMs": 32360,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 32479.999999999996,
+          "endMs": 32640,
+          "timestampMs": 32560,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 32720,
+          "endMs": 32800,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " comparison",
+          "startMs": 32880,
+          "endMs": 33440,
+          "timestampMs": 33160,
+          "confidence": null
+        },
+        {
+          "text": " fairer.",
+          "startMs": 33520,
+          "endMs": 34160,
+          "timestampMs": 33840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 521,
+      "voiceover": {
+        "text": "The classic mistake is comparing raw counts. A bigger population gives more cases even when the risk is the same. Here, the region with fewer cases had the higher rates. Turn every count into a rate before you compare.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q1-mistake.b8e5cb9da57c.mp3",
+        "startFrame": 0,
+        "endFrame": 461
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " comparing",
+          "startMs": 1360,
+          "endMs": 1840,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " raw",
+          "startMs": 2000,
+          "endMs": 2240,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " counts.",
+          "startMs": 2320,
+          "endMs": 3040,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 3280,
+          "endMs": 3360,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " bigger",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 3760,
+          "endMs": 4400,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 4480,
+          "endMs": 4720,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 5040,
+          "endMs": 5680,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 5760,
+          "endMs": 6080,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6320,
+          "endMs": 6360,
+          "timestampMs": 6340,
+          "confidence": null
+        },
+        {
+          "text": " risk",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " same.",
+          "startMs": 7040,
+          "endMs": 7720,
+          "timestampMs": 7380,
+          "confidence": null
+        },
+        {
+          "text": " Here,",
+          "startMs": 8000,
+          "endMs": 8640,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8720,
+          "endMs": 8760,
+          "timestampMs": 8740,
+          "confidence": null
+        },
+        {
+          "text": " region",
+          "startMs": 8800,
+          "endMs": 9120,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " fewer",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 9760,
+          "endMs": 10160,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10520,
+          "endMs": 10560,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " higher",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " rates.",
+          "startMs": 11040,
+          "endMs": 11800,
+          "timestampMs": 11420,
+          "confidence": null
+        },
+        {
+          "text": " Turn",
+          "startMs": 12080,
+          "endMs": 12400,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 12480,
+          "endMs": 12800,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 12880,
+          "endMs": 13200,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13560,
+          "endMs": 13600,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " rate",
+          "startMs": 13760,
+          "endMs": 14080,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 14160,
+          "endMs": 14480,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 14520,
+          "endMs": 14560,
+          "timestampMs": 14540,
+          "confidence": null
+        },
+        {
+          "text": " compare.",
+          "startMs": 14640,
+          "endMs": 15360,
+          "timestampMs": 15000,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 980,
+      "voiceover": {
+        "text": "Question two. The table gives melanoma incidence and mortality rates in Australia, per hundred thousand people, from 1985 to 2020. Draw a line graph of both rates on one set of axes. Then describe the trend in each rate, and explain why the two rates differ so much. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-question.39f6c36de2e1.mp3",
+        "startFrame": 0,
+        "endFrame": 644
+      },
+      "responseHold": {
+        "startFrame": 656,
+        "endFrame": 956
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " table",
+          "startMs": 1680,
+          "endMs": 1840,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " melanoma",
+          "startMs": 2240,
+          "endMs": 2800,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " incidence",
+          "startMs": 2880,
+          "endMs": 3440,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3520,
+          "endMs": 3600,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " mortality",
+          "startMs": 3680,
+          "endMs": 4240,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4640,
+          "endMs": 4680,
+          "timestampMs": 4660,
+          "confidence": null
+        },
+        {
+          "text": " Australia,",
+          "startMs": 4720,
+          "endMs": 5600,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " people,",
+          "startMs": 6640,
+          "endMs": 7280,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " 1985",
+          "startMs": 7520,
+          "endMs": 7840,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7920,
+          "endMs": 8800,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " 2020.",
+          "startMs": 8920,
+          "endMs": 10240,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " Draw",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 10720,
+          "endMs": 10960,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 11040,
+          "endMs": 11280,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11400,
+          "endMs": 11520,
+          "timestampMs": 11460,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 11840,
+          "endMs": 12160,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 12240,
+          "endMs": 12400,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12880,
+          "endMs": 12960,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " axes.",
+          "startMs": 13240,
+          "endMs": 14080,
+          "timestampMs": 13660,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 14160,
+          "endMs": 14400,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " describe",
+          "startMs": 14720,
+          "endMs": 15200,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " trend",
+          "startMs": 15400,
+          "endMs": 15680,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " rate,",
+          "startMs": 16160,
+          "endMs": 16773,
+          "timestampMs": 16466.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16827,
+          "endMs": 16880,
+          "timestampMs": 16853.5,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 17160,
+          "endMs": 17440,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17680,
+          "endMs": 17840,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 18080,
+          "endMs": 18480,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " differ",
+          "startMs": 18560,
+          "endMs": 18800,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " much.",
+          "startMs": 19120,
+          "endMs": 20000,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 20160,
+          "endMs": 20320,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 20880,
+          "endMs": 21440,
+          "timestampMs": 21160,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 956,
+        "responseHoldStart": 656,
+        "pausePrompt": 656
+      }
+    },
+    {
+      "id": "q2-graph",
+      "type": "concept",
+      "durationInFrames": 1364,
+      "voiceover": {
+        "text": "Set up the graph before you plot anything. Year goes on the x axis, because it's the independent variable. The rate goes on the y axis, with its unit, per hundred thousand people per year. Both rates share that unit, so one axis works. Look at the years: they jump by ten, then by five at the end, so space them to scale. For the y axis, choose an even scale that fits the largest value, fifty-two: zero to sixty in tens. Plot each point, then join each set with its own ruled line, because each value is a whole year's rate, and add a key and a title. That's TAILS: title, axes, intervals, labels, scale.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-graph.c4777813a39b.mp3",
+        "startFrame": 0,
+        "endFrame": 1304
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Set",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 560,
+          "endMs": 880,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 960,
+          "endMs": 1360,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " plot",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " anything.",
+          "startMs": 2080,
+          "endMs": 2720,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " Year",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3720,
+          "endMs": 3760,
+          "timestampMs": 3740,
+          "confidence": null
+        },
+        {
+          "text": " x",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " axis,",
+          "startMs": 4160,
+          "endMs": 4720,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 5120,
+          "endMs": 5280,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5320,
+          "endMs": 5360,
+          "timestampMs": 5340,
+          "confidence": null
+        },
+        {
+          "text": " independent",
+          "startMs": 5520,
+          "endMs": 6000,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " variable.",
+          "startMs": 6080,
+          "endMs": 6640,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " rate",
+          "startMs": 7200,
+          "endMs": 7520,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 7600,
+          "endMs": 7760,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7840,
+          "endMs": 7880,
+          "timestampMs": 7860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " y",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " axis,",
+          "startMs": 8560,
+          "endMs": 8960,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " unit,",
+          "startMs": 9360,
+          "endMs": 9920,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 10640,
+          "endMs": 10880,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 10960,
+          "endMs": 11280,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " year.",
+          "startMs": 11760,
+          "endMs": 12080,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " Both",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 12720,
+          "endMs": 13040,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 13200,
+          "endMs": 13440,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 13560,
+          "endMs": 13680,
+          "timestampMs": 13620,
+          "confidence": null
+        },
+        {
+          "text": " unit,",
+          "startMs": 13760,
+          "endMs": 14160,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14240,
+          "endMs": 14400,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " axis",
+          "startMs": 14800,
+          "endMs": 15120,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " works.",
+          "startMs": 15320,
+          "endMs": 15600,
+          "timestampMs": 15460,
+          "confidence": null
+        },
+        {
+          "text": " Look",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 16239.999999999998,
+          "endMs": 16280.000000000002,
+          "timestampMs": 16260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " years:",
+          "startMs": 16480,
+          "endMs": 17280,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 17360,
+          "endMs": 17440,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " jump",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 17760,
+          "endMs": 17840,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " ten,",
+          "startMs": 18000,
+          "endMs": 18560,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 19040,
+          "endMs": 19360,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 19400,
+          "endMs": 19440,
+          "timestampMs": 19420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " end,",
+          "startMs": 19680,
+          "endMs": 20160,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 20280,
+          "endMs": 20400,
+          "timestampMs": 20340,
+          "confidence": null
+        },
+        {
+          "text": " space",
+          "startMs": 20560,
+          "endMs": 20880,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 20960,
+          "endMs": 21040,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21080,
+          "endMs": 21120,
+          "timestampMs": 21100,
+          "confidence": null
+        },
+        {
+          "text": " scale.",
+          "startMs": 21200,
+          "endMs": 21840,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 22080,
+          "endMs": 22160,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22200,
+          "endMs": 22240,
+          "timestampMs": 22220,
+          "confidence": null
+        },
+        {
+          "text": " y",
+          "startMs": 22320,
+          "endMs": 22560,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " axis,",
+          "startMs": 22640,
+          "endMs": 23280,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " choose",
+          "startMs": 23360,
+          "endMs": 23600,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 23680,
+          "endMs": 23760,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 23840,
+          "endMs": 24160,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " scale",
+          "startMs": 24240,
+          "endMs": 24560,
+          "timestampMs": 24400,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 24640,
+          "endMs": 24720,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " largest",
+          "startMs": 25200,
+          "endMs": 25600,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " value,",
+          "startMs": 25680,
+          "endMs": 26320,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " fifty-two:",
+          "startMs": 26400,
+          "endMs": 27520,
+          "timestampMs": 26960,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 27600,
+          "endMs": 27760,
+          "timestampMs": 27680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27840,
+          "endMs": 28000,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " sixty",
+          "startMs": 28080,
+          "endMs": 28400,
+          "timestampMs": 28240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 28560,
+          "endMs": 28720,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " tens.",
+          "startMs": 28760,
+          "endMs": 29520,
+          "timestampMs": 29140,
+          "confidence": null
+        },
+        {
+          "text": " Plot",
+          "startMs": 29760,
+          "endMs": 30000,
+          "timestampMs": 29880,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 30080,
+          "endMs": 30320,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " point,",
+          "startMs": 30400,
+          "endMs": 30960,
+          "timestampMs": 30680,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 31040,
+          "endMs": 31120,
+          "timestampMs": 31080,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 31280,
+          "endMs": 31520,
+          "timestampMs": 31400,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 31600,
+          "endMs": 31840,
+          "timestampMs": 31720,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 31920,
+          "endMs": 32080,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 32159.999999999996,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32200,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 32360,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32420,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 32560.000000000004,
+          "endMs": 32720,
+          "timestampMs": 32640,
+          "confidence": null
+        },
+        {
+          "text": " ruled",
+          "startMs": 32800,
+          "endMs": 33120,
+          "timestampMs": 32960,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 33200,
+          "endMs": 33680,
+          "timestampMs": 33440,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 33840,
+          "endMs": 34000,
+          "timestampMs": 33920,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 34080,
+          "endMs": 34240,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " value",
+          "startMs": 34320,
+          "endMs": 34560,
+          "timestampMs": 34440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 34640,
+          "endMs": 34720,
+          "timestampMs": 34680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 34800,
+          "endMs": 34880,
+          "timestampMs": 34840,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 34960,
+          "endMs": 35200,
+          "timestampMs": 35080,
+          "confidence": null
+        },
+        {
+          "text": " year's",
+          "startMs": 35280,
+          "endMs": 35520,
+          "timestampMs": 35400,
+          "confidence": null
+        },
+        {
+          "text": " rate,",
+          "startMs": 35600,
+          "endMs": 36240,
+          "timestampMs": 35920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 36320,
+          "endMs": 36560,
+          "timestampMs": 36440,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 36800,
+          "endMs": 36880,
+          "timestampMs": 36840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 36960,
+          "endMs": 37000,
+          "timestampMs": 36980,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 37040,
+          "endMs": 37360,
+          "timestampMs": 37200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 37440,
+          "endMs": 37520,
+          "timestampMs": 37480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 37560,
+          "endMs": 37600,
+          "timestampMs": 37580,
+          "confidence": null
+        },
+        {
+          "text": " title.",
+          "startMs": 37680,
+          "endMs": 38480,
+          "timestampMs": 38080,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 38560,
+          "endMs": 38800,
+          "timestampMs": 38680,
+          "confidence": null
+        },
+        {
+          "text": " TAILS:",
+          "startMs": 39040,
+          "endMs": 39760,
+          "timestampMs": 39400,
+          "confidence": null
+        },
+        {
+          "text": " title,",
+          "startMs": 40000,
+          "endMs": 40480,
+          "timestampMs": 40240,
+          "confidence": null
+        },
+        {
+          "text": " axes,",
+          "startMs": 40560,
+          "endMs": 41280,
+          "timestampMs": 40920,
+          "confidence": null
+        },
+        {
+          "text": " intervals,",
+          "startMs": 41360,
+          "endMs": 42000,
+          "timestampMs": 41680,
+          "confidence": null
+        },
+        {
+          "text": " labels,",
+          "startMs": 42080,
+          "endMs": 42800,
+          "timestampMs": 42440,
+          "confidence": null
+        },
+        {
+          "text": " scale.",
+          "startMs": 43040,
+          "endMs": 43440,
+          "timestampMs": 43240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-describe",
+      "type": "concept",
+      "durationInFrames": 1188,
+      "voiceover": {
+        "text": "Now describe and explain. Incidence rose from thirty-eight in 1985 to fifty-two in 2015, then fell slightly to fifty. Mortality stayed far lower, around six, and fell to about five by 2020. They differ because most melanomas are found early, while they're still thin, and cut out, so far fewer people die than are diagnosed. Deaths in one year include people diagnosed in earlier years, so these lines don't directly give survival. The recent fall in deaths fits better treatment, but this graph alone can't show that.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-describe.931f9431dd49.mp3",
+        "startFrame": 0,
+        "endFrame": 1128
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " describe",
+          "startMs": 320,
+          "endMs": 960,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " explain.",
+          "startMs": 1200,
+          "endMs": 2200,
+          "timestampMs": 1700,
+          "confidence": null
+        },
+        {
+          "text": " Incidence",
+          "startMs": 2560,
+          "endMs": 3040,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " rose",
+          "startMs": 3120,
+          "endMs": 3440,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 3520,
+          "endMs": 3600,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " thirty-eight",
+          "startMs": 3760,
+          "endMs": 4320,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " 1985",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5040,
+          "endMs": 6240,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " fifty-two",
+          "startMs": 6347,
+          "endMs": 6960,
+          "timestampMs": 6653.5,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 7120,
+          "endMs": 7280,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " 2015,",
+          "startMs": 7400,
+          "endMs": 8560,
+          "timestampMs": 7980,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " fell",
+          "startMs": 8880,
+          "endMs": 9120,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " slightly",
+          "startMs": 9200,
+          "endMs": 9600,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " fifty.",
+          "startMs": 9880,
+          "endMs": 10320,
+          "timestampMs": 10100,
+          "confidence": null
+        },
+        {
+          "text": " Mortality",
+          "startMs": 10960,
+          "endMs": 11520,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " stayed",
+          "startMs": 11600,
+          "endMs": 11920,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " lower,",
+          "startMs": 12320,
+          "endMs": 12880,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " six,",
+          "startMs": 13360,
+          "endMs": 14000,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " fell",
+          "startMs": 14240,
+          "endMs": 14400,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 14680,
+          "endMs": 14800,
+          "timestampMs": 14740,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 15040,
+          "endMs": 15360,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 15440,
+          "endMs": 15600,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " 2020.",
+          "startMs": 15720,
+          "endMs": 17040,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " They",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " differ",
+          "startMs": 17280,
+          "endMs": 17600,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 17680,
+          "endMs": 17920,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 18080,
+          "endMs": 18320,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " melanomas",
+          "startMs": 18400,
+          "endMs": 18960,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " early,",
+          "startMs": 19520,
+          "endMs": 20080,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 20280,
+          "endMs": 20400,
+          "timestampMs": 20340,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 20520,
+          "endMs": 20640,
+          "timestampMs": 20580,
+          "confidence": null
+        },
+        {
+          "text": " thin,",
+          "startMs": 20800,
+          "endMs": 21280,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21320,
+          "endMs": 21360,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " cut",
+          "startMs": 21520,
+          "endMs": 21680,
+          "timestampMs": 21600,
+          "confidence": null
+        },
+        {
+          "text": " out,",
+          "startMs": 21760,
+          "endMs": 22400,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 22520,
+          "endMs": 22640,
+          "timestampMs": 22580,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 22720,
+          "endMs": 22880,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " fewer",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 23360,
+          "endMs": 23600,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " die",
+          "startMs": 23760,
+          "endMs": 24080,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 24160,
+          "endMs": 24240,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 24280,
+          "endMs": 24320,
+          "timestampMs": 24300,
+          "confidence": null
+        },
+        {
+          "text": " diagnosed.",
+          "startMs": 24400,
+          "endMs": 25760,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " Deaths",
+          "startMs": 25920,
+          "endMs": 26080,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 26160,
+          "endMs": 26240,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 26320,
+          "endMs": 26480,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " year",
+          "startMs": 26560,
+          "endMs": 26800,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " include",
+          "startMs": 27000,
+          "endMs": 27200,
+          "timestampMs": 27100,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 27360,
+          "endMs": 27520,
+          "timestampMs": 27440,
+          "confidence": null
+        },
+        {
+          "text": " diagnosed",
+          "startMs": 27600,
+          "endMs": 28160,
+          "timestampMs": 27880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 28280,
+          "endMs": 28400,
+          "timestampMs": 28340,
+          "confidence": null
+        },
+        {
+          "text": " earlier",
+          "startMs": 28480,
+          "endMs": 28800,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " years,",
+          "startMs": 28960,
+          "endMs": 29600,
+          "timestampMs": 29280,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 29680,
+          "endMs": 29760,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 29840,
+          "endMs": 30000,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " lines",
+          "startMs": 30080,
+          "endMs": 30400,
+          "timestampMs": 30240,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 30480,
+          "endMs": 30720,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " directly",
+          "startMs": 30920,
+          "endMs": 31280,
+          "timestampMs": 31100,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 31360,
+          "endMs": 31440,
+          "timestampMs": 31400,
+          "confidence": null
+        },
+        {
+          "text": " survival.",
+          "startMs": 31520,
+          "endMs": 32640,
+          "timestampMs": 32080,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 32680,
+          "endMs": 32720,
+          "timestampMs": 32700,
+          "confidence": null
+        },
+        {
+          "text": " recent",
+          "startMs": 32800,
+          "endMs": 33200,
+          "timestampMs": 33000,
+          "confidence": null
+        },
+        {
+          "text": " fall",
+          "startMs": 33320,
+          "endMs": 33440,
+          "timestampMs": 33380,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 33520,
+          "endMs": 33680,
+          "timestampMs": 33600,
+          "confidence": null
+        },
+        {
+          "text": " deaths",
+          "startMs": 33760,
+          "endMs": 34080,
+          "timestampMs": 33920,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 34160,
+          "endMs": 34400,
+          "timestampMs": 34280,
+          "confidence": null
+        },
+        {
+          "text": " better",
+          "startMs": 34520,
+          "endMs": 34640,
+          "timestampMs": 34580,
+          "confidence": null
+        },
+        {
+          "text": " treatment,",
+          "startMs": 34680,
+          "endMs": 35440,
+          "timestampMs": 35060,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 35520,
+          "endMs": 35600,
+          "timestampMs": 35560,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 35680,
+          "endMs": 35760,
+          "timestampMs": 35720,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 35840,
+          "endMs": 36080,
+          "timestampMs": 35960,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 36320,
+          "endMs": 36560,
+          "timestampMs": 36440,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 36640,
+          "endMs": 36960,
+          "timestampMs": 36800,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 37080,
+          "endMs": 37200,
+          "timestampMs": 37140,
+          "confidence": null
+        },
+        {
+          "text": " that.",
+          "startMs": 37320,
+          "endMs": 37600,
+          "timestampMs": 37460,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 519,
+      "voiceover": {
+        "text": "The classic mistake is starting the y axis at thirty, to fit the incidence line. Then the mortality points fall off the graph. Choose one scale that fits every value. And space the years to scale, or the last five years look like ten.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q2-mistake.0fa355d9e8de.mp3",
+        "startFrame": 0,
+        "endFrame": 459
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 1360,
+          "endMs": 1760,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1800,
+          "endMs": 1840,
+          "timestampMs": 1820,
+          "confidence": null
+        },
+        {
+          "text": " y",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " axis",
+          "startMs": 2360,
+          "endMs": 2560,
+          "timestampMs": 2460,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 2680,
+          "endMs": 2800,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " thirty,",
+          "startMs": 2880,
+          "endMs": 3440,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3480,
+          "endMs": 3520,
+          "timestampMs": 3500,
+          "confidence": null
+        },
+        {
+          "text": " fit",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3800,
+          "endMs": 3840,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " incidence",
+          "startMs": 3920,
+          "endMs": 4320,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " line.",
+          "startMs": 4400,
+          "endMs": 4800,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 5280,
+          "endMs": 5360,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5440,
+          "endMs": 5480,
+          "timestampMs": 5460,
+          "confidence": null
+        },
+        {
+          "text": " mortality",
+          "startMs": 5520,
+          "endMs": 6080,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " points",
+          "startMs": 6160,
+          "endMs": 6480,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " fall",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7000,
+          "endMs": 7040,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " graph.",
+          "startMs": 7120,
+          "endMs": 7880,
+          "timestampMs": 7500,
+          "confidence": null
+        },
+        {
+          "text": " Choose",
+          "startMs": 8160,
+          "endMs": 8480,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " scale",
+          "startMs": 8880,
+          "endMs": 9280,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 9520,
+          "endMs": 9760,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 9920,
+          "endMs": 10240,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " value.",
+          "startMs": 10320,
+          "endMs": 10880,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " space",
+          "startMs": 11440,
+          "endMs": 11760,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11800,
+          "endMs": 11840,
+          "timestampMs": 11820,
+          "confidence": null
+        },
+        {
+          "text": " years",
+          "startMs": 11920,
+          "endMs": 12160,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " scale,",
+          "startMs": 12400,
+          "endMs": 13040,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13240,
+          "endMs": 13280,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " last",
+          "startMs": 13360,
+          "endMs": 13600,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " years",
+          "startMs": 14000,
+          "endMs": 14240,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " ten.",
+          "startMs": 14640,
+          "endMs": 15280,
+          "timestampMs": 14960,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 1333,
+      "voiceover": {
+        "text": "Question three. A survey asked two thousand adults in one city whether they drink an energy drink every day, and whether they're currently living with diagnosed type 2 diabetes. Of four hundred daily drinkers, thirty-six had diabetes. Of sixteen hundred other adults, sixty-four had diabetes. A website claims that energy drinks cause type 2 diabetes. Calculate the prevalence of diabetes in each group. Then evaluate the method and the claim. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-question.96450653cbe3.mp3",
+        "startFrame": 0,
+        "endFrame": 997
+      },
+      "responseHold": {
+        "startFrame": 1009,
+        "endFrame": 1309
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 375,
+          "timestampMs": 187.5,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 400,
+          "endMs": 880,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 960,
+          "endMs": 1520,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " survey",
+          "startMs": 1600,
+          "endMs": 2013,
+          "timestampMs": 1806.5,
+          "confidence": null
+        },
+        {
+          "text": " asked",
+          "startMs": 2080,
+          "endMs": 2560,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " adults",
+          "startMs": 3440,
+          "endMs": 3760,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " city",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 4880,
+          "endMs": 5120,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " drink",
+          "startMs": 5360,
+          "endMs": 5520,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " energy",
+          "startMs": 5760,
+          "endMs": 6080,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " drink",
+          "startMs": 6160,
+          "endMs": 6400,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 6480,
+          "endMs": 6720,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " day,",
+          "startMs": 6800,
+          "endMs": 7440,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 7840,
+          "endMs": 8080,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 8119.999999999999,
+          "endMs": 8240,
+          "timestampMs": 8180,
+          "confidence": null
+        },
+        {
+          "text": " currently",
+          "startMs": 8320,
+          "endMs": 8720,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " living",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " diagnosed",
+          "startMs": 9280,
+          "endMs": 9920,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " type",
+          "startMs": 10080,
+          "endMs": 10320,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 10400,
+          "endMs": 10560,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " diabetes.",
+          "startMs": 10640,
+          "endMs": 11440,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " Of",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 12320,
+          "endMs": 12480,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 12560,
+          "endMs": 12800,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " daily",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " drinkers,",
+          "startMs": 13280,
+          "endMs": 14080,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " thirty-six",
+          "startMs": 14160,
+          "endMs": 14880,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 14960,
+          "endMs": 15120,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " diabetes.",
+          "startMs": 15200,
+          "endMs": 16000,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " Of",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " sixteen",
+          "startMs": 16720,
+          "endMs": 17120,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 17200,
+          "endMs": 17440,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 17600,
+          "endMs": 17760,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " adults,",
+          "startMs": 17840,
+          "endMs": 18640,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " sixty-four",
+          "startMs": 18760,
+          "endMs": 19360,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " diabetes.",
+          "startMs": 19760,
+          "endMs": 20480,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 21200,
+          "endMs": 21280,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " website",
+          "startMs": 21360,
+          "endMs": 21760,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " claims",
+          "startMs": 21840,
+          "endMs": 22160,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " energy",
+          "startMs": 22560,
+          "endMs": 22720,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " drinks",
+          "startMs": 22800,
+          "endMs": 23120,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " cause",
+          "startMs": 23200,
+          "endMs": 23600,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " type",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 24000,
+          "endMs": 24160,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " diabetes.",
+          "startMs": 24240,
+          "endMs": 24960,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " Calculate",
+          "startMs": 25520,
+          "endMs": 26000,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26080,
+          "endMs": 26160,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " prevalence",
+          "startMs": 26240,
+          "endMs": 26640,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 26680,
+          "endMs": 26720,
+          "timestampMs": 26700,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 26800,
+          "endMs": 27440,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 27520,
+          "endMs": 27680,
+          "timestampMs": 27600,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 27760,
+          "endMs": 27920,
+          "timestampMs": 27840,
+          "confidence": null
+        },
+        {
+          "text": " group.",
+          "startMs": 28080,
+          "endMs": 28480,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 28880,
+          "endMs": 29120,
+          "timestampMs": 29000,
+          "confidence": null
+        },
+        {
+          "text": " evaluate",
+          "startMs": 29360,
+          "endMs": 29840,
+          "timestampMs": 29600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29880,
+          "endMs": 29920,
+          "timestampMs": 29900,
+          "confidence": null
+        },
+        {
+          "text": " method",
+          "startMs": 30000,
+          "endMs": 30400,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 30560,
+          "endMs": 30720,
+          "timestampMs": 30640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30760,
+          "endMs": 30800,
+          "timestampMs": 30780,
+          "confidence": null
+        },
+        {
+          "text": " claim.",
+          "startMs": 30880,
+          "endMs": 31360,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 31920,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32040,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 32280,
+          "endMs": 32400,
+          "timestampMs": 32340,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 32439.999999999996,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32459.999999999996,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 32560.000000000004,
+          "endMs": 33200,
+          "timestampMs": 32880,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1309,
+        "responseHoldStart": 1009,
+        "pausePrompt": 1009
+      }
+    },
+    {
+      "id": "q3-calc",
+      "type": "concept",
+      "durationInFrames": 893,
+      "voiceover": {
+        "text": "Prevalence is existing cases out of the group, as a percentage. Thirty-six over four hundred is nine per cent. Sixty-four over sixteen hundred is four per cent, so diabetes was about twice as common among daily drinkers. Now name the design. Both things were measured at one moment, so it's a cross-sectional study, a snapshot. Its strength: it's quick, and it measures prevalence among the respondents.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-calc.063f72ef8181.mp3",
+        "startFrame": 0,
+        "endFrame": 833
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Prevalence",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " existing",
+          "startMs": 800,
+          "endMs": 1280,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 1360,
+          "endMs": 1840,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 2000,
+          "endMs": 2160,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 2200,
+          "endMs": 2240,
+          "timestampMs": 2220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " group,",
+          "startMs": 2480,
+          "endMs": 2960,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 3040,
+          "endMs": 3120,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3200,
+          "endMs": 3240,
+          "timestampMs": 3220,
+          "confidence": null
+        },
+        {
+          "text": " percentage.",
+          "startMs": 3280,
+          "endMs": 4000,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " Thirty-six",
+          "startMs": 4560,
+          "endMs": 5120,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 5200,
+          "endMs": 5440,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 5760,
+          "endMs": 6160,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " cent.",
+          "startMs": 7240,
+          "endMs": 8080,
+          "timestampMs": 7660,
+          "confidence": null
+        },
+        {
+          "text": " Sixty-four",
+          "startMs": 8200,
+          "endMs": 8720,
+          "timestampMs": 8460,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 8880,
+          "endMs": 9120,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " sixteen",
+          "startMs": 9240,
+          "endMs": 9520,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 9600,
+          "endMs": 9920,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " cent,",
+          "startMs": 10880,
+          "endMs": 11520,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11600,
+          "endMs": 11680,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 11760,
+          "endMs": 12400,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 12480,
+          "endMs": 12560,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 12680,
+          "endMs": 12800,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 12960,
+          "endMs": 13360,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 13440,
+          "endMs": 13520,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 13600,
+          "endMs": 13920,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " among",
+          "startMs": 14040,
+          "endMs": 14160,
+          "timestampMs": 14100,
+          "confidence": null
+        },
+        {
+          "text": " daily",
+          "startMs": 14240,
+          "endMs": 14480,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " drinkers.",
+          "startMs": 14560,
+          "endMs": 15520,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " design.",
+          "startMs": 16480,
+          "endMs": 17040,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " Both",
+          "startMs": 17600,
+          "endMs": 17840,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " things",
+          "startMs": 17960,
+          "endMs": 18080,
+          "timestampMs": 18020,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " measured",
+          "startMs": 18280,
+          "endMs": 18560,
+          "timestampMs": 18420,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " moment,",
+          "startMs": 19040,
+          "endMs": 19680,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 20080,
+          "endMs": 20200,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " cross-sectional",
+          "startMs": 20400,
+          "endMs": 21120,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " study,",
+          "startMs": 21200,
+          "endMs": 21840,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21880,
+          "endMs": 21920,
+          "timestampMs": 21900,
+          "confidence": null
+        },
+        {
+          "text": " snapshot.",
+          "startMs": 22000,
+          "endMs": 22640,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " Its",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " strength:",
+          "startMs": 23600,
+          "endMs": 24240,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 24280,
+          "endMs": 24480,
+          "timestampMs": 24380,
+          "confidence": null
+        },
+        {
+          "text": " quick,",
+          "startMs": 24640,
+          "endMs": 25120,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 25360,
+          "endMs": 25440,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " measures",
+          "startMs": 25520,
+          "endMs": 25840,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " prevalence",
+          "startMs": 25920,
+          "endMs": 26400,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " among",
+          "startMs": 26480,
+          "endMs": 26720,
+          "timestampMs": 26600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26760,
+          "endMs": 26800,
+          "timestampMs": 26780,
+          "confidence": null
+        },
+        {
+          "text": " respondents.",
+          "startMs": 27000,
+          "endMs": 27760,
+          "timestampMs": 27380,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-evaluate",
+      "type": "concept",
+      "durationInFrames": 1191,
+      "voiceover": {
+        "text": "Now the limitations. A snapshot can't show which came first, so some people may have changed their drinking after diagnosis. Daily drinkers may also differ in diet, weight, sleep or age, and any of those could be the real cause, so they're possible confounders. The answers were self-reported, online, from one city. So the data show an association, not a cause, and the claim goes too far. A stronger test is a cohort: record drinks in adults without diabetes, follow them forward, and compare who develops it, adjusting for confounders.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-evaluate.6dc55b19a155.mp3",
+        "startFrame": 0,
+        "endFrame": 1131
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 240,
+          "endMs": 373,
+          "timestampMs": 306.5,
+          "confidence": null
+        },
+        {
+          "text": " limitations.",
+          "startMs": 400,
+          "endMs": 1520,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " snapshot",
+          "startMs": 1920,
+          "endMs": 2480,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 3320,
+          "endMs": 3440,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " came",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " first,",
+          "startMs": 3840,
+          "endMs": 4640,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 4760,
+          "endMs": 4880,
+          "timestampMs": 4820,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 5040,
+          "endMs": 5200,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 5600,
+          "endMs": 5760,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " changed",
+          "startMs": 6000,
+          "endMs": 6320,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " drinking",
+          "startMs": 6520,
+          "endMs": 6880,
+          "timestampMs": 6700,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " diagnosis.",
+          "startMs": 7440,
+          "endMs": 8320,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " Daily",
+          "startMs": 9040,
+          "endMs": 9280,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " drinkers",
+          "startMs": 9360,
+          "endMs": 9760,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 9880,
+          "endMs": 10000,
+          "timestampMs": 9940,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 10160,
+          "endMs": 10320,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " differ",
+          "startMs": 10400,
+          "endMs": 10640,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " diet,",
+          "startMs": 10880,
+          "endMs": 11520,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " weight,",
+          "startMs": 11680,
+          "endMs": 12080,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " sleep",
+          "startMs": 12240,
+          "endMs": 12400,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " age,",
+          "startMs": 12720,
+          "endMs": 13440,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13560,
+          "endMs": 13680,
+          "timestampMs": 13620,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 13800,
+          "endMs": 13920,
+          "timestampMs": 13860,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 14240,
+          "endMs": 14400,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 14480,
+          "endMs": 14640,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 14680,
+          "endMs": 14720,
+          "timestampMs": 14700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14760,
+          "endMs": 14800,
+          "timestampMs": 14780,
+          "confidence": null
+        },
+        {
+          "text": " real",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " cause,",
+          "startMs": 15200,
+          "endMs": 15840,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " possible",
+          "startMs": 16600,
+          "endMs": 16800,
+          "timestampMs": 16700,
+          "confidence": null
+        },
+        {
+          "text": " confounders.",
+          "startMs": 16880,
+          "endMs": 17680,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " answers",
+          "startMs": 18640,
+          "endMs": 18960,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " self-reported,",
+          "startMs": 19320,
+          "endMs": 20240,
+          "timestampMs": 19780,
+          "confidence": null
+        },
+        {
+          "text": " online,",
+          "startMs": 20520,
+          "endMs": 20960,
+          "timestampMs": 20740,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 21080,
+          "endMs": 21200,
+          "timestampMs": 21140,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 21280,
+          "endMs": 21440,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " city.",
+          "startMs": 21600,
+          "endMs": 22480,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 23040,
+          "endMs": 23200,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 23280,
+          "endMs": 23440,
+          "timestampMs": 23360,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 23480,
+          "endMs": 23520,
+          "timestampMs": 23500,
+          "confidence": null
+        },
+        {
+          "text": " association,",
+          "startMs": 23600,
+          "endMs": 24720,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 24800,
+          "endMs": 25040,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25120,
+          "endMs": 25160,
+          "timestampMs": 25140,
+          "confidence": null
+        },
+        {
+          "text": " cause,",
+          "startMs": 25200,
+          "endMs": 26000,
+          "timestampMs": 25600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26040,
+          "endMs": 26080,
+          "timestampMs": 26060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26160,
+          "endMs": 26200,
+          "timestampMs": 26180,
+          "confidence": null
+        },
+        {
+          "text": " claim",
+          "startMs": 26240,
+          "endMs": 26560,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 26640,
+          "endMs": 26880,
+          "timestampMs": 26760,
+          "confidence": null
+        },
+        {
+          "text": " too",
+          "startMs": 26960,
+          "endMs": 27120,
+          "timestampMs": 27040,
+          "confidence": null
+        },
+        {
+          "text": " far.",
+          "startMs": 27200,
+          "endMs": 28320,
+          "timestampMs": 27760,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 28400,
+          "endMs": 28480,
+          "timestampMs": 28440,
+          "confidence": null
+        },
+        {
+          "text": " stronger",
+          "startMs": 28640,
+          "endMs": 28880,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " test",
+          "startMs": 29080,
+          "endMs": 29280,
+          "timestampMs": 29180,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 29320,
+          "endMs": 29360,
+          "timestampMs": 29340,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 29440,
+          "endMs": 29520,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " cohort:",
+          "startMs": 29600,
+          "endMs": 30560,
+          "timestampMs": 30080,
+          "confidence": null
+        },
+        {
+          "text": " record",
+          "startMs": 30640,
+          "endMs": 30960,
+          "timestampMs": 30800,
+          "confidence": null
+        },
+        {
+          "text": " drinks",
+          "startMs": 31040,
+          "endMs": 31280,
+          "timestampMs": 31160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 31360,
+          "endMs": 31440,
+          "timestampMs": 31400,
+          "confidence": null
+        },
+        {
+          "text": " adults",
+          "startMs": 31600,
+          "endMs": 31840,
+          "timestampMs": 31720,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 32040,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32140,
+          "confidence": null
+        },
+        {
+          "text": " diabetes,",
+          "startMs": 32320,
+          "endMs": 33200,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 33280,
+          "endMs": 33520,
+          "timestampMs": 33400,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 33640,
+          "endMs": 33760,
+          "timestampMs": 33700,
+          "confidence": null
+        },
+        {
+          "text": " forward,",
+          "startMs": 34040,
+          "endMs": 34373,
+          "timestampMs": 34206.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 34427,
+          "endMs": 34480,
+          "timestampMs": 34453.5,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 34560,
+          "endMs": 34960,
+          "timestampMs": 34760,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 35080,
+          "endMs": 35200,
+          "timestampMs": 35140,
+          "confidence": null
+        },
+        {
+          "text": " develops",
+          "startMs": 35400,
+          "endMs": 35680,
+          "timestampMs": 35540,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 35720,
+          "endMs": 36000,
+          "timestampMs": 35860,
+          "confidence": null
+        },
+        {
+          "text": " adjusting",
+          "startMs": 36080,
+          "endMs": 36640,
+          "timestampMs": 36360,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 36680,
+          "endMs": 36720,
+          "timestampMs": 36700,
+          "confidence": null
+        },
+        {
+          "text": " confounders.",
+          "startMs": 36800,
+          "endMs": 37680,
+          "timestampMs": 37240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 622,
+      "voiceover": {
+        "text": "The classic mistake is thinking two thousand people makes the claim proven. More responses can reduce random uncertainty, but don't remove selection bias or fix the design. A snapshot still can't show a cause. For that, you need the order in time, and a way to deal with confounders.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/q3-mistake.e8c53dcc77c5.mp3",
+        "startFrame": 0,
+        "endFrame": 562
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " thinking",
+          "startMs": 1360,
+          "endMs": 1760,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 2080,
+          "endMs": 2400,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3240,
+          "endMs": 3280,
+          "timestampMs": 3260,
+          "confidence": null
+        },
+        {
+          "text": " claim",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " proven.",
+          "startMs": 3680,
+          "endMs": 4240,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " More",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " responses",
+          "startMs": 5040,
+          "endMs": 5600,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 5680,
+          "endMs": 5840,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " reduce",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " random",
+          "startMs": 6400,
+          "endMs": 6720,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " uncertainty,",
+          "startMs": 6840,
+          "endMs": 7840,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 8480,
+          "endMs": 8640,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " selection",
+          "startMs": 8720,
+          "endMs": 9120,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " bias",
+          "startMs": 9200,
+          "endMs": 9600,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " fix",
+          "startMs": 10000,
+          "endMs": 10240,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " design.",
+          "startMs": 10680,
+          "endMs": 11240,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 11520,
+          "endMs": 11600,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " snapshot",
+          "startMs": 11680,
+          "endMs": 12240,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " cause.",
+          "startMs": 13600,
+          "endMs": 13920,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " that,",
+          "startMs": 14480,
+          "endMs": 14960,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15320,
+          "endMs": 15360,
+          "timestampMs": 15340,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 15520,
+          "endMs": 15760,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " time,",
+          "startMs": 16000,
+          "endMs": 16640,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16760,
+          "endMs": 16880,
+          "timestampMs": 16820,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16960,
+          "endMs": 17000,
+          "timestampMs": 16980,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 17240,
+          "endMs": 17280,
+          "timestampMs": 17260,
+          "confidence": null
+        },
+        {
+          "text": " deal",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " confounders.",
+          "startMs": 17840,
+          "endMs": 18720,
+          "timestampMs": 18280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 819,
+      "voiceover": {
+        "text": "So, here's your first move for each type. For a rate, divide by the right population, and use the same unit for every group. For a graph, set up the axes, units and an even scale that fits every value, before you plot. For a study, name the design, then judge what it can and can't show. Next: how type 2 diabetes can be managed.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/decision-board.43b7c858e683.mp3",
+        "startFrame": 0,
+        "endFrame": 759
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " here's",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 1120,
+          "endMs": 1440,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " move",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 2000,
+          "endMs": 2160,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " type.",
+          "startMs": 2240,
+          "endMs": 2920,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 3200,
+          "endMs": 3280,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3360,
+          "endMs": 3440,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " rate,",
+          "startMs": 3520,
+          "endMs": 4160,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " divide",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " right",
+          "startMs": 5040,
+          "endMs": 5200,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " population,",
+          "startMs": 5280,
+          "endMs": 6160,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 6400,
+          "endMs": 6560,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 6800,
+          "endMs": 7040,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " unit",
+          "startMs": 7120,
+          "endMs": 7440,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 7760,
+          "endMs": 8000,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " group.",
+          "startMs": 8080,
+          "endMs": 8960,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9160,
+          "endMs": 9200,
+          "timestampMs": 9180,
+          "confidence": null
+        },
+        {
+          "text": " graph,",
+          "startMs": 9280,
+          "endMs": 10080,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 10160,
+          "endMs": 10320,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 10360,
+          "endMs": 10400,
+          "timestampMs": 10380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " axes,",
+          "startMs": 10640,
+          "endMs": 11440,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 11520,
+          "endMs": 11840,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 12240,
+          "endMs": 12400,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 12480,
+          "endMs": 12720,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " scale",
+          "startMs": 12800,
+          "endMs": 13200,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 13440,
+          "endMs": 13760,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " value,",
+          "startMs": 14160,
+          "endMs": 14800,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 14880,
+          "endMs": 15280,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " plot.",
+          "startMs": 15640,
+          "endMs": 16320,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16520,
+          "endMs": 16560,
+          "timestampMs": 16540,
+          "confidence": null
+        },
+        {
+          "text": " study,",
+          "startMs": 16640,
+          "endMs": 17440,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 17520,
+          "endMs": 17760,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17800,
+          "endMs": 17840,
+          "timestampMs": 17820,
+          "confidence": null
+        },
+        {
+          "text": " design,",
+          "startMs": 18120,
+          "endMs": 18640,
+          "timestampMs": 18380,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 18760,
+          "endMs": 18880,
+          "timestampMs": 18820,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 19280,
+          "endMs": 19360,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 19440,
+          "endMs": 19520,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 19600,
+          "endMs": 19920,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20000,
+          "endMs": 20240,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 20360,
+          "endMs": 20560,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " show.",
+          "startMs": 20640,
+          "endMs": 21440,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " Next:",
+          "startMs": 21920,
+          "endMs": 22720,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " type",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 23360,
+          "endMs": 23440,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " diabetes",
+          "startMs": 23520,
+          "endMs": 24240,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " managed.",
+          "startMs": 24640,
+          "endMs": 25280,
+          "timestampMs": 24960,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 1200,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M8-G01-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

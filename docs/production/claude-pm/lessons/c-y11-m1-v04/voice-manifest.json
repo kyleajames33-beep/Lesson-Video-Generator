@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v04.md",
+  "sourceSha256": "8f309d189d1f69ee03c533dde519531cb16079af3e807159e6cf4b0635ec89c8",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, the water escaped as steam, and we just let it go. To keep it, we have to catch that vapour and cool it back into a liquid. That's called distillation, and it works well for salt water. But with two liquids, like ethanol and water, a simple setup does a poor job, and adding a tall column packed with glass beads does a much better one. So why does a fractionating column improve liquid separation?",
+      "audioFile": "public/audio/chem-y11-m1-v04/hook.wav"
+    },
+    {
+      "id": "simple-distillation",
+      "text": "Here's simple distillation. Heat salt water in a flask. Water molecules escape as vapour, which just means a substance in its gas state, but the salt ions don't. Salt is non-volatile, so it doesn't evaporate at these temperatures. The vapour flows into the condenser, a tube with cold water running through an outer jacket. The cold glass takes energy from the vapour, so it condenses back into liquid water. That liquid is called the distillate, and it drips into the receiver. The salt stays behind in the flask.",
+      "audioFile": "public/audio/chem-y11-m1-v04/simple-distillation.wav"
+    },
+    {
+      "id": "thermometer-and-safety",
+      "text": "Two details matter. The thermometer bulb sits level with the side arm, so it measures the vapour that's about to leave, not the boiling liquid. For pure water, it reads a steady hundred degrees. And the apparatus must never be sealed. The receiver stays open to the air, because heating a closed system builds up pressure, and the glass could burst.",
+      "audioFile": "public/audio/chem-y11-m1-v04/thermometer-and-safety.wav"
+    },
+    {
+      "id": "surprise-two-liquids",
+      "text": "Now try two liquids. Ethanol boils at seventy eight degrees, and water boils at a hundred. You might expect the ethanol to boil off at seventy eight, and leave the water behind. That's not what happens. A mixture that's seventeen percent ethanol by mass starts boiling at about eighty nine degrees, and both kinds of molecule escape. Ethanol molecules are held less strongly by their neighbours, so more of them get away. The vapour is richer in ethanol, about sixty two percent, but that's still a lot of water.",
+      "audioFile": "public/audio/chem-y11-m1-v04/surprise-two-liquids.wav"
+    },
+    {
+      "id": "staircase",
+      "text": "So what if we do it again? Condense that vapour, and boil the new liquid. Now the vapour is about eighty percent ethanol. Do it again, and it's about eighty six, then about eighty nine. Each cycle of boiling and condensing enriches the vapour, which means it raises the share of the more volatile liquid, the one that evaporates more easily. Notice the steps are getting smaller. Simple distillation gives you only one cycle. To separate two liquids well, you need many.",
+      "audioFile": "public/audio/chem-y11-m1-v04/staircase.wav"
+    },
+    {
+      "id": "column",
+      "text": "That's what a fractionating column does, automatically. It's a tall tube packed with glass beads, between the flask and the condenser. It's hottest at the bottom and cooler towards the top. Rising vapour condenses on the cooler beads, and that liquid trickles down. Hotter vapour rising from below boils some of it again, and more of the ethanol escapes. This happens over and over up the column, so each level holds vapour a little richer in ethanol than the level below. By the top, the vapour is mostly ethanol, at about seventy eight degrees.",
+      "audioFile": "public/audio/chem-y11-m1-v04/column.wav"
+    },
+    {
+      "id": "beads-and-fractions",
+      "text": "The beads matter because they give the vapour a huge surface to condense on, so lots of these little cycles happen in a short height. A longer column gives even more cycles, so the separation gets better. You collect the distillate in parts, called fractions. While the thermometer stays near seventy eight, the fraction is mostly ethanol. When the reading climbs towards a hundred, the ethanol is running out, so you swap in a new receiver.",
+      "audioFile": "public/audio/chem-y11-m1-v04/beads-and-fractions.wav"
+    },
+    {
+      "id": "azeotrope",
+      "text": "But here's the limit. However tall the column, the distillate never gets past about ninety six percent ethanol by mass. At that composition, the vapour has exactly the same composition as the liquid, so another cycle changes nothing. A mixture like this, which boils without changing its composition, is called an azeotrope. It boils at one steady temperature, just like a pure substance. So a steady thermometer reading is a hint, not proof of purity.",
+      "audioFile": "public/audio/chem-y11-m1-v04/azeotrope.wav"
+    },
+    {
+      "id": "choosing",
+      "text": "So which should you choose? If one part doesn't evaporate at all, like salt in water, or the boiling points are far apart, one cycle is enough. That's simple distillation. If two liquids mix and their boiling points are close, use fractional distillation. You'll sometimes hear twenty five degrees apart as a rough guide, but it isn't a law. What matters is how much more easily one liquid evaporates, and how pure you need it. Oil refineries use giant columns like this to split crude oil into fractions, like petrol and diesel.",
+      "audioFile": "public/audio/chem-y11-m1-v04/choosing.wav"
+    },
+    {
+      "id": "safety-and-memory-aid",
+      "text": "Ethanol catches fire easily, so it's heated with an electric heating mantle or a water bath, never a flame, with the apparatus clamped and the receiver open. Here's a way to remember the column. Simple distillation is one step up the ladder. A column climbs many steps, and the ladder ends at the azeotrope.",
+      "audioFile": "public/audio/chem-y11-m1-v04/safety-and-memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A solution contains water and a dissolved blue dye that doesn't evaporate when heated. Name and explain a technique that could collect the water, and explain why filtration can't do it. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v04/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Use simple distillation. Heat the solution, and the water evaporates while the non-volatile dye stays in the flask. The vapour condenses in the condenser and collects as pure water. Filtration can't work, because the dye is dissolved. Its particles are far smaller than the pores, so they pass straight through with the water. Filtering out the dye is the slip to avoid.",
+      "audioFile": "public/audio/chem-y11-m1-v04/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Two liquids, P and Q, mix completely. Pure P boils at sixty eight degrees, and pure Q boils at seventy two. Their first vapour is only slightly richer in P than the liquid. Explain why simple distillation would separate them poorly, and how a fractionating column improves the separation. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v04/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The boiling points are only four degrees apart, so both liquids evaporate together, and one cycle gives vapour only a little richer in P. A column gives many cycles of condensing and boiling again, each one enriching the vapour in P. And no, the boiling points alone can't guarantee pure P, because the mixture might form an azeotrope. Saying P boils off first at sixty eight, leaving pure Q, is the slip to avoid.",
+      "audioFile": "public/audio/chem-y11-m1-v04/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Distillation separates by how easily things evaporate. But what about a single drop of black ink? It's a mixture of several dyes, and there's only a tiny amount. Next time, we'll put it on a strip of paper, and find out why its dyes travel different distances.",
+      "audioFile": "public/audio/chem-y11-m1-v04/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v04/key-notes.wav"
+    }
+  ]
+}

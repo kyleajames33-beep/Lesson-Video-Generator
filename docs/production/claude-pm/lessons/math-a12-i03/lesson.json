@@ -1,0 +1,194 @@
+{
+  "id": "math-a12-i03",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "40231d5b5fcf5869c563b70929fb04181f7b8d88db13194eb06717f403402536",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: x in the exponent, and a phone on charge",
+      "voiceover": {
+        "text": "Last video ended here: the integral of e to the three x. A phone on a charger fills quickly at first, then more and more slowly. Its charging rate is thirty, times e to the minus a half t, percent per hour. Its battery level is a primitive of that rate. The power rule can't help, because x isn't the base. It's in the exponent. So guess e to the three x itself. Its derivative is three e to the three x, three times too big. And what about a base that isn't e, like two to the x? Why does an exponential primitive divide by the inner rate?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "eˣ is its own primitive",
+      "voiceover": {
+        "text": "Start with plain e to the x. Its derivative is e to the x, so at every point, its gradient equals its height. That makes e to the x a primitive of itself. So the integral of e to the x is e to the x, plus C. Slide e to the x up by three, and the gradient is still e to the x at every x. That's why the C is still there."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "e^(3x): the gradient is three times the height",
+      "voiceover": {
+        "text": "Now e to the three x. By the chain rule, its derivative is three times e to the three x. On the graph, at x equals zero, the height is one, but the gradient is three. Everywhere on this curve, the gradient is three times the height. So to get a primitive, divide by three. A third of e to the three x has gradient exactly e to the three x. Watch the gradient of that smaller curve. It lands right on e to the three x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "any linear exponent",
+      "voiceover": {
+        "text": "The same happens for any linear exponent, a x plus b. Differentiating e to the a x plus b multiplies by a, the inner rate, so the primitive divides by it. The integral of e to the a x plus b is one over a, times e to the a x plus b, plus C. This needs a not zero. If a is zero, the exponent is constant, so there's no exponential. So two e to the three x becomes two thirds of e to the three x. And e to the minus x divides by minus one, giving minus e to the minus x. Check the sign by differentiating: minus e to the minus x differentiates back to e to the minus x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04a",
+      "title": "the phone's primitive",
+      "voiceover": {
+        "text": "Now the phone. Its charging rate has inner rate minus a half, so divide by minus a half, which means multiplying by minus two. The battery level is minus sixty, e to the minus a half t, plus C. A minus sign, while the battery fills? Yes. That term climbs towards zero as t grows, so the level rises."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "when the exponent isn't linear",
+      "voiceover": {
+        "text": "If the exponent isn't linear, the reverse chain rule still works, as long as the exponent's derivative is a factor. Take two x, times e to the x squared. The exponent is x squared, and its derivative, two x, is right there. Differentiating e to the x squared gives exactly two x, times e to the x squared. So the integral is e to the x squared, plus C. In general, the integral of f prime of x, times e to the f of x, is e to the f of x, plus C. And remember: fix a missing number, never a missing x. So x times e to the x squared gives half of e to the x squared. But e to the x squared on its own has no primitive we can write with these rules."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "another base: the inner rate is ln a",
+      "voiceover": {
+        "text": "Now two to the x. Differentiating a to the x gives a to the x, times the natural log of a. Here's why. a to the x is e to the x times the natural log of a. So its exponent is linear, and the inner rate is the natural log of a. Divide by it, and the integral of a to the x is a to the x, over the natural log of a, plus C, for a positive. So two to the x integrates to two to the x, over the natural log of two. And when a is e, the natural log of e is one, so this is just e to the x again."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "base one",
+      "voiceover": {
+        "text": "But one base breaks this rule. When a is one, the natural log of one is zero, and we can't divide by zero. Watch the base slide towards one. The curve flattens, because one to the x is one, for every x. At a equals one, there's nothing exponential left. The integral of one is just x, plus C. And look at the primitive through the origin. As a gets close to one, it straightens into the line y equals x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "worked example: an initial condition",
+      "voiceover": {
+        "text": "Now a worked example. A drug's amount, A milligrams, changes at the rate d A by d t equals minus a half, times e to the minus a half t, per hour. At t equals zero, A is two. Find A. Integrate by dividing by the inner rate, minus a half. The minus halves cancel, giving e to the minus a half t, plus C. Now use the condition. At t equals zero, e to the zero is one, so one plus C equals two, and C is one. So A equals e to the minus a half t, plus one. As t grows, e to the minus a half t shrinks towards zero, so A levels off at one milligram."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08a",
+      "title": "the phone's answer",
+      "voiceover": {
+        "text": "The phone works the same way. It starts at forty percent, so minus sixty, plus C, is forty, and C is a hundred. It heads for a hundred percent, but the charging rate is always half of what's left to fill, so it fills more and more slowly."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "worked example: algebra first",
+      "voiceover": {
+        "text": "Algebra still comes first. Find the integral of e to the x plus one, all squared. Expand it: e to the two x, plus two e to the x, plus one. Squaring e to the x doubles the exponent, giving e to the two x, not e to the x squared. Now each term has its own inner rate. e to the two x divides by two, giving a half e to the two x. Two e to the x has inner rate one, so it stays two e to the x. And one becomes x. So the answer is a half e to the two x, plus two e to the x, plus x, plus C."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the pattern to keep. Divide by the inner rate: by a, for e to the a x plus b, and by the natural log of a, for a to the x. Then differentiate back to check."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the integral of four e to the two x minus one. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The exponent is two x minus one, so the inner rate is two. Divide by two. Four over two is two, so the answer is two e to the two x minus one, plus C. Differentiating multiplies by two again, giving four e to the two x minus one. Leaving it as four e to the two x minus one forgets the inner rate. Its derivative is twice too big."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find the integral of three to the x, plus e to the minus two x. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Three to the x has inner rate the natural log of three, so it becomes three to the x, over the natural log of three. e to the minus two x divides by minus two, giving minus a half, e to the minus two x. With one C, it's three to the x over the natural log of three, minus a half e to the minus two x, plus C. Multiplying by the natural log of three would be differentiating, not integrating."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So an exponential primitive divides by the inner rate, as long as that rate isn't zero. Next, the one power that the power rule can't handle: one over x. The rule would give x to the zero, over zero. So what is its primitive?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

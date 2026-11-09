@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v08.md",
+  "sourceSha256": "efc7490b78c986d180d476f0feadaa9375fcd264001b7e9b8a9f5b6a10ba5800",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we saw chlorine written like this, with a thirty-five above and a seventeen below. It's called nuclide notation, and it's a compact label for what's inside an atom. By the end of this video, you'll be able to read any label like this, and count exactly how many protons, neutrons and electrons it describes, for an atom or an ion. So let's start with the three particles we're counting.",
+      "audioFile": "public/audio/chem-y11-m1-v08/hook.wav"
+    },
+    {
+      "id": "particles",
+      "text": "Every atom has a tiny, dense centre called the nucleus. It holds protons, which each carry a charge of plus one, and neutrons, which carry no charge at all. Protons and neutrons have almost the same mass, so we give each a relative mass of one. Around the nucleus are the electrons. Each has a charge of minus one, but its mass is less than a thousandth of a proton's, so we count it as almost zero. This drawing is a model, not to scale. A real nucleus is far smaller, compared with the whole atom.",
+      "audioFile": "public/audio/chem-y11-m1-v08/particles.wav"
+    },
+    {
+      "id": "atomic-number",
+      "text": "Now the bottom number. Seventeen is the atomic number, written Z. It's the number of protons in the nucleus. And the number of protons decides which element it is. Every atom with seventeen protons is chlorine. Give it one more proton, and it isn't chlorine any more, it's argon. That's also why the periodic table runs in order of atomic number. Chlorine is element seventeen, so it sits in the seventeenth box.",
+      "audioFile": "public/audio/chem-y11-m1-v08/atomic-number.wav"
+    },
+    {
+      "id": "mass-number",
+      "text": "The top number, thirty-five, is the mass number, written A. It counts every particle in the nucleus, protons plus neutrons. Electrons aren't counted, because they add almost no mass. So to find the neutrons, take the mass number and subtract the atomic number. Thirty-five minus seventeen gives eighteen neutrons.",
+      "audioFile": "public/audio/chem-y11-m1-v08/mass-number.wav"
+    },
+    {
+      "id": "ions",
+      "text": "What about electrons? In a neutral atom, the plus and minus charges cancel, so the number of electrons equals the number of protons. This chlorine atom has seventeen electrons. But in salt, chlorine isn't a neutral atom. It has gained one extra electron, so it carries a charge of minus one. That makes it an ion, a charged particle, written with a small minus sign at the top right. The chloride ion has seventeen protons and eighteen electrons. Notice what didn't change. The protons, and so the element, stayed exactly the same.",
+      "audioFile": "public/audio/chem-y11-m1-v08/ions.wav"
+    },
+    {
+      "id": "iron",
+      "text": "Let's try iron, with fifty-six on top, twenty-six below, and two plus at the top right. Protons: that's the atomic number, twenty-six. Neutrons: fifty-six minus twenty-six, which is thirty. Electrons: a neutral iron atom would have twenty-six, but two plus means it has lost two, so it has twenty-four. Check the charge: twenty-six positive protons and twenty-four negative electrons leave plus two. It matches.",
+      "audioFile": "public/audio/chem-y11-m1-v08/iron.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Here's another kind of chlorine atom, chlorine-thirty-seven. Is it still chlorine? And what's different inside it, compared with chlorine-thirty-five? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v08/prediction.wav"
+    },
+    {
+      "id": "isotopes",
+      "text": "Yes, it's still chlorine, because it still has seventeen protons. The difference is in the neutrons. Thirty-seven minus seventeen gives twenty, two more than chlorine-thirty-five's eighteen. Atoms of the same element with different numbers of neutrons are called isotopes. And because both have seventeen electrons, arranged the same way, they react in essentially the same way. Chemistry is mostly about electrons, and neutrons hardly change it.",
+      "audioFile": "public/audio/chem-y11-m1-v08/isotopes.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "So each particle has its own job, and here's a line to hold onto. Protons pick the element. Neutrons pick the isotope. Electrons pick the charge. Change the protons, and you've got a different element. Change the neutrons, and you've got a different isotope. Change the electrons, and you've got an ion.",
+      "audioFile": "public/audio/chem-y11-m1-v08/memory-line.wav"
+    },
+    {
+      "id": "stability",
+      "text": "Isotopes can also differ in another way. Carbon-twelve and carbon-thirteen are stable, but carbon-fourteen is unstable, or radioactive. Sooner or later, its nucleus breaks down and gives out radiation. Why? Inside a nucleus, the positive protons repel each other. A very short-range attraction, called the strong nuclear force, holds all the protons and neutrons together. Neutrons add that attraction without adding any repulsion. Small nuclei are stable with roughly equal numbers of protons and neutrons, while heavy ones need extra neutrons, like lead-two-hundred-and-eight, with eighty-two protons and a hundred and twenty-six neutrons. With too many or too few neutrons, a nucleus is unstable. What it gives out when it breaks down is for a later video.",
+      "audioFile": "public/audio/chem-y11-m1-v08/stability.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Magnesium-twenty-four two plus and magnesium-twenty-five two plus both have atomic number twelve. State the number of protons, neutrons and electrons in each, and identify how the two particles are related. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v08/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Both have twelve protons, since that's the atomic number, and both have ten electrons, because two plus means two electrons were lost. The neutrons differ. Twenty-four minus twelve is twelve, and twenty-five minus twelve is thirteen. Same element with different neutrons, so they're isotopes, and both are ions with the same charge. Fourteen electrons is the classic slip. A positive charge means electrons were lost, not gained.",
+      "audioFile": "public/audio/chem-y11-m1-v08/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A particle has sixteen protons, eighteen neutrons and eighteen electrons. Write its nuclide notation, including its charge, and name the element. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v08/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Sixteen protons makes it element sixteen, sulfur. The mass number is sixteen plus eighteen, thirty-four. It has two more electrons than protons, so its charge is two minus. So it's sulfur-thirty-four, with thirty-four on top, sixteen below, and two minus at the top right. Writing fifty-two on top is the slip. The mass number counts the nucleus only, never the electrons.",
+      "audioFile": "public/audio/chem-y11-m1-v08/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So a mass number is always a whole number, because it counts whole particles. But look up chlorine on the periodic table, and its mass is listed as thirty-five point four five. Not thirty-five, not thirty-seven, and not a whole number at all. Next time, we'll see why. It's an average over both isotopes, weighted by how common each one is.",
+      "audioFile": "public/audio/chem-y11-m1-v08/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v08/key-notes.wav"
+    }
+  ]
+}

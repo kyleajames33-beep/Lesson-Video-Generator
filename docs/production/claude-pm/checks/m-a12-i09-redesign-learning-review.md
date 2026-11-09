@@ -1,0 +1,15 @@
+# Maths i09 Revision 2: independent learning review
+
+Codex,9 November2026. Source SHA256 `4d373842a16222036b9b7789efb83e8fb33fe5c0babb4a25b02285f156762d7d`. Full narration and visual proposal reviewed. Actual art,motion and voiced preview pending.
+
+Result:0 blockers,1 should fix,0 optional. Shared maths finding counted once.
+
+Starting with i08's endpoint subtraction, the thermometer makes subtracting a negative familiar:1-(-2)=3 degrees warmer. It is an analogy for endpoint difference,not a claim that temperature is the integral's integrand. The graph's predicted sign exposes the slip before the bracket repair. The signs belonging to the rule and to the number get distinct labels as well as colours. Splitting is earned by cancellation of the shared primitive value; reversal follows swapping subtraction before the negative-width illustration. The backwards k=-3 solution is retained as mathematically valid and rejected only by k>1. Trig,exponential and logarithmic examples each introduce a specific sign/value trap rather than an unstructured drill.
+
+Should fix238-I09-REVERSE-SUM,scene4: six constant-height reverse rectangles of magnitude width0.5 cannot use the unspecified ordinary endpoint/midpoint choices and sum exactly to-3 for x². The Visual says the running sum falls to-3; Numbers to verify says display only,no sum shown. Resolve this contradiction: omit a finite-sum readout as the author note intends,or explicitly define a valid approximation/refinement. Ordinary start/end/midpoint totals are-19/8,-31/8,-47/16. “width0.5” must mean geometric magnitude; directed Δx is-0.5. This is a build-facing numerical illustration finding; narration's exact reversed integral-3 is correct. No source edit made.
+
+Both original questions keep the entire task visible and10s plus pause. A1 interval/sketch is supplied information,not the evaluated value; A2's number line contains just given integrals and needs both splitting and reversal. Brief feedback crosses the actual sign slip. The mnemonic names top/bottom as written positions,so it remains valid when the top number is smaller. Its continuity/primitive conditions are retained. Default40px note advances are below960px; actual typography still pending.
+
+Nine visual-standard items are proposed: early everyday thermometer; purposeful bracket/split/reverse/family/k/response stages; coded column,split slider,sign collapse and find-k dial; fixed labelled endpoint/sign colours;52px rows/44px givens; hand tags; g01 working,green frames and red slips; framed aid/five notes; a positive answer despite a negative lower value and valid backwards k=-3. Playback-speed motion and plate readability need build review.
+
+Anchor check: everyday frosty morning warming is distinct across the reviewed anchors; science theory is not required.1°C minus(-2°C)=+3°C and reverse=-3°C. No lift. i08 opening row is exact; i10 sine signed-lobes final frame matches its contract.6222characters/14scenes,all bold cues quoted in spoken order with first/last three disambiguated,no em dashes. Estimated553s,notes45s,unmeasured. Thermometer plate,speech,human listening and exact voiced review pending.

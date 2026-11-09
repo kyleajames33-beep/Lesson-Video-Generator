@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v11.md",
+  "sourceSha256": "f9e45cfe0e820f84c4cc3cdaeb56e80161d200a4d2007cd3e1de0dfc1d925b5d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Ice melts on a warm bench, and a cold pack gets cold. Both absorb heat, yet both happen by themselves. So something besides energy must decide the direction. To find it, start with something simpler. Here are two gas jars joined mouth to mouth, with four gas particles, all starting in the top jar. Slide the cover out, and let them move at random. After a while, which is more likely: all four still in the top jar, or two in each jar?",
+      "audioFile": "public/audio/chem-y11-m4-v11/hook-prediction.wav"
+    },
+    {
+      "id": "counting-arrangements",
+      "text": "Two in each, by a long way. Here's why. Each particle can be in the top jar or the bottom jar, so four particles have two times two times two times two, sixteen possible arrangements. Each one, a particular way the particles are arranged, is called a microstate. And because the particles move at random, every microstate is equally likely. Only one of the sixteen has all four at the top. But six of them have two in each jar. So two and two turns up six times as often.",
+      "audioFile": "public/audio/chem-y11-m4-v11/counting-arrangements.wav"
+    },
+    {
+      "id": "why-spreading-wins",
+      "text": "With more particles, the numbers get enormous. For a hundred particles, the chance of finding them all in one jar is about one in a million million million million million. A real sample has far more particles than that, so it never happens. No force pushes the gas to spread out. Spread-out arrangements are just so much more numerous that spreading is what we always see. That's why perfume spreads through a room, and never gathers back into the bottle.",
+      "audioFile": "public/audio/chem-y11-m4-v11/why-spreading-wins.wav"
+    },
+    {
+      "id": "energy-spreads",
+      "text": "Energy spreads in the same way. Imagine energy shared out in small, equal packets. Three packets shared among three particles can be arranged in ten different ways. Let those particles touch three cold ones, and the same three packets can be shared among six particles, in fifty-six ways. So the energy spreads into the cold particles, simply because there are more ways for it to be shared. That's why heat flows from a hot object into a cold one.",
+      "audioFile": "public/audio/chem-y11-m4-v11/energy-spreads.wav"
+    },
+    {
+      "id": "entropy-defined",
+      "text": "Now we can name the idea. Entropy, written S, is a measure of how many ways the particles of a substance, and their energy, can be arranged. More ways means more entropy. People sometimes call it disorder, but counting the ways is more accurate. Entropy is measured in joules per kelvin per mole. Notice that's joules, not kilojoules.",
+      "audioFile": "public/audio/chem-y11-m4-v11/entropy-defined.wav"
+    },
+    {
+      "id": "states-and-temperature",
+      "text": "This explains why gases have so much entropy. In a solid, particles vibrate in fixed places. In a liquid, they can slide past each other, so there are more arrangements. In a gas, each particle can be almost anywhere in the container, so there are vastly more. For water, liquid has an entropy of seventy joules per kelvin per mole, and steam has a hundred and eighty-nine. Heating anything adds energy packets too, so entropy also rises with temperature.",
+      "audioFile": "public/audio/chem-y11-m4-v11/states-and-temperature.wav"
+    },
+    {
+      "id": "enthalpy-vs-entropy",
+      "text": "So how is entropy different from enthalpy? The enthalpy change is about heat: the energy taken in or given out as bonds and attractions change, in kilojoules per mole. The entropy change is about arrangements: how the number of ways changes, in joules per kelvin per mole. They're judged separately. When ice melts, delta H is positive, because heat is needed to loosen the attractions between water molecules. And delta S is positive too, because liquid water has more ways. When two gases mix, delta H is about zero, but delta S is positive, so enthalpy can't explain mixing at all.",
+      "audioFile": "public/audio/chem-y11-m4-v11/enthalpy-vs-entropy.wav"
+    },
+    {
+      "id": "surroundings-second-law",
+      "text": "There's one more piece. When a change releases heat, that energy spreads into the surroundings, and gives their particles more ways to share it, so the surroundings' entropy goes up. When a change absorbs heat, the surroundings' entropy goes down. The second law of thermodynamics says that in any change that happens by itself, the total entropy of the system and its surroundings goes up. So an exothermic change helps itself, while an endothermic change has to gain enough entropy of its own.",
+      "audioFile": "public/audio/chem-y11-m4-v11/surroundings-second-law.wav"
+    },
+    {
+      "id": "ice-coldpack-freezing",
+      "text": "That solves the puzzle. Ice melting on a warm bench takes heat from the room, so the room loses a little entropy, but the water gains more, as its molecules break free to move. The cold pack is the same: the ions spreading through the water gain a lot of entropy. And a system's own entropy can go down. Water freezing in a freezer loses entropy, but the heat it releases raises the entropy of its surroundings by more. Whether the gain beats the loss depends on temperature, and we'll come back to that.",
+      "audioFile": "public/audio/chem-y11-m4-v11/ice-coldpack-freezing.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the line to remember. Entropy counts the ways.",
+      "audioFile": "public/audio/chem-y11-m4-v11/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A box is divided by a partition, with one gas on the left and a different gas on the right. The gases don't react. The partition is removed. Explain, in terms of particle arrangements, why the gases mix, and why they never unmix by themselves. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Once the partition is gone, each particle can be anywhere in the box, so there are far more possible arrangements, and almost all of them are mixed. The particles move at random, so the system ends up in mixed arrangements, and its entropy rises. Unmixing would need one of the very rare separated arrangements, so it never happens. Mixing doesn't release energy. It happens because it's far more likely.",
+      "audioFile": "public/audio/chem-y11-m4-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Distinguish between the enthalpy change and the entropy change when ice melts at twenty-five degrees. Give the sign of each, and say what each one describes. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Delta H is positive. Melting absorbs heat, to loosen the attractions between water molecules. Delta S is also positive, because molecules that can move past each other have more possible arrangements. One describes heat, the other describes arrangements. Saying delta S is negative because melting absorbs energy mixes the two up.",
+      "audioFile": "public/audio/chem-y11-m4-v11/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So entropy describes spreading by counting the ways particles and their energy can be arranged, and gases have by far the most. That gives chemists a shortcut. If a reaction makes gas from a solid, or changes the number of gas molecules, the equation itself might tell us which way entropy changes. Dry ice turning to gas, or nitrogen and hydrogen making ammonia: can you read the sign straight from the equation?",
+      "audioFile": "public/audio/chem-y11-m4-v11/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v11/key-notes.wav"
+    }
+  ]
+}

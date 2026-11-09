@@ -1,553 +1,753 @@
 {
-  "key": "math-a12-d02",
-  "characters": 6328,
-  "speechSeconds": 451.76000000000005,
-  "lessonSeconds": 537.9333333333333,
-  "costUsd": 0.102444,
-  "findings": [
+  "lesson": "math-a12-d02",
+  "sourceSha256": "d39c1c6438fa2204cd3dab1590ff2e56f2e274f72fb9f740f6d31e8b454e46a3",
+  "measuredPath": "work\\brief235\\voice-results\\d02\\lesson.json",
+  "measuredSha256": "5c638fa8959f9bb2b033cd586039ac8d44a6a7b3477b4353f87b3c6537875ee9",
+  "changedTakes": 2,
+  "reusedTakes": 14,
+  "voicedCharacters": 1314,
+  "inputTokens": 317,
+  "outputTokens": 2212,
+  "costUsd": 0.0200665,
+  "totalSeconds": 540.5,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-07",
+    "seconds": 1.1049999999999898,
+    "after": "u.",
+    "before": "The"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
     {
-      "id": "scene-01",
-      "seconds": 28.92,
-      "characters": 453,
-      "holdSeconds": 0,
-      "costUsd": 0.0065645,
-      "lowScoreWords": [
-        {
-          "word": "e",
-          "start": 3.453,
-          "end": 3.473,
-          "score": 0
-        },
-        {
-          "word": "a",
-          "start": 7.956999999999988,
-          "end": 7.9969999999999875,
-          "score": 0.484
-        },
-        {
-          "word": "one.",
-          "start": 8.319999999999988,
-          "end": 8.400999999999987,
-          "score": 0.249
-        },
-        {
-          "word": "to",
-          "start": 9.607999999999992,
-          "end": 9.667999999999992,
-          "score": 0.254
-        },
-        {
-          "word": "a",
-          "start": 24.342000000000077,
-          "end": 24.362000000000076,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-02",
-      "seconds": 26.4,
-      "characters": 353,
-      "holdSeconds": 0,
-      "costUsd": 0.0059825,
-      "lowScoreWords": [
-        {
-          "word": "one.",
-          "start": 7.9739999999999895,
-          "end": 8.05399999999999,
-          "score": 0.216
-        },
-        {
-          "word": "to",
-          "start": 10.364999999999997,
-          "end": 10.405999999999997,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-03",
-      "seconds": 40.12,
-      "characters": 559,
-      "holdSeconds": 0,
-      "costUsd": 0.009094,
-      "lowScoreWords": [
-        {
-          "word": "at",
-          "start": 0.765,
-          "end": 0.805,
-          "score": 0
-        },
-        {
-          "word": "a",
-          "start": 38.3699999999999,
-          "end": 38.4099999999999,
-          "score": 0.464
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-04",
-      "seconds": 34,
-      "characters": 459,
-      "holdSeconds": 0,
-      "costUsd": 0.007705,
+      "scene": "scene-01",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
         {
           "word": "a",
-          "start": 18.04499999999999,
-          "end": 18.08499999999999,
-          "score": 0.497
-        },
-        {
-          "word": "up",
-          "start": 22.359000000000126,
-          "end": 22.399000000000125,
-          "score": 0
-        },
-        {
-          "word": "e",
-          "start": 30.594000000000058,
-          "end": 30.614000000000058,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-05",
-      "seconds": 31.4,
-      "characters": 451,
-      "holdSeconds": 0,
-      "costUsd": 0.0071185,
-      "lowScoreWords": [
-        {
-          "word": "what",
-          "start": 0.647,
-          "end": 0.788,
-          "score": 0.148
-        },
-        {
-          "word": "are",
-          "start": 0.808,
-          "end": 0.889,
-          "score": 0.128
-        },
-        {
-          "word": "a",
-          "start": 14.99099999999999,
-          "end": 15.03099999999999,
-          "score": 0.496
-        },
-        {
-          "word": "it",
-          "start": 18.94700000000008,
-          "end": 19.00800000000008,
-          "score": 0.318
-        },
-        {
-          "word": "a",
-          "start": 19.129000000000083,
-          "end": 19.15000000000008,
-          "score": 0.043
-        },
-        {
-          "word": "ay",
-          "start": 24.470000000000063,
-          "end": 24.510000000000062,
-          "score": 0.001
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-06",
-      "seconds": 42.32,
-      "characters": 618,
-      "holdSeconds": 0,
-      "costUsd": 0.009595999999999999,
-      "lowScoreWords": [
-        {
-          "word": "two",
-          "start": 1.104,
-          "end": 1.325,
-          "score": 0.29
-        },
-        {
-          "word": "e.",
-          "start": 2.088,
-          "end": 2.129,
-          "score": 0.497
-        },
-        {
-          "word": "e",
-          "start": 5.2179999999999955,
-          "end": 5.237999999999996,
-          "score": 0.002
-        },
-        {
-          "word": "to",
-          "start": 17.5000000000001,
-          "end": 17.560000000000098,
-          "score": 0.278
-        },
-        {
-          "word": "e",
-          "start": 18.3230000000001,
-          "end": 18.3430000000001,
-          "score": 0.001
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-07",
-      "seconds": 48.84,
-      "characters": 627,
-      "holdSeconds": 0,
-      "costUsd": 0.011078000000000001,
-      "lowScoreWords": [
-        {
-          "word": "ay",
-          "start": 4.764999999999992,
-          "end": 4.905999999999992,
-          "score": 0.497
-        },
-        {
-          "word": "ay",
-          "start": 8.295999999999992,
-          "end": 8.435999999999993,
-          "score": 0.416
-        },
-        {
-          "word": "of",
-          "start": 10.361999999999991,
-          "end": 10.421999999999993,
-          "score": 0.422
-        },
-        {
-          "word": "ay",
-          "start": 11.525999999999991,
-          "end": 11.565999999999992,
-          "score": 0
-        },
-        {
-          "word": "to",
-          "start": 11.84699999999999,
-          "end": 11.90799999999999,
-          "score": 0.233
-        },
-        {
-          "word": "u.",
-          "start": 17.792000000000087,
-          "end": 17.832000000000086,
+          "start": 8.13399999999999,
+          "end": 8.174999999999988,
           "score": 0.498
         },
         {
-          "word": "ay",
-          "start": 21.001000000000076,
-          "end": 21.041000000000075,
-          "score": 0.008
-        },
-        {
-          "word": "ay",
-          "start": 21.722000000000076,
-          "end": 21.762000000000075,
-          "score": 0.434
-        },
-        {
-          "word": "of",
-          "start": 25.068000000000076,
-          "end": 25.109000000000076,
-          "score": 0.002
-        },
-        {
-          "word": "u",
-          "start": 27.496000000000087,
-          "end": 27.51600000000009,
-          "score": 0.001
-        },
-        {
-          "word": "to",
-          "start": 33.283000000000015,
-          "end": 33.42400000000002,
-          "score": 0.48
-        },
-        {
-          "word": "ay",
-          "start": 37.079999999999906,
-          "end": 37.119999999999905,
-          "score": 0
-        },
-        {
-          "word": "ay",
-          "start": 42.2609999999999,
-          "end": 42.400999999999904,
-          "score": 0.498
+          "word": "a",
+          "start": 9.23999999999999,
+          "end": 9.279999999999989,
+          "score": 0.495
         },
         {
           "word": "e",
-          "start": 44.42999999999988,
-          "end": 44.44999999999988,
+          "start": 18.2330000000001,
+          "end": 18.2530000000001,
           "score": 0
         },
         {
-          "word": "to",
-          "start": 46.393999999999885,
-          "end": 46.433999999999884,
-          "score": 0.22
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-08",
-      "seconds": 38.32,
-      "characters": 560,
-      "holdSeconds": 0,
-      "costUsd": 0.0086905,
-      "lowScoreWords": [
-        {
-          "word": "it",
-          "start": 3.296999999999994,
-          "end": 3.356999999999994,
-          "score": 0.215
+          "word": "one.",
+          "start": 20.625000000000057,
+          "end": 20.705000000000055,
+          "score": 0.236
         },
         {
-          "word": "one",
-          "start": 12.252999999999991,
-          "end": 12.41399999999999,
-          "score": 0.068
+          "word": "how",
+          "start": 34.46999999999989,
+          "end": 34.670999999999886,
+          "score": 0.477
         },
         {
           "word": "a",
-          "start": 14.601999999999993,
-          "end": 14.621999999999995,
+          "start": 39.61199999999992,
+          "end": 39.63199999999991,
           "score": 0
         },
         {
           "word": "a",
-          "start": 18.230000000000086,
-          "end": 18.250000000000085,
-          "score": 0.018
-        },
-        {
-          "word": "And",
-          "start": 30.117000000000075,
-          "end": 30.197000000000074,
-          "score": 0.326
-        },
-        {
-          "word": "ay",
-          "start": 33.10900000000006,
-          "end": 33.169000000000054,
-          "score": 0.497
-        },
-        {
-          "word": "a",
-          "start": 35.51400000000005,
-          "end": 35.55400000000006,
-          "score": 0.494
+          "start": 41.3599999999999,
+          "end": 41.400999999999904,
+          "score": 0.499
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
-      "id": "scene-09",
-      "seconds": 38.08,
-      "characters": 511,
-      "holdSeconds": 0,
-      "costUsd": 0.0086345,
+      "scene": "scene-09",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
         {
           "word": "equals",
-          "start": 17.81000000000014,
-          "end": 18.07100000000014,
-          "score": 0.381
+          "start": 17.308000000000128,
+          "end": 17.569000000000127,
+          "score": 0.374
         },
         {
-          "word": "is",
-          "start": 19.51500000000014,
-          "end": 19.555000000000142,
+          "word": "that's",
+          "start": 26.193000000000062,
+          "end": 26.374000000000063,
+          "score": 0.478
+        },
+        {
+          "word": "a",
+          "start": 30.321000000000062,
+          "end": 30.38100000000006,
+          "score": 0.319
+        },
+        {
+          "word": "a",
+          "start": 31.403000000000063,
+          "end": 31.423000000000062,
+          "score": 0
+        },
+        {
+          "word": "get",
+          "start": 40.65599999999988,
+          "end": 40.775999999999875,
+          "score": 0.475
+        },
+        {
+          "word": "e",
+          "start": 42.18499999999993,
+          "end": 42.204999999999934,
           "score": 0
         },
         {
           "word": "to",
-          "start": 36.21299999999994,
-          "end": 36.27299999999993,
-          "score": 0.432
+          "start": 42.40699999999993,
+          "end": 42.506999999999934,
+          "score": 0.498
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-d02/scene-01-2d0ed4e02694.wav",
+      "durationInFrames": 1331,
+      "worstWordGap": {
+        "seconds": 1.0040000000000298,
+        "after": "one.",
+        "before": "E"
+      },
+      "cues": [
+        {
+          "text": "savings",
+          "start": 9.36099999999999,
+          "end": 9.721999999999989
+        },
+        {
+          "text": "one",
+          "start": 20.625000000000057,
+          "end": 20.685000000000056
+        },
+        {
+          "text": "flatter",
+          "start": 28.675000000000082,
+          "end": 29.05800000000008
+        },
+        {
+          "text": "exponential",
+          "start": 43.3329999999999,
+          "end": 43.8499999999999
         }
       ],
-      "humanListening": "pending"
+      "seconds": 44.36,
+      "peakFraction": 0.836517333984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 8.13399999999999,
+          "end": 8.174999999999988,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 9.23999999999999,
+          "end": 9.279999999999989,
+          "score": 0.495
+        },
+        {
+          "word": "e",
+          "start": 18.2330000000001,
+          "end": 18.2530000000001,
+          "score": 0
+        },
+        {
+          "word": "one.",
+          "start": 20.625000000000057,
+          "end": 20.705000000000055,
+          "score": 0.236
+        },
+        {
+          "word": "how",
+          "start": 34.46999999999989,
+          "end": 34.670999999999886,
+          "score": 0.477
+        },
+        {
+          "word": "a",
+          "start": 39.61199999999992,
+          "end": 39.63199999999991,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 41.3599999999999,
+          "end": 41.400999999999904,
+          "score": 0.499
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 158,
+      "outputTokens": 1109,
+      "costUsd": 0.01006,
+      "pronunciationText": "Last video ended on a count that doubles every hour, two to the x. Money can double too, just more slowly. Put a thousand dollars into a savings account that doubles every ten years. Count in thousands of dollars and in decades, and the balance is two to the x. Here it is beside e to the x. Both start at a height of one. E to the x leaves that point with a slope of exactly one, because it's its own derivative. But two to the x is flatter there. So the derivative of two to the x can't just be two to the x. Then how fast is the balance really growing? Here's the strange part. The answer contains a logarithm. Why would a log turn up when you differentiate an exponential?"
+    },
+    {
+      "id": "scene-02",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-02.wav",
+      "durationInFrames": 792,
+      "worstWordGap": {
+        "seconds": 1.0429999999999993,
+        "after": "two.",
+        "before": "Whenever"
+      },
+      "cues": [
+        {
+          "text": "power",
+          "start": 14.502999999999997,
+          "end": 14.803999999999998
+        }
+      ]
+    },
+    {
+      "id": "scene-03",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-03.wav",
+      "durationInFrames": 1204,
+      "worstWordGap": {
+        "seconds": 0.8880000000000816,
+        "after": "three.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 9.230999999999998,
+          "end": 9.530999999999997
+        },
+        {
+          "text": "nine",
+          "start": 11.954999999999998,
+          "end": 12.174999999999997
+        },
+        {
+          "text": "seven",
+          "start": 28.56100000000008,
+          "end": 28.842000000000084
+        },
+        {
+          "text": "three",
+          "start": 35.45299999999999,
+          "end": 35.67133333333332
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-04.wav",
+      "durationInFrames": 1020,
+      "worstWordGap": {
+        "seconds": 0.9430000000001364,
+        "after": "one.",
+        "before": "Slide"
+      },
+      "cues": [
+        {
+          "text": "nine",
+          "start": 4.797000000000001,
+          "end": 5.138000000000001
+        },
+        {
+          "text": "one",
+          "start": 14.095999999999995,
+          "end": 14.215999999999994
+        },
+        {
+          "text": "e",
+          "start": 14.687499999999995,
+          "end": 14.712749999999994
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-05.wav",
+      "durationInFrames": 942,
+      "worstWordGap": {
+        "seconds": 0.7270000000000003,
+        "after": "numbers?",
+        "before": "Plot"
+      },
+      "cues": [
+        {
+          "text": "six",
+          "start": 5.677999999999992,
+          "end": 5.878999999999992
+        },
+        {
+          "text": "curve",
+          "start": 15.09199999999999,
+          "end": 15.39199999999999
+        },
+        {
+          "text": "height",
+          "start": 28.205000000000062,
+          "end": 28.41157142857149
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-06.wav",
+      "durationInFrames": 1270,
+      "worstWordGap": {
+        "seconds": 1.0229999999999952,
+        "after": "e.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 10.05299999999999,
+          "end": 10.237166666666656
+        },
+        {
+          "text": "two",
+          "start": 12.059999999999993,
+          "end": 12.220999999999993
+        },
+        {
+          "text": "four",
+          "start": 27.529000000000092,
+          "end": 27.72900000000009
+        },
+        {
+          "text": "height",
+          "start": 34.84799999999989,
+          "end": 35.105142857142745
+        }
+      ]
+    },
+    {
+      "id": "scene-07",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-07.wav",
+      "durationInFrames": 1466,
+      "worstWordGap": {
+        "seconds": 1.1049999999999898,
+        "after": "u.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "a",
+          "start": 1.65,
+          "end": 1.7036666666666667
+        },
+        {
+          "text": "a",
+          "start": 2.4855,
+          "end": 2.556
+        },
+        {
+          "text": "x",
+          "start": 12.248999999999992,
+          "end": 12.368999999999991
+        },
+        {
+          "text": "know",
+          "start": 48.21899999999988,
+          "end": 48.39499999999988
+        }
+      ]
+    },
+    {
+      "id": "scene-08",
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-08.wav",
+      "durationInFrames": 1150,
+      "worstWordGap": {
+        "seconds": 0.7630000000000194,
+        "after": "x.",
+        "before": "And"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 9.321999999999992,
+          "end": 9.546799999999992
+        },
+        {
+          "text": "positive",
+          "start": 23.782000000000085,
+          "end": 24.102000000000086
+        }
+      ]
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-d02/scene-09-e9fac73581dd.wav",
+      "durationInFrames": 1324,
+      "worstWordGap": {
+        "seconds": 0.9620000000001294,
+        "after": "x.",
+        "before": "At"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 4.531,
+          "end": 4.747666666666667
+        },
+        {
+          "text": "x",
+          "start": 8.36599999999999,
+          "end": 8.425999999999991
+        },
+        {
+          "text": "five",
+          "start": 23.407000000000124,
+          "end": 23.627000000000127
+        },
+        {
+          "text": "decade",
+          "start": 31.603000000000062,
+          "end": 31.946714285714346
+        },
+        {
+          "text": "that",
+          "start": 37.56400000000012,
+          "end": 37.70880000000012
+        },
+        {
+          "text": "height",
+          "start": 43.676999999999936,
+          "end": 43.84928571428565
+        }
+      ],
+      "seconds": 44.12,
+      "peakFraction": 0.9527587890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "equals",
+          "start": 17.308000000000128,
+          "end": 17.569000000000127,
+          "score": 0.374
+        },
+        {
+          "word": "that's",
+          "start": 26.193000000000062,
+          "end": 26.374000000000063,
+          "score": 0.478
+        },
+        {
+          "word": "a",
+          "start": 30.321000000000062,
+          "end": 30.38100000000006,
+          "score": 0.319
+        },
+        {
+          "word": "a",
+          "start": 31.403000000000063,
+          "end": 31.423000000000062,
+          "score": 0
+        },
+        {
+          "word": "get",
+          "start": 40.65599999999988,
+          "end": 40.775999999999875,
+          "score": 0.475
+        },
+        {
+          "word": "e",
+          "start": 42.18499999999993,
+          "end": 42.204999999999934,
+          "score": 0
+        },
+        {
+          "word": "to",
+          "start": 42.40699999999993,
+          "end": 42.506999999999934,
+          "score": 0.498
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 159,
+      "outputTokens": 1103,
+      "costUsd": 0.0100065,
+      "pronunciationText": "Find the gradient of y equals two to the x at x equals three. Here the base is two. Copy two to the x, then multiply by the natural log of two. So d y by d x is the natural log of two, times two to the x. At x equals three, two cubed is eight, so the gradient is eight times the natural log of two, about five point five five. For the account, that's eight thousand dollars after thirty years, growing at about five and a half thousand dollars a decade. On the graph, the height is eight, and the gradient is point six nine three times that. If you wrote just two to the x, you'd get eight. That's the slope e to the x has at that height."
     },
     {
       "id": "scene-10",
-      "seconds": 30.56,
-      "characters": 444,
-      "holdSeconds": 2,
-      "costUsd": 0.0069315,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-10.wav",
+      "durationInFrames": 977,
+      "worstWordGap": {
+        "seconds": 1.0660000000001304,
+        "after": "a.",
+        "before": "Two"
+      },
+      "cues": [
         {
-          "word": "Here's",
-          "start": 0.284,
-          "end": 0.486,
-          "score": 0.49
-        },
-        {
-          "word": "ay",
-          "start": 3.2050000000000005,
-          "end": 3.2450000000000006,
-          "score": 0
-        },
-        {
-          "word": "ay.",
-          "start": 19.22699999999999,
-          "end": 19.286999999999992,
-          "score": 0.333
+          "text": "base",
+          "start": 2.4230000000000005,
+          "end": 2.6440000000000006
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-11",
-      "seconds": 10.6,
-      "characters": 125,
-      "holdSeconds": 10,
-      "costUsd": 0.0024025,
-      "lowScoreWords": [
-        {
-          "word": "of",
-          "start": 5.039,
-          "end": 5.119,
-          "score": 0.452
-        },
-        {
-          "word": "f",
-          "start": 7.283,
-          "end": 7.303,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-11.wav",
+      "durationInFrames": 618,
+      "worstWordGap": {
+        "seconds": 0.5629999999999971,
+        "after": "zero.",
+        "before": "Pause"
+      },
+      "cues": []
     },
     {
       "id": "scene-12",
-      "seconds": 25.16,
-      "characters": 347,
-      "holdSeconds": 1,
-      "costUsd": 0.0057075,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-12.wav",
+      "durationInFrames": 785,
+      "worstWordGap": {
+        "seconds": 0.862000000000009,
+        "after": "one.",
+        "before": "If"
+      },
+      "cues": [
         {
-          "word": "wrote",
-          "start": 15.783999999999999,
-          "end": 15.983999999999998,
-          "score": 0.252
+          "text": "x",
+          "start": 2.951,
+          "end": 3.092
         },
         {
-          "word": "a",
-          "start": 24.11300000000007,
-          "end": 24.153000000000073,
-          "score": 0.499
+          "text": "one",
+          "start": 9.169999999999991,
+          "end": 9.275749999999992
+        },
+        {
+          "text": "curve",
+          "start": 24.59600000000007,
+          "end": 24.814333333333405
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-13",
-      "seconds": 10.96,
-      "characters": 128,
-      "holdSeconds": 10,
-      "costUsd": 0.0024835,
-      "lowScoreWords": [
-        {
-          "word": "a",
-          "start": 2.5520000000000005,
-          "end": 2.5720000000000005,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-13.wav",
+      "durationInFrames": 629,
+      "worstWordGap": {
+        "seconds": 0.683999999999994,
+        "after": "sign.",
+        "before": "Pause"
+      },
+      "cues": []
     },
     {
       "id": "scene-14",
-      "seconds": 26.48,
-      "characters": 395,
-      "holdSeconds": 1,
-      "costUsd": 0.0060075,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-14.wav",
+      "durationInFrames": 825,
+      "worstWordGap": {
+        "seconds": 0.9219999999999855,
+        "after": "x.",
+        "before": "At"
+      },
+      "cues": [
         {
-          "word": "ay",
-          "start": 3.709,
-          "end": 3.749,
-          "score": 0
+          "text": "four",
+          "start": 15.160999999999987,
+          "end": 15.369799999999987
         },
         {
-          "word": "a",
-          "start": 6.314999999999985,
-          "end": 6.334999999999986,
-          "score": 0
+          "text": "positive",
+          "start": 22.48599999999999,
+          "end": 22.80688888888888
         },
         {
-          "word": "a",
-          "start": 11.738999999999987,
-          "end": 11.778999999999986,
-          "score": 0.499
-        },
-        {
-          "word": "log",
-          "start": 24.25100000000008,
-          "end": 24.41100000000008,
-          "score": 0.477
+          "text": "sign",
+          "start": 25.857000000000077,
+          "end": 26.098600000000076
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-15",
-      "seconds": 15.72,
-      "characters": 223,
-      "holdSeconds": 2,
-      "costUsd": 0.0035655,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-15.wav",
+      "durationInFrames": 532,
+      "worstWordGap": {
+        "seconds": 1.0429999999999904,
+        "after": "x.",
+        "before": "Next:"
+      },
+      "cues": [
         {
-          "word": "ay",
-          "start": 0.541,
-          "end": 0.581,
-          "score": 0
-        },
-        {
-          "word": "ay",
-          "start": 3.604,
-          "end": 3.945,
-          "score": 0.377
-        },
-        {
-          "word": "log",
-          "start": 6.588,
-          "end": 6.728,
-          "score": 0.483
-        },
-        {
-          "word": "to",
-          "start": 8.11,
-          "end": 8.15,
-          "score": 0.12
+          "text": "Next",
+          "start": 9.57299999999999,
+          "end": 9.76579999999999
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-16",
-      "seconds": 3.88,
-      "characters": 75,
-      "holdSeconds": 60,
-      "costUsd": 0.0008824999999999999,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d02/scene-16.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.40200000000000036,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": []
     }
   ],
-  "scope": "Alignment structure and timing bounds pass. Human accuracy, pronunciation and scene-join consistency require listening. No rendered cue approval."
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-d02/measured/lesson.json",
+  "canonicalMeasuredSha256": "1044cb148c0004701dedf1fad288a00a0a567c98aff6431d3cccf99eb91cabd4",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-d02/measured/lesson.json",
+    "lessonSha256": "1044cb148c0004701dedf1fad288a00a0a567c98aff6431d3cccf99eb91cabd4",
+    "srtSha256": "beb693f08268d70068355c28a8fc2df7a52c51331b0c94d71a31f2ea20609996",
+    "vttSha256": "a251ef98735fef6a005dd8d2e9f5e4007a653877a411e702d83a6cc17753fff5",
+    "cueCount": 229,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 16215,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 1331
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 1331,
+          "endFrame": 2123
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 2123,
+          "endFrame": 3327
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 3327,
+          "endFrame": 4347
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 4347,
+          "endFrame": 5289
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 5289,
+          "endFrame": 6559
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 6559,
+          "endFrame": 8025
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 8025,
+          "endFrame": 9175
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 9175,
+          "endFrame": 10499
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 10499,
+          "endFrame": 11476
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 11476,
+          "endFrame": 12094
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 12094,
+          "endFrame": 12879
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 12879,
+          "endFrame": 13508
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 13508,
+          "endFrame": 14333
+        },
+        {
+          "id": "scene-15",
+          "startFrame": 14333,
+          "endFrame": 14865
+        },
+        {
+          "id": "scene-16",
+          "startFrame": 14865,
+          "endFrame": 16215
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/maths/ma12-coin-jar-v1.png",
+    "public/assets/maths/ma12-coin-jar-full-v1.png",
+    "public/assets/maths/ma12-coin-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/ma12-d02-provenance.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d02-redesign-learning-review.md",
+      "result": "0 blockers, 0 should fix, 0 optional in the reviewed changes."
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d02-redesign-maths-check.md",
+      "result": "0 blockers, 0 should fix, 0 optional in the reviewed changes."
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
 }

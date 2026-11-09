@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-ws-v01.md",
+  "sourceSha256": "c35f6d693d90dd8b5ffcde4020e7e1b2a6af35e107a95e08382bc8100e7e4377",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, the model of the atom changed three times, each time because of evidence that didn't fit. Your own investigations work the same way. Remember the sand and salt mixture, where the recovered masses added up to more than a hundred percent? That extra wasn't a maths mistake. It was new evidence, and it changed the question, from how much salt is there, to was the sand really dry? Today, we'll build a chemistry question and a hypothesis, then let new evidence improve them.",
+      "audioFile": "public/audio/chem-y11-ws-v01/hook.wav"
+    },
+    {
+      "id": "inquiry-question",
+      "text": "In the percentage video, heating drove the water out of blue copper sulfate crystals, leaving a white powder. That's an observation, something we notice with our senses or instruments. To investigate it, we turn it into an inquiry question, one that data can answer. What happens when you heat crystals? That's too broad, because there's nothing specific to measure. A better question is: what percentage of the mass of blue copper sulfate crystals is lost when they're heated until their mass stops changing? It names what we measure, the mass before and after, and the condition, heating to a steady mass.",
+      "audioFile": "public/audio/chem-y11-ws-v01/inquiry-question.wav"
+    },
+    {
+      "id": "hypothesis",
+      "text": "Next comes a hypothesis, a testable prediction with a reason from what we already know. A useful pattern is if, then, because. If blue copper sulfate crystals are heated until their mass stops changing, then they'll lose thirty-six point one percent of their mass, because the formula shows that water is thirty-six point one percent of the mass, and heating drives the water off. The reason is the part that makes it more than a guess. If, then, because: the because is the chemistry.",
+      "audioFile": "public/audio/chem-y11-ws-v01/hypothesis.wav"
+    },
+    {
+      "id": "primary-secondary",
+      "text": "Primary data are measurements you collect yourself, like masses read from a balance. Secondary data were collected by someone else, like the relative atomic masses behind our thirty-six point one percent, from a published data sheet. And some questions should only be answered with secondary data. At what temperature does copper sulfate itself start to break down? Testing that would mean very strong heating, which gives off harmful gases, so we'd look it up in published data from a reliable source.",
+      "audioFile": "public/audio/chem-y11-ws-v01/primary-secondary.wav"
+    },
+    {
+      "id": "judging",
+      "text": "So how do we judge a hypothesis? Is it testable, with something we can change or measure? Is it specific enough to answer the inquiry question, which asks for a percentage? Is the reason sound chemistry? And could some result show it's wrong? Here's a weaker one. The crystals will lose some mass when they're heated. Which check does it fail?",
+      "audioFile": "public/audio/chem-y11-ws-v01/judging.wav"
+    },
+    {
+      "id": "reading-the-checks",
+      "text": "It's testable, and it could even be shown wrong, if the mass didn't change. But it gives no amount, so it isn't specific enough for our question. It also gives no reason. Our hypothesis passes all four checks, because a result of twenty-five percent would clearly show it's wrong.",
+      "audioFile": "public/audio/chem-y11-ws-v01/reading-the-checks.wav"
+    },
+    {
+      "id": "new-evidence",
+      "text": "Now the new evidence. Three groups each heated two point five zero grams of crystals. Group A heated gently until the mass stopped changing, and lost thirty-six point zero percent. That fits. Group B stopped after four minutes, with blue patches still showing, and lost only twenty-seven point six percent. Group C used a roaring flame. Their powder turned black at the bottom, and they lost forty-seven point two percent. Which one should change our hypothesis, and which one just points to a problem with the method?",
+      "audioFile": "public/audio/chem-y11-ws-v01/new-evidence.wav"
+    },
+    {
+      "id": "sorting-evidence",
+      "text": "Group B is a method problem. The blue patches show water was still there, so they didn't heat until the mass stopped changing, which our hypothesis already requires. It doesn't challenge the hypothesis, but it tells us that time matters. Group C is different. They did heat until the mass was steady, and they still lost far more than the water. Black solid means the copper sulfate itself broke down. So the because was incomplete, heating doesn't always drive off only water. When evidence doesn't fit, ask what it challenges: the method, the prediction, or the reason.",
+      "audioFile": "public/audio/chem-y11-ws-v01/sorting-evidence.wav"
+    },
+    {
+      "id": "modifying",
+      "text": "Published data agree. Copper sulfate breaks down only when it's much hotter than it needs to be to lose its water. So we modify the hypothesis, with a condition and a better reason. If the crystals are heated gently until their mass stops changing, then they'll lose thirty-six point one percent of their mass, because gentle heat drives off the water, while strong heat also breaks down the copper sulfate. And Group B's evidence gives us a sharper question. How does the time of gentle heating affect the percentage of mass lost? Our prediction: the percentage rises, then levels off at thirty-six point one, once all the water has gone.",
+      "audioFile": "public/audio/chem-y11-ws-v01/modifying.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student dissolves a sand and salt mixture in twenty millilitres of water, filters it, and recovers much less salt than expected. Salt dissolves only up to a limit, about thirty-six grams in a hundred millilitres of water. Write an inquiry question about the volume of water used, then a hypothesis using if, then, because. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "One good question: how does the volume of water used affect the percentage of salt recovered from the mixture? A hypothesis: if more water is used, then more salt is recovered, because more water can dissolve more salt, leaving less behind in the sand. More water is better, is the classic slip. It names nothing to measure, and gives no reason.",
+      "audioFile": "public/audio/chem-y11-ws-v01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. The student tests twenty, forty, sixty and eighty millilitres of water. The salt recovered is thirty-five point five, sixty-nine point four, sixty-nine point six and sixty-nine point five percent of the mixture. Explain what this evidence shows, and modify the hypothesis to reflect it. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-ws-v01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Recovery rises from twenty to forty millilitres, then stays at about seventy percent. Forty millilitres can dissolve about fourteen grams, so by then, all the salt has dissolved. So modify it. If more water is used, the salt recovered increases until all the salt dissolves, then stays the same, because extra water has no more salt to dissolve. Ignoring the last two results because they don't fit is the classic mistake. Evidence that doesn't fit is what improves the hypothesis.",
+      "audioFile": "public/audio/chem-y11-ws-v01/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So an observation becomes an inquiry question that data can answer, then a hypothesis with a chemistry reason. And when evidence doesn't fit, we ask whether it challenges the method, the prediction or the reason. Our copper sulfate question is ready. Next, how does a chemistry plan produce valid, useful data?",
+      "audioFile": "public/audio/chem-y11-ws-v01/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-ws-v01/key-notes.wav"
+    }
+  ]
+}

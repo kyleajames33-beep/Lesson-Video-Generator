@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v09.md",
+  "sourceSha256": "9c37a459e7c6db661fbec282e5d37d1a9f48ebb406b56ae4773602aaaea0fca5",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Last time ended on a question. Ethanol's formation enthalpy is minus two hundred and seventy-seven point seven, yet nobody can make ethanol from its elements in a calorimeter. So how was it measured? Let's find out with a simpler fuel, methane, which has the same problem. But burning is easy to measure. Burning one mole of carbon and two moles of hydrogen releases nine hundred and sixty-five kilojoules. Burning one mole of methane releases about eight hundred and ninety-one. So is making methane from its elements exothermic, or endothermic?",
+      "audioFile": "public/audio/chem-y11-m4-v09/hook-prediction.wav"
+    },
+    {
+      "id": "energy-cycle",
+      "text": "Exothermic. Both routes start with the same elements, and both finish as carbon dioxide and liquid water. Going straight there releases nine hundred and sixty-five kilojoules. Going through methane, the burning step releases only eight hundred and ninety-one, so the first step must have released the rest. Two routes between the same start and the same finish make an energy cycle.",
+      "audioFile": "public/audio/chem-y11-m4-v09/energy-cycle.wav"
+    },
+    {
+      "id": "heats-of-combustion",
+      "text": "They come from heats of combustion. A heat of combustion is the enthalpy change when one mole of a substance burns completely in oxygen. It's always negative, because burning releases energy. Carbon's is minus three hundred and ninety-three point five kilojoules per mole. Hydrogen's is minus two hundred and eighty-five point eight. And methane's is minus eight hundred and ninety point six. Each one ends as carbon dioxide gas or liquid water.",
+      "audioFile": "public/audio/chem-y11-m4-v09/heats-of-combustion.wav"
+    },
+    {
+      "id": "draw-cycle",
+      "text": "Now draw the full cycle. Top left, the elements: one carbon, two hydrogen molecules, and the two oxygen molecules that burning will need. Top right, methane, with the same two oxygens. At the bottom, carbon dioxide and two waters, the same finish for both. The arrow across the top is the unknown, methane's formation enthalpy. The oxygen changes nothing in that step, because its formation enthalpy is zero.",
+      "audioFile": "public/audio/chem-y11-m4-v09/draw-cycle.wav"
+    },
+    {
+      "id": "route-one",
+      "text": "Route one goes straight down. Burn one mole of carbon, minus three hundred and ninety-three point five. Burn two moles of hydrogen, two times minus two hundred and eighty-five point eight. Together, that's minus nine hundred and sixty-five point one kilojoules. Don't forget to scale the hydrogen by two.",
+      "audioFile": "public/audio/chem-y11-m4-v09/route-one.wav"
+    },
+    {
+      "id": "solve-unknown",
+      "text": "Route two goes across, then down: the unknown, plus minus eight hundred and ninety point six. Same start, same finish, so both totals must be equal. That's Hess's law. So the unknown is minus nine hundred and sixty-five point one, plus eight hundred and ninety point six, which is minus seventy-four point five kilojoules per mole. The table lists minus seventy-four point six, so the cycle agrees, within rounding.",
+      "audioFile": "public/audio/chem-y11-m4-v09/solve-unknown.wav"
+    },
+    {
+      "id": "enthalpy-ladder",
+      "text": "Picture it as a ladder of enthalpy. The elements sit at the top. Methane sits seventy-four point five kilojoules lower, because forming it released that much. Carbon dioxide and water sit far below both. So burning methane releases less than burning its elements, because methane has already gone part of the way down.",
+      "audioFile": "public/audio/chem-y11-m4-v09/enthalpy-ladder.wav"
+    },
+    {
+      "id": "same-arrow",
+      "text": "Notice the bottom arrows. Burning carbon makes carbon dioxide from its elements, so carbon's heat of combustion is also the formation enthalpy of carbon dioxide. Hydrogen's is the formation enthalpy of liquid water. So the cycle can be read the other way. Know methane's formation enthalpy, and you can find its heat of combustion, using last time's formula. When formation data are given, use that formula. When combustion data are given, draw the cycle.",
+      "audioFile": "public/audio/chem-y11-m4-v09/same-arrow.wav"
+    },
+    {
+      "id": "keep-states",
+      "text": "Every arrow must finish in exactly the same states. Use hydrogen's value for making steam, minus two hundred and forty-one point eight, with methane's value for liquid water, and the cycle gives plus thirteen point five, the wrong sign. Steam releases about forty-four kilojoules per mole as it condenses, so mixed states break the cycle. Check that the state symbols match.",
+      "audioFile": "public/audio/chem-y11-m4-v09/keep-states.wav"
+    },
+    {
+      "id": "per-mole-per-gram",
+      "text": "Heats of combustion also let us compare fuels, in two ways. Per mole, octane in petrol releases about five thousand four hundred and seventy kilojoules, more than six times methane's. But a mole of octane weighs about a hundred and fourteen grams, and a mole of methane only about sixteen. Divide each by its molar mass: methane gives fifty-five point five kilojoules per gram, and octane forty-seven point nine. Per gram, methane wins.",
+      "audioFile": "public/audio/chem-y11-m4-v09/per-mole-per-gram.wav"
+    },
+    {
+      "id": "which-comparison",
+      "text": "So which comparison matters? Per mole compares the molecules, one against one. Per gram matters when you have to carry the fuel, in a plane or a hiker's pack. Hydrogen is the extreme: about a hundred and forty-two kilojoules per gram, because its molecules are so light.",
+      "audioFile": "public/audio/chem-y11-m4-v09/which-comparison.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's the idea to remember. Burn it all to the same floor. Both routes must end at the same products, amounts and states, so that floor links the fuel to its elements.",
+      "audioFile": "public/audio/chem-y11-m4-v09/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Use these heats of combustion to calculate the standard enthalpy of formation of liquid ethanol. Carbon, minus three hundred and ninety-three point five. Hydrogen, minus two hundred and eighty-five point eight. Ethanol, minus one thousand three hundred and sixty-seven kilojoules per mole. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Ethanol has two carbons and six hydrogens, so route one burns two carbons and three hydrogen molecules: minus one thousand six hundred and forty-four point four. Add one thousand three hundred and sixty-seven, and the formation enthalpy is about minus two hundred and seventy-seven kilojoules per mole. Subtracting the other way round gives plus two hundred and seventy-seven, the wrong sign.",
+      "audioFile": "public/audio/chem-y11-m4-v09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Butane, the fuel in a camping stove, has a heat of combustion of minus two thousand eight hundred and seventy-eight kilojoules per mole, and a molar mass of fifty-eight point one two. Hydrogen's is minus two hundred and eighty-five point eight, with a molar mass of two point zero one six. Which fuel releases more energy per mole, and which per gram? Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Per mole, butane releases about ten times as much. Per gram, butane gives forty-nine point five kilojoules, and hydrogen gives a hundred and forty-one point eight, so hydrogen wins by almost three times. A bigger number per mole doesn't mean more energy per gram.",
+      "audioFile": "public/audio/chem-y11-m4-v09/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So combustion data complete an energy cycle because every route burns down to the same floor, and routes with the same start and finish give the same total. One more fuel: glucose. Burned in oxygen, it ends as carbon dioxide and liquid water, releasing two thousand eight hundred and three kilojoules per mole. Your cells run the same overall reaction, and plants run it backwards. How are those two related?",
+      "audioFile": "public/audio/chem-y11-m4-v09/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v09/key-notes.wav"
+    }
+  ]
+}

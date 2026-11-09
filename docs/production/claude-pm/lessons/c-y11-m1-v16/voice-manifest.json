@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v16.md",
+  "sourceSha256": "1f3bd8a8378df4224c20ac7a3fc21ab5709fbb1d62757fe57129a29a98bfecbc",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, potassium burst into a lilac flame on water. Now put a drop of potassium chloride solution into a Bunsen flame. The sample isn't burning, but the flame turns lilac. Sodium compounds turn it yellow-orange. So the colour belongs to the metal. Chemists use this in a flame test. But how much can a flame colour really tell you, and what can't it identify reliably?",
+      "audioFile": "public/audio/chem-y11-m1-v16/hook.wav"
+    },
+    {
+      "id": "cause",
+      "text": "You've met the cause already, with hydrogen's line spectrum. The flame's heat gives the metal's electrons energy, lifting them to higher energy levels. As they drop back, they give out photons, with energies set by the gaps between that metal's own levels. A flame shows several of these at once, and your eye blends them into a single colour. So each metal gives its own colour.",
+      "audioFile": "public/audio/chem-y11-m1-v16/cause.wav"
+    },
+    {
+      "id": "method",
+      "text": "Here's how the practical runs. It follows your school's risk assessment, with solutions your teacher has approved, usually metal chlorides. You'll need a Bunsen burner with the air hole open, giving a hot blue flame, and a nichrome wire loop, which doesn't colour the flame itself. Clean the loop as your school's method says, then heat it until the flame shows no colour. Then dip the loop in a solution, hold it at the edge of the blue flame, and record the colour straight away. Clean the loop, and repeat with the next solution.",
+      "audioFile": "public/audio/chem-y11-m1-v16/method.wav"
+    },
+    {
+      "id": "reasons-safety",
+      "text": "Each step has a reason. That first test, with a clean loop and no sample, is a blank. It shows what the loop and flame give on their own, so any colour you see later comes from the sample. A blue flame matters, because the yellow flame you get with the air hole closed would hide the colours. Cleaning between tests stops one sample colouring the next. And testing each solution more than once checks that your observation is reliable. For safety, wear safety glasses, tie back long hair, and remember the loop stays hot. Some of these compounds are toxic, so wash your hands afterwards.",
+      "audioFile": "public/audio/chem-y11-m1-v16/reasons-safety.wav"
+    },
+    {
+      "id": "colours",
+      "text": "Here's what you'll record. Lithium gives a crimson red. Sodium, a bright yellow-orange. Potassium, a pale lilac. Calcium, an orange-red. Strontium, a deep red, a lot like lithium's. Barium, a pale green. And copper, a blue-green.",
+      "audioFile": "public/audio/chem-y11-m1-v16/colours.wav"
+    },
+    {
+      "id": "what-it-shows",
+      "text": "So what does a colour tell you? It tells you which metal is likely to be present, because the colour comes from the metal's electrons. It doesn't tell you the rest of the compound. Sodium chloride and sodium nitrate both give the same yellow-orange flame. The chloride or nitrate part doesn't change the colour. And because you watch and record it yourself, it's primary data.",
+      "audioFile": "public/audio/chem-y11-m1-v16/what-it-shows.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. An unknown solution gives a crimson-red flame. Which metal is it? Think about the colours we just recorded. Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v16/prediction.wav"
+    },
+    {
+      "id": "overlap",
+      "text": "If you said lithium, you might be right. But strontium gives a very similar red. By eye, you can't reliably tell them apart. Calcium's orange-red is close as well. Colours are hard to describe, too. One person's crimson is another person's scarlet. So a colour alone can point to more than one metal.",
+      "audioFile": "public/audio/chem-y11-m1-v16/overlap.wav"
+    },
+    {
+      "id": "contamination",
+      "text": "Here's the second problem. Sodium compounds are almost everywhere, in dust, on skin, in tap water, even on glassware. And sodium's yellow-orange is very bright. So a tiny trace of sodium can swamp a weaker colour, like potassium's pale lilac. In a mixture, the strongest colour tends to win. That's why the blank, and a clean loop, really matter.",
+      "audioFile": "public/audio/chem-y11-m1-v16/contamination.wav"
+    },
+    {
+      "id": "no-colour",
+      "text": "Some metals give no useful colour at all. Magnesium compounds, for example, give out mostly ultraviolet light, which you can't see. The flame just stays blue. And a flame test says nothing about how much of a metal is there. A faint colour might mean a dilute solution, or just a poor dip.",
+      "audioFile": "public/audio/chem-y11-m1-v16/no-colour.wav"
+    },
+    {
+      "id": "spectroscope",
+      "text": "So how do chemists tell lithium from strontium? They spread the flame's light out with a spectroscope, a small instrument that separates light into its colours, like the prism we used for hydrogen. Then you see the actual lines. Lithium shows one strong red line. Strontium shows several red and orange bands, and a blue line. Each metal's pattern is its fingerprint, so the line pattern can identify a metal that the colour can't.",
+      "audioFile": "public/audio/chem-y11-m1-v16/spectroscope.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "So here's the rule to keep. A flame colour is a clue, and the line pattern is the evidence. Colour suggests, spectrum confirms.",
+      "audioFile": "public/audio/chem-y11-m1-v16/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student carries out flame tests on two unlabelled solutions. Solution A gives a crimson flame, and solution B gives a lilac flame. Identify the metal ions that could be present in each. Explain why the result for A isn't certain, and suggest a way to confirm it. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v16/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Solution B is potassium. Solution A could be lithium or strontium, because both give a very similar crimson red. To confirm, view the flame through a spectroscope and compare its lines with known samples. Writing just lithium for A is the slip. The colour can't separate the two.",
+      "audioFile": "public/audio/chem-y11-m1-v16/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student flame tests a solution of potassium chloride, but sees a yellow-orange flame instead of lilac. Identify the most likely cause, and explain why the student shouldn't conclude that potassium is absent. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v16/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The likely cause is sodium contamination, from a dirty loop or glassware. Sodium's bright yellow-orange swamps potassium's pale lilac, so the potassium can be there but hidden. Clean the loop until the blank shows no colour, and test again. Concluding that potassium is absent is the trap.",
+      "audioFile": "public/audio/chem-y11-m1-v16/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Everything in today's video happened outside the nucleus, as electrons moved between energy levels. But some atoms change inside the nucleus itself, and give out radiation. So what radiation do unstable isotopes give off, and does it matter whether they're natural or human-made?",
+      "audioFile": "public/audio/chem-y11-m1-v16/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v16/key-notes.wav"
+    }
+  ]
+}

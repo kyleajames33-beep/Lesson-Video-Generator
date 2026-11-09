@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v04.md",
+  "sourceSha256": "fdc631b022339850d9e439850b75a7b8437f36d8bde5e922ca1cbdccede6aa6a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we turned the equation around. Molar mass equals mass divided by moles. The mass is easy, because a balance gives it to us. The hard part is the moles. You can't weigh them, and you can't count the particles. But there's a trick. If the substance is a gas, or makes a gas, its volume can do the counting.",
+      "audioFile": "public/audio/chem-y11-m2-v04/hook.wav"
+    },
+    {
+      "id": "gas-counts",
+      "text": "At the same temperature and pressure, equal volumes of any gas hold the same number of particles. That's because gas particles are so far apart that the volume depends on how many there are, not on how big they are. At twenty-five degrees and a hundred kilopascals, one mole of any gas takes up twenty-four point seven nine litres. But warm a gas and it expands. Squeeze it and it shrinks. So you must measure the temperature and pressure, and keep them steady.",
+      "audioFile": "public/audio/chem-y11-m2-v04/gas-counts.wav"
+    },
+    {
+      "id": "element-setup",
+      "text": "First, an element. Magnesium isn't a gas, but it makes one. Magnesium reacts with dilute hydrochloric acid to make hydrogen gas. The equation says one magnesium atom gives one hydrogen molecule. So the moles of hydrogen collected equal the moles of magnesium that reacted. The ribbon is rubbed with emery paper to remove its oxide coating, then weighed on a balance that reads to a thousandth of a gram.",
+      "audioFile": "public/audio/chem-y11-m2-v04/element-setup.wav"
+    },
+    {
+      "id": "collect-hydrogen",
+      "text": "The ribbon sits at the mouth of a burette, turned upside down and full of liquid. As the acid reaches it, hydrogen bubbles up and collects at the top, pushing the liquid down. When the ribbon has gone, the gas takes up forty-two point two millilitres. The room is at twenty-five degrees and a hundred kilopascals.",
+      "audioFile": "public/audio/chem-y11-m2-v04/collect-hydrogen.wav"
+    },
+    {
+      "id": "element-calc",
+      "text": "Now the calculation. Change forty-two point two millilitres to litres, then divide by twenty-four point seven nine. That's one point seven zero times ten to the minus three moles of hydrogen, so the same amount of magnesium. Molar mass equals mass divided by moles. Zero point zero four two grams, divided by one point seven zero times ten to the minus three, is twenty-four point seven grams per mole. The accepted value is twenty-four point three one. That's close, but a little high.",
+      "audioFile": "public/audio/chem-y11-m2-v04/element-calc.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Suppose some hydrogen escaped before it was collected. Would the molar mass come out too high, or too low?",
+      "audioFile": "public/audio/chem-y11-m2-v04/prediction.wav"
+    },
+    {
+      "id": "loss-direction",
+      "text": "Too high. Less gas means a smaller volume, so fewer moles are counted. Dividing the same mass by fewer moles gives a bigger molar mass. An oxide coating does the same thing. It adds to the mass on the balance, but it makes no hydrogen, so the molar mass comes out high again. That's why the ribbon is cleaned, and why the gas must be caught from the very first bubble.",
+      "audioFile": "public/audio/chem-y11-m2-v04/loss-direction.wav"
+    },
+    {
+      "id": "weak-reading",
+      "text": "There's another limit, and it's the mass. On a balance that reads to a hundredth of a gram, our ribbon just shows zero point zero four. The real mass could be anywhere from about zero point zero three five to zero point zero four five, so the molar mass could be anywhere from about twenty-one to twenty-six. A balance that reads to a thousandth of a gram narrows that down. The smallest reading is usually the weak link.",
+      "audioFile": "public/audio/chem-y11-m2-v04/weak-reading.wav"
+    },
+    {
+      "id": "compound-setup",
+      "text": "Now a compound, an unknown liquid that evaporates easily. Chemists call that volatile. Weigh a dry flask with a foil cap pierced by a pinhole. Add a few millilitres of the liquid, and stand the flask in a boiling water bath on a hotplate, because the vapour is flammable and must stay away from flames. The liquid boils away, and its vapour pushes the air out through the pinhole, until the flask is full of vapour, at the bath's temperature and the room's pressure.",
+      "audioFile": "public/audio/chem-y11-m2-v04/compound-setup.wav"
+    },
+    {
+      "id": "reweigh-volume",
+      "text": "Then take the flask out and let it cool. The vapour inside condenses back to liquid, so reweighing the dried flask gives the mass of vapour that filled it, zero point two seven two of a gram. Finally, fill the flask with water and measure that water, to find the volume the vapour took up, one hundred and forty millilitres.",
+      "audioFile": "public/audio/chem-y11-m2-v04/reweigh-volume.wav"
+    },
+    {
+      "id": "compound-calc",
+      "text": "At the bath's temperature, gases spread out more, so a mole takes up more room, about thirty point six litres, using the gas laws you'll meet later in this module. So the vapour is zero point one four zero divided by thirty point six, about four point five eight times ten to the minus three moles. The molar mass is zero point two seven two divided by that, fifty-nine point five grams per mole. Of the likely liquids, propanone is closest, at fifty-eight point zero eight.",
+      "audioFile": "public/audio/chem-y11-m2-v04/compound-calc.wav"
+    },
+    {
+      "id": "compound-losses",
+      "text": "This result is a little high too. If the outside of the flask is still wet from the bath, the water adds mass, so the molar mass comes out high. And if some liquid hadn't evaporated, the flask holds extra mass, which also pushes it up.",
+      "audioFile": "public/audio/chem-y11-m2-v04/compound-losses.wav"
+    },
+    {
+      "id": "compare",
+      "text": "So both methods use one idea. Weigh the substance, use a gas volume at known temperature and pressure to count the moles, then divide. The difference is where the gas comes from. Magnesium makes hydrogen, so the equation links the two amounts. The liquid becomes the gas itself, so its moles are the vapour's moles. Here's a line to remember. Weigh it, count it with a gas, then divide.",
+      "audioFile": "public/audio/chem-y11-m2-v04/compare.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Zero point one five zero grams of zinc reacts completely with dilute hydrochloric acid, making fifty-six point nine millilitres of hydrogen at twenty-five degrees and a hundred kilopascals. Calculate the molar mass of zinc. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v04/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Fifty-six point nine millilitres is zero point zero five six nine litres. Divided by twenty-four point seven nine, that's two point two nine five times ten to the minus three moles of hydrogen, and of zinc, because the equation is one to one. So the molar mass is zero point one five zero divided by that, sixty-five point four grams per mole. Leaving the volume in millilitres gives a tiny, impossible answer. That's the slip to avoid.",
+      "audioFile": "public/audio/chem-y11-m2-v04/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. In the volatile liquid method, a student reweighs the cooled flask without drying its outside. Explain the effect on the calculated molar mass. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v04/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The molar mass comes out too high. The water on the outside is weighed as if it were vapour, so the mass of vapour is too big. The volume, and so the moles, don't change. A bigger mass divided by the same moles gives a bigger molar mass. Saying it's too low, because water dilutes the liquid, is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v04/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "One run gives one number. So a class did the magnesium method five times, with five different masses of ribbon. Here's what they wrote down. Mixed units, missing labels, and a note about bubbles getting away. Next time, we'll turn raw readings like these into a table and a graph we can actually use.",
+      "audioFile": "public/audio/chem-y11-m2-v04/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v04/key-notes.wav"
+    }
+  ]
+}

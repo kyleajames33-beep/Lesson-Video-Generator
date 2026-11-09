@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-d19.md",
+  "sourceSha256": "2cf0fb1d074bf476703cd28d35bba1a7379dc4b026bc6b007a2b32f7793c0760",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here. A thirty thousand dollar car loses value at fifteen percent of its current value each year. Right now, fifteen percent of thirty thousand is four thousand five hundred, so it's losing four thousand five hundred dollars a year. But the rate doesn't stay put. When the car is worth fifteen thousand, fifteen percent of that is two thousand two hundred and fifty, so it's losing value half as fast. Half the value, half the rate. So what curve flattens exactly in step with its height? And what's the car worth after eight years?",
+      "audioFile": "public/audio/math-a12-d19/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "When a rate of change is always the same multiple of the amount, we say the rate is proportional to the amount. Watch what that does. A lower point gets a gentler tangent, so the curve flattens as it falls. For a quantity Q changing over time t, the rule is d Q d t equals k Q. The number k is the constant of proportionality. For the car, k is minus point one five, and its unit is per year, because dollars per year divided by dollars leaves per year. If k is negative, a positive quantity shrinks, and more slowly as it gets smaller. If k is positive, it grows, and faster as it gets bigger.",
+      "audioFile": "public/audio/math-a12-d19/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Here's a curve that fits. Q equals A, times e to the k t. Let's check it by substitution. From earlier, the derivative of e to the k t is k, times e to the k t. So d Q d t is A times k, e to the k t, which is k, times A e to the k t. And A e to the k t is Q itself, so d Q d t equals k Q. That works for any A. At t equals zero, e to the zero is one, so Q is A. A is the starting value. For the car, A is thirty thousand and k is minus point one five. After eight years, it's worth thirty thousand e to the minus one point two, about nine thousand and thirty-six dollars.",
+      "audioFile": "public/audio/math-a12-d19/scene-03.wav"
+    },
+    {
+      "id": "scene-03a",
+      "text": "Savings follow the same rule, with k positive. Five thousand dollars earning six percent of its current value a year, added continuously, is five thousand e to the point zero six t. After eight years, that's five thousand e to the point four eight, about eight thousand and eighty dollars.",
+      "audioFile": "public/audio/math-a12-d19/scene-03a.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now the shapes. Take A equals two, and change k. With k positive, the curve climbs ever more steeply. Turn k down through zero, and it becomes a flat line, then falls, flattening out as it drops. That decay curve gets closer and closer to the t axis, but never reaches it, because e to any power is positive. So Q equals zero is a horizontal asymptote. For growth, the same thing happens going back in time. Now make A negative. Every value changes sign, so the graph reflects in the t axis. It still obeys d Q d t equals k Q, with the same asymptote. But money or mass can't be negative, so models use a positive A, and t from zero on.",
+      "audioFile": "public/audio/math-a12-d19/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Often k isn't given, so we find it from data. A town had ten thousand people in twenty ten, and twelve thousand in twenty fifteen. Assuming the growth is proportional, when will it reach twenty thousand? Let t be the years after twenty ten, so A is ten thousand. At t equals five, twelve thousand equals ten thousand e to the five k. Divide by ten thousand, so e to the five k is one point two. Take the natural log of both sides. Five k is the natural log of one point two, so k is the natural log of one point two, over five, about point zero three six five per year.",
+      "audioFile": "public/audio/math-a12-d19/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now set P to twenty thousand. Dividing by ten thousand gives e to the k t equals two. So k t is the natural log of two, and t is the natural log of two, over k. That's five times the natural log of two, over the natural log of one point two, about nineteen point zero years. So, if the growth stays proportional, the population reaches twenty thousand during twenty twenty-nine. Keep k exact until the end, so rounding doesn't creep in.",
+      "audioFile": "public/audio/math-a12-d19/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Decay works the same way, with k negative. A substance has a half-life of twelve years. That means every twelve years, the amount halves. Start with two hundred grams. After twelve years there are a hundred grams, so a hundred equals two hundred e to the twelve k. That gives e to the twelve k equals a half, so twelve k is the natural log of a half, which is minus the natural log of two. So k is minus the natural log of two, over twelve, and that minus sign is the decay. After thirty years, Q is two hundred e to the thirty k, which is two hundred times two to the minus two and a half, about thirty-five point four grams.",
+      "audioFile": "public/audio/math-a12-d19/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a pattern that checks answers like these. Equal times, equal factors. In any five years, the town multiplies by one point two, wherever it starts, because e to the five k is one point two. So ten thousand becomes twelve thousand, then fourteen thousand four hundred, and so on, passing twenty thousand just before twenty thirty. And every twelve years, the substance halves. Thirty years is two and a half half-lives, so the answer sits between fifty and twenty-five grams. This only works while k stays constant.",
+      "audioFile": "public/audio/math-a12-d19/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. A population of eight hundred grows at a rate proportional to its size, and doubles in ten years. Find the exact value of k, and the population after fifteen years, to the nearest whole number. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d19/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Doubling means sixteen hundred equals eight hundred e to the ten k, so e to the ten k is two, and k is the natural log of two, over ten. After fifteen years, P is eight hundred times two to the one and a half, about two thousand two hundred and sixty-three. It's not twenty-four hundred, halfway between sixteen hundred and thirty-two hundred. Growth isn't a straight line.",
+      "audioFile": "public/audio/math-a12-d19/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. A one hundred gram sample decays at a rate proportional to its mass, with a half-life of five years. Find the mass after ten years, and the rate of change of the mass at that time, with units. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-d19/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Ten years is two half-lives, so a quarter is left, twenty-five grams. With k equal to minus the natural log of two, over five, the rate is k times the mass now. So d Q d t is minus five times the natural log of two, about minus three point four seven grams per year. Using the starting hundred grams gives minus thirteen point nine. That's the rate at the start, not at ten years.",
+      "audioFile": "public/audio/math-a12-d19/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So a rate that's proportional to the amount gives exponential growth or decay, and the starting value picks one curve out of the family. Next, we run differentiation backwards. If f prime of x is two x, which functions could f be, and how does one condition pick out just one of them?",
+      "audioFile": "public/audio/math-a12-d19/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-d19/scene-14.wav"
+    }
+  ]
+}

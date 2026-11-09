@@ -6,664 +6,1602 @@
       "id": "scene-01",
       "title": "hook (divide the derivatives?)",
       "voiceover": {
-        "text": "Last video ended on this curve: e to the x, over x plus one. At x equals minus one, the bottom is zero, and you can't divide by zero, so there's no curve there. Now the slope at x equals zero. A quick guess: divide the derivatives. The top's derivative is e to the x, and the bottom's is one, so the guess gives a slope of one at x equals zero. But the tangent there is flat. So how do we really differentiate a quotient, and keep track of where it's defined?",
-        "audioFile": "public/audio/math-a12-d08/scene-01.wav",
+        "text": "Last video ended on this curve: e to the x, over x plus one. At x equals minus one, the bottom is zero, and you can't divide by zero, so there's no curve there. A fraction like this works like average speed, distance over time, and you can't average over zero time. Now the slope at x equals zero. A quick guess: divide the derivatives. The top's derivative is e to the x, and the bottom's is one, so the guess gives a slope of one at x equals zero. But the tangent there is flat. So how do we really differentiate a quotient, and keep track of where it's defined?",
+        "audioFile": "public/audio/math-a12-d08/scene-01-bb181485ac71.wav",
         "startFrame": 0,
-        "endFrame": 929
+        "endFrame": 1136
       },
       "holdSeconds": 0,
       "holdKind": "visual",
-      "durationInFrames": 929,
+      "durationInFrames": 1136,
       "captions": [
         {
           "text": "Last",
-          "startMs": 302,
-          "endMs": 523,
-          "timestampMs": 412.5,
+          "startMs": 281,
+          "endMs": 503,
+          "timestampMs": 392,
           "confidence": null
         },
         {
           "text": " video",
-          "startMs": 563,
-          "endMs": 885,
-          "timestampMs": 724,
+          "startMs": 543,
+          "endMs": 864,
+          "timestampMs": 703.5,
           "confidence": null
         },
         {
           "text": " ended",
-          "startMs": 985,
-          "endMs": 1186,
-          "timestampMs": 1085.5,
+          "startMs": 945,
+          "endMs": 1126,
+          "timestampMs": 1035.5,
           "confidence": null
         },
         {
           "text": " on",
-          "startMs": 1267,
-          "endMs": 1327,
-          "timestampMs": 1297,
+          "startMs": 1166,
+          "endMs": 1226,
+          "timestampMs": 1196,
           "confidence": null
         },
         {
           "text": " this",
-          "startMs": 1367,
-          "endMs": 1508,
-          "timestampMs": 1437.5,
+          "startMs": 1286,
+          "endMs": 1447,
+          "timestampMs": 1366.5,
           "confidence": null
         },
         {
           "text": " curve:",
-          "startMs": 1589,
-          "endMs": 1910,
-          "timestampMs": 1749.5,
+          "startMs": 1528,
+          "endMs": 1869,
+          "timestampMs": 1698.5,
           "confidence": null
         },
         {
           "text": " e",
-          "startMs": 2353,
-          "endMs": 2473,
-          "timestampMs": 2413,
+          "startMs": 2271,
+          "endMs": 2412,
+          "timestampMs": 2341.5,
           "confidence": null
         },
         {
           "text": " to",
-          "startMs": 2493,
-          "endMs": 2554,
-          "timestampMs": 2523.5,
+          "startMs": 2432,
+          "endMs": 2472,
+          "timestampMs": 2452,
           "confidence": null
         },
         {
           "text": " the",
-          "startMs": 2574,
-          "endMs": 2654,
-          "timestampMs": 2614,
+          "startMs": 2493,
+          "endMs": 2573,
+          "timestampMs": 2533,
           "confidence": null
         },
         {
           "text": " x,",
-          "startMs": 2815,
-          "endMs": 2936,
-          "timestampMs": 2875.5,
+          "startMs": 2754,
+          "endMs": 2874,
+          "timestampMs": 2814,
           "confidence": null
         },
         {
           "text": " over",
-          "startMs": 3097,
-          "endMs": 3257,
-          "timestampMs": 3177,
+          "startMs": 3035,
+          "endMs": 3216,
+          "timestampMs": 3125.5,
           "confidence": null
         },
         {
           "text": " x",
-          "startMs": 3438,
-          "endMs": 3539,
-          "timestampMs": 3488.5,
+          "startMs": 3377,
+          "endMs": 3437,
+          "timestampMs": 3407,
           "confidence": null
         },
         {
           "text": " plus",
-          "startMs": 3579,
-          "endMs": 3841,
-          "timestampMs": 3710,
+          "startMs": 3477,
+          "endMs": 3699,
+          "timestampMs": 3588,
           "confidence": null
         },
         {
           "text": " one.",
-          "startMs": 3981,
-          "endMs": 4082,
-          "timestampMs": 4031.5,
+          "startMs": 3839,
+          "endMs": 3960,
+          "timestampMs": 3899.5,
           "confidence": null
         },
         {
           "text": " At",
-          "startMs": 4803.999999999995,
-          "endMs": 4883.999999999995,
-          "timestampMs": 4843.999999999995,
+          "startMs": 4602.999999999991,
+          "endMs": 4682.999999999991,
+          "timestampMs": 4642.999999999991,
           "confidence": null
         },
         {
           "text": " x",
-          "startMs": 5044.999999999996,
-          "endMs": 5144.999999999996,
-          "timestampMs": 5094.999999999996,
+          "startMs": 4823.999999999991,
+          "endMs": 4883.999999999992,
+          "timestampMs": 4853.999999999991,
           "confidence": null
         },
         {
           "text": " equals",
-          "startMs": 5224.999999999996,
-          "endMs": 5505.999999999995,
-          "timestampMs": 5365.499999999996,
+          "startMs": 4963.999999999992,
+          "endMs": 5184.999999999992,
+          "timestampMs": 5074.499999999992,
           "confidence": null
         },
         {
           "text": " minus",
-          "startMs": 5565.999999999995,
-          "endMs": 5845.999999999995,
-          "timestampMs": 5705.999999999995,
+          "startMs": 5224.999999999991,
+          "endMs": 5545.999999999992,
+          "timestampMs": 5385.499999999991,
           "confidence": null
         },
         {
           "text": " one,",
-          "startMs": 5926.999999999996,
-          "endMs": 6066.999999999995,
-          "timestampMs": 5996.999999999996,
+          "startMs": 5666.999999999991,
+          "endMs": 5786.999999999991,
+          "timestampMs": 5726.999999999991,
           "confidence": null
         },
         {
           "text": " the",
-          "startMs": 6387.999999999996,
-          "endMs": 6467.999999999996,
-          "timestampMs": 6427.999999999996,
+          "startMs": 6087.999999999991,
+          "endMs": 6167.999999999991,
+          "timestampMs": 6127.999999999991,
           "confidence": null
         },
         {
           "text": " bottom",
-          "startMs": 6507.999999999995,
-          "endMs": 6787.999999999995,
-          "timestampMs": 6647.999999999995,
+          "startMs": 6187.999999999992,
+          "endMs": 6408.999999999992,
+          "timestampMs": 6298.499999999992,
           "confidence": null
         },
         {
           "text": " is",
-          "startMs": 6888.999999999995,
-          "endMs": 6988.999999999995,
-          "timestampMs": 6938.999999999995,
+          "startMs": 6489.999999999991,
+          "endMs": 6569.999999999992,
+          "timestampMs": 6529.999999999991,
           "confidence": null
         },
         {
           "text": " zero,",
-          "startMs": 7008.999999999995,
-          "endMs": 7389.999999999996,
-          "timestampMs": 7199.499999999996,
+          "startMs": 6609.999999999992,
+          "endMs": 7051.999999999991,
+          "timestampMs": 6830.999999999991,
           "confidence": null
         },
         {
           "text": " and",
-          "startMs": 7750.999999999995,
-          "endMs": 7830.999999999996,
-          "timestampMs": 7790.999999999996,
+          "startMs": 7452.999999999992,
+          "endMs": 7532.999999999991,
+          "timestampMs": 7492.999999999991,
           "confidence": null
         },
         {
           "text": " you",
-          "startMs": 7870.999999999996,
-          "endMs": 7950.999999999996,
-          "timestampMs": 7910.999999999996,
+          "startMs": 7552.999999999991,
+          "endMs": 7633.999999999992,
+          "timestampMs": 7593.499999999991,
           "confidence": null
         },
         {
           "text": " can't",
-          "startMs": 7970.999999999996,
-          "endMs": 8191.999999999996,
-          "timestampMs": 8081.499999999996,
+          "startMs": 7673.999999999991,
+          "endMs": 7873.999999999992,
+          "timestampMs": 7773.999999999991,
           "confidence": null
         },
         {
           "text": " divide",
-          "startMs": 8231.999999999996,
-          "endMs": 8531.999999999996,
-          "timestampMs": 8381.999999999996,
+          "startMs": 7914.999999999991,
+          "endMs": 8395.99999999999,
+          "timestampMs": 8155.499999999991,
           "confidence": null
         },
         {
           "text": " by",
-          "startMs": 8571.999999999996,
-          "endMs": 8712.999999999996,
-          "timestampMs": 8642.499999999996,
+          "startMs": 8435.99999999999,
+          "endMs": 8576.99999999999,
+          "timestampMs": 8506.49999999999,
           "confidence": null
         },
         {
           "text": " zero,",
-          "startMs": 8752.999999999996,
-          "endMs": 9052.999999999996,
-          "timestampMs": 8902.999999999996,
+          "startMs": 8596.99999999999,
+          "endMs": 8957.99999999999,
+          "timestampMs": 8777.49999999999,
           "confidence": null
         },
         {
           "text": " so",
-          "startMs": 9373.999999999995,
-          "endMs": 9574.999999999996,
-          "timestampMs": 9474.499999999996,
+          "startMs": 9299.99999999999,
+          "endMs": 9379.999999999993,
+          "timestampMs": 9339.999999999993,
           "confidence": null
         },
         {
           "text": " there's",
-          "startMs": 9674.999999999996,
-          "endMs": 9854.999999999996,
-          "timestampMs": 9764.999999999996,
+          "startMs": 9419.99999999999,
+          "endMs": 9580.999999999993,
+          "timestampMs": 9500.499999999993,
           "confidence": null
         },
         {
           "text": " no",
-          "startMs": 9894.999999999996,
-          "endMs": 9995.999999999995,
-          "timestampMs": 9945.499999999996,
+          "startMs": 9620.99999999999,
+          "endMs": 9760.999999999993,
+          "timestampMs": 9690.999999999993,
           "confidence": null
         },
         {
           "text": " curve",
-          "startMs": 10075.999999999996,
-          "endMs": 10375.999999999996,
-          "timestampMs": 10225.999999999996,
+          "startMs": 9840.99999999999,
+          "endMs": 10162.99999999999,
+          "timestampMs": 10001.99999999999,
           "confidence": null
         },
         {
           "text": " there.",
-          "startMs": 10415.999999999996,
-          "endMs": 10576.999999999995,
-          "timestampMs": 10496.499999999996,
-          "confidence": null
-        },
-        {
-          "text": " Now",
-          "startMs": 11439.999999999998,
-          "endMs": 11560.999999999998,
-          "timestampMs": 11500.499999999998,
-          "confidence": null
-        },
-        {
-          "text": " the",
-          "startMs": 11700.999999999996,
-          "endMs": 11781.999999999998,
-          "timestampMs": 11741.499999999996,
-          "confidence": null
-        },
-        {
-          "text": " slope",
-          "startMs": 11821.999999999998,
-          "endMs": 12102.999999999998,
-          "timestampMs": 11962.499999999998,
-          "confidence": null
-        },
-        {
-          "text": " at",
-          "startMs": 12182.999999999998,
-          "endMs": 12263.999999999998,
-          "timestampMs": 12223.499999999998,
-          "confidence": null
-        },
-        {
-          "text": " x",
-          "startMs": 12463.999999999998,
-          "endMs": 12564.999999999998,
-          "timestampMs": 12514.499999999998,
-          "confidence": null
-        },
-        {
-          "text": " equals",
-          "startMs": 12704.999999999998,
-          "endMs": 12986.999999999998,
-          "timestampMs": 12845.999999999998,
-          "confidence": null
-        },
-        {
-          "text": " zero.",
-          "startMs": 13026.999999999998,
-          "endMs": 13367.999999999998,
-          "timestampMs": 13197.499999999998,
+          "startMs": 10202.999999999993,
+          "endMs": 10382.999999999993,
+          "timestampMs": 10292.999999999993,
           "confidence": null
         },
         {
           "text": " A",
-          "startMs": 13931.999999999995,
-          "endMs": 13971.999999999996,
-          "timestampMs": 13951.999999999996,
+          "startMs": 11165.999999999989,
+          "endMs": 11205.99999999999,
+          "timestampMs": 11185.999999999989,
           "confidence": null
         },
         {
-          "text": " quick",
-          "startMs": 14011.999999999995,
-          "endMs": 14192.999999999996,
-          "timestampMs": 14102.499999999996,
+          "text": " fraction",
+          "startMs": 11265.999999999989,
+          "endMs": 11647.99999999999,
+          "timestampMs": 11456.999999999989,
           "confidence": null
         },
         {
-          "text": " guess:",
-          "startMs": 14273.999999999996,
-          "endMs": 14575.999999999995,
-          "timestampMs": 14424.999999999996,
+          "text": " like",
+          "startMs": 11707.999999999989,
+          "endMs": 11847.99999999999,
+          "timestampMs": 11777.999999999989,
           "confidence": null
         },
         {
-          "text": " divide",
-          "startMs": 14978.999999999996,
-          "endMs": 15341.999999999995,
-          "timestampMs": 15160.499999999996,
+          "text": " this",
+          "startMs": 11887.999999999989,
+          "endMs": 12108.999999999989,
+          "timestampMs": 11998.499999999989,
           "confidence": null
         },
         {
-          "text": " the",
-          "startMs": 15361.999999999995,
-          "endMs": 15421.999999999995,
-          "timestampMs": 15391.999999999995,
+          "text": " works",
+          "startMs": 12209.99999999999,
+          "endMs": 12449.99999999999,
+          "timestampMs": 12329.99999999999,
           "confidence": null
         },
         {
-          "text": " derivatives.",
-          "startMs": 15462.999999999996,
-          "endMs": 15945.999999999995,
-          "timestampMs": 15704.499999999996,
+          "text": " like",
+          "startMs": 12489.999999999989,
+          "endMs": 12670.99999999999,
+          "timestampMs": 12580.499999999989,
           "confidence": null
         },
         {
-          "text": " The",
-          "startMs": 16529.999999999985,
-          "endMs": 16589.99999999999,
-          "timestampMs": 16559.999999999985,
+          "text": " average",
+          "startMs": 12871.999999999989,
+          "endMs": 13152.999999999989,
+          "timestampMs": 13012.499999999989,
           "confidence": null
         },
         {
-          "text": " top's",
-          "startMs": 16629.99999999999,
-          "endMs": 16869.999999999985,
-          "timestampMs": 16749.999999999985,
+          "text": " speed,",
+          "startMs": 13212.99999999999,
+          "endMs": 13533.99999999999,
+          "timestampMs": 13373.49999999999,
           "confidence": null
         },
         {
-          "text": " derivative",
-          "startMs": 16889.999999999985,
-          "endMs": 17310.99999999999,
-          "timestampMs": 17100.499999999985,
+          "text": " distance",
+          "startMs": 13914.99999999999,
+          "endMs": 14296.999999999989,
+          "timestampMs": 14105.999999999989,
           "confidence": null
         },
         {
-          "text": " is",
-          "startMs": 17470.99999999999,
-          "endMs": 17610.999999999985,
-          "timestampMs": 17540.999999999985,
+          "text": " over",
+          "startMs": 14436.99999999999,
+          "endMs": 14597.99999999999,
+          "timestampMs": 14517.49999999999,
           "confidence": null
         },
         {
-          "text": " e",
-          "startMs": 17730.99999999999,
-          "endMs": 17830.99999999999,
-          "timestampMs": 17780.99999999999,
-          "confidence": null
-        },
-        {
-          "text": " to",
-          "startMs": 17850.99999999999,
-          "endMs": 17910.999999999985,
-          "timestampMs": 17880.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " the",
-          "startMs": 17950.999999999985,
-          "endMs": 18030.99999999999,
-          "timestampMs": 17990.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " x,",
-          "startMs": 18170.99999999999,
-          "endMs": 18290.999999999985,
-          "timestampMs": 18230.999999999985,
+          "text": " time,",
+          "startMs": 14637.99999999999,
+          "endMs": 14918.999999999989,
+          "timestampMs": 14778.499999999989,
           "confidence": null
         },
         {
           "text": " and",
-          "startMs": 18650.99999999999,
-          "endMs": 18751.99999999999,
-          "timestampMs": 18701.49999999999,
+          "startMs": 15319.999999999989,
+          "endMs": 15399.999999999989,
+          "timestampMs": 15359.999999999989,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 15419.99999999999,
+          "endMs": 15479.999999999989,
+          "timestampMs": 15449.999999999989,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 15500.99999999999,
+          "endMs": 15740.999999999989,
+          "timestampMs": 15620.999999999989,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 15881.99999999999,
+          "endMs": 16202.999999999989,
+          "timestampMs": 16042.499999999989,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 16282.99999999999,
+          "endMs": 16443.99999999999,
+          "timestampMs": 16363.499999999989,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 16503.99999999999,
+          "endMs": 16884.999999999993,
+          "timestampMs": 16694.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 16924.99999999999,
+          "endMs": 17225.999999999993,
+          "timestampMs": 17075.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 18251.000000000127,
+          "endMs": 18432.000000000124,
+          "timestampMs": 18341.500000000124,
           "confidence": null
         },
         {
           "text": " the",
-          "startMs": 18791.99999999999,
-          "endMs": 18851.99999999999,
-          "timestampMs": 18821.99999999999,
-          "confidence": null
-        },
-        {
-          "text": " bottom's",
-          "startMs": 18931.99999999999,
-          "endMs": 19311.999999999985,
-          "timestampMs": 19121.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " is",
-          "startMs": 19431.99999999999,
-          "endMs": 19491.999999999985,
-          "timestampMs": 19461.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " one,",
-          "startMs": 19751.99999999999,
-          "endMs": 19911.99999999999,
-          "timestampMs": 19831.99999999999,
-          "confidence": null
-        },
-        {
-          "text": " so",
-          "startMs": 20392.999999999985,
-          "endMs": 20492.99999999999,
-          "timestampMs": 20442.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " the",
-          "startMs": 20532.999999999985,
-          "endMs": 20592.99999999999,
-          "timestampMs": 20562.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " guess",
-          "startMs": 20632.99999999999,
-          "endMs": 20852.99999999999,
-          "timestampMs": 20742.99999999999,
-          "confidence": null
-        },
-        {
-          "text": " gives",
-          "startMs": 20892.999999999985,
-          "endMs": 21092.99999999999,
-          "timestampMs": 20992.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " a",
-          "startMs": 21112.99999999999,
-          "endMs": 21132.99999999999,
-          "timestampMs": 21122.99999999999,
+          "startMs": 18714.000000000124,
+          "endMs": 18815.000000000127,
+          "timestampMs": 18764.500000000124,
           "confidence": null
         },
         {
           "text": " slope",
-          "startMs": 21252.999999999985,
-          "endMs": 21572.999999999985,
-          "timestampMs": 21412.999999999985,
-          "confidence": null
-        },
-        {
-          "text": " of",
-          "startMs": 21612.99999999999,
-          "endMs": 21672.99999999999,
-          "timestampMs": 21642.99999999999,
-          "confidence": null
-        },
-        {
-          "text": " one",
-          "startMs": 21973.99999999999,
-          "endMs": 22113.999999999985,
-          "timestampMs": 22043.999999999985,
+          "startMs": 18876.000000000127,
+          "endMs": 19219.000000000124,
+          "timestampMs": 19047.500000000124,
           "confidence": null
         },
         {
           "text": " at",
-          "startMs": 22133.999999999985,
-          "endMs": 22173.99999999999,
-          "timestampMs": 22153.999999999985,
+          "startMs": 19279.000000000124,
+          "endMs": 19360.000000000124,
+          "timestampMs": 19319.500000000124,
           "confidence": null
         },
         {
           "text": " x",
-          "startMs": 22673.99999999999,
-          "endMs": 22773.999999999985,
-          "timestampMs": 22723.999999999985,
+          "startMs": 19541.000000000124,
+          "endMs": 19602.000000000124,
+          "timestampMs": 19571.500000000124,
           "confidence": null
         },
         {
           "text": " equals",
-          "startMs": 22893.99999999999,
-          "endMs": 23133.999999999985,
-          "timestampMs": 23013.999999999985,
+          "startMs": 19682.000000000124,
+          "endMs": 19904.000000000124,
+          "timestampMs": 19793.000000000124,
           "confidence": null
         },
         {
           "text": " zero.",
-          "startMs": 23173.99999999999,
-          "endMs": 23514.999999999985,
-          "timestampMs": 23344.499999999985,
+          "startMs": 19924.000000000124,
+          "endMs": 20288.000000000124,
+          "timestampMs": 20106.000000000124,
           "confidence": null
         },
         {
-          "text": " But",
-          "startMs": 24095.000000000084,
-          "endMs": 24176.000000000084,
-          "timestampMs": 24135.500000000084,
+          "text": " A",
+          "startMs": 20952.000000000065,
+          "endMs": 20992.000000000065,
+          "timestampMs": 20972.000000000065,
+          "confidence": null
+        },
+        {
+          "text": " quick",
+          "startMs": 21032.00000000007,
+          "endMs": 21213.000000000065,
+          "timestampMs": 21122.500000000065,
+          "confidence": null
+        },
+        {
+          "text": " guess:",
+          "startMs": 21253.00000000007,
+          "endMs": 21534.000000000065,
+          "timestampMs": 21393.500000000065,
+          "confidence": null
+        },
+        {
+          "text": " divide",
+          "startMs": 22056.000000000065,
+          "endMs": 22418.000000000065,
+          "timestampMs": 22237.000000000065,
           "confidence": null
         },
         {
           "text": " the",
-          "startMs": 24216.000000000084,
-          "endMs": 24296.000000000084,
-          "timestampMs": 24256.000000000084,
+          "startMs": 22438.000000000065,
+          "endMs": 22518.000000000065,
+          "timestampMs": 22478.000000000065,
           "confidence": null
         },
         {
-          "text": " tangent",
-          "startMs": 24336.000000000084,
-          "endMs": 24779.000000000084,
-          "timestampMs": 24557.500000000084,
+          "text": " derivatives.",
+          "startMs": 22538.00000000007,
+          "endMs": 23040.000000000065,
+          "timestampMs": 22789.000000000065,
           "confidence": null
         },
         {
-          "text": " there",
-          "startMs": 24799.000000000084,
-          "endMs": 25040.000000000084,
-          "timestampMs": 24919.500000000084,
+          "text": " The",
+          "startMs": 23743.00000000008,
+          "endMs": 23823.00000000008,
+          "timestampMs": 23783.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " top's",
+          "startMs": 23843.000000000076,
+          "endMs": 24064.00000000008,
+          "timestampMs": 23953.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " derivative",
+          "startMs": 24084.000000000076,
+          "endMs": 24545.00000000008,
+          "timestampMs": 24314.50000000008,
           "confidence": null
         },
         {
           "text": " is",
-          "startMs": 25101.000000000084,
-          "endMs": 25181.000000000087,
-          "timestampMs": 25141.000000000087,
+          "startMs": 24646.00000000008,
+          "endMs": 24726.00000000008,
+          "timestampMs": 24686.00000000008,
           "confidence": null
         },
         {
-          "text": " flat.",
-          "startMs": 25322.000000000084,
-          "endMs": 25624.000000000084,
-          "timestampMs": 25473.000000000084,
+          "text": " e",
+          "startMs": 24746.00000000008,
+          "endMs": 24766.00000000008,
+          "timestampMs": 24756.00000000008,
           "confidence": null
         },
         {
-          "text": " So",
-          "startMs": 26327.000000000084,
-          "endMs": 26448.000000000084,
-          "timestampMs": 26387.500000000084,
+          "text": " to",
+          "startMs": 24927.000000000076,
+          "endMs": 25047.00000000008,
+          "timestampMs": 24987.00000000008,
           "confidence": null
         },
         {
-          "text": " how",
-          "startMs": 26488.00000000008,
-          "endMs": 26608.000000000084,
-          "timestampMs": 26548.00000000008,
+          "text": " the",
+          "startMs": 25067.00000000008,
+          "endMs": 25147.00000000008,
+          "timestampMs": 25107.00000000008,
           "confidence": null
         },
         {
-          "text": " do",
-          "startMs": 26628.00000000008,
-          "endMs": 26708.000000000084,
-          "timestampMs": 26668.00000000008,
-          "confidence": null
-        },
-        {
-          "text": " we",
-          "startMs": 26728.000000000084,
-          "endMs": 26829.000000000084,
-          "timestampMs": 26778.500000000084,
-          "confidence": null
-        },
-        {
-          "text": " really",
-          "startMs": 26949.000000000084,
-          "endMs": 27310.000000000084,
-          "timestampMs": 27129.500000000084,
-          "confidence": null
-        },
-        {
-          "text": " differentiate",
-          "startMs": 27370.000000000084,
-          "endMs": 28092.000000000084,
-          "timestampMs": 27731.000000000084,
-          "confidence": null
-        },
-        {
-          "text": " a",
-          "startMs": 28112.000000000084,
-          "endMs": 28132.000000000084,
-          "timestampMs": 28122.000000000084,
-          "confidence": null
-        },
-        {
-          "text": " quotient,",
-          "startMs": 28253.00000000008,
-          "endMs": 28694.00000000008,
-          "timestampMs": 28473.50000000008,
+          "text": " x,",
+          "startMs": 25368.00000000008,
+          "endMs": 25488.000000000076,
+          "timestampMs": 25428.00000000008,
           "confidence": null
         },
         {
           "text": " and",
-          "startMs": 29035.00000000008,
-          "endMs": 29115.000000000084,
-          "timestampMs": 29075.00000000008,
+          "startMs": 25749.00000000008,
+          "endMs": 25850.00000000008,
+          "timestampMs": 25799.50000000008,
           "confidence": null
         },
         {
-          "text": " keep",
-          "startMs": 29155.000000000084,
-          "endMs": 29376.000000000084,
-          "timestampMs": 29265.500000000084,
+          "text": " the",
+          "startMs": 25870.00000000008,
+          "endMs": 25930.000000000076,
+          "timestampMs": 25900.00000000008,
           "confidence": null
         },
         {
-          "text": " track",
-          "startMs": 29416.000000000084,
-          "endMs": 29717.000000000084,
-          "timestampMs": 29566.500000000084,
+          "text": " bottom's",
+          "startMs": 25990.00000000008,
+          "endMs": 26351.00000000008,
+          "timestampMs": 26170.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26472.00000000008,
+          "endMs": 26532.000000000076,
+          "timestampMs": 26502.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 26813.00000000008,
+          "endMs": 26953.00000000008,
+          "timestampMs": 26883.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 27455.00000000008,
+          "endMs": 27575.00000000008,
+          "timestampMs": 27515.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27636.00000000008,
+          "endMs": 27756.00000000008,
+          "timestampMs": 27696.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " guess",
+          "startMs": 27816.00000000008,
+          "endMs": 28097.00000000008,
+          "timestampMs": 27956.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 28137.00000000008,
+          "endMs": 28318.00000000008,
+          "timestampMs": 28227.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28378.00000000008,
+          "endMs": 28418.000000000076,
+          "timestampMs": 28398.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " slope",
+          "startMs": 28478.00000000008,
+          "endMs": 28759.00000000008,
+          "timestampMs": 28618.50000000008,
           "confidence": null
         },
         {
           "text": " of",
-          "startMs": 29737.000000000084,
-          "endMs": 29797.000000000084,
-          "timestampMs": 29767.000000000084,
+          "startMs": 28779.000000000076,
+          "endMs": 28840.000000000076,
+          "timestampMs": 28809.500000000076,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 28980.00000000008,
+          "endMs": 29101.000000000076,
+          "timestampMs": 29040.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 29241.000000000076,
+          "endMs": 29301.00000000008,
+          "timestampMs": 29271.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " x",
+          "startMs": 29462.00000000008,
+          "endMs": 29542.00000000008,
+          "timestampMs": 29502.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 29602.00000000008,
+          "endMs": 29823.00000000008,
+          "timestampMs": 29712.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " zero.",
+          "startMs": 29883.00000000008,
+          "endMs": 30244.000000000076,
+          "timestampMs": 30063.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 30787.000000000076,
+          "endMs": 30888.000000000076,
+          "timestampMs": 30837.500000000076,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30908.000000000076,
+          "endMs": 30989.00000000008,
+          "timestampMs": 30948.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " tangent",
+          "startMs": 31009.00000000008,
+          "endMs": 31392.000000000076,
+          "timestampMs": 31200.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 31413.00000000008,
+          "endMs": 31615.000000000076,
+          "timestampMs": 31514.00000000008,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 31695.00000000008,
+          "endMs": 31776.000000000076,
+          "timestampMs": 31735.50000000008,
+          "confidence": null
+        },
+        {
+          "text": " flat.",
+          "startMs": 31877.000000000076,
+          "endMs": 32200.000000000073,
+          "timestampMs": 32038.500000000073,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 33066.99999999986,
+          "endMs": 33227.99999999987,
+          "timestampMs": 33147.49999999987,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 33588.99999999986,
+          "endMs": 33708.99999999987,
+          "timestampMs": 33648.99999999987,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 33748.99999999987,
+          "endMs": 33828.99999999987,
+          "timestampMs": 33788.99999999987,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 33849.99999999987,
+          "endMs": 33949.99999999987,
+          "timestampMs": 33899.99999999987,
+          "confidence": null
+        },
+        {
+          "text": " really",
+          "startMs": 34049.99999999986,
+          "endMs": 34330.99999999987,
+          "timestampMs": 34190.49999999987,
+          "confidence": null
+        },
+        {
+          "text": " differentiate",
+          "startMs": 34370.99999999987,
+          "endMs": 34951.99999999986,
+          "timestampMs": 34661.49999999987,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 34992.99999999987,
+          "endMs": 35032.99999999987,
+          "timestampMs": 35012.99999999987,
+          "confidence": null
+        },
+        {
+          "text": " quotient,",
+          "startMs": 35092.99999999987,
+          "endMs": 35533.99999999986,
+          "timestampMs": 35313.49999999987,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 35854.99999999986,
+          "endMs": 35974.99999999987,
+          "timestampMs": 35914.99999999987,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 36014.99999999987,
+          "endMs": 36195.99999999986,
+          "timestampMs": 36105.49999999987,
+          "confidence": null
+        },
+        {
+          "text": " track",
+          "startMs": 36235.99999999986,
+          "endMs": 36496.99999999986,
+          "timestampMs": 36366.49999999986,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 36516.99999999987,
+          "endMs": 36576.99999999986,
+          "timestampMs": 36546.99999999987,
           "confidence": null
         },
         {
           "text": " where",
-          "startMs": 29837.00000000008,
-          "endMs": 29997.00000000008,
-          "timestampMs": 29917.00000000008,
+          "startMs": 36616.99999999986,
+          "endMs": 36776.99999999987,
+          "timestampMs": 36696.99999999987,
           "confidence": null
         },
         {
           "text": " it's",
-          "startMs": 30017.00000000008,
-          "endMs": 30138.000000000084,
-          "timestampMs": 30077.50000000008,
+          "startMs": 36796.99999999987,
+          "endMs": 36917.99999999986,
+          "timestampMs": 36857.49999999987,
           "confidence": null
         },
         {
           "text": " defined?",
-          "startMs": 30158.000000000084,
-          "endMs": 30579.000000000084,
-          "timestampMs": 30368.500000000084,
+          "startMs": 36937.99999999987,
+          "endMs": 37378.99999999986,
+          "timestampMs": 37158.49999999987,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "scene-01a",
+      "durationInFrames": 1182,
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "voiceover": {
+        "text": "Let's take that road trip. Your average speed is the distance so far, over the time so far. After one hour you've gone a hundred kilometres, so your average is a hundred kilometres an hour. Keep driving, and more distance pushes the average up, but more time pulls it down. Drive at a hundred and twenty, faster than your average, and the push wins: the average rises. Slow to sixty for roadworks, and the pull wins: it falls. Now hold exactly a hundred, your average, and the two cancel, so it stays flat. That's our flat tangent. Dividing the two rates only gives your speed right now, not how fast the average is changing.",
+        "audioFile": "public/audio/math-a12-d08/scene-01a.wav",
+        "startFrame": 0,
+        "endFrame": 1182
+      },
+      "captions": [
+        {
+          "text": "Let's",
+          "startMs": 142,
+          "endMs": 324,
+          "timestampMs": 233,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 385,
+          "endMs": 587,
+          "timestampMs": 486,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 729,
+          "endMs": 891,
+          "timestampMs": 810,
+          "confidence": null
+        },
+        {
+          "text": " road",
+          "startMs": 972,
+          "endMs": 1155,
+          "timestampMs": 1063.5,
+          "confidence": null
+        },
+        {
+          "text": " trip.",
+          "startMs": 1195,
+          "endMs": 1418,
+          "timestampMs": 1306.5,
+          "confidence": null
+        },
+        {
+          "text": " Your",
+          "startMs": 1962.0000000000002,
+          "endMs": 2122.0000000000005,
+          "timestampMs": 2042.0000000000005,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 2263.0000000000005,
+          "endMs": 2543,
+          "timestampMs": 2403,
+          "confidence": null
+        },
+        {
+          "text": " speed",
+          "startMs": 2584.0000000000005,
+          "endMs": 2924.0000000000005,
+          "timestampMs": 2754.0000000000005,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3085,
+          "endMs": 3165,
+          "timestampMs": 3125,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3205,
+          "endMs": 3285,
+          "timestampMs": 3245,
+          "confidence": null
+        },
+        {
+          "text": " distance",
+          "startMs": 3305,
+          "endMs": 3646.0000000000005,
+          "timestampMs": 3475.5,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 3666.0000000000005,
+          "endMs": 3847.0000000000005,
+          "timestampMs": 3756.5000000000005,
+          "confidence": null
+        },
+        {
+          "text": " far,",
+          "startMs": 3947,
+          "endMs": 4268.000000000001,
+          "timestampMs": 4107.5,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 4408,
+          "endMs": 4569,
+          "timestampMs": 4488.5,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4589,
+          "endMs": 4669.000000000001,
+          "timestampMs": 4629,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 4709.000000000001,
+          "endMs": 5010.000000000001,
+          "timestampMs": 4859.500000000001,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5050,
+          "endMs": 5211,
+          "timestampMs": 5130.5,
+          "confidence": null
+        },
+        {
+          "text": " far.",
+          "startMs": 5271,
+          "endMs": 5471,
+          "timestampMs": 5371,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 6152.999999999987,
+          "endMs": 6333.999999999987,
+          "timestampMs": 6243.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 6414.999999999987,
+          "endMs": 6514.999999999987,
+          "timestampMs": 6464.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " hour",
+          "startMs": 6534.999999999987,
+          "endMs": 6755.999999999988,
+          "timestampMs": 6645.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " you've",
+          "startMs": 6936.999999999988,
+          "endMs": 7077.999999999987,
+          "timestampMs": 7007.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " gone",
+          "startMs": 7117.999999999988,
+          "endMs": 7298.999999999987,
+          "timestampMs": 7208.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7318.999999999987,
+          "endMs": 7338.999999999988,
+          "timestampMs": 7328.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 7499.999999999987,
+          "endMs": 7720.999999999987,
+          "timestampMs": 7610.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " kilometres,",
+          "startMs": 7760.999999999987,
+          "endMs": 8202.999999999987,
+          "timestampMs": 7981.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8483.999999999987,
+          "endMs": 8624.999999999987,
+          "timestampMs": 8554.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 8644.999999999987,
+          "endMs": 8785.999999999987,
+          "timestampMs": 8715.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 8825.999999999987,
+          "endMs": 9106.999999999987,
+          "timestampMs": 8966.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9368.999999999987,
+          "endMs": 9408.999999999989,
+          "timestampMs": 9388.999999999989,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9448.999999999987,
+          "endMs": 9488.999999999987,
+          "timestampMs": 9468.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 9528.999999999987,
+          "endMs": 9729.999999999987,
+          "timestampMs": 9629.499999999987,
+          "confidence": null
+        },
+        {
+          "text": " kilometres",
+          "startMs": 9769.999999999987,
+          "endMs": 10131.999999999987,
+          "timestampMs": 9950.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 10151.999999999987,
+          "endMs": 10211.999999999987,
+          "timestampMs": 10181.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " hour.",
+          "startMs": 10252.999999999987,
+          "endMs": 10392.999999999987,
+          "timestampMs": 10322.999999999987,
+          "confidence": null
+        },
+        {
+          "text": " Keep",
+          "startMs": 11035.999999999995,
+          "endMs": 11176.999999999995,
+          "timestampMs": 11106.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " driving,",
+          "startMs": 11216.999999999993,
+          "endMs": 11557.999999999995,
+          "timestampMs": 11387.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11758.999999999993,
+          "endMs": 11879.999999999995,
+          "timestampMs": 11819.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 12100.999999999995,
+          "endMs": 12321.999999999995,
+          "timestampMs": 12211.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " distance",
+          "startMs": 12381.999999999995,
+          "endMs": 12782.999999999995,
+          "timestampMs": 12582.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " pushes",
+          "startMs": 12843.999999999995,
+          "endMs": 13124.999999999993,
+          "timestampMs": 12984.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13164.999999999995,
+          "endMs": 13264.999999999993,
+          "timestampMs": 13214.999999999993,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 13325.999999999993,
+          "endMs": 13566.999999999993,
+          "timestampMs": 13446.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " up,",
+          "startMs": 13767.999999999993,
+          "endMs": 13867.999999999993,
+          "timestampMs": 13817.999999999993,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 14208.999999999995,
+          "endMs": 14329.999999999995,
+          "timestampMs": 14269.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 14369.999999999995,
+          "endMs": 14530.999999999993,
+          "timestampMs": 14450.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 14590.999999999995,
+          "endMs": 14911.999999999995,
+          "timestampMs": 14751.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " pulls",
+          "startMs": 15032.999999999995,
+          "endMs": 15253.999999999995,
+          "timestampMs": 15143.499999999995,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15293.999999999993,
+          "endMs": 15353.999999999995,
+          "timestampMs": 15323.999999999993,
+          "confidence": null
+        },
+        {
+          "text": " down.",
+          "startMs": 15434.999999999993,
+          "endMs": 15695.999999999995,
+          "timestampMs": 15565.499999999993,
+          "confidence": null
+        },
+        {
+          "text": " Drive",
+          "startMs": 16417.99999999999,
+          "endMs": 16658.99999999999,
+          "timestampMs": 16538.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 16678.99999999999,
+          "endMs": 16738.99999999999,
+          "timestampMs": 16708.99999999999,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16758.99999999999,
+          "endMs": 16798.99999999999,
+          "timestampMs": 16778.99999999999,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 16818.99999999999,
+          "endMs": 16999.99999999999,
+          "timestampMs": 16909.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17019.99999999999,
+          "endMs": 17079.99999999999,
+          "timestampMs": 17049.99999999999,
+          "confidence": null
+        },
+        {
+          "text": " twenty,",
+          "startMs": 17139.99999999999,
+          "endMs": 17380.99999999999,
+          "timestampMs": 17260.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " faster",
+          "startMs": 17801.99999999999,
+          "endMs": 18141.99999999999,
+          "timestampMs": 17971.99999999999,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 18161.99999999999,
+          "endMs": 18262.99999999999,
+          "timestampMs": 18212.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 18282.999999999985,
+          "endMs": 18402.99999999999,
+          "timestampMs": 18342.999999999985,
+          "confidence": null
+        },
+        {
+          "text": " average,",
+          "startMs": 18442.999999999985,
+          "endMs": 18683.99999999999,
+          "timestampMs": 18563.499999999985,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19043.99999999999,
+          "endMs": 19164.99999999999,
+          "timestampMs": 19104.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19184.99999999999,
+          "endMs": 19384.99999999999,
+          "timestampMs": 19284.99999999999,
+          "confidence": null
+        },
+        {
+          "text": " push",
+          "startMs": 19444.99999999999,
+          "endMs": 19725.99999999999,
+          "timestampMs": 19585.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " wins:",
+          "startMs": 19905.99999999999,
+          "endMs": 20226.99999999999,
+          "timestampMs": 20066.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20687.99999999999,
+          "endMs": 20767.999999999985,
+          "timestampMs": 20727.999999999985,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 20807.99999999999,
+          "endMs": 21008.99999999999,
+          "timestampMs": 20908.49999999999,
+          "confidence": null
+        },
+        {
+          "text": " rises.",
+          "startMs": 21068.99999999999,
+          "endMs": 21389.999999999985,
+          "timestampMs": 21229.499999999985,
+          "confidence": null
+        },
+        {
+          "text": " Slow",
+          "startMs": 22071.000000000087,
+          "endMs": 22252.000000000087,
+          "timestampMs": 22161.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22272.000000000087,
+          "endMs": 22393.00000000009,
+          "timestampMs": 22332.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " sixty",
+          "startMs": 22433.000000000087,
+          "endMs": 22775.000000000087,
+          "timestampMs": 22604.000000000087,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 22855.00000000009,
+          "endMs": 22976.000000000087,
+          "timestampMs": 22915.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " roadworks,",
+          "startMs": 23016.000000000087,
+          "endMs": 23519.000000000087,
+          "timestampMs": 23267.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23880.000000000087,
+          "endMs": 24001.00000000009,
+          "timestampMs": 23940.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24142.000000000087,
+          "endMs": 24222.000000000087,
+          "timestampMs": 24182.000000000087,
+          "confidence": null
+        },
+        {
+          "text": " pull",
+          "startMs": 24262.00000000009,
+          "endMs": 24524.00000000009,
+          "timestampMs": 24393.00000000009,
+          "confidence": null
+        },
+        {
+          "text": " wins:",
+          "startMs": 24564.000000000087,
+          "endMs": 24805.000000000087,
+          "timestampMs": 24684.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 25267.000000000087,
+          "endMs": 25328.000000000087,
+          "timestampMs": 25297.500000000087,
+          "confidence": null
+        },
+        {
+          "text": " falls.",
+          "startMs": 25388.000000000087,
+          "endMs": 25690.00000000009,
+          "timestampMs": 25539.000000000087,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 26473.000000000106,
+          "endMs": 26714.000000000106,
+          "timestampMs": 26593.500000000106,
+          "confidence": null
+        },
+        {
+          "text": " hold",
+          "startMs": 26895.000000000102,
+          "endMs": 27156.000000000106,
+          "timestampMs": 27025.500000000102,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 27277.000000000106,
+          "endMs": 27779.000000000102,
+          "timestampMs": 27528.000000000102,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27799.000000000102,
+          "endMs": 27819.000000000106,
+          "timestampMs": 27809.000000000102,
+          "confidence": null
+        },
+        {
+          "text": " hundred,",
+          "startMs": 28121.000000000106,
+          "endMs": 28442.000000000102,
+          "timestampMs": 28281.500000000102,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 28824.000000000106,
+          "endMs": 28964.000000000106,
+          "timestampMs": 28894.000000000106,
+          "confidence": null
+        },
+        {
+          "text": " average,",
+          "startMs": 29004.000000000106,
+          "endMs": 29306.000000000106,
+          "timestampMs": 29155.000000000106,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29687.000000000106,
+          "endMs": 29788.000000000102,
+          "timestampMs": 29737.500000000102,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29808.000000000102,
+          "endMs": 29868.000000000106,
+          "timestampMs": 29838.000000000102,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 29908.000000000106,
+          "endMs": 30049.000000000106,
+          "timestampMs": 29978.500000000106,
+          "confidence": null
+        },
+        {
+          "text": " cancel,",
+          "startMs": 30069.000000000106,
+          "endMs": 30431.000000000106,
+          "timestampMs": 30250.000000000106,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 30672.000000000102,
+          "endMs": 30772.000000000106,
+          "timestampMs": 30722.000000000102,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 30792.000000000106,
+          "endMs": 30873.000000000106,
+          "timestampMs": 30832.500000000106,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 30893.000000000106,
+          "endMs": 31154.000000000102,
+          "timestampMs": 31023.500000000102,
+          "confidence": null
+        },
+        {
+          "text": " flat.",
+          "startMs": 31174.000000000106,
+          "endMs": 31435.000000000106,
+          "timestampMs": 31304.500000000106,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 31797.000000000036,
+          "endMs": 32038.00000000004,
+          "timestampMs": 31917.500000000036,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 32259.000000000036,
+          "endMs": 32339.00000000004,
+          "timestampMs": 32299.000000000036,
+          "confidence": null
+        },
+        {
+          "text": " flat",
+          "startMs": 32460.000000000036,
+          "endMs": 32742.00000000004,
+          "timestampMs": 32601.000000000036,
+          "confidence": null
+        },
+        {
+          "text": " tangent.",
+          "startMs": 32882.000000000044,
+          "endMs": 33304.00000000004,
+          "timestampMs": 33093.000000000044,
+          "confidence": null
+        },
+        {
+          "text": " Dividing",
+          "startMs": 33826.9999999999,
+          "endMs": 34187.9999999999,
+          "timestampMs": 34007.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 34227.9999999999,
+          "endMs": 34287.9999999999,
+          "timestampMs": 34257.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 34327.9999999999,
+          "endMs": 34488.9999999999,
+          "timestampMs": 34408.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " rates",
+          "startMs": 34548.99999999989,
+          "endMs": 34808.9999999999,
+          "timestampMs": 34678.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 34989.9999999999,
+          "endMs": 35169.9999999999,
+          "timestampMs": 35079.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 35209.99999999989,
+          "endMs": 35370.9999999999,
+          "timestampMs": 35290.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 35410.9999999999,
+          "endMs": 35570.9999999999,
+          "timestampMs": 35490.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " speed",
+          "startMs": 35610.9999999999,
+          "endMs": 35911.99999999989,
+          "timestampMs": 35761.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " right",
+          "startMs": 36111.9999999999,
+          "endMs": 36332.9999999999,
+          "timestampMs": 36222.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 36472.99999999989,
+          "endMs": 36753.9999999999,
+          "timestampMs": 36613.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 37234.99999999989,
+          "endMs": 37394.9999999999,
+          "timestampMs": 37314.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 37475.99999999989,
+          "endMs": 37615.99999999989,
+          "timestampMs": 37545.99999999989,
+          "confidence": null
+        },
+        {
+          "text": " fast",
+          "startMs": 37675.9999999999,
+          "endMs": 37916.9999999999,
+          "timestampMs": 37796.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37956.99999999989,
+          "endMs": 38056.9999999999,
+          "timestampMs": 38006.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 38196.9999999999,
+          "endMs": 38517.99999999989,
+          "timestampMs": 38357.4999999999,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 38617.9999999999,
+          "endMs": 38697.99999999989,
+          "timestampMs": 38657.9999999999,
+          "confidence": null
+        },
+        {
+          "text": " changing.",
+          "startMs": 38738.9999999999,
+          "endMs": 39078.99999999989,
+          "timestampMs": 38908.9999999999,
           "confidence": null
         }
       ]
@@ -8243,9 +9181,9 @@
         "startFrame": 0,
         "endFrame": 132
       },
-      "holdSeconds": 60,
+      "holdSeconds": 40.6,
       "holdKind": "notes",
-      "durationInFrames": 1932,
+      "durationInFrames": 1350,
       "captions": [
         {
           "text": "Here",
@@ -8361,5 +9299,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "Brief235 changed-scene narration measured; machine checks recorded; human listening pending"
 }

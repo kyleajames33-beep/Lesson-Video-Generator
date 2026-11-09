@@ -1,0 +1,178 @@
+{
+  "id": "chem-y11-m1-v06",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "a669c8b0c137322b24f2c8d4d463d44036faea76e1aa539cd87d580698b18c74",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: which, but how much?",
+      "voiceover": {
+        "text": "Last time, chromatography showed which dyes were in an ink, but not how much of each one was there. Today we'll answer the how much question, with a mixture we can actually weigh. Here's twenty point zero zero grams of dry sand and table salt, stirred together. After we separate it, what fraction of this mixture was sand, and what fraction was salt? The answer comes from two kinds of measurement: the mass you start with, and the masses you get back."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "separation-recall",
+      "title": "the separation, in fast forward",
+      "voiceover": {
+        "text": "You've seen this separation before, so here it is in fast forward. Add water, and the salt dissolves while the sand doesn't. Pour it through filter paper, and the sand stays behind as the residue, while the salty liquid, the filtrate, runs through. Rinse the sand with a little water to wash off any salt, then dry it. The filtrate goes into an evaporating basin, and we heat it gently until most of the water has gone, then leave it somewhere warm to finish drying. Now each component sits in its own container."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "weigh-by-difference",
+      "title": "weighing by difference",
+      "voiceover": {
+        "text": "Here's a practical detail that matters. You can't tip the salt onto the balance, so you weigh its container too. The empty basin was forty-five point one two grams. With the dry salt in it, it reads fifty-nine point one two grams. Subtract, and the salt alone is fourteen point zero zero grams. That's called weighing by difference. The dried sand gets the same treatment on its watch glass: twenty-seven point three five grams, minus twenty-one point three five grams for the empty glass, gives six point zero zero grams of sand."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "percentage",
+      "title": "percentage by mass",
+      "voiceover": {
+        "text": "Now the fraction. Percentage by mass, which the syllabus calls percentage by weight, is the mass of one component, divided by the mass of the whole mixture, times one hundred. For the sand, that's six point zero zero over twenty point zero zero, times a hundred, which is thirty point zero percent. For the salt, fourteen point zero zero over twenty point zero zero gives seventy point zero percent. And together they make one hundred percent, which is a useful check."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conservation",
+      "title": "why the starting mass, and why it adds up",
+      "voiceover": {
+        "text": "Why divide by the twenty grams you started with? Because the question is about the original mixture, so the whole is what you weighed first. And here's why the check works. Filtering and evaporating are physical changes. They move the sand and the salt into different containers, but they don't create or destroy any matter. So if nothing is lost along the way, the masses you get back must add up to the mass you started with."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "loss-run",
+      "title": "a real run: some mass goes missing",
+      "voiceover": {
+        "text": "Real practicals are rarely that tidy. Another group starts with twenty-five point zero zero grams of the same kind of mixture. They get back eight point zero zero grams of sand, and sixteen point zero zero grams of salt. The sand is thirty-two point zero percent, and the salt is sixty-four point zero percent. Add those, and you've only accounted for ninety-six point zero percent. One gram, which is four point zero percent of the mixture, is missing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "loss-causes",
+      "title": "where the missing mass went",
+      "voiceover": {
+        "text": "So where did it go? It didn't vanish, and it isn't a mystery third substance. It's mass that never made it into the final containers. Some salty solution stays behind, wetting the beaker, the funnel and the filter paper. A little solution can spit out of the basin if it's heated too hard. And some crystals stay stuck to the glass rod or the basin. So report the missing percentage honestly, and name where the losses most likely happened."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Suppose a group weighs its sand while it's still a little damp. Will the percentage of sand come out too high, or too low? And what will the two percentages add up to? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "extra-mass",
+      "title": "extra mass, and drying to constant mass",
+      "voiceover": {
+        "text": "Too high. The balance can't tell sand from water, so the water gets counted as sand. And that pushes the total above one hundred percent. So the total is a clue in both directions. Below one hundred means something was lost. Above one hundred means something extra was weighed, and it's usually water. The fix is drying to constant mass. Heat it, let it cool, and weigh it. Then heat and weigh again, until two readings in a row match."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "one line to remember",
+      "voiceover": {
+        "text": "Here's the whole method in one line. Divide by what you started with, then account for the rest. Each component's percentage uses the original mass on the bottom, and whatever is left over tells you about loss, or about extra mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A fifteen point zero zero gram mixture of chalk and table salt is separated. The student recovers four point two zero grams of dry chalk and ten point five zero grams of dry salt. Calculate the percentage by mass of each component in the original mixture, and the percentage that was not recovered. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Chalk is four point two zero over fifteen point zero zero, times a hundred, which is twenty-eight point zero percent. Salt is ten point five zero over fifteen point zero zero, which is seventy point zero percent. Together that's ninety-eight point zero percent, so two point zero percent was not recovered. The slip to avoid is dividing by fourteen point seven zero, the total you got back. That hides the loss completely."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A ten point zero zero gram mixture of sand and salt is separated. The sand is dried in an oven for only ten minutes, then weighed at four point one two grams. The dry salt weighs six point two five grams. Calculate the percentage of each component, then explain why the total isn't one hundred percent, and how the method should change. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Sand comes out at forty-one point two percent, and salt at sixty-two point five percent. That adds to one hundred and three point seven percent, so something extra was weighed. The most likely cause is water left in the sand, because it was dried for only ten minutes. Dry it to constant mass before weighing. Calling the extra mass a third substance is the classic mistake."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: inside the salt",
+      "voiceover": {
+        "text": "So by separating a mixture and weighing the parts, we found how much of it was salt. But salt itself is a compound. Its sodium and chlorine are bonded together in a fixed ratio, so no filter can pull them apart. Next time, we'll see how the formula alone tells us what fraction of a compound's mass comes from each element."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

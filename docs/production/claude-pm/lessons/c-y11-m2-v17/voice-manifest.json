@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v17.md",
+  "sourceSha256": "42793a5aaf4802db70b6f6c62d7aa849f003d005e5e90ad56c7f591fd2db340a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's that sealed syringe again, holding a hundred millilitres of air at twenty-five degrees and a hundred kilopascals. Last time, every comparison kept the temperature and the pressure fixed. Now we change something. Keep the temperature steady, and push the plunger in until the air fills only fifty millilitres. So, quick prediction. Does the pressure stay the same, halve, or double?",
+      "audioFile": "public/audio/chem-y11-m2-v17/hook-prediction.wav"
+    },
+    {
+      "id": "twice-the-hits",
+      "text": "It doubles, to two hundred kilopascals. Here's why. Pressure comes from particles hitting the walls. Squeezing doesn't change how many particles there are, and at a steady temperature they keep the same average speed, so each hit is just as hard. But now the same particles share half the space, so twice as many are close to any patch of wall at any moment. That patch gets twice as many hits every second, so the pressure doubles.",
+      "audioFile": "public/audio/chem-y11-m2-v17/twice-the-hits.wav"
+    },
+    {
+      "id": "pv-constant",
+      "text": "Keep going. Squeeze it to twenty-five millilitres and the pressure doubles again, to four hundred. Let the gas spread out to two hundred millilitres and it halves, to fifty. Whenever the volume goes up by some factor, the pressure goes down by the same factor. That's called inverse proportion, and it means pressure times volume stays the same, here ten thousand every time. That's Boyle's law. For a fixed amount of gas at constant temperature, P one V one equals P two V two.",
+      "audioFile": "public/audio/chem-y11-m2-v17/pv-constant.wav"
+    },
+    {
+      "id": "fixed-t-and-n",
+      "text": "Those two conditions matter. If the gas warms up, its particles move faster and hit harder, so the pressure rises for a second reason. If gas leaks out, there are fewer particles left to hit the walls. Even squeezing quickly warms the gas a little, the way a bike pump warms up. So in a Boyle's law test, you seal the gas, push slowly, and wait a few seconds before each reading.",
+      "audioFile": "public/audio/chem-y11-m2-v17/fixed-t-and-n.wav"
+    },
+    {
+      "id": "investigation",
+      "text": "Here's how you'd test it. Connect a gas syringe to a pressure sensor, a probe that reads the gas pressure, using a short tube, and seal every joint. Start with the plunger at a hundred millilitres, at room pressure. Then push it in ten millilitres at a time, recording the volume from the syringe scale and the pressure from the sensor. The volume you set is the independent variable, the pressure is the dependent variable, and the temperature and amount of gas are kept constant.",
+      "audioFile": "public/audio/chem-y11-m2-v17/investigation.wav"
+    },
+    {
+      "id": "results-pv",
+      "text": "Here are some results. As the volume falls from a hundred to fifty millilitres, the pressure climbs from a hundred to about a hundred and ninety-six kilopascals. Now multiply each pair. P times V stays close to ten thousand, but it drifts down a little, by about two percent by the end. Hold on to that drift, because it's a clue.",
+      "audioFile": "public/audio/chem-y11-m2-v17/results-pv.wav"
+    },
+    {
+      "id": "curve-and-line",
+      "text": "First, the graph. Pressure against volume gives a curve that falls more and more gently. The trouble is that lots of relationships make curves, so a curve is hard to judge by eye. So plot pressure against one over volume instead. If pressure is inversely proportional to volume, that graph is a straight line through the origin. And our points sit very close to a straight line.",
+      "audioFile": "public/audio/chem-y11-m2-v17/curve-and-line.wav"
+    },
+    {
+      "id": "hidden-gas",
+      "text": "Now the clue. Look closely, and the line meets the pressure axis a little above zero. One likely cause of that, and of the drift in P times V, is air inside the tube and the sensor, where the syringe scale can't see it. Then the real volume of gas is a bit bigger than the reading. Use a short, narrow tube, or measure its volume and add it on. But a tiny leak could cause a drift too. To check, hold the plunger still and make sure the reading doesn't fall.",
+      "audioFile": "public/audio/chem-y11-m2-v17/hidden-gas.wav"
+    },
+    {
+      "id": "two-state-calc",
+      "text": "Now a two-state calculation. A sealed syringe holds sixty millilitres of air at a hundred kilopascals. The plunger is pushed in slowly until the pressure reads a hundred and fifty. What's the new volume? The temperature and amount don't change, so P one V one equals P two V two. Rearranged, V two is P one V one over P two. That's a hundred times sixty, over a hundred and fifty, which is forty point zero millilitres. Pressure went up, so volume went down. That checks out.",
+      "audioFile": "public/audio/chem-y11-m2-v17/two-state-calc.wav"
+    },
+    {
+      "id": "units-memory",
+      "text": "So here's a way to remember the cause: half the room, twice the hits. For the calculation, any units work, as long as both sides use the same ones, millilitres with millilitres and kilopascals with kilopascals. And notice that temperature never appears in Boyle's law, so there's nothing to convert yet.",
+      "audioFile": "public/audio/chem-y11-m2-v17/units-memory.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A sample of gas occupies four point zero zero litres at a hundred and twenty kilopascals. At constant temperature, the pressure is lowered to eighty point zero kilopascals. Calculate the new volume of the gas. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v17/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "V two is P one V one over P two, which is a hundred and twenty times four, over eighty, six point zero zero litres. Lower pressure means a bigger volume, so the answer should grow. Two point six seven litres means the ratio was flipped, and the volume shrank when it should have grown.",
+      "audioFile": "public/audio/chem-y11-m2-v17/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student measures the pressure and volume of air in a sealed syringe at constant temperature. Describe the graph the student should draw to show that the data support Boyle's law, and what the graph should look like. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v17/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Plot pressure against one over volume. If Boyle's law holds, the points lie on a straight line through the origin, because pressure is proportional to one over volume. Pressure against volume gives a curve, so expecting a straight line sloping down on that graph is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v17/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So squeezing a gas raises its pressure, because the same particles crowd into less space and hit each part of the wall more often. At constant temperature, P times V stays the same. But what if the temperature changes? Stand the syringe in cold water at ten degrees, with the plunger free to move, so the pressure stays the same. It reads fifty millilitres. Warm the water to twenty degrees, double the Celsius number, and the volume only creeps up to about fifty-two. So why do gas volume and pressure laws require kelvin?",
+      "audioFile": "public/audio/chem-y11-m2-v17/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v17/key-notes.wav"
+    }
+  ]
+}

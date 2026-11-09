@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v03.md",
+  "sourceSha256": "6779997e679fec6d2a5516104b656201133b1480939edfc58075fe7ddaead815",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Last time, the burner lost zero point seven two grams of ethanol, and the water gained nine point seven eight kilojoules. Burning that much ethanol can release about twenty-one. Now let's turn our data into the fuel's enthalpy per mole, and compare it with the data value. First, a prediction. Will our answer come out bigger than the data value, about the same, or smaller in size?",
+      "audioFile": "public/audio/chem-y11-m4-v03/hook-prediction.wav"
+    },
+    {
+      "id": "enthalpy-of-combustion",
+      "text": "Smaller in size. To see why, we need the value we're comparing against. The enthalpy of combustion, delta H c, is the enthalpy change when one mole of a substance burns completely in oxygen. For ethanol, the data value is minus one thousand three hundred and sixty-seven kilojoules per mole. It's measured in a sealed container full of oxygen, where the fuel burns completely and almost no heat can escape.",
+      "audioFile": "public/audio/chem-y11-m4-v03/enthalpy-of-combustion.wav"
+    },
+    {
+      "id": "method",
+      "text": "Here's a typical method. Weigh the spirit burner with its cap on. Put a known mass of water in the copper can and record its temperature. Light the burner, stir the water, and let it warm by about ten degrees. Then cap the burner to put out the flame, record the highest temperature, and weigh the burner again. Wear safety glasses, and keep the fuel bottle stoppered and well away from the flame.",
+      "audioFile": "public/audio/chem-y11-m4-v03/method.wav"
+    },
+    {
+      "id": "moles-of-fuel",
+      "text": "The burner lost zero point seven two grams, so that's the mass of ethanol that burned. A per mole value needs moles. Ethanol's molar mass is forty-six point zero seven grams per mole, so zero point seven two divided by forty-six point zero seven gives zero point zero one five six three moles.",
+      "audioFile": "public/audio/chem-y11-m4-v03/moles-of-fuel.wav"
+    },
+    {
+      "id": "molar-enthalpy",
+      "text": "Now share the heat out per mole. The water gained nine point seven eight kilojoules from zero point zero one five six three moles of ethanol. Dividing gives about six hundred and twenty-six kilojoules for every mole. The reaction lost that energy, so the sign is negative. Delta H c equals minus q over n, which is minus six hundred and twenty-six kilojoules per mole.",
+      "audioFile": "public/audio/chem-y11-m4-v03/molar-enthalpy.wav"
+    },
+    {
+      "id": "compare-data",
+      "text": "So our result is minus six hundred and twenty-six, and the data value is minus one thousand three hundred and sixty-seven. Ours is less than half the size. As a percentage error, that's the difference, seven hundred and forty-one, divided by one thousand three hundred and sixty-seven, which is about fifty-four per cent.",
+      "audioFile": "public/audio/chem-y11-m4-v03/compare-data.wav"
+    },
+    {
+      "id": "energy-split",
+      "text": "So where did the energy go? If all zero point seven two grams had burned completely, about twenty-one point four kilojoules would be released. Only nine point seven eight reached the water. The copper can soaked up a little, roughly a quarter of a kilojoule. Most of the rest never reached the water at all.",
+      "audioFile": "public/audio/chem-y11-m4-v03/energy-split.wav"
+    },
+    {
+      "id": "heat-to-air",
+      "text": "The biggest leak is heat lost to the air. The flame heats the air around it, and that hot air, along with the hot gases from burning, rises past the sides of the can and carries its energy away. The warm can also heats the room. Every joule that misses the water is a joule that q never counts, so q is too small, and delta H comes out too small in size.",
+      "audioFile": "public/audio/chem-y11-m4-v03/heat-to-air.wav"
+    },
+    {
+      "id": "incomplete-combustion",
+      "text": "The second cause is incomplete combustion. If the flame doesn't get enough oxygen, some carbon ends up as soot or carbon monoxide instead of carbon dioxide. You can see it, a yellow, smoky flame and a black layer on the bottom of the can. Making those releases less energy than making carbon dioxide, so less heat is released for each mole of fuel burned.",
+      "audioFile": "public/audio/chem-y11-m4-v03/incomplete-combustion.wav"
+    },
+    {
+      "id": "evaporation",
+      "text": "A third cause hides in the mass. Ethanol evaporates easily. If the burner sits uncapped, some ethanol evaporates from the wick without burning. The balance counts it as fuel burned, so n comes out too big. Dividing the same q by a bigger n makes delta H smaller in size again.",
+      "audioFile": "public/audio/chem-y11-m4-v03/evaporation.wav"
+    },
+    {
+      "id": "systematic-random",
+      "text": "Notice that every one of these pushes the answer the same way, smaller in size. That makes them systematic errors, which shift every repeat in one direction. Random errors, like the last digit on the balance, scatter results both ways, so they can't explain a result that's half the data value. Repeating the experiment won't fix it.",
+      "audioFile": "public/audio/chem-y11-m4-v03/systematic-random.wav"
+    },
+    {
+      "id": "better-method",
+      "text": "To get closer, change the method. A draught shield around the burner and a lid on the can keep more of the hot air near the can. Set the can just above the tip of the flame, and let in enough air for a clean blue flame. Stir the water, read the highest temperature, and cap the burner as soon as you're done.",
+      "audioFile": "public/audio/chem-y11-m4-v03/better-method.wav"
+    },
+    {
+      "id": "answer-frame",
+      "text": "In an exam, don't write human error. Name the physical cause, trace it to q or n, then say which way delta H moves. For example, heat lost to the air makes q too small, so delta H is less negative.",
+      "audioFile": "public/audio/chem-y11-m4-v03/answer-frame.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student burns methanol in a spirit burner. The burner loses zero point six zero grams, and two hundred grams of water warms from nineteen point four to twenty-nine point eight degrees. Calculate the molar enthalpy of combustion of methanol, then its percentage error compared with the data value of minus seven hundred and twenty-six kilojoules per mole. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Delta T is ten point four, so q is two hundred times four point one eight times ten point four, about eight point six nine kilojoules. The moles are zero point six zero divided by thirty-two point zero four, zero point zero one eight seven three. So delta H c is minus four hundred and sixty-four kilojoules per mole, and the percentage error is about thirty-six per cent. Keep the minus sign.",
+      "audioFile": "public/audio/chem-y11-m4-v03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student forgets to cap the spirit burner, and it sits for several minutes before the final weighing. Explain how this affects the calculated enthalpy of combustion. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Fuel evaporates from the uncapped wick, so the recorded mass loss is too big. That makes the calculated moles too big. The same q divided by more moles gives a delta H that's less negative, smaller in size than it should be. Saying n is too small gets the chain backwards.",
+      "audioFile": "public/audio/chem-y11-m4-v03/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So combustion calorimetry underestimates a fuel's enthalpy because heat escapes to the air, some fuel burns incompletely, and some evaporates, and all three make delta H smaller in size. The weak point is that the flame sits outside the water. What about a change that happens inside the water itself? Dissolving some solids warms water, and dissolving others cools it. Why?",
+      "audioFile": "public/audio/chem-y11-m4-v03/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v03/key-notes.wav"
+    }
+  ]
+}

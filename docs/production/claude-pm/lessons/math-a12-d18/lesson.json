@@ -1,0 +1,144 @@
+{
+  "id": "math-a12-d18",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "2a1752daa0832c407eb5e06c8fb97c426dbac11a3e2ef5036fdb236f88f559da",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: the square isn't best",
+      "voiceover": {
+        "text": "Last video ended here. Forty metres of fencing make three sides of a sheep pen, and an old stone wall makes the fourth. Seen from above, let's try some shapes. Five metres out from the wall leaves thirty metres along it, so the area is a hundred and fifty square metres. Fifteen out leaves ten along, a hundred and fifty again. A square pen, thirteen and a third metres each way, gives about a hundred and seventy-eight. But ten out and twenty along gives two hundred. So the square isn't the best shape here. How do we find the best one, and be sure nothing beats it?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "variables, constraint and one variable",
+      "voiceover": {
+        "text": "Start by naming what can change. Let x metres be each side out from the wall, and y metres the side along it. The fence covers x, y and x, so two x plus y equals forty. That's the constraint, a fixed total that links the variables. The area is x times y. But y changes whenever x does, so we can't differentiate yet. Use the constraint to replace y. y equals forty minus two x, so A equals x, times forty minus two x, which is forty x minus two x squared. Now the area depends on x alone."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the physical domain",
+      "voiceover": {
+        "text": "Which values of x make a real pen? x has to be positive, or there's no width. And y has to be positive too. Forty minus two x is positive only when x is less than twenty. So the domain is x between zero and twenty, with neither end included. At each end the pen collapses. Near zero it's a thin strip along the wall, and near twenty it's squashed flat against it. The area gets close to zero at both ends, but those aren't pens, so zero is a limit, not a value the area reaches. Stating the domain matters, because it decides which stationary points count, and what we compare at the ends."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "optimise and conclude",
+      "voiceover": {
+        "text": "Now the calculus. A prime of x is forty minus four x, which is zero at x equals ten, inside the domain. Earlier in the course, we found a global maximum by comparing every candidate. Here the ends aren't candidates, because they aren't in the domain. So compare ten with the limits at the ends. A of ten is two hundred, bigger than both, and there's only one stationary point, so the area rises to two hundred and then falls. That makes two hundred the global maximum. Now answer the question. The pen is ten metres out from the wall and twenty metres along it, with an area of two hundred square metres. And here's why the square loses. Each metre along the wall costs one metre of fence, but each metre out from the wall costs two, because there are two of those sides. So the best pen is longer along the wall."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "worked example: the open box (model)",
+      "voiceover": {
+        "text": "Now a second problem. An open box is made from a square of card twenty-four centimetres wide. Equal squares of side x centimetres are cut from the corners, and the sides fold up. The height of the box is x. Each side of the base loses two squares, so the base is twenty-four minus two x, each way. So the volume is x, times twenty-four minus two x, all squared. For the domain, x must be positive to cut anything, and twenty-four minus two x must be positive to leave a base, so x is less than twelve."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example: the open box (solve and answer)",
+      "voiceover": {
+        "text": "Expand first. V is four x cubed, minus ninety-six x squared, plus five hundred and seventy-six x. So V prime is twelve x squared, minus a hundred and ninety-two x, plus five hundred and seventy-six. Take out twelve and factorise, to get twelve, times x minus four, times x minus twelve. Twelve isn't in the domain, and it would leave no base, so reject it. At x equals four, V is four times sixteen squared, which is one thousand and twenty-four. Near both ends the volume shrinks towards zero, so that's the greatest volume. Cut four-centimetre squares, and the box holds one thousand and twenty-four cubic centimetres."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the method and a memory aid",
+      "voiceover": {
+        "text": "Here's the whole method in five short steps. Draw it, link it, limit it, solve it, say it. Draw the shape, and name the variables with their units. Link them with the constraint, and write the quantity in one variable. Limit x to the values the real object allows. Solve with calculus, and compare with the ends, whether they're values or limits. Then say the answer the question asked for, with units."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A rectangular garden with an area of fifty square metres is fenced on three sides, with a wall along the fourth. Find the dimensions that use the least fencing, and the least length of fencing. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-09",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "With x out from the wall and y along it, x y is fifty, so y is fifty over x, and the fencing is two x plus fifty over x, for x greater than zero. Its derivative, two minus fifty over x squared, is zero at x equals five. Near zero, and for very large x, the fencing grows without limit, so five gives the least. That's five metres by ten, with twenty metres of fencing. x equals five alone doesn't answer the question."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. An open box is made from a rectangle of card sixteen centimetres by ten centimetres, by cutting equal squares from the corners and folding up the sides. Find the side of the squares that gives the greatest volume, and state that volume. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The volume is x, times sixteen minus two x, times ten minus two x, and the shorter side keeps x between zero and five. The derivative is four, times three x minus twenty, times x minus two. Twenty over three is more than five, so reject it. V of two is two times twelve times six, a hundred and forty-four cubic centimetres. Twenty over three would make the ten-centimetre side negative."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the constraint builds the function, and the real object sets the domain. Next, a different kind of model, where the rate of change depends on the amount itself. A thirty thousand dollar car loses value at fifteen percent of its current value each year. How fast is it losing value, and what's it worth after eight years?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

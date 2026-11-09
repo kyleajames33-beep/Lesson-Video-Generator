@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v12.md",
+  "sourceSha256": "38cd48eb19070b4230fee034193983fc7312edb338557fc2d4a7bbe702ffa523",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Last time we found that entropy counts the ways, and gases have by far the most. So can a balanced equation tell us which way entropy changes, without any measuring? Try this one. Nitrogen and hydrogen gases react to make ammonia gas. Keep last time's particle picture in mind. Does the entropy go up, or down?",
+      "audioFile": "public/audio/chem-y11-m4-v12/hook-prediction.wav"
+    },
+    {
+      "id": "rule-states",
+      "text": "Down, and here's how to see it quickly. The first thing to look at is the states. Gases have far more entropy than liquids, and liquids more than solids. So when dry ice turns into carbon dioxide gas, entropy rises a lot. Water shows the size of the jump: liquid water has seventy joules per kelvin per mole, and steam has one hundred and eighty-eight point eight. In these tables, the gas has about a hundred and nineteen more per mole. Anything that makes a gas from a solid or liquid usually has a positive delta S.",
+      "audioFile": "public/audio/chem-y11-m4-v12/rule-states.wav"
+    },
+    {
+      "id": "rule-gas-count",
+      "text": "The second thing is to count the moles of gas on each side. In the ammonia reaction, one nitrogen and three hydrogens, four moles of gas, become just two moles of ammonia. Fewer gas molecules means fewer independent particles to arrange, so fewer ways, and the entropy goes down. The gas count usually decides, because a mole of gas carries so much more entropy than a solid. Oxygen gas has two hundred and five, but solid carbon only about six. Notice too that releasing heat doesn't make delta S positive. That's a separate question.",
+      "audioFile": "public/audio/chem-y11-m4-v12/rule-gas-count.wav"
+    },
+    {
+      "id": "sorting-reactions",
+      "text": "Let's sort a few more. Hydrogen peroxide breaking down into water and oxygen gas makes a gas from a liquid, so delta S is positive. Hydrogen burning, two hydrogens and one oxygen making liquid water, turns three moles of gas into none, so delta S is strongly negative. And a solid like ammonium nitrate dissolving spreads its ions through the water, so delta S is usually positive. Usually, because some ions hold water molecules tightly around them, and that can make it negative.",
+      "audioFile": "public/audio/chem-y11-m4-v12/sorting-reactions.wav"
+    },
+    {
+      "id": "the-tie",
+      "text": "But sometimes the count is a tie. Methane burning to make steam has three moles of gas on each side. Carbon burning to carbon dioxide has one on each side. A tie means the gas count alone can't decide. It can't tell us whether delta S is positive or negative, or how large it is. For that, we need measurements.",
+      "audioFile": "public/audio/chem-y11-m4-v12/the-tie.wav"
+    },
+    {
+      "id": "standard-entropy-third-law",
+      "text": "Chemists measure a standard entropy, S nought, for each substance: the entropy of one mole at a hundred kilopascals, listed in our tables at twenty-five degrees. These values have a true zero. At absolute zero, zero kelvin, the coldest possible temperature, a perfect crystal has only one possible arrangement, so its entropy is zero. That's the third law of thermodynamics. Everything gains entropy as it warms from there, so even elements have positive standard entropies. Oxygen's is two hundred and five point two, not zero.",
+      "audioFile": "public/audio/chem-y11-m4-v12/standard-entropy-third-law.wav"
+    },
+    {
+      "id": "calculate-ds",
+      "text": "To find delta S nought for a reaction, use the same pattern as formation enthalpies: products minus reactants, each times its coefficient. For ammonia, the products are two times one hundred and ninety-two point eight, which is three hundred and eighty-five point six. The reactants are one hundred and ninety-one point six, plus three times one hundred and thirty point seven, five hundred and eighty-three point seven. Products minus reactants is minus one hundred and ninety-eight point one joules per kelvin per mole. Negative, just as the gas count predicted.",
+      "audioFile": "public/audio/chem-y11-m4-v12/calculate-ds.wav"
+    },
+    {
+      "id": "tie-settled",
+      "text": "Now the tie. For methane making steam, the products add to five hundred and ninety-one point four, and the reactants to five hundred and ninety-six point seven. So delta S nought is minus five point three joules per kelvin per mole. Tiny, and negative. Carbon burning works out at plus two point nine, tiny and positive this time. The count couldn't decide, and the data told us the sign.",
+      "audioFile": "public/audio/chem-y11-m4-v12/tie-settled.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "So here's the routine. Count the gas first. A tie? Look it up. The gas count is quick, and it usually decides. But when the moles of gas are equal, only the data can give you the sign.",
+      "audioFile": "public/audio/chem-y11-m4-v12/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Predict the sign of delta S for each reaction, and justify it. First, solid mercury oxide decomposes into liquid mercury and oxygen gas. Second, sulfur dioxide gas reacts with oxygen gas to form sulfur trioxide gas. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v12/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "In the first, a gas forms from a solid, zero moles of gas becoming one, so entropy increases. In the second, three moles of gas become two, so there are fewer ways, and entropy decreases. Calling the second positive because it releases heat mixes up delta H and delta S.",
+      "audioFile": "public/audio/chem-y11-m4-v12/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Calculate delta S nought for the sulfur trioxide reaction. Sulfur dioxide's standard entropy is two hundred and forty-eight point two, oxygen's is two hundred and five point two, and sulfur trioxide's is two hundred and fifty-six point eight joules per kelvin per mole. Does your answer agree with your prediction? Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v12/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Products: two times two hundred and fifty-six point eight, five hundred and thirteen point six. Reactants: two times two hundred and forty-eight point two, plus two hundred and five point two, seven hundred and one point six. So delta S nought is minus one hundred and eighty-eight joules per kelvin per mole, negative, as predicted. Leave out the oxygen, and you'd get plus seventeen point two, the wrong sign.",
+      "audioFile": "public/audio/chem-y11-m4-v12/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So a balanced equation suggests the sign of delta S: compare the states, count the gas, and when the count ties, use standard entropies. Now look again at the ammonia reaction. It's exothermic, delta H is minus ninety-one point eight kilojoules, and the heat it releases raises the entropy of the surroundings. But its own entropy falls, by a hundred and ninety-eight joules per kelvin. One helps, and one hurts. So which one wins?",
+      "audioFile": "public/audio/chem-y11-m4-v12/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v12/key-notes.wav"
+    }
+  ]
+}

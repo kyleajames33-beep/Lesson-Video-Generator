@@ -1,0 +1,185 @@
+{
+  "id": "chem-y11-m2-v18",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "b4852bd9c7886873966d042e066f953df43a19274ebae4c5edadf7b6fc1f3525",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Here's the syringe in its water bath, with the plunger free to move, so the gas pressure stays steady. At ten degrees, the air fills fifty millilitres. At twenty degrees, the Celsius number has doubled, but the volume has only crept up to fifty-one point eight. So, quick prediction. If we keep heating to eighty degrees, eight times ten, will the volume be eight times as big, about twice as big, or only a little bigger?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "line-misses-zero",
+      "title": "the line that misses zero",
+      "voiceover": {
+        "text": "Only a little bigger, about sixty-two millilitres. Here's the full set. Heat the water slowly, and at each temperature, wait for the gas to reach the water's temperature before reading the volume. Every ten degrees, the volume grows by the same amount, so the points make a straight line. But the line doesn't go through zero degrees. So where would the volume reach zero? Extrapolate, which means extend the line beyond the data, and it reaches zero volume at about minus two hundred and seventy-three degrees."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "absolute-zero",
+      "title": "absolute zero",
+      "voiceover": {
+        "text": "That's no accident. Cooling a gas slows its particles down, so they push less, and at a fixed pressure the gas shrinks. The line points to the temperature where the particles would have the least motion possible, and push on nothing. That's absolute zero, minus two hundred and seventy-three point one five degrees Celsius. A real gas turns into a liquid long before then, so this end of the line is only extended on paper, not measured."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "kelvin-scale",
+      "title": "the kelvin scale",
+      "voiceover": {
+        "text": "The kelvin scale starts at absolute zero. Each kelvin is the same size step as a degree Celsius, so to convert, you just add two hundred and seventy-three point one five. Zero degrees Celsius is two seventy-three point one five kelvin, and twenty-five degrees is two ninety-eight point one five. There are no negative kelvin temperatures, because nothing can have less motion than the minimum."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "charles-law",
+      "title": "Charles's law",
+      "voiceover": {
+        "text": "Now the data make sense. Measured from absolute zero, the gas's volume is proportional to its temperature. On the kelvin scale, temperature tracks how much the particles are moving. So double the kelvin temperature, and the same particles push twice as hard on the walls. The free plunger slides out until the push on each square metre is back to its steady value, and that takes twice the volume. That's Charles's law. For a fixed amount of gas at constant pressure, V one over T one equals V two over T two, with T in kelvin."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "celsius-fails",
+      "title": "why Celsius fails",
+      "voiceover": {
+        "text": "Check it with our first two readings. Ten degrees is two eighty-three point one five kelvin, and twenty degrees is two ninety-three point one five. That's only about three and a half percent warmer, which is exactly how much the volume grew. Celsius ratios mean nothing, because zero degrees Celsius is just where water freezes, not where motion stops. Put Celsius into a gas law, and zero degrees would mean dividing by zero, and minus ten would give a negative volume."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "method-limits",
+      "title": "method points and limitations",
+      "voiceover": {
+        "text": "A few method points make this work. Keep the whole barrel under the water, so all of the gas is at the temperature you read. Heat slowly and stir, and wait until the volume stops changing. And check that the plunger slides freely. A sticky plunger lags behind, so the volume reads low, and the pressure isn't quite constant either."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "charles-calc",
+      "title": "a Charles's law calculation",
+      "voiceover": {
+        "text": "Here's a calculation. A gas syringe holds forty-five millilitres of air at twenty degrees. At constant pressure, it's warmed to sixty degrees. What's the new volume? First, convert both temperatures to kelvin, two ninety-three point one five and three thirty-three point one five. Then V two is V one times T two over T one, so forty-five times three thirty-three point one five, over two ninety-three point one five. That's fifty-one point one millilitres. Using Celsius would give a hundred and thirty-five, tripling the volume for a gentle warm-up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "gay-lussac-law",
+      "title": "Gay-Lussac's law",
+      "voiceover": {
+        "text": "Now fix the volume instead. Seal some air in a rigid flask, connect the pressure sensor, and warm the flask in a water bath. The walls can't move, so the gas can't expand. Its faster particles hit the walls harder and more often, and the pressure rises. That's Gay-Lussac's law. For a fixed amount of gas at constant volume, the pressure is proportional to the kelvin temperature, so P one over T one equals P two over T two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "secondary-data",
+      "title": "secondary data: the same zero",
+      "voiceover": {
+        "text": "Here's some secondary data, meaning data someone else collected, for air at a fixed volume, from the OpenStax Chemistry textbook. From minus a hundred to a hundred and fifty degrees, the pressure climbs from thirty-six to eighty-eight kilopascals, in a straight line. Extended backwards, it reaches zero pressure at about minus two hundred and seventy-three degrees, the same point as the volume line. So both point to the same absolute zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "partners-memory",
+      "title": "partners, and the memory line",
+      "voiceover": {
+        "text": "So the two laws are partners. Charles's law fixes the pressure and lets the volume change, like the free plunger. Gay-Lussac's law fixes the volume and lets the pressure change, like the rigid flask. Both fix the amount of gas, and both need kelvin. Remember: ratios need a true zero, so always use kelvin."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A sealed, rigid steel cylinder contains gas at a hundred and fifty kilopascals and twenty degrees Celsius. It's left in the sun, and the gas warms to fifty degrees Celsius. Calculate the new pressure of the gas. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The volume is fixed, so use Gay-Lussac's law, in kelvin. P two is a hundred and fifty times three twenty-three point one five, over two ninety-three point one five, which is a hundred and sixty-five kilopascals. Using Celsius gives three hundred and seventy-five, more than doubling the pressure on a warm afternoon. That's the classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student claims that heating a gas from twenty degrees Celsius to forty degrees Celsius, at constant pressure, doubles its volume. Evaluate the student's claim. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The claim is wrong. Doubling the Celsius number isn't doubling the temperature. In kelvin, it rises from two ninety-three to three thirteen, only about seven percent, so the volume grows by about seven percent. Saying the volume doubles is exactly the slip this video is about."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So gas laws need kelvin, because volume and pressure are proportional to temperature measured from absolute zero, where particle motion is least. Celsius starts where water freezes, so its ratios don't describe the gas. We now have four gas laws, Boyle, Charles, Gay-Lussac and Avogadro, and each one fixes two quantities and links the other two. Could one equation hold all four? How does P V equals n R T combine the simple gas laws?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

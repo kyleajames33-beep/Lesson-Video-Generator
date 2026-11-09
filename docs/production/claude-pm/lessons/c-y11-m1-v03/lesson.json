@@ -1,0 +1,188 @@
+{
+  "id": "chem-y11-m1-v03",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "60220ed8ea76c4a71dd64ce9ee397d3e5813bcf9bc8119346caef67b2578c92f",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (two things to get back)",
+      "voiceover": {
+        "text": "Here's the muddy, salty water from last time. We want two things back out of it, dry sand and dry salt. The trick is to use the property that's different. Sand is insoluble, which means it doesn't dissolve in water. Salt is soluble. It dissolves, and its particles spread out through the water. So how can we recover an insoluble solid and a dissolved solid from one mixture?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "filtration-why",
+      "title": "filtration: why it works",
+      "voiceover": {
+        "text": "Start with the sand. We'll pour the mixture through filter paper. Filter paper is full of tiny holes, called pores. Water molecules are far smaller than the pores, so they pass straight through. The dissolved salt is split into separate ions, which are tiny too, so they go through with the water. But a sand grain is a huge clump of particles, much too big for the pores, so it gets trapped. That's filtration. It separates an insoluble solid from a liquid, by particle size."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "filtration-setup",
+      "title": "the setup: residue and filtrate",
+      "voiceover": {
+        "text": "Here's the setup. Fold the filter paper into a cone, sit it in a funnel, and stand the funnel in a conical flask. Pour the mixture slowly down a glass rod, so it runs onto the paper without splashing. The solid left on the paper is called the residue. The liquid that drips through into the flask is called the filtrate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. The filtrate in the flask is perfectly clear. So is it pure water? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "prediction-answer",
+      "title": "prediction answer: still a solution",
+      "voiceover": {
+        "text": "No, it's still salt water. The salt's ions went straight through the paper with the water, so the filtrate is a solution, a liquid with something dissolved in it. Clear only tells you nothing undissolved is floating in it. Put a drop on a warm watch glass, and when the water evaporates, tiny white crystals are left behind. Filtration can't remove a dissolved solid, and clear doesn't mean pure."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "wash-dry",
+      "title": "wash and dry the sand",
+      "voiceover": {
+        "text": "Now finish the sand. It's still wet, and that water is salt water. If you dried it now, salt crystals would be left stuck to the grains. So rinse the residue with a little distilled water, which has nothing dissolved in it. The fresh water carries the dissolved salt through the paper into the filtrate. Then dry the sand in a warm oven, or in the air, until it's completely dry. That's the insoluble solid recovered."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "solubility-saturation",
+      "title": "solubility and saturation",
+      "voiceover": {
+        "text": "Now the salt, dissolved in the filtrate. To get it back, we need a few words. The salt is the solute, the substance that dissolves. The water is the solvent, the liquid it dissolves in. Solubility is the most solute that can dissolve in a hundred grams of water, at a stated temperature. And a solution that's holding as much solute as it can is called saturated."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "crystallisation",
+      "title": "crystallisation",
+      "voiceover": {
+        "text": "So here's crystallisation. Pour the filtrate into an evaporating basin, and heat it gently. The water evaporates, but the salt can't, so the solution gets more and more concentrated. Once it's saturated, the water that's left can't hold all the salt, and the extra salt comes out of the solution as solid crystals. Stop heating while there's still some liquid left, and let it cool. Then filter off the crystals, rinse them with a tiny amount of cold water, and dry them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "surprise-solubility",
+      "title": "the surprise: cooling barely helps salt",
+      "voiceover": {
+        "text": "Here's a surprise. You might expect cooling to be what makes the crystals form. For many solids, it is. Potassium nitrate's solubility drops from about one hundred and sixty nine grams per hundred grams of water at eighty degrees, to about thirty one at twenty degrees. Cool a saturated solution over that range, and about a hundred and thirty eight grams crystallise. But salt barely changes. It's about thirty eight grams at eighty degrees, and about thirty six at twenty. So for salt, removing water is what forms most of the crystals, not cooling."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "purer-crystals",
+      "title": "why the crystals are purer",
+      "voiceover": {
+        "text": "Crystallisation does more than recover the salt. It also makes it purer. As a crystal grows, its ions fit into a neat, repeating lattice. Particles of other dissolved substances don't fit that pattern, so most of them stay in the leftover liquid, which is called the mother liquor. Slow cooling helps, because the crystals grow larger and more ordered, and trap less liquid. Boil it right down to dryness instead, and every dissolved impurity ends up in your solid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "order-and-rule",
+      "title": "the order, and a rule to remember",
+      "voiceover": {
+        "text": "Notice the order. Filter first, then crystallise the filtrate. Crystallise first, and the sand ends up buried in your salt crystals. Undissolved, filter it out. Dissolved, crystallise it out. Filter paper works a bit like a kitchen sieve, where big pieces stay and small ones pass through. But dissolved salt isn't tiny grains of salt. It's separate ions, so filter paper cannot catch it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A mixture contains sand, water and dissolved potassium nitrate. Describe how you'd obtain dry sand and dry potassium nitrate crystals, and justify each step using a physical property. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Filter first. The sand is insoluble and too big for the pores, so it stays as the residue. Rinse it with a little distilled water, then dry it. Next, heat the filtrate to concentrate it, and let it cool slowly. Potassium nitrate is much less soluble when it's cold, so crystals form. Filter them off and dry them. Crystallising before filtering is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student pours a blue copper sulfate solution through filter paper. The filtrate that comes through is just as blue. The student says the filter paper must be faulty. Explain why the student is wrong, and describe how to get solid copper sulfate crystals from the solution. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The paper isn't faulty. The copper sulfate is dissolved, as separate ions far smaller than the pores, so they pass straight through with the water. To get crystals, heat the solution gently to concentrate it, then let it cool slowly, filter off the blue crystals, and dry them. Swapping to a finer filter paper is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "Notice what happened to the water, though. It left as steam, and it was lost. Sometimes the liquid is the part we want, or the mixture is two liquids. Next time, we'll catch that vapour, and see why a fractionating column separates liquids so much better."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

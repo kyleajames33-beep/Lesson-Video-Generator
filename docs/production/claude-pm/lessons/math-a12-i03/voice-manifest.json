@@ -1,0 +1,97 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i03.md",
+  "sourceSha256": "40231d5b5fcf5869c563b70929fb04181f7b8d88db13194eb06717f403402536",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here: the integral of e to the three x. A phone on a charger fills quickly at first, then more and more slowly. Its charging rate is thirty, times e to the minus a half t, percent per hour. Its battery level is a primitive of that rate. The power rule can't help, because x isn't the base. It's in the exponent. So guess e to the three x itself. Its derivative is three e to the three x, three times too big. And what about a base that isn't e, like two to the x? Why does an exponential primitive divide by the inner rate?",
+      "audioFile": "public/audio/math-a12-i03/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Start with plain e to the x. Its derivative is e to the x, so at every point, its gradient equals its height. That makes e to the x a primitive of itself. So the integral of e to the x is e to the x, plus C. Slide e to the x up by three, and the gradient is still e to the x at every x. That's why the C is still there.",
+      "audioFile": "public/audio/math-a12-i03/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now e to the three x. By the chain rule, its derivative is three times e to the three x. On the graph, at x equals zero, the height is one, but the gradient is three. Everywhere on this curve, the gradient is three times the height. So to get a primitive, divide by three. A third of e to the three x has gradient exactly e to the three x. Watch the gradient of that smaller curve. It lands right on e to the three x.",
+      "audioFile": "public/audio/math-a12-i03/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "The same happens for any linear exponent, a x plus b. Differentiating e to the a x plus b multiplies by a, the inner rate, so the primitive divides by it. The integral of e to the a x plus b is one over a, times e to the a x plus b, plus C. This needs a not zero. If a is zero, the exponent is constant, so there's no exponential. So two e to the three x becomes two thirds of e to the three x. And e to the minus x divides by minus one, giving minus e to the minus x. Check the sign by differentiating: minus e to the minus x differentiates back to e to the minus x.",
+      "audioFile": "public/audio/math-a12-i03/scene-04.wav"
+    },
+    {
+      "id": "scene-04a",
+      "text": "Now the phone. Its charging rate has inner rate minus a half, so divide by minus a half, which means multiplying by minus two. The battery level is minus sixty, e to the minus a half t, plus C. A minus sign, while the battery fills? Yes. That term climbs towards zero as t grows, so the level rises.",
+      "audioFile": "public/audio/math-a12-i03/scene-04a.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "If the exponent isn't linear, the reverse chain rule still works, as long as the exponent's derivative is a factor. Take two x, times e to the x squared. The exponent is x squared, and its derivative, two x, is right there. Differentiating e to the x squared gives exactly two x, times e to the x squared. So the integral is e to the x squared, plus C. In general, the integral of f prime of x, times e to the f of x, is e to the f of x, plus C. And remember: fix a missing number, never a missing x. So x times e to the x squared gives half of e to the x squared. But e to the x squared on its own has no primitive we can write with these rules.",
+      "audioFile": "public/audio/math-a12-i03/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now two to the x. Differentiating a to the x gives a to the x, times the natural log of a. Here's why. a to the x is e to the x times the natural log of a. So its exponent is linear, and the inner rate is the natural log of a. Divide by it, and the integral of a to the x is a to the x, over the natural log of a, plus C, for a positive. So two to the x integrates to two to the x, over the natural log of two. And when a is e, the natural log of e is one, so this is just e to the x again.",
+      "audioFile": "public/audio/math-a12-i03/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "But one base breaks this rule. When a is one, the natural log of one is zero, and we can't divide by zero. Watch the base slide towards one. The curve flattens, because one to the x is one, for every x. At a equals one, there's nothing exponential left. The integral of one is just x, plus C. And look at the primitive through the origin. As a gets close to one, it straightens into the line y equals x.",
+      "audioFile": "public/audio/math-a12-i03/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Now a worked example. A drug's amount, A milligrams, changes at the rate d A by d t equals minus a half, times e to the minus a half t, per hour. At t equals zero, A is two. Find A. Integrate by dividing by the inner rate, minus a half. The minus halves cancel, giving e to the minus a half t, plus C. Now use the condition. At t equals zero, e to the zero is one, so one plus C equals two, and C is one. So A equals e to the minus a half t, plus one. As t grows, e to the minus a half t shrinks towards zero, so A levels off at one milligram.",
+      "audioFile": "public/audio/math-a12-i03/scene-08.wav"
+    },
+    {
+      "id": "scene-08a",
+      "text": "The phone works the same way. It starts at forty percent, so minus sixty, plus C, is forty, and C is a hundred. It heads for a hundred percent, but the charging rate is always half of what's left to fill, so it fills more and more slowly.",
+      "audioFile": "public/audio/math-a12-i03/scene-08a.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Algebra still comes first. Find the integral of e to the x plus one, all squared. Expand it: e to the two x, plus two e to the x, plus one. Squaring e to the x doubles the exponent, giving e to the two x, not e to the x squared. Now each term has its own inner rate. e to the two x divides by two, giving a half e to the two x. Two e to the x has inner rate one, so it stays two e to the x. And one becomes x. So the answer is a half e to the two x, plus two e to the x, plus x, plus C.",
+      "audioFile": "public/audio/math-a12-i03/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's the pattern to keep. Divide by the inner rate: by a, for e to the a x plus b, and by the natural log of a, for a to the x. Then differentiate back to check.",
+      "audioFile": "public/audio/math-a12-i03/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Find the integral of four e to the two x minus one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i03/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The exponent is two x minus one, so the inner rate is two. Divide by two. Four over two is two, so the answer is two e to the two x minus one, plus C. Differentiating multiplies by two again, giving four e to the two x minus one. Leaving it as four e to the two x minus one forgets the inner rate. Its derivative is twice too big.",
+      "audioFile": "public/audio/math-a12-i03/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. Find the integral of three to the x, plus e to the minus two x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i03/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Three to the x has inner rate the natural log of three, so it becomes three to the x, over the natural log of three. e to the minus two x divides by minus two, giving minus a half, e to the minus two x. With one C, it's three to the x over the natural log of three, minus a half e to the minus two x, plus C. Multiplying by the natural log of three would be differentiating, not integrating.",
+      "audioFile": "public/audio/math-a12-i03/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So an exponential primitive divides by the inner rate, as long as that rate isn't zero. Next, the one power that the power rule can't handle: one over x. The rule would give x to the zero, over zero. So what is its primitive?",
+      "audioFile": "public/audio/math-a12-i03/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i03/scene-16.wav"
+    }
+  ]
+}

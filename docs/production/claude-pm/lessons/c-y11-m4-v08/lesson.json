@@ -1,0 +1,205 @@
+{
+  "id": "chem-y11-m4-v08",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "9b562f00540ac048be30de70a731aa3501f0d7aeca2fd8027c2bdd25e7216654",
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "title": "hook and prediction (countdown, 3 seconds at the end)",
+      "voiceover": {
+        "text": "Here are the two carbon numbers from last time. Each one is the enthalpy change for making one mole of a compound from its elements. These values have a name, standard enthalpies of formation, and data tables list them. They'll also give the burner's target value. So here's a prediction. Oxygen gas is already an element. What's the enthalpy of formation of oxygen gas?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "definition-zero",
+      "title": "definition and the zero",
+      "voiceover": {
+        "text": "It's zero. The standard enthalpy of formation, delta H f, is the enthalpy change when one mole of a compound forms from its elements, with every substance in its standard state. That's its most stable form at one hundred kilopascals and a stated temperature, here twenty-five degrees, like oxygen gas, carbon as graphite, and liquid water. Making oxygen gas from oxygen gas changes nothing, so every element in its standard state has a formation enthalpy of zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "formation-equations",
+      "title": "formation equations",
+      "voiceover": {
+        "text": "A formation equation always makes exactly one mole of the compound, even if that means fractions in front of the elements. For ammonia, it's half a nitrogen plus one and a half hydrogen, minus forty-six point one. For liquid ethanol, it's two carbon, three hydrogen and half an oxygen, minus two hundred and seventy-seven point seven. The state matters too. Liquid water is minus two hundred and eighty-five point eight, but steam is only minus two hundred and forty-one point eight."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "heights",
+      "title": "heights from sea level",
+      "voiceover": {
+        "text": "Think of the elements as sea level. Each compound's formation enthalpy is its height above or below that level. Most compounds sit below, because forming them releases energy, but a few, like ethene, sit above. Once every substance has a height measured from the same sea level, any reaction's delta H is just the difference in height."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-products-minus-reactants",
+      "title": "why products minus reactants",
+      "voiceover": {
+        "text": "Here's why that works. Imagine an indirect route. First, break the reactants back down into their elements. That's the reverse of forming them, so its delta H is minus the reactants' formation enthalpies. Then build the products from those same elements, which adds the products' formation enthalpies. By Hess's law, that route gives the same delta H as the reaction itself. So it's products minus reactants."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "formula",
+      "title": "the formula",
+      "voiceover": {
+        "text": "So delta H for a reaction is the sum of the formation enthalpies of the products, minus the sum for the reactants. Each value is per mole of that substance, so multiply it by its coefficient in the equation first."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ethanol-products",
+      "title": "ethanol: the products",
+      "voiceover": {
+        "text": "Let's calculate a number you've already met, the enthalpy of combustion of ethanol. Liquid ethanol plus three oxygen gives two carbon dioxide and three liquid water. For the products, it's two times minus three hundred and ninety-three point five, plus three times minus two hundred and eighty-five point eight. That's minus one thousand six hundred and forty-four point four."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ethanol-answer",
+      "title": "ethanol: the answer",
+      "voiceover": {
+        "text": "For the reactants, ethanol is minus two hundred and seventy-seven point seven, and oxygen is an element, so three times zero. So delta H is minus one thousand six hundred and forty-four point four, minus minus two hundred and seventy-seven point seven. Subtracting a negative means adding, so it's minus one thousand three hundred and sixty-six point seven, which rounds to minus one thousand three hundred and sixty-seven."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "burner-callback",
+      "title": "the burner's missing energy",
+      "voiceover": {
+        "text": "That's the data value our spirit burner fell short of. Formation enthalpies are found carefully for each pure substance in its real state, so this method is accurate. It's far more reliable than a school calorimeter, which lost over half the heat, and more exact than average bond enthalpies."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "bonds-vs-formation",
+      "title": "bonds against formation",
+      "voiceover": {
+        "text": "Don't mix this up with bond enthalpies. There, it was bonds broken minus bonds formed, which puts the reactants first, because bond enthalpies are the costs of breaking bonds. Here, it's products minus reactants, because formation enthalpies are heights, and a change in height is always the finish minus the start."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "methane-both-ways",
+      "title": "methane, both ways",
+      "voiceover": {
+        "text": "For methane, our bond enthalpy estimate was minus eight hundred and eight, and that was for steam. Formation enthalpies give minus eight hundred and ninety point three, which is the data value for liquid water, because each one was found for that exact substance in that exact state."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "traps",
+      "title": "traps",
+      "voiceover": {
+        "text": "Four traps. Multiply every value by its coefficient. Write zero for elements like oxygen. Use the right state, because liquid water and steam have different values. And keep the order, products minus reactants. Get it backwards, and you flip the sign."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "the line to remember",
+      "voiceover": {
+        "text": "Here's the line to remember. Formation enthalpies are heights, so delta H is products minus reactants."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Propane gas burns to form carbon dioxide and liquid water. Calculate the enthalpy of combustion of propane. The formation enthalpies are, propane, minus one hundred and three point eight, carbon dioxide, minus three hundred and ninety-three point five, and liquid water, minus two hundred and eighty-five point eight kilojoules per mole. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Products: three times minus three hundred and ninety-three point five, plus four times minus two hundred and eighty-five point eight, which is minus two thousand three hundred and twenty-three point seven. Reactants: minus one hundred and three point eight, and oxygen is zero. So delta H is about minus two thousand two hundred and twenty kilojoules per mole. Reactants minus products gives the wrong sign."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Liquid hydrogen peroxide decomposes into liquid water and oxygen gas. The formation enthalpies are, hydrogen peroxide, minus one hundred and eighty-seven point eight, and liquid water, minus two hundred and eighty-five point eight. Calculate delta H for the equation on the card, and explain why no value is given for oxygen. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Products: two times minus two hundred and eighty-five point eight, plus zero for oxygen, minus five hundred and seventy-one point six. Reactants: two times minus one hundred and eighty-seven point eight, minus three hundred and seventy-five point six. So delta H is minus one hundred and ninety-six point zero kilojoules per mole. Oxygen gas is an element in its standard state, so its value is zero. Leaving out the twos gives minus ninety-eight point zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So standard formation enthalpies calculate a reaction enthalpy because each one is a height measured from the elements, and by Hess's law, products minus reactants gives the change. But where do those heights come from? You can't make ethanol by mixing carbon, hydrogen and oxygen in a calorimeter, so its formation enthalpy has to be found another way. Ethanol's combustion, though, is easy to measure. Could combustion data complete the cycle?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 50 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

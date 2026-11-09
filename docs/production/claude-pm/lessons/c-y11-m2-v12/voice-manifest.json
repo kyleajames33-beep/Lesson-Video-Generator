@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v12.md",
+  "sourceSha256": "593b6e9f182b5742a45f8ea752e5399108d522b7cf4b302c6993556be2d0a14f",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-label",
+      "text": "Here's a bottle label: sodium carbonate, zero point one zero zero zero moles per litre. Four significant figures. How could anyone know a concentration that accurately? A solution like this is called a standard solution, one whose concentration is known accurately. And because c equals n over V, two things have to be accurately known: the moles of solute, and the volume of the solution.",
+      "audioFile": "public/audio/chem-y11-m2-v12/hook-label.wav"
+    },
+    {
+      "id": "not-any-solid",
+      "text": "So we start with a solid we can weigh, but not just any solid. Sodium hydroxide pellets look ideal, yet they soak up water and carbon dioxide from the air while they sit on the balance, so the reading keeps creeping up, and part of that mass isn't sodium hydroxide at all. The solid has to be very pure, and stable in air, so that its mass tells you its moles. A solid that passes these tests is called a primary standard.",
+      "audioFile": "public/audio/chem-y11-m2-v12/not-any-solid.wav"
+    },
+    {
+      "id": "primary-standard",
+      "text": "Two more tests help. A high molar mass means you weigh more grams for the same number of moles, so the balance's tiny uncertainty is a smaller share of the reading. And it has to dissolve completely in water. Anhydrous sodium carbonate, which has no water in its crystals, passes all four, as long as it's dried in an oven first, and cooled where it's protected from moisture, in a desiccator, before you weigh it.",
+      "audioFile": "public/audio/chem-y11-m2-v12/primary-standard.wav"
+    },
+    {
+      "id": "mass-calc",
+      "text": "We want two hundred and fifty millilitres of zero point one zero zero zero moles per litre. First the moles. n equals c times V, with the volume in litres, so zero point one zero zero zero times zero point two five zero zero is zero point zero two five zero zero moles. Sodium carbonate's molar mass is one hundred and five point nine nine, so the mass to weigh is two point six five zero grams.",
+      "audioFile": "public/audio/chem-y11-m2-v12/mass-calc.wav"
+    },
+    {
+      "id": "weigh-record",
+      "text": "Now weigh it, on a balance that reads to a thousandth of a gram, straight into a small clean beaker. You don't need to hit two point six five zero exactly. Close is fine. The balance reads two point six five seven grams, and that's the number you record and use. The concentration comes from the mass you actually have, not the mass you were aiming for.",
+      "audioFile": "public/audio/chem-y11-m2-v12/weigh-record.wav"
+    },
+    {
+      "id": "dissolve",
+      "text": "Next, add about fifty millilitres of distilled water to the beaker, and stir with a glass rod until every crystal has dissolved. Distilled water, because tap water carries other ions. And a beaker first, because it's easy to stir, and you can see that nothing is left behind.",
+      "audioFile": "public/audio/chem-y11-m2-v12/dissolve.wav"
+    },
+    {
+      "id": "quantitative-transfer",
+      "text": "Then pour the solution through a funnel into a two hundred and fifty millilitre volumetric flask, a flask made to hold one accurately known volume at its mark. But look at the beaker. Drops of solution still cling to the glass, the rod and the funnel, and those drops hold sodium carbonate. So rinse each one two or three times with distilled water, and let every rinse run into the flask. Moving every bit of solute across like this is called a quantitative transfer. Skip it, and some moles stay behind, so the real concentration ends up lower than you calculate.",
+      "audioFile": "public/audio/chem-y11-m2-v12/quantitative-transfer.wav"
+    },
+    {
+      "id": "make-to-mark",
+      "text": "Now add distilled water until the level is close to the line on the neck. Then switch to a dropper, and add drop by drop until the bottom of the curved surface, called the meniscus, sits exactly on the mark, viewed at eye level. The neck is narrow, so a tiny volume moves the level a long way, and that's what makes the flask so accurate. A measuring cylinder can be out by a millilitre or two. This flask is good to about a fifth of a millilitre.",
+      "audioFile": "public/audio/chem-y11-m2-v12/make-to-mark.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Suppose one drop too many takes the meniscus just above the mark. Is the concentration now too high, or too low?",
+      "audioFile": "public/audio/chem-y11-m2-v12/prediction.wav"
+    },
+    {
+      "id": "one-drop-over",
+      "text": "Too low. The moles are fixed, but the volume is a little bigger, so c, which is n over V, comes out a little smaller. And you can't fix it by taking some out with the dropper, because that liquid carries sodium carbonate with it. The only fix is to start again. Stopping below the mark does the opposite, and makes the concentration too high.",
+      "audioFile": "public/audio/chem-y11-m2-v12/one-drop-over.wav"
+    },
+    {
+      "id": "mix-real-c",
+      "text": "Last, put the stopper in, and turn the flask upside down ten times or more, so the solution is the same all the way through. Otherwise the water you added last sits near the top, and a sample from there would be too dilute. Now the real concentration. Two point six five seven grams is zero point zero two five zero seven moles, in zero point two five zero zero litres. That's zero point one zero zero three moles per litre, and that's the number that goes on the label.",
+      "audioFile": "public/audio/chem-y11-m2-v12/mix-real-c.wav"
+    },
+    {
+      "id": "error-pattern",
+      "text": "Here's the pattern behind every step. Anything that loses solute, or adds extra volume, makes the real concentration lower than you calculate. Anything that leaves the volume short makes it higher. And a flask that's still wet with distilled water from rinsing? No effect, because you were going to add water up to the mark anyway. So remember: every grain in, not a drop over.",
+      "audioFile": "public/audio/chem-y11-m2-v12/error-pattern.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student needs two hundred and fifty point zero millilitres of a zero point zero five zero zero moles per litre standard solution of potassium hydrogen phthalate, molar mass two hundred and four point two two grams per mole. Calculate the mass the student should weigh out. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v12/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "n equals c times V. Zero point zero five zero zero times zero point two five zero zero is zero point zero one two five zero moles. Times two hundred and four point two two, that's two point five five three grams. Leave the volume in millilitres and you'd get two thousand five hundred and fifty-three grams, two and a half kilograms, which can't be right.",
+      "audioFile": "public/audio/chem-y11-m2-v12/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student forgot to dry the sodium carbonate, and it had absorbed some water from the air. They weighed it, made the solution correctly, and calculated the concentration from the mass. Is the true concentration higher or lower than their calculated value? Explain. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v12/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Lower. Part of the weighed mass was water, so there's less sodium carbonate, and fewer moles, than the calculation assumed. Same volume, fewer moles, lower concentration. Saying higher, because the mass was bigger, confuses the mass on the balance with the moles in the flask.",
+      "audioFile": "public/audio/chem-y11-m2-v12/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So an accurate standard needs a pure, stable solid, the actual mass you weighed, every grain transferred, and the volume made up exactly to the mark. Now suppose you need a solution ten times weaker. You could weigh about a quarter of a gram and start again, but that's much harder to weigh precisely. Or you could take some of this solution and add water. When you dilute it, what happens to the moles?",
+      "audioFile": "public/audio/chem-y11-m2-v12/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v12/key-notes.wav"
+    }
+  ]
+}

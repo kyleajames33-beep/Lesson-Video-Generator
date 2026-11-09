@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v09.md",
+  "sourceSha256": "be4b8648e50e1ba86d3bfdc69516e57ba1f6098f0de7c66817820e1e05053c46",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "reading-falls",
+      "text": "Here's the flask from last time. Two point zero zero grams of marble chips fizz in fifty millilitres of dilute hydrochloric acid, which is in excess. The balance read one hundred and fifty point six two grams, but watch the reading. It falls, a little every few seconds. Mass isn't being destroyed. Carbon dioxide is leaving the flask, just like the gas from the copper carbonate early in this module. So can the balance tell us how much gas left? Let's plan an investigation that keeps track of it.",
+      "audioFile": "public/audio/chem-y11-m2-v09/reading-falls.wav"
+    },
+    {
+      "id": "system",
+      "text": "First, define the system, the part we're weighing. Here it's everything on the balance pan: the flask, the acid, the chips, and a loose plug of cotton wool in the neck. The plug matters. Carbon dioxide passes through it and leaves, but tiny droplets of acid sprayed up by the bubbles get caught, so they stay in the system. The system is open only to the gas. So any mass the balance loses should be carbon dioxide, and nothing else.",
+      "audioFile": "public/audio/chem-y11-m2-v09/system.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Next, a prediction from stoichiometry. C a C O three plus two H C l makes C a C l two, plus H two O, plus C O two. The acid is in excess, so the chips are the limiting reagent. Two point zero zero grams over one hundred point zero nine is zero point zero two zero zero moles of calcium carbonate. The ratio is one to one, so we get zero point zero two zero zero moles of carbon dioxide. Times forty-four point zero one, that's zero point eight eight grams. So our hypothesis is this. If all the carbon dioxide escapes, and nothing else leaves, the reading will fall by zero point eight eight grams.",
+      "audioFile": "public/audio/chem-y11-m2-v09/prediction.wav"
+    },
+    {
+      "id": "method",
+      "text": "Here's the method. Weigh the flask with its acid and plug, weigh the chips separately, and add the two readings to get the starting total. Why not just read the balance after adding the chips? Because gas starts escaping the moment they land, so that first reading would already be too low. Then tip in the chips, replace the plug, and record the mass every thirty seconds, in a table with time and mass, and units in the headings. Keep going until three readings in a row are the same. That's constant mass. The balance can't detect any more loss, so the mass lost has stopped changing.",
+      "audioFile": "public/audio/chem-y11-m2-v09/method.wav"
+    },
+    {
+      "id": "graph",
+      "text": "Plot mass against time, and the evidence tells a story. The mass falls fast at first, while the chips fizz hard, then more slowly, then it levels off at one hundred and forty-nine point eight zero grams. No chips are left in the flask, which confirms they really were the limiting reagent. So the mass lost is one hundred and fifty point six two minus one hundred and forty-nine point eight zero, which is zero point eight two grams.",
+      "audioFile": "public/audio/chem-y11-m2-v09/graph.wav"
+    },
+    {
+      "id": "runs-prediction",
+      "text": "We predicted zero point eight eight grams, and measured zero point eight two. Two more runs lose zero point eight three and zero point eight one, so the mean is zero point eight two grams, about seven percent below the prediction. The runs agree closely, so this isn't random scatter. So where's the difference? Did some mass vanish, did gas stay inside the system, or did something extra get in?",
+      "audioFile": "public/audio/chem-y11-m2-v09/runs-prediction.wav"
+    },
+    {
+      "id": "gas-inside",
+      "text": "Most likely, some gas stayed inside. Carbon dioxide dissolves a little in water, so some can stay in the solution. And at the end, the space above the liquid holds some carbon dioxide in place of air. Carbon dioxide is denser than air, so that space weighs a little more. Either way, carbon dioxide inside the boundary is never counted as lost. We didn't measure these amounts, so it's a likely cause, not a proven one. It would act the same way in every run, so it's a systematic error, making the measured loss too small.",
+      "audioFile": "public/audio/chem-y11-m2-v09/gas-inside.wav"
+    },
+    {
+      "id": "opposite-error",
+      "text": "The opposite problem happens without the plug. Bubbles throw droplets of liquid out as spray, and a little water evaporates, so the balance loses extra mass, and the result comes out too big. So each improvement targets one way that mass crosses the boundary. The cotton wool plug catches the spray. Gently swirling at the end helps dissolved gas escape. And when no gas forms at all, like the two solutions in the first video of this module, nothing crosses, and the reading stays the same.",
+      "audioFile": "public/audio/chem-y11-m2-v09/opposite-error.wav"
+    },
+    {
+      "id": "evidence",
+      "text": "So what does the evidence say about conservation of mass? The balance lost nearly all the mass we predicted, and the small shortfall has a likely cause: some carbon dioxide still inside the system. Nothing suggests mass was destroyed. The open flask lost mass because gas crossed its boundary, and the amount closely matches the equation. That's evidence that supports the law, and it shows our stoichiometry predicts real masses.",
+      "audioFile": "public/audio/chem-y11-m2-v09/evidence.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A student adds two point one zero grams of sodium hydrogen carbonate to an excess of vinegar in an open beaker, with no plug. It fizzes strongly, and the mass falls by one point one eight grams. Calculate the expected mass of carbon dioxide, and explain the difference. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Two point one zero over eighty-four point zero one is zero point zero two five zero moles. One to one, that's one point one zero grams of carbon dioxide. The beaker lost more than that, so something besides carbon dioxide left, mostly liquid spray thrown out by the bubbles. A conical flask with a cotton wool plug catches it. Saying the extra mass was destroyed is the classic mistake.",
+      "audioFile": "public/audio/chem-y11-m2-v09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Five point zero zero grams of marble chips react with hydrochloric acid in a flask with a cotton wool plug. The total mass falls from one hundred and fifty-six point four zero grams to a constant one hundred and fifty-five point five two grams, and some chips are still left at the end. Find the mass of carbon dioxide lost, identify the limiting reagent, and explain why five point zero zero grams can't be used to predict the gas. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The carbon dioxide lost is zero point eight eight grams. Chips are left over, so the acid ran out first: the acid was the limiting reagent. That means only about two grams of chips reacted. Predicting from all five grams would give two point two zero grams of carbon dioxide, far too much.",
+      "audioFile": "public/audio/chem-y11-m2-v09/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So, to keep track of escaping gas, draw the boundary and follow the gas. Predict it from the limiting reagent, weigh the whole system until the mass is constant, and explain any gap by how mass crossed the boundary. Our results support conservation of mass. But how would you write that conclusion so a reader trusts it? How do we communicate a chemistry conclusion that evidence supports?",
+      "audioFile": "public/audio/chem-y11-m2-v09/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v09/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "chem-y11-m1-v13",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "2f96effab8f972e6ed87ccdaaa52927698f09a6a676c4cabb045dddc832c2f39",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: more particles, smaller atom",
+      "voiceover": {
+        "text": "Last time, we saw that the rows and columns of the periodic table follow electron shells. Here's a puzzle from that table. Sodium and chlorine sit in the same row. A chlorine atom has six more protons and six more electrons than a sodium atom. So you'd expect it to be bigger. It's not. Chlorine's atom is much smaller. And go down a column, from lithium to potassium, and atoms get larger. So why does atomic radius change across a period and down a group?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measuring-radius",
+      "title": "what an atomic radius measures",
+      "voiceover": {
+        "text": "An atom has no hard edge, so chemists measure the distance between the nuclei of two identical atoms bonded together, and take half. That's the atomic radius. It's tiny, so we use picometres. A picometre is a millionth of a millionth of a metre. Every value we compare today is measured the same way, so the comparison is fair."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-effects",
+      "title": "two effects on an outer electron",
+      "voiceover": {
+        "text": "Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's pull. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner electrons. For sodium, that's eleven minus ten, so plus one. Exam answers call this net pull the effective nuclear charge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "across-period",
+      "title": "across a period: same shells, stronger pull",
+      "voiceover": {
+        "text": "Now go across Period three, from sodium to chlorine. Each step adds one proton to the nucleus. The new electron goes into the same third shell, so the inner shells don't change, and there are still ten inner electrons. So the core charge climbs, from plus one for sodium to plus seven for chlorine. A stronger pull on the same shell draws the outer electrons closer, and the atom gets smaller."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "more-electrons",
+      "title": "more electrons, still smaller",
+      "voiceover": {
+        "text": "Hang on, chlorine has more electrons. Shouldn't they take up more room? The extra electrons all go into the same outer shell, and electrons in the same shell barely shield each other. So the nucleus's extra pull wins. More electrons in the same shell doesn't mean a bigger atom."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Lithium and potassium are both in Group one. Potassium has sixteen more protons pulling on its electrons. So which atom is larger? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "down-group",
+      "title": "down a group: one more shell each step",
+      "voiceover": {
+        "text": "Potassium. Going down Group one, each element has one more occupied shell than the one above, so its outer electron sits further from the nucleus. Yes, potassium has more protons, but it also has more inner electrons shielding them. Its core charge is nineteen minus eighteen, plus one, the same as lithium's. With the same core charge, the extra shell wins. So atomic radius increases down a group."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "exam-language",
+      "title": "saying it in an exam",
+      "voiceover": {
+        "text": "In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons closer. Down a group, each element has an extra occupied shell, so the outer electrons are further from the nucleus."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "atoms-to-ions",
+      "title": "atoms into ions",
+      "voiceover": {
+        "text": "Atoms can also gain or lose electrons to form ions. When sodium loses its one outer electron, it doesn't just lose a dot. It loses the whole third shell. Its outer electrons are now in the second shell, and the sodium ion is much smaller. Chlorine goes the other way. It gains one electron into its outer shell, but the nucleus still has seventeen protons. The extra electron adds repulsion between the outer electrons, so they spread out, and the chloride ion is larger."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "isoelectronic",
+      "title": "same electrons, different sizes",
+      "voiceover": {
+        "text": "So is it all about how many electrons there are? Look at five ions that each have exactly ten electrons: oxide, fluoride, sodium, magnesium and aluminium ions. They're called isoelectronic, which means same number of electrons. Their sizes still fall, because the number of protons rises, from eight up to thirteen. More protons pull the same ten electrons in tighter. So electron count alone never tells you the size. Protons and shells matter too."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-line",
+      "title": "one line to remember",
+      "voiceover": {
+        "text": "So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger atoms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Both are in Period three, so their outer electrons are in the same third shell. Sulfur has sixteen protons to magnesium's twelve, with ten inner electrons in each, so its core charge is plus six, not plus two. That stronger pull draws the outer shell closer. Saying sulfur has fewer shells is the slip. They have the same number."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. An oxygen atom has a radius of sixty-six picometres. Predict whether an oxide ion, O two minus, is larger or smaller than an oxygen atom, and explain your prediction. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty picometres. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two shells."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: a tighter grip",
+      "voiceover": {
+        "text": "Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic structure."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

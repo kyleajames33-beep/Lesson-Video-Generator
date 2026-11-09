@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i02.md",
+  "sourceSha256": "0cfb66191a74c94be9af9955896995c10cd59656135704e88fbe3185c4f410f1",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here: the integral of two x plus one, all squared. Expanding works. It's four x squared, plus four x, plus one, which integrates term by term to four x cubed over three, plus two x squared, plus x, plus C. But look at this jar of sourdough starter. t hours after it's fed, it rises at three, over the square root of four t plus one, centimetres per hour. Fast at first, then slower and slower. That rate has nothing to expand. So how far does it rise in six hours? And how can algebra, and the chain rule run backwards, find primitives like these?",
+      "audioFile": "public/audio/math-a12-i02/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "First, the algebra. The power rule works on powers of x, so rewrite the function as powers before integrating. One over x cubed is x to the minus three. Raise the power to minus two, and divide by minus two. That's minus one over two x squared, plus C on each side of zero, since x can't be zero. x to the three on two becomes x to the five on two, divided by five on two. That's two fifths of x to the five on two, which needs x to be zero or positive. And a fraction like x cubed plus two x, all over x, splits into x squared plus two. Its primitive is x cubed over three, plus two x, plus C on each side of zero.",
+      "audioFile": "public/audio/math-a12-i02/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now the bracket. Treat it like x, and guess two x plus one, cubed, over three. Check by differentiating with the chain rule: differentiate the outside, keep the inside, then multiply by the derivative of the inside, which is two. So the guess differentiates to two times the bracket squared. Watch its gradient. It traces a curve exactly twice as high as the one we want. So halve the guess. Two x plus one, cubed, over six, differentiates to exactly two x plus one, squared. Dividing by the inside's rate is the reverse chain rule.",
+      "audioFile": "public/audio/math-a12-i02/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "But expanding gave a different-looking answer. Which one is right? Expand the bracket answer. It's four x cubed over three, plus two x squared, plus x, plus one sixth. That's the expanded answer, plus one sixth. On the graph, they're the same shape, a constant gap apart. So both are primitives, and the C absorbs the difference.",
+      "audioFile": "public/audio/math-a12-i02/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "This works for any bracket a x plus b. Differentiating a x plus b, to the n plus one, multiplies by n plus one, and by the inner rate, a. So the primitive divides by both. The integral of a x plus b, to the n, is a x plus b to the n plus one, over a times n plus one, plus C, for a not zero and n not minus one.",
+      "audioFile": "public/audio/math-a12-i02/scene-05.wav"
+    },
+    {
+      "id": "scene-05a",
+      "text": "Now the starter. Three over the root of four t plus one is three, times four t plus one to the minus a half. Raise the power to a half. Then divide by the new power, a half, and by the inner rate, four. Three over two is one and a half, so the rise is one and a half times the root of four t plus one, plus C. At t equals zero it hasn't risen yet, so one and a half, plus C, is zero, and C is minus one and a half. After six hours, the root of twenty-five is five. So it has risen seven and a half, minus one and a half, which is six centimetres.",
+      "audioFile": "public/audio/math-a12-i02/scene-05a.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "The same idea works when the inside isn't linear, as long as the inside's derivative is there. Find the integral of two x, times x squared plus one, cubed. The inside is x squared plus one. Its derivative, two x, is already sitting outside. So guess x squared plus one, to the four, over four. Differentiating gives four times the bracket cubed, times two x, over four. That's two x, times the bracket cubed, exactly the integrand. In general, the integral of u to the n, times d u by d x, is u to the n plus one, over n plus one, plus C, for n not minus one.",
+      "audioFile": "public/audio/math-a12-i02/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "What if the outside factor is just x? The integral of x, times x squared plus one, cubed. Here x is half of two x, so the answer is half the last one: x squared plus one, to the four, over eight. A missing number can be fixed, because a constant moves through the integral sign. But with no x outside at all, the integral of x squared plus one, cubed, can't be done this way. Two x isn't a constant, so dividing by it doesn't undo the chain rule. Check it: at x equals one, the derivative of that guess is six, not eight. Here, expand instead.",
+      "audioFile": "public/audio/math-a12-i02/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "One more worked example, with a root. Find the integral of x, over the square root of x squared plus four. First, rewrite it as x, times x squared plus four, to the minus a half. The inside is x squared plus four, with derivative two x. We have x, which is half of that, so it's a missing number. Raising the power to a half and dividing by a half doubles it: two times the square root of x squared plus four. Then take half of that. The answer is the square root of x squared plus four, plus C. And x squared plus four is always positive, so this works for every real x. Differentiating back gives x over the root, the integrand exactly.",
+      "audioFile": "public/audio/math-a12-i02/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's a rule of thumb for the reverse chain rule. Fix a missing number, never a missing x. If the inside's derivative is out by a constant, adjust the constant. If it needs an x that isn't there, use algebra instead.",
+      "audioFile": "public/audio/math-a12-i02/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Find the integral of six, over two x plus one, to the four, for x not equal to minus a half. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i02/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Rewrite it as six times two x plus one, to the minus four. Raise the power to minus three, then divide by minus three, and by the inner rate, two. Six over minus six is minus one. So the answer is minus one over two x plus one, cubed, plus C. Forgetting the two gives minus two over the bracket cubed, which differentiates to twice the integrand.",
+      "audioFile": "public/audio/math-a12-i02/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. Find the integral of x squared, times x cubed plus one, to the four. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i02/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "The inside is x cubed plus one, and its derivative is three x squared. We have x squared, which is a third of that: a missing number. So the answer is a third of x cubed plus one, to the five, over five. That's x cubed plus one, to the five, over fifteen, plus C. Integrating the two factors separately and multiplying doesn't work. A product doesn't integrate factor by factor.",
+      "audioFile": "public/audio/math-a12-i02/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So algebra turns a function into powers, and the reverse chain rule divides by the rate of a linear inside. Next, an exponential: the integral of e to the three x. Does the same division by three appear?",
+      "audioFile": "public/audio/math-a12-i02/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i02/scene-15.wav"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v13.md",
+  "sourceSha256": "02f96f1e249b1e9d129f72bf0f09a71a2673c0ba6fe7b3a3670068c7edfa7339",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's our standard, zero point one zero zero three moles per litre, and we need a solution ten times weaker. So we pipette twenty-five point zero zero millilitres of it, run it into an empty two hundred and fifty millilitre flask, and add water up to the mark. Quick prediction. Compared with the twenty-five millilitres we took, does the flask now hold more sodium carbonate, less, or the same?",
+      "audioFile": "public/audio/chem-y11-m2-v13/hook-prediction.wav"
+    },
+    {
+      "id": "same-moles",
+      "text": "The same. Water adds volume, but it doesn't bring any sodium carbonate, and none can escape. Every particle that left the pipette is still in the flask. They're just spread through ten times the volume, so each millilitre holds a tenth as many. It's like topping up cordial with water. The drink tastes weaker, but the syrup you poured is all still in the glass. That's what dilution is: adding solvent to lower the concentration, while the amount of solute stays the same.",
+      "audioFile": "public/audio/chem-y11-m2-v13/same-moles.wav"
+    },
+    {
+      "id": "three-volumes",
+      "text": "To describe any dilution, chemists name three things. The stock is the solution you take from, here our standard, and its concentration is c one. The aliquot is the measured portion you transfer, and its volume is V one, twenty-five point zero zero millilitres. The final volume, V two, is the total after making up to the mark, two hundred and fifty point zero millilitres. Not the water you added. The total.",
+      "audioFile": "public/audio/chem-y11-m2-v13/three-volumes.wav"
+    },
+    {
+      "id": "follow-moles",
+      "text": "Now follow the moles. In the aliquot, n equals c one times V one, with the volume in litres. Zero point one zero zero three times zero point zero two five zero zero is two point five zero eight times ten to the minus three moles. Those same moles end up in the flask. So the new concentration is that amount divided by zero point two five zero zero litres, which is zero point zero one zero zero three moles per litre. Ten times the volume, a tenth of the concentration.",
+      "audioFile": "public/audio/chem-y11-m2-v13/follow-moles.wav"
+    },
+    {
+      "id": "c1v1-c2v2",
+      "text": "Because the moles before equal the moles after, we can write it in one line. Moles before is c one V one. Moles after is c two V two. So c one V one equals c two V two. And because the volumes appear as a ratio, their units cancel, as long as they match. Millilitres on both sides works fine. Zero point one zero zero three times twenty-five point zero zero, divided by two hundred and fifty point zero, gives the same answer in one step.",
+      "audioFile": "public/audio/chem-y11-m2-v13/c1v1-c2v2.wav"
+    },
+    {
+      "id": "bench-pipette",
+      "text": "At the bench, it takes the same care as the standard. Rinse the pipette with a little of the stock itself, not water. Then use a pipette filler to draw the stock up past the line, and let it fall until the bottom of the meniscus sits on the line. Let it drain into the flask, and touch the tip against the glass. A little liquid stays in the tip, and that's fine. The pipette is calibrated to deliver twenty-five point zero zero millilitres with that drop left behind, so don't blow it out.",
+      "audioFile": "public/audio/chem-y11-m2-v13/bench-pipette.wav"
+    },
+    {
+      "id": "rinse-rules",
+      "text": "Why rinse the pipette with the stock? If water were left inside, it would dilute the stock as you drew it up, so the aliquot would carry fewer moles, and the final concentration would come out lower. The flask is different. Water left in the flask doesn't matter, because you're adding water to the mark anyway. Then make up to the mark with a dropper, stopper the flask, and turn it over to mix, just as you did for the standard.",
+      "audioFile": "public/audio/chem-y11-m2-v13/rinse-rules.wav"
+    },
+    {
+      "id": "backwards-acid",
+      "text": "The formula works backwards too. A technician needs two hundred and fifty millilitres of zero point five zero zero moles per litre sulfuric acid, from a six point zero zero moles per litre stock. Rearranged, V one equals c two V two over c one. That's zero point five zero zero times two hundred and fifty, over six point zero zero, which is twenty point eight millilitres of stock, made up to two hundred and fifty. Concentrated acid is technician work. The acid always goes slowly into water, never water into acid, because mixing releases a lot of heat.",
+      "audioFile": "public/audio/chem-y11-m2-v13/backwards-acid.wav"
+    },
+    {
+      "id": "two-checks",
+      "text": "Two quick checks. After a dilution, c two must be smaller than c one. If yours comes out bigger, you've swapped the volumes. And read the wording carefully. If a question says water was added, take V two as the aliquot plus that water, not the water alone. For dilute solutions, the volumes add closely enough. Water adds volume, not moles.",
+      "audioFile": "public/audio/chem-y11-m2-v13/two-checks.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Twenty point zero millilitres of zero point five zero zero moles per litre sodium chloride solution is diluted by adding eighty point zero millilitres of water. Calculate the concentration of the diluted solution. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Taking the volumes as adding, the final volume is twenty point zero plus eighty point zero, one hundred point zero millilitres. c two equals zero point five zero zero times twenty point zero, over one hundred point zero, which is zero point one zero zero moles per litre. Using eighty as V two gives zero point one two five, the classic slip when water is added.",
+      "audioFile": "public/audio/chem-y11-m2-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. What volume of a two point zero zero moles per litre stock solution is needed to make five hundred point zero millilitres of a zero point one five zero moles per litre solution? Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "V one equals c two V two over c one. Zero point one five zero times five hundred point zero, over two point zero zero, is thirty-seven point five millilitres of stock, made up to five hundred. Flip the concentrations, and you'd need six point six seven litres, far more than the whole solution you're making. That can't be right.",
+      "audioFile": "public/audio/chem-y11-m2-v13/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So dilution moves a measured amount of solute into a bigger volume. The moles in the aliquot don't change, so c one V one equals c two V two. Now our standard has a job to do. The technician has made up some hydrochloric acid for the class, but its exact concentration isn't known. Sodium carbonate reacts with hydrochloric acid. If a measured amount of our standard reacts with the acid, can the mole ratio tell us the acid's concentration?",
+      "audioFile": "public/audio/chem-y11-m2-v13/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v13/key-notes.wav"
+    }
+  ]
+}

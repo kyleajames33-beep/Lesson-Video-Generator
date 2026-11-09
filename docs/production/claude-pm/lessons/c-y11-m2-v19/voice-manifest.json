@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v19.md",
+  "sourceSha256": "bd8b628cff464f9e45aaa1594898bbf161e917356a9d4e2a6db690ecdc778789",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here are the four gas laws, and each one holds two quantities fixed. Boyle fixes temperature and amount, Charles fixes pressure and amount, Gay-Lussac fixes volume and amount, and Avogadro fixes temperature and pressure. But real changes don't always keep two things fixed. So try this. At the same pressure, double the moles of a gas, and double its kelvin temperature too. Does the volume double, quadruple, or stay the same?",
+      "audioFile": "public/audio/chem-y11-m2-v19/hook-prediction.wav"
+    },
+    {
+      "id": "effects-multiply",
+      "text": "It quadruples. Doubling the moles doubles the volume, that's Avogadro. Doubling the kelvin temperature doubles it again, that's Charles. So the two effects multiply, two times two. And Boyle says that doubling the pressure would halve the volume. Put those together, and the volume is proportional to the moles, times the temperature, divided by the pressure.",
+      "audioFile": "public/audio/chem-y11-m2-v19/effects-multiply.wav"
+    },
+    {
+      "id": "pv-nrt",
+      "text": "Now turn that into an equation. Multiply both sides by P, and put in a constant to make it an equals sign. P V equals n R T. That's the ideal gas law. R is called the gas constant. It's one fixed number, the same for every gas, and the data sheet gives it as eight point three one four. With R in place, one equation links all four quantities, pressure, volume, amount and temperature.",
+      "audioFile": "public/audio/chem-y11-m2-v19/pv-nrt.wav"
+    },
+    {
+      "id": "laws-inside",
+      "text": "And every simple law is hiding inside it. Cover what's fixed, and what's left is the law. Fix n and T, so n R T is just a number, and P V stays constant. That's Boyle. Fix n and P, and V over T stays constant, that's Charles. Fix n and V, and P over T stays constant, that's Gay-Lussac. And fix P and T, and V over n stays constant. That's Avogadro.",
+      "audioFile": "public/audio/chem-y11-m2-v19/laws-inside.wav"
+    },
+    {
+      "id": "units",
+      "text": "The units need care. The data sheet gives R in joules per mole per kelvin, and a kilopascal times a litre is exactly one joule. So put pressure in kilopascals, volume in litres, temperature in kelvin and amount in moles, and R stays eight point three one four. The usual slips are millilitres instead of litres, and Celsius instead of kelvin.",
+      "audioFile": "public/audio/chem-y11-m2-v19/units.wav"
+    },
+    {
+      "id": "molar-volume-check",
+      "text": "Here's a nice check. Take one mole of gas at twenty-five degrees and a hundred kilopascals. V equals n R T over P, so one times eight point three one four times two ninety-eight point one five, over a hundred. That's twenty-four point seven nine litres, the molar volume from the data sheet. At zero degrees, it gives twenty-two point seven one. Those two numbers were P V equals n R T all along.",
+      "audioFile": "public/audio/chem-y11-m2-v19/molar-volume-check.wav"
+    },
+    {
+      "id": "ideal-gas-calc",
+      "text": "Now a worked example. What volume does zero point two five zero moles of oxygen gas occupy at thirty degrees and ninety-five kilopascals? First, list the values in R's units. n is zero point two five zero moles, T is thirty plus two seventy-three point one five, so three oh three point one five kelvin, and P is ninety-five point zero kilopascals. Rearranged, V equals n R T over P. That's zero point two five zero, times eight point three one four, times three oh three point one five, over ninety-five, which is six point six three litres.",
+      "audioFile": "public/audio/chem-y11-m2-v19/ideal-gas-calc.wav"
+    },
+    {
+      "id": "combined-law",
+      "text": "Often the same sample of gas changes from one state to another. Then the amount stays fixed, so n times R is a constant, and P V over T stays the same. That gives the combined gas law. P one V one over T one equals P two V two over T two. Any pressure and volume units work, as long as they match on both sides, but T must be in kelvin.",
+      "audioFile": "public/audio/chem-y11-m2-v19/combined-law.wav"
+    },
+    {
+      "id": "weather-balloon",
+      "text": "Here's the classic case. A weather balloon holds fifteen litres of helium at a hundred kilopascals and twenty-seven degrees. It rises until the pressure is forty kilopascals and the temperature is minus twenty-three degrees. In kelvin, those are three hundred point one five and two fifty point one five. V two is P one V one T two, over P two T one, which comes to thirty-one point three litres. The lower pressure lets it expand two and a half times, the cold shrinks it a little, and the expansion wins.",
+      "audioFile": "public/audio/chem-y11-m2-v19/weather-balloon.wav"
+    },
+    {
+      "id": "why-ideal",
+      "text": "So why is it called the ideal gas law? It assumes three things. The particles themselves take up no space, they don't attract each other, and their collisions don't lose any energy. Real gases come very close at everyday conditions, because their particles are far apart and moving fast. The law breaks down at high pressure, where the particles are crowded and their own size matters, and at low temperature, where slow particles start to stick together, until the gas turns into a liquid.",
+      "audioFile": "public/audio/chem-y11-m2-v19/why-ideal.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A two point zero zero litre flask contains nitrogen gas at twenty-two point zero degrees Celsius and a hundred and five kilopascals. Calculate the mass of nitrogen in the flask. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v19/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "n equals P V over R T, so a hundred and five times two, over eight point three one four times two ninety-five point one five. That's zero point zero eight five six moles. Times twenty-eight point zero two gives two point four zero grams. Leaving the temperature in Celsius gives thirty-two grams, more than ten times too much. That's the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v19/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A five hundred millilitre sample of gas at twenty-five degrees and a hundred kilopascals is compressed to two hundred and fifty millilitres and heated to seventy-five degrees. Calculate the final pressure of the gas. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v19/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "No gas escapes, so use the combined gas law. P two is P one V one T two, over V two T one. That's a hundred, times five hundred, times three forty-eight point one five, over two fifty times two ninety-eight point one five, which is two hundred and thirty-four kilopascals. Halving the volume alone gives two hundred, so forgetting the heating is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v19/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So P V equals n R T combines the simple laws, because each one describes how the volume depends on one quantity, and those effects multiply. Fix any two, and a simple law falls out. That means a gas volume, measured at a known temperature and pressure, tells you the moles of gas. And moles connect to reactions. Drop some marble chips into acid, and catch the carbon dioxide in a gas syringe. How can a gas volume measure the progress or quantity of a reaction?",
+      "audioFile": "public/audio/chem-y11-m2-v19/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v19/key-notes.wav"
+    }
+  ]
+}

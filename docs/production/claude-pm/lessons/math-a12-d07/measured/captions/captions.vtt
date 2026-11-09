@@ -1,589 +1,667 @@
 WEBVTT
 
-00:00:00.301 --> 00:00:02.971
+00:00:00.261 --> 00:00:03.391
 Last video, we put one function inside another.
 
-00:00:03.413 --> 00:00:04.661
-Now let's multiply two of them.
+00:00:03.952 --> 00:00:06.236
+Now let's multiply two of them, the way
 
-00:00:05.304 --> 00:00:07.789
-Here's e to the x, here's sine x,
+00:00:06.257 --> 00:00:08.622
+a deck's area is its length times its
 
-00:00:08.050 --> 00:00:09.994
-and here's their product, e to the x
-
-00:00:10.155 --> 00:00:10.595
-sine x.
-
-00:00:11.459 --> 00:00:13.771
-A quick guess for its derivative: just multiply
-
-00:00:13.812 --> 00:00:14.495
-the two derivatives.
-
-00:00:15.039 --> 00:00:17.068
-That gives e to the x times cos
-
-00:00:17.129 --> 00:00:17.168
-x.
-
-00:00:17.954 --> 00:00:20.323
-At pi over two, cos x is zero,
-
-00:00:20.565 --> 00:00:22.291
-so the guess says the curve is flat
-
-00:00:22.333 --> 00:00:22.512
-there.
-
-00:00:23.116 --> 00:00:24.045
-But look at the curve.
-
-00:00:24.548 --> 00:00:26.615
-At pi over two, it's climbing steeply.
-
-00:00:27.198 --> 00:00:30.036
-So how do both factors really contribute to
-
-00:00:30.057 --> 00:00:30.438
-the slope?
-
-00:00:31.076 --> 00:00:31.901
-Here's a way to see it.
-
-00:00:32.525 --> 00:00:34.311
-Think of the product as the area of
-
-00:00:34.352 --> 00:00:36.578
-a rectangle, with width e to the x
-
-00:00:36.880 --> 00:00:38.224
-and height sine x.
-
-00:00:38.988 --> 00:00:41.236
-At x equals one, it's about two point
-
-00:00:41.257 --> 00:00:43.827
-seven two wide, and point eight four high.
-
-00:00:44.452 --> 00:00:45.805
-Now nudge x a little.
-
-00:00:46.492 --> 00:00:48.539
-The width grows, and that adds a strip
-
-00:00:48.581 --> 00:00:51.010
-down the side: the change in width, times
-
-00:00:51.031 --> 00:00:51.371
-the height.
-
-00:00:51.935 --> 00:00:53.982
-The height grows too, adding a strip along
-
-00:00:54.003 --> 00:00:56.172
-the top: the change in height, times the
-
-00:00:56.193 --> 00:00:56.393
+00:00:08.703 --> 00:00:08.943
 width.
 
-00:00:57.116 --> 00:00:59.440
+00:00:09.826 --> 00:00:10.869
+Here's e to the x,
+
+00:00:11.552 --> 00:00:14.441
+here's sine x, and here's their product, e
+
+00:00:14.482 --> 00:00:15.665
+to the x sine x.
+
+00:00:16.369 --> 00:00:18.836
+A quick guess for its derivative: just multiply
+
+00:00:18.877 --> 00:00:19.619
+the two derivatives.
+
+00:00:20.082 --> 00:00:22.056
+That gives e to the x times cos
+
+00:00:22.117 --> 00:00:22.156
+x.
+
+00:00:23.104 --> 00:00:25.593
+At pi over two, cos x is zero,
+
+00:00:26.055 --> 00:00:27.962
+so the guess says the curve is flat
+
+00:00:27.983 --> 00:00:28.203
+there.
+
+00:00:28.867 --> 00:00:29.940
+But look at the curve.
+
+00:00:30.547 --> 00:00:32.856
+At pi over two, it's climbing steeply.
+
+00:00:33.619 --> 00:00:36.435
+So how do both factors really contribute to
+
+00:00:36.456 --> 00:00:36.897
+the slope?
+
+00:00:37.542 --> 00:00:38.830
+Here's why that guess fails,
+
+00:00:39.636 --> 00:00:40.179
+with the deck.
+
+00:00:40.621 --> 00:00:42.746
+It's four metres long and two metres wide,
+
+00:00:43.108 --> 00:00:44.852
+so its area is eight square metres.
+
+00:00:45.574 --> 00:00:47.759
+While it's being built, its length grows by
+
+00:00:47.899 --> 00:00:49.804
+one metre a day, and its width by
+
+00:00:49.904 --> 00:00:50.766
+half a metre a day.
+
+00:00:51.468 --> 00:00:53.597
+Multiply those two rates, and you'd guess the
+
+00:00:53.757 --> 00:00:55.725
+area grows by half a square metre a
+
+00:00:55.745 --> 00:00:55.946
+day.
+
+00:00:56.631 --> 00:00:57.638
+Now watch it grow.
+
+00:00:58.361 --> 00:01:00.263
+The extra length adds a strip down the
+
+00:01:00.304 --> 00:01:01.645
+side, two metres long:
+
+00:01:02.327 --> 00:01:04.509
+one metre a day, times two metres, is
+
+00:01:04.590 --> 00:01:05.671
+two square metres a day.
+
+00:01:06.413 --> 00:01:08.395
+The extra width adds a strip along the
+
+00:01:08.477 --> 00:01:09.878
+top, four metres long:
+
+00:01:10.500 --> 00:01:12.422
+half a metre a day, times four metres,
+
+00:01:12.803 --> 00:01:14.365
+is another two square metres a day.
+
+00:01:15.086 --> 00:01:17.275
+So right now, the area grows at four
+
+00:01:17.336 --> 00:01:18.138
+square metres a day,
+
+00:01:18.642 --> 00:01:19.524
+eight times the guess.
+
+00:01:20.208 --> 00:01:22.355
+Each side's growth is multiplied by the other
+
+00:01:22.396 --> 00:01:23.118
+side's size.
+
+00:01:23.842 --> 00:01:24.668
+Here's a way to see it.
+
+00:01:25.291 --> 00:01:27.078
+Think of the product as the area of
+
+00:01:27.118 --> 00:01:29.345
+a rectangle, with width e to the x
+
+00:01:29.646 --> 00:01:30.991
+and height sine x.
+
+00:01:31.754 --> 00:01:34.002
+At x equals one, it's about two point
+
+00:01:34.023 --> 00:01:36.593
+seven two wide, and point eight four high.
+
+00:01:37.218 --> 00:01:38.572
+Now nudge x a little.
+
+00:01:39.258 --> 00:01:41.305
+The width grows, and that adds a strip
+
+00:01:41.347 --> 00:01:43.776
+down the side: the change in width, times
+
+00:01:43.797 --> 00:01:44.138
+the height.
+
+00:01:44.702 --> 00:01:46.749
+The height grows too, adding a strip along
+
+00:01:46.770 --> 00:01:48.939
+the top: the change in height, times the
+
+00:01:48.960 --> 00:01:49.160
+width.
+
+00:01:49.883 --> 00:01:52.207
 The corner is a small change times a
 
-00:00:59.461 --> 00:01:01.805
+00:01:52.228 --> 00:01:54.572
 small change, so it vanishes as the nudge
 
-00:01:01.846 --> 00:01:02.166
+00:01:54.613 --> 00:01:54.933
 shrinks.
 
-00:01:03.049 --> 00:01:05.093
+00:01:55.816 --> 00:01:57.860
 So the area changes in two ways,
 
-00:01:05.775 --> 00:01:07.559
+00:01:58.542 --> 00:02:00.326
 one factor changing while the other stays.
 
-00:01:08.241 --> 00:01:10.165
+00:02:01.007 --> 00:02:02.931
 Divide by the nudge, and that's the product
 
-00:01:10.206 --> 00:01:11.046
+00:02:02.972 --> 00:02:03.812
 rule from Year 11:
 
-00:01:11.609 --> 00:01:13.792
+00:02:04.375 --> 00:02:06.558
 u prime v, plus u v prime.
 
-00:01:14.495 --> 00:01:15.237
+00:02:07.261 --> 00:02:08.004
 Back to the curve,
 
-00:01:15.860 --> 00:01:16.862
+00:02:08.626 --> 00:02:09.629
 at x equals one.
 
-00:01:17.445 --> 00:01:19.469
+00:02:10.211 --> 00:02:12.236
 E to the x's turn is its slope
 
-00:01:19.550 --> 00:01:21.834
+00:02:12.316 --> 00:02:14.601
 times the height of sine x, about two
 
-00:01:21.875 --> 00:01:22.516
+00:02:14.641 --> 00:02:15.283
 point two nine.
 
-00:01:23.319 --> 00:01:25.385
+00:02:16.085 --> 00:02:18.152
 Sine's turn is the height of e to
 
-00:01:25.446 --> 00:01:27.392
+00:02:18.212 --> 00:02:20.159
 the x times sine's slope,
 
-00:01:27.935 --> 00:01:29.077
+00:02:20.701 --> 00:02:21.844
 about one point four seven.
 
-00:01:29.921 --> 00:01:32.875
+00:02:22.687 --> 00:02:25.641
 Together that's about three point seven six, the
 
-00:01:32.896 --> 00:01:33.759
+00:02:25.662 --> 00:02:26.525
 slope of the tangent.
 
-00:01:34.584 --> 00:01:36.321
+00:02:27.351 --> 00:02:29.088
 Now slide to pi over two.
 
-00:01:37.026 --> 00:01:38.431
+00:02:29.793 --> 00:02:31.198
 Sine x is at the top of its
 
-00:01:38.452 --> 00:01:40.780
+00:02:31.219 --> 00:02:33.547
 hump, so its slope is zero, and its
 
-00:01:40.861 --> 00:01:41.824
+00:02:33.628 --> 00:02:34.591
 turn is zero.
 
-00:01:42.567 --> 00:01:44.371
+00:02:35.334 --> 00:02:37.138
 But e to the x is still growing,
 
-00:01:44.773 --> 00:01:46.617
+00:02:37.540 --> 00:02:39.384
 and sine x is still one high,
 
-00:01:47.240 --> 00:01:49.043
+00:02:40.007 --> 00:02:41.810
 so e to the x's turn gives the
 
-00:01:49.145 --> 00:01:51.390
+00:02:41.912 --> 00:02:44.157
 whole slope, about four point eight one.
 
-00:01:52.173 --> 00:01:54.485
+00:02:44.939 --> 00:02:47.251
 The guess multiplied a slope by a slope,
 
-00:01:54.828 --> 00:01:55.471
+00:02:47.594 --> 00:02:48.237
 so it missed this.
 
-00:01:56.129 --> 00:01:56.713
+00:02:48.896 --> 00:02:49.480
 Keep sliding.
 
-00:01:57.358 --> 00:01:59.999
+00:02:50.125 --> 00:02:52.766
 Past pi over two, sine x starts to
 
-00:02:00.080 --> 00:02:01.840
+00:02:52.847 --> 00:02:54.607
 fall, so its slope is negative,
 
-00:02:02.401 --> 00:02:04.901
+00:02:55.168 --> 00:02:57.668
 and its turn pulls the slope down, while
 
-00:02:04.922 --> 00:02:06.922
+00:02:57.689 --> 00:02:59.689
 e to the x's turn still pushes it
 
-00:02:07.024 --> 00:02:07.123
+00:02:59.791 --> 00:02:59.890
 up.
 
-00:02:08.025 --> 00:02:10.231
+00:03:00.792 --> 00:03:02.998
 At three pi over four, the two turns
 
-00:02:10.373 --> 00:02:13.181
+00:03:03.140 --> 00:03:05.948
 are equal and opposite, about plus and minus
 
-00:02:13.302 --> 00:02:14.465
+00:03:06.069 --> 00:03:07.232
 seven point four six.
 
-00:02:15.169 --> 00:02:17.368
+00:03:07.936 --> 00:03:10.135
 They cancel, so the tangent is flat.
 
-00:02:18.071 --> 00:02:19.914
+00:03:10.838 --> 00:03:12.681
 That's why this curve levels off at three
 
-00:02:19.955 --> 00:02:22.299
+00:03:12.722 --> 00:03:15.066
 pi over four, not at pi over two,
 
-00:02:22.740 --> 00:02:23.822
+00:03:15.507 --> 00:03:16.589
 where sine x levels off.
 
-00:02:24.584 --> 00:02:26.495
+00:03:17.351 --> 00:03:19.262
 E to the x is still growing, and
 
-00:02:26.556 --> 00:02:28.084
+00:03:19.323 --> 00:03:20.851
 it carries the product further.
 
-00:02:28.769 --> 00:02:29.795
+00:03:21.536 --> 00:03:22.562
 Now the algebra.
 
-00:02:30.339 --> 00:02:32.926
+00:03:23.106 --> 00:03:25.693
 Differentiate y equals e to the x sine
 
-00:02:33.048 --> 00:02:33.167
+00:03:25.815 --> 00:03:25.934
 x.
 
-00:02:33.830 --> 00:02:34.801
+00:03:26.597 --> 00:03:27.568
 Label the factors first.
 
-00:02:35.611 --> 00:02:37.181
+00:03:28.378 --> 00:03:29.948
 u is e to the x, so u
 
-00:02:37.242 --> 00:02:38.469
+00:03:30.009 --> 00:03:31.236
 prime is e to the x.
 
-00:02:38.973 --> 00:02:41.501
+00:03:31.740 --> 00:03:34.268
 v is sine x, so v prime is
 
-00:02:41.562 --> 00:02:41.943
+00:03:34.329 --> 00:03:34.710
 cos x.
 
-00:02:42.646 --> 00:02:44.953
+00:03:35.413 --> 00:03:37.720
 Then u prime v, plus u v prime,
 
-00:02:45.316 --> 00:02:47.442
+00:03:38.083 --> 00:03:40.209
 gives e to the x sine x, plus
 
-00:02:47.604 --> 00:02:48.827
+00:03:40.371 --> 00:03:41.594
 e to the x cos x.
 
-00:02:49.590 --> 00:02:51.573
+00:03:42.357 --> 00:03:44.340
 Both terms share e to the x, so
 
-00:02:51.614 --> 00:02:52.534
+00:03:44.381 --> 00:03:45.301
 take it out as a factor:
 
-00:02:53.096 --> 00:02:55.019
+00:03:45.863 --> 00:03:47.786
 e to the x, times sine x plus
 
-00:02:55.060 --> 00:02:55.360
+00:03:47.827 --> 00:03:48.127
 cos x.
 
-00:02:56.165 --> 00:02:56.998
+00:03:48.932 --> 00:03:49.765
 Check pi over two.
 
-00:02:57.424 --> 00:02:59.310
+00:03:50.191 --> 00:03:52.077
 That's e to the pi over two, times
 
-00:02:59.532 --> 00:03:01.981
+00:03:52.299 --> 00:03:54.748
 one plus zero, about four point eight one,
 
-00:03:02.403 --> 00:03:03.025
+00:03:55.170 --> 00:03:55.792
 the slope we saw.
 
-00:03:03.677 --> 00:03:05.151
+00:03:56.443 --> 00:03:57.918
 The same rule works with a log.
 
-00:03:05.656 --> 00:03:08.462
+00:03:58.422 --> 00:04:01.229
 Differentiate y equals e to the x, times
 
-00:03:08.503 --> 00:03:09.544
+00:04:01.269 --> 00:04:02.311
 the natural log of x.
 
-00:03:10.307 --> 00:03:12.932
+00:04:03.073 --> 00:04:05.699
 The natural log needs x positive, so this
 
-00:03:12.994 --> 00:03:15.839
+00:04:05.760 --> 00:04:08.606
 function only exists for x greater than zero.
 
-00:03:16.684 --> 00:03:18.432
+00:04:09.450 --> 00:04:11.199
 u is e to the x, and so
 
-00:03:18.554 --> 00:03:19.176
+00:04:11.320 --> 00:04:11.943
 is u prime.
 
-00:03:20.283 --> 00:03:22.067
+00:04:13.049 --> 00:04:14.834
 v is the natural log of x, so
 
-00:03:22.128 --> 00:03:23.892
+00:04:14.894 --> 00:04:16.659
 v prime is one over x.
 
-00:03:24.555 --> 00:03:26.282
+00:04:17.322 --> 00:04:19.049
 That gives e to the x times the
 
-00:03:26.323 --> 00:03:28.051
+00:04:19.090 --> 00:04:20.818
 natural log of x, plus e to the
 
-00:03:28.192 --> 00:03:28.854
+00:04:20.959 --> 00:04:21.621
 x over x.
 
-00:03:29.618 --> 00:03:31.220
+00:04:22.385 --> 00:04:23.987
 Take out e to the x, and you
 
-00:03:31.261 --> 00:03:33.083
+00:04:24.028 --> 00:04:25.850
 get e to the x, times the natural
 
-00:03:33.124 --> 00:03:35.247
+00:04:25.891 --> 00:04:28.014
 log of x plus one over x, for
 
-00:03:35.309 --> 00:03:35.949
+00:04:28.076 --> 00:04:28.716
 positive x.
 
-00:03:36.772 --> 00:03:38.559
+00:04:29.538 --> 00:04:31.325
 Every new family works the same way:
 
-00:03:39.083 --> 00:03:41.192
+00:04:31.849 --> 00:04:33.958
 two turns, then look for a common factor.
 
-00:03:41.862 --> 00:03:44.358
+00:04:34.629 --> 00:04:37.124
 Next, a factor with a function inside.
 
-00:03:44.881 --> 00:03:48.081
+00:04:37.648 --> 00:04:40.847
 Differentiate y equals x cubed, sine two x.
 
-00:03:48.805 --> 00:03:51.759
+00:04:41.572 --> 00:04:44.525
 The outside operation is multiplication, so it's the
 
-00:03:51.799 --> 00:03:52.301
+00:04:44.566 --> 00:04:45.067
 product rule.
 
-00:03:53.306 --> 00:03:55.639
+00:04:46.073 --> 00:04:48.405
 u is x cubed, so u prime is
 
-00:03:55.699 --> 00:03:56.544
+00:04:48.466 --> 00:04:49.310
 three x squared.
 
-00:03:57.288 --> 00:04:00.006
+00:04:50.055 --> 00:04:52.772
 Now check v before you write its derivative.
 
-00:04:00.610 --> 00:04:02.993
+00:04:53.376 --> 00:04:55.759
 Sine two x has an inside, two x,
 
-00:04:03.415 --> 00:04:05.157
+00:04:56.181 --> 00:04:57.923
 so by the chain rule from last video,
 
-00:04:05.499 --> 00:04:07.481
+00:04:58.265 --> 00:05:00.247
 v prime is two cos two x.
 
-00:04:08.304 --> 00:04:08.503
+00:05:01.070 --> 00:05:01.269
 Then
 
-00:04:09.026 --> 00:04:11.352
+00:05:01.792 --> 00:05:04.118
 u prime v, plus u v prime, is
 
-00:04:11.513 --> 00:04:14.220
+00:05:04.279 --> 00:05:06.986
 three x squared sine two x, plus two
 
-00:04:14.321 --> 00:04:15.825
+00:05:07.087 --> 00:05:08.591
 x cubed cos two x.
 
-00:04:16.566 --> 00:04:18.890
+00:05:09.333 --> 00:05:11.657
 Both terms share x squared, so the answer
 
-00:04:19.011 --> 00:04:21.395
+00:05:11.778 --> 00:05:14.162
 is x squared, times three sine two x,
 
-00:04:21.536 --> 00:04:23.178
+00:05:14.303 --> 00:05:15.945
 plus two x cos two x.
 
-00:04:23.989 --> 00:04:25.235
+00:05:16.756 --> 00:05:18.002
 Does that two matter?
 
-00:04:25.941 --> 00:04:27.754
+00:05:18.708 --> 00:05:20.521
 Check the slope at pi over two.
 
-00:04:28.581 --> 00:04:31.536
+00:05:21.348 --> 00:05:24.303
 There, sine pi is zero, and cos pi
 
-00:04:31.678 --> 00:04:32.502
+00:05:24.445 --> 00:05:25.269
 is minus one.
 
-00:04:33.163 --> 00:04:35.364
+00:05:25.930 --> 00:05:28.131
 So the first term vanishes, and the slope
 
-00:04:35.405 --> 00:04:38.126
+00:05:28.172 --> 00:05:30.893
 is two, times pi over two cubed, times
 
-00:04:38.247 --> 00:04:38.847
+00:05:31.014 --> 00:05:31.614
 minus one.
 
-00:04:39.709 --> 00:04:41.713
+00:05:32.476 --> 00:05:34.480
 That's minus pi cubed over four,
 
-00:04:42.235 --> 00:04:44.118
+00:05:35.002 --> 00:05:36.885
 about minus seven point seven five,
 
-00:04:44.760 --> 00:04:45.921
+00:05:37.527 --> 00:05:38.688
 and the tangent agrees.
 
-00:04:46.705 --> 00:04:48.754
+00:05:39.472 --> 00:05:41.521
 Leave out the two, and you'd get half
 
-00:04:48.815 --> 00:04:51.064
+00:05:41.582 --> 00:05:43.831
 of that, a tangent that's far too shallow.
 
-00:04:51.678 --> 00:04:52.674
+00:05:44.444 --> 00:05:45.441
 Here's a way to remember it.
 
-00:04:53.258 --> 00:04:55.310
+00:05:46.024 --> 00:05:48.077
 Each factor takes a turn, and the other
 
-00:04:55.412 --> 00:04:55.954
+00:05:48.178 --> 00:05:48.721
 one stays.
 
-00:04:56.698 --> 00:04:58.882
+00:05:49.464 --> 00:05:51.649
 In the rectangle, the width changes while the
 
-00:04:58.943 --> 00:05:01.609
+00:05:51.709 --> 00:05:54.376
 height stays, then the height changes while the
 
-00:05:01.650 --> 00:05:02.210
+00:05:54.416 --> 00:05:54.977
 width stays.
 
-00:05:02.934 --> 00:05:05.043
+00:05:55.700 --> 00:05:57.810
 That's why there are two terms, and why
 
-00:05:05.144 --> 00:05:07.514
+00:05:57.910 --> 00:06:00.281
 each term keeps one of the original factors.
 
-00:05:08.358 --> 00:05:11.165
+00:06:01.125 --> 00:06:03.932
 Multiplying the two derivatives keeps neither factor, so
 
-00:05:11.186 --> 00:05:12.008
+00:06:03.953 --> 00:06:04.775
 it isn't the rule.
 
-00:05:12.772 --> 00:05:14.660
+00:06:05.538 --> 00:06:07.427
 And because the two turns are added, it
 
-00:05:14.681 --> 00:05:16.187
+00:06:07.447 --> 00:06:08.954
 doesn't matter which factor you call u.
 
-00:05:17.153 --> 00:05:18.528
+00:06:09.920 --> 00:06:11.295
 That won't be true for a quotient.
 
-00:05:21.150 --> 00:05:21.598
+00:06:13.917 --> 00:06:14.365
 Your turn.
 
-00:05:22.208 --> 00:05:24.758
+00:06:14.975 --> 00:06:17.525
 Differentiate f of x equals x squared e
 
-00:05:24.799 --> 00:05:26.826
+00:06:17.566 --> 00:06:19.593
 to the x, and give your answer fully
 
-00:05:26.867 --> 00:05:27.409
+00:06:19.634 --> 00:06:20.176
 factorised.
 
-00:05:27.932 --> 00:05:28.717
+00:06:20.699 --> 00:06:21.484
 Pause here to answer.
 
-00:05:40.282 --> 00:05:42.897
+00:06:33.049 --> 00:06:35.663
 u is x squared, so u prime is
 
-00:05:42.997 --> 00:05:43.460
+00:06:35.764 --> 00:06:36.226
 two x.
 
-00:05:44.204 --> 00:05:46.190
+00:06:36.971 --> 00:06:38.956
 v is e to the x, and so
 
-00:05:46.271 --> 00:05:46.913
+00:06:39.038 --> 00:06:39.679
 is v prime.
 
-00:05:47.735 --> 00:05:49.677
+00:06:40.502 --> 00:06:42.443
 So f prime of x is two x
 
-00:05:49.817 --> 00:05:51.899
+00:06:42.584 --> 00:06:44.665
 e to the x, plus x squared e
 
-00:05:51.959 --> 00:05:52.359
+00:06:44.726 --> 00:06:45.125
 to the x.
 
-00:05:53.360 --> 00:05:55.342
+00:06:46.127 --> 00:06:48.108
 Both terms share x e to the x,
 
-00:05:55.802 --> 00:05:57.603
+00:06:48.569 --> 00:06:50.369
 so f prime of x is x e
 
-00:05:57.623 --> 00:05:59.585
+00:06:50.390 --> 00:06:52.351
 to the x, times x plus two.
 
-00:06:00.507 --> 00:06:02.913
+00:06:53.274 --> 00:06:55.679
 Multiplying the derivatives gives just two x e
 
-00:06:02.933 --> 00:06:05.179
+00:06:55.700 --> 00:06:57.945
 to the x, which loses the second turn.
 
-00:06:06.944 --> 00:06:07.348
+00:06:59.711 --> 00:07:00.114
 Last one.
 
-00:06:08.153 --> 00:06:10.841
+00:07:00.920 --> 00:07:03.607
 Find the exact gradient of the curve y
 
-00:06:10.982 --> 00:06:13.229
+00:07:03.749 --> 00:07:05.995
 equals x e to the minus x,
 
-00:06:13.770 --> 00:06:14.994
+00:07:06.537 --> 00:07:07.760
 at x equals two.
 
-00:06:15.780 --> 00:06:16.593
+00:07:08.547 --> 00:07:09.359
 Pause here to answer.
 
-00:06:27.470 --> 00:06:30.005
+00:07:20.237 --> 00:07:22.772
 u is x, so u prime is one.
 
-00:06:30.569 --> 00:06:32.873
+00:07:23.336 --> 00:07:25.640
 v is e to the minus x, which
 
-00:06:32.934 --> 00:06:35.779
+00:07:25.701 --> 00:07:28.546
 has an inside, minus x, so v prime
 
-00:06:36.041 --> 00:06:37.943
+00:07:28.808 --> 00:07:30.710
 is minus e to the minus x.
 
-00:06:38.606 --> 00:06:40.870
+00:07:31.373 --> 00:07:33.637
 So d y by d x factors to
 
-00:06:41.352 --> 00:06:43.756
+00:07:34.119 --> 00:07:36.523
 e to the minus x, times one minus
 
-00:06:43.898 --> 00:06:43.997
+00:07:36.665 --> 00:07:36.764
 x.
 
-00:06:44.779 --> 00:06:47.444
+00:07:37.546 --> 00:07:40.211
 At x equals two, that's minus e to
 
-00:06:47.465 --> 00:06:48.166
+00:07:40.232 --> 00:07:40.933
 the minus two,
 
-00:06:48.668 --> 00:06:50.191
+00:07:41.435 --> 00:07:42.958
 about minus point one three.
 
-00:06:50.973 --> 00:06:52.978
+00:07:43.740 --> 00:07:45.745
 Lose the minus from the inside, and you'd
 
-00:06:52.999 --> 00:06:54.803
+00:07:45.766 --> 00:07:47.570
 get a positive slope, but the curve is
 
-00:06:54.864 --> 00:06:55.445
+00:07:47.631 --> 00:07:48.212
 falling there.
 
-00:06:57.115 --> 00:06:59.200
+00:07:49.881 --> 00:07:51.967
 So in a product, each factor takes a
 
-00:06:59.241 --> 00:07:00.765
+00:07:52.007 --> 00:07:53.532
 turn, while the other one stays.
 
-00:07:01.709 --> 00:07:03.819
+00:07:54.475 --> 00:07:56.586
 Next, one function divided by another.
 
-00:07:04.544 --> 00:07:06.492
+00:07:57.310 --> 00:07:59.259
 Here's e to the x, over x plus
 
-00:07:06.614 --> 00:07:06.753
+00:07:59.380 --> 00:07:59.520
 one.
 
-00:07:07.418 --> 00:07:08.993
+00:08:00.184 --> 00:08:01.760
 There's a gap where the bottom is zero.
 
-00:07:09.640 --> 00:07:12.171
+00:08:02.406 --> 00:08:04.938
 So how does dividing change the slope?
 
-00:07:14.855 --> 00:07:15.738
+00:08:07.621 --> 00:08:08.505
 Here are the key notes.
 
-00:07:16.261 --> 00:07:18.029
+00:08:09.027 --> 00:08:10.796
 Pause the video if you need more time
 
-00:07:18.050 --> 00:07:18.531
+00:08:10.816 --> 00:08:11.298
 to copy them.

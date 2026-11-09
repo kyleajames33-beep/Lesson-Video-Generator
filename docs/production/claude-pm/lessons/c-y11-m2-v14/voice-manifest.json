@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v14.md",
+  "sourceSha256": "0b7720234255182481bdc893257c3fed537ad633ded51d904118d6365d513ca3",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's the technician's hydrochloric acid. It's about zero point two moles per litre, but about isn't good enough for an analysis. Our standard can find the exact value, because sodium carbonate reacts with hydrochloric acid. Suppose we take twenty point zero zero millilitres of the standard. That's two point zero zero six times ten to the minus three moles of sodium carbonate. Quick prediction. How many moles of acid react with all of it: the same, double, or half?",
+      "audioFile": "public/audio/chem-y11-m2-v14/hook-prediction.wav"
+    },
+    {
+      "id": "double-idea",
+      "text": "Double. The equation says each sodium carbonate reacts with two hydrochloric acid, so the acid's moles are twice the carbonate's. That's the key. If we measure exactly what volume of acid it takes to react with all the carbonate, we know the moles of acid in that volume, and c equals n over V does the rest. Measuring how much of one solution reacts with a known amount of another is called a titration.",
+      "audioFile": "public/audio/chem-y11-m2-v14/double-idea.wav"
+    },
+    {
+      "id": "set-up",
+      "text": "Here's the set-up. A pipette delivers the twenty point zero zero millilitre aliquot of standard into a conical flask, which is shaped so you can swirl it without spilling. The acid goes in a burette, a long glass tube with a tap, marked so you can read the volume to the nearest zero point zero five of a millilitre. You read it before and after, and the difference is the volume of acid added, called the titre.",
+      "audioFile": "public/audio/chem-y11-m2-v14/set-up.wav"
+    },
+    {
+      "id": "endpoint",
+      "text": "But how do you see when the carbonate has just run out? Both solutions are colourless, so we add a few drops of an indicator, methyl orange, whose colour changes when the reaction is complete. While carbonate is left, it stays yellow. Run the acid in steadily at first, swirling, then drop by drop once orange flashes where the drops land. The moment one drop turns the whole flask orange, and it stays orange, all the carbonate has reacted. That's the endpoint. One drop past it, and it turns red.",
+      "audioFile": "public/audio/chem-y11-m2-v14/endpoint.wav"
+    },
+    {
+      "id": "titres",
+      "text": "The first run is quick and rough, just to find where the endpoint is, so it isn't used. Then you repeat carefully with a fresh aliquot each time, until the titres agree within zero point one zero millilitres. Results that agree like this are called concordant. Ours are eighteen point seven five, eighteen point eight five, and eighteen point eight zero. Their average is eighteen point eight zero millilitres.",
+      "audioFile": "public/audio/chem-y11-m2-v14/titres.wav"
+    },
+    {
+      "id": "known-ratio",
+      "text": "Now four steps. One, the balanced equation: sodium carbonate to acid is one to two. Two, the moles of the solution you know everything about. n equals c times V, zero point one zero zero three times zero point zero two zero zero zero, which is two point zero zero six times ten to the minus three moles of sodium carbonate. Three, the ratio. Twice that is four point zero one two times ten to the minus three moles of hydrochloric acid.",
+      "audioFile": "public/audio/chem-y11-m2-v14/known-ratio.wav"
+    },
+    {
+      "id": "unknown-volume",
+      "text": "Four, that acid came out of the burette, so its volume is the titre, zero point zero one eight eight zero litres. Not the aliquot's volume, which belongs to the carbonate. c equals n over V: four point zero one two times ten to the minus three, divided by zero point zero one eight eight zero, is zero point two one three four moles per litre. About zero point two, as the technician said, but now we know it to four significant figures.",
+      "audioFile": "public/audio/chem-y11-m2-v14/unknown-volume.wav"
+    },
+    {
+      "id": "slip-pattern",
+      "text": "Skip the ratio, and you'd get zero point one zero six seven, exactly half. That's the classic slip in these problems. So the pattern for every one of them is: known to moles, ratio, unknown. Start with n equals c V for the solution you know everything about, use the balanced equation's ratio, then divide by the unknown's own volume.",
+      "audioFile": "public/audio/chem-y11-m2-v14/slip-pattern.wav"
+    },
+    {
+      "id": "rinse-errors",
+      "text": "The rinsing rules from dilution matter here too. The pipette is rinsed with the standard, because water left inside would mean fewer moles of carbonate in the flask. Then less acid is needed, the titre is smaller, and the acid's concentration comes out too high. But the conical flask can be wet with distilled water. The pipette has already fixed the moles of carbonate, and extra water doesn't change how much acid they need. No effect.",
+      "audioFile": "public/audio/chem-y11-m2-v14/rinse-errors.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Twenty point zero zero millilitres of a standardised zero point one five zero zero moles per litre sodium hydroxide solution is titrated with sulfuric acid. The concordant titres average eighteen point seven five millilitres. H two S O four plus two N a O H makes N a two S O four plus two H two O. Calculate the concentration of the sulfuric acid. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v14/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Known to moles: zero point one five zero zero times zero point zero two zero zero zero is three point zero zero zero times ten to the minus three moles of sodium hydroxide. The ratio is one acid to two hydroxide, so halve it: one point five zero zero times ten to the minus three moles. Divide by the titre, zero point zero one eight seven five litres: zero point zero eight zero zero moles per litre. One to one gives zero point one six zero zero, double the right answer.",
+      "audioFile": "public/audio/chem-y11-m2-v14/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Before filling the burette with hydrochloric acid, a student rinsed it only with distilled water. Explain the effect on the calculated concentration of the acid. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v14/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Too low. Water left in the burette dilutes the acid, so more of it is needed to react with the same moles of carbonate. The titre is bigger, and the same moles divided by a bigger volume gives a smaller concentration. That's why the burette is rinsed with the acid itself. Saying no effect, because water gets added anyway, mixes up the burette with the flask.",
+      "audioFile": "public/audio/chem-y11-m2-v14/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So a titration counts the unknown's moles through a reaction with a known amount, and the mole ratio links the two. But some ions can be counted another way. Add silver nitrate to salty bore water, and the chloride ions come out as a white solid, which you can filter, dry and weigh. How does precipitate mass reveal an ion concentration?",
+      "audioFile": "public/audio/chem-y11-m2-v14/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v14/key-notes.wav"
+    }
+  ]
+}

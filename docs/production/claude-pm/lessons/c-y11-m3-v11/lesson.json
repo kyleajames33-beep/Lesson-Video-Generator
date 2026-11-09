@@ -1,0 +1,205 @@
+{
+  "id": "chem-y11-m3-v11",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "d40a687506e75766edcc190262d104cfefa89a733b1063f4f9d1775397453608",
+  "scenes": [
+    {
+      "id": "hook-wire-alone",
+      "title": "hook: the wire alone",
+      "voiceover": {
+        "text": "Here's the setup. Zinc in zinc sulfate, copper in copper sulfate, and a wire joining the two metals. Let's put a voltmeter in the wire, to measure the push on the electrons. It reads about zero. No current can keep flowing. Zinc still loses electrons readily, and copper ions still gain them readily. So why nothing?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "half-cells",
+      "title": "half-cells and electrodes",
+      "voiceover": {
+        "text": "First, some names. Each beaker is a half-cell, a metal standing in a solution of its own ions. The metal strip is the electrode, the solid that carries electrons in or out. Each half-cell runs one half-equation. Zinc loses electrons on the left, and copper ions gain them on the right."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flow-stops",
+      "title": "why the flow stops",
+      "voiceover": {
+        "text": "Imagine a few electrons did leave the zinc through the wire. Each zinc atom that loses electrons adds a positive zinc ion to the left beaker, so that solution becomes positively charged. On the right, copper ions are removed, leaving sulfate ions behind, so that solution becomes negatively charged. The positive side pulls electrons back, and the negative side pushes them away. Almost at once, the flow stops."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "salt-bridge",
+      "title": "the salt bridge",
+      "voiceover": {
+        "text": "The fix is a path for ions. A strip of filter paper, soaked in potassium nitrate solution, dips into both beakers. This is a salt bridge. Now the reading jumps to just over one volt. Negative nitrate ions move into the zinc beaker to balance the new zinc ions, and positive potassium ions move into the copper beaker to replace the copper ions. Both solutions stay neutral, so a current can keep flowing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-kno3",
+      "title": "why potassium nitrate",
+      "voiceover": {
+        "text": "Why potassium nitrate? Its ions carry charge, but they don't react with anything in either half-cell, and they don't form a precipitate with the metal ions. And notice what never crosses the bridge. Electrons. Electrons move only through the wire, and ions move only through the solutions and the bridge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-split",
+      "title": "why split the reaction?",
+      "voiceover": {
+        "text": "So why bother with two separate half-cells? If zinc touches copper ions directly, the electrons jump straight across at the surface, and the energy just warms the solution. Split the reaction in two, and the only way for electrons to get from zinc to copper ions is through the wire. Moving electrons in a wire are an electric current, and a current can do work, like lighting a small globe. A cell that makes electricity this way, from a redox reaction that happens by itself, is a galvanic cell."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "anode-cathode",
+      "title": "anode and cathode",
+      "voiceover": {
+        "text": "The two electrodes have names. Oxidation happens at the anode, here the zinc. Reduction happens at the cathode, here the copper. A handy pair is an ox, red cat. Anode, oxidation. Reduction, cathode. Electrons are pushed out of the zinc, so in a galvanic cell the anode is the negative terminal, and the cathode is positive. Electrons always flow through the wire from the anode to the cathode."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "running-cell",
+      "title": "what changes as it runs",
+      "voiceover": {
+        "text": "Run the cell through the globe for a long time, and you can see the half-equations at work. The zinc electrode slowly wears away, as zinc atoms become ions. The copper electrode gains a fresh coating of copper, and the blue colour fades, as copper ions are used up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction-magnesium",
+      "title": "prediction: swap in magnesium (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Swap the zinc half-cell for a magnesium half-cell. Will the voltage go up, or down?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "practical-compare",
+      "title": "comparing half-cells: the practical",
+      "voiceover": {
+        "text": "Up. Here's how you can investigate it. Keep the copper half-cell, and pair it with magnesium, zinc and iron half-cells in turn. Use the same solution concentration and temperature, sand each electrode clean, and use a fresh salt bridge each time. With copper on the positive terminal, a class might read about one point eight volts for magnesium, one point oh five for zinc, and zero point six five for iron."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "readings-meaning",
+      "title": "what the readings mean",
+      "voiceover": {
+        "text": "The bigger the voltage, the bigger the difference between how readily the two metals lose electrons. In every pair, copper was the positive terminal, so copper ions were reduced, and the other metal was oxidised. Rank the metals by voltage, and you get magnesium, zinc, iron, then copper, the same order as the activity series."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "relative-only",
+      "title": "only differences can be measured",
+      "voiceover": {
+        "text": "But notice what you actually measured. A voltmeter needs two connections, so it can only compare two half-cells. You can never measure one half-cell on its own. So chemists choose one half-cell as a reference, and call it zero. It's like measuring heights from sea level. Sea level isn't the bottom of anything, it's just an agreed zero. With copper as our zero, iron sits at minus zero point six five, zinc at minus one point oh five, and magnesium at minus one point eight."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "safety",
+      "title": "safety",
+      "voiceover": {
+        "text": "If you do this practical, wear safety glasses. Copper sulfate is harmful if swallowed, and it harms waterways, so collect every solution for disposal as your teacher directs, not down the sink. Wash your hands when you finish."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A galvanic cell has a magnesium electrode in magnesium nitrate solution, and a copper electrode in copper nitrate solution, joined by a wire and a potassium nitrate salt bridge. Identify the anode, give the direction of electron flow, and state which way the nitrate ions move. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Magnesium is the anode. It loses electrons more readily, so it's oxidised there. Electrons flow through the wire, from magnesium to copper. Nitrate ions move through the salt bridge into the magnesium half-cell, to balance the new magnesium ions. Saying electrons flow through the salt bridge is the slip. Only ions move there."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student pairs three metals, P, Q and R, with a copper half-cell. Copper is the positive terminal each time. The readings are zero point four five volts for P, one point three volts for Q, and zero point nine volts for R. Rank the metals by how readily they lose electrons, and explain why the student can't report the potential of P's half-cell on its own. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Q, then R, then P. Every metal was oxidised against copper, and a bigger voltage means a bigger difference from copper, so Q loses electrons most readily. A voltmeter only measures the difference between two half-cells, so P's value only means something against a reference. Ranking P first, because its reading is smallest, gets the order backwards."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusion-handoff",
+      "title": "conclusion and handoff",
+      "voiceover": {
+        "text": "So a galvanic cell needs two half-cells to force electrons through a wire, and a salt bridge to keep both solutions neutral. And half-cells can only be compared with each other. Chemists did that carefully, against one standard reference, the hydrogen half-cell, under standard conditions, and their results are on your data sheet. How do standard reduction potentials predict a redox reaction?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 60 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

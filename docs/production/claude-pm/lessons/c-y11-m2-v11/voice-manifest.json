@@ -1,0 +1,81 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v11.md",
+  "sourceSha256": "f578814cf276ea58a4129a91362576b3ce62b5375db9aad9d39173c55b09c823",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "three-labels",
+      "text": "Here are the two labels from last time: saline at zero point nine percent sodium chloride, and a sodium chloride solution at zero point one five four moles per litre. Let's add a third, a sodium chloride solution at nine point zero grams per litre. Three different numbers, in three different units. Which solution is the most concentrated?",
+      "audioFile": "public/audio/chem-y11-m2-v11/three-labels.wav"
+    },
+    {
+      "id": "same-solution",
+      "text": "They're all the same solution. Each unit answers a different question. Moles per litre counts particles, and that's what chemists need for reactions. Grams per litre tells you how much solid to weigh out, and percentages are handy on labels. And for tiny amounts, like pollutants in water, we use milligrams per litre, or parts per million. So the skill is converting between them, and every conversion has a reason.",
+      "audioFile": "public/audio/chem-y11-m2-v11/same-solution.wav"
+    },
+    {
+      "id": "grams-to-moles",
+      "text": "Start with mass concentration, the grams of solute in each litre of solution. A litre of our saline holds nine point zero grams of sodium chloride. How many moles is that? Nine point zero over fifty-eight point four four is zero point one five four moles. And because that's in one litre, the concentration is zero point one five four moles per litre. So to go from grams per litre to moles per litre, divide by the molar mass. To go back, multiply. The units check it: grams per litre, divided by grams per mole, leaves moles per litre.",
+      "audioFile": "public/audio/chem-y11-m2-v11/grams-to-moles.wav"
+    },
+    {
+      "id": "percent-wv",
+      "text": "Percent weight per volume means grams of solute in every hundred millilitres of solution. So zero point nine percent means zero point nine grams in each hundred millilitres. A litre holds ten lots of a hundred millilitres, so that's nine point zero grams per litre. To turn this percent into grams per litre, multiply by ten. But check the label's basis. Percent by mass, or percent by volume, are different measures, and you can't swap them for this one.",
+      "audioFile": "public/audio/chem-y11-m2-v11/percent-wv.wav"
+    },
+    {
+      "id": "mg-ppm",
+      "text": "For tiny amounts, grams per litre gets awkward, so we use milligrams. A thousand milligrams make a gram, so divide by a thousand to get grams per litre. Parts per million means one gram of solute in every million grams of solution. A litre of dilute solution in water has a mass of about a thousand grams, which is a million milligrams. So one part per million is about one milligram per litre. That shortcut only works because the solution is dilute and mostly water, with a density of about one gram per millilitre.",
+      "audioFile": "public/audio/chem-y11-m2-v11/mg-ppm.wav"
+    },
+    {
+      "id": "ladder-nitrate",
+      "text": "Put them together as a ladder. Percent, times ten, is grams per litre. Grams per litre, times a thousand, is milligrams per litre, about parts per million. And grams per litre, divided by molar mass, is moles per litre. Try nitrate in drinking water. The Australian guideline value is fifty milligrams per litre. That's zero point zero five zero zero grams per litre. Nitrate's molar mass is sixty-two point zero one, so that's eight point zero six times ten to the minus four moles per litre.",
+      "audioFile": "public/audio/chem-y11-m2-v11/ladder-nitrate.wav"
+    },
+    {
+      "id": "evaporation",
+      "text": "How do you measure a concentration? For a dissolved solid like salt, one way is to evaporate. Pipette twenty-five point zero millilitres of the solution into a weighed evaporating basin, heat it gently until only dry salt is left, and weigh it again. Say the salt has a mass of zero point two two five grams. That's zero point two two five over zero point zero two five zero litres, nine point zero zero grams per litre. Divide by ten for percent, zero point nine zero zero, and divide by the molar mass for zero point one five four moles per litre. This assumes salt is the only solute, and that none spits out while heating.",
+      "audioFile": "public/audio/chem-y11-m2-v11/evaporation.wav"
+    },
+    {
+      "id": "other-direction",
+      "text": "Conversions run both ways. A glucose solution is zero point two five zero moles per litre. Times glucose's molar mass, one hundred and eighty point one six, that's forty-five point zero grams per litre, and dividing by ten gives four point five zero percent. To be sure you multiplied rather than divided, ask which number should be bigger. A mole of glucose is about a hundred and eighty grams, so the grams per litre number must be much bigger than the moles per litre number.",
+      "audioFile": "public/audio/chem-y11-m2-v11/other-direction.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A bottle of antiseptic is labelled three point zero percent weight per volume hydrogen peroxide. Calculate its concentration in grams per litre, and in moles per litre. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Three point zero percent weight per volume is three point zero grams per hundred millilitres, so thirty grams per litre. Hydrogen peroxide's molar mass is thirty-four point zero two, and thirty over thirty-four point zero two is zero point eight eight moles per litre. Skipping the times ten gives zero point zero eight eight, ten times too small.",
+      "audioFile": "public/audio/chem-y11-m2-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A tap water sample contains copper ions at three point two milligrams per litre. The Australian health guideline for copper is two milligrams per litre. Express the copper concentration in parts per million and in moles per litre, and state whether the water meets the guideline. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "In dilute water, three point two milligrams per litre is about three point two parts per million. As grams per litre, that's zero point zero zero three two. Divided by sixty-three point five five, it's five point zero times ten to the minus five moles per litre. That's above two milligrams per litre, so it fails the guideline. Forgetting to change milligrams to grams gives an answer a thousand times too big.",
+      "audioFile": "public/audio/chem-y11-m2-v11/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So every volume-based unit is an amount or a mass over a stated volume, and a molar mass, a ten or a thousand converts between them. Now we can describe any solution. But to use a solution in a reaction, we need its concentration known accurately. Say we want two hundred and fifty point zero millilitres of sodium carbonate solution at exactly zero point one zero zero moles per litre. What would we weigh, and how do we reach exactly that volume? How do we prepare a standard solution accurately?",
+      "audioFile": "public/audio/chem-y11-m2-v11/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v11/key-notes.wav"
+    }
+  ]
+}

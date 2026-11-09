@@ -1,0 +1,17 @@
+# Maths i12 Revision 2: independent learning review
+
+Codex,9 November2026. Source SHA256 `8be91b8aa74e30f3c14bdf1e1ba0fcd1db52c8e372ac457835dd606deda2da76`. Full narration and visual proposal reviewed. Actual art,motion and voiced preview pending.
+
+Result:0 blockers,1 should fix,0 optional.
+
+The learner starts with i11's symmetric x³ question and i10's signed-versus-total distinction. Garden cut/fill makes cancellation useful before naming oddness; the algebra and half-turn independently explain it. The footbridge gives the same-sign paired-strip reason for even doubling. Splitting a mixed integrand tests classification of each term instead of the whole expression. Symmetric limits and signed-integral scope are explicitly retained. The path is an ideal cross-section per unit width,not a claim that moving real soil preserves bulk volume under compaction. Both everyday contexts have a mathematical purpose.
+
+The trapezoidal coefficients are earned by shared edges before the formula and five-values/four-strips example. Increasing n and the chord-over-curve zoom explain this example's overestimate. Concavity must hold throughout; the narration correctly refuses a direction from changing concavity alone. Tool results are checked by derivatives,with domains/modulus/+C restored for1/x,so the tool does not replace reasoning. The x³cosx example is beyond the integration rules but its product-rule derivative is in scope. No integration-by-parts procedure is taught. The removed Gaussian is only stale historical author data,not current learner teaching.
+
+Both original tasks retain every demand,10s plus pause,and no answer-bearing labels. A1 needs odd-part cancellation plus a surviving constant. A2's different brick arch provides all five0.5m readings and symmetry as givens;the table's h denotes height while rule h denotes spacing,so feedback must keep the explicit0.5m step label visible as specified. Feedback checks coefficients then doubles and crosses6.25,not the plausible but unrelated half-only answer. Mnemonics follow the causes and retain equal-width/symmetric-limit conditions.
+
+Should fix238-I12-NOTES-FIT,scene16: bullet4 is about1011px at40px default Inter Tight,already wider than960px before margins beside the right-half memory card. Reconcile the layout without shrinking required reading. This is a source-fit finding,not observed rendered clipping. Other note advances554-916px still need actual build fit checks. No source edits made.
+
+Nine visual-standard items are proposed: early painted garden/bridge; symmetry/mixed/ledger/numerical/tool stages; cut-fill and paired strips,live coefficients and n slider; labelled roles;52px working/44px givens; hand tags; g01 rows/green frames/red slips; framed two-line aid/five notes; zero net with soil still moving and coefficients emerging from edges. Actual profile alignment,plate clarity and motion require build playback.
+
+Anchor check: everyday landscaping cross-section and footbridge arch differ from timber-deck growth and pen optimisation. No science prerequisites,lift or repeated new anchor. i11's x³ final frame is retained before garden transition. i13's air-conditioner/power graph matches this final frame.6202characters/16scenes,cues quoted in order,no em dashes. Estimated554s,notes45s,unmeasured. Garden/bridge plates pending;native targets calculated,actual measurements pending,never warp. Air-conditioner plate is shared with i13. Speech,human listening and exact voiced learning review pending.

@@ -1,466 +1,729 @@
 {
-  "key": "math-a12-d08",
-  "characters": 5517,
-  "speechSeconds": 402.19999999999993,
-  "lessonSeconds": 488.3666666666667,
-  "costUsd": 0.09123149999999998,
-  "findings": [
+  "lesson": "math-a12-d08",
+  "sourceSha256": "a8960d2eb6a97cb5910f4bbd9851c3e6cb194016e6cd8397669087c7ec724ffa",
+  "measuredPath": "work\\brief235\\voice-results\\d08\\lesson.json",
+  "measuredSha256": "fbb7ca5db122cd479170922a3283a201dd22904074c69f0e492b33ce0013895b",
+  "changedTakes": 2,
+  "reusedTakes": 13,
+  "voicedCharacters": 1189,
+  "inputTokens": 287,
+  "outputTokens": 1932,
+  "costUsd": 0.0175315,
+  "totalSeconds": 515.2666666666667,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-01",
+    "seconds": 1.0250000000001336,
+    "after": "time.",
+    "before": "Now"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
     {
-      "id": "scene-01",
-      "seconds": 30.96,
-      "characters": 459,
-      "holdSeconds": 0,
-      "costUsd": 0.007026,
+      "scene": "scene-01",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
         {
           "word": "to",
-          "start": 2.493,
-          "end": 2.554,
-          "score": 0.233
-        },
-        {
-          "word": "a",
-          "start": 21.11299999999999,
-          "end": 21.13299999999999,
+          "start": 2.432,
+          "end": 2.472,
           "score": 0
         },
         {
-          "word": "at",
-          "start": 22.133999999999986,
-          "end": 22.17399999999999,
-          "score": 0
+          "word": "equals",
+          "start": 4.9639999999999915,
+          "end": 5.184999999999992,
+          "score": 0.406
         },
         {
-          "word": "a",
-          "start": 28.112000000000084,
-          "end": 28.132000000000083,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-02",
-      "seconds": 37.72,
-      "characters": 552,
-      "holdSeconds": 0,
-      "costUsd": 0.008556,
-      "lowScoreWords": [
+          "word": "you",
+          "start": 15.419999999999991,
+          "end": 15.47999999999999,
+          "score": 0.036
+        },
+        {
+          "word": "equals",
+          "start": 19.682000000000123,
+          "end": 19.904000000000124,
+          "score": 0.358
+        },
+        {
+          "word": "e",
+          "start": 24.74600000000008,
+          "end": 24.76600000000008,
+          "score": 0.001
+        },
         {
           "word": "to",
-          "start": 10.531999999999995,
-          "end": 10.591999999999995,
-          "score": 0.385
-        },
-        {
-          "word": "a",
-          "start": 11.915999999999995,
-          "end": 11.955999999999994,
-          "score": 0.455
-        },
-        {
-          "word": "rate",
-          "start": 12.015999999999995,
-          "end": 12.216999999999995,
-          "score": 0.366
-        },
-        {
-          "word": "rate",
-          "start": 15.024999999999995,
-          "end": 15.165999999999995,
-          "score": 0.32
-        },
-        {
-          "word": "a",
-          "start": 18.89899999999999,
-          "end": 18.93899999999999,
-          "score": 0.396
-        },
-        {
-          "word": "rate",
-          "start": 18.978999999999992,
-          "end": 19.13999999999999,
-          "score": 0.435
-        },
-        {
-          "word": "y",
-          "start": 20.62499999999999,
-          "end": 20.76599999999999,
-          "score": 0.312
-        },
-        {
-          "word": "at",
-          "start": 21.20699999999999,
-          "end": 21.24699999999999,
-          "score": 0
-        },
-        {
-          "word": "rate",
-          "start": 21.58899999999999,
-          "end": 21.76899999999999,
-          "score": 0.442
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-03",
-      "seconds": 43.96,
-      "characters": 646,
-      "holdSeconds": 0,
-      "costUsd": 0.009977,
-      "lowScoreWords": [
-        {
-          "word": "You",
-          "start": 0.202,
-          "end": 0.283,
-          "score": 0.199
-        },
-        {
-          "word": "it",
-          "start": 3.269999999999997,
-          "end": 3.3909999999999973,
+          "start": 24.927000000000078,
+          "end": 25.04700000000008,
           "score": 0.48
         },
         {
-          "word": "use",
-          "start": 8.798999999999989,
-          "end": 8.99999999999999,
-          "score": 0.324
-        },
-        {
-          "word": "g",
-          "start": 17.101999999999997,
-          "end": 17.121999999999996,
-          "score": 0
-        },
-        {
-          "word": "at",
-          "start": 37.36799999999989,
-          "end": 37.42799999999989,
-          "score": 0.417
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-04",
-      "seconds": 40.4,
-      "characters": 493,
-      "holdSeconds": 0,
-      "costUsd": 0.0091625,
-      "lowScoreWords": [
-        {
-          "word": "our",
-          "start": 0.952,
-          "end": 1.033,
-          "score": 0.349
-        },
-        {
-          "word": "e",
-          "start": 8.838999999999986,
-          "end": 8.858999999999986,
-          "score": 0
-        },
-        {
-          "word": "to",
-          "start": 20.84799999999999,
-          "end": 20.92799999999999,
-          "score": 0.326
-        },
-        {
-          "word": "one",
-          "start": 25.638000000000094,
-          "end": 25.778000000000095,
-          "score": 0.477
-        },
-        {
-          "word": "y",
-          "start": 29.28700000000008,
-          "end": 29.40700000000008,
-          "score": 0.489
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-05",
-      "seconds": 42.52,
-      "characters": 558,
-      "holdSeconds": 0,
-      "costUsd": 0.0096415,
-      "lowScoreWords": [
-        {
-          "word": "harder",
-          "start": 0.711,
-          "end": 0.955,
-          "score": 0.324
-        },
-        {
-          "word": "and",
-          "start": 5.229,
-          "end": 5.369,
-          "score": 0.454
-        },
-        {
-          "word": "log",
-          "start": 34.73400000000004,
-          "end": 34.85500000000004,
-          "score": 0.423
-        },
-        {
           "word": "a",
-          "start": 38.48600000000004,
-          "end": 38.52600000000004,
-          "score": 0.493
-        },
-        {
-          "word": "of",
-          "start": 39.78999999999992,
-          "end": 39.82999999999992,
-          "score": 0.392
+          "start": 28.37800000000008,
+          "end": 28.418000000000077,
+          "score": 0.496
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
-      "id": "scene-06",
-      "seconds": 37.8,
-      "characters": 546,
-      "holdSeconds": 0,
-      "costUsd": 0.008574,
+      "scene": "scene-01a",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
       "lowScoreWords": [
         {
           "word": "a",
-          "start": 31.308000000000114,
-          "end": 31.348000000000116,
-          "score": 0.178
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-07",
-      "seconds": 40.64,
-      "characters": 532,
-      "holdSeconds": 0,
-      "costUsd": 0.0092135,
-      "lowScoreWords": [
-        {
-          "word": "be",
-          "start": 7.847999999999995,
-          "end": 7.907999999999996,
-          "score": 0.324
-        },
-        {
-          "word": "can't",
-          "start": 9.031999999999996,
-          "end": 9.212999999999996,
-          "score": 0.427
-        },
-        {
-          "word": "x",
-          "start": 11.677999999999997,
-          "end": 11.697999999999997,
+          "start": 7.3189999999999875,
+          "end": 7.338999999999988,
           "score": 0
-        },
-        {
-          "word": "x",
-          "start": 25.739000000000054,
-          "end": 25.759000000000054,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
-    },
-    {
-      "id": "scene-08",
-      "seconds": 27.4,
-      "characters": 391,
-      "holdSeconds": 2,
-      "costUsd": 0.0062115,
-      "lowScoreWords": [
-        {
-          "word": "high",
-          "start": 4.031000000000001,
-          "end": 4.252000000000001,
-          "score": 0.432
         },
         {
           "word": "is",
-          "start": 7.205999999999986,
-          "end": 7.285999999999986,
-          "score": 0.221
+          "start": 9.368999999999987,
+          "end": 9.408999999999988,
+          "score": 0
         },
         {
-          "word": "dee",
-          "start": 10.077999999999992,
-          "end": 10.198999999999991,
-          "score": 0.367
+          "word": "a",
+          "start": 9.448999999999987,
+          "end": 9.488999999999987,
+          "score": 0.494
         },
         {
-          "word": "f",
-          "start": 14.607999999999992,
-          "end": 14.627999999999991,
+          "word": "a",
+          "start": 16.75899999999999,
+          "end": 16.79899999999999,
+          "score": 0.469
+        },
+        {
+          "word": "a",
+          "start": 27.799000000000103,
+          "end": 27.819000000000106,
+          "score": 0
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-d08/scene-01-bb181485ac71.wav",
+      "durationInFrames": 1136,
+      "worstWordGap": {
+        "seconds": 1.0250000000001336,
+        "after": "time.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "there",
+          "start": 9.419999999999991,
+          "end": 9.534999999999991
+        },
+        {
+          "text": "time",
+          "start": 14.637999999999991,
+          "end": 14.86279999999999
+        },
+        {
+          "text": "flat",
+          "start": 31.877000000000077,
+          "end": 32.135400000000075
+        },
+        {
+          "text": "defined",
+          "start": 36.93799999999987,
+          "end": 37.323874999999866
+        }
+      ],
+      "seconds": 37.84,
+      "peakFraction": 0.84637451171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 2.432,
+          "end": 2.472,
+          "score": 0
+        },
+        {
+          "word": "equals",
+          "start": 4.9639999999999915,
+          "end": 5.184999999999992,
+          "score": 0.406
+        },
+        {
+          "word": "you",
+          "start": 15.419999999999991,
+          "end": 15.47999999999999,
+          "score": 0.036
+        },
+        {
+          "word": "equals",
+          "start": 19.682000000000123,
+          "end": 19.904000000000124,
+          "score": 0.358
+        },
+        {
+          "word": "e",
+          "start": 24.74600000000008,
+          "end": 24.76600000000008,
+          "score": 0.001
+        },
+        {
+          "word": "to",
+          "start": 24.927000000000078,
+          "end": 25.04700000000008,
+          "score": 0.48
+        },
+        {
+          "word": "a",
+          "start": 28.37800000000008,
+          "end": 28.418000000000077,
+          "score": 0.496
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 143,
+      "outputTokens": 947,
+      "costUsd": 0.0085945,
+      "pronunciationText": "Last video ended on this curve: e to the x, over x plus one. At x equals minus one, the bottom is zero, and you can't divide by zero, so there's no curve there. A fraction like this works like average speed, distance over time, and you can't average over zero time. Now the slope at x equals zero. A quick guess: divide the derivatives. The top's derivative is e to the x, and the bottom's is one, so the guess gives a slope of one at x equals zero. But the tangent there is flat. So how do we really differentiate a quotient, and keep track of where it's defined?"
+    },
+    {
+      "id": "scene-01a",
+      "changed": true,
+      "audio": "public/audio/math-a12-d08/scene-01a.wav",
+      "durationInFrames": 1182,
+      "worstWordGap": {
+        "seconds": 0.7830000000000155,
+        "after": "falls.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "hour",
+          "start": 6.534999999999988,
+          "end": 6.755999999999988
+        },
+        {
+          "text": "rises",
+          "start": 21.06899999999999,
+          "end": 21.336499999999987
+        },
+        {
+          "text": "falls",
+          "start": 25.388000000000087,
+          "end": 25.639666666666756
+        },
+        {
+          "text": "flat",
+          "start": 31.174000000000106,
+          "end": 31.382800000000106
+        }
+      ],
+      "seconds": 39.4,
+      "peakFraction": 0.89031982421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.3189999999999875,
+          "end": 7.338999999999988,
+          "score": 0
+        },
+        {
+          "word": "is",
+          "start": 9.368999999999987,
+          "end": 9.408999999999988,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 9.448999999999987,
+          "end": 9.488999999999987,
+          "score": 0.494
+        },
+        {
+          "word": "a",
+          "start": 16.75899999999999,
+          "end": 16.79899999999999,
+          "score": 0.469
+        },
+        {
+          "word": "a",
+          "start": 27.799000000000103,
+          "end": 27.819000000000106,
           "score": 0
         }
       ],
-      "humanListening": "pending"
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 144,
+      "outputTokens": 985,
+      "costUsd": 0.008936999999999999,
+      "pronunciationText": "Let's take that road trip. Your average speed is the distance so far, over the time so far. After one hour you've gone a hundred kilometres, so your average is a hundred kilometres an hour. Keep driving, and more distance pushes the average up, but more time pulls it down. Drive at a hundred and twenty, faster than your average, and the push wins: the average rises. Slow to sixty for roadworks, and the pull wins: it falls. Now hold exactly a hundred, your average, and the two cancel, so it stays flat. That's our flat tangent. Dividing the two rates only gives your speed right now, not how fast the average is changing."
+    },
+    {
+      "id": "scene-02",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-02.wav",
+      "durationInFrames": 1132,
+      "worstWordGap": {
+        "seconds": 0.7629999999999875,
+        "after": "zero.",
+        "before": "At"
+      },
+      "cues": [
+        {
+          "text": "down",
+          "start": 7.422000000000001,
+          "end": 7.646800000000001
+        },
+        {
+          "text": "one",
+          "start": 12.577999999999996,
+          "end": 12.682999999999995
+        },
+        {
+          "text": "zero",
+          "start": 25.20100000000008,
+          "end": 25.457800000000077
+        },
+        {
+          "text": "eight",
+          "start": 31.520000000000067,
+          "end": 31.670000000000066
+        }
+      ]
+    },
+    {
+      "id": "scene-03",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-03.wav",
+      "durationInFrames": 1319,
+      "worstWordGap": {
+        "seconds": 0.8030000000000221,
+        "after": "squared.",
+        "before": "Put"
+      },
+      "cues": [
+        {
+          "text": "g",
+          "start": 5.11974999999999,
+          "end": 5.16499999999999
+        },
+        {
+          "text": "squared",
+          "start": 19.867999999999995,
+          "end": 20.165499999999994
+        },
+        {
+          "text": "squared",
+          "start": 23.338000000000065,
+          "end": 23.618875000000063
+        },
+        {
+          "text": "zero",
+          "start": 37.44799999999989,
+          "end": 37.68799999999989
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-04.wav",
+      "durationInFrames": 1212,
+      "worstWordGap": {
+        "seconds": 0.8499999999999943,
+        "after": "parts.",
+        "before": "f"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 6.172000000000001,
+          "end": 6.232000000000001
+        },
+        {
+          "text": "one",
+          "start": 13.043999999999997,
+          "end": 13.149749999999997
+        },
+        {
+          "text": "x",
+          "start": 17.98199999999999,
+          "end": 18.12199999999999
+        },
+        {
+          "text": "one",
+          "start": 19.524999999999988,
+          "end": 19.62999999999999
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-05.wav",
+      "durationInFrames": 1276,
+      "worstWordGap": {
+        "seconds": 0.9439999999999982,
+        "after": "one.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 1.037,
+          "end": 1.11275
+        },
+        {
+          "text": "zero",
+          "start": 16.523999999999994,
+          "end": 16.843999999999994
+        },
+        {
+          "text": "x",
+          "start": 17.966999999999995,
+          "end": 18.066999999999997
+        },
+        {
+          "text": "plus",
+          "start": 38.56600000000004,
+          "end": 38.77480000000004
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-06.wav",
+      "durationInFrames": 1134,
+      "worstWordGap": {
+        "seconds": 0.9020000000000223,
+        "after": "agrees.",
+        "before": "Get"
+      },
+      "cues": [
+        {
+          "text": "vanishes",
+          "start": 6.490999999999994,
+          "end": 6.901666666666661
+        },
+        {
+          "text": "one",
+          "start": 15.682999999999984,
+          "end": 15.803749999999985
+        },
+        {
+          "text": "five",
+          "start": 23.38600000000009,
+          "end": 23.690800000000092
+        },
+        {
+          "text": "agrees",
+          "start": 26.41200000000009,
+          "end": 26.755714285714376
+        },
+        {
+          "text": "rising",
+          "start": 33.255000000000116,
+          "end": 33.576000000000114
+        }
+      ]
+    },
+    {
+      "id": "scene-07",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-07.wav",
+      "durationInFrames": 1220,
+      "worstWordGap": {
+        "seconds": 0.9630000000000649,
+        "after": "four.",
+        "before": "Both"
+      },
+      "cues": [
+        {
+          "text": "squared",
+          "start": 6.100000000000001,
+          "end": 6.41675
+        },
+        {
+          "text": "four",
+          "start": 16.786999999999995,
+          "end": 16.978999999999996
+        },
+        {
+          "text": "bottom",
+          "start": 23.39000000000006,
+          "end": 23.579428571428632
+        },
+        {
+          "text": "zero",
+          "start": 26.461000000000055,
+          "end": 26.718600000000055
+        }
+      ]
+    },
+    {
+      "id": "scene-08",
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-08.wav",
+      "durationInFrames": 882,
+      "worstWordGap": {
+        "seconds": 0.8830000000000044,
+        "after": "bottom.",
+        "before": "Low"
+      },
+      "cues": [
+        {
+          "text": "squared",
+          "start": 5.799,
+          "end": 6.11575
+        },
+        {
+          "text": "derivative",
+          "start": 11.96199999999999,
+          "end": 12.483999999999991
+        }
+      ]
     },
     {
       "id": "scene-09",
-      "seconds": 11.12,
-      "characters": 132,
-      "holdSeconds": 10,
-      "costUsd": 0.002519,
-      "lowScoreWords": [
-        {
-          "word": "e",
-          "start": 3.107,
-          "end": 3.1270000000000002,
-          "score": 0
-        }
-      ],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-09.wav",
+      "durationInFrames": 634,
+      "worstWordGap": {
+        "seconds": 0.7680000000000003,
+        "after": "turn.",
+        "before": "Differentiate"
+      },
+      "cues": []
     },
     {
       "id": "scene-10",
-      "seconds": 26.24,
-      "characters": 351,
-      "holdSeconds": 1,
-      "costUsd": 0.005954500000000001,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-10.wav",
+      "durationInFrames": 818,
+      "worstWordGap": {
+        "seconds": 0.8410000000001077,
+        "after": "two.",
+        "before": "Start"
+      },
+      "cues": [
         {
-          "word": "e",
-          "start": 4.017999999999988,
-          "end": 4.037999999999989,
-          "score": 0.003
+          "text": "two",
+          "start": 2.449,
+          "end": 2.59975
         },
         {
-          "word": "to",
-          "start": 4.178999999999989,
-          "end": 4.299999999999988,
-          "score": 0.482
+          "text": "one",
+          "start": 5.992999999999989,
+          "end": 6.068749999999989
         },
         {
-          "word": "e",
-          "start": 7.335999999999997,
-          "end": 7.355999999999996,
-          "score": 0
-        },
-        {
-          "word": "to",
-          "start": 10.397999999999996,
-          "end": 10.437999999999997,
-          "score": 0
-        },
-        {
-          "word": "e",
-          "start": 12.298999999999996,
-          "end": 12.398999999999997,
-          "score": 0.363
-        },
-        {
-          "word": "to",
-          "start": 12.418999999999997,
-          "end": 12.458999999999996,
-          "score": 0.003
-        },
-        {
-          "word": "to",
-          "start": 16.78299999999999,
-          "end": 16.88299999999999,
-          "score": 0.465
-        },
-        {
-          "word": "dee",
-          "start": 23.4700000000001,
-          "end": 23.590000000000096,
-          "score": 0.456
+          "text": "derivative",
+          "start": 25.477000000000096,
+          "end": 25.86063636363646
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-11",
-      "seconds": 10.24,
-      "characters": 116,
-      "holdSeconds": 10,
-      "costUsd": 0.0023195,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-11.wav",
+      "durationInFrames": 608,
+      "worstWordGap": {
+        "seconds": 0.8699999999999974,
+        "after": "e.",
+        "before": "Pause"
+      },
+      "cues": []
     },
     {
       "id": "scene-12",
-      "seconds": 27.96,
-      "characters": 369,
-      "holdSeconds": 1,
-      "costUsd": 0.0063415,
-      "lowScoreWords": [
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-12.wav",
+      "durationInFrames": 869,
+      "worstWordGap": {
+        "seconds": 0.8430000000001208,
+        "after": "squared.",
+        "before": "At"
+      },
+      "cues": [
         {
-          "word": "g",
-          "start": 3.797,
-          "end": 3.817,
-          "score": 0
+          "text": "one",
+          "start": 2.431,
+          "end": 2.551
         },
         {
-          "word": "of",
-          "start": 11.867999999999995,
-          "end": 11.987999999999994,
-          "score": 0.464
+          "text": "x",
+          "start": 2.993,
+          "end": 3.0534999999999997
         },
         {
-          "word": "of",
-          "start": 16.19699999999999,
-          "end": 16.277999999999988,
-          "score": 0.468
+          "text": "zero",
+          "start": 22.68300000000011,
+          "end": 22.956600000000112
         },
         {
-          "word": "e",
-          "start": 20.57400000000011,
-          "end": 20.59400000000011,
-          "score": 0
-        },
-        {
-          "word": "one,",
-          "start": 21.33700000000011,
-          "end": 21.51800000000011,
-          "score": 0.475
+          "text": "flat",
+          "start": 27.238000000000035,
+          "end": 27.430800000000033
         }
-      ],
-      "humanListening": "pending"
+      ]
     },
     {
       "id": "scene-13",
-      "seconds": 20.84,
-      "characters": 297,
-      "holdSeconds": 2,
-      "costUsd": 0.0047265,
-      "lowScoreWords": [],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-13.wav",
+      "durationInFrames": 686,
+      "worstWordGap": {
+        "seconds": 0.9859999999999971,
+        "after": "domain.",
+        "before": "Next,"
+      },
+      "cues": [
+        {
+          "text": "Next",
+          "start": 6.7319999999999975,
+          "end": 6.973599999999998
+        }
+      ]
     },
     {
       "id": "scene-14",
-      "seconds": 4.4,
-      "characters": 75,
-      "holdSeconds": 60,
-      "costUsd": 0.0010085,
-      "lowScoreWords": [
-        {
-          "word": "are",
-          "start": 0.422,
-          "end": 0.502,
-          "score": 0.267
-        },
-        {
-          "word": "key",
-          "start": 0.642,
-          "end": 0.823,
-          "score": 0.479
-        }
-      ],
-      "humanListening": "pending"
+      "changed": false,
+      "audio": "public/audio/math-a12-d08/scene-14.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.6430000000000002,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": []
     }
   ],
-  "scope": "Alignment structure and timing bounds pass. Human accuracy, pronunciation and scene-join consistency require listening. No rendered cue approval."
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-d08/measured/lesson.json",
+  "canonicalMeasuredSha256": "592c784a54a99351f746505f4a59e50c26c4cfafbbb4cc62a73fd4e1b8296282",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-d08/measured/lesson.json",
+    "lessonSha256": "592c784a54a99351f746505f4a59e50c26c4cfafbbb4cc62a73fd4e1b8296282",
+    "srtSha256": "f147a5bacbc938b042ec7b5efce4472c41aa7276cd9c65de76dd7b6df7b9e5c6",
+    "vttSha256": "5e19a36476007673915c05002346c2d8951a90dbd731a5b79de46fdad390c6f6",
+    "cueCount": 213,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 15458,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 1136
+        },
+        {
+          "id": "scene-01a",
+          "startFrame": 1136,
+          "endFrame": 2318
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 2318,
+          "endFrame": 3450
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 3450,
+          "endFrame": 4769
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 4769,
+          "endFrame": 5981
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 5981,
+          "endFrame": 7257
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 7257,
+          "endFrame": 8391
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 8391,
+          "endFrame": 9611
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 9611,
+          "endFrame": 10493
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 10493,
+          "endFrame": 11127
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 11127,
+          "endFrame": 11945
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 11945,
+          "endFrame": 12553
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 12553,
+          "endFrame": 13422
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 13422,
+          "endFrame": 14108
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 14108,
+          "endFrame": 15458
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/maths/ma12-country-road-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/ma12-d08-provenance.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d08-redesign-learning-review.md",
+      "result": "0 blockers, 1 shared should fix, 0 optional. **235-D08-1** is the final chip's unit bridge, detailed in the maths report; count it once."
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d08-redesign-maths-check.md",
+      "result": "0 blockers, 1 should fix, 0 optional."
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
 }
