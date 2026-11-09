@@ -186,3 +186,10 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - s12 sits just inside the 5,500 floor.
 53. **Colour roles (s01 to s12):** density teal; the CDF, μ and σ marks violet; probability areas amber; data blue; answer green; mistake red.
 54. **Kit additions (next kit pass):** `ArrivalDots` wait mode, `BagFill`, `BandSlider`, `ZSlider`, `FillDial`, `ToolPanel` inside the calculator plate, `PegBoard`, `NormalCurve` (sliders, morph, tail target), `TailLadder`, `SigmaRuler`, `ZTable` with a reverse scan, `ScoreCompare`, `FormulaCrosswalk`, and `RiemannStrips` turning into bars.
+
+## Before the d02 to d14 builds (10 November 2026)
+
+55. **235-J05 (d05 to d06 colours).** d05's final frame wins: sin x is ink and sin 2x is navy. d06's first beat shows that exact frame, and sin 2x moves to d06's own role colour on d06's first cue. No speech change.
+56. **235-D06-1 (d06 plates).** Use the reused `chemistry/y11c-bike-frame-v1` and `y11c-bike-wheel-v1` with the new `ma12-bike-crankset-v1` and `ma12-bike-pedal-v1`. The stale ma12-bicycle names are ignored.
+57. **235-D08-1 (d08 scene 1a chip).** Use the unit-bridged wording that the brief 235 maths check recommends, so that the chip and the dashboard agree in km/h. This is screen only, with no speech change.
+58. **Notes fit** (238-*-NOTES-FIT, which applies to every Maths build). Key notes take the left 58 to 60% at 36 to 40 px, each one line or two short lines. The framed memory card goes on the right. Nothing passes the card edge, and no bullet drops below 34 px.
