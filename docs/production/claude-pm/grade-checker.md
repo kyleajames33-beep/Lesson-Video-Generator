@@ -58,9 +58,11 @@ All thresholds live in one place: `RULES` in `scripts/lib/explainer-grade-rules.
 | `Explainer-bio-m8-b09` | root-graded A | pass, 7 warnings | warns on grey definition text in six frames (25 to 40% faint) |
 | `Explainer-chem-m8-c03b` | built before the A gate | fail, 25 findings | tiny washed-out flowchart text, near-empty frames, paragraph notes, 25 s notes hold. Root agrees with every frame it flagged |
 | `Explainer-chem-m5-g01` | the October reference sheet | fail | the sheet matches the stored reference frame for frame; the lesson predates the A rules (several half-empty frames, 25 s notes hold) |
-| `SimGallery` | new | fail: the 12 s demo notes scene and one sparse worked-example frame | expected for a catalogue of 12 s demos; every simulation frame passed |
+| `SimGallery` | new | pass, 2 warnings (at `--frames 32`) | after the worked-example layout pass and with a 40 s notes scene; two sparse frames warn |
 
 What calibration changed: the empty-frame limits were raised from 50/40% to 60/50%, question scenes only warn when sparse, the faint-text failure moved to "more than half", and text of 24 to 26 px warns instead of failing.
+
+Later the same day: a scene with no captions (an unvoiced build or a silent demo) is treated as quiet throughout, so its key-notes hold is not reported as an unchanged set-up. The long measurement lines the renderer echoes are now kept out of the terminal.
 
 Known limits:
 - The warnings on the approved builds are real but minor. Treat a warning as "look at this frame", not as a defect.

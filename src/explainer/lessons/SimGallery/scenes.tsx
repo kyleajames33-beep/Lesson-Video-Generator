@@ -4,11 +4,15 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_HAND, HandText} from '../../kit';
-import {FRAME, INK_SOFT, TONES, TYPE} from '../../shared/tokens';
+import {FRAME, INK, INK_SOFT, TONES, TYPE} from '../../shared/tokens';
 import {BoxConfig, BoxRun, collisionRateAt, rateAt, runBox} from '../../sims/particle-box';
 import {MotionPath, runMotion, stateAt} from '../../sims/field-motion';
 import {Accent, FeedbackScene, KeyNotesScene, MemoryCard, QuestionScene, WorkedExample} from '../../shared/scenes';
 import {BoxCountGraph, FieldMotionView, MotionStage, ParticleBoxView, SimReadout, useBoxFrame, useMotionTime} from '../../sims/views';
+import {TrialPace, eventOf, runTrials} from '../../sims/chance';
+import {ChanceHistogram, ChanceShareGraph, TrialView, useTrials} from '../../sims/chance-views';
+import {Source, Wave, displacement, dopplerFrequency, interferenceAt, standingMode, sumAt, waveSpeed} from '../../sims/waves';
+import {FrontStage, WaveStage, WaveStringView, WavefrontView, ringsFrom, useWaveTime} from '../../sims/waves-views';
 
 export const SCENE_LEN = 360;
 /** Compute a run the first time a scene needs it, not when the file is loaded. */
@@ -160,21 +164,165 @@ const MagneticCircle: React.FC = () => {
 };
 
 
-// 8 to 11. The shared scene parts (src/explainer/shared/scenes.tsx), with simulations as their pictures ----
+// 8. Chance: two dice ---------------------------------------------------------
+const DICE_PACE: TrialPace = {at: 20, slow: 5, every: 22, until: 330};
+const dice = lazy(() => runTrials({seed: 12, trials: 3000, experiment: {kind: 'dice'}}));
+const sevens = lazy(() => eventOf(dice(), v => v === 7));
+const DiceHistogram: React.FC = () => {
+	const run = dice(), seven = sevens(), shown = useTrials(run, DICE_PACE);
+	return (
+		<>
+			<Heading text="Roll two dice enough times and a pattern settles" />
+			<TrialView run={run} shown={shown} x={96} y={214} size={104} />
+			<ChanceHistogram run={run} shown={shown} x={96} y={350} w={1000} h={610} event={{inEvent: seven.inEvent, tone: 'amber'}} theory={{at: 150}} xLabel="total of the two dice" />
+			<SimReadout x={1170} y={214} w={660} title="Read from the rolls" rows={[
+				{label: 'rolls so far', value: shown, digits: 0},
+				{label: 'share that total 7', value: seven.share[shown], digits: 3, tone: 'amber'},
+				{label: 'exact chance, 6 in 36', value: seven.probability, digits: 3},
+			]} />
+			<ChanceShareGraph run={run} shown={shown} x={1150} y={520} w={690} h={440} share={seven.share} probability={seven.probability} label="share that total 7" xLabel="number of rolls" />
+		</>
+	);
+};
+
+// 9. One wave, two kinds of particle motion -------------------------------------
+const WAVE: Wave = {amplitude: 0.25, wavelength: 2, period: 2};
+const waveFn = (x: number, t: number) => displacement(WAVE, x, t);
+const TOP_STAGE: WaveStage = {x: 96, y: 236, w: 1140, h: 250, x0: 0, x1: 7, yMax: 0.42};
+const LOW_STAGE: WaveStage = {x: 96, y: 650, w: 1140, h: 250, x0: 0, x1: 7, yMax: 0.42};
+const WaveParticlesDemo: React.FC = () => {
+	const t = useWaveTime({at: 10});
+	return (
+		<>
+			<Heading text="The wave travels along. The particles stay put." />
+			<WaveStringView stage={TOP_STAGE} t={t} curves={[{fn: waveFn, tone: 'grey', width: 4, opacity: 0.7}]} particles={{fn: waveFn, count: 30, mode: 'transverse', tone: 'blue', follow: 10}} span={{from: 2.5, to: 4.5, label: 'one wavelength', at: 60}} />
+			<WaveStringView stage={LOW_STAGE} t={t} axis={false} particles={{fn: waveFn, count: 42, mode: 'longitudinal', tone: 'teal', follow: 15}} />
+			<Note x={1290} y={236} text="Transverse: each particle moves up and down, across the direction the wave travels." color={TONES.blue.ink} />
+			<Note x={1290} y={700} text="Longitudinal: each particle moves back and forth, along the direction the wave travels." color={TONES.teal.ink} at={60} />
+			<SimReadout x={1290} y={410} w={540} rows={[
+				{label: 'wavelength', value: WAVE.wavelength, digits: 1, unit: 'm'},
+				{label: 'period', value: WAVE.period, digits: 1, unit: 's'},
+				{label: 'wave speed', value: waveSpeed(WAVE), digits: 1, unit: 'm/s'},
+			]} />
+		</>
+	);
+};
+
+// 10. Standing wave -------------------------------------------------------------
+const MODE = standingMode(6, 3);
+const GOING_RIGHT: Wave = {amplitude: 0.2, wavelength: MODE.wavelength, period: 2};
+const GOING_LEFT: Wave = {...GOING_RIGHT, direction: -1, phase: Math.PI};
+const STAND_STAGE: WaveStage = {x: 120, y: 290, w: 1090, h: 540, x0: 0, x1: 6, yMax: 0.5};
+const StandingWaveDemo: React.FC = () => {
+	const t = useWaveTime({at: 10});
+	return (
+		<>
+			<Heading text="Two opposite waves add up to a standing wave" />
+			<WaveStringView stage={STAND_STAGE} t={t} ends={{left: 'fixed', right: 'fixed'}} nodes={MODE.nodes} antinodes={MODE.antinodes} marksAt={170}
+				curves={[
+					{fn: (x, time) => displacement(GOING_RIGHT, x, time), tone: 'blue', width: 4, dashed: true},
+					{fn: (x, time) => displacement(GOING_LEFT, x, time), tone: 'violet', width: 4, dashed: true},
+					{fn: (x, time) => sumAt([GOING_RIGHT, GOING_LEFT], x, time), tone: 'ink', width: 8, at: 60},
+				]} />
+			<Note x={1290} y={250} text="Blue dashes: a wave going right." color={TONES.blue.ink} />
+			<Note x={1290} y={320} text="Violet dashes: its reflection going left." color={TONES.violet.ink} />
+			<Note x={1290} y={390} text="Dark line: the two added together at every point." at={60} color={INK} />
+			<SimReadout x={1290} y={590} w={540} at={170} rows={[
+				{label: 'string length', value: MODE.length, digits: 1, unit: 'm'},
+				{label: 'wavelength', value: MODE.wavelength, digits: 1, unit: 'm'},
+				{label: 'half-wavelengths that fit', value: MODE.harmonic, digits: 0},
+			]} />
+		</>
+	);
+};
+
+// 11. Two sources ---------------------------------------------------------------
+const S1: Source = {x: 0.6, y: 1}, S2: Source = {x: 0.6, y: -1};
+const RIPPLE = {wavelength: 1, period: 1.5};
+const POND: FrontStage = {x: 96, y: 200, w: 1140, h: 770, world: {x0: 0, x1: 10, y0: -3.4, y1: 3.4}};
+const TwoSources: React.FC = () => {
+	const f = useCurrentFrame(), t = useWaveTime({at: 0});
+	const py = 2.9 * Math.sin((Math.max(0, f - 70) / 290) * Math.PI * 2), px = 9;
+	const speed = RIPPLE.wavelength / RIPPLE.period;
+	const rings = [
+		...ringsFrom({source: () => [S1.x, S1.y], speed, period: RIPPLE.period, t: t + 30, maxRadius: 11, tone: 'blue', troughs: false}),
+		...ringsFrom({source: () => [S2.x, S2.y], speed, period: RIPPLE.period, t: t + 30, maxRadius: 11, tone: 'teal', troughs: false}),
+	];
+	const at = interferenceAt(S1, S2, px, py, RIPPLE.wavelength);
+	const d1 = Math.hypot(px - S1.x, py - S1.y) / RIPPLE.wavelength, d2 = Math.hypot(px - S2.x, py - S2.y) / RIPPLE.wavelength;
+	return (
+		<>
+			<Heading text="Two sources: in step at some points, out of step at others" />
+			<WavefrontView stage={POND} rings={rings} fadeRadius={14}
+				paths={[{from: [S1.x, S1.y], to: [px, py], tone: 'blue'}, {from: [S2.x, S2.y], to: [px, py], tone: 'teal'}]}
+				points={[{...S1, tone: 'blue', label: 'source 1', labelSide: 'above'}, {...S2, tone: 'teal', label: 'source 2', labelSide: 'below'}, {x: px, y: py, tone: 'amber', label: 'P', labelSide: 'right', r: 16}]} />
+			<SimReadout x={1290} y={214} w={540} title="Distances to P, in wavelengths" rows={[
+				{label: 'from source 1', value: d1, digits: 2, tone: 'blue'},
+				{label: 'from source 2', value: d2, digits: 2, tone: 'teal'},
+				{label: 'difference', value: Math.abs(at.wavelengths), digits: 2, tone: 'amber'},
+				{label: 'at P the waves', value: at.kind === 'reinforce' ? 'reinforce' : at.kind === 'cancel' ? 'cancel' : 'partly add', tone: at.kind === 'cancel' ? 'red' : at.kind === 'reinforce' ? 'green' : 'grey'},
+			]} />
+			<Note x={1290} y={660} text="A whole number of wavelengths: crest meets crest, so they reinforce." color={TONES.green.ink} />
+			<Note x={1290} y={830} text="A half number: crest meets trough, so they cancel." color={TONES.red.ink} at={120} />
+		</>
+	);
+};
+
+// 12. Doppler effect ------------------------------------------------------------
+const SOUND = {speed: 2, period: 0.5, sourceSpeed: 0.5};
+const ROAD: FrontStage = {x: 96, y: 200, w: 1140, h: 770, world: {x0: -6, x1: 6, y0: -4.05, y1: 4.05}};
+const sourceAt = (t: number): readonly [number, number] => [-3.4 + SOUND.sourceSpeed * t, 0];
+const Doppler: React.FC = () => {
+	const t = useWaveTime({at: 0}), [sx] = sourceAt(t);
+	const rings = ringsFrom({source: sourceAt, speed: SOUND.speed, period: SOUND.period, t, maxRadius: 10, tone: 'violet', troughs: false});
+	const f0 = 1 / SOUND.period;
+	return (
+		<>
+			<Heading text="A moving source squeezes the waves in front of it" />
+			<WavefrontView stage={ROAD} rings={rings} fadeRadius={9}
+				points={[{x: sx, y: 0, tone: 'violet', label: 'source', labelSide: 'above', r: 16}, {x: 5.4, y: 0, tone: 'warm', label: 'in front', labelSide: 'below'}, {x: -5.4, y: 0, tone: 'cool', label: 'behind', labelSide: 'below'}]} />
+			<SimReadout x={1290} y={214} w={540} title="Waves arriving each second" rows={[
+				{label: 'sent by the source', value: f0, digits: 2, tone: 'violet'},
+				{label: 'in front', value: dopplerFrequency({frequency: f0, waveSpeed: SOUND.speed, sourceSpeed: SOUND.sourceSpeed}), digits: 2, tone: 'warm'},
+				{label: 'behind', value: dopplerFrequency({frequency: f0, waveSpeed: SOUND.speed, sourceSpeed: -SOUND.sourceSpeed}), digits: 2, tone: 'cool'},
+			]} />
+			<Note x={1290} y={600} text="Each crest is a circle centred where the source was when it sent it." />
+			<Note x={1290} y={790} text="In front the circles crowd together, so more arrive each second." at={120} color={TONES.warm.ink} />
+		</>
+	);
+};
+
+// 13 to 16. The shared scene parts (src/explainer/shared/scenes.tsx), with simulations as their pictures ----
 const ACCENT = TONES.teal.ink;
-const WORK_STAGE: MotionStage = {x: 1180, y: 250, w: 650, h: 560, pad: 50};
+// The picture stops at the top of the flight, so its last readout is the answer being worked out.
+const rise = lazy(() => runMotion({field: {kind: 'uniform', ax: 0, ay: -G}, start: {x: 0, y: 0, vx: U * Math.cos(ANGLE), vy: U * Math.sin(ANGLE)}, duration: (U * Math.sin(ANGLE)) / G, steps: 300}));
+const WORK_STAGE: MotionStage = {x: 0, y: 0, w: 688, h: 440, pad: 60};
+const WORK_CLOCK = {at: 40, seconds: 6.5};
+const WorkedPicture: React.FC = () => {
+	const path = rise(), s = stateAt(path, useMotionTime(path, WORK_CLOCK));
+	return (
+		<>
+			<FieldMotionView path={path} stage={WORK_STAGE} clock={WORK_CLOCK} strobe={6} ground={0} body={{tone: 'blue', r: 14}} velocity={{tone: 'teal', scale: 6, components: true}} />
+			<SimReadout x={0} y={470} w={688} title="Read from the path" rows={[
+				{label: 'height', value: s.y, digits: 1, unit: 'm'},
+				{label: 'vertical speed', value: s.vy, digits: 1, unit: 'm/s', tone: 'teal'},
+			]} />
+		</>
+	);
+};
 const WorkedDemo: React.FC = () => (
 	<Accent color={ACCENT}>
 		<WorkedExample heading="Worked example: how high does it go?" task="A ball is kicked at 22 m/s, 52° above the ground. Find its greatest height."
 			givens={[{label: 'u', value: '22', unit: 'm/s', tone: 'teal'}, {label: 'θ', value: '52°', tone: 'amber'}, {label: 'g', value: '9.8', unit: 'm/s²', tone: 'red'}]}
+			equation={{content: 'v² = u² + 2as'}}
 			steps={[
-				{at: 40, content: 'vertical part: 22 × sin 52° = 17.3 m/s', note: 'only the vertical part lifts the ball'},
-				{at: 120, content: 'at the top: vertical speed = 0'},
-				{at: 190, content: '0 = 17.3² − 2 × 9.8 × h', note: 'v² = u² + 2as, going up against g'},
+				{at: 40, content: 'u (vertical) = 22 × sin 52° = 17.3 m/s', note: 'only the vertical part lifts the ball', uses: [0, 1]},
+				{at: 120, content: 'at the top: v (vertical) = 0', note: 'it stops rising for an instant'},
+				{at: 190, content: '0 = 17.3² − 2 × 9.8 × h', note: 'going up against g, so a = −9.8', uses: [2]},
 			]}
 			answer={{at: 260, content: 'h = 15.3 m'}}
-			slip={{at: 300, content: '22² ÷ (2 × 9.8) = 24.7 m', why: 'used the full speed, not its vertical part'}} />
-		<FieldMotionView path={shot()} stage={WORK_STAGE} clock={{at: 40, seconds: 7}} strobe={8} ground={0} body={{tone: 'blue', r: 14}} velocity={{tone: 'teal', scale: 6, components: true}} />
+			slip={{at: 300, content: '22² ÷ (2 × 9.8) = 24.7 m', why: 'used the full speed, not its vertical part'}}
+			picture={<WorkedPicture />} />
 	</Accent>
 );
 const QuestionDemo: React.FC = () => (
@@ -196,11 +344,11 @@ const NotesDemo: React.FC = () => (
 	<Accent color={ACCENT}>
 		<KeyNotesScene notes={[
 			{at: 10, content: 'Gas pressure comes from particles hitting the walls.'},
-			{at: 50, content: 'Smaller volume: more hits each second, higher pressure.'},
-			{at: 90, content: 'Higher temperature: faster particles, harder and more frequent hits.'},
-			{at: 130, content: 'At constant temperature, P × V stays the same.'},
-			{at: 170, content: 'Halve the volume and the pressure doubles.'},
-		]} aid={<MemoryCard at={200} main="Squeeze the space, crowd the walls." sub="Half the volume, double the pressure (same temperature)." />} />
+			{at: 26, content: 'Smaller volume: more hits each second, higher pressure.'},
+			{at: 42, content: 'Higher temperature: faster particles, harder and more frequent hits.'},
+			{at: 58, content: 'At constant temperature, P × V stays the same.'},
+			{at: 74, content: 'Halve the volume and the pressure doubles.'},
+		]} aid={<MemoryCard at={90} main="Squeeze the space, crowd the walls." sub="Half the volume, double the pressure (same temperature)." />} />
 	</Accent>
 );
 
@@ -212,6 +360,11 @@ export const GALLERY_SCENES: Record<string, React.FC> = {
 	'projectile': Projectile,
 	'orbit': Orbit,
 	'magnetic-circle': MagneticCircle,
+	'dice-histogram': DiceHistogram,
+	'wave-particles': WaveParticlesDemo,
+	'standing-wave': StandingWaveDemo,
+	'two-sources': TwoSources,
+	'doppler': Doppler,
 	'worked-example': WorkedDemo,
 	'question': QuestionDemo,
 	'feedback': FeedbackDemo,

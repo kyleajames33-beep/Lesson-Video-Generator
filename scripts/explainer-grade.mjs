@@ -22,6 +22,16 @@ import {bundle} from '@remotion/bundler';
 import {renderStill, selectComposition} from '@remotion/renderer';
 import {PNG} from 'pngjs';
 import {FFMPEG, ROOT, buildSlimPublic, loadConfig, totalFrames} from './lib/explainer-common.mjs';
+
+// The renderer echoes every browser console line. The probe's measurement lines are long
+// (one per frame), so keep them out of the terminal and out of any log file.
+for (const stream of [process.stdout, process.stderr]) {
+	const write = stream.write.bind(stream);
+	stream.write = (chunk, ...rest) => {
+		if (String(chunk).includes('EXPLAINER_AUDIT::')) { const done = rest.find(a => typeof a === 'function'); if (done) done(); return true; }
+		return write(chunk, ...rest);
+	};
+}
 import {RULES, analyseFrame, analyseLesson, inkStats, changedFraction} from './lib/explainer-grade-rules.mjs';
 
 const args = process.argv.slice(2);
@@ -66,7 +76,8 @@ for (const p of plan) {
 	p.local = local;
 	p.inHold = Boolean(s.responseHold && local >= s.responseHold.startFrame && local <= s.responseHold.endFrame);
 	const caps = s.captions ?? [];
-	p.afterSpeech = caps.length ? local > (caps[caps.length - 1].endMs / 1000) * 30 + 15 : false;
+	// A scene with no captions has no speech, so all of it counts as the quiet part.
+	p.afterSpeech = caps.length ? local > (caps[caps.length - 1].endMs / 1000) * 30 + 15 : true;
 	p.isNotes = /key-?notes/i.test(s.id);
 	p.isQuestion = Boolean(s.responseHold) || /attempt|question|your-?turn/i.test(s.id);
 }

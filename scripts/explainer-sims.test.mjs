@@ -161,3 +161,131 @@ test('every tone ink is readable on paper and on cards', () => {
 	for (const [name, c] of Object.entries(tokens.SUBJECT_ACCENT)) assert.ok(tokens.contrast(c, tokens.PAPER) >= 4.5, name);
 	assert.equal(tokens.readable(12), tokens.TYPE.min);
 });
+
+// ------------------------------------------------------------------- chance
+const chance = await load('src/explainer/sims/chance.ts');
+const waves = await load('src/explainer/sims/waves.ts');
+const near = (a, b, tol, msg) => assert.ok(Math.abs(a - b) <= tol, `${msg ?? 'value'}: ${a} is not within ${tol} of ${b}`);
+
+test('chance: exact probabilities are right and add to 1', () => {
+	const two = chance.exactDistribution({kind: 'dice'});
+	assert.deepEqual(two.values, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+	near(two.theory[5], 6 / 36, 1e-12, 'P(total 7)');
+	near(two.theory[0], 1 / 36, 1e-12, 'P(total 2)');
+	const coins = chance.exactDistribution({kind: 'coins', coins: 10, p: 0.3});
+	near(coins.theory.reduce((s, p) => s + p, 0), 1, 1e-12, 'binomial total');
+	near(coins.theory[3], 120 * 0.3 ** 3 * 0.7 ** 7, 1e-12, 'P(3 of 10)');
+	const cross = chance.exactDistribution({kind: 'weighted', outcomes: [{label: 'tall', weight: 3}, {label: 'short', weight: 1}]});
+	assert.deepEqual(cross.theory, [0.75, 0.25]);
+});
+
+test('chance: the same seed gives the same trials, and the tally closes in on the exact answer', () => {
+	const config = {seed: 21, trials: 20000, experiment: {kind: 'dice'}};
+	const a = chance.runTrials(config), b = chance.runTrials(config);
+	assert.deepEqual(Array.from(a.outcome.slice(0, 200)), Array.from(b.outcome.slice(0, 200)));
+	assert.equal(chance.tallyAfter(a, 20000).reduce((s, c) => s + c, 0), 20000);
+	for (let v = 0; v < a.values.length; v++) near(chance.shareAfter(a, v, 20000), a.theory[v], 0.012, `share of total ${a.values[v]}`);
+	near(chance.meanAfter(a, 20000), 7, 0.06, 'mean of two dice');
+	near(a.mean, 7, 1e-12, 'exact mean');
+	const seven = chance.eventOf(a, v => v === 7);
+	near(seven.probability, 1 / 6, 1e-12, 'event probability');
+	near(seven.share[20000], chance.shareAfter(a, 5, 20000), 1e-6, 'event share matches the tally');
+	const parts = chance.partsOf(a, 1);
+	assert.equal(parts.length, 2);
+	assert.equal(parts[0] + parts[1], a.values[a.outcome[0]]);
+});
+
+test('chance: binomial mean and spread, and a 3 to 1 cross', () => {
+	const run = chance.runTrials({seed: 5, trials: 8000, experiment: {kind: 'coins', coins: 12, p: 0.25}});
+	near(run.mean, 3, 1e-9, 'np');
+	near(run.sd, Math.sqrt(12 * 0.25 * 0.75), 1e-9, 'sqrt(npq)');
+	near(chance.meanAfter(run, 8000), 3, 0.06, 'sample mean');
+	const cross = chance.runTrials({seed: 9, trials: 4000, experiment: {kind: 'weighted', outcomes: [{label: 'tall', weight: 3}, {label: 'short', weight: 1}]}});
+	near(chance.shareAfter(cross, 0, 4000), 0.75, 0.02, 'share tall');
+});
+
+test('chance: the pace never goes backwards and shows every trial by the end', () => {
+	const run = chance.runTrials({seed: 1, trials: 3000, experiment: {kind: 'dice'}});
+	const pace = {at: 30, slow: 5, every: 20, until: 300};
+	assert.equal(chance.trialsShown(run, 29, pace), 0);
+	assert.equal(chance.trialsShown(run, 30, pace), 1);
+	assert.equal(chance.trialsShown(run, 30 + 4 * 20, pace), 5);
+	let last = 0;
+	for (let f = 0; f <= 320; f++) { const k = chance.trialsShown(run, f, pace); assert.ok(k >= last, `went backwards at frame ${f}`); last = k; }
+	assert.equal(chance.trialsShown(run, 300, pace), 3000);
+});
+
+// -------------------------------------------------------------------- waves
+test('waves: a travelling wave repeats every wavelength and every period, and moves at wavelength / period', () => {
+	const w = {amplitude: 0.2, wavelength: 1.5, period: 0.4};
+	near(waves.displacement(w, 0.37, 0.11), waves.displacement(w, 0.37 + 1.5, 0.11), 1e-12, 'one wavelength on');
+	near(waves.displacement(w, 0.37, 0.11), waves.displacement(w, 0.37, 0.11 + 0.4), 1e-12, 'one period on');
+	near(waves.waveSpeed(w), 3.75, 1e-12, 'speed');
+	near(waves.displacement(w, 0.37, 0.11), waves.displacement(w, 0.37 + 3.75 * 0.05, 0.16), 1e-12, 'shape carried along at the wave speed');
+	const back = {...w, direction: -1};
+	near(waves.displacement(back, 0.37, 0.11), waves.displacement(back, 0.37 - 3.75 * 0.05, 0.16), 1e-12, 'backward wave');
+	assert.equal(waves.displacement({...w, front: true}, 2, 0.1), 0);
+});
+
+test('waves: two equal opposite waves make a standing wave with still nodes', () => {
+	const L = 1.2, mode = waves.standingMode(L, 3);
+	near(mode.wavelength, 0.8, 1e-12, 'third harmonic wavelength');
+	assert.equal(mode.nodes.length, 4);
+	assert.equal(mode.antinodes.length, 3);
+	const right = {amplitude: 0.1, wavelength: mode.wavelength, period: 0.5}, left = {...right, direction: -1, phase: Math.PI};
+	for (const t of [0, 0.07, 0.19, 0.33]) {
+		for (const x of mode.nodes) near(waves.sumAt([right, left], x, t), 0, 1e-9, `node at ${x}`);
+		near(Math.abs(waves.sumAt([right, left], mode.antinodes[0], t)), Math.abs(waves.standingAt(mode, 0.2, 0.5, mode.antinodes[0], t)), 1e-9, 'antinode size');
+	}
+	const pipe = waves.standingMode(0.6, 3, 'closed-open');
+	near(pipe.wavelength, 0.8, 1e-12, 'closed pipe third harmonic');
+	near(pipe.antinodes[pipe.antinodes.length - 1], 0.6, 1e-9, 'antinode at the open end');
+	assert.equal(pipe.nodes[0], 0);
+	assert.throws(() => waves.standingMode(0.6, 2, 'closed-open'));
+	const open = waves.standingMode(0.6, 1, 'open-open');
+	assert.deepEqual(open.nodes.map(n => +n.toFixed(6)), [0.3]);
+});
+
+test('waves: two sources reinforce where the path difference is a whole number of wavelengths', () => {
+	const a = {x: 0, y: 0.1}, b = {x: 0, y: -0.1}, lambda = 0.05;
+	const mid = waves.interferenceAt(a, b, 1, 0, lambda);
+	near(mid.pathDifference, 0, 1e-12, 'centre line');
+	assert.equal(mid.kind, 'reinforce');
+	// find a point on the screen x = 1 where the path difference is half a wavelength
+	let lo = 0, hi = 0.3;
+	for (let i = 0; i < 60; i++) { const y = (lo + hi) / 2; if (waves.pathDifference(a, b, 1, y) < lambda / 2) lo = y; else hi = y; }
+	const dark = waves.interferenceAt(a, b, 1, lo, lambda);
+	near(dark.wavelengths, 0.5, 1e-6, 'half a wavelength');
+	assert.equal(dark.kind, 'cancel');
+	// the medium really is still there, and lively on the centre line
+	let still = 0, lively = 0;
+	for (let i = 0; i < 40; i++) { const t = i * 0.01; still = Math.max(still, Math.abs(waves.fieldAt([a, b], lambda, 0.4, 1, lo, t))); lively = Math.max(lively, Math.abs(waves.fieldAt([a, b], lambda, 0.4, 1, 0, t))); }
+	assert.ok(still < 0.01 && lively > 1.9, `still ${still}, lively ${lively}`);
+	const bright = waves.brightAngles(0.2, 0.05);
+	assert.equal(bright.length, 9);
+	near(Math.sin(bright[5].angle), 0.25, 1e-12, 'first bright line');
+	near(waves.doubleSlitBrightness(0.2, 0.05, bright[6].angle), 1, 1e-9, 'bright');
+	near(waves.doubleSlitBrightness(0.2, 0.05, waves.darkAngles(0.2, 0.05)[4].angle), 0, 1e-9, 'dark');
+});
+
+test('waves: crests crowd in front of a moving source, and the Doppler formula matches the spacing', () => {
+	const v = 340, vs = 85, T = 0.01;
+	const fronts = waves.wavefronts({source: t => [vs * t, 0], speed: v, period: T, t: 0.1});
+	assert.equal(fronts.length, 11);
+	const ahead = fronts.map(c => c.x + c.r), behind = fronts.map(c => c.x - c.r);
+	near(ahead[0] - ahead[1], (v - vs) * T, 1e-9, 'spacing in front');
+	near(behind[1] - behind[0], (v + vs) * T, 1e-9, 'spacing behind');
+	near(waves.dopplerFrequency({frequency: 100, waveSpeed: v, sourceSpeed: vs}), v / ((v - vs) * T), 1e-9, 'heard in front');
+	near(waves.dopplerFrequency({frequency: 100, waveSpeed: v, sourceSpeed: -vs}), 80, 1e-9, 'heard behind');
+});
+
+test('waves: refraction follows Snell and stops at the critical angle', () => {
+	const deg = Math.PI / 180;
+	near(waves.refractionAngle(1, 1.5, 30 * deg) / deg, 19.4712, 1e-3, 'air to glass');
+	near(waves.criticalAngle(1.5, 1) / deg, 41.8103, 1e-3, 'critical angle');
+	assert.equal(waves.refractionAngle(1.5, 1, 45 * deg), null);
+	assert.equal(waves.criticalAngle(1, 1.5), null);
+	const pulse = {amplitude: 1, width: 0.4, start: 0, speed: 2};
+	near(waves.pulseAt(pulse, 1, 0.5), 1, 1e-12, 'pulse centre moves at its speed');
+	assert.deepEqual(waves.particleAt(() => 0.1, 2, 0, 'longitudinal'), [2.1, 0]);
+});

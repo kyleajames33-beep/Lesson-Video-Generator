@@ -42,6 +42,38 @@ Things to know:
 
 One body under a force law, in SI units: `uniform` (projectiles, a charge between plates), `central` (orbits), `magnetic` (a charge circling in a field), or `custom`. `stateAt(path, t)` gives position, velocity, acceleration and speed. Tests check it against the textbook range and height formulas, circular and elliptical orbits (energy and angular momentum conserved), r = mv/qB, and the parabola between plates.
 
+### Chance (`chance.ts`, drawing in `chance-views.tsx`)
+
+The same random experiment repeated many times, stored once, with the exact probabilities worked out beside it.
+
+| Idea | How to set it up |
+| --- | --- |
+| Sample space and sums of dice | `{kind: 'dice', dice: 2}` |
+| Binomial distribution, expected value | `{kind: 'coins', coins: n, p}` (the outcome is the number of successes) |
+| Spinners, lollies in a bag, offspring ratios such as 3 : 1 | `{kind: 'weighted', outcomes: [{label, weight}]}` |
+| Relative frequency settling on the probability | `eventOf(run, value => ...)` gives the exact chance and the running share |
+
+- `trialsShown(run, frame, pace)` (or `useTrials`) shows a few trials slowly, then speeds up. Use one pace for every part.
+- `TrialView` draws the latest dice, coins or label. `ChanceHistogram` grows the tally, can colour an event and can mark the expected count on every bar. `ChanceShareGraph` draws the running share against the exact chance.
+- Choose a seed whose first few slow trials are not misleading (for example, not two 7s in a row).
+- For everyday Maths anchors, change the labels and the wording, not the engine.
+
+### Waves (`waves.ts`, drawing in `waves-views.tsx`)
+
+Every wave is a formula of place and time, so there is nothing to pre-compute.
+
+| Idea | What to use |
+| --- | --- |
+| Wavelength, period, speed; transverse and longitudinal motion | `displacement(wave, x, t)` with `WaveStringView` particles in either mode |
+| Superposition of waves or pulses | `sumAt`, `pulseAt`, several `curves` in one `WaveStringView` |
+| Standing waves on strings and in pipes | `standingMode(length, harmonic, ends)` for wavelength, nodes and antinodes |
+| Two-source interference, double slit | `interferenceAt`, `pathDifference`, `brightAngles`, `doubleSlitBrightness`, drawn with `WavefrontView` |
+| Doppler effect | `wavefronts` or `ringsFrom` with a moving source, `dopplerFrequency` |
+| Refraction, total internal reflection | `refractionAngle`, `criticalAngle` (numbers only; draw the rays in the lesson) |
+
+- `useWaveTime({at, rate})` is the one clock. Real sound and light are far too fast to watch: pick a slow model wave and say so, or use a tiny `rate`.
+- In longitudinal mode the particle shift is drawn to the same scale as position, so keep amplitude below about wavelength / 7 or neighbours overlap.
+
 ### Drawing (`views.tsx`)
 
 - `ParticleBoxView`, `BoxCountGraph`, `useBoxFrame(run, clock)`.
@@ -71,16 +103,17 @@ const Scene: React.FC = () => {
 - Choose the seed by looking: try three or four and keep the run that shows the idea most clearly at the cue. Then leave it.
 - A simulation is not a plate. Organisms, apparatus and real objects still get painted plates; the simulation shows the particles or the path.
 
-To see them all: `node scripts/explainer-stills.mjs SimGallery 180 540 900 1260 1620 1980 2340`, or grade the gallery with `npm run grade:explainer -- SimGallery`.
+To see them all, grade the gallery: `npm run grade:explainer -- SimGallery --frames 32`. The sheet lands in `out/explainer/SimGallery/grade/`. It should pass.
 
 ## Wanted next
 
 Listed by how many unbuilt designs could use them (Year 11 Chemistry, Year 12 Physics, Year 11 Physics):
 
-1. Waves: superposition, standing waves, two-source interference, Doppler.
-2. Titration and pH curve with a burette drip and a live curve.
-3. Circuits: charge flow with live current and voltage readouts.
-4. States of matter and heating curves (needs attraction between particles in the box).
-5. Momentum: two-body collisions on a track with before and after bars.
-6. Allele frequency drift and selection across generations.
-7. Probability: dice or spinner trials filling a histogram (Maths).
+1. Titration and pH curve with a burette drip and a live curve.
+2. Circuits: charge flow with live current and voltage readouts.
+3. States of matter and heating curves (needs attraction between particles in the box).
+4. Momentum: two-body collisions on a track with before and after bars.
+5. Allele frequency drift and selection across generations.
+6. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
+
+Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram).

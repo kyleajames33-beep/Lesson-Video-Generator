@@ -7,7 +7,7 @@
 import React, {createContext, useContext} from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
 import {DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, prog} from '../kit';
-import {ANSWER, CARD, CARD_BORDER, CARD_SHADOW, FRAME, INK, INK_SOFT, MISTAKE, RULE, TONES, TRACK, TYPE, Tone, ToneName, tone} from './tokens';
+import {ANSWER, CARD, CARD_BORDER, CARD_SHADOW, FRAME, INK, INK_SOFT, MISTAKE, PAPER, TONES, TRACK, TYPE, Tone, ToneName, tone} from './tokens';
 
 const AccentContext = createContext<string>(TONES.teal.ink);
 /** Set the subject accent for everything inside (bullets, question edge, headings that ask for it). */
@@ -127,68 +127,98 @@ export const FeedbackScene: React.FC<{
 
 // -------------------------------------------------------------- worked example
 export type Given = {label: React.ReactNode; value: React.ReactNode; unit?: React.ReactNode; tone?: ToneName | Tone; at?: number};
-export type WorkStep = {at: number; content: React.ReactNode; note?: string};
+/** `uses` lists the givens (by position, from 0) this stage reads; they light up while it is current. */
+export type WorkStep = {at: number; content: React.ReactNode; note?: string; uses?: readonly number[]};
+const LINE = 62; // height of the line a stage's text is centred on, whatever its size
 /**
- * Worked example in the Chemistry g01 layout: a short task strip, a card of givens (each
- * value with its unit, in its own tone), the working one stage at a time, a framed answer
- * and a crossed classic slip. The current step is shown at working size; earlier steps
- * shrink and soften so the eye stays on the stage being explained. `picture` fills the
+ * Worked example in the Chemistry g01 layout: a short task, a strip of givens (each value
+ * with its unit, in its own tone) with the rule beside them, the working one stage at a
+ * time, a framed answer and a crossed classic slip.
+ *
+ * The working is divided into equal rows, one per stage, so the page fills evenly down to
+ * the answer and nothing jumps when a stage is added. The current stage is large and dark
+ * with its hand note; earlier stages shrink and soften in place. A rail of dots marks
+ * progress, with a ring on the current stage, and the givens a stage reads light up.
+ *
+ * Keep each stage to one line (about 34 characters beside a picture). `picture` fills the
  * right of the frame (the apparatus, the graph or the simulation the numbers come from).
+ * Give one: without it the right of the frame is bare, and early frames are thin.
  */
 export const WorkedExample: React.FC<{
 	heading: string; task: React.ReactNode;
-	givens: readonly Given[]; givensTitle?: string;
+	givens: readonly Given[];
+	equation?: {content: React.ReactNode; title?: string; at?: number};
 	steps: readonly WorkStep[];
 	answer?: {at: number; content: React.ReactNode};
 	slip?: {at: number; content: React.ReactNode; why: string};
 	picture?: React.ReactNode;
-}> = ({heading, task, givens, givensTitle = 'Given', steps, answer, slip, picture}) => {
+}> = ({heading, task, givens, equation, steps, answer, slip, picture}) => {
 	const f = useCurrentFrame();
+	const accent = useAccent();
 	if (steps.length > 6) throw new Error('WorkedExample: more than six stages on one screen is too dense. Split the example into two scenes.');
+	if (!steps.length) throw new Error('WorkedExample: give at least one stage of working.');
+	const n = steps.length;
 	const current = steps.reduce((k, s, i) => (f >= s.at ? i : k), -1);
-	const done = answer && f >= answer.at;
-	const leftW = picture ? 1040 : 1728;
+	const done = Boolean(answer && f >= answer.at);
+	const leftW = picture ? 1000 : 1728;
+	const restSize = n <= 4 ? TYPE.body : TYPE.support + 4;
+	// When stage i stops being current: the next stage's cue, or the answer's.
+	const leaves = (i: number) => (i + 1 < n ? steps[i + 1].at : answer ? answer.at : Infinity);
+	const used = !done && current >= 0 ? steps[current].uses ?? [] : [];
+	const chip: React.CSSProperties = {...card, borderRadius: 16, padding: '8px 22px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: TYPE.current, lineHeight: 1.25, whiteSpace: 'pre'};
 	return (
 		<>
 			<Heading text={heading} />
-			<div style={{position: 'absolute', left: FRAME.margin, top: 190, width: leftW, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: TYPE.body, lineHeight: 1.25, color: INK}}>{task}</div>
-			<div style={{...card, position: 'absolute', left: FRAME.margin, top: 300, width: 400, padding: '16px 24px 12px'}}>
-				<div style={{fontFamily: FONT_DISPLAY, fontSize: TYPE.label, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: INK_SOFT, marginBottom: 4}}>{givensTitle}</div>
-				{givens.map((g, i) => {
-					const c = g.tone ? tone(g.tone).ink : INK;
-					return (
-						<div key={i} style={{opacity: g.at === undefined ? 1 : prog(f, g.at, 12), borderTop: i ? `2px solid ${RULE}` : undefined, padding: '8px 0 6px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: TYPE.current, color: c, whiteSpace: 'pre'}}>
-							{g.label} = {g.value}{g.unit ? <span style={{fontSize: TYPE.support, fontWeight: 700, color: INK_SOFT}}> {g.unit}</span> : null}
+			<div style={{position: 'absolute', left: FRAME.margin, top: 190, width: leftW, height: 690, display: 'flex', flexDirection: 'column'}}>
+				<div style={{flex: 'none', fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: TYPE.body, lineHeight: 1.25, color: INK}}>{task}</div>
+				<div style={{flex: 'none', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '14px 16px', marginTop: 22}}>
+					{givens.map((g, i) => {
+						const t = g.tone ? tone(g.tone) : TONES.ink;
+						const lit = used.includes(i) ? prog(f, steps[current].at, 10) : 0;
+						return (
+							<div key={i} style={{...chip, opacity: g.at === undefined ? 1 : prog(f, g.at, 12), color: t.ink, background: lit > 0.5 ? t.soft : CARD, border: `2.5px solid ${lit > 0.5 ? t.stroke : CARD_BORDER}`, transform: `scale(${1 + 0.05 * lit})`}}>
+								{g.label} = {g.value}{g.unit ? <span style={{fontSize: TYPE.support, fontWeight: 700, color: INK_SOFT}}> {g.unit}</span> : null}
+							</div>
+						);
+					})}
+					{equation ? (
+						<div style={{...chip, opacity: prog(f, equation.at ?? 0, 12), color: INK, borderLeft: `10px solid ${accent}`, display: 'flex', alignItems: 'baseline', gap: 16}}>
+							<span style={{fontSize: TYPE.label, letterSpacing: 2, textTransform: 'uppercase', color: INK_SOFT}}>{equation.title ?? 'Rule'}</span>
+							{equation.content}
 						</div>
-					);
-				})}
-			</div>
-			<div style={{position: 'absolute', left: FRAME.margin + 440, top: 300, width: leftW - 440}}>
-				{steps.map((s, i) => {
-					if (f < s.at) return null;
-					const isCurrent = i === current && !done;
-					const size = isCurrent ? TYPE.working : TYPE.support + 4;
-					return (
-						<Enter key={i} at={s.at} style={{marginBottom: isCurrent ? 18 : 10}}>
-							<div style={{fontFamily: FONT_DISPLAY, fontWeight: isCurrent ? 800 : 600, fontSize: size, color: isCurrent ? INK : INK_SOFT, lineHeight: 1.2, whiteSpace: 'pre-wrap'}}>{s.content}</div>
-							{s.note && isCurrent ? <div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: TYPE.hand, color: TONES.amber.ink, marginTop: 2}}>{s.note}</div> : null}
+					) : null}
+				</div>
+				<div style={{flex: '1 1 0', minHeight: 0, marginTop: 30, display: 'flex', flexDirection: 'column'}}>
+					{steps.map((s, i) => {
+						const shown = f >= s.at;
+						const isCurrent = i === current && !done;
+						const t = prog(f, leaves(i), 10);
+						return (
+							<div key={i} style={{position: 'relative', flex: '1 1 0', minHeight: 0, maxHeight: 132, opacity: shown ? prog(f, s.at, 14) : 0}}>
+								{i > 0 ? <div style={{position: 'absolute', left: 10, width: 5, top: `calc(${LINE / 2 + 12}px - 100%)`, height: 'calc(100% - 24px)', borderRadius: 3, background: TRACK}} /> : null}
+								<div style={{position: 'absolute', left: 12, top: LINE / 2, width: 0, height: 0}}>
+									<div style={{position: 'absolute', left: -12, top: -12, width: 24, height: 24, boxSizing: 'border-box', borderRadius: 999, background: isCurrent ? CARD : INK_SOFT, border: isCurrent ? `6px solid ${accent}` : `4px solid ${PAPER}`}} />
+								</div>
+								<div style={{marginLeft: 52, height: LINE, display: 'flex', alignItems: 'center', fontFamily: FONT_DISPLAY, fontWeight: t > 0.5 ? 600 : 800, fontSize: TYPE.working + (restSize - TYPE.working) * t, color: t > 0.5 ? INK_SOFT : INK, lineHeight: 1.15, whiteSpace: 'pre-wrap'}}>{s.content}</div>
+								{s.note && isCurrent ? <div style={{marginLeft: 52, fontFamily: FONT_HAND, fontWeight: 700, fontSize: TYPE.hand, lineHeight: 1.05, color: TONES.amber.ink, opacity: prog(f, s.at + 10, 10)}}>{s.note}</div> : null}
+							</div>
+						);
+					})}
+					{answer ? (
+						<Enter at={answer.at} style={{flex: 'none', height: 150, marginLeft: 52}}>
+							<div style={{...card, display: 'inline-block', padding: '10px 34px', border: `5px solid ${ANSWER.stroke}`, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: TYPE.answer, color: ANSWER.ink, whiteSpace: 'pre'}}>{answer.content}</div>
 						</Enter>
-					);
-				})}
-				{answer ? (
-					<Enter at={answer.at} style={{marginTop: 14}}>
-						<div style={{...card, display: 'inline-block', padding: '10px 34px', border: `5px solid ${ANSWER.stroke}`, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: TYPE.answer, color: ANSWER.ink, whiteSpace: 'pre'}}>{answer.content}</div>
-					</Enter>
-				) : null}
+					) : <div style={{flex: 'none', height: 60}} />}
+				</div>
 			</div>
 			{slip ? (
 				<div style={{position: 'absolute', left: FRAME.margin, top: 900, opacity: prog(f, slip.at, 12), display: 'flex', alignItems: 'center', gap: 24}}>
-					<div style={{padding: '4px 22px', borderRadius: 14, border: `3px solid ${MISTAKE.stroke}`, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: TYPE.body, color: MISTAKE.ink, whiteSpace: 'pre'}}>{slip.content}</div>
+					<div style={{padding: '4px 22px', borderRadius: 14, border: `3px solid ${MISTAKE.stroke}`, background: MISTAKE.soft, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: TYPE.body, color: MISTAKE.ink, whiteSpace: 'pre'}}>{slip.content}</div>
 					<svg width={56} height={56} viewBox="0 0 56 56" style={{overflow: 'visible'}}><DrawPath d="M8,8 L48,48" at={slip.at + 10} dur={8} color={MISTAKE.stroke} width={7} /><DrawPath d="M48,8 L8,48" at={slip.at + 16} dur={8} color={MISTAKE.stroke} width={7} /></svg>
 					<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: TYPE.hand, color: MISTAKE.ink}}>{slip.why}</div>
 				</div>
 			) : null}
-			{picture ? <div style={{position: 'absolute', left: FRAME.margin + leftW + 40, top: 190, width: FRAME.w - 2 * FRAME.margin - leftW - 40, height: 680}}>{picture}</div> : null}
+			{picture ? <div style={{position: 'absolute', left: FRAME.margin + leftW + 40, top: 190, width: FRAME.w - 2 * FRAME.margin - leftW - 40, height: 690}}>{picture}</div> : null}
 		</>
 	);
 };
