@@ -9,6 +9,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 2. `math-a12-d03`: the derivative of ln x (app users, "how long until?"). Graded A on 10 Nov.
 3. `math-a12-d04`: changing the log base (guitar octaves and bels). Graded A on 10 Nov.
 4. `math-a12-d05`: the derivatives of sin and cos (Ferris wheel). Graded A on 10 Nov.
+5. `math-a12-d06`: the chain rule (bike crank). Graded A on 10 Nov.
+6. `math-a12-d07`: the product rule (timber deck). Graded A on 10 Nov.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
