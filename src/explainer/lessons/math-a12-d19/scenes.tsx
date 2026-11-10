@@ -1,0 +1,10 @@
+// Scene map for math-a12-d19 Revision 3 (15 scenes including 3a, ids from the measured lesson.json).
+import type React from 'react';
+import {S01, S02, S03, S03A} from './s1';
+import {S04, S05, S06, S07} from './s2';
+import {S08, S09, S10, S11, S12, S13, S14} from './s3';
+
+export const SCENES: Record<string, React.FC> = {
+	'scene-01': S01, 'scene-02': S02, 'scene-03': S03, 'scene-03a': S03A, 'scene-04': S04, 'scene-05': S05, 'scene-06': S06, 'scene-07': S07,
+	'scene-08': S08, 'scene-09': S09, 'scene-10': S10, 'scene-11': S11, 'scene-12': S12, 'scene-13': S13, 'scene-14': S14,
+};
