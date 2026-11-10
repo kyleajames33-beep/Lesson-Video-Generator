@@ -193,3 +193,23 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
 56. **235-D06-1 (d06 plates).** Use the reused `chemistry/y11c-bike-frame-v1` and `y11c-bike-wheel-v1` with the new `ma12-bike-crankset-v1` and `ma12-bike-pedal-v1`. The stale ma12-bicycle names are ignored.
 57. **235-D08-1 (d08 scene 1a chip).** Use the unit-bridged wording that the brief 235 maths check recommends, so that the chip and the dashboard agree in km/h. This is screen only, with no speech change.
 58. **Notes fit** (238-*-NOTES-FIT, which applies to every Maths build). Key notes take the left 58 to 60% at 36 to 40 px, each one line or two short lines. The framed memory card goes on the right. Nothing passes the card edge, and no bullet drops below 34 px.
+
+## t01 to t04 and g01 to g03 (wave 11, not yet voiced)
+
+59. **Anchors:**
+    - t01: a marker buoy in ocean swell;
+    - t02: a city's daylight over a year ("which days have 13 hours?");
+    - t03: a harbour boat-ramp tide board, with d05's Ferris wheel as a short callback only;
+    - t04: phone storage on a linear and then a log ruler; the decibel, Richter and pH scales stay as the syllabus examples;
+    - g01 to g03: a shared exam desk and calculator, with an everyday picture per problem, mostly reused plates.
+60. **Accepted:**
+    - violet for c in t01 to t03;
+    - re-contexted worked problems with the numbers unchanged (decision 38 precedent);
+    - g01 to g03's root-level choices as recorded in each file's Open decisions;
+    - a coded ground line, never a stretched plate, if d05's stand does not fit t03's scale.
+61. **Paint order:** the skyline (t01's final frame), the tide board (t02's final frame), d03's phone (t03), and d10's coaster and d15's skateboard (g01) must exist before those builds.
+62. **Kit additions (next kit pass):**
+    - studio versions of `TransformPanel`, `FeatureMarks`, `LevelLine`, `WindowMap` and `LogAxisMorph`;
+    - draw-as-you-go on `FunctionSimulator`, moving asymptotes, and a projector mode on `RotatingPlate`;
+    - a step-slider ratio readout, a P dial, a plate laid along a tangent, and `DecisionTree`.
+63. **All 67 Maths designs** are now redesigned to the visual standard with everyday anchors (7 Nov to 11 Nov).
