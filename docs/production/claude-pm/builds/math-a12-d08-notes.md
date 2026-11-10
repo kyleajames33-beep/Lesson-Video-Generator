@@ -1,0 +1,49 @@
+# math-a12-d08 (the quotient rule and its domain; road-trip anchor): build notes, 10 Nov 2026
+
+Status: typechecked (scoped tsconfig, clean); 94 `cue()` phrases resolve, 0 missing; no em dashes in the lesson folder. Sheet `math-a12-d08-sheet.jpg`: 16 stills at (i + 0.5)/16 of 15,458 frames (483 1449 2415 3381 4347 5313 6280 7246 8212 9178 10144 11110 12077 13043 14009 14975), key notes 1,350 frames, rendered in batches of 4 under the stills lock. `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 4 warnings; report copied below). Builder's grade: **A−** (see "Grade per frame"). Not yet watched at playback speed.
+
+## Files
+`src/explainer/lessons/math-a12-d08/`: `common.ts`, `assets.ts`, `config.ts` (scene-14 `Math.max(1350, d)`), `parts.tsx` (Dashboard rig: painted cluster at native aspect with coded needle 0 to 160 km/h on the manifest dial arc, coded dial numbers and screen text; DashBadge; QUOT family and turns; Asym/OpenMark amber marks; QuotPicture and Attempt layout; Givens (kit GivensCard that grows line by line); HandoffBoard/HandoffTop, the final frame that d09 imports), `s1.tsx` (scenes 1, 1a, 2, 3), `s2.tsx` (4 to 7), `s3.tsx` (8 to 12), `s4.tsx` (13, 14), `scenes.tsx`. Registry: one import and one entry. Generic helpers re-exported read-only from math-a12-d04/parts (Frac, Chip, CurveLabel, TanLine, gmap, PreRing, RecallChip) and math-a12-d05/parts (WholeRows).
+
+## Plates
+`ma12-country-road-v1.png` (manifest: native 2172 x 724, alpha box 0,179 to 2172,514, edges pixel-identical) tiled at native aspect in a clipped band and scrolled by speed while the trip clock runs; `b4-car-blue-v1.png` (MATHS_SHARED_PLATES.car) with its tyres on the grey band; `phys-y11-dashboard-cluster-v1.png` with MATHS_SHARED_ANCHORS dial (729, 527, r 283, 216° to −35°) and screen rectangles. Nothing stretched.
+
+## Departures from the design (with reasons)
+- Join (scene 1 frame 0): matched to d07's in-progress `s3.tsx` S14 (read 10 Nov): window A 1300 x 640 at (520, 250), the heading "Next: one function divided by another" and the "So far" hand line (both fade out over the first 18 frames), grey dashed asymptote with "x = −1", amber-bordered chip "bottom = 0 at x = −1" at (−2.9, 4.4), ring r 36 at (0, 1), "gradient ?" at the ring + (50, −110), "Next: the quotient rule" chip at (96, 720), curve label at (0.6, 4.6). Not reproduced: d07's left "This video" card (product rule and deck image). **Root: re-check `JOIN` and the chips in d08 `parts.tsx`/`s1.tsx` against d07's final build.**
+- Scene 1: the graph is 1080 x 760 (design 1150 x 640) so the dashboard (720 wide) and its card fit beside it; the guess chip sits under the dashboard card; the final chip "slope = ?, and where is it defined?" replaces the guess chip there (it was clipped by the dashboard at the graph). The "÷ 0" tag reads "time 0:00, so ÷ 0: no average".
+- Scene 1a: the trip clock fast-forwards the first hour (0 to 1 h at 100 km/h, frames 6 to 230) so "after one hour" lands on 100 km, 1.00 h, 100 km/h; the clock then pauses (road still, needle 100) through the push/pull sentences until "Drive at", and each run lasts cue to cue at one shared compression (0.1 h per 140 frames). The violet "average changing at" row is live (speed − average) ÷ time, so it reads +20 then eases to +17 in run 1, −38 then −35 in run 2, and 0 in run 3 (design gives the starting values). Push and pull are bars (speed ÷ time and average ÷ time, their difference is the violet rate), not hand arrows beside rows. The y = eˣ/(x + 1) thumbnail replaces the bars on "That's our flat tangent" instead of sitting top right throughout (no room beside the average graph). A live formula card "100.0 km ÷ 1.00 h = 100.0 km/h" sits under the dashboard. Decision 57 chip: "rates divided: (eˣ)′ ÷ (x + 1)′ = 1 = 100 km/h = speed right now" with "(at x = 0: top in hundreds of km, bottom in hours)". The hand ring joining needle and average screen is drawn in white (ink is invisible on the dark plate).
+- Scene 2: the turn rows show "?" until their cue (full ink), then live values and signed bars; "1 − 1 = 0" and "1.36 − 0.68 = 0.68" are hand tags under the board.
+- Scene 3: each row carries a short grey reason ("dividing by g = multiplying by 1/g", "product rule: two turns", "chain rule on g⁻¹", "top's turn, bottom's turn"); the check row is a card under the badge.
+- Scenes 4 and 5: a short "Plan" card (domain first, parts, rule, simplify / put x = 1) fills the working area until the rows arrive; grey recall chips for (f/g)′ and the derivatives.
+- Scene 6: the readout board is static at x = 1 (top's turn 1.85, bottom's turn 0.00, gradient 1.85); the reversed-order line is a red dashed line through (1, 0) that leaves on the degrees sentence; the degrees chip is crossed in red with "use radians".
+- Scene 7: the givens card sits under the graph; the cancellation is a separate row (kit StudioCancellation at 64 px), then the framed answer with the domain strip slid beside it; the crossed mistake replaces the givens card.
+- Scene 8: own framed card (d05 pattern) rather than the kit MemoryAidCard, so the main line, formula, keyed lines with the dashboard and fraction icons, and the product/quotient chips all fit at 40 px or more.
+- Attempts: d02 to d05 layout (question card at 60 px, 44 px Given card, 900 x 380 picture, full ring from "Pause here"). Pictures are the fraction structure (top box, bottom box) beside a bare number line ("any x to exclude?") or an x-axis with x = e marked ("gradient here?"); no curve, no answer. Question cards write the quotient linearly, "y = eˣ/(x + 2)" and "y = (ln x)/x", so the shrunk feedback card stays above 26 px.
+- Feedback 1: no picture box on the answer side; instead a window graph of eˣ/(x + 2) with the amber asymptote x = −2 (answer-side, so the excluded value may show).
+- Feedback 2: window D graph from the start (curve only), point and flat tangent on "the gradient is zero", the dashboard badge on "flat" at the left ("like the trip: rates divided = average, so flat").
+- Scene 13: window A is placed so its plot box lies exactly over the handoff number line (x −3 to 2.5 across 1500 px), with teal "top's push" and blue "bottom's pull (the minus)" arrows at (0, 1); it squashes onto the line on "Next".
+- Key notes: five bullets at 40 px on the left 58%, framed memory card right with the dashboard icon and "average = distance ÷ time" (decision 58).
+
+## Cue check
+All 94 phrases resolve against the measured lesson.json (`build-d08/cuecheck.mjs`). Occurrences checked against the intended repeat: scene 1 "time" #2 (508, "zero time"); 1a "hour" #2 (308), "flat" #1 (935); scene 2 "zero" #2 (756), "eight" #1 (946); scene 3 "over g" #2 (400), "squared" #1 (596) and #4 (900, "all over g squared"), "zero" #2 (1301); scene 4 "minus one" #1 (172) and #3 (1063); scene 5 "zero" #2 (557); scene 10 "minus two" #1, "plus one" #1.
+
+## Grade per frame
+1 hook, graph moved left, dashboard and card A− (lower right light until the guess chip); 2 trip at "hour" A; 3 push/pull with "?" rows A−; 4 push/pull at x = 1 A; 5 rule rows with reasons A− (bottom light until the framed rule at 900); 6 eˣ/(x + 1) board with plan A; 7 ln x/cos x graph, givens and plan A− (checker: 54% bare); 8 working rows and domain strip A; 9 gradient at 1 with board A; 10 cancellation A; 11 memory card A; 12 attempt 1 A; 13 attempt 2 A− (checker: question scene 60% bare, same layout as d05); 14 feedback 2 A− (checker: 54%); 15 handoff A; 16 key notes A.
+
+## Kit issues
+- `TripSim` starts its clock at 0 km and 0 h and colours the average violet; d08 needs a trip already 1 h in, an ink average and a paused clock between runs, so the trip rig is lesson-local (road tiles, car, Dashboard). Its needle `R = r × 0.72` and screens work; ScreenCounter text would need two lines for "average / 100.0 km/h".
+- FunctionSimulator draws asymptotes only in grey (`MATH_EXCLUDED`); d08 needs amber, so asymptotes are drawn in overlays.
+- LiveReadoutBoard reserves space for rows that have not appeared (opacity only), so a board with late rows shows an empty card; worked around with "?" values.
+- GivensCard reserves space for future lines; wrapped (`Givens`) to add lines as they arrive.
+- Kit Countdown appears 10 frames before the hold (lesson-local PreRing, as d02 to d05).
+- The grade checker does not count FunctionSimulator graphs as drawn diagrams (fewer than 40 SVG shapes), hence "Few pictures" on every graph-led maths lesson.
+
+## Check at playback speed
+The graph easing from d07's geometry while the dashboard slides in; the road scroll speed per run (120 fast, 60 slow, 100) and its pause after the first hour; the needle easing; the average graph's corners and the violet tangent turning level; bars equalising on "flat"; the push/pull rider from x = 0 to 1 with rows and bars live; WholeRows timing in scenes 3 to 7; the minus signs merging into "+" (scene 5); the strike on "ln x sin x" and the dashed reversed tangent (scene 6); the cancellation slashes and domain strip sliding beside the answers; the handoff graph squashing onto the number line.
+
+## Grade checker report
+See `out/explainer/Explainer-math-a12-d08/grade/Explainer-math-a12-d08-grade.md`: PASS WITH WARNINGS (0 failures). Warnings: frame 7 sparse 54%; frame 13 question scene 60%; frame 14 sparse 54%; whole lesson "Few pictures" (graphs not counted).
+
+
+## Join re-check (10 Nov, after root graded d08 A)
+d08 frame 0 now reproduces d07's committed scene 14 last frame: same window and chips, plus d07's left "This video" card (product rule, deck plate imported read-only from math-a12-d07/parts; DECK added to ASSETS), the curve label in ink (role colours switch on at "there"), the violet point at (0, 1), and the grey "x = −1" label. A pixel comparison of d07 frame 14560 against d08 frame 0 differs only in the header topic label. No other d08 change.

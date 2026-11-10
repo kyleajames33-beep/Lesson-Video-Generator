@@ -11,6 +11,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 4. `math-a12-d05`: the derivatives of sin and cos (Ferris wheel). Graded A on 10 Nov.
 5. `math-a12-d06`: the chain rule (bike crank). Graded A on 10 Nov.
 6. `math-a12-d07`: the product rule (timber deck). Graded A on 10 Nov.
+7. `math-a12-d08`: the quotient rule and its domain (road trip). Graded A on 10 Nov.
+8. `math-a12-d09`: derivative signs, stationary and turning points (hike). Graded A on 10 Nov.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
