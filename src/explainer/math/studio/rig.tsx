@@ -69,7 +69,13 @@ export const RotatingPlate: React.FC<{
 	sprites?: readonly RigSprite[]; at?: number; out?: number; plateOpacity?: number;
 	unitCircle?: {r: number; theta: number; at: number; out?: number; arc?: boolean; heightBar?: boolean; angleLabel?: (theta: number) => string; heightLabel?: (theta: number) => string; colorArc?: string; colorHeight?: string};
 	overlay?: (g: RotatingGeometry) => React.ReactNode;
-}> = ({plate, pivot, cx, cy, w, angle, sprites = [], at = 0, out, plateOpacity = 1, unitCircle, overlay}) => {
+	/**
+	 * Kit pass 2B (opt in): projector mode. A dashed line carries the height of a marked point (the attachment
+	 * point of sprite `sprite`, default 0; or `point` in file pixels on the rotating plate) across to frame x `toX`
+	 * (a graph's current time line), ending in a dot, so the turning wheel draws its own height graph.
+	 */
+	projector?: {toX: number; at: number; out?: number; sprite?: number; point?: [number, number]; color?: string; dot?: boolean};
+}> = ({plate, pivot, cx, cy, w, angle, sprites = [], at = 0, out, plateOpacity = 1, unitCircle, overlay, projector}) => {
 	usePlatePreload([plate.src, ...sprites.map(sp => sp.plate.src)]);
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
@@ -124,6 +130,17 @@ export const RotatingPlate: React.FC<{
 						<circle cx={cx} cy={cy} r={8} fill={INK} />
 						{uc.angleLabel ? <text x={cx + arcR + 16} y={cy - 18} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: uc.colorArc ?? MATH_GRADIENT}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{uc.angleLabel(th)}</text> : null}
 						{uc.heightLabel ? <text x={px + (Math.cos(th) >= 0 ? 22 : -22)} y={(py + cy) / 2 + 12} textAnchor={Math.cos(th) >= 0 ? 'start' : 'end'} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: uc.colorHeight ?? MATH_ROLES.a.ink}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{uc.heightLabel(th)}</text> : null}
+					</g>;
+				})() : null}
+				{projector ? (() => {
+					const po = vis(f, projector.at, projector.out);
+					if (po <= 0.001) return null;
+					const [px, py] = projector.point ? rot(projector.point[0], projector.point[1]) : attachPts[projector.sprite ?? 0] ?? [cx, cy];
+					const c = projector.color ?? MATH_ROLES.a.stroke;
+					return <g opacity={po}>
+						<line x1={px} y1={py} x2={projector.toX} y2={py} stroke={c} strokeWidth={4} strokeDasharray="12 9" />
+						<circle cx={px} cy={py} r={10} fill={c} stroke={CARD} strokeWidth={4} />
+						{projector.dot !== false ? <circle cx={projector.toX} cy={py} r={13} fill={c} stroke={CARD} strokeWidth={5} /> : null}
 					</g>;
 				})() : null}
 			</FrameSvg>

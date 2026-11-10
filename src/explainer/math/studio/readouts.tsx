@@ -91,7 +91,9 @@ const hexRgb = (h: string) => {
  */
 export const ParameterSlider: React.FC<{x: number; y: number; width?: number; symbol: string; role: RoleKey; value: number; min: number; max: number; ticks: {value: number; label: string}[]; at?: number; out?: number; mirror?: number; mirrorAt?: number; digits?: number; badgeMark?: {kind: MarkKind; at: number};
 	/** A value the parameter may never take: red tick, red "not allowed" tag; the knob is clamped at least `gap` away on its side. */
-	excluded?: {value: number; label?: string; gap?: number; at?: number}}> = ({x, y, width = 600, symbol, role, value: rawValue, min, max, ticks, at = 0, out, mirror, mirrorAt, digits = 2, badgeMark, excluded}) => {
+	excluded?: {value: number; label?: string; gap?: number; at?: number};
+	/** Kit pass 2B (opt in): format the badge's number (for example π multiples); default niceNum. */
+	format?: (v: number) => string}> = ({x, y, width = 600, symbol, role, value: rawValue, min, max, ticks, at = 0, out, mirror, mirrorAt, digits = 2, badgeMark, excluded, format}) => {
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
 	if (o <= 0.001) return null;
@@ -128,7 +130,7 @@ export const ParameterSlider: React.FC<{x: number; y: number; width?: number; sy
 				<circle cx={kx} cy={TY} r={8} fill={R.stroke} />
 			</svg>
 			<div style={{width: badgeW, boxSizing: 'border-box', marginTop: 4, padding: '2px 18px', background: CARD, border: `4px solid ${R.stroke}`, borderRadius: 18, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 52, color: R.ink, fontVariantNumeric: 'tabular-nums', boxShadow: '0 8px 20px rgba(60,45,20,0.10)', whiteSpace: 'pre'}}>
-				{badgeMark ? <MarkSpan kind={badgeMark.kind} at={badgeMark.at} role={role}>{symbol} = {niceNum(flipped ? -value : value, digits)}</MarkSpan> : <>{symbol} = {niceNum(flipped ? -value : value, digits)}</>}
+				{badgeMark ? <MarkSpan kind={badgeMark.kind} at={badgeMark.at} role={role}>{symbol} = {(format ?? (v => niceNum(v, digits)))(flipped ? -value : value)}</MarkSpan> : <>{symbol} = {(format ?? (v => niceNum(v, digits)))(flipped ? -value : value)}</>}
 			</div>
 			{mirror !== undefined ? (
 				<div style={{opacity: toggleVis, marginTop: 10, display: 'flex', alignItems: 'center', gap: 12}}>

@@ -18,3 +18,12 @@ export * from './plot-core';
 export * from './calc-parts';
 export * from './integration-parts';
 export * from './series-parts';
+// Kit pass 2B (s01 to s12, f09 to f15, t01 to t04, g01 to g03): root decisions 45, 47, 50, 53, 54 and 62.
+export * from './stat-math';
+export * from './money';
+export * from './prob-parts';
+export * from './spread-parts';
+export * from './dist-parts';
+export * from './normal-parts';
+export * from './finance-parts';
+export * from './trig-parts';

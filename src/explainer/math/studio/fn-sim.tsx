@@ -240,6 +240,16 @@ export type FunctionSimulatorProps = {
 	/** Hide the grid and axis labels (thumbnail panels). */
 	bare?: boolean;
 	at?: number; out?: number;
+	/**
+	 * Kit pass 2B (opt in): draw-as-you-go. The main curve is drawn from displayed x = `from` up to the riding point
+	 * (as clipToPoint), with a pen nib at the point so the graph is seen being written as the clock runs.
+	 */
+	drawAsYouGo?: {from: number; pen?: boolean; color?: string};
+	/**
+	 * Kit pass 2B (opt in): asymptotes that move with the transform. `base` lists vertical asymptotes in BASE u
+	 * (drawn at X = xScale·u + xShift); `horizontal` lists horizontal ones in base y (drawn at Y = yScale·y + yShift).
+	 */
+	movingAsymptotes?: {base?: readonly number[]; horizontal?: readonly number[]; color?: string; at?: number; out?: number};
 };
 
 const TXT = (size: number, color = INK_SOFT, weight = 700): React.CSSProperties => ({fontFamily: FONT_DISPLAY, fontSize: size, fontWeight: weight, fill: color} as React.CSSProperties);
@@ -285,7 +295,7 @@ export const sampleDisplayed = (fam: FnFamily, s: Pick<FnState, 'params' | 'xSca
 };
 
 export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
-	const {x, y, width = 1100, height = 760, window: win, family: fam, timeline, logParams, baseParams, draw, color = INK, curveWidth = 7, clipToPoint, label, point, tangent, triangle, secant, zoom, lines = [], curves = [], gradientDots, markers = [], regions = [], asymptotes = [], mirror, dropLine, branchSafe, normal, xLabel = 'x', yLabel = 'y', readout, overlay, onPoint, bare = false, at = 0, out, asymptoteColor, curvesBreakAtAsymptotes = false, hideMainCurve = false} = props;
+	const {x, y, width = 1100, height = 760, window: win, family: fam, timeline, logParams, baseParams, draw, color = INK, curveWidth = 7, clipToPoint, label, point, tangent, triangle, secant, zoom, lines = [], curves = [], gradientDots, markers = [], regions = [], asymptotes = [], mirror, dropLine, branchSafe, normal, xLabel = 'x', yLabel = 'y', readout, overlay, onPoint, bare = false, at = 0, out, asymptoteColor, curvesBreakAtAsymptotes = false, hideMainCurve = false, drawAsYouGo, movingAsymptotes} = props;
 	const f = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const id = `fsim-${useId().replace(/:/g, '')}`;
@@ -406,8 +416,9 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 		</g>
 	);
 
-	const clipX = clipToPoint ? P[0] : b.left + b.width * drawP;
-	const clipX0 = clipToPoint ? t.point(clipToPoint.from, 0).x : b.left;
+	const traceTo = clipToPoint ?? drawAsYouGo;
+	const clipX = traceTo ? P[0] : b.left + b.width * drawP;
+	const clipX0 = traceTo ? t.point(traceTo.from, 0).x : b.left;
 
 	return (
 		<>
@@ -443,6 +454,14 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 							return <line x1={a0.x} y1={a0.y} x2={a1.x} y2={a1.y} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="4 10" strokeLinecap="round" opacity={mo} />;
 						})() : null}
 						{asymptotes.map(X => {const s = t.point(X, 0); return <line key={'as' + X} x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke={asymptoteColor ?? MATH_EXCLUDED} strokeWidth={3} strokeDasharray="10 9" />;})}
+						{movingAsymptotes ? (() => {
+							const mo = vis(f, movingAsymptotes.at ?? at, movingAsymptotes.out), mc = movingAsymptotes.color ?? asymptoteColor ?? MATH_EXCLUDED;
+							if (mo <= 0.001) return null;
+							return <g opacity={mo}>
+								{(movingAsymptotes.base ?? []).map((u, i) => {const s = t.point(st.xScale * u + st.xShift, 0); return <line key={'ma' + i} x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke={mc} strokeWidth={3.5} strokeDasharray="10 9" />;})}
+								{(movingAsymptotes.horizontal ?? []).map((v, i) => {const s = t.point(0, st.yScale * v + st.yShift); return <line key={'mh' + i} x1={b.left} x2={b.left + b.width} y1={s.y} y2={s.y} stroke={mc} strokeWidth={3.5} strokeDasharray="10 9" />;})}
+							</g>;
+						})() : null}
 						<g clipPath={`url(#${id}-d)`}>{curveLayer()}</g>
 						{dropLine ? <path d={`M${P[0]},${P[1]} V${O.y}`} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="8 7" opacity={vis(f, dropLine.at, dropLine.out)} /> : null}
 						{gradientDots?.target ? (() => {
@@ -535,6 +554,11 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 						</g>;
 					})}
 					{Q && secant?.showQ !== false ? <circle cx={Q[0]} cy={Q[1]} r={12} fill="#d18f1f" stroke={CARD} strokeWidth={4} opacity={secO} /> : null}
+					{drawAsYouGo && drawAsYouGo.pen !== false ? <g transform={`translate(${P[0]},${P[1]}) rotate(-35)`}>
+						<path d="M0,0 L-9,-26 L-9,-96 L9,-96 L9,-26 Z" fill={drawAsYouGo.color ?? '#d18f1f'} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
+						<path d="M0,0 L-9,-26 L9,-26 Z" fill="#f2dfb5" stroke={INK} strokeWidth={3} strokeLinejoin="round" />
+						<circle cx={0} cy={0} r={4} fill={INK} />
+					</g> : null}
 					{point ? <circle cx={P[0]} cy={P[1]} r={(point.r ?? 14) * prog(f, point.at, 10)} fill={point.color ?? MATH_GRADIENT} stroke={CARD} strokeWidth={5} opacity={vis(f, point.at, point.out) * bv} /> : null}
 				</svg>
 			</div>

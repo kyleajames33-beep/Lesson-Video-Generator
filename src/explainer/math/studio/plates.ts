@@ -91,3 +91,33 @@ export const MATHS_KIT2_ANCHORS = {
 	laptopScreen: [372, 160, 1422, 708] as const,
 };
 export const MATHS_KIT2_PLATE_FILES = Object.values(MATHS_KIT2_PLATES).map(p => p.src);
+
+/**
+ * Kit pass 2B: reused plates for the s, f, t and g redesigns (root decisions 49, 52, 59 and 61), measured 11 Nov
+ * (alpha > 20 box). Anchors marked "estimated" were read by eye from a preview and must be checked against the
+ * plate before a lesson relies on them to the pixel.
+ */
+export const MATHS_KIT2B_PLATES = {
+	die: {src: 'assets/biology/m5x-die-v1.png', nat: [2048, 2048], box: [430, 412, 1669, 1725]} as PlateSpec,
+	snapper: {src: 'assets/biology/y11-fish-snapper-v1.png', nat: [1691, 930], box: [126, 150, 1565, 796]} as PlateSpec,
+	goldenPerch: {src: 'assets/biology/y11-fish-golden-perch-v1.png', nat: [1691, 930], box: [128, 144, 1559, 798]} as PlateSpec,
+	petBottle: {src: 'assets/chemistry/m7-pet-bottle-v1.png', nat: [2000, 2000], box: [795, 402, 1205, 1598]} as PlateSpec,
+	house: {src: 'assets/physics/phys-y11-house-v1.png', nat: [1774, 887], box: [219, 133, 1549, 782]} as PlateSpec,
+	platformScales: {src: 'assets/physics/phys-y11-platform-scales-v1.png', nat: [1400, 500], box: [127, 172, 1274, 327]} as PlateSpec,
+	phone: {src: M + 'ma12-phone-v1.png', nat: [971, 1657], box: [138, 148, 830, 1524]} as PlateSpec,
+	torch: {src: 'assets/physics/phys-y11-torch-v1.png', nat: [2172, 724], box: [303, 134, 1868, 598]} as PlateSpec,
+	cat: {src: 'assets/biology/m5x-cat-orange-v1.png', nat: [2000, 2000], box: [222, 339, 1777, 1599]} as PlateSpec,
+	ferrisRim: {src: M + 'ma12-ferris-wheel-rim-v1.png', nat: [1500, 1500], box: [228, 227, 1272, 1270]} as PlateSpec,
+	ferrisGondolaMarked: {src: M + 'ma12-ferris-gondola-marked-v1.png', nat: [1086, 1448], box: [231, 255, 854, 1225]} as PlateSpec,
+};
+export const MATHS_KIT2B_ANCHORS = {
+	/** PET bottle fillable body [x0, yTop, x1, yBottom] (estimated: shoulder to the base's dimple). */
+	petBottleInterior: [830, 760, 1170, 1540] as const,
+	/** Phone screen safe rectangle (math-a12-d03 PHONE_SCREEN, brief 235 manifest). */
+	phoneScreen: [175, 239, 795, 1429] as const,
+	/** Ferris rim hub, cabin bracket radius and the gondola's hanging pivot (math-a12-d05 parts). */
+	ferrisHub: [750, 750] as const, ferrisBracketR: 500, ferrisGondolaPivot: [543, 302] as const,
+	/** Skateboard deck's wheel line (bottom of the alpha box) at the board's centre: the contact point for TangentPlate. */
+	skateboardContact: [1200, 602] as const,
+};
+export const MATHS_KIT2B_PLATE_FILES = Object.values(MATHS_KIT2B_PLATES).map(p => p.src);

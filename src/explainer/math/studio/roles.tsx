@@ -4,7 +4,9 @@
 import React, {createContext, useContext} from 'react';
 import {INK} from '../../kit';
 
-export type RoleKey = 'k' | 'a' | 'b' | 'answer' | 'mistake' | 'gradient' | 'height' | 'inner';
+export type RoleKey = 'k' | 'a' | 'b' | 'answer' | 'mistake' | 'gradient' | 'height' | 'inner'
+	// Kit pass 2B: c in t01 to t03 (violet midline) and the finance roles of root decision 47.
+	| 'mid' | 'balance' | 'interest' | 'repay' | 'deposit' | 'start';
 export type RoleColours = {ink: string; stroke: string; soft: string};
 
 export const MATH_AMBER = '#9c5a00';
@@ -24,7 +26,22 @@ export const MATH_ROLES: Record<RoleKey, RoleColours> = {
 	gradient: {ink: MATH_GRADIENT, stroke: MATH_GRADIENT, soft: '#e7e0f2'},
 	height: {ink: INK, stroke: INK, soft: '#ebe4d6'},
 	inner: {ink: '#6b6358', stroke: MATH_INNER, soft: '#efe9de'},
+	mid: {ink: MATH_GRADIENT, stroke: MATH_GRADIENT, soft: '#e7e0f2'},
+	balance: {ink: INK, stroke: INK, soft: '#ebe4d6'},
+	interest: {ink: MATH_AMBER, stroke: '#d18f1f', soft: '#f8e8c8'},
+	repay: {ink: MATH_TEAL, stroke: '#1f8a8f', soft: '#d6eeee'},
+	deposit: {ink: MATH_BLUE, stroke: MATH_BLUE, soft: '#dceaf7'},
+	start: {ink: MATH_GRADIENT, stroke: MATH_GRADIENT, soft: '#e7e0f2'},
 };
+/**
+ * Finance colour roles (root decision 47, f09 to f15): balance ink, interest amber, repayments and withdrawals
+ * teal, deposits blue, a starting balance violet (f14). Goals and targets are dashed ink (FIN_GOAL_DASH).
+ * Red and green stay reserved for slips and answers.
+ */
+export const FIN_ROLES = {balance: 'balance', interest: 'interest', repayment: 'repay', withdrawal: 'repay', deposit: 'deposit', start: 'start'} as const;
+export const FIN_GOAL_DASH = '14 10';
+/** Statistics roles (root decision 53, s01 to s12): density teal; CDF, μ and σ violet; probability areas amber; data blue. */
+export const STAT_ROLES = {density: 'b', cdf: 'gradient', mu: 'gradient', sigma: 'gradient', area: 'k', data: 'a', answer: 'answer', mistake: 'mistake'} as const;
 /** Non-role curve colour for a third named curve (d04). 5.4:1 on paper, 5.8:1 on card white. */
 export const MATH_CURVE_OLIVE = '#5d6b2a';
 /** Sign-chart and rider direction colours (d09): increasing teal, decreasing amber (role inks). */
