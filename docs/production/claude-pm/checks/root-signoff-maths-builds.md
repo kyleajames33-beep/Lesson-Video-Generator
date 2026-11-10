@@ -14,7 +14,7 @@ Root's grade for each lesson below is **A**. The final sheets are in `builds/mat
 |---|---|---|---|
 | d02 to d14 | A | `builds/math-a12-d02-sheet.jpg` to `d14` | `checks/m-a12-dNN-redesign-learning-review.md` (brief 235) |
 | d15 to d19 | A | `builds/math-a12-d15-sheet.jpg` to `d19` | `checks/m-a12-dNN-redesign-learning-review.md` (brief 238) |
-| i02 to i06, i08, i09 | A | `builds/math-a12-i02-sheet.jpg` to `i06` | `checks/m-a12-iNN-redesign-learning-review.md` (brief 238) |
+| i02 to i06, i08 to i10, i12 | A | `builds/math-a12-i02-sheet.jpg` to `i06` | `checks/m-a12-iNN-redesign-learning-review.md` (brief 238) |
 
 The d02 frames Codex named were reviewed in root's first round and fixed in the second, before the A sign-off:
 - frame 5 (ratio panel);
