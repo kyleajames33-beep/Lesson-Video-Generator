@@ -64,7 +64,9 @@ export const KeyNotesScreen: React.FC<{items: {content: React.ReactNode; at: num
  * <RolesOn on={false}> until feedback so the card gives nothing away. `shrinkAt` moves the card to a
  * 30 px strip at the top for the feedback that follows.
  */
-export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold?: {startFrame: number; endFrame: number}; heading?: string; shrinkAt?: number; x?: number; y?: number; w?: number; size?: number; pauseAt?: number;
+export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold?: {startFrame: number; endFrame: number;
+	/** Opt in: show the countdown ring full from this frame until the timed count starts. */
+	ringFrom?: number}; heading?: string; shrinkAt?: number; x?: number; y?: number; w?: number; size?: number; pauseAt?: number;
 	/** Picture slot beside the question text (about 300 to 360 px wide), arriving with the card; `swap` cross-fades to a filled-in version. */
 	picture?: {node: React.ReactNode; w?: number; swap?: {node: React.ReactNode; at: number}}}> = ({at, children, hold, heading = 'Your turn', shrinkAt, x = MARGIN, y = 214, w = 1380, size = 42, pauseAt, picture}) => {
 	const f = useCurrentFrame();
@@ -87,7 +89,7 @@ export const QuestionCard: React.FC<{at: number; children: React.ReactNode; hold
 			{hold ? (
 				<>
 					<div style={{position: 'absolute', left: x, top: 840, opacity: 1 - sh}}><HandText text="Pause here to answer." at={pauseAt ?? hold.startFrame - 20} size={60} color={AMBER_INK} cps={30} /></div>
-					<FrameSvg style={{opacity: 1 - sh}}><Countdown start={hold.startFrame} end={hold.endFrame} x={1690} y={560} r={70} /></FrameSvg>
+					<FrameSvg style={{opacity: 1 - sh}}><Countdown start={hold.startFrame} end={hold.endFrame} x={1690} y={560} r={70} ringFrom={hold.ringFrom} /></FrameSvg>
 				</>
 			) : null}
 		</>

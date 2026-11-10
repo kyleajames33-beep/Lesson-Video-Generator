@@ -23,6 +23,8 @@ export type ReadoutRow = {
 	text?: string;
 	/** Signed bar beside the number: length value / max of the bar width (positive right, negative left). */
 	bar?: {max: number; width?: number};
+	/** Format the value as a string (money "$30,000", "−$4,500 per year", scientific form). `text` still wins. */
+	format?: (v: number) => string;
 };
 
 /**
@@ -39,7 +41,7 @@ export const LiveReadoutBoard: React.FC<{x: number; y: number; width?: number; r
 				const o = vis(f, r.at ?? at, undefined, 12) * (1 - 0.6 * (r.dim ?? 0));
 				const glow = r.glow ? vis(f, r.glow[0], r.glow[1], 10) : 0;
 				const c = roleInk(r.role, INK);
-				const shownText = r.text ?? fmtNum(r.value, r.digits ?? 2);
+				const shownText = r.text ?? (r.format ? r.format(r.value) : fmtNum(r.value, r.digits ?? 2));
 				const numCore = (
 					<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: size, color: c, fontVariantNumeric: 'tabular-nums', letterSpacing: -0.5}}>
 						{r.mark ? <MarkSpan kind={r.mark.kind} at={r.mark.at} out={r.mark.out} role={r.mark.role ?? r.role} width={5}>{shownText}</MarkSpan> : shownText}

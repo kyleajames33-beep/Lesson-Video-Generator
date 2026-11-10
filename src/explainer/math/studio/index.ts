@@ -13,3 +13,8 @@ export * from './paired';
 export * from './rig';
 export * from './working-parts';
 export * from './extras';
+// Kit pass 2A (d15 to d19, i01 to i14, f01 to f08): root decisions 27, 32, 36 and 42.
+export * from './plot-core';
+export * from './calc-parts';
+export * from './integration-parts';
+export * from './series-parts';

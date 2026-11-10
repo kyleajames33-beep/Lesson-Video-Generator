@@ -142,21 +142,34 @@ export const RotatingPlate: React.FC<{
 export const ContainerFill: React.FC<{
 	x: number; y: number; w: number; container: PlateSpec; full?: PlateSpec;
 	/** Fillable interior in container file pixels [x0, yTop, x1, yBottom]. */
-	interior: [number, number, number, number];
+	interior: readonly [number, number, number, number];
 	level: number; fillColor?: string; fillOpacity?: number;
 	drops?: {rate: (frame: number) => number; from: number; sprite?: PlateSpec; size?: number; color?: string; seed?: number; fall?: number};
 	at?: number; out?: number;
-}> = ({x, y, w, container, full, interior, level, fillColor = '#e2b23b', fillOpacity = 0.55, drops, at = 0, out}) => {
-	usePlatePreload([container.src, ...(full ? [full.src] : []), ...(drops?.sprite ? [drops.sprite.src] : [])]);
+	/**
+	 * Curved vessel: inner radius against height about a vertical axis, in container file pixels. `radii` are at
+	 * equally spaced heights from bottomY (index 0) to topY (last), joined smoothly. The fill and its surface
+	 * line are clipped to this profile instead of the `interior` rectangle (level 0 to 1 runs bottomY to topY).
+	 */
+	profile?: {axisX: number; bottomY: number; topY: number; radii: readonly number[]};
+	/**
+	 * Reveal mode: a painted fill plate on the same canvas as the container (same file size), revealed from the
+	 * bottom up to the level under a gentle dome (dome = curve height at the centre, frame px). Replaces the coded fill.
+	 */
+	reveal?: {plate: PlateSpec; dome?: number; surfaceLine?: boolean};
+}> = ({x, y, w, container, full, interior, level, fillColor = '#e2b23b', fillOpacity = 0.55, drops, at = 0, out, profile, reveal}) => {
+	usePlatePreload([container.src, ...(full ? [full.src] : []), ...(drops?.sprite ? [drops.sprite.src] : []), ...(reveal ? [reveal.plate.src] : [])]);
 	const f = useCurrentFrame();
 	const id = `cf-${useId().replace(/:/g, '')}`;
 	const o = vis(f, at, out, 14);
 	if (o <= 0.001) return null;
 	const m = plateMap(container, x, y, w);
-	const [ix0, iyT, ix1, iyB] = interior;
+	const [ix0, iyT, ix1, iyB] = profile ? [profile.axisX - Math.max(...profile.radii), profile.topY, profile.axisX + Math.max(...profile.radii), profile.bottomY] : interior;
 	const [X0, YT] = m.at(ix0, iyT), [X1, YB] = m.at(ix1, iyB);
 	const L = Math.max(0, Math.min(1, level));
 	const surf = YB - (YB - YT) * L;
+	const prof = profile ? containerProfile(profile, m) : null;
+	if (reveal && (reveal.plate.nat[0] !== container.nat[0] || reveal.plate.nat[1] !== container.nat[1])) throw new RangeError('ContainerFill reveal: the fill plate must share the container canvas (same file size)');
 	const items: React.ReactNode[] = [];
 	if (drops) {
 		const fall = drops.fall ?? 22, size = drops.size ?? 46;
@@ -185,15 +198,47 @@ export const ContainerFill: React.FC<{
 	}
 	return (
 		<FrameSvg style={{opacity: o}}>
-			<defs><clipPath id={id}><rect x={X0} y={YT} width={X1 - X0} height={YB - YT} rx={18} /></clipPath></defs>
+			<defs><clipPath id={id}>{prof ? <path d={prof.path} /> : <rect x={X0} y={YT} width={X1 - X0} height={YB - YT} rx={18} />}</clipPath></defs>
 			<SvgPlate plate={container} x={x} y={y} w={w} />
-			{full ? <SvgPlate plate={full} x={x} y={y} w={w} opacity={L} /> : <g clipPath={`url(#${id})`}>
+			{reveal ? (() => {
+				const dome = reveal.dome ?? 0, cxm = (X0 + X1) / 2;
+				const dPath = L <= 0.0005 ? '' : `M${X0 - 4},${YB + 4} L${X0 - 4},${surf + dome} Q${cxm},${surf - dome} ${X1 + 4},${surf + dome} L${X1 + 4},${YB + 4} Z`;
+				const half = prof ? prof.halfAt(surf) : (X1 - X0) / 2;
+				return <g clipPath={`url(#${id})`}>
+					<clipPath id={id + 'r'}><path d={dPath} /></clipPath>
+					<image href={staticFile(reveal.plate.src)} x={x - container.box[0] * m.s} y={y - container.box[1] * m.s} width={container.nat[0] * m.s} height={container.nat[1] * m.s} preserveAspectRatio="none" clipPath={`url(#${id}r)`} />
+					{reveal.surfaceLine && L > 0.005 ? <path d={`M${cxm - half},${surf + dome} Q${cxm},${surf - dome} ${cxm + half},${surf + dome}`} fill="none" stroke="#ffffff" strokeWidth={3} opacity={0.6} /> : null}
+				</g>;
+			})() : full ? <SvgPlate plate={full} x={x} y={y} w={w} opacity={L} /> : <g clipPath={`url(#${id})`}>
 				<rect x={X0} y={surf} width={X1 - X0} height={YB - surf} fill={fillColor} opacity={fillOpacity} />
-				<line x1={X0} x2={X1} y1={surf} y2={surf} stroke="#9c6a12" strokeWidth={4} opacity={L > 0.005 ? 0.8 : 0} />
+				{prof ? (() => {const half = prof.halfAt(surf), cxm = prof.cx; return <line x1={cxm - half} x2={cxm + half} y1={surf} y2={surf} stroke="#9c6a12" strokeWidth={4} opacity={L > 0.005 ? 0.8 : 0} />;})()
+					: <line x1={X0} x2={X1} y1={surf} y2={surf} stroke="#9c6a12" strokeWidth={4} opacity={L > 0.005 ? 0.8 : 0} />}
 			</g>}
 			{items}
 		</FrameSvg>
 	);
+};
+
+/**
+ * A vessel profile in frame space: a closed path through the inner wall (Catmull-Rom through the tabled radii)
+ * and the inner half-width at any frame y (linear between dense samples). Exported for checks.
+ */
+export const containerProfile = (p: {axisX: number; bottomY: number; topY: number; radii: readonly number[]}, m: {s: number; at: (fx: number, fy: number) => [number, number]}) => {
+	const n = p.radii.length;
+	if (n < 2) throw new RangeError('containerProfile: at least two radii');
+	const rAt = (t: number) => { // t from 0 (bottom) to 1 (top), Catmull-Rom on the tabled radii
+		const u = Math.max(0, Math.min(1, t)) * (n - 1), i = Math.min(n - 2, Math.floor(u)), k = u - i;
+		const r0 = p.radii[Math.max(0, i - 1)], r1 = p.radii[i], r2 = p.radii[i + 1], r3 = p.radii[Math.min(n - 1, i + 2)];
+		return 0.5 * (2 * r1 + (-r0 + r2) * k + (2 * r0 - 5 * r1 + 4 * r2 - r3) * k * k + (-r0 + 3 * r1 - 3 * r2 + r3) * k * k * k);
+	};
+	const N = 120, right: [number, number][] = [], left: [number, number][] = [];
+	for (let j = 0; j <= N; j++) {
+		const t = j / N, fy = p.bottomY + (p.topY - p.bottomY) * t, r = rAt(t);
+		right.push(m.at(p.axisX + r, fy)); left.push(m.at(p.axisX - r, fy));
+	}
+	const path = [...right, ...left.reverse()].map((q, i) => `${i ? 'L' : 'M'}${q[0].toFixed(2)},${q[1].toFixed(2)}`).join(' ') + ' Z';
+	const yB = m.at(p.axisX, p.bottomY)[1], yT = m.at(p.axisX, p.topY)[1];
+	return {path, cx: m.at(p.axisX, p.bottomY)[0], halfAt: (frameY: number) => rAt((yB - frameY) / (yB - yT)) * m.s, radiusAt: rAt};
 };
 
 // ---------- ScreenCounter, StopwatchHand, PlateReadout ----------
@@ -205,7 +250,9 @@ export const ScreenCounter: React.FC<{
 	plate: PlateSpec; x: number; y: number; w: number; screen: readonly [number, number, number, number];
 	rows: readonly {label?: string; value: number | string; digits?: number; unit?: string; color?: string}[];
 	drawPlate?: boolean; at?: number; out?: number; size?: number; align?: 'left' | 'center';
-}> = ({plate, x, y, w, screen, rows, drawPlate = true, at = 0, out, size, align = 'center'}) => {
+	/** Opt in: size every row so label, number and unit fit the screen width; a row that still cannot fit at 26 px puts its label on its own line. */
+	fit?: boolean;
+}> = ({plate, x, y, w, screen, rows, drawPlate = true, at = 0, out, size, align = 'center', fit = false}) => {
 	usePlatePreload(drawPlate ? [plate.src] : []);
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
@@ -216,15 +263,36 @@ export const ScreenCounter: React.FC<{
 	// Fit the widest row inside the screen (display digits are about 0.58 em wide), never below 26 px.
 	const rowChars = (r: (typeof rows)[number]) => (typeof r.value === 'number' ? fmtNum(r.value, r.digits ?? 0) : r.value).length + ((r.label?.length ?? 0) + (r.unit?.length ?? 0)) * 0.42 + (r.label ? 0.5 : 0) + (r.unit ? 0.5 : 0);
 	const widest = Math.max(...rows.map(rowChars), 1);
-	const big = Math.max(26, size ?? Math.min(110, (hh / rows.length) * 0.56, ((sx1 - sx0) * 0.9) / (widest * 0.6)));
-	const small = Math.max(26, big * 0.42);
+	let big = Math.max(26, size ?? Math.min(110, (hh / rows.length) * 0.56, ((sx1 - sx0) * 0.9) / (widest * 0.6)));
+	let small = Math.max(26, big * 0.42);
+	let stack = false;
+	if (fit) {
+		// Honest width model: display digits about 0.6 em, label and unit text about 0.58 em, 12 px gaps.
+		const W = (sx1 - sx0) * 0.92;
+		const need = (r: (typeof rows)[number], b: number, s: number, stacked: boolean) => {
+			const v = (typeof r.value === 'number' ? fmtNum(r.value, r.digits ?? 0) : r.value).length * 0.6 * b;
+			const lu = ((stacked ? 0 : r.label?.length ?? 0) + (r.unit?.length ?? 0)) * 0.58 * s + 12 * ((r.label && !stacked ? 1 : 0) + (r.unit ? 1 : 0));
+			return v + lu;
+		};
+		const fitsAll = (b: number, s: number, stacked: boolean) => rows.every(r => need(r, b, s, stacked) <= W && (!stacked || (r.label?.length ?? 0) * 0.58 * s <= W));
+		const maxB = size ?? Math.min(110, (hh / rows.length) * 0.56);
+		let b = maxB;
+		while (b > 26 && !fitsAll(b, Math.max(26, b * 0.42), false)) b -= 1;
+		if (fitsAll(b, Math.max(26, b * 0.42), false)) {big = b; small = Math.max(26, b * 0.42);}
+		else {
+			stack = true;
+			b = Math.min(maxB, (hh / rows.length) * 0.5);
+			while (b > 26 && !fitsAll(b, Math.max(26, b * 0.42), true)) b -= 1;
+			big = Math.max(26, b); small = Math.max(26, b * 0.42);
+		}
+	}
 	return (
 		<>
 			{drawPlate ? <FrameSvg style={{opacity: o}}><SvgPlate plate={plate} x={x} y={y} w={w} /></FrameSvg> : null}
 			<div style={{position: 'absolute', left: sx0, top: sy0, width: sx1 - sx0, height: hh, opacity: o, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: align === 'center' ? 'center' : 'flex-start', padding: align === 'left' ? '0 4%' : undefined, boxSizing: 'border-box', gap: 2}}>
 				{rows.map((r, i) => (
-					<div key={i} style={{display: 'flex', alignItems: 'baseline', gap: 12, whiteSpace: 'pre'}}>
-						{r.label ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: small, color: '#cfe3df'}}>{r.label}</span> : null}
+						<div key={i} style={{display: 'flex', alignItems: 'baseline', gap: 12, whiteSpace: 'pre', flexWrap: stack ? 'wrap' : undefined, justifyContent: stack && align === 'center' ? 'center' : undefined}}>
+							{r.label ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: small, color: '#cfe3df', flexBasis: stack ? '100%' : undefined, textAlign: stack && align === 'center' ? 'center' : undefined}}>{r.label}</span> : null}
 						<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big, color: r.color ?? '#ffffff', fontVariantNumeric: 'tabular-nums', lineHeight: 1}}>{typeof r.value === 'number' ? fmtNum(r.value, r.digits ?? 0) : r.value}</span>
 						{r.unit ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: small, color: '#cfe3df'}}>{r.unit}</span> : null}
 					</div>
@@ -269,7 +337,11 @@ export const PlateReadout: React.FC<{
 	anchor?: [number, number]; card?: {x: number; y: number; width?: number};
 	label?: React.ReactNode; value: number | string; digits?: number; unit?: string; role?: RoleKey;
 	at?: number; out?: number;
-}> = ({plate, x, y, w, drawPlate = true, region, anchor, card, label, value, digits = 1, unit, role, at = 0, out}) => {
+	/** Flip mode (scoreboard): frames where the value changes; the region text folds shut and reopens around each. */
+	flipAt?: readonly number[]; flipDur?: number;
+	/** Region text colour (default the light screen ink); a scoreboard panel may want white or amber. */
+	regionColor?: string;
+}> = ({plate, x, y, w, drawPlate = true, region, anchor, card, label, value, digits = 1, unit, role, at = 0, out, flipAt, flipDur = 12, regionColor}) => {
 	usePlatePreload(drawPlate ? [plate.src] : []);
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
@@ -282,8 +354,9 @@ export const PlateReadout: React.FC<{
 			{region ? (() => {
 				const [a0, b0] = m.at(region[0], region[1]), [a1, b1] = m.at(region[2], region[3]);
 				const hh = b1 - b0, big = Math.max(30, Math.min(hh * 0.62, ((a1 - a0) / Math.max(3, txt.length + (unit ? unit.length * 0.5 : 0))) * 1.7));
-				return <div style={{position: 'absolute', left: a0, top: b0, width: a1 - a0, height: hh, opacity: o, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, whiteSpace: 'pre'}}>
-					<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big, color: '#d9f2e8', fontVariantNumeric: 'tabular-nums', lineHeight: 1}}>{txt}</span>
+					const flip = flipAt ? flipAt.reduce((acc, c) => {const u = (f - (c - flipDur / 2)) / flipDur; return u > 0 && u < 1 ? Math.min(acc, Math.abs(1 - 2 * u)) : acc;}, 1) : 1;
+					return <div style={{position: 'absolute', left: a0, top: b0, width: a1 - a0, height: hh, opacity: o, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, whiteSpace: 'pre', transform: flipAt ? `scaleY(${flip})` : undefined}}>
+						<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big, color: regionColor ?? '#d9f2e8', fontVariantNumeric: 'tabular-nums', lineHeight: 1}}>{txt}</span>
 					{unit ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: Math.max(26, big * 0.45), color: '#cfe3df'}}>{unit}</span> : null}
 				</div>;
 			})() : null}
@@ -311,21 +384,22 @@ export const PlateReadout: React.FC<{
 
 // ---------- TripSim ----------
 export type SpeedStop = {frame: number; speed: number};
-export type TripState = {hours: number; km: number; speed: number; average: number};
+export type TripState = {hours: number; km: number; speed: number; average: number; /** Distance travelled (odometer): the sum of |speed| × time, never decreasing. */ travelled: number};
 /** Trip state at a frame from a piecewise-constant speed schedule (km/h), `hoursPerFrame` of trip time per video frame. */
 export const tripAt = (schedule: readonly SpeedStop[], frame: number, hoursPerFrame: number): TripState => {
-	if (!schedule.length) return {hours: 0, km: 0, speed: 0, average: NaN};
+	if (!schedule.length) return {hours: 0, km: 0, speed: 0, average: NaN, travelled: 0};
 	const start = schedule[0].frame;
-	let km = 0, speed = 0;
+	let km = 0, speed = 0, travelled = 0;
 	for (let i = 0; i < schedule.length; i++) {
 		const a = schedule[i].frame, b = i + 1 < schedule.length ? schedule[i + 1].frame : Infinity;
 		if (frame <= a) break;
 		km += schedule[i].speed * (Math.min(frame, b) - a) * hoursPerFrame;
+		travelled += Math.abs(schedule[i].speed) * (Math.min(frame, b) - a) * hoursPerFrame;
 		speed = schedule[i].speed;
 	}
 	if (frame < start) speed = 0;
 	const hours = Math.max(0, frame - start) * hoursPerFrame;
-	return {hours, km, speed, average: hours > 0 ? km / hours : NaN};
+	return {hours, km, speed, average: hours > 0 ? km / hours : NaN, travelled};
 };
 export const fmtHours = (h: number) => {
 	const hh = Math.floor(h + 1e-9), mm = Math.floor((h - hh) * 60 + 1e-6);
@@ -343,7 +417,9 @@ export const TripSim: React.FC<{
 	road: {x: number; y: number; w: number; h: number; plate?: PlateSpec; pxPerKm: number};
 	car?: {plate: PlateSpec; x: number; y: number; w: number};
 	dashboard?: {plate: PlateSpec; x: number; y: number; w: number; dial: {cx: number; cy: number; r: number; startDeg: number; endDeg: number}; maxSpeed?: number; screen?: readonly [number, number, number, number]; screenSmall?: readonly [number, number, number, number]};
-	readout?: {x: number; y: number; width?: number; at?: number};
+	readout?: {x: number; y: number; width?: number; at?: number;
+		/** 'displacement' (reverse trips): rows "displacement" (signed), "odometer" (travelled) and "velocity" instead of distance, time and average. */
+		mode?: 'trip' | 'displacement'; unit?: string; speedUnit?: string};
 	at?: number; out?: number;
 	overlay?: (s: TripState) => React.ReactNode;
 }> = ({schedule, hoursPerFrame, road, car, dashboard, readout, at = 0, out, overlay}) => {
@@ -372,7 +448,7 @@ export const TripSim: React.FC<{
 		const m = plateMap(dashboard.plate, dashboard.x, dashboard.y, dashboard.w);
 		const [dcx, dcy] = m.at(dashboard.dial.cx, dashboard.dial.cy);
 		const R = dashboard.dial.r * m.s * 0.72;
-		const frac = Math.max(0, Math.min(1, st.speed / (dashboard.maxSpeed ?? 160)));
+		const frac = Math.max(0, Math.min(1, Math.abs(st.speed) / (dashboard.maxSpeed ?? 160)));
 		const ang = ((dashboard.dial.startDeg + (dashboard.dial.endDeg - dashboard.dial.startDeg) * frac) * Math.PI) / 180;
 		const nx = dcx + Math.cos(ang) * R, ny = dcy - Math.sin(ang) * R;
 		dash = <>
@@ -394,7 +470,11 @@ export const TripSim: React.FC<{
 				{car ? <SvgPlate plate={car.plate} x={car.x} y={car.y + bob} w={car.w} /> : null}
 			</FrameSvg>
 			{dash}
-			{readout ? <LiveReadoutBoard x={readout.x} y={readout.y} width={readout.width ?? 520} at={readout.at ?? at} out={out} inline rows={[
+			{readout && readout.mode === 'displacement' ? <LiveReadoutBoard x={readout.x} y={readout.y} width={readout.width ?? 560} at={readout.at ?? at} out={out} inline rows={[
+				{label: 'displacement', value: st.km, digits: 1, unit: readout.unit ?? 'km', role: 'b'},
+				{label: 'odometer', value: st.travelled, digits: 1, unit: readout.unit ?? 'km', role: 'k'},
+				{label: 'velocity', value: st.speed, digits: 0, unit: readout.speedUnit ?? 'km/h', role: 'gradient'},
+			]} /> : readout ? <LiveReadoutBoard x={readout.x} y={readout.y} width={readout.width ?? 520} at={readout.at ?? at} out={out} inline rows={[
 				{label: 'distance', value: st.km, digits: 0, unit: 'km', role: 'b'},
 				{label: 'time', value: st.hours, digits: 2, unit: 'h', role: 'a'},
 				{label: 'average', value: Number.isFinite(st.average) ? st.average : 0, text: Number.isFinite(st.average) ? undefined : 'not yet', digits: 0, unit: Number.isFinite(st.average) ? 'km/h' : undefined, role: 'gradient'},

@@ -12,7 +12,10 @@ import {graphTransform} from '../graphs';
 import {FnFamily, FnKey, FnState, FunctionSimulator, FunctionSimulatorProps, fnStateAt} from './fn-sim';
 
 // ---------- StudioCandidateTable ----------
-export type CandidateRow = {x: React.ReactNode; exact: React.ReactNode; decimal?: number; kind?: React.ReactNode; at: number; rejected?: {reason?: React.ReactNode; at: number}; winner?: boolean};
+const MATH_LIMIT_INK = '#9c5a00';
+export type CandidateRow = {x: React.ReactNode; exact: React.ReactNode; decimal?: number; kind?: React.ReactNode; at: number; rejected?: {reason?: React.ReactNode; at: number}; winner?: boolean;
+	/** A limit, not an attained value (x → 0⁺, A → 0): amber italic with "(limit)". */
+	limit?: boolean};
 /**
  * Candidate values with exact symbolic results (the studio CandidateValueTable): rows arrive on cues, rejected
  * candidates strike through in grey with a short reason, and the winner row is framed in green at `winnerAt`.
@@ -33,12 +36,14 @@ export const StudioCandidateTable: React.FC<{x: number; y: number; w?: number; r
 				const ro = prog(f, r.at, 14);
 				const rej = r.rejected ? prog(f, r.rejected.at, 12) : 0;
 				const win = r.winner && winnerAt !== undefined ? smooth(prog(f, winnerAt, 16)) : 0;
-				const c = rej > 0.5 ? MATH_EXCLUDED : INK;
+					const c = rej > 0.5 ? MATH_EXCLUDED : r.limit ? MATH_LIMIT_INK : INK;
+					const it: React.CSSProperties = r.limit ? {fontStyle: 'italic'} : {};
 				return (
 					<div key={i} style={{opacity: ro, transform: `translateY(${(1 - ro) * 10}px)`, position: 'relative', display: 'grid', gridTemplateColumns: cols, columnGap: 24, alignItems: 'center', padding: '10px 14px', margin: '8px -14px 0', borderRadius: 14, border: `5px solid ${win > 0 ? `rgba(40,115,71,${win})` : 'transparent'}`, background: win > 0 ? `rgba(220,239,226,${win})` : undefined}}>
-						<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: size, color: c, whiteSpace: 'pre'}}>{r.x}</div>
-						<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: size, color: win > 0.5 ? MATH_ANSWER : c, whiteSpace: 'pre'}}>
-							{r.exact}
+							<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: size, color: c, whiteSpace: 'pre', ...it}}>{r.x}</div>
+							<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: size, color: win > 0.5 ? MATH_ANSWER : c, whiteSpace: 'pre', ...it}}>
+								{r.exact}
+								{r.limit ? <span style={{fontSize: 30, fontWeight: 700}}>{'  (limit)'}</span> : null}
 							{r.decimal !== undefined && rej < 0.5 ? <span style={{fontSize: 30, fontWeight: 600, color: INK_SOFT}}>{`  ≈ ${fmtNum(r.decimal, digits)}`}</span> : null}
 							{r.rejected?.reason && rej > 0 ? <div style={{fontFamily: FONT_DISPLAY, fontSize: 30, fontWeight: 700, color: MATH_MISTAKE, opacity: rej}}>{r.rejected.reason}</div> : null}
 						</div>

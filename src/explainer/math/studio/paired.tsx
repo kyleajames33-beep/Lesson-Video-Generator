@@ -1,11 +1,11 @@
 // Studio-sized paired derivative panel (f above f′ with one shared x geometry) and the sign strip.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {DrawPath, FONT_DISPLAY, INK, INK_SOFT, prog} from '../../kit';
+import {DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {graphTransform} from '../graphs';
 import type {Range} from '../graphs';
 import {CARD, FrameSvg, fmtNum, smooth, vis} from './primitives';
-import {MATH_DOWN, MATH_DOWN_SOFT, MATH_EXCLUDED, MATH_GRADIENT, MATH_UP, MATH_UP_SOFT} from './roles';
+import {MATH_BLUE, MATH_CURVE_OLIVE, MATH_DOWN, MATH_DOWN_SOFT, MATH_EXCLUDED, MATH_GRADIENT, MATH_UP, MATH_UP_SOFT} from './roles';
 import {FnFamily, FnKey, FnRow, FnState, FunctionSimulator, Tick, fnStateAt} from './fn-sim';
 
 /**
@@ -78,7 +78,11 @@ export const PairedDerivativePanel: React.FC<{
 	);
 };
 
-export type SignBoundaryMark = {x: number; kind: 'zero' | 'excluded'; label?: string};
+export type SignBoundaryMark = {x: number; kind: 'zero' | 'excluded'; label?: string;
+	/** A note under the boundary written on cue ("changes: inflection", "no change"). */
+	note?: {text: string; at: number; color?: string};
+	/** Colour for an excluded boundary (default grey; red for excluded values in d17). */
+	color?: string};
 export type SignCell = {sign: 1 | -1; test?: {x: string; value: string}; revealAt?: number};
 
 /**
@@ -92,7 +96,11 @@ export const SignStrip: React.FC<{
 	x: number; y: number; width?: number; windowX: Range;
 	boundaries: readonly SignBoundaryMark[]; cells: readonly SignCell[];
 	follow?: number; at?: number; out?: number; rowLabel?: string; testLabel?: string; showTests?: boolean; signSize?: number;
-}> = ({x, y, width = 1100, windowX, boundaries, cells, follow, at = 0, out, rowLabel = 'f′(x)', testLabel = 'test', showTests = true, signSize = 48}) => {
+	/** 'concavity': cup (pale blue, ∪) and cap (pale olive, ∩) cells for the sign of f″, labelled "sign of f″(x)". */
+	mode?: 'gradient' | 'concavity';
+}> = ({x, y, width = 1100, windowX, boundaries, cells, follow, at = 0, out, rowLabel: rowLabelIn, testLabel = 'test', showTests = true, signSize = 48, mode = 'gradient'}) => {
+	const conc = mode === 'concavity';
+	const rowLabel = rowLabelIn ?? (conc ? 'sign of f″(x)' : 'f′(x)');
 	const f = useCurrentFrame();
 	if (cells.length !== boundaries.length + 1) throw new RangeError('SignStrip: one cell per interval (boundaries + 1) is required');
 	const o = vis(f, at, out, 14);
@@ -112,7 +120,7 @@ export const SignStrip: React.FC<{
 					const a = px(edges[i]), b = px(edges[i + 1]);
 					const fill = follow !== undefined ? Math.max(0, Math.min(1, (follow - edges[i]) / Math.max(1e-9, edges[i + 1] - edges[i]))) : c.revealAt !== undefined ? smooth(prog(f, c.revealAt, 18)) : 1;
 					const shown = follow !== undefined ? fill > 0.02 : c.revealAt === undefined || f >= c.revealAt;
-					const up = c.sign > 0, colr = up ? MATH_UP : MATH_DOWN, soft = up ? MATH_UP_SOFT : MATH_DOWN_SOFT;
+					const up = c.sign > 0, colr = conc ? (up ? MATH_BLUE : MATH_CURVE_OLIVE) : up ? MATH_UP : MATH_DOWN, soft = conc ? (up ? '#dceaf7' : '#e9ecd3') : up ? MATH_UP_SOFT : MATH_DOWN_SOFT;
 					const pad = 5, w = Math.max(0, b - a - 2 * pad);
 					const mid = (a + b) / 2;
 					const ao = shown ? prog(f, (c.revealAt ?? 0) + 6, 12) : 0;
@@ -122,7 +130,7 @@ export const SignStrip: React.FC<{
 						{shown ? <>
 							<text x={mid - 34} y={cellTop + H / 2 + signSize * 0.36} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: signSize, fill: colr}} opacity={follow !== undefined ? Math.min(1, fill * 3) : ao}>{up ? '+' : '−'}</text>
 							<g opacity={follow !== undefined ? Math.min(1, fill * 3) : ao} transform={`translate(${mid + 30},${cellTop + H / 2})`}>
-								<path d={up ? 'M-22,18 L20,-20 M2,-22 L21,-21 L20,-2' : 'M-22,-18 L20,20 M2,22 L21,21 L20,2'} stroke={colr} strokeWidth={7} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+								<path d={conc ? (up ? 'M-18,-20 V-2 Q-18,20 0,20 Q18,20 18,-2 V-20' : 'M-18,20 V2 Q-18,-20 0,-20 Q18,-20 18,2 V20') : up ? 'M-22,18 L20,-20 M2,-22 L21,-21 L20,-2' : 'M-22,-18 L20,20 M2,22 L21,21 L20,2'} stroke={colr} strokeWidth={7} fill="none" strokeLinecap="round" strokeLinejoin="round" />
 							</g>
 							{showTests && c.test ? <text x={mid} y={testY} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, fill: INK}} opacity={follow !== undefined ? Math.min(1, fill * 2) : ao}>{`x = ${c.test.x}: ${c.test.value}`}</text> : null}
 						</> : <text x={mid} y={cellTop + H / 2 + 16} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44, fill: INK_SOFT}}>?</text>}
@@ -130,12 +138,14 @@ export const SignStrip: React.FC<{
 				})}
 				{boundaries.map(bd => {
 					const X = px(bd.x);
+					const exC = bd.color ?? MATH_EXCLUDED;
 					return <g key={bd.x}>
-						<line x1={X} x2={X} y1={-14} y2={cellTop + H + 8} stroke={bd.kind === 'excluded' ? MATH_EXCLUDED : INK} strokeWidth={3} strokeDasharray={bd.kind === 'excluded' ? '7 7' : undefined} />
+						<line x1={X} x2={X} y1={-14} y2={cellTop + H + 8} stroke={bd.kind === 'excluded' ? exC : INK} strokeWidth={3} strokeDasharray={bd.kind === 'excluded' ? '7 7' : undefined} />
+						{bd.note ? <text x={X} y={cellTop + H + (showTests ? 96 : 50)} textAnchor="middle" opacity={prog(f, bd.note.at, 12)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, fill: bd.note.color ?? INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{bd.note.text}</text> : null}
 						{bd.kind === 'excluded'
-							? <circle cx={X} cy={lineY} r={11} fill={CARD} stroke={MATH_EXCLUDED} strokeWidth={5} />
+							? <circle cx={X} cy={lineY} r={11} fill={CARD} stroke={exC} strokeWidth={5} />
 							: <text x={X} y={cellTop + H / 2 + 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: INK}} stroke={CARD} strokeWidth={10} paintOrder="stroke">0</text>}
-						<text x={X} y={-24} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32, fill: bd.kind === 'excluded' ? MATH_EXCLUDED : INK}}>{bd.label ?? fmtNum(bd.x, Number.isInteger(bd.x) ? 0 : 2)}</text>
+<text x={X} y={-24} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32, fill: bd.kind === 'excluded' ? exC : INK}}>{bd.label ?? fmtNum(bd.x, Number.isInteger(bd.x) ? 0 : 2)}</text>
 					</g>;
 				})}
 			</svg>

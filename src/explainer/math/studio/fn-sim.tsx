@@ -140,7 +140,7 @@ export const heldStops = (channel: 'x' | 'q', stops: readonly {frame: number; va
 /** The direction word for a gradient (d09): uphill, level (|m| below the threshold) or downhill. */
 export const directionWord = (m: number, threshold = 0.05, words: [string, string, string] = ['downhill', 'level', 'uphill']) => (Math.abs(m) < threshold ? words[1] : m > 0 ? words[2] : words[0]);
 
-export type Tick = {value: number; label: string};
+export type Tick = {value: number; label: string; /** Optional second line under an x tick (two-line labels, such as years under t). */ sub?: string};
 const PI_FRAC: Record<string, string> = {'1/2': 'π/2', '1/1': 'π', '3/2': '3π/2', '2/1': '2π', '1/4': 'π/4', '3/4': '3π/4', '1/3': 'π/3', '2/3': '2π/3', '1/6': 'π/6', '5/6': '5π/6', '5/4': '5π/4', '7/4': '7π/4', '5/2': '5π/2', '3/1': '3π', '4/1': '4π'};
 /** Radian ticks every π/den from lo to hi (in multiples of π), labelled π/2, π, 3π/2 and so on. */
 export const piTicks = (lo: number, hi: number, den = 2): Tick[] => {
@@ -196,19 +196,29 @@ export type FunctionSimulatorProps = {
 	/** Secant from the point to the partner keyed by channel q (use heldStops for stops). */
 	secant?: {at: number; out?: number; color?: string; extend?: number; showQ?: boolean};
 	/** Round zoom inset around the point, with a magnifier leader. */
-	zoom?: {cx: number; cy: number; r: number; factor: number; at: number; out?: number};
+	zoom?: {cx: number; cy: number; r: number; /** A fixed factor, or a function of the frame (animated, resampled every frame). */ factor: number | ((frame: number) => number); at: number; out?: number};
 	/** Straight comparison lines through the point (slope from the state), dashed grey by default. */
 	lines?: readonly {slope: (s: FnState) => number; at: number; out?: number; color?: string; dash?: string; halfLength?: number; label?: string}[];
 	/** Extra curves in displayed coordinates: ghosts (dashed grey by default) and comparison curves. */
 	curves?: readonly {fn: (X: number) => number; at: number; out?: number; color?: string; dash?: string; width?: number; domain?: Range; label?: {text: string; X: number; color?: string}; /** Carry this curve by the reflection too (default: it stays put as a fixed reference). */ carried?: boolean}[];
 	/** Dots at (X, gradient) left behind by the riding point, sampled every `every` frames. */
-	gradientDots?: {at: number; out?: number; every?: number; color?: string; bars?: boolean};
+	gradientDots?: {at: number; out?: number; every?: number; color?: string; bars?: boolean;
+		/** Drop dots only at these displayed x values, each as the riding point passes it (instead of every few frames). */
+		xs?: readonly number[];
+		/** Dashed target curve the dots should land on; it turns solid at solidAt. */
+		target?: {fn: (X: number) => number; at?: number; solidAt?: number; color?: string}};
 	/** Markers at displayed coordinates that pop in on cues (ratio panels, landmarks). */
 	markers?: readonly {X: number; Y: number; at: number; out?: number; color?: string; label?: string; open?: boolean}[];
 	/** Shaded rectangles in displayed coordinates (domain shading, sign tints). */
 	regions?: readonly {x: Range; y?: Range; color: string; opacity?: number; at: number; out?: number}[];
 	/** Dashed vertical asymptotes at displayed X. */
 	asymptotes?: readonly number[];
+	/** Colour of the asymptote lines (default the grey excluded colour). */
+	asymptoteColor?: string;
+	/** Lift the pen of the extra `curves` at the listed asymptotes, so no curve is drawn across one. */
+	curvesBreakAtAsymptotes?: boolean;
+	/** Do not draw the main curve (use the simulator for its axes, point and extra curves only). */
+	hideMainCurve?: boolean;
 	/** The mirror line y = x (drawn automatically when the timeline keys a reflection). */
 	mirror?: {at: number; out?: number};
 	dropLine?: {at: number; out?: number};
@@ -275,7 +285,7 @@ export const sampleDisplayed = (fam: FnFamily, s: Pick<FnState, 'params' | 'xSca
 };
 
 export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
-	const {x, y, width = 1100, height = 760, window: win, family: fam, timeline, logParams, baseParams, draw, color = INK, curveWidth = 7, clipToPoint, label, point, tangent, triangle, secant, zoom, lines = [], curves = [], gradientDots, markers = [], regions = [], asymptotes = [], mirror, dropLine, branchSafe, normal, xLabel = 'x', yLabel = 'y', readout, overlay, onPoint, bare = false, at = 0, out} = props;
+	const {x, y, width = 1100, height = 760, window: win, family: fam, timeline, logParams, baseParams, draw, color = INK, curveWidth = 7, clipToPoint, label, point, tangent, triangle, secant, zoom, lines = [], curves = [], gradientDots, markers = [], regions = [], asymptotes = [], mirror, dropLine, branchSafe, normal, xLabel = 'x', yLabel = 'y', readout, overlay, onPoint, bare = false, at = 0, out, asymptoteColor, curvesBreakAtAsymptotes = false, hideMainCurve = false} = props;
 	const f = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const id = `fsim-${useId().replace(/:/g, '')}`;
@@ -341,11 +351,22 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 
 	// Gradient dots: past states of the point.
 	const dots: [number, number][] = [];
-	if (gradientDots && f >= gradientDots.at) {
+	if (gradientDots && f >= gradientDots.at && !gradientDots.xs) {
 		const every = gradientDots.every ?? 6;
 		for (let g = gradientDots.at; g <= f; g += every) {
 			const sg = fnStateAt(fam, timeline, g, {logParams, baseParams});
 			if (Number.isFinite(sg.slope)) dots.push([sg.X, sg.slope]);
+		}
+	}
+	if (gradientDots?.xs && f >= gradientDots.at) {
+		// A listed x gets its dot once the point has reached it since gradientDots.at (either direction).
+		const X0 = fnStateAt(fam, timeline, gradientDots.at, {logParams, baseParams}).X;
+		for (const xv of gradientDots.xs) {
+			if (!((xv - X0) * (st.X - xv) >= 0 && Math.abs(st.X - X0) >= Math.abs(xv - X0) - 1e-9)) continue;
+			const u = (xv - st.xShift) / st.xScale;
+			if (!fnInDomain(fam, st.params, u)) continue;
+			const m = (st.yScale / st.xScale) * fam.df(u, st.params);
+			if (Number.isFinite(m)) dots.push([xv, m]);
 		}
 	}
 
@@ -370,14 +391,17 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 				if (co <= 0.001) return null;
 				const [a, bb] = c.domain ?? win.x;
 				const pts: [number, number][] = [];
+				const breaks: number[] = [];
 				for (let k = 0; k <= 300; k++) {
 					const X = a + ((bb - a) * k) / 300, Y = c.fn(X);
+					if (curvesBreakAtAsymptotes && k > 0 && asymptotes.some(A => (A - (a + ((bb - a) * (k - 1)) / 300)) * (A - X) <= 0)) breaks.push(pts.length);
 					if (Number.isFinite(Y)) pts.push([X, Math.max(win.y[0] - 10, Math.min(win.y[1] + 10, Y))]);
 				}
-				return <path key={'c' + i} d={pathOf(pts, !!c.carried)} stroke={c.color ?? MATH_INNER} strokeWidth={(c.width ?? 5) / scale} strokeDasharray={c.dash ?? (c.color ? undefined : '14 10')} fill="none" opacity={co * (c.color ? 1 : 0.85)} strokeLinecap="round" />;
+				const dC = !breaks.length ? pathOf(pts, !!c.carried) : [0, ...breaks].map((s0, j, arr) => pathOf(pts.slice(s0, j + 1 < arr.length ? arr[j + 1] : pts.length), !!c.carried)).join(' ');
+				return <path key={'c' + i} d={dC} stroke={c.color ?? MATH_INNER} strokeWidth={(c.width ?? 5) / scale} strokeDasharray={c.dash ?? (c.color ? undefined : '14 10')} fill="none" opacity={co * (c.color ? 1 : 0.85)} strokeLinecap="round" />;
 			})}
 			<g clipPath={clipRect}>
-				{polylines.map((pl, i) => <path key={'m' + i} d={pathOf(pl)} stroke={col} strokeWidth={curveWidth / scale} fill="none" strokeLinejoin="round" strokeLinecap="round" />)}
+				{hideMainCurve ? null : polylines.map((pl, i) => <path key={'m' + i} d={pathOf(pl)} stroke={col} strokeWidth={curveWidth / scale} fill="none" strokeLinejoin="round" strokeLinecap="round" />)}
 			</g>
 		</g>
 	);
@@ -394,7 +418,7 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 						<clipPath id={`${id}-d`}><rect x={Math.min(clipX0, clipX)} y={b.top - 10} width={Math.max(0, clipX - clipX0)} height={b.height + 20} /></clipPath>
 					</defs>
 					{!bare ? <>
-						{xt.map(v => {const s = t.point(v.value, 0); return <g key={'x' + v.value}><line x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke="#e4dccd" strokeWidth={2} /><text x={s.x} y={b.top + b.height + 40} textAnchor="middle" style={TXT(30)}>{v.label}</text></g>;})}
+						{xt.map(v => {const s = t.point(v.value, 0); return <g key={'x' + v.value}><line x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke="#e4dccd" strokeWidth={2} /><text x={s.x} y={b.top + b.height + 40} textAnchor="middle" style={TXT(30)}>{v.label}</text>{v.sub ? <text x={s.x} y={b.top + b.height + 74} textAnchor="middle" style={TXT(28, INK, 700)}>{v.sub}</text> : null}</g>;})}
 						{yt.map(v => {const s = t.point(0, v.value); return <g key={'y' + v.value}><line x1={b.left} x2={b.left + b.width} y1={s.y} y2={s.y} stroke="#e4dccd" strokeWidth={2} /><text x={b.left - 16} y={s.y + 10} textAnchor="end" style={TXT(30)}>{v.label}</text></g>;})}
 					</> : null}
 					<g clipPath={`url(#${id})`}>
@@ -408,7 +432,7 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 					</g>
 					<path d={`M${b.left},${O.y} H${b.left + b.width} M${O.x},${b.top} V${b.top + b.height}`} stroke={INK} strokeWidth={3.5} fill="none" strokeLinecap="round" />
 					{!bare ? <>
-						<text x={b.left + b.width} y={b.top + b.height + 82} textAnchor="end" style={TXT(30, INK, 700)}>{xLabel}</text>
+<text x={b.left + b.width} y={b.top + b.height + (xt.some(v => v.sub) ? 112 : 82)} textAnchor="end" style={TXT(30, INK, 700)}>{xLabel}</text>
 						<text x={b.left} y={b.top - 16} textAnchor="start" style={TXT(30, INK, 700)}>{yLabel}</text>
 					</> : null}
 					<g clipPath={`url(#${id})`}>
@@ -418,9 +442,19 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 							const a0 = t.point(lo, lo), a1 = t.point(hi, hi);
 							return <line x1={a0.x} y1={a0.y} x2={a1.x} y2={a1.y} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="4 10" strokeLinecap="round" opacity={mo} />;
 						})() : null}
-						{asymptotes.map(X => {const s = t.point(X, 0); return <line key={'as' + X} x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke={MATH_EXCLUDED} strokeWidth={3} strokeDasharray="10 9" />;})}
+						{asymptotes.map(X => {const s = t.point(X, 0); return <line key={'as' + X} x1={s.x} x2={s.x} y1={b.top} y2={b.top + b.height} stroke={asymptoteColor ?? MATH_EXCLUDED} strokeWidth={3} strokeDasharray="10 9" />;})}
 						<g clipPath={`url(#${id}-d)`}>{curveLayer()}</g>
 						{dropLine ? <path d={`M${P[0]},${P[1]} V${O.y}`} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="8 7" opacity={vis(f, dropLine.at, dropLine.out)} /> : null}
+						{gradientDots?.target ? (() => {
+							const tg = gradientDots.target, solid = tg.solidAt !== undefined ? prog(f, tg.solidAt, 14) : 0;
+							const tp: [number, number][] = [];
+							for (let k = 0; k <= 300; k++) {const X = win.x[0] + ((win.x[1] - win.x[0]) * k) / 300, Y = tg.fn(X); if (Number.isFinite(Y)) tp.push([X, Math.max(win.y[0] - 10, Math.min(win.y[1] + 10, Y))]);}
+							const tc = tg.color ?? MATH_GRADIENT;
+							return <g opacity={vis(f, tg.at ?? gradientDots.at, gradientDots.out)}>
+								<path d={pathOf(tp, false)} stroke={tc} strokeWidth={4} strokeDasharray="12 10" fill="none" opacity={(1 - solid) * 0.8} />
+								{solid > 0 ? <path d={pathOf(tp, false)} stroke={tc} strokeWidth={6} fill="none" opacity={solid} strokeLinecap="round" /> : null}
+							</g>;
+						})() : null}
 						{gradientDots ? <g opacity={vis(f, gradientDots.at, gradientDots.out)}>
 							{dots.map(([X, m], i) => {const s = sp(X, m), z = sp(X, 0); return <g key={'gd' + i}>{gradientDots.bars ? <line x1={s[0]} x2={z[0]} y1={s[1]} y2={z[1]} stroke={gradientDots.color ?? MATH_GRADIENT} strokeWidth={4} opacity={0.35} /> : null}<circle cx={s[0]} cy={s[1]} r={8} fill={gradientDots.color ?? MATH_GRADIENT} /></g>;})}
 						</g> : null}
@@ -505,16 +539,26 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 				</svg>
 			</div>
 			{zoom && zoomO > 0.001 ? (() => {
-				const R = zoom.r, k = zoom.factor;
+				const R = zoom.r, k = typeof zoom.factor === 'function' ? zoom.factor(f) : zoom.factor;
 				// Local map: displayed coordinates near the point, magnified k times about the point.
 				const zp = (X: number, Y: number): [number, number] => {const q = spc(X, Y); return [zoom.cx + (q[0] - P[0]) * k, zoom.cy + (q[1] - P[1]) * k];};
 				const spanX = (R / (t.sx * k)) * 1.3;
 				const pts: [number, number][] = [];
+				// Lift the pen where the domain breaks or the function jumps (a piecewise step), so the inset never bridges a gap.
+				const lifts = new Set<number>();
+				let prevIn = true, prevY = NaN, prevU = NaN;
 				for (let i = 0; i <= 120; i++) {
 					const X = st.X - spanX + (2 * spanX * i) / 120, u = (X - st.xShift) / st.xScale;
-					if (fnInDomain(fam, st.params, u)) pts.push([X, st.yScale * fam.f(u, st.params) + st.yShift]);
+					if (fnInDomain(fam, st.params, u)) {
+						const Y = st.yScale * fam.f(u, st.params) + st.yShift;
+						// a jump: far more than the local gradient explains (steep but continuous curves are kept joined)
+const g0 = Math.abs(fam.df(u, st.params)), g1 = Math.abs(fam.df(prevU, st.params));
+						const jumpPx = Math.abs(Y - prevY) * t.sy * k, expectPx = Math.abs(st.yScale) * ((Number.isFinite(g0) ? g0 : 0) + (Number.isFinite(g1) ? g1 : 0)) / 2 * Math.abs(u - prevU) * t.sy * k;
+						if (pts.length && (!prevIn || (jumpPx > R && jumpPx > 4 * expectPx))) lifts.add(pts.length);
+						pts.push([X, Y]); prevIn = true; prevY = Y; prevU = u;
+					} else prevIn = false;
 				}
-				const d = pts.map((p, i) => {const q = zp(p[0], p[1]); return `${i ? 'L' : 'M'}${q[0].toFixed(1)},${q[1].toFixed(1)}`;}).join(' ');
+				const d = pts.map((p, i) => {const q = zp(p[0], p[1]); return `${i && !lifts.has(i) ? 'L' : 'M'}${q[0].toFixed(1)},${q[1].toFixed(1)}`;}).join(' ');
 				const zid = `${id}-z`;
 				const tl = segment(st.slope, R * 2);
 				const secLine = Q ? (() => {const vx = Q[0] - P[0], vy = Q[1] - P[1], l = Math.hypot(vx, vy) || 1; return {x1: zoom.cx - (vx / l) * R * 2, y1: zoom.cy - (vy / l) * R * 2, x2: zoom.cx + (vx / l) * R * 2, y2: zoom.cy + (vy / l) * R * 2};})() : null;
@@ -532,7 +576,7 @@ export const FunctionSimulator: React.FC<FunctionSimulatorProps> = props => {
 							<circle cx={zoom.cx} cy={zoom.cy} r={13} fill={MATH_GRADIENT} stroke={CARD} strokeWidth={4} />
 						</g>
 						<circle cx={zoom.cx} cy={zoom.cy} r={R} fill="none" stroke={INK} strokeWidth={4.5} />
-						<text x={zoom.cx} y={zoom.cy + R + 44} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, fill: INK_SOFT}}>{`zoomed ×${niceNum(k, 0)}`}</text>
+						<text x={zoom.cx} y={zoom.cy + R + 44} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, fill: INK_SOFT}}>{`zoomed ×${typeof zoom.factor === 'function' ? String(Math.round(k)) : niceNum(k, 0)}`}</text>
 					</FrameSvg>
 				</>;
 			})() : null}

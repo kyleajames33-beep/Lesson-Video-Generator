@@ -58,18 +58,34 @@ export const usePop = (at: number, damping = 12) => {
 };
 
 /** Fade and lift in, plus optional fade out. */
-export const Enter: React.FC<{at: number; out?: number; dy?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({at, out, dy = 18, children, style}) => {
+export const Enter: React.FC<{at: number; out?: number; dy?: number; children: React.ReactNode; style?: React.CSSProperties;
+	/** Opt in: multiply a style.opacity with the fade instead of letting it replace the fade. */
+	multiplyOpacity?: boolean}> = ({at, out, dy = 18, children, style, multiplyOpacity = false}) => {
 	const frame = useCurrentFrame();
 	const p = prog(frame, at, 16);
 	const o = out === undefined ? 1 : 1 - prog(frame, out, 12);
+	if (multiplyOpacity) {
+		const so = style?.opacity === undefined ? 1 : Number(style.opacity);
+		return <div style={{transform: `translateY(${(1 - p) * dy}px)`, ...style, opacity: p * o * so}}>{children}</div>;
+	}
 	return <div style={{opacity: p * o, transform: `translateY(${(1 - p) * dy}px)`, ...style}}>{children}</div>;
 };
 
 /** Handwritten text that writes itself on, character by character, with a clipped reveal. */
-export const HandText: React.FC<{text: string; at: number; size?: number; color?: string; cps?: number; style?: React.CSSProperties; weight?: number}> = ({text, at, size = 64, color = INK, cps = 22, style, weight = 700}) => {
+export const HandText: React.FC<{text: string; at: number; size?: number; color?: string; cps?: number; style?: React.CSSProperties; weight?: number;
+	/** Opt in: wrap at this width (px). The text then writes on line by line instead of by a single clip. */
+	maxWidth?: number}> = ({text, at, size = 64, color = INK, cps = 22, style, weight = 700, maxWidth}) => {
 	const frame = useCurrentFrame();
 	const chars = Math.max(0, Math.min(text.length, Math.floor(((frame - at) / 30) * cps)));
 	const p = text.length ? chars / text.length : 1;
+	if (maxWidth !== undefined) {
+		// Wrapped form: the written characters show, the rest keep their space (so the wrap never jumps).
+		return (
+			<span style={{display: 'inline-block', maxWidth, fontFamily: FONT_HAND, fontWeight: weight, fontSize: size, color, lineHeight: 1.1, whiteSpace: 'pre-wrap', paddingRight: '0.12em', ...style}}>
+				<span>{text.slice(0, chars)}</span><span style={{visibility: 'hidden'}}>{text.slice(chars)}</span>
+			</span>
+		);
+	}
 	return (
 		<span style={{position: 'relative', display: 'inline-block', fontFamily: FONT_HAND, fontWeight: weight, fontSize: size, color, lineHeight: 1.05, whiteSpace: 'pre', paddingRight: '0.12em', ...style}}>
 			<span style={{visibility: 'hidden'}}>{text}</span>
@@ -226,12 +242,15 @@ export const Hyphae: React.FC<{segs: Seg[]; p: number; color?: string; width?: n
 );
 
 /** Circular countdown ring for thinking holds. */
-export const Countdown: React.FC<{start: number; end: number; x: number; y: number; r?: number}> = ({start, end, x, y, r = 64}) => {
+export const Countdown: React.FC<{start: number; end: number; x: number; y: number; r?: number;
+	/** Opt in: show the ring full from this frame (for example from "Pause here to answer.") until the timed count starts. */
+	ringFrom?: number}> = ({start, end, x, y, r = 64, ringFrom}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
-	if (frame < start - 10) return null;
-	const appear = prog(frame, start - 10, 12);
-	const left = Math.max(0, 1 - (frame - start) / (end - start));
+	const from = ringFrom !== undefined ? Math.min(ringFrom, start) : start - 10;
+	if (frame < from) return null;
+	const appear = ringFrom !== undefined ? prog(frame, from, 12) : prog(frame, start - 10, 12);
+	const left = ringFrom !== undefined ? Math.min(1, Math.max(0, 1 - (frame - start) / (end - start))) : Math.max(0, 1 - (frame - start) / (end - start));
 	const secs = Math.ceil(((end - start) * left) / fps);
 	const c = 2 * Math.PI * r;
 	const done = frame >= end;
