@@ -18,6 +18,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 11. `math-a12-d12`: reciprocal trig derivatives (sun, tower and shadow). Graded A on 11 Nov.
 12. `math-a12-d13`: the remaining composites (drone camera). Graded A on 11 Nov.
 13. `math-a12-d14`: tangent and normal lines (headlights on a curving road). Graded A on 11 Nov.
+14. `math-a12-d15`: differentiability at a join (skate tracks). Graded A on 11 Nov.
+15. `math-a12-d16`: concavity and inflection (vase filling). Graded A on 11 Nov.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
