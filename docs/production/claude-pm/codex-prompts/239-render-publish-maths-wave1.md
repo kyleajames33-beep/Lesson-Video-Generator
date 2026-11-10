@@ -26,6 +26,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 19. `math-a12-i02`: power primitives and the reverse chain rule (sourdough starter). Graded A on 11 Nov. Its playlist position follows i01, which is not built yet; publish it now and Claude will slot i01 before it.
 20. `math-a12-i03`: exponential primitives (phone charging). Graded A on 11 Nov.
 21. `math-a12-i04`: the reciprocal primitive, ln|x| (fundraiser). Graded A on 11 Nov.
+22. `math-a12-i05`: trig primitives (solar panels). Graded A on 11 Nov.
+23. `math-a12-i06`: rectangles and trapezia estimating accumulated change (rain gauge). Graded A on 11 Nov.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
