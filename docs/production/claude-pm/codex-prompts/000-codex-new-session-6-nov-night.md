@@ -48,6 +48,7 @@ Owner priority (6 Nov, evening): get the new videos out. Pilots and new-course w
 3d2. **239:** render and publish the Maths videos Claude has graded A (d02 first; Claude appends more). These are the owner's top-priority new videos, so run them before voicing work.
 3e. **235:** review, plates and re-voice for the Maths d02 to d14 redesigns. Maths is the owner's top course; run this before the C-grade re-renders. The review and plates are light work and may run alongside a render, but the voicing runs alone.
 3e2. **238:** review, plates and voicing for the Maths d15 to d19 and i01 to i14 redesigns (19 designs). Run it straight after 235. Maths is the owner's top course.
+3e3. **240:** review, plates and voicing for the last 34 Maths redesigns (f01 to f15, s01 to s12, t01 to t04, g01 to g03). Run the reviews and plates straight after 238. Share the voicing with 236 within the daily Google quota, Maths first.
 3f. **236:** voice Year 11 Chemistry waves 1 to 6 (Google voice), one wave at a time, handing in after each wave. Interleave with renders: never run voicing at the same time as a render. Waves 1 and 2 come before the C-grade re-renders.
 3g. **237:** error check, plates and voicing for the repaired chem-y11-m1-v18 to v27 (wave 7). Run it after 236 wave 2.
 4. **199:** re-render the four Chemistry videos with render defects, check chem-m7-p06, and resolve the c10/c05 link record. g03 was already found in 196; reuse that work.
