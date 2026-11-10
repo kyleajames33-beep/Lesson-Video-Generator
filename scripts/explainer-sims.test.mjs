@@ -279,6 +279,136 @@ test('waves: crests crowd in front of a moving source, and the Doppler formula m
 	near(waves.dopplerFrequency({frequency: 100, waveSpeed: v, sourceSpeed: -vs}), 80, 1e-9, 'heard behind');
 });
 
+const titr = await load('src/explainer/sims/titration.ts');
+const circ = await load('src/explainer/sims/circuits.ts');
+
+test('titration: strong acid with strong base starts at pH 1, meets at pH 7 and mirrors after', () => {
+	const t = {analyte: {kind: 'acid', concentration: 0.1, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+	near(titr.phAt(t, 0), 1, 1e-6, 'start');
+	near(titr.equivalenceVolume(t), 25, 1e-12, 'equivalence volume');
+	near(titr.equivalencePoint(t).pH, 7, 1e-6, 'equivalence pH');
+	near(titr.phAt(t, 24.95), 4, 0.01, 'one drop before');
+	near(titr.phAt(t, 25.05), 10, 0.01, 'one drop after');
+	let last = -Infinity;
+	for (let v = 0; v <= 50; v += 0.25) { const pH = titr.phAt(t, v); assert.ok(pH > last, 'pH rises all the way'); last = pH; }
+	assert.equal(titr.halfEquivalence(t), null);
+	assert.throws(() => titr.phAt({analyte: {kind: 'acid', concentration: 0.1, volume: 25}, titrant: {kind: 'acid', concentration: 0.1}}, 1));
+});
+
+test('titration: a weak acid starts higher, buffers at pH = pKa and ends above 7', () => {
+	const t = {analyte: {kind: 'acid', concentration: 0.1, k: 1.8e-5, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+	near(titr.phAt(t, 0), 2.875, 0.005, 'start');
+	const half = titr.halfEquivalence(t);
+	near(half.volume, 12.5, 1e-12, 'half volume');
+	near(half.pKa, 4.745, 0.001, 'pKa');
+	near(half.pH, half.pKa, 0.01, 'pH = pKa half-way');
+	near(titr.equivalencePoint(t).pH, 8.72, 0.01, 'equivalence pH');
+	const m = titr.mixtureAt(t, 12.5);
+	near(m.acid.molecule / m.acid.ion, 1, 0.01, 'equal amounts of the two forms');
+	near(m.h + m.base.ion, m.oh + m.acid.ion, 1e-9, 'charges balance');
+	assert.equal(titr.indicatorFit(t, titr.INDICATORS.phenolphthalein).suits, true);
+	assert.equal(titr.indicatorFit(t, titr.INDICATORS.methylOrange).suits, false);
+	assert.ok(titr.indicatorFit(t, titr.INDICATORS.methylOrange).early > 5, 'methyl orange finishes changing far too early');
+	assert.ok(Math.abs(titr.indicatorFit(t, titr.INDICATORS.phenolphthalein).early) < 0.1);
+});
+
+test('titration: a weak base with a strong acid falls and ends below 7', () => {
+	const t = {analyte: {kind: 'base', concentration: 0.1, k: 1.8e-5, volume: 25}, titrant: {kind: 'acid', concentration: 0.1}};
+	near(titr.phAt(t, 0), 11.125, 0.005, 'start');
+	near(titr.equivalencePoint(t).pH, 5.28, 0.01, 'equivalence pH');
+	near(titr.halfEquivalence(t).pH, 9.255, 0.01, 'half-way');
+	assert.ok(titr.phAt(t, 30) < titr.phAt(t, 20));
+	assert.equal(titr.indicatorFit(t, titr.INDICATORS.methylOrange).suits, true);
+	assert.equal(titr.indicatorFit(t, titr.INDICATORS.phenolphthalein).suits, false);
+	near(titr.volumeAtPh(t, 9.255), 12.5, 0.02, 'volume at a pH');
+	const strong = {analyte: {kind: 'acid', concentration: 0.1, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+	for (const name of ['methylOrange', 'bromothymolBlue', 'phenolphthalein']) assert.equal(titr.indicatorFit(strong, titr.INDICATORS[name]).suits, true, name);
+});
+
+test('titration: conductivity is lowest at equivalence for strong with strong, and pouring follows its keyframes', () => {
+	const t = {analyte: {kind: 'acid', concentration: 0.1, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+	let best = 0, low = Infinity;
+	for (let v = 0; v <= 50; v += 0.05) { const c = titr.conductivityAt(t, v); if (c < low) { low = c; best = v; } }
+	near(best, 25, 0.06, 'minimum at equivalence');
+	near(titr.conductivityAt(t, 0), 0.1 * (349.8 + 76.3), 0.01, 'start: H+ and Cl-');
+	near(low, 0.05 * (50.1 + 76.3), 0.01, 'equivalence: Na+ and Cl- only');
+	const pour = [[10, 0], [110, 20], [210, 25]];
+	assert.equal(titr.addedAt(pour, 0), 0);
+	near(titr.addedAt(pour, 60), 10, 1e-12, 'half-way through the first stretch');
+	assert.equal(titr.addedAt(pour, 500), 25);
+	near(titr.flowAt(pour, 60), 0.2, 1e-9, 'fast stretch');
+	near(titr.flowAt(pour, 160), 0.05, 1e-9, 'slow stretch');
+	assert.equal(titr.flowAt(pour, 400), 0);
+	near(titr.indicatorShare(titr.INDICATORS.bromothymolBlue, 6.8), 0.5, 1e-9, 'half changed');
+	assert.equal(titr.cssColour(titr.indicatorColour(titr.INDICATORS.phenolphthalein, 5)), 'rgba(214,54,143,0.000)');
+});
+
+test('circuits: series shares the voltage, parallel shares the current', () => {
+	const series = circ.solveCircuit([
+		{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12},
+		{id: 'r1', kind: 'resistor', from: 'P', to: 'm', r: 2},
+		{id: 'r2', kind: 'resistor', from: 'm', to: 'N', r: 4},
+		{id: 'v', kind: 'voltmeter', from: 'm', to: 'N'},
+	]);
+	near(series.current.b, 2, 1e-6, 'battery current');
+	near(series.current.r1, 2, 1e-6, 'same current');
+	near(series.drop.r1, 4, 1e-6, 'smaller share');
+	near(series.drop.r2, 8, 1e-6, 'larger share');
+	near(series.drop.v, 8, 1e-6, 'voltmeter');
+	assert.equal(series.current.v, 0);
+	near(series.power.r2, 16, 1e-6, 'power');
+	near(series.voltage.P, 12, 1e-6, 'top rail');
+	const parallel = circ.solveCircuit([
+		{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12},
+		{id: 'a', kind: 'ammeter', from: 'P', to: 'j'},
+		{id: 'r1', kind: 'resistor', from: 'j', to: 'N', r: 6},
+		{id: 'r2', kind: 'resistor', from: 'j', to: 'N', r: 3},
+	]);
+	near(parallel.current.r1, 2, 1e-6, 'branch 1');
+	near(parallel.current.r2, 4, 1e-6, 'branch 2');
+	near(parallel.current.a, 6, 1e-6, 'ammeter reads the total');
+	near(parallel.current.b, 12 / circ.parallelResistance(6, 3), 1e-6, 'matches the parallel formula');
+	near(circ.parallelResistance(6, 3), 2, 1e-12, 'parallel formula');
+	assert.equal(circ.seriesResistance(2, 4, 6), 12);
+	assert.equal(parallel.short, false);
+});
+
+test('circuits: internal resistance lowers the terminal voltage, and a short is flagged', () => {
+	const s = circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 9, r: 1}, {id: 'r', kind: 'resistor', from: 'P', to: 'N', r: 8}]);
+	near(s.current.b, 1, 1e-6, 'current');
+	near(s.terminal.b, 8, 1e-6, 'terminal voltage');
+	near(s.power.b, 1, 1e-6, 'heat in the battery');
+	const open = circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 9, r: 1}, {id: 's', kind: 'switch', from: 'P', to: 'x', closed: false}, {id: 'r', kind: 'resistor', from: 'x', to: 'N', r: 8}]);
+	assert.equal(open.current.r, 0);
+	near(open.terminal.b, 9, 1e-6, 'open circuit: terminal voltage equals the EMF');
+	near(open.drop.s, 9, 1e-6, 'the whole voltage sits across the open switch');
+	assert.equal(circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 9}, {id: 'w', kind: 'wire', from: 'P', to: 'N'}]).short, true);
+	assert.throws(() => circ.solveCircuit([{id: 'x', kind: 'wire', from: 'a', to: 'b'}, {id: 'x', kind: 'wire', from: 'b', to: 'a'}]));
+});
+
+test('circuits: closing a switch changes the currents, charge is conserved at junctions and never jumps', () => {
+	const parts = [
+		{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12},
+		{id: 'l1', kind: 'lamp', from: 'P', to: 'j', r: 4},
+		{id: 'l2', kind: 'lamp', from: 'j', to: 'N', r: 6},
+		{id: 's', kind: 'switch', from: 'j', to: 'c', closed: false},
+		{id: 'l3', kind: 'lamp', from: 'c', to: 'N', r: 6},
+	];
+	const run = circ.runCircuit(parts, [{at: 100, set: {s: {closed: true}}}]);
+	const before = circ.circuitAt(run, 99), after = circ.circuitAt(run, 100);
+	near(before.current.b, 1.2, 1e-6, 'one path');
+	assert.equal(before.current.l3, 0);
+	near(after.current.b, 12 / 7, 1e-6, 'two paths');
+	near(after.current.l1, after.current.l2 + after.current.l3, 1e-9, 'current in equals current out');
+	assert.ok(after.power.l1 > before.power.l1 && after.power.l2 < before.power.l2, 'lamp 1 brightens, lamp 2 dims');
+	assert.equal(circ.partsAt(run, 50).find(p => p.id === 's').closed, false);
+	assert.equal(circ.partsAt(run, 150).find(p => p.id === 's').closed, true);
+	near(circ.chargeMoved(run, 'b', 100), 120, 1e-6, 'charge before the change');
+	near(circ.chargeMoved(run, 'b', 107), 120 + 12, 1e-6, 'charge carries on from where it was');
+	assert.equal(circ.chargeMoved(run, 'l3', 100), 0);
+	assert.throws(() => circ.runCircuit(parts, [{at: 5, set: {nope: {closed: true}}}]));
+});
+
 test('waves: refraction follows Snell and stops at the critical angle', () => {
 	const deg = Math.PI / 180;
 	near(waves.refractionAngle(1, 1.5, 30 * deg) / deg, 19.4712, 1e-3, 'air to glass');

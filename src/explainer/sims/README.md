@@ -74,6 +74,40 @@ Every wave is a formula of place and time, so there is nothing to pre-compute.
 - `useWaveTime({at, rate})` is the one clock. Real sound and light are far too fast to watch: pick a slow model wave and say so, or use a tiny `rate`.
 - In longitudinal mode the particle shift is drawn to the same scale as position, so keep amplitude below about wavelength / 7 or neighbours overlap.
 
+### Titration (`titration.ts`, drawing in `titration-views.tsx`)
+
+The flask after any volume from the burette: pH, every particle's concentration and the conductivity, all from one charge-balance sum. Strong and weak acids and bases use the same code.
+
+| Idea | What to use |
+| --- | --- |
+| Shape of a titration curve (strong or weak, acid or base in the flask) | `{analyte: {kind, concentration, k?, volume}, titrant: {kind, concentration, k?}}`, drawn with `TitrationGraph` |
+| Equivalence point and why its pH is not always 7 | `equivalencePoint`, and `mixtureAt` for what is left in the flask |
+| Buffer region, pH = pKa half-way | `halfEquivalence`, the `half` marker on the graph |
+| Choosing an indicator | `INDICATORS`, `indicatorFit` (does its range sit in the steep part, and how early it finishes), the `indicator` band on the graph |
+| Conductivity titration | `conductivityAt`, or `TitrationGraph quantity="conductivity"` |
+
+- Leave `k` out for a strong acid or base. Give Ka for a weak acid and Kb for a weak base. One H⁺ or OH⁻ per particle only.
+- `usePour(keyframes)` is the one clock: it gives the volume added and the flow at the current frame. Put keyframes close together in volume near the end point so the last drops go in slowly.
+- `TitrationRig` is a line diagram of the burette and flask whose level, drops and flask colour follow the same volume. Over a painted plate of real glassware, pass `outline={false}` and it draws only the liquids.
+- `indicatorFit` calls an indicator suitable when its whole range lies between the pH values 2% before and 2% after equivalence. Check the result against the lesson's own claim before narrating it.
+
+### Circuits (`circuits.ts`, drawing in `circuits-views.tsx`)
+
+Direct-current circuits solved from Kirchhoff's laws: name the junctions, list the parts that join them, and read off every current, voltage and power.
+
+| Idea | What to use |
+| --- | --- |
+| Current as moving charge; the same current all round a series loop | `CircuitView`: evenly spaced charges whose speed follows the current |
+| Voltage shared in series, current shared in parallel | `solveCircuit` or `runCircuit`, then `state.drop` and `state.current`; `potential` colours each wire by its voltage |
+| Closing a switch, changing a resistance | `runCircuit(parts, [{at, set}])`; lamps change brightness and charges change speed without jumping |
+| Internal resistance, terminal voltage | a battery with `r`; read `state.terminal` |
+| Meters | `ammeter` in the line, `voltmeter` across a part; each shows its own reading |
+
+- A battery's `from` is its negative terminal. Currents are conventional and positive from `from` to `to`. Use `carriers="electrons"` to show the charges moving the other way.
+- `layout` gives each part's route on a grid as corner points from its `from` end. The symbol sits in the middle of the longest straight stretch.
+- Where no current flows the charges stay on the wire and sit still. That is correct, and worth saying in narration.
+- Symbols follow exam-paper conventions (rectangle resistor, crossed-circle lamp). This part only draws diagrams, not real equipment.
+
 ### Drawing (`views.tsx`)
 
 - `ParticleBoxView`, `BoxCountGraph`, `useBoxFrame(run, clock)`.
@@ -103,17 +137,19 @@ const Scene: React.FC = () => {
 - Choose the seed by looking: try three or four and keep the run that shows the idea most clearly at the cue. Then leave it.
 - A simulation is not a plate. Organisms, apparatus and real objects still get painted plates; the simulation shows the particles or the path.
 
-To see them all, grade the gallery: `npm run grade:explainer -- SimGallery --frames 32`. The sheet lands in `out/explainer/SimGallery/grade/`. It should pass.
+To see them all, grade the gallery: `npm run grade:explainer -- SimGallery --frames 40`. The sheet lands in `out/explainer/SimGallery/grade/`. It should pass.
 
 ## Wanted next
 
 Listed by how many unbuilt designs could use them (Year 11 Chemistry, Year 12 Physics, Year 11 Physics):
 
-1. Titration and pH curve with a burette drip and a live curve.
-2. Circuits: charge flow with live current and voltage readouts.
-3. States of matter and heating curves (needs attraction between particles in the box).
-4. Momentum: two-body collisions on a track with before and after bars.
-5. Allele frequency drift and selection across generations.
-6. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
+1. States of matter and heating curves (needs attraction between particles in the box).
+2. Momentum: two-body collisions on a track with before and after bars.
+3. Allele frequency drift and selection across generations.
+4. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
+5. Titrations with two H⁺ per acid particle, and buffers with acid or base added.
+6. Capacitor charging and alternating current for the circuit engine.
 
-Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram).
+Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram). Built on 11 November 2026: titration and circuits.
+
+Maths lessons: the Maths studio kit (`../math/studio`) has its own dice histogram part. The Maths owner chooses between that part and `chance.ts` for each lesson, so one lesson never mixes the two.

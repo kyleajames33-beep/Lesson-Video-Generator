@@ -13,6 +13,10 @@ import {TrialPace, eventOf, runTrials} from '../../sims/chance';
 import {ChanceHistogram, ChanceShareGraph, TrialView, useTrials} from '../../sims/chance-views';
 import {Source, Wave, displacement, dopplerFrequency, interferenceAt, standingMode, sumAt, waveSpeed} from '../../sims/waves';
 import {FrontStage, WaveStage, WaveStringView, WavefrontView, ringsFrom, useWaveTime} from '../../sims/waves-views';
+import {INDICATORS, Pour, Titration, conductivityOf, equivalencePoint, indicatorShare, mixtureAt} from '../../sims/titration';
+import {TitrationGraph, TitrationRig, usePour} from '../../sims/titration-views';
+import {Part, runCircuit} from '../../sims/circuits';
+import {CircuitLayout, CircuitStage, CircuitView, useCircuit} from '../../sims/circuits-views';
 
 export const SCENE_LEN = 360;
 /** Compute a run the first time a scene needs it, not when the file is loaded. */
@@ -292,7 +296,118 @@ const Doppler: React.FC = () => {
 	);
 };
 
-// 13 to 16. The shared scene parts (src/explainer/shared/scenes.tsx), with simulations as their pictures ----
+// 13. Titration: weak acid, strong base ------------------------------------------
+const WEAK: Titration = {analyte: {kind: 'acid', concentration: 0.1, k: 1.8e-5, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+const WEAK_POUR: Pour = [[20, 0], [150, 21], [215, 24.6], [275, 25.4], [345, 36]];
+const WEAK_END = equivalencePoint(WEAK);
+const TitrationDemo: React.FC = () => {
+	const {added, flow} = usePour(WEAK_POUR), m = mixtureAt(WEAK, added);
+	const pink = indicatorShare(INDICATORS.phenolphthalein, m.pH);
+	return (
+		<>
+			<Heading text="Weak acid, strong base: the pH leaps at the end" />
+			<TitrationRig titration={WEAK} added={added} flow={flow} x={96} y={200} indicator={INDICATORS.phenolphthalein} />
+			<TitrationGraph titration={WEAK} added={added} x={500} y={200} w={760} h={720} to={40} indicator={{indicator: INDICATORS.phenolphthalein, at: 30}} half={{}} equivalence={{}} />
+			<SimReadout x={1310} y={214} w={520} title="Read from the flask" rows={[
+				{label: 'base added', value: added, digits: 2, unit: 'mL'},
+				{label: 'pH', value: m.pH, digits: 2, tone: 'teal'},
+				{label: 'flask colour', value: pink < 0.05 ? 'colourless' : pink < 0.6 ? 'pale pink' : 'pink', tone: pink < 0.05 ? 'grey' : 'red'},
+			]} />
+			<Note x={1310} y={560} text={`Equivalence at ${WEAK_END.volume.toFixed(1)} mL, pH ${WEAK_END.pH.toFixed(1)}: above 7, so the indicator must change above 7.`} at={280} />
+		</>
+	);
+};
+
+// 14. Conductivity titration: strong acid, strong base ----------------------------
+const STRONG: Titration = {analyte: {kind: 'acid', concentration: 0.1, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+const STRONG_POUR: Pour = [[20, 0], [340, 45]];
+const ConductivityDemo: React.FC = () => {
+	const {added, flow} = usePour(STRONG_POUR), m = mixtureAt(STRONG, added);
+	return (
+		<>
+			<Heading text="Conductivity falls, turns, then rises" />
+			<TitrationRig titration={STRONG} added={added} flow={flow} x={96} y={200} />
+			<TitrationGraph titration={STRONG} added={added} x={500} y={200} w={760} h={720} to={50} quantity="conductivity" tone="violet" yLabel="conductivity (mS/cm)" equivalence={{label: 'turning point: equivalence'}} />
+			<SimReadout x={1310} y={214} w={520} title="In the flask (mol/L)" rows={[
+				{label: 'H⁺', value: m.h, digits: 3, tone: 'red'},
+				{label: 'OH⁻', value: m.oh, digits: 3, tone: 'blue'},
+				{label: 'conductivity', value: conductivityOf(STRONG, m), digits: 1, unit: 'mS/cm', tone: 'violet'},
+			]} />
+			<Note x={1310} y={560} text="First, fast hydrogen ions are swapped for slower sodium ions, so the line falls." />
+			<Note x={1310} y={760} text="After equivalence, spare hydroxide ions build up, so it rises." at={200} color={TONES.blue.ink} />
+		</>
+	);
+};
+
+// 15. Circuit: a second path opens ------------------------------------------------
+const LAMPS: Part[] = [
+	{id: 'battery', kind: 'battery', from: 'N', to: 'P', emf: 12},
+	{id: 'meter', kind: 'ammeter', from: 'P', to: 'a'},
+	{id: 'lamp1', kind: 'lamp', from: 'a', to: 'j1', r: 4},
+	{id: 'lamp2', kind: 'lamp', from: 'j1', to: 'j2', r: 6},
+	{id: 'switch', kind: 'switch', from: 'j1', to: 'c', closed: false},
+	{id: 'lamp3', kind: 'lamp', from: 'c', to: 'j2', r: 6},
+	{id: 'back', kind: 'wire', from: 'j2', to: 'N'},
+];
+const LAMP_LAYOUT: CircuitLayout = {
+	battery: [[0, 4], [0, 0]], meter: [[0, 0], [3, 0]], lamp1: [[3, 0], [6, 0]], lamp2: [[6, 0], [6, 4]],
+	switch: [[6, 0], [9, 0], [9, 1]], lamp3: [[9, 1], [9, 4], [6, 4]], back: [[6, 4], [0, 4]],
+};
+const LAMP_STAGE: CircuitStage = {x: 150, y: 330, cell: 116};
+const lamps = lazy(() => runCircuit(LAMPS, [{at: 170, set: {switch: {closed: true}}}]));
+const CircuitDemo: React.FC = () => {
+	const run = lamps(), {state} = useCircuit(run);
+	return (
+		<>
+			<Heading text="Close the switch: a second path opens" />
+			<CircuitView run={run} layout={LAMP_LAYOUT} stage={LAMP_STAGE} junctions={[[6, 0], [6, 4]]} lampFull={12}
+				labels={{battery: {text: '12 V', side: 1}, lamp1: {text: 'lamp 1'}, lamp2: {text: 'lamp 2', side: 1}, lamp3: {text: 'lamp 3', side: 1}, switch: {text: 'switch'}}} />
+			<SimReadout x={1330} y={214} w={500} title="Current (A)" rows={[
+				{label: 'from the battery', value: state.current.battery, digits: 2, tone: 'amber'},
+				{label: 'through lamp 2', value: state.current.lamp2, digits: 2},
+				{label: 'through lamp 3', value: state.current.lamp3, digits: 2},
+			]} />
+			<Note x={1330} y={560} text="Each dot is charge. Faster dots mean a larger current." />
+			<Note x={1330} y={730} text="Two paths side by side resist less than one, so the battery current rises and lamp 1 brightens." at={190} color={TONES.amber.ink} />
+		</>
+	);
+};
+
+// 16. Circuit: voltage shared in series -------------------------------------------
+const SHARE: Part[] = [
+	{id: 'battery', kind: 'battery', from: 'N', to: 'P', emf: 12},
+	{id: 'r1', kind: 'resistor', from: 'P', to: 'm', r: 2},
+	{id: 'r2', kind: 'resistor', from: 'm', to: 'q', r: 4},
+	{id: 'back', kind: 'wire', from: 'q', to: 'N'},
+	{id: 'v1', kind: 'voltmeter', from: 'P', to: 'm'},
+	{id: 'v2', kind: 'voltmeter', from: 'm', to: 'q'},
+];
+const SHARE_LAYOUT: CircuitLayout = {
+	battery: [[0, 3], [0, 0]], r1: [[0, 0], [4, 0]], r2: [[4, 0], [8, 0]], back: [[8, 0], [8, 3], [0, 3]],
+	v1: [[0.6, 0], [0.6, -1.5], [3.4, -1.5], [3.4, 0]], v2: [[4.6, 0], [4.6, -1.5], [7.4, -1.5], [7.4, 0]],
+};
+const SHARE_STAGE: CircuitStage = {x: 170, y: 520, cell: 124};
+const share = lazy(() => runCircuit(SHARE));
+const SeriesShareDemo: React.FC = () => {
+	const run = share(), {state} = useCircuit(run);
+	return (
+		<>
+			<Heading text="In series, the bigger resistance takes the bigger share" />
+			<CircuitView run={run} layout={SHARE_LAYOUT} stage={SHARE_STAGE} potential={{max: 12}}
+				junctions={[[0.6, 0], [3.4, 0], [4.6, 0], [7.4, 0]]}
+				labels={{battery: {text: '12 V', side: 1}, r1: {text: '2 Ω', side: 1}, r2: {text: '4 Ω', side: 1}}} />
+			<SimReadout x={1330} y={214} w={500} title="Read from the circuit" rows={[
+				{label: 'current, everywhere', value: state.current.r1, digits: 1, unit: 'A'},
+				{label: 'across 2 Ω', value: state.drop.r1, digits: 1, unit: 'V', tone: 'warm'},
+				{label: 'across 4 Ω', value: state.drop.r2, digits: 1, unit: 'V', tone: 'cool'},
+			]} />
+			<Note x={1330} y={540} text="Wire colour shows potential: warm is 12 V, cool is 0 V. It only changes across a resistor." />
+			<Note x={1330} y={800} text="4 V + 8 V = 12 V: the shares add up to the battery voltage." at={120} />
+		</>
+	);
+};
+
+// 17 to 20. The shared scene parts (src/explainer/shared/scenes.tsx), with simulations as their pictures ----
 const ACCENT = TONES.teal.ink;
 // The picture stops at the top of the flight, so its last readout is the answer being worked out.
 const rise = lazy(() => runMotion({field: {kind: 'uniform', ax: 0, ay: -G}, start: {x: 0, y: 0, vx: U * Math.cos(ANGLE), vy: U * Math.sin(ANGLE)}, duration: (U * Math.sin(ANGLE)) / G, steps: 300}));
@@ -365,6 +480,10 @@ export const GALLERY_SCENES: Record<string, React.FC> = {
 	'standing-wave': StandingWaveDemo,
 	'two-sources': TwoSources,
 	'doppler': Doppler,
+	'titration': TitrationDemo,
+	'conductivity': ConductivityDemo,
+	'circuit-paths': CircuitDemo,
+	'circuit-series': SeriesShareDemo,
 	'worked-example': WorkedDemo,
 	'question': QuestionDemo,
 	'feedback': FeedbackDemo,

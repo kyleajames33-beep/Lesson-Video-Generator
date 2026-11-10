@@ -58,7 +58,7 @@ All thresholds live in one place: `RULES` in `scripts/lib/explainer-grade-rules.
 | `Explainer-bio-m8-b09` | root-graded A | pass, 7 warnings | warns on grey definition text in six frames (25 to 40% faint) |
 | `Explainer-chem-m8-c03b` | built before the A gate | fail, 25 findings | tiny washed-out flowchart text, near-empty frames, paragraph notes, 25 s notes hold. Root agrees with every frame it flagged |
 | `Explainer-chem-m5-g01` | the October reference sheet | fail | the sheet matches the stored reference frame for frame; the lesson predates the A rules (several half-empty frames, 25 s notes hold) |
-| `SimGallery` | new | pass, 2 warnings (at `--frames 32`) | after the worked-example layout pass and with a 40 s notes scene; two sparse frames warn |
+| `SimGallery` | new | pass, 6 warnings (at `--frames 40`, 11 November) | 20 scenes after titration and circuits were added; all six warnings are sparse frames in older demo scenes |
 
 What calibration changed: the empty-frame limits were raised from 50/40% to 60/50%, question scenes only warn when sparse, the faint-text failure moved to "more than half", and text of 24 to 26 px warns instead of failing.
 
