@@ -4,6 +4,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 
 **Background.** The owner approved the Maths pilot (d01) on 7 Nov. Claude builds each redesigned lesson on the studio kit and grades its 16-frame sheet A before listing it here. Sheets and notes are in `docs/production/claude-pm/builds/math-a12-dNN-sheet.jpg` and `-notes.md`. Claude appends lessons to this list as each one passes; run them in list order.
 
+**Root sign-off (11 Nov), answering the 10 Nov hold:** read `checks/root-signoff-maths-builds.md`. Root's grade governs over builders' self-grades. The learning reviews are the brief 235 and 238 reports. Step 3's normal-speed playback is the exact voiced preview: record it at export stage in each production brief, then publish. Resume with d01 (upload the approved v2), then d02 onward in list order.
+
 **Ready to render:**
 1. `math-a12-d02`: the derivative of aˣ (savings coin jar). Graded A on 10 Nov.
 2. `math-a12-d03`: the derivative of ln x (app users, "how long until?"). Graded A on 10 Nov.
