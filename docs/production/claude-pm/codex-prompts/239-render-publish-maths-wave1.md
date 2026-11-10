@@ -23,6 +23,7 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 16. `math-a12-d17`: sketching from f, f′ and f″ (video views). Graded A on 11 Nov.
 17. `math-a12-d18`: optimisation with a constraint (sheep pen). Graded A on 11 Nov. **Before rendering, re-voice scene 3 only** (Google voice, as in brief 235): its design sentence was corrected on 11 Nov to "near twenty it closes into a narrow strip sticking out from the wall". Rewrite the measured `lesson.json` for that scene. The build reads cue phrases from that file, so it retimes itself. Then render.
 18. `math-a12-d19`: exponential growth and decay, dQ/dt = kQ (car depreciation). Graded A on 11 Nov.
+19. `math-a12-i02`: power primitives and the reverse chain rule (sourdough starter). Graded A on 11 Nov. Its playlist position follows i01, which is not built yet; publish it now and Claude will slot i01 before it.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
