@@ -54,3 +54,13 @@ Also:
 - **Countdown:** show the ring full from "Pause here to answer." until the timed countdown starts, so it appears in every hold frame.
 
 Never ship placeholder art. If a design-named plate is missing, stop that scene and report it.
+
+## Shared parts and the automatic check (root, 10 November 2026)
+
+Use these in every new build. Do not refactor finished lessons onto them.
+
+- **Sizes and colours:** `src/explainer/shared/tokens.ts`. Pick a type size by purpose (`TYPE.working`, `TYPE.current`, `TYPE.body`) and a named tone per idea (`TONES`). Do not invent new hex colours or font sizes for text.
+- **Repeated scenes:** `src/explainer/shared/scenes.tsx` has `QuestionScene` (full question, "Pause here to answer." and a ring that stays on screen through the hold), `FeedbackScene` (answer, one or two reasons, a crossed mistake), `WorkedExample` (the g01 layout) and `KeyNotesScene` with `MemoryCard`. They throw an error if you pass more than six notes, a note over 95 characters, or more than two feedback reasons. Fix the content; do not work around the error.
+- **Simulations:** read `src/explainer/sims/README.md` before coding any particle, gas, reaction-rate, equilibrium, diffusion, projectile, orbit or charged-particle animation. Use the engine there and read every on-screen number from its run. Copy the nearest scene in `src/explainer/lessons/SimGallery/scenes.tsx`.
+- **Before you send a sheet to root, run the check:** `npm run grade:explainer -- <explainer id>`. It takes the stills lock itself, so do not wrap it in your own lock. Fix every failure and look at every warning. Attach `out/explainer/<id>/grade/<id>-grade.md` to your notes. A pass is required but is not the grade: root still judges the sheet. Details: `docs/production/claude-pm/grade-checker.md`.
+

@@ -43,7 +43,7 @@ const Tracker: React.FC<{config: ExplainerConfig; starts: number[]; accent: stri
 	if (stage < 0) return null;
 	const vis = prog(f, (starts[1] ?? 0) - 20, 20);
 	return (
-		<div style={{position: 'absolute', right: 96, top: 40, display: 'flex', alignItems: 'center', gap: 0, opacity: vis}}>
+		<div data-audit-ignore style={{position: 'absolute', right: 96, top: 40, display: 'flex', alignItems: 'center', gap: 0, opacity: vis}}>
 			{tracker.labels.map((l, i) => {
 				const on = stage >= i + 1;
 				const current = stage === i + 1;
@@ -126,7 +126,7 @@ export const ExplainerVideo: React.FC<{config: ExplainerConfig}> = ({config}) =>
 				</Sequence>
 			) : null)}
 			<Soundtrack config={config} starts={starts} />
-			<div style={{position: 'absolute', left: 96, top: 44, fontFamily: FONT_DISPLAY, fontSize: 19, fontWeight: 700, letterSpacing: 3, color: INK_SOFT}}>
+			<div data-audit-ignore style={{position: 'absolute', left: 96, top: 44, fontFamily: FONT_DISPLAY, fontSize: 19, fontWeight: 700, letterSpacing: 3, color: INK_SOFT}}>
 				<span style={{color: accent}}>{config.subjectLabel}</span> · {config.topicLabel}
 			</div>
 			<Tracker config={config} starts={starts} accent={accent} />

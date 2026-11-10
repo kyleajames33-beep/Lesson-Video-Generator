@@ -236,7 +236,7 @@ export const Countdown: React.FC<{start: number; end: number; x: number; y: numb
 	const c = 2 * Math.PI * r;
 	const done = frame >= end;
 	return (
-		<g opacity={appear * (1 - prog(frame, end, 10))} transform={`translate(${x},${y}) scale(${0.85 + 0.15 * appear})`}>
+		<g data-audit="countdown" opacity={appear * (1 - prog(frame, end, 10))} transform={`translate(${x},${y}) scale(${0.85 + 0.15 * appear})`}>
 			<circle r={r + 16} fill="#fffdf8" stroke="rgba(0,0,0,0.06)" strokeWidth={2} />
 			<circle r={r} fill="none" stroke={PAPER_DEEP} strokeWidth={14} />
 			<circle r={r} fill="none" stroke={AMBER} strokeWidth={14} strokeLinecap="round" strokeDasharray={c} strokeDashoffset={c * (1 - left)} transform="rotate(-90)" />
