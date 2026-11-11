@@ -36,3 +36,11 @@ Calls made by the upgrade session (Claude, second session) at Revision 3 (v05: R
 22. **Crossed slips added.** v03 scene 6 gains "collect first, check the method later". v07 scene 3 crosses "This holds for any force" ahead of the classmate comment in scene 6; root may prefer it only in scene 6.
 23. **v04.** Scene 15 was left without hand tags or a framed line so fa0-v05's opening still matches. The Decisions "Handoff" bullet and summary line still describe the superseded chip naming fa1-v24; scene 15 already follows decision 2. Root to reword or leave.
 24. **Plates to settle before build.** (a) The cone sidecar `phys-y11-paper-cone-set-v1.json` reads "not-approved; constant-slant geometry not achieved"; the five cone files exist and v02 and v03 name them. Root accepts them or asks for a repaint. (b) v06 needs five plates requested by other designs and not yet delivered: `phys-y11-cricket-ball-v1.png` (v29) and `phys-y11-air-track-v1.png`, `phys-y11-air-glider-v1.png`, `phys-y11-glider-flag-v1.png`, `phys-y11-glider-mass-v1.png` (v31). (c) v06 reuses `b4-car-blue-v1.png` from the Biology folder, as fa1-v26 does. (d) v01's Moon sidecar still reads "no playback approval". (e) v01's ball and sheet are drawn larger than the 1.000 m scale allows, tagged "objects not to scale"; five cones in a row sit under 300 px tall.
+
+**Root acceptance (12 November 2026).** Items 13 to 24 are accepted, with these rulings:
+- **18:** keep the tagged model predictions.
+- **22:** v07's crossed slip "This holds for any force" appears in scene 6 only, beside the classmate comment; remove it from scene 3.
+- **23:** leave v04 as it is. The Decisions bullet may be reworded at the next edit.
+- **24(a):** accept the five cone plates for illustration. The drop times are model values, so exact constant-slant geometry is not needed. Do not stretch them.
+- **24(b):** the plates requested by other designs go to the Year 11 Physics error-check brief.
+- **14:** adopted as the rule for every Year 11 video that opens on a join: hold the joined frame under the bridge take, then the plate arrives within 20 s.

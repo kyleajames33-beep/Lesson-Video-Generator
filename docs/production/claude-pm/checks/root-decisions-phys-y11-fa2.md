@@ -49,3 +49,10 @@ U11. **Plates still undelivered or to check.** v29's noise-cancelling headphones
 U12. **v15 research task card.** Decision 19's screen-only card was missing; it is added to scene 17 as "Research task: choose one use of an electromagnetic wave and justify it with the three checks." Root confirms the wording.
 U13. **Handoff scenes left word for word.** Still unscoped or ghosted: v07 scene 14's recap of the zero-crossing rule (offered fix: "the places where its arrows meet show where the compressions are"), v10 scene 15 ("coded if it is not yet painted"), v15's dimmer second frame, v17 and v18 (grey arcs, faint ray), v28 scene 20 and v31 scene 16 (one ghost item each). Each fix needs the handoff and the next opening changed together.
 U14. **Other calls.** U+2061 marks removed from the syllabus quotes in v21 and v22 (the syllabus JSON still has them). v23's crossed slip "0.03 ÷ 1.50 = 2.0%" is the site lesson's own figure; root picks another slip or logs a site correction. New screen-only crossed slips and live readout values are listed in each design's "Numbers used" for the Codex check (notably v04's "6% closer" and "13% closer", v21's and v23's boards, v25's focus readouts, which assume 4 dioptres at the slider's maximum, and v27's sweep board). Key notes were trimmed to five in every design; each Revision section lists what left the board.
+
+**Root acceptance (12 November 2026).** U1 to U14 are accepted, with these rulings:
+- **U4:** confirmed: v10 attempt 1(b) asks for the larger signal amplitude. Log the site's "B is louder" version as a site correction.
+- **U11:** build with filament lamp v2.
+- **U12:** confirmed wording.
+- **U13:** apply the offered v07 scene 14 fix ("the places where its arrows meet show where the compressions are"). Leave the rest word for word.
+- **U14:** v23 uses a different crossed slip, not the site's own figure; the upgrade session picks a common real slip. Log the site's 2.0% figure as a site correction if it is wrong.
