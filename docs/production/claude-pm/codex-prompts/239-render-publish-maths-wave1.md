@@ -36,6 +36,7 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 25. `math-a12-i09`: definite integrals with signs (frost thermometer). Graded A on 11 Nov.
 26. `math-a12-i10`: signed integral against total area (lift). Graded A on 11 Nov.
 27. `math-a12-i12`: symmetry and numerical checks (garden cut and fill, footbridge). Graded A on 11 Nov. Its playlist position follows i11, which is not built yet.
+28. `math-a12-i14`: displacement, velocity and acceleration (robot vacuum, snow post). Graded A on 12 Nov. **Before rendering, re-voice scene 2 only:** design Revision 3 says "measured from a fixed origin" (238-I14-REFERENCE-POINT). Rewrite the measured lesson.json; the build reads cue phrases from it. Then check the scene 2 cues listed in `builds/math-a12-i14-notes.md`.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 
