@@ -1,0 +1,7 @@
+# f09 redesign: learning review (11 November 2026)
+
+**Disposition: changes required before plates or voice.** The car statement gives a concrete way to distinguish interest from debt reduction. The prediction, table, recurrence, algebra and home-loan comparison give a coherent progression, with feedback on repayment order and the GP ratio. The immediate f08 handoff is the same $30,000, 0.6% and $600 timeline, and f10 is signposted by the rate/repayment comparison. The loan rates are stated model inputs rather than recommendations.
+
+The step-by-step calculation and final repayment need the cent-rounding explanations in the companion maths check; otherwise learners can correctly subtract the displayed amounts and obtain different answers. General descriptions of a balance falling must be limited to a repayment large enough to reduce it, and the zero-rate exception to the formula should be stated. The 30-year model needs its reduced final repayment acknowledged. These affect conceptual accuracy and legibility, so do not release without correction and recheck.
+
+Mechanical inventory: 6,276 narration characters across 16 scene strings, no em dash and no unmatched bold cue phrase in its simple text scan. This scan is not a full cue-order or timing validation. Final duration awaits measured voice, which remains paused. Anchor uniqueness across all 67 designs and plate positions await the course-wide audit and asset work. No voice, render, plates, or source-design edits made.

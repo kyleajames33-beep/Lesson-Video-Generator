@@ -1,0 +1,7 @@
+# f13 redesign: maths check (11 November 2026)
+
+**Changes required before plates or voice.** Exact fraction results are in `work/brief240/f13-calculations.json` and `check-f13.py`: hook $13,954.0061, site example $20,298.0539, 30-year balance $240,644.2444, and attempts $4,973.068125 and $6,211.62659. At month 315 interest is below contributions; at 316 it first exceeds them, supporting 'about 26 years'. The first deposit grows to $268.427891..., which rounds to the spoken $268.43; the author verification's $268.4309... is incorrect and should be corrected.
+
+The formula divides by r, so state r≠0 and the zero-rate case FV=nM. Scene 6 says 'r and n are both per period'; r is a rate per period but n is the number of periods, not a quantity per period. State also that the formula models a zero starting balance; an existing starting amount must be added as a separate growth term. The memory aid 'first in earns the most' assumes a positive interest rate and should be scoped accordingly.
+
+Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson06.sa.html Problem 1 confirms $300 monthly, 4.8%, five years, $20,298.05 and $2,298.05 interest. Its displayed rounded intermediate 300 × 67.660 equals $20,298.00, not $20,298.05; calculate using full precision. The site's Q3(b) says later payments have up to 30 years to compound; the earlier payments do. The video correctly says early deposits, despite its author note attributing the reasoning to that source.

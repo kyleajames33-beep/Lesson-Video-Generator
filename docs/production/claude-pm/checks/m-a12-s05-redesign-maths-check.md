@@ -1,0 +1,7 @@
+# s05 redesign: maths check (11 November 2026)
+
+**Changes required before plates or voice.** Independent symbolic and exact calculations in `work/brief240/s05-calculations.json` and `check-s05.py` confirm the two F=x²/9 strip increases 11/900 and 17/300, the parcel interval probability 1/3, the courier normalising constant 1/8, P(X<1)=7/16 and CDF (8x−x²)/16 on [0,4]. Differentiating x²(3−x)/4 gives 3x(2−x)/4; attempt answers 5/8 and (2−x)/2 check.
+
+The statement f=F′ needs its usual qualification: it holds where the CDF is differentiable, or almost everywhere for an absolutely continuous distribution. In the opening piecewise example the derivative at the right support endpoint does not exist even though a density value can be assigned there without affecting probability. Similarly F is an integral of f for the continuous density models used, but not for every possible continuous CDF without additional absolute-continuity assumptions. State that scope. A density is nonnegative almost everywhere; its chosen point values are immaterial to probabilities. A higher density at a point is a local concentration, not a positive probability of that exact point.
+
+Direct browser inspection of https://hscscience.com.au/subjects/maths-advanced/year12/random-variables/lesson09.sa.html confirms Problems 1–3: k(4−x) on [0,4], k=1/8, P(X<1)=7/16, its CDF setup, and F=x²(3−x)/4 on [0,2]. The latter derivative was independently recalculated above.

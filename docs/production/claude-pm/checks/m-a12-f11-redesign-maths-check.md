@@ -1,0 +1,9 @@
+# f11 redesign: maths check (11 November 2026)
+
+**Changes required before voice or plates.** Exact rational calculations are in `work/brief240/f11-calculations.json` and `check-f11.py`. On the $20,000 motorbike, A50=$3,729.70, A59=$248.38, final payment $249.87, total $23,849.87, A24=$12,795.26, and the logarithmic crossing is 59.62398 months, so 60 payments. For the $18,000 attempt, the crossing is 39.78933 and A39=$392.91, so 40 payments.
+
+The exact 48-payment amount is $480.7828768..., rounding to $480.78. Paying that amount for 47 months leaves a 48th payment of $480.94: $23,077.60 is the actual total under the full-precision model. Scene 6's $23,077 is close as an estimate, but the written $23,077.44 and any claim that 48 equal payments of $480.78 exactly clear the debt need the distinction explained. Similarly A1's exact payment is $1,791.077646..., rounding to $1,791.08; 239 rounded payments and a final $1,789.99 clear the model, totalling about $429,858.11, while 240 rounded payments total $429,859.20 and overpay by about $1.09. Specify whether the latter is an estimate or the actual payoff.
+
+Scene 3's 'otherwise the right side would be negative' fails at equality M=Pr: the denominator is zero and the rearrangement is undefined, while the balance stays constant. Distinguish equality and lower payment. The formula divides by r, so cover or clearly exclude r=0. Scene 13 says all four calculations follow after setting balance zero; the amount still owing is found by evaluating a nonzero balance, as scene 7 correctly does. The memory aid needs that exception in learner copy.
+
+Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson13.sa.html card 05 confirms $20,000, 7.2%, $400 and 60 payments, although the intermediate logarithm is inaccurate; Problem 3 confirms $250,000, 6%, 20 years and $1,791.08. The source uses a rounded-dollar total and does not distinguish final-payment conventions.

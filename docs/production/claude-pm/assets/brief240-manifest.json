@@ -1,0 +1,3828 @@
+{
+  "brief": 240,
+  "state": "all requested names supplied; geometry exceptions held; voice quota held",
+  "assets": [
+    {
+      "name": "ma12-cricket-scoreboard-v1.png",
+      "path": "public/assets/maths/ma12-cricket-scoreboard-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-dd286324-2a4a-4c94-9284-ebbd2f84faae.png",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1600,
+        1200
+      ],
+      "sha256": "8f1372fd6296a4b1ac268a447358dbed17439b1d2be6ba384adc02ee2b7b7365",
+      "panelsDetected": [
+        [
+          361,
+          337,
+          1085,
+          611
+        ],
+        [
+          363,
+          642,
+          1084,
+          767
+        ]
+      ],
+      "recommendedCodeRects": [
+        [
+          366,
+          342,
+          1080,
+          606
+        ],
+        [
+          368,
+          647,
+          1079,
+          762
+        ]
+      ],
+      "visualQAInspected": true,
+      "dimensionDeviation": true,
+      "nonuniformStretch": false,
+      "operations": [
+        "Byte-for-byte copy, no pixel editing"
+      ],
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee."
+      ],
+      "alpha32Box": [
+        250,
+        131,
+        1193,
+        978
+      ],
+      "meaningfulMarginFractions": [
+        0.17265193370165746,
+        0.12062615101289134,
+        0.17610497237569062,
+        0.09944751381215469
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cricket-ball-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-e289d837-3cca-4406-b296-2a139aa59c50.png",
+      "path": "public/assets/maths/ma12-cricket-ball-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        600,
+        600
+      ],
+      "sha256": "3f58931559d697b7475b4baf07caf2e200229d1229e2a07e664ca1db5b91615b",
+      "alphaBox": [
+        0,
+        33,
+        1234,
+        1254
+      ],
+      "alpha32Box": [
+        213,
+        203,
+        1023,
+        1055
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "centreApprox": [
+        618.0,
+        629.0
+      ],
+      "radiusXYApprox": [
+        405.0,
+        426.0
+      ],
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Silhouette is slightly oval; centre and separate x/y radii reported rather than claiming one exact radius."
+      ],
+      "meaningfulMarginFractions": [
+        0.16985645933014354,
+        0.16188197767145135,
+        0.18421052631578946,
+        0.15869218500797447
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-stacking-chair-side-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-947e76ce-fa46-4fb6-8156-03b67988daca.png",
+      "path": "public/assets/maths/ma12-stacking-chair-side-v1.png",
+      "nativeSize": [
+        1073,
+        1466
+      ],
+      "requestedSize": [
+        1000,
+        1400
+      ],
+      "sha256": "2cf39967109d99a16712a4c38a9d88dfe5650d5b3c6143cef84616a3036d26f3",
+      "alphaBox": [
+        0,
+        22,
+        1041,
+        1426
+      ],
+      "alpha32Box": [
+        160,
+        194,
+        902,
+        1276
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "topY": 194,
+      "floorY": 1275,
+      "pixelsPerCm": 13.5125,
+      "nestingOffsetPx": 81.07499999999999,
+      "designs": [
+        "f01",
+        "f02"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Two-copy and five-copy stacks inspected at the 6cm vertical offset; no deformation used."
+      ],
+      "meaningfulMarginFractions": [
+        0.14911463187325255,
+        0.13233287858117326,
+        0.15936626281453867,
+        0.1296043656207367
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cricket-grass-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-26e85482-7f10-4ae2-86aa-7f0711395d05.png",
+      "path": "public/assets/maths/ma12-cricket-grass-strip-v1.png",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        2400,
+        300
+      ],
+      "sha256": "1cb57c92ffb64b7f52d5a9adbc633c72028fb53f39cab3a897a3c56b4bfff250",
+      "alphaBox": [
+        0,
+        25,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        0,
+        494,
+        2172,
+        621
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "seamRgbaMaxDifference": 255,
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Two-copy paper composite has no obvious join at inspected scale, but edges are not pixel-identical; exact periodicity is not certified. Native canvas includes tall transparent padding; use measured grass bounds.",
+        "Side margins explicitly exempt in source brief; tile seam deviation remains recorded."
+      ],
+      "meaningfulMarginFractions": [
+        0.0,
+        0.6823204419889503,
+        0.0,
+        0.14226519337016574
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied.",
+      "sideMarginExempt": true
+    },
+    {
+      "name": "ma12-food-tin-v1.png",
+      "path": "public/assets/maths/ma12-food-tin-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a32ed10b-eb39-45b0-95f2-1b1c251d8d8d.png",
+      "designs": [
+        "f03"
+      ],
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "requestedSize": [
+        800,
+        400
+      ],
+      "sha256": "e038a6be0a480a8d24275da2c0d2ba2b1aca1d839d1df82bb93630f04114f2a5",
+      "alphaBox": [
+        0,
+        9,
+        1613,
+        863
+      ],
+      "alpha32Box": [
+        163,
+        156,
+        1611,
+        731
+      ],
+      "approxBasePoint": [
+        887.0,
+        730
+      ],
+      "topY": 156,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "rimLines": [
+        [
+          163,
+          177,
+          1611,
+          177
+        ],
+        [
+          163,
+          707,
+          1611,
+          707
+        ]
+      ],
+      "visibleBodyRatio": 2.5182608695652173,
+      "profileFinding": "Visible tin is 2.52:1 rather than the requested approximately2:1; use actual proportions, do not distort.",
+      "pyramidContactStepPx": 575,
+      "pyramidHorizontalStepPx": 724,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Visible tin is 2.52:1 rather than the requested approximately2:1; use actual proportions, do not distort."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.09188275084554678,
+        0.17587373167981962,
+        0.09188275084554678,
+        0.17587373167981962
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f03.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-display-base-v1.png",
+      "path": "public/assets/maths/ma12-display-base-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-d5200094-56ef-4fb3-88ab-de68c5b1dc97.png",
+      "designs": [
+        "f03"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        2000,
+        300
+      ],
+      "sha256": "2645e534d7d6e249992903ec66abf210d131a3a66bc275ba1ce9a04fa4323052",
+      "alphaBox": [
+        0,
+        95,
+        2154,
+        700
+      ],
+      "alpha32Box": [
+        105,
+        306,
+        2066,
+        493
+      ],
+      "approxBasePoint": [
+        1085.5,
+        492
+      ],
+      "topY": 306,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "topContactLine": [
+        120,
+        308,
+        2052,
+        308
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed."
+      ],
+      "anchorUncertaintyPx": 5,
+      "meaningfulMarginFractions": [
+        0.04834254143646409,
+        0.42265193370165743,
+        0.04880294659300184,
+        0.319060773480663
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f03.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-paper-sheet-v1.png",
+      "path": "public/assets/maths/ma12-paper-sheet-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-c1320223-591c-4516-9102-ee7b2bdd7361.png",
+      "designs": [
+        "f05"
+      ],
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1600,
+        1200
+      ],
+      "sha256": "fb738cec0b911a1e01b502534365a04562e47dcf50c836d74fbb9b862fe3b28d",
+      "alphaBox": [
+        25,
+        254,
+        1340,
+        1062
+      ],
+      "alpha32Box": [
+        124,
+        339,
+        1337,
+        871
+      ],
+      "approxBasePoint": [
+        730.5,
+        870
+      ],
+      "topY": 339,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "nearEdgeLine": [
+        [
+          124,
+          714
+        ],
+        [
+          1070,
+          870
+        ]
+      ],
+      "anchorUncertaintyPx": 15,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed."
+      ],
+      "meaningfulMarginFractions": [
+        0.0856353591160221,
+        0.31215469613259667,
+        0.07665745856353591,
+        0.19797421731123388
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f05.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-paper-folded-v1.png",
+      "path": "public/assets/maths/ma12-paper-folded-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-df291995-ab25-4c3a-96af-200563a217ce.png",
+      "designs": [
+        "f05"
+      ],
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1200,
+        900
+      ],
+      "sha256": "806b543a3c8cd313386a2c5cc538c92ce0ee13ddd0b731b376497c31ec4b7b93",
+      "alphaBox": [
+        41,
+        37,
+        1378,
+        1062
+      ],
+      "alpha32Box": [
+        313,
+        383,
+        1128,
+        771
+      ],
+      "approxBasePoint": [
+        720.5,
+        770
+      ],
+      "topY": 383,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "layerNote": "Layered folded edge is visible; exact eight-layer physical count is not independently certified by this illustration.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.21616022099447513,
+        0.35267034990791896,
+        0.22099447513812154,
+        0.2900552486187845
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f05.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-chessboard-top-v1.png",
+      "path": "public/assets/maths/ma12-chessboard-top-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-97cedcd9-8342-4a39-9f3d-f85dab75c2b9.png",
+      "designs": [
+        "f06"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        2000,
+        2000
+      ],
+      "sha256": "ae5943da21bb793a24488b7fb005cee04d8e76a9e556f199a05e60a4838bc4dc",
+      "alphaBox": [
+        0,
+        4,
+        1250,
+        1254
+      ],
+      "alpha32Box": [
+        159,
+        159,
+        1095,
+        1120
+      ],
+      "approxBasePoint": [
+        627.0,
+        1119
+      ],
+      "topY": 159,
+      "visualQAInspected": true,
+      "state": "geometry-tolerance-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "playingArea": [
+        176,
+        176,
+        1079,
+        1104
+      ],
+      "columnLines": [
+        176,
+        289,
+        402,
+        514,
+        627,
+        739,
+        852,
+        964,
+        1079
+      ],
+      "rowLines": [
+        176,
+        295,
+        414,
+        532,
+        650,
+        766,
+        884,
+        995,
+        1104
+      ],
+      "tileWidthMeanPx": 112.875,
+      "tileHeightMeanPx": 116.0,
+      "profileFinding": "Eight by eight count passes. Native playing area is not square and row spacing varies beyond one pixel. Strict geometric tolerance does not pass. No warping; builder must resolve before exact coded overlay.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Eight by eight count passes. Native playing area is not square and row spacing varies beyond one pixel. Strict geometric tolerance does not pass. No warping; builder must resolve before exact coded overlay."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.12679425837320574,
+        0.12679425837320574,
+        0.12679425837320574,
+        0.10685805422647528
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f06.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-rice-grain-v1.png",
+      "path": "public/assets/maths/ma12-rice-grain-v1.png",
+      "source": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-4903af09-b91a-4382-932b-a3a0cf5e00f3.png",
+      "designs": [
+        "f06"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        300,
+        300
+      ],
+      "sha256": "d7a1fa94189f4e0ca878f17d2c2b4e29ae79f92b253e0990343c668e80f3094a",
+      "alphaBox": [
+        33,
+        31,
+        1198,
+        1148
+      ],
+      "alpha32Box": [
+        294,
+        317,
+        963,
+        939
+      ],
+      "approxBasePoint": [
+        628.5,
+        938
+      ],
+      "topY": 317,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "grainEndpointEstimate": [
+        [
+          300,
+          935
+        ],
+        [
+          955,
+          325
+        ]
+      ],
+      "grainLengthPx": 895.056,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.23444976076555024,
+        0.2527910685805423,
+        0.23205741626794257,
+        0.2511961722488038
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f06.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-rice-heap-v1.png",
+      "path": "public/assets/maths/ma12-rice-heap-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-95ba9f4c-2115-4044-bc45-980f4758c614.png",
+      "designs": [
+        "f06"
+      ],
+      "nativeSize": [
+        1402,
+        1122
+      ],
+      "requestedSize": [
+        1000,
+        800
+      ],
+      "sha256": "c706d248a02c8b9a4bdc0334f4cbca99c9d92d3acf97ae8650fd7a684ef38fdc",
+      "alphaBox": [
+        57,
+        28,
+        1388,
+        1122
+      ],
+      "alpha32Box": [
+        132,
+        232,
+        1257,
+        901
+      ],
+      "approxBasePoint": [
+        694.5,
+        900
+      ],
+      "topY": 232,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.09415121255349501,
+        0.20677361853832443,
+        0.10342368045649072,
+        0.19696969696969696
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f06.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-country-town-v1.png",
+      "path": "public/assets/maths/ma12-country-town-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-69c8d2a6-d3ff-49b2-baf5-fd60f4a8b7e8.png",
+      "designs": [
+        "f08"
+      ],
+      "nativeSize": [
+        1920,
+        819
+      ],
+      "requestedSize": [
+        2400,
+        1000
+      ],
+      "sha256": "aac32ce5e5d017ed2b32acf2bab28f3c376feda5cbd24bebd68dc1c986db8fff",
+      "alphaBox": [
+        37,
+        12,
+        1906,
+        819
+      ],
+      "alpha32Box": [
+        213,
+        175,
+        1723,
+        678
+      ],
+      "approxBasePoint": [
+        968.0,
+        677
+      ],
+      "topY": 175,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "emptyLandRect": [
+        1270,
+        551,
+        1705,
+        652
+      ],
+      "groundLine": [
+        [
+          1270,
+          651
+        ],
+        [
+          1705,
+          651
+        ]
+      ],
+      "groundProfile": [
+        [
+          1270,
+          551
+        ],
+        [
+          1400,
+          551
+        ],
+        [
+          1550,
+          553
+        ],
+        [
+          1705,
+          553
+        ]
+      ],
+      "houseQA": "f08-ten-houses-70px-qa.jpg",
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1109375,
+        0.21367521367521367,
+        0.10260416666666666,
+        0.17216117216117216
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f08.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-camper-trailer-v1.png",
+      "path": "public/assets/maths/ma12-camper-trailer-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-02ce3ffc-8890-4e23-80b5-f00de2e6af64.png",
+      "designs": [
+        "f08"
+      ],
+      "nativeSize": [
+        1671,
+        941
+      ],
+      "requestedSize": [
+        1600,
+        900
+      ],
+      "sha256": "4dd19a77373693c7c3b9be6ca0f548d418b7058c84cb68a3533b348adfd4004f",
+      "alphaBox": [
+        154,
+        94,
+        1492,
+        868
+      ],
+      "alpha32Box": [
+        299,
+        226,
+        1346,
+        735
+      ],
+      "approxBasePoint": [
+        822.5,
+        734
+      ],
+      "topY": 226,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLine": [
+        [
+          404,
+          726
+        ],
+        [
+          1153,
+          734
+        ]
+      ],
+      "wheelContactRows": [
+        726,
+        734
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.17893476959904248,
+        0.24017003188097769,
+        0.19449431478156792,
+        0.21891604675876727
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f08.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-concert-ticket-v1.png",
+      "path": "public/assets/maths/ma12-concert-ticket-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-2bd5976e-1331-4448-af0d-1086327e50ad.png",
+      "designs": [
+        "f08"
+      ],
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "requestedSize": [
+        1200,
+        600
+      ],
+      "sha256": "67fe261bf4f89e4a016e4c9015ac08ac23ec3a268469c38004893232a7b6db04",
+      "alphaBox": [
+        0,
+        99,
+        1714,
+        867
+      ],
+      "alpha32Box": [
+        376,
+        208,
+        1413,
+        690
+      ],
+      "approxBasePoint": [
+        894.5,
+        689
+      ],
+      "topY": 208,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.21195039458850057,
+        0.23449830890642615,
+        0.20349492671927846,
+        0.22209695603156707
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f08.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-used-hatchback-v1.png",
+      "path": "public/assets/maths/ma12-used-hatchback-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f232f243-992c-4a14-aee8-0dc97637ae6c.png",
+      "designs": [
+        "f09"
+      ],
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "sha256": "d1f978f4b66f9e035f1e9bafcf45eba5aa61c6bc56b9548621cc0926e3143af2",
+      "alphaBox": [
+        0,
+        25,
+        1663,
+        871
+      ],
+      "alpha32Box": [
+        264,
+        184,
+        1491,
+        750
+      ],
+      "approxBasePoint": [
+        877.5,
+        749
+      ],
+      "topY": 184,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLine": [
+        [
+          427,
+          743
+        ],
+        [
+          1196,
+          749
+        ]
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1488162344983089,
+        0.20744081172491544,
+        0.15952649379932357,
+        0.1544532130777903
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-loan-statement-v1.png",
+      "path": "public/assets/maths/ma12-loan-statement-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-62b74d31-9572-4e56-a293-c4bcadc58144.png",
+      "designs": [
+        "f09"
+      ],
+      "nativeSize": [
+        1070,
+        1470
+      ],
+      "requestedSize": [
+        1600,
+        2200
+      ],
+      "sha256": "c82d0ff0a8b908a246067178d7fd990354bd47db46faa84f8438aec7f409e91c",
+      "alphaBox": [
+        0,
+        2,
+        985,
+        1460
+      ],
+      "alpha32Box": [
+        144,
+        223,
+        924,
+        1258
+      ],
+      "approxBasePoint": [
+        534.0,
+        1257
+      ],
+      "topY": 223,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "headerRect": [
+        176,
+        270,
+        892,
+        365
+      ],
+      "fieldRows": [
+        [
+          177,
+          416,
+          560,
+          449
+        ],
+        [
+          177,
+          466,
+          560,
+          498
+        ],
+        [
+          177,
+          517,
+          560,
+          550
+        ],
+        [
+          177,
+          569,
+          560,
+          600
+        ]
+      ],
+      "fieldDividerX": 305,
+      "tableRect": [
+        171,
+        667,
+        899,
+        1178
+      ],
+      "columnLines": [
+        171,
+        304,
+        422,
+        540,
+        657,
+        775,
+        899
+      ],
+      "rowLines": [
+        667,
+        730,
+        794,
+        858,
+        923,
+        987,
+        1050,
+        1114,
+        1178
+      ],
+      "profileFinding": "Table count is6columns8rows. First column about133px versus118px other columns, so exact equal spacing does not pass. Code must use measured lines.",
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Table count is6columns8rows. First column about133px versus118px other columns, so exact equal spacing does not pass. Code must use measured lines."
+      ],
+      "meaningfulMarginFractions": [
+        0.13457943925233645,
+        0.15170068027210884,
+        0.13644859813084112,
+        0.14421768707482993
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-motorbike-v1.png",
+      "path": "public/assets/maths/ma12-motorbike-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-9a2db8d5-9050-4c06-a78a-a724c042684b.png",
+      "designs": [
+        "f11"
+      ],
+      "nativeSize": [
+        1586,
+        992
+      ],
+      "requestedSize": [
+        2400,
+        1500
+      ],
+      "sha256": "4d920b4e648da950e29908291c3e6fbc3c746a8e57aa74d996cee60115ff8fdb",
+      "alphaBox": [
+        21,
+        15,
+        1558,
+        976
+      ],
+      "alpha32Box": [
+        215,
+        138,
+        1361,
+        876
+      ],
+      "approxBasePoint": [
+        788.0,
+        875
+      ],
+      "topY": 138,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.13556116015132408,
+        0.13911290322580644,
+        0.14186633039092056,
+        0.11693548387096774
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f11.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-swing-tag-v1.png",
+      "path": "public/assets/maths/ma12-swing-tag-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-5c04b35c-657e-4696-81d9-b0bdc7d3945e.png",
+      "designs": [
+        "f11"
+      ],
+      "nativeSize": [
+        1003,
+        1568
+      ],
+      "requestedSize": [
+        1000,
+        1600
+      ],
+      "sha256": "52f3704a9195170233e3a579e44c658a11a2b806dae3df97629c35f36e3ac2a7",
+      "alphaBox": [
+        2,
+        10,
+        989,
+        1568
+      ],
+      "alpha32Box": [
+        192,
+        183,
+        807,
+        1355
+      ],
+      "approxBasePoint": [
+        499.5,
+        1354
+      ],
+      "topY": 183,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "faceRect": [
+        214,
+        514,
+        784,
+        1328
+      ],
+      "ruledLineYs": [
+        690,
+        838,
+        984,
+        1132
+      ],
+      "ruleXRange": [
+        256,
+        744
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1914257228315055,
+        0.11670918367346939,
+        0.19541375872382852,
+        0.13584183673469388
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f11.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-wall-calendar-v1.png",
+      "path": "public/assets/maths/ma12-wall-calendar-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3004ddc5-0442-400e-9a32-f17b8b0faf2c.png",
+      "designs": [
+        "f12"
+      ],
+      "nativeSize": [
+        1122,
+        1402
+      ],
+      "requestedSize": [
+        1600,
+        2000
+      ],
+      "sha256": "be03abb99d5b274a443d1f682742e94dd3b7381b8b62c70b9a9f65b814707522",
+      "alphaBox": [
+        33,
+        128,
+        988,
+        1402
+      ],
+      "alpha32Box": [
+        183,
+        214,
+        940,
+        1193
+      ],
+      "approxBasePoint": [
+        561.5,
+        1192
+      ],
+      "topY": 214,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "gridRect": [
+        196,
+        713,
+        928,
+        1180
+      ],
+      "columnLines": [
+        196,
+        302,
+        406,
+        511,
+        615,
+        719,
+        824,
+        928
+      ],
+      "rowLines": [
+        713,
+        808,
+        901,
+        995,
+        1087,
+        1180
+      ],
+      "monthStripRect": [
+        200,
+        645,
+        924,
+        702
+      ],
+      "profileFinding": "Correct7columns5rows, slight native spacing variation and rectangular cells rather than exact squares; fit code to measured lines.",
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Correct7columns5rows, slight native spacing variation and rectangular cells rather than exact squares; fit code to measured lines."
+      ],
+      "meaningfulMarginFractions": [
+        0.16310160427807488,
+        0.15263908701854492,
+        0.1622103386809269,
+        0.14907275320970043
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f12.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-apartment-building-v1.png",
+      "path": "public/assets/maths/ma12-apartment-building-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-09bbbcaf-25a0-4ea2-9417-a59d394d22bc.png",
+      "designs": [
+        "f12"
+      ],
+      "nativeSize": [
+        1182,
+        1330
+      ],
+      "requestedSize": [
+        1600,
+        1800
+      ],
+      "sha256": "17fddf78966b126bef197f8301010aab1cfb802723f471b6d489d43cea05bf49",
+      "alphaBox": [
+        0,
+        21,
+        1049,
+        1090
+      ],
+      "alpha32Box": [
+        236,
+        285,
+        947,
+        1063
+      ],
+      "approxBasePoint": [
+        591.5,
+        1062
+      ],
+      "topY": 285,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLine": [
+        [
+          279,
+          1057
+        ],
+        [
+          909,
+          1062
+        ]
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1996615905245347,
+        0.21428571428571427,
+        0.1988155668358714,
+        0.20075187969924813
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f12.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-super-statement-v1.png",
+      "path": "public/assets/maths/ma12-super-statement-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a4be5a24-3992-42da-a835-b30091cd4983.png",
+      "designs": [
+        "f13"
+      ],
+      "nativeSize": [
+        1070,
+        1470
+      ],
+      "requestedSize": [
+        1600,
+        2200
+      ],
+      "sha256": "71170276f1bdf0f29ca8b4e841c1d2c5d00bdaaa41005612c5ed3d6a70cc3a2e",
+      "alphaBox": [
+        0,
+        219,
+        894,
+        1325
+      ],
+      "alpha32Box": [
+        214,
+        321,
+        857,
+        1165
+      ],
+      "approxBasePoint": [
+        535.5,
+        1164
+      ],
+      "topY": 321,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "headerRect": [
+        359,
+        486,
+        853,
+        540
+      ],
+      "fieldRows": [
+        [
+          392,
+          605,
+          824,
+          638
+        ],
+        [
+          392,
+          649,
+          824,
+          681
+        ],
+        [
+          392,
+          693,
+          824,
+          725
+        ],
+        [
+          392,
+          737,
+          824,
+          769
+        ]
+      ],
+      "fieldRuleYs": [
+        641,
+        684,
+        728,
+        772
+      ],
+      "panelRect": [
+        383,
+        836,
+        830,
+        1101
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.2,
+        0.21836734693877552,
+        0.19906542056074766,
+        0.20748299319727892
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f13.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-travel-suitcase-v1.png",
+      "path": "public/assets/maths/ma12-travel-suitcase-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3a813f12-947d-4b64-a169-efdcbbeb5dbc.png",
+      "designs": [
+        "f15"
+      ],
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "requestedSize": [
+        1400,
+        1800
+      ],
+      "sha256": "c4c5c1b86d0ed647634739642a1d07d0964c903606aebe8d0199de179557d135",
+      "alphaBox": [
+        137,
+        224,
+        1006,
+        1373
+      ],
+      "alpha32Box": [
+        284,
+        226,
+        819,
+        1239
+      ],
+      "approxBasePoint": [
+        551.5,
+        1238
+      ],
+      "topY": 226,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundContacts": [
+        [
+          334,
+          1193
+        ],
+        [
+          387,
+          1236
+        ],
+        [
+          766,
+          1201
+        ]
+      ],
+      "tagBlankPolygon": [
+        [
+          421,
+          623
+        ],
+        [
+          448,
+          616
+        ],
+        [
+          484,
+          743
+        ],
+        [
+          441,
+          754
+        ]
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.25678119349005424,
+        0.1589310829817159,
+        0.25949367088607594,
+        0.12869198312236288
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f15.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-red-v1.png",
+      "path": "public/assets/maths/ma12-die-red-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-be5adca2-b103-44c9-9d00-3abbfd985ddb.png",
+      "designs": [
+        "s02"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        2048,
+        2048
+      ],
+      "sha256": "ba4308ec86774cf1dd63db5cd14bbb6ef1594f1370660c8d709138bb1ce64676",
+      "alphaBox": [
+        0,
+        69,
+        1222,
+        1254
+      ],
+      "alpha32Box": [
+        264,
+        252,
+        1021,
+        1058
+      ],
+      "approxBasePoint": [
+        642.5,
+        1057
+      ],
+      "topY": 252,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 1,
+        "left": 2,
+        "right": 3
+      },
+      "profileFinding": "Native1254canvas differs from2048reference. Matching display width normalises the pair; exact source-pixel size and outline identity are not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Native1254canvas differs from2048reference. Matching display width normalises the pair; exact source-pixel size and outline identity are not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.21052631578947367,
+        0.20095693779904306,
+        0.18580542264752792,
+        0.15629984051036683
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s02.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-pet-carrier-v1.png",
+      "path": "public/assets/maths/ma12-pet-carrier-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-89c16193-bb3b-43d8-af0b-1f32820a3221.png",
+      "designs": [
+        "s03"
+      ],
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1600,
+        1200
+      ],
+      "sha256": "64b16270224d3306da47bf6c22b1a034845d6616a7b686951e14c72166fffc72",
+      "alphaBox": [
+        33,
+        39,
+        1364,
+        962
+      ],
+      "alpha32Box": [
+        269,
+        171,
+        1172,
+        949
+      ],
+      "approxBasePoint": [
+        720.5,
+        948
+      ],
+      "topY": 171,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visibleBodyWidthToCatCanvas": 0.4515,
+      "visibleBodyWidthToCatAlphaWidth": 0.5707964601769911,
+      "scaleNote": "QA uses the same file-pixel scale for both plates; visible carrier903px versus cat1582px including tail. Native canvas ratio differs from visible-object ratio.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.18577348066298344,
+        0.1574585635359116,
+        0.19060773480662985,
+        0.1261510128913444
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s03.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-starting-blocks-v1.png",
+      "path": "public/assets/maths/ma12-starting-blocks-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3033eef3-5a1b-4848-99d5-20a72ebd1a66.png",
+      "designs": [
+        "s04"
+      ],
+      "nativeSize": [
+        1620,
+        971
+      ],
+      "requestedSize": [
+        2000,
+        1200
+      ],
+      "sha256": "8cf42a30905c2a89ab73e902852d31a6cc4d12e476a0c3215945bebfc20855b3",
+      "alphaBox": [
+        0,
+        17,
+        1584,
+        931
+      ],
+      "alpha32Box": [
+        165,
+        192,
+        1439,
+        795
+      ],
+      "approxBasePoint": [
+        802.0,
+        794
+      ],
+      "topY": 192,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.10185185185185185,
+        0.19773429454170957,
+        0.1117283950617284,
+        0.18125643666323377
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s04.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-timing-display-v1.png",
+      "path": "public/assets/maths/ma12-timing-display-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ef7fec79-6f6b-44cb-9d94-0804ca5a1960.png",
+      "designs": [
+        "s04"
+      ],
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "requestedSize": [
+        2000,
+        1200
+      ],
+      "sha256": "65ab7e4aa99cd9dd7e02194be840544b73001695d23f36b3007f8fb4529bf3cf",
+      "alphaBox": [
+        0,
+        0,
+        1591,
+        971
+      ],
+      "alpha32Box": [
+        333,
+        159,
+        1286,
+        864
+      ],
+      "approxBasePoint": [
+        809.5,
+        863
+      ],
+      "topY": 159,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "displayRect": [
+        382,
+        230,
+        1237,
+        467
+      ],
+      "anchorUncertaintyPx": 6,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.20568252007411983,
+        0.16374871266735325,
+        0.20568252007411983,
+        0.1101956745623069
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s04.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-delivery-van-v1.png",
+      "path": "public/assets/maths/ma12-delivery-van-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-96dcbf2d-9600-429a-9e43-dd31f7866897.png",
+      "designs": [
+        "s05"
+      ],
+      "nativeSize": [
+        1642,
+        958
+      ],
+      "requestedSize": [
+        2400,
+        1400
+      ],
+      "sha256": "70b0fd809be27abec8ea21cbc53339e492fca6f7d6318063aac861fc0d88f404",
+      "alphaBox": [
+        65,
+        7,
+        1604,
+        958
+      ],
+      "alpha32Box": [
+        236,
+        222,
+        1406,
+        790
+      ],
+      "approxBasePoint": [
+        821.0,
+        789
+      ],
+      "topY": 222,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "profileFinding": "Generated vehicle has a separate box cargo body and cab-over front rather than a panel-van body; the delivery context is clear. Root should accept this body style or request a replacement.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Generated vehicle has a separate box cargo body and cab-over front rather than a panel-van body; the delivery context is clear. Root should accept this body style or request a replacement."
+      ],
+      "meaningfulMarginFractions": [
+        0.14372716199756394,
+        0.23173277661795408,
+        0.14372716199756394,
+        0.17536534446764093
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s05.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-bus-stop-v1.png",
+      "path": "public/assets/maths/ma12-bus-stop-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a3814c62-9279-4944-9ac3-2bcb3c7b2346.png",
+      "designs": [
+        "s07"
+      ],
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "requestedSize": [
+        900,
+        1800
+      ],
+      "sha256": "d117e3b7f887fc97848c28b33b4a5d75ab1c27aed81824ec1df04282ecc6c5ba",
+      "alphaBox": [
+        113,
+        80,
+        837,
+        1572
+      ],
+      "alpha32Box": [
+        247,
+        205,
+        638,
+        1556
+      ],
+      "approxBasePoint": [
+        442.5,
+        1555
+      ],
+      "topY": 205,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "timetableRect": [
+        330,
+        796,
+        553,
+        1049
+      ],
+      "basePoint": [
+        442,
+        1555
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.27846674182638104,
+        0.11555806087936867,
+        0.2807215332581736,
+        0.12288613303269448
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s07.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-bus-side-v1.png",
+      "path": "public/assets/maths/ma12-bus-side-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-9fdaa682-b0d9-447b-a26e-2f715904c05f.png",
+      "designs": [
+        "s07"
+      ],
+      "nativeSize": [
+        1881,
+        836
+      ],
+      "requestedSize": [
+        1800,
+        800
+      ],
+      "sha256": "56df871f7da848154fe892e90f74f17a9a48a4fc6df3b471a31764c833be21cd",
+      "alphaBox": [
+        105,
+        31,
+        1614,
+        804
+      ],
+      "alpha32Box": [
+        289,
+        209,
+        1610,
+        644
+      ],
+      "approxBasePoint": [
+        949.5,
+        643
+      ],
+      "topY": 209,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "wheelContactPoints": [
+        [
+          574,
+          641
+        ],
+        [
+          1281,
+          642
+        ]
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.15364167995746944,
+        0.25,
+        0.1440723019670388,
+        0.22966507177033493
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s07.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-headphones-v1.png",
+      "path": "public/assets/maths/ma12-headphones-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-066d1c05-0fc4-4f79-86c6-2cfc4d3b3b4c.png",
+      "designs": [
+        "s08"
+      ],
+      "nativeSize": [
+        1341,
+        1173
+      ],
+      "requestedSize": [
+        1600,
+        1400
+      ],
+      "sha256": "245c518526cb9cea7d6492e33c869694ffb7c2706d71feb30a458950faa84f84",
+      "alphaBox": [
+        55,
+        21,
+        1313,
+        1173
+      ],
+      "alpha32Box": [
+        275,
+        162,
+        1053,
+        1008
+      ],
+      "approxBasePoint": [
+        664.0,
+        1007
+      ],
+      "topY": 162,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.20507084265473527,
+        0.13810741687979539,
+        0.21476510067114093,
+        0.14066496163682865
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s08.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-chip-bag-v1.png",
+      "path": "public/assets/maths/ma12-chip-bag-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f39ddfe2-dec1-48ed-8cfc-37f1d2dcab49.png",
+      "designs": [
+        "s09"
+      ],
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "requestedSize": [
+        1200,
+        1600
+      ],
+      "sha256": "9323b79e61287815d015ae4ad05876ab045d66459340388a9b0598d8be65e09e",
+      "alphaBox": [
+        0,
+        23,
+        1080,
+        1448
+      ],
+      "alpha32Box": [
+        122,
+        189,
+        939,
+        1265
+      ],
+      "approxBasePoint": [
+        530.5,
+        1264
+      ],
+      "topY": 189,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "mouthRect": [
+        175,
+        220,
+        896,
+        286
+      ],
+      "mouthSafeDropXRange": [
+        225,
+        845
+      ],
+      "baseLine": [
+        [
+          137,
+          1256
+        ],
+        [
+          924,
+          1256
+        ]
+      ],
+      "anchorUncertaintyPx": 8,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.11233885819521179,
+        0.13052486187845305,
+        0.13535911602209943,
+        0.12638121546961326
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-potato-chip-v1.png",
+      "path": "public/assets/maths/ma12-potato-chip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-8da0a086-4b84-42e1-a485-659f3e124979.png",
+      "designs": [
+        "s09"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        400,
+        400
+      ],
+      "sha256": "bdd48447705c6a19c965a5753d7c8051395f9c0bb9ef50daa73d9c75f1f6eff9",
+      "alphaBox": [
+        0,
+        31,
+        1226,
+        1254
+      ],
+      "alpha32Box": [
+        184,
+        271,
+        1070,
+        990
+      ],
+      "approxBasePoint": [
+        627.0,
+        989
+      ],
+      "topY": 271,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1467304625199362,
+        0.21610845295055822,
+        0.1467304625199362,
+        0.21052631578947367
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-apple-v1.png",
+      "path": "public/assets/maths/ma12-apple-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-88c3ccf7-dce8-4c56-9e15-6b8a3284449d.png",
+      "designs": [
+        "s10"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        800,
+        800
+      ],
+      "sha256": "3b5b03a4f049d8d4b01c9c736624a36b28724d9b39bea4935dc5ec2f5e7e37b3",
+      "alphaBox": [
+        0,
+        9,
+        1236,
+        1254
+      ],
+      "alpha32Box": [
+        184,
+        124,
+        1002,
+        1095
+      ],
+      "approxBasePoint": [
+        593.0,
+        1094
+      ],
+      "topY": 124,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1467304625199362,
+        0.09888357256778309,
+        0.20095693779904306,
+        0.12679425837320574
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s10.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-apple-crate-v1.png",
+      "path": "public/assets/maths/ma12-apple-crate-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3547334b-9446-4817-a34c-f1febbcdbb60.png",
+      "designs": [
+        "s10"
+      ],
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "requestedSize": [
+        1800,
+        1200
+      ],
+      "sha256": "c3fbf5c8b866b2d3a5451e82b707ab418a7e160fc99f9177ddd621764302f6e1",
+      "alphaBox": [
+        0,
+        17,
+        1522,
+        1024
+      ],
+      "alpha32Box": [
+        131,
+        86,
+        1402,
+        944
+      ],
+      "approxBasePoint": [
+        766.5,
+        943
+      ],
+      "topY": 86,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed."
+      ],
+      "meaningfulMarginFractions": [
+        0.08528645833333333,
+        0.083984375,
+        0.08723958333333333,
+        0.078125
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s10.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-graphing-calculator-v1.png",
+      "path": "public/assets/maths/ma12-graphing-calculator-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a8daaa86-a6a0-40a0-9834-b43dbcd0d9f2.png",
+      "designs": [
+        "s10"
+      ],
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "requestedSize": [
+        1000,
+        2000
+      ],
+      "sha256": "6ee36a538ba15ec58dcba15c3e1a03557d3e2c4f465b870b1c17f3a3c80b20aa",
+      "alphaBox": [
+        0,
+        17,
+        815,
+        1754
+      ],
+      "alpha32Box": [
+        112,
+        219,
+        769,
+        1573
+      ],
+      "approxBasePoint": [
+        440.5,
+        1572
+      ],
+      "topY": 219,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "screenRect": [
+        183,
+        337,
+        699,
+        662
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1262683201803833,
+        0.12344983089064261,
+        0.133032694475761,
+        0.1133032694475761
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s10.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-filling-head-v1.png",
+      "path": "public/assets/maths/ma12-filling-head-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3306b8af-9360-46b0-a10f-9c8a63ee6a11.png",
+      "designs": [
+        "s12"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        1200,
+        1800
+      ],
+      "sha256": "a3df2179472ee90cf5fc3203d0ecc954b6074bd4e3d4abf025c2ec0540a37201",
+      "alphaBox": [
+        0,
+        95,
+        1004,
+        1536
+      ],
+      "alpha32Box": [
+        141,
+        193,
+        883,
+        1362
+      ],
+      "approxBasePoint": [
+        512.0,
+        1361
+      ],
+      "topY": 193,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "dialCentre": [
+        507,
+        620
+      ],
+      "dialRadiusXY": [
+        199,
+        202
+      ],
+      "nozzleTip": [
+        513,
+        1352
+      ],
+      "anchorUncertaintyPx": 6,
+      "bottleQANote": "First row60px full-canvas sprites; second row60px visible object after transparent-margin crop in QA only. Source bottle unchanged. Uncap/fill is a later build action.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1376953125,
+        0.12565104166666666,
+        0.1376953125,
+        0.11328125
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s12.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cereal-box-v1.png",
+      "path": "public/assets/maths/ma12-cereal-box-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-08ef1116-4576-4196-9208-252daf73aa3c.png",
+      "designs": [
+        "s12"
+      ],
+      "nativeSize": [
+        1060,
+        1484
+      ],
+      "requestedSize": [
+        1000,
+        1400
+      ],
+      "sha256": "795b4963bcc7c22299ed550259f991ed2a0fb2d1da7128a988e868978f0ce703",
+      "alphaBox": [
+        0,
+        23,
+        1040,
+        1458
+      ],
+      "alpha32Box": [
+        190,
+        230,
+        871,
+        1274
+      ],
+      "approxBasePoint": [
+        530.5,
+        1273
+      ],
+      "topY": 230,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1792452830188679,
+        0.15498652291105122,
+        0.17830188679245282,
+        0.14150943396226415
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s12.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-hex-bolt-v1.png",
+      "path": "public/assets/maths/ma12-hex-bolt-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-6479421c-9bd2-4229-8646-0a75eb477b6f.png",
+      "designs": [
+        "s12"
+      ],
+      "nativeSize": [
+        2048,
+        768
+      ],
+      "requestedSize": [
+        1600,
+        600
+      ],
+      "sha256": "6af1303d7211d8746d5b884f0dba05ad2d105ff9da7849c6ab070a9b3cf0609c",
+      "alphaBox": [
+        31,
+        17,
+        1966,
+        736
+      ],
+      "alpha32Box": [
+        348,
+        161,
+        1701,
+        617
+      ],
+      "approxBasePoint": [
+        1024.5,
+        616
+      ],
+      "topY": 161,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.169921875,
+        0.20963541666666666,
+        0.16943359375,
+        0.19661458333333334
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s12.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-1-v1.png",
+      "path": "public/assets/maths/ma12-die-top-1-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-8ee9f49a-c010-4721-8934-e99bd7c56a54.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "2e4f0759061c1fabc5b9a74acb9af232a081b0e80b7ed76b726d7c00fd275f36",
+      "alphaBox": [
+        0,
+        39,
+        1049,
+        1101
+      ],
+      "alpha32Box": [
+        201,
+        168,
+        1045,
+        1083
+      ],
+      "approxBasePoint": [
+        623.0,
+        1082
+      ],
+      "topY": 168,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 1,
+        "lowerLeft": 2,
+        "lowerRight": 3
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16028708133971292,
+        0.1339712918660287,
+        0.16666666666666666,
+        0.13636363636363635
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-2-v1.png",
+      "path": "public/assets/maths/ma12-die-top-2-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-981dc807-a029-40c7-99b0-74c5d58c2131.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "c0045d78ceb138ada1d0c0c866880c33a0c04cf0c99d141ddc29ed2bb91c5766",
+      "alphaBox": [
+        9,
+        84,
+        1240,
+        1166
+      ],
+      "alpha32Box": [
+        201,
+        168,
+        1045,
+        1083
+      ],
+      "approxBasePoint": [
+        623.0,
+        1082
+      ],
+      "topY": 168,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 2,
+        "lowerLeft": 6,
+        "lowerRight": 3
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16028708133971292,
+        0.1339712918660287,
+        0.16666666666666666,
+        0.13636363636363635
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-3-v1.png",
+      "path": "public/assets/maths/ma12-die-top-3-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-6dfe1c31-f9ba-45a7-ad6f-37ab9148ac90.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "3a5532365bde61052461c0944407099246785402235388112b2b3319efb455de",
+      "alphaBox": [
+        21,
+        21,
+        1238,
+        1202
+      ],
+      "alpha32Box": [
+        201,
+        167,
+        1046,
+        1084
+      ],
+      "approxBasePoint": [
+        623.5,
+        1083
+      ],
+      "topY": 167,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 3,
+        "lowerLeft": 2,
+        "lowerRight": 6
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16028708133971292,
+        0.1331738437001595,
+        0.16586921850079744,
+        0.13556618819776714
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-4-v1.png",
+      "path": "public/assets/maths/ma12-die-top-4-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-679ec24c-5c79-4e46-8284-39089873236f.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "df8fbc37f7b53d35dde5235d7191258dbfa2311c8fd56e442845a183561e3f19",
+      "alphaBox": [
+        0,
+        64,
+        1208,
+        1160
+      ],
+      "alpha32Box": [
+        202,
+        168,
+        1044,
+        1083
+      ],
+      "approxBasePoint": [
+        623.0,
+        1082
+      ],
+      "topY": 168,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 4,
+        "lowerLeft": 2,
+        "lowerRight": 1
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16108452950558214,
+        0.1339712918660287,
+        0.1674641148325359,
+        0.13636363636363635
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-5-v1.png",
+      "path": "public/assets/maths/ma12-die-top-5-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ff9d59dc-b14e-4d19-be13-1987c5c3802b.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "ac2c50f0967a31f6a344342495b8da25b6e10855c83c8c4d72abe87e0ea7dff4",
+      "alphaBox": [
+        41,
+        33,
+        1234,
+        1230
+      ],
+      "alpha32Box": [
+        201,
+        167,
+        1045,
+        1084
+      ],
+      "approxBasePoint": [
+        623.0,
+        1083
+      ],
+      "topY": 167,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 5,
+        "lowerLeft": 1,
+        "lowerRight": 3
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16028708133971292,
+        0.1331738437001595,
+        0.16666666666666666,
+        0.13556618819776714
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-die-top-6-v1.png",
+      "path": "public/assets/maths/ma12-die-top-6-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-4115e663-9d02-4ce1-9b5b-dc271245df15.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "sha256": "84377c1142dd17ffe12be53387f572a20c2d071ddeed3fb3d54c91724d9726c3",
+      "alphaBox": [
+        0,
+        71,
+        1253,
+        1252
+      ],
+      "alpha32Box": [
+        201,
+        168,
+        1044,
+        1083
+      ],
+      "approxBasePoint": [
+        622.5,
+        1082
+      ],
+      "topY": 168,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 6,
+        "lowerLeft": 2,
+        "lowerRight": 4
+      },
+      "profileFinding": "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "All six1254square canvases; meaningful outline extremes vary up to2px between faces. Exact pixel-identical geometry/lighting is not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.16028708133971292,
+        0.1339712918660287,
+        0.1674641148325359,
+        0.13636363636363635
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-coin-heads-v1.png",
+      "path": "public/assets/maths/ma12-coin-heads-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f2133464-a56b-4c51-87f8-5c0be2ecab45.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        900,
+        900
+      ],
+      "sha256": "38de21d70d1e33cc512300bc78b840df7727dbe09ce9b099af900ae7137c9a5a",
+      "alphaBox": [
+        0,
+        23,
+        1253,
+        1220
+      ],
+      "alpha32Box": [
+        137,
+        133,
+        1105,
+        1111
+      ],
+      "approxBasePoint": [
+        621.0,
+        1110
+      ],
+      "topY": 133,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.10925039872408293,
+        0.10606060606060606,
+        0.11881977671451356,
+        0.11403508771929824
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-coin-tails-v1.png",
+      "path": "public/assets/maths/ma12-coin-tails-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-7bfbce65-187d-4adc-8ea3-0c66a1db2faf.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        900,
+        900
+      ],
+      "sha256": "c754f69fdd6af04124800e5571c0c7d1177c05a837a97964aec4624a9be1ec12",
+      "alphaBox": [
+        0,
+        21,
+        1111,
+        1188
+      ],
+      "alpha32Box": [
+        135,
+        130,
+        1108,
+        1112
+      ],
+      "approxBasePoint": [
+        621.5,
+        1111
+      ],
+      "topY": 130,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1076555023923445,
+        0.10366826156299841,
+        0.11642743221690591,
+        0.11323763955342903
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-spinner-base-v1.png",
+      "path": "public/assets/maths/ma12-spinner-base-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ec1f400d-5f07-45aa-ab0a-989ff106b6b9.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1400,
+        1400
+      ],
+      "sha256": "e85ea9a8fa86ecfff6edd6d937daf6c72a128ac5d948e35b6140c8fc2e9fdbe2",
+      "alphaBox": [
+        0,
+        152,
+        1200,
+        1254
+      ],
+      "alpha32Box": [
+        233,
+        241,
+        1019,
+        1026
+      ],
+      "approxBasePoint": [
+        626.0,
+        1025
+      ],
+      "topY": 241,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "discCentre": [
+        626,
+        633
+      ],
+      "discRadius": 347,
+      "outerRadius": 393,
+      "pinCentre": [
+        627,
+        631
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.18580542264752792,
+        0.19218500797448165,
+        0.18740031897926634,
+        0.18181818181818182
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-spinner-pointer-v1.png",
+      "path": "public/assets/maths/ma12-spinner-pointer-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-45ea867a-0026-4cdb-9a11-17d1f009814a.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1400,
+        1400
+      ],
+      "sha256": "82106c6a13dcb421ab512943ec85f506ef78bcb4994a3c925002388e3be51545",
+      "alphaBox": [
+        57,
+        140,
+        1224,
+        1085
+      ],
+      "alpha32Box": [
+        584,
+        365,
+        669,
+        747
+      ],
+      "approxBasePoint": [
+        626.5,
+        746
+      ],
+      "topY": 365,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "pivotPoint": [
+        628,
+        635
+      ],
+      "arrowTip": [
+        627,
+        367
+      ],
+      "anchorUncertaintyPx": 3,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.46570972886762363,
+        0.29106858054226475,
+        0.4665071770334928,
+        0.4043062200956938
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-desk-calendar-v1.png",
+      "path": "public/assets/maths/ma12-desk-calendar-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ed0f7a1e-c388-4cc4-8b39-afd896e8863c.png",
+      "designs": [
+        "s01"
+      ],
+      "nativeSize": [
+        1173,
+        1341
+      ],
+      "requestedSize": [
+        1400,
+        1600
+      ],
+      "sha256": "3b294473d617bfce08c404282836129cde197bba5812cadcb3853fe2082a4d71",
+      "alphaBox": [
+        0,
+        56,
+        1125,
+        1301
+      ],
+      "alpha32Box": [
+        142,
+        238,
+        1032,
+        1101
+      ],
+      "approxBasePoint": [
+        587.0,
+        1100
+      ],
+      "topY": 238,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "blankPageRect": [
+        266,
+        391,
+        906,
+        974
+      ],
+      "pageOutline": [
+        [
+          262,
+          368
+        ],
+        [
+          913,
+          368
+        ],
+        [
+          925,
+          985
+        ],
+        [
+          246,
+          985
+        ]
+      ],
+      "anchorUncertaintyPx": 7,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.12105711849957375,
+        0.17747949291573453,
+        0.12020460358056266,
+        0.1789709172259508
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cookie-v1.png",
+      "path": "public/assets/maths/ma12-cookie-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-34a0586a-2d78-4b4b-9e1c-01dcd7069810.png",
+      "designs": [
+        "s06"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        2000,
+        2000
+      ],
+      "sha256": "e8f645a2a366ed04687de994c1b57eabc9a44cf2c2ee144ae9445478751775c9",
+      "alphaBox": [
+        25,
+        63,
+        1185,
+        1238
+      ],
+      "alpha32Box": [
+        86,
+        87,
+        1151,
+        1165
+      ],
+      "approxBasePoint": [
+        618.5,
+        1164
+      ],
+      "topY": 87,
+      "visualQAInspected": true,
+      "state": "geometry-tolerance-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "circleCentre": [
+        618.375513389538,
+        627.4360331831608
+      ],
+      "circleRadius": 531.189915539302,
+      "radialErrorPxMinMax": [
+        -8.406545215911706,
+        8.854386541956842
+      ],
+      "radialErrorP99": 8.47521716282474,
+      "profileFinding": "Native1254canvas differs from requested2000. Exact requested centre1000radius840 and6px all-round tolerance are not certified. Fit to actual measured circle; no warp or pixel mask.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Native1254canvas differs from requested2000. Exact requested centre1000radius840 and6px all-round tolerance are not certified. Fit to actual measured circle; no warp or pixel mask."
+      ],
+      "meaningfulMarginFractions": [
+        0.0685805422647528,
+        0.06937799043062201,
+        0.08213716108452951,
+        0.07097288676236045
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s06.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-choc-chip-v1.png",
+      "path": "public/assets/maths/ma12-choc-chip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-5e369e99-58ef-452e-86a8-b4cdd855831d.png",
+      "designs": [
+        "s06"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        300,
+        300
+      ],
+      "sha256": "480e6d78dfa88f86e4b23db87f4ba7e44c4a5d7b7a99cdb7779494f064a8c50b",
+      "alphaBox": [
+        25,
+        23,
+        1241,
+        1244
+      ],
+      "alpha32Box": [
+        334,
+        301,
+        918,
+        947
+      ],
+      "approxBasePoint": [
+        626.0,
+        946
+      ],
+      "topY": 301,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.266347687400319,
+        0.24003189792663476,
+        0.2679425837320574,
+        0.24481658692185007
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s06.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-surf-beach-strip-v1.png",
+      "path": "public/assets/maths/ma12-surf-beach-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a7bbfd35-fcfc-418b-b420-f904bf7581c2.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        3200,
+        900
+      ],
+      "sha256": "c4e2cb1233b42f85085db109ec0b826a95af34a5017880bf2f0c4434d57c154d",
+      "alphaBox": [
+        162,
+        19,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        633,
+        309,
+        2172,
+        561
+      ],
+      "approxBasePoint": [
+        1402.5,
+        560
+      ],
+      "topY": 309,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "seaLineY": 560,
+      "seaLineXRange": [
+        633,
+        2171
+      ],
+      "leftClearFraction": 0.2914364640883978,
+      "profilePoints": [
+        [
+          633,
+          549
+        ],
+        [
+          900,
+          500
+        ],
+        [
+          1200,
+          452
+        ],
+        [
+          1500,
+          410
+        ],
+        [
+          1800,
+          350
+        ],
+        [
+          2100,
+          313
+        ]
+      ],
+      "profileFinding": "Native2172x724 vs requested3200x900. Meaningful sea edge rows559to560; left clear fraction29.1percent rather than one third. Reported actual profile; no stretching.",
+      "anchorUncertaintyPx": 8,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Native2172x724 differs from3200x900; sea row563 measured. Left clear region is29percent rather than full third. Builder must reconcile actual profile, no stretching.",
+        "Native2172x724 vs requested3200x900. Meaningful sea edge rows559to560; left clear fraction29.1percent rather than one third. Reported actual profile; no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.2914364640883978,
+        0.42679558011049723,
+        0.0,
+        0.22513812154696133
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied.",
+      "seaLineRowRange": [
+        559,
+        560
+      ]
+    },
+    {
+      "name": "ma12-marker-buoy-v1.png",
+      "path": "public/assets/maths/ma12-marker-buoy-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f2462d74-bfee-4677-95a7-b951bc356fe0.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        800,
+        1200
+      ],
+      "sha256": "f492a76b2fca31659ac75dd313eeae11363a9e08826778a2948050279173e023",
+      "alphaBox": [
+        0,
+        37,
+        1010,
+        1512
+      ],
+      "alpha32Box": [
+        198,
+        127,
+        825,
+        1421
+      ],
+      "approxBasePoint": [
+        511.5,
+        1420
+      ],
+      "topY": 127,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "waterlineY": 876,
+      "floatWidestSpan": [
+        200,
+        823
+      ],
+      "floatCentreX": 512,
+      "profileFinding": "Cross-shaped topmark is diagonal rather than a plus. Near-symmetry is visual, not exact mirrored pixels.",
+      "anchorUncertaintyPx": 7,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Cross-shaped topmark is diagonal rather than a plus. Near-symmetry is visual, not exact mirrored pixels."
+      ],
+      "meaningfulMarginFractions": [
+        0.193359375,
+        0.08268229166666667,
+        0.1943359375,
+        0.07486979166666667
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-marker-buoy-orange-v1.png",
+      "path": "public/assets/maths/ma12-marker-buoy-orange-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-4d5373f7-dcff-4011-b92b-6581f0abcce5.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        800,
+        1200
+      ],
+      "sha256": "fa386a1234d2be27d5a3ee2343d8282f846319897898ca734818e290f0b017af",
+      "alphaBox": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "alpha32Box": [
+        198,
+        127,
+        825,
+        1421
+      ],
+      "approxBasePoint": [
+        511.5,
+        1420
+      ],
+      "topY": 127,
+      "visualQAInspected": true,
+      "state": "exact-overlay-tolerance-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "waterlineY": 876,
+      "floatWidestSpan": [
+        200,
+        823
+      ],
+      "floatCentreX": 512,
+      "alphaPixelIdenticalToYellow": false,
+      "maxAlpha32EdgeDisplacementPx": 1.0,
+      "profileFinding": "Native size and alpha32 box match yellow. Alpha is not pixel identical; alpha32 edges differ by up to1 native pixel. Strict no-edge-movement condition not certified.",
+      "anchorUncertaintyPx": 7,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Same native canvas and alpha32 bounding box as yellow; exact edge match is measured separately.",
+        "Native size and alpha32 box match yellow. Alpha is not pixel identical; alpha32 edges differ by up to1 native pixel. Strict no-edge-movement condition not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.193359375,
+        0.08268229166666667,
+        0.1943359375,
+        0.07486979166666667
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-city-skyline-strip-v1.png",
+      "path": "public/assets/maths/ma12-city-skyline-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a6e34be1-a700-46e9-9963-14f80e5f3fe6.png",
+      "designs": [
+        "t02"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        3200,
+        900
+      ],
+      "sha256": "30d2ce48c2aebba6b6c10902fa40ebf00a393aab618ccc850ebdb22332155abf",
+      "alphaBox": [
+        0,
+        9,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        2,
+        390,
+        2172,
+        713
+      ],
+      "approxBasePoint": [
+        1087.0,
+        712
+      ],
+      "topY": 390,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLineY": 711,
+      "groundLineXRange": [
+        2,
+        2171
+      ],
+      "highestPointY": 390,
+      "heightAboveCanvasBottomFraction": 0.4613259668508287,
+      "profileFinding": "Highest meaningful point390 in724px canvas,46.1percent above bottom vs45percent maximum. Ground row711. Side clear margins conflict with full-width ground; reported as a profile exception requiring root review.",
+      "anchorUncertaintyPx": 6,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Tallest meaningful point is46.1percent above canvas bottom, slightly above45percent limit. Native profile and row reported; no stretching.",
+        "Highest meaningful point390 in724px canvas,46.1percent above bottom vs45percent maximum. Ground row711. Side clear margins conflict with full-width ground; reported as a profile exception requiring root review."
+      ],
+      "meaningfulMarginFractions": [
+        0.0009208103130755065,
+        0.5386740331491713,
+        0.0,
+        0.015193370165745856
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t02.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-tide-board-v1.png",
+      "path": "public/assets/maths/ma12-tide-board-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-5d1b7b9c-ff81-4d9b-bb74-72eb55c72660.png",
+      "designs": [
+        "t03"
+      ],
+      "nativeSize": [
+        953,
+        1651
+      ],
+      "requestedSize": [
+        1200,
+        2400
+      ],
+      "sha256": "d206b54ac84ad3d185ec1a97a4d6293514a51217e21fc2438984310f677f8b3c",
+      "alphaBox": [
+        0,
+        36,
+        934,
+        1601
+      ],
+      "alpha32Box": [
+        143,
+        83,
+        679,
+        1588
+      ],
+      "approxBasePoint": [
+        411.0,
+        1587
+      ],
+      "topY": 83,
+      "visualQAInspected": true,
+      "state": "geometry-tolerance-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "tickDetectionRows": [
+        184.0,
+        304.5,
+        459.0,
+        606.0,
+        745.0,
+        877.0,
+        1006.5,
+        1131.0,
+        1257.0,
+        1395.0,
+        1442.5
+      ],
+      "profileFinding": "Correct numerals0through8; spacing nonlinear beyond required2px. No linear height calibration certified.",
+      "anchorUncertaintyPx": 3,
+      "wholeMetreRows": {
+        "8": 304.5,
+        "7": 459,
+        "6": 606,
+        "5": 745,
+        "4": 877,
+        "3": 1006.5,
+        "2": 1131,
+        "1": 1257,
+        "0": 1395
+      },
+      "zeroMetreY": 1395,
+      "eightMetreY": 304.5,
+      "maxLinearFitResidualPx": 22.2222222222224,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Correct numerals0through8; spacing nonlinear beyond required2px. No linear height calibration certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.15005246589716684,
+        0.05027256208358571,
+        0.28751311647429173,
+        0.03815869170199879
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t03.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-exam-desk-v1.png",
+      "path": "public/assets/maths/ma12-exam-desk-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-050f12c3-e3e9-4fbe-9e3c-432b72d6de79.png",
+      "designs": [
+        "g01"
+      ],
+      "nativeSize": [
+        1619,
+        972
+      ],
+      "requestedSize": [
+        3000,
+        1800
+      ],
+      "sha256": "8557f860e2ef7a9debd1168b7dfaf42b790bab42321b5b6712472ac0b5124c15",
+      "alphaBox": [
+        0,
+        41,
+        1563,
+        934
+      ],
+      "alpha32Box": [
+        178,
+        160,
+        1441,
+        811
+      ],
+      "approxBasePoint": [
+        809.5,
+        810
+      ],
+      "topY": 160,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "deskOutline": [
+        [
+          178,
+          160
+        ],
+        [
+          1441,
+          160
+        ],
+        [
+          1441,
+          810
+        ],
+        [
+          178,
+          810
+        ]
+      ],
+      "leftPageBlankRect": [
+        310,
+        249,
+        621,
+        719
+      ],
+      "calculatorPlacementRect": [
+        1164,
+        244,
+        1395,
+        731
+      ],
+      "profileFinding": "Blank left-page width311native pixels requires an enlarged crop for large question text. Full desk may be too small for questions at phone size.",
+      "anchorUncertaintyPx": 6,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Blank left-page width311native pixels requires an enlarged crop for large question text. Full desk may be too small for questions at phone size."
+      ],
+      "meaningfulMarginFractions": [
+        0.1099444101297097,
+        0.1646090534979424,
+        0.1099444101297097,
+        0.16563786008230452
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-g01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-calculator-v1.png",
+      "path": "public/assets/maths/ma12-calculator-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-aad032a6-053c-4b9c-9ec9-2126669f1ea5.png",
+      "designs": [
+        "g01"
+      ],
+      "nativeSize": [
+        946,
+        1663
+      ],
+      "requestedSize": [
+        1000,
+        1800
+      ],
+      "sha256": "dee5a290222291fc2d8129c6d223f9063ae5f4f8d349d0ea45e366c500f0b8ec",
+      "alphaBox": [
+        0,
+        94,
+        802,
+        1471
+      ],
+      "alpha32Box": [
+        147,
+        239,
+        798,
+        1462
+      ],
+      "approxBasePoint": [
+        472.5,
+        1461
+      ],
+      "topY": 239,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "displayRect": [
+        203,
+        347,
+        741,
+        524
+      ],
+      "anchorUncertaintyPx": 5,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1553911205073996,
+        0.14371617558628982,
+        0.15644820295983086,
+        0.12086590499098016
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-g01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-tube-seedling-v1.png",
+      "path": "public/assets/maths/ma12-tube-seedling-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-09a997bc-c9bb-41c1-bb11-ef2d7626594e.png",
+      "designs": [
+        "f04"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        400,
+        800
+      ],
+      "sha256": "92b09005621fa3231accf74f94c48abe7972d60fb9faa265af3f01d60a35b543",
+      "alphaBox": [
+        0,
+        51,
+        978,
+        1536
+      ],
+      "alpha32Box": [
+        207,
+        221,
+        817,
+        1320
+      ],
+      "approxBasePoint": [
+        512.0,
+        1319
+      ],
+      "topY": 221,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.2021484375,
+        0.14388020833333334,
+        0.2021484375,
+        0.140625
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f04.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-young-gum-tree-v1.png",
+      "path": "public/assets/maths/ma12-young-gum-tree-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-d6cdd53f-f5f4-4b3e-ab84-771f2c3bbfd6.png",
+      "designs": [
+        "f04"
+      ],
+      "nativeSize": [
+        897,
+        1752
+      ],
+      "requestedSize": [
+        1000,
+        2000
+      ],
+      "sha256": "bcb94d99497fa685d387f7951817b8546a134c63f53b42934d967464d7250a86",
+      "alphaBox": [
+        41,
+        21,
+        861,
+        1712
+      ],
+      "alpha32Box": [
+        95,
+        135,
+        791,
+        1647
+      ],
+      "approxBasePoint": [
+        443.0,
+        1646
+      ],
+      "topY": 135,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed."
+      ],
+      "anchorUncertaintyPx": 15,
+      "meaningfulMarginFractions": [
+        0.10590858416945373,
+        0.07705479452054795,
+        0.11817168338907469,
+        0.059931506849315065
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f04.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-hillside-strip-v1.png",
+      "path": "public/assets/maths/ma12-hillside-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-bfae69ee-0531-47a4-9648-83c25ff1a713.png",
+      "designs": [
+        "f04"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        2400,
+        600
+      ],
+      "sha256": "b1be7bc3b03c08ac6d92e75fe9aa7e3807cc8573c51a805dff95468c2ec0079d",
+      "alphaBox": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        0,
+        353,
+        2172,
+        724
+      ],
+      "approxBasePoint": [
+        1086.0,
+        723
+      ],
+      "topY": 353,
+      "visualQAInspected": true,
+      "state": "profile-contract-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "profilePoints": [
+        [
+          0,
+          538
+        ],
+        [
+          543,
+          530
+        ],
+        [
+          1086,
+          465
+        ],
+        [
+          1629,
+          408
+        ],
+        [
+          2171,
+          386
+        ]
+      ],
+      "requestedProfileXMapping": [
+        0,
+        600,
+        1200,
+        1800,
+        2400
+      ],
+      "profileFinding": "Candidate rises left to right but endpoints differ; repeated tiles show a vertical step. Overall rising profile and equal-height seam require root choice.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Candidate rises left to right but endpoints differ; repeated tiles show a vertical step. Overall rising profile and equal-height seam require root choice."
+      ],
+      "meaningfulMarginFractions": [
+        0.0,
+        0.48756906077348067,
+        0.0,
+        0.0
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f04.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "remaining": "Other designs not yet painted. Voicing paused at quota; source review findings remain recorded.",
+  "releaseApproved": false
+}

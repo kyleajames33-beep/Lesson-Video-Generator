@@ -867,3 +867,13 @@ Evidence: `work/brief153/t02-calculations.py`.
 ### 105. Random variables lesson 7: acceptance ranking without a shape assumption
 
 **Location:** `random-variables/lesson07.sa.html`, short-answer Q3(b), answer at line 760. Equal means and standard deviations 0.2 and 2 do not establish which distribution places more probability within 0.5 of 50. A concrete counterexample is saved in `work/brief162/s03.json`: line A can have 85% at 50 with the remainder split at offsets sqrt(4/15); line B can have 90% at 50 with the remainder split at offsets sqrt(40). The standard deviations match, but B has more acceptable components. State an appropriate shared-shape assumption or change the question. Confirmed in brief 162, 4 November 2026.
+
+### 106. Financial mathematics lesson 13: repayment threshold
+
+**Location:** `financial-mathematics/lesson13.sa.html`, card 04 and key terms. The page says a payment below $2,147 never clears the $400,000 loan at 5% p.a. compounded monthly. $2,147.29 is approximately the payment for a 30-year term, not the threshold for eventual repayment: the exact first-month interest is $1,666.666..., and a constant payment above that amount clears the idealised fixed-rate loan given sufficient time. A smaller payment than $2,147 can clear it after more than 30 years. Distinguish the target-term repayment from the interest-only threshold. Confirmed against the live page and exact recurrence in brief 240, 11 November 2026.
+
+### 107. Financial mathematics lesson 6: which contributions compound longest
+
+**Location:** `financial-mathematics/lesson06.sa.html`, short-answer Q3(b) answer. It attributes up to 30 years of compounding to later payments. The earlier deposits have the longest time to compound; a deposit at the end of the final period has none before the valuation. Replace later with earlier and preserve the end-of-period timing. Confirmed against the live page and exact sum in brief 240, 11 November 2026.
+
+**Follow-up to item 79:** On 11 November the live Type A card no longer used the incorrect equality-to-threshold substitution. The historical issue is retained here for the correction record; recheck the live wording before applying it again.

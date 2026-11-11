@@ -1,0 +1,10 @@
+# f15 redesign: maths check (11 November 2026)
+
+**Changes required before plates or voice.** Exact rational calculations are in `work/brief240/f15-calculations.json` and `check-f15.py`. The 24-month goal requires $235.9236615... per month; $235.92 produces $5,999.91 and $235.93 produces $6,000.16. The $600,000 target requires $597.30315..., so $597.31 is the smallest whole-cent deposit reaching it. The fortnightly site example yields $720,885.32 at exact 0.064/26; substituting 0.002462 gives $721,020.61. The holiday time has real crossing 28.0222, with $5,994.90 after 28 and $6,224.88 after 29. The stopped-deposit final value is $6,750.14, the quarterly minimum is $1,099.08, and attempt 2 gives $29,214.53.
+
+The formula uses a zero initial balance and divides by r; give these conditions, including the zero-rate alternative, when presenting 'every problem uses the same model'. The claim 'the balance only changes at the end of a month' should be explicitly tied to this model's monthly crediting and end-of-month measurement. The integer rounding rule assumes a positive growth rate and positive deposits with the target not already met. The actual $597.31 plan deposits $215,031.60 and ends at $600,006.88, giving interest $384,975.28; its rounded narration is consistent.
+
+Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson06.sa.html Problem 2 confirms $450 fortnightly, 6.4%, 25 years and approximately $720,885; Q2 confirms $600,000 over 30 years at 6% monthly and nearest-cent $597.30. The latter does not quite reach the goal, as the design correctly explains. The random-variables lesson 05 URL returned inaccessible to the source tool: the handoff's die example needs independent current-site confirmation.
+
+
+Source follow-up,11November: Current random-variable lesson05 hook and data table directly verified in Chrome;200rolls38fours confirmed. Previous inaccessible-source reservation is superseded. See work/brief240/source-followups-nov11.md. Existing findings retained.

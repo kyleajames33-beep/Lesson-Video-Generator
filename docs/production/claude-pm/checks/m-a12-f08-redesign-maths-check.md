@@ -1,0 +1,7 @@
+# Maths f08 Revision 2: independent maths check
+
+11 November 2026. Result: 0 blockers, 2 should fix, 0 optional; 240-F08-LIMIT-CEILING and 240-F08-MINE-MAXIMUM are detailed in the companion review and counted once. Source hash and cue/count inventory `work/brief240/all-design-mechanical-inventory.json`; independent exact-rational calculations `work/brief240/f08-calculations.json`.
+
+20,000 × 1.05⁶ = 26,801.9128125; the five-step value is 25,525.63125. The message threshold log₃2000 = 6.91864, with 364,500 after six hours and 1,093,500 after seven. The trailer's five-, six- and seven-year values are $13,311.159375, $11,314.48546875 and $9,617.3126484375; the threshold is 6.75990 years. Oil's ten-year total is 325,660.77995 and its limiting total 500,000. Ticket value is $145.998348288, rounded $146.00; its four-step distractor rounds to $140.38. The mine's limiting total is 1,600,000, approached from below. The loan's first interest balance is $30,180.
+
+The live site at https://hscscience.com.au/subjects/maths-advanced/year12/sequences-and-series/lesson04.sa confirms the re-contexted 500 tripling threshold and its two boundary values, and the $30,000/15% car example including the five-year and seven-year results. Site uses bacteria and a car; the design replaces the contexts while retaining those numbers. Other site-source references and actual on-screen timing require subsequent checking.

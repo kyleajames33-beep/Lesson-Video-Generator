@@ -6194,3 +6194,363 @@ I08, i09, i10 and i12 completed and were handed in separately above. I14 generat
 ## Brief 205 B19 replacement completed, 10 November
 
 Published https://youtu.be/dJIzlRJdZTo from the checked v2 master `out/explainer/Explainer-bio-m6-b19/Explainer-bio-m6-b19-v2.mp4`, 14,398 frames, 479.933 s, SHA256 e69fbe3c6a1fcbc947ee8d1e0e58bafa658cadf4b26e508bbe9fb7e88cd0c7c6. YouTube HD complete; copyright and Community Guidelines checks found no issues. Existing title, description and settings retained. English Australia manual subtitles published. Playlist PLOXPcalkg-iI reloaded with 23 visible and one unavailable hidden: new video at 22 between o3PpNr9qFhY and dJSdk30cboo, old FfOK7a6blSw removed and saved Unlisted. Fix plan updated; historical records retained. Record `docs/production/claude-pm/youtube/brief205-b19-replacement-2026-11-10.json`. Prior local hand-in records scans and intermittent playback; no continuous-motion or full human-listening claim. B04 remains held for sparse frames.
+
+## Brief 240 f01 review, 11 November
+
+Maths f01 Revision 2: 0 blockers, 2 should fix. The hook incorrectly says a cricket scoreboard changes only once an over; frame the displayed totals as end-of-over samples. Scene 7 should distinguish its renamed numeric-example counter j from the general formula's upper bound j. Reports `checks/m-a12-f01-redesign-learning-review.md` and `checks/m-a12-f01-redesign-maths-check.md`; independent arithmetic, source hash, counts and cue inventory `work/brief240/f01-calculations.json`. Site examples and NESA points checked with the stated glossary-rendering limitation. 6,063 characters, 16 scenes, estimated 552 s. Written i14/f01/f02 joins match. Cricket is an everyday anchor; whole-course duplicate check remains pending. No plates, speech, design edits or commits. The remaining 33 reviews and all-course anchor check precede brief 240 plates.
+
+## Brief 240 f02 review, 11 November
+
+Maths f02 Revision 2: 0 blockers, 1 should fix. Scene 2's instruction to find every difference needs scope for a finite list or a rule-based proof for an infinite sequence. Reports `checks/m-a12-f02-redesign-learning-review.md` and `checks/m-a12-f02-redesign-maths-check.md`; calculations, source hash, scene counts and cue inventory `work/brief240/f02-calculations.json`. The two live worked examples and first-negative problem match. Site-error notes and remaining site questions are not yet verified. 5,911 characters, 15 scenes, estimated 540 s. Written f01/f02/f03 joins match; full-course anchor check, plates and speech remain pending. No design, scene or narration edits, or commits.
+
+## Brief 240 f03 review, 11 November
+
+Maths f03 Revision 2: 0 blockers, 1 should fix. Scene 9 says only arithmetic sequences pair evenly; non-arithmetic 1, 4, 2, 5 has equal outside pairs. The formula is guaranteed for an arithmetic sequence, rather than exclusive to it. Reports `checks/m-a12-f03-redesign-learning-review.md` and `checks/m-a12-f03-redesign-maths-check.md`; calculations, source hash, count and cue inventory `work/brief240/f03-calculations.json`. Site Problem 2 question matches; its solution and other source examples still need independent verification. 5,742 characters, 15 scenes, estimated 528 s. Written f02/f03/f04 joins match. Full-course anchor check, plates, voicing and built playback remain pending. No design, narration or scene edits, or commits.
+
+## Brief 240 f04 review, 11 November
+
+Maths f04 Revision 2: 0 blockers, 2 should fix. General notes should not claim every decay model stops exactly at zero, and the year-n step count needs its starting-time/update convention. Reports `checks/m-a12-f04-redesign-learning-review.md` and `checks/m-a12-f04-redesign-maths-check.md`; independent numbers, hash, scene counts and cue inventory `work/brief240/f04-calculations.json`. Live source hook, total and Problem 3 givens match; its hidden solution and other source examples remain to check. 5,750 characters, 15 scenes; written f03/f04 handoff matches. Full-course anchor audit, plates, voicing and built playback remain pending. No source or scene edits, speech or commits.
+
+### Brief 240 source-check follow-up, 11 November
+
+Live lesson 3 was checked in Chrome. F03's card 07 gives S20 = 820 for 3, 7, 11, and Problem 2(c) gives the same 4, 9, 14 threshold, root about 13.85 and 14 terms, S14 = 511. F04's Problem 3 solutions confirm the expression 3500n + 58500, ten-year total 777500 and year 12 value 100500; the design changes the context while retaining those numbers. The f03 50-to-200 short answer remains unverified on the live site.
+
+F02's historical site-error note needs updating: live card 08 Type A now distinguishes equality from the threshold and states no integer gives exactly 200; do not log the old version as a current defect. The “3-unknown rule” still names five quantities, and Type C still rounds (−3 + √40009)/10 to 19.8 instead of 19.70. Problem 2(b) now explicitly says no integer equals 322 but still displays the repeated self-correction described in the design. These are source observations; site content was not edited. F02's footer/index check remains pending.
+
+## Brief 240 f05 review, 11 November
+
+Maths f05 Revision 2: 0 blockers, 2 should fix. Even gaps do not always produce two real ratios when given terms have incompatible signs; growth/decay descriptions need a positive starting value or a magnitude qualification. Reports `checks/m-a12-f05-redesign-learning-review.md` and `checks/m-a12-f05-redesign-maths-check.md`; calculations `work/brief240/f05-calculations.json`, hash/counts/cues in `work/brief240/all-design-mechanical-inventory.json`. Live source examples and the nonzero-ratio syllabus point checked. 6,015 characters, 15 scenes, estimated 548 s; written f04/f05/f06 joins match. Built motion, entire-course anchor check, plates and voice remain pending. No source, narration or scene edits, speech or commits.
+
+## Brief 240 f06 review, 11 November
+
+Maths f06 Revision 2: 0 blockers, 1 should fix. The rice-harvest comparison needs a sourced grain weight on the same milled/paddy basis as the production figure. Given the design's 20–25 mg assumption, current FAO milled-equivalent output still supports hundreds of years. Reports `checks/m-a12-f06-redesign-learning-review.md` and `checks/m-a12-f06-redesign-maths-check.md`; arithmetic `work/brief240/f06-calculations.json`, hash/counts/cues `work/brief240/all-design-mechanical-inventory.json`. Live site examples and syllabus proof points checked. 6,063 characters, 16 scenes, estimated 552 s; f05/f06/f07 written joins match. Full-course anchor audit, plates and voice remain pending. No design or scene edits, speech or commits.
+
+## Brief 240 f07 review, 11 November
+
+Maths f07 Revision 2: 0 blockers, 2 should fix. Negative-r limit comparison needs a positive-first-term scope; attempt 2 must reconcile the convergent x = 0 case with the prior nonzero-ratio GP convention. Reports `checks/m-a12-f07-redesign-learning-review.md` and `checks/m-a12-f07-redesign-maths-check.md`; exact calculations `work/brief240/f07-calculations.json`, source hash/count/cues in `work/brief240/all-design-mechanical-inventory.json`. Live site worked examples and syllabus condition checked. 5,804 characters, 16 scenes; written f06/f07/f08 joins match. Full-course anchor check, plates and voice remain pending. No source, narration or scene edits, speech or commits.
+
+## Brief 240 f08 review, 11 November
+
+Maths f08 Revision 2: 0 blockers, 2 should fix. The note that a limiting total is never passed needs positive-term scope; the mine question should ask for a limiting total or upper bound, since no finite year attains it. Reports `checks/m-a12-f08-redesign-learning-review.md` and `checks/m-a12-f08-redesign-maths-check.md`; rational calculations `work/brief240/f08-calculations.json`, source hash/count/cues `work/brief240/all-design-mechanical-inventory.json`. Live source 500-tripling and 15%-depreciation examples match after the specified context changes. 6,052 characters, 14 scenes; written f07/f08/f09 joins match. Full-course anchor audit, other source references, plates and voicing remain pending. No source, narration or scene edits, speech or commits.
+
+### Brief 240 — f09 review, 11 Nov
+
+Learning and maths reports written in `checks/m-a12-f09-redesign-learning-review.md` and `checks/m-a12-f09-redesign-maths-check.md`; exact finance calculations in `work/brief240/f09-calculations.json`. Changes required: incorrect author A59, inconsistent rounding in displayed A3 and final payment split, conditions for falling balance and r=0, and qualification of the smaller final home-loan payment. Live site Problems 1–2 and lesson 13 repayment checked; site A3 and its claim that repayments below $2,147 never clear are incorrect. 5,821 narration characters; duration not measured. Whole-course anchor audit and plates pending; no voice or render.
+
+Correction to f09 entry: inventory is 6,276 characters in 16 scenes, not 5,821; full-precision final home payment rounds to $2,144.37.
+
+### Brief 240 — f10 review, 11 Nov
+
+Learning and maths reports written as `checks/m-a12-f10-redesign-learning-review.md` and `checks/m-a12-f10-redesign-maths-check.md`; exact payoff computations in `work/brief240/f10-calculations.json`. Changes required: rounded interest-only amount is not exact equality; distinguish continuous term estimates from integer payment counts when asserting strictly diminishing time savings; qualify rate comparisons as separate fixed-rate loans. Live site hook and f11 handoff values checked. 5,821 characters, 14 scenes; estimated 521 s, not yet measured. No new f10 plate, but f11 handoff assets and whole-course anchor audit pending. No voice or render.
+
+### Brief 240 - f11 review, 11 Nov
+
+Learning and maths reports: checks/m-a12-f11-redesign-learning-review.md and checks/m-a12-f11-redesign-maths-check.md; calculations: work/brief240/f11-calculations.json. Changes required: rounded instalments and actual final payments, equality at M=Pr, and the summary of a nonzero balance. Live site card 05 and Problem 3 checked. 5,636 characters, 14 scenes; duration unmeasured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - f12 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-f12-redesign-learning-review.md and checks/m-a12-f12-redesign-maths-check.md; exact calculations in work/brief240/f12-calculations.json. Changes required: withdrawal rounding and smaller final withdrawal, the assumptions behind rate conversion, and limiting frequency matching to this model. Live lesson 06 and lesson 07 Problem 3 checked. 5,629 characters, 15 scenes; duration unmeasured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - f13 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-f13-redesign-learning-review.md and checks/m-a12-f13-redesign-maths-check.md; exact calculations in work/brief240/f13-calculations.json. Changes required: author intermediate for first deposit, zero-rate and starting-balance conditions, and n as a count. Live lesson 06 Problem 1 confirmed; rounded intermediate and Q3 wording errors noted. 5,665 characters, 15 scenes; estimated 506 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - f14 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-f14-redesign-learning-review.md and checks/m-a12-f14-redesign-maths-check.md; exact calculations in work/brief240/f14-calculations.json. Changes required: one-cent rounded-component mismatch and conditions for scaling. Live lesson 06 hook checked; lesson 18 cached source dated four months ago needs current confirmation. 5,578 characters, 15 scenes; duration unmeasured. Plates and whole-course anchor audit pending; no voice or render.
+
+### Brief 240 - f15 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-f15-redesign-learning-review.md and checks/m-a12-f15-redesign-maths-check.md; exact calculations in work/brief240/f15-calculations.json. Changes required: state zero starting balance and zero-rate case and qualify monthly balance timing. Live financial lesson 06 Problem 2 and Q2 confirmed; die handoff source returned inaccessible and remains unconfirmed. 5,693 characters, 14 scenes; estimated 510 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s01 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s01-redesign-learning-review.md and checks/m-a12-s01-redesign-maths-check.md; independent calculations in work/brief240/s01-calculations.json. Changes required: scope the illustrative fairness simulations and models, and clarify unrounded frequencies. Source random-variables lesson 05 returned inaccessible, so site confirmation remains open. 5,792 characters, 14 scenes; estimated 517 s, not measured. Plates and whole-course anchor audit pending; no voice or render.
+
+### Brief 240 - s02 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s02-redesign-learning-review.md and checks/m-a12-s02-redesign-maths-check.md; enumeration in work/brief240/s02-calculations.json. Changes required: limit the finite-support claim to discrete uniform distributions and distinguish atom and event probabilities. The source random-variables lesson 06 remains unconfirmed. 5,602 characters, 14 scenes; duration unmeasured. Plates and whole-course anchor audit pending; no voice or render.
+
+### Brief 240 - s03 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s03-redesign-learning-review.md and checks/m-a12-s03-redesign-maths-check.md; exact calculations and seeded run in work/brief240/s03-calculations.json. Changes required: signed deviations, nonnegative squares, precise spread language and insurance costs. Site lesson 07 remains unconfirmed. 5,809 characters, 14 scenes; estimated 520 s, not measured. Plates and whole-course anchor audit pending; no voice or render.
+
+Brief 240 source follow-up: live random-variables lesson 06 confirms s02's die comparison and 0.04 example; lesson 07 confirms s03's distribution and insurance Q2. Both review pairs updated. Lesson 05 remains unconfirmed after its source URL returned an error.
+
+### Brief 240 - s04 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s04-redesign-learning-review.md and checks/m-a12-s04-redesign-maths-check.md; independent calculations in work/brief240/s04-calculations.json. Changes required: distinguish sample CDF estimates from population probabilities and qualify continuity and shrinking-window claims. Live lesson 08 counts and worked CDF confirmed. 6,196 characters, 18 scenes; estimated 551 s, not measured. Plates and whole-course anchor audit pending; no voice or render.
+
+### Brief 240 - s05 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s05-redesign-learning-review.md and checks/m-a12-s05-redesign-maths-check.md; exact calculations in work/brief240/s05-calculations.json. Changes required: qualify F derivative and integration relationships at endpoints and for density models. Live lesson 09 returned an error, so site examples remain unconfirmed. 6,107 characters, 16 scenes; duration unmeasured. Plates and whole-course anchor audit pending; no voice or render.
+
+### Brief 240 - s06 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s06-redesign-learning-review.md and checks/m-a12-s06-redesign-maths-check.md; symbolic calculations and regenerated chip sample in work/brief240/s06-calculations.json. Changes required: distinguish a finite chip sample from its continuous idealisation and describe modes as density peaks or narrow neighbourhoods. Site lessons 09 and 10 returned errors and remain unconfirmed. 6,036 characters, 16 scenes; estimated 536 s, not measured. Plates and whole-course anchor audit pending; no voice or render.
+
+Brief 240 source follow-up: browser inspection confirmed s01 lesson 05 hook and full frequency table; s05 lesson 09 Problems 1-3 (including k=1/8 and 7/16); and s06 lesson 10 card 02 and Problem 1. s01 Problem 3 and s06 lifetime question remain unchecked. The site automatically awarded 5 XP when the final worked step was opened; no answers were submitted.
+
+### Brief 240 - s07 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s07-redesign-learning-review.md and checks/m-a12-s07-redesign-maths-check.md; calculations and regenerated sample in work/brief240/s07-calculations.json. Changes required: specify uniform phase for bus arrivals, qualify rounding-error model and intersect queried intervals with support. Bus card and train source question remain unchecked. 5,732 characters, 16 scenes; estimated 514 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s08 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s08-redesign-learning-review.md and checks/m-a12-s08-redesign-maths-check.md; symbolic and sample checks in work/brief240/s08-calculations.json. Changes required: qualify 40 divided by mean song length as an approximate planning ratio, retain full-precision samples, and use non-strict variance comparison. Some lesson 10 source cards remain to check. 6,167 characters, 14 scenes; estimated 549 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s09 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s09-redesign-learning-review.md and checks/m-a12-s09-redesign-maths-check.md; SciPy and simulation checks in work/brief240/s09-calculations.json. Changes required: distinguish the directly sampled normal histogram from the five sums of chip masses, and qualify model fit. Site lessons 02 and 03 remain unconfirmed. 5,817 characters, 15 scenes; estimated 523 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s10 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s10-redesign-learning-review.md and checks/m-a12-s10-redesign-maths-check.md; SciPy checks in work/brief240/s10-calculations.json. Clarify spoken parentheses in the squared-deviation inflection step; source lessons 02 and 03 remain unconfirmed. 6,257 characters, 17 scenes; estimated 554 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s11 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s11-redesign-learning-review.md and checks/m-a12-s11-redesign-maths-check.md; SciPy checks in work/brief240/s11-calculations.json. Changes required: scope the table convention, fish tails and cohort comparisons, and label rounded z results. Site lessons 02 and 03 and HSC table convention remain unconfirmed. 5,647 characters, 15 scenes; estimated 508 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - s12 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-s12-redesign-learning-review.md and checks/m-a12-s12-redesign-maths-check.md; SciPy and simulation checks in work/brief240/s12-calculations.json. Changes required: strict-limit versus equality wording, one-decimal constraint for largest sigma, and approximate table answers. Site lessons 02 and 03 remain unconfirmed. 5,515 characters, 15 scenes; estimated 498 s, not measured. Plates, exact g01 handoff and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - t01 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-t01-redesign-learning-review.md and checks/m-a12-t01-redesign-maths-check.md; symbolic checks in work/brief240/t01-calculations.json. Changes required: time-to-angle units and the author cursor value 2.798 rather than 2.799. Live site card 06, Problem 1 and SA1 checked. 6,214 characters, 15 scenes; estimated 553 s, not measured. Skyline handoff plate and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - t02 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-t02-redesign-learning-review.md and checks/m-a12-t02-redesign-maths-check.md; symbolic checks in work/brief240/t02-calculations.json. No numerical blocker found in checked examples; live lesson 01 card 08, Problem 3 and SA3 checked, lesson 02 card 06 still open. 6,023 characters, 16 scenes; duration unmeasured. Tide-board handoff plate and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - t03 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-t03-redesign-learning-review.md and checks/m-a12-t03-redesign-maths-check.md; numerical checks in work/brief240/t03-calculations.json. Changes required: scope the checklist to sinusoidal models and bound the illustrated tide windows to the first cycle. Live lesson 02 Problem 1, wheel quick check and SA1 confirmed. 5,678 characters, 15 scenes; duration unmeasured. Plates and course-wide anchor audit pending; no voice or render.
+
+Source follow-up: t02 lesson 02 card 06 is also confirmed; its two reports were updated.
+
+### Brief 240 - t04 review, 11 Nov
+
+Learning and maths reports in checks/m-a12-t04-redesign-learning-review.md and checks/m-a12-t04-redesign-maths-check.md; calculations in work/brief240/t04-calculations.json. Changes required: axis rescaling, numerical dB versus intensity comparisons, and Celsius ratios. Live lesson 02 Problems 2-3 and SA4 checked. The t01/i05 and t04/i05-to-i06 frame intentions match; final pixel check remains. 5,974 characters, 16 scenes; estimated 535 s, not measured. Plates and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - g01 review and error check, 11 Nov
+
+Learning and maths reports in checks/m-a12-g01-redesign-learning-review.md and checks/m-a12-g01-redesign-maths-check.md; symbolic checks in work/brief240/g01-calculations.json. Changes required: scope the one-equation and rule-selection claims, speak logarithm parentheses, and fit tangent angle to graph scaling. Live application lesson 06 Problem 3 confirmed. 5,832 characters, 14 scenes; estimated 525 s, not measured. Shared exam-desk plates, joins and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - g02 review and error check, 11 Nov
+
+Learning and maths reports in checks/m-a12-g02-redesign-learning-review.md and checks/m-a12-g02-redesign-maths-check.md; symbolic checks in work/brief240/g02-calculations.json. Changes required: describe tabulated integration accurately, allow the definite-integral function route and scope the area rule. Original synthesis, no direct site example. 5,591 characters, 14 scenes; estimated 516 s, not measured. Joins and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - g03 review and error check, 11 Nov
+
+Learning and maths reports in checks/m-a12-g03-redesign-learning-review.md and checks/m-a12-g03-redesign-maths-check.md; exact finance and SciPy checks in work/brief240/g03-calculations.json. Changes required: distinguish normal and uniform supports, phrase continuous uniformity with intervals, and state annuity conditions and n as a count. Live finance lesson 13 Problem 2 confirmed. 6,034 characters, 13 scenes; estimated 542 s, not measured. Joins and course-wide anchor audit pending; no voice or render.
+
+### Brief 240 - course-wide anchor audit, 11 Nov
+
+Inventoried all 67 current anchor headings and compared their design hashes; see checks/m-a12-brief240-anchor-audit.md and work/brief240/course-anchor-inventory.md. Accepted callbacks and shared exam-desk framing recorded. Gate not declared passed: root should resolve the already-approved d01 bacteria pilot against the later no-science wording, and confirm f12 savings-calendar versus s02 date-calendar as distinct contexts. Secondary visuals and rendered frames still need inspection.
+
+Brief 240 source follow-up: browser inspection confirmed s07 bus card and train Q2; s06 lifetime Q2; s08 expectation, variance and computational-tool cards; s09 chocolate and bottle inputs; s10 apple and height examples; s11 Alex/Blake and bolt inputs; s12 cereal and bolt questions; and f03 SA2 sum 18,875. Reports updated. Correction to the s12 hand-in: the one-decimal requirement is already printed on its task strip and in the source; the issue is scoping the displayed inequality to that grid. No answers were submitted during this follow-up.
+
+### Brief 205 B19 state recheck, 11 Nov
+
+The prior 9 Nov pending entry is stale: YouTube Studio now shows v2 dJIzlRJdZTo Public and in Year 12 Biology Module 6, with v1 FfOK7a6blSw Unlisted and no longer in a playlist. quality-fixes/fix-plan.md also records published v2. No upload or visibility change was made in this check. Playlist position and subtitle publication were not independently verified in this pass; do not repeat the replacement.
+
+Correction to the B19 recheck: the 10 Nov completed hand-in above already records the playlist position, published manual subtitles and finished checks. The 11 Nov pass simply confirmed public v2 and unlisted v1; the replacement was already complete and was not repeated.
+
+Brief 240: added newly confirmed financial-site corrections 106 and 107, and a dated update that the historical Type A issue in item 79 is no longer present in the live wording.
+
+Brief 240 source clarification: the live s01 Problem 3 question gives 38 fours in 200 rolls and its first worked step gives 0.19; its final interpretation was not observed. The same live lesson 05 hook confirms the f15 die handoff. The corresponding learning reports now record these follow-ups.
+
+Brief 240 s11 reference-sheet follow-up: visually checked all four pages of the NESA Advanced/Extension sheet linked from its 2025 resource page. It includes the z formula and empirical-rule diagram but no numerical z table; a particular exam question could supply one. Both s11 reports updated with the source and the need to identify the convention of the table actually shown.
+
+Brief 240 plate preparation: `work/brief240/asset-brief-inventory.json` lists 61 distinct `ma12-` names mechanically found in the 34 asset-brief sections. This is a reference inventory, not a list of plates authorised for painting: it includes reused assets and needs manual classification against each brief, its review and existing files. No plates or manifest have been produced; review corrections and the whole-course anchor decision remain open.
+
+## Brief238 i14 voice hand-in
+
+math-a12-i14: docs/production/claude-pm/checks/m-a12-i14-redesign-learning-review.md: 0 blockers,2 should fix,0 optional.; docs/production/claude-pm/checks/m-a12-i14-redesign-maths-check.md: 0 maths blockers,1 maths should fix,0 optional.238-I14-REFERENCE-POINT shared with learning review;stale author-unit finding is additional. Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-robot-vacuum-top-v1.png, public/assets/maths/ma12-hallway-floor-v1.png, public/assets/maths/ma12-snow-post-v1.png. 5753 reviewed narration characters across15 takes;12 exact-text takes served from cache;3 new requests. Total479.07s, notes45s. Selected new-request billed usage217 input/1723 output tokens; estimatedUSD0.015616. Measureddocs/production/claude-pm/lessons/math-a12-i14/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.743s in scene-01;178 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief238/voice-results/i14/hand-in.json. Shared held handoff assets and profile tolerance misses remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief 238 remaining voice holds, 11 November: i01, i07, i11 and i13 source hashes remain identical to the versions with recorded blockers. i01 needs root to resolve shoot clearance; i07 has a false general nonpositive-integral rule and a seconds/minutes error; i11 and i13 have false unqualified area notes. Their previous prevoice gate explicitly excludes them. No speech requested for these four; continue to brief 239 while Claude repairs or signs off the findings.
+
+Brief 239 d01 upload in progress, 11 November: checked v2 uploaded to YouTube as private draft https://youtu.be/ZKaxytVWoEw. The specified title, description, two syllabus dotpoints and Maths playlist were entered, English (Australia) timed subtitles show published, and AI disclosure and not-made-for-kids were set. Copyright check says no issues; Community Guidelines check is still running. Do not upload a duplicate. Wait for checks, make public, verify playlist placement, and record the final state.
+
+## Brief 239 d01 published, 11 November
+
+Published https://youtu.be/ZKaxytVWoEw in HSC Maths Advanced Year 12 (PLMcUYX3DYIeY); playlist readback shows it at position 1. Copyright and Community Guidelines checks completed with no issues. English (Australia) timed subtitles published. Title, description and the two syllabus points were checked against the NESA 2024 differential-calculus page; AI disclosure and not-made-for-kids selected. Owner approved the existing v2; no new render. Master `out/explainer/Explainer-math-a12-d01/Explainer-math-a12-d01-v2.mp4`, 540.57 s, 16,217 frames, SHA256 3e5128a9bc1952545cc0eb46ae56495f1cba9595e565e55badd76a4d32f77566. Brief 225 recorded zero broken/blank or serif flags and a matching 16-frame sheet; owner's prior viewing is the playback sign-off per root. Independent full human listening remains pending. Existing Drive master backup and remote metadata are recorded in `work/brief225/math-a12-d01/build-report.md`; no duplicate backup or upload.
+
+Brief 239 d02 in progress: one concurrency-1 v1 render is running, log `work/brief239/d02/render.log`; asset guard passed six paths and 16 scenes. Pre-render export check recorded the expected pending exact voiced and learning preview, which root's 11 Nov sign-off schedules after rendering. 229 captions exported from the measured timeline; the only build hold extension is the final notes. Do not start another render or voice while this job runs. Full scan, sheet, normal-speed playback, production-brief review, backup and publication remain outstanding.
+
+## Brief 239 d02 rendered, release held, 11 November
+
+Render finished: `out/explainer/Explainer-math-a12-d02/Explainer-math-a12-d02-v1.mp4`, 540.5 s, 16,215 frames, SHA256 113f5bc070083bd959eb1d4b677dab829fe4177cfaf9971fd89b0fde87380d8e. Asset and font guard passed. 120 sampled frames and both endpoints decoded; broken-image/blank and serif heuristics returned no flags. The 16-frame master sheet in `work/brief239/d02/v2-sheet.jpg` visually matches root's signed-off sheet (the first live readout differs by one frame's rounding). These are sampled checks, not full motion review. 229 timed captions in `work/brief239/d02/captions/`. The master was copied to the local Drive mirror and SHA256 matched; cloud sync not independently checked. Normal-speed complete playback, pronunciation review and exact voiced preview remain unperformed: the available computer interface does not supply continuous video/audio perception for that review. Do not mark the production brief passed or publish on the strength of stills. Source-brief checker result remains in `work/brief239/d02/pre-render-export-stage-check.log`; root's sign-off requires the exact voiced preview before release. No public d02 upload made.
+
+## Brief 239 d03 rendered, release held, 11 November
+
+Render finished: `out/explainer/Explainer-math-a12-d03/Explainer-math-a12-d03-v1.mp4`, 554.533 s, 16,636 frames, SHA256 3e554f6d5bf45336f529b9e3c6e8999365b7d3bafd93bb98860bb8b32ab6d865. Asset/font guard passed. 120 sampled frames and both endpoints decoded; broken-image/blank and serif heuristics returned no flags. The 16-frame master sheet in `work/brief239/d03/v2-sheet.jpg` visually matches root's signed-off sheet, with a small first-frame live readout difference from sampling time. These are sampled checks, not full motion review. 239 timed captions in `work/brief239/d03/captions/`. Local Drive mirror copy hash matched; cloud sync not independently checked. Normal-speed complete playback, pronunciation review and exact voiced preview remain unperformed for the same interface limitation as d02. Do not mark the production brief passed or publish on stills alone. Pre-render checker result in `work/brief239/d03/pre-render-export-stage-check.log`. No public d03 upload made.
+
+## Brief 236 wave 1: chem-y11-m1-v01 voiced, 11 November
+
+6287 characters; 499.60 seconds; measured docs/production/claude-pm/lessons/c-y11-m1-v01/measured/lesson.json; 194 captions; estimated new speech cost USD 0.09739. Cue and alignment checks passed; worst gap 1.263 seconds in compound. Machine flags and scene-level details are in work/brief236/wave1/chem-y11-m1-v01/hand-in.json. Human listening and built preview pending. Drive mirror hashes verified; cloud sync not individually checked.
+
+## Brief 236 wave 1: chem-y11-m1-v02 voiced, 11 November
+
+6330 characters; 481.43 seconds; measured docs/production/claude-pm/lessons/c-y11-m1-v02/measured/lesson.json; 185 captions; estimated new speech cost USD 0.09298. Cue and alignment checks passed; worst gap 1.043 seconds in physical-properties. Machine flags and scene-level details are in work/brief236/wave1/chem-y11-m1-v02/hand-in.json. Human listening and built preview pending. Drive mirror hashes verified; cloud sync not individually checked.
+
+Brief 236 wave 1 quota hold: v01 and v02 are complete and individually handed in. The v03 preflight found 90 requests in quota day 2026-11-10 and 16 needed, exceeding the conservative 99-request daily cap. It stopped before requesting any v03 speech. Do not retry before the provider quota resets; resume with v03, preserving completed lessons. Wave 1 remains incomplete.
+
+### Brief 237 source preparation: chem-y11-m1-v18, 11 November
+
+5,944 scene-sum characters in 18 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v18-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v19, 11 November
+
+6,350 scene-sum characters in 19 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v19-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v20, 11 November
+
+5,765 scene-sum characters in 18 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v20-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v22, 11 November
+
+5,983 scene-sum characters in 19 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v22-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v23, 11 November
+
+5,910 scene-sum characters in 17 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v23-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v24, 11 November
+
+5,584 scene-sum characters in 17 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v24-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v25, 11 November
+
+5,786 scene-sum characters in 16 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v25-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v26, 11 November
+
+5,648 scene-sum characters in 16 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v26-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+### Brief 237 source preparation: chem-y11-m1-v27, 11 November
+
+5,516 scene-sum characters in 16 scenes; no em dash. All bold narration phrases have exact quoted matches in their scene's visual text. Inventory and source hash: work/brief237/v27-source-inventory.json. This mechanical check does not establish repeated-cue occurrence, full spoken order, science correctness, timing or build joins. No speech, plates or design edits. Full error check remains pending except where separately handed in.
+
+Brief 237 v18 repair-check follow-up: docs/production/claude-pm/checks/c-y11-m1-v18-rev2-error-check.md. Repaired narration and new charge/nucleon arithmetic checked; report remains in progress with explicit remaining checks. No plates or speech.
+
+Brief 237 v19 repair-check follow-up: docs/production/claude-pm/checks/c-y11-m1-v19-rev2-error-check.md. Repaired narration and new charge/nucleon arithmetic checked; report remains in progress with explicit remaining checks. New should-fix: sodium one-oxide wording exceeds the common-ion-charge argument. No plates or speech.
+
+Brief 237 v20 repair-check follow-up: docs/production/claude-pm/checks/c-y11-m1-v20-rev2-error-check.md. Repaired narration and new charge/nucleon arithmetic checked; report remains in progress with explicit remaining checks. No plates or speech.
+
+Brief 237 v27 source follow-up: about 70 g/L butanol supported by IUPAC 0.97 mol/L at 25 C (71.8964 g/L); pentanol 22 g/L supported by ICSC 2.2 g/100 mL at 20 C. Sources and concentration/temperature distinctions in work/brief237/v27-solubility-source-check.md. Full error check remains pending.
+
+Brief 237 v23 arithmetic preparation: two unit bond-dipole vectors give 2 cos(theta/2), zero at 180 degrees and 1.22443456 at 104.5 degrees, agreeing with 0.00 and 1.22. Other new charge sums recalculated in work/brief237/independent-new-readouts.json. This is not full v23 error-check sign-off.
+
+Brief 237 v26 source preparation: NIST confirms rounded F2 -188 C, Cl2 -34 C and ethane -89 C. Ethane boils 99.4 K above F2 despite equal electron count. Sources and remaining bromine/iodine lookups in work/brief237/v26-boiling-source-check.md. No speech requested.
+
+Brief 237 v24 coins QA, 11 November: inspected the existing y11-coins-v1.png on paper #f6f1e7, dark board, black and white at about 480 px wide. No detached coloured halo visible on paper; the narrow light metal rim follows the coins. Retain plate, no repaint. QA work/brief237/v24-coins-halo-qa.png.
+
+Brief 237 v26 follow-up: ICSC confirms bromine 58.8 C (59 rounded) and iodine 184 C; all four halogen boiling values and ethane now have independently retrieved sources. Work/brief237/v26-boiling-source-check.md updated.
+
+Brief237 v22 source repair check: 0 blockers; 0 new factual should-fix in the repaired portions. 5983 characters; report docs/production/claude-pm/checks/c-y11-m1-v22-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v23 source repair check: 0 blockers; 0 new factual should-fix in the repaired portions. 5910 characters; report docs/production/claude-pm/checks/c-y11-m1-v23-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v24 source repair check: 0 blockers; 0 new factual should-fix in the repaired portions. 5584 characters; report docs/production/claude-pm/checks/c-y11-m1-v24-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v25 source repair check: 0 blockers; 1 new should-fix. 5786 characters; report docs/production/claude-pm/checks/c-y11-m1-v25-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Heat-slider threshold finding needs builder attention. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v26 source repair check: 0 blockers; 0 new factual should-fix in the repaired portions. 5648 characters; report docs/production/claude-pm/checks/c-y11-m1-v26-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v27 source repair check: 0 blockers; 0 new factual should-fix in the repaired portions. 5516 characters; report docs/production/claude-pm/checks/c-y11-m1-v27-rev2-error-check.md. Independent new readouts and previously recorded unchanged evidence checked. Plates/voice/build checks remain separate; no speech.
+
+Brief237 v18 source repair check completed: zero blockers in the repaired source; written joins and current revised cues checked against brief179 and the neighbouring designs. Report updated; speech remains subject to quota and playlist wave order.
+
+Brief237 v19 source repair check completed: zero blockers in the repaired source; one should-fix on sodium oxide scope; written joins and current revised cues checked against brief179 and the neighbouring designs. Report updated; speech remains subject to quota and playlist wave order.
+
+Brief237 v20 source repair check completed: zero blockers in the repaired source; written joins and current revised cues checked against brief179 and the neighbouring designs. Report updated; speech remains subject to quota and playlist wave order.
+
+Brief237 v20 plates delivered at generator native size: public/assets/chemistry/y11c-lead-dioxide-v1.png, public/assets/chemistry/y11c-copper-chloride-crystals-v1.png. Paper/dark/black/white QA inspected at400px. Slight canvas-size differences and low-alpha margin specks are explicitly recorded in docs/production/claude-pm/assets/chem-y11-m1-v20-provenance.json; no stretching or pixel edit. No speech.
+
+Brief237 v22 plates delivered at generator native size: public/assets/chemistry/y11c-calcium-chloride-v1.png. Paper/dark/black/white QA inspected at400px. Slight canvas-size differences and low-alpha margin specks are explicitly recorded in docs/production/claude-pm/assets/chem-y11-m1-v22-provenance.json; no stretching or pixel edit. No speech.
+
+Brief237 v24 plate delivered: public/assets/chemistry/y11c-sterling-silver-spoon-v1.png. Reframed by image tool for >8percent meaningful margin. Native canvas deviation recorded in docs/production/claude-pm/assets/chem-y11-m1-v24-provenance.json; no resampling/stretching.400px paper/dark/black/white composites inspected. Source findings remain in report, no speech.
+
+Brief237 v25 plate delivered: public/assets/chemistry/y11c-sic-cutting-disc-v1.png. Reframed by image tool for >8percent meaningful margin. Native canvas deviation recorded in docs/production/claude-pm/assets/chem-y11-m1-v25-provenance.json; no resampling/stretching.400px paper/dark/black/white composites inspected. Source findings remain in report, no speech.
+
+Brief237 artwork hand-in: all five new plates and coins reuse QA recorded in assets/brief237-manifest.json. Local Drive mirror copies SHA256-verified; cloud sync not independently checked. Wave7 voicing remains after wave2 and daily quota availability. No completed voice lesson repeated.
+
+Queue record reconciliation: work/youtube-pending.json now records d01 published (no repeat upload) and d02/d03 checked masters waiting for release playback review. Previous queue JSON preserved in work/brief239/youtube-pending-before-reconcile-nov11.json.
+
+Brief240 f01 artwork hand-in: scoreboard, cricket ball, grass strip and shared chair delivered at native generator size. Scoreboard code rectangles and chair13.5125px/cm with81.075px/6cm offset measured in assets/ma12-f01-provenance.json. Two/five-chair stacks,90px ball and two-tile grass QA inspected. Native dimension differences, slight ball ovality, low-alpha specks and non-pixel-identical grass seam are reported, not waived. Source review corrections still belong to root; no speech or render. Local Drive mirror hashes match.
+
+Brief240 f02 artwork dependency: reuse ma12-stacking-chair-side-v1.png from f01; same measured80cm chair and6cm vertical offset, two/five-copy QA supplied. No second chair generated. Source review finding remains recorded.
+
+Brief240 f04 asset-contract finding: hillside must both rise left-to-right and tile at equal endpoint height; those requirements conflict for one overall rising ground line. Held hillside only pending root profile choice; continued seedling/sapling. Finding appended to f04 learning review; no design change.
+
+Brief240 f04 artwork hand-in: public/assets/maths/ma12-tube-seedling-v1.png, public/assets/maths/ma12-young-gum-tree-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f04-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Hillside remains held for contradictory slope/tile contract. Source review findings still recorded; no speech or render.
+
+Brief240 f03 artwork hand-in: public/assets/maths/ma12-food-tin-v1.png, public/assets/maths/ma12-display-base-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f03-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f05 artwork hand-in: public/assets/maths/ma12-paper-sheet-v1.png, public/assets/maths/ma12-paper-folded-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f05-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f06 artwork hand-in: public/assets/maths/ma12-chessboard-top-v1.png, public/assets/maths/ma12-rice-grain-v1.png, public/assets/maths/ma12-rice-heap-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f06-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f03 target-size follow-up: 15-row pyramid at96px full plate width and full plinth at1500px inspected in work/brief240/f03-15-row-96px-and-1500px-base-qa.jpg. Tin visible ratio2.52:1 differs from requested about2:1. No distortion applied. f05 sheet640px and fold360px inspected in f03-f05-f06-target-size-qa.jpg. f06 board has8x8 cells but exact square/equal-spacing tolerance fails, recorded in provenance; not cleared for an exact coded overlay. Rice grain haze removed by image tool and four-background QA re-inspected. No voice or render.
+
+Brief240 measurement follow-up: meaningful alpha32 margins calculated explicitly in manifest and per-lesson provenance. Some native outputs miss the8percent margin and remain reported deviations, not a clean specification pass. f06 board explicitly geometry-tolerance-held. f07 has no new plate: reuse existing Biology tennis ball. No speech requested.
+
+Brief240 f08 artwork hand-in: public/assets/maths/ma12-country-town-v1.png, public/assets/maths/ma12-camper-trailer-v1.png, public/assets/maths/ma12-concert-ticket-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f08-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f09 artwork hand-in: public/assets/maths/ma12-used-hatchback-v1.png, public/assets/maths/ma12-loan-statement-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f09-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f11 artwork hand-in: public/assets/maths/ma12-motorbike-v1.png, public/assets/maths/ma12-swing-tag-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f11-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f12 artwork hand-in: public/assets/maths/ma12-wall-calendar-v1.png, public/assets/maths/ma12-apartment-building-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f12-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f13 artwork hand-in: public/assets/maths/ma12-super-statement-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f13-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f15 artwork hand-in: public/assets/maths/ma12-travel-suitcase-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f15-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 finance artwork QA: f08 ten houses at70px fit in two rows on measured empty land. Target-width QA files inspected for f08, f09, f11, f12, f13 and f15, plus four-background alpha QA. f09 six-column/eight-row table has unequal first-column width; f12 seven-column/five-row calendar has rectangular cells, both reported in provenance for code registration. All newly handed-in plates pass meaningful alpha32 8percent margins; strict all-alpha specks are not certified. f10 and f14 have no new plate. f12/f13/f15 plates are now available for the earlier final frames. No speech.
+
+Brief240 remaining source follow-up: f04 used Problem3/SA3 answers, f14 current technology source and f15/s01 die handoff/Problem3 now directly checked in Chrome; reports updated. f01/f02 module index confirmed. Old arithmetic footer not visible in current Learn/Practice; Review locked, so old footer error not claimed current. Details work/brief240/source-followups-nov11.md. No narration/design edits or speech.
+
+Brief240 s02 artwork hand-in: public/assets/maths/ma12-die-red-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s02-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s03 artwork hand-in: public/assets/maths/ma12-pet-carrier-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s03-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s04 artwork hand-in: public/assets/maths/ma12-starting-blocks-v1.png, public/assets/maths/ma12-timing-display-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s04-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s05 artwork hand-in: public/assets/maths/ma12-delivery-van-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s05-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s07 artwork hand-in: public/assets/maths/ma12-bus-stop-v1.png, public/assets/maths/ma12-bus-side-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s07-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s08 artwork hand-in: public/assets/maths/ma12-headphones-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s08-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s09 artwork hand-in: public/assets/maths/ma12-chip-bag-v1.png, public/assets/maths/ma12-potato-chip-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s09-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s10 artwork hand-in: public/assets/maths/ma12-apple-v1.png, public/assets/maths/ma12-apple-crate-v1.png, public/assets/maths/ma12-graphing-calculator-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s10-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s12 artwork hand-in: public/assets/maths/ma12-filling-head-v1.png, public/assets/maths/ma12-cereal-box-v1.png, public/assets/maths/ma12-hex-bolt-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s12-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 statistics artwork QA: s02 matched-width red/white pair; s03 carrier/cat same file-pixel scale; s04 amber0.3517 registration; s05 van/box relative scale; s07 stop460px tall andbus340px wide; s08 420/200px widths; s09 bag400px tall on520px scales and30-chip path test; s10 calculator560px tall with32px text/bell and crate460px; s12 fillinghead460px, bottles60px, cereal380px andbolt420px inspected. Diagnostic files in work/brief240; source PNGs unchanged by QA composition. Native ratios, small margin misses and s05 box-bodied delivery vehicle are explicitly reported. s11 needs no new plate. No speech or render.
+
+Brief240 s01 artwork hand-in: public/assets/maths/ma12-die-top-1-v1.png, public/assets/maths/ma12-die-top-2-v1.png, public/assets/maths/ma12-die-top-3-v1.png, public/assets/maths/ma12-die-top-4-v1.png, public/assets/maths/ma12-die-top-5-v1.png, public/assets/maths/ma12-die-top-6-v1.png, public/assets/maths/ma12-coin-heads-v1.png, public/assets/maths/ma12-coin-tails-v1.png, public/assets/maths/ma12-spinner-base-v1.png, public/assets/maths/ma12-spinner-pointer-v1.png, public/assets/maths/ma12-desk-calendar-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s01-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 s06 artwork hand-in: public/assets/maths/ma12-cookie-v1.png, public/assets/maths/ma12-choc-chip-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-s06-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 t01 artwork hand-in: public/assets/maths/ma12-surf-beach-strip-v1.png, public/assets/maths/ma12-marker-buoy-v1.png, public/assets/maths/ma12-marker-buoy-orange-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-t01-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 t02 artwork hand-in: public/assets/maths/ma12-city-skyline-strip-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-t02-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 t03 artwork hand-in: public/assets/maths/ma12-tide-board-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-t03-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 g01 artwork hand-in: public/assets/maths/ma12-exam-desk-v1.png, public/assets/maths/ma12-calculator-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-g01-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f04 artwork hand-in: public/assets/maths/ma12-tube-seedling-v1.png, public/assets/maths/ma12-young-gum-tree-v1.png, public/assets/maths/ma12-hillside-strip-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f04-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Hillside remains held for contradictory slope/tile contract. Source review findings still recorded; no speech or render.
+
+Brief240 final art measurements: s01 six physically adjacent-face dice checked at300/600px;48-frame30fps cut test holds each face8frames, not a full motion-listening review. Coin registration differences and spinner pivot offset are in measured records. S06 cookie fit exceeds strict6px circle tolerance and is geometry-held;60-chip300/560px tests inspected.
+
+Brief240 t01: beach820px with buoys aligned to measured sea row560 inspected;300/600px paper and four-background edges checked. Orange alpha32 edge differs from yellow by up to1 native pixel, so exact-overlay condition held. Left beach clear region29.1percent reported. T02 skyline300/600/820px and110px sun checked; actual ground711 and46.1percent roof height reported. T03 board300/800px tall with1.5/7.5m bands checked; all metre rows supplied, maximum linear-fit residual22.22px exceeds2px requirement, so calibration held. Reused Ferris stand axle-to-base916px vs rim radius515px is1.7786r at native file scale, not1.2r; builder must use coded ground1.2r below hub, no stretching.
+
+Brief240 g01 artwork checked at300/600/1500px with separate calculator on desk; blank-page and display rectangles supplied. G02: reuse shared g01 desk and calculator, no new plate. G03: reuse same desk/calculator and accepted s06 cookie callback; cookie geometry hold applies to callback. T04: no new plate. No duplicate art or speech.
+
+Brief240 artwork inventory: 61 unique requested plate names supplied as native PNGs, all local Drive mirror PNG hashes verified; metadata copied, cloud sync unverified. Geometry/profile deviations are explicit and are not approval to build or publish. All34 source review pairs retained; whole-course anchor findings remain with root. Daily Google quota hold remains; voice seconds/cost0 for this artwork stage.

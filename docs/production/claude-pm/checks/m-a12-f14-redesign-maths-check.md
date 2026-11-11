@@ -1,0 +1,10 @@
+# f14 redesign: maths check (11 November 2026)
+
+**Changes required before plates or voice.** Exact rational calculations are in `work/brief240/f14-calculations.json` and `check-f14.py`. At $300 monthly and 4.8%, the five-year amount is $20,298.0539; doubling contributions gives $40,596.1078. Starting $5,000 grows to $6,353.20359 and the total is $26,651.25750. The 9.6% five- and 30-year amounts are $22,987.16005 and $622,923.96941. The 40- and 30-year annual examples are $1,836,643.0303 and $869,039.2342, a difference of $967,603.80. The attempts also agree with the stated rounded answers.
+
+Scene 4 displays $6,353.20 + $20,298.05 as $26,651.26, but the displayed rounded amounts add to $26,651.25. Explain that the sum uses unrounded components or display sufficient extra precision. The claim that doubling contributions doubles the entire balance requires zero starting balance, which is true in scene 3 and should also be explicit in attempt 1. The 'rate and time compound' summary is an illustration of these positive-rate, regular-payment scenarios, not a universal comparison of which input is most influential. Scene 8 must preserve the assumption of a fixed 7% annual return; it is a mathematical model rather than an actual guaranteed super return.
+
+Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson06.sa.html hook supplies $9,200, 40 years and approximately $1.84m, with 7% in card 02; the design makes its annual end-of-year timing explicit. The lesson 18 technology page https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson18.sa.html supports the tool and period-matching context. Its cached page was last crawled four months ago, so its current content has not been independently reconfirmed.
+
+
+Source follow-up,11November: Current technology lesson18 and periodic-rate/total-period instructions directly verified in Chrome. Cached-source reservation is superseded. See work/brief240/source-followups-nov11.md. Existing findings retained.
