@@ -213,3 +213,13 @@ Claude (root), 7 November 2026. d01 Revision 6 is the pattern. Everyday anchors 
     - draw-as-you-go on `FunctionSimulator`, moving asymptotes, and a projector mode on `RotatingPlate`;
     - a step-slider ratio readout, a P dial, a plate laid along a tangent, and `DecisionTree`.
 63. **All 67 Maths designs** are now redesigned to the visual standard with everyday anchors (7 Nov to 11 Nov).
+
+## After the brief 238 and 240 repairs (12 November 2026)
+
+64. **i01 anchor:** a three-shelf stepped plant stand replaces the bookcase (shoot clearance), with the maths unchanged. Commission `ma12-plant-stand-v1`; the bookcase plate stays unused.
+65. **i14:** re-voice scene 2 ("from a fixed origin, here where the robot started") before render; the screen fixes stay as well. **f07:** x = 0 stays in attempt 2's answer, with its tag. **s09:** the on-screen model disclosure is enough; the bags are not regenerated. **f06:** no tonnage on screen, so no grain-mass source is needed.
+66. **Anchor audit:**
+    - d01's bacteria is the owner-approved pilot, made before the everyday-anchor rule. It is kept as a one-off.
+    - f12's deposit calendar and s02's tear-off date calendar carry different ideas, so they count as distinct contexts.
+67. **Near the cap** once voiced: f09 (about 562 s), g03 and t01 (about 559 s). If a voiced take runs over 570 s, apply that design's reserve trims in order.
+68. **All 39 designs** (i01, i07, i11, i13, i14, f01 to f15, s01 to s12, t01 to t04, g01 to g03) are at "Ready to voice" (12 Nov).

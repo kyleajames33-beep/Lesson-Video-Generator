@@ -1,8 +1,8 @@
 # Maths A12 F03: Why do arithmetic partial-sum formulas work? Pairing first with last, two forms of Sₙ, counting terms, and solving for n (design)
 
-Status: Revision 2 (7 Nov 2026): redesign to maths-visual-standard.md (d01 Revision 6 pattern, everyday anchor). Needs Codex learning review and maths check before voicing. Previously Revision 1 (2 Nov 2026). Not voiced (no `math-a12-f03/` folder and no `measured/lesson.json`), so narration is rewritten freely where the anchor needs it. Nothing recorded; human listening pending.
+Status: Revision 3 (12 Nov 2026): brief 238/240 findings resolved (root). Ready to voice. Previously: Revision 2 (7 Nov 2026): redesign to maths-visual-standard.md (d01 Revision 6 pattern, everyday anchor). Needs Codex learning review and maths check before voicing. Previously Revision 1 (2 Nov 2026). Not voiced (no `math-a12-f03/` folder and no `measured/lesson.json`), so narration is rewritten freely where the anchor needs it. Nothing recorded; human listening pending.
 
-Narration 5,742 characters, 15 scene headings, about 528 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,776 characters (Revision 3; was 5,742), 15 scene headings, about 531 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
 
 Scope: third video of the Year 12 Mathematics Advanced sequences strand (course outline playlist order 40), after f02 (arithmetic sequences) and before f04 (arithmetic models). Templates: `math-a12-i05.md` and `math-a12-d10.md`: same section structure, voice, paper style and coded maths visuals; no painted plates (programme decision 5). No brief 151 pack and no route-inputs-3 entry exist for f03 (checked 2 Nov); pack work done here. Site lessons read (2 Nov, read-only): `sequences-and-series/lesson03.sa.html` (SHA256 `6ccf1ca41bea4fa028dec2301417d98bf39c6394ad06a0acebff03cfd413448b`; card 07 derivation and example, card 08 Type C, Problem 2, short answer 2) and `lesson02.sa.html` (SHA256 `3e39912f80d83dc05cdfe2b1de2979342fb059faeb181bcbc92ffc9a10bdab77`; the stadium hook 1 + 2 + … + 50 = 1275). Every number recalculated with SymPy. Course outline entry: `math-a12-f03` (two content points, site source lesson 3).
 
@@ -127,9 +127,9 @@ Visual: clear change (new case, g01 layout). Task strip: "How many terms of 4 + 
 Visual: clear change (new case, g01 layout). Task strip: "How many terms of 11 + 9 + 7 + … add up to 32?" (original). Givens card: "a = 11, d = −2". Rows at 52 px: "Sₙ = (n/2)[22 − 2(n − 1)] = n(12 − n)"; "n(12 − n) = 32"; "n² − 12n + 32 = 0"; on "eight" "(n − 4)(n − 8) = 0, so n = 4 or n = 8". The running-total simulation at the left: a `TermPlot` of Sₙ (teal points) with a dashed ink line y = 32; an n slider runs 1 → 9 while the readouts "aₙ" (blue) and "Sₙ" (teal) update and points 11, 20, 27, 32 appear (n = 4 meets the line). As the slider runs on, the terms 3, 1, −1, −3 light on a `TermLadder` strip (the negative cards outlined), the points rise to 35, 36 and fall back to 35, 32; on "again" the n = 8 point lands on the line and both crossing points ring green; a bracket "3 + 1 + (−1) + (−3) = 0". The ninth point (27) shows below the line. Hand tag "terms go negative: the sum comes back down"; chip "check every root".
 
 ### 9. memory aid
-> Here's the short version. An arithmetic sum is the average of the first and last terms, times how many terms there are. It only works for arithmetic sequences, because only they pair up evenly. For one, plus two, plus four, it gives seven and a half, but the real sum is **seven**.
+> Here's the short version. An arithmetic sum is the average of the first and last terms, times how many terms there are. It's guaranteed for arithmetic sequences, because their terms always pair up evenly. Other lists might not. For one, plus two, plus four, it gives seven and a half, but the real sum is **seven**.
 
-Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 620 px, double ink frame, hand-font heading "Memory aid"). Inside: a small tin-pyramid parallelogram icon (blue and violet tins, about 360 px) at the left; the hand-font line at 60 px: "Average of first and last, times how many." Under it, same size: "Arithmetic only." On "only they pair up evenly" a small row "1 + 2 + 4": the pair totals 1 + 4 = 5 and 2 + 2 = 4 shown unequal. On "seven" a red slip "(1 + 4)/2 × 3 = 7.5" writes and is crossed beside "1 + 2 + 4 = 7" (green). Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 620 px, double ink frame, hand-font heading "Memory aid"). Inside: a small tin-pyramid parallelogram icon (blue and violet tins, about 360 px) at the left; the hand-font line at 60 px: "Average of first and last, times how many." Under it, same size: "Arithmetic only." On "always pair up evenly" a small row "1 + 2 + 4": the pair totals 1 + 4 = 5 and 2 + 2 = 4 shown unequal. On "seven" a red slip "(1 + 4)/2 × 3 = 7.5" writes and is crossed beside "1 + 2 + 4 = 7" (green). Hold about 2 s.
 
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. Find the sum of the first thirty terms of the arithmetic series five, plus eight, plus eleven, and so on. Pause here to answer.
@@ -331,3 +331,10 @@ Redesign to `../maths-visual-standard.md` on the d01 Revision 6 pattern, with an
 - **Key notes:** five short one-line bullets (were four long notes) beside the framed card.
 - **Joins:** opens on f02 Revision 2's tin pyramid; ends on the planting strip that f04 Revision 2 opens on (edited together).
 - **Kit additions:** a pyramid mode with tint for `SpriteStack`; `PairingRectangle` rebuilt on sprites (flip, fit, per-row readouts).
+
+## Revision 3 (12 Nov 2026)
+
+Brief 240 findings (Codex, 11 Nov) and fixes:
+
+- **240-F03-PAIRING-CLAIM (should fix).** Scene 9 no longer says only arithmetic sequences pair up evenly (1, 4, 2, 5 also pairs evenly). It now says the rule is guaranteed for arithmetic sequences, because their terms always pair up evenly, and other lists might not; the 1 + 2 + 4 counterexample stays. The card's "Arithmetic only." stays as the reliable method instruction, as the review allows.
+- **Narration changed:** scenes 9 (277 to 311). Total 5,742 to 5,776 characters, 15 scene strings (build parser rules).

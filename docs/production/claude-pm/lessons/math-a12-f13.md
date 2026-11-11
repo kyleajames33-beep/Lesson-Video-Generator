@@ -1,8 +1,8 @@
 # Maths A12 F13: Why is annuity future value a geometric sum? Following each deposit, the sum newest first, the series with ratio 1 + r, and the formula with its conditions (design)
 
-Status: Revision 2 (7 Nov 2026): redesign to maths-visual-standard.md (d01 Revision 6 pattern, everyday anchor). Needs Codex learning review and maths check before voicing. Previously Revision 1 (2 Nov). Not voiced (no `math-a12-f13/` folder and no `measured/lesson.json`), so narration is rewritten freely where the anchor needs it. Nothing recorded; human listening pending.
+Status: Revision 3 (12 Nov 2026): brief 238/240 findings resolved (root). Ready to voice. Previously: Revision 2 (7 Nov 2026): redesign to maths-visual-standard.md (d01 Revision 6 pattern, everyday anchor). Needs Codex learning review and maths check before voicing. Previously Revision 1 (2 Nov). Not voiced (no `math-a12-f13/` folder and no `measured/lesson.json`), so narration is rewritten freely where the anchor needs it. Nothing recorded; human listening pending.
 
-Narration 5,665 characters (sum of the 15 scene strings), 15 scene headings, about 506 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,734 characters (Revision 3; was 5,665) (sum of the 15 scene strings), 15 scene headings, about 511 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
 
 Scope: second annuities video of the Year 12 Mathematics Advanced financial mathematics strand (course outline playlist order 50), after f12 (what cash flows define an annuity) and before f14 (how starting balance, contribution, rate and duration change future value). Templates: `math-a12-i05.md` and `math-a12-d10.md` (via `math-a12-f09.md`): same section structure, voice, paper style and coded maths visuals; no painted plates, no people, no bank names or logos. No brief 151 pack and no route-inputs-3 entry exist for f13 (checked 2 Nov); pack work done here. Site lessons read (2 Nov, read-only): `financial-mathematics/lesson06.sa.html`, SHA256 `d54dd8e49e416d806273d69a6a5ff9e3d91adb9c65745e6400dc2f456a49bf3e` (card 05 derivation, Problem 1, traps 02 and 03, revisit, SA answers). Every number recalculated in Python with exact fractions. Course outline entry: `math-a12-f13` (two content points, site source lesson 6).
 
@@ -40,7 +40,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 
 - **Learner question kept (outline).** "Why is annuity future value a geometric sum?" The answer, built in order: each deposit earns interest for a different time, because it goes in at a different month end and the balance is read at the end of month n (2); so the future value is every deposit with its own interest, added up, which is the point's own definition (3); listed newest first, each term is the one before times 1 + r, so the sum is geometric, with first term M, ratio 1 + r and n terms (3, 4); f06's sum closes it (4); the sum and f12's month-by-month rule give the same balance (5); the general formula and its conditions (6); because interest earns interest on a growing balance, the gap between future value and contributions widens over time (8).
 - **Opening and hook (f12's question; f11's question completed).** f13 opens on f12 scene 14's frame. The hook repeats the question, asks for a guess (3 s prediction hold), and says that running the rule 60 times is slow, which motivates following each deposit instead. The answer ("a little more": $13,954.01, interest $1,954.01) is given in scene 4.
-- **Following each deposit (the cause, on screen).** `DepositLayers` (new): each deposit is a green block placed at its own month end; an amber growth band rises on it from its month to month 60. Deposit 60: no band, "$200.00"; deposit 59: one month, "$201.00"; deposit 1: 59 months, "$268.43" (268.4309…). The sentence "Every deposit earns interest for a different length of time" closes the scene.
+- **Following each deposit (the cause, on screen).** `DepositLayers` (new): each deposit is a green block placed at its own month end; an amber growth band rises on it from its month to month 60. Deposit 60: no band, "$200.00"; deposit 59: one month, "$201.00"; deposit 1: 59 months, "$268.43" (268.4279…). The sentence "Every deposit earns interest for a different length of time" closes the scene.
 - **Newest first (why the order matters).** Listing from deposit 60 back to deposit 1 makes the terms 200, 200(1.005), …, 200(1.005)⁵⁹, a geometric series with first term 200 (site card 05: "The last payment earns no interest. The second-last earns one period. The first earns (n − 1) periods").
 - **Ratio collision (necessary in learner copy; as f09).** f06 writes Sₙ = a(rⁿ − 1)/(r − 1) with r the ratio; here the ratio is 1 + r. Scene 4 says "where r was the ratio" when quoting f06, and scene 6 says "The ratio of the series is one plus r, not r, so its bottom line ... is just r."
 - **Symbol M (strand decision; f12 open decision 2).** M for the payment, with the grey "some books write a" tag at first use in the formula (scene 6), because a is the first term in f06's formula, quoted in scene 4.
@@ -69,7 +69,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **No human figures, no painted plates, no bank names or logos.**
 - **Author notes (not learner copy):**
   (a) 1.005⁶⁰ = 1.3488501525…; (1.005⁶⁰ − 1)/0.005 = 69.7700305…; × 200 = 13,954.0061…; interest 1,954.0061….
-  (b) Deposit values at month 60: deposit k is worth 200(1.005)⁶⁰⁻ᵏ: deposit 60 200.00, deposit 59 201.00, deposit 58 202.01 (202.005), deposit 2 267.09 (267.0954…), deposit 1 268.43 (268.4309…).
+  (b) Deposit values at month 60: deposit k is worth 200(1.005)⁶⁰⁻ᵏ: deposit 60 200.00, deposit 59 201.00, deposit 58 202.01 (202.005), deposit 2 267.09 (267.0924…), deposit 1 268.43 (268.4279…).
   (c) n = 3: 1.005³ = 1.015075125; (1.005³ − 1)/0.005 = 3.015025; × 200 = 603.005 (f12's A₃; displayed $603.01, half up).
   (d) Site Problem 1: 1.004⁶⁰ = 1.2706407187…; factor 67.6601796…; × 300 = 20,298.0539….
   (e) 30 years: 1.004³⁶⁰ = 4.2108…; FV 240,644.24; contributions 108,000; interest 132,644.24. Crossing: n = 315 FV 188,742.91 (interest 94,242.91 < 94,500); n = 316 FV 189,797.88 (interest 94,997.88 > 94,800). Year values for the graph (end of year k, k = 1 to 30): 3,680.27; 7,541.12; 11,591.43; 15,840.49; 20,298.05; 24,974.35; 29,880.11; 35,026.60; 40,425.63; 46,089.59; …; 120,502.51 (20); …; 240,644.24 (30).
@@ -97,7 +97,7 @@ Visual: opens on f12's last frame exactly (f12 Revision 2 scene 14: the painted 
 ### 2. follow each deposit
 > Take the very last deposit. It goes in at the end of month sixty, and the balance is read straight away, so it earns no interest at **all**. It's worth two hundred dollars. The one before it has one month to grow, so it's two hundred times one point zero zero five, which is two hundred and one dollars. Now the very first deposit. It goes in at the end of month one, so it has fifty-nine months to grow. It's worth two hundred times one point zero zero five to the fifty-nine, about two hundred and sixty-eight dollars forty-**three**. Every deposit earns interest for a different length of time.
 
-Visual: stage change to the deposit tower (simulation 1): `DepositTower` fills the centre (about 1,400 × 620 px) on a time axis "0" to "60 months" with an ink flag at 60, "balance read here"; the statement stays as a 300 px thumbnail at the top left. The tower is already built at month 60 from the first frame: sixty blue blocks, one at each month end, each topped by its own amber growth layer, so the tops form a falling staircase from left to right. On "all" (bold) block 60 glows, hand tag "last in: 0 months", readout (52 px) "$200.00". On "one month" block 59 glows with its thin amber layer, readout "200 × 1.005 = $201.00". On "fifty-nine months" block 1 glows with the tallest amber layer, hand tag "first in: 59 months"; on "three" (bold) readout "200 × 1.005⁵⁹ ≈ $268.43" (grey 268.4309…). On the last sentence the month slider replays 1 to 60 at speed: blocks land one per month and every standing block grows a little at each month end (× 1.005), with live readouts "deposits made", "put in" and "balance".
+Visual: stage change to the deposit tower (simulation 1): `DepositTower` fills the centre (about 1,400 × 620 px) on a time axis "0" to "60 months" with an ink flag at 60, "balance read here"; the statement stays as a 300 px thumbnail at the top left. The tower is already built at month 60 from the first frame: sixty blue blocks, one at each month end, each topped by its own amber growth layer, so the tops form a falling staircase from left to right. On "all" (bold) block 60 glows, hand tag "last in: 0 months", readout (52 px) "$200.00". On "one month" block 59 glows with its thin amber layer, readout "200 × 1.005 = $201.00". On "fifty-nine months" block 1 glows with the tallest amber layer, hand tag "first in: 59 months"; on "three" (bold) readout "200 × 1.005⁵⁹ ≈ $268.43" (grey 268.4279…). On the last sentence the month slider replays 1 to 60 at speed: blocks land one per month and every standing block grows a little at each month end (× 1.005), with live readouts "deposits made", "put in" and "balance".
 
 ### 3. every deposit, with its interest
 > So the future value is every deposit, together with the interest it has earned, all added up. Write them newest first. Two hundred, plus two hundred times one point zero zero five, plus two hundred times one point zero zero five squared, and so on, up to two hundred times one point zero zero five to the fifty-**nine**. That's sixty terms, one for each deposit. And each term is the one before it, times one point zero zero **five**.
@@ -115,9 +115,9 @@ Visual: stage change to the sum board (g01 layout); the column stays at the left
 Visual: stage change (two views). Left: f12's calendar rows return as a `BalanceTable` (32 px, "$200.00", "$401.00", "$603.01"), tagged "rule: Aₙ₊₁ = 1.005Aₙ + 200 (last video)". Right: a three-block `DepositTower` (amber layers of 2, 1 and 0 months) sliding into one column, with the row (52 px) "200(1.005³ − 1)/0.005 = $603.01". On "months" (bold) the two "$603.01" values are linked by an arrow with a green tick, hand tag "same balance". On "month by month" the table's rows glow down in order; on "deposit by deposit" the column's layers glow up in order.
 
 ### 6. the formula and its conditions
-> In general, if M goes in at the end of each period, with interest at r per period, then the future value after n periods is M times one plus r to the n, minus one, all over **r**. The ratio of the series is one plus r, not r, so its bottom line, one plus r minus one, is just r. The formula has conditions. Payments come at the end of each period. The future value is read at the end of the last period, straight after the last payment. And r and n are both per **period**.
+> In general, if M goes in at the end of each period, with interest at r per period, then the future value after n periods is M times one plus r to the n, minus one, all over **r**. The ratio of the series is one plus r, not r, so its bottom line, one plus r minus one, is just r. The formula has conditions. Payments come at the end of each period. The future value is read at the end of the last period, straight after the last payment. The account starts at zero, r is the rate per period, and n counts the **periods**.
 
-Visual: stage change to the formula board. A `cashFlowMode` strip (about 1,400 px) across the top: marks 0 to n, a blue "M" arrow at 1 to n, the ink future-value flag at n. Rows: "FV = M + M(1 + r) + … + M(1 + r)ⁿ⁻¹" (grey tags "first term M, ratio 1 + r, n terms" and "M: the payment each period (some books write a)"); on "r" (bold) boxed (60 px) "FV = M[(1 + r)ⁿ − 1]/r" (M blue, (1 + r) amber). On "not r" the denominator's working "(1 + r) − 1 = r" writes small under it, hand tag "ratio 1 + r, not r". The three conditions write as a checklist (40 px), one per sentence: "✓ payments at the end of each period" (the arrows at 1 to n glow, none at 0; hand tag "end of each period"); "✓ FV read at the end of period n, just after payment n" (the flag glows); on "period" (bold) "✓ r and n per period".
+Visual: stage change to the formula board. A `cashFlowMode` strip (about 1,400 px) across the top: marks 0 to n, a blue "M" arrow at 1 to n, the ink future-value flag at n. Rows: "FV = M + M(1 + r) + … + M(1 + r)ⁿ⁻¹" (grey tags "first term M, ratio 1 + r, n terms" and "M: the payment each period (some books write a)"); on "r" (bold) boxed (60 px) "FV = M[(1 + r)ⁿ − 1]/r" (M blue, (1 + r) amber). On "not r" the denominator's working "(1 + r) − 1 = r" writes small under it, hand tag "ratio 1 + r, not r". The three conditions write as a checklist (40 px), one per sentence: "✓ payments at the end of each period" (the arrows at 1 to n glow, none at 0; hand tag "end of each period"); "✓ FV read at the end of period n, just after payment n" (the flag glows); on "periods" (bold) "✓ starts at $0; r per period; n = number of periods", and a grey chip "r ≠ 0 (if r = 0: FV = nM); a starting balance grows separately".
 
 ### 7. worked example: $300 a month
 > Let's use it. Three hundred dollars is deposited at the end of each month, at four point eight per cent a year, compounded monthly. What is the balance after five years? First match the period. The rate per month is zero point zero zero four, and five years is sixty **months**. So the future value is three hundred times one point zero zero four to the sixty, minus one, over zero point zero zero four. That's twenty thousand, two hundred and ninety-eight dollars and five **cents**. You put in eighteen thousand dollars, so the interest is two thousand, two hundred and ninety-eight dollars and five cents.
@@ -130,9 +130,9 @@ Visual: clear change (g01 layout). The boxed formula and checklist shrink to the
 Visual: stage change to the long-run graph (simulation 2; author note i), about 1,200 × 660 px, with the statement thumbnail at the top left: the ink balance curve rises from $0, bending upward; a straight dashed ink line "put in: $300 × months"; the gap between them fills amber, labelled "earnings". A marker rides the curve with a `LiveReadoutBoard` (52 px numbers): "years", "balance" (ink), "put in" (blue), "earnings" (amber); at 5 years it reads "$20,298.05; $18,000; $2,298.05" (matching scene 7). On "cents" (bold) the marker reaches 30 years: "$240,644.24; $108,000; $132,644.24". On "widens" a hand bracket marks the gap at 10, 20 and 30 years in turn. On "in" (bold) the marker returns to 26 years 4 months (deposit 316), where an amber bar "earnings $94,997.88" stands taller than a blue bar "put in $94,800", hand tag "earnings overtake" (grey values).
 
 ### 9. memory aid
-> Here's a way to build the sum. Last in earns nothing. First in earns the most. List the deposits from the last to the first, and each one is the one before, times one plus r. That's n terms, first term M, and ratio one plus r.
+> Here's a way to build the sum. Last in earns nothing. With a positive rate, first in earns the most. List the deposits from the last to the first, and each one is the one before, times one plus r. That's n terms, first term M, and ratio one plus r.
 
-Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 600 px, double ink frame, hand-font heading "Memory aid"), the small staircase from scene 2 at its left edge. The main line writes large, 60 px: "Last in earns nothing. First in earns the most." Keyed line (40 px): "Newest first: n terms, first term M, ratio 1 + r." The staircase's rightmost block (no amber layer) and leftmost block (the tallest layer) glow as their phrases are spoken. Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 600 px, double ink frame, hand-font heading "Memory aid"), the small staircase from scene 2 at its left edge. The main line writes large, 60 px: "Last in earns nothing. First in earns the most (r > 0)." Keyed line (40 px): "Newest first: n terms, first term M, ratio 1 + r." The staircase's rightmost block (no amber layer) and leftmost block (the tallest layer) glow as their phrases are spoken. Hold about 2 s.
 
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. Write this future value as a sum, then find it. Pause here to answer.
@@ -160,16 +160,16 @@ Visual: the card shrinks to the top. `GivensStrip`: "M = $250 a month", "r = 0.0
 Visual: the boxed formula shows small at the top, then fades on "Back to". Board clears to f14's anchor: the painted phone `ma12-phone-v1.png` (reused from d03; about 820 px tall, solid) at the centre left; on its measured screen rectangle `ScreenApp` draws a plain, unbranded savings app (36 px text): "Start $0", "Deposit $300 a month" (blue slider), "Rate 4.8% p.a., monthly" (amber slider), "Years 5" (grey slider), the readout (52 px) "Balance $20,298.05" and a mini growth graph of the 5-year balance. On "bigger deposit", "higher rate", "more years" and "to start" a "?" appears beside each control in turn (the last on "start" (bold)), with chips "Next: which change matters most?" and "?" at the right. No new values. Hold about 2 s. This is f14's opening frame; scene 15 returns to it silently after the notes.
 
 ### 15. key notes (quiet, 45 seconds)
-Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 40 px, colour roles kept, each one line.
+Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 36 to 40 px in the left 58 to 60% (root decision 58), colour roles kept, each one line; the framed card on the right.
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 - FV = all payments plus the interest they earn.
 - Payment k of n earns n − k periods of interest.
 - Newest first: first term M, ratio 1 + r, n terms.
-- FV = M[(1 + r)ⁿ − 1]/r: end-of-period payments.
+- FV = M[(1 + r)ⁿ − 1]/r: start at 0, end-of-period payments.
 - Interest earned = FV − nM.
 
-Memory aid (framed card, right half of the notes screen, as in scene 9): *Last in earns nothing. First in earns the most.* Keyed line: *Newest first: n terms, first term M, ratio 1 + r.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right half of the notes screen, as in scene 9): *Last in earns nothing. First in earns the most (r > 0).* Keyed line: *Newest first: n terms, first term M, ratio 1 + r.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent, no added speech): after the notes hold the board cross-fades back (1 s) to scene 14's frame exactly (the phone with the app showing start $0, $300 a month, 4.8% p.a. monthly, 5 years, balance $20,298.05, the mini graph, four "?" marks, the chips "Next: which change matters most?" and "?"). This is the final frame and f14's opening frame.
 
@@ -197,7 +197,7 @@ Model answer: r = 0.036 ÷ 12 = 0.003, n = 24. FV = 250[(1.003)²⁴ − 1]/0.00
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Hook plan | $200 at month ends, 6% p.a. monthly (r = 0.005), 60 months; deposits $12,000 | 1 to 4 |
-| Deposit values | deposit 60 $200.00; 59 $201.00; 1 $268.43 (268.4309…) | 2 |
+| Deposit values | deposit 60 $200.00; 59 $201.00; 1 $268.43 (268.4279…) | 2 |
 | Sum | 200(1.005⁶⁰ − 1)/0.005 = $13,954.01 (13,954.0061…); interest $1,954.01; 1.005⁶⁰ ≈ 1.34885 (grey) | 4 |
 | Check n = 3 | 200(1.005³ − 1)/0.005 = 603.005, $603.01 (f12's A₃) | 5 |
 | Formula | FV = M[(1 + r)ⁿ − 1]/r | 6 |
@@ -214,7 +214,7 @@ Model answer: r = 0.036 ÷ 12 = 0.003, n = 24. FV = 250[(1.003)²⁴ − 1]/0.00
 
 Checked with Python 3.14 exact fractions (2 Nov, isolated run); Codex to re-check.
 
-- 200 × 1.005 = 201; 200 × 1.005⁵⁹ = 268.4309…; 200 × 1.005⁵⁸ = 267.0954….
+- 200 × 1.005 = 201; 200 × 1.005⁵⁹ = 268.4279…; 200 × 1.005⁵⁸ = 267.0924….
 - 200(1.005⁶⁰ − 1)/0.005 = 13,954.0061…; − 12,000 = 1,954.0061….
 - 200(1.005³ − 1)/0.005 = 603.005.
 - 300(1.004⁶⁰ − 1)/0.004 = 20,298.0539…; 300 × 60 = 18,000.
@@ -344,3 +344,12 @@ Redesign to `../maths-visual-standard.md` on the d01 Revision 6 pattern, with an
 - **Counts:** 5,595 (sum of Revision 1 scene strings) → **5,665** characters; about 515 s (60 s notes hold) → **about 506 s** (45 s notes scene).
 - **Kit additions:** `DepositTower` (replacing `DepositLayers`) and the studio growth graph with a riding marker.
 - **Joins:** opens on f12 Revision 2's super statement frame; ends on f14's savings-app frame.
+
+## Revision 3 (12 Nov 2026)
+
+Brief 240 findings (Codex, 11 Nov) and fixes:
+
+- **First-deposit intermediate.** Author values corrected: 200 × 1.005⁵⁹ = 268.4279… (was 268.4309…) and 200 × 1.005⁵⁸ = 267.0924… (was 267.0954…). The spoken and displayed $268.43 was already right.
+- **n is a count; zero start; r = 0 (scene 6).** Narration now ends "The account starts at zero, r is the rate per period, and n counts the periods." The checklist row and a grey chip add "r ≠ 0 (if r = 0: FV = nM); a starting balance grows separately". Key note 4 adds "start at 0".
+- **"First in earns the most" (scene 9, card, notes).** Scoped to a positive rate in speech ("With a positive rate, first in earns the most") and on the card ("(r > 0)").
+- **Narration changed:** scenes 6 (465 to 512), 9 (226 to 248). Total 5,665 to 5,734 characters, 15 scene strings (build parser rules).
