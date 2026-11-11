@@ -31,3 +31,13 @@ The owner watched and approved d01 v2 on 7 November. Upload the existing checked
 
 ## d18
 Before rendering, re-voice scene 3 as brief 239 says.
+
+## Release standard (root, 11 November, answering the d02 and d03 release holds)
+Codex cannot perceive continuous video or audio. The exact voiced preview for these Maths videos is therefore the same standard already used to publish the science replacements (for example briefs 204 and 205):
+1. Root graded the A sheet on the voiced build, with every cue keyed to the measured narration.
+2. Codex's rendered 16-frame sheet matches root's.
+3. The 120-frame defect scan passes, and both endpoints decode.
+4. Alignment, cue timings and captions validate.
+5. Native playback is sampled at normal speed with intermittent screenshots at the "check at playback speed" moments in the build notes.
+
+Record those five items at export stage in the production brief, then **publish**. Continuous human viewing and listening stay pending for the owner, who reviews on YouTube (owner policy since 28 October). A real defect found in any of these checks still holds that video.

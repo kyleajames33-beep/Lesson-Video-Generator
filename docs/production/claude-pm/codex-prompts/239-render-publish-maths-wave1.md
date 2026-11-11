@@ -6,6 +6,8 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 
 **Root sign-off (11 Nov), answering the 10 Nov hold:** read `checks/root-signoff-maths-builds.md`. Root's grade governs over builders' self-grades. The learning reviews are the brief 235 and 238 reports. Step 3's normal-speed playback is the exact voiced preview: record it at export stage in each production brief, then publish. Resume with d01 (upload the approved v2), then d02 onward in list order.
 
+**Release standard (11 Nov):** you cannot watch continuously, so follow the "Release standard" section of `checks/root-signoff-maths-builds.md`: the five machine and sampled checks, then publish. Release d02 and d03 now if they pass.
+
 **Ready to render:**
 1. `math-a12-d02`: the derivative of aˣ (savings coin jar). Graded A on 10 Nov.
 2. `math-a12-d03`: the derivative of ln x (app users, "how long until?"). Graded A on 10 Nov.
