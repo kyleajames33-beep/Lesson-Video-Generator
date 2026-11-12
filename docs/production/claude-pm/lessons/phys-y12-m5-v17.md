@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V17: Universal gravitation and field strength. How does gravity vary with mass and distance from a spherical body? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,320 characters (scene sum; Revision 1 stated 6,337 by the joined convention), 18 scenes, about 554 s, counted by script with the build parser rules (see "Narration length estimate"). First video of the gravitation run (v17 to v23).
 
@@ -68,6 +68,20 @@ Main question: *Two 70 kg metal spheres 1.0 m apart attract with about 3 × 10�
 Entry knowledge (Year 11): weight, Newton's third law, vectors; Year 12 v11 to v16 (circular motion needs an inward force).
 Stops after: F = GMm/r²; centre-to-centre r and the spherical-body assumption; F ∝ M, F ∝ m, F ∝ 1/r²; g = GM/r² at the surface, at altitude and at multiples of R. No orbits.
 Handoff: v18, how gravity maintains a circular orbit.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame (Earth and the Moon), then the two-sphere bench, scene 1 (about 34 s); (B) the push to the equation stage with the law large, scene 2 (about 40 s); (C) the pull back to Earth for "measure from the centres", scene 3 (about 38 s); (D) the two-body diagram: mass, then distance with the spreading spheres, scenes 4 and 5 (about 48 s); (E) the inverse-square explorer with its two graphs, scene 6 (about 27 s); (F) the two hook panels with the ledger, scene 7 (about 30 s); (G) the gravity stage, scene 8 (about 35 s); (H) the full-width working, scene 9 (about 37 s); (I) the 400 km zoom, scene 10 (about 34 s); (J) the whole field with the riding probe, scene 11 (about 28 s); (K) the two cards and the memory card, scene 12 (about 18 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 48 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Nothing moves under a force here, so no engine run is needed: the separation slider (scene 6) and the riding probe (scene 11) are exact inverse-square arithmetic (F = GMm/r², g = GM/r²), lesson-coded, with every arrow length and readout computed from the slider position. The satellite in the handoff is a `central` run on the field motion engine, as next time's orbit is.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Planets are plates.** Mars and Earth on the attempt cards are the painted plates, not coded discs. The abstract bodies "M" and "m" in scenes 4 to 6 stay plain discs, because they stand for any two masses.
 
 ## Script and shots
 
@@ -138,27 +152,35 @@ Visual: board clears to two cards side by side: amber "F = GMm / r²: force betw
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with a small coded Mars disc marked "r = 3.40 × 10⁶ m", worded as printed: "Mars has mass 6.42 × 10²³ kg and radius 3.40 × 10⁶ m. (a) Calculate the gravitational field strength at the surface of Mars. (b) Express your answer as a percentage of Earth's surface value, g = 9.8 N kg⁻¹. (G = 6.67 × 10⁻¹¹ N m² kg⁻²)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the painted Mars plate (`y12p-mars-v1.png`, about 280 px across), not a coded disc, with a navy radius line tagged "r = 3.40 × 10⁶ m". It is on screen from the first frame. No field arrows are drawn. The memory card is hidden.
+
 ### 14. feedback 1 (brief)
 > Use g equals big G M over r squared, with the radius squared. That gives about three point seven zero newtons per **kilogram**, around thirty-eight per cent of Earth's. The slip to avoid is forgetting to square the **radius**.
 
 Visual: card shrinks to the top; "surface" and "radius" underline. Rows: "g = GM / r² = (6.67 × 10⁻¹¹ × 6.42 × 10²³) / (3.40 × 10⁶)²"; on "kilogram" "= 4.282 × 10¹³ / 1.156 × 10¹³ = 3.70 N kg⁻¹" in a dark-ink frame (52 px) and "3.70 ÷ 9.8 = 0.378 ≈ 38 %". On "radius" a chip "÷ 3.40 × 10⁶ → 1.26 × 10⁷ N kg⁻¹" fades in and is crossed (caption "r is squared"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "M = 6.42 × 10²³ kg | r = 3.40 × 10⁶ m | Earth: g = 9.8 N kg⁻¹ | G = 6.67 × 10⁻¹¹ N m² kg⁻²".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. At what altitude above Earth's surface is the gravitational field strength one quarter of its value at the surface? Give your answer in metres, using Earth's radius of six point three seven one times ten to the six metres. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "At what altitude above Earth's surface is the gravitational field strength one quarter of its value at the surface? Earth's radius is 6.371 × 10⁶ m. Give your answer in metres." A small coded Earth outline sits beside the card with no lines drawn. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the painted Earth plate (`phys-y11-earth-v1.png`, about 280 px across), not a coded outline, on screen from the first frame. No radius line, no altitude mark and no field arrows are drawn, so nothing can be measured off it.
+
 ### 16. feedback 2 (brief)
 > A quarter of the field needs double the distance from the centre, so r is two Earth radii. The altitude is r minus the radius, which is one Earth radius, six point three seven one times ten to the six **metres**. The classic slip is answering two Earth radii, which is the distance from the centre, not the **altitude**.
 
 Visual: card shrinks to the top; "altitude" and "one quarter" underline. On the outline a navy r line to a dashed circle at 2R, "r = 2R", and a grey bracket from the surface to the circle. Rows: "g ∝ 1/r²: g ÷ 4 needs r × 2", "h = r − R = 2R − R = R = 6.371 × 10⁶ m" on "metres", in a dark-ink frame (52 px). On "altitude" a chip "h = 2R = 1.274 × 10⁷ m" fades in and is crossed (caption "that's r, not h"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "g = one quarter of its surface value | R_E = 6.371 × 10⁶ m | altitude in metres".
 
 ### 17. handoff
 > So four hundred kilometres up, gravity is still almost ninety per cent as strong as on the ground. Then why doesn't a satellite up there fall straight down? It's moving sideways, very fast. Next time, we'll see how gravity keeps it going round in a **circle**.
 
 Visual: board clears to the gravity stage: Earth plate at the left; the satellite plate (`y12p-satellite-v1.png`, new, scaled uniformly to about 40 px) at 400 km above Australia with the navy r line and the violet arrow "g = 8.73 N kg⁻¹" pointing to the centre. On "sideways" a dashed teal arrow (velocity, root decision 10) draws from the satellite along the tangent, "v = ?". On "circle" a faint dashed circle at r = 6.771 × 10⁶ m draws around Earth and a chip writes "Next: how does gravity maintain a circular orbit?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 18. key notes (quiet, hold about 50 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -228,6 +250,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,337): **6,320 characters**, 18 scenes. Characters per scene (1 to 18): 456, 527, 501, 246, 395, 362, 394, 469, 486, 450, 377, 237, 305, 218, 254, 312, 256, 75. At 13.3 characters per second the speech is about 475 s; add about 3 s for the prediction countdown, about 3 s for the explorer stepping in scene 6 and the zoom in scene 3, about 3 s for the altitude probe in scene 11, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 79 s of holds and countdowns): **about 554 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's last sentence (keep the 690 N arrow on Earth); scene 9's last sentence (keep the grey tag); scene 5's "a picture, not a proof" sentence (keep the tag).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,320 characters). The notes scene is 45 s in all, so the estimate is about 549 s (it was about 554 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v16's final frame exactly (reconciled by root, 6 November): see `phys-y12-m5-v16.md` "Final frame" (Earth and Moon, dashed orbit, teal velocity arrow, amber "F = ?" arrow to Earth's centre, navy centre-to-centre r bracket, M and m tags, "not to scale", "Next" chip). No bench rig is on screen.
@@ -246,6 +270,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v17-learning-review.md`, `science_check` = `checks/p-y12-m5-v17-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -263,6 +289,8 @@ Coded: bench and ground lines, radius lines and brackets, force and field arrows
 Kit gaps (for the v17 build brief; shared with v18 to v23):
 1. **Gravity stage.** Earth plate at a declared pixel scale using its JSON centre and radius; true-scale altitude placement; navy r line, grey h bracket; violet g arrows and amber force arrows computed from GM/r² with the data sheet constants; optional radial arrow field; optional dashed orbit circles. Every readout from the same model as the drawing.
 2. **Inverse square explorer.** Two masses, stepped separation, force readout, F against r and F against 1/r² graphs from the same model.
+
+Revision 3 (13 Nov 2026). Existing plates newly used on the attempt cards (confirmed by file listing, not re-inspected): `y12p-mars-v1.png` (attempt 1), `phys-y11-earth-v1.png` (attempt 2). New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v17: satellite)
 
@@ -287,6 +315,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling in narration and screen text.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report the site notes under Decisions to root for `../site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -332,3 +362,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 6,337 (joined) or 6,320 (scene sum) to 6,320 characters (scene sum; narration unchanged); about 566 s to about 554 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the two live controls are exact inverse-square arithmetic (no run is needed).
+- Question cards: the coded Mars disc and Earth outline become the painted plates; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,320 characters, unchanged; about 549 s (it was about 554 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

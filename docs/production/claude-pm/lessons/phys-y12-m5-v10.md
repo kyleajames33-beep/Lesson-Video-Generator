@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V10: Balancing torques. How do clockwise and anticlockwise torques balance? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,657 characters, 15 scenes, about 505 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v09's final frame.
 
@@ -60,6 +60,19 @@ Entry knowledge: τ = rF sin θ, unit N m, turning sense, no torque from a force
 Stops after: crane torques, rotational equilibrium, sign convention and Στ = 0, the seesaw to 1.44 m, torque balance versus force balance, the two slips, the memory aid. No two-support beams.
 Handoff: v11, how speed can be constant while velocity keeps changing.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the crane, its load and counterweight, then the two torques, scenes 1 and 2 (about 66 s); (B) the push to the balance scale with the steady-turning inset, scene 3 (about 34 s); (C) the seesaw with its givens, scene 4 (about 38 s); (D) the full-width signed-sum working with the seesaw as a strip, scene 5 (about 32 s); (E) the seesaw as a live slider, scene 6 (about 29 s); (F) the two-conditions stage, scene 7 (about 39 s); (G) the seesaw with the balance scale for the two slips, then the memory card, scenes 8 and 9 (about 49 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 66 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** None of the engines fits: this is statics. The scene 6 slider is exact arithmetic (clockwise τ = 245r against a fixed 352.8 N m) and stays lesson-coded; the seesaw's tilt follows the sign of the net torque readout, so the picture cannot disagree with the numbers.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *τ*, *r*, *F*, *m*, *g*, *Στ*, *ΣF*. Paper background and handwritten headline face as the explainer house style.
@@ -114,27 +127,35 @@ Visual: board clears to the level seesaw with the two weight arrows at 1.2 m and
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A uniform metre rule is pivoted at its 50 cm mark. A 200 g mass hangs from the 20 cm mark. At which mark on the rule must a 150 g mass hang for the rule to balance horizontally? State the principle you use. (3 marks)" A small coded HSC-style diagram: the rule with marks every 10 cm, a pivot triangle under the 50 cm mark, a hanging mass at 20 cm labelled "200 g", and "150 g" with "?" on the right side. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style rule diagram is the card's picture and is on screen from the first frame (labels 30 px or more). The "150 g" mass with its "?" floats above the right half of the rule and hangs from no mark, so its position cannot be read off. The memory card and the balance scale are hidden.
+
 ### 11. feedback 1 (brief)
 > The two hundred gram mass is thirty centimetres from the pivot, so its torque is zero point two zero zero g times zero point three **zero**. The rule's own weight acts at the pivot, so it adds nothing. For balance, zero point one five zero g times r must match, and r is zero point four zero metres. So the mass hangs at the ninety centimetre **mark**. The classic slip is answering forty centimetres, the distance from the pivot, when the question asked for the position on the **rule**.
 
 Visual: card shrinks to the top; "uniform", "50 cm mark" and "At which mark" underline. On the right, the lab version builds from plates: the metre rule (`phys-y11-metre-rule-v1.png`) on a pivot pin held by the boss (`phys-y11-boss-crossbar-v1.png`) on the retort stand (`phys-y11-retort-stand-v1.png`), two mass hangers (`phys-y11-mass-hanger-v1.png`) with slotted masses. On "zero" "r₁ = 50 − 20 = 30 cm = 0.30 m; τ = 0.200g × 0.30" (anticlockwise, blue). "Principle: Σ clockwise τ = Σ anticlockwise τ". `AlignedAlgebra`: "0.200g × 0.30 = 0.150g × r; r = 0.060 ÷ 0.150 = 0.40 m"; on "mark" "position = 50 + 40 = 90 cm mark" and the 150 g hanger slides to the 90 cm mark; the rule levels. Rows 44 px; "90 cm mark" framed. On "rule" a chip "40 cm mark" fades in and is crossed (caption "40 cm from the pivot = the 90 cm mark"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "uniform metre rule, pivot at the 50 cm mark | 200 g at the 20 cm mark | 150 g at which mark?".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A light beam is pivoted at its centre. A twenty newton force acts downwards one point five metres to the left of the pivot, and a thirty newton force acts downwards one point zero metre to the right. Show that the beam is in rotational equilibrium, and find the force from the pivot. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A light beam is pivoted at its centre and is horizontal. A 20 N force acts vertically downwards 1.5 m to the left of the pivot, and a 30 N force acts vertically downwards 1.0 m to the right of the pivot. (a) Show that the beam is in rotational equilibrium. (b) Calculate the force exerted on the beam by the pivot. (3 marks)" A small coded diagram: beam, pivot triangle, the two arrows and distances as given. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The beam diagram is the card's picture and is on screen from the first frame. It shows only the card's values (the two arrows and their distances); no pivot force and no turning arrows are drawn.
+
 ### 13. feedback 2 (brief)
 > Anticlockwise, twenty times one point five is thirty newton metres. Clockwise, thirty times one point zero is also thirty newton **metres**. The signed sum is zero, so the beam is in rotational equilibrium. For the forces to balance too, the pivot must push up with twenty plus thirty, fifty newtons, because the beam is **light**. The slip is saying the pivot force is zero because the torques **cancel**.
 
 Visual: card shrinks to the top; "light beam" and "pivoted at its centre" underline. `AlignedAlgebra`: "anticlockwise: 20 × 1.5 = +30 N m"; on "metres" "clockwise: 30 × 1.0 = −30 N m; Στ = 0". On "light" "ΣF = 0: N − 20 − 30 = 0, N = 50 N upwards (light beam: no beam weight)" and a teal arrow up at the pivot "50 N". Rows 44 px; "Στ = 0" and "N = 50 N up" framed. On "cancel" a chip "torques cancel, so pivot force = 0" fades in and is crossed (caption "Στ = 0 and ΣF = 0 are separate conditions"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "light beam, pivot at its centre | 20 N down, 1.5 m left of the pivot | 30 N down, 1.0 m right of the pivot".
 
 ### 14. handoff
 > So balanced torques mean the rotation doesn't change. A crane turning round on its mast at a steady rate is in that state. Look down on the tip of its jib from above. It moves at a constant speed, but its direction keeps changing, all the way round the **circle**. So is its velocity changing? And if it is, what's making it **change**?
 
 Visual: board clears (camera change) to the crane plate on the left, which then cross-fades into a coded top view: the mast as a dot at the centre, the jib as a line rotating at a steady rate (a clock readout with equal angle steps). On "tip of its jib" a dot at the jib tip traces a circle; at four positions (top, left, bottom, right) teal velocity arrows of equal length draw tangent to the circle, with a small readout "speed: constant". On "circle" the four arrows are copied tail to tail at the side, all the same length but pointing four different ways. On "change" a small "Δv = ?" appears between two of them and a chip writes "Next: how can speed be constant while velocity keeps changing?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 50 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -202,6 +223,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 1 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,671 characters**, 15 scenes. Characters per scene (1 to 15): 305, 576, 457, 506, 425, 391, 516, 381, 267, 245, 476, 315, 394, 328, 75. At 13.3 characters per second the speech is about 426 s; add about 3 s for the prediction countdown, about 2 s for the arrow slide in scene 6, 2 s for the tilts in scenes 7 and 8, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 88 s of holds and countdowns): **about 514 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's couple sentences (open decision 3); scene 3's "In other words" sentence; scene 14's last question.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,657 characters). The notes scene is 45 s in all, so the estimate is about 500 s (it was about 505 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v09's final frame (designed in this wave, `phys-y12-m5-v09.md`): paper background; coded ground line; the tower crane plate at the centre with the load plate hanging far out on the jib and the counterweight on the short counter-jib; amber weight arrows from both; orange "clockwise" and blue "anticlockwise" curved arrows; a navy pivot dot at the mast top; heading "Why does a force turn an object more effectively at some angles?" and the chip "Next: how do clockwise and anticlockwise torques balance?". No masses or distances shown. Scene 1 adds the masses and brackets; the heading changes in scene 2.
@@ -219,6 +242,8 @@ In order (kebab-case; 15 scene headings, all `### N.`): hook, crane-torques, equ
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: crane stage, beam stage with a sliding weight and live readouts (tilt playback only with the two-layer seesaw), torque balance scale, top-view slew, `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue (same crane); 2 to 3 camera push to the balance scale (Revision 2); 3 to 4 camera change to the seesaw; 4 to 5 clear change to full-width working; 5 to 6 camera change back to the seesaw slider; 6 to 7 clear change to the two-conditions stage; 7 to 8 camera continue; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 clear change to the crane, then cross-fade to the top view; 14 to 15 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v10-learning-review.md`, `science_check` = `checks/p-y12-m5-v10-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -239,6 +264,8 @@ Kit gaps (for the v10 build brief):
 1. **Torque balance scale.** Blue and orange bars from a central zero line, lengths from the torque magnitudes, with a signed-sum readout; driven by the same values as the stage.
 2. **Beam stage.** The seesaw plate on its pivot with registered seat points (from Codex) at a set scale (metres per pixel), weight arrows at given distances that can slide, brackets from the pivot, and an illustrative tilt when Στ ≠ 0. Reuse `m5-beam-equilibrium`'s ledger logic with the site's values.
 3. **Top-view slew.** A rotating line about a centre at a steady angular rate with a tip trace and tangent velocity arrows of constant length; copies of the arrows placed tail to tail.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for turning effects (a pivoted beam with forces, net torque and tilt), as recorded for the torque video.
 
 ## Codex asset brief (Year 12 Physics M5 v10: seesaw and tower crane)
 
@@ -263,6 +290,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested (no children, empty crane cab, pushes as arrows).
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +334,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: `y12p-seesaw-plank-v1.png` and `y12p-seesaw-stand-v1.png` (a two-layer split of the delivered seesaw).
 
 Counts: 5,657 characters (narration unchanged; Revision 1 stated 5,671 by the joined convention); about 514 s to about 505 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the seesaw slider stays lesson-coded arithmetic.
+- Question cards: the exam-style diagrams are confirmed as the pictures, with the 150 g mass hanging from no mark; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for turning effects (a pivoted beam with forces, net torque and tilt), as recorded for the torque video.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,657 characters, unchanged; about 500 s (it was about 505 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V05: Landing below the launch level. How do we find the landing point when launch and landing heights differ? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,695 characters, 17 scenes, about 514 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -63,6 +63,19 @@ Main question: *A launcher on a 30 m cliff fires at 20 m s⁻¹. Which of 30°, 
 Entry knowledge: v01 to v04; the quadratic formula.
 Stops after: s_y = −h; the vertical quadratic and its positive root; R = u_x t; the three-angle comparison and why the best angle is below 45° from a height; three samples are not the optimum. No calculus.
 Handoff: v06, whether a projectile clears a wall at a known horizontal position.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame on the cliff, then the push in to the 30° path, scenes 1 and 2 (about 68 s); (B) the full-width working stage, scene 3 (about 33 s), joined by the s_y against t graph, scene 4 (about 42 s); (C) the large cliff stage: the negative root, then the range and its check, scenes 5 and 6 (about 52 s); (D) the launcher as an angle slider on the cliff, scene 7 (about 24 s); (E) the comparison bars, scene 8 (about 32 s); (F) the range against angle graph with the launcher as its control, scene 9 (about 23 s); (G) the two slips over the cliff stage and the memory card, scenes 10 and 11 (about 31 s); question and feedback cards; the handoff; the notes board. The working stage runs about 75 s with the graph arriving at about 33 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The flights run on the field motion engine (`field-motion.ts`, a `uniform` field with ax = 0 and ay = −9.8) and are drawn with `FieldMotionView` (trail, strobe images, velocity arrows with components, ground line) on one `useMotionTime` clock. Every clock value, strobe position, arrow length and readout is read from `stateAt` of that run, so the picture and the numbers cannot disagree. This replaces the physics of v01's kit gap 1 (the strobe projectile stage). Here each run starts 30 m above the sea line: 30°, 45° and 60° at 20 m s⁻¹, and the continuous sweep in scenes 7 and 9. The landing time of each run is the positive root the working finds, so the readouts "t" and "R" and the landing mark agree with the algebra. The backward path of the negative root (scene 5) is the same parabola drawn for t below zero as a dashed line; it is a lesson overlay, because the engine runs forward from the launch.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -128,27 +141,35 @@ Visual: the stage with the cliff: a navy "−30 m" bracket glows (down is negati
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A ball is launched horizontally at 6.0 m s⁻¹ from a point 5.0 m above a level floor. Air resistance is negligible; take g = 9.8 m s⁻². Calculate (a) the time of flight and (b) the horizontal distance travelled before the ball lands." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a picture of the set-up: a plain ledge outline above a floor line, the steel ball plate (`phys-y11-steel-ball-v1.png`, about 40 px) at its edge, a navy height bracket "5.0 m" and a teal arrow "6.0 m s⁻¹". No path and no landing mark. The memory card is hidden.
+
 ### 13. feedback 1 (brief)
 > Launched horizontally, so u y is zero, and the quadratic shrinks to minus five equals minus four point nine t squared. So t is about one point zero one **seconds**. The horizontal distance is six point zero times that, about six point one **metres**. Using plus five instead gives a negative t squared, with no real answer at all, which is your clue that the sign is **wrong**.
 
 Visual: card shrinks to the top; "horizontally" and "5.0 m above" underline. Blue rows: "u_y = 0, s_y = −5.0 m", "−5.0 = −4.9t²"; on "seconds" "t = √(5.0 ÷ 4.9) = 1.01 s". The clock carries it across; teal row on "metres" "s_x = 6.0 × 1.010 = 6.06 m ≈ 6.1 m". Rows 44 px; "1.01 s" and "6.1 m" framed. On "wrong" a chip "+5.0 = −4.9t², t² = −1.02" fades in and is crossed (caption "down is negative"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "6.0 m s⁻¹ horizontally | 5.0 m above a level floor | g = 9.8 m s⁻²".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A ball is launched at ten point zero metres per second, at thirty degrees above the horizontal, from a point five point zero metres above the level ground where it lands. Calculate the time it takes to land. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A ball is launched at 10.0 m s⁻¹ at 30° above the horizontal from a point 5.0 m above level ground, and lands on that ground. Air resistance is negligible; take g = 9.8 m s⁻². Calculate the time of flight." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted launcher (about 260 px wide) on a plain platform outline with a navy height bracket "5.0 m" to the ground line, its barrel at 30° with an angle arc "30°" and an orange arrow "10.0 m s⁻¹". No path and no landing mark.
+
 ### 15. feedback 2 (brief)
 > u y is ten sin thirty, five metres per second, and s y is minus five point zero, so four point nine t squared minus five t minus five equals zero. The quadratic formula gives about one point six four **seconds**, or minus zero point six two, which is before the launch. So the time of flight is one point six four seconds. Doubling the time to the top, about one point zero two seconds, is the slip to **avoid**.
 
 Visual: card shrinks to the top; "5.0 m above level ground" underlines. Blue rows: "u_y = 10.0 sin 30° = 5.00 m s⁻¹; s_y = −5.0 m", "4.9t² − 5.00t − 5.0 = 0", "t = (5.00 ± √(25.0 + 98.0)) ÷ 9.8 = (5.00 ± √123) ÷ 9.8"; on "seconds" branches "1.64 s" (framed in a dark-ink box) and "−0.621 s" (greyed, red tag "before launch"). Rows 44 px. On "avoid" a chip "T = 2 × 5.00 ÷ 9.8 = 1.02 s" fades in and is crossed (caption "the ground is not level with the launch"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "10.0 m s⁻¹ at 30° above the horizontal | 5.0 m above level ground | g = 9.8 m s⁻²".
 
 ### 16. handoff
 > So when the landing is lower than the launch, solve the vertical column as a quadratic, keep the positive time, then carry it across. Here, we knew the vertical displacement and found the time. Next time, we'll know a horizontal distance instead, because a wall stands partway out from the cliff. Will the ball **clear it**?
 
 Visual: board clears to the stage at 12 px per metre: the cliff, sea level and the launcher at 30°, with the 30° trajectory in solid orange to its 64.0 m landing mark (the 45° and 60° paths removed). On "knew the vertical displacement" the "−30 m" bracket pulses and the curved carry arrow in the ledger sweeps blue to teal. On "horizontal distance" a coded wall (HSC exam style: a narrow upright rectangle with hatching) rises from the sea level line partway out (author note d), and a teal bracket along the sea from below the cliff edge to the wall's base reads "x (known)". On "clear it" a dashed vertical line rises from the wall's top to the path, a "?" sits where the path crosses the wall's line, and the ledger's carry arrow reverses direction (teal to blue) with a grey tag "this time: x known, so find t first". Chip: "Next: will a projectile clear a wall at a known horizontal position?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -222,6 +243,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **5,695 characters**, 17 scenes; narration unchanged from Revision 1, whose stated 5,711 joined the scenes with spaces (scene sum 5,695). Characters per scene (1 to 17): 385, 517, 440, 558, 261, 422, 319, 422, 312, 246, 174, 236, 365, 239, 404, 320, 75. At 13.3 characters per second the speech is about 428 s; add 3 s for the prediction countdown, about 7 s of settling for the slow-motion replays in scenes 2 and 7 and the backwards ghost in scene 5, about 2 s for the slider pauses in scene 7, about 3 s for the continuous sweep and curve in scene 9, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 86 s of holds and countdowns): **about 514 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 6's check (keep it on screen, silent); scene 10's last sentence; scene 2's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,695 characters). The notes scene is 45 s in all, so the estimate is about 509 s (it was about 514 s; the notes hold falls from 50 s to 45 s).
+
 ## Final frame
 
 The last explained frame (end of scene 16, before the key-notes board): paper background; at 12 px per metre on both axes, a coded HSC-style cliff outline at the left (flat top, vertical hatched face) 30 m above a coded sea-level line; the launcher plate (`y12p-launcher-base-v1.png`, `y12p-launcher-barrel-v1.png`) on the cliff edge with its barrel at 30° and the readout "u = 20 m s⁻¹, θ = 30°"; the 30° trajectory in solid orange from the barrel tip to its landing mark on the sea line, with the teal bracket "64.0 m" along the sea and the navy bracket "−30 m" down the cliff face. A coded wall (narrow upright hatched rectangle, HSC exam style) stands on the sea-level line 40 m out from the cliff edge, its top 20 m above sea level (geometry from author note d; no height or distance values printed). A teal bracket along the sea from below the cliff edge to the wall's base reads "x (known)"; a dashed vertical line rises from the wall's top to the trajectory, with a "?" where the path crosses that line. The ledger small at the top right (teal and blue columns, clock) with the curved carry arrow pointing from teal to blue and the grey tag "this time: x known, so find t first". The steel ball rests at the barrel tip. Heading top-left: "Landing below the launch level: where does it land?"; chip "Next: will a projectile clear a wall at a known horizontal position?". v06 opens on this frame; its designer may clear the wall and the 30 m cliff to v06's own case (18 m s⁻¹ at 35°, 15 m cliff, wall 25 m out and 8 m high) in its first sentence.
@@ -236,6 +259,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 (`hold`) 
 
 Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v05-learning-review.md`, `science_check` = `checks/p-y12-m5-v05-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (uniform scaling only, never stretched):
@@ -247,6 +272,8 @@ Need (new plates): none.
 Coded: cliff outline and hatching, sea-level line, launch-level line, wall (HSC exam style), strobe images, arrows, brackets, ghost path, clocks, range curves, ledger, calculation strips, crossed chips, attempt cards, countdowns, key notes board.
 
 Kit gaps: none new beyond v01 kit gaps 1 and 2. The strobe stage must accept a launch height and report the launch-level crossing time and position, and extend a path to negative time as a ghost.
+
+Revision 3 (13 Nov 2026). Also used on the attempt cards: `phys-y11-steel-ball-v1.png` (attempt 1) and the launcher plates (attempt 2). New plate requests: none.
 
 ## Codex asset brief
 
@@ -264,6 +291,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested.
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -308,3 +337,24 @@ New plate requests: none (the launcher is delivered; the cliff stays coded).
 
 Counts: 5,695 characters (narration unchanged; Revision 1 stated 5,711 by the joined convention); about 522 s to about 514 s.
 
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the cliff flights, the angle slider and the sweep are tied to the field motion engine.
+- Question cards: attempt 1 gains the steel ball on a ledge and attempt 2 the launcher on a platform (givens only); both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,695 characters, unchanged; about 509 s (it was about 514 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

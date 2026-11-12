@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V16: Testing F = mv²/r. How can measurements test the circular-force relationship? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,422 characters, 18 scenes (17 numbered plus 2a), about 562 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v15's final frame.
 
@@ -67,6 +67,19 @@ Entry knowledge: F = mv²/r, v = ωr, ω = 2π/T (v11); the conical pendulum's s
 Stops after (Revision 2): apparatus and variables; the droop and Mg = mω²L; period from 20 revolutions; ω = 2π/T; Mg against ω² with gradient mL; one data row; the graph and inferred mass; uncertainty; random versus systematic; safety; testing L and m in one sentence. No gravity.
 Handoff: v17, how gravity varies with mass and distance from a spherical body.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted apparatus with the bung going round, then the push to its full height, scenes 1 and 2 (about 57 s); (B) the droop close-up, scene 2a (about 38 s); (C) the variables board with the bench instruments, scene 3 (about 23 s); (D) the timing stage with the stopwatch, scene 4 (about 30 s); (E) the empty graph axes with the small apparatus and the mass control, scene 5 (about 27 s); (F) the full-width data table, scene 6 (about 36 s); (G) the graph stage, then the push in to one point for its uncertainty, scenes 7 and 8 (about 64 s); (H) the apparatus close-up for repeats and systematic errors, scene 9 (about 39 s); (I) the two mini-graph panels, then the wrong graph and the memory card, scenes 10 and 11 (about 26 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 64 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The bung's laps (scenes 1, 2 and 4) are one circular run on the field motion engine (`field-motion.ts`, a `custom` inward pull of ω²r), so the lap counter and the stopwatch readout read the same clock and 20 laps take the tabled time. The scene 5 mass control and every table value are the design's model arithmetic (Mg = mω²L), labelled "model" or "illustrative" on screen as the design already requires; they are not measurements and are not simulated as if they were.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *F*, *M*, *m*, *g*, *r*, *T*, *v*. Paper background and handwritten headline face as the explainer house style.
@@ -131,25 +144,35 @@ Visual: two small panels below the graph (each with a coded mini graph, axis lab
 
 Visual: a ghost graph "Mg against ω" with the same four points on a rising curve; on "wrongly decide the model has failed" a chip "curved, so the model is wrong" fades in and is crossed. On "Square the speed to straighten the line" the ghost graph morphs into the Mg against ω² graph with its straight line, and the handwritten line writes large in a framed memory card (hand lettering, orange and navy, 52 px; the card reused on the notes screen): "Square the speed to straighten the line." with the small line "(here the turning speed ω)". Hold about 2 seconds.
 
+Upgrade (Revision 3): The wrong graph "Mg against ω" is drawn solid inside an inset card with a dashed border, not as a ghost; its chip takes the slate scribble (R1).
+
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. In a whirling bung experiment, there's zero point five zero metres of string between the tube and the bung, the bung's mass is twenty grams, and a hundred grams hangs from the string. The bung makes twenty revolutions in fourteen point zero seconds. Calculate m omega squared L, compare it with the hanging weight, and suggest one reason for any difference. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "In a whirling-bung investigation, a rubber bung of mass 20 g is whirled with 0.50 m of string between the top of the tube and the bung. A mass of 100 g hangs from the other end of the string. The bung completes 20 revolutions in 14.0 s. (a) Calculate mω²L for the bung, where L is the length of string from the tube to the bung. (b) Compare your answer with the weight of the hanging mass, and suggest one reason for any difference. (4 marks)" A small coded diagram of the apparatus with "L = 0.50 m", "20 g" and "100 g". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's picture is the painted apparatus, not a coded diagram: the stand, boss, tube clamp (`y12p-tube-clamp-v1.png`), bung, paper clip, hanger and masses at about 320 px tall, with ink tags "L = 0.50 m", "20 g" and "100 g". It is on screen from the first frame. No arrows, no lap count and no stopwatch reading are drawn. The memory card is hidden.
 
 ### 13. feedback 1 (brief)
 > The period is fourteen over twenty, zero point seven zero seconds, so omega is two pi over zero point seven zero, about eight point nine eight radians per **second**. Then m omega squared L is about zero point eight one newtons, but the hanging weight is zero point nine eight **newtons**. One reason is friction between the string and the tube, so less than the full weight reaches the **bung**. The classic slip is using fourteen seconds as the period.
 
 Visual: card shrinks to the top; "20 revolutions in 14.0 s", "20 g" and "100 g" underline. On "second" "T = 14.0 ÷ 20 = 0.70 s; ω = 2π ÷ 0.70 = 8.98 rad s⁻¹". On "newtons" "mω²L = 0.020 × 8.976² × 0.50 = 0.81 N; Mg = 0.100 × 9.8 = 0.98 N (about 18 % less)". On "bung" "(b) e.g. friction at the tube; or the string length drifted from 0.50 m". The results sit in a dark-ink framed box (52 px): "0.81 N < 0.98 N". On "using fourteen seconds as the period" a chip "T = 14.0 s" fades in and is crossed (caption "T = time ÷ 20"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "bung 20 g | L = 0.50 m | hanging mass 100 g | 20 revolutions in 14.0 s".
+
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A student plots the hanging weight against omega squared, for a bung on zero point four zero metres of string. The graph is a straight line through the origin, with a gradient of zero point zero zero eight zero kilogram metres. Determine the mass of the bung. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and sketch in one move (question text 36 px), worded as printed: "A student investigating circular motion keeps 0.40 m of string between the tube and a whirling bung, and plots the hanging weight Mg (y-axis) against ω² (x-axis), where ω is the bung's angular velocity. The graph is a straight line through the origin with a gradient of 0.0080 kg m. Determine the mass of the bung. (2 marks)" A small coded sketch: a straight line through the origin, axes "Mg (N)" and "ω² (rad² s⁻²)", "gradient = 0.0080 kg m". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The graph sketch is the card's picture and is on screen from the first frame (axis labels 30 px). It shows only what the card states: a straight line through the origin and its gradient value.
+
 ### 15. feedback 2 (brief)
 > M g equals m omega squared L, so the gradient of M g against omega squared is m times **L**. So m is the gradient divided by L, zero point zero zero eight zero over zero point four zero, which is zero point zero two zero kilograms, or twenty **grams**. The slip is multiplying by L instead, and getting zero point zero zero three two **kilograms**.
 
 Visual: card shrinks to the top; "0.40 m of string" and "gradient of 0.0080 kg m" underline. On "m times L" "Mg = (mL) ω², gradient = mL". On "grams" "m = 0.0080 ÷ 0.40 = 0.020 kg = 20 g" in a dark-ink framed box (52 px). On "kilograms" a chip "m = 0.0080 × 0.40 = 0.0032 kg" fades in and is crossed (caption "gradient = mL, so divide by L"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "L = 0.40 m | Mg against ω²: straight line through the origin | gradient = 0.0080 kg m".
 
 ### 16. handoff
 > So the bung moves in a circle because the string pulls it inwards, and measurements like these are how we test F equals m v squared over r. Now think about the Moon. It goes round the Earth about once a month, with no string at all. Something must still pull it inwards, and that's gravity. So how does the pull of gravity depend on the masses involved, and on the distance from the Earth's **centre**?
@@ -231,6 +254,8 @@ Checked with Python (6 Nov, Revision 2); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` and `### Na.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,422 characters**, 18 scenes (1, 2, 2a, 3 to 17). Characters per scene in order: 306, 446, 500, 301, 395, 363, 475, 468, 381, 514, 130, 211, 390, 442, 291, 336, 398, 75. At 13.3 characters per second the speech is about 483 s; add about 3 s for the prediction countdown, about 2 s for the droop split in scene 2a, about 3 s for the 20-revolution time-lapse in scene 4, about 3 s for the model steps in scene 5, about 3 s for the remaining table rows in scene 6, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 39 s more of the quiet notes hold (45 s in all; about 79 s of holds and countdowns): **about 562 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Scene 10 is cut to one sentence to make room for scene 2a (brief 188 suggested cutting the alternative tests first). Reserve trims if the voiced take runs long: scene 10 (keep it as a screen chip); scene 2's "In practice" sentences; scene 8's string-length sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,422 characters). The notes scene is 45 s in all, so the estimate is about 562 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v15's final frame (designed in this wave, `phys-y12-m5-v15.md`, re-read 6 Nov after its Revision 2): paper background; a bench line; the retort stand at the left with a boss holding the clamp-and-tube plate (`y12p-tube-clamp-v1.png`), the glass tube upright; a string from the tube's top out (slightly drooping) to the rubber bung at the right-hand edge of a dashed horizontal circle in perspective; the string down through the tube, a paper-clip marker (`y12p-paper-clip-v1.png`) just below the tube, a mass hanger with three slotted masses hanging still; an amber arrow at the bung along the string towards the tube and an amber "Mg" at the hanger; a chip "F = mv²/r ?"; heading "Does the inward force do work in uniform circular motion?"; chip "Next: how can measurements test the circular-force relationship?". Scene 1 sets the bung going round, reduces the stack to one 50 g mass and clears the "Next" chip; the heading changes in scene 3 (on "mass") to "How can measurements test the circular-force relationship?". Scene 1 also writes on the method banner.
@@ -248,6 +273,8 @@ In order (kebab-case; 18 scene headings: `### N.` plus `### 2a.`): hook, apparat
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: whirling-bung stage with model steps and readouts, droop close-up, data table, Mg against ω² graph with error bars and two lines, Mg against ω ghost graph, Earth and Moon orbit, `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 camera push; 2 to 2a clear change to the droop close-up; 2a to 3 camera change to the variables board; 3 to 4 camera change to the timing stage; 4 to 5 clear change (graph axes, apparatus small with the model steps); 5 to 6 clear change to the full-width table; 6 to 7 camera change to the graph stage; 7 to 8 camera push to one point, then pull back; 8 to 9 clear change to the tube close-up; 9 to 10 camera change to the mini panels; 10 to 11 camera continue (the ghost graph); attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v16-learning-review.md`, `science_check` = `checks/p-y12-m5-v16-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -269,6 +296,8 @@ Kit gaps (for the v16 build brief):
 2. **Droop close-up.** The bung, string, α arc, the tension splitting into horizontal and vertical parts on one force scale, L and r brackets.
 3. **Data table and graph.** Adapt `m5-repeat-measurements` and `m5-slope-intervals` (`practical-details`): a table that fills row by row; Mg against ω² with horizontal error bars, an orange dashed prediction line (gradient mL), a navy least-squares line through the origin and a gradient triangle; a ghost Mg against ω curve that morphs into the ω² plot.
 4. **Earth and Moon orbit.** The Earth plate at the centre of a dashed circle, the Moon plate moving round it slowly, arrows and a centre-to-centre bracket (shared with v17).
+
+Revision 3 (13 Nov 2026). The apparatus plates (stand, boss, tube clamp, bung, paper clip, hanger and masses) are also used on the attempt 1 card in place of a coded diagram. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v16: tube clamp and Moon)
 
@@ -293,6 +322,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules (18 scenes including 2a).
 10. Confirm the dataset is labelled illustrative on screen and in narration, is not described as independent evidence, and that "Follow your school's approved method" is on screen in the apparatus scenes.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -341,3 +372,26 @@ New plate requests: `y12p-paper-clip-v1.png` (shared with v15).
 Root to decide: open decision 5 (the corrected test holds string length and compares the tension with ω², not "force with speed squared" at a controlled radius as the route words it).
 
 Counts: 6,213 to 6,422 characters (scene sum, 18 scenes); about 557 s to about 562 s. To stay under 570 s, Revision 2 also trims five non-essential sentences (the "drawn fixed" aside, the spoken givens in scene 6, which stay on screen, the trust question and the string-length sentence in scene 8, which becomes a screen tag, and the hook callback in scene 5) and sets the quiet notes hold to 45 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the bung's laps are tied to the field motion engine; the model readouts and table stay the design's labelled arithmetic.
+- Scene 11: the wrong graph is solid in a dashed inset card.
+- Question cards: attempt 1's coded apparatus diagram becomes the painted apparatus; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,422 characters, unchanged; about 562 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

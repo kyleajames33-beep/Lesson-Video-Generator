@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V22: Orbital energy. Why does a higher circular orbit have lower speed but greater total energy? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,554 characters (scene sum; Revision 1 stated 5,569 by the joined convention), 16 scenes, about 504 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -62,6 +62,19 @@ Entry knowledge: v18, v20, v21.
 Stops after: K = GMm/2r, U = −GMm/r, E = −GMm/2r = −K; energy changes between circular orbits and their accounting; burn versus final state; constant E on an ellipse. No transfer-orbit calculations; no escape.
 Handoff: v23, the minimum launch speed for escape without further propulsion.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the orbit raise on the two circles, scene 1 (about 33 s); (B) the algebra column with the small bars: kinetic, then potential, scenes 2 and 3 (about 51 s); (C) the energy bars at full height, scene 4 (about 31 s); (D) the three-curve graph with the radius control, scene 5 (about 25 s); (E) the full-width working, scene 6 (about 48 s); (F) the energy-flow strip, scene 7 (about 28 s); (G) the orbit-change stage with its two labelled moments, scene 8 (about 31 s); (H) the ellipse with the Sun and the comet, scene 9 (about 29 s); (I) the mirrored bars and the memory card, scene 10 (about 19 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 51 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every path runs on the field motion engine (`field-motion.ts`, a `central` field with gm = GM, drawn with `FieldMotionView`: central body, trail, velocity arrows) on one `useMotionTime` clock, and every readout is read from `stateAt` of the run. The orbit raise (scenes 1 and 8) is three runs joined end to end: the inner circle, the coasting path that starts from the inner circle's state with the speed after burn 1, and the outer circle after burn 2. The K, U and E bars are computed from each run's v and r, so E holds constant along the coasting path because the run conserves it. The comet in scene 9 is an elliptical run with the same bars. The three-curve graph and its radius control (scene 5) are exact arithmetic on GMm/2r and stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *K*, *U*, *E*, *r*, *v*. Paper background and handwritten headline face as the explainer house style.
@@ -106,6 +119,8 @@ Visual: camera change to an energy-flow strip: a violet "ΔU = +1.43 × 10¹⁰ 
 
 Visual: camera change back to the orbit-change stage. Two labelled moments (36 px): at the first green thrust arrow "just after burn 1: faster, more total energy, not yet circular". As it coasts along the dashed path its bars morph: orange K shrinking, violet U rising, navy E constant (tag "coasting: E constant"), and its teal speed bar falls. On "energy" an inset beside it shows a coded ball rising from a launch arrow and slowing (no thrower). At r₂ the second green arrow, "burn 2: speeds it up into the new circle". On "one" the two final labels "start: circle, 7.56 km s⁻¹" and "end: circle, 5.35 km s⁻¹" pulse side by side in dark-ink frames (44 px). Hand tags: teal "fast for a moment", navy "E stays the same", and a teal pen ring round "5.35 km s⁻¹".
 
+Upgrade (Revision 3): The ball in the inset is the steel ball plate (`phys-y11-steel-ball-v1.png`, about 40 px), not a coded disc; its launch arrow and slowing strobe images are as described.
+
 ### 9. the same trade on an ellipse
 > The same trade happens on any elliptical orbit. With no engines and no air, the total energy stays constant. As a planet or a comet falls in towards the Sun, its potential energy drops, so its kinetic energy rises, and it speeds up. That's the energy side of Kepler's second **law**. Far from the Sun it's the reverse, and the comet crawls. Nothing is lost, the energy just changes form.
 
@@ -121,27 +136,35 @@ Visual: board clears to the K and E bars for the two orbits, mirrored. The handw
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with a small satellite plate beside it, worded as printed: "An 800 kg satellite is in a circular orbit 500 km above Earth's surface. Calculate the satellite's (a) kinetic energy, (b) gravitational potential energy and (c) total energy. (G = 6.67 × 10⁻¹¹ N m² kg⁻², M_E = 6.0 × 10²⁴ kg, R_E = 6.371 × 10⁶ m)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the satellite plate (`y12p-satellite-v1.png`, about 200 px wide) above an arc of the painted Earth with a navy bracket "500 km" between them. No velocity arrow and no energy bars are drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > First, r equals six point eight seven one times ten to the six **metres**. Big G M m is three point two zero two times ten to the seventeen. So U is minus four point six six times ten to the ten joules, the kinetic energy is half its size, plus two point three three times ten to the ten, and the total is minus two point three three times ten to the ten **joules**. The classic slip is using five hundred kilometres as **r**.
 
 Visual: card shrinks to the top; "above Earth's surface" underlines. Rows (44 px): on "metres" "r = 6.371 × 10⁶ + 0.500 × 10⁶ = 6.871 × 10⁶ m"; "GMm = 4.002 × 10¹⁴ × 800 = 3.202 × 10¹⁷"; "U = −GMm/r = −4.66 × 10¹⁰ J"; "K = GMm/2r = 2.33 × 10¹⁰ J"; on "joules" "E = K + U = −2.33 × 10¹⁰ J" in a dark-ink frame (52 px). On "r" a chip "r = 5.00 × 10⁵ m" fades in and is crossed. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 800 kg | circular orbit 500 km above the surface | G = 6.67 × 10⁻¹¹ N m² kg⁻² | M_E = 6.0 × 10²⁴ kg | R_E = 6.371 × 10⁶ m".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A satellite in a low circular orbit slowly loses energy to air drag, and gradually spirals down through lower circular orbits. Explain why its speed increases, even though drag removes energy. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "A satellite in a low circular orbit loses energy slowly because of air drag and gradually moves to lower circular orbits. Explain why the satellite's speed increases even though drag removes energy from it. (3 marks)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the satellite plate on one dashed circle close to an arc of the painted Earth. The satellite is still; no second orbit, no speed readout and no energy bars are drawn.
+
 ### 14. feedback 2 (brief)
 > Drag removes energy, so the total energy becomes more negative. Total energy is minus big G M m over two r, so a more negative total means a smaller radius. And in a smaller circular orbit the speed is higher, because v squared equals big G M over r. As it drops, gravity does twice as much work on it as drag takes away. The slip is thinking drag must slow it **down**.
 
 Visual: card shrinks to the top. The two-circle bars return, with the satellite moving from the outer to the inner circle. Rows (44 px): "E = −GMm/2r more negative → r smaller", "v = √(GM/r) larger (K = −E rises)" in a dark-ink frame (52 px), "gravity's work = −ΔU = 2 × energy lost to drag". On "down" a chip "drag slows it down" fades in and is crossed (caption "it falls inwards and speeds up"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "low circular orbit | air drag slowly removes energy | it moves to lower circular orbits".
 
 ### 15. handoff
 > Every circular orbit has a negative total energy, so it's bound. To escape completely, a craft needs a total energy of at least zero. So what's the slowest launch speed that gets it there, with no more help from an engine? That's **next**, along with how it compares with the speed of a circular orbit.
 
 Visual: board clears to the three-curve graph; the zero line thickens into a dashed band "E = 0: escape?". Beside it, the gravity stage: the satellite plate on Earth's surface with a teal launch arrow pointing straight up, "v = ?", and the dashed radial line to "∞" from v21. On "next" a chip writes "Next: what minimum launch speed allows escape without further propulsion?". Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -206,6 +229,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,569): **5,554 characters**, 16 scenes (narration unchanged). Characters per scene (1 to 16): 445, 426, 247, 411, 335, 640, 372, 412, 383, 252, 254, 414, 224, 366, 298, 75. At 13.3 characters per second the speech is about 418 s; add about 3 s for the prediction countdown, about 5 s for the transfer run in scene 1, about 3 s for the radius control in scene 5, about 3 s for the coasting run in scene 8, about 2 s for the comet lap in scene 9, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 86 s of holds and countdowns): **about 504 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's last two sentences (keep the bars); scene 14's gravity-work sentence (keep the row).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,554 characters). The notes scene is 45 s in all, so the estimate is about 499 s (it was about 504 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v21's final frame (`phys-y12-m5-v21.md`): paper background; the Earth plate at the left; dashed circular orbits at r and 2r with a satellite plate on each; beside each, a violet U bar hanging from a zero line (outer half as deep), an orange "K = ?" bar and an outlined "total = ?" bar; heading "Why does gravitational potential energy use a zero at infinity?"; chip "Next: why does a higher circular orbit have lower speed but greater total energy?". Scene 1 fades the bars and runs the transfer; the heading changes in scene 2.
@@ -225,6 +250,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v22-learning-review.md`, `checks/p-y12-m5-v22-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -240,6 +267,8 @@ Need (new plates): none.
 Coded: orbits and transfer path, thrust arrows, energy bars, speed bar, curves and radius marker, flow strip and gauge, algebra, table, chips, cards, countdowns, notes board.
 
 Kit gaps: 7. **Energy bars** (K, U and E bars per state from one model and scale; morph between states; mirror K and E; relative readouts).
+
+Revision 3 (13 Nov 2026). Existing plates also used: `phys-y11-steel-ball-v1.png` (the scene 8 inset, confirmed by file listing); the Earth and satellite plates on both attempt cards. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the field motion engine has no mid-run impulse (an engine burn), so the orbit raise is three runs joined by the lesson.
 
 ## Codex asset brief (Year 12 Physics M5 v22)
 
@@ -259,6 +288,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +334,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,569 (joined) or 5,554 (scene sum) to 5,554 characters (scene sum; narration unchanged); about 512 s to about 504 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the orbit raise and the comet's energy trade are tied to the field motion engine; the three-curve graph stays lesson-coded.
+- Scene 8: the inset's coded ball becomes the steel ball plate.
+- Question cards: attempt 1 gains an Earth arc and its altitude; attempt 2 gains the satellite on one circle, drawn still; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: the field motion engine has no mid-run impulse (an engine burn), so the orbit raise is three runs joined by the lesson.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,554 characters, unchanged; about 499 s (it was about 504 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

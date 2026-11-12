@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V14: Banked roads. How does a banked road reduce reliance on friction? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,609 characters, 17 scenes, about 503 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v13's final frame.
 
@@ -64,6 +64,20 @@ Main question: *A highway bend of radius 80 m is banked at 12°. On ice, can a c
 Entry knowledge: f = mv²/r on a flat bend and friction opposing slip (v12); resolving a slanted force, tan θ = v²/(rg) (v13); N = mg cos θ on a ramp (Year 11).
 Stops after: the tilted normal force; horizontal and vertical resolution; v_design = √(rg tan θ); the 12.9 m s⁻¹ example; the friction saved; friction up below and down above the design speed; separate steady states; N = mg/cos θ versus mg cos θ. No maximum-speed-with-friction derivation.
 Handoff: v15, whether the inward force does work in uniform circular motion.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the car on the banked cross-section, the ice question and the tilted normal force, scenes 1 and 2 (about 55 s); (B) the axes stage with the two axis choices, scene 3 (about 40 s); (C) the bank-angle slider stage, scene 4 (about 30 s); (D) the full-width working, scene 5 (about 29 s); (E) the flat and banked sections side by side, scene 6 (about 28 s); (F) the three-state panels, scenes 7 to 9 (about 77 s; a new panel lights at about 24 s and all three at about 48 s); (G) the ramp beside the bank for the mistake, scene 10 (about 32 s); (H) the outer panels and the memory card, scene 11 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 77 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The cross-section is a force diagram, so no engine drives it: the bank-angle control in scene 4 and the three panels are exact arithmetic (tan θ = v²/(rg) and the two force equations), lesson-coded, with every arrow length computed from the readouts. The top view in the handoff is a `central` run on the field motion engine, as in the earlier circular-motion videos.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Slip arrows keep their red.** The red dashed slip arrows show which way the car would slide; that is a subject meaning in this design's colour key, not a mistake mark. Mistakes still take the slate scribble (R1).
 
 ## Script and shots
 
@@ -129,27 +143,35 @@ Visual: board clears to the left and right panels with their red dashed slip arr
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A highway curve of radius 150 m is banked at 5° to the horizontal. Calculate the design speed of the curve (the speed at which no friction is needed), in km h⁻¹. (2 marks)" A small coded HSC-style cross-section: a road line at 5° with "5°" and the centre of the bend marked. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style cross-section is the card's picture and is on screen from the first frame, with the painted rear-view car (`y12p-car-rear-v1.png`, about 200 px wide, tilted with the road) on the road line and the arc "5°". No force arrows are drawn. The memory card and the panels are hidden.
+
 ### 13. feedback 1 (brief)
 > At the design speed, tan theta equals v squared over r g, so v is the square root of one hundred and fifty times nine point eight times tan five. That's about eleven point three four metres per **second**. Times three point six, that's about forty point eight kilometres per **hour**. A classic slip is having the calculator in radians. Tan of five radians is negative, and you can't take its square **root**.
 
 Visual: card shrinks to the top; "150 m", "5°" and "km h⁻¹" underline. Equation strip "v_design = √(rg tan θ)". On "second" "v = √(150 × 9.8 × tan 5°) = √128.6 = 11.34 m s⁻¹". On "hour" "11.34 × 3.6 = 40.8 km h⁻¹" in a dark-ink framed box (52 px). On "root" a chip "tan 5 (radians) = −3.38" fades in and is crossed (caption "calculator in degrees"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "r = 150 m | banked at 5° | design speed in km h⁻¹".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A banked curve is designed for ninety kilometres per hour. A car takes the curve at a steady sixty kilometres per hour. State which way friction acts on the car, and explain why. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with a small coded banked cross-section and a car outline, worded as printed: "A banked curve has a design speed of 90 km h⁻¹. A car travels around the curve at a constant 60 km h⁻¹. State the direction of the friction force on the car's tyres, and explain why friction acts in this direction. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The car on the banked cross-section is the painted rear-view car, not a coded outline. No friction arrow and no slip arrow are drawn, because the friction direction is the answer.
+
 ### 15. feedback 2 (brief)
 > Sixty is slower than the design speed, so the car needs less inward force than the bank gives. Without friction it would slide down the bank, towards the **inside**. Friction opposes that slip, so it acts up the **slope**. The slip is saying no friction is needed because the road is banked. That's only true at exactly ninety kilometres per **hour**.
 
 Visual: card shrinks to the top; "design speed of 90 km h⁻¹" and "constant 60 km h⁻¹" underline. The left panel ("slower") returns small. On "inside" its red dashed slip arrow down the slope. On "slope" the amber friction arrow up the slope, and the answer line "friction acts up the slope (outwards)" in a dark-ink framed box (52 px). On "hour" a chip "no friction: the road is banked" fades in and is crossed (caption "f = 0 only at 90 km h⁻¹"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "design speed 90 km h⁻¹ | the car travels at a constant 60 km h⁻¹".
 
 ### 16. handoff
 > So at the design speed, the normal force does the inward job all the way round. For that car, it's about two and a half thousand newtons, pushing inwards lap after lap. Yet the car's speed never changes. So does that inward force do any work on the car? And if it doesn't, why **not**?
 
 Visual: clear change to a top view of the banked bend (circle stage from v11; the ring shaded darker towards its inner edge to suggest the slope) with the top-view car plate going round at a steady rate, a lap counter ticking. On "all the way round" a teal velocity arrow along the tangent and an amber arrow "F_net = 2.50 × 10³ N" towards the centre ride with the car. On "lap after lap" the lap counter ticks over. On "speed never changes" a readout "speed: 12.9 m s⁻¹ (constant)". On "not" the car pauses at the 3 o'clock position, a right-angle mark appears between the velocity and the inward force, and a chip "W = ?"; chip "Next: does the inward force do work in uniform circular motion?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -213,6 +235,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,609 characters**, 17 scenes. Characters per scene (1 to 17): 280, 449, 538, 394, 391, 367, 313, 324, 387, 419, 279, 166, 397, 210, 339, 281, 75. At 13.3 characters per second the speech is about 422 s; add about 3 s for the prediction countdown, about 2 s for the pendulum ghost in scene 3, about 3 s for the bank-angle slider in scene 4, about 3 s for the graph stops in scene 9, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 81 s of holds and countdowns): **about 503 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 10's ramp sentence (open decision 3); scene 9's last sentence; scene 3's pendulum sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,609 characters). The notes scene is 45 s in all, so the estimate is about 498 s (it was about 503 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v13's final frame (designed in this wave, `phys-y12-m5-v13.md`): paper background; the road cross-section stage with the road line tilted 12°, lower (inner) edge on the left, a navy pointer "centre of the bend" at the left edge; the rear-view car (`y12p-car-rear-v1.png`) on the road, rotated with it; a teal ⊗ "moving into the screen"; an amber "N" at right angles to the road with a right-angle mark, and an amber "mg" down; a dashed teal horizontal component of N with "?"; no angle label; heading "How does string tension sustain a conical pendulum?"; chip "Next: how does a banked road reduce reliance on friction?". Scene 1 adds the "12°" arc and clears the "Next" chip; the heading changes in scene 6 (on "nothing").
@@ -230,6 +254,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, tilted-normal, res
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: banked cross-section (v12 road stage), three-state panels (reconfigured `m5-banked-friction`), pendulum ghost (v13), top-view bend (v11 circle stage), bank-angle slider with live readouts, friction-magnitude graph with a stepping dot and readouts, `AlignedAlgebra`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 camera continue; 2 to 3 camera push to the axes stage; 3 to 4 camera continue, then a camera change to the bank-angle slider stage on "It's called the design speed"; 4 to 5 clear change to the calculation layout; 5 to 6 camera change to the side-by-side sections; 6 to 7 clear change to the panels; 7 to 8 camera continue; 8 to 9 camera continue, then a clear change to the graph stage on "close to the design speed"; 9 to 10 clear change; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v14-learning-review.md`, `science_check` = `checks/p-y12-m5-v14-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -250,6 +276,8 @@ Kit gaps (for the v14 build brief):
 3. **Friction graph (Revision 2: magnitudes).** |f| against v from the same model, touching zero at v_design, with direction labels on the two branches (up the slope below, down the slope above) and the flat-road curve f = mv²/r on the same magnitude axis; shading only where the banked value is below the flat value (v > 9.08 m s⁻¹); a dot that jumps between set speeds with readouts.
 4. **Bank-angle slider.** The cross-section's θ driven by a control, with N, its parts and the v_design readout from the model.
 
+Revision 3 (13 Nov 2026). The rear-view car plate is also used on both attempt cards. New plate requests: none.
+
 ## Codex asset brief (Year 12 Physics M5 v14)
 
 No new plates. Codex confirms, on a session contact sheet at about 400 px wide on the paper and dark board backgrounds, that `y12p-car-rear-v1.png` (when delivered for v12) rotates cleanly to 12° about the midpoint of its contact line without its tyres leaving the road line, and that `phys-y11-wooden-block-v1.png` reads as a block at the ramp size. Append the hand-in to `status.md`.
@@ -266,6 +294,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested (empty cars).
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -315,3 +345,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,582 to 5,609 characters (scene sum); about 506 s to about 503 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the cross-section is exact force arithmetic (lesson-coded); the handoff top view uses the field motion engine.
+- Question cards: both cross-sections carry the painted rear-view car (attempt 2's coded car outline is replaced); both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,609 characters, unchanged; about 498 s (it was about 503 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The slip arrows stay red as a subject colour; R1's slate is used only for mistakes.

@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V18: Circular orbits. How does gravity maintain a circular orbit? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,727 characters (scene sum; Revision 1 stated 5,606 by the joined convention), 17 scenes, about 514 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -66,6 +66,20 @@ Entry knowledge: v01, v11, v12, v15, v17 as above.
 Stops after: v = √(GM/r), v = 2πr/T, r³/T² = GM/4π² for circular orbits; free fall explains floating; the Moon check. No geostationary orbits, ellipses or energy.
 Handoff: v19, what makes an orbit geostationary.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then Newton's mountain with the launch-speed slider, scene 1 (about 25 s); (B) the push to the launch-point inset: falling 4.9 m in 8 km, scene 2 (about 43 s); (C) the orbit stage with the satellite, scene 3 (about 35 s); (D) the algebra column, scene 4 (about 30 s); (E) the station and its module, scene 5 (about 29 s); (F) the full-width working, scene 6 (about 35 s); (G) the orbit-radius slider, scene 7 (about 22 s); (H) the lap stage with its clock, scene 8 (about 22 s); (I) the full-width working for the period, scene 9 (about 26 s); (J) the far pull back with the Moon, scene 10 (about 31 s); (K) the three-step strip and the memory card, scene 11 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 43 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every path runs on the field motion engine (`field-motion.ts`, a `central` field with gm = GM for Earth, drawn with `FieldMotionView`: central body, trail, velocity and acceleration arrows). Newton's mountain (scenes 1 and 2) is a set of runs from the same launch point at each slider speed; "lands: distance round Earth" is read where each run meets the surface, and the fastest run closes into a circle because the run does, not because the path is drawn as one. The scene 7 radius slider is a set of circular runs; "v" and "T" are read from each run. The lap clock in scene 8 is the 400 km run's own period.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The module is a schematic.** The "coded cutaway" in scene 5 is a plain schematic box (walls and a floor line) round the painted spanner, not a picture of a station interior. Newton's mountain stays a plain outline on the Earth plate, as root decision 16 records.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *v*, *r*, *T*, *G*, *M*, *m*. Paper background and handwritten headline face as the explainer house style.
@@ -130,27 +144,35 @@ Visual: board clears to a three-step strip (44 px): "1. GMm/r² = mv²/r", "2. c
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), worded as printed: "A space telescope orbits Earth at an altitude of 547 km. Assume a circular orbit. (a) Calculate its orbital speed. (b) Calculate its orbital period in minutes. (G = 6.67 × 10⁻¹¹ N m² kg⁻², M_E = 6.0 × 10²⁴ kg, R_E = 6.371 × 10⁶ m)" The full question stays on screen with a small satellite plate beside it. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The satellite plate (`y12p-satellite-v1.png`, about 200 px wide) is on the card's right side from the first frame, above an arc of the painted Earth with a navy bracket "547 km" between them. No velocity arrow and no lap clock are drawn. The three-step strip is hidden.
+
 ### 13. feedback 1 (brief)
 > First, r equals six point three seven one plus zero point five four seven, which is six point nine one eight times ten to the six **metres**. Then v is the square root of big G M over r, about seven point six one times ten to the three metres per second. T is two pi r over v, about five thousand seven hundred seconds, or ninety-five **minutes**. The classic slip is using five hundred and forty-seven kilometres as **r**.
 
 Visual: card shrinks to the top; "altitude" underlines. Rows (44 px): on "metres" "r = R + h = 6.371 × 10⁶ + 0.547 × 10⁶ = 6.918 × 10⁶ m"; "v = √(4.002 × 10¹⁴ / 6.918 × 10⁶) = 7.61 × 10³ m s⁻¹" in a dark-ink frame (52 px); on "minutes" "T = 2πr / v = 5.71 × 10³ s = 95.2 min" in a dark-ink frame. On "r" a chip "r = 5.47 × 10⁵ m" fades in and is crossed (caption "that's the altitude"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "altitude 547 km, circular orbit | G = 6.67 × 10⁻¹¹ N m² kg⁻² | M_E = 6.0 × 10²⁴ kg | R_E = 6.371 × 10⁶ m".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. Satellite Y orbits Earth at four times the orbital radius of satellite X. Both orbits are circular. How do Y's orbital speed and period compare with X's? Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "Satellites X and Y are in circular orbits around Earth. The orbital radius of Y is four times the orbital radius of X. Compare the orbital speed and the orbital period of Y with those of X. Justify your answers." Two coded circles (radii r and 4r, no speeds shown) sit beside the card. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The two circles (radii r and 4r) round a small painted Earth are the card's picture and are on screen from the first frame, with the satellite plate at about 40 px on each, tagged "X" and "Y". Both satellites are still; no velocity arrows and no lap clocks are drawn, so nothing can be compared by eye.
+
 ### 15. feedback 2 (brief)
 > Speed goes as one over the square root of r, so four times the radius gives half the **speed**. Now the period. Y's lap is four times longer, and it moves at half the speed, so it takes eight times as **long**. The slip to avoid is saying four times as long, just because the radius is four times **bigger**.
 
 Visual: card shrinks to the top. Rows (44 px): on "speed" "v = √(GM/r): v_Y = v_X / √4 = v_X / 2" in a dark-ink frame (52 px); on "long" "lap 2π(4r) = 4 × lap; speed ÷ 2 → T_Y = 8 T_X" in a dark-ink frame, with a check row "r³/T² constant: T ∝ r^1.5, 4^1.5 = 8". On "bigger" a chip "T_Y = 4 T_X" fades in and is crossed. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "X and Y: circular orbits round Earth | radius of Y = 4 × radius of X".
 
 ### 16. handoff
 > So gravity holds a satellite in orbit by bending its path, and the radius fixes both its speed and its period. That means if you choose the period, you've chosen the radius. Which period would let a satellite keep pace with Earth's spin, so it hangs over one spot? That's **next**.
 
 Visual: board clears to the gravity stage: the Earth plate with a curved grey rotation arrow at its equator "Earth turns once a day"; the 400 km satellite plate circling quickly on its small circle; a large dashed circle further out with a second satellite plate on it and a chip "T = 24 h → r = ?". On "next" a chip writes "Next: what makes an orbit geostationary rather than merely near Earth?". Hold about 2 seconds. This is the final frame.
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -222,6 +244,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,606): **5,727 characters**, 17 scenes. Characters per scene (1 to 17): 328, 578, 463, 394, 388, 470, 288, 294, 342, 417, 281, 240, 411, 185, 296, 277, 75. At 13.3 characters per second the speech is about 431 s; add about 3 s for the prediction countdown, about 5 s for the launch-speed slider runs and the full circle in scenes 1 and 2, about 3 s for the radius slider in scene 7, about 2 s for the lap trace in scene 8, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 83 s of holds and countdowns): **about 514 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 5's last three sentences (open decision 2); scene 7's Moon sentence; scene 9's NASA sentence (keep the chip).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,727 characters). The notes scene is 45 s in all, so the estimate is about 509 s (it was about 514 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 
@@ -241,6 +265,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v18-learning-review.md`, `checks/p-y12-m5-v18-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -258,6 +284,8 @@ Need (new plates, Codex): none (Revision 2: the launcher, spanner, satellite and
 Coded: mountain, atmosphere band, ballistic paths, tangents and brackets, slider and readouts, orbit circles, arrows, module cutaway, algebra, tables, chips, cards, countdowns, notes board.
 
 Kit gaps: 3. **Newton's mountain stage** (numerically integrated paths from a launch point, three sub-orbital speeds and the circular speed, Earth to scale, mountain exaggerated with a "not to scale" tag, a launch-speed slider with live readouts).
+
+Revision 3 (13 Nov 2026). The satellite and Earth plates are also used on both attempt cards. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v18: Moon)
 
@@ -277,6 +305,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -325,3 +355,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (QA only: the space station plate's top edge).
 
 Counts: 5,606 (joined) or 5,590 (scene sum) to 5,727 characters (scene sum); about 514 s to about 514 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: Newton's mountain, the radius slider and the lap clock are tied to the field motion engine.
+- Question cards: attempt 1 gains the satellite above an arc of Earth with its altitude; attempt 2's circles gain the Earth and satellite plates, drawn still; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,727 characters, unchanged; about 509 s (it was about 514 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

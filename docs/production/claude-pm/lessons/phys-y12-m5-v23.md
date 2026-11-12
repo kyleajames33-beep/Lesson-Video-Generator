@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V23: Escape velocity. What minimum launch speed allows escape without further propulsion? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,570 characters (scene sum; Revision 1 stated 5,585 by the joined convention), 15 scenes, about 503 s, counted by script with the build parser rules (see "Narration length estimate"). Last video of Module 5.
 
@@ -65,6 +65,19 @@ Entry knowledge: v18, v21, v22.
 Stops after: v_esc = √(2GM/r) from E = 0; Earth's 11.2 km s⁻¹; √2 × orbital speed; classification by E; mass and direction independence; assumptions. No relativistic escape.
 Handoff: Module 6 v01, how voltage between parallel plates determines a charged particle's acceleration.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the vertical launch stage with its speed slider and the energy bars riding beside the probe, scenes 1 and 2 (about 70 s; the bars arrive at about 31 s); (B) the push to the algebra column, scene 3 (about 40 s); (C) the full-width working, scene 4 (about 35 s); (D) the gravity stage with the two framed formulas, scene 5 (about 35 s); (E) the launch slider with its three lanes, scene 6 (about 37 s); (F) three probes in three directions, scene 7 (about 26 s); (G) the model box and the rocket, scene 8 (about 33 s); (H) the stacked formulas and the memory card, scene 9 (about 20 s); question and feedback cards; the end of the module and the next field; the notes board. No set-up runs past about 70 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every path runs on the field motion engine (`field-motion.ts`, a `central` field with gm = GM, drawn with `FieldMotionView`: central body, trail, velocity arrows) on one `useMotionTime` clock, and every readout is read from `stateAt` of the run. Each slider speed in scenes 1 and 6 is a radial run from Earth's surface: "back from" is the run's greatest height, "E per kilogram" is ½v² − GM/r from the run, and at 11.2 km s⁻¹ and above the run never turns back. The energy bars in scene 2 are the 10 km s⁻¹ run's K and U. In scene 7 the three probes are three runs at one speed in three directions; their speed against distance readouts match because the runs do.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *v*, *v_esc*, *r*, *G*, *M*, *m*, *E*. Paper background and handwritten headline face as the explainer house style.
@@ -124,22 +137,28 @@ Visual: `QuestionCard` (subject "Physics") arrives with its full text in one mov
 
 Visual: card shrinks to the top. Rows (44 px): "v_esc = √(2GM/r) = √(2 × 6.67 × 10⁻¹¹ × 6.42 × 10²³ / 3.39 × 10⁶)"; on "second" "= √(2.526 × 10⁷) = 5.03 × 10³ m s⁻¹" in a dark-ink frame (52 px); "(b) e.g. no air resistance; no thrust after launch; only Mars's gravity"; source chip "NASA: 5.03 km s⁻¹". On "two" a chip "√(GM/r) = 3.55 × 10³ m s⁻¹" fades in and is crossed. Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "M = 6.42 × 10²³ kg | r = 3.39 × 10⁶ m | G = 6.67 × 10⁻¹¹ N m² kg⁻²".
+
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A satellite is in a circular orbit around a planet. Its engine fires briefly to increase its speed. By what factor must its speed increase, so that it can escape with no further propulsion? Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "A satellite is in a circular orbit around a planet. Its engine fires briefly, increasing its speed. By what factor must its speed increase for the satellite to escape from the planet without further propulsion? Justify your answer. (2 marks)" A small satellite plate on a dashed circle sits beside the card. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The satellite plate on its dashed circle is on screen from the first frame, round a plain disc tagged "planet". The satellite is still; no velocity arrow and no escape path are drawn. The memory card is hidden.
 
 ### 13. feedback 2 (brief)
 > At the same radius, the orbital speed is root G M over r, and the escape speed is root two G M over r. So the speed must increase by a factor of root two, about one point four one, whatever the radius or the planet. The slip is answering two, by doubling the speed instead of multiplying it by root **two**.
 
 Visual: card shrinks to the top. Rows (44 px): "v_orbit = √(GM/r)", "v_esc = √(2GM/r)", "ratio = √2 ≈ 1.41" in a dark-ink frame (52 px); small tag "same r: the burn is brief". On "two" a chip "× 2" fades in and is crossed (caption "doubling speed quadruples K"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "circular orbit round a planet | a brief burn raises its speed | escape without further propulsion".
+
 ### 14. end of Module 5, and the next field
 > That completes Module five. A gravitational field around every mass sets every orbit, and every escape. Next, in Module six, we meet a different kind of field. Between two charged plates, the electric field is uniform, just like gravity close to the ground, so a charged particle accelerates steadily. So how does the voltage across the plates set that **acceleration**?
 
 Visual: board clears to the gravity stage; the radial violet field arrows around Earth draw in. Camera push to a small patch of ground: the arrows there are parallel and equal, tag "near the surface: uniform". As "Between two charged plates" is spoken the ground patch morphs into two coded horizontal plates (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", and a small coded "+q" particle between them with an empty acceleration arrow "a = ?" and a label "V" across the plates. On "acceleration" a chip writes "Next (Module 6): how does voltage between parallel plates determine a charged particle's acceleration?". Hold about 2 seconds. This is the final frame.
 
-### 15. key notes (quiet, hold about 50 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -209,6 +228,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,585): **5,570 characters**, 15 scenes. Characters per scene (1 to 15): 408, 523, 531, 470, 470, 492, 347, 434, 269, 262, 399, 221, 303, 366, 75. At 13.3 characters per second the speech is about 419 s; add about 3 s for the prediction countdown, about 5 s for the two launches in scene 1, about 2 s for the replay in scene 2, about 4 s for the launch slider and three lanes in scene 6, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 84 s of holds and countdowns): **about 503 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 4's Moon sentence; scene 8's rocket sentences (keep the plate and tag).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,570 characters). The notes scene is 45 s in all, so the estimate is about 498 s (it was about 503 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 
@@ -228,6 +249,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v23-learning-review.md`, `checks/p-y12-m5-v23-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -242,6 +265,8 @@ Need (new plates): none.
 Coded: launch paths, height markers, slider and readouts, energy bars, well inset, lanes, atmosphere band, thrust arrows, parallel plates, field arrows, particle, algebra, chips, cards, countdowns, notes board.
 
 Kit gaps: 8. **Vertical launch stage** (radial launch at a chosen speed from a live slider; motion from energy conservation in real proportion with a slow-motion factor; maximum-height readout; E-per-kilogram readout; optional mgh ghost; bars riding along).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v23)
 
@@ -260,6 +285,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +332,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,585 (joined) or 5,571 (scene sum) to 5,570 characters (scene sum); about 513 s to about 503 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the launch slider, the energy bars and the three directions are tied to the field motion engine.
+- Question cards: both already carry a picture (Mars; the satellite on a circle, drawn still); both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame (the parallel plates that open Module 6) are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,570 characters, unchanged; about 498 s (it was about 503 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

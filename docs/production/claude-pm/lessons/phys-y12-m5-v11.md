@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V11: Uniform circular motion. How can speed be constant while velocity keeps changing? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,274 characters, 17 scenes, about 554 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v10's final frame.
 
@@ -63,6 +63,20 @@ Main question: *The tip of a slewing crane's jib, and a car lapping a 50 m track
 Entry knowledge: vectors, acceleration as rate of change of velocity, Newton's first and second laws, circumference (Year 11); the steadily turning crane (v10).
 Stops after: speed versus velocity; Δv towards the centre; T, f, ω and the radian; v = 2πr/T = ωr; a_c = v²/r = ω²r; F_net = mv²/r as a role; the tangent exit. No multi-force case.
 Handoff: v12, which real force supplies the inward acceleration on a flat curve.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the crane seen from above with the painted crane as an inset, question and the speed and velocity contrast, scenes 1 and 2 (about 59 s); (B) the push to the large Δv tray beside the circle, scene 3 (about 40 s); (C) the car on its track with the lap clock, scene 4 (about 43 s); (D) the full-width working, scene 5 (about 32 s); (E) the crane top view with two dots on the jib, scene 6 (about 29 s); (F) the car with the velocity circle, scene 7 (about 44 s); (G) the speed-slider stage, scene 8 (about 27 s); (H) the force stage with the car large, scene 9 (about 34 s); (I) the table top with the ball on a string, scene 10 (about 35 s); (J) the car and the memory card, scene 11 (about 15 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 59 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The circling bodies run on the field motion engine (`field-motion.ts`). The car and the jib tip are `central` runs set to their circular speeds, drawn with `FieldMotionView` (trail, velocity and acceleration arrows), so every teal velocity arrow is tangent and every violet acceleration arrow points to the centre because the run says so. The scene 8 slider is a set of runs at r = 50 m; "a" is each run's acceleration. Scene 10's ball on a string is a `custom` field: an inward pull of v²/r that drops to zero at the cue "string", so the straight tangent path is computed, not drawn by hand. The Δv tray and the velocity circle are lesson constructions on the run's velocities.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Cars are plates.** Every car, including the two on the attempt 2 card, is a painted top-view car plate. The track, the roundabout and the table top stay plain outlines seen from above.
 
 ## Script and shots
 
@@ -128,27 +142,35 @@ Visual: board clears to the car on the track. On "Twice as fast, four times the 
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (no word-by-word build; question text 36 px), worded as printed: "A laboratory rotor of radius 0.30 m completes 4.0 revolutions per second. Calculate: (a) the angular velocity of the rotor; (b) the speed of a point on its rim; (c) the centripetal acceleration of that point. (3 marks)" A small coded HSC-style diagram: a circle with a centre dot, a radius line "0.30 m" and a curved arrow "4.0 rev s⁻¹". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style rotor diagram is the card's picture and is on screen from the first frame (labels 30 px or more). It shows only the card's two values. The memory card is hidden.
+
 ### 13. feedback 1 (brief)
 > Four revolutions per second means omega is two pi times four point zero, about twenty-five point one radians per **second**. The rim speed is omega r, twenty-five point one times zero point three zero, about seven point five metres per **second**. And a is v squared over r, about one hundred and ninety metres per second **squared**. The classic slip is writing omega as four, but four is the frequency in hertz, not the angle per **second**.
 
 Visual: card shrinks to the top; "4.0 revolutions per second" and "0.30 m" underline. Equation strip "ω = 2πf   v = ωr   a = v²/r". On "radians per second" "f = 4.0 Hz, ω = 2π × 4.0 = 25.1 rad s⁻¹". On "seven point five metres per second" "v = 25.1 × 0.30 = 7.5 m s⁻¹" (the earlier line dims). On "metres per second squared" "a = 7.54² ÷ 0.30 = 1.9 × 10² m s⁻² (towards the centre)". On "not the angle per second" a chip "ω = 4.0 rad s⁻¹" fades in and is crossed (caption "4.0 is f, in Hz"). The three results sit in a dark-ink framed box (52 px): "ω = 25.1 rad s⁻¹, v = 7.5 m s⁻¹, a = 1.9 × 10² m s⁻²". Hand tag navy "rev s⁻¹ = Hz" under the underline. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "r = 0.30 m | 4.0 revolutions per second".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. Two identical cars travel around the same circular track at constant speeds. Car B travels at twice the speed of car A. Compare their centripetal accelerations, and the net forces on them. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with a small coded top-view track and two car outlines labelled "A" and "B", worded as printed: "Two identical cars travel at constant speeds around the same horizontal circular track. Car B travels at twice the speed of car A. Compare the centripetal accelerations of the two cars and the net forces acting on them. Justify your answer using equations. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The two cars on the track are the painted car plates (`phys-y11-car-top-blue-v1.png` tagged "A" and `phys-y11-car-top-yellow-v1.png` tagged "B", about 110 px long each), not coded outlines. No speed arrows are drawn, so nothing can be compared by eye.
+
 ### 15. feedback 2 (brief)
 > Same track, so the same radius. Acceleration is v squared over r, so doubling v makes it two squared, four times as **big**. The cars are identical, so they have the same mass, and the net force is four times as big **too**. The slip is saying twice, which forgets that the speed is **squared**.
 
 Visual: card shrinks to the top; "identical", "same circular track" and "twice the speed" underline. On "four times as big" `AlignedAlgebra` "a_B = (2v)²/r = 4v²/r = 4a_A". On "too" "F_B = m a_B = 4F_A". On "squared" a chip "twice" fades in and is crossed (caption "the speed is squared"). "a_B = 4a_A, F_B = 4F_A" sits in a dark-ink framed box (52 px); hand tag violet "2² = 4" by the square. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "identical cars | same horizontal circular track | B travels at twice the speed of A".
 
 ### 16. handoff
 > So a car going round a bend at a steady speed is accelerating towards the centre, and something has to provide a net force towards the centre. Here's a car on a flat roundabout. Its weight pulls down, and the road pushes up. So which real force can pull it **inwards**?
 
 Visual: clear change to a top view of a flat roundabout (coded grey road ring with a central island, track lines only, no signs) with the car plate going round at a steady rate. On "towards the centre" a violet "a" arrow on the car points to the island's centre. On "weight pulls down, and the road pushes up" a small side-view chip shows two amber arrows "weight" (down) and "normal force" (up) with "vertical: no help inwards". On "inwards" a dashed amber arrow beside the violet one, "F_net = mv²/r", with a large "?" and the chip "Next: which force supplies the inward acceleration on a flat curve?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -211,6 +233,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,274 characters**, 17 scenes. Characters per scene (1 to 17): 317, 464, 532, 571, 423, 383, 580, 360, 446, 459, 193, 276, 427, 220, 283, 265, 75. At 13.3 characters per second the speech is about 472 s; add about 3 s for the prediction countdown, about 3 s for the shrinking-interval frames in scene 3, about 3 s for the speed slider in scene 8, about 3 s for the cut-string exit in scene 10, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 82 s of holds and countdowns): **about 554 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's derivation sentences (open decision 2); scene 8's "falling object" sentence; scene 10's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,274 characters). The notes scene is 45 s in all, so the estimate is about 549 s (it was about 554 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v10's final frame (designed in this wave, `phys-y12-m5-v10.md`): paper background; a coded top view: the mast as a navy dot at the centre, the jib as a line from it to a tip dot on a thin circle (the tip's path); teal velocity arrows of equal length tangent to the circle at four positions (top, left, bottom, right), with a readout "speed: constant"; at the side, the four arrows copied tail to tail, equal lengths, four directions, with "Δv = ?" between two of them; heading "How do clockwise and anticlockwise torques balance?"; a chip "Next: how can speed be constant while velocity keeps changing?". Scene 1 sets the jib slewing again and removes the "Next" chip on "accelerating"; the heading changes in scene 2.
@@ -228,6 +252,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, speed-velocity, de
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: circle stage (extends `m5-circular-motion`), velocity circle, crane top view with the crane plate inset, speed slider with live readouts, cut-string playback, `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue (same crane top view); 2 to 3 camera push to the Δv tray stage (Revision 2); 3 to 4 camera change to the car track; 4 to 5 clear change to the calculation layout; 5 to 6 camera change to the crane; 6 to 7 camera change to the car; 7 to 8 camera change to the speed-slider stage (Revision 2); 8 to 9 clear change to the force stage (Revision 2); 9 to 10 clear change; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v11-learning-review.md`, `science_check` = `checks/p-y12-m5-v11-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -247,6 +273,8 @@ Kit gaps (for the v11 build brief; shared with v12 to v16):
 2. **Velocity circle.** Velocity arrows drawn from one point with their tips on a dashed circle of radius v (on the stage's velocity scale), a single arrow rotating in step with the object, and a violet trail on its tip.
 3. **Cut-string playback.** At a cue the string line breaks and the object continues along the tangent at its last velocity.
 
+Revision 3 (13 Nov 2026). Existing plates newly used on the attempt 2 card (already in this design's list): `phys-y11-car-top-blue-v1.png`, `phys-y11-car-top-yellow-v1.png`. New plate requests: none.
+
 ## Codex asset brief (Year 12 Physics M5 v11)
 
 No new plates. Codex confirms, on a session contact sheet at about 400 px wide on the paper and dark board backgrounds, that `phys-y11-car-top-v1.png` shows no occupants through its roof or windows, and records the car plate's centre point and nose direction, in plate pixels, for the circle stage. Append the hand-in to `status.md`.
@@ -263,6 +291,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested (closed car plate; the string breaks with no cutter).
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -310,3 +340,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (the crane plate exists).
 
 Counts: 6,266 to 6,274 characters (scene sum); about 561 s to about 554 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the car, the jib tip, the speed slider and the cut string are tied to the field motion engine.
+- Question cards: attempt 2's coded car outlines become the painted car plates; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,274 characters, unchanged; about 549 s (it was about 554 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

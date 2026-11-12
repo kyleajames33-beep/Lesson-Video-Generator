@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V15: Work in circular motion. Does the inward force do work in uniform circular motion? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,683 characters, 16 scenes, about 510 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v14's final frame.
 
@@ -63,6 +63,19 @@ Entry knowledge: acceleration at right angles to velocity (v11); the banked-bend
 Stops after: zero work by the inward force, step by step; constant kinetic energy and speed; constant total energy on a level circle; the vertical-circle contrast with one energy calculation. No loop thresholds or contact forces.
 Handoff: v16, how measurements can test F = mv²/r.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the car on the banked ring and the 1.26 MJ claim, scene 1 (about 25 s); (B) the sliding block with the angle control, scene 2 (about 29 s); (C) the bend with the step-by-step lap, scene 3 (about 28 s); (D) the energy-panel stage, scene 4 (about 33 s); (E) the velocity-circle stage, scene 5 (about 27 s); (F) the rear-view car on the bank with the energy bars, then the mistake, scenes 6 and 7 (about 50 s); (G) the vertical circle, scene 8 (about 36 s), then the calculation beside the frozen circle, scene 9 (about 35 s); (H) the two panels and the memory card, scene 10 (about 14 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 71 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The car's lap is a `central` run on the field motion engine (`field-motion.ts`, drawn with `FieldMotionView`). In scene 3 the running total of work is summed from the run's own force and displacement at each of the 24 steps, so it stays at zero because the force in the run is at right angles to every step. The block's angle control (scene 2) is exact arithmetic (W = Fs cos θ). The vertical circle (scenes 8 and 9) stays lesson-coded from energy conservation, because the engine has no string constraint.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *W*, *F*, *s*, *θ*, *K*, *U*, *m*, *v*, *g*, *h*, *r*. Paper background and handwritten headline face as the explainer house style.
@@ -122,27 +135,35 @@ Visual: board shows two small panels: the level car (force across the path only)
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A ball of mass 0.30 kg on a smooth horizontal table is attached to a light string and moves in a horizontal circle of radius 0.60 m at a constant speed of 4.0 m s⁻¹. (a) Calculate the tension in the string. (b) State the work done by the tension during one revolution. Justify your answer. (3 marks)" A small coded top-view diagram: a peg dot, a string "0.60 m", the ball and a tangent arrow "4.0 m s⁻¹". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The top-view diagram is the card's picture and is on screen from the first frame; the ball is the steel ball plate (`phys-y11-steel-ball-v1.png`, about 44 px). No tension arrow is drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > The tension is the only horizontal force, so it equals m v squared over r. That's zero point three zero times sixteen, over zero point six zero, which is eight point zero **newtons**. The work it does in a revolution is zero, because at every instant it's at right angles to the ball's **motion**. The classic slip is multiplying eight newtons by the circumference, and getting about thirty **joules**.
 
 Visual: card shrinks to the top; "smooth horizontal table", "constant speed" and "one revolution" underline. On "newtons" "F_T = mv²/r = 0.30 × 4.0² ÷ 0.60 = 8.0 N". On "motion" "W = Fs cos 90° = 0 J in every step, so 0 J per revolution (K stays ½ × 0.30 × 4.0² = 2.4 J)". On "joules" a chip "W = 8.0 × 2π × 0.60 = 30 J" fades in and is crossed (caption "F is never along the path"). "(a) 8.0 N; (b) 0 J" sits in a dark-ink framed box (52 px). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 0.30 kg | smooth horizontal table | r = 0.60 m | constant 4.0 m s⁻¹".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A zero point four zero kilogram stone on a zero point five zero metre string moves in a vertical circle. At the top, its speed is three point zero metres per second. Ignoring air resistance, calculate its speed at the bottom, and explain why this isn't uniform circular motion. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A stone of mass 0.40 kg on a light string of length 0.50 m moves in a vertical circle. At the top of the circle its speed is 3.0 m s⁻¹. Air resistance is negligible. (a) Calculate the speed of the stone at the bottom of the circle. (b) Explain why the stone is not undergoing uniform circular motion. (3 marks)" A small coded diagram: a pivot, a dashed vertical circle, "0.50 m", the stone at the top with "3.0 m s⁻¹". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The vertical-circle diagram is the card's picture and is on screen from the first frame. The stone is a plain exam-style dot tagged "stone"; it is drawn only at the top, with no speed at the bottom.
+
 ### 14. feedback 2 (brief)
 > From the top to the bottom, the stone drops two radii, one point zero metre. So v squared at the bottom is nine, plus two times nine point eight times one point zero, which is twenty-eight point six, and v is about five point three five metres per **second**. Gravity has a part along the path, so it does work and the speed changes. That's why the motion isn't **uniform**. The slip is saying the speed stays at three point zero, because the tension does no work. Gravity still **does**.
 
 Visual: card shrinks to the top; "vertical circle", "at the top" and "Air resistance is negligible" underline. On "second" "h = 2r = 1.0 m; v² = 3.0² + 2 × 9.8 × 1.0 = 28.6; v = 5.35 m s⁻¹". On "uniform" "(b) the weight has a component along the path (except at the top and bottom), so gravity does work and the speed changes". On "does" a chip "v = 3.0 m s⁻¹ (tension does no work)" fades in and is crossed (caption "gravity does work"). "v = 5.35 m s⁻¹" sits in a dark-ink framed box (52 px). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 0.40 kg | string 0.50 m, vertical circle | 3.0 m s⁻¹ at the top | air resistance negligible".
 
 ### 15. handoff
 > So F equals m v squared over r tells us the inward force a circle needs, and that force does no work. But how do we know the formula is right? We can test it. Here's a rubber bung on a string. The string runs down through a short glass tube, to some hanging masses. The hanging weight keeps the string tight, and pulls the bung **inwards**. So can measurements of this bung test F equals m v squared over **r**?
 
 Visual: clear change to a lab scene: a retort stand on a bench line, a clamp holding a short glass tube upright (`y12p-tube-clamp-v1.png`, new, requested in v16), a coded string from the top of the tube out to the rubber bung (`chemistry/m5x-stopper-v1.png`, reused) and down through the tube to a mass hanger with slotted masses (`phys-y11-mass-hanger-v1.png`, `phys-y11-slotted-masses-v1.png`, reused); a paper-clip marker (`y12p-paper-clip-v1.png`, new clean plate, shared request with v16; small) on the string just below the tube. On "rubber bung" the bung begins to go round a dashed horizontal circle above the tube. On "hanging masses" the hanger glows. On "inwards" an amber arrow along the string at the bung, towards the tube, and an amber "Mg" arrow down at the hanger. On "r" a chip "F = mv²/r ?" and the chip "Next: how can measurements test the circular-force relationship?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -208,6 +229,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,683 characters**, 16 scenes. Characters per scene (1 to 16): 329, 387, 378, 443, 361, 445, 230, 475, 460, 184, 338, 390, 309, 476, 403, 75. At 13.3 characters per second the speech is about 427 s; add about 3 s for the prediction countdown, about 3 s for the angle control in scene 2, about 4 s for the step-by-step lap in scene 3, about 3 s for one vertical lap in scene 8, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 83 s of holds and countdowns): **about 510 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9 (open decision 1); scene 6's engine sentence; scene 5's velocity-circle sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,683 characters). The notes scene is 45 s in all, so the estimate is about 505 s (it was about 510 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v14's final frame (designed in this wave, `phys-y12-m5-v14.md`): paper background; a coded top view of the banked bend: grey road ring shaded darker towards its inner edge, a navy centre dot; the blue top-view car stopped at the 3 o'clock position, nose up the page; a teal velocity arrow along the tangent; an amber arrow to the centre "F_net = 2.50 × 10³ N"; a right-angle mark; a lap counter; a readout "speed: 12.9 m s⁻¹ (constant)"; a chip "W = ?"; heading "How does a banked road reduce reliance on friction?"; chip "Next: does the inward force do work in uniform circular motion?". Scene 1 sets the car moving; the heading changes in scene 3 (on "zero") to "Does the inward force do work in uniform circular motion?"; the "W = ?" chip is replaced by the scene 1 chips.
@@ -225,6 +248,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, what-work-means, s
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: angle control with live W readout, step-by-step lap (v11 circle stage), energy panel with live readouts, velocity circle (v11), vertical circle (reconfigured `m5-vertical-loop`), apparatus build, `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change to the block; 2 to 3 camera change back to the bend; 3 to 4 camera push to the energy-panel stage; 4 to 5 camera change to the velocity-circle stage; 5 to 6 clear change to the rear-view car with the energy panel; 6 to 7 clear change to the mistake stage (Revision 2); 7 to 8 clear change to the vertical circle; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v15-learning-review.md`, `science_check` = `checks/p-y12-m5-v15-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -245,6 +270,8 @@ Kit gaps (for the v15 build brief):
 1. **Step-by-step lap.** On the v11 circle stage, n tangent displacement steps (n = 24, then 72) drawn in sequence with an inward force arrow, a right-angle mark and a "W = 0" tick at each, and a running-total readout.
 2. **Energy panel.** K (orange) and U (violet) bars and a navy total line driven by the stage's model (level car: all flat; vertical circle: from `verticalLoopAt` reconfigured to g = 9.8, r = 0.80 m, m = 0.50 kg, v_top = 4.0 m s⁻¹).
 3. **Weight split.** At a chosen point on the vertical circle, mg resolved into along-path and along-string parts on the same force scale.
+
+Revision 3 (13 Nov 2026). The steel ball plate is also used on the attempt 1 card. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the field motion engine has no constraint (a body held on a string or a track), so the vertical circle cannot run on it.
 
 ## Codex asset brief (Year 12 Physics M5 v15)
 
@@ -267,6 +294,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Confirm the vertical-circle scenes are labelled as beyond uniform circular motion on screen and in narration.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -313,3 +342,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: `y12p-paper-clip-v1.png` (shared with v16; one plate).
 
 Counts: 5,672 to 5,683 characters (scene sum); about 517 s to about 510 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the lap and its running work total are tied to the field motion engine; the vertical circle stays lesson-coded (kit gap recorded).
+- Question cards: the exam-style diagrams are confirmed as the pictures, with the steel ball plate on attempt 1; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: the field motion engine has no constraint (a body held on a string or a track), so the vertical circle cannot run on it.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,683 characters, unchanged; about 505 s (it was about 510 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

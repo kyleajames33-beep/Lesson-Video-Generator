@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V07: Two angles, one target. Why can two launch angles reach the same target? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,705 characters, 15 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v06's final frame.
 
@@ -63,6 +63,21 @@ Entry knowledge: R = u² sin 2θ ÷ g on level ground and its conditions; resolv
 Stops after: both angles, the sine-graph reason, the component-swap reason, both flight times, the 45° maximum and "two, one or none". No moving targets.
 Handoff: v08, testing the horizontal-launch model with primary measurements.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the two launchers, the target and the one-clock launch, scenes 1 and 2 (about 52 s); (B) the full-width calculation layout: the speed check, then the angle, scenes 3 and 4 (about 71 s; the stage strip joins at scene 4); (C) the sine graph at full width, scene 5 (about 50 s); (D) the two launch triangles at full width, scene 6 (about 40 s); (E) the two-row ledger with both flights replaying under it, scene 7 (about 34 s); (F) the stage with the launchers and the target slider, scene 8 (about 39 s); (G) the reflected triangles and the memory card, scene 9 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 71 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The flights run on the field motion engine (`field-motion.ts`, a `uniform` field with ax = 0 and ay = −9.8) and are drawn with `FieldMotionView` (trail, strobe images, velocity arrows with components, ground line) on one `useMotionTime` clock. Every clock value, strobe position and readout is read from `stateAt` of that run, so the picture and the numbers cannot disagree. Two runs at 30 m s⁻¹ (25.8° and 64.2°) share the clock in scenes 2 and 7, so "2.67 s" and "5.51 s" are the two landing times. In scene 8 the two angles for each target distance come from sin 2θ = Rg ÷ u² (exact arithmetic, lesson-coded), and each path and time readout is the run at that angle.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The calculator is a readout chip.** The "coded calculator readout" in scenes 4 and 8 is a plain readout chip (dark-ink border, 44 px digits), not a drawing of a calculator.
+- **The target is a marker.** The target "flag" is a plain exam-style marker (an upright line with a small triangle), as in the join frame from last time.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *u*, *v*, *a*, *s*, *t*, *R*, *θ* with subscripts *x* and *y*. Paper background and handwritten headline face as the explainer house style.
@@ -117,27 +132,35 @@ Visual: board clears to the two overlaid triangles reflected in the 45° line, w
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A projectile is launched at 14.0 m s⁻¹ from level ground and lands at the same height. Neglect air resistance and take g = 9.8 m s⁻². Find the two launch angles that give a horizontal range of 10.0 m. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no graph, no triangles).
 
+Upgrade (Revision 3): From the first frame the card's right side carries a picture of the set-up: a level ground line, the steel ball plate (`phys-y11-steel-ball-v1.png`, about 40 px) at the launch point, a target marker and a teal bracket "10.0 m" between them, with a chip "14.0 m s⁻¹". No launch arrow and no barrel are drawn, because their angle is the answer. No path.
+
 ### 11. feedback 1 (brief)
 > sin two theta equals ten times nine point eight over fourteen squared, which is exactly zero point **five**. So two theta is thirty degrees or one hundred and fifty degrees, and theta is fifteen degrees or seventy-five **degrees**. They add to ninety, as they should. The classic slip is stopping at fifteen degrees, the only angle the calculator **gives**.
 
 Visual: card shrinks to the top; "two launch angles" and "same height" underline. `AlignedAlgebra`: "sin 2θ = 10.0 × 9.8 ÷ 14.0² = 98 ÷ 196 = 0.500" on "five"; "2θ = 30° or 180° − 30° = 150°" and "θ = 15° or 75°" on "degrees"; a tick chip "15° + 75° = 90°". Rows 44 px; "θ = 15° or 75°" framed. On "gives" a chip "θ = 15° only" fades in and is crossed (caption "sine takes 0.5 twice"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "u = 14.0 m s⁻¹ | level ground, same height | R = 10.0 m | g = 9.8 m s⁻²".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A target is twenty point zero metres away, at the same height as the launch point. Neglecting air resistance, find the minimum launch speed that can reach it, and the launch angle needed. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A target is 20.0 m away horizontally, at the same height as the launch point. Neglect air resistance and take g = 9.8 m s⁻². Calculate the minimum launch speed that can reach the target, and state the launch angle required. Justify your answer. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the same plain set-up: the ground line, the steel ball plate at the launch point, a target marker and a teal bracket "20.0 m". No launch arrow, no speed and no path.
+
 ### 13. feedback 2 (brief)
 > The range is biggest when sin two theta is one, at forty-five **degrees**. So the minimum speed satisfies R equals u squared over g, and u is the square root of twenty times nine point eight, the square root of one hundred and ninety-six, exactly fourteen point zero metres per **second**. Any slower, and the sine would have to be bigger than one. The slip is to aim at ninety degrees because it makes sin theta biggest. Straight up has no range at all. It's sin two theta that **matters**.
 
 Visual: card shrinks to the top; "minimum" and "same height" underline. `AlignedAlgebra`: on "degrees" "sin 2θ = 1 when 2θ = 90°, θ = 45°"; "R = u² ÷ g, so u = √(Rg) = √(20.0 × 9.8) = √196 = 14.0 m s⁻¹" on "second". Rows 44 px; "14.0 m s⁻¹ at 45°" framed. On "matters" a chip "θ = 90° makes sin θ = 1" fades in and is crossed (caption "θ = 90° gives sin 2θ = 0: no range"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "target 20.0 m away, same height | g = 9.8 m s⁻² | find the minimum speed and its angle".
 
 ### 14. handoff
 > Every prediction so far has come from a model, with no air resistance and a constant g. But how do we know the model is any good? We test it. Next time, a ball rolls down a ramp, flies off it horizontally and lands on the bench, and we'll see how our own measurements can put the **model** to the test.
 
 Visual: board clears (camera change) to a lab scene: a coded bench top across the stage, the launch ramp plate (`y12p-launch-ramp-v1.png`, delivered in brief 187, shared with v08) clamped by the boss (`phys-y11-boss-crossbar-v1.png`) to the retort stand (`phys-y11-retort-stand-v1.png`) standing on the bench at the left, its curved track ending in a short horizontal exit 0.40 m above the bench top; a steel ball (`phys-y11-steel-ball-v1.png`, 40 px) at the top of the track. On "rolls down a ramp" the ball rolls down the track and leaves the exit horizontally (v01's strobe dots, dimmer), landing on a white sheet (`phys-y11-paper-sheet-flat-v1.png`) lying on the bench top. On "model" a dashed orange "predicted" landing tick and a second, empty ink tick "measured: ?" appear on the sheet, with a teal bracket "R" from the point below the exit, and a chip writes "Next: how can primary measurements test the horizontal-launch model?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 50 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -210,6 +233,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **5,705 characters**, 15 scenes; narration unchanged from Revision 1, whose stated 5,719 joined the scenes with spaces (scene sum 5,705). Characters per scene (1 to 15): 356, 328, 523, 422, 659, 528, 457, 520, 273, 223, 345, 219, 479, 298, 75. At 13.3 characters per second the speech is about 429 s; add about 3 s for the prediction countdown, about 6 s for the real-time flights in scene 2 (mostly under the speech; 3 s extra), 3 s for the target slide in scene 8, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 80 s of holds and countdowns): **about 509 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 3's "Remember its conditions" sentence (keep the tag); scene 5's warning sentences (keep the crossed chip); scene 13's "Straight up" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,705 characters). The notes scene is 45 s in all, so the estimate is about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v06's final frame (designed in this wave, `phys-y12-m5-v06.md`): paper background; level coded ground line (12 px per metre); launch point at the left with the orange "u = 30 m s⁻¹" arrow and "θ = ?" arc; target flag 72 m away with a teal "72 m" bracket; two dashed orange paths (25.8° and 64.2° shapes) with "θ = ?" at each launch; ledger and clock small at the top right; heading "Will a projectile clear a wall at a known horizontal position?" and the chip "Next: why can two launch angles reach the same target?". Scene 1 keeps the stage and replaces the chip with the hook's peak brackets; the heading changes in scene 2.
@@ -228,6 +253,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v07-learning-review.md`, `science_check` = `checks/p-y12-m5-v07-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -245,6 +272,8 @@ Kit gaps (for the v07 build brief):
 2. **Component triangle swap.** Two right triangles with teal and blue legs and orange hypotenuse, which slide together and reflect in a 45° line while their leg readouts exchange.
 3. **Sine graph with level line.** `DataGraph` with a horizontal line at a set value and crossing markers with readouts and symmetric brackets to 90°.
 
+Revision 3 (13 Nov 2026). The steel ball plate is also used on both attempt cards. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): a movable-target solver (two angles for a given range) is lesson arithmetic on top of the field motion runs; no engine option exists for it.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -258,6 +287,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 and 2 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -298,3 +329,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,705 characters (narration unchanged; Revision 1 stated 5,719 by the joined convention); about 520 s to about 509 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the paired flights and the target slider are tied to the field motion engine.
+- Scenes 4 and 8: the calculator is a plain readout chip. The target flag is a plain marker.
+- Question cards: both attempts gain a set-up picture with no launch arrow (its angle is the answer); both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: a movable-target solver (two angles for a given range) is lesson arithmetic on top of the field motion runs; no engine option exists for it.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,705 characters, unchanged; about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The attempt cards show no launcher, because any barrel angle would give or contradict the answer.

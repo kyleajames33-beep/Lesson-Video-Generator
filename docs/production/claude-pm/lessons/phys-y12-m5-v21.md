@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V21: Gravitational potential energy. Why does gravitational potential energy use a zero at infinity? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,783 characters (scene sum; Revision 1 stated 5,681 by the joined convention), 16 scenes, about 518 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -68,6 +68,19 @@ Entry knowledge: Year 11 work and mgh; v17; v19.
 Stops after: U = −GMm/r from accumulated work; zero at infinity; meaning of the sign; ΔU between radii; mgh as the small-height limit. No kinetic or total orbital energy.
 Handoff: v22, why a higher circular orbit has lower speed but greater total energy.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the radial climb from the painted Earth, scenes 1 and 2 (about 60 s); (B) the work-area builder, scene 3 (about 39 s); (C) the pull back along the r axis with the end-radius drag, scene 4 (about 33 s); (D) the energy well graph, scenes 5 and 6 (about 58 s); (E) the full-width algebra with the graph as a thumbnail, scene 7 (about 30 s); (F) the full-width working, scene 8 (about 34 s), then a new working panel, scene 9 (about 36 s); (G) the well cross-section and the memory card, scene 10 (about 15 s); question and feedback cards; the handoff; the notes board. The force graph is on screen through scenes 3 and 4 (about 72 s), with the axis compressing at about 39 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine run is needed: nothing moves under a force. The g readout in scene 2, the work area and its end-radius drag in scenes 3 and 4, and the well graph are exact arithmetic on GMm/r² and GMm/r, lesson-coded, with each readout computed from the slider position. The two orbits in the handoff are `central` runs on the field motion engine, as in the orbit videos.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *U*, *r*, *G*, *M*, *m*, *h*, *g*. Paper background and handwritten headline face as the explainer house style.
@@ -127,27 +140,35 @@ Visual: board clears to the well cross-section with the U curve as its wall and 
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with a small Earth outline and two dashed circles (no radii written) beside it, worded as printed: "A 500 kg satellite moves from a circular orbit of radius 7.0 × 10⁶ m to a circular orbit of radius 9.0 × 10⁶ m around Earth. Calculate the change in its gravitational potential energy. (G = 6.67 × 10⁻¹¹ N m² kg⁻², M_E = 6.0 × 10²⁴ kg)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the painted Earth plate (`phys-y11-earth-v1.png`, about 200 px across) with the two dashed circles and the satellite plate (about 40 px) on the inner one, on screen from the first frame. No radii, no energy bars and no arrows are drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > Use big G M m times one over r one minus one over r two. Big G M m is two point zero zero one times ten to the seventeen, and the bracket is about three point one seven times ten to the minus eight. So the change is about plus six point three five times ten to the nine **joules**, an increase, because it moved outwards. The classic slip is subtracting the wrong way, and getting a negative **answer**.
 
 Visual: card shrinks to the top; "change" underlines. Rows (44 px): "GMm = 6.67 × 10⁻¹¹ × 6.0 × 10²⁴ × 500 = 2.001 × 10¹⁷", "1/r₁ − 1/r₂ = 1.4286 × 10⁻⁷ − 1.1111 × 10⁻⁷ = 3.175 × 10⁻⁸ m⁻¹"; on "joules" "ΔU = +6.35 × 10⁹ J" in a dark-ink frame (52 px). On "answer" a chip "ΔU = −6.35 × 10⁹ J" fades in and is crossed (caption "outwards: U increases"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 500 kg | r₁ = 7.0 × 10⁶ m, r₂ = 9.0 × 10⁶ m | G = 6.67 × 10⁻¹¹ N m² kg⁻² | M_E = 6.0 × 10²⁴ kg".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A space probe's gravitational potential energy changes from minus six point zero times ten to the ten joules, to minus four point zero times ten to the ten joules. Did it move closer to the planet, or further away? Calculate the change, and explain why both values are negative. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "The gravitational potential energy of a space probe changes from −6.0 × 10¹⁰ J to −4.0 × 10¹⁰ J. (a) Did the probe move closer to the planet or further from it? (b) Calculate the change in gravitational potential energy. (c) Explain why both values are negative." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted spacecraft (`y12p-spacecraft-v1.png`, about 260 px wide) alone, untagged. No planet, no path and no arrow are drawn, so the picture cannot show whether the probe moved closer or further away.
+
 ### 14. feedback 2 (brief)
 > The change is final minus initial: minus four, minus minus six, so plus two point zero times ten to the ten **joules**. U went up, towards zero, so the probe moved further away. Both values are negative because the zero is at infinity, and the probe is closer than that. The slip is reading minus four as smaller than minus six, and saying it moved **in**.
 
 Visual: card shrinks to the top. Rows (44 px): on "joules" "ΔU = (−4.0 × 10¹⁰) − (−6.0 × 10¹⁰) = +2.0 × 10¹⁰ J" in a dark-ink frame (52 px); "(a) U increased (towards 0): further away"; "(c) U = 0 at infinity; any finite r gives U < 0". A mini well graph shows the marker moving up the wall. On "in" a chip "−4 < −6, so it moved closer" fades in and is crossed. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "U changes from −6.0 × 10¹⁰ J to −4.0 × 10¹⁰ J".
 
 ### 15. handoff
 > A satellite in orbit doesn't just have potential energy. It's moving too, so it has kinetic energy. In a higher orbit its potential energy is greater, but we know it moves more slowly. So what happens to its total energy? That's next: why a higher orbit has lower speed, but greater total **energy**.
 
 Visual: board clears to the gravity stage: Earth plate, two circular orbits (r and 2r) with a satellite plate on each. Beside each satellite two bars: violet "U" pointing down from a zero line (the outer one half as deep) and an orange "K" bar pointing up with "?"; a third outlined bar "total = ?". On "energy" a chip writes "Next: why does a higher circular orbit have lower speed but greater total energy?". Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -218,6 +239,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,681): **5,783 characters**, 16 scenes. Characters per scene (1 to 16): 314, 477, 516, 444, 403, 378, 402, 447, 480, 206, 292, 395, 310, 348, 296, 75. At 13.3 characters per second the speech is about 435 s; add about 3 s for the prediction countdown, about 3 s for the strip refinement in scene 3, about 3 s for the end-radius drag in scene 4, about 2 s for the satellite's two rides in scene 2, about 2 s for the height slider in scene 9, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 83 s of holds and countdowns): **about 518 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's last sentence (the analogy); scene 7's potential sentence (keep the chip).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,783 characters). The notes scene is 45 s in all, so the estimate is about 513 s (it was about 518 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v20's final frame (`phys-y12-m5-v20.md`): paper background; the Sun plate at the left focus of Halley's long, thin ellipse; the comet plate at aphelion; a dashed line from the comet off the right edge to "∞" with the chip "U = ?"; an empty energy bar "gravitational energy?"; heading "How do Kepler's laws describe circular and elliptical orbits?"; chip "Next: why does gravitational potential energy use a zero at infinity?". Scene 1 slides the Sun and comet away and swings the dashed line to rise from Earth; the heading changes in scene 2.
@@ -236,6 +259,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v21-learning-review.md`, `checks/p-y12-m5-v21-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -248,6 +273,8 @@ Need (new plates): none.
 Coded: radial line, g arrows, force arrows, force curve and strips, area bar, sliders and readouts, energy well graph and cross-section, brackets, algebra, tables, chips, cards, countdowns, notes board.
 
 Kit gaps: 6. **Work-area builder and energy well graph** (F = GMm/r² curve with refining strips and a running area, a live end-radius drag with an area-fraction bar against GMm/R; U = −GMm/r with the zero line at the top, a sliding marker with live r and U, ΔU brackets and a matching well cross-section).
+
+Revision 3 (13 Nov 2026). Existing plate newly used on the attempt 2 card (confirmed by file listing, not re-inspected): `y12p-spacecraft-v1.png`. The Earth and satellite plates are also used on the attempt 1 card. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v21)
 
@@ -267,6 +294,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm `y12p-spacecraft-v1.png` shows no planet or exhaust that would suggest a direction of travel.
 
 ## YouTube metadata (draft)
 
@@ -311,3 +340,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,681 (joined) or 5,666 (scene sum) to 5,783 characters (scene sum); about 518 s to about 518 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the work area and the well graph are exact arithmetic (no run is needed).
+- Question cards: attempt 1's Earth outline becomes the Earth plate; attempt 2 gains the spacecraft plate alone; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,783 characters, unchanged; about 513 s (it was about 518 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V01: Projectile motion as two motions. Why can one projectile be analysed as two motions with one clock? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,314 characters, 17 scenes, about 561 s, counted by script with the build parser rules (see "Narration length estimate"). First video of the whole Year 12 Physics course: cold open on a concrete case, no course title card.
 
@@ -70,6 +70,20 @@ Entry knowledge (Year 11): displacement, velocity and acceleration as vectors; c
 Stops after: projectile and model assumptions; horizontal a_x = 0 and constant v_x; vertical a_y = −9.8 m s⁻² with u_y = 0 for a horizontal launch; the shared clock; one horizontal-launch calculation; the resultant and parabola qualitatively. No launch at an angle.
 Handoff: v02, how a launch angle sets the two initial velocity components.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the bench, the demonstrator and the two balls: question, release and slow replay, scenes 1 and 2 (about 48 s); (B) the same stage with the Moon inset as the change, scene 3 (about 40 s; the inset arrives about 15 s in, so no picture holds past about 65 s); (C) the full-width floor strip and the teal shadow, scene 4 (about 34 s); (D) the bench-edge scale and the blue shadow beside ball A, scene 5 (about 39 s); (E) the two-column ledger with its clock, scene 6 (about 30 s); (F) the calculation layout, scene 7 (about 36 s), then the launch-speed slider on the same layout, scene 8 (about 31 s); (G) the full stage with velocity arrows, then the mistake, scenes 9 and 10 (about 59 s); (H) the ledger alone as the memory card, scene 11 (about 22 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The flights run on the field motion engine (`field-motion.ts`, a `uniform` field with ax = 0 and ay = −9.8) and are drawn with `FieldMotionView` (trail, strobe images, velocity arrows with components, ground line) on one `useMotionTime` clock. Every clock value, strobe position, arrow length and readout is read from `stateAt` of that run, so the picture and the numbers cannot disagree. This replaces the physics of v01's kit gap 1 (the strobe projectile stage). Two runs share the clock: ball A (launched at 0 m s⁻¹) and ball B (2.0 m s⁻¹ sideways), both from 1.2 m. The teal floor shadow is B's x and the blue edge shadow is B's y from the same `stateAt`. The scene 8 slider is a set of runs from 1.0 to 4.0 m s⁻¹; its "t" readout is each run's landing time, which is why it never changes. The two-column ledger and its clock stay lesson components.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Steel balls are the plate.** Every ball, including the one in the scene 3 inset and on the attempt cards, is `phys-y11-steel-ball-v1.png`. The bench edge and the cliff stay plain exam-style outlines.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *u*, *v*, *a*, *s*, *t* with subscripts *x* and *y*. Paper background and handwritten headline face as the explainer house style.
@@ -88,6 +102,8 @@ Visual: on "Let's release it" the slider layer snaps sideways (it translates abo
 > Once B leaves the rod, nothing pushes it forward. An object moving under gravity alone is called a projectile, and its path is its **trajectory**. We'll make two assumptions. First, zero air resistance, the push of the air on a moving object. A feather fails that **badly**, but on the Moon, with no air, a hammer and a feather dropped together landed **together**. For a steel ball over a short drop, air resistance is small enough to ignore. Second, gravity's acceleration is constant, nine point eight metres per second squared, **downwards**.
 
 Visual: camera continue; the scene 2 strobe path stays faint on the left. On "trajectory" B's path draws as a thin orange line through its strobe images and a tag writes "trajectory: the path"; a chip "projectile: moves under gravity alone after launch". The right column writes "Model" with two empty tick boxes. On "badly" an inset panel slides in at the upper right: the feather plate (`phys-y11-moon-feather-v1.png`, scaled uniformly) drifting and rocking slowly down beside a coded steel ball that drops straight past it, tag "air". On "together" the inset changes to lunar ground (`phys-y11-moon-ground-v1.png`) with the hammer (`phys-y11-moon-hammer-v1.png`) and the feather falling side by side and landing at the same instant, tag "Moon: no air"; no figure, no lander. The inset shrinks away; box 1 ticks "zero air resistance". On "downwards" box 2 ticks "constant vertical acceleration: g = 9.8 m s⁻², down", and a violet arrow "g" draws downward beside B's path with a violet hand tag "gravity alone"; an ink pen ring circles the two ticked boxes.
+
+Upgrade (Revision 3): The ball that drops past the feather in the inset is the steel ball plate (about 36 px), not a coded disc.
 
 ### 4. horizontal: no force, constant velocity
 > Start with the horizontal direction. What forces act sideways on the ball in the air? With no air resistance, **none**. Its weight acts straight down. No horizontal force means no horizontal acceleration, so by Newton's first law, the horizontal velocity can't change. B keeps moving sideways at two metres per second for the whole **flight**, the same twenty **centimetres** between every pair of flashes. So horizontal displacement is horizontal velocity times **time**.
@@ -134,27 +150,35 @@ Visual: board clears to the ledger alone: teal column "horizontal: a_x = 0, v_x 
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "Two small balls, A and B, start 1.25 m above level ground at the same instant. A is dropped from rest. B is launched horizontally at 3.0 m s⁻¹. Neglect air resistance and take g = 9.8 m s⁻². (a) Calculate the time each ball takes to reach the ground. (b) Calculate the horizontal distance from the point directly below B's start to where B lands." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no path, no ledger).
 
+Upgrade (Revision 3): From the first frame the card's right side carries a picture of the set-up: a plain bench-edge outline above a ground line, the two steel ball plates side by side at the edge with chips "A" and "B", a navy height bracket "1.25 m" and a teal arrow "3.0 m s⁻¹" at B. No path, no landing mark and no clock: it shows only what the card states. The ledger is hidden.
+
 ### 13. feedback 1 (brief)
 > Both balls start with zero vertical velocity and fall one point two five metres, so minus one point two five equals minus four point nine t squared, and t is about zero point five one **seconds** for each. B's horizontal distance is three point zero times that time, about one point five **metres**. The classic slip is giving B a longer time because it travels further. Its sideways motion doesn't change its **fall**.
 
 Visual: card shrinks to the top; "same instant", "dropped from rest" and "horizontally" underline in the card as they are used. The ledger returns small: blue column "s_y = −1.25 m, u_y = 0, a_y = −9.8 m s⁻²"; row "−1.25 = −4.9t², t = √(1.25 ÷ 4.9) = 0.5051 s ≈ 0.51 s (both)" on "seconds". On "metres" the time crosses to the teal column: "s_x = 3.0 × 0.5051 = 1.515 m ≈ 1.5 m". Rows 44 px; "0.51 s (both)" and "1.5 m" framed in dark-ink boxes. On "fall" a chip "B takes longer: it travels further" fades in and is crossed (caption "fall time is set vertically"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "A and B: 1.25 m above level ground, same instant | A: dropped from rest | B: 3.0 m s⁻¹ horizontally | g = 9.8 m s⁻²".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A ball is launched horizontally from the top of a cliff. Near the end of its flight, it's travelling steeply downwards, so a student claims its horizontal velocity must have decreased. Using the forces on the ball, explain whether the claim is correct when air resistance is neglected. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A ball is launched horizontally from the top of a cliff. Near the end of its flight the ball is moving steeply downwards. A student claims that the ball's horizontal velocity must have decreased during the flight. With reference to the forces acting on the ball, explain whether the student's claim is correct. Assume air resistance is negligible. (3 marks)" A small coded HSC-style cliff outline with a steel ball at its top edge sits beside the card; no path is drawn. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The ball on the cliff outline is the steel ball plate (about 40 px). The picture is on screen from the first frame; no path and no arrows.
+
 ### 15. feedback 2 (brief)
 > The claim is wrong in this model. The only force is the ball's weight, which acts straight down, so there's no horizontal force and no horizontal **acceleration**. The horizontal velocity keeps its launch value. The path is steeper because the vertical component has **grown**, not because the horizontal one shrank. Saying gravity slows it sideways is the slip to **avoid**.
 
 Visual: card shrinks to the top; "forces" and "air resistance is negligible" underline. Beside the cliff outline a short strobe path draws with one amber weight arrow "weight (down only)". On "acceleration" rows "F_x = 0, so a_x = 0, so v_x = u_x". On "grown" two images at start and end show equal teal arrows and a short versus long blue arrow; row "steeper: v_y grew; v_x unchanged", framed in a dark-ink box with "claim incorrect". On "avoid" a chip "gravity slows it sideways" fades in and is crossed (caption "gravity has no sideways part"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "launched horizontally from a cliff | air resistance negligible | claim: the horizontal velocity decreased".
 
 ### 16. handoff
 > So a projectile is two motions with one clock. Ball B started with its velocity pointing straight sideways. But what if the launcher points upwards at an angle? Then the launch velocity has a horizontal part and a vertical part, and next time we'll see how the angle splits it into **two**.
 
 Visual: board clears to the bench edge with B at its launch point (the scene 1 frame, demonstrator and A removed), the ledger small at the top right. B's teal launch arrow "u = 2.0 m s⁻¹, u_y = 0" sits horizontal. On "at an angle" the arrow recolours orange and tilts smoothly up to 35° (no angle value shown), labelled "u" with a small angle arc "θ" at its tail from a dashed horizontal reference line. On "two" a dashed teal outline along the horizontal and a dashed blue outline up the vertical draw from the tail, forming the right triangle, each with "?" ("u_x = ?", "u_y = ?"), and a chip writes "Next: how does the launch angle set u_x and u_y?". Hold about 2 seconds. The earlier hand tags are gone; the frame is unchanged from Revision 1, so the v02 opening still matches. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -221,6 +245,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **6,314 characters**, 17 scenes. Revision 1 stated 6,323 (the scenes joined with spaces); its scene sum was 6,307. The only narration changes are "spring arm" to "spring-loaded rod" (scene 1) and "the arm" to "the rod" (scene 3), for the new mechanism. Characters per scene (1 to 17): 308, 338, 530, 456, 524, 403, 475, 414, 428, 353, 292, 345, 407, 317, 363, 286, 75. At 13.3 characters per second the speech is about 475 s; add about 3 s for the prediction countdown, about 6 s for the real-time and slow-motion replay in scene 2 (mostly under the speech), about 4 s of settling for the Moon inset and the second launch in scene 8, about 2 s for the scene 8 slider sweep, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 86 s of holds and countdowns): **about 561 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 3's feather sentence (keep the Moon inset); scene 8's last sentence (keep the labels); scene 11's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,314 characters). The notes scene is 45 s in all, so the estimate is about 556 s (it was about 561 s; the notes hold falls from 50 s to 45 s).
+
 ## Final frame
 
 The last explained frame (end of scene 16, before the key-notes board): paper background; the coded bench top at the left ending in its dark edge line at x = 300 px, and the coded floor line at y = 900 px; ball B (`phys-y11-steel-ball-v1.png`, 40 px) at the launch point on the bench edge; no demonstrator, no ball A, no strobe images. From B's centre an orange launch arrow "u" points up and to the right at 35° above a dashed grey horizontal reference line, with a small angle arc "θ" at its tail (no numeric angle shown). From the tail, a dashed teal outline runs horizontally to below the arrow's tip, "u_x = ?", and a dashed blue outline rises from there to the tip, "u_y = ?", completing a right triangle. The two-column ledger sits small at the top right (teal "horizontal (x)", blue "vertical (y)", the clock between them). Heading top-left unchanged ("Why can one projectile be analysed as two motions with one clock?"); a chip below the triangle reads "Next: how does the launch angle set u_x and u_y?". v02 opens on this frame.
@@ -234,6 +260,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, reveal, model, hor
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`: the learner reads the worded question and works during the countdown) and key-notes (`hold`: the learner copies five short notes). Scene 1 is `explain` with a 3 s prediction countdown at its end. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: strobe projectile stage (kit gap 1), two-column ledger (kit gap 2), `AlignedAlgebra`, `NumberTicker` for the clock, `ScribbleCircle`, `PenArrow`, path draw-on, `Countdown`, `CameraStage` push and pull. Transitions (`pickTransition`): 1 to 2 camera continue (same bench); 2 to 3 camera continue (the path stays faint); 3 to 4 to 5 camera continue (same stage, the ledger builds); 5 to 6 camera pull back to the ledger; 6 to 7 clear change to the calculation layout; 7 to 8 camera continue; 8 to 9 camera change back to the stage; 9 to 10 camera continue; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen), key-notes (quiet notes hold, about 50 s). Review evidence paths for the LESSONS entry: `learning_review` = `checks/p-y12-m5-v01-learning-review.md`, `science_check` = `checks/p-y12-m5-v01-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -250,6 +278,8 @@ Coded: bench top and edge, floor, height scale, strobe images, shadows, guide li
 Kit gaps (for the v01 build brief; shared with v02 to v05):
 1. **Strobe projectile stage.** Extends `MovingProjectile` (`src/explainer/physics/projectile/components.tsx`) with a configurable model (u, θ, launch height, g = 9.8, equal pixel scales on both axes), physical time with a slow-motion factor, strobe images at a set Δt, a teal floor shadow and a blue vertical-scale shadow, an optional paired dropped ball, per-image component arrows (teal, blue) and resultant (orange) on one velocity scale, guide lines, and a live clock readout that other parts can read. Every readout comes from the same model as the drawing.
 2. **Two-column ledger with one clock.** Teal and blue columns with rows that write on cue, a centred clock with links to the "t" in each column, and a curved carry arrow from one column to the other through the clock.
+
+Revision 3 (13 Nov 2026). The steel ball plate is also used in the scene 3 inset and on both attempt cards. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): `FieldMotionView` draws one body and has no projection ("shadow") option, so the paired ball, the floor shadow and the edge shadow are lesson overlays read from `stateAt`. A shared shadow and second-body option would serve v01 to v08.
 
 ## Codex asset brief (Year 12 Physics M5 v01)
 
@@ -272,6 +302,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling in narration and screen text.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site note 1 under Decisions to root for `../site-corrections-phys-y12.md` (owner record only; the site is read-only here).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -315,3 +347,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: `y12p-drop-launch-base-v1.png` (rewritten) and `y12p-drop-launch-slider-v1.png` (new; replaces the arm layer).
 
 Counts: 6,314 characters (Revision 1 scene sum 6,307; stated 6,323 by the joined convention); about 569 s to about 561 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the strobe stage and the launch-speed slider are tied to the field motion engine.
+- Scene 3: the inset's coded steel ball becomes the plate.
+- Question cards: attempt 1 gains a picture of the two balls at the bench edge (givens only); both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: `FieldMotionView` draws one body and has no projection ("shadow") option, so the paired ball, the floor shadow and the edge shadow are lesson overlays read from `stateAt`. A shared shadow and second-body option would serve v01 to v08.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,314 characters, unchanged; about 556 s (it was about 561 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The bench top stays a coded outline (root decision 3 covers cliffs and walls; the bench is treated the same way).

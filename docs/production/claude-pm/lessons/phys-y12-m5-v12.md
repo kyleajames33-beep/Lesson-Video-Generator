@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V12: Cars on flat curves. Which force supplies the inward acceleration on a flat curve? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,878 characters, 16 scenes, about 523 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v11's final frame.
 
@@ -69,6 +69,19 @@ Entry knowledge: F_net = mv²/r towards the centre, the tangent exit, centripeta
 Stops after: the three forces and their balance; friction as the inward net force; f = mv²/r; required versus maximum friction; v_max = √(μ_s g r); mass independence; the wider path above the limit; "centripetal is a job". No conical pendulum, no banking.
 Handoff: v13, how string tension sustains a conical pendulum.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the car on the roundabout, scene 1 (about 24 s); (B) the rear view on the road cross-section, scene 2 (about 31 s); (C) the large top-view slip stage, scene 3 (about 39 s); (D) the push to the force equations beside the rear view, scene 4 (about 27 s); (E) the full-width working, scene 5 (about 32 s); (F) the slider stage with the needed and available bars, scene 6 (about 33 s); (G) the full-width working for the limiting speed, scene 7 (about 24 s); (H) the truck and the car, scene 8 (about 32 s); (I) the roundabout from above, past the limit, scene 9 (about 26 s); (J) the rear view with the mistake and the memory card, scene 10 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 39 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The top views run on the field motion engine (`field-motion.ts`, drawn with `FieldMotionView`). The car on the roundabout is a `central` run at its circular speed. In scene 3 the car that "carries straight on" is the same start with no force, so its tangent path is computed. In scene 9 the car is a `custom` field whose inward acceleration is capped at μ_s g: above v_max the capped pull gives the wider curve, tagged "model path" on screen. The needed and available bars and every readout in scenes 6 and 8 are exact arithmetic and stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *m*, *g*, *N*, *f*, *μ_s*, *v*, *r*, *v_max*. Paper background and handwritten headline face as the explainer house style.
@@ -118,6 +131,8 @@ Visual: camera change to the truck-and-car slider stage. On "a loaded truck and 
 
 Visual: camera change to the roundabout top view (circle stage). On "faster than v max" the car's speed readout ticks above "v_max"; the needed and available bars from scene 6 sit small at the top right with the needed bar overshooting. On "not as sharply" the car's path bends less than the ring; on "roundabout" its trail drifts across to the outer edge of the ring (illustrative). On "Nothing throws it outwards" a dashed outward arrow "outward force" fades in and is crossed. On "enough" the amber inward arrow on the car pulses, shorter than a dashed outline "mv²/r needed". Hand tags: teal "wider curve" on the trail, amber "too little inward force" by the short arrow, and an amber pen ring round the gap between the arrow and the dashed outline.
 
+Upgrade (Revision 3): The drifting trail carries a teal hand tag "model path" (30 px) beside "wider curve", because the curve comes from a capped inward force, not from measurements.
+
 ### 10. mistake and memory aid
 > A common mistake is drawing an extra arrow labelled centripetal force, next to the friction. That counts the same force **twice**. Here's a way to remember it. Centripetal is a job, not a force. Draw the real forces first, then ask which of them does the job of pointing to the **centre**.
 
@@ -128,27 +143,35 @@ Visual: clear change to the rear-view car with its three forces. On "an extra ar
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), with a small coded top-view bend marked "r = 45 m", worded as printed: "A car of mass 1200 kg travels at constant speed around a flat, unbanked bend of radius 45 m. The coefficient of static friction between the tyres and the road is 0.65. (a) Identify the force that provides the centripetal force on the car. (b) Calculate the greatest speed at which the car can take the bend without sliding. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The top-view bend is the card's picture and is on screen from the first frame, with the painted car (`phys-y11-car-top-v1.png`, about 110 px long) on it and the bracket "r = 45 m". No force arrows and no speed are drawn. The memory card and the bars are hidden.
+
 ### 12. feedback 1 (brief)
 > On a flat bend, static friction is the only horizontal force, so it provides the centripetal **force**. At the limit, m v squared over r equals mu s m g, and the mass cancels. So v max is the square root of zero point six five times nine point eight times forty-five, about sixteen point nine metres per **second**. The classic slip is forgetting the square root, and getting an impossible two hundred and eighty-seven metres per **second**.
 
 Visual: card shrinks to the top; "flat, unbanked", "45 m" and "0.65" underline. On "force" "(a) static friction between the tyres and the road" with a small rear-view force sketch. On "the mass cancels" "mv²/r = μ_s mg" with the m's struck through. On "sixteen point nine metres per second" "v_max = √(0.65 × 9.8 × 45) = √286.65 = 16.9 m s⁻¹". On "two hundred and eighty-seven metres per second" a chip "v = 0.65 × 9.8 × 45 = 287 m s⁻¹" fades in and is crossed (caption "take the square root"). "(a) static friction; (b) v_max = 16.9 m s⁻¹" sits in a dark-ink framed box (52 px). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 1200 kg | flat, unbanked bend, r = 45 m | μ_s = 0.65".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A fifteen hundred kilogram car enters a flat roundabout of radius fifteen metres at thirty-five kilometres per hour. The road is wet, and the coefficient of static friction is zero point four zero. Determine whether the car can get round at this speed without sliding. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with a small coded top-view roundabout marked "r = 15 m", worded as printed: "A car of mass 1500 kg enters a flat roundabout of radius 15 m at a constant speed of 35 km h⁻¹. The road is wet and the coefficient of static friction between the tyres and the road is 0.40. Determine, with calculations, whether the car can travel around the roundabout at this speed without sliding. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The top-view roundabout is the card's picture and is on screen from the first frame, with the painted car on the ring and the bracket "r = 15 m". No path beyond the ring, no bars and no arrows are drawn, so it does not show whether the car slides.
+
 ### 14. feedback 2 (brief)
 > First convert. Thirty-five kilometres per hour is about nine point seven two metres per **second**. The friction needed is m v squared over r, about nine thousand four hundred and fifty **newtons**. The most the wet road can give is zero point four zero times fifteen hundred times nine point eight, which is five thousand eight hundred and eighty newtons. That's not enough, so the car **slides**. The slip is putting thirty-five straight into the formula, without converting to metres per **second**.
 
 Visual: card shrinks to the top; "35 km h⁻¹", "15 m" and "0.40" underline. On "nine point seven two metres per second" "v = 35 ÷ 3.6 = 9.72 m s⁻¹". On "newtons" "needed: f = 1500 × 9.72² ÷ 15 = 9.45 × 10³ N" (the conversion line dims). On "five thousand eight hundred and eighty newtons" "available: f_max = 0.40 × 1500 × 9.8 = 5.88 × 10³ N". On "slides" the needed and available bars (needed taller) and the verdict "needed > available: the car slides" (screen-only check: "v_max = √(0.40 × 9.8 × 15) = 7.7 m s⁻¹ < 9.72 m s⁻¹"). On "converting to metres per second" a chip "1500 × 35² ÷ 15" fades in and is crossed (caption "convert km h⁻¹ to m s⁻¹ first"). The verdict "9.45 × 10³ N needed > 5.88 × 10³ N available: it slides" sits in a dark-ink framed box (52 px). The needed line is computed from the unrounded 9.722 m s⁻¹. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 1500 kg | flat roundabout, r = 15 m | v = 35 km h⁻¹ | wet road, μ_s = 0.40".
 
 ### 15. handoff
 > So on a flat road, friction does the inward job. Now take the road away. Hang a small steel ball on a string from a fixed support, and set it going round in a horizontal circle. Only two forces act now, the string's pull and gravity. And the string doesn't stay horizontal. It slants, tracing out a **cone**. So how does one slanted string hold the ball up, and pull it **inwards**?
 
 Visual: clear change (camera change) to a lab scene: a retort stand (`phys-y11-retort-stand-v1.png`, reused) with a boss and crossbar (`phys-y11-boss-crossbar-v1.png`, reused) sticking out to the right; a navy pivot dot at the crossbar's tip; a coded string from the pivot to the steel ball (`phys-y11-steel-ball-v1.png`, reused, 50 px). On "going round in a horizontal circle" the ball moves round a dashed horizontal circle drawn in perspective below the pivot, with the string sweeping. On "the string's pull and gravity" two amber arrows on the ball: "tension" along the string towards the pivot and "weight" straight down. On "cone" the swept string leaves a faint cone outline. On "inwards" the ball stops at the right-hand side of its circle, a navy dot marks the circle's centre, and a "?" appears between the tension arrow and the dashed horizontal radius; chip "Next: how does string tension sustain a conical pendulum?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -211,6 +234,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,878 characters**, 16 scenes. Characters per scene (1 to 16): 321, 414, 525, 360, 430, 439, 320, 431, 350, 281, 343, 429, 300, 486, 374, 75. At 13.3 characters per second the speech is about 442 s; add about 3 s for the prediction countdown, about 3 s for the speed slider in scene 6, about 2 s for the mass toggle in scene 8, about 3 s for the beyond-the-limit playback in scene 9, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 81 s of holds and countdowns): **about 523 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's wet-road number (open decision 2); scene 9's last sentence; scene 15's "Only two forces act now" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,878 characters). The notes scene is 45 s in all, so the estimate is about 518 s (it was about 523 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v11's final frame (designed in this wave, `phys-y12-m5-v11.md`): paper background; a coded top view of a flat roundabout: grey road ring around a pale green central island with a navy centre dot; the blue car plate (`phys-y11-car-top-v1.png`) at the 3 o'clock position, nose up the page, with a short teal velocity arrow along the tangent; a violet "a" arrow from the car towards the centre and a dashed amber "F_net = mv²/r" arrow with a large "?"; a small side-view chip at the top right with amber "weight" (down) and "normal force" (up), "vertical: no help inwards"; heading "How can speed be constant while velocity keeps changing?"; chip "Next: which force supplies the inward acceleration on a flat curve?". Scene 1 sets the car moving again; the heading changes in scene 3 (on "job") to "Which force supplies the inward acceleration on a flat curve?" and the "Next" chip clears on "inwards".
@@ -228,6 +253,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, forces-on-car, fri
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: road cross-section stage, circle stage (from v11), slip inset, beyond-the-limit playback, needed-versus-available bars with a live speed slider, readouts and mass toggle, `AlignedAlgebra`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera change (roundabout to rear view); 2 to 3 camera change to the top-view slip stage, returning to the rear view on "inwards" (Revision 2); 3 to 4 camera push to the force-equation stage (Revision 2); 4 to 5 clear change to the calculation layout; 5 to 6 camera change to the slider stage; 6 to 7 clear change to full-width working; 7 to 8 camera change to the truck-and-car slider stage (Revision 2); 8 to 9 camera change to the roundabout; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v12-learning-review.md`, `science_check` = `checks/p-y12-m5-v12-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -247,6 +274,8 @@ Kit gaps (for the v12 build brief; the cross-section stage is shared with v14):
 1. **Road cross-section stage.** A coded road line that can be flat (here) or tilted by θ about a set point (v14), with the rear-view car plate registered so its wheels sit on the line and it tilts with the road; a centre-of-mass point (from Codex) for force arrows on one force scale; a ⊗ velocity marker; a "centre of the bend" pointer; optional dashed components.
 2. **Needed-versus-available bars.** Two vertical bars driven by the same values as the working: "needed: mv²/r" (can follow a speed slider) and "available: μ_s mg".
 3. **Beyond-the-limit playback.** On the circle stage, a car path with a larger radius of curvature than the ring (illustrative), leaving a trail to the outer edge.
+
+Revision 3 (13 Nov 2026). The top-view car plate is also used on both attempt cards. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v12: rear-view car)
 
@@ -271,6 +300,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Confirm the four site notes against the site lesson (values listed under "Numbers to verify").
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -316,3 +347,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,795 to 5,878 characters (scene sum); about 523 s to about 523 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the top views (the tangent path and the wider curve past the limit) are tied to the field motion engine; the bars stay lesson-coded.
+- Scene 9: the drifting trail is tagged "model path".
+- Question cards: both diagrams gain the painted car; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,878 characters, unchanged; about 518 s (it was about 523 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The wider curve in scene 9 comes from a capped inward force (a model), so it is tagged "model path"; the design already called it illustrative.

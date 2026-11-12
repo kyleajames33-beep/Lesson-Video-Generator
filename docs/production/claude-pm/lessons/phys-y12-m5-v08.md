@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V08: Testing the horizontal-launch model. How can primary measurements test the horizontal-launch model? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,376 characters, 17 scenes, about 558 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v07's final frame.
 
@@ -68,6 +68,19 @@ Entry knowledge: horizontal launch (u_y = 0), t from the vertical motion, s_x = 
 Stops after: prediction, fair test, method, safety, repeats and uncertainty, linearising, gradient and the independent-speed test, random versus systematic, the limits of agreement. No percentage thresholds or statistics.
 Handoff: v09, why a force turns an object more effectively at some angles.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the ramp on its stand, the paper and the question, scene 1 (about 31 s); (B) the height slider with its readout panel and the ledger, scene 2 (about 34 s); (C) the push to the release gate and exit with the variable cards, scene 3 (about 34 s); (D) the push to the paper and the plumb line, scene 4 (about 33 s); (E) the pull back to the whole bench for the risk check, scene 5 (about 21 s); (F) the paper strip with repeats, scene 6 (about 44 s); (G) the graph layout: the curve, then the straight line and its gradient, scenes 7 and 8 (about 73 s; the axis changes from h to √h at about 20 s); (H) the single strip: spread or shift, scene 9 (about 42 s); (I) the graph again with the slower set, scene 10 (about 34 s); (J) the two strips and the memory card, scene 11 (about 8 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 73 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The flights run on the field motion engine (`field-motion.ts`, a `uniform` field with ax = 0 and ay = −9.8) and are drawn with `FieldMotionView` (trail, strobe images, velocity arrows with components, ground line) on one `useMotionTime` clock. Every clock value, strobe position and readout is read from `stateAt` of that run, so the picture and the numbers cannot disagree. The scene 2 height control is a set of horizontal-launch runs at u_x = 2.24 m s⁻¹ from h = 0.10 m to 0.50 m; "t" and "R" are each run's landing time and distance, so "R ÷ √h" holds at 1.01 because the model does. The repeat marks and the graph points are the design's illustrative values and are not simulated.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *R*, *h*, *u*, *t*, *g*, *m* (gradient). Paper background and handwritten headline face as the explainer house style.
@@ -96,6 +109,8 @@ Visual: camera push to the paper and the plumb line (new set-up; the paper fills
 > Before you start, a quick risk check. The ball bounces and rolls, so put a catch tray beyond the paper, where it can't roll off the bench and under someone's **feet**. Clamp the stand firmly so it can't tip. And if you use a spring launcher instead of a ramp, wear safety **glasses**.
 
 Visual: camera pull back to the whole bench (new set-up). On "catch tray" the tray plate (`phys-y11-sand-tray-v1.png`) slides in beyond the paper, and the ball's replay ends in it. On "feet" a short red dashed path shows a ball rolling off the bench edge, then a tick chip "catch tray". On "Clamp" the boss and the stand base glow, chip "stand clamped, base on bench". On "glasses" a chip "spring launcher: safety glasses". Three chips collect under a heading "Risk check", with an ink pen ring round the clamp.
+
+Upgrade (Revision 3): The path that shows the ball rolling off the bench is a slate dashed line with a slate hand tag (R1), not red. No feet and no person are drawn.
 
 ### 6. repeats and uncertainty
 > Here are three landing marks from one height, as illustrative values: fifty-three, fifty-five and fifty-seven **centimetres**. Identical launches don't land in exactly the same place, because tiny differences in release and spin change each flight. That scatter is random uncertainty. We report the mean, fifty-five centimetres, plus or minus half the spread, two centimetres. The rule's reading uncertainty is only half a millimetre, so here it's the scatter, not the ruler, that limits **us**. Repeating trials makes the mean more reliable, but it doesn't make any single landing less **scattered**.
@@ -132,27 +147,35 @@ Visual: board clears to two paper strips side by side: left, marks scattered aro
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "In a horizontal-launch investigation, three repeated measurements of range from the same launch height are 0.70 m, 0.72 m and 0.74 m. (a) Calculate the mean range and its uncertainty, taking the uncertainty as half the range of the measurements. (b) Explain whether repeating the trials shows that the mean range is accurate. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted launch ramp on its stand (`y12p-launch-ramp-v1.png` with the retort stand and boss plates, about 320 px tall) above the paper sheet plate, with the steel ball at the exit. The paper carries no marks, so nothing can be measured off it. The memory card is hidden.
+
 ### 13. feedback 1 (brief)
 > The mean is zero point seven two metres, and half the spread is zero point seven four minus zero point seven zero, over two, which is zero point zero two. So R is zero point seven two, plus or minus zero point zero two **metres**. Repeats show the result is precise, not that it's accurate. A tilted exit or a mis-measured height would shift all three trials **together**, and the spread would never show it. The slip is saying more trials make it accurate.
 
 Visual: card shrinks to the top; "half the range" and "accurate" underline. On "metres" `AlignedAlgebra` "mean = (0.70 + 0.72 + 0.74) ÷ 3 = 0.72 m; ± (0.74 − 0.70) ÷ 2 = ± 0.02 m; R = 0.72 ± 0.02 m". On "together" three marks on a strip slide together by the same distance (red-brown bracket), the band unchanged. Rows 44 px; "R = 0.72 ± 0.02 m" and "precise, not shown accurate" framed. On "more trials make it accurate" a chip "repeats make it accurate" fades in and is crossed (caption "repeats: precision; accuracy needs no bias"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "R = 0.70 m, 0.72 m, 0.74 m (same launch height) | uncertainty = half the range of the measurements".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A student plots range R against the square root of the drop height h, and the line of best fit has a gradient of one point zero zero root metres. Using R equals u x times the square root of two h over g, calculate the horizontal launch speed. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "In a horizontal-launch investigation, range R (m) is plotted against the square root of the drop height, √h (m^½). The gradient of the line of best fit is 1.00 m^½. The model is R = u_x √(2h ÷ g), with g = 9.8 m s⁻². Calculate the horizontal launch speed u_x. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no graph).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the carbon paper plate over the paper sheet beside the metre rule plate (`phys-y11-metre-rule-v1.png`), about 300 px wide: the measuring kit, with no marks and no graph.
+
 ### 15. feedback 2 (brief)
 > The gradient is u x times root two over g. So u x is the gradient times root g over two, one point zero zero times root four point nine, about two point two one metres per **second**. The slip is treating the gradient itself as the speed. Its unit is root metres, so it isn't a **speed**.
 
 Visual: card shrinks to the top; "√h" and "gradient" underline. `AlignedAlgebra`: "m = u_x √(2 ÷ g)", "u_x = m √(g ÷ 2) = 1.00 × √(9.8 ÷ 2) = 1.00 × 2.214 = 2.21 m s⁻¹" on "second". Rows 44 px; "u_x = 2.21 m s⁻¹" framed. On "speed" a chip "u_x = 1.00 m s⁻¹" fades in and is crossed (caption "gradient unit: m^½"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "R against √h | gradient = 1.00 m^½ | R = u_x √(2h ÷ g) | g = 9.8 m s⁻²".
 
 ### 16. handoff
 > So far, every force has changed how something moves along a path. Next, forces that make things turn. Here's a spanner on a stuck nut. Push on the end of the handle with the same force, in three different directions. One turns the nut best, and one does nothing at all. **Why**?
 
 Visual: board clears (camera change) to a new stage: the nut-and-plate plate (`y12p-nut-plate-v1.png`, specified in v09, delivered in brief 187) at the left, the spanner plate (`y12p-spanner-v1.png`, specified in v09, delivered in brief 187) gripping the nut with its handle pointing right, top view. On "same force" an amber force arrow "80 N" appears at the handle end, perpendicular to the handle; on "three different directions" two more amber arrows of the same length fade in at the same point (one at 30° to the handle, one pointing along the handle towards the nut), each with a small "?" curved arrow over the nut. On "Why" a chip writes "Next: why does a force turn an object more effectively at some angles?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -224,6 +247,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **6,376 characters**, 17 scenes. Revision 1 stated 6,392 (the scenes joined with spaces); its scene sum was 6,376. The only narration change is the scene 11 memory aid ("Repeats steady the mean", same length). Characters per scene (1 to 17): 409, 446, 452, 438, 276, 589, 419, 545, 558, 453, 109, 330, 449, 274, 280, 274, 75. At 13.3 characters per second the speech is about 479 s; add about 3 s for the prediction countdown, about 3 s for ball flights and the graph morph settling, about 2 s for the scene 2 height slider, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 79 s of holds and countdowns): **about 558 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 5's last sentence; scene 4's last sentence (keep the table header); scene 9's "Each one is a lead" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,376 characters). The notes scene is 45 s in all, so the estimate is about 553 s (it was about 558 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v07's final frame (designed in this wave, `phys-y12-m5-v07.md`): paper background; coded bench top; the retort stand and boss holding the launch ramp with its horizontal exit above the bench; the steel ball just beyond the exit at the start of a faint strobe path to the bench; the white sheet on the bench with a dashed orange "predicted" tick and an empty ink tick "measured: ?"; a teal bracket "R" from a grey plumb mark below the exit; heading "Why can two launch angles reach the same target?" and the chip "Next: how can primary measurements test the horizontal-launch model?". Scene 1 keeps the stage, removes the chip and ticks, and adds the h and R brackets.
@@ -241,6 +266,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, prediction, fair-t
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: ramp launch stage, landing marks with spread band and mean tick, graph morph (`DataGraph`), proportional-error overlay, two-column ledger (kit gap 2), `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue into the height slider (Revision 2); 2 to 3 camera push to the ramp; 3 to 4 camera push to the paper; 4 to 5 camera pull back to the whole bench; 5 to 6 camera push to the paper strip; 6 to 7 camera change to the graph; 7 to 8 camera continue; 8 to 9 camera change to a strip; 9 to 10 camera change back to the graph; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change to the spanner stage; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v08-learning-review.md`, `science_check` = `checks/p-y12-m5-v08-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -263,6 +290,8 @@ Kit gaps (for the v08 build brief):
 1. **Ramp launch stage.** Plates placed at registered points (exit lip, boss clamp line, ball seat at the release gate); a coded release gate; the ball's roll along the track (a path following the track centreline, timing illustrative) and a horizontal launch from the exit at a set u_x and h, drawn from the v01 model; h bracket to the ball's bottom, plumb line, R bracket; the ramp and boss slide along the stand to set h.
 2. **Landing marks.** Marks at given positions appearing in turn, a spread band, a mean tick and a readout "mean ± half-range".
 3. **Graph morph.** `DataGraph` with x-axis relabel and animated x-transform (h to √h), free least-squares line with gradient triangle and intercept readout, and a scaled copy of the data set as an overlay.
+
+Revision 3 (13 Nov 2026). Existing plates also used on the attempt cards: the launch ramp, stand, boss, steel ball and paper sheet (attempt 1); the carbon paper, paper sheet and metre rule (attempt 2). New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v08: launch ramp, carbon paper, plumb bob, spirit level)
 
@@ -291,6 +320,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 and 2 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -335,3 +366,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none new; one repair (edge fringe on `y12p-plumb-bob-v1.png` and `y12p-spirit-level-v1.png`).
 
 Counts: 6,376 characters (Revision 1 scene sum 6,376; stated 6,392 by the joined convention); about 568 s to about 558 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the height control is tied to the field motion engine; the sample data stay illustrative.
+- Scene 5: the hazard path is slate, not red (R1).
+- Question cards: attempt 1 gains the ramp over unmarked paper and attempt 2 the measuring kit; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,376 characters, unchanged; about 553 s (it was about 558 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V13: The conical pendulum. How does string tension sustain a conical pendulum? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,654 characters, 17 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v12's final frame.
 
@@ -75,6 +75,19 @@ Entry knowledge: F_net = mv²/r, v = 2πr/T (v11); "centripetal is a job", resol
 Stops after: two forces; the centre and r = L sin θ; F_T cos θ = mg and F_T sin θ = mv²/r; never horizontal, F_T > mg; tan θ = v²/(rg); the worked example to T = 1.32 s; T = 2π√(h/g); the r = L slip. No banked roads.
 Handoff: v14, how a banked road reduces reliance on friction.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the stand, the crossbar and the ball circling on its string, scene 1 (about 21 s); (B) the tilt up to the perspective cone, scene 2 (about 29 s); (C) the triangle stage (string, h, r), scene 3 (about 29 s); (D) the force close-up: resolving the tension, then the live angle control, scenes 4 and 5 (about 56 s); (E) the full pendulum with the equations, scene 6 (about 26 s); (F) the calculation layout, scene 7 (about 39 s); (G) the check stage with the force close-up and the "found" strip, scene 8 (about 30 s); (H) the period stage with the lap clock, scene 9 (about 36 s); (I) the pendulum with its L and r brackets for the mistake, scene 10 (about 19 s); (J) the memory card, scene 11 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 56 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The bob's circle is a circular run on the field motion engine (`field-motion.ts`, a `central` run at the worked speed and radius), drawn in perspective by the lesson, so the lap clock in scene 9 reads the run's own period. The two live controls (the angle sweep in scene 5 and the speed control) are exact arithmetic on F_T cos θ = mg and tan θ = v²/(rg) and stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *F_T*, *m*, *g*, *θ*, *L*, *r*, *h*, *v*, *T*. Paper background and handwritten headline face as the explainer house style.
@@ -139,27 +152,35 @@ Visual: board clears to the pendulum at 30° with its blue and teal components. 
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A conical pendulum has a bob of mass 0.50 kg on a light string of length 0.80 m. The bob moves at constant speed in a horizontal circle with the string at 35° to the vertical. Calculate: (a) the radius of the circle; (b) the tension in the string; (c) the speed of the bob. (3 marks)" A small coded HSC-style side-view diagram: a support line, a string with "0.80 m", the angle "35°" from a dashed vertical, a bob and a dashed horizontal circle. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style side view is the card's picture and is on screen from the first frame (labels 30 px or more). The bob is the steel ball plate (`phys-y11-steel-ball-v1.png`, about 44 px). No force arrows and no radius value are drawn. The memory card is hidden.
+
 ### 13. feedback 1 (brief)
 > The radius is zero point eight zero times sine thirty-five, about zero point four five nine **metres**. The tension is m g over cosine thirty-five, which is four point nine zero over zero point eight one nine, about five point nine eight **newtons**. And v is the square root of r g tan thirty-five, about one point seven seven metres per **second**. The slip is using zero point eight zero as the **radius**.
 
 Visual: card shrinks to the top; "0.80 m", "35° to the vertical" and "horizontal circle" underline. On "metres" "r = 0.80 sin 35° = 0.459 m". On "newtons" "F_T = (0.50 × 9.8) ÷ cos 35° = 4.90 ÷ 0.819 = 5.98 N" (the radius line dims). On "second" "v = √(0.459 × 9.8 × tan 35°) = 1.77 m s⁻¹". On "radius" a chip "r = 0.80 m" fades in and is crossed (caption "r = L sin θ"). The three results sit in a dark-ink framed box (52 px): "r = 0.459 m, F_T = 5.98 N, v = 1.77 m s⁻¹". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "m = 0.50 kg | string 0.80 m | 35° to the vertical | constant speed, horizontal circle".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A conical pendulum has a string of length zero point four zero metres, at twenty-five degrees to the vertical. Calculate its period. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with a small coded side-view diagram (support line, string "0.40 m", angle "25°" from a dashed vertical, bob, dashed horizontal circle), worded as printed: "The string of a conical pendulum is 0.40 m long and makes an angle of 25° with the vertical as the bob moves in a horizontal circle at constant speed. Calculate the period of the motion. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The side view is the card's picture and is on screen from the first frame, with the steel ball plate as the bob. No height bracket and no lap clock are drawn.
+
 ### 15. feedback 2 (brief)
 > The circle sits L cosine theta below the support, so h is zero point four zero times cosine twenty-five, about zero point three six three **metres**. Then T equals two pi times the square root of h over g, about one point two one **seconds**. The slip is using the whole string length instead of h, which gives one point two seven **seconds**.
 
 Visual: card shrinks to the top; "0.40 m" and "25° with the vertical" underline. On "metres" "h = 0.40 cos 25° = 0.363 m". On "one point two one seconds" "T = 2π√(0.363 ÷ 9.8) = 1.21 s" in a dark-ink framed box (52 px), and a navy supporting line (30 px) "(or r = 0.169 m, v = 0.879 m s⁻¹, T = 2πr/v = 1.21 s)". On "one point two seven seconds" a chip "T = 2π√(0.40 ÷ 9.8) = 1.27 s" fades in and is crossed (caption "use h, not L"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "string 0.40 m | 25° to the vertical | constant speed, horizontal circle".
 
 ### 16. handoff
 > So the slant of the string gives the tension a part that points inwards. A road can do the same trick. Tilt the road towards the centre of the bend, and the normal force, which is always at right angles to the road, tilts **too**. Now part of it points **inwards**. So how does a banked road cut down the friction a car needs?
 
 Visual: clear change to the road cross-section stage from v12: the flat road line with the rear-view car (`y12p-car-rear-v1.png`, from v12) and the amber normal force straight up, the "centre of the bend" pointer on the left. On "Tilt the road" the road line rotates so its left (inner) edge is lower, to 12° (no angle shown), and the car rotates with it. On "too" the normal-force arrow rotates with the road, staying at right angles to it (a right-angle mark at its base). On "inwards" a dashed teal horizontal component of N draws towards the centre pointer with a "?" beside it; the weight arrow (amber) is down from the centre of mass; chip "Next: how does a banked road reduce reliance on friction?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -228,6 +249,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,654 characters**, 17 scenes. Characters per scene (1 to 17): 285, 392, 382, 424, 316, 345, 524, 400, 478, 256, 277, 294, 393, 164, 331, 318, 75. At 13.3 characters per second the speech is about 425 s; add about 3 s for the prediction countdown, about 3 s for the angle control in scene 5, about 3 s for the speed slider in scene 6, about 2 s for the lap against the clock in scene 9, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 81 s of holds and countdowns): **about 506 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's derivation sentences (open decision 1); scene 7's "The bob is just the small mass on the end" sentence; scene 6's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,654 characters). The notes scene is 45 s in all, so the estimate is about 501 s (it was about 506 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v12's final frame (designed in this wave, `phys-y12-m5-v12.md`): paper background; the retort stand plate on a coded bench line, boss and crossbar near the top reaching right, a navy pivot dot at the crossbar's tip; a coded string at 30° to a dashed vertical line, down to the steel ball (50 px) at the right-hand edge of a dashed horizontal circle in perspective, a navy dot at the circle's centre directly below the pivot; a faint cone outline; amber "tension" (along the string) and "weight" (down) arrows on the ball; a "?" between the tension arrow and the dashed horizontal radius; heading "Which force supplies the inward acceleration on a flat curve?"; chip "Next: how does string tension sustain a conical pendulum?". Scene 1 sets the ball going round; the heading changes in scene 2 (on "centre") to "How does string tension sustain a conical pendulum?". The arrow labels change from "tension" and "weight" to "F_T" and "mg" in scene 2.
@@ -246,6 +269,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v13-learning-review.md`, `science_check` = `checks/p-y12-m5-v13-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -261,6 +286,8 @@ Kit gaps (for the v13 build brief):
 1. **Conical pendulum stage.** Extends `m5-conical-pendulum` with the retort-stand, boss and ball plates registered to the pivot and bob; an angle parameter that can step (30°, 45°, 60°) with the circle, cone and arrows updating from the model (F_T = mg/cos θ, v = √(rg tan θ), one force scale); arrows only at the right-hand extreme (author note a); the synchronised top-view inset from the existing family.
 2. **Road tilt.** The v12 road cross-section stage rotating its road line and car together, with N redrawn at right angles to the road.
 3. **Revision 2 stages.** A perspective camera tilt on the pendulum stage (same model, raised viewpoint); a triangle stage that lifts the (L, h, r) triangle out of the pendulum and scales it; a force close-up on the bob with an angle control that holds the vertical part at mg and lengthens F_T (clipped at the frame edge with an arrowhead marker); a speed slider that steps steady states and drives θ, r and F_T from the model.
+
+Revision 3 (13 Nov 2026). The steel ball plate is also the bob on both attempt cards. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v13)
 
@@ -278,6 +305,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested (no hand spinning the bob; empty car).
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -325,3 +354,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,654 to 5,654 characters (narration unchanged); about 514 s to about 506 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the bob's lap is tied to the field motion engine; the two live controls stay lesson-coded arithmetic.
+- Question cards: the exam-style diagrams are confirmed as the pictures, with the steel ball plate as the bob; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,654 characters, unchanged; about 501 s (it was about 506 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

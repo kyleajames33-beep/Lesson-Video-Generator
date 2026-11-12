@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V03: Height, flight time and landing velocity. What determines height, flight time and landing velocity at the launch level? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,659 characters, 16 scenes, about 510 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -64,6 +64,19 @@ Entry knowledge: Year 11 constant-acceleration equations; v01 and v02 (columns a
 Stops after: H = u_y²/2g, T = 2u_y/g, landing velocity mirrored, R = u_x T for this case, T ∝ u and H ∝ u² at a fixed angle, the equal-level condition.
 Handoff: v04, why complementary angles give the same level-ground range.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the launcher, the path and the three questions, scene 1 (about 36 s); (B) the ledger large beside the stage, scene 2 (about 34 s); (C) the full-width calculation layout, scene 3 (about 22 s); (D) the full-width factorising stage with the launch-level strip, scene 4 (about 33 s); (E) the stage with the coupled velocity graph, scene 5 (about 32 s); (F) the push to the landing point and its triangle, then the pull back for the range, scenes 6 and 7 (about 48 s); (G) the two boxed forms and the launch-speed slider, scene 8 (about 41 s); (H) the stage with the cliff condition, scene 9 (about 20 s); (I) the mirror and the memory card, scene 10 (about 27 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 48 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The flights run on the field motion engine (`field-motion.ts`, a `uniform` field with ax = 0 and ay = −9.8) and are drawn with `FieldMotionView` (trail, strobe images, velocity arrows with components, ground line) on one `useMotionTime` clock. Every clock value, strobe position, arrow length and readout is read from `stateAt` of that run, so the picture and the numbers cannot disagree. This replaces the physics of v01's kit gap 1 (the strobe projectile stage). The scene 5 flight (25 m s⁻¹ at 50°) drives the stage ball, the graph dot and the readouts "t", "v_y" and "v_x" from one `stateAt`, so v_y passes through zero exactly at the peak. The scene 8 slider is a set of runs from 25 to 50 m s⁻¹ at 50°; "T" and "H" are read from each run.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -91,7 +104,7 @@ Visual: full-width factorising stage (new set-up): the height working shrinks to
 ### 5. why twice the time to the top
 > That's exactly twice the time to the top. Why? Gravity takes u y away at nine point eight metres per second, every second, until it's all gone. Then it gives it back at the same rate on the way down, so the fall takes just as long as the **climb**. For our ball, the time to the top is nineteen point one five over nine point eight, about one point nine five seconds, so the whole flight takes about three point nine one **seconds**.
 
-Visual: the velocity graph (coupled `VelocityTimeGraph`) draws under the ledger: axes "t (s)" 0 to 4, "v (m s⁻¹)" −20 to +20; the stage ball replays the full flight in slow motion and the graph's dot moves with its clock. The blue v_y line falls straight from +19.15 to 0 at the peak, and the teal v_x line runs flat at 16.07. On "climb" the blue line continues to −19.15, and two equal brackets under the time axis "1.95 s" and "1.95 s" light, the first under the rising part, the second under the falling part; a dashed vertical mirror line through the peak on the stage. A readout panel beside the stage updates every frame as the ball flies (52 px): ink "t", blue "v_y" and teal "v_x" (for example "t = 1.00 s, v_y = +9.35, v_x = 16.07"; "t = 1.95 s, v_y = 0"; "t = 3.91 s, v_y = −19.15"), and an ink scribble ring flashes on "v_y = 0" as the ball passes the peak. On "seconds" rows "t_up = 19.15 ÷ 9.8 = 1.95 s", "T = 2 × 1.954 = 3.91 s" and the clock reads "3.91 s"; "T = 3.91 s" framed; blue hand tags "takes it away" on the falling half of the blue line above zero and "gives it back" below zero; teal hand tag "flat: never changes" on the v_x line.
+Visual: the velocity graph (coupled `VelocityTimeGraph`) draws under the ledger: axes "t (s)" 0 to 4, "v (m s⁻¹)" −20 to +20; the stage ball replays the full flight in slow motion and the graph's dot moves with its clock. The blue v_y line falls straight from +19.15 to 0 at the peak, and the teal v_x line runs flat at 16.07. On "climb" the blue line continues to −19.15, and two equal brackets under the time axis "1.95 s" and "1.95 s" light, the first under the rising part, the second under the falling part; a dashed vertical mirror line through the peak on the stage. A readout panel beside the stage updates every frame as the ball flies (52 px): ink "t", blue "v_y" and teal "v_x" (for example "t = 1.00 s, v_y = +9.35, v_x = 16.07"; "t = 1.95 s, v_y = 0"; "t = 3.91 s, v_y = −19.15"), and an ink scribble ring flashes round "v_y = 0" as the ball passes the peak. On "seconds" rows "t_up = 19.15 ÷ 9.8 = 1.95 s", "T = 2 × 1.954 = 3.91 s" and the clock reads "3.91 s"; "T = 3.91 s" framed; blue hand tags "takes it away" on the falling half of the blue line above zero and "gives it back" below zero; teal hand tag "flat: never changes" on the v_x line.
 
 ### 6. the landing velocity
 > So, the landing. The horizontal component hasn't changed: still sixteen point one metres per second. The vertical component is back to nineteen point one five, but now it points **down**. Those are the same two sizes as at launch, so the landing speed is twenty-five metres per second again, the same as the launch speed. Only the direction has changed: fifty degrees below the horizontal, instead of fifty degrees **above**.
@@ -123,27 +136,35 @@ Visual: the stage path with the dashed mirror line through the peak; the rising 
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A projectile is launched at 14.0 m s⁻¹ at 45° above the horizontal and lands at the same level from which it was launched. Air resistance is negligible; take g = 9.8 m s⁻². Calculate (a) the maximum height reached above the launch point and (b) the total time of flight." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted launcher (about 300 px wide) on a ground line with its barrel at 45°, an angle arc "45°" and an orange arrow "14.0 m s⁻¹". No path, no height bracket and no clock. The mirror card and the boxed forms are hidden.
+
 ### 12. feedback 1 (brief)
 > First, u y is fourteen sin forty-five, about nine point nine metres per second. The height is u y squared over two g, ninety-eight over nineteen point six, which is five point zero zero **metres**. The flight time is two u y over g, about two point zero two **seconds**. Using fourteen instead of u y is the slip to **avoid**. It gives ten metres and two point eight six seconds.
 
 Visual: card shrinks to the top; "same level" and "45° above the horizontal" underline. Blue rows: "u_y = 14.0 sin 45° = 9.90 m s⁻¹"; on "metres" "H = 9.90² ÷ 19.6 = 98.0 ÷ 19.6 = 5.00 m"; on "seconds" "T = 2 × 9.90 ÷ 9.8 = 2.02 s". Rows 44 px; "5.00 m" and "2.02 s" framed. On "avoid" a chip "u_y = 14.0: H = 10.0 m, T = 2.86 s" fades in and is crossed (caption "use u sin θ, not u"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "u = 14.0 m s⁻¹ | 45° above the horizontal | lands at the launch level | g = 9.8 m s⁻²".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A projectile is launched at nineteen point six metres per second, at thirty degrees above the horizontal, and returns to its launch level. Calculate the time to reach its highest point and its total time of flight, and describe its velocity just before it lands. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A projectile is launched at 19.6 m s⁻¹ at 30° above the horizontal and returns to its launch level. Air resistance is negligible; take g = 9.8 m s⁻². (a) Calculate the time taken to reach the highest point. (b) Calculate the total time of flight. (c) Describe the velocity of the projectile just before it lands." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted launcher on a ground line with its barrel at 30°, an angle arc "30°" and an orange arrow "19.6 m s⁻¹". No path and no landing arrow.
+
 ### 14. feedback 2 (brief)
 > u y is nineteen point six sin thirty, which is nine point eight, so the time to the top is one point zero zero **second**, and the whole flight takes two point zero zero **seconds**. The flight mirrors itself, so it lands at nineteen point six metres per second, thirty degrees below the **horizontal**, with the horizontal component unchanged and the vertical one reversed. Giving thirty degrees above is the slip to **avoid**.
 
 Visual: card shrinks to the top; "returns to its launch level" underlines. Rows: "u_y = 19.6 sin 30° = 9.80 m s⁻¹"; on "second" "(a) t_up = 9.80 ÷ 9.8 = 1.00 s"; on "seconds" "(b) T = 2 × 1.00 = 2.00 s". A small mirrored path draws with a landing triangle: teal "17.0 m s⁻¹", blue "9.80 m s⁻¹ down"; on "horizontal" row "(c) 19.6 m s⁻¹ at 30° below the horizontal". Rows 44 px; "1.00 s", "2.00 s" and "19.6 m s⁻¹ at 30° below the horizontal" framed. On "avoid" a chip "30° above the horizontal" fades in and is crossed (caption "v_y has reversed"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "u = 19.6 m s⁻¹ | 30° above the horizontal | returns to its launch level | g = 9.8 m s⁻²".
 
 ### 15. handoff
 > So at equal levels, the vertical component sets the height and the flight time, and the horizontal component turns that time into a range: sixty-two point eight metres for our ball. Now launch it at forty degrees instead, at the same speed. It doesn't go as high, and it comes down sooner, yet it lands in exactly the same **spot**. Why? That's next.
 
 Visual: board clears to the stage: the launcher at 50° with the full 25 m s⁻¹, 50° trajectory in solid orange, the teal range bracket "62.8 m". On "forty degrees" the barrel rotates down to 40° and a second trajectory (dashed blue-grey) draws in slow motion: lower peak, shorter flight (its clock stops at "3.28 s" against the first's "3.91 s"). On "spot" it lands exactly on the 50° path's landing mark; the mark rings with a `ScribbleCircle` and a large "?" appears beside it, with the chip "Next: why do 40° and 50° land together?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -210,6 +231,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **5,659 characters**, 16 scenes; narration unchanged from Revision 1, whose stated 5,674 joined the scenes with spaces (scene sum 5,659). Characters per scene (1 to 16): 473, 452, 296, 445, 425, 417, 232, 542, 269, 362, 252, 367, 294, 412, 346, 75. At 13.3 characters per second the speech is about 425 s; add 3 s for the prediction countdown, about 6 s of settling for the slow-motion flight and graph in scene 5 and the 40° flight in scene 15, about 2 s for the triangle flip in scene 6 and the cliff in scene 9, about 2 s for the scene 8 speed slider, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 84 s of holds and countdowns): **about 510 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's last sentence (keep the crossed chip); scene 10's second sentence; scene 7 entirely (the range reappears in scene 15).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,659 characters). The notes scene is 45 s in all, so the estimate is about 505 s (it was about 510 s; the notes hold falls from 50 s to 45 s).
+
 ## Final frame
 
 The last explained frame (end of scene 15, before the key-notes board): paper background; the coded level ground line; the launcher plate (`y12p-launcher-base-v1.png`, `y12p-launcher-barrel-v1.png`) at the left with its barrel at 40° above the horizontal; two complete trajectories for 25 m s⁻¹ on equal 15 px per metre scales: the 50° path in solid orange (peak 18.7 m, labelled "50°") and the 40° path dashed in blue-grey (peak 13.2 m, labelled "40°", no height value shown), both starting at the barrel tip and ending at the same landing mark 62.8 m away. A teal bracket along the ground reads "62.8 m". Two small clock readouts beside the paths: "50°: 3.91 s" and "40°: 3.28 s". The shared landing mark is ringed with a `ScribbleCircle` and a large "?" sits beside it. The ledger small at the top right (teal and blue columns, clock). Heading top-left: "What sets the height, the flight time and the landing velocity?"; chip "Next: why do 40° and 50° land together?". The steel ball rests at the landing mark. v04 opens on this frame.
@@ -224,6 +247,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 (`hold`) 
 
 Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v03-learning-review.md`, `science_check` = `checks/p-y12-m5-v03-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (uniform scaling only, never stretched):
@@ -235,6 +260,8 @@ Need (new plates): none.
 Coded: ground line, cliff outline (scene 9, HSC exam style), strobe images, arrows, triangles, mirror line, brackets, velocity graph, ledger, clock, calculation strips, crossed chips, attempt cards, countdowns, key notes board.
 
 Kit gaps: none new (v01 kit gaps 1 and 2; v02's launch triangle; `VelocityTimeGraph` reconfigured to g = 9.8 with both components and an external clock).
+
+Revision 3 (13 Nov 2026). The launcher plates are also used on both attempt cards. New plate requests: none.
 
 ## Codex asset brief
 
@@ -252,6 +279,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand, face or body outline is drawn or requested.
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -292,3 +321,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (the launcher is delivered).
 
 Counts: 5,659 characters (narration unchanged; Revision 1 stated 5,674 by the joined convention); about 519 s to about 510 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the coupled flight and the launch-speed slider are tied to the field motion engine.
+- Question cards: both attempts gain the painted launcher with the card's own values; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,659 characters, unchanged; about 505 s (it was about 510 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

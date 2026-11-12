@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V09: Torque. Why does a force turn an object more effectively at some angles? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,706 characters, 15 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
 
@@ -61,6 +61,19 @@ Entry knowledge: resolving a vector into components; sin of 0°, 30°, 90°, 180
 Stops after: torque, its unit, τ = rF at right angles, F sin θ, r⊥ = r sin θ, the push along the handle (θ = 180°), the sin θ curve and turning sense. No several forces, no equilibrium.
 Handoff: v10, how clockwise and anticlockwise torques balance.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the spanner on the nut with three pushes, question and reveal, scenes 1 and 2 (about 61 s); (B) the push in to the handle and the distance slider, scene 3 (about 40 s); (C) the close-up of the handle end where the 30° force splits, scene 4 (about 36 s); (D) the whole spanner with the line of action and moment arm, scene 5 (about 39 s), then the along-handle push with its tail-to-tail panel, scene 6 (about 42 s); (E) the spanner beside the torque against angle graph, scene 7 (about 35 s); (F) the two slips, scene 8 (about 31 s); (G) the spanner and the memory card, scene 9 (about 20 s); question and feedback cards; the handoff; the notes board. The whole-spanner view runs about 81 s with the panel opening at about 39 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** None of the engines fits: torque here is statics, and the spanner does not move. The two live controls (the push sliding along the handle in scene 3 and the angle sweep in scene 7) are exact arithmetic (τ = rF sin θ) and stay lesson-coded, with every readout computed from the slider position.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *τ*, *r*, *r⊥*, *F*, *θ*. Paper background and handwritten headline face as the explainer house style.
@@ -115,27 +128,35 @@ Visual: board clears to the spanner with the perpendicular push at the handle en
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A force of 40 N is applied to the end of a lever, 0.30 m from the pivot. Calculate the magnitude of the torque about the pivot when the force is (a) perpendicular to the lever, (b) at 30° to the lever. (2 marks)" A small coded HSC-style diagram: a bar, a pivot triangle at its left end, "0.30 m", and a force arrow labelled "40 N" at the right end with an angle arc "θ" (no value). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style lever diagram is the card's picture and is on screen from the first frame (labels 30 px or more). Its force arrow is drawn at one neutral slant with the arc tagged "θ" only, so neither part's answer can be read off. The memory card is hidden.
+
 ### 11. feedback 1 (brief)
 > At right angles, tau equals r F, zero point three zero times forty, twelve newton **metres**. At thirty degrees, multiply by sin thirty, a half, giving six point zero newton **metres**. The classic slip is using cos thirty, which gives about ten point four. The angle is between the force and the lever, so it's **sine**.
 
 Visual: card shrinks to the top; "perpendicular" and "at 30° to the lever" underline. `AlignedAlgebra`: "(a) τ = rF = 0.30 × 40 = 12 N m" on the first "metres"; "(b) τ = rF sin 30° = 12 × 0.5 = 6.0 N m" on the second "metres". Rows 44 px; "12 N m" and "6.0 N m" framed. On "sine" a chip "τ = 0.30 × 40 × cos 30° = 10.4 N m" fades in and is crossed (caption "θ is between F and the lever: use sin θ"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "F = 40 N at the end of the lever | 0.30 m from the pivot | (a) perpendicular (b) at 30° to the lever".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A force of forty newtons acts on the end of a zero point three zero metre handle, directed along the handle towards the pivot. State the moment arm and the torque about the pivot, and the angle between the force and the line from the pivot to the point where it acts. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A 40 N force acts on the end of a handle 0.30 m from a pivot. The force is directed along the handle towards the pivot. (a) State the perpendicular distance from the pivot to the force's line of action. (b) Calculate the torque about the pivot. (c) State the angle θ between the force and the line from the pivot to the point of application. (3 marks)" A small coded diagram: handle, pivot dot, the force arrow at the end pointing towards the pivot. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The handle diagram is the card's picture and is on screen from the first frame. It shows only what the card states: the handle, the pivot dot and the force arrow pointing along the handle towards the pivot. No line of action and no moment arm are drawn.
+
 ### 13. feedback 2 (brief)
 > The line of action passes through the pivot, so the moment arm is zero, and the torque is zero newton **metres**. The line from the pivot points out along the handle, and the force points back in, so the angle is one hundred and eighty **degrees**. Sin one eighty is zero, which agrees. The slip is writing r F, twelve newton metres, because the force is far from the pivot. Distance alone doesn't turn **anything**.
 
 Visual: card shrinks to the top; "towards the pivot" underlines. On the diagram the dashed line of action extends through the pivot; "(a) r⊥ = 0"; on "metres" "(b) τ = F r⊥ = 40 × 0 = 0 N m". On "degrees" the r arrow and force arrow slide tail to tail, arc "(c) θ = 180°", "sin 180° = 0 ✓". Rows 44 px; "r⊥ = 0", "τ = 0 N m" and "θ = 180°" framed. On "anything" a chip "τ = rF = 0.30 × 40 = 12 N m" fades in and is crossed (caption "line of action through the pivot: no torque"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "F = 40 N at the end of the handle | 0.30 m from the pivot | directed along the handle, towards the pivot".
 
 ### 14. handoff
 > So one force's torque depends on its size, its distance from the pivot, and its angle. But real objects usually have several forces turning them at once, some clockwise and some anticlockwise. A tower crane holds a heavy load far out on one side, and a counterweight close in on the other. How do those turning effects **balance**?
 
 Visual: board clears (camera change) to the tower crane plate (`y12p-tower-crane-v1.png`, specified in v10, delivered in brief 187) on a coded ground line: mast at the centre, long jib to the right with the load plate (`phys-y11-crane-load-v1.png`) hanging far out, short counter-jib to the left with its counterweight. On "several forces" amber weight arrows draw down from the load and the counterweight. On "clockwise" an orange curved arrow "clockwise" draws over the jib side; on "anticlockwise" a blue curved arrow "anticlockwise" over the counter-jib side. On "balance" a navy pivot dot at the top of the mast and a chip "Next: how do clockwise and anticlockwise torques balance?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 50 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -204,6 +225,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " counted inside each scene and joined with a space, bold markers removed, total = sum of the scene strings): **5,706 characters**, 15 scenes. Revision 1 stated 5,693 (the scenes joined with spaces); its scene sum was 5,679. The only narration change is scene 2's first three sentences (turning-tendency arrows instead of rotation; brief 187 should fix). Characters per scene (1 to 15): 357, 456, 536, 475, 513, 552, 463, 416, 263, 261, 309, 299, 404, 327, 75. At 13.3 characters per second the speech is about 429 s; add about 3 s for the prediction countdown, about 2 s for the turning arrows in scene 2 (partly under speech), about 2 s for the scene 3 distance slider, 2 s for the sweep in scene 7, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 50 s in all; about 80 s of holds and countdowns): **about 509 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's "Torque isn't a force" sentences; scene 7's direction sentences (move to v10); scene 8's second slip.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,706 characters). The notes scene is 45 s in all, so the estimate is about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v08's final frame (designed in this wave, `phys-y12-m5-v08.md`): paper background; top view; the nut-and-plate plate at the left, the spanner plate gripping the nut with its handle pointing right (handle end 400 px from the nut centre); three amber 80 N arrows at the handle end (perpendicular pointing up the frame, at 30° to the handle, and along the handle towards the nut); a "?" curved arrow over the nut; heading "How can primary measurements test the horizontal-launch model?" and the chip "Next: why does a force turn an object more effectively at some angles?". Scene 1 removes the chip and adds the length bracket and force labels; the heading changes in scene 2.
@@ -221,6 +244,8 @@ In order (kebab-case; 15 scene headings, all `### N.`): hook, reveal-torque, rig
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: spanner stage (static plate layers; no rotation in Revision 2), static turning-tendency arrows, distance slider and angle sweep with live readouts, component split, line of action and moment arm, tail-to-tail angle, torque graph (`DataGraph`), `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue (same spanner); 2 to 3 camera push to the handle (Revision 2); 3 to 4 clear change to the handle-end close-up; 4 to 5 camera pull back to the whole spanner; 5 to 6 camera continue (tail-to-tail panel opens); 6 to 7 camera change (graph beside the stage); 7 to 8 clear change; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 clear change to the crane; 14 to 15 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 50 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v09-learning-review.md`, `science_check` = `checks/p-y12-m5-v09-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -240,6 +265,8 @@ Kit gaps (for the v09 build brief):
 2. **Moment-arm construction.** Reuse `m5-moment-arm` reconfigured to r = 0.25 m and F = 80 N: dashed line of action, perpendicular from the pivot with right-angle mark and readout; component split with the along component drawn through the pivot.
 3. **Tail-to-tail angle.** The r and F arrows slide to a common tail with an arc and readout (0° to 180°).
 4. **Torque graph.** `DataGraph` of τ = rF sin θ linked to a sweeping force arrow on the stage.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for turning effects (a pivoted body with forces, net torque and tilt). One would serve this video and the next (the seesaw and the crane).
 
 ## Codex asset brief (Year 12 Physics M5 v09: spanner and nut)
 
@@ -264,6 +291,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site note 2 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -309,3 +338,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,706 characters (Revision 1 scene sum 5,679; stated 5,693 by the joined convention); about 517 s to about 509 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the two sliders stay lesson-coded arithmetic.
+- Question cards: the exam-style diagrams are confirmed as the pictures; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for turning effects (a pivoted body with forces, net torque and tilt). One would serve this video and the next (the seesaw and the crane).
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,706 characters, unchanged; about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

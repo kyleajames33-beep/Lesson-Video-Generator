@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V20: Kepler's laws. How do Kepler's laws describe circular and elliptical orbits? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,664 characters (scene sum; Revision 1 stated 5,679 by the joined convention), 16 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -66,6 +66,20 @@ Entry knowledge: v09, v15, v18.
 Stops after: the three laws; ellipse focus and semi-major axis; equal areas and its force cause; r_p v_p = r_a v_a; T² ∝ a³ with a; the circle as a special case. No energy calculations.
 Handoff: v21, why gravitational potential energy uses a zero at infinity.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the Sun and the comet on Halley's ellipse, scene 1 (about 30 s); (B) the Mars record table and the three law slots, scene 2 (about 26 s); (C) the Kepler stage: the shape, then the equal-area run on the same ellipse, scenes 3 and 4 (about 63 s); (D) the close-up of the inward and outward legs, scene 5 (about 39 s); (E) the two ends of the ellipse, then Earth's orbit, scene 6 (about 37 s); (F) the two-orbit diagram with lap counters, scene 7 (about 43 s); (G) Halley's ellipse with the working under it, then the mistake, scenes 8 and 9 (about 61 s); (H) the three filled slots and the memory card, scene 10 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 63 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every orbit runs on the field motion engine (`field-motion.ts`, a `central` field, drawn with `FieldMotionView`: central body, trail, velocity and acceleration arrows) on one `useMotionTime` clock, and every readout is read from `stateAt` of the run. The teaching orbit (a = 1 AU, e = 0.6) is one elliptical run, so "r", "v" and the equal sectors in scene 4 come from the run's positions, and r v matches at the two ends because the run conserves it. In scene 5 the two parts of gravity (along and across the path) are the run's acceleration resolved on its velocity. The lap counters in scene 7 are two runs (Earth and Mars) on one clock. Halley's true ellipse (scenes 1, 8 and 9) is a run too, so the comet crawls at aphelion and whips round the Sun.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The Mars record is a table.** The "ledger page" in scene 2 is a plain ruled table card (no book, no handwriting of a named person).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Paper background and handwritten headline face as the explainer house style.
@@ -130,22 +144,28 @@ Visual: `QuestionCard` (subject "Physics") arrives with its full text in one mov
 
 Visual: card shrinks to the top. Rows (44 px): "T²/a³ = 1 (Earth, AU and years)", "T² = 5.20³ = 140.6", on "years" "T = √140.6 = 11.9 years" in a dark-ink frame (52 px). On "round" a chip "T³ = a² → T = 3.0 years" fades in and is crossed. Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Jupiter: a = 5.20 AU | Earth: a = 1.00 AU, T = 1.00 year".
+
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Mars is one point three eight one astronomical units from the Sun at perihelion, and one point six six six at aphelion. At which of these points is Mars moving faster, and by what factor? Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), with the Mars plate small beside it, worded as printed: "At perihelion Mars is 1.381 AU from the Sun; at aphelion it is 1.666 AU from the Sun. (a) At which of these two points does Mars move faster? (b) Calculate the ratio of its speed at that point to its speed at the other point. Justify your answers using Kepler's second law." Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The Mars plate (`y12p-mars-v1.png`, about 240 px across) is on the card's right side from the first frame. No ellipse, no Sun and no speed arrows are drawn, so the faster point cannot be read off.
 
 ### 14. feedback 2 (brief)
 > It's faster at perihelion, the closer point. r times v is the same at both points, so the speed ratio is the inverse of the distance ratio: one point six six six over one point three eight one, about one point two **one**. The slip is flipping the ratio and saying it's faster far **away**.
 
 Visual: card shrinks to the top; "Kepler's second law" underlines. A small ellipse with two thin triangles. Rows (44 px): "equal areas: r_p v_p = r_a v_a"; on "one" "v_p / v_a = r_a / r_p = 1.666 / 1.381 = 1.21" in a dark-ink frame (52 px), "(a) perihelion". On "away" a chip "faster at aphelion, ratio 0.83" fades in and is crossed. Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Mars: perihelion 1.381 AU | aphelion 1.666 AU".
+
 ### 15. handoff
 > So Kepler's laws describe the shape, speed and size of every orbit, and gravity explains them. As Halley's comet falls in, it speeds up, trading one kind of energy for another. But how much gravitational energy does something have out in space? Next, we'll see why that energy uses a zero at **infinity**.
 
 Visual: board clears to Halley's ellipse with the Sun plate; the comet plate at aphelion. As "falls in" is spoken a teal speed bar rises and an empty energy bar labelled "gravitational energy?" falls as the comet runs in, then the comet returns to aphelion. On "infinity" a dashed line runs from the comet outwards off the right edge to "∞", with a chip "U = ?" and the chip "Next: why does gravitational potential energy use a zero at infinity?". Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -209,6 +229,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,679): **5,664 characters**, 16 scenes (narration unchanged). Characters per scene (1 to 16): 405, 345, 497, 347, 520, 497, 569, 478, 335, 275, 215, 304, 219, 282, 301, 75. At 13.3 characters per second the speech is about 426 s; add about 3 s for the prediction countdown, about 4 s for the comet's real-proportion replay in scene 1, about 2 s for the circle-fit attempts in scene 2, about 2 s for the shape slider in scene 3, about 2 s for the sector fills in scene 4, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 83 s of holds and countdowns): **about 509 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's Tycho clause (keep the ledger page); scene 6's NASA sentence (keep the chip); scene 8's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,664 characters). The notes scene is 45 s in all, so the estimate is about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v19's final frame (`phys-y12-m5-v19.md`): paper background; the Earth plate small at the centre-left; a dashed navy ellipse around it with Earth at one focus and a satellite plate moving faster near Earth; heading "What makes an orbit geostationary rather than merely near Earth?"; chip "Next: how do Kepler's laws describe circular and elliptical orbits?". Scene 1 pulls the camera back so Earth becomes a dot orbiting the Sun; the heading changes in scene 2.
@@ -227,6 +249,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v20-learning-review.md`, `checks/p-y12-m5-v20-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -243,6 +267,8 @@ Need (new plates, Codex): none (Revision 2: the comet and Mars are delivered).
 Coded: ledger page, plotted dots, ellipses, foci, constant-sum lines, sliders and readouts, sectors, triangles, arrows and components, scale chips, tables, algebra, chips, cards, countdowns, notes board.
 
 Kit gaps: 5. **Kepler orbit stage** (ellipse from a and e; body positions from Kepler's equation; equal-time sectors with a live area readout; live r and v from the model; gravity split into along-path and perpendicular components; constant-sum focus lines with live d₁ and d₂; a shape slider; true-shape and teaching-shape modes).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): `FieldMotionView` has no swept-area option, so the equal sectors and the two end triangles are lesson overlays built from the run's positions.
 
 ## Codex asset brief (Year 12 Physics M5 v20: comet and Mars)
 
@@ -262,6 +288,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -307,3 +335,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,679 (joined) or 5,664 (scene sum) to 5,664 characters (scene sum; narration unchanged); about 519 s to about 509 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the teaching orbit, the gravity components, the lap counters and Halley's ellipse are tied to the field motion engine.
+- Scene 2: the Mars record is a plain table card.
+- Question cards: both already carry planet plates; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: `FieldMotionView` has no swept-area option, so the equal sectors and the two end triangles are lesson overlays built from the run's positions.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,664 characters, unchanged; about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

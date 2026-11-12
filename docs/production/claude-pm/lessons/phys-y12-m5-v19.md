@@ -1,6 +1,6 @@
 # Year 12 Physics M5 V19: Geostationary and near-Earth orbits. What makes an orbit geostationary rather than merely near Earth? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 188 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,630 characters (scene sum; Revision 1 stated 5,628 by the joined convention), 16 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -63,6 +63,20 @@ Entry knowledge: v18.
 Stops after: GEO period, radius, altitude, speed, plane, direction, shape; uses and limits; LEO and GPS contrasts. No energy, no ellipses.
 Handoff: v20, Kepler's laws for circular and elliptical orbits.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the rooftop with the dish and the satellite fixed in the sky, scene 1 (about 27 s); (B) the polar view with the period slider, scene 2 (about 32 s); (C) the full-width working, scene 3 (about 34 s); (D) the true-scale stage, scene 4 (about 27 s); (E) the side view with the equator, scene 5 (about 34 s); (F) the polar view again for direction and shape, scene 6 (about 27 s); (G) the rooftop with the Earth inset, scene 7 (about 37 s); (H) the three true-scale circles with their table, scene 8 (about 33 s); (I) the full-width working for the low orbit, scene 9 (about 42 s); (J) the memory card, scene 10 (about 18 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 42 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every orbit runs on the field motion engine (`field-motion.ts`, a `central` field, drawn with `FieldMotionView`: central body, trail, velocity and acceleration arrows) on one `useMotionTime` clock, and every readout is read from `stateAt` of the run. In the polar view (scenes 2 and 6) each slider period is a circular run round Earth; the ground marker turns at one turn per day, and "drift past the dish per day" is the difference between the two angles, so 24 h gives 0° because the run keeps pace. The three circles in scene 8 are three runs at true scale, so their lap times stand in the table's ratio.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Memory card pictures are plain diagrams.** The three small pictures under the memory line are diagrams, not drawings of objects: a ring marked "24 h" (no clock face or hands), the equator line across a circle, and a curved eastward arrow.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Paper background and handwritten headline face as the explainer house style.
@@ -117,32 +131,42 @@ Visual: clear change to full-width working with the gravity stage small at the l
 
 Visual: board clears; the handwritten line writes large in a framed memory card (hand lettering, navy and grey, 60 px; the same card is reused on the notes screen): "One day, one plane, one way." Three small icons beneath it with 36 px labels: a 24 h clock "one day", the equator line "one plane", a curved eastward arrow "one way". On "law" a small strip (44 px) "r³/T² = GM/4π² → r = 4.23 × 10⁷ m" writes under the card with a fourth label "plus a circle". Hold about 2 seconds.
 
+Upgrade (Revision 3): The "24 h clock" is a plain ring with "24 h" written inside it (no clock face, no hands). The other two pictures are the equator line across a circle and a curved eastward arrow, as described.
+
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. A navigation satellite moves in a circular orbit with a period of twelve point zero hours. Calculate its altitude above Earth's surface, using the data sheet values. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text in one move (question text 36 px), worded as printed: "A navigation satellite moves in a circular orbit around Earth with a period of 12.0 hours. Calculate its altitude above Earth's surface. (G = 6.67 × 10⁻¹¹ N m² kg⁻², M_E = 6.0 × 10²⁴ kg, R_E = 6.371 × 10⁶ m)" A small satellite plate sits beside it. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): From the first frame the card's right side carries the satellite plate (`y12p-satellite-v1.png`, about 200 px wide) above an arc of the painted Earth. No altitude bracket and no orbit circle to scale are drawn, because the altitude is the answer. The memory card is hidden.
 
 ### 12. feedback 1 (brief)
 > Convert the period to seconds: four point three two times ten to the four. Then r cubed equals big G M T squared over four pi squared, and the cube root gives r of about two point six six times ten to the seven **metres**. Subtract Earth's radius, and the altitude is about two point zero three times ten to the seven metres. The classic slip is stopping at r, which is measured from the centre, not the **surface**.
 
 Visual: card shrinks to the top; "altitude" underlines. Rows (44 px): "T = 12.0 × 3600 = 4.32 × 10⁴ s"; "r³ = 4.002 × 10¹⁴ × (4.32 × 10⁴)² / 4π² = 1.892 × 10²² m³"; on "metres" "r = 2.66 × 10⁷ m"; "h = r − R = 2.66 × 10⁷ − 0.637 × 10⁷ = 2.03 × 10⁷ m" in a dark-ink frame (52 px). On "surface" a chip "h = 2.66 × 10⁷ m" fades in and is crossed. Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "T = 12.0 h, circular orbit | G = 6.67 × 10⁻¹¹ N m² kg⁻² | M_E = 6.0 × 10²⁴ kg | R_E = 6.371 × 10⁶ m".
+
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A satellite has a circular orbit with a period of twenty-four hours, but its orbit is tilted at thirty degrees to the equator. Explain why it is not geostationary. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text in one move (question text 36 px), worded as printed: "A satellite moves in a circular orbit with a period of 24 hours. Its orbital plane is inclined at 30° to Earth's equatorial plane. Explain why this satellite is not geostationary. (2 marks)" A small side-view Earth outline with a 30° tilted ring sits beside the card. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The side view is the painted Earth plate (`phys-y11-earth-v1.png`, about 260 px across) with a dashed equator line and the ring tilted 30°, on screen from the first frame. The satellite is still; no ground track is drawn.
 
 ### 14. feedback 2 (brief)
 > Its period matches Earth's spin, so it comes back to the same place in the sky each day. But its orbit's plane passes through Earth's centre and is tilted, so every day it swings north of the equator, then south. A fixed dish would lose it. The slip to avoid is thinking a twenty-four hour period is **enough**. The equatorial plane is the missing condition.
 
 Visual: card shrinks to the top; "inclined at 30°" underlines. The tilted ring from scene 5 returns small with its north-south ground track. Rows (44 px): "T = 24 h: keeps pace on average", "plane through Earth's centre, inclined: north and south each day, so not fixed in the sky" in a dark-ink frame (52 px). On "enough" a chip "24 h period → geostationary" fades in and is crossed (caption "also needs the equatorial plane"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "T = 24 h, circular orbit | orbital plane inclined 30° to the equatorial plane".
+
 ### 15. handoff
 > So far, every orbit we've drawn has been a perfect circle. Real orbits aren't quite. Planets, moons and comets travel on ellipses, swinging closer and then further away as they go. Next, we'll see how Kepler's laws describe both circular and elliptical **orbits**.
 
 Visual: board clears to the gravity stage with the geostationary circle around the Earth plate. As "ellipses" is spoken the circle stretches into a dashed ellipse with Earth at one focus (not the centre), a satellite moving faster near Earth and slower far out. On "orbits" a chip writes "Next: how do Kepler's laws describe circular and elliptical orbits?". Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 50 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -214,6 +238,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (6 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,628): **5,630 characters**, 16 scenes. Characters per scene (1 to 16): 358, 429, 457, 358, 458, 365, 486, 441, 555, 233, 198, 408, 195, 354, 260, 75. At 13.3 characters per second the speech is about 423 s; add about 3 s for the prediction countdown, about 3 s for the station's pass in scene 1, about 4 s for the polar-view, slider and tilted-ring motions in scenes 2, 5 and 6, about 2 s for the ground-track fill in scene 9, about 2 s for the signal pulse in scene 7, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 44 s more of the quiet notes hold (50 s in all; about 84 s of holds and countdowns): **about 508 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's last sentence; scene 7's Himawari sentence (keep the inset).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,630 characters). The notes scene is 45 s in all, so the estimate is about 503 s (it was about 508 s; the notes hold falls from 50 s to 45 s).
+
 ## Opening frame
 
 v18's final frame (`phys-y12-m5-v18.md`): paper background; the Earth plate at the centre-left with a grey rotation arrow "Earth turns once a day"; a satellite on the small 400 km circle; a large dashed outer circle with a second satellite and the chip "T = 24 h → r = ?"; heading "How does gravity maintain a circular orbit?"; chip "Next: what makes an orbit geostationary rather than merely near Earth?". Scene 1 zooms onto Australia and cuts to the rooftop view; the heading changes in scene 2.
@@ -232,6 +258,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/p-y12-m5-v19-learning-review.md`, `checks/p-y12-m5-v19-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 
@@ -246,6 +274,8 @@ Need (new plates, Codex): none (Revision 2: the roof dish is delivered).
 Coded: ground and sky, sight lines, polar-view disc and rotation, period slider and readouts, orbit circles and tilted ring, ground track, signal pulse, coverage cone, table, algebra, chips, cards, countdowns, notes board.
 
 Kit gaps: 4. **Polar-view sync diagram** (rotating top-down Earth disc with a ground marker; satellites with set periods and directions; a period slider with live T and drift readouts; the marker-to-satellite line shows whether they keep pace).
+
+Revision 3 (13 Nov 2026). The Earth and satellite plates are also used on both attempt cards. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M5 v19: roof dish)
 
@@ -265,6 +295,8 @@ Error-only check:
 8. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -312,3 +344,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,628 (joined) or 5,613 (scene sum) to 5,630 characters (scene sum); about 515 s to about 508 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the polar view, its period slider and the three true-scale circles are tied to the field motion engine.
+- Scene 10: the "24 h clock" picture is a plain ring, not a drawn clock.
+- Question cards: attempt 1 shows the satellite above an Earth arc with no altitude; attempt 2's Earth outline becomes the Earth plate; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 50 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,630 characters, unchanged; about 503 s (it was about 508 s; the notes hold falls from 50 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The polar-view Earth in scenes 2 and 6 stays a plain disc with a ground marker (a diagram); no polar-view Earth plate exists and none is requested.
