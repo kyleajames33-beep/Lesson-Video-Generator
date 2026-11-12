@@ -78,7 +78,7 @@ export const SceneFiltrate: React.FC = () => {
 	const grey = 0.75 * prog(f, K13.spect, 16);
 	const ag = prog(f, K13.extra, 16);
 	const fp = funnelPts(FU.x, FU.y);
-	const ions: LensIon[] = [...FILT_BASE.map(d => ({...d, grey})), {ion: 'Ag^{+}', u: 0.5, v: -0.4, ph: 0.6, o: ag}, {ion: 'NO_3^{-}', u: -0.6, v: -0.05, ph: 1.9, grey, o: ag}, {ion: 'Ag^{+}', u: -0.2, v: 0.68, ph: 2.6, o: ag}];
+	const ions: LensIon[] = [...FILT_BASE.map(d => ({...d, grey})), {ion: 'Ag^{+}', u: 0.5, v: -0.4, ph: 0.6, o: ag}, {ion: 'NO_3^{-}', u: -0.6, v: -0.05, ph: 1.9, grey, o: ag}];
 	return (
 		<>
 			<Heading text="What's left after filtering?" at={4} size={58} />
