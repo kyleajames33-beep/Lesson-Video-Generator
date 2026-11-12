@@ -147,7 +147,7 @@ export const SimReadout: React.FC<{x: number; y: number; w?: number; rows: reado
 	if (o <= 0.001) return null;
 	return (
 		<div style={{position: 'absolute', left: x, top: y, width: w, boxSizing: 'border-box', opacity: o, background: CARD, borderRadius: 20, padding: '14px 26px 12px', boxShadow: CARD_SHADOW, border: `2.5px solid ${CARD_BORDER}`}}>
-			{title ? <div style={{fontFamily: FONT_DISPLAY, fontSize: TYPE.label, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: INK_SOFT, marginBottom: 4}}>{title}</div> : null}
+			{title ? <div style={{fontFamily: FONT_DISPLAY, fontSize: TYPE.support, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: INK_SOFT, marginBottom: 4}}>{title}</div> : null}
 			{rows.map((r, i) => {
 				const c = r.tone ? tone(r.tone).ink : INK;
 				return (
@@ -155,7 +155,7 @@ export const SimReadout: React.FC<{x: number; y: number; w?: number; rows: reado
 						<span style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: TYPE.support, color: c}}>{r.label}</span>
 						<span style={{display: 'flex', alignItems: 'baseline', gap: 10, whiteSpace: 'pre'}}>
 							<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: TYPE.working, color: c, fontVariantNumeric: 'tabular-nums', letterSpacing: -0.5}}>{typeof r.value === 'number' ? simNum(r.value, r.digits ?? 1) : r.value}</span>
-							{r.unit ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: TYPE.label, color: INK_SOFT}}>{r.unit}</span> : null}
+							{r.unit ? <span style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: TYPE.support, color: INK_SOFT}}>{r.unit}</span> : null}
 						</span>
 					</div>
 				);

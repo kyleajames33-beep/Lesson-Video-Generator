@@ -625,3 +625,66 @@ test('circuits: a switch closing or a part added at a frame changes the current 
 	assert.equal(linear.phases.length, 1);
 	near(circ.chargeMoved(ramp, 'b', 50), 50, 1e-6, 'charge before the ramp');
 });
+
+// ---------------------------------------------------------------- magnetic fields
+const mag = await load('src/explainer/sims/magnetic-field.ts');
+const rel = (a, b, tol, msg) => assert.ok(Math.abs(a - b) <= tol * Math.abs(b), `${msg ?? ''} got ${a}, expected ${b}`);
+
+test('magnetic field: a straight wire gives mu0 I / (2 pi r), circling anticlockwise for current out of the page', () => {
+	const wire = [{kind: 'wire', x: 0, y: 0, current: 5}];
+	const f = mag.magneticFieldAt(wire, 0.02, 0);
+	rel(f.b, (4e-7 * Math.PI * 5) / (2 * Math.PI * 0.02), 1e-9, 'size');
+	near(f.bx, 0, 1e-12); assert.ok(f.by > 0, 'up at the right of the wire');
+	rel(mag.magneticFieldAt(wire, 0.04, 0).b, f.b / 2, 1e-9, 'twice as far, half the field');
+	assert.ok(mag.magneticFieldAt([{kind: 'wire', x: 0, y: 0, current: -5}], 0.02, 0).by < 0, 'reversed current, reversed field');
+	rel(mag.wireField(5, 0.02), f.b, 1e-12);
+});
+
+test('magnetic field: a loop gives mu0 I / (2R) at its centre and the on-axis formula along its axis', () => {
+	const loop = [{kind: 'loop', x: 0, y: 0, radius: 0.05, current: 2}];
+	const c = mag.magneticFieldAt(loop, 0, 0);
+	rel(c.bx, (4e-7 * Math.PI * 2) / (2 * 0.05), 1e-4, 'centre');
+	near(c.by, 0, 1e-12);
+	for (const x of [0.03, 0.1, -0.08]) rel(mag.magneticFieldAt(loop, x, 0).bx, (4e-7 * Math.PI * 2 * 0.05 ** 2) / (2 * (0.05 ** 2 + x ** 2) ** 1.5), 1e-4, `on axis at ${x}`);
+	const turned = mag.magneticFieldAt([{kind: 'loop', x: 0, y: 0, radius: 0.05, current: 2, angle: Math.PI / 2}], 0, 0);
+	near(turned.bx, 0, 1e-10); rel(turned.by, c.bx, 1e-9, 'axis turned to point up');
+	rel(mag.loopCentreField(2, 0.05, 10), 10 * c.bx, 1e-4, 'N turns');
+});
+
+test('magnetic field: a long solenoid has mu0 n I inside, nearly uniform, and far less outside', () => {
+	const sol = [{kind: 'solenoid', x: 0, y: 0, radius: 0.02, length: 0.4, turns: 400, current: 1.5}];
+	const inside = mag.magneticFieldAt(sol, 0, 0).bx, expected = mag.solenoidField(1.5, 400 / 0.4);
+	rel(inside, expected, 0.01, 'centre');
+	rel(mag.magneticFieldAt(sol, 0.05, 0.006).bx, expected, 0.02, 'off the axis, still inside');
+	assert.ok(Math.abs(mag.magneticFieldAt(sol, 0, 0.08).b) < 0.05 * expected, 'weak outside');
+});
+
+test('magnetic field: a bar magnet is a dipole far away, and a compass points away from its north end', () => {
+	const bar = [{kind: 'bar', x: 0, y: 0, length: 0.1, strength: 20}];
+	const m = 20 * 0.1, far = mag.magneticFieldAt(bar, 2, 0);
+	rel(far.bx, (4e-7 * Math.PI * 2 * m) / (4 * Math.PI * 2 ** 3), 0.01, 'on the axis: mu0 2m / (4 pi r^3)');
+	rel(mag.magneticFieldAt(bar, 0, 2).bx, -(4e-7 * Math.PI * m) / (4 * Math.PI * 2 ** 3), 0.01, 'beside it: half the size, pointing back');
+	near(mag.compassAngle(bar, 0.2, 0), 0, 1e-9, 'beyond the north end the needle points away');
+	near(Math.abs(mag.compassAngle(bar, -0.2, 0)), 0, 1e-9, 'beyond the south end it points towards the magnet');
+});
+
+test('magnetic field: fields add, and field lines follow the field', () => {
+	const two = [{kind: 'wire', x: -0.05, y: 0, current: 3}, {kind: 'wire', x: 0.05, y: 0, current: 3}];
+	near(mag.magneticFieldAt(two, 0, 0).b, 0, 1e-15, 'midway between equal parallel currents the fields cancel');
+	const opposite = [{kind: 'wire', x: -0.05, y: 0, current: 3}, {kind: 'wire', x: 0.05, y: 0, current: -3}];
+	rel(mag.magneticFieldAt(opposite, 0, 0).b, 2 * mag.wireField(3, 0.05), 1e-9, 'opposite currents: the fields add between them');
+	rel(mag.forceBetweenWires(10, 10, 0.05), 4e-4, 1e-9, '10 A and 10 A, 5 cm apart');
+	const bounds = {x0: -0.2, x1: 0.2, y0: -0.2, y1: 0.2};
+	const [circle] = mag.fieldLines([two[0]], mag.wireSeeds(two[0], [0.04]), {bounds});
+	assert.ok(circle.closed, 'a line round one wire closes');
+	for (const [x, y] of circle.points) near(Math.hypot(x + 0.05, y), 0.04, 2e-4, 'and it is a circle');
+	const bar = {kind: 'bar', x: 0, y: 0, length: 0.12, width: 0.03, strength: 10};
+	const lines = mag.fieldLines([bar], mag.barSeeds(bar, 7), {bounds, direction: 'forward'});
+	const middle = lines[3].points, end = middle[middle.length - 1];
+	assert.ok(end[0] >= 0.199, 'the line straight out of the north end leaves the box to the right');
+	const side = lines[1].points, last = side[side.length - 1];
+	assert.ok(last[0] < 0, 'a line from the side of the north end curls round to the south half');
+	const coil = {kind: 'loop', x: 0, y: 0, radius: 0.05, current: 1};
+	assert.equal(mag.coilSeeds(coil, 5).length, 5);
+	assert.ok(mag.fieldLine([coil], 0, 0.02, {bounds: {x0: -1, x1: 1, y0: -1, y1: 1}, step: 0.002, maxSteps: 3000}).closed, 'a line through a loop closes round its wire');
+});

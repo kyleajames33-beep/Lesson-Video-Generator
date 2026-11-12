@@ -19,6 +19,7 @@ import {useSeriesTime} from './series-views';
 import {Titration, equivalenceVolume, mixtureAt} from './titration';
 import {TitrationGraph, TitrationRig, usePour} from './titration-views';
 import {SimReadout} from './views';
+import {PHYSICS_DEMOS} from './demos-physics';
 
 const LEN = 300;
 const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };
@@ -141,6 +142,7 @@ const CircuitDemo: React.FC = () => {
 const DEMOS = [
 	['SimDemo-Population', PopulationDemo], ['SimDemo-Heating', HeatingDemo], ['SimDemo-EnergyProfile', EnergyDemo],
 	['SimDemo-Diprotic', DiproticDemo], ['SimDemo-Circuits', CircuitDemo],
+	...PHYSICS_DEMOS,
 ] as const;
 const Root: React.FC = () => <>{DEMOS.map(([id, C]) => <Composition key={id} id={id} component={C} durationInFrames={LEN} fps={30} width={1920} height={1080} />)}</>;
 registerRoot(Root);

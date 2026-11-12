@@ -17,6 +17,8 @@ export * from './heating';
 export * from './heating-views';
 export * from './energy-profile';
 export * from './energy-profile-views';
+export * from './magnetic-field';
+export * from './magnetic-field-views';
 
 /** Compute a run the first time a scene needs it, not when the file is loaded: const run = lazy(() => runBox({...})). */
 export const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };

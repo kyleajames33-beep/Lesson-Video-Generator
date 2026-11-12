@@ -182,13 +182,31 @@ Heat supplied at a constant power to a substance that melts and boils, in SI uni
 - The energy axis has no numbers: it is a qualitative diagram. Write values in the labels if the lesson needs them.
 - `energyProfile` refuses a hump lower than the products (Ea must be at least ΔH) and a catalysed Ea that is not lower.
 
+### Magnetic fields (`magnetic-field.ts`, drawing in `magnetic-field-views.tsx`)
+
+The field of a straight wire, a bar magnet, a loop and a solenoid, alone or added together, at any point of the page. Field lines are traced by following that field, so the lines, a compass needle and a readout agree.
+
+| Idea | What to use |
+| --- | --- |
+| Field at a point (size and direction) | `magneticFieldAt(sources, x, y)` gives `bx`, `by`, `b`, `angle` |
+| Which way a compass points | `compassAngle(sources, x, y)`; `compasses` on the view |
+| Field lines of a bar magnet | `barLines(sources, bar, count, {bounds})` |
+| Circles round a wire; two wires attracting or repelling | `fieldLines(sources, wireSeeds(wire, radii), {bounds})`; add a second wire to `sources` |
+| Field through a loop or solenoid | `fieldLines(sources, coilSeeds(coil, count), {bounds, step})` |
+| Textbook values for a readout | `wireField`, `loopCentreField`, `solenoidField`, `forceBetweenWires` |
+
+- The page is a slice: a wire runs through it (positive current comes out of the page); a bar magnet and the axis of a loop or solenoid lie in it. A loop or solenoid is drawn cut through, as dots on one side and crosses on the other.
+- Trace the lines once with `lazy`, outside the component. A solenoid line costs the most; use `step` and `maxSteps` to keep it short.
+- A bar magnet is two point poles, so its lines are drawn outside the magnet only. Give `strength` (pole strength) to set the size of its field.
+- `MagneticFieldView` takes `reveal` (0 to 1) to grow the lines, and `poles` for the letters on a bar. It draws diagrams, not real equipment.
+
 ### Time graphs (`series-views.tsx`)
 
 `SeriesGraph` is the one line graph behind the population, heating and circuit graphs: several lines with lesson labels and tones, a moving `now`, dashed `marks`, shaded `spans`, hand-written `notes`. Text is at least 30 px. Use it directly for any other quantity against time.
 
 ### Demos
 
-`demos.tsx` is a separate Remotion entry (not in the registry) with one composition per addition above: `SimDemo-Population`, `SimDemo-Heating`, `SimDemo-EnergyProfile`, `SimDemo-Diprotic`, `SimDemo-Circuits`. Open it with `npx remotion studio src/explainer/sims/demos.tsx`.
+`demos.tsx` is a separate Remotion entry (not in the registry) with one composition per addition above: `SimDemo-Population`, `SimDemo-Heating`, `SimDemo-EnergyProfile`, `SimDemo-Diprotic`, `SimDemo-Circuits`, and the physics pieces listed in `demos-physics.tsx` (`SimDemo-MagneticField` and those that follow). Open it with `npx remotion studio src/explainer/sims/demos.tsx`. For stills, `node scripts/explainer-sim-stills.mjs SimDemo-MagneticField:200` writes to `out/explainer/sims-demos/` and holds the stills lock.
 
 ### Drawing (`views.tsx`)
 
