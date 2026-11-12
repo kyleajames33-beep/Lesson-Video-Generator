@@ -57,3 +57,15 @@ R4. **Narration added to reach 5,500 characters is accepted** (Physics FA3 U7; B
 ## Next
 - The upgrade session applies the design-text items above (the v18 sentence, v09 tag, v22 fallback, v04 title) in its next pass.
 - Root writes the Codex error-check and plate briefs for the upgraded Y11 Physics and Biology designs once the Chemistry upgrade lands, so that Codex gets them as one batch.
+
+## Year 11 Chemistry Modules 1 to 4 (root, 13 November 2026)
+This answers the upgrade calls U1 to U15 in `root-decisions-chem-y11-m1.md`, and U1 to U10, U1 to U9 and U1 to U9 in the `-m2`, `-m3` and `-m4` files. **Every call not named below is accepted as written.**
+
+- **R1 to R3 apply to Year 11 Chemistry too.** This replaces M1 U12's "red is kept for student slips": a slip gets a slate scribble and a slate hand tag, as in Physics and Biology. In Chemistry red already means oxygen in atom drawings, and the indicator and flame colours need red and pink. R2 settles M1 U10 and M3 U9: builders draw every "faint", "grey", "dimmed" or "ghost" join frame solid on both sides, and draw the small glyphs in final frames as plain chips.
+- **M1 U2, v19:** the scene 16 sentence ("with the oxide ion") goes to the brief 242 error check before wave 7 voices v19.
+- **M1 U3:** the chlorine jar anchors are accepted. Where a scene's narration names a different period 3 element, the builder may use that element's sample from the v12 row instead.
+- **M1 U4 and M4 U4: kit work.** Three items join the sims work after the population engine: a heating-curve engine (M1 v02, ws-v01), a shared energy-profile component (M4 v01, v05 and their question cards) and a two-step titration in the titration engine (M2 v14). Until each exists, the lesson-coded versions in the designs stand.
+- **M1 U6:** the two new plates (snack-pack carton and halogen vials) go to brief 242. Their fallbacks apply if they are not delivered before the build.
+- **M2 U3 and M3 U3:** hiding method aids during countdowns is accepted. Every supplied value and condition stays on the card.
+- **M4 U3:** m4-v12 attempt 2's molecule models are **replaced** with a sealed reaction vessel plate, or the plain card if no plate fits. Counting the models gives the answer, so they break the answer-free picture rule. The other stand-ins are accepted.
+- **M4 U8:** the three confirmations go to brief 242.

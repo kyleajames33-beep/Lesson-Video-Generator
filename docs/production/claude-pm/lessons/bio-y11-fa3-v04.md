@@ -263,7 +263,7 @@ Error-only report to `../checks/` (root names the check number). Check against a
 
 ## YouTube metadata (draft)
 
-- Title: "From One Finch to Fifteen Species: How Isolation Makes New Species | Year 11 Biology"
+- Title: "From One Finch to More Than a Dozen Species: How Isolation Makes New Species | Year 11 Biology" (root, 13 Nov, to match the speech)
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year11/fa3-evolution-and-ecosystems/lesson04.sa.html
