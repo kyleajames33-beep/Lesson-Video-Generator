@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V12: Preparing a standard solution. How do we prepare a standard solution accurately? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,291 characters, 18 scenes, about 562 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,16 @@ Handoff: chem-y11-m2-v13, dilution keeps the moles.
 - **Opening frame:** m2-v11's final frame exactly (reconciled by root, 5 November; see Decisions).
 - **Final frame (m2-v13 opens on it):** at the left, the stoppered volumetric flask (`m6-volumetric-flask-v1.png`, coded colourless fill to the mark) labelled "Na₂CO₃ 0.1003 mol L⁻¹ (standard)"; at the centre the bulb pipette with filler (`m6-volumetric-pipette-filler-v1.png`), unlabelled; at the right a second, empty volumetric flask labelled "250.0 mL" with a violet chip "need 0.01003 mol L⁻¹"; two small option chips under it, "weigh 0.2657 g again?" (greyed) and "take some, add water?" (amber); the c = n ÷ V gauge small at the top right; the chip "Next: Why does dilution preserve the moles in the transferred sample?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the empty flask and its label, scene 1 (about 29 s); (B) the bench and the four tests of a primary standard, scenes 2 and 3 (about 63 s); (C) the calculation board, scene 4 (about 30 s); (D) weighing, then dissolving in the beaker, scenes 5 and 6 (about 48 s); (E) the funnel and every rinse into the flask, scene 7 (about 42 s); (F) filling to the mark with the neck magnifier, scenes 8 and 9 (about 44 s); (G) neck close-up with the volume slider, scene 10 (about 26 s); (H) mixing and the real concentration, scene 11 (about 35 s); (I) the error board, scene 12 (about 28 s); question and feedback cards; the handoff; the notes board. The volumetric flask is on screen from scene 7 to scene 11 (about 147 s), so scene 10 is now a full-frame close-up of the neck, which makes four different set-ups of at most about 44 s each.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -125,6 +135,8 @@ Visual: the magnifier shows the meniscus a little above the line (rose tag "one 
 
 Visual: "too low" ticks. On "smaller" the volume slider runs (simulation): the meniscus in the magnifier moves from 249.0 mL up through the mark to 251.0 mL while the teal readout "n = 0.02507 mol" stays fixed and the violet readout "c" updates 0.1007 → 0.1003 → 0.0999 mol L⁻¹ (52 px); grey tag "volumes exaggerated: one drop is about 0.05 mL"; rose down-arrow and rose hand tag "more V, same n → lower c". The slider settles just above the mark. On "it" a coded dropper draws liquid out of the neck and the particle lens shows dots leaving with it (rose tag "solute removed too"); a red cross over the chip "take a little out". On "high" the slider drops below the mark; V shrinks, the c readout rises (amber up-arrow, amber hand tag "short → higher"). The card "over the mark → c lower" files to "lower"; "short of the mark → c higher" files to a "higher" tray. The "V known" padlock clicks shut on the correct level.
 
+Upgrade (Revision 3): Board change to the neck close-up: the neck magnifier fills the frame height at the centre (the etched mark and the meniscus drawn large), with the whole flask as a thumbnail (about 220 px) at the top left and the two readouts at the right. The slider and its readouts run as written.
+
 ### 11. mix, then the real concentration
 > Last, put the stopper in, and turn the flask upside down ten times or more, so the solution is the same all the way **through**. Otherwise the water you added last sits near the top, and a sample from there would be too dilute. Now the real concentration. Two point six five seven grams is zero point zero two five zero seven moles, in zero point two five zero zero litres. That's zero point one zero zero three moles per **litre**, and that's the number that goes on the **label**.
 
@@ -140,39 +152,45 @@ Visual: the error board: three columns, "lower" (rose), "higher" (amber), "no ef
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student prepares 250.0 mL of a 0.0500 mol L⁻¹ standard solution of potassium hydrogen phthalate (KHC₈H₄O₄, MM = 204.22 g mol⁻¹). Calculate the mass of potassium hydrogen phthalate that must be weighed. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the gauge dims to an outline).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted volumetric flask (`m6-volumetric-flask-v1.png`, about 300 px tall), untagged. Card text 38 px. The fill gauge is not shown during the countdown (not even as an outline).
+
 ### 14. feedback 1 (brief)
 > n equals c times V. Zero point zero five zero zero times zero point two five zero zero is zero point zero one two five zero moles. Times two hundred and four point two two, that's two point five five three grams. Leave the volume in millilitres and you'd get two thousand five hundred and fifty-three grams, two and a half kilograms, which can't be **right**.
 
 Visual: card shrinks to the top. Rows (44 px): "n = 0.0500 × 0.2500 = 0.01250 mol"; "m = 0.01250 × 204.22 = 2.553 g" (amber), framed in a dark-ink box with a green tick. On "right" a chip "2553 g (V left in mL)" fades in and is crossed in red, red hand tag "2.5 kg? litres!". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "V = 250.0 mL | c = 0.0500 mol L⁻¹ | MM = 204.22 g mol⁻¹".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A student forgot to dry the sodium carbonate, and it had absorbed some water from the air. They weighed it, made the solution correctly, and calculated the concentration from the mass. Is the true concentration higher or lower than their calculated value? Explain. Pause here to answer.
 
 Visual: `QuestionCard`: "A student prepared a standard solution from sodium carbonate that had not been dried and had absorbed water from the air. The rest of the method was correct, and the concentration was calculated from the mass weighed. Explain whether the true concentration of the solution is higher or lower than the calculated value. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." The error board stays hidden.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted balance with a watch glass (`m8-balance-watch-glass-v1.png`, about 300 px), untagged. Card text 38 px. Nothing answer-bearing; the error board stays hidden.
+
 ### 16. feedback 2 (brief)
 > Lower. Part of the weighed mass was water, so there's less sodium carbonate, and fewer moles, than the calculation assumed. Same volume, fewer moles, lower concentration. Saying higher, because the mass was bigger, confuses the mass on the balance with the moles in the **flask**.
 
 Visual: card shrinks. A balance readout "2.657 g" splits into a large amber block "Na₂CO₃" and a small blue block "water"; arrow chain "n lower → c lower" (rose). The answer "lower" is framed in a dark-ink box with a green tick. On "flask" a chip "higher: the mass was bigger" fades in and is crossed in red, red hand tag "mass ≠ moles". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "sodium carbonate not dried: it had absorbed water | concentration calculated from the mass weighed".
 
 ### 17. conclusion and handoff
 > So an accurate standard needs a pure, stable solid, the actual mass you weighed, every grain transferred, and the volume made up exactly to the mark. Now suppose you need a solution ten times weaker. You could weigh about a quarter of a gram and start again, but that's much harder to weigh precisely. Or you could take some of this solution and add water. When you dilute it, what happens to the **moles**?
 
 Visual: the four steps light as a strip at the top: "pure, stable solid" → "actual mass recorded" → "every grain in" → "exactly to the mark". On "ten times weaker" the board clears to the final frame's layout: the standard flask at the left; on "a quarter of a gram" the chip "weigh 0.2657 g again?" writes and greys (tag "0.001 g is about 0.4% of it"); on "take some of this solution" the pipette plate appears at the centre and the empty flask at the right with "need 0.01003 mol L⁻¹" and the amber chip "take some, add water?". On "moles" the chip "Next: Why does dilution preserve the moles in the transferred sample?" writes. Hold about 2 seconds. This is the final frame (m2-v13 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Standard solution: concentration accurately known. c = n ÷ V, so n and V must both be accurate.
-2. Primary standard: pure, stable in air, high MM, dissolves (dried Na₂CO₃, cooled in a desiccator). NaOH fails.
+1. Standard solution: concentration accurately known, so n and V must both be accurate.
+2. Primary standard: pure, stable in air, high MM, dissolves fully. NaOH fails.
 3. Weigh into a beaker; record the actual mass; dissolve in distilled water.
 4. Rinse everything into the flask; cool; fill to the mark (meniscus at eye level); invert.
 5. Solute lost or over the mark → c lower; short → higher; wet flask → no effect.
 
-Memory aid (framed card on the notes screen, as in scene 12): *Every grain in, not a drop over.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 12): *Every grain in, not a drop over.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -227,6 +245,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,291 characters**, 18 scenes (Revision 1 was 6,230; scenes 1, 3, 7 and 17 reworded for brief 181, +61). At 13.3 characters per second the speech is about 473 s; add about 10 s of settling (the bench build in 2, the rinse sequence in 7, the fill in 8, the volume slider in 10, the inversions in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 562 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (6,291 characters). The notes scene is 45 s in all, so the estimate is about 550 s (it was about 562 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v12` (route chem-y11-m2-v12; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v12`.
@@ -236,6 +256,8 @@ In order (18 scene headings, all `### N.`): hook-label, not-any-solid, primary-s
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: assumed m2-v11 final frame into scene 1 by camera continue; 1 to 2 clear change to the bench; 2 to 3 camera continue; 3 to 4 stage change to the full-width calculation (Revision 2); 4 to 5 stage change back to the bench; 5 to 11 camera continue along the bench (each apparatus slides in as its step starts, the previous one dims; the neck magnifier with the volume slider in 8 to 10 is its own stage); 11 to 12 camera continue (the filed cards gather into the error board); attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v12-learning-review.md`, `checks/c-y11-m2-v12-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all. Transition 9 to 10 is now a board change to the neck close-up.
 
 ## Assets
 
@@ -257,6 +279,8 @@ Need (new plates, Codex): none (Revision 2 adds none).
 
 Coded: c = n ÷ V gauge with padlocks, volume slider and c readout, framed answers, hand tags and pen marks, memory card, readouts, share bars, criteria cards, particle lens and rinse film, streams and drops, fill gauge and magnifier with sight line, mixing streaks, error board, calculation rows, chips, attempt cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m6-volumetric-flask-v1.png` (attempt 1), `m8-balance-watch-glass-v1.png` (attempt 2). New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M2 v12)
 
 No new plates. Codex confirms the alpha and relative scale of `m6-volumetric-flask-v1.png`, `m6-beaker-v1.png`, `m6-funnel-v1.png` and `m6-wash-bottle-v1.png` side by side on the dark board (the funnel must sit in the flask neck without rescaling either beyond uniform scaling).
@@ -271,6 +295,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Root reconciles the opening frame with m2-v11's actual final frame; send this final frame to the m2-v13 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -317,3 +343,23 @@ Visual upgrade (light pass):
 - Plates: existing `m8-desiccator-v1.png` and `m8-drying-oven-v1.png` added (inspected). No new plate requests.
 
 Counts: 6,230 to 6,291 characters (sum of scene strings); about 555 to about 562 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Cut: scene 10 becomes a full-frame close-up of the flask neck with the volume slider, so the flask set-up of scenes 7 to 11 (about 147 s) is broken into four stages.
+- Question cards: attempt 1 gains the volumetric flask and loses the outlined gauge during the countdown; attempt 2 gains the balance with a watch glass; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: the worked example of a primary standard ("dried Na₂CO₃, cooled in a desiccator"; kept in scene 3).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,291 characters, unchanged; about 550 s (it was about 562 s).
+
+Calls for root: none.

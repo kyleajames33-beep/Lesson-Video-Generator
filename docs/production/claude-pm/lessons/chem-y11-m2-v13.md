@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V13: Dilution. Why does dilution preserve the moles in the transferred sample? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,665 characters, 15 scenes, about 513 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,16 @@ Handoff: chem-y11-m2-v14, solution mole ratios.
 - **Opening frame:** m2-v12's final frame exactly (Decisions).
 - **Final frame (m2-v14 opens on it):** at the left the standard flask "Na₂CO₃ 0.1003 mol L⁻¹ (standard)" with the pipette beside it; at the right the beaker plate `m6-beaker-v1.png` with a colourless coded fill, labelled "HCl(aq), about 0.2 mol L⁻¹?" and an amber chip "exact c = ?"; above, the equation strip "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂"; the c = n ÷ V gauge at the top right; the chip "Next: How do solution mole ratios determine an unknown concentration?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the standard flask and the pipette, scene 1 (about 30 s); (B) the particle lens with the dilution slider, scene 2 (about 36 s); (C) the three-volume strip, scene 3 (about 31 s); (D) the calculation board and the one-line rule, scenes 4 and 5 (about 68 s); (E) the bench method and the two rinses, scenes 6 and 7 (about 69 s; the pipette lens opens at scene 7); (F) working backwards with acid, scene 8 (about 42 s); (G) the two checks, scene 9 (about 26 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 69 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -124,27 +134,35 @@ Visual: two check cards (44 px). "Check 1: c₂ < c₁" with the worked example'
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "20.0 mL of 0.500 mol L⁻¹ sodium chloride solution is diluted by adding 80.0 mL of distilled water. Assume the volumes add. Calculate the concentration of the diluted solution. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the check cards hidden).
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted beaker of colourless solution (`y11c-beaker-colourless-solution-v1.png`, about 280 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 11. feedback 1 (brief)
 > Taking the volumes as adding, the final volume is twenty point zero plus eighty point zero, one hundred point zero millilitres. c two equals zero point five zero zero times twenty point zero, over one hundred point zero, which is zero point one zero zero moles per litre. Using eighty as V two gives zero point one two five, the classic slip when water is **added**.
 
 Visual: card shrinks to the top. Rows (44 px): "V₂ ≈ 20.0 + 80.0 = 100.0 mL (volumes assumed to add)"; "c₂ = 0.500 × 20.0 ÷ 100.0 = 0.100 mol L⁻¹" (violet), framed in a dark-ink box with a green tick. On "added" a chip "0.125 mol L⁻¹ (V₂ = 80.0 mL)" fades in and is crossed in red, red hand tag "V₂ is the total". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "20.0 mL of 0.500 mol L⁻¹ NaCl | 80.0 mL of water added | volumes add".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. What volume of a two point zero zero moles per litre stock solution is needed to make five hundred point zero millilitres of a zero point one five zero moles per litre solution? Pause here to answer.
 
 Visual: `QuestionCard`: "Calculate the volume of a 2.00 mol L⁻¹ stock solution needed to prepare 500.0 mL of a 0.150 mol L⁻¹ solution by dilution. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted clear bottle of stock solution beside an empty volumetric flask (`y11c-sample-bottle-clear-v1.png`, `m6-volumetric-flask-v1.png`, about 260 px tall each), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > V one equals c two V two over c one. Zero point one five zero times five hundred point zero, over two point zero zero, is thirty-seven point five millilitres of stock, made up to five hundred. Flip the concentrations, and you'd need six point six seven litres, far more than the whole solution you're making. That can't be **right**.
 
 Visual: card shrinks. Rows (44 px): "V₁ = c₂V₂ ÷ c₁"; "V₁ = 0.150 × 500.0 ÷ 2.00 = 37.5 mL" (slate), framed in a dark-ink box with a green tick. On "right" a chip "6670 mL (c₁ and c₂ flipped)" fades in and is crossed in red, with a red hand tag "more than V₂!". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "c₁ = 2.00 mol L⁻¹ | c₂ = 0.150 mol L⁻¹ | V₂ = 500.0 mL".
 
 ### 14. conclusion and handoff
 > So dilution moves a measured amount of solute into a bigger volume. The moles in the aliquot don't change, so c one V one equals c two V two. Now our standard has a job to do. The technician has made up some hydrochloric acid for the class, but its exact concentration isn't known. Sodium carbonate reacts with hydrochloric acid. If a measured amount of our standard reacts with the acid, can the mole ratio tell us the acid's **concentration**?
 
 Visual: the particle transfer replays small at the top left (ten drawn dots, count unchanged) beside the framed memory card and "c₁V₁ = c₂V₂". On "hydrochloric acid for the class" the board clears to the final frame's layout: the standard flask and pipette at the left; at the right the beaker plate with a colourless fill labelled "HCl(aq), about 0.2 mol L⁻¹?" and the amber chip "exact c = ?". On "Sodium carbonate reacts" the equation strip writes above: "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂". On "concentration" the chip "Next: How do solution mole ratios determine an unknown concentration?" writes. Hold about 2 seconds. This is the final frame (m2-v14 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -154,9 +172,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Checks: c₂ < c₁. "Water added": V₂ ≈ V₁ + water (dilute).
 5. Rinse the pipette with stock; wet flask is fine; leave the last drop. Acid into water.
 
-Memory aid (framed card on the notes screen, as in scene 9): *Water adds volume, not moles.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 9): *Water adds volume, not moles.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -207,6 +223,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,665 characters**, 15 scenes (Revision 1 was 5,616; scenes 1, 3, 6, 9 and 11 reworded for brief 181, +49). At 13.3 characters per second the speech is about 426 s; add about 8 s of settling (the particle transfer in 1, the dilution slider in 2, the equation build in 5, the pipette sequence and drain timer in 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 513 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,665 characters). The notes scene is 45 s in all, so the estimate is about 501 s (it was about 513 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v13` (route chem-y11-m2-v13; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v13`.
@@ -216,6 +234,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, same-moles, three-v
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end (as m2-v07 scene 1). Transitions (Revision 2): m2-v12's final frame into scene 1 by camera continue (plates grow); 1 to 2 stage change to the full-height particle lens with the dilution slider; 2 to 3 camera pull back to the bench; 3 to 4 stage change to the full-width calculation; 4 to 5 camera continue; 5 to 6 camera continue (bench returns full width); 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v13-learning-review.md`, `checks/c-y11-m2-v13-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -231,6 +251,8 @@ Need (new plates, Codex): none (Revision 2 adds none).
 
 Coded: particles and count chips, dilution slider and readouts, drain timer, framed answers, hand tags and pen marks, memory card, fills and streams, three-volume strip with ghost bracket, equation build, magnifier and sight line, tip-drop glow, water-film lens, rows, check cards, safety strip and arrows, chips, attempt cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `y11c-beaker-colourless-solution-v1.png` (attempt 1), `y11c-sample-bottle-clear-v1.png` and `m6-volumetric-flask-v1.png` (attempt 2). New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M2 v13)
 
 No new plates. Codex confirms that `m6-volumetric-pipette-filler-v1.png` reads correctly when rotated about 20° over the neck of `m6-volumetric-flask-v1.png` at a matched scale (pipette tip inside the neck, no clipping), on the dark board.
@@ -245,6 +267,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m2-v12's final frame, and send the final frame to the m2-v14 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -296,3 +320,22 @@ Visual upgrade (light pass):
 - No new plate requests.
 
 Counts: 5,616 to 5,665 characters (sum of scene strings); about 507 to about 513 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains a beaker of solution; attempt 2 gains a stock bottle and an empty volumetric flask; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,665 characters, unchanged; about 501 s (it was about 513 s).
+
+Calls for root: none.

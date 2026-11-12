@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V04: Processing data and information. How do raw chemistry readings become a usable table or graph? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 214 error-check finding resolved by root; ready to voice.
 
 Narration 5,847 characters, 17 scenes, about 524 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -58,6 +58,16 @@ Entry knowledge: Stage 5 tables and graphs; m2-v04; ws-v02, ws-v03.
 Stops after: selecting, tabulating, processing, a reasoned exclusion, format choice, graph conventions and the gradient. No error types or uncertainty.
 Handoff: ws-v05, uncertainty and the limits of a result.
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the notebook page beside the burette plates, scenes 1 and 2 (about 61 s); (B) the table stage, scenes 3 and 4 (about 51 s); (C) the burette stage with its live readouts, then the spreadsheet column, scenes 5 and 6 (about 50 s); (D) the anomaly stage and its include or exclude toggle, scenes 7 and 8 (about 60 s); (E) the format carousel, scene 9 (about 23 s); (F) the graph, its best-fit line and its gradient, scenes 10 and 11 (about 78 s); question and feedback cards; the finished graph; the notes board. No set-up runs past about 78 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change.
@@ -100,7 +110,7 @@ Visual: stage change to the anomaly stage (stage E): the MM column (F) and run l
 ### 8. leave it out, with a reason, then repeat it
 > So leave run three out of the average, but don't delete it. Keep it in the table, marked, with the reason written **underneath**. The mean of the other four is twenty-four point five. With run three in, it would be twenty-five point eight, dragged away by one faulty **run**. The best fix is to repeat run three. The other four already agree closely, so they're precise, and a consistent repeat would make the whole set more **reliable**.
 
-Visual: run 3's row stays, greyed with a rose ring; on "underneath" a reason line writes under the table: "Run 3 not used: ribbon floated and some H₂ escaped (see note)". On "run" the include/exclude toggle appears beside run 3 (the simulation): a live readout "mean = 24.5 g mol⁻¹" (52 px, teal) with the toggle at "run 3 out"; the toggle flips to "run 3 in" and the readout jumps to "25.8" (rose) as the run 3 cell lights, then flips back to "24.5"; the "24.5 g mol⁻¹" row (runs 1, 2, 4, 5) is framed with a green tick and a ghost "mean of all five = 25.8" is crossed in red, red hand tag "dragged by one faulty run". The result box updates: "mean: 24.5". Earlier, on "underneath", a teal hand tag "keep it, mark it, say why". On "reliable" a teal chip writes "improve: repeat run 3", with grey glosses from ws-v02 and ws-v03: "precise: repeated values agree closely" and "reliable: repeating the whole experiment gives consistent results".
+Visual: run 3's row stays, greyed with a rose ring; on "underneath" a reason line writes under the table: "Run 3 not used: ribbon floated and some H₂ escaped (see note)". On "run" the include/exclude toggle appears beside run 3 (the simulation): a live readout "mean = 24.5 g mol⁻¹" (52 px, teal) with the toggle at "run 3 out"; the toggle flips to "run 3 in" and the readout jumps to "25.8" (rose) as the run 3 cell lights, then flips back to "24.5"; the "24.5 g mol⁻¹" row (runs 1, 2, 4, 5) is framed with a green tick and a ghost "mean of all five = 25.8" is crossed in red, red hand tag "dragged by one faulty run". The result box updates: "mean: 24.5". Earlier, at the "underneath" cue, a teal hand tag "keep it, mark it, say why". On "reliable" a teal chip writes "improve: repeat run 3", with grey glosses from ws-v02 and ws-v03: "precise: repeated values agree closely" and "reliable: repeating the whole experiment gives consistent results".
 
 ### 9. choosing a format
 > A table keeps every value. But to see the pattern, draw a graph. Which kind? Both the mass and the volume are measured numbers that can take any value in between, so plot them as points on a scatter graph. A column graph is for separate categories, like comparing different **metals**, so it's the wrong choice **here**.
@@ -122,39 +132,45 @@ Visual: a gradient triangle draws under the line from (0, 0) to (0.040, 40.36): 
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "A student heats 2.50 g of hydrated copper(II) sulfate crystals in a crucible (empty crucible 24.33 g) and records the mass of the crucible and contents every 2 minutes: 0 min 26.83 g; 2 min 26.31 g; 4 min 26.02 g; 6 min 25.94 g; 8 min 25.93 g; 10 min 25.93 g. Construct a table with suitable headings for these results, including one processed column showing the mass of water lost." The full question stays on screen with the crucible plate `y11c-cuso4-crucible-blue-v1.png` small beside it. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): Card text 38 px, with the six readings set as one tidy line of data at 34 px. The crucible plate is about 260 px.
+
 ### 13. feedback 1 (brief)
 > Time goes first, because it's the independent variable. Then the mass of the crucible and contents, in grams. The processed column is the mass of water lost, the first reading minus each reading, so zero, zero point five two, up to zero point nine **zero**. Units belong in the headings. Writing grams in every cell, with no quantity in the heading, is the classic **slip**.
 
 Visual: card shrinks to the top. A `DataTable` writes: headings "time (min)", "mass of crucible and contents (g)", "mass of water lost (g)" (teal processed band); rows fill: 0, 26.83, 0.00; 2, 26.31, 0.52; 4, 26.02, 0.81; 6, 25.94, 0.89; 8, 25.93, 0.90; 10, 25.93, 0.90. On "zero" (the last word of the third sentence) the processed column glows with "26.83 − reading". The finished table is framed with a green tick. On "slip" a chip table "Time | Mass" with "26.83 g" in a cell fades in and is crossed in red, red hand tag "quantity (unit) in the heading". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "2.50 g of crystals | empty crucible 24.33 g | a reading every 2 min, 26.83 g down to 25.93 g".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. What type of graph should the student draw for these results, and how should the points be joined? Justify your answer. Pause here to answer.
 
 Visual: `QuestionCard`: "For the copper sulfate results above, state the type of graph the student should draw, which variable goes on each axis, and how the points should be joined. Justify your choices." The table from scene 13 stays small beside the card. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the crucible plate (about 220 px) above the small table from scene 13, so the card has its picture and its data. Card text 38 px. Nothing answer-bearing (no axes drawn).
+
 ### 15. feedback 2 (brief)
 > A line graph, with time across and mass of water lost up, because both are continuous measurements. Draw a smooth curve of best fit that levels off at zero point nine zero grams, because the loss slows as the water runs **out**. It isn't a straight line, and it isn't dot to dot. A column for each reading is the classic **slip**.
 
 Visual: card shrinks to the top. A small `DataGraph`: "time (min)" across, "mass of water lost (g)" up; six crosses; on "out" a smooth curve of best fit rises and levels at 0.90 g, framed answer chip "line graph, smooth curve" with a green tick, teal hand tag "levels off: water all gone". On "slip" a column graph of the six readings fades in and is crossed in red, red hand tag "time is continuous". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "time (min) | mass of water lost (g) | six readings".
 
 ### 16. handoff: is the gap real?
 > So the class's raw readings became one result, twenty-four point six grams per mole, from a graph that uses every good run. The accepted value is twenty-four point three one. Is that gap a real difference, or is it within the limits of the measurements we **made**? Next time, we'll judge uncertainty, and the limits of a chemistry **result**.
 
 Visual: board clears to the finished magnesium graph (final frame, see "Opening frame and final frame"), the processed table small at the left. On the second sentence a gold chip "accepted: 24.31 g mol⁻¹" writes beside the result box. On "made" a violet "± ?" tag writes beside "24.6" and a small bracket spans 24.31 to 24.6. On "result" the chip writes: "Next: How do we judge uncertainty and the limits of a chemistry result?". Hold about 2 seconds. This is the final frame (ws-v05 opens on it).
 
-### 17. key notes (quiet, hold about 50 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Raw data: what the instrument showed. Processed data: calculated from it (V = start − end).
-2. Tables: independent variable first; "quantity (unit)" headings; decimal places set by the instrument.
+2. Tables: independent variable first; "quantity (unit)" headings; instrument decimals.
 3. Anomaly: keep it, mark it, give the reason, leave it out of the mean and line; repeat the run.
 4. Continuous data: scatter graph, line or smooth curve of best fit, never dot-to-dot.
 5. Gradient as a result: MM = 24 790 ÷ 1009 = 24.6 g mol⁻¹.
 
-Memory aid (framed card under the notes, hand lettering as in scene 11): *Units in the headings, the pattern in the graph, and a reason for every point you leave out.* Notes 32 px in the role colours; no paragraphs.
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Units in the headings, the pattern in the graph, and a reason for every point you leave out.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -213,6 +229,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,847 characters**, 17 scenes, speech unchanged (Revision 1's headline 5,863 included 16 joining spaces). At 13.3 characters per second the speech is about 440 s; add about 2 s for the burette simulation (6), 2 s for the toggle flips (8, 10), 1 s for the stage cuts, about 3 s for the spreadsheet fill-down (6), 2 s for the graph build (10), 2 s for the memory-line hold (11), 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 84 s): **about 524 s**. Reserve trims if the voiced take runs long: scene 4's last two sentences (the tag stays), scene 9's column-graph sentence (the crossed tile stays), scene 1's fourth sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,847 characters). The notes scene is 45 s in all, so the estimate is about 518 s (it was about 524 s).
+
 ## Opening frame and final frame
 
 - **Opening frame:** m2-v04's final frame exactly (Decisions).
@@ -228,6 +246,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/c-y11-ws-v04-learning-review.md`, `checks/c-y11-ws-v04-science-check.md`.
 
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 5 November on a paper-background contact sheet; scaled uniformly only, never stretched):
@@ -237,6 +257,8 @@ Have (inspected 5 November on a paper-background contact sheet; scaled uniformly
 - `public/assets/chemistry/y11c-cuso4-crucible-blue-v1.png` (requested by m1-v07): scene 12, small.
 
 Need: none new (Revision 2 adds three existing plates). Coded: burette simulation readouts, include/exclude toggle, notebook card, highlighters, `DataTable`, spreadsheet grid and formula bar, hand-check stamp, anomaly rings, format carousel, `DataGraph`, gradient triangle, result box, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). No plate added or removed; the crucible plate is also on the attempt 2 card. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v04)
 
@@ -255,6 +277,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no person, hand or face is drawn or requested.
 9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 10. Confirm the narration character count by script, and that the final frame is described exactly for ws-v05's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -307,3 +331,22 @@ Visual upgrade and scene-level redesign (high-risk list; narration, numbers and 
 Brief 214 error check (`checks/c-y11-ws-v04-rev2-error-check.md`), should-fix finding resolved (root):
 - Scene 6: the stage cut on "That's processed data" is now labelled the fourth sentence (counting "No." as the first). Scene 11: the cut on "One mole of hydrogen" is now labelled the third sentence. Cut phrases unchanged.
 - No speech change. Narration 5,847 characters (sum of 17 scene strings), about 524 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 2 gains the crucible plate above its table; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,847 characters, unchanged; about 518 s (it was about 524 s).
+
+Calls for root: none.

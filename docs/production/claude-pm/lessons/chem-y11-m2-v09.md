@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V09: A mass-balance investigation. How can we measure mass changes while keeping track of escaping gas? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 216 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 216 error-check finding resolved by root; ready to voice.
 
 Narration 6,295 characters, 15 scenes, about 564 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,17 @@ Handoff: chem-y11-ws-v07, communicating a conclusion that evidence supports.
 - **Opening frame:** m2-v08's final frame exactly (Decisions).
 - **Final frame (ws-v07 opens on it):** at the left, the balance with `y11c-flask-acid-plug-spent-v1.png` (no chips, no bubbles) on its pan and the readout "149.80 g"; at the right, the results summary table "run | mass lost (g)": "1 | 0.82", "2 | 0.83", "3 | 0.81", "mean | 0.82"; beside it a gold dashed chip "predicted CO₂: 0.88 g"; under them the small mass-time graph (levelling at 149.80 g); below, an empty card headed "Conclusion:" with a blinking amber cursor; the chip "Next: How do we communicate a chemistry conclusion that evidence supports?".
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the fizzing flask on the balance and its system boundary, scenes 1 and 2 (about 71 s); (B) the prediction on the calculation board, scene 3 (about 45 s); (C) the method at the balance with the plan board, scene 4 (about 44 s); (D) the graph with the time scrubber, scene 5 (about 33 s); (E) the comparison bars, scene 6 (about 30 s); (F) inside the flask, then the no-plug case, scenes 7 and 8 (about 76 s; the camera pulls back to the whole flask at scene 8); (G) what the evidence says, scene 9 (about 32 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 76 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No ghost apparatus.** The "ghost flask with no plug" in scene 8 is a painted open beaker in a dashed inset card.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -115,6 +126,8 @@ Visual: "gas stayed inside" ticks with a grey hand tag "likely"; "mass vanished"
 
 Visual: camera pull back to the full flask. On "without the plug" a ghost flask with no plug: pale-blue droplets fly up and cross the boundary outward (pale-blue hand tag "spray: liquid droplets"), and a faint separate wisp rises from the surface (grey hand tag "a little evaporation"); on "big" an arrow pushes a ghost bar right of the gold, rose hand tag "loss too big". On "each improvement" a two-column card writes (44 px): "problem" and "fix"; on "catches the spray" row "liquid spray out → cotton wool plug", with a teal pen ring round "spray"; on "swirling" row "CO₂ dissolved → swirl gently at the end". On "no gas forms" stage change for one sentence: m2-v01's closed check returns at the right on its own small balance (the two beakers of `y11c-beaker-colourless-solution-v1.png`, then the pour, by code with no hands, ending on `y11c-beaker-white-precipitate-v1.png` and the emptied `m6-beaker-v1.png`), the dashed teal boundary round both beakers and a grey tag "no gas made" (grey tag "first video of this module"); on "same" its readout holds "98.42 g" (52 px) with a teal tick and a teal hand tag "closed: nothing crosses". No capped vessel appears.
 
+Upgrade (Revision 4): The no-plug case is not a ghost flask: it is a solid inset card with a dashed border, titled "no plug", holding the painted open beaker of fizzing marble chips (`m6-marble-chips-acid-v1.png`, about 300 px), with the pale-blue droplets drawn solid crossing its rim. The "faint" wisp is a solid slate wisp.
+
 ### 9. what the evidence says
 > So what does the evidence say about conservation of mass? The balance lost nearly all the mass we predicted, and the small shortfall has a likely cause: some carbon dioxide still inside the system. Nothing suggests mass was destroyed. The open flask lost mass because gas crossed its boundary, and the amount closely matches the equation. That's evidence that supports the law, and it shows our stoichiometry predicts real **masses**.
 
@@ -125,39 +138,45 @@ Visual: comparison bars return full size beside the spent flask plate on the bal
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience") beside `m6-clip-baking-soda-vinegar-fizz-v1.png`: "A student adds 2.10 g of sodium hydrogen carbonate to excess vinegar in an open beaker on a balance. NaHCO₃(s) + CH₃COOH(aq) → CH₃COONa(aq) + H₂O(l) + CO₂(g). The reaction fizzes strongly and the total mass decreases by 1.18 g. (a) Calculate the expected mass of carbon dioxide released. (b) Explain why the measured decrease differs from your answer to (a), and suggest ONE improvement to the method. (H = 1.008, C = 12.01, O = 16.00, Na = 22.99) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): Card text 34 to 38 px so the whole question fits; the fizz plate is about 280 px.
+
 ### 11. feedback 1 (brief)
 > Two point one zero over eighty-four point zero one is zero point zero two five zero moles. One to one, that's one point one zero grams of carbon dioxide. The beaker lost more than that, so something besides carbon dioxide left, mostly liquid spray thrown out by the bubbles. A conical flask with a cotton wool plug catches it. Saying the extra mass was destroyed is the classic **mistake**.
 
 Visual: card shrinks to the top. Rows (44 px): "n(NaHCO₃) = 2.10 ÷ 84.01 = 0.0250 mol"; "n(CO₂) = 0.0250 mol"; "m(CO₂) = 0.0250 × 44.01 = 1.10 g" (gold), framed in a dark-ink box with a green tick; "measured 1.18 g > 1.10 g → liquid spray also left" (grey tag "plus a little evaporated water"); "fix: conical flask + cotton wool plug (catches spray)". On "mistake" a chip "the extra 0.08 g was destroyed" fades in and is crossed in red, red hand tag "mass isn't destroyed". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "2.10 g NaHCO₃ | excess vinegar, open beaker | mass fell by 1.18 g". The fizz plate stays small beside the rows.
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Five point zero zero grams of marble chips react with hydrochloric acid in a flask with a cotton wool plug. The total mass falls from one hundred and fifty-six point four zero grams to a constant one hundred and fifty-five point five two grams, and some chips are still left at the end. Find the mass of carbon dioxide lost, identify the limiting reagent, and explain why five point zero zero grams can't be used to predict the gas. Pause here to answer.
 
 Visual: `QuestionCard`: "5.00 g of marble chips (calcium carbonate) is added to hydrochloric acid in a conical flask with a cotton wool plug on a balance. CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). The total mass decreases from 156.40 g to a constant 155.52 g. Some marble chips remain in the flask at the end. (a) Calculate the mass of carbon dioxide released. (b) Identify the limiting reagent, with a reason. (c) Explain why the mass of carbon dioxide cannot be predicted from 5.00 g of calcium carbonate. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted flask of chips in acid with its plug (`y11c-flask-chips-acid-plug-v1.png`, about 280 px tall), untagged. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > The carbon dioxide lost is zero point eight eight grams. Chips are left over, so the acid ran out first: the acid was the limiting reagent. That means only about two grams of chips reacted. Predicting from all five grams would give two point two zero grams of carbon dioxide, far too **much**.
 
 Visual: card shrinks to the top. Rows (44 px): "m(CO₂) = 156.40 − 155.52 = 0.88 g", framed with a green tick; "chips left → acid limiting", framed with a green tick; "CaCO₃ reacted = 0.88 ÷ 44.01 × 100.09 ≈ 2.00 g". On "much" a chip "predicted from 5.00 g: 2.20 g" fades in and is crossed in red, red hand tag "not all 5.00 g reacted". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "5.00 g of chips | 156.40 g to a constant 155.52 g | some chips remain".
 
 ### 14. conclusion and handoff
 > So, to keep track of escaping gas, draw the boundary and follow the gas. Predict it from the limiting reagent, weigh the whole system until the mass is constant, and explain any gap by how mass crossed the boundary. Our results support conservation of mass. But how would you write that conclusion so a reader trusts it? How do we communicate a chemistry conclusion that evidence **supports**?
 
 Visual: the memory line writes at the top as a framed card (dark-ink frame, teal "Draw the boundary", grey "then follow the gas", 48 px): "Draw the boundary, then follow the gas." On "Predict it" the gold chip "predicted CO₂: 0.88 g" lights; on "until the mass is constant" the balance with the spent flask and readout "149.80 g" returns at the left; on "explain any gap" the summary table writes at the right ("run | mass lost (g)": 1 | 0.82; 2 | 0.83; 3 | 0.81; mean | 0.82) with the small mass-time graph under it. On "write that conclusion" an empty card "Conclusion:" with a blinking amber cursor slides in below. On "supports" the chip "Next: How do we communicate a chemistry conclusion that evidence supports?" writes. Hold about 2 seconds. This is the final frame (ws-v07 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. System: everything on the balance. Gas leaving lowers the reading; a cotton wool plug catches spray.
+1. System: everything on the balance. Escaping gas lowers the reading; a plug catches spray.
 2. Predict the gas from the limiting reagent: 2.00 g CaCO₃ → 0.0200 mol → 0.88 g CO₂.
 3. Start = sum of separate weighings. Weigh until constant mass. Mass lost = start − final.
 4. Loss too small: CO₂ likely kept inside. Loss too big: spray thrown out. Both systematic.
 5. Loss matching the predicted gas supports conservation of mass.
 
-Memory aid (framed card on the notes screen, as in scene 14): *Draw the boundary, then follow the gas.* Notes in role colours at 36 px (gold prediction, teal measurements).
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 14): *Draw the boundary, then follow the gas.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -209,6 +228,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,295 characters**, 15 scenes (Revision 1 was 6,174; scenes 3, 4, 7, 8 and 11 reworded for brief 181, +121). At 13.3 characters per second the speech is about 473 s; add about 12 s of holds and settling (the time scrubber and graph in 5, the cross-section in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 564 s (9.4 minutes)**.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,295 characters). The notes scene is 45 s in all, so the estimate is about 552 s (it was about 564 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v09` (route chem-y11-m2-v09; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v09`.
@@ -218,6 +239,8 @@ In order (15 scene headings, all `### N.`): reading-falls, system, prediction, m
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 6 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): m2-v08's final frame into scene 1 by camera continue (the apparatus grows); 1 to 2 camera push to the flask, then a stage change to the neck close-up; 2 to 3 stage change to the full-width prediction calculation (balance to a thumbnail); 3 to 4 stage change back to the balance and plan board; 4 to 5 stage change to the graph stage with the time scrubber; 5 to 6 clear change (bars); 6 to 7 camera push into the flask; 7 to 8 camera pull back, with a one-sentence stage change to m2-v01's closed check; 8 to 9 camera continue (bars and spent flask); attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: prediction countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v09-learning-review.md`, `checks/c-y11-m2-v09-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -234,6 +257,8 @@ Need (new plates, Codex):
 3. `y11c-flask-acid-plug-spent-v1.png`: essential (scenes 4 (as the flask before the chips), 5, 9, final frame; ws-v07 and m2-v10 open on it). All three delivered (brief 181). Revision 2 adds no new plate request (the precipitate beaker is m2-v01's approved request).
 
 Coded: readouts, time scrubber, boundary, droplets and wisps, plan board, results table, `LineGraph`, comparison bars, inside-the-flask cross-section, chip cluster, framed answers, hand tags and pen marks, cards, countdowns, key notes board and memory card.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `m6-marble-chips-acid-v1.png` (scene 8, the no-plug case), `y11c-flask-chips-acid-plug-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v09)
 
@@ -253,6 +278,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v08's final frame, and that ws-v07 opens on this final frame.
 9. Find a stable reference for the marble chips mass-loss practical (author note b) and check the safety chip against current NSW school guidance.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -316,3 +343,23 @@ Counts: 6,174 to 6,295 characters (sum of scene strings); about 555 to about 564
 Brief 216 error check (`checks/c-y11-m2-v09-rev2-error-check.md`), should-fix finding resolved (root):
 - Scene 3: the result row now writes on "that's zero point eight eight grams" and the prediction chip completes on "the reading will fall by zero point eight eight grams", replacing the stale grams (first) and (second) ordinals (the two-gram given is the first spoken "grams"). Recalculated: 2.00 ÷ 100.09 × 44.01 = 0.879, shown 0.88 g.
 - No speech change. Narration 6,295 characters (sum of 15 scene strings), about 564 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 2 gains the plugged flask; both feedback scenes gain navy givens strips.
+- Scene 8: the ghost flask becomes a painted open beaker in a dashed inset card.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,295 characters, unchanged; about 552 s (it was about 564 s).
+
+Calls for root: an open beaker stands for "the flask without its plug" in scene 8 (no unplugged flask plate exists).

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V17: Boyle's law. How does changing gas volume change pressure at constant temperature? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,759 characters, 16 scenes, about 522 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,6 +73,18 @@ Handoff: chem-y11-m2-v18, Charles's and Gay-Lussac's laws and kelvin.
 - **Opening frame:** m2-v16's final frame exactly (Decisions).
 - **Final frame (m2-v18 opens on it):** at the left, `m8-beaker-hotplate-clear-v1.png` (a beaker of clear water on a hotplate) with the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, rotated upright by code, nozzle down and capped) held in it by a coded clamp, the barrel's lower two thirds under a coded water tint; `c8-thermometer-hot-v1.png` standing in the water; a tag "plunger free: P steady"; at the right, a two-row table "T (°C) | V (mL)": "10 | 50.0", "20 | 51.8"; an amber chip "20 °C is double 10 °C. Why isn't V doubled?"; the conditions strip at the top right "P steady"; the chip "Next: Why do gas volume and pressure laws require kelvin?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the syringe and the data logger, scene 1 (about 29 s); (B) a wall patch at full frame, scene 2 (about 32 s); (C) the volume slider stage, scene 3 (about 36 s); (D) three condition panels, scene 4 (about 28 s); (E) the investigation rig, scene 5 (about 36 s); (F) the results table, scene 6 (about 25 s); (G) two graphs, scene 7 (about 28 s); (H) the origin and the tube zoom, scene 8 (about 34 s); (I) the calculation board, scene 9 (about 36 s); (J) the memory card, scene 10 (about 23 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 36 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** Every window of moving gas particles is a run of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`), with a particle radius of about 3 to 5 px so it behaves like an ideal gas. Counts of wall hits and relative pressure are read from the run and shown as "× start" values. The design's quoted numbers (kPa, mL, mol) stay the ideal values worked out in "Numbers used"; the run is never used to produce a number with a unit. In scene 3 the syringe's particle window is one run with a `volume` timeline that follows the slider (50, 25, 200 mL): the hit counter reads the run, while "P" and "P × V" show the ideal values (200, 400, 50 kPa; 10 000 kPa mL). In scene 4 the "warms up" panel is a run with a `temperature` timeline and the "leak" panel a run that uses `remove`.
+- **No coded icons of real things.** The thermometer icon on the conditions strip is a thumbnail of the painted thermometer (`c8-thermometer-hot-v1.png`).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -132,27 +144,35 @@ Visual: the memory line writes large as a framed card in the explainer's handwri
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A sample of gas occupies 4.00 L at 120 kPa. The pressure is lowered to 80.0 kPa at constant temperature. Calculate the new volume of the gas. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, about 420 px wide, one uniform scale), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > V two is P one V one over P two, which is a hundred and twenty times four, over eighty, six point zero zero litres. Lower pressure means a bigger volume, so the answer should grow. Two point six seven litres means the ratio was flipped, and the volume shrank when it should have **grown**.
 
 Visual: card shrinks to the top. Rows: "V₂ = P₁V₁ ÷ P₂ = 120 × 4.00 ÷ 80.0 = 6.00 L" (slate), framed in a dark-ink box with a green tick; chip "P ↓ so V ↑". On "grown" a chip "2.67 L (ratio flipped)" fades in and is crossed in red (red hand tag "V shrank: wrong way"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "V₁ = 4.00 L | P₁ = 120 kPa | P₂ = 80.0 kPa | constant temperature".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A student measures the pressure and volume of air in a sealed syringe at constant temperature. Describe the graph the student should draw to show that the data support Boyle's law, and what the graph should look like. Pause here to answer.
 
 Visual: `QuestionCard`: "A student measures the pressure and volume of air trapped in a sealed syringe at constant temperature. Describe the graph the student should draw to show that the data support Boyle's law, and the shape the graph should have. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no graph on screen).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted pressure sensor (`y11c-gas-pressure-sensor-v1.png`, about 280 px), untagged. Card text 38 px. Nothing answer-bearing (no graph).
+
 ### 14. feedback 2 (brief)
 > Plot pressure against one over volume. If Boyle's law holds, the points lie on a straight line through the origin, because pressure is proportional to one over volume. Pressure against volume gives a curve, so expecting a straight line sloping down on that graph is the classic **slip**.
 
 Visual: card shrinks. A small `LineGraph` "P against 1/V": points on a straight line through the origin, framed in a dark-ink box with a green tick. Beside it a small "P against V" curve. On "slip" a chip "P against V: a straight line sloping down" fades in and is crossed in red (red hand tag "that one curves"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "pressure and volume of trapped air | sealed syringe | constant temperature".
 
 ### 15. conclusion and handoff
 > So squeezing a gas raises its pressure, because the same particles crowd into less space and hit each part of the wall more often. At constant temperature, P times V stays the same. But what if the temperature changes? Stand the syringe in cold water at ten degrees, with the plunger free to move, so the pressure stays the same. It reads fifty millilitres. Warm the water to twenty degrees, double the Celsius number, and the volume only creeps up to about fifty-two. So why do gas volume and pressure laws require **kelvin**?
 
 Visual: the memory line returns small at the top with the navy Boyle card. On "what if the temperature changes" the board clears to the final frame's layout: `m8-beaker-hotplate-clear-v1.png` with the syringe upright and capped in it (coded clamp; coded water tint over the lower barrel), `c8-thermometer-hot-v1.png` in the water. On "plunger free to move" tag "plunger free: P steady"; conditions strip "P steady". On "fifty millilitres" the thermometer label "10 °C" and table row "10 | 50.0". On "twenty degrees" the hotplate glows faintly, the label changes to "20 °C", the plunger rises slightly and row "20 | 51.8" writes. On "double the Celsius number" the amber chip "20 °C is double 10 °C. Why isn't V doubled?". On "kelvin" the chip "Next: Why do gas volume and pressure laws require kelvin?" writes. Hold about 2 seconds. This is the final frame (m2-v18 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -162,9 +182,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Test: plot P against 1/V for a straight line through the origin.
 5. Limitation: gas hidden in the tube, so use a short tube.
 
-Memory aid (framed card, on the notes screen): *Half the room, twice the hits.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering, slate and red as in scene 10): *Half the room, twice the hits.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -222,6 +240,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,759 characters**, 16 scenes (Revision 1: 5,763). At 13.3 characters per second the speech is about 433 s; add about 10 s of settling (the volume slider in 3, the leak-check hold in 8, plus (the wall-patch counters in 2, the stepping plunger in 5, the graph build in 7, the tube zoom in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 522 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,759 characters). The notes scene is 45 s in all, so the estimate is about 509 s (it was about 522 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v17` (route chem-y11-m2-v17; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v17`.
@@ -231,6 +251,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, twice-the-hits, pv-
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v16's final frame into scene 1 by camera continue (the logger slides in); 1 to 2 camera continue (the wall patch opens); 2 to 3 camera continue; 3 to 4 camera continue; 4 to 5 clear change (the rig at full width); 5 to 6 camera continue (the table writes as the plunger steps); 6 to 7 camera continue; 7 to 8 camera continue (zoom to the origin, then to the tube); 8 to 9 clear change; 9 to 10 camera continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v17-learning-review.md`, `checks/c-y11-m2-v17-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -245,6 +267,8 @@ Need (new plates, Codex):
 1. `y11c-gas-pressure-sensor-v1.png`: essential (scenes 5 to 8; m2-v18 reuses it for the fixed-volume flask).
 
 Coded: syringe scale ticks and particle window, connecting tube and cable, logger readout, wall patch and counters, push bars, PV and results tables, `LineGraph`s, tube zoom, clamp, water tint, calculation rows, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): the syringe pair on the attempt 1 card, `y11c-gas-pressure-sensor-v1.png` on the attempt 2 card, `c8-thermometer-hot-v1.png` as the conditions-strip thumbnail. New plate requests: none. Simulation: the particle box engine for every gas window.
 
 ## Codex asset brief (Year 11 Chemistry M2 v17)
 
@@ -264,6 +288,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v16's final frame, and send the final frame to the m2-v18 designer.
 9. Confirm every pressure is absolute (scene 5 tag), scene 8 presents hidden tube gas as a possible cause with the leak alternative, and the final-frame tags read "P steady" (brief 182 findings 1 to 3).
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -314,3 +340,23 @@ Visual upgrade (high-risk design: scene-level redesign of the long stretches; te
 - No new plate requests: `y11c-gas-pressure-sensor-v1.png` was delivered by brief 182 and inspected (fit), with the syringe, logger, beaker-on-hotplate and thermometer plates.
 
 Counts: 5,759 characters (Revision 1: 5,763); about 520 to about 522 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The particle windows are named as particle box runs (a `volume` timeline in scene 3; `temperature` and `remove` in scene 4); quoted values stay the ideal ones.
+- Question cards: attempt 1 gains the syringe and attempt 2 the pressure sensor; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,759 characters, unchanged; about 509 s (it was about 522 s).
+
+Calls for root: the particle box supplies motion and relative counts only; every number with a unit stays the ideal value.

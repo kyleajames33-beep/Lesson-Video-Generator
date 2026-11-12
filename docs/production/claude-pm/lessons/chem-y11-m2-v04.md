@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V04: Measuring molar mass in a practical. How can measuring a mass and a gas volume reveal a molar mass? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 214 error-check finding resolved by root; ready to voice.
 
 Narration 6,331 characters, 19 scenes, about 556 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -65,6 +65,16 @@ Main question: *How can measuring a mass and a gas volume reveal a molar mass?*
 Entry knowledge: m2-v01 to v03; ws-v02, ws-v03.
 Stops after: two methods, gas conditions, losses and their direction, the weak reading, the comparison. No percentage uncertainty, no gas laws.
 Handoff: ws-v04, tables and graphs from the class's raw readings.
+
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the balance, ribbon and flask, scene 1 (about 24 s); (B) three boxes of gas, scene 2 (about 35 s); (C) the equation and the one-to-one map, scene 3 (about 30 s); (D) the upturned burette with its live readouts, scene 4 (about 24 s); (E) the calculation board, scene 5 (about 37 s); (F) the burette again with losses, scenes 6 and 7 (about 37 s); (G) the reading window, scene 8 (about 32 s); (H) the water-bath stage, scenes 9 and 10 (about 59 s); (I) the calculation board, scene 11 (about 36 s); (J) the wet flask, scene 12 (about 18 s); (K) the compare table, scene 13 (about 29 s); question and feedback cards; the notebook page; the notes board. No set-up runs past about 59 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
 
 ## Script and shots
 
@@ -140,39 +150,45 @@ Visual: the `CompareTable` builds: columns "element: magnesium" and "compound: v
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "0.150 g of zinc reacts completely with excess dilute hydrochloric acid: Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g). The hydrogen collected has a volume of 56.9 mL at 25 °C and 100 kPa. Calculate the molar mass of zinc. (Molar volume of a gas at 25 °C and 100 kPa = 24.79 L mol⁻¹)". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted zinc in acid (`m6-zinc-acid-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 15. feedback 1 (brief)
 > Fifty-six point nine millilitres is zero point zero five six nine litres. Divided by twenty-four point seven nine, that's two point two nine five times ten to the minus three moles of hydrogen, and of zinc, because the equation is one to **one**. So the molar mass is zero point one five zero divided by that, sixty-five point four grams per **mole**. Leaving the volume in millilitres gives a tiny, impossible answer. That's the slip to **avoid**.
 
 Visual: card shrinks to the top. Rows: "V = 56.9 mL = 0.0569 L"; "n(H₂) = 0.0569 ÷ 24.79 = 2.295 × 10⁻³ mol"; on "one" "n(Zn) = n(H₂)" with "Zn ... H₂" underlined in the card. On "mole" "MM = 0.150 ÷ 2.295 × 10⁻³ = 65.4 g mol⁻¹" (48 px), the "65.4 g mol⁻¹" framed with a green tick. On "avoid" a chip "0.150 ÷ (56.9 ÷ 24.79) = 0.0654 g mol⁻¹" fades in and is crossed in red, red hand tag "mL to L first". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "0.150 g Zn | 56.9 mL H₂ at 25 °C, 100 kPa | 24.79 L mol⁻¹ | Zn + 2HCl → ZnCl₂ + H₂".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. In the volatile liquid method, a student reweighs the cooled flask without drying its outside. Explain the effect on the calculated molar mass. Pause here to answer.
 
 Visual: `QuestionCard`: "In the volatile liquid method, a student removes the flask from the water bath, cools it, and reweighs it without drying the outside of the flask. Explain the effect of this on the calculated molar mass of the liquid." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted foil-capped flask (`y11c-flask-foil-cap-v1.png`, about 280 px tall), drawn dry and untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > The molar mass comes out too high. The water on the outside is weighed as if it were vapour, so the mass of vapour is too **big**. The volume, and so the moles, don't change. A bigger mass divided by the same moles gives a bigger molar mass. Saying it's too low, because water dilutes the liquid, is the classic **slip**.
 
 Visual: card shrinks to the top; "without drying the outside" underlined. On "big" the chain writes: "m(vapour) ↑, n unchanged → MM = m ÷ n ↑", with "too high" framed. On "slip" a chip "too low: the water dilutes the liquid" fades in and is crossed in red, red hand tag "the water is outside the flask". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "flask reweighed with a wet outside | MM = m ÷ n". The answer "too high" is framed in green at 52 px.
 
 ### 18. handoff: one run is one number
 > One run gives one number. So a class did the magnesium method five times, with five different masses of ribbon. Here's what they wrote down. Mixed units, missing labels, and a note about bubbles getting **away**. Next time, we'll turn raw readings like these into a table and a graph we can actually **use**.
 
 Visual: board clears to the raw notebook page (coded, on a ruled-paper card; final frame, see "Opening frame and final frame"). On the second sentence five run lines write one after another in handwriting style. On "away" the run 3 note "ribbon floated, some bubbles escaped" gets a faint rose underline. On "use" the chip writes: "Next: How do raw chemistry readings become a usable table or graph?". Hold about 2 seconds. This is the final frame (ws-v04 opens on it).
 
-### 19. key notes (quiet, hold about 50 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. MM = m ÷ n: weigh to get m; use a gas volume to find n.
-2. Same T and P: equal gas volumes hold equal particles. 24.79 L mol⁻¹ at 25 °C, 100 kPa; n = V (L) ÷ 24.79.
+2. Equal gas volumes (same T, P) hold equal particles: n = V ÷ 24.79 L at 25 °C, 100 kPa.
 3. Element: Mg + 2HCl → MgCl₂ + H₂, so n(Mg) = n(H₂).
 4. Compound: a volatile liquid's vapour fills the flask; n(vapour) = n(compound).
-5. n too small or m too big → MM too high (escaped gas, oxide, wet flask). Small mass: fine balance.
+5. n too small or m too big gives MM too high (escaped gas, oxide, wet flask).
 
-Memory aid (framed card under the notes, hand lettering, navy, slate blue and teal as in scene 13): *Weigh it, count it with a gas, then divide.* Notes 32 px in the role colours; no paragraphs.
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering, navy, slate blue and teal as in scene 13): *Weigh it, count it with a gas, then divide.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -226,6 +242,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **6,331 characters**, 19 scenes, speech unchanged (Revision 1's headline 6,349 included 18 joining spaces). At 13.3 characters per second the speech is about 476 s; add about 2 s for the gas column and live readouts (4), 1 s for the levels-matching move (4), 1 s for the escape replay (7), 2 s for the vapour fill (9), 2 s for the scene 13 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 80 s): **about 556 s**. Reserve trims if the voiced take runs long: scene 12's second sentence (the tag stays), scene 8's last sentence, scene 2's reason sentence (keep the stated fact).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,331 characters). The notes scene is 45 s in all, so the estimate is about 550 s (it was about 556 s).
+
 ## Opening frame and final frame
 
 - **Opening frame:** m2-v03's final frame exactly (Decisions).
@@ -247,6 +265,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/c-y11-m2-v04-learning-review.md`, `checks/c-y11-m2-v04-science-check.md`.
 
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 5 November on a paper-background contact sheet; scaled uniformly only, never stretched):
@@ -261,6 +281,8 @@ Need (new plates, Codex):
 3. `y11c-flask-water-bath-liquid-v1.png` and `y11c-flask-water-bath-vapour-v1.png`: scene 9. Essential (the compound method), edits of `m8-aspirin-water-bath-v1.png`.
 
 Coded: collection simulation readouts (volume, n, MM), clamp move, gas boxes, gas column and bubbles, readouts, particle pairing, direction chains, reading window, vapour and air dots, water droplets, candidate strip, `CompareTable`, calculation rows, notebook card, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing): `y11c-burette-upturned-start-v1.png`, `y11c-burette-upturned-end-v1.png`, `y11c-flask-foil-cap-v1.png`, `y11c-flask-water-bath-liquid-v1.png`, `y11c-flask-water-bath-vapour-v1.png`. Existing plates newly used on question cards: `m6-zinc-acid-v1.png` (attempt 1), `y11c-flask-foil-cap-v1.png` (attempt 2). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v04)
 
@@ -287,6 +309,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no person, hand or face is drawn or requested.
 9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 10. Confirm the narration character count by script, that the opening frame equals m2-v03's final frame, and that the final frame's notebook lines match ws-v04's opening exactly.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -341,3 +365,22 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 Brief 214 error check (`checks/c-y11-m2-v04-rev2-error-check.md`), should-fix finding resolved (root):
 - Scene 4: the live MM readout at 4.2 mL now shows "247.9 g mol⁻¹" (0.042 g ÷ (0.0042 L ÷ 24.79 L mol⁻¹) = 247.9, rechecked in Python). The Numbers used row now says shown "247.9". The final 24.7 and the escaped-gas 27.4 are unchanged and correct.
 - No speech change. Narration 6,331 characters (sum of 19 scene strings), about 556 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains zinc in acid and attempt 2 the foil-capped flask; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "small mass: use a fine balance" (kept in scene 8).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,331 characters, unchanged; about 550 s (it was about 556 s).
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V07: Mass-to-mass stoichiometry. How do we calculate product mass from a reactant mass? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,684 characters, 16 scenes, about 521 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,16 @@ Handoff: chem-y11-m2-v08, which reactant limits.
 - **Opening frame:** ws-v06's final frame exactly (Decisions).
 - **Final frame (m2-v08 opens on it):** at the left, the magnesium ribbon plate with "10.0 g Mg"; beside it a coded gas-jar outline (`y11c-gas-jar-v1.png`) tinted faintly, labelled "4.0 g O₂"; an arrow to the white oxide dish with "? g MgO"; above, "2Mg + O₂ → 2MgO"; the bridge icon small at the top right; an amber chip "which runs out first?"; the chip "Next: Which reactant limits how much product can form?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the ribbon and the oxide dish, then the crucible on the balance, scenes 1 and 2 (about 48 s); (B) the mole bridge, scene 3 (about 32 s); (C) the calculation board for magnesium, scenes 4 and 5 (about 57 s); (D) the conservation stage with the mass slider, scene 6 (about 32 s); (E) iron from iron oxide, scenes 7 and 8 (about 71 s; the atom tiles arrive at scene 8); (F) the bridge reversed, scene 9 (about 31 s); (G) the condition stage, scene 10 (about 32 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 71 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -82,7 +92,7 @@ Visual: opens on ws-v06's final frame; the "Next" chip fades. On "burns" the rib
 ### 2. more, and why
 > More. Burning joins oxygen atoms to the magnesium atoms, so the oxide carries the magnesium's mass plus the oxygen's. You can see it in the lab. When a strip of magnesium is heated in a crucible, the reading on the balance goes **up**. That's the opposite of our copper sulfate, which lost mass as water left. Here, something joins instead. But by how much? We can't read grams from the equation, because its coefficients count moles, not **grams**.
 
-Visual: "more" ticks. A particle strip: two pale-green Mg atoms and one red O₂ pair combine into two Mg–O pairs (HSC colours). On "in a crucible" the open crucible on a lit burner (`m5-g02b-open-crucible-v1.png`, its white solid read as the oxide) sits at the left with the balance plate (`y11c-top-pan-balance-v1.png`) beside it; on "up" a coded readout steps "25.363 g → 25.523 g" with an upward arrow (grey tag "illustrative: 0.243 g ribbon"). On "copper sulfate" a small thumbnail of the white-powder crucible with a down arrow "water left: mass down" sits beside the rising readout, "something joins: mass up". On "grams" m2-v06's memory line returns small: "Coefficients count; masses weigh."; teal hand tag "go through moles". Earlier, on "up", an amber hand tag "oxygen joined" writes beside the rising readout (52 px) with a pen ring.
+Visual: "more" ticks. A particle strip: two pale-green Mg atoms and one red O₂ pair combine into two Mg–O pairs (HSC colours). On "in a crucible" the open crucible on a lit burner (`m5-g02b-open-crucible-v1.png`, its white solid read as the oxide) sits at the left with the balance plate (`y11c-top-pan-balance-v1.png`) beside it; on "up" a coded readout steps "25.363 g → 25.523 g" with an upward arrow (grey tag "illustrative: 0.243 g ribbon"). On "copper sulfate" a small thumbnail of the white-powder crucible with a down arrow "water left: mass down" sits beside the rising readout, "something joins: mass up". On "grams" m2-v06's memory line returns small: "Coefficients count; masses weigh."; teal hand tag "go through moles". Earlier, at the "up" cue, an amber hand tag "oxygen joined" writes beside the rising readout (52 px) with a pen ring.
 
 ### 3. the mole bridge
 > So every mass problem crosses a bridge through moles. Step one, write the balanced equation, and read the mole ratio for the two substances in the question. Step two, turn the mass of the given substance into moles, with n equals m over M M. Step three, use the ratio to get moles of the wanted substance. Step four, turn those moles back into a mass, with m equals n times M **M**. Mass to moles, moles across, moles to **mass**.
@@ -129,27 +139,35 @@ Visual: stage change to the condition stage. The three "in plenty" givens tags f
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Aluminium burns in excess oxygen: 4Al(s) + 3O₂(g) → 2Al₂O₃(s). Calculate the mass of aluminium oxide formed when 8.10 g of aluminium burns completely. (Al = 26.98, O = 16.00) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the bridge icon dims to an outline).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted aluminium sample (`y11c-sample-aluminium-v1.png`, about 260 px), untagged. Card text 38 px. The bridge is not shown during the countdown (not even as an outline); it returns in feedback 1.
+
 ### 12. feedback 1 (brief)
 > Eight point one zero grams of aluminium is zero point three zero zero moles. Aluminium to aluminium oxide is four to two, so halve it, zero point one five zero moles. Times one hundred and one point nine six, that's fifteen point three grams. Skipping the ratio gives thirty point six, double the right **answer**.
 
 Visual: card shrinks to the top. Rows: "n(Al) = 8.10 ÷ 26.98 = 0.300 mol"; "Al : Al₂O₃ = 4 : 2 → n(Al₂O₃) = 0.300 × 2 ÷ 4 = 0.150 mol"; "MM(Al₂O₃) = 2(26.98) + 3(16.00) = 101.96 g mol⁻¹"; "m = 0.150 × 101.96 = 15.3 g", the "15.3 g" framed with a green tick, teal hand tag "4 : 2, so halve". On "answer" a chip "30.6 g (ratio skipped)" fades in and is crossed in red, red hand tag "double: ratio skipped". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "8.10 g Al | 4Al + 3O₂ → 2Al₂O₃ | Al = 26.98, O = 16.00". The bridge returns above the rows.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one, backwards. Copper reacts with silver nitrate solution: C u plus two A g N O three makes C u N O three twice, plus two A g. What mass of copper is needed to deposit ten point eight grams of silver? Use copper sixty-three point five five and silver one hundred and seven point nine. Pause here to answer.
 
 Visual: `QuestionCard`: "Copper reacts with excess silver nitrate solution: Cu(s) + 2AgNO₃(aq) → Cu(NO₃)₂(aq) + 2Ag(s). Calculate the mass of copper needed to deposit 10.8 g of silver. (Cu = 63.55, Ag = 107.9) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted copper foil (`y11c-copper-foil-v1.png`, about 260 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > Ten point eight grams of silver is zero point one zero zero moles. Copper to silver is one to two, so copper is half of that, zero point zero five zero zero moles. Times sixty-three point five five, that's three point one eight grams. Doubling instead of halving gives twelve point seven, the ratio turned upside **down**.
 
 Visual: card shrinks to the top. Rows: "n(Ag) = 10.8 ÷ 107.9 = 0.100 mol"; "Cu : Ag = 1 : 2 → n(Cu) = 0.100 × 1 ÷ 2 = 0.0500 mol"; "m(Cu) = 0.0500 × 63.55 = 3.18 g", the "3.18 g" framed with a green tick, teal hand tag "1 : 2, so halve". On "down" a chip "12.7 g (× 2, ratio upside down)" fades in and is crossed in red, red hand tag "upside down", with the rule chip "n(wanted) = n(given) × coeff(wanted) ÷ coeff(given)". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "10.8 g Ag to deposit | Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag | Cu = 63.55, Ag = 107.9".
 
 ### 15. conclusion and handoff
 > So we cross through moles: mass to moles, the mole ratio, then moles to mass, keeping the units each step. And each answer assumed the other reactant came in plenty. But what if it doesn't? Ten point zero grams of magnesium, with only four point zero grams of oxygen. One of them will run out first. Which reactant limits how much product can **form**?
 
 Visual: the memory line in its framed card at the top; the bridge icon lights all its spans once. On "in plenty" the "assumes: the other reactant is in plenty" chip glows, then cracks on "doesn't". On "Ten point zero grams of magnesium" the board clears to the ribbon plate "10.0 g Mg"; on "four point zero grams of oxygen" the gas jar (`y11c-gas-jar-v1.png`) slides in labelled "4.0 g O₂"; the equation "2Mg + O₂ → 2MgO" writes above and the oxide dish with "? g MgO" sits at the right. On "run out first" the amber chip "which runs out first?". On "form" the chip "Next: Which reactant limits how much product can form?" writes. Hold about 2 seconds. This is the final frame (m2-v08 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -159,9 +177,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Check: mass of reactants used = mass of products.
 5. Theoretical mass assumes the other reactant is in plenty.
 
-Memory aid (framed card under the notes, hand lettering, amber and teal as in scene 3): *Mass to moles, moles across, moles to mass.* Notes 32 px in the role colours; no paragraphs.
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering, amber and teal as in scene 3): *Mass to moles, moles across, moles to mass.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -220,6 +236,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,684 characters**, 16 scenes, speech unchanged (the brief 180 joined-count finding was withdrawn). At 13.3 characters per second the speech is about 427 s; add about 3 s for the mass slider to settle (6), 1 s for the stage cuts, about 9 s of holds and settling (the bridge drawing in 3, the conservation stack in 6, the tile lift in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 521 s (8.7 minutes)**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,684 characters). The notes scene is 45 s in all, so the estimate is about 508 s (it was about 521 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v07` (route chem-y11-m2-v07; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v07`.
@@ -229,6 +247,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, why-more, mole-brid
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end (as ws-v06 scene 5). Transitions: ws-v06's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 clear change; 3 to 4 clear change to the full-width calculation (bridge shrinks to an icon); 4 to 5 camera continue; 5 to 6 stage change to the conservation stage (Revision 2); 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 clear change; 9 to 10 stage change to the condition stage (Revision 2); attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v07-learning-review.md`, `checks/c-y11-m2-v07-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -243,6 +263,8 @@ Have (inspected 5 November; uniform scaling only):
 Need (new plates, Codex): none.
 
 Coded: mass slider and its live readouts, particle strip, readouts, bridge diagram and icon, calculation layout, conservation stack, atom tiles, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-sample-aluminium-v1.png` (attempt 1 card), `y11c-copper-foil-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v07)
 
@@ -259,6 +281,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals ws-v06's final frame, and send the final frame to the m2-v08 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +327,23 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Hand tags and pen marks in role colours in every teaching scene; framed answers on 16.6 g (5), 16.58 g conserved (6), 56.0 g (8), 12.1 g (9), 15.3 g (12), 3.18 g (14); crossed slips with red hand tags (6 "16.00 alone", 8, 12, 14).
 - Memory line in a framed card from scene 3; key notes trimmed to five short bullets (294 characters) with the framed card.
 - No new plate requests (no existing blast-furnace or iron ore plate; scene 7 stays coded). Final frame unchanged (m2-v08 opens on it).
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the aluminium sample and loses the outlined bridge during the countdown; attempt 2 gains the copper foil; both feedback scenes gain navy givens strips.
+- Scene 2: one cue word that was quoted twice ("up") is reworded at its second mention, so every quoted cue is in spoken order. No on-screen change.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,684 characters, unchanged; about 508 s (it was about 521 s).
+
+Calls for root: the bridge is hidden on the attempt 1 card (it showed the method).

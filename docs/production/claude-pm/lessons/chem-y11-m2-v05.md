@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V05: Empirical formulae. How do mass percentages reveal an empirical formula? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,754 characters, 16 scenes, about 527 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -69,6 +69,16 @@ Handoff: chem-y11-m2-v06, coefficients as mole ratios.
 - **Opening frame:** ws-v05's final frame exactly (Decisions).
 - **Final frame (m2-v06 opens on it):** at the left, A1's formula "Fe₂O₃" small with a two-row comparison: atom tiles "Fe Fe | O O O" (tag "2 : 3 by atoms") and a mass-share bar "Fe 69.9% | O 30.1%" (tag "not 2 : 3 by mass"); centre, the equation "2H₂ + O₂ → 2H₂O" large, with the coefficients amber and "2 : 1 : 2" written under them; to its right an amber chip "mass ratio?"; the chip "Next: Why do reaction coefficients give mole ratios rather than mass ratios?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the white-powder crucible and the mass bar, then the particle counters, scenes 1 and 2 (about 70 s); (B) the count slider, scene 3 (about 28 s); (C) empirical against molecular formula, scene 4 (about 42 s); (D) the method strip, scene 5 (about 39 s); (E) the calculation board for the first example, scenes 6 and 7 (about 56 s); (F) the phosphorus oxide ratio, scenes 8 and 9 (about 46 s); (G) two molecule cards beside the vinegar bottle, scene 10 (about 36 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 70 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -128,39 +138,45 @@ Visual: board change. Two molecule cards: "glucose" and "acetic acid", each with
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "An oxide of iron contains 69.9% iron by mass; the rest is oxygen. Determine the empirical formula of the oxide. (Fe = 55.85, O = 16.00) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the method strip dims to an outline).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted top-pan balance (`y11c-top-pan-balance-v1.png`, about 280 px) with a blank display. Card text 38 px. The method strip is not shown during the countdown (not even as an outline); it returns in feedback 1. A picture of rust is avoided, because an earlier video gave that oxide's ratio.
+
 ### 12. feedback 1 (brief)
 > Oxygen is the rest, thirty point one percent. That gives one point two five moles of iron and one point eight eight of oxygen. Divide by the smaller, and it's one to one point five. Atoms come whole, so multiply both by two: F e two O **three**. Rounding one point five up to two, and writing F e O two, is the classic slip.
 
 Visual: card shrinks to the top. Rows: "O = 100 − 69.9 = 30.1%"; "n(Fe) = 69.9 ÷ 55.85 = 1.252; n(O) = 30.1 ÷ 16.00 = 1.881"; "÷ 1.252 → Fe 1 : O 1.50 → × 2 → 2 : 3"; on "three" "Fe₂O₃" framed with a green tick, amber hand tag "× 2: atoms come whole". On "slip" a chip "FeO₂" fades in and is crossed in red, red hand tag "1.5 rounded up". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "69.9% iron, the rest oxygen | Fe = 55.85, O = 16.00". The method strip returns above the rows.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Five point zero zero grams of hydrated magnesium sulfate is heated to constant mass, and two point four four grams of anhydrous magnesium sulfate is left. Find x in its formula. Pause here to answer.
 
 Visual: `QuestionCard`: "A 5.00 g sample of hydrated magnesium sulfate, MgSO₄·xH₂O, was heated to constant mass. The anhydrous MgSO₄ remaining had a mass of 2.44 g. Calculate the value of x. (Mg = 24.31, S = 32.07, O = 16.00, H = 1.008) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted open crucible of white powder over a burner (`m5-g02b-open-crucible-v1.png`, about 300 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > The water lost is two point five six grams, which is zero point one four two moles. The magnesium sulfate is two point four four over one hundred and twenty point four, zero point zero two zero three moles. Divide, and x is seven. Saying x is one, because the two masses are about equal, is the classic slip. Compare moles, not **masses**.
 
 Visual: card shrinks to the top. Rows: "m(H₂O) = 5.00 − 2.44 = 2.56 g; n = 2.56 ÷ 18.02 = 0.142 mol"; "MM(MgSO₄) = 120.38; n = 2.44 ÷ 120.38 = 0.0203 mol"; "0.142 ÷ 0.0203 = 7.0 → x = 7 (MgSO₄·7H₂O)", the "x = 7" framed with a green tick. On "masses" a chip "x = 1: 2.56 g ≈ 2.44 g" fades in and is crossed in red, red hand tag "compare moles, not masses". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "5.00 g of hydrate | 2.44 g of MgSO₄ left | Mg 24.31, S 32.07, O 16.00, H 1.008".
 
 ### 15. conclusion and handoff
 > So mass percentages become masses, masses become moles, and dividing by the smallest gives the ratio of atoms. Look back at the iron oxide. Iron is seventy percent of the mass, but the atoms combine two to three. Atoms join by count, not by mass. And when substances react, the equation's numbers count particles too. Why do reaction coefficients give mole ratios rather than mass **ratios**?
 
 Visual: the memory line writes in hand lettering inside a framed card at the top (44 px; navy "Percent to grams," teal "grams to moles," gold "divide by the smallest," amber "multiply till whole."). On "iron oxide" A1's "Fe₂O₃" returns with the atom tiles "Fe Fe | O O O" (tag "2 : 3 by atoms") and on "seventy percent" the mass-share bar "Fe 69.9% | O 30.1%" (tag "not 2 : 3 by mass"). On "react" the equation "2H₂ + O₂ → 2H₂O" writes at the centre, coefficients amber, "2 : 1 : 2" under them, and an amber chip "mass ratio?". On "ratios" the chip "Next: Why do reaction coefficients give mole ratios rather than mass ratios?" writes. Hold about 2 seconds. This is the final frame (m2-v06 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Empirical formula: simplest whole-number ratio of atoms. Molecular formula: actual atoms in one molecule.
+1. Empirical: simplest whole-number ratio of atoms. Molecular: actual atoms in a molecule.
 2. Equal masses are not equal counts: compare moles (n = m ÷ MM).
 3. Assume 100 g; g → mol; ÷ smallest; .5, .33, .25 → × 2, 3, 4.
 4. Round only when within about 0.05 of a whole number.
 5. MM(molecular) ÷ MM(empirical) = whole n; multiply every subscript by n.
 
-Memory aid (framed card under the notes, hand lettering in the role colours as in scene 15): *Percent to grams, grams to moles, divide by the smallest, multiply till whole.* Notes 32 px; no paragraphs.
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering, in the role colours as in scene 15): *Percent to grams, grams to moles, divide by the smallest, multiply till whole.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -216,6 +232,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,754 characters**, 16 scenes, speech unchanged (the brief 180 joined-count finding was withdrawn: the sum of scene strings is the course method). At 13.3 characters per second the speech is about 433 s; add about 3 s for the count slider to settle (3), 1 s for the stage cuts (5, 6), about 9 s of holds and settling (the particle counters in 2 and 3, the tile split in 4, the ratio rows in 7 and 9), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 527 s (8.8 minutes)**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,754 characters). The notes scene is 45 s in all, so the estimate is about 514 s (it was about 527 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v05` (route chem-y11-m2-v05; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v05`.
@@ -225,6 +243,8 @@ In order (16 scene headings, all `### N.`): hook, masses-not-counts, ratio, empi
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: ws-v05's final frame into scene 1 by camera continue; 1 to 2 camera continue (the mass bar stays); 2 to 3 stage change to the count simulation (Revision 2); 3 to 4 clear change; 4 to 5 clear change to the method stage (Revision 2); 5 to 6 clear change to the full-width calculation (method strip shrinks to the top); 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v05-learning-review.md`, `checks/c-y11-m2-v05-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -236,6 +256,8 @@ Have (inspected 5 November; uniform scaling only):
 Need (new plates, Codex): none.
 
 Coded: count slider and its live readouts, mass bar, particle counters, calculation layout, ratio rows with multiplier, formula tiles, atom-share and mass-share bars, method strip, molecule cards, equation and chips (final frame), attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-top-pan-balance-v1.png` (attempt 1 card), `m5-g02b-open-crucible-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v05)
 
@@ -252,6 +274,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals ws-v05's final frame and the final frame matches m2-v06's opening.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -296,3 +320,22 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Plate: the existing vinegar bottle (`m5x-vinegar-bottle-v1.png`) beside acetic acid in scene 10; the sugar bowl was rejected (sucrose, not glucose).
 - Memory line in a framed card in the role colours (15); key notes trimmed to five short bullets (350 characters) with the framed card.
 - No new plate requests. Final frame unchanged (m2-v06 opens on it).
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the balance and loses the outlined method strip during the countdown; attempt 2 gains an open crucible of white powder; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,754 characters, unchanged; about 514 s (it was about 527 s).
+
+Calls for root: the method strip is hidden on the attempt 1 card. the attempt 1 picture is a balance, not rust, so the card gives no hint of the ratio.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V03: Molar mass and n = m/MM. How does molar mass turn a measured mass into moles? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 214 error-check finding resolved by root; ready to voice.
 
 Narration 5,683 characters, 18 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -57,6 +57,16 @@ Main question: *How does molar mass turn a measured mass into moles?*
 Entry knowledge: m1-v07 relative formula mass; m2-v02 mole and N_A.
 Stops after: molar mass of elements and compounds, n = m/MM and m = n × MM with units, formula units, the chain to particles. No reaction ratios.
 Handoff: m2-v04, measuring molar mass in a practical.
+
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the balance and the ribbon, scene 1 (about 22 s); (B) a mole of atoms on the beam, scene 2 (about 32 s); (C) the atom-count dial, scene 3 (about 27 s); (D) molar mass defined, scene 4 (about 39 s); (E) the formula tiles, scene 5 (about 34 s); (F) lots that fit along the bar, then the worked example, scenes 6 and 7 (about 60 s); (G) two equal bars, scenes 8 and 9 (about 36 s); (H) sodium chloride beside the halite crystal, scene 10 (about 37 s); (I) the ribbon answered, scene 11 (about 31 s); (J) the memory card, scene 12 (about 14 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
 
 ## Script and shots
 
@@ -127,27 +137,35 @@ Visual: the chain strip stays at the top. On "moles" a framed memory card draws 
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Calculate the chemical amount, in moles, of carbon dioxide in 11.0 g of CO₂. (C = 12.01, O = 16.00)". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the equation strip "n = m ÷ MM" stays visible, as the method taught).
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted dish of dry ice (`y11c-dry-ice-v1.png`, about 280 px wide), untagged, as a real sample of carbon dioxide. Card text 38 px. The equation strip "n = m ÷ MM" is not shown during the countdown, because it is the method; it returns in feedback 1.
+
 ### 14. feedback 1 (brief)
 > The molar mass of carbon dioxide is twelve point zero one plus two times sixteen point zero zero, forty-four point zero one grams per **mole**. So n equals eleven point zero divided by forty-four point zero one, zero point two five zero **moles**. Multiplying instead gives four hundred and eighty-four, which can't be right, because eleven grams is far less than one **mole**.
 
 Visual: card shrinks to the top. On "mole" (first) row "MM(CO₂) = 12.01 + 2 × 16.00 = 44.01 g mol⁻¹". On "moles" row "n = 11.0 ÷ 44.01 = 0.250 mol" (48 px), "0.250 mol" framed with a green tick. On "mole" (second) a chip "11.0 × 44.01 = 484 mol" fades in and is crossed in red, red hand tag "units: g × g mol⁻¹ isn't mol". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "m = 11.0 g of CO₂ | C = 12.01, O = 16.00". The equation strip returns above the working.
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Calculate the mass of zero point one five zero moles of calcium hydroxide. Pause here to answer.
 
 Visual: `QuestionCard`: "Calculate the mass of 0.150 mol of calcium hydroxide, Ca(OH)₂. (Ca = 40.08, O = 16.00, H = 1.008)". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries a watch glass of white solid (`y11c-watch-glass-salt-v1.png`, about 260 px wide), untagged, as the picture of a white ionic solid. Card text 38 px. Nothing answer-bearing.
+
 ### 16. feedback 2 (brief)
 > The bracket doubles the oxygen and the hydrogen, so the molar mass is seventy-four point one zero grams per **mole**. Mass equals moles times molar mass, zero point one five zero times seventy-four point one zero, which is eleven point one **grams**. Ignoring the bracket gives eight point five six grams, the slip to **avoid**.
 
 Visual: card shrinks to the top; "(OH)₂" underlined. On "mole" row "MM = 40.08 + 2 × (16.00 + 1.008) = 74.10 g mol⁻¹". On "grams" row "m = 0.150 × 74.10 = 11.1 g" (48 px), "11.1 g" framed with a green tick. On "avoid" a chip "MM = 40.08 + 16.00 + 1.008 = 57.09; m = 8.56 g" fades in and is crossed in red, red hand tag "the 2 multiplies everything in the bracket". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "n = 0.150 mol of Ca(OH)₂ | Ca = 40.08, O = 16.00, H = 1.008".
 
 ### 17. handoff: when you don't know the formula
 > Every molar mass today came from a formula. But what if you have a substance and don't know its formula? Turn the equation around. Molar mass equals mass divided by moles. Weighing gives the mass. If we can find the moles some other way, we can measure the molar **mass**. Next time, we'll see how a practical **does** it.
 
 Visual: board clears. "n = m ÷ MM" rearranges by animation into "MM = m ÷ n" large at the centre. On the fourth sentence a navy tag "m: weigh it" writes under "m" with a tick, and the balance thumbnail slides beside it. On "mass" an amber tag "n: find it another way?" writes under "n" with a "?". Below, two small plates slide in: `p01-mg-ribbon-v1.png` tagged "an element" and `m6-conical-flask-v1.png` tagged "an unknown liquid", each with "MM = ?". On "does" the chip writes: "Next: How can a practical determine molar mass?". Hold about 2 seconds. This is the final frame (m2-v04 opens on it).
 
-### 18. key notes (quiet, hold about 50 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -157,9 +175,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Same mass is not same amount: 10 g Mg = 0.41 mol; 10 g Cu = 0.16 mol.
 5. Mass → ÷ MM → moles → × N_A → particles.
 
-Memory aid (framed card under the notes, hand lettering, navy, teal and amber as in scene 12): *Let the units decide: grams divided by grams per mole leaves moles.* Notes 32 px in the role colours; no paragraphs.
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering, navy, teal and amber as in scene 12): *Let the units decide: grams divided by grams per mole leaves moles.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -219,6 +235,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,683 characters**, 18 scenes (Revision 1's headline 5,699 included 17 joining spaces; its scene sum was 5,682). At 13.3 characters per second the speech is about 427 s; add about 2 s for the heaps and beam (2), 3 s for the atom-count sweep to settle (3), 2 s for the lot-fitting bar (6), 2 s for the scene 12 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 81 s): **about 508 s**. Reserve trims if the voiced take runs long: scene 7's second sentence, scene 10's last sentence (the dim row stays), scene 3's last sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,683 characters). The notes scene is 45 s in all, so the estimate is about 502 s (it was about 508 s).
+
 ## Opening frame and final frame
 
 - **Opening frame:** m2-v02's final frame exactly (Decisions).
@@ -234,6 +252,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/c-y11-m2-v03-learning-review.md`, `checks/c-y11-m2-v03-science-check.md`.
 
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 5 November on a paper-background contact sheet; scaled uniformly only, never stretched):
@@ -245,6 +265,8 @@ Have (inspected 5 November on a paper-background contact sheet; scaled uniformly
 - **Inspected, not used:** root-level `carbon-12-molar-mass-balance.png` (flat infographic, baked text); `c1-salt-jar-crystals-v1.png` (not needed: the NaCl example is a calculation).
 
 Need: none (Revision 2 adds two existing plates and reuses the ribbon at a larger uniform scale in scene 2; no new requests). Coded: atom-count dial and live readouts, lot counter, heaps, beams, formula tiles, bars and segments, dot fields, lattice fragment, chain strip, calculation rows, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-dry-ice-v1.png` (attempt 1 card), `y11c-watch-glass-salt-v1.png` (attempt 2 card, as a white solid). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v03)
 
@@ -263,6 +285,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no person, hand or face is drawn or requested.
 9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 10. Confirm the narration character count by script, and that the opening frame equals m2-v02's final frame and the final frame matches m2-v04's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -313,3 +337,22 @@ Visual upgrade and scene-level redesign (high-risk list; narration, numbers and 
 Brief 214 error check (`checks/c-y11-m2-v03-rev2-error-check.md`), should-fix finding resolved (root):
 - Scene 2: the carbon tag now reveals on "twelve point zero one grams" (second sentence) and the magnesium tag on "twenty-four point three one grams" (third sentence), the two bold "grams" cues. The rule card's earlier "in grams" no longer triggers anything.
 - No speech change. Narration 5,683 characters (sum of 18 scene strings), about 508 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the dish of dry ice and loses the equation strip during the countdown; attempt 2 gains a watch glass of white solid; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,683 characters, unchanged; about 502 s (it was about 508 s).
+
+Calls for root: the equation strip "n = m ÷ MM" is hidden on the attempt 1 card (it showed the method). a watch glass of white crystals stands for calcium hydroxide on the attempt 2 card.

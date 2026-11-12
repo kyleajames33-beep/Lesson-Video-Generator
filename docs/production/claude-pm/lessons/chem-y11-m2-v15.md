@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V15: Gravimetric analysis. How does precipitate mass reveal an ion concentration? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,567 characters, 15 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,16 @@ Handoff: chem-y11-m2-v16, equal gas volumes.
 - **Opening frame:** m2-v14's final frame exactly (Decisions).
 - **Final frame (m2-v16 opens on it):** at the top, three small method chips in a row: "solid: n = m ÷ MM", "solution: n = c × V", "precipitate: weigh it, then n = m ÷ MM" (all ticked), and a fourth "gas: ?" (amber); below, three gas jars (`y11c-gas-jar-v1.png`, three copies, same scale, each with a coded colourless fill) labelled "H₂", "O₂", "CO₂", each tagged "1.00 L, 25 °C, 100 kPa", with mass chips "0.0813 g", "1.29 g", "1.78 g"; an amber chip across them "same number of particles?"; the chip "Next: Why do equal gas volumes contain equal amounts at the same conditions?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the bore water bottle, dropper and beaker, scene 1 (about 32 s); (B) the ion lens at full height, scene 2 (about 37 s); (C) the settled beaker and the excess slider, scenes 3 and 4 (about 45 s); (D) filtering and washing, scene 5 (about 31 s); (E) the weighing loop: oven, desiccator, balance, scene 6 (about 31 s); (F) the calculation board, scene 7 (about 35 s); (G) the sample bottle beside the rows, scene 8 (about 32 s); (H) the two-way error board, scene 9 (about 27 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 45 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -124,27 +134,35 @@ Visual: the two-way error board fills from the trays: "too low" (rose): "not eno
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Excess silver nitrate solution was added to a 25.00 mL sample of magnesium chloride solution. The precipitate of silver chloride was filtered, washed and dried to constant mass: 0.7168 g. Calculate the concentration of the magnesium chloride solution in mol L⁻¹. (Ag = 107.9, Cl = 35.45) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the bridge strip dims).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted tube of white silver chloride precipitate (`m5x-ppt-agcl-white-v1.png`, about 280 px tall), untagged. Card text 38 px. The bridge strip is not shown during the countdown; it returns in feedback 1.
+
 ### 11. feedback 1 (brief)
 > Zero point seven one six eight over one hundred and forty-three point three five is five point zero zero zero times ten to the minus three moles of silver chloride, so the same moles of chloride ions. But each magnesium chloride gives two chloride ions, so halve it: two point five zero zero times ten to the minus three moles. Divided by zero point zero two five zero zero litres, that's zero point one zero zero zero moles per litre. Skip the ratio, and you'd get zero point two zero zero zero, **double**.
 
 Visual: card shrinks to the top. Rows: "n(AgCl) = 0.7168 ÷ 143.35 = 5.000 × 10⁻³ mol = n(Cl⁻)"; "MgCl₂ : Cl⁻ = 1 : 2 → n(MgCl₂) = 2.500 × 10⁻³ mol" (a small tile "MgCl₂ → Mg²⁺ + 2Cl⁻"); "c = 2.500 × 10⁻³ ÷ 0.02500 = 0.1000 mol L⁻¹" (violet), framed in a dark-ink box with a green tick. On "double" a chip "0.2000 mol L⁻¹ (ratio skipped)" fades in and is crossed in red, red hand tag "2 Cl⁻ per MgCl₂". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "25.00 mL of MgCl₂ solution | AgCl 0.7168 g | Ag = 107.9, Cl = 35.45".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A student filtered the silver chloride but didn't wash it before drying and weighing. Explain the effect on the calculated chloride concentration. Pause here to answer.
 
 Visual: `QuestionCard`: "In a gravimetric analysis of chloride using excess silver nitrate, a student filtered the precipitate but did not wash it before drying it to constant mass and weighing it. Explain the effect on the calculated chloride concentration. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." The error board stays hidden.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted filter funnel with its white precipitate (`m8-filter-funnel-white-ppt-v1.png`, about 300 px tall), untagged. Card text 38 px. Nothing answer-bearing; the error board stays hidden.
+
 ### 13. feedback 2 (brief)
 > Too high. Without washing, the liquid soaked into the solid still holds dissolved silver nitrate and sodium nitrate. When it dries, those salts stay behind, so the mass is more than the silver chloride alone. More mass means more calculated moles, and a higher concentration. No effect is wrong, because the balance can't tell which solid is **which**.
 
 Visual: card shrinks. The wash film lens returns, unwashed: grey dots crystallise onto the white solid as it dries; the readout bar grows; arrow chain "extra salts → mass ↑ → n ↑ → c ↑" (amber). The answer "too high" is framed in a dark-ink box with a green tick. On "which" a chip "no effect: those salts aren't AgCl" fades in and is crossed in red (red hand tag "the balance weighs everything on the paper"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "precipitate filtered but not washed | then dried to constant mass and weighed".
 
 ### 14. conclusion and handoff
 > So a precipitate turns dissolved ions into a mass, and the formula of the solid links that mass back to the ions. We can now get moles from a mass, from a solution, and through a precipitate. Gases are harder. They're light, and they spread to fill any container. Here are three jars of hydrogen, oxygen and carbon dioxide, each one litre at the same temperature and pressure, with very different masses. Do they hold the same number of particles? Why do equal gas volumes contain equal amounts at the same **conditions**?
 
 Visual: the bridge strip and the AgCl row shrink to a chip "precipitate: weigh it, then n = m ÷ MM", which joins "solid: n = m ÷ MM" and "solution: n = c × V" (all ticked) at the top; on "Gases are harder" a fourth chip "gas: ?" (amber). On "three jars" the final frame builds: three `y11c-gas-jar-v1.png` copies slide in, "H₂", "O₂", "CO₂", each "1.00 L, 25 °C, 100 kPa"; on "very different masses" the mass chips "0.0813 g", "1.29 g", "1.78 g" write. On "same number of particles" the amber chip spans the jars. On "conditions" the chip "Next: Why do equal gas volumes contain equal amounts at the same conditions?" writes. Hold about 2 seconds. This is the final frame (m2-v16 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -154,9 +172,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. m ÷ MM(precipitate) → n; × ratio → n(ion); ÷ V → c.
 5. Losses → too low. Extra mass (unwashed, damp, paper) → too high.
 
-Memory aid (framed card on the notes screen, as in scene 9): *Every ion caught, nothing else weighed.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 9): *Every ion caught, nothing else weighed.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -206,6 +222,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,567 characters**, 15 scenes (Revision 1 was 5,571; scene 5's wash wording −4). At 13.3 characters per second the speech is about 419 s; add about 10 s of settling (the ion lock in 1 and 2, the excess slider in 4, the wash in 5, the weighing loop in 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 506 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,567 characters). The notes scene is 45 s in all, so the estimate is about 494 s (it was about 506 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v15` (route chem-y11-m2-v15; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v15`.
@@ -215,6 +233,8 @@ In order (15 scene headings, all `### N.`): hook-ions, precipitate-ratio, predic
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions (Revision 2): m2-v14's final frame into scene 1 by camera continue; 1 to 2 stage change to the full-height ion lens; 2 to 3 to 4 camera continue on the settled beaker (the excess slider joins in 4); 4 to 5 to 6 camera continue along the bench (each apparatus slides in as its step starts); 6 to 7 stage change to the full-width calculation; 7 to 8 stage change (sample bottle with the results); 8 to 9 camera continue (the trays gather into the error board); attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v15-learning-review.md`, `checks/c-y11-m2-v15-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -235,6 +255,8 @@ Need (new plates, Codex): none beyond `y11c-sample-bottle-clear-v1.png` (request
 
 Coded: excess slider and readouts, method tags, framed answers, hand tags and pen marks, memory card, ion dots and pairing, cloud, leftover lens, test drop, wash film and drops, readout list and sparkline, weighing loop path, error trays and board, bridge strip, rows, chips, attempt cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m5x-ppt-agcl-white-v1.png` (attempt 1), `m8-filter-funnel-white-ppt-v1.png` (attempt 2). New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M2 v15)
 
 No new plates (the sample-bottle crop is in m2-v14's brief). Codex confirms that `m8-filter-funnel-white-ppt-v1.png` and `m8-filter-funnel-cloudy-filtrate-v1.png` overlay exactly (Year 12 m8-c02 used them as a pair), and that the three gas-jar copies sit at one scale on the dark board.
@@ -250,6 +272,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v14's final frame, and send the final frame to the m2-v16 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -299,3 +323,22 @@ Visual upgrade (light pass):
 - No new plate requests.
 
 Counts: 5,571 to 5,567 characters (sum of scene strings); about 504 to about 506 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the tube of white precipitate and loses the bridge strip during the countdown; attempt 2 gains the filter funnel with its precipitate; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,567 characters, unchanged; about 494 s (it was about 506 s).
+
+Calls for root: the bridge strip is hidden on the attempt 1 card.

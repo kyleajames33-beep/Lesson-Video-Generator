@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V14: Titration with a standard solution. How do solution mole ratios determine an unknown concentration? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,659 characters, 15 scenes, about 512 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -67,6 +67,17 @@ Handoff: chem-y11-m2-v15, precipitate mass.
 - **Opening frame:** m2-v13's final frame exactly (Decisions).
 - **Final frame (m2-v15 opens on it):** at the left the clear sample bottle (`y11c-sample-bottle-clear-v1.png`, a crop of `m8-river-sampling-bottle-v1.png`; see Assets) labelled "bore water, 500.0 mL" with a violet chip "Cl⁻: ? mg L⁻¹"; at the centre the beaker (`m6-beaker-v1.png`) with a coded white cloud forming as coded drops fall from a dropper bottle (`p03-dropper-bottle-v1.png`) labelled "silver nitrate solution"; a small strip "Ag⁺ + Cl⁻ → AgCl(s), white solid"; the analytical balance (`m8-balance-watch-glass-v1.png`) small at the right with a "?" readout; the bridge strip small at the top; the chip "Next: How does precipitate mass reveal an ion concentration?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the standard flask, pipette and acid beaker, then the mole match, scenes 1 and 2 (about 65 s; the token match fills the frame at scene 2); (B) the set-up, scene 3 (about 31 s); (C) the flask close up with the acid-added scrubber, scene 4 (about 37 s); (D) the titre stage, scene 5 (about 31 s); (E) the calculation board, scene 6 (about 33 s); (F) the burette beside the rows, scene 7 (about 33 s); (G) the bridge strip as the hero, scene 8 (about 25 s); (H) the rinse lens and the error cards, scene 9 (about 33 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 65 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The burette in scene 4 uses the titration views in `src/explainer/sims/` for its motion: `usePour` is the one clock (keyframes close together near 18.80 mL, so the last drops go in slowly) and `TitrationRig` with `outline={false}` draws the falling level, the drops and the flask colour over the painted burette and flask plates. The engine's pH and particle sums handle one H⁺ or OH⁻ per particle only, so they are not used for carbonate: the "carbonate left" readout is computed in the lesson from the same poured volume (n = 2.006 × 10⁻³ − c × V ÷ 2), and the flask colour change is set at the endpoint volume. Kit gap: a two-step (carbonate) titration in the engine.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -90,6 +101,8 @@ Visual: board clears to the set-up. The pipette (`m6-volumetric-pipette-filler-v
 > But how do you see when the carbonate has just run out? Both solutions are colourless, so we add a few drops of an indicator, methyl orange, whose colour changes when the reaction is complete. While carbonate is left, it stays **yellow**. Run the acid in steadily at first, swirling, then drop by drop once orange flashes where the drops land. The moment one drop turns the whole flask orange, and it stays orange, all the carbonate has reacted. That's the **endpoint**. One drop past it, and it turns **red**.
 
 Visual: a dropper bottle (`p03-dropper-bottle-v1.png`, coded label "methyl orange") adds three coded drops; the flask plate swaps to `m6-clip-methyl-orange-yellow-v1.png`. On "yellow" the mole match returns small in a lens: carbonate tokens still unpaired. Stage change: camera push to the flask and the burette tip, which fill the frame; the token lens sits at the right. The acid-added scrubber runs (simulation): the tap opens by code, the fill gauge falls and the slate readout "acid added" climbs (52 px) while the teal readout "carbonate left" falls 2.006 × 10⁻³ → 1.47 × 10⁻³ → 1.00 × 10⁻³ → 0.41 × 10⁻³ mol and the lens pairs two rose acid tokens with each navy carbonate token; the flask swirls (a gentle coded rock). On "orange flashes" a brief orange patch flickers at the surface and fades back to yellow; drops slow to one at a time (readout near 18.75 mL), amber hand tag "slow down: drop by drop". On "endpoint" the readouts reach "18.80 mL" and "carbonate left 0 mol"; the plate swaps to `m6-clip-methyl-orange-orange-v1.png` and holds; the lens shows every carbonate token paired; gloss chip "endpoint: the first colour change that lasts" with an orange pen ring round the flask. On "red" a ghost flask beside it shows `m6-clip-methyl-orange-red-v1.png` with the readout "18.85 mL" and a red hand tag "overshoot: too far". Grey tag "illustrative data".
+
+Upgrade (Revision 3): The burette level, the drops and the "acid added" readout are driven by `usePour` and drawn with `TitrationRig` over the painted plates (see "Simulation engine"); "carbonate left" is computed from the same volume. The drop-by-drop approach to 18.80 mL is the engine's slow final keyframes, not a separate animation.
 
 ### 5. titres you can trust
 > The first run is quick and rough, just to find where the endpoint is, so it isn't used. Then you repeat carefully with a fresh aliquot each time, until the titres agree within zero point one zero millilitres. Results that agree like this are called concordant. Ours are eighteen point seven five, eighteen point eight five, and eighteen point eight zero. Their average is eighteen point eight zero **millilitres**.
@@ -121,39 +134,45 @@ Visual: the rinse lens: a water film in the pipette; the aliquot's carbonate tok
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A 20.00 mL aliquot of standardised 0.1500 mol L⁻¹ sodium hydroxide solution was titrated with sulfuric acid. The average of the concordant titres was 18.75 mL. H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l). Calculate the concentration of the sulfuric acid. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the bridge strip dims to an outline).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted burette on its stand (`m6-burette-clamp-stand-v1.png`, about 320 px tall), untagged. Card text 38 px. The bridge strip is not shown during the countdown (not even as an outline); it returns in feedback 1.
+
 ### 11. feedback 1 (brief)
 > Known to moles: zero point one five zero zero times zero point zero two zero zero zero is three point zero zero zero times ten to the minus three moles of sodium hydroxide. The ratio is one acid to two hydroxide, so halve it: one point five zero zero times ten to the minus three moles. Divide by the titre, zero point zero one eight seven five litres: zero point zero eight zero zero moles per litre. One to one gives zero point one six zero zero, double the right **answer**.
 
 Visual: card shrinks to the top. Rows with the bridge links lighting: "n(NaOH) = 0.1500 × 0.02000 = 3.000 × 10⁻³ mol"; "H₂SO₄ : NaOH = 1 : 2 → n(H₂SO₄) = 3.000 × 10⁻³ ÷ 2 = 1.500 × 10⁻³ mol"; "c(H₂SO₄) = 1.500 × 10⁻³ ÷ 0.01875 = 0.08000 mol L⁻¹" (violet), framed in a dark-ink box with a green tick. On "answer" a chip "0.1600 mol L⁻¹ (1 : 1 used)" fades in and is crossed in red, red hand tag "ratio is 1 : 2 here too". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "20.00 mL of 0.1500 mol L⁻¹ NaOH | titre 18.75 mL | H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Before filling the burette with hydrochloric acid, a student rinsed it only with distilled water. Explain the effect on the calculated concentration of the acid. Pause here to answer.
 
 Visual: `QuestionCard`: "In the titration of a standard sodium carbonate solution with hydrochloric acid, a student rinsed the burette only with distilled water before filling it with the acid. Explain the effect of this on the calculated concentration of the hydrochloric acid. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (scene 9's cards hidden).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted wash bottle (`m6-wash-bottle-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > Too low. Water left in the burette dilutes the acid, so more of it is needed to react with the same moles of carbonate. The titre is bigger, and the same moles divided by a bigger volume gives a smaller concentration. That's why the burette is rinsed with the acid itself. Saying no effect, because water gets added anyway, mixes up the burette with the **flask**.
 
 Visual: card shrinks. A water film in the burette lens; the titre bar lengthens; arrow chain "acid diluted → titre ↑ → c(HCl) ↓" with a rose down-arrow; rule chip "rinse the burette with the solution it will hold". The answer "too low" is framed in a dark-ink box with a green tick. On "flask" a chip "no effect: water is added anyway" fades in and is crossed in red (red hand tag "true for the conical flask only"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "burette rinsed with distilled water only | standard sodium carbonate in the flask".
 
 ### 14. conclusion and handoff
 > So a titration counts the unknown's moles through a reaction with a known amount, and the mole ratio links the two. But some ions can be counted another way. Add silver nitrate to salty bore water, and the chloride ions come out as a white solid, which you can filter, dry and weigh. How does precipitate mass reveal an ion **concentration**?
 
 Visual: the bridge strip lights once more over a small thumbnail of the endpoint flask. On "silver nitrate" the board clears to the final frame's layout: the bore water bottle at the left; drops fall from the silver nitrate dropper bottle into the beaker and a coded white cloud forms; on "white solid" the strip "Ag⁺ + Cl⁻ → AgCl(s)" writes; on "weigh" the balance with its "?" readout. On "concentration" the chip "Next: How does precipitate mass reveal an ion concentration?" writes. Hold about 2 seconds. This is the final frame (m2-v15 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Titration: the volume of one solution that reacts with a known amount of another.
 2. Aliquot in the flask, other solution in the burette. Titre = final − initial.
-3. Endpoint: first lasting colour change. Skip the rough run; average concordant titres (within 0.10 mL).
+3. Endpoint: first lasting colour change. Average concordant titres (within 0.10 mL).
 4. Known to moles (n = cV), ratio, unknown (c = n ÷ V, its own volume).
 5. Rinse burette and pipette with their own solutions; a wet flask is fine.
 
-Memory aid (framed card on the notes screen, as in scene 8): *Known to moles, ratio, unknown.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 8): *Known to moles, ratio, unknown.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -206,6 +225,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,659 characters**, 15 scenes (unchanged; no speech edits). At 13.3 characters per second the speech is about 425 s; add about 10 s of settling (the mole match in 2, the set-up build in 3, the acid-added scrubber, drop-by-drop approach and endpoint swap in 4, the four-run titre stage in 5), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 512 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,659 characters). The notes scene is 45 s in all, so the estimate is about 500 s (it was about 512 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v14` (route chem-y11-m2-v14; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v14`.
@@ -215,6 +236,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, double-idea, set-up
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): m2-v13's final frame into scene 1 by camera continue (plates grow); 1 to 2 camera continue; 2 to 3 clear change to the set-up; 3 to 4 camera push to the flask and burette tip (scrubber); 4 to 5 stage change to the full-width titre stage; 5 to 6 stage change to the calculation layout; 6 to 7 stage change (burette plate beside the rows); 7 to 8 stage change (bridge strip as hero); 8 to 9 stage change (the set-up enlarges for the rinse lens); attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v14-learning-review.md`, `checks/c-y11-m2-v14-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -235,6 +258,8 @@ Need (new plates, Codex; Revision 2 adds none):
 
 Coded: tokens and mole match, fill gauge, acid-added scrubber and readouts, counter and drops, flicker patch, magnifier numerals, titre table, bridge strip, rinse lens and titre bars, rows, framed answers, hand tags and pen marks, chips, attempt cards, countdowns, key notes board and memory card.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m6-burette-clamp-stand-v1.png` (attempt 1), `m6-wash-bottle-v1.png` (attempt 2). New plate requests: none. Simulation: `usePour` and `TitrationRig` from the titration engine for scene 4.
+
 ## Codex asset brief (Year 11 Chemistry M2 v14)
 
 Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first. One derived plate, after the learning review, science check and Codex error check pass and the owner gives the go-ahead: `y11c-sample-bottle-clear-v1.png`, cropped from `public/assets/chemistry/m8-river-sampling-bottle-v1.png` (keep only the clear screw-cap bottle; remove every pixel of the dipper and pole; transparent PNG with a true alpha channel, clean edges, no halo; crop, never stretch). Save to `public/assets/chemistry/`. Also confirm the methyl orange trio overlays exactly at the conical-flask position under the burette tip on the dark board. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/chem-y11-m2-v14-provenance.json`.
@@ -250,6 +275,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v13's final frame, and send the final frame to the m2-v15 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm that the scene 4 readouts ("acid added" 0.00 to 18.80 mL; "carbonate left" 2.006 × 10⁻³ mol to 0) still match "Numbers used" when driven by the pour clock.
 
 ## YouTube metadata (draft)
 
@@ -298,3 +325,23 @@ Visual upgrade (high-risk design: scene-level redesign of the long stretches; na
 - No new plate requests (the bottle crop was delivered by brief 181).
 
 Counts: 5,659 characters, unchanged; about 510 to about 512 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 4: the burette motion is named as the titration engine's `usePour` and `TitrationRig` (drawn over the painted plates); the carbonate readout stays lesson-computed because the engine does not model a two-step base.
+- Question cards: attempt 1 gains the burette on its stand and loses the outlined bridge strip during the countdown; attempt 2 gains a wash bottle; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "skip the rough run" (kept in scene 5).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,659 characters, unchanged; about 500 s (it was about 512 s).
+
+Calls for root: the titration engine is used for the burette motion only; a carbonate (two-step) titration is a kit gap. the bridge strip is hidden on the attempt 1 card.

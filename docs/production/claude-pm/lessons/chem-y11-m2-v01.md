@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V01: Conservation of mass and balancing equations. Why must mass be conserved when a chemical equation is balanced? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,975 characters, 19 scenes, about 530 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,17 @@ Entry knowledge: Stage 5 particle model and formulae; m1-v19 formulae; m1-v27 di
 Stops after: boundary and closed system, the law and its cause, balancing by coefficients, (g) and the boundary, mass changes by subtraction. No moles.
 Handoff: m2-v02, the mole.
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the balance and the copper carbonate crucible, then its system boundary, scenes 1 and 2 (about 63 s); (B) magnesium, scenes 3 and 4 (about 39 s); (C) the closed system on the balance, scene 5 (about 31 s); (D) the particle model, scene 6 (about 28 s); (E) the equation with its tiles and tally, scenes 7 and 8 (about 55 s); (F) the full-width coefficient stepper, scene 9 (about 26 s); (G) two more equations beside their crucibles, scenes 10 and 11 (about 47 s); (H) the calculation board, scene 12 (about 40 s); (I) the memory card, scene 13 (about 8 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 63 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded icons of real things.** The padlock glyph (scene 8) becomes a hand tag, and the coded crucible outline (scene 17) becomes a painted crucible thumbnail.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues m1-v07): atoms in element colours with an ink outline; coefficients amber; subscripts ink and locked; the system boundary dashed teal; gases as grey wisps with a label; equal tally rows teal; givens navy; earlier rows dimmed; crossed chips red strike; "illustrative data" tag grey on every measured mass.
@@ -105,6 +116,8 @@ Visual: the particle model shrinks above. The equation "H₂ + O₂ → H₂O" w
 
 Visual: "H₂O" enlarges at the centre; a `PenArrow` points at its subscript 2, gloss "subscript: atoms in one particle". On "is" a small padlock glyph appears beside the subscript with the tag "fixes the substance". The formula edits to "H₂O₂" with its tile model (two H, two O) and a grey label "hydrogen peroxide: a different substance"; it is crossed and reverts. On "coefficient" a dashed amber slot appears in front of "H₂O" and a "2" writes in it; two separate water tile models appear side by side, gloss "coefficient: how many particles". On "coefficients" every formula in the scene 7 equation gains an empty amber slot; amber hand tag "change this" by a slot and an ink hand tag "never this" by the padlock.
 
+Upgrade (Revision 3): No padlock is drawn: on "is" an ink hand tag "locked: fixes the substance" writes beside the subscript with a pen ring round it. Wherever a later scene shows the padlock, the same pen ring and tag are used.
+
 ### 9. balancing hydrogen and oxygen
 > Let's balance it. To get two oxygen atoms on the right, we need two water molecules, so write a two in front of H two **O**. Now the right has four hydrogen atoms, but the left has two. So write a two in front of H two as **well**. Count again. Four hydrogen and two oxygen on each **side**. Two hydrogen molecules and one oxygen molecule make two water **molecules**.
 
@@ -135,39 +148,45 @@ Visual: the three balanced equations stack small, their tallies teal. On "out" a
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Aluminium reacts with oxygen gas to form aluminium oxide. Balance the equation: Al(s) + O₂(g) → Al₂O₃(s)". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no slots filled, no tally).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted aluminium sample (`y11c-sample-aluminium-v1.png`, about 260 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 15. feedback 1 (brief)
 > Aluminium oxide has three oxygen atoms, and oxygen gas comes in pairs. Six is the smallest number both fit, so use three O two and two A l two O **three**. That's four aluminium atoms on the right, so write a four in front of **aluminium**. Four A l plus three O two makes two A l two O three. Writing O three to fix the oxygen is the classic slip. O three is ozone, a different **substance**.
 
 Visual: card shrinks to the top. The equation writes with slots and a tally. On "three" "3" writes in the O₂ slot and "2" in the Al₂O₃ slot; "O 6 | 6" turns teal, "Al 1 | 4" rose. On "aluminium" "4" writes in the Al slot; "Al 4 | 4" teal; the balanced line glows and is framed in a dark-ink box with a green tick: "4Al(s) + 3O₂(g) → 2Al₂O₃(s)"; amber hand tag "6 fits both" by the O row. On "substance" a chip "2Al + O₃ → Al₂O₃" fades in and is crossed in red, red hand tag "subscript changed: O₃ is ozone". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Al(s) + O₂(g) → Al₂O₃(s), not yet balanced". The aluminium sample stays small beside the rows.
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. A student heats five point zero zero grams of calcium carbonate in an open crucible until the mass stops changing. Two point eight zero grams of calcium oxide is left. Calculate the mass of carbon dioxide released, and explain why the mass decreased. Pause here to answer.
 
 Visual: `QuestionCard`: "A student heats 5.00 g of calcium carbonate, CaCO₃, in an open crucible until its mass stops changing. The equation is CaCO₃(s) → CaO(s) + CO₂(g). 2.80 g of calcium oxide remains. (a) Calculate the mass of carbon dioxide released. (b) Explain why the mass in the crucible decreased, with reference to the law of conservation of mass." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted open crucible of white powder over a burner (`m5-g02b-open-crucible-v1.png`, about 300 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Five point zero zero minus two point eight zero is two point two zero grams of carbon dioxide. The mass of the reactant still equals the mass of the products, but carbon dioxide is a gas that left the open crucible, so the balance no longer weighed **it**. Saying the mass was destroyed is the slip to **avoid**.
 
 Visual: card shrinks to the top; "open crucible" and "CO₂(g)" underlined in the card. Row "m(CO₂) = 5.00 − 2.80 = 2.20 g" writes with the first sentence (48 px), the "2.20 g" framed with a green tick. On "it" a small coded crucible outline with a dashed teal boundary shows grey wisps "CO₂ 2.20 g" crossing out. On "avoid" a chip "mass was destroyed" fades in and is crossed in red, red hand tag "it left as a gas". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "5.00 g CaCO₃ | 2.80 g CaO remains | open crucible". The crucible in the boundary sketch is the painted crucible thumbnail (about 220 px) with the dashed teal boundary drawn round it, not a coded outline; the wisps are solid slate.
 
 ### 18. handoff: too many to count
 > One more thing. A balanced equation counts particles. Two magnesium atoms react with one oxygen molecule. But that zero point two four of a gram of magnesium holds an enormous number of atoms, far too many to count one by **one**. Next time, we'll see how a mole connects that particle count with an amount chemists can actually **use**.
 
 Visual: board clears to "2Mg(s) + O₂(g) → 2MgO(s)" large at the centre; under it, in small grey, "2 atoms : 1 molecule : 2 units of MgO". `p01-mg-ribbon-v1.png` slides in at the left on `y11c-top-pan-balance-v1.png`, display "0.24 g". On "one" a magnifier circle over the ribbon fills with a dense coded field of pale green atoms, and the tag "how many atoms?" writes beside it. On "use" the chip writes: "Next: How does a mole connect particle count with chemical amount?". Hold about 2 seconds. This is the final frame (m2-v02 opens on it).
 
-### 19. key notes (quiet, hold about 50 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Conservation of mass: in a closed system, total mass before = total mass after, because atoms are rearranged, never made or destroyed.
-2. Open container: a gas leaving lowers the mass; a gas joining from the air raises it. (g) marks a gas.
-3. Balance with coefficients (how many particles), never subscripts (they fix the substance).
-4. Check by counting each atom on both sides: 2H₂ + O₂ → 2H₂O has 4 H and 2 O on each side.
-5. Mass change: mass of reactants = mass of products, so 5.00 g CaCO₃ − 2.80 g CaO = 2.20 g CO₂.
+1. Closed system: total mass before = total mass after. Atoms are only rearranged.
+2. Open container: a gas leaving lowers the mass; a gas joining raises it.
+3. Balance with coefficients (how many), never subscripts (which substance).
+4. Check each atom on both sides: 2H₂ + O₂ → 2H₂O has 4 H and 2 O each side.
+5. Mass of reactants = mass of products: 5.00 g − 2.80 g = 2.20 g CO₂.
 
-Memory aid (framed card under the notes, hand lettering, teal and amber as in scene 13): *Atoms in, atoms out. Change the big number in front, never the small number inside.* Notes 32 px in the role colours (boundary teal, coefficients amber, framed result ink); 506 characters; no paragraphs.
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering, teal and amber as in scene 13): *Atoms in, atoms out. Change the big number in front, never the small number inside.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -219,6 +238,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,975 characters**, 19 scenes (Revision 1's headline 5,993 included 18 joining spaces; scene sum was 5,975, and scene 5's rewrite keeps 412). At 13.3 characters per second the speech is about 449 s; add about 3 s for the heating cross-fades (1), 2 s for the pour and settle (5), 2 s for the particle model (6), 2 s for the scene 13 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 81 s): **about 530 s**. Reserve trims if the voiced take runs long: scene 4's last sentence (the ash comparison), scene 12's last two sentences (the chips stay), scene 1's first sentence.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,975 characters). The notes scene is 45 s in all, so the estimate is about 524 s (it was about 530 s).
+
 ## Opening frame and final frame
 
 - **Opening frame:** m1-v27's final frame exactly (Decisions).
@@ -233,6 +254,8 @@ In order (19 scene headings, all `### N.`): hook, boundary, prediction, magnesiu
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: m1-v27's final frame into scene 1 by camera continue (the balance stays, the beaker lifts off); 1 to 2 camera continue; 2 to 3 camera continue (crucible to thumbnail); 3 to 4 camera continue; 4 to 5 clear change; 5 to 6 board clear (law banner carries over); 6 to 7 camera continue (the particle model shrinks above); 7 to 8 to 9 camera continue; 9 to 10 board reset; 10 to 11 camera continue; 11 to 12 clear change; 12 to 13 board clear; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/c-y11-m2-v01-learning-review.md`, `checks/c-y11-m2-v01-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -252,6 +275,8 @@ Need (new plates, Codex):
 3. Withdrawn (Revision 2, brief 180 blocker): `y11c-capped-bottle-chips-v1.png` and `y11c-capped-bottle-fizz-v1.png`. Do not paint them for this video.
 
 Coded: balance display, pour stream, coefficient stepper dials and live readouts, boundary, gas wisps, particle models, atom tiles, tallies, coefficient slots, padlock glyph, magnifier atom field, calculation rows, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-sample-aluminium-v1.png` (attempt 1 card), `m5-g02b-open-crucible-v1.png` (attempt 2 card and feedback 2). Removed coded stand-ins: the padlock glyph and the crucible outline. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v01)
 
@@ -278,6 +303,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals m1-v27's final frame and the final frame matches m2-v02's opening.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -327,3 +354,23 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Stage cuts: scene 3 is a stage change (copper carbonate to a thumbnail), scene 5 a new centred balance stage, scene 9 a full-width stepper; no set-up now runs past about 80 s.
 - Memory aid in a framed card (13, notes); key notes cut to five short bullets (506 characters).
 - New plate request: `y11c-beaker-white-precipitate-v1.png` (edit of the existing colourless-solution beaker). Withdrawn: the two capped-bottle plates.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the aluminium sample and attempt 2 an open crucible of white powder; both feedback scenes gain navy givens strips.
+- Scene 8: the padlock glyph becomes a hand tag and pen ring. Scene 17: the coded crucible outline becomes a painted thumbnail.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: the "(g) marks a gas" reminder (kept in scene 2).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,975 characters, unchanged; about 524 s (it was about 530 s).
+
+Calls for root: the padlock is no longer drawn anywhere (the colour-roles line that mentions it is superseded).

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V11: Concentration units. How do we compare molarity with mass concentration and percentage units? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 216 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 216 error-check finding resolved by root; ready to voice.
 
 Narration 5,705 characters, 14 scenes, about 521 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,17 @@ Handoff: chem-y11-m2-v12, preparing a standard solution accurately.
 - **Opening frame:** m2-v10's final frame exactly (Decisions).
 - **Final frame (m2-v12 opens on it; exact description for the m2-v12 designer):** a dark board. At the left, the volumetric flask plate `m6-volumetric-flask-v1.png` (empty, stopper in place, etched mark on the neck), upright, about 55% of frame height, its base resting on an implied bench line at about 80% of frame height; beside its neck a coded navy tag "250.0 mL" pointing to the etched mark. At its foot, a coded white label card: "Na₂CO₃(aq), 0.100 mol L⁻¹". At the centre-right, the balance plate `y11c-top-pan-balance-v1.png`, empty pan, with a coded readout "?.??? g" in amber. Above the two, an amber chip "exactly?". The small conversion ladder sits at the top right (from scene 6). At the bottom of the content area (above the bottom 12%), the chip "Next: How do we prepare a standard solution accurately?". No sodium carbonate solid or weighing boat is shown, no mass is written, and no water is in the flask, so the m2-v12 designer can begin the method from this frame.
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the beaker and its three labels, scenes 1 and 2 (about 57 s); (B) the one-litre box on the beaker, scene 3 (about 40 s); (C) the one-litre box in hundred-millilitre tiles, scene 4 (about 34 s); (D) the million grid, scene 5 (about 39 s); (E) the unit ladder with its slider, scene 6 (about 37 s); (F) measuring a concentration by evaporation, scene 7 (about 47 s); (G) the calculation board, scene 8 (about 36 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 57 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded icons of real things.** The small balance icon on the grams-per-litre card (scene 2) is a thumbnail of the painted balance.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -89,6 +100,8 @@ Visual: opens on m2-v10's final frame; the "Next" chip fades; the painted beaker
 > They're all the same solution. Each unit answers a different question. Moles per litre counts particles, and that's what chemists need for reactions. Grams per litre tells you how much solid to weigh out, and percentages are handy on labels. And for tiny amounts, like pollutants in water, we use milligrams per litre, or parts per million. So the skill is converting between them, and every conversion has a **reason**.
 
 Visual: on "all the same" the three cards slide together and two "=" signs form between them: "0.9% (w/v) = 9.0 g L⁻¹ = 0.154 mol L⁻¹". On "counts particles" the mol L⁻¹ card gains a small ion icon (teal tag "for reactions"); on "how much solid to weigh" the g L⁻¹ card gains a small balance icon (amber tag "for weighing"); on "handy on labels" the % card gains a label outline; on "parts per million" a fourth, small card "mg L⁻¹ / ppm" writes with a gold tag "trace amounts". On "reason" the four cards stack as the ladder's empty rungs at the right, and a violet hand tag "same solution, four descriptions" with a pen bracket round the stack.
+
+Upgrade (Revision 4): The small balance on the g L⁻¹ card is a thumbnail of the painted top-pan balance (`y11c-top-pan-balance-v1.png`, about 130 px), not a coded icon; the ions on the mol L⁻¹ card are coded particles, as elsewhere.
 
 ### 3. grams per litre to moles per litre
 > Start with mass concentration, the grams of solute in each litre of solution. A litre of our saline holds nine point zero grams of sodium chloride. How many moles is that? Nine point zero over fifty-eight point four four is zero point one five four moles. And because that's in one litre, the concentration is zero point one five four moles per **litre**. So to go from grams per litre to moles per litre, divide by the molar mass. To go back, **multiply**. The units check it: grams per litre, divided by grams per mole, leaves moles per **litre**.
@@ -125,27 +138,35 @@ Visual: board resets. Task strip "Express 0.250 mol L⁻¹ glucose in g L⁻¹ a
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "An antiseptic solution is labelled '3.0% (w/v) hydrogen peroxide, H₂O₂'. Calculate the concentration of hydrogen peroxide in (a) g L⁻¹ and (b) mol L⁻¹. (H = 1.008, O = 16.00) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the ladder dims to an outline).
 
+Upgrade (Revision 4): From the first frame the card's right side carries a painted clear bottle of solution (`y11c-sample-bottle-clear-v1.png`, about 280 px tall), untagged. Card text 38 px. The unit ladder is not shown during the countdown (not even as an outline); it returns in feedback 1.
+
 ### 10. feedback 1 (brief)
 > Three point zero percent weight per volume is three point zero grams per hundred millilitres, so thirty grams per litre. Hydrogen peroxide's molar mass is thirty-four point zero two, and thirty over thirty-four point zero two is zero point eight eight moles per litre. Skipping the times ten gives zero point zero eight eight, ten times too **small**.
 
 Visual: card shrinks to the top. Rows (44 px): "3.0 g per 100 mL × 10 = 30 g L⁻¹", framed with a green tick; "MM(H₂O₂) = 2(1.008) + 2(16.00) = 34.02 g mol⁻¹"; "c = 30 ÷ 34.02 = 0.88 mol L⁻¹", framed in a dark-ink box with a green tick. On "small" a chip "0.088 mol L⁻¹ (used 3.0 g L⁻¹)" fades in and is crossed in red, red hand tag "forgot × 10". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "3.0% (w/v) H₂O₂ | H = 1.008, O = 16.00". The ladder returns beside the rows.
 
 ### 11. attempt 2 (countdown, 10 seconds)
 > Last one. A tap water sample contains copper ions at three point two milligrams per litre. The Australian health guideline for copper is two milligrams per litre. Express the copper concentration in parts per million and in moles per litre, and state whether the water meets the guideline. Pause here to answer.
 
 Visual: `QuestionCard`: "A sample of tap water contains copper(II) ions at a concentration of 3.2 mg L⁻¹. The Australian Drinking Water Guidelines health value for copper is 2 mg L⁻¹. (a) Express the copper concentration in ppm, stating any assumption. (b) Calculate the copper concentration in mol L⁻¹. (c) State whether the water meets the guideline. (Cu = 63.55) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries a painted glass of water (`m8-water-glass-v1.png`, about 280 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 12. feedback 2 (brief)
 > In dilute water, three point two milligrams per litre is about three point two parts per million. As grams per litre, that's zero point zero zero three two. Divided by sixty-three point five five, it's five point zero times ten to the minus five moles per litre. That's above two milligrams per litre, so it fails the guideline. Forgetting to change milligrams to grams gives an answer a thousand times too **big**.
 
 Visual: card shrinks to the top. Rows (44 px): "3.2 mg L⁻¹ ≈ 3.2 ppm (dilute, density ≈ 1 g mL⁻¹)"; "3.2 mg L⁻¹ ÷ 1000 = 3.2 × 10⁻³ g L⁻¹"; "c = 3.2 × 10⁻³ ÷ 63.55 = 5.0 × 10⁻⁵ mol L⁻¹", framed in a dark-ink box with a green tick; "3.2 > 2 mg L⁻¹: does not meet the guideline" (gold, framed). On "big" a chip "0.050 mol L⁻¹ (mg used as g)" fades in and is crossed in red, red hand tag "mg → g first". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "copper(II) 3.2 mg L⁻¹ | guideline 2 mg L⁻¹ | Cu = 63.55".
 
 ### 13. conclusion and handoff
 > So every volume-based unit is an amount or a mass over a stated volume, and a molar mass, a ten or a thousand converts between them. Now we can describe any solution. But to use a solution in a reaction, we need its concentration known accurately. Say we want two hundred and fifty point zero millilitres of sodium carbonate solution at exactly zero point one zero zero moles per litre. What would we weigh, and how do we reach exactly that volume? How do we prepare a standard solution **accurately**?
 
 Visual: on "volume-based unit" a grey tag "ppm is by mass: the dilute-water shortcut links it" (26 px) sits by the ladder's ppm label. The memory line writes at the top as a framed card (dark-ink frame; rose-violet "Percent (w/v) times ten", amber "is grams per litre", teal "grams per litre over molar mass is moles per litre", 44 px): "Percent (w/v) times ten is grams per litre; grams per litre over molar mass is moles per litre." The ladder lights all its arrows once, then shrinks to the top right. On "known accurately" the board clears. On "two hundred and fifty point zero millilitres" the volumetric flask plate (`m6-volumetric-flask-v1.png`, empty, stoppered) rises at the left with a navy tag "250.0 mL" at its etched mark; on "zero point one zero zero moles per litre" the white label card "Na₂CO₃(aq), 0.100 mol L⁻¹" writes at its foot. On "What would we weigh" the balance plate appears at the centre-right with the amber readout "?.??? g"; on "exactly that volume" the amber chip "exactly?" writes above. On "accurately" the chip "Next: How do we prepare a standard solution accurately?" writes. Hold about 2 seconds. This is the final frame (m2-v12 opens on it; see "Opening frame and final frame").
 
-### 14. key notes (quiet, hold about 60 seconds)
+### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -155,9 +176,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Evaporate a measured volume to dry, constant mass: g ÷ L = g L⁻¹.
 5. Size check: g L⁻¹ is usually the bigger number.
 
-Memory aid (framed card on the notes screen, as in scene 13): *Percent (w/v) times ten is grams per litre; grams per litre over molar mass is moles per litre.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 13's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 13): *Percent (w/v) times ten is grams per litre; grams per litre over molar mass is moles per litre.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 13's final frame.
 
 ## Teaching checks
 
@@ -214,6 +233,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,705 characters** (root fix included), 14 scenes (Revision 1 was 5,710; scene 6 "guideline value" wording −6, scene 13 "volume-based unit" −2). At 13.3 characters per second the speech is about 429 s; add about 14 s of holds and settling (the tiles in 4, the grid in 5, the ladder slider in 6, about 2 s, the evaporation sequence in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 521 s (8.7 minutes)**.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,705 characters). The notes scene is 45 s in all, so the estimate is about 509 s (it was about 521 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v11` (route chem-y11-m2-v11; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v11`.
@@ -223,6 +244,8 @@ In order (14 scene headings, all `### N.`): three-labels, same-solution, grams-t
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): m2-v10's final frame into scene 1 by camera continue (the beaker grows); 1 to 2 camera continue (cards slide together); 2 to 3 camera push into the beaker; 3 to 4 stage change (full-width 100 mL stack); 4 to 5 stage change (million grid); 5 to 6 clear change (the ladder as hero, with its slider); 6 to 7 clear change; 7 to 8 clear change, then a stage change inside 8 to the size check; attempts and feedback card shrink to the top; 12 to 13 board clear; 13 to 14 fade to the notes board, and 14 cross-fades back to 13's final frame.
 
 Holds: prediction countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v11-learning-review.md`, `checks/c-y11-m2-v11-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -240,6 +263,8 @@ Need (new plates, Codex): none. Revision 2 adds no new plate request.
 
 Coded: label cards, 1 L box, ions, 100 mL tiles, million grid, `UnitLadder` and its slider readouts, calculation layout, size-check bars, framed answers, hand tags and pen marks, chips, cards, countdowns, key notes board and memory card.
 
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-sample-bottle-clear-v1.png` (attempt 1 card), `m8-water-glass-v1.png` (attempt 2 card); the balance thumbnail replaces a coded icon in scene 2. New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M2 v11)
 
 1. (Delivered by brief 181; now essential for scene 7) `y11c-evaporating-basin-dry-salt-v1.png`: same canvas as `y11c-evaporating-basin-crystals-v1.png`, identical basin and mat, except the basin holds no liquid: a thin dry white crust of small salt crystals over the lower inside surface. Transparent PNG with alpha channel; no text, no people, hands or faces.
@@ -255,6 +280,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v10's final frame, and send the final frame description to the m2-v12 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -317,3 +344,23 @@ Counts: 5,710 to 5,702 characters (sum of scene strings); about 520 to about 521
 Brief 216 error check (`checks/c-y11-m2-v11-rev2-error-check.md`), should-fix finding resolved (root):
 - Scene 6: the ladder slider's 0.5% stop now reads 5.0 g L⁻¹ and 5000 mg L⁻¹ (0.5 × 10 = 5.0; 5.0 × 1000 = 5000; 5.0 ÷ 58.44 = 0.0856 mol L⁻¹, rechecked in Python). The 0.1% stop (1.0, 1000, 0.0171) was already correct.
 - No speech change. Narration 5,705 characters (sum of 14 scene strings), about 521 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains a clear bottle and loses the outlined ladder during the countdown; attempt 2 gains a glass of water; both feedback scenes gain navy givens strips.
+- Scene 2: the coded balance icon is a thumbnail of the painted balance.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,705 characters, unchanged; about 509 s (it was about 521 s).
+
+Calls for root: the unit ladder is hidden on the attempt 1 card (it showed the method).

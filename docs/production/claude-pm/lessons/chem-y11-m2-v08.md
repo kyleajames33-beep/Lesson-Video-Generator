@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V08: Limiting and excess reagents. Which reactant limits how much product can form? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,311 characters, 16 scenes, about 563 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,16 @@ Handoff: chem-y11-m2-v09, measuring mass changes while keeping track of escaping
 - **Opening frame:** m2-v07's final frame exactly (Decisions).
 - **Final frame (m2-v09 opens on it):** at the left, the balance (`y11c-top-pan-balance-v1.png`) with the new plate `y11c-flask-chips-acid-plug-fizz-v1.png` on its pan (conical flask, colourless acid, white marble chips fizzing, a loose cotton wool plug in the neck), a coded readout "150.62 g" and a faint grey wisp rising from the plug labelled "CO₂(g)"; above, the equation strip "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)"; at the right, two chips: teal "2.00 g CaCO₃: limiting" and amber "HCl: excess"; an amber chip "the gas escapes: how much?"; the bridge icon small at the top right; the chip "Next: How can we measure mass changes while keeping track of escaping gas?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the ribbon, gas jar and oxide dish, scene 1 (about 23 s); (B) the particle tray, scenes 2 and 3 (about 66 s); (C) the method bridge with its gate, scene 4 (about 31 s); (D) the calculation board, scene 5 (about 38 s); (E) the oxygen slider on the gas jar, scene 6 (about 38 s); (F) what is left over, scene 7 (about 36 s); (G) sodium and chlorine as painted samples, then their rows, scenes 8 and 9 (about 78 s; the plates shrink and the rows take the full width at scene 9); (H) the runs meter, scene 10 (about 25 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 78 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -130,39 +140,45 @@ Visual: a two-bar runs meter with grey labels "cheap reactant" (long, amber "exc
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "5.00 g of aluminium is heated with 5.00 g of sulfur: 2Al(s) + 3S(s) → Al₂S₃(s). (a) Identify the limiting reagent. Show your working. (b) Calculate the theoretical yield of aluminium sulfide. (Al = 26.98, S = 32.07) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the bridge icon dims to an outline).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted aluminium and sulfur samples (`y11c-sample-aluminium-v1.png`, `y11c-sample-sulfur-v1.png`, about 220 px each), untagged. Card text 38 px. The bridge is not shown during the countdown (not even as an outline); it returns in feedback 1.
+
 ### 12. feedback 1 (brief)
 > Aluminium is zero point one eight five moles, over two is zero point zero nine two seven. Sulfur is zero point one five six moles, over three is zero point zero five two zero. So sulfur is limiting. That makes zero point zero five two zero moles of aluminium sulfide, or seven point eight zero grams. Working from aluminium gives thirteen point nine grams, more than the ten grams that went **in**.
 
 Visual: card shrinks to the top. Rows (44 px; guard digits carried, rounded only in the answer): "n(Al) = 5.00 ÷ 26.98 = 0.1853 mol; ÷ 2 = 0.09266"; "n(S) = 5.00 ÷ 32.07 = 0.1559 mol; ÷ 3 = 0.05197"; runs meter (S teal "limiting"); "n(Al₂S₃) = 0.1559 ÷ 3 = 0.05197 mol"; "MM(Al₂S₃) = 2(26.98) + 3(32.07) = 150.17 g mol⁻¹"; "m = 0.05197 × 150.17 = 7.80 g", framed in a dark-ink box with a green tick. A grey tag "spoken values rounded; unrounded values carried" (26 px). On "in" a chip "13.9 g (from Al)" fades in and is crossed in red, with a red hand tag "more than the 10.0 g that went in". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "5.00 g Al | 5.00 g S | 2Al + 3S → Al₂S₃ | Al = 26.98, S = 32.07".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Eight point zero zero grams of methane burns with twenty-four point zero grams of oxygen. C H four plus two O two makes C O two plus two H two O. Identify the limiting reagent, and calculate the mass of the excess reagent left over. Pause here to answer.
 
 Visual: `QuestionCard`: "8.00 g of methane is burned with 24.0 g of oxygen: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). (a) Identify the limiting reagent. Show your working. (b) Calculate the mass of the excess reagent remaining after the reaction. (C = 12.01, H = 1.008, O = 16.00) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted lit Bunsen burner (`m5x-bunsen-burner-v1.png`, about 280 px tall), untagged, as a picture of methane burning. Card text 38 px. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > Methane is zero point four nine nine moles. Oxygen is zero point seven five zero moles, over two is zero point three seven five. So oxygen is limiting, even though it has more moles. Zero point three seven five moles of methane react, six point zero two grams, leaving one point nine eight grams of methane. Calling methane limiting because it has fewer moles is the classic **slip**.
 
 Visual: card shrinks to the top. Rows (44 px): "MM(CH₄) = 16.042 g mol⁻¹ (shown 16.04)"; "n(CH₄) = 8.00 ÷ 16.042 = 0.4987 mol; ÷ 1 = 0.4987"; "n(O₂) = 24.0 ÷ 32.00 = 0.750 mol; ÷ 2 = 0.375"; runs meter (O₂ teal "limiting"); "n(CH₄ used) = 0.750 × 1 ÷ 2 = 0.375 mol → × 16.042 = 6.016 g"; "m(CH₄ left) = 8.00 − 6.016 = 1.98 g", framed in a dark-ink box with a green tick. A grey tag "16.042 carried; 16.04 throughout would give 1.99 g" (26 px). On "slip" a chip "CH₄ limits (fewer moles)" fades in and is crossed in red, with a red hand tag "more moles can still limit". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "8.00 g CH₄ | 24.0 g O₂ | CH₄ + 2O₂ → CO₂ + 2H₂O".
 
 ### 15. conclusion and handoff
 > So compare moles divided by coefficients. The smaller one is the limiting reagent. It sets the theoretical yield, and the rest of the excess reagent stays behind. Now take this to the lab. Marble chips are calcium carbonate. Put two point zero zero grams of them into an excess of dilute hydrochloric acid, and the chips are limiting, so we can predict the carbon dioxide they make. But that gas bubbles out of the flask. How can we measure mass changes while keeping track of escaping **gas**?
 
 Visual: the memory line writes at the top as a framed card (dark-ink frame, violet "Moles over coefficient", teal "fewest runs, runs out first", 48 px): "Moles over coefficient: fewest runs, runs out first." The runs meter returns small (teal and amber). On "Marble chips" the board clears to the balance with `y11c-flask-chips-acid-plug-v1.png` (no fizz yet) on its pan and a coded readout "150.62 g". On "excess of dilute hydrochloric acid" the equation strip "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)" writes; chips "2.00 g CaCO₃: limiting" (teal) and "HCl: excess" (amber). On "bubbles out" the plate cross-fades to `y11c-flask-chips-acid-plug-fizz-v1.png` and a grey wisp labelled "CO₂(g)" rises from the plug; the amber chip "the gas escapes: how much?". On "gas" the chip "Next: How can we measure mass changes while keeping track of escaping gas?" writes. Hold about 2 seconds. This is the final frame (m2-v09 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Limiting reagent: runs out first and sets the product. Excess reagent: some is left over.
-2. Test: n = m ÷ MM, then n ÷ coefficient. The smaller value limits. Never compare grams or raw moles.
+2. Find n ÷ coefficient for each reactant: the smaller limits. Never compare grams.
 3. Theoretical yield: the most product, from the limiting reagent's moles only.
 4. Excess left = n(start) − n(used), with n(used) from the limiting reagent and the ratio.
 5. Check: mass in = product + excess left.
 
-Memory aid (framed card on the notes screen, violet and teal as in scene 15): *Moles over coefficient: fewest runs, runs out first.* Notes in role colours at 36 px (moles teal, masses amber, runs violet).
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering, violet and teal as in scene 15): *Moles over coefficient: fewest runs, runs out first.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -220,6 +236,8 @@ Checked with Python (5 November; script in the designer's scratchpad); Codex to 
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,311 characters**, 16 scenes (Revision 1 was 6,307; scene 9 gains 4 for the guard digit "two eight two one"). At 13.3 characters per second the speech is about 475 s; add about 10 s of holds and settling (the particle runs in 2, the bridge gate in 4, the oxygen slider in 6 and the conservation stack in 7 run during speech), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 563 s (9.4 minutes)**.
 
+Revision 3 (12 Nov 2026): narration unchanged (6,311 characters). The notes scene is 45 s in all, so the estimate is about 551 s (it was about 563 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v08` (route chem-y11-m2-v08; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v08`.
@@ -229,6 +247,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, counting-runs, limi
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): m2-v07's final frame into scene 1 by camera continue (the plates grow); 1 to 2 clear change; 2 to 3 camera continue; 3 to 4 clear change; 4 to 5 camera continue (bridge shrinks to the icon); 5 to 6 camera continue, then a stage change inside scene 6 to the oxygen-slider stage on "sixteen point six"; 6 to 7 stage change back to full-width rows, then a stage change inside scene 7 to the conservation stage with plates; 7 to 8 clear change to the sodium and chlorine plate stage; 8 to 9 camera continue (plates shrink, rows full width); 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v08-learning-review.md`, `checks/c-y11-m2-v08-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -245,6 +265,8 @@ Need (new plates, Codex; shared with m2-v09 and ws-v07):
 (Briefs below; `y11c-flask-acid-plug-spent-v1.png` is requested in `chem-y11-m2-v09.md`, also delivered.) Revision 2 adds no new plate request.
 
 Coded: particle tray, runs meter, bridge icon and gate, calculation layout, oxygen slider and its readouts, conservation stack and totals, framed answers, hand tags and pen marks, chips, attempt cards, countdowns, key notes board and memory card.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-sample-aluminium-v1.png` and `y11c-sample-sulfur-v1.png` (attempt 1 card), `m5x-bunsen-burner-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v08 and v09: marble chips flask set)
 
@@ -264,6 +286,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v07's final frame, and that m2-v09 opens on this final frame.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -314,3 +338,22 @@ Visual upgrade (high-risk design: scene-level redesign of the long calculation s
 - Plates: the existing `y11c-sample-sodium-oil-v1.png` and `y11c-gas-jar-chlorine-v1.png` added (inspected); no new plate requests.
 
 Counts: 6,307 to 6,311 characters (sum of scene strings); about 563 s, unchanged.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the aluminium and sulfur samples and loses the outlined bridge during the countdown; attempt 2 gains a lit Bunsen burner; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "never compare raw moles" (kept in scene 8, where the reactant with more moles still limits).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,311 characters, unchanged; about 551 s (it was about 563 s).
+
+Calls for root: the bridge is hidden on the attempt 1 card. a lit Bunsen burner stands for burning methane on the attempt 2 card.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V19: The ideal gas law. How does PV=nRT combine the simple gas laws? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 finding resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 182 finding resolved and the first visual upgrade; ready to voice.
 
 Narration 5,841 characters, 16 scenes, about 529 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,6 +73,17 @@ Handoff: chem-y11-m2-v20, gas volumes in reactions.
 - **Opening frame:** m2-v18's final frame exactly (Decisions).
 - **Final frame (m2-v20 opens on it):** at the left, `y11c-flask-chips-acid-bung-fizz-v1.png` (a conical flask with marble chips fizzing in clear acid, closed by a rubber bung with a bent glass delivery tube leaving to the right); a coded clear plastic tube joins the delivery tube's end to the nozzle of the horizontal gas syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`) at the right, its plunger just starting to move out from "0 mL", with coded ticks every 10 mL to 100 mL; coded grey wisps "CO₂(g)" in the tube; the conditions strip at the top right "room: 21.0 °C, 101.3 kPa"; a small navy card at the top left "PV = nRT"; an amber chip under the syringe "gas volume → moles → how far? how much?"; the chip "Next: How can a gas volume measure the progress or quantity of a reaction?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the four law cards, scene 1 (about 32 s); (B) the slider stage, scene 2 (about 27 s); (C) the equation build, then the simple laws inside it, scenes 3 and 4 (about 55 s); (D) the units strip, scene 5 (about 26 s); (E) the molar volumes recovered, scene 6 (about 30 s); (F) the calculation board, scene 7 (about 41 s); (G) the combined gas law, scene 8 (about 25 s); (H) the weather balloon, scene 9 (about 38 s); (I) three particle windows, scene 10 (about 37 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 55 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** Every window of moving gas particles is a run of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`), with a particle radius of about 3 to 5 px so it behaves like an ideal gas. Counts of wall hits and relative pressure are read from the run and shown as "× start" values. The design's quoted numbers (kPa, mL, K, mol) stay the ideal values worked out in "Numbers used"; the run is never used to produce a number with a unit. In scene 2 the syringe window is one run in which the n slider uses `inject`, the T slider a `temperature` timeline and the P slider a `volume` timeline, while the factor readouts show the stated ideal factors. In scene 10 the three windows are three runs (small radius; large radius; a low temperature).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -132,27 +143,35 @@ Visual: stage change: three particle windows side by side at full width. On "tak
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A 2.00 L flask contains nitrogen gas, N₂, at 22.0 °C and 105 kPa. Calculate the mass of nitrogen in the flask. (N = 14.01; R = 8.314 J mol⁻¹ K⁻¹) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted round flask (`c8-round-flask-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > n equals P V over R T, so a hundred and five times two, over eight point three one four times two ninety-five point one five. That's zero point zero eight five six moles. Times twenty-eight point zero two gives two point four zero grams. Leaving the temperature in Celsius gives thirty-two grams, more than ten times too much. That's the classic **slip**.
 
 Visual: card shrinks to the top. Rows: "T = 22.0 + 273.15 = 295.15 K"; "n = PV ÷ RT = 105 × 2.00 ÷ (8.314 × 295.15) = 0.0856 mol" (teal); "m = 0.0856 × 28.02 = 2.40 g" (amber), framed in a dark-ink box with a green tick. On "slip" a chip "32.2 g (T in °C)" fades in and is crossed in red (red hand tag "T must be in K"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "V = 2.00 L | 22.0 °C | 105 kPa | N = 14.01, R = 8.314 J mol⁻¹ K⁻¹".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A five hundred millilitre sample of gas at twenty-five degrees and a hundred kilopascals is compressed to two hundred and fifty millilitres and heated to seventy-five degrees. Calculate the final pressure of the gas. Pause here to answer.
 
 Visual: `QuestionCard`: "A 500 mL sample of gas at 25 °C and 100 kPa is compressed to 250 mL and heated to 75 °C. No gas escapes. Calculate the final pressure of the gas. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, about 420 px wide, one uniform scale), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > No gas escapes, so use the combined gas law. P two is P one V one T two, over V two T one. That's a hundred, times five hundred, times three forty-eight point one five, over two fifty times two ninety-eight point one five, which is two hundred and thirty-four kilopascals. Halving the volume alone gives two hundred, so forgetting the heating is the classic **slip**.
 
 Visual: card shrinks. Rows: "T₁ = 298.15 K, T₂ = 348.15 K"; "P₂ = P₁V₁T₂ ÷ (V₂T₁) = 100 × 500 × 348.15 ÷ (250 × 298.15) = 234 kPa" (red), framed in a dark-ink box with a green tick; chip "V ÷ 2 → P × 2; T ↑ → P ↑ a bit more". On "slip" a chip "200 kPa (heating ignored)" fades in and is crossed in red (red hand tag "heating ignored"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "500 mL at 25 °C, 100 kPa | then 250 mL at 75 °C | no gas escapes".
 
 ### 15. conclusion and handoff
 > So P V equals n R T combines the simple laws, because each one describes how the volume depends on one quantity, and those effects multiply. Fix any two, and a simple law falls out. That means a gas volume, measured at a known temperature and pressure, tells you the moles of gas. And moles connect to reactions. Drop some marble chips into acid, and catch the carbon dioxide in a gas syringe. How can a gas volume measure the progress or quantity of a **reaction**?
 
 Visual: the four cards return around "PV = nRT" with their ticks. On "tells you the moles" the strip "n = PV ÷ RT" writes. On "Drop some marble chips into acid" the board clears to the final frame's layout: `y11c-flask-chips-acid-bung-fizz-v1.png` at the left, the coded tube, the horizontal syringe at the right at "0 mL"; the conditions strip "room: 21.0 °C, 101.3 kPa"; "PV = nRT" shrinks to a navy card at the top left. On "catch the carbon dioxide" grey wisps "CO₂(g)" move along the tube and the plunger starts to move out; the amber chip "gas volume → moles → how far? how much?". On "reaction" the chip "Next: How can a gas volume measure the progress or quantity of a reaction?" writes. Hold about 2 seconds. This is the final frame (m2-v20 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -162,9 +181,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Same sample (fixed n): P₁V₁/T₁ = P₂V₂/T₂.
 5. Real gases deviate at high P and low T.
 
-Memory aid (framed card, on the notes screen): *Cover what's fixed: what's left is the law.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Cover what's fixed: what's left is the law.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -217,6 +234,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,841 characters**, 16 scenes (Revision 1: 5,841). Revision 2 adds about 3 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 439 s; add about 8 s of settling (the box doubling in 2, the cover-up in 4, the balloon rise in 9, the particle windows in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 529 s** (Revision 1: about 526 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,841 characters). The notes scene is 45 s in all, so the estimate is about 516 s (it was about 529 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v19` (route chem-y11-m2-v19; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v19`.
@@ -226,6 +245,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, effects-multiply, p
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v18's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 camera continue (the strips merge into the equation); 3 to 4 camera continue; 4 to 5 camera continue; 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v19-learning-review.md`, `checks/c-y11-m2-v19-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -237,6 +258,8 @@ Have (inspected 5 November on a dark contact sheet; uniform scaling only, never 
 Need (new plates, Codex): the bung-and-delivery-tube flask set requested in `chem-y11-m2-v20.md` (`y11c-flask-chips-acid-bung-fizz-v1.png` appears here first, in scene 15 and the final frame).
 
 Coded: law cards, box and particles, strips and equations, cover-up, units strip, calculation rows, altitude strip, particle windows, connecting tube and wisps, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `c8-round-flask-v1.png` (attempt 1), the syringe pair (attempt 2). New plate requests: none. Simulation: the particle box engine for the slider stage and the three windows.
 
 ## Codex asset brief (Year 11 Chemistry M2 v19)
 
@@ -253,6 +276,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v18's final frame, and send the final frame to the m2-v20 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +328,23 @@ Visual upgrade (scene-level visual changes; narration, numbers and teaching logi
 - No new plate requests.
 
 Counts: 5,841 characters (Revision 1: 5,841); about 526 to about 529 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The slider stage and the three particle windows are named as particle box runs; quoted values stay the ideal ones.
+- Question cards: attempt 1 gains a round flask and attempt 2 the syringe; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,841 characters, unchanged; about 516 s (it was about 529 s).
+
+Calls for root: the particle box supplies motion and relative counts only; every number with a unit stays the ideal value.

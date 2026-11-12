@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V10: Concentration and c = n/V. How does concentration link solution volume with moles? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,672 characters, 15 scenes, about 519 s (8.7 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -65,6 +65,16 @@ Handoff: chem-y11-m2-v11, comparing concentration units.
 - **Opening frame:** ws-v07's final frame exactly (Decisions).
 - **Final frame (m2-v11 opens on it):** at the left, the new beaker plate `y11c-beaker-colourless-solution-v1.png` with a coded label card beside it: "saline: sodium chloride 0.9% (w/v)"; at the right, a second label card "sodium chloride solution: 0.154 mol L⁻¹"; between them an amber chip "more, less or the same?"; the chip "Next: How do we compare molarity with mass concentration and percentage units?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the flask and the big beaker, then their one-millilitre windows, scenes 1 and 2 (about 61 s); (B) the calculation side: moles per litre, then litres first, scenes 3 and 4 (about 76 s; the litre converter and the two worked rows arrive at scene 4); (C) the pipette stage with the sample slider, scenes 5 and 6 (about 62 s); (D) finding a volume, then starting from a mass, scenes 7 and 8 (about 66 s; the board resets between them); (E) the volumetric flask, scene 9 (about 33 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 76 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -119,27 +129,35 @@ Visual: stage change: the words "made up to" underline in amber pen in the task 
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "3.70 g of calcium chloride, CaCl₂, is dissolved in water and the solution is made up to 250.0 mL. Calculate the concentration of the calcium chloride solution in mol L⁻¹. (Ca = 40.08, Cl = 35.45) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted volumetric flask (`m6-volumetric-flask-v1.png`, about 300 px tall) beside the calcium chloride sample (`y11c-calcium-chloride-v1.png`, about 200 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 11. feedback 1 (brief)
 > Calcium chloride's molar mass is one hundred and ten point nine eight, so that's zero point zero three three three moles. The volume is zero point two five zero zero litres. Zero point zero three three three over zero point two five zero zero is zero point one three three moles per litre. Using two hundred and fifty instead of litres gives an answer a thousand times too **small**.
 
 Visual: card shrinks to the top. Rows (44 px): "MM(CaCl₂) = 40.08 + 2(35.45) = 110.98 g mol⁻¹"; "n = 3.70 ÷ 110.98 = 0.03334 mol"; "V = 250.0 ÷ 1000 = 0.2500 L"; "c = 0.03334 ÷ 0.2500 = 0.133 mol L⁻¹", framed in a dark-ink box with a green tick (grey tag "spoken rounded; 0.03334 carried"). On "small" a chip "1.33 × 10⁻⁴ mol L⁻¹ (used 250 mL)" fades in and is crossed in red, red hand tag "mL, not L". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "3.70 g CaCl₂ | made up to 250.0 mL | Ca = 40.08, Cl = 35.45".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A bottle holds sodium hydroxide solution at zero point one five zero moles per litre. What volume of it contains zero point zero one two zero moles? And what is the concentration of a twenty point zero millilitre portion poured from the bottle? Pause here to answer.
 
 Visual: `QuestionCard`: "A bottle contains sodium hydroxide solution with a concentration of 0.150 mol L⁻¹. (a) Calculate the volume of this solution, in mL, that contains 0.0120 mol of sodium hydroxide. (b) A 20.0 mL portion is poured from the bottle into a beaker. State the concentration of sodium hydroxide in the portion, and explain your answer. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted clear bottle of solution (`y11c-sample-bottle-clear-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > V equals n over c. Zero point zero one two zero over zero point one five zero is zero point zero eight zero zero litres, or eighty point zero millilitres. The portion is still zero point one five zero moles per litre, because pouring some out doesn't change how much is in each litre. Multiplying instead of dividing is the classic **slip**.
 
 Visual: card shrinks to the top. Rows (44 px): "V = n ÷ c = 0.0120 ÷ 0.150 = 0.0800 L = 80.0 mL", framed in a dark-ink box with a green tick; "(b) c = 0.150 mol L⁻¹: a portion of a solution has the same concentration", framed with a green tick. On "slip" a chip "V = 0.0120 × 0.150 = 0.0018 L" fades in and is crossed in red, red hand tag "divide, don't multiply". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "c = 0.150 mol L⁻¹ | n wanted = 0.0120 mol | a 20.0 mL portion".
 
 ### 14. conclusion and handoff
 > So concentration links them: c equals n over V, with V in litres. Multiply by the volume to get moles, or divide moles by concentration to get a volume. But labels don't always use moles. A bag of saline from a hospital says zero point nine percent sodium chloride. Is that more concentrated, less, or the same as zero point one five four moles per litre? How do we compare molarity with mass concentration and percentage **units**?
 
 Visual: the memory line writes at the top as a framed card (dark-ink frame, violet "Moles per litre", navy "with V in litres", 48 px): "Moles per litre: n over V, with V in litres." The three forms write in a column: "c = n ÷ V", "n = c × V", "V = n ÷ c". On "labels don't always use moles" the board clears to the beaker plate at the left; on "zero point nine percent" a label card "saline: sodium chloride 0.9% (w/v)" writes beside it; on "zero point one five four moles per litre" a second card at the right "sodium chloride solution: 0.154 mol L⁻¹"; amber chip "more, less or the same?". On "units" the chip "Next: How do we compare molarity with mass concentration and percentage units?" writes. Hold about 2 seconds. This is the final frame (m2-v11 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -149,9 +167,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. A sample has the same c but fewer moles.
 5. From a mass: n = m ÷ MM first, then c = n ÷ V.
 
-Memory aid (framed card on the notes screen, as in scene 14): *Moles per litre: n over V, with V in litres.* Notes in role colours at 36 px (concentration violet, moles teal, volume navy).
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, violet and navy as in scene 14): *Moles per litre: n over V, with V in litres.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -208,6 +224,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,672 characters**, 15 scenes (unchanged; no speech edits). At 13.3 characters per second the speech is about 426 s; add about 14 s of holds and settling (the sample windows in 2, the pipette in 5 and 6, plus about 2 s for the sample slider to settle at 25.0 mL), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 519 s (8.7 minutes)**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,672 characters). The notes scene is 45 s in all, so the estimate is about 507 s (it was about 519 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v10` (route chem-y11-m2-v10; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v10`.
@@ -217,6 +235,8 @@ In order (15 scene headings, all `### N.`): which-concentrated, amount-not-conce
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): ws-v07's final frame into scene 1 by camera continue (balance and card fade); 1 to 2 camera push to the windows; 2 to 3 clear change; 3 to 4 camera continue; 4 to 5 stage change to the pipette stage (sample slider); 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 stage change to the volumetric flask stage; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: prediction countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v10-learning-review.md`, `checks/c-y11-m2-v10-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -232,6 +252,8 @@ Need (new plates, Codex):
 
 Coded: container chips, sample windows, unit bar, litre converter, calculation layout, pipette liquid column, sample slider and readouts, framed answers, hand tags and pen marks, label cards, chips, cards, countdowns, key notes board and memory card.
 
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `m6-volumetric-flask-v1.png` and `y11c-calcium-chloride-v1.png` (attempt 1 card), `y11c-sample-bottle-clear-v1.png` (attempt 2 card). New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M2 v10)
 
 1. `y11c-beaker-colourless-solution-v1.png` (2048 × 2048 px, the same canvas as `m6-beaker-v1.png`): **edit of that plate**, identical in every line, except it is about two thirds full of a clear, colourless liquid with a visible meniscus line and a faint pale-blue tint at the edges for legibility on the dark board. No bubbles, no solid, no text or graduations, no people, hands or faces. Transparent PNG with alpha channel.
@@ -246,6 +268,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested (the pipette moves by code); no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals ws-v07's final frame, and that m2-v11 opens on this final frame.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -291,3 +315,22 @@ Visual upgrade (light pass):
 - No new plate requests.
 
 Counts: 5,672 characters, unchanged (no speech edits); about 517 to about 519 s (slider settling).
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the volumetric flask and the calcium chloride sample; attempt 2 gains a clear bottle of solution; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,672 characters, unchanged; about 507 s (it was about 519 s).
+
+Calls for root: none.

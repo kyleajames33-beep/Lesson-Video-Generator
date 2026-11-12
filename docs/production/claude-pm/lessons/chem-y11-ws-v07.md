@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V07: Communicating. How do we communicate a chemistry conclusion that evidence supports? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,342 characters, 15 scenes, about 567 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,16 @@ Handoff: chem-y11-m2-v10, concentration.
 - **Opening frame:** m2-v09's final frame exactly (Decisions).
 - **Final frame (m2-v10 opens on it):** at the left, the balance with `y11c-flask-acid-plug-spent-v1.png` (readout "149.80 g" dimmed); over the flask a teal chip "CaCl₂(aq): about 0.0200 mol" and a navy chip "volume: about 50 mL"; the finished conclusion card small at the top right (four filled slots); an amber chip "how concentrated?"; the chip "Next: How does concentration link solution volume with moles?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) three draft conclusions, then the conclusion builder, scenes 1 and 2 (about 75 s; the drafts step aside and the builder is drawn at scene 2); (B) the evidence stage, scene 3 (about 38 s); (C) the flask stage, scene 4 (about 39 s); (D) the dot plot with the run slider, scene 5 (about 40 s); (E) the notation fixer, scene 6 (about 39 s); (F) the form picker, scene 7 (about 36 s); (G) the feedback check list, used on draft B, scenes 8 and 9 (about 64 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 75 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -116,39 +126,45 @@ Visual: draft B moves to the centre with the checklist beside it. On "does answe
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience") beside `y11c-cuso4-crucible-lid-white-v1.png` small: "A class heated blue copper sulfate crystals, CuSO₄·5H₂O, to constant mass and cooled the white powder uncovered on the bench. Their results for the percentage of water were 34.3%, 34.5% and 34.4%. The value calculated from the formula is 36.1%, and the percentage uncertainty in each result is about 3.0%. The class concluded: 'Our results prove that copper sulfate crystals are 36.1% water, and they were accurate because they were close together.' (a) Identify TWO problems with this conclusion. (b) Rewrite the conclusion so that it is supported by the evidence. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): Card text 34 to 38 px so the whole question fits; the crucible plate is about 260 px (not small).
+
 ### 11. feedback 1 (brief)
 > First, close together means precise, not accurate. The mean, thirty-four point four percent, is one point seven below the formula value. Second, "prove" overclaims, when the results don't even match. A better conclusion says the results were precise but not accurate, probably because the powder took water back while cooling uncovered. Calling close results accurate is the classic **slip**.
 
 Visual: card shrinks to the top. Rows: "(a) close together = precise, not accurate (mean 34.4%, 1.7 below 36.1%)"; "'prove' overclaims; the data do not match 36.1%". The four-slot builder fills compactly: claim "water lost: mean 34.4%, below the expected 36.1%"; evidence "34.3, 34.5, 34.4%"; reasoning and limits "precise, not accurate; error 4.7% > 3.0% uncertainty: look for a bias; probably the powder reabsorbed water while cooling uncovered"; fix "cool in a desiccator". The rewritten conclusion is framed in a dark-ink box with a green tick. On "slip" a chip "accurate because close together" fades in and is crossed in red, red hand tag "that's precise". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "34.3%, 34.5%, 34.4% | formula value 36.1% | uncertainty about 3.0% | cooled uncovered".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Find three errors in this line from a student's report. C a C O three plus H C l makes C a C l plus H two O plus C O two. Mass lost was zero point eight two three three. Pause here to answer.
 
 Visual: `QuestionCard`: "A student's report on the marble chips experiment includes this line: 'CaCO3 + HCl → CaCl + H2O + CO2. Mass lost was 0.8233.' The balance read to 0.01 g. Identify THREE errors in the student's use of scientific notation, and correct them. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted flask of chips in acid with its plug (`y11c-flask-chips-acid-plug-v1.png`, about 280 px tall), untagged. Card text 38 px, with the quoted report line in a tinted box. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > Calcium chloride is C a C l two, because a calcium ion carries a two plus charge. Then the equation needs two H C l to balance, and state symbols to show which substance is the gas. And the mass has no unit and too many digits. Write zero point eight two grams. Fixing only the number and leaving the formula wrong is the classic **slip**.
 
 Visual: card shrinks to the top. The notation fixer marks the faulty line in rose: "CaCl" → "CaCl₂" (tag "Ca²⁺, 2 Cl⁻"); "HCl" → "2HCl" and state symbols added: "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)"; "0.8233" → "0.82 g"; the corrected line is framed with a green tick. On "slip" a chip "fix the number only" fades in and is crossed in red, red hand tag "formula still wrong". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "report line: CaCO3 + HCl → CaCl + H2O + CO2; mass lost was 0.8233 | balance reads to 0.01 g".
 
 ### 14. conclusion and handoff
 > So, communicate a conclusion as a claim, evidence, reasoning and limits, in careful scientific language, in the form your reader needs. And when you judge someone else's, check the same parts. One more look at our flask. The chips have gone, and the solution now holds about zero point zero two zero zero moles of calcium chloride, in about fifty millilitres. How strong is that solution? How does concentration link solution volume with **moles**?
 
 Visual: the finished conclusion card (four filled slots from scenes 3 to 5, Revision 2 wording) holds at the centre in a dark-ink frame, with the framed memory card under it, then shrinks to the top right. On "One more look at our flask" the spent flask on the balance returns at the left, readout dimmed. On "zero point zero two zero zero moles of calcium chloride" a teal chip "CaCl₂(aq): about 0.0200 mol" sits over the flask; on "fifty millilitres" a navy chip "volume: about 50 mL". On "How strong" an amber chip "how concentrated?". On "moles" the chip "Next: How does concentration link solution volume with moles?" writes. Hold about 2 seconds. This is the final frame (m2-v10 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Conclusion: claim, evidence (data, units, spread), reasoning (chemistry), limits (cause, direction, fix).
+1. Conclusion: claim, evidence (data, units), reasoning (chemistry), limits (cause, fix).
 2. "Supports", not "proves". Close together = precise, not accurate.
 3. Notation: correct formulae, balanced equations, state symbols, units, sensible digits.
 4. Form: table for values, graph for trends, diagram for set-up; talks: claim, graph, main limit.
 5. Feedback: check the parts; say what to change; judge the argument.
 
-Memory aid (framed card on the notes screen, as in scene 2): *Claim, evidence, reasoning, then the limits.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 2): *Claim, evidence, reasoning, then the limits.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -195,6 +211,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,342 characters**, 15 scenes (Revision 1 was 6,266; scene 4 rewritten for brief 181, +76). At 13.3 characters per second the speech is about 477 s; add about 11 s of holds and settling (the builder filling in 3 and 4, the run slider in 5, the form tiles in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 567 s (9.5 minutes)**. This is close to the 570 s cap; if a later repair adds speech, trim scene 7's "A labelled diagram shows the setup faster than a paragraph." (58 characters) first.
 
+Revision 3 (12 Nov 2026): narration unchanged (6,342 characters). The notes scene is 45 s in all, so the estimate is about 555 s (it was about 567 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v07` (route chem-y11-ws-v07; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v07`.
@@ -204,6 +222,8 @@ In order (15 scene headings, all `### N.`): three-drafts, conclusion-parts, clai
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v09's final frame into scene 1 by camera continue (the empty card splits into three); 1 to 2 camera continue; 2 to 3 stage change to the full-width evidence stage; 3 to 4 stage change to the flask stage (inside-the-flask lens); 4 to 5 stage change to the dot-plot stage with the run slider (Revision 2); 5 to 6 clear change; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: prediction countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-ws-v07-learning-review.md`, `checks/c-y11-ws-v07-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -216,6 +236,8 @@ Have (inspected 5 November; uniform scaling only):
 Need (new plates, Codex): none beyond m2-v09's set (all delivered by brief 181; `y11c-flask-acid-plug-spent-v1.png` and `y11c-top-pan-balance-v1.png` inspected 6 November and now also carry scene 4). Revision 2 adds none.
 
 Coded: run slider and dot plot, inside-the-flask lens (from m2-v09), framed results, hand tags and pen marks, memory card, draft cards, conclusion builder, word swaps, terms panel, notation fixer, form tiles (including the labelled two-dimensional setup diagram), feedback checklist, chips, cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plate newly used (confirmed by file listing, not re-inspected): `y11c-flask-chips-acid-plug-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v07)
 
@@ -232,6 +254,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand, face or body outline is drawn or requested (drafts are text cards); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m2-v09's final frame, and that m2-v10 opens on this final frame.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -283,3 +307,22 @@ Visual upgrade (high-risk design: scene-level redesign of the long builder stret
 - No new plate requests. The final frame that m2-v10 opens on is unchanged.
 
 Counts: 6,266 to 6,342 characters (sum of scene strings); about 560 to about 567 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 2 gains the plugged flask; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "spread" and "direction" from the first bullet (kept in scenes 3 and 4).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,342 characters, unchanged; about 555 s (it was about 567 s).
+
+Calls for root: none.

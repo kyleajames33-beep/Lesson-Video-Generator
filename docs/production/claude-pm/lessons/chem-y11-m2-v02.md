@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V02: The mole and the Avogadro constant. How does a mole connect particle count with chemical amount? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 214 error-check findings resolved by root; ready to voice.
 
 Narration 5,578 characters, 19 scenes, about 502 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -59,6 +59,17 @@ Entry knowledge: Stage 5 particles and scientific notation; m2-v01; m1-v19 formu
 Stops after: the mole, N_A, chemical amount, N = n × N_A both ways, naming particles. No molar mass.
 Handoff: m2-v03, molar mass.
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the balance and the ribbon, scene 1 (about 33 s); (B) counting in boxes and the mole, scenes 2 and 3 (about 55 s); (C) the scale stage, scenes 4 and 5 (about 44 s); (D) the mole slider, scene 6 (about 23 s); (E) two one-mole boxes, scenes 7 and 8 (about 31 s); (F) the calculation board, scenes 9 and 10 (about 60 s); (G) dry ice, then the halite crystal, scene 11 (about 42 s); (H) the equation counted in moles, scene 12 (about 25 s); (I) the memory card, scene 13 (about 6 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded icons of real things.** The coded lump outline in scene 5 becomes the painted carbon lump.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key: particle counts (N) navy; chemical amounts (n, mol) amber; N_A violet; atoms in element colours as m1-v07 (Mg pale green, C dark grey, O red, H white, Na violet, Cl green, Ca pale orange, He pale yellow); ions with a small charge label; earlier rows dimmed; crossed chips red strike.
@@ -87,6 +98,8 @@ Visual: clear change to the scale stage (stage C, full width). A large coded cou
 > Why such an odd number? It was chosen to link counting with weighing. Twelve grams of carbon twelve contains almost exactly one mole of atoms, so a mole of particles has a mass in grams close to the relative masses you already **know**. We'll use that link next time. For now, a mole is simply a **count**.
 
 Visual: camera continue on the scale stage. A small grey card "carbon-12: 12 g ≈ 1 mol of atoms" writes beside a coded lump outline; on "know" a ghost of m1-v09's "C 12.0" tile appears and links to it with a dashed arrow, tag "next video", grey hand tag "the link to weighing". On "count" the card dims to the corner; the "1 mol" box returns with "6.022 × 10²³" and an amber hand tag "a count, like a dozen" with a pen ring round the box.
+
+Upgrade (Revision 4): The lump beside the card "carbon-12: 12 g ≈ 1 mol of atoms" is the painted carbon lump (`c4-icon-carbon-lump-v1.png`, about 240 px), not a coded outline. The relative-atomic-mass tile is solid, and its tag reads "next video" in dark ink.
 
 ### 6. N and n
 > So there are two numbers to keep apart. Capital N is the number of particles, a huge count with no unit. Small n is the chemical amount, in **moles**. They're linked by the Avogadro constant. The number of particles equals the moles times N **A**. And going back, the moles equal the number of particles divided by N A.
@@ -133,27 +146,35 @@ Visual: the three particle cases from scenes 9 to 11 stack small with their labe
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "A balloon contains 9.03 × 10²² atoms of helium. Calculate the chemical amount of helium, in moles. (N_A = 6.022 × 10²³ mol⁻¹)". The full question stays on screen; the N–n bridge stays visible at the top right. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries a painted gas jar (`y11c-gas-jar-v1.png`, about 300 px tall), untagged, as the picture of a sample of colourless gas. Card text 38 px. The N to n bridge is not shown during the countdown, because its "÷ N_A" arrow is the method; it returns in feedback 1.
+
 ### 15. feedback 1 (brief)
 > n equals N divided by N A. Nine point zero three times ten to the twenty-two, divided by six point zero two two times ten to the twenty-three, is zero point one five zero moles of helium **atoms**. Multiplying by N A instead gives more than ten to the forty-six moles, an impossible answer. That's the slip to **avoid**.
 
 Visual: card shrinks to the top. Row "n = 9.03 × 10²² ÷ 6.022 × 10²³" writes (48 px) and "= 0.150 mol of He atoms" is framed with a green tick; on "atoms" the "÷ N_A" arrow on the bridge glows. On "avoid" a chip "9.03 × 10²² × 6.022 × 10²³ = 5.44 × 10⁴⁶ mol" fades in and is crossed in red, red hand tag "particles to moles: divide". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "N = 9.03 × 10²² helium atoms | N_A = 6.022 × 10²³ mol⁻¹". The bridge returns beside the working.
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Calculate the number of chloride ions in zero point two zero zero moles of calcium chloride, C a C l two. Pause here to answer.
 
 Visual: `QuestionCard`: "Calculate the number of chloride ions in 0.200 mol of calcium chloride, CaCl₂. (N_A = 6.022 × 10²³ mol⁻¹)". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted calcium chloride sample (`y11c-calcium-chloride-v1.png`, about 260 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Each formula unit of calcium chloride has two chloride ions, so zero point two zero zero moles of it holds zero point four zero zero moles of chloride **ions**. Times N A, that's two point four one times ten to the twenty-three chloride ions. Forgetting the two gives one point two zero times ten to the twenty-three, which counts formula units, not chloride **ions**.
 
 Visual: card shrinks to the top; "chloride ions" underlined. A coded CaCl₂ formula unit splits into one Ca²⁺ and two Cl⁻. On "moles of chloride ions" row "n(Cl⁻) = 2 × 0.200 = 0.400 mol". The second sentence writes "N(Cl⁻) = 0.400 × 6.022 × 10²³ = 2.41 × 10²³ chloride ions" (48 px), the "2.41 × 10²³ chloride ions" framed with a green tick, navy hand tag "2 Cl⁻ per unit" on the split model. On "Forgetting the two" (third sentence, after the correct result) a chip "0.200 × 6.022 × 10²³ = 1.20 × 10²³" fades in; on "not chloride ions" it is crossed in red, red hand tag "that's formula units". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "0.200 mol CaCl₂ | N_A = 6.022 × 10²³ mol⁻¹".
 
 ### 18. handoff: we weigh, we don't count
 > So the mole lets chemists count particles in amounts they can handle. But in the lab, we don't count particles, we weigh them. This ribbon weighs zero point two four of a gram. How many moles of magnesium is that? Next time, we'll see how molar mass turns a measured mass into **moles**.
 
 Visual: board clears to the balance with the magnesium ribbon, display "0.24 g", a tag "n(Mg) = ? mol". The violet card "1 mol = 6.022 × 10²³ particles (N_A)" sits above it, and the N–n bridge small at the top right. On "moles" the chip writes: "Next: How does molar mass turn a measured mass into moles?". Hold about 2 seconds. This is the final frame (m2-v03 opens on it).
 
-### 19. key notes (quiet, hold about 50 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -163,9 +184,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Equal moles, equal numbers of particles, whatever their mass (1 mol H₂ and 1 mol O₂).
 5. Name the particle: 0.50 mol CO₂ holds 1.0 mol O atoms; 1 mol NaCl holds 2 mol of ions.
 
-Memory aid (framed card under the notes, hand lettering, amber and navy as in scene 13): *A mole is a count, so always say a mole of what.* Notes 32 px in the role colours (N navy, n amber, N_A violet); no paragraphs.
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering, amber and navy as in scene 13): *A mole is a count, so always say a mole of what.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -224,6 +243,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,578 characters**, 19 scenes, unchanged speech (Revision 1's headline 5,596 included 18 joining spaces). At 13.3 characters per second the speech is about 419 s; add about 3 s for the counting clock (4), 3 s for the slider sweeps to settle (6), 1 s for the stage cut in 11, 2 s for the scene 13 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (about 83 s, with 2 s for the scene 12 tiles): **about 502 s**. Reserve trims if the voiced take runs long: scene 5 (keep its first two sentences), scene 10's sense check (the grey row stays), scene 1's carbon sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,578 characters). The notes scene is 45 s in all, so the estimate is about 496 s (it was about 502 s).
+
 ## Opening frame and final frame
 
 - **Opening frame:** m2-v01's final frame exactly (Decisions).
@@ -239,6 +260,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s). Review evidence paths: `checks/c-y11-m2-v02-learning-review.md`, `checks/c-y11-m2-v02-science-check.md`.
 
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 5 November on a paper-background contact sheet; scaled uniformly only, never stretched):
@@ -250,6 +273,8 @@ Have (inspected 5 November on a paper-background contact sheet; scaled uniformly
 - **Inspected, not used:** root-level `mole-counting-metaphor.png`, `mole-swarm.png`, `n-vs-lowercase-n.png`, `carbon-12-molar-mass-balance.png` (legacy flat style, opaque backgrounds, text baked in).
 
 Need: none (Revision 2 adds two existing plates, no new requests). Coded: mole slider and its live readouts, counting groups, mole tiles, counter and years readout, bars, N–n bridge, particle models, lattice fragment, calculation rows, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `c4-icon-carbon-lump-v1.png` (scene 5), `y11c-gas-jar-v1.png` (attempt 1 card), `y11c-calcium-chloride-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v02)
 
@@ -268,6 +293,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals m2-v01's final frame and the final frame matches m2-v03's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -320,3 +347,23 @@ Brief 214 error check (`checks/c-y11-m2-v02-rev2-error-check.md`), both should-f
 - Scene 11: the stage cut on "Ionic compounds" is now labelled the fifth sentence (it follows the oxygen-atom result). Cut phrase unchanged.
 - Scene 17: the row now writes on "moles of chloride ions" (the bold cue ending the first sentence); the missing-two chip fades in on "Forgetting the two" (third sentence, after the correct 2.41 × 10²³ result) and is crossed on "not chloride ions" (the final bold cue).
 - No speech change. Narration 5,578 characters (sum of 19 scene strings), about 502 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains a gas jar and loses the N to n bridge during the countdown; attempt 2 gains the calcium chloride sample; both feedback scenes gain navy givens strips.
+- Scene 5: the coded lump outline becomes the painted carbon lump.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,578 characters, unchanged; about 496 s (it was about 502 s).
+
+Calls for root: the N to n bridge is hidden on the attempt 1 card (it showed the method). a gas jar stands for the helium in the attempt 1 question (no balloon plate exists).

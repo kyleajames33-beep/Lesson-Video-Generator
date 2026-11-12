@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V06: Problem solving. How can a chemistry model solve an unfamiliar quantitative problem? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,596 characters, 16 scenes, about 513 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,16 @@ Handoff: chem-y11-m2-v07, product mass from reactant mass.
 - **Opening frame:** m2-v06's final frame exactly (Decisions).
 - **Final frame (m2-v07 opens on it):** at the left, the magnesium ribbon plate (`p01-mg-ribbon-v1.png`) with a coded chip "10.0 g Mg"; an arrow to the white oxide plate (`p01-mgo-ash-dish-v1.png`) with "? g MgO" in amber; above, the equation "2Mg + O₂ → 2MgO"; the model panel small at the top right (three teal chips); the chip "Next: How do we calculate product mass from a reactant mass?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the old jar of crystals and its odd result, scene 1 (about 27 s); (B) the model stage, scene 2 (about 35 s); (C) the calculation stage, scenes 3 and 4 (about 49 s); (D) the hypothesis cards and their evidence meters, scenes 5 and 6 (about 61 s); (E) the mixture slider, scene 7 (about 27 s); (F) the prediction stage with a fresh crucible, scene 8 (about 25 s); (G) the check list and the memory card, scene 9 (about 28 s); (H) the model's limits, scene 10 (about 32 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -121,27 +131,35 @@ Visual: stage change to the limits stage. The assumptions tag from scene 2 enlar
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Solutions X and Y have the same concentration. A continuous variation investigation used a constant total volume of 60 mL. The lines of best fit on the graph of temperature rise against volume of X crossed at 20 mL of X and 40 mL of Y. (a) Determine the mole ratio in which X and Y react. (b) Predict the volume of Y that would react exactly with 15 mL of X. (2 marks)" A small sketch graph with the two lines crossing at 20 mL (axis "volume of X (mL)", 0 to 60). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is its own sketch graph (two straight lines crossing at 20 mL of X), drawn solid at about 420 px wide from the first frame, with axis labels at 30 px. Card text 38 px. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > Twenty to forty is one to two, and equal concentrations make that a mole ratio. So fifteen millilitres of X needs twice as much Y, thirty millilitres. Halving instead, and getting seven point five, is the classic slip. Check it: Y is the bigger share, so its volume should be **bigger**.
 
 Visual: card shrinks to the top. Rows (48 px): "(a) 20 : 40 = 1 : 2 (X : Y)"; "(b) 15 × 2 = 30 mL of Y", the "1 : 2" and "30 mL" framed with a green tick. On "bigger" a chip "7.5 mL" fades in and is crossed in red, red hand tag "upside down", with the check tag "Y is the bigger share". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "same concentration | total 60 mL | lines cross at 20 mL X, 40 mL Y". The sketch graph stays small beside the rows.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Washing soda crystals are N a two C O three, dot ten H two O. A student heats some from an old open packet, with a white powdery crust, to constant mass. They lose forty-eight point five percent. Calculate x for this sample, then explain the result using evidence, and propose a test. Pause here to answer.
 
 Visual: `QuestionCard`: "Washing soda crystals have the formula Na₂CO₃·10H₂O. A student took crystals from an old, open packet. The crystals had a white, powdery crust. The student heated a sample to constant mass and found that 48.5% of its mass was lost. (a) Calculate x in Na₂CO₃·xH₂O for this sample. (Na₂CO₃ = 105.99 g mol⁻¹, H₂O = 18.02 g mol⁻¹) (b) Explain the result using the evidence, and propose a test of your explanation. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries a watch glass of white crystals (`y11c-watch-glass-salt-v1.png`, about 260 px wide), untagged, as the picture of washing soda crystals. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > In one hundred grams, forty-eight point five grams of water is two point six nine moles, and fifty-one point five grams of sodium carbonate is zero point four eight six. So x is about five and a half. That's below ten, and the crust is evidence the crystals lost water before heating. Test a fresh sealed packet, predicting x equals ten. Rounding to six and claiming a new formula is the classic **slip**.
 
 Visual: card shrinks to the top. Rows (44 px): "(a) n(H₂O) = 48.5 ÷ 18.02 = 2.69 mol; n(Na₂CO₃) = 51.5 ÷ 105.99 = 0.486 mol; x = 5.5", the "x = 5.5" framed; "(b) x < 10; crust: evidence of water lost before heating (a likely mixture); test: fresh sealed crystals, predict x = 10 (63.0% lost)", framed with a green tick. On "slip" a chip "Na₂CO₃·6H₂O" fades in and is crossed in red, red hand tag "a new formula with no evidence". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "48.5% of the mass lost | Na₂CO₃ 105.99, H₂O 18.02 g mol⁻¹ | old open packet, powdery crust".
 
 ### 15. conclusion and handoff
 > So, ask it as a quantity, model it with the evidence, test the explanations and a prediction, and check the answer. Our model turned a mass of crystals into a number of waters. Can it predict how much product a reaction makes? Burn ten grams of magnesium in oxygen. Will you get more than ten grams of oxide, less, or the same? How do we calculate product mass from a reactant **mass**?
 
 Visual: the memory line at the top; a strip writes as spoken: "ask: a quantity → model: with evidence → test: explanations and a prediction → check: reasonable?". On "magnesium" the board clears to the magnesium ribbon plate (`p01-mg-ribbon-v1.png`) with "10.0 g Mg", an arrow, and the white oxide plate (`p01-mgo-ash-dish-v1.png`) with "? g MgO" in amber; on "oxygen" "2Mg + O₂ → 2MgO" writes above; the model panel shrinks to the top right. On "more than ten grams" three small chips "more", "less", "same" under "? g MgO". On "mass" (last) the chip "Next: How do we calculate product mass from a reactant mass?" writes. Hold about 2 seconds. This is the final frame (m2-v07 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -151,9 +169,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Test it: weigh rival explanations with primary and secondary evidence; test a prediction.
 5. Check it: range, size, units. Don't round away an odd result.
 
-Memory aid (framed card under the notes, hand lettering as in scene 9): *Ask it, model it, test it, check it.* Notes 32 px in the role colours; no paragraphs.
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Ask it, model it, test it, check it.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -206,6 +222,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **5,596 characters**, 16 scenes (scene 6 rewritten 412 to 409, scene 7 366 to 355, scene 14 416 to 401). At 13.3 characters per second the speech is about 421 s; add about 3 s for the mixture slider (7), 1 s for the stage cuts, about 9 s of holds and settling (hypothesis cards in 6, the mixture field in 7, the prediction landing in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 513 s (8.6 minutes)**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,596 characters). The notes scene is 45 s in all, so the estimate is about 500 s (it was about 513 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v06` (route chem-y11-ws-v06; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v06`.
@@ -215,6 +233,8 @@ In order (16 scene headings, all `### N.`): hook, what-is-a-model, ask-it, model
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 5 is `explain` with a 3 s countdown at its end. Transitions: m2-v06's final frame into scene 1 by camera continue; 1 to 2 clear change to the model stage (Revision 2); 2 to 3 clear change to the full-width calculation (routine strip writes); 3 to 4 camera continue; 4 to 5 stage change to the hypothesis stage; 5 to 6 camera continue; 6 to 7 camera push into the mixture simulation; 7 to 8 stage change to the prediction stage; 8 to 9 clear change to the check stage; 9 to 10 stage change to the limits stage; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: rival-explanations countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-ws-v06-learning-review.md`, `checks/c-y11-ws-v06-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -228,6 +248,8 @@ Have (inspected 5 November; uniform scaling only):
 Need (new plates, Codex): none beyond m2-v06's request.
 
 Coded: mixture slider and its live readouts, evidence meters, model panel, routine strip, question box, calculation layout, hypothesis cards and evidence chips, source card, mixture field and average meter, prediction chips, `CheckList`, sketch graph (A1), attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plate newly used (confirmed by file listing, not re-inspected): `y11c-watch-glass-salt-v1.png` (attempt 2 card, as white crystals). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v06)
 
@@ -243,6 +265,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand, face or avatar is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m2-v06's final frame and the final frame matches m2-v07's opening.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -289,3 +313,22 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 - Evidence meters replace crosses on the hypothesis cards; hand tags and pen marks in role colours in every teaching scene; framed results on x = 3.84 (4), x = 4.97 (8), the A1 and A2 answers (12, 14); crossed slips with red hand tags (3, 6, 12, 14).
 - Memory line in a framed card (9); key notes trimmed to five short bullets (348 characters) with the framed card.
 - No new plate requests. Final frame unchanged (m2-v07 opens on it); the opening still matches m2-v06's final frame.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 keeps its sketch graph as the picture; attempt 2 gains a watch glass of white crystals; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,596 characters, unchanged; about 500 s (it was about 513 s).
+
+Calls for root: a watch glass of white crystals stands for washing soda on the attempt 2 card.

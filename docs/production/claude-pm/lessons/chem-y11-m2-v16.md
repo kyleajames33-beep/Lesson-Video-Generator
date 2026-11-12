@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V16: Avogadro's law and molar volume. Why do equal gas volumes contain equal amounts at the same conditions? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 181 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 181 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,573 characters, 15 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,18 @@ Handoff: chem-y11-m2-v17, Boyle's law.
 - **Opening frame:** m2-v15's final frame exactly (Decisions).
 - **Final frame (m2-v17 opens on it):** at the centre the sealed gas syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`; the nozzle closed by a coded cap), its plunger shown pushed in from "100 mL" to "50 mL" by a dashed ghost; inside, a coded window of the same twelve particles now closer together; a strip "same gas, same n, same T" (teal and slate); an amber chip "V halves → P = ?"; the conditions strip at the top right "T = 25 °C (steady)"; the chip "Next: How does changing gas volume change pressure at constant temperature?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) three gas jars and their particle windows, scenes 1 and 2 (about 71 s; the jars open into windows and the volume cubes arrive at scene 2); (B) the free syringe and one wall, scene 3 (about 29 s); (C) two wall windows with the mass slider, scene 4 (about 33 s); (D) the three jars and the law, scene 5 (about 33 s); (E) two molar-volume cards, scene 6 (about 33 s); (F) the calculation board, scene 7 (about 36 s); (G) volume blocks for a gas reaction, scene 8 (about 34 s); (H) the memory card, scene 9 (about 24 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 71 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** Every window of moving gas particles is a run of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`), with a particle radius of about 3 to 5 px so it behaves like an ideal gas. Counts of wall hits and relative pressure are read from the run and shown as "× start" values. The design's quoted numbers (kPa, mL, mol) stay the ideal values worked out in "Numbers used"; the run is never used to produce a number with a unit. In scene 4 the two wall windows are two runs at the same `temperature` with different particle masses; the readouts "hits per second" and "push per hit" stay the stated ratios (× 3.98 and × 0.25 for hydrogen), with the run supplying the motion.
+- **No coded icons of real things.** The thermometer icon on the conditions strip is a thumbnail of the painted thermometer (`c8-thermometer-hot-v1.png`).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -130,27 +142,35 @@ Visual: the memory line writes large as a framed card in the explainer's handwri
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Calculate the volume occupied by 0.640 g of oxygen gas, O₂, at 0 °C and 100 kPa. (O = 16.00; molar volume of an ideal gas at 100 kPa: 22.71 L mol⁻¹ at 0 °C, 24.79 L mol⁻¹ at 25 °C) (2 marks)" The full question stays on screen (both data-sheet values, as on the HSC data sheet). Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the conditions strip shows "?").
 
+Upgrade (Revision 3): From the first frame the card's right side carries a painted gas jar (`y11c-gas-jar-v2.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing: both data-sheet molar volumes are on the card, as in an exam.
+
 ### 11. feedback 1 (brief)
 > The molar mass of O two is thirty-two point zero zero, so that's zero point zero two zero zero moles. At zero degrees, the molar volume is twenty-two point seven one, so the volume is zero point four five four litres. Using twenty-four point seven nine gives zero point four nine six, the right method at the wrong **temperature**.
 
 Visual: card shrinks to the top. Rows: "n(O₂) = 0.640 ÷ 32.00 = 0.02000 mol"; "V = n × Vm = 0.02000 × 22.71 = 0.454 L" (slate), framed in a dark-ink box with a green tick; the conditions strip reads "0 °C, 100 kPa". On "temperature" a chip "0.496 L (24.79 at 0 °C)" fades in and is crossed in red, red hand tag "wrong Vm for 0 °C". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "0.640 g O₂ | 0 °C, 100 kPa | Vm: 22.71 L mol⁻¹ (0 °C), 24.79 L mol⁻¹ (25 °C)".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Methane burns completely in oxygen. C H four gas plus two O two gas makes C O two gas plus two H two O liquid. At twenty-five degrees and a hundred kilopascals, forty millilitres of methane burns. What volume of oxygen reacts, and what volume of carbon dioxide forms, at the same conditions? Pause here to answer.
 
 Visual: `QuestionCard`: "Methane burns completely in oxygen: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). At 25 °C and 100 kPa, 40 mL of methane is burnt. Calculate the volume of oxygen that reacts and the volume of carbon dioxide formed, both measured at 25 °C and 100 kPa. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted lit Bunsen burner (`m5x-bunsen-burner-v1.png`, about 280 px tall), untagged, as a picture of methane burning. Card text 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > Methane, oxygen and carbon dioxide are all gases at the same conditions, so their volumes follow the coefficients, one to two to one. Eighty millilitres of oxygen react, and forty millilitres of carbon dioxide form. The water is a liquid here, so it doesn't add eighty millilitres of gas. Counting a liquid in a volume ratio is the classic **slip**.
 
 Visual: card shrinks. Volume blocks: 1 block "40 mL CH₄" + 2 blocks "80 mL O₂" → 1 block "40 mL CO₂"; the "2H₂O(l)" term greys with a tag "liquid: no gas volume"; "80 mL O₂" and "40 mL CO₂" are framed with green ticks. On "slip" a chip "80 mL of water vapour" fades in and is crossed in red, red hand tag "liquid water". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "40 mL CH₄ | CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l) | all at 25 °C, 100 kPa".
 
 ### 14. conclusion and handoff
 > So equal volumes of gases hold equal numbers of particles, because size hardly matters, and at one temperature every particle pushes equally. That's why one mole has one molar volume, as long as the temperature and pressure are stated. But what if we change them? Seal some gas in a syringe, keep the temperature steady, and push the plunger in. How does changing gas volume change pressure at constant **temperature**?
 
 Visual: the memory line returns small at the top with the two molar volume cards. On "what if we change them" the board clears to the final frame's layout: the sealed syringe at the centre with twelve particles inside; the conditions strip "T = 25 °C (steady)"; on "push the plunger in" a dashed ghost plunger slides from "100 mL" to "50 mL" and the particles crowd closer; the strip "same gas, same n, same T" and the amber chip "V halves → P = ?". On "temperature" the chip "Next: How does changing gas volume change pressure at constant temperature?" writes. Hold about 2 seconds. This is the final frame (m2-v17 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -160,9 +180,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Gases only, same T and P: volume ratio = mole ratio.
 5. Equal particles, not equal atoms.
 
-Memory aid (framed card on the notes screen, as in scene 9): *Same T, same P, same V: same number.* Notes in role colours at 36 px.
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, as in scene 9): *Same T, same P, same V: same number.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -220,6 +238,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,573 characters**, 15 scenes (unchanged; no speech edits). At 13.3 characters per second the speech is about 419 s; add about 10 s of settling (the cube expansion in 2, the plunger settling in 3, the wall counters and mass slider in 4, the syringe in 5, the warm syringe in 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 57 s in all, above the 40 s minimum): **about 506 s**.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,573 characters). The notes scene is 45 s in all, so the estimate is about 494 s (it was about 506 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v16` (route chem-y11-m2-v16; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v16`.
@@ -229,6 +249,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, empty-space, what-s
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions (Revision 2): m2-v15's final frame into scene 1 by camera continue (jars grow); 1 to 2 camera continue (the jar windows open); 2 to 3 stage change to the free syringe (movable boundary); 3 to 4 stage change to the split wall windows (mass slider); 4 to 5 camera continue (the jars return); 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v16-learning-review.md`, `checks/c-y11-m2-v16-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -241,6 +263,8 @@ Have (inspected 5 November on a paper-background contact sheet; uniform scaling 
 Need (new plates, Codex): none (Revision 2 adds none).
 
 Coded: mass slider and readouts, framed answers, hand tags and pen marks, memory card, particle windows, volume cubes, wall sections, counters and push meters, pressure arrows, molar volume cards and boxes, syringe particles and readouts, volume blocks, atom split, rows, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-gas-jar-v2.png` (attempt 1 card), `m5x-bunsen-burner-v1.png` (attempt 2 card), `c8-thermometer-hot-v1.png` (thumbnail on the conditions strip). New plate requests: none. Simulation: the particle box engine for every gas window.
 
 ## Codex asset brief (Year 11 Chemistry M2 v16)
 
@@ -258,6 +282,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m2-v15's final frame, and send the final frame to the m2-v17 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -307,3 +333,24 @@ Visual upgrade (light pass):
 - No new plate requests.
 
 Counts: 5,573 characters, unchanged; about 504 to about 506 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The particle windows are named as particle box runs; quoted values stay the ideal ones.
+- Question cards: attempt 1 gains a gas jar and attempt 2 a lit Bunsen burner; both feedback scenes gain navy givens strips.
+- The thermometer icon on the conditions strip is a painted thumbnail.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,573 characters, unchanged; about 494 s (it was about 506 s).
+
+Calls for root: the particle box supplies motion and relative counts only; every number with a unit stays the ideal value.

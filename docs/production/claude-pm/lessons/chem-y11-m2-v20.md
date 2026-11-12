@@ -1,6 +1,6 @@
 # Year 11 Chemistry M2 V20: Gas volumes in reactions. How can a gas volume measure the progress or quantity of a reaction? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,913 characters, 15 scenes, about 537 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,17 @@ Handoff: chem-y11-m3-v01, indicators of chemical change.
 - **Opening frame:** m2-v19's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m3-v01` opens on it):** the board split in two halves on the dark background. Left half: `m6-marble-chips-acid-v1.png` (an open beaker of white marble chips fizzing in clear acid), label "marble chips + acid" above it, grey chip "CO₂ bubbles" beside it. Right half: `c1-sparkling-bottle-open-v1.png` (an opened clear glass bottle of sparkling water with rising bubbles, its cap lying beside it), label "sparkling water, just opened" above it, grey chip "CO₂ bubbles" beside it. A thin vertical slate divider between them. Centred under both, an amber chip "Both release CO₂. Which one made a new substance?". Top left a small grey tag "Module 2 complete". The chip "Next: Which observations are evidence that new substances formed?" at the bottom of the safe area (above the bottom 12%). Coded bubbles keep rising slowly in both (loop).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the flask and the gas syringe, scene 1 (about 35 s); (B) two volume bars, scene 2 (about 23 s); (C) the rig and its safety strip, scene 3 (about 31 s); (D) the volume against time graph with its scrubber, scene 4 (about 38 s); (E) the rig with a large inset, scene 5 (about 36 s); (F) three ways to turn a volume into moles, scene 6 (about 44 s); (G) the calculation board, scene 7 (about 39 s); (H) how close, and why it is short, scene 8 (about 34 s); (I) the memory card, scene 9 (about 20 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 44 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded icons of real things.** The thermometer icon on the conditions strip is a thumbnail of the painted thermometer (`c8-thermometer-hot-v1.png`).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -130,27 +141,35 @@ Visual: the memory line writes large as a framed card in the explainer's handwri
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Aluminium reacts with excess hydrochloric acid: 2Al(s) + 6HCl(aq) → 2AlCl₃(aq) + 3H₂(g). 0.0540 g of aluminium reacts completely. Calculate the volume of hydrogen gas produced, measured at 25 °C and 100 kPa. (Al = 26.98; molar volume of an ideal gas at 100 kPa and 25 °C: 24.79 L mol⁻¹) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted aluminium in acid (`y11c-aluminium-acid-v1.png`, about 280 px tall), untagged. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 11. feedback 1 (brief)
 > Aluminium is zero point zero five four zero over twenty-six point nine eight, two point zero zero times ten to the minus three moles. The ratio is two to three, so hydrogen is three point zero zero times ten to the minus three moles. At the data-sheet conditions, that's seventy-four point four millilitres. Forty-nine point six means the ratio was **skipped**.
 
 Visual: card shrinks to the top. Rows: "n(Al) = 0.0540 ÷ 26.98 = 2.00 × 10⁻³ mol"; "n(H₂) = 2.00 × 10⁻³ × 3/2 = 3.00 × 10⁻³ mol" (teal; "Al : H₂ = 2 : 3" outlined); "V = 3.00 × 10⁻³ × 24.79 = 0.0744 L = 74.4 mL" (slate), framed in a dark-ink box with a green tick; chip "25 °C, 100 kPa: data-sheet value fits". On "skipped" a chip "49.6 mL (ratio skipped)" fades in and is crossed in red (red hand tag "2 : 3 missed"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "0.0540 g Al | 2Al + 6HCl → 2AlCl₃ + 3H₂ | 25 °C, 100 kPa: 24.79 L mol⁻¹".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. With a catalyst, hydrogen peroxide decomposes. Two H two O two makes two H two O plus O two. Forty-eight point zero millilitres of oxygen is collected at twenty point zero degrees and a hundred and one point zero kilopascals. Calculate the moles of hydrogen peroxide that decomposed. Pause here to answer.
 
 Visual: `QuestionCard`: "With a catalyst, hydrogen peroxide decomposes: 2H₂O₂(aq) → 2H₂O(l) + O₂(g). 48.0 mL of oxygen is collected in a gas syringe at 20.0 °C and 101.0 kPa. Calculate the amount, in moles, of hydrogen peroxide that decomposed. (R = 8.314 J mol⁻¹ K⁻¹) (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted flask of hydrogen peroxide fizzing with its catalyst (`y11c-flask-peroxide-mno2-plug-fizz-v1.png`, about 280 px tall), untagged. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 13. feedback 2 (brief)
 > Use n equals P V over R T, with two ninety-three point one five kelvin and zero point zero four eight zero litres. That gives one point nine nine times ten to the minus three moles of oxygen. Two peroxide give one oxygen, so double it, three point nine eight times ten to the minus three. Using twenty-four point seven nine at twenty degrees gives three point eight seven, the classic **slip**.
 
 Visual: card shrinks. Rows: "T = 293.15 K, V = 0.0480 L"; "n(O₂) = 101.0 × 0.0480 ÷ (8.314 × 293.15) = 1.99 × 10⁻³ mol" (teal); "n(H₂O₂) = 2 × 1.99 × 10⁻³ = 3.98 × 10⁻³ mol" ("H₂O₂ : O₂ = 2 : 1" outlined), framed in a dark-ink box with a green tick. On "slip" a chip "3.87 × 10⁻³ mol (24.79 used at 20 °C)" fades in and is crossed in red (red hand tag "conditions don't match"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "48.0 mL O₂ | 20.0 °C, 101.0 kPa | 2H₂O₂ → 2H₂O + O₂ | R = 8.314".
 
 ### 14. conclusion and handoff
 > So a gas volume measures a reaction because it counts the moles of gas made. Its growth over time shows how far the reaction has gone, and its final value, with the measured temperature and pressure and the balanced ratio, tells you how much reacted. That's the end of Module 2. But how did we know the carbon dioxide was a new substance at all? Open a bottle of sparkling water, and it fizzes too. Which observations are evidence that new substances **formed**?
 
 Visual: the memory line returns small at the top with the volume-time graph. On "end of Module 2" grey tag "Module 2 complete". On "a new substance at all" the board clears to the final frame's layout: left half `m6-marble-chips-acid-v1.png` with label "marble chips + acid" and chip "CO₂ bubbles". On "sparkling water" right half `c1-sparkling-bottle-open-v1.png` with label "sparkling water, just opened" and chip "CO₂ bubbles"; the slate divider; coded bubbles rise in both. On "evidence" the amber chip "Both release CO₂. Which one made a new substance?". On "formed" the chip "Next: Which observations are evidence that new substances formed?" writes. Hold about 2 seconds. This is the final frame (m3-v01 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -160,9 +179,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Record T and P; n = PV ÷ RT unless they match the data sheet.
 5. Then ratio, then the unknown.
 
-Memory aid (framed card, on the notes screen): *Conditions first, then known to moles, ratio, unknown.*
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Conditions first, then known to moles, ratio, unknown.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -221,6 +238,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,913 characters**, 15 scenes (Revision 1: 5,891). Revision 2 adds about 3 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 443 s; add about 10 s of settling (the displacement window in 3, the graph build in 4, the crossed routes in 6, the tilt in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 537 s** (Revision 1: about 532 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,913 characters). The notes scene is 45 s in all, so the estimate is about 524 s (it was about 537 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m2-v20` (route chem-y11-m2-v20; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m2-v20`.
@@ -230,6 +249,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, volume-counts-gas, 
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v19's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 clear change (rig reset); 3 to 4 camera continue (the graph builds as the plunger moves); 4 to 5 camera continue; 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m2-v20-learning-review.md`, `checks/c-y11-m2-v20-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -248,6 +269,8 @@ Need (new plates, Codex):
 4. `y11c-flask-acid-bung-spent-v1.png` (no chips, no bubbles): scenes 4, 5, 8.
 
 Coded: connecting tube and wisps, syringe ticks, timer, displacement window, table and `LineGraph`, room thermometer and barometer readouts, choice rows, calculation rows, comparison bar, small chip tube and the flask tilt, route boxes, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `y11c-aluminium-acid-v1.png` (attempt 1), `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (attempt 2); the thermometer thumbnail on the conditions strip. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M2 v20)
 
@@ -272,6 +295,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested (the chips, bung and tilt move by code); no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m2-v19's final frame, and send the final frame to the m3-v01 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -325,3 +350,22 @@ Visual upgrade (high-risk design: scene-level redesign of the long stretch; teac
 - No new plate requests.
 
 Counts: 5,913 characters (Revision 1: 5,891); about 532 to about 537 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains aluminium in acid and attempt 2 the fizzing peroxide flask; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,913 characters, unchanged; about 524 s (it was about 537 s).
+
+Calls for root: none.

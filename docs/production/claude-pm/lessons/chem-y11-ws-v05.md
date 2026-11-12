@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V05: Analysing data and information. How do we judge uncertainty and the limits of a chemistry result? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 214 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 180 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 214 error-check finding resolved by root; ready to voice.
 
 Narration 6,405 characters, 17 scenes, about 567 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,17 @@ Handoff: chem-y11-m2-v05, empirical formula from masses.
 - **Opening frame (reconciled by root, 5 November):** ws-v04's final frame exactly (`chem-y11-ws-v04.md` "Opening frame and final frame"): the finished `DataGraph` at the right (mass of magnesium 0 to 0.045 g, volume of hydrogen 0 to 45 mL), four crosses on a teal best-fit line through the origin, run 3's cross at (0.028, 22.40) in a rose "anomalous" ring, the gradient triangle "≈ 1009 mL g⁻¹"; the result box "MM(Mg) = 24.6 g mol⁻¹" with a violet "± ?" tag and the gold "accepted: 24.31 g mol⁻¹" chip; the processed table small at the left; the "Next" chip.
 - **Final frame (m2-v05 opens on it):** at the left, the white-powder crucible (`y11c-cuso4-crucible-lid-white-v1.png`) beside a small coded steam wisp; at the right, a two-segment mass bar: "CuSO₄ (white powder) 1.60 g" in pale grey and "H₂O (lost) 0.90 g" in pale blue; above it the formula "CuSO₄ · ? H₂O" with the "?" in amber; the chip "Next: How do mass percentages reveal an empirical formula?".
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the graph and its trend, scenes 1 and 2 (about 64 s); (B) two error cards, scene 3 (about 39 s); (C) two cause cards and their chains, scenes 4 and 5 (about 49 s); (D) the uncertainty of one reading, scene 6 (about 29 s); (E) the calculation board, scene 7 (about 39 s); (F) the judging stage, scene 8 (about 35 s); (G) the sample-size slider, scene 9 (about 30 s); (H) the assumptions check list, scene 10 (about 34 s); (I) the fix table and the memory card, scene 11 (about 24 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 64 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded outlines of real things.** The uncovered crucible on a bench outline (scene 4) is the painted open crucible plate.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -78,12 +89,12 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook: how far is too far?
 > Last time, the magnesium runs became a graph, with the points close to a straight **line**, but not exactly on it. And in our copper sulfate investigation, class one got thirty-six point zero percent, class two got thirty-four point four, and the formula says thirty-six point **one**. No measurement is perfect, so how far off can a result be before something has really gone **wrong**? Let's judge the limits of a chemistry **result**.
 
-Visual: opens on ws-v04's final frame exactly (see "Opening frame"); the "Next" chip fades, the table slides to a thumbnail at the top left and the result box with its "± ?" tag moves to the top right, where it stays until the video works out its uncertainty. On "line" the best-fit line glows faintly and the four used crosses pulse once, each a little off it; run 3's ring stays. On "copper sulfate" the graph shrinks to the left half and two chips write at the right: teal "class 1: 36.0%" and navy "class 2: 34.4%" (grey tag "ws-v03"); on "one" a gold chip "formula: 36.1%". On "wrong" a short number line writes under the chips with the gold mark and the two class dots either side, a "?" on each gap. On "copper sulfate" the painted white-powder crucible (`y11c-cuso4-crucible-lid-white-v1.png`, about 320 px, uniform scale) sets down beside the chips. On "result" the heading writes: "Judging uncertainty and limits", and an amber hand tag "how far is too far?" writes over the two gaps with a pen bracket.
+Visual: opens on ws-v04's final frame exactly (see "Opening frame"); the "Next" chip fades, the table slides to a thumbnail at the top left and the result box with its "± ?" tag moves to the top right, where it stays until the video works out its uncertainty. On "line" the best-fit line glows faintly and the four used crosses pulse once, each a little off it; run 3's ring stays. On "copper sulfate" the graph shrinks to the left half and two chips write at the right: teal "class 1: 36.0%" and navy "class 2: 34.4%" (grey tag "ws-v03"); on "one" a gold chip "formula: 36.1%". On "wrong" a short number line writes under the chips with the gold mark and the two class dots either side, a "?" on each gap. Also at the "copper sulfate" cue, the painted white-powder crucible (`y11c-cuso4-crucible-lid-white-v1.png`, about 320 px, uniform scale) sets down beside the chips. On "result" the heading writes: "Judging uncertainty and limits", and an amber hand tag "how far is too far?" writes over the two gaps with a pen bracket.
 
 ### 2. reading the trend
 > First, the graph. A trend describes how one variable changes as another changes. Here, the volume of hydrogen rises in step with the mass of magnesium, so doubling the mass doubles the **volume**. That has a chemical cause: each magnesium atom gives one hydrogen molecule. One point sits well below the line, and that's the run where bubbles **escaped**. A point off the trend needs a reason, and a trend only holds in the range we **tested**.
 
-Visual: the graph enlarges. Gloss chip "trend: how one variable changes as another changes". On "volume" a `PenArrow` runs along the line and a pair of brackets shows 0.020 g → about 20 mL and 0.042 g → about 42 mL (tag "double the mass, double the volume"). On "each magnesium atom" a small particle strip: one pale-green Mg atom → one white H₂ pair (tag "1 Mg : 1 H₂", grey "molar mass video"). On "escaped" run 3's point (0.028 g, 22.4 mL) gains a rose ring and its notebook note "some bubbles escaped" flies in beside it (tag "outlier, with a reason"). On "tested" the axis region beyond 0.042 g greys with a dashed edge, ink hand tag "only tested to 0.042 g". Earlier, on "volume", a teal hand tag "× 2 → × 2" by the brackets.
+Visual: the graph enlarges. Gloss chip "trend: how one variable changes as another changes". On "volume" a `PenArrow` runs along the line and a pair of brackets shows 0.020 g → about 20 mL and 0.042 g → about 42 mL (tag "double the mass, double the volume"). On "each magnesium atom" a small particle strip: one pale-green Mg atom → one white H₂ pair (tag "1 Mg : 1 H₂", grey "molar mass video"). On "escaped" run 3's point (0.028 g, 22.4 mL) gains a rose ring and its notebook note "some bubbles escaped" flies in beside it (tag "outlier, with a reason"). On "tested" the axis region beyond 0.042 g greys with a dashed edge, ink hand tag "only tested to 0.042 g". Earlier, at the "volume" cue, a teal hand tag "× 2 → × 2" by the brackets.
 
 ### 3. two kinds of error
 > An error is any difference between a measured value and the true value, and there are two kinds. A random error changes unpredictably, sometimes high, sometimes low. A draught on the balance makes the last digit **flicker**. Random errors spread results out, reducing precision, and averaging more repeats reduces their **effect**. A systematic error pushes every result the same way, because something in the method is the same every time. It reduces accuracy, and repeats can't fix it, because every repeat carries the same **shift**.
@@ -94,6 +105,8 @@ Visual: board change. Gloss chip "error: difference between a measured value and
 > Try these. Class two's powder cooled uncovered on the bench every run. Another group's flame was so strong that some powder turned black every run. Random or systematic, and which way does each push the **result**?
 
 Visual: two small cause cards: "uncovered cooling, every run" (an uncovered crucible on a bench outline, coded water molecules drifting in) and "roaring flame, black powder, every run" (`y11c-cuso4-crucible-black-v1.png` from ws-v01, small). Chips under each: "random?", "systematic?", "↑ or ↓?". On "result" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 4): The uncovered crucible on the first cause card is the painted open crucible of white powder (`m5-g02b-open-crucible-v1.png`, about 240 px), with coded water molecules drifting in; no bench outline is drawn.
 
 ### 5. naming an error well
 > Both are systematic, because the cause is there every run. Uncovered powder takes water back from the air, so the mass lost looks too small, and the percentage is too **low**. A strong flame breaks down some copper sulfate too, so extra mass is lost, and the percentage is too **high**. A good error answer names the cause, says which way it pushes the result, and gives a fix. Human error earns nothing, because it names no cause and no **fix**.
@@ -135,39 +148,45 @@ Visual: a three-row fix table writes as spoken: "systematic (rose) → change th
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student heated 3.00 g of magnesium sulfate heptahydrate, MgSO₄·7H₂O, once for 5 minutes, cooled it in a desiccator and reweighed it on a balance reading to 0.01 g. The mass decreased by 1.38 g. The accepted percentage of water in MgSO₄·7H₂O is 51.1%. The percentage uncertainty in the student's result is about 2%. (a) Calculate the percentage by mass of water found, and the percentage error. (b) Explain whether measurement uncertainty alone can account for the difference. (c) Suggest ONE improvement to the method. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted desiccator (`m8-desiccator-v1.png`, about 260 px), untagged. Card text 34 to 38 px so the whole question fits. Nothing answer-bearing.
+
 ### 13. feedback 1 (brief)
 > Forty-six point zero percent water, and a percentage error of about ten percent. That's far beyond the two percent uncertainty, so look for a cause that pushed it low. One short heating probably left water behind, so heat to constant mass. More repeats of the same method is the classic slip. They'd all be low in the same **way**.
 
 Visual: card shrinks to the top. Rows (48 px): "(a) 1.38 ÷ 3.00 × 100 = 46.0%; |46.0 − 51.1| ÷ 51.1 × 100 ≈ 10%", the "46.0%" and "≈ 10%" framed; "(b) 10% > 2%: beyond the balance limits; one short heating left water (systematic, too low)"; "(c) heat to constant mass" framed with a green tick. A mini `DotLine` with gold 51.1 and a navy dot at 46.0 with a short amber bar that misses the gold mark. On "way" a chip "repeat the same method more times" fades in and is crossed in red, red hand tag "all low the same way". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "3.00 g, heated once for 5 min | mass lost 1.38 g | accepted 51.1% | uncertainty about 2%".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one, from the magnesium method. A class collects hydrogen in a room at thirty degrees, but in every run uses the molar volume for twenty-five degrees. They get twenty-three point nine grams per mole, against an accepted twenty-four point three one. Calculate the percentage error, then identify the type of error and explain its effect. Pause here to answer.
 
 Visual: `QuestionCard`: "In the magnesium and hydrochloric acid method, molar mass of Mg = mass of Mg ÷ moles of H₂, and moles of H₂ = volume of H₂ ÷ molar volume. A class worked in a room at 30 °C but, in every run, used the molar volume for 25 °C (24.79 L mol⁻¹). A gas at 30 °C takes up a slightly larger volume than the same amount of gas at 25 °C. The class's mean molar mass for magnesium was 23.9 g mol⁻¹; the accepted value is 24.31 g mol⁻¹. (a) Calculate the percentage error. (b) Identify the type of error and explain its effect on the calculated molar mass. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted upturned burette (`y11c-burette-upturned-end-v1.png`, about 300 px tall), untagged. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 15. feedback 2 (brief)
 > About one point seven percent. It's systematic, because the same molar volume was used every run. Warmer gas takes up more room, so dividing by the twenty-five degree molar volume counted too many moles, and mass over moles came out too low. Use the molar volume for the actual temperature. Calling it random is the classic slip. It pushed every run the same **way**.
 
 Visual: card shrinks to the top. Rows: "(a) |23.9 − 24.31| ÷ 24.31 × 100 ≈ 1.7%"; "(b) systematic: same wrong molar volume every run → gas volume larger at 30 °C → n(H₂) too big → MM = m ÷ n too low ↓; fix: use the molar volume for the measured temperature". The "≈ 1.7%" and "systematic, MM too low" are framed with a green tick. On "way" a chip "random: temperatures vary" fades in and is crossed in red, red hand tag "same wrong value every run". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "room at 30 °C | molar volume for 25 °C used in every run | mean 23.9, accepted 24.31 g mol⁻¹". The answers "≈ 1.7%" and "systematic: too low" are framed in green.
 
 ### 16. conclusion and handoff
 > So, read the trend, name the error, size the uncertainty, and check the assumptions. Our masses can tell us even more. The white powder is one point six zero grams of copper sulfate, and the water lost is zero point nine zero grams. Could those masses alone tell us the five in the formula? How do mass percentages reveal an empirical **formula**?
 
 Visual: the memory line returns at the top; a strip writes as spoken: "trend + cause → name the error (type, direction) → size the uncertainty (% error vs % uncertainty) → assumptions". On "white powder" the white-powder crucible plate slides to the left and the two-segment mass bar draws: "CuSO₄ 1.60 g" grey, then on "water lost" "H₂O 0.90 g" pale blue. On "five" the formula "CuSO₄ · ? H₂O" writes above, "?" amber. On "formula" the chip "Next: How do mass percentages reveal an empirical formula?" writes. Hold about 2 seconds. This is the final frame (m2-v05 opens on it).
 
-### 17. key notes (quiet, hold about 53 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Trend: how one variable changes with another, its cause, and the range tested.
-2. Random: either way, less precise, average repeats. Systematic: one way, less accurate, change the method.
+2. Random: either way; average repeats. Systematic: one way; change the method.
 3. Name the cause, its direction and a fix (never "human error").
 4. Difference: add uncertainties; dividing: add % uncertainties.
 5. % error > % uncertainty: investigate the method or a missing uncertainty.
 
-Memory aid (framed card under the notes, hand lettering, rose, amber and teal as in scene 11): *Name it, size it, fix it.* Notes 32 px in the role colours; no paragraphs. The reading conventions (± one in the last digit as the school estimate; ± half a division) stay on the scene 6 screen, not in the notes.
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering, rose, amber and teal as in scene 11): *Name it, size it, fix it.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. The reading conventions (± one in the last digit as the school estimate; ± half a division) stay on the scene 6 screen, not in the notes. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -229,6 +248,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules: only lines starting "> ", `**` removed, total = sum of scene strings): **6,405 characters**, 17 scenes (Revision 1 6,417; scene 8 loses 2 and scene 13 loses 10 in the scoping rewrite). At 13.3 characters per second the speech is about 482 s; add about 9 s of holds and settling (dot animations in 3, the direction chains in 5, the bars in 7 and 8), 3 s for the sample-size slider and toggle (9), 1 s for the stage cut (8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s more of the quiet notes hold (Revision 2: the notes are now five short bullets, 379 characters, so the hold drops from about 60 to about 53 s in total): **about 567 s (9.5 minutes)**, under the 570 s cap. Root decision 5's named reserve cut (the add-percentage-uncertainties sentence, about 150 characters) is not used; it stays available if measured timing runs over.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,405 characters). The notes scene is 45 s in all, so the estimate is about 559 s (it was about 567 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v05` (route chem-y11-ws-v05; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v05`.
@@ -238,6 +259,8 @@ In order (17 scene headings, all `### N.`): hook, trend, error-types, prediction
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: ws-v04's final frame into scene 1 by camera continue (table shrinks to a thumbnail, graph moves to the left half); 1 to 2 camera push to the graph; 2 to 3 clear change; 3 to 4 to 5 camera continue (the error cards stay); 5 to 6 clear change; 6 to 7 camera continue (balance shrinks to the left, calculation layout opens); 7 to 8 stage change to the full-width judging stage (Revision 2; the `DotLine` becomes the hero); 8 to 9 clear change; 9 to 10 clear change; 10 to 11 camera continue; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 53 s; Revision 2). Review evidence paths: `checks/c-y11-ws-v05-learning-review.md`, `checks/c-y11-ws-v05-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -251,6 +274,8 @@ Have (inspected 5 November; uniform scaling only):
 Need (new plates, Codex): none.
 
 Coded: sample-size slider, balance toggle and live readout, result graph and table (from ws-v04), particle strip, error cards with dot animations, direction chains, readouts, half-division zoom, calculation layout, `DotLine` with uncertainty bars, sample-size bars, `CheckList`, fix table, mass bar, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `m5-g02b-open-crucible-v1.png` (scene 4), `m8-desiccator-v1.png` (attempt 1 card), `y11c-burette-upturned-end-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v05)
 
@@ -268,6 +293,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame against the ws-v04 design once it exists, and that the final frame matches m2-v05's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -321,3 +348,23 @@ Visual upgrade (`../maths-visual-standard.md`, audit recommendation):
 Brief 214 error check (`checks/c-y11-ws-v05-rev2-error-check.md`), should-fix finding resolved (root):
 - Numbers to verify: the stale "range method" clause (independent numerator and denominator extremes) is removed and labelled as withdrawn, consistent with author note b. The attainable class 1 endpoints from the three shared raw readings (each ±0.01 g) are recorded as 35.2% and 36.8%, recalculated in Python. The conservative 34.9 to 37.1 bar on screen and both learner verdicts stay.
 - No speech or screen change. Narration 6,405 characters (sum of 17 scene strings), about 567 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the desiccator and attempt 2 the upturned burette; both feedback scenes gain navy givens strips.
+- Scene 4: the coded bench outline is replaced by the painted open crucible.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "less precise" and "less accurate" in the random and systematic bullet (kept in scene 3).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,405 characters, unchanged; about 559 s (it was about 567 s).
+
+Calls for root: both attempt cards carry long questions and may need 34 px text.
