@@ -7,6 +7,9 @@ import {FONT_DISPLAY, HandText} from '../kit';
 import {FRAME, INK_SOFT, PAPER, TYPE} from '../shared/tokens';
 import {MagnetSource, barLines, coilSeeds, magneticFieldAt, fieldLines, wireSeeds} from './magnetic-field';
 import {FieldStage, MagneticFieldView} from './magnetic-field-views';
+import {inductionAt, runInduction} from './induction';
+import {FluxEmfStrips, MagnetCoilView, MeterNeedle, RotatingCoilView} from './induction-views';
+import {useSeriesTime} from './series-views';
 import {SimReadout} from './views';
 
 const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };
@@ -52,6 +55,25 @@ export const MagneticDemo: React.FC = () => {
 	);
 };
 
+// 2. Flux and induction ---------------------------------------------------------
+const turning = lazy(() => runInduction({source: {kind: 'rotating', b: 0.2, area: 0.01, frequency: 1}, turns: 100, duration: 2}));
+const passing = lazy(() => runInduction({source: {kind: 'magnet', moment: 1, radius: 0.05, position: t => -0.3 + 0.3 * t}, turns: 200, duration: 2, steps: 800}));
+export const InductionDemo: React.FC = () => {
+	const t = useSeriesTime({at: 10, to: 2, frames: 260});
+	const a = inductionAt(turning(), t), b = inductionAt(passing(), t);
+	return (
+		<DemoPage title="Changing flux makes an emf">
+			<RotatingCoilView angle={a.angle} x={90} y={170} w={420} h={270} normalLabel="normal" />
+			<MeterNeedle value={a.emf} full={turning().peakEmf} x={590} y={220} size={300} label="emf" />
+			<FluxEmfStrips run={turning()} now={t} x={40} y={470} w={900} h={590} whole fluxLabel="flux (mWb)" fluxScale={1000} />
+			<MagnetCoilView position={-1 + t} lenz={b.lenz} x={1000} y={170} w={560} h={270} poles={{north: 'N', south: 'S'}} inducedLabel="induced field" />
+			<MeterNeedle value={b.emf} full={passing().peakEmf} x={1600} y={220} size={260} label="emf" />
+			<FluxEmfStrips run={passing()} now={t} x={980} y={470} w={900} h={590} whole fluxLabel="flux (μWb)" fluxScale={1e6} emfLabel="emf (mV)" emfScale={1000} />
+		</DemoPage>
+	);
+};
+
 export const PHYSICS_DEMOS: readonly (readonly [string, React.FC])[] = [
 	['SimDemo-MagneticField', MagneticDemo],
+	['SimDemo-Induction', InductionDemo],
 ];

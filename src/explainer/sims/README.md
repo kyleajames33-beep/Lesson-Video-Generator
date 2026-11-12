@@ -200,6 +200,26 @@ The field of a straight wire, a bar magnet, a loop and a solenoid, alone or adde
 - A bar magnet is two point poles, so its lines are drawn outside the magnet only. Give `strength` (pole strength) to set the size of its field.
 - `MagneticFieldView` takes `reveal` (0 to 1) to grow the lines, and `poles` for the letters on a bar. It draws diagrams, not real equipment.
 
+### Flux and induction (`induction.ts`, drawing in `induction-views.tsx`)
+
+The flux through a loop or coil over time, and the emf that its change induces: emf = −N dΦ/dt, with the Lenz's-law direction.
+
+| Idea | What to use |
+| --- | --- |
+| A coil turning in a uniform field (a generator) | `runInduction({source: {kind: 'rotating', b, area, frequency}, turns, duration})`; `RotatingCoilView` |
+| A field through a fixed coil that grows, falls or switches | source `{kind: 'field', area, b: t => ...}` |
+| A rod sliding on rails | source `{kind: 'rod', b, length, position: t => ...}` (emf = Blv while it moves) |
+| A magnet pushed into, through or out of a coil | source `{kind: 'magnet', moment, radius, position: t => ...}`; `MagnetCoilView` |
+| Flux and emf on one time axis | `FluxEmfStrips` (the emf is the flux strip's steepness, turned over) |
+| A meter that flicks and returns | `MeterNeedle` with `value` from `inductionAt(run, t).emf` (or `.current`, with `resistance` set) |
+| Which way the induced current flows | `inductionAt(run, t).lenz`: `change`, `inducedField` (+1 or −1 along the coil's normal), `current` |
+
+- Signs: the coil has a normal. Flux is positive along it. A positive emf drives a current that is anticlockwise seen from the side the normal points to.
+- The emf is taken from the slope of the flux function itself, so a sudden step in a `b` or `position` function gives a very tall, very short spike. Ramp changes over a short time instead.
+- The magnet is a small dipole on the coil's axis. Its flux is exact for that model; a long bar close to a coil is only roughly this.
+- Textbook values for readouts: `faradayEmf`, `generatorPeakEmf`, `rodEmf`, `fluxThrough`.
+- This engine gives the emf. To drive a circuit with it, set a battery's `emf` in the circuit engine from `inductionAt` (or use the alternating source there for a steady generator).
+
 ### Time graphs (`series-views.tsx`)
 
 `SeriesGraph` is the one line graph behind the population, heating and circuit graphs: several lines with lesson labels and tones, a moving `now`, dashed `marks`, shaded `spans`, hand-written `notes`. Text is at least 30 px. Use it directly for any other quantity against time.

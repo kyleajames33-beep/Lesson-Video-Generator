@@ -688,3 +688,56 @@ test('magnetic field: fields add, and field lines follow the field', () => {
 	assert.equal(mag.coilSeeds(coil, 5).length, 5);
 	assert.ok(mag.fieldLine([coil], 0, 0.02, {bounds: {x0: -1, x1: 1, y0: -1, y1: 1}, step: 0.002, maxSteps: 3000}).closed, 'a line through a loop closes round its wire');
 });
+
+// ---------------------------------------------------------------- flux and induction
+const ind = await load('src/explainer/sims/induction.ts');
+
+test('induction: Faraday\'s law, emf = -N dPhi/dt, for a field that rises steadily', () => {
+	// B rises by 0.5 T each second through 0.02 m^2, 50 turns: emf = -50 x 0.02 x 0.5 = -0.5 V.
+	const run = ind.runInduction({source: {kind: 'field', area: 0.02, b: t => 0.5 * t}, turns: 50, duration: 2});
+	for (const t of [0.1, 1, 1.9]) near(ind.inductionAt(run, t).emf, -0.5, 1e-9, `emf at ${t}`);
+	near(ind.inductionAt(run, 1).linkage, 50 * 0.02 * 0.5, 1e-12, 'flux linkage');
+	near(ind.faradayEmf(50, 0.02 * 0.5 * 2, 2), -0.5, 1e-12, 'average over the run');
+	const s = ind.inductionAt(run, 1).lenz;
+	assert.deepEqual(s, {change: 'increasing', inducedField: -1, current: 'clockwise'}, 'Lenz: the induced field opposes the rise');
+	const steady = ind.runInduction({source: {kind: 'field', area: 0.02, b: () => 0.8}, turns: 50, duration: 1});
+	near(steady.peakEmf, 0, 1e-12, 'steady flux, no emf, however large the flux');
+	assert.equal(ind.inductionAt(steady, 0.5).lenz.current, 'none');
+});
+
+test('induction: a turning coil gives flux BA cos and emf NBA omega sin, a quarter turn apart', () => {
+	const src = {kind: 'rotating', b: 0.2, area: 0.01, frequency: 5}, run = ind.runInduction({source: src, turns: 100, duration: 0.4, steps: 800});
+	const w = 2 * Math.PI * 5, peak = ind.generatorPeakEmf(100, 0.2, 0.01, 5);
+	rel(peak, 100 * 0.2 * 0.01 * w, 1e-12, 'NBA omega');
+	for (const t of [0.013, 0.05, 0.21, 0.333]) {
+		const s = ind.inductionAt(run, t);
+		near(s.flux, 0.2 * 0.01 * Math.cos(w * t), 2e-6, 'flux');
+		near(s.emf, peak * Math.sin(w * t), peak * 2e-3, 'emf');
+	}
+	rel(run.peakEmf, peak, 1e-3, 'peak emf');
+	near(ind.inductionAt(run, 0).emf, 0, peak * 1e-6, 'face on: most flux, no emf');
+	near(ind.inductionAt(run, 0.05).flux, 0, 1e-9, 'edge on: no flux');
+	rel(Math.abs(ind.inductionAt(run, 0.05).emf), peak, 1e-3, 'edge on: largest emf');
+	near(ind.fluxThrough(0.5, 0.04, Math.PI / 3), 0.01, 1e-12, 'BA cos 60');
+});
+
+test('induction: a sliding rod gives Blv while it moves and nothing when it stops', () => {
+	const run = ind.runInduction({source: {kind: 'rod', b: 0.3, length: 0.25, position: t => (t < 1 ? 4 * t : 4)}, duration: 2, resistance: 2});
+	near(Math.abs(ind.inductionAt(run, 0.5).emf), ind.rodEmf(0.3, 0.25, 4), 1e-9, 'B l v = 0.30 V');
+	near(Math.abs(ind.inductionAt(run, 0.5).current), 0.15, 1e-9, 'current through 2 ohms');
+	near(ind.inductionAt(run, 1.5).emf, 0, 1e-12, 'stopped');
+});
+
+test('induction: a magnet passing through a coil gives one pulse each way, and Lenz opposes each change', () => {
+	const run = ind.runInduction({source: {kind: 'magnet', moment: 1, radius: 0.05, position: t => -0.3 + 0.3 * t}, turns: 200, duration: 2, steps: 800});
+	const coming = ind.inductionAt(run, 0.7), leaving = ind.inductionAt(run, 1.3), middle = ind.inductionAt(run, 1);
+	assert.ok(coming.emf < 0 && leaving.emf > 0, 'the emf reverses as the magnet passes the centre');
+	near(coming.emf, -leaving.emf, 1e-9, 'same size each way at the same speed');
+	near(middle.emf, 0, run.peakEmf * 1e-3, 'at the centre the flux is at its peak and the emf is zero');
+	assert.equal(coming.lenz.inducedField, -1, 'approaching: the coil\'s field points back at the magnet (repels)');
+	assert.equal(leaving.lenz.inducedField, 1, 'leaving: the coil\'s field points after the magnet (attracts)');
+	rel(middle.flux, (4e-7 * Math.PI * 1) / (2 * 0.05), 1e-9, 'flux at the centre: mu0 m / (2a)');
+	// Twice as fast: twice the emf.
+	const fast = ind.runInduction({source: {kind: 'magnet', moment: 1, radius: 0.05, position: t => -0.3 + 0.6 * t}, turns: 200, duration: 1, steps: 800});
+	rel(fast.peakEmf, 2 * run.peakEmf, 1e-3, 'double the speed, double the emf');
+});
