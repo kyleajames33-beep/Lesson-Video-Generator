@@ -236,7 +236,7 @@ export const S04: React.FC = () => {
 				xTicks={[1, 2, 3, 4, 5]} yTicks={[-2, -1, 1, 2]} xLabel="x" yLabel="y"
 				curves={[logCurve(2, {color: 'rgba(34,67,122,0.25)', width: 6}), {...logCurve(Math.E, {color: GHOST, dash: '14 10', width: 5}), at: s0}]}
 				point={{at: -30}} tangent={{at: take, halfLength: 210}}
-				triangle={{run: 2, at: take + 20, labels: {first: () => 'run 2', second: len => (f >= four2 ? 'rise 1/ln 2 ≈ 1.443' : `rise ${fmtNum(len, 2)}`)}}}
+				triangle={{run: 2, at: take + 20, labels: {first: () => 'run 2', second: len => (f >= four2 ? '' : `rise ${fmtNum(len, 2)}`)}}}
 				readout={{x: 96, y: 372, width: 640, at: take + 10, inline: true, title: 'Tangent triangle at x = 2', rows: [
 					{label: 'run', value: () => 2},
 					{label: 'rise', value: s => s.yScale * s.dfu * 2, role: 'k', mark: {kind: 'circle', at: four2, role: 'k'}},
@@ -245,6 +245,8 @@ export const S04: React.FC = () => {
 				overlay={g => (
 					<>
 						<HandTag x={(g.toFrame(2, 0)[0] + g.toFrame(4, 0)[0]) / 2} y={g.toFrame(0, g.s.Y)[1] + 58} text="same" at={stays + 6} size={44} color={VIOLET} anchor="middle" />
+						{/* full rise label sits left of the vertical leg's top, inside the plot (Codex d04 hold, 02:32) */}
+						<HandTag x={g.toFrame(4, 0)[0] - 16} y={g.toFrame(0, g.s.Y + g.s.yScale * g.s.dfu * 2)[1] - 58} text="rise 1/ln 2 ≈ 1.443" at={four2} size={40} color={VIOLET} anchor="end" />
 					</>
 				)} />
 			<CurveLabel x={M.pt(0.2, 2.5)[0]} y={M.pt(0, 2.5)[1] - 30} color={INK} size={40}>y = ln x</CurveLabel>

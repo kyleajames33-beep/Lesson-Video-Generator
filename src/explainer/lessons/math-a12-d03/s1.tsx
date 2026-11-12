@@ -119,7 +119,7 @@ export const S02: React.FC = () => {
 				<div style={DISPLAY(30, INK_SOFT, 600)}>second point at x = {fmtNum(st.q, st.q < 1.05 ? 2 : 1)}</div>
 			</Card>
 			<RecallChip x={RX} y={170} at={-30} size={30}>Start where the curve crosses the axis: (1, 0).</RecallChip>
-			<AppRig phone={{x: 1620, y: 300, h: 380}} users={1} weeks={0} rows={[{value: 'ln x'}, {label: 'weeks to reach', value: 'x thousand'}]} />
+			<AppRig phone={{x: 1620, y: 300, h: 380}} users={1} weeks={0} rows={[{value: 'ln x'}, {label: 'weeks to reach x thousand', value: ''}]} />
 			<HandTag x={RX + 6} y={720} text="always 1" at={every + 8} size={56} role="a" />
 			<Chip x={RX} y={800} at={dbl} size={40}>x = 2: gradient ½ · x = 4: gradient ¼</Chip>
 		</>

@@ -125,7 +125,7 @@ export const S01a: React.FC = () => {
 				{label: 'guess: 1 × 0.5', value: 0.5, digits: 2, unit: 'm² per day', at: day1, dim: 0.0, mark: {kind: 'circle', at: eight, role: 'mistake'}},
 				{label: 'area growing at, right now', value: 4, digits: 2, role: 'gradient', unit: 'm² per day', at: four, glow: [four, four + 90]},
 			]} />
-			<GrowthBars x={1000} y={672} w={824} max={2.3} title="area added since day 0" rows={[
+			<GrowthBars x={1000} y={672} w={824} max={2.3} title={f >= r0 ? 'area added in that half day' : 'area added since day 0'} rows={[
 				{label: 'real', value: 4 * tRun + 0.5 * tRun * tRun, digits: 2, unit: 'm²'},
 				{label: 'guess', value: 0.5 * tRun, digits: 2, unit: 'm²', dashed: true},
 			]} />

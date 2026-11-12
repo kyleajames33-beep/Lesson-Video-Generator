@@ -8,6 +8,13 @@ Read `00-standing-rules.md`, `maths-visual-standard.md` (its build gate), and br
 
 **Release standard (11 Nov):** you cannot watch continuously, so follow the "Release standard" section of `checks/root-signoff-maths-builds.md`: the five machine and sampled checks, then publish. Release d02 and d03 now if they pass.
 
+**Held videos repaired (root, 12 Nov):** your three playback holds were real defects, now fixed in scene code and checked by root on stills at the held moments:
+- d03 at 01:11: the phone text now wraps inside the screen ("weeks to reach x thousand");
+- d04 at 02:32: the full rise label "rise 1/ln 2 ≈ 1.443" now sits left of the triangle's vertical leg, inside the plot;
+- d07 at 01:05: after the clock rewinds, the panel is titled "area added in that half day", so it no longer contradicts day 0.
+
+Render each as **v2** (`--revision=v2`), run the full check again, and replace the private draft (delete the v1 private upload or keep it private and unlisted, then publish v2 in its playlist position). Do this before continuing past the list item you are on.
+
 **Ready to render:**
 1. `math-a12-d02`: the derivative of aˣ (savings coin jar). Graded A on 10 Nov.
 2. `math-a12-d03`: the derivative of ln x (app users, "how long until?"). Graded A on 10 Nov.

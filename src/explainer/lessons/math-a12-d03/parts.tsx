@@ -71,9 +71,10 @@ export const AppRig: React.FC<{phone: {x: number; y: number; h: number}; watch?:
 				const sw0 = sx1 - sx0;
 				const big = Math.max(30, Math.min(56, sw0 / 4.2));
 				return <div style={{position: 'absolute', left: sx0, top: sy0, width: sw0, height: sy1 - sy0, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, textAlign: 'center'}}>
-					{screenRows.map((r, i) => <div key={i}>
-						{r.label ? <div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, color: '#cfe3df', lineHeight: 1.1}}>{r.label}</div> : null}
-						<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big, color: r.color ?? '#ffffff', lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', whiteSpace: 'pre'}}>{r.value}</div>
+					{screenRows.map((r, i) => <div key={i} style={{maxWidth: sw0 - 16}}>
+						{r.label ? <div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, color: '#cfe3df', lineHeight: 1.1}}>{r.label}</div> : null}
+							{r.value === '' ? null :
+						<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big, color: r.color ?? '#ffffff', lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', whiteSpace: 'pre'}}>{r.value}</div>}
 					</div>)}
 				</div>;
 			})()}
