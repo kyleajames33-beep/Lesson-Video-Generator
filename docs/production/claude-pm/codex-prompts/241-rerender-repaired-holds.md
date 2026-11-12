@@ -49,3 +49,5 @@ All 13 held Maths videos and i12 are now on this list.
 **New queued work (root, 13 Nov):**
 - Brief 239 has four new entries, 29 to 32: i01, i07, i11 and i13, each graded A with a clean 1 fps sweep. Render them after this list, in brief 239's method.
 - Brief 242 (Year 11 upgrade error check and plates) is light work with no speech. Run it in gaps when no render or voicing job can run, for example while the Google quota is spent.
+- Brief 239 also has entries 33 to 35 (f01, f02, f03), graded A on 13 Nov.
+- Brief 243 (Year 11 Maths crosswalk, outline and packs) is light research with no speech. Run it after brief 242, in the same kind of gaps.
