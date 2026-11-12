@@ -65,7 +65,7 @@ export const S04: React.FC = () => {
 				{right: <>−<Frac n="1" d="sin x" /> × <Frac n="cos x" d="sin x" /></>, at: split, keep: true},
 				{right: <><MarkSpan kind="circle" at={falls} color={VIOLET} width={5}>−</MarkSpan>cosec x cot x</>, at: ans, answer: true},
 			]} />
-			<AmberStrip x={1590} y={274} at={zero} size={34}>{'sin x ≠ 0\n(x ≠ kπ)'}</AmberStrip>
+			<AmberStrip x={1680} y={274} at={zero} size={34}>{'sin x ≠ 0\n(x ≠ kπ)'}</AmberStrip>
 			<PairBoard x={1060} y={590} w={780} at={-30} rows={[
 				{name: 'sin x', color: NAVY, height: sin(X), slope: cos(X)},
 				{name: 'cosec x', color: INK, height: cosec(X), slope: -cos(X) / sin(X) ** 2, slopeGlow: prog(f, two, 10) * (1 - prog(f, two + 70, 12))},

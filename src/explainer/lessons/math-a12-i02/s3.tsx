@@ -55,7 +55,7 @@ const NumberLinePic: React.FC = () => {
 				<line x1={X(-0.5)} x2={X(-0.5)} y1={y0} y2={30} stroke={GREY} strokeWidth={4} strokeDasharray="12 10" />
 				<path d={seg(-2, -0.92)} stroke={VIOLET} strokeWidth={6} fill="none" />
 				<path d={seg(-0.08, 1)} stroke={VIOLET} strokeWidth={6} fill="none" />
-				<text x={X(0.15)} y={y0 - 120} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, fill: VIOLET}}>the integrand</text>
+				<text x={X(-1.9)} y={y0 - 120} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, fill: VIOLET}}>the integrand</text>
 				<circle cx={X(-0.5)} cy={y0} r={16} fill="#fbf8f1" stroke={GREY} strokeWidth={6} />
 				<text x={X(-0.5)} y={y0 + 56} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}}>−½</text>
 				<text x={X(-0.5) - 20} y={y0 + 110} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, fill: INK}}>x = −½ is excluded</text>

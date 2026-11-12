@@ -89,7 +89,7 @@ export const S01: React.FC = () => {
 			</div>
 			{/* the starter */}
 			{f >= k.jar - 6 ? <div style={{position: 'absolute', inset: 0, opacity: prog(f, k.jar - 6, 14)}}>
-				<div style={{position: 'absolute', left: 96, top: 128, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 34, color: INK, whiteSpace: 'pre'}}>∫(2x + 1)² dx: expand it  <Tick size={34} /></div>
+				<div style={{position: 'absolute', left: 1110, top: 96, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 34, color: INK, whiteSpace: 'pre'}}>∫(2x + 1)² dx: expand it  <Tick size={34} /></div>
 				<StarterRise x={JAR1.x} y={JAR1.y} w={JAR1.w} t={t} />
 				<HandTag x={60} y={1010} text="t hours after feeding" at={k.fed} size={38} color={INK} />
 				<StarterBoard x={560} y={200} width={430} t={t} riseText={done ? '?' : undefined} />
@@ -166,7 +166,7 @@ export const S02: React.FC = () => {
 			<SceneHeading text="Algebra first: make powers of x" at={4} size={56} />
 			<CaseGraph />
 			<BoxCard x={RX2} y={140} at={-30} size={36} title="from i01">∫xⁿ dx = <Frac n={<>xⁿ⁺¹</>} d="n + 1" /> <Cc>+ C</Cc>,  n ≠ −1</BoxCard>
-			<Card x={RX2} y={300} w={980} at={-30} out={k.rw - 4} pad="16px 28px 18px">
+			<Card x={RX2} y={300} w={980} at={-30} out={Math.min(k.rw - 4, k.first - 12)} pad="16px 28px 18px">
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: INK}}>the power rule needs powers of x</div>
 				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44, color: INK, lineHeight: 1.45, marginTop: 8}}>1. rewrite as a power of x<br />2. raise the power, divide by it<br />3. keep the original domain</div>
 			</Card>
@@ -239,12 +239,12 @@ export const S03: React.FC = () => {
 			<HandTag x={560} y={600} text="halve it: lands on it" at={k.halve + 40} size={48} color={VIOLET} />
 			<Line x={RX3} y={140} at={-30} size={52}>∫<V><SQ /></V> dx = ?</Line>
 			<Line x={RX3} y={240} at={k.guess} size={52}>guess: <Frac n={<>(<InnerSlot>2x + 1</InnerSlot>)³</>} d="3" /></Line>
-			<HandTag x={1290} y={330} text="inside" at={k.guess + 20} size={36} color={GREY} />
+			<HandTag x={1250} y={330} text="inside" at={k.guess + 20} size={36} color={GREY} />
 			<Line x={RX3} y={380} at={k.outside} size={48}><V>d/dx</V>: <Frac n={<>3(2x + 1)² · <Bl g={vis(f, k.two, k.so + 30)}>2</Bl></>} d="3" /></Line>
 			<Line x={RX3 + 470} y={380} at={k.so} size={52}>= 2(2x + 1)²</Line>
 			<HandTag x={RX3 + 40} y={505} text="× derivative of the inside" at={k.two} out={k.watch} size={38} color={BLUE} />
-			<Line x={RX3} y={740} at={k.six} size={52}><Frac n="(2x + 1)³" d="6" />:  <V>d/dx</V> = (2x + 1)²  <Tick size={50} o={prog(f, k.sq + 8, 10)} /></Line>
-			<Chip x={RX3} y={880} at={k.rule} size={40} color={BLUE}>reverse chain rule: divide by the <Bl>inside&apos;s rate</Bl></Chip>
+			<Line x={RX3} y={800} at={k.six} size={52}><Frac n="(2x + 1)³" d="6" />:  <V>d/dx</V> = (2x + 1)²  <Tick size={50} o={prog(f, k.sq + 8, 10)} /></Line>
+			<Chip x={RX3} y={912} at={k.rule} size={40} color={BLUE}>reverse chain rule:<br />divide by the <Bl>inside&apos;s rate</Bl></Chip>
 		</>
 	);
 };
@@ -287,7 +287,7 @@ export const S04: React.FC = () => {
 				{left: <Frac n="(2x + 1)³" d="6" />, right: <Frac n="8x³ + 12x² + 6x + 1" d="6" />, at: k.expandB},
 				{right: <><Frac n="4x³" d="3" /> + 2x² + x <span style={{color: AMB}}>+ <Frac n="1" d="6" /></span></>, at: k.sixth, keep: true},
 			]} />
-			<HandTag x={RX4 + 120} y={640} text="the expanded answer, plus 1/6" at={k.plus} size={42} color={AMB} />
+			<HandTag x={RX4 + 120} y={656} text="the expanded answer, plus 1/6" at={k.plus} size={42} color={AMB} />
 			<GapTable x={RX4} y={680} at={k.graph} />
 			<BoxCard x={RX4} y={890} at={k.both} size={38} border={GREEN} bw={4}>differ by a constant: both correct</BoxCard>
 			<HandTag x={90} y={210} text="i01: any two primitives differ by a constant" at={k.diff} size={40} color={INK} />

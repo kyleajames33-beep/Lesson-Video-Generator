@@ -110,7 +110,7 @@ export const S02: React.FC = () => {
 						<Lbl x={ms[0].p(tt, 0)[0]} y={ms[0].p(tt, xr(tt))[1] - (i ? -44 : 22)} text="gradient 0" anchor="middle" size={30} color={TEAL} o={flat} />
 						{flat > 0.01 ? (() => {const [cx, cy] = ms[1].p(tt, 0); return <circle cx={cx} cy={cy} r={16} fill="none" stroke={TEAL} strokeWidth={5} opacity={flat} />;})() : null}
 					</g>)}
-					<Lbl x={ms[1].p(2.15, 21)[0]} y={ms[1].p(2.15, 21)[1]} text="at rest: v = 0" hand size={40} color={TEAL} o={prog(fr, k.flat + 6, 12)} />
+					<Lbl x={ms[1].p(2.15, 13)[0]} y={ms[1].p(2.15, 13)[1]} text="at rest: v = 0" hand size={40} color={TEAL} o={prog(fr, k.flat + 6, 12)} />
 					<Lbl x={ms[1].p(3, -5.2)[0]} y={ms[1].p(3, -5.2)[1]} text="v < 0: moving left" hand size={34} color="#a8421c" anchor="middle" o={prog(fr, k.left, 12)} />
 				</>} />
 			<BoxCard x={RX} y={400} w={770} at={k.disp} out={k.diff} size={36} title="displacement x" edge={BLUE}>x: measured from a fixed origin O (here, the robot's start); negative to the left of O</BoxCard>
@@ -144,7 +144,7 @@ export const S03: React.FC = () => {
 		<>
 			<SceneHeading text="Acceleration: how fast velocity changes" at={4} size={48} />
 			<Hallway pos={xr(t)} robotO={robotO} rests={[{x: 20, o: 1}, {x: 16, o: 1}]} dashLeft={prog(fr, k.moving - 20, 14)} />
-			<Stack x={PX} y={PY} w={PW} win={WIN} panels={[panX(hX), panV(hV), panA(186, {o: sh, upto: sweep})]} gap={lerp(14, 10, sh)} xTicks={XT}
+			<Stack x={PX} y={PY} w={PW} win={WIN} panels={[{...panX(hX), titleT: 2.6}, panV(hV), panA(186, {o: sh, upto: sweep, titleT: 2.6})]} gap={lerp(14, 10, sh)} xTicks={XT}
 				under={ms => <g opacity={after}>
 					<path d={regionD(ms[2], ar, 0, 3)} fill={WARM_SOFT} />
 					<path d={regionD(ms[2], ar, 3, 6.3)} fill={TEAL_SOFT} />
@@ -162,7 +162,7 @@ export const S03: React.FC = () => {
 					<Column ms={ms} t={2} o={at2} label="t = 2" />
 					<Dot m={ms[1]} t={2} color={TEAL} o={at2} open />
 					<Dot m={ms[2]} t={2} color={VIOLET} o={at2} r={14} />
-					<Lbl x={ms[2].p(2.12, 12)[0]} y={ms[2].p(2.12, 12)[1]} text="at rest, but a ≠ 0" hand size={38} color={VIOLET} o={prog(fr, k.minus6, 12)} />
+					<Lbl x={ms[2].p(1.88, 12)[0]} y={ms[2].p(1.88, 12)[1]} text="at rest, but a ≠ 0" anchor="end" hand size={38} color={VIOLET} o={prog(fr, k.minus6, 12)} />
 					<Lbl x={ms[2].p(1.9, -6)[0]} y={ms[2].p(1.9, -6)[1] + 10} text="−6" anchor="end" size={32} color={VIOLET} o={prog(fr, k.minus6, 12)} />
 				</>} />
 			<Row x={RX} y={400} at={k.acc} size={52} color={VIOLET}>a = dv/dt<span style={{opacity: prog(fr, k.second, 12)}}> = d²x/dt²</span><span style={{opacity: prog(fr, k.dots, 12)}}> = ẍ</span></Row>
@@ -180,7 +180,7 @@ export const S04: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K4;
 	const j1 = k.at25 + 6, j2 = k.compare + 8;
-	const t = fr < j1 ? 2 : fr < j2 ? kf(fr, [[k.further, 2.5], [k.three, 3]], false) : kf(fr, [[k.slowing - 20, 1], [k.slowing + 50, 2]], false);
+	const t = fr < j1 ? 2 : fr < j2 ? kf(fr, [[k.further, 2.5], [k.three, 2.9]], false) : kf(fr, [[k.slowing - 20, 1], [k.slowing + 50, 2]], false);
 	const robotO = fr < j2 ? jump(fr, j1) : jump(fr, j2);
 	const moving = vis(fr, k.further, k.three + 4) + vis(fr, k.slowing - 20, k.slowing + 52);
 	const colO = fr < j2 ? prog(fr, j1, 12) : 1;

@@ -58,10 +58,10 @@ export const S01: React.FC = () => {
 					{label: 'net change', value: level(t), digits: 2, role: 'height'},
 					{label: 'floors travelled', value: travelled(t), digits: 2, role: 'k'},
 				]} />
-				<Hand x={1450} y={520} at={k.up2} out={k.down} size={42} color={INK}>up 2</Hand>
-				<Hand x={1450} y={520} at={k.ends} size={40} color={INK}>ends where it started</Hand>
-				<Chip x={1440} y={600} at={k.area4} size={44} color="#d18f1f">Area = 2 + 2 = 4</Chip>
-				<Chip x={1440} y={720} at={k.so} size={38} color={INK}>How do we find the area?</Chip>
+				<Hand x={1450} y={815} at={k.up2} out={k.down} size={42} color={INK}>up 2</Hand>
+				<Hand x={1450} y={815} at={k.ends} size={40} color={INK}>ends where it started</Hand>
+				<Chip x={1440} y={440} at={k.area4} size={44} color="#d18f1f">Area = 2 + 2 = 4</Chip>
+				<Chip x={1440} y={560} at={k.so} size={34} color={INK}>How do we find the area?</Chip>
 			</div>
 		</>
 	);
@@ -122,7 +122,7 @@ export const S03: React.FC = () => {
 			<Named x={RX} y={490} kind="int" at={k.thirds} size={48}>−16/3</Named>
 			<Hand x={RX + 20} y={580} at={k.but} out={k.removed} size={44} color="#b8322a">an area can't be negative</Hand>
 			<Named x={RX} y={580} kind="area" at={k.sixteen} size={48}>16/3</Named>
-			<AnswerBox x={RX} y={700} at={k.write} size={44}>Area = |<Int lo="0" hi="2">(x² − 4)</Int>| = −<Int lo="0" hi="2">(x² − 4)</Int> = 16/3</AnswerBox>
+			<AnswerBox x={RX} y={700} at={k.write} size={36}>Area = |<Int lo="0" hi="2">(x² − 4)</Int>| = −<Int lo="0" hi="2">(x² − 4)</Int> = 16/3</AnswerBox>
 		</>
 	);
 };
@@ -148,9 +148,9 @@ export const S04: React.FC = () => {
 					<PLabel p={m.p(0.6, flip > 0.5 ? 1.4 : -1.6)} text={flip > 0.5 ? '16/3' : '−16/3'} size={50} />
 				</>;}} />
 			{inset > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: inset}}><LiftShaftSim x={150} y={200} h={420} lv={level(tl)} tags={false} /></div> : null}
-			<Hand x={330} y={560} at={k.lift + 10} size={40} color={INK}>floors up − floors down</Hand>
+			<Hand x={330} y={582} at={k.lift + 10} size={40} color={INK}>floors up − floors down</Hand>
 			<Row x={RX + 10} y={150} at={k.piece} size={38} color={SOFT}>F(3) − F(2) = −3 − (−16/3) = 7/3</Row>
-			<Named x={RX} y={230} kind="int" at={k.whole} size={44}><Int lo="0" hi="3">(x² − 4)</Int> = F(3) − (F(0)) = −3</Named>
+			<Named x={RX} y={230} kind="int" at={k.whole} size={40}><Int lo="0" hi="3">(x² − 4)</Int> = F(3) − (F(0)) = −3</Named>
 			<Row x={RX + 10} y={340} at={k.and} size={50}>−3 = 7/3 − 16/3</Row>
 			<div style={{position: 'absolute', left: RX, top: 450, opacity: prog(fr, k.so, 14), background: CARD, border: '5px solid #287347', borderRadius: 18, padding: '8px 22px 12px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: INK, whiteSpace: 'pre'}}>
 				<Int lo="a" hi="b">f(x)</Int> = (area above) − (area below)

@@ -52,7 +52,7 @@ export const S01: React.FC = () => {
 	const X = kf(fr, [[k.meaning, 2], [k.meaning + 40, 0], [k.hour + 10, 0], [k.hour + 70, 2], [k.negative + 6, 2], [k.negative + 56, 4], [k.arrive + 16, 4], [k.arrive + 56, 2]]);
 	const m = g1();
 	const at = (X0: number, Y0: number) => m.pf(X0, Y0);
-	const [cx, cy] = at(3.05, 1.15);
+	const [cx, cy] = at(3.05, 1.6);
 	return (
 		<>
 			{sw < 1 ? <div style={{position: 'absolute', inset: 0, opacity: 1 - sw}}><I07FinalFrameStandIn /></div> : null}
@@ -83,7 +83,7 @@ export const S01: React.FC = () => {
 
 // ---------- shared right column for the paired scenes ----------
 const RC = 1150;
-const PLATE2 = {x: 1210, y: 196, w: 560};
+const PLATE2 = {x: 1210, y: 166, w: 560};
 
 // ---------- 2. track A with shapes ----------
 const outline = (m: PlotMap, X: number, o: number, labels: [string, string]) => {
@@ -157,8 +157,8 @@ export const S03: React.FC = () => {
 					<Glow m={m} X={0} Y={3} o={win(k.start, k.three)} />
 					<Glow m={m} X={3} Y={0} o={win(k.three + 40, k.after)} />
 					<Glow m={m} X={1} Y={2} o={win(k.there2, k.looks)} />
-					<PLabel p={m.p(0.25, 3.05)} text="height 3: the biggest" color={TEAL} size={36} hand o={win(k.start, k.three)} />
-					<PLabel p={m.p(3.2, 0.6)} text="height 0 at noon" color={TEAL} size={36} hand o={win(k.three + 40, k.after)} />
+					<PLabel p={m.p(0.25, 2.55)} text="height 3: the biggest" color={TEAL} size={36} hand o={win(k.start, k.three)} />
+					<PLabel p={m.p(3.35, 0.6)} text="height 0 at noon" color={TEAL} size={36} hand o={win(k.three + 40, k.after)} />
 					<PLabel p={m.p(1.2, 2.5)} text="height 2" color={TEAL} size={38} o={win(k.there2, k.looks)} />
 					{sweep ? [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5].filter(t => X >= t).map(t => {const [px, py] = m.p(t, f(t)); return <circle key={t} cx={px} cy={py} r={11} fill={GRAD} stroke={CARD} strokeWidth={3} />;}) : null}
 					{sweep ? <PLabel p={m.p(3.3, 2.4)} text="gradient dots land on f" color={GRAD} size={38} hand /> : null}

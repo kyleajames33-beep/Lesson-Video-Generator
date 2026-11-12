@@ -90,9 +90,9 @@ export const S01: React.FC = () => {
 					zoom={{cx: 990, cy: 355, at: zoomIn + 20, keys: [{frame: stays, factor: 1}, {frame: corner + 34, factor: 40}]}} />
 				<Chip x={744} y={206} at={-60} out={tracks} size={44} color={MATH_STRAND_ACCENT}>a tangent at the join?</Chip>
 				{/* the close-up and its readouts between the panels */}
-				<BoardCloseUp x={700} y={186} w={570} h={404} M={MB} fam={famA} board={{X: XA, o: 1, len, shake: active === 'R' ? shakeR : 0}} k={2.2} band={{o: 1, ranges: [[-1.2, 2.4]], depth: 0.13 * MB.sx}} range={[-1.4, 2.6]}
+				<BoardCloseUp x={690} y={186} w={500} h={404} M={MB} fam={famA} board={{X: XA, o: 1, len, shake: active === 'R' ? shakeR : 0}} k={2.2} band={{o: 1, ranges: [[-1.2, 2.4]], depth: 0.13 * MB.sx}} range={[-1.4, 2.6]}
 					at={roll - 30} out={zoomIn} title={active === 'L' ? 'CLOSE-UP: FIRST TRACK' : 'CLOSE-UP: SECOND TRACK'} jolt={active === 'R' ? joltO : 0} />
-				<RideBoard x={700} y={600} w={570} m={mA} at={roll - 20} out={zoomIn} glow={jR !== undefined && active === 'R' ? [jR, jR + 50] : undefined} />
+				<RideBoard x={690} y={600} w={500} m={mA} at={roll - 20} out={zoomIn} glow={jR !== undefined && active === 'R' ? [jR, jR + 50] : undefined} />
 				{/* tags under each panel (one live per side) */}
 				<HandTag x={360} y={905} text="no bump" at={bump - 6} out={gaps} size={44} color={VIOLET} anchor="middle" />
 				<HandTag x={1560} y={905} text="angle jumps 18.4°" at={jolts + 14} out={gaps} size={44} color={VIOLET} anchor="middle" />

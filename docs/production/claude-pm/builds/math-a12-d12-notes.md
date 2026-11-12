@@ -50,3 +50,11 @@ Read-only imports: math-a12-d04/parts (Chip, CurveLabel, Dot, Frac, PreRing, Rec
 
 ## Check at playback speed
 The d11 cross-fade at "At x equals zero" (must be invisible) and window T easing left; the sun sweep against "shadow" and "sunbeam" and the label timing; the 1.00 → 1.01 nudge on "flat"; the paired riders and direction arrows (scenes 2 and 4) and the sun sinking to 1.3 with the edge tag; the cot draw and the branch arrows; the scene 7 rider and the graph shrinking for the slip; the swap ghosts, dropped minus and ring (scene 8), then the slide into phase B and the two angle readouts moving opposite ways; the attempt rings; the notes cross-fade back to the handoff frame.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 8 phase B, 06:12 (frame 11169).
+- Hold: the sunbeam label "sunbeam = sec x = cosec(π/2 − x)" clipped at the diagram's right edge. Fix: the label is two lines ("sunbeam = sec x" / "= cosec(π/2 − x)"), moved up and right with a new opt-in `beamLabelShift` on `SunShadow` (parts.tsx:86, 137; s3.tsx:135). Other `SunShadow` uses are unchanged.
+- Sweep also found: scene 4 (about 2:45 to 3:17) the amber "sin x ≠ 0 (x ≠ kπ)" strip covered the "cos x" of the working (moved right, s2.tsx:68); scene 7 (about 5:21) the slip card covered the graph's "x (radians)" label (the graph now shrinks to 580 px, from 620, before the card arrives, s3.tsx:18).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d12-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 2 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d12/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

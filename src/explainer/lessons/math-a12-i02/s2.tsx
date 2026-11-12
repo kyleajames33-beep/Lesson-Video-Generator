@@ -22,7 +22,7 @@ export const S05: React.FC = () => {
 			<HandTag x={1290} y={300} text="inner rate" at={k.a} size={46} color={BLUE} />
 			<HandTag x={1290} y={360} text="so divide by both" at={k.so} size={46} color={INK} />
 			<BoxCard x={96} y={420} at={k.integral} size={64} border={INK} bw={5}>∫(<AXB />)<Pow>n</Pow> dx = <Frac n={<>(ax + b)<Pow>n + 1</Pow></>} d={<><Bl>a</Bl>(n + 1)</>} scale={0.82} /> <Cc>+ C</Cc></BoxCard>
-			<Chip x={1220} y={470} at={k.one} size={40} color={GREY}>a ≠ 0, n ≠ −1, where the power is defined</Chip>
+			<Chip x={1100} y={470} at={k.one} size={40} color={GREY}>a ≠ 0, n ≠ −1, where the power is defined</Chip>
 			<Line x={96} y={640} at={k.one + 20} size={40}>check: <V>d/dx</V> gives <Frac n={<>(n + 1)(ax + b)<Pow>n</Pow> · <Bl>a</Bl></>} d={<><Bl>a</Bl>(n + 1)</>} /> = (ax + b)<Pow>n</Pow>  <Tick size={40} o={prog(f, k.one + 50, 10)} /></Line>
 			<BoxCard x={96} y={800} at={-30} size={44} title="scene 3">(2x + 1)²:  ÷ 3 (new power) and ÷ <Bl>2</Bl> (inner rate)</BoxCard>
 			<BoxCard x={1080} y={800} at={k.integral} size={44} title="next">the starter: 3(4t + 1)<Pow>−½</Pow></BoxCard>
@@ -93,7 +93,7 @@ export const S06: React.FC = () => {
 				</FrameSvg>} />
 			<HandTag x={140} y={330} text="its gradient lands on the integrand" at={k.integrand} size={40} color={VIOLET} />
 			<Line x={RX6} y={140} at={-30} size={60}>∫ <V><MarkSpan kind="circle" at={k.outside} color={BLUE} width={5}>2x</MarkSpan>(<InnerSlot>x² + 1</InnerSlot>)³</V> dx</Line>
-			<HandTag x={RX6 + 420} y={290} text="inside" at={k.inside} size={40} color={GREY} />
+			<HandTag x={RX6 + 420} y={262} text="inside" at={k.inside} size={40} color={GREY} />
 			<Line x={RX6} y={300} at={k.inside + 30} size={40}><V>d/dx</V> (x² + 1) = <Bl>2x</Bl>: already outside</Line>
 			<WorkingRows x={RX6} y={390} w={960} size={58} oldSize={44} gap={8} rows={[
 				{left: 'guess', right: <Frac n="(x² + 1)⁴" d="4" />, at: k.guess},

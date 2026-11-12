@@ -7,7 +7,7 @@ import {CARD, CARD_SHADOW, EquationStrip, HandTag, MarkSpan, MistakeCard, TaskSt
 import {Givens} from '../math-a12-d08/parts';
 import {cue} from './common';
 import {
-	AMB, AMB_INK, AnswerBox, AnswerStack, CarSprite, Chip, CloseUp, COS2, CurveLabel, DriveStrip, E, Frac2, GREY, Legend, LNCOS, Line, MiniRoad, Note, P, PI, RecallChip, RoadView, Tl, V, VIOLET, TEAL, WK, Win, XEX, dirs, gmap,
+	AMB, AMB_INK, AnswerBox, AnswerStack, CarSprite, Chip, CloseUp, COS2, CurveLabel, DriveStrip, E, GREY, Legend, LNCOS, Line, MiniRoad, Note, P, PI, RecallChip, RoadView, Tl, V, VIOLET, TEAL, WK, Win, XEX, dirs, gmap,
 } from './parts';
 
 // ---------- 6. a flat tangent and an upright normal ----------
@@ -84,7 +84,7 @@ export const S07: React.FC = () => {
 	return (
 		<>
 			<TaskStrip text="Find the equations of the tangent and the normal" at={4} size={52} />
-			<EquationStrip at={10} size={60}>y = <Frac2 n="ln x" d="cos x" /></EquationStrip>
+			<EquationStrip at={10} size={60}>y = ln x / cos x</EquationStrip>
 			<Givens x={96} y={262} w={560} size={42} lines={[
 				{content: <>x = 1  <span style={{fontSize: 32, color: INK_SOFT}}>(radians)</span></>, at: Math.min(one0, 30)},
 				{content: 'domain: x > 0, cos x ≠ 0', at: Math.min(one0, 30) + 10, role: 'k'},
@@ -99,7 +99,7 @@ export const S07: React.FC = () => {
 			<Line x={96} y={556} at={easy} size={46}>y = ln 1 / cos 1 = 0/cos 1<span style={{opacity: prog(f, zero1, 12)}}> = 0</span></Line>
 			<Line x={96} y={622} at={tanIs} size={44}>tangent:  y − 0 = (<V>1/cos 1</V>)(x − 1)</Line>
 			<AnswerBox x={96} y={684} at={one1} size={46}><span>tangent:  y = (x − 1)/cos 1</span></AnswerBox>
-			<Line x={720} y={698} at={one1 + 14} size={32} color={INK_SOFT} weight={700}>gradient ≈ 1.851</Line>
+			<Line x={748} y={698} at={one1 + 14} size={32} color={INK_SOFT} weight={700}>gradient ≈ 1.851</Line>
 			<Line x={96} y={774} at={mcos} size={44}>m<sub style={{fontSize: 28}}>N</sub> = −1 ÷ (<V>1/cos 1</V>) = <Tl>−cos 1</Tl></Line>
 			<AnswerBox x={96} y={838} at={one2} size={46}><span>normal:  y = <Tl>−cos 1</Tl>(x − 1)</span></AnswerBox>
 			<Line x={720} y={852} at={radians} size={32} color={INK_SOFT} weight={700}>cos 1 ≈ 0.540 (1 radian)</Line>
@@ -110,7 +110,7 @@ export const S07: React.FC = () => {
 			<CurveLabel x={ax + 10} y={M.box.top + 6} at={-60} size={32} color={AMB_INK}>x = π/2</CurveLabel>
 			<CurveLabel x={M.pt(0.06, 0)[0]} y={M.pt(0, 1.17)[1]} at={-60} size={40} color={INK}>y = ln x / cos x</CurveLabel>
 			<CurveLabel x={Pp[0] - 130} y={Pp[1] + 20} at={zero2} size={34} color={INK}>(1, 0)</CurveLabel>
-			<Note x={M.pt(0.1, 0)[0] + 20} y={M.pt(0, -0.95)[1]} at={take} size={30}>domain: x &gt; 0, x ≠ π/2</Note>
+			<Note x={M.pt(0.72, 0)[0]} y={M.pt(0, -0.78)[1]} at={take} size={30}>{'domain: x > 0,\nx ≠ π/2'}</Note>
 			<CloseUp x={96} y={560} w={900} h={340} M={M} fam={LNCOS} X={X} k={2.4} at={20} out={easy - 6} pieces={ROAD7} title="CLOSE-UP: A NEW ROAD">
 				<HandTag x={24} y={300} text="same car, same two steps" at={only + 10} size={40} color={INK} />
 			</CloseUp>

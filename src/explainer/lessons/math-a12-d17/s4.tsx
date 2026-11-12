@@ -145,7 +145,7 @@ export const S11: React.FC = () => {
 	const r1 = kf(f, [[k.newg + 10, -0.75], [k.positive, 3], [k.positive + 30, 3.55]], false);
 	const r3 = kf(f, [[k.so, -0.75], [k.points - 6, 3.55]], false);
 	const bx = ph === 1 ? r1 : f < k.bend ? 0 : 2;
-	const p0: StackPanel = {fn: q, df: q1, y: Y11[0], yTicks: [-20, -10]};
+	const p0: StackPanel = {fn: q, df: q1, y: Y11[0], yTicks: [-20]};
 	const rings: Panels['rings'] = [
 		{panel: 1, x: 3, at: k.crosses},
 		{panel: 1, x: 0, at: k.touches, kind: 'touch'},
@@ -165,14 +165,14 @@ export const S11: React.FC = () => {
 			<SceneHeading text="When f′ only touches zero" at={4} size={56} />
 			{ph === 1 ? (
 				<StudioStackedDerivativePanels x={ST9.x} y={ST9.y} width={ST9.w} panelHeight={ST9.ph} gap={ST9.gap} windowX={WX11} {...common}
-					panels={[p0, {fn: q1, y: Y11[1], yTicks: [-10, 10, 20, 30], trace: 'progressive'}, {fn: NONE, y: Y11[2], yTicks: [30, 60]}]}
+					panels={[p0, {fn: q1, y: Y11[1], yTicks: [-10, 30], trace: 'progressive'}, {fn: NONE, y: Y11[2], yTicks: [60]}]}
 					rider={{keys: [{frame: 0, x: r1}], at: k.newg + 10, out: k.origin - 12}} traceFrom={-0.8} />
 			) : ph === 2 ? (
 				<StudioStackedDerivativePanels x={ST9.x} y={ST9.y} width={ST9.w} panelHeight={ST9.ph} gap={ST9.gap} windowX={WX11} {...common}
-					panels={[p0, {fn: q1, y: Y11[1], yTicks: [-10, 10, 20, 30]}, {fn: NONE, y: Y11[2], yTicks: [30, 60]}]} />
+					panels={[p0, {fn: q1, y: Y11[1], yTicks: [-10, 30]}, {fn: NONE, y: Y11[2], yTicks: [60]}]} />
 			) : (
 				<StudioStackedDerivativePanels x={ST9.x} y={ST9.y} width={ST9.w} panelHeight={ST9.ph} gap={ST9.gap} windowX={WX11} {...common}
-					panels={[p0, {fn: q1, df: q2, y: Y11[1], yTicks: [-10, 10, 20, 30]}, {fn: q2, y: Y11[2], yTicks: [30, 60], trace: 'progressive'}]}
+					panels={[p0, {fn: q1, df: q2, y: Y11[1], yTicks: [-10, 30]}, {fn: q2, y: Y11[2], yTicks: [60], trace: 'progressive'}]}
 					rider={{keys: [{frame: 0, x: r3}], at: k.so, tangentOn: [1]}} traceFrom={-0.8} />
 			)}
 			<FrameSvg>

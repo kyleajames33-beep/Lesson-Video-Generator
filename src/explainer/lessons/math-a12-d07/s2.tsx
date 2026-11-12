@@ -50,7 +50,7 @@ export const S05: React.FC = () => {
 			<Line at={row} x={96} y={650} dim={age}>dy/dx = <Te>{EX} sin x</Te> + <Bl>{EX} cos x</Bl></Line>
 			<HandTag x={330} y={760} text="u′v" at={row + 20} out={share} size={40} role="b" />
 			<HandTag x={600} y={760} text="uv′" at={row + 30} out={share} size={40} role="a" />
-			<Enter at={share} style={{position: 'absolute', left: 96, top: 610}}><span style={DISPLAY(38, INK_SOFT, 700)}>shared factor: <Ring at={share + 6}>{EX}</Ring></span></Enter>
+			<Enter at={share} style={{position: 'absolute', left: 96, top: 588}}><span style={DISPLAY(38, INK_SOFT, 700)}>shared factor: <Ring at={share + 6}>{EX}</Ring></span></Enter>
 			<AnswerBox at={take} x={84} y={726}>= {EX}(sin x + cos x)</AnswerBox>
 			<AnswerBox at={thats} x={84} y={840} size={42}>x = π/2: e<Sup>π/2</Sup>(1 + 0) = e<Sup>π/2</Sup> ≈ 4.810</AnswerBox>
 			<FunctionSimulator x={G.x} y={G.y} width={G.w} height={G.h} window={HANDOFF_WIN} family={EXSIN} timeline={[{frame: 0, x: PI / 2}]} color={INK}
@@ -120,7 +120,7 @@ export const S07: React.FC = () => {
 				{content: <>v = sin(2x), v′ = <MarkSpan kind="box" at={vprime + 20} role="a">2</MarkSpan> cos(2x)</>, role: 'a', at: vprime},
 			]} />
 			<RecallChip x={96} y={540} at={vprime + 20} out={r1 - 6} size={30}>last video: (sin kx)′ = k cos kx</RecallChip>
-			<HandTag x={560} y={520} text="from the inside" at={vprime + 30} out={r1} size={38} role="a" />
+			<HandTag x={560} y={550} text="from the inside" at={vprime + 30} out={r1} size={38} role="a" />
 			<Plan y={320} out={sq - 8} lines={[<>1. Product: label u and v.</>, <>2. Check each factor for an inside.</>, <>3. <Te>u′v</Te> + <Bl>uv′</Bl>, then factorise.</>]} />
 			<Line at={r1} x={96} y={600} size={46} dim={prog(f, r2, 14)}>dy/dx = <Te>3x² sin(2x)</Te> + <Bl>x³ · 2 cos(2x)</Bl></Line>
 			<Line at={r2} x={96} y={690} size={46} dim={prog(f, answer, 14)}>= <Te>3<Ring at={share + 6}>x²</Ring> sin(2x)</Te> + <Bl>2x³ cos(2x)</Bl></Line>
@@ -150,7 +150,7 @@ export const S08: React.FC = () => {
 				overlay={() => <FrameSvg><TanLine M={M} X={X} Y={0} m={m2} half={200} color={MATH_MISTAKE} dash="14 10" opacity={vis(f, leave, 99999)} /></FrameSvg>} />
 			<CurveLabel x={M.pt(0.1, -2)[0]} y={M.pt(0, -2)[1]} size={42}>y = x³ sin(2x)</CurveLabel>
 			<Chip x={1240} y={170} at={-30} size={32} color={MATH_ANSWER}>dy/dx = x²(3 sin(2x) + 2x cos(2x))</Chip>
-			<RecallChip x={1240} y={270} at={there} size={30}>sin π = 0, cos π = −1</RecallChip>
+			<RecallChip x={1240} y={270} at={there} out={agrees - 6} size={30}>sin π = 0, cos π = −1</RecallChip>
 			<Line at={check} x={1240} y={350} size={44} dim={prog(f, soThe, 14)}>at x = π/2:</Line>
 			<Line at={soThe} x={1240} y={420} size={44} dim={prog(f, five, 14)}>3(π/2)² · <Te>0</Te> + 2(π/2)³(<Bl>−1</Bl>)</Line>
 			<AnswerBox at={five - 40} x={1228} y={500} size={52}>= −π³/4</AnswerBox>

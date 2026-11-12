@@ -122,7 +122,7 @@ export const S08: React.FC = () => {
 			<ConcavityGlyphs cells={[{from: -4, to: 0, sign: -1}]} toFrame={M.pf} Y={-5} at={k.two + 40} out={k.as} words />
 			<ConcavityGlyphs cells={[{from: 0, to: 4, sign: 1}]} toFrame={M.pf} Y={-5} at={k.two + 90} out={k.as} words />
 			<FrameSvg><circle cx={M.pf(0, 0)[0]} cy={M.pf(0, 0)[1]} r={16} fill={CARD} stroke={RED} strokeWidth={6} opacity={vis(f, k.but, k.as + 30, 10)} /></FrameSvg>
-			<HandTag x={M.pf(0.25, 0)[0]} y={M.pf(0, 0.9)[1]} text="x = 0: no point" at={k.but} out={k.as + 30} size={44} color={RED} />
+			<HandTag x={M.pf(0.25, 0)[0]} y={M.pf(0, -0.45)[1]} text="x = 0: no point" at={k.but} out={k.as + 30} size={44} color={RED} />
 			<svg width={1920} height={1080} style={{position: 'absolute', inset: 0, overflow: 'visible', pointerEvents: 'none'}}>
 				<Clip M={M}>
 					<line x1={xTop[0]} x2={xBot[0]} y1={xTop[1]} y2={xTop[1] + (xBot[1] - xTop[1]) * prog(f, k.asym, 20)} stroke={GREY_INK} strokeWidth={4} strokeDasharray="14 10" opacity={prog(f, k.asym, 8)} />

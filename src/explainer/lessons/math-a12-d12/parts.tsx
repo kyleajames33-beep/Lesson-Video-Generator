@@ -83,7 +83,9 @@ export const SunShadow: React.FC<{
 	at?: number; out?: number;
 	shadowLabel?: React.ReactNode; beamLabel?: React.ReactNode; shadowO?: number; beamO?: number; arcO?: number; elevO?: number; overheadO?: number;
 	labelSize?: number; edge?: boolean;
-}> = ({x, y, w, h, angle, U = 230, rx = 230, groundPad = 80, Rs = 175, D = 110, at = -30, out, shadowLabel = 'shadow = tan x', beamLabel = 'sunbeam = sec x', shadowO = 1, beamO = 1, arcO = 1, elevO = 0, overheadO = 1, labelSize = 34, edge = true}) => {
+	/** Opt-in nudge for the sunbeam label (local px), for a longer or two-line label (scene 8). */
+	beamLabelShift?: [number, number];
+}> = ({x, y, w, h, angle, U = 230, rx = 230, groundPad = 80, Rs = 175, D = 110, at = -30, out, shadowLabel = 'shadow = tan x', beamLabel = 'sunbeam = sec x', shadowO = 1, beamO = 1, arcO = 1, elevO = 0, overheadO = 1, labelSize = 34, edge = true, beamLabelShift = [0, 0]}) => {
 	usePlatePreload([TOWER.src, SUN.src]);
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
@@ -132,7 +134,7 @@ export const SunShadow: React.FC<{
 			{arcO > 0.001 && angle > 0.06 ? <div style={{...T, left: rx - 84 * Math.sin(angle / 2) - 14, top: R[1] - 84 * Math.cos(angle / 2) - 30, opacity: arcO, fontSize: 38}}>x</div> : null}
 			{elevO > 0.001 && !off ? <div style={{...T, left: tipX - 182, top: g - 58, opacity: elevO, color: BLUE, fontSize: 34}}>π/2 − x</div> : null}
 			{shadowO > 0.001 ? <div style={{...T, left: shMid, top: g + 12, transform: 'translateX(-50%)', opacity: shadowO}}>{shadowLabel}</div> : null}
-			{beamO > 0.001 ? <div style={{...T, left: bl[0], top: bl[1], opacity: beamO, color: '#6b4a00'}}>{beamLabel}</div> : null}
+			{beamO > 0.001 ? <div style={{...T, left: bl[0] + beamLabelShift[0], top: bl[1] + beamLabelShift[1], opacity: beamO, color: '#6b4a00'}}>{beamLabel}</div> : null}
 			{off && edge ? <div style={{...T, right: 14, top: g - 48, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30}}>{`shadow ${Math.tan(angle).toFixed(2)} →`}</div> : null}
 		</div>
 	);

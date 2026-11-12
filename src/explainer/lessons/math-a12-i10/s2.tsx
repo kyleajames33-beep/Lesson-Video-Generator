@@ -48,7 +48,7 @@ export const S05: React.FC = () => {
 			<Row x={RX} y={340} at={k.fact} size={46}>x² − 4x + 3 = (x − 1)(x − 3)</Row>
 			<Row x={RX} y={420} at={k.three} size={46} color={TEAL}>zeros: x = 1, x = 3</Row>
 			<Row x={RX} y={500} at={k.now} size={34} color={SOFT}>F(x) = x³/3 − 2x² + 3x</Row>
-			<Row x={RX} y={550} at={k.answers} size={44}><Int lo="0" hi="1">f</Int> = 4/3,  <Int lo="1" hi="3">f</Int> = −4/3,  <Int lo="3" hi="4">f</Int> = 4/3</Row>
+			<Row x={RX} y={550} at={k.answers} size={38}><Int lo="0" hi="1">f</Int> = 4/3,  <Int lo="1" hi="3">f</Int> = −4/3,  <Int lo="3" hi="4">f</Int> = 4/3</Row>
 			<Named x={RX} y={650} kind="area" at={k.four - 30} size={44} frame={prog(fr, k.four, 10)}>4/3 + 4/3 + 4/3 = 4</Named>
 			<Named x={RX} y={750} kind="int" at={k.single} size={44}><Int lo="0" hi="4">f</Int> = 4/3</Named>
 			<MistakeCard x={RX} y={840} w={760} at={k.only + 20} size={42} wrong={<>|4/3| = area?</>} caption="|4/3| is not the area" />

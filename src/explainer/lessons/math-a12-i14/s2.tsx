@@ -38,7 +38,7 @@ export const S06: React.FC = () => {
 			{phB > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: phB}}>
 				<ConstantFamilySlider x={FAM.x} y={FAM.y} width={FAM.w} height={FAM.h} window={{x: [-0.15, 2.3], y: [-4, 7.5]}} g={v1} constants={[-2, -1, 0, 1, 2]} C={Cv} point={{x: 0, y: 0, label: 'start: v(0) = 0'}} markerX={0}
 					label={C => (Math.abs(C) < 1e-6 ? 'v = 3t² − 4t' : 'v = 3t² − 4t + C')} xTicks={[1, 2]} yTicks={[-2, 2, 4, 6]} xLabel="t (s)" yLabel="velocity v (m/s)" at={-30} />
-				<Hand x={470} y={350} at={k.only} size={38} color={AMBER}>same gradients, different starts</Hand>
+				<Hand x={190} y={400} at={k.only} size={38} color={AMBER}>{'same gradients,\ndifferent starts'}</Hand>
 			</div> : null}
 			{phC > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: phC}}>
 				<ConstantFamilySlider x={FAM.x} y={FAM.y} width={FAM.w} height={FAM.h} window={{x: [-0.15, 2.3], y: [-3.8, 3.4]}} g={x1} constants={[-2, -1, 0, 1, 2]} C={Cx} point={{x: 0, y: 0, label: 'start: x(0) = 0'}} markerX={0}
@@ -134,7 +134,7 @@ export const S07: React.FC = () => {
 
 // ---------- 8. any quantity that changes with time ----------
 const R8 = 1215;
-const panD = (upto: number): Pan => ({fn: Dsn, y: [0, 228], h: 300, color: BLUE, title: 'depth D (cm)', titleT: 0.3, yTicks: [{v: 100, label: '100'}, {v: 175, label: '175'}, {v: 200, label: '200'}], upto});
+const panD = (upto: number): Pan => ({fn: Dsn, y: [0, 228], h: 300, color: BLUE, title: 'depth D (cm)', titleT: 14, yTicks: [{v: 100, label: '100'}, {v: 200, label: '200'}], upto});
 const panR = (upto: number): Pan => ({fn: Dr, y: [-23, 23], h: 300, color: TEAL, title: 'rate dD/dt (cm per day)', titleT: 5.2, yTicks: [{v: -20, label: '−20'}, {v: 10, label: '10'}, {v: 20, label: '20'}], upto});
 export const S08: React.FC = () => {
 	const fr = useCurrentFrame();

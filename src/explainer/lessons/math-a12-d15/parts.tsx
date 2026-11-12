@@ -48,7 +48,7 @@ export const Approx: React.FC<{children: React.ReactNode; size?: number}> = ({ch
 // ---------- windows and stages ----------
 /** Scenes 2 to 4 and 14: x −0.5 to 2.2, y −0.5 to 2.5, equal units (253 px per unit). */
 export const WIN_J: Win = {x: [-0.5, 2.2], y: [-0.5, 2.5]};
-export const G_J: Stage = {x: 30, y: 150, w: 810, h: 880};
+export const G_J: Stage = {x: 30, y: 150, w: 810, h: 840};
 /** Scene 1 panels (d14's frame): x −1 to 2.2, y −1 to 2.2. */
 export const WIN_H: Win = {x: [-1, 2.2], y: [-1, 2.2]};
 

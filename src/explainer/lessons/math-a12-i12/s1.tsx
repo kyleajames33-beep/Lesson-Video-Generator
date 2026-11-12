@@ -52,7 +52,7 @@ export const S01: React.FC = () => {
 				<Hand x={1100} y={820} at={k.no} size={38} color={SOFT}>no primitive by our rules</Hand>
 				<Chip x={1090} y={880} at={k.zero} size={46} color="#287347">= 0 exactly <span style={{color: '#7a4600'}}>?</span></Chip>
 				<HandTag x={1500} y={905} text="cut = fill?" at={k.fills} size={44} color={TEAL} />
-				<FrameSvg><Countdown start={1073} end={1143} x={1800} y={250} r={46} ringFrom={k.look} /></FrameSvg>
+				<FrameSvg><Countdown start={1073} end={1143} x={1760} y={470} r={46} ringFrom={k.look} /></FrameSvg>
 			</div>
 		</>
 	);
@@ -67,7 +67,7 @@ export const S02: React.FC = () => {
 			<SceneHeading text="Odd functions cancel" at={4} size={56} />
 			<GardenRig x={GP.x} y={GP.y} w={GP.w} tags={1 - prog(fr, k.alg, 12)} />
 			<StudioSymmetryPairs fn={g} h={1} mode="odd" turnAt={k.turn + 10} dur={40} plot={{x: 1080, y: 160, width: 800, height: 520, window: GW, xTicks: [-1, 1], yTicks: [-0.5, 0.5]}} pairs={[{x: 0.55, at: k.pair, width: 0.12}]} transfer={{x: 0.75, at: k.every - 10, dur: 40, width: 0.12}} curveColor={ABLUE} at={-30} />
-			<HandTag x={1110} y={210} text="half-turn: same graph" at={k.lands} size={40} color={GRAD} />
+			<HandTag x={1196} y={210} text="half-turn: same graph" at={k.lands} size={40} color={GRAD} />
 			<LiveReadoutBoard x={1080} y={720} width={800} at={k.same} inline size={44} labelSize={28} rows={[
 				{label: 'soil cut (mound)', value: CUT, digits: 3, unit: 'm²', role: 'b'},
 				{label: 'soil filled (hollow)', value: CUT, digits: 3, unit: 'm²', role: 'k'},
@@ -123,7 +123,7 @@ export const S04: React.FC = () => {
 			<Row x={990} y={610} at={k.prims} size={34} color={SOFT}>check: 12 − (−4) = 16 <Tick size={32} /></Row>
 			<Chip x={980} y={670} at={k.interval} size={38} color="#b8322a"><Int lo="−1" hi="2">…</Int>: not symmetric, the rules don't apply</Chip>
 			<Chip x={980} y={760} at={k.zeroans} size={40} color={INK}>a zero answer is a signed integral, not an area</Chip>
-			<StudioPlot x={980} y={850} width={900} height={170} window={{x: [-1.3, 1.3], y: [-0.7, 0.7]}} xTicks={[]} yTicks={[]} xLabel="" yLabel="" at={k.soil}>
+			<StudioPlot x={980} y={846} width={900} height={180} window={{x: [-1.3, 1.3], y: [-0.7, 0.7]}} xTicks={[]} yTicks={[]} xLabel="" yLabel="" at={k.soil}>
 				{(m: PlotMap) => <>
 					<path d={`${fnPath(m, x => Math.abs(g(x)), -1, 1)}`} fill="none" stroke="none" />
 					<AreaFillLayer m={m} fn={g} a={-1} to={1} color="#f8e8c8" outline="#d18f1f" />

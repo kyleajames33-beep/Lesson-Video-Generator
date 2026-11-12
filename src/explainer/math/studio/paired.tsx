@@ -30,6 +30,11 @@ export const PairedDerivativePanel: React.FC<{
 	tints?: {at: number; out?: number};
 	rings?: readonly {x: number; kind: 'cross' | 'touch'; at: number; label?: string}[];
 	target?: {fn: (x: number) => number; at: number; out?: number; label?: string};
+	/**
+	 * Live board beside the panel. Its rows receive the UPPER plot's state, so s.X is the point's x, s.Y the
+	 * displayed f height and s.slope the displayed f′ height (the height of the lower curve under the point).
+	 * (Before 12 Nov 2026 the rows received the lower plot's state, whose slope is f″; i02 was the only user.)
+	 */
 	readout?: {x: number; y: number; width?: number; at?: number; rows: FnRow[]};
 	overlay?: (s: FnState, top: (X: number, Y: number) => [number, number], bottom: (X: number, Y: number) => [number, number]) => React.ReactNode;
 }> = ({x, y, width = 1100, heightTop = 470, heightBottom = 400, gap = 10, windowX, yTop, yBottom, family, timeline, traceFrom, at = 0, out, pointAt, tangentAt, topColor = INK, topLabel = 'y = f(x)', bottomLabel = 'gradient f′(x)', xTicks, yTopTicks, yBottomTicks, tints, rings = [], target, readout, overlay}) => {
@@ -56,7 +61,7 @@ export const PairedDerivativePanel: React.FC<{
 			<FunctionSimulator x={x} y={y} width={width} height={heightTop} window={{x: windowX, y: yTop}} family={family} timeline={timeline} color={topColor} xTicks={xTicks} yTicks={yTopTicks} xLabel="x" yLabel={topLabel} point={{at: pAt, out}} tangent={{at: tAt, out}} at={at} out={out} />
 			<FunctionSimulator x={x} y={y2} width={width} height={heightBottom} window={{x: windowX, y: yBottom}} family={lower} timeline={timeline.map(k => ({...k, q: undefined}))} color={MATH_GRADIENT} clipToPoint={{from: X0}} xTicks={xTicks} yTicks={yBottomTicks} xLabel="x" yLabel={bottomLabel} point={{at: pAt, out, color: MATH_GRADIENT}} regions={regions} at={at} out={out}
 				curves={target ? [{fn: target.fn, at: target.at, out: target.out, label: target.label ? {text: target.label, X: windowX[1] - (windowX[1] - windowX[0]) * 0.2} : undefined}] : []}
-				readout={readout ? {...readout, at: readout.at ?? at} : undefined} />
+				readout={readout ? {...readout, at: readout.at ?? at, rows: readout.rows.map(r => ({...r, value: r.value ? () => r.value!(st) : undefined, text: r.text ? () => r.text!(st) : undefined}))} : undefined} />
 			<FrameSvg style={{opacity: o * prog(f, pAt, 12)}}>
 				<line x1={a[0]} y1={a[1]} x2={bp[0]} y2={bp[1]} stroke={MATH_GRADIENT} strokeWidth={3} strokeDasharray="6 9" opacity={0.7} />
 				{rings.map((r, i) => {

@@ -51,3 +51,11 @@ The d14 cross-fade at frames 40 to 60 and the blue-to-ink turn with the panels g
 
 ## Root review round (11 Nov)
 1. Scene 2: a 1000 × 430 close-up of the board on the track at the join ("one tangent here?", board about 395 px) fills the column under the question card from the first frame until "If those gradients"; the "h" bracket is thicker and its label is 56 px. Grade checker re-run: PASS WITH WARNINGS (0 failures, same 3 warnings). Sheet re-made.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 13 feedback 2, about 7:35 (frame 13671).
+- Hold: the violet "one tangent, gradient 2" label ran past the right edge. Fix: two lines in the empty upper left of the graph (s4.tsx:212).
+- Sweep also found: scene 1 the close-up card covered the right panel's tick labels (close-up and ride board narrowed to 500 px, s1.tsx:93, 95); scene 5 "run 0.0100" overlapped "f(1) = 1" (the label moves above left during the secants, s2.tsx:162) and the x label sat on the frame bottom (stage height 880 to 840, parts.tsx:51); scene 8 the close-up card covered the y ticks and "no jolt" sat on a tick (card x 1100 to 1190, tag moved, s3.tsx:187, 190); scene 14 the gradient table ran off the right edge (column width 140 to 124 via new `HANDOFF_COLW`, s5.tsx:22, 30; d16's opening uses the same constant).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d15-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 3 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d15/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

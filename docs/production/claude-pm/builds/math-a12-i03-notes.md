@@ -66,3 +66,11 @@ Report copy: scratchpad `build-i03/Explainer-math-a12-i03-grade.md`. An earlier 
    - scene 6: "aˣ = e^(x ln a)" moved down clear of the readout board;
    - scene 7: the "straightens onto y = x" tag moved up clear of the slider badge.
 3. Grade checker re-run: PASS WITH WARNINGS (0 failures, the same 7 warnings). Sheet re-made.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 3, about 1:21.5 (frame 2445).
+- Hold: the answer box and the "everywhere: gradient = 3 × height" tag shared y = 640. Fix: the tag now leaves 10 frames before the answer box arrives ("divide by three"), so they never share the frame (s1.tsx:112).
+- Sweep also found: scene 1 the "and 2ˣ?" chip covered the graph's y label (moved right, s1.tsx:37); scene 3 heading: the hand font has no superscript x, so "e³ˣ" drew the 3 and the x on top of each other; the heading is now "e to the 3x: the gradient is three times the height" (s1.tsx:93); scene 4 "−e⁻ˣ: rising, gradient e⁻ˣ" ran off the right edge (two lines below the curve, s1.tsx:142); scene 4a "battery = that term + C: rising" sat on the x ticks (moved inside the graph under the curve, s1.tsx:168).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-i03-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 7 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/i03/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

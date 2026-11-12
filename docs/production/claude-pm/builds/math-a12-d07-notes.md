@@ -49,3 +49,11 @@ Scoped tsconfig in the scratchpad `build-d07`: clean (apart from the known unuse
 5. Scene 2: the rectangle is a solid tinted area with "area = uv" at 48 px and side labels at 44 px; the strips are drawn at least 48 px thick, with a "strips not to scale" tag while they are exaggerated at the small nudge; the corner shrinks with the nudge; the readout board is at 64 px and the plot is 520 × 330.
 6. Scene 13: working lines at a steady 52 px (older lines dim, never shrink) and the graph at 714 × 480.
 Typecheck clean; sheet re-made.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 1a, about 1:06 (root repair: panel retitled after the rewind).
+- Root's retitle repair confirmed at 1:06 ("AREA ADDED IN THAT HALF DAY"). New A evidence: sheet and the after still.
+- Sweep also found: scene 1a the deck width label "2.00 m" sat 9 px from the left frame edge (36 px, closer to the deck, s1.tsx:112); scene 4 "product levels off" overlapped "v = sin x" (moved below the axis, s1.tsx:271); scene 5 "shared factor:" overlapped the working line (s2.tsx:53); scene 7 "from the inside" touched cos(2x) (s2.tsx:123); scene 8 the "gradient −7.75" chip covered the recall chip (the recall chip leaves before it, s2.tsx:153).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d07-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 6 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d07/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

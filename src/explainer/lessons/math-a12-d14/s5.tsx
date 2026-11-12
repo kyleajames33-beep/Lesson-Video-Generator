@@ -50,7 +50,7 @@ export const D14FinalFrame: React.FC = () => (
 );
 
 // ---------- 13. handoff ----------
-const G13 = {x: 40, y: 160, w: 826, h: 820};
+const G13 = {x: 40, y: 200, w: 826, h: 780};
 const CX = 900;
 export const S13: React.FC = () => {
 	const id = 'scene-13';

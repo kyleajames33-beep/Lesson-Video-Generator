@@ -15,7 +15,7 @@ export const S07: React.FC = () => {
 	const id = 'scene-07';
 	const f = useCurrentFrame();
 	const find = cue(id, 'Find where'), given = cue(id, 'for x between'), domain = cue(id, 'Domain first'), isnt = cue(id, "isn't pi over two"), horiz = cue(id, 'A horizontal tangent means'), eq = cue(id, 'sec x tan x equals zero'), secis = cue(id, 'Sec x is one over'), never = cue(id, 'never zero'), zero = cue(id, 'must be zero') + 13, pi = cue(id, 'x equals pi') + 17, points = cue(id, 'The points are'), z1 = cue(id, 'zero, one'), pim1 = cue(id, 'pi, minus one'), bottom = cue(id, 'the bottom of one');
-	const G7 = {...G7B, h: kf(f, [[bottom - 26, 750], [bottom, 620]])};
+	const G7 = {...G7B, h: kf(f, [[bottom - 30, 750], [bottom - 4, 580]])};
 	const M = gmap(G7.x, G7.y, G7.w, G7.h, W7);
 	const fam = {...SEC, domain: [{from: -PI / 2, to: PI / 2}, {from: PI / 2, to: 3 * PI / 2}]};
 	const X = kf(f, [[0, -1.0], [horiz, -1.0], [horiz + 80, 1.15], [secis, 1.15], [zero, 0]]);
@@ -132,7 +132,7 @@ export const S08: React.FC = () => {
 			<Line x={900 - 30 * B} y={872} at={one + 30} size={34} color={INK_SOFT} weight={700}>x in radians; each result where its function is defined</Line>
 			{/* phase B: the tower with both sun angles */}
 			<SunShadow x={980} y={318} w={780} h={520} angle={ang} at={tower} U={210} rx={300} groundPad={110} Rs={150} D={96} labelSize={32}
-				shadowLabel={<>shadow = tan x = <span style={{color: BLUE}}>cot(π/2 − x)</span></>} beamLabel={<>sunbeam = sec x = <span style={{color: BLUE}}>cosec(π/2 − x)</span></>}
+				shadowLabel={<>shadow = tan x = <span style={{color: BLUE}}>cot(π/2 − x)</span></>} beamLabel={<>sunbeam = sec x{'\n'}=<span style={{color: BLUE}}>cosec(π/2 − x)</span></>} beamLabelShift={[20, -40]}
 				shadowO={prog(f, shadow, 12)} beamO={prog(f, it2, 12)} arcO={1} elevO={prog(f, horizon, 12)} />
 			<Panel x={1404} y={330} w={344} at={horizon} pad="6px 18px 8px">
 				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, color: INK}}>from overhead, x</div>

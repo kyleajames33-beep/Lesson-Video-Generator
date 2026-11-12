@@ -82,7 +82,7 @@ export const StarterRise: React.FC<{x: number; y: number; w: number; t: number; 
 	const rx = m.at(1013, 0)[0] + 14;
 	const lv = cmY(level);
 	const g = ghost && ghost.o > 0.001 ? ghost : null;
-	const gy = g ? Math.max(130, cmY(g.cm)) : 0;
+	const gy = g ? Math.max(rimY - 60, cmY(g.cm)) : 0; // kept below the heading (was 130, which ran the label into the title and the working)
 	return (
 		<div style={{position: 'absolute', inset: 0, opacity: o}}>
 			<ContainerFill x={x} y={y} w={w} container={JAR} interior={INNER} level={level / 14} reveal={{plate: FILL, dome: 10, surfaceLine: true}} />
@@ -99,7 +99,7 @@ export const StarterRise: React.FC<{x: number; y: number; w: number; t: number; 
 				{g ? <g opacity={g.o}>
 					<line x1={ix0 - 10} x2={rx + 60} y1={gy} y2={gy} stroke={MATH_MISTAKE} strokeWidth={5} strokeDasharray="14 10" />
 					{g.cm > 14.2 ? <path d={`M${rx + 90},${gy + 50} V${gy - 6} M${rx + 76},${gy + 12} L${rx + 90},${gy - 6} L${rx + 104},${gy + 12}`} stroke={MATH_MISTAKE} strokeWidth={5} fill="none" strokeLinecap="round" /> : null}
-					{g.label ? <text x={rx + 116} y={gy + 14} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: MATH_MISTAKE}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{g.label}</text> : null}
+					{g.label ? <text x={ix0} y={gy - 16} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: MATH_MISTAKE}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{g.label}</text> : null}
 				</g> : null}
 			</FrameSvg>
 		</div>

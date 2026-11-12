@@ -184,10 +184,10 @@ export const S08: React.FC = () => {
 			<HandTag x={M.pt(2.1, 0)[0]} y={M.pt(0, 0.5)[1]} text="b free: a step again" at={alone + 20} out={alone + 100} size={36} color={RED} />
 			<HandTag x={M.pt(-0.4, 0)[0]} y={M.pt(0, 0.4)[1]} text="same line as the tangent to x² at 2" at={tangentTo} out={alone} size={34} color={GREY_INK} />
 			{/* the board through the join (equal-unit close-up) */}
-			<BoardCloseUp x={1100} y={250} w={400} h={390} M={Mloc} fam={workedFam(4, -4)} board={{X: Xb, o: 1, len: 300}} k={1} band={{o: 1, ranges: [[0.6, 3.4]], depth: 22}} range={[0.5, 3.5]} at={boardRolls - 10} out={alone} title="CLOSE-UP">
+			<BoardCloseUp x={1190} y={250} w={400} h={390} M={Mloc} fam={workedFam(4, -4)} board={{X: Xb, o: 1, len: 300}} k={1} band={{o: 1, ranges: [[0.6, 3.4]], depth: 22}} range={[0.5, 3.5]} at={boardRolls - 10} out={alone} title="CLOSE-UP">
 				<div style={{position: 'absolute', left: 16, bottom: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, color: VIOLET, textShadow: '0 0 6px #f3efe4'}}>angle ≈ 76.0°</div>
 			</BoardCloseUp>
-			<HandTag x={1110} y={680} text="no jolt" at={jolt} out={alone} size={44} color={VIOLET} />
+			<HandTag x={1200} y={672} text="no jolt" at={jolt} out={alone} size={40} color={VIOLET} />
 		</>
 	);
 };

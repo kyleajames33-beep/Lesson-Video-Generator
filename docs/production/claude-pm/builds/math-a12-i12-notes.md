@@ -55,3 +55,11 @@ Builder: Claude build agent, 11 November 2026. Not committed. Sheet: `work/quali
 3. Scene 8: the y = 1/x graph with the ln 3 area is 900 × 440. The kit `StudioToolPanel` is beside it from the first frame: the input types from frame 20, and "log(3)" shows 30 frames after "Type in" (before "it returns log three"), so the panel is never empty and the "working…" pulse stays short. The "how it works" card is removed.
 4. Feedback 2: the working runs down the left at 44 px ("ends once: 4, 0", "insides twice: 3.5 + 3 + 2 = 8.5", "half ≈ (0.5/2)[4 + 2(8.5) + 0] = 5.25", then the framed answer and the crossed slip). The half-arch picture is enlarged to 810 × 600 and scales with its box.
 Grade checker re-run: PASS WITH WARNINGS (0 failures; feedback 1 at 58% bare and attempt 2 at 54% bare, plus "Few pictures"). Sheet re-made.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: asset and font guard before rendering ("height 170 below minimum 180, Invalid graph window").
+- Hold: scene 4's small soil graph was 170 px high, below the 180 px minimum in `graphTransform`. Fix: height 180 (y 846, so it still ends at 1026) (s1.tsx:126). The whole composition now renders (the 1 fps sweep and the grade run both complete).
+- Sweep also found: scene 1 the countdown ring and its "think it through" label sat on the curve and reached the right edge (moved below the axis, s1.tsx:55); scene 2 "half-turn: same graph" touched the y label (s1.tsx:70).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-i12-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 3 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/i12/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

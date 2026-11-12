@@ -109,7 +109,7 @@ export const S01a: React.FC = () => {
 				<AreaStrips x={D.x} y={D.y} unit={unit} u={4} v={2} du={0} dv={0.5} roles={{u: 'b', v: 'a', corner: 'inner'}} at={day2} plate={{spec: DECK_TOP, region: DECK_TOP.box, u0: 4, v0: 2, w: D.w}} />
 			</>}
 			<CurveLabel x={D.x + 2 * unit - 40} y={D.y + 10} size={42} color={TEAL}>{fmtNum(L, 2)} m</CurveLabel>
-			<CurveLabel x={D.x - 20} y={D.y - unit - 26} size={42} color={BLUE} anchor="end">{fmtNum(Wd, 2)} m</CurveLabel>
+			<CurveLabel x={D.x - 10} y={D.y - unit - 26} size={36} color={BLUE} anchor="end">{fmtNum(Wd, 2)} m</CurveLabel>
 			<HandTag x={D.x + D.w + 10} y={D.y + 38} text="+1 m per day →" at={oneM} out={watch} size={40} role="b" />
 			<HandTag x={D.x + 10} y={D.y - 2 * unit - 34} text="↑ +0.5 m per day" at={halfM} out={watch} size={40} role="a" />
 			{!rewound && f >= g1 - 20 ? <HandTag x={D.x + D.w + 4} y={D.y - 2.3 * unit - 30} text="corner: change × change" at={g1 - 10} size={34} color={INK_SOFT} anchor="end" /> : null}
@@ -268,7 +268,7 @@ export const S04: React.FC = () => {
 				</g>
 			</FrameSvg>
 			<HandTag x={sx0 + 10} y={zy + 40} text="sin x levels off" at={why + 6} size={34} role="a" />
-			<HandTag x={px3 + 14} y={zy - 40} text="product levels off" at={why + 30} size={34} color={INK} />
+			<HandTag x={px3 + 14} y={zy + 40} text="product levels off" at={why + 30} size={34} color={INK} />
 			<HandTag x={sx0 + 20} y={(sy1 + py3) / 2 + 40} text="eˣ still growing →" at={still} size={36} role="b" />
 			<HandTag x={1300} y={556} text="↓ pulls the slope down" at={down} size={36} role="a" />
 			<HandTag x={1300} y={600} text="↑ eˣ's turn pushes up" at={up} size={36} role="b" />

@@ -54,7 +54,7 @@ export const S14: React.FC = () => {
 			<AnswerBox x={96} y={866} at={k.noPoint} size={40}>(a) x ≠ 0, odd   (b) f′ &gt; 0: none   (c) no inflection</AnswerBox>
 			<FunctionSimulator x={G.x} y={G.y} width={G.w} height={G.h} window={{x: [-4, 4], y: [-6, 6]}} family={A1F} timeline={[{frame: 0, x: 2}]} color={INK} at={-30}
 				xTicks={[-4, -2, 2, 4]} yTicks={[-4, 4]} xLabel="x" yLabel="y" asymptotes={[0]} />
-			<HandTag x={G.x + 60} y={G.y + 60} text="rises on each piece" at={k.rises} size={38} color={VIOLET} />
+			<HandTag x={G.x + 110} y={G.y + 60} text="rises on each piece" at={k.rises} size={38} color={VIOLET} />
 			<MistakeCard x={G.x} y={806} w={800} at={k.noInfl} size={36} wrong={<>point of inflection at (0, 0)</>} caption="x = 0 is not in the domain" />
 		</>
 	);
@@ -94,7 +94,7 @@ export const S16: React.FC = () => {
 				<QuestionCard at={-40} shrinkAt={-30} w={1700} y={170} size={44} heading="Last one"><Q2 u={{ct: k.crosses}} /></QuestionCard>
 			</RolesOn>
 			<StudioStackedDerivativePanels x={ST16.x} y={ST16.y} width={ST16.w} panelHeight={ST16.ph} gap={ST16.gap} windowX={W15.x} xTicks={[-2, -1, 1, 2, 3]} at={-60} hideFormula
-				panels={[{fn: r, df: r1, y: W15.y, yTicks: [-2, 2, 4, 6]}, {fn: r1, y: [-8, 9], yTicks: [-4, 4, 8], trace: 'progressive'}]}
+				panels={[{fn: r, df: r1, y: W15.y, yTicks: [-2, 6]}, {fn: r1, y: [-8, 9], yTicks: [-4, 8], trace: 'progressive'}]}
 				rider={{keys: [{frame: 0, x}], at: k.atM1 - 20}} traceFrom={-2.2}
 				columns={[{x: -1, at: k.flat}, {x: 0, at: k.zeroTwo, glow: [k.zeroTwo, k.and]}, {x: 2, at: k.flat, glow: [k.zeroTwo, k.and]}]}
 				rings={[{panel: 1, x: -1, at: k.crosses}, {panel: 1, x: 2, at: k.touches, kind: 'touch'}, {panel: 1, x: 0, at: k.zeroTwo, kind: 'turn'}, {panel: 1, x: 2, at: k.two, kind: 'turn'}]} />

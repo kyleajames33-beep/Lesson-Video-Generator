@@ -141,13 +141,13 @@ export const S05: React.FC = () => {
 			<CurveLabel x={M.pf(-2.45, 0)[0]} y={M.pf(0, -5.2)[1]} at={k.left} size={40} color={INK}>→ −∞</CurveLabel>
 			<HandTag x={M.pf(0.25, 0)[0]} y={M.pf(0, -4.6)[1]} text="odd: half turn about the origin" at={k.lands} out={k.icpt + 10} size={40} color={VIOLET} />
 			{/* right column */}
-			<BoxCard x={RX} y={170} w={740} at={-30} out={k.fmx - 8} size={48} title="So far">
+			<BoxCard x={RX} y={170} w={740} at={-30} out={Math.min(k.fmx - 8, k.sym - 12)} size={48} title="So far">
 				<div>max (−1, 2), min (1, −2)</div>
 				<div><V>f′</V>: rise, fall, rise</div>
 				<div><Ol>cap</Ol> for x &lt; 0, <Bl>cup</Bl> for x &gt; 0</div>
 				<div>inflection (0, 0), gradient −3</div>
 			</BoxCard>
-			<HandTag x={RX} y={600} text="next: symmetry, intercepts, ends" at={-30} out={k.fmx - 8} size={44} color={VIOLET} />
+			<HandTag x={RX} y={600} text="next: symmetry, intercepts, ends" at={-30} out={Math.min(k.fmx - 8, k.sym - 12)} size={44} color={VIOLET} />
 			<Line x={RX} y={160} at={k.sym} size={34} color={INK_SOFT} weight={800}>SYMMETRY</Line>
 			<Line x={RX} y={206} at={k.fmx} size={46}>f(−x) = −x³ + 3x = −f(x)<span style={{opacity: prog(f, k.odd, 10)}}>: odd</span></Line>
 			<Line x={RX} y={320} at={k.icpt} size={34} color={INK_SOFT} weight={800}>INTERCEPTS</Line>

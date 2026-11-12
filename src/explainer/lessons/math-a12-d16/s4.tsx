@@ -82,7 +82,7 @@ export const S10: React.FC = () => {
 					<Ring p={Pm} r={26} o={prog(f, p27, 12)} />
 					<Ring p={Pn} r={26} o={prog(f, m5, 12)} />
 				</FrameSvg>} />
-			<CurveLabel x={M.pf(-4.4, 0)[0]} y={M.pf(0, 31)[1]} at={-30} size={36} color={INK}>y = x³ + 3x² − 9x</CurveLabel>
+			<CurveLabel x={M.pf(-4.4, 0)[0]} y={M.pf(0, -3)[1]} at={-30} size={36} color={INK}>y = x³ + 3x² − 9x</CurveLabel>
 			<CurveLabel x={Pm[0] + 26} y={Pm[1] - 10} at={p27} size={34} color={INK}>(−3, 27)</CurveLabel>
 			<CurveLabel x={Pn[0] - 40} y={Pn[1] + 30} at={m5} size={34} color={INK}>(1, −5)</CurveLabel>
 		</>
@@ -123,7 +123,7 @@ export const S12: React.FC = () => {
 			<Line x={96} y={300} at={-20} size={42}><V>y′ = 5x⁴ − 20x³</V></Line>
 			<Line x={96} y={362} at={ypp} size={44}><Bl>y″ = 20x³ − 60x² = 20x²(x − 3)</Bl></Line>
 			<Line x={96} y={430} at={three - 30} size={44}>y″ = 0:  x = 0 or x = 3<span style={{opacity: prog(f, three, 10), color: INK_SOFT, fontSize: 34}}>   (candidates)</span></Line>
-			<SignStrip x={60} y={520} width={980} windowX={W.x} mode="concavity" at={test} rowLabel="y″" testLabel="test"
+			<SignStrip x={60} y={556} width={980} windowX={W.x} mode="concavity" at={test} rowLabel="y″" testLabel="test"
 				boundaries={[{x: 0, kind: 'zero', note: {text: 'no change', at: zeroIsnt, color: RED}}, {x: 3, kind: 'zero', note: {text: 'changes', at: only, color: GREEN}}]}
 				cells={[{sign: -1, test: {x: '−1', value: '−80'}, revealAt: neg1}, {sign: -1, test: {x: '1', value: '−40'}, revealAt: neg2}, {sign: 1, test: {x: '4', value: '320'}, revealAt: pos}]} />
 			<Line x={96} y={790} at={p162 - 20} size={44}>y(3) = 243 − 405 = −162</Line>
@@ -133,7 +133,7 @@ export const S12: React.FC = () => {
 				xTicks={[1, 2, 3, 4]} yTicks={[{value: -250, label: '−250'}, {value: -150, label: '−150'}, {value: -50, label: '−50'}]} xLabel="x" yLabel="y"
 				regions={[{x: [-1, 3], color: CAPC, opacity: 0.85, at: only}, {x: [3, 4.5], color: CUPC, opacity: 0.85, at: only}]}
 				overlay={() => <FrameSvg><Diamond p={D} o={prog(f, p162 - 20, 12)} r={15} /></FrameSvg>} />
-			<CurveLabel x={M.pf(-0.9, 0)[0]} y={M.pf(0, -230)[1]} at={-30} size={36} color={INK}>y = x⁵ − 5x⁴</CurveLabel>
+			<CurveLabel x={M.pf(1.15, 0)[0]} y={M.pf(0, -230)[1]} at={-30} size={36} color={INK}>y = x⁵ − 5x⁴</CurveLabel>
 			<CurveLabel x={D[0] - 230} y={D[1] - 8} at={p162 - 20} size={34} color={INK}>(3, −162)</CurveLabel>
 		</>
 	);

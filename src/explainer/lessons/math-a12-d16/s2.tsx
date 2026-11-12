@@ -20,7 +20,7 @@ const Paired: React.FC<{X: number; rings?: React.ComponentProps<typeof StudioSta
 	<StudioStackedDerivativePanels x={SX} y={SY} width={SW} panelHeight={PH} gap={GAP} windowX={WX} xTicks={[1, 2, 3, 4]} at={-60}
 		panels={[
 			{fn: x => CUBIC.f(x, {}), df: x => CUBIC.df(x, {}), y: [-2, 6], yTicks: [2, 4], label: 'y = f(x)'},
-			{fn: f1, y: [-4, 12], yTicks: [-3, 3, 6, 9], label: 'f′(x)'},
+			{fn: f1, y: [-4, 12], yTicks: [-3, 3, 9], label: 'f′(x)'},
 		]}
 		rider={{keys: [{frame: 0, x: X}], at: -60}} rings={rings} columns={columns} markers={markers} />
 );
@@ -70,7 +70,7 @@ export const S03: React.FC = () => {
 			<ConcavityGlyphs cells={[{from: 2, to: WX[1], sign: 1}]} toFrame={TOP.pf} Y={-1.1} at={up} words />
 			<CurveLabel x={M1[0] + 20} y={M1[1] + 30} at={neg} size={40} color="#1f6fb2">f″ &lt; 0</CurveLabel>
 			<CurveLabel x={M3[0] + 30} y={M3[1] - 20} at={pos} size={40} color="#1f6fb2">f″ &gt; 0</CurveLabel>
-			<HandTag x={TOP.pf(-0.2, 0)[0]} y={TOP.pf(0, 5.6)[1] - 10} text="increasing, then decreasing:" at={rises} out={right} size={34} color={INK} />
+			<HandTag x={TOP.pf(-0.2, 0)[0] + 100} y={TOP.pf(0, 5.6)[1] - 10} text="increasing, then decreasing:" at={rises} out={right} size={34} color={INK} />
 			<HandTag x={TOP.pf(-0.2, 0)[0]} y={TOP.pf(0, 5.6)[1] + 30} text="concave down throughout" at={time - 10} out={right} size={34} color={RED} />
 			{/* right column */}
 			<LiveReadoutBoard x={RX} y={156} width={740} at={-30} inline rows={[
@@ -119,7 +119,7 @@ export const S04: React.FC = () => {
 					</FrameSvg>
 					<ConcavityGlyphs cells={[{from: WX[0], to: 2, sign: -1}, {from: 2, to: WX[1], sign: 1}]} toFrame={TOP.pf} Y={-1.1} at={-60} words />
 					<CurveLabel x={D[0] + 26} y={D[1] - 70} at={twotwo} size={38} color={INK}>point of inflection (2, 2)</CurveLabel>
-					<HandTag x={D[0] + 40} y={D[1] + 80} text="the tangent crosses the curve" at={crosses + 8} size={36} color={VIOLET} />
+					<HandTag x={D[0] + 40} y={D[1] - 100} text="the tangent crosses the curve" at={crosses + 8} size={36} color={VIOLET} />
 					{/* column */}
 					<LiveReadoutBoard x={RX} y={156} width={740} at={-30} inline rows={[
 						{label: 'x', value: 2, role: 'a'},

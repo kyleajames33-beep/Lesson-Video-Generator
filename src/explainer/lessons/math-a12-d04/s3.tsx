@@ -68,7 +68,8 @@ export const S09: React.FC = () => {
 				{label: 'open string, 110 Hz', value: 1 / (110 * LN2), digits: 4, role: 'gradient', unit: 'octaves per Hz'},
 				{label: 'concert A, 440 Hz (x = 4)', value: 1 / (440 * LN2), digits: 4, role: 'gradient', unit: 'octaves per Hz', glow: [quarter, 99999]},
 			]} />
-			<HandTag x={1236} y={560} text="¼ as much: 1/x at work" at={quarter} size={44} role="k" anchor="end" marks={[{kind: 'brace', x: 1244, y1: 420, y2: 610, facing: 'left'}]} markAt={quarter - 4} />
+			<HandTag x={1236} y={480} text="¼ as much:" at={quarter} size={44} role="k" anchor="end" marks={[{kind: 'brace', x: 1244, y1: 420, y2: 610, facing: 'left'}]} markAt={quarter - 4} />
+			<HandTag x={1236} y={534} text="1/x at work" at={quarter + 10} size={44} role="k" anchor="end" />
 		</>
 	);
 };
@@ -117,10 +118,10 @@ export const S10: React.FC = () => {
 					</div>
 				);
 			})}
-			<HandTag x={GX + 300} y={GY + GH - 30} text="ln a < 0: it flips" at={negative + 8} size={44} role="k" />
+			<HandTag x={GX + 330} y={GY + 96} text="ln a < 0: it flips" at={negative + 8} size={44} role="k" />
 			<CurveLabel x={GX + 330} y={GY + 76} color={NAVY} size={38} out={f0}><Lg b="2" /> x: × 1.44</CurveLabel>
 			<CurveLabel x={GX + 410} y={GY + 150} color={INK} size={34}>ln x</CurveLabel>
-			<CurveLabel x={GX + 250} y={GY + 296} color={OLIVE} size={38}><Lg b="10" /> x: × 0.43</CurveLabel>
+			<CurveLabel x={GX + 250} y={GY + 246} color={OLIVE} size={38} out={slope}><Lg b="10" /> x: × 0.43</CurveLabel>
 		</>
 	);
 };

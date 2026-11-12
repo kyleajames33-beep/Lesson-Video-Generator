@@ -19,13 +19,15 @@ export const HANDOFF_STUBS = [
 	{x: 1.5, m: 2, label: '2', xl: '1.5'},
 ] as const;
 export const HANDOFF_RX = 880;
+/** Gradient-table column width (124 keeps the six-column table inside the frame; was 140, which ran off the right edge). */
+export const HANDOFF_COLW = 124;
 export type HandoffTimes = {stubs: readonly number[]; rising: number; fixed: number; bends: number; bendsOut: number; lineNot: number; chip: number; heading: number; glowLine: number};
 export const HandoffPicture: React.FC<{t: HandoffTimes; f: number}> = ({t, f}) => {
 	const M = gmap(G_J.x, G_J.y, G_J.w, G_J.h, WIN_J);
 	const bendO = vis(f, t.bends, t.bendsOut, 12);
 	const left = (() => {const q: string[] = []; for (let i = 0; i <= 120; i++) {const x = -0.5 + (1.5 * i) / 120; const P = M.pt(x, x * x); q.push(`${i ? 'L' : 'M'}${P[0].toFixed(1)},${P[1].toFixed(1)}`);} return q.join(' ');})();
 	const RX = HANDOFF_RX;
-	const colW = 140;
+	const colW = HANDOFF_COLW;
 	return (
 		<>
 			<FunctionSimulator x={G_J.x} y={G_J.y} width={G_J.w} height={G_J.h} window={WIN_J} family={SMOOTH} timeline={[{frame: 0, x: 1}]} color={INK} at={-60}

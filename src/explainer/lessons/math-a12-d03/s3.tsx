@@ -107,7 +107,7 @@ export const S10: React.FC = () => {
 				point={{at: -30}} tangent={{at: -30, halfLength: 120}}
 				triangle={{run: 2, mode: 'screen', at: -30, labels: {first: () => 'run 2', second: len => `rise ${len < 1.02 ? '1' : len.toFixed(len > 2.98 ? 0 : 1)}`}}}
 				readout={{x: 680, y: 560, width: 520, at: -30, inline: true, rows: [{label: 'gradient at x = 2', role: 'gradient', value: s => s.slope, digits: 2}]}}
-				overlay={g => <HandTag x={g.pt[0] + 40} y={g.pt[1] + 60} text="run: same" at={stretch + 30} size={36} color={MATH_GRADIENT} />} />
+				overlay={g => <HandTag x={g.pt[0] + 40} y={g.pt[1] + 136} text="run: same" at={stretch + 30} size={36} color={MATH_GRADIENT} />} />
 			<CurveLabel x={1360} y={230} size={44}>y = {k > 1.02 ? <Role r="k">{k.toFixed(k > 2.98 ? 0 : 1)}</Role> : ''} ln x</CurveLabel>
 			<ParameterSlider x={1250} y={710} width={220} symbol="k" role="k" value={k} min={1} max={3.2} digits={2} at={graph}
 				ticks={[{value: 1, label: '1'}, {value: 2, label: '2'}, {value: 3, label: '3'}]} />

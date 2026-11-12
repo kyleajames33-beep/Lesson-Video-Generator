@@ -111,7 +111,7 @@ export const S06: React.FC = () => {
 			<CurveLabel x={M.pt(3.3, 0.55)[0]} y={M.pt(3.3, 0.55)[1] - 2} color={OLIVE} size={40}>y = <Lg b="10" /> x</CurveLabel>
 			<CurveLabel x={M.pt(2.4, 1.9)[0]} y={M.pt(2.4, 1.9)[1] - 30} color="rgba(34,67,122,0.6)" size={32}><Lg b="2" /> x</CurveLabel>
 			<HandTag x={M.pt(1.6, 0)[0]} y={M.pt(0, -0.7)[1]} text="factor < 1: squash" at={s0 + 6} out={instead} size={44} role="k" />
-			<HandTag x={M.pt(1.75, 0)[0]} y={M.pt(0, 1.75)[1]} text="too steep!" at={instead + 30} out={under} size={48} color={MATH_MISTAKE} />
+			<HandTag x={M.pt(0.15, 0)[0]} y={M.pt(0, 1.6)[1]} text="too steep!" at={instead + 30} out={under} size={48} color={MATH_MISTAKE} />
 			<Chip x={M.pt(-0.42, 0)[0]} y={M.pt(0, 2.95)[1]} at={instead} out={under + 6} size={40} color={VIOLET}><span style={{color: VIOLET}}>slope = ln 10 ≈ 2.30?</span></Chip>
 			{/* right column */}
 			<RuleBox x={1310} y={150} size={38} />
@@ -211,7 +211,7 @@ export const S08: React.FC = () => {
 			<CurveLabel x={M.pt(2.8, 2.1)[0]} y={M.pt(2.8, 2.1)[1] - 30} at={f1 + 6} color="rgba(34,67,122,0.75)" size={34}><Lg b="2" /> x (dashed)</CurveLabel>
 			<CurveLabel x={M.pt(3.0, -1.45)[0]} y={M.pt(3.0, -1.45)[1] - 6} at={f1 + 6} color={INK} size={46}>y = <Lg b="½" /> x</CurveLabel>
 			<CurveLabel x={M.pt(3.9, 1.3)[0]} y={M.pt(3.9, 1.3)[1] + 6} color={GHOST} size={32}>ln x (dashed)</CurveLabel>
-			<HandTag x={M.pt(0.6, 0)[0]} y={M.pt(0, 2.5)[1] - 120} text="flips" at={f0 + 10} out={falls + 60} size={56} role="k" />
+			<HandTag x={M.pt(0.6, 0)[0]} y={M.pt(0, 2.5)[1] - 50} text="flips" at={f0 + 10} out={falls + 60} size={56} role="k" />
 			<HandTag x={M.pt(1.7, 0)[0]} y={M.pt(0, -2.75)[1]} text="decreasing for all x > 0" at={falls + 14} size={44} color={INK} />
 			<Card x={1380} y={160} w={444} at={-30} pad="12px 22px 14px">
 				<div style={DISPLAY(42)}><Lg b="½" /> x = <F a="½" slot /> × ln x</div>

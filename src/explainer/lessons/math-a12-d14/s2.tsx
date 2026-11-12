@@ -34,7 +34,7 @@ export const S03: React.FC = () => {
 			<Givens x={96} y={262} w={520} size={44} lines={[{content: <>x = π/6  <span style={{fontSize: 34, color: INK_SOFT}}>(radians)</span></>, at: six0}]} />
 			<Results x={650} y={262} at={ptIs} title="Point and gradient" rows={[{content: <>(π/6, ½)<span style={{opacity: prog(f, three + 16, 12)}}>    m = <V>−√3</V></span></>, at: ptIs + 10}]} />
 			<Line x={96} y={412} at={cosOf} size={52} dim={prog(f, next, 14) * 0.6}>y = cos(<S>2 × π/6</S>) = cos(π/3)<span style={{opacity: prog(f, half1, 12)}}> = ½</span></Line>
-			<Note x={830} y={424} at={ptIs + 14} out={next} size={32}>from f, not f′</Note>
+			<Note x={900} y={424} at={ptIs + 14} out={next} size={32}>from f, not f′</Note>
 			<Line x={96} y={482} at={dydx} size={52} dim={prog(f, subst, 14) * 0.6}>dy/dx = −2 sin 2x  <span style={{fontSize: 30, fontWeight: 700, color: INK_SOFT}}>chain rule, last video</span></Line>
 			<Line x={96} y={552} at={at6} size={48} dim={prog(f, subst, 14) * 0.6}>x = π/6:  −2 sin(π/3)<span style={{opacity: prog(f, thats, 12)}}> = −2 × √3/2 = <V>−√3</V></span><span style={{opacity: prog(f, three, 12), fontSize: 32, fontWeight: 700, color: INK_SOFT}}>  ≈ −1.732</span></Line>
 			<Line x={96} y={638} at={yHalf} out={six} size={52}>tangent:  y − <G g={g1}>½</G> = <G g={g2}><V>−√3</V></G>(x − <G g={g3}>π/6</G>)</Line>
@@ -102,7 +102,7 @@ export const S04: React.FC = () => {
 					{!turned ? lab(lRise, 'rise −√3/2', VIOLET, riseO * (midTurn ? 0.55 : 1), 'start') : lab([lRise[0], lRise[1] - 18], 'run √3/2', VIOLET, prog(f, way, 10))}
 					{turned ? <path d={`M${Cc[0] + 10},${Cc[1] - 26} L${Ec[0] - 14},${Ec[1] - 26} M${Ec[0] - 30},${Ec[1] - 38} L${Ec[0] - 12},${Ec[1] - 26} L${Ec[0] - 30},${Ec[1] - 14}`} stroke={VIOLET} strokeWidth={4} fill="none" strokeLinecap="round" opacity={prog(f, way + 8, 10)} /> : null}
 				</>} />
-			<CurveLabel x={M.pt(1.12, 0)[0]} y={M.pt(0, -0.05)[1]} at={30} size={40} color={INK}>y = cos 2x</CurveLabel>
+			<CurveLabel x={M.pt(1.12, 0)[0] + 20} y={M.pt(0, -0.05)[1] + 70} at={30} size={40} color={INK}>y = cos 2x</CurveLabel>
 			<HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="run and rise swap" at={swap} size={40} color={INK} />
 			<HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="a quarter turn" at={point} out={swap} size={40} color={INK} />
 			<Legend at={-60} />

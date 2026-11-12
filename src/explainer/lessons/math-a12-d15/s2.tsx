@@ -159,7 +159,7 @@ export const S05: React.FC = () => {
 					<line {...stubLine(M5, 1, 2, 2, 1, 170)} stroke={VIOLET} strokeWidth={8} strokeLinecap="round" />
 				</g> : null}
 			</>} />
-			<CurveLabel x={A[0] + (secStage ? -24 : 24)} y={A[1] + 8} at={oneOne} size={40} color={INK} anchor={secStage ? 'end' : 'start'}>f(1) = 1</CurveLabel>
+			<CurveLabel x={A[0] + (secStage ? -44 : 24)} y={A[1] + (secStage ? -52 : 8)} at={oneOne} size={40} color={INK} anchor={secStage ? 'end' : 'start'}>f(1) = 1</CurveLabel>
 			<CurveLabel x={Bt[0] - 108} y={(A[1] + Bt[1]) / 2 - (secStage ? 70 : 26)} at={two} size={40} color={AMB_INK}>jump</CurveLabel>
 			<CurveLabel x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 4.25)[1]} at={-30} size={40} color={INK}>y = x², then y = 2x</CurveLabel>
 			<HandTag x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 3.45)[1]} text="both gradients 2" at={itsGrad + 10} out={look} size={44} color={VIOLET} />

@@ -41,7 +41,7 @@ export const S13: React.FC = () => {
 				xTicks={[1, 2, 3]} yTicks={[-8, -6, -4, -2]} xLabel="x" yLabel="y" asymptotes={[0]}
 				point={{at: -30}} tangent={{at: minus2 - 20, halfLength: 140}}
 				overlay={g => <HandTag x={g.pt[0] + 30} y={g.pt[1] - 70} text="slope −2" at={minus2} size={44} color={MATH_GRADIENT} />} />
-			<CurveLabel x={1220} y={330} size={40}>y = 2 ln x − 3x</CurveLabel>
+			<CurveLabel x={1250} y={330} size={40}>y = 2 ln x − 3x</CurveLabel>
 			<MistakeCard x={96} y={790} w={1728} size={44} at={wrote} wrong={<>dy/dx = <Frac n="1" d="x" /> − 3, so −2.5</>} caption="2 ln x is a stretch, not ln(2x)" />
 		</>
 	);

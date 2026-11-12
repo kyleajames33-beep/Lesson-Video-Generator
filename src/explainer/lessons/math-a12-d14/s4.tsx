@@ -144,10 +144,10 @@ export const S12: React.FC = () => {
 					<Ring p={Pp} r={26} o={prog(f, two, 12)} />
 					<circle cx={Pp[0]} cy={Pp[1]} r={9} fill={INK} opacity={prog(f, two, 12)} />
 				</FrameSvg>} />
-			<CurveLabel x={M.pt(1.45, 0)[0]} y={M.pt(0, 1.55)[1]} at={-30} size={38} color={INK}>y = sin x + cos x</CurveLabel>
+			<CurveLabel x={M.pt(1.72, 0)[0]} y={M.pt(0, 1.18)[1]} at={-30} size={32} color={INK}>y = sin x + cos x</CurveLabel>
 			<CurveLabel x={Pp[0] + 30} y={Pp[1] + 12} at={two} size={34} color={INK}>(π/4, √2)</CurveLabel>
 			<CurveLabel x={Pp[0] + 14} y={M.box.top + M.box.height - 56} at={vert + 10} size={34} color={TEAL}>x = π/4</CurveLabel>
-			<CurveLabel x={M.pt(1.6, 0)[0]} y={Pp[1] - 52} at={horiz + 10} size={34} color={VIOLET}>y = √2</CurveLabel>
+			<CurveLabel x={M.pt(-0.35, 0)[0]} y={Pp[1] - 52} at={horiz + 10} size={34} color={VIOLET}>y = √2</CurveLabel>
 		</>
 	);
 };

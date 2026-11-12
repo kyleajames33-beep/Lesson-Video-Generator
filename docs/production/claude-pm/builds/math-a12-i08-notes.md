@@ -50,3 +50,11 @@ Builder: Claude build agent, 11 November 2026. Not committed. Sheet: `work/quali
 - Scene 6: the fine strips flicker while A draws; the x³/3 dashed overlay.
 - Scene 7: the start sliding to 10 am, the trapezium flash, the counter 400 → 150, the curve sliding down 5/2 with the dashed ghost.
 - Scene 15: the cross-fade to the handoff board and the ring on "(−2)³".
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 1, about 0:29 (frame 870).
+- Hold: the accumulation-definition box covered "after noon: more cars leave". Fix: the definition box sits higher, above the label and clear of the countdown (s1.tsx:55).
+- Sweep also found: scene 3 the car park's "out" arrow label was covered by the shapes card (plate moved up 30 px, s1.tsx:86); scene 4 "height 3: the biggest" crossed the panel title and "height 0 at noon" touched the x marker (s1.tsx:160); scene 6 the graphing-app card crossed the heading (card starts 24 px lower, s2.tsx:29) and "no straight line needed" reached the frame edge (s2.tsx:59); scene 8 "square brackets: F(b) − F(a)" overlapped the theorem chip (moved beside it, s2.tsx:142).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-i08-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 2 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/i08/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

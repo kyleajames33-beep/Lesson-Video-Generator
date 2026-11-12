@@ -58,3 +58,11 @@ The d16 cross-fade into the laptop; the chart drawing day by day against "launch
 4. Feedback 2: the rows are now 44 px, the "crosses" and "touches" graph labels are 44 px hand tags, and the mistake card is at 36 px with its 46 px caption.
 d18 check: no d18 cue uses "squashed flat against it". The scene 3 cue `nearTwenty` keys to "near twenty", which the corrected sentence keeps; Codex's re-voice will change the measured frames, and the cue map re-resolves them at load.
 Grade checker re-run: PASS WITH WARNINGS (0 failures, 1 warning, "Few pictures"; frame 6 measures 50% bare by the checker's cell count, without a warning). Sheet re-made.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 8, about 3:47 (frame 6810).
+- Hold: the red "x = 0: no point" annotation overlapped the "local min (1, 2)" label. Fix: the annotation is written just below the axis on the right, where no curve or label sits (s3.tsx:125).
+- Sweep also found: scene 5 the "So far" card title crossed the new "SYMMETRY" header for a second (the card and its tag now leave before the header, s2.tsx:144, 150); scene 11 crowded tick labels on all three panels (f: −20; f′: −10, 30; f″: 60, s4.tsx:148, 168, 172, 175); scene 15 crowded ticks (s5.tsx:97) and "rises on each piece" touched the y label (s5.tsx:57).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d17-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 1 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d17/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

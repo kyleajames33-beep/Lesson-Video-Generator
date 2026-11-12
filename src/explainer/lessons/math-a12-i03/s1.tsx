@@ -34,7 +34,7 @@ export const S01: React.FC = () => {
 				<HandTag x={430} y={790} text="x is in the exponent" at={k.exponent} size={42} color={INK} />
 				<Line x={430} y={830} at={k.guess} size={42}>guess <V><Ex>3x</Ex></V>:  <V>d/dx</V> = <Bl>3</Bl><V><Ex>3x</Ex></V></Line>
 				<HandTag x={430} y={940} text="3 times too big" at={k.big} size={44} color={BLUE} />
-				<Chip x={1260} y={150} at={k.base} size={44} color={AMB}>and 2<span style={{fontSize: '0.64em', position: 'relative', top: '-0.8em'}}>x</span>?</Chip>
+				<Chip x={1560} y={150} at={k.base} size={44} color={AMB}>and 2<span style={{fontSize: '0.64em', position: 'relative', top: '-0.8em'}}>x</span>?</Chip>
 				<ChargeGraph x={1030} y={150} w={860} h={390} t={t} kind="rate" />
 				<ChargeGraph x={1030} y={560} w={860} h={400} t={t} kind="batt" />
 			</div> : null}
@@ -90,7 +90,7 @@ export const S03: React.FC = () => {
 	const sw = prog(f, k.third, 14);
 	return (
 		<>
-			<SceneHeading text="e³ˣ: the gradient is three times the height" at={4} size={56} />
+			<SceneHeading text="e to the 3x: the gradient is three times the height" at={4} size={56} />
 			{!st2 || sw < 1 ? <div style={{opacity: 1 - sw}}>
 				<FunctionSimulator x={30} y={150} width={1000} height={820} window={W3} family={E3} timeline={[{frame: 0, x: x1}]} color={INK} at={-30}
 					xTicks={[-1, -0.5, 0.5]} yTicks={[2, 4, 6, 8]} point={{at: k.graph}} tangent={{at: k.graph, halfLength: 120}} triangle={{run: 1 / 3, at: k.graph + 10, out: k.every}}
@@ -109,7 +109,7 @@ export const S03: React.FC = () => {
 			<HandTag x={260} y={300} text="run ⅓, rise 1: gradient 3" at={k.graph + 30} out={k.every} size={44} color={VIOLET} />
 			<Chip x={RX} y={150} at={-30} size={44} color={GREY}>d01: <V>d/dx</V> e<span style={{fontSize: '0.64em', position: 'relative', top: '-0.8em'}}>ax + b</span> = <Bl>a</Bl>e<span style={{fontSize: '0.64em', position: 'relative', top: '-0.8em'}}>ax + b</span></Chip>
 			<Line x={RX} y={520} at={k.chain} size={52}><V>d/dx</V> e³ˣ = <Bl>3</Bl>e³ˣ</Line>
-			<HandTag x={RX + 20} y={640} text="everywhere: gradient = 3 × height" at={k.every} out={k.third} size={44} color={BLUE} />
+			<HandTag x={RX + 20} y={640} text="everywhere: gradient = 3 × height" at={k.every} out={k.divide - 10} size={44} color={BLUE} />
 			<AnswerBox x={RX} y={640} at={k.divide} size={56}>∫e³ˣ dx = <Frac n="1" d={<Bl>3</Bl>} />e³ˣ <Cc>+ C</Cc></AnswerBox>
 			<Line x={RX} y={790} at={k.lands} size={44}><V>d/dx</V> <Frac n="1" d="3" />e³ˣ = e³ˣ  <Tick size={44} o={prog(f, k.lands + 20, 10)} /></Line>
 			<HandTag x={RX + 20} y={920} text="its gradient lands on e³ˣ" at={k.lands + 10} size={44} color={VIOLET} />
@@ -139,7 +139,7 @@ export const S04: React.FC = () => {
 				curves={[{fn: x => Math.exp(-x), from: -1.6, to: 2.2, color: VIOLET}, {fn: x => -Math.exp(-x), from: -1.6, to: 2.2, color: INK, o: mo}]}>
 				{m => <>
 					<PLabel p={m.p(-1.5, 4.4)} text="e⁻ˣ (integrand)" color={VIOLET} size={34} />
-					<PLabel p={m.p(0.1, -3.6)} text="−e⁻ˣ: rising, gradient e⁻ˣ" size={34} o={mo} />
+					<PLabel p={m.p(0.25, -2.4)} text={<>−e⁻ˣ: rising,<tspan x={m.p(0.25, 0)[0]} dy={40}>gradient e⁻ˣ</tspan></>} size={34} o={mo} />
 				</>}
 			</MiniPlot>
 		</>
@@ -165,7 +165,7 @@ export const S04A: React.FC = () => {
 				{m => <PLabel p={m.p(1.6, -48)} text="minus, but rising" size={44} hand o={prog(f, k.yes, 12)} />}
 			</MiniPlot>
 			<ChargeGraph x={1190} y={150} w={700} h={500} t={t} kind="batt" />
-			<HandTag x={1300} y={620} text="battery = that term + C: rising" at={k.rises} size={40} color={AMB} />
+			<HandTag x={1340} y={470} text="battery = that term + C: rising" at={k.rises} size={40} color={AMB} />
 			<ChargeBoard x={1190} y={690} width={700} t={t} rows={['time', 'rate', 'batt']} />
 		</>
 	);

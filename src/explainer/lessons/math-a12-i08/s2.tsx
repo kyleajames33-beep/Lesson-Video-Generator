@@ -26,7 +26,7 @@ export const S06: React.FC = () => {
 	return (
 		<>
 			<SceneHeading text="Not just straight lines: a curve" at={4} size={56} />
-			<div style={{position: 'absolute', left: 30, top: 140, width: 1110, height: 880, background: CARD, borderRadius: 22, border: '3px solid rgba(60,45,20,0.18)', boxShadow: '0 14px 32px rgba(60,45,20,0.10)'}}>
+			<div style={{position: 'absolute', left: 30, top: 164, width: 1110, height: 856, background: CARD, borderRadius: 22, border: '3px solid rgba(60,45,20,0.18)', boxShadow: '0 14px 32px rgba(60,45,20,0.10)'}}>
 				<div style={{height: 54, borderBottom: '2px solid rgba(60,45,20,0.14)', display: 'flex', alignItems: 'center', gap: 12, padding: '0 22px'}}>
 					{['#d2453a', '#d9a221', '#3c9a5f'].map(c => <span key={c} style={{width: 18, height: 18, borderRadius: 9, background: c, display: 'inline-block'}} />)}
 					<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, color: SOFT, marginLeft: 12}}>graphing app: move x</span>
@@ -56,7 +56,7 @@ export const S06: React.FC = () => {
 			<BoxCard x={RC + 20} y={740} w={720} at={k.shade + 20} out={k.prim - 6} size={40} title="no simple shapes">Under a curve, the app adds very thin strips instead.</BoxCard>
 			<BoxCard x={RC + 20} y={740} w={720} at={k.prim} size={44} border={INK}>a primitive of x² is x³/3: it matches</BoxCard>
 			<Chip x={RC + 20} y={890} at={k.only} size={40} color="#8a8378">needs: f continuous</Chip>
-			<HandTag x={RC + 470} y={920} text="no straight line needed" at={k.edge} size={36} color={SOFT} />
+			<HandTag x={RC + 440} y={920} text="no straight line needed" at={k.edge} size={36} color={SOFT} />
 		</>
 	);
 };
@@ -139,7 +139,7 @@ export const S08: React.FC = () => {
 			</div>
 			<HandTag x={700} y={905} text="f continuous on a ≤ x ≤ b" at={k.cont + 30} size={40} color={TEAL} />
 			<HandTag x={1290} y={905} text="F: any primitive of f" at={k.anyF} size={40} color={INK} />
-			<HandTag x={1300} y={665} text="square brackets: F(b) − F(a)" at={k.brackets + 10} size={38} color={AMBER} />
+			<HandTag x={1490} y={630} text="square brackets: F(b) − F(a)" at={k.brackets + 10} size={36} color={AMBER} />
 		</>
 	);
 };

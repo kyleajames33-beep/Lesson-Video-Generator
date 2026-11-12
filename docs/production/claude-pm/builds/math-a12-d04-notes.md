@@ -47,3 +47,11 @@ Used: `physics/phys-y11-guitar-v1.png`, `physics/phys-y11-sound-level-meter-v1.p
 
 ## Check at playback speed
 The PitchMeter ride (110 → 220 → 440 Hz) and the meter's dB rise; the stretch landing on log2 x; the triangle carried by the stretch; the slider swing near a = 1; the fold (labels hidden mid-fold); the scene 9 graph sliding under the guitar.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 4, about 2:32 (root repair: rise label left of the leg).
+- Root's triangle-label repair confirmed at 2:32 ("run 2 / same" left of the leg, "rise 1/ln 2 ≈ 1.443" clear). New A evidence: sheet and the after still.
+- Sweep also found: scene 6 "too steep!" overlapped the "log₂ x" label (moved left of the steep line, s2.tsx:114); scene 8 "flips" ran into the heading (s2.tsx:214); scene 9 "¼ as much: 1/x at work" covered the answer (now two short lines beside the brace, s3.tsx:71); scene 10 memory aid: "ln a < 0: it flips" sat on the x ticks (moved to where the log₂ label was, which has left by then, s3.tsx:121) and "log₁₀ x: × 0.43" collided with the triangle labels (raised, and it leaves when the triangle arrives, s3.tsx:124).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d04-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 14 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d04/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).

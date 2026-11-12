@@ -42,7 +42,7 @@ export const S06: React.FC = () => {
 			<CurveLabel x={Bp[0] - 140} y={Bp[1] + 40} at={p30 - 30} size={40} color={INK}>local minimum (3, 0)</CurveLabel>
 			<CurveLabel x={M.pf(2, 0)[0] + 20} y={M.pf(0, 2)[1] - 10} at={-60} size={32} color={GREY_INK}>inflection (2, 2)</CurveLabel>
 			<HandTag x={A[0] - 150} y={A[1] + 170} text="every nearby point is lower" at={nearby + 6} out={at3} size={38} color={INK} />
-			<HandTag x={Bp[0] - 220} y={Bp[1] - 170} text="every nearby point is higher" at={above + 6} size={38} color={INK} />
+			<HandTag x={Bp[0] - 200} y={Bp[1] + 128} text="every nearby point is higher" at={above + 6} size={38} color={INK} />
 			{/* column */}
 			<BoxCard x={RX} y={156} at={-30} size={44} title="Givens">f(x) = x³ − 6x² + 9x</BoxCard>
 			<BoxCard x={RX} y={430} w={740} at={-30} out={at1 - 10} size={40} title="From the tangents">

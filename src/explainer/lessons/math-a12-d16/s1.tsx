@@ -4,7 +4,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {ConcavityGlyphs, FrameSvg, FunctionSimulator, HandTag, MarkSpan, SceneHeading, smooth, vis, MATH_STRAND_ACCENT} from '../../math/studio';
-import {D15FinalFrame, HANDOFF_RX, HandoffPicture} from '../math-a12-d15/s5';
+import {D15FinalFrame, HANDOFF_COLW, HANDOFF_RX, HandoffPicture} from '../math-a12-d15/s5';
 import type {HandoffTimes} from '../math-a12-d15/s5';
 import {cue} from './common';
 import {BoxCard, Bl, CUBIC, Chip, CurveLabel, LevelGraph, Line, RecallChip, V, VIOLET, VaseRig, VaseStrip, VaseThumb, gmap} from './parts';
@@ -20,7 +20,7 @@ export const S01: React.FC = () => {
 		const t: HandoffTimes = {stubs: [-60, -60, -60, -60, -60, -60], rising: -60, fixed: -60, bends: rising, bendsOut: all, lineNot: -60, chip: -60, heading: -60, glowLine: -60};
 	const tMin = Math.max(0, Math.min(4, (4 * (f - (vase + 10))) / (neck + 4 - (vase + 10))));
 	const pour = vis(f, vase + 4, neck + 10, 8);
-	const RX = HANDOFF_RX, colW = 140, col0 = RX + 26 + 180;
+	const RX = HANDOFF_RX, colW = HANDOFF_COLW, col0 = RX + 26 + 180;
 	const leftGlow = vis(f, rising - 4, all, 10), rightGlow = vis(f, all - 4, soBend, 10);
 	const MJ = gmap(30, 150, 810, 880, {x: [-0.5, 2.2], y: [-0.5, 2.5]});
 	const L1 = MJ.pt(1, 1), L2 = MJ.pt(1.75, 2.5);
@@ -56,7 +56,7 @@ export const S01: React.FC = () => {
 					<VaseStrip x={G1.x + 40} y={800} w={1060} t={tMin} />
 				</> : null}
 			</div>
-			<HandTag x={G1.x + 60} y={950} text="steady flow" at={steady + 4} out={down} size={40} color={INK} />
+			<HandTag x={G1.x + 60} y={950} text="steady flow" at={steady + 4} out={down - 30} size={40} color={INK} />
 			<HandTag x={G1.x + 60} y={950} text="slowest where the vase is widest" at={down - 20} size={40} color={VIOLET} />
 			<Chip x={1260} y={80} at={where + 10} size={44} color={MATH_STRAND_ACCENT}>where does the bend switch?</Chip>
 		</>

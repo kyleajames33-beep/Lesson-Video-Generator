@@ -52,3 +52,11 @@ Scoped tsconfig in the scratchpad `build-d03`: clean (apart from an unused impor
 3. Scene 3: the plot is 1000 × 840 (window x −0.5..5, y −2..4.5); a solid dot trail at x = 4.8 to 2.8 is on screen from the first frame and the rider continues the trail from x = 2.5 down to 0.25; readout board and cards sit in a 700 px right column.
 4. Attempt 1 picture unchanged (accepted).
 Scoped typecheck re-run: clean.
+
+## Repair 12 Nov (Codex hold)
+Hold moment: scene 2, about 1:11 (root repair: phone text wraps).
+- Root's phone-text repair confirmed: at 1:11 "ln x / weeks to reach x thousand" fits the phone screen. New A evidence: sheet and the after still.
+- Sweep also found: scene 10 "run: same" overlapped "run 2" (written below the axis, s3.tsx:110); scene 13 the curve label touched the y label (s4.tsx:44).
+- Sheet re-made: `docs/production/claude-pm/builds/math-a12-d03-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 7 warnings).
+- Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d03/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
+- Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
